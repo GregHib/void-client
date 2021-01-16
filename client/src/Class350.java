@@ -20,8 +20,7 @@ final class Class350 {
     static int anInt4321;
 
     static final int method3452(int i, byte i_0_, int i_1_) {
-        if (i_0_ != -15)
-            method3452(80, (byte) 123, -88);
+        if (i_0_ != -15) method3452(80, (byte) 123, -88);
         anInt4315++;
         int i_2_ = i_1_ + -1 & i >> 1328912127;
         return (i + (i >>> -1222530561)) % i_1_ + i_2_;
@@ -29,14 +28,8 @@ final class Class350 {
 
     final Class350 method3453(boolean bool) {
         anInt4318++;
-        if (bool != true)
-            method3453(false);
-        return new Class350(this.anInt4313,
-                this.anInt4314,
-                this.anInt4311,
-                this.anInt4316,
-                this.anInt4317,
-                this.anInt4308);
+        if (bool != true) method3453(false);
+        return new Class350(this.anInt4313, this.anInt4314, this.anInt4311, this.anInt4316, this.anInt4317, this.anInt4308);
     }
 
     final void method3454(Class350 class350_3_, boolean bool) {

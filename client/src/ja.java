@@ -45,8 +45,7 @@ final class ja extends Class101 implements Interface19 {
 
     private final native void XA(long l, int i, int i_5_, int i_6_, int[] is);
 
-    final void method903(int i, int i_7_, int i_8_, int i_9_, int i_10_,
-                         int i_11_) {
+    final void method903(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {
         P(this.nativeid, i, i_7_, i_8_, i_9_, i_10_, i_11_);
     }
 
@@ -70,8 +69,7 @@ final class ja extends Class101 implements Interface19 {
         NA(this.nativeid, i);
     }
 
-    private final native void va(long l, int i, int i_16_, int i_17_,
-                                 int[] is);
+    private final native void va(long l, int i, int i_16_, int i_17_, int[] is);
 
     private final native void J(long l, int i);
 
@@ -85,14 +83,12 @@ final class ja extends Class101 implements Interface19 {
         va(this.nativeid, i, i_20_, i_21_, is);
     }
 
-    private final native void P(long l, int i, int i_22_, int i_23_, int i_24_,
-                                int i_25_, int i_26_);
+    private final native void P(long l, int i, int i_22_, int i_23_, int i_24_, int i_25_, int i_26_);
 
     private final native void a(long l, int i, int i_27_, int i_28_);
 
     protected final void finalize() {
-        if (this.nativeid != 0L)
-            Class257.method1947(0, this);
+        if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
     final void method896(int i) {

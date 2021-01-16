@@ -17,8 +17,7 @@ final class Class136 implements Interface7 {
     public static void method1159(byte i) {
         aShortArrayArray4791 = null;
         aClass65_4787 = null;
-        if (i >= 36)
-            aClass45_4796 = null;
+        if (i >= 36) aClass45_4796 = null;
     }
 
     Class136(Class45 class45, String string) {
@@ -26,28 +25,19 @@ final class Class136 implements Interface7 {
             aString4788 = string;
             aClass45_4789 = class45;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("nv.<init>("
-                            + (class45 != null ? "{...}"
-                            : "null")
-                            + ','
-                            + (string != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nv.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
         }
     }
 
     public final Class69 method32(int i) {
         anInt4794++;
-        if (i != -15004)
-            method1159((byte) -110);
+        if (i != -15004) method1159((byte) -110);
         return Class69.aClass69_1198;
     }
 
     public final int method31(int i) {
         anInt4790++;
-        if (aClass45_4789.method413(100, aString4788))
-            return 100;
+        if (aClass45_4789.method413(100, aString4788)) return 100;
         int i_0_ = 31 % ((-43 - i) / 62);
         return aClass45_4789.method397(aString4788, 0);
     }

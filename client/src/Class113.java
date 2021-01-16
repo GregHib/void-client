@@ -21,8 +21,7 @@ final class Class113 {
     }
 
     static final int method1056(int i, int i_0_, char c) {
-        if (i_0_ != 30316)
-            return 27;
+        if (i_0_ != 30316) return 27;
         anInt1740++;
         int i_1_ = c << -939602812;
         if (Character.isUpperCase(c) || Character.isTitleCase(c)) {
@@ -35,7 +34,6 @@ final class Class113 {
     public static void method1057(boolean bool) {
         aClass45_1743 = null;
         aClass105Array1744 = null;
-        if (bool != true)
-            method1056(110, -57, '\uffd1');
+        if (bool != true) method1056(110, -57, '\uffd1');
     }
 }

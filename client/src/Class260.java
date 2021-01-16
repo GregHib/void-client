@@ -11,15 +11,13 @@ final class Class260 {
     static int anInt3312 = 0;
 
     static final boolean method1977(byte i, int i_0_) {
-        if (i != -79)
-            return false;
+        if (i != -79) return false;
         anInt3308++;
         return i_0_ == 3 || i_0_ == 7 || i_0_ == 10;
     }
 
     static final void method1978() {
-        for (int i = 0; i < Class348_Sub40_Sub34.aClass293Array9432.length;
-             i++)
+        for (int i = 0; i < Class348_Sub40_Sub34.aClass293Array9432.length; i++)
             Class348_Sub40_Sub34.aClass293Array9432[i].method2205();
         Class348_Sub40_Sub34.aClass293Array9432 = null;
     }
@@ -27,8 +25,7 @@ final class Class260 {
     public static void method1979(byte i) {
         aClass45_3309 = null;
         anIntArray3311 = null;
-        if (i < 105)
-            method1978();
+        if (i < 105) method1978();
         aClass114_3307 = null;
     }
 

@@ -23,14 +23,12 @@ abstract class Class299_Sub1 extends Class299 {
 
     public static void method2258(byte i) {
         aClass138_6321 = null;
-        if (i < -119)
-            aFileOutputStream6323 = null;
+        if (i < -119) aFileOutputStream6323 = null;
     }
 
     static final boolean method2259(int i, int i_5_, int i_6_) {
         anInt6320++;
-        if (i != 0)
-            aClass138_6321 = null;
+        if (i != 0) aClass138_6321 = null;
         return (0x34 & i_6_) != 0;
     }
 }

@@ -16,8 +16,7 @@ final class Class318_Sub6 extends Class318 {
     public static void method2506(byte i) {
         aShortArray6428 = null;
         anIntArray6432 = null;
-        if (i != -46)
-            method2506((byte) -93);
+        if (i != -46) method2506((byte) -93);
         aClass114_6424 = null;
     }
 }

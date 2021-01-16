@@ -7,7 +7,6 @@ final class Class328_Sub1_Sub1 extends Class328_Sub1 {
     static int anInt8799;
 
     public static void method2611(int i) {
-        if (i < -121)
-            aClass351_8798 = null;
+        if (i < -121) aClass351_8798 = null;
     }
 }

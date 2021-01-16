@@ -23,15 +23,13 @@ final class Class121 {
         do {
             do {
                 if (i_1_ == 0) {
-                    if (bool)
-                        return 0;
+                    if (bool) return 0;
                     return Class339.anInt4211;
                 } else if (i_1_ != 1) {
-					if (i_1_ == 2)
-						break;
-					break while_44_;
-				}
-				return Class339.anInt4211;
+                    if (i_1_ == 2) break;
+                    break while_44_;
+                }
+                return Class339.anInt4211;
             } while (false);
             return 0;
         } while (false);
@@ -39,8 +37,7 @@ final class Class121 {
         return 0;
     }
 
-    static final void method1083(ha var_ha, int i, byte i_2_, int i_3_,
-                                 int i_4_, int i_5_) {
+    static final void method1083(ha var_ha, int i, byte i_2_, int i_3_, int i_4_, int i_5_) {
         anInt1798++;
         Class21.aHa326 = var_ha;
         Class51.aClass101_905 = Class21.aHa326.method3654();
@@ -58,49 +55,29 @@ final class Class121 {
         int i_6_ = 90 % ((70 - i_2_) / 33);
     }
 
-    static final boolean method1084(int i, int i_7_, int i_8_, int i_9_,
-                                    int i_10_, int i_11_, int i_12_) {
+    static final boolean method1084(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_) {
         anInt1799++;
         int i_13_ = i_9_ - -i_7_;
         int i_14_ = i + i_10_;
         int i_15_ = i_8_ + i_11_;
-        if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_9_, i_15_, i_14_,
-                i_14_, i_14_, i_15_, false))
-            return false;
-        if (i_12_ != 18507)
-            method1082(-107, false);
-        if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_13_, i_15_, i_14_,
-                i_14_, i_14_, i_8_, false))
-            return false;
+        if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_9_, i_15_, i_14_, i_14_, i_14_, i_15_, false)) return false;
+        if (i_12_ != 18507) method1082(-107, false);
+        if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_13_, i_15_, i_14_, i_14_, i_14_, i_8_, false)) return false;
         if (Class141.anInt1974 > i_9_) {
-            if (!Class286_Sub7.method2169(i_9_, i_9_, i_15_, i_9_, i_15_,
-                    i_14_, i_14_, i_10_, i_8_, false))
-                return false;
-            if (!Class286_Sub7.method2169(i_9_, i_9_, i_15_, i_9_, i_8_, i_14_,
-                    i_10_, i_10_, i_8_, false))
-                return false;
+            if (!Class286_Sub7.method2169(i_9_, i_9_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false;
+            if (!Class286_Sub7.method2169(i_9_, i_9_, i_15_, i_9_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false;
         } else {
-            if (!Class286_Sub7.method2169(i_13_, i_13_, i_15_, i_13_, i_15_,
-                    i_14_, i_14_, i_10_, i_8_, false))
-                return false;
-            if (!Class286_Sub7.method2169(i_13_, i_13_, i_15_, i_13_, i_8_,
-                    i_14_, i_10_, i_10_, i_8_, false))
-                return false;
+            if (!Class286_Sub7.method2169(i_13_, i_13_, i_15_, i_13_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false;
+            if (!Class286_Sub7.method2169(i_13_, i_13_, i_15_, i_13_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false;
         }
         if (i_8_ >= Class348_Sub40_Sub27.anInt9360) {
-            if (!Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_9_, i_15_,
-                    i_14_, i_14_, i_10_, i_15_, false))
-                return false;
-			return Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_13_, i_15_,
-					i_14_, i_10_, i_10_, i_15_, false);
+            if (!Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_15_, false)) return false;
+            return Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_13_, i_15_, i_14_, i_10_, i_10_, i_15_, false);
         } else {
-            if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_9_, i_8_, i_14_,
-                    i_14_, i_10_, i_8_, false))
-                return false;
-			return Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_13_, i_8_,
-					i_14_, i_10_, i_10_, i_8_, false);
+            if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_9_, i_8_, i_14_, i_14_, i_10_, i_8_, false)) return false;
+            return Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_13_, i_8_, i_14_, i_10_, i_10_, i_8_, false);
         }
-	}
+    }
 
     static {
         anInt1794 = -1;

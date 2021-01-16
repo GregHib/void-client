@@ -17,8 +17,7 @@ final class Class327 {
 
     public static void method2604(byte i) {
         aClass273_4091 = null;
-        if (i >= -49)
-            method2606(31, -15L);
+        if (i >= -49) method2606(31, -15L);
         aClass74_4098 = null;
         aClass351_4094 = null;
         anIntArray4096 = null;
@@ -27,8 +26,7 @@ final class Class327 {
 
     static final boolean method2605(byte i) {
         anInt4092++;
-        if (i != -99)
-            anIntArray4097 = null;
+        if (i != -99) anIntArray4097 = null;
         return Class348_Sub43.anInt7068 != 0;
     }
 
@@ -42,8 +40,7 @@ final class Class327 {
                 /* empty */
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    "de.A(" + i + ',' + l + ')');
+            throw Class348_Sub17.method2929(runtimeexception, "de.A(" + i + ',' + l + ')');
         }
     }
 

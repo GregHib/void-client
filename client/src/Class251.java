@@ -13,43 +13,23 @@ final class Class251 {
     static int anInt3236;
 
     public static void method1912(int i) {
-        if (i == 8549)
-            aClass351_3232 = null;
+        if (i == 8549) aClass351_3232 = null;
     }
 
     static final void method1913(boolean bool, int i, Class46 class46) {
         anInt3235++;
         int i_0_ = -40 % ((-35 - i) / 51);
-        int i_1_
-                = (class46.anInt698 == 0 ? class46.anInt709
-                : class46.anInt698);
-        int i_2_
-                = (class46.anInt791 != 0 ? class46.anInt791
-                : class46.anInt789);
-        Class367_Sub1.method3534(false, class46.anInt830, i_1_,
-                bool, i_2_,
-                (Class348_Sub40_Sub33.aClass46ArrayArray9427
-                        [(class46.anInt830
-                        >> 1869042672)]));
-        if (class46.aClass46Array798 != null)
-            Class367_Sub1.method3534(false, class46.anInt830, i_1_,
-                    bool, i_2_,
-                    class46.aClass46Array798);
-        Class348_Sub41 class348_sub41
-                = ((Class348_Sub41)
-                Class125.aClass356_4915
-                        .method3480(class46.anInt830, -6008));
-        if (class348_sub41 != null)
-            Class239_Sub3.method1728(i_2_, -1,
-                    (class348_sub41
-                            .anInt7050),
-                    bool, i_1_);
+        int i_1_ = (class46.anInt698 == 0 ? class46.anInt709 : class46.anInt698);
+        int i_2_ = (class46.anInt791 != 0 ? class46.anInt791 : class46.anInt789);
+        Class367_Sub1.method3534(false, class46.anInt830, i_1_, bool, i_2_, (Class348_Sub40_Sub33.aClass46ArrayArray9427[(class46.anInt830 >> 1869042672)]));
+        if (class46.aClass46Array798 != null) Class367_Sub1.method3534(false, class46.anInt830, i_1_, bool, i_2_, class46.aClass46Array798);
+        Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(class46.anInt830, -6008));
+        if (class348_sub41 != null) Class239_Sub3.method1728(i_2_, -1, (class348_sub41.anInt7050), bool, i_1_);
     }
 
     static final int method1914(int i, int i_3_) {
         anInt3231++;
-        if (i != -23590)
-            method1913(false, -115, null);
+        if (i != -23590) method1913(false, -115, null);
         return i_3_ & 0xff;
     }
 
@@ -59,18 +39,15 @@ final class Class251 {
     }
 
     static final boolean method1915(byte i, int i_4_) {
-        if (i != 4)
-            return false;
+        if (i != 4) return false;
         anInt3233++;
         return i_4_ != 1 && i_4_ != 7;
     }
 
     static final void method1916(int i, Class46 class46) {
         anInt3229++;
-        if (class46.anInt794 == Class58.anInt1064)
-            Class152.aBooleanArray2076[class46.anInt760] = true;
-        if (i != -9343)
-            method1914(-107, 120);
+        if (class46.anInt794 == Class58.anInt1064) Class152.aBooleanArray2076[class46.anInt760] = true;
+        if (i != -9343) method1914(-107, 120);
     }
 
     public Class251() {

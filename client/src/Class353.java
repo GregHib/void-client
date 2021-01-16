@@ -20,28 +20,21 @@ final class Class353 {
     boolean aBoolean4350;
     static int anInt4351;
 
-    static final void method3460(int i, int i_0_, int i_1_, int i_2_, int i_3_,
-                                 int[] is, int i_4_, int i_5_) {
+    static final void method3460(int i, int i_0_, int i_1_, int i_2_, int i_3_, int[] is, int i_4_, int i_5_) {
         anInt4345++;
-        if (i_3_ > 0 && !Class192.method1436(-86, i_3_))
-            throw new IllegalArgumentException("");
-        if (i_1_ > 0 && !Class192.method1436(88, i_1_))
-            throw new IllegalArgumentException("");
-        if (i_4_ != 32993)
-            throw new IllegalArgumentException("");
+        if (i_3_ > 0 && !Class192.method1436(-86, i_3_)) throw new IllegalArgumentException("");
+        if (i_1_ > 0 && !Class192.method1436(88, i_1_)) throw new IllegalArgumentException("");
+        if (i_4_ != 32993) throw new IllegalArgumentException("");
         int i_6_ = 0;
         int i_7_ = Math.min(i_1_, i_3_);
-        if (i_5_ >= -54)
-            method3462(106);
+        if (i_5_ >= -54) method3462(106);
         int i_8_ = i_3_ >> 1682010529;
         int i_9_ = i_1_ >> -1442899551;
         int[] is_10_ = is;
         int[] is_11_ = new int[i_9_ * i_8_];
         for (; ; ) {
-            OpenGL.glTexImage2Di(i, i_6_, i_0_, i_3_, i_1_, 0, i_4_, i_2_,
-                    is_10_, 0);
-            if (i_7_ <= 1)
-                break;
+            OpenGL.glTexImage2Di(i, i_6_, i_0_, i_3_, i_1_, 0, i_4_, i_2_, is_10_, 0);
+            if (i_7_ <= 1) break;
             int i_12_ = 0;
             int i_13_ = 0;
             int i_14_ = i_3_ + i_13_;
@@ -68,17 +61,7 @@ final class Class353 {
                     i_24_ += i_25_ >> 1838260744 & 0xff;
                     i_23_ += 0xff & i_25_ >> 1921786136;
                     i_22_ += (0xff943a & i_25_) >> -630085136;
-                    is_11_[i_12_++]
-                            = (Class273.method2057
-                            ((Class273.method2057
-                                            (Class139.method1166(i_24_ << 1830115238, 65280),
-                                                    Class273.method2057((Class139.method1166(1020,
-                                                            i_22_)
-                                                                    << 2110798030),
-                                                            (Class139.method1166(i_23_,
-                                                                    1020)
-                                                                    << -120087978)))),
-                                    Class139.method1166(i_21_, 1020) >> 1691553410));
+                    is_11_[i_12_++] = (Class273.method2057((Class273.method2057(Class139.method1166(i_24_ << 1830115238, 65280), Class273.method2057((Class139.method1166(1020, i_22_) << 2110798030), (Class139.method1166(i_23_, 1020) << -120087978)))), Class139.method1166(i_21_, 1020) >> 1691553410));
                 }
                 i_13_ += i_3_;
                 i_14_ += i_3_;
@@ -94,8 +77,7 @@ final class Class353 {
         }
     }
 
-    static final void method3461(int i, Object[] objects, int i_26_, long[] ls,
-                                 int i_27_) {
+    static final void method3461(int i, Object[] objects, int i_26_, long[] ls, int i_27_) {
         do {
             try {
                 anInt4351++;
@@ -108,9 +90,7 @@ final class Class353 {
                     Object object = objects[i_28_];
                     objects[i_28_] = objects[i_26_];
                     objects[i_26_] = object;
-                    int i_30_
-                            = (l != 9223372036854775807L
-                            ? 1 : 0);
+                    int i_30_ = (l != 9223372036854775807L ? 1 : 0);
                     for (int i_31_ = i; i_26_ > i_31_; i_31_++) {
                         if ((long) (i_31_ & i_30_) + l > ls[i_31_]) {
                             long l_32_ = ls[i_31_];
@@ -128,18 +108,10 @@ final class Class353 {
                     method3461(i, objects, i_29_ + -1, ls, 9455);
                     method3461(i_29_ + 1, objects, i_26_, ls, 9455);
                 }
-                if (i_27_ == 9455)
-                    break;
+                if (i_27_ == 9455) break;
                 aClass60_4346 = null;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("en.B(" + i + ','
-                                + (objects != null ? "{...}"
-                                : "null")
-                                + ',' + i_26_ + ','
-                                + (ls != null ? "{...}"
-                                : "null")
-                                + ',' + i_27_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("en.B(" + i + ',' + (objects != null ? "{...}" : "null") + ',' + i_26_ + ',' + (ls != null ? "{...}" : "null") + ',' + i_27_ + ')'));
             }
             break;
         } while (false);
@@ -147,13 +119,10 @@ final class Class353 {
 
     public static void method3462(int i) {
         aClass60_4346 = null;
-        if (i != -30094)
-            method3461(-108, null, -26, null, 42);
+        if (i != -30094) method3461(-108, null, -26, null, 42);
     }
 
-    Class353(int i, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_,
-             int i_39_, int i_40_, int i_41_, boolean bool, boolean bool_42_,
-             int i_43_) {
+    Class353(int i, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_, int i_41_, boolean bool, boolean bool_42_, int i_43_) {
         this.anInt4339 = i_36_;
         this.anInt4349 = i_34_;
         this.aShort4340 = (short) i_38_;

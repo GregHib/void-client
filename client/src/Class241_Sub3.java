@@ -12,32 +12,25 @@ final class Class241_Sub3 extends Class241 {
 
     final long method1858(int i) {
         aLong6166 += method1865(10);
-        if (i > -60)
-            aLong6169 = 17L;
-        if (aLong6167 > aLong6166)
-            return (-aLong6166 + aLong6167) / 1000000L;
+        if (i > -60) aLong6169 = 17L;
+        if (aLong6167 > aLong6166) return (-aLong6166 + aLong6167) / 1000000L;
         return 0L;
     }
 
     final void method1856(byte i) {
         aLong6169 = 0L;
-        if (i < 88)
-            method1856((byte) -4);
-        if (aLong6166 < aLong6167)
-            aLong6166 += aLong6167 + -aLong6166;
+        if (i < 88) method1856((byte) -4);
+        if (aLong6166 < aLong6167) aLong6166 += aLong6167 + -aLong6166;
     }
 
     private final long method1865(int i) {
         long l = System.nanoTime();
         long l_0_ = -aLong6169 + l;
-        if (i != 10)
-            return -56L;
+        if (i != 10) return -56L;
         aLong6169 = l;
-        if (l_0_ > -5000000000L
-                && l_0_ < 5000000000L) {
+        if (l_0_ > -5000000000L && l_0_ < 5000000000L) {
             aLongArray6171[anInt6170] = l_0_;
-            if (anInt6168 < 1)
-                anInt6168++;
+            if (anInt6168 < 1) anInt6168++;
             anInt6170 = (1 + anInt6170) % 10;
         }
         long l_1_ = 0L;
@@ -47,16 +40,14 @@ final class Class241_Sub3 extends Class241 {
     }
 
     final int method1859(int i, long l) {
-        if (i != 71)
-            return 22;
+        if (i != 71) return 22;
         if (aLong6167 <= aLong6166) {
             int i_3_ = 0;
             do {
                 i_3_++;
                 aLong6167 += l;
             } while (i_3_ < 10 && (aLong6167 < aLong6166));
-            if (aLong6167 < aLong6166)
-                aLong6167 = aLong6166;
+            if (aLong6167 < aLong6166) aLong6167 = aLong6166;
             return i_3_;
         }
         aLong6169 += -aLong6166 + aLong6167;
@@ -66,8 +57,7 @@ final class Class241_Sub3 extends Class241 {
     }
 
     final long method1862(int i) {
-        if (i != -18931)
-            return -36L;
+        if (i != -18931) return -36L;
         return aLong6166;
     }
 

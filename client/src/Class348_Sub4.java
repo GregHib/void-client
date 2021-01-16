@@ -34,15 +34,11 @@ final class Class348_Sub4 extends Class348 {
     private int anInt6617;
 
     private final void method2745(int i) {
-        if (aString6604.length() > 40)
-            aString6604 = aString6604.substring(0, 40);
+        if (aString6604.length() > 40) aString6604 = aString6604.substring(0, 40);
         anInt6615++;
-        if (aString6614.length() > 40)
-            aString6614 = aString6614.substring(0, 40);
-        if (aString6610.length() > i)
-            aString6610 = aString6610.substring(0, 10);
-        if (aString6597.length() > 10)
-            aString6597 = aString6597.substring(0, 10);
+        if (aString6614.length() > 40) aString6614 = aString6614.substring(0, 40);
+        if (aString6610.length() > i) aString6610 = aString6610.substring(0, 10);
+        if (aString6597.length() > 10) aString6597 = aString6597.substring(0, 10);
     }
 
     final int method2746(byte i) {
@@ -69,8 +65,7 @@ final class Class348_Sub4 extends Class348 {
         class348_sub49.method3378(false, !aBoolean6607 ? 0 : 1);
         class348_sub49.method3337((byte) 107, anInt6592);
         class348_sub49.method3378(false, anInt6599);
-        class348_sub49.method3340(i ^ ~0x26b6,
-                this.anInt6609);
+        class348_sub49.method3340(i ^ ~0x26b6, this.anInt6609);
         class348_sub49.method3337((byte) 107, anInt6591);
         class348_sub49.method3378(false, anInt6598);
         class348_sub49.method3378(false, anInt6596);
@@ -92,8 +87,7 @@ final class Class348_Sub4 extends Class348 {
     }
 
     static final int method2749(int i) {
-        if (i != -1)
-            method2749(20);
+        if (i != -1) method2749(20);
         anInt6593++;
         return za_Sub1.anInt9774;
     }
@@ -104,60 +98,40 @@ final class Class348_Sub4 extends Class348 {
 
     Class348_Sub4(boolean bool, Class297 class297) {
         if (bool) {
-            if (Class297.aString3803.startsWith("win"))
-                anInt6613 = 1;
-            else if (Class297.aString3803.startsWith("mac"))
-                anInt6613 = 2;
-            else if (Class297.aString3803.startsWith("linux"))
-                anInt6613 = 3;
-            else
-                anInt6613 = 4;
-            aBoolean6608 = Class297.aString3780.startsWith("amd64")
-                    || Class297.aString3780.startsWith("x86_64");
+            if (Class297.aString3803.startsWith("win")) anInt6613 = 1;
+            else if (Class297.aString3803.startsWith("mac")) anInt6613 = 2;
+            else if (Class297.aString3803.startsWith("linux")) anInt6613 = 3;
+            else anInt6613 = 4;
+            aBoolean6608 = Class297.aString3780.startsWith("amd64") || Class297.aString3780.startsWith("x86_64");
             if (anInt6613 != 1) {
                 if (anInt6613 == 2) {
                     if (Class297.aString3778.indexOf("10.4") == -1) {
                         if (Class297.aString3778.indexOf("10.5") == -1) {
-                            if (Class297.aString3778.indexOf("10.6") != -1)
-                                anInt6595 = 22;
-                        } else
-                            anInt6595 = 21;
-                    } else
-                        anInt6595 = 20;
+                            if (Class297.aString3778.indexOf("10.6") != -1) anInt6595 = 22;
+                        } else anInt6595 = 21;
+                    } else anInt6595 = 20;
                 }
-            } else if (Class297.aString3778.indexOf("4.0") != -1)
-                anInt6595 = 1;
+            } else if (Class297.aString3778.indexOf("4.0") != -1) anInt6595 = 1;
             else if (Class297.aString3778.indexOf("4.1") == -1) {
                 if (Class297.aString3778.indexOf("4.9") == -1) {
-                    if (Class297.aString3778.indexOf("5.0") != -1)
-                        anInt6595 = 4;
+                    if (Class297.aString3778.indexOf("5.0") != -1) anInt6595 = 4;
                     else if (Class297.aString3778.indexOf("5.1") == -1) {
-                        if (Class297.aString3778.indexOf("6.0") != -1)
-                            anInt6595 = 6;
-                        else if (Class297.aString3778.indexOf("6.1") != -1)
-                            anInt6595 = 7;
-                    } else
-                        anInt6595 = 5;
-                } else
-                    anInt6595 = 3;
-            } else
-                anInt6595 = 2;
-            if (Class297.aString3782.toLowerCase().indexOf("sun") != -1)
-                anInt6594 = 1;
+                        if (Class297.aString3778.indexOf("6.0") != -1) anInt6595 = 6;
+                        else if (Class297.aString3778.indexOf("6.1") != -1) anInt6595 = 7;
+                    } else anInt6595 = 5;
+                } else anInt6595 = 3;
+            } else anInt6595 = 2;
+            if (Class297.aString3782.toLowerCase().indexOf("sun") != -1) anInt6594 = 1;
             else if (Class297.aString3782.toLowerCase().indexOf("microsoft") == -1) {
-                if (Class297.aString3782.toLowerCase().indexOf("apple") != -1)
-                    anInt6594 = 3;
-                else
-                    anInt6594 = 4;
-            } else
-                anInt6594 = 2;
+                if (Class297.aString3782.toLowerCase().indexOf("apple") != -1) anInt6594 = 3;
+                else anInt6594 = 4;
+            } else anInt6594 = 2;
             int i = 2;
             int i_3_ = 0;
             try {
                 while (Class297.aString3796.length() > i) {
                     int i_4_ = Class297.aString3796.charAt(i);
-                    if (i_4_ < 48 || i_4_ > 57)
-                        break;
+                    if (i_4_ < 48 || i_4_ > 57) break;
                     i++;
                     i_3_ = i_3_ * 10 - -i_4_ + -48;
                 }
@@ -170,8 +144,7 @@ final class Class348_Sub4 extends Class348 {
             try {
                 for (/**/; (i < Class297.aString3796.length()); i++) {
                     int i_5_ = Class297.aString3796.charAt(i);
-                    if (i_5_ < 48 || i_5_ > 57)
-                        break;
+                    if (i_5_ < 48 || i_5_ > 57) break;
                     i_3_ = i_3_ * 10 + i_5_ + -48;
                 }
             } catch (Exception exception) {
@@ -183,8 +156,7 @@ final class Class348_Sub4 extends Class348 {
             try {
                 for (/**/; Class297.aString3796.length() > i; i++) {
                     int i_6_ = Class297.aString3796.charAt(i);
-                    if (i_6_ < 48 || i_6_ > 57)
-                        break;
+                    if (i_6_ < 48 || i_6_ > 57) break;
                     i_3_ = i_6_ + -48 + i_3_ * 10;
                 }
             } catch (Exception exception) {
@@ -193,10 +165,8 @@ final class Class348_Sub4 extends Class348 {
             aBoolean6607 = !class297.aBoolean3777;
             anInt6612 = i_3_;
             anInt6592 = Class226.anInt2964;
-            if (anInt6616 <= 3)
-                anInt6599 = 0;
-            else
-                anInt6599 = Class348_Sub40_Sub29.anInt9372;
+            if (anInt6616 <= 3) anInt6599 = 0;
+            else anInt6599 = Class348_Sub40_Sub29.anInt9372;
             try {
                 int[] is = HardwareInfo.getCPUInfo();
                 if (is != null && is.length == 7) {
@@ -210,14 +180,10 @@ final class Class348_Sub4 extends Class348 {
                 this.anInt6609 = 0;
             }
         }
-        if (aString6610 == null)
-            aString6610 = "";
-        if (aString6604 == null)
-            aString6604 = "";
-        if (aString6597 == null)
-            aString6597 = "";
-        if (aString6614 == null)
-            aString6614 = "";
+        if (aString6610 == null) aString6610 = "";
+        if (aString6604 == null) aString6604 = "";
+        if (aString6597 == null) aString6597 = "";
+        if (aString6614 == null) aString6614 = "";
         method2745(10);
     }
 }

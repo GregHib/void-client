@@ -14,8 +14,7 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
     private int anInt9343 = 20;
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
-        if (i_0_ != 31015)
-            method3049(null, 44, 80);
+        if (i_0_ != 31015) method3049(null, 44, 80);
         int i_1_ = i;
         while_200_:
         do {
@@ -27,10 +26,8 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
                         break while_200_;
                     } else if (i_1_ != 1) {
                         if (i_1_ != 2) {
-                            if (i_1_ != 3)
-                                break while_200_;
-                        } else
-                            break;
+                            if (i_1_ != 3) break while_200_;
+                        } else break;
                         break while_199_;
                     }
                     anInt9343 = class348_sub49.method3330(i_0_ + 842366929);
@@ -47,14 +44,11 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
     final int[] method3042(int i, int i_2_) {
         anInt9336++;
         int[] is = this.aClass191_7032.method1433(0, i);
-        if (i_2_ != 255)
-            return null;
+        if (i_2_ != 255) return null;
         if (this.aClass191_7032.aBoolean2570) {
             for (int i_3_ = 0; i_3_ < Class348_Sub40_Sub6.anInt9139; i_3_++) {
-                int i_4_ = anInt9339 + (Class318_Sub6.anIntArray6432[i_3_]
-                        << 1201316012) / anInt9340;
-                int i_5_ = anInt9338 + (Class239_Sub18.anIntArray6035[i]
-                        << -227246388) / anInt9340;
+                int i_4_ = anInt9339 + (Class318_Sub6.anIntArray6432[i_3_] << 1201316012) / anInt9340;
+                int i_5_ = anInt9338 + (Class239_Sub18.anIntArray6035[i] << -227246388) / anInt9340;
                 int i_6_ = i_4_;
                 int i_7_ = i_5_;
                 int i_8_ = i_4_;
@@ -62,18 +56,13 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
                 int i_10_ = i_4_ * i_4_ >> 1504191788;
                 int i_11_ = i_5_ * i_5_ >> 165795660;
                 int i_12_;
-                for (i_12_ = 0;
-                     (i_11_ + i_10_ < 16384
-                             && anInt9343 > i_12_);
-                     i_10_ = i_8_ * i_8_ >> 622958668) {
+                for (i_12_ = 0; (i_11_ + i_10_ < 16384 && anInt9343 > i_12_); i_10_ = i_8_ * i_8_ >> 622958668) {
                     i_9_ = i_7_ + 2 * (i_9_ * i_8_ >> 743516524);
                     i_8_ = i_6_ + i_10_ - i_11_;
                     i_12_++;
                     i_11_ = i_9_ * i_9_ >> -830226996;
                 }
-                is[i_3_]
-                        = (i_12_ >= anInt9343 - 1 ? 0
-                        : (i_12_ << -306783156) / anInt9343);
+                is[i_3_] = (i_12_ >= anInt9343 - 1 ? 0 : (i_12_ << -306783156) / anInt9343);
             }
         }
         return is;
@@ -81,8 +70,7 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
 
     public static void method3117(int i) {
         aClass150_9342 = null;
-        if (i < 10)
-            anInt9335 = 113;
+        if (i < 10) anInt9335 = 113;
     }
 
     public Class348_Sub40_Sub25() {

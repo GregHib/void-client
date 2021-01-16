@@ -14,8 +14,7 @@ final class xa implements Interface13, Interface19 {
     }
 
     protected final void finalize() {
-        if (this.nativeid != 0L)
-            Class257.method1947(0, this);
+        if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
     xa(int i, int i_1_) {

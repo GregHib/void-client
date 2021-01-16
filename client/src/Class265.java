@@ -9,48 +9,29 @@ final class Class265 implements Interface1 {
     static int anInt4690;
     static int anInt4691;
     static int[] anIntArray4692;
-    static boolean[][] aBooleanArrayArray4693
-            = {new boolean[4], new boolean[4], {false, false, true, false},
-            {false, false, true, false}, {false, false, true, false},
-            {false, false, true, false}, {true, false, true, false},
-            {true, false, false, true}, {true, false, false, true},
-            new boolean[4], new boolean[4], new boolean[4], new boolean[4]};
+    static boolean[][] aBooleanArrayArray4693 = {new boolean[4], new boolean[4], {false, false, true, false}, {false, false, true, false}, {false, false, true, false}, {false, false, true, false}, {true, false, true, false}, {true, false, false, true}, {true, false, false, true}, new boolean[4], new boolean[4], new boolean[4], new boolean[4]};
     private final Class45 aClass45_4694;
     static int anInt4695;
     static int anInt4696;
 
     public final void method7(int i) {
-        aClass105_4688
-                = Class369_Sub3_Sub1.method3577((aClass120_4687
-                        .anInt4912),
-                (byte) 116, aClass45_4694);
-        if (i != 10286)
-            aBooleanArrayArray4693 = null;
+        aClass105_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687.anInt4912), (byte) 116, aClass45_4694);
+        if (i != 10286) aBooleanArrayArray4693 = null;
         anInt4695++;
     }
 
-    static final Class50_Sub1 method2022(Class348_Sub49 class348_sub49,
-                                         int i) {
-        if (i != 0)
-            return null;
+    static final Class50_Sub1 method2022(Class348_Sub49 class348_sub49, int i) {
+        if (i != 0) return null;
         anInt4691++;
-        return new Class50_Sub1(class348_sub49.method3372(13638),
-                class348_sub49.method3372(13638),
-                class348_sub49.method3372(i + 13638),
-                class348_sub49.method3372(13638),
-                class348_sub49.method3351(-1),
-                class348_sub49.method3351(-1),
-                class348_sub49.method3387(255));
+        return new Class50_Sub1(class348_sub49.method3372(13638), class348_sub49.method3372(13638), class348_sub49.method3372(i + 13638), class348_sub49.method3372(13638), class348_sub49.method3351(-1), class348_sub49.method3351(-1), class348_sub49.method3387(255));
     }
 
     public final void method9(byte i, boolean bool) {
         anInt4696++;
-        if (i != -49)
-            method2022(null, 101);
+        if (i != -49) method2022(null, 101);
         if (bool) {
             int i_0_ = (Math.max(Class321.anInt4017, Class92.anInt1524));
-            int i_1_
-                    = (Math.max(Class348_Sub42_Sub8_Sub2.anInt10432, ha_Sub2.anInt7666));
+            int i_1_ = (Math.max(Class348_Sub42_Sub8_Sub2.anInt10432, ha_Sub2.anInt7666));
             int i_2_ = aClass105_4688.method966();
             int i_3_ = aClass105_4688.method980();
             int i_4_ = 0;
@@ -68,8 +49,7 @@ final class Class265 implements Interface1 {
     }
 
     public static void method2023(byte i) {
-        if (i > -13)
-            aClass74_4689 = null;
+        if (i > -13) aClass74_4689 = null;
         aClass74_4689 = null;
         anIntArray4692 = null;
         aBooleanArrayArray4693 = null;
@@ -80,21 +60,13 @@ final class Class265 implements Interface1 {
             aClass45_4694 = class45;
             aClass120_4687 = class120;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("uk.<init>("
-                            + (class45 != null ? "{...}"
-                            : "null")
-                            + ','
-                            + (class120 != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("uk.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class120 != null ? "{...}" : "null") + ')'));
         }
     }
 
     public final boolean method8(byte i) {
         int i_8_ = -105 % ((25 - i) / 52);
         anInt4690++;
-        return aClass45_4694.method421(false,
-                aClass120_4687.anInt4912);
+        return aClass45_4694.method421(false, aClass120_4687.anInt4912);
     }
 }

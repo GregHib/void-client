@@ -18,8 +18,7 @@ final class Class59_Sub1_Sub2 extends Class59_Sub1 {
 
     public static void method561(int i) {
         aClass74_8662 = null;
-        if (i != 120)
-            method561(-85);
+        if (i != 120) method561(-85);
         anIntArray8666 = null;
         anIntArray8663 = null;
         aClass273_8664 = null;
@@ -30,14 +29,12 @@ final class Class59_Sub1_Sub2 extends Class59_Sub1 {
         int i_2_ = i * 2;
         int i_3_ = i_0_ & 0xff;
         aByteArray8660[i_2_++] = (byte) (i_3_ * 3 >> -479460411);
-        if (i_1_ == 14)
-            aByteArray8660[i_2_] = (byte) (i_3_ * 3 >> 1998283269);
+        if (i_1_ == 14) aByteArray8660[i_2_] = (byte) (i_3_ * 3 >> 1998283269);
     }
 
     final byte[] method562(int i, int i_4_, byte i_5_, int i_6_) {
         aByteArray8660 = new byte[2 * i_6_ * (i_4_ * i)];
-        if (i_5_ <= 85)
-            aClass273_8664 = null;
+        if (i_5_ <= 85) aClass273_8664 = null;
         anInt8661++;
         this.method542(i_4_, i, 0, i_6_);
         return aByteArray8660;
@@ -47,8 +44,7 @@ final class Class59_Sub1_Sub2 extends Class59_Sub1 {
         int i = 0;
         for (int i_7_ = 0; i_7_ < 120; i_7_++) {
             int i_8_ = i_7_ - -1;
-            int i_9_ = (int) (300.0 * Math.pow(2.0, (double) i_8_ / 7.0)
-                    + (double) i_8_);
+            int i_9_ = (int) (300.0 * Math.pow(2.0, (double) i_8_ / 7.0) + (double) i_8_);
             i += i_9_;
             anIntArray8663[i_7_] = i / 4;
         }

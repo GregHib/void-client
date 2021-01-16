@@ -8,8 +8,7 @@ final class Class348_Sub42_Sub9_Sub2 extends Class348_Sub42_Sub9 {
     private SoftReference aSoftReference10446;
 
     final Object method3205(int i) {
-        if (i != 65536)
-            aSoftReference10446 = null;
+        if (i != 65536) aSoftReference10446 = null;
         return aSoftReference10446.get();
     }
 

@@ -21,13 +21,9 @@ final class Class77 {
 
     static final boolean method776(int i, int i_0_, int i_1_) {
         anInt1297++;
-        if (i_1_ != 65536)
-            method780(-106, -24, 57);
-        boolean bool
-                = ((i & 0x37) != 0 ? Class126.method1113(i_0_, i, -7)
-                : Class348_Sub42_Sub8_Sub2.method3200(i_0_, i, (byte) 111));
-        return bool | (Class274.method2058(i_0_, i, i_1_ ^ 0x1003d)
-                | (0x10000 & i_0_) != 0);
+        if (i_1_ != 65536) method780(-106, -24, 57);
+        boolean bool = ((i & 0x37) != 0 ? Class126.method1113(i_0_, i, -7) : Class348_Sub42_Sub8_Sub2.method3200(i_0_, i, (byte) 111));
+        return bool | (Class274.method2058(i_0_, i, i_1_ ^ 0x1003d) | (0x10000 & i_0_) != 0);
     }
 
     private Class77() {
@@ -51,8 +47,7 @@ final class Class77 {
         int i_7_;
         int i_8_;
         int i_9_;
-        int i_2_
-                = i_3_ = i_4_ = i_5_ = i_6_ = i_7_ = i_8_ = i_9_ = -1640531527;
+        int i_2_ = i_3_ = i_4_ = i_5_ = i_6_ = i_7_ = i_8_ = i_9_ = -1640531527;
         for (int i_10_ = 0; i_10_ < 4; i_10_++) {
             i_2_ ^= i_3_ << 522744683;
             i_5_ += i_2_;
@@ -122,8 +117,7 @@ final class Class77 {
             anIntArray1296[i_11_ - -7] = i_9_;
         }
         int i_12_ = 0;
-        if (i > -72)
-            anIntArray1296 = null;
+        if (i > -72) anIntArray1296 = null;
         for (/**/; i_12_ < 256; i_12_ += 8) {
             i_4_ += anIntArray1296[2 + i_12_];
             i_5_ += anIntArray1296[i_12_ - -3];
@@ -176,8 +170,7 @@ final class Class77 {
             method779(false);
             anInt1292 = 256;
         }
-        if (i <= 12)
-            return 116;
+        if (i <= 12) return 116;
         return Loader.loadRunescape ? anIntArray1289[anInt1292 - 1] : 0;
     }
 
@@ -187,34 +180,23 @@ final class Class77 {
         for (int i = 0; i < 256; i++) {
             int i_13_ = anIntArray1296[i];
             if ((i & 0x2) != 0) {
-                if ((0x1 & i) == 0)
-                    anInt1293 ^= anInt1293 << -853467134;
-                else
-                    anInt1293 ^= anInt1293 >>> 1323677776;
-            } else if ((0x1 & i) != 0)
-                anInt1293 ^= anInt1293 >>> 1187700998;
-            else
-                anInt1293 ^= anInt1293 << -931969203;
+                if ((0x1 & i) == 0) anInt1293 ^= anInt1293 << -853467134;
+                else anInt1293 ^= anInt1293 >>> 1323677776;
+            } else if ((0x1 & i) != 0) anInt1293 ^= anInt1293 >>> 1187700998;
+            else anInt1293 ^= anInt1293 << -931969203;
             anInt1293 += anIntArray1296[0xff & 128 + i];
             int i_14_;
-            anIntArray1296[i] = i_14_
-                    = (anIntArray1296[Class139.method1166(255,
-                    i_13_ >> 1990278754)]
-                    - (-anInt1293 - anInt1291));
-            anIntArray1289[i] = anInt1291
-                    = i_13_ + anIntArray1296[(Class139.method1166(261268, i_14_)
-                    >> 278777480 >> 242087490)];
+            anIntArray1296[i] = i_14_ = (anIntArray1296[Class139.method1166(255, i_13_ >> 1990278754)] - (-anInt1293 - anInt1291));
+            anIntArray1289[i] = anInt1291 = i_13_ + anIntArray1296[(Class139.method1166(261268, i_14_) >> 278777480 >> 242087490)];
         }
-        if (bool != false)
-            method776(-33, -56, 52);
+        if (bool != false) method776(-33, -56, 52);
     }
 
     static final boolean method780(int i, int i_15_, int i_16_) {
-        if (i_15_ != 0)
-            return true;
+        if (i_15_ != 0) return true;
         anInt1299++;
-		return (0x400 & i_16_) != 0;
-	}
+        return (0x400 & i_16_) != 0;
+    }
 
     final int method781(byte i) {
         if (anInt1292 == 0) {
@@ -222,15 +204,13 @@ final class Class77 {
             anInt1292 = 256;
         }
         anInt1295++;
-        if (i >= -47)
-            method779(false);
+        if (i >= -47) method779(false);
         return Loader.loadRunescape ? anIntArray1289[--anInt1292] : 0;
     }
 
     public static void method782(int i) {
         anIntArray1303 = null;
-        if (i != 1)
-            anInt1290 = 114;
+        if (i != 1) anInt1290 = 114;
         aClass273_1298 = null;
     }
 }

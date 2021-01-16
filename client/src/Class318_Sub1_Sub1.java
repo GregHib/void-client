@@ -13,32 +13,20 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1 {
     static long aLong8728;
 
     final boolean method2382(byte i) {
-        if (i > -51)
-            aClass351_8724 = null;
+        if (i > -51) aClass351_8724 = null;
         anInt8723++;
-        return aa_Sub2.method164(this.aByte6376,
-                (this.anInt6377
-                        >> Class362.anInt4459),
-                (byte) -97,
-                (this.anInt6388
-                        >> Class362.anInt4459));
+        return aa_Sub2.method164(this.aByte6376, (this.anInt6377 >> Class362.anInt4459), (byte) -97, (this.anInt6388 >> Class362.anInt4459));
     }
 
     final int method2384(Class348_Sub1[] class348_sub1s, int i) {
         anInt8722++;
         int i_0_ = 88 % ((i - -14) / 61);
-        return this.method2390(class348_sub1s,
-                (this.anInt6377
-                        >> Class362.anInt4459),
-                -2,
-                (this.anInt6388
-                        >> Class362.anInt4459));
+        return this.method2390(class348_sub1s, (this.anInt6377 >> Class362.anInt4459), -2, (this.anInt6388 >> Class362.anInt4459));
     }
 
     public static void method2395(byte i) {
         aClass351_8724 = null;
-        if (i != 50)
-            method2395((byte) 65);
+        if (i != 50) method2395((byte) 65);
     }
 
     static final void method2396(int i, int i_1_, int i_2_, int i_3_) {
@@ -57,8 +45,7 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1 {
         Class369_Sub3_Sub1.aBoolean10174 = true;
     }
 
-    Class318_Sub1_Sub1(int i, int i_4_, int i_5_, int i_6_, int i_7_,
-                       int i_8_) {
+    Class318_Sub1_Sub1(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
         this.aByte6376 = (byte) i_7_;
         this.anInt6377 = i;
         this.anInt6388 = i_5_;
@@ -68,15 +55,8 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1 {
     }
 
     final boolean method2378(int i) {
-        if (i != 0)
-            aClass351_8724 = null;
+        if (i != 0) aClass351_8724 = null;
         anInt8721++;
-        return (Class99.aBooleanArrayArray1572
-                [(Class318_Sub1_Sub4_Sub1.anInt10084
-                + -Class239_Sub25.anInt6111
-                + (this.anInt6377 >> Class362.anInt4459))]
-                [((this.anInt6388 >> Class362.anInt4459)
-                + -Class285_Sub2.anInt8502
-                + Class318_Sub1_Sub4_Sub1.anInt10084)]);
+        return (Class99.aBooleanArrayArray1572[(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class239_Sub25.anInt6111 + (this.anInt6377 >> Class362.anInt4459))][((this.anInt6388 >> Class362.anInt4459) + -Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084)]);
     }
 }

@@ -26,9 +26,7 @@ final class Class21 {
 
     static final void method289(int i, int i_0_, int i_1_, int i_2_) {
         anInt324++;
-        if (Class369_Sub1.anInt8583 != i_2_
-                || Class295.anInt3760 != i_0_
-                || i_1_ != Class27.anInt396) {
+        if (Class369_Sub1.anInt8583 != i_2_ || Class295.anInt3760 != i_0_ || i_1_ != Class27.anInt396) {
             Class369_Sub1.anInt8583 = i_2_;
             Class348_Sub16_Sub2.aBoolean8870 = true;
             Class27.anInt396 = i_1_;
@@ -43,8 +41,7 @@ final class Class21 {
             Class348_Sub15.aDouble6774 = d_7_;
             Class295.aDouble3761 = d_6_;
             Class348_Sub16_Sub2.aDouble8869 = d_4_ * d_6_;
-            if (i != -15902)
-                method288((byte) -120);
+            if (i != -15902) method288((byte) -120);
             Class348_Sub42_Sub5.aDouble9531 = d_7_ * -d_4_;
             Class357.aDouble4404 = d_5_;
             Class319.aDouble3980 = 0.0;

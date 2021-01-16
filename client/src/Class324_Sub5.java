@@ -10,17 +10,14 @@ final class Class324_Sub5 extends Class324 {
     private final Class258_Sub3_Sub1 aClass258_Sub3_Sub1_6511;
     private final boolean aBoolean6512;
 
-    Class324_Sub5(ha_Sub2 var_ha_Sub2, Class143 class143, Class207[] class207s,
-                  boolean bool) {
+    Class324_Sub5(ha_Sub2 var_ha_Sub2, Class143 class143, Class207[] class207s, boolean bool) {
         super(var_ha_Sub2, class143);
         aHa_Sub2_6509 = var_ha_Sub2;
         int i = 0;
         for (int i_0_ = 0; i_0_ < 256; i_0_++) {
             Class207 class207 = class207s[i_0_];
-            if (class207.anInt2696 > i)
-                i = class207.anInt2696;
-            if (class207.anInt2702 > i)
-                i = class207.anInt2702;
+            if (class207.anInt2696 > i) i = class207.anInt2696;
+            if (class207.anInt2702 > i) i = class207.anInt2702;
         }
         int i_1_ = i * 16;
         if (bool) {
@@ -49,9 +46,7 @@ final class Class324_Sub5 extends Class324 {
                     }
                 }
             }
-            aClass258_Sub3_Sub1_6511
-                    = Class371.method3583(false, is, 6406, i_1_, var_ha_Sub2, -86,
-                    6406, i_1_);
+            aClass258_Sub3_Sub1_6511 = Class371.method3583(false, is, 6406, i_1_, var_ha_Sub2, -86, 6406, i_1_);
             aBoolean6512 = true;
         } else {
             int[] is = new int[i_1_ * i_1_];
@@ -70,39 +65,28 @@ final class Class324_Sub5 extends Class324 {
                     for (int i_27_ = 0; i_27_ < i_19_; i_27_++) {
                         for (int i_28_ = 0; i_28_ < i_20_; i_28_++) {
                             int i_29_;
-                            if ((i_29_ = is_18_[i_24_++]) != 0)
-                                is[i_23_++] = ~0xffffff | is_16_[i_29_ & 0xff];
-                            else
-                                i_23_++;
+                            if ((i_29_ = is_18_[i_24_++]) != 0) is[i_23_++] = ~0xffffff | is_16_[i_29_ & 0xff];
+                            else i_23_++;
                         }
                         i_23_ += i_1_ - i_20_;
                     }
                 } else {
                     for (int i_25_ = 0; i_25_ < i_19_; i_25_++) {
                         for (int i_26_ = 0; i_26_ < i_20_; i_26_++) {
-                            is[i_23_++] = (is_17_[i_24_] << 24
-                                    | is_16_[is_18_[i_24_] & 0xff]);
+                            is[i_23_++] = (is_17_[i_24_] << 24 | is_16_[is_18_[i_24_] & 0xff]);
                             i_24_++;
                         }
                         i_23_ += i_1_ - i_20_;
                     }
                 }
             }
-            aClass258_Sub3_Sub1_6511
-                    = Class348_Sub40_Sub32.method3132(is, 0, 0, i_1_, i_1_,
-                    var_ha_Sub2, false,
-                    (byte) 12);
+            aClass258_Sub3_Sub1_6511 = Class348_Sub40_Sub32.method3132(is, 0, 0, i_1_, i_1_, var_ha_Sub2, false, (byte) 12);
             aBoolean6512 = false;
         }
         aClass258_Sub3_Sub1_6511.method1957(9728, false);
         aClass61_6510 = new Class61(var_ha_Sub2, 256);
-        float f = (aClass258_Sub3_Sub1_6511.aFloat9937
-                / (float) (aClass258_Sub3_Sub1_6511
-                .anInt9940));
-        float f_30_
-                = (aClass258_Sub3_Sub1_6511.aFloat9938
-                / (float) (aClass258_Sub3_Sub1_6511
-                .anInt9939));
+        float f = (aClass258_Sub3_Sub1_6511.aFloat9937 / (float) (aClass258_Sub3_Sub1_6511.anInt9940));
+        float f_30_ = (aClass258_Sub3_Sub1_6511.aFloat9938 / (float) (aClass258_Sub3_Sub1_6511.anInt9939));
         for (int i_31_ = 0; i_31_ < 256; i_31_++) {
             Class207 class207 = class207s[i_31_];
             int i_32_ = class207.anInt2696;
@@ -117,58 +101,41 @@ final class Class324_Sub5 extends Class324 {
             float f_41_ = (f_37_ + (float) i_32_) * f_30_;
             aClass61_6510.method595((byte) 123, i_31_);
             OpenGL.glBegin(7);
-            OpenGL.glTexCoord2f(f_38_,
-                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_);
+            OpenGL.glTexCoord2f(f_38_, aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_);
             OpenGL.glVertex2i(i_35_, i_34_);
-            OpenGL.glTexCoord2f(f_38_,
-                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_41_);
+            OpenGL.glTexCoord2f(f_38_, aClass258_Sub3_Sub1_6511.aFloat9938 - f_41_);
             OpenGL.glVertex2i(i_35_, i_34_ + i_32_);
-            OpenGL.glTexCoord2f(f_40_,
-                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_41_);
+            OpenGL.glTexCoord2f(f_40_, aClass258_Sub3_Sub1_6511.aFloat9938 - f_41_);
             OpenGL.glVertex2i(i_35_ + i_33_, i_34_ + i_32_);
-            OpenGL.glTexCoord2f(f_40_,
-                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_);
+            OpenGL.glTexCoord2f(f_40_, aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_);
             OpenGL.glVertex2i(i_35_ + i_33_, i_34_);
             OpenGL.glEnd();
             aClass61_6510.method591(-1);
         }
     }
 
-    final void method2578(char c, int i, int i_42_, int i_43_, boolean bool,
-                          aa var_aa, int i_44_, int i_45_) {
+    final void method2578(char c, int i, int i_42_, int i_43_, boolean bool, aa var_aa, int i_44_, int i_45_) {
         aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
-        Class258_Sub3_Sub1 class258_sub3_sub1
-                = var_aa_Sub1.aClass258_Sub3_Sub1_5193;
+        Class258_Sub3_Sub1 class258_sub3_sub1 = var_aa_Sub1.aClass258_Sub3_Sub1_5193;
         aHa_Sub2_6509.method3735(9473);
         aHa_Sub2_6509.method3771((byte) -109, aClass258_Sub3_Sub1_6511);
         if (aBoolean6512 || bool) {
             aHa_Sub2_6509.method3729(7681, (byte) -38, 8448);
             aHa_Sub2_6509.method3762(34168, 768, (byte) -87, 0);
-        } else
-            aHa_Sub2_6509.method3729(7681, (byte) -55, 7681);
+        } else aHa_Sub2_6509.method3729(7681, (byte) -55, 7681);
         aHa_Sub2_6509.method3738(-15039, 1);
         aHa_Sub2_6509.method3771((byte) -127, class258_sub3_sub1);
         aHa_Sub2_6509.method3729(7681, (byte) 97, 8448);
         aHa_Sub2_6509.method3762(34168, 768, (byte) -87, 0);
         OpenGL.glTexGeni(8192, 9472, 9216);
         OpenGL.glTexGeni(8193, 9472, 9216);
-        float f
-                = (class258_sub3_sub1.aFloat9937
-                / (float) class258_sub3_sub1.anInt9940);
-        float f_46_
-                = (class258_sub3_sub1.aFloat9938
-                / (float) class258_sub3_sub1.anInt9939);
-        OpenGL.glTexGenfv(8192, 9474,
-                new float[]{f, 0.0F, 0.0F, (float) -i_44_ * f},
-                0);
-        OpenGL.glTexGenfv(8193, 9474,
-                new float[]{0.0F, f_46_, 0.0F,
-                        (float) -i_45_ * f_46_},
-                0);
+        float f = (class258_sub3_sub1.aFloat9937 / (float) class258_sub3_sub1.anInt9940);
+        float f_46_ = (class258_sub3_sub1.aFloat9938 / (float) class258_sub3_sub1.anInt9939);
+        OpenGL.glTexGenfv(8192, 9474, new float[]{f, 0.0F, 0.0F, (float) -i_44_ * f}, 0);
+        OpenGL.glTexGenfv(8193, 9474, new float[]{0.0F, f_46_, 0.0F, (float) -i_45_ * f_46_}, 0);
         OpenGL.glEnable(3168);
         OpenGL.glEnable(3169);
-        OpenGL.glColor4ub((byte) (i_43_ >> 16), (byte) (i_43_ >> 8),
-                (byte) i_43_, (byte) (i_43_ >> 24));
+        OpenGL.glColor4ub((byte) (i_43_ >> 16), (byte) (i_43_ >> 8), (byte) i_43_, (byte) (i_43_ >> 24));
         OpenGL.glTranslatef((float) i, (float) i_42_, 0.0F);
         aClass61_6510.method594(c, 28666);
         OpenGL.glLoadIdentity();
@@ -178,8 +145,7 @@ final class Class324_Sub5 extends Class324 {
         aHa_Sub2_6509.method3729(8448, (byte) -96, 8448);
         aHa_Sub2_6509.method3771((byte) -91, null);
         aHa_Sub2_6509.method3738(-15039, 0);
-        if (aBoolean6512 || bool)
-            aHa_Sub2_6509.method3762(5890, 768, (byte) -87, 0);
+        if (aBoolean6512 || bool) aHa_Sub2_6509.method3762(5890, 768, (byte) -87, 0);
     }
 
     final void fa(char c, int i, int i_47_, int i_48_, boolean bool) {
@@ -188,14 +154,11 @@ final class Class324_Sub5 extends Class324 {
         if (aBoolean6512 || bool) {
             aHa_Sub2_6509.method3729(7681, (byte) 117, 8448);
             aHa_Sub2_6509.method3762(34168, 768, (byte) -87, 0);
-        } else
-            aHa_Sub2_6509.method3729(7681, (byte) 117, 7681);
-        OpenGL.glColor4ub((byte) (i_48_ >> 16), (byte) (i_48_ >> 8),
-                (byte) i_48_, (byte) (i_48_ >> 24));
+        } else aHa_Sub2_6509.method3729(7681, (byte) 117, 7681);
+        OpenGL.glColor4ub((byte) (i_48_ >> 16), (byte) (i_48_ >> 8), (byte) i_48_, (byte) (i_48_ >> 24));
         OpenGL.glTranslatef((float) i, (float) i_47_, 0.0F);
         aClass61_6510.method594(c, 28666);
         OpenGL.glLoadIdentity();
-        if (aBoolean6512 || bool)
-            aHa_Sub2_6509.method3762(5890, 768, (byte) -87, 0);
+        if (aBoolean6512 || bool) aHa_Sub2_6509.method3762(5890, 768, (byte) -87, 0);
     }
 }

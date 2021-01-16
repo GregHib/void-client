@@ -14,8 +14,7 @@ final class Class365 {
 
     public static void method3518(int i) {
         aClass262_4473 = null;
-        if (i != 88)
-            method3518(-49);
+        if (i != 88) method3518(-49);
         aClass114_4477 = null;
     }
 
@@ -27,14 +26,7 @@ final class Class365 {
             this.aString4472 = string_1_;
             this.aString4470 = string;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("fia.<init>(" + i + ','
-                            + (string != null ? "{...}"
-                            : "null")
-                            + ',' + i_0_ + ','
-                            + (string_1_ != null ? "{...}"
-                            : "null")
-                            + ',' + l + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fia.<init>(" + i + ',' + (string != null ? "{...}" : "null") + ',' + i_0_ + ',' + (string_1_ != null ? "{...}" : "null") + ',' + l + ')'));
         }
     }
 

@@ -4,8 +4,7 @@
 
 abstract class Class299 {
     static int anInt3812;
-    static Class348_Sub49_Sub2 aClass348_Sub49_Sub2_3813
-            = new Class348_Sub49_Sub2(7500);
+    static Class348_Sub49_Sub2 aClass348_Sub49_Sub2_3813 = new Class348_Sub49_Sub2(7500);
     static int anInt3814;
 
     static final int method2253(int i, int i_0_) {
@@ -41,20 +40,16 @@ abstract class Class299 {
 
     public static void method2254(int i) {
         aClass348_Sub49_Sub2_3813 = null;
-        if (i != -14804)
-            aClass348_Sub49_Sub2_3813 = null;
+        if (i != -14804) aClass348_Sub49_Sub2_3813 = null;
     }
 
-    static final void method2255(int i, int i_3_, byte i_4_, int i_5_,
-                                 int i_6_, int i_7_, int i_8_) {
+    static final void method2255(int i, int i_3_, byte i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
         Class117.method1070((byte) 117, i);
         anInt3812++;
-        if (i_4_ >= -65)
-            method2255(-118, -20, (byte) -121, 100, -62, 77, -119);
+        if (i_4_ >= -65) method2255(-118, -20, (byte) -121, 100, -62, 77, -119);
         int i_9_ = 0;
         int i_10_ = -i_5_ + i;
-        if (i_10_ < 0)
-            i_10_ = 0;
+        if (i_10_ < 0) i_10_ = 0;
         int i_11_ = i;
         int i_12_ = -i;
         int i_13_ = i_10_;
@@ -109,9 +104,7 @@ abstract class Class299 {
             int i_32_ = i_3_ - -i_11_;
             int i_33_ = i_3_ - i_11_;
             if (i_10_ > i_9_) {
-                int i_34_
-                        = (i_9_ <= i_13_ ? i_13_
-                        : Class348_Sub49_Sub2.anIntArray9757[i_9_]);
+                int i_34_ = (i_9_ <= i_13_ ? i_13_ : Class348_Sub49_Sub2.anIntArray9757[i_9_]);
                 int i_35_ = i_34_ + i_3_;
                 int i_36_ = i_3_ + -i_34_;
                 Class135_Sub2.method1156(-27, i_36_, is_30_, i_33_, i_8_);

@@ -16,8 +16,7 @@ final class Class227 {
 
     public static void method1627(byte i) {
         anIntArray2967 = null;
-        if (i <= 105)
-            method1627((byte) -48);
+        if (i <= 105) method1627((byte) -48);
         anObject2969 = null;
     }
 

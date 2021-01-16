@@ -25,85 +25,30 @@ final class Class85 {
         int i_0_ = 0;
         int i_1_ = i;
         for (/**/; i_0_ < 8; i_0_++) {
-            aLongArray1473[i_0_]
-                    = (Class105_Sub2.method993
-                    ((Class105_Sub2.method993
-                                    ((Class348_Sub8
-                                                    .method2777(255L, aByteArray1475[i_1_ + 6])
-                                                    << 487716296),
-                                            (Class105_Sub2.method993
-                                                    (Class348_Sub8.method2777(((long) (aByteArray1475
-                                                                    [i_1_ - -5])
-                                                                    << -896856240),
-                                                            255L << 407026192),
-                                                            (Class105_Sub2.method993
-                                                                    ((Class105_Sub2.method993
-                                                                                    (Class348_Sub8.method2777(255L << -561803296,
-                                                                                            ((long) (aByteArray1475
-                                                                                                    [i_1_ + 3])
-                                                                                                    << 1709594400)),
-                                                                                            (Class105_Sub2.method993
-                                                                                                    (Class105_Sub2.method993((Class348_Sub8.method2777
-                                                                                                                    (255L << -1772986896,
-                                                                                                                            ((long) (aByteArray1475
-                                                                                                                                    [1 + i_1_])
-                                                                                                                                    << -295236176))),
-                                                                                                            ((long) (aByteArray1475
-                                                                                                                    [i_1_])
-                                                                                                                    << 1398616696)),
-                                                                                                            Class348_Sub8.method2777(((long) (aByteArray1475
-                                                                                                                            [i_1_ + 2])
-                                                                                                                            << 1090491688),
-                                                                                                                    255L << 2085795816))))),
-                                                                            Class348_Sub8.method2777(aByteArray1475
-                                                                                            [4 + i_1_],
-                                                                                    255L) << 486892568)))))),
-                            Class348_Sub8
-                                    .method2777(255L, aByteArray1475[i_1_ - -7])));
+            aLongArray1473[i_0_] = (Class105_Sub2.method993((Class105_Sub2.method993((Class348_Sub8.method2777(255L, aByteArray1475[i_1_ + 6]) << 487716296), (Class105_Sub2.method993(Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ - -5]) << -896856240), 255L << 407026192), (Class105_Sub2.method993((Class105_Sub2.method993(Class348_Sub8.method2777(255L << -561803296, ((long) (aByteArray1475[i_1_ + 3]) << 1709594400)), (Class105_Sub2.method993(Class105_Sub2.method993((Class348_Sub8.method2777(255L << -1772986896, ((long) (aByteArray1475[1 + i_1_]) << -295236176))), ((long) (aByteArray1475[i_1_]) << 1398616696)), Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ + 2]) << 1090491688), 255L << 2085795816))))), Class348_Sub8.method2777(aByteArray1475[4 + i_1_], 255L) << 486892568)))))), Class348_Sub8.method2777(255L, aByteArray1475[i_1_ - -7])));
             i_1_ += 8;
         }
         for (int i_2_ = 0; i_2_ < 8; i_2_++)
-            aLongArray1469[i_2_]
-                    = Class105_Sub2.method993(aLongArray1473[i_2_],
-                    (aLongArray1472[i_2_]
-                            = aLongArray1474[i_2_]));
+            aLongArray1469[i_2_] = Class105_Sub2.method993(aLongArray1473[i_2_], (aLongArray1472[i_2_] = aLongArray1474[i_2_]));
         for (int i_3_ = 1; i_3_ <= 10; i_3_++) {
             for (int i_4_ = 0; i_4_ < 8; i_4_++) {
                 aLongArray1471[i_4_] = 0L;
                 int i_5_ = 0;
                 int i_6_ = 56;
                 for (/**/; i_5_ < 8; i_5_++) {
-                    aLongArray1471[i_4_]
-                            = (Class105_Sub2.method993
-                            (aLongArray1471[i_4_],
-                                    (InputStream_Sub1.aLongArrayArray75[i_5_]
-                                            [(Class139.method1166
-                                            (255,
-                                                    (int) ((aLongArray1472
-                                                            [Class139.method1166(7, i_4_ - i_5_)])
-                                                            >>> i_6_)))])));
+                    aLongArray1471[i_4_] = (Class105_Sub2.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75[i_5_][(Class139.method1166(255, (int) ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) >>> i_6_)))])));
                     i_6_ -= 8;
                 }
             }
             for (int i_7_ = 0; i_7_ < 8; i_7_++)
                 aLongArray1472[i_7_] = aLongArray1471[i_7_];
-            aLongArray1472[0]
-                    = Class105_Sub2.method993(aLongArray1472[0],
-                    InputStream_Sub1.aLongArray76[i_3_]);
+            aLongArray1472[0] = Class105_Sub2.method993(aLongArray1472[0], InputStream_Sub1.aLongArray76[i_3_]);
             for (int i_8_ = 0; i_8_ < 8; i_8_++) {
                 aLongArray1471[i_8_] = aLongArray1472[i_8_];
                 int i_9_ = 0;
                 int i_10_ = 56;
                 for (/**/; i_9_ < 8; i_9_++) {
-                    aLongArray1471[i_8_]
-                            = (Class105_Sub2.method993
-                            (aLongArray1471[i_8_],
-                                    (InputStream_Sub1.aLongArrayArray75[i_9_]
-                                            [(Class139.method1166
-                                            (255,
-                                                    (int) ((aLongArray1469
-                                                            [Class139.method1166(-i_9_ + i_8_, 7)])
-                                                            >>> i_10_)))])));
+                    aLongArray1471[i_8_] = (Class105_Sub2.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75[i_9_][(Class139.method1166(255, (int) ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) >>> i_10_)))])));
                     i_10_ -= 8;
                 }
             }
@@ -111,16 +56,11 @@ final class Class85 {
                 aLongArray1469[i_11_] = aLongArray1471[i_11_];
         }
         for (int i_12_ = 0; i_12_ < 8; i_12_++)
-            aLongArray1474[i_12_]
-                    = (Class105_Sub2.method993
-                    (aLongArray1474[i_12_],
-                            Class105_Sub2.method993(aLongArray1473[i_12_],
-                                    aLongArray1469[i_12_])));
+            aLongArray1474[i_12_] = (Class105_Sub2.method993(aLongArray1474[i_12_], Class105_Sub2.method993(aLongArray1473[i_12_], aLongArray1469[i_12_])));
     }
 
     static final void method828(byte i, int i_13_, int i_14_) {
-        if (i != 38)
-            method828((byte) 63, 119, 33);
+        if (i != 38) method828((byte) 63, 119, 33);
         anInt1467++;
         if (Class21.aHa326 != null) {
             int i_15_ = Class31.anInt425;
@@ -128,30 +68,12 @@ final class Class85 {
             Class239_Sub8.method1752(-1, i_13_, i_14_);
             if (Class348_Sub49.anInt7207 == 0) {
                 Class17.anInterface4_252 = null;
-                Class17.anInterface4_252
-                        = (Class21.aHa326.method3634
-                        (Class21.aHa326.method3665((Class348_Sub16_Sub1
-                                        .anInt8854),
-                                Class239_Sub16.anInt6008),
-                                Class21.aHa326.method3624((Class348_Sub16_Sub1
-                                                .anInt8854),
-                                        Class239_Sub16.anInt6008)));
-            } else if (Class348_Sub49.anInt7207 == 1
-                    && (Class92.anInterface4Array1525 == null
-                    || i_15_ != Class31.anInt425
-                    || i_16_ != Class250.anInt3225)) {
-                Class92.anInterface4Array1525
-                        = new Interface4[Class250.anInt3225 * Class31.anInt425];
-                for (int i_17_ = 0;
-                     Class92.anInterface4Array1525.length > i_17_; i_17_++)
-                    Class92.anInterface4Array1525[i_17_]
-                            = (Class21.aHa326.method3634
-                            (Class21.aHa326.method3665(Class58.anInt1067,
-                                    Class344.anInt4267),
-                                    Class21.aHa326.method3624(Class58.anInt1067,
-                                            Class344.anInt4267)));
-                Class132.anIntArray1909
-                        = new int[Class31.anInt425 * Class250.anInt3225];
+                Class17.anInterface4_252 = (Class21.aHa326.method3634(Class21.aHa326.method3665((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008), Class21.aHa326.method3624((Class348_Sub16_Sub1.anInt8854), Class239_Sub16.anInt6008)));
+            } else if (Class348_Sub49.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != Class31.anInt425 || i_16_ != Class250.anInt3225)) {
+                Class92.anInterface4Array1525 = new Interface4[Class250.anInt3225 * Class31.anInt425];
+                for (int i_17_ = 0; Class92.anInterface4Array1525.length > i_17_; i_17_++)
+                    Class92.anInterface4Array1525[i_17_] = (Class21.aHa326.method3634(Class21.aHa326.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aHa326.method3624(Class58.anInt1067, Class344.anInt4267)));
+                Class132.anIntArray1909 = new int[Class31.anInt425 * Class250.anInt3225];
                 Class318_Sub1_Sub1_Sub2.anInt9997 = 1;
             }
             Class348_Sub16_Sub2.aBoolean8870 = true;
@@ -169,17 +91,14 @@ final class Class85 {
             aLongArray1474[i_20_] = 0L;
     }
 
-    static final void method830(int i, int i_21_, byte i_22_, boolean bool,
-                                int i_23_) {
+    static final void method830(int i, int i_21_, byte i_22_, boolean bool, int i_23_) {
         anInt1461++;
         Class348_Sub42_Sub3.method3179(0);
         Class348_Sub16_Sub2.aLong8866 = 0L;
         int i_24_ = Class348_Sub42_Sub12.method3229(-82);
         if (i_22_ == 102) {
-            if (i == 3 || i_24_ == 3)
-                bool = true;
-            if (!Class348_Sub8.aHa6654.method3695())
-                bool = true;
+            if (i == 3 || i_24_ == 3) bool = true;
+            if (!Class348_Sub8.aHa6654.method3695()) bool = true;
             Class215.method1580((byte) -125, bool, i_21_, i_24_, i, i_23_);
         }
     }
@@ -187,10 +106,9 @@ final class Class85 {
     static final int method831(int i, int i_25_, int i_26_, int i_27_) {
         anInt1476++;
         int i_28_ = 106 / ((-20 - i_27_) / 48);
-        if (i_26_ > i_25_)
-            return i_26_;
-		return Math.min(i_25_, i);
-	}
+        if (i_26_ > i_25_) return i_26_;
+        return Math.min(i_25_, i);
+    }
 
     final void method832(long l, byte[] is, int i) {
         try {
@@ -202,29 +120,23 @@ final class Class85 {
             int i_33_ = 31;
             int i_34_ = 0;
             for (/**/; i_33_ >= 0; i_33_--) {
-                i_34_
-                        += (0xff & aByteArray1465[i_33_]) - -(0xff & (int) l_32_);
+                i_34_ += (0xff & aByteArray1465[i_33_]) - -(0xff & (int) l_32_);
                 aByteArray1465[i_33_] = (byte) i_34_;
                 l_32_ >>>= 8;
                 i_34_ >>>= 8;
             }
             int i_35_ = 6 % ((i - 64) / 52);
             while (l > 8L) {
-                int i_36_ = (is[i_29_] << i_30_ & 0xff
-                        | (0xff & is[1 + i_29_]) >>> 8 + -i_30_);
-                if (i_36_ < 0 || i_36_ >= 256)
-                    throw new RuntimeException("LOGIC ERROR");
-                aByteArray1475[anInt1468]
-                        = (byte) Class273.method2057(aByteArray1475[anInt1468],
-                        i_36_ >>> i_31_);
+                int i_36_ = (is[i_29_] << i_30_ & 0xff | (0xff & is[1 + i_29_]) >>> 8 + -i_30_);
+                if (i_36_ < 0 || i_36_ >= 256) throw new RuntimeException("LOGIC ERROR");
+                aByteArray1475[anInt1468] = (byte) Class273.method2057(aByteArray1475[anInt1468], i_36_ >>> i_31_);
                 anInt1468++;
                 anInt1463 += 8 - i_31_;
                 if (anInt1463 == 512) {
                     method827(0);
                     anInt1463 = anInt1468 = 0;
                 }
-                aByteArray1475[anInt1468]
-                        = (byte) Class139.method1166(i_36_ << -i_31_ + 8, 255);
+                aByteArray1475[anInt1468] = (byte) Class139.method1166(i_36_ << -i_31_ + 8, 255);
                 i_29_++;
                 l -= 8L;
                 anInt1463 += i_31_;
@@ -232,11 +144,8 @@ final class Class85 {
             int i_37_;
             if (l > 0L) {
                 i_37_ = 0xff & is[i_29_] << i_30_;
-                aByteArray1475[anInt1468]
-                        = (byte) Class273.method2057(aByteArray1475[anInt1468],
-                        i_37_ >>> i_31_);
-            } else
-                i_37_ = 0;
+                aByteArray1475[anInt1468] = (byte) Class273.method2057(aByteArray1475[anInt1468], i_37_ >>> i_31_);
+            } else i_37_ = 0;
             if (l + (long) i_31_ >= 8) {
                 anInt1463 += 8 - i_31_;
                 l -= -i_31_ + 8;
@@ -245,39 +154,28 @@ final class Class85 {
                     method827(0);
                     anInt1463 = anInt1468 = 0;
                 }
-                aByteArray1475[anInt1468]
-                        = (byte) Class139.method1166(i_37_ << 8 + -i_31_, 255);
+                aByteArray1475[anInt1468] = (byte) Class139.method1166(i_37_ << 8 + -i_31_, 255);
                 anInt1463 += (int) l;
-            } else
-                anInt1463 += l;
+            } else anInt1463 += l;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("lda.B(" + l + ','
-                            + (is != null ? "{...}" : "null")
-                            + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lda.B(" + l + ',' + (is != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
     final void method833(boolean bool, int i, byte[] is) {
         anInt1470++;
-        aByteArray1475[anInt1468]
-                = (byte) Class273.method2057(aByteArray1475[anInt1468],
-                128 >>> Class139.method1166(anInt1463,
-                        7));
+        aByteArray1475[anInt1468] = (byte) Class273.method2057(aByteArray1475[anInt1468], 128 >>> Class139.method1166(anInt1463, 7));
         anInt1468++;
         if (anInt1468 > 32) {
-            while (anInt1468 < 64)
-                aByteArray1475[anInt1468++] = (byte) 0;
+            while (anInt1468 < 64) aByteArray1475[anInt1468++] = (byte) 0;
             method827(0);
             anInt1468 = 0;
         }
-        while (anInt1468 < 32)
-            aByteArray1475[anInt1468++] = (byte) 0;
+        while (anInt1468 < 32) aByteArray1475[anInt1468++] = (byte) 0;
         Class214.method1577(aByteArray1465, 0, aByteArray1475, 32, 32);
         method827(0);
         int i_38_ = 0;
-        if (bool != true)
-            method830(-1, -123, (byte) 39, false, 61);
+        if (bool != true) method830(-1, -123, (byte) 39, false, 61);
         int i_39_ = i;
         while (i_38_ < 8) {
             long l = aLongArray1474[i_38_];

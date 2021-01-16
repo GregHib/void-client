@@ -9,8 +9,7 @@ final class Class196 {
 
     final boolean method1450(int i) {
         anInt2600++;
-        if (i >= -1)
-            return true;
+        if (i >= -1) return true;
         return this == Class180.aClass196_2372 | Class46.aClass196_838 == this;
     }
 

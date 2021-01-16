@@ -18,23 +18,14 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
 
     final boolean method3090(boolean bool) {
         anInt9235++;
-        if (bool != true)
-            return true;
-        if (this.anIntArray9232 != null)
-            return true;
+        if (bool != true) return true;
+        if (this.anIntArray9232 != null) return true;
         if (anInt9243 >= 0) {
-            Class207 class207
-                    = (Class101_Sub2.anInt5713 >= 0
-                    ? Class207.method1521(Class348.aClass45_4286,
-                    Class101_Sub2.anInt5713, anInt9243)
-                    : Class207.method1512(Class348.aClass45_4286, anInt9243));
+            Class207 class207 = (Class101_Sub2.anInt5713 >= 0 ? Class207.method1521(Class348.aClass45_4286, Class101_Sub2.anInt5713, anInt9243) : Class207.method1512(Class348.aClass45_4286, anInt9243));
             class207.method1524();
-            this.anIntArray9232
-                    = class207.method1516();
-            this.anInt9237
-                    = class207.anInt2702;
-            this.anInt9241
-                    = class207.anInt2696;
+            this.anIntArray9232 = class207.method1516();
+            this.anInt9237 = class207.anInt2702;
+            this.anInt9241 = class207.anInt2696;
             return true;
         }
         return false;
@@ -46,16 +37,14 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         if (i_0_ == 31015) {
-            if (i == 0)
-                anInt9243 = class348_sub49.method3330(842397944);
+            if (i == 0) anInt9243 = class348_sub49.method3330(842397944);
             anInt9236++;
         }
     }
 
     final int method3037(int i) {
         anInt9233++;
-        if (i > -113)
-            aBoolean9242 = false;
+        if (i > -113) aBoolean9242 = false;
         return anInt9243;
     }
 
@@ -69,47 +58,27 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
 
     int[][] method3047(int i, int i_1_) {
         anInt9239++;
-        if (i_1_ != -1564599039)
-            method3047(8, -86);
-        int[][] is
-                = this.aClass322_7033.method2557(-108, i);
-        if (this.aClass322_7033.aBoolean4035
-                && method3090(true)) {
+        if (i_1_ != -1564599039) method3047(8, -86);
+        int[][] is = this.aClass322_7033.method2557(-108, i);
+        if (this.aClass322_7033.aBoolean4035 && method3090(true)) {
             int[] is_2_ = is[0];
             int[] is_3_ = is[1];
             int[] is_4_ = is[2];
-            int i_5_ = (this.anInt9237
-                    * ((this.anInt9241 != Class286_Sub2.anInt6212)
-                    ? (this.anInt9241 * i
-                    / Class286_Sub2.anInt6212)
-                    : i));
-            if (Class348_Sub40_Sub6.anInt9139
-                    == this.anInt9237) {
-                for (int i_6_ = 0;
-                     (Class348_Sub40_Sub6.anInt9139 > i_6_);
-                     i_6_++) {
-                    int i_7_
-                            = this.anIntArray9232[i_5_++];
-                    is_4_[i_6_]
-                            = Class139.method1166(4080, i_7_ << 1154281412);
-                    is_3_[i_6_]
-                            = Class139.method1166(65280, i_7_) >> 1238793732;
+            int i_5_ = (this.anInt9237 * ((this.anInt9241 != Class286_Sub2.anInt6212) ? (this.anInt9241 * i / Class286_Sub2.anInt6212) : i));
+            if (Class348_Sub40_Sub6.anInt9139 == this.anInt9237) {
+                for (int i_6_ = 0; (Class348_Sub40_Sub6.anInt9139 > i_6_); i_6_++) {
+                    int i_7_ = this.anIntArray9232[i_5_++];
+                    is_4_[i_6_] = Class139.method1166(4080, i_7_ << 1154281412);
+                    is_3_[i_6_] = Class139.method1166(65280, i_7_) >> 1238793732;
                     is_2_[i_6_] = Class139.method1166(4080, i_7_ >> 812723916);
                 }
             } else {
-                for (int i_8_ = 0;
-                     (Class348_Sub40_Sub6.anInt9139 > i_8_);
-                     i_8_++) {
-                    int i_9_ = (this.anInt9237 * i_8_
-                            / Class348_Sub40_Sub6.anInt9139);
-                    int i_10_ = (this.anIntArray9232
-                            [i_9_ + i_5_]);
-                    is_4_[i_8_]
-                            = Class139.method1166(i_10_, 255) << -1837452316;
-                    is_3_[i_8_]
-                            = Class139.method1166(i_10_ >> -2005178940, 4080);
-                    is_2_[i_8_]
-                            = Class139.method1166(i_10_, 16711680) >> 77341932;
+                for (int i_8_ = 0; (Class348_Sub40_Sub6.anInt9139 > i_8_); i_8_++) {
+                    int i_9_ = (this.anInt9237 * i_8_ / Class348_Sub40_Sub6.anInt9139);
+                    int i_10_ = (this.anIntArray9232[i_9_ + i_5_]);
+                    is_4_[i_8_] = Class139.method1166(i_10_, 255) << -1837452316;
+                    is_3_[i_8_] = Class139.method1166(i_10_ >> -2005178940, 4080);
+                    is_2_[i_8_] = Class139.method1166(i_10_, 16711680) >> 77341932;
                 }
             }
         }
@@ -119,7 +88,6 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
     public static void method3091(boolean bool) {
         aClass351_9234 = null;
         aClass262_9240 = null;
-        if (bool != true)
-            method3091(false);
+        if (bool != true) method3091(false);
     }
 }

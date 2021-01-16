@@ -17,20 +17,14 @@ final class Class192 {
 
     static final void method1434(int i) {
         anInt2573++;
-        for (Class318_Sub6 class318_sub6 = (Class318_Sub6) InputStream_Sub2
-                .aClass243_83
-                .method1875(60);
-             class318_sub6 != null;
-             class318_sub6 = ((Class318_Sub6)
-                     InputStream_Sub2.aClass243_83.method1875(60)))
+        for (Class318_Sub6 class318_sub6 = (Class318_Sub6) InputStream_Sub2.aClass243_83.method1875(60); class318_sub6 != null; class318_sub6 = ((Class318_Sub6) InputStream_Sub2.aClass243_83.method1875(60)))
             Class318_Sub1_Sub3_Sub4.method2461(class318_sub6, true);
         int i_0_;
         int i_1_;
-        if (Class316.aClass348_Sub51_3959
-                .aClass239_Sub27_7261.method1840(-32350) == 1) {
-                    i_0_ = 0;
-                    i_1_ = 3;
-                } else i_0_ = i_1_ = Class167.anInt2204;
+        if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 1) {
+            i_0_ = 0;
+            i_1_ = 3;
+        } else i_0_ = i_1_ = Class167.anInt2204;
         client.method115();
         for (int i_2_ = i_0_; i_2_ <= i_1_; i_2_++) {
             client.method109();
@@ -38,16 +32,13 @@ final class Class192 {
             client.method104(i_2_);
         }
         client.method106();
-        if (i == -14988)
-            client.method112();
+        if (i == -14988) client.method112();
     }
 
     final void method1435(byte i) {
-        if (i >= -6)
-            this.aBoolean2577 = true;
+        if (i >= -6) this.aBoolean2577 = true;
         anInt2575++;
-        if (this.anInterface5_Impl2_2576 != null)
-            this.anInterface5_Impl2_2576.method21(23315);
+        if (this.anInterface5_Impl2_2576 != null) this.anInterface5_Impl2_2576.method21(23315);
         this.aBoolean2577 = false;
     }
 
@@ -63,8 +54,7 @@ final class Class192 {
 
     final boolean method1437(byte i) {
         anInt2580++;
-        if (i != -100)
-            this.anInterface5_Impl2_2572 = null;
+        if (i != -100) this.anInterface5_Impl2_2572 = null;
         return this.aBoolean2577 && !this.aBoolean2574;
     }
 

@@ -14,74 +14,47 @@ final class Class193 {
     static Class202 aClass202_2589;
     static int anInt2590;
 
-    static final Class279 method1439(int i, Class297 class297,
-                                     Component component, int i_0_, int i_1_) {
+    static final Class279 method1439(int i, Class297 class297, Component component, int i_0_, int i_1_) {
         try {
             anInt2583++;
-            if (Class22.anInt339 == 0)
-                throw new IllegalStateException();
-            if (i_0_ < 0 || i_0_ >= 2)
-                throw new IllegalArgumentException();
-            if (i < 256)
-                i = 256;
+            if (Class22.anInt339 == 0) throw new IllegalStateException();
+            if (i_0_ < 0 || i_0_ >= 2) throw new IllegalArgumentException();
+            if (i < 256) i = 256;
             try {
-                Class279 class279
-                        = (Class279) Class.forName("Class279_Sub1").newInstance();
+                Class279 class279 = (Class279) Class.forName("Class279_Sub1").newInstance();
                 class279.anInt3620 = i;
-                class279.anIntArray3603
-                        = new int[(Class282.aBoolean3652 ? 2 : 1) * 256];
+                class279.anIntArray3603 = new int[(Class282.aBoolean3652 ? 2 : 1) * 256];
                 class279.method2095(component);
                 class279.anInt3613 = (i & ~0x3ff) + 1024;
-                if (class279.anInt3613 > 16384)
-                    class279.anInt3613 = 16384;
+                if (class279.anInt3613 > 16384) class279.anInt3613 = 16384;
                 class279.method2082(class279.anInt3613);
-                if (Class253.anInt3248 > 0
-                        && Class183.aClass250_2462 == null) {
+                if (Class253.anInt3248 > 0 && Class183.aClass250_2462 == null) {
                     Class183.aClass250_2462 = new Class250();
-                    Class183.aClass250_2462.aClass297_3228
-                            = class297;
-                    class297.method2236(Class183.aClass250_2462, -10240,
-                            Class253.anInt3248);
+                    Class183.aClass250_2462.aClass297_3228 = class297;
+                    class297.method2236(Class183.aClass250_2462, -10240, Class253.anInt3248);
                 }
                 if (Class183.aClass250_2462 != null) {
-                    if ((Class183.aClass250_2462
-                            .aClass279Array3218[i_0_])
-                            != null)
-                        throw new IllegalArgumentException();
-                    Class183.aClass250_2462.aClass279Array3218
-                            [i_0_]
-                            = class279;
+                    if ((Class183.aClass250_2462.aClass279Array3218[i_0_]) != null) throw new IllegalArgumentException();
+                    Class183.aClass250_2462.aClass279Array3218[i_0_] = class279;
                 }
-                if (i_1_ != 7)
-                    method1440(107);
+                if (i_1_ != 7) method1440(107);
                 return class279;
             } catch (Throwable throwable) {
                 try {
-                    Class279_Sub2 class279_sub2
-                            = new Class279_Sub2(class297, i_0_);
+                    Class279_Sub2 class279_sub2 = new Class279_Sub2(class297, i_0_);
                     class279_sub2.anInt3620 = i;
-                    class279_sub2.anIntArray3603
-                            = new int[(!Class282.aBoolean3652 ? 1 : 2) * 256];
+                    class279_sub2.anIntArray3603 = new int[(!Class282.aBoolean3652 ? 1 : 2) * 256];
                     class279_sub2.method2095(component);
                     class279_sub2.anInt3613 = 16384;
-                    class279_sub2
-                            .method2082(class279_sub2.anInt3613);
-                    if (Class253.anInt3248 > 0
-                            && Class183.aClass250_2462 == null) {
+                    class279_sub2.method2082(class279_sub2.anInt3613);
+                    if (Class253.anInt3248 > 0 && Class183.aClass250_2462 == null) {
                         Class183.aClass250_2462 = new Class250();
-                        Class183.aClass250_2462.aClass297_3228
-                                = class297;
-                        class297.method2236(Class183.aClass250_2462, -10240,
-                                Class253.anInt3248);
+                        Class183.aClass250_2462.aClass297_3228 = class297;
+                        class297.method2236(Class183.aClass250_2462, -10240, Class253.anInt3248);
                     }
                     if (Class183.aClass250_2462 != null) {
-                        if ((Class183.aClass250_2462
-                                .aClass279Array3218[i_0_])
-                                != null)
-                            throw new IllegalArgumentException();
-                        Class183.aClass250_2462
-                                .aClass279Array3218[i_0_]
-                                = class279_sub2;
+                        if ((Class183.aClass250_2462.aClass279Array3218[i_0_]) != null) throw new IllegalArgumentException();
+                        Class183.aClass250_2462.aClass279Array3218[i_0_] = class279_sub2;
                     }
                     return class279_sub2;
                 } catch (Throwable throwable_2_) {
@@ -89,14 +62,7 @@ final class Class193 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("qr.A(" + i + ','
-                            + (class297 != null ? "{...}"
-                            : "null")
-                            + ','
-                            + (component != null ? "{...}"
-                            : "null")
-                            + ',' + i_0_ + ',' + i_1_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qr.A(" + i + ',' + (class297 != null ? "{...}" : "null") + ',' + (component != null ? "{...}" : "null") + ',' + i_0_ + ',' + i_1_ + ')'));
         }
     }
 

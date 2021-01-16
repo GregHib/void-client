@@ -13,8 +13,7 @@ final class Class180 {
         aClass196_2372 = null;
         anIntArray2370 = null;
         aRectangleArray2371 = null;
-        if (i != -43)
-            aRectangleArray2371 = null;
+        if (i != -43) aRectangleArray2371 = null;
     }
 
     static {

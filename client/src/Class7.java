@@ -9,11 +9,9 @@ public final class Class7 {
     private GraphicsDevice aGraphicsDevice157;
     private DisplayMode aDisplayMode158;
 
-    public final void method209(Frame frame, int i, int i_0_, int i_1_,
-                                int i_2_) {
+    public final void method209(Frame frame, int i, int i_0_, int i_1_, int i_2_) {
         aDisplayMode158 = aGraphicsDevice157.getDisplayMode();
-        if (aDisplayMode158 == null)
-            throw new NullPointerException();
+        if (aDisplayMode158 == null) throw new NullPointerException();
         frame.setUndecorated(true);
         frame.enableInputMethods(false);
         method212(frame, (byte) 51);
@@ -21,25 +19,18 @@ public final class Class7 {
             int i_3_ = aDisplayMode158.getRefreshRate();
             DisplayMode[] displaymodes = aGraphicsDevice157.getDisplayModes();
             boolean bool = false;
-            for (int i_4_ = 0;
-                 i_4_ < displaymodes.length;
-                 i_4_++) {
-                if (i == displaymodes[i_4_].getWidth()
-                        && i_0_ == displaymodes[i_4_].getHeight()
-                        && displaymodes[i_4_].getBitDepth() == i_1_) {
+            for (int i_4_ = 0; i_4_ < displaymodes.length; i_4_++) {
+                if (i == displaymodes[i_4_].getWidth() && i_0_ == displaymodes[i_4_].getHeight() && displaymodes[i_4_].getBitDepth() == i_1_) {
                     int i_5_ = displaymodes[i_4_].getRefreshRate();
-                    if (!bool
-                            || Math.abs(-i_3_ + i_5_) < Math.abs(i_2_ + -i_3_)) {
+                    if (!bool || Math.abs(-i_3_ + i_5_) < Math.abs(i_2_ + -i_3_)) {
                         bool = true;
                         i_2_ = i_5_;
                     }
                 }
             }
-            if (!bool)
-                i_2_ = i_3_;
+            if (!bool) i_2_ = i_3_;
         }
-        aGraphicsDevice157.setDisplayMode(new DisplayMode(i, i_0_, i_1_,
-                i_2_));
+        aGraphicsDevice157.setDisplayMode(new DisplayMode(i, i_0_, i_1_, i_2_));
     }
 
     public final int[] method210() {
@@ -57,26 +48,21 @@ public final class Class7 {
     public final void method211() {
         if (aDisplayMode158 != null) {
             aGraphicsDevice157.setDisplayMode(aDisplayMode158);
-            if (!aGraphicsDevice157.getDisplayMode().equals(aDisplayMode158))
-                throw new RuntimeException
-                        ("Did not return to correct resolution!");
+            if (!aGraphicsDevice157.getDisplayMode().equals(aDisplayMode158)) throw new RuntimeException("Did not return to correct resolution!");
             aDisplayMode158 = null;
         }
         method212(null, (byte) 104);
     }
 
     public Class7() throws Exception {
-        GraphicsEnvironment graphicsenvironment
-                = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        GraphicsEnvironment graphicsenvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         aGraphicsDevice157 = graphicsenvironment.getDefaultScreenDevice();
         if (!aGraphicsDevice157.isFullScreenSupported()) {
-            GraphicsDevice[] graphicsdevices
-                    = graphicsenvironment.getScreenDevices();
+            GraphicsDevice[] graphicsdevices = graphicsenvironment.getScreenDevices();
             GraphicsDevice[] graphicsdevices_6_ = graphicsdevices;
             for (int i = 0; graphicsdevices_6_.length > i; i++) {
                 GraphicsDevice graphicsdevice = graphicsdevices_6_[i];
-                if (null != graphicsdevice
-                        && graphicsdevice.isFullScreenSupported()) {
+                if (null != graphicsdevice && graphicsdevice.isFullScreenSupported()) {
                     aGraphicsDevice157 = graphicsdevice;
                     return;
                 }
@@ -87,14 +73,11 @@ public final class Class7 {
 
     private final void method212(Frame frame, byte i) {
         boolean bool = false;
-        if (i <= 47)
-            method212(null, (byte) -25);
+        if (i <= 47) method212(null, (byte) -25);
         try {
-            Field field = Class.forName("sun.awt.Win32GraphicsDevice")
-                    .getDeclaredField("valid");
+            Field field = Class.forName("sun.awt.Win32GraphicsDevice").getDeclaredField("valid");
             field.setAccessible(true);
-            boolean bool_7_
-                    = ((Boolean) field.get(aGraphicsDevice157)).booleanValue();
+            boolean bool_7_ = ((Boolean) field.get(aGraphicsDevice157)).booleanValue();
             if (bool_7_) {
                 field.set(aGraphicsDevice157, Boolean.FALSE);
                 bool = true;
@@ -107,8 +90,7 @@ public final class Class7 {
         } catch (Throwable object) {
             if (bool) {
                 try {
-                    Field field = Class.forName("sun.awt.Win32GraphicsDevice")
-                            .getDeclaredField("valid");
+                    Field field = Class.forName("sun.awt.Win32GraphicsDevice").getDeclaredField("valid");
                     field.set(aGraphicsDevice157, Boolean.TRUE);
                 } catch (Exception e) {
                 }
@@ -116,8 +98,7 @@ public final class Class7 {
         }
         if (bool) {
             try {
-                Field field = Class.forName("sun.awt.Win32GraphicsDevice")
-                        .getDeclaredField("valid");
+                Field field = Class.forName("sun.awt.Win32GraphicsDevice").getDeclaredField("valid");
                 field.set(aGraphicsDevice157, Boolean.TRUE);
             } catch (Throwable throwable) {
                 /* empty */

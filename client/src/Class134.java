@@ -16,10 +16,8 @@ final class Class134 implements IEnumModesCallback {
     private final DirectDraw aDirectDraw4607 = new DirectDraw();
     private static int anInt4608;
 
-    public final void method1144(DDSurfaceDesc ddsurfacedesc,
-                                 IUnknown iunknown) {
-        if (anIntArray4606 == null)
-            anInt4608 += 4;
+    public final void method1144(DDSurfaceDesc ddsurfacedesc, IUnknown iunknown) {
+        if (anIntArray4606 == null) anInt4608 += 4;
         else {
             anIntArray4606[anInt4608++] = ddsurfacedesc.width;
             anIntArray4606[anInt4608++] = ddsurfacedesc.height;
@@ -33,16 +31,14 @@ final class Class134 implements IEnumModesCallback {
         anIntArray4606 = new int[anInt4608];
         anInt4608 = 0;
         aDirectDraw4607.enumDisplayModes(0, null, null, this);
-        if (bool != true)
-            anInt4608 = 52;
+        if (bool != true) anInt4608 = 52;
         int[] is = anIntArray4606;
         anIntArray4606 = null;
         anInt4608 = 0;
         return is;
     }
 
-    final void method1146(int i, int i_0_, int i_1_, int i_2_, int i_3_,
-                          Frame frame) {
+    final void method1146(int i, int i_0_, int i_1_, int i_2_, int i_3_, Frame frame) {
         frame.setVisible(true);
         WComponentPeer wcomponentpeer = (WComponentPeer) frame.getPeer();
         int i_4_ = wcomponentpeer.getHwnd();

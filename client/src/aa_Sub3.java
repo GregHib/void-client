@@ -16,15 +16,13 @@ final class aa_Sub3 extends aa {
     /*synthetic*/ static Class aClass5208;
 
     static final boolean method166(byte i, int i_0_, int i_1_) {
-        if (i < 5)
-            method166((byte) -119, -93, 73);
+        if (i < 5) method166((byte) -119, -93, 73);
         anInt5203++;
         return (i_1_ & 0x800) != 0 && (i_0_ & 0x37) != 0;
     }
 
     public static void method167(int i) {
-        if (i != 19612)
-            method167(-70);
+        if (i != 19612) method167(-70);
         aClass351_5200 = null;
         aClass351_5204 = null;
         aClass348_Sub6_5206 = null;
@@ -33,20 +31,14 @@ final class aa_Sub3 extends aa {
 
     static final void method168(byte i) {
         do {
-            if (!Class348_Sub23_Sub1.aClass297_8992
-                    .aBoolean3794) {
+            if (!Class348_Sub23_Sub1.aClass297_8992.aBoolean3794) {
                 try {
-                    Method method
-                            = (aClass5208 != null ? aClass5208
-                            : (aClass5208 = method169("java.lang.Runtime")))
-                            .getMethod("maxMemory");
+                    Method method = (aClass5208 != null ? aClass5208 : (aClass5208 = method169("java.lang.Runtime"))).getMethod("maxMemory");
                     if (method != null) {
                         try {
                             Runtime runtime = Runtime.getRuntime();
-                            Long var_long
-                                    = (Long) method.invoke(runtime, null);
-                            Class226.anInt2964
-                                    = 1 + (int) (var_long.longValue() / 1048576L);
+                            Long var_long = (Long) method.invoke(runtime, null);
+                            Class226.anInt2964 = 1 + (int) (var_long.longValue() / 1048576L);
                         } catch (Throwable throwable) {
                             /* empty */
                         }
@@ -67,14 +59,7 @@ final class aa_Sub3 extends aa {
             this.anIntArray5201 = is;
             this.anIntArray5202 = is_4_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("nba.<init>(" + i + ',' + i_3_
-                            + ','
-                            + (is != null ? "{...}" : "null")
-                            + ','
-                            + (is_4_ != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nba.<init>(" + i + ',' + i_3_ + ',' + (is != null ? "{...}" : "null") + ',' + (is_4_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -83,8 +68,7 @@ final class aa_Sub3 extends aa {
         try {
             return Class.forName(string);
         } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception
-                    .getMessage());
+            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
         }
     }
 }

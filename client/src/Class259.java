@@ -25,16 +25,14 @@ final class Class259 {
         synchronized (aClass60_3303) {
             class160 = (Class160) aClass60_3303.method583(i, -51);
         }
-        if (class160 != null)
-            return class160;
+        if (class160 != null) return class160;
         int i_2_ = 44 % ((-41 - i_1_) / 33);
         byte[] is;
         synchronized (aClass45_3299) {
             is = aClass45_3299.method410(-1860, 19, i);
         }
         class160 = new Class160();
-        if (is != null)
-            class160.method1255(new Class348_Sub49(is), -1);
+        if (is != null) class160.method1255(new Class348_Sub49(is), -1);
         synchronized (aClass60_3303) {
             aClass60_3303.method582(class160, i, (byte) -120);
         }
@@ -46,14 +44,7 @@ final class Class259 {
             aClass45_3299 = class45;
             this.anInt3305 = aClass45_3299.method407(0, 19);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("uea.<init>("
-                            + (class230 != null ? "{...}"
-                            : "null")
-                            + ',' + i + ','
-                            + (class45 != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

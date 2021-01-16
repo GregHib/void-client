@@ -16,8 +16,7 @@ final class Class74 {
     public static void method744(byte i) {
         aClass114_1234 = null;
         anIntArray1233 = null;
-        if (i < 87)
-            method744((byte) -102);
+        if (i < 87) method744((byte) -102);
     }
 
     Class74(int i, int i_0_) {

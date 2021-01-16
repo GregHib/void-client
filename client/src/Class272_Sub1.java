@@ -7,8 +7,7 @@ import java.net.Socket;
 
 final class Class272_Sub1 extends Class272 {
     final Socket method2050(int i) throws IOException {
-        if (i > -100)
-            return null;
+        if (i > -100) return null;
         return this.method2047((byte) 87);
     }
 

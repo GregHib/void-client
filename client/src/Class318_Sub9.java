@@ -10,12 +10,8 @@ class Class318_Sub9 extends Class318 {
     final void method2514(int i) {
         anInt6467++;
         if (this.aClass318_Sub9_6468 != null) {
-            this.aClass318_Sub9_6468
-                    .aClass318_Sub9_6469
-                    = this.aClass318_Sub9_6469;
-            this.aClass318_Sub9_6469
-                    .aClass318_Sub9_6468
-                    = this.aClass318_Sub9_6468;
+            this.aClass318_Sub9_6468.aClass318_Sub9_6469 = this.aClass318_Sub9_6469;
+            this.aClass318_Sub9_6469.aClass318_Sub9_6468 = this.aClass318_Sub9_6468;
             this.aClass318_Sub9_6469 = null;
             this.aClass318_Sub9_6468 = null;
             int i_0_ = 123 / ((6 - i) / 37);

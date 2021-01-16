@@ -41,10 +41,8 @@ final class Class40 {
     int[] anIntArray557;
     static int anInt558 = -1;
 
-    static final void method368(int i, int i_0_, boolean bool, int i_1_,
-                                Class45 class45, int i_2_, int i_3_) {
-        if (i_0_ != 18002)
-            anInt558 = 41;
+    static final void method368(int i, int i_0_, boolean bool, int i_1_, Class45 class45, int i_2_, int i_3_) {
+        if (i_0_ != 18002) anInt558 = 41;
         anInt551++;
         if (i_3_ > 0) {
             Class346.aBoolean4275 = bool;
@@ -54,13 +52,9 @@ final class Class40 {
             Class285.aClass348_Sub16_Sub3_4743 = null;
             Class318.anInt3971 = i_2_;
             Class58.anInt1059 = i;
-            Class239_Sub14.anInt5994
-                    = (Class98.aClass348_Sub16_Sub3_1564.method2844((byte) 103)
-                    / i_3_);
-            if (Class239_Sub14.anInt5994 < 1)
-                Class239_Sub14.anInt5994 = 1;
-        } else
-            Class348_Sub1_Sub3.method2732(i_2_, i_1_, bool, 123, class45, i);
+            Class239_Sub14.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564.method2844((byte) 103) / i_3_);
+            if (Class239_Sub14.anInt5994 < 1) Class239_Sub14.anInt5994 = 1;
+        } else Class348_Sub1_Sub3.method2732(i_2_, i_1_, bool, 123, class45, i);
     }
 
     static final void method369(int i) {
@@ -68,8 +62,7 @@ final class Class40 {
         Class239_Sub2.aClass105Array5857 = null;
         Class348_Sub12.aClass105Array6742 = null;
         Class240.aClass105Array4679 = null;
-        if (i != -29776)
-            method370(true);
+        if (i != -29776) method370(true);
         Class79.aClass105_1365 = null;
         Class25.aClass105Array367 = null;
         Class239_Sub9.aClass105Array5933 = null;
@@ -88,14 +81,12 @@ final class Class40 {
     }
 
     public static void method370(boolean bool) {
-        if (bool != true)
-            anIntArray543 = null;
+        if (bool != true) anIntArray543 = null;
         anIntArray543 = null;
     }
 
     static final boolean method371(int i, int i_4_, int i_5_) {
-        if (i_4_ != 256)
-            return true;
+        if (i_4_ != 256) return true;
         anInt547++;
         return (i & 0x180) != 0;
     }

@@ -18,24 +18,20 @@ final class Class54 {
 
     final int method499(int i) {
         anInt972++;
-        if (i != 21110)
-            return -38;
-        if ((aByte966 & 0x8) != 8)
-            return 0;
+        if (i != 21110) return -38;
+        if ((aByte966 & 0x8) != 8) return 0;
         return 1;
     }
 
     static final int method500(int i, int i_0_) {
         anInt975++;
-        if (i != 7)
-            return -107;
+        if (i != 7) return -107;
         return i_0_ >>> 503944;
     }
 
     public static void method501(int i) {
         aStringArray974 = null;
-        if (i != 1)
-            method501(-15);
+        if (i != 1) method501(-15);
     }
 
     final int method502(byte i) {
@@ -48,8 +44,7 @@ final class Class54 {
         /* empty */
     }
 
-    static final void method503(int i, int i_2_, byte i_3_, int i_4_,
-                                int i_5_) {
+    static final void method503(int i, int i_2_, byte i_3_, int i_4_, int i_5_) {
         anInt968++;
         int i_6_ = Class348_Sub42_Sub16_Sub2.anInt10463;
         while_4_:
@@ -57,12 +52,10 @@ final class Class54 {
             do {
                 if (i_6_ != 0) {
                     if (i_6_ != 1) {
-                        if (i_6_ == 2)
-                            break;
+                        if (i_6_ == 2) break;
                         break while_4_;
                     }
-                } else
-                    return;
+                } else return;
                 Class348_Sub3.anInt6585 = i;
                 Class314.anInt3941 = i_2_;
                 Class239.anInt3142 = i_5_;
@@ -70,18 +63,13 @@ final class Class54 {
                 Class314.anInt3939 = i_4_;
                 return;
             } while (false);
-            if (Class314.anInt3939 < i_4_)
-                Class314.anInt3939 = i_4_;
-            if (Class314.anInt3941 > i_2_)
-                Class314.anInt3941 = i_2_;
-            if (Class239.anInt3142 > i_5_)
-                Class239.anInt3142 = i_5_;
-            if (i > Class348_Sub3.anInt6585)
-                Class348_Sub3.anInt6585 = i;
+            if (Class314.anInt3939 < i_4_) Class314.anInt3939 = i_4_;
+            if (Class314.anInt3941 > i_2_) Class314.anInt3941 = i_2_;
+            if (Class239.anInt3142 > i_5_) Class239.anInt3142 = i_5_;
+            if (i > Class348_Sub3.anInt6585) Class348_Sub3.anInt6585 = i;
             return;
         } while (false);
-        if (i_3_ != -74)
-            method501(46);
+        if (i_3_ != -74) method501(46);
     }
 
     Class54(Class348_Sub49 class348_sub49) {

@@ -4,9 +4,7 @@
 
 final class Class331 {
     static int[] anIntArray4128 = new int[5];
-    static String[] aStringArray4129
-            = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
-            "Oct", "Nov", "Dec"};
+    static String[] aStringArray4129 = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
     static Class46 aClass46_4130;
     static int anInt4131;
     static int anInt4132;
@@ -16,26 +14,21 @@ final class Class331 {
     static int anInt4136;
     static int anInt4137;
 
-    static final int method2635(float f, boolean bool, float f_0_,
-                                float f_1_) {
+    static final int method2635(float f, boolean bool, float f_0_, float f_1_) {
         anInt4131++;
         float f_2_ = !(f_1_ < 0.0F) ? f_1_ : -f_1_;
         float f_3_ = f < 0.0F ? -f : f;
-        if (bool != false)
-            method2637(-85);
+        if (bool != false) method2637(-85);
         float f_4_ = !(f_0_ < 0.0F) ? f_0_ : -f_0_;
         if (!(f_2_ < f_3_) || !(f_3_ > f_4_)) {
             if (!(f_4_ > f_2_) || !(f_3_ < f_4_)) {
-                if (!(f_1_ > 0.0F))
-                    return 5;
+                if (!(f_1_ > 0.0F)) return 5;
                 return 4;
             }
-            if (f_0_ > 0.0F)
-                return 2;
+            if (f_0_ > 0.0F) return 2;
             return 3;
         }
-        if (f > 0.0F)
-            return 0;
+        if (f > 0.0F) return 0;
         return 1;
     }
 
@@ -50,8 +43,7 @@ final class Class331 {
     public static void method2637(int i) {
         aStringArray4129 = null;
         aClass46_4130 = null;
-        if (i != 0)
-            aClass46_4130 = null;
+        if (i != 0) aClass46_4130 = null;
         anIntArray4128 = null;
     }
 
@@ -63,8 +55,7 @@ final class Class331 {
         synchronized (Class130.aClass60_1894) {
             Class130.aClass60_1894.method587(i + 4530);
         }
-        if (i != -4631)
-            anInt4135 = 37;
+        if (i != -4631) anInt4135 = 37;
     }
 
     static final short[] method2639(byte i, short[] is, int i_6_) {

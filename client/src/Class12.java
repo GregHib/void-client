@@ -25,15 +25,9 @@ final class Class12 {
     boolean aBoolean217;
     boolean aBoolean218;
 
-    static final void method223(int i, int i_0_, int i_1_, int i_2_,
-                                byte i_3_) {
-        if (i_2_ > i)
-            Class135_Sub2.method1156(-27, i_2_,
-                    Class17.anIntArrayArray255[i_1_], i,
-                    i_0_);
-        else
-            Class135_Sub2.method1156(-27, i, Class17.anIntArrayArray255[i_1_],
-                    i_2_, i_0_);
+    static final void method223(int i, int i_0_, int i_1_, int i_2_, byte i_3_) {
+        if (i_2_ > i) Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255[i_1_], i, i_0_);
+        else Class135_Sub2.method1156(-27, i, Class17.anIntArrayArray255[i_1_], i_2_, i_0_);
         anInt214++;
         if (i_3_ >= 20) {
             /* empty */
@@ -43,8 +37,7 @@ final class Class12 {
     static final void method224(byte i, int[][] is) {
         Class17.anIntArrayArray255 = is;
         anInt210++;
-        if (i != -40)
-            method224((byte) 100, null);
+        if (i != -40) method224((byte) 100, null);
     }
 
     public Class12() {

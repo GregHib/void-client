@@ -13,8 +13,7 @@ final class Class176 {
         aClass114_2331 = null;
         aClass348_Sub26_2332 = null;
         aClass114_2335 = null;
-        if (i != 1)
-            aClass114_2331 = null;
+        if (i != 1) aClass114_2331 = null;
         aClass348_Sub47Array2334 = null;
         aClass323_2333 = null;
     }

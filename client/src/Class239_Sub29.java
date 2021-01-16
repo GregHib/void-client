@@ -15,8 +15,7 @@ final class Class239_Sub29 extends Class239 {
     static int anInt6153;
 
     final int method1848(int i) {
-        if (i != -32350)
-            method1714(100, 29);
+        if (i != -32350) method1714(100, 29);
         anInt6145++;
         return this.anInt3138;
     }
@@ -27,8 +26,7 @@ final class Class239_Sub29 extends Class239 {
 
     final int method1710(int i) {
         anInt6153++;
-        if (i != 20014)
-            method1716(true);
+        if (i != 20014) method1716(true);
         return 0;
     }
 
@@ -44,23 +42,18 @@ final class Class239_Sub29 extends Class239 {
 
     static final boolean method1849(char c, int i) {
         anInt6149++;
-        if (Character.isISOControl(c))
-            return false;
-        if (Class318_Sub1_Sub3_Sub3_Sub1.method2446(c, (byte) 105))
-            return true;
+        if (Character.isISOControl(c)) return false;
+        if (Class318_Sub1_Sub3_Sub3_Sub1.method2446(c, (byte) 105)) return true;
         char[] cs = Class185.aCharArray2488;
         for (int i_2_ = 0; cs.length > i_2_; i_2_++) {
             int i_3_ = cs[i_2_];
-            if (c == i_3_)
-                return true;
+            if (c == i_3_) return true;
         }
         int i_4_ = -127 / ((i - 44) / 45);
         char[] cs_5_ = Class131.aCharArray1903;
-        for (int i_6_ = 0; cs_5_.length > i_6_;
-             i_6_++) {
+        for (int i_6_ = 0; cs_5_.length > i_6_; i_6_++) {
             int i_7_ = cs_5_[i_6_];
-            if (i_7_ == c)
-                return true;
+            if (i_7_ == c) return true;
         }
         return false;
     }
@@ -73,8 +66,7 @@ final class Class239_Sub29 extends Class239 {
 
     final int method1714(int i, int i_10_) {
         anInt6146++;
-        if (i != 3)
-            aBoolean6147 = false;
+        if (i != 3) aBoolean6147 = false;
         return 1;
     }
 
@@ -98,11 +90,8 @@ final class Class239_Sub29 extends Class239 {
     }
 
     final void method1716(boolean bool) {
-        if (this.anInt3138 < 0
-                || this.anInt3138 > 4)
-            this.anInt3138 = method1710(20014);
+        if (this.anInt3138 < 0 || this.anInt3138 > 4) this.anInt3138 = method1710(20014);
         anInt6150++;
-        if (bool != false)
-            anInt6151 = 62;
+        if (bool != false) anInt6151 = 62;
     }
 }

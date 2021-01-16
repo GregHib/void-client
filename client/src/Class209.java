@@ -9,8 +9,7 @@ final class Class209 {
 
     public static void method1529(boolean bool) {
         aClass114_2717 = null;
-        if (bool != true)
-            aClass114_2717 = null;
+        if (bool != true) aClass114_2717 = null;
         aClass348_Sub16_Sub3_2718 = null;
     }
 

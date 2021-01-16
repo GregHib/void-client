@@ -14,8 +14,7 @@ abstract class Class348_Sub45 extends Class348 {
     abstract int method3308(byte i);
 
     static final void method3309(int i) {
-        Class354.anIntArrayArrayArray4356
-                = (new int[Class189.anInt2524][1 + Class318_Sub7.anInt6451]
+        Class354.anIntArrayArrayArray4356 = (new int[Class189.anInt2524][1 + Class318_Sub7.anInt6451]
                 [1 + Class348_Sub41.anInt7054]);
         anInt7104++;
         Class348_Sub44.anInt7101 = 0;
@@ -27,8 +26,7 @@ abstract class Class348_Sub45 extends Class348 {
         Class69.anInt1200 = 0;
         Class239_Sub26.anInt6115 = 0;
         Class294.aClass338Array5060 = new Class338[1000];
-        if (i > -113)
-            aClass304_7103 = null;
+        if (i > -113) aClass304_7103 = null;
         Class348_Sub42_Sub10.anInt9577 = 0;
         Class348_Sub42_Sub19.aClass338Array9700 = new Class338[500];
         Class348_Sub40_Sub23.aBoolean9307 = !(Class9.aHa171 instanceof oa);
@@ -50,8 +48,7 @@ abstract class Class348_Sub45 extends Class348 {
 
     public static void method3314(int i) {
         aClass114_7106 = null;
-        if (i != 5)
-            method3313(-103, null);
+        if (i != 5) method3313(-103, null);
         aClass114_7105 = null;
         aClass361Array7108 = null;
         aClass105Array7107 = null;

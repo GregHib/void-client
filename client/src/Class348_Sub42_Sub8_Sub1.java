@@ -8,14 +8,12 @@ final class Class348_Sub42_Sub8_Sub1 extends Class348_Sub42_Sub8 {
     private final SoftReference aSoftReference10428;
 
     final boolean method3195(int i) {
-        if (i != -4)
-            method3193(-41);
+        if (i != -4) method3193(-41);
         return true;
     }
 
     final Object method3193(int i) {
-        if (i <= 75)
-            return null;
+        if (i <= 75) return null;
         return aSoftReference10428.get();
     }
 

@@ -18,28 +18,24 @@ final class Class290 {
     static int anInt3718;
 
     final void method2195(boolean bool) {
-        if (this.anInterface5_Impl1_3708 != null)
-            this.anInterface5_Impl1_3708.method21(23315);
+        if (this.anInterface5_Impl1_3708 != null) this.anInterface5_Impl1_3708.method21(23315);
         anInt3715++;
         this.aBoolean3714 = bool;
     }
 
     static final void method2196(byte i) {
-        Class239_Sub19.anInt6043
-                = (int) ((double) Class367_Sub4.anInt7319 * 34.46);
+        Class239_Sub19.anInt6043 = (int) ((double) Class367_Sub4.anInt7319 * 34.46);
         Class348_Sub33.anInt6964 = 200;
         anInt3716++;
         if (i == -9) {
             Class239_Sub19.anInt6043 <<= 2;
-            if (Class348_Sub8.aHa6654.method3670())
-                Class239_Sub19.anInt6043 += 512;
+            if (Class348_Sub8.aHa6654.method3670()) Class239_Sub19.anInt6043 += 512;
             Class226.method1626(1, false);
         }
     }
 
     final boolean method2197(byte i) {
-        if (i >= -4)
-            method2195(true);
+        if (i >= -4) method2195(true);
         anInt3718++;
         return this.aBoolean3714 && !this.aBoolean3709;
     }

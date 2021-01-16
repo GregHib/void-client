@@ -12,12 +12,9 @@ final class Class62 {
     static int[][][] anIntArrayArrayArray1116;
 
     static final Class341[] method596(int i) {
-        if (i != 20000)
-            anIntArrayArrayArray1116 = null;
+        if (i != 20000) anIntArrayArrayArray1116 = null;
         anInt1112++;
-        return (new Class341[]
-                {Class186_Sub1.aClass341_5808, Class27.aClass341_399,
-                        Class237_Sub1.aClass341_5821});
+        return (new Class341[]{Class186_Sub1.aClass341_5808, Class27.aClass341_399, Class237_Sub1.aClass341_5821});
     }
 
     public static void method597(byte i) {
@@ -28,29 +25,18 @@ final class Class62 {
 
     static final void method598(int i) {
         anInt1111++;
-        if (i != 9013)
-            method597((byte) 86);
-        for (Class348_Sub15 class348_sub15
-             = (Class348_Sub15) Class27.aClass356_389.method3484(0);
-             class348_sub15 != null;
-             class348_sub15
-                     = (Class348_Sub15) Class27.aClass356_389.method3482(0)) {
-            if (!class348_sub15.aBoolean6772)
-                Class64_Sub3.method690((byte) -94,
-                        (class348_sub15
-                                .anInt6773));
-            else
-                class348_sub15.aBoolean6772 = false;
+        if (i != 9013) method597((byte) 86);
+        for (Class348_Sub15 class348_sub15 = (Class348_Sub15) Class27.aClass356_389.method3484(0); class348_sub15 != null; class348_sub15 = (Class348_Sub15) Class27.aClass356_389.method3482(0)) {
+            if (!class348_sub15.aBoolean6772) Class64_Sub3.method690((byte) -94, (class348_sub15.anInt6773));
+            else class348_sub15.aBoolean6772 = false;
         }
     }
 
     static final synchronized long method599(int i) {
-        if (i > -52)
-            return -121L;
+        if (i > -52) return -121L;
         anInt1113++;
         long l = System.currentTimeMillis();
-        if (Class101_Sub1.aLong5663 > l)
-            Class318_Sub1_Sub1.aLong8728 += Class101_Sub1.aLong5663 - l;
+        if (Class101_Sub1.aLong5663 > l) Class318_Sub1_Sub1.aLong8728 += Class101_Sub1.aLong5663 - l;
         Class101_Sub1.aLong5663 = l;
         return l + Class318_Sub1_Sub1.aLong8728;
     }
@@ -75,17 +61,11 @@ final class Class62 {
             Class133.method1140(120);
             i_3_ = 4;
         }
-        if (i_1_ != Class316.aClass348_Sub51_3959
-                .aClass239_Sub25_7271.method1829(-32350)) {
-            Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                    (Class316
-                            .aClass348_Sub51_3959
-                            .aClass239_Sub25_7251),
-                    i_1_);
+        if (i_1_ != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) {
+            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), i_1_);
             Class367_Sub10.method3553(false, (byte) 122, i_1_);
         }
-        if (i >= -20)
-            aClass243_1114 = null;
+        if (i >= -20) aClass243_1114 = null;
         Class14_Sub2.method243(37);
         return i_3_;
     }

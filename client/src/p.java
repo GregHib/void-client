@@ -24,14 +24,11 @@ final class p extends Class348 implements Interface19 {
         if (!aBoolean5144) {
             aLong5146 = Class62.method599(-54);
             aBoolean5144 = true;
-        } else if (Class62.method599(-88) - aLong5146 < 30000L)
-            this.aCanvas5147.repaint();
-        else
-            throw new RuntimeException(exception.getMessage());
+        } else if (Class62.method599(-88) - aLong5146 < 30000L) this.aCanvas5147.repaint();
+        else throw new RuntimeException(exception.getMessage());
     }
 
-    private final native void K(int i, int i_5_, int i_6_, int i_7_, int i_8_,
-                                int i_9_);
+    private final native void K(int i, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_);
 
     final void method3433(int i, int i_10_) {
         try {
@@ -46,8 +43,7 @@ final class p extends Class348 implements Interface19 {
     }
 
     protected final void finalize() {
-        if (this.nativeid != 0L)
-            Class257.method1947(0, this);
+        if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
     p(oa var_oa, Canvas canvas, int i, int i_11_) {
@@ -57,15 +53,12 @@ final class p extends Class348 implements Interface19 {
         sa(var_oa, this.aCanvas5147, i, i_11_);
     }
 
-    final void method3434(Rectangle[] rectangles, int i, int i_12_,
-                          int i_13_) {
+    final void method3434(Rectangle[] rectangles, int i, int i_12_, int i_13_) {
         try {
             synchronized (this.aCanvas5147.getTreeLock()) {
                 for (int i_14_ = 0; i_14_ < i; i_14_++) {
                     Rectangle rectangle = rectangles[i_14_];
-                    if (rectangle.width > 0 && rectangle.height > 0)
-                        K(rectangle.x, rectangle.y, rectangle.width,
-                                rectangle.height, i_12_, i_13_);
+                    if (rectangle.width > 0 && rectangle.height > 0) K(rectangle.x, rectangle.y, rectangle.width, rectangle.height, i_12_, i_13_);
                 }
                 aBoolean5144 = false;
             }

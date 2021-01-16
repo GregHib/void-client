@@ -20,23 +20,19 @@ final class Class179 {
     static int anInt2369;
 
     static final Object method1357(byte[] is, boolean bool, byte i) {
-        if (i < 73)
-            anInt2361 = -51;
+        if (i < 73) anInt2361 = -51;
         anInt2363++;
-        if (is == null)
-            return null;
+        if (is == null) return null;
         if (is.length > 136 && !Class17.aBoolean247) {
             try {
-                Class344 class344
-                        = (Class344) Class.forName("Class344_Sub1").newInstance();
+                Class344 class344 = (Class344) Class.forName("Class344_Sub1").newInstance();
                 class344.method2691((byte) 62, is);
                 return class344;
             } catch (Throwable throwable) {
                 Class17.aBoolean247 = true;
             }
         }
-        if (bool)
-            return ha_Sub3.method3873(is, 0);
+        if (bool) return ha_Sub3.method3873(is, 0);
         return is;
     }
 
@@ -45,38 +41,28 @@ final class Class179 {
         anInt2362++;
         int i_2_ = aStringArray2367.length;
         while (i_2_ <= i) {
-            if (!aBoolean2360)
-                i_2_ += anInt2365;
-            else if (i_2_ != 0)
-                i_2_ *= anInt2365;
-            else
-                i_2_ = 1;
+            if (!aBoolean2360) i_2_ += anInt2365;
+            else if (i_2_ != 0) i_2_ *= anInt2365;
+            else i_2_ = 1;
         }
         return i_2_;
     }
 
     static final int method1359(boolean bool, int i) {
         anInt2368++;
-        if (bool != true)
-            anInt2361 = -32;
+        if (bool != true) anInt2361 = -32;
         return i >>> 799854122;
     }
 
-    static final void method1360(String string, Class297 class297,
-                                 boolean bool, boolean bool_3_, int i) {
+    static final void method1360(String string, Class297 class297, boolean bool, boolean bool_3_, int i) {
         try {
             anInt2369++;
             if (bool_3_) {
-                if (Class297.aString3803.startsWith("win")
-                        && class297.aBoolean3777) {
+                if (Class297.aString3803.startsWith("win") && class297.aBoolean3777) {
                     String string_4_ = null;
-                    if (Class93.anApplet1530 != null)
-                        string_4_
-                                = Class93.anApplet1530.getParameter("haveie6");
+                    if (Class93.anApplet1530 != null) string_4_ = Class93.anApplet1530.getParameter("haveie6");
                     if (string_4_ == null || !string_4_.equals("1")) {
-                        Class144 class144
-                                = Class348_Sub16_Sub3.method2862(class297, string,
-                                -117, 0);
+                        Class144 class144 = Class348_Sub16_Sub3.method2862(class297, string, -117, 0);
                         Class318_Sub1_Sub5.aClass144_8766 = class144;
                         Class195.aClass297_5017 = class297;
                         Class348_Sub42_Sub8.aString9554 = string;
@@ -85,29 +71,17 @@ final class Class179 {
                 }
                 if (Class297.aString3803.startsWith("mac")) {
                     String string_5_ = null;
-                    if (Class93.anApplet1530 != null)
-                        string_5_
-                                = Class93.anApplet1530.getParameter("havefirefox");
+                    if (Class93.anApplet1530 != null) string_5_ = Class93.anApplet1530.getParameter("havefirefox");
                     if (string_5_ != null && string_5_.equals("1") && bool) {
-                        Class348_Sub16_Sub3.method2862(class297, string, 42,
-                                1);
+                        Class348_Sub16_Sub3.method2862(class297, string, 42, 1);
                         return;
                     }
                 }
                 Class348_Sub16_Sub3.method2862(class297, string, 96, 2);
-            } else
-                Class348_Sub16_Sub3.method2862(class297, string, -96, 3);
+            } else Class348_Sub16_Sub3.method2862(class297, string, -96, 3);
             int i_6_ = -6 / ((i - 20) / 44);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("bo.C("
-                            + (string != null ? "{...}"
-                            : "null")
-                            + ','
-                            + (class297 != null ? "{...}"
-                            : "null")
-                            + ',' + bool + ',' + bool_3_ + ','
-                            + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bo.C(" + (string != null ? "{...}" : "null") + ',' + (class297 != null ? "{...}" : "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'));
         }
     }
 
@@ -120,13 +94,10 @@ final class Class179 {
     }
 
     private final void method1362(String string, int i, int i_8_) {
-        if (i >= -56)
-            aBoolean2360 = true;
+        if (i >= -56) aBoolean2360 = true;
         anInt2366++;
-        if (i_8_ > anInt2364)
-            anInt2364 = i_8_;
-        if (aStringArray2367.length <= i_8_)
-            method1363(i_8_, -107);
+        if (i_8_ > anInt2364) anInt2364 = i_8_;
+        if (aStringArray2367.length <= i_8_) method1363(i_8_, -107);
         aStringArray2367[i_8_] = string;
     }
 
@@ -134,28 +105,22 @@ final class Class179 {
         int i_10_ = 50 % ((3 - i_9_) / 63);
         anInt2358++;
         String[] strings = new String[method1358(i, 108)];
-        Class214.method1575(aStringArray2367, 0, strings, 0,
-                aStringArray2367.length);
+        Class214.method1575(aStringArray2367, 0, strings, 0, aStringArray2367.length);
         aStringArray2367 = strings;
     }
 
     final void method1364(int i, String string) {
         method1362(string, -99, 1 + anInt2364);
         anInt2356++;
-        if (i != -1)
-            aBoolean2360 = true;
+        if (i != -1) aBoolean2360 = true;
     }
 
-    static final void method1365(int i, byte i_11_,
-                                 Class348_Sub49 class348_sub49) {
-        if (i_11_ > -113)
-            anInt2361 = -64;
+    static final void method1365(int i, byte i_11_, Class348_Sub49 class348_sub49) {
+        if (i_11_ > -113) anInt2361 = -64;
         if (Class374.aClass78_4538 != null) {
             try {
                 Class374.aClass78_4538.method789(0L, (byte) 59);
-                Class374.aClass78_4538.method783(i, 24, true,
-                        (class348_sub49
-                                .aByteArray7154));
+                Class374.aClass78_4538.method783(i, 24, true, (class348_sub49.aByteArray7154));
             } catch (Exception exception) {
                 /* empty */
             }
@@ -173,8 +138,7 @@ final class Class179 {
         StringBuffer stringbuffer = new StringBuffer();
         stringbuffer.append("[");
         for (int i = 0; anInt2364 > i; i++) {
-            if (i != 0)
-                stringbuffer.append(", ");
+            if (i != 0) stringbuffer.append(", ");
             stringbuffer.append(aStringArray2367[i]);
         }
         stringbuffer.append("]");

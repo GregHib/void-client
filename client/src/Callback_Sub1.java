@@ -17,17 +17,14 @@ final class Callback_Sub1 extends Callback {
     private boolean aBoolean7464;
 
     final void method3621(int i, byte i_0_, int i_1_) {
-        if (i_0_ >= 65)
-            User32.SetCursorPos(i, i_1_);
+        if (i_0_ >= 65) User32.SetCursorPos(i, i_1_);
     }
 
     final void method3622(boolean bool, int i, Component component) {
         WComponentPeer wcomponentpeer = (WComponentPeer) component.getPeer();
         int i_2_ = wcomponentpeer.getTopHwnd();
-        if (i_2_ != anInt7461
-                || !bool == aBoolean7460) {
-            if (i != 13259)
-                method3622(true, -90, null);
+        if (i_2_ != anInt7461 || !bool == aBoolean7460) {
+            if (i != 13259) method3622(true, -90, null);
             if (!aBoolean7464) {
                 anInt7462 = User32.LoadCursor(0, 32512);
                 Root.alloc(this);
@@ -43,8 +40,7 @@ final class Callback_Sub1 extends Callback {
                 }
                 synchronized (this) {
                     anInt7461 = i_2_;
-                    anInt7463
-                            = User32.SetWindowLong(anInt7461, -4, (Object) this);
+                    anInt7463 = User32.SetWindowLong(anInt7461, -4, (Object) this);
                 }
             }
             aBoolean7460 = bool;

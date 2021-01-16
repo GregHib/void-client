@@ -11,8 +11,7 @@ final class Class318_Sub8 extends Class318 {
     int anInt6465;
     byte aByte6466;
 
-    Class318_Sub8(int i, int i_0_, int i_1_, int i_2_, int i_3_, short[] is,
-                  byte[] is_4_) {
+    Class318_Sub8(int i, int i_0_, int i_1_, int i_2_, int i_3_, short[] is, byte[] is_4_) {
         this.aByte6466 = (byte) i;
         this.aByte6464 = (byte) i_0_;
         this.anInt6465 = i_1_;

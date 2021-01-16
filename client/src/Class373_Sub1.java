@@ -5,8 +5,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-final class Class373_Sub1 extends Class373
-        implements MouseListener, MouseMotionListener, MouseWheelListener {
+final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotionListener, MouseWheelListener {
     private int anInt7416;
     private int anInt7417;
     private Class262 aClass262_7418 = new Class262();
@@ -23,41 +22,29 @@ final class Class373_Sub1 extends Class373
         return (anInt7419 & 0x2) != 0;
     }
 
-    private final void method3598(int i, int i_1_, int i_2_, int i_3_,
-                                  boolean bool) {
+    private final void method3598(int i, int i_1_, int i_2_, int i_3_, boolean bool) {
         Class348_Sub45_Sub1 class348_sub45_sub1 = new Class348_Sub45_Sub1();
         class348_sub45_sub1.anInt9725 = i_3_;
         class348_sub45_sub1.anInt9728 = i_1_;
         class348_sub45_sub1.anInt9729 = i;
-        class348_sub45_sub1.aLong9726
-                = Class62.method599(-115);
+        class348_sub45_sub1.aLong9726 = Class62.method599(-115);
         class348_sub45_sub1.anInt9727 = i_2_;
-        if (bool)
-            mouseDragged(null);
+        if (bool) mouseDragged(null);
         aClass262_7420.method1999(class348_sub45_sub1, -20180);
     }
 
     public final synchronized void mouseReleased(MouseEvent mouseevent) {
         int i = method3600(mouseevent, -75);
-        if ((i & anInt7422) == 0)
-            i = anInt7422;
-        if (0 != (0x1 & i))
-            method3598(mouseevent.getX(), 3, mouseevent.getClickCount(),
-                    mouseevent.getY(), false);
-        if ((i & 0x4) != 0)
-            method3598(mouseevent.getX(), 5, mouseevent.getClickCount(),
-                    mouseevent.getY(), false);
-        if ((0x2 & i) != 0)
-            method3598(mouseevent.getX(), 4, mouseevent.getClickCount(),
-                    mouseevent.getY(), false);
+        if ((i & anInt7422) == 0) i = anInt7422;
+        if (0 != (0x1 & i)) method3598(mouseevent.getX(), 3, mouseevent.getClickCount(), mouseevent.getY(), false);
+        if ((i & 0x4) != 0) method3598(mouseevent.getX(), 5, mouseevent.getClickCount(), mouseevent.getY(), false);
+        if ((0x2 & i) != 0) method3598(mouseevent.getX(), 4, mouseevent.getClickCount(), mouseevent.getY(), false);
         anInt7422 &= ~i;
-        if (mouseevent.isPopupTrigger())
-            mouseevent.consume();
+        if (mouseevent.isPopupTrigger()) mouseevent.consume();
     }
 
     final int method3594(byte i) {
-        if (i < 69)
-            method3598(92, 34, 59, 2, false);
+        if (i < 69) method3598(92, 34, 59, 2, false);
         return anInt7416;
     }
 
@@ -65,50 +52,37 @@ final class Class373_Sub1 extends Class373
         if (i_4_ == -1) {
             anInt7421 = i_5_;
             anInt7423 = i;
-            if (aBoolean7424)
-                method3598(i, -1, 0, i_5_, false);
+            if (aBoolean7424) method3598(i, -1, 0, i_5_, false);
         }
     }
 
     final boolean method3590(byte i) {
-        if (i <= 112)
-            return false;
+        if (i <= 112) return false;
         return (anInt7419 & 0x4) != 0;
     }
 
     public final synchronized void mousePressed(MouseEvent mouseevent) {
         int i = method3600(mouseevent, -90);
-        if (1 == i)
-            method3598(mouseevent.getX(), 0, mouseevent.getClickCount(),
-                    mouseevent.getY(), false);
-        else if (i == 4)
-            method3598(mouseevent.getX(), 2, mouseevent.getClickCount(),
-                    mouseevent.getY(), false);
-        else if (i == 2)
-            method3598(mouseevent.getX(), 1, mouseevent.getClickCount(),
-                    mouseevent.getY(), false);
+        if (1 == i) method3598(mouseevent.getX(), 0, mouseevent.getClickCount(), mouseevent.getY(), false);
+        else if (i == 4) method3598(mouseevent.getX(), 2, mouseevent.getClickCount(), mouseevent.getY(), false);
+        else if (i == 2) method3598(mouseevent.getX(), 1, mouseevent.getClickCount(), mouseevent.getY(), false);
         anInt7422 |= i;
-        if (mouseevent.isPopupTrigger())
-            mouseevent.consume();
+        if (mouseevent.isPopupTrigger()) mouseevent.consume();
     }
 
     final int method3597(boolean bool) {
-        if (bool != true)
-            return 27;
+        if (bool != true) return 27;
         return anInt7417;
     }
 
     private final int method3600(MouseEvent mouseevent, int i) {
         if (mouseevent.getButton() == 1) {
-            if (mouseevent.isMetaDown())
-                return 4;
+            if (mouseevent.isMetaDown()) return 4;
             return 1;
         }
-        if (mouseevent.getButton() == 2)
-            return 2;
+        if (mouseevent.getButton() == 2) return 2;
         int i_6_ = -27 % ((57 - i) / 63);
-        if (mouseevent.getButton() == 3)
-            return 4;
+        if (mouseevent.getButton() == 3) return 4;
         return 0;
     }
 
@@ -117,19 +91,16 @@ final class Class373_Sub1 extends Class373
     }
 
     public final synchronized void mouseClicked(MouseEvent mouseevent) {
-        if (mouseevent.isPopupTrigger())
-            mouseevent.consume();
+        if (mouseevent.isPopupTrigger()) mouseevent.consume();
     }
 
     final boolean method3595(int i) {
-        if (i >= -67)
-            mouseMoved(null);
+        if (i >= -67) mouseMoved(null);
         return (anInt7419 & 0x1) != 0;
     }
 
     final Class348_Sub45 method3596(int i) {
-        if (i != 0)
-            mouseReleased(null);
+        if (i != 0) mouseReleased(null);
         return (Class348_Sub45) aClass262_7418.method1997(8);
     }
 
@@ -163,8 +134,7 @@ final class Class373_Sub1 extends Class373
         }
     }
 
-    public final synchronized void mouseWheelMoved
-            (MouseWheelEvent mousewheelevent) {
+    public final synchronized void mouseWheelMoved(MouseWheelEvent mousewheelevent) {
         int i = mousewheelevent.getX();
         int i_8_ = mousewheelevent.getY();
         int i_9_ = mousewheelevent.getWheelRotation();
@@ -181,15 +151,13 @@ final class Class373_Sub1 extends Class373
     }
 
     final void method3592(int i) {
-        if (i == 0)
-            method3601(46);
+        if (i == 0) method3601(46);
     }
 
     private final void method3602(int i, Component component) {
         method3601(i ^ 0x6e);
         aComponent7425 = component;
-        if (i != 0)
-            aComponent7425 = null;
+        if (i != 0) aComponent7425 = null;
         aComponent7425.addMouseListener(this);
         aComponent7425.addMouseMotionListener(this);
         aComponent7425.addMouseWheelListener(this);

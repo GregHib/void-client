@@ -13,14 +13,12 @@ abstract class Class310 {
 
     void method64(Class209 class209, int i) {
         this.aClass209_3894 = class209;
-        if (i != -22095)
-            method64(null, -80);
+        if (i != -22095) method64(null, -80);
     }
 
     abstract IDirect3DBaseTexture method2314(int i);
 
-    Class310(Class378 class378, Class304 class304, Class68 class68,
-             boolean bool, int i) {
+    Class310(Class378 class378, Class304 class304, Class68 class68, boolean bool, int i) {
         this.aClass68_3895 = class68;
         this.aClass378_3893 = class378;
         this.aBoolean3892 = bool;

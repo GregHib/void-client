@@ -29,8 +29,7 @@ final class Class178 {
         aClass29_2344 = null;
         aClass29_2352 = null;
         aClass114_2338 = null;
-        if (i > -74)
-            method1356(true, null, -116, -47, true, null, true);
+        if (i > -74) method1356(true, null, -116, -47, true, null, true);
         aClass29_2350 = null;
         aClass29Array2354 = null;
         aClass29_2353 = null;
@@ -44,9 +43,7 @@ final class Class178 {
         aClass29_2347 = null;
     }
 
-    static final void method1356(boolean bool, String string, int i, int i_0_,
-                                 boolean bool_1_, String string_2_,
-                                 boolean bool_3_) {
+    static final void method1356(boolean bool, String string, int i, int i_0_, boolean bool_1_, String string_2_, boolean bool_3_) {
         try {
             anInt2337++;
             Class174.aClass45_2306.anInt634 = 1;
@@ -55,37 +52,21 @@ final class Class178 {
             int i_4_ = -1;
             String string_5_ = null;
             if (i_0_ != -1) {
-                Class254 class254
-                        = Class101_Sub3.aClass326_5764.method2600(i_0_, 28364);
-                if (class254 == null || bool != class254.method1925(!bool_3_))
-                    return;
-                if (class254.method1925(!bool_3_))
-                    string_5_ = class254.aString3258;
-                else
-                    i_4_ = class254.anInt3256;
+                Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_0_, 28364);
+                if (class254 == null || bool != class254.method1925(!bool_3_)) return;
+                if (class254.method1925(!bool_3_)) string_5_ = class254.aString3258;
+                else i_4_ = class254.anInt3256;
             }
             int i_6_ = 0;
             int i_7_ = 0;
-            if (bool_3_ != true)
-                aClass29_2352 = null;
-            for (/**/;
-                     i_7_ < Exception_Sub1.aClass255_112.anInt3271;
-                     i_7_++) {
-                Class213 class213
-                        = Exception_Sub1.aClass255_112.method1940(-74, i_7_);
-                if ((!bool_1_ || class213.aBoolean2755)
-                        && class213.anInt2833 == -1
-                        && class213.anInt2812 == -1
-                        && class213.anInt2799 == 0
-                        && class213.aString2795.toLowerCase()
-                        .indexOf(string_2_) != -1) {
+            if (bool_3_ != true) aClass29_2352 = null;
+            for (/**/; i_7_ < Exception_Sub1.aClass255_112.anInt3271; i_7_++) {
+                Class213 class213 = Exception_Sub1.aClass255_112.method1940(-74, i_7_);
+                if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795.toLowerCase().indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
-                            if (!string.equals(class213.method1561
-                                    (string_5_, i_0_, -1511086397)))
-                                continue;
-                        } else if (class213.method1567(i_4_, -116, i_0_) != i)
-                            continue;
+                            if (!string.equals(class213.method1561(string_5_, i_0_, -1511086397))) continue;
+                        } else if (class213.method1567(i_4_, -116, i_0_) != i) continue;
                     }
                     if (i_6_ >= 250) {
                         Class192.aShortArray2579 = null;
@@ -105,25 +86,13 @@ final class Class178 {
             Class76.anInt1285 = i_6_;
             Class148.anInt2037 = 0;
             String[] strings = new String[Class76.anInt1285];
-            for (int i_10_ = 0;
-                 Class76.anInt1285 > i_10_;
-                 i_10_++)
-                strings[i_10_]
-                        = Exception_Sub1.aClass255_112
-                        .method1940(123, is[i_10_]).aString2795;
+            for (int i_10_ = 0; Class76.anInt1285 > i_10_; i_10_++)
+                strings[i_10_] = Exception_Sub1.aClass255_112.method1940(123, is[i_10_]).aString2795;
             Class174.method1333(Class192.aShortArray2579, 26073, strings);
             Class174.aClass45_2306.method412((byte) 116);
             Class174.aClass45_2306.anInt634 = 2;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("qa.A(" + bool + ','
-                            + (string != null ? "{...}"
-                            : "null")
-                            + ',' + i + ',' + i_0_ + ','
-                            + bool_1_ + ','
-                            + (string_2_ != null ? "{...}"
-                            : "null")
-                            + ',' + bool_3_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qa.A(" + bool + ',' + (string != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (string_2_ != null ? "{...}" : "null") + ',' + bool_3_ + ')'));
         }
     }
 

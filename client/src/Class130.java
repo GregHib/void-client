@@ -14,8 +14,7 @@ abstract class Class130 {
     public static void method1127(int i) {
         aClass45_1897 = null;
         aClass356_1895 = null;
-        if (i == 5125)
-            aClass60_1894 = null;
+        if (i == 5125) aClass60_1894 = null;
     }
 
     public Class130() {
@@ -26,27 +25,18 @@ abstract class Class130 {
         anInt1896++;
         if (Class68.aClass68_1179 != class68) {
             if (class68 != Class68.aClass68_1181) {
-                if (class68 == Class68.aClass68_1182)
-                    return 5124;
+                if (class68 == Class68.aClass68_1182) return 5124;
                 if (Class68.aClass68_1183 != class68) {
                     if (class68 != Class68.aClass68_1184) {
-                        if (class68 == Class68.aClass68_1185)
-                            return 5125;
+                        if (class68 == Class68.aClass68_1185) return 5125;
                         if (Class68.aClass68_1186 != class68) {
-                            if (Class68.aClass68_1187 == class68)
-                                return 5126;
-                        } else
-                            return 5131;
-                    } else
-                        return 5123;
-                } else
-                    return 5121;
-            } else
-                return 5122;
-        } else
-            return 5120;
-        if (i > -19)
-            method1129(-7, -90);
+                            if (Class68.aClass68_1187 == class68) return 5126;
+                        } else return 5131;
+                    } else return 5123;
+                } else return 5121;
+            } else return 5122;
+        } else return 5120;
+        if (i > -19) method1129(-7, -90);
         throw new IllegalArgumentException("");
     }
 
@@ -58,23 +48,18 @@ abstract class Class130 {
         anInt1898++;
     }
 
-    static final boolean method1130(r var_r, int i, int i_1_, int i_2_,
-                                    boolean[] bools) {
+    static final boolean method1130(r var_r, int i, int i_1_, int i_2_, boolean[] bools) {
         boolean bool = false;
         if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
-            int i_3_
-                    = Class348_Sub1_Sub1.aSArray8801[i].method3986(i_1_, i_2_,
-                    (byte) -109);
+            int i_3_ = Class348_Sub1_Sub1.aSArray8801[i].method3986(i_1_, i_2_, (byte) -109);
             int i_4_ = 0;
             for (/**/; i_4_ <= i; i_4_++) {
                 s var_s = Class348_Sub1_Sub1.aSArray8801[i_4_];
                 if (var_s != null) {
                     int i_5_ = i_3_ - var_s.method3986(i_1_, i_2_, (byte) 72);
                     if (bools != null) {
-                        bools[i_4_] = var_s.method3989(var_r, i_1_, i_5_, i_2_,
-                                0, false);
-                        if (!bools[i_4_])
-                            continue;
+                        bools[i_4_] = var_s.method3989(var_r, i_1_, i_5_, i_2_, 0, false);
+                        if (!bools[i_4_]) continue;
                     }
                     var_s.CA(var_r, i_1_, i_5_, i_2_, 0, false);
                     bool = true;

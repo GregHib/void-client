@@ -11,83 +11,56 @@ final class Class324_Sub3 extends Class324 {
     private final int[] anIntArray6501;
     private final byte[][] aByteArrayArray6502;
 
-    private final void method2590(byte[] is, int[] is_0_, int i, int i_1_,
-                                  int i_2_, int i_3_, int i_4_, int i_5_,
-                                  int i_6_) {
+    private final void method2590(byte[] is, int[] is_0_, int i, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_) {
         int i_7_ = -(i_3_ >> 2);
         i_3_ = -(i_3_ & 0x3);
         for (int i_8_ = -i_4_; i_8_ < 0; i_8_++) {
             for (int i_9_ = i_7_; i_9_ < 0; i_9_++) {
-                if (is[i_1_++] != 0)
-                    is_0_[i_2_++] = i;
-                else
-                    i_2_++;
-                if (is[i_1_++] != 0)
-                    is_0_[i_2_++] = i;
-                else
-                    i_2_++;
-                if (is[i_1_++] != 0)
-                    is_0_[i_2_++] = i;
-                else
-                    i_2_++;
-                if (is[i_1_++] != 0)
-                    is_0_[i_2_++] = i;
-                else
-                    i_2_++;
+                if (is[i_1_++] != 0) is_0_[i_2_++] = i;
+                else i_2_++;
+                if (is[i_1_++] != 0) is_0_[i_2_++] = i;
+                else i_2_++;
+                if (is[i_1_++] != 0) is_0_[i_2_++] = i;
+                else i_2_++;
+                if (is[i_1_++] != 0) is_0_[i_2_++] = i;
+                else i_2_++;
             }
             for (int i_10_ = i_3_; i_10_ < 0; i_10_++) {
-                if (is[i_1_++] != 0)
-                    is_0_[i_2_++] = i;
-                else
-                    i_2_++;
+                if (is[i_1_++] != 0) is_0_[i_2_++] = i;
+                else i_2_++;
             }
             i_2_ += i_5_;
             i_1_ += i_6_;
         }
     }
 
-    private final void method2591(byte[] is, int[] is_11_, int[] is_12_, int i,
-                                  int i_13_, int i_14_, int i_15_, int i_16_,
-                                  int i_17_) {
+    private final void method2591(byte[] is, int[] is_11_, int[] is_12_, int i, int i_13_, int i_14_, int i_15_, int i_16_, int i_17_) {
         int i_18_ = -(i_14_ >> 2);
         i_14_ = -(i_14_ & 0x3);
         boolean bool = false;
         for (int i_19_ = -i_15_; i_19_ < 0; i_19_++) {
             for (int i_20_ = i_18_; i_20_ < 0; i_20_++) {
                 int i_21_;
-                if ((i_21_ = is[i++]) != 0)
-                    is_11_[i_13_++] = is_12_[i_21_ & 0xff];
-                else
-                    i_13_++;
-                if ((i_21_ = is[i++]) != 0)
-                    is_11_[i_13_++] = is_12_[i_21_ & 0xff];
-                else
-                    i_13_++;
-                if ((i_21_ = is[i++]) != 0)
-                    is_11_[i_13_++] = is_12_[i_21_ & 0xff];
-                else
-                    i_13_++;
-                if ((i_21_ = is[i++]) != 0)
-                    is_11_[i_13_++] = is_12_[i_21_ & 0xff];
-                else
-                    i_13_++;
+                if ((i_21_ = is[i++]) != 0) is_11_[i_13_++] = is_12_[i_21_ & 0xff];
+                else i_13_++;
+                if ((i_21_ = is[i++]) != 0) is_11_[i_13_++] = is_12_[i_21_ & 0xff];
+                else i_13_++;
+                if ((i_21_ = is[i++]) != 0) is_11_[i_13_++] = is_12_[i_21_ & 0xff];
+                else i_13_++;
+                if ((i_21_ = is[i++]) != 0) is_11_[i_13_++] = is_12_[i_21_ & 0xff];
+                else i_13_++;
             }
             for (int i_22_ = i_14_; i_22_ < 0; i_22_++) {
                 int i_23_;
-                if ((i_23_ = is[i++]) != 0)
-                    is_11_[i_13_++] = is_12_[i_23_ & 0xff];
-                else
-                    i_13_++;
+                if ((i_23_ = is[i++]) != 0) is_11_[i_13_++] = is_12_[i_23_ & 0xff];
+                else i_13_++;
             }
             i_13_ += i_16_;
             i += i_17_;
         }
     }
 
-    private final void method2592(byte[] is, int[] is_24_, int i, int i_25_,
-                                  int i_26_, int i_27_, int i_28_, int i_29_,
-                                  int i_30_, int i_31_, int i_32_, int i_33_,
-                                  aa var_aa, int i_34_, int i_35_) {
+    private final void method2592(byte[] is, int[] is_24_, int i, int i_25_, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_, int i_32_, int i_33_, aa var_aa, int i_34_, int i_35_) {
         aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
         int[] is_36_ = var_aa_Sub3.anIntArray5201;
         int[] is_37_ = var_aa_Sub3.anIntArray5202;
@@ -123,23 +96,18 @@ final class Class324_Sub3 extends Class324 {
                 i_26_ += i_46_;
             }
             int i_47_ = 0;
-            if (i_44_ < i_43_)
-                i_43_ = i_44_;
-            else
-                i_47_ = i_44_ - i_43_;
+            if (i_44_ < i_43_) i_43_ = i_44_;
+            else i_47_ = i_44_ - i_43_;
             for (int i_48_ = -i_43_; i_48_ < 0; i_48_++) {
-                if (is[i_25_++] != 0)
-                    is_24_[i_26_++] = i;
-                else
-                    i_26_++;
+                if (is[i_25_++] != 0) is_24_[i_26_++] = i;
+                else i_26_++;
             }
             i_25_ += i_47_ + i_25_;
             i_26_ += i_47_ + i_29_;
         }
     }
 
-    Class324_Sub3(ha_Sub1 var_ha_Sub1, Class143 class143, Class207[] class207s,
-                  int[] is, int[] is_49_) {
+    Class324_Sub3(ha_Sub1 var_ha_Sub1, Class143 class143, Class207[] class207s, int[] is, int[] is_49_) {
         super(var_ha_Sub1, class143);
         aHa_Sub1_6499 = var_ha_Sub1;
         aHa_Sub1_6499 = var_ha_Sub1;
@@ -156,10 +124,8 @@ final class Class324_Sub3 extends Class324 {
         anIntArray6496 = class207s[0].anIntArray2697;
     }
 
-    final void method2578(char c, int i, int i_50_, int i_51_, boolean bool,
-                          aa var_aa, int i_52_, int i_53_) {
-        if (var_aa == null)
-            fa(c, i, i_50_, i_51_, bool);
+    final void method2578(char c, int i, int i_50_, int i_51_, boolean bool, aa var_aa, int i_52_, int i_53_) {
+        if (var_aa == null) fa(c, i, i_50_, i_51_, bool);
         else {
             i += anIntArray6498[c];
             i_50_ += anIntArray6501[c];
@@ -177,8 +143,7 @@ final class Class324_Sub3 extends Class324 {
                 i_60_ += i_61_ * i_54_;
                 i_57_ += i_61_ * i_56_;
             }
-            if (i_50_ + i_55_ > aHa_Sub1_6499.anInt7503)
-                i_55_ -= i_50_ + i_55_ - aHa_Sub1_6499.anInt7503;
+            if (i_50_ + i_55_ > aHa_Sub1_6499.anInt7503) i_55_ -= i_50_ + i_55_ - aHa_Sub1_6499.anInt7503;
             if (i < aHa_Sub1_6499.anInt7496) {
                 int i_62_ = aHa_Sub1_6499.anInt7496 - i;
                 i_54_ -= i_62_;
@@ -195,17 +160,8 @@ final class Class324_Sub3 extends Class324 {
                 i_58_ += i_63_;
             }
             if (i_54_ > 0 && i_55_ > 0) {
-                if (bool)
-                    method2592(aByteArrayArray6502[c],
-                            aHa_Sub1_6499.anIntArray7483, i_51_,
-                            i_60_, i_57_, i_54_, i_55_, i_58_, i_59_, i,
-                            i_50_, anIntArray6500[c], var_aa, i_52_, i_53_);
-                else
-                    method2593(aByteArrayArray6502[c],
-                            aHa_Sub1_6499.anIntArray7483,
-                            anIntArray6496, i_51_, i_60_, i_57_, i_54_,
-                            i_55_, i_58_, i_59_, i, i_50_,
-                            anIntArray6500[c], var_aa, i_52_, i_53_);
+                if (bool) method2592(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, i_51_, i_60_, i_57_, i_54_, i_55_, i_58_, i_59_, i, i_50_, anIntArray6500[c], var_aa, i_52_, i_53_);
+                else method2593(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, anIntArray6496, i_51_, i_60_, i_57_, i_54_, i_55_, i_58_, i_59_, i, i_50_, anIntArray6500[c], var_aa, i_52_, i_53_);
             }
         }
     }
@@ -227,8 +183,7 @@ final class Class324_Sub3 extends Class324 {
             i_72_ += i_73_ * i_66_;
             i_69_ += i_73_ * i_68_;
         }
-        if (i_64_ + i_67_ > aHa_Sub1_6499.anInt7503)
-            i_67_ -= i_64_ + i_67_ - aHa_Sub1_6499.anInt7503;
+        if (i_64_ + i_67_ > aHa_Sub1_6499.anInt7503) i_67_ -= i_64_ + i_67_ - aHa_Sub1_6499.anInt7503;
         if (i < aHa_Sub1_6499.anInt7496) {
             int i_74_ = aHa_Sub1_6499.anInt7496 - i;
             i_66_ -= i_74_;
@@ -245,22 +200,12 @@ final class Class324_Sub3 extends Class324 {
             i_70_ += i_75_;
         }
         if (i_66_ > 0 && i_67_ > 0) {
-            if (bool)
-                method2590(aByteArrayArray6502[c],
-                        aHa_Sub1_6499.anIntArray7483, i_65_,
-                        i_72_, i_69_, i_66_, i_67_, i_70_, i_71_);
-            else
-                method2591(aByteArrayArray6502[c],
-                        aHa_Sub1_6499.anIntArray7483,
-                        anIntArray6496, i_72_, i_69_, i_66_, i_67_, i_70_,
-                        i_71_);
+            if (bool) method2590(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, i_65_, i_72_, i_69_, i_66_, i_67_, i_70_, i_71_);
+            else method2591(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, anIntArray6496, i_72_, i_69_, i_66_, i_67_, i_70_, i_71_);
         }
     }
 
-    private final void method2593(byte[] is, int[] is_76_, int[] is_77_, int i,
-                                  int i_78_, int i_79_, int i_80_, int i_81_,
-                                  int i_82_, int i_83_, int i_84_, int i_85_,
-                                  int i_86_, aa var_aa, int i_87_, int i_88_) {
+    private final void method2593(byte[] is, int[] is_76_, int[] is_77_, int i, int i_78_, int i_79_, int i_80_, int i_81_, int i_82_, int i_83_, int i_84_, int i_85_, int i_86_, aa var_aa, int i_87_, int i_88_) {
         aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
         int[] is_89_ = var_aa_Sub3.anIntArray5201;
         int[] is_90_ = var_aa_Sub3.anIntArray5202;
@@ -297,16 +242,12 @@ final class Class324_Sub3 extends Class324 {
                 i_79_ += i_99_;
             }
             int i_100_ = 0;
-            if (i_97_ < i_96_)
-                i_96_ = i_97_;
-            else
-                i_100_ = i_97_ - i_96_;
+            if (i_97_ < i_96_) i_96_ = i_97_;
+            else i_100_ = i_97_ - i_96_;
             for (int i_101_ = -i_96_; i_101_ < 0; i_101_++) {
                 int i_102_;
-                if ((i_102_ = is[i_78_++]) != 0)
-                    is_76_[i_79_++] = is_77_[i_102_ & 0xff];
-                else
-                    i_79_++;
+                if ((i_102_ = is[i_78_++]) != 0) is_76_[i_79_++] = is_77_[i_102_ & 0xff];
+                else i_79_++;
             }
             i_78_ += i_100_ + i_83_;
             i_79_ += i_100_ + i_82_;

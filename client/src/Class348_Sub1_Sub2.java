@@ -16,29 +16,24 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
         this.anInt6553 = i_1_;
         this.anInt6548 = i_2_;
         anInt8812++;
-        if (i_0_ == 70)
-            this.anInt6562 = i;
+        if (i_0_ == 70) this.anInt6562 = i;
     }
 
     static final int method2729(int i, int i_3_) {
         anInt8813++;
-        if (i_3_ != 16)
-            return 23;
+        if (i_3_ != 16) return 23;
         return 0xff & i;
     }
 
     static final byte[] method2730(int i, int i_4_, byte[] is, int i_5_) {
-        if (i != 4567)
-            method2730(-48, 112, null, -45);
+        if (i != 4567) method2730(-48, 112, null, -45);
         anInt8811++;
         byte[] is_6_;
         if (i_4_ > 0) {
             is_6_ = new byte[i_5_];
-            for (int i_7_ = 0; i_5_ > i_7_;
-                 i_7_++)
+            for (int i_7_ = 0; i_5_ > i_7_; i_7_++)
                 is_6_[i_7_] = is[i_4_ + i_7_];
-        } else
-            is_6_ = is;
+        } else is_6_ = is;
         Class85 class85 = new Class85();
         class85.method829(i + -4682);
         class85.method832(i_5_ * 8, is_6_, -69);
@@ -47,15 +42,13 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
         return is_8_;
     }
 
-    Class348_Sub1_Sub2(int i, int i_9_, int i_10_, int i_11_, int i_12_,
-                       float f) {
+    Class348_Sub1_Sub2(int i, int i_9_, int i_10_, int i_11_, int i_12_, float f) {
         super(i, i_9_, i_10_, i_11_, i_12_, f);
     }
 
     public static void method2731(byte i) {
         aByteArrayArray8816 = null;
-        if (i != -23)
-            method2730(14, 86, null, -106);
+        if (i != -23) method2730(14, 86, null, -106);
         aClass262_8810 = null;
         aClass308_8815 = null;
         aClass114_8817 = null;
@@ -63,7 +56,6 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
 
     final void method2716(int i, float f) {
         this.aFloat6550 = f;
-        if (i == -1)
-            anInt8814++;
+        if (i == -1) anInt8814++;
     }
 }

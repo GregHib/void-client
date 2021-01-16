@@ -22,145 +22,104 @@ final class Class296 {
     }
 
     public static void method2225(int i) {
-        if (i != 32)
-            aClass114_3773 = null;
+        if (i != 32) aClass114_3773 = null;
         aClass114_3773 = null;
     }
 
-    final int method2226(byte[] is, int i, byte[] is_3_, int i_4_, int i_5_,
-                         int i_6_) {
+    final int method2226(byte[] is, int i, byte[] is_3_, int i_4_, int i_5_, int i_6_) {
         try {
             anInt3770++;
-            if (i_4_ == 0)
-                return 0;
+            if (i_4_ == 0) return 0;
             i_4_ += i_6_;
             int i_7_ = 0;
-            if (i_5_ != -1)
-                anIntArray3774 = null;
+            if (i_5_ != -1) anIntArray3774 = null;
             int i_8_ = i;
             for (; ; ) {
                 byte i_9_ = is_3_[i_8_];
-                if (i_9_ >= 0)
-                    i_7_++;
-                else
-                    i_7_ = anIntArray3774[i_7_];
+                if (i_9_ >= 0) i_7_++;
+                else i_7_ = anIntArray3774[i_7_];
                 int i_10_;
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_4_ <= i_6_)
-                        break;
+                    if (i_4_ <= i_6_) break;
                     i_7_ = 0;
                 }
-                if ((0x40 & i_9_) != 0)
-                    i_7_ = anIntArray3774[i_7_];
-                else
-                    i_7_++;
+                if ((0x40 & i_9_) != 0) i_7_ = anIntArray3774[i_7_];
+                else i_7_++;
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_6_ >= i_4_)
-                        break;
+                    if (i_6_ >= i_4_) break;
                     i_7_ = 0;
                 }
-                if ((0x20 & i_9_) == 0)
-                    i_7_++;
-                else
-                    i_7_ = anIntArray3774[i_7_];
+                if ((0x20 & i_9_) == 0) i_7_++;
+                else i_7_ = anIntArray3774[i_7_];
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_6_ >= i_4_)
-                        break;
+                    if (i_6_ >= i_4_) break;
                     i_7_ = 0;
                 }
-                if ((i_9_ & 0x10) == 0)
-                    i_7_++;
-                else
-                    i_7_ = anIntArray3774[i_7_];
+                if ((i_9_ & 0x10) == 0) i_7_++;
+                else i_7_ = anIntArray3774[i_7_];
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_6_ >= i_4_)
-                        break;
+                    if (i_6_ >= i_4_) break;
                     i_7_ = 0;
                 }
-                if ((0x8 & i_9_) == 0)
-                    i_7_++;
-                else
-                    i_7_ = anIntArray3774[i_7_];
+                if ((0x8 & i_9_) == 0) i_7_++;
+                else i_7_ = anIntArray3774[i_7_];
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_4_ <= i_6_)
-                        break;
+                    if (i_4_ <= i_6_) break;
                     i_7_ = 0;
                 }
-                if ((i_9_ & 0x4) != 0)
-                    i_7_ = anIntArray3774[i_7_];
-                else
-                    i_7_++;
+                if ((i_9_ & 0x4) != 0) i_7_ = anIntArray3774[i_7_];
+                else i_7_++;
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_4_ <= i_6_)
-                        break;
+                    if (i_4_ <= i_6_) break;
                     i_7_ = 0;
                 }
-                if ((i_9_ & 0x2) == 0)
-                    i_7_++;
-                else
-                    i_7_ = anIntArray3774[i_7_];
+                if ((i_9_ & 0x2) == 0) i_7_++;
+                else i_7_ = anIntArray3774[i_7_];
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_4_ <= i_6_)
-                        break;
+                    if (i_4_ <= i_6_) break;
                     i_7_ = 0;
                 }
-                if ((i_9_ & 0x1) != 0)
-                    i_7_ = anIntArray3774[i_7_];
-                else
-                    i_7_++;
+                if ((i_9_ & 0x1) != 0) i_7_ = anIntArray3774[i_7_];
+                else i_7_++;
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (~i_10_);
-                    if (i_6_ >= i_4_)
-                        break;
+                    if (i_6_ >= i_4_) break;
                     i_7_ = 0;
                 }
                 i_8_++;
             }
             return i_8_ + 1 + -i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("wda.A("
-                            + (is != null ? "{...}" : "null")
-                            + ',' + i + ','
-                            + (is_3_ != null ? "{...}"
-                            : "null")
-                            + ',' + i_4_ + ',' + i_5_ + ','
-                            + i_6_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wda.A(" + (is != null ? "{...}" : "null") + ',' + i + ',' + (is_3_ != null ? "{...}" : "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'));
         }
     }
 
-    final int method2227(int i, int i_11_, int i_12_, byte[] is, int i_13_,
-                         byte[] is_14_) {
+    final int method2227(int i, int i_11_, int i_12_, byte[] is, int i_13_, byte[] is_14_) {
         try {
             anInt3771++;
             int i_15_ = 0;
             i += i_11_;
             int i_16_ = i_12_ << 12223459;
-            if (i_13_ <= 14)
-                method2226(null, 61, null, 89, 122, 10);
+            if (i_13_ <= 14) method2226(null, 61, null, 89, 122, 10);
             for (/**/; i > i_11_; i_11_++) {
                 int i_17_ = 0xff & is[i_11_];
                 int i_18_ = anIntArray3766[i_17_];
                 int i_19_ = aByteArray3769[i_17_];
-                if (i_19_ == 0)
-                    throw new RuntimeException("No codeword for data value "
-                            + i_17_);
+                if (i_19_ == 0) throw new RuntimeException("No codeword for data value " + i_17_);
                 int i_20_ = i_16_ >> -198850077;
                 int i_21_ = i_16_ & 0x7;
                 i_15_ &= -i_21_ >> -1249434113;
                 int i_22_ = (i_21_ - -i_19_ + -1 >> 1825582691) + i_20_;
                 i_16_ += i_19_;
                 i_21_ += 24;
-                is_14_[i_20_]
-                        = (byte) (i_15_
-                        = Class273.method2057(i_15_, i_18_ >>> i_21_));
+                is_14_[i_20_] = (byte) (i_15_ = Class273.method2057(i_15_, i_18_ >>> i_21_));
                 if (i_22_ > i_20_) {
                     i_20_++;
                     i_21_ -= 8;
@@ -176,8 +135,7 @@ final class Class296 {
                             if (i_20_ < i_22_) {
                                 i_21_ -= 8;
                                 i_20_++;
-                                is_14_[i_20_]
-                                        = (byte) (i_15_ = i_18_ << -i_21_);
+                                is_14_[i_20_] = (byte) (i_15_ = i_18_ << -i_21_);
                             }
                         }
                     }
@@ -185,14 +143,7 @@ final class Class296 {
             }
             return -i_12_ + (i_16_ - -7 >> 1600726371);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("wda.C(" + i + ',' + i_11_ + ','
-                            + i_12_ + ','
-                            + (is != null ? "{...}" : "null")
-                            + ',' + i_13_ + ','
-                            + (is_14_ != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wda.C(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (is != null ? "{...}" : "null") + ',' + i_13_ + ',' + (is_14_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -221,8 +172,7 @@ final class Class296 {
                 if ((i_27_ & i_28_) == 0) {
                     for (int i_30_ = -1 + i_26_; i_30_ >= 1; i_30_--) {
                         int i_31_ = is_23_[i_30_];
-                        if (i_31_ != i_28_)
-                            break;
+                        if (i_31_ != i_28_) break;
                         int i_32_ = 1 << 32 + -i_30_;
                         if ((i_31_ & i_32_) != 0) {
                             is_23_[i_30_] = is_23_[i_30_ - 1];
@@ -233,33 +183,27 @@ final class Class296 {
                     i_29_ = i_27_ | i_28_;
                 } else i_29_ = is_23_[-1 + i_26_];
                 is_23_[i_26_] = i_29_;
-                for (int i_33_ = i_26_ + 1; i_33_ <= 32;
-                     i_33_++) {
-                    if (i_28_ == is_23_[i_33_])
-                        is_23_[i_33_] = i_29_;
+                for (int i_33_ = i_26_ + 1; i_33_ <= 32; i_33_++) {
+                    if (i_28_ == is_23_[i_33_]) is_23_[i_33_] = i_29_;
                 }
                 int i_34_ = 0;
                 for (int i_35_ = 0; i_35_ < i_26_; i_35_++) {
                     int i_36_ = -2147483648 >>> i_35_;
-                    if ((i_28_ & i_36_) == 0)
-                        i_34_++;
+                    if ((i_28_ & i_36_) == 0) i_34_++;
                     else {
-                        if (anIntArray3774[i_34_] == 0)
-                            anIntArray3774[i_34_] = i_24_;
+                        if (anIntArray3774[i_34_] == 0) anIntArray3774[i_34_] = i_24_;
                         i_34_ = anIntArray3774[i_34_];
                     }
                     i_36_ >>>= 1;
                     if (anIntArray3774.length <= i_34_) {
                         int[] is_37_ = new int[anIntArray3774.length * 2];
-                        for (int i_38_ = 0; anIntArray3774.length > i_38_;
-                             i_38_++)
+                        for (int i_38_ = 0; anIntArray3774.length > i_38_; i_38_++)
                             is_37_[i_38_] = anIntArray3774[i_38_];
                         anIntArray3774 = is_37_;
                     }
                 }
                 anIntArray3774[i_34_] = ~i_25_;
-                if (i_34_ >= i_24_)
-                    i_24_ = 1 + i_34_;
+                if (i_34_ >= i_24_) i_24_ = 1 + i_34_;
             }
         }
     }

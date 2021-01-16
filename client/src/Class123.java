@@ -11,8 +11,7 @@ final class Class123 {
     static Class45 aClass45_1815;
 
     public static void method1091(int i) {
-        if (i != -9341)
-            method1091(-16);
+        if (i != -9341) method1091(-16);
         aClass45_1815 = null;
         aClass25_1813 = null;
     }

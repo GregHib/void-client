@@ -24,16 +24,14 @@ final class Class319 {
         synchronized (this.aClass60_3990) {
             this.aClass60_3990.method590(0);
         }
-        if (i < 72)
-            aClass315Array3982 = null;
+        if (i < 72) aClass315Array3982 = null;
     }
 
     final void method2542(int i) {
         synchronized (aClass60_3989) {
             aClass60_3989.method587(-126);
         }
-        if (i >= -99)
-            aDouble3980 = 0.5896741197263589;
+        if (i >= -99) aDouble3980 = 0.5896741197263589;
         anInt3986++;
         synchronized (this.aClass60_3990) {
             this.aClass60_3990.method587(-106);
@@ -41,28 +39,21 @@ final class Class319 {
     }
 
     final Class368 method2543(byte i, int i_1_) {
-        if (i <= 38)
-            method2542(-73);
+        if (i <= 38) method2542(-73);
         anInt3983++;
         Class368 class368;
         synchronized (aClass60_3989) {
             class368 = (Class368) aClass60_3989.method583(i_1_, 101);
         }
-        if (class368 != null)
-            return class368;
+        if (class368 != null) return class368;
         byte[] is;
         synchronized (aClass45_3979) {
-            is = aClass45_3979.method410(-1860,
-                    Class318_Sub1_Sub3_Sub1
-                            .method2419((byte) 127, i_1_),
-                    Class348_Sub1_Sub2.method2729(i_1_,
-                            16));
+            is = aClass45_3979.method410(-1860, Class318_Sub1_Sub3_Sub1.method2419((byte) 127, i_1_), Class348_Sub1_Sub2.method2729(i_1_, 16));
         }
         class368 = new Class368();
         class368.aClass319_4513 = this;
         class368.anInt4501 = i_1_;
-        if (is != null)
-            class368.method3559(28105, new Class348_Sub49(is));
+        if (is != null) class368.method3559(28105, new Class348_Sub49(is));
         synchronized (aClass60_3989) {
             aClass60_3989.method582(class368, i_1_, (byte) -127);
         }
@@ -72,8 +63,7 @@ final class Class319 {
     final void method2544(int i, byte i_2_) {
         synchronized (aClass60_3989) {
             aClass60_3989.method578(2, i);
-            if (i_2_ >= -11)
-                this.aClass45_3981 = null;
+            if (i_2_ >= -11) this.aClass45_3981 = null;
         }
         anInt3987++;
         synchronized (this.aClass60_3990) {
@@ -105,12 +95,7 @@ final class Class319 {
             int i_4_ = -1 + aClass45_3979.method414(-1);
             aClass45_3979.method407(0, i_4_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929
-                    (runtimeexception,
-                            ("cn.<init>(" + (class230 != null ? "{...}" : "null")
-                                    + ',' + i + ',' + (class45 != null ? "{...}" : "null")
-                                    + ',' + (class45_3_ != null ? "{...}" : "null")
-                                    + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cn.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_3_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

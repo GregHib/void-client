@@ -37,8 +37,7 @@ public class Loader extends Applet {
 
     void setParms() {
         aProperties1.put("cabbase", "g.cab");
-        aProperties1
-                .put("java_arguments", "-Xmx102m -Dsun.java2d.noddraw=true");
+        aProperties1.put("java_arguments", "-Xmx102m -Dsun.java2d.noddraw=true");
         aProperties1.put("colourid", "0");
         aProperties1.put("worldid", "16");
         aProperties1.put("lobbyid", "15");
@@ -53,8 +52,7 @@ public class Loader extends Applet {
         aProperties1.put("game", "0");
         aProperties1.put("affid", "0");
         aProperties1.put("advert", "1");
-        aProperties1.put("settings",
-                "wwGlrZHF5gJcZl7tf7KSRh0MZLhiU0gI0xDX6DwZ-Qk");
+        aProperties1.put("settings", "wwGlrZHF5gJcZl7tf7KSRh0MZLhiU0gI0xDX6DwZ-Qk");
         aProperties1.put("country", "0");
         aProperties1.put("haveie6", "0");
         aProperties1.put("havefirefox", "1");
@@ -106,10 +104,8 @@ public class Loader extends Applet {
     public URL getCodeBase() {
         URL url;
         try {
-            if (loadRunescape)
-                url = new URL("http://world16.runescape.com");
-            else
-                url = new URL("http://127.0.0.1");
+            if (loadRunescape) url = new URL("http://world16.runescape.com");
+            else url = new URL("http://127.0.0.1");
         } catch (Exception exception) {
             exception.printStackTrace();
             return null;

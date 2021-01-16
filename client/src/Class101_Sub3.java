@@ -47,63 +47,37 @@ final class Class101_Sub3 extends Class101 {
     final void method902(int i) {
         anInt5779++;
         this.aFloat5784 = 1.0F;
-        this.aFloat5770
-                = this.aFloat5769
-                = Class348_Sub23.aFloatArray6867[0x3fff & i];
-        this.aFloat5761
-                = Class348_Sub23.aFloatArray6865[0x3fff & i];
-        this.aFloat5781
-                = this.aFloat5747
-                = this.aFloat5762
-                = this.aFloat5772
-                = this.aFloat5756
-                = this.aFloat5754
-                = this.aFloat5751 = 0.0F;
+        this.aFloat5770 = this.aFloat5769 = Class348_Sub23.aFloatArray6867[0x3fff & i];
+        this.aFloat5761 = Class348_Sub23.aFloatArray6865[0x3fff & i];
+        this.aFloat5781 = this.aFloat5747 = this.aFloat5762 = this.aFloat5772 = this.aFloat5756 = this.aFloat5754 = this.aFloat5751 = 0.0F;
         this.aFloat5750 = -this.aFloat5761;
     }
 
-    final void method937(boolean bool, float f, float f_0_, float f_1_,
-                         float f_2_, float[] fs) {
+    final void method937(boolean bool, float f, float f_0_, float f_1_, float f_2_, float[] fs) {
         anInt5765++;
         float f_3_;
         float f_4_;
         float f_5_;
         if (f > 0.00390625F || f < -0.00390625F) {
             float f_6_ = -f_2_ / f;
-            f_4_ = (f_6_ * this.aFloat5770
-                    + this.aFloat5747);
-            f_5_ = (this.aFloat5751
-                    + this.aFloat5756 * f_6_);
-            f_3_ = (this.aFloat5772
-                    + f_6_ * this.aFloat5761);
+            f_4_ = (f_6_ * this.aFloat5770 + this.aFloat5747);
+            f_5_ = (this.aFloat5751 + this.aFloat5756 * f_6_);
+            f_3_ = (this.aFloat5772 + f_6_ * this.aFloat5761);
         } else if (f_1_ <= 0.00390625F && f_1_ >= -0.00390625F) {
             float f_8_ = -f_2_ / f_0_;
-            f_4_ = (f_8_ * this.aFloat5781
-                    + this.aFloat5747);
-            f_3_ = (this.aFloat5762 * f_8_
-                    + this.aFloat5772);
-            f_5_ = (this.aFloat5751
-                    + f_8_ * this.aFloat5784);
+            f_4_ = (f_8_ * this.aFloat5781 + this.aFloat5747);
+            f_3_ = (this.aFloat5762 * f_8_ + this.aFloat5772);
+            f_5_ = (this.aFloat5751 + f_8_ * this.aFloat5784);
         } else {
             float f_7_ = -f_2_ / f_1_;
-            f_3_ = (this.aFloat5769 * f_7_
-                    + this.aFloat5772);
-            f_4_ = (this.aFloat5750 * f_7_
-                    + this.aFloat5747);
-            f_5_ = (this.aFloat5754 * f_7_
-                    + this.aFloat5751);
+            f_3_ = (this.aFloat5769 * f_7_ + this.aFloat5772);
+            f_4_ = (this.aFloat5750 * f_7_ + this.aFloat5747);
+            f_5_ = (this.aFloat5754 * f_7_ + this.aFloat5751);
         }
-        fs[0] = (f_0_ * this.aFloat5781
-                + (f * this.aFloat5770
-                + f_1_ * this.aFloat5750));
-        fs[2] = (f_0_ * this.aFloat5784
-                + (this.aFloat5756 * f
-                + this.aFloat5754 * f_1_));
-        if (bool != true)
-            this.aFloat5772 = -0.4364811F;
-        fs[1] = (this.aFloat5769 * f_1_
-                + this.aFloat5761 * f
-                + this.aFloat5762 * f_0_);
+        fs[0] = (f_0_ * this.aFloat5781 + (f * this.aFloat5770 + f_1_ * this.aFloat5750));
+        fs[2] = (f_0_ * this.aFloat5784 + (this.aFloat5756 * f + this.aFloat5754 * f_1_));
+        if (bool != true) this.aFloat5772 = -0.4364811F;
+        fs[1] = (this.aFloat5769 * f_1_ + this.aFloat5761 * f + this.aFloat5762 * f_0_);
         fs[3] = -(fs[0] * f_4_ + f_3_ * fs[1] + f_5_ * fs[2]);
     }
 
@@ -116,8 +90,7 @@ final class Class101_Sub3 extends Class101 {
 
     public static void method938(int i) {
         aClass326_5764 = null;
-        if (i <= 8)
-            aClass326_5764 = null;
+        if (i <= 8) aClass326_5764 = null;
     }
 
     final void method900(int i) {
@@ -127,34 +100,20 @@ final class Class101_Sub3 extends Class101 {
         float f_12_ = this.aFloat5761;
         float f_13_ = this.aFloat5769;
         float f_14_ = this.aFloat5762;
-        this.aFloat5761
-                = f * f_12_ - this.aFloat5756 * f_11_;
+        this.aFloat5761 = f * f_12_ - this.aFloat5756 * f_11_;
         float f_15_ = this.aFloat5772;
-        this.aFloat5756
-                = this.aFloat5756 * f + f_11_ * f_12_;
-        this.aFloat5769
-                = -(f_11_ * this.aFloat5754) + f_13_ * f;
-        this.aFloat5762
-                = f * f_14_ - this.aFloat5784 * f_11_;
-        this.aFloat5754
-                = f_13_ * f_11_ + f * this.aFloat5754;
-        this.aFloat5784
-                = f_14_ * f_11_ + f * this.aFloat5784;
-        this.aFloat5772
-                = -(f_11_ * this.aFloat5751) + f * f_15_;
-        this.aFloat5751
-                = f * this.aFloat5751 + f_15_ * f_11_;
+        this.aFloat5756 = this.aFloat5756 * f + f_11_ * f_12_;
+        this.aFloat5769 = -(f_11_ * this.aFloat5754) + f_13_ * f;
+        this.aFloat5762 = f * f_14_ - this.aFloat5784 * f_11_;
+        this.aFloat5754 = f_13_ * f_11_ + f * this.aFloat5754;
+        this.aFloat5784 = f_14_ * f_11_ + f * this.aFloat5784;
+        this.aFloat5772 = -(f_11_ * this.aFloat5751) + f * f_15_;
+        this.aFloat5751 = f * this.aFloat5751 + f_15_ * f_11_;
     }
 
-    final void method939(float f, int i, float f_16_, int i_17_, int i_18_,
-                         int i_19_, float f_20_) {
+    final void method939(float f, int i, float f_16_, int i_17_, int i_18_, int i_19_, float f_20_) {
         if (i_18_ == 0) {
-            this.aFloat5761
-                    = this.aFloat5756
-                    = this.aFloat5750
-                    = this.aFloat5754
-                    = this.aFloat5781
-                    = this.aFloat5762 = 0.0F;
+            this.aFloat5761 = this.aFloat5756 = this.aFloat5750 = this.aFloat5754 = this.aFloat5781 = this.aFloat5762 = 0.0F;
             this.aFloat5770 = (float) i;
             this.aFloat5784 = 1.0F;
             this.aFloat5769 = (float) i_17_;
@@ -163,10 +122,7 @@ final class Class101_Sub3 extends Class101 {
             float f_22_ = Class348_Sub23.aFloatArray6865[i_18_ & 0x3fff];
             this.aFloat5761 = (float) i * f_22_;
             this.aFloat5769 = (float) i_17_ * f_21_;
-            this.aFloat5756
-                    = this.aFloat5754
-                    = this.aFloat5781
-                    = this.aFloat5762 = 0.0F;
+            this.aFloat5756 = this.aFloat5754 = this.aFloat5781 = this.aFloat5762 = 0.0F;
             this.aFloat5784 = 1.0F;
             this.aFloat5750 = -f_22_ * (float) i_17_;
             this.aFloat5770 = (float) i * f_21_;
@@ -180,34 +136,17 @@ final class Class101_Sub3 extends Class101 {
 
     final void method897(int i, int i_24_, int i_25_, int[] is) {
         anInt5767++;
-        is[0] = (int) ((float) i_25_ * this.aFloat5781
-                + ((float) i * this.aFloat5770
-                + (float) i_24_ * this.aFloat5750)
-                + this.aFloat5747);
-        is[2] = (int) ((float) i_24_ * this.aFloat5754
-                + this.aFloat5756 * (float) i
-                + this.aFloat5784 * (float) i_25_
-                + this.aFloat5751);
-        is[1] = (int) (this.aFloat5772
-                + ((float) i_25_ * this.aFloat5762
-                + ((float) i * this.aFloat5761
-                + ((float) i_24_
-                * this.aFloat5769))));
+        is[0] = (int) ((float) i_25_ * this.aFloat5781 + ((float) i * this.aFloat5770 + (float) i_24_ * this.aFloat5750) + this.aFloat5747);
+        is[2] = (int) ((float) i_24_ * this.aFloat5754 + this.aFloat5756 * (float) i + this.aFloat5784 * (float) i_25_ + this.aFloat5751);
+        is[1] = (int) (this.aFloat5772 + ((float) i_25_ * this.aFloat5762 + ((float) i * this.aFloat5761 + ((float) i_24_ * this.aFloat5769))));
     }
 
     final void method894(int i, int i_26_, int i_27_) {
         this.aFloat5751 = (float) i_27_;
         this.aFloat5747 = (float) i;
-        this.aFloat5761
-                = this.aFloat5756
-                = this.aFloat5750
-                = this.aFloat5754
-                = this.aFloat5781
-                = this.aFloat5762 = 0.0F;
+        this.aFloat5761 = this.aFloat5756 = this.aFloat5750 = this.aFloat5754 = this.aFloat5781 = this.aFloat5762 = 0.0F;
         this.aFloat5772 = (float) i_26_;
-        this.aFloat5770
-                = this.aFloat5769
-                = this.aFloat5784 = 1.0F;
+        this.aFloat5770 = this.aFloat5769 = this.aFloat5784 = 1.0F;
         anInt5749++;
     }
 
@@ -216,19 +155,12 @@ final class Class101_Sub3 extends Class101 {
         float f = (float) is[0] - this.aFloat5747;
         float f_28_ = -this.aFloat5772 + (float) is[1];
         float f_29_ = -this.aFloat5751 + (float) is[2];
-        is[1] = (int) (this.aFloat5769 * f_28_
-                + f * this.aFloat5750
-                + this.aFloat5754 * f_29_);
-        is[2] = (int) (this.aFloat5784 * f_29_
-                + (f_28_ * this.aFloat5762
-                + this.aFloat5781 * f));
-        is[0] = (int) (this.aFloat5770 * f
-                + this.aFloat5761 * f_28_
-                + f_29_ * this.aFloat5756);
+        is[1] = (int) (this.aFloat5769 * f_28_ + f * this.aFloat5750 + this.aFloat5754 * f_29_);
+        is[2] = (int) (this.aFloat5784 * f_29_ + (f_28_ * this.aFloat5762 + this.aFloat5781 * f));
+        is[0] = (int) (this.aFloat5770 * f + this.aFloat5761 * f_28_ + f_29_ * this.aFloat5756);
     }
 
-    final void method903(int i, int i_30_, int i_31_, int i_32_, int i_33_,
-                         int i_34_) {
+    final void method903(int i, int i_30_, int i_31_, int i_32_, int i_33_, int i_34_) {
         anInt5782++;
         float f = Class348_Sub23.aFloatArray6867[i_32_ & 0x3fff];
         float f_35_ = Class348_Sub23.aFloatArray6865[i_32_ & 0x3fff];
@@ -247,18 +179,9 @@ final class Class101_Sub3 extends Class101 {
         this.aFloat5784 = f * f_36_;
         this.aFloat5781 = f_38_ * -f_37_ + f_36_ * f_41_;
         this.aFloat5761 = f_40_ * f_37_ + -f_36_ * f_39_;
-        this.aFloat5751
-                = (this.aFloat5756 * (float) -i
-                - this.aFloat5754 * (float) i_30_
-                - (float) i_31_ * this.aFloat5784);
-        this.aFloat5747
-                = (-(this.aFloat5750 * (float) i_30_)
-                + this.aFloat5770 * (float) -i
-                - this.aFloat5781 * (float) i_31_);
-        this.aFloat5772
-                = (-((float) i_31_ * this.aFloat5762)
-                + (this.aFloat5761 * (float) -i
-                - this.aFloat5769 * (float) i_30_));
+        this.aFloat5751 = (this.aFloat5756 * (float) -i - this.aFloat5754 * (float) i_30_ - (float) i_31_ * this.aFloat5784);
+        this.aFloat5747 = (-(this.aFloat5750 * (float) i_30_) + this.aFloat5770 * (float) -i - this.aFloat5781 * (float) i_31_);
+        this.aFloat5772 = (-((float) i_31_ * this.aFloat5762) + (this.aFloat5761 * (float) -i - this.aFloat5769 * (float) i_30_));
     }
 
     final void method908(int i) {
@@ -268,23 +191,15 @@ final class Class101_Sub3 extends Class101 {
         float f_43_ = this.aFloat5770;
         float f_44_ = this.aFloat5750;
         float f_45_ = this.aFloat5781;
-        this.aFloat5770
-                = f * f_43_ - this.aFloat5761 * f_42_;
+        this.aFloat5770 = f * f_43_ - this.aFloat5761 * f_42_;
         float f_46_ = this.aFloat5747;
-        this.aFloat5761
-                = this.aFloat5761 * f + f_43_ * f_42_;
-        this.aFloat5750
-                = -(this.aFloat5769 * f_42_) + f_44_ * f;
-        this.aFloat5781
-                = -(f_42_ * this.aFloat5762) + f_45_ * f;
-        this.aFloat5769
-                = f * this.aFloat5769 + f_42_ * f_44_;
-        this.aFloat5762
-                = this.aFloat5762 * f + f_45_ * f_42_;
-        this.aFloat5747
-                = -(f_42_ * this.aFloat5772) + f * f_46_;
-        this.aFloat5772
-                = this.aFloat5772 * f + f_42_ * f_46_;
+        this.aFloat5761 = this.aFloat5761 * f + f_43_ * f_42_;
+        this.aFloat5750 = -(this.aFloat5769 * f_42_) + f_44_ * f;
+        this.aFloat5781 = -(f_42_ * this.aFloat5762) + f_45_ * f;
+        this.aFloat5769 = f * this.aFloat5769 + f_42_ * f_44_;
+        this.aFloat5762 = this.aFloat5762 * f + f_45_ * f_42_;
+        this.aFloat5747 = -(f_42_ * this.aFloat5772) + f * f_46_;
+        this.aFloat5772 = this.aFloat5772 * f + f_42_ * f_46_;
     }
 
     final float[] method940(int i) {
@@ -307,38 +222,25 @@ final class Class101_Sub3 extends Class101 {
     final Class101 method907() {
         anInt5748++;
         Class101_Sub3 class101_sub3_47_ = new Class101_Sub3();
-        class101_sub3_47_.aFloat5747
-                = this.aFloat5747;
-        class101_sub3_47_.aFloat5750
-                = this.aFloat5750;
-        class101_sub3_47_.aFloat5769
-                = this.aFloat5769;
-        class101_sub3_47_.aFloat5784
-                = this.aFloat5784;
-        class101_sub3_47_.aFloat5772
-                = this.aFloat5772;
-        class101_sub3_47_.aFloat5762
-                = this.aFloat5762;
-        class101_sub3_47_.aFloat5781
-                = this.aFloat5781;
-        class101_sub3_47_.aFloat5770
-                = this.aFloat5770;
-        class101_sub3_47_.aFloat5756
-                = this.aFloat5756;
-        class101_sub3_47_.aFloat5761
-                = this.aFloat5761;
-        class101_sub3_47_.aFloat5751
-                = this.aFloat5751;
-        class101_sub3_47_.aFloat5754
-                = this.aFloat5754;
+        class101_sub3_47_.aFloat5747 = this.aFloat5747;
+        class101_sub3_47_.aFloat5750 = this.aFloat5750;
+        class101_sub3_47_.aFloat5769 = this.aFloat5769;
+        class101_sub3_47_.aFloat5784 = this.aFloat5784;
+        class101_sub3_47_.aFloat5772 = this.aFloat5772;
+        class101_sub3_47_.aFloat5762 = this.aFloat5762;
+        class101_sub3_47_.aFloat5781 = this.aFloat5781;
+        class101_sub3_47_.aFloat5770 = this.aFloat5770;
+        class101_sub3_47_.aFloat5756 = this.aFloat5756;
+        class101_sub3_47_.aFloat5761 = this.aFloat5761;
+        class101_sub3_47_.aFloat5751 = this.aFloat5751;
+        class101_sub3_47_.aFloat5754 = this.aFloat5754;
         return class101_sub3_47_;
     }
 
     static final void method941(int i, int i_48_) {
         Class77.anInt1290 = i_48_;
         anInt5755++;
-        if (i <= 113)
-            aClass326_5764 = null;
+        if (i <= 113) aClass326_5764 = null;
     }
 
     final void method942(int i) {
@@ -346,18 +248,12 @@ final class Class101_Sub3 extends Class101 {
         anInt5760++;
         this.aFloat5761 = -this.aFloat5761;
         if (i == 3128) {
-            this.aFloat5769
-                    = -this.aFloat5769;
-            this.aFloat5756
-                    = -this.aFloat5756;
-            this.aFloat5784
-                    = -this.aFloat5784;
-            this.aFloat5762
-                    = -this.aFloat5762;
-            this.aFloat5772
-                    = -this.aFloat5772;
-            this.aFloat5751
-                    = -this.aFloat5751;
+            this.aFloat5769 = -this.aFloat5769;
+            this.aFloat5756 = -this.aFloat5756;
+            this.aFloat5784 = -this.aFloat5784;
+            this.aFloat5762 = -this.aFloat5762;
+            this.aFloat5772 = -this.aFloat5772;
+            this.aFloat5751 = -this.aFloat5751;
         }
     }
 
@@ -366,131 +262,71 @@ final class Class101_Sub3 extends Class101 {
         anInt5773++;
         i_50_ -= this.aFloat5751;
         i -= this.aFloat5747;
-        is[0]
-                = (int) (this.aFloat5756 * (float) i_50_
-                + ((float) i * this.aFloat5770
-                + (float) i_49_ * this.aFloat5761));
-        is[2] = (int) (this.aFloat5781 * (float) i
-                + (float) i_49_ * this.aFloat5762
-                + this.aFloat5784 * (float) i_50_);
-        is[1]
-                = (int) ((float) i_50_ * this.aFloat5754
-                + (this.aFloat5750 * (float) i
-                + (float) i_49_ * this.aFloat5769));
+        is[0] = (int) (this.aFloat5756 * (float) i_50_ + ((float) i * this.aFloat5770 + (float) i_49_ * this.aFloat5761));
+        is[2] = (int) (this.aFloat5781 * (float) i + (float) i_49_ * this.aFloat5762 + this.aFloat5784 * (float) i_50_);
+        is[1] = (int) ((float) i_50_ * this.aFloat5754 + (this.aFloat5750 * (float) i + (float) i_49_ * this.aFloat5769));
     }
 
     static final Class348_Sub16_Sub3 method943(boolean bool) {
         anInt5776++;
-        if (bool != false)
-            method943(true);
+        if (bool != false) method943(true);
         return Class98.aClass348_Sub16_Sub3_1564;
     }
 
     final void method898(Class101 class101) {
         anInt5758++;
         Class101_Sub3 class101_sub3_51_ = (Class101_Sub3) class101;
-        this.aFloat5751
-                = class101_sub3_51_.aFloat5751;
-        this.aFloat5769
-                = class101_sub3_51_.aFloat5769;
-        this.aFloat5770
-                = class101_sub3_51_.aFloat5770;
-        this.aFloat5781
-                = class101_sub3_51_.aFloat5781;
-        this.aFloat5747
-                = class101_sub3_51_.aFloat5747;
-        this.aFloat5754
-                = class101_sub3_51_.aFloat5754;
-        this.aFloat5761
-                = class101_sub3_51_.aFloat5761;
-        this.aFloat5772
-                = class101_sub3_51_.aFloat5772;
-        this.aFloat5784
-                = class101_sub3_51_.aFloat5784;
-        this.aFloat5762
-                = class101_sub3_51_.aFloat5762;
-        this.aFloat5756
-                = class101_sub3_51_.aFloat5756;
-        this.aFloat5750
-                = class101_sub3_51_.aFloat5750;
+        this.aFloat5751 = class101_sub3_51_.aFloat5751;
+        this.aFloat5769 = class101_sub3_51_.aFloat5769;
+        this.aFloat5770 = class101_sub3_51_.aFloat5770;
+        this.aFloat5781 = class101_sub3_51_.aFloat5781;
+        this.aFloat5747 = class101_sub3_51_.aFloat5747;
+        this.aFloat5754 = class101_sub3_51_.aFloat5754;
+        this.aFloat5761 = class101_sub3_51_.aFloat5761;
+        this.aFloat5772 = class101_sub3_51_.aFloat5772;
+        this.aFloat5784 = class101_sub3_51_.aFloat5784;
+        this.aFloat5762 = class101_sub3_51_.aFloat5762;
+        this.aFloat5756 = class101_sub3_51_.aFloat5756;
+        this.aFloat5750 = class101_sub3_51_.aFloat5750;
     }
 
     final void method895(int i) {
         anInt5780++;
         this.aFloat5769 = 1.0F;
-        this.aFloat5770
-                = this.aFloat5784
-                = Class348_Sub23.aFloatArray6867[0x3fff & i];
-        this.aFloat5781
-                = Class348_Sub23.aFloatArray6865[0x3fff & i];
+        this.aFloat5770 = this.aFloat5784 = Class348_Sub23.aFloatArray6867[0x3fff & i];
+        this.aFloat5781 = Class348_Sub23.aFloatArray6865[0x3fff & i];
         this.aFloat5756 = -this.aFloat5781;
-        this.aFloat5750
-                = this.aFloat5747
-                = this.aFloat5761
-                = this.aFloat5762
-                = this.aFloat5772
-                = this.aFloat5754
-                = this.aFloat5751 = 0.0F;
+        this.aFloat5750 = this.aFloat5747 = this.aFloat5761 = this.aFloat5762 = this.aFloat5772 = this.aFloat5754 = this.aFloat5751 = 0.0F;
     }
 
     final void method899(int i) {
         anInt5757++;
         this.aFloat5770 = 1.0F;
-        this.aFloat5769
-                = this.aFloat5784
-                = Class348_Sub23.aFloatArray6867[0x3fff & i];
-        this.aFloat5754
-                = Class348_Sub23.aFloatArray6865[0x3fff & i];
+        this.aFloat5769 = this.aFloat5784 = Class348_Sub23.aFloatArray6867[0x3fff & i];
+        this.aFloat5754 = Class348_Sub23.aFloatArray6865[0x3fff & i];
         this.aFloat5762 = -this.aFloat5754;
-        this.aFloat5750
-                = this.aFloat5781
-                = this.aFloat5747
-                = this.aFloat5761
-                = this.aFloat5772
-                = this.aFloat5756
-                = this.aFloat5751 = 0.0F;
+        this.aFloat5750 = this.aFloat5781 = this.aFloat5747 = this.aFloat5761 = this.aFloat5772 = this.aFloat5756 = this.aFloat5751 = 0.0F;
     }
 
-    static final void method944(int i, byte[][] is,
-                                Class237_Sub1 class237_sub1) {
+    static final void method944(int i, byte[][] is, Class237_Sub1 class237_sub1) {
         try {
-            if (i != -8212)
-                method944(65, null, null);
+            if (i != -8212) method944(65, null, null);
             anInt5752++;
-            for (int i_52_ = 0; i_52_ < class237_sub1.anInt3130;
-                 i_52_++) {
+            for (int i_52_ = 0; i_52_ < class237_sub1.anInt3130; i_52_++) {
                 Class369_Sub1.method3570(false);
-                for (int i_53_ = 0;
-                     (i_53_ < Class367_Sub4.anInt7319 >> 1239349699);
-                     i_53_++) {
-                    for (int i_54_ = 0;
-                         (Class348_Sub40_Sub3.anInt9109 >> 1502625827 > i_54_);
-                         i_54_++) {
-                        int i_55_ = (Class62.anIntArrayArrayArray1116[i_52_]
-                                [i_53_][i_54_]);
+                for (int i_53_ = 0; (i_53_ < Class367_Sub4.anInt7319 >> 1239349699); i_53_++) {
+                    for (int i_54_ = 0; (Class348_Sub40_Sub3.anInt9109 >> 1502625827 > i_54_); i_54_++) {
+                        int i_55_ = (Class62.anIntArrayArrayArray1116[i_52_][i_53_][i_54_]);
                         if (i_55_ != -1) {
                             int i_56_ = 0x3 & i_55_ >> 1803633816;
-                            if (!class237_sub1.aBoolean3109
-                                    || i_56_ == 0) {
+                            if (!class237_sub1.aBoolean3109 || i_56_ == 0) {
                                 int i_57_ = (0x6 & i_55_) >> 1850987297;
                                 int i_58_ = i_55_ >> -42415762 & 0x3ff;
                                 int i_59_ = (0x3ff9 & i_55_) >> 375029219;
-                                int i_60_
-                                        = i_59_ / 8 + (i_58_ / 8 << 1157268520);
-                                for (int i_61_ = 0;
-                                     i_61_ < Class348_Sub23_Sub3.anIntArray9042.length;
-                                     i_61_++) {
-                                    if (i_60_ == (Class348_Sub23_Sub3.anIntArray9042
-                                            [i_61_])
-                                            && is[i_61_] != null) {
-                                        class237_sub1.method1692
-                                                ((i_58_ & 0x7) * 8, i_57_,
-                                                        is[i_61_], i_56_,
-                                                        (i_59_ & 0x7) * 8,
-                                                        Class348_Sub8.aHa6654, 8 * i_54_,
-                                                        8 * i_53_, i + 8219,
-                                                        Class348_Sub45.aClass361Array7108,
-                                                        i_52_);
+                                int i_60_ = i_59_ / 8 + (i_58_ / 8 << 1157268520);
+                                for (int i_61_ = 0; i_61_ < Class348_Sub23_Sub3.anIntArray9042.length; i_61_++) {
+                                    if (i_60_ == (Class348_Sub23_Sub3.anIntArray9042[i_61_]) && is[i_61_] != null) {
+                                        class237_sub1.method1692((i_58_ & 0x7) * 8, i_57_, is[i_61_], i_56_, (i_59_ & 0x7) * 8, Class348_Sub8.aHa6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.aClass361Array7108, i_52_);
                                         break;
                                     }
                                 }
@@ -500,30 +336,14 @@ final class Class101_Sub3 extends Class101 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("iaa.W(" + i + ','
-                            + (is != null ? "{...}" : "null")
-                            + ','
-                            + (class237_sub1 != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("iaa.W(" + i + ',' + (is != null ? "{...}" : "null") + ',' + (class237_sub1 != null ? "{...}" : "null") + ')'));
         }
     }
 
     final void method910() {
         anInt5759++;
-        this.aFloat5770
-                = this.aFloat5769
-                = this.aFloat5784 = 1.0F;
-        this.aFloat5761
-                = this.aFloat5756
-                = this.aFloat5750
-                = this.aFloat5754
-                = this.aFloat5781
-                = this.aFloat5762
-                = this.aFloat5747
-                = this.aFloat5772
-                = this.aFloat5751 = 0.0F;
+        this.aFloat5770 = this.aFloat5769 = this.aFloat5784 = 1.0F;
+        this.aFloat5761 = this.aFloat5756 = this.aFloat5750 = this.aFloat5754 = this.aFloat5781 = this.aFloat5762 = this.aFloat5747 = this.aFloat5772 = this.aFloat5751 = 0.0F;
     }
 
     final void method896(int i) {
@@ -533,28 +353,19 @@ final class Class101_Sub3 extends Class101 {
         float f_63_ = this.aFloat5770;
         float f_64_ = this.aFloat5750;
         float f_65_ = this.aFloat5781;
-        this.aFloat5770
-                = f_63_ * f + this.aFloat5756 * f_62_;
+        this.aFloat5770 = f_63_ * f + this.aFloat5756 * f_62_;
         float f_66_ = this.aFloat5747;
-        this.aFloat5756
-                = f * this.aFloat5756 - f_62_ * f_63_;
-        this.aFloat5750
-                = f * f_64_ + f_62_ * this.aFloat5754;
-        this.aFloat5754
-                = -(f_64_ * f_62_) + this.aFloat5754 * f;
-        this.aFloat5781
-                = f * f_65_ + this.aFloat5784 * f_62_;
-        this.aFloat5784
-                = -(f_65_ * f_62_) + f * this.aFloat5784;
-        this.aFloat5747
-                = this.aFloat5751 * f_62_ + f * f_66_;
-        this.aFloat5751
-                = this.aFloat5751 * f - f_62_ * f_66_;
+        this.aFloat5756 = f * this.aFloat5756 - f_62_ * f_63_;
+        this.aFloat5750 = f * f_64_ + f_62_ * this.aFloat5754;
+        this.aFloat5754 = -(f_64_ * f_62_) + this.aFloat5754 * f;
+        this.aFloat5781 = f * f_65_ + this.aFloat5784 * f_62_;
+        this.aFloat5784 = -(f_65_ * f_62_) + f * this.aFloat5784;
+        this.aFloat5747 = this.aFloat5751 * f_62_ + f * f_66_;
+        this.aFloat5751 = this.aFloat5751 * f - f_62_ * f_66_;
     }
 
     final float[] method945(boolean bool) {
-        if (bool != true)
-            this.aFloat5756 = 0.66213727F;
+        if (bool != true) this.aFloat5756 = 0.66213727F;
         Class288_Sub1.aFloatArray8575[14] = 0.0F;
         Class288_Sub1.aFloatArray8575[0] = this.aFloat5770;
         Class288_Sub1.aFloatArray8575[13] = 0.0F;
@@ -574,68 +385,29 @@ final class Class101_Sub3 extends Class101 {
     final void method946(Class101 class101, int i) {
         anInt5771++;
         Class101_Sub3 class101_sub3_67_ = (Class101_Sub3) class101;
-        this.aFloat5781
-                = class101_sub3_67_.aFloat5756;
-        if (i != -7929)
-            method899(52);
-        this.aFloat5750
-                = class101_sub3_67_.aFloat5761;
-        this.aFloat5770
-                = class101_sub3_67_.aFloat5770;
-        this.aFloat5756
-                = class101_sub3_67_.aFloat5781;
-        this.aFloat5762
-                = class101_sub3_67_.aFloat5754;
-        this.aFloat5761
-                = class101_sub3_67_.aFloat5750;
-        this.aFloat5769
-                = class101_sub3_67_.aFloat5769;
-        this.aFloat5747
-                = -((class101_sub3_67_.aFloat5772
-                * this.aFloat5750)
-                + (class101_sub3_67_.aFloat5747
-                * this.aFloat5770)
-                + (class101_sub3_67_.aFloat5751
-                * this.aFloat5781));
-        this.aFloat5754
-                = class101_sub3_67_.aFloat5762;
-        this.aFloat5784
-                = class101_sub3_67_.aFloat5784;
-        this.aFloat5772
-                = -((class101_sub3_67_.aFloat5772
-                * this.aFloat5769)
-                + (class101_sub3_67_.aFloat5747
-                * this.aFloat5761)
-                + (class101_sub3_67_.aFloat5751
-                * this.aFloat5762));
-        this.aFloat5751
-                = -((this.aFloat5756
-                * class101_sub3_67_.aFloat5747)
-                + (this.aFloat5754
-                * class101_sub3_67_.aFloat5772)
-                + (class101_sub3_67_.aFloat5751
-                * this.aFloat5784));
+        this.aFloat5781 = class101_sub3_67_.aFloat5756;
+        if (i != -7929) method899(52);
+        this.aFloat5750 = class101_sub3_67_.aFloat5761;
+        this.aFloat5770 = class101_sub3_67_.aFloat5770;
+        this.aFloat5756 = class101_sub3_67_.aFloat5781;
+        this.aFloat5762 = class101_sub3_67_.aFloat5754;
+        this.aFloat5761 = class101_sub3_67_.aFloat5750;
+        this.aFloat5769 = class101_sub3_67_.aFloat5769;
+        this.aFloat5747 = -((class101_sub3_67_.aFloat5772 * this.aFloat5750) + (class101_sub3_67_.aFloat5747 * this.aFloat5770) + (class101_sub3_67_.aFloat5751 * this.aFloat5781));
+        this.aFloat5754 = class101_sub3_67_.aFloat5762;
+        this.aFloat5784 = class101_sub3_67_.aFloat5784;
+        this.aFloat5772 = -((class101_sub3_67_.aFloat5772 * this.aFloat5769) + (class101_sub3_67_.aFloat5747 * this.aFloat5761) + (class101_sub3_67_.aFloat5751 * this.aFloat5762));
+        this.aFloat5751 = -((this.aFloat5756 * class101_sub3_67_.aFloat5747) + (this.aFloat5754 * class101_sub3_67_.aFloat5772) + (class101_sub3_67_.aFloat5751 * this.aFloat5784));
     }
 
     static final void method947(byte i) {
         anInt5783++;
-        if (i != 41)
-            anInt5768 = 38;
-        for (Class348_Sub9 class348_sub9
-             = (Class348_Sub9) Class218.aClass262_2859.method1995(4);
-             class348_sub9 != null;
-             class348_sub9 = (Class348_Sub9) Class218.aClass262_2859
-                     .method1990((byte) 117)) {
-            if (class348_sub9.aBoolean6684)
-                class348_sub9.method2781((byte) 21);
+        if (i != 41) anInt5768 = 38;
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1995(4); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1990((byte) 117)) {
+            if (class348_sub9.aBoolean6684) class348_sub9.method2781((byte) 21);
         }
-        for (Class348_Sub9 class348_sub9
-             = (Class348_Sub9) client.aClass262_5185.method1995(4);
-             class348_sub9 != null;
-             class348_sub9 = ((Class348_Sub9)
-                     client.aClass262_5185.method1990((byte) 39))) {
-            if (class348_sub9.aBoolean6684)
-                class348_sub9.method2781((byte) 21);
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aClass262_5185.method1990((byte) 39))) {
+            if (class348_sub9.aBoolean6684) class348_sub9.method2781((byte) 21);
         }
     }
 
@@ -645,14 +417,8 @@ final class Class101_Sub3 extends Class101 {
 
     final void method905(int i, int i_68_, int i_69_, int[] is) {
         anInt5753++;
-        is[1] = (int) ((float) i_69_ * this.aFloat5762
-                + ((float) i_68_ * this.aFloat5769
-                + this.aFloat5761 * (float) i));
-        is[2] = (int) (this.aFloat5754 * (float) i_68_
-                + this.aFloat5756 * (float) i
-                + (float) i_69_ * this.aFloat5784);
-        is[0] = (int) (this.aFloat5750 * (float) i_68_
-                + this.aFloat5770 * (float) i
-                + this.aFloat5781 * (float) i_69_);
+        is[1] = (int) ((float) i_69_ * this.aFloat5762 + ((float) i_68_ * this.aFloat5769 + this.aFloat5761 * (float) i));
+        is[2] = (int) (this.aFloat5754 * (float) i_68_ + this.aFloat5756 * (float) i + (float) i_69_ * this.aFloat5784);
+        is[0] = (int) (this.aFloat5750 * (float) i_68_ + this.aFloat5770 * (float) i + this.aFloat5781 * (float) i_69_);
     }
 }

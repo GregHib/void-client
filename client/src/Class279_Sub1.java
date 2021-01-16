@@ -22,13 +22,7 @@ final class Class279_Sub1 extends Class279 {
 
     final void method2082(int i) throws LineUnavailableException {
         try {
-            DataLine.Info info
-                    = (new DataLine.Info
-                    ((aClass6180 == null
-                            ? (aClass6180
-                            = method2096("javax.sound.sampled.SourceDataLine"))
-                            : aClass6180),
-                            anAudioFormat6179, i << (Class282.aBoolean3652 ? 2 : 1)));
+            DataLine.Info info = (new DataLine.Info((aClass6180 == null ? (aClass6180 = method2096("javax.sound.sampled.SourceDataLine")) : aClass6180), anAudioFormat6179, i << (Class282.aBoolean3652 ? 2 : 1)));
             aSourceDataLine6177 = (SourceDataLine) AudioSystem.getLine(info);
             aSourceDataLine6177.open();
             aSourceDataLine6177.start();
@@ -49,21 +43,16 @@ final class Class279_Sub1 extends Class279 {
                 Mixer.Info info = infos_0_[i];
                 if (info != null) {
                     String string = info.getName();
-                    if (null != string
-                            && string.toLowerCase().indexOf("soundmax") >= 0)
-                        aBoolean6178 = true;
+                    if (null != string && string.toLowerCase().indexOf("soundmax") >= 0) aBoolean6178 = true;
                 }
             }
         }
-        anAudioFormat6179
-                = new AudioFormat((float) Class22.anInt339, 16,
-                Class282.aBoolean3652 ? 2 : 1, true, false);
+        anAudioFormat6179 = new AudioFormat((float) Class22.anInt339, 16, Class282.aBoolean3652 ? 2 : 1, true, false);
         aByteArray6176 = new byte[256 << (!Class282.aBoolean3652 ? 1 : 2)];
     }
 
     final int method2081() {
-        return anInt6175 - (aSourceDataLine6177.available()
-                >> (Class282.aBoolean3652 ? 2 : 1));
+        return anInt6175 - (aSourceDataLine6177.available() >> (Class282.aBoolean3652 ? 2 : 1));
     }
 
     final void method2083() throws LineUnavailableException {
@@ -71,14 +60,7 @@ final class Class279_Sub1 extends Class279 {
         if (aBoolean6178) {
             aSourceDataLine6177.close();
             aSourceDataLine6177 = null;
-            DataLine.Info info
-                    = (new DataLine.Info
-                    ((aClass6180 == null
-                            ? (aClass6180
-                            = method2096("javax.sound.sampled.SourceDataLine"))
-                            : aClass6180),
-                            anAudioFormat6179,
-                            anInt6175 << (!Class282.aBoolean3652 ? 1 : 2)));
+            DataLine.Info info = (new DataLine.Info((aClass6180 == null ? (aClass6180 = method2096("javax.sound.sampled.SourceDataLine")) : aClass6180), anAudioFormat6179, anInt6175 << (!Class282.aBoolean3652 ? 1 : 2)));
             aSourceDataLine6177 = (SourceDataLine) AudioSystem.getLine(info);
             aSourceDataLine6177.open();
             aSourceDataLine6177.start();
@@ -87,12 +69,10 @@ final class Class279_Sub1 extends Class279 {
 
     final void method2094() {
         int i = 256;
-        if (Class282.aBoolean3652)
-            i <<= 1;
+        if (Class282.aBoolean3652) i <<= 1;
         for (int i_1_ = 0; i_1_ < i; i_1_++) {
             int i_2_ = this.anIntArray3603[i_1_];
-            if ((i_2_ + 8388608 & ~0xffffff) != 0)
-                i_2_ = 0x7fffff ^ i_2_ >> 31;
+            if ((i_2_ + 8388608 & ~0xffffff) != 0) i_2_ = 0x7fffff ^ i_2_ >> 31;
             aByteArray6176[i_1_ * 2] = (byte) (i_2_ >> 8);
             aByteArray6176[i_1_ * 2 + 1] = (byte) (i_2_ >> 16);
         }

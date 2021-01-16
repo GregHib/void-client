@@ -17,8 +17,7 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
 
     static final void method556(boolean bool) {
         anInt8656++;
-        if (Class51.aClass311_897 != null)
-            Class51.aClass311_897.method2319((byte) -75);
+        if (Class51.aClass311_897 != null) Class51.aClass311_897.method2319((byte) -75);
         if (bool == false) {
             if (Class348_Sub32.aThread6946 != null) {
                 for (; ; ) {
@@ -94,37 +93,26 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
                                                                                                                     while_15_:
                                                                                                                     do {
                                                                                                                         while_14_:
-                                                                                                                        do
-                                                                                                                        {
+                                                                                                                        do {
                                                                                                                             while_13_:
-                                                                                                                            do
-                                                                                                                            {
+                                                                                                                            do {
                                                                                                                                 while_12_:
-                                                                                                                                do
-                                                                                                                                {
+                                                                                                                                do {
                                                                                                                                     while_11_:
-                                                                                                                                    do
-                                                                                                                                    {
+                                                                                                                                    do {
                                                                                                                                         while_10_:
-                                                                                                                                        do
-                                                                                                                                        {
+                                                                                                                                        do {
                                                                                                                                             while_9_:
-                                                                                                                                            do
-                                                                                                                                            {
+                                                                                                                                            do {
                                                                                                                                                 while_8_:
-                                                                                                                                                do
-                                                                                                                                                {
+                                                                                                                                                do {
                                                                                                                                                     while_7_:
-                                                                                                                                                    do
-                                                                                                                                                    {
+                                                                                                                                                    do {
                                                                                                                                                         while_6_:
-                                                                                                                                                        do
-                                                                                                                                                        {
+                                                                                                                                                        do {
                                                                                                                                                             while_5_:
-                                                                                                                                                            do
-                                                                                                                                                            {
-                                                                                                                                                                do
-                                                                                                                                                                {
+                                                                                                                                                            do {
+                                                                                                                                                                do {
                                                                                                                                                                     if (i_2_ != 0) {
                                                                                                                                                                         if (i_2_ != 1) {
                                                                                                                                                                             if (i_2_ != 2) {
@@ -186,64 +174,49 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
                                                                                                                                                                                                                                                                                                 break while_32_;
                                                                                                                                                                                                                                                                                             break while_33_;
                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                    } else
-                                                                                                                                                                                                                                                                                        break while_30_;
+                                                                                                                                                                                                                                                                                    } else break while_30_;
                                                                                                                                                                                                                                                                                     break while_31_;
                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                            } else
-                                                                                                                                                                                                                                                                                break while_28_;
+                                                                                                                                                                                                                                                                            } else break while_28_;
                                                                                                                                                                                                                                                                             break while_29_;
                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                    } else
-                                                                                                                                                                                                                                                                        break while_26_;
+                                                                                                                                                                                                                                                                    } else break while_26_;
                                                                                                                                                                                                                                                                     break while_27_;
                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                            } else
-                                                                                                                                                                                                                                                                break while_24_;
+                                                                                                                                                                                                                                                            } else break while_24_;
                                                                                                                                                                                                                                                             break while_25_;
                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                    } else
-                                                                                                                                                                                                                                                        break while_22_;
+                                                                                                                                                                                                                                                    } else break while_22_;
                                                                                                                                                                                                                                                     break while_23_;
                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                            } else
-                                                                                                                                                                                                                                                break while_20_;
+                                                                                                                                                                                                                                            } else break while_20_;
                                                                                                                                                                                                                                             break while_21_;
                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                    } else
-                                                                                                                                                                                                                                        break while_18_;
+                                                                                                                                                                                                                                    } else break while_18_;
                                                                                                                                                                                                                                     break while_19_;
                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                            } else
-                                                                                                                                                                                                                                break while_16_;
+                                                                                                                                                                                                                            } else break while_16_;
                                                                                                                                                                                                                             break while_17_;
                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                    } else
-                                                                                                                                                                                                                        break while_14_;
+                                                                                                                                                                                                                    } else break while_14_;
                                                                                                                                                                                                                     break while_15_;
                                                                                                                                                                                                                 }
-                                                                                                                                                                                                            } else
-                                                                                                                                                                                                                break while_12_;
+                                                                                                                                                                                                            } else break while_12_;
                                                                                                                                                                                                             break while_13_;
                                                                                                                                                                                                         }
-                                                                                                                                                                                                    } else
-                                                                                                                                                                                                        break while_10_;
+                                                                                                                                                                                                    } else break while_10_;
                                                                                                                                                                                                     break while_11_;
                                                                                                                                                                                                 }
-                                                                                                                                                                                            } else
-                                                                                                                                                                                                break while_8_;
+                                                                                                                                                                                            } else break while_8_;
                                                                                                                                                                                             break while_9_;
                                                                                                                                                                                         }
-                                                                                                                                                                                    } else
-                                                                                                                                                                                        break while_6_;
+                                                                                                                                                                                    } else break while_6_;
                                                                                                                                                                                     break while_7_;
                                                                                                                                                                                 }
-                                                                                                                                                                            } else
-                                                                                                                                                                                break;
+                                                                                                                                                                            } else break;
                                                                                                                                                                             break while_5_;
                                                                                                                                                                         }
-                                                                                                                                                                    } else
-                                                                                                                                                                        return new Class348_Sub40_Sub15();
+                                                                                                                                                                    } else return new Class348_Sub40_Sub15();
                                                                                                                                                                     return new Class348_Sub40_Sub18();
                                                                                                                                                                 } while (false);
                                                                                                                                                                 return new Class348_Sub40_Sub19();
@@ -292,23 +265,17 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
                                                                         } while (false);
                                                                         return new Class348_Sub40_Sub13();
                                                                     } while (false);
-                                                                    return (new Class348_Sub40_Sub1
-                                                                            ());
+                                                                    return (new Class348_Sub40_Sub1());
                                                                 } while (false);
-                                                                return (new Class348_Sub40_Sub3
-                                                                        ());
+                                                                return (new Class348_Sub40_Sub3());
                                                             } while (false);
-                                                            return (new Class348_Sub40_Sub24
-                                                                    ());
+                                                            return (new Class348_Sub40_Sub24());
                                                         } while (false);
-                                                        return (new Class348_Sub40_Sub23
-                                                                ());
+                                                        return (new Class348_Sub40_Sub23());
                                                     } while (false);
-                                                    return (new Class348_Sub40_Sub39
-                                                            ());
+                                                    return (new Class348_Sub40_Sub39());
                                                 } while (false);
-                                                return (new Class348_Sub40_Sub10
-                                                        ());
+                                                return (new Class348_Sub40_Sub10());
                                             } while (false);
                                             return new Class348_Sub40_Sub25();
                                         } while (false);
@@ -353,8 +320,7 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
 
     final byte[] method559(int i, int i_8_, byte i_9_, int i_10_) {
         aByteArray8657 = new byte[2 * (i_8_ * i) * i_10_];
-        if (i_9_ < 85)
-            aByteArray8657 = null;
+        if (i_9_ < 85) aByteArray8657 = null;
         anInt8655++;
         this.method542(i_8_, i, 0, i_10_);
         return aByteArray8657;
@@ -364,29 +330,18 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
         try {
             anInt8652++;
             class318_sub4.aClass318_Sub1_6410 = null;
-            int i_11_ = (class318_sub4
-                    .aClass318_Sub3Array6414).length;
+            int i_11_ = (class318_sub4.aClass318_Sub3Array6414).length;
             int i_12_ = 127 / ((i - 82) / 32);
-            for (int i_13_ = 0; i_13_ < i_11_;
-                 i_13_++)
-                class318_sub4
-                        .aClass318_Sub3Array6414
-                        [i_13_].aBoolean6401
-                        = false;
+            for (int i_13_ = 0; i_13_ < i_11_; i_13_++)
+                class318_sub4.aClass318_Sub3Array6414[i_13_].aBoolean6401 = false;
             synchronized (Class318.aClass243Array3974) {
-                if (Class318.aClass243Array3974.length > i_11_
-                        && Class331.anIntArray4128[i_11_] < 200) {
-                    Class318.aClass243Array3974[i_11_]
-                            .method1869(-126, class318_sub4);
+                if (Class318.aClass243Array3974.length > i_11_ && Class331.anIntArray4128[i_11_] < 200) {
+                    Class318.aClass243Array3974[i_11_].method1869(-126, class318_sub4);
                     Class331.anIntArray4128[i_11_]++;
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("hha.E("
-                            + (class318_sub4 != null ? "{...}"
-                            : "null")
-                            + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("hha.E(" + (class318_sub4 != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 }

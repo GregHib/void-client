@@ -34,17 +34,11 @@ final class Class315 {
 
     static final boolean method2354(Class364 class364, int i) {
         anInt3954++;
-        if (i != -1)
-            method2355(-93, (byte) 115, true, null, -92, -67, 6);
-        return Class367_Sub8.aClass364_7361 == class364
-                || Class26.aClass364_382 == class364
-                || Class108.aClass364_1657 == class364
-                || class364 == Class342.aClass364_4246;
+        if (i != -1) method2355(-93, (byte) 115, true, null, -92, -67, 6);
+        return Class367_Sub8.aClass364_7361 == class364 || Class26.aClass364_382 == class364 || Class108.aClass364_1657 == class364 || class364 == Class342.aClass364_4246;
     }
 
-    static final void method2355(int i, byte i_0_, boolean bool,
-                                 Class45 class45, int i_1_, int i_2_,
-                                 int i_3_) {
+    static final void method2355(int i, byte i_0_, boolean bool, Class45 class45, int i_1_, int i_2_, int i_3_) {
         Class58.anInt1059 = i;
         anInt3948++;
         Class346.aBoolean4275 = bool;
@@ -52,61 +46,38 @@ final class Class315 {
         Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_;
         Class239_Sub14.anInt5994 = i_3_;
         Class348_Sub43.anInt7068 = 1;
-        if (i_0_ != 50)
-            method2357(-59, null);
+        if (i_0_ != 50) method2357(-59, null);
         Class318.anInt3971 = i_2_;
         Class124.aClass45_1848 = class45;
     }
 
     final void method2356(Class293 class293, byte i) {
         aClass293_3956 = class293;
-        if (i != -108)
-            method2358(-10, -55, 5);
+        if (i != -108) method2358(-10, -55, 5);
         anInt3949++;
     }
 
-    static final int method2357
-            (int i, Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2) {
+    static final int method2357(int i, Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2) {
         anInt3951++;
-        int i_4_
-                = (class318_sub1_sub3_sub3_sub2
-                .anInt10560);
+        int i_4_ = (class318_sub1_sub3_sub3_sub2.anInt10560);
         Class225 class225 = class318_sub1_sub3_sub3_sub2.method2422((byte) 72);
-        if (i != (class318_sub1_sub3_sub3_sub2
-                .anInt10268)
-                && !(class318_sub1_sub3_sub3_sub2
-                .aBoolean10213)) {
-            if ((class318_sub1_sub3_sub3_sub2
-                    .anInt10268) != class225.anInt2919
-                    && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2920)
-                    && (class225.anInt2949 != (class318_sub1_sub3_sub3_sub2
-                    .anInt10268))
-                    && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2914)) {
-                if ((class225.anInt2940 == (class318_sub1_sub3_sub3_sub2
-                        .anInt10268))
-                        || (class318_sub1_sub3_sub3_sub2.anInt10268
-                        == class225.anInt2924)
-                        || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2947)
-                        || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2958))
+        if (i != (class318_sub1_sub3_sub3_sub2.anInt10268) && !(class318_sub1_sub3_sub3_sub2.aBoolean10213)) {
+            if ((class318_sub1_sub3_sub3_sub2.anInt10268) != class225.anInt2919 && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2920) && (class225.anInt2949 != (class318_sub1_sub3_sub3_sub2.anInt10268)) && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2914)) {
+                if ((class225.anInt2940 == (class318_sub1_sub3_sub3_sub2.anInt10268)) || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2924) || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2947) || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2958))
                     i_4_ = class318_sub1_sub3_sub3_sub2.anInt10526;
-            } else
-                i_4_ = class318_sub1_sub3_sub3_sub2.anInt10519;
-        } else
-            i_4_ = class318_sub1_sub3_sub3_sub2.anInt10535;
+            } else i_4_ = class318_sub1_sub3_sub3_sub2.anInt10519;
+        } else i_4_ = class318_sub1_sub3_sub3_sub2.anInt10535;
         return i_4_;
     }
 
     static final boolean method2358(int i, int i_5_, int i_6_) {
-        if (i >= -106)
-            return true;
+        if (i >= -106) return true;
         anInt3945++;
-        return Class122.method1087(12644, i_6_, i_5_)
-                || Class273.method2056(i_5_, 107, i_6_);
+        return Class122.method1087(12644, i_6_, i_5_) || Class273.method2056(i_5_, 107, i_6_);
     }
 
     final void method2359(Class318_Sub2 class318_sub2, int i) {
-        if (i != -1)
-            method2362(45);
+        if (i != -1) method2362(45);
         synchronized (aClass243_3946) {
             aClass243_3946.method1869(-127, class318_sub2);
             anInt3957++;
@@ -132,8 +103,7 @@ final class Class315 {
             aClass243_3946.method1869(-122, class318_sub1);
             anInt3957++;
         }
-        if (i != -15481)
-            this.aString3953 = null;
+        if (i != -15481) this.aString3953 = null;
         if (aClass293_3956 != null) {
             synchronized (aClass293_3956) {
                 aClass293_3956.notify();
@@ -146,8 +116,7 @@ final class Class315 {
         Object object = null;
         Class318 class318;
         synchronized (aClass243_3946) {
-            if (i != 25061)
-                method2353(null, true);
+            if (i != 25061) method2353(null, true);
             class318 = aClass243_3946.method1872(8);
             class318.method2373(false);
             anInt3957--;

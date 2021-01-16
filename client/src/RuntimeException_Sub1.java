@@ -16,30 +16,18 @@ final class RuntimeException_Sub1 extends RuntimeException {
     static boolean aBoolean4604;
     static int anInt4605;
 
-    static final aa_Sub1 method4009(int i, int[] is, int[] is_0_, int i_1_,
-                                    ha_Sub2 var_ha_Sub2, int i_2_) {
+    static final aa_Sub1 method4009(int i, int[] is, int[] is_0_, int i_1_, ha_Sub2 var_ha_Sub2, int i_2_) {
         try {
             anInt4597++;
             byte[] is_3_ = new byte[i * i_2_];
-            for (int i_4_ = i_1_; i_4_ < i_2_;
-                 i_4_++) {
+            for (int i_4_ = i_1_; i_4_ < i_2_; i_4_++) {
                 int i_5_ = i * i_4_ - -is[i_4_];
-                for (int i_6_ = 0;
-                     i_6_ < is_0_[i_4_]; i_6_++)
+                for (int i_6_ = 0; i_6_ < is_0_[i_4_]; i_6_++)
                     is_3_[i_5_++] = (byte) -1;
             }
             return new aa_Sub1(var_ha_Sub2, i, i_2_, is_3_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("kg.C(" + i + ','
-                            + (is != null ? "{...}" : "null")
-                            + ','
-                            + (is_0_ != null ? "{...}"
-                            : "null")
-                            + ',' + i_1_ + ','
-                            + (var_ha_Sub2 != null ? "{...}"
-                            : "null")
-                            + ',' + i_2_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kg.C(" + i + ',' + (is != null ? "{...}" : "null") + ',' + (is_0_ != null ? "{...}" : "null") + ',' + i_1_ + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i_2_ + ')'));
         }
     }
 
@@ -58,16 +46,12 @@ final class RuntimeException_Sub1 extends RuntimeException {
 
     static final void method4011(int i, Class45 class45) {
         anInt4598++;
-        if (i != 1024)
-            method4012(null, (byte) 68);
+        if (i != 1024) method4012(null, (byte) 68);
         client.anInt5171 = 0;
         Class348_Sub1_Sub1.anInt8808 = 0;
         Class152.aClass243_2077 = new Class243();
-        Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103
-                = new Class318_Sub9_Sub2_Sub1[1024];
-        Class348_Sub51.aClass318_Sub10Array7249
-                = new Class318_Sub10[(Class348_Sub42_Sub9.anIntArray9558
-                [Class348_Sub6.anInt6637]) + 1];
+        Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103 = new Class318_Sub9_Sub2_Sub1[1024];
+        Class348_Sub51.aClass318_Sub10Array7249 = new Class318_Sub10[(Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637]) + 1];
         Class258_Sub3.anInt8550 = 0;
         Class376.anInt4559 = 0;
         Class117.method1072(class45, (byte) -107);
@@ -81,20 +65,16 @@ final class RuntimeException_Sub1 extends RuntimeException {
         boolean bool = false;
         for (; ; ) {
             int i_8_ = class348_sub49.method3387(255);
-            if (i_8_ == 0)
-                break;
+            if (i_8_ == 0) break;
             if (i_8_ == 1) {
                 if (Class118.anIntArray1786 == null) {
                     Class118.anIntArray1786 = new int[4];
                     Class132.anInt1905 = 4;
                     Class106.anIntArray1636 = new int[4];
                 }
-                for (int i_9_ = 0; i_9_ < Class118.anIntArray1786.length;
-                     i_9_++) {
-                    Class118.anIntArray1786[i_9_]
-                            = class348_sub49.method3372(13638);
-                    Class106.anIntArray1636[i_9_]
-                            = class348_sub49.method3372(13638);
+                for (int i_9_ = 0; i_9_ < Class118.anIntArray1786.length; i_9_++) {
+                    Class118.anIntArray1786[i_9_] = class348_sub49.method3372(13638);
+                    Class106.anIntArray1636[i_9_] = class348_sub49.method3372(13638);
                 }
                 bool = true;
             } else if (i_8_ != 2) {
@@ -103,9 +83,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
                     Class118.anIntArray1786 = new int[Class132.anInt1905];
                     Class106.anIntArray1636 = new int[Class132.anInt1905];
                 }
-            } else
-                Class348_Sub31.anInt6923
-                        = class348_sub49.method3330(842397944);
+            } else Class348_Sub31.anInt6923 = class348_sub49.method3330(842397944);
         }
         if (!bool) {
             if (Class118.anIntArray1786 == null) {
@@ -113,8 +91,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
                 Class106.anIntArray1636 = new int[4];
                 Class132.anInt1905 = 4;
             }
-            for (int i_10_ = 0; i_10_ < Class118.anIntArray1786.length;
-                 i_10_++) {
+            for (int i_10_ = 0; i_10_ < Class118.anIntArray1786.length; i_10_++) {
                 Class118.anIntArray1786[i_10_] = 0;
                 Class106.anIntArray1636[i_10_] = i_10_ * 20;
             }

@@ -12,9 +12,7 @@ final class Class348_Sub25 extends Class348 {
 
     final void method2995(int i, int i_0_) {
         if (i != 0 || i_0_ != 0) {
-            if (anIntArray6881 == null
-                    || anIntArray6881.length != anIntArray6884.length)
-                anIntArray6881 = new int[anIntArray6884.length];
+            if (anIntArray6881 == null || anIntArray6881.length != anIntArray6884.length) anIntArray6881 = new int[anIntArray6884.length];
             int i_1_ = anIntArray6884.length;
             int i_2_ = i;
             int i_3_ = anInt6880 - 1;
@@ -51,9 +49,7 @@ final class Class348_Sub25 extends Class348 {
             int[] is_13_ = new int[anInt6880];
             int[] is_14_ = new int[anInt6880];
             int[] is_15_ = new int[anInt6880];
-            if (anIntArray6881 == null
-                    || anIntArray6881.length != anIntArray6884.length)
-                anIntArray6881 = new int[anIntArray6884.length];
+            if (anIntArray6881 == null || anIntArray6881.length != anIntArray6884.length) anIntArray6881 = new int[anIntArray6884.length];
             int i_16_ = anInt6880;
             int i_17_ = anInt6880;
             int i_18_ = i_16_ - 1;
@@ -69,8 +65,7 @@ final class Class348_Sub25 extends Class348 {
                     is_14_[i_24_] += i_25_ >> 8 & 0xff;
                     is_15_[i_24_] += i_25_ & 0xff;
                 }
-                if (i_22_ == 0)
-                    i_22_ = i_20_;
+                if (i_22_ == 0) i_22_ = i_20_;
             }
             int i_26_ = i_20_;
             for (int i_27_ = i_19_; i_27_ >= 0; i_27_--) {
@@ -86,8 +81,7 @@ final class Class348_Sub25 extends Class348 {
                     i_31_ += is_13_[i_29_];
                     i_33_ += is_14_[i_29_];
                     i_32_ += is_15_[i_29_];
-                    if (i_29_ == 0)
-                        i_29_ = i_16_;
+                    if (i_29_ == 0) i_29_ = i_16_;
                 }
                 for (int i_35_ = i_18_; i_35_ >= 0; i_35_--) {
                     i_29_--;
@@ -96,31 +90,24 @@ final class Class348_Sub25 extends Class348 {
                     int i_37_ = i_31_ / 9;
                     int i_38_ = i_33_ / 9;
                     int i_39_ = i_32_ / 9;
-                    anIntArray6881[--i_26_]
-                            = i_36_ << 24 | i_37_ << 16 | i_38_ << 8 | i_39_;
+                    anIntArray6881[--i_26_] = i_36_ << 24 | i_37_ << 16 | i_38_ << 8 | i_39_;
                     i_30_ += is_12_[i_29_] - is_12_[i_28_];
                     i_31_ += is_13_[i_29_] - is_13_[i_28_];
                     i_32_ += is_15_[i_29_] - is_15_[i_28_];
                     i_33_ += is_14_[i_29_] - is_14_[i_28_];
-                    if (i_29_ == 0)
-                        i_29_ = i_16_;
-                    if (i_28_ == 0)
-                        i_28_ = i_16_;
+                    if (i_29_ == 0) i_29_ = i_16_;
+                    if (i_28_ == 0) i_28_ = i_16_;
                 }
                 for (int i_40_ = i_18_; i_40_ >= 0; i_40_--) {
                     int i_41_ = anIntArray6884[--i_22_];
                     int i_42_ = anIntArray6884[--i_21_];
-                    is_12_[i_40_]
-                            += (i_41_ >> 24 & 0xff) - (i_42_ >> 24 & 0xff);
-                    is_13_[i_40_]
-                            += (i_41_ >> 16 & 0xff) - (i_42_ >> 16 & 0xff);
+                    is_12_[i_40_] += (i_41_ >> 24 & 0xff) - (i_42_ >> 24 & 0xff);
+                    is_13_[i_40_] += (i_41_ >> 16 & 0xff) - (i_42_ >> 16 & 0xff);
                     is_14_[i_40_] += (i_41_ >> 8 & 0xff) - (i_42_ >> 8 & 0xff);
                     is_15_[i_40_] += (i_41_ & 0xff) - (i_42_ & 0xff);
                 }
-                if (i_22_ == 0)
-                    i_22_ = i_20_;
-                if (i_21_ == 0)
-                    i_21_ = i_20_;
+                if (i_22_ == 0) i_22_ = i_20_;
+                if (i_21_ == 0) i_21_ = i_20_;
             }
             int[] is_43_ = anIntArray6884;
             anIntArray6884 = anIntArray6881;

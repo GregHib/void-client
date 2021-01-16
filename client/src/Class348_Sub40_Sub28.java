@@ -19,30 +19,23 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
     final void method3044(int i) {
         anInt9363++;
         Class220.method1605(26188);
-        if (i < 108)
-            method3122((byte) -111);
+        if (i < 108) method3122((byte) -111);
     }
 
     static final Class364[] method3122(byte i) {
-        if (i < 86)
-            aClass45_9365 = null;
+        if (i < 86) aClass45_9365 = null;
         anInt9361++;
-        return (new Class364[]
-                {Class55_Sub1.aClass364_5271, Class367_Sub8.aClass364_7361,
-                        Class26.aClass364_382, Class108.aClass364_1657,
-                        Class76.aClass364_1279, Class342.aClass364_4246});
+        return (new Class364[]{Class55_Sub1.aClass364_5271, Class367_Sub8.aClass364_7361, Class26.aClass364_382, Class108.aClass364_1657, Class76.aClass364_1279, Class342.aClass364_4246});
     }
 
     public static void method3123(int i) {
         aClass45_9365 = null;
-        if (i != 0)
-            method3122((byte) -98);
+        if (i != 0) method3122((byte) -98);
     }
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         anInt9370++;
-        if (i_0_ != 31015)
-            anInt9364 = -29;
+        if (i_0_ != 31015) anInt9364 = -29;
         int i_1_ = i;
         while_204_:
         do {
@@ -57,12 +50,10 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                         } else if (i_1_ != 1) {
                             if (i_1_ != 2) {
                                 if (i_1_ != 3) {
-                                    if (i_1_ == 4)
-                                        break while_203_;
+                                    if (i_1_ == 4) break while_203_;
                                     break while_204_;
                                 }
-                            } else
-                                break;
+                            } else break;
                             break while_202_;
                         }
                         anInt9362 = class348_sub49.method3330(842397944);
@@ -80,40 +71,24 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_2_) {
         anInt9366++;
-        if (i_2_ != 255)
-            method3044(-48);
+        if (i_2_ != 255) method3044(-48);
         int[] is = this.aClass191_7032.method1433(0, i);
         if (this.aClass191_7032.aBoolean2570) {
             int i_3_ = anInt9364 >> 1093508865;
-            int[][] is_4_
-                    = this.aClass191_7032.method1427((byte) 16);
+            int[][] is_4_ = this.aClass191_7032.method1427((byte) 16);
             Random random = new Random(anInt9367);
-            for (int i_5_ = 0; anInt9362 > i_5_;
-                 i_5_++) {
-                int i_6_
-                        = (anInt9364 > 0
-                        ? anInt9369 + Class124.method1097((byte) 92, anInt9364,
-                        random) + -i_3_
-                        : anInt9369);
+            for (int i_5_ = 0; anInt9362 > i_5_; i_5_++) {
+                int i_6_ = (anInt9364 > 0 ? anInt9369 + Class124.method1097((byte) 92, anInt9364, random) + -i_3_ : anInt9369);
                 i_6_ = i_6_ >> -807902044 & 0xff;
-                int i_7_ = Class124.method1097((byte) 81,
-                        Class348_Sub40_Sub6.anInt9139,
-                        random);
-                int i_8_
-                        = Class124.method1097((byte) 123, Class286_Sub2.anInt6212,
-                        random);
-                int i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654[i_6_]
-                        >> -1741119764);
-                int i_10_
-                        = ((Class235.anIntArray3068[i_6_] * anInt9368 >> 226725452)
-                        + i_8_);
+                int i_7_ = Class124.method1097((byte) 81, Class348_Sub40_Sub6.anInt9139, random);
+                int i_8_ = Class124.method1097((byte) 123, Class286_Sub2.anInt6212, random);
+                int i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654[i_6_] >> -1741119764);
+                int i_10_ = ((Class235.anIntArray3068[i_6_] * anInt9368 >> 226725452) + i_8_);
                 int i_11_ = -i_8_ + i_10_;
                 int i_12_ = -i_7_ + i_9_;
                 if (i_12_ != 0 || i_11_ != 0) {
-                    if (i_11_ < 0)
-                        i_11_ = -i_11_;
-                    if (i_12_ < 0)
-                        i_12_ = -i_12_;
+                    if (i_11_ < 0) i_11_ = -i_11_;
+                    if (i_12_ < 0) i_12_ = -i_12_;
                     boolean bool = i_12_ < i_11_;
                     if (bool) {
                         int i_13_ = i_7_;
@@ -136,22 +111,15 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                     int i_19_ = -i_8_ + i_10_;
                     int i_20_ = -i_18_ / 2;
                     int i_21_ = 2048 / i_18_;
-                    int i_22_
-                            = 1024 - (Class124.method1097((byte) 90, 4096, random)
-                            >> -1276678686);
-                    if (i_19_ < 0)
-                        i_19_ = -i_19_;
-                    int i_23_
-                            = i_10_ <= i_8_ ? -1 : 1;
-                    for (int i_24_ = i_7_;
-                         i_24_ < i_9_; i_24_++) {
+                    int i_22_ = 1024 - (Class124.method1097((byte) 90, 4096, random) >> -1276678686);
+                    if (i_19_ < 0) i_19_ = -i_19_;
+                    int i_23_ = i_10_ <= i_8_ ? -1 : 1;
+                    for (int i_24_ = i_7_; i_24_ < i_9_; i_24_++) {
                         int i_25_ = (i_24_ - i_7_) * i_21_ + (i_22_ + 1024);
                         int i_26_ = Class239_Sub22.anInt6076 & i_24_;
                         int i_27_ = i_17_ & Class299_Sub2.anInt6325;
-                        if (bool)
-                            is_4_[i_27_][i_26_] = i_25_;
-                        else
-                            is_4_[i_26_][i_27_] = i_25_;
+                        if (bool) is_4_[i_27_][i_26_] = i_25_;
+                        else is_4_[i_26_][i_27_] = i_25_;
                         i_20_ += i_19_;
                         if (i_20_ > 0) {
                             i_17_ -= -i_23_;

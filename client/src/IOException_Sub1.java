@@ -12,8 +12,7 @@ final class IOException_Sub1 extends IOException {
     static Class114 aClass114_90 = new Class114(42, -1);
     static int[] anIntArray91 = new int[8];
 
-    static final void method129(int i, int i_0_, long[] ls, int i_1_,
-                                int[] is) {
+    static final void method129(int i, int i_0_, long[] ls, int i_1_, int[] is) {
         do {
             try {
                 anInt89++;
@@ -27,8 +26,7 @@ final class IOException_Sub1 extends IOException {
                     is[i_2_] = is[i_1_];
                     is[i_1_] = i_4_;
                     int i_5_ = l == 9223372036854775807L ? 0 : 1;
-                    for (int i_6_ = i;
-                         i_1_ > i_6_; i_6_++) {
+                    for (int i_6_ = i; i_1_ > i_6_; i_6_++) {
                         if (l - -(long) (i_5_ & i_6_) > ls[i_6_]) {
                             long l_7_ = ls[i_6_];
                             ls[i_6_] = ls[i_3_];
@@ -45,18 +43,10 @@ final class IOException_Sub1 extends IOException {
                     method129(i, -126, ls, -1 + i_3_, is);
                     method129(1 + i_3_, -81, ls, i_1_, is);
                 }
-                if (i_0_ < -72)
-                    break;
+                if (i_0_ < -72) break;
                 method130(99);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("gv.A(" + i + ',' + i_0_ + ','
-                                + (ls != null ? "{...}"
-                                : "null")
-                                + ',' + i_1_ + ','
-                                + (is != null ? "{...}"
-                                : "null")
-                                + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("gv.A(" + i + ',' + i_0_ + ',' + (ls != null ? "{...}" : "null") + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -69,16 +59,13 @@ final class IOException_Sub1 extends IOException {
         }
     }
 
-    static final void method131(boolean bool, int i, boolean bool_9_,
-                                int i_10_) {
+    static final void method131(boolean bool, int i, boolean bool_9_, int i_10_) {
         anInt87++;
-        if (i_10_ < 8000 || i_10_ > 48000)
-            throw new IllegalArgumentException();
+        if (i_10_ < 8000 || i_10_ > 48000) throw new IllegalArgumentException();
         Class253.anInt3248 = i;
         Class22.anInt339 = i_10_;
         Class282.aBoolean3652 = bool;
-        if (bool_9_ != true)
-            method130(-125);
+        if (bool_9_ != true) method130(-125);
     }
 
     IOException_Sub1(String string) {

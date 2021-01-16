@@ -14,8 +14,7 @@ final class Class168 {
     static volatile Object anObject2256;
 
     public static void method1298(int i) {
-        if (i != -1)
-            aClass46_2249 = null;
+        if (i != -1) aClass46_2249 = null;
         anObject2256 = null;
         aClass114_2255 = null;
         aClass46_2249 = null;
@@ -25,11 +24,8 @@ final class Class168 {
 
     static final boolean method1299(int i, int i_0_, int i_1_) {
         anInt2253++;
-        if (i != 393216)
-            anInt2251 = -106;
-        return Class348_Sub42_Sub16_Sub1.method3262(i_0_, i_1_, 102)
-                | (i_0_ & 0x60000) != 0
-                || Class348_Sub9.method2783(i_1_, (byte) -99, i_0_);
+        if (i != 393216) anInt2251 = -106;
+        return Class348_Sub42_Sub16_Sub1.method3262(i_0_, i_1_, 102) | (i_0_ & 0x60000) != 0 || Class348_Sub9.method2783(i_1_, (byte) -99, i_0_);
     }
 
     static {

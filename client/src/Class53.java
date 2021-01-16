@@ -11,8 +11,7 @@ final class Class53 {
     private IDirect3DSurface anIDirect3DSurface965;
 
     final int method495(byte i, int i_0_) {
-        if (i != 91)
-            anIDirect3DSurface964 = null;
+        if (i != 91) anIDirect3DSurface964 = null;
         return anIDirect3DSwapChain963.Present(i_0_);
     }
 
@@ -32,8 +31,7 @@ final class Class53 {
         }
     }
 
-    final void method497(IDirect3DSwapChain idirect3dswapchain, byte i,
-                         IDirect3DSurface idirect3dsurface) {
+    final void method497(IDirect3DSwapChain idirect3dswapchain, byte i, IDirect3DSurface idirect3dsurface) {
         anIDirect3DSurface964 = idirect3dsurface;
         if (i == -107) {
             anIDirect3DSwapChain963 = idirect3dswapchain;
@@ -46,8 +44,7 @@ final class Class53 {
         return null != anIDirect3DSwapChain963;
     }
 
-    Class53(IDirect3DSwapChain idirect3dswapchain,
-            IDirect3DSurface idirect3dsurface) {
+    Class53(IDirect3DSwapChain idirect3dswapchain, IDirect3DSurface idirect3dsurface) {
         method497(idirect3dswapchain, (byte) -107, idirect3dsurface);
     }
 }

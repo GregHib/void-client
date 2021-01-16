@@ -15,10 +15,8 @@ final class za_Sub1 extends za {
 
     static final int method3439(int i) {
         anInt9771++;
-        if (i <= 92)
-            return 99;
-        if (Class348_Sub49.anInt7207 == 1)
-            return Class348_Sub16_Sub1.anInt8854;
+        if (i <= 92) return 99;
+        if (Class348_Sub49.anInt7207 == 1) return Class348_Sub16_Sub1.anInt8854;
         return Class59_Sub1.anInt5283;
     }
 
@@ -34,7 +32,6 @@ final class za_Sub1 extends za {
 
     public static void method3441(int i) {
         aClass113_9773 = null;
-        if (i != 1)
-            method3439(-118);
+        if (i != 1) method3439(-118);
     }
 }

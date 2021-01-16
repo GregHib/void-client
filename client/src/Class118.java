@@ -17,12 +17,10 @@ final class Class118 {
 
     public static void method1075(byte i) {
         anIntArray1786 = null;
-        if (i != 17)
-            anIntArray1786 = null;
+        if (i != 17) anIntArray1786 = null;
     }
 
-    Class118(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_,
-             int i_6_, int i_7_, boolean bool, boolean bool_8_, int i_9_) {
+    Class118(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, boolean bool, boolean bool_8_, int i_9_) {
         this.anInt1781 = i_0_;
         this.anInt1782 = i_2_;
         this.anInt1788 = i_1_;

@@ -67,8 +67,7 @@ final class Class348_Sub10 extends Class348 {
         int i_0_ = i & 0x1fffff;
         int i_1_ = i & ~0x7fffffff;
         int i_2_ = (i & 0x7fe00000) >> 21;
-        if (i_1_ != 0)
-            i_0_ = -i_0_;
+        if (i_1_ != 0) i_0_ = -i_0_;
         return (float) ((double) i_0_ * Math.pow(2.0, i_2_ - 788));
     }
 
@@ -137,31 +136,18 @@ final class Class348_Sub10 extends Class348 {
             int i_14_ = i_11_ >> 3;
             float[] fs = new float[i_12_];
             for (int i_15_ = 0; i_15_ < i_13_; i_15_++) {
-                fs[2 * i_15_]
-                        = (float) Math.cos((double) (4 * i_15_) * 3.141592653589793
-                        / (double) i_11_);
-                fs[2 * i_15_ + 1]
-                        = -(float) Math.sin((double) (4 * i_15_)
-                        * 3.141592653589793 / (double) i_11_);
+                fs[2 * i_15_] = (float) Math.cos((double) (4 * i_15_) * 3.141592653589793 / (double) i_11_);
+                fs[2 * i_15_ + 1] = -(float) Math.sin((double) (4 * i_15_) * 3.141592653589793 / (double) i_11_);
             }
             float[] fs_16_ = new float[i_12_];
             for (int i_17_ = 0; i_17_ < i_13_; i_17_++) {
-                fs_16_[2 * i_17_] = (float) Math.cos((double) (2 * i_17_ + 1)
-                        * 3.141592653589793
-                        / (double) (2 * i_11_));
-                fs_16_[2 * i_17_ + 1]
-                        = (float) Math.sin((double) (2 * i_17_ + 1)
-                        * 3.141592653589793
-                        / (double) (2 * i_11_));
+                fs_16_[2 * i_17_] = (float) Math.cos((double) (2 * i_17_ + 1) * 3.141592653589793 / (double) (2 * i_11_));
+                fs_16_[2 * i_17_ + 1] = (float) Math.sin((double) (2 * i_17_ + 1) * 3.141592653589793 / (double) (2 * i_11_));
             }
             float[] fs_18_ = new float[i_13_];
             for (int i_19_ = 0; i_19_ < i_14_; i_19_++) {
-                fs_18_[2 * i_19_]
-                        = (float) Math.cos((double) (4 * i_19_ + 2)
-                        * 3.141592653589793 / (double) i_11_);
-                fs_18_[2 * i_19_ + 1]
-                        = -(float) Math.sin((double) (4 * i_19_ + 2)
-                        * 3.141592653589793 / (double) i_11_);
+                fs_18_[2 * i_19_] = (float) Math.cos((double) (4 * i_19_ + 2) * 3.141592653589793 / (double) i_11_);
+                fs_18_[2 * i_19_ + 1] = -(float) Math.sin((double) (4 * i_19_ + 2) * 3.141592653589793 / (double) i_11_);
             }
             int[] is_20_ = new int[i_14_];
             int i_21_ = Class299.method2253(i_14_ - 1, -53);
@@ -211,8 +197,7 @@ final class Class348_Sub10 extends Class348 {
     }
 
     final Class348_Sub19_Sub1 method2791(int[] is) {
-        if (is != null && is[0] <= 0)
-            return null;
+        if (is != null && is[0] <= 0) return null;
         if (aByteArray6731 == null) {
             anInt6730 = 0;
             aFloatArray6701 = new float[anInt6721];
@@ -221,37 +206,31 @@ final class Class348_Sub10 extends Class348 {
             anInt6732 = 0;
         }
         for (/**/; anInt6732 < aByteArrayArray6703.length; anInt6732++) {
-            if (is != null && is[0] <= 0)
-                return null;
+            if (is != null && is[0] <= 0) return null;
             float[] fs = method2794(anInt6732);
             if (fs != null) {
                 int i = anInt6733;
                 int i_34_ = fs.length;
-                if (i_34_ > anInt6716 - i)
-                    i_34_ = anInt6716 - i;
+                if (i_34_ > anInt6716 - i) i_34_ = anInt6716 - i;
                 for (int i_35_ = 0; i_35_ < i_34_; i_35_++) {
                     int i_36_ = (int) (128.0F + fs[i_35_] * 128.0F);
-                    if ((i_36_ & ~0xff) != 0)
-                        i_36_ = (~i_36_) >> 31;
+                    if ((i_36_ & ~0xff) != 0) i_36_ = (~i_36_) >> 31;
                     aByteArray6731[i++] = (byte) (i_36_ - 128);
                 }
-                if (is != null)
-                    is[0] -= i - anInt6733;
+                if (is != null) is[0] -= i - anInt6733;
                 anInt6733 = i;
             }
         }
         aFloatArray6701 = null;
         byte[] is_37_ = aByteArray6731;
         aByteArray6731 = null;
-        return new Class348_Sub19_Sub1(anInt6702, is_37_, anInt6723, anInt6717,
-                aBoolean6728);
+        return new Class348_Sub19_Sub1(anInt6702, is_37_, anInt6723, anInt6717, aBoolean6728);
     }
 
     private static final boolean method2792(Class45 class45) {
         if (!aBoolean6724) {
             byte[] is = class45.method410(-1860, 0, 0);
-            if (is == null)
-                return false;
+            if (is == null) return false;
             method2790(is);
         }
         return true;
@@ -263,16 +242,14 @@ final class Class348_Sub10 extends Class348 {
             return null;
         }
         byte[] is = class45.method415((byte) 73, i);
-        if (is == null)
-            return null;
+        if (is == null) return null;
         return new Class348_Sub10(is);
     }
 
     private final float[] method2794(int i) {
         method2784(aByteArrayArray6703[i], 0);
         method2788();
-        int i_38_
-                = method2789(Class299.method2253(anIntArray6709.length - 1, 123));
+        int i_38_ = method2789(Class299.method2253(anIntArray6709.length - 1, 123));
         boolean bool = aBooleanArray6713[i_38_];
         int i_39_ = bool ? anInt6721 : anInt6725;
         boolean bool_40_ = false;
@@ -312,9 +289,7 @@ final class Class348_Sub10 extends Class348 {
         boolean bool_51_ = !aClass210Array6715[i_50_].method1534();
         boolean bool_52_ = bool_51_;
         for (int i_53_ = 0; i_53_ < class276.anInt3555; i_53_++) {
-            Class343 class343
-                    = (aClass343Array6710
-                    [class276.anIntArray3554[i_53_]]);
+            Class343 class343 = (aClass343Array6710[class276.anIntArray3554[i_53_]]);
             float[] fs = aFloatArray6707;
             class343.method2688(fs, i_39_ >> 1, bool_52_);
         }
@@ -356,10 +331,8 @@ final class Class348_Sub10 extends Class348 {
                 fs[i_57_ + 1 + 4 * i_69_] = f_70_ + f_72_;
                 float f_73_ = fs_62_[i_57_ - 4 - 4 * i_69_];
                 float f_74_ = fs_62_[i_57_ - 3 - 4 * i_69_];
-                fs[4 * i_69_ + 3]
-                        = (f - f_71_) * f_73_ - (f_70_ - f_72_) * f_74_;
-                fs[4 * i_69_ + 1]
-                        = (f_70_ - f_72_) * f_73_ + (f - f_71_) * f_74_;
+                fs[4 * i_69_ + 3] = (f - f_71_) * f_73_ - (f_70_ - f_72_) * f_74_;
+                fs[4 * i_69_ + 1] = (f_70_ - f_72_) * f_73_ + (f - f_71_) * f_74_;
             }
             int i_75_ = Class299.method2253(i_39_ - 1, -52);
             for (int i_76_ = 0; i_76_ < i_75_ - 3; i_76_++) {
@@ -378,10 +351,8 @@ final class Class348_Sub10 extends Class348 {
                         fs[i_80_ - 3 - i_83_] = f_84_ + f_86_;
                         float f_87_ = fs_62_[i_82_ * i_78_];
                         float f_88_ = fs_62_[i_82_ * i_78_ + 1];
-                        fs[i_81_ - 1 - i_83_]
-                                = (f - f_85_) * f_87_ - (f_84_ - f_86_) * f_88_;
-                        fs[i_81_ - 3 - i_83_]
-                                = (f_84_ - f_86_) * f_87_ + (f - f_85_) * f_88_;
+                        fs[i_81_ - 1 - i_83_] = (f - f_85_) * f_87_ - (f_84_ - f_86_) * f_88_;
+                        fs[i_81_ - 3 - i_83_] = (f_84_ - f_86_) * f_87_ + (f - f_85_) * f_88_;
                     }
                 }
             }
@@ -427,12 +398,8 @@ final class Class348_Sub10 extends Class348 {
                 fs[i_39_ - 1 - 2 * i_95_] = (-f_98_ + f_100_ + f_101_) * 0.5F;
             }
             for (int i_102_ = 0; i_102_ < i_58_; i_102_++) {
-                fs[i_102_]
-                        = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_]
-                        + fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_ + 1]);
-                fs[i_57_ - 1 - i_102_]
-                        = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_ + 1]
-                        - fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_]);
+                fs[i_102_] = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_] + fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_ + 1]);
+                fs[i_57_ - 1 - i_102_] = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_ + 1] - fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_]);
             }
             for (int i_103_ = 0; i_103_ < i_58_; i_103_++)
                 fs[i_39_ - i_58_ + i_103_] = -fs[i_103_];
@@ -443,21 +410,12 @@ final class Class348_Sub10 extends Class348 {
             for (int i_106_ = 0; i_106_ < i_58_; i_106_++)
                 fs[i_57_ + i_106_] = fs[i_39_ - i_106_ - 1];
             for (int i_107_ = i_43_; i_107_ < i_44_; i_107_++) {
-                float f = (float) Math.sin(((double) (i_107_ - i_43_) + 0.5)
-                        / (double) i_45_ * 0.5
-                        * 3.141592653589793);
-                aFloatArray6707[i_107_]
-                        *= (float) Math.sin(1.5707963267948966 * (double) f
-                        * (double) f);
+                float f = (float) Math.sin(((double) (i_107_ - i_43_) + 0.5) / (double) i_45_ * 0.5 * 3.141592653589793);
+                aFloatArray6707[i_107_] *= (float) Math.sin(1.5707963267948966 * (double) f * (double) f);
             }
             for (int i_108_ = i_46_; i_108_ < i_47_; i_108_++) {
-                float f = (float) Math.sin((((double) (i_108_ - i_46_) + 0.5)
-                        / (double) i_48_ * 0.5
-                        * 3.141592653589793)
-                        + 1.5707963267948966);
-                aFloatArray6707[i_108_]
-                        *= (float) Math.sin(1.5707963267948966 * (double) f
-                        * (double) f);
+                float f = (float) Math.sin((((double) (i_108_ - i_46_) + 0.5) / (double) i_48_ * 0.5 * 3.141592653589793) + 1.5707963267948966);
+                aFloatArray6707[i_108_] *= (float) Math.sin(1.5707963267948966 * (double) f * (double) f);
             }
         }
         float[] fs = null;
@@ -490,15 +448,13 @@ final class Class348_Sub10 extends Class348 {
         method2787(is);
     }
 
-    static final Class348_Sub10 method2795(Class45 class45, int i,
-                                           int i_115_) {
+    static final Class348_Sub10 method2795(Class45 class45, int i, int i_115_) {
         if (!method2792(class45)) {
             class45.method420(-10499, i, i_115_);
             return null;
         }
         byte[] is = class45.method410(-1860, i, i_115_);
-        if (is == null)
-            return null;
+        if (is == null) return null;
         return new Class348_Sub10(is);
     }
 }

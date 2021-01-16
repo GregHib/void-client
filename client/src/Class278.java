@@ -41,8 +41,7 @@ final class Class278 {
         synchronized (this.aClass60_3592) {
             this.aClass60_3592.method590(0);
         }
-        if (i != -25032)
-            method2079(-66, 101);
+        if (i != -25032) method2079(-66, 101);
     }
 
     final void method2074(int i) {
@@ -59,8 +58,7 @@ final class Class278 {
 
     static final boolean method2075(int i, int i_1_, int i_2_) {
         anInt3584++;
-        if (i_1_ > -125)
-            anInt3581 = -110;
+        if (i_1_ > -125) anInt3581 = -110;
         return (i & 0x100100) != 0;
     }
 
@@ -72,8 +70,7 @@ final class Class278 {
         synchronized (this.aClass60_3590) {
             this.aClass60_3590.method578(2, i);
         }
-        if (bool != true)
-            method2072((byte) 120, true);
+        if (bool != true) method2072((byte) 120, true);
         synchronized (this.aClass60_3592) {
             this.aClass60_3592.method578(2, i);
         }
@@ -88,8 +85,7 @@ final class Class278 {
     final void method2078(int i) {
         anInt3579++;
         synchronized (aClass60_3577) {
-            if (i != -6080)
-                this.aClass60_3590 = null;
+            if (i != -6080) this.aClass60_3590 = null;
             aClass60_3577.method590(i + 6080);
         }
         synchronized (this.aClass60_3590) {
@@ -106,24 +102,19 @@ final class Class278 {
         synchronized (aClass60_3577) {
             class79 = (Class79) aClass60_3577.method583(i, -104);
         }
-        if (class79 != null)
-            return class79;
+        if (class79 != null) return class79;
         byte[] is;
         synchronized (aClass45_3585) {
-            is = aClass45_3585.method410(i_6_ + -1859,
-                    Class115.method1060(i, (byte) 69),
-                    Class253.method1920(127, i));
+            is = aClass45_3585.method410(i_6_ + -1859, Class115.method1060(i, (byte) 69), Class253.method1920(127, i));
         }
         class79 = new Class79();
         class79.anInt1344 = i;
         class79.aClass278_1348 = this;
-        if (is != null)
-            class79.method798(111, new Class348_Sub49(is));
+        if (is != null) class79.method798(111, new Class348_Sub49(is));
         class79.method799(-117);
         synchronized (aClass60_3577) {
             aClass60_3577.method582(class79, i, (byte) -102);
-            if (i_6_ != -1)
-                aClass60_3577 = null;
+            if (i_6_ != -1) aClass60_3577 = null;
         }
         return class79;
     }
@@ -139,34 +130,21 @@ final class Class278 {
         synchronized (this.aClass60_3592) {
             this.aClass60_3592.method587(-107);
         }
-        if (i <= 122)
-            method2075(-125, -46, 9);
+        if (i <= 122) method2075(-125, -46, 9);
     }
 
-    Class278(Class230 class230, int i, boolean bool, Class45 class45,
-             Class45 class45_7_) {
+    Class278(Class230 class230, int i, boolean bool, Class45 class45, Class45 class45_7_) {
         do {
             try {
                 this.aBoolean3583 = bool;
                 aClass45_3585 = class45;
                 this.aClass45_3576 = class45_7_;
                 this.aClass230_3578 = class230;
-                if (aClass45_3585 == null)
-                    break;
+                if (aClass45_3585 == null) break;
                 int i_8_ = aClass45_3585.method414(-1) + -1;
                 aClass45_3585.method407(0, i_8_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("vda.<init>("
-                                + (class230 != null ? "{...}"
-                                : "null")
-                                + ',' + i + ',' + bool + ','
-                                + (class45 != null ? "{...}"
-                                : "null")
-                                + ','
-                                + (class45_7_ != null
-                                ? "{...}" : "null")
-                                + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_7_ != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

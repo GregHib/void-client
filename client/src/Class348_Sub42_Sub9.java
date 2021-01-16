@@ -10,14 +10,12 @@ abstract class Class348_Sub42_Sub9 extends Class348_Sub42 {
 
     static final boolean method3203(int i, byte i_0_, int i_1_) {
         anInt9557++;
-        if (i_0_ < 109)
-            return false;
+        if (i_0_ < 109) return false;
         return (i_1_ & 0x10000) != 0;
     }
 
     public static void method3204(int i) {
-        if (i > -64)
-            method3203(-45, (byte) 72, -104);
+        if (i > -64) method3203(-45, (byte) 72, -104);
         anIntArray9558 = null;
     }
 

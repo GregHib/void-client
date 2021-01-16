@@ -14,12 +14,10 @@ final class za_Sub2 extends za {
     NativeHeap aNativeHeap9782;
     static boolean aBoolean9783 = false;
 
-    static final Class193 method3442(int i, byte[] is, Class377 class377,
-                                     int i_0_) {
+    static final Class193 method3442(int i, byte[] is, Class377 class377, int i_0_) {
         try {
             anInt9779++;
-            if (is == null)
-                return null;
+            if (is == null) return null;
             int i_1_ = OpenGL.glGenProgramARB();
             OpenGL.glBindProgramARB(i, i_1_);
             OpenGL.glProgramRawARB(i, 34933, is);
@@ -29,41 +27,22 @@ final class za_Sub2 extends za {
                 return null;
             }
             OpenGL.glBindProgramARB(i, 0);
-            if (i_0_ != 4)
-                return null;
+            if (i_0_ != 4) return null;
             return new Class193(class377, i, i_1_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("cu.A(" + i + ','
-                            + (is != null ? "{...}" : "null")
-                            + ','
-                            + (class377 != null ? "{...}"
-                            : "null")
-                            + ',' + i_0_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cu.A(" + i + ',' + (is != null ? "{...}" : "null") + ',' + (class377 != null ? "{...}" : "null") + ',' + i_0_ + ')'));
         }
     }
 
-    static final void method3443
-            (boolean bool, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
+    static final void method3443(boolean bool, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
         anInt9778++;
-        if ((class318_sub1_sub3_sub3
-                .anIntArray10242) != null
-                || (class318_sub1_sub3_sub3
-                .anIntArray10296) != null) {
+        if ((class318_sub1_sub3_sub3.anIntArray10242) != null || (class318_sub1_sub3_sub3.anIntArray10296) != null) {
             boolean bool_2_ = bool;
-            for (int i = 0;
-                 i < (class318_sub1_sub3_sub3
-                         .anIntArray10242).length;
-                 i++) {
+            for (int i = 0; i < (class318_sub1_sub3_sub3.anIntArray10242).length; i++) {
                 int i_3_ = -1;
-                if ((class318_sub1_sub3_sub3
-                        .anIntArray10242)
-                        != null)
-                    i_3_ = (class318_sub1_sub3_sub3
-                            .anIntArray10242[i]);
+                if ((class318_sub1_sub3_sub3.anIntArray10242) != null) i_3_ = (class318_sub1_sub3_sub3.anIntArray10242[i]);
                 if (i_3_ == -1) {
-                    if (!class318_sub1_sub3_sub3.method2423(-80, i, -1))
-                        bool_2_ = false;
+                    if (!class318_sub1_sub3_sub3.method2423(-80, i, -1)) bool_2_ = false;
                 } else {
                     bool_2_ = false;
                     boolean bool_4_ = false;
@@ -73,77 +52,45 @@ final class za_Sub2 extends za {
                     if ((i_3_ & ~0x3fffffff) == -1073741824) {
                         int i_8_ = i_3_ & 0xfffffff;
                         int i_9_ = i_8_ >> -934245874;
-                        i_7_ = (class318_sub1_sub3_sub3
-                                .anInt6377) - 512 * (i_9_ - anInt9780) - 256;
+                        i_7_ = (class318_sub1_sub3_sub3.anInt6377) - 512 * (i_9_ - anInt9780) - 256;
                         int i_10_ = i_8_ & 0x3fff;
-                        i_6_ = (-256 - (i_10_ - Class90.anInt1517) * 512
-                                + (class318_sub1_sub3_sub3
-                                .anInt6388));
+                        i_6_ = (-256 - (i_10_ - Class90.anInt1517) * 512 + (class318_sub1_sub3_sub3.anInt6388));
                     } else if ((0x8000 & i_3_) == 0) {
-                        Class348_Sub22 class348_sub22
-                                = ((Class348_Sub22)
-                                Class282.aClass356_3654.method3480(i_3_,
-                                        -6008));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_3_, -6008));
                         if (class348_sub22 == null) {
                             class318_sub1_sub3_sub3.method2423(-96, i, -1);
                             continue;
                         }
-                        Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                = (class348_sub22
-                                .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                        i_6_ = ((class318_sub1_sub3_sub3
-                                .anInt6388)
-                                - class318_sub1_sub3_sub3_sub1.anInt6388);
-                        i_7_
-                                = (-(class318_sub1_sub3_sub3_sub1
-                                .anInt6377)
-                                + (class318_sub1_sub3_sub3
-                                .anInt6377));
+                        Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
+                        i_6_ = ((class318_sub1_sub3_sub3.anInt6388) - class318_sub1_sub3_sub3_sub1.anInt6388);
+                        i_7_ = (-(class318_sub1_sub3_sub3_sub1.anInt6377) + (class318_sub1_sub3_sub3.anInt6377));
                     } else {
                         int i_11_ = i_3_ & 0x7fff;
-                        Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
-                                = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058
-                                [i_11_]);
+                        Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_11_]);
                         if (class318_sub1_sub3_sub3_sub2 == null) {
                             class318_sub1_sub3_sub3.method2423(67, i, -1);
                             continue;
                         }
-                        i_6_ = ((class318_sub1_sub3_sub3
-                                .anInt6388)
-                                - class318_sub1_sub3_sub3_sub2.anInt6388);
-                        i_7_
-                                = (-(class318_sub1_sub3_sub3_sub2
-                                .anInt6377)
-                                + (class318_sub1_sub3_sub3
-                                .anInt6377));
+                        i_6_ = ((class318_sub1_sub3_sub3.anInt6388) - class318_sub1_sub3_sub3_sub2.anInt6388);
+                        i_7_ = (-(class318_sub1_sub3_sub3_sub2.anInt6377) + (class318_sub1_sub3_sub3.anInt6377));
                     }
-                    if (i_7_ != 0 || i_6_ != 0)
-                        class318_sub1_sub3_sub3.method2423
-                                (-100, i, 0x3fff & (int) (Math.atan2(i_7_,
-                                        i_6_)
-                                        * 2607.5945876176133));
+                    if (i_7_ != 0 || i_6_ != 0) class318_sub1_sub3_sub3.method2423(-100, i, 0x3fff & (int) (Math.atan2(i_7_, i_6_) * 2607.5945876176133));
                 }
             }
             if (bool_2_) {
-                class318_sub1_sub3_sub3
-                        .anIntArray10242
-                        = null;
-                class318_sub1_sub3_sub3
-                        .anIntArray10296
-                        = null;
+                class318_sub1_sub3_sub3.anIntArray10242 = null;
+                class318_sub1_sub3_sub3.anIntArray10296 = null;
             }
         }
     }
 
     public static void method3444(int i) {
-        if (i <= -85)
-            aClass138_9781 = null;
+        if (i <= -85) aClass138_9781 = null;
     }
 
     final void method3445(int i) {
         this.aNativeHeap9782.b();
-        if (i != -9503)
-            anInt9780 = -29;
+        if (i != -9503) anInt9780 = -29;
         anInt9777++;
     }
 

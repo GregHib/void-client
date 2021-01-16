@@ -9,8 +9,7 @@ final class Class348_Sub29 extends Class348 {
 
     public static void method3003(int i) {
         aClass45_6909 = null;
-        if (i != -4587)
-            method3003(-101);
+        if (i != -4587) method3003(-101);
     }
 
     public Class348_Sub29() {
@@ -27,18 +26,10 @@ final class Class348_Sub29 extends Class348 {
                 Class260.aClass45_3309 = class45;
                 anInt6910++;
                 Class101_Sub1.aD5684 = var_d;
-                if (bool == false)
-                    break;
+                if (bool == false) break;
                 method3004(null, false, null);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("oia.B("
-                                + (class45 != null ? "{...}"
-                                : "null")
-                                + ',' + bool + ','
-                                + (var_d != null ? "{...}"
-                                : "null")
-                                + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("oia.B(" + (class45 != null ? "{...}" : "null") + ',' + bool + ',' + (var_d != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

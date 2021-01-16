@@ -14,8 +14,7 @@ final class Class63 {
     public static void method601(byte i) {
         aClass114_1120 = null;
         aClass114_1123 = null;
-        if (i != -85)
-            method601((byte) -70);
+        if (i != -85) method601((byte) -70);
     }
 
     public Class63() {

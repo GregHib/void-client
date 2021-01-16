@@ -15,19 +15,10 @@ final class aa_Sub1 extends aa {
 
     aa_Sub1(ha_Sub2 var_ha_Sub2, int i, int i_1_, byte[] is) {
         try {
-            this.aClass258_Sub3_Sub1_5193
-                    = Class371.method3583(false, is, 6406, i_1_, var_ha_Sub2, -119,
-                    6406, i);
-            this.aClass258_Sub3_Sub1_5193.method1965(false, false,
-                    10243);
+            this.aClass258_Sub3_Sub1_5193 = Class371.method3583(false, is, 6406, i_1_, var_ha_Sub2, -119, 6406, i);
+            this.aClass258_Sub3_Sub1_5193.method1965(false, false, 10243);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("ag.<init>("
-                            + (var_ha_Sub2 != null ? "{...}"
-                            : "null")
-                            + ',' + i + ',' + i_1_ + ','
-                            + (is != null ? "{...}" : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ag.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 }

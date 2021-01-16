@@ -12,22 +12,15 @@ final class Class70 {
     public static void method725(int i) {
         anIntArray1207 = null;
         anIntArray1204 = null;
-        if (i != 16384)
-            anIntArray1207 = null;
+        if (i != 16384) anIntArray1207 = null;
     }
 
     static final void method726(int i) {
-        if (i <= 88)
-            anIntArray1204 = null;
+        if (i <= 88) anIntArray1204 = null;
         anInt1206++;
         if (Class348_Sub42_Sub15.aClass56_9660 != null) {
             Class51.aClass311_897 = new Class311();
-            Class51.aClass311_897.method2316
-                    (Class348_Sub42_Sub15.aClass56_9660,
-                            Class348_Sub42_Sub15.aClass56_9660
-                                    .aClass274_1012.method2063(Class348_Sub33.anInt6967, 544),
-                            Class348_Sub42_Sub15.aClass56_9660.anInt1025,
-                            Class283.aLong3660, false);
+            Class51.aClass311_897.method2316(Class348_Sub42_Sub15.aClass56_9660, Class348_Sub42_Sub15.aClass56_9660.aClass274_1012.method2063(Class348_Sub33.anInt6967, 544), Class348_Sub42_Sub15.aClass56_9660.anInt1025, Class283.aLong3660, false);
             Class348_Sub32.aThread6946 = new Thread(Class51.aClass311_897, "");
             Class348_Sub32.aThread6946.start();
         }
@@ -35,13 +28,11 @@ final class Class70 {
 
     static final void method727(byte i, int i_0_, int i_1_, int i_2_) {
         anInt1205++;
-        Class348_Sub42_Sub15 class348_sub42_sub15
-                = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, 9);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, 9);
         class348_sub42_sub15.method3246(i + -25427);
         class348_sub42_sub15.anInt9652 = i_1_;
         class348_sub42_sub15.anInt9651 = i_0_;
-        if (i != -63)
-            anIntArray1207 = null;
+        if (i != -63) anIntArray1207 = null;
     }
 
     public final String toString() {

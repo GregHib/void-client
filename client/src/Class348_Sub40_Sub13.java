@@ -10,8 +10,7 @@ final class Class348_Sub40_Sub13 extends Class348_Sub40 {
 
     public static void method3080(byte i) {
         aClass262_9201 = null;
-        if (i < 39)
-            method3080((byte) 100);
+        if (i < 39) method3080((byte) 100);
     }
 
     public Class348_Sub40_Sub13() {
@@ -20,11 +19,8 @@ final class Class348_Sub40_Sub13 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_0_) {
         anInt9202++;
-        int[] is
-                = this.aClass191_7032.method1433(i_0_ + -255,
-                i);
-        if (i_0_ != 255)
-            method3042(19, -84);
+        int[] is = this.aClass191_7032.method1433(i_0_ + -255, i);
+        if (i_0_ != 255) method3042(19, -84);
         if (this.aClass191_7032.aBoolean2570) {
             int[][] is_1_ = this.method3039((byte) -119, i, 0);
             int[] is_2_ = is_1_[0];

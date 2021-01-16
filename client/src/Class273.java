@@ -12,22 +12,15 @@ final class Class273 implements Interface21 {
     public static void method2055(int i) {
         anIntArray5165 = null;
         aClass173_5169 = null;
-        if (i != 1)
-            anIntArray5165 = null;
+        if (i != 1) anIntArray5165 = null;
     }
 
     static final boolean method2056(int i, int i_0_, int i_1_) {
-        if (i_0_ < 80)
-            method2055(17);
+        if (i_0_ < 80) method2055(17);
         anInt5168++;
-        if (!Class146.method1193(i_1_, i, true))
-            return false;
-        if (Class122.method1087(12644, i_1_, i) | (i & 0xb000) != 0
-                | Class278.method2075(i, -128, i_1_))
-            return true;
-        return ((Class156.method1241(i_1_, i, -128)
-                | Class239_Sub1.method1722(i, i_1_, (byte) 92))
-                & (0x37 & i_1_) == 0);
+        if (!Class146.method1193(i_1_, i, true)) return false;
+        if (Class122.method1087(12644, i_1_, i) | (i & 0xb000) != 0 | Class278.method2075(i, -128, i_1_)) return true;
+        return ((Class156.method1241(i_1_, i, -128) | Class239_Sub1.method1722(i, i_1_, (byte) 92)) & (0x37 & i_1_) == 0);
     }
 
     static int method2057(int i, int i_2_) {

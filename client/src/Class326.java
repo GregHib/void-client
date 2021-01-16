@@ -17,17 +17,14 @@ final class Class326 {
         synchronized (aClass60_4087) {
             class254 = (Class254) aClass60_4087.method583(i, -67);
         }
-        if (class254 != null)
-            return class254;
-        if (i_0_ != 28364)
-            anInt4086 = 117;
+        if (class254 != null) return class254;
+        if (i_0_ != 28364) anInt4086 = 117;
         byte[] is;
         synchronized (aClass45_4085) {
             is = aClass45_4085.method410(-1860, 11, i);
         }
         class254 = new Class254();
-        if (is != null)
-            class254.method1924(new Class348_Sub49(is), (byte) -127);
+        if (is != null) class254.method1924(new Class348_Sub49(is), (byte) -127);
         synchronized (aClass60_4087) {
             aClass60_4087.method582(class254, i, (byte) -114);
         }
@@ -46,15 +43,13 @@ final class Class326 {
         anInt4089++;
         synchronized (aClass60_4087) {
             aClass60_4087.method587(-91);
-            if (i != 0)
-                aClass60_4087 = null;
+            if (i != 0) aClass60_4087 = null;
         }
     }
 
     final void method2603(int i, int i_2_) {
         synchronized (aClass60_4087) {
-            if (i_2_ != 11)
-                return;
+            if (i_2_ != 11) return;
             aClass60_4087.method578(2, i);
         }
         anInt4083++;
@@ -64,18 +59,10 @@ final class Class326 {
         do {
             try {
                 aClass45_4085 = class45;
-                if (aClass45_4085 == null)
-                    break;
+                if (aClass45_4085 == null) break;
                 aClass45_4085.method407(0, 11);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("dc.<init>("
-                                + (class230 != null ? "{...}"
-                                : "null")
-                                + ',' + i + ','
-                                + (class45 != null ? "{...}"
-                                : "null")
-                                + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

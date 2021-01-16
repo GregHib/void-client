@@ -50,18 +50,15 @@ public final class Class1 implements Interface20 {
 
     public final void method76(int i, int[] is) {
         int i_3_ = is.length;
-        if (i_3_ != 256 * anInt5157)
-            throw new IllegalArgumentException();
+        if (i_3_ != 256 * anInt5157) throw new IllegalArgumentException();
         int i_4_ = anIntArray5160[i] * anInt5161;
         for (int i_5_ = 0; i_5_ < i_3_; i_5_++) {
             int i_6_ = is[i_5_];
-            if ((i_6_ + 8388608 & ~0xffffff) != 0)
-                i_6_ = 0x7fffff ^ i_6_ >> 31;
+            if ((i_6_ + 8388608 & ~0xffffff) != 0) i_6_ = 0x7fffff ^ i_6_ >> 31;
             aByteArrayArray5159[i][i_4_ + i_5_ * 2] = (byte) (i_6_ >> 8);
             aByteArrayArray5159[i][i_4_ + i_5_ * 2 + 1] = (byte) (i_6_ >> 16);
         }
-        aDirectSoundBufferArray5153[i].writeBuffer(i_4_, i_3_ * 2,
-                aByteArrayArray5159[i], 0);
+        aDirectSoundBufferArray5153[i].writeBuffer(i_4_, i_3_ * 2, aByteArrayArray5159[i], 0);
         anIntArray5160[i] = anIntArray5160[i] + i_3_ / anInt5157 & 0xffff;
         if (!aBooleanArray5156[i]) {
             aDirectSoundBufferArray5153[i].play(1);
@@ -70,31 +67,24 @@ public final class Class1 implements Interface20 {
     }
 
     public final int method75(byte i, int i_7_) {
-        if (i >= -79)
-            return -15;
-        if (!aBooleanArray5156[i_7_])
-            return 0;
-        aDirectSoundBufferArray5153[i_7_]
-                .getCurrentPosition(aDSCursorsArray5155[i_7_]);
+        if (i >= -79) return -15;
+        if (!aBooleanArray5156[i_7_]) return 0;
+        aDirectSoundBufferArray5153[i_7_].getCurrentPosition(aDSCursorsArray5155[i_7_]);
         int i_8_ = aDSCursorsArray5155[i_7_].write / anInt5161;
         int i_9_ = anIntArray5160[i_7_] + -i_8_ & 0xffff;
         if (i_9_ > anIntArray5164[i_7_]) {
-            for (int i_10_ = 0xffff & i_8_ + -anIntArray5160[i_7_]; i_10_ > 0;
-                 i_10_ -= 256)
+            for (int i_10_ = 0xffff & i_8_ + -anIntArray5160[i_7_]; i_10_ > 0; i_10_ -= 256)
                 method76(i_7_, anIntArray5154);
             i_9_ = 0xffff & -i_8_ + anIntArray5160[i_7_];
         }
         return i_9_;
     }
 
-    public final void method78(int i, boolean bool, Component component,
-                               int i_11_) throws Exception {
+    public final void method78(int i, boolean bool, Component component, int i_11_) throws Exception {
         if (anInt5158 == 0) {
-            if (i < 8000 || i > 48000)
-                throw new IllegalArgumentException();
+            if (i < 8000 || i > 48000) throw new IllegalArgumentException();
             anInt5157 = !bool ? 1 : 2;
-            if (i_11_ != 27929)
-                aDirectSound5162 = null;
+            if (i_11_ != 27929) aDirectSound5162 = null;
             anInt5161 = bool ? 4 : 2;
             anIntArray5154 = new int[anInt5157 * 256];
             aDirectSound5162.initialize(null);
@@ -112,20 +102,15 @@ public final class Class1 implements Interface20 {
     }
 
     public final void method79(int i, int i_13_, byte i_14_) throws Exception {
-        if (anInt5158 == 0 || aDirectSoundBufferArray5153[i_13_] != null)
-            throw new IllegalStateException();
+        if (anInt5158 == 0 || aDirectSoundBufferArray5153[i_13_] != null) throw new IllegalStateException();
         int i_15_ = anInt5161 * 65536;
-        if (aByteArrayArray5159[i_13_] == null
-                || i_15_ != aByteArrayArray5159[i_13_].length) {
+        if (aByteArrayArray5159[i_13_] == null || i_15_ != aByteArrayArray5159[i_13_].length) {
             aByteArrayArray5159[i_13_] = new byte[i_15_];
             aDSBufferDescArray5152[i_13_].bufferBytes = i_15_;
         }
-        aDirectSoundBufferArray5153[i_13_]
-                = aDirectSound5162.createSoundBuffer(aDSBufferDescArray5152[i_13_],
-                aWaveFormatEx5163);
+        aDirectSoundBufferArray5153[i_13_] = aDirectSound5162.createSoundBuffer(aDSBufferDescArray5152[i_13_], aWaveFormatEx5163);
         aBooleanArray5156[i_13_] = false;
-        if (i_14_ < 106)
-            method74(-6, (byte) -123);
+        if (i_14_ < 106) method74(-6, (byte) -123);
         anIntArray5160[i_13_] = 0;
         anIntArray5164[i_13_] = i;
     }

@@ -38,11 +38,7 @@ final class Class109 {
     private final int anInt1697;
     private int[] anIntArray1698;
 
-    private final void method1016
-            (int[] is, int[] is_0_, int i, int i_1_, int i_2_, float f, float f_3_,
-             float f_4_, float f_5_, float f_6_, float f_7_, float f_8_,
-             float f_9_, float f_10_, float f_11_, float f_12_, float f_13_,
-             float f_14_, float f_15_, float f_16_, float f_17_) {
+    private final void method1016(int[] is, int[] is_0_, int i, int i_1_, int i_2_, float f, float f_3_, float f_4_, float f_5_, float f_6_, float f_7_, float f_8_, float f_9_, float f_10_, float f_11_, float f_12_, float f_13_, float f_14_, float f_15_, float f_16_, float f_17_) {
         int i_18_ = i_2_ - i_1_;
         float f_19_ = 1.0F / (float) i_18_;
         float f_20_ = (f_3_ - f) * f_19_;
@@ -54,8 +50,7 @@ final class Class109 {
         float f_26_ = (f_15_ - f_14_) * f_19_;
         float f_27_ = (f_17_ - f_16_) * f_19_;
         if (this.aBoolean1671) {
-            if (i_2_ > this.anInt1679)
-                i_2_ = this.anInt1679;
+            if (i_2_ > this.anInt1679) i_2_ = this.anInt1679;
             if (i_1_ < 0) {
                 f -= f_20_ * (float) i_1_;
                 f_4_ -= f_21_ * (float) i_1_;
@@ -75,84 +70,38 @@ final class Class109 {
                 float f_28_ = 1.0F / f;
                 if (f_28_ < aFloatArray1677[i]) {
                     int i_29_ = (int) (f_4_ * f_28_ * (float) anInt1693);
-                    if (aBoolean1694)
-                        i_29_ &= anInt1690;
-                    else if (i_29_ < 0)
-                        i_29_ = 0;
-                    else if (i_29_ > anInt1690)
-                        i_29_ = anInt1690;
+                    if (aBoolean1694) i_29_ &= anInt1690;
+                    else if (i_29_ < 0) i_29_ = 0;
+                    else if (i_29_ > anInt1690) i_29_ = anInt1690;
                     int i_30_ = (int) (f_6_ * f_28_ * (float) anInt1693);
-                    if (aBoolean1694)
-                        i_30_ &= anInt1690;
-                    else if (i_30_ < 0)
-                        i_30_ = 0;
-                    else if (i_30_ > anInt1690)
-                        i_30_ = anInt1690;
+                    if (aBoolean1694) i_30_ &= anInt1690;
+                    else if (i_30_ < 0) i_30_ = 0;
+                    else if (i_30_ > anInt1690) i_30_ = anInt1690;
                     int i_31_ = anIntArray1698[i_30_ * anInt1693 + i_29_];
                     int i_32_ = 255;
-                    if (anInt1683 == 2)
-                        i_32_ = i_31_ >> 24 & 0xff;
-                    else if (anInt1683 == 1)
-                        i_32_ = i_31_ == 0 ? 0 : 255;
-                    else
-                        i_32_ = (int) f_10_;
+                    if (anInt1683 == 2) i_32_ = i_31_ >> 24 & 0xff;
+                    else if (anInt1683 == 1) i_32_ = i_31_ == 0 ? 0 : 255;
+                    else i_32_ = (int) f_10_;
                     if (i_32_ != 0) {
                         if (i_32_ == 255) {
-                            int i_38_
-                                    = (~0xffffff
-                                    | ((int) (f_12_ * (float) (i_31_ >> 16
-                                    & 0xff)) << 8
-                                    & 0xff0000)
-                                    | (int) (f_14_ * (float) (i_31_ >> 8
-                                    & 0xff)) & 0xff00
-                                    | ((int) (f_16_ * (float) (i_31_ & 0xff))
-                                    >> 8));
+                            int i_38_ = (~0xffffff | ((int) (f_12_ * (float) (i_31_ >> 16 & 0xff)) << 8 & 0xff0000) | (int) (f_14_ * (float) (i_31_ >> 8 & 0xff)) & 0xff00 | ((int) (f_16_ * (float) (i_31_ & 0xff)) >> 8));
                             if (f_8_ != 0.0F) {
                                 int i_39_ = (int) (255.0F - f_8_);
-                                int i_40_
-                                        = ((((anInt1696 & 0xff00ff) * (int) f_8_
-                                        & ~0xff00ff)
-                                        | ((anInt1696 & 0xff00) * (int) f_8_
-                                        & 0xff0000))
-                                        >>> 8);
-                                i_38_
-                                        = (((i_38_ & 0xff00ff) * i_39_ & ~0xff00ff
-                                        | (i_38_ & 0xff00) * i_39_ & 0xff0000)
-                                        >>> 8) + i_40_;
+                                int i_40_ = ((((anInt1696 & 0xff00ff) * (int) f_8_ & ~0xff00ff) | ((anInt1696 & 0xff00) * (int) f_8_ & 0xff0000)) >>> 8);
+                                i_38_ = (((i_38_ & 0xff00ff) * i_39_ & ~0xff00ff | (i_38_ & 0xff00) * i_39_ & 0xff0000) >>> 8) + i_40_;
                             }
                             is[i] = i_38_;
                             aFloatArray1677[i] = f_28_;
                         } else {
-                            int i_33_
-                                    = (~0xffffff
-                                    | ((int) (f_12_ * (float) (i_31_ >> 16
-                                    & 0xff)) << 8
-                                    & 0xff0000)
-                                    | (int) (f_14_ * (float) (i_31_ >> 8
-                                    & 0xff)) & 0xff00
-                                    | ((int) (f_16_ * (float) (i_31_ & 0xff))
-                                    >> 8));
+                            int i_33_ = (~0xffffff | ((int) (f_12_ * (float) (i_31_ >> 16 & 0xff)) << 8 & 0xff0000) | (int) (f_14_ * (float) (i_31_ >> 8 & 0xff)) & 0xff00 | ((int) (f_16_ * (float) (i_31_ & 0xff)) >> 8));
                             if (f_8_ != 0.0F) {
                                 int i_34_ = (int) (255.0F - f_8_);
-                                int i_35_
-                                        = ((((anInt1696 & 0xff00ff) * (int) f_8_
-                                        & ~0xff00ff)
-                                        | ((anInt1696 & 0xff00) * (int) f_8_
-                                        & 0xff0000))
-                                        >>> 8);
-                                i_33_
-                                        = (((i_33_ & 0xff00ff) * i_34_ & ~0xff00ff
-                                        | (i_33_ & 0xff00) * i_34_ & 0xff0000)
-                                        >>> 8) + i_35_;
+                                int i_35_ = ((((anInt1696 & 0xff00ff) * (int) f_8_ & ~0xff00ff) | ((anInt1696 & 0xff00) * (int) f_8_ & 0xff0000)) >>> 8);
+                                i_33_ = (((i_33_ & 0xff00ff) * i_34_ & ~0xff00ff | (i_33_ & 0xff00) * i_34_ & 0xff0000) >>> 8) + i_35_;
                             }
                             int i_36_ = is[i];
                             int i_37_ = 255 - i_32_;
-                            i_33_ = ((((i_36_ & 0xff00ff) * i_37_
-                                    + (i_33_ & 0xff00ff) * i_32_)
-                                    & ~0xff00ff)
-                                    + (((i_36_ & 0xff00) * i_37_
-                                    + (i_33_ & 0xff00) * i_32_)
-                                    & 0xff0000)) >> 8;
+                            i_33_ = ((((i_36_ & 0xff00ff) * i_37_ + (i_33_ & 0xff00ff) * i_32_) & ~0xff00ff) + (((i_36_ & 0xff00) * i_37_ + (i_33_ & 0xff00) * i_32_) & 0xff0000)) >> 8;
                             is[i] = i_33_;
                             aFloatArray1677[i] = f_28_;
                         }
@@ -175,16 +124,11 @@ final class Class109 {
         return this.anIntArray1676[0] / anInt1678;
     }
 
-    final void method1018(float f, float f_41_, float f_42_, float f_43_,
-                          float f_44_, float f_45_, float f_46_, float f_47_,
-                          float f_48_, int i) {
+    final void method1018(float f, float f_41_, float f_42_, float f_43_, float f_44_, float f_45_, float f_46_, float f_47_, float f_48_, int i) {
         if (aBoolean1675) {
-            aHa_Sub1_1666.method3645((int) f, (int) f_43_, (int) f_44_, -8003,
-                    i, (int) f_41_);
-            aHa_Sub1_1666.method3645((int) f_41_, (int) f_44_, (int) f_45_,
-                    -8003, i, (int) f_42_);
-            aHa_Sub1_1666.method3645((int) f_42_, (int) f_45_, (int) f_43_,
-                    -8003, i, (int) f);
+            aHa_Sub1_1666.method3645((int) f, (int) f_43_, (int) f_44_, -8003, i, (int) f_41_);
+            aHa_Sub1_1666.method3645((int) f_41_, (int) f_44_, (int) f_45_, -8003, i, (int) f_42_);
+            aHa_Sub1_1666.method3645((int) f_42_, (int) f_45_, (int) f_43_, -8003, i, (int) f);
         } else {
             float f_49_ = f_44_ - f_43_;
             float f_50_ = f_41_ - f;
@@ -193,24 +137,19 @@ final class Class109 {
             float f_53_ = f_47_ - f_46_;
             float f_54_ = f_48_ - f_46_;
             float f_55_ = 0.0F;
-            if (f_41_ != f)
-                f_55_ = (f_44_ - f_43_) / (f_41_ - f);
+            if (f_41_ != f) f_55_ = (f_44_ - f_43_) / (f_41_ - f);
             float f_56_ = 0.0F;
-            if (f_42_ != f_41_)
-                f_56_ = (f_45_ - f_44_) / (f_42_ - f_41_);
+            if (f_42_ != f_41_) f_56_ = (f_45_ - f_44_) / (f_42_ - f_41_);
             float f_57_ = 0.0F;
-            if (f_42_ != f)
-                f_57_ = (f_43_ - f_45_) / (f - f_42_);
+            if (f_42_ != f) f_57_ = (f_43_ - f_45_) / (f - f_42_);
             float f_58_ = f_49_ * f_52_ - f_51_ * f_50_;
             if (f_58_ != 0.0F) {
                 float f_59_ = (f_53_ * f_52_ - f_54_ * f_50_) / f_58_;
                 float f_60_ = (f_54_ * f_49_ - f_53_ * f_51_) / f_58_;
                 if (f <= f_41_ && f <= f_42_) {
                     if (!(f >= (float) this.anInt1672)) {
-                        if (f_41_ > (float) this.anInt1672)
-                            f_41_ = (float) this.anInt1672;
-                        if (f_42_ > (float) this.anInt1672)
-                            f_42_ = (float) this.anInt1672;
+                        if (f_41_ > (float) this.anInt1672) f_41_ = (float) this.anInt1672;
+                        if (f_42_ > (float) this.anInt1672) f_42_ = (float) this.anInt1672;
                         f_46_ = f_46_ - f_59_ * f_43_ + f_59_;
                         if (f_41_ < f_42_) {
                             f_45_ = f_43_;
@@ -224,25 +163,19 @@ final class Class109 {
                                 f_44_ -= f_56_ * f_41_;
                                 f_41_ = 0.0F;
                             }
-                            if (f != f_41_ && f_57_ < f_55_
-                                    || f == f_41_ && f_57_ > f_56_) {
+                            if (f != f_41_ && f_57_ < f_55_ || f == f_41_ && f_57_ > f_56_) {
                                 f_42_ -= f_41_;
                                 f_41_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_45_,
-                                            (int) f_43_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_45_, (int) f_43_, f_46_, f_59_);
                                     f_45_ += f_57_;
                                     f_43_ += f_55_;
                                     f_46_ += f_60_;
                                     f += (float) anInt1678;
                                 }
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_45_,
-                                            (int) f_44_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_45_, (int) f_44_, f_46_, f_59_);
                                     f_45_ += f_57_;
                                     f_44_ += f_56_;
                                     f_46_ += f_60_;
@@ -251,21 +184,16 @@ final class Class109 {
                             } else {
                                 f_42_ -= f_41_;
                                 f_41_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_43_,
-                                            (int) f_45_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_43_, (int) f_45_, f_46_, f_59_);
                                     f_45_ += f_57_;
                                     f_43_ += f_55_;
                                     f_46_ += f_60_;
                                     f += (float) anInt1678;
                                 }
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_44_,
-                                            (int) f_45_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_44_, (int) f_45_, f_46_, f_59_);
                                     f_45_ += f_57_;
                                     f_44_ += f_56_;
                                     f_46_ += f_60_;
@@ -284,25 +212,19 @@ final class Class109 {
                                 f_45_ -= f_56_ * f_42_;
                                 f_42_ = 0.0F;
                             }
-                            if (f != f_42_ && f_57_ < f_55_
-                                    || f == f_42_ && f_56_ > f_55_) {
+                            if (f != f_42_ && f_57_ < f_55_ || f == f_42_ && f_56_ > f_55_) {
                                 f_41_ -= f_42_;
                                 f_42_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_44_,
-                                            (int) f_43_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_44_, (int) f_43_, f_46_, f_59_);
                                     f_44_ += f_57_;
                                     f_43_ += f_55_;
                                     f_46_ += f_60_;
                                     f += (float) anInt1678;
                                 }
                                 while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_45_,
-                                            (int) f_43_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_45_, (int) f_43_, f_46_, f_59_);
                                     f_45_ += f_56_;
                                     f_43_ += f_55_;
                                     f_46_ += f_60_;
@@ -311,21 +233,16 @@ final class Class109 {
                             } else {
                                 f_41_ -= f_42_;
                                 f_42_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_43_,
-                                            (int) f_44_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_43_, (int) f_44_, f_46_, f_59_);
                                     f_44_ += f_57_;
                                     f_43_ += f_55_;
                                     f_46_ += f_60_;
                                     f += (float) anInt1678;
                                 }
                                 while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f, i, 0, (int) f_43_,
-                                            (int) f_45_, f_46_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_43_, (int) f_45_, f_46_, f_59_);
                                     f_45_ += f_56_;
                                     f_43_ += f_55_;
                                     f_46_ += f_60_;
@@ -336,10 +253,8 @@ final class Class109 {
                     }
                 } else if (f_41_ <= f_42_) {
                     if (!(f_41_ >= (float) this.anInt1672)) {
-                        if (f_42_ > (float) this.anInt1672)
-                            f_42_ = (float) this.anInt1672;
-                        if (f > (float) this.anInt1672)
-                            f = (float) this.anInt1672;
+                        if (f_42_ > (float) this.anInt1672) f_42_ = (float) this.anInt1672;
+                        if (f > (float) this.anInt1672) f = (float) this.anInt1672;
                         f_47_ = f_47_ - f_59_ * f_44_ + f_59_;
                         if (f_42_ < f) {
                             f_43_ = f_44_;
@@ -353,25 +268,19 @@ final class Class109 {
                                 f_45_ -= f_57_ * f_42_;
                                 f_42_ = 0.0F;
                             }
-                            if (f_41_ != f_42_ && f_55_ < f_56_
-                                    || f_41_ == f_42_ && f_55_ > f_57_) {
+                            if (f_41_ != f_42_ && f_55_ < f_56_ || f_41_ == f_42_ && f_55_ > f_57_) {
                                 f -= f_42_;
                                 f_42_ -= f_41_;
-                                f_41_ = (float) (this
-                                        .anIntArray1676[(int) f_41_]);
+                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_43_,
-                                            (int) f_44_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_43_, (int) f_44_, f_47_, f_59_);
                                     f_43_ += f_55_;
                                     f_44_ += f_56_;
                                     f_47_ += f_60_;
                                     f_41_ += (float) anInt1678;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_43_,
-                                            (int) f_45_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_43_, (int) f_45_, f_47_, f_59_);
                                     f_43_ += f_55_;
                                     f_45_ += f_57_;
                                     f_47_ += f_60_;
@@ -380,21 +289,16 @@ final class Class109 {
                             } else {
                                 f -= f_42_;
                                 f_42_ -= f_41_;
-                                f_41_ = (float) (this
-                                        .anIntArray1676[(int) f_41_]);
+                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_44_,
-                                            (int) f_43_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_44_, (int) f_43_, f_47_, f_59_);
                                     f_43_ += f_55_;
                                     f_44_ += f_56_;
                                     f_47_ += f_60_;
                                     f_41_ += (float) anInt1678;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_45_,
-                                            (int) f_43_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_45_, (int) f_43_, f_47_, f_59_);
                                     f_43_ += f_55_;
                                     f_45_ += f_57_;
                                     f_47_ += f_60_;
@@ -416,21 +320,16 @@ final class Class109 {
                             if (f_55_ < f_56_) {
                                 f_42_ -= f;
                                 f -= f_41_;
-                                f_41_ = (float) (this
-                                        .anIntArray1676[(int) f_41_]);
+                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
                                 while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_45_,
-                                            (int) f_44_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_45_, (int) f_44_, f_47_, f_59_);
                                     f_45_ += f_55_;
                                     f_44_ += f_56_;
                                     f_47_ += f_60_;
                                     f_41_ += (float) anInt1678;
                                 }
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_43_,
-                                            (int) f_44_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_43_, (int) f_44_, f_47_, f_59_);
                                     f_43_ += f_57_;
                                     f_44_ += f_56_;
                                     f_47_ += f_60_;
@@ -439,21 +338,16 @@ final class Class109 {
                             } else {
                                 f_42_ -= f;
                                 f -= f_41_;
-                                f_41_ = (float) (this
-                                        .anIntArray1676[(int) f_41_]);
+                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
                                 while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_44_,
-                                            (int) f_45_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_44_, (int) f_45_, f_47_, f_59_);
                                     f_45_ += f_55_;
                                     f_44_ += f_56_;
                                     f_47_ += f_60_;
                                     f_41_ += (float) anInt1678;
                                 }
                                 while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677,
-                                            (int) f_41_, i, 0, (int) f_44_,
-                                            (int) f_43_, f_47_, f_59_);
+                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_44_, (int) f_43_, f_47_, f_59_);
                                     f_43_ += f_57_;
                                     f_44_ += f_56_;
                                     f_47_ += f_60_;
@@ -463,10 +357,8 @@ final class Class109 {
                         }
                     }
                 } else if (!(f_42_ >= (float) this.anInt1672)) {
-                    if (f > (float) this.anInt1672)
-                        f = (float) this.anInt1672;
-                    if (f_41_ > (float) this.anInt1672)
-                        f_41_ = (float) this.anInt1672;
+                    if (f > (float) this.anInt1672) f = (float) this.anInt1672;
+                    if (f_41_ > (float) this.anInt1672) f_41_ = (float) this.anInt1672;
                     f_48_ = f_48_ - f_59_ * f_45_ + f_59_;
                     if (f < f_41_) {
                         f_44_ = f_45_;
@@ -483,21 +375,16 @@ final class Class109 {
                         if (f_56_ < f_57_) {
                             f_41_ -= f;
                             f -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676
-                                    [(int) f_42_]);
+                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
                             while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_44_,
-                                        (int) f_45_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_44_, (int) f_45_, f_48_, f_59_);
                                 f_44_ += f_56_;
                                 f_45_ += f_57_;
                                 f_48_ += f_60_;
                                 f_42_ += (float) anInt1678;
                             }
                             while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_44_,
-                                        (int) f_43_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_44_, (int) f_43_, f_48_, f_59_);
                                 f_44_ += f_56_;
                                 f_43_ += f_55_;
                                 f_48_ += f_60_;
@@ -506,21 +393,16 @@ final class Class109 {
                         } else {
                             f_41_ -= f;
                             f -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676
-                                    [(int) f_42_]);
+                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
                             while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_45_,
-                                        (int) f_44_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_45_, (int) f_44_, f_48_, f_59_);
                                 f_44_ += f_56_;
                                 f_45_ += f_57_;
                                 f_48_ += f_60_;
                                 f_42_ += (float) anInt1678;
                             }
                             while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_43_,
-                                        (int) f_44_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_43_, (int) f_44_, f_48_, f_59_);
                                 f_44_ += f_56_;
                                 f_43_ += f_55_;
                                 f_48_ += f_60_;
@@ -542,21 +424,16 @@ final class Class109 {
                         if (f_56_ < f_57_) {
                             f -= f_41_;
                             f_41_ -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676
-                                    [(int) f_42_]);
+                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
                             while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_43_,
-                                        (int) f_45_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_43_, (int) f_45_, f_48_, f_59_);
                                 f_43_ += f_56_;
                                 f_45_ += f_57_;
                                 f_48_ += f_60_;
                                 f_42_ += (float) anInt1678;
                             }
                             while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_44_,
-                                        (int) f_45_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_44_, (int) f_45_, f_48_, f_59_);
                                 f_44_ += f_55_;
                                 f_45_ += f_57_;
                                 f_48_ += f_60_;
@@ -565,21 +442,16 @@ final class Class109 {
                         } else {
                             f -= f_41_;
                             f_41_ -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676
-                                    [(int) f_42_]);
+                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
                             while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_45_,
-                                        (int) f_43_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_45_, (int) f_43_, f_48_, f_59_);
                                 f_43_ += f_56_;
                                 f_45_ += f_57_;
                                 f_48_ += f_60_;
                                 f_42_ += (float) anInt1678;
                             }
                             while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677,
-                                        (int) f_42_, i, 0, (int) f_45_,
-                                        (int) f_44_, f_48_, f_59_);
+                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_45_, (int) f_44_, f_48_, f_59_);
                                 f_44_ += f_55_;
                                 f_45_ += f_57_;
                                 f_48_ += f_60_;
@@ -592,14 +464,10 @@ final class Class109 {
         }
     }
 
-    private final void method1019(int[] is, float[] fs, int i, int i_61_,
-                                  int i_62_, int i_63_, int i_64_, float f,
-                                  float f_65_, float f_66_, float f_67_) {
+    private final void method1019(int[] is, float[] fs, int i, int i_61_, int i_62_, int i_63_, int i_64_, float f, float f_65_, float f_66_, float f_67_) {
         if (this.aBoolean1671) {
-            if (i_64_ > this.anInt1679)
-                i_64_ = this.anInt1679;
-            if (i_63_ < 0)
-                i_63_ = 0;
+            if (i_64_ > this.anInt1679) i_64_ = this.anInt1679;
+            if (i_63_ < 0) i_63_ = 0;
         }
         if (i_63_ < i_64_) {
             i += i_63_ - 1;
@@ -655,75 +523,41 @@ final class Class109 {
                                 do {
                                     i_61_ = Class126.anIntArray4983[(int) f];
                                     f += f_65_;
-                                    i_61_ = (((i_61_ & 0xff00ff) * i_69_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_61_ & 0xff00) * i_69_ >> 8
-                                            & 0xff00));
+                                    i_61_ = (((i_61_ & 0xff00ff) * i_69_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_69_ >> 8 & 0xff00));
                                     if (f_66_ < fs[++i]) {
                                         int i_70_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_70_ & 0xff00ff) * i_68_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_70_ & 0xff00) * i_68_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_70_ & 0xff00ff) * i_68_ >> 8) & 0xff00ff) + ((i_70_ & 0xff00) * i_68_ >> 8 & 0xff00));
                                         fs[i] = f_66_;
                                     }
                                     f_66_ += f_67_;
                                     if (f_66_ < fs[++i]) {
                                         int i_71_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_71_ & 0xff00ff) * i_68_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_71_ & 0xff00) * i_68_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_71_ & 0xff00ff) * i_68_ >> 8) & 0xff00ff) + ((i_71_ & 0xff00) * i_68_ >> 8 & 0xff00));
                                         fs[i] = f_66_;
                                     }
                                     f_66_ += f_67_;
                                     if (f_66_ < fs[++i]) {
                                         int i_72_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_72_ & 0xff00ff) * i_68_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_72_ & 0xff00) * i_68_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_72_ & 0xff00ff) * i_68_ >> 8) & 0xff00ff) + ((i_72_ & 0xff00) * i_68_ >> 8 & 0xff00));
                                         fs[i] = f_66_;
                                     }
                                     f_66_ += f_67_;
                                     if (f_66_ < fs[++i]) {
                                         int i_73_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_73_ & 0xff00ff) * i_68_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_73_ & 0xff00) * i_68_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_73_ & 0xff00ff) * i_68_ >> 8) & 0xff00ff) + ((i_73_ & 0xff00) * i_68_ >> 8 & 0xff00));
                                         fs[i] = f_66_;
                                     }
                                     f_66_ += f_67_;
                                 } while (--i_62_ > 0);
                             }
                             i_62_ = i_64_ - i_63_ & 0x3;
-                            if (i_62_ <= 0)
-                                break;
+                            if (i_62_ <= 0) break;
                             i_61_ = Class126.anIntArray4983[(int) f];
-                            i_61_
-                                    = (((i_61_ & 0xff00ff) * i_69_ >> 8 & 0xff00ff)
-                                    + ((i_61_ & 0xff00) * i_69_ >> 8 & 0xff00));
+                            i_61_ = (((i_61_ & 0xff00ff) * i_69_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_69_ >> 8 & 0xff00));
                             do {
                                 if (f_66_ < fs[++i]) {
                                     int i_74_ = is[i];
-                                    is[i] = (i_61_
-                                            + ((i_74_ & 0xff00ff) * i_68_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_74_ & 0xff00) * i_68_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_61_ + ((i_74_ & 0xff00ff) * i_68_ >> 8 & 0xff00ff) + ((i_74_ & 0xff00) * i_68_ >> 8 & 0xff00));
                                     fs[i] = f_66_;
                                 }
                                 f_66_ += f_67_;
@@ -748,15 +582,9 @@ final class Class109 {
                     do {
                         if (f_66_ < fs[++i]) {
                             i_61_ = Class126.anIntArray4983[(int) f];
-                            i_61_
-                                    = (((i_61_ & 0xff00ff) * i_76_ >> 8 & 0xff00ff)
-                                    + ((i_61_ & 0xff00) * i_76_ >> 8 & 0xff00));
+                            i_61_ = (((i_61_ & 0xff00ff) * i_76_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_76_ >> 8 & 0xff00));
                             int i_77_ = is[i];
-                            is[i]
-                                    = (i_61_
-                                    + ((i_77_ & 0xff00ff) * i_75_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_77_ & 0xff00) * i_75_ >> 8 & 0xff00));
+                            is[i] = (i_61_ + ((i_77_ & 0xff00ff) * i_75_ >> 8 & 0xff00ff) + ((i_77_ & 0xff00) * i_75_ >> 8 & 0xff00));
                             fs[i] = f_66_;
                         }
                         f += f_65_;
@@ -773,17 +601,13 @@ final class Class109 {
                                 do {
                                     i_61_ = Class126.anIntArray4983[(int) f];
                                     f += f_65_;
-                                    if (f_66_ < fs[++i])
-                                        is[i] = i_61_;
+                                    if (f_66_ < fs[++i]) is[i] = i_61_;
                                     f_66_ += f_67_;
-                                    if (f_66_ < fs[++i])
-                                        is[i] = i_61_;
+                                    if (f_66_ < fs[++i]) is[i] = i_61_;
                                     f_66_ += f_67_;
-                                    if (f_66_ < fs[++i])
-                                        is[i] = i_61_;
+                                    if (f_66_ < fs[++i]) is[i] = i_61_;
                                     f_66_ += f_67_;
-                                    if (f_66_ < fs[++i])
-                                        is[i] = i_61_;
+                                    if (f_66_ < fs[++i]) is[i] = i_61_;
                                     f_66_ += f_67_;
                                 } while (--i_62_ > 0);
                             }
@@ -791,8 +615,7 @@ final class Class109 {
                             if (i_62_ > 0) {
                                 i_61_ = Class126.anIntArray4983[(int) f];
                                 do {
-                                    if (f_66_ < fs[++i])
-                                        is[i] = i_61_;
+                                    if (f_66_ < fs[++i]) is[i] = i_61_;
                                     f_66_ += f_67_;
                                 } while (--i_62_ > 0);
                             }
@@ -803,71 +626,37 @@ final class Class109 {
                                 do {
                                     i_61_ = Class126.anIntArray4983[(int) f];
                                     f += f_65_;
-                                    i_61_ = (((i_61_ & 0xff00ff) * i_79_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_61_ & 0xff00) * i_79_ >> 8
-                                            & 0xff00));
+                                    i_61_ = (((i_61_ & 0xff00ff) * i_79_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_79_ >> 8 & 0xff00));
                                     if (f_66_ < fs[++i]) {
                                         int i_80_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_80_ & 0xff00ff) * i_78_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_80_ & 0xff00) * i_78_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_80_ & 0xff00ff) * i_78_ >> 8) & 0xff00ff) + ((i_80_ & 0xff00) * i_78_ >> 8 & 0xff00));
                                     }
                                     f_66_ += f_67_;
                                     if (f_66_ < fs[++i]) {
                                         int i_81_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_81_ & 0xff00ff) * i_78_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_81_ & 0xff00) * i_78_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_81_ & 0xff00ff) * i_78_ >> 8) & 0xff00ff) + ((i_81_ & 0xff00) * i_78_ >> 8 & 0xff00));
                                     }
                                     f_66_ += f_67_;
                                     if (f_66_ < fs[++i]) {
                                         int i_82_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_82_ & 0xff00ff) * i_78_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_82_ & 0xff00) * i_78_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_82_ & 0xff00ff) * i_78_ >> 8) & 0xff00ff) + ((i_82_ & 0xff00) * i_78_ >> 8 & 0xff00));
                                     }
                                     f_66_ += f_67_;
                                     if (f_66_ < fs[++i]) {
                                         int i_83_ = is[i];
-                                        is[i]
-                                                = (i_61_
-                                                + (((i_83_ & 0xff00ff) * i_78_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + ((i_83_ & 0xff00) * i_78_ >> 8
-                                                & 0xff00));
+                                        is[i] = (i_61_ + (((i_83_ & 0xff00ff) * i_78_ >> 8) & 0xff00ff) + ((i_83_ & 0xff00) * i_78_ >> 8 & 0xff00));
                                     }
                                     f_66_ += f_67_;
                                 } while (--i_62_ > 0);
                             }
                             i_62_ = i_64_ - i_63_ & 0x3;
-                            if (i_62_ <= 0)
-                                break;
+                            if (i_62_ <= 0) break;
                             i_61_ = Class126.anIntArray4983[(int) f];
-                            i_61_
-                                    = (((i_61_ & 0xff00ff) * i_79_ >> 8 & 0xff00ff)
-                                    + ((i_61_ & 0xff00) * i_79_ >> 8 & 0xff00));
+                            i_61_ = (((i_61_ & 0xff00ff) * i_79_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_79_ >> 8 & 0xff00));
                             do {
                                 if (f_66_ < fs[++i]) {
                                     int i_84_ = is[i];
-                                    is[i] = (i_61_
-                                            + ((i_84_ & 0xff00ff) * i_78_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_84_ & 0xff00) * i_78_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_61_ + ((i_84_ & 0xff00ff) * i_78_ >> 8 & 0xff00ff) + ((i_84_ & 0xff00) * i_78_ >> 8 & 0xff00));
                                 }
                                 f_66_ += f_67_;
                             } while (--i_62_ > 0);
@@ -877,8 +666,7 @@ final class Class109 {
                     i_62_ = i_64_ - i_63_;
                     if (this.anInt1674 == 0) {
                         do {
-                            if (f_66_ < fs[++i])
-                                is[i] = Class126.anIntArray4983[(int) f];
+                            if (f_66_ < fs[++i]) is[i] = Class126.anIntArray4983[(int) f];
                             f_66_ += f_67_;
                             f += f_65_;
                         } while (--i_62_ > 0);
@@ -889,15 +677,9 @@ final class Class109 {
                     do {
                         if (f_66_ < fs[++i]) {
                             i_61_ = Class126.anIntArray4983[(int) f];
-                            i_61_
-                                    = (((i_61_ & 0xff00ff) * i_86_ >> 8 & 0xff00ff)
-                                    + ((i_61_ & 0xff00) * i_86_ >> 8 & 0xff00));
+                            i_61_ = (((i_61_ & 0xff00ff) * i_86_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_86_ >> 8 & 0xff00));
                             int i_87_ = is[i];
-                            is[i]
-                                    = (i_61_
-                                    + ((i_87_ & 0xff00ff) * i_85_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_87_ & 0xff00) * i_85_ >> 8 & 0xff00));
+                            is[i] = (i_61_ + ((i_87_ & 0xff00ff) * i_85_ >> 8 & 0xff00ff) + ((i_87_ & 0xff00) * i_85_ >> 8 & 0xff00));
                         }
                         f += f_65_;
                         f_66_ += f_67_;
@@ -907,30 +689,14 @@ final class Class109 {
         }
     }
 
-    final void method1020(float f, float f_88_, float f_89_, float f_90_,
-                          float f_91_, float f_92_, float f_93_, float f_94_,
-                          float f_95_, float f_96_, float f_97_, float f_98_,
-                          float f_99_, float f_100_, float f_101_, int i,
-                          int i_102_, int i_103_, int i_104_, int i_105_,
-                          int i_106_, int i_107_, int i_108_, float f_109_,
-                          int i_110_, float f_111_, int i_112_, float f_113_) {
+    final void method1020(float f, float f_88_, float f_89_, float f_90_, float f_91_, float f_92_, float f_93_, float f_94_, float f_95_, float f_96_, float f_97_, float f_98_, float f_99_, float f_100_, float f_101_, int i, int i_102_, int i_103_, int i_104_, int i_105_, int i_106_, int i_107_, int i_108_, float f_109_, int i_110_, float f_111_, int i_112_, float f_113_) {
         if (i_108_ != anInt1697) {
             anIntArray1698 = aHa_Sub1_1666.method3718(i_108_);
             if (anIntArray1698 == null) {
-                method1027((float) (int) f, (float) (int) f_88_,
-                        (float) (int) f_89_, (float) (int) f_90_,
-                        (float) (int) f_91_, (float) (int) f_92_,
-                        (float) (int) f_93_, (float) (int) f_94_,
-                        (float) (int) f_95_,
-                        Class6.method206(i, i_104_ | i_105_ << 24, 255),
-                        Class6.method206(i_102_, i_104_ | i_106_ << 24,
-                                255),
-                        Class6.method206(i_103_, i_104_ | i_107_ << 24,
-                                255));
+                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, Class6.method206(i, i_104_ | i_105_ << 24, 255), Class6.method206(i_102_, i_104_ | i_106_ << 24, 255), Class6.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
-            anInt1693 = (aHa_Sub1_1666.method3727(i_108_) ? 64
-                    : aHa_Sub1_1666.anInt7501);
+            anInt1693 = (aHa_Sub1_1666.method3727(i_108_) ? 64 : aHa_Sub1_1666.anInt7501);
             anInt1690 = anInt1693 - 1;
             anInt1683 = aHa_Sub1_1666.method3726(i_108_);
         }
@@ -938,40 +704,20 @@ final class Class109 {
         if (i_110_ != anInt1689) {
             anIntArray1685 = aHa_Sub1_1666.method3718(i_110_);
             if (anIntArray1685 == null) {
-                method1027((float) (int) f, (float) (int) f_88_,
-                        (float) (int) f_89_, (float) (int) f_90_,
-                        (float) (int) f_91_, (float) (int) f_92_,
-                        (float) (int) f_93_, (float) (int) f_94_,
-                        (float) (int) f_95_,
-                        Class6.method206(i, i_104_ | i_105_ << 24, 255),
-                        Class6.method206(i_102_, i_104_ | i_106_ << 24,
-                                255),
-                        Class6.method206(i_103_, i_104_ | i_107_ << 24,
-                                255));
+                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, Class6.method206(i, i_104_ | i_105_ << 24, 255), Class6.method206(i_102_, i_104_ | i_106_ << 24, 255), Class6.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
-            anInt1691 = (aHa_Sub1_1666.method3727(i_110_) ? 64
-                    : aHa_Sub1_1666.anInt7501);
+            anInt1691 = (aHa_Sub1_1666.method3727(i_110_) ? 64 : aHa_Sub1_1666.anInt7501);
             anInt1686 = anInt1691 - 1;
         }
         aFloat1684 = f_111_;
         if (i_112_ != anInt1687) {
             anIntArray1692 = aHa_Sub1_1666.method3718(i_112_);
             if (anIntArray1692 == null) {
-                method1027((float) (int) f, (float) (int) f_88_,
-                        (float) (int) f_89_, (float) (int) f_90_,
-                        (float) (int) f_91_, (float) (int) f_92_,
-                        (float) (int) f_93_, (float) (int) f_94_,
-                        (float) (int) f_95_,
-                        Class6.method206(i, i_104_ | i_105_ << 24, 255),
-                        Class6.method206(i_102_, i_104_ | i_106_ << 24,
-                                255),
-                        Class6.method206(i_103_, i_104_ | i_107_ << 24,
-                                255));
+                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, Class6.method206(i, i_104_ | i_105_ << 24, 255), Class6.method206(i_102_, i_104_ | i_106_ << 24, 255), Class6.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
-            anInt1695 = (aHa_Sub1_1666.method3727(i_112_) ? 64
-                    : aHa_Sub1_1666.anInt7501);
+            anInt1695 = (aHa_Sub1_1666.method3727(i_112_) ? 64 : aHa_Sub1_1666.anInt7501);
             anInt1688 = anInt1695 - 1;
         }
         aFloat1682 = f_113_;
@@ -1080,10 +826,8 @@ final class Class109 {
         }
         if (f <= f_88_ && f <= f_89_) {
             if (!(f >= (float) this.anInt1672)) {
-                if (f_88_ > (float) this.anInt1672)
-                    f_88_ = (float) this.anInt1672;
-                if (f_89_ > (float) this.anInt1672)
-                    f_89_ = (float) this.anInt1672;
+                if (f_88_ > (float) this.anInt1672) f_88_ = (float) this.anInt1672;
+                if (f_89_ > (float) this.anInt1672) f_89_ = (float) this.anInt1672;
                 if (f_88_ < f_89_) {
                     f_92_ = f_90_;
                     f_95_ = f_93_;
@@ -1135,19 +879,12 @@ final class Class109 {
                         f_130_ -= f_154_ * f_88_;
                         f_88_ = 0.0F;
                     }
-                    if (f != f_88_ && f_156_ < f_132_
-                            || f == f_88_ && f_156_ > f_144_) {
+                    if (f != f_88_ && f_156_ < f_132_ || f == f_88_ && f_156_ > f_144_) {
                         f_89_ -= f_88_;
                         f_88_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_92_, (int) f_90_, f_95_, f_93_,
-                                    f_98_, f_96_, f_101_, f_99_,
-                                    (float) i_107_, (float) i_105_, f_116_,
-                                    f_114_, f_119_, f_117_, f_122_, f_120_,
-                                    f_125_, f_123_, f_128_, f_126_, f_131_,
-                                    f_129_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                             f_90_ += f_132_;
                             f_92_ += f_156_;
                             f_93_ += f_133_;
@@ -1173,13 +910,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_92_, (int) f_91_, f_95_, f_94_,
-                                    f_98_, f_97_, f_101_, f_100_,
-                                    (float) i_107_, (float) i_106_, f_116_,
-                                    f_115_, f_119_, f_118_, f_122_, f_121_,
-                                    f_125_, f_124_, f_128_, f_127_, f_131_,
-                                    f_130_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                             f_91_ += f_144_;
                             f_92_ += f_156_;
                             f_94_ += f_145_;
@@ -1209,13 +940,7 @@ final class Class109 {
                         f_88_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_90_, (int) f_92_, f_93_, f_95_,
-                                    f_96_, f_98_, f_99_, f_101_,
-                                    (float) i_105_, (float) i_107_, f_114_,
-                                    f_116_, f_117_, f_119_, f_120_, f_122_,
-                                    f_123_, f_125_, f_126_, f_128_, f_129_,
-                                    f_131_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                             f_90_ += f_132_;
                             f_92_ += f_156_;
                             f_93_ += f_133_;
@@ -1241,13 +966,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_91_, (int) f_92_, f_94_, f_95_,
-                                    f_97_, f_98_, f_100_, f_101_,
-                                    (float) i_106_, (float) i_107_, f_115_,
-                                    f_116_, f_118_, f_119_, f_121_, f_122_,
-                                    f_124_, f_125_, f_127_, f_128_, f_130_,
-                                    f_131_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                             f_91_ += f_144_;
                             f_92_ += f_156_;
                             f_94_ += f_145_;
@@ -1324,19 +1043,12 @@ final class Class109 {
                         f_131_ -= f_154_ * f_89_;
                         f_89_ = 0.0F;
                     }
-                    if (f != f_89_ && f_156_ < f_132_
-                            || f == f_89_ && f_144_ > f_132_) {
+                    if (f != f_89_ && f_156_ < f_132_ || f == f_89_ && f_144_ > f_132_) {
                         f_88_ -= f_89_;
                         f_89_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_91_, (int) f_90_, f_94_, f_93_,
-                                    f_97_, f_96_, f_100_, f_99_,
-                                    (float) i_106_, (float) i_105_, f_115_,
-                                    f_114_, f_118_, f_117_, f_121_, f_120_,
-                                    f_124_, f_123_, f_127_, f_126_, f_130_,
-                                    f_129_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                             f_90_ += f_132_;
                             f_91_ += f_156_;
                             f_93_ += f_133_;
@@ -1362,13 +1074,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_92_, (int) f_90_, f_95_, f_93_,
-                                    f_98_, f_96_, f_101_, f_99_,
-                                    (float) i_107_, (float) i_105_, f_116_,
-                                    f_114_, f_119_, f_117_, f_122_, f_120_,
-                                    f_125_, f_123_, f_128_, f_126_, f_131_,
-                                    f_129_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                             f_92_ += f_144_;
                             f_90_ += f_132_;
                             f_95_ += f_145_;
@@ -1398,13 +1104,7 @@ final class Class109 {
                         f_89_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_90_, (int) f_91_, f_93_, f_94_,
-                                    f_96_, f_97_, f_99_, f_100_,
-                                    (float) i_105_, (float) i_106_, f_114_,
-                                    f_115_, f_117_, f_118_, f_120_, f_121_,
-                                    f_123_, f_124_, f_126_, f_127_, f_129_,
-                                    f_130_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                             f_91_ += f_156_;
                             f_90_ += f_132_;
                             f_94_ += f_157_;
@@ -1430,13 +1130,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_90_, (int) f_92_, f_93_, f_95_,
-                                    f_96_, f_98_, f_99_, f_101_,
-                                    (float) i_105_, (float) i_107_, f_114_,
-                                    f_116_, f_117_, f_119_, f_120_, f_122_,
-                                    f_123_, f_125_, f_126_, f_128_, f_129_,
-                                    f_131_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                             f_90_ += f_132_;
                             f_92_ += f_144_;
                             f_93_ += f_133_;
@@ -1466,10 +1160,8 @@ final class Class109 {
             }
         } else if (f_88_ <= f_89_) {
             if (!(f_88_ >= (float) this.anInt1672)) {
-                if (f_89_ > (float) this.anInt1672)
-                    f_89_ = (float) this.anInt1672;
-                if (f > (float) this.anInt1672)
-                    f = (float) this.anInt1672;
+                if (f_89_ > (float) this.anInt1672) f_89_ = (float) this.anInt1672;
+                if (f > (float) this.anInt1672) f = (float) this.anInt1672;
                 if (f_89_ < f) {
                     f_90_ = f_91_;
                     f_93_ = f_94_;
@@ -1521,20 +1213,12 @@ final class Class109 {
                         f_131_ -= f_166_ * f_89_;
                         f_89_ = 0.0F;
                     }
-                    if (f_88_ != f_89_ && f_132_ < f_144_
-                            || f_88_ == f_89_ && f_132_ > f_156_) {
+                    if (f_88_ != f_89_ && f_132_ < f_144_ || f_88_ == f_89_ && f_132_ > f_156_) {
                         f -= f_89_;
                         f_89_ -= f_88_;
-                        f_88_ = (float) (this.anIntArray1676
-                                [(int) f_88_]);
+                        f_88_ = (float) (this.anIntArray1676[(int) f_88_]);
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_90_, (int) f_91_,
-                                    f_93_, f_94_, f_96_, f_97_, f_99_,
-                                    f_100_, (float) i_105_, (float) i_106_,
-                                    f_114_, f_115_, f_117_, f_118_, f_120_,
-                                    f_121_, f_123_, f_124_, f_126_, f_127_,
-                                    f_129_, f_130_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                             f_90_ += f_132_;
                             f_91_ += f_144_;
                             f_93_ += f_133_;
@@ -1560,13 +1244,7 @@ final class Class109 {
                             f_88_ += (float) anInt1678;
                         }
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_90_, (int) f_92_,
-                                    f_93_, f_95_, f_96_, f_98_, f_99_,
-                                    f_101_, (float) i_105_, (float) i_107_,
-                                    f_114_, f_116_, f_117_, f_119_, f_120_,
-                                    f_122_, f_123_, f_125_, f_126_, f_128_,
-                                    f_129_, f_131_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                             f_90_ += f_132_;
                             f_92_ += f_156_;
                             f_93_ += f_133_;
@@ -1594,16 +1272,9 @@ final class Class109 {
                     } else {
                         f -= f_89_;
                         f_89_ -= f_88_;
-                        f_88_ = (float) (this.anIntArray1676
-                                [(int) f_88_]);
+                        f_88_ = (float) (this.anIntArray1676[(int) f_88_]);
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_91_, (int) f_90_,
-                                    f_94_, f_93_, f_97_, f_96_, f_100_,
-                                    f_99_, (float) i_106_, (float) i_105_,
-                                    f_115_, f_114_, f_118_, f_117_, f_121_,
-                                    f_120_, f_124_, f_123_, f_127_, f_126_,
-                                    f_130_, f_129_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                             f_91_ += f_144_;
                             f_90_ += f_132_;
                             f_94_ += f_145_;
@@ -1629,13 +1300,7 @@ final class Class109 {
                             f_88_ += (float) anInt1678;
                         }
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_92_, (int) f_90_,
-                                    f_95_, f_93_, f_98_, f_96_, f_101_,
-                                    f_99_, (float) i_107_, (float) i_105_,
-                                    f_116_, f_114_, f_119_, f_117_, f_122_,
-                                    f_120_, f_125_, f_123_, f_128_, f_126_,
-                                    f_131_, f_129_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                             f_92_ += f_156_;
                             f_90_ += f_132_;
                             f_95_ += f_157_;
@@ -1714,17 +1379,10 @@ final class Class109 {
                     }
                     f_89_ -= f;
                     f -= f_88_;
-                    f_88_ = (float) (this.anIntArray1676
-                            [(int) f_88_]);
+                    f_88_ = (float) (this.anIntArray1676[(int) f_88_]);
                     if (f_132_ < f_144_) {
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_92_, (int) f_91_,
-                                    f_95_, f_94_, f_98_, f_97_, f_101_,
-                                    f_100_, (float) i_107_, (float) i_106_,
-                                    f_116_, f_115_, f_119_, f_118_, f_122_,
-                                    f_121_, f_125_, f_124_, f_128_, f_127_,
-                                    f_131_, f_130_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                             f_92_ += f_132_;
                             f_91_ += f_144_;
                             f_95_ += f_133_;
@@ -1750,13 +1408,7 @@ final class Class109 {
                             f_88_ += (float) anInt1678;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_90_, (int) f_91_,
-                                    f_93_, f_94_, f_96_, f_97_, f_99_,
-                                    f_100_, (float) i_105_, (float) i_106_,
-                                    f_114_, f_115_, f_117_, f_118_, f_120_,
-                                    f_121_, f_123_, f_124_, f_126_, f_127_,
-                                    f_129_, f_130_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                             f_90_ += f_156_;
                             f_91_ += f_144_;
                             f_93_ += f_157_;
@@ -1783,13 +1435,7 @@ final class Class109 {
                         }
                     } else {
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_91_, (int) f_92_,
-                                    f_94_, f_95_, f_97_, f_98_, f_100_,
-                                    f_101_, (float) i_106_, (float) i_107_,
-                                    f_115_, f_116_, f_118_, f_119_, f_121_,
-                                    f_122_, f_124_, f_125_, f_127_, f_128_,
-                                    f_130_, f_131_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                             f_91_ += f_144_;
                             f_92_ += f_132_;
                             f_94_ += f_145_;
@@ -1815,13 +1461,7 @@ final class Class109 {
                             f_88_ += (float) anInt1678;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698,
-                                    (int) f_88_, (int) f_91_, (int) f_90_,
-                                    f_94_, f_93_, f_97_, f_96_, f_100_,
-                                    f_99_, (float) i_106_, (float) i_105_,
-                                    f_115_, f_114_, f_118_, f_117_, f_121_,
-                                    f_120_, f_124_, f_123_, f_127_, f_126_,
-                                    f_130_, f_129_);
+                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                             f_91_ += f_144_;
                             f_90_ += f_156_;
                             f_94_ += f_145_;
@@ -1850,10 +1490,8 @@ final class Class109 {
                 }
             }
         } else if (!(f_89_ >= (float) this.anInt1672)) {
-            if (f > (float) this.anInt1672)
-                f = (float) this.anInt1672;
-            if (f_88_ > (float) this.anInt1672)
-                f_88_ = (float) this.anInt1672;
+            if (f > (float) this.anInt1672) f = (float) this.anInt1672;
+            if (f_88_ > (float) this.anInt1672) f_88_ = (float) this.anInt1672;
             if (f < f_88_) {
                 f_91_ = f_92_;
                 f_94_ = f_95_;
@@ -1908,16 +1546,9 @@ final class Class109 {
                 if (f_144_ < f_156_) {
                     f_88_ -= f;
                     f -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676
-                            [(int) f_89_]);
+                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_91_, (int) f_92_, f_94_, f_95_,
-                                f_97_, f_98_, f_100_, f_101_,
-                                (float) i_106_, (float) i_107_, f_115_,
-                                f_116_, f_118_, f_119_, f_121_, f_122_,
-                                f_124_, f_125_, f_127_, f_128_, f_130_,
-                                f_131_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                         f_91_ += f_144_;
                         f_92_ += f_156_;
                         f_94_ += f_145_;
@@ -1943,12 +1574,7 @@ final class Class109 {
                         f_89_ += (float) anInt1678;
                     }
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_91_, (int) f_90_, f_94_, f_93_,
-                                f_97_, f_96_, f_100_, f_99_, (float) i_106_,
-                                (float) i_105_, f_115_, f_114_, f_118_,
-                                f_117_, f_121_, f_120_, f_124_, f_123_,
-                                f_127_, f_126_, f_130_, f_129_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                         f_91_ += f_144_;
                         f_90_ += f_132_;
                         f_94_ += f_145_;
@@ -1976,16 +1602,9 @@ final class Class109 {
                 } else {
                     f_88_ -= f;
                     f -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676
-                            [(int) f_89_]);
+                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_92_, (int) f_91_, f_95_, f_94_,
-                                f_98_, f_97_, f_101_, f_100_,
-                                (float) i_107_, (float) i_106_, f_116_,
-                                f_115_, f_119_, f_118_, f_122_, f_121_,
-                                f_125_, f_124_, f_128_, f_127_, f_131_,
-                                f_130_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                         f_92_ += f_156_;
                         f_91_ += f_144_;
                         f_95_ += f_157_;
@@ -2011,12 +1630,7 @@ final class Class109 {
                         f_89_ += (float) anInt1678;
                     }
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_90_, (int) f_91_, f_93_, f_94_,
-                                f_96_, f_97_, f_99_, f_100_, (float) i_105_,
-                                (float) i_106_, f_114_, f_115_, f_117_,
-                                f_118_, f_120_, f_121_, f_123_, f_124_,
-                                f_126_, f_127_, f_129_, f_130_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                         f_90_ += f_132_;
                         f_91_ += f_144_;
                         f_93_ += f_133_;
@@ -2096,15 +1710,9 @@ final class Class109 {
                 if (f_144_ < f_156_) {
                     f -= f_88_;
                     f_88_ -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676
-                            [(int) f_89_]);
+                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_90_, (int) f_92_, f_93_, f_95_,
-                                f_96_, f_98_, f_99_, f_101_, (float) i_105_,
-                                (float) i_107_, f_114_, f_116_, f_117_,
-                                f_119_, f_120_, f_122_, f_123_, f_125_,
-                                f_126_, f_128_, f_129_, f_131_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                         f_90_ += f_144_;
                         f_92_ += f_156_;
                         f_93_ += f_145_;
@@ -2130,13 +1738,7 @@ final class Class109 {
                         f_89_ += (float) anInt1678;
                     }
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_91_, (int) f_92_, f_94_, f_95_,
-                                f_97_, f_98_, f_100_, f_101_,
-                                (float) i_106_, (float) i_107_, f_115_,
-                                f_116_, f_118_, f_119_, f_121_, f_122_,
-                                f_124_, f_125_, f_127_, f_128_, f_130_,
-                                f_131_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                         f_91_ += f_132_;
                         f_92_ += f_156_;
                         f_94_ += f_133_;
@@ -2164,15 +1766,9 @@ final class Class109 {
                 } else {
                     f -= f_88_;
                     f_88_ -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676
-                            [(int) f_89_]);
+                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_92_, (int) f_90_, f_95_, f_93_,
-                                f_98_, f_96_, f_101_, f_99_, (float) i_107_,
-                                (float) i_105_, f_116_, f_114_, f_119_,
-                                f_117_, f_122_, f_120_, f_125_, f_123_,
-                                f_128_, f_126_, f_131_, f_129_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                         f_92_ += f_156_;
                         f_90_ += f_144_;
                         f_95_ += f_157_;
@@ -2198,13 +1794,7 @@ final class Class109 {
                         f_89_ += (float) anInt1678;
                     }
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_,
-                                (int) f_92_, (int) f_91_, f_95_, f_94_,
-                                f_98_, f_97_, f_101_, f_100_,
-                                (float) i_107_, (float) i_106_, f_116_,
-                                f_115_, f_119_, f_118_, f_122_, f_121_,
-                                f_125_, f_124_, f_128_, f_127_, f_131_,
-                                f_130_);
+                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                         f_92_ += f_156_;
                         f_91_ += f_132_;
                         f_95_ += f_157_;
@@ -2234,15 +1824,10 @@ final class Class109 {
         }
     }
 
-    private final void method1021
-            (int[] is, float[] fs, int i, int i_168_, int i_169_, int i_170_,
-             int i_171_, float f, float f_172_, float f_173_, float f_174_,
-             float f_175_, float f_176_, float f_177_, float f_178_) {
+    private final void method1021(int[] is, float[] fs, int i, int i_168_, int i_169_, int i_170_, int i_171_, float f, float f_172_, float f_173_, float f_174_, float f_175_, float f_176_, float f_177_, float f_178_) {
         if (this.aBoolean1671) {
-            if (i_171_ > this.anInt1679)
-                i_171_ = this.anInt1679;
-            if (i_170_ < 0)
-                i_170_ = 0;
+            if (i_171_ > this.anInt1679) i_171_ = this.anInt1679;
+            if (i_170_ < 0) i_170_ = 0;
         }
         if (i_170_ < i_171_) {
             if (aBoolean1680) {
@@ -2258,9 +1843,7 @@ final class Class109 {
                     if (this.anInt1674 == 0) {
                         if (i_169_ > 0) {
                             do {
-                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 f_173_ += f_174_;
                                 f_175_ += f_176_;
                                 f_177_ += f_178_;
@@ -2272,19 +1855,13 @@ final class Class109 {
                         }
                         i_169_ = i_171_ - i_170_ & 0x3;
                         if (i_169_ > 0) {
-                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
-                            do
-                                is[i++] = i_168_;
-                            while (--i_169_ > 0);
+                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
+                            do is[i++] = i_168_; while (--i_169_ > 0);
                         }
                     } else if (this.aBoolean1667) {
                         if (i_169_ > 0) {
                             do {
-                                i_168_ = ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 f_173_ += f_174_;
                                 f_175_ += f_176_;
                                 f_177_ += f_178_;
@@ -2293,69 +1870,47 @@ final class Class109 {
                                 int i_185_ = i_168_;
                                 int i_186_ = is_183_[i_184_];
                                 int i_187_ = i_185_ + i_186_;
-                                int i_188_ = ((i_185_ & 0xff00ff)
-                                        + (i_186_ & 0xff00ff));
-                                i_186_
-                                        = (i_188_ & 0x1000100) + (i_187_ - i_188_
-                                        & 0x10000);
-                                is_183_[i_184_] = (~0xffffff | i_187_ - i_186_
-                                        | i_186_ - (i_186_ >>> 8));
+                                int i_188_ = ((i_185_ & 0xff00ff) + (i_186_ & 0xff00ff));
+                                i_186_ = (i_188_ & 0x1000100) + (i_187_ - i_188_ & 0x10000);
+                                is_183_[i_184_] = (~0xffffff | i_187_ - i_186_ | i_186_ - (i_186_ >>> 8));
                                 int[] is_189_ = is;
                                 int i_190_ = i++;
                                 int i_191_ = i_168_;
                                 int i_192_ = is_189_[i_190_];
                                 int i_193_ = i_191_ + i_192_;
-                                int i_194_ = ((i_191_ & 0xff00ff)
-                                        + (i_192_ & 0xff00ff));
-                                i_192_
-                                        = (i_194_ & 0x1000100) + (i_193_ - i_194_
-                                        & 0x10000);
-                                is_189_[i_190_] = (~0xffffff | i_193_ - i_192_
-                                        | i_192_ - (i_192_ >>> 8));
+                                int i_194_ = ((i_191_ & 0xff00ff) + (i_192_ & 0xff00ff));
+                                i_192_ = (i_194_ & 0x1000100) + (i_193_ - i_194_ & 0x10000);
+                                is_189_[i_190_] = (~0xffffff | i_193_ - i_192_ | i_192_ - (i_192_ >>> 8));
                                 int[] is_195_ = is;
                                 int i_196_ = i++;
                                 int i_197_ = i_168_;
                                 int i_198_ = is_195_[i_196_];
                                 int i_199_ = i_197_ + i_198_;
-                                int i_200_ = ((i_197_ & 0xff00ff)
-                                        + (i_198_ & 0xff00ff));
-                                i_198_
-                                        = (i_200_ & 0x1000100) + (i_199_ - i_200_
-                                        & 0x10000);
-                                is_195_[i_196_] = (~0xffffff | i_199_ - i_198_
-                                        | i_198_ - (i_198_ >>> 8));
+                                int i_200_ = ((i_197_ & 0xff00ff) + (i_198_ & 0xff00ff));
+                                i_198_ = (i_200_ & 0x1000100) + (i_199_ - i_200_ & 0x10000);
+                                is_195_[i_196_] = (~0xffffff | i_199_ - i_198_ | i_198_ - (i_198_ >>> 8));
                                 int[] is_201_ = is;
                                 int i_202_ = i++;
                                 int i_203_ = i_168_;
                                 int i_204_ = is_201_[i_202_];
                                 int i_205_ = i_203_ + i_204_;
-                                int i_206_ = ((i_203_ & 0xff00ff)
-                                        + (i_204_ & 0xff00ff));
-                                i_204_
-                                        = (i_206_ & 0x1000100) + (i_205_ - i_206_
-                                        & 0x10000);
-                                is_201_[i_202_] = (~0xffffff | i_205_ - i_204_
-                                        | i_204_ - (i_204_ >>> 8));
+                                int i_206_ = ((i_203_ & 0xff00ff) + (i_204_ & 0xff00ff));
+                                i_204_ = (i_206_ & 0x1000100) + (i_205_ - i_206_ & 0x10000);
+                                is_201_[i_202_] = (~0xffffff | i_205_ - i_204_ | i_204_ - (i_204_ >>> 8));
                             } while (--i_169_ > 0);
                         }
                         i_169_ = i_171_ - i_170_ & 0x3;
                         if (i_169_ > 0) {
-                            i_168_ = ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
+                            i_168_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             do {
                                 int[] is_207_ = is;
                                 int i_208_ = i++;
                                 int i_209_ = i_168_;
                                 int i_210_ = is_207_[i_208_];
                                 int i_211_ = i_209_ + i_210_;
-                                int i_212_ = ((i_209_ & 0xff00ff)
-                                        + (i_210_ & 0xff00ff));
-                                i_210_
-                                        = (i_212_ & 0x1000100) + (i_211_ - i_212_
-                                        & 0x10000);
-                                is_207_[i_208_] = (~0xffffff | i_211_ - i_210_
-                                        | i_210_ - (i_210_ >>> 8));
+                                int i_212_ = ((i_209_ & 0xff00ff) + (i_210_ & 0xff00ff));
+                                i_210_ = (i_212_ & 0x1000100) + (i_211_ - i_212_ & 0x10000);
+                                is_207_[i_208_] = (~0xffffff | i_211_ - i_210_ | i_210_ - (i_210_ >>> 8));
                             } while (--i_169_ > 0);
                         }
                     } else {
@@ -2363,58 +1918,28 @@ final class Class109 {
                         int i_180_ = 256 - this.anInt1674;
                         if (i_169_ > 0) {
                             do {
-                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 f_173_ += f_174_;
                                 f_175_ += f_176_;
                                 f_177_ += f_178_;
-                                i_168_ = (((i_168_ & 0xff00ff) * i_180_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_168_ & 0xff00) * i_180_ >> 8
-                                        & 0xff00));
+                                i_168_ = (((i_168_ & 0xff00ff) * i_180_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_180_ >> 8 & 0xff00));
                                 int i_181_ = is[i];
-                                is[i++] = (i_168_
-                                        + ((i_181_ & 0xff00ff) * i_179_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_181_ & 0xff00) * i_179_ >> 8
-                                        & 0xff00));
+                                is[i++] = (i_168_ + ((i_181_ & 0xff00ff) * i_179_ >> 8 & 0xff00ff) + ((i_181_ & 0xff00) * i_179_ >> 8 & 0xff00));
                                 i_181_ = is[i];
-                                is[i++] = (i_168_
-                                        + ((i_181_ & 0xff00ff) * i_179_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_181_ & 0xff00) * i_179_ >> 8
-                                        & 0xff00));
+                                is[i++] = (i_168_ + ((i_181_ & 0xff00ff) * i_179_ >> 8 & 0xff00ff) + ((i_181_ & 0xff00) * i_179_ >> 8 & 0xff00));
                                 i_181_ = is[i];
-                                is[i++] = (i_168_
-                                        + ((i_181_ & 0xff00ff) * i_179_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_181_ & 0xff00) * i_179_ >> 8
-                                        & 0xff00));
+                                is[i++] = (i_168_ + ((i_181_ & 0xff00ff) * i_179_ >> 8 & 0xff00ff) + ((i_181_ & 0xff00) * i_179_ >> 8 & 0xff00));
                                 i_181_ = is[i];
-                                is[i++] = (i_168_
-                                        + ((i_181_ & 0xff00ff) * i_179_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_181_ & 0xff00) * i_179_ >> 8
-                                        & 0xff00));
+                                is[i++] = (i_168_ + ((i_181_ & 0xff00ff) * i_179_ >> 8 & 0xff00ff) + ((i_181_ & 0xff00) * i_179_ >> 8 & 0xff00));
                             } while (--i_169_ > 0);
                         }
                         i_169_ = i_171_ - i_170_ & 0x3;
                         if (i_169_ > 0) {
-                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
-                            i_168_ = (((i_168_ & 0xff00ff) * i_180_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_168_ & 0xff00) * i_180_ >> 8
-                                    & 0xff00));
+                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
+                            i_168_ = (((i_168_ & 0xff00ff) * i_180_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_180_ >> 8 & 0xff00));
                             do {
                                 int i_182_ = is[i];
-                                is[i++] = (i_168_
-                                        + ((i_182_ & 0xff00ff) * i_179_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_182_ & 0xff00) * i_179_ >> 8
-                                        & 0xff00));
+                                is[i++] = (i_168_ + ((i_182_ & 0xff00ff) * i_179_ >> 8 & 0xff00ff) + ((i_182_ & 0xff00) * i_179_ >> 8 & 0xff00));
                             } while (--i_169_ > 0);
                         }
                     }
@@ -2422,9 +1947,7 @@ final class Class109 {
                     i_169_ = i_171_ - i_170_;
                     if (this.anInt1674 == 0) {
                         do {
-                            is[i++] = ~0xffffff | ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
+                            is[i++] = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             f_173_ += f_174_;
                             f_175_ += f_176_;
                             f_177_ += f_178_;
@@ -2433,17 +1956,12 @@ final class Class109 {
                         do {
                             int[] is_216_ = is;
                             int i_217_ = i++;
-                            int i_218_ = ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
+                            int i_218_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             int i_219_ = is_216_[i_217_];
                             int i_220_ = i_218_ + i_219_;
-                            int i_221_
-                                    = (i_218_ & 0xff00ff) + (i_219_ & 0xff00ff);
-                            i_219_ = (i_221_ & 0x1000100) + (i_220_ - i_221_
-                                    & 0x10000);
-                            is_216_[i_217_] = (~0xffffff | i_220_ - i_219_
-                                    | i_219_ - (i_219_ >>> 8));
+                            int i_221_ = (i_218_ & 0xff00ff) + (i_219_ & 0xff00ff);
+                            i_219_ = (i_221_ & 0x1000100) + (i_220_ - i_221_ & 0x10000);
+                            is_216_[i_217_] = (~0xffffff | i_220_ - i_219_ | i_219_ - (i_219_ >>> 8));
                             f_173_ += f_174_;
                             f_175_ += f_176_;
                             f_177_ += f_178_;
@@ -2452,22 +1970,13 @@ final class Class109 {
                         int i_213_ = this.anInt1674;
                         int i_214_ = 256 - this.anInt1674;
                         do {
-                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
+                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             f_173_ += f_174_;
                             f_175_ += f_176_;
                             f_177_ += f_178_;
-                            i_168_ = (((i_168_ & 0xff00ff) * i_214_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_168_ & 0xff00) * i_214_ >> 8
-                                    & 0xff00));
+                            i_168_ = (((i_168_ & 0xff00ff) * i_214_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_214_ >> 8 & 0xff00));
                             int i_215_ = is[i];
-                            is[i++] = (i_168_
-                                    + ((i_215_ & 0xff00ff) * i_213_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_215_ & 0xff00) * i_213_ >> 8
-                                    & 0xff00));
+                            is[i++] = (i_168_ + ((i_215_ & 0xff00ff) * i_213_ >> 8 & 0xff00ff) + ((i_215_ & 0xff00) * i_213_ >> 8 & 0xff00));
                         } while (--i_169_ > 0);
                     }
                 }
@@ -2486,10 +1995,7 @@ final class Class109 {
                         if (this.anInt1674 == 0) {
                             if (i_169_ > 0) {
                                 do {
-                                    i_168_
-                                            = ~0xffffff | ((int) f_173_ & 0xff0000
-                                            | (int) f_175_ & 0xff00
-                                            | (int) f_177_ & 0xff);
+                                    i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                     f_173_ += f_174_;
                                     f_175_ += f_176_;
                                     f_177_ += f_178_;
@@ -2517,9 +2023,7 @@ final class Class109 {
                             }
                             i_169_ = i_171_ - i_170_ & 0x3;
                             if (i_169_ > 0) {
-                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 do {
                                     if (f < fs[++i]) {
                                         is[i] = i_168_;
@@ -2531,9 +2035,7 @@ final class Class109 {
                         } else if (this.aBoolean1667) {
                             if (i_169_ > 0) {
                                 do {
-                                    i_168_ = ((int) f_173_ & 0xff0000
-                                            | (int) f_175_ & 0xff00
-                                            | (int) f_177_ & 0xff);
+                                    i_168_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                     f_173_ += f_174_;
                                     f_175_ += f_176_;
                                     f_177_ += f_178_;
@@ -2543,14 +2045,9 @@ final class Class109 {
                                         int i_231_ = i_168_;
                                         int i_232_ = is_229_[i_230_];
                                         int i_233_ = i_231_ + i_232_;
-                                        int i_234_ = ((i_231_ & 0xff00ff)
-                                                + (i_232_ & 0xff00ff));
-                                        i_232_
-                                                = ((i_234_ & 0x1000100)
-                                                + (i_233_ - i_234_ & 0x10000));
-                                        is_229_[i_230_]
-                                                = (~0xffffff | i_233_ - i_232_
-                                                | i_232_ - (i_232_ >>> 8));
+                                        int i_234_ = ((i_231_ & 0xff00ff) + (i_232_ & 0xff00ff));
+                                        i_232_ = ((i_234_ & 0x1000100) + (i_233_ - i_234_ & 0x10000));
+                                        is_229_[i_230_] = (~0xffffff | i_233_ - i_232_ | i_232_ - (i_232_ >>> 8));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
@@ -2560,14 +2057,9 @@ final class Class109 {
                                         int i_237_ = i_168_;
                                         int i_238_ = is_235_[i_236_];
                                         int i_239_ = i_237_ + i_238_;
-                                        int i_240_ = ((i_237_ & 0xff00ff)
-                                                + (i_238_ & 0xff00ff));
-                                        i_238_
-                                                = ((i_240_ & 0x1000100)
-                                                + (i_239_ - i_240_ & 0x10000));
-                                        is_235_[i_236_]
-                                                = (~0xffffff | i_239_ - i_238_
-                                                | i_238_ - (i_238_ >>> 8));
+                                        int i_240_ = ((i_237_ & 0xff00ff) + (i_238_ & 0xff00ff));
+                                        i_238_ = ((i_240_ & 0x1000100) + (i_239_ - i_240_ & 0x10000));
+                                        is_235_[i_236_] = (~0xffffff | i_239_ - i_238_ | i_238_ - (i_238_ >>> 8));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
@@ -2577,14 +2069,9 @@ final class Class109 {
                                         int i_243_ = i_168_;
                                         int i_244_ = is_241_[i_242_];
                                         int i_245_ = i_243_ + i_244_;
-                                        int i_246_ = ((i_243_ & 0xff00ff)
-                                                + (i_244_ & 0xff00ff));
-                                        i_244_
-                                                = ((i_246_ & 0x1000100)
-                                                + (i_245_ - i_246_ & 0x10000));
-                                        is_241_[i_242_]
-                                                = (~0xffffff | i_245_ - i_244_
-                                                | i_244_ - (i_244_ >>> 8));
+                                        int i_246_ = ((i_243_ & 0xff00ff) + (i_244_ & 0xff00ff));
+                                        i_244_ = ((i_246_ & 0x1000100) + (i_245_ - i_246_ & 0x10000));
+                                        is_241_[i_242_] = (~0xffffff | i_245_ - i_244_ | i_244_ - (i_244_ >>> 8));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
@@ -2594,14 +2081,9 @@ final class Class109 {
                                         int i_249_ = i_168_;
                                         int i_250_ = is_247_[i_248_];
                                         int i_251_ = i_249_ + i_250_;
-                                        int i_252_ = ((i_249_ & 0xff00ff)
-                                                + (i_250_ & 0xff00ff));
-                                        i_250_
-                                                = ((i_252_ & 0x1000100)
-                                                + (i_251_ - i_252_ & 0x10000));
-                                        is_247_[i_248_]
-                                                = (~0xffffff | i_251_ - i_250_
-                                                | i_250_ - (i_250_ >>> 8));
+                                        int i_252_ = ((i_249_ & 0xff00ff) + (i_250_ & 0xff00ff));
+                                        i_250_ = ((i_252_ & 0x1000100) + (i_251_ - i_252_ & 0x10000));
+                                        is_247_[i_248_] = (~0xffffff | i_251_ - i_250_ | i_250_ - (i_250_ >>> 8));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
@@ -2609,9 +2091,7 @@ final class Class109 {
                             }
                             i_169_ = i_171_ - i_170_ & 0x3;
                             if (i_169_ > 0) {
-                                i_168_ = ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 do {
                                     if (f < fs[++i]) {
                                         int[] is_253_ = is;
@@ -2619,14 +2099,9 @@ final class Class109 {
                                         int i_255_ = i_168_;
                                         int i_256_ = is_253_[i_254_];
                                         int i_257_ = i_255_ + i_256_;
-                                        int i_258_ = ((i_255_ & 0xff00ff)
-                                                + (i_256_ & 0xff00ff));
-                                        i_256_
-                                                = ((i_258_ & 0x1000100)
-                                                + (i_257_ - i_258_ & 0x10000));
-                                        is_253_[i_254_]
-                                                = (~0xffffff | i_257_ - i_256_
-                                                | i_256_ - (i_256_ >>> 8));
+                                        int i_258_ = ((i_255_ & 0xff00ff) + (i_256_ & 0xff00ff));
+                                        i_256_ = ((i_258_ & 0x1000100) + (i_257_ - i_258_ & 0x10000));
+                                        is_253_[i_254_] = (~0xffffff | i_257_ - i_256_ | i_256_ - (i_256_ >>> 8));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
@@ -2637,67 +2112,32 @@ final class Class109 {
                             int i_223_ = 256 - this.anInt1674;
                             if (i_169_ > 0) {
                                 do {
-                                    i_168_
-                                            = ~0xffffff | ((int) f_173_ & 0xff0000
-                                            | (int) f_175_ & 0xff00
-                                            | (int) f_177_ & 0xff);
+                                    i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                     f_173_ += f_174_;
                                     f_175_ += f_176_;
                                     f_177_ += f_178_;
-                                    i_168_
-                                            = (((i_168_ & 0xff00ff) * i_223_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_168_ & 0xff00) * i_223_ >> 8
-                                            & 0xff00));
+                                    i_168_ = (((i_168_ & 0xff00ff) * i_223_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_223_ >> 8 & 0xff00));
                                     if (f < fs[++i]) {
                                         int i_224_ = is[i];
-                                        is[i]
-                                                = (i_168_
-                                                + (((i_224_ & 0xff00ff) * i_222_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + (((i_224_ & 0xff00) * i_222_
-                                                >> 8)
-                                                & 0xff00));
+                                        is[i] = (i_168_ + (((i_224_ & 0xff00ff) * i_222_ >> 8) & 0xff00ff) + (((i_224_ & 0xff00) * i_222_ >> 8) & 0xff00));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
                                     if (f < fs[++i]) {
                                         int i_225_ = is[i];
-                                        is[i]
-                                                = (i_168_
-                                                + (((i_225_ & 0xff00ff) * i_222_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + (((i_225_ & 0xff00) * i_222_
-                                                >> 8)
-                                                & 0xff00));
+                                        is[i] = (i_168_ + (((i_225_ & 0xff00ff) * i_222_ >> 8) & 0xff00ff) + (((i_225_ & 0xff00) * i_222_ >> 8) & 0xff00));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
                                     if (f < fs[++i]) {
                                         int i_226_ = is[i];
-                                        is[i]
-                                                = (i_168_
-                                                + (((i_226_ & 0xff00ff) * i_222_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + (((i_226_ & 0xff00) * i_222_
-                                                >> 8)
-                                                & 0xff00));
+                                        is[i] = (i_168_ + (((i_226_ & 0xff00ff) * i_222_ >> 8) & 0xff00ff) + (((i_226_ & 0xff00) * i_222_ >> 8) & 0xff00));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
                                     if (f < fs[++i]) {
                                         int i_227_ = is[i];
-                                        is[i]
-                                                = (i_168_
-                                                + (((i_227_ & 0xff00ff) * i_222_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + (((i_227_ & 0xff00) * i_222_
-                                                >> 8)
-                                                & 0xff00));
+                                        is[i] = (i_168_ + (((i_227_ & 0xff00ff) * i_222_ >> 8) & 0xff00ff) + (((i_227_ & 0xff00) * i_222_ >> 8) & 0xff00));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
@@ -2705,24 +2145,12 @@ final class Class109 {
                             }
                             i_169_ = i_171_ - i_170_ & 0x3;
                             if (i_169_ > 0) {
-                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
-                                i_168_ = (((i_168_ & 0xff00ff) * i_223_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_168_ & 0xff00) * i_223_ >> 8
-                                        & 0xff00));
+                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
+                                i_168_ = (((i_168_ & 0xff00ff) * i_223_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_223_ >> 8 & 0xff00));
                                 do {
                                     if (f < fs[++i]) {
                                         int i_228_ = is[i];
-                                        is[i]
-                                                = (i_168_
-                                                + (((i_228_ & 0xff00ff) * i_222_
-                                                >> 8)
-                                                & 0xff00ff)
-                                                + (((i_228_ & 0xff00) * i_222_
-                                                >> 8)
-                                                & 0xff00));
+                                        is[i] = (i_168_ + (((i_228_ & 0xff00ff) * i_222_ >> 8) & 0xff00ff) + (((i_228_ & 0xff00) * i_222_ >> 8) & 0xff00));
                                         fs[i] = f;
                                     }
                                     f += f_172_;
@@ -2734,10 +2162,7 @@ final class Class109 {
                         if (this.anInt1674 == 0) {
                             do {
                                 if (f < fs[++i]) {
-                                    is[i]
-                                            = ~0xffffff | ((int) f_173_ & 0xff0000
-                                            | (int) f_175_ & 0xff00
-                                            | (int) f_177_ & 0xff);
+                                    is[i] = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                     fs[i] = f;
                                 }
                                 f += f_172_;
@@ -2750,18 +2175,12 @@ final class Class109 {
                                 if (f < fs[++i]) {
                                     int[] is_262_ = is;
                                     int i_263_ = i;
-                                    int i_264_ = ((int) f_173_ & 0xff0000
-                                            | (int) f_175_ & 0xff00
-                                            | (int) f_177_ & 0xff);
+                                    int i_264_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                     int i_265_ = is_262_[i_263_];
                                     int i_266_ = i_264_ + i_265_;
-                                    int i_267_ = ((i_264_ & 0xff00ff)
-                                            + (i_265_ & 0xff00ff));
-                                    i_265_ = ((i_267_ & 0x1000100)
-                                            + (i_266_ - i_267_ & 0x10000));
-                                    is_262_[i_263_]
-                                            = (~0xffffff | i_266_ - i_265_
-                                            | i_265_ - (i_265_ >>> 8));
+                                    int i_267_ = ((i_264_ & 0xff00ff) + (i_265_ & 0xff00ff));
+                                    i_265_ = ((i_267_ & 0x1000100) + (i_266_ - i_267_ & 0x10000));
+                                    is_262_[i_263_] = (~0xffffff | i_266_ - i_265_ | i_265_ - (i_265_ >>> 8));
                                     fs[i] = f;
                                 }
                                 f += f_172_;
@@ -2774,22 +2193,10 @@ final class Class109 {
                             int i_260_ = 256 - this.anInt1674;
                             do {
                                 if (f < fs[++i]) {
-                                    i_168_
-                                            = ~0xffffff | ((int) f_173_ & 0xff0000
-                                            | (int) f_175_ & 0xff00
-                                            | (int) f_177_ & 0xff);
-                                    i_168_
-                                            = (((i_168_ & 0xff00ff) * i_260_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_168_ & 0xff00) * i_260_ >> 8
-                                            & 0xff00));
+                                    i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
+                                    i_168_ = (((i_168_ & 0xff00ff) * i_260_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_260_ >> 8 & 0xff00));
                                     int i_261_ = is[i];
-                                    is[i]
-                                            = (i_168_
-                                            + ((i_261_ & 0xff00ff) * i_259_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_261_ & 0xff00) * i_259_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_168_ + ((i_261_ & 0xff00ff) * i_259_ >> 8 & 0xff00ff) + ((i_261_ & 0xff00) * i_259_ >> 8 & 0xff00));
                                     fs[i] = f;
                                 }
                                 f += f_172_;
@@ -2807,43 +2214,32 @@ final class Class109 {
                     if (this.anInt1674 == 0) {
                         if (i_169_ > 0) {
                             do {
-                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 f_173_ += f_174_;
                                 f_175_ += f_176_;
                                 f_177_ += f_178_;
-                                if (f < fs[++i])
-                                    is[i] = i_168_;
+                                if (f < fs[++i]) is[i] = i_168_;
                                 f += f_172_;
-                                if (f < fs[++i])
-                                    is[i] = i_168_;
+                                if (f < fs[++i]) is[i] = i_168_;
                                 f += f_172_;
-                                if (f < fs[++i])
-                                    is[i] = i_168_;
+                                if (f < fs[++i]) is[i] = i_168_;
                                 f += f_172_;
-                                if (f < fs[++i])
-                                    is[i] = i_168_;
+                                if (f < fs[++i]) is[i] = i_168_;
                                 f += f_172_;
                             } while (--i_169_ > 0);
                         }
                         i_169_ = i_171_ - i_170_ & 0x3;
                         if (i_169_ > 0) {
-                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
+                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             do {
-                                if (f < fs[++i])
-                                    is[i] = i_168_;
+                                if (f < fs[++i]) is[i] = i_168_;
                                 f += f_172_;
                             } while (--i_169_ > 0);
                         }
                     } else if (this.aBoolean1667) {
                         if (i_169_ > 0) {
                             do {
-                                i_168_ = ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 f_173_ += f_174_;
                                 f_175_ += f_176_;
                                 f_177_ += f_178_;
@@ -2853,13 +2249,9 @@ final class Class109 {
                                     int i_277_ = i_168_;
                                     int i_278_ = is_275_[i_276_];
                                     int i_279_ = i_277_ + i_278_;
-                                    int i_280_ = ((i_277_ & 0xff00ff)
-                                            + (i_278_ & 0xff00ff));
-                                    i_278_ = ((i_280_ & 0x1000100)
-                                            + (i_279_ - i_280_ & 0x10000));
-                                    is_275_[i_276_]
-                                            = (~0xffffff | i_279_ - i_278_
-                                            | i_278_ - (i_278_ >>> 8));
+                                    int i_280_ = ((i_277_ & 0xff00ff) + (i_278_ & 0xff00ff));
+                                    i_278_ = ((i_280_ & 0x1000100) + (i_279_ - i_280_ & 0x10000));
+                                    is_275_[i_276_] = (~0xffffff | i_279_ - i_278_ | i_278_ - (i_278_ >>> 8));
                                 }
                                 f += f_172_;
                                 if (f < fs[++i]) {
@@ -2868,13 +2260,9 @@ final class Class109 {
                                     int i_283_ = i_168_;
                                     int i_284_ = is_281_[i_282_];
                                     int i_285_ = i_283_ + i_284_;
-                                    int i_286_ = ((i_283_ & 0xff00ff)
-                                            + (i_284_ & 0xff00ff));
-                                    i_284_ = ((i_286_ & 0x1000100)
-                                            + (i_285_ - i_286_ & 0x10000));
-                                    is_281_[i_282_]
-                                            = (~0xffffff | i_285_ - i_284_
-                                            | i_284_ - (i_284_ >>> 8));
+                                    int i_286_ = ((i_283_ & 0xff00ff) + (i_284_ & 0xff00ff));
+                                    i_284_ = ((i_286_ & 0x1000100) + (i_285_ - i_286_ & 0x10000));
+                                    is_281_[i_282_] = (~0xffffff | i_285_ - i_284_ | i_284_ - (i_284_ >>> 8));
                                 }
                                 f += f_172_;
                                 if (f < fs[++i]) {
@@ -2883,13 +2271,9 @@ final class Class109 {
                                     int i_289_ = i_168_;
                                     int i_290_ = is_287_[i_288_];
                                     int i_291_ = i_289_ + i_290_;
-                                    int i_292_ = ((i_289_ & 0xff00ff)
-                                            + (i_290_ & 0xff00ff));
-                                    i_290_ = ((i_292_ & 0x1000100)
-                                            + (i_291_ - i_292_ & 0x10000));
-                                    is_287_[i_288_]
-                                            = (~0xffffff | i_291_ - i_290_
-                                            | i_290_ - (i_290_ >>> 8));
+                                    int i_292_ = ((i_289_ & 0xff00ff) + (i_290_ & 0xff00ff));
+                                    i_290_ = ((i_292_ & 0x1000100) + (i_291_ - i_292_ & 0x10000));
+                                    is_287_[i_288_] = (~0xffffff | i_291_ - i_290_ | i_290_ - (i_290_ >>> 8));
                                 }
                                 f += f_172_;
                                 if (f < fs[++i]) {
@@ -2898,22 +2282,16 @@ final class Class109 {
                                     int i_295_ = i_168_;
                                     int i_296_ = is_293_[i_294_];
                                     int i_297_ = i_295_ + i_296_;
-                                    int i_298_ = ((i_295_ & 0xff00ff)
-                                            + (i_296_ & 0xff00ff));
-                                    i_296_ = ((i_298_ & 0x1000100)
-                                            + (i_297_ - i_298_ & 0x10000));
-                                    is_293_[i_294_]
-                                            = (~0xffffff | i_297_ - i_296_
-                                            | i_296_ - (i_296_ >>> 8));
+                                    int i_298_ = ((i_295_ & 0xff00ff) + (i_296_ & 0xff00ff));
+                                    i_296_ = ((i_298_ & 0x1000100) + (i_297_ - i_298_ & 0x10000));
+                                    is_293_[i_294_] = (~0xffffff | i_297_ - i_296_ | i_296_ - (i_296_ >>> 8));
                                 }
                                 f += f_172_;
                             } while (--i_169_ > 0);
                         }
                         i_169_ = i_171_ - i_170_ & 0x3;
                         if (i_169_ > 0) {
-                            i_168_ = ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
+                            i_168_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             do {
                                 if (f < fs[++i]) {
                                     int[] is_299_ = is;
@@ -2921,13 +2299,9 @@ final class Class109 {
                                     int i_301_ = i_168_;
                                     int i_302_ = is_299_[i_300_];
                                     int i_303_ = i_301_ + i_302_;
-                                    int i_304_ = ((i_301_ & 0xff00ff)
-                                            + (i_302_ & 0xff00ff));
-                                    i_302_ = ((i_304_ & 0x1000100)
-                                            + (i_303_ - i_304_ & 0x10000));
-                                    is_299_[i_300_]
-                                            = (~0xffffff | i_303_ - i_302_
-                                            | i_302_ - (i_302_ >>> 8));
+                                    int i_304_ = ((i_301_ & 0xff00ff) + (i_302_ & 0xff00ff));
+                                    i_302_ = ((i_304_ & 0x1000100) + (i_303_ - i_304_ & 0x10000));
+                                    is_299_[i_300_] = (~0xffffff | i_303_ - i_302_ | i_302_ - (i_302_ >>> 8));
                                 }
                                 f += f_172_;
                             } while (--i_169_ > 0);
@@ -2937,76 +2311,41 @@ final class Class109 {
                         int i_269_ = 256 - this.anInt1674;
                         if (i_169_ > 0) {
                             do {
-                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 f_173_ += f_174_;
                                 f_175_ += f_176_;
                                 f_177_ += f_178_;
-                                i_168_ = (((i_168_ & 0xff00ff) * i_269_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_168_ & 0xff00) * i_269_ >> 8
-                                        & 0xff00));
+                                i_168_ = (((i_168_ & 0xff00ff) * i_269_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_269_ >> 8 & 0xff00));
                                 if (f < fs[++i]) {
                                     int i_270_ = is[i];
-                                    is[i]
-                                            = (i_168_
-                                            + ((i_270_ & 0xff00ff) * i_268_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_270_ & 0xff00) * i_268_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_168_ + ((i_270_ & 0xff00ff) * i_268_ >> 8 & 0xff00ff) + ((i_270_ & 0xff00) * i_268_ >> 8 & 0xff00));
                                 }
                                 f += f_172_;
                                 if (f < fs[++i]) {
                                     int i_271_ = is[i];
-                                    is[i]
-                                            = (i_168_
-                                            + ((i_271_ & 0xff00ff) * i_268_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_271_ & 0xff00) * i_268_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_168_ + ((i_271_ & 0xff00ff) * i_268_ >> 8 & 0xff00ff) + ((i_271_ & 0xff00) * i_268_ >> 8 & 0xff00));
                                 }
                                 f += f_172_;
                                 if (f < fs[++i]) {
                                     int i_272_ = is[i];
-                                    is[i]
-                                            = (i_168_
-                                            + ((i_272_ & 0xff00ff) * i_268_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_272_ & 0xff00) * i_268_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_168_ + ((i_272_ & 0xff00ff) * i_268_ >> 8 & 0xff00ff) + ((i_272_ & 0xff00) * i_268_ >> 8 & 0xff00));
                                 }
                                 f += f_172_;
                                 if (f < fs[++i]) {
                                     int i_273_ = is[i];
-                                    is[i]
-                                            = (i_168_
-                                            + ((i_273_ & 0xff00ff) * i_268_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_273_ & 0xff00) * i_268_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_168_ + ((i_273_ & 0xff00ff) * i_268_ >> 8 & 0xff00ff) + ((i_273_ & 0xff00) * i_268_ >> 8 & 0xff00));
                                 }
                                 f += f_172_;
                             } while (--i_169_ > 0);
                         }
                         i_169_ = i_171_ - i_170_ & 0x3;
                         if (i_169_ > 0) {
-                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                    | (int) f_175_ & 0xff00
-                                    | (int) f_177_ & 0xff);
-                            i_168_ = (((i_168_ & 0xff00ff) * i_269_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_168_ & 0xff00) * i_269_ >> 8
-                                    & 0xff00));
+                            i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
+                            i_168_ = (((i_168_ & 0xff00ff) * i_269_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_269_ >> 8 & 0xff00));
                             do {
                                 if (f < fs[++i]) {
                                     int i_274_ = is[i];
-                                    is[i]
-                                            = (i_168_
-                                            + ((i_274_ & 0xff00ff) * i_268_ >> 8
-                                            & 0xff00ff)
-                                            + ((i_274_ & 0xff00) * i_268_ >> 8
-                                            & 0xff00));
+                                    is[i] = (i_168_ + ((i_274_ & 0xff00ff) * i_268_ >> 8 & 0xff00ff) + ((i_274_ & 0xff00) * i_268_ >> 8 & 0xff00));
                                 }
                                 f += f_172_;
                             } while (--i_169_ > 0);
@@ -3016,10 +2355,7 @@ final class Class109 {
                     i_169_ = i_171_ - i_170_;
                     if (this.anInt1674 == 0) {
                         do {
-                            if (f < fs[++i])
-                                is[i] = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                            if (f < fs[++i]) is[i] = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             f += f_172_;
                             f_173_ += f_174_;
                             f_175_ += f_176_;
@@ -3030,18 +2366,12 @@ final class Class109 {
                             if (f < fs[++i]) {
                                 int[] is_308_ = is;
                                 int i_309_ = i;
-                                int i_310_ = ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
+                                int i_310_ = ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                                 int i_311_ = is_308_[i_309_];
                                 int i_312_ = i_310_ + i_311_;
-                                int i_313_ = ((i_310_ & 0xff00ff)
-                                        + (i_311_ & 0xff00ff));
-                                i_311_
-                                        = (i_313_ & 0x1000100) + (i_312_ - i_313_
-                                        & 0x10000);
-                                is_308_[i_309_] = (~0xffffff | i_312_ - i_311_
-                                        | i_311_ - (i_311_ >>> 8));
+                                int i_313_ = ((i_310_ & 0xff00ff) + (i_311_ & 0xff00ff));
+                                i_311_ = (i_313_ & 0x1000100) + (i_312_ - i_313_ & 0x10000);
+                                is_308_[i_309_] = (~0xffffff | i_312_ - i_311_ | i_311_ - (i_311_ >>> 8));
                             }
                             f += f_172_;
                             f_173_ += f_174_;
@@ -3053,19 +2383,10 @@ final class Class109 {
                         int i_306_ = 256 - this.anInt1674;
                         do {
                             if (f < fs[++i]) {
-                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000
-                                        | (int) f_175_ & 0xff00
-                                        | (int) f_177_ & 0xff);
-                                i_168_ = (((i_168_ & 0xff00ff) * i_306_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_168_ & 0xff00) * i_306_ >> 8
-                                        & 0xff00));
+                                i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
+                                i_168_ = (((i_168_ & 0xff00ff) * i_306_ >> 8 & 0xff00ff) + ((i_168_ & 0xff00) * i_306_ >> 8 & 0xff00));
                                 int i_307_ = is[i];
-                                is[i] = (i_168_
-                                        + ((i_307_ & 0xff00ff) * i_305_ >> 8
-                                        & 0xff00ff)
-                                        + ((i_307_ & 0xff00) * i_305_ >> 8
-                                        & 0xff00));
+                                is[i] = (i_168_ + ((i_307_ & 0xff00ff) * i_305_ >> 8 & 0xff00ff) + ((i_307_ & 0xff00) * i_305_ >> 8 & 0xff00));
                             }
                             f += f_172_;
                             f_173_ += f_174_;
@@ -3078,23 +2399,11 @@ final class Class109 {
         }
     }
 
-    final void method1022(float f, float f_314_, float f_315_, float f_316_,
-                          float f_317_, float f_318_, float f_319_,
-                          float f_320_, float f_321_, float f_322_,
-                          float f_323_, float f_324_) {
+    final void method1022(float f, float f_314_, float f_315_, float f_316_, float f_317_, float f_318_, float f_319_, float f_320_, float f_321_, float f_322_, float f_323_, float f_324_) {
         if (aBoolean1675) {
-            aHa_Sub1_1666.method3645((int) f, (int) f_316_, (int) f_317_,
-                    -8003,
-                    Class126.anIntArray4983[(int) f_322_],
-                    (int) f_314_);
-            aHa_Sub1_1666.method3645((int) f_314_, (int) f_317_, (int) f_318_,
-                    -8003,
-                    Class126.anIntArray4983[(int) f_322_],
-                    (int) f_315_);
-            aHa_Sub1_1666.method3645((int) f_315_, (int) f_318_, (int) f_316_,
-                    -8003,
-                    Class126.anIntArray4983[(int) f_322_],
-                    (int) f);
+            aHa_Sub1_1666.method3645((int) f, (int) f_316_, (int) f_317_, -8003, Class126.anIntArray4983[(int) f_322_], (int) f_314_);
+            aHa_Sub1_1666.method3645((int) f_314_, (int) f_317_, (int) f_318_, -8003, Class126.anIntArray4983[(int) f_322_], (int) f_315_);
+            aHa_Sub1_1666.method3645((int) f_315_, (int) f_318_, (int) f_316_, -8003, Class126.anIntArray4983[(int) f_322_], (int) f);
         } else {
             float f_325_ = f_317_ - f_316_;
             float f_326_ = f_314_ - f;
@@ -3105,20 +2414,14 @@ final class Class109 {
             float f_331_ = f_320_ - f_319_;
             float f_332_ = f_321_ - f_319_;
             float f_333_;
-            if (f_315_ != f_314_)
-                f_333_ = (f_318_ - f_317_) / (f_315_ - f_314_);
-            else
-                f_333_ = 0.0F;
+            if (f_315_ != f_314_) f_333_ = (f_318_ - f_317_) / (f_315_ - f_314_);
+            else f_333_ = 0.0F;
             float f_334_;
-            if (f_314_ != f)
-                f_334_ = f_325_ / f_326_;
-            else
-                f_334_ = 0.0F;
+            if (f_314_ != f) f_334_ = f_325_ / f_326_;
+            else f_334_ = 0.0F;
             float f_335_;
-            if (f_315_ != f)
-                f_335_ = f_327_ / f_328_;
-            else
-                f_335_ = 0.0F;
+            if (f_315_ != f) f_335_ = f_327_ / f_328_;
+            else f_335_ = 0.0F;
             float f_336_ = f_325_ * f_328_ - f_327_ * f_326_;
             if (f_336_ != 0.0F) {
                 float f_337_ = (f_329_ * f_328_ - f_330_ * f_326_) / f_336_;
@@ -3127,10 +2430,8 @@ final class Class109 {
                 float f_340_ = (f_332_ * f_325_ - f_331_ * f_327_) / f_336_;
                 if (f <= f_314_ && f <= f_315_) {
                     if (!(f >= (float) this.anInt1672)) {
-                        if (f_314_ > (float) this.anInt1672)
-                            f_314_ = (float) this.anInt1672;
-                        if (f_315_ > (float) this.anInt1672)
-                            f_315_ = (float) this.anInt1672;
+                        if (f_314_ > (float) this.anInt1672) f_314_ = (float) this.anInt1672;
+                        if (f_315_ > (float) this.anInt1672) f_315_ = (float) this.anInt1672;
                         f_322_ = f_322_ - f_337_ * f_316_ + f_337_;
                         f_319_ = f_319_ - f_339_ * f_316_ + f_339_;
                         if (f_314_ < f_315_) {
@@ -3146,17 +2447,12 @@ final class Class109 {
                                 f_317_ -= f_333_ * f_314_;
                                 f_314_ = 0.0F;
                             }
-                            if (f != f_314_ && f_335_ < f_334_
-                                    || f == f_314_ && f_335_ > f_333_) {
+                            if (f != f_314_ && f_335_ < f_334_ || f == f_314_ && f_335_ > f_333_) {
                                 f_315_ -= f_314_;
                                 f_314_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_318_,
-                                            (int) f_316_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_318_, (int) f_316_, f_322_, f_337_, f_319_, f_339_);
                                     f_318_ += f_335_;
                                     f_316_ += f_334_;
                                     f_322_ += f_338_;
@@ -3164,10 +2460,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_318_,
-                                            (int) f_317_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_318_, (int) f_317_, f_322_, f_337_, f_319_, f_339_);
                                     f_318_ += f_335_;
                                     f_317_ += f_333_;
                                     f_322_ += f_338_;
@@ -3177,13 +2470,9 @@ final class Class109 {
                             } else {
                                 f_315_ -= f_314_;
                                 f_314_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_316_,
-                                            (int) f_318_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_316_, (int) f_318_, f_322_, f_337_, f_319_, f_339_);
                                     f_318_ += f_335_;
                                     f_316_ += f_334_;
                                     f_322_ += f_338_;
@@ -3191,10 +2480,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_317_,
-                                            (int) f_318_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_317_, (int) f_318_, f_322_, f_337_, f_319_, f_339_);
                                     f_318_ += f_335_;
                                     f_317_ += f_333_;
                                     f_322_ += f_338_;
@@ -3215,17 +2501,12 @@ final class Class109 {
                                 f_318_ -= f_333_ * f_315_;
                                 f_315_ = 0.0F;
                             }
-                            if (f != f_315_ && f_335_ < f_334_
-                                    || f == f_315_ && f_333_ > f_334_) {
+                            if (f != f_315_ && f_335_ < f_334_ || f == f_315_ && f_333_ > f_334_) {
                                 f_314_ -= f_315_;
                                 f_315_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_317_,
-                                            (int) f_316_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_317_, (int) f_316_, f_322_, f_337_, f_319_, f_339_);
                                     f_317_ += f_335_;
                                     f_316_ += f_334_;
                                     f_322_ += f_338_;
@@ -3233,10 +2514,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_318_,
-                                            (int) f_316_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_318_, (int) f_316_, f_322_, f_337_, f_319_, f_339_);
                                     f_318_ += f_333_;
                                     f_316_ += f_334_;
                                     f_322_ += f_338_;
@@ -3246,13 +2524,9 @@ final class Class109 {
                             } else {
                                 f_314_ -= f_315_;
                                 f_315_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_316_,
-                                            (int) f_317_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_316_, (int) f_317_, f_322_, f_337_, f_319_, f_339_);
                                     f_317_ += f_335_;
                                     f_316_ += f_334_;
                                     f_322_ += f_338_;
@@ -3260,10 +2534,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_316_,
-                                            (int) f_318_, f_322_, f_337_,
-                                            f_319_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_316_, (int) f_318_, f_322_, f_337_, f_319_, f_339_);
                                     f_318_ += f_333_;
                                     f_316_ += f_334_;
                                     f_322_ += f_338_;
@@ -3275,10 +2546,8 @@ final class Class109 {
                     }
                 } else if (f_314_ <= f_315_) {
                     if (!(f_314_ >= (float) this.anInt1672)) {
-                        if (f_315_ > (float) this.anInt1672)
-                            f_315_ = (float) this.anInt1672;
-                        if (f > (float) this.anInt1672)
-                            f = (float) this.anInt1672;
+                        if (f_315_ > (float) this.anInt1672) f_315_ = (float) this.anInt1672;
+                        if (f > (float) this.anInt1672) f = (float) this.anInt1672;
                         f_323_ = f_323_ - f_337_ * f_317_ + f_337_;
                         f_320_ = f_320_ - f_339_ * f_317_ + f_339_;
                         if (f_315_ < f) {
@@ -3294,18 +2563,12 @@ final class Class109 {
                                 f_318_ -= f_335_ * f_315_;
                                 f_315_ = 0.0F;
                             }
-                            if (f_314_ != f_315_ && f_334_ < f_333_
-                                    || f_314_ == f_315_ && f_334_ > f_335_) {
+                            if (f_314_ != f_315_ && f_334_ < f_333_ || f_314_ == f_315_ && f_334_ > f_335_) {
                                 f -= f_315_;
                                 f_315_ -= f_314_;
-                                f_314_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_314_]);
+                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_316_, (int) f_317_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_316_, (int) f_317_, f_323_, f_337_, f_320_, f_339_);
                                     f_316_ += f_334_;
                                     f_317_ += f_333_;
                                     f_323_ += f_338_;
@@ -3313,10 +2576,7 @@ final class Class109 {
                                     f_314_ += (float) anInt1678;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_316_, (int) f_318_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_316_, (int) f_318_, f_323_, f_337_, f_320_, f_339_);
                                     f_316_ += f_334_;
                                     f_318_ += f_335_;
                                     f_323_ += f_338_;
@@ -3326,14 +2586,9 @@ final class Class109 {
                             } else {
                                 f -= f_315_;
                                 f_315_ -= f_314_;
-                                f_314_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_314_]);
+                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_317_, (int) f_316_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_317_, (int) f_316_, f_323_, f_337_, f_320_, f_339_);
                                     f_316_ += f_334_;
                                     f_317_ += f_333_;
                                     f_323_ += f_338_;
@@ -3341,10 +2596,7 @@ final class Class109 {
                                     f_314_ += (float) anInt1678;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_318_, (int) f_316_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_318_, (int) f_316_, f_323_, f_337_, f_320_, f_339_);
                                     f_316_ += f_334_;
                                     f_318_ += f_335_;
                                     f_323_ += f_338_;
@@ -3368,14 +2620,9 @@ final class Class109 {
                             if (f_334_ < f_333_) {
                                 f_315_ -= f;
                                 f -= f_314_;
-                                f_314_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_314_]);
+                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
                                 while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_318_, (int) f_317_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_318_, (int) f_317_, f_323_, f_337_, f_320_, f_339_);
                                     f_318_ += f_334_;
                                     f_317_ += f_333_;
                                     f_323_ += f_338_;
@@ -3383,10 +2630,7 @@ final class Class109 {
                                     f_314_ += (float) anInt1678;
                                 }
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_316_, (int) f_317_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_316_, (int) f_317_, f_323_, f_337_, f_320_, f_339_);
                                     f_316_ += f_335_;
                                     f_317_ += f_333_;
                                     f_323_ += f_338_;
@@ -3396,14 +2640,9 @@ final class Class109 {
                             } else {
                                 f_315_ -= f;
                                 f -= f_314_;
-                                f_314_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_314_]);
+                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
                                 while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_317_, (int) f_318_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_317_, (int) f_318_, f_323_, f_337_, f_320_, f_339_);
                                     f_318_ += f_334_;
                                     f_317_ += f_333_;
                                     f_323_ += f_338_;
@@ -3411,10 +2650,7 @@ final class Class109 {
                                     f_314_ += (float) anInt1678;
                                 }
                                 while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677,
-                                            (int) f_314_, 0, 0,
-                                            (int) f_317_, (int) f_316_,
-                                            f_323_, f_337_, f_320_, f_339_);
+                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_317_, (int) f_316_, f_323_, f_337_, f_320_, f_339_);
                                     f_316_ += f_335_;
                                     f_317_ += f_333_;
                                     f_323_ += f_338_;
@@ -3425,10 +2661,8 @@ final class Class109 {
                         }
                     }
                 } else if (!(f_315_ >= (float) this.anInt1672)) {
-                    if (f > (float) this.anInt1672)
-                        f = (float) this.anInt1672;
-                    if (f_314_ > (float) this.anInt1672)
-                        f_314_ = (float) this.anInt1672;
+                    if (f > (float) this.anInt1672) f = (float) this.anInt1672;
+                    if (f_314_ > (float) this.anInt1672) f_314_ = (float) this.anInt1672;
                     f_324_ = f_324_ - f_337_ * f_318_ + f_337_;
                     f_321_ = f_321_ - f_339_ * f_318_ + f_339_;
                     if (f < f_314_) {
@@ -3447,13 +2681,9 @@ final class Class109 {
                         if (f_333_ < f_335_) {
                             f_314_ -= f;
                             f -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676
-                                    [(int) f_315_]);
+                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
                             while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_317_,
-                                        (int) f_318_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_317_, (int) f_318_, f_324_, f_337_, f_321_, f_339_);
                                 f_317_ += f_333_;
                                 f_318_ += f_335_;
                                 f_324_ += f_338_;
@@ -3461,10 +2691,7 @@ final class Class109 {
                                 f_315_ += (float) anInt1678;
                             }
                             while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_317_,
-                                        (int) f_316_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_317_, (int) f_316_, f_324_, f_337_, f_321_, f_339_);
                                 f_317_ += f_333_;
                                 f_316_ += f_334_;
                                 f_324_ += f_338_;
@@ -3474,13 +2701,9 @@ final class Class109 {
                         } else {
                             f_314_ -= f;
                             f -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676
-                                    [(int) f_315_]);
+                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
                             while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_318_,
-                                        (int) f_317_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_318_, (int) f_317_, f_324_, f_337_, f_321_, f_339_);
                                 f_317_ += f_333_;
                                 f_318_ += f_335_;
                                 f_324_ += f_338_;
@@ -3488,10 +2711,7 @@ final class Class109 {
                                 f_315_ += (float) anInt1678;
                             }
                             while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_316_,
-                                        (int) f_317_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_316_, (int) f_317_, f_324_, f_337_, f_321_, f_339_);
                                 f_317_ += f_333_;
                                 f_316_ += f_334_;
                                 f_324_ += f_338_;
@@ -3515,13 +2735,9 @@ final class Class109 {
                         if (f_333_ < f_335_) {
                             f -= f_314_;
                             f_314_ -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676
-                                    [(int) f_315_]);
+                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
                             while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_316_,
-                                        (int) f_318_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_316_, (int) f_318_, f_324_, f_337_, f_321_, f_339_);
                                 f_316_ += f_333_;
                                 f_318_ += f_335_;
                                 f_324_ += f_338_;
@@ -3529,10 +2745,7 @@ final class Class109 {
                                 f_315_ += (float) anInt1678;
                             }
                             while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_317_,
-                                        (int) f_318_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_317_, (int) f_318_, f_324_, f_337_, f_321_, f_339_);
                                 f_317_ += f_334_;
                                 f_318_ += f_335_;
                                 f_324_ += f_338_;
@@ -3542,13 +2755,9 @@ final class Class109 {
                         } else {
                             f -= f_314_;
                             f_314_ -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676
-                                    [(int) f_315_]);
+                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
                             while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_318_,
-                                        (int) f_316_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_318_, (int) f_316_, f_324_, f_337_, f_321_, f_339_);
                                 f_316_ += f_333_;
                                 f_318_ += f_335_;
                                 f_324_ += f_338_;
@@ -3556,10 +2765,7 @@ final class Class109 {
                                 f_315_ += (float) anInt1678;
                             }
                             while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677,
-                                        (int) f_315_, 0, 0, (int) f_318_,
-                                        (int) f_317_, f_324_, f_337_,
-                                        f_321_, f_339_);
+                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_318_, (int) f_317_, f_324_, f_337_, f_321_, f_339_);
                                 f_317_ += f_334_;
                                 f_318_ += f_335_;
                                 f_324_ += f_338_;
@@ -3577,29 +2783,14 @@ final class Class109 {
         aBoolean1675 = bool;
     }
 
-    final void method1024
-            (float f, float f_341_, float f_342_, float f_343_, float f_344_,
-             float f_345_, float f_346_, float f_347_, float f_348_, float f_349_,
-             float f_350_, float f_351_, float f_352_, float f_353_, float f_354_,
-             int i, int i_355_, int i_356_, int i_357_, int i_358_, int i_359_,
-             int i_360_, int i_361_) {
+    final void method1024(float f, float f_341_, float f_342_, float f_343_, float f_344_, float f_345_, float f_346_, float f_347_, float f_348_, float f_349_, float f_350_, float f_351_, float f_352_, float f_353_, float f_354_, int i, int i_355_, int i_356_, int i_357_, int i_358_, int i_359_, int i_360_, int i_361_) {
         if (i_361_ != anInt1697) {
             anIntArray1698 = aHa_Sub1_1666.method3719(i_361_);
             if (anIntArray1698 == null) {
-                method1027((float) (int) f, (float) (int) f_341_,
-                        (float) (int) f_342_, (float) (int) f_343_,
-                        (float) (int) f_344_, (float) (int) f_345_,
-                        (float) (int) f_346_, (float) (int) f_347_,
-                        (float) (int) f_348_,
-                        Class6.method206(i, i_357_ | i_358_ << 24, 255),
-                        Class6.method206(i_355_, i_357_ | i_359_ << 24,
-                                255),
-                        Class6.method206(i_356_, i_357_ | i_360_ << 24,
-                                255));
+                method1027((float) (int) f, (float) (int) f_341_, (float) (int) f_342_, (float) (int) f_343_, (float) (int) f_344_, (float) (int) f_345_, (float) (int) f_346_, (float) (int) f_347_, (float) (int) f_348_, Class6.method206(i, i_357_ | i_358_ << 24, 255), Class6.method206(i_355_, i_357_ | i_359_ << 24, 255), Class6.method206(i_356_, i_357_ | i_360_ << 24, 255));
                 return;
             }
-            anInt1693 = (aHa_Sub1_1666.method3727(i_361_) ? 64
-                    : aHa_Sub1_1666.anInt7501);
+            anInt1693 = (aHa_Sub1_1666.method3727(i_361_) ? 64 : aHa_Sub1_1666.anInt7501);
             anInt1690 = anInt1693 - 1;
             anInt1683 = aHa_Sub1_1666.method3726(i_361_);
             aBoolean1694 = aHa_Sub1_1666.method3714(i_361_);
@@ -3691,10 +2882,8 @@ final class Class109 {
         }
         if (f <= f_341_ && f <= f_342_) {
             if (!(f >= (float) this.anInt1672)) {
-                if (f_341_ > (float) this.anInt1672)
-                    f_341_ = (float) this.anInt1672;
-                if (f_342_ > (float) this.anInt1672)
-                    f_342_ = (float) this.anInt1672;
+                if (f_341_ > (float) this.anInt1672) f_341_ = (float) this.anInt1672;
+                if (f_342_ > (float) this.anInt1672) f_342_ = (float) this.anInt1672;
                 if (f_341_ < f_342_) {
                     f_345_ = f_343_;
                     f_348_ = f_346_;
@@ -3738,18 +2927,12 @@ final class Class109 {
                         f_372_ -= f_392_ * f_341_;
                         f_341_ = 0.0F;
                     }
-                    if (f != f_341_ && f_394_ < f_374_
-                            || f == f_341_ && f_394_ > f_384_) {
+                    if (f != f_341_ && f_394_ < f_374_ || f == f_341_ && f_394_ > f_384_) {
                         f_342_ -= f_341_;
                         f_341_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_345_, (int) f_343_, f_348_,
-                                    f_346_, f_351_, f_349_, f_354_, f_352_,
-                                    (float) i_360_, (float) i_358_, f_364_,
-                                    f_362_, f_367_, f_365_, f_370_, f_368_,
-                                    f_373_, f_371_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
                             f_343_ += f_374_;
                             f_345_ += f_394_;
                             f_346_ += f_375_;
@@ -3771,12 +2954,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_345_, (int) f_344_, f_348_,
-                                    f_347_, f_351_, f_350_, f_354_, f_353_,
-                                    (float) i_360_, (float) i_359_, f_364_,
-                                    f_363_, f_367_, f_366_, f_370_, f_369_,
-                                    f_373_, f_372_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
                             f_344_ += f_384_;
                             f_345_ += f_394_;
                             f_347_ += f_385_;
@@ -3802,12 +2980,7 @@ final class Class109 {
                         f_341_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_343_, (int) f_345_, f_346_,
-                                    f_348_, f_349_, f_351_, f_352_, f_354_,
-                                    (float) i_358_, (float) i_360_, f_362_,
-                                    f_364_, f_365_, f_367_, f_368_, f_370_,
-                                    f_371_, f_373_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
                             f_343_ += f_374_;
                             f_345_ += f_394_;
                             f_346_ += f_375_;
@@ -3829,12 +3002,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_344_, (int) f_345_, f_347_,
-                                    f_348_, f_350_, f_351_, f_353_, f_354_,
-                                    (float) i_359_, (float) i_360_, f_363_,
-                                    f_364_, f_366_, f_367_, f_369_, f_370_,
-                                    f_372_, f_373_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
                             f_344_ += f_384_;
                             f_345_ += f_394_;
                             f_347_ += f_385_;
@@ -3899,18 +3067,12 @@ final class Class109 {
                         f_373_ -= f_392_ * f_342_;
                         f_342_ = 0.0F;
                     }
-                    if (f != f_342_ && f_394_ < f_374_
-                            || f == f_342_ && f_384_ > f_374_) {
+                    if (f != f_342_ && f_394_ < f_374_ || f == f_342_ && f_384_ > f_374_) {
                         f_341_ -= f_342_;
                         f_342_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_344_, (int) f_343_, f_347_,
-                                    f_346_, f_350_, f_349_, f_353_, f_352_,
-                                    (float) i_359_, (float) i_358_, f_363_,
-                                    f_362_, f_366_, f_365_, f_369_, f_368_,
-                                    f_372_, f_371_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
                             f_343_ += f_374_;
                             f_344_ += f_394_;
                             f_346_ += f_375_;
@@ -3932,12 +3094,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_345_, (int) f_343_, f_348_,
-                                    f_346_, f_351_, f_349_, f_354_, f_352_,
-                                    (float) i_360_, (float) i_358_, f_364_,
-                                    f_362_, f_367_, f_365_, f_370_, f_368_,
-                                    f_373_, f_371_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
                             f_345_ += f_384_;
                             f_343_ += f_374_;
                             f_348_ += f_385_;
@@ -3963,12 +3120,7 @@ final class Class109 {
                         f_342_ -= f;
                         f = (float) this.anIntArray1676[(int) f];
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_343_, (int) f_344_, f_346_,
-                                    f_347_, f_349_, f_350_, f_352_, f_353_,
-                                    (float) i_358_, (float) i_359_, f_362_,
-                                    f_363_, f_365_, f_366_, f_368_, f_369_,
-                                    f_371_, f_372_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
                             f_344_ += f_394_;
                             f_343_ += f_374_;
                             f_347_ += f_395_;
@@ -3990,12 +3142,7 @@ final class Class109 {
                             f += (float) anInt1678;
                         }
                         while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f,
-                                    (int) f_343_, (int) f_345_, f_346_,
-                                    f_348_, f_349_, f_351_, f_352_, f_354_,
-                                    (float) i_358_, (float) i_360_, f_362_,
-                                    f_364_, f_365_, f_367_, f_368_, f_370_,
-                                    f_371_, f_373_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
                             f_343_ += f_374_;
                             f_345_ += f_384_;
                             f_346_ += f_375_;
@@ -4021,10 +3168,8 @@ final class Class109 {
             }
         } else if (f_341_ <= f_342_) {
             if (!(f_341_ >= (float) this.anInt1672)) {
-                if (f_342_ > (float) this.anInt1672)
-                    f_342_ = (float) this.anInt1672;
-                if (f > (float) this.anInt1672)
-                    f = (float) this.anInt1672;
+                if (f_342_ > (float) this.anInt1672) f_342_ = (float) this.anInt1672;
+                if (f > (float) this.anInt1672) f = (float) this.anInt1672;
                 if (f_342_ < f) {
                     f_343_ = f_344_;
                     f_346_ = f_347_;
@@ -4068,19 +3213,12 @@ final class Class109 {
                         f_373_ -= f_402_ * f_342_;
                         f_342_ = 0.0F;
                     }
-                    if (f_341_ != f_342_ && f_374_ < f_384_
-                            || f_341_ == f_342_ && f_374_ > f_394_) {
+                    if (f_341_ != f_342_ && f_374_ < f_384_ || f_341_ == f_342_ && f_374_ > f_394_) {
                         f -= f_342_;
                         f_342_ -= f_341_;
-                        f_341_ = (float) (this.anIntArray1676
-                                [(int) f_341_]);
+                        f_341_ = (float) (this.anIntArray1676[(int) f_341_]);
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_343_,
-                                    (int) f_344_, f_346_, f_347_, f_349_,
-                                    f_350_, f_352_, f_353_, (float) i_358_,
-                                    (float) i_359_, f_362_, f_363_, f_365_,
-                                    f_366_, f_368_, f_369_, f_371_, f_372_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
                             f_343_ += f_374_;
                             f_344_ += f_384_;
                             f_346_ += f_375_;
@@ -4102,12 +3240,7 @@ final class Class109 {
                             f_341_ += (float) anInt1678;
                         }
                         while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_343_,
-                                    (int) f_345_, f_346_, f_348_, f_349_,
-                                    f_351_, f_352_, f_354_, (float) i_358_,
-                                    (float) i_360_, f_362_, f_364_, f_365_,
-                                    f_367_, f_368_, f_370_, f_371_, f_373_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
                             f_343_ += f_374_;
                             f_345_ += f_394_;
                             f_346_ += f_375_;
@@ -4131,15 +3264,9 @@ final class Class109 {
                     } else {
                         f -= f_342_;
                         f_342_ -= f_341_;
-                        f_341_ = (float) (this.anIntArray1676
-                                [(int) f_341_]);
+                        f_341_ = (float) (this.anIntArray1676[(int) f_341_]);
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_344_,
-                                    (int) f_343_, f_347_, f_346_, f_350_,
-                                    f_349_, f_353_, f_352_, (float) i_359_,
-                                    (float) i_358_, f_363_, f_362_, f_366_,
-                                    f_365_, f_369_, f_368_, f_372_, f_371_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
                             f_344_ += f_384_;
                             f_343_ += f_374_;
                             f_347_ += f_385_;
@@ -4161,12 +3288,7 @@ final class Class109 {
                             f_341_ += (float) anInt1678;
                         }
                         while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_345_,
-                                    (int) f_343_, f_348_, f_346_, f_351_,
-                                    f_349_, f_354_, f_352_, (float) i_360_,
-                                    (float) i_358_, f_364_, f_362_, f_367_,
-                                    f_365_, f_370_, f_368_, f_373_, f_371_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
                             f_345_ += f_394_;
                             f_343_ += f_374_;
                             f_348_ += f_395_;
@@ -4233,16 +3355,10 @@ final class Class109 {
                     }
                     f_342_ -= f;
                     f -= f_341_;
-                    f_341_ = (float) (this.anIntArray1676
-                            [(int) f_341_]);
+                    f_341_ = (float) (this.anIntArray1676[(int) f_341_]);
                     if (f_374_ < f_384_) {
                         while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_345_,
-                                    (int) f_344_, f_348_, f_347_, f_351_,
-                                    f_350_, f_354_, f_353_, (float) i_360_,
-                                    (float) i_359_, f_364_, f_363_, f_367_,
-                                    f_366_, f_370_, f_369_, f_373_, f_372_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
                             f_345_ += f_374_;
                             f_344_ += f_384_;
                             f_348_ += f_375_;
@@ -4264,12 +3380,7 @@ final class Class109 {
                             f_341_ += (float) anInt1678;
                         }
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_343_,
-                                    (int) f_344_, f_346_, f_347_, f_349_,
-                                    f_350_, f_352_, f_353_, (float) i_358_,
-                                    (float) i_359_, f_362_, f_363_, f_365_,
-                                    f_366_, f_368_, f_369_, f_371_, f_372_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
                             f_343_ += f_394_;
                             f_344_ += f_384_;
                             f_346_ += f_395_;
@@ -4292,12 +3403,7 @@ final class Class109 {
                         }
                     } else {
                         while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_344_,
-                                    (int) f_345_, f_347_, f_348_, f_350_,
-                                    f_351_, f_353_, f_354_, (float) i_359_,
-                                    (float) i_360_, f_363_, f_364_, f_366_,
-                                    f_367_, f_369_, f_370_, f_372_, f_373_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
                             f_344_ += f_384_;
                             f_345_ += f_374_;
                             f_347_ += f_385_;
@@ -4319,12 +3425,7 @@ final class Class109 {
                             f_341_ += (float) anInt1678;
                         }
                         while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698,
-                                    (int) f_341_, (int) f_344_,
-                                    (int) f_343_, f_347_, f_346_, f_350_,
-                                    f_349_, f_353_, f_352_, (float) i_359_,
-                                    (float) i_358_, f_363_, f_362_, f_366_,
-                                    f_365_, f_369_, f_368_, f_372_, f_371_);
+                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
                             f_344_ += f_384_;
                             f_343_ += f_394_;
                             f_347_ += f_385_;
@@ -4349,10 +3450,8 @@ final class Class109 {
                 }
             }
         } else if (!(f_342_ >= (float) this.anInt1672)) {
-            if (f > (float) this.anInt1672)
-                f = (float) this.anInt1672;
-            if (f_341_ > (float) this.anInt1672)
-                f_341_ = (float) this.anInt1672;
+            if (f > (float) this.anInt1672) f = (float) this.anInt1672;
+            if (f_341_ > (float) this.anInt1672) f_341_ = (float) this.anInt1672;
             if (f < f_341_) {
                 f_344_ = f_345_;
                 f_347_ = f_348_;
@@ -4399,15 +3498,9 @@ final class Class109 {
                 if (f_384_ < f_394_) {
                     f_341_ -= f;
                     f -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676
-                            [(int) f_342_]);
+                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
                     while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_344_, (int) f_345_,
-                                f_347_, f_348_, f_350_, f_351_, f_353_,
-                                f_354_, (float) i_359_, (float) i_360_,
-                                f_363_, f_364_, f_366_, f_367_, f_369_,
-                                f_370_, f_372_, f_373_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
                         f_344_ += f_384_;
                         f_345_ += f_394_;
                         f_347_ += f_385_;
@@ -4429,12 +3522,7 @@ final class Class109 {
                         f_342_ += (float) anInt1678;
                     }
                     while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_344_, (int) f_343_,
-                                f_347_, f_346_, f_350_, f_349_, f_353_,
-                                f_352_, (float) i_359_, (float) i_358_,
-                                f_363_, f_362_, f_366_, f_365_, f_369_,
-                                f_368_, f_372_, f_371_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
                         f_344_ += f_384_;
                         f_343_ += f_374_;
                         f_347_ += f_385_;
@@ -4458,15 +3546,9 @@ final class Class109 {
                 } else {
                     f_341_ -= f;
                     f -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676
-                            [(int) f_342_]);
+                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
                     while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_345_, (int) f_344_,
-                                f_348_, f_347_, f_351_, f_350_, f_354_,
-                                f_353_, (float) i_360_, (float) i_359_,
-                                f_364_, f_363_, f_367_, f_366_, f_370_,
-                                f_369_, f_373_, f_372_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
                         f_345_ += f_394_;
                         f_344_ += f_384_;
                         f_348_ += f_395_;
@@ -4488,12 +3570,7 @@ final class Class109 {
                         f_342_ += (float) anInt1678;
                     }
                     while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_343_, (int) f_344_,
-                                f_346_, f_347_, f_349_, f_350_, f_352_,
-                                f_353_, (float) i_358_, (float) i_359_,
-                                f_362_, f_363_, f_365_, f_366_, f_368_,
-                                f_369_, f_371_, f_372_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
                         f_343_ += f_374_;
                         f_344_ += f_384_;
                         f_346_ += f_375_;
@@ -4561,15 +3638,9 @@ final class Class109 {
                 if (f_384_ < f_394_) {
                     f -= f_341_;
                     f_341_ -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676
-                            [(int) f_342_]);
+                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
                     while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_343_, (int) f_345_,
-                                f_346_, f_348_, f_349_, f_351_, f_352_,
-                                f_354_, (float) i_358_, (float) i_360_,
-                                f_362_, f_364_, f_365_, f_367_, f_368_,
-                                f_370_, f_371_, f_373_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
                         f_343_ += f_384_;
                         f_345_ += f_394_;
                         f_346_ += f_385_;
@@ -4591,12 +3662,7 @@ final class Class109 {
                         f_342_ += (float) anInt1678;
                     }
                     while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_344_, (int) f_345_,
-                                f_347_, f_348_, f_350_, f_351_, f_353_,
-                                f_354_, (float) i_359_, (float) i_360_,
-                                f_363_, f_364_, f_366_, f_367_, f_369_,
-                                f_370_, f_372_, f_373_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
                         f_344_ += f_374_;
                         f_345_ += f_394_;
                         f_347_ += f_375_;
@@ -4620,15 +3686,9 @@ final class Class109 {
                 } else {
                     f -= f_341_;
                     f_341_ -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676
-                            [(int) f_342_]);
+                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
                     while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_345_, (int) f_343_,
-                                f_348_, f_346_, f_351_, f_349_, f_354_,
-                                f_352_, (float) i_360_, (float) i_358_,
-                                f_364_, f_362_, f_367_, f_365_, f_370_,
-                                f_368_, f_373_, f_371_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
                         f_345_ += f_394_;
                         f_343_ += f_384_;
                         f_348_ += f_395_;
@@ -4650,12 +3710,7 @@ final class Class109 {
                         f_342_ += (float) anInt1678;
                     }
                     while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698,
-                                (int) f_342_, (int) f_345_, (int) f_344_,
-                                f_348_, f_347_, f_351_, f_350_, f_354_,
-                                f_353_, (float) i_360_, (float) i_359_,
-                                f_364_, f_363_, f_367_, f_366_, f_370_,
-                                f_369_, f_373_, f_372_);
+                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
                         f_345_ += f_394_;
                         f_344_ += f_374_;
                         f_348_ += f_395_;
@@ -4681,12 +3736,7 @@ final class Class109 {
         }
     }
 
-    private final void method1025
-            (int[] is, int[] is_404_, int i, int i_405_, int i_406_, float f,
-             float f_407_, float f_408_, float f_409_, float f_410_, float f_411_,
-             float f_412_, float f_413_, float f_414_, float f_415_, float f_416_,
-             float f_417_, float f_418_, float f_419_, float f_420_, float f_421_,
-             float f_422_, float f_423_, float f_424_, float f_425_) {
+    private final void method1025(int[] is, int[] is_404_, int i, int i_405_, int i_406_, float f, float f_407_, float f_408_, float f_409_, float f_410_, float f_411_, float f_412_, float f_413_, float f_414_, float f_415_, float f_416_, float f_417_, float f_418_, float f_419_, float f_420_, float f_421_, float f_422_, float f_423_, float f_424_, float f_425_) {
         int i_426_ = i_406_ - i_405_;
         float f_427_ = 1.0F / (float) i_426_;
         float f_428_ = (f_407_ - f) * f_427_;
@@ -4699,8 +3749,7 @@ final class Class109 {
         float f_435_ = (f_423_ - f_422_) * f_427_;
         float f_436_ = (f_425_ - f_424_) * f_427_;
         if (this.aBoolean1671) {
-            if (i_406_ > this.anInt1679)
-                i_406_ = this.anInt1679;
+            if (i_406_ > this.anInt1679) i_406_ = this.anInt1679;
             if (i_405_ < 0) {
                 f -= f_428_ * (float) i_405_;
                 f_408_ -= f_429_ * (float) i_405_;
@@ -4722,60 +3771,25 @@ final class Class109 {
                 if (f_437_ < aFloatArray1677[i]) {
                     float f_438_ = f_408_ * f_437_;
                     float f_439_ = f_410_ * f_437_;
-                    int i_440_
-                            = ((int) (f_438_ * (float) anInt1693 * aFloat1681)
-                            & anInt1690);
-                    int i_441_
-                            = ((int) (f_439_ * (float) anInt1693 * aFloat1681)
-                            & anInt1690);
+                    int i_440_ = ((int) (f_438_ * (float) anInt1693 * aFloat1681) & anInt1690);
+                    int i_441_ = ((int) (f_439_ * (float) anInt1693 * aFloat1681) & anInt1690);
                     int i_442_ = anIntArray1698[i_441_ * anInt1693 + i_440_];
-                    i_440_ = ((int) (f_438_ * (float) anInt1691 * aFloat1684)
-                            & anInt1686);
-                    i_441_ = ((int) (f_439_ * (float) anInt1691 * aFloat1684)
-                            & anInt1686);
+                    i_440_ = ((int) (f_438_ * (float) anInt1691 * aFloat1684) & anInt1686);
+                    i_441_ = ((int) (f_439_ * (float) anInt1691 * aFloat1684) & anInt1686);
                     int i_443_ = anIntArray1685[i_441_ * anInt1691 + i_440_];
-                    i_440_ = ((int) (f_438_ * (float) anInt1695 * aFloat1682)
-                            & anInt1688);
-                    i_441_ = ((int) (f_439_ * (float) anInt1695 * aFloat1682)
-                            & anInt1688);
+                    i_440_ = ((int) (f_438_ * (float) anInt1695 * aFloat1682) & anInt1688);
+                    i_441_ = ((int) (f_439_ * (float) anInt1695 * aFloat1682) & anInt1688);
                     int i_444_ = anIntArray1692[i_441_ * anInt1695 + i_440_];
                     float f_445_ = 1.0F - (f_422_ + f_424_);
-                    i_442_
-                            = (~0xffffff
-                            | ((int) (f_422_ * (float) (i_442_ >> 16 & 0xff))
-                            << 16)
-                            | (int) (f_422_ * (float) (i_442_ >> 8 & 0xff)) << 8
-                            | (int) (f_422_ * (float) (i_442_ & 0xff)));
-                    i_443_
-                            = (~0xffffff
-                            | ((int) (f_424_ * (float) (i_443_ >> 16 & 0xff))
-                            << 16)
-                            | (int) (f_424_ * (float) (i_443_ >> 8 & 0xff)) << 8
-                            | (int) (f_424_ * (float) (i_443_ & 0xff)));
-                    i_444_
-                            = (~0xffffff
-                            | ((int) (f_445_ * (float) (i_444_ >> 16 & 0xff))
-                            << 16)
-                            | (int) (f_445_ * (float) (i_444_ >> 8 & 0xff)) << 8
-                            | (int) (f_445_ * (float) (i_444_ & 0xff)));
+                    i_442_ = (~0xffffff | ((int) (f_422_ * (float) (i_442_ >> 16 & 0xff)) << 16) | (int) (f_422_ * (float) (i_442_ >> 8 & 0xff)) << 8 | (int) (f_422_ * (float) (i_442_ & 0xff)));
+                    i_443_ = (~0xffffff | ((int) (f_424_ * (float) (i_443_ >> 16 & 0xff)) << 16) | (int) (f_424_ * (float) (i_443_ >> 8 & 0xff)) << 8 | (int) (f_424_ * (float) (i_443_ & 0xff)));
+                    i_444_ = (~0xffffff | ((int) (f_445_ * (float) (i_444_ >> 16 & 0xff)) << 16) | (int) (f_445_ * (float) (i_444_ >> 8 & 0xff)) << 8 | (int) (f_445_ * (float) (i_444_ & 0xff)));
                     int i_446_ = i_442_ + i_443_ + i_444_;
-                    int i_447_
-                            = (~0xffffff
-                            | ((int) (f_416_ * (float) (i_446_ >> 16 & 0xff))
-                            << 8) & 0xff0000
-                            | ((int) (f_418_ * (float) (i_446_ >> 8 & 0xff))
-                            & 0xff00)
-                            | (int) (f_420_ * (float) (i_446_ & 0xff)) >> 8);
+                    int i_447_ = (~0xffffff | ((int) (f_416_ * (float) (i_446_ >> 16 & 0xff)) << 8) & 0xff0000 | ((int) (f_418_ * (float) (i_446_ >> 8 & 0xff)) & 0xff00) | (int) (f_420_ * (float) (i_446_ & 0xff)) >> 8);
                     if (f_412_ != 0.0F) {
                         int i_448_ = (int) (255.0F - f_412_);
-                        int i_449_ = ((((anInt1696 & 0xff00ff) * (int) f_412_
-                                & ~0xff00ff)
-                                | ((anInt1696 & 0xff00) * (int) f_412_
-                                & 0xff0000))
-                                >>> 8);
-                        i_447_ = (((i_447_ & 0xff00ff) * i_448_ & ~0xff00ff
-                                | (i_447_ & 0xff00) * i_448_ & 0xff0000)
-                                >>> 8) + i_449_;
+                        int i_449_ = ((((anInt1696 & 0xff00ff) * (int) f_412_ & ~0xff00ff) | ((anInt1696 & 0xff00) * (int) f_412_ & 0xff0000)) >>> 8);
+                        i_447_ = (((i_447_ & 0xff00ff) * i_448_ & ~0xff00ff | (i_447_ & 0xff00) * i_448_ & 0xff0000) >>> 8) + i_449_;
                     }
                     is[i] = i_447_;
                     aFloatArray1677[i] = f_437_;
@@ -4794,14 +3808,10 @@ final class Class109 {
         }
     }
 
-    private final void method1026(int[] is, float[] fs, int i, int i_450_,
-                                  int i_451_, int i_452_, int i_453_, float f,
-                                  float f_454_) {
+    private final void method1026(int[] is, float[] fs, int i, int i_450_, int i_451_, int i_452_, int i_453_, float f, float f_454_) {
         if (this.aBoolean1671) {
-            if (i_453_ > this.anInt1679)
-                i_453_ = this.anInt1679;
-            if (i_452_ < 0)
-                i_452_ = 0;
+            if (i_453_ > this.anInt1679) i_453_ = this.anInt1679;
+            if (i_452_ < 0) i_452_ = 0;
         }
         if (i_452_ < i_453_) {
             i += i_452_ - 1;
@@ -4840,72 +3850,49 @@ final class Class109 {
                         f += f_454_;
                     }
                 } else if (this.anInt1674 == 254) {
-                    if (i_452_ != 0
-                            && i_453_ <= this.anInt1679 - 1) {
+                    if (i_452_ != 0 && i_453_ <= this.anInt1679 - 1) {
                         while (--i_451_ >= 0) {
-                            if (f < fs[++i])
-                                is[i - 1] = is[i];
+                            if (f < fs[++i]) is[i - 1] = is[i];
                             f += f_454_;
-                            if (f < fs[++i])
-                                is[i - 1] = is[i];
+                            if (f < fs[++i]) is[i - 1] = is[i];
                             f += f_454_;
-                            if (f < fs[++i])
-                                is[i - 1] = is[i];
+                            if (f < fs[++i]) is[i - 1] = is[i];
                             f += f_454_;
-                            if (f < fs[++i])
-                                is[i - 1] = is[i];
+                            if (f < fs[++i]) is[i - 1] = is[i];
                             f += f_454_;
                         }
                         i_451_ = i_453_ - i_452_ & 0x3;
                         while (--i_451_ >= 0) {
-                            if (f < fs[++i])
-                                is[i - 1] = is[i];
+                            if (f < fs[++i]) is[i - 1] = is[i];
                             f += f_454_;
                         }
                     }
                 } else {
                     int i_455_ = this.anInt1674;
                     int i_456_ = 256 - this.anInt1674;
-                    i_450_ = (((i_450_ & 0xff00ff) * i_456_ >> 8 & 0xff00ff)
-                            + ((i_450_ & 0xff00) * i_456_ >> 8 & 0xff00));
+                    i_450_ = (((i_450_ & 0xff00ff) * i_456_ >> 8 & 0xff00ff) + ((i_450_ & 0xff00) * i_456_ >> 8 & 0xff00));
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) {
                             int i_457_ = is[i];
-                            is[i] = (i_450_
-                                    + ((i_457_ & 0xff00ff) * i_455_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_457_ & 0xff00) * i_455_ >> 8
-                                    & 0xff00));
+                            is[i] = (i_450_ + ((i_457_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_457_ & 0xff00) * i_455_ >> 8 & 0xff00));
                             fs[i] = f;
                         }
                         f += f_454_;
                         if (f < fs[++i]) {
                             int i_458_ = is[i];
-                            is[i] = (i_450_
-                                    + ((i_458_ & 0xff00ff) * i_455_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_458_ & 0xff00) * i_455_ >> 8
-                                    & 0xff00));
+                            is[i] = (i_450_ + ((i_458_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_458_ & 0xff00) * i_455_ >> 8 & 0xff00));
                             fs[i] = f;
                         }
                         f += f_454_;
                         if (f < fs[++i]) {
                             int i_459_ = is[i];
-                            is[i] = (i_450_
-                                    + ((i_459_ & 0xff00ff) * i_455_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_459_ & 0xff00) * i_455_ >> 8
-                                    & 0xff00));
+                            is[i] = (i_450_ + ((i_459_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_459_ & 0xff00) * i_455_ >> 8 & 0xff00));
                             fs[i] = f;
                         }
                         f += f_454_;
                         if (f < fs[++i]) {
                             int i_460_ = is[i];
-                            is[i] = (i_450_
-                                    + ((i_460_ & 0xff00ff) * i_455_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_460_ & 0xff00) * i_455_ >> 8
-                                    & 0xff00));
+                            is[i] = (i_450_ + ((i_460_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_460_ & 0xff00) * i_455_ >> 8 & 0xff00));
                             fs[i] = f;
                         }
                         f += f_454_;
@@ -4914,11 +3901,7 @@ final class Class109 {
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) {
                             int i_461_ = is[i];
-                            is[i] = (i_450_
-                                    + ((i_461_ & 0xff00ff) * i_455_ >> 8
-                                    & 0xff00ff)
-                                    + ((i_461_ & 0xff00) * i_455_ >> 8
-                                    & 0xff00));
+                            is[i] = (i_450_ + ((i_461_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_461_ & 0xff00) * i_455_ >> 8 & 0xff00));
                             fs[i] = f;
                         }
                         f += f_454_;
@@ -4926,84 +3909,61 @@ final class Class109 {
                 }
             } else if (this.anInt1674 == 0) {
                 while (--i_451_ >= 0) {
-                    if (f < fs[++i])
-                        is[i] = i_450_;
+                    if (f < fs[++i]) is[i] = i_450_;
                     f += f_454_;
-                    if (f < fs[++i])
-                        is[i] = i_450_;
+                    if (f < fs[++i]) is[i] = i_450_;
                     f += f_454_;
-                    if (f < fs[++i])
-                        is[i] = i_450_;
+                    if (f < fs[++i]) is[i] = i_450_;
                     f += f_454_;
-                    if (f < fs[++i])
-                        is[i] = i_450_;
+                    if (f < fs[++i]) is[i] = i_450_;
                     f += f_454_;
                 }
                 i_451_ = i_453_ - i_452_ & 0x3;
                 while (--i_451_ >= 0) {
-                    if (f < fs[++i])
-                        is[i] = i_450_;
+                    if (f < fs[++i]) is[i] = i_450_;
                     f += f_454_;
                 }
             } else if (this.anInt1674 == 254) {
                 if (i_452_ != 0 && i_453_ <= this.anInt1679 - 1) {
                     while (--i_451_ >= 0) {
-                        if (f < fs[++i])
-                            is[i - 1] = is[i];
+                        if (f < fs[++i]) is[i - 1] = is[i];
                         f += f_454_;
-                        if (f < fs[++i])
-                            is[i - 1] = is[i];
+                        if (f < fs[++i]) is[i - 1] = is[i];
                         f += f_454_;
-                        if (f < fs[++i])
-                            is[i - 1] = is[i];
+                        if (f < fs[++i]) is[i - 1] = is[i];
                         f += f_454_;
-                        if (f < fs[++i])
-                            is[i - 1] = is[i];
+                        if (f < fs[++i]) is[i - 1] = is[i];
                         f += f_454_;
                     }
                     i_451_ = i_453_ - i_452_ & 0x3;
                     while (--i_451_ >= 0) {
-                        if (f < fs[++i])
-                            is[i - 1] = is[i];
+                        if (f < fs[++i]) is[i - 1] = is[i];
                         f += f_454_;
                     }
                 }
             } else {
                 int i_462_ = this.anInt1674;
                 int i_463_ = 256 - this.anInt1674;
-                i_450_ = (((i_450_ & 0xff00ff) * i_463_ >> 8 & 0xff00ff)
-                        + ((i_450_ & 0xff00) * i_463_ >> 8 & 0xff00));
+                i_450_ = (((i_450_ & 0xff00ff) * i_463_ >> 8 & 0xff00ff) + ((i_450_ & 0xff00) * i_463_ >> 8 & 0xff00));
                 while (--i_451_ >= 0) {
                     if (f < fs[++i]) {
                         int i_464_ = is[i];
-                        is[i]
-                                = (i_450_
-                                + ((i_464_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff)
-                                + ((i_464_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                        is[i] = (i_450_ + ((i_464_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_464_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
                     f += f_454_;
                     if (f < fs[++i]) {
                         int i_465_ = is[i];
-                        is[i]
-                                = (i_450_
-                                + ((i_465_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff)
-                                + ((i_465_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                        is[i] = (i_450_ + ((i_465_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_465_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
                     f += f_454_;
                     if (f < fs[++i]) {
                         int i_466_ = is[i];
-                        is[i]
-                                = (i_450_
-                                + ((i_466_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff)
-                                + ((i_466_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                        is[i] = (i_450_ + ((i_466_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_466_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
                     f += f_454_;
                     if (f < fs[++i]) {
                         int i_467_ = is[i];
-                        is[i]
-                                = (i_450_
-                                + ((i_467_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff)
-                                + ((i_467_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                        is[i] = (i_450_ + ((i_467_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_467_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
                     f += f_454_;
                 }
@@ -5011,10 +3971,7 @@ final class Class109 {
                 while (--i_451_ >= 0) {
                     if (f < fs[++i]) {
                         int i_468_ = is[i];
-                        is[i]
-                                = (i_450_
-                                + ((i_468_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff)
-                                + ((i_468_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                        is[i] = (i_450_ + ((i_468_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_468_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
                     f += f_454_;
                 }
@@ -5022,17 +3979,11 @@ final class Class109 {
         }
     }
 
-    final void method1027(float f, float f_469_, float f_470_, float f_471_,
-                          float f_472_, float f_473_, float f_474_,
-                          float f_475_, float f_476_, int i, int i_477_,
-                          int i_478_) {
+    final void method1027(float f, float f_469_, float f_470_, float f_471_, float f_472_, float f_473_, float f_474_, float f_475_, float f_476_, int i, int i_477_, int i_478_) {
         if (aBoolean1675) {
-            aHa_Sub1_1666.method3645((int) f, (int) f_471_, (int) f_472_,
-                    -8003, ~0xffffff | i, (int) f_469_);
-            aHa_Sub1_1666.method3645((int) f_469_, (int) f_472_, (int) f_473_,
-                    -8003, ~0xffffff | i, (int) f_470_);
-            aHa_Sub1_1666.method3645((int) f_470_, (int) f_473_, (int) f_471_,
-                    -8003, ~0xffffff | i, (int) f);
+            aHa_Sub1_1666.method3645((int) f, (int) f_471_, (int) f_472_, -8003, ~0xffffff | i, (int) f_469_);
+            aHa_Sub1_1666.method3645((int) f_469_, (int) f_472_, (int) f_473_, -8003, ~0xffffff | i, (int) f_470_);
+            aHa_Sub1_1666.method3645((int) f_470_, (int) f_473_, (int) f_471_, -8003, ~0xffffff | i, (int) f);
         } else {
             float f_479_ = f_472_ - f_471_;
             float f_480_ = f_469_ - f;
@@ -5047,20 +3998,14 @@ final class Class109 {
             float f_489_ = (float) ((i_477_ & 0xff) - (i & 0xff));
             float f_490_ = (float) ((i_478_ & 0xff) - (i & 0xff));
             float f_491_;
-            if (f_470_ != f_469_)
-                f_491_ = (f_473_ - f_472_) / (f_470_ - f_469_);
-            else
-                f_491_ = 0.0F;
+            if (f_470_ != f_469_) f_491_ = (f_473_ - f_472_) / (f_470_ - f_469_);
+            else f_491_ = 0.0F;
             float f_492_;
-            if (f_469_ != f)
-                f_492_ = f_479_ / f_480_;
-            else
-                f_492_ = 0.0F;
+            if (f_469_ != f) f_492_ = f_479_ / f_480_;
+            else f_492_ = 0.0F;
             float f_493_;
-            if (f_470_ != f)
-                f_493_ = f_481_ / f_482_;
-            else
-                f_493_ = 0.0F;
+            if (f_470_ != f) f_493_ = f_481_ / f_482_;
+            else f_493_ = 0.0F;
             float f_494_ = f_479_ * f_482_ - f_481_ * f_480_;
             if (f_494_ != 0.0F) {
                 float f_495_ = (f_483_ * f_482_ - f_484_ * f_480_) / f_494_;
@@ -5073,17 +4018,12 @@ final class Class109 {
                 float f_502_ = (f_490_ * f_479_ - f_489_ * f_481_) / f_494_;
                 if (f <= f_469_ && f <= f_470_) {
                     if (!(f >= (float) this.anInt1672)) {
-                        if (f_469_ > (float) this.anInt1672)
-                            f_469_ = (float) this.anInt1672;
-                        if (f_470_ > (float) this.anInt1672)
-                            f_470_ = (float) this.anInt1672;
+                        if (f_469_ > (float) this.anInt1672) f_469_ = (float) this.anInt1672;
+                        if (f_470_ > (float) this.anInt1672) f_470_ = (float) this.anInt1672;
                         f_474_ = f_474_ - f_495_ * f_471_ + f_495_;
-                        float f_503_ = ((float) (i & 0xff0000)
-                                - f_497_ * f_471_ + f_497_);
-                        float f_504_
-                                = (float) (i & 0xff00) - f_499_ * f_471_ + f_499_;
-                        float f_505_
-                                = (float) (i & 0xff) - f_501_ * f_471_ + f_501_;
+                        float f_503_ = ((float) (i & 0xff0000) - f_497_ * f_471_ + f_497_);
+                        float f_504_ = (float) (i & 0xff00) - f_499_ * f_471_ + f_499_;
+                        float f_505_ = (float) (i & 0xff) - f_501_ * f_471_ + f_501_;
                         if (f_469_ < f_470_) {
                             f_473_ = f_471_;
                             if (f < 0.0F) {
@@ -5099,18 +4039,12 @@ final class Class109 {
                                 f_472_ -= f_491_ * f_469_;
                                 f_469_ = 0.0F;
                             }
-                            if (f != f_469_ && f_493_ < f_492_
-                                    || f == f_469_ && f_493_ > f_491_) {
+                            if (f != f_469_ && f_493_ < f_492_ || f == f_469_ && f_493_ > f_491_) {
                                 f_470_ -= f_469_;
                                 f_469_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_473_,
-                                            (int) f_471_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_473_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
@@ -5120,11 +4054,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_473_,
-                                            (int) f_472_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_473_, (int) f_472_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_472_ += f_491_;
                                     f_474_ += f_496_;
@@ -5136,14 +4066,9 @@ final class Class109 {
                             } else {
                                 f_470_ -= f_469_;
                                 f_469_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_471_,
-                                            (int) f_473_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_471_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
@@ -5153,11 +4078,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_472_,
-                                            (int) f_473_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_472_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_472_ += f_491_;
                                     f_474_ += f_496_;
@@ -5182,18 +4103,12 @@ final class Class109 {
                                 f_473_ -= f_491_ * f_470_;
                                 f_470_ = 0.0F;
                             }
-                            if (f != f_470_ && f_493_ < f_492_
-                                    || f == f_470_ && f_491_ > f_492_) {
+                            if (f != f_470_ && f_493_ < f_492_ || f == f_470_ && f_491_ > f_492_) {
                                 f_469_ -= f_470_;
                                 f_470_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_472_,
-                                            (int) f_471_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_472_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_472_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
@@ -5203,11 +4118,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_473_,
-                                            (int) f_471_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_473_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_491_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
@@ -5219,14 +4130,9 @@ final class Class109 {
                             } else {
                                 f_469_ -= f_470_;
                                 f_470_ -= f;
-                                f = (float) (this.anIntArray1676
-                                        [(int) f]);
+                                f = (float) (this.anIntArray1676[(int) f]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_471_,
-                                            (int) f_472_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_471_, (int) f_472_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_472_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
@@ -5236,11 +4142,7 @@ final class Class109 {
                                     f += (float) anInt1678;
                                 }
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f, 0, 0, (int) f_471_,
-                                            (int) f_473_, f_474_, f_495_,
-                                            f_503_, f_497_, f_504_, f_499_,
-                                            f_505_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_471_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_491_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
@@ -5254,17 +4156,12 @@ final class Class109 {
                     }
                 } else if (f_469_ <= f_470_) {
                     if (!(f_469_ >= (float) this.anInt1672)) {
-                        if (f_470_ > (float) this.anInt1672)
-                            f_470_ = (float) this.anInt1672;
-                        if (f > (float) this.anInt1672)
-                            f = (float) this.anInt1672;
+                        if (f_470_ > (float) this.anInt1672) f_470_ = (float) this.anInt1672;
+                        if (f > (float) this.anInt1672) f = (float) this.anInt1672;
                         f_475_ = f_475_ - f_495_ * f_472_ + f_495_;
-                        float f_506_ = ((float) (i_477_ & 0xff0000)
-                                - f_497_ * f_472_ + f_497_);
-                        float f_507_ = ((float) (i_477_ & 0xff00)
-                                - f_499_ * f_472_ + f_499_);
-                        float f_508_ = ((float) (i_477_ & 0xff)
-                                - f_501_ * f_472_ + f_501_);
+                        float f_506_ = ((float) (i_477_ & 0xff0000) - f_497_ * f_472_ + f_497_);
+                        float f_507_ = ((float) (i_477_ & 0xff00) - f_499_ * f_472_ + f_499_);
+                        float f_508_ = ((float) (i_477_ & 0xff) - f_501_ * f_472_ + f_501_);
                         if (f_470_ < f) {
                             f_471_ = f_472_;
                             if (f_469_ < 0.0F) {
@@ -5280,19 +4177,12 @@ final class Class109 {
                                 f_473_ -= f_493_ * f_470_;
                                 f_470_ = 0.0F;
                             }
-                            if (f_469_ != f_470_ && f_492_ < f_491_
-                                    || f_469_ == f_470_ && f_492_ > f_493_) {
+                            if (f_469_ != f_470_ && f_492_ < f_491_ || f_469_ == f_470_ && f_492_ > f_493_) {
                                 f -= f_470_;
                                 f_470_ -= f_469_;
-                                f_469_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_469_]);
+                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_471_, (int) f_472_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_471_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
@@ -5302,11 +4192,7 @@ final class Class109 {
                                     f_469_ += (float) anInt1678;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_471_, (int) f_473_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_471_, (int) f_473_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_473_ += f_493_;
                                     f_475_ += f_496_;
@@ -5318,15 +4204,9 @@ final class Class109 {
                             } else {
                                 f -= f_470_;
                                 f_470_ -= f_469_;
-                                f_469_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_469_]);
+                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_472_, (int) f_471_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_472_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
@@ -5336,11 +4216,7 @@ final class Class109 {
                                     f_469_ += (float) anInt1678;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_473_, (int) f_471_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_473_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_473_ += f_493_;
                                     f_475_ += f_496_;
@@ -5368,15 +4244,9 @@ final class Class109 {
                             if (f_492_ < f_491_) {
                                 f_470_ -= f;
                                 f -= f_469_;
-                                f_469_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_469_]);
+                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_473_, (int) f_472_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_473_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_473_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
@@ -5386,11 +4256,7 @@ final class Class109 {
                                     f_469_ += (float) anInt1678;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_471_, (int) f_472_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_471_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_493_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
@@ -5402,15 +4268,9 @@ final class Class109 {
                             } else {
                                 f_470_ -= f;
                                 f -= f_469_;
-                                f_469_
-                                        = (float) (this.anIntArray1676
-                                        [(int) f_469_]);
+                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_472_, (int) f_473_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_472_, (int) f_473_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_473_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
@@ -5420,11 +4280,7 @@ final class Class109 {
                                     f_469_ += (float) anInt1678;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677,
-                                            (int) f_469_, 0, 0,
-                                            (int) f_472_, (int) f_471_,
-                                            f_475_, f_495_, f_506_, f_497_,
-                                            f_507_, f_499_, f_508_, f_501_);
+                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_472_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_493_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
@@ -5437,17 +4293,12 @@ final class Class109 {
                         }
                     }
                 } else if (!(f_470_ >= (float) this.anInt1672)) {
-                    if (f > (float) this.anInt1672)
-                        f = (float) this.anInt1672;
-                    if (f_469_ > (float) this.anInt1672)
-                        f_469_ = (float) this.anInt1672;
+                    if (f > (float) this.anInt1672) f = (float) this.anInt1672;
+                    if (f_469_ > (float) this.anInt1672) f_469_ = (float) this.anInt1672;
                     f_476_ = f_476_ - f_495_ * f_473_ + f_495_;
-                    float f_509_ = ((float) (i_478_ & 0xff0000)
-                            - f_497_ * f_473_ + f_497_);
-                    float f_510_
-                            = (float) (i_478_ & 0xff00) - f_499_ * f_473_ + f_499_;
-                    float f_511_
-                            = (float) (i_478_ & 0xff) - f_501_ * f_473_ + f_501_;
+                    float f_509_ = ((float) (i_478_ & 0xff0000) - f_497_ * f_473_ + f_497_);
+                    float f_510_ = (float) (i_478_ & 0xff00) - f_499_ * f_473_ + f_499_;
+                    float f_511_ = (float) (i_478_ & 0xff) - f_501_ * f_473_ + f_501_;
                     if (f < f_469_) {
                         f_472_ = f_473_;
                         if (f_470_ < 0.0F) {
@@ -5466,14 +4317,9 @@ final class Class109 {
                         if (f_491_ < f_493_) {
                             f_469_ -= f;
                             f -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676
-                                    [(int) f_470_]);
+                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_472_,
-                                        (int) f_473_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_472_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
@@ -5483,11 +4329,7 @@ final class Class109 {
                                 f_470_ += (float) anInt1678;
                             }
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_472_,
-                                        (int) f_471_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_472_, (int) f_471_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_471_ += f_492_;
                                 f_476_ += f_496_;
@@ -5499,14 +4341,9 @@ final class Class109 {
                         } else {
                             f_469_ -= f;
                             f -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676
-                                    [(int) f_470_]);
+                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_473_,
-                                        (int) f_472_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_473_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
@@ -5516,11 +4353,7 @@ final class Class109 {
                                 f_470_ += (float) anInt1678;
                             }
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_471_,
-                                        (int) f_472_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_471_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_471_ += f_492_;
                                 f_476_ += f_496_;
@@ -5548,14 +4381,9 @@ final class Class109 {
                         if (f_491_ < f_493_) {
                             f -= f_469_;
                             f_469_ -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676
-                                    [(int) f_470_]);
+                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_471_,
-                                        (int) f_473_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_471_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_471_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
@@ -5565,11 +4393,7 @@ final class Class109 {
                                 f_470_ += (float) anInt1678;
                             }
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_472_,
-                                        (int) f_473_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_472_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_492_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
@@ -5581,14 +4405,9 @@ final class Class109 {
                         } else {
                             f -= f_469_;
                             f_469_ -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676
-                                    [(int) f_470_]);
+                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_473_,
-                                        (int) f_471_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_473_, (int) f_471_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_471_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
@@ -5598,11 +4417,7 @@ final class Class109 {
                                 f_470_ += (float) anInt1678;
                             }
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677,
-                                        (int) f_470_, 0, 0, (int) f_473_,
-                                        (int) f_472_, f_476_, f_495_,
-                                        f_509_, f_497_, f_510_, f_499_,
-                                        f_511_, f_501_);
+                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_473_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_492_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;

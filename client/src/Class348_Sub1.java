@@ -26,15 +26,13 @@ abstract class Class348_Sub1 extends Class348 {
     abstract void method2716(int i, float f);
 
     final int method2717(byte i) {
-        if (i <= 69)
-            method2719(74);
+        if (i <= 69) method2719(74);
         anInt6549++;
         return this.anInt6553;
     }
 
     static final void method2718(int i) {
-        if (i >= -95)
-            method2719(90);
+        if (i >= -95) method2719(90);
         anInt6560++;
         if (Class239_Sub13.anInt5976 != -1) {
             Class24.method298(false, -1, -1, Class239_Sub13.anInt5976, -67);
@@ -43,44 +41,38 @@ abstract class Class348_Sub1 extends Class348 {
     }
 
     public static void method2719(int i) {
-        if (i != 11339)
-            method2719(87);
+        if (i != 11339) method2719(87);
         aClass46_6561 = null;
         anIntArray6547 = null;
         aClass185_6559 = null;
     }
 
     final int method2720(int i) {
-        if (i != -1)
-            this.anInt6562 = -97;
+        if (i != -1) this.anInt6562 = -97;
         anInt6552++;
         return anInt6545;
     }
 
     final float method2721(int i) {
-        if (i >= -7)
-            return 0.08188432F;
+        if (i >= -7) return 0.08188432F;
         anInt6557++;
         return this.aFloat6550;
     }
 
     final int method2722(int i) {
-        if (i <= 119)
-            return -23;
+        if (i <= 119) return -23;
         anInt6556++;
         return this.anInt6548;
     }
 
     final int method2723(int i) {
-        if (i != -1)
-            return -46;
+        if (i != -1) return -46;
         anInt6546++;
         return anInt6554;
     }
 
     final int method2724(int i) {
-        if (i != -1)
-            method2725(53, (byte) -84, -7, -12);
+        if (i != -1) method2725(53, (byte) -84, -7, -12);
         anInt6563++;
         return this.anInt6562;
     }

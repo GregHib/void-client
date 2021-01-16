@@ -9,10 +9,8 @@ abstract class Class348_Sub16 extends Class348 {
     Class348_Sub19 aClass348_Sub19_6787;
 
     final void method2815(int[] is, int i, int i_0_) {
-        if (this.aBoolean6784)
-            method2817(is, i, i_0_);
-        else
-            method2819(i_0_);
+        if (this.aBoolean6784) method2817(is, i, i_0_);
+        else method2819(i_0_);
     }
 
     abstract Class348_Sub16 method2816();

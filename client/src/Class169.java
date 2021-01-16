@@ -24,23 +24,19 @@ final class Class169 implements Runnable {
             Class348_Sub26 class348_sub26;
             synchronized (aClass262_2258) {
                 Class348 class348;
-                for (class348 = aClass262_2258.method1997(8); class348 == null;
-                     class348 = aClass262_2258.method1997(8)) {
+                for (class348 = aClass262_2258.method1997(8); class348 == null; class348 = aClass262_2258.method1997(8)) {
                     try {
                         aClass262_2258.wait();
                     } catch (InterruptedException interruptedexception) {
                         /* empty */
                     }
                 }
-                if (!(class348 instanceof Class348_Sub26))
-                    break;
+                if (!(class348 instanceof Class348_Sub26)) break;
                 class348_sub26 = (Class348_Sub26) class348;
             }
             int i;
             try {
-                byte[] is = InetAddress.getByName
-                        (class348_sub26.aString6888)
-                        .getAddress();
+                byte[] is = InetAddress.getByName(class348_sub26.aString6888).getAddress();
                 i = jagmisc.ping(is[0], is[1], is[2], is[3], 1000L);
             } catch (Throwable throwable) {
                 i = 1000;
@@ -56,20 +52,13 @@ final class Class169 implements Runnable {
         }
     }
 
-    static final void method1301(r var_r, int i, int i_0_, int i_1_,
-                                 boolean[] bools) {
+    static final void method1301(r var_r, int i, int i_0_, int i_1_, boolean[] bools) {
         if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
-            int i_2_
-                    = Class348_Sub1_Sub1.aSArray8801[i].method3986(i_0_, i_1_,
-                    (byte) -93);
+            int i_2_ = Class348_Sub1_Sub1.aSArray8801[i].method3986(i_0_, i_1_, (byte) -93);
             for (int i_3_ = 0; i_3_ <= i; i_3_++) {
                 if (bools == null || bools[i_3_]) {
                     s var_s = Class348_Sub1_Sub1.aSArray8801[i_3_];
-                    if (var_s != null)
-                        var_s.wa(var_r, i_0_,
-                                i_2_ - var_s.method3986(i_0_, i_1_,
-                                        (byte) -103),
-                                i_1_, 0, false);
+                    if (var_s != null) var_s.wa(var_r, i_0_, i_2_ - var_s.method3986(i_0_, i_1_, (byte) -103), i_1_, 0, false);
                 }
             }
         }
@@ -82,12 +71,9 @@ final class Class169 implements Runnable {
 
     final Class348_Sub26 method1302(int i, String string) {
         anInt2266++;
-        if (aThread2259 == null)
-            throw new IllegalStateException("");
-        if (string == null)
-            throw new IllegalArgumentException("");
-        if (i != -5255)
-            aClass262_2258 = null;
+        if (aThread2259 == null) throw new IllegalStateException("");
+        if (string == null) throw new IllegalArgumentException("");
+        if (i != -5255) aClass262_2258 = null;
         Class348_Sub26 class348_sub26 = new Class348_Sub26(string);
         method1304(1000, class348_sub26);
         return class348_sub26;
@@ -103,14 +89,12 @@ final class Class169 implements Runnable {
                 /* empty */
             }
             aThread2259 = null;
-            if (i != 16)
-                anInt2264 = 87;
+            if (i != 16) anInt2264 = 87;
         }
     }
 
     private final void method1304(int i, Class348 class348) {
-        if (i != 1000)
-            method1303((byte) 95);
+        if (i != 1000) method1303((byte) 95);
         synchronized (aClass262_2258) {
             aClass262_2258.method1999(class348, -20180);
             aClass262_2258.notify();

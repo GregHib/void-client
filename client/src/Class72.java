@@ -26,17 +26,11 @@ final class Class72 {
         if (aClass105_1221 == null) {
             if (anInt1230 == 0) {
                 if (Class101_Sub1.aD5684.method4(-7953, anInt1224)) {
-                    int[] is = Class101_Sub1.aD5684.method6(-21540, anInt1220,
-                            0.7F, anInt1224,
-                            false, anInt1220);
-                    aClass105_1221
-                            = var_ha.method3662(anInt1220, is, (byte) 94, 0,
-                            anInt1220, anInt1220);
+                    int[] is = Class101_Sub1.aD5684.method6(-21540, anInt1220, 0.7F, anInt1224, false, anInt1220);
+                    aClass105_1221 = var_ha.method3662(anInt1220, is, (byte) 94, 0, anInt1220, anInt1220);
                 }
-            } else if (anInt1230 == 2)
-                method740(var_ha, class72_0_);
-            else if (anInt1230 == 1)
-                method735(var_ha, class72_0_);
+            } else if (anInt1230 == 2) method740(var_ha, class72_0_);
+            else if (anInt1230 == 1) method735(var_ha, class72_0_);
         }
         return aClass105_1221 != null;
     }
@@ -64,22 +58,15 @@ final class Class72 {
                     int i_8_ = 128 - i_6_ - 1;
                     int i_9_ = 256 - (i_7_ + i_2_ << 8) / 4096;
                     i_9_ = i_9_ * 16 * 192 / 1536;
-                    if (i_9_ < 0)
-                        i_9_ = 0;
-                    else if (i_9_ > 255)
-                        i_9_ = 255;
+                    if (i_9_ < 0) i_9_ = 0;
+                    else if (i_9_ > 255) i_9_ = 255;
                     int i_10_ = i_9_ / 2;
-                    is_1_[i_4_ + i_6_] = is_1_[i_4_ + i_8_]
-                            = is_1_[i_5_ + i_6_] = is_1_[i_5_ + i_8_]
-                            = ~0xffffff | i_9_ << 16;
-                    is[i_4_ + i_6_] = is[i_4_ + i_8_] = is[i_5_ + i_6_]
-                            = is[i_5_ + i_8_] = 127 - i_10_ << 24 | 0xffffff;
+                    is_1_[i_4_ + i_6_] = is_1_[i_4_ + i_8_] = is_1_[i_5_ + i_6_] = is_1_[i_5_ + i_8_] = ~0xffffff | i_9_ << 16;
+                    is[i_4_ + i_6_] = is[i_4_ + i_8_] = is[i_5_ + i_6_] = is[i_5_ + i_8_] = 127 - i_10_ << 24 | 0xffffff;
                 }
             }
-            aClass105_1228
-                    = var_ha.method3662(128, is_1_, (byte) 94, 0, 128, 128);
-            aClass105_1215
-                    = var_ha.method3662(128, is, (byte) 94, 0, 128, 128);
+            aClass105_1228 = var_ha.method3662(128, is_1_, (byte) 94, 0, 128, 128);
+            aClass105_1215 = var_ha.method3662(128, is, (byte) 94, 0, 128, 128);
         }
     }
 
@@ -96,41 +83,29 @@ final class Class72 {
             i_14_ = anInt1225 - i;
             i_15_ = anInt1216 - i_11_;
             i_16_ = anInt1229 - i_12_;
-            this.anInt1232
-                    = (int) Math.sqrt(i_14_ * i_14_ + i_15_ * i_15_
-                    + i_16_ * i_16_);
-            if (this.anInt1232 == 0)
-                this.anInt1232 = 1;
+            this.anInt1232 = (int) Math.sqrt(i_14_ * i_14_ + i_15_ * i_15_ + i_16_ * i_16_);
+            if (this.anInt1232 == 0) this.anInt1232 = 1;
             i_14_ = (i_14_ << 8) / this.anInt1232;
             i_15_ = (i_15_ << 8) / this.anInt1232;
             i_16_ = (i_16_ << 8) / this.anInt1232;
         }
-        int i_17_ = (int) (Math.sqrt(i_14_ * i_14_ + i_15_ * i_15_
-                + i_16_ * i_16_)
-                * 256.0);
+        int i_17_ = (int) (Math.sqrt(i_14_ * i_14_ + i_15_ * i_15_ + i_16_ * i_16_) * 256.0);
         if (i_17_ > 128) {
             i_14_ = (i_14_ << 16) / i_17_;
             i_15_ = (i_15_ << 16) / i_17_;
             i_16_ = (i_16_ << 16) / i_17_;
-            anInt1217 = anInt1218 * i_13_ / (aBoolean1223 ? 1024
-                    : this.anInt1232);
-        } else
-            anInt1217 = 0;
+            anInt1217 = anInt1218 * i_13_ / (aBoolean1223 ? 1024 : this.anInt1232);
+        } else anInt1217 = 0;
         if (anInt1217 < 8) {
             aClass105_1221 = null;
             return false;
         }
         int i_18_ = Class33.method340(anInt1217, (byte) 108);
-        if (i_18_ > i_13_)
-            i_18_ = Class348_Sub40_Sub1.method3051(i_13_, 4096);
-        if (i_18_ > 512)
-            i_18_ = 512;
-        if (i_18_ != anInt1220)
-            anInt1220 = i_18_;
-        anInt1231 = (int) (Math.asin((float) i_15_ / 256.0F)
-                * 2607.5945876176133) & 0x3fff;
-        anInt1219 = (int) (Math.atan2(i_14_, -i_16_)
-                * 2607.5945876176133) & 0x3fff;
+        if (i_18_ > i_13_) i_18_ = Class348_Sub40_Sub1.method3051(i_13_, 4096);
+        if (i_18_ > 512) i_18_ = 512;
+        if (i_18_ != anInt1220) anInt1220 = i_18_;
+        anInt1231 = (int) (Math.asin((float) i_15_ / 256.0F) * 2607.5945876176133) & 0x3fff;
+        anInt1219 = (int) (Math.atan2(i_14_, -i_16_) * 2607.5945876176133) & 0x3fff;
         aClass105_1221 = null;
         return true;
     }
@@ -177,11 +152,9 @@ final class Class72 {
         Class64 class64 = aClass64_1227.method614((byte) 0, 51200, true);
         class64.aa((short) 0, (short) anInt1224);
         var_ha.xa(1.0F);
-        var_ha.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_20_,
-                (float) i_21_);
+        var_ha.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_20_, (float) i_21_);
         int i_28_ = 1024 * anInt1220 / (class64.RA() - class64.V());
-        if (anInt1222 != 0)
-            i_28_ = i_28_ * 13 / 16;
+        if (anInt1222 != 0) i_28_ = i_28_ * 13 / 16;
         var_ha.DA(anInt1220 / 2, anInt1220 / 2, i_28_, i_28_);
         var_ha.method3638(var_ha.method3654());
         Class101 class101 = var_ha.method3654();
@@ -189,45 +162,35 @@ final class Class72 {
         class64.method608(class101, null, 1024, 1);
         int i_29_ = anInt1220 * 13 / 16;
         int i_30_ = (anInt1220 - i_29_) / 2;
-        aClass105_1215.method970(i_30_, i_30_, i_29_, i_29_, 0,
-                ~0xffffff | anInt1222, 1);
+        aClass105_1215.method970(i_30_, i_30_, i_29_, i_29_, 0, ~0xffffff | anInt1222, 1);
         aClass105_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
         var_ha.ya();
         var_ha.aa(0, 0, anInt1220, anInt1220, 0, 0);
         aClass105_1228.method970(0, 0, anInt1220, anInt1220, 1, 0, 0);
         aClass105_1221.method968(0, 0, 0);
-        var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2],
-                anIntArray1226[3]);
+        var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
     }
 
     final boolean method736(ha var_ha, Class72 class72_31_) {
         return aClass105_1221 != null || method730(var_ha, class72_31_);
     }
 
-    final void method737(ha var_ha, int i, int i_32_, int i_33_, int i_34_,
-                         int i_35_, int i_36_) {
+    final void method737(ha var_ha, int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_) {
         if (aClass105_1221 != null) {
             int i_37_ = anInt1231 - i_35_ & 0x3fff;
             int i_38_ = anInt1219 - i_36_ & 0x3fff;
-            if (i_38_ > 8192)
-                i_38_ -= 16384;
-            if (i_37_ > 8192)
-                i_37_ -= 16384;
+            if (i_38_ > 8192) i_38_ -= 16384;
+            if (i_37_ > 8192) i_37_ -= 16384;
             int i_39_ = i_37_ * i_34_ / 4096 + (i_34_ - anInt1217) / 2;
             int i_40_ = i_38_ * i_34_ / -4096 + (i_33_ - anInt1217) / 2;
-            if (i_39_ < i_34_ && i_39_ + anInt1217 > 0 && i_40_ < i_33_
-                    && i_40_ + anInt1217 > 0)
-                aClass105_1221.method973(i_40_ + i, i_39_ + i_32_, anInt1217,
-                        anInt1217);
+            if (i_39_ < i_34_ && i_39_ + anInt1217 > 0 && i_40_ < i_33_ && i_40_ + anInt1217 > 0) aClass105_1221.method973(i_40_ + i, i_39_ + i_32_, anInt1217, anInt1217);
         }
     }
 
     private static final void method738(ha var_ha) {
         if (aClass64_1227 == null) {
             Class124 class124 = new Class124(580, 1104, 1);
-            class124.method1105(109, (byte) 0, (byte) 0, (short) 0,
-                    (short) 1024, (byte) 0, (short) 0,
-                    (short) 32767, (short) 1024, (short) 1024);
+            class124.method1105(109, (byte) 0, (byte) 0, (short) 0, (short) 1024, (byte) 0, (short) 0, (short) 32767, (short) 1024, (short) 1024);
             class124.method1101(128, 0, 0, -93);
             class124.method1101(-128, 0, 0, 108);
             for (int i = 0; i <= 24; i++) {
@@ -244,24 +207,16 @@ final class Class72 {
                 if (i > 0) {
                     int i_49_ = i * 23 + 2;
                     int i_50_ = i_49_ - 23;
-                    class124.method1102(0, (byte) 0, (byte) 0, (short) 0,
-                            (byte) 52, (short) 127, i_50_,
-                            (byte) 0, i_49_);
+                    class124.method1102(0, (byte) 0, (byte) 0, (short) 0, (byte) 52, (short) 127, i_50_, (byte) 0, i_49_);
                     for (int i_51_ = 1; i_51_ < 23; i_51_++) {
                         int i_52_ = i_50_ + 1;
                         int i_53_ = i_49_ + 1;
-                        class124.method1102(i_50_, (byte) 0, (byte) 0,
-                                (short) 0, (byte) 41, (short) 127,
-                                i_52_, (byte) 0, i_49_);
-                        class124.method1102(i_52_, (byte) 0, (byte) 0,
-                                (short) 0, (byte) 67, (short) 127,
-                                i_53_, (byte) 0, i_49_);
+                        class124.method1102(i_50_, (byte) 0, (byte) 0, (short) 0, (byte) 41, (short) 127, i_52_, (byte) 0, i_49_);
+                        class124.method1102(i_52_, (byte) 0, (byte) 0, (short) 0, (byte) 67, (short) 127, i_53_, (byte) 0, i_49_);
                         i_50_ = i_52_;
                         i_49_ = i_53_;
                     }
-                    class124.method1102(i_49_, (byte) 0, (byte) 0, (short) 0,
-                            (byte) 98, (short) 127, i_50_,
-                            (byte) 0, 1);
+                    class124.method1102(i_49_, (byte) 0, (byte) 0, (short) 0, (byte) 98, (short) 127, i_50_, (byte) 0, 1);
                 }
             }
             class124.anInt1821 = class124.anInt1836;
@@ -277,8 +232,7 @@ final class Class72 {
         aClass105_1228 = null;
     }
 
-    Class72(int i, int i_54_, int i_55_, int i_56_, int i_57_, int i_58_,
-            int i_59_, boolean bool) {
+    Class72(int i, int i_54_, int i_55_, int i_56_, int i_57_, int i_58_, int i_59_, boolean bool) {
         anInt1225 = i_55_;
         anInt1216 = i_56_;
         anInt1229 = i_57_;
@@ -290,8 +244,7 @@ final class Class72 {
     }
 
     private final void method740(ha var_ha, Class72 class72_60_) {
-        Class124 class124
-                = Class300.method2277(0, Class260.aClass45_3309, anInt1224, -1);
+        Class124 class124 = Class300.method2277(0, Class260.aClass45_3309, anInt1224, -1);
         if (class124 != null) {
             var_ha.K(anIntArray1226);
             var_ha.KA(0, 0, anInt1220, anInt1220);
@@ -327,8 +280,7 @@ final class Class72 {
                 i = i_70_;
             }
             var_ha.xa(1.0F);
-            var_ha.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_61_,
-                    (float) i_62_);
+            var_ha.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_61_, (float) i_62_);
             Class64 class64 = var_ha.method3625(class124, 2048, 0, 64, 768);
             int i_71_ = class64.RA() - class64.V();
             int i_72_ = class64.EA() - class64.fa();
@@ -340,11 +292,9 @@ final class Class72 {
             Class101 class101 = var_ha.method3705();
             class101.method894(0, 0, var_ha.i() - class64.HA());
             class64.method608(class101, null, var_ha.i(), 1);
-            aClass105_1221
-                    = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
+            aClass105_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
             aClass105_1221.method968(0, 0, 3);
-            var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2],
-                    anIntArray1226[3]);
+            var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
         }
     }
 }

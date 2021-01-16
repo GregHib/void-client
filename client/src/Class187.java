@@ -20,20 +20,16 @@ final class Class187 {
     final void method1404(byte i) {
         synchronized (aClass60_2501) {
             aClass60_2501.method590(0);
-            if (i >= -20)
-                method1407((byte) -33);
+            if (i >= -20) method1407((byte) -33);
         }
         anInt2508++;
     }
 
     static final void method1405(int i, boolean bool, boolean bool_0_) {
         anInt2506++;
-        Class348_Sub13 class348_sub13
-                = Class258_Sub4.method1974((byte) 42, i, bool);
+        Class348_Sub13 class348_sub13 = Class258_Sub4.method1974((byte) 42, i, bool);
         if (class348_sub13 != null && bool_0_ == true) {
-            for (int i_1_ = 0;
-                 (class348_sub13.anIntArray6757.length > i_1_);
-                 i_1_++) {
+            for (int i_1_ = 0; (class348_sub13.anIntArray6757.length > i_1_); i_1_++) {
                 class348_sub13.anIntArray6757[i_1_] = -1;
                 class348_sub13.anIntArray6758[i_1_] = 0;
             }
@@ -60,17 +56,14 @@ final class Class187 {
         synchronized (aClass60_2501) {
             class321 = (Class321) aClass60_2501.method583(i_3_, 76);
         }
-        if (class321 != null)
-            return class321;
+        if (class321 != null) return class321;
         byte[] is;
         synchronized (aClass45_2498) {
             is = aClass45_2498.method410(-1860, 35, i_3_);
         }
         class321 = new Class321();
-        if (is != null)
-            class321.method2551(-125, new Class348_Sub49(is));
-        if (i != -12637)
-            aClass60_2501 = null;
+        if (is != null) class321.method2551(-125, new Class348_Sub49(is));
+        if (i != -12637) aClass60_2501 = null;
         class321.method2548((byte) 127);
         synchronized (aClass60_2501) {
             aClass60_2501.method582(class321, i_3_, (byte) -99);
@@ -80,8 +73,7 @@ final class Class187 {
 
     final void method1409(int i, int i_4_) {
         synchronized (aClass60_2501) {
-            if (i_4_ != -20721)
-                aClass45_2498 = null;
+            if (i_4_ != -20721) aClass45_2498 = null;
             aClass60_2501.method578(i_4_ + 20723, i);
         }
         anInt2503++;
@@ -89,8 +81,7 @@ final class Class187 {
 
     final void method1410(int i) {
         synchronized (aClass60_2501) {
-            if (i != -27995)
-                method1409(-42, 23);
+            if (i != -27995) method1409(-42, 23);
             aClass60_2501.method587(-85);
         }
         anInt2502++;
@@ -100,18 +91,10 @@ final class Class187 {
         do {
             try {
                 aClass45_2498 = class45;
-                if (aClass45_2498 == null)
-                    break;
+                if (aClass45_2498 == null) break;
                 aClass45_2498.method407(0, 35);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("qga.<init>("
-                                + (class230 != null ? "{...}"
-                                : "null")
-                                + ',' + i + ','
-                                + (class45 != null ? "{...}"
-                                : "null")
-                                + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("qga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

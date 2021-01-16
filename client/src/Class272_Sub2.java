@@ -17,43 +17,26 @@ public final class Class272_Sub2 extends Class272 {
     static Class aClass6173;
     static Class aClass6174;
 
-    private final Socket method2052(String string, int i, String string_0_)
-            throws IOException {
+    private final Socket method2052(String string, int i, String string_0_) throws IOException {
         Socket socket = new Socket(string, i);
         socket.setSoTimeout(10000);
         OutputStream outputstream = socket.getOutputStream();
-        if (string_0_ != null)
-            outputstream.write(("CONNECT " + this.aString3476
-                    + ":" + this.anInt3470
-                    + " HTTP/1.0\n" + string_0_ + "\n\n")
-                    .getBytes(StandardCharsets.ISO_8859_1));
-        else
-            outputstream.write(("CONNECT " + this.aString3476
-                    + ":" + this.anInt3470
-                    + " HTTP/1.0\n\n")
-                    .getBytes(StandardCharsets.ISO_8859_1));
+        if (string_0_ != null) outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n" + string_0_ + "\n\n").getBytes(StandardCharsets.ISO_8859_1));
+        else outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n\n").getBytes(StandardCharsets.ISO_8859_1));
         outputstream.flush();
-        BufferedReader bufferedreader
-                = new BufferedReader(new InputStreamReader(socket
-                .getInputStream()));
+        BufferedReader bufferedreader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         String string_1_ = bufferedreader.readLine();
         if (string_1_ != null) {
-            if (string_1_.startsWith("HTTP/1.0 200")
-                    || string_1_.startsWith("HTTP/1.1 200"))
-                return socket;
-            if (string_1_.startsWith("HTTP/1.0 407")
-                    || string_1_.startsWith("HTTP/1.1 407")) {
+            if (string_1_.startsWith("HTTP/1.0 200") || string_1_.startsWith("HTTP/1.1 200")) return socket;
+            if (string_1_.startsWith("HTTP/1.0 407") || string_1_.startsWith("HTTP/1.1 407")) {
                 int i_2_ = 0;
                 string_1_ = bufferedreader.readLine();
                 String string_3_ = "proxy-authenticate: ";
-                for (/**/; null != string_1_ && i_2_ < 50;
-                         string_1_ = bufferedreader.readLine()) {
+                for (/**/; null != string_1_ && i_2_ < 50; string_1_ = bufferedreader.readLine()) {
                     if (string_1_.toLowerCase().startsWith(string_3_)) {
-                        string_1_
-                                = string_1_.substring(string_3_.length()).trim();
+                        string_1_ = string_1_.substring(string_3_.length()).trim();
                         int i_4_ = string_1_.indexOf(' ');
-                        if (i_4_ != -1)
-                            string_1_ = string_1_.substring(0, i_4_);
+                        if (i_4_ != -1) string_1_ = string_1_.substring(0, i_4_);
                         throw new IOException_Sub1(string_1_);
                     }
                     i_2_++;
@@ -70,14 +53,12 @@ public final class Class272_Sub2 extends Class272 {
     final Socket method2050(int i) throws IOException {
         boolean flag1;
         boolean flag = Boolean.parseBoolean(System.getProperty("java.net.useSystemProxies"));
-        if (!flag)
-            System.setProperty("java.net.useSystemProxies", "true");
+        if (!flag) System.setProperty("java.net.useSystemProxies", "true");
         flag1 = anInt3470 == 443;
         IOException_Sub1 ioexception_sub1;
         Object[] aobj1;
         int j;
-        if (i >= -100)
-            return null;
+        if (i >= -100) return null;
         List list;
         List list1;
         try {
@@ -106,88 +87,43 @@ public final class Class272_Sub2 extends Class272 {
             } catch (IOException localIOException) {
             }
         }
-        if (ioexception_sub1 != null)
-            throw ioexception_sub1;
-        else
-            return method2047((byte) 92);
+        if (ioexception_sub1 != null) throw ioexception_sub1;
+        else return method2047((byte) 92);
     }
 
     private final Socket method2053(Proxy proxy, byte i) throws IOException {
-        if (proxy.type() == Proxy.Type.DIRECT)
-            return method2047((byte) 126);
+        if (proxy.type() == Proxy.Type.DIRECT) return method2047((byte) 126);
         java.net.SocketAddress socketaddress = proxy.address();
-        if (!(socketaddress instanceof InetSocketAddress))
-            return null;
-        InetSocketAddress inetsocketaddress
-                = (InetSocketAddress) socketaddress;
-        if (i != 125)
-            return null;
+        if (!(socketaddress instanceof InetSocketAddress)) return null;
+        InetSocketAddress inetsocketaddress = (InetSocketAddress) socketaddress;
+        if (i != 125) return null;
         if (proxy.type() == Proxy.Type.HTTP) {
             String string = null;
             try {
-                Class var_class
-                        = (Class.forName
-                        ("sun.net.www.protocol.http.AuthenticationInfo"));
-                Method method
-                        = (var_class.getDeclaredMethod
-                        ("getProxyAuth",
-                                (aClass6173 == null
-                                        ? aClass6173 = method2054("java.lang.String")
-                                        : aClass6173),
-                                Integer.TYPE));
+                Class var_class = (Class.forName("sun.net.www.protocol.http.AuthenticationInfo"));
+                Method method = (var_class.getDeclaredMethod("getProxyAuth", (aClass6173 == null ? aClass6173 = method2054("java.lang.String") : aClass6173), Integer.TYPE));
                 method.setAccessible(true);
-                Object object
-                        = method.invoke(null, inetsocketaddress.getHostName(),
-                        new Integer(inetsocketaddress
-                                .getPort()));
+                Object object = method.invoke(null, inetsocketaddress.getHostName(), new Integer(inetsocketaddress.getPort()));
                 if (null != object) {
-                    Method method_14_
-                            = (var_class.getDeclaredMethod
-                            ("supportsPreemptiveAuthorization"));
+                    Method method_14_ = (var_class.getDeclaredMethod("supportsPreemptiveAuthorization"));
                     method_14_.setAccessible(true);
-                    if (((Boolean) method_14_.invoke(object, new Object[0]))
-                            .booleanValue()) {
-                        Method method_15_
-                                = var_class.getDeclaredMethod("getHeaderName"
-                        );
+                    if (((Boolean) method_14_.invoke(object, new Object[0])).booleanValue()) {
+                        Method method_15_ = var_class.getDeclaredMethod("getHeaderName");
                         method_15_.setAccessible(true);
-                        Method method_16_
-                                = (var_class.getDeclaredMethod
-                                ("getHeaderValue",
-                                        (aClass6174 == null
-                                                ? aClass6174 = method2054("java.net.URL")
-                                                : aClass6174),
-                                        (aClass6173 == null
-                                                ? (aClass6173
-                                                = method2054("java.lang.String"))
-                                                : aClass6173)));
+                        Method method_16_ = (var_class.getDeclaredMethod("getHeaderValue", (aClass6174 == null ? aClass6174 = method2054("java.net.URL") : aClass6174), (aClass6173 == null ? (aClass6173 = method2054("java.lang.String")) : aClass6173)));
                         method_16_.setAccessible(true);
-                        String string_17_
-                                = ((String)
-                                method_15_.invoke(object, new Object[0]));
-                        String string_18_
-                                = ((String)
-                                method_16_.invoke(object,
-                                        (new Object[]
-                                                {new URL("https://"
-                                                        + (this
-                                                        .aString3476)
-                                                        + "/"),
-                                                        "https"})));
+                        String string_17_ = ((String) method_15_.invoke(object, new Object[0]));
+                        String string_18_ = ((String) method_16_.invoke(object, (new Object[]{new URL("https://" + (this.aString3476) + "/"), "https"})));
                         string = string_17_ + ": " + string_18_;
                     }
                 }
             } catch (Exception exception) {
                 /* empty */
             }
-            return method2052(inetsocketaddress.getHostName(),
-                    inetsocketaddress.getPort(), string);
+            return method2052(inetsocketaddress.getHostName(), inetsocketaddress.getPort(), string);
         } else if (proxy.type() == Proxy.Type.SOCKS) {
             Socket socket = new Socket(proxy);
-            socket.connect(new InetSocketAddress((this
-                    .aString3476),
-                    (this
-                            .anInt3470)));
+            socket.connect(new InetSocketAddress((this.aString3476), (this.anInt3470)));
             return socket;
         }
         return null;

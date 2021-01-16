@@ -27,16 +27,13 @@ final class Class129 {
 
     final Class129 method1124(int i, int i_0_, int i_1_, int i_2_) {
         anInt1893++;
-        if (i_0_ != -1)
-            return null;
-        return new Class129(anInt1886, i_2_, i, i_1_,
-                this.aByte1875);
+        if (i_0_ != -1) return null;
+        return new Class129(anInt1886, i_2_, i, i_1_, this.aByte1875);
     }
 
     final Class181 method1125(byte i) {
         anInt1873++;
-        if (i != 59)
-            this.anInt1880 = -51;
+        if (i != 59) this.anInt1880 = -51;
         return Class373.method3591(anInt1886, i ^ 0x3b);
     }
 

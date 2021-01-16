@@ -29,25 +29,18 @@ final class Class348_Sub18 extends Class348 {
 
     final boolean method2934(int i, int i_0_, int i_1_) {
         anInt6822++;
-        if (i != 3589)
-            method2941(null, 70, false);
-        return i_0_ >= anInt6820
-                && i_0_ <= anInt6806
-                && i_1_ >= anInt6811 && anInt6810 >= i_1_;
+        if (i != 3589) method2941(null, 70, false);
+        return i_0_ >= anInt6820 && i_0_ <= anInt6806 && i_1_ >= anInt6811 && anInt6810 >= i_1_;
     }
 
     final boolean method2935(int i, int i_2_, int i_3_, boolean bool) {
         anInt6821++;
-        if (bool != true)
-            anInt6811 = -84;
-        return i_3_ == anInt6815 && i_2_ >= anInt6820
-                && anInt6806 >= i_2_ && i >= anInt6811
-                && anInt6810 >= i;
+        if (bool != true) anInt6811 = -84;
+        return i_3_ == anInt6815 && i_2_ >= anInt6820 && anInt6806 >= i_2_ && i >= anInt6811 && anInt6810 >= i;
     }
 
     public static void method2936(byte i) {
-        if (i == -25)
-            aClass351_6814 = null;
+        if (i == -25) aClass351_6814 = null;
     }
 
     final void method2937(int i, int i_4_, int i_5_, int[] is) {
@@ -55,8 +48,7 @@ final class Class348_Sub18 extends Class348 {
         is[0] = anInt6815;
         is[1] = -this.anInt6809 - -anInt6820 + i;
         is[2] = i_4_ + (-this.anInt6812 + anInt6811);
-        if (i_5_ != -3069)
-            anInt6810 = -14;
+        if (i_5_ != -3069) anInt6810 = -14;
     }
 
     static final void method2938(byte i) {
@@ -87,8 +79,7 @@ final class Class348_Sub18 extends Class348 {
         Class84.method821(-126);
         Class318.method2375(16127);
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-            for (int i_6_ = 0; Class308.aByteArrayArray3882.length > i_6_;
-                 i_6_++)
+            for (int i_6_ = 0; Class308.aByteArrayArray3882.length > i_6_; i_6_++)
                 Class308.aByteArrayArray3882[i_6_] = null;
             Class127_Sub1.anInt8388 = 0;
         }
@@ -144,12 +135,8 @@ final class Class348_Sub18 extends Class348 {
 
     final boolean method2939(int i, int i_7_, int i_8_) {
         anInt6807++;
-        if (i_7_ != 2)
-            return true;
-        return this.anInt6809 <= i
-                && this.anInt6819 >= i
-                && (i_8_ >= this.anInt6812)
-                && this.anInt6813 >= i_8_;
+        if (i_7_ != 2) return true;
+        return this.anInt6809 <= i && this.anInt6819 >= i && (i_8_ >= this.anInt6812) && this.anInt6813 >= i_8_;
     }
 
     final void method2940(int i, boolean bool, int[] is, int i_9_) {
@@ -157,26 +144,16 @@ final class Class348_Sub18 extends Class348 {
         is[0] = 0;
         is[2] = i + -anInt6811 + this.anInt6812;
         is[1] = i_9_ - anInt6820 - -this.anInt6809;
-        if (bool != true)
-            this.anInt6812 = -26;
+        if (bool != true) this.anInt6812 = -26;
     }
 
-    static final Class373 method2941(Component component, int i,
-                                     boolean bool) {
+    static final Class373 method2941(Component component, int i, boolean bool) {
         anInt6808++;
         try {
-            Constructor constructor
-                    = (Class.forName("Class373_Sub1").getDeclaredConstructor
-                    ((aClass6823 != null ? aClass6823
-                            : (aClass6823
-                            = method2943("java.awt.Component"))),
-                            Boolean.TYPE));
-            return ((Class373)
-                    constructor.newInstance(new Object[]
-                            {component, new Boolean(bool)}));
+            Constructor constructor = (Class.forName("Class373_Sub1").getDeclaredConstructor((aClass6823 != null ? aClass6823 : (aClass6823 = method2943("java.awt.Component"))), Boolean.TYPE));
+            return ((Class373) constructor.newInstance(new Object[]{component, new Boolean(bool)}));
         } catch (Throwable throwable) {
-            if (i != 0)
-                return null;
+            if (i != 0) return null;
             return new Class373_Sub2(component, bool);
         }
     }
@@ -184,46 +161,28 @@ final class Class348_Sub18 extends Class348 {
     static final void method2942(Class46 class46, byte i) {
         anInt6805++;
         if (class46.anInt765 == Class244.anInt4610) {
-            if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544
-                    == null) {
+            if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544 == null) {
                 class46.anInt779 = 0;
                 class46.anInt753 = 0;
             } else {
                 class46.anInt757 = 150;
-                class46.anInt675
-                        = 0x7ff & (int) (256.0
-                        * Math.sin((double) (Class367_Sub11
-                        .anInt7396) / 40.0));
+                class46.anInt675 = 0x7ff & (int) (256.0 * Math.sin((double) (Class367_Sub11.anInt7396) / 40.0));
                 class46.anInt770 = 5;
                 class46.anInt753 = Class348_Sub42_Sub11.anInt9591;
-                class46.anInt779
-                        = (Class318_Sub1_Sub3_Sub1.method2418
-                        ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                        .aString10544),
-                                (byte) -41));
-                class46.anInt699
-                        = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt10268;
+                class46.anInt779 = (Class318_Sub1_Sub3_Sub1.method2418((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544), (byte) -41));
+                class46.anInt699 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt10268;
                 class46.anInt841 = 0;
-                class46.anInt730
-                        = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt10312;
-                class46.anInt795
-                        = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt10245;
-                Class17 class17
-                        = (class46.anInt699 != -1
-                        ? Class10.aClass87_191
-                        .method835(class46.anInt699, 7)
-                        : null);
-                if (class17 != null)
-                    Class264.method2017(class46.anInt795, class17,
-                            50);
+                class46.anInt730 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt10312;
+                class46.anInt795 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt10245;
+                Class17 class17 = (class46.anInt699 != -1 ? Class10.aClass87_191.method835(class46.anInt699, 7) : null);
+                if (class17 != null) Class264.method2017(class46.anInt795, class17, 50);
             }
         } else {
             int i_10_ = -14 % ((27 - i) / 59);
         }
     }
 
-    Class348_Sub18(int i, int i_11_, int i_12_, int i_13_, int i_14_,
-                   int i_15_, int i_16_, int i_17_, int i_18_) {
+    Class348_Sub18(int i, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, int i_17_, int i_18_) {
         this.anInt6809 = i_15_;
         this.anInt6819 = i_17_;
         anInt6820 = i_11_;
@@ -240,8 +199,7 @@ final class Class348_Sub18 extends Class348 {
         try {
             return Class.forName(string);
         } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception
-                    .getMessage());
+            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
         }
     }
 }

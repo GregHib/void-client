@@ -11,17 +11,14 @@ final class Class9 {
 
     static final boolean method215(int i) {
         anInt170++;
-        if (i != 27165)
-            return false;
-        if (!Class348_Sub40_Sub19.method3098(-30282, "jaclib"))
-            return false;
+        if (i != 27165) return false;
+        if (!Class348_Sub40_Sub19.method3098(-30282, "jaclib")) return false;
         return Class348_Sub40_Sub19.method3098(-30282, "hw3d");
     }
 
     public static void method216(boolean bool) {
         anIntArray168 = null;
-        if (bool != false)
-            method216(true);
+        if (bool != false) method216(true);
         aHa171 = null;
     }
 }

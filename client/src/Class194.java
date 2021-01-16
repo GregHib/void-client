@@ -14,15 +14,13 @@ final class Class194 {
 
     public static void method1441(byte i) {
         aClass279_2596 = null;
-        if (i != 18)
-            aClass279_2596 = null;
+        if (i != 18) aClass279_2596 = null;
     }
 
     final void method1442(int i, byte i_0_) {
         anInt2598++;
         synchronized (aClass60_2594) {
-            if (i_0_ != 1)
-                aClass60_2594 = null;
+            if (i_0_ != 1) aClass60_2594 = null;
             aClass60_2594.method578(2, i);
         }
     }
@@ -59,19 +57,14 @@ final class Class194 {
         synchronized (aClass60_2594) {
             class146 = (Class146) aClass60_2594.method583(i, 76);
         }
-        if (class146 != null)
-            return class146;
+        if (class146 != null) return class146;
         byte[] is;
         synchronized (aClass45_2597) {
-            is = aClass45_2597.method410(i_4_ ^ 0x743,
-                    Class179.method1359(true, i),
-                    Class348_Sub14.method2806(false, i));
+            is = aClass45_2597.method410(i_4_ ^ 0x743, Class179.method1359(true, i), Class348_Sub14.method2806(false, i));
         }
         class146 = new Class146();
-        if (i_4_ != -1)
-            return null;
-        if (is != null)
-            class146.method1191(i_4_ ^ ~0x800, new Class348_Sub49(is));
+        if (i_4_ != -1) return null;
+        if (is != null) class146.method1191(i_4_ ^ ~0x800, new Class348_Sub49(is));
         synchronized (aClass60_2594) {
             aClass60_2594.method582(class146, i, (byte) -105);
         }
@@ -82,19 +75,11 @@ final class Class194 {
         do {
             try {
                 aClass45_2597 = class45;
-                if (aClass45_2597 == null)
-                    break;
+                if (aClass45_2597 == null) break;
                 int i_5_ = aClass45_2597.method414(-1) + -1;
                 aClass45_2597.method407(0, i_5_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("qs.<init>("
-                                + (class230 != null ? "{...}"
-                                : "null")
-                                + ',' + i + ','
-                                + (class45 != null ? "{...}"
-                                : "null")
-                                + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("qs.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

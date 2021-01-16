@@ -15,8 +15,7 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.Date;
 
-public abstract class Applet_Sub1 extends Applet
-        implements Runnable, FocusListener, WindowListener {
+public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListener, WindowListener {
     static int anInt1;
     static int anInt2;
     static int anInt3;
@@ -81,24 +80,19 @@ public abstract class Applet_Sub1 extends Applet
 
     public final void stop() {
         anInt24++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169
-                && !Class26.aBoolean384)
-            Class113.aLong1739 = Class62.method599(-73) - -4000L;
+        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L;
     }
 
     public final String getParameter(String string) {
         anInt3++;
-        if (Class52.aFrame4904 != null)
-            return null;
-        if (Class93.anApplet1530 != null && Class93.anApplet1530 != this)
-            return Class93.anApplet1530.getParameter(string);
+        if (Class52.aFrame4904 != null) return null;
+        if (Class93.anApplet1530 != null && Class93.anApplet1530 != this) return Class93.anApplet1530.getParameter(string);
         return super.getParameter(string);
     }
 
     String method81(byte i) {
         anInt1++;
-        if (i <= 40)
-            run();
+        if (i <= 40) run();
         return null;
     }
 
@@ -109,16 +103,12 @@ public abstract class Applet_Sub1 extends Applet
             aBoolean27 = true;
             System.out.println("error_game_" + string);
             try {
-                Class224.method1617((byte) 125, Class93.anApplet1530,
-                        "loggedout");
+                Class224.method1617((byte) 125, Class93.anApplet1530, "loggedout");
             } catch (Throwable throwable) {
                 /* empty */
             }
             try {
-                getAppletContext().showDocument(new URL(getCodeBase(),
-                                ("error_game_" + string
-                                        + ".ws")),
-                        "_top");
+                getAppletContext().showDocument(new URL(getCodeBase(), ("error_game_" + string + ".ws")), "_top");
             } catch (Exception exception) {
                 /* empty */
             }
@@ -130,8 +120,7 @@ public abstract class Applet_Sub1 extends Applet
     }
 
     final boolean method83(boolean bool) {
-        if (bool != true)
-            getDocumentBase();
+        if (bool != true) getDocumentBase();
         anInt5++;
         return Class348_Sub40_Sub19.method3098(-30282, "jagmisc");
     }
@@ -147,16 +136,14 @@ public abstract class Applet_Sub1 extends Applet
         long l_1_ = Class328_Sub2_Sub1.aLongArray8800[Class244.anInt4613];
         Class328_Sub2_Sub1.aLongArray8800[Class244.anInt4613] = l;
         Class244.anInt4613 = 0x1f & 1 + Class244.anInt4613;
-        if (l_1_ != 0L
-                && l > l_1_) {
+        if (l_1_ != 0L && l > l_1_) {
             /* empty */
         }
         synchronized (this) {
             Class175.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229;
         }
         method99((byte) 93);
-        if (i != -1)
-            aBoolean27 = true;
+        if (i != -1) aBoolean27 = true;
     }
 
     public final void update(Graphics graphics) {
@@ -167,8 +154,7 @@ public abstract class Applet_Sub1 extends Applet
     static final void method85(int i, Class45 class45) {
         anInt32++;
         Class369_Sub3.aClass45_8601 = class45;
-        if (i != 0)
-            anInt37 = 101;
+        if (i != 0) anInt37 = 101;
     }
 
     public final void windowClosing(WindowEvent windowevent) {
@@ -178,17 +164,14 @@ public abstract class Applet_Sub1 extends Applet
 
     public final URL getDocumentBase() {
         anInt30++;
-        if (Class52.aFrame4904 != null)
-            return null;
-        if (Class93.anApplet1530 != null && this != Class93.anApplet1530)
-            return Class93.anApplet1530.getDocumentBase();
+        if (Class52.aFrame4904 != null) return null;
+        if (Class93.anApplet1530 != null && this != Class93.anApplet1530) return Class93.anApplet1530.getDocumentBase();
         return super.getDocumentBase();
     }
 
     static final boolean method86(String string, int i) {
         anInt13++;
-        if (i != 0)
-            return true;
+        if (i != 0) return true;
         return Class275.aHashtable3548.containsKey(string);
     }
 
@@ -197,8 +180,7 @@ public abstract class Applet_Sub1 extends Applet
     }
 
     synchronized void method87(byte i) {
-        if (i > -11)
-            paint(null);
+        if (i > -11) paint(null);
         if (Class305.aCanvas3869 != null) {
             Class305.aCanvas3869.removeFocusListener(this);
             Class305.aCanvas3869.getParent().setBackground(Color.black);
@@ -208,28 +190,19 @@ public abstract class Applet_Sub1 extends Applet
         Container container;
         if (Class34.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null)
-                    container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
-                else
-                    container = Class93.anApplet1530;
-            } else
-                container = Class52.aFrame4904;
-        } else
-            container = Class34.aFrame476;
+                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                else container = Class93.anApplet1530;
+            } else container = Class52.aFrame4904;
+        } else container = Class34.aFrame476;
         container.setLayout(null);
         Class305.aCanvas3869 = new Canvas_Sub1(this);
         container.add(Class305.aCanvas3869);
-        Class305.aCanvas3869.setSize(Class321.anInt4017,
-                Class348_Sub42_Sub8_Sub2.anInt10432);
+        Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
         Class305.aCanvas3869.setVisible(true);
         if (container == Class52.aFrame4904) {
             Insets insets = Class52.aFrame4904.getInsets();
-            Class305.aCanvas3869.setLocation((insets.left
-                            + Class348_Sub48.anInt7129),
-                    insets.top - -Class335.anInt4167);
-        } else
-            Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129,
-                    Class335.anInt4167);
+            Class305.aCanvas3869.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167);
+        } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
         Class305.aCanvas3869.addFocusListener(this);
         Class305.aCanvas3869.requestFocus();
         Class348_Sub40_Sub16.aBoolean9229 = true;
@@ -245,16 +218,11 @@ public abstract class Applet_Sub1 extends Applet
 
     public final synchronized void paint(Graphics graphics) {
         anInt18++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169
-                && !Class26.aBoolean384) {
+        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
             Class49.aBoolean4726 = true;
-            if (Class367_Sub4.aBoolean7320
-                    && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
+            if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 Rectangle rectangle = graphics.getClipBounds();
-                if (rectangle == null
-                        || (rectangle.width >= Class272.anInt3473
-                        && (Class348_Sub22.anInt6857 <= rectangle.height)))
-                    Class203.aBoolean2674 = true;
+                if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) Class203.aBoolean2674 = true;
             }
         }
     }
@@ -272,22 +240,15 @@ public abstract class Applet_Sub1 extends Applet
         if (Class159.anInt2127++ > 50) {
             Class159.anInt2127 -= 50;
             Class49.aBoolean4726 = true;
-            Class305.aCanvas3869.setSize(Class321.anInt4017,
-                    Class348_Sub42_Sub8_Sub2.anInt10432);
+            Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
             Class305.aCanvas3869.setVisible(true);
             if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
                 Insets insets = Class52.aFrame4904.getInsets();
-                Class305.aCanvas3869.setLocation((insets.left
-                                - -Class348_Sub48.anInt7129),
-                        (insets.top
-                                + Class335.anInt4167));
-            } else
-                Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129,
-                        Class335.anInt4167);
+                Class305.aCanvas3869.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167));
+            } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
         }
         method93(-11018);
-        if (i > -107)
-            method90(true, true);
+        if (i > -107) method90(true, true);
     }
 
     public final void windowDeiconified(WindowEvent windowevent) {
@@ -306,26 +267,16 @@ public abstract class Applet_Sub1 extends Applet
 
     final boolean method89(int i) {
         anInt40++;
-        if (i <= 19)
-            return true;
+        if (i <= 19) return true;
         String string = getDocumentBase().getHost().toLowerCase();
-        if (string.equals("jagex.com") || string.endsWith(".jagex.com"))
-            return true;
-        if (string.equals("runescape.com")
-                || string.endsWith(".runescape.com"))
-            return true;
-        if (string.equals("rs2rsps.no-ip.org") || string.endsWith(".rs2rsps.no-ip.org"))
-            return true;
-        if (string.endsWith("127.0.0.1"))
-            return true;
-        for (/**/;
-                 (string.length() > 0 && string.charAt(-1 + string.length()) >= '0'
-                         && string.charAt(-1 + string.length()) <= 57);
-                 string = string.substring(0, string.length() - 1)) {
+        if (string.equals("jagex.com") || string.endsWith(".jagex.com")) return true;
+        if (string.equals("runescape.com") || string.endsWith(".runescape.com")) return true;
+        if (string.equals("rs2rsps.no-ip.org") || string.endsWith(".rs2rsps.no-ip.org")) return true;
+        if (string.endsWith("127.0.0.1")) return true;
+        for (/**/; (string.length() > 0 && string.charAt(-1 + string.length()) >= '0' && string.charAt(-1 + string.length()) <= 57); string = string.substring(0, string.length() - 1)) {
             /* empty */
         }
-        if (string.endsWith("192.168.1."))
-            return true;
+        if (string.endsWith("192.168.1.")) return true;
         //method82(53, "invalidhost");
         //return false;
         return true;
@@ -334,15 +285,12 @@ public abstract class Applet_Sub1 extends Applet
     private final void method90(boolean bool, boolean bool_4_) {
         anInt26++;
         synchronized (this) {
-            if (Class26.aBoolean384)
-                return;
+            if (Class26.aBoolean384) return;
             Class26.aBoolean384 = true;
         }
         System.out.println("Shutdown start - clean:" + bool);
-        if (Class93.anApplet1530 != null)
-            Class93.anApplet1530.destroy();
-        if (bool_4_ != false)
-            aBoolean17 = false;
+        if (Class93.anApplet1530 != null) Class93.anApplet1530.destroy();
+        if (bool_4_ != false) aBoolean17 = false;
         try {
             method80(0);
         } catch (Exception exception) {
@@ -391,19 +339,15 @@ public abstract class Applet_Sub1 extends Applet
 
     public final AppletContext getAppletContext() {
         anInt19++;
-        if (Class52.aFrame4904 != null)
-            return null;
-        if (Class93.anApplet1530 != null && this != Class93.anApplet1530)
-            return Class93.anApplet1530.getAppletContext();
+        if (Class52.aFrame4904 != null) return null;
+        if (Class93.anApplet1530 != null && this != Class93.anApplet1530) return Class93.anApplet1530.getAppletContext();
         return super.getAppletContext();
     }
 
     public final URL getCodeBase() {
         anInt29++;
-        if (Class52.aFrame4904 != null)
-            return null;
-        if (Class93.anApplet1530 != null && this != Class93.anApplet1530)
-            return Class93.anApplet1530.getCodeBase();
+        if (Class52.aFrame4904 != null) return null;
+        if (Class93.anApplet1530 != null && this != Class93.anApplet1530) return Class93.anApplet1530.getCodeBase();
         return super.getCodeBase();
     }
 
@@ -411,8 +355,7 @@ public abstract class Applet_Sub1 extends Applet
 
     public final void destroy() {
         anInt21++;
-        if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == this
-                && !Class26.aBoolean384) {
+        if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.method599(-108);
             Class286_Sub5.method2161((byte) 77, 5000L);
             Class231.aClass297_2993 = null;
@@ -426,40 +369,30 @@ public abstract class Applet_Sub1 extends Applet
             try {
                 if (Class297.aString3782 != null) {
                     String string = Class297.aString3782.toLowerCase();
-                    if (string.indexOf("sun") != -1
-                            || string.indexOf("apple") != -1) {
+                    if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
                         String string_5_ = Class297.aString3796;
-                        if (string_5_.equals("1.1")
-                                || string_5_.startsWith("1.1.")
-                                || string_5_.equals("1.2")
-                                || string_5_.startsWith("1.2.")) {
+                        if (string_5_.equals("1.1") || string_5_.startsWith("1.1.") || string_5_.equals("1.2") || string_5_.startsWith("1.2.")) {
                             method82(-119, "wrongjava");
                             break;
                         }
-                    } else if (string.indexOf("ibm") != -1
-                            && (Class297.aString3796 == null
-                            || Class297.aString3796.equals("1.4.2"))) {
+                    } else if (string.indexOf("ibm") != -1 && (Class297.aString3796 == null || Class297.aString3796.equals("1.4.2"))) {
                         method82(81, "wrongjava");
                         break;
                     }
                 }
-                if (Class297.aString3796 != null
-                        && Class297.aString3796.startsWith("1.")) {
+                if (Class297.aString3796 != null && Class297.aString3796.startsWith("1.")) {
                     int i = 2;
                     int i_6_ = 0;
                     while (Class297.aString3796.length() > i) {
                         int i_7_ = Class297.aString3796.charAt(i);
-                        if (i_7_ < 48 || i_7_ > 57)
-                            break;
+                        if (i_7_ < 48 || i_7_ > 57) break;
                         i++;
                         i_6_ = 10 * i_6_ - (-i_7_ + 48);
                     }
-                    if (i_6_ >= 5)
-                        Class367_Sub4.aBoolean7320 = true;
+                    if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true;
                 }
                 Applet applet = Class348_Sub40_Sub9.anApplet_Sub1_9169;
-                if (Class93.anApplet1530 != null)
-                    applet = Class93.anApplet1530;
+                if (Class93.anApplet1530 != null) applet = Class93.anApplet1530;
                 Method method = Class297.aMethod3786;
                 if (method != null) {
                     try {
@@ -473,18 +406,12 @@ public abstract class Applet_Sub1 extends Applet
                 method87((byte) -97);
                 method92(28740);
                 Class348_Sub8.aClass241_6660 = Class229.method1631(false);
-                while (Class113.aLong1739 == 0L
-                        || (Class62.method599(-124) < Class113.aLong1739)) {
-                    Class101_Sub2.anInt5744
-                            = Class348_Sub8.aClass241_6660
-                            .method1861(0, Class73.aLong4783);
+                while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
+                    Class101_Sub2.anInt5744 = Class348_Sub8.aClass241_6660.method1861(0, Class73.aLong4783);
                     for (int i = 0; Class101_Sub2.anInt5744 > i; i++)
                         method84(-1);
                     method88(-119);
-                    Class369_Sub3_Sub1.method3578((byte) -42,
-                            Class305.aCanvas3869,
-                            (Class348_Sub23_Sub1
-                                    .aClass297_8992));
+                    Class369_Sub3_Sub1.method3578((byte) -42, Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992));
                 }
             } catch (Throwable throwable) {
                 Class156.method1242(method81((byte) 109), throwable, 15004);
@@ -501,74 +428,51 @@ public abstract class Applet_Sub1 extends Applet
 
     static final void method94(String string, int i) {
         anInt6++;
-        if (Class286_Sub1.aStringArray6200 == null)
-            Class14_Sub3.method249(2);
+        if (Class286_Sub1.aStringArray6200 == null) Class14_Sub3.method249(2);
         Class286_Sub3.aCalendar6221.setTime(new Date(Class62.method599(-102)));
         int i_8_ = Class286_Sub3.aCalendar6221.get(11);
         int i_9_ = Class286_Sub3.aCalendar6221.get(12);
         int i_10_ = Class286_Sub3.aCalendar6221.get(13);
-        String string_11_
-                = (Integer.toString(i_8_ / 10) + i_8_ % 10 + ":" + i_9_ / 10
-                + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10);
+        String string_11_ = (Integer.toString(i_8_ / 10) + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10);
         String[] strings = Class348_Sub40_Sub23.method3113('\n', true, string);
         for (int i_12_ = 0; i_12_ < strings.length; i_12_++) {
-            for (int i_13_ = Class369_Sub2.anInt8587;
-                 i_13_ > 0; i_13_--)
-                Class286_Sub1.aStringArray6200[i_13_]
-                        = Class286_Sub1.aStringArray6200[-1 + i_13_];
-            Class286_Sub1.aStringArray6200[0]
-                    = string_11_ + ": " + strings[i_12_];
+            for (int i_13_ = Class369_Sub2.anInt8587; i_13_ > 0; i_13_--)
+                Class286_Sub1.aStringArray6200[i_13_] = Class286_Sub1.aStringArray6200[-1 + i_13_];
+            Class286_Sub1.aStringArray6200[0] = string_11_ + ": " + strings[i_12_];
             if (Class299_Sub1.aFileOutputStream6323 != null) {
                 try {
-                    Class299_Sub1.aFileOutputStream6323.write
-                            (Class348_Sub24.method2992(((Class286_Sub1
-                                            .aStringArray6200[0])
-                                            + "\n"),
-                                    (byte) -20));
+                    Class299_Sub1.aFileOutputStream6323.write(Class348_Sub24.method2992(((Class286_Sub1.aStringArray6200[0]) + "\n"), (byte) -20));
                 } catch (java.io.IOException ioexception) {
                     /* empty */
                 }
             }
             if (-1 + Class286_Sub1.aStringArray6200.length > Class369_Sub2.anInt8587) {
                 Class369_Sub2.anInt8587++;
-                if (Class284.anInt3676 > 0)
-                    Class284.anInt3676++;
+                if (Class284.anInt3676 > 0) Class284.anInt3676++;
             }
         }
         int i_14_ = 85 / ((i - -1) / 52);
     }
 
-    final void method95(int i, int i_15_, int i_16_, int i_17_, int i_18_,
-                        String string, int i_19_) {
+    final void method95(int i, int i_15_, int i_16_, int i_17_, int i_18_, String string, int i_19_) {
         anInt25++;
         try {
             if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
                 Class348_Sub48.anInt7129 = 0;
-                Class348_Sub22.anInt6857
-                        = Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_;
+                Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_;
                 Class272.anInt3473 = Class321.anInt4017 = i;
                 Class335.anInt4167 = 0;
                 Class348_Sub1_Sub3.anInt8818 = i_15_;
                 Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530;
-                Class231.aClass297_2993
-                        = Class348_Sub23_Sub1.aClass297_8992
-                        = new Class297(i_17_, string, i_18_,
-                        Class93.anApplet1530 != null);
-                Class144 class144
-                        = Class348_Sub23_Sub1.aClass297_8992.method2236(this,
-                        -10240, 1);
-                if (i_19_ != 50)
-                    anInt37 = -13;
-                while (class144.anInt1997 == 0)
-                    Class286_Sub5.method2161((byte) -126, 10L);
+                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i_17_, string, i_18_, Class93.anApplet1530 != null);
+                Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, -10240, 1);
+                if (i_19_ != 50) anInt37 = -13;
+                while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) -126, 10L);
             } else {
                 Class348_Sub51.anInt7252++;
-                if (Class348_Sub51.anInt7252 >= 3)
-                    method82(112, "alreadyloaded");
-                else
-                    getAppletContext().showDocument(getDocumentBase(),
-                            "_self");
+                if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded");
+                else getAppletContext().showDocument(getDocumentBase(), "_self");
             }
         } catch (Throwable throwable) {
             Class156.method1242(null, throwable, 15004);
@@ -576,14 +480,11 @@ public abstract class Applet_Sub1 extends Applet
         }
     }
 
-    final void method96(int i, int i_20_, boolean bool, int i_21_, int i_22_,
-                        String string, int i_23_, int i_24_) {
+    final void method96(int i, int i_20_, boolean bool, int i_21_, int i_22_, String string, int i_23_, int i_24_) {
         try {
-            if (i_23_ != 23499)
-                return;
+            if (i_23_ != 23499) return;
             Class272.anInt3473 = Class321.anInt4017 = i_20_;
-            Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
-                    = i_24_;
+            Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_;
             Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
             Class335.anInt4167 = 0;
             Class348_Sub48.anInt7129 = 0;
@@ -596,17 +497,10 @@ public abstract class Applet_Sub1 extends Applet
             Class52.aFrame4904.setVisible(true);
             Class52.aFrame4904.toFront();
             Insets insets = Class52.aFrame4904.getInsets();
-            Class52.aFrame4904.setSize(insets.right + (insets.left
-                            + Class272.anInt3473),
-                    (insets.bottom
-                            + (Class348_Sub22.anInt6857
-                            + insets.top)));
-            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-                    = new Class297(i, string, i_22_, true);
-            Class144 class144 = Class348_Sub23_Sub1.aClass297_8992
-                    .method2236(this, i_23_ + -33739, 1);
-            while (class144.anInt1997 == 0)
-                Class286_Sub5.method2161((byte) 21, 10L);
+            Class52.aFrame4904.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)));
+            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i, string, i_22_, true);
+            Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, i_23_ + -33739, 1);
+            while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) 21, 10L);
         } catch (Exception exception) {
             Class156.method1242(null, exception, i_23_ + -8495);
         }
@@ -618,8 +512,7 @@ public abstract class Applet_Sub1 extends Applet
     }
 
     final boolean method97(int i) {
-        if (i != -1)
-            method88(-104);
+        if (i != -1) method88(-104);
         anInt4++;
         return Class348_Sub40_Sub19.method3098(-30282, "jaclib");
     }
@@ -627,23 +520,19 @@ public abstract class Applet_Sub1 extends Applet
     public static void method98(int i) {
         anIntArray38 = null;
         aClass324_20 = null;
-        if (i != 32717)
-            method86(null, 65);
+        if (i != 32717) method86(null, 65);
     }
 
     public final void start() {
         anInt36++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169
-                && !Class26.aBoolean384)
-            Class113.aLong1739 = 0L;
+        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L;
     }
 
     abstract void method99(byte i);
 
     final boolean method100(int i) {
         anInt10++;
-        if (i != 10)
-            return true;
+        if (i != 10) return true;
         return Class348_Sub40_Sub19.method3098(-30282, "jagtheora");
     }
 }

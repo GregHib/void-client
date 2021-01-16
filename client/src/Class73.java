@@ -22,24 +22,19 @@ final class Class73 implements Interface7 {
     public static void method741(byte i) {
         aFloatArray4772 = null;
         anIntArray4780 = null;
-        if (i != -128)
-            method743(113, -98);
+        if (i != -128) method743(113, -98);
         aClass114_4779 = null;
         aClass219_4782 = null;
     }
 
     static final Class189 method742(int i, int i_0_) {
         anInt4777++;
-        Class189 class189
-                = (Class189) Class217.aClass60_2844.method583(i_0_, -104);
-        if (class189 != null)
-            return class189;
+        Class189 class189 = (Class189) Class217.aClass60_2844.method583(i_0_, -104);
+        if (class189 != null) return class189;
         byte[] is = Class369_Sub3.aClass45_8601.method410(-1860, 0, i_0_);
-        if (i != 104)
-            method741((byte) 98);
+        if (i != 104) method741((byte) 98);
         class189 = new Class189();
-        if (is != null)
-            class189.method1419(i_0_, new Class348_Sub49(is), (byte) 64);
+        if (is != null) class189.method1419(i_0_, new Class348_Sub49(is), (byte) 64);
         Class217.aClass60_2844.method582(class189, i_0_, (byte) -114);
         return class189;
     }
@@ -47,22 +42,19 @@ final class Class73 implements Interface7 {
     public final int method31(int i) {
         int i_1_ = -62 / ((i - -43) / 62);
         anInt4774++;
-        if (aClass45_4785.method416((byte) -74, aString4778))
-            return 100;
+        if (aClass45_4785.method416((byte) -74, aString4778)) return 100;
         return 0;
     }
 
     static final void method743(int i, int i_2_) {
         anInt4775++;
-        Class348_Sub42_Sub15 class348_sub42_sub15
-                = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, i);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, i);
         class348_sub42_sub15.method3251(i ^ ~0x3eb0);
     }
 
     public final Class69 method32(int i) {
         anInt4781++;
-        if (i != -15004)
-            aFloatArray4772 = null;
+        if (i != -15004) aFloatArray4772 = null;
         return Class69.aClass69_1197;
     }
 
@@ -71,14 +63,7 @@ final class Class73 implements Interface7 {
             aClass45_4785 = class45;
             aString4778 = string;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("kk.<init>("
-                            + (class45 != null ? "{...}"
-                            : "null")
-                            + ','
-                            + (string != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kk.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
         }
     }
 

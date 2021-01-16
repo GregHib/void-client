@@ -16,8 +16,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
     static Class351 aClass351_8706 = new Class351(79, 3);
     private ha_Sub2 aHa_Sub2_8707;
 
-    final boolean method2261(Class258_Sub2 class258_sub2, float f, int i,
-                             Class258_Sub2 class258_sub2_0_) {
+    final boolean method2261(Class258_Sub2 class258_sub2, float f, int i, Class258_Sub2 class258_sub2_0_) {
         try {
             anInt8703++;
             boolean bool = true;
@@ -31,9 +30,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
             OpenGL.glMatrixMode(5888);
             OpenGL.glLoadIdentity();
             OpenGL.glPushAttrib(2048);
-            OpenGL.glViewport(0, 0,
-                    aClass258_Sub2_8701.anInt8538,
-                    aClass258_Sub2_8701.anInt8538);
+            OpenGL.glViewport(0, 0, aClass258_Sub2_8701.anInt8538, aClass258_Sub2_8701.anInt8538);
             aHa_Sub2_8707.method3807(false, i + -65532);
             aHa_Sub2_8707.method3728(false, i + -65411);
             aHa_Sub2_8707.method3752(114, false);
@@ -64,125 +61,83 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
                                 do {
                                     do {
                                         if (i_3_ == 34069) {
-                                            OpenGL.glTexCoord3i(65535, 65534,
-                                                    65534);
-                                            OpenGL.glMultiTexCoord3i(33985,
-                                                    65535,
-                                                    65534,
-                                                    65534);
+                                            OpenGL.glTexCoord3i(65535, 65534, 65534);
+                                            OpenGL.glMultiTexCoord3i(33985, 65535, 65534, 65534);
                                             OpenGL.glVertex2f(0.0F, 0.0F);
-                                            OpenGL.glTexCoord3i(65535, 65534,
-                                                    -65534);
-                                            OpenGL.glMultiTexCoord3i(33985,
-                                                    65535,
-                                                    65534,
-                                                    -65534);
+                                            OpenGL.glTexCoord3i(65535, 65534, -65534);
+                                            OpenGL.glMultiTexCoord3i(33985, 65535, 65534, -65534);
                                             OpenGL.glVertex2f(1.0F, 0.0F);
-                                            OpenGL.glTexCoord3i(65535, -65534,
-                                                    -65534);
-                                            OpenGL.glMultiTexCoord3i(33985,
-                                                    65535,
-                                                    -65534,
-                                                    -65534);
+                                            OpenGL.glTexCoord3i(65535, -65534, -65534);
+                                            OpenGL.glMultiTexCoord3i(33985, 65535, -65534, -65534);
                                             OpenGL.glVertex2f(1.0F, 1.0F);
-                                            OpenGL.glTexCoord3i(65535, -65534,
-                                                    65534);
-                                            OpenGL.glMultiTexCoord3i(33985,
-                                                    65535,
-                                                    -65534,
-                                                    65534);
+                                            OpenGL.glTexCoord3i(65535, -65534, 65534);
+                                            OpenGL.glMultiTexCoord3i(33985, 65535, -65534, 65534);
                                             OpenGL.glVertex2f(0.0F, 1.0F);
                                             break while_101_;
                                         } else if (i_3_ != 34070) {
                                             if (i_3_ != 34071) {
                                                 if (i_3_ != 34072) {
                                                     if (i_3_ != 34073) {
-                                                        if (i_3_ != 34074)
-                                                            break while_101_;
-                                                    } else
-                                                        break while_99_;
+                                                        if (i_3_ != 34074) break while_101_;
+                                                    } else break while_99_;
                                                     break while_100_;
                                                 }
-                                            } else
-                                                break;
+                                            } else break;
                                             break while_98_;
                                         }
-                                        OpenGL.glTexCoord3i(-65535, 65534,
-                                                -65534);
-                                        OpenGL.glMultiTexCoord3i(33985, -65535,
-                                                65534,
-                                                -65534);
+                                        OpenGL.glTexCoord3i(-65535, 65534, -65534);
+                                        OpenGL.glMultiTexCoord3i(33985, -65535, 65534, -65534);
                                         OpenGL.glVertex2f(0.0F, 0.0F);
-                                        OpenGL.glTexCoord3i(-65535, 65534,
-                                                65534);
-                                        OpenGL.glMultiTexCoord3i(33985, -65535,
-                                                65534, 65534);
+                                        OpenGL.glTexCoord3i(-65535, 65534, 65534);
+                                        OpenGL.glMultiTexCoord3i(33985, -65535, 65534, 65534);
                                         OpenGL.glVertex2f(1.0F, 0.0F);
-                                        OpenGL.glTexCoord3i(-65535, -65534,
-                                                65534);
-                                        OpenGL.glMultiTexCoord3i(33985, -65535,
-                                                -65534,
-                                                65534);
+                                        OpenGL.glTexCoord3i(-65535, -65534, 65534);
+                                        OpenGL.glMultiTexCoord3i(33985, -65535, -65534, 65534);
                                         OpenGL.glVertex2f(1.0F, 1.0F);
-                                        OpenGL.glTexCoord3i(-65535, -65534,
-                                                -65534);
-                                        OpenGL.glMultiTexCoord3i(33985, -65535,
-                                                -65534,
-                                                -65534);
+                                        OpenGL.glTexCoord3i(-65535, -65534, -65534);
+                                        OpenGL.glMultiTexCoord3i(33985, -65535, -65534, -65534);
                                         OpenGL.glVertex2f(0.0F, 1.0F);
                                         break while_101_;
                                     } while (false);
                                     OpenGL.glTexCoord3i(-65534, 65535, -65534);
-                                    OpenGL.glMultiTexCoord3i(33985, -65534,
-                                            65535, -65534);
+                                    OpenGL.glMultiTexCoord3i(33985, -65534, 65535, -65534);
                                     OpenGL.glVertex2f(0.0F, 0.0F);
                                     OpenGL.glTexCoord3i(65534, 65535, -65534);
-                                    OpenGL.glMultiTexCoord3i(33985, 65534,
-                                            65535, -65534);
+                                    OpenGL.glMultiTexCoord3i(33985, 65534, 65535, -65534);
                                     OpenGL.glVertex2f(1.0F, 0.0F);
                                     OpenGL.glTexCoord3i(65534, 65535, 65534);
-                                    OpenGL.glMultiTexCoord3i(33985, 65534,
-                                            65535, 65534);
+                                    OpenGL.glMultiTexCoord3i(33985, 65534, 65535, 65534);
                                     OpenGL.glVertex2f(1.0F, 1.0F);
                                     OpenGL.glTexCoord3i(-65534, 65535, 65534);
-                                    OpenGL.glMultiTexCoord3i(33985, -65534,
-                                            65535, 65534);
+                                    OpenGL.glMultiTexCoord3i(33985, -65534, 65535, 65534);
                                     OpenGL.glVertex2f(0.0F, 1.0F);
                                     break while_101_;
                                 } while (false);
                                 OpenGL.glTexCoord3i(-65534, -65535, 65534);
-                                OpenGL.glMultiTexCoord3i(33985, -65534, -65535,
-                                        65534);
+                                OpenGL.glMultiTexCoord3i(33985, -65534, -65535, 65534);
                                 OpenGL.glVertex2f(0.0F, 0.0F);
                                 OpenGL.glTexCoord3i(65534, -65535, 65534);
-                                OpenGL.glMultiTexCoord3i(33985, 65534, -65535,
-                                        65534);
+                                OpenGL.glMultiTexCoord3i(33985, 65534, -65535, 65534);
                                 OpenGL.glVertex2f(1.0F, 0.0F);
                                 OpenGL.glTexCoord3i(65534, -65535, -65534);
-                                OpenGL.glMultiTexCoord3i(33985, 65534, -65535,
-                                        -65534);
+                                OpenGL.glMultiTexCoord3i(33985, 65534, -65535, -65534);
                                 OpenGL.glVertex2f(1.0F, 1.0F);
                                 OpenGL.glTexCoord3i(-65534, -65535, -65534);
-                                OpenGL.glMultiTexCoord3i(33985, -65534, -65535,
-                                        -65534);
+                                OpenGL.glMultiTexCoord3i(33985, -65534, -65535, -65534);
                                 OpenGL.glVertex2f(0.0F, 1.0F);
                                 break while_101_;
                             } while (false);
                             OpenGL.glTexCoord3i(-65534, 65534, 65535);
-                            OpenGL.glMultiTexCoord3i(33985, -65534, 65534,
-                                    65535);
+                            OpenGL.glMultiTexCoord3i(33985, -65534, 65534, 65535);
                             OpenGL.glVertex2f(0.0F, 0.0F);
                             OpenGL.glTexCoord3i(65534, 65534, 65535);
-                            OpenGL.glMultiTexCoord3i(33985, 65534, 65534,
-                                    65535);
+                            OpenGL.glMultiTexCoord3i(33985, 65534, 65534, 65535);
                             OpenGL.glVertex2f(1.0F, 0.0F);
                             OpenGL.glTexCoord3i(65534, -65534, 65535);
-                            OpenGL.glMultiTexCoord3i(33985, 65534, -65534,
-                                    65535);
+                            OpenGL.glMultiTexCoord3i(33985, 65534, -65534, 65535);
                             OpenGL.glVertex2f(1.0F, 1.0F);
                             OpenGL.glTexCoord3i(-65534, -65534, 65535);
-                            OpenGL.glMultiTexCoord3i(33985, -65534, -65534,
-                                    65535);
+                            OpenGL.glMultiTexCoord3i(33985, -65534, -65534, 65535);
                             OpenGL.glVertex2f(0.0F, 1.0F);
                             break while_101_;
                         } while (false);
@@ -193,8 +148,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
                         OpenGL.glMultiTexCoord3i(33985, -65534, 65534, -65535);
                         OpenGL.glVertex2f(1.0F, 0.0F);
                         OpenGL.glTexCoord3i(-65534, -65534, -65535);
-                        OpenGL.glMultiTexCoord3i(33985, -65534, -65534,
-                                -65535);
+                        OpenGL.glMultiTexCoord3i(33985, -65534, -65534, -65535);
                         OpenGL.glVertex2f(1.0F, 1.0F);
                         OpenGL.glTexCoord3i(65534, -65534, -65535);
                         OpenGL.glMultiTexCoord3i(33985, 65534, -65534, -65535);
@@ -209,77 +163,54 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
             class206.method1500(2983, 0);
             aHa_Sub2_8707.method3770(-422613672, class206);
             aHa_Sub2_8707.method3738(i + -80573, 1);
-            if (i != 65534)
-                return true;
+            if (i != 65534) return true;
             aHa_Sub2_8707.method3771((byte) -95, null);
             aHa_Sub2_8707.method3729(8448, (byte) 121, 8448);
             aHa_Sub2_8707.method3738(-15039, 0);
             aHa_Sub2_8707.method3771((byte) -88, null);
             OpenGL.glPopAttrib();
-            aHa_Sub2_8707.KA(Class348_Sub6.anIntArray6635[0],
-                    Class348_Sub6.anIntArray6635[1],
-                    Class348_Sub6.anIntArray6635[2],
-                    Class348_Sub6.anIntArray6635[3]);
-            if (bool && !aHa_Sub2_8707.aBoolean7847)
-                aClass258_Sub2_8701.method1950(69);
+            aHa_Sub2_8707.KA(Class348_Sub6.anIntArray6635[0], Class348_Sub6.anIntArray6635[1], Class348_Sub6.anIntArray6635[2], Class348_Sub6.anIntArray6635[3]);
+            if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69);
             return bool;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("qda.L("
-                            + (class258_sub2 != null ? "{...}"
-                            : "null")
-                            + ',' + f + ',' + i + ','
-                            + (class258_sub2_0_ != null
-                            ? "{...}" : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qda.L(" + (class258_sub2 != null ? "{...}" : "null") + ',' + f + ',' + i + ',' + (class258_sub2_0_ != null ? "{...}" : "null") + ')'));
         }
     }
 
     final Class258_Sub2 method2256(byte i) {
         anInt8700++;
-        if (i != -121)
-            return null;
+        if (i != -121) return null;
         return aClass258_Sub2_8701;
     }
 
     final int method2262(int i) {
-        if (i != 65534)
-            aHa_Sub2_8707 = null;
+        if (i != 65534) aHa_Sub2_8707 = null;
         anInt8699++;
         return aClass258_Sub2_8701.anInt8538;
     }
 
     static final Class105 method2263(ha var_ha, int i, int i_4_) {
         anInt8705++;
-        Class348_Sub15 class348_sub15
-                = ((Class348_Sub15)
-                Class27.aClass356_389.method3480(i_4_, -6008));
+        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aClass356_389.method3480(i_4_, -6008));
         if (class348_sub15 != null) {
-            Class348_Sub23_Sub2 class348_sub23_sub2
-                    = class348_sub15.aClass55_Sub1_6768
-                    .method506(false);
+            Class348_Sub23_Sub2 class348_sub23_sub2 = class348_sub15.aClass55_Sub1_6768.method506(false);
             class348_sub15.aBoolean6772 = true;
-            if (class348_sub23_sub2 != null)
-                return class348_sub23_sub2.method2975(var_ha, 0);
+            if (class348_sub23_sub2 != null) return class348_sub23_sub2.method2975(var_ha, 0);
         }
-        if (i != 0)
-            aClass351_8706 = null;
+        if (i != 0) aClass351_8706 = null;
         return null;
     }
 
     static final void method2264(boolean bool) {
-        if (bool != false)
-            aClass348_Sub49_8698 = null;
+        if (bool != false) aClass348_Sub49_8698 = null;
         anInt8704++;
-        Class348_Sub42_Sub15 class348_sub42_sub15
-                = Class318_Sub9_Sub1.method2516(0, (byte) 105, 15);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(0, (byte) 105, 15);
         class348_sub42_sub15.method3251(-16058);
     }
 
     public static void method2265(int i) {
         aClass348_Sub49_8698 = null;
-        if (i != -10794)
-            aClass351_8706 = null;
+        if (i != -10794) aClass351_8706 = null;
         aClass351_8706 = null;
     }
 

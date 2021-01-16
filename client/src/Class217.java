@@ -14,21 +14,18 @@ final class Class217 {
     private Class60 aClass60_2848 = new Class60(64);
 
     public static void method1585(int i) {
-        if (i != -1)
-            method1585(-34);
+        if (i != -1) method1585(-34);
         aClass60_2844 = null;
     }
 
     static final void method1586(boolean bool, byte i, String string) {
-        if (i >= -51)
-            aClass60_2844 = null;
+        if (i >= -51) aClass60_2844 = null;
         anInt2840++;
         Class16.method259(-1, 113, bool, string, -1);
     }
 
     final void method1587(int i, int i_0_) {
-        if (i_0_ != 3758)
-            aClass60_2848 = null;
+        if (i_0_ != 3758) aClass60_2848 = null;
         synchronized (aClass60_2848) {
             aClass60_2848.method578(2, i);
         }
@@ -41,17 +38,14 @@ final class Class217 {
         synchronized (aClass60_2848) {
             class159 = (Class159) aClass60_2848.method583(i_1_, -126);
         }
-        if (class159 != null)
-            return class159;
+        if (class159 != null) return class159;
         byte[] is;
         synchronized (aClass45_2842) {
             is = aClass45_2842.method410(-1860, 16, i_1_);
-            if (i >= -17)
-                aClass60_2848 = null;
+            if (i >= -17) aClass60_2848 = null;
         }
         class159 = new Class159();
-        if (is != null)
-            class159.method1253(new Class348_Sub49(is), true);
+        if (is != null) class159.method1253(new Class348_Sub49(is), true);
         synchronized (aClass60_2848) {
             aClass60_2848.method582(class159, i_1_, (byte) -124);
         }
@@ -63,14 +57,12 @@ final class Class217 {
         synchronized (aClass60_2848) {
             aClass60_2848.method590(0);
         }
-        if (i < 126)
-            method1588(-98, -35);
+        if (i < 126) method1588(-98, -35);
     }
 
     final void method1590(int i) {
         anInt2846++;
-        if (i != 0)
-            this.anInt2845 = -97;
+        if (i != 0) this.anInt2845 = -97;
         synchronized (aClass60_2848) {
             aClass60_2848.method587(i ^ ~0x6b);
         }
@@ -79,19 +71,10 @@ final class Class217 {
     Class217(Class230 class230, int i, Class45 class45) {
         try {
             aClass45_2842 = class45;
-            if (aClass45_2842 != null)
-                this.anInt2845 = aClass45_2842.method407(0, 16);
-            else
-                this.anInt2845 = 0;
+            if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16);
+            else this.anInt2845 = 0;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("rv.<init>("
-                            + (class230 != null ? "{...}"
-                            : "null")
-                            + ',' + i + ','
-                            + (class45 != null ? "{...}"
-                            : "null")
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

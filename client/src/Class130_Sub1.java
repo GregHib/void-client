@@ -13,15 +13,13 @@ final class Class130_Sub1 extends Class130 {
     }
 
     static final boolean method1132(int i, int j, int k) {
-        if (i != 1673)
-            return true;
+        if (i != 1673) return true;
         anInt5796++;
         return Class348_Sub42_Sub8.method3194(k, j, (byte) 124) || Class183.method1379(4, j, k);
     }
 
     public static void method1133(int i) {
-        if (i <= 38)
-            anInt5799 = 61;
+        if (i <= 38) anInt5799 = 61;
         aClass144_5800 = null;
     }
 
@@ -32,8 +30,7 @@ final class Class130_Sub1 extends Class130 {
     static final void method1134(int i) {
         Class348_Sub49.method3379(2, 11);
         anInt5802++;
-        if (i < 28)
-            aClass144_5800 = null;
+        if (i < 28) aClass144_5800 = null;
         Class301.method2282(-12648);
         System.gc();
     }
@@ -4136,16 +4133,13 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub35.anInt6981 = 0;
         Class367_Sub11.anInt7403 = 0;
         for (int l = 0; l < Class77.anIntArray1303.length; l++)
-            if (!Class286_Sub6.aBooleanArray6270[l])
-                Class77.anIntArray1303[l] = -1;
+            if (!Class286_Sub6.aBooleanArray6270[l]) Class77.anIntArray1303[l] = -1;
 
-        if (r.anInt9721 != -1)
-            Class14.method235(r.anInt9721, (byte) -105);
+        if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (byte) -105);
         for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3482(0)) {
             if (!class348_sub41.method2712((byte) 4)) {
                 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0);
-                if (class348_sub41 == null)
-                    break;
+                if (class348_sub41 == null) break;
             }
             Class127_Sub1.method1118(true, false, class348_sub41, 2533);
         }

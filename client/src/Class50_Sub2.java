@@ -18,12 +18,9 @@ final class Class50_Sub2 extends Class50 {
         int i_2_ = i * anInt5231 >> -1338262164;
         int i_3_ = anInt5232 * i >> 31849804;
         int i_4_ = i_0_ * anInt5227 >> -545848404;
-        if (i_1_ > -98)
-            aBoolean5233 = false;
+        if (i_1_ > -98) aBoolean5233 = false;
         int i_5_ = i_0_ * anInt5230 >> 864282732;
-        Class170.method1308(this.anInt864, i_4_, i_2_,
-                this.anInt865, (byte) -123,
-                this.anInt862, i_3_, i_5_);
+        Class170.method1308(this.anInt864, i_4_, i_2_, this.anInt865, (byte) -123, this.anInt862, i_3_, i_5_);
     }
 
     static final void method464(int i) {
@@ -32,8 +29,7 @@ final class Class50_Sub2 extends Class50 {
         Class108.aClass105_1664 = null;
     }
 
-    Class50_Sub2(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_,
-                 int i_11_) {
+    Class50_Sub2(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {
         super(i_9_, i_10_, i_11_);
         anInt5231 = i;
         anInt5227 = i_6_;
@@ -48,9 +44,7 @@ final class Class50_Sub2 extends Class50 {
             int i_15_ = i_12_ * anInt5232 >> -1554940340;
             int i_16_ = i * anInt5227 >> 309103884;
             int i_17_ = i * anInt5230 >> 417676652;
-            Class97.method872(this.anInt865, 1,
-                    this.anInt862, i_16_, i_17_, i_15_,
-                    i_14_);
+            Class97.method872(this.anInt865, 1, this.anInt862, i_16_, i_17_, i_15_, i_14_);
         }
     }
 
@@ -58,11 +52,9 @@ final class Class50_Sub2 extends Class50 {
         anInt5234++;
         int i_20_ = i_18_ * anInt5231 >> 95911596;
         int i_21_ = anInt5232 * i_18_ >> 1914167564;
-        if (i <= 87)
-            anInt5231 = 56;
+        if (i <= 87) anInt5231 = 56;
         int i_22_ = i_19_ * anInt5227 >> -873272212;
         int i_23_ = i_19_ * anInt5230 >> -135893428;
-        Class318_Sub1_Sub5.method2486(0, i_21_, this.anInt864,
-                i_23_, i_20_, i_22_);
+        Class318_Sub1_Sub5.method2486(0, i_21_, this.anInt864, i_23_, i_20_, i_22_);
     }
 }

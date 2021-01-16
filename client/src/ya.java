@@ -10,8 +10,7 @@ final class ya extends za implements Interface19 {
     final native void ga();
 
     protected final void finalize() {
-        if (this.nativeid != 0L)
-            Class257.method1947(0, this);
+        if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
     private final native void aa(oa var_oa, int i);

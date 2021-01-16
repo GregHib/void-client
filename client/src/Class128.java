@@ -21,7 +21,6 @@ final class Class128 {
 
     public static void method1123(int i) {
         aClass114_1871 = null;
-        if (i != -1)
-            method1122(-78);
+        if (i != -1) method1122(-78);
     }
 }

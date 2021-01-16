@@ -18,14 +18,10 @@ final class Class33 {
         synchronized (aClass60_460) {
             class117 = (Class117) aClass60_460.method583(i, 111);
         }
-        if (class117 != null)
-            return class117;
-        byte[] is
-                = aClass45_458.method410(-1860, Class5_Sub3.method200(-107, i),
-                Class348_Sub31.method3013(i, bool));
+        if (class117 != null) return class117;
+        byte[] is = aClass45_458.method410(-1860, Class5_Sub3.method200(-107, i), Class348_Sub31.method3013(i, bool));
         class117 = new Class117();
-        if (is != null)
-            class117.method1069(0, new Class348_Sub49(is));
+        if (is != null) class117.method1069(0, new Class348_Sub49(is));
         synchronized (aClass60_460) {
             aClass60_460.method582(class117, i, (byte) -102);
         }
@@ -33,39 +29,26 @@ final class Class33 {
     }
 
     static final void method338(int i, int i_0_) {
-        if (i == Class316.aClass348_Sub51_3959
-                .aClass239_Sub22_7253.method1815(-32350))
-            i_0_ = -1;
+        if (i == Class316.aClass348_Sub51_3959.aClass239_Sub22_7253.method1815(-32350)) i_0_ = -1;
         anInt456++;
         if (i_0_ != Class337.anInt4179) {
             if (i_0_ != -1) {
-                Class222 class222
-                        = Class239.aClass166_3147.method1287((byte) -104, i_0_);
+                Class222 class222 = Class239.aClass166_3147.method1287((byte) -104, i_0_);
                 Class207 class207 = class222.method1610((byte) 71);
-                if (class207 == null)
-                    i_0_ = -1;
+                if (class207 == null) i_0_ = -1;
                 else {
-                    Class348_Sub23_Sub1.aClass297_8992.method2238
-                            (class207.method1522(), class207.method1516(), 17,
-                                    new Point(class222.anInt2883,
-                                            class222.anInt2890),
-                                    Class305.aCanvas3869, class207.method1510());
+                    Class348_Sub23_Sub1.aClass297_8992.method2238(class207.method1522(), class207.method1516(), 17, new Point(class222.anInt2883, class222.anInt2890), Class305.aCanvas3869, class207.method1510());
                     Class337.anInt4179 = i_0_;
                 }
             }
             if (i_0_ == -1 && Class337.anInt4179 != -1) {
-                Class348_Sub23_Sub1.aClass297_8992.method2238(-1, null, i + 17,
-                        new Point(),
-                        (Class305
-                                .aCanvas3869),
-                        -1);
+                Class348_Sub23_Sub1.aClass297_8992.method2238(-1, null, i + 17, new Point(), (Class305.aCanvas3869), -1);
                 Class337.anInt4179 = -1;
             }
         }
     }
 
-    static final void method339(int i, int i_1_, byte[] is, int i_2_, int i_3_,
-                                int i_4_) {
+    static final void method339(int i, int i_1_, byte[] is, int i_2_, int i_3_, int i_4_) {
         anInt461++;
         if (i_4_ > i_1_) {
             i += i_1_;
@@ -78,8 +61,7 @@ final class Class33 {
             }
             if (i_3_ == 1354705384) {
                 i_2_ = 0x3 & i_4_ - i_1_;
-                while (--i_2_ >= 0)
-                    is[i++] = (byte) 1;
+                while (--i_2_ >= 0) is[i++] = (byte) 1;
             }
         }
     }
@@ -89,8 +71,7 @@ final class Class33 {
         i = --i | i >>> 750142081;
         i |= i >>> -1369908414;
         i |= i >>> -1532713180;
-        if (i_5_ != 108)
-            return 34;
+        if (i_5_ != 108) return 34;
         i |= i >>> 1354705384;
         i |= i >>> 255192560;
         return 1 + i;
@@ -100,19 +81,11 @@ final class Class33 {
         do {
             try {
                 aClass45_458 = class45;
-                if (aClass45_458 == null)
-                    break;
+                if (aClass45_458 == null) break;
                 int i_6_ = -1 + aClass45_458.method414(-1);
                 aClass45_458.method407(0, i_6_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception,
-                        ("iba.<init>("
-                                + (class230 != null ? "{...}"
-                                : "null")
-                                + ',' + i + ','
-                                + (class45 != null ? "{...}"
-                                : "null")
-                                + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

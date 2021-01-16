@@ -8,8 +8,7 @@ final class Class270 {
     static int anInt3465;
 
     public static void method2043(boolean bool) {
-        if (bool != true)
-            method2043(false);
+        if (bool != true) method2043(false);
         anIntArray3464 = null;
     }
 }

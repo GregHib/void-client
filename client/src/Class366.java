@@ -17,8 +17,7 @@ final class Class366 implements Interface5_Impl1 {
     private int anInt8514;
 
     public final int method16(boolean bool) {
-        if (bool)
-            method3519(-55);
+        if (bool) method3519(-55);
         return anInt8508;
     }
 
@@ -27,16 +26,14 @@ final class Class366 implements Interface5_Impl1 {
             this.anIDirect3DVertexBuffer8511.a(9275);
             this.anIDirect3DVertexBuffer8511 = null;
         }
-        if (i != 23315)
-            method17(null, -80, -30, (byte) 72);
+        if (i != 23315) method17(null, -80, -30, (byte) 72);
         anInt8514 = 0;
         anInt8508 = 0;
     }
 
     public final boolean method20(int i, byte i_0_, int i_1_) {
         aByte8513 = (byte) i_1_;
-        if (i_0_ < 122)
-            method20(-127, (byte) 52, -18);
+        if (i_0_ < 122) method20(-127, (byte) 52, -18);
         anInt8508 = i;
         if (anInt8508 > anInt8514) {
             int i_2_ = 8;
@@ -44,30 +41,19 @@ final class Class366 implements Interface5_Impl1 {
             if (aBoolean8509) {
                 i_2_ |= 0x200;
                 i_3_ = 0;
-            } else
-                i_3_ = 1;
-            if (this.anIDirect3DVertexBuffer8511 != null)
-                this.anIDirect3DVertexBuffer8511.a(9275);
-            this.anIDirect3DVertexBuffer8511
-                    = (aClass378_8512.anIDirect3DDevice9810.a
-                    (anInt8508, i_2_, 0, i_3_,
-                            this.anIDirect3DVertexBuffer8511));
+            } else i_3_ = 1;
+            if (this.anIDirect3DVertexBuffer8511 != null) this.anIDirect3DVertexBuffer8511.a(9275);
+            this.anIDirect3DVertexBuffer8511 = (aClass378_8512.anIDirect3DDevice9810.a(anInt8508, i_2_, 0, i_3_, this.anIDirect3DVertexBuffer8511));
             anInt8514 = anInt8508;
         }
         return null != this.anIDirect3DVertexBuffer8511;
     }
 
     public final Buffer method19(boolean bool, int i) {
-        if (this.anIDirect3DVertexBuffer8511 == null)
-            return null;
+        if (this.anIDirect3DVertexBuffer8511 == null) return null;
         bool &= aBoolean8509;
-        if (i != 26775)
-            method21(93);
-        if (!aBoolean8510
-                && ue.a((this.anIDirect3DVertexBuffer8511.Lock
-                        (0, anInt8514, !bool ? 0 : 8192,
-                                aClass378_8512.aGeometryBuffer9811)),
-                false)) {
+        if (i != 26775) method21(93);
+        if (!aBoolean8510 && ue.a((this.anIDirect3DVertexBuffer8511.Lock(0, anInt8514, !bool ? 0 : 8192, aClass378_8512.aGeometryBuffer9811)), false)) {
             aBoolean8510 = true;
             return aClass378_8512.aGeometryBuffer9811;
         }
@@ -75,29 +61,22 @@ final class Class366 implements Interface5_Impl1 {
     }
 
     public final boolean method17(Source source, int i, int i_4_, byte i_5_) {
-        if (method20(i_4_, (byte) 125, i))
-            return this.anIDirect3DVertexBuffer8511
-                    .a(source, 0, 0, anInt8508, !aBoolean8509 ? 0 : 8192);
-        if (i_5_ >= -15)
-            anInt8508 = 71;
+        if (method20(i_4_, (byte) 125, i)) return this.anIDirect3DVertexBuffer8511.a(source, 0, 0, anInt8508, !aBoolean8509 ? 0 : 8192);
+        if (i_5_ >= -15) anInt8508 = 71;
         return false;
     }
 
     public final boolean method18(int i) {
-        if (aBoolean8510
-                && ue.a(this.anIDirect3DVertexBuffer8511.Unlock(),
-                false)) {
+        if (aBoolean8510 && ue.a(this.anIDirect3DVertexBuffer8511.Unlock(), false)) {
             aBoolean8510 = false;
             return true;
         }
-        if (i != 6331)
-            return false;
+        if (i != 6331) return false;
         return false;
     }
 
     final int method3519(int i) {
-        if (i != 3545)
-            method21(-87);
+        if (i != 3545) method21(-87);
         return aByte8513;
     }
 

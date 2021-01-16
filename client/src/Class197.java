@@ -18,13 +18,9 @@ final class Class197 {
     final int method1451(int i) {
         if (anInt2609 >= anInt2610) {
             anInt2612 = anIntArray2602[anInt2611++] << 15;
-            if (anInt2611 >= anInt2604)
-                anInt2611 = anInt2604 - 1;
-            anInt2610 = (int) ((double) anIntArray2605[anInt2611] / 65536.0
-                    * (double) i);
-            if (anInt2610 > anInt2609)
-                anInt2608 = (((anIntArray2602[anInt2611] << 15) - anInt2612)
-                        / (anInt2610 - anInt2609));
+            if (anInt2611 >= anInt2604) anInt2611 = anInt2604 - 1;
+            anInt2610 = (int) ((double) anIntArray2605[anInt2611] / 65536.0 * (double) i);
+            if (anInt2610 > anInt2609) anInt2608 = (((anIntArray2602[anInt2611] << 15) - anInt2612) / (anInt2610 - anInt2609));
         }
         anInt2612 += anInt2608;
         anInt2609++;

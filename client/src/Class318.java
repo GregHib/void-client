@@ -15,13 +15,10 @@ class Class318 {
     final void method2373(boolean bool) {
         anInt3975++;
         if (this.aClass318_3976 != null) {
-            this.aClass318_3976.aClass318_3970
-                    = this.aClass318_3970;
-            this.aClass318_3970.aClass318_3976
-                    = this.aClass318_3976;
+            this.aClass318_3976.aClass318_3970 = this.aClass318_3970;
+            this.aClass318_3970.aClass318_3976 = this.aClass318_3976;
             this.aClass318_3970 = null;
-            if (bool == false)
-                this.aClass318_3976 = null;
+            if (bool == false) this.aClass318_3976 = null;
         }
     }
 
@@ -34,8 +31,7 @@ class Class318 {
     static final void method2375(int i) {
         anInt3972++;
         Class202.aClass60_2671.method590(0);
-        if (i != 16127)
-            anInt3971 = -113;
+        if (i != 16127) anInt3971 = -113;
     }
 
     public Class318() {
@@ -43,8 +39,7 @@ class Class318 {
     }
 
     static {
-        for (int i = 0;
-             aClass243Array3974.length > i; i++)
+        for (int i = 0; aClass243Array3974.length > i; i++)
             aClass243Array3974[i] = new Class243();
         aClass304_3977 = new Class304(1);
     }

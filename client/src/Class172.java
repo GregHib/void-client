@@ -11,30 +11,24 @@ final class Class172 {
 
     public static void method1325(int i) {
         anIntArray2280 = null;
-        if (i <= -123)
-            aClass114_2279 = null;
+        if (i <= -123) aClass114_2279 = null;
     }
 
-    static final Class348_Sub16_Sub3 method1326
-            (Class348_Sub16_Sub3 class348_sub16_sub3, int i) {
+    static final Class348_Sub16_Sub3 method1326(Class348_Sub16_Sub3 class348_sub16_sub3, int i) {
         anInt2278++;
-        Class348_Sub16_Sub3 class348_sub16_sub3_0_
-                = (class348_sub16_sub3 == null ? new Class348_Sub16_Sub3()
-                : new Class348_Sub16_Sub3(class348_sub16_sub3));
+        Class348_Sub16_Sub3 class348_sub16_sub3_0_ = (class348_sub16_sub3 == null ? new Class348_Sub16_Sub3() : new Class348_Sub16_Sub3(class348_sub16_sub3));
         class348_sub16_sub3_0_.method2841(i, -94, 128);
         return class348_sub16_sub3_0_;
     }
 
     static final int method1327(int i) {
-        if (i <= 17)
-            anIntArray2280 = null;
+        if (i <= 17) anIntArray2280 = null;
         anInt2277++;
         return Class348_Sub31.anInt6924;
     }
 
     static final void method1328(int i) {
-        if (i != -26162)
-            anIntArray2280 = null;
+        if (i != -26162) anIntArray2280 = null;
         Class351.aClass60_4327.method587(-118);
         anInt2281++;
         Class358.aClass60_4417.method587(-89);

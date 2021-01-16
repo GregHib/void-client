@@ -12,8 +12,7 @@ final class Class229 {
 
     static final Class241 method1631(boolean bool) {
         anInt2980++;
-        if (bool != false)
-            aClass194_2981 = null;
+        if (bool != false) aClass194_2981 = null;
         try {
             return new Class241_Sub2();
         } catch (Throwable throwable) {
@@ -37,8 +36,7 @@ final class Class229 {
     }
 
     static final boolean method1633(boolean bool, int i, int i_2_) {
-        if (bool != false)
-            method1633(false, 85, -80);
+        if (bool != false) method1633(false, 85, -80);
         anInt2977++;
         return (0x400 & i) != 0;
     }

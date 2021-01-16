@@ -27,7 +27,6 @@ final class Class3 {
     public static void method176(int i) {
         aClass114_123 = null;
         aClass161_125 = null;
-        if (i != -1)
-            method176(-19);
+        if (i != -1) method176(-19);
     }
 }

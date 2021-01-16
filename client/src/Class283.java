@@ -15,17 +15,14 @@ final class Class283 {
     public static void method2113(byte i) {
         anIntArray3659 = null;
         anIntArray3661 = null;
-        if (i != 74)
-            method2113((byte) -2);
+        if (i != 74) method2113((byte) -2);
         aFloatArray3658 = null;
     }
 
     static final boolean method2114(int i, boolean bool) {
         anInt3656++;
-        if (bool != true)
-            method2114(90, true);
-        return i == 3 || i == 5
-                || i == 6;
+        if (bool != true) method2114(90, true);
+        return i == 3 || i == 5 || i == 6;
     }
 
     static {

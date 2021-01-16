@@ -12,23 +12,18 @@ final class Class132 {
     static int anInt1911 = 7000;
 
     public static void method1137(int i) {
-        if (i != 3)
-            method1138(null, true, null, (byte) 70);
+        if (i != 3) method1138(null, true, null, (byte) 70);
         anIntArray1909 = null;
         aClass318_Sub1_Sub3_Sub3_Sub2_1907 = null;
     }
 
-    static final void method1138(String string, boolean bool, String string_0_,
-                                 byte i) {
+    static final void method1138(String string, boolean bool, String string_0_, byte i) {
         try {
             anInt1908++;
             Class64_Sub3.aString5600 = string;
             Class186.aString2496 = string_0_;
             Class318_Sub1_Sub3_Sub3.aBoolean10238 = bool;
-            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238
-                    && (Class64_Sub3.aString5600.equals("")
-                    || Class186.aString2496.equals("")))
-                Class14_Sub4.method254(3, (byte) -100);
+            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600.equals("") || Class186.aString2496.equals(""))) Class14_Sub4.method254(3, (byte) -100);
             else {
                 int i_1_ = 34 % ((16 - i) / 55);
                 if (Class239_Sub12.anInt5969 != 1) {
@@ -42,14 +37,7 @@ final class Class132 {
                 Class318_Sub1_Sub1_Sub2.anInt9971 = 0;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("nr.A("
-                            + (string != null ? "{...}"
-                            : "null")
-                            + ',' + bool + ','
-                            + (string_0_ != null ? "{...}"
-                            : "null")
-                            + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nr.A(" + (string != null ? "{...}" : "null") + ',' + bool + ',' + (string_0_ != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 

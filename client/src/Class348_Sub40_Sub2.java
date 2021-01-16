@@ -21,8 +21,7 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
                     anInt9099 = class348_sub49.method3387(i_0_ ^ 0x79d8);
                     break while_132_;
                 } else if (i_1_ != 1) {
-                    if (i_1_ == 2)
-                        break;
+                    if (i_1_ == 2) break;
                     break while_132_;
                 }
                 anInt9095 = class348_sub49.method3387(255);
@@ -30,8 +29,7 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
             } while (false);
             anInt9098 = class348_sub49.method3330(842397944);
         } while (false);
-        if (i_0_ != 31015)
-            method3042(-14, -114);
+        if (i_0_ != 31015) method3042(-14, -114);
     }
 
     public Class348_Sub40_Sub2() {
@@ -39,8 +37,7 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
     }
 
     public static void method3053(int i) {
-        if (i == 4)
-            anIntArray9096 = null;
+        if (i == 4) anIntArray9096 = null;
     }
 
     final int[] method3042(int i, int i_2_) {
@@ -86,8 +83,7 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
                 is[i_3_] = 4096;
             }
         }
-        if (i_2_ != 255)
-            anIntArray9096 = null;
+        if (i_2_ != 255) anIntArray9096 = null;
         return is;
     }
 }

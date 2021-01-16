@@ -11,17 +11,14 @@ final class Class328_Sub3 extends Class328 {
 
     static final void method2615(int i, int i_0_) {
         anInt6521++;
-        Class348_Sub42_Sub15 class348_sub42_sub15
-                = Class318_Sub9_Sub1.method2516(i_0_, (byte) 105, 12);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_0_, (byte) 105, 12);
         class348_sub42_sub15.method3251(-16058);
-        if (i >= -59)
-            method2617((byte) -108);
+        if (i >= -59) method2617((byte) -108);
     }
 
     static final void method2616(int i) {
         anInt6520++;
-        if (i == 12)
-            Class286_Sub3.method2152(false);
+        if (i == 12) Class286_Sub3.method2152(false);
     }
 
     public static void method2617(byte i) {

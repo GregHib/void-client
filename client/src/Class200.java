@@ -10,8 +10,7 @@ final class Class200 {
     public static void method1463(byte i) {
         aClass351_2638 = null;
         aClass105Array2640 = null;
-        if (i != 25)
-            aClass105Array2640 = null;
+        if (i != 25) aClass105Array2640 = null;
         aClass226_2639 = null;
     }
 }

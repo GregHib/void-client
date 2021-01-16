@@ -10,22 +10,17 @@ final class Class348_Sub40_Sub20 extends Class348_Sub40 {
     static int anInt9265;
 
     static final void method3102(int i) {
-        if (i != 22385)
-            aClass348_Sub4_9264 = null;
+        if (i != 22385) aClass348_Sub4_9264 = null;
         anInt9265++;
         Class332.aClass60_4139.method587(-110);
     }
 
     private final int method3103(int i, int i_0_, int i_1_) {
         anInt9262++;
-        if (i_1_ < 14)
-            aClass348_Sub4_9264 = null;
+        if (i_1_ < 14) aClass348_Sub4_9264 = null;
         int i_2_ = i_0_ - -(57 * i);
         i_2_ ^= i_2_ << 1180720577;
-        return (-(((789221 + 15731 * (i_2_ * i_2_)) * i_2_ + 1376312589
-                & 0x7fffffff)
-                / 262144)
-                + 4096);
+        return (-(((789221 + 15731 * (i_2_ * i_2_)) * i_2_ + 1376312589 & 0x7fffffff) / 262144) + 4096);
     }
 
     public Class348_Sub40_Sub20() {
@@ -45,11 +40,9 @@ final class Class348_Sub40_Sub20 extends Class348_Sub40 {
         if (this.aClass191_7032.aBoolean2570) {
             int i_4_ = Class239_Sub18.anIntArray6035[i];
             for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub6.anInt9139); i_5_++)
-                is[i_5_] = method3103(i_4_, Class318_Sub6.anIntArray6432[i_5_],
-                        22) % 4096;
+                is[i_5_] = method3103(i_4_, Class318_Sub6.anIntArray6432[i_5_], 22) % 4096;
         }
-        if (i_3_ != 255)
-            method3042(38, -42);
+        if (i_3_ != 255) method3042(38, -42);
         return is;
     }
 

@@ -21,14 +21,12 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
     final void method1152(int i) {
         anInt4840++;
         this.aHa_Sub2_1927.method3793(1, this);
-        if (i >= -78)
-            aClass161_4839 = null;
+        if (i >= -78) aClass161_4839 = null;
     }
 
     public final int method34(int i) {
         anInt4838++;
-        if (i != -5711)
-            method35(null, -82, 99, -89);
+        if (i != -5711) method35(null, -82, 99, -89);
         return anInt4837;
     }
 
@@ -50,14 +48,12 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
     }
 
     public final int method33(int i) {
-        if (i != -23923)
-            method35(null, -47, -115, -72);
+        if (i != -23923) method35(null, -47, -115, -72);
         anInt4836++;
         return this.anInt1929;
     }
 
-    static final void method1156(int i, int i_3_, int[] is, int i_4_,
-                                 int i_5_) {
+    static final void method1156(int i, int i_3_, int[] is, int i_4_, int i_5_) {
         i_4_--;
         anInt4841++;
         int i_6_ = --i_3_ - 7;
@@ -72,8 +68,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
                 is[++i_4_] = i_5_;
                 is[++i_4_] = i_5_;
             }
-            while (i_3_ > i_4_)
-                is[++i_4_] = i_5_;
+            while (i_3_ > i_4_) is[++i_4_] = i_5_;
         }
     }
 
@@ -87,47 +82,31 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
                 Class14_Sub4.method254(35, (byte) -87);
                 return;
             } else {
-                Class348_Sub49 class348_sub49
-                        = (new Class348_Sub49
-                        (Class98.method878((Class110_Sub1.method1039
-                                        (Class348_Sub23_Sub3.aString9043,
-                                                true)),
-                                -126)));
+                Class348_Sub49 class348_sub49 = (new Class348_Sub49(Class98.method878((Class110_Sub1.method1039(Class348_Sub23_Sub3.aString9043, true)), -126)));
                 l = class348_sub49.method3365(-456577760);
-                Class348_Sub33.aLong6966
-                        = class348_sub49.method3365(-456577760);
+                Class348_Sub33.aLong6966 = class348_sub49.method3365(-456577760);
             }
-            Class132.method1138(Class27.method313(l, -95), true, "",
-                    (byte) 79);
+            Class132.method1138(Class27.method313(l, -95), true, "", (byte) 79);
         }
     }
 
     public final long method36(byte i) {
-        if (i < 76)
-            aClass251_4835 = null;
+        if (i < 76) aClass251_4835 = null;
         anInt4842++;
         return 0L;
     }
 
-    Class135_Sub2(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_8_,
-                  boolean bool) {
+    Class135_Sub2(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_8_, boolean bool) {
         super(var_ha_Sub2, 34963, is, i_8_, bool);
         try {
             anInt4837 = i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("kaa.<init>("
-                            + (var_ha_Sub2 != null ? "{...}"
-                            : "null")
-                            + ',' + i + ','
-                            + (is != null ? "{...}" : "null")
-                            + ',' + i_8_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kaa.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_8_ + ',' + bool + ')'));
         }
     }
 
     static final boolean method1158(int i, int i_9_, int i_10_) {
-        if (i_9_ != -1)
-            aClass161_4839 = null;
+        if (i_9_ != -1) aClass161_4839 = null;
         anInt4844++;
         return (i_10_ & 0x180) != 0;
     }

@@ -19,8 +19,7 @@ abstract class Class186 {
         anIntArray2497 = null;
         aString2496 = null;
         aClass351_2495 = null;
-        if (i != 25)
-            aClass351_2495 = null;
+        if (i != 25) aClass351_2495 = null;
     }
 
     static final void method1397(int i) {
@@ -28,39 +27,20 @@ abstract class Class186 {
         int i_0_ = Class328_Sub1.anInt6513;
         int[] is = Class286_Sub7.anIntArray6290;
         for (int i_1_ = 0; i_1_ < i_0_; i_1_++) {
-            Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
-                    = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_1_]];
-            if (class318_sub1_sub3_sub3_sub2 != null
-                    && (class318_sub1_sub3_sub3_sub2
-                    .anInt10264) > 0) {
-                class318_sub1_sub3_sub3_sub2
-                        .anInt10264--;
-                if ((class318_sub1_sub3_sub3_sub2
-                        .anInt10264)
-                        == 0)
-                    class318_sub1_sub3_sub3_sub2
-                            .aString10292
-                            = null;
+            Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_1_]];
+            if (class318_sub1_sub3_sub3_sub2 != null && (class318_sub1_sub3_sub3_sub2.anInt10264) > 0) {
+                class318_sub1_sub3_sub3_sub2.anInt10264--;
+                if ((class318_sub1_sub3_sub3_sub2.anInt10264) == 0) class318_sub1_sub3_sub3_sub2.aString10292 = null;
             }
         }
-        for (int i_2_ = i;
-             i_2_ < Class150.anInt2057; i_2_++) {
+        for (int i_2_ = i; i_2_ < Class150.anInt2057; i_2_++) {
             long l = Class74.anIntArray1233[i_2_];
-            Class348_Sub22 class348_sub22
-                    = ((Class348_Sub22)
-                    Class282.aClass356_3654.method3480(l, -6008));
+            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(l, -6008));
             if (class348_sub22 != null) {
-                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                        = (class348_sub22
-                        .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                if ((class318_sub1_sub3_sub3_sub1
-                        .anInt10264) > 0) {
-                    class318_sub1_sub3_sub3_sub1
-                            .anInt10264--;
-                    if (class318_sub1_sub3_sub3_sub1.anInt10264
-                            == 0)
-                        class318_sub1_sub3_sub3_sub1.aString10292
-                                = null;
+                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
+                if ((class318_sub1_sub3_sub3_sub1.anInt10264) > 0) {
+                    class318_sub1_sub3_sub3_sub1.anInt10264--;
+                    if (class318_sub1_sub3_sub3_sub1.anInt10264 == 0) class318_sub1_sub3_sub3_sub1.aString10292 = null;
                 }
             }
         }
@@ -70,9 +50,7 @@ abstract class Class186 {
         /* empty */
     }
 
-    abstract void method1398(int i, int i_3_, float f, float f_4_, int i_5_,
-                             float f_6_, int i_7_, float f_8_, int i_9_,
-                             int i_10_, float[] fs);
+    abstract void method1398(int i, int i_3_, float f, float f_4_, int i_5_, float f_6_, int i_7_, float f_8_, int i_9_, int i_10_, float[] fs);
 
     static {
         aClass74_2491 = new Class74(13, -1);

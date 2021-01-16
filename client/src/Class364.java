@@ -14,8 +14,7 @@ final class Class364 {
     }
 
     static final void method3517(int i) {
-        if (i <= 35)
-            method3517(98);
+        if (i <= 35) method3517(98);
         anInt4468++;
         Class375.aClass60_4543.method590(0);
     }

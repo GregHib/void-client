@@ -25,19 +25,15 @@ final class Class357 {
 
     final void method3485(boolean bool) {
         Class148 class148;
-        for (/**/; this.aClass148_4396 != null;
-                 this.aClass148_4396 = class148) {
-            class148
-                    = this.aClass148_4396.aClass148_2038;
+        for (/**/; this.aClass148_4396 != null; this.aClass148_4396 = class148) {
+            class148 = this.aClass148_4396.aClass148_2038;
             this.aClass148_4396.method1199((byte) -106);
         }
         anInt4393++;
-        if (bool != true)
-            method3486(41, false, -64, 33L, -50);
+        if (bool != true) method3486(41, false, -64, 33L, -50);
     }
 
-    static final String method3486(int i, boolean bool, int i_0_, long l,
-                                   int i_1_) {
+    static final String method3486(int i, boolean bool, int i_0_, long l, int i_1_) {
         try {
             anInt4392++;
             char c = ',';
@@ -46,8 +42,7 @@ final class Class357 {
                 c = '.';
                 c_2_ = ',';
             }
-            if (i_0_ == 2)
-                c_2_ = '\u00a0';
+            if (i_0_ == 2) c_2_ = '\u00a0';
             boolean bool_3_ = false;
             if (l < 0) {
                 l = -l;
@@ -55,12 +50,10 @@ final class Class357 {
             }
             StringBuffer stringbuffer = new StringBuffer(26);
             if (i > 0) {
-                for (int i_4_ = 0; i > i_4_;
-                     i_4_++) {
+                for (int i_4_ = 0; i > i_4_; i_4_++) {
                     int i_5_ = (int) l;
                     l /= 10L;
-                    stringbuffer.append((char) (i_5_
-                            + (48 + -((int) l * 10))));
+                    stringbuffer.append((char) (i_5_ + (48 + -((int) l * 10))));
                 }
                 stringbuffer.append(c);
             }
@@ -69,21 +62,14 @@ final class Class357 {
                 int i_7_ = (int) l;
                 l /= 10L;
                 stringbuffer.append((char) (i_7_ + (48 - (int) l * 10)));
-                if (l == 0)
-                    break;
-                if (bool && ++i_6_ % 3 == 0)
-                    stringbuffer.append(c_2_);
+                if (l == 0) break;
+                if (bool && ++i_6_ % 3 == 0) stringbuffer.append(c_2_);
             }
-            if (bool_3_)
-                stringbuffer.append('-');
-            if (i_1_ != 16980)
-                aLongArray4410 = null;
+            if (bool_3_) stringbuffer.append('-');
+            if (i_1_ != 16980) aLongArray4410 = null;
             return stringbuffer.reverse().toString();
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("es.C(" + i + ',' + bool + ','
-                            + i_0_ + ',' + l + ',' + i_1_
-                            + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("es.C(" + i + ',' + bool + ',' + i_0_ + ',' + l + ',' + i_1_ + ')'));
         }
     }
 
@@ -94,8 +80,7 @@ final class Class357 {
     public static void method3487(int i) {
         aLongArray4410 = null;
         aClass351_4394 = null;
-        if (i >= -45)
-            aClass351_4405 = null;
+        if (i >= -45) aClass351_4405 = null;
         aClass351_4405 = null;
     }
 }

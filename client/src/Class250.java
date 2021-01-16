@@ -16,8 +16,7 @@ final class Class250 implements Runnable {
     Class297 aClass297_3228;
 
     static final String method1909(byte i, String string) {
-        if (i != 31)
-            method1911((byte) 87);
+        if (i != 31) method1911((byte) 87);
         anInt3222++;
         String string_0_ = null;
         int i_1_ = string.indexOf("--> ");
@@ -30,13 +29,11 @@ final class Class250 implements Runnable {
             if (i_2_ >= 0) {
                 int i_3_ = string.length();
                 string = string.substring(0, i_2_) + " ";
-                for (int i_4_ = 1 + i_2_;
-                     i_4_ < i_3_; i_4_++)
+                for (int i_4_ = 1 + i_2_; i_4_ < i_3_; i_4_++)
                     string += "*";
             }
         }
-        if (string_0_ == null)
-            return string;
+        if (string_0_ == null) return string;
         return string_0_ + string;
     }
 
@@ -46,15 +43,11 @@ final class Class250 implements Runnable {
         try {
             while (!this.aBoolean3221) {
                 for (int i = 0; i < 2; i++) {
-                    Class279 class279
-                            = this.aClass279Array3218[i];
-                    if (class279 != null)
-                        class279.method2084(-6858);
+                    Class279 class279 = this.aClass279Array3218[i];
+                    if (class279 != null) class279.method2084(-6858);
                 }
                 Class286_Sub5.method2161((byte) -107, 10L);
-                Class369_Sub3_Sub1.method3578((byte) -42, null,
-                        (this
-                                .aClass297_3228));
+                Class369_Sub3_Sub1.method3578((byte) -42, null, (this.aClass297_3228));
             }
         } catch (Exception exception) {
             Class156.method1242(null, exception, 15004);
@@ -65,22 +58,16 @@ final class Class250 implements Runnable {
 
     public static void method1910(int i) {
         anIntArray3220 = null;
-        if (i != 0)
-            method1910(-18);
+        if (i != 0) method1910(-18);
         aClass318_Sub1Array3226 = null;
     }
 
     static final void method1911(byte i) {
-        if (i != 99)
-            anIntArray3220 = null;
+        if (i != 99) anIntArray3220 = null;
         Class367_Sub11.aClass32_7415 = new Class32(8);
         anInt3219++;
         Class318_Sub7.anInt6450 = 0;
-        for (Class318_Sub10 class318_sub10
-             = (Class318_Sub10) Class152.aClass243_2077.method1872(8);
-             class318_sub10 != null;
-             class318_sub10 = (Class318_Sub10) Class152.aClass243_2077
-                     .method1878((byte) -115))
+        for (Class318_Sub10 class318_sub10 = (Class318_Sub10) Class152.aClass243_2077.method1872(8); class318_sub10 != null; class318_sub10 = (Class318_Sub10) Class152.aClass243_2077.method1878((byte) -115))
             class318_sub10.method2530();
     }
 }

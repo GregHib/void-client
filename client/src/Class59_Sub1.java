@@ -31,27 +31,22 @@ class Class59_Sub1 extends Class59 {
     static boolean aBoolean5300 = false;
 
     void method550(int i, byte i_0_, byte i_1_) {
-        if (i_1_ != 14)
-            method555(true, -38);
+        if (i_1_ != 14) method555(true, -38);
         anInt5281++;
         aByteArray5296[i] = i_0_;
     }
 
     final void method543(boolean bool) {
         anInt5287 = 0;
-        if (bool != true)
-            method555(false, -53);
+        if (bool != true) method555(false, -53);
         anInt5290 = 0;
         anInt5291++;
     }
 
-    static final void method551(int i, int i_2_, int i_3_, float[] fs,
-                                int i_4_, int i_5_, int i_6_) {
+    static final void method551(int i, int i_2_, int i_3_, float[] fs, int i_4_, int i_5_, int i_6_) {
         anInt5277++;
-        if (i_4_ < i && !Class192.method1436(i_4_ + -23, i))
-            throw new IllegalArgumentException("");
-        if (i_5_ > 0 && !Class192.method1436(56, i_5_))
-            throw new IllegalArgumentException("");
+        if (i_4_ < i && !Class192.method1436(i_4_ + -23, i)) throw new IllegalArgumentException("");
+        if (i_5_ > 0 && !Class192.method1436(56, i_5_)) throw new IllegalArgumentException("");
         int i_7_ = Class183.method1382(i_2_, -6409);
         int i_8_ = 0;
         int i_9_ = Math.min(i_5_, i);
@@ -60,21 +55,16 @@ class Class59_Sub1 extends Class59 {
         float[] fs_12_ = fs;
         float[] fs_13_ = new float[i_7_ * i_10_ * i_11_];
         for (; ; ) {
-            OpenGL.glTexImage2Df(i_3_, i_8_, i_6_, i, i_5_, 0, i_2_, 5126,
-                    fs_12_, 0);
-            if (i_9_ <= 1)
-                break;
+            OpenGL.glTexImage2Df(i_3_, i_8_, i_6_, i, i_5_, 0, i_2_, 5126, fs_12_, 0);
+            if (i_9_ <= 1) break;
             int i_14_ = i * i_7_;
             float[] fs_15_ = fs_13_;
-            for (int i_16_ = 0; i_16_ < i_7_;
-				 i_16_++) {
+            for (int i_16_ = 0; i_16_ < i_7_; i_16_++) {
                 int i_17_ = i_16_;
                 int i_18_ = i_16_;
                 int i_19_ = i_14_ + i_18_;
                 for (int i_20_ = 0; i_11_ > i_20_; i_20_++) {
-                    for (int i_21_ = 0;
-						 i_10_ > i_21_;
-                         i_21_++) {
+                    for (int i_21_ = 0; i_10_ > i_21_; i_21_++) {
                         float f = fs_12_[i_18_];
                         i_18_ += i_7_;
                         f += fs_12_[i_18_];
@@ -101,35 +91,29 @@ class Class59_Sub1 extends Class59 {
         }
     }
 
-    Class59_Sub1(int i, int i_22_, int i_23_, int i_24_, int i_25_, float f,
-                 float f_26_, float f_27_) {
+    Class59_Sub1(int i, int i_22_, int i_23_, int i_24_, int i_25_, float f, float f_26_, float f_27_) {
         super(i, i_22_, i_23_, i_24_, i_25_);
         anInt5298 = (int) (4096.0F * f_27_);
         anInt5278 = (int) (f_26_ * 4096.0F);
         anInt5285 = anInt5279 = (int) (Math.pow(0.5, -f) * 4096.0);
     }
 
-    static final boolean method552(int i, int i_28_, byte i_29_, int i_30_,
-                                   int i_31_, int i_32_, byte[] is) {
+    static final boolean method552(int i, int i_28_, byte i_29_, int i_30_, int i_31_, int i_32_, byte[] is) {
         anInt5282++;
         int i_33_ = i_31_ % i_30_;
         int i_34_ = 39 / ((31 - i_29_) / 63);
         int i_35_;
-        if (i_33_ != 0)
-            i_35_ = i_30_ - i_33_;
-        else
-            i_35_ = 0;
+        if (i_33_ != 0) i_35_ = i_30_ - i_33_;
+        else i_35_ = 0;
         int i_36_ = -((i_28_ - -i_30_ + -1) / i_30_);
         int i_37_ = -((i_30_ + i_31_ - 1) / i_30_);
         for (int i_38_ = i_36_; i_38_ < 0; i_38_++) {
             for (int i_39_ = i_37_; i_39_ < 0; i_39_++) {
-                if (is[i_32_] == 0)
-                    return true;
+                if (is[i_32_] == 0) return true;
                 i_32_ += i_30_;
             }
             i_32_ -= i_35_;
-            if (is[i_32_ + -1] == 0)
-                return true;
+            if (is[i_32_ + -1] == 0) return true;
             i_32_ += i;
         }
         return false;
@@ -144,10 +128,8 @@ class Class59_Sub1 extends Class59 {
                 anInt5290 = anInt5280;
             } else {
                 anInt5289 = anInt5280 * anInt5298 >> -640192180;
-                if (anInt5289 < 0)
-                    anInt5289 = 0;
-                else if (anInt5289 > 4096)
-                    anInt5289 = 4096;
+                if (anInt5289 < 0) anInt5289 = 0;
+                else if (anInt5289 > 4096) anInt5289 = 4096;
                 anInt5280 = anInt5278 + -(i < 0 ? -i : i);
                 anInt5280 = anInt5280 * anInt5280 >> 655434060;
                 anInt5280 = anInt5289 * anInt5280 >> 62440396;
@@ -161,14 +143,12 @@ class Class59_Sub1 extends Class59 {
     public static void method553(int i) {
         aClass105Array5294 = null;
         aClass351_5288 = null;
-        if (i != 0)
-            aClass297_5297 = null;
+        if (i != 0) aClass297_5297 = null;
         aClass297_5297 = null;
     }
 
     static final int method554(int i, int i_42_, byte[] is) {
-        if (i != 5126)
-            method553(52);
+        if (i != 5126) method553(52);
         anInt5284++;
         return Class171.method1319(i_42_, true, is, 0);
     }
@@ -189,12 +169,9 @@ class Class59_Sub1 extends Class59 {
         anInt5290 >>= 4;
         anInt5295++;
         if (anInt5290 >= 0) {
-            if (anInt5290 > 255)
-                anInt5290 = 255;
-        } else
-            anInt5290 = 0;
-        if (i != -1538606516)
-            anInt5289 = 17;
+            if (anInt5290 > 255) anInt5290 = 255;
+        } else anInt5290 = 0;
+        if (i != -1538606516) anInt5289 = 17;
         method550(anInt5287++, (byte) anInt5290, (byte) 14);
         anInt5290 = 0;
     }

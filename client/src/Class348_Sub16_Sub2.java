@@ -36,14 +36,12 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
     final void method2827(int i, int i_0_) {
         anInt8885 = i_0_;
         anInt8887 = i_0_;
-        if (i != -17708)
-            method2830(-93);
+        if (i != -17708) method2830(-93);
         anInt8880++;
     }
 
     private final synchronized Class348_Sub42_Sub4 method2828(int i) {
-        if (i != -23076)
-            method2817(null, 71, 78);
+        if (i != -23076) method2817(null, 71, 78);
         anInt8872++;
         return (Class348_Sub42_Sub4) aClass262_8861.method1995(i + 23080);
     }
@@ -55,14 +53,12 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     final synchronized int method2829(int i) {
         anInt8871++;
-        if (i >= -33)
-            method2831((byte) 84);
+        if (i >= -33) method2831((byte) 84);
         return anInt8888;
     }
 
     public static void method2830(int i) {
-        if (i != 0)
-            method2834((byte) 68, null);
+        if (i != 0) method2834((byte) 68, null);
         anIntArray8862 = null;
     }
 
@@ -74,10 +70,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
             class348_sub42_sub4.method2715((byte) 71);
             anInt8888--;
             anInt8883 = 0;
-            Class348_Sub40_Sub10.aClass308_9180.method2305(class348_sub42_sub4
-                            .method3182(90),
-                    class348_sub42_sub4,
-                    -1);
+            Class348_Sub40_Sub10.aClass308_9180.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1);
         }
     }
 
@@ -86,12 +79,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
             IOException_Sub1.method129(i, i + -107, ls, ls.length - 1, is);
             anInt8882++;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception,
-                    ("iha.I("
-                            + (is != null ? "{...}" : "null")
-                            + ','
-                            + (ls != null ? "{...}" : "null")
-                            + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("iha.I(" + (is != null ? "{...}" : "null") + ',' + (ls != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
@@ -105,51 +93,37 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                 }
             } else {
                 int i_3_ = i - -i_2_;
-                if (Class282.aBoolean3652)
-                    i_3_ <<= 1;
+                if (Class282.aBoolean3652) i_3_ <<= 1;
                 int i_4_ = 0;
                 int i_5_ = 0;
-                if (anInt8879 == 2)
-                    i_5_ = 1;
+                if (anInt8879 == 2) i_5_ = 1;
                 while (i_3_ > i) {
-                    Class348_Sub42_Sub4 class348_sub42_sub4
-                            = method2828(-23076);
-                    if (class348_sub42_sub4 == null)
-                        break;
+                    Class348_Sub42_Sub4 class348_sub42_sub4 = method2828(-23076);
+                    if (class348_sub42_sub4 == null) break;
                     short[][] is_6_;
-                    for (is_6_ = (class348_sub42_sub4
-                            .aShortArrayArray9518);
-                         i < i_3_ && anInt8883 < is_6_[0].length;
-                         anInt8883++) {
+                    for (is_6_ = (class348_sub42_sub4.aShortArrayArray9518); i < i_3_ && anInt8883 < is_6_[0].length; anInt8883++) {
                         if (Class282.aBoolean3652) {
                             is[i++] = anInt8885 * is_6_[i_4_][anInt8883];
                             is[i++] = is_6_[i_5_][anInt8883] * anInt8887;
-                        } else
-                            is[i++] += (is_6_[i_5_][anInt8883] * anInt8887
-                                    + anInt8885 * is_6_[i_4_][anInt8883]);
+                        } else is[i++] += (is_6_[i_5_][anInt8883] * anInt8887 + anInt8885 * is_6_[i_4_][anInt8883]);
                     }
-                    if (anInt8883 >= is_6_[0].length)
-                        method2831((byte) -126);
+                    if (anInt8883 >= is_6_[0].length) method2831((byte) -126);
                 }
             }
         }
     }
 
     final synchronized void method2833(int i, boolean bool) {
-        if (i != 1)
-            aDouble8869 = -2.8743710633758983;
+        if (i != 1) aDouble8869 = -2.8743710633758983;
         aBoolean8886 = bool;
         anInt8878++;
     }
 
     static final Class369 method2834(byte i, Class348_Sub49 class348_sub49) {
         anInt8876++;
-        Class221 class221
-                = Class158.method1248(15)[class348_sub49.method3387(255)];
-        if (i > -113)
-            aDouble8869 = -1.5911312034627048;
-        Class341 class341
-                = Class62.method596(20000)[class348_sub49.method3387(255)];
+        Class221 class221 = Class158.method1248(15)[class348_sub49.method3387(255)];
+        if (i > -113) aDouble8869 = -1.5911312034627048;
+        Class341 class341 = Class62.method596(20000)[class348_sub49.method3387(255)];
         int i_7_ = class348_sub49.method3372(13638);
         int i_8_ = class348_sub49.method3372(13638);
         int i_9_ = class348_sub49.method3330(842397944);
@@ -157,12 +131,10 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
         int i_11_ = class348_sub49.method3372(13638);
         int i_12_ = class348_sub49.method3385((byte) -126);
         int i_13_ = class348_sub49.method3385((byte) -126);
-        return new Class369(class221, class341, i_7_, i_8_, i_9_, i_10_, i_11_,
-                i_12_, i_13_);
+        return new Class369(class221, class341, i_7_, i_8_, i_9_, i_10_, i_11_, i_12_, i_13_);
     }
 
-    final synchronized void method2835(Class348_Sub42_Sub4 class348_sub42_sub4,
-                                       int i) {
+    final synchronized void method2835(Class348_Sub42_Sub4 class348_sub42_sub4, int i) {
         for (/**/; anInt8888 >= 100; anInt8888--)
             aClass262_8861.method1997(8);
         if (i == 30700) {
@@ -179,38 +151,25 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     final synchronized void method2836(int i) {
         aBoolean8884 = true;
-        if (i != -1)
-            aClass262_8861 = null;
+        if (i != -1) aClass262_8861 = null;
         anInt8865++;
     }
 
     final synchronized double method2837(int i) {
         anInt8868++;
-        if (anInt8888 < 1)
-            return -1.0;
-        if (i != -21987)
-            method2818();
-        Class348_Sub42_Sub4 class348_sub42_sub4
-                = (Class348_Sub42_Sub4) aClass262_8861.method1995(4);
-        if (class348_sub42_sub4 == null)
-            return -1.0;
-        return ((double) -((float) (class348_sub42_sub4
-                .aShortArrayArray9518[0]).length
-                / (float) Class22.anInt339)
-                + class348_sub42_sub4.aDouble9512);
+        if (anInt8888 < 1) return -1.0;
+        if (i != -21987) method2818();
+        Class348_Sub42_Sub4 class348_sub42_sub4 = (Class348_Sub42_Sub4) aClass262_8861.method1995(4);
+        if (class348_sub42_sub4 == null) return -1.0;
+        return ((double) -((float) (class348_sub42_sub4.aShortArrayArray9518[0]).length / (float) Class22.anInt339) + class348_sub42_sub4.aDouble9512);
     }
 
     final Class348_Sub42_Sub4 method2838(int i, double d, int i_14_) {
         anInt8860++;
         long l = i | anInt8879 << 1401320384;
-        Class348_Sub42_Sub4 class348_sub42_sub4
-                = ((Class348_Sub42_Sub4)
-                Class348_Sub40_Sub10.aClass308_9180.method2302(l, (byte) -31));
-        if (i_14_ != 1401320384)
-            return null;
-        if (class348_sub42_sub4 == null)
-            class348_sub42_sub4
-                    = new Class348_Sub42_Sub4(new short[anInt8879][i], d);
+        Class348_Sub42_Sub4 class348_sub42_sub4 = ((Class348_Sub42_Sub4) Class348_Sub40_Sub10.aClass308_9180.method2302(l, (byte) -31));
+        if (i_14_ != 1401320384) return null;
+        if (class348_sub42_sub4 == null) class348_sub42_sub4 = new Class348_Sub42_Sub4(new short[anInt8879][i], d);
         else {
             class348_sub42_sub4.aDouble9512 = d;
             Class348_Sub40_Sub10.aClass308_9180.method2304(-121, l);
@@ -230,13 +189,11 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                     }
                     break;
                 }
-                if ((class348_sub42_sub4
-                        .aShortArrayArray9518[0]).length - anInt8883 > i) {
+                if ((class348_sub42_sub4.aShortArrayArray9518[0]).length - anInt8883 > i) {
                     anInt8883 += i;
                     break;
                 }
-                i -= -anInt8883 + (class348_sub42_sub4
-                        .aShortArrayArray9518[0]).length;
+                i -= -anInt8883 + (class348_sub42_sub4.aShortArrayArray9518[0]).length;
                 method2831((byte) 111);
             }
         }

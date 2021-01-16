@@ -20,8 +20,7 @@ abstract class r extends Class348_Sub42 {
     static final void method3284(boolean bool, double d) {
         Class44.aClass101_624.method898(Class51.aClass101_905);
         anInt9717++;
-        if (bool != true)
-            method3285(10);
+        if (bool != true) method3285(10);
         Class44.aClass101_624.method891(0, 0, (int) d);
         Class21.aHa326.method3638(Class44.aClass101_624);
     }

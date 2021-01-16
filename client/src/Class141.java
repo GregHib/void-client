@@ -25,18 +25,15 @@ final class Class141 {
         synchronized (aClass60_1963) {
             class218 = (Class218) aClass60_1963.method583(i_0_, 118);
         }
-        if (class218 != null)
-            return class218;
+        if (class218 != null) return class218;
         byte[] is;
         synchronized (aClass45_1971) {
             is = aClass45_1971.method410(i + -1891, 34, i_0_);
         }
         class218 = new Class218();
-        if (i != 31)
-            return null;
+        if (i != 31) return null;
         class218.aClass141_2851 = this;
-        if (is != null)
-            class218.method1597((byte) -114, new Class348_Sub49(is));
+        if (is != null) class218.method1597((byte) -114, new Class348_Sub49(is));
         synchronized (aClass60_1963) {
             aClass60_1963.method582(class218, i_0_, (byte) -108);
         }
@@ -51,8 +48,7 @@ final class Class141 {
         synchronized (this.aClass60_1976) {
             if (i > -89) {
                 /* empty */
-            } else
-                this.aClass60_1976.method587(-79);
+            } else this.aClass60_1976.method587(-79);
         }
     }
 
@@ -69,8 +65,7 @@ final class Class141 {
     }
 
     final void method1176(int i, byte i_1_) {
-        if (i_1_ < 31)
-            method1177((byte) -119);
+        if (i_1_ < 31) method1177((byte) -119);
         synchronized (aClass60_1963) {
             aClass60_1963.method578(2, i);
         }
@@ -81,17 +76,13 @@ final class Class141 {
     }
 
     static final void method1177(byte i) {
-        Class291.anIntArray3726
-                = Class367_Sub1.method3533((byte) 127, 2048, 4, 8, 0.4F, 35, true,
-                8);
-        if (i == 122)
-            anInt1970++;
+        Class291.anIntArray3726 = Class367_Sub1.method3533((byte) 127, 2048, 4, 8, 0.4F, 35, true, 8);
+        if (i == 122) anInt1970++;
     }
 
     final void method1178(int i, int i_2_, int i_3_) {
         anInt1972++;
-        if (i_2_ != 1)
-            aClass273_1966 = null;
+        if (i_2_ != 1) aClass273_1966 = null;
         aClass60_1963 = new Class60(i_3_);
         this.aClass60_1976 = new Class60(i);
     }
@@ -101,8 +92,7 @@ final class Class141 {
         aClass26_1977 = null;
         anIntArray1973 = null;
         aClass273_1966 = null;
-        if (i >= -111)
-            method1177((byte) 47);
+        if (i >= -111) method1177((byte) 47);
     }
 
     Class141(Class230 class230, int i, Class45 class45, Class45 class45_4_) {
@@ -111,12 +101,7 @@ final class Class141 {
             aClass45_1971 = class45;
             aClass45_1971.method407(0, 34);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929
-                    (runtimeexception,
-                            ("oda.<init>(" + (class230 != null ? "{...}" : "null")
-                                    + ',' + i + ',' + (class45 != null ? "{...}" : "null")
-                                    + ',' + (class45_4_ != null ? "{...}" : "null")
-                                    + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_4_ != null ? "{...}" : "null") + ')'));
         }
     }
 

@@ -8,8 +8,7 @@ public final class Class47_Sub2 extends Class47 {
     }
 
     final long method446(int i) {
-        if (i != 1)
-            return -111L;
+        if (i != 1) return -111L;
         return System.nanoTime();
     }
 }
