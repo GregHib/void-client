@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
+import java.awt.*;
 import java.lang.reflect.Constructor;
 
 final class Class348_Sub18 extends Class348 {

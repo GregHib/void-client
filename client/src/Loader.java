@@ -1,12 +1,9 @@
+import javax.swing.*;
 import java.applet.Applet;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
+import java.awt.*;
 import java.math.BigInteger;
 import java.net.URL;
 import java.util.Properties;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class Loader extends Applet {
 

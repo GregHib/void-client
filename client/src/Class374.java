@@ -2,11 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 
 final class Class374 {
     static int anInt4536;

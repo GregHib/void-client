@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Frame;
+import java.awt.*;
 
 final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
     static int anInt10328;

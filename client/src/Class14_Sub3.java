@@ -2,9 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.io.IOException;
-
 import jaggl.OpenGL;
+
+import java.io.IOException;
 
 final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
     static int anInt8624;

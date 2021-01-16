@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
+import java.awt.*;
 
 class Class279 {
     static int anInt3594;

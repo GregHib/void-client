@@ -2,11 +2,11 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.io.IOException;
-import java.net.Socket;
-
 import jagtheora.ogg.OggPacket;
 import jagtheora.ogg.OggStreamState;
+
+import java.io.IOException;
+import java.net.Socket;
 
 final class Class348_Sub23_Sub3 extends Class348_Sub23 {
     static int anInt9040;

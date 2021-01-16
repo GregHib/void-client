@@ -2,9 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.math.BigInteger;
-
 import jaggl.OpenGL;
+
+import java.math.BigInteger;
 
 final class Class348_Sub42_Sub15 extends Class348_Sub42 {
     static int anInt9646;

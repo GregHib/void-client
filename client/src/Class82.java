@@ -2,10 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import jagex3.jagmisc.jagmisc;
+
 import java.io.File;
 import java.io.FileOutputStream;
-
-import jagex3.jagmisc.jagmisc;
 
 final class Class82 {
     static Class45 aClass45_1434;

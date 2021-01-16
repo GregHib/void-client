@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Font;
+import java.awt.*;
 
 final class Class351 {
     static int anInt4322;

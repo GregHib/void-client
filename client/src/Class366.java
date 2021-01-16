@@ -4,7 +4,6 @@
 
 import jaclib.memory.Buffer;
 import jaclib.memory.Source;
-
 import jagdx.IDirect3DVertexBuffer;
 import jagdx.ue;
 

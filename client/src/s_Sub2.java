@@ -2,11 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.io.IOException;
-
 import jaclib.memory.Stream;
-
 import jaggl.OpenGL;
+
+import java.io.IOException;
 
 final class s_Sub2 extends s {
     int[][][] anIntArrayArrayArray8234;

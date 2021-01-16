@@ -2,18 +2,16 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Dimension;
-import java.lang.reflect.Method;
-import java.util.Enumeration;
-import java.util.Hashtable;
-
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 import jaclib.memory.heap.NativeHeap;
 import jaclib.memory.heap.NativeHeapBuffer;
-
 import jagex3.graphics2.hw.NativeInterface;
+
+import java.awt.*;
+import java.lang.reflect.Method;
+import java.util.Enumeration;
+import java.util.Hashtable;
 
 abstract class ha_Sub3 extends ha {
     static int anInt7884;

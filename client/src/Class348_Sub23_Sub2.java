@@ -4,12 +4,7 @@
 
 import jagtheora.ogg.OggPacket;
 import jagtheora.ogg.OggStreamState;
-import jagtheora.theora.DecoderContext;
-import jagtheora.theora.Frame;
-import jagtheora.theora.GranulePos;
-import jagtheora.theora.SetupInfo;
-import jagtheora.theora.TheoraComment;
-import jagtheora.theora.TheoraInfo;
+import jagtheora.theora.*;
 
 final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     private TheoraInfo aTheoraInfo9007;

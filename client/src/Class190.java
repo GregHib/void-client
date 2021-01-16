@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Rectangle;
+import java.awt.*;
 
 final class Class190 {
     int anInt2535;

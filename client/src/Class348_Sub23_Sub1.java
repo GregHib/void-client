@@ -2,14 +2,14 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.net.URL;
-
 import jagtheora.ogg.OggPacket;
 import jagtheora.ogg.OggStreamState;
 import jagtheora.vorbis.DSPState;
 import jagtheora.vorbis.VorbisBlock;
 import jagtheora.vorbis.VorbisComment;
 import jagtheora.vorbis.VorbisInfo;
+
+import java.net.URL;
 
 final class Class348_Sub23_Sub1 extends Class348_Sub23 {
     static int anInt8989;

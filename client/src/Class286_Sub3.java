@@ -2,10 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import jaggl.OpenGL;
+
 import java.util.Calendar;
 import java.util.TimeZone;
-
-import jaggl.OpenGL;
 
 final class Class286_Sub3 extends Class286 {
     static int anInt6214;

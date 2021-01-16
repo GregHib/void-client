@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Dimension;
+import java.awt.*;
 
 final class Class239_Sub14 extends Class239 {
     static int anInt5982;

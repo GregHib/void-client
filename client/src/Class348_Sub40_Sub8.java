@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Color;
+import java.awt.*;
 
 final class Class348_Sub40_Sub8 extends Class348_Sub40 {
     static int anInt9148;

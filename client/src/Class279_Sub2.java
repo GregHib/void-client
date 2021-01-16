@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
+import java.awt.*;
 
 final class Class279_Sub2 extends Class279 {
     private int anInt6181;

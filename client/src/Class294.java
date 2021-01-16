@@ -2,11 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Image;
+import java.awt.*;
 import java.lang.reflect.Field;
 
 final class Class294 implements Interface16 {

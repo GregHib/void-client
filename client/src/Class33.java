@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Point;
+import java.awt.*;
 
 final class Class33 {
     static int anInt456;

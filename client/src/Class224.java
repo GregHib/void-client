@@ -2,9 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.applet.Applet;
-
 import netscape.javascript.JSObject;
+
+import java.applet.Applet;
 
 final class Class224 {
     static final void method1615(Applet applet, int i, String string)

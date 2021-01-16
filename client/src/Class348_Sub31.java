@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Graphics;
+import java.awt.*;
 import java.math.BigInteger;
 
 abstract class Class348_Sub31 extends Class348 {

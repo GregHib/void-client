@@ -2,9 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Insets;
-
 import jaggl.OpenGL;
+
+import java.awt.*;
 
 final class Class367_Sub11 extends Class367 {
     private Interface18_Impl3 anInterface18_Impl3_7390;

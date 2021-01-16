@@ -3,7 +3,6 @@
  */
 
 import jaclib.memory.Buffer;
-
 import jagdx.IDirect3DIndexBuffer;
 import jagdx.ue;
 

@@ -2,13 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.io.StringWriter;
-
 import jaggl.OpenGL;
+
+import java.io.*;
 
 final class Class348_Sub5_Sub1 extends Class348_Sub5 {
     private Class337 aClass337_8822;

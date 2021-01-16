@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Frame;
+import java.awt.*;
 
 final class Class56 {
     Class274 aClass274_1012;

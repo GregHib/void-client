@@ -2,11 +2,11 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
-
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 import jaclib.memory.heap.NativeHeapBuffer;
+
+import java.awt.*;
 
 final class Class348_Sub3 extends Class348 {
     private s_Sub3 aS_Sub3_6566;

@@ -2,11 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
-import java.awt.EventQueue;
-import java.awt.Frame;
-import java.awt.Point;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.Transferable;
 import java.io.DataInputStream;

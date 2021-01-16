@@ -2,13 +2,11 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Rectangle;
-
 import jaclib.memory.Stream;
-
 import jaggl.MapBuffer;
 import jaggl.OpenGL;
+
+import java.awt.*;
 
 final class Class377 extends ha_Sub3 {
     static int anInt9812;

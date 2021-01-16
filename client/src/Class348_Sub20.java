@@ -4,7 +4,6 @@
 
 import jaclib.memory.Stream;
 import jaclib.memory.heap.NativeHeapBuffer;
-
 import jaggl.OpenGL;
 
 final class Class348_Sub20 extends Class348 {

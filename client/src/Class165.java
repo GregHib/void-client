@@ -2,9 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
-import java.awt.Point;
-import java.awt.Robot;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 
 final class Class165 {

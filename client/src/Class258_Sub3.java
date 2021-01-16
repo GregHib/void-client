@@ -2,12 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Image;
-import java.awt.MediaTracker;
-import java.awt.Toolkit;
-import java.awt.image.PixelGrabber;
-
 import jaggl.OpenGL;
+
+import java.awt.*;
+import java.awt.image.PixelGrabber;
 
 class Class258_Sub3 extends Class258 {
     static int anInt8539;

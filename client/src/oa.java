@@ -2,9 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Dimension;
-import java.awt.Rectangle;
+import java.awt.*;
 import java.lang.reflect.Method;
 
 final class oa extends ha implements Interface19 {

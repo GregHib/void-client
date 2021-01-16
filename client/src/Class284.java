@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
+import java.awt.*;
 
 final class Class284 {
     static int anInt3664;

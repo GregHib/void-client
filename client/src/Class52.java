@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Frame;
+import java.awt.*;
 import java.math.BigInteger;
 
 final class Class52 implements Interface12 {

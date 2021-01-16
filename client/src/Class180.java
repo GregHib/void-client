@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Rectangle;
+import java.awt.*;
 
 final class Class180 {
     static int[] anIntArray2370 = new int[13];

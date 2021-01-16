@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Frame;
+import java.awt.*;
 
 final class Class34 {
     static int anInt462;

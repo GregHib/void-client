@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
+import java.awt.*;
 
 final class Class193 {
     static int anInt2583;

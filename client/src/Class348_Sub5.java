@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
+import java.awt.*;
 import java.io.IOException;
 import java.net.Socket;
 

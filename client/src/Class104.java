@@ -2,10 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Dimension;
-
 import jaggl.OpenGL;
+
+import java.awt.*;
 
 final class Class104 {
     static int anInt1610;

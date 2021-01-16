@@ -2,9 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.util.Random;
-
 import jaggl.OpenGL;
+
+import java.util.Random;
 
 abstract class Class324 {
     static int anInt4045;

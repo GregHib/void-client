@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Insets;
+import java.awt.*;
 
 final class Class215 {
     static int anInt2834 = 0;

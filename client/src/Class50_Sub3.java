@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Color;
+import java.awt.*;
 
 final class Class50_Sub3 extends Class50 {
     private int anInt5236;

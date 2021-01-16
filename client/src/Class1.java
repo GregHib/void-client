@@ -2,14 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
-
 import com.ms.com.ComFailException;
-import com.ms.directX.DSBufferDesc;
-import com.ms.directX.DSCursors;
-import com.ms.directX.DirectSound;
-import com.ms.directX.DirectSoundBuffer;
-import com.ms.directX.WaveFormatEx;
+import com.ms.directX.*;
+
+import java.awt.*;
 
 public final class Class1 implements Interface20 {
     private DSBufferDesc[] aDSBufferDescArray5152;

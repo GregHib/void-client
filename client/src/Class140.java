@@ -2,10 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
+import java.awt.*;
 
 final class Class140 {
     static int anInt1956;

@@ -2,11 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Color;
-
 import jaclib.memory.Buffer;
-
 import jaggl.OpenGL;
+
+import java.awt.*;
 
 abstract class Class135 {
     private int anInt1921;

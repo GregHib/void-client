@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Image;
+import java.awt.*;
 
 final class Class342 {
     int anInt4238;

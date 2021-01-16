@@ -2,16 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferInt;
-import java.awt.image.DirectColorModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
+import java.awt.*;
+import java.awt.image.*;
 import java.util.Hashtable;
 
 final class Class348_Sub31_Sub1 extends Class348_Sub31 {

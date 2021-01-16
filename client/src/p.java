@@ -2,9 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Dimension;
-import java.awt.Rectangle;
+import java.awt.*;
 
 final class p extends Class348 implements Interface19 {
     long nativeid;

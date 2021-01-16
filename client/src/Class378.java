@@ -2,27 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-
 import jaclib.peer.hb;
+import jagdx.*;
 
-import jagdx.D3DADAPTER_IDENTIFIER;
-import jagdx.D3DCAPS;
-import jagdx.D3DDISPLAYMODE;
-import jagdx.D3DLIGHT;
-import jagdx.D3DPRESENT_PARAMETERS;
-import jagdx.GeometryBuffer;
-import jagdx.IDirect3D;
-import jagdx.IDirect3DDevice;
-import jagdx.IDirect3DEventQuery;
-import jagdx.IDirect3DPixelShader;
-import jagdx.IDirect3DSurface;
-import jagdx.IDirect3DVertexShader;
-import jagdx.PixelBuffer;
-import jagdx.fda;
-import jagdx.ue;
+import java.awt.*;
 
 public final class Class378 extends ha_Sub3 {
     private boolean[] aBooleanArray9784;

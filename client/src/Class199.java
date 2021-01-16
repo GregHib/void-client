@@ -2,9 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
+import java.awt.*;
 
 final class Class199 {
     static int anInt2624;

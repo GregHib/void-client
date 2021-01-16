@@ -2,9 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.util.Random;
-
 import jaggl.OpenGL;
+
+import java.util.Random;
 
 final class Class186_Sub1 extends Class186 {
     private int[] anIntArray5804 = new int[512];

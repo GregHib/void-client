@@ -3,7 +3,6 @@
  */
 
 import jaclib.memory.heap.NativeHeap;
-
 import jaggl.OpenGL;
 
 final class za_Sub2 extends za {

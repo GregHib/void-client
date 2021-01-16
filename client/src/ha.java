@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Rectangle;
+import java.awt.*;
 import java.util.Random;
 
 abstract class ha {

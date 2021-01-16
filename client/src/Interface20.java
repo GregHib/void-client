@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
+import java.awt.*;
 
 interface Interface20 {
     public void method74(int i, byte i_0_);

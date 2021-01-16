@@ -3,7 +3,6 @@
  */
 
 import jaclib.memory.Stream;
-
 import jaggl.OpenGL;
 
 final class Class64_Sub3 extends Class64 {

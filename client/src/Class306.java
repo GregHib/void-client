@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
+import java.awt.*;
 
 final class Class306 {
     static int anInt3872 = -1;

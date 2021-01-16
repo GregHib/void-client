@@ -2,10 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Frame;
-import java.awt.Insets;
-import java.awt.Rectangle;
+import java.awt.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.Socket;

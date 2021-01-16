@@ -2,9 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Component;
-import java.awt.Graphics;
+import java.awt.*;
 
 final class Canvas_Sub1 extends Canvas {
     static int[] anIntArray60;

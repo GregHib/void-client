@@ -2,10 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.applet.Applet;
-import java.awt.Canvas;
-
 import jaggl.OpenGL;
+
+import java.applet.Applet;
+import java.awt.*;
 
 final class Class93 {
     static int anInt1529;

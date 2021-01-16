@@ -2,14 +2,11 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import jagex3.jagmisc.jagmisc;
+
 import java.applet.Applet;
 import java.applet.AppletContext;
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.Rectangle;
+import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.WindowEvent;
@@ -17,8 +14,6 @@ import java.awt.event.WindowListener;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.Date;
-
-import jagex3.jagmisc.jagmisc;
 
 public abstract class Applet_Sub1 extends Applet
         implements Runnable, FocusListener, WindowListener {

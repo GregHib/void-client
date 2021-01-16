@@ -2,9 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.net.InetAddress;
-
 import jagex3.jagmisc.jagmisc;
+
+import java.net.InetAddress;
 
 final class Class169 implements Runnable {
     static int anInt2257;

@@ -2,14 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Component;
-
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.Mixer;
-import javax.sound.sampled.SourceDataLine;
+import javax.sound.sampled.*;
+import java.awt.*;
 
 final class Class279_Sub1 extends Class279 {
     private int anInt6175;

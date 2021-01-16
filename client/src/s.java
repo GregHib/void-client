@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.awt.Canvas;
-import java.awt.Dimension;
+import java.awt.*;
 
 abstract class s {
     int[][] anIntArrayArray4584;
