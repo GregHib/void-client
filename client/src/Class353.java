@@ -30,7 +30,7 @@ final class Class353 {
         if (i_4_ != 32993)
             throw new IllegalArgumentException("");
         int i_6_ = 0;
-        int i_7_ = i_1_ > i_3_ ? i_3_ : i_1_;
+        int i_7_ = Math.min(i_1_, i_3_);
         if (i_5_ >= -54)
             method3462(106);
         int i_8_ = i_3_ >> 1682010529;

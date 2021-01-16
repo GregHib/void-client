@@ -189,10 +189,8 @@ final class Class85 {
         int i_28_ = 106 / ((-20 - i_27_) / 48);
         if (i_26_ > i_25_)
             return i_26_;
-        if (i_25_ <= i)
-            return i_25_;
-        return i;
-    }
+		return Math.min(i_25_, i);
+	}
 
     final void method832(long l, byte[] is, int i) {
         try {

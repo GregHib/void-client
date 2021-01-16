@@ -67,21 +67,12 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
                 int i_13_ = is_6_[i_10_];
                 if (i_11_ < anInt9474)
                     is_7_[i_10_] = anInt9474;
-                else if (i_11_ <= anInt9470)
-                    is_7_[i_10_] = i_11_;
-                else
-                    is_7_[i_10_] = anInt9470;
+                else is_7_[i_10_] = Math.min(i_11_, anInt9470);
                 if (anInt9474 > i_12_)
                     is_8_[i_10_] = anInt9474;
-                else if (i_12_ <= anInt9470)
-                    is_8_[i_10_] = i_12_;
-                else
-                    is_8_[i_10_] = anInt9470;
+                else is_8_[i_10_] = Math.min(i_12_, anInt9470);
                 if (anInt9474 <= i_13_) {
-                    if (i_13_ <= anInt9470)
-                        is_9_[i_10_] = i_13_;
-                    else
-                        is_9_[i_10_] = anInt9470;
+                    is_9_[i_10_] = Math.min(i_13_, anInt9470);
                 } else
                     is_9_[i_10_] = anInt9474;
             }
@@ -133,10 +124,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
                 int i_18_ = is_16_[i_17_];
                 if (anInt9474 > i_18_)
                     is[i_17_] = anInt9474;
-                else if (i_18_ > anInt9470)
-                    is[i_17_] = anInt9470;
-                else
-                    is[i_17_] = i_18_;
+                else is[i_17_] = Math.min(i_18_, anInt9470);
             }
         }
         return is;

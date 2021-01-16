@@ -145,7 +145,7 @@ abstract class Class14 implements Interface18 {
             throw new IllegalArgumentException("");
         int i_5_ = this.aClass304_5084.anInt3850;
         int i_6_ = 0;
-        int i_7_ = i_2_ < i_3_ ? i_2_ : i_3_;
+        int i_7_ = Math.min(i_2_, i_3_);
         int i_8_ = i_2_ >> -405349983;
         if (i != 7365)
             method236(0, (byte) -113);
@@ -230,7 +230,7 @@ abstract class Class14 implements Interface18 {
         if (Class108.aClass304_1662 != this.aClass304_5084)
             throw new IllegalArgumentException("");
         int i_26_ = 0;
-        int i_27_ = i >= i_23_ ? i_23_ : i;
+        int i_27_ = Math.min(i, i_23_);
         int i_28_ = i >> 1089811809;
         int i_29_ = i_23_ >> -264056511;
         int[] is_30_ = is;
@@ -357,7 +357,7 @@ abstract class Class14 implements Interface18 {
         if (i_48_ != 1)
             method228(107);
         int i_53_
-                = i_50_ > i_49_ ? i_49_ : i_50_;
+                = Math.min(i_50_, i_49_);
         int i_54_ = i_49_ >> -1187902719;
         int i_55_ = i_50_ >> 1286076865;
         float[] fs_56_ = fs;

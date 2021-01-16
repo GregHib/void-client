@@ -29,12 +29,10 @@ final class Class286_Sub5 extends Class286 {
                     .aClass239_Sub23_7231.method1818(-32350);
         if (i == 56) {
             if (i_0_ == 2) {
-                int i_1_ = (Class272.anInt3473 <= 800
-                        ? Class272.anInt3473 : 800);
+                int i_1_ = (Math.min(Class272.anInt3473, 800));
                 Class321.anInt4017 = i_1_;
                 Class348_Sub48.anInt7129 = (Class272.anInt3473 + -i_1_) / 2;
-                int i_2_ = (Class348_Sub22.anInt6857 > 600
-                        ? 600 : Class348_Sub22.anInt6857);
+                int i_2_ = (Math.min(Class348_Sub22.anInt6857, 600));
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_2_;
                 Class335.anInt4167 = 0;
             } else if (i_0_ != 1) {
@@ -44,10 +42,9 @@ final class Class286_Sub5 extends Class286 {
                 Class321.anInt4017 = Class272.anInt3473;
             } else {
                 int i_3_
-                        = Class272.anInt3473 <= 1024 ? Class272.anInt3473 : 1024;
+                        = Math.min(Class272.anInt3473, 1024);
                 Class348_Sub48.anInt7129 = (Class272.anInt3473 + -i_3_) / 2;
-                int i_4_ = (Class348_Sub22.anInt6857 <= 768
-                        ? Class348_Sub22.anInt6857 : 768);
+                int i_4_ = (Math.min(Class348_Sub22.anInt6857, 768));
                 Class321.anInt4017 = i_3_;
                 Class335.anInt4167 = 0;
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_4_;

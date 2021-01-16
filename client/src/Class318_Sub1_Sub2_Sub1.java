@@ -197,11 +197,11 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                     = var_s.method3986(this.anInt6377 + i_25_,
                     this.anInt6388 + i_26_,
                     (byte) 5);
-            int i_28_ = i_18_ >= i_21_ ? i_21_ : i_18_;
+            int i_28_ = Math.min(i_18_, i_21_);
             int i_29_
-                    = i_24_ < i_27_ ? i_24_ : i_27_;
+                    = Math.min(i_24_, i_27_);
             int i_30_
-                    = i_27_ > i_21_ ? i_21_ : i_27_;
+                    = Math.min(i_27_, i_21_);
             if (i_15_ != 0) {
                 int i_31_ = ((int) (2607.5945876176133
                         * Math.atan2(i_28_ + -i_29_,
@@ -211,7 +211,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                     class101.method900(i_31_);
             }
             int i_32_
-                    = i_24_ <= i_18_ ? i_24_ : i_18_;
+                    = Math.min(i_24_, i_18_);
             int i_33_ = i_18_ - -i_27_;
             if (i_14_ != 0) {
                 int i_34_ = ((int) (2607.5945876176133

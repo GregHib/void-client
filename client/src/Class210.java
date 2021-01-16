@@ -90,7 +90,7 @@ final class Class210 {
             int i_6_ = anIntArray2728[i_2_];
             int i_7_ = i_1_ - i_5_;
             int i_8_ = i_5_;
-            int i_9_ = (i_7_ < i_8_ ? i_7_ : i_8_) << 1;
+            int i_9_ = (Math.min(i_7_, i_8_)) << 1;
             if (i_6_ != 0) {
                 aBooleanArray2727[i_3_] = aBooleanArray2727[i_4_] = true;
                 aBooleanArray2727[i_2_] = true;

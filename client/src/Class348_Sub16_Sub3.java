@@ -363,9 +363,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
                     3.255208333333333E-4 * (double) i_30_)
                     / (double) Class22.anInt339)
                     + 0.5);
-            if (i_33_ < 1)
-                return 1;
-            return i_33_;
+            return Math.max(i_33_, 1);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("ma.JA(" + i + ','

@@ -88,9 +88,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
             i -= (i * anInt8975
                     / (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                     .aByteArray8984).length);
-        if (i > 255)
-            return 255;
-        return i;
+        return Math.min(i, 255);
     }
 
     private static final int method2893

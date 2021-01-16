@@ -437,9 +437,8 @@ final class Class361 {
         int i_30_ = i_25_ - -i_21_;
         if (i_29_ == i_22_
                 && (i_19_ & 0x2) == 0) {
-            int i_31_ = i_25_ < i_24_ ? i_24_ : i_25_;
-            for (int i_32_ = (i_28_ < i_30_
-                    ? i_28_ : i_30_);
+            int i_31_ = Math.max(i_25_, i_24_);
+            for (int i_32_ = (Math.min(i_28_, i_30_));
                  i_32_ > i_31_; i_31_++) {
                 if (((this.anIntArrayArray4438
                         [-this.anInt4453 + (i_29_ - 1)]
@@ -450,9 +449,8 @@ final class Class361 {
             }
         } else if (i_18_ == i_27_
                 && (0x8 & i_19_) == 0) {
-            int i_33_ = i_25_ >= i_24_ ? i_25_ : i_24_;
-            for (int i_34_ = (i_30_ <= i_28_
-                    ? i_30_ : i_28_);
+            int i_33_ = Math.max(i_25_, i_24_);
+            for (int i_34_ = (Math.min(i_30_, i_28_));
                  i_33_ < i_34_; i_33_++) {
                 if (((this.anIntArrayArray4438
                         [-this.anInt4453 + i_18_]
@@ -463,8 +461,8 @@ final class Class361 {
             }
         } else if (i_30_ == i_24_ && (i_19_ & 0x1) == 0) {
             int i_35_
-                    = i_18_ < i_22_ ? i_22_ : i_18_;
-            for (int i_36_ = i_27_ < i_29_ ? i_27_ : i_29_; i_36_ > i_35_;
+                    = Math.max(i_18_, i_22_);
+            for (int i_36_ = Math.min(i_27_, i_29_); i_36_ > i_35_;
                  i_35_++) {
                 if ((0x2 & (this.anIntArrayArray4438
                         [i_35_ + -this.anInt4453]
@@ -474,8 +472,8 @@ final class Class361 {
         } else if (i_25_ == i_28_
                 && (i_19_ & 0x4) == 0) {
             int i_37_
-                    = i_22_ > i_18_ ? i_22_ : i_18_;
-            for (int i_38_ = i_27_ < i_29_ ? i_27_ : i_29_; i_38_ > i_37_;
+                    = Math.max(i_22_, i_18_);
+            for (int i_38_ = Math.min(i_27_, i_29_); i_38_ > i_37_;
                  i_37_++) {
                 if (((this.anIntArrayArray4438
                         [i_37_ + -this.anInt4453]

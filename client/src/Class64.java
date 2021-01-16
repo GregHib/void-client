@@ -648,10 +648,10 @@ abstract class Class64 {
         int i_136_
                 = var_s.method3986(i_118_ + i_134_, i_135_ + i_122_, (byte) 50);
         int i_137_
-                = i_130_ > i_127_ ? i_127_ : i_130_;
-        int i_138_ = i_136_ <= i_133_ ? i_136_ : i_133_;
+                = Math.min(i_130_, i_127_);
+        int i_138_ = Math.min(i_136_, i_133_);
         int i_139_
-                = i_136_ > i_130_ ? i_130_ : i_136_;
+                = Math.min(i_136_, i_130_);
         if (i_119_ != 0) {
             int i_140_ = 0x3fff & (int) (Math.atan2(i_137_ - i_138_,
                     i_119_)
@@ -669,7 +669,7 @@ abstract class Class64 {
             }
         }
         int i_142_
-                = i_133_ <= i_127_ ? i_133_ : i_127_;
+                = Math.min(i_133_, i_127_);
         if (i != 0) {
             int i_143_
                     = (0x3fff

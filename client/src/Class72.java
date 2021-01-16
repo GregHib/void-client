@@ -334,7 +334,7 @@ final class Class72 {
             int i_72_ = class64.EA() - class64.fa();
             int i_73_ = class64.V() + i_71_ / 2;
             int i_74_ = class64.fa() + i_72_ / 2;
-            int i_75_ = i_71_ > i_72_ ? i_71_ : i_72_;
+            int i_75_ = Math.max(i_71_, i_72_);
             var_ha.DA(i_73_, i_74_, i_75_, i_75_);
             var_ha.method3638(var_ha.method3654());
             Class101 class101 = var_ha.method3705();

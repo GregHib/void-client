@@ -98,8 +98,7 @@ final class Class324_Sub3 extends Class324 {
             i_26_ += (i_35_ - i_32_) * aHa_Sub1_6499.anInt7477;
             i_25_ += (i_35_ - i_32_) * i_33_;
         }
-        int i_40_ = (i_35_ + is_36_.length < i_32_ + i_28_
-                ? i_35_ + is_36_.length : i_32_ + i_28_);
+        int i_40_ = (Math.min(i_35_ + is_36_.length, i_32_ + i_28_));
         for (int i_41_ = i_39_; i_41_ < i_40_; i_41_++) {
             int i_42_ = is_36_[i_41_ - i_35_] + i_34_;
             int i_43_ = is_37_[i_41_ - i_35_];
@@ -272,8 +271,7 @@ final class Class324_Sub3 extends Class324 {
             i_79_ += (i_88_ - i_85_) * aHa_Sub1_6499.anInt7477;
             i_78_ += (i_88_ - i_85_) * i_86_;
         }
-        int i_93_ = (i_88_ + is_89_.length < i_85_ + i_81_
-                ? i_88_ + is_89_.length : i_85_ + i_81_);
+        int i_93_ = (Math.min(i_88_ + is_89_.length, i_85_ + i_81_));
         boolean bool = false;
         for (int i_94_ = i_92_; i_94_ < i_93_; i_94_++) {
             int i_95_ = is_89_[i_94_ - i_88_] + i_87_;

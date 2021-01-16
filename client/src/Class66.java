@@ -6092,7 +6092,7 @@ final class Class66 {
                     int i_420_ = anIntArray1149[anInt1173];
                     int i_421_ = anIntArray1149[anInt1173 + 1];
                     anIntArray1149[anInt1173++]
-                            = i_420_ < i_421_ ? i_420_ : i_421_;
+                            = Math.min(i_420_, i_421_);
                     return;
                 }
                 if (i == 4017) {
@@ -6100,7 +6100,7 @@ final class Class66 {
                     int i_422_ = anIntArray1149[anInt1173];
                     int i_423_ = anIntArray1149[anInt1173 + 1];
                     anIntArray1149[anInt1173++]
-                            = i_422_ > i_423_ ? i_422_ : i_423_;
+                            = Math.max(i_422_, i_423_);
                     return;
                 }
                 if (i == 4018) {

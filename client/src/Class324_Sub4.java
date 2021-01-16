@@ -49,8 +49,7 @@ final class Class324_Sub4 extends Class324 {
             i_6_ += (i_15_ - i_12_) * aHa_Sub1_6506.anInt7477;
             i_5_ += (i_15_ - i_12_) * i_13_;
         }
-        int i_20_ = (i_15_ + is_16_.length < i_12_ + i_8_
-                ? i_15_ + is_16_.length : i_12_ + i_8_);
+        int i_20_ = (Math.min(i_15_ + is_16_.length, i_12_ + i_8_));
         for (int i_21_ = i_19_; i_21_ < i_20_; i_21_++) {
             int i_22_ = is_16_[i_21_ - i_15_] + i_14_;
             int i_23_ = is_17_[i_21_ - i_15_];

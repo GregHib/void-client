@@ -249,11 +249,11 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
 
     private final void method3129(int i, int i_17_, byte i_18_, int i_19_) {
         anInt9394++;
-        int i_20_ = i_17_ >= i ? i_17_ : i;
+        int i_20_ = Math.max(i_17_, i);
         if (i_18_ == 82) {
-            i_20_ = i_19_ <= i_20_ ? i_20_ : i_19_;
-            int i_21_ = i < i_17_ ? i : i_17_;
-            i_21_ = i_19_ >= i_21_ ? i_21_ : i_19_;
+            i_20_ = Math.max(i_19_, i_20_);
+            int i_21_ = Math.min(i, i_17_);
+            i_21_ = Math.min(i_19_, i_21_);
             anInt9389 = (i_20_ + i_21_) / 2;
             int i_22_ = i_20_ - i_21_;
             if (i_22_ > 0) {

@@ -1349,10 +1349,10 @@ public final class client extends Applet_Sub1 {
                         i_49_++;
                         i_50_++;
                     }
-                    i_45_ = i_43_ > i_32_ ? i_43_ : i_32_;
-                    i_46_ = i_44_ > i_33_ ? i_44_ : i_33_;
-                    i_47_ = i_49_ < i_34_ ? i_49_ : i_34_;
-                    i_48_ = i_50_ < i_35_ ? i_50_ : i_35_;
+                    i_45_ = Math.max(i_43_, i_32_);
+                    i_46_ = Math.max(i_44_, i_33_);
+                    i_47_ = Math.min(i_49_, i_34_);
+                    i_48_ = Math.min(i_50_, i_35_);
                 }
                 if (class46.anInt774 != 0
                         && !class46.aBoolean682

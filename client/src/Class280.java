@@ -218,8 +218,7 @@ final class Class280 {
             Stream stream = var_ha_Sub3.method3893(buffer, 9179);
             if (!Stream.c()) {
                 for (int i_35_ = -1 + i; i_35_ >= 0; i_35_--) {
-                    int i_36_ = (anIntArray3636[i_35_] > 64 ? 64
-                            : anIntArray3636[i_35_]);
+                    int i_36_ = (Math.min(anIntArray3636[i_35_], 64));
                     if (i_36_ > 0) {
                         for (int i_37_ = i_36_ + -1; i_37_ >= 0; i_37_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2
@@ -350,8 +349,7 @@ final class Class280 {
                 }
             } else {
                 for (int i_58_ = i + -1; i_58_ >= 0; i_58_--) {
-                    int i_59_ = (anIntArray3636[i_58_] > 64
-                            ? 64 : anIntArray3636[i_58_]);
+                    int i_59_ = (Math.min(anIntArray3636[i_58_], 64));
                     if (i_59_ > 0) {
                         for (int i_60_ = i_59_ + -1; i_60_ >= 0; i_60_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2

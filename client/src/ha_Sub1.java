@@ -96,10 +96,8 @@ final class ha_Sub1 extends ha {
         aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
         int[] is = var_aa_Sub3.anIntArray5201;
         int[] is_22_ = var_aa_Sub3.anIntArray5202;
-        int i_23_ = (this.anInt7476 > i_18_
-                ? this.anInt7476 : i_18_);
-        int i_24_ = (this.anInt7503 < i_18_ + is.length
-                ? this.anInt7503 : i_18_ + is.length);
+        int i_23_ = (Math.max(this.anInt7476, i_18_));
+        int i_24_ = (Math.min(this.anInt7503, i_18_ + is.length));
         i_21_ <<= 8;
         i_19_ <<= 8;
         i_20_ <<= 8;
@@ -1354,10 +1352,8 @@ final class ha_Sub1 extends ha {
         aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
         int[] is = var_aa_Sub3.anIntArray5201;
         int[] is_292_ = var_aa_Sub3.anIntArray5202;
-        int i_293_ = (this.anInt7476 > i_291_
-                ? this.anInt7476 : i_291_);
-        int i_294_ = (this.anInt7503 < i_291_ + is.length
-                ? this.anInt7503 : i_291_ + is.length);
+        int i_293_ = (Math.max(this.anInt7476, i_291_));
+        int i_294_ = (Math.min(this.anInt7503, i_291_ + is.length));
         i_286_ -= i;
         i_287_ -= i_285_;
         if (i_286_ + i_287_ < 0) {

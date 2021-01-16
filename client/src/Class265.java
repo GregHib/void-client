@@ -48,11 +48,9 @@ final class Class265 implements Interface1 {
         if (i != -49)
             method2022(null, 101);
         if (bool) {
-            int i_0_ = (Class321.anInt4017 > Class92.anInt1524
-                    ? Class321.anInt4017 : Class92.anInt1524);
+            int i_0_ = (Math.max(Class321.anInt4017, Class92.anInt1524));
             int i_1_
-                    = ((Class348_Sub42_Sub8_Sub2.anInt10432 > ha_Sub2.anInt7666)
-                    ? Class348_Sub42_Sub8_Sub2.anInt10432 : ha_Sub2.anInt7666);
+                    = (Math.max(Class348_Sub42_Sub8_Sub2.anInt10432, ha_Sub2.anInt7666));
             int i_2_ = aClass105_4688.method966();
             int i_3_ = aClass105_4688.method980();
             int i_4_ = 0;

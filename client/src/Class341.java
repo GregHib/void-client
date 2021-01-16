@@ -83,8 +83,7 @@ final class Class341 {
         anInt4232++;
         if (i_8_ != 1595)
             return 38;
-        int i_9_ = (Class348_Sub42_Sub8_Sub2.anInt10432 <= i ? i
-                : Class348_Sub42_Sub8_Sub2.anInt10432);
+        int i_9_ = (Math.max(Class348_Sub42_Sub8_Sub2.anInt10432, i));
         if (Class186_Sub1.aClass341_5808 == this)
             return 0;
         if (this == Class237_Sub1.aClass341_5821)

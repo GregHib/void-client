@@ -108,9 +108,7 @@ final class Class286_Sub6 extends Class286 {
                     } else {
                         Class348_Sub43.anInt7068 = 3;
                         Class98.aClass348_Sub16_Sub3_1564.method2861
-                                (0, ((Class58.anInt1059 < Class348_Sub40_Sub35.anInt9444)
-                                        ? Class58.anInt1059
-                                        : Class348_Sub40_Sub35.anInt9444));
+                                (0, (Math.min(Class58.anInt1059, Class348_Sub40_Sub35.anInt9444)));
                         for (int i = 0; (Class367_Sub3.anIntArray7299.length > i); i++) {
                             Class98.aClass348_Sub16_Sub3_1564.method2843
                                     (Class367_Sub3.anIntArray7299[i], i, -7836);

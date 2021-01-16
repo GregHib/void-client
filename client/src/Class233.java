@@ -246,8 +246,7 @@ final class Class233 {
             float f_32_ = -f_20_ + f_23_;
             if (!var_ha_Sub2.aBoolean7775) {
                 for (int i_33_ = -1 + i; i_33_ >= 0; i_33_--) {
-                    int i_34_ = (anIntArray3033[i_33_] <= 64
-                            ? anIntArray3033[i_33_] : 64);
+                    int i_34_ = (Math.min(anIntArray3033[i_33_], 64));
                     if (i_34_ > 0) {
                         for (int i_35_ = -1 + i_34_;
                              i_35_ >= 0; i_35_--) {
@@ -433,8 +432,7 @@ final class Class233 {
                 }
             } else {
                 for (int i_56_ = i - 1; i_56_ >= 0; i_56_--) {
-                    int i_57_ = (anIntArray3033[i_56_] > 64
-                            ? 64 : anIntArray3033[i_56_]);
+                    int i_57_ = (Math.min(anIntArray3033[i_56_], 64));
                     if (i_57_ > 0) {
                         for (int i_58_ = -1 + i_57_;
                              i_58_ >= 0; i_58_--) {

@@ -4538,8 +4538,7 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
                 i_1073_
                         += (i_1072_ - i_1070_) * this.anInt8471;
             }
-            int i_1086_ = (i_1072_ + is.length < i_1070_ + i_1076_
-                    ? i_1072_ + is.length : i_1070_ + i_1076_);
+            int i_1086_ = (Math.min(i_1072_ + is.length, i_1070_ + i_1076_));
             for (int i_1087_ = i_1085_; i_1087_ < i_1086_; i_1087_++) {
                 int i_1088_ = is[i_1087_ - i_1072_] + i_1071_;
                 int i_1089_ = is_1083_[i_1087_ - i_1072_];

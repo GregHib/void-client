@@ -57,18 +57,11 @@ final class Class348_Sub43 extends Class348 {
                             .anInt10561) != -1
                             && class318_sub1_sub3_sub3_sub2.anInt10561 != -1) {
                         int i_1_
-                                = ((class318_sub1_sub3_sub3_sub2.anInt10516 < (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                .anInt10516))
-                                ? (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                .anInt10516)
-                                : class318_sub1_sub3_sub3_sub2.anInt10516);
+                                = (Math.max(class318_sub1_sub3_sub3_sub2.anInt10516, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                .anInt10516)));
                         int i_2_
-                                = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                .anInt10561)
-                                >= class318_sub1_sub3_sub3_sub2.anInt10561)
-                                ? class318_sub1_sub3_sub3_sub2.anInt10561
-                                : (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                .anInt10561));
+                                = (Math.min((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                .anInt10561), class318_sub1_sub3_sub3_sub2.anInt10561));
                         int i_3_ = 5 - (-(10 * i_1_ / 100) + -i_2_);
                         int i_4_
                                 = (-class318_sub1_sub3_sub3_sub2.anInt10516

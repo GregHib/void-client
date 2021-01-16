@@ -285,15 +285,15 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                 i_19_, this.aByte6381,
                 i_20_);
         int i_43_
-                = i_32_ <= i_27_ ? i_32_ : i_27_;
-        int i_44_ = i_37_ < i_42_ ? i_37_ : i_42_;
+                = Math.min(i_32_, i_27_);
+        int i_44_ = Math.min(i_37_, i_42_);
         int i_45_
-                = i_42_ <= i_32_ ? i_42_ : i_32_;
+                = Math.min(i_42_, i_32_);
         this.anInt10302
                 = 0x3fff & (int) (Math.atan2(i_43_ + -i_44_,
                 i_16_)
                 * 2607.5945876176133);
-        int i_46_ = i_27_ < i_37_ ? i_27_ : i_37_;
+        int i_46_ = Math.min(i_27_, i_37_);
         this.anInt10208
                 = 0x3fff & (int) (2607.5945876176133
                 * Math.atan2(i_46_ - i_45_,

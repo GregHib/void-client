@@ -141,8 +141,8 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
             } else if (i_2_ > 0 && i_5_ > 0) {
                 int i_14_ = i_5_ / 2;
                 int i_15_ = i_2_ / 2;
-                int i_16_ = i_14_ < i_9_ ? i_14_ : i_9_;
-                int i_17_ = i_15_ >= i_9_ ? i_9_ : i_15_;
+                int i_16_ = Math.min(i_14_, i_9_);
+                int i_17_ = Math.min(i_15_, i_9_);
                 int i_18_ = i_3_ - -i_16_;
                 int i_19_ = i_5_ - i_16_ * 2;
                 for (int i_20_ = 0; i_20_ < i_2_;
@@ -174,7 +174,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                         = is_21_[(Class139.method1166
                                         (i_3_ - -i_5_ + (-i_25_ - 1),
                                                 Class239_Sub22.anInt6076))]
-                                        = i_26_ < i_22_ ? i_26_ : i_22_;
+                                        = Math.min(i_26_, i_22_);
                             }
                         }
                         if (Class348_Sub40_Sub6.anInt9139 >= i_19_ + i_18_)
@@ -212,7 +212,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                             (Class239_Sub22.anInt6076,
                                                     -i_32_ + i_5_ + (i_3_
                                                             + -1)))]
-                                            = i_29_ <= i_33_ ? i_29_ : i_33_;
+                                            = Math.min(i_29_, i_33_);
                                 }
                             }
                             if (i_19_ + i_18_ <= Class348_Sub40_Sub6.anInt9139)

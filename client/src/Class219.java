@@ -282,7 +282,7 @@ final class Class219 {
                                 : (class318_sub1_sub3_sub3
                                 .anInt6388) + -i_5_)
                                 << 1550268617);
-                        int i_13_ = i_12_ >= i_11_ ? i_12_ : i_11_;
+                        int i_13_ = Math.max(i_12_, i_11_);
                         int i_14_
                                 = class225.anInt2945 * 2 * i_13_;
                         if (i_10_ <= i_14_) {

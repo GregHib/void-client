@@ -201,7 +201,7 @@ final class Class186_Sub1 extends Class186 {
             throw new IllegalArgumentException("");
         int i_49_ = Class183.method1382(i_46_, -6409);
         int i_50_ = 0;
-        int i_51_ = i_45_ < i ? i_45_ : i;
+        int i_51_ = Math.min(i_45_, i);
         if (bool != false)
             anInt5807 = -127;
         int i_52_ = i_45_ >> -1315657727;

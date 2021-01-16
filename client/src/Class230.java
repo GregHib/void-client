@@ -215,24 +215,19 @@ final class Class230 {
                                                 = i_57_ = -i_34_ + i_57_;
                                         if (bool_54_) {
                                             int i_61_
-                                                    = -i_60_ + (i_58_ > i_56_
-                                                    ? i_56_ : i_58_);
+                                                    = -i_60_ + (Math.min(i_58_, i_56_));
                                             if (i_61_ <= Class348_Sub16_Sub1.anInt8854) {
                                                 int i_62_
                                                         = (-i_60_
-                                                        + ((i_59_ > i_57_)
-                                                        ? i_57_ : i_59_));
+                                                        + (Math.min(i_59_, i_57_)));
                                                 if (Class239_Sub16.anInt6008
                                                         >= i_62_) {
                                                     int i_63_
-                                                            = (((i_58_ > i_56_)
-                                                            ? i_58_ : i_56_)
+                                                            = ((Math.max(i_58_, i_56_))
                                                             - -i_60_);
                                                     if (i_63_ >= 0) {
                                                         int i_64_
-                                                                = ((i_59_ > i_57_
-                                                                ? i_59_
-                                                                : i_57_)
+                                                                = ((Math.max(i_59_, i_57_))
                                                                 + i_60_);
                                                         if (i_64_ >= 0)
                                                             bool_54_ = false;

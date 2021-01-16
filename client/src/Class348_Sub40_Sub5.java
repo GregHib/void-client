@@ -133,8 +133,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                             i_12_ = i_12_ < 0 ? -i_12_ : i_12_;
                                             i_13_ = (i_13_ < 0
                                                     ? -i_13_ : i_13_);
-                                            i_15_ = (i_12_ <= i_13_ ? i_13_
-                                                    : i_12_);
+                                            i_15_ = (Math.max(i_12_, i_13_));
                                             break while_136_;
                                         } while (false);
                                         i_12_

@@ -1681,8 +1681,8 @@ abstract class ha_Sub3 extends ha {
             la();
         else {
             this.anInt8165
-                    = i_119_ >= 0 ? i_119_ : 0;
-            this.anInt8106 = i < 0 ? 0 : i;
+                    = Math.max(i_119_, 0);
+            this.anInt8106 = Math.max(i, 0);
             this.anInt8096
                     = this.anInt7931 >= i_121_ ? i_121_ : 0;
             this.anInt8183

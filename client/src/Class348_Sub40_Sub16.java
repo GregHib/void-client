@@ -315,12 +315,10 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                 int i_31_ = is_10_[i_14_];
                                 int i_32_ = is_8_[i_14_];
                                 is_5_[i_14_]
-                                        = (i_30_ > i_32_
-                                        ? i_32_ : i_30_);
+                                        = (Math.min(i_30_, i_32_));
                                 is_6_[i_14_]
-                                        = (i_28_ > i_27_
-                                        ? i_27_ : i_28_);
-                                is_7_[i_14_] = i_29_ > i_31_ ? i_31_ : i_29_;
+                                        = (Math.min(i_28_, i_27_));
+                                is_7_[i_14_] = Math.min(i_29_, i_31_);
                             }
                             break while_168_;
                         } while (false);
@@ -333,13 +331,11 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                             int i_36_ = is_11_[i_14_];
                             int i_37_ = is_13_[i_14_];
                             int i_38_ = is_8_[i_14_];
-                            is_5_[i_14_] = i_36_ < i_38_ ? i_38_ : i_36_;
+                            is_5_[i_14_] = Math.max(i_36_, i_38_);
                             is_6_[i_14_]
-                                    = (i_33_ <= i_35_
-                                    ? i_35_ : i_33_);
+                                    = (Math.max(i_33_, i_35_));
                             is_7_[i_14_]
-                                    = (i_37_ >= i_34_
-                                    ? i_37_ : i_34_);
+                                    = (Math.max(i_37_, i_34_));
                         }
                         break while_168_;
                     } while (false);
@@ -565,8 +561,7 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                 int i_59_ = is_53_[i_54_];
                                 int i_60_ = is_52_[i_54_];
                                 is[i_54_]
-                                        = (i_59_ > i_60_
-                                        ? i_60_ : i_59_);
+                                        = (Math.min(i_59_, i_60_));
                             }
                             break while_178_;
                         } while (false);
@@ -574,7 +569,7 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                              i_54_++) {
                             int i_61_ = is_53_[i_54_];
                             int i_62_ = is_52_[i_54_];
-                            is[i_54_] = i_62_ > i_61_ ? i_62_ : i_61_;
+                            is[i_54_] = Math.max(i_62_, i_61_);
                         }
                         break while_178_;
                     } while (false);

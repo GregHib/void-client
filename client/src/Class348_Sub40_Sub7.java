@@ -164,12 +164,10 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                     i_36_++;
                                     i_35_++;
                                 }
-                                i_31_ = i < i_24_ ? i_24_ : i;
-                                i_32_ = (i_12_ >= i_25_
-                                        ? i_12_ : i_25_);
-                                i_34_ = i_14_ <= i_35_ ? i_14_ : i_35_;
-                                i_33_ = (i_17_ > i_36_
-                                        ? i_36_ : i_17_);
+                                i_31_ = Math.max(i, i_24_);
+                                i_32_ = (Math.max(i_12_, i_25_));
+                                i_34_ = Math.min(i_14_, i_35_);
+                                i_33_ = (Math.min(i_17_, i_36_));
                             } else {
                                 i_31_ = i;
                                 i_32_ = i_12_;

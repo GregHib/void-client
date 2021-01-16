@@ -3822,10 +3822,7 @@ final class ha_Sub2 extends ha {
                 Class258_Sub2 class258_sub2_308_
                         = class299_sub1_307_.method2256((byte) -121);
                 if (class258_sub2 != null && class258_sub2_308_ != null) {
-                    int i = ((class258_sub2_308_.anInt8538
-                            >= class258_sub2.anInt8538)
-                            ? class258_sub2_308_.anInt8538
-                            : class258_sub2.anInt8538);
+                    int i = (Math.max(class258_sub2_308_.anInt8538, class258_sub2.anInt8538));
                     if (class299_306_ != class299
                             && class299_305_ != class299_306_
                             && class299_306_ instanceof Class299_Sub1_Sub2) {

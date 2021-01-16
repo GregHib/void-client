@@ -377,8 +377,8 @@ final class Class18 {
             aBoolean297 = true;
             anInt301 = i_18_;
         }
-        int i_19_ = anInt302 > 2 ? 2 : anInt302;
-        int i_20_ = i_15_ <= 2 ? i_15_ : 2;
+        int i_19_ = Math.min(anInt302, 2);
+        int i_20_ = Math.min(i_15_, 2);
         anInt302 = i_15_;
         if (!bool == aBoolean303) {
             aBoolean303 = bool;

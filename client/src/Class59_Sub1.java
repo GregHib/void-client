@@ -54,7 +54,7 @@ class Class59_Sub1 extends Class59 {
             throw new IllegalArgumentException("");
         int i_7_ = Class183.method1382(i_2_, -6409);
         int i_8_ = 0;
-        int i_9_ = i_5_ > i ? i : i_5_;
+        int i_9_ = Math.min(i_5_, i);
         int i_10_ = i >> 1517170401;
         int i_11_ = i_5_ >> -322977663;
         float[] fs_12_ = fs;

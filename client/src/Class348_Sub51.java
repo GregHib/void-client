@@ -351,8 +351,7 @@ final class Class348_Sub51 extends Class348 {
                 if (i_0_ >= 17)
                     i_2_ = class348_sub49.method3387(255);
                 this.aClass239_Sub7_7238
-                        = new Class239_Sub7((i_1_ > i_2_
-                        ? i_1_ : i_2_),
+                        = new Class239_Sub7((Math.max(i_1_, i_2_)),
                         this);
                 boolean bool = true;
                 boolean bool_3_ = true;
