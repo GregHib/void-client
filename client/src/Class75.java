@@ -837,31 +837,7 @@ class Class75 {
             int i_139_ = i_138_ - i_137_;
             if (i_139_ > 0) {
                 int i_140_ = anInt1274 + i_136_;
-                if (i_140_ < 0 || i_140_ >= anInt1259) {
-                    for (int i_141_ = 0; i_141_ < i_135_; i_141_++) {
-                        int i_142_
-                                = (anInt1268
-                                - (i_133_ + i_131_ * (i_141_ + 1) >> 16));
-                        int i_143_
-                                = anInt1268 - (i_133_ + i_131_ * i_141_ >> 16);
-                        int i_144_ = i_143_ - i_142_;
-                        int i_145_;
-                        if (aClass348_Sub42_Sub14_1243.anInt9634
-                                != -1)
-                            i_145_ = ~0xffffff | (aClass348_Sub42_Sub14_1243
-                                    .anInt9634);
-                        else if ((i_136_ + anInt1274 & 0x4)
-                                != (i_141_ + anInt1277 & 0x4))
-                            i_145_ = -11840664;
-                        else
-                            i_145_
-                                    = anIntArray1260[(aClass268_1239
-                                    .anInt3447) + 1];
-                        if (i_145_ == 0)
-                            i_145_ = -16777216;
-                        var_ha.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0);
-                    }
-                } else {
+                if (i_140_ >= 0 && i_140_ < anInt1259) {
                     for (int i_146_ = 0; i_146_ < i_135_; i_146_++) {
                         int i_147_
                                 = (anInt1268
@@ -933,8 +909,32 @@ class Class75 {
                                         true);
                         }
                     }
+                } else {
+                    for (int i_141_ = 0; i_141_ < i_135_; i_141_++) {
+                        int i_142_
+                                = (anInt1268
+                                - (i_133_ + i_131_ * (i_141_ + 1) >> 16));
+                        int i_143_
+                                = anInt1268 - (i_133_ + i_131_ * i_141_ >> 16);
+                        int i_144_ = i_143_ - i_142_;
+                        int i_145_;
+                        if (aClass348_Sub42_Sub14_1243.anInt9634
+                                != -1)
+                            i_145_ = ~0xffffff | (aClass348_Sub42_Sub14_1243
+                                    .anInt9634);
+                        else if ((i_136_ + anInt1274 & 0x4)
+                                != (i_141_ + anInt1277 & 0x4))
+                            i_145_ = -11840664;
+                        else
+                            i_145_
+                                    = anIntArray1260[(aClass268_1239
+                                    .anInt3447) + 1];
+                        if (i_145_ == 0)
+                            i_145_ = -16777216;
+                        var_ha.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0);
+                    }
                 }
-            }
+			}
         }
         for (int i_155_ = -16; i_155_ < i_134_ + 16; i_155_++) {
             int i_156_ = (i_132_ + i * i_155_ >> 16) + anInt1272;

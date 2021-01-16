@@ -36,7 +36,10 @@ final class Class22 {
 
     private final void method291(int i, int i_1_,
                                  Class348_Sub49 class348_sub49) {
-        if (i != 1) {
+        if (i == 1) {
+            anInt337 = class348_sub49.method3351(-1);
+            method292(anInt337, (byte) 117);
+        } else {
             if (i == 2) {
                 this.anInt331
                         = class348_sub49.method3330(i_1_ + 842397948);
@@ -51,9 +54,6 @@ final class Class22 {
             } else
                 this.anInt336
                         = class348_sub49.method3330(842397944) << -1659645310;
-        } else {
-            anInt337 = class348_sub49.method3351(-1);
-            method292(anInt337, (byte) 117);
         }
         if (i_1_ != -4)
             method290(null, 12);

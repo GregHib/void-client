@@ -106,7 +106,11 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                             while_184_:
                             do {
                                 do {
-                                    if (i_9_ != 0) {
+                                    if (i_9_ == 0) {
+                                        anInt9299
+                                                = class348_sub49.method3387(255);
+                                        return;
+                                    } else {
                                         if (i_9_ != 1) {
                                             if (i_9_ != 2) {
                                                 if (i_9_ != 3) {
@@ -127,10 +131,6 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                                                 break;
                                             break while_184_;
                                         }
-                                    } else {
-                                        anInt9299
-                                                = class348_sub49.method3387(255);
-                                        return;
                                     }
                                     anInt9301 = class348_sub49.method3387(255);
                                     return;

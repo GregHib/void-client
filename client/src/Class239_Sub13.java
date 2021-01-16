@@ -34,8 +34,19 @@ final class Class239_Sub13 extends Class239 {
     static final void method1777
             (int i, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
         if (i == -3) {
-            if (!(class318_sub1_sub3_sub3
-                    instanceof Class318_Sub1_Sub3_Sub3_Sub1)) {
+            if (class318_sub1_sub3_sub3
+                    instanceof Class318_Sub1_Sub3_Sub3_Sub1) {
+                        Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
+                                = (Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3;
+                        if (class318_sub1_sub3_sub3_sub1.aClass79_10505
+                                != null)
+                            Class286_Sub3.method2150
+                                    (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                                    .aByte6381)
+                                                    != (class318_sub1_sub3_sub3_sub1
+                                                    .aByte6381)),
+                                            false, class318_sub1_sub3_sub3_sub1);
+                    } else {
                 if (class318_sub1_sub3_sub3
                         instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
                     Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
@@ -49,17 +60,6 @@ final class Class239_Sub13 extends Class239 {
                                             .aByte6381)),
                                     class318_sub1_sub3_sub3_sub2);
                 }
-            } else {
-                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                        = (Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3;
-                if (class318_sub1_sub3_sub3_sub1.aClass79_10505
-                        != null)
-                    Class286_Sub3.method2150
-                            (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                            .aByte6381)
-                                            != (class318_sub1_sub3_sub3_sub1
-                                            .aByte6381)),
-                                    false, class318_sub1_sub3_sub3_sub1);
             }
             anInt5981++;
         }

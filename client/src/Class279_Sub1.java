@@ -34,12 +34,10 @@ final class Class279_Sub1 extends Class279 {
             aSourceDataLine6177.start();
             anInt6175 = i;
         } catch (LineUnavailableException lineunavailableexception) {
-            if (1 != Class286_Sub4.method2155(i, (byte) 43))
-                method2082(Class33.method340(i, (byte) 108));
-            else {
+            if (1 == Class286_Sub4.method2155(i, (byte) 43)) {
                 aSourceDataLine6177 = null;
                 throw lineunavailableexception;
-            }
+            } else method2082(Class33.method340(i, (byte) 108));
         }
     }
 

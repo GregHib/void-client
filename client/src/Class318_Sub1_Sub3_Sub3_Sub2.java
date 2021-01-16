@@ -244,15 +244,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
                 = class348_sub49.method3387(i ^ 0xab);
         if (i != 84)
             anInt10520 = 87;
-        if (!bool_12_) {
-            this.anInt10564 = 0;
-            this.anInt10557
-                    = class348_sub49.method3387(255);
-            this.anInt10561
-                    = class348_sub49.method3387(255);
-            if (this.anInt10561 == 255)
-                this.anInt10561 = -1;
-        } else {
+        if (bool_12_) {
             this.anInt10564
                     = class348_sub49.method3330(842397944);
             this.anInt10557
@@ -260,6 +252,14 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
             if (this.anInt10564 == 65535)
                 this.anInt10564 = -1;
             this.anInt10561 = -1;
+        } else {
+            this.anInt10564 = 0;
+            this.anInt10557
+                    = class348_sub49.method3387(255);
+            this.anInt10561
+                    = class348_sub49.method3387(255);
+            if (this.anInt10561 == 255)
+                this.anInt10561 = -1;
         }
         int i_23_ = this.anInt10553;
         this.anInt10553

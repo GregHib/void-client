@@ -132,10 +132,7 @@ final class Class38 {
                 && (Class299_Sub1_Sub1.aLong8694 < Class62.method599(-127))) {
             for (int i_4_ = Class121.anInt1794;
                  i_4_ < Class50_Sub1.aStringArray5223.length; i_4_++) {
-                if (!Class50_Sub1.aStringArray5223[i_4_].startsWith("pause")) {
-                    Class363.aString4461 = Class50_Sub1.aStringArray5223[i_4_];
-                    Class59_Sub1.method555(false, 0);
-                } else {
+                if (Class50_Sub1.aStringArray5223[i_4_].startsWith("pause")) {
                     int i_5_ = 5;
                     try {
                         i_5_ = Integer.parseInt(Class50_Sub1
@@ -150,6 +147,9 @@ final class Class38 {
                     Class299_Sub1_Sub1.aLong8694
                             = (long) (1000 * i_5_) + Class62.method599(-97);
                     return;
+                } else {
+                    Class363.aString4461 = Class50_Sub1.aStringArray5223[i_4_];
+                    Class59_Sub1.method555(false, 0);
                 }
             }
             Class121.anInt1794 = -1;

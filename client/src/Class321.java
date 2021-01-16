@@ -61,7 +61,19 @@ final class Class321 {
                     anIntArrayArray3997[i_2_][2]
                             = class348_sub49.method3385((byte) -126);
                 }
-            } else if (i != 4) {
+            } else if (i == 4) {
+                int i_17_ = class348_sub49.method3387(255);
+                anIntArrayArray3996 = new int[i_17_][3];
+                for (int i_18_ = 0;
+                     i_17_ > i_18_; i_18_++) {
+                    anIntArrayArray3996[i_18_][0]
+                            = class348_sub49.method3330(842397944);
+                    anIntArrayArray3996[i_18_][1]
+                            = class348_sub49.method3385((byte) -126);
+                    anIntArrayArray3996[i_18_][2]
+                            = class348_sub49.method3385((byte) -126);
+                }
+            } else {
                 if (i != 5) {
                     if (i == 6)
                         class348_sub49.method3387(255);
@@ -80,8 +92,31 @@ final class Class321 {
                                             = class348_sub49
                                             .method3385((byte) -126);
                             } else if (i != 12) {
-                                if (i != 13) {
-                                    if (i != 14) {
+                                if (i == 13) {
+                                    int i_15_ = class348_sub49.method3387(255);
+                                    anIntArray4004 = new int[i_15_];
+                                    for (int i_16_ = 0; i_16_ < i_15_; i_16_++)
+                                        anIntArray4004[i_16_]
+                                                = class348_sub49
+                                                .method3330(842397944);
+                                } else {
+                                    if (i == 14) {
+                                        int i_13_
+                                                = class348_sub49
+                                                .method3387(i_0_ ^ 0xcb);
+                                        anIntArrayArray4002
+                                                = new int[i_13_][2];
+                                        for (int i_14_ = 0; i_14_ < i_13_;
+                                             i_14_++) {
+                                            anIntArrayArray4002[i_14_][0]
+                                                    = class348_sub49
+                                                    .method3387(255);
+                                            anIntArrayArray4002[i_14_][1]
+                                                    = (class348_sub49.method3387
+                                                    (Class348_Sub21.method2955
+                                                            (i_0_, 203)));
+                                        }
+                                    } else {
                                         if (i == 15)
                                             class348_sub49
                                                     .method3330(842397944);
@@ -181,30 +216,7 @@ final class Class321 {
                                                                 class348);
                                             }
                                         }
-                                    } else {
-                                        int i_13_
-                                                = class348_sub49
-                                                .method3387(i_0_ ^ 0xcb);
-                                        anIntArrayArray4002
-                                                = new int[i_13_][2];
-                                        for (int i_14_ = 0; i_14_ < i_13_;
-                                             i_14_++) {
-                                            anIntArrayArray4002[i_14_][0]
-                                                    = class348_sub49
-                                                    .method3387(255);
-                                            anIntArrayArray4002[i_14_][1]
-                                                    = (class348_sub49.method3387
-                                                    (Class348_Sub21.method2955
-                                                            (i_0_, 203)));
-                                        }
                                     }
-                                } else {
-                                    int i_15_ = class348_sub49.method3387(255);
-                                    anIntArray4004 = new int[i_15_];
-                                    for (int i_16_ = 0; i_16_ < i_15_; i_16_++)
-                                        anIntArray4004[i_16_]
-                                                = class348_sub49
-                                                .method3330(842397944);
                                 }
                             } else
                                 class348_sub49.method3385((byte) -126);
@@ -213,18 +225,6 @@ final class Class321 {
                     }
                 } else
                     class348_sub49.method3330(842397944);
-            } else {
-                int i_17_ = class348_sub49.method3387(255);
-                anIntArrayArray3996 = new int[i_17_][3];
-                for (int i_18_ = 0;
-                     i_17_ > i_18_; i_18_++) {
-                    anIntArrayArray3996[i_18_][0]
-                            = class348_sub49.method3330(842397944);
-                    anIntArrayArray3996[i_18_][1]
-                            = class348_sub49.method3385((byte) -126);
-                    anIntArrayArray3996[i_18_][2]
-                            = class348_sub49.method3385((byte) -126);
-                }
             }
         } else
             aString4012 = class348_sub49.method3371(-13487);

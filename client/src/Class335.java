@@ -66,7 +66,11 @@ final class Class335 {
                     class79 = class79.method794((Class318_Sub1_Sub3_Sub3
                                     .aClass170_10209),
                             -1);
-                if (class79 != null && i_5_ != -1) {
+                if (class79 == null || i_5_ == -1) {
+                    class348_sub9.anInt6675 = i_4_;
+                    class348_sub9.aBoolean6674 = false;
+                    class348_sub9.anInt6685 = -1;
+                } else {
                     if ((class348_sub9.anInt6685 == i_5_)
                             && (!class79.aBoolean1370
                             != class348_sub9.aBoolean6674)) {
@@ -107,10 +111,6 @@ final class Class335 {
                                     = class79.anInt1356;
                         }
                     }
-                } else {
-                    class348_sub9.anInt6675 = i_4_;
-                    class348_sub9.aBoolean6674 = false;
-                    class348_sub9.anInt6685 = -1;
                 }
             }
             class348_sub9.anInt6678

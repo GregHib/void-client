@@ -22,7 +22,10 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
             while_199_:
             do {
                 do {
-                    if (i_1_ != 0) {
+                    if (i_1_ == 0) {
+                        anInt9340 = class348_sub49.method3330(842397944);
+                        break while_200_;
+                    } else {
                         if (i_1_ != 1) {
                             if (i_1_ != 2) {
                                 if (i_1_ != 3)
@@ -31,9 +34,6 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
                                 break;
                             break while_199_;
                         }
-                    } else {
-                        anInt9340 = class348_sub49.method3330(842397944);
-                        break while_200_;
                     }
                     anInt9343 = class348_sub49.method3330(i_0_ + 842366929);
                     break while_200_;

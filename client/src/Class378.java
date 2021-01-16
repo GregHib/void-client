@@ -64,12 +64,12 @@ public final class Class378 extends ha_Sub3 {
             while_232_:
             do {
                 do {
-                    if (i_2_ != 1) {
-                        if (i_2_ != 2)
-                            break;
-                    } else {
+                    if (i_2_ == 1) {
                         i_3_ = 6;
                         break while_232_;
+                    } else {
+                        if (i_2_ != 2)
+                            break;
                     }
                     i_3_ = 27;
                     break while_232_;
@@ -199,10 +199,7 @@ public final class Class378 extends ha_Sub3 {
     }
 
     final void method3901(byte i) {
-        if (!this.aBoolean8069)
-            this.aClass101_Sub2_8074.method918(aFloatArray9797,
-                    0);
-        else {
+        if (this.aBoolean8069) {
             aFloatArray9797[1] = 0.0F;
             aFloatArray9797[2] = 0.0F;
             aFloatArray9797[15] = 1.0F;
@@ -219,7 +216,8 @@ public final class Class378 extends ha_Sub3 {
             aFloatArray9797[5] = 1.0F;
             aFloatArray9797[14] = 0.0F;
             aFloatArray9797[4] = 0.0F;
-        }
+        } else this.aClass101_Sub2_8074.method918(aFloatArray9797,
+                0);
         if (i < -18)
             this.anIDirect3DDevice9810
                     .SetTransform(256, aFloatArray9797);
@@ -238,12 +236,12 @@ public final class Class378 extends ha_Sub3 {
         while_233_:
         do {
             do {
-                if (1 != i_14_) {
-                    if (i_14_ != 2)
-                        break;
-                } else {
+                if (1 == i_14_) {
                     i_15_ = 3;
                     break while_233_;
+                } else {
+                    if (i_14_ != 2)
+                        break;
                 }
                 i_15_ = 26;
                 break while_233_;
@@ -1205,7 +1203,10 @@ public final class Class378 extends ha_Sub3 {
     final void method3950(int i) {
         if (i != 0)
             anIntArray9809 = null;
-        if (Class348_Sub4.aClass173_6602 != this.aClass173_8163) {
+        if (Class348_Sub4.aClass173_6602 == this.aClass173_8163) {
+            this.anIDirect3DDevice9810.SetRenderState(19, 5);
+            this.anIDirect3DDevice9810.SetRenderState(20, 6);
+        } else {
             if (this.aClass173_8163 == Class69.aClass173_1201) {
                 this.anIDirect3DDevice9810.SetRenderState(19, 2);
                 this.anIDirect3DDevice9810.SetRenderState(20, 2);
@@ -1214,22 +1215,19 @@ public final class Class378 extends ha_Sub3 {
                 this.anIDirect3DDevice9810.SetRenderState(19, 9);
                 this.anIDirect3DDevice9810.SetRenderState(20, 2);
             }
-        } else {
-            this.anIDirect3DDevice9810.SetRenderState(19, 5);
-            this.anIDirect3DDevice9810.SetRenderState(20, 6);
         }
     }
 
     final void method3626(int i, int i_88_) throws Exception_Sub1 {
         this.anIDirect3DDevice9810.EndScene();
-        if (!aClass53_9787.method498(-107)) {
-            if (50 < ++anInt9785)
-                throw new Exception_Sub1();
-            method3960(false);
-        } else {
+        if (aClass53_9787.method498(-107)) {
             anInt9785 = 0;
             if (ue.a((byte) 97, aClass53_9787.method495((byte) 91, 0)))
                 method3960(false);
+        } else {
+            if (50 < ++anInt9785)
+                throw new Exception_Sub1();
+            method3960(false);
         }
         this.anIDirect3DDevice9810.BeginScene();
     }

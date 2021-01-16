@@ -16,7 +16,10 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
                 6 * (i * i), bool);
         try {
             this.aClass377_5082.method3850((byte) -109, this);
-            if (!bool) {
+            if (bool) {
+                for (int i_1_ = 0; i_1_ < 6; i_1_++)
+                    this.method233(i, i, is[i_1_], i_1_ + 34069, 255);
+            } else {
                 for (int i_0_ = 0; i_0_ < 6; i_0_++)
                     OpenGL.glTexImage2Di
                             (34069 + i_0_, 0, this.method228(121), i, i, 0,
@@ -25,9 +28,6 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
                                     (this.aClass377_5082
                                             .anInt9918),
                                     is[i_0_], 0);
-            } else {
-                for (int i_1_ = 0; i_1_ < 6; i_1_++)
-                    this.method233(i, i, is[i_1_], i_1_ + 34069, 255);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

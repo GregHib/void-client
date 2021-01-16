@@ -107,7 +107,19 @@ final class Class269 {
                 || aHa_Sub3_3457.method3880(Class68.aClass68_1183,
                 Class191.aClass304_2571, (byte) 123)) {
             OutputStream_Sub1.method134((byte) -126);
-            if (!this.aBoolean3458) {
+            if (this.aBoolean3458) {
+                byte[] is
+                        = Class50_Sub1.method461(false, Class355.anObject4366,
+                        53146732);
+                this.anInterface18_Impl1_3452
+                        = aHa_Sub3_3457.method3872(16, 128,
+                        Class191.aClass304_2571, true,
+                        128, is);
+                is = Class50_Sub1.method461(false, Class227.anObject2969,
+                        53146732);
+                aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571,
+                        true, 128, is);
+            } else {
                 this.anInterface18_Impl3Array3459
                         = new Interface18_Impl3[16];
                 for (int i = 0; i < 16; i++) {
@@ -131,18 +143,6 @@ final class Class269 {
                             Class191.aClass304_2571, 2,
                             true, 128);
                 }
-            } else {
-                byte[] is
-                        = Class50_Sub1.method461(false, Class355.anObject4366,
-                        53146732);
-                this.anInterface18_Impl1_3452
-                        = aHa_Sub3_3457.method3872(16, 128,
-                        Class191.aClass304_2571, true,
-                        128, is);
-                is = Class50_Sub1.method461(false, Class227.anObject2969,
-                        53146732);
-                aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571,
-                        true, 128, is);
             }
         }
     }

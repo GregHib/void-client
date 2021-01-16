@@ -198,8 +198,17 @@ final class Class211 {
                                                             while_57_:
                                                             do {
                                                                 do {
-                                                                    if (i_38_
-                                                                            != 2) {
+                                                                    if (i_38_ == 2) {
+                                                                        anInt2743
+                                                                                = 2048;
+                                                                        anInt2738
+                                                                                = 0;
+                                                                        anInt2735
+                                                                                = 2048;
+                                                                        anInt2740
+                                                                                = 1;
+                                                                        break while_70_;
+                                                                    } else {
                                                                         if (i_38_ != 3) {
                                                                             if (i_38_ != 4) {
                                                                                 if (i_38_ != 5) {
@@ -241,16 +250,6 @@ final class Class211 {
                                                                                 break;
                                                                             break while_57_;
                                                                         }
-                                                                    } else {
-                                                                        anInt2743
-                                                                                = 2048;
-                                                                        anInt2738
-                                                                                = 0;
-                                                                        anInt2735
-                                                                                = 2048;
-                                                                        anInt2740
-                                                                                = 1;
-                                                                        break while_70_;
                                                                     }
                                                                     anInt2738
                                                                             = 0;
@@ -376,7 +375,12 @@ final class Class211 {
                         while_71_:
                         do {
                             do {
-                                if (i_42_ != 1) {
+                                if (i_42_ == 1) {
+                                    i_40_ = ((Class70.anIntArray1207
+                                            [i_41_ << 680948963])
+                                            >> 2080897156) + 1024;
+                                    break while_74_;
+                                } else {
                                     if (i_42_ != 3) {
                                         if (i_42_ != 4) {
                                             if (i_42_ != 2) {
@@ -388,11 +392,6 @@ final class Class211 {
                                             break;
                                         break while_71_;
                                     }
-                                } else {
-                                    i_40_ = ((Class70.anIntArray1207
-                                            [i_41_ << 680948963])
-                                            >> 2080897156) + 1024;
-                                    break while_74_;
                                 }
                                 i_40_ = (Class291.anIntArray3726[i_41_]
                                         >> -813205215);

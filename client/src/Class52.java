@@ -85,7 +85,22 @@ final class Class52 implements Interface12 {
             Class70.method726(116);
         Class56 class56 = Class348_Sub42_Sub15.aClass56_9660;
         int i = Class164.method1278(-28660);
-        if (class56 != Class348_Sub42_Sub15.aClass56_9660) {
+        if (class56 == Class348_Sub42_Sub15.aClass56_9660) {
+            Class64_Sub2.aString5420
+                    = Class348_Sub42_Sub15.aClass56_9660
+                    .aClass274_1012
+                    .method2063(Class348_Sub33.anInt6967, 544);
+            if (Class348_Sub42_Sub15.aClass56_9660.aBoolean1016)
+                Class251.anInt3236
+                        = (i * ((Class348_Sub42_Sub15.aClass56_9660
+                        .anInt1021)
+                        + -(Class348_Sub42_Sub15.aClass56_9660
+                        .anInt1025)) / 100
+                        + (Class348_Sub42_Sub15.aClass56_9660
+                        .anInt1025));
+            if (Class348_Sub42_Sub15.aClass56_9660.aBoolean1013)
+                Class64_Sub2.aString5420 += Class251.anInt3236 + "%";
+        } else {
             if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1043) {
                 Class51.aClass311_897 = null;
                 Class348_Sub49.method3379(2, 3);
@@ -102,21 +117,6 @@ final class Class52 implements Interface12 {
                         || class56.aBoolean1016)
                     Class283.aLong3660 = Class62.method599(-128);
             }
-        } else {
-            Class64_Sub2.aString5420
-                    = Class348_Sub42_Sub15.aClass56_9660
-                    .aClass274_1012
-                    .method2063(Class348_Sub33.anInt6967, 544);
-            if (Class348_Sub42_Sub15.aClass56_9660.aBoolean1016)
-                Class251.anInt3236
-                        = (i * ((Class348_Sub42_Sub15.aClass56_9660
-                        .anInt1021)
-                        + -(Class348_Sub42_Sub15.aClass56_9660
-                        .anInt1025)) / 100
-                        + (Class348_Sub42_Sub15.aClass56_9660
-                        .anInt1025));
-            if (Class348_Sub42_Sub15.aClass56_9660.aBoolean1013)
-                Class64_Sub2.aString5420 += Class251.anInt3236 + "%";
         }
         if (bool == true) {
             if (Class51.aClass311_897 != null) {

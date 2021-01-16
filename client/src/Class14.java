@@ -124,14 +124,14 @@ abstract class Class14 implements Interface18 {
     private final void method229(boolean bool) {
         this.aClass377_5082.method3850((byte) 107, this);
         anInt5083++;
-        if (aClass209_5101 != Class71.aClass209_1212) {
-            OpenGL.glTexParameteri(this.anInt5093, 10241,
-                    !aBoolean5099 ? 9728 : 9984);
-            OpenGL.glTexParameteri(this.anInt5093, 10240, 9728);
-        } else {
+        if (aClass209_5101 == Class71.aClass209_1212) {
             OpenGL.glTexParameteri(this.anInt5093, 10241,
                     !aBoolean5099 ? 9729 : 9987);
             OpenGL.glTexParameteri(this.anInt5093, 10240, 9729);
+        } else {
+            OpenGL.glTexParameteri(this.anInt5093, 10241,
+                    !aBoolean5099 ? 9728 : 9984);
+            OpenGL.glTexParameteri(this.anInt5093, 10240, 9728);
         }
         if (bool != true)
             method232(null, (byte) 106, true, 70);

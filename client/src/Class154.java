@@ -47,25 +47,25 @@ final class Class154 {
                 for (int i_11_ = 0; i_11_ < 12; i_11_++)
                     is_10_[i_11_] = anIntArray2092[i_11_];
                 if (class17_0_.anInt249 >= 0) {
-                    if (class17_0_.anInt249 != 65535) {
+                    if (class17_0_.anInt249 == 65535) {
+                        is_10_[5] = 0;
+                        l ^= ~0xffffffffL;
+                    } else {
                         is_10_[5] = Class273.method2057((class17_0_
                                         .anInt249),
                                 1073741824);
                         l ^= (long) is_10_[5] << 1203402208;
-                    } else {
-                        is_10_[5] = 0;
-                        l ^= ~0xffffffffL;
                     }
                 }
                 if (class17_0_.anInt261 >= 0) {
-                    if (class17_0_.anInt261 != 65535) {
+                    if (class17_0_.anInt261 == 65535) {
+                        is_10_[3] = 0;
+                        l ^= 0xffffffffL;
+                    } else {
                         is_10_[3] = Class273.method2057((class17_0_
                                         .anInt261),
                                 1073741824);
                         l ^= is_10_[3];
-                    } else {
-                        is_10_[3] = 0;
-                        l ^= 0xffffffffL;
                     }
                 }
             }
@@ -264,7 +264,17 @@ final class Class154 {
                                     (this.aBoolean2100, -1))
                         bool_37_ = true;
                 }
-                if (!bool_37_) {
+                if (bool_37_) {
+                    if (aLong2094 != -1) {
+                        synchronized (Class24.aClass60_355) {
+                            class64 = (Class64) Class24.aClass60_355
+                                    .method583(aLong2094, -92);
+                        }
+                    }
+                    if (class64 == null
+                            || var_ha.method3667(class64.ua(), i_9_) != 0)
+                        return null;
+                } else {
                     Class124[] class124s = new Class124[12];
                     for (int i_40_ = 0; i_40_ < 12; i_40_++) {
                         int i_41_ = is_10_[i_40_];
@@ -357,16 +367,6 @@ final class Class154 {
                         }
                         aLong2094 = l;
                     }
-                } else {
-                    if (aLong2094 != -1) {
-                        synchronized (Class24.aClass60_355) {
-                            class64 = (Class64) Class24.aClass60_355
-                                    .method583(aLong2094, -92);
-                        }
-                    }
-                    if (class64 == null
-                            || var_ha.method3667(class64.ua(), i_9_) != 0)
-                        return null;
                 }
             }
             Class64 class64_51_ = class64.method614((byte) 4, i_9_, bool_2_);

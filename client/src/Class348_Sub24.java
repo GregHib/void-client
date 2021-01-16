@@ -398,7 +398,17 @@ final class Class348_Sub24 extends Class348 {
                                                 .anInt9385++,
                                         31)]
                                         = i_17_;
-                            } else if (i_16_ != 3) {
+                            } else if (i_16_ == 3) {
+                                Class46 class46
+                                        = Class324.method2570(1512932720, i_17_);
+                                if (!class348_sub42_sub15
+                                        .aString9654.equals
+                                                (class46.aString792)) {
+                                    class46.aString792
+                                            = class348_sub42_sub15.aString9654;
+                                    Class251.method1916(-9343, class46);
+                                }
+                            } else {
                                 if (i_16_ == 4) {
                                     Class46 class46
                                             = Class324.method2570(1512932720,
@@ -509,51 +519,66 @@ final class Class348_Sub24 extends Class348 {
                                         }
                                         Class251.method1916(-9343, class46);
                                     }
-                                } else if (i_16_ != 9) {
-                                    if (i_16_ != 10) {
-                                        if (i_16_ != 11) {
-                                            if (i_16_ != 12) {
-                                                if (i_16_ == 14) {
-                                                    Class46 class46
-                                                            = (Class324.method2570
-                                                            (1512932720,
-                                                                    i_17_));
-                                                    class46
-                                                            .anInt756
-                                                            = (class348_sub42_sub15
-                                                            .anInt9652);
-                                                } else if (i_16_ == 15) {
-                                                    Class97.anInt1548
-                                                            = (class348_sub42_sub15
-                                                            .anInt9651);
-                                                    Class248.anInt3203
-                                                            = (class348_sub42_sub15
-                                                            .anInt9652);
-                                                    Class348_Sub13.aBoolean6759
-                                                            = true;
-                                                } else if (i_16_ != 16) {
-                                                    if (i_16_ == 17) {
-                                                        Class46 class46
-                                                                = (Class324
-                                                                .method2570
-                                                                        (1512932720,
-                                                                                i_17_));
-                                                        class46
-                                                                .anInt806
-                                                                = (class348_sub42_sub15
-                                                                .anInt9652);
-                                                    }
-                                                } else {
-                                                    Class46 class46
-                                                            = (Class324.method2570
-                                                            (1512932720,
-                                                                    i_17_));
-                                                    class46
-                                                            .anInt702
-                                                            = (class348_sub42_sub15
-                                                            .anInt9652);
-                                                }
-                                            } else {
+                                } else if (i_16_ == 9) {
+                                    Class46 class46
+                                            = Class324.method2570(1512932720,
+                                            i_17_);
+                                    if ((class348_sub42_sub15.anInt9652
+                                            != class46.anInt812)
+                                            || (class348_sub42_sub15.anInt9651
+                                            != class46.anInt781)) {
+                                        class46.anInt781
+                                                = class348_sub42_sub15.anInt9651;
+                                        class46.anInt812
+                                                = class348_sub42_sub15.anInt9652;
+                                        Class251.method1916(-9343, class46);
+                                    }
+                                } else {
+                                    if (i_16_ == 10) {
+                                        Class46 class46
+                                                = Class324.method2570(1512932720,
+                                                i_17_);
+                                        if ((class46.anInt808
+                                                != (class348_sub42_sub15
+                                                .anInt9652))
+                                                || ((class46
+                                                .anInt786) != (class348_sub42_sub15
+                                                .anInt9651))
+                                                || ((class348_sub42_sub15
+                                                .anInt9650) != class46.anInt717)) {
+                                            class46.anInt786
+                                                    = (class348_sub42_sub15
+                                                    .anInt9651);
+                                            class46.anInt808
+                                                    = (class348_sub42_sub15
+                                                    .anInt9652);
+                                            class46.anInt717
+                                                    = (class348_sub42_sub15
+                                                    .anInt9650);
+                                            Class251.method1916(-9343,
+                                                    class46);
+                                        }
+                                    } else {
+                                        if (i_16_ == 11) {
+                                            Class46 class46
+                                                    = (Class324.method2570
+                                                    (1512932720, i_17_));
+                                            class46.aByte817
+                                                    = (byte) 0;
+                                            class46.anInt750
+                                                    = class46.anInt739
+                                                    = (class348_sub42_sub15
+                                                    .anInt9651);
+                                            class46.aByte681
+                                                    = (byte) 0;
+                                            class46.anInt800
+                                                    = class46.anInt788
+                                                    = (class348_sub42_sub15
+                                                    .anInt9652);
+                                            Class251.method1916(-9343,
+                                                    class46);
+                                        } else {
+                                            if (i_16_ == 12) {
                                                 Class46 class46
                                                         = (Class324.method2570
                                                         (1512932720, i_17_));
@@ -585,75 +610,50 @@ final class Class348_Sub24 extends Class348 {
                                                                 (-9343, class46);
                                                     }
                                                 }
+                                            } else {
+                                                if (i_16_ == 14) {
+                                                    Class46 class46
+                                                            = (Class324.method2570
+                                                            (1512932720,
+                                                                    i_17_));
+                                                    class46
+                                                            .anInt756
+                                                            = (class348_sub42_sub15
+                                                            .anInt9652);
+                                                } else if (i_16_ == 15) {
+                                                    Class97.anInt1548
+                                                            = (class348_sub42_sub15
+                                                            .anInt9651);
+                                                    Class248.anInt3203
+                                                            = (class348_sub42_sub15
+                                                            .anInt9652);
+                                                    Class348_Sub13.aBoolean6759
+                                                            = true;
+                                                } else if (i_16_ == 16) {
+                                                    Class46 class46
+                                                            = (Class324.method2570
+                                                            (1512932720,
+                                                                    i_17_));
+                                                    class46
+                                                            .anInt702
+                                                            = (class348_sub42_sub15
+                                                            .anInt9652);
+                                                } else {
+                                                    if (i_16_ == 17) {
+                                                        Class46 class46
+                                                                = (Class324
+                                                                .method2570
+                                                                        (1512932720,
+                                                                                i_17_));
+                                                        class46
+                                                                .anInt806
+                                                                = (class348_sub42_sub15
+                                                                .anInt9652);
+                                                    }
+                                                }
                                             }
-                                        } else {
-                                            Class46 class46
-                                                    = (Class324.method2570
-                                                    (1512932720, i_17_));
-                                            class46.aByte817
-                                                    = (byte) 0;
-                                            class46.anInt750
-                                                    = class46.anInt739
-                                                    = (class348_sub42_sub15
-                                                    .anInt9651);
-                                            class46.aByte681
-                                                    = (byte) 0;
-                                            class46.anInt800
-                                                    = class46.anInt788
-                                                    = (class348_sub42_sub15
-                                                    .anInt9652);
-                                            Class251.method1916(-9343,
-                                                    class46);
-                                        }
-                                    } else {
-                                        Class46 class46
-                                                = Class324.method2570(1512932720,
-                                                i_17_);
-                                        if ((class46.anInt808
-                                                != (class348_sub42_sub15
-                                                .anInt9652))
-                                                || ((class46
-                                                .anInt786) != (class348_sub42_sub15
-                                                .anInt9651))
-                                                || ((class348_sub42_sub15
-                                                .anInt9650) != class46.anInt717)) {
-                                            class46.anInt786
-                                                    = (class348_sub42_sub15
-                                                    .anInt9651);
-                                            class46.anInt808
-                                                    = (class348_sub42_sub15
-                                                    .anInt9652);
-                                            class46.anInt717
-                                                    = (class348_sub42_sub15
-                                                    .anInt9650);
-                                            Class251.method1916(-9343,
-                                                    class46);
                                         }
                                     }
-                                } else {
-                                    Class46 class46
-                                            = Class324.method2570(1512932720,
-                                            i_17_);
-                                    if ((class348_sub42_sub15.anInt9652
-                                            != class46.anInt812)
-                                            || (class348_sub42_sub15.anInt9651
-                                            != class46.anInt781)) {
-                                        class46.anInt781
-                                                = class348_sub42_sub15.anInt9651;
-                                        class46.anInt812
-                                                = class348_sub42_sub15.anInt9652;
-                                        Class251.method1916(-9343, class46);
-                                    }
-                                }
-                            } else {
-                                Class46 class46
-                                        = Class324.method2570(1512932720, i_17_);
-                                if (!class348_sub42_sub15
-                                        .aString9654.equals
-                                                (class46.aString792)) {
-                                    class46.aString792
-                                            = class348_sub42_sub15.aString9654;
-                                    Class251.method1916(-9343, class46);
                                 }
                             }
                         }

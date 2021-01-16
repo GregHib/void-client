@@ -353,7 +353,10 @@ abstract class ha_Sub3 extends ha {
                     (float) i_0_);
             int i_2_;
             int i_3_;
-            if (f < -0.0078125F || f > 0.0078125F) {
+            if (f >= -0.0078125F && f <= 0.0078125F) {
+                i_2_ = this.anInt8130;
+                i_3_ = this.anInt8094;
+            } else {
                 i_3_ = (int) ((float) this.anInt8129
                         * (this.aClass101_Sub2_8080.method929
                         ((float) i_1_, (float) i_0_, (byte) 45,
@@ -364,9 +367,6 @@ abstract class ha_Sub3 extends ha {
                         ((byte) 108, (float) i, (float) i_1_,
                                 (float) i_0_))
                         / f);
-            } else {
-                i_2_ = this.anInt8130;
-                i_3_ = this.anInt8094;
             }
             is[2] = (int) f;
             is[0] = (int) ((float) i_3_ - this.aFloat8126);
@@ -586,13 +586,11 @@ abstract class ha_Sub3 extends ha {
                 } else
                     method3879(-8629);
                 method3875(i_23_, bool_20_, bool, i_25_, i_24_, -103);
-                if (aClass367_8143 != null)
-                    aClass367_8143.method3527(i_22_, interface18_impl3,
-                            -16776);
-                else {
+                if (aClass367_8143 == null) {
                     method3850((byte) -86, interface18_impl3);
                     method3923(true, i_22_);
-                }
+                } else aClass367_8143.method3527(i_22_, interface18_impl3,
+                        -16776);
                 aBoolean8153 = this.aBoolean8160;
                 anInt8104 = i;
             }
@@ -639,7 +637,11 @@ abstract class ha_Sub3 extends ha {
                 bool = true;
                 class173 = Class348_Sub4.aClass173_6602;
                 bool_30_ = true;
-            } else if (i_29_ != 2) {
+            } else if (i_29_ == 2) {
+                class173 = Class69.aClass173_1201;
+                bool_30_ = true;
+                bool = false;
+            } else {
                 if (i_29_ == 128) {
                     bool = true;
                     class173 = Class273.aClass173_5169;
@@ -649,10 +651,6 @@ abstract class ha_Sub3 extends ha {
                     class173 = Class225.aClass173_2944;
                     bool = false;
                 }
-            } else {
-                class173 = Class69.aClass173_1201;
-                bool_30_ = true;
-                bool = false;
             }
             if (bool != this.aBoolean8141) {
                 this.aBoolean8141 = bool;
@@ -755,45 +753,7 @@ abstract class ha_Sub3 extends ha {
                                 interface10_42_.method42(-71),
                                 i_36_, i, i_38_, i_40_);
                 }
-            } else if (i_41_ != 1) {
-                if (i_41_ != 2) {
-                    if (i_41_ == 3) {
-                        Interface10 interface10
-                                = ((Interface10)
-                                Class348_Sub16_Sub3.method2878(i_40_, i_37_,
-                                        i));
-                        if (interface10 != null) {
-                            if (interface10 instanceof Class318_Sub1_Sub1_Sub1)
-                                ((Class318_Sub1_Sub1_Sub1)
-                                        interface10)
-                                        .aClass235_9955.method1671(262144, i_35_);
-                            else
-                                Class218.method1591(i_37_, 28, i_41_, i_35_,
-                                        interface10.method42(-123),
-                                        i_36_, i, i_38_, i_40_);
-                        }
-                    }
-                } else {
-                    Interface10 interface10
-                            = ((Interface10)
-                            (Class177.method1353
-                                    (i_40_, i_37_, i,
-                                            (aClass8211 != null ? aClass8211
-                                                    : (aClass8211 = method3951("Interface10"))))));
-                    if (interface10 != null) {
-                        if (i_36_ == 11)
-                            i_36_ = 10;
-                        if (!(interface10 instanceof Class318_Sub1_Sub3_Sub2))
-                            Class218.method1591(i_37_, 43, i_41_, i_35_,
-                                    interface10.method42(-107),
-                                    i_36_, i, i_38_, i_40_);
-                        else
-                            ((Class318_Sub1_Sub3_Sub2)
-                                    interface10)
-                                    .aClass235_10045.method1671(262144, i_35_);
-                    }
-                }
-            } else {
+            } else if (i_41_ == 1) {
                 Interface10 interface10
                         = ((Interface10)
                         Class348_Sub40_Sub32.method3135(i_40_, i_37_, i));
@@ -826,6 +786,44 @@ abstract class ha_Sub3 extends ha {
                         } else
                             Class218.method1591(i_37_, 86, i_41_, i_35_, i_43_,
                                     4, i, i_38_, i_40_);
+                    }
+                }
+            } else {
+                if (i_41_ == 2) {
+                    Interface10 interface10
+                            = ((Interface10)
+                            (Class177.method1353
+                                    (i_40_, i_37_, i,
+                                            (aClass8211 != null ? aClass8211
+                                                    : (aClass8211 = method3951("Interface10"))))));
+                    if (interface10 != null) {
+                        if (i_36_ == 11)
+                            i_36_ = 10;
+                        if (!(interface10 instanceof Class318_Sub1_Sub3_Sub2))
+                            Class218.method1591(i_37_, 43, i_41_, i_35_,
+                                    interface10.method42(-107),
+                                    i_36_, i, i_38_, i_40_);
+                        else
+                            ((Class318_Sub1_Sub3_Sub2)
+                                    interface10)
+                                    .aClass235_10045.method1671(262144, i_35_);
+                    }
+                } else {
+                    if (i_41_ == 3) {
+                        Interface10 interface10
+                                = ((Interface10)
+                                Class348_Sub16_Sub3.method2878(i_40_, i_37_,
+                                        i));
+                        if (interface10 != null) {
+                            if (interface10 instanceof Class318_Sub1_Sub1_Sub1)
+                                ((Class318_Sub1_Sub1_Sub1)
+                                        interface10)
+                                        .aClass235_9955.method1671(262144, i_35_);
+                            else
+                                Class218.method1591(i_37_, 28, i_41_, i_35_,
+                                        interface10.method42(-123),
+                                        i_36_, i, i_38_, i_40_);
+                        }
                     }
                 }
             }
@@ -881,10 +879,7 @@ abstract class ha_Sub3 extends ha {
             anInt7979++;
             float f = (this.aClass101_Sub2_8080.method933
                     ((byte) -105, (float) i, (float) i_45_, (float) i_44_));
-            if ((float) this.anInt8095 > f
-                    || (float) this.anInt8154 < f)
-                is[0] = is[1] = is[2] = -1;
-            else {
+            if ((float) this.anInt8095 <= f && (float) this.anInt8154 >= f) {
                 int i_47_
                         = (int) ((float) this.anInt8129
                         * (this.aClass101_Sub2_8080.method929
@@ -900,7 +895,7 @@ abstract class ha_Sub3 extends ha {
                 is[2] = (int) f;
                 is[1] = (int) (-this.aFloat8103 + (float) i_48_);
                 is[0] = (int) (-this.aFloat8126 + (float) i_47_);
-            }
+            } else is[0] = is[1] = is[2] = -1;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("wga.HA(" + i + ',' + i_44_ + ','
@@ -973,78 +968,78 @@ abstract class ha_Sub3 extends ha {
             Buffer buffer = anInterface5_Impl1_8193.method19(true, 26775);
             if (buffer != null) {
                 Stream stream = method3893(buffer, 9179);
-                if (!Stream.c()) {
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(1.0F);
-                    stream.b(0.0F);
-                    stream.b(1.0F);
-                    stream.b(1.0F);
-                    stream.b(1.0F);
-                    stream.b(0.0F);
-                    stream.b(1.0F);
-                    stream.b(1.0F);
-                    stream.b(1.0F);
-                    stream.b(1.0F);
-                    stream.b(1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(1.0F);
-                    stream.b(0.0F);
-                    stream.b(1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
+                if (Stream.c()) {
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(1.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(1.0F);
+                    stream.a(0.0F);
+                    stream.a(1.0F);
+                    stream.a(1.0F);
+                    stream.a(1.0F);
+                    stream.a(0.0F);
+                    stream.a(1.0F);
+                    stream.a(1.0F);
+                    stream.a(1.0F);
+                    stream.a(1.0F);
+                    stream.a(1.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(1.0F);
+                    stream.a(0.0F);
+                    stream.a(1.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
                 } else {
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(1.0F);
-                    stream.a(0.0F);
-                    stream.a(1.0F);
-                    stream.a(1.0F);
-                    stream.a(1.0F);
-                    stream.a(0.0F);
-                    stream.a(1.0F);
-                    stream.a(1.0F);
-                    stream.a(1.0F);
-                    stream.a(1.0F);
-                    stream.a(1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(1.0F);
-                    stream.a(0.0F);
-                    stream.a(1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(1.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(1.0F);
+                    stream.b(0.0F);
+                    stream.b(1.0F);
+                    stream.b(1.0F);
+                    stream.b(1.0F);
+                    stream.b(0.0F);
+                    stream.b(1.0F);
+                    stream.b(1.0F);
+                    stream.b(1.0F);
+                    stream.b(1.0F);
+                    stream.b(1.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(1.0F);
+                    stream.b(0.0F);
+                    stream.b(1.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
                 }
                 stream.a();
                 if (anInterface5_Impl1_8193.method18(6331))
@@ -2690,14 +2685,14 @@ abstract class ha_Sub3 extends ha {
                                 / 256.0);
                         float f = (float) Math.cos(d);
                         float f_227_ = (float) Math.sin(d);
-                        if (!Stream.c()) {
-                            stream.b(f_227_);
-                            stream.b(f);
-                            stream.b(0.0F);
-                        } else {
+                        if (Stream.c()) {
                             stream.a(f_227_);
                             stream.a(f);
                             stream.a(0.0F);
+                        } else {
+                            stream.b(f_227_);
+                            stream.b(f);
+                            stream.b(0.0F);
                         }
                     }
                     stream.a();
@@ -2793,25 +2788,7 @@ abstract class ha_Sub3 extends ha {
         if (i == 20794) {
             if (!aBoolean8127) {
                 float[] fs = aFloatArray8120;
-                if (this.anInt7931 != 0
-                        && this.anInt7962 != 0) {
-                    fs[9] = 0.0F;
-                    fs[12] = -1.0F;
-                    fs[2] = 0.0F;
-                    fs[0] = 2.0F / (float) this.anInt7931;
-                    fs[4] = 0.0F;
-                    fs[15] = 1.0F;
-                    fs[13] = 1.0F;
-                    fs[6] = 0.0F;
-                    fs[3] = 0.0F;
-                    fs[10] = 0.5F;
-                    fs[8] = 0.0F;
-                    fs[1] = 0.0F;
-                    fs[14] = 0.5F;
-                    fs[7] = 0.0F;
-                    fs[5] = -2.0F / (float) this.anInt7962;
-                    fs[11] = 0.0F;
-                } else {
+                if (this.anInt7931 == 0 || this.anInt7962 == 0) {
                     fs[3] = 0.0F;
                     fs[12] = 0.0F;
                     fs[6] = 0.0F;
@@ -2828,6 +2805,23 @@ abstract class ha_Sub3 extends ha {
                     fs[10] = 1.0F;
                     fs[4] = 0.0F;
                     fs[0] = 1.0F;
+                } else {
+                    fs[9] = 0.0F;
+                    fs[12] = -1.0F;
+                    fs[2] = 0.0F;
+                    fs[0] = 2.0F / (float) this.anInt7931;
+                    fs[4] = 0.0F;
+                    fs[15] = 1.0F;
+                    fs[13] = 1.0F;
+                    fs[6] = 0.0F;
+                    fs[3] = 0.0F;
+                    fs[10] = 0.5F;
+                    fs[8] = 0.0F;
+                    fs[1] = 0.0F;
+                    fs[14] = 0.5F;
+                    fs[7] = 0.0F;
+                    fs[5] = -2.0F / (float) this.anInt7962;
+                    fs[11] = 0.0F;
                 }
                 aBoolean8127 = true;
             }
@@ -2840,14 +2834,14 @@ abstract class ha_Sub3 extends ha {
             anObject8020 = null;
             anInt7936++;
             aCanvas7910 = null;
-            if (canvas != null && canvas != this.aCanvas7925) {
+            if (canvas == null || canvas == this.aCanvas7925) {
+                anObject8020 = this.anObject7919;
+                aCanvas7910 = this.aCanvas7925;
+            } else {
                 if (aHashtable8014.containsKey(canvas)) {
                     anObject8020 = aHashtable8014.get(canvas);
                     aCanvas7910 = canvas;
                 }
-            } else {
-                anObject8020 = this.anObject7919;
-                aCanvas7910 = this.aCanvas7925;
             }
             if (aCanvas7910 == null || anObject8020 == null)
                 throw new RuntimeException();
@@ -3194,7 +3188,10 @@ abstract class ha_Sub3 extends ha {
                     ((byte) -105, (float) i, (float) i_265_, (float) i_264_));
             int i_266_;
             int i_267_;
-            if (f < -0.0078125F || f > 0.0078125F) {
+            if (f >= -0.0078125F && f <= 0.0078125F) {
+                i_266_ = this.anInt8130;
+                i_267_ = this.anInt8094;
+            } else {
                 i_267_
                         = (int) ((float) this.anInt8129
                         * (this.aClass101_Sub2_8080.method929
@@ -3207,9 +3204,6 @@ abstract class ha_Sub3 extends ha {
                         ((byte) 64, (float) i, (float) i_265_,
                                 (float) i_264_))
                         / f);
-            } else {
-                i_266_ = this.anInt8130;
-                i_267_ = this.anInt8094;
             }
             is[1] = (int) ((float) i_266_ - this.aFloat8103);
             is[0] = (int) ((float) i_267_ - this.aFloat8126);
@@ -3591,24 +3585,7 @@ abstract class ha_Sub3 extends ha {
             float f_295_ = ((float) (-this.anInt8130
                     + this.anInt7962)
                     * aFloat8155 / (float) this.anInt8134);
-            if (f_294_ != f_293_ && f_292_ != f_295_) {
-                fs[0] = 2.0F / (f_294_ - f_293_);
-                fs[12] = (f_294_ + f_293_) / (f_293_ - f_294_);
-                fs[6] = 0.0F;
-                fs[3] = 0.0F;
-                fs[11] = 0.0F;
-                fs[8] = 0.0F;
-                fs[14] = f / (f - f_291_);
-                fs[1] = 0.0F;
-                fs[4] = 0.0F;
-                fs[2] = 0.0F;
-                fs[9] = 0.0F;
-                fs[13] = (f_292_ + f_295_) / (f_295_ - f_292_);
-                fs[10] = 1.0F / (-f_291_ + f);
-                fs[5] = 2.0F / (f_295_ - f_292_);
-                fs[7] = 0.0F;
-                fs[15] = 1.0F;
-            } else {
+            if (f_294_ == f_293_ || f_292_ == f_295_) {
                 fs[11] = 0.0F;
                 fs[8] = 0.0F;
                 fs[7] = 0.0F;
@@ -3625,6 +3602,23 @@ abstract class ha_Sub3 extends ha {
                 fs[2] = 0.0F;
                 fs[14] = 0.0F;
                 fs[3] = 0.0F;
+            } else {
+                fs[0] = 2.0F / (f_294_ - f_293_);
+                fs[12] = (f_294_ + f_293_) / (f_293_ - f_294_);
+                fs[6] = 0.0F;
+                fs[3] = 0.0F;
+                fs[11] = 0.0F;
+                fs[8] = 0.0F;
+                fs[14] = f / (f - f_291_);
+                fs[1] = 0.0F;
+                fs[4] = 0.0F;
+                fs[2] = 0.0F;
+                fs[9] = 0.0F;
+                fs[13] = (f_292_ + f_295_) / (f_295_ - f_292_);
+                fs[10] = 1.0F / (-f_291_ + f);
+                fs[5] = 2.0F / (f_295_ - f_292_);
+                fs[7] = 0.0F;
+                fs[15] = 1.0F;
             }
             method3908((byte) 29);
             aBoolean8112 = true;

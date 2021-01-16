@@ -27,13 +27,10 @@ final class Class192 {
         int i_0_;
         int i_1_;
         if (Class316.aClass348_Sub51_3959
-                .aClass239_Sub27_7261.method1840(-32350)
-                != 1)
-            i_0_ = i_1_ = Class167.anInt2204;
-        else {
-            i_0_ = 0;
-            i_1_ = 3;
-        }
+                .aClass239_Sub27_7261.method1840(-32350) == 1) {
+                    i_0_ = 0;
+                    i_1_ = 3;
+                } else i_0_ = i_1_ = Class167.anInt2204;
         client.method115();
         for (int i_2_ = i_0_; i_2_ <= i_1_; i_2_++) {
             client.method109();

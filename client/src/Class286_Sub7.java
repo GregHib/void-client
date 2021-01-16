@@ -79,16 +79,7 @@ final class Class286_Sub7 extends Class286 {
         if (i_4_ >= -42)
             aClass258_Sub4_6285 = null;
         if ((0x1 & i) == 1) {
-            if (!aClass83_6278.aBoolean1442) {
-                int i_5_
-                        = (16
-                        * (this.aHa_Sub2_3684.anInt7735
-                        % 4000)
-                        / 4000);
-                this.aHa_Sub2_3684.method3771
-                        ((byte) -95,
-                                aClass83_6278.aClass258_Sub3Array1444[i_5_]);
-            } else {
+            if (aClass83_6278.aBoolean1442) {
                 this.aHa_Sub2_3684.method3771
                         ((byte) -83,
                                 aClass83_6278.aClass258_Sub1_1440);
@@ -100,12 +91,17 @@ final class Class286_Sub7 extends Class286 {
                 Class160.aFloatArray2131[0] = 0.0F;
                 Class160.aFloatArray2131[1] = 0.0F;
                 OpenGL.glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0);
+            } else {
+                int i_5_
+                        = (16
+                        * (this.aHa_Sub2_3684.anInt7735
+                        % 4000)
+                        / 4000);
+                this.aHa_Sub2_3684.method3771
+                        ((byte) -95,
+                                aClass83_6278.aClass258_Sub3Array1444[i_5_]);
             }
-        } else if (!aClass83_6278.aBoolean1442)
-            this.aHa_Sub2_3684.method3771
-                    ((byte) -110,
-                            aClass83_6278.aClass258_Sub3Array1444[0]);
-        else {
+        } else if (aClass83_6278.aBoolean1442) {
             this.aHa_Sub2_3684.method3771((byte) -126,
                     (aClass83_6278
                             .aClass258_Sub1_1440));
@@ -114,7 +110,9 @@ final class Class286_Sub7 extends Class286 {
             Class160.aFloatArray2131[1] = 0.0F;
             Class160.aFloatArray2131[3] = 0.0F;
             OpenGL.glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0);
-        }
+        } else this.aHa_Sub2_3684.method3771
+                ((byte) -110,
+                        aClass83_6278.aClass258_Sub3Array1444[0]);
         anInt6291++;
     }
 

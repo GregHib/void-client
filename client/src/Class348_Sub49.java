@@ -852,10 +852,7 @@ class Class348_Sub49 extends Class348 {
                     || Class348_Sub42_Sub8.method3196(Class240.anInt4674, -110)
                     || Class340.method2672(Class240.anInt4674, -128));
             if (bool != bool_72_) {
-                if (!bool) {
-                    Class348_Sub31.method3007(2, 22684);
-                    Class348_Sub4.aClass248_6601.method1892(i ^ ~0x4b, true);
-                } else {
+                if (bool) {
                     Class267.anInt3428 = Class345.anInt4270;
                     if (Class316.aClass348_Sub51_3959
                             .aClass239_Sub26_7245.method1838(-32350)
@@ -870,6 +867,9 @@ class Class348_Sub49 extends Class348 {
                     } else
                         Class348_Sub31.method3007(2, 22684);
                     Class348_Sub4.aClass248_6601.method1892(-117, false);
+                } else {
+                    Class348_Sub31.method3007(2, 22684);
+                    Class348_Sub4.aClass248_6601.method1892(i ^ ~0x4b, true);
                 }
             }
             if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (byte) -64)

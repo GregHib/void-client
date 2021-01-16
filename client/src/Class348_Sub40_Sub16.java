@@ -19,12 +19,12 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
             anInt9226 = -83;
         int i_1_ = i;
         do {
-            if (i_1_ != 0) {
-                if (i_1_ != 1)
-                    break;
-            } else {
+            if (i_1_ == 0) {
                 anInt9226 = class348_sub49.method3387(255);
                 break;
+            } else {
+                if (i_1_ != 1)
+                    break;
             }
             this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
@@ -73,7 +73,29 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                                 while_159_:
                                                 do {
                                                     do {
-                                                        if (i_14_ != 1) {
+                                                        if (i_14_ == 1) {
+                                                            for (i_14_ = 0;
+                                                                 ((Class348_Sub40_Sub6
+                                                                         .anInt9139) > i_14_);
+                                                                 i_14_++) {
+                                                                is_5_[i_14_]
+                                                                        = ((is_11_
+                                                                        [i_14_])
+                                                                        + (is_8_
+                                                                        [i_14_]));
+                                                                is_6_[i_14_]
+                                                                        = ((is_9_
+                                                                        [i_14_])
+                                                                        + (is_12_
+                                                                        [i_14_]));
+                                                                is_7_[i_14_]
+                                                                        = ((is_10_
+                                                                        [i_14_])
+                                                                        + (is_13_
+                                                                        [i_14_]));
+                                                            }
+                                                            break while_168_;
+                                                        } else {
                                                             if (i_14_ != 2) {
                                                                 if (i_14_ != 3) {
                                                                     if (i_14_ != 4) {
@@ -107,28 +129,6 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                                                     break;
                                                                 break while_159_;
                                                             }
-                                                        } else {
-                                                            for (i_14_ = 0;
-                                                                 ((Class348_Sub40_Sub6
-                                                                         .anInt9139) > i_14_);
-                                                                 i_14_++) {
-                                                                is_5_[i_14_]
-                                                                        = ((is_11_
-                                                                        [i_14_])
-                                                                        + (is_8_
-                                                                        [i_14_]));
-                                                                is_6_[i_14_]
-                                                                        = ((is_9_
-                                                                        [i_14_])
-                                                                        + (is_12_
-                                                                        [i_14_]));
-                                                                is_7_[i_14_]
-                                                                        = ((is_10_
-                                                                        [i_14_])
-                                                                        + (is_13_
-                                                                        [i_14_]));
-                                                            }
-                                                            break while_168_;
                                                         }
                                                         for (i_14_ = 0;
                                                              ((Class348_Sub40_Sub6
@@ -421,7 +421,18 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                                 while_169_:
                                                 do {
                                                     do {
-                                                        if (i_54_ != 1) {
+                                                        if (i_54_ == 1) {
+                                                            for (i_54_ = 0;
+                                                                 ((Class348_Sub40_Sub6
+                                                                         .anInt9139) > i_54_);
+                                                                 i_54_++)
+                                                                is[i_54_]
+                                                                        = ((is_52_
+                                                                        [i_54_])
+                                                                        + (is_53_
+                                                                        [i_54_]));
+                                                            break while_178_;
+                                                        } else {
                                                             if (i_54_ != 2) {
                                                                 if (i_54_
                                                                         != 3) {
@@ -455,17 +466,6 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                                                     break;
                                                                 break while_169_;
                                                             }
-                                                        } else {
-                                                            for (i_54_ = 0;
-                                                                 ((Class348_Sub40_Sub6
-                                                                         .anInt9139) > i_54_);
-                                                                 i_54_++)
-                                                                is[i_54_]
-                                                                        = ((is_52_
-                                                                        [i_54_])
-                                                                        + (is_53_
-                                                                        [i_54_]));
-                                                            break while_178_;
                                                         }
                                                         for (i_54_ = 0;
                                                              ((Class348_Sub40_Sub6

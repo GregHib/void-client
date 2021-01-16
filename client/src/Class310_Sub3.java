@@ -58,7 +58,12 @@ final class Class310_Sub3 extends Class310 implements Interface18_Impl1 {
                 pixelbuffer.a(is, 0, 0, anInt6337 * (i_3_ * anInt6339));
             else {
                 int i_6_ = pixelbuffer.getRowPitch();
-                if (i_3_ != i_6_) {
+                if (i_3_ == i_6_) {
+                    for (int i_9_ = 0;
+                         anInt6337 > i_9_;
+                         i_9_++)
+                        pixelbuffer.a(is, i_4_ * i_9_, i_9_ * i_5_, i_4_);
+                } else {
                     for (int i_7_ = 0; i_7_ < anInt6337; i_7_++) {
                         for (int i_8_ = 0;
                              anInt6339 > i_8_;
@@ -66,11 +71,6 @@ final class Class310_Sub3 extends Class310 implements Interface18_Impl1 {
                             pixelbuffer.a(is, i_3_ * i_8_ + i_4_ * i_7_,
                                     i_8_ * i_6_ + i_7_ * i_5_, i_3_);
                     }
-                } else {
-                    for (int i_9_ = 0;
-                         anInt6337 > i_9_;
-                         i_9_++)
-                        pixelbuffer.a(is, i_4_ * i_9_, i_9_ * i_5_, i_4_);
                 }
             }
             anIDirect3DVolumeTexture6336.UnlockBox(0);

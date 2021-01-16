@@ -39,7 +39,12 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                         while_147_:
                         do {
                             do {
-                                if (i_1_ != 0) {
+                                if (i_1_ == 0) {
+                                    this.aBoolean9160
+                                            = class348_sub49
+                                            .method3387(i_0_ ^ 0x79d8) == 1;
+                                    break while_151_;
+                                } else {
                                     if (i_1_ != 1) {
                                         if (i_1_ != 2) {
                                             if (i_1_ != 3) {
@@ -57,11 +62,6 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                                             break;
                                         break while_147_;
                                     }
-                                } else {
-                                    this.aBoolean9160
-                                            = class348_sub49
-                                            .method3387(i_0_ ^ 0x79d8) == 1;
-                                    break while_151_;
                                 }
                                 this.anInt9150
                                         = class348_sub49.method3387(i_0_ ^ 0x79d8);
@@ -184,7 +184,46 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
         int i_9_ = (Class239_Sub18.anIntArray6035[i]
                 * this.anInt9164);
         if (i_8_ > 91) {
-            if (this.anInt9150 != 1) {
+            if (this.anInt9150 == 1) {
+                int i_39_ = aShortArray9162[0] << 2126450124;
+                int i_40_ = aShortArray9159[0];
+                int i_41_ = i_39_ * i_9_ >> 1963111500;
+                int i_42_ = (i_39_ * this.anInt9158
+                        >> -143668820);
+                int i_43_ = (this.anInt9164 * i_39_
+                        >> 16261868);
+                int i_44_ = i_41_ >> -1945608628;
+                int i_45_ = 1 + i_44_;
+                i_41_ &= 0xfff;
+                if (i_45_ >= i_43_)
+                    i_45_ = 0;
+                int i_46_ = aByteArray9152[0xff & i_45_] & 0xff;
+                int i_47_ = Class199.anIntArray2631[i_41_];
+                int i_48_ = aByteArray9152[0xff & i_44_] & 0xff;
+                if (this.aBoolean9160) {
+                    for (int i_52_ = 0;
+                         (Class348_Sub40_Sub6.anInt9139 > i_52_);
+                         i_52_++) {
+                        int i_53_ = (this.anInt9158
+                                * Class318_Sub6.anIntArray6432[i_52_]);
+                        int i_54_ = method3070(i_46_, i_41_, i_42_,
+                                i_53_ * i_39_ >> 455686348,
+                                i_47_, true, i_48_);
+                        i_54_ = i_40_ * i_54_ >> 992414860;
+                        is[i_52_] = (i_54_ >> -1740411071) + 2048;
+                    }
+                } else {
+                    for (int i_49_ = 0; i_49_ < Class348_Sub40_Sub6.anInt9139;
+                         i_49_++) {
+                        int i_50_ = (this.anInt9158
+                                * Class318_Sub6.anIntArray6432[i_49_]);
+                        int i_51_ = method3070(i_46_, i_41_, i_42_,
+                                i_39_ * i_50_ >> 1548502028,
+                                i_47_, true, i_48_);
+                        is[i_49_] = i_51_ * i_40_ >> 1386512844;
+                    }
+                }
+            } else {
                 int i_10_ = aShortArray9159[0];
                 if (i_10_ > 8 || i_10_ < -8) {
                     int i_11_ = aShortArray9162[0] << -677338356;
@@ -264,45 +303,6 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                                 is[i_36_] += i_10_ * i_38_ >> 1156124012;
                             }
                         }
-                    }
-                }
-            } else {
-                int i_39_ = aShortArray9162[0] << 2126450124;
-                int i_40_ = aShortArray9159[0];
-                int i_41_ = i_39_ * i_9_ >> 1963111500;
-                int i_42_ = (i_39_ * this.anInt9158
-                        >> -143668820);
-                int i_43_ = (this.anInt9164 * i_39_
-                        >> 16261868);
-                int i_44_ = i_41_ >> -1945608628;
-                int i_45_ = 1 + i_44_;
-                i_41_ &= 0xfff;
-                if (i_45_ >= i_43_)
-                    i_45_ = 0;
-                int i_46_ = aByteArray9152[0xff & i_45_] & 0xff;
-                int i_47_ = Class199.anIntArray2631[i_41_];
-                int i_48_ = aByteArray9152[0xff & i_44_] & 0xff;
-                if (!this.aBoolean9160) {
-                    for (int i_49_ = 0; i_49_ < Class348_Sub40_Sub6.anInt9139;
-                         i_49_++) {
-                        int i_50_ = (this.anInt9158
-                                * Class318_Sub6.anIntArray6432[i_49_]);
-                        int i_51_ = method3070(i_46_, i_41_, i_42_,
-                                i_39_ * i_50_ >> 1548502028,
-                                i_47_, true, i_48_);
-                        is[i_49_] = i_51_ * i_40_ >> 1386512844;
-                    }
-                } else {
-                    for (int i_52_ = 0;
-                         (Class348_Sub40_Sub6.anInt9139 > i_52_);
-                         i_52_++) {
-                        int i_53_ = (this.anInt9158
-                                * Class318_Sub6.anIntArray6432[i_52_]);
-                        int i_54_ = method3070(i_46_, i_41_, i_42_,
-                                i_53_ * i_39_ >> 455686348,
-                                i_47_, true, i_48_);
-                        i_54_ = i_40_ * i_54_ >> 992414860;
-                        is[i_52_] = (i_54_ >> -1740411071) + 2048;
                     }
                 }
             }

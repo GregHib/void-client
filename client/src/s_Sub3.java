@@ -1016,15 +1016,13 @@ final class s_Sub3 extends s {
                             && class348_sub3.anInt6569 == i_177_)
                         break;
                 }
-                if (class348 != null)
-                    class348_sub3s[i_178_] = (Class348_Sub3) class348;
-                else {
+                if (class348 == null) {
                     class348_sub3s[i_178_]
                             = new Class348_Sub3(this, i_179_, i_180_, i_175_,
                             i_176_, i_177_);
                     aClass356_8325.method3483((byte) 27, l,
                             class348_sub3s[i_178_]);
-                }
+                } else class348_sub3s[i_178_] = (Class348_Sub3) class348;
             }
             if (bool)
                 aByteArrayArray8317[i][i_167_]
@@ -1152,34 +1150,7 @@ final class s_Sub3 extends s {
                     Stream stream
                             = this.aHa_Sub3_8322.method3893(buffer,
                             9179);
-                    if (!Stream.c()) {
-                        for (int i_222_ = i_215_; i_217_ > i_222_; i_222_++) {
-                            int i_223_
-                                    = i_214_ + i_222_ * this.anInt4587;
-                            for (int i_224_ = i_214_; i_224_ < i_216_;
-                                 i_224_++) {
-                                if (bools[i_224_ - i_214_][-i_215_ + i_222_]) {
-                                    short[] is
-                                            = (this.aShortArrayArray8299
-                                            [i_223_]);
-                                    if (is != null) {
-                                        for (int i_225_ = 0;
-                                             (i_225_ < is.length);
-                                             i_225_++) {
-                                            int i_226_ = 0xffff & is[i_225_];
-                                            stream.a(i_226_);
-                                            if (i_220_ < i_226_)
-                                                i_220_ = i_226_;
-                                            i_218_++;
-                                            if (i_219_ > i_226_)
-                                                i_219_ = i_226_;
-                                        }
-                                    }
-                                }
-                                i_223_++;
-                            }
-                        }
-                    } else {
+                    if (Stream.c()) {
                         for (int i_227_ = i_215_;
                              i_217_ > i_227_;
                              i_227_++) {
@@ -1205,6 +1176,33 @@ final class s_Sub3 extends s {
                                     }
                                 }
                                 i_228_++;
+                            }
+                        }
+                    } else {
+                        for (int i_222_ = i_215_; i_217_ > i_222_; i_222_++) {
+                            int i_223_
+                                    = i_214_ + i_222_ * this.anInt4587;
+                            for (int i_224_ = i_214_; i_224_ < i_216_;
+                                 i_224_++) {
+                                if (bools[i_224_ - i_214_][-i_215_ + i_222_]) {
+                                    short[] is
+                                            = (this.aShortArrayArray8299
+                                            [i_223_]);
+                                    if (is != null) {
+                                        for (int i_225_ = 0;
+                                             (i_225_ < is.length);
+                                             i_225_++) {
+                                            int i_226_ = 0xffff & is[i_225_];
+                                            stream.a(i_226_);
+                                            if (i_220_ < i_226_)
+                                                i_220_ = i_226_;
+                                            i_218_++;
+                                            if (i_219_ > i_226_)
+                                                i_219_ = i_226_;
+                                        }
+                                    }
+                                }
+                                i_223_++;
                             }
                         }
                     }

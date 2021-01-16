@@ -88,15 +88,12 @@ final class Class325 {
         i_4_ = 0;
         for (int i_15_ = 0; i_2_ > i_15_; i_15_++) {
             for (int i_16_ = 0; i_1_ > i_16_; i_16_++) {
-                if (i_4_ < 0
-                        || is_3_.length <= i_4_)
-                    i_4_++;
-                else {
+                if (i_4_ >= 0 && is_3_.length > i_4_) {
                     if (i_16_ >= i_15_ << -1416731487)
                         is_3_[i_4_] = (byte) -1;
                     i_4_++;
-                }
-            }
+                } else i_4_++;
+			}
         }
         is[1][1] = is_3_;
         is_3_ = new byte[i_2_ * i_1_];

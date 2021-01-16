@@ -247,7 +247,10 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4
                 .method2005(0, aShort10081 & 0xffff);
         s var_s;
         s var_s_16_;
-        if (!aBoolean10066) {
+        if (aBoolean10066) {
+            var_s = Class348_Sub1_Sub1.aSArray8801[0];
+            var_s_16_ = Class332.aSArray4142[this.aByte6376];
+        } else {
             var_s_16_ = (Class348_Sub1_Sub1.aSArray8801
                     [this.aByte6376]);
             if (this.aByte6376 < 3)
@@ -255,9 +258,6 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4
                         [1 + this.aByte6376]);
             else
                 var_s = null;
-        } else {
-            var_s = Class348_Sub1_Sub1.aSArray8801[0];
-            var_s_16_ = Class332.aSArray4142[this.aByte6376];
         }
         return class51.method476(var_ha, var_s, aByte10079, i,
                 this.anInt6377, bool,

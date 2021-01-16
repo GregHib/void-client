@@ -77,15 +77,15 @@ abstract class Class55 {
                 .anOggStreamState6869.packetOut(anOggPacket993)
                 != 1) {
             Class348_Sub23 class348_sub23 = method521(1);
-            if (class348_sub23 != null) {
-                if (class348_sub23 == aClass348_Sub23_Sub4_999)
-                    method504(1999);
-            } else {
+            if (class348_sub23 == null) {
                 if (aBoolean991)
                     method511(-2);
                 return;
+            } else {
+                if (class348_sub23 == aClass348_Sub23_Sub4_999)
+                    method504(1999);
             }
-        }
+		}
         aClass348_Sub23_Sub2_1001.method2963(anOggPacket993, 16384);
         if (i < 58)
             anOggPage981 = null;

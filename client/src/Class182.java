@@ -21,7 +21,10 @@ final class Class182 {
         Class239_Sub12.anInt5969 = 1;
         anInt2452++;
         long l = 0L;
-        if (Class348_Sub23_Sub3.aString9043 != null) {
+        if (Class348_Sub23_Sub3.aString9043 == null) {
+            Class14_Sub4.method254(35, (byte) -101);
+            return;
+        } else {
             Class348_Sub49 class348_sub49
                     = new Class348_Sub49(Class98.method878((Class110_Sub1
                             .method1039
@@ -31,9 +34,6 @@ final class Class182 {
                     -125));
             l = class348_sub49.method3365(-456577760);
             Class348_Sub33.aLong6966 = class348_sub49.method3365(-456577760);
-        } else {
-            Class14_Sub4.method254(35, (byte) -101);
-            return;
         }
         Class132.method1138(Class27.method313(l, -100), true, "", (byte) -115);
     }

@@ -91,14 +91,14 @@ final class Class111 {
         Class46 class46_14_ = Class237.method1687(class46, 3);
         int i_15_;
         int i_16_;
-        if (class46_14_ != null) {
-            i_15_ = class46_14_.anInt789;
-            i_16_ = class46_14_.anInt709;
-        } else {
+        if (class46_14_ == null) {
             i_15_ = Class348_Sub42_Sub8_Sub2.anInt10432;
             i_16_ = Class321.anInt4017;
+        } else {
+            i_15_ = class46_14_.anInt789;
+            i_16_ = class46_14_.anInt709;
         }
-        Class239_Sub28.method1843(i_16_, -326, class46, false, i_15_);
+		Class239_Sub28.method1843(i_16_, -326, class46, false, i_15_);
         Class14_Sub1.method239((byte) -114, i_16_, i_15_, class46);
     }
 
@@ -129,11 +129,7 @@ final class Class111 {
                     }
                 } else
                     bool = false;
-                if (!bool) {
-                    aBooleanArray1725 = new boolean[0];
-                    anIntArrayArray1724 = new int[0][];
-                    anInt1715 = -1;
-                } else {
+                if (bool) {
                     int i_21_ = class348_sub49.method3387(255);
                     int i_22_ = class348_sub49.method3387(255);
                     if (i_17_ > 2)
@@ -173,8 +169,12 @@ final class Class111 {
                                 anIntArrayArray1724[i_28_] = new int[0];
                         }
                     }
+                } else {
+                    aBooleanArray1725 = new boolean[0];
+                    anIntArrayArray1724 = new int[0][];
+                    anInt1715 = -1;
                 }
-            }
+			}
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("mt.<init>("

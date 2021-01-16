@@ -111,7 +111,15 @@ class Class5_Sub1 extends Class5 {
                         while_0_:
                         do {
                             do {
-                                if (i_26_ != -4) {
+                                if (i_26_ == -4) {
+                                    if (i_16_ == i
+                                            && (i_17_ == i_7_)) {
+                                        Class348_Sub40_Sub30.anInt9388 = i_16_;
+                                        Class115.anInt1753 = i_17_;
+                                        return true;
+                                    }
+                                    break while_3_;
+                                } else {
                                     if (i_26_ != -3) {
                                         if (i_26_ != -2) {
                                             if (i_26_ != -1) {
@@ -127,14 +135,6 @@ class Class5_Sub1 extends Class5 {
                                             break;
                                         break while_0_;
                                     }
-                                } else {
-                                    if (i_16_ == i
-                                            && (i_17_ == i_7_)) {
-                                        Class348_Sub40_Sub30.anInt9388 = i_16_;
-                                        Class115.anInt1753 = i_17_;
-                                        return true;
-                                    }
-                                    break while_3_;
                                 }
                                 if (Class239_Sub28.method1842(i_11_, i_7_, -1,
                                         1, i_16_, i_17_,

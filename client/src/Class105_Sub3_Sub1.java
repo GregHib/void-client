@@ -98,8 +98,22 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     + ((i_27_ & 0xff00)
                                                     * i_26_))
                                                     & 0xff0000)) >> 8;
-                                        } else if (Class105_Sub3.anInt8477
-                                                != 255) {
+                                        } else if (Class105_Sub3.anInt8477 == 255) {
+                                            int i_32_
+                                                    = (((i_24_ & 0xff0000)
+                                                    * Class105_Sub3.anInt8469)
+                                                    & ~0xffffff);
+                                            int i_33_
+                                                    = (((i_24_ & 0xff00)
+                                                    * Class105_Sub3.anInt8463)
+                                                    & 0xff0000);
+                                            int i_34_
+                                                    = (((i_24_ & 0xff)
+                                                    * Class105_Sub3.anInt8465)
+                                                    & 0xff00);
+                                            is_8_[i_7_] = (i_32_ | i_33_
+                                                    | i_34_) >>> 8;
+                                        } else {
                                             int i_28_
                                                     = (((i_24_ & 0xff0000)
                                                     * Class105_Sub3.anInt8469)
@@ -130,21 +144,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     * (Class105_Sub3
                                                     .anInt8472)))
                                                     & 0xff0000)) >> 8;
-                                        } else {
-                                            int i_32_
-                                                    = (((i_24_ & 0xff0000)
-                                                    * Class105_Sub3.anInt8469)
-                                                    & ~0xffffff);
-                                            int i_33_
-                                                    = (((i_24_ & 0xff00)
-                                                    * Class105_Sub3.anInt8463)
-                                                    & 0xff0000);
-                                            int i_34_
-                                                    = (((i_24_ & 0xff)
-                                                    * Class105_Sub3.anInt8465)
-                                                    & 0xff00);
-                                            is_8_[i_7_] = (i_32_ | i_33_
-                                                    | i_34_) >>> 8;
                                         }
                                     }
                                 } else if (i_9_ == 3) {
@@ -393,8 +392,22 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     + ((i_92_ & 0xff00)
                                                     * i_91_))
                                                     & 0xff0000)) >> 8;
-                                        } else if (Class105_Sub3.anInt8477
-                                                != 255) {
+                                        } else if (Class105_Sub3.anInt8477 == 255) {
+                                            int i_97_
+                                                    = (((i_89_ & 0xff0000)
+                                                    * Class105_Sub3.anInt8469)
+                                                    & ~0xffffff);
+                                            int i_98_
+                                                    = (((i_89_ & 0xff00)
+                                                    * Class105_Sub3.anInt8463)
+                                                    & 0xff0000);
+                                            int i_99_
+                                                    = (((i_89_ & 0xff)
+                                                    * Class105_Sub3.anInt8465)
+                                                    & 0xff00);
+                                            is_73_[i_72_] = (i_97_ | i_98_
+                                                    | i_99_) >>> 8;
+                                        } else {
                                             int i_93_
                                                     = (((i_89_ & 0xff0000)
                                                     * Class105_Sub3.anInt8469)
@@ -425,21 +438,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     * (Class105_Sub3
                                                     .anInt8472)))
                                                     & 0xff0000)) >> 8;
-                                        } else {
-                                            int i_97_
-                                                    = (((i_89_ & 0xff0000)
-                                                    * Class105_Sub3.anInt8469)
-                                                    & ~0xffffff);
-                                            int i_98_
-                                                    = (((i_89_ & 0xff00)
-                                                    * Class105_Sub3.anInt8463)
-                                                    & 0xff0000);
-                                            int i_99_
-                                                    = (((i_89_ & 0xff)
-                                                    * Class105_Sub3.anInt8465)
-                                                    & 0xff00);
-                                            is_73_[i_72_] = (i_97_ | i_98_
-                                                    | i_99_) >>> 8;
                                         }
                                     }
                                 } else if (i_74_ == 3) {
@@ -704,8 +702,22 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     + ((i_158_ & 0xff00)
                                                     * i_157_))
                                                     & 0xff0000)) >> 8;
-                                        } else if (Class105_Sub3.anInt8477
-                                                != 255) {
+                                        } else if (Class105_Sub3.anInt8477 == 255) {
+                                            int i_163_
+                                                    = (((i_155_ & 0xff0000)
+                                                    * Class105_Sub3.anInt8469)
+                                                    & ~0xffffff);
+                                            int i_164_
+                                                    = (((i_155_ & 0xff00)
+                                                    * Class105_Sub3.anInt8463)
+                                                    & 0xff0000);
+                                            int i_165_
+                                                    = (((i_155_ & 0xff)
+                                                    * Class105_Sub3.anInt8465)
+                                                    & 0xff00);
+                                            is_139_[i_138_] = (i_163_ | i_164_
+                                                    | i_165_) >>> 8;
+                                        } else {
                                             int i_159_
                                                     = (((i_155_ & 0xff0000)
                                                     * Class105_Sub3.anInt8469)
@@ -736,21 +748,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     * (Class105_Sub3
                                                     .anInt8472)))
                                                     & 0xff0000)) >> 8;
-                                        } else {
-                                            int i_163_
-                                                    = (((i_155_ & 0xff0000)
-                                                    * Class105_Sub3.anInt8469)
-                                                    & ~0xffffff);
-                                            int i_164_
-                                                    = (((i_155_ & 0xff00)
-                                                    * Class105_Sub3.anInt8463)
-                                                    & 0xff0000);
-                                            int i_165_
-                                                    = (((i_155_ & 0xff)
-                                                    * Class105_Sub3.anInt8465)
-                                                    & 0xff00);
-                                            is_139_[i_138_] = (i_163_ | i_164_
-                                                    | i_165_) >>> 8;
                                         }
                                     }
                                 } else if (i_140_ == 3) {
@@ -1016,8 +1013,22 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     + ((i_223_ & 0xff00)
                                                     * i_222_))
                                                     & 0xff0000)) >> 8;
-                                        } else if (Class105_Sub3.anInt8477
-                                                != 255) {
+                                        } else if (Class105_Sub3.anInt8477 == 255) {
+                                            int i_228_
+                                                    = (((i_220_ & 0xff0000)
+                                                    * Class105_Sub3.anInt8469)
+                                                    & ~0xffffff);
+                                            int i_229_
+                                                    = (((i_220_ & 0xff00)
+                                                    * Class105_Sub3.anInt8463)
+                                                    & 0xff0000);
+                                            int i_230_
+                                                    = (((i_220_ & 0xff)
+                                                    * Class105_Sub3.anInt8465)
+                                                    & 0xff00);
+                                            is_204_[i_203_] = (i_228_ | i_229_
+                                                    | i_230_) >>> 8;
+                                        } else {
                                             int i_224_
                                                     = (((i_220_ & 0xff0000)
                                                     * Class105_Sub3.anInt8469)
@@ -1048,21 +1059,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     * (Class105_Sub3
                                                     .anInt8472)))
                                                     & 0xff0000)) >> 8;
-                                        } else {
-                                            int i_228_
-                                                    = (((i_220_ & 0xff0000)
-                                                    * Class105_Sub3.anInt8469)
-                                                    & ~0xffffff);
-                                            int i_229_
-                                                    = (((i_220_ & 0xff00)
-                                                    * Class105_Sub3.anInt8463)
-                                                    & 0xff0000);
-                                            int i_230_
-                                                    = (((i_220_ & 0xff)
-                                                    * Class105_Sub3.anInt8465)
-                                                    & 0xff00);
-                                            is_204_[i_203_] = (i_228_ | i_229_
-                                                    | i_230_) >>> 8;
                                         }
                                     }
                                 } else if (i_205_ == 3) {
@@ -1331,8 +1327,22 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 + ((i_288_ & 0xff00)
                                                 * i_287_))
                                                 & 0xff0000)) >> 8;
-                                    } else if (Class105_Sub3.anInt8477
-                                            != 255) {
+                                    } else if (Class105_Sub3.anInt8477 == 255) {
+                                        int i_293_
+                                                = (((i_285_ & 0xff0000)
+                                                * Class105_Sub3.anInt8469)
+                                                & ~0xffffff);
+                                        int i_294_
+                                                = (((i_285_ & 0xff00)
+                                                * Class105_Sub3.anInt8463)
+                                                & 0xff0000);
+                                        int i_295_
+                                                = (((i_285_ & 0xff)
+                                                * Class105_Sub3.anInt8465)
+                                                & 0xff00);
+                                        is_269_[i_268_]
+                                                = (i_293_ | i_294_ | i_295_) >>> 8;
+                                    } else {
                                         int i_289_
                                                 = (((i_285_ & 0xff0000)
                                                 * Class105_Sub3.anInt8469)
@@ -1360,21 +1370,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 * (Class105_Sub3
                                                 .anInt8472)))
                                                 & 0xff0000)) >> 8;
-                                    } else {
-                                        int i_293_
-                                                = (((i_285_ & 0xff0000)
-                                                * Class105_Sub3.anInt8469)
-                                                & ~0xffffff);
-                                        int i_294_
-                                                = (((i_285_ & 0xff00)
-                                                * Class105_Sub3.anInt8463)
-                                                & 0xff0000);
-                                        int i_295_
-                                                = (((i_285_ & 0xff)
-                                                * Class105_Sub3.anInt8465)
-                                                & 0xff00);
-                                        is_269_[i_268_]
-                                                = (i_293_ | i_294_ | i_295_) >>> 8;
                                     }
                                 }
                             } else if (i_270_ == 3) {
@@ -1628,8 +1623,22 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 + ((i_353_ & 0xff00)
                                                 * i_352_))
                                                 & 0xff0000)) >> 8;
-                                    } else if (Class105_Sub3.anInt8477
-                                            != 255) {
+                                    } else if (Class105_Sub3.anInt8477 == 255) {
+                                        int i_358_
+                                                = (((i_350_ & 0xff0000)
+                                                * Class105_Sub3.anInt8469)
+                                                & ~0xffffff);
+                                        int i_359_
+                                                = (((i_350_ & 0xff00)
+                                                * Class105_Sub3.anInt8463)
+                                                & 0xff0000);
+                                        int i_360_
+                                                = (((i_350_ & 0xff)
+                                                * Class105_Sub3.anInt8465)
+                                                & 0xff00);
+                                        is_334_[i_333_]
+                                                = (i_358_ | i_359_ | i_360_) >>> 8;
+                                    } else {
                                         int i_354_
                                                 = (((i_350_ & 0xff0000)
                                                 * Class105_Sub3.anInt8469)
@@ -1657,21 +1666,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 * (Class105_Sub3
                                                 .anInt8472)))
                                                 & 0xff0000)) >> 8;
-                                    } else {
-                                        int i_358_
-                                                = (((i_350_ & 0xff0000)
-                                                * Class105_Sub3.anInt8469)
-                                                & ~0xffffff);
-                                        int i_359_
-                                                = (((i_350_ & 0xff00)
-                                                * Class105_Sub3.anInt8463)
-                                                & 0xff0000);
-                                        int i_360_
-                                                = (((i_350_ & 0xff)
-                                                * Class105_Sub3.anInt8465)
-                                                & 0xff00);
-                                        is_334_[i_333_]
-                                                = (i_358_ | i_359_ | i_360_) >>> 8;
                                     }
                                 }
                             } else if (i_335_ == 3) {
@@ -1911,8 +1905,22 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 + ((i_419_ & 0xff00)
                                                 * i_418_))
                                                 & 0xff0000)) >> 8;
-                                    } else if (Class105_Sub3.anInt8477
-                                            != 255) {
+                                    } else if (Class105_Sub3.anInt8477 == 255) {
+                                        int i_424_
+                                                = (((i_416_ & 0xff0000)
+                                                * Class105_Sub3.anInt8469)
+                                                & ~0xffffff);
+                                        int i_425_
+                                                = (((i_416_ & 0xff00)
+                                                * Class105_Sub3.anInt8463)
+                                                & 0xff0000);
+                                        int i_426_
+                                                = (((i_416_ & 0xff)
+                                                * Class105_Sub3.anInt8465)
+                                                & 0xff00);
+                                        is_400_[i_399_]
+                                                = (i_424_ | i_425_ | i_426_) >>> 8;
+                                    } else {
                                         int i_420_
                                                 = (((i_416_ & 0xff0000)
                                                 * Class105_Sub3.anInt8469)
@@ -1940,21 +1948,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 * (Class105_Sub3
                                                 .anInt8472)))
                                                 & 0xff0000)) >> 8;
-                                    } else {
-                                        int i_424_
-                                                = (((i_416_ & 0xff0000)
-                                                * Class105_Sub3.anInt8469)
-                                                & ~0xffffff);
-                                        int i_425_
-                                                = (((i_416_ & 0xff00)
-                                                * Class105_Sub3.anInt8463)
-                                                & 0xff0000);
-                                        int i_426_
-                                                = (((i_416_ & 0xff)
-                                                * Class105_Sub3.anInt8465)
-                                                & 0xff00);
-                                        is_400_[i_399_]
-                                                = (i_424_ | i_425_ | i_426_) >>> 8;
                                     }
                                 }
                             } else if (i_401_ == 3) {
@@ -2200,7 +2193,19 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             + (((i_482_ & 0xff00) * i_483_
                                             + (i_485_ & 0xff00) * i_484_)
                                             & 0xff0000)) >> 8;
-                                } else if (Class105_Sub3.anInt8477 != 255) {
+                                } else if (Class105_Sub3.anInt8477 == 255) {
+                                    int i_490_ = (((i_482_ & 0xff0000)
+                                            * Class105_Sub3.anInt8469)
+                                            & ~0xffffff);
+                                    int i_491_ = (((i_482_ & 0xff00)
+                                            * Class105_Sub3.anInt8463)
+                                            & 0xff0000);
+                                    int i_492_ = (((i_482_ & 0xff)
+                                            * Class105_Sub3.anInt8465)
+                                            & 0xff00);
+                                    is_466_[i_465_]
+                                            = (i_490_ | i_491_ | i_492_) >>> 8;
+                                } else {
                                     int i_486_ = (((i_482_ & 0xff0000)
                                             * Class105_Sub3.anInt8469)
                                             & ~0xffffff);
@@ -2223,18 +2228,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             + ((i_489_ & 0xff00)
                                             * Class105_Sub3.anInt8472))
                                             & 0xff0000)) >> 8;
-                                } else {
-                                    int i_490_ = (((i_482_ & 0xff0000)
-                                            * Class105_Sub3.anInt8469)
-                                            & ~0xffffff);
-                                    int i_491_ = (((i_482_ & 0xff00)
-                                            * Class105_Sub3.anInt8463)
-                                            & 0xff0000);
-                                    int i_492_ = (((i_482_ & 0xff)
-                                            * Class105_Sub3.anInt8465)
-                                            & 0xff00);
-                                    is_466_[i_465_]
-                                            = (i_490_ | i_491_ | i_492_) >>> 8;
                                 }
                             }
                         } else if (i_467_ == 3) {
@@ -2475,7 +2468,19 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             + (((i_548_ & 0xff00) * i_549_
                                             + (i_551_ & 0xff00) * i_550_)
                                             & 0xff0000)) >> 8;
-                                } else if (Class105_Sub3.anInt8477 != 255) {
+                                } else if (Class105_Sub3.anInt8477 == 255) {
+                                    int i_556_ = (((i_548_ & 0xff0000)
+                                            * Class105_Sub3.anInt8469)
+                                            & ~0xffffff);
+                                    int i_557_ = (((i_548_ & 0xff00)
+                                            * Class105_Sub3.anInt8463)
+                                            & 0xff0000);
+                                    int i_558_ = (((i_548_ & 0xff)
+                                            * Class105_Sub3.anInt8465)
+                                            & 0xff00);
+                                    is_532_[i_531_]
+                                            = (i_556_ | i_557_ | i_558_) >>> 8;
+                                } else {
                                     int i_552_ = (((i_548_ & 0xff0000)
                                             * Class105_Sub3.anInt8469)
                                             & ~0xffffff);
@@ -2498,18 +2503,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             + ((i_555_ & 0xff00)
                                             * Class105_Sub3.anInt8472))
                                             & 0xff0000)) >> 8;
-                                } else {
-                                    int i_556_ = (((i_548_ & 0xff0000)
-                                            * Class105_Sub3.anInt8469)
-                                            & ~0xffffff);
-                                    int i_557_ = (((i_548_ & 0xff00)
-                                            * Class105_Sub3.anInt8463)
-                                            & 0xff0000);
-                                    int i_558_ = (((i_548_ & 0xff)
-                                            * Class105_Sub3.anInt8465)
-                                            & 0xff00);
-                                    is_532_[i_531_]
-                                            = (i_556_ | i_557_ | i_558_) >>> 8;
                                 }
                             }
                         } else if (i_533_ == 3) {
@@ -2900,7 +2893,18 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         .anIntArray9933
                                         [(i_605_ >> 16) + i_670_]);
                                 if (i_672_ != 0) {
-                                    if (i_667_ != 255) {
+                                    if (i_667_ == 255) {
+                                        int i_677_
+                                                = ((i_672_ & 0xff0000) * i_664_
+                                                & ~0xffffff);
+                                        int i_678_
+                                                = ((i_672_ & 0xff00) * i_665_
+                                                & 0xff0000);
+                                        int i_679_ = ((i_672_ & 0xff) * i_666_
+                                                & 0xff00);
+                                        is[i_614_++]
+                                                = (i_677_ | i_678_ | i_679_) >>> 8;
+                                    } else {
                                         int i_673_
                                                 = ((i_672_ & 0xff0000) * i_664_
                                                 & ~0xffffff);
@@ -2921,17 +2925,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 + ((i_676_ & 0xff00)
                                                 * i_668_))
                                                 & 0xff0000)) >> 8;
-                                    } else {
-                                        int i_677_
-                                                = ((i_672_ & 0xff0000) * i_664_
-                                                & ~0xffffff);
-                                        int i_678_
-                                                = ((i_672_ & 0xff00) * i_665_
-                                                & 0xff0000);
-                                        int i_679_ = ((i_672_ & 0xff) * i_666_
-                                                & 0xff00);
-                                        is[i_614_++]
-                                                = (i_677_ | i_678_ | i_679_) >>> 8;
                                     }
                                 } else
                                     i_614_++;
@@ -4115,7 +4108,18 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 int i_938_ = (this
                                         .anIntArray9933[i_889_++]);
                                 if (i_938_ != 0) {
-                                    if (i_934_ != 255) {
+                                    if (i_934_ == 255) {
+                                        int i_943_
+                                                = ((i_938_ & 0xff0000) * i_931_
+                                                & ~0xffffff);
+                                        int i_944_
+                                                = ((i_938_ & 0xff00) * i_932_
+                                                & 0xff0000);
+                                        int i_945_ = ((i_938_ & 0xff) * i_933_
+                                                & 0xff00);
+                                        is[i_888_++]
+                                                = (i_943_ | i_944_ | i_945_) >>> 8;
+                                    } else {
                                         int i_939_
                                                 = ((i_938_ & 0xff0000) * i_931_
                                                 & ~0xffffff);
@@ -4136,17 +4140,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 + ((i_942_ & 0xff00)
                                                 * i_935_))
                                                 & 0xff0000)) >> 8;
-                                    } else {
-                                        int i_943_
-                                                = ((i_938_ & 0xff0000) * i_931_
-                                                & ~0xffffff);
-                                        int i_944_
-                                                = ((i_938_ & 0xff00) * i_932_
-                                                & 0xff0000);
-                                        int i_945_ = ((i_938_ & 0xff) * i_933_
-                                                & 0xff00);
-                                        is[i_888_++]
-                                                = (i_943_ | i_944_ | i_945_) >>> 8;
                                     }
                                 } else
                                     i_888_++;
@@ -4609,7 +4602,21 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             .anIntArray9933
                                             [(i_1003_ >> 16) + i_1067_]);
                                     if (i_1069_ != 0) {
-                                        if (i_1064_ != 255) {
+                                        if (i_1064_ == 255) {
+                                            int i_1074_
+                                                    = (((i_1069_ & 0xff0000)
+                                                    * i_1061_)
+                                                    & ~0xffffff);
+                                            int i_1075_
+                                                    = ((i_1069_ & 0xff00) * i_1062_
+                                                    & 0xff0000);
+                                            int i_1076_
+                                                    = ((i_1069_ & 0xff) * i_1063_
+                                                    & 0xff00);
+                                            is[i_1011_] = (i_1074_ | i_1075_
+                                                    | i_1076_) >>> 8;
+                                            fs[i_1011_] = (float) i_996_;
+                                        } else {
                                             int i_1070_
                                                     = (((i_1069_ & 0xff0000)
                                                     * i_1061_)
@@ -4634,20 +4641,6 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                     + ((i_1073_ & 0xff00)
                                                     * i_1065_))
                                                     & 0xff0000)) >> 8;
-                                            fs[i_1011_] = (float) i_996_;
-                                        } else {
-                                            int i_1074_
-                                                    = (((i_1069_ & 0xff0000)
-                                                    * i_1061_)
-                                                    & ~0xffffff);
-                                            int i_1075_
-                                                    = ((i_1069_ & 0xff00) * i_1062_
-                                                    & 0xff0000);
-                                            int i_1076_
-                                                    = ((i_1069_ & 0xff) * i_1063_
-                                                    & 0xff00);
-                                            is[i_1011_] = (i_1074_ | i_1075_
-                                                    | i_1076_) >>> 8;
                                             fs[i_1011_] = (float) i_996_;
                                         }
                                     }

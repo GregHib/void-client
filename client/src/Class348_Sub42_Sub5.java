@@ -164,14 +164,14 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
             int i_25_;
             int i_26_;
             int i_27_;
-            if (!bool_22_) {
-                i_25_ = 0;
-                i_26_ = 1;
-                i_27_ = i;
-            } else {
+            if (bool_22_) {
                 i_25_ = i - 1;
                 i_26_ = -1;
                 i_27_ = -1;
+            } else {
+                i_25_ = 0;
+                i_26_ = 1;
+                i_27_ = i;
             }
             int i_28_ = 0;
             for (int i_29_ = 0; i_23_ > i_29_; i_29_++) {
@@ -257,17 +257,17 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 int[] is;
                 int[] is_46_;
                 int[] is_47_;
-                if (!aClass348_Sub40_9521.aBoolean7045) {
+                if (aClass348_Sub40_9521.aBoolean7045) {
+                    int[] is_49_ = aClass348_Sub40_9521.method3042(i_45_, 255);
+                    is = is_49_;
+                    is_46_ = is_49_;
+                    is_47_ = is_49_;
+                } else {
                     int[][] is_48_
                             = aClass348_Sub40_9521.method3047(i_45_, -1564599039);
                     is_46_ = is_48_[1];
                     is_47_ = is_48_[0];
                     is = is_48_[2];
-                } else {
-                    int[] is_49_ = aClass348_Sub40_9521.method3042(i_45_, 255);
-                    is = is_49_;
-                    is_46_ = is_49_;
-                    is_47_ = is_49_;
                 }
                 int[] is_50_;
                 if (aClass348_Sub40_9527.aBoolean7045)

@@ -96,14 +96,14 @@ abstract class Class258 implements Interface9 {
         if (bool != true)
             this.anInt4849 = -74;
         this.aHa_Sub2_4851.method3771((byte) -87, this);
-        if (!aBoolean4856) {
-            OpenGL.glTexParameteri(this.anInt4849, 10241,
-                    aBoolean4860 ? 9984 : 9728);
-            OpenGL.glTexParameteri(this.anInt4849, 10240, 9728);
-        } else {
+        if (aBoolean4856) {
             OpenGL.glTexParameteri(this.anInt4849, 10241,
                     aBoolean4860 ? 9987 : 9729);
             OpenGL.glTexParameteri(this.anInt4849, 10240, 9729);
+        } else {
+            OpenGL.glTexParameteri(this.anInt4849, 10241,
+                    aBoolean4860 ? 9984 : 9728);
+            OpenGL.glTexParameteri(this.anInt4849, 10240, 9728);
         }
     }
 

@@ -168,17 +168,15 @@ final class Class314_Sub1 extends Class314 {
                              aClass356_6360.method3482(0))) {
                     if (!class348_sub42_sub16
                             .aBoolean9664) {
-                        if (!class348_sub42_sub16
-                                .aBoolean9667)
-                            class348_sub42_sub16
-                                    .aBoolean9667
-                                    = true;
-                        else {
-                            if (!class348_sub42_sub16
-                                    .aBoolean9663)
-                                throw new RuntimeException();
-                            class348_sub42_sub16.method2715((byte) 116);
-                        }
+                        if (class348_sub42_sub16
+                                .aBoolean9667) {
+                                    if (!class348_sub42_sub16
+                                            .aBoolean9663)
+                                        throw new RuntimeException();
+                                    class348_sub42_sub16.method2715((byte) 116);
+                                } else class348_sub42_sub16
+                                        .aBoolean9667
+                                        = true;
                     }
                 }
                 aLong6374 = Class62.method599(-82) - -1000L;

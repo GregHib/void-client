@@ -22,7 +22,19 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
         int[] is = this.aClass191_7032.method1433(0, i);
         if (this.aClass191_7032.aBoolean2570) {
             int i_1_ = Class239_Sub18.anIntArray6035[i];
-            if (anInt9325 != 0) {
+            if (anInt9325 == 0) {
+                int i_7_ = 0;
+                for (int i_8_ = 0; i_8_ < anInt9329; i_8_++) {
+                    if (i_1_ >= anIntArray9332[i_8_]
+                            && (i_1_ < anIntArray9332[i_8_ + 1])) {
+                        if (anIntArray9333[i_8_] > i_1_)
+                            i_7_ = 4096;
+                        break;
+                    }
+                }
+                Class214.method1579(is, 0, Class348_Sub40_Sub6.anInt9139,
+                        i_7_);
+            } else {
                 for (int i_2_ = 0; i_2_ < Class348_Sub40_Sub6.anInt9139;
                      i_2_++) {
                     int i_3_ = 0;
@@ -32,15 +44,15 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
                     while_197_:
                     do {
                         do {
-                            if (i_6_ != 1) {
+                            if (i_6_ == 1) {
+                                i_3_ = i_5_;
+                                break while_197_;
+                            } else {
                                 if (i_6_ != 2) {
                                     if (i_6_ == 3)
                                         break;
                                     break while_197_;
                                 }
-                            } else {
-                                i_3_ = i_5_;
-                                break while_197_;
                             }
                             i_3_ = ((i_5_ + (-4096 - -i_1_) >> -1099071423)
                                     + 2048);
@@ -60,18 +72,6 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
                     }
                     is[i_2_] = i_4_;
                 }
-            } else {
-                int i_7_ = 0;
-                for (int i_8_ = 0; i_8_ < anInt9329; i_8_++) {
-                    if (i_1_ >= anIntArray9332[i_8_]
-                            && (i_1_ < anIntArray9332[i_8_ + 1])) {
-                        if (anIntArray9333[i_8_] > i_1_)
-                            i_7_ = 4096;
-                        break;
-                    }
-                }
-                Class214.method1579(is, 0, Class348_Sub40_Sub6.anInt9139,
-                        i_7_);
             }
         }
         return is;
@@ -90,15 +90,15 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
         while_198_:
         do {
             do {
-                if (i_10_ != 0) {
+                if (i_10_ == 0) {
+                    anInt9329 = class348_sub49.method3387(255);
+                    break while_198_;
+                } else {
                     if (i_10_ != 1) {
                         if (i_10_ == 2)
                             break;
                         break while_198_;
                     }
-                } else {
-                    anInt9329 = class348_sub49.method3387(255);
-                    break while_198_;
                 }
                 anInt9334 = class348_sub49.method3330(842397944);
                 break while_198_;

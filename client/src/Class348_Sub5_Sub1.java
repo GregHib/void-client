@@ -49,7 +49,31 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             OpenGL.glPushMatrix();
             OpenGL.glLoadIdentity();
             OpenGL.glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0);
-            if (aClass258_Sub3Array8837 != null) {
+            if (aClass258_Sub3Array8837 == null) {
+                this.aHa_Sub2_6618
+                        .method3771((byte) -90, class258_sub3_2_);
+                this.aHa_Sub2_6618
+                        .method3773(-1, aClass206_8825);
+                aClass206_8825.method1503(0, (byte) 3);
+                OpenGL.glViewport(0, 0, 256, 256);
+                long l = aClass337_8842.aLong4178;
+                OpenGL.glUseProgramObjectARB(l);
+                OpenGL.glUniform1iARB
+                        (OpenGL.glGetUniformLocationARB(l, "sceneTex"), 0);
+                OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l,
+                        "params"),
+                        Class75_Sub1.aFloat5654, 0.0F, 0.0F);
+                OpenGL.glBegin(7);
+                OpenGL.glTexCoord2f(0.0F, 0.0F);
+                OpenGL.glVertex2i(0, 0);
+                OpenGL.glTexCoord2f((float) anInt8841, 0.0F);
+                OpenGL.glVertex2i(1, 0);
+                OpenGL.glTexCoord2f((float) anInt8841, (float) anInt8833);
+                OpenGL.glVertex2i(1, 1);
+                OpenGL.glTexCoord2f(0.0F, (float) anInt8833);
+                OpenGL.glVertex2i(0, 1);
+                OpenGL.glEnd();
+            } else {
                 this.aHa_Sub2_6618
                         .method3773(-1, aClass206_8844);
                 int i_4_ = Class348_Sub40_Sub1.method3051(anInt8841, 4096);
@@ -117,30 +141,6 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                 OpenGL.glTexCoord2f(1.0F, 1.0F);
                 OpenGL.glVertex2i(1, 1);
                 OpenGL.glTexCoord2f(0.0F, 1.0F);
-                OpenGL.glVertex2i(0, 1);
-                OpenGL.glEnd();
-            } else {
-                this.aHa_Sub2_6618
-                        .method3771((byte) -90, class258_sub3_2_);
-                this.aHa_Sub2_6618
-                        .method3773(-1, aClass206_8825);
-                aClass206_8825.method1503(0, (byte) 3);
-                OpenGL.glViewport(0, 0, 256, 256);
-                long l = aClass337_8842.aLong4178;
-                OpenGL.glUseProgramObjectARB(l);
-                OpenGL.glUniform1iARB
-                        (OpenGL.glGetUniformLocationARB(l, "sceneTex"), 0);
-                OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l,
-                        "params"),
-                        Class75_Sub1.aFloat5654, 0.0F, 0.0F);
-                OpenGL.glBegin(7);
-                OpenGL.glTexCoord2f(0.0F, 0.0F);
-                OpenGL.glVertex2i(0, 0);
-                OpenGL.glTexCoord2f((float) anInt8841, 0.0F);
-                OpenGL.glVertex2i(1, 0);
-                OpenGL.glTexCoord2f((float) anInt8841, (float) anInt8833);
-                OpenGL.glVertex2i(1, 1);
-                OpenGL.glTexCoord2f(0.0F, (float) anInt8833);
                 OpenGL.glVertex2i(0, 1);
                 OpenGL.glEnd();
             }

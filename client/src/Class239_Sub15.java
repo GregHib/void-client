@@ -19,8 +19,26 @@ final class Class239_Sub15 extends Class239 {
         if (i_0_ != 10144)
             return null;
         anInt6004++;
-        if (i != 0) {
-            if (i != 1) {
+        if (i == 0) {
+            if ((double) Class75.aFloat1247 == 3.0)
+                return Class125.aClass323_4921;
+            if ((double) Class75.aFloat1247 == 4.0)
+                return Class14_Sub4.aClass323_8644;
+            if ((double) Class75.aFloat1247 == 6.0)
+                return Class39.aClass323_521;
+            if ((double) Class75.aFloat1247 >= 8.0)
+                return Class168.aClass323_2252;
+        } else {
+            if (i == 1) {
+                if ((double) Class75.aFloat1247 == 3.0)
+                    return Class39.aClass323_521;
+                if ((double) Class75.aFloat1247 == 4.0)
+                    return Class168.aClass323_2252;
+                if ((double) Class75.aFloat1247 == 6.0)
+                    return Class176.aClass323_2333;
+                if ((double) Class75.aFloat1247 >= 8.0)
+                    return Class285.aClass323_4754;
+            } else {
                 if (i == 2) {
                     if ((double) Class75.aFloat1247 == 3.0)
                         return Class176.aClass323_2333;
@@ -31,25 +49,7 @@ final class Class239_Sub15 extends Class239 {
                     if ((double) Class75.aFloat1247 >= 8.0)
                         return Class240.aClass323_4672;
                 }
-            } else {
-                if ((double) Class75.aFloat1247 == 3.0)
-                    return Class39.aClass323_521;
-                if ((double) Class75.aFloat1247 == 4.0)
-                    return Class168.aClass323_2252;
-                if ((double) Class75.aFloat1247 == 6.0)
-                    return Class176.aClass323_2333;
-                if ((double) Class75.aFloat1247 >= 8.0)
-                    return Class285.aClass323_4754;
             }
-        } else {
-            if ((double) Class75.aFloat1247 == 3.0)
-                return Class125.aClass323_4921;
-            if ((double) Class75.aFloat1247 == 4.0)
-                return Class14_Sub4.aClass323_8644;
-            if ((double) Class75.aFloat1247 == 6.0)
-                return Class39.aClass323_521;
-            if ((double) Class75.aFloat1247 >= 8.0)
-                return Class168.aClass323_2252;
         }
         return null;
     }
@@ -88,15 +88,15 @@ final class Class239_Sub15 extends Class239 {
         anInt5998++;
         int i_7_ = -i_3_ + i_4_;
         int i_8_ = i_5_ + -i;
-        if ((~i_8_) != i_2_) {
+        if ((~i_8_) == i_2_) {
+            if (i_7_ != 0)
+                Class332.method2641(i_4_, i_3_, -117, i, i_6_);
+            return;
+        } else {
             if (i_7_ == 0) {
                 Class12.method223(i_5_, i_6_, i_3_, i, (byte) 47);
                 return;
             }
-        } else {
-            if (i_7_ != 0)
-                Class332.method2641(i_4_, i_3_, -117, i, i_6_);
-            return;
         }
         if (i_7_ < 0)
             i_7_ = -i_7_;
@@ -126,19 +126,19 @@ final class Class239_Sub15 extends Class239 {
         if (i_15_ < 0)
             i_15_ = -i_15_;
         int i_17_ = i_4_ <= i_3_ ? -1 : 1;
-        if (!bool) {
-            for (int i_18_ = i; i_18_ <= i_5_; i_18_++) {
+        if (bool) {
+            for (int i_19_ = i; i_5_ >= i_19_; i_19_++) {
+                Class17.anIntArrayArray255[i_19_][i_13_] = i_6_;
                 i_16_ += i_15_;
-                Class17.anIntArrayArray255[i_13_][i_18_] = i_6_;
                 if (i_16_ > 0) {
                     i_13_ += i_17_;
                     i_16_ -= i_14_;
                 }
             }
         } else {
-            for (int i_19_ = i; i_5_ >= i_19_; i_19_++) {
-                Class17.anIntArrayArray255[i_19_][i_13_] = i_6_;
+            for (int i_18_ = i; i_18_ <= i_5_; i_18_++) {
                 i_16_ += i_15_;
+                Class17.anIntArrayArray255[i_13_][i_18_] = i_6_;
                 if (i_16_ > 0) {
                     i_13_ += i_17_;
                     i_16_ -= i_14_;

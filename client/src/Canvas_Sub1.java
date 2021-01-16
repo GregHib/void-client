@@ -244,9 +244,7 @@ final class Canvas_Sub1 extends Canvas {
             } else
                 r_Sub2.aClass252_10488 = new Class252(0);
         }
-        if (!bool)
-            Class36.anInt489 = 1;
-        else {
+        if (bool) {
             bool = true;
             Class154.anInt2101 = 0;
             for (int i_20_ = 0; i_20_ < Class347.aByteArrayArray4281.length;
@@ -284,9 +282,7 @@ final class Canvas_Sub1 extends Canvas {
                             i_24_, is, (byte) 39);
                 }
             }
-            if (!bool)
-                Class36.anInt489 = 2;
-            else {
+            if (bool) {
                 if (Class36.anInt489 != 0)
                     Class362.method3511(true, Applet_Sub1.aClass324_20,
                             Class246.aClass143_3179,
@@ -559,8 +555,8 @@ final class Canvas_Sub1 extends Canvas {
                             i + 52);
                     Class258_Sub4.aBoolean8558 = false;
                 }
-            }
-        }
+            } else Class36.anInt489 = 2;
+        } else Class36.anInt489 = 1;
     }
 
     Canvas_Sub1(Component component) {

@@ -45,7 +45,11 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                 while_190_:
                                 do {
                                     do {
-                                        if (i_1_ != 0) {
+                                        if (i_1_ == 0) {
+                                            anInt9318 = class348_sub49
+                                                    .method3387(255);
+                                            return;
+                                        } else {
                                             if (i_1_ != 1) {
                                                 if (i_1_ != 2) {
                                                     if (i_1_ != 3) {
@@ -71,10 +75,6 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                                     break;
                                                 break while_190_;
                                             }
-                                        } else {
-                                            anInt9318 = class348_sub49
-                                                    .method3387(255);
-                                            return;
                                         }
                                         anInt9317 = class348_sub49
                                                 .method3330(842397944);
@@ -386,12 +386,12 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                 int i_75_;
                                 int i_76_;
                                 if (i_67_ >= i_65_) {
-                                    if (i_73_ != 0) {
-                                        i_75_ = Math.max(i_67_, i_73_);
-                                        i_76_ = Class348_Sub40_Sub6.anInt9139;
-                                    } else {
+                                    if (i_73_ == 0) {
                                         i_75_ = 0;
                                         i_76_ = Math.min(i_65_, i_74_);
+                                    } else {
+                                        i_75_ = Math.max(i_67_, i_73_);
+                                        i_76_ = Class348_Sub40_Sub6.anInt9139;
                                     }
                                 } else {
                                     i_75_ = Math.max(i_67_, i_73_);
@@ -409,15 +409,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                     bool = false;
                 else
                     i_59_ = -i_61_ + Class286_Sub2.anInt6212;
-                if (i_60_ != Class348_Sub40_Sub6.anInt9139) {
-                    int[] is_77_ = is_56_[i_50_++];
-                    is_77_[1] = i_60_;
-                    is_77_[0] = i_46_;
-                    is_77_[2] = i_59_ + i_61_;
-                    method3112(112, i_59_, is_42_, random, i_46_ + i_44_,
-                            i_61_, i_58_);
-                    i_46_ = i_60_;
-                } else {
+                if (i_60_ == Class348_Sub40_Sub6.anInt9139) {
                     method3112(-59, i_59_, is_42_, random, i_46_ + i_44_,
                             i_61_, i_58_);
                     if (bool)
@@ -452,6 +444,14 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                         if (i_49_ <= ++i_47_)
                             i_47_ = 0;
                     }
+                } else {
+                    int[] is_77_ = is_56_[i_50_++];
+                    is_77_[1] = i_60_;
+                    is_77_[0] = i_46_;
+                    is_77_[2] = i_59_ + i_61_;
+                    method3112(112, i_59_, is_42_, random, i_46_ + i_44_,
+                            i_61_, i_58_);
+                    i_46_ = i_60_;
                 }
             }
         }

@@ -62,16 +62,14 @@ final class Class367_Sub4 extends Class367 {
                         int i_9_;
                         int i_10_;
                         int i_11_;
-                        if (!(f_8_ > 0.0F))
-                            i_9_ = i_10_ = i_11_ = 0;
-                        else {
+                        if (f_8_ > 0.0F) {
                             i_9_ = (int) ((double) i
                                     * Math.pow(f_8_, 96.0));
                             i_10_ = (int) ((double) i
                                     * Math.pow(f_8_, 36.0));
                             i_11_ = (int) (Math.pow(f_8_, 12.0)
                                     * (double) i);
-                        }
+                        } else i_9_ = i_10_ = i_11_ = 0;
                         is_0_[i_7_][i_2_] = i_9_ << 1864042872;
                         is_1_[i_7_][i_2_] = i_10_ << -808975368;
                         is[i_7_][i_2_] = i_11_ << 571661400;

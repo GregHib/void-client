@@ -135,16 +135,16 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
                 while_201_:
                 do {
                     do {
-                        if (i_24_ != 0) {
+                        if (i_24_ == 0) {
+                            anInt9344
+                                    = class348_sub49.method3330(i_23_ + 842366929);
+                            break while_201_;
+                        } else {
                             if (i_24_ != 1) {
                                 if (i_24_ == 2)
                                     break;
                                 break while_201_;
                             }
-                        } else {
-                            anInt9344
-                                    = class348_sub49.method3330(i_23_ + 842366929);
-                            break while_201_;
                         }
                         anInt9354 = class348_sub49.method3330(842397944);
                         break while_201_;

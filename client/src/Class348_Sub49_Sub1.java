@@ -320,20 +320,7 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
     }
 
     static final void method3402(byte i) {
-        if (Class297.aString3782.toLowerCase().indexOf("microsoft") != -1) {
-            Class285_Sub2.anIntArray8507[222] = 59;
-            Class285_Sub2.anIntArray8507[187] = 27;
-            Class285_Sub2.anIntArray8507[186] = 57;
-            Class285_Sub2.anIntArray8507[221] = 43;
-            Class285_Sub2.anIntArray8507[219] = 42;
-            Class285_Sub2.anIntArray8507[191] = 73;
-            Class285_Sub2.anIntArray8507[190] = 72;
-            Class285_Sub2.anIntArray8507[220] = 74;
-            Class285_Sub2.anIntArray8507[188] = 71;
-            Class285_Sub2.anIntArray8507[189] = 26;
-            Class285_Sub2.anIntArray8507[192] = 58;
-            Class285_Sub2.anIntArray8507[223] = 28;
-        } else {
+        if (Class297.aString3782.toLowerCase().indexOf("microsoft") == -1) {
             Class285_Sub2.anIntArray8507[46] = 72;
             Class285_Sub2.anIntArray8507[92] = 74;
             Class285_Sub2.anIntArray8507[44] = 71;
@@ -351,6 +338,19 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
             Class285_Sub2.anIntArray8507[47] = 73;
             Class285_Sub2.anIntArray8507[59] = 57;
             Class285_Sub2.anIntArray8507[93] = 43;
+        } else {
+            Class285_Sub2.anIntArray8507[222] = 59;
+            Class285_Sub2.anIntArray8507[187] = 27;
+            Class285_Sub2.anIntArray8507[186] = 57;
+            Class285_Sub2.anIntArray8507[221] = 43;
+            Class285_Sub2.anIntArray8507[219] = 42;
+            Class285_Sub2.anIntArray8507[191] = 73;
+            Class285_Sub2.anIntArray8507[190] = 72;
+            Class285_Sub2.anIntArray8507[220] = 74;
+            Class285_Sub2.anIntArray8507[188] = 71;
+            Class285_Sub2.anIntArray8507[189] = 26;
+            Class285_Sub2.anIntArray8507[192] = 58;
+            Class285_Sub2.anIntArray8507[223] = 28;
         }
         anInt9742++;
         if (i > -20)

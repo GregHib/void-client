@@ -127,16 +127,16 @@ final class Class235 {
             if (aClass17_3057.anIntArray237 == null)
                 aClass17_3057 = null;
             else {
-                if (!bool) {
-                    anInt3084 = 0;
-                    anInt3054 = 1;
-                } else {
+                if (bool) {
                     anInt3084 = (int) ((double) (aClass17_3057
                             .anIntArray237).length
                             * Math.random());
                     anInt3054 = 1 + (int) ((double) (aClass17_3057
                             .anIntArray267[anInt3084])
                             * Math.random());
+                } else {
+                    anInt3084 = 0;
+                    anInt3054 = 1;
                 }
                 anInt3083 = anInt3084 - -1;
                 if (anInt3083 < 0
@@ -239,7 +239,13 @@ final class Class235 {
                                         ? 4 + this.anInt3052
                                         : this.anInt3052),
                                 128));
-                if (class2 != null) {
+                if (class2 == null) {
+                    anInt3055 = 0;
+                    aBooleanArray3072 = null;
+                    aR3071 = null;
+                    anInt3060 = 0;
+                    aClass64_3059 = null;
+                } else {
                     aClass64_3059 = class64 = class2.aClass64_119;
                     if (bool_3_) {
                         aBooleanArray3072 = null;
@@ -254,12 +260,6 @@ final class Class235 {
                     }
                     anInt3060 = class64.fa();
                     anInt3055 = class64.ma();
-                } else {
-                    anInt3055 = 0;
-                    aBooleanArray3072 = null;
-                    aR3071 = null;
-                    anInt3060 = 0;
-                    aClass64_3059 = null;
                 }
             } else
                 class64 = aClass64_3059;

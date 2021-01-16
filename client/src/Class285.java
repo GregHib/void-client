@@ -195,13 +195,11 @@ abstract class Class285 implements Interface5 {
         if (i != -36)
             anInt4736 = -3;
         if (anInt4746 < 0) {
-            if (!this.aClass377_4759.aBoolean9920)
-                anInt4746 = 0;
-            else {
+            if (this.aClass377_4759.aBoolean9920) {
                 OpenGL.glGenBuffersARB(1, Class260.anIntArray3311, 0);
                 anInt4746 = Class260.anIntArray3311[0];
                 OpenGL.glBindBufferARB(anInt4755, anInt4746);
-            }
+            } else anInt4746 = 0;
         }
     }
 

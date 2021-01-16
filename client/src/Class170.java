@@ -440,13 +440,7 @@ final class Class170 implements Interface17 {
                         int i_62_ = -1;
                         int i_63_ = Class299.aClass348_Sub49_Sub2_3813
                                 .method3382(-126);
-                        if (i_63_ != 32767) {
-                            if (i_63_ != 32766)
-                                i_61_ = Class299.aClass348_Sub49_Sub2_3813
-                                        .method3382(-123);
-                            else
-                                i_63_ = -1;
-                        } else {
+                        if (i_63_ == 32767) {
                             i_63_ = Class299.aClass348_Sub49_Sub2_3813
                                     .method3382(-118);
                             i_61_ = Class299.aClass348_Sub49_Sub2_3813
@@ -455,6 +449,12 @@ final class Class170 implements Interface17 {
                                     .method3382(-122);
                             i_62_ = Class299.aClass348_Sub49_Sub2_3813
                                     .method3382(-123);
+                        } else {
+                            if (i_63_ != 32766)
+                                i_61_ = Class299.aClass348_Sub49_Sub2_3813
+                                        .method3382(-123);
+                            else
+                                i_63_ = -1;
                         }
                         int i_64_ = Class299.aClass348_Sub49_Sub2_3813
                                 .method3382(-122);

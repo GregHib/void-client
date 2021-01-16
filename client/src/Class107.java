@@ -118,7 +118,12 @@ final class Class107 {
                     int i_4_;
                     int i_5_;
                     int i_6_;
-                    if (Class348_Sub40_Sub21.anInt9282 != 4) {
+                    if (Class348_Sub40_Sub21.anInt9282 == 4) {
+                        i_3_ = Class348_Sub7.anInt6652;
+                        i_4_ = Class348_Sub6.anInt6633;
+                        i_5_ = 4096;
+                        i_6_ = 0x3fff & (int) -Class314.aFloat3938;
+                    } else {
                         i_5_ = 4096 - 16 * Class348_Sub49_Sub1.anInt9750;
                         i_3_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 .anInt6388);
@@ -126,13 +131,8 @@ final class Class107 {
                                 & 0x3fff);
                         i_4_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 .anInt6377);
-                    } else {
-                        i_3_ = Class348_Sub7.anInt6652;
-                        i_4_ = Class348_Sub6.anInt6633;
-                        i_5_ = 4096;
-                        i_6_ = 0x3fff & (int) -Class314.aFloat3938;
                     }
-                    int i_7_ = 48 - (-(i_4_ / 128)
+					int i_7_ = 48 - (-(i_4_ / 128)
                             - -(Class367_Sub4.anInt7319 * 2)) - -208;
                     int i_8_
                             = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48)
@@ -535,17 +535,17 @@ final class Class107 {
         Class248.anInt3202 = is[0];
         Class27.anInt394 = is[3];
         Class239_Sub5.anInt5886 = is[1];
-        if (!bool_42_) {
+        if (bool_42_) {
+            Class21.aHa326.DA(Class94.anInt1537, Class318_Sub5.anInt6417,
+                    Class193.anInt2590, Class129.anInt1879);
+            r.method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120);
+        } else {
             Class21.aHa326.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799,
                     Class286_Sub5.anInt6255,
                     OutputStream_Sub1.anInt95);
             r.method3284(true, Class14_Sub2.aDouble8621);
-        } else {
-            Class21.aHa326.DA(Class94.anInt1537, Class318_Sub5.anInt6417,
-                    Class193.anInt2590, Class129.anInt1879);
-            r.method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120);
         }
-        if (bool != false)
+		if (bool != false)
             method1010(true, true);
     }
 

@@ -236,14 +236,12 @@ final class Class51 {
                 || i_15_ == 2 && i > 3);
         if (bool)
             i_17_ |= 0x10;
-        if (i != 0)
-            i_17_ |= 0xd;
-        else {
+        if (i == 0) {
             if (anInt928 != 128 || anInt900 != 0)
                 i_17_ |= 0x1;
             if (anInt882 != 128 || anInt946 != 0)
                 i_17_ |= 0x4;
-        }
+        } else i_17_ |= 0xd;
         if (anInt935 != 128 || anInt873 != 0)
             i_17_ |= 0x2;
         if (i_16_ > -97)
@@ -459,7 +457,25 @@ final class Class51 {
     private final void method482(Class348_Sub49 class348_sub49, int i,
                                  byte i_38_) {
         anInt960++;
-        if (i != 1 && i != 5) {
+        if (i == 1 || i == 5) {
+            if (i == 5
+                    && this.aClass263_933.aBoolean3355)
+                method484(class348_sub49, -528);
+            int i_59_ = class348_sub49.method3387(255);
+            anIntArrayArray907 = new int[i_59_][];
+            aByteArray885 = new byte[i_59_];
+            for (int i_60_ = 0; i_60_ < i_59_; i_60_++) {
+                aByteArray885[i_60_] = class348_sub49.method3388(-110);
+                int i_61_ = class348_sub49.method3387(255);
+                anIntArrayArray907[i_60_] = new int[i_61_];
+                for (int i_62_ = 0; i_62_ < i_61_; i_62_++)
+                    anIntArrayArray907[i_60_][i_62_]
+                            = class348_sub49.method3330(842397944);
+            }
+            if (i == 5
+                    && !this.aClass263_933.aBoolean3355)
+                method484(class348_sub49, -528);
+        } else {
             if (i == 2)
                 this.aString884
                         = class348_sub49.method3377((byte) 121);
@@ -492,9 +508,50 @@ final class Class51 {
                                 else if (i >= 30 && i < 35)
                                     this.aStringArray913[-30 + i]
                                             = class348_sub49.method3377((byte) 88);
-                                else if (i != 40) {
-                                    if (i != 41) {
-                                        if (i != 42) {
+                                else if (i == 40) {
+                                    int i_57_ = class348_sub49.method3387(255);
+                                    aShortArray940 = new short[i_57_];
+                                    aShortArray908 = new short[i_57_];
+                                    for (int i_58_ = 0;
+                                         (i_58_ < i_57_);
+                                         i_58_++) {
+                                        aShortArray940[i_58_]
+                                                = (short) (class348_sub49
+                                                .method3330
+                                                        (842397944));
+                                        aShortArray908[i_58_]
+                                                = (short) (class348_sub49
+                                                .method3330
+                                                        (842397944));
+                                    }
+                                } else {
+                                    if (i == 41) {
+                                        int i_55_
+                                                = class348_sub49.method3387(255);
+                                        aShortArray892 = new short[i_55_];
+                                        aShortArray919 = new short[i_55_];
+                                        for (int i_56_ = 0; i_56_ < i_55_;
+                                             i_56_++) {
+                                            aShortArray919[i_56_]
+                                                    = (short) (class348_sub49
+                                                    .method3330
+                                                            (842397944));
+                                            aShortArray892[i_56_]
+                                                    = (short) (class348_sub49
+                                                    .method3330
+                                                            (842397944));
+                                        }
+                                    } else {
+                                        if (i == 42) {
+                                            int i_53_ = class348_sub49
+                                                    .method3387(255);
+                                            aByteArray872 = new byte[i_53_];
+                                            for (int i_54_ = 0; i_53_ > i_54_;
+                                                 i_54_++)
+                                                aByteArray872[i_54_]
+                                                        = class348_sub49
+                                                        .method3388(-92);
+                                        } else {
                                             if (i == 62)
                                                 this.aBoolean902
                                                         = true;
@@ -530,8 +587,21 @@ final class Class51 {
                                                                 else if (i != 75) {
                                                                     if (i != 77
                                                                             && (i != 92)) {
-                                                                        if (i != 78) {
-                                                                            if (i != 79) {
+                                                                        if (i == 78) {
+                                                                            this.anInt887
+                                                                                    = class348_sub49.method3330(842397944);
+                                                                            this.anInt889
+                                                                                    = class348_sub49.method3387(255);
+                                                                        } else {
+                                                                            if (i == 79) {
+                                                                                this.anInt962 = class348_sub49.method3330(842397944);
+                                                                                this.anInt937 = class348_sub49.method3330(842397944);
+                                                                                this.anInt889 = class348_sub49.method3387(255);
+                                                                                int i_48_ = class348_sub49.method3387(255);
+                                                                                this.anIntArray904 = new int[i_48_];
+                                                                                for (int i_49_ = 0; i_48_ > i_49_; i_49_++)
+                                                                                    this.anIntArray904[i_49_] = class348_sub49.method3330(842397944);
+                                                                            } else {
                                                                                 if (i == 81) {
                                                                                     aByte886 = (byte) 2;
                                                                                     anInt915 = class348_sub49.method3387(255) * 256;
@@ -541,7 +611,10 @@ final class Class51 {
                                                                                     else if (i != 89) {
                                                                                         if (i == 91)
                                                                                             this.aBoolean942 = true;
-                                                                                        else if (i != 93) {
+                                                                                        else if (i == 93) {
+                                                                                            aByte886 = (byte) 3;
+                                                                                            anInt915 = class348_sub49.method3330(842397944);
+                                                                                        } else {
                                                                                             if (i == 94)
                                                                                                 aByte886 = (byte) 4;
                                                                                             else if (i == 95) {
@@ -549,8 +622,14 @@ final class Class51 {
                                                                                                 anInt915 = class348_sub49.method3372(13638);
                                                                                             } else if (i != 97) {
                                                                                                 if (i != 98) {
-                                                                                                    if (i != 99) {
-                                                                                                        if (i != 100) {
+                                                                                                    if (i == 99) {
+                                                                                                        this.anInt950 = class348_sub49.method3387(255);
+                                                                                                        this.anInt869 = class348_sub49.method3330(842397944);
+                                                                                                    } else {
+                                                                                                        if (i == 100) {
+                                                                                                            this.anInt951 = class348_sub49.method3387(255);
+                                                                                                            this.anInt877 = class348_sub49.method3330(842397944);
+                                                                                                        } else {
                                                                                                             if (i != 101) {
                                                                                                                 if (i == 102)
                                                                                                                     this.anInt875 = class348_sub49.method3330(842397944);
@@ -569,8 +648,17 @@ final class Class51 {
                                                                                                                                 anInt911 += i_41_;
                                                                                                                             }
                                                                                                                         } else if (i != 107) {
-                                                                                                                            if (i < 150 || i >= 155) {
-                                                                                                                                if (i != 160) {
+                                                                                                                            if (i >= 150 && i < 155) {
+                                                                                                                                this.aStringArray913[i + -150] = class348_sub49.method3377((byte) -41);
+                                                                                                                                if (!this.aClass263_933.aBoolean3359)
+                                                                                                                                    this.aStringArray913[-150 + i] = null;
+                                                                                                                            } else {
+                                                                                                                                if (i == 160) {
+                                                                                                                                    int i_46_ = class348_sub49.method3387(255);
+                                                                                                                                    this.anIntArray917 = new int[i_46_];
+                                                                                                                                    for (int i_47_ = 0; i_46_ > i_47_; i_47_++)
+                                                                                                                                        this.anIntArray917[i_47_] = class348_sub49.method3330(842397944);
+                                                                                                                                } else {
                                                                                                                                     if (i == 162) {
                                                                                                                                         aByte886 = (byte) 3;
                                                                                                                                         anInt915 = class348_sub49.method3385((byte) -126);
@@ -621,16 +709,7 @@ final class Class51 {
                                                                                                                                             anInt954 = class348_sub49.method3372(13638);
                                                                                                                                     } else
                                                                                                                                         anInt893 = class348_sub49.method3372(13638);
-                                                                                                                                } else {
-                                                                                                                                    int i_46_ = class348_sub49.method3387(255);
-                                                                                                                                    this.anIntArray917 = new int[i_46_];
-                                                                                                                                    for (int i_47_ = 0; i_46_ > i_47_; i_47_++)
-                                                                                                                                        this.anIntArray917[i_47_] = class348_sub49.method3330(842397944);
                                                                                                                                 }
-                                                                                                                            } else {
-                                                                                                                                this.aStringArray913[i + -150] = class348_sub49.method3377((byte) -41);
-                                                                                                                                if (!this.aClass263_933.aBoolean3359)
-                                                                                                                                    this.aStringArray913[-150 + i] = null;
                                                                                                                             }
                                                                                                                         } else
                                                                                                                             this.anInt921 = class348_sub49.method3330(842397944);
@@ -640,40 +719,18 @@ final class Class51 {
                                                                                                                     this.anInt955 = 0;
                                                                                                             } else
                                                                                                                 this.anInt923 = class348_sub49.method3387(255);
-                                                                                                        } else {
-                                                                                                            this.anInt951 = class348_sub49.method3387(255);
-                                                                                                            this.anInt877 = class348_sub49.method3330(842397944);
                                                                                                         }
-                                                                                                    } else {
-                                                                                                        this.anInt950 = class348_sub49.method3387(255);
-                                                                                                        this.anInt869 = class348_sub49.method3330(842397944);
                                                                                                     }
                                                                                                 } else
                                                                                                     this.aBoolean929 = true;
                                                                                             } else
                                                                                                 this.aBoolean912 = true;
-                                                                                        } else {
-                                                                                            aByte886 = (byte) 3;
-                                                                                            anInt915 = class348_sub49.method3330(842397944);
                                                                                         }
                                                                                     } else
                                                                                         this.aBoolean924 = false;
                                                                                 } else
                                                                                     this.aBoolean931 = true;
-                                                                            } else {
-                                                                                this.anInt962 = class348_sub49.method3330(842397944);
-                                                                                this.anInt937 = class348_sub49.method3330(842397944);
-                                                                                this.anInt889 = class348_sub49.method3387(255);
-                                                                                int i_48_ = class348_sub49.method3387(255);
-                                                                                this.anIntArray904 = new int[i_48_];
-                                                                                for (int i_49_ = 0; i_48_ > i_49_; i_49_++)
-                                                                                    this.anIntArray904[i_49_] = class348_sub49.method3330(842397944);
                                                                             }
-                                                                        } else {
-                                                                            this.anInt887
-                                                                                    = class348_sub49.method3330(842397944);
-                                                                            this.anInt889
-                                                                                    = class348_sub49.method3387(255);
                                                                         }
                                                                     } else {
                                                                         anInt934
@@ -739,48 +796,7 @@ final class Class51 {
                                             } else
                                                 this.aBoolean918
                                                         = false;
-                                        } else {
-                                            int i_53_ = class348_sub49
-                                                    .method3387(255);
-                                            aByteArray872 = new byte[i_53_];
-                                            for (int i_54_ = 0; i_53_ > i_54_;
-                                                 i_54_++)
-                                                aByteArray872[i_54_]
-                                                        = class348_sub49
-                                                        .method3388(-92);
                                         }
-                                    } else {
-                                        int i_55_
-                                                = class348_sub49.method3387(255);
-                                        aShortArray892 = new short[i_55_];
-                                        aShortArray919 = new short[i_55_];
-                                        for (int i_56_ = 0; i_56_ < i_55_;
-                                             i_56_++) {
-                                            aShortArray919[i_56_]
-                                                    = (short) (class348_sub49
-                                                    .method3330
-                                                            (842397944));
-                                            aShortArray892[i_56_]
-                                                    = (short) (class348_sub49
-                                                    .method3330
-                                                            (842397944));
-                                        }
-                                    }
-                                } else {
-                                    int i_57_ = class348_sub49.method3387(255);
-                                    aShortArray940 = new short[i_57_];
-                                    aShortArray908 = new short[i_57_];
-                                    for (int i_58_ = 0;
-                                         (i_58_ < i_57_);
-                                         i_58_++) {
-                                        aShortArray940[i_58_]
-                                                = (short) (class348_sub49
-                                                .method3330
-                                                        (842397944));
-                                        aShortArray908[i_58_]
-                                                = (short) (class348_sub49
-                                                .method3330
-                                                        (842397944));
                                     }
                                 }
                             } else
@@ -795,24 +811,6 @@ final class Class51 {
                     this.anInt874 = class348_sub49.method3387(255);
             } else
                 this.anInt926 = class348_sub49.method3387(255);
-        } else {
-            if (i == 5
-                    && this.aClass263_933.aBoolean3355)
-                method484(class348_sub49, -528);
-            int i_59_ = class348_sub49.method3387(255);
-            anIntArrayArray907 = new int[i_59_][];
-            aByteArray885 = new byte[i_59_];
-            for (int i_60_ = 0; i_60_ < i_59_; i_60_++) {
-                aByteArray885[i_60_] = class348_sub49.method3388(-110);
-                int i_61_ = class348_sub49.method3387(255);
-                anIntArrayArray907[i_60_] = new int[i_61_];
-                for (int i_62_ = 0; i_62_ < i_61_; i_62_++)
-                    anIntArrayArray907[i_60_][i_62_]
-                            = class348_sub49.method3330(842397944);
-            }
-            if (i == 5
-                    && !this.aClass263_933.aBoolean3355)
-                method484(class348_sub49, -528);
         }
         if (i_38_ >= -93)
             aByteArray885 = null;

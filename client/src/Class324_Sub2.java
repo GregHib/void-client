@@ -85,16 +85,7 @@ final class Class324_Sub2 extends Class324 {
                 int i_28_ = i_21_ / 16 * i;
                 int i_29_ = i_28_ * i_5_ + i_27_;
                 int i_30_ = 0;
-                if (is_23_ != null) {
-                    for (int i_31_ = 0; i_31_ < i_25_; i_31_++) {
-                        for (int i_32_ = 0; i_32_ < i_26_; i_32_++) {
-                            is[i_29_++] = (is_23_[i_30_] << 24
-                                    | is_22_[is_24_[i_30_] & 0xff]);
-                            i_30_++;
-                        }
-                        i_29_ += i_5_ - i_26_;
-                    }
-                } else {
+                if (is_23_ == null) {
                     for (int i_33_ = 0; i_33_ < i_25_; i_33_++) {
                         for (int i_34_ = 0; i_34_ < i_26_; i_34_++) {
                             int i_35_;
@@ -102,6 +93,15 @@ final class Class324_Sub2 extends Class324 {
                                 is[i_29_++] = ~0xffffff | is_22_[i_35_ & 0xff];
                             else
                                 i_29_++;
+                        }
+                        i_29_ += i_5_ - i_26_;
+                    }
+                } else {
+                    for (int i_31_ = 0; i_31_ < i_25_; i_31_++) {
+                        for (int i_32_ = 0; i_32_ < i_26_; i_32_++) {
+                            is[i_29_++] = (is_23_[i_30_] << 24
+                                    | is_22_[is_24_[i_30_] & 0xff]);
+                            i_30_++;
                         }
                         i_29_ += i_5_ - i_26_;
                     }

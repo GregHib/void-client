@@ -20,9 +20,7 @@ final class Class370 {
                 int i_3_ = is_0_[i_1_];
                 is[i] = i_3_;
                 int i_4_;
-                if ((i_3_ & i_2_) != 0)
-                    i_4_ = is_0_[i_1_ - 1];
-                else {
+                if ((i_3_ & i_2_) == 0) {
                     i_4_ = i_3_ | i_2_;
                     for (int i_5_ = i_1_ - 1; i_5_ >= 1; i_5_--) {
                         int i_6_ = is_0_[i_5_];
@@ -35,7 +33,7 @@ final class Class370 {
                         }
                         is_0_[i_5_] = i_6_ | i_7_;
                     }
-                }
+                } else i_4_ = is_0_[i_1_ - 1];
                 is_0_[i_1_] = i_4_;
                 for (int i_8_ = i_1_ + 1; i_8_ <= 32; i_8_++) {
                     int i_9_ = is_0_[i_8_];

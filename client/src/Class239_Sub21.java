@@ -38,18 +38,32 @@ final class Class239_Sub21 extends Class239 {
                     = Class147.aClass357ArrayArrayArray2029[i_4_][i][i_2_];
             if (class357 == null)
                 class357 = new Class357(i_4_);
-            if (i_5_ != 1) {
+            if (i_5_ == 1) {
+                class357.aShort4401 = (short) i_0_;
+                class357.aShort4409 = (short) i_1_;
+            } else {
                 if (i_5_ == 2) {
                     class357.aShort4398 = (short) i_1_;
                     class357.aShort4397 = (short) i_0_;
                 }
-            } else {
-                class357.aShort4401 = (short) i_0_;
-                class357.aShort4409 = (short) i_1_;
             }
             if (Class50_Sub1.aBoolean5226)
                 Class286_Sub3.method2152(false);
-        } else if (i_5_ != 8) {
+        } else if (i_5_ == 8) {
+            int i_12_ = i << Class362.anInt4459;
+            int i_13_ = Class270.anInt3465 + i_12_;
+            int i_14_ = i_2_ << Class362.anInt4459;
+            int i_15_ = Class270.anInt3465 + i_14_;
+            int i_16_
+                    = Class348_Sub1_Sub1.aSArray8801[i_4_].method3982((byte) -86,
+                    i_2_, i);
+            int i_17_ = Class348_Sub1_Sub1.aSArray8801[i_4_]
+                    .method3982((byte) -86, 1 + i_2_, i - -1);
+            Class294.aClass338Array5060[Class348_Sub44.anInt7101++]
+                    = new Class338(i_5_, i_4_, i_12_, i_13_, i_13_, i_12_, i_16_,
+                    i_17_, -i_1_ + i_17_, -i_1_ + i_16_, i_14_,
+                    i_15_, i_15_, i_14_);
+        } else {
             int i_6_ = Class270.anInt3465 + (i << Class362.anInt4459);
             int i_7_ = -Class270.anInt3465 + i_6_;
             int i_8_ = i_2_ << Class362.anInt4459;
@@ -64,20 +78,6 @@ final class Class239_Sub21 extends Class239 {
                     = new Class338(i_5_, i_4_, i_6_, i_7_, i_7_, i_6_, i_10_,
                     i_11_, -i_1_ + i_11_, i_10_ - i_1_, i_8_, i_9_,
                     i_9_, i_8_);
-        } else {
-            int i_12_ = i << Class362.anInt4459;
-            int i_13_ = Class270.anInt3465 + i_12_;
-            int i_14_ = i_2_ << Class362.anInt4459;
-            int i_15_ = Class270.anInt3465 + i_14_;
-            int i_16_
-                    = Class348_Sub1_Sub1.aSArray8801[i_4_].method3982((byte) -86,
-                    i_2_, i);
-            int i_17_ = Class348_Sub1_Sub1.aSArray8801[i_4_]
-                    .method3982((byte) -86, 1 + i_2_, i - -1);
-            Class294.aClass338Array5060[Class348_Sub44.anInt7101++]
-                    = new Class338(i_5_, i_4_, i_12_, i_13_, i_13_, i_12_, i_16_,
-                    i_17_, -i_1_ + i_17_, -i_1_ + i_16_, i_14_,
-                    i_15_, i_15_, i_14_);
         }
         if (i_3_ != -1)
             method1811(31, null, 115, null);
@@ -133,12 +133,10 @@ final class Class239_Sub21 extends Class239 {
             } while (false);
             int i_27_ = Math.min(i_20_, i_21_);
             for (int i_28_ = 0; i_27_ > i_28_; i_28_++) {
-                if (i_18_ != 2)
-                    i_22_ = i_23_ = i_28_;
-                else {
+                if (i_18_ == 2) {
                     i_23_ = -i_28_ + (i_21_ - 1);
                     i_22_ = i_20_ - (1 - -i_28_);
-                }
+                } else i_22_ = i_23_ = i_28_;
                 char c_29_ = string_19_.charAt(i_22_);
                 char c_30_ = string.charAt(i_23_);
                 if (c_29_ != c_30_

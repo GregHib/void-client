@@ -878,10 +878,7 @@ final class ha_Sub1 extends ha {
                 .aFloat5680) * (float) i_200_
                 + (this.aClass101_Sub1_7492
                 .aFloat5664) * (float) i_201_));
-        if (f < (float) this.anInt7482
-                || f > (float) this.anInt7494)
-            is[0] = is[1] = is[2] = -1;
-        else {
+        if (f >= (float) this.anInt7482 && f <= (float) this.anInt7494) {
             int i_203_
                     = (int) ((float) this.anInt7491
                     * (this.aClass101_Sub1_7492.aFloat5686
@@ -911,7 +908,7 @@ final class ha_Sub1 extends ha {
                 is[2] = (int) f;
             } else
                 is[0] = is[1] = is[2] = -1;
-        }
+        } else is[0] = is[1] = is[2] = -1;
     }
 
     final boolean method3716() {
@@ -1914,7 +1911,16 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3677(Canvas canvas) {
-        if (canvas != null) {
+        if (canvas == null) {
+            aCanvas7468 = null;
+            this.aClass348_Sub31_7469 = null;
+            if (aClass49_7475 == null) {
+                this.anIntArray7483 = null;
+                this.anInt7477 = anInt7486 = 1;
+                anInt7495 = anInt7488 = 1;
+                method3717();
+            }
+        } else {
             Class348_Sub31 class348_sub31
                     = ((Class348_Sub31)
                     aClass356_7467.method3480(canvas.hashCode(), -6008));
@@ -1940,15 +1946,6 @@ final class ha_Sub1 extends ha {
                     }
                     method3717();
                 }
-            }
-        } else {
-            aCanvas7468 = null;
-            this.aClass348_Sub31_7469 = null;
-            if (aClass49_7475 == null) {
-                this.anIntArray7483 = null;
-                this.anInt7477 = anInt7486 = 1;
-                anInt7495 = anInt7488 = 1;
-                method3717();
             }
         }
     }
@@ -2043,7 +2040,14 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3672() {
-        if (aCanvas7468 != null) {
+        if (aCanvas7468 == null) {
+            this.anInt7477 = 1;
+            anInt7486 = 1;
+            this.anIntArray7483 = null;
+            anInt7495 = 1;
+            anInt7488 = 1;
+            this.aFloatArray7511 = null;
+        } else {
             this.anIntArray7483
                     = (this.aClass348_Sub31_7469
                     .anIntArray6916);
@@ -2057,13 +2061,6 @@ final class ha_Sub1 extends ha {
                     = this.aFloatArray7502;
             anInt7495 = anInt7481;
             anInt7488 = anInt7493;
-        } else {
-            this.anInt7477 = 1;
-            anInt7486 = 1;
-            this.anIntArray7483 = null;
-            anInt7495 = 1;
-            anInt7488 = 1;
-            this.aFloatArray7511 = null;
         }
         aClass49_7475 = null;
         method3717();
@@ -2124,17 +2121,7 @@ final class ha_Sub1 extends ha {
         } else {
             int[] is_438_ = new int[i * i_431_];
             byte[] is_439_ = class207.aByteArray2695;
-            if (is_439_ != null) {
-                for (int i_440_ = 0; i_440_ < i_431_; i_440_++) {
-                    int i_441_ = i_440_ * i;
-                    for (int i_442_ = 0; i_442_ < i; i_442_++)
-                        is_438_[i_441_ + i_442_]
-                                = (is[is_430_[i_441_ + i_442_] & 0xff]
-                                | is_439_[i_441_ + i_442_] << 24);
-                }
-                class105_sub3
-                        = new Class105_Sub3_Sub3(this, is_438_, i, i_431_);
-            } else {
+            if (is_439_ == null) {
                 for (int i_443_ = 0; i_443_ < i_431_; i_443_++) {
                     int i_444_ = i_443_ * i;
                     for (int i_445_ = 0; i_445_ < i; i_445_++) {
@@ -2145,6 +2132,16 @@ final class ha_Sub1 extends ha {
                 }
                 class105_sub3
                         = new Class105_Sub3_Sub1(this, is_438_, i, i_431_);
+            } else {
+                for (int i_440_ = 0; i_440_ < i_431_; i_440_++) {
+                    int i_441_ = i_440_ * i;
+                    for (int i_442_ = 0; i_442_ < i; i_442_++)
+                        is_438_[i_441_ + i_442_]
+                                = (is[is_430_[i_441_ + i_442_] & 0xff]
+                                | is_439_[i_441_ + i_442_] << 24);
+                }
+                class105_sub3
+                        = new Class105_Sub3_Sub3(this, is_438_, i, i_431_);
             }
         }
         class105_sub3.method985(class207.anInt2703,
@@ -3146,10 +3143,7 @@ final class ha_Sub1 extends ha {
                 .aFloat5680) * (float) i_636_
                 + (this.aClass101_Sub1_7492
                 .aFloat5664) * (float) i_637_));
-        if (f < (float) this.anInt7482
-                || f > (float) this.anInt7494)
-            is[0] = is[1] = is[2] = -1;
-        else {
+        if (f >= (float) this.anInt7482 && f <= (float) this.anInt7494) {
             int i_638_
                     = (int) ((float) this.anInt7491
                     * (this.aClass101_Sub1_7492.aFloat5686
@@ -3179,7 +3173,7 @@ final class ha_Sub1 extends ha {
                 is[2] = (int) f;
             } else
                 is[0] = is[1] = is[2] = -1;
-        }
+        } else is[0] = is[1] = is[2] = -1;
     }
 
     final void method3673() {

@@ -536,14 +536,14 @@ final class oa extends ha implements Interface19 {
     }
 
     final void method3677(Canvas canvas) {
-        if (canvas != null) {
+        if (canvas == null) {
+            aP5137 = null;
+            t(null);
+        } else {
             p var_p = (p) aClass356_5126.method3480(canvas.hashCode(),
                     -6008);
             aP5137 = var_p;
             t(var_p);
-        } else {
-            aP5137 = null;
-            t(null);
         }
     }
 

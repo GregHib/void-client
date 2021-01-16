@@ -43,20 +43,20 @@ final class Class239_Sub8 extends Class239 {
                                 (class110_sub1.method1038(false)
                                         .aString3663)));
             if (i == 3) {
-                if (!class110_sub1.aString5787.equals("-")) {
-                    if (class110_sub1_0_.aString5787
-                            .equals("-")) {
-                        if (!bool)
-                            return -1;
-                        return 1;
-                    }
-                } else {
+                if (class110_sub1.aString5787.equals("-")) {
                     if (class110_sub1_0_.aString5787
                             .equals("-"))
                         return 0;
                     if (bool)
                         return -1;
                     return 1;
+                } else {
+                    if (class110_sub1_0_.aString5787
+                            .equals("-")) {
+                        if (!bool)
+                            return -1;
+                        return 1;
+                    }
                 }
                 return (Class239_Sub21.method1811
                         (9152, class110_sub1_0_.aString5787,
@@ -108,16 +108,16 @@ final class Class239_Sub8 extends Class239 {
             if (i == 8) {
                 int i_4_ = class110_sub1.anInt5788;
                 int i_5_ = class110_sub1_0_.anInt5788;
-                if (!bool) {
-                    if (i_5_ == -1)
-                        i_5_ = 1000;
-                    if (i_4_ == -1)
-                        i_4_ = 1000;
-                } else {
+                if (bool) {
                     if (i_5_ == 1000)
                         i_5_ = -1;
                     if (i_4_ == 1000)
                         i_4_ = -1;
+                } else {
+                    if (i_5_ == -1)
+                        i_5_ = 1000;
+                    if (i_4_ == -1)
+                        i_4_ = 1000;
                 }
                 return -i_5_ + i_4_;
             }

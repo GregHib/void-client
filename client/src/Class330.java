@@ -198,21 +198,21 @@ final class Class330 {
                                                     .aShortArrayArray8299
                                                     [i_43_]);
                                             if (is != null) {
-                                                if (!Stream.c()) {
-                                                    for (int i_45_ = 0;
-                                                         is.length > i_45_;
-                                                         i_45_++) {
-                                                        i_39_++;
-                                                        stream.a(is[i_45_]
-                                                                & 0xffff);
-                                                    }
-                                                } else {
+                                                if (Stream.c()) {
                                                     for (int i_46_ = 0;
                                                          (is.length > i_46_);
                                                          i_46_++) {
                                                         stream.d(is[i_46_]
                                                                 & 0xffff);
                                                         i_39_++;
+                                                    }
+                                                } else {
+                                                    for (int i_45_ = 0;
+                                                         is.length > i_45_;
+                                                         i_45_++) {
+                                                        i_39_++;
+                                                        stream.a(is[i_45_]
+                                                                & 0xffff);
                                                     }
                                                 }
                                             }

@@ -29,29 +29,7 @@ final class Class76 {
         i_5_ += -1 + i_4_;
         i_1_ += i * i_4_;
         i_2_ = -i_4_ + i_3_ >> 79407298;
-        if (Class350.anInt4319 != 1) {
-            i_1_ -= 38400;
-            while (--i_2_ >= 0) {
-                if (is[++i_5_] > i_1_)
-                    return false;
-                i_1_ += i;
-                if (is[++i_5_] > i_1_)
-                    return false;
-                i_1_ += i;
-                if (i_1_ < is[++i_5_])
-                    return false;
-                i_1_ += i;
-                if (is[++i_5_] > i_1_)
-                    return false;
-                i_1_ += i;
-            }
-            i_2_ = 0x3 & i_3_ - i_4_;
-            while (--i_2_ >= 0) {
-                if (i_1_ < is[++i_5_])
-                    return false;
-                i_1_ += i;
-            }
-        } else {
+        if (Class350.anInt4319 == 1) {
             Class225.anInt2946 += i_2_;
             while (--i_2_ >= 0) {
                 if (is[++i_5_] > i_1_)
@@ -71,6 +49,28 @@ final class Class76 {
             while (--i_2_ >= 0) {
                 if (is[++i_5_] > i_1_)
                     is[i_5_] = i_1_;
+                i_1_ += i;
+            }
+        } else {
+            i_1_ -= 38400;
+            while (--i_2_ >= 0) {
+                if (is[++i_5_] > i_1_)
+                    return false;
+                i_1_ += i;
+                if (is[++i_5_] > i_1_)
+                    return false;
+                i_1_ += i;
+                if (i_1_ < is[++i_5_])
+                    return false;
+                i_1_ += i;
+                if (is[++i_5_] > i_1_)
+                    return false;
+                i_1_ += i;
+            }
+            i_2_ = 0x3 & i_3_ - i_4_;
+            while (--i_2_ >= 0) {
+                if (i_1_ < is[++i_5_])
+                    return false;
                 i_1_ += i;
             }
         }

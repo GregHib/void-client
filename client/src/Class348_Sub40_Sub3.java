@@ -16,12 +16,12 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         int i_1_ = i;
         do {
-            if (i_1_ != 0) {
-                if (i_1_ != 1)
-                    break;
-            } else {
+            if (i_1_ == 0) {
                 anInt9104 = class348_sub49.method3330(842397944);
                 break;
+            } else {
+                if (i_1_ != 1)
+                    break;
             }
             anInt9107 = class348_sub49.method3330(842397944);
         } while (false);

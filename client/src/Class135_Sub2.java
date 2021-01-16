@@ -83,7 +83,10 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
             anInt4834++;
             RuntimeException_Sub1.anInt4596 = i;
             long l = 0L;
-            if (Class348_Sub23_Sub3.aString9043 != null) {
+            if (Class348_Sub23_Sub3.aString9043 == null) {
+                Class14_Sub4.method254(35, (byte) -87);
+                return;
+            } else {
                 Class348_Sub49 class348_sub49
                         = (new Class348_Sub49
                         (Class98.method878((Class110_Sub1.method1039
@@ -93,9 +96,6 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
                 l = class348_sub49.method3365(-456577760);
                 Class348_Sub33.aLong6966
                         = class348_sub49.method3365(-456577760);
-            } else {
-                Class14_Sub4.method254(35, (byte) -87);
-                return;
             }
             Class132.method1138(Class27.method313(l, -95), true, "",
                     (byte) 79);

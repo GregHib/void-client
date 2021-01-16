@@ -397,18 +397,7 @@ final class s_Sub2 extends s {
                                     && (anInt8260 + -1 & i_66_) == 0)
                                 class348 = class356.method3480(l, -6008);
                             int i_91_;
-                            if (class348 != null) {
-                                is_63_[i_64_]
-                                        = ((Class348_Sub29) class348).aShort6911;
-                                i_91_ = 0xffff & is_63_[i_64_];
-                                if (i_69_ != -1
-                                        && ((class348_sub20s[i_91_]
-                                        .aLong4291)
-                                        > class348_sub20s_38_
-                                        [i_64_].aLong4291))
-                                    class348_sub20s[i_91_]
-                                            = class348_sub20s_38_[i_64_];
-                            } else {
+                            if (class348 == null) {
                                 int i_92_;
                                 if (i_69_ != i_70_) {
                                     int i_93_
@@ -468,30 +457,8 @@ final class s_Sub2 extends s {
                                     }
                                 } else
                                     i_92_ = i_75_;
-                                if (!this.aHa_Sub2_8272
+                                if (this.aHa_Sub2_8272
                                         .aBoolean7775) {
-                                    stream.b((float) i_65_);
-                                    stream.b
-                                            ((float) (this.method3986(i_65_, i_66_,
-                                                    (byte) -101)
-                                                    - -i_71_));
-                                    stream.b((float) i_66_);
-                                    stream.f((byte) (i_92_ >> 883603664));
-                                    stream.f((byte) (i_92_ >> -422171160));
-                                    stream.f((byte) i_92_);
-                                    stream.f(-1);
-                                    stream.b((float) i_65_);
-                                    stream.b((float) i_66_);
-                                    if (anIntArrayArrayArray8252 != null)
-                                        stream.b((float) (is_44_ != null
-                                                ? is_44_[i_64_] + -1
-                                                : 0));
-                                    if ((0x7 & this.anInt8235) != 0) {
-                                        stream.b(f_77_);
-                                        stream.b(f_76_);
-                                        stream.b(f_78_);
-                                    }
-                                } else {
                                     stream.a((float) i_65_);
                                     stream.a
                                             ((float) (this.method3986(i_65_, i_66_,
@@ -513,6 +480,28 @@ final class s_Sub2 extends s {
                                         stream.a(f_76_);
                                         stream.a(f_78_);
                                     }
+                                } else {
+                                    stream.b((float) i_65_);
+                                    stream.b
+                                            ((float) (this.method3986(i_65_, i_66_,
+                                                    (byte) -101)
+                                                    - -i_71_));
+                                    stream.b((float) i_66_);
+                                    stream.f((byte) (i_92_ >> 883603664));
+                                    stream.f((byte) (i_92_ >> -422171160));
+                                    stream.f((byte) i_92_);
+                                    stream.f(-1);
+                                    stream.b((float) i_65_);
+                                    stream.b((float) i_66_);
+                                    if (anIntArrayArrayArray8252 != null)
+                                        stream.b((float) (is_44_ != null
+                                                ? is_44_[i_64_] + -1
+                                                : 0));
+                                    if ((0x7 & this.anInt8235) != 0) {
+                                        stream.b(f_77_);
+                                        stream.b(f_76_);
+                                        stream.b(f_78_);
+                                    }
                                 }
                                 i_91_ = anInt8246++;
                                 is_63_[i_64_] = (short) i_91_;
@@ -522,6 +511,17 @@ final class s_Sub2 extends s {
                                 class356.method3483
                                         ((byte) 114, l,
                                                 new Class348_Sub29(is_63_[i_64_]));
+                            } else {
+                                is_63_[i_64_]
+                                        = ((Class348_Sub29) class348).aShort6911;
+                                i_91_ = 0xffff & is_63_[i_64_];
+                                if (i_69_ != -1
+                                        && ((class348_sub20s[i_91_]
+                                        .aLong4291)
+                                        > class348_sub20s_38_
+                                        [i_64_].aLong4291))
+                                    class348_sub20s[i_91_]
+                                            = class348_sub20s_38_[i_64_];
                             }
                             for (int i_98_ = 0;
                                  i_98_ < i_60_;
@@ -612,14 +612,14 @@ final class s_Sub2 extends s {
                     = new Class123(anInterface2_8279, 5126, 3, 0);
             aClass123_8274 = new Class123(anInterface2_8279, 5121, 4, 12);
             int i_111_;
-            if (anIntArrayArrayArray8252 != null) {
-                i_111_ = 28;
-                this.aClass123_8277
-                        = new Class123(anInterface2_8279, 5126, 3, 16);
-            } else {
+            if (anIntArrayArrayArray8252 == null) {
                 i_111_ = 24;
                 this.aClass123_8277
                         = new Class123(anInterface2_8279, 5126, 2, 16);
+            } else {
+                i_111_ = 28;
+                this.aClass123_8277
+                        = new Class123(anInterface2_8279, 5126, 3, 16);
             }
             if ((0x7 & this.anInt8235) != 0)
                 this.aClass123_8275
@@ -1109,15 +1109,13 @@ final class s_Sub2 extends s {
                             && (class348_sub20.anInt6826 == i_186_))
                         break;
                 }
-                if (class348 != null)
-                    class348_sub20s[i_187_] = (Class348_Sub20) class348;
-                else {
+                if (class348 == null) {
                     class348_sub20s[i_187_]
                             = new Class348_Sub20(this, i_188_, i_189_, i_184_,
                             i_185_, i_186_);
                     aClass356_8278.method3483((byte) 99, l,
                             class348_sub20s[i_187_]);
-                }
+                } else class348_sub20s[i_187_] = (Class348_Sub20) class348;
             }
             if (bool)
                 aByteArrayArray8240[i][i_176_]

@@ -70,8 +70,28 @@ final class OutputStream_Sub2 extends OutputStream {
                         .anInt9608))) {
             if (class348_sub42_sub12.anInt9599
                     == -1) {
-                if (!Class367_Sub8.method3549(class348_sub42_sub12.anInt9608,
+                if (Class367_Sub8.method3549(class348_sub42_sub12.anInt9608,
                         (byte) -44)) {
+                            Class348_Sub22 class348_sub22
+                                    = ((Class348_Sub22)
+                                    (Class282.aClass356_3654.method3480
+                                            ((int) class348_sub42_sub12.aLong9605,
+                                                    -6008)));
+                            if (class348_sub22 != null) {
+                                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
+                                        = (class348_sub22
+                                        .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
+                                Class79 class79 = (class318_sub1_sub3_sub3_sub1
+                                        .aClass79_10505);
+                                if (class79.anIntArray1377 != null)
+                                    class79
+                                            = class79.method794((Class318_Sub1_Sub3_Sub3
+                                                    .aClass170_10209),
+                                            -1);
+                                if (class79 != null)
+                                    is = class79.anIntArray1342;
+                            }
+                        } else {
                     if (Class239_Sub21.method1813(8806,
                             (class348_sub42_sub12
                                     .anInt9608))) {
@@ -97,26 +117,6 @@ final class OutputStream_Sub2 extends OutputStream {
                                     (byte) 47);
                         if (class51 != null)
                             is = class51.anIntArray917;
-                    }
-                } else {
-                    Class348_Sub22 class348_sub22
-                            = ((Class348_Sub22)
-                            (Class282.aClass356_3654.method3480
-                                    ((int) class348_sub42_sub12.aLong9605,
-                                            -6008)));
-                    if (class348_sub22 != null) {
-                        Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                = (class348_sub22
-                                .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                        Class79 class79 = (class318_sub1_sub3_sub3_sub1
-                                .aClass79_10505);
-                        if (class79.anIntArray1377 != null)
-                            class79
-                                    = class79.method794((Class318_Sub1_Sub3_Sub3
-                                            .aClass170_10209),
-                                    -1);
-                        if (class79 != null)
-                            is = class79.anIntArray1342;
                     }
                 }
             } else

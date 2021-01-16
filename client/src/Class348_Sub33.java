@@ -70,17 +70,21 @@ final class Class348_Sub33 extends Class348 {
                 for (int i_2_ = 0;
                      (i_2_ < class348_sub48.anInt7126);
                      i_2_++) {
-                    if (class348_sub48.anIntArray7131[i_2_]
-                            != 0)
-                        class348_sub49_sub2.method3378(false,
-                                (class348_sub48
-                                        .anIntArray7131
-                                        [i_2_]));
-                    else {
+                    if (class348_sub48.anIntArray7131[i_2_] == 0) {
                         try {
                             int i_3_ = (class348_sub48
                                     .anIntArray7132[i_2_]);
-                            if (i_3_ != 0) {
+                            if (i_3_ == 0) {
+                                Field field
+                                        = ((Field)
+                                        (class348_sub48
+                                                .aClass144Array7135[i_2_]
+                                                .anObject1998));
+                                int i_5_ = field.getInt(null);
+                                class348_sub49_sub2.method3378(false, 0);
+                                class348_sub49_sub2.method3391((byte) 108,
+                                        i_5_);
+                            } else {
                                 if (i_3_ == 1) {
                                     Field field
                                             = ((Field)
@@ -102,16 +106,6 @@ final class Class348_Sub33 extends Class348 {
                                     class348_sub49_sub2.method3391((byte) 122,
                                             i_4_);
                                 }
-                            } else {
-                                Field field
-                                        = ((Field)
-                                        (class348_sub48
-                                                .aClass144Array7135[i_2_]
-                                                .anObject1998));
-                                int i_5_ = field.getInt(null);
-                                class348_sub49_sub2.method3378(false, 0);
-                                class348_sub49_sub2.method3391((byte) 108,
-                                        i_5_);
                             }
                             if (i_3_ == 3) {
                                 Method method
@@ -139,15 +133,13 @@ final class Class348_Sub33 extends Class348 {
                                         class348_sub49_sub2.method3392
                                                 (((Number) object).longValue(),
                                                         (byte) -81);
-                                    } else if (!(object instanceof String))
-                                        class348_sub49_sub2.method3378(false,
-                                                4);
-                                    else {
+                                    } else if (object instanceof String) {
                                         class348_sub49_sub2.method3378(false,
                                                 2);
                                         class348_sub49_sub2.method3333
                                                 ((byte) -5, (String) object);
-                                    }
+                                    } else class348_sub49_sub2.method3378(false,
+                                                4);
                                 } else
                                     class348_sub49_sub2.method3378(false, 0);
                             } else if (i_3_ == 4) {
@@ -186,7 +178,10 @@ final class Class348_Sub33 extends Class348 {
                         } catch (Throwable throwable) {
                             class348_sub49_sub2.method3378(false, -21);
                         }
-                    }
+                    } else class348_sub49_sub2.method3378(false,
+                            (class348_sub48
+                                    .anIntArray7131
+                                    [i_2_]));
                 }
                 class348_sub49_sub2.method3344(i_1_, false);
                 class348_sub48.method2715((byte) 46);

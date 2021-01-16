@@ -128,7 +128,15 @@ final class Class263 {
                         while_82_:
                         do {
                             do {
-                                if (i_20_ != -4) {
+                                if (i_20_ == -4) {
+                                    if (i_10_ == i_3_
+                                            && i_2_ == i_11_) {
+                                        Class348_Sub40_Sub30.anInt9388 = i_10_;
+                                        Class115.anInt1753 = i_11_;
+                                        return true;
+                                    }
+                                    break while_85_;
+                                } else {
                                     if (i_20_ != -3) {
                                         if (i_20_ != -2) {
                                             if (i_20_ != -1) {
@@ -143,14 +151,6 @@ final class Class263 {
                                             break;
                                         break while_82_;
                                     }
-                                } else {
-                                    if (i_10_ == i_3_
-                                            && i_2_ == i_11_) {
-                                        Class348_Sub40_Sub30.anInt9388 = i_10_;
-                                        Class115.anInt1753 = i_11_;
-                                        return true;
-                                    }
-                                    break while_85_;
                                 }
                                 if (Class239_Sub28.method1842(i_5_, i_2_, -1,
                                         2, i_10_, i_11_,
@@ -360,7 +360,15 @@ final class Class263 {
             int i_23_ = class348_sub49.method3387(255);
             if (i_23_ == 0)
                 break;
-            if (i_23_ != 1) {
+            if (i_23_ == 1) {
+                int[] is_28_ = Class81.anIntArray1432 = new int[6];
+                is_28_[0] = class348_sub49.method3330(i + 842397832);
+                is_28_[1] = class348_sub49.method3330(i + 842397832);
+                is_28_[2] = class348_sub49.method3330(842397944);
+                is_28_[3] = class348_sub49.method3330(842397944);
+                is_28_[4] = class348_sub49.method3330(842397944);
+                is_28_[5] = class348_sub49.method3330(842397944);
+            } else {
                 if (i_23_ == 4) {
                     int i_24_ = class348_sub49.method3387(255);
                     RuntimeException_Sub1.anIntArray4603 = new int[i_24_];
@@ -382,14 +390,6 @@ final class Class263 {
                             Class239_Sub17.anIntArray6021[i_27_] = -1;
                     }
                 }
-            } else {
-                int[] is_28_ = Class81.anIntArray1432 = new int[6];
-                is_28_[0] = class348_sub49.method3330(i + 842397832);
-                is_28_[1] = class348_sub49.method3330(i + 842397832);
-                is_28_[2] = class348_sub49.method3330(842397944);
-                is_28_[3] = class348_sub49.method3330(842397944);
-                is_28_[4] = class348_sub49.method3330(842397944);
-                is_28_[5] = class348_sub49.method3330(842397944);
             }
         }
     }

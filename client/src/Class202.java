@@ -83,9 +83,7 @@ final class Class202 implements Runnable {
             if (aByteArray2663 == null)
                 aByteArray2663 = new byte[anInt2669];
             synchronized (this) {
-                if (i_6_ != -1) {
-                    /* empty */
-                } else {
+                if (i_6_ == -1) {
                     for (int i_7_ = 0; i_7_ < i;
                          i_7_++) {
                         aByteArray2663[anInt2648] = is[i_7_ + i_5_];
@@ -97,6 +95,8 @@ final class Class202 implements Runnable {
                         aClass144_2658
                                 = aClass297_2649.method2236(this, -10240, 3);
                     this.notifyAll();
+                } else {
+                    /* empty */
                 }
             }
         }

@@ -63,22 +63,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
                                 while_98_:
                                 do {
                                     do {
-                                        if (i_3_ != 34069) {
-                                            if (i_3_ != 34070) {
-                                                if (i_3_ != 34071) {
-                                                    if (i_3_ != 34072) {
-                                                        if (i_3_ != 34073) {
-                                                            if (i_3_ != 34074)
-                                                                break while_101_;
-                                                        } else
-                                                            break while_99_;
-                                                        break while_100_;
-                                                    }
-                                                } else
-                                                    break;
-                                                break while_98_;
-                                            }
-                                        } else {
+                                        if (i_3_ == 34069) {
                                             OpenGL.glTexCoord3i(65535, 65534,
                                                     65534);
                                             OpenGL.glMultiTexCoord3i(33985,
@@ -108,6 +93,21 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
                                                     65534);
                                             OpenGL.glVertex2f(0.0F, 1.0F);
                                             break while_101_;
+                                        } else {
+                                            if (i_3_ != 34070) {
+                                                if (i_3_ != 34071) {
+                                                    if (i_3_ != 34072) {
+                                                        if (i_3_ != 34073) {
+                                                            if (i_3_ != 34074)
+                                                                break while_101_;
+                                                        } else
+                                                            break while_99_;
+                                                        break while_100_;
+                                                    }
+                                                } else
+                                                    break;
+                                                break while_98_;
+                                            }
                                         }
                                         OpenGL.glTexCoord3i(-65535, 65534,
                                                 -65534);

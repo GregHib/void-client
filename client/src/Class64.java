@@ -94,13 +94,7 @@ abstract class Class64 {
                             int i_24_;
                             byte i_25_;
                             int i_26_;
-                            if (!bool_18_) {
-                                i_24_ = i_20_;
-                                i_23_ = (short) -1;
-                                i_22_ = i_20_;
-                                i_26_ = i_20_;
-                                i_25_ = (byte) 0;
-                            } else {
+                            if (bool_18_) {
                                 i_22_ = (class4_8_.aShortArray135
                                         [i_14_]);
                                 i_23_ = (class4_8_.aShortArray128
@@ -112,19 +106,19 @@ abstract class Class64 {
                                 i_26_ = (class4_8_.aShortArray140
                                         [i_14_]);
                                 i_14_++;
+                            } else {
+                                i_24_ = i_20_;
+                                i_23_ = (short) -1;
+                                i_22_ = i_20_;
+                                i_26_ = i_20_;
+                                i_25_ = (byte) 0;
                             }
                             int i_27_;
                             int i_28_;
                             byte i_29_;
                             int i_30_;
                             short i_31_;
-                            if (!bool_19_) {
-                                i_28_ = i_20_;
-                                i_31_ = (short) -1;
-                                i_30_ = i_20_;
-                                i_27_ = i_20_;
-                                i_29_ = (byte) 0;
-                            } else {
+                            if (bool_19_) {
                                 i_27_
                                         = class4.aShortArray137[i_15_];
                                 i_28_
@@ -135,6 +129,12 @@ abstract class Class64 {
                                 i_31_
                                         = class4.aShortArray128[i_15_];
                                 i_15_++;
+                            } else {
+                                i_28_ = i_20_;
+                                i_31_ = (short) -1;
+                                i_30_ = i_20_;
+                                i_27_ = i_20_;
+                                i_29_ = (byte) 0;
                             }
                             if (i_23_ != -1)
                                 method627((class348_sub33
@@ -160,7 +160,22 @@ abstract class Class64 {
                                 i_32_ = i_26_;
                                 i_34_ = i_22_;
                                 i_33_ = i_24_;
-                            } else if (i_21_ != 2) {
+                            } else if (i_21_ == 2) {
+                                int i_37_ = 0x3fff & i_30_ - i_26_;
+                                int i_38_ = i_27_ + -i_24_ & 0x3fff;
+                                int i_39_ = 0x3fff & i_28_ - i_22_;
+                                if (i_37_ >= 8192)
+                                    i_37_ -= 16384;
+                                if (i_38_ >= 8192)
+                                    i_38_ -= 16384;
+                                if (i_39_ >= 8192)
+                                    i_39_ -= 16384;
+                                i_32_
+                                        = i_26_ - -(i_37_ * i_7_ / i_6_) & 0x3fff;
+                                i_33_ = i_38_ * i_7_ / i_6_ + i_24_ & 0x3fff;
+                                i_34_
+                                        = 0x3fff & i_22_ - -(i_7_ * i_39_ / i_6_);
+                            } else {
                                 if (i_21_ == 9) {
                                     int i_35_ = i_30_ + -i_26_ & 0x3fff;
                                     if (i_35_ >= 8192)
@@ -186,21 +201,6 @@ abstract class Class64 {
                                     i_33_ = (i_7_ * (-i_24_ + i_27_) / i_6_
                                             + i_24_);
                                 }
-                            } else {
-                                int i_37_ = 0x3fff & i_30_ - i_26_;
-                                int i_38_ = i_27_ + -i_24_ & 0x3fff;
-                                int i_39_ = 0x3fff & i_28_ - i_22_;
-                                if (i_37_ >= 8192)
-                                    i_37_ -= 16384;
-                                if (i_38_ >= 8192)
-                                    i_38_ -= 16384;
-                                if (i_39_ >= 8192)
-                                    i_39_ -= 16384;
-                                i_32_
-                                        = i_26_ - -(i_37_ * i_7_ / i_6_) & 0x3fff;
-                                i_33_ = i_38_ * i_7_ / i_6_ + i_24_ & 0x3fff;
-                                i_34_
-                                        = 0x3fff & i_22_ - -(i_7_ * i_39_ / i_6_);
                             }
                             method627((class348_sub33
                                             .anIntArrayArray6959[i_16_]),
@@ -235,9 +235,7 @@ abstract class Class64 {
             anInt1133++;
             if (i_42_ != -1) {
                 method622();
-                if (!NA())
-                    method621();
-                else {
+                if (NA()) {
                     Class4 class4
                             = (class348_sub42_sub17_45_
                             .aClass4Array9673[i_42_]);
@@ -259,7 +257,7 @@ abstract class Class64 {
                             bool);
                     wa();
                     method621();
-                }
+                } else method621();
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
@@ -410,9 +408,7 @@ abstract class Class64 {
         anInt1126++;
         if (i != -1) {
             method622();
-            if (!NA())
-                method621();
-            else {
+            if (NA()) {
                 Class4 class4 = (class348_sub42_sub17
                         .aClass4Array9673[i]);
                 Class348_Sub33 class348_sub33
@@ -434,7 +430,7 @@ abstract class Class64 {
                     anIntArray1127 = null;
                 wa();
                 method621();
-            }
+            } else method621();
         }
     }
 
@@ -471,9 +467,7 @@ abstract class Class64 {
             anInt1125++;
             if (i != -1) {
                 method622();
-                if (!NA())
-                    method621();
-                else {
+                if (NA()) {
                     Class4 class4
                             = (class348_sub42_sub17_85_
                             .aClass4Array9673[i]);
@@ -493,7 +487,7 @@ abstract class Class64 {
                             bool_86_);
                     wa();
                     method621();
-                }
+                } else method621();
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -563,9 +557,7 @@ abstract class Class64 {
                             i_106_);
                 else {
                     method622();
-                    if (!NA())
-                        method621();
-                    else {
+                    if (NA()) {
                         Class4 class4 = (class348_sub42_sub17_107_
                                 .aClass4Array9673[i_104_]);
                         Class348_Sub33 class348_sub33
@@ -598,7 +590,7 @@ abstract class Class64 {
                                 bools, class4_113_, 65535, bool);
                         wa();
                         method621();
-                    }
+                    } else method621();
                 }
             }
         } catch (RuntimeException runtimeexception) {
@@ -704,22 +696,22 @@ abstract class Class64 {
                 if (i != 1) {
                     if (i != 2) {
                         if (i == 3) {
-                            if (i_147_ != 0 && i_147_ != 1) {
-                                if (i_147_ != 3) {
+                            if (i_147_ == 0 || i_147_ == 1) {
+                                int i_155_ = i_150_;
+                                i_150_ = -i_152_;
+                                i_152_ = i_155_;
+                            } else {
+                                if (i_147_ == 3) {
+                                    int i_154_ = i_150_;
+                                    i_150_ = i_152_;
+                                    i_152_ = i_154_;
+                                } else {
                                     if (i_147_ == 2) {
                                         int i_153_ = i_150_;
                                         i_150_ = i_152_ & 0x3fff;
                                         i_152_ = -i_153_ & 0x3fff;
                                     }
-                                } else {
-                                    int i_154_ = i_150_;
-                                    i_150_ = i_152_;
-                                    i_152_ = i_154_;
                                 }
-                            } else {
-                                int i_155_ = i_150_;
-                                i_150_ = -i_152_;
-                                i_152_ = i_155_;
                             }
                         }
                     } else if (i_147_ == 0 || i_147_ == 1) {
@@ -734,16 +726,16 @@ abstract class Class64 {
                     int i_156_ = -i_150_;
                     i_150_ = i_152_;
                     i_152_ = i_156_;
-                } else if (i_147_ != 3) {
+                } else if (i_147_ == 3) {
+                    int i_158_ = i_150_;
+                    i_150_ = i_152_;
+                    i_152_ = i_158_;
+                } else {
                     if (i_147_ == 2) {
                         int i_157_ = i_150_;
                         i_150_ = -i_152_ & 0x3fff;
                         i_152_ = i_157_ & 0x3fff;
                     }
-                } else {
-                    int i_158_ = i_150_;
-                    i_150_ = i_152_;
-                    i_152_ = i_158_;
                 }
                 if (i_148_ == 65535)
                     method605(i_147_, is, i_150_, i_146_, i_152_, i, bool);

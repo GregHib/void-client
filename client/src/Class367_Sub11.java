@@ -180,10 +180,8 @@ final class Class367_Sub11 extends Class367 {
         anInt7405++;
         if (bool == false) {
             synchronized (Class79.aClient1367) {
-                if (Class34.aFrame476 != null) {
-                    /* empty */
-                } else {
-                    java.awt.Container container;
+                if (Class34.aFrame476 == null) {
+                    Container container;
                     if (Class52.aFrame4904 != null)
                         container = Class52.aFrame4904;
                     else if (Class93.anApplet1530 == null)
@@ -197,16 +195,14 @@ final class Class367_Sub11 extends Class367 {
                         Class272.anInt3473 -= insets.left - -insets.right;
                         Class348_Sub22.anInt6857 -= insets.bottom + insets.top;
                     }
-                    if (Class348_Sub42_Sub12.method3229(-86) != 1)
-                        Class286_Sub5.method2158((byte) 56);
-                    else {
+                    if (Class348_Sub42_Sub12.method3229(-86) == 1) {
                         Class321.anInt4017 = Class92.anInt1524;
                         Class335.anInt4167 = 0;
                         Class348_Sub48.anInt7129
                                 = (Class272.anInt3473 - Class92.anInt1524) / 2;
                         Class348_Sub42_Sub8_Sub2.anInt10432
                                 = ha_Sub2.anInt7666;
-                    }
+                    } else Class286_Sub5.method2158((byte) 56);
                     if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                         if (Class321.anInt4017 < 1024
                                 && Class348_Sub42_Sub8_Sub2.anInt10432 < 768) {
@@ -224,19 +220,19 @@ final class Class367_Sub11 extends Class367 {
                                     (Class305.aCanvas3869, Class321.anInt4017,
                                             Class348_Sub42_Sub8_Sub2.anInt10432);
                     }
-                    if (Class52.aFrame4904 != container)
-                        Class305.aCanvas3869.setLocation((Class348_Sub48
-                                        .anInt7129),
-                                Class335.anInt4167);
-                    else {
+                    if (Class52.aFrame4904 == container) {
                         Insets insets = Class52.aFrame4904.getInsets();
                         Class305.aCanvas3869.setLocation
                                 (insets.left - -Class348_Sub48.anInt7129,
                                         Class335.anInt4167 + insets.top);
-                    }
+                    } else Class305.aCanvas3869.setLocation((Class348_Sub48
+                                        .anInt7129),
+                                Class335.anInt4167);
                     if (r.anInt9721 != -1)
                         Class239.method1713(true, 520);
                     Class140.method1170((byte) -78);
+                } else {
+                    /* empty */
                 }
             }
         }
@@ -270,20 +266,18 @@ final class Class367_Sub11 extends Class367 {
                                 "uw_model_lit",
                                 -29832),
                         class377, 4);
-                if (!(aClass193_7395 != null & aClass193_7392 != null
-                        & aClass193_7404 != null & aClass193_7407 != null))
-                    aBoolean7391 = false;
-                else {
-                    anInterface18_Impl3_7390
-                            = this.aHa_Sub3_4479.method3839(1, 2,
-                            -15137,
-                            false,
-                            (new int[]
-                                    {0,
-                                            -1}));
-                    anInterface18_Impl3_7390.method66(false, false, 25688);
-                    aBoolean7391 = true;
-                }
+                if (aClass193_7395 != null & aClass193_7392 != null
+                        & aClass193_7404 != null & aClass193_7407 != null) {
+                            anInterface18_Impl3_7390
+                                    = this.aHa_Sub3_4479.method3839(1, 2,
+                                    -15137,
+                                    false,
+                                    (new int[]
+                                            {0,
+                                                    -1}));
+                            anInterface18_Impl3_7390.method66(false, false, 25688);
+                            aBoolean7391 = true;
+                        } else aBoolean7391 = false;
             } else
                 aBoolean7391 = false;
         } catch (RuntimeException runtimeexception) {

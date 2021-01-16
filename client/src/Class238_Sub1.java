@@ -148,28 +148,7 @@ final class Class238_Sub1 extends Class238 {
                                 (class348_sub9.anInt6681,
                                         class348_sub9.anInt6696,
                                         (byte) -120)));
-                        if (!class348_sub9.aBoolean6674) {
-                            Class317 class317
-                                    = Class317.method2372(Class129.aClass45_1878,
-                                    (class348_sub9
-                                            .anInt6685),
-                                    0);
-                            if (class317 != null) {
-                                Class348_Sub19_Sub1 class348_sub19_sub1
-                                        = class317.method2369()
-                                        .method2944(Class57.aClass163_1050);
-                                Class348_Sub16_Sub5 class348_sub16_sub5
-                                        = (Class348_Sub16_Sub5.method2911
-                                        (class348_sub19_sub1, i_15_,
-                                                i_9_ << 1018235430, i_10_));
-                                class348_sub16_sub5.method2917(-1);
-                                Class348_Sub43.aClass348_Sub16_Sub4_7065
-                                        .method2883(class348_sub16_sub5);
-                                class348_sub9
-                                        .aClass348_Sub16_Sub5_6676
-                                        = class348_sub16_sub5;
-                            }
-                        } else {
+                        if (class348_sub9.aBoolean6674) {
                             if ((class348_sub9
                                     .aClass348_Sub10_6688)
                                     == null)
@@ -206,6 +185,27 @@ final class Class238_Sub1 extends Class238 {
                                             .aClass348_Sub16_Sub5_6676
                                             = class348_sub16_sub5;
                                 }
+                            }
+                        } else {
+                            Class317 class317
+                                    = Class317.method2372(Class129.aClass45_1878,
+                                    (class348_sub9
+                                            .anInt6685),
+                                    0);
+                            if (class317 != null) {
+                                Class348_Sub19_Sub1 class348_sub19_sub1
+                                        = class317.method2369()
+                                        .method2944(Class57.aClass163_1050);
+                                Class348_Sub16_Sub5 class348_sub16_sub5
+                                        = (Class348_Sub16_Sub5.method2911
+                                        (class348_sub19_sub1, i_15_,
+                                                i_9_ << 1018235430, i_10_));
+                                class348_sub16_sub5.method2917(-1);
+                                Class348_Sub43.aClass348_Sub16_Sub4_7065
+                                        .method2883(class348_sub16_sub5);
+                                class348_sub9
+                                        .aClass348_Sub16_Sub5_6676
+                                        = class348_sub16_sub5;
                             }
                         }
                     }

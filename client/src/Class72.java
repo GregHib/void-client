@@ -87,7 +87,12 @@ final class Class72 {
         int i_14_;
         int i_15_;
         int i_16_;
-        if (!aBoolean1223) {
+        if (aBoolean1223) {
+            this.anInt1232 = 1073741823;
+            i_14_ = anInt1225;
+            i_15_ = anInt1216;
+            i_16_ = anInt1229;
+        } else {
             i_14_ = anInt1225 - i;
             i_15_ = anInt1216 - i_11_;
             i_16_ = anInt1229 - i_12_;
@@ -99,11 +104,6 @@ final class Class72 {
             i_14_ = (i_14_ << 8) / this.anInt1232;
             i_15_ = (i_15_ << 8) / this.anInt1232;
             i_16_ = (i_16_ << 8) / this.anInt1232;
-        } else {
-            this.anInt1232 = 1073741823;
-            i_14_ = anInt1225;
-            i_15_ = anInt1216;
-            i_16_ = anInt1229;
         }
         int i_17_ = (int) (Math.sqrt(i_14_ * i_14_ + i_15_ * i_15_
                 + i_16_ * i_16_)

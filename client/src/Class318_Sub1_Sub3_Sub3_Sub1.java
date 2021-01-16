@@ -314,19 +314,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
                     method2442(1810797122), false);
         this.method2432(var_ha, -15074, class101, false,
                 this.aClass64Array10323);
-        if (!Class305.aBoolean3870) {
-            for (int i_23_ = 0;
-                 (this.aClass64Array10323.length
-                         > i_23_);
-                 i_23_++) {
-                if (this.aClass64Array10323[i_23_]
-                        != null)
-                    this.aClass64Array10323
-                            [i_23_].method615
-                            (class101, (class318_sub4
-                                    .aClass318_Sub3Array6414[i_23_]), 0);
-            }
-        } else {
+        if (Class305.aBoolean3870) {
             for (int i_24_ = 0;
                  (this.aClass64Array10323.length
                          > i_24_);
@@ -339,6 +327,18 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
                                     (class318_sub4
                                             .aClass318_Sub3Array6414[i_24_]),
                                     Class132.anInt1906, 0);
+            }
+        } else {
+            for (int i_23_ = 0;
+                 (this.aClass64Array10323.length
+                         > i_23_);
+                 i_23_++) {
+                if (this.aClass64Array10323[i_23_]
+                        != null)
+                    this.aClass64Array10323
+                            [i_23_].method615
+                            (class101, (class318_sub4
+                                    .aClass318_Sub3Array6414[i_23_]), 0);
             }
         }
         if (this.aClass318_Sub10_10327 != null) {

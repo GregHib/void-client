@@ -198,7 +198,16 @@ final class Class42 {
                 } else if (i == 8)
                     this.aBoolean599
                             = class348_sub49.method3387(255) == 1;
-                else if (i != 9) {
+                else if (i == 9) {
+                    anInt590 = class348_sub49.method3330(842397944);
+                    if (anInt590 == 65535)
+                        anInt590 = -1;
+                    anInt606 = class348_sub49.method3330(842397944);
+                    if (anInt606 == 65535)
+                        anInt606 = -1;
+                    anInt585 = class348_sub49.method3385((byte) -126);
+                    anInt592 = class348_sub49.method3385((byte) -126);
+                } else {
                     if (i >= 10 && i <= 14)
                         this.aStringArray577[-10 + i]
                                 = class348_sub49.method3377((byte) -45);
@@ -250,7 +259,12 @@ final class Class42 {
                                         = class348_sub49.method3387(255);
                                 this.anInt601
                                         = class348_sub49.method3387(255);
-                            } else if (i != 24) {
+                            } else if (i == 24) {
+                                this.anInt566
+                                        = class348_sub49.method3372(13638);
+                                this.anInt568
+                                        = class348_sub49.method3372(13638);
+                            } else {
                                 if (i == 249) {
                                     int i_14_ = class348_sub49.method3387(255);
                                     if (aClass356_588 == null) {
@@ -283,26 +297,12 @@ final class Class42 {
                                                 class348);
                                     }
                                 }
-                            } else {
-                                this.anInt566
-                                        = class348_sub49.method3372(13638);
-                                this.anInt568
-                                        = class348_sub49.method3372(13638);
                             }
                         } else
                             this.anInt604
                                     = class348_sub49.method3385((byte) -126);
                     } else
                         this.aBoolean609 = false;
-                } else {
-                    anInt590 = class348_sub49.method3330(842397944);
-                    if (anInt590 == 65535)
-                        anInt590 = -1;
-                    anInt606 = class348_sub49.method3330(842397944);
-                    if (anInt606 == 65535)
-                        anInt606 = -1;
-                    anInt585 = class348_sub49.method3385((byte) -126);
-                    anInt592 = class348_sub49.method3385((byte) -126);
                 }
             } else
                 this.anInt580 = class348_sub49.method3351(-1);

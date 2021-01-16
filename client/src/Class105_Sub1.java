@@ -183,7 +183,19 @@ final class Class105_Sub1 extends Class105 {
                 = aBoolean8391 && anInt8419 == 0 && anInt8397 == 0;
         boolean bool_42_ = (aBoolean8396 && anInt8400 == 0
                 && anInt8416 == 0);
-        if (!(bool_42_ & bool)) {
+        if (bool_42_ & bool) {
+            class101_sub2_41_.method932
+                    (1.0F,
+                            anInterface18_Impl3_8403.method71((byte) -26, (float) i_37_),
+                            anInterface18_Impl3_8403.method67((float) i_36_, 118),
+                            (byte) -75);
+            class101_sub2.method932(0.0F, (float) i_37_, (float) i_36_,
+                    (byte) -83);
+            class101_sub2.method891(i, i_35_, 0);
+            aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+            aHa_Sub3_8407.method3915(0);
+            aHa_Sub3_8407.method3933(-63);
+        } else {
             if (bool_42_) {
                 int i_43_ = i_37_ + i_35_;
                 int i_44_ = method980();
@@ -221,7 +233,43 @@ final class Class105_Sub1 extends Class105 {
                     aHa_Sub3_8407.method3915(0);
                     aHa_Sub3_8407.method3933(-91);
                 }
-            } else if (!bool) {
+            } else if (bool) {
+                int i_61_ = i - -i_36_;
+                int i_62_ = method966();
+                class101_sub2_41_.method932
+                        (1.0F,
+                                anInterface18_Impl3_8403.method71((byte) -121,
+                                        (float) i_37_),
+                                anInterface18_Impl3_8403.method67((float) anInt8411, 77),
+                                (byte) -27);
+                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+                int i_63_ = i - -anInt8400;
+                for (int i_64_ = anInt8411 + i_63_; i_64_ <= i_61_;
+                     i_64_ += i_62_) {
+                    class101_sub2.method932(0.0F, (float) i_37_,
+                            (float) anInt8411, (byte) -69);
+                    class101_sub2.method891(i_63_, i_35_, 0);
+                    aHa_Sub3_8407.method3915(0);
+                    i_63_ += i_62_;
+                    aHa_Sub3_8407.method3933(-40);
+                }
+                if (i_63_ < i_61_) {
+                    int i_65_ = -i_63_ + i_61_;
+                    class101_sub2_41_.method932
+                            (1.0F,
+                                    anInterface18_Impl3_8403.method71((byte) -62,
+                                            (float) i_37_),
+                                    anInterface18_Impl3_8403.method67((float) i_65_, 119),
+                                    (byte) -10);
+                    aHa_Sub3_8407.method3853(-32,
+                            Class239_Sub18.aClass251_6030);
+                    class101_sub2.method932(0.0F, (float) i_37_, (float) i_65_,
+                            (byte) -120);
+                    class101_sub2.method891(i_63_, i_35_, 0);
+                    aHa_Sub3_8407.method3915(0);
+                    aHa_Sub3_8407.method3933(-57);
+                }
+            } else {
                 int i_48_ = i_37_ + i_35_;
                 int i_49_ = i + i_36_;
                 int i_50_ = method966();
@@ -309,57 +357,9 @@ final class Class105_Sub1 extends Class105 {
                         aHa_Sub3_8407.method3933(-54);
                     }
                 }
-            } else {
-                int i_61_ = i - -i_36_;
-                int i_62_ = method966();
-                class101_sub2_41_.method932
-                        (1.0F,
-                                anInterface18_Impl3_8403.method71((byte) -121,
-                                        (float) i_37_),
-                                anInterface18_Impl3_8403.method67((float) anInt8411, 77),
-                                (byte) -27);
-                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
-                int i_63_ = i - -anInt8400;
-                for (int i_64_ = anInt8411 + i_63_; i_64_ <= i_61_;
-                     i_64_ += i_62_) {
-                    class101_sub2.method932(0.0F, (float) i_37_,
-                            (float) anInt8411, (byte) -69);
-                    class101_sub2.method891(i_63_, i_35_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    i_63_ += i_62_;
-                    aHa_Sub3_8407.method3933(-40);
-                }
-                if (i_63_ < i_61_) {
-                    int i_65_ = -i_63_ + i_61_;
-                    class101_sub2_41_.method932
-                            (1.0F,
-                                    anInterface18_Impl3_8403.method71((byte) -62,
-                                            (float) i_37_),
-                                    anInterface18_Impl3_8403.method67((float) i_65_, 119),
-                                    (byte) -10);
-                    aHa_Sub3_8407.method3853(-32,
-                            Class239_Sub18.aClass251_6030);
-                    class101_sub2.method932(0.0F, (float) i_37_, (float) i_65_,
-                            (byte) -120);
-                    class101_sub2.method891(i_63_, i_35_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    aHa_Sub3_8407.method3933(-57);
-                }
             }
-        } else {
-            class101_sub2_41_.method932
-                    (1.0F,
-                            anInterface18_Impl3_8403.method71((byte) -26, (float) i_37_),
-                            anInterface18_Impl3_8403.method67((float) i_36_, 118),
-                            (byte) -75);
-            class101_sub2.method932(0.0F, (float) i_37_, (float) i_36_,
-                    (byte) -83);
-            class101_sub2.method891(i, i_35_, 0);
-            aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
-            aHa_Sub3_8407.method3915(0);
-            aHa_Sub3_8407.method3933(-63);
-        }
-        aHa_Sub3_8407.method3879(-8629);
+		}
+		aHa_Sub3_8407.method3879(-8629);
         aHa_Sub3_8407.method3849((byte) 47, 1,
                 Class318_Sub1_Sub2.aClass70_8737);
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
@@ -460,7 +460,19 @@ final class Class105_Sub1 extends Class105 {
                                     (Class139.method1166(is[i_84_ - -i_85_], 743571200)
                                             << -86836496)));
             }
-        } else if (i_78_ != 2) {
+        } else if (i_78_ == 2) {
+            for (int i_89_ = 0; anInt8417 > i_89_; i_89_++) {
+                int i_90_ = i_89_ * anInt8411;
+                for (int i_91_ = 0;
+					 i_91_ < anInt8411; i_91_++)
+                    is_79_[i_90_ + i_91_]
+                            = (Class273.method2057
+                            (Class139.method1166(is_79_[i_90_ + i_91_],
+                                    16777215),
+                                    Class139.method1166(-3725444, (is[i_91_ + i_90_]
+                                            << -903347560))));
+            }
+        } else {
             if (i_78_ == 3) {
                 for (int i_86_ = 0;
 					 anInt8417 > i_86_;
@@ -474,20 +486,8 @@ final class Class105_Sub1 extends Class105 {
                                                 is_79_[i_88_ + i_87_])));
                 }
             }
-        } else {
-            for (int i_89_ = 0; anInt8417 > i_89_; i_89_++) {
-                int i_90_ = i_89_ * anInt8411;
-                for (int i_91_ = 0;
-					 i_91_ < anInt8411; i_91_++)
-                    is_79_[i_90_ + i_91_]
-                            = (Class273.method2057
-                            (Class139.method1166(is_79_[i_90_ + i_91_],
-                                    16777215),
-                                    Class139.method1166(-3725444, (is[i_91_ + i_90_]
-                                            << -903347560))));
-            }
         }
-        method986(0, 0, anInt8411, anInt8417, is_79_, 0, anInt8411);
+		method986(0, 0, anInt8411, anInt8417, is_79_, 0, anInt8411);
     }
 
     static final boolean method989(int i, int i_92_, int i_93_) {

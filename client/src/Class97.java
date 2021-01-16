@@ -244,7 +244,33 @@ final class Class97 {
                             = anInterface5_Impl2_1551.method24(true, false);
                     if (buffer != null) {
                         Stream stream = aHa_Sub3_1561.method3893(buffer, 9179);
-                        if (!Stream.c()) {
+                        if (Stream.c()) {
+                            for (int i_41_ = 0; i_41_ < i_28_; i_41_++) {
+                                int i_42_
+                                        = (var_s_Sub3.anInt4587 * (i_41_
+                                        + i_31_)
+                                        - -i_30_);
+                                for (int i_43_ = 0;
+                                     (i_28_ > i_43_);
+                                     i_43_++) {
+                                    short[] is
+                                            = (var_s_Sub3
+                                            .aShortArrayArray8299[i_42_++]);
+                                    if (is != null) {
+                                        for (int i_44_ = 0;
+                                             (is.length > i_44_);
+                                             i_44_++) {
+                                            int i_45_ = 0xffff & is[i_44_];
+                                            if (anInt1546 < i_45_)
+                                                anInt1546 = i_45_;
+                                            if (i_45_ < anInt1547)
+                                                anInt1547 = i_45_;
+                                            stream.d(i_45_);
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
                             for (int i_36_ = 0;
                                  i_36_ < i_28_;
                                  i_36_++) {
@@ -268,32 +294,6 @@ final class Class97 {
                                             if (i_40_ > anInt1546)
                                                 anInt1546 = i_40_;
                                             stream.a(i_40_);
-                                        }
-                                    }
-                                }
-                            }
-                        } else {
-                            for (int i_41_ = 0; i_41_ < i_28_; i_41_++) {
-                                int i_42_
-                                        = (var_s_Sub3.anInt4587 * (i_41_
-                                        + i_31_)
-                                        - -i_30_);
-                                for (int i_43_ = 0;
-                                     (i_28_ > i_43_);
-                                     i_43_++) {
-                                    short[] is
-                                            = (var_s_Sub3
-                                            .aShortArrayArray8299[i_42_++]);
-                                    if (is != null) {
-                                        for (int i_44_ = 0;
-                                             (is.length > i_44_);
-                                             i_44_++) {
-                                            int i_45_ = 0xffff & is[i_44_];
-                                            if (anInt1546 < i_45_)
-                                                anInt1546 = i_45_;
-                                            if (i_45_ < anInt1547)
-                                                anInt1547 = i_45_;
-                                            stream.d(i_45_);
                                         }
                                     }
                                 }

@@ -108,14 +108,12 @@ final class Class82 {
                         if (string.equalsIgnoreCase("occlude")) {
                             Class348_Sub40_Sub23.aBoolean9307
                                     = !Class348_Sub40_Sub23.aBoolean9307;
-                            if (!Class348_Sub40_Sub23.aBoolean9307)
-                                Applet_Sub1.method94("Occlsion now off!",
-                                        -106);
-                            else {
+                            if (Class348_Sub40_Sub23.aBoolean9307) {
                                 Applet_Sub1.method94("Occlsion now on!", -102);
                                 break;
-                            }
-                            break;
+                            } else Applet_Sub1.method94("Occlsion now off!",
+									-106);
+							break;
                         }
                         if (string.equalsIgnoreCase("fpson")) {
                             Class298.aBoolean3811 = true;
@@ -248,13 +246,11 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("wm1")) {
                             Class85.method830(1, -1, (byte) 102, false, -1);
-                            if (Class348_Sub42_Sub12.method3229(-61) != 1)
-                                Applet_Sub1.method94("wm1 failed", i ^ ~0x17);
-                            else {
+                            if (Class348_Sub42_Sub12.method3229(-61) == 1) {
                                 Applet_Sub1.method94("wm1 succeeded", -65);
                                 break;
-                            }
-                            break;
+                            } else Applet_Sub1.method94("wm1 failed", i ^ ~0x17);
+							break;
                         }
                         if (string.equalsIgnoreCase("wm2")) {
                             Class85.method830(2, -1, (byte) 102, false, -1);
@@ -279,40 +275,36 @@ final class Class82 {
                         if (string.equalsIgnoreCase("tk0")) {
                             Class367_Sub10.method3553(false, (byte) 104, 0);
                             if (Class316.aClass348_Sub51_3959
-									.aClass239_Sub25_7271.method1829(-32350) != 0)
-                                Applet_Sub1.method94("Failed to enter tk0",
-                                        69);
-                            else {
-                                Applet_Sub1.method94("Entered tk0", 101);
-                                Class316.aClass348_Sub51_3959.method3429
-                                        ((byte) 74,
-                                                (Class316.aClass348_Sub51_3959
-                                                        .aClass239_Sub25_7251),
-                                                0);
-                                Class14_Sub2.method243(37);
-                                r.aBoolean9719 = false;
-                                break;
-                            }
-                            break;
+									.aClass239_Sub25_7271.method1829(-32350) == 0) {
+										Applet_Sub1.method94("Entered tk0", 101);
+										Class316.aClass348_Sub51_3959.method3429
+												((byte) 74,
+														(Class316.aClass348_Sub51_3959
+																.aClass239_Sub25_7251),
+														0);
+										Class14_Sub2.method243(37);
+										r.aBoolean9719 = false;
+										break;
+									} else Applet_Sub1.method94("Failed to enter tk0",
+											69);
+							break;
                         }
                         if (string.equalsIgnoreCase("tk1")) {
                             Class367_Sub10.method3553(false, (byte) 109, 1);
                             if (Class316.aClass348_Sub51_3959
-									.aClass239_Sub25_7271.method1829(-32350) != 1)
-                                Applet_Sub1.method94("Failed to enter tk1",
-                                        -56);
-                            else {
-                                Applet_Sub1.method94("Entered tk1", -65);
-                                Class316.aClass348_Sub51_3959.method3429
-                                        ((byte) 74,
-                                                (Class316.aClass348_Sub51_3959
-                                                        .aClass239_Sub25_7251),
-                                                1);
-                                Class14_Sub2.method243(i ^ ~0x6b);
-                                r.aBoolean9719 = false;
-                                break;
-                            }
-                            break;
+									.aClass239_Sub25_7271.method1829(-32350) == 1) {
+										Applet_Sub1.method94("Entered tk1", -65);
+										Class316.aClass348_Sub51_3959.method3429
+												((byte) 74,
+														(Class316.aClass348_Sub51_3959
+																.aClass239_Sub25_7251),
+														1);
+										Class14_Sub2.method243(i ^ ~0x6b);
+										r.aBoolean9719 = false;
+										break;
+									} else Applet_Sub1.method94("Failed to enter tk1",
+											-56);
+							break;
                         }
                         if (string.equalsIgnoreCase("tk2")) {
                             Class367_Sub10.method3553(false, (byte) 115, 2);
@@ -337,21 +329,19 @@ final class Class82 {
                         if (string.equalsIgnoreCase("tk3")) {
                             Class367_Sub10.method3553(false, (byte) 107, 3);
                             if (Class316.aClass348_Sub51_3959
-									.aClass239_Sub25_7271.method1829(-32350) != 3)
-                                Applet_Sub1.method94("Failed to enter tk3",
-                                        54);
-                            else {
-                                Applet_Sub1.method94("Entered tk3", 78);
-                                Class316.aClass348_Sub51_3959.method3429
-                                        ((byte) 74,
-                                                (Class316.aClass348_Sub51_3959
-                                                        .aClass239_Sub25_7251),
-                                                3);
-                                Class14_Sub2.method243(37);
-                                r.aBoolean9719 = false;
-                                break;
-                            }
-                            break;
+									.aClass239_Sub25_7271.method1829(-32350) == 3) {
+										Applet_Sub1.method94("Entered tk3", 78);
+										Class316.aClass348_Sub51_3959.method3429
+												((byte) 74,
+														(Class316.aClass348_Sub51_3959
+																.aClass239_Sub25_7251),
+														3);
+										Class14_Sub2.method243(37);
+										r.aBoolean9719 = false;
+										break;
+									} else Applet_Sub1.method94("Failed to enter tk3",
+											54);
+							break;
                         }
                         if (string.equalsIgnoreCase("tk5")) {
                             Class367_Sub10.method3553(false, (byte) 113, 5);
@@ -445,34 +435,30 @@ final class Class82 {
                         if (string.startsWith("bloom")) {
                             boolean bool_7_
                                     = Class348_Sub8.aHa6654.method3666();
-                            if (!Class348_Sub40_Sub33.method3137(!bool_7_,
-                                    (byte) -24))
-                                Applet_Sub1.method94("Failed to enable bloom",
-                                        52);
-                            else {
-                                if (!bool_7_)
-                                    Applet_Sub1.method94("Bloom enabled", 71);
-                                else {
-                                    Applet_Sub1.method94("Bloom disabled",
-                                            i + -49);
-                                    break;
-                                }
-                                break;
-                            }
-                            break;
+                            if (Class348_Sub40_Sub33.method3137(!bool_7_,
+									(byte) -24)) {
+										if (bool_7_) {
+											Applet_Sub1.method94("Bloom disabled",
+													i + -49);
+											break;
+										} else Applet_Sub1.method94("Bloom enabled", 71);
+								break;
+									} else Applet_Sub1.method94("Failed to enable bloom",
+											52);
+							break;
                         }
                         if (string.equalsIgnoreCase("tween")) {
-                            if (!Class28.aBoolean5002) {
-                                Class28.aBoolean5002 = true;
-                                Applet_Sub1
-                                        .method94("Forced tweening ENABLED!", -89);
-                            } else {
+                            if (Class28.aBoolean5002) {
                                 Class28.aBoolean5002 = false;
                                 Applet_Sub1.method94
                                         ("Forced tweening disabled.", i ^ ~0x71);
                                 break;
+                            } else {
+                                Class28.aBoolean5002 = true;
+                                Applet_Sub1
+                                        .method94("Forced tweening ENABLED!", -89);
                             }
-                            break;
+							break;
                         }
                         if (string.equalsIgnoreCase("shiftclick")) {
                             if (Class116.aBoolean1759) {
@@ -668,13 +654,7 @@ final class Class82 {
                                     /* empty */
                                 }
                             }
-                            if (i_9_ != -1)
-                                Applet_Sub1.method94
-                                        (("Performance: "
-                                                        + Class239_Sub14.method1781(i_9_, -69,
-                                                i_10_)),
-                                                -84);
-                            else {
+                            if (i_9_ == -1) {
                                 Applet_Sub1.method94
                                         (("Java toolkit: "
                                                         + Class239_Sub14.method1781(0, -85,
@@ -701,8 +681,12 @@ final class Class82 {
                                                 i_10_)),
                                                 -101);
                                 break;
-                            }
-                            break;
+                            } else Applet_Sub1.method94
+									(("Performance: "
+													+ Class239_Sub14.method1781(i_9_, -69,
+											i_10_)),
+											-84);
+							break;
                         }
                         if (string.equals("nonpcs")) {
                             Class373_Sub2.aBoolean7444
@@ -924,17 +908,14 @@ final class Class82 {
                                 r.aBoolean9719 = false;
                                 Class348_Sub42_Sub3.method3179(i + 79);
                                 if (Class316.aClass348_Sub51_3959
-                                        .aClass239_Sub3_7222.method1727(-32350)
-                                        != i_21_)
-                                    Applet_Sub1.method94
-                                            ("Failed to change ortho mode", -112);
-                                else {
-                                    Applet_Sub1.method94
-                                            ("Successfully changed ortho mode",
-                                                    -82);
-                                    break;
-                                }
-                                break;
+										.aClass239_Sub3_7222.method1727(-32350) == i_21_) {
+											Applet_Sub1.method94
+													("Successfully changed ortho mode",
+															-82);
+											break;
+										} else Applet_Sub1.method94
+												("Failed to change ortho mode", -112);
+								break;
                             }
                             break;
                         }

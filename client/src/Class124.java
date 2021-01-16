@@ -410,25 +410,23 @@ final class Class124 {
                     = (short) class348_sub49.method3330(842397944);
             if (i_57_ == 1) {
                 int i_89_ = class348_sub49_53_.method3387(255);
-                if ((0x1 & i_89_) != 1)
-                    this.aByteArray1843[i_88_] = (byte) 0;
-                else {
+                if ((0x1 & i_89_) == 1) {
                     this.aByteArray1843[i_88_] = (byte) 1;
                     bool = true;
-                }
-                if ((i_89_ & 0x2) != 2) {
-                    this.aByteArray1820[i_88_] = (byte) -1;
-                    this.aShortArray1822[i_88_] = (short) -1;
-                } else {
-                    this.aByteArray1820[i_88_]
-                            = (byte) (i_89_ >> -231090654);
-                    this.aShortArray1822[i_88_]
-                            = this.aShortArray1862[i_88_];
-                    this.aShortArray1862[i_88_] = (short) 127;
-                    if (this.aShortArray1822[i_88_] != -1)
-                        bool_52_ = true;
-                }
-            }
+                } else this.aByteArray1843[i_88_] = (byte) 0;
+				if ((i_89_ & 0x2) == 2) {
+					this.aByteArray1820[i_88_]
+							= (byte) (i_89_ >> -231090654);
+					this.aShortArray1822[i_88_]
+							= this.aShortArray1862[i_88_];
+					this.aShortArray1862[i_88_] = (short) 127;
+					if (this.aShortArray1822[i_88_] != -1)
+						bool_52_ = true;
+				} else {
+					this.aByteArray1820[i_88_] = (byte) -1;
+					this.aShortArray1822[i_88_] = (short) -1;
+				}
+			}
             if (i_58_ == 255)
                 this.aByteArray1839[i_88_]
                         = class348_sub49_54_.method3388(-108);
@@ -1222,16 +1220,14 @@ final class Class124 {
                 bool_221_
                         = (bool_221_
                         | class124_225_.aByteArray1820 != null);
-                if (class124_225_.aByteArray1839 != null)
-                    bool_219_ = true;
-                else {
+                if (class124_225_.aByteArray1839 == null) {
                     if (this.aByte1851 == -1)
                         this.aByte1851
                                 = class124_225_.aByte1851;
                     if (this.aByte1851 != class124_225_.aByte1851)
                         bool_219_ = true;
-                }
-                bool_220_
+                } else bool_219_ = true;
+				bool_220_
                         = (bool_220_
                         | class124_225_.aByteArray1834 != null);
                 bool_223_

@@ -48,7 +48,13 @@ final class Class286_Sub3 extends Class286 {
                                     aClass83_6227.aClass258_Sub1_1440);
                 OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F,
                         0.0F, 1.0F);
-            } else if (!aClass83_6227.aBoolean1442) {
+            } else if (aClass83_6227.aBoolean1442) {
+                this.aHa_Sub2_3684.method3771
+                        ((byte) -83,
+                                aClass83_6227.aClass258_Sub1_1440);
+                OpenGL.glProgramLocalParameter4fARB(34336, 65, aFloat6225,
+                        0.0F, 0.0F, 1.0F);
+            } else {
                 int i_2_
                         = (this.aHa_Sub2_3684.anInt7735
                         % 4000 * 16 / 4000);
@@ -57,18 +63,9 @@ final class Class286_Sub3 extends Class286 {
                                 aClass83_6227.aClass258_Sub3Array1444[i_2_]);
                 OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F,
                         0.0F, 1.0F);
-            } else {
-                this.aHa_Sub2_3684.method3771
-                        ((byte) -83,
-                                aClass83_6227.aClass258_Sub1_1440);
-                OpenGL.glProgramLocalParameter4fARB(34336, 65, aFloat6225,
-                        0.0F, 0.0F, 1.0F);
             }
             this.aHa_Sub2_3684.method3738(-15039, 0);
-            if ((0x40 & i) != 0)
-                OpenGL.glProgramLocalParameter4fARB(34336, 66, 1.0F, 1.0F,
-                        1.0F, 1.0F);
-            else {
+            if ((0x40 & i) == 0) {
                 Class348_Sub42_Sub1.aFloatArray9491[2]
                         = (this.aHa_Sub2_3684.aFloat7823
                         * (this.aHa_Sub2_3684
@@ -85,7 +82,8 @@ final class Class286_Sub3 extends Class286 {
                         (Class348_Sub42_Sub1
                                 .aFloatArray9491),
                         0);
-            }
+            } else OpenGL.glProgramLocalParameter4fARB(34336, 66, 1.0F, 1.0F,
+                    1.0F, 1.0F);
             int i_3_ = i & 0x3;
             if (i_3_ == 2)
                 OpenGL.glProgramLocalParameter4fARB(34336, 64, 0.05F, 1.0F,

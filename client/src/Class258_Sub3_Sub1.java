@@ -13,14 +13,14 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
     Class258_Sub3_Sub1(ha_Sub2 var_ha_Sub2, int i, int i_0_, int i_1_,
                        int i_2_) {
         super(var_ha_Sub2, i, i_0_, i_1_, i_2_);
-        if (this.anInt4849 != 34037) {
-            this.aBoolean9941 = true;
-            this.aFloat9937
-                    = this.aFloat9938 = 1.0F;
-        } else {
+        if (this.anInt4849 == 34037) {
             this.aFloat9938 = (float) i_2_;
             this.aBoolean9941 = false;
             this.aFloat9937 = (float) i_1_;
+        } else {
+            this.aBoolean9941 = true;
+            this.aFloat9937
+                    = this.aFloat9938 = 1.0F;
         }
         this.anInt9940 = i_1_;
         this.anInt9939 = i_2_;

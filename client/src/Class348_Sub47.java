@@ -84,12 +84,7 @@ final class Class348_Sub47 extends Class348 {
 
     static final void method3327(int i) {
         if (i == 1406) {
-            if (!Class348_Sub8.aHa6654.method3694())
-                Class367_Sub10.method3553(false, (byte) 100,
-                        Class316.aClass348_Sub51_3959
-                                .aClass239_Sub25_7271
-                                .method1829(-32350));
-            else {
+            if (Class348_Sub8.aHa6654.method3694()) {
                 Class348_Sub8.aHa6654.method3701(Class305.aCanvas3869);
                 Class348_Sub22.method2959(-1);
                 if (!Class59_Sub1.aBoolean5300) {
@@ -100,7 +95,10 @@ final class Class348_Sub47 extends Class348 {
                 } else
                     Class124.method1108((byte) -99, Class305.aCanvas3869);
                 Class348_Sub8.aHa6654.method3677(Class305.aCanvas3869);
-            }
+            } else Class367_Sub10.method3553(false, (byte) 100,
+                    Class316.aClass348_Sub51_3959
+                            .aClass239_Sub25_7271
+                            .method1829(-32350));
             anInt7123++;
             Class354.method3466(i + -1347);
             Class348_Sub16_Sub2.aBoolean8870 = true;

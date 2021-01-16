@@ -27,7 +27,12 @@ final class Class189 {
             this.anInt2525 = class348_sub49.method3330(842397944);
             if (this.anInt2525 == 65535)
                 this.anInt2525 = -1;
-        } else if (i != 2) {
+        } else if (i == 2) {
+            this.anInt2526
+                    = 1 + class348_sub49.method3330(842397944);
+            this.anInt2530
+                    = class348_sub49.method3330(842397944) - -1;
+        } else {
             if (i != 3) {
                 if (i == 4)
                     this.anInt2534
@@ -42,11 +47,6 @@ final class Class189 {
                             = class348_sub49.method3387(255);
             } else
                 class348_sub49.method3388(-106);
-        } else {
-            this.anInt2526
-                    = 1 + class348_sub49.method3330(842397944);
-            this.anInt2530
-                    = class348_sub49.method3330(842397944) - -1;
         }
     }
 
@@ -99,7 +99,15 @@ final class Class189 {
                         while_45_:
                         do {
                             do {
-                                if (i_25_ != -4) {
+                                if (i_25_ == -4) {
+                                    if (i_15_ == i_9_
+                                            && (i_16_ == i_14_)) {
+                                        Class348_Sub40_Sub30.anInt9388 = i_15_;
+                                        Class115.anInt1753 = i_16_;
+                                        return true;
+                                    }
+                                    break while_48_;
+                                } else {
                                     if (i_25_ != -3) {
                                         if (i_25_ != -2) {
                                             if (i_25_ != -1) {
@@ -113,14 +121,6 @@ final class Class189 {
                                             break;
                                         break while_45_;
                                     }
-                                } else {
-                                    if (i_15_ == i_9_
-                                            && (i_16_ == i_14_)) {
-                                        Class348_Sub40_Sub30.anInt9388 = i_15_;
-                                        Class115.anInt1753 = i_16_;
-                                        return true;
-                                    }
-                                    break while_48_;
                                 }
                                 if (Class239_Sub28.method1842(i, i_14_, -1,
                                         i_12_, i_15_,

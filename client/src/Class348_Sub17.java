@@ -32,14 +32,12 @@ final class Class348_Sub17 extends Class348 {
                                                   String string) {
         anInt6789++;
         RuntimeException_Sub1 runtimeexception_sub1;
-        if (!(throwable instanceof RuntimeException_Sub1))
-            runtimeexception_sub1
-                    = new RuntimeException_Sub1(throwable, string);
-        else {
+        if (throwable instanceof RuntimeException_Sub1) {
             runtimeexception_sub1 = (RuntimeException_Sub1) throwable;
             runtimeexception_sub1.aString4594
                     += ' ' + string;
-        }
+        } else runtimeexception_sub1
+                = new RuntimeException_Sub1(throwable, string);
         return runtimeexception_sub1;
     }
 

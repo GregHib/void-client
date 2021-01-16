@@ -76,10 +76,7 @@ final class Class367_Sub10 extends Class367 {
         if (i != 87)
             aClass45_7382 = null;
         anInt7386++;
-        if (!aBoolean7385)
-            this.aHa_Sub3_4479.method3885(0, true,
-                    Class342.aClass70_4247);
-        else {
+        if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382);
             this.aHa_Sub3_4479.method3871(Class150.aClass113_2047,
                     i ^ 0x57);
@@ -95,7 +92,8 @@ final class Class367_Sub10 extends Class367 {
             this.aHa_Sub3_4479.method3850((byte) -111, null);
             this.aHa_Sub3_4479.method3897(0, -4382);
             aBoolean7385 = false;
-        }
+        } else this.aHa_Sub3_4479.method3885(0, true,
+                Class342.aClass70_4247);
         this.aHa_Sub3_4479.method3874(Class167.aClass229_2207,
                 i ^ 0x2c,
                 Class167.aClass229_2207);

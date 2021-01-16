@@ -444,27 +444,12 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                             class225.anInt2948, (byte) -107));
         int i_50_ = -i_49_ + this
                 .aClass264_10217.anInt3370;
-        if (i_50_ != 0)
-            this.anInt10247++;
-        else {
+        if (i_50_ == 0) {
             this.anInt10247 = 0;
             this.aClass264_10217.method2016
                     (15615, this.anInt10282);
-        }
-        if (!bool) {
-            if (class225.anInt2901 == 0)
-                aClass264_10315.method2016(15615, 0);
-            else
-                aClass264_10315.method2020(class225.anInt2935, 0,
-                        class225.anInt2901,
-                        (byte) -26);
-            if (class225.anInt2936 != 0)
-                aClass264_10316.method2020(class225.anInt2904, 0,
-                        class225.anInt2936,
-                        (byte) -66);
-            else
-                aClass264_10316.method2016(15615, 0);
-        } else {
+        } else this.anInt10247++;
+        if (bool) {
             if (class225.anInt2901 != 0) {
                 if (i_50_ <= 0)
                     aClass264_10315.method2020(class225.anInt2935,
@@ -483,6 +468,19 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                         class225.anInt2926,
                         class225.anInt2936,
                         (byte) -127);
+        } else {
+            if (class225.anInt2901 == 0)
+                aClass264_10315.method2016(15615, 0);
+            else
+                aClass264_10315.method2020(class225.anInt2935, 0,
+                        class225.anInt2901,
+                        (byte) -26);
+            if (class225.anInt2936 != 0)
+                aClass264_10316.method2020(class225.anInt2904, 0,
+                        class225.anInt2936,
+                        (byte) -66);
+            else
+                aClass264_10316.method2016(15615, 0);
         }
         return i_50_;
     }
@@ -914,7 +912,27 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         int i_92_ = (!bool ? this.anInt10269
                 : this.anInt10291);
         if (i_88_ != -1 && i_92_ != -1) {
-            if (i_92_ != i_88_) {
+            if (i_92_ == i_88_) {
+                Class368 class368
+                        = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 65,
+                        i_88_);
+                if (class368.aBoolean4487
+                        && class368.anInt4503 != -1) {
+                    Class17 class17
+                            = Class10.aClass87_191
+                            .method835(class368.anInt4503, 7);
+                    int i_95_ = class17.anInt248;
+                    if (i_95_ == 0)
+                        return;
+                    if (i_95_ == 2) {
+                        if (bool) {
+                            this.anInt10265 = 0;
+                            return;
+                        } else this.anInt10305 = 0;
+                        return;
+                    }
+                }
+            } else {
                 Class368 class368 = Class348_Sub40_Sub18.aClass319_9245
                         .method2543((byte) 109, i_88_);
                 Class368 class368_93_
@@ -932,28 +950,6 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                     if (class17_94_.anInt239
                             > class17.anInt239)
                         return;
-                }
-            } else {
-                Class368 class368
-                        = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 65,
-                        i_88_);
-                if (class368.aBoolean4487
-                        && class368.anInt4503 != -1) {
-                    Class17 class17
-                            = Class10.aClass87_191
-                            .method835(class368.anInt4503, 7);
-                    int i_95_ = class17.anInt248;
-                    if (i_95_ == 0)
-                        return;
-                    if (i_95_ == 2) {
-                        if (!bool)
-                            this.anInt10305 = 0;
-                        else {
-                            this.anInt10265 = 0;
-                            return;
-                        }
-                        return;
-                    }
                 }
             }
         }
@@ -1037,22 +1033,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                 i_109_ = class31.anInt431;
                 i_110_ = class31.anInt434;
             }
-            if (!bool_106_) {
-                if (bool)
-                    aByte10222 = (byte) 0;
-                for (int i_111_ = 0;
-                     i_111_ < Class132.anInt1905;
-                     i_111_++) {
-                    int i_112_ = aByte10222;
-                    aByte10222
-                            = (byte) ((aByte10222 + 1) % Class132.anInt1905);
-                    if (i_99_ >= (this.anIntArray10219
-                            [i_112_])) {
-                        i_108_ = i_112_;
-                        break;
-                    }
-                }
-            } else {
+            if (bool_106_) {
                 if (i_109_ == -1)
                     return;
                 i_108_ = 0;
@@ -1083,6 +1064,21 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                 if (i_109_ == 1
                         && i_113_ >= i)
                     return;
+            } else {
+                if (bool)
+                    aByte10222 = (byte) 0;
+                for (int i_111_ = 0;
+                     i_111_ < Class132.anInt1905;
+                     i_111_++) {
+                    int i_112_ = aByte10222;
+                    aByte10222
+                            = (byte) ((aByte10222 + 1) % Class132.anInt1905);
+                    if (i_99_ >= (this.anIntArray10219
+                            [i_112_])) {
+                        i_108_ = i_112_;
+                        break;
+                    }
+                }
             }
             if (i_108_ >= 0) {
                 this.anIntArray10259[i_108_]

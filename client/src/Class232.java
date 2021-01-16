@@ -90,25 +90,7 @@ final class Class232 {
                 aClass258_Sub3_2998 = null;
             else {
                 Class348_Sub49 class348_sub49 = new Class348_Sub49(i_9_ * 2);
-                if (!aHa_Sub2_3000.aBoolean7775) {
-                    for (int i_15_ = 0;
-                         i_8_ > i_15_; i_15_++) {
-                        int i_16_
-                                = ((i_11_ - -i_15_) * var_s_Sub2.anInt4587
-                                - -i_10_);
-                        for (int i_17_ = 0;
-                             i_8_ > i_17_;
-                             i_17_++) {
-                            short[] is = (var_s_Sub2
-                                    .aShortArrayArray8267[i_16_++]);
-                            if (is != null) {
-                                for (int i_18_ = 0; is.length > i_18_; i_18_++)
-                                    class348_sub49
-                                            .method3397(87, is[i_18_] & 0xffff);
-                            }
-                        }
-                    }
-                } else {
+                if (aHa_Sub2_3000.aBoolean7775) {
                     for (int i_19_ = 0;
                          i_8_ > i_19_; i_19_++) {
                         int i_20_
@@ -124,6 +106,24 @@ final class Class232 {
                                     class348_sub49.method3337((byte) 107,
                                             (is[i_22_]
                                                     & 0xffff));
+                            }
+                        }
+                    }
+                } else {
+                    for (int i_15_ = 0;
+                         i_8_ > i_15_; i_15_++) {
+                        int i_16_
+                                = ((i_11_ - -i_15_) * var_s_Sub2.anInt4587
+                                - -i_10_);
+                        for (int i_17_ = 0;
+                             i_8_ > i_17_;
+                             i_17_++) {
+                            short[] is = (var_s_Sub2
+                                    .aShortArrayArray8267[i_16_++]);
+                            if (is != null) {
+                                for (int i_18_ = 0; is.length > i_18_; i_18_++)
+                                    class348_sub49
+                                            .method3397(87, is[i_18_] & 0xffff);
                             }
                         }
                     }
@@ -176,9 +176,7 @@ final class Class232 {
                     for (int i_30_ = -128; i_30_ < 0;
                          i_30_++) {
                         for (int i_31_ = -128; i_31_ < 0; i_31_++) {
-                            if (is[i_26_] != 0)
-                                is_23_[i_29_++] = (byte) 68;
-                            else {
+                            if (is[i_26_] == 0) {
                                 int i_32_ = 0;
                                 if (is[i_26_ - 1] != 0)
                                     i_32_++;
@@ -189,16 +187,12 @@ final class Class232 {
                                 if (is[i_25_ + i_26_] != 0)
                                     i_32_++;
                                 is_23_[i_29_++] = (byte) (i_32_ * 17);
-                            }
+                            } else is_23_[i_29_++] = (byte) 68;
                             i_26_++;
                         }
                         i_26_ += aClass104_2999.anInt1624 - 128;
                     }
-                    if (aClass258_Sub3_2998 != null)
-                        aClass258_Sub3_2998.method1970
-                                (0, 0, 128, false, 0, 128, 6406, -69,
-                                        aHa_Sub2_3000.aByteArray7879, 0);
-                    else {
+                    if (aClass258_Sub3_2998 == null) {
                         aClass258_Sub3_2998
                                 = new Class258_Sub3(aHa_Sub2_3000, 3553, 6406, 128,
                                 128, false,
@@ -207,7 +201,9 @@ final class Class232 {
                                 6406, false);
                         aClass258_Sub3_2998.method1965(false, false, 10243);
                         aClass258_Sub3_2998.method1957(9728, true);
-                    }
+                    } else aClass258_Sub3_2998.method1970
+                            (0, 0, 128, false, 0, 128, 6406, -69,
+                                    aHa_Sub2_3000.aByteArray7879, 0);
                 }
             }
         }

@@ -178,23 +178,23 @@ final class Class348_Sub38 extends Class348 {
             int i_38_ = (int) ((float) (i_35_ & 0xff) * f_34_);
             if (i_38_ > 255)
                 i_38_ = 255;
-            if (!Stream.c()) {
-                aStream7022.b((float) i_12_);
-                aStream7022.b((float) i_14_);
-                aStream7022.b((float) i_13_);
-            } else {
+            if (Stream.c()) {
                 aStream7022.a((float) i_12_);
                 aStream7022.a((float) i_14_);
                 aStream7022.a((float) i_13_);
-            }
-            if (aHa_Sub3_7007.anInt8178 != 0) {
-                aStream7022.f(i_36_);
-                aStream7022.f(i_37_);
-                aStream7022.f(i_38_);
             } else {
+                aStream7022.b((float) i_12_);
+                aStream7022.b((float) i_14_);
+                aStream7022.b((float) i_13_);
+            }
+            if (aHa_Sub3_7007.anInt8178 == 0) {
                 aStream7022.f(i_38_);
                 aStream7022.f(i_37_);
                 aStream7022.f(i_36_);
+            } else {
+                aStream7022.f(i_36_);
+                aStream7022.f(i_37_);
+                aStream7022.f(i_38_);
             }
             aStream7022.f(255);
             method3034(i_15_, (byte) 49);
@@ -336,90 +336,7 @@ final class Class348_Sub38 extends Class348 {
                                                 .anIntArrayArrayArray8296[i_57_]
                                                 [i_55_]);
                                         if (is_59_ != null && i_58_ != 0) {
-                                            if (i_58_ != 1) {
-                                                if (i_58_ == 3) {
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_, 0,
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_55_, 0,
-                                                            i_56_);
-                                                } else if (i_58_ != 2) {
-                                                    if (i_58_ == 5) {
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_56_);
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_, 0, i_56_);
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343, 0, i_55_,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_56_);
-                                                    } else if (i_58_ == 4) {
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_, 0, i_56_);
-                                                        method3033(i_54_,
-                                                                i_57_,
-                                                                -29343, 0,
-                                                                i_55_, 0,
-                                                                i_56_);
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_56_);
-                                                    }
-                                                } else {
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_55_,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_, 0,
-                                                            i_56_);
-                                                }
-                                            } else {
+                                            if (i_58_ == 1) {
                                                 int[] is_60_
                                                         = (var_s_Sub3
                                                         .anIntArrayArrayArray8321
@@ -465,6 +382,89 @@ final class Class348_Sub38 extends Class348 {
                                                                         [i_62_]),
                                                                 i_56_);
                                                         i_62_++;
+                                                    }
+                                                }
+                                            } else {
+                                                if (i_58_ == 3) {
+                                                    method3033(i_54_, i_57_,
+                                                            -29343, 0,
+                                                            i_55_, 0,
+                                                            i_56_);
+                                                    method3033(i_54_, i_57_,
+                                                            -29343, 0,
+                                                            i_55_,
+                                                            (var_s_Sub3
+                                                                    .anInt4592),
+                                                            i_56_);
+                                                    method3033(i_54_, i_57_,
+                                                            -29343,
+                                                            (var_s_Sub3
+                                                                    .anInt4592),
+                                                            i_55_, 0,
+                                                            i_56_);
+                                                } else if (i_58_ == 2) {
+                                                    method3033(i_54_, i_57_,
+                                                            -29343, 0,
+                                                            i_55_,
+                                                            (var_s_Sub3
+                                                                    .anInt4592),
+                                                            i_56_);
+                                                    method3033(i_54_, i_57_,
+                                                            -29343,
+                                                            (var_s_Sub3
+                                                                    .anInt4592),
+                                                            i_55_,
+                                                            (var_s_Sub3
+                                                                    .anInt4592),
+                                                            i_56_);
+                                                    method3033(i_54_, i_57_,
+                                                            -29343, 0,
+                                                            i_55_, 0,
+                                                            i_56_);
+                                                } else {
+                                                    if (i_58_ == 5) {
+                                                        method3033
+                                                                (i_54_, i_57_,
+                                                                        -29343,
+                                                                        (var_s_Sub3
+                                                                                .anInt4592),
+                                                                        i_55_,
+                                                                        (var_s_Sub3
+                                                                                .anInt4592),
+                                                                        i_56_);
+                                                        method3033
+                                                                (i_54_, i_57_,
+                                                                        -29343,
+                                                                        (var_s_Sub3
+                                                                                .anInt4592),
+                                                                        i_55_, 0, i_56_);
+                                                        method3033
+                                                                (i_54_, i_57_,
+                                                                        -29343, 0, i_55_,
+                                                                        (var_s_Sub3
+                                                                                .anInt4592),
+                                                                        i_56_);
+                                                    } else if (i_58_ == 4) {
+                                                        method3033
+                                                                (i_54_, i_57_,
+                                                                        -29343,
+                                                                        (var_s_Sub3
+                                                                                .anInt4592),
+                                                                        i_55_, 0, i_56_);
+                                                        method3033(i_54_,
+                                                                i_57_,
+                                                                -29343, 0,
+                                                                i_55_, 0,
+                                                                i_56_);
+                                                        method3033
+                                                                (i_54_, i_57_,
+                                                                        -29343,
+                                                                        (var_s_Sub3
+                                                                                .anInt4592),
+                                                                        i_55_,
+                                                                        (var_s_Sub3
+                                                                                .anInt4592),
+                                                                        i_56_);
                                                     }
                                                 }
                                             }

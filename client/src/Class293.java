@@ -41,7 +41,17 @@ final class Class293 implements Runnable {
     private final void method2207() {
         aHa3746.method3659(anInt3749);
         while (!aBoolean3750 && aBoolean3745) {
-            if (aClass315_3743 != null && !aClass315_3743.method2360(-112)) {
+            if (aClass315_3743 == null || aClass315_3743.method2360(-112)) {
+                aBoolean3744 = false;
+                aLong3742 = Class50_Sub4.aClass47_5262.method446(1);
+                synchronized (this) {
+                    try {
+                        this.wait();
+                    } catch (InterruptedException interruptedexception) {
+                        /* empty */
+                    }
+                }
+            } else {
                 aBoolean3744 = true;
                 Class318 class318 = aClass315_3743.method2362(25061);
                 if (class318 instanceof Class318_Sub1) {
@@ -99,16 +109,6 @@ final class Class293 implements Runnable {
                                 }
                             }
                         }
-                    }
-                }
-            } else {
-                aBoolean3744 = false;
-                aLong3742 = Class50_Sub4.aClass47_5262.method446(1);
-                synchronized (this) {
-                    try {
-                        this.wait();
-                    } catch (InterruptedException interruptedexception) {
-                        /* empty */
                     }
                 }
             }

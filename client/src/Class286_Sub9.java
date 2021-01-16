@@ -78,7 +78,12 @@ final class Class286_Sub9 extends Class286 {
         OpenGL.glLoadIdentity();
         OpenGL.glRotatef(22.5F, 1.0F, 0.0F, 0.0F);
         OpenGL.glMatrixMode(5888);
-        if (!aBoolean6308) {
+        if (aBoolean6308) {
+            this.aHa_Sub2_3684.method3729(260, (byte) 104, 7681);
+            this.aHa_Sub2_3684.method3762(5890, 770, (byte) -87,
+                    0);
+            this.aHa_Sub2_3684.method3775(false, 0, 770, 34167);
+        } else {
             this.aHa_Sub2_3684.method3729(7681, (byte) 126, 8448);
             this.aHa_Sub2_3684.method3762(34168, 768, (byte) -87,
                     0);
@@ -88,11 +93,6 @@ final class Class286_Sub9 extends Class286 {
                     0);
             this.aHa_Sub2_3684.method3762(34168, 770, (byte) -87,
                     1);
-            this.aHa_Sub2_3684.method3775(false, 0, 770, 34167);
-        } else {
-            this.aHa_Sub2_3684.method3729(260, (byte) 104, 7681);
-            this.aHa_Sub2_3684.method3762(5890, 770, (byte) -87,
-                    0);
             this.aHa_Sub2_3684.method3775(false, 0, 770, 34167);
         }
         this.aHa_Sub2_3684.method3738(-15039, 0);
@@ -105,7 +105,12 @@ final class Class286_Sub9 extends Class286 {
         OpenGL.glMatrixMode(5890);
         OpenGL.glLoadIdentity();
         OpenGL.glMatrixMode(5888);
-        if (!aBoolean6308) {
+        if (aBoolean6308) {
+            this.aHa_Sub2_3684.method3729(8448, (byte) 115, 8448);
+            this.aHa_Sub2_3684.method3762(5890, 768, (byte) -87,
+                    0);
+            this.aHa_Sub2_3684.method3775(false, 0, 770, 5890);
+        } else {
             this.aHa_Sub2_3684.method3729(8448, (byte) -9, 8448);
             this.aHa_Sub2_3684.method3762(5890, 768, (byte) -87,
                     0);
@@ -115,11 +120,6 @@ final class Class286_Sub9 extends Class286 {
                     0);
             this.aHa_Sub2_3684.method3762(34168, 768, (byte) -87,
                     1);
-            this.aHa_Sub2_3684.method3775(false, 0, 770, 5890);
-        } else {
-            this.aHa_Sub2_3684.method3729(8448, (byte) 115, 8448);
-            this.aHa_Sub2_3684.method3762(5890, 768, (byte) -87,
-                    0);
             this.aHa_Sub2_3684.method3775(false, 0, 770, 5890);
         }
         this.aHa_Sub2_3684.method3738(-15039, 0);
@@ -210,16 +210,14 @@ final class Class286_Sub9 extends Class286 {
                         int i_19_;
                         int i_20_;
                         int i_21_;
-                        if (!(f_18_ > 0.0F))
-                            i_19_ = i_20_ = i_21_ = 0;
-                        else {
+                        if (f_18_ > 0.0F) {
                             i_19_ = (int) ((double) i
                                     * Math.pow(f_18_, 96.0));
                             i_20_ = (int) ((double) i
                                     * Math.pow(f_18_, 36.0));
                             i_21_ = (int) ((double) i
                                     * Math.pow(f_18_, 12.0));
-                        }
+                        } else i_19_ = i_20_ = i_21_ = 0;
                         is_10_[i_17_][i_12_] = (byte) i_19_;
                         is_11_[i_17_][i_12_] = (byte) i_20_;
                         is[i_17_][i_12_] = (byte) i_21_;
@@ -299,13 +297,22 @@ final class Class286_Sub9 extends Class286 {
             int i_26_
                     = (class318_sub1_sub3_sub3_sub2
                     .anIntArray10317[0]);
-            if (i_24_ != 0) {
+            if (i_24_ == 0) {
+                i_26_--;
+                i_25_--;
+            } else {
                 if (i_24_ != 1) {
-                    if (i_24_ != 2) {
+                    if (i_24_ == 2) {
+                        i_25_++;
+                        i_26_--;
+                    } else {
                         if (i_24_ == 3)
                             i_25_--;
                         else if (i_24_ != 4) {
-                            if (i_24_ != 5) {
+                            if (i_24_ == 5) {
+                                i_26_++;
+                                i_25_--;
+                            } else {
                                 if (i_24_ != 6) {
                                     if (i_24_ == 7) {
                                         i_26_++;
@@ -313,29 +320,14 @@ final class Class286_Sub9 extends Class286 {
                                     }
                                 } else
                                     i_26_++;
-                            } else {
-                                i_26_++;
-                                i_25_--;
                             }
                         } else
                             i_25_++;
-                    } else {
-                        i_25_++;
-                        i_26_--;
                     }
                 } else
                     i_26_--;
-            } else {
-                i_26_--;
-                i_25_--;
             }
-            if (!bool)
-                class318_sub1_sub3_sub3_sub2.method2455(i_26_, -26443,
-                        (Class259
-                                .aByteArray3300
-                                [i_22_]),
-                        i_25_);
-            else {
+            if (bool) {
                 class318_sub1_sub3_sub3_sub2
                         .anInt10531
                         = i_26_;
@@ -345,7 +337,11 @@ final class Class286_Sub9 extends Class286 {
                 class318_sub1_sub3_sub3_sub2
                         .anInt10549
                         = i_25_;
-            }
+            } else class318_sub1_sub3_sub3_sub2.method2455(i_26_, -26443,
+                    (Class259
+                            .aByteArray3300
+                            [i_22_]),
+                    i_25_);
         } else if (i_23_ == 2) {
             int i_27_ = class348_sub49_sub2.method3410((byte) -24, 4);
             int i_28_
@@ -357,13 +353,22 @@ final class Class286_Sub9 extends Class286 {
             if (i_27_ == 0) {
                 i_28_ -= 2;
                 i_29_ -= 2;
-            } else if (i_27_ != 1) {
+            } else if (i_27_ == 1) {
+                i_29_ -= 2;
+                i_28_--;
+            } else {
                 if (i_27_ != 2) {
-                    if (i_27_ != 3) {
+                    if (i_27_ == 3) {
+                        i_29_ -= 2;
+                        i_28_++;
+                    } else {
                         if (i_27_ == 4) {
                             i_28_ += 2;
                             i_29_ -= 2;
-                        } else if (i_27_ != 5) {
+                        } else if (i_27_ == 5) {
+                            i_28_ -= 2;
+                            i_29_--;
+                        } else {
                             if (i_27_ == 6) {
                                 i_29_--;
                                 i_28_ += 2;
@@ -374,7 +379,10 @@ final class Class286_Sub9 extends Class286 {
                             else if (i_27_ == 9) {
                                 i_29_++;
                                 i_28_ -= 2;
-                            } else if (i_27_ != 10) {
+                            } else if (i_27_ == 10) {
+                                i_29_++;
+                                i_28_ += 2;
+                            } else {
                                 if (i_27_ == 11) {
                                     i_29_ += 2;
                                     i_28_ -= 2;
@@ -391,31 +399,13 @@ final class Class286_Sub9 extends Class286 {
                                     }
                                 } else
                                     i_29_ += 2;
-                            } else {
-                                i_29_++;
-                                i_28_ += 2;
                             }
-                        } else {
-                            i_28_ -= 2;
-                            i_29_--;
                         }
-                    } else {
-                        i_29_ -= 2;
-                        i_28_++;
                     }
                 } else
                     i_29_ -= 2;
-            } else {
-                i_29_ -= 2;
-                i_28_--;
             }
-            if (!bool)
-                class318_sub1_sub3_sub3_sub2.method2455(i_29_, -26443,
-                        (Class259
-                                .aByteArray3300
-                                [i_22_]),
-                        i_28_);
-            else {
+            if (bool) {
                 class318_sub1_sub3_sub3_sub2
                         .aBoolean10539
                         = true;
@@ -425,7 +415,11 @@ final class Class286_Sub9 extends Class286 {
                 class318_sub1_sub3_sub3_sub2
                         .anInt10531
                         = i_29_;
-            }
+            } else class318_sub1_sub3_sub3_sub2.method2455(i_29_, -26443,
+                    (Class259
+                            .aByteArray3300
+                            [i_22_]),
+                    i_28_);
         } else {
             int i_30_ = class348_sub49_sub2.method3410((byte) -24, 1);
             if (i_30_ == 0) {
@@ -441,20 +435,18 @@ final class Class286_Sub9 extends Class286 {
                         .anIntArray10320[0]);
                 int i_36_ = i_34_ + (class318_sub1_sub3_sub3_sub2
                         .anIntArray10317[0]);
-                if (!bool)
-                    class318_sub1_sub3_sub3_sub2.method2455(i_36_, -26443,
-                            (Class259
-                                    .aByteArray3300
-                                    [i_22_]),
-                            i_35_);
-                else {
+                if (bool) {
                     class318_sub1_sub3_sub3_sub2.anInt10531
                             = i_36_;
                     class318_sub1_sub3_sub3_sub2.anInt10549
                             = i_35_;
                     class318_sub1_sub3_sub3_sub2.aBoolean10539
                             = true;
-                }
+                } else class318_sub1_sub3_sub3_sub2.method2455(i_36_, -26443,
+                        (Class259
+                                .aByteArray3300
+                                [i_22_]),
+                        i_35_);
                 class318_sub1_sub3_sub3_sub2.aByte6381
                         = class318_sub1_sub3_sub3_sub2.aByte6376
                         = (byte) (0x3

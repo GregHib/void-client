@@ -74,12 +74,10 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                     .anInt6609) >= 512
                     || (Class348_Sub40_Sub20.aClass348_Sub4_9264
                     .anInt6609) == 0;
-            if (!Class297.aString3803.startsWith("win"))
-                bool_5_ = true;
-            else {
+            if (Class297.aString3803.startsWith("win")) {
                 bool_6_ = true;
                 bool_5_ = true;
-            }
+            } else bool_5_ = true;
         }
         if (Class221.aBoolean2881)
             bool = false;
@@ -109,12 +107,12 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                         long l = (0xffffffffffffL
                                 & class365.aLong4471);
                         int i_10_ = class365.anInt4476;
-                        if (i_10_ != 4318) {
-                            if (i_10_ != 4098)
-                                break;
-                        } else {
+                        if (i_10_ == 4318) {
                             bool_5_ = bool_5_ & (l >= 64425238954L);
                             break;
+                        } else {
+                            if (i_10_ != 4098)
+                                break;
                         }
                         bool_5_ = bool_5_ & (l >= 60129613779L);
                     }

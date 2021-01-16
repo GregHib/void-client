@@ -48,7 +48,12 @@ final class Class277 {
                 if (i_1_ == 2)
                     this.anInt3575
                             = class348_sub49.method3387(255);
-                else if (i_1_ != 3) {
+                else if (i_1_ == 3) {
+                    this.anInt3575
+                            = class348_sub49.method3330(842397944);
+                    if (this.anInt3575 == 65535)
+                        this.anInt3575 = -1;
+                } else {
                     if (i_1_ != 5) {
                         if (i_1_ != 7) {
                             if (i_1_ == 8)
@@ -86,11 +91,6 @@ final class Class277 {
                                     (-67, class348_sub49.method3351(-1)));
                     } else
                         this.aBoolean3561 = false;
-                } else {
-                    this.anInt3575
-                            = class348_sub49.method3330(842397944);
-                    if (this.anInt3575 == 65535)
-                        this.anInt3575 = -1;
                 }
             } else
                 this.anInt3563

@@ -276,22 +276,7 @@ final class Class207 {
     final int[] method1516() {
         int i = method1510();
         int[] is = new int[i * method1522()];
-        if (this.aByteArray2695 != null) {
-            for (int i_63_ = 0; i_63_ < this.anInt2696; i_63_++) {
-                int i_64_ = i_63_ * this.anInt2702;
-                int i_65_ = (this.anInt2703
-                        + (i_63_ + this.anInt2700) * i);
-                for (int i_66_ = 0; i_66_ < this.anInt2702;
-                     i_66_++) {
-                    is[i_65_++]
-                            = (this.aByteArray2695[i_64_] << 24
-                            | (this.anIntArray2697
-                            [(this.aByteArray2699[i_64_]
-                            & 0xff)]));
-                    i_64_++;
-                }
-            }
-        } else {
+        if (this.aByteArray2695 == null) {
             for (int i_67_ = 0; i_67_ < this.anInt2696; i_67_++) {
                 int i_68_ = i_67_ * this.anInt2702;
                 int i_69_ = (this.anInt2703
@@ -305,6 +290,21 @@ final class Class207 {
                         is[i_69_++] = ~0xffffff | i_71_;
                     else
                         is[i_69_++] = 0;
+                }
+            }
+        } else {
+            for (int i_63_ = 0; i_63_ < this.anInt2696; i_63_++) {
+                int i_64_ = i_63_ * this.anInt2702;
+                int i_65_ = (this.anInt2703
+                        + (i_63_ + this.anInt2700) * i);
+                for (int i_66_ = 0; i_66_ < this.anInt2702;
+                     i_66_++) {
+                    is[i_65_++]
+                            = (this.aByteArray2695[i_64_] << 24
+                            | (this.anIntArray2697
+                            [(this.aByteArray2699[i_64_]
+                            & 0xff)]));
+                    i_64_++;
                 }
             }
         }
@@ -532,7 +532,18 @@ final class Class207 {
         if (this.anInt2702 != i
                 || this.anInt2696 != i_113_) {
             byte[] is = new byte[i * i_113_];
-            if (this.aByteArray2695 != null) {
+            if (this.aByteArray2695 == null) {
+                for (int i_119_ = 0; i_119_ < this.anInt2696;
+                     i_119_++) {
+                    int i_120_ = i_119_ * this.anInt2702;
+                    int i_121_ = ((i_119_ + this.anInt2700) * i
+                            + this.anInt2703);
+                    for (int i_122_ = 0; i_122_ < this.anInt2702;
+                         i_122_++)
+                        is[i_121_++]
+                                = this.aByteArray2699[i_120_++];
+                }
+            } else {
                 byte[] is_114_ = new byte[i * i_113_];
                 for (int i_115_ = 0; i_115_ < this.anInt2696;
                      i_115_++) {
@@ -547,17 +558,6 @@ final class Class207 {
                     }
                 }
                 this.aByteArray2695 = is_114_;
-            } else {
-                for (int i_119_ = 0; i_119_ < this.anInt2696;
-                     i_119_++) {
-                    int i_120_ = i_119_ * this.anInt2702;
-                    int i_121_ = ((i_119_ + this.anInt2700) * i
-                            + this.anInt2703);
-                    for (int i_122_ = 0; i_122_ < this.anInt2702;
-                         i_122_++)
-                        is[i_121_++]
-                                = this.aByteArray2699[i_120_++];
-                }
             }
             this.anInt2703 = this.anInt2698
                     = this.anInt2700 = this.anInt2701

@@ -57,15 +57,15 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
         while_212_:
         do {
             do {
-                if (i_12_ != 0) {
+                if (i_12_ == 0) {
+                    anInt9466 = class348_sub49.method3387(255);
+                    return;
+                } else {
                     if (i_12_ != 1) {
                         if (i_12_ == 2)
                             break;
                         break while_212_;
                     }
-                } else {
-                    anInt9466 = class348_sub49.method3387(255);
-                    return;
                 }
                 anInt9463 = class348_sub49.method3387(255);
                 return;

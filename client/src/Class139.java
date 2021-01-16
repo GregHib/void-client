@@ -64,21 +64,20 @@ final class Class139 {
                         class318_sub1_sub3_sub3_sub1.anInt10306
                                 = Class348_Sub23_Sub3.anInt9041;
                         if (Class299.aClass348_Sub49_Sub2_3813
-                                .method3410((byte) -24, 1)
-                                != 1) {
+                                .method3410((byte) -24, 1) == 1) {
+                                    int i_9_ = Class299.aClass348_Sub49_Sub2_3813
+                                            .method3410((byte) -24, 3);
+                                    class318_sub1_sub3_sub3_sub1.method2443(i_9_, 2,
+                                            -10);
+                                    int i_10_ = Class299.aClass348_Sub49_Sub2_3813
+                                            .method3410((byte) -24, 3);
+                                    class318_sub1_sub3_sub3_sub1.method2443(i_10_, 2,
+                                            -10);
+                                } else {
                             int i_8_ = Class299.aClass348_Sub49_Sub2_3813
                                     .method3410((byte) -24, 3);
                             class318_sub1_sub3_sub3_sub1.method2443(i_8_, 0,
                                     i + -11);
-                        } else {
-                            int i_9_ = Class299.aClass348_Sub49_Sub2_3813
-                                    .method3410((byte) -24, 3);
-                            class318_sub1_sub3_sub3_sub1.method2443(i_9_, 2,
-                                    -10);
-                            int i_10_ = Class299.aClass348_Sub49_Sub2_3813
-                                    .method3410((byte) -24, 3);
-                            class318_sub1_sub3_sub3_sub1.method2443(i_10_, 2,
-                                    -10);
                         }
                         int i_11_ = Class299.aClass348_Sub49_Sub2_3813
                                 .method3410((byte) -24, 1);

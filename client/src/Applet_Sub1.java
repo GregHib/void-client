@@ -542,14 +542,7 @@ public abstract class Applet_Sub1 extends Applet
                         String string, int i_19_) {
         anInt25++;
         try {
-            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 != null) {
-                Class348_Sub51.anInt7252++;
-                if (Class348_Sub51.anInt7252 >= 3)
-                    method82(112, "alreadyloaded");
-                else
-                    getAppletContext().showDocument(getDocumentBase(),
-                            "_self");
-            } else {
+            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
                 Class348_Sub48.anInt7129 = 0;
                 Class348_Sub22.anInt6857
                         = Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_;
@@ -569,6 +562,13 @@ public abstract class Applet_Sub1 extends Applet
                     anInt37 = -13;
                 while (class144.anInt1997 == 0)
                     Class286_Sub5.method2161((byte) -126, 10L);
+            } else {
+                Class348_Sub51.anInt7252++;
+                if (Class348_Sub51.anInt7252 >= 3)
+                    method82(112, "alreadyloaded");
+                else
+                    getAppletContext().showDocument(getDocumentBase(),
+                            "_self");
             }
         } catch (Throwable throwable) {
             Class156.method1242(null, throwable, 15004);

@@ -123,7 +123,16 @@ final class Class367_Sub2 extends Class367 {
     final void method3526(int i, int i_5_, int i_6_) {
         anInt7286++;
         if (i == 10756) {
-            if (!aClass269_7294.aBoolean3458) {
+            if (aClass269_7294.aBoolean3458) {
+                float f = (float) ((this.aHa_Sub3_4479
+                        .anInt8146)
+                        % 4000) / 4000.0F;
+                this.aHa_Sub3_4479.method3850
+                        ((byte) 79,
+                                aClass269_7294.anInterface18_Impl1_3452);
+                OpenGL.glProgramLocalParameter4fARB(34336, 0, f, 0.0F, 0.0F,
+                        1.0F);
+            } else {
                 int i_7_
                         = (16
                         * (this.aHa_Sub3_4479.anInt8146
@@ -133,15 +142,6 @@ final class Class367_Sub2 extends Class367 {
                         ((byte) -118, (aClass269_7294
                                 .anInterface18_Impl3Array3459[i_7_]));
                 OpenGL.glProgramLocalParameter4fARB(34336, 0, 0.0F, 0.0F, 0.0F,
-                        1.0F);
-            } else {
-                float f = (float) ((this.aHa_Sub3_4479
-                        .anInt8146)
-                        % 4000) / 4000.0F;
-                this.aHa_Sub3_4479.method3850
-                        ((byte) 79,
-                                aClass269_7294.anInterface18_Impl1_3452);
-                OpenGL.glProgramLocalParameter4fARB(34336, 0, f, 0.0F, 0.0F,
                         1.0F);
             }
         }

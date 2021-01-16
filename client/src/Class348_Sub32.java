@@ -137,14 +137,14 @@ final class Class348_Sub32 extends Class348 {
         if (i_32_ > 255)
             i_32_ = 255;
         int i_33_ = (int) (f_28_ * (float) (0xff & i_30_));
-        if (!aHa_Sub2_6951.aBoolean7775) {
-            aClass348_Sub49_Sub1_6953.method3399(18291, (float) i_6_);
-            aClass348_Sub49_Sub1_6953.method3399(18291, (float) i_8_);
-            aClass348_Sub49_Sub1_6953.method3399(18291, (float) i_7_);
-        } else {
+        if (aHa_Sub2_6951.aBoolean7775) {
             aClass348_Sub49_Sub1_6953.method3400((float) i_6_, (byte) -122);
             aClass348_Sub49_Sub1_6953.method3400((float) i_8_, (byte) -115);
             aClass348_Sub49_Sub1_6953.method3400((float) i_7_, (byte) -94);
+        } else {
+            aClass348_Sub49_Sub1_6953.method3399(18291, (float) i_6_);
+            aClass348_Sub49_Sub1_6953.method3399(18291, (float) i_8_);
+            aClass348_Sub49_Sub1_6953.method3399(18291, (float) i_7_);
         }
         if (i_33_ > 255)
             i_33_ = 255;
@@ -284,9 +284,7 @@ final class Class348_Sub32 extends Class348 {
             }
             int i_50_ = 0;
             for (int i_51_ = anInt6948; i_51_ <= anInt6944; i_51_++) {
-                if (i_51_ < 0 || i_51_ >= var_s_Sub2.anInt4590)
-                    i_50_ += anInt6942 - anInt6935;
-                else {
+                if (i_51_ >= 0 && i_51_ < var_s_Sub2.anInt4590) {
                     for (int i_52_ = anInt6935; i_52_ <= anInt6942; i_52_++) {
                         if (i_52_ >= 0
                                 && (i_52_ < var_s_Sub2.anInt4587)) {
@@ -295,9 +293,7 @@ final class Class348_Sub32 extends Class348 {
                                     = (var_s_Sub2
                                     .anIntArrayArrayArray8253[i_52_][i_51_]);
                             if (is_54_ != null && i_53_ != 0) {
-                                if (i_53_ != 1)
-                                    anInt6934 += 3;
-                                else {
+                                if (i_53_ == 1) {
                                     int i_55_ = 0;
                                     while (i_55_ < is_54_.length) {
                                         if (is_54_[i_55_++] != -1
@@ -305,12 +301,12 @@ final class Class348_Sub32 extends Class348 {
                                                 && (is_54_[i_55_++] != -1))
                                             anInt6934 += 3;
                                     }
-                                }
+                                } else anInt6934 += 3;
                             }
                         }
                         i_50_++;
                     }
-                }
+                } else i_50_ += anInt6942 - anInt6935;
             }
             if (anInt6934 > 0) {
                 aClass348_Sub49_6936 = new Class348_Sub49(anInt6934 * 2);
@@ -335,83 +331,7 @@ final class Class348_Sub32 extends Class348 {
                                         .anIntArrayArrayArray8253
                                         [i_59_][i_57_]);
                                 if (is_61_ != null && i_60_ != 0) {
-                                    if (i_60_ != 1) {
-                                        if (i_60_ != 3) {
-                                            if (i_60_ != 2) {
-                                                if (i_60_ != 5) {
-                                                    if (i_60_ == 4) {
-                                                        method3019
-                                                                ((var_s_Sub2
-                                                                                .anInt4592),
-                                                                        i_58_, i_56_,
-                                                                        i_59_, 0,
-                                                                        (byte) -70,
-                                                                        i_57_);
-                                                        method3019(0, i_58_,
-                                                                i_56_,
-                                                                i_59_, 0,
-                                                                (byte) 96,
-                                                                i_57_);
-                                                        method3019
-                                                                ((var_s_Sub2
-                                                                                .anInt4592),
-                                                                        i_58_, i_56_,
-                                                                        i_59_,
-                                                                        (var_s_Sub2
-                                                                                .anInt4592),
-                                                                        (byte) 112,
-                                                                        i_57_);
-                                                    }
-                                                } else {
-                                                    method3019
-                                                            ((var_s_Sub2
-                                                                            .anInt4592),
-                                                                    i_58_, i_56_, i_59_,
-                                                                    (var_s_Sub2
-                                                                            .anInt4592),
-                                                                    (byte) 111, i_57_);
-                                                    method3019((var_s_Sub2
-                                                                    .anInt4592),
-                                                            i_58_, i_56_,
-                                                            i_59_, 0,
-                                                            (byte) -83,
-                                                            i_57_);
-                                                    method3019(0, i_58_, i_56_,
-                                                            i_59_,
-                                                            (var_s_Sub2
-                                                                    .anInt4592),
-                                                            (byte) 125,
-                                                            i_57_);
-                                                }
-                                            } else {
-                                                method3019(0, i_58_, i_56_,
-                                                        i_59_,
-                                                        (var_s_Sub2
-                                                                .anInt4592),
-                                                        (byte) 119, i_57_);
-                                                method3019((var_s_Sub2
-                                                                .anInt4592),
-                                                        i_58_, i_56_, i_59_,
-                                                        (var_s_Sub2
-                                                                .anInt4592),
-                                                        (byte) -90, i_57_);
-                                                method3019(0, i_58_, i_56_,
-                                                        i_59_, 0,
-                                                        (byte) -119, i_57_);
-                                            }
-                                        } else {
-                                            method3019(0, i_58_, i_56_, i_59_,
-                                                    0, (byte) -40, i_57_);
-                                            method3019(0, i_58_, i_56_, i_59_,
-                                                    (var_s_Sub2
-                                                            .anInt4592),
-                                                    (byte) 111, i_57_);
-                                            method3019((var_s_Sub2
-                                                            .anInt4592),
-                                                    i_58_, i_56_, i_59_, 0,
-                                                    (byte) -29, i_57_);
-                                        }
-                                    } else {
+                                    if (i_60_ == 1) {
                                         int[] is_62_
                                                 = (var_s_Sub2
                                                 .anIntArrayArrayArray8268[i_59_]
@@ -442,6 +362,82 @@ final class Class348_Sub32 extends Class348 {
                                                         is_62_[i_64_],
                                                         (byte) 104, i_57_);
                                                 i_64_++;
+                                            }
+                                        }
+                                    } else {
+                                        if (i_60_ == 3) {
+                                            method3019(0, i_58_, i_56_, i_59_,
+                                                    0, (byte) -40, i_57_);
+                                            method3019(0, i_58_, i_56_, i_59_,
+                                                    (var_s_Sub2
+                                                            .anInt4592),
+                                                    (byte) 111, i_57_);
+                                            method3019((var_s_Sub2
+                                                            .anInt4592),
+                                                    i_58_, i_56_, i_59_, 0,
+                                                    (byte) -29, i_57_);
+                                        } else {
+                                            if (i_60_ == 2) {
+                                                method3019(0, i_58_, i_56_,
+                                                        i_59_,
+                                                        (var_s_Sub2
+                                                                .anInt4592),
+                                                        (byte) 119, i_57_);
+                                                method3019((var_s_Sub2
+                                                                .anInt4592),
+                                                        i_58_, i_56_, i_59_,
+                                                        (var_s_Sub2
+                                                                .anInt4592),
+                                                        (byte) -90, i_57_);
+                                                method3019(0, i_58_, i_56_,
+                                                        i_59_, 0,
+                                                        (byte) -119, i_57_);
+                                            } else {
+                                                if (i_60_ == 5) {
+                                                    method3019
+                                                            ((var_s_Sub2
+                                                                            .anInt4592),
+                                                                    i_58_, i_56_, i_59_,
+                                                                    (var_s_Sub2
+                                                                            .anInt4592),
+                                                                    (byte) 111, i_57_);
+                                                    method3019((var_s_Sub2
+                                                                    .anInt4592),
+                                                            i_58_, i_56_,
+                                                            i_59_, 0,
+                                                            (byte) -83,
+                                                            i_57_);
+                                                    method3019(0, i_58_, i_56_,
+                                                            i_59_,
+                                                            (var_s_Sub2
+                                                                    .anInt4592),
+                                                            (byte) 125,
+                                                            i_57_);
+                                                } else {
+                                                    if (i_60_ == 4) {
+                                                        method3019
+                                                                ((var_s_Sub2
+                                                                                .anInt4592),
+                                                                        i_58_, i_56_,
+                                                                        i_59_, 0,
+                                                                        (byte) -70,
+                                                                        i_57_);
+                                                        method3019(0, i_58_,
+                                                                i_56_,
+                                                                i_59_, 0,
+                                                                (byte) 96,
+                                                                i_57_);
+                                                        method3019
+                                                                ((var_s_Sub2
+                                                                                .anInt4592),
+                                                                        i_58_, i_56_,
+                                                                        i_59_,
+                                                                        (var_s_Sub2
+                                                                                .anInt4592),
+                                                                        (byte) 112,
+                                                                        i_57_);
+                                                    }
+                                                }
                                             }
                                         }
                                     }

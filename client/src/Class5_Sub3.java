@@ -142,7 +142,22 @@ final class Class5_Sub3 extends Class5 {
                                         .method3378(false, 0);
                                 Class348_Sub42_Sub14
                                         .method3243(-112, class348_sub47);
-                            } else if (i != 6) {
+                            } else if (i == 6) {
+                                Class296.anInt3768++;
+                                Class348_Sub47 class348_sub47
+                                        = (Class286_Sub3.method2148
+                                        (Class251.aClass351_3232,
+                                                Class348_Sub23_Sub2.aClass77_9029,
+                                                -83));
+                                class348_sub47
+                                        .aClass348_Sub49_Sub2_7116
+                                        .method3378(false, 0);
+                                class348_sub47
+                                        .aClass348_Sub49_Sub2_7116
+                                        .method3335(-119, is[i_7_]);
+                                Class348_Sub42_Sub14
+                                        .method3243(i_5_ + 7281, class348_sub47);
+                            } else {
                                 if (i == 7) {
                                     Class369_Sub2.anInt8588++;
                                     Class348_Sub47 class348_sub47
@@ -159,21 +174,6 @@ final class Class5_Sub3 extends Class5 {
                                     Class348_Sub42_Sub14
                                             .method3243(127, class348_sub47);
                                 }
-                            } else {
-                                Class296.anInt3768++;
-                                Class348_Sub47 class348_sub47
-                                        = (Class286_Sub3.method2148
-                                        (Class251.aClass351_3232,
-                                                Class348_Sub23_Sub2.aClass77_9029,
-                                                -83));
-                                class348_sub47
-                                        .aClass348_Sub49_Sub2_7116
-                                        .method3378(false, 0);
-                                class348_sub47
-                                        .aClass348_Sub49_Sub2_7116
-                                        .method3335(-119, is[i_7_]);
-                                Class348_Sub42_Sub14
-                                        .method3243(i_5_ + 7281, class348_sub47);
                             }
                             break;
                         }

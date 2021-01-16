@@ -218,7 +218,17 @@ final class Class261 {
                             int i_18_ = -1;
                             for (int i_19_ = 0; i_19_ < Class8.anInt166;
                                  i_19_++) {
-                                if (!Class71.aBoolean1211) {
+                                if (Class71.aBoolean1211) {
+                                    int i_21_
+                                            = (16 * i_19_ + 33
+                                            + Class348_Sub42_Sub5.anInt9532);
+                                    if ((i_16_ > -13 + i_21_)
+                                            && i_21_ + 4 > i_16_) {
+                                        i_18_ = -13 + i_21_;
+                                        i_17_ = i_19_;
+                                        break;
+                                    }
+                                } else {
                                     int i_20_
                                             = (16 * i_19_
                                             + Class348_Sub42_Sub5.anInt9532
@@ -226,16 +236,6 @@ final class Class261 {
                                     if (i_20_ + -13 < i_16_
                                             && (i_20_ + 3 > i_16_)) {
                                         i_18_ = i_20_ + -13;
-                                        i_17_ = i_19_;
-                                        break;
-                                    }
-                                } else {
-                                    int i_21_
-                                            = (16 * i_19_ + 33
-                                            + Class348_Sub42_Sub5.anInt9532);
-                                    if ((i_16_ > -13 + i_21_)
-                                            && i_21_ + 4 > i_16_) {
-                                        i_18_ = -13 + i_21_;
                                         i_17_ = i_19_;
                                         break;
                                     }
@@ -326,19 +326,19 @@ final class Class261 {
                     if (Class348_Sub42_Sub6.aBoolean9535) {
                         int i_30_ = -1;
                         for (int i_31_ = 0; i_31_ < Class8.anInt166; i_31_++) {
-                            if (!Class71.aBoolean1211) {
-                                int i_32_ = (Class348_Sub42_Sub5.anInt9532 + 31
-                                        + i_31_ * 16);
-                                if (i_24_ > i_32_ - 13
-                                        && i_32_ + 3 > i_24_) {
-                                    i_30_ = i_31_;
-                                    break;
-                                }
-                            } else {
+                            if (Class71.aBoolean1211) {
                                 int i_33_ = (Class348_Sub42_Sub5.anInt9532 + 33
                                         - -(i_31_ * 16));
                                 if (i_24_ > -13 + i_33_
                                         && i_33_ + 4 > i_24_) {
+                                    i_30_ = i_31_;
+                                    break;
+                                }
+                            } else {
+                                int i_32_ = (Class348_Sub42_Sub5.anInt9532 + 31
+                                        + i_31_ * 16);
+                                if (i_24_ > i_32_ - 13
+                                        && i_32_ + 3 > i_24_) {
                                     i_30_ = i_31_;
                                     break;
                                 }

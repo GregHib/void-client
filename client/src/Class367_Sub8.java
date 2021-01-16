@@ -82,10 +82,7 @@ final class Class367_Sub8 extends Class367 {
                                             = class318_sub1_sub3_sub3_sub1
                                             .aClass182Array10308[i_13_]
                                             = null;
-                                else if (i_14_ != 1) {
-                                    if (i_14_ == 2)
-                                        class182.anInt2445 = 0;
-                                } else {
+                                else if (i_14_ == 1) {
                                     class182.anInt2448 = i_12_;
                                     class182.anInt2456 = 0;
                                     class182.anInt2455 = 1;
@@ -96,6 +93,9 @@ final class Class367_Sub8 extends Class367 {
                                         Class287.method2178
                                                 (class318_sub1_sub3_sub3_sub1, 0,
                                                         class17, -75);
+                                } else {
+                                    if (i_14_ == 2)
+                                        class182.anInt2445 = 0;
                                 }
                             }
                             if (class182 == null) {

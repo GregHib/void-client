@@ -88,7 +88,17 @@ final class Class49 implements Interface4 {
         do {
             try {
                 aHa_Sub1_4729 = var_ha_Sub1;
-                if (!(class105 instanceof Class105_Sub3_Sub1)) {
+                if (class105 instanceof Class105_Sub3_Sub1) {
+                    Class105_Sub3_Sub1 class105_sub3_sub1
+                            = (Class105_Sub3_Sub1) class105;
+                    this.anIntArray4731
+                            = (class105_sub3_sub1
+                            .anIntArray9933);
+                    this.anInt4722
+                            = class105_sub3_sub1.anInt8470;
+                    this.anInt4725
+                            = class105_sub3_sub1.anInt8471;
+                } else {
                     if (!(class105 instanceof Class105_Sub3_Sub3))
                         throw new RuntimeException();
                     Class105_Sub3_Sub3 class105_sub3_sub3
@@ -100,16 +110,6 @@ final class Class49 implements Interface4 {
                     this.anIntArray4731
                             = (class105_sub3_sub3
                             .anIntArray9936);
-                } else {
-                    Class105_Sub3_Sub1 class105_sub3_sub1
-                            = (Class105_Sub3_Sub1) class105;
-                    this.anIntArray4731
-                            = (class105_sub3_sub1
-                            .anIntArray9933);
-                    this.anInt4722
-                            = class105_sub3_sub1.anInt8470;
-                    this.anInt4725
-                            = class105_sub3_sub1.anInt8471;
                 }
                 if (class216 == null)
                     break;

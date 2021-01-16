@@ -322,7 +322,14 @@ final class Class143 {
                     i_31_ = i_35_;
                 else {
                     int i_38_;
-                    if (i_31_ != -1) {
+                    if (i_31_ == -1) {
+                        i_37_ += method1184((byte) -48, i_36_);
+                        i_38_ = i_35_;
+                        if (aByteArrayArray1979 != null
+                                && i_32_ != -1)
+                            i_37_ += aByteArrayArray1979[i_32_][i_36_];
+                        i_32_ = i_36_;
+                    } else {
                         if (i_36_ != 62)
                             continue;
                         i_38_ = i_31_;
@@ -350,8 +357,19 @@ final class Class143 {
                             if (aByteArrayArray1979 != null && i_32_ != -1)
                                 i_37_ += aByteArrayArray1979[i_32_][62];
                             i_32_ = 62;
-                        } else if (!string_39_.equals("nbsp")) {
-                            if (!string_39_.equals("shy")) {
+                        } else if (string_39_.equals("nbsp")) {
+                            i_37_ += method1184((byte) -48, 160);
+                            if (aByteArrayArray1979 != null && i_32_ != -1)
+                                i_37_ += aByteArrayArray1979[i_32_][160];
+                            i_32_ = 160;
+                        } else {
+                            if (string_39_.equals("shy")) {
+                                i_37_ += method1184((byte) -48, 173);
+                                if (aByteArrayArray1979 != null
+                                        && i_32_ != -1)
+                                    i_37_ += aByteArrayArray1979[i_32_][173];
+                                i_32_ = 173;
+                            } else {
                                 if (string_39_.equals("times")) {
                                     i_37_ += method1184((byte) -48, 215);
                                     if (aByteArrayArray1979 != null
@@ -359,9 +377,31 @@ final class Class143 {
                                         i_37_
                                                 += aByteArrayArray1979[i_32_][215];
                                     i_32_ = 215;
-                                } else if (!string_39_.equals("euro")) {
-                                    if (!string_39_.equals("copy")) {
-                                        if (!string_39_.equals("reg")) {
+                                } else if (string_39_.equals("euro")) {
+                                    i_37_ += method1184((byte) -48, 8364);
+                                    if (aByteArrayArray1979 != null
+                                            && i_32_ != -1)
+                                        i_37_ += (aByteArrayArray1979[i_32_]
+                                                [8364]);
+                                    i_32_ = 8364;
+                                } else {
+                                    if (string_39_.equals("copy")) {
+                                        i_37_ += method1184((byte) -48, 169);
+                                        if (aByteArrayArray1979 != null
+                                                && i_32_ != -1)
+                                            i_37_ += (aByteArrayArray1979
+                                                    [i_32_][169]);
+                                        i_32_ = 169;
+                                    } else {
+                                        if (string_39_.equals("reg")) {
+                                            i_37_
+                                                    += method1184((byte) -48, 174);
+                                            if (aByteArrayArray1979 != null
+                                                    && i_32_ != -1)
+                                                i_37_ += (aByteArrayArray1979
+                                                        [i_32_][174]);
+                                            i_32_ = 174;
+                                        } else {
                                             if (string_39_.startsWith("img=")
                                                     && class105s != null) {
                                                 try {
@@ -380,52 +420,12 @@ final class Class143 {
                                                     /* empty */
                                                 }
                                             }
-                                        } else {
-                                            i_37_
-                                                    += method1184((byte) -48, 174);
-                                            if (aByteArrayArray1979 != null
-                                                    && i_32_ != -1)
-                                                i_37_ += (aByteArrayArray1979
-                                                        [i_32_][174]);
-                                            i_32_ = 174;
                                         }
-                                    } else {
-                                        i_37_ += method1184((byte) -48, 169);
-                                        if (aByteArrayArray1979 != null
-                                                && i_32_ != -1)
-                                            i_37_ += (aByteArrayArray1979
-                                                    [i_32_][169]);
-                                        i_32_ = 169;
                                     }
-                                } else {
-                                    i_37_ += method1184((byte) -48, 8364);
-                                    if (aByteArrayArray1979 != null
-                                            && i_32_ != -1)
-                                        i_37_ += (aByteArrayArray1979[i_32_]
-                                                [8364]);
-                                    i_32_ = 8364;
                                 }
-                            } else {
-                                i_37_ += method1184((byte) -48, 173);
-                                if (aByteArrayArray1979 != null
-                                        && i_32_ != -1)
-                                    i_37_ += aByteArrayArray1979[i_32_][173];
-                                i_32_ = 173;
                             }
-                        } else {
-                            i_37_ += method1184((byte) -48, 160);
-                            if (aByteArrayArray1979 != null && i_32_ != -1)
-                                i_37_ += aByteArrayArray1979[i_32_][160];
-                            i_32_ = 160;
                         }
                         i_36_ = -1;
-                    } else {
-                        i_37_ += method1184((byte) -48, i_36_);
-                        i_38_ = i_35_;
-                        if (aByteArrayArray1979 != null
-                                && i_32_ != -1)
-                            i_37_ += aByteArrayArray1979[i_32_][i_36_];
-                        i_32_ = i_36_;
                     }
                     if (i_37_ > 0) {
                         i_26_ += i_37_;

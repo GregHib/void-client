@@ -244,193 +244,7 @@ final class Class233 {
             float f_31_ = -f_19_ + f_22_;
             aClass348_Sub49_Sub1_3020.anInt7197 = 0;
             float f_32_ = -f_20_ + f_23_;
-            if (!var_ha_Sub2.aBoolean7775) {
-                for (int i_33_ = -1 + i; i_33_ >= 0; i_33_--) {
-                    int i_34_ = (Math.min(anIntArray3033[i_33_], 64));
-                    if (i_34_ > 0) {
-                        for (int i_35_ = -1 + i_34_;
-                             i_35_ >= 0; i_35_--) {
-                            Class318_Sub9_Sub2 class318_sub9_sub2
-                                    = (aClass318_Sub9_Sub2ArrayArray3031[i_33_]
-                                    [i_35_]);
-                            int i_36_
-                                    = (class318_sub9_sub2
-                                    .anInt8790);
-                            byte i_37_ = (byte) (i_36_ >> 1489574736);
-                            byte i_38_ = (byte) (i_36_ >> 744331240);
-                            byte i_39_ = (byte) i_36_;
-                            byte i_40_ = (byte) (i_36_ >>> 630665784);
-                            float f_41_
-                                    = (float) (class318_sub9_sub2.anInt8791
-                                    >> 662455084);
-                            float f_42_
-                                    = (float) (class318_sub9_sub2.anInt8796
-                                    >> -1266192340);
-                            float f_43_
-                                    = (float) (class318_sub9_sub2.anInt8789
-                                    >> -1918646804);
-                            int i_44_
-                                    = ((class318_sub9_sub2
-                                    .anInt8793)
-                                    >> 145880268);
-                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
-                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, (float) -i_44_ * f_24_ + f_41_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, (float) -i_44_ * f_25_ + f_42_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, f_26_ * (float) -i_44_ + f_43_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
-                            aClass348_Sub49_Sub1_3020.method3399(18291, 1.0F);
-                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, f_41_ + f_27_ * (float) i_44_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, f_42_ + f_28_ * (float) i_44_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, f_43_ + f_29_ * (float) i_44_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
-                            aClass348_Sub49_Sub1_3020.method3399(18291, 1.0F);
-                            aClass348_Sub49_Sub1_3020
-                                    .method3399(i_18_ + -785962265, 1.0F);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, (float) i_44_ * f_24_ + f_41_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, f_42_ + (float) i_44_ * f_25_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (i_18_ ^ 0x2ed95bff,
-                                            f_43_ + f_26_ * (float) i_44_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
-                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
-                            aClass348_Sub49_Sub1_3020
-                                    .method3399(i_18_ + -785962265, 1.0F);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, f_41_ + f_30_ * (float) i_44_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (18291, (float) i_44_ * f_31_ + f_42_);
-                            aClass348_Sub49_Sub1_3020.method3399
-                                    (i_18_ ^ 0x2ed95bff,
-                                            (float) i_44_ * f_32_ + f_43_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
-                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
-                        }
-                        if (anIntArray3033[i_33_] > 64) {
-                            int i_45_ = -65 + anIntArray3033[i_33_];
-                            for (int i_46_ = -1 + anIntArray3035[i_45_];
-                                 i_46_ >= 0; i_46_--) {
-                                Class318_Sub9_Sub2 class318_sub9_sub2
-                                        = (aClass318_Sub9_Sub2ArrayArray3030[i_45_]
-                                        [i_46_]);
-                                int i_47_ = (class318_sub9_sub2
-                                        .anInt8790);
-                                byte i_48_ = (byte) (i_47_ >> -677345808);
-                                byte i_49_ = (byte) (i_47_ >> -641259768);
-                                byte i_50_ = (byte) i_47_;
-                                byte i_51_ = (byte) (i_47_ >>> -1739606664);
-                                float f_52_
-                                        = (float) (class318_sub9_sub2.anInt8791
-                                        >> -259728660);
-                                float f_53_
-                                        = (float) (class318_sub9_sub2.anInt8796
-                                        >> 785980556);
-                                float f_54_
-                                        = (float) (class318_sub9_sub2.anInt8789
-                                        >> 1677319308);
-                                int i_55_ = (class318_sub9_sub2.anInt8793
-                                        >> 1896095500);
-                                aClass348_Sub49_Sub1_3020
-                                        .method3399(i_18_ + -785962265, 0.0F);
-                                aClass348_Sub49_Sub1_3020.method3399(18291,
-                                        0.0F);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (i_18_ ^ 0x2ed95bff,
-                                                f_52_ + (float) -i_55_ * f_24_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, f_53_ + f_25_ * (float) -i_55_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, f_54_ + f_26_ * (float) -i_55_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_48_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_49_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_50_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_51_);
-                                aClass348_Sub49_Sub1_3020.method3399(18291,
-                                        1.0F);
-                                aClass348_Sub49_Sub1_3020.method3399(18291,
-                                        0.0F);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (i_18_ ^ 0x2ed95bff,
-                                                f_27_ * (float) i_55_ + f_52_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, (float) i_55_ * f_28_ + f_53_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, f_29_ * (float) i_55_ + f_54_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_48_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_49_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_50_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_51_);
-                                aClass348_Sub49_Sub1_3020.method3399(18291,
-                                        1.0F);
-                                aClass348_Sub49_Sub1_3020
-                                        .method3399(i_18_ ^ 0x2ed95bff, 1.0F);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (i_18_ ^ 0x2ed95bff,
-                                                (float) i_55_ * f_24_ + f_52_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, (float) i_55_ * f_25_ + f_53_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, (float) i_55_ * f_26_ + f_54_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_48_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_49_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_50_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_51_);
-                                aClass348_Sub49_Sub1_3020
-                                        .method3399(i_18_ ^ 0x2ed95bff, 0.0F);
-                                aClass348_Sub49_Sub1_3020.method3399(18291,
-                                        1.0F);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (i_18_ + -785962265,
-                                                (float) i_55_ * f_30_ + f_52_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, (float) i_55_ * f_31_ + f_53_);
-                                aClass348_Sub49_Sub1_3020.method3399
-                                        (18291, (float) i_55_ * f_32_ + f_54_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_48_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_49_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_50_);
-                                aClass348_Sub49_Sub1_3020.method3378(false,
-                                        i_51_);
-                            }
-                        }
-                    }
-                }
-            } else {
+            if (var_ha_Sub2.aBoolean7775) {
                 for (int i_56_ = i - 1; i_56_ >= 0; i_56_--) {
                     int i_57_ = (Math.min(anIntArray3033[i_56_], 64));
                     if (i_57_ > 0) {
@@ -624,6 +438,192 @@ final class Class233 {
                                         i_73_);
                                 aClass348_Sub49_Sub1_3020.method3378(false,
                                         i_74_);
+                            }
+                        }
+                    }
+                }
+            } else {
+                for (int i_33_ = -1 + i; i_33_ >= 0; i_33_--) {
+                    int i_34_ = (Math.min(anIntArray3033[i_33_], 64));
+                    if (i_34_ > 0) {
+                        for (int i_35_ = -1 + i_34_;
+                             i_35_ >= 0; i_35_--) {
+                            Class318_Sub9_Sub2 class318_sub9_sub2
+                                    = (aClass318_Sub9_Sub2ArrayArray3031[i_33_]
+                                    [i_35_]);
+                            int i_36_
+                                    = (class318_sub9_sub2
+                                    .anInt8790);
+                            byte i_37_ = (byte) (i_36_ >> 1489574736);
+                            byte i_38_ = (byte) (i_36_ >> 744331240);
+                            byte i_39_ = (byte) i_36_;
+                            byte i_40_ = (byte) (i_36_ >>> 630665784);
+                            float f_41_
+                                    = (float) (class318_sub9_sub2.anInt8791
+                                    >> 662455084);
+                            float f_42_
+                                    = (float) (class318_sub9_sub2.anInt8796
+                                    >> -1266192340);
+                            float f_43_
+                                    = (float) (class318_sub9_sub2.anInt8789
+                                    >> -1918646804);
+                            int i_44_
+                                    = ((class318_sub9_sub2
+                                    .anInt8793)
+                                    >> 145880268);
+                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
+                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, (float) -i_44_ * f_24_ + f_41_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, (float) -i_44_ * f_25_ + f_42_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, f_26_ * (float) -i_44_ + f_43_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
+                            aClass348_Sub49_Sub1_3020.method3399(18291, 1.0F);
+                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, f_41_ + f_27_ * (float) i_44_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, f_42_ + f_28_ * (float) i_44_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, f_43_ + f_29_ * (float) i_44_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
+                            aClass348_Sub49_Sub1_3020.method3399(18291, 1.0F);
+                            aClass348_Sub49_Sub1_3020
+                                    .method3399(i_18_ + -785962265, 1.0F);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, (float) i_44_ * f_24_ + f_41_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, f_42_ + (float) i_44_ * f_25_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (i_18_ ^ 0x2ed95bff,
+                                            f_43_ + f_26_ * (float) i_44_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
+                            aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
+                            aClass348_Sub49_Sub1_3020
+                                    .method3399(i_18_ + -785962265, 1.0F);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, f_41_ + f_30_ * (float) i_44_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (18291, (float) i_44_ * f_31_ + f_42_);
+                            aClass348_Sub49_Sub1_3020.method3399
+                                    (i_18_ ^ 0x2ed95bff,
+                                            (float) i_44_ * f_32_ + f_43_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_37_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_38_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_39_);
+                            aClass348_Sub49_Sub1_3020.method3378(false, i_40_);
+                        }
+                        if (anIntArray3033[i_33_] > 64) {
+                            int i_45_ = -65 + anIntArray3033[i_33_];
+                            for (int i_46_ = -1 + anIntArray3035[i_45_];
+                                 i_46_ >= 0; i_46_--) {
+                                Class318_Sub9_Sub2 class318_sub9_sub2
+                                        = (aClass318_Sub9_Sub2ArrayArray3030[i_45_]
+                                        [i_46_]);
+                                int i_47_ = (class318_sub9_sub2
+                                        .anInt8790);
+                                byte i_48_ = (byte) (i_47_ >> -677345808);
+                                byte i_49_ = (byte) (i_47_ >> -641259768);
+                                byte i_50_ = (byte) i_47_;
+                                byte i_51_ = (byte) (i_47_ >>> -1739606664);
+                                float f_52_
+                                        = (float) (class318_sub9_sub2.anInt8791
+                                        >> -259728660);
+                                float f_53_
+                                        = (float) (class318_sub9_sub2.anInt8796
+                                        >> 785980556);
+                                float f_54_
+                                        = (float) (class318_sub9_sub2.anInt8789
+                                        >> 1677319308);
+                                int i_55_ = (class318_sub9_sub2.anInt8793
+                                        >> 1896095500);
+                                aClass348_Sub49_Sub1_3020
+                                        .method3399(i_18_ + -785962265, 0.0F);
+                                aClass348_Sub49_Sub1_3020.method3399(18291,
+                                        0.0F);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (i_18_ ^ 0x2ed95bff,
+                                                f_52_ + (float) -i_55_ * f_24_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, f_53_ + f_25_ * (float) -i_55_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, f_54_ + f_26_ * (float) -i_55_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_48_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_49_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_50_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_51_);
+                                aClass348_Sub49_Sub1_3020.method3399(18291,
+                                        1.0F);
+                                aClass348_Sub49_Sub1_3020.method3399(18291,
+                                        0.0F);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (i_18_ ^ 0x2ed95bff,
+                                                f_27_ * (float) i_55_ + f_52_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, (float) i_55_ * f_28_ + f_53_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, f_29_ * (float) i_55_ + f_54_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_48_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_49_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_50_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_51_);
+                                aClass348_Sub49_Sub1_3020.method3399(18291,
+                                        1.0F);
+                                aClass348_Sub49_Sub1_3020
+                                        .method3399(i_18_ ^ 0x2ed95bff, 1.0F);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (i_18_ ^ 0x2ed95bff,
+                                                (float) i_55_ * f_24_ + f_52_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, (float) i_55_ * f_25_ + f_53_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, (float) i_55_ * f_26_ + f_54_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_48_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_49_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_50_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_51_);
+                                aClass348_Sub49_Sub1_3020
+                                        .method3399(i_18_ ^ 0x2ed95bff, 0.0F);
+                                aClass348_Sub49_Sub1_3020.method3399(18291,
+                                        1.0F);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (i_18_ + -785962265,
+                                                (float) i_55_ * f_30_ + f_52_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, (float) i_55_ * f_31_ + f_53_);
+                                aClass348_Sub49_Sub1_3020.method3399
+                                        (18291, (float) i_55_ * f_32_ + f_54_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_48_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_49_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_50_);
+                                aClass348_Sub49_Sub1_3020.method3378(false,
+                                        i_51_);
                             }
                         }
                     }

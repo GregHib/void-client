@@ -32,16 +32,16 @@ final class Class349 {
             for (int i_3_ = 0; i_3_ < 2; i_3_++) {
                 for (int i_4_ = 0;
                      i_4_ < this.anIntArray4299[i_3_]; i_4_++) {
-                    if ((i_0_ & 1 << i_3_ * 4 << i_4_) != 0) {
-                        anIntArrayArrayArray4302[i_3_][1][i_4_]
-                                = class348_sub49.method3330(842397944);
-                        anIntArrayArrayArray4300[i_3_][1][i_4_]
-                                = class348_sub49.method3330(842397944);
-                    } else {
+                    if ((i_0_ & 1 << i_3_ * 4 << i_4_) == 0) {
                         anIntArrayArrayArray4302[i_3_][1][i_4_]
                                 = anIntArrayArrayArray4302[i_3_][0][i_4_];
                         anIntArrayArrayArray4300[i_3_][1][i_4_]
                                 = anIntArrayArrayArray4300[i_3_][0][i_4_];
+                    } else {
+                        anIntArrayArrayArray4302[i_3_][1][i_4_]
+                                = class348_sub49.method3330(842397944);
+                        anIntArrayArrayArray4300[i_3_][1][i_4_]
+                                = class348_sub49.method3330(842397944);
                     }
                 }
             }

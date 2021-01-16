@@ -98,7 +98,11 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                 while_214_:
                 do {
                     do {
-                        if (i_9_ != 0) {
+                        if (i_9_ == 0) {
+                            aClass50Array9481[i_7_]
+                                    = Class182.method1374(107, class348_sub49);
+                            continue while_216_;
+                        } else {
                             if (i_9_ != 1) {
                                 if (i_9_ != 2) {
                                     if (i_9_ != 3)
@@ -107,10 +111,6 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                                     break;
                                 break while_214_;
                             }
-                        } else {
-                            aClass50Array9481[i_7_]
-                                    = Class182.method1374(107, class348_sub49);
-                            continue while_216_;
                         }
                         aClass50Array9481[i_7_]
                                 = (Class348_Sub23_Sub1.method2970

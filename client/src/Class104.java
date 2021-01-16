@@ -159,74 +159,7 @@ final class Class104 {
         aHa_Sub2_1616.method3761(0, 1);
         aHa_Sub2_1616.method3753(1, 1);
         float f = 1.0F / (float) (aHa_Sub2_1616.anInt7733 * 128);
-        if (!bool) {
-            for (int i_39_ = 0; anInt1625 > i_39_; i_39_++) {
-                int i_40_ = i_39_ << anInt1613;
-                int i_41_ = i_39_ + 1 << anInt1613;
-                for (int i_42_ = 0;
-                     anInt1618 > i_42_;
-                     i_42_++) {
-                    int i_43_ = 0;
-                    int i_44_ = i_42_ << anInt1613;
-                    int i_45_ = 1 + i_42_ << anInt1613;
-                    Class348_Sub49_Sub1 class348_sub49_sub1
-                            = aHa_Sub2_1616.aClass348_Sub49_Sub1_7798;
-                    class348_sub49_sub1.anInt7197 = 0;
-                    for (int i_46_ = i_40_; i_41_ > i_46_; i_46_++) {
-                        if (-i_35_ <= -i_36_ + i_46_
-                                && -i_36_ + i_46_ <= i_35_) {
-                            int i_47_
-                                    = i_44_ + i_46_ * aS_Sub2_1622.anInt4587;
-                            for (int i_48_ = i_44_;
-                                 i_45_ > i_48_;
-                                 i_48_++) {
-                                if ((-i_35_ <= -i_37_ + i_48_)
-                                        && -i_37_ + i_48_ <= i_35_
-                                        && (bools[i_35_ + i_48_ - i_37_]
-                                        [i_35_ + i_46_ + -i_36_])) {
-                                    short[] is
-                                            = (aS_Sub2_1622
-                                            .aShortArrayArray8267[i_47_]);
-                                    if (is != null) {
-                                        if (!aHa_Sub2_1616
-                                                .aBoolean7775) {
-                                            for (int i_49_ = 0;
-                                                 is.length > i_49_; i_49_++) {
-                                                class348_sub49_sub1.method3397
-                                                        (111, is[i_49_] & 0xffff);
-                                                i_43_++;
-                                            }
-                                        } else {
-                                            for (int i_50_ = 0;
-                                                 (i_50_ < is.length);
-                                                 i_50_++) {
-                                                i_43_++;
-                                                class348_sub49_sub1.method3337
-                                                        ((byte) 107,
-                                                                0xffff & is[i_50_]);
-                                            }
-                                        }
-                                    }
-                                }
-                                i_47_++;
-                            }
-                        }
-                    }
-                    if (i_43_ > 0) {
-                        OpenGL.glMatrixMode(5890);
-                        OpenGL.glLoadIdentity();
-                        OpenGL.glScalef(f, f, 1.0F);
-                        OpenGL.glTranslatef((float) -i_42_ / f,
-                                (float) -i_39_ / f, 1.0F);
-                        OpenGL.glMatrixMode(5888);
-                        aClass232ArrayArray1623[i_42_][i_39_].method1643
-                                ((class348_sub49_sub1
-                                                .aByteArray7154),
-                                        5123, i_43_, (byte) 70);
-                    }
-                }
-            }
-        } else {
+        if (bool) {
             for (int i_51_ = 0;
                  i_51_ < anInt1625; i_51_++) {
                 int i_52_ = i_51_ << anInt1613;
@@ -258,6 +191,73 @@ final class Class104 {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        } else {
+            for (int i_39_ = 0; anInt1625 > i_39_; i_39_++) {
+                int i_40_ = i_39_ << anInt1613;
+                int i_41_ = i_39_ + 1 << anInt1613;
+                for (int i_42_ = 0;
+                     anInt1618 > i_42_;
+                     i_42_++) {
+                    int i_43_ = 0;
+                    int i_44_ = i_42_ << anInt1613;
+                    int i_45_ = 1 + i_42_ << anInt1613;
+                    Class348_Sub49_Sub1 class348_sub49_sub1
+                            = aHa_Sub2_1616.aClass348_Sub49_Sub1_7798;
+                    class348_sub49_sub1.anInt7197 = 0;
+                    for (int i_46_ = i_40_; i_41_ > i_46_; i_46_++) {
+                        if (-i_35_ <= -i_36_ + i_46_
+                                && -i_36_ + i_46_ <= i_35_) {
+                            int i_47_
+                                    = i_44_ + i_46_ * aS_Sub2_1622.anInt4587;
+                            for (int i_48_ = i_44_;
+                                 i_45_ > i_48_;
+                                 i_48_++) {
+                                if ((-i_35_ <= -i_37_ + i_48_)
+                                        && -i_37_ + i_48_ <= i_35_
+                                        && (bools[i_35_ + i_48_ - i_37_]
+                                        [i_35_ + i_46_ + -i_36_])) {
+                                    short[] is
+                                            = (aS_Sub2_1622
+                                            .aShortArrayArray8267[i_47_]);
+                                    if (is != null) {
+                                        if (aHa_Sub2_1616
+                                                .aBoolean7775) {
+                                            for (int i_50_ = 0;
+                                                 (i_50_ < is.length);
+                                                 i_50_++) {
+                                                i_43_++;
+                                                class348_sub49_sub1.method3337
+                                                        ((byte) 107,
+                                                                0xffff & is[i_50_]);
+                                            }
+                                        } else {
+                                            for (int i_49_ = 0;
+                                                 is.length > i_49_; i_49_++) {
+                                                class348_sub49_sub1.method3397
+                                                        (111, is[i_49_] & 0xffff);
+                                                i_43_++;
+                                            }
+                                        }
+                                    }
+                                }
+                                i_47_++;
+                            }
+                        }
+                    }
+                    if (i_43_ > 0) {
+                        OpenGL.glMatrixMode(5890);
+                        OpenGL.glLoadIdentity();
+                        OpenGL.glScalef(f, f, 1.0F);
+                        OpenGL.glTranslatef((float) -i_42_ / f,
+                                (float) -i_39_ / f, 1.0F);
+                        OpenGL.glMatrixMode(5888);
+                        aClass232ArrayArray1623[i_42_][i_39_].method1643
+                                ((class348_sub49_sub1
+                                                .aByteArray7154),
+                                        5123, i_43_, (byte) 70);
                     }
                 }
             }

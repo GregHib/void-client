@@ -121,8 +121,9 @@ final class Class212 {
                 int i_28_ = (byte) i_22_;
                 i_22_ >>= 8;
                 i_20_++;
-                if (i_28_ != i_21_) {
-                    i_21_ = i_28_;
+                if (i_28_ == i_21_) {
+                    if (i_20_ != i_27_)
+                        break;
                     if (i_25_ == 0) {
                         i_19_ = 1;
                         break while_75_;
@@ -131,8 +132,7 @@ final class Class212 {
                     i_24_++;
                     i_25_--;
                 } else {
-                    if (i_20_ != i_27_)
-                        break;
+                    i_21_ = i_28_;
                     if (i_25_ == 0) {
                         i_19_ = 1;
                         break while_75_;
@@ -147,17 +147,13 @@ final class Class212 {
             int i_29_ = (byte) i_22_;
             i_22_ >>= 8;
             if (++i_20_ != i_27_) {
-                if (i_29_ != i_21_)
-                    i_21_ = i_29_;
-                else {
+                if (i_29_ == i_21_) {
                     i_19_ = 3;
                     i_22_ = is[i_22_];
                     i_29_ = (byte) i_22_;
                     i_22_ >>= 8;
                     if (++i_20_ != i_27_) {
-                        if (i_29_ != i_21_)
-                            i_21_ = i_29_;
-                        else {
+                        if (i_29_ == i_21_) {
                             i_22_ = is[i_22_];
                             i_29_ = (byte) i_22_;
                             i_22_ >>= 8;
@@ -167,9 +163,9 @@ final class Class212 {
                             i_21_ = (byte) i_22_;
                             i_22_ >>= 8;
                             i_20_++;
-                        }
+                        } else i_21_ = i_29_;
                     }
-                }
+                } else i_21_ = i_29_;
             }
         }
         int i_30_ = class40.anInt524;

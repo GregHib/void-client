@@ -274,16 +274,13 @@ final class Class248 {
                         } else if ((aClass348_Sub42_Sub16_Sub1_3215
                                 .anInt10456) == 0) {
                             if ((aClass348_Sub49_3211
-                                    .aByteArray7154[0])
-                                    != -1)
-                                aClass348_Sub42_Sub16_Sub1_3215 = null;
-                            else {
-                                aClass348_Sub42_Sub16_Sub1_3215.anInt10456
-                                        = 1;
-                                aClass348_Sub49_3211
-                                        .anInt7197
-                                        = 0;
-                            }
+                                    .aByteArray7154[0]) == -1) {
+                                        aClass348_Sub42_Sub16_Sub1_3215.anInt10456
+                                                = 1;
+                                        aClass348_Sub49_3211
+                                                .anInt7197
+                                                = 0;
+                                    } else aClass348_Sub42_Sub16_Sub1_3215 = null;
                         } else
                             throw new IOException();
                     }
@@ -512,14 +509,14 @@ final class Class248 {
         class348_sub42_sub16_sub1.aLong7057 = l;
         class348_sub42_sub16_sub1.aByte10449
                 = i_29_;
-        if (!bool) {
-            if (method1894(4350) >= 20)
-                throw new RuntimeException();
-            aClass107_3205.method1005(true, class348_sub42_sub16_sub1);
-        } else {
+        if (bool) {
             if (method1902(4) >= 20)
                 throw new RuntimeException();
             aClass107_3197.method1005(true, class348_sub42_sub16_sub1);
+        } else {
+            if (method1894(4350) >= 20)
+                throw new RuntimeException();
+            aClass107_3205.method1005(true, class348_sub42_sub16_sub1);
         }
         return class348_sub42_sub16_sub1;
     }

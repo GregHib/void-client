@@ -192,14 +192,14 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         int i_16_ = Class316.aClass348_Sub51_3959
                 .aClass239_Sub3_7222.method1727(-32350);
         do {
-            if (i_16_ != 2) {
-                if (i_16_ != 3)
-                    break;
-            } else {
+            if (i_16_ == 2) {
                 Class121.method1083(Class348_Sub8.aHa6654, 100, (byte) 9,
                         Class348_Sub42_Sub8_Sub2.anInt10432, 100,
                         Class321.anInt4017);
                 break;
+            } else {
+                if (i_16_ != 3)
+                    break;
             }
             Class18.method282(2, Class348_Sub8.aHa6654, Class321.anInt4017,
                     (byte) 73, Class45.anInt666,

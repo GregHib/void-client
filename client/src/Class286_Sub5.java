@@ -35,12 +35,7 @@ final class Class286_Sub5 extends Class286 {
                 int i_2_ = (Math.min(Class348_Sub22.anInt6857, 600));
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_2_;
                 Class335.anInt4167 = 0;
-            } else if (i_0_ != 1) {
-                Class335.anInt4167 = 0;
-                Class348_Sub42_Sub8_Sub2.anInt10432 = Class348_Sub22.anInt6857;
-                Class348_Sub48.anInt7129 = 0;
-                Class321.anInt4017 = Class272.anInt3473;
-            } else {
+            } else if (i_0_ == 1) {
                 int i_3_
                         = Math.min(Class272.anInt3473, 1024);
                 Class348_Sub48.anInt7129 = (Class272.anInt3473 + -i_3_) / 2;
@@ -48,8 +43,13 @@ final class Class286_Sub5 extends Class286 {
                 Class321.anInt4017 = i_3_;
                 Class335.anInt4167 = 0;
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_4_;
+            } else {
+                Class335.anInt4167 = 0;
+                Class348_Sub42_Sub8_Sub2.anInt10432 = Class348_Sub22.anInt6857;
+                Class348_Sub48.anInt7129 = 0;
+                Class321.anInt4017 = Class272.anInt3473;
             }
-        }
+		}
     }
 
     final void method2136(int i, int i_5_, byte i_6_) {
@@ -216,13 +216,11 @@ final class Class286_Sub5 extends Class286 {
         try {
             anInt6251++;
             if (l > 0L) {
-                if (l % 10L != 0)
-                    Class327.method2606(59, l);
-                else {
+                if (l % 10L == 0) {
                     Class327.method2606(-125, -1L + l);
                     Class327.method2606(-125, 1L);
-                }
-                int i_13_ = 70 % ((i - -52) / 32);
+                } else Class327.method2606(59, l);
+				int i_13_ = 70 % ((i - -52) / 32);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

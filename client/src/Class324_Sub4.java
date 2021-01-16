@@ -22,14 +22,12 @@ final class Class324_Sub4 extends Class324 {
         anIntArray6507 = new int[class207s.length];
         for (int i = 0; i < class207s.length; i++) {
             Class207 class207 = class207s[i];
-            if (class207.aByteArray2695 != null)
-                aByteArrayArray6504[i] = class207.aByteArray2695;
-            else {
+            if (class207.aByteArray2695 == null) {
                 byte[] is_1_ = class207.aByteArray2699;
                 byte[] is_2_ = aByteArrayArray6504[i] = new byte[is_1_.length];
                 for (int i_3_ = 0; i_3_ < is_1_.length; i_3_++)
                     is_2_[i_3_] = (byte) (is_1_[i_3_] == 0 ? 0 : -1);
-            }
+            } else aByteArrayArray6504[i] = class207.aByteArray2695;
             anIntArray6508[i] = class207.anInt2700;
             anIntArray6507[i] = class207.anInt2703;
         }

@@ -76,15 +76,7 @@ final class Class101_Sub3 extends Class101 {
                     + this.aFloat5756 * f_6_);
             f_3_ = (this.aFloat5772
                     + f_6_ * this.aFloat5761);
-        } else if (f_1_ > 0.00390625F || f_1_ < -0.00390625F) {
-            float f_7_ = -f_2_ / f_1_;
-            f_3_ = (this.aFloat5769 * f_7_
-                    + this.aFloat5772);
-            f_4_ = (this.aFloat5750 * f_7_
-                    + this.aFloat5747);
-            f_5_ = (this.aFloat5754 * f_7_
-                    + this.aFloat5751);
-        } else {
+        } else if (f_1_ <= 0.00390625F && f_1_ >= -0.00390625F) {
             float f_8_ = -f_2_ / f_0_;
             f_4_ = (f_8_ * this.aFloat5781
                     + this.aFloat5747);
@@ -92,6 +84,14 @@ final class Class101_Sub3 extends Class101 {
                     + this.aFloat5772);
             f_5_ = (this.aFloat5751
                     + f_8_ * this.aFloat5784);
+        } else {
+            float f_7_ = -f_2_ / f_1_;
+            f_3_ = (this.aFloat5769 * f_7_
+                    + this.aFloat5772);
+            f_4_ = (this.aFloat5750 * f_7_
+                    + this.aFloat5747);
+            f_5_ = (this.aFloat5754 * f_7_
+                    + this.aFloat5751);
         }
         fs[0] = (f_0_ * this.aFloat5781
                 + (f * this.aFloat5770

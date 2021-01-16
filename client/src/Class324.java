@@ -869,14 +869,14 @@ abstract class Class324 {
                         + i_130_);
             if (i_132_ != -33)
                 method2578('\ufffe', 83, -110, 26, true, null, 113, 97);
-            if (i_129_ != 1) {
+            if (i_129_ == 1) {
+                i_142_ = aClass143_4063.method1183(true, string) + i_138_;
+                i_140_ += (i + -i_142_) / 2;
+            } else {
                 if (i_129_ == 2) {
                     i_142_ = aClass143_4063.method1183(true, string) - -i_138_;
                     i_140_ += -i_142_ + i;
                 }
-            } else {
-                i_142_ = aClass143_4063.method1183(true, string) + i_138_;
-                i_140_ += (i + -i_142_) / 2;
             }
             method2566(class105s, null, i_140_, is, is_137_, i_141_, string,
                     174);

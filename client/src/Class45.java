@@ -195,53 +195,7 @@ final class Class45 {
         if (i_8_ >= -17)
             method415((byte) 70, -7);
         if (i_10_ > 1) {
-            if (this.anInt634 != 2) {
-                int i_16_ = is_15_.length;
-                int i_17_ = 0xff & is_15_[--i_16_];
-                i_16_ -= 4 * (i_10_ * i_17_);
-                Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
-                int[] is_18_ = new int[i_10_];
-                class348_sub49.anInt7197 = i_16_;
-                for (int i_19_ = 0; i_19_ < i_17_; i_19_++) {
-                    int i_20_ = 0;
-                    for (int i_21_ = 0; i_21_ < i_10_; i_21_++) {
-                        i_20_ += class348_sub49.method3385((byte) -126);
-                        is_18_[i_21_] += i_20_;
-                    }
-                }
-                byte[][] is_22_ = new byte[i_10_][];
-                for (int i_23_ = 0;
-                     i_10_ > i_23_; i_23_++) {
-                    is_22_[i_23_] = new byte[is_18_[i_23_]];
-                    is_18_[i_23_] = 0;
-                }
-                class348_sub49.anInt7197 = i_16_;
-                int i_24_ = 0;
-                for (int i_25_ = 0;
-                     i_25_ < i_17_; i_25_++) {
-                    int i_26_ = 0;
-                    for (int i_27_ = 0; i_10_ > i_27_; i_27_++) {
-                        i_26_ += class348_sub49.method3385((byte) -126);
-                        Class214.method1577(is_15_, i_24_, is_22_[i_27_],
-                                is_18_[i_27_], i_26_);
-                        i_24_ += i_26_;
-                        is_18_[i_27_] += i_26_;
-                    }
-                }
-                for (int i_28_ = 0; i_10_ > i_28_; i_28_++) {
-                    int i_29_;
-                    if (is_11_ == null)
-                        i_29_ = i_28_;
-                    else
-                        i_29_ = is_11_[i_28_];
-                    if (this.anInt634 != 0)
-                        objects[i_29_] = is_22_[i_28_];
-                    else
-                        objects[i_29_]
-                                = Class179.method1357(is_22_[i_28_], false,
-                                (byte) 126);
-                }
-            } else {
+            if (this.anInt634 == 2) {
                 int i_30_ = is_15_.length;
                 int i_31_ = 0xff & is_15_[--i_30_];
                 i_30_ -= 4 * (i_31_ * i_10_);
@@ -289,6 +243,52 @@ final class Class45 {
                     }
                 }
                 objects[i_33_] = is_38_;
+            } else {
+                int i_16_ = is_15_.length;
+                int i_17_ = 0xff & is_15_[--i_16_];
+                i_16_ -= 4 * (i_10_ * i_17_);
+                Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
+                int[] is_18_ = new int[i_10_];
+                class348_sub49.anInt7197 = i_16_;
+                for (int i_19_ = 0; i_19_ < i_17_; i_19_++) {
+                    int i_20_ = 0;
+                    for (int i_21_ = 0; i_21_ < i_10_; i_21_++) {
+                        i_20_ += class348_sub49.method3385((byte) -126);
+                        is_18_[i_21_] += i_20_;
+                    }
+                }
+                byte[][] is_22_ = new byte[i_10_][];
+                for (int i_23_ = 0;
+                     i_10_ > i_23_; i_23_++) {
+                    is_22_[i_23_] = new byte[is_18_[i_23_]];
+                    is_18_[i_23_] = 0;
+                }
+                class348_sub49.anInt7197 = i_16_;
+                int i_24_ = 0;
+                for (int i_25_ = 0;
+                     i_25_ < i_17_; i_25_++) {
+                    int i_26_ = 0;
+                    for (int i_27_ = 0; i_10_ > i_27_; i_27_++) {
+                        i_26_ += class348_sub49.method3385((byte) -126);
+                        Class214.method1577(is_15_, i_24_, is_22_[i_27_],
+                                is_18_[i_27_], i_26_);
+                        i_24_ += i_26_;
+                        is_18_[i_27_] += i_26_;
+                    }
+                }
+                for (int i_28_ = 0; i_10_ > i_28_; i_28_++) {
+                    int i_29_;
+                    if (is_11_ == null)
+                        i_29_ = i_28_;
+                    else
+                        i_29_ = is_11_[i_28_];
+                    if (this.anInt634 != 0)
+                        objects[i_29_] = is_22_[i_28_];
+                    else
+                        objects[i_29_]
+                                = Class179.method1357(is_22_[i_28_], false,
+                                (byte) 126);
+                }
             }
         } else {
             int i_44_;

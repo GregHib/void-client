@@ -144,8 +144,34 @@ final class Class79 {
         } else if (i != 2) {
             if (i != 12) {
                 if (i < 30 || i >= 35) {
-                    if (i != 40) {
-                        if (i != 41) {
+                    if (i == 40) {
+                        int i_25_ = class348_sub49.method3387(255);
+                        aShortArray1328 = new short[i_25_];
+                        aShortArray1352 = new short[i_25_];
+                        for (int i_26_ = 0;
+							 i_26_ < i_25_;
+                             i_26_++) {
+                            aShortArray1328[i_26_]
+                                    = (short) class348_sub49.method3330(842397944);
+                            aShortArray1352[i_26_]
+                                    = (short) class348_sub49.method3330(842397944);
+                        }
+                    } else {
+                        if (i == 41) {
+                            int i_23_ = class348_sub49.method3387(255);
+                            aShortArray1393 = new short[i_23_];
+                            aShortArray1391 = new short[i_23_];
+                            for (int i_24_ = 0;
+								 i_24_ < i_23_;
+                                 i_24_++) {
+                                aShortArray1393[i_24_]
+                                        = (short) class348_sub49
+                                        .method3330(842397944);
+                                aShortArray1391[i_24_]
+                                        = (short) class348_sub49
+                                        .method3330(842397944);
+                            }
+                        } else {
                             if (i == 42) {
                                 int i_7_
                                         = class348_sub49.method3387(i_4_ ^ 0x80);
@@ -253,7 +279,18 @@ final class Class79 {
                                                                 = (short) (class348_sub49
                                                                 .method3330
                                                                         (842397944));
-                                                    } else if (i != 114) {
+                                                    } else if (i == 114) {
+                                                        this
+                                                                .aByte1353
+                                                                = (class348_sub49
+                                                                .method3388
+                                                                        (-110));
+                                                        this
+                                                                .aByte1347
+                                                                = (class348_sub49
+                                                                .method3388
+                                                                        (-85));
+                                                    } else {
                                                         if (i != 119) {
                                                             if (i == 121) {
                                                                 anIntArrayArray1388
@@ -338,7 +375,14 @@ final class Class79 {
                                                                         this
                                                                                 .anInt1392
                                                                                 = class348_sub49.method3387(255);
-                                                                    } else if (i != 135) {
+                                                                    } else if (i == 135) {
+                                                                        this
+                                                                                .anInt1335
+                                                                                = class348_sub49.method3387(255);
+                                                                        this
+                                                                                .anInt1371
+                                                                                = class348_sub49.method3330(842397944);
+                                                                    } else {
                                                                         if (i
                                                                                 == 136) {
                                                                             this.anInt1385
@@ -354,7 +398,11 @@ final class Class79 {
                                                                                         else if (i == 142)
                                                                                             this.anInt1383 = class348_sub49.method3330(842397944);
                                                                                         else if (i != 143) {
-                                                                                            if (i < 150 || i >= 155) {
+                                                                                            if (i >= 150 && i < 155) {
+                                                                                                this.aStringArray1349[-150 + i] = class348_sub49.method3377((byte) -73);
+                                                                                                if (!this.aClass278_1348.aBoolean3583)
+                                                                                                    this.aStringArray1349[i + -150] = null;
+                                                                                            } else {
                                                                                                 if (i == 155) {
                                                                                                     aByte1376 = class348_sub49.method3388(i_4_ ^ ~0x16);
                                                                                                     aByte1360 = class348_sub49.method3388(-113);
@@ -363,7 +411,12 @@ final class Class79 {
                                                                                                 } else if (i == 158)
                                                                                                     this.aByte1384 = (byte) 1;
                                                                                                 else if (i != 159) {
-                                                                                                    if (i != 160) {
+                                                                                                    if (i == 160) {
+                                                                                                        int i_21_ = class348_sub49.method3387(255);
+                                                                                                        this.anIntArray1342 = new int[i_21_];
+                                                                                                        for (int i_22_ = 0; i_22_ < i_21_; i_22_++)
+                                                                                                            this.anIntArray1342[i_22_] = class348_sub49.method3330(i_4_ + 842397817);
+                                                                                                    } else {
                                                                                                         if (i == 162)
                                                                                                             this.aBoolean1370 = true;
                                                                                                         else if (i != 163) {
@@ -392,20 +445,11 @@ final class Class79 {
                                                                                                                 this.anInt1337 = class348_sub49.method3387(255);
                                                                                                         } else
                                                                                                             this.anInt1333 = class348_sub49.method3387(i_4_ + 128);
-                                                                                                    } else {
-                                                                                                        int i_21_ = class348_sub49.method3387(255);
-                                                                                                        this.anIntArray1342 = new int[i_21_];
-                                                                                                        for (int i_22_ = 0; i_22_ < i_21_; i_22_++)
-                                                                                                            this.anIntArray1342[i_22_] = class348_sub49.method3330(i_4_ + 842397817);
                                                                                                     }
-                                                                                                } else
+																								} else
                                                                                                     this.aByte1384 = (byte) 0;
-                                                                                            } else {
-                                                                                                this.aStringArray1349[-150 + i] = class348_sub49.method3377((byte) -73);
-                                                                                                if (!this.aClass278_1348.aBoolean3583)
-                                                                                                    this.aStringArray1349[i + -150] = null;
                                                                                             }
-                                                                                        } else
+																						} else
                                                                                             this.aBoolean1381 = true;
                                                                                     } else
                                                                                         this.anInt1356 = class348_sub49.method3387(i_4_ + 128);
@@ -416,15 +460,8 @@ final class Class79 {
                                                                         } else
                                                                             this.anInt1401
                                                                                     = class348_sub49.method3330(842397944);
-                                                                    } else {
-                                                                        this
-                                                                                .anInt1335
-                                                                                = class348_sub49.method3387(255);
-                                                                        this
-                                                                                .anInt1371
-                                                                                = class348_sub49.method3330(842397944);
                                                                     }
-                                                                } else
+																} else
                                                                     class348_sub49
                                                                             .method3387
                                                                                     (255);
@@ -442,19 +479,8 @@ final class Class79 {
                                                                     .method3388
                                                                             (i_4_
                                                                                     + -245));
-                                                    } else {
-                                                        this
-                                                                .aByte1353
-                                                                = (class348_sub49
-                                                                .method3388
-                                                                        (-110));
-                                                        this
-                                                                .aByte1347
-                                                                = (class348_sub49
-                                                                .method3388
-                                                                        (-85));
                                                     }
-                                                } else
+												} else
                                                     this
                                                             .aBoolean1331
                                                             = false;
@@ -474,35 +500,9 @@ final class Class79 {
                                             = class348_sub49.method3330(842397944);
                             } else
                                 this.aBoolean1397 = false;
-                        } else {
-                            int i_23_ = class348_sub49.method3387(255);
-                            aShortArray1393 = new short[i_23_];
-                            aShortArray1391 = new short[i_23_];
-                            for (int i_24_ = 0;
-								 i_24_ < i_23_;
-                                 i_24_++) {
-                                aShortArray1393[i_24_]
-                                        = (short) class348_sub49
-                                        .method3330(842397944);
-                                aShortArray1391[i_24_]
-                                        = (short) class348_sub49
-                                        .method3330(842397944);
-                            }
                         }
-                    } else {
-                        int i_25_ = class348_sub49.method3387(255);
-                        aShortArray1328 = new short[i_25_];
-                        aShortArray1352 = new short[i_25_];
-                        for (int i_26_ = 0;
-							 i_26_ < i_25_;
-                             i_26_++) {
-                            aShortArray1328[i_26_]
-                                    = (short) class348_sub49.method3330(842397944);
-                            aShortArray1352[i_26_]
-                                    = (short) class348_sub49.method3330(842397944);
-                        }
-                    }
-                } else
+					}
+				} else
                     this.aStringArray1349[-30 + i]
                             = class348_sub49.method3377((byte) 124);
             } else

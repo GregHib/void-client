@@ -56,9 +56,7 @@ final class Class55_Sub1 extends Class55 {
         if (i_3_ > -108)
             aBoolean5265 = false;
         if (Class27.aClass356_389.method3480(i_2_, -6008) == null) {
-            if (!Class38.aBoolean510)
-                Class303.method2285(bool, (byte) -90, i_2_);
-            else {
+            if (Class38.aBoolean510) {
                 Class348_Sub15 class348_sub15
                         = new Class348_Sub15(i_2_,
                         new Class55_Sub1(4096,
@@ -71,7 +69,7 @@ final class Class55_Sub1 extends Class55 {
                                 Class59_Sub2.aStringArray5305[Class348_Sub33.anInt6967]);
                 Class27.aClass356_389.method3483((byte) 35, i_2_,
                         class348_sub15);
-            }
+            } else Class303.method2285(bool, (byte) -90, i_2_);
         }
         anInt5268++;
     }

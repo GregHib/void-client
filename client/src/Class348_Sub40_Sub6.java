@@ -52,13 +52,13 @@ final class Class348_Sub40_Sub6 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_11_) {
         int i_12_ = i;
         do {
-            if (i_12_ != 0) {
-                if (i_12_ != 1)
-                    break;
-            } else {
+            if (i_12_ == 0) {
                 anInt9133
                         = class348_sub49.method3330(842397944) << -1225450108;
                 break;
+            } else {
+                if (i_12_ != 1)
+                    break;
             }
             this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;

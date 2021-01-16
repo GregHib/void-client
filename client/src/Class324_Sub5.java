@@ -66,16 +66,7 @@ final class Class324_Sub5 extends Class324 {
                 int i_22_ = i_15_ / 16 * i;
                 int i_23_ = i_22_ * i_1_ + i_21_;
                 int i_24_ = 0;
-                if (is_17_ != null) {
-                    for (int i_25_ = 0; i_25_ < i_19_; i_25_++) {
-                        for (int i_26_ = 0; i_26_ < i_20_; i_26_++) {
-                            is[i_23_++] = (is_17_[i_24_] << 24
-                                    | is_16_[is_18_[i_24_] & 0xff]);
-                            i_24_++;
-                        }
-                        i_23_ += i_1_ - i_20_;
-                    }
-                } else {
+                if (is_17_ == null) {
                     for (int i_27_ = 0; i_27_ < i_19_; i_27_++) {
                         for (int i_28_ = 0; i_28_ < i_20_; i_28_++) {
                             int i_29_;
@@ -83,6 +74,15 @@ final class Class324_Sub5 extends Class324 {
                                 is[i_23_++] = ~0xffffff | is_16_[i_29_ & 0xff];
                             else
                                 i_23_++;
+                        }
+                        i_23_ += i_1_ - i_20_;
+                    }
+                } else {
+                    for (int i_25_ = 0; i_25_ < i_19_; i_25_++) {
+                        for (int i_26_ = 0; i_26_ < i_20_; i_26_++) {
+                            is[i_23_++] = (is_17_[i_24_] << 24
+                                    | is_16_[is_18_[i_24_] & 0xff]);
+                            i_24_++;
                         }
                         i_23_ += i_1_ - i_20_;
                     }

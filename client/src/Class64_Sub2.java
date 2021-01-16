@@ -295,14 +295,12 @@ final class Class64_Sub2 extends Class64 {
                             (aShortArray5486, aByteArray5515, aShortArray5423,
                                     aShort5452, aShortArray5416, 0, 4, anInt5475,
                                     buffer.getAddress());
-                if (!interface5_impl1.method18(6331))
-                    bool_11_ = false;
-                else {
+                if (interface5_impl1.method18(6331)) {
                     aClass290_5482.aBoolean3714 = true;
                     aClass290_5482.anInterface5_Impl1_3711
                             = interface5_impl1;
-                }
-            }
+                } else bool_11_ = false;
+			}
         }
         if (bool_8_) {
             if (aClass290_5424.anInterface5_Impl1_3708 == null)
@@ -319,29 +317,27 @@ final class Class64_Sub2 extends Class64 {
                 short[] is_15_;
                 byte[] is_16_;
                 short[] is_17_;
-                if (aClass151_5503 != null) {
-                    is_16_ = aClass151_5503.aByteArray2069;
-                    is = aClass151_5503.aShortArray2058;
-                    is_15_ = aClass151_5503.aShortArray2067;
-                    is_17_ = aClass151_5503.aShortArray2060;
-                } else {
+                if (aClass151_5503 == null) {
                     is = aShortArray5436;
                     is_15_ = aShortArray5493;
                     is_16_ = aByteArray5499;
                     is_17_ = aShortArray5438;
+                } else {
+                    is_16_ = aClass151_5503.aByteArray2069;
+                    is = aClass151_5503.aShortArray2058;
+                    is_15_ = aClass151_5503.aShortArray2067;
+                    is_17_ = aClass151_5503.aShortArray2060;
                 }
-                aHa_Sub3_5419.aNativeInterface7924.copyNormals
+				aHa_Sub3_5419.aNativeInterface7924.copyNormals
                         (is_15_, is_17_, is, is_16_, 3.0F / (float) aShort5427,
                                 3.0F / (float) (aShort5427 + aShort5427 / 2), 0, 12,
                                 anInt5475, buffer.getAddress());
-                if (!interface5_impl1.method18(6331))
-                    bool_11_ = false;
-                else {
+                if (interface5_impl1.method18(6331)) {
                     aClass290_5424.aBoolean3714 = true;
                     aClass290_5424.anInterface5_Impl1_3711
                             = interface5_impl1;
-                }
-            }
+                } else bool_11_ = false;
+			}
         }
         if (bool_10_) {
             if (aClass290_5460.anInterface5_Impl1_3708 == null)
@@ -839,15 +835,12 @@ final class Class64_Sub2 extends Class64 {
                 if (anIntArray5511 != null
                         && !Class170.method1317(anInt5472, (byte) -91,
                         anInt5463)) {
-                    if (aClass290_5520 != null
-                            && !aClass290_5520.method2197((byte) -62))
-                        aBoolean5402 = true;
-                    else {
+                    if (aClass290_5520 == null || aClass290_5520.method2197((byte) -62)) {
                         if (!aBoolean5477)
                             method675(0);
                         anIntArray5511 = null;
-                    }
-                }
+                    } else aBoolean5402 = true;
+				}
                 if (anIntArray5519 != null
                         && !Class246.method1887(0, anInt5472, anInt5463)) {
                     if (aClass290_5520 == null
@@ -1333,15 +1326,7 @@ final class Class64_Sub2 extends Class64 {
         int i_146_ = 84 / ((-70 - i) / 49);
         if (buffer != null) {
             Stream stream = aHa_Sub3_5419.method3893(buffer, 9179);
-            if (!Stream.c()) {
-                for (int i_147_ = 0;
-					 anInt5516 > i_147_;
-                     i_147_++) {
-                    stream.a(aShortArray5508[i_147_]);
-                    stream.a(aShortArray5495[i_147_]);
-                    stream.a(aShortArray5512[i_147_]);
-                }
-            } else {
+            if (Stream.c()) {
                 for (int i_148_ = 0;
 					 anInt5516 > i_148_;
                      i_148_++) {
@@ -1349,8 +1334,16 @@ final class Class64_Sub2 extends Class64 {
                     stream.d(aShortArray5495[i_148_]);
                     stream.d(aShortArray5512[i_148_]);
                 }
+            } else {
+                for (int i_147_ = 0;
+					 anInt5516 > i_147_;
+                     i_147_++) {
+                    stream.a(aShortArray5508[i_147_]);
+                    stream.a(aShortArray5495[i_147_]);
+                    stream.a(aShortArray5512[i_147_]);
+                }
             }
-            stream.a();
+			stream.a();
             if (interface5_impl2.method22(-23)) {
                 aClass192_5485.aBoolean2577 = true;
                 aBoolean5402 = true;
@@ -1442,11 +1435,7 @@ final class Class64_Sub2 extends Class64 {
             boolean bool_159_
                     = Class348_Sub40_Sub9.method3073(anInt5472, i, (byte) 50);
             boolean bool_160_ = bool_157_ | bool_158_ | bool_159_;
-            if (!bool_160_) {
-                class64_sub2_154_.anIntArray5511 = anIntArray5511;
-                class64_sub2_154_.anIntArray5429 = anIntArray5429;
-                class64_sub2_154_.anIntArray5519 = anIntArray5519;
-            } else {
+            if (bool_160_) {
                 if (bool_157_) {
                     if (class64_sub2_153_.anIntArray5511 != null
                             && anInt5497 <= class64_sub2_153_.anIntArray5511.length)
@@ -1492,24 +1481,28 @@ final class Class64_Sub2 extends Class64 {
                         class64_sub2_154_.anIntArray5429[i_161_]
                                 = anIntArray5429[i_161_];
                 }
-            }
-            if (!Class264.method2015(i, anInt5472, 7)) {
-                if (!Class161.method1258(i, -9301, anInt5472))
-                    class64_sub2_154_.aClass290_5520 = null;
-                else
-                    class64_sub2_154_.aClass290_5520 = aClass290_5520;
             } else {
-                class64_sub2_154_.aClass290_5520
-                        = class64_sub2_153_.aClass290_5520;
-                class64_sub2_154_.aClass290_5520
-                        .anInterface5_Impl1_3711
-                        = aClass290_5520.anInterface5_Impl1_3711;
-                class64_sub2_154_.aClass290_5520.aBoolean3714
-                        = aClass290_5520.aBoolean3714;
-                class64_sub2_154_.aClass290_5520.aBoolean3709
-                        = true;
+                class64_sub2_154_.anIntArray5511 = anIntArray5511;
+                class64_sub2_154_.anIntArray5429 = anIntArray5429;
+                class64_sub2_154_.anIntArray5519 = anIntArray5519;
             }
-            if (Class239_Sub26.method1833((byte) -122, i, anInt5472)) {
+			if (Class264.method2015(i, anInt5472, 7)) {
+				class64_sub2_154_.aClass290_5520
+						= class64_sub2_153_.aClass290_5520;
+				class64_sub2_154_.aClass290_5520
+						.anInterface5_Impl1_3711
+						= aClass290_5520.anInterface5_Impl1_3711;
+				class64_sub2_154_.aClass290_5520.aBoolean3714
+						= aClass290_5520.aBoolean3714;
+				class64_sub2_154_.aClass290_5520.aBoolean3709
+						= true;
+			} else {
+				if (!Class161.method1258(i, -9301, anInt5472))
+					class64_sub2_154_.aClass290_5520 = null;
+				else
+					class64_sub2_154_.aClass290_5520 = aClass290_5520;
+			}
+			if (Class239_Sub26.method1833((byte) -122, i, anInt5472)) {
                 if (class64_sub2_153_.aShortArray5486 != null
                         && (anInt5478 <= class64_sub2_153_.aShortArray5486.length))
                     class64_sub2_154_.aShortArray5486
@@ -1539,105 +1532,105 @@ final class Class64_Sub2 extends Class64 {
                             = aByteArray5515[i_163_];
             } else
                 class64_sub2_154_.aByteArray5515 = aByteArray5515;
-            if (!Class348_Sub42_Sub8_Sub2.method3200(i, anInt5472,
-                    (byte) -75)) {
+            if (Class348_Sub42_Sub8_Sub2.method3200(i, anInt5472,
+					(byte) -75)) {
+						class64_sub2_154_.aClass290_5482
+								= class64_sub2_153_.aClass290_5482;
+						class64_sub2_154_.aClass290_5482.aBoolean3709
+								= true;
+						class64_sub2_154_.aClass290_5482.aBoolean3714
+								= aClass290_5482.aBoolean3714;
+						class64_sub2_154_.aClass290_5482
+								.anInterface5_Impl1_3711
+								= aClass290_5482.anInterface5_Impl1_3711;
+					} else {
                 if (Class296.method2224(i, (byte) 117, anInt5472))
                     class64_sub2_154_.aClass290_5482 = aClass290_5482;
                 else
                     class64_sub2_154_.aClass290_5482 = null;
-            } else {
-                class64_sub2_154_.aClass290_5482
-                        = class64_sub2_153_.aClass290_5482;
-                class64_sub2_154_.aClass290_5482.aBoolean3709
-                        = true;
-                class64_sub2_154_.aClass290_5482.aBoolean3714
-                        = aClass290_5482.aBoolean3714;
-                class64_sub2_154_.aClass290_5482
-                        .anInterface5_Impl1_3711
-                        = aClass290_5482.anInterface5_Impl1_3711;
             }
-            if (!Class274.method2058(i, anInt5472, 116)) {
-                class64_sub2_154_.aByteArray5499 = aByteArray5499;
-                class64_sub2_154_.aClass151_5503 = aClass151_5503;
-                class64_sub2_154_.aShortArray5436 = aShortArray5436;
-                class64_sub2_154_.aShortArray5493 = aShortArray5493;
-                class64_sub2_154_.aShortArray5438 = aShortArray5438;
-            } else {
-                if (class64_sub2_153_.aShortArray5493 == null
-                        || (anInt5475 > class64_sub2_153_.aShortArray5493.length)) {
-                    int i_164_ = anInt5475;
-                    class64_sub2_154_.aShortArray5436
-                            = class64_sub2_153_.aShortArray5436
-                            = new short[i_164_];
-                    class64_sub2_154_.aShortArray5493
-                            = class64_sub2_153_.aShortArray5493
-                            = new short[i_164_];
-                    class64_sub2_154_.aShortArray5438
-                            = class64_sub2_153_.aShortArray5438
-                            = new short[i_164_];
-                } else {
-                    class64_sub2_154_.aShortArray5436
-                            = class64_sub2_153_.aShortArray5436;
-                    class64_sub2_154_.aShortArray5493
-                            = class64_sub2_153_.aShortArray5493;
-                    class64_sub2_154_.aShortArray5438
-                            = class64_sub2_153_.aShortArray5438;
-                }
-                if (aClass151_5503 == null) {
-                    class64_sub2_154_.aClass151_5503 = null;
-                    for (int i_165_ = 0;
+			if (Class274.method2058(i, anInt5472, 116)) {
+				if (class64_sub2_153_.aShortArray5493 == null
+						|| (anInt5475 > class64_sub2_153_.aShortArray5493.length)) {
+					int i_164_ = anInt5475;
+					class64_sub2_154_.aShortArray5436
+							= class64_sub2_153_.aShortArray5436
+							= new short[i_164_];
+					class64_sub2_154_.aShortArray5493
+							= class64_sub2_153_.aShortArray5493
+							= new short[i_164_];
+					class64_sub2_154_.aShortArray5438
+							= class64_sub2_153_.aShortArray5438
+							= new short[i_164_];
+				} else {
+					class64_sub2_154_.aShortArray5436
+							= class64_sub2_153_.aShortArray5436;
+					class64_sub2_154_.aShortArray5493
+							= class64_sub2_153_.aShortArray5493;
+					class64_sub2_154_.aShortArray5438
+							= class64_sub2_153_.aShortArray5438;
+				}
+				if (aClass151_5503 == null) {
+					class64_sub2_154_.aClass151_5503 = null;
+					for (int i_165_ = 0;
 						 anInt5475 > i_165_;
-                         i_165_++) {
-                        class64_sub2_154_.aShortArray5493[i_165_]
-                                = aShortArray5493[i_165_];
-                        class64_sub2_154_.aShortArray5438[i_165_]
-                                = aShortArray5438[i_165_];
-                        class64_sub2_154_.aShortArray5436[i_165_]
-                                = aShortArray5436[i_165_];
-                    }
-                } else {
-                    if (class64_sub2_153_.aClass151_5503 == null)
-                        class64_sub2_153_.aClass151_5503 = new Class151();
-                    Class151 class151 = (class64_sub2_154_.aClass151_5503
-                            = class64_sub2_153_.aClass151_5503);
-                    if (class151.aShortArray2067 == null
-                            || (class151.aShortArray2067.length < anInt5475)) {
-                        int i_166_ = anInt5475;
-                        class151.aByteArray2069
-                                = new byte[i_166_];
-                        class151.aShortArray2067
-                                = new short[i_166_];
-                        class151.aShortArray2058
-                                = new short[i_166_];
-                        class151.aShortArray2060
-                                = new short[i_166_];
-                    }
-                    for (int i_167_ = 0;
+						 i_165_++) {
+						class64_sub2_154_.aShortArray5493[i_165_]
+								= aShortArray5493[i_165_];
+						class64_sub2_154_.aShortArray5438[i_165_]
+								= aShortArray5438[i_165_];
+						class64_sub2_154_.aShortArray5436[i_165_]
+								= aShortArray5436[i_165_];
+					}
+				} else {
+					if (class64_sub2_153_.aClass151_5503 == null)
+						class64_sub2_153_.aClass151_5503 = new Class151();
+					Class151 class151 = (class64_sub2_154_.aClass151_5503
+							= class64_sub2_153_.aClass151_5503);
+					if (class151.aShortArray2067 == null
+							|| (class151.aShortArray2067.length < anInt5475)) {
+						int i_166_ = anInt5475;
+						class151.aByteArray2069
+								= new byte[i_166_];
+						class151.aShortArray2067
+								= new short[i_166_];
+						class151.aShortArray2058
+								= new short[i_166_];
+						class151.aShortArray2060
+								= new short[i_166_];
+					}
+					for (int i_167_ = 0;
 						 i_167_ < anInt5475;
-                         i_167_++) {
-                        class64_sub2_154_.aShortArray5493[i_167_]
-                                = aShortArray5493[i_167_];
-                        class64_sub2_154_.aShortArray5438[i_167_]
-                                = aShortArray5438[i_167_];
-                        class64_sub2_154_.aShortArray5436[i_167_]
-                                = aShortArray5436[i_167_];
-                        class151.aShortArray2067[i_167_]
-                                = (aClass151_5503.aShortArray2067
-                                [i_167_]);
-                        class151.aShortArray2060[i_167_]
-                                = (aClass151_5503.aShortArray2060
-                                [i_167_]);
-                        class151.aShortArray2058[i_167_]
-                                = (aClass151_5503.aShortArray2058
-                                [i_167_]);
-                        class151.aByteArray2069[i_167_]
-                                = (aClass151_5503.aByteArray2069
-                                [i_167_]);
-                    }
-                }
-                class64_sub2_154_.aByteArray5499 = aByteArray5499;
-            }
-            if (Class126.method1113(i, anInt5472, -30)) {
+						 i_167_++) {
+						class64_sub2_154_.aShortArray5493[i_167_]
+								= aShortArray5493[i_167_];
+						class64_sub2_154_.aShortArray5438[i_167_]
+								= aShortArray5438[i_167_];
+						class64_sub2_154_.aShortArray5436[i_167_]
+								= aShortArray5436[i_167_];
+						class151.aShortArray2067[i_167_]
+								= (aClass151_5503.aShortArray2067
+								[i_167_]);
+						class151.aShortArray2060[i_167_]
+								= (aClass151_5503.aShortArray2060
+								[i_167_]);
+						class151.aShortArray2058[i_167_]
+								= (aClass151_5503.aShortArray2058
+								[i_167_]);
+						class151.aByteArray2069[i_167_]
+								= (aClass151_5503.aByteArray2069
+								[i_167_]);
+					}
+				}
+				class64_sub2_154_.aByteArray5499 = aByteArray5499;
+			} else {
+				class64_sub2_154_.aByteArray5499 = aByteArray5499;
+				class64_sub2_154_.aClass151_5503 = aClass151_5503;
+				class64_sub2_154_.aShortArray5436 = aShortArray5436;
+				class64_sub2_154_.aShortArray5493 = aShortArray5493;
+				class64_sub2_154_.aShortArray5438 = aShortArray5438;
+			}
+			if (Class126.method1113(i, anInt5472, -30)) {
                 class64_sub2_154_.aClass290_5424
                         = class64_sub2_153_.aClass290_5424;
                 class64_sub2_154_.aClass290_5424
@@ -1693,11 +1686,7 @@ final class Class64_Sub2 extends Class64 {
                 class64_sub2_154_.aClass290_5460 = aClass290_5460;
             else
                 class64_sub2_154_.aClass290_5460 = null;
-            if (!Class348_Sub42_Sub16_Sub1.method3262(i, anInt5472, 94)) {
-                class64_sub2_154_.aShortArray5495 = aShortArray5495;
-                class64_sub2_154_.aShortArray5512 = aShortArray5512;
-                class64_sub2_154_.aShortArray5508 = aShortArray5508;
-            } else {
+            if (Class348_Sub42_Sub16_Sub1.method3262(i, anInt5472, 94)) {
                 if (class64_sub2_153_.aShortArray5508 != null
                         && (class64_sub2_153_.aShortArray5508.length >= anInt5478)) {
                     class64_sub2_154_.aShortArray5508
@@ -1726,41 +1715,43 @@ final class Class64_Sub2 extends Class64 {
                     class64_sub2_154_.aShortArray5512[i_171_]
                             = aShortArray5512[i_171_];
                 }
-            }
-            if (!Class348_Sub9.method2783(anInt5472, (byte) 80, i)) {
-                if (Class368.method3563(i, (byte) 56, anInt5472))
-                    class64_sub2_154_.aClass192_5485 = aClass192_5485;
-                else
-                    class64_sub2_154_.aClass192_5485 = null;
             } else {
-                class64_sub2_154_.aClass192_5485
-                        = class64_sub2_153_.aClass192_5485;
-                class64_sub2_154_.aClass192_5485.aBoolean2577
-                        = aClass192_5485.aBoolean2577;
-                class64_sub2_154_.aClass192_5485.aBoolean2574
-                        = true;
-                class64_sub2_154_.aClass192_5485
-                        .anInterface5_Impl2_2572
-                        = aClass192_5485.anInterface5_Impl2_2572;
+                class64_sub2_154_.aShortArray5495 = aShortArray5495;
+                class64_sub2_154_.aShortArray5512 = aShortArray5512;
+                class64_sub2_154_.aShortArray5508 = aShortArray5508;
             }
-            if (!Class278.method2077(-122, anInt5472, i))
-                class64_sub2_154_.aShortArray5423 = aShortArray5423;
-            else {
-                if (class64_sub2_153_.aShortArray5423 != null
-                        && class64_sub2_153_.aShortArray5423.length >= anInt5478)
-                    class64_sub2_154_.aShortArray5423
-                            = class64_sub2_153_.aShortArray5423;
-                else {
-                    int i_172_ = anInt5478;
-                    class64_sub2_154_.aShortArray5423
-                            = class64_sub2_153_.aShortArray5423
-                            = new short[i_172_];
-                }
-                for (int i_173_ = 0; anInt5478 > i_173_; i_173_++)
-                    class64_sub2_154_.aShortArray5423[i_173_]
-                            = aShortArray5423[i_173_];
-            }
-            if (Class348_Sub40_Sub26.method3119(i, i_156_ ^ 0x6897,
+			if (Class348_Sub9.method2783(anInt5472, (byte) 80, i)) {
+				class64_sub2_154_.aClass192_5485
+						= class64_sub2_153_.aClass192_5485;
+				class64_sub2_154_.aClass192_5485.aBoolean2577
+						= aClass192_5485.aBoolean2577;
+				class64_sub2_154_.aClass192_5485.aBoolean2574
+						= true;
+				class64_sub2_154_.aClass192_5485
+						.anInterface5_Impl2_2572
+						= aClass192_5485.anInterface5_Impl2_2572;
+			} else {
+				if (Class368.method3563(i, (byte) 56, anInt5472))
+					class64_sub2_154_.aClass192_5485 = aClass192_5485;
+				else
+					class64_sub2_154_.aClass192_5485 = null;
+			}
+			if (Class278.method2077(-122, anInt5472, i)) {
+				if (class64_sub2_153_.aShortArray5423 != null
+						&& class64_sub2_153_.aShortArray5423.length >= anInt5478)
+					class64_sub2_154_.aShortArray5423
+							= class64_sub2_153_.aShortArray5423;
+				else {
+					int i_172_ = anInt5478;
+					class64_sub2_154_.aShortArray5423
+							= class64_sub2_153_.aShortArray5423
+							= new short[i_172_];
+				}
+				for (int i_173_ = 0; anInt5478 > i_173_; i_173_++)
+					class64_sub2_154_.aShortArray5423[i_173_]
+							= aShortArray5423[i_173_];
+			} else class64_sub2_154_.aShortArray5423 = aShortArray5423;
+			if (Class348_Sub40_Sub26.method3119(i, i_156_ ^ 0x6897,
                     anInt5472)) {
                 if (class64_sub2_153_.aClass334Array5442 != null
                         && (anInt5406
@@ -2146,19 +2137,19 @@ final class Class64_Sub2 extends Class64 {
                             + Class345.aFloat4268);
                     float f_186_;
                     float f_187_;
-                    if (!(f_185_ < f_184_)) {
+                    if (f_185_ < f_184_) {
+                        f_186_ = ((float) aHa_Sub3_5419.anInt8129
+                                * ((float) anInt5510 + f_184_));
+                        f_187_ = ((float) aHa_Sub3_5419.anInt8129
+                                * (f_185_ - (float) anInt5510));
+                    } else {
                         f_186_ = ((float) aHa_Sub3_5419.anInt8129
                                 * ((float) anInt5510 + f_185_));
                         f_187_
                                 = (((float) -anInt5510 + f_184_)
                                 * (float) aHa_Sub3_5419.anInt8129);
-                    } else {
-                        f_186_ = ((float) aHa_Sub3_5419.anInt8129
-                                * ((float) anInt5510 + f_184_));
-                        f_187_ = ((float) aHa_Sub3_5419.anInt8129
-                                * (f_185_ - (float) anInt5510));
                     }
-                    if (!(aHa_Sub3_5419.aFloat8158
+					if (!(aHa_Sub3_5419.aFloat8158
                             <= f_187_ / (float) i)
                             && !(f_186_ / (float) i
                             <= aHa_Sub3_5419.aFloat8126)) {
@@ -3667,14 +3658,7 @@ final class Class64_Sub2 extends Class64 {
                             = (class124.aByteArray1843 != null
                             ? class124.aByteArray1843[i_358_]
                             : (byte) 0);
-                    if (i_372_ != 0) {
-                        if (i_372_ == 1) {
-                            Class63 class63 = class63s[i_358_] = new Class63();
-                            class63.anInt1118 = i_368_;
-                            class63.anInt1119 = i_369_;
-                            class63.anInt1122 = i_370_;
-                        }
-                    } else {
+                    if (i_372_ == 0) {
                         Class371 class371 = class371s[i_359_];
                         class371.anInt4522++;
                         class371.anInt4525 += i_369_;
@@ -3690,8 +3674,15 @@ final class Class64_Sub2 extends Class64 {
                         class371.anInt4520 += i_368_;
                         class371.anInt4525 += i_369_;
                         class371.anInt4524 += i_370_;
+                    } else {
+                        if (i_372_ == 1) {
+                            Class63 class63 = class63s[i_358_] = new Class63();
+                            class63.anInt1118 = i_368_;
+                            class63.anInt1119 = i_369_;
+                            class63.anInt1122 = i_370_;
+                        }
                     }
-                }
+				}
                 for (int i_373_ = 0;
 					 i_373_ < anInt5478;
                      i_373_++) {
@@ -3731,11 +3722,139 @@ final class Class64_Sub2 extends Class64 {
                     int i_385_ = 0;
                     int i_386_ = 0;
                     if (i_378_ != -1) {
-                        if (i_376_ != -1) {
+                        if (i_376_ == -1) {
+                            f_380_ = 1.0F;
+                            f_383_ = 0.0F;
+                            i_384_ = 1;
+                            i_385_ = 2;
+                            f_382_ = 0.0F;
+                            f = 0.0F;
+                            f_381_ = 1.0F;
+                            f_379_ = 1.0F;
+                        } else {
                             i_376_ &= 0xff;
                             byte i_387_
                                     = class124.aByteArray1823[i_376_];
-                            if (i_387_ != 0) {
+                            if (i_387_ == 0) {
+                                short i_415_ = (class124
+                                        .aShortArray1863[i_374_]);
+                                short i_416_ = (class124
+                                        .aShortArray1835[i_374_]);
+                                short i_417_ = (class124
+                                        .aShortArray1855[i_374_]);
+                                short i_418_ = (class124
+                                        .aShortArray1829[i_376_]);
+                                short i_419_ = (class124
+                                        .aShortArray1849[i_376_]);
+                                short i_420_ = (class124
+                                        .aShortArray1825[i_376_]);
+                                float f_421_
+                                        = (float) (class124
+                                        .anIntArray1841[i_418_]);
+                                float f_422_
+                                        = (float) (class124
+                                        .anIntArray1847[i_418_]);
+                                float f_423_
+                                        = (float) (class124
+                                        .anIntArray1852[i_418_]);
+                                float f_424_
+                                        = ((float) (class124
+                                        .anIntArray1841[i_419_])
+                                        - f_421_);
+                                float f_425_
+                                        = (-f_422_
+                                        + (float) (class124
+                                        .anIntArray1847[i_419_]));
+                                float f_426_
+                                        = (-f_423_
+                                        + (float) (class124
+                                        .anIntArray1852[i_419_]));
+                                float f_427_
+                                        = (-f_421_
+                                        + (float) (class124
+                                        .anIntArray1841[i_420_]));
+                                float f_428_
+                                        = ((float) (class124
+                                        .anIntArray1847[i_420_])
+                                        - f_422_);
+                                float f_429_
+                                        = (-f_423_
+                                        + (float) (class124
+                                        .anIntArray1852[i_420_]));
+                                float f_430_
+                                        = (-f_421_
+                                        + (float) (class124
+                                        .anIntArray1841[i_415_]));
+                                float f_431_
+                                        = ((float) (class124
+                                        .anIntArray1847[i_415_])
+                                        - f_422_);
+                                float f_432_
+                                        = (-f_423_
+                                        + (float) (class124
+                                        .anIntArray1852[i_415_]));
+                                float f_433_
+                                        = (-f_421_
+                                        + (float) (class124
+                                        .anIntArray1841[i_416_]));
+                                float f_434_
+                                        = ((float) (class124
+                                        .anIntArray1847[i_416_])
+                                        - f_422_);
+                                float f_435_
+                                        = ((float) (class124
+                                        .anIntArray1852[i_416_])
+                                        - f_423_);
+                                float f_436_
+                                        = (-f_421_
+                                        + (float) (class124
+                                        .anIntArray1841[i_417_]));
+                                float f_437_
+                                        = (-f_422_
+                                        + (float) (class124
+                                        .anIntArray1847[i_417_]));
+                                float f_438_
+                                        = ((float) (class124
+                                        .anIntArray1852[i_417_])
+                                        - f_423_);
+                                float f_439_
+                                        = f_425_ * f_429_ - f_428_ * f_426_;
+                                float f_440_
+                                        = f_427_ * f_426_ - f_424_ * f_429_;
+                                float f_441_
+                                        = -(f_427_ * f_425_) + f_428_ * f_424_;
+                                float f_442_
+                                        = -(f_440_ * f_429_) + f_441_ * f_428_;
+                                float f_443_
+                                        = -(f_441_ * f_427_) + f_439_ * f_429_;
+                                float f_444_
+                                        = -(f_439_ * f_428_) + f_440_ * f_427_;
+                                float f_445_
+                                        = 1.0F / (f_443_ * f_425_ + f_442_ * f_424_
+                                        + f_426_ * f_444_);
+                                f = f_445_ * (f_444_ * f_432_
+                                        + (f_442_ * f_430_
+                                        + f_443_ * f_431_));
+                                f_382_ = (f_444_ * f_438_
+                                        + (f_442_ * f_436_
+                                        + f_437_ * f_443_)) * f_445_;
+                                f_380_ = f_445_ * (f_435_ * f_444_
+                                        + (f_443_ * f_434_
+                                        + f_442_ * f_433_));
+                                f_442_ = f_441_ * f_425_ - f_440_ * f_426_;
+                                f_443_ = -(f_424_ * f_441_) + f_426_ * f_439_;
+                                f_444_ = -(f_439_ * f_425_) + f_440_ * f_424_;
+                                f_445_
+                                        = 1.0F / (f_442_ * f_427_ + f_428_ * f_443_
+                                        + f_429_ * f_444_);
+                                f_381_ = (f_433_ * f_442_ + f_434_ * f_443_
+                                        + f_444_ * f_435_) * f_445_;
+                                f_383_ = (f_442_ * f_436_ + f_443_ * f_437_
+                                        + f_444_ * f_438_) * f_445_;
+                                f_379_ = f_445_ * (f_432_ * f_444_
+                                        + (f_431_ * f_443_
+                                        + f_430_ * f_442_));
+                            } else {
                                 short i_388_ = (class124
                                         .aShortArray1863[i_374_]);
                                 short i_389_ = (class124
@@ -3756,7 +3875,89 @@ final class Class64_Sub2 extends Class64 {
                                         = ((float) (class124
                                         .anIntArray1867[i_376_])
                                         / 256.0F);
-                                if (i_387_ != 1) {
+                                if (i_387_ == 1) {
+                                    float f_413_
+                                            = ((float) (class124
+                                            .anIntArray1844[i_376_])
+                                            / 1024.0F);
+                                    Class246.method1885
+                                            (i_393_,
+                                                    (class124.anIntArray1852
+                                                            [i_388_]),
+                                                    i_394_, 8,
+                                                    (class124.anIntArray1841
+                                                            [i_388_]),
+                                                    Class283.aFloatArray3658,
+                                                    (class124.anIntArray1847
+                                                            [i_388_]),
+                                                    f_395_, i_392_, i_391_, f_413_, fs);
+                                    f_379_ = Class283.aFloatArray3658[1];
+                                    f = Class283.aFloatArray3658[0];
+                                    Class246.method1885
+                                            (i_393_,
+                                                    (class124.anIntArray1852
+                                                            [i_389_]),
+                                                    i_394_, 8,
+                                                    (class124.anIntArray1841
+                                                            [i_389_]),
+                                                    Class283.aFloatArray3658,
+                                                    (class124.anIntArray1847
+                                                            [i_389_]),
+                                                    f_395_, i_392_, i_391_, f_413_, fs);
+                                    f_381_ = Class283.aFloatArray3658[1];
+                                    f_380_ = Class283.aFloatArray3658[0];
+                                    Class246.method1885
+                                            (i_393_,
+                                                    (class124.anIntArray1852
+                                                            [i_390_]),
+                                                    i_394_, 8,
+                                                    (class124.anIntArray1841
+                                                            [i_390_]),
+                                                    Class283.aFloatArray3658,
+                                                    (class124.anIntArray1847
+                                                            [i_390_]),
+                                                    f_395_, i_392_, i_391_, f_413_, fs);
+                                    f_382_ = Class283.aFloatArray3658[0];
+                                    f_383_ = Class283.aFloatArray3658[1];
+                                    float f_414_ = f_413_ / 2.0F;
+                                    if ((i_394_ & 0x1) == 0) {
+                                        if (f_414_ < -f + f_380_) {
+                                            i_384_ = 1;
+                                            f_380_ -= f_413_;
+                                        } else {
+                                            if (f_414_ < -f_380_ + f) {
+                                                f_380_ += f_413_;
+                                                i_384_ = 2;
+                                            }
+                                        }
+										if (f_414_ < f_382_ - f) {
+                                            f_382_ -= f_413_;
+                                            i_385_ = 1;
+                                        } else if (-f_382_ + f > f_414_) {
+                                            i_385_ = 2;
+                                            f_382_ += f_413_;
+                                        }
+                                    } else {
+                                        if (f_414_ < -f_379_ + f_383_) {
+                                            f_383_ -= f_413_;
+                                            i_385_ = 1;
+                                        } else {
+                                            if (-f_383_ + f_379_ > f_414_) {
+                                                i_385_ = 2;
+                                                f_383_ += f_413_;
+                                            }
+                                        }
+										if (-f_379_ + f_381_ > f_414_) {
+                                            f_381_ -= f_413_;
+                                            i_384_ = 1;
+                                        } else {
+                                            if (-f_381_ + f_379_ > f_414_) {
+                                                f_381_ += f_413_;
+                                                i_384_ = 2;
+                                            }
+                                        }
+									}
+								} else {
                                     if (i_387_ == 2) {
                                         float f_396_
                                                 = ((float) (class124
@@ -3917,7 +4118,24 @@ final class Class64_Sub2 extends Class64 {
                                                         i_392_, -4, fs);
                                         f_382_ = Class283.aFloatArray3658[0];
                                         f_383_ = Class283.aFloatArray3658[1];
-                                        if ((i_394_ & 0x1) != 0) {
+                                        if ((i_394_ & 0x1) == 0) {
+                                            if (-f + f_382_ > 0.5F) {
+                                                f_382_--;
+                                                i_385_ = 1;
+                                            } else if (f - f_382_ > 0.5F) {
+                                                f_382_++;
+                                                i_385_ = 2;
+                                            }
+                                            if (-f + f_380_ > 0.5F) {
+                                                f_380_--;
+                                                i_384_ = 1;
+                                            } else {
+                                                if (-f_380_ + f > 0.5F) {
+                                                    f_380_++;
+                                                    i_384_ = 2;
+                                                }
+                                            }
+										} else {
                                             if (-f_379_ + f_383_ > 0.5F) {
                                                 i_385_ = 1;
                                                 f_383_--;
@@ -3934,245 +4152,54 @@ final class Class64_Sub2 extends Class64 {
                                                 i_384_ = 2;
                                                 f_381_++;
                                             }
-                                        } else {
-                                            if (-f + f_382_ > 0.5F) {
-                                                f_382_--;
-                                                i_385_ = 1;
-                                            } else if (f - f_382_ > 0.5F) {
-                                                f_382_++;
-                                                i_385_ = 2;
-                                            }
-                                            if (!(-f + f_380_ > 0.5F)) {
-                                                if (-f_380_ + f > 0.5F) {
-                                                    f_380_++;
-                                                    i_384_ = 2;
-                                                }
-                                            } else {
-                                                f_380_--;
-                                                i_384_ = 1;
-                                            }
                                         }
-                                    }
-                                } else {
-                                    float f_413_
-                                            = ((float) (class124
-                                            .anIntArray1844[i_376_])
-                                            / 1024.0F);
-                                    Class246.method1885
-                                            (i_393_,
-                                                    (class124.anIntArray1852
-                                                            [i_388_]),
-                                                    i_394_, 8,
-                                                    (class124.anIntArray1841
-                                                            [i_388_]),
-                                                    Class283.aFloatArray3658,
-                                                    (class124.anIntArray1847
-                                                            [i_388_]),
-                                                    f_395_, i_392_, i_391_, f_413_, fs);
-                                    f_379_ = Class283.aFloatArray3658[1];
-                                    f = Class283.aFloatArray3658[0];
-                                    Class246.method1885
-                                            (i_393_,
-                                                    (class124.anIntArray1852
-                                                            [i_389_]),
-                                                    i_394_, 8,
-                                                    (class124.anIntArray1841
-                                                            [i_389_]),
-                                                    Class283.aFloatArray3658,
-                                                    (class124.anIntArray1847
-                                                            [i_389_]),
-                                                    f_395_, i_392_, i_391_, f_413_, fs);
-                                    f_381_ = Class283.aFloatArray3658[1];
-                                    f_380_ = Class283.aFloatArray3658[0];
-                                    Class246.method1885
-                                            (i_393_,
-                                                    (class124.anIntArray1852
-                                                            [i_390_]),
-                                                    i_394_, 8,
-                                                    (class124.anIntArray1841
-                                                            [i_390_]),
-                                                    Class283.aFloatArray3658,
-                                                    (class124.anIntArray1847
-                                                            [i_390_]),
-                                                    f_395_, i_392_, i_391_, f_413_, fs);
-                                    f_382_ = Class283.aFloatArray3658[0];
-                                    f_383_ = Class283.aFloatArray3658[1];
-                                    float f_414_ = f_413_ / 2.0F;
-                                    if ((i_394_ & 0x1) != 0) {
-                                        if (!(f_414_ < -f_379_ + f_383_)) {
-                                            if (-f_383_ + f_379_ > f_414_) {
-                                                i_385_ = 2;
-                                                f_383_ += f_413_;
-                                            }
-                                        } else {
-                                            f_383_ -= f_413_;
-                                            i_385_ = 1;
-                                        }
-                                        if (!(-f_379_ + f_381_ > f_414_)) {
-                                            if (-f_381_ + f_379_ > f_414_) {
-                                                f_381_ += f_413_;
-                                                i_384_ = 2;
-                                            }
-                                        } else {
-                                            f_381_ -= f_413_;
-                                            i_384_ = 1;
-                                        }
-                                    } else {
-                                        if (!(f_414_ < -f + f_380_)) {
-                                            if (f_414_ < -f_380_ + f) {
-                                                f_380_ += f_413_;
-                                                i_384_ = 2;
-                                            }
-                                        } else {
-                                            i_384_ = 1;
-                                            f_380_ -= f_413_;
-                                        }
-                                        if (f_414_ < f_382_ - f) {
-                                            f_382_ -= f_413_;
-                                            i_385_ = 1;
-                                        } else if (-f_382_ + f > f_414_) {
-                                            i_385_ = 2;
-                                            f_382_ += f_413_;
-                                        }
-                                    }
+									}
                                 }
-                            } else {
-                                short i_415_ = (class124
-                                        .aShortArray1863[i_374_]);
-                                short i_416_ = (class124
-                                        .aShortArray1835[i_374_]);
-                                short i_417_ = (class124
-                                        .aShortArray1855[i_374_]);
-                                short i_418_ = (class124
-                                        .aShortArray1829[i_376_]);
-                                short i_419_ = (class124
-                                        .aShortArray1849[i_376_]);
-                                short i_420_ = (class124
-                                        .aShortArray1825[i_376_]);
-                                float f_421_
-                                        = (float) (class124
-                                        .anIntArray1841[i_418_]);
-                                float f_422_
-                                        = (float) (class124
-                                        .anIntArray1847[i_418_]);
-                                float f_423_
-                                        = (float) (class124
-                                        .anIntArray1852[i_418_]);
-                                float f_424_
-                                        = ((float) (class124
-                                        .anIntArray1841[i_419_])
-                                        - f_421_);
-                                float f_425_
-                                        = (-f_422_
-                                        + (float) (class124
-                                        .anIntArray1847[i_419_]));
-                                float f_426_
-                                        = (-f_423_
-                                        + (float) (class124
-                                        .anIntArray1852[i_419_]));
-                                float f_427_
-                                        = (-f_421_
-                                        + (float) (class124
-                                        .anIntArray1841[i_420_]));
-                                float f_428_
-                                        = ((float) (class124
-                                        .anIntArray1847[i_420_])
-                                        - f_422_);
-                                float f_429_
-                                        = (-f_423_
-                                        + (float) (class124
-                                        .anIntArray1852[i_420_]));
-                                float f_430_
-                                        = (-f_421_
-                                        + (float) (class124
-                                        .anIntArray1841[i_415_]));
-                                float f_431_
-                                        = ((float) (class124
-                                        .anIntArray1847[i_415_])
-                                        - f_422_);
-                                float f_432_
-                                        = (-f_423_
-                                        + (float) (class124
-                                        .anIntArray1852[i_415_]));
-                                float f_433_
-                                        = (-f_421_
-                                        + (float) (class124
-                                        .anIntArray1841[i_416_]));
-                                float f_434_
-                                        = ((float) (class124
-                                        .anIntArray1847[i_416_])
-                                        - f_422_);
-                                float f_435_
-                                        = ((float) (class124
-                                        .anIntArray1852[i_416_])
-                                        - f_423_);
-                                float f_436_
-                                        = (-f_421_
-                                        + (float) (class124
-                                        .anIntArray1841[i_417_]));
-                                float f_437_
-                                        = (-f_422_
-                                        + (float) (class124
-                                        .anIntArray1847[i_417_]));
-                                float f_438_
-                                        = ((float) (class124
-                                        .anIntArray1852[i_417_])
-                                        - f_423_);
-                                float f_439_
-                                        = f_425_ * f_429_ - f_428_ * f_426_;
-                                float f_440_
-                                        = f_427_ * f_426_ - f_424_ * f_429_;
-                                float f_441_
-                                        = -(f_427_ * f_425_) + f_428_ * f_424_;
-                                float f_442_
-                                        = -(f_440_ * f_429_) + f_441_ * f_428_;
-                                float f_443_
-                                        = -(f_441_ * f_427_) + f_439_ * f_429_;
-                                float f_444_
-                                        = -(f_439_ * f_428_) + f_440_ * f_427_;
-                                float f_445_
-                                        = 1.0F / (f_443_ * f_425_ + f_442_ * f_424_
-                                        + f_426_ * f_444_);
-                                f = f_445_ * (f_444_ * f_432_
-                                        + (f_442_ * f_430_
-                                        + f_443_ * f_431_));
-                                f_382_ = (f_444_ * f_438_
-                                        + (f_442_ * f_436_
-                                        + f_437_ * f_443_)) * f_445_;
-                                f_380_ = f_445_ * (f_435_ * f_444_
-                                        + (f_443_ * f_434_
-                                        + f_442_ * f_433_));
-                                f_442_ = f_441_ * f_425_ - f_440_ * f_426_;
-                                f_443_ = -(f_424_ * f_441_) + f_426_ * f_439_;
-                                f_444_ = -(f_439_ * f_425_) + f_440_ * f_424_;
-                                f_445_
-                                        = 1.0F / (f_442_ * f_427_ + f_428_ * f_443_
-                                        + f_429_ * f_444_);
-                                f_381_ = (f_433_ * f_442_ + f_434_ * f_443_
-                                        + f_444_ * f_435_) * f_445_;
-                                f_383_ = (f_442_ * f_436_ + f_443_ * f_437_
-                                        + f_444_ * f_438_) * f_445_;
-                                f_379_ = f_445_ * (f_432_ * f_444_
-                                        + (f_431_ * f_443_
-                                        + f_430_ * f_442_));
-                            }
-                        } else {
-                            f_380_ = 1.0F;
-                            f_383_ = 0.0F;
-                            i_384_ = 1;
-                            i_385_ = 2;
-                            f_382_ = 0.0F;
-                            f = 0.0F;
-                            f_381_ = 1.0F;
-                            f_379_ = 1.0F;
-                        }
-                    }
+							}
+						}
+					}
                     byte i_446_;
                     if (class124.aByteArray1843 != null)
                         i_446_ = class124.aByteArray1843[i_374_];
                     else
                         i_446_ = (byte) 0;
-                    if (i_446_ != 0) {
+                    if (i_446_ == 0) {
+                        long l = ((long) (i_376_ << 2126334786)
+                                + (((long) (i_375_ << -1054710264)
+                                + ((long) (i_386_ << -917798856)
+                                - -(long) i_377_))
+                                << -1342406624));
+                        short i_447_
+                                = class124.aShortArray1863[i_374_];
+                        short i_448_
+                                = class124.aShortArray1835[i_374_];
+                        short i_449_
+                                = class124.aShortArray1855[i_374_];
+                        Class371 class371 = class371s[i_447_];
+                        aShortArray5508[i_373_]
+                                = method669(class371.anInt4524, l,
+                                i_373_,
+                                class371.anInt4522,
+                                class371.anInt4520, -114,
+                                f, i_447_, f_379_, class124,
+                                class371.anInt4525);
+                        class371 = class371s[i_448_];
+                        aShortArray5495[i_373_]
+                                = method669(class371.anInt4524,
+                                (long) i_384_ + l, i_373_,
+                                class371.anInt4522,
+                                class371.anInt4520, -68,
+                                f_380_, i_448_, f_381_, class124,
+                                class371.anInt4525);
+                        class371 = class371s[i_449_];
+                        aShortArray5512[i_373_]
+                                = method669(class371.anInt4524,
+                                (long) i_385_ + l, i_373_,
+                                class371.anInt4522,
+                                class371.anInt4520, -112,
+                                f_382_, i_449_, f_383_, class124,
+                                class371.anInt4525);
+                    } else {
                         if (i_446_ == 1) {
                             Class63 class63 = class63s[i_374_];
                             long l
@@ -4217,44 +4244,8 @@ final class Class64_Sub2 extends Class64 {
                                     f_383_, class124,
                                     class63.anInt1119);
                         }
-                    } else {
-                        long l = ((long) (i_376_ << 2126334786)
-                                + (((long) (i_375_ << -1054710264)
-                                + ((long) (i_386_ << -917798856)
-                                - -(long) i_377_))
-                                << -1342406624));
-                        short i_447_
-                                = class124.aShortArray1863[i_374_];
-                        short i_448_
-                                = class124.aShortArray1835[i_374_];
-                        short i_449_
-                                = class124.aShortArray1855[i_374_];
-                        Class371 class371 = class371s[i_447_];
-                        aShortArray5508[i_373_]
-                                = method669(class371.anInt4524, l,
-                                i_373_,
-                                class371.anInt4522,
-                                class371.anInt4520, -114,
-                                f, i_447_, f_379_, class124,
-                                class371.anInt4525);
-                        class371 = class371s[i_448_];
-                        aShortArray5495[i_373_]
-                                = method669(class371.anInt4524,
-                                (long) i_384_ + l, i_373_,
-                                class371.anInt4522,
-                                class371.anInt4520, -68,
-                                f_380_, i_448_, f_381_, class124,
-                                class371.anInt4525);
-                        class371 = class371s[i_449_];
-                        aShortArray5512[i_373_]
-                                = method669(class371.anInt4524,
-                                (long) i_385_ + l, i_373_,
-                                class371.anInt4522,
-                                class371.anInt4520, -112,
-                                f_382_, i_449_, f_383_, class124,
-                                class371.anInt4525);
                     }
-                    if (class124.aByteArray1834 != null)
+					if (class124.aByteArray1834 != null)
                         aByteArray5515[i_373_]
                                 = class124.aByteArray1834[i_374_];
                     if (class124.aShortArray1856 != null)
@@ -4529,22 +4520,27 @@ final class Class64_Sub2 extends Class64 {
                 short[] is_494_;
                 byte[] is_495_;
                 short[] is_496_;
-                if (aClass151_5503 != null) {
-                    is_495_ = aClass151_5503.aByteArray2069;
-                    is_493_ = aClass151_5503.aShortArray2060;
-                    is_494_ = aClass151_5503.aShortArray2067;
-                    is_496_ = aClass151_5503.aShortArray2058;
-                } else {
+                if (aClass151_5503 == null) {
                     is_493_ = null;
                     is_494_ = null;
                     is_495_ = null;
                     is_496_ = null;
+                } else {
+                    is_495_ = aClass151_5503.aByteArray2069;
+                    is_493_ = aClass151_5503.aShortArray2060;
+                    is_494_ = aClass151_5503.aShortArray2067;
+                    is_496_ = aClass151_5503.aShortArray2058;
                 }
-                short[] is_497_;
+				short[] is_497_;
                 byte[] is_498_;
                 short[] is_499_;
                 short[] is_500_;
-                if (class64_sub2_485_.aClass151_5503 != null) {
+                if (class64_sub2_485_.aClass151_5503 == null) {
+                    is_497_ = null;
+                    is_498_ = null;
+                    is_499_ = null;
+                    is_500_ = null;
+                } else {
                     is_499_ = (class64_sub2_485_.aClass151_5503
                             .aShortArray2058);
                     is_498_ = (class64_sub2_485_.aClass151_5503
@@ -4553,13 +4549,8 @@ final class Class64_Sub2 extends Class64 {
                             .aShortArray2060);
                     is_500_ = (class64_sub2_485_.aClass151_5503
                             .aShortArray2067);
-                } else {
-                    is_497_ = null;
-                    is_498_ = null;
-                    is_499_ = null;
-                    is_500_ = null;
                 }
-                int[] is_501_ = class64_sub2_485_.anIntArray5455;
+				int[] is_501_ = class64_sub2_485_.anIntArray5455;
                 short[] is_502_ = class64_sub2_485_.aShortArray5439;
                 if (!class64_sub2_485_.aBoolean5477)
                     class64_sub2_485_.method675(0);
@@ -4769,10 +4760,28 @@ final class Class64_Sub2 extends Class64 {
         anInt5426++;
         Class64_Sub2 class64_sub2_532_;
         Class64_Sub2 class64_sub2_533_;
-        if (i != 1) {
-            if (i != 2) {
-                if (i != 3) {
-                    if (i != 4) {
+        if (i == 1) {
+            class64_sub2_532_ = aHa_Sub3_5419.aClass64_Sub2_8198;
+            class64_sub2_533_ = aHa_Sub3_5419.aClass64_Sub2_8206;
+        } else {
+            if (i == 2) {
+                class64_sub2_532_
+                        = aHa_Sub3_5419.aClass64_Sub2_8194;
+                class64_sub2_533_
+                        = aHa_Sub3_5419.aClass64_Sub2_8192;
+            } else {
+                if (i == 3) {
+                    class64_sub2_532_
+                            = aHa_Sub3_5419.aClass64_Sub2_8187;
+                    class64_sub2_533_
+                            = aHa_Sub3_5419.aClass64_Sub2_8200;
+                } else {
+                    if (i == 4) {
+                        class64_sub2_532_
+                                = aHa_Sub3_5419.aClass64_Sub2_8199;
+                        class64_sub2_533_
+                                = aHa_Sub3_5419.aClass64_Sub2_8188;
+                    } else {
                         if (i == 5) {
                             class64_sub2_533_
                                     = aHa_Sub3_5419.aClass64_Sub2_8207;
@@ -4782,29 +4791,11 @@ final class Class64_Sub2 extends Class64 {
                             class64_sub2_533_ = class64_sub2_532_
                                     = new Class64_Sub2(aHa_Sub3_5419, 0, 0, true,
                                     false);
-                    } else {
-                        class64_sub2_532_
-                                = aHa_Sub3_5419.aClass64_Sub2_8199;
-                        class64_sub2_533_
-                                = aHa_Sub3_5419.aClass64_Sub2_8188;
                     }
-                } else {
-                    class64_sub2_532_
-                            = aHa_Sub3_5419.aClass64_Sub2_8187;
-                    class64_sub2_533_
-                            = aHa_Sub3_5419.aClass64_Sub2_8200;
-                }
-            } else {
-                class64_sub2_532_
-                        = aHa_Sub3_5419.aClass64_Sub2_8194;
-                class64_sub2_533_
-                        = aHa_Sub3_5419.aClass64_Sub2_8192;
-            }
-        } else {
-            class64_sub2_532_ = aHa_Sub3_5419.aClass64_Sub2_8198;
-            class64_sub2_533_ = aHa_Sub3_5419.aClass64_Sub2_8206;
-        }
-        return method668(i != 0, class64_sub2_532_,
+				}
+			}
+		}
+		return method668(i != 0, class64_sub2_532_,
                 class64_sub2_533_, i_531_, bool, 26794);
     }
 
@@ -4850,7 +4841,19 @@ final class Class64_Sub2 extends Class64 {
                         <= (i_542_ - -var_s_535_.anInt4592
                         >> var_s_535_.anInt4588))))
                     return;
-                if (i != 1) {
+                if (i == 1) {
+                    for (int i_559_ = 0;
+						 anInt5433 > i_559_;
+                         i_559_++)
+                        anIntArray5519[i_559_]
+                                = (anIntArray5519[i_559_]
+                                + (var_s.method3986((anIntArray5511[i_559_]
+                                        + i_536_),
+                                (anIntArray5429[i_559_]
+                                        + i_538_),
+                                (byte) -93)
+                                - i_537_));
+                } else {
                     if (i == 2) {
                         int i_543_ = anInt5461;
                         if (i_543_ == 0)
@@ -4873,8 +4876,36 @@ final class Class64_Sub2 extends Class64 {
                                                 (byte) -92)))
                                         / i_534_));
                         }
-                    } else if (i != 3) {
-                        if (i != 4) {
+                    } else if (i == 3) {
+                        int i_555_ = 4 * (i_534_ & 0xff);
+                        int i_556_ = (i_534_ >> 1133839304 & 0xff) * 4;
+                        int i_557_
+                                = 0x3fc0 & i_534_ >> -2049872944 << 820278054;
+                        int i_558_
+                                = 0x3fc0 & i_534_ >> 1544117016 << 1758291814;
+                        if ((i_536_ - (i_555_ >> -1438536063) < 0)
+                                || ((var_s.anInt4592
+								+ (i_555_ >> -1936171295) + i_536_) >= var_s.anInt4587 << var_s.anInt4588)
+                                || -(i_556_ >> -1818641951) + i_538_ < 0
+                                || ((var_s.anInt4592
+								+ ((i_556_ >> -1982909791) + i_538_)) >= var_s.anInt4590 << var_s.anInt4588))
+                            return;
+                        this.method626(i_555_, 10947, i_558_, i_536_, i_556_,
+                                i_537_, i_557_, var_s, i_538_);
+                    } else {
+                        if (i == 4) {
+                            int i_553_ = -anInt5461 + anInt5509;
+                            for (int i_554_ = 0;
+                                 (i_554_ < anInt5433);
+                                 i_554_++)
+                                anIntArray5519[i_554_]
+                                        = (i_553_ + anIntArray5519[i_554_]
+                                        - (-(var_s_535_.method3986
+                                        (anIntArray5511[i_554_] + i_536_,
+                                                anIntArray5429[i_554_] - -i_538_,
+                                                (byte) 92))
+                                        + i_537_));
+                        } else {
                             if (i == 5) {
                                 int i_546_ = -anInt5461 + anInt5509;
                                 for (int i_547_ = 0; anInt5433 > i_547_;
@@ -4898,50 +4929,10 @@ final class Class64_Sub2 extends Class64 {
                                             + (i_550_ + -i_537_));
                                 }
                             }
-                        } else {
-                            int i_553_ = -anInt5461 + anInt5509;
-                            for (int i_554_ = 0;
-                                 (i_554_ < anInt5433);
-                                 i_554_++)
-                                anIntArray5519[i_554_]
-                                        = (i_553_ + anIntArray5519[i_554_]
-                                        - (-(var_s_535_.method3986
-                                        (anIntArray5511[i_554_] + i_536_,
-                                                anIntArray5429[i_554_] - -i_538_,
-                                                (byte) 92))
-                                        + i_537_));
                         }
-                    } else {
-                        int i_555_ = 4 * (i_534_ & 0xff);
-                        int i_556_ = (i_534_ >> 1133839304 & 0xff) * 4;
-                        int i_557_
-                                = 0x3fc0 & i_534_ >> -2049872944 << 820278054;
-                        int i_558_
-                                = 0x3fc0 & i_534_ >> 1544117016 << 1758291814;
-                        if ((i_536_ - (i_555_ >> -1438536063) < 0)
-                                || ((var_s.anInt4592
-								+ (i_555_ >> -1936171295) + i_536_) >= var_s.anInt4587 << var_s.anInt4588)
-                                || -(i_556_ >> -1818641951) + i_538_ < 0
-                                || ((var_s.anInt4592
-								+ ((i_556_ >> -1982909791) + i_538_)) >= var_s.anInt4590 << var_s.anInt4588))
-                            return;
-                        this.method626(i_555_, 10947, i_558_, i_536_, i_556_,
-                                i_537_, i_557_, var_s, i_538_);
-                    }
-                } else {
-                    for (int i_559_ = 0;
-						 anInt5433 > i_559_;
-                         i_559_++)
-                        anIntArray5519[i_559_]
-                                = (anIntArray5519[i_559_]
-                                + (var_s.method3986((anIntArray5511[i_559_]
-                                        + i_536_),
-                                (anIntArray5429[i_559_]
-                                        + i_538_),
-                                (byte) -93)
-                                - i_537_));
-                }
-                method667(0);
+					}
+				}
+				method667(0);
                 aBoolean5477 = false;
             }
         } catch (RuntimeException runtimeexception) {
@@ -5193,172 +5184,7 @@ final class Class64_Sub2 extends Class64 {
                     }
                 }
             } else if (i == 2) {
-                if (is_594_ != null) {
-                    int i_610_ = is_594_[9] << -190417500;
-                    int i_611_ = is_594_[10] << -1270503100;
-                    int i_612_ = is_594_[11] << 823214852;
-                    int i_613_ = is_594_[12] << -318877276;
-                    int i_614_ = is_594_[13] << -1834337788;
-                    int i_615_ = is_594_[14] << -634575516;
-                    if (Class64_Sub3.aBoolean5609) {
-                        int i_616_ = ((is_594_[6] * Class346.anInt4274
-                                + (Class136.anInt4795 * is_594_[0]
-                                - -(Class26.anInt386 * is_594_[3]))
-                                + 8192)
-                                >> -2036713778);
-                        int i_617_
-                                = ((is_594_[7] * Class346.anInt4274
-                                + (is_594_[1] * Class136.anInt4795
-                                - -(is_594_[4] * Class26.anInt386) + 8192))
-                                >> -310259442);
-                        i_616_ += i_613_;
-                        int i_618_ = ((8192 + Class346.anInt4274 * is_594_[8]
-                                + Class136.anInt4795 * is_594_[2]
-                                + Class26.anInt386 * is_594_[5])
-                                >> -507434962);
-                        i_617_ += i_614_;
-                        i_618_ += i_615_;
-                        Class136.anInt4795 = i_616_;
-                        Class26.anInt386 = i_617_;
-                        Class64_Sub3.aBoolean5609 = false;
-                        Class346.anInt4274 = i_618_;
-                    }
-                    int[] is_619_ = new int[9];
-                    int i_620_ = Class70.anIntArray1204[i_590_];
-                    int i_621_ = Class70.anIntArray1207[i_590_];
-                    int i_622_ = Class70.anIntArray1204[i_591_];
-                    int i_623_ = Class70.anIntArray1207[i_591_];
-                    int i_624_ = Class70.anIntArray1204[i_592_];
-                    int i_625_ = Class70.anIntArray1207[i_592_];
-                    int i_626_ = i_621_ * i_624_ + 8192 >> -1076874578;
-                    int i_627_ = 8192 + i_621_ * i_625_ >> 810434542;
-                    is_619_[5] = -i_621_;
-                    is_619_[4] = 8192 + i_620_ * i_624_ >> 269233742;
-                    is_619_[1] = (8192 + -i_622_ * i_625_ + i_623_ * i_626_
-                            >> -557240466);
-                    is_619_[6] = (8192 + -i_623_ * i_624_ + i_627_ * i_622_
-                            >> -1985908498);
-                    is_619_[7] = (i_625_ * i_623_ - (-(i_622_ * i_626_) - 8192)
-                            >> 421801774);
-                    is_619_[0] = (8192 + (i_627_ * i_623_ + i_624_ * i_622_)
-                            >> 817013838);
-                    is_619_[2] = i_620_ * i_623_ + 8192 >> 1225355566;
-                    is_619_[8] = i_622_ * i_620_ + 8192 >> 1680055758;
-                    is_619_[3] = 8192 + i_625_ * i_620_ >> 189075598;
-                    int i_628_ = ((-Class346.anInt4274 * is_619_[2]
-                            + is_619_[1] * -Class26.anInt386
-                            + (is_619_[0] * -Class136.anInt4795 + 8192))
-                            >> 605423374);
-                    int i_629_ = ((8192 + -Class346.anInt4274 * is_619_[5]
-                            + (-Class136.anInt4795 * is_619_[3]
-                            - -(is_619_[4] * -Class26.anInt386)))
-                            >> 45982382);
-                    int i_630_ = ((8192 + -Class346.anInt4274 * is_619_[8]
-                            + (-Class136.anInt4795 * is_619_[6]
-                            + -Class26.anInt386 * is_619_[7]))
-                            >> 827152270);
-                    int i_631_ = Class136.anInt4795 + i_628_;
-                    int i_632_ = i_629_ + Class26.anInt386;
-                    int i_633_ = i_630_ - -Class346.anInt4274;
-                    int[] is_634_ = new int[9];
-                    for (int i_635_ = 0; i_635_ < 3; i_635_++) {
-                        for (int i_636_ = 0; i_636_ < 3; i_636_++) {
-                            int i_637_ = 0;
-                            for (int i_638_ = 0; i_638_ < 3;
-								 i_638_++)
-                                i_637_ += (is_594_[i_636_ * 3 - -i_638_]
-                                        * is_619_[3 * i_635_ - -i_638_]);
-                            is_634_[3 * i_635_ - -i_636_]
-                                    = 8192 + i_637_ >> -1225429490;
-                        }
-                    }
-                    int i_639_ = ((is_619_[2] * i_615_ + is_619_[0] * i_613_
-                            - (-(i_614_ * is_619_[1]) + -8192))
-                            >> 1727847054);
-                    int i_640_
-                            = ((8192 + is_619_[4] * i_614_
-                            + (is_619_[3] * i_613_ - -(i_615_ * is_619_[5])))
-                            >> 127751022);
-                    i_639_ += i_631_;
-                    int i_641_ = (i_615_ * is_619_[8] + (is_619_[6] * i_613_
-                            + (is_619_[7] * i_614_
-                            + 8192))
-                            >> 306718446);
-                    i_640_ += i_632_;
-                    i_641_ += i_633_;
-                    int[] is_642_ = new int[9];
-                    for (int i_643_ = 0; i_643_ < 3; i_643_++) {
-                        for (int i_644_ = 0; i_644_ < 3; i_644_++) {
-                            int i_645_ = 0;
-                            for (int i_646_ = 0; i_646_ < 3; i_646_++)
-                                i_645_ += (is_594_[i_646_ + 3 * i_643_]
-                                        * is_634_[3 * i_646_ + i_644_]);
-                            is_642_[3 * i_643_ - -i_644_]
-                                    = i_645_ - -8192 >> -1828498;
-                        }
-                    }
-                    int i_647_
-                            = ((i_640_ * is_594_[1]
-                            + (is_594_[0] * i_639_ - -(i_641_ * is_594_[2]))
-                            - -8192)
-                            >> 1840735246);
-                    int i_648_
-                            = (8192 + is_594_[5] * i_641_ + (is_594_[4] * i_640_
-                            + i_639_ * is_594_[3])
-                            >> 565697038);
-                    int i_649_ = ((is_594_[7] * i_640_ + is_594_[6] * i_639_
-                            - -(i_641_ * is_594_[8]) - -8192)
-                            >> -1388127378);
-                    i_647_ += i_610_;
-                    i_648_ += i_611_;
-                    i_649_ += i_612_;
-                    for (int i_650_ = 0; i_595_ > i_650_; i_650_++) {
-                        int i_651_ = is[i_650_];
-                        if (i_651_ < anIntArrayArray5413.length) {
-                            int[] is_652_ = anIntArrayArray5413[i_651_];
-                            for (int i_653_ = 0; i_653_ < is_652_.length;
-                                 i_653_++) {
-                                int i_654_ = is_652_[i_653_];
-                                if (aShortArray5494 == null
-                                        || (i_593_ & aShortArray5494[i_654_]) != 0) {
-                                    int i_655_
-                                            = ((8192
-                                            + (anIntArray5519[i_654_]
-                                            * is_642_[1])
-                                            + ((anIntArray5511[i_654_]
-                                            * is_642_[0])
-                                            - -(is_642_[2]
-                                            * anIntArray5429[i_654_])))
-                                            >> 59406126);
-                                    int i_656_
-                                            = ((8192
-                                            + (is_642_[3]
-                                            * anIntArray5511[i_654_])
-                                            + ((is_642_[4]
-                                            * anIntArray5519[i_654_])
-                                            + (anIntArray5429[i_654_]
-                                            * is_642_[5])))
-                                            >> -1843323058);
-                                    i_655_ += i_647_;
-                                    int i_657_
-                                            = ((8192
-                                            + ((is_642_[6]
-                                            * anIntArray5511[i_654_])
-                                            + (anIntArray5519[i_654_]
-                                            * is_642_[7]))
-                                            + (anIntArray5429[i_654_]
-                                            * is_642_[8]))
-                                            >> 756752398);
-                                    i_656_ += i_648_;
-                                    i_657_ += i_649_;
-                                    anIntArray5511[i_654_] = i_655_;
-                                    anIntArray5519[i_654_] = i_656_;
-                                    anIntArray5429[i_654_] = i_657_;
-                                }
-                            }
-                        }
-                    }
-                } else {
+                if (is_594_ == null) {
                     for (int i_658_ = 0; i_595_ > i_658_; i_658_++) {
                         int i_659_ = is[i_658_];
                         if (i_659_ < anIntArrayArray5413.length) {
@@ -5554,8 +5380,173 @@ final class Class64_Sub2 extends Class64 {
                         }
                         method673((byte) -82);
                     }
+                } else {
+                    int i_610_ = is_594_[9] << -190417500;
+                    int i_611_ = is_594_[10] << -1270503100;
+                    int i_612_ = is_594_[11] << 823214852;
+                    int i_613_ = is_594_[12] << -318877276;
+                    int i_614_ = is_594_[13] << -1834337788;
+                    int i_615_ = is_594_[14] << -634575516;
+                    if (Class64_Sub3.aBoolean5609) {
+                        int i_616_ = ((is_594_[6] * Class346.anInt4274
+                                + (Class136.anInt4795 * is_594_[0]
+                                - -(Class26.anInt386 * is_594_[3]))
+                                + 8192)
+                                >> -2036713778);
+                        int i_617_
+                                = ((is_594_[7] * Class346.anInt4274
+                                + (is_594_[1] * Class136.anInt4795
+                                - -(is_594_[4] * Class26.anInt386) + 8192))
+                                >> -310259442);
+                        i_616_ += i_613_;
+                        int i_618_ = ((8192 + Class346.anInt4274 * is_594_[8]
+                                + Class136.anInt4795 * is_594_[2]
+                                + Class26.anInt386 * is_594_[5])
+                                >> -507434962);
+                        i_617_ += i_614_;
+                        i_618_ += i_615_;
+                        Class136.anInt4795 = i_616_;
+                        Class26.anInt386 = i_617_;
+                        Class64_Sub3.aBoolean5609 = false;
+                        Class346.anInt4274 = i_618_;
+                    }
+                    int[] is_619_ = new int[9];
+                    int i_620_ = Class70.anIntArray1204[i_590_];
+                    int i_621_ = Class70.anIntArray1207[i_590_];
+                    int i_622_ = Class70.anIntArray1204[i_591_];
+                    int i_623_ = Class70.anIntArray1207[i_591_];
+                    int i_624_ = Class70.anIntArray1204[i_592_];
+                    int i_625_ = Class70.anIntArray1207[i_592_];
+                    int i_626_ = i_621_ * i_624_ + 8192 >> -1076874578;
+                    int i_627_ = 8192 + i_621_ * i_625_ >> 810434542;
+                    is_619_[5] = -i_621_;
+                    is_619_[4] = 8192 + i_620_ * i_624_ >> 269233742;
+                    is_619_[1] = (8192 + -i_622_ * i_625_ + i_623_ * i_626_
+                            >> -557240466);
+                    is_619_[6] = (8192 + -i_623_ * i_624_ + i_627_ * i_622_
+                            >> -1985908498);
+                    is_619_[7] = (i_625_ * i_623_ - (-(i_622_ * i_626_) - 8192)
+                            >> 421801774);
+                    is_619_[0] = (8192 + (i_627_ * i_623_ + i_624_ * i_622_)
+                            >> 817013838);
+                    is_619_[2] = i_620_ * i_623_ + 8192 >> 1225355566;
+                    is_619_[8] = i_622_ * i_620_ + 8192 >> 1680055758;
+                    is_619_[3] = 8192 + i_625_ * i_620_ >> 189075598;
+                    int i_628_ = ((-Class346.anInt4274 * is_619_[2]
+                            + is_619_[1] * -Class26.anInt386
+                            + (is_619_[0] * -Class136.anInt4795 + 8192))
+                            >> 605423374);
+                    int i_629_ = ((8192 + -Class346.anInt4274 * is_619_[5]
+                            + (-Class136.anInt4795 * is_619_[3]
+                            - -(is_619_[4] * -Class26.anInt386)))
+                            >> 45982382);
+                    int i_630_ = ((8192 + -Class346.anInt4274 * is_619_[8]
+                            + (-Class136.anInt4795 * is_619_[6]
+                            + -Class26.anInt386 * is_619_[7]))
+                            >> 827152270);
+                    int i_631_ = Class136.anInt4795 + i_628_;
+                    int i_632_ = i_629_ + Class26.anInt386;
+                    int i_633_ = i_630_ - -Class346.anInt4274;
+                    int[] is_634_ = new int[9];
+                    for (int i_635_ = 0; i_635_ < 3; i_635_++) {
+                        for (int i_636_ = 0; i_636_ < 3; i_636_++) {
+                            int i_637_ = 0;
+                            for (int i_638_ = 0; i_638_ < 3;
+								 i_638_++)
+                                i_637_ += (is_594_[i_636_ * 3 - -i_638_]
+                                        * is_619_[3 * i_635_ - -i_638_]);
+                            is_634_[3 * i_635_ - -i_636_]
+                                    = 8192 + i_637_ >> -1225429490;
+                        }
+                    }
+                    int i_639_ = ((is_619_[2] * i_615_ + is_619_[0] * i_613_
+                            - (-(i_614_ * is_619_[1]) + -8192))
+                            >> 1727847054);
+                    int i_640_
+                            = ((8192 + is_619_[4] * i_614_
+                            + (is_619_[3] * i_613_ - -(i_615_ * is_619_[5])))
+                            >> 127751022);
+                    i_639_ += i_631_;
+                    int i_641_ = (i_615_ * is_619_[8] + (is_619_[6] * i_613_
+                            + (is_619_[7] * i_614_
+                            + 8192))
+                            >> 306718446);
+                    i_640_ += i_632_;
+                    i_641_ += i_633_;
+                    int[] is_642_ = new int[9];
+                    for (int i_643_ = 0; i_643_ < 3; i_643_++) {
+                        for (int i_644_ = 0; i_644_ < 3; i_644_++) {
+                            int i_645_ = 0;
+                            for (int i_646_ = 0; i_646_ < 3; i_646_++)
+                                i_645_ += (is_594_[i_646_ + 3 * i_643_]
+                                        * is_634_[3 * i_646_ + i_644_]);
+                            is_642_[3 * i_643_ - -i_644_]
+                                    = i_645_ - -8192 >> -1828498;
+                        }
+                    }
+                    int i_647_
+                            = ((i_640_ * is_594_[1]
+                            + (is_594_[0] * i_639_ - -(i_641_ * is_594_[2]))
+                            - -8192)
+                            >> 1840735246);
+                    int i_648_
+                            = (8192 + is_594_[5] * i_641_ + (is_594_[4] * i_640_
+                            + i_639_ * is_594_[3])
+                            >> 565697038);
+                    int i_649_ = ((is_594_[7] * i_640_ + is_594_[6] * i_639_
+                            - -(i_641_ * is_594_[8]) - -8192)
+                            >> -1388127378);
+                    i_647_ += i_610_;
+                    i_648_ += i_611_;
+                    i_649_ += i_612_;
+                    for (int i_650_ = 0; i_595_ > i_650_; i_650_++) {
+                        int i_651_ = is[i_650_];
+                        if (i_651_ < anIntArrayArray5413.length) {
+                            int[] is_652_ = anIntArrayArray5413[i_651_];
+                            for (int i_653_ = 0; i_653_ < is_652_.length;
+                                 i_653_++) {
+                                int i_654_ = is_652_[i_653_];
+                                if (aShortArray5494 == null
+                                        || (i_593_ & aShortArray5494[i_654_]) != 0) {
+                                    int i_655_
+                                            = ((8192
+                                            + (anIntArray5519[i_654_]
+                                            * is_642_[1])
+                                            + ((anIntArray5511[i_654_]
+                                            * is_642_[0])
+                                            - -(is_642_[2]
+                                            * anIntArray5429[i_654_])))
+                                            >> 59406126);
+                                    int i_656_
+                                            = ((8192
+                                            + (is_642_[3]
+                                            * anIntArray5511[i_654_])
+                                            + ((is_642_[4]
+                                            * anIntArray5519[i_654_])
+                                            + (anIntArray5429[i_654_]
+                                            * is_642_[5])))
+                                            >> -1843323058);
+                                    i_655_ += i_647_;
+                                    int i_657_
+                                            = ((8192
+                                            + ((is_642_[6]
+                                            * anIntArray5511[i_654_])
+                                            + (anIntArray5519[i_654_]
+                                            * is_642_[7]))
+                                            + (anIntArray5429[i_654_]
+                                            * is_642_[8]))
+                                            >> 756752398);
+                                    i_656_ += i_648_;
+                                    i_657_ += i_649_;
+                                    anIntArray5511[i_654_] = i_655_;
+                                    anIntArray5519[i_654_] = i_656_;
+                                    anIntArray5429[i_654_] = i_657_;
+                                }
+                            }
+                        }
+                    }
                 }
-            } else if (i == 3) {
+			} else if (i == 3) {
                 if (is_594_ == null) {
                     for (int i_690_ = 0; i_595_ > i_690_; i_690_++) {
                         int i_691_ = is[i_690_];

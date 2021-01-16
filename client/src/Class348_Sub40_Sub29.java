@@ -28,19 +28,7 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
             int[] is_2_ = is[0];
             int[] is_3_ = is[1];
             int[] is_4_ = is[2];
-            if (Class348_Sub40_Sub6.anInt9139 != anInt9374) {
-                for (int i_5_ = 0; i_5_ < Class348_Sub40_Sub6.anInt9139;
-                     i_5_++) {
-                    int i_6_
-                            = anInt9374 * i_5_ / Class348_Sub40_Sub6.anInt9139;
-                    int i_7_ = anIntArray9375[i_6_ + i_1_];
-                    is_4_[i_5_] = Class139.method1166(i_7_, 255) << 53282276;
-                    is_3_[i_5_]
-                            = Class139.method1166(65280, i_7_) >> 1400355748;
-                    is_2_[i_5_]
-                            = Class139.method1166(i_7_ >> -1716259188, 4080);
-                }
-            } else {
+            if (Class348_Sub40_Sub6.anInt9139 == anInt9374) {
                 for (int i_8_ = 0;
                      (Class348_Sub40_Sub6.anInt9139 > i_8_);
                      i_8_++) {
@@ -51,6 +39,18 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                             = Class139.method1166(i_9_ >> -613090268, 4080);
                     is_2_[i_8_]
                             = Class139.method1166(16711680, i_9_) >> 1624740716;
+                }
+            } else {
+                for (int i_5_ = 0; i_5_ < Class348_Sub40_Sub6.anInt9139;
+                     i_5_++) {
+                    int i_6_
+                            = anInt9374 * i_5_ / Class348_Sub40_Sub6.anInt9139;
+                    int i_7_ = anIntArray9375[i_6_ + i_1_];
+                    is_4_[i_5_] = Class139.method1166(i_7_, 255) << 53282276;
+                    is_3_[i_5_]
+                            = Class139.method1166(65280, i_7_) >> 1400355748;
+                    is_2_[i_5_]
+                            = Class139.method1166(i_7_ >> -1716259188, 4080);
                 }
             }
         }
@@ -134,7 +134,13 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         int i_28_ = -i_23_ + i;
         int i_29_ = -i_16_ + i_24_;
         int i_30_ = -i_22_ + i_19_;
-        if (i_16_ >= i_21_ || i_24_ <= i_24_) {
+        if (i_16_ < i_21_ && i_24_ > i_24_) {
+            i_16_--;
+            if (i_24_ < i_21_)
+                i_21_++;
+            else
+                i_24_++;
+        } else {
             if (i_21_ >= i_24_) {
                 i_24_--;
                 if (i_21_ < i_16_)
@@ -148,12 +154,6 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                 else
                     i_24_++;
             }
-        } else {
-            i_16_--;
-            if (i_24_ < i_21_)
-                i_21_++;
-            else
-                i_24_++;
         }
         int i_31_ = -i_22_ + i_18_;
         int i_32_ = 0;

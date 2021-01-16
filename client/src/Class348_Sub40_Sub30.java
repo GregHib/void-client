@@ -309,7 +309,12 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                         while_205_:
                         do {
                             do {
-                                if (i_38_ != 0) {
+                                if (i_38_ == 0) {
+                                    anInt9396 = i_36_;
+                                    anInt9386 = i_30_;
+                                    anInt9392 = i_31_;
+                                    return;
+                                } else {
                                     if (i_38_ != 1) {
                                         if (i_38_ != 2) {
                                             if (i_38_ != 3) {
@@ -324,11 +329,6 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                                             break;
                                         break while_205_;
                                     }
-                                } else {
-                                    anInt9396 = i_36_;
-                                    anInt9386 = i_30_;
-                                    anInt9392 = i_31_;
-                                    return;
                                 }
                                 anInt9392 = i_31_;
                                 anInt9386 = i_37_;
@@ -365,15 +365,15 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                 if (i_39_ == 31015) {
                     int i_40_ = i;
                     do {
-                        if (i_40_ != 0) {
+                        if (i_40_ == 0) {
+                            anInt9402 = class348_sub49.method3372(13638);
+                            return;
+                        } else {
                             if (i_40_ != 1) {
                                 if (i_40_ == 2)
                                     break;
                                 break while_209_;
                             }
-                        } else {
-                            anInt9402 = class348_sub49.method3372(13638);
-                            return;
                         }
                         anInt9390 = (class348_sub49.method3388(-83)
                                 << 1365062124) / 100;

@@ -125,18 +125,7 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
     static final void method2987(int i, int i_7_, int i_8_, int i_9_,
                                  int i_10_) {
         anInt9047++;
-        if (i_7_ != 8 && i_7_ != 16) {
-            Class357 class357
-                    = Class147.aClass357ArrayArrayArray2029[i][i_10_][i_8_];
-            if (class357 != null) {
-                if (i_7_ != 1) {
-                    if (i_7_ == 2)
-                        class357.aShort4398 = (short) 0;
-                } else
-                    class357.aShort4409 = (short) 0;
-            }
-            Class286_Sub3.method2152(false);
-        } else {
+        if (i_7_ == 8 || i_7_ == 16) {
             for (int i_11_ = 0;
                  (Class348_Sub44.anInt7101 > i_11_);
                  i_11_++) {
@@ -156,6 +145,17 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
                     return;
                 }
             }
+        } else {
+            Class357 class357
+                    = Class147.aClass357ArrayArrayArray2029[i][i_10_][i_8_];
+            if (class357 != null) {
+                if (i_7_ != 1) {
+                    if (i_7_ == 2)
+                        class357.aShort4398 = (short) 0;
+                } else
+                    class357.aShort4409 = (short) 0;
+            }
+            Class286_Sub3.method2152(false);
         }
         if (i_9_ != -3951)
             anIntArray9050 = null;

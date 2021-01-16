@@ -93,7 +93,17 @@ final class Class239_Sub24 extends Class239 {
             int i_10_;
             int i_11_;
             int i_12_;
-            if (!Class59_Sub1.aBoolean5300) {
+            if (Class59_Sub1.aBoolean5300) {
+                Class107.method1010(false, false);
+                class101 = var_ha.method3640();
+                int[] is = var_ha.Y();
+                i_7_ = is[0];
+                i_8_ = is[1];
+                i_9_ = is[3];
+                i_10_ = is[2];
+                i_11_ = i + Class121.method1082(-81, false);
+                i_12_ = Class348_Sub23.method2960(false, -52) + i_4_;
+            } else {
                 var_ha.DA(Class336.anInt4171, Class205.anInt2688,
                         Class18.anInt282, Class305.anInt3861);
                 i_8_ = Class205.anInt2688;
@@ -111,16 +121,6 @@ final class Class239_Sub24 extends Class239 {
                 var_ha.method3638(class101);
                 i_12_ = i_4_;
                 i_11_ = i;
-            } else {
-                Class107.method1010(false, false);
-                class101 = var_ha.method3640();
-                int[] is = var_ha.Y();
-                i_7_ = is[0];
-                i_8_ = is[1];
-                i_9_ = is[3];
-                i_10_ = is[2];
-                i_11_ = i + Class121.method1082(-81, false);
-                i_12_ = Class348_Sub23.method2960(false, -52) + i_4_;
             }
             Class226.method1626(1, true);
             if (i_10_ == 0)
@@ -137,16 +137,16 @@ final class Class239_Sub24 extends Class239 {
                 int i_18_;
                 int i_19_;
                 int i_20_;
-                if (!Class305.aBoolean3870) {
-                    i_17_ = i_15_ * (-i_7_ + i_11_) / i_10_;
-                    i_19_ = i_15_ * (i_12_ + -i_8_) / i_9_;
-                    i_20_ = i_16_ * (-i_8_ + i_12_) / i_9_;
-                    i_18_ = (i_11_ - i_7_) * i_16_ / i_10_;
-                } else {
+                if (Class305.aBoolean3870) {
                     i_17_ = i_18_
                             = Class132.anInt1906 * (-i_7_ + i_11_) / i_10_;
                     i_19_ = i_20_
                             = Class132.anInt1906 * (-i_8_ + i_12_) / i_9_;
+                } else {
+                    i_17_ = i_15_ * (-i_7_ + i_11_) / i_10_;
+                    i_19_ = i_15_ * (i_12_ + -i_8_) / i_9_;
+                    i_20_ = i_16_ * (-i_8_ + i_12_) / i_9_;
+                    i_18_ = (i_11_ - i_7_) * i_16_ / i_10_;
                 }
                 int[] is = {i_17_, i_19_, i_15_};
                 int[] is_21_ = {i_18_, i_20_, i_16_};

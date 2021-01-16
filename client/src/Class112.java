@@ -93,50 +93,7 @@ final class Class112 implements Runnable {
             int i_2_ = Class258_Sub4.aClass373_8552.method3597(true);
             int i_3_ = Class258_Sub4.aClass373_8552.method3594((byte) 81);
             if (Class348_Sub42_Sub6.aBoolean9535) {
-                if (i_2_ <= Class135_Sub1.anInt4717
-                        || i_2_ >= Class63.anInt1117 + Class135_Sub1.anInt4717) {
-                    if (Class242.aClass348_Sub42_Sub13_3152 != null
-                            && Class50_Sub3.anInt5252 < i_2_
-                            && (Class348_Sub1_Sub1.anInt8806
-                            + Class50_Sub3.anInt5252) > i_2_) {
-                        int i_4_ = -1;
-                        for (int i_5_ = 0;
-                             ((Class242.aClass348_Sub42_Sub13_3152
-                                     .anInt9615) > i_5_);
-                             i_5_++) {
-                            if (!Class71.aBoolean1211) {
-                                int i_6_ = i_5_ * 16 + 31 + Class373.anInt4534;
-                                if (-13 + i_6_ < i_3_
-                                        && i_6_ - -3 >= i_3_)
-                                    i_4_ = i_5_;
-                            } else {
-                                int i_7_
-                                        = Class373.anInt4534 + (33 + 16 * i_5_);
-                                if (-13 + i_7_ < i_3_
-                                        && 3 + i_7_ >= i_3_)
-                                    i_4_ = i_5_;
-                            }
-                        }
-                        if (i_4_ != -1) {
-                            int i_8_ = 0;
-                            Class156 class156
-                                    = new Class156(Class242
-                                            .aClass348_Sub42_Sub13_3152
-                                    .aClass107_9621);
-                            for (Class348_Sub42_Sub12 class348_sub42_sub12
-                                 = ((Class348_Sub42_Sub12)
-                                    class156.method1240(9));
-                                 class348_sub42_sub12 != null;
-                                 class348_sub42_sub12
-                                         = ((Class348_Sub42_Sub12)
-                                         class156.method1243((byte) 90))) {
-                                if (i_8_++ == i_4_)
-                                    return (class348_sub42_sub12
-                                            .anInt9609);
-                            }
-                        }
-                    }
-                } else {
+                if (i_2_ > Class135_Sub1.anInt4717 && i_2_ < Class63.anInt1117 + Class135_Sub1.anInt4717) {
                     int i_9_ = -1;
                     for (int i_10_ = 0; Class8.anInt166 > i_10_; i_10_++) {
                         if (Class71.aBoolean1211) {
@@ -172,24 +129,66 @@ final class Class112 implements Runnable {
                                                 .aClass348_Sub42_7063).anInt9609;
                         }
                     }
+                } else {
+                    if (Class242.aClass348_Sub42_Sub13_3152 != null
+                            && Class50_Sub3.anInt5252 < i_2_
+                            && (Class348_Sub1_Sub1.anInt8806
+                            + Class50_Sub3.anInt5252) > i_2_) {
+                        int i_4_ = -1;
+                        for (int i_5_ = 0;
+                             ((Class242.aClass348_Sub42_Sub13_3152
+                                     .anInt9615) > i_5_);
+                             i_5_++) {
+                            if (Class71.aBoolean1211) {
+                                int i_7_
+                                        = Class373.anInt4534 + (33 + 16 * i_5_);
+                                if (-13 + i_7_ < i_3_
+                                        && 3 + i_7_ >= i_3_)
+                                    i_4_ = i_5_;
+                            } else {
+                                int i_6_ = i_5_ * 16 + 31 + Class373.anInt4534;
+                                if (-13 + i_6_ < i_3_
+                                        && i_6_ - -3 >= i_3_)
+                                    i_4_ = i_5_;
+                            }
+                        }
+                        if (i_4_ != -1) {
+                            int i_8_ = 0;
+                            Class156 class156
+                                    = new Class156(Class242
+                                            .aClass348_Sub42_Sub13_3152
+                                    .aClass107_9621);
+                            for (Class348_Sub42_Sub12 class348_sub42_sub12
+                                 = ((Class348_Sub42_Sub12)
+                                    class156.method1240(9));
+                                 class348_sub42_sub12 != null;
+                                 class348_sub42_sub12
+                                         = ((Class348_Sub42_Sub12)
+                                         class156.method1243((byte) 90))) {
+                                if (i_8_++ == i_4_)
+                                    return (class348_sub42_sub12
+                                            .anInt9609);
+                            }
+                        }
+                    }
                 }
             } else if (i_2_ > Class135_Sub1.anInt4717
                     && (i_2_
                     < Class135_Sub1.anInt4717 - -Class63.anInt1117)) {
                 int i_14_ = -1;
                 for (int i_15_ = 0; Class73.anInt4776 > i_15_; i_15_++) {
-                    if (!Class71.aBoolean1211) {
+                    if (Class71.aBoolean1211) {
+                        int i_17_ = ((-i_15_ + (-1 + Class73.anInt4776)) * 16
+                                + Class348_Sub42_Sub5.anInt9532 + 33);
+                        if (i_3_ > i_17_ - 13
+                                && i_17_ + 3 >= i_3_)
+                            i_14_ = i_15_;
+                    } else {
                         int i_16_
                                 = 31 + (Class348_Sub42_Sub5.anInt9532
                                 + (-i_15_ + (Class73.anInt4776 - 1)) * 16);
                         if (-13 + i_16_ < i_3_
                                 && i_16_ + 3 >= i_3_)
-                            i_14_ = i_15_;
-                    } else {
-                        int i_17_ = ((-i_15_ + (-1 + Class73.anInt4776)) * 16
-                                + Class348_Sub42_Sub5.anInt9532 + 33);
-                        if (i_3_ > i_17_ - 13
-                                && i_17_ + 3 >= i_3_)
                             i_14_ = i_15_;
                     }
                 }
@@ -237,16 +236,14 @@ final class Class112 implements Runnable {
             synchronized (aClass107_1730) {
                 class348_sub42_sub16_sub2 = ((Class348_Sub42_Sub16_Sub2)
                         aClass107_1730.method1008(20));
-                if (class348_sub42_sub16_sub2 != null)
-                    this.anInt1734--;
-                else {
+                if (class348_sub42_sub16_sub2 == null) {
                     try {
                         aClass107_1730.wait();
                     } catch (InterruptedException interruptedexception) {
                         /* empty */
                     }
                     continue;
-                }
+                } else this.anInt1734--;
             }
             try {
                 if ((class348_sub42_sub16_sub2

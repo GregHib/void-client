@@ -366,9 +366,7 @@ final class Class348_Sub41 extends Class348 {
                     .method2005(0, interface10.method42(-124));
             int i_48_ = 0x3 & interface10.method41(-32228);
             int i_49_ = interface10.method39(35);
-            if (class51.anInt875 != -1)
-                Class267.method2028(i_46_, class51, i_42_, var_ha, i_48_, 126);
-            else {
+            if (class51.anInt875 == -1) {
                 int i_50_ = i_47_;
                 if (class51.anInt874 > 0)
                     i_50_ = i;
@@ -417,7 +415,7 @@ final class Class348_Sub41 extends Class348 {
                     } else
                         var_ha.method3649((byte) -96, 4, i_42_, i_50_, i_46_);
                 }
-            }
+            } else Class267.method2028(i_46_, class51, i_42_, var_ha, i_48_, 126);
         }
         if (bool != false)
             anInt7054 = 122;

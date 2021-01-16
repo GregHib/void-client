@@ -95,22 +95,7 @@ final class Class264 {
         if (i_11_ > -8)
             return true;
         boolean bool;
-        if (anInt3365 != 0) {
-            if (anInt3365 > 0
-                    && this.anInt3370 < i_9_) {
-                int i_13_ = anInt3365 * anInt3365 / (2 * i_10_);
-                int i_14_ = i_13_ + this.anInt3370;
-                bool = i_14_ < i_9_
-                        && this.anInt3370 <= i_14_;
-            } else if (anInt3365 >= 0 || i_9_ >= this.anInt3370)
-                bool = false;
-            else {
-                int i_15_ = anInt3365 * anInt3365 / (2 * i_10_);
-                int i_16_ = this.anInt3370 - i_15_;
-                bool = i_9_ < i_16_
-                        && i_16_ <= this.anInt3370;
-            }
-        } else {
+        if (anInt3365 == 0) {
             if ((i_9_ > this.anInt3370
                     && i_9_ <= i_10_ + this.anInt3370)
                     || (i_9_ < this.anInt3370
@@ -119,18 +104,21 @@ final class Class264 {
                 return false;
             }
             bool = true;
-        }
-        if (!bool) {
-            if (anInt3365 <= 0) {
-                anInt3365 += i_10_;
-                if (anInt3365 > 0)
-                    anInt3365 = 0;
-            } else {
-                anInt3365 -= i_10_;
-                if (anInt3365 < 0)
-                    anInt3365 = 0;
-            }
         } else {
+            if (anInt3365 > 0
+                    && this.anInt3370 < i_9_) {
+                int i_13_ = anInt3365 * anInt3365 / (2 * i_10_);
+                int i_14_ = i_13_ + this.anInt3370;
+                bool = i_14_ < i_9_
+                        && this.anInt3370 <= i_14_;
+            } else if (anInt3365 < 0 && i_9_ < this.anInt3370) {
+                int i_15_ = anInt3365 * anInt3365 / (2 * i_10_);
+                int i_16_ = this.anInt3370 - i_15_;
+                bool = i_9_ < i_16_
+                        && i_16_ <= this.anInt3370;
+            } else bool = false;
+        }
+        if (bool) {
             if (this.anInt3370 >= i_9_) {
                 anInt3365 -= i_10_;
                 if (i != 0 && anInt3365 < -i)
@@ -149,6 +137,16 @@ final class Class264 {
                 } else if (this.anInt3370 > i_9_
                         && i_9_ > this.anInt3370 - i_17_)
                     anInt3365 = i_12_;
+            }
+        } else {
+            if (anInt3365 <= 0) {
+                anInt3365 += i_10_;
+                if (anInt3365 > 0)
+                    anInt3365 = 0;
+            } else {
+                anInt3365 -= i_10_;
+                if (anInt3365 < 0)
+                    anInt3365 = 0;
             }
         }
         this.anInt3370 += anInt3365 + i_12_ >> -1379632319;

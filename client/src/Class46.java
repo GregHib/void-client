@@ -581,7 +581,18 @@ final class Class46 {
             boolean bool_39_ = (i_38_ & 0x1) == 1;
             this.aBoolean689 = (i_38_ & 0x4) == 4;
             this.aBoolean754 = (i_38_ & 0x8) == 8;
-            if (!bool_39_) {
+            if (bool_39_) {
+                this.anInt688 = class348_sub49.method3372(13638);
+                this.anInt799 = class348_sub49.method3372(13638);
+                this.anInt757
+                        = class348_sub49.method3330(842397944);
+                this.anInt675
+                        = class348_sub49.method3330(842397944);
+                this.anInt717
+                        = class348_sub49.method3330(842397944);
+                this.anInt716
+                        = class348_sub49.method3330(842397944);
+            } else {
                 if (this.aBoolean784) {
                     this.anInt688
                             = class348_sub49.method3372(13638);
@@ -598,17 +609,6 @@ final class Class46 {
                     this.anInt716
                             = class348_sub49.method3372(13638);
                 }
-            } else {
-                this.anInt688 = class348_sub49.method3372(13638);
-                this.anInt799 = class348_sub49.method3372(13638);
-                this.anInt757
-                        = class348_sub49.method3330(842397944);
-                this.anInt675
-                        = class348_sub49.method3330(842397944);
-                this.anInt717
-                        = class348_sub49.method3330(842397944);
-                this.anInt716
-                        = class348_sub49.method3330(842397944);
             }
             this.anInt699 = class348_sub49.method3330(842397944);
             if (this.anInt699 == 65535)

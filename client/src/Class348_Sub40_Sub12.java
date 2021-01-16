@@ -19,9 +19,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         if (i == 0) {
             int i_1_ = class348_sub49.method3387(255);
-            if (i_1_ != 0)
-                method3078(i_1_, i_0_ + -31111);
-            else {
+            if (i_1_ == 0) {
                 anIntArrayArray9194
                         = new int[class348_sub49.method3387(255)][4];
                 for (int i_2_ = 0; anIntArrayArray9194.length > i_2_; i_2_++) {
@@ -36,7 +34,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
                             (Class348_Sub21.method2955(i_0_, 31192)))
                             << 1256833060);
                 }
-            }
+            } else method3078(i_1_, i_0_ + -31111);
         }
         anInt9190++;
         if (i_0_ != 31015)
@@ -216,7 +214,18 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
                             while_153_:
                             do {
                                 do {
-                                    if (i_11_ != 1) {
+                                    if (i_11_ == 1) {
+                                        anIntArrayArray9194 = new int[2][4];
+                                        anIntArrayArray9194[0][1] = 0;
+                                        anIntArrayArray9194[0][2] = 0;
+                                        anIntArrayArray9194[0][0] = 0;
+                                        anIntArrayArray9194[0][3] = 0;
+                                        anIntArrayArray9194[1][3] = 4096;
+                                        anIntArrayArray9194[1][2] = 4096;
+                                        anIntArrayArray9194[1][1] = 4096;
+                                        anIntArrayArray9194[1][0] = 4096;
+                                        break while_157_;
+                                    } else {
                                         if (i_11_ != 2) {
                                             if (i_11_ != 3) {
                                                 if (i_11_ != 4) {
@@ -231,17 +240,6 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
                                                 break;
                                             break while_153_;
                                         }
-                                    } else {
-                                        anIntArrayArray9194 = new int[2][4];
-                                        anIntArrayArray9194[0][1] = 0;
-                                        anIntArrayArray9194[0][2] = 0;
-                                        anIntArrayArray9194[0][0] = 0;
-                                        anIntArrayArray9194[0][3] = 0;
-                                        anIntArrayArray9194[1][3] = 4096;
-                                        anIntArrayArray9194[1][2] = 4096;
-                                        anIntArrayArray9194[1][1] = 4096;
-                                        anIntArrayArray9194[1][0] = 4096;
-                                        break while_157_;
                                     }
                                     anIntArrayArray9194 = new int[8][4];
                                     anIntArrayArray9194[0][3] = 2361;

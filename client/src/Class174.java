@@ -104,7 +104,14 @@ final class Class174 {
             anInt2302 = class348_sub49.method3330(842397944);
         else if (i == 2)
             class348_sub49.method3387(255);
-        else if (i != 3) {
+        else if (i == 3) {
+            this.anInt2291
+                    = class348_sub49.method3385((byte) -126);
+            this.anInt2290
+                    = class348_sub49.method3385((byte) -126);
+            this.anInt2294
+                    = class348_sub49.method3385((byte) -126);
+        } else {
             if (i == 4) {
                 this.anInt2289 = class348_sub49.method3387(255);
                 this.anInt2304
@@ -118,13 +125,6 @@ final class Class174 {
                     aBoolean2308 = true;
             } else
                 this.anInt2296 = class348_sub49.method3387(255);
-        } else {
-            this.anInt2291
-                    = class348_sub49.method3385((byte) -126);
-            this.anInt2290
-                    = class348_sub49.method3385((byte) -126);
-            this.anInt2294
-                    = class348_sub49.method3385((byte) -126);
         }
         if (i_8_ >= -124)
             this.aLong2301 = 65L;

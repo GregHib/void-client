@@ -18,12 +18,12 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
                   int i_1_, int i_2_) {
         super(class378, Class108.aClass304_1662, Class68.aClass68_1183,
                 bool && class378.aBoolean9798, i_0_ * i);
-        if (!this.aClass378_3893.aBoolean9792) {
-            anInt6333 = Class33.method340(i, (byte) 108);
-            anInt6331 = Class33.method340(i_0_, (byte) 108);
-        } else {
+        if (this.aClass378_3893.aBoolean9792) {
             anInt6331 = i_0_;
             anInt6333 = i;
+        } else {
+            anInt6333 = Class33.method340(i, (byte) 108);
+            anInt6331 = Class33.method340(i_0_, (byte) 108);
         }
         if (!bool)
             anIDirect3DTexture6332
@@ -58,12 +58,12 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
     Class310_Sub2(Class378 class378, Class304 class304, Class68 class68, int i,
                   int i_6_) {
         super(class378, class304, class68, false, i_6_ * i);
-        if (!this.aClass378_3893.aBoolean9792) {
-            anInt6333 = Class33.method340(i, (byte) 108);
-            anInt6331 = Class33.method340(i_6_, (byte) 108);
-        } else {
+        if (this.aClass378_3893.aBoolean9792) {
             anInt6333 = i;
             anInt6331 = i_6_;
+        } else {
+            anInt6333 = Class33.method340(i, (byte) 108);
+            anInt6331 = Class33.method340(i_6_, (byte) 108);
         }
         anIDirect3DTexture6332
                 = (this.aClass378_3893
@@ -123,12 +123,12 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
                   boolean bool, byte[] is, int i_17_, int i_18_) {
         super(class378, class304, Class68.aClass68_1183,
                 bool && class378.aBoolean9798, i * i_16_);
-        if (!this.aClass378_3893.aBoolean9792) {
-            anInt6333 = Class33.method340(i, (byte) 108);
-            anInt6331 = Class33.method340(i_16_, (byte) 108);
-        } else {
+        if (this.aClass378_3893.aBoolean9792) {
             anInt6333 = i;
             anInt6331 = i_16_;
+        } else {
+            anInt6333 = Class33.method340(i, (byte) 108);
+            anInt6331 = Class33.method340(i_16_, (byte) 108);
         }
         if (bool)
             anIDirect3DTexture6332

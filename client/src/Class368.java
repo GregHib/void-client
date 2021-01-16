@@ -146,9 +146,41 @@ final class Class368 {
                                             anInt4507
                                                     = class348_sub49
                                                     .method3387(255) * 256;
-                                        } else if (i_11_ != 15) {
-                                            if (i_11_ != 16) {
-                                                if (i_11_ != 40) {
+                                        } else if (i_11_ == 15) {
+                                            this.aByte4488
+                                                    = (byte) 3;
+                                            anInt4507
+                                                    = class348_sub49
+                                                    .method3330(842397944);
+                                        } else {
+                                            if (i_11_ == 16) {
+                                                this.aByte4488
+                                                        = (byte) 3;
+                                                anInt4507 = (class348_sub49
+                                                        .method3385
+                                                                ((byte) -126));
+                                            } else {
+                                                if (i_11_ == 40) {
+                                                    int i_14_
+                                                            = class348_sub49
+                                                            .method3387(255);
+                                                    aShortArray4490
+                                                            = new short[i_14_];
+                                                    aShortArray4502
+                                                            = new short[i_14_];
+                                                    for (int i_15_ = 0;
+                                                         i_14_ > i_15_;
+                                                         i_15_++) {
+                                                        aShortArray4490[i_15_]
+                                                                = (short) (class348_sub49
+                                                                .method3330
+                                                                        (842397944));
+                                                        aShortArray4502[i_15_]
+                                                                = (short) (class348_sub49
+                                                                .method3330
+                                                                        (842397944));
+                                                    }
+                                                } else {
                                                     if (i_11_ == 41) {
                                                         int i_12_
                                                                 = (class348_sub49
@@ -171,40 +203,8 @@ final class Class368 {
                                                                     (842397944));
                                                         }
                                                     }
-                                                } else {
-                                                    int i_14_
-                                                            = class348_sub49
-                                                            .method3387(255);
-                                                    aShortArray4490
-                                                            = new short[i_14_];
-                                                    aShortArray4502
-                                                            = new short[i_14_];
-                                                    for (int i_15_ = 0;
-                                                         i_14_ > i_15_;
-                                                         i_15_++) {
-                                                        aShortArray4490[i_15_]
-                                                                = (short) (class348_sub49
-                                                                .method3330
-                                                                        (842397944));
-                                                        aShortArray4502[i_15_]
-                                                                = (short) (class348_sub49
-                                                                .method3330
-                                                                        (842397944));
-                                                    }
                                                 }
-                                            } else {
-                                                this.aByte4488
-                                                        = (byte) 3;
-                                                anInt4507 = (class348_sub49
-                                                        .method3385
-                                                                ((byte) -126));
                                             }
-                                        } else {
-                                            this.aByte4488
-                                                    = (byte) 3;
-                                            anInt4507
-                                                    = class348_sub49
-                                                    .method3330(842397944);
                                         }
                                     } else
                                         this.aByte4488 = (byte) 1;

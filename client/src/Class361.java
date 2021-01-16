@@ -67,7 +67,20 @@ final class Class361 {
         i_9_ -= this.anInt4453;
         if (i_7_ == 1) {
             if (i_11_ == 0) {
-                if (i_8_ != 0) {
+                if (i_8_ == 0) {
+                    if (i_9_ == -1 + i
+                            && i_6_ == i_10_)
+                        return true;
+                    if (i == i_9_ && i_10_ - -1 == i_6_
+                            && (0x2c0120 & (this.anIntArrayArray4438
+                            [i_9_][i_6_])) == 0)
+                        return true;
+                    if (i == i_9_
+                            && i_6_ == -1 + i_10_
+                            && (0x2c0102 & (this.anIntArrayArray4438
+                            [i_9_][i_6_])) == 0)
+                        return true;
+                } else {
                     if (i_8_ == 1) {
                         if (i_9_ == i && i_10_ - -1 == i_6_)
                             return true;
@@ -82,7 +95,22 @@ final class Class361 {
                                 && (0x2c0180 & (this
                                 .anIntArrayArray4438[i_9_][i_6_])) == 0)
                             return true;
-                    } else if (i_8_ != 2) {
+                    } else if (i_8_ == 2) {
+                        if (i + 1 == i_9_
+                                && i_10_ == i_6_)
+                            return true;
+                        if (i_9_ == i
+                                && 1 + i_10_ == i_6_
+                                && ((this.anIntArrayArray4438[i_9_]
+                                [i_6_])
+                                & 0x2c0120) == 0)
+                            return true;
+                        if (i_9_ == i
+                                && i_10_ + -1 == i_6_
+                                && (0x2c0102 & (this
+                                .anIntArrayArray4438[i_9_][i_6_])) == 0)
+                            return true;
+                    } else {
                         if (i_8_ == 3) {
                             if (i_9_ == i
                                     && -1 + i_10_ == i_6_)
@@ -100,41 +128,63 @@ final class Class361 {
                                     & 0x2c0180) == 0)
                                 return true;
                         }
-                    } else {
-                        if (i + 1 == i_9_
-                                && i_10_ == i_6_)
-                            return true;
-                        if (i_9_ == i
-                                && 1 + i_10_ == i_6_
-                                && ((this.anIntArrayArray4438[i_9_]
-                                [i_6_])
-                                & 0x2c0120) == 0)
-                            return true;
-                        if (i_9_ == i
-                                && i_10_ + -1 == i_6_
-                                && (0x2c0102 & (this
-                                .anIntArrayArray4438[i_9_][i_6_])) == 0)
-                            return true;
                     }
-                } else {
-                    if (i_9_ == -1 + i
-                            && i_6_ == i_10_)
-                        return true;
-                    if (i == i_9_ && i_10_ - -1 == i_6_
-                            && (0x2c0120 & (this.anIntArrayArray4438
-                            [i_9_][i_6_])) == 0)
-                        return true;
-                    if (i == i_9_
-                            && i_6_ == -1 + i_10_
-                            && (0x2c0102 & (this.anIntArrayArray4438
-                            [i_9_][i_6_])) == 0)
-                        return true;
                 }
             }
             if (i_11_ == 2) {
-                if (i_8_ != 0) {
-                    if (i_8_ != 1) {
-                        if (i_8_ != 2) {
+                if (i_8_ == 0) {
+                    if (-1 + i == i_9_
+                            && i_6_ == i_10_)
+                        return true;
+                    if (i == i_9_ && i_6_ == i_10_ - -1)
+                        return true;
+                    if (i + 1 == i_9_
+                            && i_10_ == i_6_
+                            && (0x2c0180 & (this.anIntArrayArray4438
+                            [i_9_][i_6_])) == 0)
+                        return true;
+                    if (i == i_9_
+                            && i_6_ == i_10_ - 1
+                            && (0x2c0102 & (this.anIntArrayArray4438
+                            [i_9_][i_6_])) == 0)
+                        return true;
+                } else {
+                    if (i_8_ == 1) {
+                        if (i_9_ == -1 + i
+                                && i_10_ == i_6_
+                                && (0x2c0108 & (this
+                                .anIntArrayArray4438[i_9_][i_6_])) == 0)
+                            return true;
+                        if (i == i_9_
+                                && i_10_ + 1 == i_6_)
+                            return true;
+                        if (i_9_ == i - -1
+                                && i_10_ == i_6_)
+                            return true;
+                        if (i == i_9_
+                                && i_10_ - 1 == i_6_
+                                && ((this.anIntArrayArray4438[i_9_]
+                                [i_6_]) & 0x2c0102) == 0)
+                            return true;
+                    } else {
+                        if (i_8_ == 2) {
+                            if (i - 1 == i_9_ && i_10_ == i_6_
+                                    && (0x2c0108
+                                    & (this.anIntArrayArray4438
+                                    [i_9_][i_6_])) == 0)
+                                return true;
+                            if (i_9_ == i
+                                    && i_10_ + 1 == i_6_
+                                    && (0x2c0120 & (this
+                                    .anIntArrayArray4438[i_9_]
+                                    [i_6_])) == 0)
+                                return true;
+                            if (i_9_ == i + 1 && i_10_ == i_6_)
+                                return true;
+                            if (i_9_ == i
+                                    && -1 + i_10_ == i_6_)
+                                return true;
+                        } else {
                             if (i_8_ == 3) {
                                 if (i + -1 == i_9_
                                         && i_6_ == i_10_)
@@ -153,58 +203,8 @@ final class Class361 {
                                         && (i_6_ == i_10_ + -1))
                                     return true;
                             }
-                        } else {
-                            if (i - 1 == i_9_ && i_10_ == i_6_
-                                    && (0x2c0108
-                                    & (this.anIntArrayArray4438
-                                    [i_9_][i_6_])) == 0)
-                                return true;
-                            if (i_9_ == i
-                                    && i_10_ + 1 == i_6_
-                                    && (0x2c0120 & (this
-                                    .anIntArrayArray4438[i_9_]
-                                    [i_6_])) == 0)
-                                return true;
-                            if (i_9_ == i + 1 && i_10_ == i_6_)
-                                return true;
-                            if (i_9_ == i
-                                    && -1 + i_10_ == i_6_)
-                                return true;
                         }
-                    } else {
-                        if (i_9_ == -1 + i
-                                && i_10_ == i_6_
-                                && (0x2c0108 & (this
-                                .anIntArrayArray4438[i_9_][i_6_])) == 0)
-                            return true;
-                        if (i == i_9_
-                                && i_10_ + 1 == i_6_)
-                            return true;
-                        if (i_9_ == i - -1
-                                && i_10_ == i_6_)
-                            return true;
-                        if (i == i_9_
-                                && i_10_ - 1 == i_6_
-                                && ((this.anIntArrayArray4438[i_9_]
-                                [i_6_]) & 0x2c0102) == 0)
-                            return true;
                     }
-                } else {
-                    if (-1 + i == i_9_
-                            && i_6_ == i_10_)
-                        return true;
-                    if (i == i_9_ && i_6_ == i_10_ - -1)
-                        return true;
-                    if (i + 1 == i_9_
-                            && i_10_ == i_6_
-                            && (0x2c0180 & (this.anIntArrayArray4438
-                            [i_9_][i_6_])) == 0)
-                        return true;
-                    if (i == i_9_
-                            && i_6_ == i_10_ - 1
-                            && (0x2c0102 & (this.anIntArrayArray4438
-                            [i_9_][i_6_])) == 0)
-                        return true;
                 }
             }
             if (i_11_ == 9) {
@@ -233,7 +233,24 @@ final class Class361 {
             int i_14_ = -1 + (i_7_ + i_9_);
             int i_15_ = -1 + i_7_ + i_6_;
             if (i_11_ == 0) {
-                if (i_8_ != 0) {
+                if (i_8_ == 0) {
+                    if (-i_7_ + i == i_9_
+                            && i_6_ <= i_10_
+                            && i_10_ <= i_15_)
+                        return true;
+                    if (i_9_ <= i
+                            && i <= i_14_
+                            && i_10_ + 1 == i_6_
+                            && (this.anIntArrayArray4438[i][i_6_]
+                            & 0x2c0120) == 0)
+                        return true;
+                    if (i_9_ <= i
+                            && i_14_ >= i
+                            && i_6_ == -i_7_ + i_10_
+                            && (this.anIntArrayArray4438[i][i_15_]
+                            & 0x2c0102) == 0)
+                        return true;
+                } else {
                     if (i_8_ == 1) {
                         if (i >= i_9_
                                 && i <= i_14_
@@ -251,7 +268,24 @@ final class Class361 {
                                 && (0x2c0180 & (this
                                 .anIntArrayArray4438[i_9_][i_10_])) == 0)
                             return true;
-                    } else if (i_8_ != 2) {
+                    } else if (i_8_ == 2) {
+                        if (i_9_ == 1 + i
+                                && i_6_ <= i_10_
+                                && i_15_ >= i_10_)
+                            return true;
+                        if (i >= i_9_
+                                && i <= i_14_
+                                && i_10_ - -1 == i_6_
+                                && (this.anIntArrayArray4438[i][i_6_]
+                                & 0x2c0120) == 0)
+                            return true;
+                        if (i >= i_9_
+                                && i_14_ >= i
+                                && -i_7_ + i_10_ == i_6_
+                                && ((this.anIntArrayArray4438[i]
+                                [i_15_]) & 0x2c0102) == 0)
+                            return true;
+                    } else {
                         if (i_8_ == 3) {
                             if (i_9_ <= i
                                     && i_14_ >= i
@@ -270,41 +304,7 @@ final class Class361 {
                                     [i_10_])) == 0)
                                 return true;
                         }
-                    } else {
-                        if (i_9_ == 1 + i
-                                && i_6_ <= i_10_
-                                && i_15_ >= i_10_)
-                            return true;
-                        if (i >= i_9_
-                                && i <= i_14_
-                                && i_10_ - -1 == i_6_
-                                && (this.anIntArrayArray4438[i][i_6_]
-                                & 0x2c0120) == 0)
-                            return true;
-                        if (i >= i_9_
-                                && i_14_ >= i
-                                && -i_7_ + i_10_ == i_6_
-                                && ((this.anIntArrayArray4438[i]
-                                [i_15_]) & 0x2c0102) == 0)
-                            return true;
                     }
-                } else {
-                    if (-i_7_ + i == i_9_
-                            && i_6_ <= i_10_
-                            && i_10_ <= i_15_)
-                        return true;
-                    if (i_9_ <= i
-                            && i <= i_14_
-                            && i_10_ + 1 == i_6_
-                            && (this.anIntArrayArray4438[i][i_6_]
-                            & 0x2c0120) == 0)
-                        return true;
-                    if (i_9_ <= i
-                            && i_14_ >= i
-                            && i_6_ == -i_7_ + i_10_
-                            && (this.anIntArrayArray4438[i][i_15_]
-                            & 0x2c0102) == 0)
-                        return true;
                 }
             }
             if (i_11_ == 2) {
@@ -327,7 +327,24 @@ final class Class361 {
                             && (this.anIntArrayArray4438[i][i_15_]
                             & 0x2c0102) == 0)
                         return true;
-                } else if (i_8_ != 1) {
+                } else if (i_8_ == 1) {
+                    if (i_9_ == -i_7_ + i
+                            && i_6_ <= i_10_
+                            && i_15_ >= i_10_
+                            && (0x2c0108 & (this.anIntArrayArray4438
+                            [i_14_][i_10_])) == 0)
+                        return true;
+                    if (i >= i_9_ && i <= i_14_ && i_6_ == i_10_ + 1)
+                        return true;
+                    if (1 + i == i_9_
+                            && i_10_ >= i_6_
+                            && i_10_ <= i_15_)
+                        return true;
+                    if (i_9_ <= i && i <= i_14_ && -i_7_ + i_10_ == i_6_
+                            && (this.anIntArrayArray4438[i][i_15_]
+                            & 0x2c0102) == 0)
+                        return true;
+                } else {
                     if (i_8_ == 2) {
                         if (i_9_ == i - i_7_ && i_6_ <= i_10_
                                 && i_10_ <= i_15_
@@ -366,23 +383,6 @@ final class Class361 {
                                 && i_6_ == i_10_ + -i_7_)
                             return true;
                     }
-                } else {
-                    if (i_9_ == -i_7_ + i
-                            && i_6_ <= i_10_
-                            && i_15_ >= i_10_
-                            && (0x2c0108 & (this.anIntArrayArray4438
-                            [i_14_][i_10_])) == 0)
-                        return true;
-                    if (i >= i_9_ && i <= i_14_ && i_6_ == i_10_ + 1)
-                        return true;
-                    if (1 + i == i_9_
-                            && i_10_ >= i_6_
-                            && i_10_ <= i_15_)
-                        return true;
-                    if (i_9_ <= i && i <= i_14_ && -i_7_ + i_10_ == i_6_
-                            && (this.anIntArrayArray4438[i][i_15_]
-                            & 0x2c0102) == 0)
-                        return true;
                 }
             }
             if (i_11_ == 9) {
@@ -721,93 +721,7 @@ final class Class361 {
         i_77_ -= this.anInt4453;
         i -= this.anInt4441;
         i_75_ -= this.anInt4441;
-        if (i_81_ != 1) {
-            int i_82_ = -1 + (i_81_ + i_77_);
-            int i_83_ = i_75_ - (-i_81_ - -1);
-            if (i_78_ == 6 || i_78_ == 7) {
-                if (i_78_ == 7)
-                    i_80_ = 0x3 & 2 + i_80_;
-                if (i_80_ != 0) {
-                    if (i_80_ != 1) {
-                        if (i_80_ != 2) {
-                            if (i_80_ == 3) {
-                                if (i_77_ == i_76_ - -1
-                                        && i_75_ <= i
-                                        && i <= i_83_
-                                        && (0x80 & (this
-                                        .anIntArrayArray4438[i_77_][i])) == 0)
-                                    return true;
-                                if (i_76_ >= i_77_
-                                        && i_82_ >= i_76_
-                                        && i - -1 == i_75_
-                                        && ((this.anIntArrayArray4438
-                                        [i_76_][i_75_]) & 0x20) == 0)
-                                    return true;
-                            }
-                        } else {
-                            if (-i_81_ + i_76_ == i_77_ && i >= i_75_
-                                    && i_83_ >= i
-                                    && ((this.anIntArrayArray4438
-                                    [i_82_][i]) & 0x8) == 0)
-                                return true;
-                            if (i_76_ >= i_77_
-                                    && i_76_ <= i_82_ && 1 + i == i_75_
-                                    && ((this.anIntArrayArray4438
-                                    [i_76_][i_75_]) & 0x20) == 0)
-                                return true;
-                        }
-                    } else {
-                        if (i_77_ == i_76_ + -i_81_
-                                && i >= i_75_
-                                && i <= i_83_
-                                && (this.anIntArrayArray4438[i_82_][i]
-                                & 0x8) == 0)
-                            return true;
-                        if (i_76_ >= i_77_ && i_76_ <= i_82_
-                                && i_75_ == -i_81_ + i
-                                && ((this.anIntArrayArray4438[i_76_]
-                                [i_83_])
-                                & 0x2) == 0)
-                            return true;
-                    }
-                } else {
-                    if (i_77_ == 1 + i_76_
-                            && i_75_ <= i
-                            && i <= i_83_
-                            && ((0x80
-                            & this.anIntArrayArray4438[i_77_][i])
-                            == 0))
-                        return true;
-                    if (i_76_ >= i_77_
-                            && i_76_ <= i_82_
-                            && -i_81_ + i == i_75_
-                            && ((this.anIntArrayArray4438[i_76_]
-                            [i_83_]) & 0x2) == 0)
-                        return true;
-                }
-            }
-            if (i_78_ == 8) {
-                if (i_76_ >= i_77_
-                        && i_82_ >= i_76_ && 1 + i == i_75_
-                        && (0x20
-                        & this.anIntArrayArray4438[i_76_][i_75_]) == 0)
-                    return true;
-                if (i_76_ >= i_77_ && i_76_ <= i_82_ && i_75_ == -i_81_ + i
-                        && (0x2
-                        & this.anIntArrayArray4438[i_76_][i_83_]) == 0)
-                    return true;
-                if (i_77_ == i_76_ - i_81_
-                        && i_75_ <= i && i <= i_83_
-                        && ((0x8 & this.anIntArrayArray4438[i_82_][i])
-                        == 0))
-                    return true;
-                return i_77_ == 1 + i_76_ && i_75_ <= i
-                        && i_83_ >= i
-                        && ((0x80
-                        & this.anIntArrayArray4438[i_77_][i])
-                        == 0);
-            }
-        } else {
+        if (i_81_ == 1) {
             if (i_78_ == 6 || i_78_ == 7) {
                 if (i_78_ == 7)
                     i_80_ = 2 + i_80_ & 0x3;
@@ -874,6 +788,92 @@ final class Class361 {
                         && i_75_ == i
                         && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x80) == 0;
+            }
+        } else {
+            int i_82_ = -1 + (i_81_ + i_77_);
+            int i_83_ = i_75_ - (-i_81_ - -1);
+            if (i_78_ == 6 || i_78_ == 7) {
+                if (i_78_ == 7)
+                    i_80_ = 0x3 & 2 + i_80_;
+                if (i_80_ == 0) {
+                    if (i_77_ == 1 + i_76_
+                            && i_75_ <= i
+                            && i <= i_83_
+                            && ((0x80
+                            & this.anIntArrayArray4438[i_77_][i])
+                            == 0))
+                        return true;
+                    if (i_76_ >= i_77_
+                            && i_76_ <= i_82_
+                            && -i_81_ + i == i_75_
+                            && ((this.anIntArrayArray4438[i_76_]
+                            [i_83_]) & 0x2) == 0)
+                        return true;
+                } else {
+                    if (i_80_ == 1) {
+                        if (i_77_ == i_76_ + -i_81_
+                                && i >= i_75_
+                                && i <= i_83_
+                                && (this.anIntArrayArray4438[i_82_][i]
+                                & 0x8) == 0)
+                            return true;
+                        if (i_76_ >= i_77_ && i_76_ <= i_82_
+                                && i_75_ == -i_81_ + i
+                                && ((this.anIntArrayArray4438[i_76_]
+                                [i_83_])
+                                & 0x2) == 0)
+                            return true;
+                    } else {
+                        if (i_80_ == 2) {
+                            if (-i_81_ + i_76_ == i_77_ && i >= i_75_
+                                    && i_83_ >= i
+                                    && ((this.anIntArrayArray4438
+                                    [i_82_][i]) & 0x8) == 0)
+                                return true;
+                            if (i_76_ >= i_77_
+                                    && i_76_ <= i_82_ && 1 + i == i_75_
+                                    && ((this.anIntArrayArray4438
+                                    [i_76_][i_75_]) & 0x20) == 0)
+                                return true;
+                        } else {
+                            if (i_80_ == 3) {
+                                if (i_77_ == i_76_ - -1
+                                        && i_75_ <= i
+                                        && i <= i_83_
+                                        && (0x80 & (this
+                                        .anIntArrayArray4438[i_77_][i])) == 0)
+                                    return true;
+                                if (i_76_ >= i_77_
+                                        && i_82_ >= i_76_
+                                        && i - -1 == i_75_
+                                        && ((this.anIntArrayArray4438
+                                        [i_76_][i_75_]) & 0x20) == 0)
+                                    return true;
+                            }
+                        }
+                    }
+                }
+            }
+            if (i_78_ == 8) {
+                if (i_76_ >= i_77_
+                        && i_82_ >= i_76_ && 1 + i == i_75_
+                        && (0x20
+                        & this.anIntArrayArray4438[i_76_][i_75_]) == 0)
+                    return true;
+                if (i_76_ >= i_77_ && i_76_ <= i_82_ && i_75_ == -i_81_ + i
+                        && (0x2
+                        & this.anIntArrayArray4438[i_76_][i_83_]) == 0)
+                    return true;
+                if (i_77_ == i_76_ - i_81_
+                        && i_75_ <= i && i <= i_83_
+                        && ((0x8 & this.anIntArrayArray4438[i_82_][i])
+                        == 0))
+                    return true;
+                return i_77_ == 1 + i_76_ && i_75_ <= i
+                        && i_83_ >= i
+                        && ((0x80
+                        & this.anIntArrayArray4438[i_77_][i])
+                        == 0);
             }
         }
         return false;

@@ -22,18 +22,18 @@ final class Class121 {
         while_44_:
         do {
             do {
-                if (i_1_ != 0) {
+                if (i_1_ == 0) {
+                    if (bool)
+                        return 0;
+                    return Class339.anInt4211;
+                } else {
                     if (i_1_ != 1) {
                         if (i_1_ == 2)
                             break;
                         break while_44_;
                     }
-                } else {
-                    if (bool)
-                        return 0;
-                    return Class339.anInt4211;
                 }
-                return Class339.anInt4211;
+				return Class339.anInt4211;
             } while (false);
             return 0;
         } while (false);

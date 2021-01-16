@@ -155,7 +155,12 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                             int i_32_;
                             int i_33_;
                             int i_34_;
-                            if (class46.anInt774 != 2) {
+                            if (class46.anInt774 == 2) {
+                                i_31_ = i;
+                                i_32_ = i_12_;
+                                i_33_ = i_17_;
+                                i_34_ = i_14_;
+                            } else {
                                 int i_35_
                                         = i_24_ - -class46.anInt709;
                                 int i_36_
@@ -168,11 +173,6 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                 i_32_ = (Math.max(i_12_, i_25_));
                                 i_34_ = Math.min(i_14_, i_35_);
                                 i_33_ = (Math.min(i_17_, i_36_));
-                            } else {
-                                i_31_ = i;
-                                i_32_ = i_12_;
-                                i_33_ = i_17_;
-                                i_34_ = i_14_;
                             }
                             if (i_31_ < i_34_ && i_32_ < i_33_) {
                                 if (class46.anInt765 != 0) {
@@ -1082,11 +1082,79 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                                                     .aClass261_5558)));
                                             }
                                         } else if ((class46
-                                                .anInt770) != 8
-                                                && (class46
-                                                .anInt770) != 9) {
-                                            if (class46.anInt699
-                                                    != -1) {
+                                                .anInt770) == 8 || (class46
+                                                .anInt770) == 9) {
+                                                    Class348_Sub13 class348_sub13
+                                                            = (Class258_Sub4.method1974
+                                                            ((byte) -123,
+                                                                    (class46
+                                                                            .anInt753),
+                                                                    false));
+                                                    Class17 class17
+                                                            = ((class46
+                                                            .anInt699) == -1
+                                                            ? null
+                                                            : (Class10.aClass87_191
+                                                            .method835
+                                                                    ((class46
+                                                                                    .anInt699),
+                                                                            7)));
+                                                    if (class348_sub13 != null) {
+                                                        Class154 class154
+                                                                = ((class46
+                                                                .aBoolean720)
+                                                                ? (Class132
+                                                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                                                .aClass154_10536)
+                                                                : null);
+                                                        class64
+                                                                = (class348_sub13
+                                                                .method2803
+                                                                        (class17, class154,
+                                                                                (class46
+                                                                                        .anInt779),
+                                                                                (class46
+                                                                                        .anInt795),
+                                                                                (class46
+                                                                                        .anInt841),
+                                                                                (class46
+                                                                                        .anInt730),
+                                                                                2048,
+                                                                                Class348_Sub8.aHa6654,
+                                                                                (class46
+                                                                                        .anInt770) == 9,
+                                                                                -1));
+                                                    }
+                                                } else {
+                                            if (class46.anInt699 == -1) {
+                                                class64
+                                                        = (class46.method430
+                                                        ((Class348_Sub40_Sub25
+                                                                        .aClass150_9342),
+                                                                Class10.aClass87_191,
+                                                                2048,
+                                                                Class348_Sub8.aHa6654,
+                                                                -1, 0,
+                                                                (Exception_Sub1
+                                                                        .aClass255_112),
+                                                                (Class318_Sub1_Sub3_Sub3
+                                                                        .aClass170_10209),
+                                                                255,
+                                                                (Class132
+                                                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                                                        .aClass154_10536),
+                                                                null,
+                                                                (Class64_Sub3
+                                                                        .aClass261_5558),
+                                                                (Class189
+                                                                        .aClass278_2529),
+                                                                -1));
+                                                if (class64 == null
+                                                        && (Class348_Sub42_Sub13
+                                                        .aBoolean9616))
+                                                    Class251.method1916
+                                                            (-9343, class46);
+                                            } else {
                                                 Class17 class17
                                                         = (Class10.aClass87_191
                                                         .method835
@@ -1124,76 +1192,6 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                         .aBoolean9616))
                                                     Class251.method1916
                                                             (-9343, class46);
-                                            } else {
-                                                class64
-                                                        = (class46.method430
-                                                        ((Class348_Sub40_Sub25
-                                                                        .aClass150_9342),
-                                                                Class10.aClass87_191,
-                                                                2048,
-                                                                Class348_Sub8.aHa6654,
-                                                                -1, 0,
-                                                                (Exception_Sub1
-                                                                        .aClass255_112),
-                                                                (Class318_Sub1_Sub3_Sub3
-                                                                        .aClass170_10209),
-                                                                255,
-                                                                (Class132
-                                                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                                                        .aClass154_10536),
-                                                                null,
-                                                                (Class64_Sub3
-                                                                        .aClass261_5558),
-                                                                (Class189
-                                                                        .aClass278_2529),
-                                                                -1));
-                                                if (class64 == null
-                                                        && (Class348_Sub42_Sub13
-                                                        .aBoolean9616))
-                                                    Class251.method1916
-                                                            (-9343, class46);
-                                            }
-                                        } else {
-                                            Class348_Sub13 class348_sub13
-                                                    = (Class258_Sub4.method1974
-                                                    ((byte) -123,
-                                                            (class46
-                                                                    .anInt753),
-                                                            false));
-                                            Class17 class17
-                                                    = ((class46
-                                                    .anInt699) == -1
-                                                    ? null
-                                                    : (Class10.aClass87_191
-                                                    .method835
-                                                            ((class46
-                                                                            .anInt699),
-                                                                    7)));
-                                            if (class348_sub13 != null) {
-                                                Class154 class154
-                                                        = ((class46
-                                                        .aBoolean720)
-                                                        ? (Class132
-                                                                .aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                                        .aClass154_10536)
-                                                        : null);
-                                                class64
-                                                        = (class348_sub13
-                                                        .method2803
-                                                                (class17, class154,
-                                                                        (class46
-                                                                                .anInt779),
-                                                                        (class46
-                                                                                .anInt795),
-                                                                        (class46
-                                                                                .anInt841),
-                                                                        (class46
-                                                                                .anInt730),
-                                                                        2048,
-                                                                        Class348_Sub8.aHa6654,
-                                                                        (class46
-                                                                                .anInt770) == 9,
-                                                                        -1));
                                             }
                                         }
                                         if (class64 != null) {
@@ -1245,8 +1243,29 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             if (class46
                                                     .aBoolean754)
                                                 Class348_Sub8.aHa6654.C(false);
-                                            if (!class46
+                                            if (class46
                                                     .aBoolean784) {
+                                                        Class50_Sub1.aClass101_5209
+                                                                .method899
+                                                                        (class46
+                                                                                .anInt757);
+                                                        Class50_Sub1.aClass101_5209
+                                                                .method896
+                                                                        (class46
+                                                                                .anInt675);
+                                                        Class50_Sub1.aClass101_5209
+                                                                .method908
+                                                                        (class46
+                                                                                .anInt717);
+                                                        Class50_Sub1.aClass101_5209
+                                                                .method891
+                                                                        ((class46
+                                                                                        .anInt688),
+                                                                                (class46
+                                                                                        .anInt799),
+                                                                                (class46
+                                                                                        .anInt787));
+                                                    } else {
                                                 int i_66_
                                                         = ((((class46
                                                         .anInt716)
@@ -1291,27 +1310,6 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                         .method900
                                                                 ((class46
                                                                         .anInt757) << -63363069);
-                                            } else {
-                                                Class50_Sub1.aClass101_5209
-                                                        .method899
-                                                                (class46
-                                                                        .anInt757);
-                                                Class50_Sub1.aClass101_5209
-                                                        .method896
-                                                                (class46
-                                                                        .anInt675);
-                                                Class50_Sub1.aClass101_5209
-                                                        .method908
-                                                                (class46
-                                                                        .anInt717);
-                                                Class50_Sub1.aClass101_5209
-                                                        .method891
-                                                                ((class46
-                                                                                .anInt688),
-                                                                        (class46
-                                                                                .anInt799),
-                                                                        (class46
-                                                                                .anInt787));
                                             }
                                             class46.method437
                                                     (-20154, class64,
@@ -1402,16 +1400,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                         int i_69_;
                                         int i_70_;
                                         int i_71_;
-                                        if (!class46.aBoolean744) {
-                                            i_71_
-                                                    = i_25_ + (class46
-                                                    .anInt789);
-                                            i_70_
-                                                    = (class46.anInt709
-                                                    + i_24_);
-                                            i_68_ = i_25_;
-                                            i_69_ = i_24_;
-                                        } else {
+                                        if (class46.aBoolean744) {
                                             i_68_
                                                     = (class46.anInt789
                                                     + i_25_);
@@ -1420,6 +1409,15 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                     = (class46.anInt709
                                                     + i_24_);
                                             i_71_ = i_25_;
+                                        } else {
+                                            i_71_
+                                                    = i_25_ + (class46
+                                                    .anInt789);
+                                            i_70_
+                                                    = (class46.anInt709
+                                                    + i_24_);
+                                            i_68_ = i_25_;
+                                            i_69_ = i_24_;
                                         }
                                         if (class46.anInt690 != 1)
                                             Class348_Sub8.aHa6654.method3688
@@ -1473,15 +1471,15 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                 if (i_72_ == 31015) {
                     int i_73_ = i;
                     do {
-                        if (i_73_ != 0) {
+                        if (i_73_ == 0) {
+                            aBoolean9140 = class348_sub49.method3387(255) == 1;
+                            return;
+                        } else {
                             if (i_73_ != 1) {
                                 if (i_73_ == 2)
                                     break;
                                 break while_146_;
                             }
-                        } else {
-                            aBoolean9140 = class348_sub49.method3387(255) == 1;
-                            return;
                         }
                         aBoolean9147 = class348_sub49.method3387(255) == 1;
                         return;
@@ -1530,15 +1528,13 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
             int[] is_76_ = this.method3048((aBoolean9147
                             ? Class299_Sub2.anInt6325 - i : i),
                     i_75_ + 633706082, 0);
-            if (!aBoolean9140)
-                Class214.method1578(is_76_, 0, is, 0,
-                        Class348_Sub40_Sub6.anInt9139);
-            else {
+            if (aBoolean9140) {
                 for (int i_77_ = 0;
                      (i_77_ < Class348_Sub40_Sub6.anInt9139);
                      i_77_++)
                     is[i_77_] = is_76_[Class239_Sub22.anInt6076 + -i_77_];
-            }
+            } else Class214.method1578(is_76_, 0, is, 0,
+                    Class348_Sub40_Sub6.anInt9139);
         }
         return is;
     }

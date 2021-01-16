@@ -84,12 +84,12 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
                     method3140(-77, 55);
                 anInt9433++;
                 int i_6_ = i;
-                if (i_6_ != 0) {
-                    if (i_6_ != 1)
-                        break;
-                } else {
+                if (i_6_ == 0) {
                     anInt9438 = class348_sub49.method3330(842397944);
                     break;
+                } else {
+                    if (i_6_ != 1)
+                        break;
                 }
                 aBoolean9439 = class348_sub49.method3387(255) == 1;
                 break;
@@ -150,14 +150,14 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
                 int i_22_;
                 int i_23_;
                 int i_24_;
-                if (i_21_ != 0) {
-                    i_23_ = i_16_ / i_21_;
-                    i_22_ = i_15_ / i_21_;
-                    i_24_ = 16777216 / i_21_;
-                } else {
+                if (i_21_ == 0) {
                     i_22_ = 0;
                     i_23_ = 0;
                     i_24_ = 0;
+                } else {
+                    i_23_ = i_16_ / i_21_;
+                    i_22_ = i_15_ / i_21_;
+                    i_24_ = 16777216 / i_21_;
                 }
                 if (aBoolean9439) {
                     i_24_ = (i_24_ >> -683797247) + 2048;

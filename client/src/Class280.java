@@ -216,138 +216,7 @@ final class Class280 {
         Buffer buffer = anInterface5_Impl1_3638.method19(true, 26775);
         if (buffer != null) {
             Stream stream = var_ha_Sub3.method3893(buffer, 9179);
-            if (!Stream.c()) {
-                for (int i_35_ = -1 + i; i_35_ >= 0; i_35_--) {
-                    int i_36_ = (Math.min(anIntArray3636[i_35_], 64));
-                    if (i_36_ > 0) {
-                        for (int i_37_ = i_36_ + -1; i_37_ >= 0; i_37_--) {
-                            Class318_Sub9_Sub2 class318_sub9_sub2
-                                    = (aClass318_Sub9_Sub2ArrayArray3632[i_35_]
-                                    [i_37_]);
-                            int i_38_
-                                    = (class318_sub9_sub2
-                                    .anInt8790);
-                            byte i_39_ = (byte) (i_38_ >> -736715792);
-                            byte i_40_ = (byte) (i_38_ >> -1063337784);
-                            byte i_41_ = (byte) i_38_;
-                            byte i_42_ = (byte) (i_38_ >>> -1252471048);
-                            float f_43_
-                                    = (float) (class318_sub9_sub2.anInt8791
-                                    >> -2025421812);
-                            float f_44_
-                                    = (float) (class318_sub9_sub2.anInt8796
-                                    >> -415207028);
-                            float f_45_
-                                    = (float) (class318_sub9_sub2.anInt8789
-                                    >> 392344716);
-                            int i_46_
-                                    = ((class318_sub9_sub2
-                                    .anInt8793)
-                                    >> -1509143636);
-                            stream.b((float) -i_46_ * f_26_ + f_43_);
-                            stream.b(f_44_ + (float) -i_46_ * f_27_);
-                            stream.b((float) -i_46_ * f_28_ + f_45_);
-                            if (var_ha_Sub3.anInt8178 == 0)
-                                stream.b(i_39_, i_40_, i_41_, i_42_);
-                            else
-                                stream.a(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(0.0F);
-                            stream.b(0.0F);
-                            stream.b(f_43_ + (float) i_46_ * f_29_);
-                            stream.b(f_44_ + (float) i_46_ * f_30_);
-                            stream.b(f_45_ + (float) i_46_ * f_31_);
-                            if (var_ha_Sub3.anInt8178 != 0)
-                                stream.a(i_39_, i_40_, i_41_, i_42_);
-                            else
-                                stream.b(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(1.0F);
-                            stream.b(0.0F);
-                            stream.b(f_43_ + f_26_ * (float) i_46_);
-                            stream.b(f_27_ * (float) i_46_ + f_44_);
-                            stream.b(f_28_ * (float) i_46_ + f_45_);
-                            if (var_ha_Sub3.anInt8178 == 0)
-                                stream.b(i_39_, i_40_, i_41_, i_42_);
-                            else
-                                stream.a(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(1.0F);
-                            stream.b(1.0F);
-                            stream.b(f_32_ * (float) i_46_ + f_43_);
-                            stream.b((float) i_46_ * f_33_ + f_44_);
-                            stream.b(f_45_ + f_34_ * (float) i_46_);
-                            if (var_ha_Sub3.anInt8178 == 0)
-                                stream.b(i_39_, i_40_, i_41_, i_42_);
-                            else
-                                stream.a(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(0.0F);
-                            i_20_++;
-                            stream.b(1.0F);
-                        }
-                        if (anIntArray3636[i_35_] > 64) {
-                            int i_47_ = -64 + anIntArray3636[i_35_] + -1;
-                            for (int i_48_ = anIntArray3627[i_47_] + -1;
-                                 i_48_ >= 0; i_48_--) {
-                                Class318_Sub9_Sub2 class318_sub9_sub2
-                                        = (aClass318_Sub9_Sub2ArrayArray3642[i_47_]
-                                        [i_48_]);
-                                int i_49_ = (class318_sub9_sub2
-                                        .anInt8790);
-                                byte i_50_ = (byte) (i_49_ >> 320854256);
-                                byte i_51_ = (byte) (i_49_ >> -482279800);
-                                byte i_52_ = (byte) i_49_;
-                                byte i_53_ = (byte) (i_49_ >>> -1552108456);
-                                float f_54_
-                                        = (float) (class318_sub9_sub2.anInt8791
-                                        >> 1057100684);
-                                float f_55_
-                                        = (float) (class318_sub9_sub2.anInt8796
-                                        >> -1217417812);
-                                float f_56_
-                                        = (float) (class318_sub9_sub2.anInt8789
-                                        >> 159979852);
-                                int i_57_ = (class318_sub9_sub2.anInt8793
-                                        >> 525024908);
-                                stream.b(f_54_ + (float) -i_57_ * f_26_);
-                                stream.b((float) -i_57_ * f_27_ + f_55_);
-                                stream.b(f_56_ + f_28_ * (float) -i_57_);
-                                if (var_ha_Sub3.anInt8178 == 0)
-                                    stream.b(i_50_, i_51_, i_52_, i_53_);
-                                else
-                                    stream.a(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(0.0F);
-                                stream.b(0.0F);
-                                stream.b(f_54_ + (float) i_57_ * f_29_);
-                                stream.b(f_30_ * (float) i_57_ + f_55_);
-                                stream.b(f_31_ * (float) i_57_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 != 0)
-                                    stream.a(i_50_, i_51_, i_52_, i_53_);
-                                else
-                                    stream.b(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(1.0F);
-                                stream.b(0.0F);
-                                stream.b(f_54_ + (float) i_57_ * f_26_);
-                                stream.b((float) i_57_ * f_27_ + f_55_);
-                                stream.b(f_28_ * (float) i_57_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 == 0)
-                                    stream.b(i_50_, i_51_, i_52_, i_53_);
-                                else
-                                    stream.a(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(1.0F);
-                                stream.b(1.0F);
-                                stream.b(f_54_ + f_32_ * (float) i_57_);
-                                stream.b(f_55_ + (float) i_57_ * f_33_);
-                                stream.b((float) i_57_ * f_34_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 != 0)
-                                    stream.a(i_50_, i_51_, i_52_, i_53_);
-                                else
-                                    stream.b(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(0.0F);
-                                stream.b(1.0F);
-                                i_20_++;
-                            }
-                        }
-                    }
-                }
-            } else {
+            if (Stream.c()) {
                 for (int i_58_ = i + -1; i_58_ >= 0; i_58_--) {
                     int i_59_ = (Math.min(anIntArray3636[i_58_], 64));
                     if (i_59_ > 0) {
@@ -478,6 +347,137 @@ final class Class280 {
                         }
                     }
                 }
+            } else {
+                for (int i_35_ = -1 + i; i_35_ >= 0; i_35_--) {
+                    int i_36_ = (Math.min(anIntArray3636[i_35_], 64));
+                    if (i_36_ > 0) {
+                        for (int i_37_ = i_36_ + -1; i_37_ >= 0; i_37_--) {
+                            Class318_Sub9_Sub2 class318_sub9_sub2
+                                    = (aClass318_Sub9_Sub2ArrayArray3632[i_35_]
+                                    [i_37_]);
+                            int i_38_
+                                    = (class318_sub9_sub2
+                                    .anInt8790);
+                            byte i_39_ = (byte) (i_38_ >> -736715792);
+                            byte i_40_ = (byte) (i_38_ >> -1063337784);
+                            byte i_41_ = (byte) i_38_;
+                            byte i_42_ = (byte) (i_38_ >>> -1252471048);
+                            float f_43_
+                                    = (float) (class318_sub9_sub2.anInt8791
+                                    >> -2025421812);
+                            float f_44_
+                                    = (float) (class318_sub9_sub2.anInt8796
+                                    >> -415207028);
+                            float f_45_
+                                    = (float) (class318_sub9_sub2.anInt8789
+                                    >> 392344716);
+                            int i_46_
+                                    = ((class318_sub9_sub2
+                                    .anInt8793)
+                                    >> -1509143636);
+                            stream.b((float) -i_46_ * f_26_ + f_43_);
+                            stream.b(f_44_ + (float) -i_46_ * f_27_);
+                            stream.b((float) -i_46_ * f_28_ + f_45_);
+                            if (var_ha_Sub3.anInt8178 == 0)
+                                stream.b(i_39_, i_40_, i_41_, i_42_);
+                            else
+                                stream.a(i_39_, i_40_, i_41_, i_42_);
+                            stream.b(0.0F);
+                            stream.b(0.0F);
+                            stream.b(f_43_ + (float) i_46_ * f_29_);
+                            stream.b(f_44_ + (float) i_46_ * f_30_);
+                            stream.b(f_45_ + (float) i_46_ * f_31_);
+                            if (var_ha_Sub3.anInt8178 != 0)
+                                stream.a(i_39_, i_40_, i_41_, i_42_);
+                            else
+                                stream.b(i_39_, i_40_, i_41_, i_42_);
+                            stream.b(1.0F);
+                            stream.b(0.0F);
+                            stream.b(f_43_ + f_26_ * (float) i_46_);
+                            stream.b(f_27_ * (float) i_46_ + f_44_);
+                            stream.b(f_28_ * (float) i_46_ + f_45_);
+                            if (var_ha_Sub3.anInt8178 == 0)
+                                stream.b(i_39_, i_40_, i_41_, i_42_);
+                            else
+                                stream.a(i_39_, i_40_, i_41_, i_42_);
+                            stream.b(1.0F);
+                            stream.b(1.0F);
+                            stream.b(f_32_ * (float) i_46_ + f_43_);
+                            stream.b((float) i_46_ * f_33_ + f_44_);
+                            stream.b(f_45_ + f_34_ * (float) i_46_);
+                            if (var_ha_Sub3.anInt8178 == 0)
+                                stream.b(i_39_, i_40_, i_41_, i_42_);
+                            else
+                                stream.a(i_39_, i_40_, i_41_, i_42_);
+                            stream.b(0.0F);
+                            i_20_++;
+                            stream.b(1.0F);
+                        }
+                        if (anIntArray3636[i_35_] > 64) {
+                            int i_47_ = -64 + anIntArray3636[i_35_] + -1;
+                            for (int i_48_ = anIntArray3627[i_47_] + -1;
+                                 i_48_ >= 0; i_48_--) {
+                                Class318_Sub9_Sub2 class318_sub9_sub2
+                                        = (aClass318_Sub9_Sub2ArrayArray3642[i_47_]
+                                        [i_48_]);
+                                int i_49_ = (class318_sub9_sub2
+                                        .anInt8790);
+                                byte i_50_ = (byte) (i_49_ >> 320854256);
+                                byte i_51_ = (byte) (i_49_ >> -482279800);
+                                byte i_52_ = (byte) i_49_;
+                                byte i_53_ = (byte) (i_49_ >>> -1552108456);
+                                float f_54_
+                                        = (float) (class318_sub9_sub2.anInt8791
+                                        >> 1057100684);
+                                float f_55_
+                                        = (float) (class318_sub9_sub2.anInt8796
+                                        >> -1217417812);
+                                float f_56_
+                                        = (float) (class318_sub9_sub2.anInt8789
+                                        >> 159979852);
+                                int i_57_ = (class318_sub9_sub2.anInt8793
+                                        >> 525024908);
+                                stream.b(f_54_ + (float) -i_57_ * f_26_);
+                                stream.b((float) -i_57_ * f_27_ + f_55_);
+                                stream.b(f_56_ + f_28_ * (float) -i_57_);
+                                if (var_ha_Sub3.anInt8178 == 0)
+                                    stream.b(i_50_, i_51_, i_52_, i_53_);
+                                else
+                                    stream.a(i_50_, i_51_, i_52_, i_53_);
+                                stream.b(0.0F);
+                                stream.b(0.0F);
+                                stream.b(f_54_ + (float) i_57_ * f_29_);
+                                stream.b(f_30_ * (float) i_57_ + f_55_);
+                                stream.b(f_31_ * (float) i_57_ + f_56_);
+                                if (var_ha_Sub3.anInt8178 != 0)
+                                    stream.a(i_50_, i_51_, i_52_, i_53_);
+                                else
+                                    stream.b(i_50_, i_51_, i_52_, i_53_);
+                                stream.b(1.0F);
+                                stream.b(0.0F);
+                                stream.b(f_54_ + (float) i_57_ * f_26_);
+                                stream.b((float) i_57_ * f_27_ + f_55_);
+                                stream.b(f_28_ * (float) i_57_ + f_56_);
+                                if (var_ha_Sub3.anInt8178 == 0)
+                                    stream.b(i_50_, i_51_, i_52_, i_53_);
+                                else
+                                    stream.a(i_50_, i_51_, i_52_, i_53_);
+                                stream.b(1.0F);
+                                stream.b(1.0F);
+                                stream.b(f_54_ + f_32_ * (float) i_57_);
+                                stream.b(f_55_ + (float) i_57_ * f_33_);
+                                stream.b((float) i_57_ * f_34_ + f_56_);
+                                if (var_ha_Sub3.anInt8178 != 0)
+                                    stream.a(i_50_, i_51_, i_52_, i_53_);
+                                else
+                                    stream.b(i_50_, i_51_, i_52_, i_53_);
+                                stream.b(0.0F);
+                                stream.b(1.0F);
+                                i_20_++;
+                            }
+                        }
+                    }
+                }
             }
             stream.a();
             if (anInterface5_Impl1_3638.method18(6331)) {
@@ -536,17 +536,7 @@ final class Class280 {
         Buffer buffer = anInterface5_Impl2_3635.method24(true, false);
         if (buffer != null) {
             Stream stream = var_ha_Sub3.method3893(buffer, 9179);
-            if (!Stream.c()) {
-                for (int i = 0; i < 8191; i++) {
-                    int i_81_ = 4 * i;
-                    stream.a(i_81_);
-                    stream.a(1 + i_81_);
-                    stream.a(2 + i_81_);
-                    stream.a(2 + i_81_);
-                    stream.a(3 + i_81_);
-                    stream.a(i_81_);
-                }
-            } else {
+            if (Stream.c()) {
                 for (int i = 0; i < 8191; i++) {
                     int i_82_ = i * 4;
                     stream.d(i_82_);
@@ -556,6 +546,16 @@ final class Class280 {
                     stream.d(3 + i_82_);
                     stream.d(i_82_);
                 }
+            } else {
+                for (int i = 0; i < 8191; i++) {
+                    int i_81_ = 4 * i;
+                    stream.a(i_81_);
+                    stream.a(1 + i_81_);
+                    stream.a(2 + i_81_);
+                    stream.a(2 + i_81_);
+                    stream.a(3 + i_81_);
+                    stream.a(i_81_);
+                }
             }
             stream.a();
             anInterface5_Impl2_3635.method22(-23);
@@ -563,35 +563,35 @@ final class Class280 {
         Buffer buffer_83_ = anInterface5_Impl1_3630.method19(true, 26775);
         if (buffer_83_ != null) {
             Stream stream = var_ha_Sub3.method3893(buffer_83_, 9179);
-            if (!Stream.c()) {
+            if (Stream.c()) {
                 for (int i = 0; i < 8191; i++) {
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
+                    stream.a(0.0F);
+                    stream.a(-1.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(-1.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(-1.0F);
+                    stream.a(0.0F);
+                    stream.a(0.0F);
+                    stream.a(-1.0F);
+                    stream.a(0.0F);
                 }
             } else {
                 for (int i = 0; i < 8191; i++) {
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
+                    stream.b(0.0F);
+                    stream.b(-1.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(-1.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(-1.0F);
+                    stream.b(0.0F);
+                    stream.b(0.0F);
+                    stream.b(-1.0F);
+                    stream.b(0.0F);
                 }
             }
             stream.a();

@@ -107,8 +107,31 @@ final class Class297 implements Runnable {
             }
             try {
                 int i = class144.anInt1994;
-                if (i != 1) {
-                    if (i != 22) {
+                if (i == 1) {
+                    if (aLong3781 > Class62.method599(-53))
+                        throw new IOException();
+                    class144.anObject1998
+                            = new Socket(InetAddress.getByName((String)
+                            (class144
+                                    .anObject1996)),
+                            class144.anInt2000);
+                } else {
+                    if (i == 22) {
+                        if (aLong3781 > Class62.method599(-92))
+                            throw new IOException();
+                        try {
+                            class144.anObject1998
+                                    = Class61.method593
+                                    (class144.anInt2000, (byte) -90,
+                                            ((String)
+                                                    class144.anObject1996))
+                                    .method2050(-112);
+                        } catch (IOException_Sub1 ioexception_sub1) {
+                            class144.anObject1998
+                                    = ioexception_sub1.getMessage();
+                            throw ioexception_sub1;
+                        }
+                    } else {
                         if (i == 2) {
                             Thread thread
                                     = new Thread((Runnable) (class144
@@ -125,9 +148,38 @@ final class Class297 implements Runnable {
                                     (class144
                                             .anObject1996))
                                     .openStream());
-                        } else if (i != 8) {
-                            if (i != 9) {
-                                if (i != 18) {
+                        } else if (i == 8) {
+                            Object[] objects
+                                    = ((Object[])
+                                    class144.anObject1996);
+                            if (this.aBoolean3777
+                                    && (((Class) objects[0]).getClassLoader()
+                                    == null))
+                                throw new SecurityException();
+                            class144.anObject1998
+                                    = (((Class) objects[0]).getDeclaredMethod
+                                    ((String) objects[1],
+                                            (Class[]) objects[2]));
+                        } else {
+                            if (i == 9) {
+                                Object[] objects
+                                        = ((Object[])
+                                        class144.anObject1996);
+                                if (this.aBoolean3777
+                                        && (((Class) objects[0]).getClassLoader()
+                                        == null))
+                                    throw new SecurityException();
+                                class144.anObject1998
+                                        = (((Class) objects[0]).getDeclaredField
+                                        ((String) objects[1]));
+                            } else {
+                                if (i == 18) {
+                                    Clipboard clipboard
+                                            = Toolkit.getDefaultToolkit()
+                                            .getSystemClipboard();
+                                    class144.anObject1998
+                                            = clipboard.getContents(null);
+                                } else {
                                     if (i == 19) {
                                         Transferable transferable
                                                 = ((Transferable)
@@ -172,7 +224,59 @@ final class Class297 implements Runnable {
                                                                     .anObject1996))
                                                     .getAddress();
                                         } else if (i != 5) {
-                                            if (i != 6) {
+                                            if (i == 6) {
+                                                Frame frame
+                                                        = (new Frame
+                                                        ("Jagex Full Screen"));
+                                                class144.anObject1998 = frame;
+                                                frame.setResizable(false);
+                                                if (this
+                                                        .aBoolean3794)
+                                                    aClass134_3802.method1146
+                                                            ((class144.anInt2000
+                                                                            & 0xffff),
+                                                                    (class144.anInt1999
+                                                                            >> 1209541904),
+                                                                    (class144.anInt2000
+                                                                            >>> 1536588080),
+                                                                    -43,
+                                                                    0xffff & (class144
+                                                                            .anInt1999),
+                                                                    frame);
+                                                else
+                                                    Class.forName("Class7")
+                                                            .getMethod
+                                                                    ("method209",
+                                                                            (new Class[]
+                                                                                    {(aClass3807 != null
+                                                                                            ? aClass3807
+                                                                                            : (aClass3807
+                                                                                            = (method2249
+                                                                                            ("java.awt.Frame")))),
+                                                                                            Integer.TYPE,
+                                                                                            Integer.TYPE,
+                                                                                            Integer.TYPE,
+                                                                                            Integer.TYPE}))
+                                                            .invoke
+                                                                    (anObject3793,
+                                                                            frame,
+                                                                            (new Integer
+                                                                                    ((class144
+                                                                                            .anInt2000)
+                                                                                            >>> 35629040)),
+                                                                            (new Integer
+                                                                                    (0xffff
+                                                                                            & (class144
+                                                                                            .anInt2000))),
+                                                                            (new Integer
+                                                                                    ((class144
+                                                                                            .anInt1999)
+                                                                                            >> 972476528)),
+                                                                            (new Integer
+                                                                                    ((class144
+                                                                                            .anInt1999)
+                                                                                            & 0xffff)));
+                                            } else {
                                                 if (i == 7) {
                                                     if (this
                                                             .aBoolean3794)
@@ -201,7 +305,17 @@ final class Class297 implements Runnable {
                                                                     anInt3792));
                                                     class144.anObject1998
                                                             = class234;
-                                                } else if (i != 13) {
+                                                } else if (i == 13) {
+                                                    Class234 class234
+                                                            = (method2241
+                                                            (((String)
+                                                                            (class144
+                                                                                    .anObject1996)),
+                                                                    12606, "",
+                                                                    anInt3792));
+                                                    class144.anObject1998
+                                                            = class234;
+                                                } else {
                                                     if ((this
                                                             .aBoolean3777)
                                                             && i == 14) {
@@ -364,69 +478,7 @@ final class Class297 implements Runnable {
                                                     } else
                                                         throw new Exception
                                                                 ("");
-                                                } else {
-                                                    Class234 class234
-                                                            = (method2241
-                                                            (((String)
-                                                                            (class144
-                                                                                    .anObject1996)),
-                                                                    12606, "",
-                                                                    anInt3792));
-                                                    class144.anObject1998
-                                                            = class234;
                                                 }
-                                            } else {
-                                                Frame frame
-                                                        = (new Frame
-                                                        ("Jagex Full Screen"));
-                                                class144.anObject1998 = frame;
-                                                frame.setResizable(false);
-                                                if (this
-                                                        .aBoolean3794)
-                                                    aClass134_3802.method1146
-                                                            ((class144.anInt2000
-                                                                            & 0xffff),
-                                                                    (class144.anInt1999
-                                                                            >> 1209541904),
-                                                                    (class144.anInt2000
-                                                                            >>> 1536588080),
-                                                                    -43,
-                                                                    0xffff & (class144
-                                                                            .anInt1999),
-                                                                    frame);
-                                                else
-                                                    Class.forName("Class7")
-                                                            .getMethod
-                                                                    ("method209",
-                                                                            (new Class[]
-                                                                                    {(aClass3807 != null
-                                                                                            ? aClass3807
-                                                                                            : (aClass3807
-                                                                                            = (method2249
-                                                                                            ("java.awt.Frame")))),
-                                                                                            Integer.TYPE,
-                                                                                            Integer.TYPE,
-                                                                                            Integer.TYPE,
-                                                                                            Integer.TYPE}))
-                                                            .invoke
-                                                                    (anObject3793,
-                                                                            frame,
-                                                                            (new Integer
-                                                                                    ((class144
-                                                                                            .anInt2000)
-                                                                                            >>> 35629040)),
-                                                                            (new Integer
-                                                                                    (0xffff
-                                                                                            & (class144
-                                                                                            .anInt2000))),
-                                                                            (new Integer
-                                                                                    ((class144
-                                                                                            .anInt1999)
-                                                                                            >> 972476528)),
-                                                                            (new Integer
-                                                                                    ((class144
-                                                                                            .anInt1999)
-                                                                                            & 0xffff)));
                                             }
                                         } else if (!this
                                                 .aBoolean3794)
@@ -444,62 +496,10 @@ final class Class297 implements Runnable {
                                                     .method1145(true);
                                     } else
                                         throw new Exception("");
-                                } else {
-                                    Clipboard clipboard
-                                            = Toolkit.getDefaultToolkit()
-                                            .getSystemClipboard();
-                                    class144.anObject1998
-                                            = clipboard.getContents(null);
                                 }
-                            } else {
-                                Object[] objects
-                                        = ((Object[])
-                                        class144.anObject1996);
-                                if (this.aBoolean3777
-                                        && (((Class) objects[0]).getClassLoader()
-                                        == null))
-                                    throw new SecurityException();
-                                class144.anObject1998
-                                        = (((Class) objects[0]).getDeclaredField
-                                        ((String) objects[1]));
                             }
-                        } else {
-                            Object[] objects
-                                    = ((Object[])
-                                    class144.anObject1996);
-                            if (this.aBoolean3777
-                                    && (((Class) objects[0]).getClassLoader()
-                                    == null))
-                                throw new SecurityException();
-                            class144.anObject1998
-                                    = (((Class) objects[0]).getDeclaredMethod
-                                    ((String) objects[1],
-                                            (Class[]) objects[2]));
-                        }
-                    } else {
-                        if (aLong3781 > Class62.method599(-92))
-                            throw new IOException();
-                        try {
-                            class144.anObject1998
-                                    = Class61.method593
-                                    (class144.anInt2000, (byte) -90,
-                                            ((String)
-                                                    class144.anObject1996))
-                                    .method2050(-112);
-                        } catch (IOException_Sub1 ioexception_sub1) {
-                            class144.anObject1998
-                                    = ioexception_sub1.getMessage();
-                            throw ioexception_sub1;
                         }
                     }
-                } else {
-                    if (aLong3781 > Class62.method599(-53))
-                        throw new IOException();
-                    class144.anObject1998
-                            = new Socket(InetAddress.getByName((String)
-                            (class144
-                                    .anObject1996)),
-                            class144.anInt2000);
                 }
                 class144.anInt1997 = 1;
             } catch (Throwable throwable) {

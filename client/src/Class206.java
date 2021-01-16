@@ -82,11 +82,7 @@ final class Class206 implements Interface11 {
              i_4_ < Class147.anInt2021; i_4_++) {
             Class10 class10 = Class258_Sub2.aClass10Array8531[i_4_];
             boolean bool = false;
-            if (class10.aClass348_Sub16_Sub5_176 != null) {
-                if (!class10.aClass348_Sub16_Sub5_176
-                        .method2712((byte) 4))
-                    bool = true;
-            } else {
+            if (class10.aClass348_Sub16_Sub5_176 == null) {
                 class10.anInt188--;
                 if (class10.anInt188
                         >= (!class10.method220((byte) -66) ? -10 : -1500)) {
@@ -244,6 +240,10 @@ final class Class206 implements Interface11 {
                     }
                 } else
                     bool = true;
+            } else {
+                if (!class10.aClass348_Sub16_Sub5_176
+                        .method2712((byte) 4))
+                    bool = true;
             }
             if (bool) {
                 Class147.anInt2021--;
@@ -299,13 +299,13 @@ final class Class206 implements Interface11 {
         int i_23_ = 1 << i_21_;
         if (i_20_ > -16)
             aBoolean4888 = false;
-        if ((anInt4884 & (~i_23_)) != 0) {
+        if ((anInt4884 & (~i_23_)) == 0) {
+            anInt4882 = class258_sub2.anInt8538;
+            anInt4886 = class258_sub2.anInt8538;
+        } else {
             if (class258_sub2.anInt8538 != anInt4882
                     || anInt4886 != class258_sub2.anInt8538)
                 throw new RuntimeException();
-        } else {
-            anInt4882 = class258_sub2.anInt8538;
-            anInt4886 = class258_sub2.anInt8538;
         }
         class258_sub2.method1961(anInt4873, i_22_,
                 Class59_Sub2.anIntArray5306[i_21_], i, -1);
@@ -399,14 +399,14 @@ final class Class206 implements Interface11 {
         if (anInt4873 == -1)
             throw new RuntimeException();
         int i_33_ = 1 << i;
-        if ((anInt4884 & (~i_33_)) != 0) {
+        if ((anInt4884 & (~i_33_)) == 0) {
+            anInt4886 = class348_sub42_sub2.anInt8565;
+            anInt4882 = class348_sub42_sub2.anInt8572;
+        } else {
             if ((class348_sub42_sub2.anInt8572 != anInt4882)
                     || (anInt4886
                     != class348_sub42_sub2.anInt8565))
                 throw new RuntimeException();
-        } else {
-            anInt4886 = class348_sub42_sub2.anInt8565;
-            anInt4882 = class348_sub42_sub2.anInt8572;
         }
         int i_34_ = -68 / ((i_32_ - 64) / 49);
         class348_sub42_sub2.method3173(36161, Class59_Sub2.anIntArray5306[i],

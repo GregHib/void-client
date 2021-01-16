@@ -167,16 +167,16 @@ final class Class348_Sub10 extends Class348 {
             int i_21_ = Class299.method2253(i_14_ - 1, -53);
             for (int i_22_ = 0; i_22_ < i_14_; i_22_++)
                 is_20_[i_22_] = Class84.method818(i_21_, 0, i_22_);
-            if (i != 0) {
-                aFloatArray6712 = fs;
-                aFloatArray6726 = fs_16_;
-                aFloatArray6700 = fs_18_;
-                anIntArray6705 = is_20_;
-            } else {
+            if (i == 0) {
                 aFloatArray6722 = fs;
                 aFloatArray6720 = fs_16_;
                 aFloatArray6708 = fs_18_;
                 anIntArray6719 = is_20_;
+            } else {
+                aFloatArray6712 = fs;
+                aFloatArray6726 = fs_16_;
+                aFloatArray6700 = fs_18_;
+                anIntArray6705 = is_20_;
             }
         }
         int i = method2789(8) + 1;
