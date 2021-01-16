@@ -1016,7 +1016,7 @@ class Class348_Sub49 extends Class348
 	final void method3390(BigInteger biginteger, byte i,
 			BigInteger biginteger_85_) {
 		try {
-			if (Loader.isrs) {
+			if (Loader.loadRunescape) {
 				anInt7147++;
 				int i_86_ = ((Class348_Sub49) this).anInt7197;
 				((Class348_Sub49) this).anInt7197 = 0;

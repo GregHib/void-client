@@ -109,7 +109,7 @@ final class Class340
 	System.out.println("ukeys: "+ukeys);
 	
 	byte[] is_6_;
-	if (Loader.isrs && aBigInteger4213 != null && aBigInteger4218 != null) {
+	if (Loader.loadRunescape && aBigInteger4213 != null && aBigInteger4218 != null) {
 	    BigInteger biginteger = new BigInteger(is);
 	    BigInteger biginteger_7_
 		= biginteger.modPow(aBigInteger4213, aBigInteger4218);
