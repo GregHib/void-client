@@ -72,7 +72,7 @@ final class Class206 implements Interface11 {
         if (i != 2983)
             anInt4891 = -116;
         anInt4866++;
-        anInt4884 &= 1 << i_2_ ^ 0xffffffff;
+        anInt4884 &= ~(1 << i_2_);
         anInterface9Array4875[i_2_] = null;
     }
 
@@ -299,7 +299,7 @@ final class Class206 implements Interface11 {
         int i_23_ = 1 << i_21_;
         if (i_20_ > -16)
             aBoolean4888 = false;
-        if ((anInt4884 & (i_23_ ^ 0xffffffff)) != 0) {
+        if ((anInt4884 & (~i_23_)) != 0) {
             if (class258_sub2.anInt8538 != anInt4882
                     || anInt4886 != class258_sub2.anInt8538)
                 throw new RuntimeException();
@@ -354,7 +354,7 @@ final class Class206 implements Interface11 {
 
     final void method1505(int i, int i_26_) {
         anInt4880++;
-        if ((anInt4873 ^ 0xffffffff) == i)
+        if ((~anInt4873) == i)
             throw new RuntimeException();
         OpenGL.glReadBuffer(Class59_Sub2.anIntArray5306[i_26_]);
     }
@@ -365,7 +365,7 @@ final class Class206 implements Interface11 {
         if (anInt4873 == -1)
             throw new RuntimeException();
         int i_29_ = 1 << i_27_;
-        if (i_28_ == ((i_29_ ^ 0xffffffff) & anInt4884 ^ 0xffffffff)) {
+        if (i_28_ == (~((~i_29_) & anInt4884))) {
             anInt4882 = class258_sub3.anInt8547;
             anInt4886 = class258_sub3.anInt8551;
         } else if ((anInt4882 != class258_sub3.anInt8547)
@@ -399,7 +399,7 @@ final class Class206 implements Interface11 {
         if (anInt4873 == -1)
             throw new RuntimeException();
         int i_33_ = 1 << i;
-        if ((anInt4884 & (i_33_ ^ 0xffffffff)) != 0) {
+        if ((anInt4884 & (~i_33_)) != 0) {
             if ((class348_sub42_sub2.anInt8572 != anInt4882)
                     || (anInt4886
                     != class348_sub42_sub2.anInt8565))

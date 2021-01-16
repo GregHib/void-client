@@ -142,7 +142,7 @@ final class Class228 {
                     = Class325.method2596(Class75.anInt1255, 12871);
         }
         anInt2971++;
-        if (i != (Class244.anInt4609 ^ 0xffffffff)
+        if (i != (~Class244.anInt4609)
                 && Class48.anInt859 != -1) {
             int i_8_ = Class244.anInt4609 - Class348_Sub36.anInt6992;
             if (i_8_ < 2 || i_8_ > 2)

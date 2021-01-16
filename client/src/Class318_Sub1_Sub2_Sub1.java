@@ -97,7 +97,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                 : class64.method628(i_7_, i, class101, true,
                 class213.anInt2784)))
             return true;
-        if ((this.anInt10189 ^ 0xffffffff)
+        if ((~this.anInt10189)
                 != i_8_) {
             Class213 class213_9_
                     = (Exception_Sub1.aClass255_112.method1940

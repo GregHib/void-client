@@ -59,7 +59,7 @@ abstract class Class348_Sub5 extends Class348 {
 
     static final void method2755(int i, int i_7_, int i_8_) {
         anInt6629++;
-        if ((Class348_Sub43.anInt7068 ^ 0xffffffff) != i) {
+        if ((~Class348_Sub43.anInt7068) != i) {
             if (i_8_ >= 0)
                 Class367_Sub3.anIntArray7299[i_8_] = i_7_;
             else {

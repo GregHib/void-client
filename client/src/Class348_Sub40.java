@@ -56,9 +56,8 @@ abstract class Class348_Sub40 extends Class348 {
             i_0_ |= 0x2;
             i_0_ |= 0x4;
         }
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub24_7235.method1820(-32350)
-                ^ 0xffffffff)
+        if ((~Class316.aClass348_Sub51_3959
+                .aClass239_Sub24_7235.method1820(-32350))
                 == i)
             i_0_ |= 0x40;
         Class318_Sub1_Sub3_Sub3.method2420(i_0_, i);
@@ -66,7 +65,7 @@ abstract class Class348_Sub40 extends Class348 {
         Exception_Sub1.aClass255_112.method1942(i_0_, (byte) -125);
         Class189.aClass278_2529.method2073(-25032, i_0_);
         Class348_Sub40_Sub18.aClass319_9245.method2541(119, i_0_);
-        Class367_Sub1.method3535(i_0_, i ^ 0xffffffff);
+        Class367_Sub1.method3535(i_0_, ~i);
         Class269.method2040(i_0_, true);
         Class69.method720(i_0_, i + 1227);
         Class239_Sub8.method1750(14056, i_0_);
@@ -260,7 +259,7 @@ abstract class Class348_Sub40 extends Class348 {
 
     void method3045(int i, int i_54_, int i_55_) {
         anInt7043++;
-        int i_56_ = (i_55_ != (this.anInt7036 ^ 0xffffffff)
+        int i_56_ = (i_55_ != (~this.anInt7036)
                 ? this.anInt7036 : i_54_);
         if (this.aBoolean7045)
             this.aClass191_7032

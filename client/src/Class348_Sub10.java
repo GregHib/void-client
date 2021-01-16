@@ -79,7 +79,7 @@ final class Class348_Sub10 extends Class348 {
         anInt6723 = class348_sub49.method3385((byte) -126);
         anInt6717 = class348_sub49.method3385((byte) -126);
         if (anInt6717 < 0) {
-            anInt6717 = anInt6717 ^ 0xffffffff;
+            anInt6717 = ~anInt6717;
             aBoolean6728 = true;
         }
         int i = class348_sub49.method3385((byte) -126);
@@ -232,7 +232,7 @@ final class Class348_Sub10 extends Class348 {
                 for (int i_35_ = 0; i_35_ < i_34_; i_35_++) {
                     int i_36_ = (int) (128.0F + fs[i_35_] * 128.0F);
                     if ((i_36_ & ~0xff) != 0)
-                        i_36_ = (i_36_ ^ 0xffffffff) >> 31;
+                        i_36_ = (~i_36_) >> 31;
                     aByteArray6731[i++] = (byte) (i_36_ - 128);
                 }
                 if (is != null)

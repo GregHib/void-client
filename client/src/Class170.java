@@ -88,13 +88,13 @@ final class Class170 implements Interface17 {
         int i_11_ = class146.anInt2016;
         int i_12_ = class146.anInt2020;
         int i_13_ = Class129.anIntArray1885[-i_11_ + i_12_];
-        if (i_8_ < (i_9_ ^ 0xffffffff)
+        if (i_8_ < (~i_9_)
                 || i_13_ < i_9_)
             i_9_ = 0;
         i_13_ <<= i_11_;
         method1306((byte) -78,
                 i_9_ << i_11_ & i_13_ | (this.anIntArray5063
-                        [i_10_]) & (i_13_ ^ 0xffffffff),
+                        [i_10_]) & (~i_13_),
                 i_10_);
     }
 
@@ -227,7 +227,7 @@ final class Class170 implements Interface17 {
             i_35_ <<= i_33_;
             method1313((byte) 42,
                     (i_31_ << i_33_ & i_35_
-                            | (i_35_ ^ 0xffffffff) & anIntArray5078[i_32_]),
+                            | (~i_35_) & anIntArray5078[i_32_]),
                     i_32_);
         }
     }

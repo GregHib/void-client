@@ -166,7 +166,7 @@ final class Class268 {
 
     final void method2037(int i) {
         synchronized (aClass60_3433) {
-            aClass60_3433.method590(i ^ i);
+            aClass60_3433.method590(0);
         }
         anInt3440++;
     }

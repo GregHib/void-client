@@ -215,7 +215,7 @@ final class Class373_Sub2 extends Class373
         if ((0x2 & i) != 0)
             method3606(4, mouseevent.getY(), mouseevent.getX(),
                     mouseevent.getClickCount(), -117);
-        anInt7456 &= i ^ 0xffffffff;
+        anInt7456 &= ~i;
         if (mouseevent.isPopupTrigger())
             mouseevent.consume();
     }

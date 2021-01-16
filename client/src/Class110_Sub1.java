@@ -125,8 +125,7 @@ final class Class110_Sub1 extends Class110 {
                     = (i_7_ * (-i_5_ + i_4_) - -(i_5_ * i_9_)) / i_4_;
         }
         class318_sub1_sub3_sub3.anInt10326 = 0;
-        if ((class318_sub1_sub3_sub3.anInt10231
-                ^ 0xffffffff)
+        if ((~class318_sub1_sub3_sub3.anInt10231)
                 == i)
             class318_sub1_sub3_sub3.method2435((byte) -108, 8192, false);
         if (class318_sub1_sub3_sub3.anInt10231 == 1)

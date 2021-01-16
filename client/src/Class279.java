@@ -167,7 +167,7 @@ class Class279 {
                 for (int i_11_ = i_7_ >>> i_9_ & 0x11111111; i_11_ != 0;
                      i_11_ >>>= 4) {
                     if ((i_11_ & 0x1) != 0) {
-                        i_7_ &= 1 << i_9_ ^ 0xffffffff;
+                        i_7_ &= ~(1 << i_9_);
                         Class348_Sub16 class348_sub16 = null;
                         Class348_Sub16 class348_sub16_12_
                                 = aClass348_Sub16Array3619[i_9_];

@@ -124,7 +124,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
     final int[] method3042(int i, int i_15_) {
         anInt9476++;
         int[] is
-                = this.aClass191_7032.method1433(i_15_ ^ i_15_,
+                = this.aClass191_7032.method1433(0,
                 i);
         if (this.aClass191_7032.aBoolean2570) {
             int[] is_16_ = this.method3048(i, 633706337, 0);

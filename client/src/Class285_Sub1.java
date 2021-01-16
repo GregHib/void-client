@@ -60,7 +60,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
                                                Class348_Sub49 class348_sub49) {
         anInt8495++;
         Class369_Sub3 class369_sub3
-                = Class348_Sub46.method3322(i ^ i, class348_sub49);
+                = Class348_Sub46.method3322(0, class348_sub49);
         int i_5_ = class348_sub49.method3372(13638);
         return (new Class369_Sub3_Sub1
                 (class369_sub3.aClass221_4968,

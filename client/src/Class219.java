@@ -48,9 +48,8 @@ final class Class219 {
             Class235.anInt3062 = -1;
             Class127_Sub1.anInt8387 = 0;
         } else {
-            if (i != ((class318_sub1_sub3_sub3
-                    .anInt10286)
-                    ^ 0xffffffff)
+            if (i != (~(class318_sub1_sub3_sub3
+                    .anInt10286))
                     && (class318_sub1_sub3_sub3
                     .anInt10218) == 0) {
                 Class17 class17

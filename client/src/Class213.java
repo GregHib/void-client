@@ -102,7 +102,7 @@ final class Class213 {
                 this
                         .aClass255_2761.aClass45_3268,
                 i_0_, -1);
-        if ((class124.anInt1830 ^ 0xffffffff) > i)
+        if ((~class124.anInt1830) > i)
             class124.method1092(2, 54);
         if (i_1_ != -1) {
             Class124 class124_2_

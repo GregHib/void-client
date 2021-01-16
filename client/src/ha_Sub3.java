@@ -1534,7 +1534,7 @@ abstract class ha_Sub3 extends ha {
         try {
             method3925(-96, anInterface5_Impl1_8193, 0);
             anInt8067++;
-            method3862(i_98_ ^ i_98_, aClass130_8197);
+            method3862(0, aClass130_8197);
             method3899(i, 0, class21, true);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

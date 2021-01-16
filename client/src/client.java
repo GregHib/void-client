@@ -169,7 +169,7 @@ public final class client extends Applet_Sub1 {
                 = new Class112(Class348_Sub23_Sub1.aClass297_8992);
         Class348_Sub4.aClass248_6601 = new Class248();
         Class348_Sub42_Sub12.method3230(new int[]{20, 260},
-                new int[]{1000, 100}, i ^ i);
+                new int[]{1000, 100}, 0);
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271)
             Class308.aByteArrayArray3882 = new byte[50][];
         Class316.aClass348_Sub51_3959 = Class14_Sub3.method247(24916);

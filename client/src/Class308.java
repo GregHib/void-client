@@ -68,7 +68,7 @@ final class Class308 {
     final void method2305(long l, Class348_Sub42 class348_sub42, int i) {
         try {
             anInt3881++;
-            if ((anInt3891 ^ 0xffffffff) == i) {
+            if ((~anInt3891) == i) {
                 Class348_Sub42 class348_sub42_0_
                         = aClass107_3889.method1008(20);
                 class348_sub42_0_.method2715((byte) 113);

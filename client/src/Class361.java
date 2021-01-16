@@ -33,7 +33,7 @@ final class Class361 {
         this.anIntArrayArray4438[i_1_][i_2_]
                 = Class139.method1166((this.anIntArrayArray4438[i_1_]
                         [i_2_]),
-                i ^ 0xffffffff);
+                ~i);
         if (i_0_ > -120)
             method3509(-18, true, false, 122, 119, -54, 18, -57);
         anInt4452++;

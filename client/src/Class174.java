@@ -154,7 +154,7 @@ final class Class174 {
                 + (l * l - -(l_11_ * l_11_))));
         if (this.anInt2304 == 0)
             this.anInt2304 = 1;
-        if ((this.anInt2289 ^ 0xffffffff) != i) {
+        if ((~this.anInt2289) != i) {
             if (this.anInt2289 == 1) {
                 this.aLong2301
                         = this.anInt2299 * 8

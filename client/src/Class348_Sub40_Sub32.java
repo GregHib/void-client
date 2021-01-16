@@ -61,7 +61,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
 
     static final void method3134(int i) {
         anInt9419++;
-        if ((Class286_Sub5.anInt6248 ^ 0xffffffff) <= i) {
+        if ((~Class286_Sub5.anInt6248) <= i) {
             long l = Class62.method599(i ^ 0x3c);
             Class286_Sub5.anInt6248 -= -Class348_Sub33.aLong6963 + l;
             if (Class286_Sub5.anInt6248 > 0) {

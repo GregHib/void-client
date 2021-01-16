@@ -341,7 +341,7 @@ final class Class263 {
         }
         anInt3356++;
         synchronized (this.aClass60_3360) {
-            this.aClass60_3360.method590(i ^ i);
+            this.aClass60_3360.method590(0);
         }
         synchronized (this.aClass60_3361) {
             this.aClass60_3361.method590(0);

@@ -51,7 +51,7 @@ final class Class26 {
 
     final Class348_Sub19_Sub1 method308(int i, int[] is, int i_3_) {
         anInt373++;
-        if ((aClass45_379.method414(-1) ^ 0xffffffff) == i_3_)
+        if ((~aClass45_379.method414(-1)) == i_3_)
             return method307(i, is, 122, 0);
         if (aClass45_379.method407(0, i) == 1)
             return method307(0, is, 69, i);

@@ -98,7 +98,7 @@ final class Class166 {
 
     static final void method1288(int i, int i_2_) {
         anInt2186++;
-        for (Class348 class348 = Class226.aClass356_2959.method3484(i ^ i);
+        for (Class348 class348 = Class226.aClass356_2959.method3484(0);
              class348 != null;
              class348 = Class226.aClass356_2959.method3482(0)) {
             if ((class348.aLong4291 >> 275343216 & 0xffffL)

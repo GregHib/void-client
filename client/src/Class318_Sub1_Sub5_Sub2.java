@@ -252,7 +252,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
             OpenGL.glLinkProgramARB(l);
             OpenGL.glGetObjectParameterivARB(l, 35714, Class187.anIntArray2509,
                     0);
-            if ((Class187.anIntArray2509[0] ^ 0xffffffff) == i) {
+            if ((~Class187.anIntArray2509[0]) == i) {
                 if (Class187.anIntArray2509[0] == 0)
                     System.out.println("Shader linking failed:");
                 OpenGL.glGetObjectParameterivARB(l, 35716,

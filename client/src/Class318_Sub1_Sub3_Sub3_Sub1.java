@@ -188,7 +188,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
                     .anInt245) == 1)
                 this.anInt10291 = -1;
         }
-        if ((this.anInt10319 ^ 0xffffffff) > i_16_)
+        if ((~this.anInt10319) > i_16_)
             this.anInt10319++;
         for (int i_19_ = this.anInt10319;
              i_19_ > 0; i_19_--) {

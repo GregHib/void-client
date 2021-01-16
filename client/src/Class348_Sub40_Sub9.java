@@ -62,7 +62,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
     final int[] method3042(int i, int i_5_) {
         anInt9166++;
         int[] is
-                = this.aClass191_7032.method1433(i_5_ ^ i_5_,
+                = this.aClass191_7032.method1433(0,
                 i);
         if (this.aClass191_7032.aBoolean2570) {
             int[] is_6_ = this.method3048(Class299_Sub2.anInt6325 & -1 + i,

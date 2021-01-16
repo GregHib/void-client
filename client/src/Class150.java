@@ -51,7 +51,7 @@ final class Class150 {
         class34 = new Class34();
         class34.aClass150_475 = this;
         if (is != null)
-            class34.method346(i ^ 0xffffffff, new Class348_Sub49(is));
+            class34.method346(~i, new Class348_Sub49(is));
         synchronized (aClass60_2050) {
             aClass60_2050.method582(class34, i_3_, (byte) -109);
         }

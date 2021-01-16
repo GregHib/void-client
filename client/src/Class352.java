@@ -35,7 +35,7 @@ final class Class352 {
                     (class348_sub34
                             .anInt6973));
             int i_3_ = class213.anInt2819;
-            if (i_2_ == (class213.anInt2820 ^ 0xffffffff))
+            if (i_2_ == (~class213.anInt2820))
                 i_3_ *= 1 + class348_sub34.anInt6971;
             for (Class348_Sub34 class348_sub34_4_
                  = (Class348_Sub34) class348_sub37

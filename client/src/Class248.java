@@ -487,7 +487,7 @@ final class Class248 {
                 aClass348_Sub49_3208.method3340(-9912, 0);
                 aClass202_3209.method1470((aClass348_Sub49_3208
                                 .aByteArray7154),
-                        4, 0, i ^ 0xffffffff);
+                        4, 0, ~i);
             } catch (IOException ioexception) {
                 try {
                     aClass202_3209.method1476((byte) -125);

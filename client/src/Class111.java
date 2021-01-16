@@ -65,7 +65,7 @@ final class Class111 {
         if (!aBooleanArray1725[i]
                 || anIntArrayArray1724[i].length <= 1)
             return anIntArrayArray1724[i];
-        int i_9_ = i_8_ == (anInt1715 ^ 0xffffffff) ? 0 : 1;
+        int i_9_ = i_8_ == (~anInt1715) ? 0 : 1;
         Random random = new Random();
         int[] is = new int[anIntArrayArray1724[i].length];
         Class214.method1578(anIntArrayArray1724[i], 0, is, 0, is.length);

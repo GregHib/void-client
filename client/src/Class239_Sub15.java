@@ -88,7 +88,7 @@ final class Class239_Sub15 extends Class239 {
         anInt5998++;
         int i_7_ = -i_3_ + i_4_;
         int i_8_ = i_5_ + -i;
-        if ((i_8_ ^ 0xffffffff) != i_2_) {
+        if ((~i_8_) != i_2_) {
             if (i_7_ == 0) {
                 Class12.method223(i_5_, i_6_, i_3_, i, (byte) 47);
                 return;

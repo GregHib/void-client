@@ -1104,7 +1104,7 @@ public final class Class378 extends ha_Sub3 {
                         (this.anInt8175 + 16,
                                 this.aClass101_Sub2Array8131
                                         [this.anInt8175]
-                                        .method928(aFloatArray9797, i ^ 0x0));
+                                        .method928(aFloatArray9797, i));
             else
                 this.anIDirect3DDevice9810.SetTransform
                         (16 - -this.anInt8175,

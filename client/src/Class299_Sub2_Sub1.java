@@ -127,7 +127,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
     static final void method2271(int i) {
         anInt8710++;
         if (!Class55_Sub1.aBoolean5265) {
-            Class152.method1217(i ^ i, Class65.aClass357ArrayArrayArray1148);
+            Class152.method1217(0, Class65.aClass357ArrayArrayArray1148);
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null)
                 Class152.method1217(0, (Class348_Sub31_Sub2
                         .aClass357ArrayArrayArray9082));

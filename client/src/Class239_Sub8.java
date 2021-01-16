@@ -149,7 +149,7 @@ final class Class239_Sub8 extends Class239 {
     static final void method1750(int i, int i_6_) {
         anInt5912++;
         Class348_Sub42_Sub1.anInt9488 = i_6_;
-        Class202.aClass60_2671.method590(i ^ i);
+        Class202.aClass60_2671.method590(0);
     }
 
     final int method1751(int i) {

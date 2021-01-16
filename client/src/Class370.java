@@ -68,7 +68,7 @@ final class Class370 {
                     }
                     i_15_ >>>= 1;
                 }
-                anIntArray4519[i_13_] = i_10_ ^ 0xffffffff;
+                anIntArray4519[i_13_] = ~i_10_;
                 if (i_13_ >= i)
                     i = i_13_ + 1;
             }
@@ -91,7 +91,7 @@ final class Class370 {
                      : i + 1)) {
             /* empty */
         }
-        return anIntArray4519[i] ^ 0xffffffff;
+        return ~anIntArray4519[i];
     }
 
     final float[] method3582() {

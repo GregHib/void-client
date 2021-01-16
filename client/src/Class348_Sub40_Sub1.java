@@ -82,7 +82,7 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
         i_4_ |= i_4_ >>> -1143561660;
         i_4_ |= i_4_ >>> -441538616;
         i_4_ |= i_4_ >>> 63462768;
-        return (i_4_ ^ 0xffffffff) & i;
+        return (~i_4_) & i;
     }
 
     final int[][] method3047(int i, int i_5_) {

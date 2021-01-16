@@ -18,7 +18,7 @@ final class Class149 {
         anInt2044++;
         if (i_2_ == 0)
             return i_0_;
-        if ((i_2_ ^ 0xffffffff) == i_1_)
+        if ((~i_2_) == i_1_)
             return i;
         if (i_2_ == 2)
             return -i_0_ + 4095;

@@ -91,7 +91,7 @@ final class Class319 {
     final void method2546(int i) {
         anInt3984++;
         synchronized (aClass60_3989) {
-            aClass60_3989.method590(i ^ i);
+            aClass60_3989.method590(0);
         }
         synchronized (this.aClass60_3990) {
             this.aClass60_3990.method590(0);

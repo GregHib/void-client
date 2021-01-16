@@ -115,7 +115,7 @@ final class Class239_Sub3 extends Class239 {
         int i_22_ = i & 0xff;
         if (i_22_ == 0)
             return false;
-        return i_21_ < (i_22_ ^ 0xffffffff) || i_22_ >= 160
+        return i_21_ < (~i_22_) || i_22_ >= 160
                 || Class44.aCharArray625[i_22_ + -128] != 0;
     }
 
