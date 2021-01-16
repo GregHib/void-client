@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub48 extends Class348
-{
+final class Class348_Sub48 extends Class348 {
     int anInt7126;
     Class144[] aClass144Array7127;
     byte[][][] aByteArrayArrayArray7128;
@@ -15,12 +14,12 @@ final class Class348_Sub48 extends Class348
     static int anInt7134;
     Class144[] aClass144Array7135;
     int[] anIntArray7136;
-    
+
     static final void method3328(Class324 class324) {
-	Class362.aClass324_4456 = class324;
+        Class362.aClass324_4456 = class324;
     }
-    
+
     public Class348_Sub48() {
-	/* empty */
+        /* empty */
     }
 }

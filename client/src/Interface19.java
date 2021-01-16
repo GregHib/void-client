@@ -2,7 +2,6 @@
  * Visit http://jode.sourceforge.net/
  */
 
-interface Interface19
-{
+interface Interface19 {
     public void w(boolean bool);
 }

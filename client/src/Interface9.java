@@ -2,7 +2,6 @@
  * Visit http://jode.sourceforge.net/
  */
 
-interface Interface9
-{
+interface Interface9 {
     public void method37(int i);
 }

@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub36 extends Class348
-{
+final class Class348_Sub36 extends Class348 {
     int anInt6982;
     Class46 aClass46_6983;
     int anInt6984;
@@ -18,17 +17,17 @@ final class Class348_Sub36 extends Class348
     boolean aBoolean6993;
     String aString6994;
     int anInt6995;
-    
+
     public static void method3029(int i) {
-	aClass46_6990 = null;
-	int i_0_ = 28 % ((i - -45) / 39);
+        aClass46_6990 = null;
+        int i_0_ = 28 % ((i - -45) / 39);
     }
-    
+
     public Class348_Sub36() {
-	/* empty */
+        /* empty */
     }
-    
+
     static {
-	anInt6985 = 999999;
+        anInt6985 = 999999;
     }
 }

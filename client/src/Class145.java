@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class145
-{
+final class Class145 {
     int[] anIntArray2001;
     short[] aShortArray2002;
     short aShort2003;
@@ -15,8 +14,8 @@ final class Class145
     short[] aShortArray2009;
     short aShort2010;
     int[] anIntArray2011;
-    
+
     public Class145() {
-	/* empty */
+        /* empty */
     }
 }

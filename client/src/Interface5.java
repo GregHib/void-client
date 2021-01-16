@@ -2,7 +2,6 @@
  * Visit http://jode.sourceforge.net/
  */
 
-interface Interface5
-{
+interface Interface5 {
     public int method16(boolean bool);
 }

@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class23
-{
+final class Class23 {
     byte[] aByteArray344;
     int anInt345;
     int anInt346;
@@ -14,8 +13,8 @@ final class Class23
     static boolean aBoolean351 = true;
     int anInt352;
     int anInt353;
-    
+
     public Class23() {
-	/* empty */
+        /* empty */
     }
 }

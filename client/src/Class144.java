@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public class Class144
-{
+public class Class144 {
     int anInt1994;
     Class144 aClass144_1995;
     Object anObject1996;

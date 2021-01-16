@@ -2,8 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class198
-{
+final class Class198 {
     short[] aShortArray2613;
     short[] aShortArray2614;
     int[] anIntArray2615;
@@ -15,8 +14,8 @@ final class Class198
     short[] aShortArray2621;
     short[] aShortArray2622;
     int[] anIntArray2623;
-    
+
     public Class198() {
-	/* empty */
+        /* empty */
     }
 }
