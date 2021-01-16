@@ -117,18 +117,16 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                                         + i_12_ * i_12_)
                                                         >> 1735086860);
                                                 break while_136_;
-                                            } else {
-                                                if (i_14_ != 3) {
-                                                    if (i_14_ != 4) {
-                                                        if (i_14_ != 5) {
-                                                            if (i_14_ == 2)
-                                                                break while_134_;
-                                                            break while_135_;
-                                                        }
-                                                    } else
-                                                        break;
-                                                    break while_133_;
-                                                }
+                                            } else if (i_14_ != 3) {
+                                                if (i_14_ != 4) {
+                                                    if (i_14_ != 5) {
+                                                        if (i_14_ == 2)
+                                                            break while_134_;
+                                                        break while_135_;
+                                                    }
+                                                } else
+                                                    break;
+                                                break while_133_;
                                             }
                                             i_12_ = i_12_ < 0 ? -i_12_ : i_12_;
                                             i_13_ = (i_13_ < 0
@@ -209,18 +207,16 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                             if (i_16_ == 0) {
                                 is[i_4_] = Class348_Sub42_Sub20.anInt9715;
                                 continue while_140_;
-                            } else {
-                                if (i_16_ != 1) {
-                                    if (i_16_ != 3) {
-                                        if (i_16_ != 4) {
-                                            if (i_16_ == 2)
-                                                break while_138_;
-                                            continue while_140_;
-                                        }
-                                    } else
-                                        break;
-                                    break while_137_;
-                                }
+                            } else if (i_16_ != 1) {
+                                if (i_16_ != 3) {
+                                    if (i_16_ != 4) {
+                                        if (i_16_ == 2)
+                                            break while_138_;
+                                        continue while_140_;
+                                    }
+                                } else
+                                    break;
+                                break while_137_;
                             }
                             is[i_4_] = Class215.anInt2835;
                             continue while_140_;
@@ -257,24 +253,22 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                                 = class348_sub49
                                                 .method3387(i_17_ ^ 0x79d8);
                                         break while_145_;
-                                    } else {
-                                        if (i_18_ != 1) {
-                                            if (i_18_ != 2) {
-                                                if (i_18_ != 3) {
-                                                    if (i_18_ != 4) {
-                                                        if (i_18_ != 5) {
-                                                            if (i_18_ == 6)
-                                                                break while_144_;
-                                                            break while_145_;
-                                                        }
-                                                    } else
-                                                        break while_142_;
-                                                    break while_143_;
-                                                }
-                                            } else
-                                                break;
-                                            break while_141_;
-                                        }
+                                    } else if (i_18_ != 1) {
+                                        if (i_18_ != 2) {
+                                            if (i_18_ != 3) {
+                                                if (i_18_ != 4) {
+                                                    if (i_18_ != 5) {
+                                                        if (i_18_ == 6)
+                                                            break while_144_;
+                                                        break while_145_;
+                                                    }
+                                                } else
+                                                    break while_142_;
+                                                break while_143_;
+                                            }
+                                        } else
+                                            break;
+                                        break while_141_;
                                     }
                                     anInt9122
                                             = class348_sub49

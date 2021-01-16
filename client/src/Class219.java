@@ -287,24 +287,22 @@ final class Class219 {
                                     class318_sub1_sub3_sub3
                                             .anInt10325
                                             /= 2;
-                            } else {
-                        if (i_7_ <= class318_sub1_sub3_sub3.anInt10325) {
-                            if (class318_sub1_sub3_sub3.anInt10325
-                                    > 0) {
+                            } else if (i_7_ <= class318_sub1_sub3_sub3.anInt10325) {
+                        if (class318_sub1_sub3_sub3.anInt10325
+                                > 0) {
+                            class318_sub1_sub3_sub3.anInt10325
+                                    -= class225.anInt2945;
+                            if (class318_sub1_sub3_sub3.anInt10325 < 0)
                                 class318_sub1_sub3_sub3.anInt10325
-                                        -= class225.anInt2945;
-                                if (class318_sub1_sub3_sub3.anInt10325 < 0)
-                                    class318_sub1_sub3_sub3.anInt10325
-                                            = 0;
-                            }
-                        } else {
-                            class318_sub1_sub3_sub3
-                                    .anInt10325
-                                    += class225.anInt2945;
-                            if (i_7_ < class318_sub1_sub3_sub3.anInt10325)
-                                class318_sub1_sub3_sub3.anInt10325
-                                        = i_7_;
+                                        = 0;
                         }
+                    } else {
+                        class318_sub1_sub3_sub3
+                                .anInt10325
+                                += class225.anInt2945;
+                        if (i_7_ < class318_sub1_sub3_sub3.anInt10325)
+                            class318_sub1_sub3_sub3.anInt10325
+                                    = i_7_;
                     }
                     i_7_ = (class318_sub1_sub3_sub3
                             .anInt10325) >> -961523191;

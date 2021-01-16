@@ -32,22 +32,20 @@ final class Class189 {
                     = 1 + class348_sub49.method3330(842397944);
             this.anInt2530
                     = class348_sub49.method3330(842397944) - -1;
-        } else {
-            if (i != 3) {
-                if (i == 4)
-                    this.anInt2534
-                            = class348_sub49.method3387(255);
-                else if (i != 5) {
-                    if (i == 6)
-                        this.aBoolean2522 = true;
-                    else if (i == 7)
-                        this.aBoolean2531 = true;
-                } else
-                    this.anInt2533
-                            = class348_sub49.method3387(255);
+        } else if (i != 3) {
+            if (i == 4)
+                this.anInt2534
+                        = class348_sub49.method3387(255);
+            else if (i != 5) {
+                if (i == 6)
+                    this.aBoolean2522 = true;
+                else if (i == 7)
+                    this.aBoolean2531 = true;
             } else
-                class348_sub49.method3388(-106);
-        }
+                this.anInt2533
+                        = class348_sub49.method3387(255);
+        } else
+            class348_sub49.method3388(-106);
     }
 
     final void method1419(int i, Class348_Sub49 class348_sub49, byte i_2_) {
@@ -107,20 +105,18 @@ final class Class189 {
                                         return true;
                                     }
                                     break while_48_;
-                                } else {
-                                    if (i_25_ != -3) {
-                                        if (i_25_ != -2) {
-                                            if (i_25_ != -1) {
-                                                if (i_25_ == 0 || i_25_ == 1
-                                                        || i_25_ == 2 || i_25_ == 3
-                                                        || i_25_ == 9)
-                                                    break while_46_;
-                                                break while_47_;
-                                            }
-                                        } else
-                                            break;
-                                        break while_45_;
-                                    }
+                                } else if (i_25_ != -3) {
+                                    if (i_25_ != -2) {
+                                        if (i_25_ != -1) {
+                                            if (i_25_ == 0 || i_25_ == 1
+                                                    || i_25_ == 2 || i_25_ == 3
+                                                    || i_25_ == 9)
+                                                break while_46_;
+                                            break while_47_;
+                                        }
+                                    } else
+                                        break;
+                                    break while_45_;
                                 }
                                 if (Class239_Sub28.method1842(i, i_14_, -1,
                                         i_12_, i_15_,

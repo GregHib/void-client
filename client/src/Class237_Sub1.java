@@ -286,20 +286,18 @@ final class Class237_Sub1 extends Class237 {
                                             (1 + i, -class51.anInt953,
                                                     class51.anInt909, i_5_,
                                                     i_3_ + -51, i_0_, 1);
-                            } else {
-                                if (i_7_ == 3) {
-                                    if (Class348_Sub42_Sub3.aBoolean9498
-                                            && class51.aBoolean918) {
-                                        var_s.ka(i, i_5_, 50);
-                                        var_s.ka(1 + i, i_5_, 50);
-                                    }
-                                    if (i_22_ == 1
-                                            && !this.aBoolean3109)
-                                        Class239_Sub21.method1810
-                                                (i, class51.anInt953,
-                                                        class51.anInt909,
-                                                        i_5_, -1, i_0_, 2);
+                            } else if (i_7_ == 3) {
+                                if (Class348_Sub42_Sub3.aBoolean9498
+                                        && class51.aBoolean918) {
+                                    var_s.ka(i, i_5_, 50);
+                                    var_s.ka(1 + i, i_5_, 50);
                                 }
+                                if (i_22_ == 1
+                                        && !this.aBoolean3109)
+                                    Class239_Sub21.method1810
+                                            (i, class51.anInt953,
+                                                    class51.anInt909,
+                                                    i_5_, -1, i_0_, 2);
                             }
                             if (class51.anInt920 != 0
                                     && class361 != null)
@@ -412,48 +410,42 @@ final class Class237_Sub1 extends Class237 {
                                             (i, class51.anInt953,
                                                     class51.anInt909,
                                                     1 + i_5_, -1, i_0_, 2);
-                                } else {
-                                    if (i_7_ == 1) {
-                                        Class239_Sub21.method1810
-                                                (1 + i,
-                                                        class51.anInt953,
-                                                        class51.anInt909,
-                                                        i_5_, -1, i_0_, 1);
-                                        Class239_Sub21.method1810
-                                                (i, class51.anInt953,
-                                                        class51.anInt909,
-                                                        i_5_ + 1, -1, i_0_, 2);
-                                    } else {
-                                        if (i_7_ == 2) {
-                                            Class239_Sub21.method1810
-                                                    (1 + i,
-                                                            class51.anInt953,
-                                                            class51.anInt909,
-                                                            i_5_, -1, i_0_, 1);
-                                            Class239_Sub21.method1810
-                                                    (i,
-                                                            class51.anInt953,
-                                                            class51.anInt909,
-                                                            i_5_, -1, i_0_, 2);
-                                        } else {
-                                            if (i_7_ == 3) {
-                                                Class239_Sub21.method1810
-                                                        (i,
-                                                                (class51
-                                                                        .anInt953),
-                                                                (class51
-                                                                        .anInt909),
-                                                                i_5_, -1, i_0_, 1);
-                                                Class239_Sub21.method1810
-                                                        (i,
-                                                                (class51
-                                                                        .anInt953),
-                                                                (class51
-                                                                        .anInt909),
-                                                                i_5_, -1, i_0_, 2);
-                                            }
-                                        }
-                                    }
+                                } else if (i_7_ == 1) {
+                                    Class239_Sub21.method1810
+                                            (1 + i,
+                                                    class51.anInt953,
+                                                    class51.anInt909,
+                                                    i_5_, -1, i_0_, 1);
+                                    Class239_Sub21.method1810
+                                            (i, class51.anInt953,
+                                                    class51.anInt909,
+                                                    i_5_ + 1, -1, i_0_, 2);
+                                } else if (i_7_ == 2) {
+                                    Class239_Sub21.method1810
+                                            (1 + i,
+                                                    class51.anInt953,
+                                                    class51.anInt909,
+                                                    i_5_, -1, i_0_, 1);
+                                    Class239_Sub21.method1810
+                                            (i,
+                                                    class51.anInt953,
+                                                    class51.anInt909,
+                                                    i_5_, -1, i_0_, 2);
+                                } else if (i_7_ == 3) {
+                                    Class239_Sub21.method1810
+                                            (i,
+                                                    (class51
+                                                            .anInt953),
+                                                    (class51
+                                                            .anInt909),
+                                                    i_5_, -1, i_0_, 1);
+                                    Class239_Sub21.method1810
+                                            (i,
+                                                    (class51
+                                                            .anInt953),
+                                                    (class51
+                                                            .anInt909),
+                                                    i_5_, -1, i_0_, 2);
                                 }
                             }
                             if ((class51.anInt920 != 0)
@@ -859,209 +851,205 @@ final class Class237_Sub1 extends Class237 {
                                     }
                                 }
                             }
-                        } else {
-                            if (i_42_ == 2) {
-                                if (class190 == null)
-                                    class190 = new Class190();
-                                class190.method1423(8, class348_sub49);
-                            } else if (i_42_ != 128) {
-                                if (i_42_ == 129) {
-                                    if ((this
-                                            .aByteArrayArrayArray3104)
-                                            == null)
-                                        this
-                                                .aByteArrayArrayArray3104
-                                                = new byte[4][][];
-                                    for (int i_43_ = 0;
-                                         i_43_ < 4; i_43_++) {
-                                        byte i_44_
-                                                = class348_sub49.method3388(-102);
-                                        if (i_44_ != 0
-                                                || (this
-                                                .aByteArrayArrayArray3104
-                                                [i_43_]) == null) {
-                                            if (i_44_ == 1) {
-                                                if ((this
+                        } else if (i_42_ == 2) {
+                            if (class190 == null)
+                                class190 = new Class190();
+                            class190.method1423(8, class348_sub49);
+                        } else if (i_42_ != 128) {
+                            if (i_42_ == 129) {
+                                if ((this
+                                        .aByteArrayArrayArray3104)
+                                        == null)
+                                    this
+                                            .aByteArrayArrayArray3104
+                                            = new byte[4][][];
+                                for (int i_43_ = 0;
+                                     i_43_ < 4; i_43_++) {
+                                    byte i_44_
+                                            = class348_sub49.method3388(-102);
+                                    if (i_44_ != 0
+                                            || (this
+                                            .aByteArrayArrayArray3104
+                                            [i_43_]) == null) {
+                                        if (i_44_ == 1) {
+                                            if ((this
+                                                    .aByteArrayArrayArray3104
+                                                    [i_43_])
+                                                    == null)
+                                                this
                                                         .aByteArrayArrayArray3104
-                                                        [i_43_])
-                                                        == null)
-                                                    this
-                                                            .aByteArrayArrayArray3104
-                                                            [i_43_]
-                                                            = (new byte
-                                                            [1 + (this
-                                                            .anInt3117)]
-                                                            [1 + (this
-                                                            .anInt3114)]);
-                                                for (int i_49_ = 0;
-                                                     (i_49_ < 64);
-                                                     i_49_ += 4) {
-                                                    for (int i_50_ = 0;
-                                                         (i_50_ < 64);
-                                                         i_50_ += 4) {
-                                                        byte i_51_
-                                                                = (class348_sub49
-                                                                .method3388
-                                                                        (-103));
-                                                        for (int i_52_
-                                                             = (i_49_
-                                                                + i_39_);
-                                                             (i_52_ < (4 + i_49_
-                                                                     + i_39_));
-                                                             i_52_++) {
-                                                            for (int i_53_
-                                                                 = i + i_50_;
-                                                                 ((4 + i
-                                                                         + i_50_) > i_53_);
-                                                                 i_53_++) {
-                                                                if (i_52_ >= 0
-                                                                        && (this.anInt3117 > i_52_)
-                                                                        && (i_53_
-                                                                        >= 0)
-                                                                        && (i_53_
-                                                                        < (this
-                                                                        .anInt3114)))
-                                                                    this
-                                                                            .aByteArrayArrayArray3104
-                                                                            [i_43_]
-                                                                            [i_52_]
-                                                                            [i_53_]
-                                                                            = i_51_;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            } else {
-                                                if (i_44_ == 2) {
-                                                    if ((this
-                                                            .aByteArrayArrayArray3104
-                                                            [i_43_])
-                                                            == null)
-                                                        this
-                                                                .aByteArrayArrayArray3104
-                                                                [i_43_]
-                                                                = (new byte
-                                                                [((this
-                                                                .anInt3117)
-                                                                - -1)]
-                                                                [((this
-                                                                .anInt3114)
-                                                                + 1)]);
-                                                    if (i_43_ > 0) {
-                                                        int i_45_ = i_39_;
-                                                        int i_46_ = 64 + i_39_;
-                                                        int i_47_ = i;
-                                                        if (i_46_ >= 0) {
-                                                            if ((this
-                                                                    .anInt3117)
-                                                                    <= i_46_)
-                                                                i_46_
-                                                                        = (this
-                                                                        .anInt3117);
-                                                        } else
-                                                            i_46_ = 0;
-                                                        if (i_47_ < 0)
-                                                            i_47_ = 0;
-                                                        else if ((this
-                                                                .anInt3114)
-                                                                <= i_47_)
-                                                            i_47_
-                                                                    = (this
-                                                                    .anInt3114);
-                                                        int i_48_ = 64 + i;
-                                                        if (i_45_ >= 0) {
-                                                            if ((this
-                                                                    .anInt3117) <= i_45_)
-                                                                i_45_
-                                                                        = (this
-                                                                        .anInt3117);
-                                                        } else
-                                                            i_45_ = 0;
-                                                        if (i_48_ >= 0) {
-                                                            if (i_48_
-                                                                    >= (this
-                                                                    .anInt3114))
-                                                                i_48_
-                                                                        = (this
-                                                                        .anInt3114);
-                                                        } else
-                                                            i_48_ = 0;
-                                                        for (/**/;
-                                                                 (i_46_ > i_45_);
-                                                                 i_45_++) {
-                                                            for (/**/;
-                                                                     (i_48_ > i_47_);
-                                                                     i_47_++)
+                                                        [i_43_]
+                                                        = (new byte
+                                                        [1 + (this
+                                                        .anInt3117)]
+                                                        [1 + (this
+                                                        .anInt3114)]);
+                                            for (int i_49_ = 0;
+                                                 (i_49_ < 64);
+                                                 i_49_ += 4) {
+                                                for (int i_50_ = 0;
+                                                     (i_50_ < 64);
+                                                     i_50_ += 4) {
+                                                    byte i_51_
+                                                            = (class348_sub49
+                                                            .method3388
+                                                                    (-103));
+                                                    for (int i_52_
+                                                         = (i_49_
+                                                            + i_39_);
+                                                         (i_52_ < (4 + i_49_
+                                                                 + i_39_));
+                                                         i_52_++) {
+                                                        for (int i_53_
+                                                             = i + i_50_;
+                                                             ((4 + i
+                                                                     + i_50_) > i_53_);
+                                                             i_53_++) {
+                                                            if (i_52_ >= 0
+                                                                    && (this.anInt3117 > i_52_)
+                                                                    && (i_53_
+                                                                    >= 0)
+                                                                    && (i_53_
+                                                                    < (this
+                                                                    .anInt3114)))
                                                                 this
                                                                         .aByteArrayArrayArray3104
                                                                         [i_43_]
-                                                                        [i_45_]
-                                                                        [i_47_]
-                                                                        = (this
-                                                                        .aByteArrayArrayArray3104
-                                                                        [(-1
-                                                                        + i_43_)]
-                                                                        [i_45_]
-                                                                        [i_47_]);
+                                                                        [i_52_]
+                                                                        [i_53_]
+                                                                        = i_51_;
                                                         }
                                                     }
                                                 }
                                             }
-                                        } else {
-                                            int i_54_ = i_39_;
-                                            int i_55_ = i_39_ - -64;
-                                            int i_56_ = i;
-                                            if (i_56_ < 0)
-                                                i_56_ = 0;
-                                            else if ((this
-                                                    .anInt3114) <= i_56_)
-                                                i_56_ = (this
-                                                        .anInt3114);
-                                            if (i_54_ >= 0) {
-                                                if ((this
-                                                        .anInt3117) <= i_54_)
-                                                    i_54_ = (this
-                                                            .anInt3117);
-                                            } else
-                                                i_54_ = 0;
-                                            int i_57_ = i - -64;
-                                            if (i_55_ < 0)
-                                                i_55_ = 0;
-                                            else if (i_55_
-                                                    >= (this
-                                                    .anInt3117))
-                                                i_55_ = (this
-                                                        .anInt3117);
-                                            if (i_57_ < 0)
-                                                i_57_ = 0;
-                                            else if ((this
-                                                    .anInt3114) <= i_57_)
-                                                i_57_ = (this
-                                                        .anInt3114);
-                                            for (/**/; i_54_ < i_55_;
-                                                     i_54_++) {
-                                                for (/**/; i_57_ > i_56_;
-                                                         i_56_++)
-                                                    this
-                                                            .aByteArrayArrayArray3104
-                                                            [i_43_][i_54_][i_56_]
-                                                            = (byte) 0;
+                                        } else if (i_44_ == 2) {
+                                            if ((this
+                                                    .aByteArrayArrayArray3104
+                                                    [i_43_])
+                                                    == null)
+                                                this
+                                                        .aByteArrayArrayArray3104
+                                                        [i_43_]
+                                                        = (new byte
+                                                        [((this
+                                                        .anInt3117)
+                                                        - -1)]
+                                                        [((this
+                                                        .anInt3114)
+                                                        + 1)]);
+                                            if (i_43_ > 0) {
+                                                int i_45_ = i_39_;
+                                                int i_46_ = 64 + i_39_;
+                                                int i_47_ = i;
+                                                if (i_46_ >= 0) {
+                                                    if ((this
+                                                            .anInt3117)
+                                                            <= i_46_)
+                                                        i_46_
+                                                                = (this
+                                                                .anInt3117);
+                                                } else
+                                                    i_46_ = 0;
+                                                if (i_47_ < 0)
+                                                    i_47_ = 0;
+                                                else if ((this
+                                                        .anInt3114)
+                                                        <= i_47_)
+                                                    i_47_
+                                                            = (this
+                                                            .anInt3114);
+                                                int i_48_ = 64 + i;
+                                                if (i_45_ >= 0) {
+                                                    if ((this
+                                                            .anInt3117) <= i_45_)
+                                                        i_45_
+                                                                = (this
+                                                                .anInt3117);
+                                                } else
+                                                    i_45_ = 0;
+                                                if (i_48_ >= 0) {
+                                                    if (i_48_
+                                                            >= (this
+                                                            .anInt3114))
+                                                        i_48_
+                                                                = (this
+                                                                .anInt3114);
+                                                } else
+                                                    i_48_ = 0;
+                                                for (/**/;
+                                                         (i_46_ > i_45_);
+                                                         i_45_++) {
+                                                    for (/**/;
+                                                             (i_48_ > i_47_);
+                                                             i_47_++)
+                                                        this
+                                                                .aByteArrayArrayArray3104
+                                                                [i_43_]
+                                                                [i_45_]
+                                                                [i_47_]
+                                                                = (this
+                                                                .aByteArrayArrayArray3104
+                                                                [(-1
+                                                                + i_43_)]
+                                                                [i_45_]
+                                                                [i_47_]);
+                                                }
                                             }
                                         }
+                                    } else {
+                                        int i_54_ = i_39_;
+                                        int i_55_ = i_39_ - -64;
+                                        int i_56_ = i;
+                                        if (i_56_ < 0)
+                                            i_56_ = 0;
+                                        else if ((this
+                                                .anInt3114) <= i_56_)
+                                            i_56_ = (this
+                                                    .anInt3114);
+                                        if (i_54_ >= 0) {
+                                            if ((this
+                                                    .anInt3117) <= i_54_)
+                                                i_54_ = (this
+                                                        .anInt3117);
+                                        } else
+                                            i_54_ = 0;
+                                        int i_57_ = i - -64;
+                                        if (i_55_ < 0)
+                                            i_55_ = 0;
+                                        else if (i_55_
+                                                >= (this
+                                                .anInt3117))
+                                            i_55_ = (this
+                                                    .anInt3117);
+                                        if (i_57_ < 0)
+                                            i_57_ = 0;
+                                        else if ((this
+                                                .anInt3114) <= i_57_)
+                                            i_57_ = (this
+                                                    .anInt3114);
+                                        for (/**/; i_54_ < i_55_;
+                                                 i_54_++) {
+                                            for (/**/; i_57_ > i_56_;
+                                                     i_56_++)
+                                                this
+                                                        .aByteArrayArrayArray3104
+                                                        [i_43_][i_54_][i_56_]
+                                                        = (byte) 0;
+                                        }
                                     }
-                                    bool = true;
-                                } else
-                                    throw new IllegalStateException("");
-                            } else if (is != null) {
-                                is[0] = class348_sub49.method3330(842397944);
-                                is[1] = class348_sub49.method3372(13638);
-                                is[2] = class348_sub49.method3372(13638);
-                                is[3] = class348_sub49.method3372(13638);
-                                is[4] = class348_sub49.method3330(842397944);
+                                }
+                                bool = true;
                             } else
-                                class348_sub49.anInt7197
-                                        += 10;
-                        }
+                                throw new IllegalStateException("");
+                        } else if (is != null) {
+                            is[0] = class348_sub49.method3330(842397944);
+                            is[1] = class348_sub49.method3372(13638);
+                            is[2] = class348_sub49.method3372(13638);
+                            is[3] = class348_sub49.method3372(13638);
+                            is[4] = class348_sub49.method3330(842397944);
+                        } else
+                            class348_sub49.anInt7197
+                                    += 10;
                     }
                     if (class190 != null) {
                         for (int i_64_ = 0; i_64_ < 8; i_64_++) {
@@ -1251,23 +1239,21 @@ final class Class237_Sub1 extends Class237 {
                                 Class348_Sub23_Sub4.method2987(i_93_, 1, i_95_,
                                         -3951, i_94_);
                                 break;
-                            } else {
-                                if (i_98_ != 1) {
-                                    if (i_98_ != 2) {
-                                        if (i_98_ == 3)
-                                            Class348_Sub23_Sub4.method2987
-                                                    (i_93_, 2, i_95_, -3951,
-                                                            i_94_);
-                                    } else
+                            } else if (i_98_ != 1) {
+                                if (i_98_ != 2) {
+                                    if (i_98_ == 3)
                                         Class348_Sub23_Sub4.method2987
-                                                (i_93_, 1, i_95_, -3951,
-                                                        1 + i_94_);
+                                                (i_93_, 2, i_95_, -3951,
+                                                        i_94_);
                                 } else
-                                    Class348_Sub23_Sub4.method2987(i_93_, 2,
-                                            1 + i_95_,
-                                            -3951,
-                                            i_94_);
-                            }
+                                    Class348_Sub23_Sub4.method2987
+                                            (i_93_, 1, i_95_, -3951,
+                                                    1 + i_94_);
+                            } else
+                                Class348_Sub23_Sub4.method2987(i_93_, 2,
+                                        1 + i_95_,
+                                        -3951,
+                                        i_94_);
                             break;
                         }
                     } else {
@@ -1307,14 +1293,12 @@ final class Class237_Sub1 extends Class237 {
                                             i_95_,
                                             -3951,
                                             i_94_);
-                            } else {
-                                if (i == 3) {
-                                    Class348_Sub16_Sub3
-                                            .method2879(i_93_, i_94_, i_95_);
-                                    if (class51.anInt920 == 1)
-                                        class361.method3499((byte) -52, i_94_,
-                                                i_95_);
-                                }
+                            } else if (i == 3) {
+                                Class348_Sub16_Sub3
+                                        .method2879(i_93_, i_94_, i_95_);
+                                if (class51.anInt920 == 1)
+                                    class361.method3499((byte) -52, i_94_,
+                                            i_95_);
                             }
                             break;
                         }

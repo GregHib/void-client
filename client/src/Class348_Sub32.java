@@ -364,82 +364,74 @@ final class Class348_Sub32 extends Class348 {
                                                 i_64_++;
                                             }
                                         }
-                                    } else {
-                                        if (i_60_ == 3) {
-                                            method3019(0, i_58_, i_56_, i_59_,
-                                                    0, (byte) -40, i_57_);
-                                            method3019(0, i_58_, i_56_, i_59_,
-                                                    (var_s_Sub2
-                                                            .anInt4592),
-                                                    (byte) 111, i_57_);
-                                            method3019((var_s_Sub2
-                                                            .anInt4592),
-                                                    i_58_, i_56_, i_59_, 0,
-                                                    (byte) -29, i_57_);
-                                        } else {
-                                            if (i_60_ == 2) {
-                                                method3019(0, i_58_, i_56_,
-                                                        i_59_,
-                                                        (var_s_Sub2
-                                                                .anInt4592),
-                                                        (byte) 119, i_57_);
-                                                method3019((var_s_Sub2
+                                    } else if (i_60_ == 3) {
+                                        method3019(0, i_58_, i_56_, i_59_,
+                                                0, (byte) -40, i_57_);
+                                        method3019(0, i_58_, i_56_, i_59_,
+                                                (var_s_Sub2
+                                                        .anInt4592),
+                                                (byte) 111, i_57_);
+                                        method3019((var_s_Sub2
+                                                        .anInt4592),
+                                                i_58_, i_56_, i_59_, 0,
+                                                (byte) -29, i_57_);
+                                    } else if (i_60_ == 2) {
+                                        method3019(0, i_58_, i_56_,
+                                                i_59_,
+                                                (var_s_Sub2
+                                                        .anInt4592),
+                                                (byte) 119, i_57_);
+                                        method3019((var_s_Sub2
+                                                        .anInt4592),
+                                                i_58_, i_56_, i_59_,
+                                                (var_s_Sub2
+                                                        .anInt4592),
+                                                (byte) -90, i_57_);
+                                        method3019(0, i_58_, i_56_,
+                                                i_59_, 0,
+                                                (byte) -119, i_57_);
+                                    } else if (i_60_ == 5) {
+                                        method3019
+                                                ((var_s_Sub2
                                                                 .anInt4592),
                                                         i_58_, i_56_, i_59_,
                                                         (var_s_Sub2
                                                                 .anInt4592),
-                                                        (byte) -90, i_57_);
-                                                method3019(0, i_58_, i_56_,
+                                                        (byte) 111, i_57_);
+                                        method3019((var_s_Sub2
+                                                        .anInt4592),
+                                                i_58_, i_56_,
+                                                i_59_, 0,
+                                                (byte) -83,
+                                                i_57_);
+                                        method3019(0, i_58_, i_56_,
+                                                i_59_,
+                                                (var_s_Sub2
+                                                        .anInt4592),
+                                                (byte) 125,
+                                                i_57_);
+                                    } else if (i_60_ == 4) {
+                                        method3019
+                                                ((var_s_Sub2
+                                                                .anInt4592),
+                                                        i_58_, i_56_,
                                                         i_59_, 0,
-                                                        (byte) -119, i_57_);
-                                            } else {
-                                                if (i_60_ == 5) {
-                                                    method3019
-                                                            ((var_s_Sub2
-                                                                            .anInt4592),
-                                                                    i_58_, i_56_, i_59_,
-                                                                    (var_s_Sub2
-                                                                            .anInt4592),
-                                                                    (byte) 111, i_57_);
-                                                    method3019((var_s_Sub2
-                                                                    .anInt4592),
-                                                            i_58_, i_56_,
-                                                            i_59_, 0,
-                                                            (byte) -83,
-                                                            i_57_);
-                                                    method3019(0, i_58_, i_56_,
-                                                            i_59_,
-                                                            (var_s_Sub2
-                                                                    .anInt4592),
-                                                            (byte) 125,
-                                                            i_57_);
-                                                } else {
-                                                    if (i_60_ == 4) {
-                                                        method3019
-                                                                ((var_s_Sub2
-                                                                                .anInt4592),
-                                                                        i_58_, i_56_,
-                                                                        i_59_, 0,
-                                                                        (byte) -70,
-                                                                        i_57_);
-                                                        method3019(0, i_58_,
-                                                                i_56_,
-                                                                i_59_, 0,
-                                                                (byte) 96,
-                                                                i_57_);
-                                                        method3019
-                                                                ((var_s_Sub2
-                                                                                .anInt4592),
-                                                                        i_58_, i_56_,
-                                                                        i_59_,
-                                                                        (var_s_Sub2
-                                                                                .anInt4592),
-                                                                        (byte) 112,
-                                                                        i_57_);
-                                                    }
-                                                }
-                                            }
-                                        }
+                                                        (byte) -70,
+                                                        i_57_);
+                                        method3019(0, i_58_,
+                                                i_56_,
+                                                i_59_, 0,
+                                                (byte) 96,
+                                                i_57_);
+                                        method3019
+                                                ((var_s_Sub2
+                                                                .anInt4592),
+                                                        i_58_, i_56_,
+                                                        i_59_,
+                                                        (var_s_Sub2
+                                                                .anInt4592),
+                                                        (byte) 112,
+                                                        i_57_);
                                     }
                                 }
                             }

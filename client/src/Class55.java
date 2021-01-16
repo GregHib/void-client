@@ -81,10 +81,8 @@ abstract class Class55 {
                 if (aBoolean991)
                     method511(-2);
                 return;
-            } else {
-                if (class348_sub23 == aClass348_Sub23_Sub4_999)
-                    method504(1999);
-            }
+            } else if (class348_sub23 == aClass348_Sub23_Sub4_999)
+				method504(1999);
 		}
         aClass348_Sub23_Sub2_1001.method2963(anOggPacket993, 16384);
         if (i < 58)

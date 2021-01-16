@@ -240,11 +240,9 @@ final class Class206 implements Interface11 {
                     }
                 } else
                     bool = true;
-            } else {
-                if (!class10.aClass348_Sub16_Sub5_176
-                        .method2712((byte) 4))
-                    bool = true;
-            }
+            } else if (!class10.aClass348_Sub16_Sub5_176
+                    .method2712((byte) 4))
+                bool = true;
             if (bool) {
                 Class147.anInt2021--;
                 for (int i_19_ = i_4_; Class147.anInt2021 > i_19_; i_19_++)
@@ -302,11 +300,9 @@ final class Class206 implements Interface11 {
         if ((anInt4884 & (~i_23_)) == 0) {
             anInt4882 = class258_sub2.anInt8538;
             anInt4886 = class258_sub2.anInt8538;
-        } else {
-            if (class258_sub2.anInt8538 != anInt4882
-                    || anInt4886 != class258_sub2.anInt8538)
-                throw new RuntimeException();
-        }
+        } else if (class258_sub2.anInt8538 != anInt4882
+                || anInt4886 != class258_sub2.anInt8538)
+            throw new RuntimeException();
         class258_sub2.method1961(anInt4873, i_22_,
                 Class59_Sub2.anIntArray5306[i_21_], i, -1);
         anInterface9Array4875[i_21_] = class258_sub2;
@@ -402,12 +398,10 @@ final class Class206 implements Interface11 {
         if ((anInt4884 & (~i_33_)) == 0) {
             anInt4886 = class348_sub42_sub2.anInt8565;
             anInt4882 = class348_sub42_sub2.anInt8572;
-        } else {
-            if ((class348_sub42_sub2.anInt8572 != anInt4882)
-                    || (anInt4886
-                    != class348_sub42_sub2.anInt8565))
-                throw new RuntimeException();
-        }
+        } else if ((class348_sub42_sub2.anInt8572 != anInt4882)
+                || (anInt4886
+                != class348_sub42_sub2.anInt8565))
+            throw new RuntimeException();
         int i_34_ = -68 / ((i_32_ - 64) / 49);
         class348_sub42_sub2.method3173(36161, Class59_Sub2.anIntArray5306[i],
                 anInt4873);

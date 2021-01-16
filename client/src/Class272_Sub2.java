@@ -182,15 +182,13 @@ public final class Class272_Sub2 extends Class272 {
             }
             return method2052(inetsocketaddress.getHostName(),
                     inetsocketaddress.getPort(), string);
-        } else {
-            if (proxy.type() == Proxy.Type.SOCKS) {
-                Socket socket = new Socket(proxy);
-                socket.connect(new InetSocketAddress((this
-                        .aString3476),
-                        (this
-                                .anInt3470)));
-                return socket;
-            }
+        } else if (proxy.type() == Proxy.Type.SOCKS) {
+            Socket socket = new Socket(proxy);
+            socket.connect(new InetSocketAddress((this
+                    .aString3476),
+                    (this
+                            .anInt3470)));
+            return socket;
         }
         return null;
     }

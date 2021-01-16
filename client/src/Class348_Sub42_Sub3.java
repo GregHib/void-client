@@ -197,10 +197,8 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
                         Class348_Sub42_Sub8_Sub2.anInt10432, 100,
                         Class321.anInt4017);
                 break;
-            } else {
-                if (i_16_ != 3)
-                    break;
-            }
+            } else if (i_16_ != 3)
+                break;
             Class18.method282(2, Class348_Sub8.aHa6654, Class321.anInt4017,
                     (byte) 73, Class45.anInt666,
                     Class186_Sub1.anInt5812,

@@ -641,16 +641,14 @@ abstract class ha_Sub3 extends ha {
                 class173 = Class69.aClass173_1201;
                 bool_30_ = true;
                 bool = false;
+            } else if (i_29_ == 128) {
+                bool = true;
+                class173 = Class273.aClass173_5169;
+                bool_30_ = true;
             } else {
-                if (i_29_ == 128) {
-                    bool = true;
-                    class173 = Class273.aClass173_5169;
-                    bool_30_ = true;
-                } else {
-                    bool_30_ = false;
-                    class173 = Class225.aClass173_2944;
-                    bool = false;
-                }
+                bool_30_ = false;
+                class173 = Class225.aClass173_2944;
+                bool = false;
             }
             if (bool != this.aBoolean8141) {
                 this.aBoolean8141 = bool;
@@ -788,43 +786,39 @@ abstract class ha_Sub3 extends ha {
                                     4, i, i_38_, i_40_);
                     }
                 }
-            } else {
-                if (i_41_ == 2) {
-                    Interface10 interface10
-                            = ((Interface10)
-                            (Class177.method1353
-                                    (i_40_, i_37_, i,
-                                            (aClass8211 != null ? aClass8211
-                                                    : (aClass8211 = method3951("Interface10"))))));
-                    if (interface10 != null) {
-                        if (i_36_ == 11)
-                            i_36_ = 10;
-                        if (!(interface10 instanceof Class318_Sub1_Sub3_Sub2))
-                            Class218.method1591(i_37_, 43, i_41_, i_35_,
-                                    interface10.method42(-107),
-                                    i_36_, i, i_38_, i_40_);
-                        else
-                            ((Class318_Sub1_Sub3_Sub2)
-                                    interface10)
-                                    .aClass235_10045.method1671(262144, i_35_);
-                    }
-                } else {
-                    if (i_41_ == 3) {
-                        Interface10 interface10
-                                = ((Interface10)
-                                Class348_Sub16_Sub3.method2878(i_40_, i_37_,
-                                        i));
-                        if (interface10 != null) {
-                            if (interface10 instanceof Class318_Sub1_Sub1_Sub1)
-                                ((Class318_Sub1_Sub1_Sub1)
-                                        interface10)
-                                        .aClass235_9955.method1671(262144, i_35_);
-                            else
-                                Class218.method1591(i_37_, 28, i_41_, i_35_,
-                                        interface10.method42(-123),
-                                        i_36_, i, i_38_, i_40_);
-                        }
-                    }
+            } else if (i_41_ == 2) {
+                Interface10 interface10
+                        = ((Interface10)
+                        (Class177.method1353
+                                (i_40_, i_37_, i,
+                                        (aClass8211 != null ? aClass8211
+                                                : (aClass8211 = method3951("Interface10"))))));
+                if (interface10 != null) {
+                    if (i_36_ == 11)
+                        i_36_ = 10;
+                    if (!(interface10 instanceof Class318_Sub1_Sub3_Sub2))
+                        Class218.method1591(i_37_, 43, i_41_, i_35_,
+                                interface10.method42(-107),
+                                i_36_, i, i_38_, i_40_);
+                    else
+                        ((Class318_Sub1_Sub3_Sub2)
+                                interface10)
+                                .aClass235_10045.method1671(262144, i_35_);
+                }
+            } else if (i_41_ == 3) {
+                Interface10 interface10
+                        = ((Interface10)
+                        Class348_Sub16_Sub3.method2878(i_40_, i_37_,
+                                i));
+                if (interface10 != null) {
+                    if (interface10 instanceof Class318_Sub1_Sub1_Sub1)
+                        ((Class318_Sub1_Sub1_Sub1)
+                                interface10)
+                                .aClass235_9955.method1671(262144, i_35_);
+                    else
+                        Class218.method1591(i_37_, 28, i_41_, i_35_,
+                                interface10.method42(-123),
+                                i_36_, i, i_38_, i_40_);
                 }
             }
         }
@@ -2837,11 +2831,9 @@ abstract class ha_Sub3 extends ha {
             if (canvas == null || canvas == this.aCanvas7925) {
                 anObject8020 = this.anObject7919;
                 aCanvas7910 = this.aCanvas7925;
-            } else {
-                if (aHashtable8014.containsKey(canvas)) {
-                    anObject8020 = aHashtable8014.get(canvas);
-                    aCanvas7910 = canvas;
-                }
+            } else if (aHashtable8014.containsKey(canvas)) {
+                anObject8020 = aHashtable8014.get(canvas);
+                aCanvas7910 = canvas;
             }
             if (aCanvas7910 == null || anObject8020 == null)
                 throw new RuntimeException();

@@ -93,10 +93,8 @@ final class Class367_Sub8 extends Class367 {
                                         Class287.method2178
                                                 (class318_sub1_sub3_sub3_sub1, 0,
                                                         class17, -75);
-                                } else {
-                                    if (i_14_ == 2)
-                                        class182.anInt2445 = 0;
-                                }
+                                } else if (i_14_ == 2)
+                                    class182.anInt2445 = 0;
                             }
                             if (class182 == null) {
                                 class182

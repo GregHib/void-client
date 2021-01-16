@@ -592,23 +592,21 @@ final class Class46 {
                         = class348_sub49.method3330(842397944);
                 this.anInt716
                         = class348_sub49.method3330(842397944);
-            } else {
-                if (this.aBoolean784) {
-                    this.anInt688
-                            = class348_sub49.method3372(13638);
-                    this.anInt799
-                            = class348_sub49.method3372(13638);
-                    this.anInt787
-                            = class348_sub49.method3372(13638);
-                    this.anInt757
-                            = class348_sub49.method3330(842397944);
-                    this.anInt675
-                            = class348_sub49.method3330(842397944);
-                    this.anInt717
-                            = class348_sub49.method3330(842397944);
-                    this.anInt716
-                            = class348_sub49.method3372(13638);
-                }
+            } else if (this.aBoolean784) {
+                this.anInt688
+                        = class348_sub49.method3372(13638);
+                this.anInt799
+                        = class348_sub49.method3372(13638);
+                this.anInt787
+                        = class348_sub49.method3372(13638);
+                this.anInt757
+                        = class348_sub49.method3330(842397944);
+                this.anInt675
+                        = class348_sub49.method3330(842397944);
+                this.anInt717
+                        = class348_sub49.method3330(842397944);
+                this.anInt716
+                        = class348_sub49.method3372(13638);
             }
             this.anInt699 = class348_sub49.method3330(842397944);
             if (this.anInt699 == 65535)

@@ -384,89 +384,85 @@ final class Class348_Sub38 extends Class348 {
                                                         i_62_++;
                                                     }
                                                 }
-                                            } else {
-                                                if (i_58_ == 3) {
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_, 0,
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_55_, 0,
-                                                            i_56_);
-                                                } else if (i_58_ == 2) {
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_55_,
-                                                            (var_s_Sub3
-                                                                    .anInt4592),
-                                                            i_56_);
-                                                    method3033(i_54_, i_57_,
-                                                            -29343, 0,
-                                                            i_55_, 0,
-                                                            i_56_);
-                                                } else {
-                                                    if (i_58_ == 5) {
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_56_);
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_, 0, i_56_);
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343, 0, i_55_,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_56_);
-                                                    } else if (i_58_ == 4) {
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_, 0, i_56_);
-                                                        method3033(i_54_,
-                                                                i_57_,
-                                                                -29343, 0,
-                                                                i_55_, 0,
+                                            } else if (i_58_ == 3) {
+                                                method3033(i_54_, i_57_,
+                                                        -29343, 0,
+                                                        i_55_, 0,
+                                                        i_56_);
+                                                method3033(i_54_, i_57_,
+                                                        -29343, 0,
+                                                        i_55_,
+                                                        (var_s_Sub3
+                                                                .anInt4592),
+                                                        i_56_);
+                                                method3033(i_54_, i_57_,
+                                                        -29343,
+                                                        (var_s_Sub3
+                                                                .anInt4592),
+                                                        i_55_, 0,
+                                                        i_56_);
+                                            } else if (i_58_ == 2) {
+                                                method3033(i_54_, i_57_,
+                                                        -29343, 0,
+                                                        i_55_,
+                                                        (var_s_Sub3
+                                                                .anInt4592),
+                                                        i_56_);
+                                                method3033(i_54_, i_57_,
+                                                        -29343,
+                                                        (var_s_Sub3
+                                                                .anInt4592),
+                                                        i_55_,
+                                                        (var_s_Sub3
+                                                                .anInt4592),
+                                                        i_56_);
+                                                method3033(i_54_, i_57_,
+                                                        -29343, 0,
+                                                        i_55_, 0,
+                                                        i_56_);
+                                            } else if (i_58_ == 5) {
+                                                method3033
+                                                        (i_54_, i_57_,
+                                                                -29343,
+                                                                (var_s_Sub3
+                                                                        .anInt4592),
+                                                                i_55_,
+                                                                (var_s_Sub3
+                                                                        .anInt4592),
                                                                 i_56_);
-                                                        method3033
-                                                                (i_54_, i_57_,
-                                                                        -29343,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_55_,
-                                                                        (var_s_Sub3
-                                                                                .anInt4592),
-                                                                        i_56_);
-                                                    }
-                                                }
+                                                method3033
+                                                        (i_54_, i_57_,
+                                                                -29343,
+                                                                (var_s_Sub3
+                                                                        .anInt4592),
+                                                                i_55_, 0, i_56_);
+                                                method3033
+                                                        (i_54_, i_57_,
+                                                                -29343, 0, i_55_,
+                                                                (var_s_Sub3
+                                                                        .anInt4592),
+                                                                i_56_);
+                                            } else if (i_58_ == 4) {
+                                                method3033
+                                                        (i_54_, i_57_,
+                                                                -29343,
+                                                                (var_s_Sub3
+                                                                        .anInt4592),
+                                                                i_55_, 0, i_56_);
+                                                method3033(i_54_,
+                                                        i_57_,
+                                                        -29343, 0,
+                                                        i_55_, 0,
+                                                        i_56_);
+                                                method3033
+                                                        (i_54_, i_57_,
+                                                                -29343,
+                                                                (var_s_Sub3
+                                                                        .anInt4592),
+                                                                i_55_,
+                                                                (var_s_Sub3
+                                                                        .anInt4592),
+                                                                i_56_);
                                             }
                                         }
                                     }

@@ -54,11 +54,9 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
                     for (int i_7_ = i_3_;
                          i_7_ <= i_2_; i_7_++)
                         Class17.anIntArrayArray255[i_7_][i_4_] = i_1_;
-                } else {
-                    if (bool_5_) {
-                        for (int i_6_ = i_3_; i_6_ <= i_2_; i_6_++)
-                            Class17.anIntArrayArray255[i_6_][i_0_] = i_1_;
-                    }
+                } else if (bool_5_) {
+                    for (int i_6_ = i_3_; i_6_ <= i_2_; i_6_++)
+                        Class17.anIntArrayArray255[i_6_][i_0_] = i_1_;
                 }
             } else {
                 for (int i_8_ = i_3_;

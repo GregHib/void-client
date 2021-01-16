@@ -205,20 +205,18 @@ final class Class133 {
                                                     class318_sub1_sub3_sub3_sub2.method2456(true,
                                                             255),
                                                     class318_sub1_sub3_sub3_sub2.aString10537);
-                                } else {
-                            if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                    == class318_sub1_sub3_sub3_sub2)
-                                Class286_Sub2.method2144
-                                        (class318_sub1_sub3_sub3_sub2
-                                                        .method2450(false, -88),
-                                                2, (byte) -102, 0,
-                                                (class318_sub1_sub3_sub3_sub2
-                                                        .aString10292),
-                                                class318_sub1_sub3_sub3_sub2
-                                                        .method2456(true, 255),
-                                                (class318_sub1_sub3_sub3_sub2
-                                                        .aString10537));
-                        }
+                                } else if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                == class318_sub1_sub3_sub3_sub2)
+                            Class286_Sub2.method2144
+                                    (class318_sub1_sub3_sub3_sub2
+                                                    .method2450(false, -88),
+                                            2, (byte) -102, 0,
+                                            (class318_sub1_sub3_sub3_sub2
+                                                    .aString10292),
+                                            class318_sub1_sub3_sub3_sub2
+                                                    .method2456(true, 255),
+                                            (class318_sub1_sub3_sub3_sub2
+                                                    .aString10537));
                         class318_sub1_sub3_sub3_sub2.anInt10264
                                 = 150;
                         class318_sub1_sub3_sub3_sub2.anInt10234
@@ -244,13 +242,11 @@ final class Class133 {
                                             = class348_sub49_sub2.method3382(-128);
                                     i_15_
                                             = class348_sub49_sub2.method3382(-122);
-                                } else {
-                                    if (i_14_ != 32766)
-                                        i_13_ = class348_sub49_sub2
-                                                .method3382(-117);
-                                    else
-                                        i_14_ = -1;
-                                }
+                                } else if (i_14_ != 32766)
+                                    i_13_ = class348_sub49_sub2
+                                            .method3382(-117);
+                                else
+                                    i_14_ = -1;
                                 int i_16_
                                         = class348_sub49_sub2.method3382(-123);
                                 int i_17_ = class348_sub49_sub2

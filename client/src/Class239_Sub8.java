@@ -50,13 +50,11 @@ final class Class239_Sub8 extends Class239 {
                     if (bool)
                         return -1;
                     return 1;
-                } else {
-                    if (class110_sub1_0_.aString5787
-                            .equals("-")) {
-                        if (!bool)
-                            return -1;
-                        return 1;
-                    }
+                } else if (class110_sub1_0_.aString5787
+                        .equals("-")) {
+                    if (!bool)
+                        return -1;
+                    return 1;
                 }
                 return (Class239_Sub21.method1811
                         (9152, class110_sub1_0_.aString5787,

@@ -47,12 +47,10 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
                             if (i_6_ == 1) {
                                 i_3_ = i_5_;
                                 break while_197_;
-                            } else {
-                                if (i_6_ != 2) {
-                                    if (i_6_ == 3)
-                                        break;
-                                    break while_197_;
-                                }
+                            } else if (i_6_ != 2) {
+                                if (i_6_ == 3)
+                                    break;
+                                break while_197_;
                             }
                             i_3_ = ((i_5_ + (-4096 - -i_1_) >> -1099071423)
                                     + 2048);
@@ -93,12 +91,10 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
                 if (i_10_ == 0) {
                     anInt9329 = class348_sub49.method3387(255);
                     break while_198_;
-                } else {
-                    if (i_10_ != 1) {
-                        if (i_10_ == 2)
-                            break;
-                        break while_198_;
-                    }
+                } else if (i_10_ != 1) {
+                    if (i_10_ == 2)
+                        break;
+                    break while_198_;
                 }
                 anInt9334 = class348_sub49.method3330(842397944);
                 break while_198_;

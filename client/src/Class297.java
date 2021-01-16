@@ -115,392 +115,378 @@ final class Class297 implements Runnable {
                             (class144
                                     .anObject1996)),
                             class144.anInt2000);
-                } else {
-                    if (i == 22) {
-                        if (aLong3781 > Class62.method599(-92))
-                            throw new IOException();
-                        try {
-                            class144.anObject1998
-                                    = Class61.method593
-                                    (class144.anInt2000, (byte) -90,
-                                            ((String)
-                                                    class144.anObject1996))
-                                    .method2050(-112);
-                        } catch (IOException_Sub1 ioexception_sub1) {
-                            class144.anObject1998
-                                    = ioexception_sub1.getMessage();
-                            throw ioexception_sub1;
-                        }
-                    } else {
-                        if (i == 2) {
-                            Thread thread
-                                    = new Thread((Runnable) (class144
+                } else if (i == 22) {
+                    if (aLong3781 > Class62.method599(-92))
+                        throw new IOException();
+                    try {
+                        class144.anObject1998
+                                = Class61.method593
+                                (class144.anInt2000, (byte) -90,
+                                        ((String)
+                                                class144.anObject1996))
+                                .method2050(-112);
+                    } catch (IOException_Sub1 ioexception_sub1) {
+                        class144.anObject1998
+                                = ioexception_sub1.getMessage();
+                        throw ioexception_sub1;
+                    }
+                } else if (i == 2) {
+                    Thread thread
+                            = new Thread((Runnable) (class144
+                            .anObject1996));
+                    thread.setDaemon(true);
+                    thread.start();
+                    thread.setPriority(class144.anInt2000);
+                    class144.anObject1998 = thread;
+                } else if (i == 4) {
+                    if (Class62.method599(-73) < aLong3781)
+                        throw new IOException();
+                    class144.anObject1998
+                            = new DataInputStream(((URL)
+                            (class144
+                                    .anObject1996))
+                            .openStream());
+                } else if (i == 8) {
+                    Object[] objects
+                            = ((Object[])
+                            class144.anObject1996);
+                    if (this.aBoolean3777
+                            && (((Class) objects[0]).getClassLoader()
+                            == null))
+                        throw new SecurityException();
+                    class144.anObject1998
+                            = (((Class) objects[0]).getDeclaredMethod
+                            ((String) objects[1],
+                                    (Class[]) objects[2]));
+                } else if (i == 9) {
+                    Object[] objects
+                            = ((Object[])
+                            class144.anObject1996);
+                    if (this.aBoolean3777
+                            && (((Class) objects[0]).getClassLoader()
+                            == null))
+                        throw new SecurityException();
+                    class144.anObject1998
+                            = (((Class) objects[0]).getDeclaredField
+                            ((String) objects[1]));
+                } else if (i == 18) {
+                    Clipboard clipboard
+                            = Toolkit.getDefaultToolkit()
+                            .getSystemClipboard();
+                    class144.anObject1998
+                            = clipboard.getContents(null);
+                } else if (i == 19) {
+                    Transferable transferable
+                            = ((Transferable)
+                            (class144
                                     .anObject1996));
-                            thread.setDaemon(true);
-                            thread.start();
-                            thread.setPriority(class144.anInt2000);
-                            class144.anObject1998 = thread;
-                        } else if (i == 4) {
-                            if (Class62.method599(-73) < aLong3781)
-                                throw new IOException();
+                    Clipboard clipboard
+                            = Toolkit.getDefaultToolkit()
+                            .getSystemClipboard();
+                    clipboard.setContents(transferable,
+                            null);
+                } else if (this
+                        .aBoolean3777) {
+                    if (i == 3) {
+                        if (aLong3781
+                                > Class62.method599(-123))
+                            throw new IOException();
+                        String string
+                                = (((0xff & (class144.anInt2000
+                                >> 1726433208)))
+                                + "."
+                                + (0xff
+                                & (class144.anInt2000
+                                >> -1141472112))
+                                + "."
+                                + ((class144.anInt2000
+                                >> 1095645000)
+                                & 0xff)
+                                + "."
+                                + (0xff
+                                & class144.anInt2000));
+                        class144.anObject1998
+                                = InetAddress.getByName
+                                (string).getHostName();
+                    } else if (i == 21) {
+                        if (Class62.method599(-82)
+                                < aLong3781)
+                            throw new IOException();
+                        class144.anObject1998
+                                = InetAddress.getByName
+                                ((String)
+                                        (class144
+                                                .anObject1996))
+                                .getAddress();
+                    } else if (i != 5) {
+                        if (i == 6) {
+                            Frame frame
+                                    = (new Frame
+                                    ("Jagex Full Screen"));
+                            class144.anObject1998 = frame;
+                            frame.setResizable(false);
+                            if (this
+                                    .aBoolean3794)
+                                aClass134_3802.method1146
+                                        ((class144.anInt2000
+                                                        & 0xffff),
+                                                (class144.anInt1999
+                                                        >> 1209541904),
+                                                (class144.anInt2000
+                                                        >>> 1536588080),
+                                                -43,
+                                                0xffff & (class144
+                                                        .anInt1999),
+                                                frame);
+                            else
+                                Class.forName("Class7")
+                                        .getMethod
+                                                ("method209",
+                                                        (new Class[]
+                                                                {(aClass3807 != null
+                                                                        ? aClass3807
+                                                                        : (aClass3807
+                                                                        = (method2249
+                                                                        ("java.awt.Frame")))),
+                                                                        Integer.TYPE,
+                                                                        Integer.TYPE,
+                                                                        Integer.TYPE,
+                                                                        Integer.TYPE}))
+                                        .invoke
+                                                (anObject3793,
+                                                        frame,
+                                                        (new Integer
+                                                                ((class144
+                                                                        .anInt2000)
+                                                                        >>> 35629040)),
+                                                        (new Integer
+                                                                (0xffff
+                                                                        & (class144
+                                                                        .anInt2000))),
+                                                        (new Integer
+                                                                ((class144
+                                                                        .anInt1999)
+                                                                        >> 972476528)),
+                                                        (new Integer
+                                                                ((class144
+                                                                        .anInt1999)
+                                                                        & 0xffff)));
+                        } else if (i == 7) {
+                            if (this
+                                    .aBoolean3794)
+                                aClass134_3802
+                                        .method1147
+                                                (((Frame)
+                                                                (class144
+                                                                        .anObject1996)),
+                                                        8);
+                            else
+                                Class.forName
+                                        ("Class7")
+                                        .getMethod
+                                                ("method211",
+                                                        new Class[0])
+                                        .invoke
+                                                (anObject3793
+                                                );
+                        } else if (i == 12) {
+                            Class234 class234
+                                    = (method2241
+                                    (((String)
+                                                    (class144
+                                                            .anObject1996)),
+                                            12606, aString3789,
+                                            anInt3792));
                             class144.anObject1998
-                                    = new DataInputStream(((URL)
+                                    = class234;
+                        } else if (i == 13) {
+                            Class234 class234
+                                    = (method2241
+                                    (((String)
+                                                    (class144
+                                                            .anObject1996)),
+                                            12606, "",
+                                            anInt3792));
+                            class144.anObject1998
+                                    = class234;
+                        } else if ((this
+                                .aBoolean3777)
+                                && i == 14) {
+                            int i_5_
+                                    = (class144
+                                    .anInt2000);
+                            int i_6_
+                                    = (class144
+                                    .anInt1999);
+                            if (this
+                                    .aBoolean3794)
+                                aCallback_Sub1_3776
+                                        .method3621
+                                                (i_5_,
+                                                        (byte) 115,
+                                                        i_6_);
+                            else
+                                Class.forName
+                                        ("Class165")
+                                        .getDeclaredMethod
+                                                ("method1280",
+                                                        (new Class[]
+                                                                {(Integer
+                                                                        .TYPE),
+                                                                        (Integer
+                                                                                .TYPE)}))
+                                        .invoke
+                                                (anObject3791,
+                                                        (new Integer
+                                                                (i_5_)),
+                                                        (new Integer
+                                                                (i_6_)));
+                        } else if ((this
+                                .aBoolean3777)
+                                && (i == 15)) {
+                            boolean bool
+                                    = ((class144
+                                    .anInt2000) != 0);
+                            Component component
+                                    = ((Component)
                                     (class144
-                                            .anObject1996))
-                                    .openStream());
-                        } else if (i == 8) {
+                                            .anObject1996));
+                            if (this
+                                    .aBoolean3794)
+                                aCallback_Sub1_3776
+                                        .method3622
+                                                (bool, 13259,
+                                                        component);
+                            else
+                                Class.forName
+                                        ("Class165")
+                                        .getDeclaredMethod
+                                                ("method1281",
+                                                        (new Class[]
+                                                                {((aClass3804
+                                                                        != null)
+                                                                        ? aClass3804
+                                                                        : (aClass3804
+                                                                        = (method2249
+                                                                        ("java.awt.Component")))),
+                                                                        (Boolean
+                                                                                .TYPE)}))
+                                        .invoke
+                                                (anObject3791,
+                                                        component,
+                                                        (new Boolean
+                                                                (bool)));
+                        } else if (!(this
+                                .aBoolean3794)
+                                && (i == 17)) {
                             Object[] objects
                                     = ((Object[])
-                                    class144.anObject1996);
-                            if (this.aBoolean3777
-                                    && (((Class) objects[0]).getClassLoader()
-                                    == null))
-                                throw new SecurityException();
-                            class144.anObject1998
-                                    = (((Class) objects[0]).getDeclaredMethod
-                                    ((String) objects[1],
-                                            (Class[]) objects[2]));
-                        } else {
-                            if (i == 9) {
-                                Object[] objects
-                                        = ((Object[])
-                                        class144.anObject1996);
-                                if (this.aBoolean3777
-                                        && (((Class) objects[0]).getClassLoader()
-                                        == null))
-                                    throw new SecurityException();
-                                class144.anObject1998
-                                        = (((Class) objects[0]).getDeclaredField
-                                        ((String) objects[1]));
-                            } else {
-                                if (i == 18) {
-                                    Clipboard clipboard
-                                            = Toolkit.getDefaultToolkit()
-                                            .getSystemClipboard();
-                                    class144.anObject1998
-                                            = clipboard.getContents(null);
-                                } else {
-                                    if (i == 19) {
-                                        Transferable transferable
-                                                = ((Transferable)
-                                                (class144
-                                                        .anObject1996));
-                                        Clipboard clipboard
-                                                = Toolkit.getDefaultToolkit()
-                                                .getSystemClipboard();
-                                        clipboard.setContents(transferable,
-                                                null);
-                                    } else if (this
-                                            .aBoolean3777) {
-                                        if (i == 3) {
-                                            if (aLong3781
-                                                    > Class62.method599(-123))
-                                                throw new IOException();
-                                            String string
-                                                    = (((0xff & (class144.anInt2000
-                                                    >> 1726433208)))
-                                                    + "."
-                                                    + (0xff
-                                                    & (class144.anInt2000
-                                                    >> -1141472112))
-                                                    + "."
-                                                    + ((class144.anInt2000
-                                                    >> 1095645000)
-                                                    & 0xff)
-                                                    + "."
-                                                    + (0xff
-                                                    & class144.anInt2000));
-                                            class144.anObject1998
-                                                    = InetAddress.getByName
-                                                    (string).getHostName();
-                                        } else if (i == 21) {
-                                            if (Class62.method599(-82)
-                                                    < aLong3781)
-                                                throw new IOException();
-                                            class144.anObject1998
-                                                    = InetAddress.getByName
-                                                    ((String)
+                                    (class144
+                                            .anObject1996));
+                            Class.forName
+                                    ("Class165")
+                                    .getDeclaredMethod
+                                            ("method1282",
+                                                    (new Class[]
+                                                            {((aClass3804
+                                                                    != null)
+                                                                    ? aClass3804
+                                                                    : (aClass3804
+                                                                    = (method2249
+                                                                    ("java.awt.Component")))),
+                                                                    ((aClass3805
+                                                                            != null)
+                                                                            ? aClass3805
+                                                                            : (aClass3805
+                                                                            = (method2249
+                                                                            ("[I")))),
+                                                                    Integer.TYPE,
+                                                                    Integer.TYPE,
+                                                                    ((aClass3806
+                                                                            != null)
+                                                                            ? aClass3806
+                                                                            : (aClass3806
+                                                                            = (method2249
+                                                                            ("java.awt.Point"))))}))
+                                    .invoke
+                                            (anObject3791,
+                                                    objects[0],
+                                                    objects[1],
+                                                    (new Integer
                                                             (class144
-                                                                    .anObject1996))
-                                                    .getAddress();
-                                        } else if (i != 5) {
-                                            if (i == 6) {
-                                                Frame frame
-                                                        = (new Frame
-                                                        ("Jagex Full Screen"));
-                                                class144.anObject1998 = frame;
-                                                frame.setResizable(false);
-                                                if (this
-                                                        .aBoolean3794)
-                                                    aClass134_3802.method1146
-                                                            ((class144.anInt2000
-                                                                            & 0xffff),
-                                                                    (class144.anInt1999
-                                                                            >> 1209541904),
-                                                                    (class144.anInt2000
-                                                                            >>> 1536588080),
-                                                                    -43,
-                                                                    0xffff & (class144
-                                                                            .anInt1999),
-                                                                    frame);
-                                                else
-                                                    Class.forName("Class7")
-                                                            .getMethod
-                                                                    ("method209",
-                                                                            (new Class[]
-                                                                                    {(aClass3807 != null
-                                                                                            ? aClass3807
-                                                                                            : (aClass3807
-                                                                                            = (method2249
-                                                                                            ("java.awt.Frame")))),
-                                                                                            Integer.TYPE,
-                                                                                            Integer.TYPE,
-                                                                                            Integer.TYPE,
-                                                                                            Integer.TYPE}))
-                                                            .invoke
-                                                                    (anObject3793,
-                                                                            frame,
-                                                                            (new Integer
-                                                                                    ((class144
-                                                                                            .anInt2000)
-                                                                                            >>> 35629040)),
-                                                                            (new Integer
-                                                                                    (0xffff
-                                                                                            & (class144
-                                                                                            .anInt2000))),
-                                                                            (new Integer
-                                                                                    ((class144
-                                                                                            .anInt1999)
-                                                                                            >> 972476528)),
-                                                                            (new Integer
-                                                                                    ((class144
-                                                                                            .anInt1999)
-                                                                                            & 0xffff)));
-                                            } else {
-                                                if (i == 7) {
-                                                    if (this
-                                                            .aBoolean3794)
-                                                        aClass134_3802
-                                                                .method1147
-                                                                        (((Frame)
-                                                                                        (class144
-                                                                                                .anObject1996)),
-                                                                                8);
-                                                    else
-                                                        Class.forName
-                                                                ("Class7")
-                                                                .getMethod
-                                                                        ("method211",
-                                                                                new Class[0])
-                                                                .invoke
-                                                                        (anObject3793
-                                                                        );
-                                                } else if (i == 12) {
-                                                    Class234 class234
-                                                            = (method2241
-                                                            (((String)
-                                                                            (class144
-                                                                                    .anObject1996)),
-                                                                    12606, aString3789,
-                                                                    anInt3792));
-                                                    class144.anObject1998
-                                                            = class234;
-                                                } else if (i == 13) {
-                                                    Class234 class234
-                                                            = (method2241
-                                                            (((String)
-                                                                            (class144
-                                                                                    .anObject1996)),
-                                                                    12606, "",
-                                                                    anInt3792));
-                                                    class144.anObject1998
-                                                            = class234;
-                                                } else {
-                                                    if ((this
-                                                            .aBoolean3777)
-                                                            && i == 14) {
-                                                        int i_5_
-                                                                = (class144
-                                                                .anInt2000);
-                                                        int i_6_
-                                                                = (class144
-                                                                .anInt1999);
-                                                        if (this
-                                                                .aBoolean3794)
-                                                            aCallback_Sub1_3776
-                                                                    .method3621
-                                                                            (i_5_,
-                                                                                    (byte) 115,
-                                                                                    i_6_);
-                                                        else
-                                                            Class.forName
-                                                                    ("Class165")
-                                                                    .getDeclaredMethod
-                                                                            ("method1280",
-                                                                                    (new Class[]
-                                                                                            {(Integer
-                                                                                                    .TYPE),
-                                                                                                    (Integer
-                                                                                                            .TYPE)}))
-                                                                    .invoke
-                                                                            (anObject3791,
-                                                                                    (new Integer
-                                                                                            (i_5_)),
-                                                                                    (new Integer
-                                                                                            (i_6_)));
-                                                    } else if ((this
-                                                            .aBoolean3777)
-                                                            && (i == 15)) {
-                                                        boolean bool
-                                                                = ((class144
-                                                                .anInt2000) != 0);
-                                                        Component component
-                                                                = ((Component)
-                                                                (class144
-                                                                        .anObject1996));
-                                                        if (this
-                                                                .aBoolean3794)
-                                                            aCallback_Sub1_3776
-                                                                    .method3622
-                                                                            (bool, 13259,
-                                                                                    component);
-                                                        else
-                                                            Class.forName
-                                                                    ("Class165")
-                                                                    .getDeclaredMethod
-                                                                            ("method1281",
-                                                                                    (new Class[]
-                                                                                            {((aClass3804
-                                                                                                    != null)
-                                                                                                    ? aClass3804
-                                                                                                    : (aClass3804
-                                                                                                    = (method2249
-                                                                                                    ("java.awt.Component")))),
-                                                                                                    (Boolean
-                                                                                                            .TYPE)}))
-                                                                    .invoke
-                                                                            (anObject3791,
-                                                                                    component,
-                                                                                    (new Boolean
-                                                                                            (bool)));
-                                                    } else if (!(this
-                                                            .aBoolean3794)
-                                                            && (i == 17)) {
-                                                        Object[] objects
-                                                                = ((Object[])
-                                                                (class144
-                                                                        .anObject1996));
-                                                        Class.forName
-                                                                ("Class165")
-                                                                .getDeclaredMethod
-                                                                        ("method1282",
-                                                                                (new Class[]
-                                                                                        {((aClass3804
-                                                                                                != null)
-                                                                                                ? aClass3804
-                                                                                                : (aClass3804
-                                                                                                = (method2249
-                                                                                                ("java.awt.Component")))),
-                                                                                                ((aClass3805
-                                                                                                        != null)
-                                                                                                        ? aClass3805
-                                                                                                        : (aClass3805
-                                                                                                        = (method2249
-                                                                                                        ("[I")))),
-                                                                                                Integer.TYPE,
-                                                                                                Integer.TYPE,
-                                                                                                ((aClass3806
-                                                                                                        != null)
-                                                                                                        ? aClass3806
-                                                                                                        : (aClass3806
-                                                                                                        = (method2249
-                                                                                                        ("java.awt.Point"))))}))
-                                                                .invoke
-                                                                        (anObject3791,
-                                                                                objects[0],
-                                                                                objects[1],
-                                                                                (new Integer
-                                                                                        (class144
-                                                                                                .anInt2000)),
-                                                                                (new Integer
-                                                                                        (class144
-                                                                                                .anInt1999)),
-                                                                                objects
-                                                                                        [2]);
-                                                    } else if (i == 16) {
-                                                        try {
-                                                            if (!aString3803
-                                                                    .startsWith
-                                                                            ("win"))
-                                                                throw new Exception
-                                                                        ();
-                                                            String string
-                                                                    = ((String)
-                                                                    (class144
-                                                                            .anObject1996));
-                                                            if (!(string
-                                                                    .startsWith
-                                                                            ("http://"))
-                                                                    && !(string
-                                                                    .startsWith
-                                                                            ("https://")))
-                                                                throw new Exception
-                                                                        ();
-                                                            String string_7_
-                                                                    = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
-                                                            for (int i_8_ = 0;
-                                                                 (i_8_ < (string
-                                                                         .length
-                                                                                 ()));
-                                                                 i_8_++) {
-                                                                if ((string_7_
-                                                                        .indexOf
-                                                                                (string
-                                                                                        .charAt
-                                                                                                (i_8_))) == -1)
-                                                                    throw new Exception
-                                                                            ();
-                                                            }
-                                                            Runtime.getRuntime
-                                                                    ().exec
-                                                                    ("cmd /c start \"j\" \""
-                                                                            + string
-                                                                            + "\"");
-                                                            class144
-                                                                    .anObject1998
-                                                                    = null;
-                                                        } catch (Exception exception) {
-                                                            class144
-                                                                    .anObject1998
-                                                                    = exception;
-                                                            throw exception;
-                                                        }
-                                                    } else
-                                                        throw new Exception
-                                                                ("");
-                                                }
-                                            }
-                                        } else if (!this
-                                                .aBoolean3794)
-                                            class144.anObject1998
-                                                    = (Class.forName("Class7")
-                                                    .getMethod
-                                                            ("method210",
-                                                                    new Class[0])
-                                                    .invoke
-                                                            (anObject3793
-                                                            ));
-                                        else
-                                            class144.anObject1998
-                                                    = aClass134_3802
-                                                    .method1145(true);
-                                    } else
-                                        throw new Exception("");
+                                                                    .anInt2000)),
+                                                    (new Integer
+                                                            (class144
+                                                                    .anInt1999)),
+                                                    objects
+                                                            [2]);
+                        } else if (i == 16) {
+                            try {
+                                if (!aString3803
+                                        .startsWith
+                                                ("win"))
+                                    throw new Exception
+                                            ();
+                                String string
+                                        = ((String)
+                                        (class144
+                                                .anObject1996));
+                                if (!(string
+                                        .startsWith
+                                                ("http://"))
+                                        && !(string
+                                        .startsWith
+                                                ("https://")))
+                                    throw new Exception
+                                            ();
+                                String string_7_
+                                        = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
+                                for (int i_8_ = 0;
+                                     (i_8_ < (string
+                                             .length
+                                                     ()));
+                                     i_8_++) {
+                                    if ((string_7_
+                                            .indexOf
+                                                    (string
+                                                            .charAt
+                                                                    (i_8_))) == -1)
+                                        throw new Exception
+                                                ();
                                 }
+                                Runtime.getRuntime
+                                        ().exec
+                                        ("cmd /c start \"j\" \""
+                                                + string
+                                                + "\"");
+                                class144
+                                        .anObject1998
+                                        = null;
+                            } catch (Exception exception) {
+                                class144
+                                        .anObject1998
+                                        = exception;
+                                throw exception;
                             }
-                        }
-                    }
-                }
+                        } else
+                            throw new Exception
+                                    ("");
+                    } else if (!this
+                            .aBoolean3794)
+                        class144.anObject1998
+                                = (Class.forName("Class7")
+                                .getMethod
+                                        ("method210",
+                                                new Class[0])
+                                .invoke
+                                        (anObject3793
+                                        ));
+                    else
+                        class144.anObject1998
+                                = aClass134_3802
+                                .method1145(true);
+                } else
+                    throw new Exception("");
                 class144.anInt1997 = 1;
             } catch (Throwable throwable) {
                 class144.anInt1997 = 2;

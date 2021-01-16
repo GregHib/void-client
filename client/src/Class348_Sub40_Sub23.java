@@ -49,32 +49,30 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                             anInt9318 = class348_sub49
                                                     .method3387(255);
                                             return;
-                                        } else {
-                                            if (i_1_ != 1) {
-                                                if (i_1_ != 2) {
-                                                    if (i_1_ != 3) {
-                                                        if (i_1_ != 4) {
-                                                            if (i_1_ != 5) {
-                                                                if (i_1_
-                                                                        != 6) {
-                                                                    if (i_1_ != 7) {
-                                                                        if (i_1_
-                                                                                == 8)
-                                                                            break while_195_;
-                                                                        break while_196_;
-                                                                    }
-                                                                } else
-                                                                    break while_193_;
-                                                                break while_194_;
-                                                            }
-                                                        } else
-                                                            break while_191_;
-                                                        break while_192_;
-                                                    }
-                                                } else
-                                                    break;
-                                                break while_190_;
-                                            }
+                                        } else if (i_1_ != 1) {
+                                            if (i_1_ != 2) {
+                                                if (i_1_ != 3) {
+                                                    if (i_1_ != 4) {
+                                                        if (i_1_ != 5) {
+                                                            if (i_1_
+                                                                    != 6) {
+                                                                if (i_1_ != 7) {
+                                                                    if (i_1_
+                                                                            == 8)
+                                                                        break while_195_;
+                                                                    break while_196_;
+                                                                }
+                                                            } else
+                                                                break while_193_;
+                                                            break while_194_;
+                                                        }
+                                                    } else
+                                                        break while_191_;
+                                                    break while_192_;
+                                                }
+                                            } else
+                                                break;
+                                            break while_190_;
                                         }
                                         anInt9317 = class348_sub49
                                                 .method3330(842397944);

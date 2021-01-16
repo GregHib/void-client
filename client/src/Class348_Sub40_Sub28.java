@@ -54,18 +54,16 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                         if (i_1_ == 0) {
                             anInt9367 = class348_sub49.method3387(255);
                             return;
-                        } else {
-                            if (i_1_ != 1) {
-                                if (i_1_ != 2) {
-                                    if (i_1_ != 3) {
-                                        if (i_1_ == 4)
-                                            break while_203_;
-                                        break while_204_;
-                                    }
-                                } else
-                                    break;
-                                break while_202_;
-                            }
+                        } else if (i_1_ != 1) {
+                            if (i_1_ != 2) {
+                                if (i_1_ != 3) {
+                                    if (i_1_ == 4)
+                                        break while_203_;
+                                    break while_204_;
+                                }
+                            } else
+                                break;
+                            break while_202_;
                         }
                         anInt9362 = class348_sub49.method3330(842397944);
                         return;

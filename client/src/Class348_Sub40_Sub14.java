@@ -69,10 +69,8 @@ final class Class348_Sub40_Sub14 extends Class348_Sub40 {
                         aShortArray9215[i_2_] = (short) i_19_;
                     }
                     break while_158_;
-                } else {
-                    if (i_2_ != 1)
-                        break;
-                }
+                } else if (i_2_ != 1)
+                    break;
                 for (i_2_ = 0; i_2_ < 257; i_2_++) {
                     int i_20_ = i_2_ << -356046364;
                     int i_21_;

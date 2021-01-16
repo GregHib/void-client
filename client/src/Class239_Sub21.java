@@ -41,11 +41,9 @@ final class Class239_Sub21 extends Class239 {
             if (i_5_ == 1) {
                 class357.aShort4401 = (short) i_0_;
                 class357.aShort4409 = (short) i_1_;
-            } else {
-                if (i_5_ == 2) {
-                    class357.aShort4398 = (short) i_1_;
-                    class357.aShort4397 = (short) i_0_;
-                }
+            } else if (i_5_ == 2) {
+                class357.aShort4398 = (short) i_1_;
+                class357.aShort4397 = (short) i_0_;
             }
             if (Class50_Sub1.aBoolean5226)
                 Class286_Sub3.method2152(false);

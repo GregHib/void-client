@@ -44,24 +44,22 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                                             = class348_sub49
                                             .method3387(i_0_ ^ 0x79d8) == 1;
                                     break while_151_;
-                                } else {
-                                    if (i_1_ != 1) {
-                                        if (i_1_ != 2) {
-                                            if (i_1_ != 3) {
-                                                if (i_1_ != 4) {
-                                                    if (i_1_ != 5) {
-                                                        if (i_1_ == 6)
-                                                            break while_150_;
-                                                        break while_151_;
-                                                    }
-                                                } else
-                                                    break while_148_;
-                                                break while_149_;
-                                            }
-                                        } else
-                                            break;
-                                        break while_147_;
-                                    }
+                                } else if (i_1_ != 1) {
+                                    if (i_1_ != 2) {
+                                        if (i_1_ != 3) {
+                                            if (i_1_ != 4) {
+                                                if (i_1_ != 5) {
+                                                    if (i_1_ == 6)
+                                                        break while_150_;
+                                                    break while_151_;
+                                                }
+                                            } else
+                                                break while_148_;
+                                            break while_149_;
+                                        }
+                                    } else
+                                        break;
+                                    break while_147_;
                                 }
                                 this.anInt9150
                                         = class348_sub49.method3387(i_0_ ^ 0x79d8);

@@ -408,253 +408,241 @@ final class Class348_Sub24 extends Class348 {
                                             = class348_sub42_sub15.aString9654;
                                     Class251.method1916(-9343, class46);
                                 }
-                            } else {
-                                if (i_16_ == 4) {
-                                    Class46 class46
-                                            = Class324.method2570(1512932720,
-                                            i_17_);
-                                    int i_18_ = (class348_sub42_sub15
-                                            .anInt9652);
-                                    int i_19_ = (class348_sub42_sub15
-                                            .anInt9651);
-                                    int i_20_ = (class348_sub42_sub15
-                                            .anInt9650);
-                                    if (i_18_ != class46.anInt770
-                                            || (class46.anInt753 != i_19_)
-                                            || (i_20_ != class46.anInt779)) {
-                                        class46.anInt753 = i_19_;
-                                        class46.anInt770 = i_18_;
-                                        class46.anInt779 = i_20_;
-                                        Class251.method1916(-9343, class46);
-                                    }
-                                } else if (i_16_ == 5) {
-                                    Class46 class46
-                                            = Class324.method2570(i ^ 0x5a2da9d8,
-                                            i_17_);
-                                    if ((class46.anInt699 != class348_sub42_sub15.anInt9652)
-                                            || (class348_sub42_sub15.anInt9652
-                                            == -1)) {
-                                        class46.anInt699
-                                                = class348_sub42_sub15.anInt9652;
-                                        class46.anInt795 = 0;
-                                        class46.anInt841 = 0;
-                                        class46.anInt730 = 1;
-                                        Class17 class17
-                                                = ((class46.anInt699
-                                                == -1)
-                                                ? null
-                                                : (Class10.aClass87_191
-                                                .method835
-                                                        ((class46
-                                                                        .anInt699),
-                                                                7)));
-                                        if (class17 != null)
-                                            Class264.method2017((class46
-                                                            .anInt795),
-                                                    class17, 30);
-                                        Class251.method1916(-9343, class46);
-                                    }
-                                } else if (i_16_ == 6) {
-                                    int i_21_ = (class348_sub42_sub15
-                                            .anInt9652);
-                                    int i_22_
-                                            = (0x7ff9 & i_21_) >> -1381220406;
-                                    int i_23_ = 0x1f & i_21_ >> 1431203525;
-                                    int i_24_ = 0x1f & i_21_;
-                                    int i_25_ = ((i_24_ << -419981053)
-                                            + ((i_22_ << -776313261)
-                                            - -(i_23_ << 1658085547)));
-                                    Class46 class46
-                                            = Class324.method2570(1512932720,
-                                            i_17_);
-                                    if (class46.anInt749 != i_25_) {
-                                        class46.anInt749 = i_25_;
-                                        Class251.method1916(-9343, class46);
-                                    }
-                                } else if (i_16_ == 7) {
-                                    Class46 class46
-                                            = Class324.method2570(1512932720,
-                                            i_17_);
-                                    boolean bool
-                                            = (class348_sub42_sub15.anInt9652
-                                            == 1);
-                                    if (!class46.aBoolean813
-                                            == bool) {
-                                        class46.aBoolean813 = bool;
-                                        Class251.method1916(-9343, class46);
-                                    }
-                                } else if (i_16_ == 8) {
-                                    Class46 class46
-                                            = Class324.method2570(1512932720,
-                                            i_17_);
-                                    if ((class46.anInt757
-                                            != class348_sub42_sub15.anInt9652)
-                                            || (class46.anInt675 != class348_sub42_sub15.anInt9651)
-                                            || (class46.anInt716 != class348_sub42_sub15.anInt9650)) {
-                                        class46.anInt716
-                                                = class348_sub42_sub15.anInt9650;
-                                        class46.anInt675
-                                                = class348_sub42_sub15.anInt9651;
-                                        class46.anInt757
-                                                = class348_sub42_sub15.anInt9652;
-                                        if (class46.anInt812 != -1) {
-                                            if (class46.anInt796
-                                                    <= 0) {
-                                                if ((class46
-                                                        .anInt842)
-                                                        > 0)
-                                                    class46
-                                                            .anInt716
-                                                            = (32
-                                                            * class46.anInt716
-                                                            / (class46
-                                                            .anInt842));
-                                            } else
-                                                class46.anInt716
-                                                        = ((class46
-                                                        .anInt716)
-                                                        * 32
+                            } else if (i_16_ == 4) {
+                                Class46 class46
+                                        = Class324.method2570(1512932720,
+                                        i_17_);
+                                int i_18_ = (class348_sub42_sub15
+                                        .anInt9652);
+                                int i_19_ = (class348_sub42_sub15
+                                        .anInt9651);
+                                int i_20_ = (class348_sub42_sub15
+                                        .anInt9650);
+                                if (i_18_ != class46.anInt770
+                                        || (class46.anInt753 != i_19_)
+                                        || (i_20_ != class46.anInt779)) {
+                                    class46.anInt753 = i_19_;
+                                    class46.anInt770 = i_18_;
+                                    class46.anInt779 = i_20_;
+                                    Class251.method1916(-9343, class46);
+                                }
+                            } else if (i_16_ == 5) {
+                                Class46 class46
+                                        = Class324.method2570(i ^ 0x5a2da9d8,
+                                        i_17_);
+                                if ((class46.anInt699 != class348_sub42_sub15.anInt9652)
+                                        || (class348_sub42_sub15.anInt9652
+                                        == -1)) {
+                                    class46.anInt699
+                                            = class348_sub42_sub15.anInt9652;
+                                    class46.anInt795 = 0;
+                                    class46.anInt841 = 0;
+                                    class46.anInt730 = 1;
+                                    Class17 class17
+                                            = ((class46.anInt699
+                                            == -1)
+                                            ? null
+                                            : (Class10.aClass87_191
+                                            .method835
+                                                    ((class46
+                                                                    .anInt699),
+                                                            7)));
+                                    if (class17 != null)
+                                        Class264.method2017((class46
+                                                        .anInt795),
+                                                class17, 30);
+                                    Class251.method1916(-9343, class46);
+                                }
+                            } else if (i_16_ == 6) {
+                                int i_21_ = (class348_sub42_sub15
+                                        .anInt9652);
+                                int i_22_
+                                        = (0x7ff9 & i_21_) >> -1381220406;
+                                int i_23_ = 0x1f & i_21_ >> 1431203525;
+                                int i_24_ = 0x1f & i_21_;
+                                int i_25_ = ((i_24_ << -419981053)
+                                        + ((i_22_ << -776313261)
+                                        - -(i_23_ << 1658085547)));
+                                Class46 class46
+                                        = Class324.method2570(1512932720,
+                                        i_17_);
+                                if (class46.anInt749 != i_25_) {
+                                    class46.anInt749 = i_25_;
+                                    Class251.method1916(-9343, class46);
+                                }
+                            } else if (i_16_ == 7) {
+                                Class46 class46
+                                        = Class324.method2570(1512932720,
+                                        i_17_);
+                                boolean bool
+                                        = (class348_sub42_sub15.anInt9652
+                                        == 1);
+                                if (!class46.aBoolean813
+                                        == bool) {
+                                    class46.aBoolean813 = bool;
+                                    Class251.method1916(-9343, class46);
+                                }
+                            } else if (i_16_ == 8) {
+                                Class46 class46
+                                        = Class324.method2570(1512932720,
+                                        i_17_);
+                                if ((class46.anInt757
+                                        != class348_sub42_sub15.anInt9652)
+                                        || (class46.anInt675 != class348_sub42_sub15.anInt9651)
+                                        || (class46.anInt716 != class348_sub42_sub15.anInt9650)) {
+                                    class46.anInt716
+                                            = class348_sub42_sub15.anInt9650;
+                                    class46.anInt675
+                                            = class348_sub42_sub15.anInt9651;
+                                    class46.anInt757
+                                            = class348_sub42_sub15.anInt9652;
+                                    if (class46.anInt812 != -1) {
+                                        if (class46.anInt796
+                                                <= 0) {
+                                            if ((class46
+                                                    .anInt842)
+                                                    > 0)
+                                                class46
+                                                        .anInt716
+                                                        = (32
+                                                        * class46.anInt716
                                                         / (class46
-                                                        .anInt796));
-                                        }
-                                        Class251.method1916(-9343, class46);
+                                                        .anInt842));
+                                        } else
+                                            class46.anInt716
+                                                    = ((class46
+                                                    .anInt716)
+                                                    * 32
+                                                    / (class46
+                                                    .anInt796));
                                     }
-                                } else if (i_16_ == 9) {
-                                    Class46 class46
-                                            = Class324.method2570(1512932720,
-                                            i_17_);
-                                    if ((class348_sub42_sub15.anInt9652
-                                            != class46.anInt812)
-                                            || (class348_sub42_sub15.anInt9651
-                                            != class46.anInt781)) {
-                                        class46.anInt781
-                                                = class348_sub42_sub15.anInt9651;
-                                        class46.anInt812
-                                                = class348_sub42_sub15.anInt9652;
-                                        Class251.method1916(-9343, class46);
-                                    }
-                                } else {
-                                    if (i_16_ == 10) {
-                                        Class46 class46
-                                                = Class324.method2570(1512932720,
-                                                i_17_);
-                                        if ((class46.anInt808
-                                                != (class348_sub42_sub15
-                                                .anInt9652))
-                                                || ((class46
-                                                .anInt786) != (class348_sub42_sub15
-                                                .anInt9651))
-                                                || ((class348_sub42_sub15
-                                                .anInt9650) != class46.anInt717)) {
-                                            class46.anInt786
-                                                    = (class348_sub42_sub15
-                                                    .anInt9651);
-                                            class46.anInt808
-                                                    = (class348_sub42_sub15
-                                                    .anInt9652);
-                                            class46.anInt717
-                                                    = (class348_sub42_sub15
-                                                    .anInt9650);
-                                            Class251.method1916(-9343,
-                                                    class46);
-                                        }
-                                    } else {
-                                        if (i_16_ == 11) {
-                                            Class46 class46
-                                                    = (Class324.method2570
-                                                    (1512932720, i_17_));
-                                            class46.aByte817
-                                                    = (byte) 0;
-                                            class46.anInt750
-                                                    = class46.anInt739
-                                                    = (class348_sub42_sub15
-                                                    .anInt9651);
-                                            class46.aByte681
-                                                    = (byte) 0;
-                                            class46.anInt800
-                                                    = class46.anInt788
-                                                    = (class348_sub42_sub15
-                                                    .anInt9652);
-                                            Class251.method1916(-9343,
-                                                    class46);
-                                        } else {
-                                            if (i_16_ == 12) {
-                                                Class46 class46
-                                                        = (Class324.method2570
-                                                        (1512932720, i_17_));
-                                                int i_26_
-                                                        = (class348_sub42_sub15
-                                                        .anInt9652);
-                                                if (class46 != null
-                                                        && (class46
-                                                        .anInt774) == 0) {
-                                                    if ((-(class46
-                                                            .anInt789)
-                                                            + (class46
-                                                            .anInt791))
-                                                            < i_26_)
-                                                        i_26_
-                                                                = ((class46
-                                                                .anInt791)
-                                                                - (class46
-                                                                .anInt789));
-                                                    if (i_26_ < 0)
-                                                        i_26_ = 0;
-                                                    if (i_26_
-                                                            != (class46
-                                                            .anInt755)) {
-                                                        class46
-                                                                .anInt755
-                                                                = i_26_;
-                                                        Class251.method1916
-                                                                (-9343, class46);
-                                                    }
-                                                }
-                                            } else {
-                                                if (i_16_ == 14) {
-                                                    Class46 class46
-                                                            = (Class324.method2570
-                                                            (1512932720,
-                                                                    i_17_));
-                                                    class46
-                                                            .anInt756
-                                                            = (class348_sub42_sub15
-                                                            .anInt9652);
-                                                } else if (i_16_ == 15) {
-                                                    Class97.anInt1548
-                                                            = (class348_sub42_sub15
-                                                            .anInt9651);
-                                                    Class248.anInt3203
-                                                            = (class348_sub42_sub15
-                                                            .anInt9652);
-                                                    Class348_Sub13.aBoolean6759
-                                                            = true;
-                                                } else if (i_16_ == 16) {
-                                                    Class46 class46
-                                                            = (Class324.method2570
-                                                            (1512932720,
-                                                                    i_17_));
-                                                    class46
-                                                            .anInt702
-                                                            = (class348_sub42_sub15
-                                                            .anInt9652);
-                                                } else {
-                                                    if (i_16_ == 17) {
-                                                        Class46 class46
-                                                                = (Class324
-                                                                .method2570
-                                                                        (1512932720,
-                                                                                i_17_));
-                                                        class46
-                                                                .anInt806
-                                                                = (class348_sub42_sub15
-                                                                .anInt9652);
-                                                    }
-                                                }
-                                            }
-                                        }
+                                    Class251.method1916(-9343, class46);
+                                }
+                            } else if (i_16_ == 9) {
+                                Class46 class46
+                                        = Class324.method2570(1512932720,
+                                        i_17_);
+                                if ((class348_sub42_sub15.anInt9652
+                                        != class46.anInt812)
+                                        || (class348_sub42_sub15.anInt9651
+                                        != class46.anInt781)) {
+                                    class46.anInt781
+                                            = class348_sub42_sub15.anInt9651;
+                                    class46.anInt812
+                                            = class348_sub42_sub15.anInt9652;
+                                    Class251.method1916(-9343, class46);
+                                }
+                            } else if (i_16_ == 10) {
+                                Class46 class46
+                                        = Class324.method2570(1512932720,
+                                        i_17_);
+                                if ((class46.anInt808
+                                        != (class348_sub42_sub15
+                                        .anInt9652))
+                                        || ((class46
+                                        .anInt786) != (class348_sub42_sub15
+                                        .anInt9651))
+                                        || ((class348_sub42_sub15
+                                        .anInt9650) != class46.anInt717)) {
+                                    class46.anInt786
+                                            = (class348_sub42_sub15
+                                            .anInt9651);
+                                    class46.anInt808
+                                            = (class348_sub42_sub15
+                                            .anInt9652);
+                                    class46.anInt717
+                                            = (class348_sub42_sub15
+                                            .anInt9650);
+                                    Class251.method1916(-9343,
+                                            class46);
+                                }
+                            } else if (i_16_ == 11) {
+                                Class46 class46
+                                        = (Class324.method2570
+                                        (1512932720, i_17_));
+                                class46.aByte817
+                                        = (byte) 0;
+                                class46.anInt750
+                                        = class46.anInt739
+                                        = (class348_sub42_sub15
+                                        .anInt9651);
+                                class46.aByte681
+                                        = (byte) 0;
+                                class46.anInt800
+                                        = class46.anInt788
+                                        = (class348_sub42_sub15
+                                        .anInt9652);
+                                Class251.method1916(-9343,
+                                        class46);
+                            } else if (i_16_ == 12) {
+                                Class46 class46
+                                        = (Class324.method2570
+                                        (1512932720, i_17_));
+                                int i_26_
+                                        = (class348_sub42_sub15
+                                        .anInt9652);
+                                if (class46 != null
+                                        && (class46
+                                        .anInt774) == 0) {
+                                    if ((-(class46
+                                            .anInt789)
+                                            + (class46
+                                            .anInt791))
+                                            < i_26_)
+                                        i_26_
+                                                = ((class46
+                                                .anInt791)
+                                                - (class46
+                                                .anInt789));
+                                    if (i_26_ < 0)
+                                        i_26_ = 0;
+                                    if (i_26_
+                                            != (class46
+                                            .anInt755)) {
+                                        class46
+                                                .anInt755
+                                                = i_26_;
+                                        Class251.method1916
+                                                (-9343, class46);
                                     }
                                 }
+                            } else if (i_16_ == 14) {
+                                Class46 class46
+                                        = (Class324.method2570
+                                        (1512932720,
+                                                i_17_));
+                                class46
+                                        .anInt756
+                                        = (class348_sub42_sub15
+                                        .anInt9652);
+                            } else if (i_16_ == 15) {
+                                Class97.anInt1548
+                                        = (class348_sub42_sub15
+                                        .anInt9651);
+                                Class248.anInt3203
+                                        = (class348_sub42_sub15
+                                        .anInt9652);
+                                Class348_Sub13.aBoolean6759
+                                        = true;
+                            } else if (i_16_ == 16) {
+                                Class46 class46
+                                        = (Class324.method2570
+                                        (1512932720,
+                                                i_17_));
+                                class46
+                                        .anInt702
+                                        = (class348_sub42_sub15
+                                        .anInt9652);
+                            } else if (i_16_ == 17) {
+                                Class46 class46
+                                        = (Class324
+                                        .method2570
+                                                (1512932720,
+                                                        i_17_));
+                                class46
+                                        .anInt806
+                                        = (class348_sub42_sub15
+                                        .anInt9652);
                             }
                         }
                         Class348_Sub51.anInt7267++;

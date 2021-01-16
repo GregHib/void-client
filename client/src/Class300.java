@@ -59,10 +59,8 @@ final class Class300 {
                  i_4_++)
                 this.anIntArray3821[i_4_]
                         = class348_sub49.method3330(842397944);
-        } else {
-            if (i_3_ == 3)
-                this.anInt3823 = class348_sub49.method3387(255);
-        }
+        } else if (i_3_ == 3)
+            this.anInt3823 = class348_sub49.method3387(255);
         if (i != 0)
             aBoolean3819 = true;
         anInt3822++;

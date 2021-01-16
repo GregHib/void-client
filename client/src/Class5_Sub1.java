@@ -119,22 +119,20 @@ class Class5_Sub1 extends Class5 {
                                         return true;
                                     }
                                     break while_3_;
-                                } else {
-                                    if (i_26_ != -3) {
-                                        if (i_26_ != -2) {
-                                            if (i_26_ != -1) {
-                                                if (i_26_ == 0
-                                                        || (i_26_ == 1)
-                                                        || (i_26_ == 2)
-                                                        || (i_26_ == 3)
-                                                        || i_26_ == 9)
-                                                    break while_1_;
-                                                break while_2_;
-                                            }
-                                        } else
-                                            break;
-                                        break while_0_;
-                                    }
+                                } else if (i_26_ != -3) {
+                                    if (i_26_ != -2) {
+                                        if (i_26_ != -1) {
+                                            if (i_26_ == 0
+                                                    || (i_26_ == 1)
+                                                    || (i_26_ == 2)
+                                                    || (i_26_ == 3)
+                                                    || i_26_ == 9)
+                                                break while_1_;
+                                            break while_2_;
+                                        }
+                                    } else
+                                        break;
+                                    break while_0_;
                                 }
                                 if (Class239_Sub28.method1842(i_11_, i_7_, -1,
                                         1, i_16_, i_17_,

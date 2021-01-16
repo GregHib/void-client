@@ -84,28 +84,26 @@ final class Class348_Sub33 extends Class348 {
                                 class348_sub49_sub2.method3378(false, 0);
                                 class348_sub49_sub2.method3391((byte) 108,
                                         i_5_);
-                            } else {
-                                if (i_3_ == 1) {
-                                    Field field
-                                            = ((Field)
-                                            (class348_sub48
-                                                    .aClass144Array7135[i_2_]
-                                                    .anObject1998));
-                                    field.setInt(null,
-                                            (class348_sub48
-                                                    .anIntArray7136[i_2_]));
-                                    class348_sub49_sub2.method3378(false, 0);
-                                } else if (i_3_ == 2) {
-                                    Field field
-                                            = ((Field)
-                                            (class348_sub48
-                                                    .aClass144Array7135[i_2_]
-                                                    .anObject1998));
-                                    int i_4_ = field.getModifiers();
-                                    class348_sub49_sub2.method3378(false, 0);
-                                    class348_sub49_sub2.method3391((byte) 122,
-                                            i_4_);
-                                }
+                            } else if (i_3_ == 1) {
+                                Field field
+                                        = ((Field)
+                                        (class348_sub48
+                                                .aClass144Array7135[i_2_]
+                                                .anObject1998));
+                                field.setInt(null,
+                                        (class348_sub48
+                                                .anIntArray7136[i_2_]));
+                                class348_sub49_sub2.method3378(false, 0);
+                            } else if (i_3_ == 2) {
+                                Field field
+                                        = ((Field)
+                                        (class348_sub48
+                                                .aClass144Array7135[i_2_]
+                                                .anObject1998));
+                                int i_4_ = field.getModifiers();
+                                class348_sub49_sub2.method3378(false, 0);
+                                class348_sub49_sub2.method3391((byte) 122,
+                                        i_4_);
                             }
                             if (i_3_ == 3) {
                                 Method method

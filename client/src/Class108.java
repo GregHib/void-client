@@ -82,18 +82,16 @@ final class Class108 {
 					.aBoolean10345) {
 						class348_sub42_sub6.method2715((byte) 76);
 						class318_sub1_sub3_sub4.method2466(false);
-					} else {
-                if (Class367_Sub11.anInt7396 >= (class318_sub1_sub3_sub4
-						.anInt10349)) {
-                    class318_sub1_sub3_sub4
-                            .method2470(Class348_Sub51.anInt7267, (byte) -16);
-                    if (class318_sub1_sub3_sub4
-                            .aBoolean10345)
-                        class348_sub42_sub6.method2715((byte) 42);
-                    else
-                        Class89.method850(class318_sub1_sub3_sub4, true);
-                }
-            }
+					} else if (Class367_Sub11.anInt7396 >= (class318_sub1_sub3_sub4
+					.anInt10349)) {
+				class318_sub1_sub3_sub4
+						.method2470(Class348_Sub51.anInt7267, (byte) -16);
+				if (class318_sub1_sub3_sub4
+						.aBoolean10345)
+					class348_sub42_sub6.method2715((byte) 42);
+				else
+					Class89.method850(class318_sub1_sub3_sub4, true);
+			}
 		}
         if (i != -4)
             aBoolean1661 = false;

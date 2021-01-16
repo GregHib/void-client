@@ -64,10 +64,8 @@ final class Class348_Sub40_Sub31 extends Class348_Sub40 {
                 if (i_15_ == 0) {
                     anInt9405 = class348_sub49.method3387(255);
                     break;
-                } else {
-                    if (i_15_ != 1)
-                        break;
-                }
+                } else if (i_15_ != 1)
+                    break;
                 anInt9410 = class348_sub49.method3387(255);
             } while (false);
             anInt9413++;

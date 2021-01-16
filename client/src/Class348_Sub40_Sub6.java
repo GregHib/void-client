@@ -56,10 +56,8 @@ final class Class348_Sub40_Sub6 extends Class348_Sub40 {
                 anInt9133
                         = class348_sub49.method3330(842397944) << -1225450108;
                 break;
-            } else {
-                if (i_12_ != 1)
-                    break;
-            }
+            } else if (i_12_ != 1)
+                break;
             this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
         } while (false);

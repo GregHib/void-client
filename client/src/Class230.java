@@ -589,12 +589,10 @@ final class Class230 {
                             class318_sub1_sub3_sub3
                                     .aBoolean10213
                                     = false;
-                        } else {
-                            if (class318_sub1_sub3_sub3.anInt10312
-                                    >= class17.anIntArray237.length)
-                                class318_sub1_sub3_sub3.anInt10312
-                                        = 0;
-                        }
+                        } else if (class318_sub1_sub3_sub3.anInt10312
+                                >= class17.anIntArray237.length)
+                            class318_sub1_sub3_sub3.anInt10312
+                                    = 0;
                     }
                 }
             } while (false);

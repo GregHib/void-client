@@ -53,45 +53,43 @@ final class Class277 {
                             = class348_sub49.method3330(842397944);
                     if (this.anInt3575 == 65535)
                         this.anInt3575 = -1;
-                } else {
-                    if (i_1_ != 5) {
-                        if (i_1_ != 7) {
-                            if (i_1_ == 8)
-                                this.aClass268_3562
-                                        .anInt3447
-                                        = this.anInt3573;
-                            else if (i_1_ == 9)
-                                this.anInt3570
-                                        = (class348_sub49.method3330(842397944)
-                                        << -345189086);
-                            else if (i_1_ == 10)
-                                this.aBoolean3566 = false;
-                            else if (i_1_ == 11)
-                                this.anInt3564
-                                        = class348_sub49.method3387(255);
-                            else if (i_1_ != 12) {
-                                if (i_1_ != 13) {
-                                    if (i_1_ != 14) {
-                                        if (i_1_ == 16)
-                                            this.anInt3574
-                                                    = class348_sub49
-                                                    .method3387(255);
-                                    } else
-                                        this.anInt3558
-                                                = (class348_sub49.method3387(255)
-                                                << 991859202);
+                } else if (i_1_ != 5) {
+                    if (i_1_ != 7) {
+                        if (i_1_ == 8)
+                            this.aClass268_3562
+                                    .anInt3447
+                                    = this.anInt3573;
+                        else if (i_1_ == 9)
+                            this.anInt3570
+                                    = (class348_sub49.method3330(842397944)
+                                    << -345189086);
+                        else if (i_1_ == 10)
+                            this.aBoolean3566 = false;
+                        else if (i_1_ == 11)
+                            this.anInt3564
+                                    = class348_sub49.method3387(255);
+                        else if (i_1_ != 12) {
+                            if (i_1_ != 13) {
+                                if (i_1_ != 14) {
+                                    if (i_1_ == 16)
+                                        this.anInt3574
+                                                = class348_sub49
+                                                .method3387(255);
                                 } else
-                                    this.anInt3559
-                                            = class348_sub49.method3351(-1);
+                                    this.anInt3558
+                                            = (class348_sub49.method3387(255)
+                                            << 991859202);
                             } else
-                                this.aBoolean3560 = true;
+                                this.anInt3559
+                                        = class348_sub49.method3351(-1);
                         } else
-                            this.anInt3569
-                                    = (Class348_Sub40_Sub34.method3140
-                                    (-67, class348_sub49.method3351(-1)));
+                            this.aBoolean3560 = true;
                     } else
-                        this.aBoolean3561 = false;
-                }
+                        this.anInt3569
+                                = (Class348_Sub40_Sub34.method3140
+                                (-67, class348_sub49.method3351(-1)));
+                } else
+                    this.aBoolean3561 = false;
             } else
                 this.anInt3563
                         = Class348_Sub40_Sub34

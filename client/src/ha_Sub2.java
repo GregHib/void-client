@@ -1514,16 +1514,14 @@ final class ha_Sub2 extends ha {
                 bool_105_ = true;
                 i_104_ = 2;
                 bool = false;
+            } else if (i == 128) {
+                i_104_ = 3;
+                bool_105_ = true;
+                bool = true;
             } else {
-                if (i == 128) {
-                    i_104_ = 3;
-                    bool_105_ = true;
-                    bool = true;
-                } else {
-                    bool = false;
-                    i_104_ = 0;
-                    bool_105_ = true;
-                }
+                bool = false;
+                i_104_ = 0;
+                bool_105_ = true;
             }
             if (!aBoolean7758 != !bool_105_) {
                 OpenGL.glColorMask(bool_105_, bool_105_, bool_105_, true);

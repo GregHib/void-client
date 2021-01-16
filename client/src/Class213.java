@@ -706,271 +706,259 @@ final class Class213 {
                                 = class348_sub49.method3330(842397944);
                         if (this.anInt2826 > 32767)
                             this.anInt2826 -= 65536;
-                    } else {
-                        if (i_57_ != 11) {
-                            if (i_57_ != 12) {
-                                if (i_57_ == 16)
-                                    this.aBoolean2783 = true;
-                                else if (i_57_ == 18)
-                                    this.anInt2802
+                    } else if (i_57_ != 11) {
+                        if (i_57_ != 12) {
+                            if (i_57_ == 16)
+                                this.aBoolean2783 = true;
+                            else if (i_57_ == 18)
+                                this.anInt2802
+                                        = class348_sub49
+                                        .method3330(i ^ 0x3235f8fc);
+                            else if (i_57_ == 23)
+                                this.anInt2815
+                                        = class348_sub49.method3330(842397944);
+                            else if (i_57_ == 24)
+                                anInt2804
+                                        = class348_sub49
+                                        .method3330(i ^ 0x3235f8fc);
+                            else if (i_57_ == 25)
+                                this.anInt2788
+                                        = class348_sub49
+                                        .method3330(i + 842397940);
+                            else if (i_57_ == 26)
+                                anInt2760 = class348_sub49
+                                        .method3330(i + 842397940);
+                            else if (i_57_ < 30
+                                    || i_57_ >= 35) {
+                                if (i_57_ >= 35 && i_57_ < 40)
+                                    this.aStringArray2763
+                                            [-35 + i_57_]
                                             = class348_sub49
-                                            .method3330(i ^ 0x3235f8fc);
-                                else if (i_57_ == 23)
-                                    this.anInt2815
-                                            = class348_sub49.method3330(842397944);
-                                else if (i_57_ == 24)
-                                    anInt2804
+                                            .method3377((byte) 103);
+                                else if (i_57_ == 40) {
+                                    int i_58_
+                                            = class348_sub49.method3387(255);
+                                    aShortArray2777 = new short[i_58_];
+                                    aShortArray2771 = new short[i_58_];
+                                    for (int i_59_ = 0; i_58_ > i_59_;
+                                         i_59_++) {
+                                        aShortArray2777[i_59_]
+                                                = (short) (class348_sub49
+                                                .method3330
+                                                        (842397944));
+                                        aShortArray2771[i_59_]
+                                                = (short) (class348_sub49
+                                                .method3330
+                                                        (842397944));
+                                    }
+                                } else if (i_57_ == 41) {
+                                    int i_68_ = class348_sub49
+                                            .method3387(i + 251);
+                                    aShortArray2801 = new short[i_68_];
+                                    aShortArray2785 = new short[i_68_];
+                                    for (int i_69_ = 0; i_69_ < i_68_;
+                                         i_69_++) {
+                                        aShortArray2785[i_69_]
+                                                = (short) (class348_sub49
+                                                .method3330
+                                                        (842397944));
+                                        aShortArray2801[i_69_]
+                                                = (short) (class348_sub49
+                                                .method3330
+                                                        (842397944));
+                                    }
+                                } else if (i_57_ == 42) {
+                                    int i_60_
                                             = class348_sub49
-                                            .method3330(i ^ 0x3235f8fc);
-                                else if (i_57_ == 25)
-                                    this.anInt2788
-                                            = class348_sub49
-                                            .method3330(i + 842397940);
-                                else if (i_57_ == 26)
-                                    anInt2760 = class348_sub49
-                                            .method3330(i + 842397940);
-                                else if (i_57_ < 30
-                                        || i_57_ >= 35) {
-                                    if (i_57_ >= 35 && i_57_ < 40)
-                                        this.aStringArray2763
-                                                [-35 + i_57_]
+                                            .method3387(i + 251);
+                                    aByteArray2821 = new byte[i_60_];
+                                    for (int i_61_ = 0; i_61_ < i_60_;
+                                         i_61_++)
+                                        aByteArray2821[i_61_]
                                                 = class348_sub49
-                                                .method3377((byte) 103);
-                                    else if (i_57_ == 40) {
-                                        int i_58_
-                                                = class348_sub49.method3387(255);
-                                        aShortArray2777 = new short[i_58_];
-                                        aShortArray2771 = new short[i_58_];
-                                        for (int i_59_ = 0; i_58_ > i_59_;
-                                             i_59_++) {
-                                            aShortArray2777[i_59_]
-                                                    = (short) (class348_sub49
-                                                    .method3330
-                                                            (842397944));
-                                            aShortArray2771[i_59_]
-                                                    = (short) (class348_sub49
-                                                    .method3330
-                                                            (842397944));
-                                        }
-                                    } else if (i_57_ == 41) {
-                                        int i_68_ = class348_sub49
-                                                .method3387(i + 251);
-                                        aShortArray2801 = new short[i_68_];
-                                        aShortArray2785 = new short[i_68_];
-                                        for (int i_69_ = 0; i_69_ < i_68_;
-                                             i_69_++) {
-                                            aShortArray2785[i_69_]
-                                                    = (short) (class348_sub49
-                                                    .method3330
-                                                            (842397944));
-                                            aShortArray2801[i_69_]
-                                                    = (short) (class348_sub49
-                                                    .method3330
-                                                            (842397944));
-                                        }
-                                    } else {
-                                        if (i_57_ == 42) {
-                                            int i_60_
-                                                    = class348_sub49
-                                                    .method3387(i + 251);
-                                            aByteArray2821 = new byte[i_60_];
-                                            for (int i_61_ = 0; i_61_ < i_60_;
-                                                 i_61_++)
-                                                aByteArray2821[i_61_]
-                                                        = class348_sub49
-                                                        .method3388(-114);
-                                        } else if (i_57_ == 65)
-                                            this.aBoolean2755
-                                                    = true;
-                                        else if (i_57_ == 78)
-                                            anInt2805
-                                                    = class348_sub49
-                                                    .method3330(842397944);
-                                        else if (i_57_ == 79)
-                                            anInt2770
-                                                    = (class348_sub49.method3330
-                                                    (i ^ 0x3235f8fc));
-                                        else if (i_57_ == 90)
-                                            anInt2792
-                                                    = class348_sub49
-                                                    .method3330(842397944);
-                                        else if (i_57_ == 91)
-                                            anInt2822
-                                                    = class348_sub49
-                                                    .method3330(842397944);
-                                        else if (i_57_ != 92) {
-                                            if (i_57_ != 93) {
-                                                if (i_57_ != 95) {
-                                                    if (i_57_ != 96) {
-                                                        if (i_57_ == 97)
-                                                            this
-                                                                    .anInt2758
-                                                                    = (class348_sub49
-                                                                    .method3330
-                                                                            (842397944));
-                                                        else if (i_57_ == 98)
-                                                            this
-                                                                    .anInt2833
-                                                                    = (class348_sub49
-                                                                    .method3330
-                                                                            (842397944));
-                                                        else if ((i_57_ >= 100)
-                                                                && (i_57_
-                                                                < 110)) {
-                                                            if ((this
-                                                                    .anIntArray2762)
-                                                                    == null) {
-                                                                this
-                                                                        .anIntArray2831
-                                                                        = (new int
-                                                                        [10]);
-                                                                this
-                                                                        .anIntArray2762
-                                                                        = (new int
-                                                                        [10]);
-                                                            }
-                                                            this
-                                                                    .anIntArray2762
-                                                                    [i_57_ - 100]
-                                                                    = (class348_sub49
-                                                                    .method3330
-                                                                            (842397944));
-                                                            this
-                                                                    .anIntArray2831
-                                                                    [i_57_ + -100]
-                                                                    = (class348_sub49
-                                                                    .method3330
-                                                                            (842397944));
-                                                        } else if (i_57_
-                                                                == 110)
-                                                            anInt2786
-                                                                    = (class348_sub49
-                                                                    .method3330
-                                                                            (842397944));
-                                                        else if (i_57_
-                                                                != 111) {
-                                                            if (i_57_ == 112)
-                                                                anInt2765
-                                                                        = (class348_sub49
-                                                                        .method3330
-                                                                                (842397944));
-                                                            else if (i_57_ != 113) {
-                                                                if (i_57_
-                                                                        == 114)
-                                                                    anInt2824
-                                                                            = ((class348_sub49.method3388
-                                                                            (-90))
-                                                                            * 5);
-                                                                else if (i_57_
-                                                                        == 115)
-                                                                    this
-                                                                            .anInt2827
-                                                                            = (class348_sub49.method3387
-                                                                            (255));
-                                                                else if (i_57_ != 121) {
-                                                                    if (i_57_
-                                                                            != 122) {
-                                                                        if (i_57_ == 125) {
-                                                                            anInt2807 = class348_sub49.method3388(-99) << 448961666;
-                                                                            anInt2797 = class348_sub49.method3388(i + -99) << 1336603138;
-                                                                            anInt2808 = class348_sub49.method3388(-111) << 1630838114;
-                                                                        } else {
-                                                                            if (i_57_ == 126) {
-                                                                                anInt2803 = class348_sub49.method3388(-121) << -39131134;
-                                                                                anInt2753 = class348_sub49.method3388(-92) << -179898174;
-                                                                                anInt2823 = class348_sub49.method3388(-93) << -1917956926;
-                                                                            } else {
-                                                                                if (i_57_ == 127) {
-                                                                                    this.anInt2752 = class348_sub49.method3387(255);
-                                                                                    this.anInt2759 = class348_sub49.method3330(842397944);
-                                                                                } else {
-                                                                                    if (i_57_ == 128) {
-                                                                                        this.anInt2764 = class348_sub49.method3387(255);
-                                                                                        this.anInt2830 = class348_sub49.method3330(842397944);
-                                                                                    } else {
-                                                                                        if (i_57_ == 129) {
-                                                                                            this.anInt2766 = class348_sub49.method3387(i ^ 0xfb);
-                                                                                            this.anInt2818 = class348_sub49.method3330(842397944);
-                                                                                        } else if (i_57_ == 130) {
-                                                                                            this.anInt2774 = class348_sub49.method3387(255);
-                                                                                            this.anInt2817 = class348_sub49.method3330(842397944);
-                                                                                        } else if (i_57_ == 132) {
-                                                                                            int i_62_ = class348_sub49.method3387(i ^ 0xfb);
-                                                                                            this.anIntArray2772 = new int[i_62_];
-                                                                                            for (int i_63_ = 0; i_62_ > i_63_; i_63_++)
-                                                                                                this.anIntArray2772[i_63_] = class348_sub49.method3330(842397944);
-                                                                                        } else if (i_57_ == 134)
-                                                                                            this.anInt2784 = class348_sub49.method3387(255);
-                                                                                        else if (i_57_ == 249) {
-                                                                                            int i_64_ = class348_sub49.method3387(255);
-                                                                                            if (this.aClass356_2757 == null) {
-                                                                                                int i_65_ = Class33.method340(i_64_, (byte) 108);
-                                                                                                this.aClass356_2757 = new Class356(i_65_);
-                                                                                            }
-                                                                                            for (int i_66_ = 0; i_66_ < i_64_; i_66_++) {
-                                                                                                boolean bool = class348_sub49.method3387(255) == 1;
-                                                                                                int i_67_ = class348_sub49.method3351(-1);
-                                                                                                Class348 class348;
-                                                                                                if (bool)
-                                                                                                    class348 = new Class348_Sub50(class348_sub49.method3377((byte) 107));
-                                                                                                else
-                                                                                                    class348 = new Class348_Sub35(class348_sub49.method3385((byte) -126));
-                                                                                                this.aClass356_2757.method3483((byte) 76, i_67_, class348);
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    } else
-                                                                        this
-                                                                                .anInt2812
-                                                                                = class348_sub49.method3330(i + 842397940);
-                                                                } else
-                                                                    this
-                                                                            .anInt2778
-                                                                            = (class348_sub49.method3330
-                                                                            (842397944));
-                                                            } else
-                                                                anInt2791
-                                                                        = (class348_sub49
-                                                                        .method3388
-                                                                                (-88));
-                                                        } else
-                                                            anInt2794
-                                                                    = (class348_sub49
-                                                                    .method3330
-                                                                            (842397944));
-                                                    } else
-                                                        this
-                                                                .anInt2799
-                                                                = (class348_sub49
-                                                                .method3387
-                                                                        (255));
-                                                } else
-                                                    this.anInt2810
+                                                .method3388(-114);
+                                } else if (i_57_ == 65)
+                                    this.aBoolean2755
+                                            = true;
+                                else if (i_57_ == 78)
+                                    anInt2805
+                                            = class348_sub49
+                                            .method3330(842397944);
+                                else if (i_57_ == 79)
+                                    anInt2770
+                                            = (class348_sub49.method3330
+                                            (i ^ 0x3235f8fc));
+                                else if (i_57_ == 90)
+                                    anInt2792
+                                            = class348_sub49
+                                            .method3330(842397944);
+                                else if (i_57_ == 91)
+                                    anInt2822
+                                            = class348_sub49
+                                            .method3330(842397944);
+                                else if (i_57_ != 92) {
+                                    if (i_57_ != 93) {
+                                        if (i_57_ != 95) {
+                                            if (i_57_ != 96) {
+                                                if (i_57_ == 97)
+                                                    this
+                                                            .anInt2758
                                                             = (class348_sub49
                                                             .method3330
-                                                                    (i + 842397940));
+                                                                    (842397944));
+                                                else if (i_57_ == 98)
+                                                    this
+                                                            .anInt2833
+                                                            = (class348_sub49
+                                                            .method3330
+                                                                    (842397944));
+                                                else if ((i_57_ >= 100)
+                                                        && (i_57_
+                                                        < 110)) {
+                                                    if ((this
+                                                            .anIntArray2762)
+                                                            == null) {
+                                                        this
+                                                                .anIntArray2831
+                                                                = (new int
+                                                                [10]);
+                                                        this
+                                                                .anIntArray2762
+                                                                = (new int
+                                                                [10]);
+                                                    }
+                                                    this
+                                                            .anIntArray2762
+                                                            [i_57_ - 100]
+                                                            = (class348_sub49
+                                                            .method3330
+                                                                    (842397944));
+                                                    this
+                                                            .anIntArray2831
+                                                            [i_57_ + -100]
+                                                            = (class348_sub49
+                                                            .method3330
+                                                                    (842397944));
+                                                } else if (i_57_
+                                                        == 110)
+                                                    anInt2786
+                                                            = (class348_sub49
+                                                            .method3330
+                                                                    (842397944));
+                                                else if (i_57_
+                                                        != 111) {
+                                                    if (i_57_ == 112)
+                                                        anInt2765
+                                                                = (class348_sub49
+                                                                .method3330
+                                                                        (842397944));
+                                                    else if (i_57_ != 113) {
+                                                        if (i_57_
+                                                                == 114)
+                                                            anInt2824
+                                                                    = ((class348_sub49.method3388
+                                                                    (-90))
+                                                                    * 5);
+                                                        else if (i_57_
+                                                                == 115)
+                                                            this
+                                                                    .anInt2827
+                                                                    = (class348_sub49.method3387
+                                                                    (255));
+                                                        else if (i_57_ != 121) {
+                                                            if (i_57_
+                                                                    != 122) {
+                                                                if (i_57_ == 125) {
+                                                                    anInt2807 = class348_sub49.method3388(-99) << 448961666;
+                                                                    anInt2797 = class348_sub49.method3388(i + -99) << 1336603138;
+                                                                    anInt2808 = class348_sub49.method3388(-111) << 1630838114;
+                                                                } else if (i_57_ == 126) {
+                                                                    anInt2803 = class348_sub49.method3388(-121) << -39131134;
+                                                                    anInt2753 = class348_sub49.method3388(-92) << -179898174;
+                                                                    anInt2823 = class348_sub49.method3388(-93) << -1917956926;
+                                                                } else if (i_57_ == 127) {
+                                                                    this.anInt2752 = class348_sub49.method3387(255);
+                                                                    this.anInt2759 = class348_sub49.method3330(842397944);
+                                                                } else if (i_57_ == 128) {
+                                                                    this.anInt2764 = class348_sub49.method3387(255);
+                                                                    this.anInt2830 = class348_sub49.method3330(842397944);
+                                                                } else if (i_57_ == 129) {
+                                                                    this.anInt2766 = class348_sub49.method3387(i ^ 0xfb);
+                                                                    this.anInt2818 = class348_sub49.method3330(842397944);
+                                                                } else if (i_57_ == 130) {
+                                                                    this.anInt2774 = class348_sub49.method3387(255);
+                                                                    this.anInt2817 = class348_sub49.method3330(842397944);
+                                                                } else if (i_57_ == 132) {
+                                                                    int i_62_ = class348_sub49.method3387(i ^ 0xfb);
+                                                                    this.anIntArray2772 = new int[i_62_];
+                                                                    for (int i_63_ = 0; i_62_ > i_63_; i_63_++)
+                                                                        this.anIntArray2772[i_63_] = class348_sub49.method3330(842397944);
+                                                                } else if (i_57_ == 134)
+                                                                    this.anInt2784 = class348_sub49.method3387(255);
+                                                                else if (i_57_ == 249) {
+                                                                    int i_64_ = class348_sub49.method3387(255);
+                                                                    if (this.aClass356_2757 == null) {
+                                                                        int i_65_ = Class33.method340(i_64_, (byte) 108);
+                                                                        this.aClass356_2757 = new Class356(i_65_);
+                                                                    }
+                                                                    for (int i_66_ = 0; i_66_ < i_64_; i_66_++) {
+                                                                        boolean bool = class348_sub49.method3387(255) == 1;
+                                                                        int i_67_ = class348_sub49.method3351(-1);
+                                                                        Class348 class348;
+                                                                        if (bool)
+                                                                            class348 = new Class348_Sub50(class348_sub49.method3377((byte) 107));
+                                                                        else
+                                                                            class348 = new Class348_Sub35(class348_sub49.method3385((byte) -126));
+                                                                        this.aClass356_2757.method3483((byte) 76, i_67_, class348);
+                                                                    }
+                                                                }
+                                                            } else
+                                                                this
+                                                                        .anInt2812
+                                                                        = class348_sub49.method3330(i + 842397940);
+                                                        } else
+                                                            this
+                                                                    .anInt2778
+                                                                    = (class348_sub49.method3330
+                                                                    (842397944));
+                                                    } else
+                                                        anInt2791
+                                                                = (class348_sub49
+                                                                .method3388
+                                                                        (-88));
+                                                } else
+                                                    anInt2794
+                                                            = (class348_sub49
+                                                            .method3330
+                                                                    (842397944));
                                             } else
-                                                anInt2775 = (class348_sub49
-                                                        .method3330
-                                                                (i + 842397940));
+                                                this
+                                                        .anInt2799
+                                                        = (class348_sub49
+                                                        .method3387
+                                                                (255));
                                         } else
-                                            anInt2767
-                                                    = class348_sub49
-                                                    .method3330(842397944);
-                                    }
+                                            this.anInt2810
+                                                    = (class348_sub49
+                                                    .method3330
+                                                            (i + 842397940));
+                                    } else
+                                        anInt2775 = (class348_sub49
+                                                .method3330
+                                                        (i + 842397940));
                                 } else
-                                    this.aStringArray2811
-                                            [-30 + i_57_]
-                                            = class348_sub49.method3377((byte) 98);
+                                    anInt2767
+                                            = class348_sub49
+                                            .method3330(842397944);
                             } else
-                                this.anInt2819
-                                        = class348_sub49.method3385((byte) -126);
+                                this.aStringArray2811
+                                        [-30 + i_57_]
+                                        = class348_sub49.method3377((byte) 98);
                         } else
-                            this.anInt2820 = 1;
-                    }
+                            this.anInt2819
+                                    = class348_sub49.method3385((byte) -126);
+                    } else
+                        this.anInt2820 = 1;
                 } else
                     this.aString2795
                             = class348_sub49.method3377((byte) -42);

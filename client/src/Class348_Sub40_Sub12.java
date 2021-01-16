@@ -225,21 +225,19 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
                                         anIntArrayArray9194[1][1] = 4096;
                                         anIntArrayArray9194[1][0] = 4096;
                                         break while_157_;
-                                    } else {
-                                        if (i_11_ != 2) {
-                                            if (i_11_ != 3) {
-                                                if (i_11_ != 4) {
-                                                    if (i_11_ != 5) {
-                                                        if (i_11_ != 6)
-                                                            break while_156_;
-                                                    } else
-                                                        break while_154_;
-                                                    break while_155_;
-                                                }
-                                            } else
-                                                break;
-                                            break while_153_;
-                                        }
+                                    } else if (i_11_ != 2) {
+                                        if (i_11_ != 3) {
+                                            if (i_11_ != 4) {
+                                                if (i_11_ != 5) {
+                                                    if (i_11_ != 6)
+                                                        break while_156_;
+                                                } else
+                                                    break while_154_;
+                                                break while_155_;
+                                            }
+                                        } else
+                                            break;
+                                        break while_153_;
                                     }
                                     anIntArrayArray9194 = new int[8][4];
                                     anIntArrayArray9194[0][3] = 2361;

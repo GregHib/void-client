@@ -73,159 +73,153 @@ final class Class321 {
                     anIntArrayArray3996[i_18_][2]
                             = class348_sub49.method3385((byte) -126);
                 }
-            } else {
-                if (i != 5) {
-                    if (i == 6)
-                        class348_sub49.method3387(255);
-                    else if (i == 7)
-                        class348_sub49.method3387(255);
-                    else if (i != 8) {
-                        if (i != 9) {
-                            if (i == 10) {
-                                int i_3_
-                                        = class348_sub49.method3387(i_0_ + 203);
-                                anIntArray4008 = new int[i_3_];
-                                for (int i_4_ = 0;
-                                     i_3_ > i_4_;
-                                     i_4_++)
-                                    anIntArray4008[i_4_]
+            } else if (i != 5) {
+                if (i == 6)
+                    class348_sub49.method3387(255);
+                else if (i == 7)
+                    class348_sub49.method3387(255);
+                else if (i != 8) {
+                    if (i != 9) {
+                        if (i == 10) {
+                            int i_3_
+                                    = class348_sub49.method3387(i_0_ + 203);
+                            anIntArray4008 = new int[i_3_];
+                            for (int i_4_ = 0;
+                                 i_3_ > i_4_;
+                                 i_4_++)
+                                anIntArray4008[i_4_]
+                                        = class348_sub49
+                                        .method3385((byte) -126);
+                        } else if (i != 12) {
+                            if (i == 13) {
+                                int i_15_ = class348_sub49.method3387(255);
+                                anIntArray4004 = new int[i_15_];
+                                for (int i_16_ = 0; i_16_ < i_15_; i_16_++)
+                                    anIntArray4004[i_16_]
                                             = class348_sub49
-                                            .method3385((byte) -126);
-                            } else if (i != 12) {
-                                if (i == 13) {
-                                    int i_15_ = class348_sub49.method3387(255);
-                                    anIntArray4004 = new int[i_15_];
-                                    for (int i_16_ = 0; i_16_ < i_15_; i_16_++)
-                                        anIntArray4004[i_16_]
-                                                = class348_sub49
-                                                .method3330(842397944);
-                                } else {
-                                    if (i == 14) {
-                                        int i_13_
-                                                = class348_sub49
-                                                .method3387(i_0_ ^ 0xcb);
-                                        anIntArrayArray4002
-                                                = new int[i_13_][2];
-                                        for (int i_14_ = 0; i_14_ < i_13_;
-                                             i_14_++) {
-                                            anIntArrayArray4002[i_14_][0]
-                                                    = class348_sub49
-                                                    .method3387(255);
-                                            anIntArrayArray4002[i_14_][1]
-                                                    = (class348_sub49.method3387
-                                                    (Class348_Sub21.method2955
-                                                            (i_0_, 203)));
-                                        }
-                                    } else {
-                                        if (i == 15)
-                                            class348_sub49
-                                                    .method3330(842397944);
-                                        else if (i == 17)
-                                            this.anInt4000
-                                                    = class348_sub49
-                                                    .method3330(842397944);
-                                        else if (i == 18) {
-                                            int i_5_ = class348_sub49
-                                                    .method3387(255);
-                                            anIntArray4014 = new int[i_5_];
-                                            aStringArray4011
-                                                    = new String[i_5_];
-                                            anIntArray4007 = new int[i_5_];
-                                            anIntArray4001 = new int[i_5_];
-                                            for (int i_6_ = 0;
-                                                 (i_6_ < i_5_);
-                                                 i_6_++) {
-                                                anIntArray4014[i_6_]
-                                                        = (class348_sub49
-                                                        .method3385
-                                                                ((byte) -126));
-                                                anIntArray4001[i_6_]
-                                                        = (class348_sub49
-                                                        .method3385
-                                                                ((byte) -126));
-                                                anIntArray4007[i_6_]
-                                                        = (class348_sub49
-                                                        .method3385
-                                                                ((byte) -126));
-                                                aStringArray4011[i_6_]
-                                                        = (class348_sub49
-                                                        .method3377
-                                                                ((byte) 123));
-                                            }
-                                        } else if (i == 19) {
-                                            int i_7_ = class348_sub49
-                                                    .method3387(255);
-                                            aStringArray4016
-                                                    = new String[i_7_];
-                                            anIntArray4003 = new int[i_7_];
-                                            anIntArray4009 = new int[i_7_];
-                                            anIntArray3998 = new int[i_7_];
-                                            for (int i_8_ = 0;
-                                                 (i_8_ < i_7_);
-                                                 i_8_++) {
-                                                anIntArray4009[i_8_]
-                                                        = (class348_sub49
-                                                        .method3385
-                                                                ((byte) -126));
-                                                anIntArray3998[i_8_]
-                                                        = (class348_sub49
-                                                        .method3385
-                                                                ((byte) -126));
-                                                anIntArray4003[i_8_]
-                                                        = (class348_sub49
-                                                        .method3385
-                                                                ((byte) -126));
-                                                aStringArray4016[i_8_]
-                                                        = (class348_sub49
-                                                        .method3377
-                                                                ((byte) -25));
-                                            }
-                                        } else if (i == 249) {
-                                            int i_9_ = class348_sub49
-                                                    .method3387(255);
-                                            if (aClass356_4006 == null) {
-                                                int i_10_
-                                                        = (Class33.method340
-                                                        (i_9_, (byte) 108));
-                                                aClass356_4006
-                                                        = new Class356(i_10_);
-                                            }
-                                            for (int i_11_ = 0; i_9_ > i_11_;
-                                                 i_11_++) {
-                                                boolean bool
-                                                        = (class348_sub49
-                                                        .method3387(255) == 1);
-                                                int i_12_
-                                                        = class348_sub49
-                                                        .method3351(-1);
-                                                Class348 class348;
-                                                if (!bool)
-                                                    class348
-                                                            = (new Class348_Sub35
-                                                            (class348_sub49
-                                                                    .method3385
-                                                                            ((byte) -126)));
-                                                else
-                                                    class348
-                                                            = (new Class348_Sub50
-                                                            (class348_sub49
-                                                                    .method3377
-                                                                            ((byte) -98)));
-                                                aClass356_4006.method3483
-                                                        ((byte) 123, i_12_,
-                                                                class348);
-                                            }
-                                        }
-                                    }
+                                            .method3330(842397944);
+                            } else if (i == 14) {
+                                int i_13_
+                                        = class348_sub49
+                                        .method3387(i_0_ ^ 0xcb);
+                                anIntArrayArray4002
+                                        = new int[i_13_][2];
+                                for (int i_14_ = 0; i_14_ < i_13_;
+                                     i_14_++) {
+                                    anIntArrayArray4002[i_14_][0]
+                                            = class348_sub49
+                                            .method3387(255);
+                                    anIntArrayArray4002[i_14_][1]
+                                            = (class348_sub49.method3387
+                                            (Class348_Sub21.method2955
+                                                    (i_0_, 203)));
                                 }
-                            } else
-                                class348_sub49.method3385((byte) -126);
+                            } else if (i == 15)
+                                class348_sub49
+                                        .method3330(842397944);
+                            else if (i == 17)
+                                this.anInt4000
+                                        = class348_sub49
+                                        .method3330(842397944);
+                            else if (i == 18) {
+                                int i_5_ = class348_sub49
+                                        .method3387(255);
+                                anIntArray4014 = new int[i_5_];
+                                aStringArray4011
+                                        = new String[i_5_];
+                                anIntArray4007 = new int[i_5_];
+                                anIntArray4001 = new int[i_5_];
+                                for (int i_6_ = 0;
+                                     (i_6_ < i_5_);
+                                     i_6_++) {
+                                    anIntArray4014[i_6_]
+                                            = (class348_sub49
+                                            .method3385
+                                                    ((byte) -126));
+                                    anIntArray4001[i_6_]
+                                            = (class348_sub49
+                                            .method3385
+                                                    ((byte) -126));
+                                    anIntArray4007[i_6_]
+                                            = (class348_sub49
+                                            .method3385
+                                                    ((byte) -126));
+                                    aStringArray4011[i_6_]
+                                            = (class348_sub49
+                                            .method3377
+                                                    ((byte) 123));
+                                }
+                            } else if (i == 19) {
+                                int i_7_ = class348_sub49
+                                        .method3387(255);
+                                aStringArray4016
+                                        = new String[i_7_];
+                                anIntArray4003 = new int[i_7_];
+                                anIntArray4009 = new int[i_7_];
+                                anIntArray3998 = new int[i_7_];
+                                for (int i_8_ = 0;
+                                     (i_8_ < i_7_);
+                                     i_8_++) {
+                                    anIntArray4009[i_8_]
+                                            = (class348_sub49
+                                            .method3385
+                                                    ((byte) -126));
+                                    anIntArray3998[i_8_]
+                                            = (class348_sub49
+                                            .method3385
+                                                    ((byte) -126));
+                                    anIntArray4003[i_8_]
+                                            = (class348_sub49
+                                            .method3385
+                                                    ((byte) -126));
+                                    aStringArray4016[i_8_]
+                                            = (class348_sub49
+                                            .method3377
+                                                    ((byte) -25));
+                                }
+                            } else if (i == 249) {
+                                int i_9_ = class348_sub49
+                                        .method3387(255);
+                                if (aClass356_4006 == null) {
+                                    int i_10_
+                                            = (Class33.method340
+                                            (i_9_, (byte) 108));
+                                    aClass356_4006
+                                            = new Class356(i_10_);
+                                }
+                                for (int i_11_ = 0; i_9_ > i_11_;
+                                     i_11_++) {
+                                    boolean bool
+                                            = (class348_sub49
+                                            .method3387(255) == 1);
+                                    int i_12_
+                                            = class348_sub49
+                                            .method3351(-1);
+                                    Class348 class348;
+                                    if (!bool)
+                                        class348
+                                                = (new Class348_Sub35
+                                                (class348_sub49
+                                                        .method3385
+                                                                ((byte) -126)));
+                                    else
+                                        class348
+                                                = (new Class348_Sub50
+                                                (class348_sub49
+                                                        .method3377
+                                                                ((byte) -98)));
+                                    aClass356_4006.method3483
+                                            ((byte) 123, i_12_,
+                                                    class348);
+                                }
+                            }
                         } else
-                            class348_sub49.method3387(255);
-                    }
-                } else
-                    class348_sub49.method3330(842397944);
-            }
+                            class348_sub49.method3385((byte) -126);
+                    } else
+                        class348_sub49.method3387(255);
+                }
+            } else
+                class348_sub49.method3330(842397944);
         } else
             aString4012 = class348_sub49.method3371(-13487);
     }

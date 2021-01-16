@@ -157,23 +157,21 @@ final class Class5_Sub3 extends Class5 {
                                         .method3335(-119, is[i_7_]);
                                 Class348_Sub42_Sub14
                                         .method3243(i_5_ + 7281, class348_sub47);
-                            } else {
-                                if (i == 7) {
-                                    Class369_Sub2.anInt8588++;
-                                    Class348_Sub47 class348_sub47
-                                            = (Class286_Sub3.method2148
-                                            (Class348_Sub42_Sub5.aClass351_9533,
-                                                    Class348_Sub23_Sub2.aClass77_9029,
-                                                    -116));
-                                    class348_sub47
-                                            .aClass348_Sub49_Sub2_7116
-                                            .method3335(i_5_ ^ 0x1c2c, is[i_7_]);
-                                    class348_sub47
-                                            .aClass348_Sub49_Sub2_7116
-                                            .method3395((byte) 92, 0);
-                                    Class348_Sub42_Sub14
-                                            .method3243(127, class348_sub47);
-                                }
+                            } else if (i == 7) {
+                                Class369_Sub2.anInt8588++;
+                                Class348_Sub47 class348_sub47
+                                        = (Class286_Sub3.method2148
+                                        (Class348_Sub42_Sub5.aClass351_9533,
+                                                Class348_Sub23_Sub2.aClass77_9029,
+                                                -116));
+                                class348_sub47
+                                        .aClass348_Sub49_Sub2_7116
+                                        .method3335(i_5_ ^ 0x1c2c, is[i_7_]);
+                                class348_sub47
+                                        .aClass348_Sub49_Sub2_7116
+                                        .method3395((byte) 92, 0);
+                                Class348_Sub42_Sub14
+                                        .method3243(127, class348_sub47);
                             }
                             break;
                         }

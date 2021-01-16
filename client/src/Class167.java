@@ -174,11 +174,9 @@ final class Class167 {
                                             Class287.method2178
                                                     (class318_sub1_sub3_sub3_sub2,
                                                             0, class17, -54);
-                                    } else {
-                                        if (i_14_ == 2)
-                                            class182.anInt2445
-                                                    = 0;
-                                    }
+                                    } else if (i_14_ == 2)
+                                        class182.anInt2445
+                                                = 0;
                                 } else if (class17.anInt239
                                         >= Class10.aClass87_191.method835
                                                 ((class182

@@ -46,20 +46,18 @@ final class Class239_Sub13 extends Class239 {
                                                     != (class318_sub1_sub3_sub3_sub1
                                                     .aByte6381)),
                                             false, class318_sub1_sub3_sub3_sub1);
-                    } else {
-                if (class318_sub1_sub3_sub3
-                        instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
-                    Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
-                            = ((Class318_Sub1_Sub3_Sub3_Sub2)
-                            class318_sub1_sub3_sub3);
-                    Class348_Sub43.method3298
-                            ((byte) 105,
-                                    ((class318_sub1_sub3_sub3_sub2
-                                            .aByte6381)
-                                            != (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                            .aByte6381)),
-                                    class318_sub1_sub3_sub3_sub2);
-                }
+                    } else if (class318_sub1_sub3_sub3
+                    instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
+                Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
+                        = ((Class318_Sub1_Sub3_Sub3_Sub2)
+                        class318_sub1_sub3_sub3);
+                Class348_Sub43.method3298
+                        ((byte) 105,
+                                ((class318_sub1_sub3_sub3_sub2
+                                        .aByte6381)
+                                        != (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                        .aByte6381)),
+                                class318_sub1_sub3_sub3_sub2);
             }
             anInt5981++;
         }

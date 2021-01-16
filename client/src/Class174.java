@@ -111,21 +111,19 @@ final class Class174 {
                     = class348_sub49.method3385((byte) -126);
             this.anInt2294
                     = class348_sub49.method3385((byte) -126);
-        } else {
-            if (i == 4) {
-                this.anInt2289 = class348_sub49.method3387(255);
-                this.anInt2304
-                        = class348_sub49.method3385((byte) -126);
-            } else if (i != 6) {
-                if (i == 8)
-                    this.anInt2297 = 1;
-                else if (i == 9)
-                    this.anInt2292 = 1;
-                else if (i == 10)
-                    aBoolean2308 = true;
-            } else
-                this.anInt2296 = class348_sub49.method3387(255);
-        }
+        } else if (i == 4) {
+            this.anInt2289 = class348_sub49.method3387(255);
+            this.anInt2304
+                    = class348_sub49.method3385((byte) -126);
+        } else if (i != 6) {
+            if (i == 8)
+                this.anInt2297 = 1;
+            else if (i == 9)
+                this.anInt2292 = 1;
+            else if (i == 10)
+                aBoolean2308 = true;
+        } else
+            this.anInt2296 = class348_sub49.method3387(255);
         if (i_8_ >= -124)
             this.aLong2301 = 65L;
     }

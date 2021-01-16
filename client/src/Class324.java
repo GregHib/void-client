@@ -872,11 +872,9 @@ abstract class Class324 {
             if (i_129_ == 1) {
                 i_142_ = aClass143_4063.method1183(true, string) + i_138_;
                 i_140_ += (i + -i_142_) / 2;
-            } else {
-                if (i_129_ == 2) {
-                    i_142_ = aClass143_4063.method1183(true, string) - -i_138_;
-                    i_140_ += -i_142_ + i;
-                }
+            } else if (i_129_ == 2) {
+                i_142_ = aClass143_4063.method1183(true, string) - -i_138_;
+                i_140_ += -i_142_ + i;
             }
             method2566(class105s, null, i_140_, is, is_137_, i_141_, string,
                     174);

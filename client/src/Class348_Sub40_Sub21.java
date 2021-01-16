@@ -98,24 +98,22 @@ final class Class348_Sub40_Sub21 extends Class348_Sub40 {
                                     anInt9269
                                             = class348_sub49.method3330(842397944);
                                     return;
-                                } else {
-                                    if (i_14_ != 1) {
-                                        if (i_14_ != 2) {
-                                            if (i_14_ != 3) {
-                                                if (i_14_ != 4) {
-                                                    if (i_14_ != 5) {
-                                                        if (i_14_ == 6)
-                                                            break while_182_;
-                                                        break while_183_;
-                                                    }
-                                                } else
-                                                    break while_180_;
-                                                break while_181_;
-                                            }
-                                        } else
-                                            break;
-                                        break while_179_;
-                                    }
+                                } else if (i_14_ != 1) {
+                                    if (i_14_ != 2) {
+                                        if (i_14_ != 3) {
+                                            if (i_14_ != 4) {
+                                                if (i_14_ != 5) {
+                                                    if (i_14_ == 6)
+                                                        break while_182_;
+                                                    break while_183_;
+                                                }
+                                            } else
+                                                break while_180_;
+                                            break while_181_;
+                                        }
+                                    } else
+                                        break;
+                                    break while_179_;
                                 }
                                 anInt9278
                                         = class348_sub49.method3330(842397944);

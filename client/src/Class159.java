@@ -61,13 +61,11 @@ final class Class159 {
                 Class348_Sub3.anInt6585 = i_14_;
                 Class314.anInt3941 = i_11_;
             }
-        } else {
-            if (i_4_ == -1) {
-                for (int i_10_ = 0; i_10_ < 100; i_10_++)
-                    Class152.aBooleanArray2076[i_10_] = true;
-            } else
-                Class152.aBooleanArray2076[i_4_] = true;
-        }
+        } else if (i_4_ == -1) {
+            for (int i_10_ = 0; i_10_ < 100; i_10_++)
+                Class152.aBooleanArray2076[i_10_] = true;
+        } else
+            Class152.aBooleanArray2076[i_4_] = true;
     }
 
     final void method1253(Class348_Sub49 class348_sub49, boolean bool) {

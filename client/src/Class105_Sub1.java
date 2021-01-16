@@ -195,169 +195,167 @@ final class Class105_Sub1 extends Class105 {
             aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
             aHa_Sub3_8407.method3915(0);
             aHa_Sub3_8407.method3933(-63);
-        } else {
-            if (bool_42_) {
-                int i_43_ = i_37_ + i_35_;
-                int i_44_ = method980();
-                class101_sub2_41_.method932
-                        (1.0F,
-                                anInterface18_Impl3_8403.method71((byte) -99,
-                                        (float) anInt8417),
-                                anInterface18_Impl3_8403.method67((float) i_36_, 110),
-                                (byte) -120);
-                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
-                int i_45_ = anInt8419 + i_35_;
-                int i_46_ = i_45_ - -anInt8417;
-                while (i_46_ <= i_43_) {
-                    class101_sub2.method932(0.0F, (float) anInt8417,
-                            (float) i_36_, (byte) -32);
-                    class101_sub2.method891(i, i_45_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    i_46_ += i_44_;
-                    i_45_ += i_44_;
-                    aHa_Sub3_8407.method3933(-57);
-                }
-                if (i_43_ > i_45_) {
-                    int i_47_ = i_43_ - i_45_;
-                    class101_sub2_41_.method932
-                            (1.0F,
-                                    anInterface18_Impl3_8403.method71((byte) -81,
-                                            (float) i_47_),
-                                    anInterface18_Impl3_8403.method67((float) i_36_, 127),
-                                    (byte) -16);
-                    aHa_Sub3_8407.method3853(-32,
-                            Class239_Sub18.aClass251_6030);
-                    class101_sub2.method932(0.0F, (float) i_47_, (float) i_36_,
-                            (byte) -101);
-                    class101_sub2.method891(i, i_45_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    aHa_Sub3_8407.method3933(-91);
-                }
-            } else if (bool) {
-                int i_61_ = i - -i_36_;
-                int i_62_ = method966();
-                class101_sub2_41_.method932
-                        (1.0F,
-                                anInterface18_Impl3_8403.method71((byte) -121,
-                                        (float) i_37_),
-                                anInterface18_Impl3_8403.method67((float) anInt8411, 77),
-                                (byte) -27);
-                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
-                int i_63_ = i - -anInt8400;
-                for (int i_64_ = anInt8411 + i_63_; i_64_ <= i_61_;
-                     i_64_ += i_62_) {
-                    class101_sub2.method932(0.0F, (float) i_37_,
-                            (float) anInt8411, (byte) -69);
-                    class101_sub2.method891(i_63_, i_35_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    i_63_ += i_62_;
-                    aHa_Sub3_8407.method3933(-40);
-                }
-                if (i_63_ < i_61_) {
-                    int i_65_ = -i_63_ + i_61_;
-                    class101_sub2_41_.method932
-                            (1.0F,
-                                    anInterface18_Impl3_8403.method71((byte) -62,
-                                            (float) i_37_),
-                                    anInterface18_Impl3_8403.method67((float) i_65_, 119),
-                                    (byte) -10);
-                    aHa_Sub3_8407.method3853(-32,
-                            Class239_Sub18.aClass251_6030);
-                    class101_sub2.method932(0.0F, (float) i_37_, (float) i_65_,
-                            (byte) -120);
-                    class101_sub2.method891(i_63_, i_35_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    aHa_Sub3_8407.method3933(-57);
-                }
-            } else {
-                int i_48_ = i_37_ + i_35_;
-                int i_49_ = i + i_36_;
-                int i_50_ = method966();
-                int i_51_ = method980();
-                int i_52_ = anInt8419 + i_35_;
-                int i_53_ = i_52_ + anInt8417;
-                while (i_48_ >= i_53_) {
-                    class101_sub2_41_.method932
-                            (1.0F,
-                                    anInterface18_Impl3_8403.method71((byte) -89,
-                                            (float) anInt8417),
-                                    anInterface18_Impl3_8403.method67((float) anInt8411,
-                                            88),
-                                    (byte) -16);
-                    aHa_Sub3_8407.method3853(-32,
-                            Class239_Sub18.aClass251_6030);
-                    int i_54_ = anInt8400 + i;
-                    for (int i_55_ = i_54_ - -anInt8411;
-						 i_55_ <= i_49_;
-                         i_55_ += i_50_) {
-                        class101_sub2.method932(0.0F, (float) anInt8417,
-                                (float) anInt8411, (byte) -65);
-                        class101_sub2.method891(i_54_, i_52_, 0);
-                        aHa_Sub3_8407.method3915(0);
-                        i_54_ += i_50_;
-                        aHa_Sub3_8407.method3933(-113);
-                    }
-                    if (i_49_ > i_54_) {
-                        int i_56_ = -i_54_ + i_49_;
-                        class101_sub2_41_.method932
-                                (1.0F,
-                                        anInterface18_Impl3_8403
-                                                .method71((byte) -82, (float) anInt8417),
-                                        anInterface18_Impl3_8403.method67((float) i_56_,
-                                                86),
-                                        (byte) -35);
-                        aHa_Sub3_8407
-                                .method3853(-32, Class239_Sub18.aClass251_6030);
-                        class101_sub2.method932(0.0F, (float) anInt8417,
-                                (float) i_56_, (byte) -26);
-                        class101_sub2.method891(i_54_, i_52_, 0);
-                        aHa_Sub3_8407.method3915(0);
-                        aHa_Sub3_8407.method3933(-79);
-                    }
-                    i_53_ += i_51_;
-                    i_52_ += i_51_;
-                }
-                if (i_52_ < i_48_) {
-                    int i_57_ = i_48_ + -i_52_;
-                    class101_sub2_41_.method932
-                            (1.0F,
-                                    anInterface18_Impl3_8403.method71((byte) -121,
-                                            (float) i_57_),
-                                    anInterface18_Impl3_8403.method67((float) anInt8411,
-                                            102),
-                                    (byte) -59);
-                    aHa_Sub3_8407.method3853(-32,
-                            Class239_Sub18.aClass251_6030);
-                    int i_58_ = anInt8400 + i;
-                    int i_59_ = anInt8411 + i_58_;
-                    while (i_49_ >= i_59_) {
-                        class101_sub2.method932(0.0F, (float) i_57_,
-                                (float) anInt8411, (byte) -98);
-                        class101_sub2.method891(i_58_, i_52_, 0);
-                        aHa_Sub3_8407.method3915(0);
-                        i_58_ += i_50_;
-                        i_59_ += i_50_;
-                        aHa_Sub3_8407.method3933(-69);
-                    }
-                    if (i_49_ > i_58_) {
-                        int i_60_ = i_49_ - i_58_;
-                        class101_sub2_41_.method932
-                                (1.0F,
-                                        anInterface18_Impl3_8403.method71((byte) -102,
-                                                (float) i_57_),
-                                        anInterface18_Impl3_8403.method67((float) i_60_,
-                                                115),
-                                        (byte) -90);
-                        aHa_Sub3_8407
-                                .method3853(-32, Class239_Sub18.aClass251_6030);
-                        class101_sub2.method932(0.0F, (float) i_57_,
-                                (float) i_60_, (byte) -95);
-                        class101_sub2.method891(i_58_, i_52_, 0);
-                        aHa_Sub3_8407.method3915(0);
-                        aHa_Sub3_8407.method3933(-54);
-                    }
-                }
-            }
+        } else if (bool_42_) {
+			int i_43_ = i_37_ + i_35_;
+			int i_44_ = method980();
+			class101_sub2_41_.method932
+					(1.0F,
+							anInterface18_Impl3_8403.method71((byte) -99,
+									(float) anInt8417),
+							anInterface18_Impl3_8403.method67((float) i_36_, 110),
+							(byte) -120);
+			aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+			int i_45_ = anInt8419 + i_35_;
+			int i_46_ = i_45_ - -anInt8417;
+			while (i_46_ <= i_43_) {
+				class101_sub2.method932(0.0F, (float) anInt8417,
+						(float) i_36_, (byte) -32);
+				class101_sub2.method891(i, i_45_, 0);
+				aHa_Sub3_8407.method3915(0);
+				i_46_ += i_44_;
+				i_45_ += i_44_;
+				aHa_Sub3_8407.method3933(-57);
+			}
+			if (i_43_ > i_45_) {
+				int i_47_ = i_43_ - i_45_;
+				class101_sub2_41_.method932
+						(1.0F,
+								anInterface18_Impl3_8403.method71((byte) -81,
+										(float) i_47_),
+								anInterface18_Impl3_8403.method67((float) i_36_, 127),
+								(byte) -16);
+				aHa_Sub3_8407.method3853(-32,
+						Class239_Sub18.aClass251_6030);
+				class101_sub2.method932(0.0F, (float) i_47_, (float) i_36_,
+						(byte) -101);
+				class101_sub2.method891(i, i_45_, 0);
+				aHa_Sub3_8407.method3915(0);
+				aHa_Sub3_8407.method3933(-91);
+			}
+		} else if (bool) {
+			int i_61_ = i - -i_36_;
+			int i_62_ = method966();
+			class101_sub2_41_.method932
+					(1.0F,
+							anInterface18_Impl3_8403.method71((byte) -121,
+									(float) i_37_),
+							anInterface18_Impl3_8403.method67((float) anInt8411, 77),
+							(byte) -27);
+			aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+			int i_63_ = i - -anInt8400;
+			for (int i_64_ = anInt8411 + i_63_; i_64_ <= i_61_;
+				 i_64_ += i_62_) {
+				class101_sub2.method932(0.0F, (float) i_37_,
+						(float) anInt8411, (byte) -69);
+				class101_sub2.method891(i_63_, i_35_, 0);
+				aHa_Sub3_8407.method3915(0);
+				i_63_ += i_62_;
+				aHa_Sub3_8407.method3933(-40);
+			}
+			if (i_63_ < i_61_) {
+				int i_65_ = -i_63_ + i_61_;
+				class101_sub2_41_.method932
+						(1.0F,
+								anInterface18_Impl3_8403.method71((byte) -62,
+										(float) i_37_),
+								anInterface18_Impl3_8403.method67((float) i_65_, 119),
+								(byte) -10);
+				aHa_Sub3_8407.method3853(-32,
+						Class239_Sub18.aClass251_6030);
+				class101_sub2.method932(0.0F, (float) i_37_, (float) i_65_,
+						(byte) -120);
+				class101_sub2.method891(i_63_, i_35_, 0);
+				aHa_Sub3_8407.method3915(0);
+				aHa_Sub3_8407.method3933(-57);
+			}
+		} else {
+			int i_48_ = i_37_ + i_35_;
+			int i_49_ = i + i_36_;
+			int i_50_ = method966();
+			int i_51_ = method980();
+			int i_52_ = anInt8419 + i_35_;
+			int i_53_ = i_52_ + anInt8417;
+			while (i_48_ >= i_53_) {
+				class101_sub2_41_.method932
+						(1.0F,
+								anInterface18_Impl3_8403.method71((byte) -89,
+										(float) anInt8417),
+								anInterface18_Impl3_8403.method67((float) anInt8411,
+										88),
+								(byte) -16);
+				aHa_Sub3_8407.method3853(-32,
+						Class239_Sub18.aClass251_6030);
+				int i_54_ = anInt8400 + i;
+				for (int i_55_ = i_54_ - -anInt8411;
+					 i_55_ <= i_49_;
+					 i_55_ += i_50_) {
+					class101_sub2.method932(0.0F, (float) anInt8417,
+							(float) anInt8411, (byte) -65);
+					class101_sub2.method891(i_54_, i_52_, 0);
+					aHa_Sub3_8407.method3915(0);
+					i_54_ += i_50_;
+					aHa_Sub3_8407.method3933(-113);
+				}
+				if (i_49_ > i_54_) {
+					int i_56_ = -i_54_ + i_49_;
+					class101_sub2_41_.method932
+							(1.0F,
+									anInterface18_Impl3_8403
+											.method71((byte) -82, (float) anInt8417),
+									anInterface18_Impl3_8403.method67((float) i_56_,
+											86),
+									(byte) -35);
+					aHa_Sub3_8407
+							.method3853(-32, Class239_Sub18.aClass251_6030);
+					class101_sub2.method932(0.0F, (float) anInt8417,
+							(float) i_56_, (byte) -26);
+					class101_sub2.method891(i_54_, i_52_, 0);
+					aHa_Sub3_8407.method3915(0);
+					aHa_Sub3_8407.method3933(-79);
+				}
+				i_53_ += i_51_;
+				i_52_ += i_51_;
+			}
+			if (i_52_ < i_48_) {
+				int i_57_ = i_48_ + -i_52_;
+				class101_sub2_41_.method932
+						(1.0F,
+								anInterface18_Impl3_8403.method71((byte) -121,
+										(float) i_57_),
+								anInterface18_Impl3_8403.method67((float) anInt8411,
+										102),
+								(byte) -59);
+				aHa_Sub3_8407.method3853(-32,
+						Class239_Sub18.aClass251_6030);
+				int i_58_ = anInt8400 + i;
+				int i_59_ = anInt8411 + i_58_;
+				while (i_49_ >= i_59_) {
+					class101_sub2.method932(0.0F, (float) i_57_,
+							(float) anInt8411, (byte) -98);
+					class101_sub2.method891(i_58_, i_52_, 0);
+					aHa_Sub3_8407.method3915(0);
+					i_58_ += i_50_;
+					i_59_ += i_50_;
+					aHa_Sub3_8407.method3933(-69);
+				}
+				if (i_49_ > i_58_) {
+					int i_60_ = i_49_ - i_58_;
+					class101_sub2_41_.method932
+							(1.0F,
+									anInterface18_Impl3_8403.method71((byte) -102,
+											(float) i_57_),
+									anInterface18_Impl3_8403.method67((float) i_60_,
+											115),
+									(byte) -90);
+					aHa_Sub3_8407
+							.method3853(-32, Class239_Sub18.aClass251_6030);
+					class101_sub2.method932(0.0F, (float) i_57_,
+							(float) i_60_, (byte) -95);
+					class101_sub2.method891(i_58_, i_52_, 0);
+					aHa_Sub3_8407.method3915(0);
+					aHa_Sub3_8407.method3933(-54);
+				}
+			}
 		}
 		aHa_Sub3_8407.method3879(-8629);
         aHa_Sub3_8407.method3849((byte) 47, 1,
@@ -472,21 +470,19 @@ final class Class105_Sub1 extends Class105 {
                                     Class139.method1166(-3725444, (is[i_91_ + i_90_]
                                             << -903347560))));
             }
-        } else {
-            if (i_78_ == 3) {
-                for (int i_86_ = 0;
-					 anInt8417 > i_86_;
-                     i_86_++) {
-                    int i_87_ = i_86_ * anInt8411;
-                    for (int i_88_ = 0; i_88_ < anInt8411; i_88_++)
-                        is_79_[i_88_ + i_87_]
-                                = (Class273.method2057
-                                (is[i_88_ + i_87_] != 0 ? -16777216 : 0,
-                                        Class139.method1166(16777215,
-                                                is_79_[i_88_ + i_87_])));
-                }
-            }
-        }
+        } else if (i_78_ == 3) {
+			for (int i_86_ = 0;
+				 anInt8417 > i_86_;
+				 i_86_++) {
+				int i_87_ = i_86_ * anInt8411;
+				for (int i_88_ = 0; i_88_ < anInt8411; i_88_++)
+					is_79_[i_88_ + i_87_]
+							= (Class273.method2057
+							(is[i_88_ + i_87_] != 0 ? -16777216 : 0,
+									Class139.method1166(16777215,
+											is_79_[i_88_ + i_87_])));
+			}
+		}
 		method986(0, 0, anInt8411, anInt8417, is_79_, 0, anInt8411);
     }
 

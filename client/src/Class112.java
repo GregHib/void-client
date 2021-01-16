@@ -129,46 +129,44 @@ final class Class112 implements Runnable {
                                                 .aClass348_Sub42_7063).anInt9609;
                         }
                     }
-                } else {
-                    if (Class242.aClass348_Sub42_Sub13_3152 != null
-                            && Class50_Sub3.anInt5252 < i_2_
-                            && (Class348_Sub1_Sub1.anInt8806
-                            + Class50_Sub3.anInt5252) > i_2_) {
-                        int i_4_ = -1;
-                        for (int i_5_ = 0;
-                             ((Class242.aClass348_Sub42_Sub13_3152
-                                     .anInt9615) > i_5_);
-                             i_5_++) {
-                            if (Class71.aBoolean1211) {
-                                int i_7_
-                                        = Class373.anInt4534 + (33 + 16 * i_5_);
-                                if (-13 + i_7_ < i_3_
-                                        && 3 + i_7_ >= i_3_)
-                                    i_4_ = i_5_;
-                            } else {
-                                int i_6_ = i_5_ * 16 + 31 + Class373.anInt4534;
-                                if (-13 + i_6_ < i_3_
-                                        && i_6_ - -3 >= i_3_)
-                                    i_4_ = i_5_;
-                            }
+                } else if (Class242.aClass348_Sub42_Sub13_3152 != null
+                        && Class50_Sub3.anInt5252 < i_2_
+                        && (Class348_Sub1_Sub1.anInt8806
+                        + Class50_Sub3.anInt5252) > i_2_) {
+                    int i_4_ = -1;
+                    for (int i_5_ = 0;
+                         ((Class242.aClass348_Sub42_Sub13_3152
+                                 .anInt9615) > i_5_);
+                         i_5_++) {
+                        if (Class71.aBoolean1211) {
+                            int i_7_
+                                    = Class373.anInt4534 + (33 + 16 * i_5_);
+                            if (-13 + i_7_ < i_3_
+                                    && 3 + i_7_ >= i_3_)
+                                i_4_ = i_5_;
+                        } else {
+                            int i_6_ = i_5_ * 16 + 31 + Class373.anInt4534;
+                            if (-13 + i_6_ < i_3_
+                                    && i_6_ - -3 >= i_3_)
+                                i_4_ = i_5_;
                         }
-                        if (i_4_ != -1) {
-                            int i_8_ = 0;
-                            Class156 class156
-                                    = new Class156(Class242
-                                            .aClass348_Sub42_Sub13_3152
-                                    .aClass107_9621);
-                            for (Class348_Sub42_Sub12 class348_sub42_sub12
-                                 = ((Class348_Sub42_Sub12)
-                                    class156.method1240(9));
-                                 class348_sub42_sub12 != null;
-                                 class348_sub42_sub12
-                                         = ((Class348_Sub42_Sub12)
-                                         class156.method1243((byte) 90))) {
-                                if (i_8_++ == i_4_)
-                                    return (class348_sub42_sub12
-                                            .anInt9609);
-                            }
+                    }
+                    if (i_4_ != -1) {
+                        int i_8_ = 0;
+                        Class156 class156
+                                = new Class156(Class242
+                                .aClass348_Sub42_Sub13_3152
+                                .aClass107_9621);
+                        for (Class348_Sub42_Sub12 class348_sub42_sub12
+                             = ((Class348_Sub42_Sub12)
+                                class156.method1240(9));
+                             class348_sub42_sub12 != null;
+                             class348_sub42_sub12
+                                     = ((Class348_Sub42_Sub12)
+                                     class156.method1243((byte) 90))) {
+                            if (i_8_++ == i_4_)
+                                return (class348_sub42_sub12
+                                        .anInt9609);
                         }
                     }
                 }

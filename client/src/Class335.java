@@ -70,46 +70,44 @@ final class Class335 {
                     class348_sub9.anInt6675 = i_4_;
                     class348_sub9.aBoolean6674 = false;
                     class348_sub9.anInt6685 = -1;
+                } else if ((class348_sub9.anInt6685 == i_5_)
+                        && (!class79.aBoolean1370
+                        != class348_sub9.aBoolean6674)) {
+                    class348_sub9.anInt6677
+                            = class79.anInt1356;
+                    class348_sub9.anInt6675 = i_4_;
                 } else {
-                    if ((class348_sub9.anInt6685 == i_5_)
-                            && (!class79.aBoolean1370
-                            != class348_sub9.aBoolean6674)) {
+                    boolean bool = false;
+                    if ((class348_sub9
+                            .aClass348_Sub16_Sub5_6676)
+                            == null)
+                        bool = true;
+                    else {
+                        class348_sub9.anInt6677 -= 512;
+                        if (class348_sub9.anInt6677 <= 0) {
+                            Class348_Sub43.aClass348_Sub16_Sub4_7065
+                                    .method2880
+                                            (class348_sub9
+                                                    .aClass348_Sub16_Sub5_6676);
+                            bool = true;
+                            class348_sub9
+                                    .aClass348_Sub16_Sub5_6676
+                                    = null;
+                        }
+                    }
+                    if (bool) {
+                        class348_sub9.aBoolean6674
+                                = class79.aBoolean1370;
+                        class348_sub9.anInt6685 = i_5_;
+                        class348_sub9
+                                .aClass348_Sub19_Sub1_6686
+                                = null;
+                        class348_sub9
+                                .aClass348_Sub10_6688
+                                = null;
+                        class348_sub9.anInt6675 = i_4_;
                         class348_sub9.anInt6677
                                 = class79.anInt1356;
-                        class348_sub9.anInt6675 = i_4_;
-                    } else {
-                        boolean bool = false;
-                        if ((class348_sub9
-                                .aClass348_Sub16_Sub5_6676)
-                                == null)
-                            bool = true;
-                        else {
-                            class348_sub9.anInt6677 -= 512;
-                            if (class348_sub9.anInt6677 <= 0) {
-                                Class348_Sub43.aClass348_Sub16_Sub4_7065
-                                        .method2880
-                                                (class348_sub9
-                                                        .aClass348_Sub16_Sub5_6676);
-                                bool = true;
-                                class348_sub9
-                                        .aClass348_Sub16_Sub5_6676
-                                        = null;
-                            }
-                        }
-                        if (bool) {
-                            class348_sub9.aBoolean6674
-                                    = class79.aBoolean1370;
-                            class348_sub9.anInt6685 = i_5_;
-                            class348_sub9
-                                    .aClass348_Sub19_Sub1_6686
-                                    = null;
-                            class348_sub9
-                                    .aClass348_Sub10_6688
-                                    = null;
-                            class348_sub9.anInt6675 = i_4_;
-                            class348_sub9.anInt6677
-                                    = class79.anInt1356;
-                        }
                     }
                 }
             }

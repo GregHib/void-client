@@ -116,24 +116,22 @@ final class Class347 {
                             Class2.method173(-67, Class289.aClass46_3701,
                                     (Class318_Sub1_Sub3_Sub4
                                             .aClass46_10336));
-                    } else {
-                        if ((Class318_Sub1_Sub5.anInt8770 == 1
-                                || Class318_Sub1_Sub5.method2485(-113))
-                                && Class73.anInt4776 > 2)
-                            Class5_Sub2.method191(true,
-                                    (ha_Sub3.anInt8001
-                                            + Class318_Sub4.anInt6411),
-                                    (Class219.anInt2872
-                                            - -(Class348_Sub40_Sub13
-                                            .anInt9203)));
-                        else if (Class101_Sub1.method913((byte) 127))
-                            Class5_Sub2.method191(true,
-                                    (ha_Sub3.anInt8001
-                                            + Class318_Sub4.anInt6411),
-                                    (Class219.anInt2872
-                                            + (Class348_Sub40_Sub13
-                                            .anInt9203)));
-                    }
+                    } else if ((Class318_Sub1_Sub5.anInt8770 == 1
+                            || Class318_Sub1_Sub5.method2485(-113))
+                            && Class73.anInt4776 > 2)
+                        Class5_Sub2.method191(true,
+                                (ha_Sub3.anInt8001
+                                        + Class318_Sub4.anInt6411),
+                                (Class219.anInt2872
+                                        - -(Class348_Sub40_Sub13
+                                        .anInt9203)));
+                    else if (Class101_Sub1.method913((byte) 127))
+                        Class5_Sub2.method191(true,
+                                (ha_Sub3.anInt8001
+                                        + Class318_Sub4.anInt6411),
+                                (Class219.anInt2872
+                                        + (Class348_Sub40_Sub13
+                                        .anInt9203)));
                     Class289.aClass46_3701 = null;
                 }
             }

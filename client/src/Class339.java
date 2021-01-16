@@ -61,11 +61,9 @@ final class Class339 implements Runnable {
             if (i_6_ != 0)
                 Class336.method2656(i_2_, i, (byte) 124, i_1_, i_3_);
             return;
-        } else {
-            if (i_6_ == 0) {
-                Class5_Sub2.method196(true, i_4_, i_1_, i, i_2_);
-                return;
-            }
+        } else if (i_6_ == 0) {
+            Class5_Sub2.method196(true, i_4_, i_1_, i, i_2_);
+            return;
         }
         int i_7_ = (i_6_ << 1475002892) / i_5_;
         int i_8_ = -(i_7_ * i >> 1276386988) + i_2_;

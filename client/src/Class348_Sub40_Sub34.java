@@ -87,10 +87,8 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
                 if (i_6_ == 0) {
                     anInt9438 = class348_sub49.method3330(842397944);
                     break;
-                } else {
-                    if (i_6_ != 1)
-                        break;
-                }
+                } else if (i_6_ != 1)
+                    break;
                 aBoolean9439 = class348_sub49.method3387(255) == 1;
                 break;
             } catch (RuntimeException runtimeexception) {

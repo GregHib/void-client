@@ -136,21 +136,19 @@ final class Class263 {
                                         return true;
                                     }
                                     break while_85_;
-                                } else {
-                                    if (i_20_ != -3) {
-                                        if (i_20_ != -2) {
-                                            if (i_20_ != -1) {
-                                                if (i_20_ == 0
-                                                        || i_20_ == 1 || i_20_ == 2
-                                                        || i_20_ == 3
-                                                        || (i_20_ == 9))
-                                                    break while_83_;
-                                                break while_84_;
-                                            }
-                                        } else
-                                            break;
-                                        break while_82_;
-                                    }
+                                } else if (i_20_ != -3) {
+                                    if (i_20_ != -2) {
+                                        if (i_20_ != -1) {
+                                            if (i_20_ == 0
+                                                    || i_20_ == 1 || i_20_ == 2
+                                                    || i_20_ == 3
+                                                    || (i_20_ == 9))
+                                                break while_83_;
+                                            break while_84_;
+                                        }
+                                    } else
+                                        break;
+                                    break while_82_;
                                 }
                                 if (Class239_Sub28.method1842(i_5_, i_2_, -1,
                                         2, i_10_, i_11_,
@@ -368,27 +366,25 @@ final class Class263 {
                 is_28_[3] = class348_sub49.method3330(842397944);
                 is_28_[4] = class348_sub49.method3330(842397944);
                 is_28_[5] = class348_sub49.method3330(842397944);
-            } else {
-                if (i_23_ == 4) {
-                    int i_24_ = class348_sub49.method3387(255);
-                    RuntimeException_Sub1.anIntArray4603 = new int[i_24_];
-                    for (int i_25_ = 0;
-                         i_24_ > i_25_;
-                         i_25_++) {
-                        RuntimeException_Sub1.anIntArray4603[i_25_]
-                                = class348_sub49.method3330(842397944);
-                        if (RuntimeException_Sub1.anIntArray4603[i_25_] == 65535)
-                            RuntimeException_Sub1.anIntArray4603[i_25_] = -1;
-                    }
-                } else if (i_23_ == 5) {
-                    int i_26_ = class348_sub49.method3387(255);
-                    Class239_Sub17.anIntArray6021 = new int[i_26_];
-                    for (int i_27_ = 0; i_27_ < i_26_; i_27_++) {
-                        Class239_Sub17.anIntArray6021[i_27_]
-                                = class348_sub49.method3330(842397944);
-                        if (Class239_Sub17.anIntArray6021[i_27_] == 65535)
-                            Class239_Sub17.anIntArray6021[i_27_] = -1;
-                    }
+            } else if (i_23_ == 4) {
+                int i_24_ = class348_sub49.method3387(255);
+                RuntimeException_Sub1.anIntArray4603 = new int[i_24_];
+                for (int i_25_ = 0;
+                     i_24_ > i_25_;
+                     i_25_++) {
+                    RuntimeException_Sub1.anIntArray4603[i_25_]
+                            = class348_sub49.method3330(842397944);
+                    if (RuntimeException_Sub1.anIntArray4603[i_25_] == 65535)
+                        RuntimeException_Sub1.anIntArray4603[i_25_] = -1;
+                }
+            } else if (i_23_ == 5) {
+                int i_26_ = class348_sub49.method3387(255);
+                Class239_Sub17.anIntArray6021 = new int[i_26_];
+                for (int i_27_ = 0; i_27_ < i_26_; i_27_++) {
+                    Class239_Sub17.anIntArray6021[i_27_]
+                            = class348_sub49.method3330(842397944);
+                    if (Class239_Sub17.anIntArray6021[i_27_] == 65535)
+                        Class239_Sub17.anIntArray6021[i_27_] = -1;
                 }
             }
         }

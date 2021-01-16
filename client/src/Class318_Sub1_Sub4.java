@@ -110,10 +110,8 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                         if (i_10_ == 4318) {
                             bool_5_ = bool_5_ & (l >= 64425238954L);
                             break;
-                        } else {
-                            if (i_10_ != 4098)
-                                break;
-                        }
+                        } else if (i_10_ != 4098)
+                            break;
                         bool_5_ = bool_5_ & (l >= 60129613779L);
                     }
                 } catch (Exception exception) {

@@ -208,48 +208,46 @@ final class Class211 {
                                                                         anInt2740
                                                                                 = 1;
                                                                         break while_70_;
-                                                                    } else {
-                                                                        if (i_38_ != 3) {
-                                                                            if (i_38_ != 4) {
-                                                                                if (i_38_ != 5) {
-                                                                                    if (i_38_ != 12) {
-                                                                                        if (i_38_ != 13) {
-                                                                                            if (i_38_ != 10) {
-                                                                                                if (i_38_ != 11) {
-                                                                                                    if (i_38_ != 6) {
-                                                                                                        if (i_38_ != 7) {
-                                                                                                            if (i_38_ != 8) {
-                                                                                                                if (i_38_ != 9) {
-                                                                                                                    if (i_38_ != 14) {
-                                                                                                                        if (i_38_ != 15) {
-                                                                                                                            if (i_38_ == 16)
-                                                                                                                                break while_68_;
-                                                                                                                            break while_69_;
-                                                                                                                        }
-                                                                                                                    } else
-                                                                                                                        break while_66_;
-                                                                                                                    break while_67_;
-                                                                                                                }
-                                                                                                            } else
-                                                                                                                break while_64_;
-                                                                                                            break while_65_;
-                                                                                                        }
-                                                                                                    } else
-                                                                                                        break while_62_;
-                                                                                                    break while_63_;
-                                                                                                }
-                                                                                            } else
-                                                                                                break while_60_;
-                                                                                            break while_61_;
-                                                                                        }
-                                                                                    } else
-                                                                                        break while_58_;
-                                                                                    break while_59_;
-                                                                                }
-                                                                            } else
-                                                                                break;
-                                                                            break while_57_;
-                                                                        }
+                                                                    } else if (i_38_ != 3) {
+                                                                        if (i_38_ != 4) {
+                                                                            if (i_38_ != 5) {
+                                                                                if (i_38_ != 12) {
+                                                                                    if (i_38_ != 13) {
+                                                                                        if (i_38_ != 10) {
+                                                                                            if (i_38_ != 11) {
+                                                                                                if (i_38_ != 6) {
+                                                                                                    if (i_38_ != 7) {
+                                                                                                        if (i_38_ != 8) {
+                                                                                                            if (i_38_ != 9) {
+                                                                                                                if (i_38_ != 14) {
+                                                                                                                    if (i_38_ != 15) {
+                                                                                                                        if (i_38_ == 16)
+                                                                                                                            break while_68_;
+                                                                                                                        break while_69_;
+                                                                                                                    }
+                                                                                                                } else
+                                                                                                                    break while_66_;
+                                                                                                                break while_67_;
+                                                                                                            }
+                                                                                                        } else
+                                                                                                            break while_64_;
+                                                                                                        break while_65_;
+                                                                                                    }
+                                                                                                } else
+                                                                                                    break while_62_;
+                                                                                                break while_63_;
+                                                                                            }
+                                                                                        } else
+                                                                                            break while_60_;
+                                                                                        break while_61_;
+                                                                                    }
+                                                                                } else
+                                                                                    break while_58_;
+                                                                                break while_59_;
+                                                                            }
+                                                                        } else
+                                                                            break;
+                                                                        break while_57_;
                                                                     }
                                                                     anInt2738
                                                                             = 0;
@@ -380,18 +378,16 @@ final class Class211 {
                                             [i_41_ << 680948963])
                                             >> 2080897156) + 1024;
                                     break while_74_;
-                                } else {
-                                    if (i_42_ != 3) {
-                                        if (i_42_ != 4) {
-                                            if (i_42_ != 2) {
-                                                if (i_42_ == 5)
-                                                    break while_72_;
-                                                break while_73_;
-                                            }
-                                        } else
-                                            break;
-                                        break while_71_;
-                                    }
+                                } else if (i_42_ != 3) {
+                                    if (i_42_ != 4) {
+                                        if (i_42_ != 2) {
+                                            if (i_42_ == 5)
+                                                break while_72_;
+                                            break while_73_;
+                                        }
+                                    } else
+                                        break;
+                                    break while_71_;
                                 }
                                 i_40_ = (Class291.anIntArray3726[i_41_]
                                         >> -813205215);

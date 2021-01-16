@@ -67,10 +67,8 @@ public final class Class378 extends ha_Sub3 {
                     if (i_2_ == 1) {
                         i_3_ = 6;
                         break while_232_;
-                    } else {
-                        if (i_2_ != 2)
-                            break;
-                    }
+                    } else if (i_2_ != 2)
+                        break;
                     i_3_ = 27;
                     break while_232_;
                 } while (false);
@@ -239,10 +237,8 @@ public final class Class378 extends ha_Sub3 {
                 if (1 == i_14_) {
                     i_15_ = 3;
                     break while_233_;
-                } else {
-                    if (i_14_ != 2)
-                        break;
-                }
+                } else if (i_14_ != 2)
+                    break;
                 i_15_ = 26;
                 break while_233_;
             } while (false);
@@ -1206,15 +1202,13 @@ public final class Class378 extends ha_Sub3 {
         if (Class348_Sub4.aClass173_6602 == this.aClass173_8163) {
             this.anIDirect3DDevice9810.SetRenderState(19, 5);
             this.anIDirect3DDevice9810.SetRenderState(20, 6);
-        } else {
-            if (this.aClass173_8163 == Class69.aClass173_1201) {
-                this.anIDirect3DDevice9810.SetRenderState(19, 2);
-                this.anIDirect3DDevice9810.SetRenderState(20, 2);
-            } else if (Class273.aClass173_5169
-                    == this.aClass173_8163) {
-                this.anIDirect3DDevice9810.SetRenderState(19, 9);
-                this.anIDirect3DDevice9810.SetRenderState(20, 2);
-            }
+        } else if (this.aClass173_8163 == Class69.aClass173_1201) {
+            this.anIDirect3DDevice9810.SetRenderState(19, 2);
+            this.anIDirect3DDevice9810.SetRenderState(20, 2);
+        } else if (Class273.aClass173_5169
+                == this.aClass173_8163) {
+            this.anIDirect3DDevice9810.SetRenderState(19, 9);
+            this.anIDirect3DDevice9810.SetRenderState(20, 2);
         }
     }
 

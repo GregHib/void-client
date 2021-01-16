@@ -27,12 +27,10 @@ abstract class Class348_Sub23 extends Class348 {
                     if (bool)
                         return 0;
                     return Class348_Sub40_Sub8.anInt9157;
-                } else {
-                    if (i_0_ != 1) {
-                        if (i_0_ == 2)
-                            break;
-                        break while_128_;
-                    }
+                } else if (i_0_ != 1) {
+                    if (i_0_ == 2)
+                        break;
+                    break while_128_;
                 }
                 return Class348_Sub40_Sub8.anInt9157;
             } while (false);

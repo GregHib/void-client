@@ -745,17 +745,15 @@ final class Class377 extends ha_Sub3 {
                 aBoolean9911 = true;
             } else
                 aBoolean9911 = false;
+        } else if (this.aBoolean8069) {
+            OpenGL.glLoadIdentity();
+            aBoolean9911 = false;
         } else {
-            if (this.aBoolean8069) {
-                OpenGL.glLoadIdentity();
-                aBoolean9911 = false;
-            } else {
-                OpenGL.glLoadMatrixf
-                        (this.aClass101_Sub2_8074
-                                        .method918(Class233.aFloatArray3015, 0),
-                                0);
-                aBoolean9911 = false;
-            }
+            OpenGL.glLoadMatrixf
+                    (this.aClass101_Sub2_8074
+                                    .method918(Class233.aFloatArray3015, 0),
+                            0);
+            aBoolean9911 = false;
         }
     }
 
@@ -976,23 +974,21 @@ final class Class377 extends ha_Sub3 {
             if (Class249.aClass21_3217 == class21) {
                 i_44_ = 1;
                 i_45_ = i * 2;
+            } else if (class21 == Class348_Sub5_Sub1.aClass21_8832) {
+                i_45_ = 1 + i;
+                i_44_ = 3;
+            } else if (class21 == Class247.aClass21_3181) {
+                i_44_ = 4;
+                i_45_ = i * 3;
+            } else if (Class348_Sub42_Sub16.aClass21_9661 == class21) {
+                i_44_ = 6;
+                i_45_ = 2 + i;
+            } else if (class21 == s_Sub3.aClass21_8320) {
+                i_45_ = 2 + i;
+                i_44_ = 5;
             } else {
-                if (class21 == Class348_Sub5_Sub1.aClass21_8832) {
-                    i_45_ = 1 + i;
-                    i_44_ = 3;
-                } else if (class21 == Class247.aClass21_3181) {
-                    i_44_ = 4;
-                    i_45_ = i * 3;
-                } else if (Class348_Sub42_Sub16.aClass21_9661 == class21) {
-                    i_44_ = 6;
-                    i_45_ = 2 + i;
-                } else if (class21 == s_Sub3.aClass21_8320) {
-                    i_45_ = 2 + i;
-                    i_44_ = 5;
-                } else {
-                    i_45_ = i;
-                    i_44_ = 0;
-                }
+                i_45_ = i;
+                i_44_ = 0;
             }
             Class68 class68 = interface5_impl2.method25((byte) 51);
             Class285_Sub2 class285_sub2 = (Class285_Sub2) interface5_impl2;
@@ -1110,25 +1106,21 @@ final class Class377 extends ha_Sub3 {
             if (class21 == Class249.aClass21_3217) {
                 i_51_ = 2 * i;
                 i_52_ = 1;
+            } else if (Class348_Sub5_Sub1.aClass21_8832 == class21) {
+                i_51_ = i - -1;
+                i_52_ = 3;
+            } else if (Class247.aClass21_3181 == class21) {
+                i_52_ = 4;
+                i_51_ = i * 3;
+            } else if (class21 == Class348_Sub42_Sub16.aClass21_9661) {
+                i_52_ = 6;
+                i_51_ = 2 + i;
+            } else if (s_Sub3.aClass21_8320 == class21) {
+                i_51_ = 2 + i;
+                i_52_ = 5;
             } else {
-                if (Class348_Sub5_Sub1.aClass21_8832 == class21) {
-                    i_51_ = i - -1;
-                    i_52_ = 3;
-                } else {
-                    if (Class247.aClass21_3181 == class21) {
-                        i_52_ = 4;
-                        i_51_ = i * 3;
-                    } else if (class21 == Class348_Sub42_Sub16.aClass21_9661) {
-                        i_52_ = 6;
-                        i_51_ = 2 + i;
-                    } else if (s_Sub3.aClass21_8320 == class21) {
-                        i_51_ = 2 + i;
-                        i_52_ = 5;
-                    } else {
-                        i_51_ = i;
-                        i_52_ = 0;
-                    }
-                }
+                i_51_ = i;
+                i_52_ = 0;
             }
             OpenGL.glDrawArrays(i_52_, i_50_, i_51_);
         } catch (RuntimeException runtimeexception) {
@@ -1390,26 +1382,22 @@ final class Class377 extends ha_Sub3 {
                         OpenGL.glColorPointer(4, 5121, i_79_,
                                 (long) i_78_ + l);
                         bool = true;
-                    } else {
-                        if (Class325.aClass325_4077 == class325) {
-                            OpenGL.glClientActiveTexture(33984 + i_74_++);
-                            OpenGL.glTexCoordPointer(1, 5126, i_79_,
-                                    (long) i_78_ + l);
-                        } else if (Class325.aClass325_4078 == class325) {
-                            OpenGL.glClientActiveTexture(i_74_++ + 33984);
-                            OpenGL.glTexCoordPointer(2, 5126, i_79_,
-                                    (long) i_78_ + l);
-                        } else {
-                            if (Class325.aClass325_4079 == class325) {
-                                OpenGL.glClientActiveTexture(i_74_++ + 33984);
-                                OpenGL.glTexCoordPointer(3, 5126, i_79_,
-                                        (long) i_78_ + l);
-                            } else if (class325 == Class325.aClass325_4080) {
-                                OpenGL.glClientActiveTexture(33984 - -i_74_++);
-                                OpenGL.glTexCoordPointer(4, 5126, i_79_,
-                                        l + (long) i_78_);
-                            }
-                        }
+                    } else if (Class325.aClass325_4077 == class325) {
+                        OpenGL.glClientActiveTexture(33984 + i_74_++);
+                        OpenGL.glTexCoordPointer(1, 5126, i_79_,
+                                (long) i_78_ + l);
+                    } else if (Class325.aClass325_4078 == class325) {
+                        OpenGL.glClientActiveTexture(i_74_++ + 33984);
+                        OpenGL.glTexCoordPointer(2, 5126, i_79_,
+                                (long) i_78_ + l);
+                    } else if (Class325.aClass325_4079 == class325) {
+                        OpenGL.glClientActiveTexture(i_74_++ + 33984);
+                        OpenGL.glTexCoordPointer(3, 5126, i_79_,
+                                (long) i_78_ + l);
+                    } else if (class325 == Class325.aClass325_4080) {
+                        OpenGL.glClientActiveTexture(33984 - -i_74_++);
+                        OpenGL.glTexCoordPointer(4, 5126, i_79_,
+                                l + (long) i_78_);
                     }
                     i_78_ += class325.anInt4069;
                 }

@@ -22,10 +22,8 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
             if (i_1_ == 0) {
                 anInt9226 = class348_sub49.method3387(255);
                 break;
-            } else {
-                if (i_1_ != 1)
-                    break;
-            }
+            } else if (i_1_ != 1)
+                break;
             this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
         } while (false);
@@ -95,40 +93,38 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                                                         [i_14_]));
                                                             }
                                                             break while_168_;
-                                                        } else {
-                                                            if (i_14_ != 2) {
-                                                                if (i_14_ != 3) {
-                                                                    if (i_14_ != 4) {
-                                                                        if (i_14_
-                                                                                != 5) {
-                                                                            if (i_14_ != 6) {
-                                                                                if (i_14_ != 7) {
-                                                                                    if (i_14_ != 8) {
-                                                                                        if (i_14_ != 9) {
-                                                                                            if (i_14_ != 10) {
-                                                                                                if (i_14_ != 11) {
-                                                                                                    if (i_14_ != 12)
-                                                                                                        break while_168_;
-                                                                                                } else
-                                                                                                    break while_166_;
-                                                                                                break while_167_;
-                                                                                            }
-                                                                                        } else
-                                                                                            break while_164_;
-                                                                                        break while_165_;
-                                                                                    }
-                                                                                } else
-                                                                                    break while_162_;
-                                                                                break while_163_;
-                                                                            }
-                                                                        } else
-                                                                            break while_160_;
-                                                                        break while_161_;
-                                                                    }
-                                                                } else
-                                                                    break;
-                                                                break while_159_;
-                                                            }
+                                                        } else if (i_14_ != 2) {
+                                                            if (i_14_ != 3) {
+                                                                if (i_14_ != 4) {
+                                                                    if (i_14_
+                                                                            != 5) {
+                                                                        if (i_14_ != 6) {
+                                                                            if (i_14_ != 7) {
+                                                                                if (i_14_ != 8) {
+                                                                                    if (i_14_ != 9) {
+                                                                                        if (i_14_ != 10) {
+                                                                                            if (i_14_ != 11) {
+                                                                                                if (i_14_ != 12)
+                                                                                                    break while_168_;
+                                                                                            } else
+                                                                                                break while_166_;
+                                                                                            break while_167_;
+                                                                                        }
+                                                                                    } else
+                                                                                        break while_164_;
+                                                                                    break while_165_;
+                                                                                }
+                                                                            } else
+                                                                                break while_162_;
+                                                                            break while_163_;
+                                                                        }
+                                                                    } else
+                                                                        break while_160_;
+                                                                    break while_161_;
+                                                                }
+                                                            } else
+                                                                break;
+                                                            break while_159_;
                                                         }
                                                         for (i_14_ = 0;
                                                              ((Class348_Sub40_Sub6
@@ -432,40 +428,38 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
                                                                         + (is_53_
                                                                         [i_54_]));
                                                             break while_178_;
-                                                        } else {
-                                                            if (i_54_ != 2) {
-                                                                if (i_54_
-                                                                        != 3) {
-                                                                    if (i_54_ != 4) {
-                                                                        if (i_54_ != 5) {
-                                                                            if (i_54_ != 6) {
-                                                                                if (i_54_ != 7) {
-                                                                                    if (i_54_ != 8) {
-                                                                                        if (i_54_ != 9) {
-                                                                                            if (i_54_ != 10) {
-                                                                                                if (i_54_ != 11) {
-                                                                                                    if (i_54_ != 12)
-                                                                                                        break while_178_;
-                                                                                                } else
-                                                                                                    break while_176_;
-                                                                                                break while_177_;
-                                                                                            }
-                                                                                        } else
-                                                                                            break while_174_;
-                                                                                        break while_175_;
-                                                                                    }
-                                                                                } else
-                                                                                    break while_172_;
-                                                                                break while_173_;
-                                                                            }
-                                                                        } else
-                                                                            break while_170_;
-                                                                        break while_171_;
-                                                                    }
-                                                                } else
-                                                                    break;
-                                                                break while_169_;
-                                                            }
+                                                        } else if (i_54_ != 2) {
+                                                            if (i_54_
+                                                                    != 3) {
+                                                                if (i_54_ != 4) {
+                                                                    if (i_54_ != 5) {
+                                                                        if (i_54_ != 6) {
+                                                                            if (i_54_ != 7) {
+                                                                                if (i_54_ != 8) {
+                                                                                    if (i_54_ != 9) {
+                                                                                        if (i_54_ != 10) {
+                                                                                            if (i_54_ != 11) {
+                                                                                                if (i_54_ != 12)
+                                                                                                    break while_178_;
+                                                                                            } else
+                                                                                                break while_176_;
+                                                                                            break while_177_;
+                                                                                        }
+                                                                                    } else
+                                                                                        break while_174_;
+                                                                                    break while_175_;
+                                                                                }
+                                                                            } else
+                                                                                break while_172_;
+                                                                            break while_173_;
+                                                                        }
+                                                                    } else
+                                                                        break while_170_;
+                                                                    break while_171_;
+                                                                }
+                                                            } else
+                                                                break;
+                                                            break while_169_;
                                                         }
                                                         for (i_54_ = 0;
                                                              ((Class348_Sub40_Sub6

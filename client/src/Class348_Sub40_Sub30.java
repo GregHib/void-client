@@ -314,21 +314,19 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                                     anInt9386 = i_30_;
                                     anInt9392 = i_31_;
                                     return;
-                                } else {
-                                    if (i_38_ != 1) {
-                                        if (i_38_ != 2) {
-                                            if (i_38_ != 3) {
-                                                if (i_38_ != 4) {
-                                                    if (i_38_ != 5)
-                                                        break while_208_;
-                                                } else
-                                                    break while_206_;
-                                                break while_207_;
-                                            }
-                                        } else
-                                            break;
-                                        break while_205_;
-                                    }
+                                } else if (i_38_ != 1) {
+                                    if (i_38_ != 2) {
+                                        if (i_38_ != 3) {
+                                            if (i_38_ != 4) {
+                                                if (i_38_ != 5)
+                                                    break while_208_;
+                                            } else
+                                                break while_206_;
+                                            break while_207_;
+                                        }
+                                    } else
+                                        break;
+                                    break while_205_;
                                 }
                                 anInt9392 = i_31_;
                                 anInt9386 = i_37_;
@@ -368,12 +366,10 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                         if (i_40_ == 0) {
                             anInt9402 = class348_sub49.method3372(13638);
                             return;
-                        } else {
-                            if (i_40_ != 1) {
-                                if (i_40_ == 2)
-                                    break;
-                                break while_209_;
-                            }
+                        } else if (i_40_ != 1) {
+                            if (i_40_ == 2)
+                                break;
+                            break while_209_;
                         }
                         anInt9390 = (class348_sub49.method3388(-83)
                                 << 1365062124) / 100;

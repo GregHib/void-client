@@ -140,20 +140,18 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                 i_21_++;
             else
                 i_24_++;
+        } else if (i_21_ >= i_24_) {
+            i_24_--;
+            if (i_21_ < i_16_)
+                i_16_++;
+            else
+                i_21_++;
         } else {
-            if (i_21_ >= i_24_) {
-                i_24_--;
-                if (i_21_ < i_16_)
-                    i_16_++;
-                else
-                    i_21_++;
-            } else {
-                i_21_--;
-                if (i_16_ > i_24_)
-                    i_16_++;
-                else
-                    i_24_++;
-            }
+            i_21_--;
+            if (i_16_ > i_24_)
+                i_16_++;
+            else
+                i_24_++;
         }
         int i_31_ = -i_22_ + i_18_;
         int i_32_ = 0;
