@@ -25,7 +25,7 @@ class Class5_Sub1 extends Class5 {
 
     Class5_Sub1(Class45 class45, Class45 class45_0_,
                 Class369_Sub3 class369_sub3) {
-        super(class45, class45_0_, (Class369) class369_sub3);
+        super(class45, class45_0_, class369_sub3);
     }
 
     static final int[] method184(int i) {
@@ -41,27 +41,25 @@ class Class5_Sub1 extends Class5 {
         if (!super.method8((byte) -125))
             return false;
         Class369_Sub3 class369_sub3
-                = (Class369_Sub3) ((Class5) this).aClass369_4635;
-        if (!((Class5) this).aClass45_4632
-                .method421(false, ((Class369_Sub3) class369_sub3).anInt8599))
+                = (Class369_Sub3) this.aClass369_4635;
+        if (!this.aClass45_4632
+                .method421(false, class369_sub3.anInt8599))
             return false;
-        if (!((Class5) this).aClass45_4632
-                .method421(false, ((Class369_Sub3) class369_sub3).anInt8595))
+        if (!this.aClass45_4632
+                .method421(false, class369_sub3.anInt8595))
             return false;
-        if (!((Class5) this).aClass45_4632
-                .method421(false, ((Class369_Sub3) class369_sub3).anInt8603))
+        if (!this.aClass45_4632
+                .method421(false, class369_sub3.anInt8603))
             return false;
-        if (!((Class5) this).aClass45_4632
-                .method421(false, ((Class369_Sub3) class369_sub3).anInt8602))
+        if (!this.aClass45_4632
+                .method421(false, class369_sub3.anInt8602))
             return false;
         int i_1_ = 47 / ((25 - i) / 52);
-        if (!((Class5) this).aClass45_4632
-                .method421(false, ((Class369_Sub3) class369_sub3).anInt8600))
+        if (!this.aClass45_4632
+                .method421(false, class369_sub3.anInt8600))
             return false;
-        if (!((Class5) this).aClass45_4632
-                .method421(false, ((Class369_Sub3) class369_sub3).anInt8597))
-            return false;
-        return true;
+        return this.aClass45_4632
+                .method421(false, class369_sub3.anInt8597);
     }
 
     static final int method185(int i, byte i_2_) {
@@ -72,7 +70,7 @@ class Class5_Sub1 extends Class5 {
     }
 
     void method186(int i, int i_3_, byte i_4_, int i_5_, int i_6_) {
-        ((Class5_Sub1) this).aClass105_8350.method972(i_5_, i, i_6_, i_3_);
+        this.aClass105_8350.method972(i_5_, i, i_6_, i_3_);
         anInt8341++;
         if (i_4_ <= 21)
             method8((byte) 68);
@@ -94,14 +92,14 @@ class Class5_Sub1 extends Class5 {
         int i_23_ = 0;
         Class367_Sub11.anIntArray7397[i_22_] = i_16_;
         Class205.anIntArray2694[i_22_++] = i_17_;
-        int[][] is = ((Class361) class361).anIntArrayArray4438;
+        int[][] is = class361.anIntArrayArray4438;
         while (i_22_ != i_23_) {
             i_17_ = Class205.anIntArray2694[i_23_];
             i_16_ = Class367_Sub11.anIntArray7397[i_23_];
-            int i_24_ = -((Class361) class361).anInt4441 + i_17_;
+            int i_24_ = -class361.anInt4441 + i_17_;
             i_18_ = -i_20_ + i_16_;
             i_19_ = i_17_ - i_21_;
-            int i_25_ = i_16_ + -((Class361) class361).anInt4453;
+            int i_25_ = i_16_ + -class361.anInt4453;
             i_23_ = 0xfff & 1 + i_23_;
             int i_26_ = i_12_;
             while_3_:
@@ -284,51 +282,50 @@ class Class5_Sub1 extends Class5 {
             Class348_Sub8.aHa6654.K(is);
             Class348_Sub8.aHa6654.KA
                     (i, i_28_,
-                            i - -((Class369) ((Class5) this).aClass369_4635).anInt4971,
+                            i - -this.aClass369_4635.anInt4971,
                             (i_28_
-                                    + ((Class369) ((Class5) this).aClass369_4635).anInt4963));
+                                    + this.aClass369_4635.anInt4963));
             int i_29_ = aClass105_8342.method966();
             int i_30_ = aClass105_8342.method980();
             int i_31_ = aClass105_8339.method966();
             int i_32_ = aClass105_8339.method980();
             aClass105_8342.method974(i,
-                    i_28_ - -(((((Class369) (((Class5) this)
-                            .aClass369_4635))
+                    i_28_ - -(((this
+                            .aClass369_4635
                             .anInt4963)
                             + -i_30_)
                             / 2));
             aClass105_8339.method974
-                    ((((Class369) ((Class5) this).aClass369_4635).anInt4971
+                    ((this.aClass369_4635.anInt4971
                                     + (i + -i_31_)),
-                            i_28_ + (((Class369) ((Class5) this).aClass369_4635).anInt4963
+                            i_28_ + (this.aClass369_4635.anInt4963
                                     + -i_32_) / 2);
             Class348_Sub8.aHa6654.KA(i, i_28_,
-                    (((Class369) (((Class5) this)
-                            .aClass369_4635)).anInt4971
+                    (this
+                            .aClass369_4635.anInt4971
                             + i),
                     i_28_ - -aClass105_8343.method980());
             aClass105_8343.method972(i + i_29_, i_28_,
-                    -i_29_ + (((Class369)
-                            ((Class5) this).aClass369_4635)
+                    -i_29_ + (this.aClass369_4635
                             .anInt4971) - i_31_,
-                    ((Class369) (((Class5) this)
-                            .aClass369_4635)).anInt4963);
+                    this
+                            .aClass369_4635.anInt4963);
             int i_33_ = aClass105_8338.method980();
             Class348_Sub8.aHa6654.KA
                     (i,
                             (-i_33_ + i_28_
-                                    - -((Class369) ((Class5) this).aClass369_4635).anInt4963),
-                            ((Class369) ((Class5) this).aClass369_4635).anInt4971 + i,
+                                    - -this.aClass369_4635.anInt4963),
+                            this.aClass369_4635.anInt4971 + i,
                             (i_28_
-                                    + ((Class369) ((Class5) this).aClass369_4635).anInt4963));
+                                    + this.aClass369_4635.anInt4963));
             aClass105_8338.method972
                     (i_29_ + i,
                             (-i_33_ + i_28_
-                                    + ((Class369) ((Class5) this).aClass369_4635).anInt4963),
+                                    + this.aClass369_4635.anInt4963),
                             (-i_29_
-                                    + ((Class369) ((Class5) this).aClass369_4635).anInt4971
+                                    + this.aClass369_4635.anInt4971
                                     + -i_31_),
-                            ((Class369) ((Class5) this).aClass369_4635).anInt4963);
+                            this.aClass369_4635.anInt4963);
             Class348_Sub8.aHa6654.KA(is[0], is[1], is[2], is[3]);
         }
         anInt8334++;
@@ -359,11 +356,11 @@ class Class5_Sub1 extends Class5 {
         int i_37_ = -45 / ((-20 - i) / 57);
         anInt8336++;
         int i_38_ = aClass105_8342.method966() + i_36_;
-        int i_39_ = (((Class369) ((Class5) this).aClass369_4635).anInt4971
+        int i_39_ = (this.aClass369_4635.anInt4971
                 + (i_36_ + -aClass105_8339.method966()));
         int i_40_ = i_35_ - -aClass105_8343.method980();
         int i_41_
-                = (i_35_ + ((Class369) ((Class5) this).aClass369_4635).anInt4963
+                = (i_35_ + this.aClass369_4635.anInt4963
                 - aClass105_8338.method980());
         int i_42_ = -i_38_ + i_39_;
         int i_43_ = -i_40_ + i_41_;
@@ -381,37 +378,37 @@ class Class5_Sub1 extends Class5 {
         super.method7(i);
         anInt8337++;
         Class369_Sub3 class369_sub3
-                = (Class369_Sub3) ((Class5) this).aClass369_4635;
-        ((Class5_Sub1) this).aClass105_8350
-                = Class369_Sub3_Sub1.method3577((((Class369_Sub3) class369_sub3)
+                = (Class369_Sub3) this.aClass369_4635;
+        this.aClass105_8350
+                = Class369_Sub3_Sub1.method3577((class369_sub3
                         .anInt8599),
                 (byte) -19,
-                ((Class5) this).aClass45_4632);
+                this.aClass45_4632);
         aClass105_8347
-                = Class369_Sub3_Sub1.method3577((((Class369_Sub3) class369_sub3)
+                = Class369_Sub3_Sub1.method3577((class369_sub3
                         .anInt8595),
                 (byte) 106,
-                ((Class5) this).aClass45_4632);
+                this.aClass45_4632);
         aClass105_8342
-                = Class369_Sub3_Sub1.method3577((((Class369_Sub3) class369_sub3)
+                = Class369_Sub3_Sub1.method3577((class369_sub3
                         .anInt8603),
                 (byte) -19,
-                ((Class5) this).aClass45_4632);
+                this.aClass45_4632);
         aClass105_8339
-                = Class369_Sub3_Sub1.method3577((((Class369_Sub3) class369_sub3)
+                = Class369_Sub3_Sub1.method3577((class369_sub3
                         .anInt8602),
                 (byte) -121,
-                ((Class5) this).aClass45_4632);
+                this.aClass45_4632);
         aClass105_8343
-                = Class369_Sub3_Sub1.method3577((((Class369_Sub3) class369_sub3)
+                = Class369_Sub3_Sub1.method3577((class369_sub3
                         .anInt8600),
                 (byte) 124,
-                ((Class5) this).aClass45_4632);
+                this.aClass45_4632);
         aClass105_8338
-                = Class369_Sub3_Sub1.method3577((((Class369_Sub3) class369_sub3)
+                = Class369_Sub3_Sub1.method3577((class369_sub3
                         .anInt8597),
                 (byte) 115,
-                ((Class5) this).aClass45_4632);
+                this.aClass45_4632);
     }
 
     static {

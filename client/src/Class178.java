@@ -49,7 +49,7 @@ final class Class178 {
                                  boolean bool_3_) {
         try {
             anInt2337++;
-            ((Class45) Class174.aClass45_2306).anInt634 = 1;
+            Class174.aClass45_2306.anInt634 = 1;
             string_2_ = string_2_.toLowerCase();
             short[] is = new short[16];
             int i_4_ = -1;
@@ -60,24 +60,24 @@ final class Class178 {
                 if (class254 == null || bool != class254.method1925(!bool_3_))
                     return;
                 if (class254.method1925(!bool_3_))
-                    string_5_ = ((Class254) class254).aString3258;
+                    string_5_ = class254.aString3258;
                 else
-                    i_4_ = ((Class254) class254).anInt3256;
+                    i_4_ = class254.anInt3256;
             }
             int i_6_ = 0;
             int i_7_ = 0;
             if (bool_3_ != true)
                 aClass29_2352 = null;
             for (/**/;
-                     i_7_ < ((Class255) Exception_Sub1.aClass255_112).anInt3271;
+                     i_7_ < Exception_Sub1.aClass255_112.anInt3271;
                      i_7_++) {
                 Class213 class213
                         = Exception_Sub1.aClass255_112.method1940(-74, i_7_);
-                if ((!bool_1_ || ((Class213) class213).aBoolean2755)
-                        && ((Class213) class213).anInt2833 == -1
-                        && ((Class213) class213).anInt2812 == -1
-                        && ((Class213) class213).anInt2799 == 0
-                        && ((Class213) class213).aString2795.toLowerCase()
+                if ((!bool_1_ || class213.aBoolean2755)
+                        && class213.anInt2833 == -1
+                        && class213.anInt2812 == -1
+                        && class213.anInt2799 == 0
+                        && class213.aString2795.toLowerCase()
                         .indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
@@ -109,11 +109,11 @@ final class Class178 {
                  (i_10_ ^ 0xffffffff) > (Class76.anInt1285 ^ 0xffffffff);
                  i_10_++)
                 strings[i_10_]
-                        = ((Class213) Exception_Sub1.aClass255_112
-                        .method1940(123, is[i_10_])).aString2795;
+                        = Exception_Sub1.aClass255_112
+                        .method1940(123, is[i_10_]).aString2795;
             Class174.method1333(Class192.aShortArray2579, 26073, strings);
             Class174.aClass45_2306.method412((byte) 116);
-            ((Class45) Class174.aClass45_2306).anInt634 = 2;
+            Class174.aClass45_2306.anInt634 = 2;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("qa.A(" + bool + ','
@@ -130,6 +130,6 @@ final class Class178 {
     static {
         Class29[] class29s = Class5_Sub1.method188((byte) 59);
         for (int i = 0; i < class29s.length; i++)
-            aClass29Array2354[((Class29) class29s[i]).anInt400] = class29s[i];
+            aClass29Array2354[class29s[i].anInt400] = class29s[i];
     }
 }

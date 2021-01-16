@@ -4,7 +4,7 @@
 
 final class Class348_Sub42_Sub9_Sub1 extends Class348_Sub42_Sub9 {
     static int anInt10439;
-    private Object anObject10440;
+    private final Object anObject10440;
     static int anInt10441;
     static Class356 aClass356_10442;
     static int anInt10443 = 2;
@@ -48,35 +48,33 @@ final class Class348_Sub42_Sub9_Sub1 extends Class348_Sub42_Sub9 {
     static final void method3208
             (Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3, int i, int i_2_) {
         anInt10439++;
-        if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anIntArray10236
+        if (class318_sub1_sub3_sub3.anIntArray10236
                 != null) {
-            int i_3_ = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+            int i_3_ = (class318_sub1_sub3_sub3
                     .anIntArray10236[1 + i]);
-            if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10286
+            if ((class318_sub1_sub3_sub3.anInt10286
                     ^ 0xffffffff)
                     != (i_3_ ^ 0xffffffff)) {
-                ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10322
-                        = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+                class318_sub1_sub3_sub3.anInt10322
+                        = (class318_sub1_sub3_sub3
                         .anInt10319);
-                ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10286
+                class318_sub1_sub3_sub3.anInt10286
                         = i_3_;
-                ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10244
+                class318_sub1_sub3_sub3.anInt10244
                         = 1;
-                ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10232
+                class318_sub1_sub3_sub3.anInt10232
                         = 0;
-                ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10294
+                class318_sub1_sub3_sub3.anInt10294
                         = 0;
-                ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10267
+                class318_sub1_sub3_sub3.anInt10267
                         = 0;
-                if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+                if ((class318_sub1_sub3_sub3
                         .anInt10286)
                         != -1)
                     Class287.method2178(class318_sub1_sub3_sub3,
-                            ((Class318_Sub1_Sub3_Sub3)
-                                    class318_sub1_sub3_sub3).anInt10267,
+                            class318_sub1_sub3_sub3.anInt10267,
                             (Class10.aClass87_191.method835
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                                    class318_sub1_sub3_sub3).anInt10286,
+                                    (class318_sub1_sub3_sub3.anInt10286,
                                             7)),
                             -83);
             }

@@ -7,7 +7,7 @@ import java.awt.*;
 final class Class34 {
     static int anInt462;
     static Class60 aClass60_463 = new Class60(8);
-    private int[] anIntArray464 = {-1, -1, -1, -1, -1};
+    private final int[] anIntArray464 = {-1, -1, -1, -1, -1};
     private short[] aShortArray465;
     static int anInt466;
     static int anInt467;
@@ -32,20 +32,19 @@ final class Class34 {
         if (anIntArray472 == null)
             return null;
         Class124[] class124s = new Class124[anIntArray472.length];
-        synchronized (((Class150) ((Class34) this).aClass150_475)
+        synchronized (this.aClass150_475
                 .aClass45_2054) {
             for (int i_0_ = 0; i_0_ < anIntArray472.length; i_0_++)
                 class124s[i_0_]
                         = Class300.method2277(0,
-                        (((Class150)
-                                ((Class34) this).aClass150_475)
+                        (this.aClass150_475
                                 .aClass45_2054),
                         anIntArray472[i_0_], -1);
         }
         for (int i_1_ = 0;
              (i_1_ ^ 0xffffffff) > (anIntArray472.length ^ 0xffffffff);
              i_1_++) {
-            if ((((Class124) class124s[i_1_]).anInt1830 ^ 0xffffffff) > -14)
+            if ((class124s[i_1_].anInt1830 ^ 0xffffffff) > -14)
                 class124s[i_1_].method1092(2, 113);
         }
         Class124 class124;
@@ -77,11 +76,11 @@ final class Class34 {
     final boolean method342(byte i) {
         anInt470++;
         boolean bool = true;
-        synchronized (((Class150) ((Class34) this).aClass150_475)
+        synchronized (this.aClass150_475
                 .aClass45_2054) {
             for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -6; i_4_++) {
                 if ((anIntArray464[i_4_] ^ 0xffffffff) != 0
-                        && !((Class150) ((Class34) this).aClass150_475)
+                        && !this.aClass150_475
                         .aClass45_2054
                         .method420(-10499, anIntArray464[i_4_], 0))
                     bool = false;
@@ -96,21 +95,20 @@ final class Class34 {
         anInt471++;
         Class124[] class124s = new Class124[5];
         int i_5_ = 0;
-        synchronized (((Class150) ((Class34) this).aClass150_475)
+        synchronized (this.aClass150_475
                 .aClass45_2054) {
             for (int i_6_ = 0; (i_6_ ^ 0xffffffff) > -6; i_6_++) {
                 if ((anIntArray464[i_6_] ^ 0xffffffff) != 0)
                     class124s[i_5_++]
                             = Class300.method2277(0,
-                            (((Class150)
-                                    ((Class34) this).aClass150_475)
+                            (this.aClass150_475
                                     .aClass45_2054),
                             anIntArray464[i_6_], -1);
             }
         }
         for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -6; i_7_++) {
             if (class124s[i_7_] != null
-                    && ((Class124) class124s[i_7_]).anInt1830 < 13)
+                    && class124s[i_7_].anInt1830 < 13)
                 class124s[i_7_].method1092(2, 99);
         }
         if (i > -27)
@@ -254,10 +252,10 @@ final class Class34 {
         if (anIntArray472 == null)
             return true;
         boolean bool = true;
-        synchronized (((Class150) ((Class34) this).aClass150_475)
+        synchronized (this.aClass150_475
                 .aClass45_2054) {
             for (int i_31_ = 0; anIntArray472.length > i_31_; i_31_++) {
-                if (!((Class150) ((Class34) this).aClass150_475)
+                if (!this.aClass150_475
                         .aClass45_2054
                         .method420(-10499, anIntArray472[i_31_], 0))
                     bool = false;
@@ -289,10 +287,10 @@ final class Class34 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i_36_, (byte) 105, 10);
         class348_sub42_sub15.method3246(-25490);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9651 = i_34_;
+        class348_sub42_sub15.anInt9651 = i_34_;
         int i_38_ = 112 % ((i_35_ - 76) / 44);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9650 = i_37_;
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i;
+        class348_sub42_sub15.anInt9650 = i_37_;
+        class348_sub42_sub15.anInt9652 = i;
     }
 
     public Class34() {

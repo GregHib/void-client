@@ -29,10 +29,10 @@ final class Class252 {
     }
 
     Class252(int i) {
-        ((Class252) this).anInt3241 = i;
-        ((Class252) this).anIntArray3239
-                = new int[((Class252) this).anInt3241];
-        ((Class252) this).anIntArray3238
-                = new int[((Class252) this).anInt3241];
+        this.anInt3241 = i;
+        this.anIntArray3239
+                = new int[this.anInt3241];
+        this.anIntArray3238
+                = new int[this.anInt3241];
     }
 }

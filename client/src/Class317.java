@@ -5,7 +5,7 @@
 final class Class317 {
     private int anInt3967;
     private int anInt3968;
-    private Class80[] aClass80Array3969;
+    private final Class80[] aClass80Array3969;
 
     final Class348_Sub19_Sub1 method2369() {
         byte[] is = method2371();
@@ -17,8 +17,8 @@ final class Class317 {
         int i = 9999999;
         for (int i_0_ = 0; i_0_ < 10; i_0_++) {
             if (aClass80Array3969[i_0_] != null
-                    && ((Class80) aClass80Array3969[i_0_]).anInt1407 / 20 < i)
-                i = ((Class80) aClass80Array3969[i_0_]).anInt1407 / 20;
+                    && aClass80Array3969[i_0_].anInt1407 / 20 < i)
+                i = aClass80Array3969[i_0_].anInt1407 / 20;
         }
         if (anInt3967 < anInt3968 && anInt3967 / 20 < i)
             i = anInt3967 / 20;
@@ -26,7 +26,7 @@ final class Class317 {
             return 0;
         for (int i_1_ = 0; i_1_ < 10; i_1_++) {
             if (aClass80Array3969[i_1_] != null)
-                ((Class80) aClass80Array3969[i_1_]).anInt1407 -= i * 20;
+                aClass80Array3969[i_1_].anInt1407 -= i * 20;
         }
         if (anInt3967 < anInt3968) {
             anInt3967 -= i * 20;
@@ -39,10 +39,10 @@ final class Class317 {
         int i = 0;
         for (int i_2_ = 0; i_2_ < 10; i_2_++) {
             if (aClass80Array3969[i_2_] != null
-                    && (((Class80) aClass80Array3969[i_2_]).anInt1421
-                    + ((Class80) aClass80Array3969[i_2_]).anInt1407) > i)
-                i = (((Class80) aClass80Array3969[i_2_]).anInt1421
-                        + ((Class80) aClass80Array3969[i_2_]).anInt1407);
+                    && (aClass80Array3969[i_2_].anInt1421
+                    + aClass80Array3969[i_2_].anInt1407) > i)
+                i = (aClass80Array3969[i_2_].anInt1421
+                        + aClass80Array3969[i_2_].anInt1407);
         }
         if (i == 0)
             return new byte[0];
@@ -50,13 +50,13 @@ final class Class317 {
         byte[] is = new byte[i_3_];
         for (int i_4_ = 0; i_4_ < 10; i_4_++) {
             if (aClass80Array3969[i_4_] != null) {
-                int i_5_ = (((Class80) aClass80Array3969[i_4_]).anInt1421
+                int i_5_ = (aClass80Array3969[i_4_].anInt1421
                         * 22050 / 1000);
-                int i_6_ = (((Class80) aClass80Array3969[i_4_]).anInt1407
+                int i_6_ = (aClass80Array3969[i_4_].anInt1407
                         * 22050 / 1000);
                 int[] is_7_
                         = (aClass80Array3969[i_4_].method809
-                        (i_5_, ((Class80) aClass80Array3969[i_4_]).anInt1421));
+                        (i_5_, aClass80Array3969[i_4_].anInt1421));
                 for (int i_8_ = 0; i_8_ < i_5_; i_8_++) {
                     int i_9_ = is[i_8_ + i_6_] + (is_7_[i_8_] >> 8);
                     if ((i_9_ + 128 & ~0xff) != 0)
@@ -73,7 +73,7 @@ final class Class317 {
         for (int i = 0; i < 10; i++) {
             int i_10_ = class348_sub49.method3387(255);
             if (i_10_ != 0) {
-                ((Class348_Sub49) class348_sub49).anInt7197--;
+                class348_sub49.anInt7197--;
                 aClass80Array3969[i] = new Class80();
                 aClass80Array3969[i].method807(class348_sub49);
             }

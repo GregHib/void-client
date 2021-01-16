@@ -19,31 +19,31 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
     static int anInt9715;
 
     final void method3279(int i) {
-        ((Class348_Sub42_Sub20) this).anInt9706
-                = (((Class342) ((Class348_Sub42_Sub20) this).aClass342_9702)
+        this.anInt9706
+                = (this.aClass342_9702
                 .anInt4239);
         anInt9708++;
-        ((Class348_Sub42_Sub20) this).anInt9710
-                = (((Class342) ((Class348_Sub42_Sub20) this).aClass342_9702)
+        this.anInt9710
+                = (this.aClass342_9702
                 .anInt4240);
-        ((Class348_Sub42_Sub20) this).anInt9712
-                = (((Class342) ((Class348_Sub42_Sub20) this).aClass342_9702)
+        this.anInt9712
+                = (this.aClass342_9702
                 .anInt4238);
-        if ((((Class342) ((Class348_Sub42_Sub20) this).aClass342_9702)
+        if ((this.aClass342_9702
                 .aClass101_4252)
                 != null)
-            ((Class342) ((Class348_Sub42_Sub20) this).aClass342_9702)
+            this.aClass342_9702
                     .aClass101_4252.method905
-                    ((((Class174) ((Class348_Sub42_Sub20) this).aClass174_9704)
+                    ((this.aClass174_9704
                                     .anInt2291),
-                            (((Class174) ((Class348_Sub42_Sub20) this).aClass174_9704)
+                            (this.aClass174_9704
                                     .anInt2290),
-                            (((Class174) ((Class348_Sub42_Sub20) this).aClass174_9704)
+                            (this.aClass174_9704
                                     .anInt2294),
                             Class348_Sub8.anIntArray6666);
-        ((Class348_Sub42_Sub20) this).anInt9705
+        this.anInt9705
                 = Class348_Sub8.anIntArray6666[0];
-        ((Class348_Sub42_Sub20) this).anInt9707
+        this.anInt9707
                 = Class348_Sub8.anIntArray6666[i];
     }
 
@@ -78,9 +78,9 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
 
     Class348_Sub42_Sub20(Class342 class342, Class318_Sub10 class318_sub10) {
         try {
-            ((Class348_Sub42_Sub20) this).aClass342_9702 = class342;
-            ((Class348_Sub42_Sub20) this).aClass174_9704
-                    = ((Class348_Sub42_Sub20) this).aClass342_9702
+            this.aClass342_9702 = class342;
+            this.aClass174_9704
+                    = this.aClass342_9702
                     .method2685((byte) -13);
             method3279(2);
         } catch (RuntimeException runtimeexception) {
@@ -96,12 +96,12 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
     }
 
     static final void method3283(int i) {
-        if (((Class297) Class348_Sub23_Sub1.aClass297_8992).aBoolean3777
-                && ((((Class161) aa_Sub2.aClass161_5199).anInt2143 ^ 0xffffffff)
+        if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3777
+                && ((aa_Sub2.aClass161_5199.anInt2143 ^ 0xffffffff)
                 != 0))
-            Class348_Sub23_Sub1.method2972((((Class161) aa_Sub2.aClass161_5199)
+            Class348_Sub23_Sub1.method2972((aa_Sub2.aClass161_5199
                             .aString2147),
-                    (((Class161) aa_Sub2.aClass161_5199)
+                    (aa_Sub2.aClass161_5199
                             .anInt2143),
                     -54);
         anInt9713++;

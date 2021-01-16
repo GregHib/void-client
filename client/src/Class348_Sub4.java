@@ -70,7 +70,7 @@ final class Class348_Sub4 extends Class348 {
         class348_sub49.method3337((byte) 107, anInt6592);
         class348_sub49.method3378(false, anInt6599);
         class348_sub49.method3340(i ^ ~0x26b6,
-                ((Class348_Sub4) this).anInt6609);
+                this.anInt6609);
         class348_sub49.method3337((byte) 107, anInt6591);
         class348_sub49.method3378(false, anInt6598);
         class348_sub49.method3378(false, anInt6596);
@@ -112,11 +112,8 @@ final class Class348_Sub4 extends Class348 {
                 anInt6613 = 3;
             else
                 anInt6613 = 4;
-            if (!Class297.aString3780.startsWith("amd64")
-                    && !Class297.aString3780.startsWith("x86_64"))
-                aBoolean6608 = false;
-            else
-                aBoolean6608 = true;
+            aBoolean6608 = Class297.aString3780.startsWith("amd64")
+                    || Class297.aString3780.startsWith("x86_64");
             if (anInt6613 != 1) {
                 if ((anInt6613 ^ 0xffffffff) == -3) {
                     if ((Class297.aString3778.indexOf("10.4") ^ 0xffffffff)
@@ -207,10 +204,7 @@ final class Class348_Sub4 extends Class348 {
             } catch (Exception exception) {
                 /* empty */
             }
-            if (((Class297) class297).aBoolean3777)
-                aBoolean6607 = false;
-            else
-                aBoolean6607 = true;
+            aBoolean6607 = !class297.aBoolean3777;
             anInt6612 = i_3_;
             anInt6592 = Class226.anInt2964;
             if (anInt6616 <= 3)
@@ -224,10 +218,10 @@ final class Class348_Sub4 extends Class348 {
                     anInt6596 = is[4];
                     anInt6591 = is[2];
                     anInt6603 = is[5];
-                    ((Class348_Sub4) this).anInt6609 = is[6];
+                    this.anInt6609 = is[6];
                 }
             } catch (Throwable throwable) {
-                ((Class348_Sub4) this).anInt6609 = 0;
+                this.anInt6609 = 0;
             }
         }
         if (aString6610 == null)

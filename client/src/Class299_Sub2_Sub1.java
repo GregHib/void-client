@@ -3,17 +3,17 @@
  */
 
 final class Class299_Sub2_Sub1 extends Class299_Sub2 {
-    private int anInt8708;
+    private final int anInt8708;
     static int anInt8709;
     static int anInt8710;
-    private int anInt8711;
+    private final int anInt8711;
     static int[] anIntArray8712;
     static double aDouble8713 = -1.0;
-    private int anInt8714;
-    private int anInt8715;
-    private int anInt8716;
-    private int anInt8717;
-    private ha_Sub3 aHa_Sub3_8718;
+    private final int anInt8714;
+    private final int anInt8715;
+    private final int anInt8716;
+    private final int anInt8717;
+    private final ha_Sub3 aHa_Sub3_8718;
     private Interface18_Impl2 anInterface18_Impl2_8719;
     static int anInt8720;
 
@@ -25,7 +25,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             Class270.anIntArray3464[3] = anInt8711;
             Class270.anIntArray3464[1] = anInt8717;
             Class270.anIntArray3464[4] = anInt8708;
-            d var_d = ((ha) aHa_Sub3_8718).aD4579;
+            d var_d = aHa_Sub3_8718.aD4579;
             Class270.anIntArray3464[5] = anInt8714;
             Class270.anIntArray3464[2] = anInt8715;
             Class270.anIntArray3464[0] = anInt8716;
@@ -36,10 +36,10 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
                     return null;
                 Class12 class12
                         = var_d.method3(Class270.anIntArray3464[i_1_], -6662);
-                int i_2_ = ((Class12) class12).aBoolean199 ? 64 : 128;
+                int i_2_ = class12.aBoolean199 ? 64 : 128;
                 if ((i_2_ ^ 0xffffffff) < (i ^ 0xffffffff))
                     i = i_2_;
-                if ((((Class12) class12).aByte205 ^ 0xffffffff) < -1)
+                if ((class12.aByte205 ^ 0xffffffff) < -1)
                     bool_0_ = true;
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)

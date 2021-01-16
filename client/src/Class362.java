@@ -28,10 +28,10 @@ final class Class362 {
                     int i_1_ = class143.method1187(string, false, 250, null);
                     int i_2_
                             = class143.method1185(null, i ^ 0x2,
-                            ((Class143) class143).anInt1992,
+                            class143.anInt1992,
                             250, string);
                     int i_3_
-                            = ((Class207) Class348_Sub7.aClass207_6643).anInt2702;
+                            = Class348_Sub7.aClass207_6643.anInt2702;
                     int i_4_ = i_3_ + 4;
                     i_2_ += 2 * i_4_;
                     i_1_ += 2 * i_4_;
@@ -52,13 +52,13 @@ final class Class362 {
                         i_6_ += Class16.method260(false);
                     }
                     var_ha.method3691(Class112.aClass207_1727, false).method965
-                            ((((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                            ((Class348_Sub40_Sub1.aClass207_9090
                                             .anInt2702) + i_5_,
-                                    (((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                    (Class348_Sub40_Sub1.aClass207_9090
                                             .anInt2696) + i_6_,
-                                    -(2 * (((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                    -(2 * (Class348_Sub40_Sub1.aClass207_9090
                                             .anInt2702)) + i_1_,
-                                    -((((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                    -((Class348_Sub40_Sub1.aClass207_9090
                                             .anInt2696)
                                             * 2) + i_2_,
                                     1, 0, 0);
@@ -81,18 +81,18 @@ final class Class362 {
                     var_ha.method3691(Class348_Sub7.aClass207_6643, true)
                             .method972
                                     (i_5_,
-                                            (((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                            (Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2696) + i_6_,
                                             i_3_,
-                                            -(2 * (((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                            -(2 * (Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2696)) + i_2_);
                     Class348_Sub7.aClass207_6643.method1520();
                     var_ha.method3691(Class348_Sub7.aClass207_6643, true)
                             .method972
-                                    ((((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                    ((Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2702) + i_5_,
                                             i_6_,
-                                            -((((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                            -((Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2702)
                                                     * 2) + i_1_,
                                             i_3_);
@@ -100,18 +100,18 @@ final class Class362 {
                     var_ha.method3691(Class348_Sub7.aClass207_6643, true)
                             .method972
                                     (i_5_ - -i_1_ + -i_3_,
-                                            (((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                            (Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2696) + i_6_,
                                             i_3_,
-                                            -(2 * (((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                            -(2 * (Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2696)) + i_2_);
                     Class348_Sub7.aClass207_6643.method1520();
                     var_ha.method3691(Class348_Sub7.aClass207_6643, true)
                             .method972
-                                    ((((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                    ((Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2702) + i_5_,
                                             -i_3_ + i_6_ - -i_2_,
-                                            -(2 * (((Class207) Class348_Sub40_Sub1.aClass207_9090)
+                                            -(2 * (Class348_Sub40_Sub1.aClass207_9090
                                                     .anInt2702)) + i_1_,
                                             i_3_);
                     Class348_Sub7.aClass207_6643.method1520();

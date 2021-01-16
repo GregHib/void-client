@@ -12,8 +12,8 @@ final class Class41 {
     }
 
     Class41(Class41 class41_0_) {
-        ((Class41) this).anInt561 = ((Class41) class41_0_).anInt561;
-        ((Class41) this).anInt560 = ((Class41) class41_0_).anInt560;
-        ((Class41) this).anInt559 = ((Class41) class41_0_).anInt559;
+        this.anInt561 = class41_0_.anInt561;
+        this.anInt560 = class41_0_.anInt560;
+        this.anInt559 = class41_0_.anInt559;
     }
 }

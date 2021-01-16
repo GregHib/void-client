@@ -21,9 +21,7 @@ final class Class156 {
         anInt2116++;
         if (i_1_ > -4)
             aFloat2111 = -0.9273654F;
-        if ((0x800 & i) == 0)
-            return false;
-        return true;
+        return (0x800 & i) != 0;
     }
 
     public static void method1239(int i) {
@@ -38,16 +36,15 @@ final class Class156 {
         if (i <= 7)
             method1240(79);
         Class348_Sub42 class348_sub42
-                = (((Class348_Sub42)
-                ((Class107) aClass107_2118).aClass348_Sub42_1647)
+                = (aClass107_2118.aClass348_Sub42_1647
                 .aClass348_Sub42_7063);
         if (class348_sub42
-                == ((Class107) aClass107_2118).aClass348_Sub42_1647) {
+                == aClass107_2118.aClass348_Sub42_1647) {
             aClass348_Sub42_2115 = null;
             return null;
         }
         aClass348_Sub42_2115
-                = ((Class348_Sub42) class348_sub42).aClass348_Sub42_7063;
+                = class348_sub42.aClass348_Sub42_7063;
         return class348_sub42;
     }
 
@@ -74,7 +71,7 @@ final class Class156 {
                 if (string != null) {
                     if (throwable != null)
                         string_4_ += " | ";
-                    string_4_ += (String) string;
+                    string_4_ += string;
                 }
                 Class88.method847(string_4_, -5192);
                 string_4_ = Class341.method2680("%3a", true, ":", string_4_);
@@ -118,12 +115,12 @@ final class Class156 {
             aStringArray2113 = null;
         Class348_Sub42 class348_sub42 = aClass348_Sub42_2115;
         if (class348_sub42
-                == ((Class107) aClass107_2118).aClass348_Sub42_1647) {
+                == aClass107_2118.aClass348_Sub42_1647) {
             aClass348_Sub42_2115 = null;
             return null;
         }
         aClass348_Sub42_2115
-                = ((Class348_Sub42) class348_sub42).aClass348_Sub42_7063;
+                = class348_sub42.aClass348_Sub42_7063;
         return class348_sub42;
     }
 

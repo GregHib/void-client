@@ -22,12 +22,12 @@ final class Class120 implements Interface12 {
             Class348_Sub42_Sub15 class348_sub42_sub15
                     = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, 11);
             class348_sub42_sub15.method3246(i_0_ + -1793);
-            ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i;
-            ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9651 = i_1_;
+            class348_sub42_sub15.anInt9652 = i;
+            class348_sub42_sub15.anInt9651 = i_1_;
         }
     }
 
     Class120(int i) {
-        ((Class120) this).anInt4912 = i;
+        this.anInt4912 = i;
     }
 }

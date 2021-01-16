@@ -7,7 +7,7 @@ import jaggl.OpenGL;
 import java.util.Random;
 
 final class Class186_Sub1 extends Class186 {
-    private int[] anIntArray5804 = new int[512];
+    private final int[] anIntArray5804 = new int[512];
     static int anInt5805;
     static int anInt5806;
     static int anInt5807 = 0;
@@ -159,12 +159,12 @@ final class Class186_Sub1 extends Class186 {
         anInt5809++;
         if (i_37_ != 34037)
             aClass341_5808 = null;
-        if (((ha_Sub2) var_ha_Sub2).aBoolean7793
+        if (var_ha_Sub2.aBoolean7793
                 || Class192.method1436(-20, i_38_) && Class192.method1436(-119,
                 i_40_))
             return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i, i_39_, i_38_,
                     i_40_, true);
-        if (!((ha_Sub2) var_ha_Sub2).aBoolean7837)
+        if (!var_ha_Sub2.aBoolean7837)
             return new Class258_Sub3_Sub1(var_ha_Sub2, i, i_39_, i_38_, i_40_,
                     Class33.method340(i_38_, (byte) 108),
                     Class33.method340(i_40_, (byte) 108),
@@ -174,7 +174,7 @@ final class Class186_Sub1 extends Class186 {
     }
 
     Class186_Sub1(int i) {
-        Random random = new Random((long) i);
+        Random random = new Random(i);
         for (int i_41_ = 0; (i_41_ ^ 0xffffffff) > -257; i_41_++)
             anIntArray5804[i_41_] = anIntArray5804[256 + i_41_] = i_41_;
         for (int i_42_ = 0; (i_42_ ^ 0xffffffff) > -257; i_42_++) {

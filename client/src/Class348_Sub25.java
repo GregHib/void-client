@@ -4,7 +4,7 @@
 
 final class Class348_Sub25 extends Class348 {
     int anInt6879;
-    private int anInt6880;
+    private final int anInt6880;
     private static int[] anIntArray6881;
     boolean aBoolean6882;
     int anInt6883;
@@ -43,7 +43,7 @@ final class Class348_Sub25 extends Class348 {
     }
 
     Class348_Sub25(int i, int i_11_, int[] is, boolean bool) {
-        ((Class348_Sub25) this).anInt6883 = i;
+        this.anInt6883 = i;
         anInt6880 = i_11_;
         anIntArray6884 = is;
         if (bool) {

@@ -10,7 +10,7 @@ final class Class61 {
     static int anInt1106;
     static int anInt1107;
     static int anInt1108;
-    private int anInt1109;
+    private final int anInt1109;
 
     final void method591(int i) {
         anInt1108++;
@@ -31,28 +31,27 @@ final class Class61 {
         int i_3_ = 0;
         for (int i_4_ = 0;
              ((i_4_ ^ 0xffffffff)
-                     > (((Class348_Sub13) class348_sub13).anIntArray6757.length
+                     > (class348_sub13.anIntArray6757.length
                      ^ 0xffffffff));
              i_4_++) {
-            if ((((Class348_Sub13) class348_sub13).anIntArray6757[i_4_]
+            if ((class348_sub13.anIntArray6757[i_4_]
                     ^ 0xffffffff) <= -1
-                    && ((((Class348_Sub13) class348_sub13).anIntArray6757[i_4_]
+                    && ((class348_sub13.anIntArray6757[i_4_]
                     ^ 0xffffffff)
-                    > (((Class255) Exception_Sub1.aClass255_112).anInt3271
+                    > (Exception_Sub1.aClass255_112.anInt3271
                     ^ 0xffffffff))) {
                 Class213 class213 = (Exception_Sub1.aClass255_112.method1940
-                        (-127, (((Class348_Sub13) class348_sub13)
+                        (-127, (class348_sub13
                                 .anIntArray6757[i_4_])));
-                int i_5_ = class213.method1567((((Class254)
-                                Class101_Sub3
-                                        .aClass326_5764
-                                        .method2600(i_2_, 28364))
+                int i_5_ = class213.method1567((Class101_Sub3
+                        .aClass326_5764
+                        .method2600(i_2_, 28364)
                                 .anInt3256),
                         107, i_2_);
                 if (!bool)
                     i_3_ += i_5_;
                 else
-                    i_3_ += i_5_ * (((Class348_Sub13) class348_sub13)
+                    i_3_ += i_5_ * (class348_sub13
                             .anIntArray6758[i_4_]);
             }
         }
@@ -69,8 +68,8 @@ final class Class61 {
         }
         if (i_6_ != -90)
             return null;
-        ((Class272) class272).aString3476 = string;
-        ((Class272) class272).anInt3470 = i;
+        class272.aString3476 = string;
+        class272.anInt3470 = i;
         return class272;
     }
 

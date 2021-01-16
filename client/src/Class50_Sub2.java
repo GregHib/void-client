@@ -3,12 +3,12 @@
  */
 
 final class Class50_Sub2 extends Class50 {
-    private int anInt5227;
+    private final int anInt5227;
     static int anInt5228;
     static int anInt5229;
-    private int anInt5230;
+    private final int anInt5230;
     private int anInt5231;
-    private int anInt5232;
+    private final int anInt5232;
     static boolean aBoolean5233 = false;
     static int anInt5234;
     static int anInt5235;
@@ -21,9 +21,9 @@ final class Class50_Sub2 extends Class50 {
         if (i_1_ > -98)
             aBoolean5233 = false;
         int i_5_ = i_0_ * anInt5230 >> 864282732;
-        Class170.method1308(((Class50) this).anInt864, i_4_, i_2_,
-                ((Class50) this).anInt865, (byte) -123,
-                ((Class50) this).anInt862, i_3_, i_5_);
+        Class170.method1308(this.anInt864, i_4_, i_2_,
+                this.anInt865, (byte) -123,
+                this.anInt862, i_3_, i_5_);
     }
 
     static final void method464(int i) {
@@ -48,8 +48,8 @@ final class Class50_Sub2 extends Class50 {
             int i_15_ = i_12_ * anInt5232 >> -1554940340;
             int i_16_ = i * anInt5227 >> 309103884;
             int i_17_ = i * anInt5230 >> 417676652;
-            Class97.method872(((Class50) this).anInt865, 1,
-                    ((Class50) this).anInt862, i_16_, i_17_, i_15_,
+            Class97.method872(this.anInt865, 1,
+                    this.anInt862, i_16_, i_17_, i_15_,
                     i_14_);
         }
     }
@@ -62,7 +62,7 @@ final class Class50_Sub2 extends Class50 {
             anInt5231 = 56;
         int i_22_ = i_19_ * anInt5227 >> -873272212;
         int i_23_ = i_19_ * anInt5230 >> -135893428;
-        Class318_Sub1_Sub5.method2486(0, i_21_, ((Class50) this).anInt864,
+        Class318_Sub1_Sub5.method2486(0, i_21_, this.anInt864,
                 i_23_, i_20_, i_22_);
     }
 }

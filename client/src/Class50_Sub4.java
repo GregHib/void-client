@@ -3,11 +3,11 @@
  */
 
 final class Class50_Sub4 extends Class50 {
-    private int anInt5255;
+    private final int anInt5255;
     static int anInt5256;
     static int anInt5257;
-    private int anInt5258;
-    private int anInt5259;
+    private final int anInt5258;
+    private final int anInt5259;
     static int anInt5260;
     static int anInt5261;
     static Class47 aClass47_5262;
@@ -28,7 +28,7 @@ final class Class50_Sub4 extends Class50 {
         int i_5_ = i_2_ * anInt5264 >> -152215924;
         int i_6_ = anInt5259 * i >> 748459148;
         int i_7_ = anInt5258 * i >> 1457878060;
-        Class339.method2665(i_4_, (byte) 118, ((Class50) this).anInt865, i_6_,
+        Class339.method2665(i_4_, (byte) 118, this.anInt865, i_6_,
                 i_7_, i_5_);
     }
 

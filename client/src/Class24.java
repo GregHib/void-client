@@ -28,13 +28,13 @@ final class Class24 {
     static final void method298(boolean bool, int i, int i_0_, int i_1_,
                                 int i_2_) {
         anInt354++;
-        if (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if (Class316.aClass348_Sub51_3959
                 .aClass239_Sub25_7271.method1829(-32350)
                 == 0)
             Class348_Sub42_Sub3.method3177(-98, false);
         else {
             Class111.anInt1720
-                    = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                    = Class316.aClass348_Sub51_3959
                     .aClass239_Sub25_7271.method1829(-32350);
             Class367_Sub10.method3553(true, (byte) 103, 0);
         }

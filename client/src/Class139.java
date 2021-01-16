@@ -30,15 +30,14 @@ final class Class139 {
                  i_2_++) {
                 int i_3_ = Class74.anIntArray1233[i_2_];
                 Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                        = (((Class348_Sub22) (Class348_Sub22)
-                        Class282.aClass356_3654.method3480((long) i_3_, -6008))
+                        = (((Class348_Sub22) Class282.aClass356_3654.method3480(i_3_, -6008))
                         .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                 int i_4_
                         = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24,
                         1);
                 if ((i_4_ ^ 0xffffffff) == -1) {
                     Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+                    class318_sub1_sub3_sub3_sub1
                             .anInt10306
                             = Class348_Sub23_Sub3.anInt9041;
                 } else {
@@ -46,14 +45,12 @@ final class Class139 {
                             .method3410((byte) -24, 2);
                     if (i_5_ == 0) {
                         Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                        ((Class318_Sub1_Sub3_Sub3)
-                                class318_sub1_sub3_sub3_sub1).anInt10306
+                        class318_sub1_sub3_sub3_sub1.anInt10306
                                 = Class348_Sub23_Sub3.anInt9041;
                         Class13.anIntArray224[Class101.anInt1597++] = i_3_;
                     } else if ((i_5_ ^ 0xffffffff) == -2) {
                         Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                        ((Class318_Sub1_Sub3_Sub3)
-                                class318_sub1_sub3_sub3_sub1).anInt10306
+                        class318_sub1_sub3_sub3_sub1.anInt10306
                                 = Class348_Sub23_Sub3.anInt9041;
                         int i_6_ = Class299.aClass348_Sub49_Sub2_3813
                                 .method3410((byte) -24, 3);
@@ -64,8 +61,7 @@ final class Class139 {
                             Class13.anIntArray224[Class101.anInt1597++] = i_3_;
                     } else if (i_5_ == 2) {
                         Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                        ((Class318_Sub1_Sub3_Sub3)
-                                class318_sub1_sub3_sub3_sub1).anInt10306
+                        class318_sub1_sub3_sub3_sub1.anInt10306
                                 = Class348_Sub23_Sub3.anInt9041;
                         if (Class299.aClass348_Sub49_Sub2_3813
                                 .method3410((byte) -24, 1)
@@ -104,8 +100,6 @@ final class Class139 {
         anInt1955++;
         if (i_13_ >= -45)
             anInt1949 = 88;
-        if (i != 0 && i != 1 && i != 2)
-            return false;
-        return true;
+        return i == 0 || i == 1 || i == 2;
     }
 }

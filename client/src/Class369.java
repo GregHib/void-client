@@ -60,15 +60,15 @@ class Class369 implements Interface12 {
     Class369(Class221 class221, Class341 class341, int i, int i_3_, int i_4_,
              int i_5_, int i_6_, int i_7_, int i_8_) {
         try {
-            ((Class369) this).anInt4961 = i_8_;
-            ((Class369) this).anInt4971 = i_4_;
-            ((Class369) this).anInt4965 = i_7_;
-            ((Class369) this).anInt4966 = i_6_;
-            ((Class369) this).anInt4959 = i_3_;
-            ((Class369) this).aClass341_4973 = class341;
-            ((Class369) this).anInt4970 = i;
-            ((Class369) this).aClass221_4968 = class221;
-            ((Class369) this).anInt4963 = i_5_;
+            this.anInt4961 = i_8_;
+            this.anInt4971 = i_4_;
+            this.anInt4965 = i_7_;
+            this.anInt4966 = i_6_;
+            this.anInt4959 = i_3_;
+            this.aClass341_4973 = class341;
+            this.anInt4970 = i;
+            this.aClass221_4968 = class221;
+            this.anInt4963 = i_5_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("fn.<init>("

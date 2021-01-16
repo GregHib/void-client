@@ -64,11 +64,11 @@ final class Class341 {
                     = Class348_Sub22.method2957(Class9.anInt169, (byte) -54,
                     Class149.anInt2046);
             if (class46 != null
-                    && ((Class46) class46).anObjectArray680 != null) {
+                    && class46.anObjectArray680 != null) {
                 Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                ((Class348_Sub36) class348_sub36).aClass46_6989 = class46;
-                ((Class348_Sub36) class348_sub36).anObjectArray6987
-                        = ((Class46) class46).anObjectArray680;
+                class348_sub36.aClass46_6989 = class46;
+                class348_sub36.anObjectArray6987
+                        = class46.anObjectArray680;
                 Class66.method705(class348_sub36);
             }
             Class301.anInt3829 = -1;
@@ -130,12 +130,10 @@ final class Class341 {
                             = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058
                             [i_12_]);
                     if (class318_sub1_sub3_sub3_sub2 != null) {
-                        for (int i_13_ = 0; ((((Class318_Sub1_Sub3_Sub3)
-                                class318_sub1_sub3_sub3_sub2)
+                        for (int i_13_ = 0; ((class318_sub1_sub3_sub3_sub2
                                 .aClass64Array10323).length
                                 > i_13_); i_13_++)
-                            ((Class318_Sub1_Sub3_Sub3)
-                                    class318_sub1_sub3_sub3_sub2)
+                            class318_sub1_sub3_sub3_sub2
                                     .aClass64Array10323[i_13_]
                                     = null;
                     }
@@ -143,18 +141,16 @@ final class Class341 {
                 for (int i_14_ = 0; i_14_ < Class348_Sub32.anInt6930;
                      i_14_++) {
                     Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                            = (((Class348_Sub22) (Class348_Sub40_Sub23
+                            = (Class348_Sub40_Sub23
                             .aClass348_Sub22Array9319
-                            [i_14_]))
+                            [i_14_]
                             .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                     if (class318_sub1_sub3_sub3_sub1 != null) {
                         for (int i_15_ = 0;
-                             i_15_ < (((Class318_Sub1_Sub3_Sub3)
-                                     class318_sub1_sub3_sub3_sub1)
+                             i_15_ < (class318_sub1_sub3_sub3_sub1
                                      .aClass64Array10323).length;
                              i_15_++)
-                            ((Class318_Sub1_Sub3_Sub3)
-                                    class318_sub1_sub3_sub3_sub1)
+                            class318_sub1_sub3_sub3_sub1
                                     .aClass64Array10323[i_15_]
                                     = null;
                     }

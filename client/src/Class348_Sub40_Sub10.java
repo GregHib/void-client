@@ -34,7 +34,7 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
                 anInt9175 = class348_sub49.method3330(842397944);
                 break while_152_;
             } while (false);
-            ((Class348_Sub40) this).aBoolean7045
+            this.aBoolean7045
                     = (class348_sub49.method3387(255) ^ 0xffffffff) == -2;
         } while (false);
         if (i_0_ != 31015)
@@ -50,8 +50,8 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_2_) {
         anInt9177++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             int[] is_3_ = this.method3048(i, 633706337, 0);
             for (int i_4_ = 0; Class348_Sub40_Sub6.anInt9139 > i_4_; i_4_++)
                 is[i_4_]
@@ -65,10 +65,10 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
     final int[][] method3047(int i, int i_5_) {
         anInt9178++;
         int[][] is
-                = ((Class348_Sub40) this).aClass322_7033.method2557(-113, i);
+                = this.aClass322_7033.method2557(-113, i);
         if (i_5_ != -1564599039)
             method3049(null, -10, -112);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        if (this.aClass322_7033.aBoolean4035) {
             int[][] is_6_ = this.method3039((byte) -55, i, 0);
             int[] is_7_ = is_6_[0];
             int[] is_8_ = is_6_[1];

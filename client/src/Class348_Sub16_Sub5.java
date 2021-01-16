@@ -9,14 +9,14 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
     private int anInt8972;
     private int anInt8973;
     private int anInt8974;
-    private int anInt8975;
+    private final int anInt8975;
     private int anInt8976;
     private int anInt8977;
     private int anInt8978;
     private int anInt8979;
     private int anInt8980;
-    private boolean aBoolean8981;
-    private int anInt8982;
+    private final boolean aBoolean8981;
+    private final int anInt8982;
     private int anInt8983;
 
     final synchronized void method2888(int i, int i_0_, int i_1_) {
@@ -59,12 +59,9 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
     }
 
     final boolean method2890() {
-        if (anInt8983 >= 0
-                && anInt8983 < (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                ((Class348_Sub16) this).aClass348_Sub19_6787)
-                .aByteArray8984).length << 8)
-            return false;
-        return true;
+        return anInt8983 < 0
+                || anInt8983 >= (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
+                .aByteArray8984).length << 8;
     }
 
     final synchronized void method2891(boolean bool) {
@@ -84,14 +81,12 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
         i = (i ^ i >> 31) + (i >>> 31);
         if (anInt8980 == 0)
             i -= (i * anInt8983
-                    / ((((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                    ((Class348_Sub16) this).aClass348_Sub19_6787)
+                    / ((((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                     .aByteArray8984).length
                     << 8));
         else if (anInt8980 >= 0)
             i -= (i * anInt8975
-                    / (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                    ((Class348_Sub16) this).aClass348_Sub19_6787)
+                    / (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                     .aByteArray8984).length);
         if (i > 255)
             return 255;
@@ -185,9 +180,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
     }
 
     final boolean method2895() {
-        if (anInt8972 == 0)
-            return false;
-        return true;
+        return anInt8972 != 0;
     }
 
     private final void method2896() {
@@ -608,8 +601,8 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
     static final Class348_Sub16_Sub5 method2911
             (Class348_Sub19_Sub1 class348_sub19_sub1, int i, int i_104_,
              int i_105_) {
-        if (((Class348_Sub19_Sub1) class348_sub19_sub1).aByteArray8984 == null
-                || (((Class348_Sub19_Sub1) class348_sub19_sub1)
+        if (class348_sub19_sub1.aByteArray8984 == null
+                || (class348_sub19_sub1
                 .aByteArray8984).length == 0)
             return null;
         return new Class348_Sub16_Sub5(class348_sub19_sub1, i, i_104_, i_105_);
@@ -731,30 +724,26 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
             if (anInt8979 == 256 && (anInt8983 & 0xff) == 0) {
                 if (Class282.aBoolean3652)
                     i = method2893(0,
-                            ((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                    (((Class348_Sub16) this)
-                                            .aClass348_Sub19_6787)).aByteArray8984,
+                            ((Class348_Sub19_Sub1) this
+                                    .aClass348_Sub19_6787).aByteArray8984,
                             is, anInt8983, i, anInt8970, anInt8974,
                             anInt8971, anInt8978, 0, i_128_, i_125_,
                             this);
                 else
-                    i = method2913(((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                    (((Class348_Sub16) this)
-                                            .aClass348_Sub19_6787)).aByteArray8984,
+                    i = method2913(((Class348_Sub19_Sub1) this
+                            .aClass348_Sub19_6787).aByteArray8984,
                             is, anInt8983, i, anInt8976, anInt8973, 0,
                             i_128_, i_125_, this);
             } else if (Class282.aBoolean3652)
                 i = method2899(0, 0,
-                        (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                ((Class348_Sub16) this).aClass348_Sub19_6787)
+                        (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                                 .aByteArray8984),
                         is, anInt8983, i, anInt8970, anInt8974,
                         anInt8971, anInt8978, 0, i_128_, i_125_, this,
                         anInt8979, i_127_);
             else
                 i = method2903(0, 0,
-                        (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                ((Class348_Sub16) this).aClass348_Sub19_6787)
+                        (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                                 .aByteArray8984),
                         is, anInt8983, i, anInt8976, anInt8973, 0,
                         i_128_, i_125_, this, anInt8979, i_127_);
@@ -767,27 +756,23 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
         if (anInt8979 == 256 && (anInt8983 & 0xff) == 0) {
             if (Class282.aBoolean3652)
                 return method2910(0,
-                        ((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                (((Class348_Sub16) this)
-                                        .aClass348_Sub19_6787)).aByteArray8984,
+                        ((Class348_Sub19_Sub1) this
+                                .aClass348_Sub19_6787).aByteArray8984,
                         is, anInt8983, i, anInt8970, anInt8974, 0,
                         i_126_, i_125_, this);
-            return method2905((((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                            ((Class348_Sub16) this).aClass348_Sub19_6787)
+            return method2905((((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                             .aByteArray8984),
                     is, anInt8983, i, anInt8976, 0, i_126_, i_125_,
                     this);
         }
         if (Class282.aBoolean3652)
             return method2922(0, 0,
-                    (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                            ((Class348_Sub16) this).aClass348_Sub19_6787)
+                    (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                             .aByteArray8984),
                     is, anInt8983, i, anInt8970, anInt8974, 0,
                     i_126_, i_125_, this, anInt8979, i_127_);
         return method2925(0, 0,
-                (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                        ((Class348_Sub16) this).aClass348_Sub19_6787)
+                (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                         .aByteArray8984),
                 is, anInt8983, i, anInt8976, 0, i_126_, i_125_, this,
                 anInt8979, i_127_);
@@ -905,10 +890,10 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
         else {
             Class348_Sub19_Sub1 class348_sub19_sub1
                     = ((Class348_Sub19_Sub1)
-                    ((Class348_Sub16) this).aClass348_Sub19_6787);
+                    this.aClass348_Sub19_6787);
             int i_160_ = anInt8975 << 8;
             int i_161_ = anInt8982 << 8;
-            int i_162_ = ((((Class348_Sub19_Sub1) class348_sub19_sub1)
+            int i_162_ = ((class348_sub19_sub1
                     .aByteArray8984).length
                     << 8);
             int i_163_ = i_161_ - i_160_;
@@ -938,8 +923,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                 if (aBoolean8981) {
                     if (anInt8979 < 0) {
                         i_164_ = method2927(is, i_164_, i_160_, i_159_,
-                                (((Class348_Sub19_Sub1)
-                                        class348_sub19_sub1)
+                                (class348_sub19_sub1
                                         .aByteArray8984[anInt8975]));
                         if (anInt8983 >= i_160_)
                             return;
@@ -948,16 +932,14 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                     }
                     for (; ; ) {
                         i_164_ = method2919(is, i_164_, i_161_, i_159_,
-                                (((Class348_Sub19_Sub1)
-                                        class348_sub19_sub1)
+                                (class348_sub19_sub1
                                         .aByteArray8984[anInt8982 - 1]));
                         if (anInt8983 < i_161_)
                             break;
                         anInt8983 = i_161_ + i_161_ - 1 - anInt8983;
                         anInt8979 = -anInt8979;
                         i_164_ = method2927(is, i_164_, i_160_, i_159_,
-                                (((Class348_Sub19_Sub1)
-                                        class348_sub19_sub1)
+                                (class348_sub19_sub1
                                         .aByteArray8984[anInt8975]));
                         if (anInt8983 >= i_160_)
                             break;
@@ -967,8 +949,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                 } else if (anInt8979 < 0) {
                     for (; ; ) {
                         i_164_ = method2927(is, i_164_, i_160_, i_159_,
-                                (((Class348_Sub19_Sub1)
-                                        class348_sub19_sub1)
+                                (class348_sub19_sub1
                                         .aByteArray8984[anInt8982 - 1]));
                         if (anInt8983 >= i_160_)
                             break;
@@ -978,8 +959,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                 } else {
                     for (; ; ) {
                         i_164_ = method2919(is, i_164_, i_161_, i_159_,
-                                (((Class348_Sub19_Sub1)
-                                        class348_sub19_sub1)
+                                (class348_sub19_sub1
                                         .aByteArray8984[anInt8975]));
                         if (anInt8983 < i_161_)
                             break;
@@ -993,8 +973,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                             if (anInt8979 < 0) {
                                 i_164_
                                         = method2927(is, i_164_, i_160_, i_159_,
-                                        (((Class348_Sub19_Sub1)
-                                                class348_sub19_sub1)
+                                        (class348_sub19_sub1
                                                 .aByteArray8984[anInt8975]));
                                 if (anInt8983 >= i_160_)
                                     return;
@@ -1005,8 +984,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                             }
                             do {
                                 i_164_ = method2919(is, i_164_, i_161_, i_159_,
-                                        (((Class348_Sub19_Sub1)
-                                                class348_sub19_sub1)
+                                        (class348_sub19_sub1
                                                 .aByteArray8984
                                                 [anInt8982 - 1]));
                                 if (anInt8983 < i_161_)
@@ -1017,8 +995,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                                     break;
                                 i_164_
                                         = method2927(is, i_164_, i_160_, i_159_,
-                                        (((Class348_Sub19_Sub1)
-                                                class348_sub19_sub1)
+                                        (class348_sub19_sub1
                                                 .aByteArray8984[anInt8975]));
                                 if (anInt8983 >= i_160_)
                                     return;
@@ -1028,8 +1005,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                         } else if (anInt8979 < 0) {
                             for (; ; ) {
                                 i_164_ = method2927(is, i_164_, i_160_, i_159_,
-                                        (((Class348_Sub19_Sub1)
-                                                class348_sub19_sub1)
+                                        (class348_sub19_sub1
                                                 .aByteArray8984
                                                 [anInt8982 - 1]));
                                 if (anInt8983 >= i_160_)
@@ -1047,8 +1023,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                             for (; ; ) {
                                 i_164_
                                         = method2919(is, i_164_, i_161_, i_159_,
-                                        (((Class348_Sub19_Sub1)
-                                                class348_sub19_sub1)
+                                        (class348_sub19_sub1
                                                 .aByteArray8984[anInt8975]));
                                 if (anInt8983 < i_161_)
                                     return;
@@ -1084,8 +1059,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
     }
 
     final synchronized void method2924(int i) {
-        int i_167_ = ((((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                ((Class348_Sub16) this).aClass348_Sub19_6787)
+        int i_167_ = ((((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                 .aByteArray8984).length
                 << 8);
         if (i < -1)
@@ -1157,10 +1131,10 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
         }
         Class348_Sub19_Sub1 class348_sub19_sub1
                 = ((Class348_Sub19_Sub1)
-                ((Class348_Sub16) this).aClass348_Sub19_6787);
+                this.aClass348_Sub19_6787);
         int i_179_ = anInt8975 << 8;
         int i_180_ = anInt8982 << 8;
-        int i_181_ = ((((Class348_Sub19_Sub1) class348_sub19_sub1)
+        int i_181_ = ((class348_sub19_sub1
                 .aByteArray8984).length
                 << 8);
         int i_182_ = i_180_ - i_179_;
@@ -1273,11 +1247,11 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
 
     private Class348_Sub16_Sub5(Class348_Sub19_Sub1 class348_sub19_sub1, int i,
                                 int i_185_, int i_186_) {
-        ((Class348_Sub16) this).aClass348_Sub19_6787 = class348_sub19_sub1;
-        anInt8975 = ((Class348_Sub19_Sub1) class348_sub19_sub1).anInt8986;
-        anInt8982 = ((Class348_Sub19_Sub1) class348_sub19_sub1).anInt8985;
+        this.aClass348_Sub19_6787 = class348_sub19_sub1;
+        anInt8975 = class348_sub19_sub1.anInt8986;
+        anInt8982 = class348_sub19_sub1.anInt8985;
         aBoolean8981
-                = ((Class348_Sub19_Sub1) class348_sub19_sub1).aBoolean8987;
+                = class348_sub19_sub1.aBoolean8987;
         anInt8979 = i;
         anInt8969 = i_185_;
         anInt8977 = i_186_;
@@ -1295,30 +1269,26 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
             if (anInt8979 == -256 && (anInt8983 & 0xff) == 0) {
                 if (Class282.aBoolean3652)
                     i = method2900(0,
-                            ((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                    (((Class348_Sub16) this)
-                                            .aClass348_Sub19_6787)).aByteArray8984,
+                            ((Class348_Sub19_Sub1) this
+                                    .aClass348_Sub19_6787).aByteArray8984,
                             is, anInt8983, i, anInt8970, anInt8974,
                             anInt8971, anInt8978, 0, i_190_, i_187_,
                             this);
                 else
-                    i = method2908(((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                    (((Class348_Sub16) this)
-                                            .aClass348_Sub19_6787)).aByteArray8984,
+                    i = method2908(((Class348_Sub19_Sub1) this
+                            .aClass348_Sub19_6787).aByteArray8984,
                             is, anInt8983, i, anInt8976, anInt8973, 0,
                             i_190_, i_187_, this);
             } else if (Class282.aBoolean3652)
                 i = method2920(0, 0,
-                        (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                ((Class348_Sub16) this).aClass348_Sub19_6787)
+                        (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                                 .aByteArray8984),
                         is, anInt8983, i, anInt8970, anInt8974,
                         anInt8971, anInt8978, 0, i_190_, i_187_, this,
                         anInt8979, i_189_);
             else
                 i = method2912(0, 0,
-                        (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                ((Class348_Sub16) this).aClass348_Sub19_6787)
+                        (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                                 .aByteArray8984),
                         is, anInt8983, i, anInt8976, anInt8973, 0,
                         i_190_, i_187_, this, anInt8979, i_189_);
@@ -1331,27 +1301,23 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
         if (anInt8979 == -256 && (anInt8983 & 0xff) == 0) {
             if (Class282.aBoolean3652)
                 return method2897(0,
-                        ((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                                (((Class348_Sub16) this)
-                                        .aClass348_Sub19_6787)).aByteArray8984,
+                        ((Class348_Sub19_Sub1) this
+                                .aClass348_Sub19_6787).aByteArray8984,
                         is, anInt8983, i, anInt8970, anInt8974, 0,
                         i_188_, i_187_, this);
-            return method2921((((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                            ((Class348_Sub16) this).aClass348_Sub19_6787)
+            return method2921((((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                             .aByteArray8984),
                     is, anInt8983, i, anInt8976, 0, i_188_, i_187_,
                     this);
         }
         if (Class282.aBoolean3652)
             return method2894(0, 0,
-                    (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                            ((Class348_Sub16) this).aClass348_Sub19_6787)
+                    (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                             .aByteArray8984),
                     is, anInt8983, i, anInt8970, anInt8974, 0,
                     i_188_, i_187_, this, anInt8979, i_189_);
         return method2907(0, 0,
-                (((Class348_Sub19_Sub1) (Class348_Sub19_Sub1)
-                        ((Class348_Sub16) this).aClass348_Sub19_6787)
+                (((Class348_Sub19_Sub1) this.aClass348_Sub19_6787)
                         .aByteArray8984),
                 is, anInt8983, i, anInt8976, 0, i_188_, i_187_, this,
                 anInt8979, i_189_);

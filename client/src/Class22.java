@@ -24,7 +24,7 @@ final class Class22 {
 
     final void method290(Class348_Sub49 class348_sub49, int i) {
         if (i != -1)
-            ((Class22) this).anInt332 = 25;
+            this.anInt332 = 25;
         for (; ; ) {
             int i_0_ = class348_sub49.method3387(255);
             if ((i_0_ ^ 0xffffffff) == -1)
@@ -38,18 +38,18 @@ final class Class22 {
                                  Class348_Sub49 class348_sub49) {
         if ((i ^ 0xffffffff) != -2) {
             if (i == 2) {
-                ((Class22) this).anInt331
+                this.anInt331
                         = class348_sub49.method3330(i_1_ + 842397948);
-                if (((Class22) this).anInt331 == 65535)
-                    ((Class22) this).anInt331 = -1;
+                if (this.anInt331 == 65535)
+                    this.anInt331 = -1;
             } else if ((i ^ 0xffffffff) != -4) {
                 if ((i ^ 0xffffffff) != -5) {
                     if (i == 5)
-                        ((Class22) this).aBoolean334 = false;
+                        this.aBoolean334 = false;
                 } else
-                    ((Class22) this).aBoolean342 = false;
+                    this.aBoolean342 = false;
             } else
-                ((Class22) this).anInt336
+                this.anInt336
                         = class348_sub49.method3330(842397944) << -1659645310;
         } else {
             anInt337 = class348_sub49.method3351(-1);
@@ -92,27 +92,27 @@ final class Class22 {
             if (d_9_ >= 0.5)
                 d_8_ = (d_6_ - d_5_) / (-d_5_ + (2.0 - d_6_));
         }
-        ((Class22) this).anInt332 = (int) (256.0 * d_8_);
+        this.anInt332 = (int) (256.0 * d_8_);
         d_7_ /= 6.0;
-        ((Class22) this).anInt335 = (int) (256.0 * d_9_);
-        if (((Class22) this).anInt332 >= 0) {
-            if ((((Class22) this).anInt332 ^ 0xffffffff) < -256)
-                ((Class22) this).anInt332 = 255;
+        this.anInt335 = (int) (256.0 * d_9_);
+        if (this.anInt332 >= 0) {
+            if ((this.anInt332 ^ 0xffffffff) < -256)
+                this.anInt332 = 255;
         } else
-            ((Class22) this).anInt332 = 0;
+            this.anInt332 = 0;
         if (d_9_ > 0.5)
-            ((Class22) this).anInt343 = (int) (512.0 * ((1.0 - d_9_) * d_8_));
+            this.anInt343 = (int) (512.0 * ((1.0 - d_9_) * d_8_));
         else
-            ((Class22) this).anInt343 = (int) (512.0 * (d_9_ * d_8_));
-        if ((((Class22) this).anInt335 ^ 0xffffffff) > -1)
-            ((Class22) this).anInt335 = 0;
-        else if (((Class22) this).anInt335 > 255)
-            ((Class22) this).anInt335 = 255;
-        if ((((Class22) this).anInt343 ^ 0xffffffff) > -2)
-            ((Class22) this).anInt343 = 1;
+            this.anInt343 = (int) (512.0 * (d_9_ * d_8_));
+        if ((this.anInt335 ^ 0xffffffff) > -1)
+            this.anInt335 = 0;
+        else if (this.anInt335 > 255)
+            this.anInt335 = 255;
+        if ((this.anInt343 ^ 0xffffffff) > -2)
+            this.anInt343 = 1;
         int i_10_ = 39 % ((i_2_ - 61) / 55);
-        ((Class22) this).anInt341
-                = (int) (d_7_ * (double) ((Class22) this).anInt343);
+        this.anInt341
+                = (int) (d_7_ * (double) this.anInt343);
     }
 
     public static void method293(byte i) {
@@ -124,7 +124,7 @@ final class Class22 {
     static final void method294(ha var_ha, int i) {
         anInt328++;
         if (Class5_Sub1_Sub1.aClass262_9931.method1998(i) != 0) {
-            if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+            if ((Class316.aClass348_Sub51_3959
                     .aClass239_Sub25_7271.method1829(-32350)
                     ^ 0xffffffff)
                     == -1) {
@@ -136,17 +136,16 @@ final class Class22 {
                              = (Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931
                              .method1990((byte) 31)) {
                     Exception_Sub1.aClass255_112.method1932
-                            (var_ha, ((Class348_Sub7) class348_sub7).anInt6647,
-                                    ((Class348_Sub7) class348_sub7).anInt6648,
+                            (var_ha, class348_sub7.anInt6647,
+                                    class348_sub7.anInt6648,
                                     Class240.aClass324_4684,
-                                    (!((Class348_Sub7) class348_sub7).aBoolean6650 ? null
-                                            : (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (!class348_sub7.aBoolean6650 ? null
+                                            : (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .aClass154_10536)),
-                                    ((Class348_Sub7) class348_sub7).anInt6642, false,
+                                    class348_sub7.anInt6642, false,
                                     (byte) 83, var_ha,
-                                    ((Class348_Sub7) class348_sub7).anInt6649, false,
-                                    ((Class348_Sub7) class348_sub7).anInt6645);
+                                    class348_sub7.anInt6649, false,
+                                    class348_sub7.anInt6645);
                     class348_sub7.method2715((byte) 29);
                 }
                 Class354.method3466(i + -113);
@@ -176,18 +175,17 @@ final class Class22 {
                              .method1990((byte) 118)) {
                     Exception_Sub1.aClass255_112.method1932
                             (Class348_Sub34.aHa6968,
-                                    ((Class348_Sub7) class348_sub7).anInt6647,
-                                    ((Class348_Sub7) class348_sub7).anInt6648,
+                                    class348_sub7.anInt6647,
+                                    class348_sub7.anInt6648,
                                     Class348_Sub40_Sub9.aClass324_9173,
-                                    (((Class348_Sub7) class348_sub7).aBoolean6650
-                                            ? (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (class348_sub7.aBoolean6650
+                                            ? (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .aClass154_10536)
                                             : null),
-                                    ((Class348_Sub7) class348_sub7).anInt6642, false,
+                                    class348_sub7.anInt6642, false,
                                     (byte) 83, var_ha,
-                                    ((Class348_Sub7) class348_sub7).anInt6649, false,
-                                    ((Class348_Sub7) class348_sub7).anInt6645);
+                                    class348_sub7.anInt6649, false,
+                                    class348_sub7.anInt6645);
                     class348_sub7.method2715((byte) 21);
                 }
             }
@@ -229,7 +227,7 @@ final class Class22 {
     }
 
     public Class22() {
-        ((Class22) this).aBoolean334 = true;
-        ((Class22) this).aBoolean342 = true;
+        this.aBoolean334 = true;
+        this.aBoolean342 = true;
     }
 }

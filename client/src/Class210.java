@@ -65,17 +65,17 @@ final class Class210 {
             0.41417846F, 0.44109413F, 0.4697589F, 0.50028646F, 0.53279793F,
             0.5674221F, 0.6042964F, 0.64356697F, 0.6853896F, 0.72993004F,
             0.777365F, 0.8278826F, 0.88168305F, 0.9389798F, 1.0F};
-    private int[] anIntArray2720;
+    private final int[] anIntArray2720;
     private static int[] anIntArray2721;
-    private int anInt2722;
-    private int[] anIntArray2723;
+    private final int anInt2722;
+    private final int[] anIntArray2723;
     private static int[] anIntArray2724 = {256, 128, 86, 64};
-    private int[] anIntArray2725;
-    private int[] anIntArray2726;
+    private final int[] anIntArray2725;
+    private final int[] anIntArray2726;
     private static boolean[] aBooleanArray2727;
     private static int[] anIntArray2728;
-    private int[] anIntArray2729;
-    private int[][] anIntArrayArray2730;
+    private final int[] anIntArray2729;
+    private final int[][] anIntArrayArray2730;
 
     final void method1530(float[] fs, int i) {
         int i_0_ = anIntArray2726.length;

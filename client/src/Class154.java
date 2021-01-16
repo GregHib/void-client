@@ -31,9 +31,9 @@ final class Class154 {
              int i_7_, int i_8_, Class261 class261) {
         try {
             anInt2097++;
-            if (((Class154) this).anInt2093 != -1)
+            if (this.anInt2093 != -1)
                 return (class278.method2079
-                        (((Class154) this).anInt2093, -1).method800
+                        (this.anInt2093, -1).method800
                         (i, class182s, class87, !bool_2_, class17, i_8_,
                                 class261, i_7_, class17_0_, interface17, var_ha, i_3_,
                                 is, i_1_, i_6_, i_4_, i_5_));
@@ -41,14 +41,14 @@ final class Class154 {
             long l = aLong2102;
             int[] is_10_ = anIntArray2092;
             if (class17_0_ != null
-                    && ((((Class17) class17_0_).anInt249 ^ 0xffffffff) <= -1
-                    || (((Class17) class17_0_).anInt261 ^ 0xffffffff) <= -1)) {
+                    && ((class17_0_.anInt249 ^ 0xffffffff) <= -1
+                    || (class17_0_.anInt261 ^ 0xffffffff) <= -1)) {
                 is_10_ = new int[12];
                 for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -13; i_11_++)
                     is_10_[i_11_] = anIntArray2092[i_11_];
-                if (((Class17) class17_0_).anInt249 >= 0) {
-                    if (((Class17) class17_0_).anInt249 != 65535) {
-                        is_10_[5] = Class273.method2057((((Class17) class17_0_)
+                if (class17_0_.anInt249 >= 0) {
+                    if (class17_0_.anInt249 != 65535) {
+                        is_10_[5] = Class273.method2057((class17_0_
                                         .anInt249),
                                 1073741824);
                         l ^= (long) is_10_[5] << 1203402208;
@@ -57,12 +57,12 @@ final class Class154 {
                         l ^= ~0xffffffffL;
                     }
                 }
-                if ((((Class17) class17_0_).anInt261 ^ 0xffffffff) <= -1) {
-                    if (((Class17) class17_0_).anInt261 != 65535) {
-                        is_10_[3] = Class273.method2057((((Class17) class17_0_)
+                if ((class17_0_.anInt261 ^ 0xffffffff) <= -1) {
+                    if (class17_0_.anInt261 != 65535) {
+                        is_10_[3] = Class273.method2057((class17_0_
                                         .anInt261),
                                 1073741824);
-                        l ^= (long) is_10_[3];
+                        l ^= is_10_[3];
                     } else {
                         is_10_[3] = 0;
                         l ^= 0xffffffffL;
@@ -78,16 +78,16 @@ final class Class154 {
                 Class95.aClass348_Sub42_Sub17Array1543[i_17_] = null;
                 if (class182s[i_17_] != null) {
                     Class17 class17_18_
-                            = class87.method835((((Class182) class182s[i_17_])
+                            = class87.method835((class182s[i_17_]
                                     .anInt2454),
                             7);
-                    if (((Class17) class17_18_).anIntArray237 != null) {
+                    if (class17_18_.anIntArray237 != null) {
                         bool_15_ = true;
                         Class57.aClass17Array1048[i_17_] = class17_18_;
-                        int i_19_ = ((Class182) class182s[i_17_]).anInt2451;
-                        int i_20_ = ((Class182) class182s[i_17_]).anInt2455;
+                        int i_19_ = class182s[i_17_].anInt2451;
+                        int i_20_ = class182s[i_17_].anInt2455;
                         int i_21_
-                                = ((Class17) class17_18_).anIntArray237[i_19_];
+                                = class17_18_.anIntArray237[i_19_];
                         Class95.aClass348_Sub42_Sub17Array1543[i_17_]
                                 = class87.method839(i_21_ >>> -592672144, 3);
                         i_21_ &= 0xffff;
@@ -104,17 +104,17 @@ final class Class154 {
                                     |= Class95.aClass348_Sub42_Sub17Array1543
                                     [i_17_].method3267((byte) -109, i_21_);
                         }
-                        if ((((Class17) class17_18_).aBoolean241
+                        if ((class17_18_.aBoolean241
                                 || Class28.aBoolean5002)
                                 && i_20_ != -1
-                                && (((Class17) class17_18_).anIntArray237.length
+                                && (class17_18_.anIntArray237.length
                                 > i_20_)) {
                             Class100.anIntArray1583[i_17_]
-                                    = ((Class17) class17_18_).anIntArray267[i_19_];
+                                    = class17_18_.anIntArray267[i_19_];
                             Class50_Sub3.anIntArray5241[i_17_]
-                                    = ((Class182) class182s[i_17_]).anInt2456;
+                                    = class182s[i_17_].anInt2456;
                             int i_22_
-                                    = ((Class17) class17_18_).anIntArray237[i_20_];
+                                    = class17_18_.anIntArray237[i_20_];
                             Class295.aClass348_Sub42_Sub17Array3753[i_17_]
                                     = class87.method839(i_22_ >>> -117955952, 3);
                             i_22_ &= 0xffff;
@@ -157,7 +157,7 @@ final class Class154 {
             Class348_Sub42_Sub17 class348_sub42_sub17_31_ = null;
             if (bool_15_) {
                 if (class17_0_ != null) {
-                    i_23_ = ((Class17) class17_0_).anIntArray237[i_7_];
+                    i_23_ = class17_0_.anIntArray237[i_7_];
                     int i_32_ = i_23_ >>> -648185776;
                     class348_sub42_sub17 = class87.method839(i_32_, 3);
                     i_23_ &= 0xffff;
@@ -168,13 +168,13 @@ final class Class154 {
                                 |= class348_sub42_sub17.method3267((byte) -110,
                                 i_23_);
                     }
-                    if ((((Class17) class17_0_).aBoolean241
+                    if ((class17_0_.aBoolean241
                             || Class28.aBoolean5002)
                             && (i_1_ ^ 0xffffffff) != 0
-                            && (((Class17) class17_0_).anIntArray237.length
+                            && (class17_0_.anIntArray237.length
                             ^ 0xffffffff) < (i_1_ ^ 0xffffffff)) {
-                        i_24_ = ((Class17) class17_0_).anIntArray237[i_1_];
-                        i_25_ = ((Class17) class17_0_).anIntArray267[i_7_];
+                        i_24_ = class17_0_.anIntArray237[i_1_];
+                        i_25_ = class17_0_.anIntArray267[i_7_];
                         int i_33_ = i_24_ >>> -1324422000;
                         class348_sub42_sub17_26_
                                 = ((i_33_ ^ 0xffffffff) == (i_32_ ^ 0xffffffff)
@@ -195,7 +195,7 @@ final class Class154 {
                 }
                 i_9_ |= 0x20;
                 if (class17 != null) {
-                    i_27_ = ((Class17) class17).anIntArray237[i_6_];
+                    i_27_ = class17.anIntArray237[i_6_];
                     int i_34_ = i_27_ >>> 32772016;
                     i_27_ &= 0xffff;
                     class348_sub42_sub17_30_ = class87.method839(i_34_, 3);
@@ -208,13 +208,13 @@ final class Class154 {
                                 |= class348_sub42_sub17_30_.method3267((byte) -123,
                                 i_27_);
                     }
-                    if ((((Class17) class17).aBoolean241
+                    if ((class17.aBoolean241
                             || Class28.aBoolean5002)
                             && (i_3_ ^ 0xffffffff) != 0
-                            && (((Class17) class17).anIntArray237.length
+                            && (class17.anIntArray237.length
                             ^ 0xffffffff) < (i_3_ ^ 0xffffffff)) {
-                        i_28_ = ((Class17) class17).anIntArray237[i_3_];
-                        i_29_ = ((Class17) class17).anIntArray267[i_6_];
+                        i_28_ = class17.anIntArray237[i_3_];
+                        i_29_ = class17.anIntArray267[i_6_];
                         int i_35_ = i_28_ >>> -1633872496;
                         i_28_ &= 0xffff;
                         class348_sub42_sub17_31_
@@ -263,7 +263,7 @@ final class Class154 {
                             bool_37_ = true;
                     } else if (!class255.method1940(94, 0x3fffffff & i_39_)
                             .method1565
-                                    (((Class154) this).aBoolean2100, -1))
+                                    (this.aBoolean2100, -1))
                         bool_37_ = true;
                 }
                 if (!bool_37_) {
@@ -283,15 +283,15 @@ final class Class154 {
                             Class124 class124
                                     = (class255.method1940
                                     (104, i_41_ & 0x3fffffff).method1558
-                                    (((Class154) this).aBoolean2100, !bool_2_));
+                                    (this.aBoolean2100, !bool_2_));
                             if (class124 != null)
                                 class124s[i_40_] = class124;
                         }
                     }
                     if (class225 != null
-                            && ((Class225) class225).anIntArrayArray2939 != null) {
+                            && class225.anIntArrayArray2939 != null) {
                         for (int i_42_ = 0; ((i_42_ ^ 0xffffffff)
-                                > ((((Class225) class225)
+                                > ((class225
                                 .anIntArrayArray2939).length
                                 ^ 0xffffffff)); i_42_++) {
                             if (class124s[i_42_] != null) {
@@ -301,23 +301,23 @@ final class Class154 {
                                 int i_46_ = 0;
                                 int i_47_ = 0;
                                 int i_48_ = 0;
-                                if ((((Class225) class225).anIntArrayArray2939
+                                if ((class225.anIntArrayArray2939
                                         [i_42_])
                                         != null) {
-                                    i_47_ = ((((Class225) class225)
+                                    i_47_ = ((class225
                                             .anIntArrayArray2939[i_42_][4])
                                             << -1287260509);
-                                    i_44_ = (((Class225) class225)
+                                    i_44_ = (class225
                                             .anIntArrayArray2939[i_42_][1]);
-                                    i_48_ = ((((Class225) class225)
+                                    i_48_ = ((class225
                                             .anIntArrayArray2939[i_42_][5])
                                             << -1954446141);
-                                    i_43_ = (((Class225) class225)
+                                    i_43_ = (class225
                                             .anIntArrayArray2939[i_42_][0]);
-                                    i_46_ = ((((Class225) class225)
+                                    i_46_ = ((class225
                                             .anIntArrayArray2939[i_42_][3])
                                             << -810830909);
-                                    i_45_ = (((Class225) class225)
+                                    i_45_ = (class225
                                             .anIntArrayArray2939[i_42_][2]);
                                 }
                                 if ((i_46_ ^ 0xffffffff) != -1
@@ -344,7 +344,7 @@ final class Class154 {
                                      > (Class367_Sub2.aShortArrayArrayArray7290.length
                                      ^ 0xffffffff));
                              i_50_++) {
-                            if ((((Class154) this).anIntArray2095[i_49_]
+                            if ((this.anIntArray2095[i_49_]
                                     ^ 0xffffffff)
                                     > ((Class367_Sub2.aShortArrayArrayArray7290
                                     [i_50_][i_49_]).length
@@ -354,7 +354,7 @@ final class Class154 {
                                         (Class367_Sub2
                                                 .aShortArrayArrayArray7290[i_50_]
                                                 [i_49_]
-                                                [(((Class154) this).anIntArray2095
+                                                [(this.anIntArray2095
                                                 [i_49_])]));
                         }
                     }
@@ -437,7 +437,7 @@ final class Class154 {
                         i_5_ - 1, class348_sub42_sub17, false,
                         i_24_, class348_sub42_sub17_31_,
                         i_8_ + -1,
-                        ((Class17) class17_0_).aBooleanArray263,
+                        class17_0_.aBooleanArray263,
                         i_28_);
             else if (class348_sub42_sub17 != null)
                 class64_51_.method617(i_23_, i_25_, class348_sub42_sub17_26_,
@@ -502,10 +502,10 @@ final class Class154 {
             anIntArray2092 = is;
             if (i_63_ <= 54)
                 anIntArray2092 = null;
-            ((Class154) this).anIntArray2095 = is_65_;
+            this.anIntArray2095 = is_65_;
             anInt2090++;
-            ((Class154) this).anInt2093 = i;
-            ((Class154) this).aBoolean2100 = bool;
+            this.anInt2093 = i;
+            this.aBoolean2100 = bool;
             method1234(-25);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -521,9 +521,9 @@ final class Class154 {
 
     final void method1229(byte i, boolean bool) {
         anInt2104++;
-        ((Class154) this).aBoolean2100 = bool;
+        this.aBoolean2100 = bool;
         if (i != -17)
-            ((Class154) this).aBoolean2100 = false;
+            this.aBoolean2100 = false;
         method1234(-78);
     }
 
@@ -533,9 +533,9 @@ final class Class154 {
              int i_68_, Class17 class17, int i_69_, ha var_ha) {
         try {
             anInt2107++;
-            if ((((Class154) this).anInt2093 ^ 0xffffffff) != 0)
+            if ((this.anInt2093 ^ 0xffffffff) != 0)
                 return (class278.method2079
-                        (((Class154) this).anInt2093, -1).method803
+                        (this.anInt2093, -1).method803
                         (interface17, var_ha, i_69_, i_67_, class17, class87,
                                 i_66_, 121, i_68_));
             int i_70_ = i_68_;
@@ -549,7 +549,7 @@ final class Class154 {
                 Object object = null;
                 i_70_ |= 0x20;
                 Object object_76_ = null;
-                i_74_ = ((Class17) class17).anIntArray237[i_66_];
+                i_74_ = class17.anIntArray237[i_66_];
                 int i_77_ = i_74_ >>> 1903356656;
                 i_74_ &= 0xffff;
                 Class348_Sub42_Sub17 class348_sub42_sub17
@@ -559,12 +559,12 @@ final class Class154 {
                     bool |= class348_sub42_sub17.method3271(i_74_, 14);
                     bool_73_
                             |= class348_sub42_sub17.method3267((byte) -125, i_74_);
-                    bool_72_ |= ((Class17) class17).aBoolean242;
+                    bool_72_ |= class17.aBoolean242;
                 }
-                if ((((Class17) class17).aBoolean241 || Class28.aBoolean5002)
+                if ((class17.aBoolean241 || Class28.aBoolean5002)
                         && i_67_ != -1
-                        && i_67_ < ((Class17) class17).anIntArray237.length) {
-                    i_75_ = ((Class17) class17).anIntArray237[i_67_];
+                        && i_67_ < class17.anIntArray237.length) {
+                    i_75_ = class17.anIntArray237[i_67_];
                     int i_78_ = i_75_ >>> 1156303088;
                     Class348_Sub42_Sub17 class348_sub42_sub17_79_
                             = ((i_77_ ^ 0xffffffff) != (i_78_ ^ 0xffffffff)
@@ -608,7 +608,7 @@ final class Class154 {
                         if (!class255.method1940
                                 (i ^ 0x17f6eb2c, 0x3fffffff & i_82_)
                                 .method1555
-                                        ((byte) 97, ((Class154) this).aBoolean2100))
+                                        ((byte) 97, this.aBoolean2100))
                             bool = true;
                     } else if ((~0x7fffffff & i_82_ ^ 0xffffffff) != -1
                             && !class150.method1203
@@ -635,7 +635,7 @@ final class Class154 {
                         Class124 class124
                                 = (class255.method1940
                                 (-107, i_85_ & 0x3fffffff).method1554
-                                (((Class154) this).aBoolean2100, -14));
+                                (this.aBoolean2100, -14));
                         if (class124 != null)
                             class124s[i_83_++] = class124;
                     }
@@ -652,13 +652,13 @@ final class Class154 {
                         if (((Class367_Sub2.aShortArrayArrayArray7290[i_87_]
                                 [i_86_]).length
                                 ^ 0xffffffff)
-                                < (((Class154) this).anIntArray2095[i_86_]
+                                < (this.anIntArray2095[i_86_]
                                 ^ 0xffffffff))
                             class64.ia((Class136.aShortArrayArray4791[i_87_]
                                             [i_86_]),
                                     (Class367_Sub2.aShortArrayArrayArray7290
                                             [i_87_][i_86_]
-                                            [(((Class154) this).anIntArray2095
+                                            [(this.anIntArray2095
                                             [i_86_])]));
                     }
                 }
@@ -689,7 +689,7 @@ final class Class154 {
     }
 
     final void method1231(int i, int i_89_, int i_90_) {
-        ((Class154) this).anIntArray2095[i] = i_90_;
+        this.anIntArray2095[i] = i_90_;
         if (i_89_ == 0) {
             anInt2091++;
             method1234(-48);
@@ -713,7 +713,7 @@ final class Class154 {
                 Object object = null;
                 Object object_104_ = null;
                 i_98_ |= 0x20;
-                i_102_ = ((Class17) class17).anIntArray237[i_97_];
+                i_102_ = class17.anIntArray237[i_97_];
                 int i_105_ = i_102_ >>> -1261807632;
                 Class348_Sub42_Sub17 class348_sub42_sub17
                         = class87.method839(i_105_, 3);
@@ -725,12 +725,12 @@ final class Class154 {
                     bool |= class348_sub42_sub17.method3271(i_102_, 14);
                     bool_101_ |= class348_sub42_sub17.method3267((byte) -125,
                             i_102_);
-                    bool_100_ |= ((Class17) class17).aBoolean242;
+                    bool_100_ |= class17.aBoolean242;
                 }
-                if ((((Class17) class17).aBoolean241 || Class28.aBoolean5002)
+                if ((class17.aBoolean241 || Class28.aBoolean5002)
                         && i != -1
-                        && i < ((Class17) class17).anIntArray237.length) {
-                    i_103_ = ((Class17) class17).anIntArray237[i];
+                        && i < class17.anIntArray237.length) {
+                    i_103_ = class17.anIntArray237[i];
                     int i_106_ = i_103_ >>> -173330576;
                     i_103_ &= 0xffff;
                     Class348_Sub42_Sub17 class348_sub42_sub17_107_;
@@ -803,13 +803,13 @@ final class Class154 {
                         if (((Class367_Sub2.aShortArrayArrayArray7290[i_111_]
                                 [i_110_]).length
                                 ^ 0xffffffff)
-                                < (((Class154) this).anIntArray2095[i_110_]
+                                < (this.anIntArray2095[i_110_]
                                 ^ 0xffffffff))
                             class64.ia((Class136.aShortArrayArray4791[i_111_]
                                             [i_110_]),
                                     (Class367_Sub2.aShortArrayArrayArray7290
                                             [i_111_][i_110_]
-                                            [(((Class154) this).anIntArray2095
+                                            [(this.anIntArray2095
                                             [i_110_])]));
                     }
                 }
@@ -889,13 +889,13 @@ final class Class154 {
         for (int i_116_ = 0; (i_116_ ^ 0xffffffff) > -6; i_116_++)
             aLong2102
                     = (ls[(int) (0xffL
-                    & (aLong2102 ^ (long) (((Class154) this)
+                    & (aLong2102 ^ (long) (this
                     .anIntArray2095[i_116_])))]
                     ^ aLong2102 >>> 1598624328);
         aLong2102
                 = (aLong2102 >>> -354100856
                 ^ ls[(int) (0xffL & (aLong2102
-                ^ (long) (!((Class154) this).aBoolean2100
+                ^ (long) (!this.aBoolean2100
                 ? 0 : 1)))]);
     }
 

@@ -37,7 +37,7 @@ final class Class10 {
             return "";
         if (i < 51)
             return null;
-        return (((Class348_Sub42_Sub12) Class316.aClass348_Sub42_Sub12_3963)
+        return (Class316.aClass348_Sub42_Sub12_3963
                 .aString9593);
     }
 
@@ -55,31 +55,27 @@ final class Class10 {
         if (bool != false)
             return false;
         anInt190++;
-        if (!((i & 0x800) != 0 | Class278.method2077(-106, i_0_, i))
-                && !Class348_Sub42_Sub8_Sub2.method3200(i, i_0_, (byte) 88))
-            return false;
-        return true;
+        return (i & 0x800) != 0 | Class278.method2077(-106, i_0_, i)
+                || Class348_Sub42_Sub8_Sub2.method3200(i, i_0_, (byte) 88);
     }
 
     final boolean method220(byte i) {
         anInt181++;
         if (i >= -12)
             method218((byte) 101);
-        if (((Class10) this).aByte180 != 2 && ((Class10) this).aByte180 != 3)
-            return false;
-        return true;
+        return this.aByte180 == 2 || this.aByte180 == 3;
     }
 
     Class10(byte i, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_,
             Class318_Sub1 class318_sub1) {
-        ((Class10) this).anInt177 = i_2_;
-        ((Class10) this).anInt184 = i_4_;
-        ((Class10) this).anInt188 = i_3_;
-        ((Class10) this).anInt178 = i_5_;
-        ((Class10) this).anInt185 = i_1_;
-        ((Class10) this).aByte180 = i;
-        ((Class10) this).anInt173 = i_6_;
-        ((Class10) this).aClass318_Sub1_172 = class318_sub1;
+        this.anInt177 = i_2_;
+        this.anInt184 = i_4_;
+        this.anInt188 = i_3_;
+        this.anInt178 = i_5_;
+        this.anInt185 = i_1_;
+        this.aByte180 = i;
+        this.anInt173 = i_6_;
+        this.aClass318_Sub1_172 = class318_sub1;
     }
 
     static {

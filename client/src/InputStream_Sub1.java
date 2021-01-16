@@ -41,7 +41,7 @@ final class InputStream_Sub1 extends InputStream {
         int i_5_
                 = -1 + aa_Sub1.aSArray5191[i_1_].method3982((byte) -86, i, i_0_);
         int i_6_ = i_5_ + class318_sub1_sub4.method2394(true);
-        if (((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 == 1) {
+        if (class318_sub1_sub4.aShort8759 == 1) {
             if (!Class286_Sub7.method2169(i_3_, i_3_, i_4_, i_3_,
                     Class270.anInt3465 + i_4_, i_6_,
                     i_6_, i_5_, i_4_, false))
@@ -54,7 +54,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if (((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 == 2) {
+        if (class318_sub1_sub4.aShort8759 == 2) {
             if (!Class286_Sub7.method2169(i_3_, i_3_ - -Class270.anInt3465,
                     i_4_ - -Class270.anInt3465, i_3_,
                     Class270.anInt3465 + i_4_, i_6_,
@@ -71,7 +71,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 ^ 0xffffffff)
+        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
                 == -5) {
             if (!Class286_Sub7.method2169(i_3_ + Class270.anInt3465,
                     Class270.anInt3465 + i_3_, i_4_,
@@ -89,7 +89,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 ^ 0xffffffff)
+        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
                 == -9) {
             if (!Class286_Sub7.method2169(i_3_, Class270.anInt3465 + i_3_,
                     i_4_, i_3_, i_4_, i_6_, i_6_, i_5_,
@@ -102,7 +102,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 ^ 0xffffffff)
+        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
                 == -17) {
             if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037,
                     Class348_Sub23_Sub2.anInt9037 + i_4_,
@@ -112,7 +112,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if (((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 == 32) {
+        if (class318_sub1_sub4.aShort8759 == 32) {
             if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037,
                     Class348_Sub23_Sub2.anInt9037 + i_4_,
                     i_3_ + Class348_Sub23_Sub2.anInt9037,
@@ -122,7 +122,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if (((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 == 64) {
+        if (class318_sub1_sub4.aShort8759 == 64) {
             if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_,
                     Class348_Sub23_Sub2.anInt9037 + i_3_,
                     i_5_, Class348_Sub23_Sub2.anInt9037,
@@ -131,7 +131,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((((Class318_Sub1_Sub4) class318_sub1_sub4).aShort8759 ^ 0xffffffff)
+        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
                 == -129) {
             if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_,
                     i_3_, i_5_, Class348_Sub23_Sub2.anInt9037,
@@ -169,8 +169,8 @@ final class InputStream_Sub1 extends InputStream {
             int i_8_
                     = "\u1823\uc6e8\u87b8\u014f\u36a6\ud2f5\u796f\u9152\u60bc\u9b8e\ua30c\u7b35\u1de0\ud7c2\u2e4b\ufe57\u1577\u37e5\u9ff0\u4ada\u58c9\u290a\ub1a0\u6b85\ubd5d\u10f4\ucb3e\u0567\ue427\u418b\ua77d\u95d8\ufbee\u7c66\udd17\u479e\uca2d\ubf07\uad5a\u8333\u6302\uaa71\uc819\u49d9\uf2e3\u5b88\u9a26\u32b0\ue90f\ud580\ubecd\u3448\uff7a\u905f\u2068\u1aae\ub454\u9322\u64f1\u7312\u4008\uc3ec\udba1\u8d3d\u9700\ucf2b\u7682\ud61b\ub5af\u6a50\u45f3\u30ef\u3f55\ua2ea\u65ba\u2fc0\ude1c\ufd4d\u9275\u068a\ub2e6\u0e1f\u62d4\ua896\uf9c5\u2559\u8472\u394c\u5e78\u388c\ud1a5\ue261\ub321\u9c1e\u43c7\ufc04\u5199\u6d0d\ufadf\u7e24\u3bab\uce11\u8f4e\ub7eb\u3c81\u94f7\ub913\u2cd3\ue76e\uc403\u5644\u7fa9\u2abb\uc153\udc0b\u9d6c\u3174\uf646\uac89\u14e1\u163a\u6909\u70b6\ud0ed\ucc42\u98a4\u285c\uf886"
                     .charAt(i / 2);
-            long l = (long) ((i & 0x1 ^ 0xffffffff) == -1 ? i_8_ >>> 2132006120
-                    : 0xff & i_8_);
+            long l = (i & 0x1 ^ 0xffffffff) == -1 ? i_8_ >>> 2132006120
+                    : 0xff & i_8_;
             long l_9_ = l << 890183233;
             if ((l_9_ ^ 0xffffffffffffffffL) <= -257L)
                 l_9_ ^= 0x11dL;

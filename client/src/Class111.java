@@ -5,17 +5,17 @@
 import java.util.Random;
 
 final class Class111 {
-    private int anInt1715;
+    private final int anInt1715;
     static int anInt1716;
     static int anInt1717;
-    private Class45 aClass45_1718;
+    private final Class45 aClass45_1718;
     static int anInt1719;
     static int anInt1720 = -1;
     static int anInt1721;
     static Class114 aClass114_1722 = new Class114(8, -2);
     static int anInt1723;
     private int[][] anIntArrayArray1724;
-    private boolean[] aBooleanArray1725;
+    private final boolean[] aBooleanArray1725;
 
     final Class287 method1043(int i, byte i_0_) {
         anInt1721++;
@@ -31,10 +31,8 @@ final class Class111 {
         if (i < 15)
             anIntArrayArray1724 = null;
         anInt1717++;
-        if ((anInt1715 ^ 0xffffffff) == 0)
-            return false;
-        return true;
-    }
+		return (anInt1715 ^ 0xffffffff) != 0;
+	}
 
     static final int method1045(int i, int i_1_, int i_2_, int i_3_, int i_4_,
                                 int i_5_, byte i_6_) {
@@ -94,8 +92,8 @@ final class Class111 {
         int i_15_;
         int i_16_;
         if (class46_14_ != null) {
-            i_15_ = ((Class46) class46_14_).anInt789;
-            i_16_ = ((Class46) class46_14_).anInt709;
+            i_15_ = class46_14_.anInt789;
+            i_16_ = class46_14_.anInt709;
         } else {
             i_15_ = Class348_Sub42_Sub8_Sub2.anInt10432;
             i_16_ = Class321.anInt4017;
@@ -125,7 +123,7 @@ final class Class111 {
                                  > (class223s.length ^ 0xffffffff));
                          i_19_++) {
                         int i_20_ = class348_sub49.method3387(255);
-                        if (i_20_ != ((Class223) class223s[i_19_]).anInt2896) {
+                        if (i_20_ != class223s[i_19_].anInt2896) {
                             bool = false;
                             break;
                         }

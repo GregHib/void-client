@@ -8,7 +8,7 @@ final class na extends aa implements Interface19 {
     public final native void w(boolean bool);
 
     protected final void finalize() {
-        if (((na) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 

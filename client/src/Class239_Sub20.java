@@ -28,8 +28,7 @@ final class Class239_Sub20 extends Class239 {
     final int method1714(int i, int i_0_) {
         anInt6051++;
         if (!Class348.method2714(7351,
-                ((Class348_Sub51)
-                        ((Class239) this).aClass348_Sub51_3136)
+                this.aClass348_Sub51_3136
                         .aClass239_Sub25_7271.method1829(-32350)))
             return 3;
         if (i != 3)
@@ -45,12 +44,9 @@ final class Class239_Sub20 extends Class239 {
         if (i < 85)
             method1714(-53, -119);
         anInt6049++;
-        if (!Class348.method2714(7351,
-                ((Class348_Sub51)
-                        ((Class239) this).aClass348_Sub51_3136)
-                        .aClass239_Sub25_7271.method1829(-32350)))
-            return false;
-        return true;
+        return Class348.method2714(7351,
+                this.aClass348_Sub51_3136
+                        .aClass239_Sub25_7271.method1829(-32350));
     }
 
     public static void method1807(byte i) {
@@ -68,29 +64,28 @@ final class Class239_Sub20 extends Class239 {
         anInt6053++;
         if (i != -32350)
             anInt6048 = -97;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     final void method1712(int i, int i_1_) {
         int i_2_ = 38 / ((82 - i) / 35);
         anInt6052++;
-        ((Class239) this).anInt3138 = i_1_;
+        this.anInt3138 = i_1_;
     }
 
     final void method1716(boolean bool) {
         anInt6050++;
         if (bool != false)
             method1714(-51, -128);
-        if (((Class348_Sub51) ((Class239) this).aClass348_Sub51_3136)
+        if (this.aClass348_Sub51_3136
                 .aClass239_Sub25_7271.method1830((byte) -123)
                 && !Class348.method2714(7351,
-                ((Class348_Sub51)
-                        ((Class239) this).aClass348_Sub51_3136)
+                this.aClass348_Sub51_3136
                         .aClass239_Sub25_7271
                         .method1829(-32350)))
-            ((Class239) this).anInt3138 = 0;
-        if (((Class239) this).anInt3138 < 0
-                || (((Class239) this).anInt3138 ^ 0xffffffff) < -3)
-            ((Class239) this).anInt3138 = method1710(20014);
+            this.anInt3138 = 0;
+        if (this.anInt3138 < 0
+                || (this.anInt3138 ^ 0xffffffff) < -3)
+            this.anInt3138 = method1710(20014);
     }
 }

@@ -86,10 +86,10 @@ final class Class54 {
 
     Class54(Class348_Sub49 class348_sub49) {
         aByte966 = class348_sub49.method3388(-113);
-        ((Class54) this).anInt969 = class348_sub49.method3330(842397944);
-        ((Class54) this).anInt976 = class348_sub49.method3385((byte) -126);
-        ((Class54) this).anInt967 = class348_sub49.method3385((byte) -126);
-        ((Class54) this).anInt977 = class348_sub49.method3385((byte) -126);
-        ((Class54) this).anInt973 = class348_sub49.method3385((byte) -126);
+        this.anInt969 = class348_sub49.method3330(842397944);
+        this.anInt976 = class348_sub49.method3385((byte) -126);
+        this.anInt967 = class348_sub49.method3385((byte) -126);
+        this.anInt977 = class348_sub49.method3385((byte) -126);
+        this.anInt973 = class348_sub49.method3385((byte) -126);
     }
 }

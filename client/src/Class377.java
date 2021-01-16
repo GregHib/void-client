@@ -66,7 +66,7 @@ final class Class377 extends ha_Sub3 {
     static int anInt9866;
     static int anInt9867;
     static int anInt9868;
-    private Class262 aClass262_9869 = new Class262();
+    private final Class262 aClass262_9869 = new Class262();
     static int anInt9870;
     static int anInt9871;
     static int anInt9872;
@@ -98,10 +98,10 @@ final class Class377 extends ha_Sub3 {
     static int anInt9898;
     private Class262 aClass262_9899 = new Class262();
     static int anInt9900;
-    private Class262 aClass262_9901 = new Class262();
+    private final Class262 aClass262_9901 = new Class262();
     private Class262 aClass262_9902 = new Class262();
     private Class262 aClass262_9903 = new Class262();
-    private Class262 aClass262_9904 = new Class262();
+    private final Class262 aClass262_9904 = new Class262();
     private Class262 aClass262_9905 = new Class262();
     private long aLong9906;
     private Class285_Sub1[] aClass285_Sub1Array9907 = new Class285_Sub1[16];
@@ -114,7 +114,7 @@ final class Class377 extends ha_Sub3 {
     private boolean aBoolean9914;
     MapBuffer aMapBuffer9915 = new MapBuffer();
     private String aString9916;
-    private String aString9917;
+    private final String aString9917;
     int anInt9918;
     private boolean aBoolean9919;
     boolean aBoolean9920;
@@ -123,7 +123,7 @@ final class Class377 extends ha_Sub3 {
     boolean aBoolean9923;
     private int anInt9924;
     private int anInt9925 = 0;
-    private boolean aBoolean9926;
+    private final boolean aBoolean9926;
     int[] anIntArray9927;
 
     final synchronized void method3646(int i) {
@@ -134,9 +134,9 @@ final class Class377 extends ha_Sub3 {
             Class348_Sub35 class348_sub35
                     = (Class348_Sub35) aClass262_9899.method1997(8);
             Class107.anIntArray1650[i_0_++]
-                    = (int) ((Class348) class348_sub35).aLong4291;
-            ((ha_Sub3) this).anInt8063
-                    -= ((Class348_Sub35) class348_sub35).anInt6976;
+                    = (int) class348_sub35.aLong4291;
+            this.anInt8063
+                    -= class348_sub35.anInt6976;
             if ((i_0_ ^ 0xffffffff) == -1001) {
                 OpenGL.glDeleteBuffersARB(i_0_, Class107.anIntArray1650, 0);
                 i_0_ = 0;
@@ -150,9 +150,9 @@ final class Class377 extends ha_Sub3 {
             Class348_Sub35 class348_sub35
                     = (Class348_Sub35) aClass262_9901.method1997(8);
             Class107.anIntArray1650[i_0_++]
-                    = (int) ((Class348) class348_sub35).aLong4291;
-            ((ha_Sub3) this).anInt8062
-                    -= ((Class348_Sub35) class348_sub35).anInt6976;
+                    = (int) class348_sub35.aLong4291;
+            this.anInt8062
+                    -= class348_sub35.anInt6976;
             if (i_0_ == 1000) {
                 OpenGL.glDeleteTextures(i_0_, Class107.anIntArray1650, 0);
                 i_0_ = 0;
@@ -166,7 +166,7 @@ final class Class377 extends ha_Sub3 {
             Class348_Sub35 class348_sub35
                     = (Class348_Sub35) aClass262_9902.method1997(8);
             Class107.anIntArray1650[i_0_++]
-                    = ((Class348_Sub35) class348_sub35).anInt6976;
+                    = class348_sub35.anInt6976;
             if ((i_0_ ^ 0xffffffff) == -1001) {
                 OpenGL.glDeleteFramebuffersEXT(i_0_, Class107.anIntArray1650,
                         0);
@@ -181,9 +181,9 @@ final class Class377 extends ha_Sub3 {
             Class348_Sub35 class348_sub35
                     = (Class348_Sub35) aClass262_9903.method1997(8);
             Class107.anIntArray1650[i_0_++]
-                    = (int) ((Class348) class348_sub35).aLong4291;
-            ((ha_Sub3) this).anInt8079
-                    -= ((Class348_Sub35) class348_sub35).anInt6976;
+                    = (int) class348_sub35.aLong4291;
+            this.anInt8079
+                    -= class348_sub35.anInt6976;
             if ((i_0_ ^ 0xffffffff) == -1001) {
                 OpenGL.glDeleteRenderbuffersEXT(i_0_, Class107.anIntArray1650,
                         0);
@@ -197,22 +197,22 @@ final class Class377 extends ha_Sub3 {
         while (!aClass262_9869.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35
                     = (Class348_Sub35) aClass262_9869.method1997(8);
-            OpenGL.glDeleteLists((int) ((Class348) class348_sub35).aLong4291,
-                    ((Class348_Sub35) class348_sub35).anInt6976);
+            OpenGL.glDeleteLists((int) class348_sub35.aLong4291,
+                    class348_sub35.anInt6976);
         }
         while (!aClass262_9904.method2002((byte) 18)) {
             Class348 class348 = aClass262_9904.method1997(8);
-            OpenGL.glDeleteProgramARB((int) ((Class348) class348).aLong4291);
+            OpenGL.glDeleteProgramARB((int) class348.aLong4291);
         }
         while (!aClass262_9905.method2002((byte) 18)) {
             Class348 class348 = aClass262_9905.method1997(8);
-            OpenGL.glDeleteObjectARB(((Class348) class348).aLong4291);
+            OpenGL.glDeleteObjectARB(class348.aLong4291);
         }
         while (!aClass262_9869.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35
                     = (Class348_Sub35) aClass262_9869.method1997(8);
-            OpenGL.glDeleteLists((int) ((Class348) class348_sub35).aLong4291,
-                    ((Class348_Sub35) class348_sub35).anInt6976);
+            OpenGL.glDeleteLists((int) class348_sub35.aLong4291,
+                    class348_sub35.anInt6976);
         }
         if (this.E() > 100663296
                 && ((60000L + aLong9906 ^ 0xffffffffffffffffL)
@@ -225,8 +225,8 @@ final class Class377 extends ha_Sub3 {
 
     final void method3841(byte i) {
         if (i == -116) {
-            OpenGL.glDepthMask(((ha_Sub3) this).aBoolean8124
-                    && ((ha_Sub3) this).aBoolean8118);
+            OpenGL.glDepthMask(this.aBoolean8124
+                    && this.aBoolean8118);
             anInt9837++;
         }
     }
@@ -235,7 +235,7 @@ final class Class377 extends ha_Sub3 {
         try {
             anInt9875++;
             if (i != 0)
-                ((Class377) this).aMapBuffer9913 = null;
+                this.aMapBuffer9913 = null;
             return new Class130_Sub1(class58s);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -250,7 +250,7 @@ final class Class377 extends ha_Sub3 {
         anInt9844++;
         if (bool != true)
             aClass262_9899 = null;
-        if (((ha_Sub3) this).aBoolean8110) {
+        if (this.aBoolean8110) {
             OpenGL.glEnable(16384);
             OpenGL.glEnable(16385);
         } else {
@@ -265,7 +265,7 @@ final class Class377 extends ha_Sub3 {
             Class348_Sub42_Sub15 class348_sub42_sub15
                     = Class318_Sub9_Sub1.method2516(i, (byte) 105, i_1_);
             class348_sub42_sub15.method3246(-25490);
-            ((Class348_Sub42_Sub15) class348_sub42_sub15).aString9654 = string;
+            class348_sub42_sub15.aString9654 = string;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("bga.AA("
@@ -345,7 +345,7 @@ final class Class377 extends ha_Sub3 {
         if (bool != true)
             method3652();
         anInt9884++;
-        OpenGL.glLoadMatrixf(((ha_Sub3) this).aFloatArray8135, 0);
+        OpenGL.glLoadMatrixf(this.aFloatArray8135, 0);
         OpenGL.glMatrixMode(5888);
     }
 
@@ -359,7 +359,7 @@ final class Class377 extends ha_Sub3 {
         try {
             anInt9853++;
             Class348 class348 = new Class348();
-            ((Class348) class348).aLong4291 = l;
+            class348.aLong4291 = l;
             if (i == 34192)
                 aClass262_9905.method1999(class348, i ^ ~0xcb43);
         } catch (RuntimeException runtimeexception) {
@@ -377,9 +377,9 @@ final class Class377 extends ha_Sub3 {
         anInt9861++;
         OpenGL.glTexEnvi(8960, 34162,
                 Class348_Sub32.method3021((byte) 32,
-                        (((ha_Sub3) this)
+                        (this
                                 .aClass229Array8092
-                                [(((ha_Sub3) this)
+                                [(this
                                 .anInt8175)])));
         if (i >= -99)
             method3658(-123, -102, -33, -112);
@@ -408,7 +408,7 @@ final class Class377 extends ha_Sub3 {
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i);
         if (i_8_ != 59)
             method3818(false);
-        ((Class348) class348_sub35).aLong4291 = (long) i_9_;
+        class348_sub35.aLong4291 = i_9_;
         aClass262_9901.method1999(class348_sub35, -20180);
     }
 
@@ -420,12 +420,12 @@ final class Class377 extends ha_Sub3 {
 
     final void method3928(int i) {
         RuntimeException_Sub1.aFloatArray4602[0]
-                = ((ha_Sub3) this).aFloat8180 * ((ha_Sub3) this).aFloat8093;
+                = this.aFloat8180 * this.aFloat8093;
         anInt9864++;
         RuntimeException_Sub1.aFloatArray4602[2]
-                = ((ha_Sub3) this).aFloat8093 * ((ha_Sub3) this).aFloat8168;
+                = this.aFloat8093 * this.aFloat8168;
         RuntimeException_Sub1.aFloatArray4602[1]
-                = ((ha_Sub3) this).aFloat8087 * ((ha_Sub3) this).aFloat8093;
+                = this.aFloat8087 * this.aFloat8093;
         RuntimeException_Sub1.aFloatArray4602[3] = 1.0F;
         OpenGL.glLightModelfv(2899, RuntimeException_Sub1.aFloatArray4602, i);
     }
@@ -516,9 +516,9 @@ final class Class377 extends ha_Sub3 {
         OpenGL.glMatrixMode(5890);
         anInt9888++;
         if (Class348_Sub42_Sub18.aClass251_9685
-                != ((ha_Sub3) this).aClass251Array8113[((ha_Sub3) this).anInt8175])
-            OpenGL.glLoadMatrixf(((ha_Sub3) this).aClass101_Sub2Array8131
-                            [((ha_Sub3) this).anInt8175]
+                != this.aClass251Array8113[this.anInt8175])
+            OpenGL.glLoadMatrixf(this.aClass101_Sub2Array8131
+                            [this.anInt8175]
                             .method918(Class233.aFloatArray3015, 0),
                     0);
         else
@@ -549,9 +549,9 @@ final class Class377 extends ha_Sub3 {
             method3911(null, 34, null);
         OpenGL.glTexEnvi(8960, 34161,
                 Class348_Sub32.method3021((byte) 32,
-                        (((ha_Sub3) this)
+                        (this
                                 .aClass229Array8086
-                                [(((ha_Sub3) this)
+                                [(this
                                 .anInt8175)])));
     }
 
@@ -563,9 +563,9 @@ final class Class377 extends ha_Sub3 {
     final void method3819(byte i) {
         anInt9887++;
         int i_20_
-                = ((Class377) this).anIntArray9927[((ha_Sub3) this).anInt8175];
+                = this.anIntArray9927[this.anInt8175];
         if ((i_20_ ^ 0xffffffff) != -1) {
-            ((Class377) this).anIntArray9927[((ha_Sub3) this).anInt8175] = 0;
+            this.anIntArray9927[this.anInt8175] = 0;
             OpenGL.glBindTexture(i_20_, 0);
             OpenGL.glDisable(i_20_);
         }
@@ -575,7 +575,7 @@ final class Class377 extends ha_Sub3 {
 
     final void method3882(byte i) {
         anInt9874++;
-        for (int i_21_ = -1 + ((ha_Sub3) this).anInt8090; i_21_ >= 0;
+        for (int i_21_ = -1 + this.anInt8090; i_21_ >= 0;
              i_21_--) {
             OpenGL.glActiveTexture(i_21_ + 33984);
             OpenGL.glTexEnvi(8960, 8704, 34160);
@@ -615,8 +615,8 @@ final class Class377 extends ha_Sub3 {
 
     final void method3827(byte i) {
         anInt9879++;
-        if (((ha_Sub3) this).aBoolean8148 && ((ha_Sub3) this).aBoolean8123
-                && ((ha_Sub3) this).anInt8091 >= 0)
+        if (this.aBoolean8148 && this.aBoolean8123
+                && this.anInt8091 >= 0)
             OpenGL.glEnable(2912);
         else
             OpenGL.glDisable(2912);
@@ -690,32 +690,32 @@ final class Class377 extends ha_Sub3 {
 
     final synchronized void method3969(int i, int i_26_, int i_27_) {
         if (i_27_ != 3089)
-            ((Class377) this).anIntArray9927 = null;
+            this.anIntArray9927 = null;
         anInt9850++;
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i);
-        ((Class348) class348_sub35).aLong4291 = (long) i_26_;
+        class348_sub35.aLong4291 = i_26_;
         aClass262_9899.method1999(class348_sub35, i_27_ ^ ~0x42c2);
     }
 
     final void method3842(boolean bool) {
         RuntimeException_Sub1.aFloatArray4602[2]
-                = ((ha_Sub3) this).aFloat8168 * ((ha_Sub3) this).aFloat8174;
+                = this.aFloat8168 * this.aFloat8174;
         RuntimeException_Sub1.aFloatArray4602[3] = 1.0F;
         RuntimeException_Sub1.aFloatArray4602[0]
-                = ((ha_Sub3) this).aFloat8180 * ((ha_Sub3) this).aFloat8174;
+                = this.aFloat8180 * this.aFloat8174;
         anInt9825++;
         RuntimeException_Sub1.aFloatArray4602[1]
-                = ((ha_Sub3) this).aFloat8087 * ((ha_Sub3) this).aFloat8174;
+                = this.aFloat8087 * this.aFloat8174;
         OpenGL.glLightfv(16384, 4609, RuntimeException_Sub1.aFloatArray4602,
                 0);
         RuntimeException_Sub1.aFloatArray4602[0]
-                = ((ha_Sub3) this).aFloat8180 * -((ha_Sub3) this).aFloat8186;
+                = this.aFloat8180 * -this.aFloat8186;
         RuntimeException_Sub1.aFloatArray4602[2]
-                = -((ha_Sub3) this).aFloat8186 * ((ha_Sub3) this).aFloat8168;
+                = -this.aFloat8186 * this.aFloat8168;
         if (bool == true) {
             RuntimeException_Sub1.aFloatArray4602[3] = 1.0F;
             RuntimeException_Sub1.aFloatArray4602[1]
-                    = -((ha_Sub3) this).aFloat8186 * ((ha_Sub3) this).aFloat8087;
+                    = -this.aFloat8186 * this.aFloat8087;
             OpenGL.glLightfv(16385, 4609,
                     RuntimeException_Sub1.aFloatArray4602, 0);
         }
@@ -727,13 +727,13 @@ final class Class377 extends ha_Sub3 {
         anInt9840++;
         if (i != 1)
             method3950(69);
-        if (!((ha_Sub3) this).aClass196_8184.method1450(-98)) {
-            if (((ha_Sub3) this).aBoolean8069) {
+        if (!this.aClass196_8184.method1450(-98)) {
+            if (this.aBoolean8069) {
                 OpenGL.glLoadIdentity();
                 aBoolean9911 = false;
             } else {
                 OpenGL.glLoadMatrixf
-                        (((ha_Sub3) this).aClass101_Sub2_8074
+                        (this.aClass101_Sub2_8074
                                         .method918(Class233.aFloatArray3015, 0),
                                 0);
                 aBoolean9911 = false;
@@ -741,17 +741,17 @@ final class Class377 extends ha_Sub3 {
         } else {
             if (!aBoolean9914) {
                 OpenGL.glLoadMatrixf
-                        (((ha_Sub3) this).aClass101_Sub2_8083
+                        (this.aClass101_Sub2_8083
                                         .method918(Class233.aFloatArray3015, 0),
                                 0);
                 aBoolean9914 = true;
                 method3892(0);
                 method3823((byte) -104);
             }
-            if (!((ha_Sub3) this).aBoolean8069) {
+            if (!this.aBoolean8069) {
                 OpenGL.glPushMatrix();
                 OpenGL.glMultMatrixf
-                        (((ha_Sub3) this).aClass101_Sub2_8074
+                        (this.aClass101_Sub2_8074
                                         .method918(Class233.aFloatArray3015, i ^ 0x1),
                                 0);
                 aBoolean9911 = true;
@@ -772,25 +772,25 @@ final class Class377 extends ha_Sub3 {
 
     final void method3851(int i) {
         if (i != 25644)
-            ((Class377) this).aBoolean9921 = false;
+            this.aBoolean9921 = false;
         anInt9871++;
-        ((ha_Sub3) this).aFloat8115 = (float) (((ha_Sub3) this).anInt8154
-                + -((ha_Sub3) this).anInt8105);
-        ((ha_Sub3) this).aFloat8173 = ((float) -((ha_Sub3) this).anInt8091
-                + ((ha_Sub3) this).aFloat8115);
-        if (((ha_Sub3) this).aFloat8173 < (float) ((ha_Sub3) this).anInt8095)
-            ((ha_Sub3) this).aFloat8173 = (float) ((ha_Sub3) this).anInt8095;
-        OpenGL.glFogf(2915, ((ha_Sub3) this).aFloat8173);
-        OpenGL.glFogf(2916, ((ha_Sub3) this).aFloat8115);
+        this.aFloat8115 = (float) (this.anInt8154
+                + -this.anInt8105);
+        this.aFloat8173 = ((float) -this.anInt8091
+                + this.aFloat8115);
+        if (this.aFloat8173 < (float) this.anInt8095)
+            this.aFloat8173 = (float) this.anInt8095;
+        OpenGL.glFogf(2915, this.aFloat8173);
+        OpenGL.glFogf(2916, this.aFloat8115);
         RuntimeException_Sub1.aFloatArray4602[2]
-                = ((float) Class139.method1166(((ha_Sub3) this).anInt8144, 255)
+                = ((float) Class139.method1166(this.anInt8144, 255)
                 / 255.0F);
         RuntimeException_Sub1.aFloatArray4602[0]
                 = ((float) Class139.method1166(16711680,
-                ((ha_Sub3) this).anInt8144)
+                this.anInt8144)
                 / 1.671168E7F);
         RuntimeException_Sub1.aFloatArray4602[1]
-                = ((float) Class139.method1166(65280, ((ha_Sub3) this).anInt8144)
+                = ((float) Class139.method1166(65280, this.anInt8144)
                 / 65280.0F);
         OpenGL.glFogfv(2918, RuntimeException_Sub1.aFloatArray4602, 0);
     }
@@ -801,7 +801,7 @@ final class Class377 extends ha_Sub3 {
     }
 
     final void method3883(int i) {
-        if (!((ha_Sub3) this).aBoolean8145 || ((ha_Sub3) this).aBoolean8149)
+        if (!this.aBoolean8145 || this.aBoolean8149)
             OpenGL.glDisable(2896);
         else
             OpenGL.glEnable(2896);
@@ -812,7 +812,7 @@ final class Class377 extends ha_Sub3 {
     final void method3921(int i) {
         anInt9824++;
         if (i == 1) {
-            if (!((ha_Sub3) this).aBoolean8209)
+            if (!this.aBoolean8209)
                 OpenGL.glDisable(3089);
             else
                 OpenGL.glEnable(3089);
@@ -822,10 +822,10 @@ final class Class377 extends ha_Sub3 {
     final void method3937(byte i) {
         if (i != -33)
             method3832(35, (byte) -122);
-        OpenGL.glViewport(((ha_Sub3) this).anInt8181,
-                ((ha_Sub3) this).anInt8109,
-                ((ha_Sub3) this).anInt7931,
-                ((ha_Sub3) this).anInt7962);
+        OpenGL.glViewport(this.anInt8181,
+                this.anInt8109,
+                this.anInt7931,
+                this.anInt7962);
         anInt9827++;
     }
 
@@ -867,31 +867,31 @@ final class Class377 extends ha_Sub3 {
                     throw new RuntimeException("");
                 int[] is = new int[1];
                 OpenGL.glGetIntegerv(34018, is, 0);
-                ((ha_Sub3) this).anInt8090 = is[0];
-                if (((ha_Sub3) this).anInt8090 < 2)
+                this.anInt8090 = is[0];
+                if (this.anInt8090 < 2)
                     throw new RuntimeException("");
-                ((ha_Sub3) this).anInt8138 = 8;
-                ((Class377) this).aBoolean9920
+                this.anInt8138 = 8;
+                this.aBoolean9920
                         = anOpenGL9856.a("GL_ARB_vertex_buffer_object");
-                ((ha_Sub3) this).aBoolean8182
+                this.aBoolean8182
                         = anOpenGL9856.a("GL_ARB_multisample");
                 aBoolean9919 = anOpenGL9856.a("GL_ARB_texture_rectangle");
-                ((ha_Sub3) this).aBoolean8101
+                this.aBoolean8101
                         = anOpenGL9856.a("GL_ARB_texture_cube_map");
                 aBoolean9926
                         = anOpenGL9856.a("GL_ARB_texture_non_power_of_two");
-                ((ha_Sub3) this).aBoolean8159
+                this.aBoolean8159
                         = anOpenGL9856.a("GL_EXT_texture3D");
-                ((Class377) this).aBoolean9921
+                this.aBoolean9921
                         = anOpenGL9856.a("GL_ARB_vertex_shader");
-                ((Class377) this).aBoolean9923
+                this.aBoolean9923
                         = anOpenGL9856.a("GL_ARB_vertex_program");
-                ((Class377) this).aBoolean9922
+                this.aBoolean9922
                         = anOpenGL9856.a("GL_ARB_fragment_shader");
                 anOpenGL9856.a("GL_ARB_fragment_program");
-                ((Class377) this).anIntArray9927
-                        = new int[((ha_Sub3) this).anInt8090];
-                ((Class377) this).anInt9918 = Stream.c() ? 33639 : 5121;
+                this.anIntArray9927
+                        = new int[this.anInt8090];
+                this.anInt9918 = Stream.c() ? 33639 : 5121;
                 if (aString9916.indexOf("radeon") != -1) {
                     int i_34_ = 0;
                     boolean bool = false;
@@ -935,14 +935,14 @@ final class Class377 extends ha_Sub3 {
                     }
                     if (!bool_35_ && !bool) {
                         if (i_34_ >= 7000 && i_34_ <= 7999)
-                            ((Class377) this).aBoolean9920 = false;
+                            this.aBoolean9920 = false;
                         if ((i_34_ ^ 0xffffffff) <= -7001 && i_34_ <= 9250)
-                            ((ha_Sub3) this).aBoolean8159 = false;
+                            this.aBoolean8159 = false;
                     }
                     aBoolean9919 &= anOpenGL9856.a("GL_ARB_half_float_pixel");
                 }
                 aString9917.indexOf("intel");
-                if (((Class377) this).aBoolean9920) {
+                if (this.aBoolean9920) {
                     try {
                         int[] is_39_ = new int[1];
                         OpenGL.glGenBuffersARB(1, is_39_, 0);
@@ -1002,7 +1002,7 @@ final class Class377 extends ha_Sub3 {
             OpenGL.glDrawElements(i_44_, i_45_,
                     Class130.method1128(-20, class68),
                     (class285_sub2.method2122(27819)
-                            + (long) (i_41_ * (((Class68) class68)
+                            + (long) (i_41_ * (class68
                             .anInt1178))));
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -1022,9 +1022,9 @@ final class Class377 extends ha_Sub3 {
         int i_46_ = -79 / ((i - -39) / 62);
         this.method3942(5);
         int i_47_;
-        for (i_47_ = 0; ((ha_Sub3) this).anInt8151 > i_47_; i_47_++) {
+        for (i_47_ = 0; this.anInt8151 > i_47_; i_47_++) {
             Class348_Sub1 class348_sub1
-                    = ((ha_Sub3) this).aClass348_Sub1Array8132[i_47_];
+                    = this.aClass348_Sub1Array8132[i_47_];
             int i_48_ = class348_sub1.method2720(-1);
             int i_49_ = i_47_ + 16386;
             float f = class348_sub1.method2721(-37) / 255.0F;
@@ -1053,7 +1053,7 @@ final class Class377 extends ha_Sub3 {
             OpenGL.glEnable(i_49_);
         }
         for (/**/;
-                 (((ha_Sub3) this).anInt8122 ^ 0xffffffff) < (i_47_ ^ 0xffffffff);
+                 (this.anInt8122 ^ 0xffffffff) < (i_47_ ^ 0xffffffff);
                  i_47_++)
             OpenGL.glDisable(16386 - -i_47_);
         super.method3823((byte) 107);
@@ -1106,7 +1106,7 @@ final class Class377 extends ha_Sub3 {
         try {
             anInt9854++;
             if (bool != true)
-                ((Class377) this).aBoolean9921 = true;
+                this.aBoolean9921 = true;
             int i_51_;
             int i_52_;
             if (class21 != Class249.aClass21_3217) {
@@ -1164,7 +1164,7 @@ final class Class377 extends ha_Sub3 {
         try {
             anInt9890++;
             if (i_56_ != 2)
-                ((Class377) this).aMapBuffer9913 = null;
+                this.aMapBuffer9913 = null;
             if (!aBoolean9926 && (!Class192.method1436(60, i)
                     || !Class192.method1436(-73, i_57_))) {
                 if (aBoolean9919)
@@ -1213,12 +1213,12 @@ final class Class377 extends ha_Sub3 {
                     }
                 } else
                     return new Class367_Sub11(this,
-                            ((ha_Sub3) this).aClass45_8039);
-                return new Class367_Sub2(this, ((ha_Sub3) this).aClass45_8039,
-                        ((ha_Sub3) this).aClass269_7937);
+                            this.aClass45_8039);
+                return new Class367_Sub2(this, this.aClass45_8039,
+                        this.aClass269_7937);
             } while (false);
-            return new Class367_Sub9(this, ((ha_Sub3) this).aClass45_8039,
-                    ((ha_Sub3) this).aClass269_7937);
+            return new Class367_Sub9(this, this.aClass45_8039,
+                    this.aClass269_7937);
         } while (false);
         return super.method3832(i, (byte) -73);
     }
@@ -1265,12 +1265,12 @@ final class Class377 extends ha_Sub3 {
 
     final void method3673() {
         anInt9892++;
-        if ((((ha_Sub3) this).anInt7931 ^ 0xffffffff) < -1
-                || (((ha_Sub3) this).anInt7962 ^ 0xffffffff) < -1) {
-            int i = ((ha_Sub3) this).anInt8106;
-            int i_67_ = ((ha_Sub3) this).anInt8183;
-            int i_68_ = ((ha_Sub3) this).anInt8165;
-            int i_69_ = ((ha_Sub3) this).anInt8096;
+        if ((this.anInt7931 ^ 0xffffffff) < -1
+                || (this.anInt7962 ^ 0xffffffff) < -1) {
+            int i = this.anInt8106;
+            int i_67_ = this.anInt8183;
+            int i_68_ = this.anInt8165;
+            int i_69_ = this.anInt8096;
             this.la();
             OpenGL.glReadBuffer(1028);
             OpenGL.glDrawBuffer(1029);
@@ -1289,8 +1289,8 @@ final class Class377 extends ha_Sub3 {
             OpenGL.glMatrixMode(5888);
             OpenGL.glLoadIdentity();
             OpenGL.glRasterPos2i(0, 0);
-            OpenGL.glCopyPixels(0, 0, ((ha_Sub3) this).anInt7931,
-                    ((ha_Sub3) this).anInt7962, 6144);
+            OpenGL.glCopyPixels(0, 0, this.anInt7931,
+                    this.anInt7962, 6144);
             OpenGL.glFlush();
             OpenGL.glReadBuffer(1029);
             OpenGL.glDrawBuffer(1029);
@@ -1301,7 +1301,7 @@ final class Class377 extends ha_Sub3 {
     final void method3947(int i) {
         if (i != 4)
             method3950(-83);
-        if (!((ha_Sub3) this).aBoolean8116)
+        if (!this.aBoolean8116)
             OpenGL.glDisable(3042);
         else
             OpenGL.glEnable(3042);
@@ -1311,14 +1311,14 @@ final class Class377 extends ha_Sub3 {
     final synchronized void method3971(int i, int i_70_) {
         anInt9819++;
         Class348 class348 = new Class348();
-        ((Class348) class348).aLong4291 = (long) i_70_;
+        class348.aLong4291 = i_70_;
         aClass262_9904.method1999(class348, -20180);
         if (i != 16386)
             method3928(-86);
     }
 
     final void method3859(int i) {
-        if (((ha_Sub3) this).aBoolean8164)
+        if (this.aBoolean8164)
             OpenGL.glEnable(2929);
         else
             OpenGL.glDisable(2929);
@@ -1365,7 +1365,7 @@ final class Class377 extends ha_Sub3 {
         try {
             anInt9866++;
             Class58[] class58s
-                    = ((Class130_Sub1) (Class130_Sub1) class130).aClass58Array5801;
+                    = ((Class130_Sub1) class130).aClass58Array5801;
             int i_74_ = 0;
             boolean bool = false;
             boolean bool_75_ = false;
@@ -1414,7 +1414,7 @@ final class Class377 extends ha_Sub3 {
                                 (long) i_78_ + l);
                         bool = true;
                     }
-                    i_78_ += ((Class325) class325).anInt4069;
+                    i_78_ += class325.anInt4069;
                 }
             }
             if (aBoolean9910 != bool_76_) {
@@ -1482,7 +1482,7 @@ final class Class377 extends ha_Sub3 {
     final void method3868(boolean bool) {
         if (bool != false)
             aBoolean9919 = false;
-        OpenGL.glActiveTexture(33984 + ((ha_Sub3) this).anInt8175);
+        OpenGL.glActiveTexture(33984 + this.anInt8175);
         anInt9838++;
     }
 
@@ -1503,7 +1503,7 @@ final class Class377 extends ha_Sub3 {
             anInt9822++;
             Long var_long = (Long) object;
             if (i != 1)
-                ((Class377) this).anInt9918 = -120;
+                this.anInt9918 = -120;
             anOpenGL9856.releaseSurface(canvas, var_long.longValue());
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -1519,17 +1519,17 @@ final class Class377 extends ha_Sub3 {
 
     final void method3945(int i) {
         RuntimeException_Sub1.aFloatArray4602[1]
-                = ((float) Class139.method1166(65280, ((ha_Sub3) this).anInt8119)
+                = ((float) Class139.method1166(65280, this.anInt8119)
                 / 65280.0F);
         RuntimeException_Sub1.aFloatArray4602[2]
-                = ((float) Class139.method1166(255, ((ha_Sub3) this).anInt8119)
+                = ((float) Class139.method1166(255, this.anInt8119)
                 / 255.0F);
         RuntimeException_Sub1.aFloatArray4602[3]
-                = (float) (((ha_Sub3) this).anInt8119 >>> 1199324056) / 255.0F;
+                = (float) (this.anInt8119 >>> 1199324056) / 255.0F;
         anInt9889++;
         RuntimeException_Sub1.aFloatArray4602[0]
                 = ((float) Class139.method1166(16711680,
-                ((ha_Sub3) this).anInt8119)
+                this.anInt8119)
                 / 1.671168E7F);
         if (i >= -107)
             anInt9909 = -64;
@@ -1539,8 +1539,8 @@ final class Class377 extends ha_Sub3 {
 
     final void method3892(int i) {
         anInt9865++;
-        OpenGL.glLightfv(16384, 4611, ((ha_Sub3) this).aFloatArray8170, i);
-        OpenGL.glLightfv(16385, 4611, ((ha_Sub3) this).aFloatArray8102, 0);
+        OpenGL.glLightfv(16384, 4611, this.aFloatArray8170, i);
+        OpenGL.glLightfv(16385, 4611, this.aFloatArray8102, 0);
     }
 
     final void GA(int i) {
@@ -1557,7 +1557,7 @@ final class Class377 extends ha_Sub3 {
     }
 
     final void method3939(byte i) {
-        if (((ha_Sub3) this).aBoolean8141)
+        if (this.aBoolean8141)
             OpenGL.glEnable(3008);
         else
             OpenGL.glDisable(3008);
@@ -1605,11 +1605,11 @@ final class Class377 extends ha_Sub3 {
             aClass285_Sub1Array9907 = null;
         anInt9817++;
         OpenGL.glScissor
-                (((ha_Sub3) this).anInt8181 - -((ha_Sub3) this).anInt8106,
-                        -((ha_Sub3) this).anInt8096 + (((ha_Sub3) this).anInt8109
-                                - -((ha_Sub3) this).anInt7962),
-                        -((ha_Sub3) this).anInt8106 + ((ha_Sub3) this).anInt8183,
-                        ((ha_Sub3) this).anInt8096 - ((ha_Sub3) this).anInt8165);
+                (this.anInt8181 - -this.anInt8106,
+                        -this.anInt8096 + (this.anInt8109
+                                - -this.anInt7962),
+                        -this.anInt8106 + this.anInt8183,
+                        this.anInt8096 - this.anInt8165);
     }
 
     final void method3647(boolean bool) {
@@ -1618,14 +1618,14 @@ final class Class377 extends ha_Sub3 {
 
     final void method3950(int i) {
         anInt9886++;
-        if (Class348_Sub4.aClass173_6602 == ((ha_Sub3) this).aClass173_8163)
+        if (Class348_Sub4.aClass173_6602 == this.aClass173_8163)
             OpenGL.glBlendFunc(770, 771);
-        else if (Class69.aClass173_1201 == ((ha_Sub3) this).aClass173_8163)
+        else if (Class69.aClass173_1201 == this.aClass173_8163)
             OpenGL.glBlendFunc(1, 1);
-        else if (Class273.aClass173_5169 == ((ha_Sub3) this).aClass173_8163)
+        else if (Class273.aClass173_5169 == this.aClass173_8163)
             OpenGL.glBlendFunc(774, 1);
         if (i != 0)
-            ((Class377) this).anInt9918 = 74;
+            this.anInt9918 = 74;
     }
 
     final Interface5_Impl1 method3889(boolean bool, int i) {
@@ -1649,8 +1649,8 @@ final class Class377 extends ha_Sub3 {
              i_93_++)
             OpenGL.glReadPixelsi(i,
                     (-1 + (-i_93_ + -i_90_)
-                            + ((ha_Sub3) this).anInt7962),
-                    i_91_, 1, 32993, ((Class377) this).anInt9918,
+                            + this.anInt7962),
+                    i_91_, 1, 32993, this.anInt9918,
                     is, i_91_ * i_93_);
         return is;
     }

@@ -24,14 +24,14 @@ final class Class286_Sub8 extends Class286 {
         if (i <= -75) {
             if (aBoolean6301) {
                 aClass61_6302.method594('\001', 28666);
-                ((Class286) this).aHa_Sub2_3684.method3738(-15039, 1);
-                ((Class286) this).aHa_Sub2_3684.method3771((byte) -92, null);
-                ((Class286) this).aHa_Sub2_3684.method3738(-15039, 0);
+                this.aHa_Sub2_3684.method3738(-15039, 1);
+                this.aHa_Sub2_3684.method3771((byte) -92, null);
+                this.aHa_Sub2_3684.method3738(-15039, 0);
             } else
-                ((Class286) this).aHa_Sub2_3684.method3775(false, 0, 770,
+                this.aHa_Sub2_3684.method3775(false, 0, 770,
                         5890);
             anInt6297++;
-            ((Class286) this).aHa_Sub2_3684.method3729(8448, (byte) 116, 8448);
+            this.aHa_Sub2_3684.method3729(8448, (byte) 116, 8448);
             aBoolean6301 = false;
         }
     }
@@ -54,8 +54,8 @@ final class Class286_Sub8 extends Class286 {
 
     final void method2140(Class258 class258, byte i, int i_1_) {
         anInt6303++;
-        ((Class286) this).aHa_Sub2_3684.method3771((byte) -86, class258);
-        ((Class286) this).aHa_Sub2_3684.method3761(0, i_1_);
+        this.aHa_Sub2_3684.method3771((byte) -86, class258);
+        this.aHa_Sub2_3684.method3761(0, i_1_);
         if (i >= -89)
             method2172(12);
     }
@@ -80,36 +80,36 @@ final class Class286_Sub8 extends Class286 {
 
     Class286_Sub8(ha_Sub2 var_ha_Sub2) {
         super(var_ha_Sub2);
-        if (((ha_Sub2) var_ha_Sub2).aBoolean7863) {
+        if (var_ha_Sub2.aBoolean7863) {
             aClass61_6302 = new Class61(var_ha_Sub2, 2);
             aClass61_6302.method595((byte) 123, 0);
-            ((Class286) this).aHa_Sub2_3684.method3738(-15039, 1);
-            ((Class286) this).aHa_Sub2_3684.method3729(34165, (byte) -35,
+            this.aHa_Sub2_3684.method3738(-15039, 1);
+            this.aHa_Sub2_3684.method3729(34165, (byte) -35,
                     7681);
-            ((Class286) this).aHa_Sub2_3684.method3762(34168, 770, (byte) -87,
+            this.aHa_Sub2_3684.method3762(34168, 770, (byte) -87,
                     2);
-            ((Class286) this).aHa_Sub2_3684.method3775(false, 0, 770, 34167);
+            this.aHa_Sub2_3684.method3775(false, 0, 770, 34167);
             OpenGL.glTexGeni(8192, 9472, 34066);
             OpenGL.glTexGeni(8193, 9472, 34066);
             OpenGL.glTexGeni(8194, 9472, 34066);
             OpenGL.glEnable(3168);
             OpenGL.glEnable(3169);
             OpenGL.glEnable(3170);
-            ((Class286) this).aHa_Sub2_3684.method3738(-15039, 0);
+            this.aHa_Sub2_3684.method3738(-15039, 0);
             aClass61_6302.method591(-1);
             aClass61_6302.method595((byte) 126, 1);
-            ((Class286) this).aHa_Sub2_3684.method3738(-15039, 1);
-            ((Class286) this).aHa_Sub2_3684.method3729(8448, (byte) -73, 8448);
-            ((Class286) this).aHa_Sub2_3684.method3762(34166, 770, (byte) -87,
+            this.aHa_Sub2_3684.method3738(-15039, 1);
+            this.aHa_Sub2_3684.method3729(8448, (byte) -73, 8448);
+            this.aHa_Sub2_3684.method3762(34166, 770, (byte) -87,
                     2);
-            ((Class286) this).aHa_Sub2_3684.method3775(false, 0, 770, 5890);
+            this.aHa_Sub2_3684.method3775(false, 0, 770, 5890);
             OpenGL.glDisable(3168);
             OpenGL.glDisable(3169);
             OpenGL.glDisable(3170);
             OpenGL.glMatrixMode(5890);
             OpenGL.glLoadIdentity();
             OpenGL.glMatrixMode(5888);
-            ((Class286) this).aHa_Sub2_3684.method3738(-15039, 0);
+            this.aHa_Sub2_3684.method3738(-15039, 0);
             aClass61_6302.method591(-1);
         }
     }
@@ -117,7 +117,7 @@ final class Class286_Sub8 extends Class286 {
     final void method2139(boolean bool, byte i) {
         anInt6298++;
         int i_5_ = 94 / ((i - -60) / 38);
-        ((Class286) this).aHa_Sub2_3684.method3729(8448, (byte) -28, 7681);
+        this.aHa_Sub2_3684.method3729(8448, (byte) -28, 7681);
     }
 
     final boolean method2137(int i) {
@@ -147,21 +147,21 @@ final class Class286_Sub8 extends Class286 {
             method2171(85);
         anInt6293++;
         Class258_Sub2 class258_sub2
-                = ((Class286) this).aHa_Sub2_3684.method3741(444720536);
+                = this.aHa_Sub2_3684.method3741(444720536);
         if (aClass61_6302 != null && class258_sub2 != null && bool) {
             aClass61_6302.method594('\0', 28666);
-            ((Class286) this).aHa_Sub2_3684.method3738(-15039, 1);
-            ((Class286) this).aHa_Sub2_3684.method3771((byte) -77,
+            this.aHa_Sub2_3684.method3738(-15039, 1);
+            this.aHa_Sub2_3684.method3771((byte) -77,
                     class258_sub2);
             OpenGL.glMatrixMode(5890);
-            OpenGL.glLoadMatrixf(((ha_Sub2) ((Class286) this).aHa_Sub2_3684)
+            OpenGL.glLoadMatrixf(this.aHa_Sub2_3684
                             .aClass101_Sub3_7767.method945(true),
                     0);
             OpenGL.glMatrixMode(5888);
-            ((Class286) this).aHa_Sub2_3684.method3738(-15039, 0);
+            this.aHa_Sub2_3684.method3738(-15039, 0);
             aBoolean6301 = true;
         } else
-            ((Class286) this).aHa_Sub2_3684.method3775(false, 0, 770, 34168);
+            this.aHa_Sub2_3684.method3775(false, 0, 770, 34168);
     }
 
     final void method2136(int i, int i_9_, byte i_10_) {

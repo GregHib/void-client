@@ -37,7 +37,7 @@ final class Class215 {
         }
         if ((i_2_ ^ 0xffffffff) == -4 && Class34.aFrame476 == null)
             method1580((byte) -126, true, -1, i_1_,
-                    ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                    Class316.aClass348_Sub51_3959
                             .aClass239_Sub8_7227.method1751(-32350),
                     -1);
         else {
@@ -102,10 +102,7 @@ final class Class215 {
                     Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129,
                             Class335.anInt4167);
             }
-            if (i_2_ < 2)
-                Class50_Sub1.aBoolean5219 = false;
-            else
-                Class50_Sub1.aBoolean5219 = true;
+            Class50_Sub1.aBoolean5219 = i_2_ >= 2;
             if ((r.anInt9721 ^ 0xffffffff) != 0)
                 Class239.method1713(true, 520);
             if (Class348_Sub40_Sub8.aClass238_9165 != null
@@ -121,10 +118,8 @@ final class Class215 {
         anInt2838++;
         if (i >= -18)
             return false;
-        if (((c ^ 0xffffffff) > -66 || c > 90)
-                && (c < 97 || (c ^ 0xffffffff) < -123))
-            return false;
-        return true;
+        return ((c ^ 0xffffffff) <= -66 && c <= 90)
+                || (c >= 97 && (c ^ 0xffffffff) >= -123);
     }
 
     static final void method1582(int i) {

@@ -7,7 +7,7 @@ abstract class Class5 implements Interface1 {
     static int anInt4628;
     static int anInt4629;
     private int anInt4630;
-    private Class45 aClass45_4631;
+    private final Class45 aClass45_4631;
     Class45 aClass45_4632;
     static int anInt4633;
     static int anInt4634;
@@ -25,12 +25,12 @@ abstract class Class5 implements Interface1 {
         int i_2_ = -94 % ((i - 25) / 52);
         anInt4641++;
         boolean bool = true;
-        if (!((Class5) this).aClass45_4632.method421
-                (false, ((Class369) ((Class5) this).aClass369_4635).anInt4965))
+        if (!this.aClass45_4632.method421
+                (false, this.aClass369_4635.anInt4965))
             bool = false;
         if (!aClass45_4631.method421(false,
-                ((Class369) (((Class5) this)
-                        .aClass369_4635)).anInt4965))
+                this
+                        .aClass369_4635.anInt4965))
             bool = false;
         return bool;
     }
@@ -40,16 +40,14 @@ abstract class Class5 implements Interface1 {
         if (i == 10286) {
             Class143 class143
                     = Class239_Sub10.method1766((byte) -85,
-                    (((Class369)
-                            ((Class5) this).aClass369_4635)
+                    (this.aClass369_4635
                             .anInt4965),
                     aClass45_4631);
             aClass324_4637
                     = (Class348_Sub8.aHa6654.method3686
                     (class143,
-                            Class207.method1523(((Class5) this).aClass45_4632,
-                                    (((Class369)
-                                            ((Class5) this).aClass369_4635)
+                            Class207.method1523(this.aClass45_4632,
+                                    (this.aClass369_4635
                                             .anInt4965)),
                             true));
         }
@@ -65,15 +63,15 @@ abstract class Class5 implements Interface1 {
         if (i != 16533)
             aClass60_4636 = null;
         int i_5_ = class348_sub49.method3330(842397944);
-        return new Class369_Sub1(((Class369) class369).aClass221_4968,
-                ((Class369) class369).aClass341_4973,
-                ((Class369) class369).anInt4970,
-                ((Class369) class369).anInt4959,
-                ((Class369) class369).anInt4971,
-                ((Class369) class369).anInt4963,
-                ((Class369) class369).anInt4966,
-                ((Class369) class369).anInt4965,
-                ((Class369) class369).anInt4961, i_3_, i_4_,
+        return new Class369_Sub1(class369.aClass221_4968,
+                class369.aClass341_4973,
+                class369.anInt4970,
+                class369.anInt4959,
+                class369.anInt4971,
+                class369.anInt4963,
+                class369.anInt4966,
+                class369.anInt4965,
+                class369.anInt4961, i_3_, i_4_,
                 i_5_);
     }
 
@@ -94,15 +92,15 @@ abstract class Class5 implements Interface1 {
              class348_sub9 != null;
              class348_sub9 = ((Class348_Sub9)
                      client.aClass262_5185.method1990((byte) 78))) {
-            if ((((Class348_Sub9) class348_sub9)
+            if ((class348_sub9
                     .aClass318_Sub1_Sub3_Sub3_Sub1_6691)
                     == class318_sub1_sub3_sub3_sub1) {
-                if (((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6676
+                if (class348_sub9.aClass348_Sub16_Sub5_6676
                         != null) {
                     Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880
-                            (((Class348_Sub9) class348_sub9)
+                            (class348_sub9
                                     .aClass348_Sub16_Sub5_6676);
-                    ((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6676
+                    class348_sub9.aClass348_Sub16_Sub5_6676
                             = null;
                 }
                 class348_sub9.method2715((byte) 27);
@@ -116,7 +114,7 @@ abstract class Class5 implements Interface1 {
     final int method183(int i) {
         anInt4633++;
         if (i <= 16)
-            ((Class5) this).aClass369_4635 = null;
+            this.aClass369_4635 = null;
         int i_8_ = Class51.aClass311_897.method2320((byte) 106);
         int i_9_ = 100 * i_8_;
         if ((i_8_ ^ 0xffffffff) != (anInt4630 ^ 0xffffffff)
@@ -148,19 +146,19 @@ abstract class Class5 implements Interface1 {
         if (i == -49) {
             anInt4634++;
             int i_13_
-                    = ((((Class369) ((Class5) this).aClass369_4635)
+                    = ((this.aClass369_4635
                     .aClass221_4968.method1607
                             (Class92.anInt1524,
-                                    ((Class369) ((Class5) this).aClass369_4635).anInt4971,
+                                    this.aClass369_4635.anInt4971,
                                     (byte) -123))
-                    + ((Class369) ((Class5) this).aClass369_4635).anInt4970);
+                    + this.aClass369_4635.anInt4970);
             int i_14_
-                    = ((((Class369) ((Class5) this).aClass369_4635)
+                    = ((this.aClass369_4635
                     .aClass341_4973.method2679
                             (ha_Sub2.anInt7666,
-                                    ((Class369) ((Class5) this).aClass369_4635).anInt4963,
+                                    this.aClass369_4635.anInt4963,
                                     i ^ ~0x60b))
-                    + ((Class369) ((Class5) this).aClass369_4635).anInt4959);
+                    + this.aClass369_4635.anInt4959);
             method178(i_13_, bool, (byte) -84, i_14_);
             method182(63, i_14_, i_13_, bool);
             String string = Class51.aClass311_897.method2318(i ^ 0x245b);
@@ -170,12 +168,12 @@ abstract class Class5 implements Interface1 {
             aClass324_4637.method2575
                     ((byte) 115,
                             (i_13_
-                                    + ((Class369) ((Class5) this).aClass369_4635).anInt4971 / 2),
-                            ((Class369) ((Class5) this).aClass369_4635).anInt4961, string,
+                                    + this.aClass369_4635.anInt4971 / 2),
+                            this.aClass369_4635.anInt4961, string,
                             -1,
-                            (((Class369) ((Class5) this).aClass369_4635).anInt4966 + 4
+                            (this.aClass369_4635.anInt4966 + 4
                                     + (i_14_
-                                    - -(((Class369) ((Class5) this).aClass369_4635).anInt4963
+                                    - -(this.aClass369_4635.anInt4963
                                     / 2))));
         }
     }
@@ -183,8 +181,8 @@ abstract class Class5 implements Interface1 {
     Class5(Class45 class45, Class45 class45_15_, Class369 class369) {
         try {
             aClass45_4631 = class45_15_;
-            ((Class5) this).aClass45_4632 = class45;
-            ((Class5) this).aClass369_4635 = class369;
+            this.aClass45_4632 = class45;
+            this.aClass369_4635 = class369;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

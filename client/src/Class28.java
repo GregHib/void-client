@@ -28,7 +28,7 @@ final class Class28 implements Interface15 {
                 Class213 class213
                         = Exception_Sub1.aClass255_112.method1940(i + -99,
                         (int) l);
-                return ((Class213) class213).aString2795;
+                return class213.aString2795;
             }
             if (i != 1)
                 method54(85, -41L, null, null);

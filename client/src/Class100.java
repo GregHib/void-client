@@ -7,14 +7,14 @@ final class Class100 {
     private int anInt1578;
     static Class78[] aClass78Array1579 = new Class78[37];
     static int anInt1580;
-    private ha_Sub2 aHa_Sub2_1581;
+    private final ha_Sub2 aHa_Sub2_1581;
     private Class83 aClass83_1582;
     static int[] anIntArray1583 = new int[14];
     private int anInt1584 = 0;
     static Class356 aClass356_1585 = new Class356(16);
     Class286_Sub1 aClass286_Sub1_1586;
     static int anInt1587;
-    private Class286[] aClass286Array1588;
+    private final Class286[] aClass286Array1588;
     static int anInt1589;
     static int anInt1590;
     static Class227 aClass227_1591 = new Class227(1);
@@ -103,11 +103,11 @@ final class Class100 {
         if (i != 57)
             method886(7);
         if (!client.method105(class46).method3301(i_7_, false)
-                && ((Class46) class46).anObjectArray741 == null)
+                && class46.anObjectArray741 == null)
             return -1;
-        if (((Class46) class46).anIntArray706 != null
-                && i_7_ < ((Class46) class46).anIntArray706.length)
-            return ((Class46) class46).anIntArray706[i_7_];
+        if (class46.anIntArray706 != null
+                && i_7_ < class46.anIntArray706.length)
+            return class46.anIntArray706[i_7_];
         return -1;
     }
 
@@ -130,7 +130,7 @@ final class Class100 {
         aClass286Array1588[5] = new Class286_Sub5(var_ha_Sub2, aClass83_1582);
         aClass286Array1588[6] = new Class286_Sub2(var_ha_Sub2);
         aClass286Array1588[7] = new Class286_Sub8(var_ha_Sub2);
-        aClass286Array1588[3] = ((Class100) this).aClass286_Sub1_1586
+        aClass286Array1588[3] = this.aClass286_Sub1_1586
                 = new Class286_Sub1(var_ha_Sub2);
         aClass286Array1588[8] = new Class286_Sub6(var_ha_Sub2, aClass83_1582);
         aClass286Array1588[9] = new Class286_Sub4(var_ha_Sub2, aClass83_1582);

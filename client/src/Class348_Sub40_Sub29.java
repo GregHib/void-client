@@ -20,8 +20,8 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         if (i_0_ != -1564599039)
             return null;
         anInt9378++;
-        int[][] is = ((Class348_Sub40) this).aClass322_7033.method2557(-94, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        int[][] is = this.aClass322_7033.method2557(-94, i);
+        if (this.aClass322_7033.aBoolean4035) {
             int i_1_ = (anInt9374
                     * ((anInt9379 ^ 0xffffffff) == (Class286_Sub2.anInt6212
                     ^ 0xffffffff)
@@ -65,7 +65,7 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         anInt9382++;
         if ((anInt9380 ^ 0xffffffff) <= -1 && Class286_Sub5.aD6247 != null) {
             int i_12_
-                    = (!(((Class12) Class286_Sub5.aD6247.method3(anInt9380, -6662))
+                    = (!(Class286_Sub5.aD6247.method3(anInt9380, -6662)
                     .aBoolean199)
                     ? 128 : 64);
             anIntArray9375
@@ -92,11 +92,9 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         anInt9371++;
         if (i_13_ > -55)
             method3124(-76, (byte) -110, -59);
-        if (!((i_14_ & 0x40000) != 0
-                | Class348_Sub23_Sub4.method2985(-31735, i, i_14_))
-                && !Class348_Sub42_Sub8_Sub2.method3200(i_14_, i, (byte) -120))
-            return false;
-        return true;
+        return (i_14_ & 0x40000) != 0
+                | Class348_Sub23_Sub4.method2985(-31735, i, i_14_)
+                || Class348_Sub42_Sub8_Sub2.method3200(i_14_, i, (byte) -120);
     }
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_15_) {

@@ -22,8 +22,7 @@ abstract class Class101 {
     abstract void method892(int i, int i_2_, int i_3_, int[] is);
 
     static final void method893(byte i) {
-        Class348_Sub40_Sub22.method3111(91, ((Class348_Sub51)
-                Class316.aClass348_Sub51_3959)
+        Class348_Sub40_Sub22.method3111(91, Class316.aClass348_Sub51_3959
                 .aClass239_Sub6_7226
                 .method1743(-32350));
         anInt1595++;
@@ -32,7 +31,7 @@ abstract class Class101 {
         int i_5_ = ((Class90.anInt1517 >> 591146499)
                 + (Class59_Sub2_Sub2.anInt8685 >> 1861651468));
         Class355.anInt4372
-                = ((Class318_Sub1) Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                 .aByte6381
                 = (byte) 0;
         Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2449(8, 8,
@@ -159,12 +158,12 @@ abstract class Class101 {
             anInt1594++;
             if (i <= 42)
                 method906(123);
-            if (((ha_Sub2) var_ha_Sub2).aBoolean7793
+            if (var_ha_Sub2.aBoolean7793
                     || (Class192.method1436(82, i_25_)
                     && Class192.method1436(81, i_26_)))
                 return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_24_, i_25_,
                         i_26_);
-            if (((ha_Sub2) var_ha_Sub2).aBoolean7837)
+            if (var_ha_Sub2.aBoolean7837)
                 return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_24_, i_25_,
                         i_26_);
             return new Class258_Sub3_Sub1(var_ha_Sub2, i_24_, i_25_, i_26_,
@@ -201,20 +200,20 @@ abstract class Class101 {
                 Class110_Sub1 class110_sub1
                         = Class65.aClass110_Sub1Array1146[Class215.anInt2834];
                 if (class110_sub1 == null
-                        || ((Class110_Sub1) class110_sub1).anInt5788 != -1)
+                        || class110_sub1.anInt5788 != -1)
                     Class215.anInt2834++;
                 else {
                     if (Class176.aClass348_Sub26_2332 == null)
                         Class176.aClass348_Sub26_2332
                                 = (Class76.aClass169_1286.method1302
                                 (i ^ ~0x1967,
-                                        ((Class110_Sub1) class110_sub1).aString5794));
+                                        class110_sub1.aString5794));
                     int i_29_
-                            = (((Class348_Sub26) Class176.aClass348_Sub26_2332)
+                            = (Class176.aClass348_Sub26_2332
                             .anInt6887);
                     if (i_29_ == -1)
                         break;
-                    ((Class110_Sub1) class110_sub1).anInt5788 = i_29_;
+                    class110_sub1.anInt5788 = i_29_;
                     Class215.anInt2834++;
                     Class176.aClass348_Sub26_2332 = null;
                 }

@@ -12,9 +12,9 @@ final class Class308 {
     static int anInt3885;
     static int anInt3886;
     private Class348_Sub42 aClass348_Sub42_3887 = new Class348_Sub42();
-    private Class356 aClass356_3888;
+    private final Class356 aClass356_3888;
     private Class107 aClass107_3889 = new Class107();
-    private int anInt3890;
+    private final int anInt3890;
     private int anInt3891;
 
     final Class348_Sub42 method2302(long l, byte i) {

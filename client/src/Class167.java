@@ -3,7 +3,7 @@
  */
 
 final class Class167 {
-    private ha_Sub1 aHa_Sub1_2191;
+    private final ha_Sub1 aHa_Sub1_2191;
     int anInt2192;
     static int anInt2193;
     static int anInt2194;
@@ -63,7 +63,7 @@ final class Class167 {
 
     final void method1291(int i, Runnable runnable) {
         if (i == 10000) {
-            ((Class167) this).aRunnable2198 = runnable;
+            this.aRunnable2198 = runnable;
             anInt2193++;
         }
     }
@@ -71,7 +71,7 @@ final class Class167 {
     final void method1292(int i) {
         if (i == 64) {
             anInt2194++;
-            ((Class167) this).aClass109_2220
+            this.aClass109_2220
                     = new Class109(aHa_Sub1_2191, this);
         }
     }
@@ -107,9 +107,9 @@ final class Class167 {
             Class318_Sub1 class318_sub1 = class318_sub1s[i_2_];
             class318_sub1s[i_2_] = class318_sub1s[i_1_];
             class318_sub1s[i_1_] = class318_sub1;
-            int i_4_ = ((Class318_Sub1) class318_sub1).anInt6389;
+            int i_4_ = class318_sub1.anInt6389;
             for (int i_5_ = i; i_5_ < i_1_; i_5_++) {
-                if (((Class318_Sub1) class318_sub1s[i_5_]).anInt6389
+                if (class318_sub1s[i_5_].anInt6389
                         < i_4_ + (i_5_ & 0x1)) {
                     Class318_Sub1 class318_sub1_6_ = class318_sub1s[i_5_];
                     class318_sub1s[i_5_] = class318_sub1s[i_3_];
@@ -145,80 +145,71 @@ final class Class167 {
                 int i_11_ = is[i_9_];
                 int i_12_ = is_8_[i_9_];
                 for (int i_13_ = 0;
-                     i_11_ != 0 && i_13_ < (((Class318_Sub1_Sub3_Sub3)
-                             class318_sub1_sub3_sub3_sub2)
+                     i_11_ != 0 && i_13_ < (class318_sub1_sub3_sub3_sub2
                              .aClass182Array10308).length;
                      i_11_ >>>= 1) {
                     if ((i_11_ & 0x1) != 0) {
                         if ((i_10_ ^ 0xffffffff) != 0) {
                             Class17 class17
                                     = Class10.aClass87_191.method835(i_10_, 7);
-                            int i_14_ = ((Class17) class17).anInt248;
-                            Class182 class182 = (((Class318_Sub1_Sub3_Sub3)
-                                    class318_sub1_sub3_sub3_sub2)
+                            int i_14_ = class17.anInt248;
+                            Class182 class182 = (class318_sub1_sub3_sub3_sub2
                                     .aClass182Array10308[i_13_]);
                             if (class182 != null) {
                                 if ((i_10_ ^ 0xffffffff)
-                                        == (((Class182) class182).anInt2454
+                                        == (class182.anInt2454
                                         ^ 0xffffffff)) {
                                     if ((i_14_ ^ 0xffffffff) == -1)
                                         class182
-                                                = ((Class318_Sub1_Sub3_Sub3)
-                                                class318_sub1_sub3_sub3_sub2)
+                                                = class318_sub1_sub3_sub3_sub2
                                                 .aClass182Array10308[i_13_]
                                                 = null;
                                     else if ((i_14_ ^ 0xffffffff) != -2) {
                                         if (i_14_ == 2)
-                                            ((Class182) class182).anInt2445
+                                            class182.anInt2445
                                                     = 0;
                                     } else {
-                                        ((Class182) class182).anInt2448
+                                        class182.anInt2448
                                                 = i_12_;
-                                        ((Class182) class182).anInt2455 = 1;
-                                        ((Class182) class182).anInt2456 = 0;
-                                        ((Class182) class182).anInt2451 = 0;
-                                        ((Class182) class182).anInt2445 = 0;
-                                        if (!((Class318_Sub1_Sub3_Sub3)
-                                                class318_sub1_sub3_sub3_sub2)
+                                        class182.anInt2455 = 1;
+                                        class182.anInt2456 = 0;
+                                        class182.anInt2451 = 0;
+                                        class182.anInt2445 = 0;
+                                        if (!class318_sub1_sub3_sub3_sub2
                                                 .aBoolean10309)
                                             Class287.method2178
                                                     (class318_sub1_sub3_sub3_sub2,
                                                             0, class17, -54);
                                     }
-                                } else if (((Class17) class17).anInt239
-                                        >= ((Class17)
-                                        (Class10.aClass87_191.method835
-                                                ((((Class182) class182)
+                                } else if (class17.anInt239
+                                        >= Class10.aClass87_191.method835
+                                                ((class182
                                                                 .anInt2454),
-                                                        7))).anInt239)
+                                                        7).anInt239)
                                     class182
-                                            = ((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                            = class318_sub1_sub3_sub3_sub2
                                             .aClass182Array10308[i_13_]
                                             = null;
                             }
                             if (class182 == null) {
                                 class182
-                                        = ((Class318_Sub1_Sub3_Sub3)
-                                        class318_sub1_sub3_sub3_sub2)
+                                        = class318_sub1_sub3_sub3_sub2
                                         .aClass182Array10308[i_13_]
                                         = new Class182();
-                                ((Class182) class182).anInt2445 = 0;
-                                ((Class182) class182).anInt2455 = 1;
-                                ((Class182) class182).anInt2448 = i_12_;
-                                ((Class182) class182).anInt2456 = 0;
-                                ((Class182) class182).anInt2454 = i_10_;
-                                ((Class182) class182).anInt2451 = 0;
-                                if (!((Class318_Sub1_Sub3_Sub3)
-                                        class318_sub1_sub3_sub3_sub2)
+                                class182.anInt2445 = 0;
+                                class182.anInt2455 = 1;
+                                class182.anInt2448 = i_12_;
+                                class182.anInt2456 = 0;
+                                class182.anInt2454 = i_10_;
+                                class182.anInt2451 = 0;
+                                if (!class318_sub1_sub3_sub3_sub2
                                         .aBoolean10309)
                                     Class287.method2178
                                             (class318_sub1_sub3_sub3_sub2, 0,
                                                     class17, -123);
                             }
                         } else
-                            ((Class318_Sub1_Sub3_Sub3)
-                                    class318_sub1_sub3_sub3_sub2)
+                            class318_sub1_sub3_sub3_sub2
                                     .aClass182Array10308[i_13_]
                                     = null;
                     }
@@ -238,50 +229,50 @@ final class Class167 {
     }
 
     Class167(ha_Sub1 var_ha_Sub1) {
-        ((Class167) this).anInt2192 = 0;
-        ((Class167) this).anInt2197 = 0;
-        ((Class167) this).anInt2205 = 0;
-        ((Class167) this).aBoolean2202 = true;
-        ((Class167) this).anInt2211 = 0;
-        ((Class167) this).aClass101_Sub1_2209 = new Class101_Sub1();
-        ((Class167) this).anIntArray2213 = new int[Class64_Sub1.anInt5350];
-        ((Class167) this).anIntArray2214 = new int[Class64_Sub1.anInt5350];
-        ((Class167) this).anIntArray2212 = new int[64];
-        ((Class167) this).aFloatArray2226 = new float[2];
-        ((Class167) this).anIntArray2216 = new int[10000];
-        ((Class167) this).anIntArray2222 = new int[Class64_Sub1.anInt5350];
-        ((Class167) this).anIntArray2232 = new int[64];
-        ((Class167) this).anIntArray2218 = new int[8];
-        ((Class167) this).anIntArray2237 = new int[Class64_Sub1.anInt5350];
-        ((Class167) this).anIntArray2236 = new int[10000];
-        ((Class167) this).anIntArray2230 = new int[Class64_Sub1.anInt5350];
-        ((Class167) this).anIntArray2240 = new int[10];
-        ((Class167) this).anIntArray2228 = new int[64];
-        ((Class167) this).anIntArray2238 = new int[10];
-        ((Class167) this).anIntArray2241 = new int[8];
-        ((Class167) this).anIntArray2235 = new int[10];
-        ((Class167) this).anIntArray2245 = new int[8];
-        ((Class167) this).anIntArray2217 = new int[64];
-        ((Class167) this).anIntArray2244 = new int[Class64_Sub1.anInt5350];
-        ((Class167) this).anIntArray2247 = new int[10];
-        ((Class167) this).anIntArray2234 = new int[Class64_Sub1.anInt5350];
+        this.anInt2192 = 0;
+        this.anInt2197 = 0;
+        this.anInt2205 = 0;
+        this.aBoolean2202 = true;
+        this.anInt2211 = 0;
+        this.aClass101_Sub1_2209 = new Class101_Sub1();
+        this.anIntArray2213 = new int[Class64_Sub1.anInt5350];
+        this.anIntArray2214 = new int[Class64_Sub1.anInt5350];
+        this.anIntArray2212 = new int[64];
+        this.aFloatArray2226 = new float[2];
+        this.anIntArray2216 = new int[10000];
+        this.anIntArray2222 = new int[Class64_Sub1.anInt5350];
+        this.anIntArray2232 = new int[64];
+        this.anIntArray2218 = new int[8];
+        this.anIntArray2237 = new int[Class64_Sub1.anInt5350];
+        this.anIntArray2236 = new int[10000];
+        this.anIntArray2230 = new int[Class64_Sub1.anInt5350];
+        this.anIntArray2240 = new int[10];
+        this.anIntArray2228 = new int[64];
+        this.anIntArray2238 = new int[10];
+        this.anIntArray2241 = new int[8];
+        this.anIntArray2235 = new int[10];
+        this.anIntArray2245 = new int[8];
+        this.anIntArray2217 = new int[64];
+        this.anIntArray2244 = new int[Class64_Sub1.anInt5350];
+        this.anIntArray2247 = new int[10];
+        this.anIntArray2234 = new int[Class64_Sub1.anInt5350];
         aHa_Sub1_2191 = var_ha_Sub1;
-        ((Class167) this).anInt2210
-                = ((ha_Sub1) aHa_Sub1_2191).anInt7494 + -255;
-        ((Class167) this).aClass109_2220 = new Class109(var_ha_Sub1, this);
-        ((Class167) this).aClass64_Sub1_2243 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2224 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2219 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2239 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2233 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2231 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2223 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2227 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2246 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).aClass64_Sub1_2225 = new Class64_Sub1(aHa_Sub1_2191);
-        ((Class167) this).anIntArray2242 = new int[Class64_Sub1.anInt5346];
+        this.anInt2210
+                = aHa_Sub1_2191.anInt7494 + -255;
+        this.aClass109_2220 = new Class109(var_ha_Sub1, this);
+        this.aClass64_Sub1_2243 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2224 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2219 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2239 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2233 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2231 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2223 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2227 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2246 = new Class64_Sub1(aHa_Sub1_2191);
+        this.aClass64_Sub1_2225 = new Class64_Sub1(aHa_Sub1_2191);
+        this.anIntArray2242 = new int[Class64_Sub1.anInt5346];
         for (int i = 0;
              (i ^ 0xffffffff) > (Class64_Sub1.anInt5346 ^ 0xffffffff); i++)
-            ((Class167) this).anIntArray2242[i] = -1;
+            this.anIntArray2242[i] = -1;
     }
 }

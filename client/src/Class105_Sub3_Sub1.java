@@ -7,7 +7,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
 
     final void method994(int i, int i_0_) {
         int[] is
-                = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anIntArray7483;
+                = this.aHa_Sub1_8460.anIntArray7483;
         if (Class105_Sub3.anInt8481 == 0) {
             if (Class105_Sub3.anInt8450 == 0) {
                 int i_1_ = Class105_Sub3.anInt8468;
@@ -17,12 +17,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_4_ = Class105_Sub3.anInt8467;
                     int i_5_ = Class105_Sub3.anInt8478;
                     if (i_3_ >= 0 && i_4_ >= 0
-                            && i_3_ - (((Class105_Sub3) this).anInt8471 << 12) < 0
-                            && (i_4_ - (((Class105_Sub3) this).anInt8470 << 12)
+                            && i_3_ - (this.anInt8471 << 12) < 0
+                            && (i_4_ - (this.anInt8470 << 12)
                             < 0)) {
                         for (/**/; i_5_ < 0; i_5_++) {
                             int i_6_ = (((i_4_ >> 12)
-                                    * ((Class105_Sub3) this).anInt8471)
+                                    * this.anInt8471)
                                     + (i_3_ >> 12));
                             int i_7_ = i_2_++;
                             int[] is_8_ = is;
@@ -30,10 +30,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             int i_10_ = i_0_;
                             if (i_10_ == 0) {
                                 if (i_9_ == 1)
-                                    is_8_[i_7_] = (((Class105_Sub3_Sub1) this)
+                                    is_8_[i_7_] = (this
                                             .anIntArray9933[i_6_]);
                                 else if (i_9_ == 0) {
-                                    int i_11_ = (((Class105_Sub3_Sub1) this)
+                                    int i_11_ = (this
                                             .anIntArray9933[i_6_++]);
                                     int i_12_ = (((i_11_ & 0xff0000)
                                             * Class105_Sub3.anInt8469)
@@ -47,7 +47,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     is_8_[i_7_]
                                             = (i_12_ | i_13_ | i_14_) >>> 8;
                                 } else if (i_9_ == 3) {
-                                    int i_15_ = (((Class105_Sub3_Sub1) this)
+                                    int i_15_ = (this
                                             .anIntArray9933[i_6_++]);
                                     int i_16_ = Class105_Sub3.anInt8480;
                                     int i_17_ = i_15_ + i_16_;
@@ -59,7 +59,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_17_ - i_19_ | i_19_ - (i_19_
                                             >>> 8);
                                 } else if (i_9_ == 2) {
-                                    int i_20_ = (((Class105_Sub3_Sub1) this)
+                                    int i_20_ = (this
                                             .anIntArray9933[i_6_]);
                                     int i_21_ = (((i_20_ & 0xff00ff)
                                             * Class105_Sub3.anInt8477)
@@ -73,12 +73,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_10_ == 1) {
                                 if (i_9_ == 1) {
-                                    int i_23_ = (((Class105_Sub3_Sub1) this)
+                                    int i_23_ = (this
                                             .anIntArray9933[i_6_]);
                                     if (i_23_ != 0)
                                         is_8_[i_7_] = i_23_;
                                 } else if (i_9_ == 0) {
-                                    int i_24_ = (((Class105_Sub3_Sub1) this)
+                                    int i_24_ = (this
                                             .anIntArray9933[i_6_]);
                                     if (i_24_ != 0) {
                                         if ((Class105_Sub3.anInt8480
@@ -148,7 +148,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         }
                                     }
                                 } else if (i_9_ == 3) {
-                                    int i_35_ = (((Class105_Sub3_Sub1) this)
+                                    int i_35_ = (this
                                             .anIntArray9933[i_6_]);
                                     int i_36_ = Class105_Sub3.anInt8480;
                                     int i_37_ = i_35_ + i_36_;
@@ -177,7 +177,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     }
                                     is_8_[i_7_] = i_39_;
                                 } else if (i_9_ == 2) {
-                                    int i_40_ = (((Class105_Sub3_Sub1) this)
+                                    int i_40_ = (this
                                             .anIntArray9933[i_6_]);
                                     if (i_40_ != 0) {
                                         int i_41_
@@ -196,7 +196,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_10_ == 2) {
                                 if (i_9_ == 1) {
-                                    int i_43_ = (((Class105_Sub3_Sub1) this)
+                                    int i_43_ = (this
                                             .anIntArray9933[i_6_]);
                                     if (i_43_ != 0) {
                                         int i_44_ = is_8_[i_7_];
@@ -210,7 +210,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 >>> 8);
                                     }
                                 } else if (i_9_ == 0) {
-                                    int i_47_ = (((Class105_Sub3_Sub1) this)
+                                    int i_47_ = (this
                                             .anIntArray9933[i_6_]);
                                     if (i_47_ != 0) {
                                         int i_48_
@@ -237,7 +237,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 >>> 8);
                                     }
                                 } else if (i_9_ == 3) {
-                                    int i_54_ = (((Class105_Sub3_Sub1) this)
+                                    int i_54_ = (this
                                             .anIntArray9933[i_6_]);
                                     int i_55_ = Class105_Sub3.anInt8480;
                                     int i_56_ = i_54_ + i_55_;
@@ -258,7 +258,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_56_ - i_58_ | i_58_ - (i_58_
                                             >>> 8);
                                 } else if (i_9_ == 2) {
-                                    int i_59_ = (((Class105_Sub3_Sub1) this)
+                                    int i_59_ = (this
                                             .anIntArray9933[i_6_]);
                                     if (i_59_ != 0) {
                                         int i_60_
@@ -297,10 +297,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_68_
                             = Class105_Sub3.anInt8467 + Class105_Sub3.anInt8475;
                     int i_69_ = Class105_Sub3.anInt8478;
-                    if (i_67_ >= 0 && i_67_ - (((Class105_Sub3) this).anInt8471
+                    if (i_67_ >= 0 && i_67_ - (this.anInt8471
                             << 12) < 0) {
                         int i_70_;
-                        if ((i_70_ = i_68_ - (((Class105_Sub3) this).anInt8470
+                        if ((i_70_ = i_68_ - (this.anInt8470
                                 << 12))
                                 >= 0) {
                             i_70_ = ((Class105_Sub3.anInt8450 - i_70_)
@@ -315,7 +315,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             i_69_ = i_70_;
                         for (/**/; i_69_ < 0; i_69_++) {
                             int i_71_ = (((i_68_ >> 12)
-                                    * ((Class105_Sub3) this).anInt8471)
+                                    * this.anInt8471)
                                     + (i_67_ >> 12));
                             int i_72_ = i_66_++;
                             int[] is_73_ = is;
@@ -324,10 +324,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             if (i_75_ == 0) {
                                 if (i_74_ == 1)
                                     is_73_[i_72_]
-                                            = (((Class105_Sub3_Sub1) this)
+                                            = (this
                                             .anIntArray9933[i_71_]);
                                 else if (i_74_ == 0) {
-                                    int i_76_ = (((Class105_Sub3_Sub1) this)
+                                    int i_76_ = (this
                                             .anIntArray9933[i_71_++]);
                                     int i_77_ = (((i_76_ & 0xff0000)
                                             * Class105_Sub3.anInt8469)
@@ -341,7 +341,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     is_73_[i_72_]
                                             = (i_77_ | i_78_ | i_79_) >>> 8;
                                 } else if (i_74_ == 3) {
-                                    int i_80_ = (((Class105_Sub3_Sub1) this)
+                                    int i_80_ = (this
                                             .anIntArray9933[i_71_++]);
                                     int i_81_ = Class105_Sub3.anInt8480;
                                     int i_82_ = i_80_ + i_81_;
@@ -353,7 +353,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_82_ - i_84_ | i_84_ - (i_84_
                                             >>> 8);
                                 } else if (i_74_ == 2) {
-                                    int i_85_ = (((Class105_Sub3_Sub1) this)
+                                    int i_85_ = (this
                                             .anIntArray9933[i_71_]);
                                     int i_86_ = (((i_85_ & 0xff00ff)
                                             * Class105_Sub3.anInt8477)
@@ -368,12 +368,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_75_ == 1) {
                                 if (i_74_ == 1) {
-                                    int i_88_ = (((Class105_Sub3_Sub1) this)
+                                    int i_88_ = (this
                                             .anIntArray9933[i_71_]);
                                     if (i_88_ != 0)
                                         is_73_[i_72_] = i_88_;
                                 } else if (i_74_ == 0) {
-                                    int i_89_ = (((Class105_Sub3_Sub1) this)
+                                    int i_89_ = (this
                                             .anIntArray9933[i_71_]);
                                     if (i_89_ != 0) {
                                         if ((Class105_Sub3.anInt8480
@@ -443,7 +443,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         }
                                     }
                                 } else if (i_74_ == 3) {
-                                    int i_100_ = (((Class105_Sub3_Sub1) this)
+                                    int i_100_ = (this
                                             .anIntArray9933[i_71_]);
                                     int i_101_ = Class105_Sub3.anInt8480;
                                     int i_102_ = i_100_ + i_101_;
@@ -474,7 +474,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     }
                                     is_73_[i_72_] = i_104_;
                                 } else if (i_74_ == 2) {
-                                    int i_105_ = (((Class105_Sub3_Sub1) this)
+                                    int i_105_ = (this
                                             .anIntArray9933[i_71_]);
                                     if (i_105_ != 0) {
                                         int i_106_
@@ -493,7 +493,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_75_ == 2) {
                                 if (i_74_ == 1) {
-                                    int i_108_ = (((Class105_Sub3_Sub1) this)
+                                    int i_108_ = (this
                                             .anIntArray9933[i_71_]);
                                     if (i_108_ != 0) {
                                         int i_109_ = is_73_[i_72_];
@@ -508,7 +508,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 | i_109_ - (i_109_ >>> 8));
                                     }
                                 } else if (i_74_ == 0) {
-                                    int i_112_ = (((Class105_Sub3_Sub1) this)
+                                    int i_112_ = (this
                                             .anIntArray9933[i_71_]);
                                     if (i_112_ != 0) {
                                         int i_113_
@@ -537,7 +537,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 | i_116_ - (i_116_ >>> 8));
                                     }
                                 } else if (i_74_ == 3) {
-                                    int i_119_ = (((Class105_Sub3_Sub1) this)
+                                    int i_119_ = (this
                                             .anIntArray9933[i_71_]);
                                     int i_120_ = Class105_Sub3.anInt8480;
                                     int i_121_ = i_119_ + i_120_;
@@ -560,7 +560,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_121_ - i_123_ | i_123_ - (i_123_
                                             >>> 8);
                                 } else if (i_74_ == 2) {
-                                    int i_124_ = (((Class105_Sub3_Sub1) this)
+                                    int i_124_ = (this
                                             .anIntArray9933[i_71_]);
                                     if (i_124_ != 0) {
                                         int i_125_
@@ -603,7 +603,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             = Class105_Sub3.anInt8467 + Class105_Sub3.anInt8475;
                     int i_134_ = Class105_Sub3.anInt8478;
                     if (i_132_ >= 0
-                            && (i_132_ - (((Class105_Sub3) this).anInt8471 << 12)
+                            && (i_132_ - (this.anInt8471 << 12)
                             < 0)) {
                         if (i_133_ < 0) {
                             int i_135_
@@ -616,14 +616,14 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_136_;
                         if ((i_136_
                                 = ((1 + i_133_
-                                - (((Class105_Sub3) this).anInt8470 << 12)
+                                - (this.anInt8470 << 12)
                                 - Class105_Sub3.anInt8450)
                                 / Class105_Sub3.anInt8450))
                                 > i_134_)
                             i_134_ = i_136_;
                         for (/**/; i_134_ < 0; i_134_++) {
                             int i_137_ = (((i_133_ >> 12)
-                                    * ((Class105_Sub3) this).anInt8471)
+                                    * this.anInt8471)
                                     + (i_132_ >> 12));
                             int i_138_ = i_131_++;
                             int[] is_139_ = is;
@@ -632,10 +632,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             if (i_141_ == 0) {
                                 if (i_140_ == 1)
                                     is_139_[i_138_]
-                                            = (((Class105_Sub3_Sub1) this)
+                                            = (this
                                             .anIntArray9933[i_137_]);
                                 else if (i_140_ == 0) {
-                                    int i_142_ = (((Class105_Sub3_Sub1) this)
+                                    int i_142_ = (this
                                             .anIntArray9933[i_137_++]);
                                     int i_143_ = (((i_142_ & 0xff0000)
                                             * Class105_Sub3.anInt8469)
@@ -649,7 +649,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     is_139_[i_138_]
                                             = (i_143_ | i_144_ | i_145_) >>> 8;
                                 } else if (i_140_ == 3) {
-                                    int i_146_ = (((Class105_Sub3_Sub1) this)
+                                    int i_146_ = (this
                                             .anIntArray9933[i_137_++]);
                                     int i_147_ = Class105_Sub3.anInt8480;
                                     int i_148_ = i_146_ + i_147_;
@@ -662,7 +662,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_148_ - i_150_ | i_150_ - (i_150_
                                             >>> 8);
                                 } else if (i_140_ == 2) {
-                                    int i_151_ = (((Class105_Sub3_Sub1) this)
+                                    int i_151_ = (this
                                             .anIntArray9933[i_137_]);
                                     int i_152_ = (((i_151_ & 0xff00ff)
                                             * Class105_Sub3.anInt8477)
@@ -677,12 +677,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_141_ == 1) {
                                 if (i_140_ == 1) {
-                                    int i_154_ = (((Class105_Sub3_Sub1) this)
+                                    int i_154_ = (this
                                             .anIntArray9933[i_137_]);
                                     if (i_154_ != 0)
                                         is_139_[i_138_] = i_154_;
                                 } else if (i_140_ == 0) {
-                                    int i_155_ = (((Class105_Sub3_Sub1) this)
+                                    int i_155_ = (this
                                             .anIntArray9933[i_137_]);
                                     if (i_155_ != 0) {
                                         if ((Class105_Sub3.anInt8480
@@ -754,7 +754,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         }
                                     }
                                 } else if (i_140_ == 3) {
-                                    int i_166_ = (((Class105_Sub3_Sub1) this)
+                                    int i_166_ = (this
                                             .anIntArray9933[i_137_]);
                                     int i_167_ = Class105_Sub3.anInt8480;
                                     int i_168_ = i_166_ + i_167_;
@@ -785,7 +785,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     }
                                     is_139_[i_138_] = i_170_;
                                 } else if (i_140_ == 2) {
-                                    int i_171_ = (((Class105_Sub3_Sub1) this)
+                                    int i_171_ = (this
                                             .anIntArray9933[i_137_]);
                                     if (i_171_ != 0) {
                                         int i_172_
@@ -804,7 +804,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_141_ == 2) {
                                 if (i_140_ == 1) {
-                                    int i_174_ = (((Class105_Sub3_Sub1) this)
+                                    int i_174_ = (this
                                             .anIntArray9933[i_137_]);
                                     if (i_174_ != 0) {
                                         int i_175_ = is_139_[i_138_];
@@ -819,7 +819,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 | i_175_ - (i_175_ >>> 8));
                                     }
                                 } else if (i_140_ == 0) {
-                                    int i_178_ = (((Class105_Sub3_Sub1) this)
+                                    int i_178_ = (this
                                             .anIntArray9933[i_137_]);
                                     if (i_178_ != 0) {
                                         int i_179_
@@ -848,7 +848,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 | i_182_ - (i_182_ >>> 8));
                                     }
                                 } else if (i_140_ == 3) {
-                                    int i_185_ = (((Class105_Sub3_Sub1) this)
+                                    int i_185_ = (this
                                             .anIntArray9933[i_137_]);
                                     int i_186_ = Class105_Sub3.anInt8480;
                                     int i_187_ = i_185_ + i_186_;
@@ -871,7 +871,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_187_ - i_189_ | i_189_ - (i_189_
                                             >>> 8);
                                 } else if (i_140_ == 2) {
-                                    int i_190_ = (((Class105_Sub3_Sub1) this)
+                                    int i_190_ = (this
                                             .anIntArray9933[i_137_]);
                                     if (i_190_ != 0) {
                                         int i_191_
@@ -916,11 +916,11 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_199_ = Class105_Sub3.anInt8467;
                     int i_200_ = Class105_Sub3.anInt8478;
                     if (i_199_ >= 0
-                            && (i_199_ - (((Class105_Sub3) this).anInt8470 << 12)
+                            && (i_199_ - (this.anInt8470 << 12)
                             < 0)) {
                         int i_201_;
                         if ((i_201_
-                                = i_198_ - (((Class105_Sub3) this).anInt8471
+                                = i_198_ - (this.anInt8471
                                 << 12))
                                 >= 0) {
                             i_201_ = ((Class105_Sub3.anInt8481 - i_201_)
@@ -935,7 +935,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             i_200_ = i_201_;
                         for (/**/; i_200_ < 0; i_200_++) {
                             int i_202_ = (((i_199_ >> 12)
-                                    * ((Class105_Sub3) this).anInt8471)
+                                    * this.anInt8471)
                                     + (i_198_ >> 12));
                             int i_203_ = i_197_++;
                             int[] is_204_ = is;
@@ -944,10 +944,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             if (i_206_ == 0) {
                                 if (i_205_ == 1)
                                     is_204_[i_203_]
-                                            = (((Class105_Sub3_Sub1) this)
+                                            = (this
                                             .anIntArray9933[i_202_]);
                                 else if (i_205_ == 0) {
-                                    int i_207_ = (((Class105_Sub3_Sub1) this)
+                                    int i_207_ = (this
                                             .anIntArray9933[i_202_++]);
                                     int i_208_ = (((i_207_ & 0xff0000)
                                             * Class105_Sub3.anInt8469)
@@ -961,7 +961,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     is_204_[i_203_]
                                             = (i_208_ | i_209_ | i_210_) >>> 8;
                                 } else if (i_205_ == 3) {
-                                    int i_211_ = (((Class105_Sub3_Sub1) this)
+                                    int i_211_ = (this
                                             .anIntArray9933[i_202_++]);
                                     int i_212_ = Class105_Sub3.anInt8480;
                                     int i_213_ = i_211_ + i_212_;
@@ -974,7 +974,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_213_ - i_215_ | i_215_ - (i_215_
                                             >>> 8);
                                 } else if (i_205_ == 2) {
-                                    int i_216_ = (((Class105_Sub3_Sub1) this)
+                                    int i_216_ = (this
                                             .anIntArray9933[i_202_]);
                                     int i_217_ = (((i_216_ & 0xff00ff)
                                             * Class105_Sub3.anInt8477)
@@ -989,12 +989,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_206_ == 1) {
                                 if (i_205_ == 1) {
-                                    int i_219_ = (((Class105_Sub3_Sub1) this)
+                                    int i_219_ = (this
                                             .anIntArray9933[i_202_]);
                                     if (i_219_ != 0)
                                         is_204_[i_203_] = i_219_;
                                 } else if (i_205_ == 0) {
-                                    int i_220_ = (((Class105_Sub3_Sub1) this)
+                                    int i_220_ = (this
                                             .anIntArray9933[i_202_]);
                                     if (i_220_ != 0) {
                                         if ((Class105_Sub3.anInt8480
@@ -1066,7 +1066,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         }
                                     }
                                 } else if (i_205_ == 3) {
-                                    int i_231_ = (((Class105_Sub3_Sub1) this)
+                                    int i_231_ = (this
                                             .anIntArray9933[i_202_]);
                                     int i_232_ = Class105_Sub3.anInt8480;
                                     int i_233_ = i_231_ + i_232_;
@@ -1097,7 +1097,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     }
                                     is_204_[i_203_] = i_235_;
                                 } else if (i_205_ == 2) {
-                                    int i_236_ = (((Class105_Sub3_Sub1) this)
+                                    int i_236_ = (this
                                             .anIntArray9933[i_202_]);
                                     if (i_236_ != 0) {
                                         int i_237_
@@ -1116,7 +1116,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     throw new IllegalArgumentException();
                             } else if (i_206_ == 2) {
                                 if (i_205_ == 1) {
-                                    int i_239_ = (((Class105_Sub3_Sub1) this)
+                                    int i_239_ = (this
                                             .anIntArray9933[i_202_]);
                                     if (i_239_ != 0) {
                                         int i_240_ = is_204_[i_203_];
@@ -1131,7 +1131,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 | i_240_ - (i_240_ >>> 8));
                                     }
                                 } else if (i_205_ == 0) {
-                                    int i_243_ = (((Class105_Sub3_Sub1) this)
+                                    int i_243_ = (this
                                             .anIntArray9933[i_202_]);
                                     if (i_243_ != 0) {
                                         int i_244_
@@ -1160,7 +1160,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                                 | i_247_ - (i_247_ >>> 8));
                                     }
                                 } else if (i_205_ == 3) {
-                                    int i_250_ = (((Class105_Sub3_Sub1) this)
+                                    int i_250_ = (this
                                             .anIntArray9933[i_202_]);
                                     int i_251_ = Class105_Sub3.anInt8480;
                                     int i_252_ = i_250_ + i_251_;
@@ -1183,7 +1183,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             = i_252_ - i_254_ | i_254_ - (i_254_
                                             >>> 8);
                                 } else if (i_205_ == 2) {
-                                    int i_255_ = (((Class105_Sub3_Sub1) this)
+                                    int i_255_ = (this
                                             .anIntArray9933[i_202_]);
                                     if (i_255_ != 0) {
                                         int i_256_
@@ -1228,7 +1228,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_265_ = Class105_Sub3.anInt8478;
                     int i_266_;
                     if ((i_266_
-                            = i_263_ - (((Class105_Sub3) this).anInt8471 << 12))
+                            = i_263_ - (this.anInt8471 << 12))
                             >= 0) {
                         i_266_ = ((Class105_Sub3.anInt8481 - i_266_)
                                 / Class105_Sub3.anInt8481);
@@ -1242,7 +1242,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             > i_265_)
                         i_265_ = i_266_;
                     if ((i_266_
-                            = i_264_ - (((Class105_Sub3) this).anInt8470 << 12))
+                            = i_264_ - (this.anInt8470 << 12))
                             >= 0) {
                         i_266_ = ((Class105_Sub3.anInt8450 - i_266_)
                                 / Class105_Sub3.anInt8450);
@@ -1257,7 +1257,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         i_265_ = i_266_;
                     for (/**/; i_265_ < 0; i_265_++) {
                         int i_267_ = (((i_264_ >> 12)
-                                * ((Class105_Sub3) this).anInt8471)
+                                * this.anInt8471)
                                 + (i_263_ >> 12));
                         int i_268_ = i_262_++;
                         int[] is_269_ = is;
@@ -1265,10 +1265,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_271_ = i_0_;
                         if (i_271_ == 0) {
                             if (i_270_ == 1)
-                                is_269_[i_268_] = (((Class105_Sub3_Sub1) this)
+                                is_269_[i_268_] = (this
                                         .anIntArray9933[i_267_]);
                             else if (i_270_ == 0) {
-                                int i_272_ = (((Class105_Sub3_Sub1) this)
+                                int i_272_ = (this
                                         .anIntArray9933[i_267_++]);
                                 int i_273_ = (((i_272_ & 0xff0000)
                                         * Class105_Sub3.anInt8469)
@@ -1282,7 +1282,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 is_269_[i_268_]
                                         = (i_273_ | i_274_ | i_275_) >>> 8;
                             } else if (i_270_ == 3) {
-                                int i_276_ = (((Class105_Sub3_Sub1) this)
+                                int i_276_ = (this
                                         .anIntArray9933[i_267_++]);
                                 int i_277_ = Class105_Sub3.anInt8480;
                                 int i_278_ = i_276_ + i_277_;
@@ -1294,7 +1294,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         = i_278_ - i_280_ | i_280_ - (i_280_
                                         >>> 8);
                             } else if (i_270_ == 2) {
-                                int i_281_ = (((Class105_Sub3_Sub1) this)
+                                int i_281_ = (this
                                         .anIntArray9933[i_267_]);
                                 int i_282_ = (((i_281_ & 0xff00ff)
                                         * Class105_Sub3.anInt8477)
@@ -1308,12 +1308,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 throw new IllegalArgumentException();
                         } else if (i_271_ == 1) {
                             if (i_270_ == 1) {
-                                int i_284_ = (((Class105_Sub3_Sub1) this)
+                                int i_284_ = (this
                                         .anIntArray9933[i_267_]);
                                 if (i_284_ != 0)
                                     is_269_[i_268_] = i_284_;
                             } else if (i_270_ == 0) {
-                                int i_285_ = (((Class105_Sub3_Sub1) this)
+                                int i_285_ = (this
                                         .anIntArray9933[i_267_]);
                                 if (i_285_ != 0) {
                                     if ((Class105_Sub3.anInt8480 & 0xffffff)
@@ -1378,7 +1378,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     }
                                 }
                             } else if (i_270_ == 3) {
-                                int i_296_ = (((Class105_Sub3_Sub1) this)
+                                int i_296_ = (this
                                         .anIntArray9933[i_267_]);
                                 int i_297_ = Class105_Sub3.anInt8480;
                                 int i_298_ = i_296_ + i_297_;
@@ -1406,7 +1406,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 }
                                 is_269_[i_268_] = i_300_;
                             } else if (i_270_ == 2) {
-                                int i_301_ = (((Class105_Sub3_Sub1) this)
+                                int i_301_ = (this
                                         .anIntArray9933[i_267_]);
                                 if (i_301_ != 0) {
                                     int i_302_ = (((i_301_ & 0xff00ff)
@@ -1423,7 +1423,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 throw new IllegalArgumentException();
                         } else if (i_271_ == 2) {
                             if (i_270_ == 1) {
-                                int i_304_ = (((Class105_Sub3_Sub1) this)
+                                int i_304_ = (this
                                         .anIntArray9933[i_267_]);
                                 if (i_304_ != 0) {
                                     int i_305_ = is_269_[i_268_];
@@ -1437,7 +1437,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             >>> 8);
                                 }
                             } else if (i_270_ == 0) {
-                                int i_308_ = (((Class105_Sub3_Sub1) this)
+                                int i_308_ = (this
                                         .anIntArray9933[i_267_]);
                                 if (i_308_ != 0) {
                                     int i_309_ = (((i_308_ & 0xff0000)
@@ -1461,7 +1461,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             >>> 8);
                                 }
                             } else if (i_270_ == 3) {
-                                int i_315_ = (((Class105_Sub3_Sub1) this)
+                                int i_315_ = (this
                                         .anIntArray9933[i_267_]);
                                 int i_316_ = Class105_Sub3.anInt8480;
                                 int i_317_ = i_315_ + i_316_;
@@ -1482,7 +1482,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         = i_317_ - i_319_ | i_319_ - (i_319_
                                         >>> 8);
                             } else if (i_270_ == 2) {
-                                int i_320_ = (((Class105_Sub3_Sub1) this)
+                                int i_320_ = (this
                                         .anIntArray9933[i_267_]);
                                 if (i_320_ != 0) {
                                     int i_321_ = (((i_320_ & 0xff00ff)
@@ -1525,7 +1525,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_330_ = Class105_Sub3.anInt8478;
                     int i_331_;
                     if ((i_331_
-                            = i_328_ - (((Class105_Sub3) this).anInt8471 << 12))
+                            = i_328_ - (this.anInt8471 << 12))
                             >= 0) {
                         i_331_ = ((Class105_Sub3.anInt8481 - i_331_)
                                 / Class105_Sub3.anInt8481);
@@ -1547,14 +1547,14 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         i_327_ += i_331_;
                     }
                     if ((i_331_ = ((1 + i_329_
-                            - (((Class105_Sub3) this).anInt8470 << 12)
+                            - (this.anInt8470 << 12)
                             - Class105_Sub3.anInt8450)
                             / Class105_Sub3.anInt8450))
                             > i_330_)
                         i_330_ = i_331_;
                     for (/**/; i_330_ < 0; i_330_++) {
                         int i_332_ = (((i_329_ >> 12)
-                                * ((Class105_Sub3) this).anInt8471)
+                                * this.anInt8471)
                                 + (i_328_ >> 12));
                         int i_333_ = i_327_++;
                         int[] is_334_ = is;
@@ -1562,10 +1562,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_336_ = i_0_;
                         if (i_336_ == 0) {
                             if (i_335_ == 1)
-                                is_334_[i_333_] = (((Class105_Sub3_Sub1) this)
+                                is_334_[i_333_] = (this
                                         .anIntArray9933[i_332_]);
                             else if (i_335_ == 0) {
-                                int i_337_ = (((Class105_Sub3_Sub1) this)
+                                int i_337_ = (this
                                         .anIntArray9933[i_332_++]);
                                 int i_338_ = (((i_337_ & 0xff0000)
                                         * Class105_Sub3.anInt8469)
@@ -1579,7 +1579,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 is_334_[i_333_]
                                         = (i_338_ | i_339_ | i_340_) >>> 8;
                             } else if (i_335_ == 3) {
-                                int i_341_ = (((Class105_Sub3_Sub1) this)
+                                int i_341_ = (this
                                         .anIntArray9933[i_332_++]);
                                 int i_342_ = Class105_Sub3.anInt8480;
                                 int i_343_ = i_341_ + i_342_;
@@ -1591,7 +1591,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         = i_343_ - i_345_ | i_345_ - (i_345_
                                         >>> 8);
                             } else if (i_335_ == 2) {
-                                int i_346_ = (((Class105_Sub3_Sub1) this)
+                                int i_346_ = (this
                                         .anIntArray9933[i_332_]);
                                 int i_347_ = (((i_346_ & 0xff00ff)
                                         * Class105_Sub3.anInt8477)
@@ -1605,12 +1605,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 throw new IllegalArgumentException();
                         } else if (i_336_ == 1) {
                             if (i_335_ == 1) {
-                                int i_349_ = (((Class105_Sub3_Sub1) this)
+                                int i_349_ = (this
                                         .anIntArray9933[i_332_]);
                                 if (i_349_ != 0)
                                     is_334_[i_333_] = i_349_;
                             } else if (i_335_ == 0) {
-                                int i_350_ = (((Class105_Sub3_Sub1) this)
+                                int i_350_ = (this
                                         .anIntArray9933[i_332_]);
                                 if (i_350_ != 0) {
                                     if ((Class105_Sub3.anInt8480 & 0xffffff)
@@ -1675,7 +1675,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     }
                                 }
                             } else if (i_335_ == 3) {
-                                int i_361_ = (((Class105_Sub3_Sub1) this)
+                                int i_361_ = (this
                                         .anIntArray9933[i_332_]);
                                 int i_362_ = Class105_Sub3.anInt8480;
                                 int i_363_ = i_361_ + i_362_;
@@ -1703,7 +1703,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 }
                                 is_334_[i_333_] = i_365_;
                             } else if (i_335_ == 2) {
-                                int i_366_ = (((Class105_Sub3_Sub1) this)
+                                int i_366_ = (this
                                         .anIntArray9933[i_332_]);
                                 if (i_366_ != 0) {
                                     int i_367_ = (((i_366_ & 0xff00ff)
@@ -1720,7 +1720,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 throw new IllegalArgumentException();
                         } else if (i_336_ == 2) {
                             if (i_335_ == 1) {
-                                int i_369_ = (((Class105_Sub3_Sub1) this)
+                                int i_369_ = (this
                                         .anIntArray9933[i_332_]);
                                 if (i_369_ != 0) {
                                     int i_370_ = is_334_[i_333_];
@@ -1734,7 +1734,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             >>> 8);
                                 }
                             } else if (i_335_ == 0) {
-                                int i_373_ = (((Class105_Sub3_Sub1) this)
+                                int i_373_ = (this
                                         .anIntArray9933[i_332_]);
                                 if (i_373_ != 0) {
                                     int i_374_ = (((i_373_ & 0xff0000)
@@ -1758,7 +1758,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             >>> 8);
                                 }
                             } else if (i_335_ == 3) {
-                                int i_380_ = (((Class105_Sub3_Sub1) this)
+                                int i_380_ = (this
                                         .anIntArray9933[i_332_]);
                                 int i_381_ = Class105_Sub3.anInt8480;
                                 int i_382_ = i_380_ + i_381_;
@@ -1779,7 +1779,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         = i_382_ - i_384_ | i_384_ - (i_384_
                                         >>> 8);
                             } else if (i_335_ == 2) {
-                                int i_385_ = (((Class105_Sub3_Sub1) this)
+                                int i_385_ = (this
                                         .anIntArray9933[i_332_]);
                                 if (i_385_ != 0) {
                                     int i_386_ = (((i_385_ & 0xff00ff)
@@ -1820,7 +1820,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 int i_394_ = Class105_Sub3.anInt8467;
                 int i_395_ = Class105_Sub3.anInt8478;
                 if (i_394_ >= 0
-                        && i_394_ - (((Class105_Sub3) this).anInt8470 << 12) < 0) {
+                        && i_394_ - (this.anInt8470 << 12) < 0) {
                     if (i_393_ < 0) {
                         int i_396_ = ((Class105_Sub3.anInt8481 - 1 - i_393_)
                                 / Class105_Sub3.anInt8481);
@@ -1830,14 +1830,14 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     }
                     int i_397_;
                     if ((i_397_ = ((1 + i_393_
-                            - (((Class105_Sub3) this).anInt8471 << 12)
+                            - (this.anInt8471 << 12)
                             - Class105_Sub3.anInt8481)
                             / Class105_Sub3.anInt8481))
                             > i_395_)
                         i_395_ = i_397_;
                     for (/**/; i_395_ < 0; i_395_++) {
                         int i_398_ = (((i_394_ >> 12)
-                                * ((Class105_Sub3) this).anInt8471)
+                                * this.anInt8471)
                                 + (i_393_ >> 12));
                         int i_399_ = i_392_++;
                         int[] is_400_ = is;
@@ -1845,10 +1845,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_402_ = i_0_;
                         if (i_402_ == 0) {
                             if (i_401_ == 1)
-                                is_400_[i_399_] = (((Class105_Sub3_Sub1) this)
+                                is_400_[i_399_] = (this
                                         .anIntArray9933[i_398_]);
                             else if (i_401_ == 0) {
-                                int i_403_ = (((Class105_Sub3_Sub1) this)
+                                int i_403_ = (this
                                         .anIntArray9933[i_398_++]);
                                 int i_404_ = (((i_403_ & 0xff0000)
                                         * Class105_Sub3.anInt8469)
@@ -1862,7 +1862,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 is_400_[i_399_]
                                         = (i_404_ | i_405_ | i_406_) >>> 8;
                             } else if (i_401_ == 3) {
-                                int i_407_ = (((Class105_Sub3_Sub1) this)
+                                int i_407_ = (this
                                         .anIntArray9933[i_398_++]);
                                 int i_408_ = Class105_Sub3.anInt8480;
                                 int i_409_ = i_407_ + i_408_;
@@ -1874,7 +1874,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         = i_409_ - i_411_ | i_411_ - (i_411_
                                         >>> 8);
                             } else if (i_401_ == 2) {
-                                int i_412_ = (((Class105_Sub3_Sub1) this)
+                                int i_412_ = (this
                                         .anIntArray9933[i_398_]);
                                 int i_413_ = (((i_412_ & 0xff00ff)
                                         * Class105_Sub3.anInt8477)
@@ -1888,12 +1888,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 throw new IllegalArgumentException();
                         } else if (i_402_ == 1) {
                             if (i_401_ == 1) {
-                                int i_415_ = (((Class105_Sub3_Sub1) this)
+                                int i_415_ = (this
                                         .anIntArray9933[i_398_]);
                                 if (i_415_ != 0)
                                     is_400_[i_399_] = i_415_;
                             } else if (i_401_ == 0) {
-                                int i_416_ = (((Class105_Sub3_Sub1) this)
+                                int i_416_ = (this
                                         .anIntArray9933[i_398_]);
                                 if (i_416_ != 0) {
                                     if ((Class105_Sub3.anInt8480 & 0xffffff)
@@ -1958,7 +1958,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     }
                                 }
                             } else if (i_401_ == 3) {
-                                int i_427_ = (((Class105_Sub3_Sub1) this)
+                                int i_427_ = (this
                                         .anIntArray9933[i_398_]);
                                 int i_428_ = Class105_Sub3.anInt8480;
                                 int i_429_ = i_427_ + i_428_;
@@ -1986,7 +1986,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 }
                                 is_400_[i_399_] = i_431_;
                             } else if (i_401_ == 2) {
-                                int i_432_ = (((Class105_Sub3_Sub1) this)
+                                int i_432_ = (this
                                         .anIntArray9933[i_398_]);
                                 if (i_432_ != 0) {
                                     int i_433_ = (((i_432_ & 0xff00ff)
@@ -2003,7 +2003,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 throw new IllegalArgumentException();
                         } else if (i_402_ == 2) {
                             if (i_401_ == 1) {
-                                int i_435_ = (((Class105_Sub3_Sub1) this)
+                                int i_435_ = (this
                                         .anIntArray9933[i_398_]);
                                 if (i_435_ != 0) {
                                     int i_436_ = is_400_[i_399_];
@@ -2017,7 +2017,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             >>> 8);
                                 }
                             } else if (i_401_ == 0) {
-                                int i_439_ = (((Class105_Sub3_Sub1) this)
+                                int i_439_ = (this
                                         .anIntArray9933[i_398_]);
                                 if (i_439_ != 0) {
                                     int i_440_ = (((i_439_ & 0xff0000)
@@ -2041,7 +2041,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                             >>> 8);
                                 }
                             } else if (i_401_ == 3) {
-                                int i_446_ = (((Class105_Sub3_Sub1) this)
+                                int i_446_ = (this
                                         .anIntArray9933[i_398_]);
                                 int i_447_ = Class105_Sub3.anInt8480;
                                 int i_448_ = i_446_ + i_447_;
@@ -2062,7 +2062,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         = i_448_ - i_450_ | i_450_ - (i_450_
                                         >>> 8);
                             } else if (i_401_ == 2) {
-                                int i_451_ = (((Class105_Sub3_Sub1) this)
+                                int i_451_ = (this
                                         .anIntArray9933[i_398_]);
                                 if (i_451_ != 0) {
                                     int i_452_ = (((i_451_ & 0xff00ff)
@@ -2110,12 +2110,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 }
                 int i_463_;
                 if ((i_463_
-                        = (1 + i_459_ - (((Class105_Sub3) this).anInt8471 << 12)
+                        = (1 + i_459_ - (this.anInt8471 << 12)
                         - Class105_Sub3.anInt8481) / Class105_Sub3.anInt8481)
                         > i_461_)
                     i_461_ = i_463_;
                 if ((i_463_
-                        = i_460_ - (((Class105_Sub3) this).anInt8470 << 12))
+                        = i_460_ - (this.anInt8470 << 12))
                         >= 0) {
                     i_463_ = ((Class105_Sub3.anInt8450 - i_463_)
                             / Class105_Sub3.anInt8450);
@@ -2130,7 +2130,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     i_461_ = i_463_;
                 for (/**/; i_461_ < 0; i_461_++) {
                     int i_464_
-                            = ((i_460_ >> 12) * ((Class105_Sub3) this).anInt8471
+                            = ((i_460_ >> 12) * this.anInt8471
                             + (i_459_ >> 12));
                     int i_465_ = i_458_++;
                     int[] is_466_ = is;
@@ -2138,10 +2138,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_468_ = i_0_;
                     if (i_468_ == 0) {
                         if (i_467_ == 1)
-                            is_466_[i_465_] = (((Class105_Sub3_Sub1) this)
+                            is_466_[i_465_] = (this
                                     .anIntArray9933[i_464_]);
                         else if (i_467_ == 0) {
-                            int i_469_ = (((Class105_Sub3_Sub1) this)
+                            int i_469_ = (this
                                     .anIntArray9933[i_464_++]);
                             int i_470_ = (((i_469_ & 0xff0000)
                                     * Class105_Sub3.anInt8469)
@@ -2154,7 +2154,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     & 0xff00);
                             is_466_[i_465_] = (i_470_ | i_471_ | i_472_) >>> 8;
                         } else if (i_467_ == 3) {
-                            int i_473_ = (((Class105_Sub3_Sub1) this)
+                            int i_473_ = (this
                                     .anIntArray9933[i_464_++]);
                             int i_474_ = Class105_Sub3.anInt8480;
                             int i_475_ = i_473_ + i_474_;
@@ -2165,7 +2165,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             is_466_[i_465_]
                                     = i_475_ - i_477_ | i_477_ - (i_477_ >>> 8);
                         } else if (i_467_ == 2) {
-                            int i_478_ = (((Class105_Sub3_Sub1) this)
+                            int i_478_ = (this
                                     .anIntArray9933[i_464_]);
                             int i_479_ = (((i_478_ & 0xff00ff)
                                     * Class105_Sub3.anInt8477)
@@ -2179,12 +2179,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             throw new IllegalArgumentException();
                     } else if (i_468_ == 1) {
                         if (i_467_ == 1) {
-                            int i_481_ = (((Class105_Sub3_Sub1) this)
+                            int i_481_ = (this
                                     .anIntArray9933[i_464_]);
                             if (i_481_ != 0)
                                 is_466_[i_465_] = i_481_;
                         } else if (i_467_ == 0) {
-                            int i_482_ = (((Class105_Sub3_Sub1) this)
+                            int i_482_ = (this
                                     .anIntArray9933[i_464_]);
                             if (i_482_ != 0) {
                                 if ((Class105_Sub3.anInt8480 & 0xffffff)
@@ -2238,7 +2238,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 }
                             }
                         } else if (i_467_ == 3) {
-                            int i_493_ = (((Class105_Sub3_Sub1) this)
+                            int i_493_ = (this
                                     .anIntArray9933[i_464_]);
                             int i_494_ = Class105_Sub3.anInt8480;
                             int i_495_ = i_493_ + i_494_;
@@ -2264,7 +2264,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             }
                             is_466_[i_465_] = i_497_;
                         } else if (i_467_ == 2) {
-                            int i_498_ = (((Class105_Sub3_Sub1) this)
+                            int i_498_ = (this
                                     .anIntArray9933[i_464_]);
                             if (i_498_ != 0) {
                                 int i_499_ = (((i_498_ & 0xff00ff)
@@ -2281,7 +2281,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             throw new IllegalArgumentException();
                     } else if (i_468_ == 2) {
                         if (i_467_ == 1) {
-                            int i_501_ = (((Class105_Sub3_Sub1) this)
+                            int i_501_ = (this
                                     .anIntArray9933[i_464_]);
                             if (i_501_ != 0) {
                                 int i_502_ = is_466_[i_465_];
@@ -2296,7 +2296,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         >>> 8);
                             }
                         } else if (i_467_ == 0) {
-                            int i_505_ = (((Class105_Sub3_Sub1) this)
+                            int i_505_ = (this
                                     .anIntArray9933[i_464_]);
                             if (i_505_ != 0) {
                                 int i_506_ = (((i_505_ & 0xff0000)
@@ -2321,7 +2321,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         >>> 8);
                             }
                         } else if (i_467_ == 3) {
-                            int i_512_ = (((Class105_Sub3_Sub1) this)
+                            int i_512_ = (this
                                     .anIntArray9933[i_464_]);
                             int i_513_ = Class105_Sub3.anInt8480;
                             int i_514_ = i_512_ + i_513_;
@@ -2338,7 +2338,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             is_466_[i_465_]
                                     = i_514_ - i_516_ | i_516_ - (i_516_ >>> 8);
                         } else if (i_467_ == 2) {
-                            int i_517_ = (((Class105_Sub3_Sub1) this)
+                            int i_517_ = (this
                                     .anIntArray9933[i_464_]);
                             if (i_517_ != 0) {
                                 int i_518_ = (((i_517_ & 0xff00ff)
@@ -2386,7 +2386,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 }
                 int i_529_;
                 if ((i_529_
-                        = (1 + i_525_ - (((Class105_Sub3) this).anInt8471 << 12)
+                        = (1 + i_525_ - (this.anInt8471 << 12)
                         - Class105_Sub3.anInt8481) / Class105_Sub3.anInt8481)
                         > i_527_)
                     i_527_ = i_529_;
@@ -2399,13 +2399,13 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     i_524_ += i_529_;
                 }
                 if ((i_529_
-                        = (1 + i_526_ - (((Class105_Sub3) this).anInt8470 << 12)
+                        = (1 + i_526_ - (this.anInt8470 << 12)
                         - Class105_Sub3.anInt8450) / Class105_Sub3.anInt8450)
                         > i_527_)
                     i_527_ = i_529_;
                 for (/**/; i_527_ < 0; i_527_++) {
                     int i_530_
-                            = ((i_526_ >> 12) * ((Class105_Sub3) this).anInt8471
+                            = ((i_526_ >> 12) * this.anInt8471
                             + (i_525_ >> 12));
                     int i_531_ = i_524_++;
                     int[] is_532_ = is;
@@ -2413,10 +2413,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_534_ = i_0_;
                     if (i_534_ == 0) {
                         if (i_533_ == 1)
-                            is_532_[i_531_] = (((Class105_Sub3_Sub1) this)
+                            is_532_[i_531_] = (this
                                     .anIntArray9933[i_530_]);
                         else if (i_533_ == 0) {
-                            int i_535_ = (((Class105_Sub3_Sub1) this)
+                            int i_535_ = (this
                                     .anIntArray9933[i_530_++]);
                             int i_536_ = (((i_535_ & 0xff0000)
                                     * Class105_Sub3.anInt8469)
@@ -2429,7 +2429,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                     & 0xff00);
                             is_532_[i_531_] = (i_536_ | i_537_ | i_538_) >>> 8;
                         } else if (i_533_ == 3) {
-                            int i_539_ = (((Class105_Sub3_Sub1) this)
+                            int i_539_ = (this
                                     .anIntArray9933[i_530_++]);
                             int i_540_ = Class105_Sub3.anInt8480;
                             int i_541_ = i_539_ + i_540_;
@@ -2440,7 +2440,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             is_532_[i_531_]
                                     = i_541_ - i_543_ | i_543_ - (i_543_ >>> 8);
                         } else if (i_533_ == 2) {
-                            int i_544_ = (((Class105_Sub3_Sub1) this)
+                            int i_544_ = (this
                                     .anIntArray9933[i_530_]);
                             int i_545_ = (((i_544_ & 0xff00ff)
                                     * Class105_Sub3.anInt8477)
@@ -2454,12 +2454,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             throw new IllegalArgumentException();
                     } else if (i_534_ == 1) {
                         if (i_533_ == 1) {
-                            int i_547_ = (((Class105_Sub3_Sub1) this)
+                            int i_547_ = (this
                                     .anIntArray9933[i_530_]);
                             if (i_547_ != 0)
                                 is_532_[i_531_] = i_547_;
                         } else if (i_533_ == 0) {
-                            int i_548_ = (((Class105_Sub3_Sub1) this)
+                            int i_548_ = (this
                                     .anIntArray9933[i_530_]);
                             if (i_548_ != 0) {
                                 if ((Class105_Sub3.anInt8480 & 0xffffff)
@@ -2513,7 +2513,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 }
                             }
                         } else if (i_533_ == 3) {
-                            int i_559_ = (((Class105_Sub3_Sub1) this)
+                            int i_559_ = (this
                                     .anIntArray9933[i_530_]);
                             int i_560_ = Class105_Sub3.anInt8480;
                             int i_561_ = i_559_ + i_560_;
@@ -2539,7 +2539,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             }
                             is_532_[i_531_] = i_563_;
                         } else if (i_533_ == 2) {
-                            int i_564_ = (((Class105_Sub3_Sub1) this)
+                            int i_564_ = (this
                                     .anIntArray9933[i_530_]);
                             if (i_564_ != 0) {
                                 int i_565_ = (((i_564_ & 0xff00ff)
@@ -2556,7 +2556,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             throw new IllegalArgumentException();
                     } else if (i_534_ == 2) {
                         if (i_533_ == 1) {
-                            int i_567_ = (((Class105_Sub3_Sub1) this)
+                            int i_567_ = (this
                                     .anIntArray9933[i_530_]);
                             if (i_567_ != 0) {
                                 int i_568_ = is_532_[i_531_];
@@ -2571,7 +2571,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         >>> 8);
                             }
                         } else if (i_533_ == 0) {
-                            int i_571_ = (((Class105_Sub3_Sub1) this)
+                            int i_571_ = (this
                                     .anIntArray9933[i_530_]);
                             if (i_571_ != 0) {
                                 int i_572_ = (((i_571_ & 0xff0000)
@@ -2596,7 +2596,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                         >>> 8);
                             }
                         } else if (i_533_ == 3) {
-                            int i_578_ = (((Class105_Sub3_Sub1) this)
+                            int i_578_ = (this
                                     .anIntArray9933[i_530_]);
                             int i_579_ = Class105_Sub3.anInt8480;
                             int i_580_ = i_578_ + i_579_;
@@ -2613,7 +2613,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             is_532_[i_531_]
                                     = i_580_ - i_582_ | i_582_ - (i_582_ >>> 8);
                         } else if (i_533_ == 2) {
-                            int i_583_ = (((Class105_Sub3_Sub1) this)
+                            int i_583_ = (this
                                     .anIntArray9933[i_530_]);
                             if (i_583_ != 0) {
                                 int i_584_ = (((i_583_ & 0xff00ff)
@@ -2651,69 +2651,69 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
     final void method979(int i, int i_589_, int i_590_, int i_591_, int i_592_,
                          int i_593_) {
         int[] is
-                = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anIntArray7483;
+                = this.aHa_Sub1_8460.anIntArray7483;
         for (int i_594_ = 0; i_594_ < i_591_; i_594_++) {
             int i_595_
-                    = (i_589_ + i_594_) * ((Class105_Sub3) this).anInt8471 + i;
+                    = (i_589_ + i_594_) * this.anInt8471 + i;
             int i_596_
-                    = ((i_593_ + i_594_) * ((ha_Sub1) (((Class105_Sub3) this)
-                    .aHa_Sub1_8460)).anInt7477
+                    = ((i_593_ + i_594_) * this
+                    .aHa_Sub1_8460.anInt7477
                     + i_592_);
             for (int i_597_ = 0; i_597_ < i_590_; i_597_++)
-                ((Class105_Sub3_Sub1) this).anIntArray9933[i_595_ + i_597_]
+                this.anIntArray9933[i_595_ + i_597_]
                         = is[i_596_ + i_597_];
         }
     }
 
     final void method982(int i, int i_598_, int i_599_, int i_600_, int i_601_,
                          int i_602_, int i_603_, int i_604_) {
-        if (((Class105_Sub3) this).aHa_Sub1_8460.method3716())
+        if (this.aHa_Sub1_8460.method3716())
             throw new IllegalStateException();
         if (i_599_ > 0 && i_600_ > 0) {
             int i_605_ = 0;
             int i_606_ = 0;
             int i_607_
-                    = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7477;
-            int i_608_ = (((Class105_Sub3) this).anInt8461
-                    + ((Class105_Sub3) this).anInt8471
-                    + ((Class105_Sub3) this).anInt8454);
-            int i_609_ = (((Class105_Sub3) this).anInt8464
-                    + ((Class105_Sub3) this).anInt8470
-                    + ((Class105_Sub3) this).anInt8456);
+                    = this.aHa_Sub1_8460.anInt7477;
+            int i_608_ = (this.anInt8461
+                    + this.anInt8471
+                    + this.anInt8454);
+            int i_609_ = (this.anInt8464
+                    + this.anInt8470
+                    + this.anInt8456);
             int i_610_ = (i_608_ << 16) / i_599_;
             int i_611_ = (i_609_ << 16) / i_600_;
-            if (((Class105_Sub3) this).anInt8461 > 0) {
+            if (this.anInt8461 > 0) {
                 int i_612_
-                        = (((((Class105_Sub3) this).anInt8461 << 16) + i_610_ - 1)
+                        = (((this.anInt8461 << 16) + i_610_ - 1)
                         / i_610_);
                 i += i_612_;
-                i_605_ += i_612_ * i_610_ - (((Class105_Sub3) this).anInt8461
+                i_605_ += i_612_ * i_610_ - (this.anInt8461
                         << 16);
             }
-            if (((Class105_Sub3) this).anInt8464 > 0) {
+            if (this.anInt8464 > 0) {
                 int i_613_
-                        = (((((Class105_Sub3) this).anInt8464 << 16) + i_611_ - 1)
+                        = (((this.anInt8464 << 16) + i_611_ - 1)
                         / i_611_);
                 i_598_ += i_613_;
-                i_606_ += i_613_ * i_611_ - (((Class105_Sub3) this).anInt8464
+                i_606_ += i_613_ * i_611_ - (this.anInt8464
                         << 16);
             }
-            if (((Class105_Sub3) this).anInt8471 < i_608_)
-                i_599_ = ((((Class105_Sub3) this).anInt8471 << 16) - i_605_
+            if (this.anInt8471 < i_608_)
+                i_599_ = ((this.anInt8471 << 16) - i_605_
                         + i_610_ - 1) / i_610_;
-            if (((Class105_Sub3) this).anInt8470 < i_609_)
-                i_600_ = ((((Class105_Sub3) this).anInt8470 << 16) - i_606_
+            if (this.anInt8470 < i_609_)
+                i_600_ = ((this.anInt8470 << 16) - i_606_
                         + i_611_ - 1) / i_611_;
             int i_614_ = i + i_598_ * i_607_;
             int i_615_ = i_607_ - i_599_;
             if (i_598_ + i_600_
-                    > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7503)
+                    > this.aHa_Sub1_8460.anInt7503)
                 i_600_ -= (i_598_ + i_600_
-                        - (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                        - (this.aHa_Sub1_8460
                         .anInt7503));
             if (i_598_
-                    < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476) {
-                int i_616_ = ((((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                    < this.aHa_Sub1_8460.anInt7476) {
+                int i_616_ = ((this.aHa_Sub1_8460
                         .anInt7476)
                         - i_598_);
                 i_600_ -= i_616_;
@@ -2721,17 +2721,17 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 i_606_ += i_611_ * i_616_;
             }
             if (i + i_599_
-                    > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7507) {
+                    > this.aHa_Sub1_8460.anInt7507) {
                 int i_617_
                         = (i + i_599_
-                        - (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                        - (this.aHa_Sub1_8460
                         .anInt7507));
                 i_599_ -= i_617_;
                 i_615_ += i_617_;
             }
             if (i
-                    < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496) {
-                int i_618_ = ((((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                    < this.aHa_Sub1_8460.anInt7496) {
+                int i_618_ = ((this.aHa_Sub1_8460
                         .anInt7496)
                         - i);
                 i_599_ -= i_618_;
@@ -2739,17 +2739,17 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 i_605_ += i_610_ * i_618_;
                 i_615_ += i_618_;
             }
-            int[] is = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+            int[] is = (this.aHa_Sub1_8460
                     .anIntArray7483);
             if (i_603_ == 0) {
                 if (i_601_ == 1) {
                     int i_619_ = i_605_;
                     for (int i_620_ = -i_600_; i_620_ < 0; i_620_++) {
                         int i_621_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_622_ = -i_599_; i_622_ < 0; i_622_++) {
                             is[i_614_++]
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_621_]);
                             i_605_ += i_610_;
                         }
@@ -2766,10 +2766,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_626_ = i_605_;
                     for (int i_627_ = -i_600_; i_627_ < 0; i_627_++) {
                         int i_628_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_629_ = -i_599_; i_629_ < 0; i_629_++) {
                             int i_630_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_628_]);
                             int i_631_
                                     = (i_630_ & 0xff0000) * i_623_ & ~0xffffff;
@@ -2788,10 +2788,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_634_ = i_605_;
                     for (int i_635_ = -i_600_; i_635_ < 0; i_635_++) {
                         int i_636_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_637_ = -i_599_; i_637_ < 0; i_637_++) {
                             int i_638_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_636_]);
                             int i_639_ = i_638_ + i_602_;
                             int i_640_
@@ -2817,10 +2817,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_646_ = i_605_;
                     for (int i_647_ = -i_600_; i_647_ < 0; i_647_++) {
                         int i_648_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_649_ = -i_599_; i_649_ < 0; i_649_++) {
                             int i_650_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_648_]);
                             i_644_ = (i_650_ & 0xff00ff) * i_642_ & ~0xff00ff;
                             i_645_ = (i_650_ & 0xff00) * i_642_ & 0xff0000;
@@ -2840,10 +2840,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_651_ = i_605_;
                     for (int i_652_ = -i_600_; i_652_ < 0; i_652_++) {
                         int i_653_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_654_ = -i_599_; i_654_ < 0; i_654_++) {
                             int i_655_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_653_]);
                             if (i_655_ != 0)
                                 is[i_614_++] = i_655_;
@@ -2864,9 +2864,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_658_ = 256 - i_657_;
                         for (int i_659_ = -i_600_; i_659_ < 0; i_659_++) {
                             int i_660_ = ((i_606_ >> 16)
-                                    * ((Class105_Sub3) this).anInt8471);
+                                    * this.anInt8471);
                             for (int i_661_ = -i_599_; i_661_ < 0; i_661_++) {
-                                int i_662_ = (((Class105_Sub3_Sub1) this)
+                                int i_662_ = (this
                                         .anIntArray9933
                                         [(i_605_ >> 16) + i_660_]);
                                 if (i_662_ != 0) {
@@ -2894,9 +2894,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_668_ = 256 - i_667_;
                         for (int i_669_ = -i_600_; i_669_ < 0; i_669_++) {
                             int i_670_ = ((i_606_ >> 16)
-                                    * ((Class105_Sub3) this).anInt8471);
+                                    * this.anInt8471);
                             for (int i_671_ = -i_599_; i_671_ < 0; i_671_++) {
-                                int i_672_ = (((Class105_Sub3_Sub1) this)
+                                int i_672_ = (this
                                         .anIntArray9933
                                         [(i_605_ >> 16) + i_670_]);
                                 if (i_672_ != 0) {
@@ -2951,10 +2951,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_682_ = 256 - i_681_;
                     for (int i_683_ = -i_600_; i_683_ < 0; i_683_++) {
                         int i_684_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_685_ = -i_599_; i_685_ < 0; i_685_++) {
                             int i_686_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_684_]);
                             int i_687_ = i_686_ + i_602_;
                             int i_688_
@@ -2990,10 +2990,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_694_ = i_605_;
                     for (int i_695_ = -i_600_; i_695_ < 0; i_695_++) {
                         int i_696_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_697_ = -i_599_; i_697_ < 0; i_697_++) {
                             int i_698_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_696_]);
                             if (i_698_ != 0) {
                                 i_692_
@@ -3018,10 +3018,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_699_ = i_605_;
                     for (int i_700_ = -i_600_; i_700_ < 0; i_700_++) {
                         int i_701_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_702_ = -i_599_; i_702_ < 0; i_702_++) {
                             int i_703_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_701_]);
                             if (i_703_ != 0) {
                                 int i_704_ = is[i_614_];
@@ -3051,10 +3051,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_710_ = i_602_ & 0xff;
                     for (int i_711_ = -i_600_; i_711_ < 0; i_711_++) {
                         int i_712_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_713_ = -i_599_; i_713_ < 0; i_713_++) {
                             int i_714_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_712_]);
                             if (i_714_ != 0) {
                                 int i_715_
@@ -3087,10 +3087,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_721_ = i_605_;
                     for (int i_722_ = -i_600_; i_722_ < 0; i_722_++) {
                         int i_723_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_724_ = -i_599_; i_724_ < 0; i_724_++) {
                             int i_725_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_723_]);
                             int i_726_ = i_725_ + i_602_;
                             int i_727_
@@ -3122,10 +3122,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_733_ = i_605_;
                     for (int i_734_ = -i_600_; i_734_ < 0; i_734_++) {
                         int i_735_ = ((i_606_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_736_ = -i_599_; i_736_ < 0; i_736_++) {
                             int i_737_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(i_605_ >> 16) + i_735_]);
                             if (i_737_ != 0) {
                                 i_731_
@@ -3165,27 +3165,27 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
 
     Class105_Sub3_Sub1(ha_Sub1 var_ha_Sub1, int i, int i_743_) {
         super(var_ha_Sub1, i, i_743_);
-        ((Class105_Sub3_Sub1) this).anIntArray9933 = new int[i * i_743_];
+        this.anIntArray9933 = new int[i * i_743_];
     }
 
     Class105_Sub3_Sub1(ha_Sub1 var_ha_Sub1, int[] is, int i, int i_744_,
                        int i_745_, int i_746_, boolean bool) {
         super(var_ha_Sub1, i_745_, i_746_);
         if (bool)
-            ((Class105_Sub3_Sub1) this).anIntArray9933
+            this.anIntArray9933
                     = new int[i_745_ * i_746_];
         else
-            ((Class105_Sub3_Sub1) this).anIntArray9933 = is;
-        i_744_ -= ((Class105_Sub3) this).anInt8471;
+            this.anIntArray9933 = is;
+        i_744_ -= this.anInt8471;
         int i_747_ = 0;
         for (int i_748_ = 0; i_748_ < i_746_; i_748_++) {
             for (int i_749_ = 0; i_749_ < i_745_; i_749_++) {
                 int i_750_ = is[i++];
                 if (i_750_ >>> 24 == 255)
-                    ((Class105_Sub3_Sub1) this).anIntArray9933[i_747_++]
+                    this.anIntArray9933[i_747_++]
                             = (i_750_ & 0xffffff) == 0 ? -16777215 : i_750_;
                 else
-                    ((Class105_Sub3_Sub1) this).anIntArray9933[i_747_++] = 0;
+                    this.anIntArray9933[i_747_++] = 0;
             }
             i += i_744_;
         }
@@ -3193,12 +3193,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
 
     Class105_Sub3_Sub1(ha_Sub1 var_ha_Sub1, int[] is, int i, int i_751_) {
         super(var_ha_Sub1, i, i_751_);
-        ((Class105_Sub3_Sub1) this).anIntArray9933 = is;
+        this.anIntArray9933 = is;
     }
 
     final void method995(int[] is, int[] is_752_, int i, int i_753_) {
         int[] is_754_
-                = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anIntArray7483;
+                = this.aHa_Sub1_8460.anIntArray7483;
         if (Class105_Sub3.anInt8481 == 0) {
             if (Class105_Sub3.anInt8450 == 0) {
                 int i_755_ = Class105_Sub3.anInt8468;
@@ -3212,9 +3212,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_759_ = Class105_Sub3.anInt8467;
                         int i_760_ = Class105_Sub3.anInt8478;
                         if (i_758_ >= 0 && i_759_ >= 0
-                                && i_758_ - (((Class105_Sub3) this).anInt8471
+                                && i_758_ - (this.anInt8471
                                 << 12) < 0
-                                && i_759_ - (((Class105_Sub3) this).anInt8470
+                                && i_759_ - (this.anInt8470
                                 << 12) < 0) {
                             int i_761_ = is[i_756_] - i;
                             int i_762_ = -is_752_[i_756_];
@@ -3231,10 +3231,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 i_760_ = i_762_;
                             for (/**/; i_760_ < 0; i_760_++) {
                                 int i_764_
-                                        = (((Class105_Sub3_Sub1) this)
+                                        = (this
                                         .anIntArray9933
                                         [(((i_759_ >> 12)
-                                        * ((Class105_Sub3) this).anInt8471)
+                                        * this.anInt8471)
                                         + (i_758_ >> 12))]);
                                 if (i_764_ != 0)
                                     is_754_[i_757_++] = i_764_;
@@ -3259,11 +3259,11 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 + Class105_Sub3.anInt8475);
                         int i_770_ = Class105_Sub3.anInt8478;
                         if (i_768_ >= 0
-                                && i_768_ - (((Class105_Sub3) this).anInt8471
+                                && i_768_ - (this.anInt8471
                                 << 12) < 0) {
                             int i_771_;
                             if ((i_771_
-                                    = i_769_ - (((Class105_Sub3) this).anInt8470
+                                    = i_769_ - (this.anInt8470
                                     << 12))
                                     >= 0) {
                                 i_771_ = ((Class105_Sub3.anInt8450 - i_771_)
@@ -3291,10 +3291,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 i_770_ = i_773_;
                             for (/**/; i_770_ < 0; i_770_++) {
                                 int i_775_
-                                        = (((Class105_Sub3_Sub1) this)
+                                        = (this
                                         .anIntArray9933
                                         [(((i_769_ >> 12)
-                                        * ((Class105_Sub3) this).anInt8471)
+                                        * this.anInt8471)
                                         + (i_768_ >> 12))]);
                                 if (i_775_ != 0)
                                     is_754_[i_767_++] = i_775_;
@@ -3321,7 +3321,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 + Class105_Sub3.anInt8475);
                         int i_781_ = Class105_Sub3.anInt8478;
                         if (i_779_ >= 0
-                                && i_779_ - (((Class105_Sub3) this).anInt8471
+                                && i_779_ - (this.anInt8471
                                 << 12) < 0) {
                             if (i_780_ < 0) {
                                 int i_782_
@@ -3334,7 +3334,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             int i_783_;
                             if ((i_783_
                                     = ((1 + i_780_
-                                    - (((Class105_Sub3) this).anInt8470 << 12)
+                                    - (this.anInt8470 << 12)
                                     - Class105_Sub3.anInt8450)
                                     / Class105_Sub3.anInt8450))
                                     > i_781_)
@@ -3354,10 +3354,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 i_781_ = i_785_;
                             for (/**/; i_781_ < 0; i_781_++) {
                                 int i_787_
-                                        = (((Class105_Sub3_Sub1) this)
+                                        = (this
                                         .anIntArray9933
                                         [(((i_780_ >> 12)
-                                        * ((Class105_Sub3) this).anInt8471)
+                                        * this.anInt8471)
                                         + (i_779_ >> 12))]);
                                 if (i_787_ != 0)
                                     is_754_[i_778_++] = i_787_;
@@ -3386,11 +3386,11 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_792_ = Class105_Sub3.anInt8467;
                         int i_793_ = Class105_Sub3.anInt8478;
                         if (i_792_ >= 0
-                                && i_792_ - (((Class105_Sub3) this).anInt8470
+                                && i_792_ - (this.anInt8470
                                 << 12) < 0) {
                             int i_794_;
                             if ((i_794_
-                                    = i_791_ - (((Class105_Sub3) this).anInt8471
+                                    = i_791_ - (this.anInt8471
                                     << 12))
                                     >= 0) {
                                 i_794_ = ((Class105_Sub3.anInt8481 - i_794_)
@@ -3418,10 +3418,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 i_793_ = i_796_;
                             for (/**/; i_793_ < 0; i_793_++) {
                                 int i_798_
-                                        = (((Class105_Sub3_Sub1) this)
+                                        = (this
                                         .anIntArray9933
                                         [(((i_792_ >> 12)
-                                        * ((Class105_Sub3) this).anInt8471)
+                                        * this.anInt8471)
                                         + (i_791_ >> 12))]);
                                 if (i_798_ != 0)
                                     is_754_[i_790_++] = i_798_;
@@ -3450,7 +3450,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_804_ = Class105_Sub3.anInt8478;
                         int i_805_;
                         if ((i_805_
-                                = i_802_ - (((Class105_Sub3) this).anInt8471
+                                = i_802_ - (this.anInt8471
                                 << 12))
                                 >= 0) {
                             i_805_ = ((Class105_Sub3.anInt8481 - i_805_)
@@ -3465,7 +3465,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                                 > i_804_)
                             i_804_ = i_805_;
                         if ((i_805_
-                                = i_803_ - (((Class105_Sub3) this).anInt8470
+                                = i_803_ - (this.anInt8470
                                 << 12))
                                 >= 0) {
                             i_805_ = ((Class105_Sub3.anInt8450 - i_805_)
@@ -3494,9 +3494,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             i_804_ = i_807_;
                         for (/**/; i_804_ < 0; i_804_++) {
                             int i_809_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(((i_803_ >> 12)
-                                    * ((Class105_Sub3) this).anInt8471)
+                                    * this.anInt8471)
                                     + (i_802_ >> 12))]);
                             if (i_809_ != 0)
                                 is_754_[i_801_++] = i_809_;
@@ -3526,7 +3526,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_815_ = Class105_Sub3.anInt8478;
                         int i_816_;
                         if ((i_816_
-                                = i_813_ - (((Class105_Sub3) this).anInt8471
+                                = i_813_ - (this.anInt8471
                                 << 12))
                                 >= 0) {
                             i_816_ = ((Class105_Sub3.anInt8481 - i_816_)
@@ -3550,7 +3550,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         }
                         if ((i_816_
                                 = ((1 + i_814_
-                                - (((Class105_Sub3) this).anInt8470 << 12)
+                                - (this.anInt8470 << 12)
                                 - Class105_Sub3.anInt8450)
                                 / Class105_Sub3.anInt8450))
                                 > i_815_)
@@ -3570,9 +3570,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             i_815_ = i_818_;
                         for (/**/; i_815_ < 0; i_815_++) {
                             int i_820_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(((i_814_ >> 12)
-                                    * ((Class105_Sub3) this).anInt8471)
+                                    * this.anInt8471)
                                     + (i_813_ >> 12))]);
                             if (i_820_ != 0)
                                 is_754_[i_812_++] = i_820_;
@@ -3601,7 +3601,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_825_ = Class105_Sub3.anInt8467;
                     int i_826_ = Class105_Sub3.anInt8478;
                     if (i_825_ >= 0
-                            && (i_825_ - (((Class105_Sub3) this).anInt8470 << 12)
+                            && (i_825_ - (this.anInt8470 << 12)
                             < 0)) {
                         if (i_824_ < 0) {
                             int i_827_
@@ -3614,7 +3614,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_828_;
                         if ((i_828_
                                 = ((1 + i_824_
-                                - (((Class105_Sub3) this).anInt8471 << 12)
+                                - (this.anInt8471 << 12)
                                 - Class105_Sub3.anInt8481)
                                 / Class105_Sub3.anInt8481))
                                 > i_826_)
@@ -3634,9 +3634,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                             i_826_ = i_830_;
                         for (/**/; i_826_ < 0; i_826_++) {
                             int i_832_
-                                    = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                    = (this.anIntArray9933
                                     [(((i_825_ >> 12)
-                                    * ((Class105_Sub3) this).anInt8471)
+                                    * this.anInt8471)
                                     + (i_824_ >> 12))]);
                             if (i_832_ != 0)
                                 is_754_[i_823_++] = i_832_;
@@ -3674,13 +3674,13 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     }
                     int i_840_;
                     if ((i_840_ = ((1 + i_836_
-                            - (((Class105_Sub3) this).anInt8471 << 12)
+                            - (this.anInt8471 << 12)
                             - Class105_Sub3.anInt8481)
                             / Class105_Sub3.anInt8481))
                             > i_838_)
                         i_838_ = i_840_;
                     if ((i_840_
-                            = i_837_ - (((Class105_Sub3) this).anInt8470 << 12))
+                            = i_837_ - (this.anInt8470 << 12))
                             >= 0) {
                         i_840_ = ((Class105_Sub3.anInt8450 - i_840_)
                                 / Class105_Sub3.anInt8450);
@@ -3707,9 +3707,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         i_838_ = i_842_;
                     for (/**/; i_838_ < 0; i_838_++) {
                         int i_844_
-                                = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                = (this.anIntArray9933
                                 [(((i_837_ >> 12)
-                                * ((Class105_Sub3) this).anInt8471)
+                                * this.anInt8471)
                                 + (i_836_ >> 12))]);
                         if (i_844_ != 0)
                             is_754_[i_835_++] = i_844_;
@@ -3747,7 +3747,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     }
                     int i_852_;
                     if ((i_852_ = ((1 + i_848_
-                            - (((Class105_Sub3) this).anInt8471 << 12)
+                            - (this.anInt8471 << 12)
                             - Class105_Sub3.anInt8481)
                             / Class105_Sub3.anInt8481))
                             > i_850_)
@@ -3761,7 +3761,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         i_847_ += i_852_;
                     }
                     if ((i_852_ = ((1 + i_849_
-                            - (((Class105_Sub3) this).anInt8470 << 12)
+                            - (this.anInt8470 << 12)
                             - Class105_Sub3.anInt8450)
                             / Class105_Sub3.anInt8450))
                             > i_850_)
@@ -3780,9 +3780,9 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         i_850_ = i_854_;
                     for (/**/; i_850_ < 0; i_850_++) {
                         int i_856_
-                                = (((Class105_Sub3_Sub1) this).anIntArray9933
+                                = (this.anIntArray9933
                                 [(((i_849_ >> 12)
-                                * ((Class105_Sub3) this).anInt8471)
+                                * this.anInt8471)
                                 + (i_848_ >> 12))]);
                         if (i_856_ != 0)
                             is_754_[i_847_++] = i_856_;
@@ -3802,48 +3802,48 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
 
     final void method963(int i, int i_857_, aa var_aa, int i_858_,
                          int i_859_) {
-        if (((Class105_Sub3) this).aHa_Sub1_8460.method3716())
+        if (this.aHa_Sub1_8460.method3716())
             throw new IllegalStateException();
-        i += ((Class105_Sub3) this).anInt8461;
-        i_857_ += ((Class105_Sub3) this).anInt8464;
+        i += this.anInt8461;
+        i_857_ += this.anInt8464;
         int i_860_ = 0;
         int i_861_
-                = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7477;
-        int i_862_ = ((Class105_Sub3) this).anInt8471;
-        int i_863_ = ((Class105_Sub3) this).anInt8470;
+                = this.aHa_Sub1_8460.anInt7477;
+        int i_862_ = this.anInt8471;
+        int i_863_ = this.anInt8470;
         int i_864_ = i_861_ - i_862_;
         int i_865_ = 0;
         int i_866_ = i + i_857_ * i_861_;
         if (i_857_
-                < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476) {
+                < this.aHa_Sub1_8460.anInt7476) {
             int i_867_
-                    = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476
+                    = (this.aHa_Sub1_8460.anInt7476
                     - i_857_);
             i_863_ -= i_867_;
             i_857_
-                    = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476;
+                    = this.aHa_Sub1_8460.anInt7476;
             i_860_ += i_867_ * i_862_;
             i_866_ += i_867_ * i_861_;
         }
         if (i_857_ + i_863_
-                > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7503)
-            i_863_ -= i_857_ + i_863_ - ((ha_Sub1) (((Class105_Sub3) this)
-                    .aHa_Sub1_8460)).anInt7503;
-        if (i < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496) {
+                > this.aHa_Sub1_8460.anInt7503)
+            i_863_ -= i_857_ + i_863_ - this
+                    .aHa_Sub1_8460.anInt7503;
+        if (i < this.aHa_Sub1_8460.anInt7496) {
             int i_868_
-                    = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496
+                    = (this.aHa_Sub1_8460.anInt7496
                     - i);
             i_862_ -= i_868_;
-            i = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496;
+            i = this.aHa_Sub1_8460.anInt7496;
             i_860_ += i_868_;
             i_866_ += i_868_;
             i_865_ += i_868_;
             i_864_ += i_868_;
         }
         if (i + i_862_
-                > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7507) {
+                > this.aHa_Sub1_8460.anInt7507) {
             int i_869_ = (i + i_862_
-                    - (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                    - (this.aHa_Sub1_8460
                     .anInt7507));
             i_862_ -= i_869_;
             i_865_ += i_869_;
@@ -3851,15 +3851,15 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         }
         if (i_862_ > 0 && i_863_ > 0) {
             aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
-            int[] is = ((aa_Sub3) var_aa_Sub3).anIntArray5201;
-            int[] is_870_ = ((aa_Sub3) var_aa_Sub3).anIntArray5202;
-            int[] is_871_ = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+            int[] is = var_aa_Sub3.anIntArray5201;
+            int[] is_870_ = var_aa_Sub3.anIntArray5202;
+            int[] is_871_ = (this.aHa_Sub1_8460
                     .anIntArray7483);
             int i_872_ = i_857_;
             if (i_859_ > i_872_) {
                 i_872_ = i_859_;
                 i_866_ += (i_859_ - i_857_) * i_861_;
-                i_860_ += (i_859_ - i_857_) * ((Class105_Sub3) this).anInt8471;
+                i_860_ += (i_859_ - i_857_) * this.anInt8471;
             }
             int i_873_ = (i_859_ + is.length < i_857_ + i_863_
                     ? i_859_ + is.length : i_857_ + i_863_);
@@ -3893,7 +3893,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     i_880_ = i_877_ - i_876_;
                 for (int i_881_ = -i_876_; i_881_ < 0; i_881_++) {
                     int i_882_
-                            = ((Class105_Sub3_Sub1) this).anIntArray9933[i_860_++];
+                            = this.anIntArray9933[i_860_++];
                     if (i_882_ != 0)
                         is_871_[i_866_++] = i_882_;
                     else
@@ -3907,73 +3907,73 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
 
     final void method964(int i, int i_883_, int i_884_, int i_885_,
                          int i_886_) {
-        if (((Class105_Sub3) this).aHa_Sub1_8460.method3716())
+        if (this.aHa_Sub1_8460.method3716())
             throw new IllegalStateException();
         int i_887_
-                = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7477;
-        i += ((Class105_Sub3) this).anInt8461;
-        i_883_ += ((Class105_Sub3) this).anInt8464;
+                = this.aHa_Sub1_8460.anInt7477;
+        i += this.anInt8461;
+        i_883_ += this.anInt8464;
         int i_888_ = i_883_ * i_887_ + i;
         int i_889_ = 0;
-        int i_890_ = ((Class105_Sub3) this).anInt8470;
-        int i_891_ = ((Class105_Sub3) this).anInt8471;
+        int i_890_ = this.anInt8470;
+        int i_891_ = this.anInt8471;
         int i_892_ = i_887_ - i_891_;
         int i_893_ = 0;
         if (i_883_
-                < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476) {
+                < this.aHa_Sub1_8460.anInt7476) {
             int i_894_
-                    = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476
+                    = (this.aHa_Sub1_8460.anInt7476
                     - i_883_);
             i_890_ -= i_894_;
             i_883_
-                    = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476;
+                    = this.aHa_Sub1_8460.anInt7476;
             i_889_ += i_894_ * i_891_;
             i_888_ += i_894_ * i_887_;
         }
         if (i_883_ + i_890_
-                > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7503)
-            i_890_ -= i_883_ + i_890_ - ((ha_Sub1) (((Class105_Sub3) this)
-                    .aHa_Sub1_8460)).anInt7503;
-        if (i < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496) {
+                > this.aHa_Sub1_8460.anInt7503)
+            i_890_ -= i_883_ + i_890_ - this
+                    .aHa_Sub1_8460.anInt7503;
+        if (i < this.aHa_Sub1_8460.anInt7496) {
             int i_895_
-                    = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496
+                    = (this.aHa_Sub1_8460.anInt7496
                     - i);
             i_891_ -= i_895_;
-            i = ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496;
+            i = this.aHa_Sub1_8460.anInt7496;
             i_889_ += i_895_;
             i_888_ += i_895_;
             i_893_ += i_895_;
             i_892_ += i_895_;
         }
         if (i + i_891_
-                > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7507) {
+                > this.aHa_Sub1_8460.anInt7507) {
             int i_896_ = (i + i_891_
-                    - (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                    - (this.aHa_Sub1_8460
                     .anInt7507));
             i_891_ -= i_896_;
             i_893_ += i_896_;
             i_892_ += i_896_;
         }
         if (i_891_ > 0 && i_890_ > 0) {
-            int[] is = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+            int[] is = (this.aHa_Sub1_8460
                     .anIntArray7483);
             if (i_886_ == 0) {
                 if (i_884_ == 1) {
                     for (int i_897_ = -i_890_; i_897_ < 0; i_897_++) {
                         int i_898_ = i_888_ + i_891_ - 3;
                         while (i_888_ < i_898_) {
-                            is[i_888_++] = (((Class105_Sub3_Sub1) this)
+                            is[i_888_++] = (this
                                     .anIntArray9933[i_889_++]);
-                            is[i_888_++] = (((Class105_Sub3_Sub1) this)
+                            is[i_888_++] = (this
                                     .anIntArray9933[i_889_++]);
-                            is[i_888_++] = (((Class105_Sub3_Sub1) this)
+                            is[i_888_++] = (this
                                     .anIntArray9933[i_889_++]);
-                            is[i_888_++] = (((Class105_Sub3_Sub1) this)
+                            is[i_888_++] = (this
                                     .anIntArray9933[i_889_++]);
                         }
                         i_898_ += 3;
                         while (i_888_ < i_898_)
-                            is[i_888_++] = (((Class105_Sub3_Sub1) this)
+                            is[i_888_++] = (this
                                     .anIntArray9933[i_889_++]);
                         i_888_ += i_892_;
                         i_889_ += i_893_;
@@ -3986,7 +3986,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_901_ = i_885_ & 0xff;
                     for (int i_902_ = -i_890_; i_902_ < 0; i_902_++) {
                         for (int i_903_ = -i_891_; i_903_ < 0; i_903_++) {
-                            int i_904_ = (((Class105_Sub3_Sub1) this)
+                            int i_904_ = (this
                                     .anIntArray9933[i_889_++]);
                             int i_905_
                                     = (i_904_ & 0xff0000) * i_899_ & ~0xffffff;
@@ -4002,7 +4002,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 if (i_884_ == 3) {
                     for (int i_908_ = -i_890_; i_908_ < 0; i_908_++) {
                         for (int i_909_ = -i_891_; i_909_ < 0; i_909_++) {
-                            int i_910_ = (((Class105_Sub3_Sub1) this)
+                            int i_910_ = (this
                                     .anIntArray9933[i_889_++]);
                             int i_911_ = i_910_ + i_885_;
                             int i_912_
@@ -4025,7 +4025,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     i_885_ = (i_916_ | i_917_) >>> 8;
                     for (int i_918_ = -i_890_; i_918_ < 0; i_918_++) {
                         for (int i_919_ = -i_891_; i_919_ < 0; i_919_++) {
-                            int i_920_ = (((Class105_Sub3_Sub1) this)
+                            int i_920_ = (this
                                     .anIntArray9933[i_889_++]);
                             i_916_ = (i_920_ & 0xff00ff) * i_914_ & ~0xff00ff;
                             i_917_ = (i_920_ & 0xff00) * i_914_ & 0xff0000;
@@ -4043,25 +4043,25 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     for (int i_921_ = -i_890_; i_921_ < 0; i_921_++) {
                         int i_922_ = i_888_ + i_891_ - 3;
                         while (i_888_ < i_922_) {
-                            int i_923_ = (((Class105_Sub3_Sub1) this)
+                            int i_923_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_923_ != 0)
                                 is[i_888_++] = i_923_;
                             else
                                 i_888_++;
-                            i_923_ = (((Class105_Sub3_Sub1) this)
+                            i_923_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_923_ != 0)
                                 is[i_888_++] = i_923_;
                             else
                                 i_888_++;
-                            i_923_ = (((Class105_Sub3_Sub1) this)
+                            i_923_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_923_ != 0)
                                 is[i_888_++] = i_923_;
                             else
                                 i_888_++;
-                            i_923_ = (((Class105_Sub3_Sub1) this)
+                            i_923_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_923_ != 0)
                                 is[i_888_++] = i_923_;
@@ -4070,7 +4070,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         }
                         i_922_ += 3;
                         while (i_888_ < i_922_) {
-                            int i_924_ = (((Class105_Sub3_Sub1) this)
+                            int i_924_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_924_ != 0)
                                 is[i_888_++] = i_924_;
@@ -4088,7 +4088,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_926_ = 256 - i_925_;
                         for (int i_927_ = -i_890_; i_927_ < 0; i_927_++) {
                             for (int i_928_ = -i_891_; i_928_ < 0; i_928_++) {
-                                int i_929_ = (((Class105_Sub3_Sub1) this)
+                                int i_929_ = (this
                                         .anIntArray9933[i_889_++]);
                                 if (i_929_ != 0) {
                                     int i_930_ = is[i_888_];
@@ -4113,7 +4113,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_935_ = 256 - i_934_;
                         for (int i_936_ = -i_890_; i_936_ < 0; i_936_++) {
                             for (int i_937_ = -i_891_; i_937_ < 0; i_937_++) {
-                                int i_938_ = (((Class105_Sub3_Sub1) this)
+                                int i_938_ = (this
                                         .anIntArray9933[i_889_++]);
                                 if (i_938_ != 0) {
                                     if (i_934_ != 255) {
@@ -4164,7 +4164,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_947_ = 256 - i_946_;
                     for (int i_948_ = -i_890_; i_948_ < 0; i_948_++) {
                         for (int i_949_ = -i_891_; i_949_ < 0; i_949_++) {
-                            int i_950_ = (((Class105_Sub3_Sub1) this)
+                            int i_950_ = (this
                                     .anIntArray9933[i_889_++]);
                             int i_951_ = i_950_ + i_885_;
                             int i_952_
@@ -4197,7 +4197,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     i_885_ = (i_956_ | i_957_) >>> 8;
                     for (int i_958_ = -i_890_; i_958_ < 0; i_958_++) {
                         for (int i_959_ = -i_891_; i_959_ < 0; i_959_++) {
-                            int i_960_ = (((Class105_Sub3_Sub1) this)
+                            int i_960_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_960_ != 0) {
                                 i_956_
@@ -4219,7 +4219,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 if (i_884_ == 1) {
                     for (int i_961_ = -i_890_; i_961_ < 0; i_961_++) {
                         for (int i_962_ = -i_891_; i_962_ < 0; i_962_++) {
-                            int i_963_ = (((Class105_Sub3_Sub1) this)
+                            int i_963_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_963_ != 0) {
                                 int i_964_ = is[i_888_];
@@ -4246,7 +4246,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_969_ = i_885_ & 0xff;
                     for (int i_970_ = -i_890_; i_970_ < 0; i_970_++) {
                         for (int i_971_ = -i_891_; i_971_ < 0; i_971_++) {
-                            int i_972_ = (((Class105_Sub3_Sub1) this)
+                            int i_972_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_972_ != 0) {
                                 int i_973_
@@ -4276,7 +4276,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                 if (i_884_ == 3) {
                     for (int i_979_ = -i_890_; i_979_ < 0; i_979_++) {
                         for (int i_980_ = -i_891_; i_980_ < 0; i_980_++) {
-                            int i_981_ = (((Class105_Sub3_Sub1) this)
+                            int i_981_ = (this
                                     .anIntArray9933[i_889_++]);
                             int i_982_ = i_981_ + i_885_;
                             int i_983_
@@ -4305,7 +4305,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     i_885_ = (i_987_ | i_988_) >>> 8;
                     for (int i_989_ = -i_890_; i_989_ < 0; i_989_++) {
                         for (int i_990_ = -i_891_; i_990_ < 0; i_990_++) {
-                            int i_991_ = (((Class105_Sub3_Sub1) this)
+                            int i_991_ = (this
                                     .anIntArray9933[i_889_++]);
                             if (i_991_ != 0) {
                                 i_987_
@@ -4341,88 +4341,88 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         if (i_997_ > 0 && i_998_ > 0) {
             int i_1003_ = 0;
             int i_1004_ = 0;
-            int i_1005_ = (((Class105_Sub3) this).anInt8461
-                    + ((Class105_Sub3) this).anInt8471
-                    + ((Class105_Sub3) this).anInt8454);
-            int i_1006_ = (((Class105_Sub3) this).anInt8464
-                    + ((Class105_Sub3) this).anInt8470
-                    + ((Class105_Sub3) this).anInt8456);
+            int i_1005_ = (this.anInt8461
+                    + this.anInt8471
+                    + this.anInt8454);
+            int i_1006_ = (this.anInt8464
+                    + this.anInt8470
+                    + this.anInt8456);
             int i_1007_ = (i_1005_ << 16) / i_997_;
             int i_1008_ = (i_1006_ << 16) / i_998_;
-            if (((Class105_Sub3) this).anInt8461 > 0) {
+            if (this.anInt8461 > 0) {
                 int i_1009_
-                        = (((((Class105_Sub3) this).anInt8461 << 16) + i_1007_ - 1)
+                        = (((this.anInt8461 << 16) + i_1007_ - 1)
                         / i_1007_);
                 i += i_1009_;
                 i_1003_
-                        += i_1009_ * i_1007_ - (((Class105_Sub3) this).anInt8461
+                        += i_1009_ * i_1007_ - (this.anInt8461
                         << 16);
             }
-            if (((Class105_Sub3) this).anInt8464 > 0) {
+            if (this.anInt8464 > 0) {
                 int i_1010_
-                        = (((((Class105_Sub3) this).anInt8464 << 16) + i_1008_ - 1)
+                        = (((this.anInt8464 << 16) + i_1008_ - 1)
                         / i_1008_);
                 i_995_ += i_1010_;
                 i_1004_
-                        += i_1010_ * i_1008_ - (((Class105_Sub3) this).anInt8464
+                        += i_1010_ * i_1008_ - (this.anInt8464
                         << 16);
             }
-            if (((Class105_Sub3) this).anInt8471 < i_1005_)
-                i_997_ = ((((Class105_Sub3) this).anInt8471 << 16) - i_1003_
+            if (this.anInt8471 < i_1005_)
+                i_997_ = ((this.anInt8471 << 16) - i_1003_
                         + i_1007_ - 1) / i_1007_;
-            if (((Class105_Sub3) this).anInt8470 < i_1006_)
-                i_998_ = ((((Class105_Sub3) this).anInt8470 << 16) - i_1004_
+            if (this.anInt8470 < i_1006_)
+                i_998_ = ((this.anInt8470 << 16) - i_1004_
                         + i_1008_ - 1) / i_1008_;
-            int i_1011_ = i + i_995_ * ((ha_Sub1) (((Class105_Sub3) this)
-                    .aHa_Sub1_8460)).anInt7477;
+            int i_1011_ = i + i_995_ * this
+                    .aHa_Sub1_8460.anInt7477;
             int i_1012_
-                    = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7477
+                    = (this.aHa_Sub1_8460.anInt7477
                     - i_997_);
             if (i_995_ + i_998_
-                    > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7503)
+                    > this.aHa_Sub1_8460.anInt7503)
                 i_998_ -= (i_995_ + i_998_
-                        - (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                        - (this.aHa_Sub1_8460
                         .anInt7503));
             if (i_995_
-                    < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7476) {
-                int i_1013_ = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                    < this.aHa_Sub1_8460.anInt7476) {
+                int i_1013_ = (this.aHa_Sub1_8460
                         .anInt7476) - i_995_;
                 i_998_ -= i_1013_;
-                i_1011_ += i_1013_ * ((ha_Sub1) (((Class105_Sub3) this)
-                        .aHa_Sub1_8460)).anInt7477;
+                i_1011_ += i_1013_ * this
+                        .aHa_Sub1_8460.anInt7477;
                 i_1004_ += i_1008_ * i_1013_;
             }
             if (i + i_997_
-                    > ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7507) {
+                    > this.aHa_Sub1_8460.anInt7507) {
                 int i_1014_
                         = (i + i_997_
-                        - (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                        - (this.aHa_Sub1_8460
                         .anInt7507));
                 i_997_ -= i_1014_;
                 i_1012_ += i_1014_;
             }
             if (i
-                    < ((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460).anInt7496) {
-                int i_1015_ = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+                    < this.aHa_Sub1_8460.anInt7496) {
+                int i_1015_ = (this.aHa_Sub1_8460
                         .anInt7496) - i;
                 i_997_ -= i_1015_;
                 i_1011_ += i_1015_;
                 i_1003_ += i_1007_ * i_1015_;
                 i_1012_ += i_1015_;
             }
-            float[] fs = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+            float[] fs = (this.aHa_Sub1_8460
                     .aFloatArray7511);
-            int[] is = (((ha_Sub1) ((Class105_Sub3) this).aHa_Sub1_8460)
+            int[] is = (this.aHa_Sub1_8460
                     .anIntArray7483);
             if (i_1001_ == 0) {
                 if (i_999_ == 1) {
                     int i_1016_ = i_1003_;
                     for (int i_1017_ = -i_998_; i_1017_ < 0; i_1017_++) {
                         int i_1018_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1019_ = -i_997_; i_1019_ < 0; i_1019_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                is[i_1011_] = (((Class105_Sub3_Sub1) this)
+                                is[i_1011_] = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1018_]);
                                 fs[i_1011_] = (float) i_996_;
@@ -4443,10 +4443,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1023_ = i_1003_;
                     for (int i_1024_ = -i_998_; i_1024_ < 0; i_1024_++) {
                         int i_1025_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1026_ = -i_997_; i_1026_ < 0; i_1026_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1027_ = (((Class105_Sub3_Sub1) this)
+                                int i_1027_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1025_]);
                                 int i_1028_ = ((i_1027_ & 0xff0000) * i_1020_
@@ -4472,10 +4472,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1031_ = i_1003_;
                     for (int i_1032_ = -i_998_; i_1032_ < 0; i_1032_++) {
                         int i_1033_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1034_ = -i_997_; i_1034_ < 0; i_1034_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1035_ = (((Class105_Sub3_Sub1) this)
+                                int i_1035_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1033_]);
                                 int i_1036_ = i_1035_ + i_1000_;
@@ -4507,10 +4507,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1043_ = i_1003_;
                     for (int i_1044_ = -i_998_; i_1044_ < 0; i_1044_++) {
                         int i_1045_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1046_ = -i_997_; i_1046_ < 0; i_1046_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1047_ = (((Class105_Sub3_Sub1) this)
+                                int i_1047_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1045_]);
                                 i_1041_ = ((i_1047_ & 0xff00ff) * i_1039_
@@ -4537,10 +4537,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1048_ = i_1003_;
                     for (int i_1049_ = -i_998_; i_1049_ < 0; i_1049_++) {
                         int i_1050_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1051_ = -i_997_; i_1051_ < 0; i_1051_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1052_ = (((Class105_Sub3_Sub1) this)
+                                int i_1052_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1050_]);
                                 if (i_1052_ != 0) {
@@ -4564,12 +4564,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_1055_ = 256 - i_1054_;
                         for (int i_1056_ = -i_998_; i_1056_ < 0; i_1056_++) {
                             int i_1057_ = ((i_1004_ >> 16)
-                                    * ((Class105_Sub3) this).anInt8471);
+                                    * this.anInt8471);
                             for (int i_1058_ = -i_997_; i_1058_ < 0;
                                  i_1058_++) {
                                 if ((float) i_996_ < fs[i_1011_]) {
                                     int i_1059_
-                                            = (((Class105_Sub3_Sub1) this)
+                                            = (this
                                             .anIntArray9933
                                             [(i_1003_ >> 16) + i_1057_]);
                                     if (i_1059_ != 0) {
@@ -4601,12 +4601,12 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                         int i_1065_ = 256 - i_1064_;
                         for (int i_1066_ = -i_998_; i_1066_ < 0; i_1066_++) {
                             int i_1067_ = ((i_1004_ >> 16)
-                                    * ((Class105_Sub3) this).anInt8471);
+                                    * this.anInt8471);
                             for (int i_1068_ = -i_997_; i_1068_ < 0;
                                  i_1068_++) {
                                 if ((float) i_996_ < fs[i_1011_]) {
                                     int i_1069_
-                                            = (((Class105_Sub3_Sub1) this)
+                                            = (this
                                             .anIntArray9933
                                             [(i_1003_ >> 16) + i_1067_]);
                                     if (i_1069_ != 0) {
@@ -4670,10 +4670,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1079_ = 256 - i_1078_;
                     for (int i_1080_ = -i_998_; i_1080_ < 0; i_1080_++) {
                         int i_1081_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1082_ = -i_997_; i_1082_ < 0; i_1082_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1083_ = (((Class105_Sub3_Sub1) this)
+                                int i_1083_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1081_]);
                                 int i_1084_ = i_1083_ + i_1000_;
@@ -4717,10 +4717,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1091_ = i_1003_;
                     for (int i_1092_ = -i_998_; i_1092_ < 0; i_1092_++) {
                         int i_1093_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1094_ = -i_997_; i_1094_ < 0; i_1094_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1095_ = (((Class105_Sub3_Sub1) this)
+                                int i_1095_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1093_]);
                                 if (i_1095_ != 0) {
@@ -4749,10 +4749,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1096_ = i_1003_;
                     for (int i_1097_ = -i_998_; i_1097_ < 0; i_1097_++) {
                         int i_1098_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1099_ = -i_997_; i_1099_ < 0; i_1099_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1100_ = (((Class105_Sub3_Sub1) this)
+                                int i_1100_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1098_]);
                                 if (i_1100_ != 0) {
@@ -4785,10 +4785,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1107_ = i_1000_ & 0xff;
                     for (int i_1108_ = -i_998_; i_1108_ < 0; i_1108_++) {
                         int i_1109_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1110_ = -i_997_; i_1110_ < 0; i_1110_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1111_ = (((Class105_Sub3_Sub1) this)
+                                int i_1111_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1109_]);
                                 if (i_1111_ != 0) {
@@ -4827,10 +4827,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1118_ = i_1003_;
                     for (int i_1119_ = -i_998_; i_1119_ < 0; i_1119_++) {
                         int i_1120_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1121_ = -i_997_; i_1121_ < 0; i_1121_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1122_ = (((Class105_Sub3_Sub1) this)
+                                int i_1122_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1120_]);
                                 int i_1123_ = i_1122_ + i_1000_;
@@ -4871,10 +4871,10 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
                     int i_1130_ = i_1003_;
                     for (int i_1131_ = -i_998_; i_1131_ < 0; i_1131_++) {
                         int i_1132_ = ((i_1004_ >> 16)
-                                * ((Class105_Sub3) this).anInt8471);
+                                * this.anInt8471);
                         for (int i_1133_ = -i_997_; i_1133_ < 0; i_1133_++) {
                             if ((float) i_996_ < fs[i_1011_]) {
-                                int i_1134_ = (((Class105_Sub3_Sub1) this)
+                                int i_1134_ = (this
                                         .anIntArray9933
                                         [(i_1003_ >> 16) + i_1132_]);
                                 if (i_1134_ != 0) {

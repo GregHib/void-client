@@ -74,7 +74,7 @@ abstract class ha {
     final void method3635(byte i) {
         int i_15_ = -90 % ((i - 8) / 33);
         anInt4573++;
-        Class348_Sub40_Sub26.aBooleanArray9351[((ha) this).anInt4567] = false;
+        Class348_Sub40_Sub26.aBooleanArray9351[this.anInt4567] = false;
         method3652();
     }
 
@@ -177,7 +177,7 @@ abstract class ha {
         method3707(rectangles, i, 0, 0);
         anInt4568++;
         if (i_74_ <= 41)
-            ((ha) this).anInt4567 = 54;
+            this.anInt4567 = 54;
     }
 
     abstract void f(int i, int i_75_);
@@ -214,11 +214,11 @@ abstract class ha {
             anInt4583 = 60;
         Class348_Sub42_Sub3 class348_sub42_sub3
                 = ((Class348_Sub42_Sub3)
-                Class348_Sub1_Sub2.aClass308_8815.method2302((long) i,
+                Class348_Sub1_Sub2.aClass308_8815.method2302(i,
                         (byte) -120));
         if (class348_sub42_sub3 == null) {
             byte[] is = new byte[512];
-            Random random = new Random((long) i);
+            Random random = new Random(i);
             for (int i_89_ = 0; (i_89_ ^ 0xffffffff) > -256; i_89_++)
                 is[i_89_] = (byte) i_89_;
             for (int i_90_ = 0; (i_90_ ^ 0xffffffff) > -256; i_90_++) {
@@ -230,9 +230,9 @@ abstract class ha {
             }
             class348_sub42_sub3 = new Class348_Sub42_Sub3(is);
             Class348_Sub1_Sub2.aClass308_8815
-                    .method2305((long) i, class348_sub42_sub3, -1);
+                    .method2305(i, class348_sub42_sub3, -1);
         }
-        return ((Class348_Sub42_Sub3) class348_sub42_sub3).aByteArray9499;
+        return class348_sub42_sub3.aByteArray9499;
     }
 
     abstract Interface3 method3665(int i, int i_94_);
@@ -443,7 +443,7 @@ abstract class ha {
                                  int i_214_, boolean bool);
 
     ha(d var_d) {
-        ((ha) this).aD4579 = var_d;
+        this.aD4579 = var_d;
         int i = -1;
         for (int i_215_ = 0; i_215_ < 8; i_215_++) {
             if (!Class348_Sub40_Sub26.aBooleanArray9351[i_215_]) {
@@ -454,7 +454,7 @@ abstract class ha {
         }
         if (i == -1)
             throw new IllegalStateException("NFTI");
-        ((ha) this).anInt4567 = i;
+        this.anInt4567 = i;
     }
 
     static {

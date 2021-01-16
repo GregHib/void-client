@@ -24,9 +24,9 @@ final class Class70 {
             Class51.aClass311_897 = new Class311();
             Class51.aClass311_897.method2316
                     (Class348_Sub42_Sub15.aClass56_9660,
-                            ((Class56) Class348_Sub42_Sub15.aClass56_9660)
+                            Class348_Sub42_Sub15.aClass56_9660
                                     .aClass274_1012.method2063(Class348_Sub33.anInt6967, 544),
-                            ((Class56) Class348_Sub42_Sub15.aClass56_9660).anInt1025,
+                            Class348_Sub42_Sub15.aClass56_9660.anInt1025,
                             Class283.aLong3660, false);
             Class348_Sub32.aThread6946 = new Thread(Class51.aClass311_897, "");
             Class348_Sub32.aThread6946.start();
@@ -38,8 +38,8 @@ final class Class70 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, 9);
         class348_sub42_sub15.method3246(i + -25427);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i_1_;
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9651 = i_0_;
+        class348_sub42_sub15.anInt9652 = i_1_;
+        class348_sub42_sub15.anInt9651 = i_0_;
         if (i != -63)
             anIntArray1207 = null;
     }

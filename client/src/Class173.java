@@ -27,7 +27,7 @@ final class Class173 {
         class348_sub42_sub15.method3246(-25490);
         if (i_0_ != -19906)
             method1329(71);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i;
+        class348_sub42_sub15.anInt9652 = i;
     }
 
     static final byte[] method1331(byte i, Object object, int i_2_, int i_3_) {

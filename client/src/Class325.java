@@ -8,8 +8,8 @@ final class Class325 {
     static int anInt4068;
     int anInt4069;
     int anInt4070;
-    private Class68 aClass68_4071;
-    private int anInt4072;
+    private final Class68 aClass68_4071;
+    private final int anInt4072;
     static Class325 aClass325_4073 = new Class325(0, 3, Class68.aClass68_1187);
     static int anInt4074;
     static Class325 aClass325_4075 = new Class325(1, 3, Class68.aClass68_1187);
@@ -450,20 +450,20 @@ final class Class325 {
                 anInt4067++;
                 if (class348_sub42_sub12 != null
                         && (class348_sub42_sub12
-                        != (((Class262) Class348_Sub40_Sub4.aClass262_9111)
+                        != (Class348_Sub40_Sub4.aClass262_9111
                         .aClass348_3334))) {
-                    int i_74_ = (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    int i_74_ = (class348_sub42_sub12
                             .anInt9602);
-                    int i_75_ = (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    int i_75_ = (class348_sub42_sub12
                             .anInt9607);
-                    int i_76_ = (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    int i_76_ = (class348_sub42_sub12
                             .anInt9608);
                     int i_77_
-                            = (int) (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                            = (int) (class348_sub42_sub12
                             .aLong9605);
                     if (i_76_ >= 2000)
                         i_76_ -= 2000;
-                    long l = (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    long l = (class348_sub42_sub12
                             .aLong9605);
                     if (i_76_ == 19) {
                         if (Class192.anInt2581 <= 0
@@ -474,42 +474,40 @@ final class Class325 {
                                     (byte) -110,
                                     i_77_);
                             if (i_77_ == 1) {
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, -1);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, -1);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3337
                                         ((byte) 107, (int) Class314.aFloat3938);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, 57);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, r_Sub2.anInt10483);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3378
                                         (false, Class348_Sub49_Sub1.anInt9750);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, 89);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3337
                                         ((byte) 107,
-                                                (((Class318_Sub1)
-                                                        (Class132
-                                                                .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                (Class132
+														.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                         .anInt6377));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3337
                                         ((byte) 107,
-                                                (((Class318_Sub1)
-                                                        (Class132
-                                                                .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                (Class132
+														.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                         .anInt6388));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, 63);
                             } else {
@@ -525,8 +523,7 @@ final class Class325 {
                         } else
                             Class361.method3502
                                     (i_75_ + Class90.anInt1517, 2,
-                                            (((Class318_Sub1)
-                                                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                            (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .aByte6381),
                                             i_74_ + za_Sub2.anInt9780);
                     }
@@ -542,18 +539,18 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -113);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3349(4325, Class90.anInt1517 + i_75_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(120, i_74_ + za_Sub2.anInt9780);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3370
                                 ((byte) 117,
                                         (!Class182.aClass346_2449.method2696(82, -122) ? 0
                                                 : 1));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3349
                                 (4325, 0x7fffffff & (int) (l >>> 379211744));
                         Class348_Sub42_Sub14.method3243(117, class348_sub47);
@@ -566,16 +563,15 @@ final class Class325 {
                         Class348.anInt4292 = 0;
                         Class348_Sub22 class348_sub22
                                 = ((Class348_Sub22)
-                                Class282.aClass356_3654.method3480((long) i_77_,
+                                Class282.aClass356_3654.method3480(i_77_,
                                         -6008));
                         if (class348_sub22 != null) {
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                    = (((Class348_Sub22) class348_sub22)
+                                    = (class348_sub22
                                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                            Class79 class79 = (((Class318_Sub1_Sub3_Sub3_Sub1)
-                                    class318_sub1_sub3_sub3_sub1)
+                            Class79 class79 = (class318_sub1_sub3_sub3_sub1
                                     .aClass79_10505);
-                            if (((Class79) class79).anIntArray1377 != null)
+                            if (class79.anIntArray1377 != null)
                                 class79 = (class79.method794
                                         ((Class318_Sub1_Sub3_Sub3
                                                         .aClass170_10209),
@@ -587,10 +583,10 @@ final class Class325 {
                                         (Class318_Sub7.aClass351_6443,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 -111));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3337
                                         ((byte) 107,
-                                                ((Class79) class79).anInt1344);
+                                                class79.anInt1344);
                                 Class348_Sub42_Sub14
                                         .method3243(-99, class348_sub47);
                             }
@@ -610,10 +606,10 @@ final class Class325 {
                                     = (Class286_Sub3.method2148
                                     (Class348_Sub42_Sub18.aClass351_9684,
                                             Class348_Sub23_Sub2.aClass77_9029, -126));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3335(81, i_77_);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3378
                                     (false,
                                             (!Class182.aClass346_2449.method2696(82, -126)
@@ -621,11 +617,9 @@ final class Class325 {
                             Class348_Sub42_Sub14.method3243(116,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -89,
                                     class318_sub1_sub3_sub3_sub2
@@ -647,26 +641,26 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -107);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(i_74_ + za_Sub2.anInt9780, (byte) 3);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3335(-107, i_77_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(Class9.anInt169, (byte) 3);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, Class90.anInt1517 + i_75_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3378
                                 (false,
                                         (!Class182.aClass346_2449.method2696(82, -126) ? 0
                                                 : 1));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(90, Class301.anInt3829);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3336(Class149.anInt2046, (byte) 44);
                         Class348_Sub42_Sub14.method3243(120, class348_sub47);
@@ -690,18 +684,18 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -110);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, Class90.anInt1517 + i_75_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(-110, i_74_ + za_Sub2.anInt9780);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3374
                                 ((byte) -44,
                                         (!Class182.aClass346_2449.method2696(82, -122) ? 0
                                                 : 1));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3335(97, i_77_);
                         Class348_Sub42_Sub14.method3243(118, class348_sub47);
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
@@ -709,7 +703,7 @@ final class Class325 {
                     if ((i_76_ ^ 0xffffffff) == -47) {
                         Class348_Sub22 class348_sub22
                                 = ((Class348_Sub22)
-                                Class282.aClass356_3654.method3480((long) i_77_,
+                                Class282.aClass356_3654.method3480(i_77_,
                                         -6008));
                         if (class348_sub22 != null) {
                             Class348.anInt4292 = 0;
@@ -718,16 +712,16 @@ final class Class325 {
                             Class239_Sub20.anInt6048 = 2;
                             Class93.anInt1534 = i_72_;
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                    = (((Class348_Sub22) class348_sub22)
+                                    = (class348_sub22
                                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                             Class348_Sub47 class348_sub47
                                     = (Class286_Sub3.method2148
                                     (Class318_Sub1_Sub5_Sub1.aClass351_10134,
                                             Class348_Sub23_Sub2.aClass77_9029, -96));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3353(i_77_, (byte) 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3395
                                     ((byte) 124,
                                             (Class182.aClass346_2449.method2696(82, -121)
@@ -735,11 +729,9 @@ final class Class325 {
                             Class348_Sub42_Sub14.method3243(117,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10317[0]),
                                     (byte) -100,
                                     class318_sub1_sub3_sub3_sub1
@@ -766,10 +758,10 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -94);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3349(4325, i_77_);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3374
                                     ((byte) -108,
                                             (Class182.aClass346_2449.method2696(82, -124)
@@ -777,11 +769,9 @@ final class Class325 {
                             Class348_Sub42_Sub14.method3243(119,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -128,
                                     class318_sub1_sub3_sub3_sub2
@@ -804,18 +794,18 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -83);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3395
                                 ((byte) 86,
                                         (!Class182.aClass346_2449.method2696(82, -121) ? 0
                                                 : 1));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3335
                                 (31, (int) (l >>> 1628456736) & 0x7fffffff);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(-104, za_Sub2.anInt9780 + i_74_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(Class90.anInt1517 + i_75_, (byte) 3);
                         Class348_Sub42_Sub14.method3243(119, class348_sub47);
@@ -824,14 +814,14 @@ final class Class325 {
                     if ((i_76_ ^ 0xffffffff) == -31) {
                         Class348_Sub22 class348_sub22
                                 = ((Class348_Sub22)
-                                Class282.aClass356_3654.method3480((long) i_77_,
+                                Class282.aClass356_3654.method3480(i_77_,
                                         -6008));
                         if (class348_sub22 != null) {
                             Class348.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                    = (((Class348_Sub22) class348_sub22)
+                                    = (class348_sub22
                                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                             Class239_Sub20.anInt6048 = 2;
                             Class348_Sub7.anInt6646++;
@@ -841,31 +831,29 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -119);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3349(4325, Class9.anInt169);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3391((byte) 108, Class149.anInt2046);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3353(i_77_, (byte) 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3395
                                     ((byte) -89,
                                             (!Class182.aClass346_2449.method2696(82, -127)
                                                     ? 0 : 1));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3335(-116, Class301.anInt3829);
                             Class348_Sub42_Sub14.method3243(122,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10317[0]),
                                     (byte) -107,
                                     class318_sub1_sub3_sub3_sub1
@@ -882,8 +870,7 @@ final class Class325 {
                                 && Class182.aClass346_2449.method2696(81, -126))
                             Class361.method3502
                                     (i_75_ + Class90.anInt1517, 2,
-                                            (((Class318_Sub1)
-                                                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                            (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .aByte6381),
                                             za_Sub2.anInt9780 - -i_74_);
                         else {
@@ -898,10 +885,10 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -123);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3335(101, za_Sub2.anInt9780 + i_74_);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3337
                                     ((byte) 107, Class90.anInt1517 - -i_75_);
                             Class348_Sub42_Sub14.method3243(6, class348_sub47);
@@ -918,7 +905,7 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -115);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, i_77_);
                         Class348_Sub42_Sub14.method3243(-60, class348_sub47);
@@ -939,19 +926,19 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -93);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3349(4325, Class9.anInt169);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3353(i_77_, (byte) 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3353(Class301.anInt3829, (byte) 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3356(Class149.anInt2046, -4086);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3374
                                     ((byte) -89,
                                             (Class182.aClass346_2449.method2696(82, -127)
@@ -959,11 +946,9 @@ final class Class325 {
                             Class348_Sub42_Sub14.method3243(-33,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -88,
                                     class318_sub1_sub3_sub3_sub2
@@ -990,22 +975,20 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -84);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3370
                                     ((byte) -125,
                                             (Class182.aClass346_2449.method2696(82, -126)
                                                     ? 1 : 0));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3353(i_77_, (byte) 3);
                             Class348_Sub42_Sub14.method3243(30,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -91,
                                     class318_sub1_sub3_sub3_sub2
@@ -1027,18 +1010,18 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -112);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(Class90.anInt1517 + i_75_, (byte) 3);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3395
                                 ((byte) -96,
                                         (Class182.aClass346_2449.method2696(82, -125) ? 1
                                                 : 0));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3349(4325, za_Sub2.anInt9780 + i_74_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3335
                                 (68, 0x7fffffff & (int) (l >>> 1667663904));
                         Class348_Sub42_Sub14.method3243(-68, class348_sub47);
@@ -1060,10 +1043,10 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -113);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3337((byte) 107, i_77_);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3395
                                     ((byte) 60,
                                             (!Class182.aClass346_2449.method2696(82, -121)
@@ -1071,11 +1054,9 @@ final class Class325 {
                             Class348_Sub42_Sub14.method3243(118,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -106,
                                     class318_sub1_sub3_sub3_sub2
@@ -1110,22 +1091,20 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -84);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3378
                                     (false,
                                             (!Class182.aClass346_2449.method2696(82, -128)
                                                     ? 0 : 1));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3335(-99, i_77_);
                             Class348_Sub42_Sub14.method3243(127,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -106,
                                     class318_sub1_sub3_sub3_sub2
@@ -1147,16 +1126,16 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -107);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, i_77_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, za_Sub2.anInt9780 + i_74_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, i_75_ + Class90.anInt1517);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3370
                                 ((byte) 120,
                                         (!Class182.aClass346_2449.method2696(82, -123) ? 0
@@ -1175,19 +1154,19 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -127);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(za_Sub2.anInt9780 - -i_74_, (byte) 3);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(-85, Class301.anInt3829);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(Class9.anInt169, (byte) 3);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3391((byte) 127, Class149.anInt2046);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(-84, Class90.anInt1517 + i_75_);
                         Class348_Sub42_Sub14.method3243(-62, class348_sub47);
@@ -1197,7 +1176,7 @@ final class Class325 {
                     if ((i_76_ ^ 0xffffffff) == -61) {
                         Class348_Sub22 class348_sub22
                                 = ((Class348_Sub22)
-                                Class282.aClass356_3654.method3480((long) i_77_,
+                                Class282.aClass356_3654.method3480(i_77_,
                                         -6008));
                         if (class348_sub22 != null) {
                             Class290.anInt3707++;
@@ -1205,17 +1184,17 @@ final class Class325 {
                             Class26.anInt385 = i_73_;
                             Class93.anInt1534 = i_72_;
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                    = (((Class348_Sub22) class348_sub22)
+                                    = (class348_sub22
                                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                             Class239_Sub20.anInt6048 = 2;
                             Class348_Sub47 class348_sub47
                                     = (Class286_Sub3.method2148
                                     (RuntimeException_Sub1.aClass351_4601,
                                             Class348_Sub23_Sub2.aClass77_9029, -123));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3337((byte) 107, i_77_);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3374
                                     ((byte) -67,
                                             (Class182.aClass346_2449.method2696(82, -122)
@@ -1223,11 +1202,9 @@ final class Class325 {
                             Class348_Sub42_Sub14.method3243(119,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10317[0]),
                                     (byte) -111,
                                     class318_sub1_sub3_sub3_sub1
@@ -1250,27 +1227,27 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -105);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, Class301.anInt3829);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3349(4325, za_Sub2.anInt9780 + i_74_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3348(-128, Class149.anInt2046);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(-82, Class90.anInt1517 + i_75_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3370
                                 ((byte) -74,
                                         (!Class182.aClass346_2449.method2696(82, -125) ? 0
                                                 : 1));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(Class9.anInt169, (byte) 3);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3353
                                 ((int) (l >>> -784932000) & 0x7fffffff, (byte) 3);
                         Class348_Sub42_Sub14.method3243(117, class348_sub47);
@@ -1292,22 +1269,20 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -90);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3378
                                     (false,
                                             (!Class182.aClass346_2449.method2696(82, -121)
                                                     ? 0 : 1));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3335(52, i_77_);
                             Class348_Sub42_Sub14.method3243(-127,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -93,
                                     class318_sub1_sub3_sub3_sub2
@@ -1334,22 +1309,20 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -113);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3378
                                     (false,
                                             (!Class182.aClass346_2449.method2696(82, -126)
                                                     ? 0 : 1));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3337((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(121,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2)
+                                    (class318_sub1_sub3_sub3_sub2
                                             .anIntArray10317[0]),
                                     (byte) -123,
                                     class318_sub1_sub3_sub3_sub2
@@ -1372,18 +1345,18 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -81);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3337((byte) 107, i_77_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3335(106, i_74_ - -za_Sub2.anInt9780);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3378
                                 (false,
                                         (!Class182.aClass346_2449.method2696(82, -128) ? 0
                                                 : 1));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3349(4325, i_75_ - -Class90.anInt1517);
                         Class348_Sub42_Sub14.method3243(116, class348_sub47);
@@ -1401,18 +1374,18 @@ final class Class325 {
                                 (Class348_Sub23_Sub2
                                         .aClass77_9029),
                                 -98);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3370
                                 ((byte) -83,
                                         (!Class182.aClass346_2449.method2696(82, -128) ? 0
                                                 : 1));
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3349(4325, za_Sub2.anInt9780 + i_74_);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116
                                 .method3353(i_75_ + Class90.anInt1517, (byte) 3);
-                        ((Class348_Sub47) class348_sub47)
+                        class348_sub47
                                 .aClass348_Sub49_Sub2_7116.method3337
                                 ((byte) 107,
                                         0x7fffffff & (int) (l >>> -863296736));
@@ -1422,14 +1395,14 @@ final class Class325 {
                     if (i_76_ == 20) {
                         Class348_Sub22 class348_sub22
                                 = ((Class348_Sub22)
-                                Class282.aClass356_3654.method3480((long) i_77_,
+                                Class282.aClass356_3654.method3480(i_77_,
                                         -6008));
                         if (class348_sub22 != null) {
                             Class239_Sub20.anInt6048 = 2;
                             Class26.anInt385 = i_73_;
                             Class93.anInt1534 = i_72_;
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                    = (((Class348_Sub22) class348_sub22)
+                                    = (class348_sub22
                                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                             Class348.anInt4292 = 0;
                             Class328_Sub2.anInt6516++;
@@ -1439,10 +1412,10 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -81);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3349(4325, i_77_);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3395
                                     ((byte) -119,
                                             (!Class182.aClass346_2449.method2696(82, -123)
@@ -1450,11 +1423,9 @@ final class Class325 {
                             Class348_Sub42_Sub14.method3243(-85,
                                     class348_sub47);
                             Class298.method2252(true,
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10320[0]),
-                                    (((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub1)
+                                    (class318_sub1_sub3_sub3_sub1
                                             .anIntArray10317[0]),
                                     (byte) -121,
                                     class318_sub1_sub3_sub3_sub1
@@ -1478,7 +1449,7 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -96);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3337((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(125,
@@ -1496,18 +1467,18 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -117);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3370
                                     ((byte) -101,
                                             (!Class182.aClass346_2449.method2696(82, -125)
                                                     ? 0 : 1));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3335(-69, za_Sub2.anInt9780 + i_74_);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3353
                                     (Class90.anInt1517 + i_75_, (byte) 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3337((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(116,
@@ -1526,22 +1497,21 @@ final class Class325 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     -127);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3349(4325, Class9.anInt169);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3353
-                                    ((((Class318_Sub1_Sub3_Sub3)
-                                                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .anInt10290),
                                             (byte) 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3353(Class301.anInt3829, (byte) 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3356(Class149.anInt2046, -4086);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3374
                                     ((byte) -29,
                                             (Class182.aClass346_2449.method2696(82, -121)
@@ -1551,8 +1521,7 @@ final class Class325 {
                         }
                         if ((i_76_ ^ 0xffffffff) == -19 || i_76_ == 1011)
                             Class348_Sub9.method2780(i_74_,
-                                    (((Class348_Sub42_Sub12)
-                                            class348_sub42_sub12)
+                                    (class348_sub42_sub12
                                             .aString9601),
                                     (byte) 5, i_77_, i_75_);
                         if (i_76_ == 13) {
@@ -1563,15 +1532,14 @@ final class Class325 {
                                 Class341.method2678(-2049);
                                 Class348_Sub44 class348_sub44
                                         = client.method105(class46);
-                                Class339.method2666(((Class348_Sub44)
-                                                class348_sub44).anInt7093,
+                                Class339.method2666(class348_sub44.anInt7093,
                                         class348_sub44
                                                 .method3307(14),
                                         class46, (byte) 21);
                                 Class28.aString5001
                                         = Class239_Sub8.method1753(0, class46);
                                 Class28.aString5000
-                                        = (((Class46) class46).aString752
+                                        = (class46.aString752
                                         + "<col=ffffff>");
                                 if (Class28.aString5001 == null)
                                     Class28.aString5001 = "Null";
@@ -1584,13 +1552,13 @@ final class Class325 {
                                 Class348_Sub22 class348_sub22
                                         = ((Class348_Sub22)
                                         Class282.aClass356_3654
-                                                .method3480((long) i_77_, -6008));
+                                                .method3480(i_77_, -6008));
                                 if (class348_sub22 != null) {
                                     Class239_Sub20.anInt6048 = 2;
                                     Class93.anInt1534 = i_72_;
                                     Class299_Sub1_Sub2.anInt8702++;
                                     Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                            = (((Class348_Sub22) class348_sub22)
+                                            = (class348_sub22
                                             .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                                     Class26.anInt385 = i_73_;
                                     Class348.anInt4292 = 0;
@@ -1599,23 +1567,21 @@ final class Class325 {
                                             (Class348_Sub18.aClass351_6814,
                                                     Class348_Sub23_Sub2.aClass77_9029,
                                                     -125));
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116.method3378
                                             (false,
                                                     !Class182.aClass346_2449
                                                             .method2696(82, -125) ? 0 : 1);
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116
                                             .method3353(i_77_, (byte) 3);
                                     Class348_Sub42_Sub14
                                             .method3243(-37, class348_sub47);
                                     Class298.method2252
                                             (true,
-                                                    (((Class318_Sub1_Sub3_Sub3)
-                                                            class318_sub1_sub3_sub3_sub1)
+                                                    (class318_sub1_sub3_sub3_sub1
                                                             .anIntArray10320[0]),
-                                                    (((Class318_Sub1_Sub3_Sub3)
-                                                            class318_sub1_sub3_sub3_sub1)
+                                                    (class318_sub1_sub3_sub3_sub1
                                                             .anIntArray10317[0]),
                                                     (byte) -85,
                                                     class318_sub1_sub3_sub3_sub1
@@ -1642,10 +1608,10 @@ final class Class325 {
                                             (Class348_Sub42_Sub5.aClass351_9533,
                                                     Class348_Sub23_Sub2.aClass77_9029,
                                                     -115));
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116
                                             .method3335(-88, i_77_);
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116.method3395
                                             ((byte) -111,
                                                     Class182.aClass346_2449
@@ -1654,11 +1620,9 @@ final class Class325 {
                                             .method3243(125, class348_sub47);
                                     Class298.method2252
                                             (true,
-                                                    (((Class318_Sub1_Sub3_Sub3)
-                                                            class318_sub1_sub3_sub3_sub2)
+                                                    (class318_sub1_sub3_sub3_sub2
                                                             .anIntArray10320[0]),
-                                                    (((Class318_Sub1_Sub3_Sub3)
-                                                            class318_sub1_sub3_sub3_sub2)
+                                                    (class318_sub1_sub3_sub3_sub2
                                                             .anIntArray10317[0]),
                                                     (byte) -98,
                                                     class318_sub1_sub3_sub3_sub2
@@ -1680,17 +1644,17 @@ final class Class325 {
                                         (Class252.aClass351_3237,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 -125));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3335
                                         (-96, Class90.anInt1517 + i_75_);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3349
                                         (4325,
                                                 0x7fffffff & (int) (l >>> 1397559072));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3353
                                         (i_74_ - -za_Sub2.anInt9780, (byte) 3);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3395
                                         ((byte) -91,
                                                 (!Class182.aClass346_2449.method2696(82,
@@ -1704,10 +1668,10 @@ final class Class325 {
                                 Class348_Sub22 class348_sub22
                                         = ((Class348_Sub22)
                                         Class282.aClass356_3654
-                                                .method3480((long) i_77_, -6008));
+                                                .method3480(i_77_, -6008));
                                 if (class348_sub22 != null) {
                                     Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                            = (((Class348_Sub22) class348_sub22)
+                                            = (class348_sub22
                                             .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                                     Class93.anInt1534 = i_72_;
                                     Class348.anInt4292 = 0;
@@ -1719,10 +1683,10 @@ final class Class325 {
                                             (Class43.aClass351_618,
                                                     Class348_Sub23_Sub2.aClass77_9029,
                                                     -117));
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116
                                             .method3337((byte) 107, i_77_);
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116.method3378
                                             (false,
                                                     Class182.aClass346_2449
@@ -1731,11 +1695,9 @@ final class Class325 {
                                             .method3243(-25, class348_sub47);
                                     Class298.method2252
                                             (true,
-                                                    (((Class318_Sub1_Sub3_Sub3)
-                                                            class318_sub1_sub3_sub3_sub1)
+                                                    (class318_sub1_sub3_sub3_sub1
                                                             .anIntArray10320[0]),
-                                                    (((Class318_Sub1_Sub3_Sub3)
-                                                            class318_sub1_sub3_sub3_sub1)
+                                                    (class318_sub1_sub3_sub3_sub1
                                                             .anIntArray10317[0]),
                                                     (byte) -107,
                                                     class318_sub1_sub3_sub3_sub1
@@ -1757,16 +1719,16 @@ final class Class325 {
                                         (Class188.aClass351_2512,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 -91));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3335
                                         (-108, i_75_ - -Class90.anInt1517);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3335(-70, i_77_);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3353
                                         (za_Sub2.anInt9780 + i_74_, (byte) 3);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3374
                                         ((byte) -70,
                                                 (!Class182.aClass346_2449.method2696(82,
@@ -1803,10 +1765,10 @@ final class Class325 {
         try {
             anInt4072 = i_78_;
             aClass68_4071 = class68;
-            ((Class325) this).anInt4070 = i;
-            ((Class325) this).anInt4069
-                    = ((Class68) aClass68_4071).anInt1178 * anInt4072;
-            if (((Class325) this).anInt4070 >= 16)
+            this.anInt4070 = i;
+            this.anInt4069
+                    = aClass68_4071.anInt1178 * anInt4072;
+            if (this.anInt4070 >= 16)
                 throw new RuntimeException();
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

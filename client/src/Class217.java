@@ -5,7 +5,7 @@
 final class Class217 {
     static int anInt2840;
     static int anInt2841;
-    private Class45 aClass45_2842;
+    private final Class45 aClass45_2842;
     static int anInt2843;
     static Class60 aClass60_2844 = new Class60(64);
     int anInt2845;
@@ -39,7 +39,7 @@ final class Class217 {
         anInt2847++;
         Class159 class159;
         synchronized (aClass60_2848) {
-            class159 = (Class159) aClass60_2848.method583((long) i_1_, -126);
+            class159 = (Class159) aClass60_2848.method583(i_1_, -126);
         }
         if (class159 != null)
             return class159;
@@ -53,7 +53,7 @@ final class Class217 {
         if (is != null)
             class159.method1253(new Class348_Sub49(is), true);
         synchronized (aClass60_2848) {
-            aClass60_2848.method582(class159, (long) i_1_, (byte) -124);
+            aClass60_2848.method582(class159, i_1_, (byte) -124);
         }
         return class159;
     }
@@ -70,7 +70,7 @@ final class Class217 {
     final void method1590(int i) {
         anInt2846++;
         if (i != 0)
-            ((Class217) this).anInt2845 = -97;
+            this.anInt2845 = -97;
         synchronized (aClass60_2848) {
             aClass60_2848.method587(i ^ ~0x6b);
         }
@@ -80,9 +80,9 @@ final class Class217 {
         try {
             aClass45_2842 = class45;
             if (aClass45_2842 != null)
-                ((Class217) this).anInt2845 = aClass45_2842.method407(0, 16);
+                this.anInt2845 = aClass45_2842.method407(0, 16);
             else
-                ((Class217) this).anInt2845 = 0;
+                this.anInt2845 = 0;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("rv.<init>("

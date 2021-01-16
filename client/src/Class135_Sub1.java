@@ -27,7 +27,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
     }
 
     final void method1152(int i) {
-        ((Class135) this).aHa_Sub2_1927.method3750(91, this);
+        this.aHa_Sub2_1927.method3750(91, this);
         if (i >= -78)
             method10(false);
         anInt4710++;
@@ -113,7 +113,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                         && anInt4717 + i_4_ - -Class63.anInt1117 > i_11_
                         && (i_14_ - 13 ^ 0xffffffff) > (i_12_ ^ 0xffffffff)
                         && 4 + i_14_ > i_12_
-                        && (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                        && (class348_sub42_sub12
                         .aBoolean9610))
                     var_ha.aa(i_4_ + anInt4717, -12 + i_14_, Class63.anInt1117,
                             16,
@@ -136,15 +136,12 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                         && i_11_ < Class63.anInt1117 + (i_4_ + anInt4717)
                         && (-13 + i_16_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff)
                         && (i_12_ ^ 0xffffffff) > (i_16_ - -4 ^ 0xffffffff)
-                        && (((((Class348_Sub42_Sub13) class348_sub42_sub13)
+                        && (((class348_sub42_sub13
                         .anInt9615)
                         ^ 0xffffffff) < -2
-                        || ((Class348_Sub42_Sub12) (Class348_Sub42_Sub12)
-                        (((Class348_Sub42)
-                                ((Class107)
-                                        (((Class348_Sub42_Sub13) class348_sub42_sub13)
-                                                .aClass107_9621)).aClass348_Sub42_1647)
-                                .aClass348_Sub42_7063)).aBoolean9610))
+                        || ((Class348_Sub42_Sub12) class348_sub42_sub13
+                                .aClass107_9621.aClass348_Sub42_1647
+                                .aClass348_Sub42_7063).aBoolean9610))
                     var_ha.aa(anInt4717 + i_4_, -12 + i_16_, Class63.anInt1117,
                             16,
                             (255 + -Class348_Sub42_Sub4.anInt9511
@@ -156,22 +153,19 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                 i_15_ = 0;
                 Class299_Sub2_Sub1.method2270(Class348_Sub1_Sub1.anInt8806,
                         Class50_Sub3.anInt5252, var_ha,
-                        (((Class348_Sub42_Sub13)
-                                (Class242
-                                        .aClass348_Sub42_Sub13_3152))
+                        (Class242
+                                .aClass348_Sub42_Sub13_3152
                                 .aString9617),
                         false, Class373.anInt4534,
                         Class177.anInt4669, i_10_);
                 for (Class348_Sub42_Sub12 class348_sub42_sub12
                      = ((Class348_Sub42_Sub12)
-                        ((Class348_Sub42_Sub13)
-                                Class242.aClass348_Sub42_Sub13_3152)
+                        Class242.aClass348_Sub42_Sub13_3152
                                 .aClass107_9621.method1011(-44));
                      class348_sub42_sub12 != null;
                      class348_sub42_sub12
                              = ((Class348_Sub42_Sub12)
-                             ((Class348_Sub42_Sub13)
-                                     Class242.aClass348_Sub42_Sub13_3152)
+                             Class242.aClass348_Sub42_Sub13_3152
                                      .aClass107_9621.method1003((byte) 71))) {
                     int i_17_
                             = i_15_ * 16 + (Class373.anInt4534 + i_10_ - -13);
@@ -180,7 +174,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                             - -Class348_Sub1_Sub1.anInt8806) > i_11_
                             && (i_12_ ^ 0xffffffff) < (-13 + i_17_ ^ 0xffffffff)
                             && i_17_ - -4 > i_12_
-                            && (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                            && (class348_sub42_sub12
                             .aBoolean9610))
                         var_ha.aa(Class50_Sub3.anInt5252, i_17_ - 12,
                                 Class348_Sub1_Sub1.anInt8806, 16,
@@ -232,16 +226,14 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                 int i_21_ = i_10_ + (i_5_ + Class348_Sub42_Sub5.anInt9532 + 13
                         - -(16 * i_20_));
                 i_20_++;
-                if (((Class348_Sub42_Sub13) class348_sub42_sub13).anInt9615
+                if (class348_sub42_sub13.anInt9615
                         == 1)
                     Class318_Sub2.method2494
                             (Class348_Sub42_Sub5.anInt9532 - -i_5_,
                                     ~0xffffff | Class5_Sub2.anInt8363, i_21_, var_ha,
                                     ((Class348_Sub42_Sub12)
-                                            ((Class348_Sub42)
-                                                    (((Class107) ((Class348_Sub42_Sub13)
-                                                            class348_sub42_sub13).aClass107_9621)
-                                                            .aClass348_Sub42_1647)).aClass348_Sub42_7063),
+                                            class348_sub42_sub13.aClass107_9621
+                                                    .aClass348_Sub42_1647.aClass348_Sub42_7063),
                                     Class63.anInt1117, i_12_,
                                     Class348_Sub42_Sub11.anInt9586 | ~0xffffff,
                                     (byte) 125, Class237_Sub1.anInt5819,
@@ -258,14 +250,12 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                 i_20_ = 0;
                 for (Class348_Sub42_Sub12 class348_sub42_sub12
                      = ((Class348_Sub42_Sub12)
-                        ((Class348_Sub42_Sub13)
-                                Class242.aClass348_Sub42_Sub13_3152)
+                        Class242.aClass348_Sub42_Sub13_3152
                                 .aClass107_9621.method1011(-118));
                      class348_sub42_sub12 != null;
                      class348_sub42_sub12
                              = ((Class348_Sub42_Sub12)
-                             ((Class348_Sub42_Sub13)
-                                     Class242.aClass348_Sub42_Sub13_3152)
+                             Class242.aClass348_Sub42_Sub13_3152
                                      .aClass107_9621.method1003((byte) 111))) {
                     int i_22_ = i_20_ * 16 + 13 + (Class373.anInt4534 + i_10_);
                     i_20_++;
@@ -295,7 +285,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
         anInt4714++;
         if (bool != true)
             method12((byte) -54);
-        return ((Class135) this).anInt1929;
+        return this.anInt1929;
     }
 
     public static void method1154(byte i) {

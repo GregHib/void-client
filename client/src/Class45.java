@@ -32,7 +32,7 @@ final class Class45 {
     static int anInt652;
     static int anInt653;
     static int anInt654;
-    private boolean aBoolean655;
+    private final boolean aBoolean655;
     private Object[] anObjectArray656;
     static int anInt657;
     static int anInt658;
@@ -54,7 +54,7 @@ final class Class45 {
         anInt657++;
         if (!method399(false))
             throw new IllegalStateException("");
-        return ((Class291) aClass291_629).anInt3719;
+        return aClass291_629.anInt3719;
     }
 
     public static void method390(byte i) {
@@ -70,13 +70,13 @@ final class Class45 {
                 return null;
             string = string.toLowerCase();
             string_1_ = string_1_.toLowerCase();
-            int i_2_ = ((Class291) aClass291_629).aClass316_3723
+            int i_2_ = aClass291_629.aClass316_3723
                     .method2365(1, Class281.method2108(string, -29286));
             if (!method392(i_2_, (byte) -40))
                 return null;
             if (i != -29832)
                 method392(22, (byte) 12);
-            int i_3_ = (((Class291) aClass291_629).aClass316Array3728[i_2_]
+            int i_3_ = (aClass291_629.aClass316Array3728[i_2_]
                     .method2365
                             (i ^ ~0x7486, Class281.method2108(string_1_, -29286)));
             return method410(-1860, i_2_, i_3_);
@@ -97,16 +97,14 @@ final class Class45 {
         if (!method399(false))
             return false;
         if ((i ^ 0xffffffff) > -1
-                || ((Class291) aClass291_629).anIntArray3724.length <= i
-                || ((((Class291) aClass291_629).anIntArray3724[i] ^ 0xffffffff)
+                || aClass291_629.anIntArray3724.length <= i
+                || ((aClass291_629.anIntArray3724[i] ^ 0xffffffff)
                 == -1)) {
             if (Class285.aBoolean4741)
                 throw new IllegalArgumentException(Integer.toString(i));
             return false;
         }
-        if (i_4_ != -40)
-            return false;
-        return true;
+        return i_4_ == -40;
     }
 
     final byte[] method393(int i, int i_5_, int i_6_, int[] is) {
@@ -128,12 +126,12 @@ final class Class45 {
         byte[] is_7_
                 = Class50_Sub1.method461(false, anObjectArrayArray664[i][i_5_],
                 53146732);
-        if ((((Class45) this).anInt634 ^ 0xffffffff) == -2) {
+        if ((this.anInt634 ^ 0xffffffff) == -2) {
             anObjectArrayArray664[i][i_5_] = null;
-            if ((((Class291) aClass291_629).anIntArray3724[i] ^ 0xffffffff)
+            if ((aClass291_629.anIntArray3724[i] ^ 0xffffffff)
                     == -2)
                 anObjectArrayArray664[i] = null;
-        } else if (((Class45) this).anInt634 == 2)
+        } else if (this.anInt634 == 2)
             anObjectArrayArray664[i] = null;
         return is_7_;
     }
@@ -144,11 +142,11 @@ final class Class45 {
             return false;
         if (anObjectArray656[i_9_] == null)
             return false;
-        int i_10_ = ((Class291) aClass291_629).anIntArray3725[i_9_];
-        int[] is_11_ = ((Class291) aClass291_629).anIntArrayArray3721[i_9_];
+        int i_10_ = aClass291_629.anIntArray3725[i_9_];
+        int[] is_11_ = aClass291_629.anIntArrayArray3721[i_9_];
         if (anObjectArrayArray664[i_9_] == null)
             anObjectArrayArray664[i_9_]
-                    = new Object[((Class291) aClass291_629).anIntArray3724[i_9_]];
+                    = new Object[aClass291_629.anIntArray3724[i_9_]];
         Object[] objects = anObjectArrayArray664[i_9_];
         boolean bool = true;
         for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (i_10_ ^ 0xffffffff);
@@ -176,7 +174,7 @@ final class Class45 {
                     53146732);
             Class348_Sub49 class348_sub49 = new Class348_Sub49(is_14_);
             class348_sub49.method3367(607818341, is, 5,
-                    (((Class348_Sub49) class348_sub49)
+                    (class348_sub49
                             .aByteArray7154).length);
         }
         byte[] is_15_;
@@ -191,21 +189,21 @@ final class Class45 {
                                     + ","
                                     + Class59_Sub1.method554(5126, -2 + is_14_.length,
                                     is_14_)
-                                    + "," + ((Class291) aClass291_629).anIntArray3729[i_9_]
-                                    + "," + ((Class291) aClass291_629).anInt3719));
+                                    + "," + aClass291_629.anIntArray3729[i_9_]
+                                    + "," + aClass291_629.anInt3719));
         }
         if (aBoolean655)
             anObjectArray656[i_9_] = null;
         if (i_8_ >= -17)
             method415((byte) 70, -7);
         if ((i_10_ ^ 0xffffffff) < -2) {
-            if (((Class45) this).anInt634 != 2) {
+            if (this.anInt634 != 2) {
                 int i_16_ = is_15_.length;
                 int i_17_ = 0xff & is_15_[--i_16_];
                 i_16_ -= 4 * (i_10_ * i_17_);
                 Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
                 int[] is_18_ = new int[i_10_];
-                ((Class348_Sub49) class348_sub49).anInt7197 = i_16_;
+                class348_sub49.anInt7197 = i_16_;
                 for (int i_19_ = 0; i_19_ < i_17_; i_19_++) {
                     int i_20_ = 0;
                     for (int i_21_ = 0; i_21_ < i_10_; i_21_++) {
@@ -219,7 +217,7 @@ final class Class45 {
                     is_22_[i_23_] = new byte[is_18_[i_23_]];
                     is_18_[i_23_] = 0;
                 }
-                ((Class348_Sub49) class348_sub49).anInt7197 = i_16_;
+                class348_sub49.anInt7197 = i_16_;
                 int i_24_ = 0;
                 for (int i_25_ = 0;
                      (i_17_ ^ 0xffffffff) < (i_25_ ^ 0xffffffff); i_25_++) {
@@ -238,7 +236,7 @@ final class Class45 {
                         i_29_ = i_28_;
                     else
                         i_29_ = is_11_[i_28_];
-                    if ((((Class45) this).anInt634 ^ 0xffffffff) != -1)
+                    if ((this.anInt634 ^ 0xffffffff) != -1)
                         objects[i_29_] = is_22_[i_28_];
                     else
                         objects[i_29_]
@@ -252,7 +250,7 @@ final class Class45 {
                 Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
                 int i_32_ = 0;
                 int i_33_ = 0;
-                ((Class348_Sub49) class348_sub49).anInt7197 = i_30_;
+                class348_sub49.anInt7197 = i_30_;
                 for (int i_34_ = 0;
                      (i_31_ ^ 0xffffffff) < (i_34_ ^ 0xffffffff); i_34_++) {
                     int i_35_ = 0;
@@ -272,7 +270,7 @@ final class Class45 {
                 if ((i_32_ ^ 0xffffffff) == -1)
                     return true;
                 byte[] is_38_ = new byte[i_32_];
-                ((Class348_Sub49) class348_sub49).anInt7197 = i_30_;
+                class348_sub49.anInt7197 = i_30_;
                 i_32_ = 0;
                 int i_39_ = 0;
                 for (int i_40_ = 0; i_40_ < i_31_; i_40_++) {
@@ -300,7 +298,7 @@ final class Class45 {
                 i_44_ = is_11_[0];
             else
                 i_44_ = 0;
-            if ((((Class45) this).anInt634 ^ 0xffffffff) != -1)
+            if ((this.anInt634 ^ 0xffffffff) != -1)
                 objects[i_44_] = is_15_;
             else
                 objects[i_44_]
@@ -325,9 +323,9 @@ final class Class45 {
             method389(-55);
         if (!method392(i, (byte) -40))
             return null;
-        int[] is = ((Class291) aClass291_629).anIntArrayArray3721[i];
+        int[] is = aClass291_629.anIntArrayArray3721[i];
         if (is == null) {
-            is = new int[((Class291) aClass291_629).anIntArray3725[i]];
+            is = new int[aClass291_629.anIntArray3725[i]];
             for (int i_46_ = 0; i_46_ < is.length; i_46_++)
                 is[i_46_] = i_46_;
         }
@@ -342,7 +340,7 @@ final class Class45 {
         if (i != 0)
             aClass314_659 = null;
         int i_47_
-                = ((Class291) aClass291_629).aClass316_3723
+                = aClass291_629.aClass316_3723
                 .method2365(1, Class281.method2108(string, i ^ ~0x7265));
         return method419(i, i_47_);
     }
@@ -357,7 +355,7 @@ final class Class45 {
         if (i != -31)
             return 50;
         for (/**/; anObjectArray656.length > i_50_; i_50_++) {
-            if ((((Class291) aClass291_629).anIntArray3725[i_50_] ^ 0xffffffff)
+            if ((aClass291_629.anIntArray3725[i_50_] ^ 0xffffffff)
                     < -1) {
                 i_49_ += method419(0, i_50_);
                 i_48_ += 100;
@@ -376,9 +374,9 @@ final class Class45 {
             if (aClass291_629 == null)
                 return false;
             anObjectArray656
-                    = new Object[((Class291) aClass291_629).anInt3734];
+                    = new Object[aClass291_629.anInt3734];
             anObjectArrayArray664
-                    = new Object[((Class291) aClass291_629).anInt3734][];
+                    = new Object[aClass291_629.anInt3734][];
         }
         if (bool != false)
             aClass314_659 = null;
@@ -392,11 +390,9 @@ final class Class45 {
         if (i != -18308)
             return false;
         string = string.toLowerCase();
-        int i_52_ = ((Class291) aClass291_629).aClass316_3723
+        int i_52_ = aClass291_629.aClass316_3723
                 .method2365(1, Class281.method2108(string, -29286));
-        if ((i_52_ ^ 0xffffffff) > -1)
-            return false;
-        return true;
+        return (i_52_ ^ 0xffffffff) <= -1;
     }
 
     final boolean method401(int i) {
@@ -405,10 +401,10 @@ final class Class45 {
             return false;
         boolean bool = true;
         for (int i_53_ = 0;
-             ((((Class291) aClass291_629).anIntArray3738.length ^ 0xffffffff)
+             ((aClass291_629.anIntArray3738.length ^ 0xffffffff)
                      < (i_53_ ^ 0xffffffff));
              i_53_++) {
-            int i_54_ = ((Class291) aClass291_629).anIntArray3738[i_53_];
+            int i_54_ = aClass291_629.anIntArray3738[i_53_];
             if (anObjectArray656[i_54_] == null) {
                 method406(i_54_, -128);
                 if (anObjectArray656[i_54_] == null)
@@ -433,14 +429,14 @@ final class Class45 {
                 return false;
             string = string.toLowerCase();
             string_56_ = string_56_.toLowerCase();
-            int i_57_ = (((Class291) aClass291_629).aClass316_3723.method2365
+            int i_57_ = (aClass291_629.aClass316_3723.method2365
                     (i ^ 0x1c1a, Class281.method2108(string, -29286)));
             if (i != 7195)
                 method403(null, -20, null);
             if (!method392(i_57_, (byte) -40))
                 return false;
             int i_58_
-                    = ((Class291) aClass291_629).aClass316Array3728[i_57_]
+                    = aClass291_629.aClass316Array3728[i_57_]
                     .method2365(1, Class281.method2108(string_56_, -29286));
             return method420(i + -17694, i_57_, i_58_);
         } catch (RuntimeException runtimeexception) {
@@ -461,12 +457,12 @@ final class Class45 {
             method391(null, null, -3);
         if (method399(false)) {
             if (bool_59_) {
-                ((Class291) aClass291_629).anIntArray3733 = null;
-                ((Class291) aClass291_629).aClass316_3723 = null;
+                aClass291_629.anIntArray3733 = null;
+                aClass291_629.aClass316_3723 = null;
             }
             if (bool) {
-                ((Class291) aClass291_629).anIntArrayArray3735 = null;
-                ((Class291) aClass291_629).aClass316Array3728 = null;
+                aClass291_629.anIntArrayArray3735 = null;
+                aClass291_629.aClass316Array3728 = null;
             }
         }
     }
@@ -499,7 +495,7 @@ final class Class45 {
         anInt645++;
         if (!method392(i_62_, (byte) -40))
             return 0;
-        return ((Class291) aClass291_629).anIntArray3724[i_62_];
+        return aClass291_629.anIntArray3724[i_62_];
     }
 
     final boolean method408(byte i, int i_63_) {
@@ -512,7 +508,7 @@ final class Class45 {
         if (anObjectArray656[i_63_] != null)
             return true;
         if (i > -112)
-            ((Class45) this).anInt634 = -26;
+            this.anInt634 = -26;
         return false;
     }
 
@@ -520,7 +516,7 @@ final class Class45 {
         anInt663++;
         if (bool == true && method399(false)) {
             string = string.toLowerCase();
-            int i = ((Class291) aClass291_629).aClass316_3723
+            int i = aClass291_629.aClass316_3723
                     .method2365(1, Class281.method2108(string, -29286));
             method402((byte) -86, i);
         }
@@ -558,7 +554,7 @@ final class Class45 {
             return false;
         string = string.toLowerCase();
         int i_69_
-                = ((Class291) aClass291_629).aClass316_3723
+                = aClass291_629.aClass316_3723
                 .method2365(i + -99, Class281.method2108(string, -29286));
         if (i != 100)
             aFloat670 = 0.37849286F;
@@ -571,20 +567,20 @@ final class Class45 {
             return 49;
         if (!method399(false))
             return -1;
-        return ((Class291) aClass291_629).anIntArray3724.length;
+        return aClass291_629.anIntArray3724.length;
     }
 
     final byte[] method415(byte i, int i_70_) {
         anInt630++;
         if (!method399(false))
             return null;
-        if (((Class291) aClass291_629).anIntArray3724.length == 1)
+        if (aClass291_629.anIntArray3724.length == 1)
             return method410(i ^ ~0x70a, 0, i_70_);
         if (!method392(i_70_, (byte) -40))
             return null;
         if (i != 73)
             anObjectArrayArray664 = null;
-        if ((((Class291) aClass291_629).anIntArray3724[i_70_] ^ 0xffffffff)
+        if ((aClass291_629.anIntArray3724[i_70_] ^ 0xffffffff)
                 == -2)
             return method410(i ^ ~0x70a, i_70_, 0);
         throw new RuntimeException();
@@ -607,7 +603,7 @@ final class Class45 {
         if (!method399(false))
             return -1;
         string = string.toLowerCase();
-        int i_72_ = ((Class291) aClass291_629).aClass316_3723
+        int i_72_ = aClass291_629.aClass316_3723
                 .method2365(1, Class281.method2108(string, -29286));
         if (!method392(i_72_, (byte) -40))
             return -1;
@@ -620,13 +616,13 @@ final class Class45 {
             return false;
         if (i_74_ < i_73_ || (i ^ 0xffffffff) > -1
                 || ((i_74_ ^ 0xffffffff)
-                <= (((Class291) aClass291_629).anIntArray3724.length
+                <= (aClass291_629.anIntArray3724.length
                 ^ 0xffffffff))
                 || ((i ^ 0xffffffff)
-                <= (((Class291) aClass291_629).anIntArray3724[i_74_]
+                <= (aClass291_629.anIntArray3724[i_74_]
                 ^ 0xffffffff))) {
             if (Class285.aBoolean4741)
-                throw new IllegalArgumentException(String.valueOf(i_74_) + ","
+                throw new IllegalArgumentException(i_74_ + ","
                         + i);
             return false;
         }
@@ -656,20 +652,18 @@ final class Class45 {
         if (anObjectArray656[i_76_] != null)
             return true;
         method406(i_76_, -125);
-        if (anObjectArray656[i_76_] != null)
-            return true;
-        return false;
+        return anObjectArray656[i_76_] != null;
     }
 
     final boolean method421(boolean bool, int i) {
         anInt661++;
         if (!method399(bool))
             return false;
-        if (((Class291) aClass291_629).anIntArray3724.length == 1)
+        if (aClass291_629.anIntArray3724.length == 1)
             return method420(-10499, 0, i);
         if (!method392(i, (byte) -40))
             return false;
-        if (((Class291) aClass291_629).anIntArray3724[i] == 1)
+        if (aClass291_629.anIntArray3724[i] == 1)
             return method420(-10499, i, 0);
         if (bool != false)
             return false;
@@ -686,16 +680,14 @@ final class Class45 {
                 anInt669 = 40;
             string = string.toLowerCase();
             int i_79_
-                    = ((Class291) aClass291_629).aClass316_3723
+                    = aClass291_629.aClass316_3723
                     .method2365(1, Class281.method2108(string_78_, -29286));
             if ((i_79_ ^ 0xffffffff) > -1)
                 return false;
             int i_80_
-                    = ((Class291) aClass291_629).aClass316Array3728[i_79_]
+                    = aClass291_629.aClass316Array3728[i_79_]
                     .method2365(1, Class281.method2108(string, -29286));
-            if (i_80_ < 0)
-                return false;
-            return true;
+            return i_80_ >= 0;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("in.M("
@@ -712,7 +704,7 @@ final class Class45 {
         anInt649++;
         if (!method399(false))
             return -1;
-        int i_82_ = ((Class291) aClass291_629).aClass316_3723.method2365(1, i);
+        int i_82_ = aClass291_629.aClass316_3723.method2365(1, i);
         if (!method392(i_82_, (byte) -40))
             return -1;
         int i_83_ = -60 / ((i_81_ - -4) / 56);
@@ -726,7 +718,7 @@ final class Class45 {
                             + " supplied for discardunpacked");
         aClass314_659 = class314;
         aBoolean655 = bool;
-        ((Class45) this).anInt634 = i;
+        this.anInt634 = i;
     }
 
     static {

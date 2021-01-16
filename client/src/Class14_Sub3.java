@@ -9,12 +9,12 @@ import java.io.IOException;
 final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
     static int anInt8624;
     static int anInt8625;
-    private int anInt8626;
+    private final int anInt8626;
     static int anInt8627;
     static int anInt8628;
-    private int anInt8629;
+    private final int anInt8629;
     static int anInt8630;
-    private int anInt8631;
+    private final int anInt8631;
     static int anInt8632;
 
     Class14_Sub3(Class377 class377, Class304 class304, int i, int i_0_,
@@ -25,13 +25,13 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
             anInt8626 = i_1_;
             anInt8631 = i;
             anInt8629 = i_0_;
-            ((Class14) this).aClass377_5082.method3850((byte) 86, this);
+            this.aClass377_5082.method3850((byte) 86, this);
             OpenGL.glPixelStorei(3317, 1);
             OpenGL.glTexImage3Dub
-                    (((Class14) this).anInt5093, 0, this.method228(105), anInt8631,
+                    (this.anInt5093, 0, this.method228(105), anInt8631,
                             anInt8629, anInt8626, 0,
                             Class348_Sub40_Sub3
-                                    .method3055(109, ((Class14) this).aClass304_5084),
+                                    .method3055(109, this.aClass304_5084),
                             5121, is, 0);
             OpenGL.glPixelStorei(3317, 4);
         } catch (RuntimeException runtimeexception) {
@@ -162,11 +162,11 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
         anInt8627++;
         Class286_Sub1.aStringArray6200 = new String[500];
         Class348_Sub31_Sub2.anInt9077
-                = 2 + (((Class143) Class369.aClass143_4962).anInt1993
-                + ((Class143) Class369.aClass143_4962).anInt1988);
+                = 2 + (Class369.aClass143_4962.anInt1993
+                + Class369.aClass143_4962.anInt1988);
         Class68.anInt1188
-                = (((Class143) Class246.aClass143_3179).anInt1988
-                - (-((Class143) Class246.aClass143_3179).anInt1993 - i));
+                = (Class246.aClass143_3179.anInt1988
+                - (-Class246.aClass143_3179.anInt1993 - i));
         for (int i_4_ = 0;
              ((Class286_Sub1.aStringArray6200.length ^ 0xffffffff)
                      < (i_4_ ^ 0xffffffff));

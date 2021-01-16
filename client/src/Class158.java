@@ -38,13 +38,13 @@ final class Class158 implements Interface12 {
             Method method
                     = (var_class.getDeclaredMethod
                     ("dumpHeap",
-                            new Class[]{(aClass4949 != null ? aClass4949
+                            (aClass4949 != null ? aClass4949
                                     : (aClass4949
                                     = method1250("java.lang.String"))),
-                                    Boolean.TYPE}));
+                            Boolean.TYPE));
             method.invoke(Class168.anObject2256,
-                    new Object[]{file.getAbsolutePath(),
-                            new Boolean(bool)});
+                    file.getAbsolutePath(),
+                    new Boolean(bool));
         } catch (Exception exception) {
             System.out.println("HeapDump error:");
             exception.printStackTrace();
@@ -78,19 +78,19 @@ final class Class158 implements Interface12 {
              int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_,
              int i_7_, int i_8_, int i_9_) {
         try {
-            ((Class158) this).anInt4946 = i_3_;
-            ((Class158) this).anInt4932 = i_1_;
-            ((Class158) this).anInt4943 = i_2_;
-            ((Class158) this).anInt4944 = i_7_;
-            ((Class158) this).aString4942 = string;
-            ((Class158) this).aClass221_4948 = class221;
-            ((Class158) this).anInt4931 = i_5_;
-            ((Class158) this).anInt4940 = i_9_;
-            ((Class158) this).anInt4947 = i;
-            ((Class158) this).aClass341_4945 = class341;
-            ((Class158) this).anInt4936 = i_6_;
-            ((Class158) this).anInt4935 = i_8_;
-            ((Class158) this).anInt4937 = i_4_;
+            this.anInt4946 = i_3_;
+            this.anInt4932 = i_1_;
+            this.anInt4943 = i_2_;
+            this.anInt4944 = i_7_;
+            this.aString4942 = string;
+            this.aClass221_4948 = class221;
+            this.anInt4931 = i_5_;
+            this.anInt4940 = i_9_;
+            this.anInt4947 = i;
+            this.aClass341_4945 = class341;
+            this.anInt4936 = i_6_;
+            this.anInt4935 = i_8_;
+            this.anInt4937 = i_4_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

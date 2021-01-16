@@ -4,10 +4,10 @@
 
 final class Class296 {
     static int anInt3765;
-    private int[] anIntArray3766;
+    private final int[] anIntArray3766;
     static boolean aBoolean3767 = false;
     static int anInt3768;
-    private byte[] aByteArray3769;
+    private final byte[] aByteArray3769;
     static int anInt3770;
     static int anInt3771;
     static int anInt3772;
@@ -18,9 +18,7 @@ final class Class296 {
     static final boolean method2224(int i, byte i_0_, int i_1_) {
         int i_2_ = 41 / ((59 - i_0_) / 37);
         anInt3765++;
-        if ((i & 0x800) == 0)
-            return false;
-        return true;
+        return (i & 0x800) != 0;
     }
 
     public static void method2225(int i) {

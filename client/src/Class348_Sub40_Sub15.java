@@ -23,7 +23,7 @@ final class Class348_Sub40_Sub15 extends Class348_Sub40 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i_3_, (byte) 105, 17);
         class348_sub42_sub15.method3246(-25490);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i;
+        class348_sub42_sub15.anInt9652 = i;
         int i_4_ = 59 / ((i_2_ - -7) / 49);
     }
 
@@ -62,8 +62,8 @@ final class Class348_Sub40_Sub15 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_8_) {
         anInt9221++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570)
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570)
             Class214.method1579(is, 0, Class348_Sub40_Sub6.anInt9139,
                     anInt9220);
         if (i_8_ != 255)

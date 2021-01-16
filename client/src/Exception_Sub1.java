@@ -28,7 +28,7 @@ final class Exception_Sub1 extends Exception {
         int i_0_ = 98 / ((i - -14) / 41);
         Class46 class46_1_ = client.method108(class46);
         if (class46_1_ == null)
-            class46_1_ = ((Class46) class46).aClass46_782;
+            class46_1_ = class46.aClass46_782;
         return class46_1_;
     }
 }

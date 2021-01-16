@@ -12,9 +12,7 @@ abstract class Class348_Sub42_Sub9 extends Class348_Sub42 {
         anInt9557++;
         if (i_0_ < 109)
             return false;
-        if ((i_1_ & 0x10000) == 0)
-            return false;
-        return true;
+        return (i_1_ & 0x10000) != 0;
     }
 
     public static void method3204(int i) {
@@ -26,8 +24,8 @@ abstract class Class348_Sub42_Sub9 extends Class348_Sub42 {
     abstract Object method3205(int i);
 
     Class348_Sub42_Sub9(Interface14 interface14, int i) {
-        ((Class348_Sub42_Sub9) this).anInterface14_9559 = interface14;
-        ((Class348_Sub42_Sub9) this).anInt9556 = i;
+        this.anInterface14_9559 = interface14;
+        this.anInt9556 = i;
     }
 
     abstract boolean method3206(byte i);

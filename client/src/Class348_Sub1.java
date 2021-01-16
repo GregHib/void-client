@@ -3,7 +3,7 @@
  */
 
 abstract class Class348_Sub1 extends Class348 {
-    private int anInt6545;
+    private final int anInt6545;
     static int anInt6546;
     static int[] anIntArray6547 = null;
     int anInt6548;
@@ -12,7 +12,7 @@ abstract class Class348_Sub1 extends Class348 {
     static int anInt6551;
     static int anInt6552;
     int anInt6553;
-    private int anInt6554;
+    private final int anInt6554;
     static int anInt6555;
     static int anInt6556;
     static int anInt6557;
@@ -29,7 +29,7 @@ abstract class Class348_Sub1 extends Class348 {
         if (i <= 69)
             method2719(74);
         anInt6549++;
-        return ((Class348_Sub1) this).anInt6553;
+        return this.anInt6553;
     }
 
     static final void method2718(int i) {
@@ -52,7 +52,7 @@ abstract class Class348_Sub1 extends Class348 {
 
     final int method2720(int i) {
         if (i != -1)
-            ((Class348_Sub1) this).anInt6562 = -97;
+            this.anInt6562 = -97;
         anInt6552++;
         return anInt6545;
     }
@@ -61,14 +61,14 @@ abstract class Class348_Sub1 extends Class348 {
         if (i >= -7)
             return 0.08188432F;
         anInt6557++;
-        return ((Class348_Sub1) this).aFloat6550;
+        return this.aFloat6550;
     }
 
     final int method2722(int i) {
         if (i <= 119)
             return -23;
         anInt6556++;
-        return ((Class348_Sub1) this).anInt6548;
+        return this.anInt6548;
     }
 
     final int method2723(int i) {
@@ -82,17 +82,17 @@ abstract class Class348_Sub1 extends Class348 {
         if (i != -1)
             method2725(53, (byte) -84, -7, -12);
         anInt6563++;
-        return ((Class348_Sub1) this).anInt6562;
+        return this.anInt6562;
     }
 
     abstract void method2725(int i, byte i_0_, int i_1_, int i_2_);
 
     Class348_Sub1(int i, int i_3_, int i_4_, int i_5_, int i_6_, float f) {
-        ((Class348_Sub1) this).anInt6548 = i_3_;
-        ((Class348_Sub1) this).anInt6553 = i_4_;
+        this.anInt6548 = i_3_;
+        this.anInt6553 = i_4_;
         anInt6554 = i_5_;
-        ((Class348_Sub1) this).aFloat6550 = f;
+        this.aFloat6550 = f;
         anInt6545 = i_6_;
-        ((Class348_Sub1) this).anInt6562 = i;
+        this.anInt6562 = i;
     }
 }

@@ -21,33 +21,33 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
                     Class348_Sub23_Sub1.aClass297_8992);
             Class57[] class57s_0_ = new Class57[class57s.length];
             int i_1_ = 0;
-            int i_2_ = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+            int i_2_ = Class316.aClass348_Sub51_3959
                     .aClass239_Sub23_7231.method1818(-32350);
             while_108_:
             for (int i_3_ = 0; class57s.length > i_3_; i_3_++) {
                 Class57 class57 = class57s[i_3_];
-                if (((((Class57) class57).anInt1046 ^ 0xffffffff) >= -1
-                        || (((Class57) class57).anInt1046 ^ 0xffffffff) <= -25)
-                        && (((Class57) class57).anInt1047 ^ 0xffffffff) <= -801
-                        && (((Class57) class57).anInt1054 ^ 0xffffffff) <= -601
+                if (((class57.anInt1046 ^ 0xffffffff) >= -1
+                        || (class57.anInt1046 ^ 0xffffffff) <= -25)
+                        && (class57.anInt1047 ^ 0xffffffff) <= -801
+                        && (class57.anInt1054 ^ 0xffffffff) <= -601
                         && ((i_2_ ^ 0xffffffff) != -3
-                        || ((((Class57) class57).anInt1047 ^ 0xffffffff)
-                        >= -801) && ((Class57) class57).anInt1054 <= 600)
+                        || ((class57.anInt1047 ^ 0xffffffff)
+                        >= -801) && class57.anInt1054 <= 600)
                         && ((i_2_ ^ 0xffffffff) != -2
-                        || (((((Class57) class57).anInt1047 ^ 0xffffffff)
+                        || (((class57.anInt1047 ^ 0xffffffff)
                         >= -1025)
-                        && ((((Class57) class57).anInt1054 ^ 0xffffffff)
+                        && ((class57.anInt1054 ^ 0xffffffff)
                         >= -769)))) {
                     for (int i_4_ = 0;
                          (i_1_ ^ 0xffffffff) < (i_4_ ^ 0xffffffff); i_4_++) {
                         Class57 class57_5_ = class57s_0_[i_4_];
-                        if ((((Class57) class57_5_).anInt1047
-                                == ((Class57) class57).anInt1047)
-                                && ((((Class57) class57).anInt1054 ^ 0xffffffff)
-                                == (((Class57) class57_5_).anInt1054
+                        if ((class57_5_.anInt1047
+                                == class57.anInt1047)
+                                && ((class57.anInt1054 ^ 0xffffffff)
+                                == (class57_5_.anInt1054
                                 ^ 0xffffffff))) {
-                            if ((((Class57) class57_5_).anInt1046 ^ 0xffffffff)
-                                    > (((Class57) class57).anInt1046 ^ 0xffffffff))
+                            if ((class57_5_.anInt1046 ^ 0xffffffff)
+                                    > (class57.anInt1046 ^ 0xffffffff))
                                 class57s_0_[i_4_] = class57;
                             continue while_108_;
                         }
@@ -65,8 +65,8 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
                          > (Class228.aClass57Array2974.length ^ 0xffffffff));
                  i_6_++) {
                 Class57 class57 = Class228.aClass57Array2974[i_6_];
-                is[i_6_] = (((Class57) class57).anInt1047
-                        * ((Class57) class57).anInt1054);
+                is[i_6_] = (class57.anInt1047
+                        * class57.anInt1054);
             }
             Class39.method366(Class228.aClass57Array2974, (byte) -123, is);
         }
@@ -85,8 +85,7 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
         if (class348_sub42_sub15 == null) {
             class348_sub42_sub15 = new Class348_Sub42_Sub15(i_8_, i);
             Class100.aClass356_1585.method3483((byte) 91,
-                    (((Class348)
-                            class348_sub42_sub15)
+                    (class348_sub42_sub15
                             .aLong4291),
                     class348_sub42_sub15);
         }
@@ -100,7 +99,7 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
     }
 
     Class318_Sub9_Sub1(String string, int i) {
-        ((Class318_Sub9_Sub1) this).aString8783 = string;
-        ((Class318_Sub9_Sub1) this).aShort8786 = (short) i;
+        this.aString8783 = string;
+        this.aShort8786 = (short) i;
     }
 }

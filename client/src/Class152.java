@@ -18,9 +18,9 @@ final class Class152 {
     final byte[] method1214(int i, byte[] is) {
         anInt2074++;
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        ((Class348_Sub49) class348_sub49).anInt7197 = is.length - 4;
+        class348_sub49.anInt7197 = is.length - 4;
         int i_0_ = class348_sub49.method3359(-86);
-        ((Class348_Sub49) class348_sub49).anInt7197 = 0;
+        class348_sub49.anInt7197 = 0;
         if (i != 9)
             aFloatArray2075 = null;
         byte[] is_1_ = new byte[i_0_];
@@ -61,37 +61,37 @@ final class Class152 {
                      i_5_++) {
                     Class357 class357 = class357s_3_[i_4_][i_5_];
                     if (class357 != null) {
-                        if (((Class357) class357).aClass318_Sub1_Sub1_4402
+                        if (class357.aClass318_Sub1_Sub1_4402
                                 instanceof Interface10)
                             ((Interface10)
-                                    ((Class357) class357).aClass318_Sub1_Sub1_4402)
+                                    class357.aClass318_Sub1_Sub1_4402)
                                     .method40(-12031);
-                        if (((Class357) class357).aClass318_Sub1_Sub5_4395
+                        if (class357.aClass318_Sub1_Sub5_4395
                                 instanceof Interface10)
                             ((Interface10)
-                                    ((Class357) class357).aClass318_Sub1_Sub5_4395)
+                                    class357.aClass318_Sub1_Sub5_4395)
                                     .method40(-12031);
-                        if (((Class357) class357).aClass318_Sub1_Sub5_4407
+                        if (class357.aClass318_Sub1_Sub5_4407
                                 instanceof Interface10)
                             ((Interface10)
-                                    ((Class357) class357).aClass318_Sub1_Sub5_4407)
+                                    class357.aClass318_Sub1_Sub5_4407)
                                     .method40(-12031);
-                        if (((Class357) class357).aClass318_Sub1_Sub4_4406
+                        if (class357.aClass318_Sub1_Sub4_4406
                                 instanceof Interface10)
                             ((Interface10)
-                                    ((Class357) class357).aClass318_Sub1_Sub4_4406)
+                                    class357.aClass318_Sub1_Sub4_4406)
                                     .method40(-12031);
-                        if (((Class357) class357).aClass318_Sub1_Sub4_4403
+                        if (class357.aClass318_Sub1_Sub4_4403
                                 instanceof Interface10)
                             ((Interface10)
-                                    ((Class357) class357).aClass318_Sub1_Sub4_4403)
+                                    class357.aClass318_Sub1_Sub4_4403)
                                     .method40(-12031);
                         for (Class148 class148
-                             = ((Class357) class357).aClass148_4396;
+                             = class357.aClass148_4396;
                              class148 != null;
-                             class148 = ((Class148) class148).aClass148_2038) {
+                             class148 = class148.aClass148_2038) {
                             Class318_Sub1_Sub3 class318_sub1_sub3
-                                    = (((Class148) class148)
+                                    = (class148
                                     .aClass318_Sub1_Sub3_2040);
                             if (class318_sub1_sub3 instanceof Interface10)
                                 ((Interface10) class318_sub1_sub3)
@@ -112,20 +112,20 @@ final class Class152 {
             if (i != 29123)
                 method1217(-91, null);
             anInt2073++;
-            if (((((Class348_Sub49) class348_sub49).aByteArray7154
-                    [((Class348_Sub49) class348_sub49).anInt7197])
+            if (((class348_sub49.aByteArray7154
+                    [class348_sub49.anInt7197])
                     ^ 0xffffffff) != -32
-                    || (((Class348_Sub49) class348_sub49).aByteArray7154
-                    [1 + ((Class348_Sub49) class348_sub49).anInt7197]) != -117)
+                    || (class348_sub49.aByteArray7154
+                    [1 + class348_sub49.anInt7197]) != -117)
                 throw new RuntimeException("Invalid GZIP header!");
             if (anInflater2072 == null)
                 anInflater2072 = new Inflater(true);
             try {
                 anInflater2072.setInput
-                        (((Class348_Sub49) class348_sub49).aByteArray7154,
-                                ((Class348_Sub49) class348_sub49).anInt7197 - -10,
-                                -8 - (10 + ((Class348_Sub49) class348_sub49).anInt7197
-                                        - (((Class348_Sub49) class348_sub49)
+                        (class348_sub49.aByteArray7154,
+                                class348_sub49.anInt7197 - -10,
+                                -8 - (10 + class348_sub49.anInt7197
+                                        - (class348_sub49
                                         .aByteArray7154).length));
                 anInflater2072.inflate(is);
             } catch (Exception exception) {

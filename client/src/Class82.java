@@ -10,7 +10,7 @@ import java.io.FileOutputStream;
 final class Class82 {
     static Class45 aClass45_1434;
     static int anInt1435;
-    private Class45 aClass45_1436;
+    private final Class45 aClass45_1436;
     static int anInt1437;
     static int anInt1438;
     int anInt1439;
@@ -61,22 +61,21 @@ final class Class82 {
                     }
                     if (string.equals("renderer")) {
                         Class365 class365 = Class348_Sub8.aHa6654.c();
-                        Applet_Sub1.method94("Vendor: " + ((Class365)
-                                        class365).anInt4476,
+                        Applet_Sub1.method94("Vendor: " + class365.anInt4476,
                                 89);
-                        Applet_Sub1.method94("Name: " + (((Class365) class365)
+                        Applet_Sub1.method94("Name: " + (class365
                                         .aString4470),
                                 71);
                         Applet_Sub1.method94(("Version: "
-                                        + (((Class365) class365)
+                                        + (class365
                                         .anInt4475)),
                                 -110);
                         Applet_Sub1.method94(("Device: "
-                                        + (((Class365) class365)
+                                        + (class365
                                         .aString4472)),
                                 i + 146);
                         Applet_Sub1.method94(("Driver Version: "
-                                        + (((Class365) class365)
+                                        + (class365
                                         .aLong4471)),
                                 i + -32);
                         break;
@@ -135,9 +134,8 @@ final class Class82 {
                                                         + (jagmisc.getAvailablePhysicalMemory()
                                                         / 1048576L)
                                                         + "/"
-                                                        + ((Class348_Sub4)
-                                                        (Class348_Sub40_Sub20
-                                                                .aClass348_Sub4_9264)).anInt6609
+                                                        + Class348_Sub40_Sub20
+                                                                .aClass348_Sub4_9264.anInt6609
                                                         + "Mb"),
                                                 i + 26);
                             } catch (Throwable throwable) {
@@ -280,8 +278,7 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk0")) {
                             Class367_Sub10.method3553(false, (byte) 104, 0);
-                            if ((((Class348_Sub51)
-                                    Class316.aClass348_Sub51_3959)
+                            if ((Class316.aClass348_Sub51_3959
                                     .aClass239_Sub25_7271.method1829(-32350)
                                     ^ 0xffffffff)
                                     != -1)
@@ -291,8 +288,7 @@ final class Class82 {
                                 Applet_Sub1.method94("Entered tk0", 101);
                                 Class316.aClass348_Sub51_3959.method3429
                                         ((byte) 74,
-                                                (((Class348_Sub51)
-                                                        Class316.aClass348_Sub51_3959)
+                                                (Class316.aClass348_Sub51_3959
                                                         .aClass239_Sub25_7251),
                                                 0);
                                 Class14_Sub2.method243(37);
@@ -303,8 +299,7 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk1")) {
                             Class367_Sub10.method3553(false, (byte) 109, 1);
-                            if ((((Class348_Sub51)
-                                    Class316.aClass348_Sub51_3959)
+                            if ((Class316.aClass348_Sub51_3959
                                     .aClass239_Sub25_7271.method1829(-32350)
                                     ^ 0xffffffff)
                                     != -2)
@@ -314,8 +309,7 @@ final class Class82 {
                                 Applet_Sub1.method94("Entered tk1", -65);
                                 Class316.aClass348_Sub51_3959.method3429
                                         ((byte) 74,
-                                                (((Class348_Sub51)
-                                                        Class316.aClass348_Sub51_3959)
+                                                (Class316.aClass348_Sub51_3959
                                                         .aClass239_Sub25_7251),
                                                 1);
                                 Class14_Sub2.method243(i ^ ~0x6b);
@@ -326,15 +320,13 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk2")) {
                             Class367_Sub10.method3553(false, (byte) 115, 2);
-                            if (((Class348_Sub51)
-                                    Class316.aClass348_Sub51_3959)
+                            if (Class316.aClass348_Sub51_3959
                                     .aClass239_Sub25_7271.method1829(-32350)
                                     == 2) {
                                 Applet_Sub1.method94("Entered tk2", i + 151);
                                 Class316.aClass348_Sub51_3959.method3429
                                         ((byte) 74,
-                                                (((Class348_Sub51)
-                                                        Class316.aClass348_Sub51_3959)
+                                                (Class316.aClass348_Sub51_3959
                                                         .aClass239_Sub25_7251),
                                                 2);
                                 Class14_Sub2.method243(37);
@@ -348,8 +340,7 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk3")) {
                             Class367_Sub10.method3553(false, (byte) 107, 3);
-                            if ((((Class348_Sub51)
-                                    Class316.aClass348_Sub51_3959)
+                            if ((Class316.aClass348_Sub51_3959
                                     .aClass239_Sub25_7271.method1829(-32350)
                                     ^ 0xffffffff)
                                     != -4)
@@ -359,8 +350,7 @@ final class Class82 {
                                 Applet_Sub1.method94("Entered tk3", 78);
                                 Class316.aClass348_Sub51_3959.method3429
                                         ((byte) 74,
-                                                (((Class348_Sub51)
-                                                        Class316.aClass348_Sub51_3959)
+                                                (Class316.aClass348_Sub51_3959
                                                         .aClass239_Sub25_7251),
                                                 3);
                                 Class14_Sub2.method243(37);
@@ -371,16 +361,14 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk5")) {
                             Class367_Sub10.method3553(false, (byte) 113, 5);
-                            if (((Class348_Sub51)
-                                    Class316.aClass348_Sub51_3959)
+                            if (Class316.aClass348_Sub51_3959
                                     .aClass239_Sub25_7271
                                     .method1829(i ^ 0x7e13)
                                     == 5) {
                                 Applet_Sub1.method94("Entered tk5", -108);
                                 Class316.aClass348_Sub51_3959.method3429
                                         ((byte) 74,
-                                                (((Class348_Sub51)
-                                                        Class316.aClass348_Sub51_3959)
+                                                (Class316.aClass348_Sub51_3959
                                                         .aClass239_Sub25_7251),
                                                 5);
                                 Class14_Sub2.method243(37);
@@ -408,16 +396,14 @@ final class Class82 {
                                 else {
                                     Class316.aClass348_Sub51_3959.method3429
                                             ((byte) 74,
-                                                    (((Class348_Sub51)
-                                                            Class316.aClass348_Sub51_3959)
+                                                    (Class316.aClass348_Sub51_3959
                                                             .aClass239_Sub6_7226),
                                                     i_6_);
                                     Class14_Sub2.method243(37);
                                     r.aBoolean9719 = false;
                                     Applet_Sub1.method94
                                             (("maxbuildarea="
-                                                            + ((Class348_Sub51)
-                                                            Class316.aClass348_Sub51_3959)
+                                                            + Class316.aClass348_Sub51_3959
                                                             .aClass239_Sub6_7226
                                                             .method1743(-32350)),
                                                     98);
@@ -510,15 +496,13 @@ final class Class82 {
                         if (string.equalsIgnoreCase("getcgcoord")) {
                             Applet_Sub1.method94
                                     (("x:"
-                                                    + ((((Class318_Sub1)
-                                                    (Class132
-                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                    + ((Class132
+                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .anInt6377)
                                                     >> 875117673)
                                                     + " z:"
-                                                    + ((((Class318_Sub1)
-                                                    (Class132
-                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                    + ((Class132
+                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .anInt6388)
                                                     >> -984153847)),
                                             -117);
@@ -528,19 +512,16 @@ final class Class82 {
                             Applet_Sub1.method94
                                     (("Height: "
                                                     + (aa_Sub1.aSArray5191
-                                                    [(((Class318_Sub1)
-                                                    (Class132
-                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                    [(Class132
+                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .aByte6381)]
                                                     .method3982
                                                             ((byte) -86,
-                                                                    (((Class318_Sub1)
-                                                                            (Class132
-                                                                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                                    (Class132
+																			.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                                             .anInt6388) >> -1801480663,
-                                                                    (((Class318_Sub1)
-                                                                            (Class132
-                                                                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                                    (Class132
+																			.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                                             .anInt6377) >> -1239792887))),
                                             i ^ 0x1);
                             break;
@@ -595,10 +576,10 @@ final class Class82 {
                                     127);
                             Applet_Sub1.method94
                                     (("O(s): "
-                                                    + ((Class255) Exception_Sub1.aClass255_112)
+                                                    + Exception_Sub1.aClass255_112
                                                     .aClass175_3288.method1350((byte) 126)
                                                     + "/"
-                                                    + ((Class255) Exception_Sub1.aClass255_112)
+                                                    + Exception_Sub1.aClass255_112
                                                     .aClass175_3288.method1339(100)),
                                             i + 203);
                             break;
@@ -606,9 +587,8 @@ final class Class82 {
                         if (string.equalsIgnoreCase("getcamerapos")) {
                             Applet_Sub1.method94
                                     (("Pos: "
-                                                    + (((Class318_Sub1)
-                                                    (Class132
-                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                    + (Class132
+                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .aByte6381)
                                                     + ","
                                                     + (((Class286_Sub4.anInt6246 >> 701891721)
@@ -629,18 +609,16 @@ final class Class82 {
                                                     + " Height: "
                                                     + ((Class275.method2064
                                                     (Class286_Sub4.anInt6246,
-                                                            (((Class318_Sub1)
-                                                                    (Class132
-                                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                            (Class132
+																	.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                                     .aByte6381),
                                                             11219, Class59_Sub2_Sub2.anInt8685))
                                                     - Class305.anInt3855)),
                                             126);
                             Applet_Sub1.method94
                                     (("Look: "
-                                                    + (((Class318_Sub1)
-                                                    (Class132
-                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                    + (Class132
+                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .aByte6381)
                                                     + ","
                                                     + (Class352.anInt4336 - -za_Sub2.anInt9780
@@ -657,9 +635,8 @@ final class Class82 {
                                                     + " Height: "
                                                     + ((Class275.method2064
                                                     (Class352.anInt4336,
-                                                            (((Class318_Sub1)
-                                                                    (Class132
-                                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                                            (Class132
+																	.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                                     .aByte6381),
                                                             11219, Class281.anInt3647))
                                                     - Class121.anInt1797)),
@@ -749,8 +726,7 @@ final class Class82 {
                         if (string.startsWith("switchworld")) {
                             int i_11_ = Integer.parseInt(string.substring(12));
                             Class348_Sub23_Sub1.method2972
-                                    ((((Class110_Sub1)
-                                                    Class239_Sub5.method1742(false, i_11_))
+                                    ((Class239_Sub5.method1742(false, i_11_)
                                                     .aString5794),
                                             i_11_, -93);
                             Applet_Sub1.method94("switched", 70);
@@ -758,8 +734,7 @@ final class Class82 {
                         }
                         if (string.equals("getworld")) {
                             Applet_Sub1.method94(("w: "
-                                            + (((Class161)
-                                            Class3.aClass161_125)
+                                            + (Class3.aClass161_125
                                             .anInt2143)),
                                     -120);
                             break;
@@ -769,26 +744,24 @@ final class Class82 {
                                     = (Class286_Sub3.method2148
                                     (Class348_Sub40_Sub22.aClass351_9304,
                                             Class348_Sub23_Sub2.aClass77_9029, -97));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3378(false, 0);
-                            int i_12_ = (((Class348_Sub49)
-                                    (((Class348_Sub47) class348_sub47)
-                                            .aClass348_Sub49_Sub2_7116))
+                            int i_12_ = (class348_sub47
+									.aClass348_Sub49_Sub2_7116
                                     .anInt7197);
                             int i_13_ = string.indexOf(" ", 4);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3333
                                     ((byte) -5, string.substring(3, i_13_));
                             Class367_Sub4.method3544
-                                    ((((Class348_Sub47) class348_sub47)
+                                    ((class348_sub47
                                                     .aClass348_Sub49_Sub2_7116),
                                             i + -12, string.substring(i_13_));
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116.method3339
-                                    (114, (((Class348_Sub49)
-                                            (((Class348_Sub47) class348_sub47)
-                                                    .aClass348_Sub49_Sub2_7116)).anInt7197
+                                    (114, (class348_sub47
+											.aClass348_Sub49_Sub2_7116.anInt7197
                                             + -i_12_));
                             Class348_Sub42_Sub14.method3243(i ^ ~0x49,
                                     class348_sub47);
@@ -834,7 +807,7 @@ final class Class82 {
                         }
                         if (string.equals("profilecpu")) {
                             Applet_Sub1.method94
-                                    ((String.valueOf(Class284.method2116(-26584))
+                                    ((Class284.method2116(-26584)
                                                     + "ms"),
                                             87);
                             break;
@@ -900,8 +873,7 @@ final class Class82 {
                             Class318_Sub1_Sub4.method2478(1000);
                             Applet_Sub1.method94
                                     (("Complete. Toolkit now: "
-                                                    + ((Class348_Sub51)
-                                                    Class316.aClass348_Sub51_3959)
+                                                    + Class316.aClass348_Sub51_3959
                                                     .aClass239_Sub25_7271
                                                     .method1829(i + -32271)),
                                             -97);
@@ -952,15 +924,13 @@ final class Class82 {
                                         (true, string.substring(1 + i_20_)));
                                 Class316.aClass348_Sub51_3959.method3429
                                         ((byte) 74,
-                                                (((Class348_Sub51)
-                                                        Class316.aClass348_Sub51_3959)
+                                                (Class316.aClass348_Sub51_3959
                                                         .aClass239_Sub3_7222),
                                                 i_21_);
                                 Class14_Sub2.method243(37);
                                 r.aBoolean9719 = false;
                                 Class348_Sub42_Sub3.method3179(i + 79);
-                                if (((Class348_Sub51)
-                                        Class316.aClass348_Sub51_3959)
+                                if (Class316.aClass348_Sub51_3959
                                         .aClass239_Sub3_7222.method1727(-32350)
                                         != i_21_)
                                     Applet_Sub1.method94
@@ -976,8 +946,7 @@ final class Class82 {
                             break;
                         }
                         if (string.startsWith("orthozoom ")) {
-                            if ((((Class348_Sub51)
-                                    Class316.aClass348_Sub51_3959)
+                            if ((Class316.aClass348_Sub51_3959
                                     .aClass239_Sub3_7222
                                     .method1727(i + -32271)
                                     ^ 0xffffffff)
@@ -1094,16 +1063,16 @@ final class Class82 {
                                     (Class348_Sub23_Sub2
                                             .aClass77_9029),
                                     i ^ 0x24);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3378(false, string.length() + 3);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3378(false, bool ? 1 : 0);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3378(false, bool_0_ ? 1 : 0);
-                            ((Class348_Sub47) class348_sub47)
+                            class348_sub47
                                     .aClass348_Sub49_Sub2_7116
                                     .method3333((byte) -5, string);
                             Class348_Sub42_Sub14.method3243(120,
@@ -1148,7 +1117,7 @@ final class Class82 {
                 = Class147.aClass357ArrayArrayArray2029[i][i_25_][i_26_];
         if (class357 == null)
             return null;
-        return ((Class357) class357).aClass318_Sub1_Sub4_4403;
+        return class357.aClass318_Sub1_Sub4_4403;
     }
 
     static final void method814(byte i, long l) {
@@ -1203,7 +1172,7 @@ final class Class82 {
         new Class60(64);
         try {
             aClass45_1436 = class45;
-            ((Class82) this).anInt1439 = aClass45_1436.method407(0, 15);
+            this.anInt1439 = aClass45_1436.method407(0, 15);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("lba.<init>("

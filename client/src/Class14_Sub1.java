@@ -35,15 +35,15 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8612 = i;
             anInt8604 = i_0_;
-            ((Class14) this).aClass377_5082.method3850((byte) 79, this);
+            this.aClass377_5082.method3850((byte) 79, this);
             if (bool && i_2_ == 0 && i_1_ == 0)
-                this.method233(i, i_0_, is, ((Class14) this).anInt5093, 255);
+                this.method233(i, i_0_, is, this.anInt5093, 255);
             else {
                 OpenGL.glPixelStorei(3314, i_2_);
-                OpenGL.glTexImage2Di(((Class14) this).anInt5093, 0, 6408,
+                OpenGL.glTexImage2Di(this.anInt5093, 0, 6408,
                         anInt8612, anInt8604, 0, 32993,
-                        ((Class377) (((Class14) this)
-                                .aClass377_5082)).anInt9918,
+                        this
+                                .aClass377_5082.anInt9918,
                         is, 4 * i_1_);
                 OpenGL.glPixelStorei(3314, 0);
             }
@@ -61,76 +61,76 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
 
     static final void method239(byte i, int i_3_, int i_4_, Class46 class46) {
         anInt8610++;
-        if ((((Class46) class46).aByte817 ^ 0xffffffff) != -1) {
-            if ((((Class46) class46).aByte817 ^ 0xffffffff) == -2)
-                ((Class46) class46).anInt800
-                        = ((-((Class46) class46).anInt709 + i_3_) / 2
-                        + ((Class46) class46).anInt788);
-            else if ((((Class46) class46).aByte817 ^ 0xffffffff) != -3) {
-                if ((((Class46) class46).aByte817 ^ 0xffffffff) != -4) {
-                    if (((Class46) class46).aByte817 != 4)
-                        ((Class46) class46).anInt800
-                                = (-((Class46) class46).anInt709 + i_3_
-                                + -(i_3_ * ((Class46) class46).anInt788
+        if ((class46.aByte817 ^ 0xffffffff) != -1) {
+            if ((class46.aByte817 ^ 0xffffffff) == -2)
+                class46.anInt800
+                        = ((-class46.anInt709 + i_3_) / 2
+                        + class46.anInt788);
+            else if ((class46.aByte817 ^ 0xffffffff) != -3) {
+                if ((class46.aByte817 ^ 0xffffffff) != -4) {
+                    if (class46.aByte817 != 4)
+                        class46.anInt800
+                                = (-class46.anInt709 + i_3_
+                                + -(i_3_ * class46.anInt788
                                 >> 179764142));
                     else
-                        ((Class46) class46).anInt800
-                                = ((-((Class46) class46).anInt709 + i_3_) / 2
-                                - -(i_3_ * ((Class46) class46).anInt788
+                        class46.anInt800
+                                = ((-class46.anInt709 + i_3_) / 2
+                                - -(i_3_ * class46.anInt788
                                 >> 113635214));
                 } else
-                    ((Class46) class46).anInt800
-                            = i_3_ * ((Class46) class46).anInt788 >> -626591410;
+                    class46.anInt800
+                            = i_3_ * class46.anInt788 >> -626591410;
             } else
-                ((Class46) class46).anInt800
-                        = (-((Class46) class46).anInt788
-                        + (-((Class46) class46).anInt709 + i_3_));
+                class46.anInt800
+                        = (-class46.anInt788
+                        + (-class46.anInt709 + i_3_));
         } else
-            ((Class46) class46).anInt800 = ((Class46) class46).anInt788;
+            class46.anInt800 = class46.anInt788;
         int i_5_ = 83 % ((i - 50) / 50);
-        if (((Class46) class46).aByte681 != 0) {
-            if (((Class46) class46).aByte681 == 1)
-                ((Class46) class46).anInt750
-                        = ((i_4_ + -((Class46) class46).anInt789) / 2
-                        - -((Class46) class46).anInt739);
-            else if (((Class46) class46).aByte681 == 2)
-                ((Class46) class46).anInt750
-                        = (i_4_ - ((Class46) class46).anInt789
-                        - ((Class46) class46).anInt739);
-            else if ((((Class46) class46).aByte681 ^ 0xffffffff) != -4) {
-                if ((((Class46) class46).aByte681 ^ 0xffffffff) != -5)
-                    ((Class46) class46).anInt750
-                            = (-(i_4_ * ((Class46) class46).anInt739
+        if (class46.aByte681 != 0) {
+            if (class46.aByte681 == 1)
+                class46.anInt750
+                        = ((i_4_ + -class46.anInt789) / 2
+                        - -class46.anInt739);
+            else if (class46.aByte681 == 2)
+                class46.anInt750
+                        = (i_4_ - class46.anInt789
+                        - class46.anInt739);
+            else if ((class46.aByte681 ^ 0xffffffff) != -4) {
+                if ((class46.aByte681 ^ 0xffffffff) != -5)
+                    class46.anInt750
+                            = (-(i_4_ * class46.anInt739
                             >> -1401218514)
-                            + (i_4_ + -((Class46) class46).anInt789));
+                            + (i_4_ + -class46.anInt789));
                 else
-                    ((Class46) class46).anInt750
-                            = ((i_4_ * ((Class46) class46).anInt739 >> 143654990)
-                            + (-((Class46) class46).anInt789 + i_4_) / 2);
+                    class46.anInt750
+                            = ((i_4_ * class46.anInt739 >> 143654990)
+                            + (-class46.anInt789 + i_4_) / 2);
             } else
-                ((Class46) class46).anInt750
-                        = ((Class46) class46).anInt739 * i_4_ >> 1086795502;
+                class46.anInt750
+                        = class46.anInt739 * i_4_ >> 1086795502;
         } else
-            ((Class46) class46).anInt750 = ((Class46) class46).anInt739;
+            class46.anInt750 = class46.anInt739;
         if (Class299_Sub2.aBoolean6327
-                && ((((Class348_Sub44) client.method105(class46)).anInt7098
+                && ((client.method105(class46).anInt7098
                 ^ 0xffffffff) != -1
-                || ((Class46) class46).anInt774 == 0)) {
-            if (((Class46) class46).anInt750 < 0)
-                ((Class46) class46).anInt750 = 0;
-            else if (((((Class46) class46).anInt789
-                    + ((Class46) class46).anInt750)
+                || class46.anInt774 == 0)) {
+            if (class46.anInt750 < 0)
+                class46.anInt750 = 0;
+            else if (((class46.anInt789
+                    + class46.anInt750)
                     ^ 0xffffffff)
                     < (i_4_ ^ 0xffffffff))
-                ((Class46) class46).anInt750
-                        = i_4_ - ((Class46) class46).anInt789;
-            if (((Class46) class46).anInt800 >= 0) {
-                if (i_3_ < (((Class46) class46).anInt800
-                        - -((Class46) class46).anInt709))
-                    ((Class46) class46).anInt800
-                            = i_3_ + -((Class46) class46).anInt709;
+                class46.anInt750
+                        = i_4_ - class46.anInt789;
+            if (class46.anInt800 >= 0) {
+                if (i_3_ < (class46.anInt800
+                        - -class46.anInt709))
+                    class46.anInt800
+                            = i_3_ + -class46.anInt709;
             } else
-                ((Class46) class46).anInt800 = 0;
+                class46.anInt800 = 0;
         }
     }
 
@@ -140,18 +140,18 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8612 = i;
             anInt8604 = i_6_;
-            ((Class14) this).aClass377_5082.method3850((byte) -102, this);
+            this.aClass377_5082.method3850((byte) -102, this);
             OpenGL.glPixelStorei(3317, 1);
             if (!bool || i_8_ != 0 || i_7_ != 0) {
                 OpenGL.glPixelStorei(3314, i_8_);
-                OpenGL.glTexImage2Dub(((Class14) this).anInt5093, 0,
+                OpenGL.glTexImage2Dub(this.anInt5093, 0,
                         this.method228(109), i, i_6_, 0,
                         (Class348_Sub40_Sub3.method3055
-                                (121, ((Class14) this).aClass304_5084)),
+                                (121, this.aClass304_5084)),
                         5121, is, i_7_);
                 OpenGL.glPixelStorei(3314, 0);
             } else
-                this.method230(7365, i, is, i_6_, ((Class14) this).anInt5093);
+                this.method230(7365, i, is, i_6_, this.anInt5093);
             OpenGL.glPixelStorei(3317, 4);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -181,9 +181,9 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         try {
             int i_15_ = 108 / ((-45 - i_9_) / 49);
             anInt8614++;
-            ((Class14) this).aClass377_5082.method3850((byte) -106, this);
+            this.aClass377_5082.method3850((byte) -106, this);
             OpenGL.glPixelStorei(3314, i);
-            OpenGL.glTexSubImage2Df(((Class14) this).anInt5093, 0, i_12_,
+            OpenGL.glTexSubImage2Df(this.anInt5093, 0, i_12_,
                     i_10_, i_13_, i_14_,
                     Class348_Sub40_Sub3.method3055(106,
                             class304),
@@ -277,8 +277,8 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         int i_20_ = -Class305.anInt3855 + i_18_;
         int i_21_ = -Class59_Sub2_Sub2.anInt8685 + i_17_;
         int i_22_
-                = (int) Math.sqrt((double) (i_19_ * i_19_ - -(i_21_ * i_21_)));
-        int i_23_ = ((int) (Math.atan2((double) i_20_, (double) i_22_)
+                = (int) Math.sqrt(i_19_ * i_19_ - -(i_21_ * i_21_));
+        int i_23_ = ((int) (Math.atan2(i_20_, i_22_)
                 * 2607.5945876176133)
                 & 0x3fff);
         if (i < 126)
@@ -287,7 +287,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
             i_23_ = 1024;
         int i_24_
                 = 0x3fff & (int) (-2607.5945876176133
-                * Math.atan2((double) i_19_, (double) i_21_));
+                * Math.atan2(i_19_, i_21_));
         if (i_23_ > 3072)
             i_23_ = 3072;
         if ((Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff)
@@ -344,10 +344,10 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                                Class304 class304) {
         try {
             anInt8608++;
-            ((Class14) this).aClass377_5082.method3850((byte) -24, this);
+            this.aClass377_5082.method3850((byte) -24, this);
             OpenGL.glPixelStorei(3317, 1);
             OpenGL.glPixelStorei(3314, i_29_);
-            OpenGL.glTexSubImage2Dub(((Class14) this).anInt5093, 0, i_32_, i,
+            OpenGL.glTexSubImage2Dub(this.anInt5093, 0, i_32_, i,
                     i_31_, i_30_,
                     Class348_Sub40_Sub3.method3055(103,
                             class304),
@@ -374,8 +374,8 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                                int i_35_, byte i_36_, int i_37_) {
         anInt8613++;
         int[] is_38_ = new int[anInt8612 * anInt8604];
-        ((Class14) this).aClass377_5082.method3850((byte) -32, this);
-        OpenGL.glGetTexImagei(((Class14) this).anInt5093, 0, 32993, 5121,
+        this.aClass377_5082.method3850((byte) -32, this);
+        OpenGL.glGetTexImagei(this.anInt5093, 0, 32993, 5121,
                 is_38_, 0);
         if (i_36_ == 112) {
             for (int i_39_ = 0; (i_39_ ^ 0xffffffff) > (i_35_ ^ 0xffffffff);
@@ -402,9 +402,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
 
     public final boolean method73(int i) {
         anInt8618++;
-        if (i < 84)
-            return false;
-        return true;
+        return i >= 84;
     }
 
     public static void method242(boolean bool) {
@@ -414,14 +412,14 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
 
     public final void method68(int i, int i_41_, int[] is, int i_42_,
                                int i_43_, int i_44_, int i_45_, int i_46_) {
-        ((Class14) this).aClass377_5082.method3850((byte) -116, this);
+        this.aClass377_5082.method3850((byte) -116, this);
         if (i_41_ != 22809)
             aString8605 = null;
         anInt8616++;
         OpenGL.glPixelStorei(3314, i);
-        OpenGL.glTexSubImage2Di(((Class14) this).anInt5093, 0, i_42_, i_45_,
+        OpenGL.glTexSubImage2Di(this.anInt5093, 0, i_42_, i_45_,
                 i_44_, i_46_, 32993,
-                (((Class377) ((Class14) this).aClass377_5082)
+                (this.aClass377_5082
                         .anInt9918),
                 is, i_43_);
         OpenGL.glPixelStorei(3314, 0);
@@ -433,13 +431,13 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8612 = i;
             anInt8604 = i_47_;
-            ((Class14) this).aClass377_5082.method3850((byte) 110, this);
+            this.aClass377_5082.method3850((byte) 110, this);
             OpenGL.glTexImage2Dub
-                    (((Class14) this).anInt5093, 0, this.method228(113), i, i_47_,
+                    (this.anInt5093, 0, this.method228(113), i, i_47_,
                             0,
                             Class348_Sub40_Sub3
-                                    .method3055(113, ((Class14) this).aClass304_5084),
-                            Class130.method1128(-112, ((Class14) this).aClass68_5088),
+                                    .method3055(113, this.aClass304_5084),
+                            Class130.method1128(-112, this.aClass68_5088),
                             null, 0);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
@@ -452,11 +450,11 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
     }
 
     public final void method66(boolean bool, boolean bool_48_, int i) {
-        ((Class14) this).aClass377_5082.method3850((byte) -29, this);
+        this.aClass377_5082.method3850((byte) -29, this);
         anInt8615++;
-        OpenGL.glTexParameteri(((Class14) this).anInt5093, 10242,
+        OpenGL.glTexParameteri(this.anInt5093, 10242,
                 !bool ? 33071 : 10497);
-        OpenGL.glTexParameteri(((Class14) this).anInt5093, 10243,
+        OpenGL.glTexParameteri(this.anInt5093, 10243,
                 !bool_48_ ? 33071 : 10497);
         if (i != 25688)
             anInt8604 = -90;
@@ -469,18 +467,18 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8612 = i;
             anInt8604 = i_49_;
-            ((Class14) this).aClass377_5082.method3850((byte) -67, this);
+            this.aClass377_5082.method3850((byte) -67, this);
             if (bool || (i_51_ ^ 0xffffffff) != -1
                     || (i_50_ ^ 0xffffffff) != -1) {
                 OpenGL.glPixelStorei(3314, i_51_);
-                OpenGL.glTexImage2Df(((Class14) this).anInt5093, 0,
+                OpenGL.glTexImage2Df(this.anInt5093, 0,
                         this.method228(111), i, i_49_, 0,
                         (Class348_Sub40_Sub3.method3055
-                                (106, ((Class14) this).aClass304_5084)),
+                                (106, this.aClass304_5084)),
                         5126, fs, 4 * i_50_);
                 OpenGL.glPixelStorei(3314, 0);
             } else
-                this.method238(((Class14) this).anInt5093, 1, i, fs, i_49_);
+                this.method238(this.anInt5093, 1, i, fs, i_49_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

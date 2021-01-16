@@ -23,12 +23,12 @@ final class za_Sub1 extends za {
     }
 
     za_Sub1(int i) {
-        ((za_Sub1) this).aNativeHeap9770 = new NativeHeap(i);
+        this.aNativeHeap9770 = new NativeHeap(i);
     }
 
     final void method3440(int i) {
         anInt9772++;
-        ((za_Sub1) this).aNativeHeap9770.b();
+        this.aNativeHeap9770.b();
         int i_0_ = -30 / ((i - -26) / 52);
     }
 

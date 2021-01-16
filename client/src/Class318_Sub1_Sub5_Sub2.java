@@ -34,7 +34,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 
     public final void method43(ha var_ha, int i) {
         anInt10151++;
-        ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155.method1674(i + 14217,
+        this.aClass235_10155.method1674(i + 14217,
                 var_ha);
         if (i != -14218)
             method40(127);
@@ -44,7 +44,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
         anInt10157++;
         if (bool != true)
             aBoolean10153 = false;
-        return ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+        return this.aClass235_10155
                 .method1663(101);
     }
 
@@ -52,7 +52,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
         anInt10170++;
         if (i != -32228)
             method2387(null, 89);
-        return (((Class235) ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155)
+        return (this.aClass235_10155
                 .anInt3052);
     }
 
@@ -60,13 +60,13 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
         anInt10162++;
         if (i != -18443)
             aBoolean10148 = false;
-        return ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+        return this.aClass235_10155
                 .method1665(i + 18445);
     }
 
     public final void method44(int i, ha var_ha) {
         if (i == 836) {
-            ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+            this.aClass235_10155
                     .method1667((byte) 116, var_ha);
             anInt10165++;
         }
@@ -76,7 +76,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
         anInt10171++;
         if (i > -62)
             return 40;
-        return (((Class235) ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155)
+        return (this.aClass235_10155
                 .anInt3063);
     }
 
@@ -84,16 +84,16 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
         if (i >= -125)
             aBoolean10148 = false;
         anInt10154++;
-        Class64 class64 = ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+        Class64 class64 = this.aClass235_10155
                 .method1668(false, true, -127, 262144, var_ha);
         if (class64 != null) {
-            int i_0_ = ((Class318_Sub1) this).anInt6377 >> -1531002263;
-            int i_1_ = ((Class318_Sub1) this).anInt6388 >> -915591191;
+            int i_0_ = this.anInt6377 >> -1531002263;
+            int i_1_ = this.anInt6388 >> -915591191;
             Class101 class101 = var_ha.method3705();
-            class101.method894(((Class318_Sub1) this).anInt6377,
-                    ((Class318_Sub1) this).anInt6382,
-                    ((Class318_Sub1) this).anInt6388);
-            ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155.method1670
+            class101.method894(this.anInt6377,
+                    this.anInt6382,
+                    this.anInt6388);
+            this.aClass235_10155.method1670
                     (i_0_, class101, i_1_, var_ha, i_0_, class64, false,
                             (byte) -73, i_1_);
         }
@@ -102,7 +102,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
     public final int method39(int i) {
         anInt10161++;
         int i_2_ = -29 % ((-91 - i) / 35);
-        return (((Class235) ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155)
+        return (this.aClass235_10155
                 .anInt3079);
     }
 
@@ -115,36 +115,36 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10159++;
-        Class64 class64 = ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+        Class64 class64 = this.aClass235_10155
                 .method1668(false, true, -127, 2048, var_ha);
         if (class64 == null)
             return null;
         Class101 class101 = var_ha.method3705();
-        class101.method894((((Class318_Sub1) this).anInt6377
-                        + ((Class318_Sub1_Sub5) this).aShort8781),
-                ((Class318_Sub1) this).anInt6382,
-                (((Class318_Sub1) this).anInt6388
-                        + ((Class318_Sub1_Sub5) this).aShort8769));
+        class101.method894((this.anInt6377
+                        + this.aShort8781),
+                this.anInt6382,
+                (this.anInt6388
+                        + this.aShort8769));
         Class318_Sub4 class318_sub4
                 = OutputStream_Sub2.method136(i, aBoolean10153, false);
-        int i_3_ = ((Class318_Sub1) this).anInt6377 >> 1712008233;
-        int i_4_ = ((Class318_Sub1) this).anInt6388 >> 321153897;
-        ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155.method1670
+        int i_3_ = this.anInt6377 >> 1712008233;
+        int i_4_ = this.anInt6388 >> 321153897;
+        this.aClass235_10155.method1670
                 (i_3_, class101, i_4_, var_ha, i_3_, class64, true, (byte) -73,
                         i_4_);
         if (!Class305.aBoolean3870)
-            class64.method615(class101, (((Class318_Sub4) class318_sub4)
+            class64.method615(class101, (class318_sub4
                     .aClass318_Sub3Array6414[0]), 0);
         else
             class64.method608(class101,
-                    (((Class318_Sub4) class318_sub4)
+                    (class318_sub4
                             .aClass318_Sub3Array6414[0]),
                     Class132.anInt1906, 0);
-        if ((((Class235) ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155)
+        if ((this.aClass235_10155
                 .aClass318_Sub10_3081)
                 != null) {
             Class98 class98
-                    = ((Class235) ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155)
+                    = this.aClass235_10155
                     .aClass318_Sub10_3081.method2525();
             if (!Class305.aBoolean3870)
                 var_ha.method3684(class98);
@@ -152,19 +152,19 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
                 var_ha.method3685(class98, Class132.anInt1906);
         }
         aBoolean10148
-                = class64.F() || (((Class235) (((Class318_Sub1_Sub5_Sub2) this)
-                .aClass235_10155))
+                = class64.F() || (this
+                .aClass235_10155
                 .aClass318_Sub10_3081) != null;
         if (aClass30_10150 == null)
             aClass30_10150 = (Class348_Sub23_Sub1.method2967
-                    (((Class318_Sub1) this).anInt6377, class64,
-                            ((Class318_Sub1) this).anInt6388,
-                            ((Class318_Sub1) this).anInt6382, 2));
+                    (this.anInt6377, class64,
+                            this.anInt6388,
+                            this.anInt6382, 2));
         else
-            Class255.method1935(((Class318_Sub1) this).anInt6388,
-                    ((Class318_Sub1) this).anInt6382,
+            Class255.method1935(this.anInt6388,
+                    this.anInt6382,
                     aClass30_10150, class64, false,
-                    ((Class318_Sub1) this).anInt6377);
+                    this.anInt6377);
         return class318_sub4;
     }
 
@@ -196,11 +196,11 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
                             int i_13_) {
         super(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_);
         try {
-            ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+            this.aClass235_10155
                     = new Class235(var_ha, class51, i_11_, i_12_,
-                    ((Class318_Sub1) this).aByte6381, i_5_, this,
+                    this.aByte6381, i_5_, this,
                     bool, i_13_);
-            aBoolean10153 = ((Class51) class51).anInt874 != 0 && !bool;
+            aBoolean10153 = class51.anInt874 != 0 && !bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,
@@ -214,18 +214,18 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 
     final boolean method2391(ha var_ha, int i, int i_14_, int i_15_) {
         anInt10152++;
-        Class64 class64 = ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+        Class64 class64 = this.aClass235_10155
                 .method1668(false, false, -128, 131072, var_ha);
         if (class64 == null)
             return false;
         if (i_15_ != 0)
             return true;
         Class101 class101 = var_ha.method3705();
-        class101.method894((((Class318_Sub1_Sub5) this).aShort8781
-                        + ((Class318_Sub1) this).anInt6377),
-                ((Class318_Sub1) this).anInt6382,
-                (((Class318_Sub1_Sub5) this).aShort8769
-                        + ((Class318_Sub1) this).anInt6388));
+        class101.method894((this.aShort8781
+                        + this.anInt6377),
+                this.anInt6382,
+                (this.aShort8769
+                        + this.anInt6388));
         if (Class305.aBoolean3870)
             return class64.method623(i_14_, i, class101, false, 0,
                     Class132.anInt1906);
@@ -240,14 +240,14 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
                  (class242s.length ^ 0xffffffff) < (i_16_ ^ 0xffffffff);
                  i_16_++) {
                 if (class242s[i_16_] == null
-                        || ((Class242) class242s[i_16_]).aLong3156 <= 0L)
+                        || class242s[i_16_].aLong3156 <= 0L)
                     return null;
             }
             long l = OpenGL.glCreateProgramObjectARB();
             for (int i_17_ = 0;
                  (i_17_ ^ 0xffffffff) > (class242s.length ^ 0xffffffff);
                  i_17_++)
-                OpenGL.glAttachObjectARB(l, (((Class242) class242s[i_17_])
+                OpenGL.glAttachObjectARB(l, (class242s[i_17_]
                         .aLong3156));
             OpenGL.glLinkProgramARB(l);
             OpenGL.glGetObjectParameterivARB(l, 35714, Class187.anIntArray2509,
@@ -266,7 +266,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
                 if (Class187.anIntArray2509[0] == 0) {
                     for (int i_18_ = 0; class242s.length > i_18_; i_18_++)
                         OpenGL.glDetachObjectARB(l,
-                                (((Class242) class242s[i_18_])
+                                (class242s[i_18_]
                                         .aLong3156));
                     OpenGL.glDeleteObjectARB(l);
                     return null;
@@ -289,7 +289,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
         anInt10160++;
         if (i != -25675)
             aBoolean10153 = false;
-        return ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
+        return this.aClass235_10155
                 .method1664(-119);
     }
 

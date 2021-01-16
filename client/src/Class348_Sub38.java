@@ -8,28 +8,28 @@ import jaclib.memory.Stream;
 final class Class348_Sub38 extends Class348 {
     static int anInt7000;
     private float[][] aFloatArrayArray7001;
-    private Interface5_Impl2 anInterface5_Impl2_7002;
+    private final Interface5_Impl2 anInterface5_Impl2_7002;
     static int anInt7003;
-    private Class348_Sub1 aClass348_Sub1_7004;
+    private final Class348_Sub1 aClass348_Sub1_7004;
     private float[][] aFloatArrayArray7005;
     static int anInt7006 = 0;
-    private ha_Sub3 aHa_Sub3_7007;
+    private final ha_Sub3 aHa_Sub3_7007;
     static int anInt7008 = 0;
     static int anInt7009;
-    private int anInt7010;
+    private final int anInt7010;
     private Class356 aClass356_7011;
     static int anInt7012;
     private int anInt7013;
-    private int anInt7014;
+    private final int anInt7014;
     static Class114 aClass114_7015 = new Class114(33, 3);
     private float[][] aFloatArrayArray7016;
-    private int anInt7017;
+    private final int anInt7017;
     private int anInt7018;
-    private s_Sub3 aS_Sub3_7019;
-    private Interface5_Impl1 anInterface5_Impl1_7020;
+    private final s_Sub3 aS_Sub3_7019;
+    private final Interface5_Impl1 anInterface5_Impl1_7020;
     private Stream aStream7021;
     private Stream aStream7022;
-    private int anInt7023;
+    private final int anInt7023;
 
     final void method3032(int i, int i_0_, boolean[][] bools, boolean bool,
                           int i_1_) {
@@ -56,7 +56,7 @@ final class Class348_Sub38 extends Class348 {
                             aHa_Sub3_7007
                                     .method3925(-123, anInterface5_Impl1_7020, 0);
                             aHa_Sub3_7007.method3862(0,
-                                    (((ha_Sub3) aHa_Sub3_7007)
+                                    (aHa_Sub3_7007
                                             .aClass130_8202));
                             aHa_Sub3_7007.method3938(Class247.aClass21_3181,
                                     anInt7018 / 3,
@@ -74,15 +74,15 @@ final class Class348_Sub38 extends Class348 {
                                   int i_9_, int i_10_, int i_11_) {
         anInt7003++;
         long l = -1L;
-        int i_12_ = i_10_ + (i_6_ << ((s) aS_Sub3_7019).anInt4588);
-        int i_13_ = i_8_ - -(i_9_ << ((s) aS_Sub3_7019).anInt4588);
+        int i_12_ = i_10_ + (i_6_ << aS_Sub3_7019.anInt4588);
+        int i_13_ = i_8_ - -(i_9_ << aS_Sub3_7019.anInt4588);
         int i_14_ = aS_Sub3_7019.method3986(i_12_, i_13_, (byte) -127);
         if ((i_10_ & 0x7f ^ 0xffffffff) == -1
                 || (i_8_ & 0x7f ^ 0xffffffff) == -1) {
             l = ((long) i_13_ & 0xffffL) << 926055376 | (long) i_12_ & 0xffffL;
             Class348 class348 = aClass356_7011.method3480(l, i_7_ + 23335);
             if (class348 != null) {
-                method3034((((Class348_Sub29) (Class348_Sub29) class348)
+                method3034((((Class348_Sub29) class348)
                                 .aShort6911),
                         (byte) 49);
                 return;
@@ -99,21 +99,21 @@ final class Class348_Sub38 extends Class348 {
             f_16_ = aFloatArrayArray7016[i_11_][i];
             f_17_ = aFloatArrayArray7005[i_11_][i];
             f = aFloatArrayArray7001[i_11_][i];
-        } else if ((i_10_ ^ 0xffffffff) != (((s) aS_Sub3_7019).anInt4592
+        } else if ((i_10_ ^ 0xffffffff) != (aS_Sub3_7019.anInt4592
                 ^ 0xffffffff)
                 || (i_8_ ^ 0xffffffff) != -1) {
-            if (((s) aS_Sub3_7019).anInt4592 != i_10_
-                    || ((((s) aS_Sub3_7019).anInt4592 ^ 0xffffffff)
+            if (aS_Sub3_7019.anInt4592 != i_10_
+                    || ((aS_Sub3_7019.anInt4592 ^ 0xffffffff)
                     != (i_8_ ^ 0xffffffff))) {
-                if (i_10_ == 0 && i_8_ == ((s) aS_Sub3_7019).anInt4592) {
+                if (i_10_ == 0 && i_8_ == aS_Sub3_7019.anInt4592) {
                     f = aFloatArrayArray7001[i_11_][i + 1];
                     f_16_ = aFloatArrayArray7016[i_11_][1 + i];
                     f_17_ = aFloatArrayArray7005[i_11_][i - -1];
                 } else {
                     float f_18_
-                            = (float) i_10_ / (float) ((s) aS_Sub3_7019).anInt4592;
+                            = (float) i_10_ / (float) aS_Sub3_7019.anInt4592;
                     float f_19_
-                            = (float) i_8_ / (float) ((s) aS_Sub3_7019).anInt4592;
+                            = (float) i_8_ / (float) aS_Sub3_7019.anInt4592;
                     float f_20_ = aFloatArrayArray7005[i_11_][i];
                     float f_21_ = aFloatArrayArray7016[i_11_][i];
                     float f_22_ = aFloatArrayArray7001[i_11_][i];
@@ -152,8 +152,8 @@ final class Class348_Sub38 extends Class348 {
         float f_28_
                 = (float) (-i_13_ + aClass348_Sub1_7004.method2717((byte) 102));
         float f_29_
-                = (float) Math.sqrt((double) (f_28_ * f_28_
-                + (f_26_ * f_26_ + f_27_ * f_27_)));
+                = (float) Math.sqrt(f_28_ * f_28_
+                + (f_26_ * f_26_ + f_27_ * f_27_));
         float f_30_ = 1.0F / f_29_;
         f_26_ *= f_30_;
         f_27_ *= f_30_;
@@ -189,7 +189,7 @@ final class Class348_Sub38 extends Class348 {
                 aStream7022.a((float) i_14_);
                 aStream7022.a((float) i_13_);
             }
-            if (((ha_Sub3) aHa_Sub3_7007).anInt8178 != 0) {
+            if (aHa_Sub3_7007.anInt8178 != 0) {
                 aStream7022.f(i_36_);
                 aStream7022.f(i_37_);
                 aStream7022.f(i_38_);
@@ -225,15 +225,15 @@ final class Class348_Sub38 extends Class348 {
             aS_Sub3_7019 = var_s_Sub3;
             aClass348_Sub1_7004 = class348_sub1;
             int i = (aClass348_Sub1_7004.method2723(-1)
-                    + -(((s) var_s_Sub3).anInt4592 >> -108667167));
+                    + -(var_s_Sub3.anInt4592 >> -108667167));
             anInt7023 = (-i + aClass348_Sub1_7004.method2724(-1)
-                    >> ((s) var_s_Sub3).anInt4588);
+                    >> var_s_Sub3.anInt4588);
             anInt7017 = (aClass348_Sub1_7004.method2724(-1) + i
-                    >> ((s) var_s_Sub3).anInt4588);
+                    >> var_s_Sub3.anInt4588);
             anInt7014 = (-i + aClass348_Sub1_7004.method2717((byte) 124)
-                    >> ((s) var_s_Sub3).anInt4588);
+                    >> var_s_Sub3.anInt4588);
             anInt7010 = (aClass348_Sub1_7004.method2717((byte) 72) + i
-                    >> ((s) var_s_Sub3).anInt4588);
+                    >> var_s_Sub3.anInt4588);
             int i_40_ = anInt7017 - anInt7023 - -1;
             int i_41_ = 1 + -anInt7014 + anInt7010;
             aFloatArrayArray7005 = new float[1 + i_40_][i_41_ - -1];
@@ -244,13 +244,13 @@ final class Class348_Sub38 extends Class348 {
                 int i_43_ = anInt7014 + i_42_;
                 if (i_43_ > 0
                         && ((i_43_ ^ 0xffffffff)
-                        > (-1 + ((s) aS_Sub3_7019).anInt4590 ^ 0xffffffff))) {
+                        > (-1 + aS_Sub3_7019.anInt4590 ^ 0xffffffff))) {
                     for (int i_44_ = 0;
                          (i_40_ ^ 0xffffffff) <= (i_44_ ^ 0xffffffff);
                          i_44_++) {
                         int i_45_ = anInt7023 + i_44_;
                         if ((i_45_ ^ 0xffffffff) < -1
-                                && i_45_ < ((s) aS_Sub3_7019).anInt4587 + -1) {
+                                && i_45_ < aS_Sub3_7019.anInt4587 + -1) {
                             int i_46_
                                     = (var_s_Sub3.method3982((byte) -86, i_43_,
                                     i_45_ + 1)
@@ -264,9 +264,9 @@ final class Class348_Sub38 extends Class348 {
                                     i_45_));
                             float f
                                     = (float) (1.0 / (Math.sqrt
-                                    ((double) (i_47_ * i_47_
+                                    (i_47_ * i_47_
                                             + (i_46_ * i_46_
-                                            - -65536)))));
+                                            - -65536))));
                             aFloatArrayArray7005[i_44_][i_42_]
                                     = (float) i_46_ * f;
                             aFloatArrayArray7016[i_44_][i_42_] = -256.0F * f;
@@ -279,15 +279,15 @@ final class Class348_Sub38 extends Class348 {
             int i_48_ = 0;
             for (int i_49_ = anInt7014; anInt7010 >= i_49_; i_49_++) {
                 if ((i_49_ ^ 0xffffffff) <= -1
-                        && ((s) var_s_Sub3).anInt4590 > i_49_) {
+                        && var_s_Sub3.anInt4590 > i_49_) {
                     for (int i_50_ = anInt7023;
                          (i_50_ ^ 0xffffffff) >= (anInt7017 ^ 0xffffffff);
                          i_50_++) {
                         if ((i_50_ ^ 0xffffffff) <= -1
-                                && ((s) var_s_Sub3).anInt4587 > i_50_) {
+                                && var_s_Sub3.anInt4587 > i_50_) {
                             int i_51_ = is[i_48_];
                             int[] is_52_
-                                    = (((s_Sub3) var_s_Sub3)
+                                    = (var_s_Sub3
                                     .anIntArrayArrayArray8296[i_50_][i_49_]);
                             if (is_52_ != null && i_51_ != 0) {
                                 if (i_51_ == 1) {
@@ -328,18 +328,18 @@ final class Class348_Sub38 extends Class348 {
                         for (int i_55_ = anInt7014; anInt7010 >= i_55_;
                              i_55_++) {
                             if (i_55_ >= 0
-                                    && ((((s) var_s_Sub3).anInt4590 ^ 0xffffffff)
+                                    && ((var_s_Sub3.anInt4590 ^ 0xffffffff)
                                     < (i_55_ ^ 0xffffffff))) {
                                 int i_56_ = 0;
                                 for (int i_57_ = anInt7023; anInt7017 >= i_57_;
                                      i_57_++) {
                                     if ((i_57_ ^ 0xffffffff) <= -1
-                                            && ((((s) var_s_Sub3).anInt4587
+                                            && ((var_s_Sub3.anInt4587
                                             ^ 0xffffffff)
                                             < (i_57_ ^ 0xffffffff))) {
                                         int i_58_ = is[i_48_];
                                         int[] is_59_
-                                                = (((s_Sub3) var_s_Sub3)
+                                                = (var_s_Sub3
                                                 .anIntArrayArrayArray8296[i_57_]
                                                 [i_55_]);
                                         if (is_59_ != null && i_58_ != 0) {
@@ -352,14 +352,12 @@ final class Class348_Sub38 extends Class348 {
                                                     method3033(i_54_, i_57_,
                                                             -29343, 0,
                                                             i_55_,
-                                                            (((s)
-                                                                    var_s_Sub3)
+                                                            (var_s_Sub3
                                                                     .anInt4592),
                                                             i_56_);
                                                     method3033(i_54_, i_57_,
                                                             -29343,
-                                                            (((s)
-                                                                    var_s_Sub3)
+                                                            (var_s_Sub3
                                                                     .anInt4592),
                                                             i_55_, 0,
                                                             i_56_);
@@ -368,22 +366,22 @@ final class Class348_Sub38 extends Class348 {
                                                         method3033
                                                                 (i_54_, i_57_,
                                                                         -29343,
-                                                                        (((s) var_s_Sub3)
+                                                                        (var_s_Sub3
                                                                                 .anInt4592),
                                                                         i_55_,
-                                                                        (((s) var_s_Sub3)
+                                                                        (var_s_Sub3
                                                                                 .anInt4592),
                                                                         i_56_);
                                                         method3033
                                                                 (i_54_, i_57_,
                                                                         -29343,
-                                                                        (((s) var_s_Sub3)
+                                                                        (var_s_Sub3
                                                                                 .anInt4592),
                                                                         i_55_, 0, i_56_);
                                                         method3033
                                                                 (i_54_, i_57_,
                                                                         -29343, 0, i_55_,
-                                                                        (((s) var_s_Sub3)
+                                                                        (var_s_Sub3
                                                                                 .anInt4592),
                                                                         i_56_);
                                                     } else if ((i_58_
@@ -392,7 +390,7 @@ final class Class348_Sub38 extends Class348 {
                                                         method3033
                                                                 (i_54_, i_57_,
                                                                         -29343,
-                                                                        (((s) var_s_Sub3)
+                                                                        (var_s_Sub3
                                                                                 .anInt4592),
                                                                         i_55_, 0, i_56_);
                                                         method3033(i_54_,
@@ -403,10 +401,10 @@ final class Class348_Sub38 extends Class348 {
                                                         method3033
                                                                 (i_54_, i_57_,
                                                                         -29343,
-                                                                        (((s) var_s_Sub3)
+                                                                        (var_s_Sub3
                                                                                 .anInt4592),
                                                                         i_55_,
-                                                                        (((s) var_s_Sub3)
+                                                                        (var_s_Sub3
                                                                                 .anInt4592),
                                                                         i_56_);
                                                     }
@@ -414,18 +412,15 @@ final class Class348_Sub38 extends Class348 {
                                                     method3033(i_54_, i_57_,
                                                             -29343, 0,
                                                             i_55_,
-                                                            (((s)
-                                                                    var_s_Sub3)
+                                                            (var_s_Sub3
                                                                     .anInt4592),
                                                             i_56_);
                                                     method3033(i_54_, i_57_,
                                                             -29343,
-                                                            (((s)
-                                                                    var_s_Sub3)
+                                                            (var_s_Sub3
                                                                     .anInt4592),
                                                             i_55_,
-                                                            (((s)
-                                                                    var_s_Sub3)
+                                                            (var_s_Sub3
                                                                     .anInt4592),
                                                             i_56_);
                                                     method3033(i_54_, i_57_,
@@ -435,11 +430,11 @@ final class Class348_Sub38 extends Class348 {
                                                 }
                                             } else {
                                                 int[] is_60_
-                                                        = (((s_Sub3) var_s_Sub3)
+                                                        = (var_s_Sub3
                                                         .anIntArrayArrayArray8321
                                                         [i_57_][i_55_]);
                                                 int[] is_61_
-                                                        = (((s_Sub3) var_s_Sub3)
+                                                        = (var_s_Sub3
                                                         .anIntArrayArrayArray8313
                                                         [i_57_][i_55_]);
                                                 int i_62_ = 0;

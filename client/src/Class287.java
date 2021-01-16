@@ -23,66 +23,66 @@ final class Class287 {
             anInt3694++;
             if (Class147.anInt2021 < 50
                     && (class17 != null
-                    && ((Class17) class17).anIntArrayArray264 != null
+                    && class17.anIntArrayArray264 != null
                     && ((i ^ 0xffffffff)
-                    > (((Class17) class17).anIntArrayArray264.length
+                    > (class17.anIntArrayArray264.length
                     ^ 0xffffffff))
-                    && ((Class17) class17).anIntArrayArray264[i] != null)) {
-                int i_1_ = ((Class17) class17).anIntArrayArray264[i][0];
+                    && class17.anIntArrayArray264[i] != null)) {
+                int i_1_ = class17.anIntArrayArray264[i][0];
                 int i_2_ = i_1_ >> 572505608;
                 int i_3_ = (i_1_ & 0xf1) >> 1350926597;
                 if (i_0_ > -13)
                     anInt3695 = 0;
-                if ((((Class17) class17).anIntArrayArray264[i].length
+                if ((class17.anIntArrayArray264[i].length
                         ^ 0xffffffff)
                         < -2) {
-                    int i_4_ = (int) ((double) (((Class17) class17)
+                    int i_4_ = (int) ((double) (class17
                             .anIntArrayArray264[i]).length
                             * Math.random());
                     if (i_4_ > 0)
-                        i_2_ = ((Class17) class17).anIntArrayArray264[i][i_4_];
+                        i_2_ = class17.anIntArrayArray264[i][i_4_];
                 }
                 int i_5_ = i_1_ & 0x1f;
                 int i_6_ = 256;
-                if (((Class17) class17).anIntArray236 != null
-                        && ((Class17) class17).anIntArray265 != null)
+                if (class17.anIntArray236 != null
+                        && class17.anIntArray265 != null)
                     i_6_ = ((int) (Math.random()
-                            * (double) (-(((Class17) class17)
+                            * (double) (-(class17
                             .anIntArray236[i])
-                            + (((Class17) class17)
+                            + (class17
                             .anIntArray265[i])))
-                            + ((Class17) class17).anIntArray236[i]);
-                int i_7_ = (((Class17) class17).anIntArray253 == null ? 255
-                        : ((Class17) class17).anIntArray253[i]);
+                            + class17.anIntArray236[i]);
+                int i_7_ = (class17.anIntArray253 == null ? 255
+                        : class17.anIntArray253[i]);
                 if (i_5_ == 0) {
                     if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             == class318_sub1) {
-                        if (!((Class17) class17).aBoolean268)
+                        if (!class17.aBoolean268)
                             Class348_Sub20.method2947(true, i_7_, i_2_, i_3_,
                                     0, i_6_);
                         else
                             Class279.method2090(i_3_, i_6_, false, (byte) -35,
                                     i_7_, 0, i_2_);
                     }
-                } else if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                } else if ((Class316.aClass348_Sub51_3959
                         .aClass239_Sub26_7234.method1838(-32350)
                         ^ 0xffffffff)
                         != -1) {
                     int i_8_
-                            = (((Class318_Sub1) class318_sub1).anInt6377 + -256
+                            = (class318_sub1.anInt6377 + -256
                             >> -301859767);
-                    int i_9_ = (((Class318_Sub1) class318_sub1).anInt6388 - 256
+                    int i_9_ = (class318_sub1.anInt6388 - 256
                             >> -2115417367);
                     int i_10_
                             = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             != class318_sub1)
-                            ? ((((Class318_Sub1) class318_sub1).aByte6381
+                            ? ((class318_sub1.aByte6381
                             << 111160376)
                             + ((i_8_ << 1221818896) + (i_9_ << -395896696))
                             + i_5_)
                             : 0);
                     Class258_Sub2.aClass10Array8531[Class147.anInt2021++]
-                            = new Class10((((Class17) class17).aBoolean268
+                            = new Class10((class17.aBoolean268
                             ? (byte) 2 : (byte) 1),
                             i_2_, i_3_, 0, i_7_, i_10_, i_6_,
                             class318_sub1);
@@ -128,8 +128,8 @@ final class Class287 {
                     >= (l ^ 0xffffffffffffffffL)) {
                 if (i_13_ > -49)
                     method2178(null, -119, null, 58);
-                int i_19_ = Math.min(((Class46) class46).anInt709 / 2,
-                        ((Class46) class46).anInt789 / 2);
+                int i_19_ = Math.min(class46.anInt709 / 2,
+                        class46.anInt789 / 2);
                 if (i_18_ > i_19_ * i_19_) {
                     i_19_ -= 10;
                     int i_20_;
@@ -149,14 +149,14 @@ final class Class287 {
                     int i_23_ = i_22_ * i_16_ + i_21_ * i_14_ >> 1642038190;
                     int i_24_
                             = i_22_ * i_14_ + -(i_21_ * i_16_) >> -1022541042;
-                    double d = Math.atan2((double) i_23_, (double) i_24_);
+                    double d = Math.atan2(i_23_, i_24_);
                     int i_25_ = (int) ((double) i_19_ * Math.sin(d));
                     int i_26_ = (int) (Math.cos(d) * (double) i_19_);
                     Class200.aClass105Array2640[i_17_].method981
-                            (((float) ((Class46) class46).anInt709 / 2.0F
+                            (((float) class46.anInt709 / 2.0F
                                             + (float) i_15_ + (float) i_25_),
                                     ((float) i
-                                            + (float) ((Class46) class46).anInt789 / 2.0F
+                                            + (float) class46.anInt789 / 2.0F
                                             - (float) i_26_),
                                     4096, (int) (65535.0 * (-d / 6.283185307179586)));
                 } else
@@ -223,18 +223,18 @@ final class Class287 {
     }
 
     final void method2183(Class348_Sub49 class348_sub49, int i) {
-        ((Class287) this).anInt3690 = class348_sub49.method3351(-1);
+        this.anInt3690 = class348_sub49.method3351(-1);
         anInt3693++;
-        ((Class287) this).anInt3687 = class348_sub49.method3330(842397944);
-        ((Class287) this).anInterface12Array3688
+        this.anInt3687 = class348_sub49.method3330(842397944);
+        this.anInterface12Array3688
                 = new Interface12[class348_sub49.method3387(i ^ 0x557d)];
         Class223[] class223s = Class19.method285(-99);
         int i_27_ = 0;
         if (i != 21890)
             method2180((byte) 25);
-        for (/**/; ((Class287) this).anInterface12Array3688.length > i_27_;
+        for (/**/; this.anInterface12Array3688.length > i_27_;
                  i_27_++)
-            ((Class287) this).anInterface12Array3688[i_27_]
+            this.anInterface12Array3688[i_27_]
                     = method2182(true,
                     class223s[(class348_sub49.method3387
                             (Class348_Sub21.method2955(i,

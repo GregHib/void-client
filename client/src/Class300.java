@@ -51,18 +51,18 @@ final class Class300 {
     private final void method2276(int i, Class348_Sub49 class348_sub49,
                                   int i_3_) {
         if (i_3_ == 1)
-            ((Class300) this).anInt3817 = class348_sub49.method3330(842397944);
+            this.anInt3817 = class348_sub49.method3330(842397944);
         else if ((i_3_ ^ 0xffffffff) != -3) {
             if (i_3_ == 3)
-                ((Class300) this).anInt3823 = class348_sub49.method3387(255);
+                this.anInt3823 = class348_sub49.method3387(255);
         } else {
-            ((Class300) this).anIntArray3821
+            this.anIntArray3821
                     = new int[class348_sub49.method3387(255)];
             for (int i_4_ = 0;
-                 ((((Class300) this).anIntArray3821.length ^ 0xffffffff)
+                 ((this.anIntArray3821.length ^ 0xffffffff)
                          < (i_4_ ^ 0xffffffff));
                  i_4_++)
-                ((Class300) this).anIntArray3821[i_4_]
+                this.anIntArray3821[i_4_]
                         = class348_sub49.method3330(842397944);
         }
         if (i != 0)
@@ -82,6 +82,6 @@ final class Class300 {
     }
 
     public Class300() {
-        ((Class300) this).anInt3817 = -1;
+        this.anInt3817 = -1;
     }
 }

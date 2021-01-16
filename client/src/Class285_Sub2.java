@@ -13,7 +13,7 @@ final class Class285_Sub2 extends Class285 implements Interface5_Impl2 {
     static int anInt8501;
     static int anInt8502;
     static Class70 aClass70_8503 = new Class70();
-    private Class68 aClass68_8504;
+    private final Class68 aClass68_8504;
     static byte[][] aByteArrayArray8505 = new byte[50][];
     static int anInt8506;
     static int[] anIntArray8507
@@ -44,7 +44,7 @@ final class Class285_Sub2 extends Class285 implements Interface5_Impl2 {
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     public final void method23(int i, int i_0_) {
-        super.method23(i, i_0_ * ((Class68) aClass68_8504).anInt1178);
+        super.method23(i, i_0_ * aClass68_8504.anInt1178);
         anInt8499++;
     }
 
@@ -61,7 +61,7 @@ final class Class285_Sub2 extends Class285 implements Interface5_Impl2 {
             aClass70_8503 = null;
         anInt8500++;
         return super.method2120(0,
-                (((Class377) ((Class285) this).aClass377_4759)
+                (this.aClass377_4759
                         .aMapBuffer9913),
                 bool);
     }
@@ -77,7 +77,7 @@ final class Class285_Sub2 extends Class285 implements Interface5_Impl2 {
         anInt8501++;
         if (i != -23)
             return false;
-        return super.method2123((((Class377) ((Class285) this).aClass377_4759)
+        return super.method2123((this.aClass377_4759
                         .aMapBuffer9913),
                 0);
     }

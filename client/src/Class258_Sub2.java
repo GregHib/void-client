@@ -18,7 +18,7 @@ final class Class258_Sub2 extends Class258 {
     final void method1961(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
         anInt8533++;
         OpenGL.glFramebufferTexture2DEXT(i, i_1_, i_0_,
-                ((Class258) this).anInt4859, i_2_);
+                this.anInt4859, i_2_);
         if (i_3_ != -1)
             aStringArray8532 = null;
         anInt8536 = i;
@@ -27,13 +27,13 @@ final class Class258_Sub2 extends Class258 {
 
     Class258_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_4_) {
         super(var_ha_Sub2, 34067, i, i_4_ * (i_4_ * 6), false);
-        ((Class258_Sub2) this).anInt8538 = i_4_;
-        ((Class258) this).aHa_Sub2_4851.method3771((byte) -81, this);
+        this.anInt8538 = i_4_;
+        this.aHa_Sub2_4851.method3771((byte) -81, this);
         for (int i_5_ = 0; i_5_ < 6; i_5_++)
-            OpenGL.glTexImage2Dub(i_5_ + 34069, 0, ((Class258) this).anInt4858,
+            OpenGL.glTexImage2Dub(i_5_ + 34069, 0, this.anInt4858,
                     i_4_, i_4_, 0,
                     Class348_Sub9.method2779(true,
-                            (((Class258) this)
+                            (this
                                     .anInt4858)),
                     5121, null, 0);
         this.method1957(9728, true);
@@ -52,11 +52,11 @@ final class Class258_Sub2 extends Class258 {
                   byte[][] is, int i_7_) {
         super(var_ha_Sub2, 34067, i, i_6_ * (i_6_ * 6), bool);
         try {
-            ((Class258_Sub2) this).anInt8538 = i_6_;
-            ((Class258) this).aHa_Sub2_4851.method3771((byte) -127, this);
+            this.anInt8538 = i_6_;
+            this.aHa_Sub2_4851.method3771((byte) -127, this);
             for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > -7; i_8_++)
                 OpenGL.glTexImage2Dub(i_8_ + 34069, 0,
-                        ((Class258) this).anInt4858, i_6_, i_6_,
+                        this.anInt4858, i_6_, i_6_,
                         0, i_7_, 5121, is[i_8_], 0);
             this.method1957(9728, true);
         } catch (RuntimeException runtimeexception) {
@@ -75,22 +75,21 @@ final class Class258_Sub2 extends Class258 {
                   int[][] is) {
         super(var_ha_Sub2, 34067, i, 6 * i_9_ * i_9_, bool);
         try {
-            ((Class258_Sub2) this).anInt8538 = i_9_;
-            ((Class258) this).aHa_Sub2_4851.method3771((byte) -77, this);
+            this.anInt8538 = i_9_;
+            this.aHa_Sub2_4851.method3771((byte) -77, this);
             if (bool) {
                 for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -7; i_10_++)
                     Class353.method3460(i_10_ + 34069,
-                            ((Class258) this).anInt4858, i_9_,
-                            ((ha_Sub2) (((Class258) this)
-                                    .aHa_Sub2_4851)).anInt7812,
+                            this.anInt4858, i_9_,
+                            this
+                                    .aHa_Sub2_4851.anInt7812,
                             i_9_, is[i_10_], 32993, -83);
             } else {
                 for (int i_11_ = 0; i_11_ < 6; i_11_++)
                     OpenGL.glTexImage2Di(i_11_ + 34069, 0,
-                            ((Class258) this).anInt4858, i_9_,
+                            this.anInt4858, i_9_,
                             i_9_, 0, 32993,
-                            (((ha_Sub2)
-                                    ((Class258) this).aHa_Sub2_4851)
+                            (this.aHa_Sub2_4851
                                     .anInt7812),
                             is[i_11_], 0);
             }

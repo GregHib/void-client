@@ -12,10 +12,10 @@ final class Class166 {
     static int anInt2182;
     static Class114 aClass114_2183 = new Class114(0, -1);
     static int anInt2184;
-    private Class60 aClass60_2185 = new Class60(64);
+    private final Class60 aClass60_2185 = new Class60(64);
     static int anInt2186;
     static Class262 aClass262_2187 = new Class262();
-    private Class45 aClass45_2188;
+    private final Class45 aClass45_2188;
     static int anInt2189;
     Class60 aClass60_2190 = new Class60(2);
 
@@ -24,8 +24,8 @@ final class Class166 {
             aClass60_2185.method587(-76);
         }
         anInt2178++;
-        synchronized (((Class166) this).aClass60_2190) {
-            ((Class166) this).aClass60_2190.method587(-110);
+        synchronized (this.aClass60_2190) {
+            this.aClass60_2190.method587(-110);
         }
         if (i != 1)
             method1286(null, -124, null);
@@ -42,10 +42,10 @@ final class Class166 {
         synchronized (aClass60_2185) {
             aClass60_2185.method578(2, i);
         }
-        synchronized (((Class166) this).aClass60_2190) {
+        synchronized (this.aClass60_2190) {
             if (i_0_ != 8)
-                ((Class166) this).aClass45_2180 = null;
-            ((Class166) this).aClass60_2190.method578(i_0_ + -6, i);
+                this.aClass45_2180 = null;
+            this.aClass60_2190.method578(i_0_ + -6, i);
         }
     }
 
@@ -76,22 +76,22 @@ final class Class166 {
         Class222 class222;
         synchronized (aClass60_2185) {
             class222
-                    = (Class222) aClass60_2185.method583((long) i_1_, i ^ ~0x1d);
+                    = (Class222) aClass60_2185.method583(i_1_, i ^ ~0x1d);
         }
         if (class222 != null)
             return class222;
         if (i != -104)
-            ((Class166) this).aClass60_2190 = null;
+            this.aClass60_2190 = null;
         byte[] is;
         synchronized (aClass45_2188) {
             is = aClass45_2188.method410(-1860, 33, i_1_);
         }
         class222 = new Class222();
-        ((Class222) class222).aClass166_2886 = this;
+        class222.aClass166_2886 = this;
         if (is != null)
             class222.method1611(new Class348_Sub49(is), false);
         synchronized (aClass60_2185) {
-            aClass60_2185.method582(class222, (long) i_1_, (byte) -116);
+            aClass60_2185.method582(class222, i_1_, (byte) -116);
         }
         return class222;
     }
@@ -101,7 +101,7 @@ final class Class166 {
         for (Class348 class348 = Class226.aClass356_2959.method3484(i ^ i);
              class348 != null;
              class348 = Class226.aClass356_2959.method3482(0)) {
-            if ((((Class348) class348).aLong4291 >> 275343216 & 0xffffL)
+            if ((class348.aLong4291 >> 275343216 & 0xffffL)
                     == (long) i_2_)
                 class348.method2715((byte) 119);
         }
@@ -142,8 +142,8 @@ final class Class166 {
         synchronized (aClass60_2185) {
             aClass60_2185.method590(0);
         }
-        synchronized (((Class166) this).aClass60_2190) {
-            ((Class166) this).aClass60_2190.method590(0);
+        synchronized (this.aClass60_2190) {
+            this.aClass60_2190.method590(0);
             if (i != -8)
                 aClass114_2183 = null;
         }
@@ -152,7 +152,7 @@ final class Class166 {
     Class166(Class230 class230, int i, Class45 class45, Class45 class45_9_) {
         try {
             aClass45_2188 = class45;
-            ((Class166) this).aClass45_2180 = class45_9_;
+            this.aClass45_2180 = class45_9_;
             aClass45_2188.method407(0, 33);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929

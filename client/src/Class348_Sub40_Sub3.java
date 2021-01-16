@@ -71,9 +71,9 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
         if (i_3_ != 255)
             anInt9107 = -121;
         int[] is
-                = ((Class348_Sub40) this).aClass191_7032.method1433(i_3_ + -255,
+                = this.aClass191_7032.method1433(i_3_ + -255,
                 i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        if (this.aClass191_7032.aBoolean2570) {
             int[] is_4_ = this.method3048(i, 633706337, 0);
             for (int i_5_ = 0;
                  ((i_5_ ^ 0xffffffff)
@@ -92,8 +92,6 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
         if (i < 0)
             anInt9109 = 114;
         anInt9108++;
-        if ((0x22 & i_7_) == 0)
-            return false;
-        return true;
+        return (0x22 & i_7_) != 0;
     }
 }

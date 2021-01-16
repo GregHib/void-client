@@ -86,7 +86,7 @@ final class Class239_Sub17 extends Class239 {
 
     final void method1712(int i, int i_8_) {
         int i_9_ = -117 % ((82 - i) / 35);
-        ((Class239) this).anInt3138 = i_8_;
+        this.anInt3138 = i_8_;
         anInt6025++;
     }
 
@@ -100,9 +100,9 @@ final class Class239_Sub17 extends Class239 {
     final void method1716(boolean bool) {
         if (bool != false)
             method1793(null, 50, -30, -126);
-        if (((Class239) this).anInt3138 < 0
-                && (((Class239) this).anInt3138 ^ 0xffffffff) < -5)
-            ((Class239) this).anInt3138 = method1710(20014);
+        if (this.anInt3138 < 0
+                && (this.anInt3138 ^ 0xffffffff) < -5)
+            this.anInt3138 = method1710(20014);
         anInt6024++;
     }
 
@@ -117,10 +117,8 @@ final class Class239_Sub17 extends Class239 {
         if (i < 53)
             return true;
         anInt6019++;
-        if (i_10_ != 18 && (i_10_ ^ 0xffffffff) != -7 && i_10_ != 1011
-                && i_10_ != 13 && i_10_ != 16)
-            return false;
-        return true;
+        return i_10_ == 18 || (i_10_ ^ 0xffffffff) == -7 || i_10_ == 1011
+                || i_10_ == 13 || i_10_ == 16;
     }
 
     static final void method1797(int i, int i_11_, Class46 class46,
@@ -133,20 +131,20 @@ final class Class239_Sub17 extends Class239 {
             if (client.method105(class46).method3303(1)
                     && (Class38.anInt500 & 0x20 ^ 0xffffffff) != -1
                     && (class254 == null
-                    || (class46.method428(((Class254) class254).anInt3256,
+                    || (class46.method428(class254.anInt3256,
                     Class246.anInt3176, -128)
-                    != ((Class254) class254).anInt3256))) {
+                    != class254.anInt3256))) {
                 Class31.anInt436++;
                 Class50_Sub3.method466(false,
                         (Class28.aString5000 + " -> "
-                                + ((Class46) class46).aString752),
-                        ((Class46) class46).anInt830,
+                                + class46.aString752),
+                        class46.anInt830,
                         (byte) -90, false,
-                        ((Class46) class46).anInt704,
-                        ((Class46) class46).anInt812, true, 6,
-                        (long) (((Class46) class46).anInt830
-                                | (((Class46) class46).anInt704
-                                << -1824897120)),
+                        class46.anInt704,
+                        class46.anInt812, true, 6,
+                        class46.anInt830
+                                | (class46.anInt704
+                                << -1824897120),
                         Class28.aString5001, 0L,
                         Class348_Sub49_Sub1.anInt9747);
             }
@@ -155,16 +153,16 @@ final class Class239_Sub17 extends Class239 {
         for (int i_13_ = 9; i_13_ >= 5; i_13_--) {
             String string = Class368.method3561(i_13_, class46, true);
             if (string != null) {
-                Class50_Sub3.method466(false, ((Class46) class46).aString752,
-                        ((Class46) class46).anInt830,
+                Class50_Sub3.method466(false, class46.aString752,
+                        class46.anInt830,
                         (byte) -122, false,
-                        ((Class46) class46).anInt704,
-                        ((Class46) class46).anInt812, true,
+                        class46.anInt704,
+                        class46.anInt812, true,
                         1011,
-                        (long) ((((Class46) class46).anInt704
+                        (class46.anInt704
                                 << 987307680)
-                                | ((Class46) class46).anInt830),
-                        string, (long) (1 + i_13_),
+                                | class46.anInt830,
+                        string, 1 + i_13_,
                         Class100.method888((byte) 57, i_13_,
                                 class46));
                 Class335.anInt4169++;
@@ -172,14 +170,14 @@ final class Class239_Sub17 extends Class239 {
         }
         String string = Class239_Sub8.method1753(0, class46);
         if (string != null) {
-            Class50_Sub3.method466(false, ((Class46) class46).aString752,
-                    ((Class46) class46).anInt830, (byte) -83,
-                    false, ((Class46) class46).anInt704,
-                    ((Class46) class46).anInt812, true, 13,
-                    (long) ((((Class46) class46).anInt704
+            Class50_Sub3.method466(false, class46.aString752,
+                    class46.anInt830, (byte) -83,
+                    false, class46.anInt704,
+                    class46.anInt812, true, 13,
+                    (class46.anInt704
                             << 973259008)
-                            | ((Class46) class46).anInt830),
-                    string, 0L, ((Class46) class46).anInt713);
+                            | class46.anInt830,
+                    string, 0L, class46.anInt713);
             Class178.anInt2340++;
         }
         if (i_12_ >= -55)
@@ -187,37 +185,37 @@ final class Class239_Sub17 extends Class239 {
         for (int i_14_ = 4; i_14_ >= 0; i_14_--) {
             String string_15_ = Class368.method3561(i_14_, class46, true);
             if (string_15_ != null) {
-                Class50_Sub3.method466(false, ((Class46) class46).aString752,
-                        ((Class46) class46).anInt830,
+                Class50_Sub3.method466(false, class46.aString752,
+                        class46.anInt830,
                         (byte) -67, false,
-                        ((Class46) class46).anInt704,
-                        ((Class46) class46).anInt812, true, 18,
-                        (long) ((((Class46) class46).anInt704
+                        class46.anInt704,
+                        class46.anInt812, true, 18,
+                        (class46.anInt704
                                 << 617873312)
-                                | ((Class46) class46).anInt830),
-                        string_15_, (long) (1 + i_14_),
+                                | class46.anInt830,
+                        string_15_, 1 + i_14_,
                         Class100.method888((byte) 57, i_14_,
                                 class46));
                 Class335.anInt4169++;
             }
         }
         if (client.method105(class46).method3305(0)) {
-            if (((Class46) class46).aString816 != null)
-                Class50_Sub3.method466(false, "", ((Class46) class46).anInt830,
+            if (class46.aString816 != null)
+                Class50_Sub3.method466(false, "", class46.anInt830,
                         (byte) -118, false,
-                        ((Class46) class46).anInt704,
-                        ((Class46) class46).anInt812, true, 16,
-                        (long) ((((Class46) class46).anInt704
+                        class46.anInt704,
+                        class46.anInt812, true, 16,
+                        (class46.anInt704
                                 << -1427066464)
-                                | ((Class46) class46).anInt830),
-                        ((Class46) class46).aString816, 0L, -1);
+                                | class46.anInt830,
+                        class46.aString816, 0L, -1);
             else
                 Class50_Sub3.method466
-                        (false, "", ((Class46) class46).anInt830, (byte) -79,
-                                false, ((Class46) class46).anInt704,
-                                ((Class46) class46).anInt812, true, 16,
-                                (long) (((Class46) class46).anInt704 << -477045792
-                                        | ((Class46) class46).anInt830),
+                        (false, "", class46.anInt830, (byte) -79,
+                                false, class46.anInt704,
+                                class46.anInt812, true, 16,
+                                class46.anInt704 << -477045792
+                                        | class46.anInt830,
                                 Class274.aClass274_3492
                                         .method2063(Class348_Sub33.anInt6967, 544),
                                 0L, -1);
@@ -237,14 +235,14 @@ final class Class239_Sub17 extends Class239 {
         anInt6028++;
         if (i != -32350)
             return 61;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     final int method1710(int i) {
         if (i != 20014)
             aClass273_6018 = null;
         anInt6027++;
-        if ((((Class239) this).aClass348_Sub51_3136.method3428((byte) -96)
+        if ((this.aClass348_Sub51_3136.method3428((byte) -96)
                 .method1462(-113)
                 ^ 0xffffffff)
                 < -2)

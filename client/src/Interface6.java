@@ -3,13 +3,13 @@
  */
 
 interface Interface6 {
-    public int method26(int i);
+    int method26(int i);
 
-    public int method27(int i);
+    int method27(int i);
 
-    public char method28(byte i);
+    char method28(byte i);
 
-    public long method29(byte i);
+    long method29(byte i);
 
-    public int method30(boolean bool);
+    int method30(boolean bool);
 }

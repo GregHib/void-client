@@ -52,8 +52,8 @@ abstract class Class50 {
     }
 
     Class50(int i, int i_7_, int i_8_) {
-        ((Class50) this).anInt862 = i_8_;
-        ((Class50) this).anInt864 = i;
-        ((Class50) this).anInt865 = i_7_;
+        this.anInt862 = i_8_;
+        this.anInt864 = i;
+        this.anInt865 = i_7_;
     }
 }

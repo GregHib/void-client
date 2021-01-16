@@ -7,16 +7,16 @@ import java.io.IOException;
 final class Class55_Sub1 extends Class55 {
     static boolean aBoolean5265 = false;
     static int anInt5266;
-    private Class45 aClass45_5267;
+    private final Class45 aClass45_5267;
     static int anInt5268;
     private int[] anIntArray5269;
     private int anInt5270;
     static Class364 aClass364_5271 = new Class364("LIVE", 0);
-    private int anInt5272;
+    private final int anInt5272;
     static int anInt5273;
-    private Class348_Sub49 aClass348_Sub49_5274;
+    private final Class348_Sub49 aClass348_Sub49_5274;
     private byte[][] aByteArrayArray5275 = new byte[10][];
-    private Class348_Sub49 aClass348_Sub49_5276;
+    private final Class348_Sub49 aClass348_Sub49_5276;
 
     final void method522(byte i) {
         anInt5266++;
@@ -55,7 +55,7 @@ final class Class55_Sub1 extends Class55 {
     static final void method524(int i, boolean bool, int i_2_, int i_3_) {
         if (i_3_ > -108)
             aBoolean5265 = false;
-        if (Class27.aClass356_389.method3480((long) i_2_, -6008) == null) {
+        if (Class27.aClass356_389.method3480(i_2_, -6008) == null) {
             if (!Class38.aBoolean510)
                 Class303.method2285(bool, (byte) -90, i_2_);
             else {
@@ -66,10 +66,10 @@ final class Class55_Sub1 extends Class55 {
                                         .aClass45_2015),
                                 i_2_),
                         i, bool);
-                ((Class348_Sub15) class348_sub15).aClass55_Sub1_6768.method509
+                class348_sub15.aClass55_Sub1_6768.method509
                         (-92,
                                 Class59_Sub2.aStringArray5305[Class348_Sub33.anInt6967]);
-                Class27.aClass356_389.method3483((byte) 35, (long) i_2_,
+                Class27.aClass356_389.method3483((byte) 35, i_2_,
                         class348_sub15);
             }
         }
@@ -84,8 +84,8 @@ final class Class55_Sub1 extends Class55 {
             byte[] is_4_ = aClass45_5267.method410(-1860, anInt5272, 0);
             if (is_4_ == null)
                 throw new IllegalStateException("");
-            ((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154 = is_4_;
-            ((Class348_Sub49) aClass348_Sub49_5276).anInt7197 = 0;
+            aClass348_Sub49_5276.aByteArray7154 = is_4_;
+            aClass348_Sub49_5276.anInt7197 = 0;
             int i_5_ = is_4_.length >> 994128513;
             anIntArray5269 = new int[i_5_];
             for (int i_6_ = 0; (i_5_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff);
@@ -98,54 +98,54 @@ final class Class55_Sub1 extends Class55 {
         method522((byte) -74);
         if (i != 21)
             aByteArrayArray5275 = null;
-        ((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154 = is;
-        ((Class348_Sub49) aClass348_Sub49_5276).anInt7197 = 0;
-        while ((((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154.length
+        aClass348_Sub49_5276.aByteArray7154 = is;
+        aClass348_Sub49_5276.anInt7197 = 0;
+        while ((aClass348_Sub49_5276.aByteArray7154.length
                 ^ 0xffffffff)
-                < (((Class348_Sub49) aClass348_Sub49_5276).anInt7197
+                < (aClass348_Sub49_5276.anInt7197
                 ^ 0xffffffff)) {
-            if (((Class348_Sub49) aClass348_Sub49_5274).aByteArray7154
+            if (aClass348_Sub49_5274.aByteArray7154
                     == null) {
                 if (aByteArrayArray5275[0] == null) {
-                    ((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154
+                    aClass348_Sub49_5276.aByteArray7154
                             = null;
-                    return ((Class348_Sub49) aClass348_Sub49_5276).anInt7197;
+                    return aClass348_Sub49_5276.anInt7197;
                 }
-                ((Class348_Sub49) aClass348_Sub49_5274).aByteArray7154
+                aClass348_Sub49_5274.aByteArray7154
                         = aByteArrayArray5275[0];
             }
-            int i_7_ = (-((Class348_Sub49) aClass348_Sub49_5276).anInt7197
-                    + (((Class348_Sub49) aClass348_Sub49_5276)
+            int i_7_ = (-aClass348_Sub49_5276.anInt7197
+                    + (aClass348_Sub49_5276
                     .aByteArray7154).length);
-            int i_8_ = (-((Class348_Sub49) aClass348_Sub49_5274).anInt7197
-                    + (((Class348_Sub49) aClass348_Sub49_5274)
+            int i_8_ = (-aClass348_Sub49_5274.anInt7197
+                    + (aClass348_Sub49_5274
                     .aByteArray7154).length);
             if ((i_7_ ^ 0xffffffff) <= (i_8_ ^ 0xffffffff)) {
                 aClass348_Sub49_5276.method3380
-                        (i_8_, ((Class348_Sub49) aClass348_Sub49_5274).anInt7197,
-                                ((Class348_Sub49) aClass348_Sub49_5274).aByteArray7154,
+                        (i_8_, aClass348_Sub49_5274.anInt7197,
+                                aClass348_Sub49_5274.aByteArray7154,
                                 -58);
-                ((Class348_Sub49) aClass348_Sub49_5274).anInt7197 = 0;
-                ((Class348_Sub49) aClass348_Sub49_5274).aByteArray7154 = null;
+                aClass348_Sub49_5274.anInt7197 = 0;
+                aClass348_Sub49_5274.aByteArray7154 = null;
                 anInt5270++;
                 for (int i_9_ = 0; i_9_ < 9; i_9_++)
                     aByteArrayArray5275[i_9_] = aByteArrayArray5275[i_9_ - -1];
                 aByteArrayArray5275[9] = null;
                 if (anInt5270 >= anIntArray5269.length) {
-                    ((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154
+                    aClass348_Sub49_5276.aByteArray7154
                             = null;
-                    return ((Class348_Sub49) aClass348_Sub49_5276).anInt7197;
+                    return aClass348_Sub49_5276.anInt7197;
                 }
             } else {
                 aClass348_Sub49_5274.method3389
                         (2147483647,
-                                ((Class348_Sub49) aClass348_Sub49_5276).anInt7197, i_7_,
-                                ((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154);
-                ((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154 = null;
+                                aClass348_Sub49_5276.anInt7197, i_7_,
+                                aClass348_Sub49_5276.aByteArray7154);
+                aClass348_Sub49_5276.aByteArray7154 = null;
                 return is.length;
             }
         }
-        ((Class348_Sub49) aClass348_Sub49_5276).aByteArray7154 = null;
+        aClass348_Sub49_5276.aByteArray7154 = null;
         return is.length;
     }
 }

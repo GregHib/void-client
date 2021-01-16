@@ -12,7 +12,7 @@ class Class279 {
     static int anInt3598;
     static int anInt3599;
     static int anInt3600;
-    private int anInt3601 = 32;
+    private final int anInt3601 = 32;
     private long aLong3602;
     int[] anIntArray3603;
     private Class348_Sub16 aClass348_Sub16_3604;
@@ -30,16 +30,16 @@ class Class279 {
     private int anInt3616;
     private int anInt3617;
     private long aLong3618;
-    private Class348_Sub16[] aClass348_Sub16Array3619;
+    private final Class348_Sub16[] aClass348_Sub16Array3619;
     int anInt3620;
-    private Class348_Sub16[] aClass348_Sub16Array3621;
+    private final Class348_Sub16[] aClass348_Sub16Array3621;
     private int anInt3622;
     private boolean aBoolean3623;
     private int anInt3624;
 
     int method2081() throws Exception {
         anInt3605++;
-        return ((Class279) this).anInt3613;
+        return this.anInt3613;
     }
 
     void method2082(int i) throws Exception {
@@ -62,43 +62,43 @@ class Class279 {
                     anInt3616 = 114;
                 for (/**/; aLong3602 + 5000L < l; l = Class62.method599(-96)) {
                     method2089(256, (byte) -99);
-                    aLong3602 += (long) (256000 / Class22.anInt339);
+                    aLong3602 += 256000 / Class22.anInt339;
                 }
             } catch (Exception exception) {
                 aLong3602 = l;
             }
-            if (((Class279) this).anIntArray3603 != null) {
+            if (this.anIntArray3603 != null) {
                 try {
                     if ((aLong3614 ^ 0xffffffffffffffffL) != -1L) {
                         if ((l ^ 0xffffffffffffffffL)
                                 > (aLong3614 ^ 0xffffffffffffffffL))
                             return;
-                        method2082(((Class279) this).anInt3613);
+                        method2082(this.anInt3613);
                         aBoolean3623 = true;
                         aLong3614 = 0L;
                     }
                     int i_0_ = method2081();
                     if (-i_0_ + anInt3622 > anInt3624)
                         anInt3624 = -i_0_ + anInt3622;
-                    int i_1_ = ((Class279) this).anInt3620 - -anInt3616;
+                    int i_1_ = this.anInt3620 - -anInt3616;
                     if ((i_1_ - -256 ^ 0xffffffff) < -16385)
                         i_1_ = 16128;
-                    if (256 + i_1_ > ((Class279) this).anInt3613) {
-                        ((Class279) this).anInt3613 += 1024;
-                        if (((Class279) this).anInt3613 > 16384)
-                            ((Class279) this).anInt3613 = 16384;
+                    if (256 + i_1_ > this.anInt3613) {
+                        this.anInt3613 += 1024;
+                        if (this.anInt3613 > 16384)
+                            this.anInt3613 = 16384;
                         method2091();
-                        method2082(((Class279) this).anInt3613);
+                        method2082(this.anInt3613);
                         i_0_ = 0;
                         aBoolean3623 = true;
-                        if (256 + i_1_ > ((Class279) this).anInt3613) {
-                            i_1_ = ((Class279) this).anInt3613 + -256;
-                            anInt3616 = -((Class279) this).anInt3620 + i_1_;
+                        if (256 + i_1_ > this.anInt3613) {
+                            i_1_ = this.anInt3613 + -256;
+                            anInt3616 = -this.anInt3620 + i_1_;
                         }
                     }
                     for (/**/; (i_1_ ^ 0xffffffff) < (i_0_ ^ 0xffffffff);
                              i_0_ += 256) {
-                        method2086(((Class279) this).anIntArray3603, 256);
+                        method2086(this.anIntArray3603, 256);
                         method2094();
                     }
                     if (l > aLong3618) {
@@ -133,12 +133,12 @@ class Class279 {
             method2088(true, null);
         Class348_Sub16 class348_sub16_4_ = aClass348_Sub16Array3621[i_3_];
         if (class348_sub16_4_ != null)
-            ((Class348_Sub16) class348_sub16_4_).aClass348_Sub16_6785
+            class348_sub16_4_.aClass348_Sub16_6785
                     = class348_sub16;
         else
             aClass348_Sub16Array3619[i_3_] = class348_sub16;
         aClass348_Sub16Array3621[i_3_] = class348_sub16;
-        ((Class348_Sub16) class348_sub16).anInt6786 = i_2_;
+        class348_sub16.anInt6786 = i_2_;
     }
 
     private final void method2086(int[] is, int i) {
@@ -175,32 +175,31 @@ class Class279 {
                                 = aClass348_Sub16Array3619[i_9_];
                         while (class348_sub16_12_ != null) {
                             Class348_Sub19 class348_sub19
-                                    = (((Class348_Sub16) class348_sub16_12_)
+                                    = (class348_sub16_12_
                                     .aClass348_Sub19_6787);
                             if (class348_sub19 != null
-                                    && (((Class348_Sub19) class348_sub19).anInt6824
+                                    && (class348_sub19.anInt6824
                                     > i_10_)) {
                                 i_7_ |= 1 << i_9_;
                                 class348_sub16 = class348_sub16_12_;
                                 class348_sub16_12_
-                                        = (((Class348_Sub16) class348_sub16_12_)
+                                        = (class348_sub16_12_
                                         .aClass348_Sub16_6785);
                             } else {
-                                ((Class348_Sub16) class348_sub16_12_)
+                                class348_sub16_12_
                                         .aBoolean6784
                                         = true;
                                 int i_13_ = class348_sub16_12_.method2821();
                                 i_6_ += i_13_;
                                 if (class348_sub19 != null)
-                                    ((Class348_Sub19) class348_sub19).anInt6824
+                                    class348_sub19.anInt6824
                                             += i_13_;
                                 if (i_6_ >= anInt3601)
                                     break while_88_;
                                 Class348_Sub16 class348_sub16_14_
                                         = class348_sub16_12_.method2816();
                                 if (class348_sub16_14_ != null) {
-                                    int i_15_ = (((Class348_Sub16)
-                                            class348_sub16_12_)
+                                    int i_15_ = (class348_sub16_12_
                                             .anInt6786);
                                     for (/**/; class348_sub16_14_ != null;
                                              class348_sub16_14_
@@ -212,16 +211,16 @@ class Class279 {
                                                         >> 8));
                                 }
                                 Class348_Sub16 class348_sub16_16_
-                                        = (((Class348_Sub16) class348_sub16_12_)
+                                        = (class348_sub16_12_
                                         .aClass348_Sub16_6785);
-                                ((Class348_Sub16) class348_sub16_12_)
+                                class348_sub16_12_
                                         .aClass348_Sub16_6785
                                         = null;
                                 if (class348_sub16 == null)
                                     aClass348_Sub16Array3619[i_9_]
                                             = class348_sub16_16_;
                                 else
-                                    ((Class348_Sub16) class348_sub16)
+                                    class348_sub16
                                             .aClass348_Sub16_6785
                                             = class348_sub16_16_;
                                 if (class348_sub16_16_ == null)
@@ -244,9 +243,9 @@ class Class279 {
                 Class348_Sub16 class348_sub16_18_;
                 for (/**/; class348_sub16 != null;
                          class348_sub16 = class348_sub16_18_) {
-                    class348_sub16_18_ = (((Class348_Sub16) class348_sub16)
+                    class348_sub16_18_ = (class348_sub16
                             .aClass348_Sub16_6785);
-                    ((Class348_Sub16) class348_sub16).aClass348_Sub16_6785
+                    class348_sub16.aClass348_Sub16_6785
                             = null;
                 }
             }
@@ -293,9 +292,9 @@ class Class279 {
     static final void method2090(int i, int i_20_, boolean bool, byte i_21_,
                                  int i_22_, int i_23_, int i_24_) {
         if (((bool
-                ? ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                ? Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7215.method1838(-32350)
-                : ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                : Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7272.method1838(-32350))
                 ^ 0xffffffff) != -1
                 && i != 0 && (Class147.anInt2021 ^ 0xffffffff) > -51
@@ -360,23 +359,23 @@ class Class279 {
         if (Class183.aClass250_2462 != null) {
             boolean bool_35_ = true;
             for (int i = 0; (i ^ 0xffffffff) > -3; i++) {
-                if (((Class250) Class183.aClass250_2462).aClass279Array3218[i]
+                if (Class183.aClass250_2462.aClass279Array3218[i]
                         == this)
-                    ((Class250) Class183.aClass250_2462).aClass279Array3218[i]
+                    Class183.aClass250_2462.aClass279Array3218[i]
                             = null;
-                if (((Class250) Class183.aClass250_2462).aClass279Array3218[i]
+                if (Class183.aClass250_2462.aClass279Array3218[i]
                         != null)
                     bool_35_ = false;
             }
             if (bool_35_) {
-                ((Class250) Class183.aClass250_2462).aBoolean3221 = true;
-                while (((Class250) Class183.aClass250_2462).aBoolean3223)
+                Class183.aClass250_2462.aBoolean3221 = true;
+                while (Class183.aClass250_2462.aBoolean3223)
                     Class286_Sub5.method2161((byte) 68, 50L);
                 Class183.aClass250_2462 = null;
             }
         }
         method2091();
-        ((Class279) this).anIntArray3603 = null;
+        this.anIntArray3603 = null;
         aBoolean3610 = bool;
     }
 

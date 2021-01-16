@@ -31,7 +31,7 @@ final class Class119_Sub2 extends Class119 implements Interface8 {
         if (i <= 76)
             anInt4827 = 68;
         anInt4832++;
-        return ((Class119) this).aBuffer1792.getAddress();
+        return this.aBuffer1792.getAddress();
     }
 
     static final int method1079(int i, int i_2_, int i_3_, int i_4_) {

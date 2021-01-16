@@ -3,7 +3,7 @@
  */
 
 interface Interface18 {
-    public void method63(byte i);
+    void method63(byte i);
 
-    public void method64(Class209 class209, int i);
+    void method64(Class209 class209, int i);
 }

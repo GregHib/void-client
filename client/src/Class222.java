@@ -20,8 +20,8 @@ final class Class222 {
         if ((i ^ 0xffffffff) == -2)
             anInt2891 = class348_sub49.method3330(842397944);
         else if (i == 2) {
-            ((Class222) this).anInt2883 = class348_sub49.method3387(255);
-            ((Class222) this).anInt2890 = class348_sub49.method3387(255);
+            this.anInt2883 = class348_sub49.method3387(255);
+            this.anInt2890 = class348_sub49.method3387(255);
         }
         if (i_0_ != 4)
             method1608(-8, null, (byte) 81);
@@ -37,19 +37,19 @@ final class Class222 {
     final synchronized Class207 method1610(byte i) {
         anInt2888++;
         Class207 class207
-                = (Class207) ((Class166) ((Class222) this).aClass166_2886)
-                .aClass60_2190.method583((long) anInt2891, -70);
+                = (Class207) this.aClass166_2886
+                .aClass60_2190.method583(anInt2891, -70);
         if (class207 != null)
             return class207;
         class207
-                = Class207.method1521(((Class166) (((Class222) this)
-                        .aClass166_2886)).aClass45_2180,
+                = Class207.method1521(this
+                        .aClass166_2886.aClass45_2180,
                 anInt2891, 0);
         if (i < 49)
             method1609((byte) 93);
         if (class207 != null)
-            ((Class166) ((Class222) this).aClass166_2886).aClass60_2190
-                    .method582(class207, (long) anInt2891, (byte) -120);
+            this.aClass166_2886.aClass60_2190
+                    .method582(class207, anInt2891, (byte) -120);
         return class207;
     }
 

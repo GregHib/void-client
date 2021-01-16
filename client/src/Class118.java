@@ -23,15 +23,15 @@ final class Class118 {
 
     Class118(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_,
              int i_6_, int i_7_, boolean bool, boolean bool_8_, int i_9_) {
-        ((Class118) this).anInt1781 = i_0_;
-        ((Class118) this).anInt1782 = i_2_;
-        ((Class118) this).anInt1788 = i_1_;
-        ((Class118) this).anInt1784 = i_9_;
-        ((Class118) this).aByte1789 = (byte) i_7_;
-        ((Class118) this).aBoolean1791 = bool_8_;
-        ((Class118) this).aShort1785 = (short) i_3_;
-        ((Class118) this).anInt1783 = i;
-        ((Class118) this).aShort1787 = (short) i_5_;
-        ((Class118) this).aShort1790 = (short) i_4_;
+        this.anInt1781 = i_0_;
+        this.anInt1782 = i_2_;
+        this.anInt1788 = i_1_;
+        this.anInt1784 = i_9_;
+        this.aByte1789 = (byte) i_7_;
+        this.aBoolean1791 = bool_8_;
+        this.aShort1785 = (short) i_3_;
+        this.anInt1783 = i;
+        this.aShort1787 = (short) i_5_;
+        this.aShort1790 = (short) i_4_;
     }
 }

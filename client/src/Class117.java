@@ -31,10 +31,10 @@ final class Class117 {
     private final void method1065(Class348_Sub49 class348_sub49, int i,
                                   int i_0_) {
         if ((i_0_ ^ 0xffffffff) == -2)
-            ((Class117) this).aChar1778
+            this.aChar1778
                     = Class50_Sub1.method462(class348_sub49.method3388(-91), -128);
         else if ((i_0_ ^ 0xffffffff) == -3)
-            ((Class117) this).aChar1779
+            this.aChar1779
                     = Class50_Sub1.method462(class348_sub49.method3388(-119),
                     -128);
         else if ((i_0_ ^ 0xffffffff) == -4)
@@ -43,7 +43,7 @@ final class Class117 {
             anInt1764 = class348_sub49.method3385((byte) -126);
         else if (i_0_ == 5 || (i_0_ ^ 0xffffffff) == -7) {
             int i_1_ = class348_sub49.method3330(i ^ ~0x3235ab57);
-            ((Class117) this).aClass356_1767
+            this.aClass356_1767
                     = new Class356(Class33.method340(i_1_, (byte) 108));
             for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
                 int i_3_ = class348_sub49.method3385((byte) -126);
@@ -55,8 +55,8 @@ final class Class117 {
                 else
                     class348 = new Class348_Sub50(class348_sub49
                             .method3377((byte) -35));
-                ((Class117) this).aClass356_1767
-                        .method3483((byte) 21, (long) i_3_, class348);
+                this.aClass356_1767
+                        .method3483((byte) 21, i_3_, class348);
             }
         }
         anInt1765++;
@@ -66,7 +66,7 @@ final class Class117 {
 
     final boolean method1066(boolean bool, String string) {
         anInt1776++;
-        if (((Class117) this).aClass356_1767 == null)
+        if (this.aClass356_1767 == null)
             return false;
         if (bool != false)
             aClass356_1770 = null;
@@ -80,7 +80,7 @@ final class Class117 {
              class348_sub46 != null;
              class348_sub46
                      = (Class348_Sub46) aClass356_1770.method3476(true)) {
-            if (((Class348_Sub46) class348_sub46).aString7111.equals(string))
+            if (class348_sub46.aString7111.equals(string))
                 return true;
         }
         return false;
@@ -88,36 +88,34 @@ final class Class117 {
 
     final boolean method1067(boolean bool, int i) {
         anInt1773++;
-        if (((Class117) this).aClass356_1767 == null)
+        if (this.aClass356_1767 == null)
             return false;
         if (bool != true)
             return true;
         if (aClass356_1770 == null)
             method1068((byte) 120);
         Class348_Sub35 class348_sub35
-                = (Class348_Sub35) aClass356_1770.method3480((long) i, -6008);
-        if (class348_sub35 == null)
-            return false;
-        return true;
+                = (Class348_Sub35) aClass356_1770.method3480(i, -6008);
+        return class348_sub35 != null;
     }
 
     private final void method1068(byte i) {
         anInt1772++;
         aClass356_1770
-                = new Class356(((Class117) this).aClass356_1767.method3475(true));
+                = new Class356(this.aClass356_1767.method3475(true));
         for (Class348_Sub35 class348_sub35
              = ((Class348_Sub35)
-                ((Class117) this).aClass356_1767.method3484(0));
+                this.aClass356_1767.method3484(0));
              class348_sub35 != null;
-             class348_sub35 = (Class348_Sub35) ((Class117) this)
+             class348_sub35 = (Class348_Sub35) this
                      .aClass356_1767
                      .method3482(0)) {
             Class348_Sub35 class348_sub35_4_
-                    = new Class348_Sub35((int) ((Class348) class348_sub35)
+                    = new Class348_Sub35((int) class348_sub35
                     .aLong4291);
             aClass356_1770.method3483((byte) 26,
-                    (long) (((Class348_Sub35) class348_sub35)
-                            .anInt6976),
+                    class348_sub35
+                            .anInt6976,
                     class348_sub35_4_);
         }
         if (i < 85)
@@ -147,23 +145,22 @@ final class Class117 {
 
     private final void method1071(boolean bool) {
         aClass356_1770
-                = new Class356(((Class117) this).aClass356_1767.method3475(bool));
+                = new Class356(this.aClass356_1767.method3475(bool));
         anInt1768++;
         for (Class348_Sub50 class348_sub50
              = ((Class348_Sub50)
-                ((Class117) this).aClass356_1767.method3484(0));
+                this.aClass356_1767.method3484(0));
              class348_sub50 != null;
-             class348_sub50 = (Class348_Sub50) ((Class117) this)
+             class348_sub50 = (Class348_Sub50) this
                      .aClass356_1767
                      .method3482(0)) {
             Class348_Sub46 class348_sub46
-                    = new Class348_Sub46((((Class348_Sub50) class348_sub50)
+                    = new Class348_Sub46((class348_sub50
                     .aString7211),
-                    (int) (((Class348) class348_sub50)
+                    (int) (class348_sub50
                             .aLong4291));
             aClass356_1770.method3483((byte) 102,
-                    Class287.method2179((((Class348_Sub50)
-                                    class348_sub50)
+                    Class287.method2179((class348_sub50
                                     .aString7211),
                             (byte) 120),
                     class348_sub46);
@@ -181,14 +178,14 @@ final class Class117 {
         if (bool != false)
             method1067(false, -31);
         anInt1775++;
-        if (((Class117) this).aClass356_1767 == null)
+        if (this.aClass356_1767 == null)
             return anInt1764;
         Class348_Sub35 class348_sub35
                 = ((Class348_Sub35)
-                ((Class117) this).aClass356_1767.method3480((long) i, -6008));
+                this.aClass356_1767.method3480(i, -6008));
         if (class348_sub35 == null)
             return anInt1764;
-        return ((Class348_Sub35) class348_sub35).anInt6976;
+        return class348_sub35.anInt6976;
     }
 
     public Class117() {
@@ -199,13 +196,13 @@ final class Class117 {
         anInt1777++;
         if (i_7_ <= 60)
             return null;
-        if (((Class117) this).aClass356_1767 == null)
+        if (this.aClass356_1767 == null)
             return aString1774;
         Class348_Sub50 class348_sub50
                 = ((Class348_Sub50)
-                ((Class117) this).aClass356_1767.method3480((long) i, -6008));
+                this.aClass356_1767.method3480(i, -6008));
         if (class348_sub50 == null)
             return aString1774;
-        return ((Class348_Sub50) class348_sub50).aString7211;
+        return class348_sub50.aString7211;
     }
 }

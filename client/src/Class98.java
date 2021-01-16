@@ -20,10 +20,8 @@ final class Class98 {
         if (i_1_ != -127)
             anIntArrayArray1566 = null;
         anInt1567++;
-        if (!Class286_Sub9.method2174((byte) 126, i, i_0_)
-                && !Class202.method1475((byte) -107, i_0_, i))
-            return false;
-        return true;
+        return Class286_Sub9.method2174((byte) 126, i, i_0_)
+                || Class202.method1475((byte) -107, i_0_, i);
     }
 
     static final byte[] method878(String string, int i) {

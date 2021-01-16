@@ -13,11 +13,11 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
     static Class114 aClass114_8817 = new Class114(83, 2);
 
     final void method2725(int i, byte i_0_, int i_1_, int i_2_) {
-        ((Class348_Sub1) this).anInt6553 = i_1_;
-        ((Class348_Sub1) this).anInt6548 = i_2_;
+        this.anInt6553 = i_1_;
+        this.anInt6548 = i_2_;
         anInt8812++;
         if (i_0_ == 70)
-            ((Class348_Sub1) this).anInt6562 = i;
+            this.anInt6562 = i;
     }
 
     static final int method2729(int i, int i_3_) {
@@ -41,7 +41,7 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
             is_6_ = is;
         Class85 class85 = new Class85();
         class85.method829(i + -4682);
-        class85.method832((long) (i_5_ * 8), is_6_, -69);
+        class85.method832(i_5_ * 8, is_6_, -69);
         byte[] is_8_ = new byte[64];
         class85.method833(true, 0, is_8_);
         return is_8_;
@@ -62,7 +62,7 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
     }
 
     final void method2716(int i, float f) {
-        ((Class348_Sub1) this).aFloat6550 = f;
+        this.aFloat6550 = f;
         if (i == -1)
             anInt8814++;
     }

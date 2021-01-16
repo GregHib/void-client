@@ -28,14 +28,14 @@ final class Class348_Sub31_Sub1 extends Class348_Sub31 {
     final void method3008(Canvas canvas, int i, int i_6_, int i_7_) {
         aCanvas9065 = canvas;
         aRectangle9067 = new Rectangle();
-        ((Class348_Sub31_Sub1) this).anInt6917 = i;
-        ((Class348_Sub31_Sub1) this).anInt6920 = i_7_;
-        ((Class348_Sub31_Sub1) this).anIntArray6916
-                = new int[(((Class348_Sub31_Sub1) this).anInt6920
-                * ((Class348_Sub31_Sub1) this).anInt6917)];
+        this.anInt6917 = i;
+        this.anInt6920 = i_7_;
+        this.anIntArray6916
+                = new int[(this.anInt6920
+                * this.anInt6917)];
         DataBufferInt databufferint
-                = new DataBufferInt(((Class348_Sub31_Sub1) this).anIntArray6916,
-                (((Class348_Sub31_Sub1) this)
+                = new DataBufferInt(this.anIntArray6916,
+                (this
                         .anIntArray6916).length);
         if (i_6_ > -42)
             method3008(null, 6, -14, 63);
@@ -44,9 +44,9 @@ final class Class348_Sub31_Sub1 extends Class348_Sub31 {
         WritableRaster writableraster
                 = Raster.createWritableRaster((directcolormodel
                         .createCompatibleSampleModel
-                                ((((Class348_Sub31_Sub1) this)
+                                ((this
                                                 .anInt6917),
-                                        (((Class348_Sub31_Sub1) this)
+                                        (this
                                                 .anInt6920))),
                 databufferint, null);
         anImage9066 = new BufferedImage(directcolormodel, writableraster,

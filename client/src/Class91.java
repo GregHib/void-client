@@ -14,7 +14,7 @@ final class Class91 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i_1_, (byte) 105, i);
         class348_sub42_sub15.method3246(i ^ ~0x6397);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i_0_;
+        class348_sub42_sub15.anInt9652 = i_0_;
     }
 
     static final void method856(byte i) {
@@ -30,19 +30,18 @@ final class Class91 {
             int i_3_ = Class5_Sub1_Sub1.anIntArray9932[i_2_];
             Class348_Sub22 class348_sub22
                     = ((Class348_Sub22)
-                    Class282.aClass356_3654.method3480((long) i_3_, -6008));
+                    Class282.aClass356_3654.method3480(i_3_, -6008));
             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                    = (((Class348_Sub22) class348_sub22)
+                    = (class348_sub22
                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
             if (Class5_Sub1.aBoolean8335
                     && Class348_Sub42_Sub1.method3169(i_3_, 0))
                 Class286_Sub2.method2146((byte) 84);
-            if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+            if (((class318_sub1_sub3_sub3_sub1
                     .anInt10306)
                     ^ 0xffffffff)
                     != (Class348_Sub23_Sub3.anInt9041 ^ 0xffffffff)) {
-                if (((Class318_Sub1_Sub3_Sub3_Sub1)
-                        class318_sub1_sub3_sub3_sub1)
+                if (class318_sub1_sub3_sub3_sub1
                         .aClass79_10505.method793(0))
                     Class5.method181(true, class318_sub1_sub3_sub3_sub1);
                 class318_sub1_sub3_sub3_sub1.method2448(null, -2);
@@ -56,10 +55,9 @@ final class Class91 {
                     .method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319);
         }
         if (Class348_Sub40_Sub25.anInt9341
-                != ((Class348_Sub49) Class299.aClass348_Sub49_Sub2_3813).anInt7197)
+                != Class299.aClass348_Sub49_Sub2_3813.anInt7197)
             throw new RuntimeException("gnp1 pos:"
-                    + (((Class348_Sub49)
-                    Class299.aClass348_Sub49_Sub2_3813)
+                    + (Class299.aClass348_Sub49_Sub2_3813
                     .anInt7197)
                     + " psize:"
                     + Class348_Sub40_Sub25.anInt9341);
@@ -67,7 +65,7 @@ final class Class91 {
             aClass74_1519 = null;
         for (int i_4_ = 0; Class150.anInt2057 > i_4_; i_4_++) {
             if (Class282.aClass356_3654
-                    .method3480((long) Class74.anIntArray1233[i_4_], -6008)
+                    .method3480(Class74.anIntArray1233[i_4_], -6008)
                     == null)
                 throw new RuntimeException("gnp2 pos:" + i_4_ + " size:"
                         + Class150.anInt2057);
@@ -76,18 +74,15 @@ final class Class91 {
             throw new RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930
                     - Class150.anInt2057));
         for (int i_5_ = 0; i_5_ < Class348_Sub32.anInt6930; i_5_++) {
-            if (((Class318_Sub1_Sub3_Sub3)
-                    (((Class348_Sub22)
-                            Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_])
-                            .aClass318_Sub1_Sub3_Sub3_Sub1_6859)).anInt10306
+            if (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_]
+                    .aClass318_Sub1_Sub3_Sub3_Sub1_6859.anInt10306
                     != Class348_Sub23_Sub3.anInt9041)
                 throw new RuntimeException
                         ("gnp4 uk:"
-                                + (((Class318_Sub1_Sub3_Sub3)
-                                (((Class348_Sub22) (Class348_Sub40_Sub23
+                                + (Class348_Sub40_Sub23
                                         .aClass348_Sub22Array9319
-                                        [i_5_]))
-                                        .aClass318_Sub1_Sub3_Sub3_Sub1_6859))
+                                        [i_5_]
+                                        .aClass318_Sub1_Sub3_Sub3_Sub1_6859
                                 .anInt10290));
         }
     }

@@ -154,15 +154,15 @@ final class Class353 {
     Class353(int i, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_,
              int i_39_, int i_40_, int i_41_, boolean bool, boolean bool_42_,
              int i_43_) {
-        ((Class353) this).anInt4339 = i_36_;
-        ((Class353) this).anInt4349 = i_34_;
-        ((Class353) this).aShort4340 = (short) i_38_;
-        ((Class353) this).anInt4344 = i_35_;
-        ((Class353) this).anInt4347 = i_43_;
-        ((Class353) this).aByte4343 = (byte) i_41_;
-        ((Class353) this).anInt4342 = i;
-        ((Class353) this).aShort4341 = (short) i_37_;
-        ((Class353) this).aBoolean4350 = bool_42_;
-        ((Class353) this).aShort4348 = (short) i_39_;
+        this.anInt4339 = i_36_;
+        this.anInt4349 = i_34_;
+        this.aShort4340 = (short) i_38_;
+        this.anInt4344 = i_35_;
+        this.anInt4347 = i_43_;
+        this.aByte4343 = (byte) i_41_;
+        this.anInt4342 = i;
+        this.aShort4341 = (short) i_37_;
+        this.aBoolean4350 = bool_42_;
+        this.aShort4348 = (short) i_39_;
     }
 }

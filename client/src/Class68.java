@@ -38,7 +38,7 @@ final class Class68 {
     }
 
     private Class68(int i) {
-        ((Class68) this).anInt1178 = i;
+        this.anInt1178 = i;
     }
 
     public final String toString() {

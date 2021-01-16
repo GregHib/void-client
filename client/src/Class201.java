@@ -8,7 +8,7 @@ import java.util.Hashtable;
 
 public class Class201 {
     private static int anInt2641;
-    private static Hashtable aHashtable2642;
+    private static final Hashtable aHashtable2642;
     private static String aString2643;
     private static boolean aBoolean2644 = false;
     private static String aString2645;

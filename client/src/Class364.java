@@ -21,6 +21,6 @@ final class Class364 {
     }
 
     Class364(String string, int i) {
-        ((Class364) this).anInt4466 = i;
+        this.anInt4466 = i;
     }
 }

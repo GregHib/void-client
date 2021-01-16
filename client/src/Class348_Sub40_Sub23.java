@@ -310,10 +310,10 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
         anInt9321++;
         if (i_41_ != 255)
             anInt9312 = 113;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             int[][] is_42_
-                    = ((Class348_Sub40) this).aClass191_7032.method1427((byte) 16);
+                    = this.aClass191_7032.method1427((byte) 16);
             int i_43_ = 0;
             int i_44_ = 0;
             int i_45_ = 0;
@@ -336,7 +336,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
             int i_55_ = 1 + Class348_Sub40_Sub6.anInt9139 / i_51_;
             int[][] is_56_ = new int[i_55_][3];
             int[][] is_57_ = new int[i_55_][3];
-            Random random = new Random((long) anInt9318);
+            Random random = new Random(anInt9318);
             for (; ; ) {
                 int i_58_ = i_51_ + Class124.method1097((byte) 106,
                         i_52_ - i_51_, random);

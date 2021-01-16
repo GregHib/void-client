@@ -114,17 +114,17 @@ final class Class348_Sub12 extends Class348 {
 
     final boolean method2799(int i, int i_1_, int i_2_) {
         anInt6739++;
-        if ((((Class348_Sub12) this).anInt6747 ^ 0xffffffff) >= (i_1_
+        if ((this.anInt6747 ^ 0xffffffff) >= (i_1_
                 ^ 0xffffffff)
-                && ((Class348_Sub12) this).anInt6750 >= i_1_
-                && i >= ((Class348_Sub12) this).anInt6746
-                && ((((Class348_Sub12) this).anInt6735 ^ 0xffffffff)
+                && this.anInt6750 >= i_1_
+                && i >= this.anInt6746
+                && ((this.anInt6735 ^ 0xffffffff)
                 <= (i ^ 0xffffffff)))
             return true;
-        if (((Class348_Sub12) this).anInt6745 <= i_1_
-                && ((Class348_Sub12) this).anInt6737 >= i_1_
-                && ((Class348_Sub12) this).anInt6753 <= i
-                && ((Class348_Sub12) this).anInt6738 >= i)
+        if (this.anInt6745 <= i_1_
+                && this.anInt6737 >= i_1_
+                && this.anInt6753 <= i
+                && this.anInt6738 >= i)
             return true;
         if (i_2_ < 60)
             method2799(8, 24, -128);
@@ -145,12 +145,12 @@ final class Class348_Sub12 extends Class348 {
                          = (Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711
                          .method1990((byte) 50)) {
                 if (((i ^ 0xffffffff)
-                        == (((Class348_Sub27) class348_sub27_12_).anInt6899
+                        == (class348_sub27_12_.anInt6899
                         ^ 0xffffffff))
-                        && (((Class348_Sub27) class348_sub27_12_).anInt6905
+                        && (class348_sub27_12_.anInt6905
                         ^ 0xffffffff) == (i_11_ ^ 0xffffffff)
-                        && i_4_ == ((Class348_Sub27) class348_sub27_12_).anInt6896
-                        && (((Class348_Sub27) class348_sub27_12_).anInt6904
+                        && i_4_ == class348_sub27_12_.anInt6896
+                        && (class348_sub27_12_.anInt6904
                         == i_7_)) {
                     class348_sub27 = class348_sub27_12_;
                     break;
@@ -158,10 +158,10 @@ final class Class348_Sub12 extends Class348 {
             }
             if (class348_sub27 == null) {
                 class348_sub27 = new Class348_Sub27();
-                ((Class348_Sub27) class348_sub27).anInt6899 = i;
-                ((Class348_Sub27) class348_sub27).anInt6904 = i_7_;
-                ((Class348_Sub27) class348_sub27).anInt6896 = i_4_;
-                ((Class348_Sub27) class348_sub27).anInt6905 = i_11_;
+                class348_sub27.anInt6899 = i;
+                class348_sub27.anInt6904 = i_7_;
+                class348_sub27.anInt6896 = i_4_;
+                class348_sub27.anInt6905 = i_11_;
                 if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.anInt7319 > i_11_
                         && (i_4_ ^ 0xffffffff) > (Class348_Sub40_Sub3.anInt9109
                         ^ 0xffffffff))
@@ -169,23 +169,23 @@ final class Class348_Sub12 extends Class348 {
                 Class348_Sub42_Sub20.aClass262_9711.method1999(class348_sub27,
                         -20180);
             }
-            ((Class348_Sub27) class348_sub27).anInt6893 = i_5_;
-            ((Class348_Sub27) class348_sub27).anInt6900 = i_8_;
-            ((Class348_Sub27) class348_sub27).anInt6895 = i_6_;
-            ((Class348_Sub27) class348_sub27).anInt6894 = i_3_;
-            ((Class348_Sub27) class348_sub27).anInt6907 = i_9_;
+            class348_sub27.anInt6893 = i_5_;
+            class348_sub27.anInt6900 = i_8_;
+            class348_sub27.anInt6895 = i_6_;
+            class348_sub27.anInt6894 = i_3_;
+            class348_sub27.anInt6907 = i_9_;
         }
     }
 
     Class348_Sub12(Class348_Sub21 class348_sub21) {
-        ((Class348_Sub12) this).anInt6735 = -2147483648;
-        ((Class348_Sub12) this).anInt6750 = -2147483648;
-        ((Class348_Sub12) this).anInt6745 = 2147483647;
-        ((Class348_Sub12) this).anInt6746 = 2147483647;
-        ((Class348_Sub12) this).anInt6737 = -2147483648;
-        ((Class348_Sub12) this).anInt6747 = 2147483647;
-        ((Class348_Sub12) this).anInt6753 = 2147483647;
-        ((Class348_Sub12) this).aClass348_Sub21_6751 = class348_sub21;
+        this.anInt6735 = -2147483648;
+        this.anInt6750 = -2147483648;
+        this.anInt6745 = 2147483647;
+        this.anInt6746 = 2147483647;
+        this.anInt6737 = -2147483648;
+        this.anInt6747 = 2147483647;
+        this.anInt6753 = 2147483647;
+        this.aClass348_Sub21_6751 = class348_sub21;
     }
 
     static {

@@ -22,7 +22,7 @@ final class Class114 {
     }
 
     Class114(int i, int i_0_) {
-        ((Class114) this).anInt1749 = i_0_;
+        this.anInt1749 = i_0_;
         anInt1747 = i;
     }
 

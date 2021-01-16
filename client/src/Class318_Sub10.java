@@ -21,7 +21,7 @@ final class Class318_Sub10 extends Class318 {
     private int anInt6485;
 
     final Class98 method2525() {
-        return ((Class318_Sub10) this).aClass98_6481;
+        return this.aClass98_6481;
     }
 
     static final Class318_Sub10 method2526(int i, boolean bool) {
@@ -43,7 +43,7 @@ final class Class318_Sub10 extends Class318 {
     }
 
     final void method2528(ha var_ha) {
-        ((Class98) ((Class318_Sub10) this).aClass98_6481).aClass88_1569
+        this.aClass98_6481.aClass88_1569
                 .method845((byte) 89);
         for (Class318_Sub7 class318_sub7
              = (Class318_Sub7) aClass243_6478.method1872(8);
@@ -58,34 +58,34 @@ final class Class318_Sub10 extends Class318 {
     }
 
     final void method2530() {
-        ((Class318_Sub10) this).aBoolean6470 = true;
+        this.aBoolean6470 = true;
         for (Class348_Sub42_Sub20 class348_sub42_sub20
              = ((Class348_Sub42_Sub20)
-                ((Class318_Sub10) this).aClass262_6479.method1995(4));
+                this.aClass262_6479.method1995(4));
              class348_sub42_sub20 != null;
              class348_sub42_sub20
-                     = (Class348_Sub42_Sub20) ((Class318_Sub10) this)
+                     = (Class348_Sub42_Sub20) this
                      .aClass262_6479
                      .method1990((byte) 89)) {
-            if (((Class174) (((Class348_Sub42_Sub20) class348_sub42_sub20)
-                    .aClass174_9704)).anInt2296
+            if (class348_sub42_sub20
+                    .aClass174_9704.anInt2296
                     == 1)
                 class348_sub42_sub20.method3162(true);
         }
-        for (int i = 0; i < (((Class318_Sub10) this)
+        for (int i = 0; i < (this
                 .aClass318_Sub9_Sub2_Sub1Array6475).length; i++) {
-            if (((Class318_Sub10) this).aClass318_Sub9_Sub2_Sub1Array6475[i]
+            if (this.aClass318_Sub9_Sub2_Sub1Array6475[i]
                     != null) {
-                ((Class318_Sub10) this).aClass318_Sub9_Sub2_Sub1Array6475
+                this.aClass318_Sub9_Sub2_Sub1Array6475
                         [i].method2520();
-                ((Class318_Sub10) this).aClass318_Sub9_Sub2_Sub1Array6475[i]
+                this.aClass318_Sub9_Sub2_Sub1Array6475[i]
                         = null;
             }
         }
-        ((Class318_Sub10) this).anInt6476 = 0;
+        this.anInt6476 = 0;
         aClass243_6478 = new Class243();
         anInt6480 = 0;
-        ((Class318_Sub10) this).aClass262_6479 = new Class262();
+        this.aClass262_6479 = new Class262();
         anInt6485 = 0;
         this.method2373(false);
         Class348_Sub51.aClass318_Sub10Array7249[Class258_Sub3.anInt8550]
@@ -97,10 +97,10 @@ final class Class318_Sub10 extends Class318 {
 
     private final void method2531(int i, boolean bool) {
         Class152.aClass243_2077.method1869(-88, this);
-        aLong6472 = (long) i;
-        aLong6471 = (long) i;
+        aLong6472 = i;
+        aLong6471 = i;
         aBoolean6484 = true;
-        ((Class318_Sub10) this).aBoolean6482 = bool;
+        this.aBoolean6482 = bool;
     }
 
     private final void method2532(ha var_ha, Class129[] class129s,
@@ -115,23 +115,23 @@ final class Class318_Sub10 extends Class318 {
                      = (Class318_Sub7) aClass243_6478.method1878((byte) -28)) {
             if (class129s != null) {
                 for (int i = 0; i < class129s.length; i++) {
-                    if ((((Class318_Sub7) class318_sub7).aClass129_6436
+                    if ((class318_sub7.aClass129_6436
                             == class129s[i])
-                            || (((Class318_Sub7) class318_sub7).aClass129_6436
-                            == ((Class129) class129s[i]).aClass129_1888)) {
+                            || (class318_sub7.aClass129_6436
+                            == class129s[i].aClass129_1888)) {
                         aBooleanArray6474[i] = true;
                         class318_sub7.method2507(true);
-                        ((Class318_Sub7) class318_sub7).aBoolean6446 = false;
+                        class318_sub7.aBoolean6446 = false;
                         continue while_110_;
                     }
                 }
             }
             if (!bool) {
-                if (((Class318_Sub7) class318_sub7).anInt6447 == 0) {
+                if (class318_sub7.anInt6447 == 0) {
                     class318_sub7.method2373(false);
                     anInt6480--;
                 } else
-                    ((Class318_Sub7) class318_sub7).aBoolean6446 = true;
+                    class318_sub7.aBoolean6446 = true;
             }
         }
         if (class129s != null) {
@@ -151,7 +151,7 @@ final class Class318_Sub10 extends Class318 {
     }
 
     final void method2533(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
-        ((Class318_Sub10) this).anInt6483 = i;
+        this.anInt6483 = i;
     }
 
     final void method2534() {
@@ -175,8 +175,8 @@ final class Class318_Sub10 extends Class318 {
                  class318_sub7
                          = (Class318_Sub7) aClass243_6478.method1878((byte) 122)) {
                 for (int i_4_ = 0;
-                     i_4_ < ((Class181) (((Class318_Sub7) class318_sub7)
-                             .aClass181_6441)).anInt2422;
+                     i_4_ < class318_sub7
+                             .aClass181_6441.anInt2422;
                      i_4_++)
                     class318_sub7.method2513(var_ha, 1, l, 3, !aBoolean6473);
             }
@@ -194,7 +194,7 @@ final class Class318_Sub10 extends Class318 {
 
     final void method2536(ha var_ha, long l, Class129[] class129s,
                           Class342[] class342s, boolean bool) {
-        if (!((Class318_Sub10) this).aBoolean6470) {
+        if (!this.aBoolean6470) {
             method2532(var_ha, class129s, bool);
             method2538(class342s, bool);
             aLong6472 = l;
@@ -211,19 +211,19 @@ final class Class318_Sub10 extends Class318 {
         while_112_:
         for (Class348_Sub42_Sub20 class348_sub42_sub20
              = ((Class348_Sub42_Sub20)
-                ((Class318_Sub10) this).aClass262_6479.method1995(4));
+                this.aClass262_6479.method1995(4));
              class348_sub42_sub20 != null;
              class348_sub42_sub20
-                     = (Class348_Sub42_Sub20) ((Class318_Sub10) this)
+                     = (Class348_Sub42_Sub20) this
                      .aClass262_6479
                      .method1990((byte) 85)) {
             if (class342s != null) {
                 for (int i = 0; i < class342s.length; i++) {
-                    if ((((Class348_Sub42_Sub20) class348_sub42_sub20)
+                    if ((class348_sub42_sub20
                             .aClass342_9702) == class342s[i]
-                            || ((((Class348_Sub42_Sub20) class348_sub42_sub20)
+                            || ((class348_sub42_sub20
                             .aClass342_9702)
-                            == ((Class342) class342s[i]).aClass342_4248)) {
+                            == class342s[i].aClass342_4248)) {
                         aBooleanArray6477[i] = true;
                         class348_sub42_sub20.method3279(2);
                         continue while_112_;
@@ -245,20 +245,20 @@ final class Class318_Sub10 extends Class318 {
                     break;
                 if (!aBooleanArray6477[i]) {
                     Class348_Sub42_Sub20 class348_sub42_sub20 = null;
-                    if ((((Class174) class342s[i].method2685((byte) -13))
+                    if ((class342s[i].method2685((byte) -13)
                             .anInt2296) == 1
                             && Class318_Sub7.anInt6450 < 32) {
                         class348_sub42_sub20
                                 = new Class348_Sub42_Sub20(class342s[i], this);
                         Class367_Sub11.aClass32_7415.method335
                                 (class348_sub42_sub20, -8098,
-                                        (long) ((Class342) class342s[i]).anInt4245);
+                                        class342s[i].anInt4245);
                         Class318_Sub7.anInt6450++;
                     }
                     if (class348_sub42_sub20 == null)
                         class348_sub42_sub20
                                 = new Class348_Sub42_Sub20(class342s[i], this);
-                    ((Class318_Sub10) this).aClass262_6479
+                    this.aClass262_6479
                             .method1999(class348_sub42_sub20, -20180);
                     anInt6485++;
                     aBooleanArray6477[i] = true;
@@ -268,22 +268,21 @@ final class Class318_Sub10 extends Class318 {
     }
 
     final Class98 method2539() {
-        ((Class98) ((Class318_Sub10) this).aClass98_6481).aClass88_1569
+        this.aClass98_6481.aClass88_1569
                 .method845((byte) 43);
-        for (int i = 0; i < (((Class318_Sub10) this)
+        for (int i = 0; i < (this
                 .aClass318_Sub9_Sub2_Sub1Array6475).length; i++) {
-            if ((((Class318_Sub10) this).aClass318_Sub9_Sub2_Sub1Array6475[i]
+            if ((this.aClass318_Sub9_Sub2_Sub1Array6475[i]
                     != null)
-                    && ((Class318_Sub9_Sub2_Sub1)
-                    (((Class318_Sub10) this).aClass318_Sub9_Sub2_Sub1Array6475
-                            [i])).aClass318_Sub7_10419 != null)
-                ((Class98) ((Class318_Sub10) this).aClass98_6481)
+                    && this.aClass318_Sub9_Sub2_Sub1Array6475
+                            [i].aClass318_Sub7_10419 != null)
+                this.aClass98_6481
                         .aClass88_1569.method844
-                        ((((Class318_Sub10) this).aClass318_Sub9_Sub2_Sub1Array6475
+                        ((this.aClass318_Sub9_Sub2_Sub1Array6475
                                         [i]),
                                 true);
         }
-        return ((Class318_Sub10) this).aClass98_6481;
+        return this.aClass98_6481;
     }
 
     final void method2540(long l) {
@@ -291,15 +290,15 @@ final class Class318_Sub10 extends Class318 {
     }
 
     private Class318_Sub10(int i, boolean bool) {
-        ((Class318_Sub10) this).aBoolean6470 = false;
+        this.aBoolean6470 = false;
         aClass243_6478 = new Class243();
         anInt6480 = 0;
-        ((Class318_Sub10) this).aClass262_6479 = new Class262();
-        ((Class318_Sub10) this).aBoolean6482 = false;
+        this.aClass262_6479 = new Class262();
+        this.aBoolean6482 = false;
         anInt6485 = 0;
         aBoolean6484 = false;
-        ((Class318_Sub10) this).aClass98_6481 = new Class98();
-        ((Class318_Sub10) this).aClass318_Sub9_Sub2_Sub1Array6475
+        this.aClass98_6481 = new Class98();
+        this.aClass318_Sub9_Sub2_Sub1Array6475
                 = new Class318_Sub9_Sub2_Sub1[8192];
         method2531(i, bool);
     }

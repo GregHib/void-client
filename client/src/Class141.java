@@ -11,7 +11,7 @@ final class Class141 {
     static int anInt1968;
     static int anInt1969;
     static int anInt1970;
-    private Class45 aClass45_1971;
+    private final Class45 aClass45_1971;
     static int anInt1972;
     static int[] anIntArray1973 = {0, 1, 2, 3, 4, 5, 6, 14};
     static int anInt1974;
@@ -23,7 +23,7 @@ final class Class141 {
         anInt1964++;
         Class218 class218;
         synchronized (aClass60_1963) {
-            class218 = (Class218) aClass60_1963.method583((long) i_0_, 118);
+            class218 = (Class218) aClass60_1963.method583(i_0_, 118);
         }
         if (class218 != null)
             return class218;
@@ -34,11 +34,11 @@ final class Class141 {
         class218 = new Class218();
         if (i != 31)
             return null;
-        ((Class218) class218).aClass141_2851 = this;
+        class218.aClass141_2851 = this;
         if (is != null)
             class218.method1597((byte) -114, new Class348_Sub49(is));
         synchronized (aClass60_1963) {
-            aClass60_1963.method582(class218, (long) i_0_, (byte) -108);
+            aClass60_1963.method582(class218, i_0_, (byte) -108);
         }
         return class218;
     }
@@ -48,11 +48,11 @@ final class Class141 {
             aClass60_1963.method587(-87);
         }
         anInt1969++;
-        synchronized (((Class141) this).aClass60_1976) {
+        synchronized (this.aClass60_1976) {
             if (i > -89) {
                 /* empty */
             } else
-                ((Class141) this).aClass60_1976.method587(-79);
+                this.aClass60_1976.method587(-79);
         }
     }
 
@@ -62,8 +62,8 @@ final class Class141 {
         }
         anInt1967++;
         if (i == 125) {
-            synchronized (((Class141) this).aClass60_1976) {
-                ((Class141) this).aClass60_1976.method590(0);
+            synchronized (this.aClass60_1976) {
+                this.aClass60_1976.method590(0);
             }
         }
     }
@@ -75,8 +75,8 @@ final class Class141 {
             aClass60_1963.method578(2, i);
         }
         anInt1968++;
-        synchronized (((Class141) this).aClass60_1976) {
-            ((Class141) this).aClass60_1976.method578(2, i);
+        synchronized (this.aClass60_1976) {
+            this.aClass60_1976.method578(2, i);
         }
     }
 
@@ -93,7 +93,7 @@ final class Class141 {
         if (i_2_ != 1)
             aClass273_1966 = null;
         aClass60_1963 = new Class60(i_3_);
-        ((Class141) this).aClass60_1976 = new Class60(i);
+        this.aClass60_1976 = new Class60(i);
     }
 
     public static void method1179(byte i) {
@@ -107,7 +107,7 @@ final class Class141 {
 
     Class141(Class230 class230, int i, Class45 class45, Class45 class45_4_) {
         try {
-            ((Class141) this).aClass45_1965 = class45_4_;
+            this.aClass45_1965 = class45_4_;
             aClass45_1971 = class45;
             aClass45_1971.method407(0, 34);
         } catch (RuntimeException runtimeexception) {

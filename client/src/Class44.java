@@ -34,7 +34,7 @@ final class Class44 {
             try {
                 anInt622++;
                 int[] is_5_ = {-1, 0, 0, 0, 0};
-                for (int i = 0; i < ((Class237) class237_sub1).anInt3130;
+                for (int i = 0; i < class237_sub1.anInt3130;
                      i++) {
                     Class369_Sub1.method3570(false);
                     for (int i_6_ = 0;
@@ -49,7 +49,7 @@ final class Class44 {
                                     [i_6_][i_7_]);
                             if ((i_8_ ^ 0xffffffff) != 0) {
                                 int i_9_ = i_8_ >> -1306551304 & 0x3;
-                                if (!((Class237) class237_sub1).aBoolean3109
+                                if (!class237_sub1.aBoolean3109
                                         || i_9_ == 0) {
                                     int i_10_ = (i_8_ & 0x6) >> 1432689025;
                                     int i_11_ = (i_8_ & 0xffd064) >> 86505390;
@@ -90,7 +90,7 @@ final class Class44 {
                         }
                     }
                 }
-                for (int i = 0; ((Class237) class237_sub1).anInt3130 > i;
+                for (int i = 0; class237_sub1.anInt3130 > i;
                      i++) {
                     Class369_Sub1.method3570(false);
                     for (int i_15_ = 0;
@@ -155,39 +155,39 @@ final class Class44 {
                                 Class318_Sub1_Sub5 class318_sub1_sub5_20_) {
         Class357 class357 = Class348_Sub46.method3321(i, i_18_, i_19_);
         if (class357 != null) {
-            ((Class357) class357).aClass318_Sub1_Sub5_4395
+            class357.aClass318_Sub1_Sub5_4395
                     = class318_sub1_sub5;
-            ((Class357) class357).aClass318_Sub1_Sub5_4407
+            class357.aClass318_Sub1_Sub5_4407
                     = class318_sub1_sub5_20_;
             int i_21_ = aa_Sub1.aSArray5191 == Class332.aSArray4142 ? 1 : 0;
             if (class318_sub1_sub5.method2376(-62)) {
                 if (class318_sub1_sub5.method2377((byte) 122)) {
-                    ((Class318_Sub1) class318_sub1_sub5).aClass318_Sub1_6379
+                    class318_sub1_sub5.aClass318_Sub1_6379
                             = Class250.aClass318_Sub1Array3226[i_21_];
                     Class250.aClass318_Sub1Array3226[i_21_]
                             = class318_sub1_sub5;
                 } else {
-                    ((Class318_Sub1) class318_sub1_sub5).aClass318_Sub1_6379
+                    class318_sub1_sub5.aClass318_Sub1_6379
                             = Class348.aClass318_Sub1Array4293[i_21_];
                     Class348.aClass318_Sub1Array4293[i_21_]
                             = class318_sub1_sub5;
                     Class348_Sub16_Sub2.aBoolean8870 = true;
                 }
             } else {
-                ((Class318_Sub1) class318_sub1_sub5).aClass318_Sub1_6379
+                class318_sub1_sub5.aClass318_Sub1_6379
                         = Class115.aClass318_Sub1Array1754[i_21_];
                 Class115.aClass318_Sub1Array1754[i_21_] = class318_sub1_sub5;
             }
             if (class318_sub1_sub5_20_ != null) {
                 if (class318_sub1_sub5_20_.method2376(-110)) {
                     if (class318_sub1_sub5_20_.method2377((byte) 122)) {
-                        ((Class318_Sub1) class318_sub1_sub5_20_)
+                        class318_sub1_sub5_20_
                                 .aClass318_Sub1_6379
                                 = Class250.aClass318_Sub1Array3226[i_21_];
                         Class250.aClass318_Sub1Array3226[i_21_]
                                 = class318_sub1_sub5_20_;
                     } else {
-                        ((Class318_Sub1) class318_sub1_sub5_20_)
+                        class318_sub1_sub5_20_
                                 .aClass318_Sub1_6379
                                 = Class348.aClass318_Sub1Array4293[i_21_];
                         Class348.aClass318_Sub1Array4293[i_21_]
@@ -195,7 +195,7 @@ final class Class44 {
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                     }
                 } else {
-                    ((Class318_Sub1) class318_sub1_sub5_20_)
+                    class318_sub1_sub5_20_
                             .aClass318_Sub1_6379
                             = Class115.aClass318_Sub1Array1754[i_21_];
                     Class115.aClass318_Sub1Array1754[i_21_]

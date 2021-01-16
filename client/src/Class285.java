@@ -24,12 +24,12 @@ abstract class Class285 implements Interface5 {
     private int anInt4747;
     private NativeHeapBuffer aNativeHeapBuffer4748;
     static int anInt4749;
-    private boolean aBoolean4750;
+    private final boolean aBoolean4750;
     static int anInt4751;
     static int anInt4752;
     static int anInt4753 = 0;
     static Class323 aClass323_4754;
-    private int anInt4755;
+    private final int anInt4755;
     static int anInt4756;
     static int anInt4757;
     static int anInt4758;
@@ -47,7 +47,7 @@ abstract class Class285 implements Interface5 {
     final Buffer method2120(int i, MapBuffer mapbuffer, boolean bool) {
         anInt4756++;
         if (i != 0)
-            ((Class285) this).aClass377_4759 = null;
+            this.aClass377_4759 = null;
         if ((anInt4736 ^ 0xffffffff) == -1) {
             method2126((byte) -36);
             if (anInt4746 <= 0) {
@@ -58,10 +58,10 @@ abstract class Class285 implements Interface5 {
             if (bool) {
                 OpenGL.glBufferDataARBub(anInt4755, anInt4739, null, 0,
                         aBoolean4750 ? 35040 : 35044);
-                if (anInt4747 <= (((ha_Sub3) ((Class285) this).aClass377_4759)
+                if (anInt4747 <= (this.aClass377_4759
                         .aNativeHeapBuffer7974.b)) {
                     anInt4736 = 1;
-                    return (((ha_Sub3) ((Class285) this).aClass377_4759)
+                    return (this.aClass377_4759
                             .aNativeHeapBuffer7974);
                 }
             }
@@ -84,14 +84,14 @@ abstract class Class285 implements Interface5 {
             OpenGL.glBindBufferARB(anInt4755, anInt4746);
             OpenGL.glBufferDataARBa(anInt4755, i_3_, source.getAddress(),
                     !aBoolean4750 ? 35044 : 35040);
-            ((ha_Sub3) ((Class285) this).aClass377_4759).anInt8063
+            this.aClass377_4759.anInt8063
                     += i_3_ - anInt4747;
             anInt4739 = i_3_;
         } else if (anInt4746 > 0) {
             OpenGL.glBindBufferARB(anInt4755, anInt4746);
             OpenGL.glBufferSubDataARBa(anInt4755, 0, anInt4747,
                     source.getAddress());
-            ((ha_Sub3) ((Class285) this).aClass377_4759).anInt8063
+            this.aClass377_4759.anInt8063
                     += i_3_ - anInt4747;
         } else
             throw new RuntimeException("ARGH!");
@@ -104,7 +104,7 @@ abstract class Class285 implements Interface5 {
             aClass323_4754 = null;
         anInt4749++;
         if ((anInt4746 ^ 0xffffffff) < -1) {
-            ((Class285) this).aClass377_4759.method3969(anInt4747, anInt4746,
+            this.aClass377_4759.method3969(anInt4747, anInt4746,
                     3089);
             anInt4746 = -1;
         }
@@ -129,8 +129,8 @@ abstract class Class285 implements Interface5 {
                     bool = mapbuffer.b();
                 else
                     OpenGL.glBufferSubDataARBa(anInt4755, 0, anInt4739,
-                            ((ha_Sub3) (((Class285) this)
-                                    .aClass377_4759))
+                            this
+                                    .aClass377_4759
                                     .aNativeHeapBuffer7974
                                     .getAddress());
             }
@@ -153,13 +153,13 @@ abstract class Class285 implements Interface5 {
             method2126((byte) -36);
             if ((anInt4746 ^ 0xffffffff) >= -1)
                 aNativeHeapBuffer4748
-                        = ((Class285) this).aClass377_4759.method3869((byte) 47,
+                        = this.aClass377_4759.method3869((byte) 47,
                         false, i_4_);
             else {
                 OpenGL.glBindBufferARB(anInt4755, anInt4746);
                 OpenGL.glBufferDataARBub(anInt4755, i_4_, null, 0,
                         !aBoolean4750 ? 35044 : 35040);
-                ((ha_Sub3) ((Class285) this).aClass377_4759).anInt8063
+                this.aClass377_4759.anInt8063
                         += i_4_ - anInt4739;
             }
             anInt4739 = i_4_;
@@ -172,7 +172,7 @@ abstract class Class285 implements Interface5 {
     final void method2125(int i) {
         anInt4742++;
         if (i == 0) {
-            if (((Class377) ((Class285) this).aClass377_4759).aBoolean9920)
+            if (this.aClass377_4759.aBoolean9920)
                 OpenGL.glBindBufferARB(anInt4755, anInt4746);
         }
     }
@@ -195,7 +195,7 @@ abstract class Class285 implements Interface5 {
         if (i != -36)
             anInt4736 = -3;
         if ((anInt4746 ^ 0xffffffff) > -1) {
-            if (!((Class377) ((Class285) this).aClass377_4759).aBoolean9920)
+            if (!this.aClass377_4759.aBoolean9920)
                 anInt4746 = 0;
             else {
                 OpenGL.glGenBuffersARB(1, Class260.anIntArray3311, 0);
@@ -206,7 +206,7 @@ abstract class Class285 implements Interface5 {
     }
 
     Class285(Class377 class377, int i, boolean bool) {
-        ((Class285) this).aClass377_4759 = class377;
+        this.aClass377_4759 = class377;
         anInt4755 = i;
         aBoolean4750 = bool;
     }

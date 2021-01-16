@@ -37,7 +37,7 @@ final class Class302 {
                     Canvas_Sub1.method119(-1, l);
             }
             Class348_Sub47.method3324(Class348_Sub8.aHa6654, (byte) 83,
-                    (long) Class367_Sub11.anInt7396);
+                    Class367_Sub11.anInt7396);
             if (r.anInt9721 != -1)
                 Class75_Sub1.method769(r.anInt9721, (byte) 118);
             for (int i_3_ = 0;
@@ -70,14 +70,11 @@ final class Class302 {
                         << 1788292200);
                 Class335.method2655
                         (98,
-                                ((Class318_Sub1)
-                                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).aByte6381,
+                                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381,
                                 Class348_Sub51.anInt7267,
-                                i_5_ + (((Class318_Sub1)
-                                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                i_5_ + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                         .anInt6388),
-                                (((Class318_Sub1)
-                                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6377
+                                (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
                                         - -i_5_));
                 Class348_Sub51.anInt7267 = 0;
             }

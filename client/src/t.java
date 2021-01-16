@@ -4,8 +4,8 @@
 
 final class t extends s implements Interface19 {
     long nativeid;
-    private Class262 aClass262_5149 = new Class262();
-    private oa anOa5150;
+    private final Class262 aClass262_5149 = new Class262();
+    private final oa anOa5150;
     private int anInt5151 = -1;
 
     final void method3984(int i, int i_0_, int i_1_, boolean[][] bools,
@@ -25,8 +25,8 @@ final class t extends s implements Interface19 {
                 if (bools[i_5_][i_6_]) {
                     int i_7_ = i - i_1_ + i_5_;
                     int i_8_ = i_0_ - i_1_ + i_6_;
-                    if (i_7_ >= 0 && i_7_ < ((s) this).anInt4587 && i_8_ >= 0
-                            && i_8_ < ((s) this).anInt4590)
+                    if (i_7_ >= 0 && i_7_ < this.anInt4587 && i_8_ >= 0
+                            && i_8_ < this.anInt4590)
                         method3979(i_7_, i_8_);
                 }
             }
@@ -135,7 +135,7 @@ final class t extends s implements Interface19 {
       int i_52_, int i_53_, int i_54_) {
         super(i, i_50_, i_52_, is);
         anOa5150 = var_oa;
-        ga(anOa5150, var_ya, i, i_50_, ((s) this).anIntArrayArray4584, is_51_,
+        ga(anOa5150, var_ya, i, i_50_, this.anIntArrayArray4584, is_51_,
                 i_52_, i_53_, i_54_);
     }
 
@@ -166,8 +166,8 @@ final class t extends s implements Interface19 {
                 if (bools[i_67_][i_68_]) {
                     int i_69_ = i - i_64_ + i_67_;
                     int i_70_ = i_63_ - i_64_ + i_68_;
-                    if (i_69_ >= 0 && i_69_ < ((s) this).anInt4587
-                            && i_70_ >= 0 && i_70_ < ((s) this).anInt4590)
+                    if (i_69_ >= 0 && i_69_ < this.anInt4587
+                            && i_70_ >= 0 && i_70_ < this.anInt4590)
                         method3979(i_69_, i_70_);
                 }
             }
@@ -177,7 +177,7 @@ final class t extends s implements Interface19 {
     final native r fa(int i, int i_71_, r var_r);
 
     protected final void finalize() {
-        if (((t) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 

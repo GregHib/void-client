@@ -5,7 +5,7 @@
 final class Class255 {
     static Class114 aClass114_3265;
     static int anInt3266;
-    private Class45 aClass45_3267;
+    private final Class45 aClass45_3267;
     Class45 aClass45_3268;
     private boolean aBoolean3269;
     static int anInt3270;
@@ -16,7 +16,7 @@ final class Class255 {
     static int anInt3275;
     static int anInt3276;
     static int anInt3277;
-    private Class60 aClass60_3278 = new Class60(64);
+    private final Class60 aClass60_3278 = new Class60(64);
     static int anInt3279;
     static int anInt3280;
     static int anInt3281;
@@ -28,10 +28,10 @@ final class Class255 {
     Class60 aClass60_3287 = new Class60(50);
     Class175 aClass175_3288 = new Class175(250);
     private Class126 aClass126_3289 = new Class126();
-    private String[] aStringArray3290;
+    private final String[] aStringArray3290;
     int anInt3291;
     private Class326 aClass326_3292;
-    private String[] aStringArray3293;
+    private final String[] aStringArray3293;
 
     static final Class74[] method1929(byte i) {
         if (i != -19)
@@ -50,8 +50,8 @@ final class Class255 {
     }
 
     final void method1930(int i) {
-        synchronized (((Class255) this).aClass60_3287) {
-            ((Class255) this).aClass60_3287.method590(0);
+        synchronized (this.aClass60_3287) {
+            this.aClass60_3287.method590(0);
             if (i != -21804)
                 method1930(-35);
         }
@@ -77,14 +77,14 @@ final class Class255 {
             if (class105 != null)
                 return class105;
             Class213 class213 = method1940(90, i_4_);
-            if (i_0_ > 1 && ((Class213) class213).anIntArray2762 != null) {
+            if (i_0_ > 1 && class213.anIntArray2762 != null) {
                 int i_7_ = -1;
                 for (int i_8_ = 0; i_8_ < 10; i_8_++) {
                     if (((i_0_ ^ 0xffffffff)
-                            <= (((Class213) class213).anIntArray2831[i_8_]
+                            <= (class213.anIntArray2831[i_8_]
                             ^ 0xffffffff))
-                            && ((Class213) class213).anIntArray2831[i_8_] != 0)
-                        i_7_ = ((Class213) class213).anIntArray2762[i_8_];
+                            && class213.anIntArray2831[i_8_] != 0)
+                        i_7_ = class213.anIntArray2762[i_8_];
                 }
                 if ((i_7_ ^ 0xffffffff) != 0)
                     class213 = method1940(127, i_7_);
@@ -104,14 +104,14 @@ final class Class255 {
                         = var_ha_3_.method3662(36, is, (byte) 94, 0, 36, 32);
             if (!bool) {
                 Class126 class126 = new Class126();
-                ((Class126) class126).anInt4982 = i;
-                ((Class126) class126).aBoolean4990 = class154 != null;
-                ((Class126) class126).anInt4989 = i_0_;
-                ((Class126) class126).anInt4992 = i_4_;
-                ((Class126) class126).anInt4981 = i_1_;
-                ((Class126) class126).anInt4991 = ((ha) var_ha_3_).anInt4567;
-                ((Class126) class126).anInt4993 = i_6_;
-                ((Class255) this).aClass175_3288.method1348(70, class105_9_,
+                class126.anInt4982 = i;
+                class126.aBoolean4990 = class154 != null;
+                class126.anInt4989 = i_0_;
+                class126.anInt4992 = i_4_;
+                class126.anInt4981 = i_1_;
+                class126.anInt4991 = var_ha_3_.anInt4567;
+                class126.anInt4993 = i_6_;
+                this.aClass175_3288.method1348(70, class105_9_,
                         class126);
             }
             return class105_9_;
@@ -264,8 +264,8 @@ final class Class255 {
 
     final void method1936(int i) {
         anInt3281++;
-        synchronized (((Class255) this).aClass175_3288) {
-            ((Class255) this).aClass175_3288.method1345((byte) -126);
+        synchronized (this.aClass175_3288) {
+            this.aClass175_3288.method1345((byte) -126);
             int i_12_ = -63 / ((21 - i) / 50);
         }
     }
@@ -275,13 +275,13 @@ final class Class255 {
         synchronized (aClass60_3278) {
             aClass60_3278.method578(2, i);
         }
-        synchronized (((Class255) this).aClass60_3287) {
+        synchronized (this.aClass60_3287) {
             if (bool != false)
                 method1939(-11);
-            ((Class255) this).aClass60_3287.method578(2, i);
+            this.aClass60_3287.method578(2, i);
         }
-        synchronized (((Class255) this).aClass175_3288) {
-            ((Class255) this).aClass175_3288.method1346(-1491, i);
+        synchronized (this.aClass175_3288) {
+            this.aClass175_3288.method1346(-1491, i);
         }
     }
 
@@ -290,14 +290,14 @@ final class Class255 {
         synchronized (aClass60_3278) {
             aClass60_3278.method587(-88);
         }
-        synchronized (((Class255) this).aClass60_3287) {
-            ((Class255) this).aClass60_3287.method587(-85);
+        synchronized (this.aClass60_3287) {
+            this.aClass60_3287.method587(-85);
         }
-        synchronized (((Class255) this).aClass175_3288) {
-            ((Class255) this).aClass175_3288.method1344((byte) -124);
+        synchronized (this.aClass175_3288) {
+            this.aClass175_3288.method1344((byte) -124);
         }
         if (i < 105)
-            ((Class255) this).aClass45_3268 = null;
+            this.aClass45_3268 = null;
     }
 
     final void method1939(int i) {
@@ -307,11 +307,11 @@ final class Class255 {
             aClass60_3278.method590(0);
         }
         anInt3277++;
-        synchronized (((Class255) this).aClass60_3287) {
-            ((Class255) this).aClass60_3287.method590(0);
+        synchronized (this.aClass60_3287) {
+            this.aClass60_3287.method590(0);
         }
-        synchronized (((Class255) this).aClass175_3288) {
-            ((Class255) this).aClass175_3288.method1345((byte) 47);
+        synchronized (this.aClass175_3288) {
+            this.aClass175_3288.method1345((byte) 47);
         }
     }
 
@@ -319,7 +319,7 @@ final class Class255 {
         anInt3283++;
         Class213 class213;
         synchronized (aClass60_3278) {
-            class213 = (Class213) aClass60_3278.method583((long) i_13_, 90);
+            class213 = (Class213) aClass60_3278.method583(i_13_, 90);
         }
         if (class213 != null)
             return class213;
@@ -329,65 +329,64 @@ final class Class255 {
                     Class251.method1914(-23590, i_13_));
         }
         class213 = new Class213();
-        ((Class213) class213).aClass255_2761 = this;
-        ((Class213) class213).anInt2769 = i_13_;
-        ((Class213) class213).aStringArray2811
+        class213.aClass255_2761 = this;
+        class213.anInt2769 = i_13_;
+        class213.aStringArray2811
                 = new String[]{null, null,
                 Class274.aClass274_3490
-                        .method2063(((Class255) this).anInt3286, 544),
+                        .method2063(this.anInt3286, 544),
                 null, null};
-        ((Class213) class213).aStringArray2763
+        class213.aStringArray2763
                 = (new String[]
                 {null, null, null, null,
                         Class274.aClass274_3491
-                                .method2063(((Class255) this).anInt3286, 544)});
+                                .method2063(this.anInt3286, 544)});
         if (is != null)
             class213.method1569(768, new Class348_Sub49(is));
         class213.method1563((byte) 92);
         int i_14_ = 4 / ((i - 13) / 59);
-        if (((Class213) class213).anInt2833 != -1)
+        if (class213.anInt2833 != -1)
             class213.method1570(1,
                     method1940(90,
-                            ((Class213) class213).anInt2758),
+                            class213.anInt2758),
                     method1940(101,
-                            ((Class213) class213).anInt2833));
-        if (((Class213) class213).anInt2812 != -1)
+                            class213.anInt2833));
+        if (class213.anInt2812 != -1)
             class213.method1556(method1940(-58,
-                    ((Class213) class213).anInt2778),
+                    class213.anInt2778),
                     (byte) -29,
                     method1940(-82,
-                            ((Class213) class213).anInt2812));
-        if (!aBoolean3269 && ((Class213) class213).aBoolean2783) {
-            ((Class213) class213).aString2795
+                            class213.anInt2812));
+        if (!aBoolean3269 && class213.aBoolean2783) {
+            class213.aString2795
                     = Class274.aClass274_3488
-                    .method2063(((Class255) this).anInt3286, 544);
-            ((Class213) class213).anInt2827 = 0;
-            ((Class213) class213).aStringArray2811 = aStringArray3290;
-            ((Class213) class213).aStringArray2763 = aStringArray3293;
-            ((Class213) class213).aBoolean2755 = false;
-            ((Class213) class213).anIntArray2772 = null;
-            if (((Class213) class213).aClass356_2757 != null) {
+                    .method2063(this.anInt3286, 544);
+            class213.anInt2827 = 0;
+            class213.aStringArray2811 = aStringArray3290;
+            class213.aStringArray2763 = aStringArray3293;
+            class213.aBoolean2755 = false;
+            class213.anIntArray2772 = null;
+            if (class213.aClass356_2757 != null) {
                 boolean bool = false;
                 for (Class348 class348
-                     = ((Class213) class213).aClass356_2757.method3484(0);
+                     = class213.aClass356_2757.method3484(0);
                      class348 != null;
-                     class348 = ((Class213) class213).aClass356_2757
+                     class348 = class213.aClass356_2757
                              .method3482(0)) {
                     Class254 class254
-                            = aClass326_3292.method2600((int) ((Class348)
-                                    class348).aLong4291,
+                            = aClass326_3292.method2600((int) class348.aLong4291,
                             28364);
-                    if (((Class254) class254).aBoolean3261)
+                    if (class254.aBoolean3261)
                         class348.method2715((byte) 60);
                     else
                         bool = true;
                 }
                 if (!bool)
-                    ((Class213) class213).aClass356_2757 = null;
+                    class213.aClass356_2757 = null;
             }
         }
         synchronized (aClass60_3278) {
-            aClass60_3278.method582(class213, (long) i_13_, (byte) -118);
+            aClass60_3278.method582(class213, i_13_, (byte) -118);
         }
         return class213;
     }
@@ -396,17 +395,17 @@ final class Class255 {
                               int i_18_, int i_19_, ha var_ha,
                               Class154 class154) {
         try {
-            ((Class126) aClass126_3289).anInt4992 = i_16_;
-            ((Class126) aClass126_3289).anInt4989 = i_17_;
-            ((Class126) aClass126_3289).anInt4991 = ((ha) var_ha).anInt4567;
-            ((Class126) aClass126_3289).anInt4981 = i_19_;
+            aClass126_3289.anInt4992 = i_16_;
+            aClass126_3289.anInt4989 = i_17_;
+            aClass126_3289.anInt4991 = var_ha.anInt4567;
+            aClass126_3289.anInt4981 = i_19_;
             if (i_15_ != -74)
                 aClass126_3289 = null;
-            ((Class126) aClass126_3289).aBoolean4990 = class154 != null;
-            ((Class126) aClass126_3289).anInt4982 = i_18_;
+            aClass126_3289.aBoolean4990 = class154 != null;
+            aClass126_3289.anInt4982 = i_18_;
             anInt3282++;
-            ((Class126) aClass126_3289).anInt4993 = i;
-            return (Class105) ((Class255) this).aClass175_3288
+            aClass126_3289.anInt4993 = i;
+            return (Class105) this.aClass175_3288
                     .method1340(123, aClass126_3289);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -423,10 +422,10 @@ final class Class255 {
     }
 
     final void method1942(int i, byte i_20_) {
-        ((Class255) this).anInt3291 = i;
+        this.anInt3291 = i;
         anInt3284++;
-        synchronized (((Class255) this).aClass60_3287) {
-            ((Class255) this).aClass60_3287.method590(0);
+        synchronized (this.aClass60_3287) {
+            this.aClass60_3287.method590(0);
             int i_21_ = 89 % ((-65 - i_20_) / 60);
         }
     }
@@ -436,26 +435,26 @@ final class Class255 {
         try {
             aBoolean3269 = bool;
             aClass326_3292 = class326;
-            ((Class255) this).aClass45_3268 = class45_22_;
-            ((Class255) this).anInt3286 = i;
+            this.aClass45_3268 = class45_22_;
+            this.anInt3286 = i;
             aClass45_3267 = class45;
             if (aClass45_3267 != null) {
                 int i_23_ = -1 + aClass45_3267.method414(-1);
-                ((Class255) this).anInt3271
+                this.anInt3271
                         = aClass45_3267.method407(0, i_23_) + i_23_ * 256;
             } else
-                ((Class255) this).anInt3271 = 0;
+                this.anInt3271 = 0;
             aStringArray3290
                     = (new String[]
                     {null, null,
                             Class274.aClass274_3490
-                                    .method2063(((Class255) this).anInt3286, 544),
+                                    .method2063(this.anInt3286, 544),
                             null, null});
             aStringArray3293
                     = (new String[]
                     {null, null, null, null,
                             Class274.aClass274_3491
-                                    .method2063(((Class255) this).anInt3286, 544)});
+                                    .method2063(this.anInt3286, 544)});
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

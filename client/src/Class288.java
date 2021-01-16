@@ -45,11 +45,11 @@ class Class288 implements Interface12 {
 
     Class288(int i, Class221 class221, Class341 class341, int i_2_, int i_3_) {
         try {
-            ((Class288) this).anInt4950 = i_2_;
-            ((Class288) this).anInt4958 = i;
-            ((Class288) this).anInt4951 = i_3_;
-            ((Class288) this).aClass221_4955 = class221;
-            ((Class288) this).aClass341_4952 = class341;
+            this.anInt4950 = i_2_;
+            this.anInt4958 = i;
+            this.anInt4951 = i_3_;
+            this.aClass221_4955 = class221;
+            this.aClass341_4952 = class341;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("vr.<init>(" + i + ','

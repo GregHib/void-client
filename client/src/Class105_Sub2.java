@@ -11,11 +11,11 @@ final class Class105_Sub2 extends Class105 {
     private boolean aBoolean8427;
     static int anInt8428;
     private int anInt8429 = 0;
-    private ha_Sub2 aHa_Sub2_8430;
+    private final ha_Sub2 aHa_Sub2_8430;
     private Class258_Sub3_Sub1 aClass258_Sub3_Sub1_8431;
     private int anInt8432 = 0;
     static int anInt8433;
-    private Class258_Sub3_Sub1 aClass258_Sub3_Sub1_8434;
+    private final Class258_Sub3_Sub1 aClass258_Sub3_Sub1_8434;
     static int anInt8435;
     static int anInt8436;
     static int anInt8437;
@@ -87,18 +87,18 @@ final class Class105_Sub2 extends Class105 {
                 (byte) (i_5_ >> 1938750680));
         OpenGL.glBegin(7);
         OpenGL.glTexCoord2f(0.0F,
-                (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                (aClass258_Sub3_Sub1_8434
                         .aFloat9938));
         OpenGL.glVertex2f(f, f_0_);
         OpenGL.glTexCoord2f(0.0F, 0.0F);
         OpenGL.glVertex2f(f_3_, f_4_);
-        OpenGL.glTexCoord2f((((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+        OpenGL.glTexCoord2f((aClass258_Sub3_Sub1_8434
                         .aFloat9937),
                 0.0F);
         OpenGL.glVertex2f(f_22_, f_23_);
-        OpenGL.glTexCoord2f((((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+        OpenGL.glTexCoord2f((aClass258_Sub3_Sub1_8434
                         .aFloat9937),
-                (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                (aClass258_Sub3_Sub1_8434
                         .aFloat9938));
         OpenGL.glVertex2f(f_1_, f_2_);
         OpenGL.glEnd();
@@ -106,7 +106,7 @@ final class Class105_Sub2 extends Class105 {
 
     final int method969() {
         anInt8439++;
-        return ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).anInt9939;
+        return aClass258_Sub3_Sub1_8434.anInt9939;
     }
 
     final void method968(int i, int i_24_, int i_25_) {
@@ -119,11 +119,9 @@ final class Class105_Sub2 extends Class105 {
         OpenGL.glPixelTransferf(3355, 0.499F);
         aClass258_Sub3_Sub1_8431
                 = Class186_Sub1.method1401(aHa_Sub2_8430, i, 34037,
-                ((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).anInt9940,
+                aClass258_Sub3_Sub1_8434.anInt9940,
                 i_24_,
-                ((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).anInt9939);
+                aClass258_Sub3_Sub1_8434.anInt9939);
         anInt8429 = i_25_;
         OpenGL.glPixelTransferf(3348, 1.0F);
         OpenGL.glPixelTransferf(3349, 0.0F);
@@ -144,7 +142,7 @@ final class Class105_Sub2 extends Class105 {
     final int method980() {
         anInt8433++;
         return (anInt8446
-                + ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).anInt9939
+                + aClass258_Sub3_Sub1_8434.anInt9939
                 + anInt8432);
     }
 
@@ -159,7 +157,7 @@ final class Class105_Sub2 extends Class105 {
         anInt8424++;
         aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
         Class258_Sub3_Sub1 class258_sub3_sub1
-                = ((aa_Sub1) var_aa_Sub1).aClass258_Sub3_Sub1_5193;
+                = var_aa_Sub1.aClass258_Sub3_Sub1_5193;
         aClass258_Sub3_Sub1_8434.method1957(9728, false);
         aHa_Sub2_8430.method3792(75);
         aHa_Sub2_8430.method3771((byte) -99, aClass258_Sub3_Sub1_8434);
@@ -172,47 +170,44 @@ final class Class105_Sub2 extends Class105 {
         i += anInt8447;
         i_31_ += anInt8446;
         int i_34_
-                = ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).anInt9940 + i;
+                = aClass258_Sub3_Sub1_8434.anInt9940 + i;
         int i_35_
                 = (i_31_
-                - -((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).anInt9939);
+                - -aClass258_Sub3_Sub1_8434.anInt9939);
         float f
-                = (((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9937
-                / (float) ((Class258_Sub3_Sub1) class258_sub3_sub1).anInt9940);
+                = (class258_sub3_sub1.aFloat9937
+                / (float) class258_sub3_sub1.anInt9940);
         float f_36_
-                = (((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9938
-                / (float) ((Class258_Sub3_Sub1) class258_sub3_sub1).anInt9939);
+                = (class258_sub3_sub1.aFloat9938
+                / (float) class258_sub3_sub1.anInt9939);
         float f_37_ = f * (float) (-i_32_ + i);
         float f_38_ = f * (float) (i_34_ - i_32_);
-        float f_39_ = (((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9938
+        float f_39_ = (class258_sub3_sub1.aFloat9938
                 - f_36_ * (float) (i_31_ - i_33_));
         float f_40_ = (-((float) (i_35_ + -i_33_) * f_36_)
-                + ((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9938);
+                + class258_sub3_sub1.aFloat9938);
         OpenGL.glBegin(7);
         OpenGL.glColor3f(1.0F, 1.0F, 1.0F);
         OpenGL.glMultiTexCoord2f(33984, 0.0F,
-                ((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).aFloat9938);
+                aClass258_Sub3_Sub1_8434.aFloat9938);
         OpenGL.glMultiTexCoord2f(33985, f_37_, f_39_);
         OpenGL.glVertex2i(i, i_31_);
         OpenGL.glMultiTexCoord2f(33984, 0.0F, 0.0F);
         OpenGL.glMultiTexCoord2f(33985, f_37_, f_40_);
-        OpenGL.glVertex2i(i, i_31_ - -((Class258_Sub3_Sub1)
-                aClass258_Sub3_Sub1_8434).anInt9939);
+        OpenGL.glVertex2i(i, i_31_ - -aClass258_Sub3_Sub1_8434.anInt9939);
         OpenGL.glMultiTexCoord2f(33984,
-                ((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).aFloat9937,
+                aClass258_Sub3_Sub1_8434.aFloat9937,
                 0.0F);
         OpenGL.glMultiTexCoord2f(33985, f_38_, f_40_);
-        OpenGL.glVertex2i(i - -(((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+        OpenGL.glVertex2i(i - -(aClass258_Sub3_Sub1_8434
                         .anInt9940),
-                (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                (aClass258_Sub3_Sub1_8434
                         .anInt9939) + i_31_);
         OpenGL.glMultiTexCoord2f
-                (33984, ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                        ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
+                (33984, aClass258_Sub3_Sub1_8434.aFloat9937,
+                        aClass258_Sub3_Sub1_8434.aFloat9938);
         OpenGL.glMultiTexCoord2f(33985, f_38_, f_39_);
-        OpenGL.glVertex2i((((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+        OpenGL.glVertex2i((aClass258_Sub3_Sub1_8434
                         .anInt9940) + i,
                 i_31_);
         OpenGL.glEnd();
@@ -250,7 +245,7 @@ final class Class105_Sub2 extends Class105 {
                          int i_50_) {
         anInt8448++;
         Class258_Sub3_Sub1 class258_sub3_sub1
-                = ((aa_Sub1) (aa_Sub1) var_aa).aClass258_Sub3_Sub1_5193;
+                = ((aa_Sub1) var_aa).aClass258_Sub3_Sub1_5193;
         if (aBoolean8427) {
             float f_51_ = (float) method966();
             float f_52_ = (float) method980();
@@ -285,41 +280,39 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3762(34168, 768, (byte) -87, 0);
         aHa_Sub2_8430.method3753(1, 1);
         float f_67_
-                = (((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9937
-                / (float) ((Class258_Sub3_Sub1) class258_sub3_sub1).anInt9940);
+                = (class258_sub3_sub1.aFloat9937
+                / (float) class258_sub3_sub1.anInt9940);
         float f_68_
-                = (((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9938
-                / (float) ((Class258_Sub3_Sub1) class258_sub3_sub1).anInt9939);
+                = (class258_sub3_sub1.aFloat9938
+                / (float) class258_sub3_sub1.anInt9939);
         OpenGL.glBegin(7);
         OpenGL.glColor3f(1.0F, 1.0F, 1.0F);
         OpenGL.glMultiTexCoord2f(33984, 0.0F,
-                ((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).aFloat9938);
+                aClass258_Sub3_Sub1_8434.aFloat9938);
         OpenGL.glMultiTexCoord2f(33985, f_67_ * (f - (float) i_49_),
-                ((((Class258_Sub3_Sub1) class258_sub3_sub1)
+                ((class258_sub3_sub1
                         .aFloat9938)
                         - f_68_ * ((float) -i_50_ + f_44_)));
         OpenGL.glVertex2f(f, f_44_);
         OpenGL.glMultiTexCoord2f(33984, 0.0F, 0.0F);
         OpenGL.glMultiTexCoord2f(33985, ((float) -i_49_ + f_47_) * f_67_,
                 (-(f_68_ * (f_48_ - (float) i_50_))
-                        + (((Class258_Sub3_Sub1) class258_sub3_sub1)
+                        + (class258_sub3_sub1
                         .aFloat9938)));
         OpenGL.glVertex2f(f_47_, f_48_);
         OpenGL.glMultiTexCoord2f(33984,
-                ((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).aFloat9937,
+                aClass258_Sub3_Sub1_8434.aFloat9937,
                 0.0F);
         OpenGL.glMultiTexCoord2f(33985, (f_65_ - (float) i_49_) * f_67_,
                 (-(f_68_ * (f_66_ - (float) i_50_))
-                        + (((Class258_Sub3_Sub1) class258_sub3_sub1)
+                        + (class258_sub3_sub1
                         .aFloat9938)));
         OpenGL.glVertex2f(f_65_, f_66_);
         OpenGL.glMultiTexCoord2f
-                (33984, ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                        ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
+                (33984, aClass258_Sub3_Sub1_8434.aFloat9937,
+                        aClass258_Sub3_Sub1_8434.aFloat9938);
         OpenGL.glMultiTexCoord2f(33985, f_67_ * ((float) -i_49_ + f_45_),
-                ((((Class258_Sub3_Sub1) class258_sub3_sub1)
+                ((class258_sub3_sub1
                         .aFloat9938)
                         - f_68_ * (f_46_ - (float) i_50_)));
         OpenGL.glVertex2f(f_45_, f_46_);
@@ -333,7 +326,7 @@ final class Class105_Sub2 extends Class105 {
     final int method966() {
         anInt8440++;
         return (anInt8447
-                + ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).anInt9940
+                + aClass258_Sub3_Sub1_8434.anInt9940
                 - -anInt8449);
     }
 
@@ -351,24 +344,21 @@ final class Class105_Sub2 extends Class105 {
             aHa_Sub2_8430.method3771((byte) -127, aClass258_Sub3_Sub1_8434);
             aHa_Sub2_8430.method3761(0, i_70_);
             OpenGL.glBegin(7);
-            OpenGL.glTexCoord2f(0.0F, ((Class258_Sub3_Sub1)
-                    aClass258_Sub3_Sub1_8434).aFloat9938);
+            OpenGL.glTexCoord2f(0.0F, aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i, i_69_);
             OpenGL.glTexCoord2f(0.0F, 0.0F);
             OpenGL.glVertex2i(i,
-                    i_69_ - -((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).anInt9939);
-            OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9937,
+                    i_69_ - -aClass258_Sub3_Sub1_8434.anInt9939);
+            OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                     0.0F);
-            OpenGL.glVertex2i((((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+            OpenGL.glVertex2i((aClass258_Sub3_Sub1_8434
                             .anInt9940) + i,
-                    (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                    (aClass258_Sub3_Sub1_8434
                             .anInt9939) + i_69_);
             OpenGL.glTexCoord2f
-                    (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
-            OpenGL.glVertex2i((((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                    (aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
+            OpenGL.glVertex2i((aClass258_Sub3_Sub1_8434
                             .anInt9940) + i,
                     i_69_);
             OpenGL.glEnd();
@@ -377,35 +367,29 @@ final class Class105_Sub2 extends Class105 {
             aClass258_Sub3_Sub1_8431.method1957(9728, false);
             OpenGL.glBegin(7);
             OpenGL.glMultiTexCoord2f(33985, 0.0F,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9938);
-            OpenGL.glTexCoord2f(0.0F, ((Class258_Sub3_Sub1)
-                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                    aClass258_Sub3_Sub1_8434.aFloat9938);
+            OpenGL.glTexCoord2f(0.0F, aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i, i_69_);
             OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
             OpenGL.glTexCoord2f(0.0F, 0.0F);
-            OpenGL.glVertex2i(i, i_69_ + ((Class258_Sub3_Sub1)
-                    aClass258_Sub3_Sub1_8434).anInt9939);
+            OpenGL.glVertex2i(i, i_69_ + aClass258_Sub3_Sub1_8434.anInt9939);
             OpenGL.glMultiTexCoord2f(33985,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9937,
+                    aClass258_Sub3_Sub1_8434.aFloat9937,
                     0.0F);
-            OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9937,
+            OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                     0.0F);
-            OpenGL.glVertex2i((((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+            OpenGL.glVertex2i((aClass258_Sub3_Sub1_8434
                             .anInt9940) + i,
-                    (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                    (aClass258_Sub3_Sub1_8434
                             .anInt9939) + i_69_);
             OpenGL.glMultiTexCoord2f
                     (33985,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glTexCoord2f
-                    (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
-            OpenGL.glVertex2i(i + ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).anInt9940,
+                    (aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
+            OpenGL.glVertex2i(i + aClass258_Sub3_Sub1_8434.anInt9940,
                     i_69_);
             OpenGL.glEnd();
             method991((byte) 9);
@@ -452,17 +436,17 @@ final class Class105_Sub2 extends Class105 {
         OpenGL.glColor4ub((byte) (i_78_ >> -696243888),
                 (byte) (i_78_ >> 1448891336), (byte) i_78_,
                 (byte) (i_78_ >> -293809640));
-        if (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aBoolean9941
+        if (aClass258_Sub3_Sub1_8434.aBoolean9941
                 && !aBoolean8427) {
             float f
-                    = (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938
+                    = (aClass258_Sub3_Sub1_8434.aFloat9938
                     * (float) i_76_
-                    / (float) (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                    / (float) (aClass258_Sub3_Sub1_8434
                     .anInt9939));
             float f_82_
                     = ((float) i_75_
-                    * ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937
-                    / (float) (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                    * aClass258_Sub3_Sub1_8434.aFloat9937
+                    / (float) (aClass258_Sub3_Sub1_8434
                     .anInt9940));
             OpenGL.glBegin(7);
             OpenGL.glTexCoord2f(0.0F, f);
@@ -480,82 +464,69 @@ final class Class105_Sub2 extends Class105 {
             int i_83_ = method966();
             int i_84_ = method980();
             int i_85_
-                    = i_74_ - -(((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                    = i_74_ - -(aClass258_Sub3_Sub1_8434
                     .anInt9939);
             OpenGL.glBegin(7);
             int i_86_ = i_74_;
             for (/**/; i_85_ <= i_81_; i_85_ += i_84_) {
                 int i_87_
-                        = i + (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                        = i + (aClass258_Sub3_Sub1_8434
                         .anInt9940);
                 int i_88_ = i;
                 for (/**/; i_80_ >= i_87_; i_87_ += i_83_) {
                     OpenGL.glTexCoord2f(0.0F,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_88_, i_86_);
                     OpenGL.glTexCoord2f(0.0F, 0.0F);
                     OpenGL.glVertex2i(i_88_, i_85_);
-                    OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9937,
+                    OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                             0.0F);
                     OpenGL.glVertex2i(i_87_, i_85_);
-                    OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                    OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_87_, i_86_);
                     i_88_ += i_83_;
                 }
                 if (i_88_ < i_80_) {
                     float f
                             = ((float) (i_80_ + -i_88_)
-                            * (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                            * (aClass258_Sub3_Sub1_8434
                             .aFloat9937)
-                            / (float) ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).anInt9940);
+                            / (float) aClass258_Sub3_Sub1_8434.anInt9940);
                     OpenGL.glTexCoord2f(0.0F,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_88_, i_86_);
                     OpenGL.glTexCoord2f(0.0F, 0.0F);
                     OpenGL.glVertex2i(i_88_, i_85_);
                     OpenGL.glTexCoord2f(f, 0.0F);
                     OpenGL.glVertex2i(i_80_, i_85_);
                     OpenGL.glTexCoord2f(f,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_80_, i_86_);
                 }
                 i_86_ += i_84_;
             }
             if ((i_81_ ^ 0xffffffff) < (i_86_ ^ 0xffffffff)) {
-                float f = ((((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                float f = ((aClass258_Sub3_Sub1_8434
                         .aFloat9938)
-                        * (float) (((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).anInt9939
+                        * (float) (aClass258_Sub3_Sub1_8434.anInt9939
                         + (-i_81_ + i_86_))
-                        / (float) ((Class258_Sub3_Sub1)
-                        aClass258_Sub3_Sub1_8434).anInt9939);
+                        / (float) aClass258_Sub3_Sub1_8434.anInt9939);
                 int i_89_
-                        = i + (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                        = i + (aClass258_Sub3_Sub1_8434
                         .anInt9940);
                 int i_90_ = i;
                 while ((i_89_ ^ 0xffffffff) >= (i_80_ ^ 0xffffffff)) {
                     OpenGL.glTexCoord2f(0.0F,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_90_, i_86_);
                     OpenGL.glTexCoord2f(0.0F, f);
                     OpenGL.glVertex2i(i_90_, i_81_);
-                    OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9937,
+                    OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                             f);
                     OpenGL.glVertex2i(i_89_, i_81_);
-                    OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                    OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_89_, i_86_);
                     i_89_ += i_83_;
                     i_90_ += i_83_;
@@ -563,21 +534,18 @@ final class Class105_Sub2 extends Class105 {
                 if (i_80_ > i_90_) {
                     float f_91_
                             = ((float) (i_80_ - i_90_)
-                            * (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                            * (aClass258_Sub3_Sub1_8434
                             .aFloat9937)
-                            / (float) ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).anInt9940);
+                            / (float) aClass258_Sub3_Sub1_8434.anInt9940);
                     OpenGL.glTexCoord2f(0.0F,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_90_, i_86_);
                     OpenGL.glTexCoord2f(0.0F, f);
                     OpenGL.glVertex2i(i_90_, i_81_);
                     OpenGL.glTexCoord2f(f_91_, f);
                     OpenGL.glVertex2i(i_80_, i_81_);
                     OpenGL.glTexCoord2f(f_91_,
-                            ((Class258_Sub3_Sub1)
-                                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_80_, i_86_);
                 }
             }
@@ -588,7 +556,7 @@ final class Class105_Sub2 extends Class105 {
 
     final int method971() {
         anInt8437++;
-        return ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).anInt9940;
+        return aClass258_Sub3_Sub1_8434.anInt9940;
     }
 
     final void method982(int i, int i_92_, int i_93_, int i_94_, int i_95_,
@@ -606,30 +574,25 @@ final class Class105_Sub2 extends Class105 {
             float f_100_ = (float) i + f * (float) anInt8447;
             float f_101_ = (float) anInt8446 * f_99_ + (float) i_92_;
             float f_102_
-                    = f_100_ + f * (float) ((Class258_Sub3_Sub1)
-                    aClass258_Sub3_Sub1_8434).anInt9940;
+                    = f_100_ + f * (float) aClass258_Sub3_Sub1_8434.anInt9940;
             float f_103_
                     = (f_101_
-                    + (float) (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434)
+                    + (float) (aClass258_Sub3_Sub1_8434
                     .anInt9939) * f_99_);
             if (aClass258_Sub3_Sub1_8431 == null) {
                 aHa_Sub2_8430.method3771((byte) -85, aClass258_Sub3_Sub1_8434);
                 aHa_Sub2_8430.method3761(0, i_95_);
                 OpenGL.glBegin(7);
                 OpenGL.glTexCoord2f(0.0F,
-                        ((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9938);
+                        aClass258_Sub3_Sub1_8434.aFloat9938);
                 OpenGL.glVertex2f(f_100_, f_101_);
                 OpenGL.glTexCoord2f(0.0F, 0.0F);
                 OpenGL.glVertex2f(f_100_, f_103_);
-                OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9937,
+                OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                         0.0F);
                 OpenGL.glVertex2f(f_102_, f_103_);
-                OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9937,
-                        ((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9938);
+                OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
+                        aClass258_Sub3_Sub1_8434.aFloat9938);
                 OpenGL.glVertex2f(f_102_, f_101_);
                 OpenGL.glEnd();
             } else {
@@ -637,34 +600,26 @@ final class Class105_Sub2 extends Class105 {
                 aClass258_Sub3_Sub1_8431.method1957(9728, true);
                 OpenGL.glBegin(7);
                 OpenGL.glMultiTexCoord2f(33985, 0.0F,
-                        (((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434)
+                        (aClass258_Sub3_Sub1_8434
                                 .aFloat9938));
                 OpenGL.glTexCoord2f(0.0F,
-                        ((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9938);
+                        aClass258_Sub3_Sub1_8434.aFloat9938);
                 OpenGL.glVertex2f(f_100_, f_101_);
                 OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
                 OpenGL.glTexCoord2f(0.0F, 0.0F);
                 OpenGL.glVertex2f(f_100_, f_103_);
                 OpenGL.glMultiTexCoord2f(33985,
-                        ((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9937,
+                        aClass258_Sub3_Sub1_8434.aFloat9937,
                         0.0F);
-                OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9937,
+                OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                         0.0F);
                 OpenGL.glVertex2f(f_102_, f_103_);
                 OpenGL.glMultiTexCoord2f(33985,
-                        ((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9937,
-                        (((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434)
+                        aClass258_Sub3_Sub1_8434.aFloat9937,
+                        (aClass258_Sub3_Sub1_8434
                                 .aFloat9938));
-                OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9937,
-                        ((Class258_Sub3_Sub1)
-                                aClass258_Sub3_Sub1_8434).aFloat9938);
+                OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
+                        aClass258_Sub3_Sub1_8434.aFloat9938);
                 OpenGL.glVertex2f(f_102_, f_101_);
                 OpenGL.glEnd();
                 method991((byte) 9);
@@ -673,18 +628,16 @@ final class Class105_Sub2 extends Class105 {
             aHa_Sub2_8430.method3771((byte) -101, aClass258_Sub3_Sub1_8434);
             aHa_Sub2_8430.method3761(0, i_95_);
             OpenGL.glBegin(7);
-            OpenGL.glTexCoord2f(0.0F, ((Class258_Sub3_Sub1)
-                    aClass258_Sub3_Sub1_8434).aFloat9938);
+            OpenGL.glTexCoord2f(0.0F, aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i, i_92_);
             OpenGL.glTexCoord2f(0.0F, 0.0F);
             OpenGL.glVertex2i(i, i_92_ - -i_94_);
-            OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9937,
+            OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                     0.0F);
             OpenGL.glVertex2i(i_93_ + i, i_94_ + i_92_);
             OpenGL.glTexCoord2f
-                    (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
+                    (aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i - -i_93_, i_92_);
             OpenGL.glEnd();
         } else {
@@ -692,29 +645,25 @@ final class Class105_Sub2 extends Class105 {
             aClass258_Sub3_Sub1_8431.method1957(9728, true);
             OpenGL.glBegin(7);
             OpenGL.glMultiTexCoord2f(33985, 0.0F,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9938);
-            OpenGL.glTexCoord2f(0.0F, ((Class258_Sub3_Sub1)
-                    aClass258_Sub3_Sub1_8434).aFloat9938);
+                    aClass258_Sub3_Sub1_8434.aFloat9938);
+            OpenGL.glTexCoord2f(0.0F, aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i, i_92_);
             OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
             OpenGL.glTexCoord2f(0.0F, 0.0F);
             OpenGL.glVertex2i(i, i_94_ + i_92_);
             OpenGL.glMultiTexCoord2f(33985,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9937,
+                    aClass258_Sub3_Sub1_8434.aFloat9937,
                     0.0F);
-            OpenGL.glTexCoord2f(((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_8434).aFloat9937,
+            OpenGL.glTexCoord2f(aClass258_Sub3_Sub1_8434.aFloat9937,
                     0.0F);
             OpenGL.glVertex2i(i - -i_93_, i_92_ + i_94_);
             OpenGL.glMultiTexCoord2f
                     (33985,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
+                            aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glTexCoord2f
-                    (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9937,
-                            ((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_8434).aFloat9938);
+                    (aClass258_Sub3_Sub1_8434.aFloat9937,
+                            aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i_93_ + i, i_92_);
             OpenGL.glEnd();
             method991((byte) 9);

@@ -176,9 +176,9 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
 
     final int[][] method3047(int i, int i_14_) {
         anInt9246++;
-        int[][] is = ((Class348_Sub40) this).aClass322_7033
+        int[][] is = this.aClass322_7033
                 .method2557(i_14_ ^ 0x5d41e2b0, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        if (this.aClass322_7033.aBoolean4035) {
             int[] is_15_ = is[0];
             int[] is_16_ = is[1];
             int[] is_17_ = is[2];

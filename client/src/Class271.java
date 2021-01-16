@@ -3,9 +3,9 @@
  */
 
 final class Class271 {
-    private Class60 aClass60_3466 = new Class60(64);
+    private final Class60 aClass60_3466 = new Class60(64);
     static Class114 aClass114_3467 = new Class114(45, 8);
-    private Class45 aClass45_3468;
+    private final Class45 aClass45_3468;
     static int anInt3469;
 
     final Class348_Sub42_Sub7 method2044(int i, int i_0_) {
@@ -13,7 +13,7 @@ final class Class271 {
         Class348_Sub42_Sub7 class348_sub42_sub7;
         synchronized (aClass60_3466) {
             class348_sub42_sub7
-                    = (Class348_Sub42_Sub7) aClass60_3466.method583((long) i_0_,
+                    = (Class348_Sub42_Sub7) aClass60_3466.method583(i_0_,
                     -85);
         }
         if (class348_sub42_sub7 != null)
@@ -28,7 +28,7 @@ final class Class271 {
         if (is != null)
             class348_sub42_sub7.method3192((byte) 16, new Class348_Sub49(is));
         synchronized (aClass60_3466) {
-            aClass60_3466.method582(class348_sub42_sub7, (long) i_0_,
+            aClass60_3466.method582(class348_sub42_sub7, i_0_,
                     (byte) -93);
         }
         return class348_sub42_sub7;

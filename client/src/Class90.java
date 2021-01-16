@@ -54,7 +54,7 @@ final class Class90 {
         }
         Class299.aClass348_Sub49_Sub2_3813.method3412(false);
         int i_7_
-                = (-((Class348_Sub49) Class299.aClass348_Sub49_Sub2_3813).anInt7197
+                = (-Class299.aClass348_Sub49_Sub2_3813.anInt7197
                 + Class348_Sub40_Sub25.anInt9341) / 16;
         Class239_Sub6.anIntArrayArray5894 = new int[i_7_][4];
         int i_8_ = 0;

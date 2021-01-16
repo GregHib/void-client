@@ -7,7 +7,7 @@ final class Class274 {
     static int anInt3478;
     static int anInt3479;
     static int anInt3480;
-    private String[] aStringArray3481;
+    private final String[] aStringArray3481;
     static int anInt3482;
     static Class274 aClass274_3483
             = (new Class274
@@ -185,7 +185,7 @@ final class Class274 {
                 if (class348_sub41 == null)
                     break;
             }
-            if ((((Class348_Sub41) class348_sub41).anInt7053 ^ 0xffffffff)
+            if ((class348_sub41.anInt7053 ^ 0xffffffff)
                     == -1)
                 Class127_Sub1.method1118(true, bool, class348_sub41, 2533);
         }

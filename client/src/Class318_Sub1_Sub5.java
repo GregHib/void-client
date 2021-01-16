@@ -32,11 +32,11 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
         anInt8767++;
         return (Class99.aBooleanArrayArray1572
                 [(-Class239_Sub25.anInt6111
-                + ((((Class318_Sub1) this).anInt6377 >> Class362.anInt4459)
+                + ((this.anInt6377 >> Class362.anInt4459)
                 - -Class318_Sub1_Sub4_Sub1.anInt10084))]
                 [(Class318_Sub1_Sub4_Sub1.anInt10084
                 + (-Class285_Sub2.anInt8502
-                + (((Class318_Sub1) this).anInt6388
+                + (this.anInt6388
                 >> Class362.anInt4459)))]);
     }
 
@@ -50,31 +50,29 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
         anInt8776++;
         if (Class135_Sub2.aClass348_Sub42_Sub12_4846 == null)
             return false;
-        if (((((Class348_Sub42_Sub12) Class135_Sub2.aClass348_Sub42_Sub12_4846)
+        if (((Class135_Sub2.aClass348_Sub42_Sub12_4846
                 .anInt9608)
                 ^ 0xffffffff)
                 <= -2001)
-            ((Class348_Sub42_Sub12) Class135_Sub2.aClass348_Sub42_Sub12_4846)
+            Class135_Sub2.aClass348_Sub42_Sub12_4846
                     .anInt9608
                     -= 2000;
         int i_1_ = -53 % ((-41 - i) / 54);
-        if ((((Class348_Sub42_Sub12) Class135_Sub2.aClass348_Sub42_Sub12_4846)
+        return (Class135_Sub2.aClass348_Sub42_Sub12_4846
                 .anInt9608)
-                == 1011)
-            return true;
-        return false;
+                == 1011;
     }
 
     final boolean method2382(byte i) {
         anInt8774++;
         if (i >= -51)
             method2486(-102, 81, -103, -31, -95, -90);
-        return Class125.method1110((((Class318_Sub1) this).anInt6388
+        return Class125.method1110((this.anInt6388
                         >> Class362.anInt4459),
                 this.method2394(true),
-                ((Class318_Sub1) this).aByte6376,
+                this.aByte6376,
                 (byte) -79,
-                (((Class318_Sub1) this).anInt6377
+                (this.anInt6377
                         >> Class362.anInt4459));
     }
 
@@ -132,22 +130,22 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
         anInt8771++;
         int i_10_ = 122 % ((-14 - i) / 61);
         return this.method2390(class348_sub1s,
-                (((Class318_Sub1) this).anInt6377
+                (this.anInt6377
                         >> Class362.anInt4459),
                 -2,
-                (((Class318_Sub1) this).anInt6388
+                (this.anInt6388
                         >> Class362.anInt4459));
     }
 
     Class318_Sub1_Sub5(int i, int i_11_, int i_12_, int i_13_, int i_14_,
                        int i_15_, int i_16_) {
-        ((Class318_Sub1_Sub5) this).aShort8769 = (short) i_16_;
-        ((Class318_Sub1) this).aByte6376 = (byte) i_14_;
-        ((Class318_Sub1) this).anInt6382 = i_11_;
-        ((Class318_Sub1) this).anInt6377 = i;
-        ((Class318_Sub1_Sub5) this).aShort8781 = (short) i_15_;
-        ((Class318_Sub1) this).anInt6388 = i_12_;
-        ((Class318_Sub1) this).aByte6381 = (byte) i_13_;
+        this.aShort8769 = (short) i_16_;
+        this.aByte6376 = (byte) i_14_;
+        this.anInt6382 = i_11_;
+        this.anInt6377 = i;
+        this.aShort8781 = (short) i_15_;
+        this.anInt6388 = i_12_;
+        this.aByte6381 = (byte) i_13_;
     }
 
     static final Class110_Sub1 method2487(int i) {

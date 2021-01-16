@@ -29,7 +29,7 @@ final class Class297 implements Runnable {
     private Object anObject3787;
     Class234 aClass234_3788;
     private static String aString3789;
-    private Thread aThread3790;
+    private final Thread aThread3790;
     private Object anObject3791;
     private static int anInt3792;
     private Object anObject3793;
@@ -93,7 +93,7 @@ final class Class297 implements Runnable {
                     if (aClass144_3797 != null) {
                         class144 = aClass144_3797;
                         aClass144_3797
-                                = ((Class144) aClass144_3797).aClass144_1995;
+                                = aClass144_3797.aClass144_1995;
                         if (aClass144_3797 == null)
                             aClass144_3798 = null;
                         break;
@@ -106,12 +106,12 @@ final class Class297 implements Runnable {
                 }
             }
             try {
-                int i = ((Class144) class144).anInt1994;
+                int i = class144.anInt1994;
                 if (i != 1) {
                     if ((i ^ 0xffffffff) != -23) {
                         if (i == 2) {
                             Thread thread
-                                    = new Thread((Runnable) (((Class144) class144)
+                                    = new Thread((Runnable) (class144
                                     .anObject1996));
                             thread.setDaemon(true);
                             thread.start();
@@ -124,7 +124,7 @@ final class Class297 implements Runnable {
                                 throw new IOException();
                             class144.anObject1998
                                     = new DataInputStream(((URL)
-                                    (((Class144) class144)
+                                    (class144
                                             .anObject1996))
                                     .openStream());
                         } else if (i != 8) {
@@ -133,23 +133,22 @@ final class Class297 implements Runnable {
                                     if (i == 19) {
                                         Transferable transferable
                                                 = ((Transferable)
-                                                (((Class144) class144)
+                                                (class144
                                                         .anObject1996));
                                         Clipboard clipboard
                                                 = Toolkit.getDefaultToolkit()
                                                 .getSystemClipboard();
                                         clipboard.setContents(transferable,
                                                 null);
-                                    } else if (((Class297) this)
+                                    } else if (this
                                             .aBoolean3777) {
                                         if ((i ^ 0xffffffff) == -4) {
                                             if (aLong3781
                                                     > Class62.method599(-123))
                                                 throw new IOException();
                                             String string
-                                                    = ((String.valueOf
-                                                    (0xff & (class144.anInt2000
-                                                            >> 1726433208)))
+                                                    = (((0xff & (class144.anInt2000
+                                                    >> 1726433208)))
                                                     + "."
                                                     + (0xff
                                                     & (class144.anInt2000
@@ -171,19 +170,18 @@ final class Class297 implements Runnable {
                                             class144.anObject1998
                                                     = InetAddress.getByName
                                                     ((String)
-                                                            (((Class144) class144)
+                                                            (class144
                                                                     .anObject1996))
                                                     .getAddress();
                                         } else if ((i ^ 0xffffffff) != -6) {
                                             if (i != 6) {
                                                 if ((i ^ 0xffffffff) == -8) {
-                                                    if (((Class297) this)
+                                                    if (this
                                                             .aBoolean3794)
                                                         aClass134_3802
                                                                 .method1147
                                                                         (((Frame)
-                                                                                        (((Class144)
-                                                                                                class144)
+                                                                                        (class144
                                                                                                 .anObject1996)),
                                                                                 8);
                                                     else
@@ -193,14 +191,13 @@ final class Class297 implements Runnable {
                                                                         ("method211",
                                                                                 new Class[0])
                                                                 .invoke
-                                                                        (anObject3793,
-                                                                                new Object[0]);
+                                                                        (anObject3793
+                                                                        );
                                                 } else if (i == 12) {
                                                     Class234 class234
                                                             = (method2241
                                                             (((String)
-                                                                            (((Class144)
-                                                                                    class144)
+                                                                            (class144
                                                                                     .anObject1996)),
                                                                     12606, aString3789,
                                                                     anInt3792));
@@ -208,17 +205,16 @@ final class Class297 implements Runnable {
                                                             = class234;
                                                 } else if ((i ^ 0xffffffff)
                                                         != -14) {
-                                                    if ((((Class297) this)
+                                                    if ((this
                                                             .aBoolean3777)
                                                             && i == 14) {
                                                         int i_5_
                                                                 = (class144
                                                                 .anInt2000);
                                                         int i_6_
-                                                                = (((Class144)
-                                                                class144)
+                                                                = (class144
                                                                 .anInt1999);
-                                                        if (((Class297) this)
+                                                        if (this
                                                                 .aBoolean3794)
                                                             aCallback_Sub1_3776
                                                                     .method3621
@@ -237,13 +233,11 @@ final class Class297 implements Runnable {
                                                                                                             .TYPE)}))
                                                                     .invoke
                                                                             (anObject3791,
-                                                                                    (new Object[]
-                                                                                            {(new Integer
-                                                                                                    (i_5_)),
-                                                                                                    (new Integer
-                                                                                                            (i_6_))}));
-                                                    } else if ((((Class297)
-                                                            this)
+                                                                                    (new Integer
+                                                                                            (i_5_)),
+                                                                                    (new Integer
+                                                                                            (i_6_)));
+                                                    } else if ((this
                                                             .aBoolean3777)
                                                             && ((i
                                                             ^ 0xffffffff)
@@ -255,10 +249,9 @@ final class Class297 implements Runnable {
                                                                 != -1);
                                                         Component component
                                                                 = ((Component)
-                                                                (((Class144)
-                                                                        class144)
+                                                                (class144
                                                                         .anObject1996));
-                                                        if (((Class297) this)
+                                                        if (this
                                                                 .aBoolean3794)
                                                             aCallback_Sub1_3776
                                                                     .method3622
@@ -280,20 +273,17 @@ final class Class297 implements Runnable {
                                                                                                             .TYPE)}))
                                                                     .invoke
                                                                             (anObject3791,
-                                                                                    (new Object[]
-                                                                                            {component,
-                                                                                                    (new Boolean
-                                                                                                            (bool))}));
-                                                    } else if (!(((Class297)
-                                                            this)
+                                                                                    component,
+                                                                                    (new Boolean
+                                                                                            (bool)));
+                                                    } else if (!(this
                                                             .aBoolean3794)
                                                             && ((i
                                                             ^ 0xffffffff)
                                                             == -18)) {
                                                         Object[] objects
                                                                 = ((Object[])
-                                                                (((Class144)
-                                                                        class144)
+                                                                (class144
                                                                         .anObject1996));
                                                         Class.forName
                                                                 ("Class165")
@@ -322,21 +312,16 @@ final class Class297 implements Runnable {
                                                                                                         ("java.awt.Point"))))}))
                                                                 .invoke
                                                                         (anObject3791,
-                                                                                (new Object[]
-                                                                                        {((Component)
-                                                                                                objects[0]),
-                                                                                                ((int[])
-                                                                                                        objects[1]),
-                                                                                                (new Integer
-                                                                                                        (class144
-                                                                                                                .anInt2000)),
-                                                                                                (new Integer
-                                                                                                        (((Class144)
-                                                                                                                class144)
-                                                                                                                .anInt1999)),
-                                                                                                ((Point)
-                                                                                                        (objects
-                                                                                                                [2]))}));
+                                                                                objects[0],
+                                                                                objects[1],
+                                                                                (new Integer
+                                                                                        (class144
+                                                                                                .anInt2000)),
+                                                                                (new Integer
+                                                                                        (class144
+                                                                                                .anInt1999)),
+                                                                                objects
+                                                                                        [2]);
                                                     } else if ((i ^ 0xffffffff)
                                                             == -17) {
                                                         try {
@@ -347,8 +332,7 @@ final class Class297 implements Runnable {
                                                                         ();
                                                             String string
                                                                     = ((String)
-                                                                    (((Class144)
-                                                                            class144)
+                                                                    (class144
                                                                             .anObject1996));
                                                             if (!(string
                                                                     .startsWith
@@ -399,8 +383,7 @@ final class Class297 implements Runnable {
                                                     Class234 class234
                                                             = (method2241
                                                             (((String)
-                                                                            (((Class144)
-                                                                                    class144)
+                                                                            (class144
                                                                                     .anObject1996)),
                                                                     12606, "",
                                                                     anInt3792));
@@ -413,19 +396,17 @@ final class Class297 implements Runnable {
                                                         ("Jagex Full Screen"));
                                                 class144.anObject1998 = frame;
                                                 frame.setResizable(false);
-                                                if (((Class297) this)
+                                                if (this
                                                         .aBoolean3794)
                                                     aClass134_3802.method1146
                                                             ((class144.anInt2000
                                                                             & 0xffff),
-                                                                    (((Class144)
-                                                                            class144).anInt1999
+                                                                    (class144.anInt1999
                                                                             >> 1209541904),
                                                                     (class144.anInt2000
                                                                             >>> 1536588080),
                                                                     -43,
-                                                                    0xffff & (((Class144)
-                                                                            class144)
+                                                                    0xffff & (class144
                                                                             .anInt1999),
                                                                     frame);
                                                 else
@@ -444,28 +425,25 @@ final class Class297 implements Runnable {
                                                                                             Integer.TYPE}))
                                                             .invoke
                                                                     (anObject3793,
-                                                                            (new Object[]
-                                                                                    {frame,
-                                                                                            (new Integer
-                                                                                                    ((class144
-                                                                                                            .anInt2000)
-                                                                                                            >>> 35629040)),
-                                                                                            (new Integer
-                                                                                                    (0xffff
-                                                                                                            & (class144
-                                                                                                            .anInt2000))),
-                                                                                            (new Integer
-                                                                                                    ((((Class144)
-                                                                                                            class144)
-                                                                                                            .anInt1999)
-                                                                                                            >> 972476528)),
-                                                                                            (new Integer
-                                                                                                    ((((Class144)
-                                                                                                            class144)
-                                                                                                            .anInt1999)
-                                                                                                            & 0xffff))}));
+                                                                            frame,
+                                                                            (new Integer
+                                                                                    ((class144
+                                                                                            .anInt2000)
+                                                                                            >>> 35629040)),
+                                                                            (new Integer
+                                                                                    (0xffff
+                                                                                            & (class144
+                                                                                            .anInt2000))),
+                                                                            (new Integer
+                                                                                    ((class144
+                                                                                            .anInt1999)
+                                                                                            >> 972476528)),
+                                                                            (new Integer
+                                                                                    ((class144
+                                                                                            .anInt1999)
+                                                                                            & 0xffff)));
                                             }
-                                        } else if (!((Class297) this)
+                                        } else if (!this
                                                 .aBoolean3794)
                                             class144.anObject1998
                                                     = (Class.forName("Class7")
@@ -473,8 +451,8 @@ final class Class297 implements Runnable {
                                                             ("method210",
                                                                     new Class[0])
                                                     .invoke
-                                                            (anObject3793,
-                                                                    new Object[0]));
+                                                            (anObject3793
+                                                            ));
                                         else
                                             class144.anObject1998
                                                     = aClass134_3802
@@ -491,8 +469,8 @@ final class Class297 implements Runnable {
                             } else {
                                 Object[] objects
                                         = ((Object[])
-                                        ((Class144) class144).anObject1996);
-                                if (((Class297) this).aBoolean3777
+                                        class144.anObject1996);
+                                if (this.aBoolean3777
                                         && (((Class) objects[0]).getClassLoader()
                                         == null))
                                     throw new SecurityException();
@@ -503,8 +481,8 @@ final class Class297 implements Runnable {
                         } else {
                             Object[] objects
                                     = ((Object[])
-                                    ((Class144) class144).anObject1996);
-                            if (((Class297) this).aBoolean3777
+                                    class144.anObject1996);
+                            if (this.aBoolean3777
                                     && (((Class) objects[0]).getClassLoader()
                                     == null))
                                 throw new SecurityException();
@@ -522,7 +500,7 @@ final class Class297 implements Runnable {
                                     = Class61.method593
                                     (class144.anInt2000, (byte) -90,
                                             ((String)
-                                                    ((Class144) class144).anObject1996))
+                                                    class144.anObject1996))
                                     .method2050(-112);
                         } catch (IOException_Sub1 ioexception_sub1) {
                             class144.anObject1998
@@ -536,8 +514,7 @@ final class Class297 implements Runnable {
                         throw new IOException();
                     class144.anObject1998
                             = new Socket(InetAddress.getByName((String)
-                            (((Class144)
-                                    class144)
+                            (class144
                                     .anObject1996)),
                             class144.anInt2000);
                 }
@@ -559,30 +536,30 @@ final class Class297 implements Runnable {
         try {
             aThread3790.join();
             if (i != 103)
-                ((Class297) this).aClass234_3788 = null;
+                this.aClass234_3788 = null;
         } catch (InterruptedException interruptedexception) {
             /* empty */
         }
-        if (((Class297) this).aClass234_3785 != null) {
+        if (this.aClass234_3785 != null) {
             try {
-                ((Class297) this).aClass234_3785.method1657(false);
+                this.aClass234_3785.method1657(false);
             } catch (IOException ioexception) {
                 /* empty */
             }
         }
-        if (((Class297) this).aClass234_3779 != null) {
+        if (this.aClass234_3779 != null) {
             try {
-                ((Class297) this).aClass234_3779.method1657(false);
+                this.aClass234_3779.method1657(false);
             } catch (IOException ioexception) {
                 /* empty */
             }
         }
-        if (((Class297) this).aClass234Array3795 != null) {
+        if (this.aClass234Array3795 != null) {
             for (int i_9_ = 0;
-                 i_9_ < ((Class297) this).aClass234Array3795.length; i_9_++) {
-                if (((Class297) this).aClass234Array3795[i_9_] != null) {
+                 i_9_ < this.aClass234Array3795.length; i_9_++) {
+                if (this.aClass234Array3795[i_9_] != null) {
                     try {
-                        ((Class297) this).aClass234Array3795[i_9_]
+                        this.aClass234Array3795[i_9_]
                                 .method1657(false);
                     } catch (IOException ioexception) {
                         /* empty */
@@ -591,9 +568,9 @@ final class Class297 implements Runnable {
             }
         }
         do {
-            if (((Class297) this).aClass234_3788 != null) {
+            if (this.aClass234_3788 != null) {
                 try {
-                    ((Class297) this).aClass234_3788.method1657(false);
+                    this.aClass234_3788.method1657(false);
                 } catch (IOException ioexception) {
                     break;
                 }
@@ -630,7 +607,7 @@ final class Class297 implements Runnable {
 
     final void method2239(int i) {
         if (i > -90)
-            ((Class297) this).aClass234_3779 = null;
+            this.aClass234_3779 = null;
         aLong3781 = 5000L + Class62.method599(-107);
     }
 
@@ -707,15 +684,15 @@ final class Class297 implements Runnable {
     private final Class144 method2246(int i, int i_19_, int i_20_, int i_21_,
                                       Object object) {
         Class144 class144 = new Class144();
-        ((Class144) class144).anObject1996 = object;
-        ((Class144) class144).anInt1999 = i_19_;
-        ((Class144) class144).anInt1994 = i_20_;
+        class144.anObject1996 = object;
+        class144.anInt1999 = i_19_;
+        class144.anInt1994 = i_20_;
         class144.anInt2000 = i_21_;
         synchronized (this) {
             if (aClass144_3798 == null)
                 aClass144_3798 = aClass144_3797 = class144;
             else {
-                ((Class144) aClass144_3798).aClass144_1995 = class144;
+                aClass144_3798.aClass144_1995 = class144;
                 aClass144_3798 = class144;
             }
             this.notify();
@@ -728,16 +705,12 @@ final class Class297 implements Runnable {
     final boolean method2247(int i) {
         if (i != -4)
             method2245(null, 50);
-        if (!((Class297) this).aBoolean3777)
+        if (!this.aBoolean3777)
             return false;
-        if (((Class297) this).aBoolean3794) {
-            if (aClass134_3802 == null)
-                return false;
-            return true;
+        if (this.aBoolean3794) {
+            return aClass134_3802 != null;
         }
-        if (anObject3793 == null)
-            return false;
-        return true;
+        return anObject3793 != null;
     }
 
     final Class144 method2248(byte i, Frame frame) {
@@ -747,14 +720,14 @@ final class Class297 implements Runnable {
     }
 
     Class297(int i, String string, int i_22_, boolean bool) throws Exception {
-        ((Class297) this).aBoolean3777 = false;
+        this.aBoolean3777 = false;
         aClass144_3798 = null;
         aBoolean3801 = false;
-        ((Class297) this).aClass234_3788 = null;
-        ((Class297) this).aBoolean3794 = false;
+        this.aClass234_3788 = null;
+        this.aBoolean3794 = false;
         aClass144_3797 = null;
         aString3789 = string;
-        ((Class297) this).aBoolean3777 = bool;
+        this.aBoolean3777 = bool;
         aString3796 = "1.1";
         aString3782 = "Unknown";
         anInt3792 = i;
@@ -765,7 +738,7 @@ final class Class297 implements Runnable {
             /* empty */
         }
         if ((aString3782.toLowerCase().indexOf("microsoft") ^ 0xffffffff) != 0)
-            ((Class297) this).aBoolean3794 = true;
+            this.aBoolean3794 = true;
         try {
             aString3784 = System.getProperty("os.name");
         } catch (Exception exception) {
@@ -792,50 +765,50 @@ final class Class297 implements Runnable {
         if (aString3800 == null)
             aString3800 = "~/";
         try {
-            ((Class297) this).anEventQueue3799
+            this.anEventQueue3799
                     = Toolkit.getDefaultToolkit().getSystemEventQueue();
         } catch (Throwable throwable) {
             /* empty */
         }
-        if (!((Class297) this).aBoolean3794) {
+        if (!this.aBoolean3794) {
             try {
                 aMethod3783
                         = (Class.forName("java.awt.Component").getDeclaredMethod
                         ("setFocusTraversalKeysEnabled",
-                                new Class[]{Boolean.TYPE}));
+                                Boolean.TYPE));
             } catch (Exception exception) {
                 /* empty */
             }
             try {
                 aMethod3786
                         = (Class.forName("java.awt.Container").getDeclaredMethod
-                        ("setFocusCycleRoot", new Class[]{Boolean.TYPE}));
+                        ("setFocusCycleRoot", Boolean.TYPE));
             } catch (Exception exception) {
                 /* empty */
             }
         }
         Class201.method1465((byte) -121, aString3789, anInt3792);
-        if (((Class297) this).aBoolean3777) {
-            ((Class297) this).aClass234_3788
+        if (this.aBoolean3777) {
+            this.aClass234_3788
                     = new Class234(Class201.method1464(0, anInt3792, "random.dat",
                     null),
                     "rw", 25L);
-            ((Class297) this).aClass234_3785
+            this.aClass234_3785
                     = new Class234(Class201.method1466(-2, "main_file_cache.dat2"),
                     "rw", 209715200L);
-            ((Class297) this).aClass234_3779
+            this.aClass234_3779
                     = new Class234(Class201.method1466(-2,
                     "main_file_cache.idx255"),
                     "rw", 1048576L);
-            ((Class297) this).aClass234Array3795 = new Class234[i_22_];
+            this.aClass234Array3795 = new Class234[i_22_];
             for (int i_23_ = 0; (i_23_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff);
                  i_23_++)
-                ((Class297) this).aClass234Array3795[i_23_]
+                this.aClass234Array3795[i_23_]
                         = new Class234(Class201.method1466(-2,
                         ("main_file_cache.idx"
                                 + i_23_)),
                         "rw", 1048576L);
-            if (((Class297) this).aBoolean3794) {
+            if (this.aBoolean3794) {
                 try {
                     anObject3787 = Class.forName("Class1").newInstance();
                 } catch (Throwable throwable) {
@@ -843,7 +816,7 @@ final class Class297 implements Runnable {
                 }
             }
             try {
-                if (!((Class297) this).aBoolean3794)
+                if (!this.aBoolean3794)
                     anObject3793 = Class.forName("Class7").newInstance();
                 else
                     aClass134_3802 = new Class134();
@@ -851,7 +824,7 @@ final class Class297 implements Runnable {
                 /* empty */
             }
             try {
-                if (!((Class297) this).aBoolean3794)
+                if (!this.aBoolean3794)
                     anObject3791 = Class.forName("Class165").newInstance();
                 else
                     aCallback_Sub1_3776 = new Callback_Sub1();
@@ -859,8 +832,8 @@ final class Class297 implements Runnable {
                 /* empty */
             }
         }
-        if (((Class297) this).aBoolean3777
-                && !((Class297) this).aBoolean3794) {
+        if (this.aBoolean3777
+                && !this.aBoolean3794) {
             ThreadGroup threadgroup = Thread.currentThread().getThreadGroup();
             for (ThreadGroup threadgroup_24_ = threadgroup.getParent();
                  threadgroup_24_ != null;

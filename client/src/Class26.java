@@ -4,14 +4,14 @@
 
 final class Class26 {
     static int anInt373;
-    private Class356 aClass356_374 = new Class356(256);
+    private final Class356 aClass356_374 = new Class356(256);
     static int anInt375;
     static int anInt376;
-    private Class45 aClass45_377;
+    private final Class45 aClass45_377;
     static int anInt378;
-    private Class45 aClass45_379;
+    private final Class45 aClass45_379;
     static int anInt380;
-    private Class356 aClass356_381 = new Class356(256);
+    private final Class356 aClass356_381 = new Class356(256);
     static Class364 aClass364_382 = new Class364("WTQA", 2);
     static int anInt383;
     static boolean aBoolean384 = false;
@@ -29,7 +29,7 @@ final class Class26 {
         anInt378++;
         int i_2_ = i ^ (i_1_ >>> 1578798380 | i_1_ << -1997163324 & 0xfff1);
         i_2_ |= i_1_ << -1230270352;
-        long l = (long) i_2_;
+        long l = i_2_;
         Class348_Sub19_Sub1 class348_sub19_sub1
                 = (Class348_Sub19_Sub1) aClass356_381.method3480(l, -6008);
         if (class348_sub19_sub1 != null)
@@ -44,7 +44,7 @@ final class Class26 {
         class348_sub19_sub1 = class317.method2369();
         aClass356_381.method3483((byte) 32, l, class348_sub19_sub1);
         if (is != null)
-            is[0] -= (((Class348_Sub19_Sub1) class348_sub19_sub1)
+            is[0] -= (class348_sub19_sub1
                     .aByteArray8984).length;
         return class348_sub19_sub1;
     }
@@ -102,9 +102,7 @@ final class Class26 {
         anInt380++;
         if (i <= 85)
             method311((byte) -75, '\014');
-        if (c != 160 && c != 32 && c != 95 && (c ^ 0xffffffff) != -46)
-            return false;
-        return true;
+        return c == 160 || c == 32 || c == 95 || (c ^ 0xffffffff) == -46;
     }
 
     Class26(Class45 class45, Class45 class45_9_) {

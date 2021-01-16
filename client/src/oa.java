@@ -7,26 +7,26 @@ import java.lang.reflect.Method;
 
 final class oa extends ha implements Interface19 {
     private ya aYa5121;
-    private static int[] anIntArray5122
+    private static final int[] anIntArray5122
             = new int[Math.max(Math.max(104, 20), 24573)];
     long nativeid = 0L;
-    private Class262 aClass262_5123;
+    private final Class262 aClass262_5123;
     private boolean aBoolean5124 = false;
     private Class101 aClass101_5125;
-    private Class356 aClass356_5126;
+    private final Class356 aClass356_5126;
     private int anInt5127;
     private int anInt5128;
-    private static float[] aFloatArray5129 = new float[20];
-    private static int[] anIntArray5130;
+    private static final float[] aFloatArray5129 = new float[20];
+    private static final int[] anIntArray5130;
     private Class101 aClass101_5131;
     static int[] anIntArray5132 = new int[6];
-    private static short[] aShortArray5133;
-    private static byte[] aByteArray5134;
-    private static int[] anIntArray5135;
-    private static int[] anIntArray5136;
+    private static final short[] aShortArray5133;
+    private static final byte[] aByteArray5134;
+    private static final int[] anIntArray5135;
+    private static final int[] anIntArray5136;
     private p aP5137;
-    private static float[] aFloatArray5138;
-    private static int[] anIntArray5139;
+    private static final float[] aFloatArray5138;
+    private static final int[] anIntArray5139;
     static int[] anIntArray5140;
     int anInt5141;
     private boolean aBoolean5142;
@@ -81,7 +81,7 @@ final class oa extends ha implements Interface19 {
         method3975(class98, false);
         method3973().method155(this, anIntArray5136, anIntArray5135,
                 anIntArray5139, aShortArray5133,
-                ((Class98) class98).aClass88_1569.method840(0));
+                class98.aClass88_1569.method840(0));
     }
 
     final void method3676(int i, int i_20_, int i_21_, int i_22_, int i_23_,
@@ -95,16 +95,16 @@ final class oa extends ha implements Interface19 {
     }
 
     final Class105 method3691(Class207 class207, boolean bool) {
-        j var_j = new j(this, ((Class207) class207).anIntArray2697,
-                ((Class207) class207).aByteArray2699,
-                ((Class207) class207).aByteArray2695, 0,
-                ((Class207) class207).anInt2702,
-                ((Class207) class207).anInt2702,
-                ((Class207) class207).anInt2696);
-        var_j.method985(((Class207) class207).anInt2703,
-                ((Class207) class207).anInt2700,
-                ((Class207) class207).anInt2698,
-                ((Class207) class207).anInt2701);
+        j var_j = new j(this, class207.anIntArray2697,
+                class207.aByteArray2699,
+                class207.aByteArray2695, 0,
+                class207.anInt2702,
+                class207.anInt2702,
+                class207.anInt2696);
+        var_j.method985(class207.anInt2703,
+                class207.anInt2700,
+                class207.anInt2698,
+                class207.anInt2701);
         return var_j;
     }
 
@@ -145,9 +145,9 @@ final class oa extends ha implements Interface19 {
         int[] is_60_ = new int[class207s.length];
         boolean bool_61_ = false;
         for (int i = 0; i < class207s.length; i++) {
-            is[i] = ((Class207) class207s[i]).anInt2702;
-            is_60_[i] = ((Class207) class207s[i]).anInt2696;
-            if (((Class207) class207s[i]).aByteArray2695 != null)
+            is[i] = class207s[i].anInt2702;
+            is_60_[i] = class207s[i].anInt2696;
+            if (class207s[i].aByteArray2695 != null)
                 bool_61_ = true;
         }
         if (bool) {
@@ -170,8 +170,8 @@ final class oa extends ha implements Interface19 {
     }
 
     final a method3973() {
-        for (int i = 0; i < ((oa) this).anInt5141; i++) {
-            if (((a) anAArray5143[i]).aRunnable5112 == Thread.currentThread())
+        for (int i = 0; i < this.anInt5141; i++) {
+            if (anAArray5143[i].aRunnable5112 == Thread.currentThread())
                 return anAArray5143[i];
         }
         return null;
@@ -184,30 +184,30 @@ final class oa extends ha implements Interface19 {
     }
 
     private final boolean WA(short i) {//
-        synchronized (((ha) this).aD4579) {
-            if (!((ha) this).aD4579.method4(-7953, i))
+        synchronized (this.aD4579) {
+            if (!this.aD4579.method4(-7953, i))
                 return false;
-            Class12 class12 = ((ha) this).aD4579.method3(i, -6662);
+            Class12 class12 = this.aD4579.method3(i, -6662);
             if (class12 == null)
                 return false;
             int[] is;
-            if (((Class12) class12).anInt200 != 2)
-                is = ((ha) this).aD4579.method5(true, i, 0.7F, 128, 128, -128);
+            if (class12.anInt200 != 2)
+                is = this.aD4579.method5(true, i, 0.7F, 128, 128, -128);
             else
-                is = ((ha) this).aD4579.method6(-21540, 128, 0.7F, i, true,
+                is = this.aD4579.method6(-21540, 128, 0.7F, i, true,
                         128);
-            CA(i, is, ((Class12) class12).aShort208,
-                    ((Class12) class12).anInt200, ((Class12) class12).aByte213,
-                    ((Class12) class12).aByte202, ((Class12) class12).anInt206,
-                    ((Class12) class12).aBoolean199, ((Class12) class12).aByte201,
-                    ((Class12) class12).aByte216, ((Class12) class12).aByte198,
-                    ((Class12) class12).aByte211, ((Class12) class12).aBoolean209,
-                    ((Class12) class12).aBoolean204,
-                    ((Class12) class12).aBoolean212,
-                    ((Class12) class12).aBoolean217,
-                    ((Class12) class12).aBoolean215, ((Class12) class12).aByte205,
-                    ((Class12) class12).aBoolean218,
-                    ((Class12) class12).aBoolean207, ((Class12) class12).anInt203);
+            CA(i, is, class12.aShort208,
+                    class12.anInt200, class12.aByte213,
+                    class12.aByte202, class12.anInt206,
+                    class12.aBoolean199, class12.aByte201,
+                    class12.aByte216, class12.aByte198,
+                    class12.aByte211, class12.aBoolean209,
+                    class12.aBoolean204,
+                    class12.aBoolean212,
+                    class12.aBoolean217,
+                    class12.aBoolean215, class12.aByte205,
+                    class12.aBoolean218,
+                    class12.aBoolean207, class12.anInt203);
         }
         return true;
     }
@@ -220,26 +220,26 @@ final class oa extends ha implements Interface19 {
         int i_70_ = 0;
         for (Class318_Sub9_Sub2 class318_sub9_sub2
              = ((Class318_Sub9_Sub2)
-                ((Class98) class98).aClass88_1569.method848(8));
+                class98.aClass88_1569.method848(8));
              class318_sub9_sub2 != null;
              class318_sub9_sub2
                      = ((Class318_Sub9_Sub2)
-                     ((Class98) class98).aClass88_1569.method846((byte) -79))) {
+                     class98.aClass88_1569.method846((byte) -79))) {
             anIntArray5136[i++]
-                    = ((Class318_Sub9_Sub2) class318_sub9_sub2).anInt8791;
+                    = class318_sub9_sub2.anInt8791;
             anIntArray5136[i++]
-                    = ((Class318_Sub9_Sub2) class318_sub9_sub2).anInt8796;
+                    = class318_sub9_sub2.anInt8796;
             anIntArray5136[i++]
-                    = ((Class318_Sub9_Sub2) class318_sub9_sub2).anInt8789;
+                    = class318_sub9_sub2.anInt8789;
             anIntArray5135[i_67_++]
-                    = ((Class318_Sub9_Sub2) class318_sub9_sub2).anInt8790;
+                    = class318_sub9_sub2.anInt8790;
             aShortArray5133[i_69_++]
-                    = (short) ((Class318_Sub9_Sub2) class318_sub9_sub2).anInt8792;
+                    = (short) class318_sub9_sub2.anInt8792;
             anIntArray5139[i_68_++]
-                    = ((Class318_Sub9_Sub2) class318_sub9_sub2).anInt8793;
+                    = class318_sub9_sub2.anInt8793;
             if (bool)
                 aByteArray5134[i_70_++]
-                        = ((Class318_Sub9_Sub2) class318_sub9_sub2).aByte8795;
+                        = class318_sub9_sub2.aByte8795;
         }
     }
 
@@ -248,7 +248,7 @@ final class oa extends ha implements Interface19 {
     }
 
     final void method3632(int[] is) {
-        Dimension dimension = ((p) aP5137).aCanvas5147.getSize();
+        Dimension dimension = aP5137.aCanvas5147.getSize();
         is[0] = dimension.width;
         is[1] = dimension.height;
     }
@@ -270,9 +270,9 @@ final class oa extends ha implements Interface19 {
 
     final void method3650(int i) {
         anInt5128 = anInt5127 = i;
-        if (((oa) this).anInt5141 > 1)
+        if (this.anInt5141 > 1)
             throw new IllegalStateException("No MT");
-        method3631(((oa) this).anInt5141);
+        method3631(this.anInt5141);
         method3659(0);
     }
 
@@ -285,10 +285,10 @@ final class oa extends ha implements Interface19 {
     final native void xa(float f);
 
     final void method3701(Canvas canvas) {
-        if (((p) aP5137).aCanvas5147 == canvas)
+        if (aP5137.aCanvas5147 == canvas)
             method3677(null);
         p var_p
-                = (p) aClass356_5126.method3480((long) canvas.hashCode(), -6008);
+                = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
         if (var_p != null) {
             var_p.method2715((byte) 110);
             var_p.method3436();
@@ -302,7 +302,7 @@ final class oa extends ha implements Interface19 {
 
     protected final synchronized void finalize() {
         this.method3635((byte) -45);
-        if (((oa) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 
@@ -313,11 +313,11 @@ final class oa extends ha implements Interface19 {
     private final native void n(long l, long l_102_);
 
     final void method3684(Class98 class98) {
-        if (((Class98) class98).aClass88_1569.method840(0) != 0) {
+        if (class98.aClass88_1569.method840(0) != 0) {
             method3975(class98, false);
             method3973().method155(this, anIntArray5136, anIntArray5135,
                     anIntArray5139, aShortArray5133,
-                    ((Class98) class98).aClass88_1569
+                    class98.aClass88_1569
                             .method840(0));
         }
     }
@@ -353,29 +353,29 @@ final class oa extends ha implements Interface19 {
 
     final void method3669(Canvas canvas, int i, int i_108_) {
         p var_p
-                = (p) aClass356_5126.method3480((long) canvas.hashCode(), -6008);
+                = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
         var_p.method3435(canvas, i, i_108_);
-        if (canvas != null && canvas == ((p) aP5137).aCanvas5147)
+        if (canvas != null && canvas == aP5137.aCanvas5147)
             method3677(canvas);
     }
 
     private final boolean c(short i) {//
         synchronized (this) {
-            Class12 class12 = ((ha) this).aD4579.method3(i, -6662);
+            Class12 class12 = this.aD4579.method3(i, -6662);
             if (class12 == null)
                 return false;
-            AA(i, ((Class12) class12).aShort208, ((Class12) class12).anInt200,
-                    ((Class12) class12).aByte213, ((Class12) class12).aByte202,
-                    ((Class12) class12).anInt206, ((Class12) class12).aBoolean199,
-                    ((Class12) class12).aByte201, ((Class12) class12).aByte216,
-                    ((Class12) class12).aByte198, ((Class12) class12).aByte211,
-                    ((Class12) class12).aBoolean209,
-                    ((Class12) class12).aBoolean204,
-                    ((Class12) class12).aBoolean212,
-                    ((Class12) class12).aBoolean217,
-                    ((Class12) class12).aBoolean215, ((Class12) class12).aByte205,
-                    ((Class12) class12).aBoolean218,
-                    ((Class12) class12).aBoolean207, ((Class12) class12).anInt203);
+            AA(i, class12.aShort208, class12.anInt200,
+                    class12.aByte213, class12.aByte202,
+                    class12.anInt206, class12.aBoolean199,
+                    class12.aByte201, class12.aByte216,
+                    class12.aByte198, class12.aByte211,
+                    class12.aBoolean209,
+                    class12.aBoolean204,
+                    class12.aBoolean212,
+                    class12.aBoolean217,
+                    class12.aBoolean215, class12.aByte205,
+                    class12.aBoolean218,
+                    class12.aBoolean207, class12.anInt203);
         }
         return true;
     }
@@ -454,9 +454,9 @@ final class oa extends ha implements Interface19 {
     }
 
     final void method3631(int i) {
-        ((oa) this).anInt5141 = i;
-        anAArray5143 = new a[((oa) this).anInt5141];
-        for (int i_146_ = 0; i_146_ < ((oa) this).anInt5141; i_146_++)
+        this.anInt5141 = i;
+        anAArray5143 = new a[this.anInt5141];
+        for (int i_146_ = 0; i_146_ < this.anInt5141; i_146_++)
             anAArray5143[i_146_] = new a(this, anInt5128, anInt5127);
     }
 
@@ -467,22 +467,22 @@ final class oa extends ha implements Interface19 {
 
     final void method3643(Canvas canvas, int i, int i_153_) {
         p var_p
-                = (p) aClass356_5126.method3480((long) canvas.hashCode(), -6008);
+                = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
         if (var_p == null) {
             try {
                 Class var_class = Class.forName("java.awt.Canvas");
                 Method method
                         = var_class.getMethod("setIgnoreRepaint",
-                        new Class[]{Boolean.TYPE});
-                method.invoke(canvas, new Object[]{Boolean.TRUE});
+                        Boolean.TYPE);
+                method.invoke(canvas, Boolean.TRUE);
             } catch (Exception exception) {
                 /* empty */
             }
             var_p = new p(this, canvas, i, i_153_);
-            aClass356_5126.method3483((byte) 36, (long) canvas.hashCode(),
+            aClass356_5126.method3483((byte) 36, canvas.hashCode(),
                     var_p);
-        } else if (((p) var_p).anInt5145 != i
-                || ((p) var_p).anInt5148 != i_153_)
+        } else if (var_p.anInt5145 != i
+                || var_p.anInt5148 != i_153_)
             var_p.method3435(canvas, i, i_153_);
     }
 
@@ -537,7 +537,7 @@ final class oa extends ha implements Interface19 {
 
     final void method3677(Canvas canvas) {
         if (canvas != null) {
-            p var_p = (p) aClass356_5126.method3480((long) canvas.hashCode(),
+            p var_p = (p) aClass356_5126.method3480(canvas.hashCode(),
                     -6008);
             aP5137 = var_p;
             t(var_p);
@@ -628,8 +628,8 @@ final class oa extends ha implements Interface19 {
 
     final void method3687(Interface4 interface4) {
         wa var_wa = (wa) interface4;
-        n(((j) ((wa) var_wa).aJ4732).nativeid,
-                ((xa) ((wa) var_wa).aXa4733).nativeid);
+        n(var_wa.aJ4732.nativeid,
+                var_wa.aXa4733.nativeid);
     }
 
     final native void da(int i, int i_190_, int i_191_, int[] is);
@@ -696,11 +696,11 @@ final class oa extends ha implements Interface19 {
 
     final void method3638(Class101 class101) {
         aClass101_5125 = class101;
-        ma(((ja) (ja) class101).nativeid);
+        ma(((ja) class101).nativeid);
     }
 
     final void method3672() {
-        method3677(((p) aP5137).aCanvas5147);
+        method3677(aP5137.aCanvas5147);
     }
 
     final s method3648(int i, int i_222_, int[][] is, int[][] is_223_,

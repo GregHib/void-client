@@ -8,16 +8,16 @@ import java.io.OutputStream;
 final class Class208 implements Runnable {
     private IOException anIOException2704;
     private int anInt2705 = 0;
-    private byte[] aByteArray2706;
+    private final byte[] aByteArray2706;
     static Class262 aClass262_2707 = new Class262();
-    private Thread aThread2708;
+    private final Thread aThread2708;
     static int anInt2709;
     static int anInt2710;
     static int anInt2711;
     private OutputStream anOutputStream2712;
     private int anInt2713 = 0;
     static int anInt2714;
-    private int anInt2715;
+    private final int anInt2715;
 
     public static void method1525(byte i) {
         if (i != 4)

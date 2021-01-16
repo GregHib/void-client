@@ -5,7 +5,7 @@
 final class Class175 {
     static int anInt2310;
     private int anInt2311;
-    private Class356 aClass356_2312;
+    private final Class356 aClass356_2312;
     static int anInt2313;
     static int anInt2314;
     static Class351 aClass351_2315;
@@ -17,7 +17,7 @@ final class Class175 {
     static int anInt2321;
     static int anInt2322;
     static int anInt2323;
-    private int anInt2324;
+    private final int anInt2324;
     static int anInt2325;
     static boolean[] aBooleanArray2326 = new boolean[100];
     static Class340 aClass340_2327;
@@ -33,7 +33,7 @@ final class Class175 {
              class348_sub42_sub9 != null;
              class348_sub42_sub9
                      = (Class348_Sub42_Sub9) aClass356_2312.method3476(true)) {
-            if (((Class348_Sub42_Sub9) class348_sub42_sub9)
+            if (class348_sub42_sub9
                     .anInterface14_9559.method53(78, interface14)) {
                 method1342(class348_sub42_sub9, (byte) 79);
                 break;
@@ -58,35 +58,34 @@ final class Class175 {
              class348_sub42_sub9 != null;
              class348_sub42_sub9
                      = (Class348_Sub42_Sub9) aClass356_2312.method3476(true)) {
-            if (((Class348_Sub42_Sub9) class348_sub42_sub9)
+            if (class348_sub42_sub9
                     .anInterface14_9559.method53(94, interface14)) {
                 Object object = class348_sub42_sub9.method3205(65536);
                 if (object == null) {
                     class348_sub42_sub9.method2715((byte) 36);
                     class348_sub42_sub9.method3162(true);
-                    anInt2311 += (((Class348_Sub42_Sub9) class348_sub42_sub9)
+                    anInt2311 += (class348_sub42_sub9
                             .anInt9556);
                 } else {
                     if (class348_sub42_sub9.method3206((byte) -128)) {
                         Class348_Sub42_Sub9_Sub1 class348_sub42_sub9_sub1
                                 = (new Class348_Sub42_Sub9_Sub1
                                 (interface14, object,
-                                        (((Class348_Sub42_Sub9) class348_sub42_sub9)
+                                        (class348_sub42_sub9
                                                 .anInt9556)));
                         aClass356_2312.method3483((byte) 125,
-                                (((Class348)
-                                        class348_sub42_sub9)
+                                (class348_sub42_sub9
                                         .aLong4291),
                                 class348_sub42_sub9_sub1);
                         aClass107_2316.method1005(true,
                                 class348_sub42_sub9_sub1);
-                        ((Class348_Sub42) class348_sub42_sub9_sub1).aLong7057
+                        class348_sub42_sub9_sub1.aLong7057
                                 = 0L;
                         class348_sub42_sub9.method2715((byte) 65);
                         class348_sub42_sub9.method3162(true);
                     } else {
                         aClass107_2316.method1005(true, class348_sub42_sub9);
-                        ((Class348_Sub42) class348_sub42_sub9).aLong7057 = 0L;
+                        class348_sub42_sub9.aLong7057 = 0L;
                     }
                     return object;
                 }
@@ -117,7 +116,7 @@ final class Class175 {
                         interface14.method52((byte) 120),
                         class348_sub42_sub9_sub1);
                 aClass107_2316.method1005(true, class348_sub42_sub9_sub1);
-                ((Class348_Sub42) class348_sub42_sub9_sub1).aLong7057 = 0L;
+                class348_sub42_sub9_sub1.aLong7057 = 0L;
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -139,7 +138,7 @@ final class Class175 {
         if (class348_sub42_sub9 != null) {
             class348_sub42_sub9.method2715((byte) 42);
             class348_sub42_sub9.method3162(true);
-            anInt2311 += ((Class348_Sub42_Sub9) class348_sub42_sub9).anInt9556;
+            anInt2311 += class348_sub42_sub9.anInt9556;
         }
     }
 
@@ -163,7 +162,7 @@ final class Class175 {
                 class348_sub42_sub9.method2715((byte) 127);
                 class348_sub42_sub9.method3162(true);
                 anInt2311
-                        += ((Class348_Sub42_Sub9) class348_sub42_sub9).anInt9556;
+                        += class348_sub42_sub9.anInt9556;
             }
         }
         if (i > -34)
@@ -192,18 +191,18 @@ final class Class175 {
                         class348_sub42_sub9.method2715((byte) 103);
                         class348_sub42_sub9.method3162(true);
                         anInt2311
-                                += (((Class348_Sub42_Sub9) class348_sub42_sub9)
+                                += (class348_sub42_sub9
                                 .anInt9556);
                     }
                 } else if (((long) i_4_ ^ 0xffffffffffffffffL)
-                        > (++((Class348_Sub42) class348_sub42_sub9)
+                        > (++class348_sub42_sub9
                         .aLong7057
                         ^ 0xffffffffffffffffL)) {
                     Class348_Sub42_Sub9 class348_sub42_sub9_5_
                             = Class103.aClass345_1607
                             .method2694(-1, class348_sub42_sub9);
                     aClass356_2312.method3483((byte) 120,
-                            (((Class348) class348_sub42_sub9)
+                            (class348_sub42_sub9
                                     .aLong4291),
                             class348_sub42_sub9_5_);
                     Class59_Sub2_Sub2.method573(class348_sub42_sub9_5_,
@@ -225,10 +224,10 @@ final class Class175 {
         float[] fs = new float[9];
         float[] fs_12_ = new float[9];
         float f_13_
-                = (float) Math.cos((double) ((float) i_11_ * 0.024543693F));
+                = (float) Math.cos((float) i_11_ * 0.024543693F);
         int i_14_ = -94 / ((i_8_ - 57) / 62);
         float f_15_
-                = (float) Math.sin((double) (0.024543693F * (float) i_11_));
+                = (float) Math.sin(0.024543693F * (float) i_11_);
         fs[6] = -f_15_;
         float f_16_ = -f_13_ + 1.0F;
         fs[8] = f_13_;
@@ -244,8 +243,8 @@ final class Class175 {
         f_13_ = (float) i_6_ / 32767.0F;
         float f_19_ = 0.0F;
         f_16_ = -f_13_ + 1.0F;
-        f_15_ = -(float) Math.sqrt((double) (1.0F - f_13_ * f_13_));
-        float f_20_ = (float) Math.sqrt((double) (i_10_ * i_10_ + i * i));
+        f_15_ = -(float) Math.sqrt(1.0F - f_13_ * f_13_);
+        float f_20_ = (float) Math.sqrt(i_10_ * i_10_ + i * i);
         if (f_20_ == 0.0F && f_13_ == 0.0F)
             fs_12_ = fs;
         else {

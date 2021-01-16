@@ -25,16 +25,16 @@ final class Class162 {
         if (i != 5)
             method1266(82, -25);
         anInt2154++;
-        return new Class162(((Class162) this).anInt2153, i_0_,
-                ((Class162) this).anInt2156,
-                ((Class162) this).anInt2158);
+        return new Class162(this.anInt2153, i_0_,
+                this.anInt2156,
+                this.anInt2158);
     }
 
     Class162(int i, int i_1_, int i_2_, int i_3_) {
-        ((Class162) this).anInt2156 = i_2_;
-        ((Class162) this).anInt2155 = i_1_;
-        ((Class162) this).anInt2158 = i_3_;
-        ((Class162) this).anInt2153 = i;
+        this.anInt2156 = i_2_;
+        this.anInt2155 = i_1_;
+        this.anInt2158 = i_3_;
+        this.anInt2153 = i;
     }
 
     public static void method1267(byte i) {

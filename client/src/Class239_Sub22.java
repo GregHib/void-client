@@ -19,9 +19,9 @@ final class Class239_Sub22 extends Class239 {
     }
 
     final void method1716(boolean bool) {
-        if (((Class239) this).anInt3138 != 1
-                && (((Class239) this).anInt3138 ^ 0xffffffff) != -1)
-            ((Class239) this).anInt3138 = method1710(20014);
+        if (this.anInt3138 != 1
+                && (this.anInt3138 ^ 0xffffffff) != -1)
+            this.anInt3138 = method1710(20014);
         anInt6070++;
         if (bool != false)
             anInt6076 = 59;
@@ -29,7 +29,7 @@ final class Class239_Sub22 extends Class239 {
 
     final void method1712(int i, int i_0_) {
         anInt6074++;
-        ((Class239) this).anInt3138 = i_0_;
+        this.anInt3138 = i_0_;
         int i_1_ = 126 / ((82 - i) / 35);
     }
 
@@ -41,7 +41,7 @@ final class Class239_Sub22 extends Class239 {
         if (i != -32350)
             method1816(84);
         anInt6071++;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     Class239_Sub22(int i, Class348_Sub51 class348_sub51) {

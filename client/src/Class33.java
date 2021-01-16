@@ -7,16 +7,16 @@ import java.awt.*;
 final class Class33 {
     static int anInt456;
     static int anInt457;
-    private Class45 aClass45_458;
+    private final Class45 aClass45_458;
     static int anInt459;
-    private Class60 aClass60_460 = new Class60(128);
+    private final Class60 aClass60_460 = new Class60(128);
     static int anInt461;
 
     final Class117 method337(boolean bool, int i) {
         anInt457++;
         Class117 class117;
         synchronized (aClass60_460) {
-            class117 = (Class117) aClass60_460.method583((long) i, 111);
+            class117 = (Class117) aClass60_460.method583(i, 111);
         }
         if (class117 != null)
             return class117;
@@ -27,13 +27,13 @@ final class Class33 {
         if (is != null)
             class117.method1069(0, new Class348_Sub49(is));
         synchronized (aClass60_460) {
-            aClass60_460.method582(class117, (long) i, (byte) -102);
+            aClass60_460.method582(class117, i, (byte) -102);
         }
         return class117;
     }
 
     static final void method338(int i, int i_0_) {
-        if (i == ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if (i == Class316.aClass348_Sub51_3959
                 .aClass239_Sub22_7253.method1815(-32350))
             i_0_ = -1;
         anInt456++;
@@ -47,8 +47,8 @@ final class Class33 {
                 else {
                     Class348_Sub23_Sub1.aClass297_8992.method2238
                             (class207.method1522(), class207.method1516(), 17,
-                                    new Point(((Class222) class222).anInt2883,
-                                            ((Class222) class222).anInt2890),
+                                    new Point(class222.anInt2883,
+                                            class222.anInt2890),
                                     Class305.aCanvas3869, class207.method1510());
                     Class337.anInt4179 = i_0_;
                 }

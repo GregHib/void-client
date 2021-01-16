@@ -6,13 +6,13 @@ final class Class195 implements Interface16 {
     static int anInt5003;
     static int anInt5004;
     static int anInt5005;
-    private Class287 aClass287_5006;
+    private final Class287 aClass287_5006;
     static int[] anIntArray5007 = new int[4];
     static int anInt5008;
     static int anInt5009;
     private ha aHa5010;
     private boolean aBoolean5011;
-    private Interface1[] anInterface1Array5012;
+    private final Interface1[] anInterface1Array5012;
     static boolean aBoolean5013 = false;
     static int anInt5014;
     static Class351 aClass351_5015;
@@ -80,7 +80,7 @@ final class Class195 implements Interface16 {
         anInt5009++;
         if (i != -58)
             method58(false, -122);
-        return ((Class287) aClass287_5006).anInt3687;
+        return aClass287_5006.anInt3687;
     }
 
     static final Class148 method1449(int i, int i_2_, int i_3_) {
@@ -88,7 +88,7 @@ final class Class195 implements Interface16 {
                 = Class147.aClass357ArrayArrayArray2029[i][i_2_][i_3_];
         if (class357 == null)
             return null;
-        return ((Class357) class357).aClass148_4396;
+        return class357.aClass148_4396;
     }
 
     public final boolean method56(byte i, long l) {
@@ -96,11 +96,8 @@ final class Class195 implements Interface16 {
             anInt5005++;
             if (i < 30)
                 method1449(-81, 10, -115);
-            if ((Class62.method599(-97) ^ 0xffffffffffffffffL)
-                    > (l - -(long) ((Class287) aClass287_5006).anInt3690
-                    ^ 0xffffffffffffffffL))
-                return false;
-            return true;
+            return (Class62.method599(-97) ^ 0xffffffffffffffffL) <= (l - -(long) aClass287_5006.anInt3690
+                    ^ 0xffffffffffffffffL);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     "qt.I(" + i + ',' + l + ')');
@@ -111,12 +108,12 @@ final class Class195 implements Interface16 {
         try {
             aClass287_5006 = class287;
             anInterface1Array5012
-                    = new Interface1[(((Class287) aClass287_5006)
+                    = new Interface1[(aClass287_5006
                     .anInterface12Array3688).length];
             for (int i = 0; ((anInterface1Array5012.length ^ 0xffffffff)
                     < (i ^ 0xffffffff)); i++)
                 anInterface1Array5012[i]
-                        = class106.method1000(true, (((Class287) aClass287_5006)
+                        = class106.method1000(true, (aClass287_5006
                         .anInterface12Array3688[i]));
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

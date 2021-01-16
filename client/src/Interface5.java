@@ -3,5 +3,5 @@
  */
 
 interface Interface5 {
-    public int method16(boolean bool);
+    int method16(boolean bool);
 }

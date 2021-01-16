@@ -27,9 +27,9 @@ final class Class348_Sub7 extends Class348 {
                  i_1_++) {
                 Class46 class46 = class46s[i_1_];
                 if (class46 != null) {
-                    ((Class46) class46).anInt795 = 0;
-                    ((Class46) class46).anInt730 = 1;
-                    ((Class46) class46).anInt841 = 0;
+                    class46.anInt795 = 0;
+                    class46.anInt730 = 1;
+                    class46.anInt841 = 0;
                 }
             }
         }
@@ -44,11 +44,11 @@ final class Class348_Sub7 extends Class348 {
 
     Class348_Sub7(int i, int i_2_, int i_3_, int i_4_, int i_5_,
                   boolean bool) {
-        ((Class348_Sub7) this).anInt6647 = i_4_;
-        ((Class348_Sub7) this).anInt6645 = i_3_;
-        ((Class348_Sub7) this).anInt6648 = i_2_;
-        ((Class348_Sub7) this).aBoolean6650 = bool;
-        ((Class348_Sub7) this).anInt6642 = i_5_;
-        ((Class348_Sub7) this).anInt6649 = i;
+        this.anInt6647 = i_4_;
+        this.anInt6645 = i_3_;
+        this.anInt6648 = i_2_;
+        this.aBoolean6650 = bool;
+        this.anInt6642 = i_5_;
+        this.anInt6649 = i;
     }
 }

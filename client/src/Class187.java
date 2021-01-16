@@ -33,11 +33,11 @@ final class Class187 {
         if (class348_sub13 != null && bool_0_ == true) {
             for (int i_1_ = 0;
                  ((i_1_ ^ 0xffffffff)
-                         > (((Class348_Sub13) class348_sub13).anIntArray6757.length
+                         > (class348_sub13.anIntArray6757.length
                          ^ 0xffffffff));
                  i_1_++) {
-                ((Class348_Sub13) class348_sub13).anIntArray6757[i_1_] = -1;
-                ((Class348_Sub13) class348_sub13).anIntArray6758[i_1_] = 0;
+                class348_sub13.anIntArray6757[i_1_] = -1;
+                class348_sub13.anIntArray6758[i_1_] = 0;
             }
         }
     }
@@ -60,7 +60,7 @@ final class Class187 {
         anInt2504++;
         Class321 class321;
         synchronized (aClass60_2501) {
-            class321 = (Class321) aClass60_2501.method583((long) i_3_, 76);
+            class321 = (Class321) aClass60_2501.method583(i_3_, 76);
         }
         if (class321 != null)
             return class321;
@@ -75,7 +75,7 @@ final class Class187 {
             aClass60_2501 = null;
         class321.method2548((byte) 127);
         synchronized (aClass60_2501) {
-            aClass60_2501.method582(class321, (long) i_3_, (byte) -99);
+            aClass60_2501.method582(class321, i_3_, (byte) -99);
         }
         return class321;
     }

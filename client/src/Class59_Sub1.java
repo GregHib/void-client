@@ -6,8 +6,8 @@ import jaggl.OpenGL;
 
 class Class59_Sub1 extends Class59 {
     static int anInt5277;
-    private int anInt5278;
-    private int anInt5279;
+    private final int anInt5278;
+    private final int anInt5279;
     private int anInt5280;
     static int anInt5281;
     static int anInt5282;
@@ -26,7 +26,7 @@ class Class59_Sub1 extends Class59 {
     static int anInt5295;
     private byte[] aByteArray5296;
     static Class297 aClass297_5297;
-    private int anInt5298;
+    private final int anInt5298;
     static float aFloat5299;
     static boolean aBoolean5300 = false;
 
@@ -106,7 +106,7 @@ class Class59_Sub1 extends Class59 {
         super(i, i_22_, i_23_, i_24_, i_25_);
         anInt5298 = (int) (4096.0F * f_27_);
         anInt5278 = (int) (f_26_ * 4096.0F);
-        anInt5285 = anInt5279 = (int) (Math.pow(0.5, (double) -f) * 4096.0);
+        anInt5285 = anInt5279 = (int) (Math.pow(0.5, -f) * 4096.0);
     }
 
     static final boolean method552(int i, int i_28_, byte i_29_, int i_30_,

@@ -5,13 +5,13 @@
 import java.math.BigInteger;
 
 final class Class340 {
-    private Class248 aClass248_4212;
-    private BigInteger aBigInteger4213;
+    private final Class248 aClass248_4212;
+    private final BigInteger aBigInteger4213;
     static int anInt4214;
     private Class348_Sub49 aClass348_Sub49_4215;
     private Class314_Sub1[] aClass314_Sub1Array4216;
     private Class112 aClass112_4217;
-    private BigInteger aBigInteger4218;
+    private final BigInteger aBigInteger4218;
     static int anInt4219;
     private Class348_Sub42_Sub16_Sub1 aClass348_Sub42_Sub16_Sub1_4220;
     static int anInt4221;
@@ -46,9 +46,7 @@ final class Class340 {
         anInt4224++;
         if (i_2_ >= -89)
             return true;
-        if (i != 7 && (i ^ 0xffffffff) != -9 && (i ^ 0xffffffff) != -10)
-            return false;
-        return true;
+        return i == 7 || (i ^ 0xffffffff) == -9 || (i ^ 0xffffffff) == -10;
     }
 
     final Class314_Sub1 method2673(Class137 class137, int i,
@@ -81,19 +79,19 @@ final class Class340 {
                     = aClass248_4212.method1906((byte) -84, (byte) 0, true, 255,
                     255);
         }
-        if (((Class348_Sub42_Sub16) aClass348_Sub42_Sub16_Sub1_4220)
+        if (aClass348_Sub42_Sub16_Sub1_4220
                 .aBoolean9664)
             return false;
         Class348_Sub49 class348_sub49
                 = new Class348_Sub49(aClass348_Sub42_Sub16_Sub1_4220
                 .method3259(i ^ 0x17));
-        ((Class348_Sub49) class348_sub49).anInt7197 = 5;
+        class348_sub49.anInt7197 = 5;
 
         int idxCount = class348_sub49.method3387(i ^ 0xf8);
         System.out.println("i_5_: " + idxCount);
 
-        ((Class348_Sub49) class348_sub49).anInt7197 += idxCount * 72;
-        byte[] is = new byte[(((Class348_Sub49) class348_sub49).aByteArray7154.length - ((Class348_Sub49) class348_sub49).anInt7197)];
+        class348_sub49.anInt7197 += idxCount * 72;
+        byte[] is = new byte[(class348_sub49.aByteArray7154.length - class348_sub49.anInt7197)];
 
         System.out.println("is len: " + is.length); // 512
 
@@ -121,9 +119,9 @@ final class Class340 {
             throw new RuntimeException();
         byte[] is_8_
                 = Class348_Sub1_Sub2.method2730(4567, 5,
-                (((Class348_Sub49) class348_sub49)
+                (class348_sub49
                         .aByteArray7154),
-                (((Class348_Sub49) class348_sub49)
+                (class348_sub49
                         .anInt7197) - (is.length + 5));
         for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > -65; i_9_++) {
             if ((is_6_[i_9_ + 1] ^ 0xffffffff) != (is_8_[i_9_] ^ 0xffffffff))
@@ -146,7 +144,7 @@ final class Class340 {
                 throw new RuntimeException();
             if (aClass314_Sub1Array4216[i_10_] != null)
                 return aClass314_Sub1Array4216[i_10_];
-            ((Class348_Sub49) aClass348_Sub49_4215).anInt7197 = 6 + i_10_ * 72;
+            aClass348_Sub49_4215.anInt7197 = 6 + i_10_ * 72;
             int i_12_ = aClass348_Sub49_4215.method3385((byte) -126);
             int i_13_ = aClass348_Sub49_4215.method3385((byte) -126);
             byte[] is = new byte[64];

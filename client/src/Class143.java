@@ -11,7 +11,7 @@ final class Class143 {
     static int anInt1983;
     static int anInt1984;
     static int anInt1985;
-    private byte[] aByteArray1986;
+    private final byte[] aByteArray1986;
     static Class351 aClass351_1987 = new Class351(66, -1);
     int anInt1988;
     static int anInt1989;
@@ -159,13 +159,13 @@ final class Class143 {
         try {
             anInt1990++;
             if (i_12_ == i)
-                i_12_ = ((Class143) this).anInt1992;
+                i_12_ = this.anInt1992;
             int i_14_
                     = method1188(string, new int[]{i_13_},
                     Class186.aStringArray2494, (byte) 87, class105s);
             int i_15_ = (-1 + i_14_) * i_12_;
-            return (((Class143) this).anInt1988
-                    + (i_15_ + ((Class143) this).anInt1993));
+            return (this.anInt1988
+                    + (i_15_ + this.anInt1993));
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("oea.A("
@@ -182,7 +182,7 @@ final class Class143 {
     final int method1186(String string, Class105[] class105s, boolean bool) {
         try {
             if (bool != false)
-                ((Class143) this).anInt1993 = 95;
+                this.anInt1993 = 95;
             anInt1980++;
             if (string == null)
                 return 0;
@@ -277,7 +277,7 @@ final class Class143 {
                     Class186.aStringArray2494, (byte) 87, class105s);
             int i_23_ = 0;
             if (bool != false)
-                ((Class143) this).anInt1988 = -58;
+                this.anInt1988 = -58;
             for (int i_24_ = 0; (i_24_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff);
                  i_24_++) {
                 int i_25_ = method1186(Class186.aStringArray2494[i_24_],
@@ -473,7 +473,7 @@ final class Class143 {
                 }
             }
             if (i_27_ < string.length()) {
-                strings[i_33_] = string.substring(i_27_, string.length());
+                strings[i_33_] = string.substring(i_27_);
                 i_33_++;
             }
             return i_33_;
@@ -493,12 +493,12 @@ final class Class143 {
             aClass351_1987 = null;
         Class348_Sub15 class348_sub15
                 = ((Class348_Sub15)
-                Class27.aClass356_389.method3480((long) i_41_, -6008));
+                Class27.aClass356_389.method3480(i_41_, -6008));
         if (class348_sub15 != null) {
-            ((Class348_Sub15) class348_sub15).aBoolean6781
-                    = !((Class348_Sub15) class348_sub15).aBoolean6781;
-            ((Class348_Sub15) class348_sub15).aClass55_Sub1_6768.method514
-                    ((byte) 116, ((Class348_Sub15) class348_sub15).aBoolean6781);
+            class348_sub15.aBoolean6781
+                    = !class348_sub15.aBoolean6781;
+            class348_sub15.aClass55_Sub1_6768.method514
+                    ((byte) 116, class348_sub15.aBoolean6781);
         }
     }
 
@@ -507,7 +507,7 @@ final class Class143 {
         try {
             anInt1983++;
             if (i != 1)
-                ((Class143) this).anInt1992 = -13;
+                this.anInt1992 = -13;
             return method1188(string, new int[]{i_42_},
                     Class186.aStringArray2494, (byte) 87, class105s);
         } catch (RuntimeException runtimeexception) {
@@ -573,12 +573,12 @@ final class Class143 {
                     }
                 }
             }
-            ((Class143) this).anInt1992 = is_44_[32] - -is_43_[32];
+            this.anInt1992 = is_44_[32] - -is_43_[32];
         } else
-            ((Class143) this).anInt1992 = class348_sub49.method3387(255);
+            this.anInt1992 = class348_sub49.method3387(255);
         class348_sub49.method3387(255);
         class348_sub49.method3387(255);
-        ((Class143) this).anInt1988 = class348_sub49.method3387(255);
-        ((Class143) this).anInt1993 = class348_sub49.method3387(255);
+        this.anInt1988 = class348_sub49.method3387(255);
+        this.anInt1993 = class348_sub49.method3387(255);
     }
 }

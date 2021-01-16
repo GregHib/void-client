@@ -7,7 +7,7 @@ final class Class268 {
     private static short[] aShortArray3430 = {-1, -1, -1, -1, -1};
     static int anInt3431;
     static int[] anIntArray3432 = new int[500];
-    private Class60 aClass60_3433 = new Class60(64);
+    private final Class60 aClass60_3433 = new Class60(64);
     static int anInt3434;
     static int anInt3435;
     static int anInt3436;
@@ -16,7 +16,7 @@ final class Class268 {
     static int anInt3439 = 16777215;
     static int anInt3440;
     static int anInt3441 = 0;
-    private Class45 aClass45_3442;
+    private final Class45 aClass45_3442;
     static short[][] aShortArrayArray3443;
     static int anInt3444;
     static int anInt3445;
@@ -34,11 +34,11 @@ final class Class268 {
             int i_2_ = string.charAt(i_1_);
             if (i_2_ < 65 || (i_2_ ^ 0xffffffff) < -91) {
                 if ((i_2_ ^ 0xffffffff) <= -98 && (i_2_ ^ 0xffffffff) >= -123)
-                    l += (long) (1 - (-i_2_ + 97));
+                    l += 1 - (-i_2_ + 97);
                 else if (i_2_ >= 48 && i_2_ <= 57)
-                    l += (long) (i_2_ + 27 - 48);
+                    l += i_2_ + 27 - 48;
             } else
-                l += (long) (1 + (i_2_ + -65));
+                l += 1 + (i_2_ + -65);
             if ((l ^ 0xffffffffffffffffL) <= -177917621779460414L)
                 break;
         }
@@ -75,7 +75,7 @@ final class Class268 {
         anInt3431++;
         Class277 class277;
         synchronized (aClass60_3433) {
-            class277 = (Class277) aClass60_3433.method583((long) i, 64);
+            class277 = (Class277) aClass60_3433.method583(i, 64);
         }
         if (class277 != null)
             return class277;
@@ -84,13 +84,13 @@ final class Class268 {
             is = aClass45_3442.method410(-1860, 4, i);
         }
         class277 = new Class277();
-        ((Class277) class277).anInt3573 = i;
-        ((Class277) class277).aClass268_3562 = this;
+        class277.anInt3573 = i;
+        class277.aClass268_3562 = this;
         if (is != null)
             class277.method2070(true, new Class348_Sub49(is));
         class277.method2067(-4860);
         synchronized (aClass60_3433) {
-            aClass60_3433.method582(class277, (long) i, (byte) -111);
+            aClass60_3433.method582(class277, i, (byte) -111);
         }
         return class277;
     }
@@ -114,14 +114,12 @@ final class Class268 {
                 method2031(-117, null);
             Class17.method268(i_6_,
                     -200 + (Class275.method2064
-                            ((((Class318_Sub1)
-                                            (Class132
-                                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                            ((Class132
+                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt6377),
                                     Class355.anInt4372, 11219,
-                                    (((Class318_Sub1)
-                                            (Class132
-                                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                    (Class132
+                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt6388))),
                     i_7_, Class192.anInt2578, i, -19360,
                     Class130_Sub1.anInt5799,
@@ -180,12 +178,12 @@ final class Class268 {
                  (Class147.anInt2021 ^ 0xffffffff) < (i_9_ ^ 0xffffffff);
                  i_9_++) {
                 Class10 class10 = Class258_Sub2.aClass10Array8531[i_9_];
-                if (((Class10) class10).aByte180 == 3) {
-                    if (((Class10) class10).aClass348_Sub16_Sub5_176 == null)
-                        ((Class10) class10).anInt188 = -2147483648;
+                if (class10.aByte180 == 3) {
+                    if (class10.aClass348_Sub16_Sub5_176 == null)
+                        class10.anInt188 = -2147483648;
                     else
                         Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880
-                                (((Class10) class10).aClass348_Sub16_Sub5_176);
+                                (class10.aClass348_Sub16_Sub5_176);
                 }
             }
             anInt3446++;
@@ -195,7 +193,7 @@ final class Class268 {
     Class268(Class230 class230, int i, Class45 class45) {
         try {
             aClass45_3442 = class45;
-            ((Class268) this).anInt3429 = aClass45_3442.method407(0, 4);
+            this.anInt3429 = aClass45_3442.method407(0, 4);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("cb.<init>("

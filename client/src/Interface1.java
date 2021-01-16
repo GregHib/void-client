@@ -3,9 +3,9 @@
  */
 
 interface Interface1 {
-    public void method7(int i);
+    void method7(int i);
 
-    public boolean method8(byte i);
+    boolean method8(byte i);
 
-    public void method9(byte i, boolean bool);
+    void method9(byte i, boolean bool);
 }

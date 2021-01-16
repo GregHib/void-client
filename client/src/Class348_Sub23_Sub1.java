@@ -29,7 +29,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
     static int anInt9003;
     static int anInt9004;
     private double aDouble9005;
-    private VorbisInfo aVorbisInfo9006 = new VorbisInfo();
+    private final VorbisInfo aVorbisInfo9006 = new VorbisInfo();
 
     static final Class30 method2967(int i, Class64 class64, int i_0_, int i_1_,
                                     int i_2_) {
@@ -91,20 +91,20 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
 
     static final boolean method2972(String string, int i, int i_3_) {
         anInt9004++;
-        if (((Class297) aClass297_8992).aBoolean3777) {
+        if (aClass297_8992.aBoolean3777) {
             Class3.aClass161_125 = new Class161();
-            ((Class161) Class3.aClass161_125).anInt2143 = i;
-            ((Class161) Class3.aClass161_125).aString2147 = string;
+            Class3.aClass161_125.anInt2143 = i;
+            Class3.aClass161_125.aString2147 = string;
             if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
-                ((Class161) Class3.aClass161_125).anInt2138
-                        = 50000 - -((Class161) Class3.aClass161_125).anInt2143;
-                ((Class161) Class3.aClass161_125).anInt2148
-                        = 40000 - -((Class161) Class3.aClass161_125).anInt2143;
+                Class3.aClass161_125.anInt2138
+                        = 50000 - -Class3.aClass161_125.anInt2143;
+                Class3.aClass161_125.anInt2148
+                        = 40000 - -Class3.aClass161_125.anInt2143;
             }
             if (i < Class65.aClass110_Sub1Array1146.length
                     && Class65.aClass110_Sub1Array1146[i] != null)
                 Class251.anInt3234
-                        = (((Class110) Class65.aClass110_Sub1Array1146[i])
+                        = (Class65.aClass110_Sub1Array1146[i]
                         .anInt1708);
             return true;
         }
@@ -159,11 +159,11 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
 
     final void method2964(byte i, OggPacket oggpacket) {
         anInt8990++;
-        if ((((Class348_Sub23) this).anInt6868 ^ 0xffffffff) > -4) {
+        if ((this.anInt6868 ^ 0xffffffff) > -4) {
             int i_7_ = aVorbisInfo9006.headerIn(aVorbisComment9002, oggpacket);
             if (i_7_ < 0)
                 throw new IllegalStateException(String.valueOf(i_7_));
-            if (((Class348_Sub23) this).anInt6868 == 2) {
+            if (this.anInt6868 == 2) {
                 if (aVorbisInfo9006.channels > 2
                         || (aVorbisInfo9006.channels ^ 0xffffffff) > -2)
                     throw new RuntimeException(String.valueOf(aVorbisInfo9006
@@ -181,23 +181,22 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
             float[][] fs = aDSPState8993.pcmOut(aVorbisInfo9006.channels);
             aDouble9005 = aDSPState8993.granuleTime();
             if (aDouble9005 == -1.0)
-                aDouble9005 = (double) ((float) anInt9001
-                        / (float) aVorbisInfo9006.rate);
+                aDouble9005 = (float) anInt9001
+                        / (float) aVorbisInfo9006.rate;
             aDSPState8993.read(fs[0].length);
             anInt9001 += fs[0].length;
             Class348_Sub42_Sub4 class348_sub42_sub4
                     = aClass348_Sub16_Sub2_8995
                     .method2838(fs[0].length, aDouble9005, 1401320384);
             Class346.method2699(16383,
-                    (((Class348_Sub42_Sub4) class348_sub42_sub4)
+                    (class348_sub42_sub4
                             .aShortArrayArray9518),
                     fs);
             for (int i_8_ = 0; i_8_ < aVorbisInfo9006.channels; i_8_++)
-                ((Class348_Sub42_Sub4) class348_sub42_sub4)
+                class348_sub42_sub4
                         .aShortArrayArray9518[i_8_]
                         = aClass163_8994.method1268(-56,
-                        (((Class348_Sub42_Sub4)
-                                class348_sub42_sub4)
+                        (class348_sub42_sub4
                                 .aShortArrayArray9518[i_8_]));
             aClass348_Sub16_Sub2_8995.method2835(class348_sub42_sub4, 30700);
         }

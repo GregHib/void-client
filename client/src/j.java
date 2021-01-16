@@ -11,7 +11,7 @@ final class j extends Class105 implements Interface19 {
                                 int i_3_, int i_4_, int i_5_);
 
     final void method964(int i, int i_6_, int i_7_, int i_8_, int i_9_) {
-        W(((j) this).nativeid, i, i_6_, i_7_, i_8_, i_9_);
+        W(this.nativeid, i, i_6_, i_7_, i_8_, i_9_);
     }
 
     private final native void RA(long l, int i, int i_10_, int i_11_,
@@ -27,26 +27,26 @@ final class j extends Class105 implements Interface19 {
     private final native int M(long l);
 
     final void method963(int i, int i_25_, aa var_aa, int i_26_, int i_27_) {
-        V(((j) this).nativeid, i, i_25_, ((na) (na) var_aa).nativeid, i_26_,
+        V(this.nativeid, i, i_25_, ((na) var_aa).nativeid, i_26_,
                 i_27_);
     }
 
     final void method984(int[] is) {
-        CA(((j) this).nativeid, is);
+        CA(this.nativeid, is);
     }
 
     public final void w(boolean bool) {
-        R(((j) this).nativeid, bool);
+        R(this.nativeid, bool);
     }
 
     final int method980() {
-        return JA(((j) this).nativeid);
+        return JA(this.nativeid);
     }
 
     private final native void EA(oa var_oa, int i, int i_28_);
 
     final void method985(int i, int i_29_, int i_30_, int i_31_) {
-        A(((j) this).nativeid, i, i_29_, i_30_, i_31_);
+        A(this.nativeid, i, i_29_, i_30_, i_31_);
     }
 
     private final native void ma(oa var_oa, int[] is, byte[] is_32_,
@@ -54,18 +54,18 @@ final class j extends Class105 implements Interface19 {
                                  int i_36_);
 
     final void method968(int i, int i_37_, int i_38_) {
-        N(((j) this).nativeid, i, i_37_, i_38_);
+        N(this.nativeid, i, i_37_, i_38_);
     }
 
     final void method983(float f, float f_39_, float f_40_, float f_41_,
                          float f_42_, float f_43_, int i, aa var_aa, int i_44_,
                          int i_45_) {
-        UA(((j) this).nativeid, f, f_39_, f_40_, f_41_, f_42_, f_43_, i,
-                ((na) (na) var_aa).nativeid, i_44_, i_45_);
+        UA(this.nativeid, f, f_39_, f_40_, f_41_, f_42_, f_43_, i,
+                ((na) var_aa).nativeid, i_44_, i_45_);
     }
 
     final int method969() {
-        return I(((j) this).nativeid);
+        return I(this.nativeid);
     }
 
     private final native void CA(long l, int[] is);
@@ -75,12 +75,12 @@ final class j extends Class105 implements Interface19 {
 
     final void method982(int i, int i_50_, int i_51_, int i_52_, int i_53_,
                          int i_54_, int i_55_, int i_56_) {
-        RA(((j) this).nativeid, i, i_50_, i_51_, i_52_, i_53_, i_54_, i_55_,
+        RA(this.nativeid, i, i_50_, i_51_, i_52_, i_53_, i_54_, i_55_,
                 i_56_);
     }
 
     final int method971() {
-        return M(((j) this).nativeid);
+        return M(this.nativeid);
     }
 
     j(oa var_oa, int i, int i_57_) {
@@ -119,7 +119,7 @@ final class j extends Class105 implements Interface19 {
     private final native int I(long l);
 
     protected final void finalize() {
-        if (((j) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 
@@ -128,7 +128,7 @@ final class j extends Class105 implements Interface19 {
 
     final void method979(int i, int i_94_, int i_95_, int i_96_, int i_97_,
                          int i_98_) {
-        YA(((j) this).nativeid, i, i_94_, i_95_, i_96_, i_97_, i_98_);
+        YA(this.nativeid, i, i_94_, i_95_, i_96_, i_97_, i_98_);
     }
 
     private final native void h(oa var_oa, int i, int i_99_, int i_100_,
@@ -136,18 +136,18 @@ final class j extends Class105 implements Interface19 {
 
     final void method965(int i, int i_102_, int i_103_, int i_104_, int i_105_,
                          int i_106_, int i_107_) {
-        P(((j) this).nativeid, i, i_102_, i_103_, i_104_, i_105_, i_106_,
+        P(this.nativeid, i, i_102_, i_103_, i_104_, i_105_, i_106_,
                 i_107_);
     }
 
     final int method966() {
-        return wa(((j) this).nativeid);
+        return wa(this.nativeid);
     }
 
     final void method962(float f, float f_108_, float f_109_, float f_110_,
                          float f_111_, float f_112_, int i, int i_113_,
                          int i_114_, int i_115_) {
-        b(((j) this).nativeid, f, f_108_, f_109_, f_110_, f_111_, f_112_, i,
+        b(this.nativeid, f, f_108_, f_109_, f_110_, f_111_, f_112_, i,
                 i_113_, i_114_, i_115_);
     }
 

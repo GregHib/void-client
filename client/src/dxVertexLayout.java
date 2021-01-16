@@ -10,7 +10,7 @@ public class dxVertexLayout extends Class130 {
 
     dxVertexLayout(Class378 class378, Class58[] class58s) {
         VertexElementCollection vertexelementcollection
-                = new VertexElementCollection(((Class378) class378).aHb9788);
+                = new VertexElementCollection(class378.aHb9788);
         int i = 0;
         for (int i_0_ = 0;
              (class58s.length ^ 0xffffffff) < (i_0_ ^ 0xffffffff); i_0_++) {
@@ -40,12 +40,12 @@ public class dxVertexLayout extends Class130 {
                 } else
                     vertexelementcollection.addElement(i_0_, 4, 0, 10, 0,
                             i_1_);
-                i_1_ += ((Class325) class325).anInt4069;
+                i_1_ += class325.anInt4069;
             }
         }
         vertexelementcollection.finish();
-        ((dxVertexLayout) this).anIDirect3DVertexDeclaration5803
-                = ((Class378) class378).anIDirect3DDevice9810
+        this.anIDirect3DVertexDeclaration5803
+                = class378.anIDirect3DDevice9810
                 .a(vertexelementcollection, null);
     }
 }

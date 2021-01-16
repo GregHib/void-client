@@ -41,44 +41,44 @@ final class Class126 implements Interface14 {
         anInt4988++;
         long[] ls = Class348_Sub40_Sub21.aLongArray9283;
         long l = -1L;
-        l = (ls[(int) ((l ^ (long) ((Class126) this).anInt4991) & 0xffL)]
+        l = (ls[(int) ((l ^ (long) this.anInt4991) & 0xffL)]
                 ^ l >>> -912339384);
         l = (l >>> -1815341496
                 ^ ls[(int) (0xffL
-                & ((long) (((Class126) this).anInt4992 >> -1724957784)
+                & ((long) (this.anInt4992 >> -1724957784)
                 ^ l))]);
         l = (l >>> 541427656
-                ^ ls[(int) ((l ^ (long) ((Class126) this).anInt4992) & 0xffL)]);
+                ^ ls[(int) ((l ^ (long) this.anInt4992) & 0xffL)]);
         l = (l >>> -1073243512
-                ^ ls[(int) (0xffL & (l ^ (long) (((Class126) this).anInt4989
+                ^ ls[(int) (0xffL & (l ^ (long) (this.anInt4989
                 >> -112708680)))]);
         l = ls[(int) (0xffL
-                & ((long) (((Class126) this).anInt4989 >> 1783360016)
+                & ((long) (this.anInt4989 >> 1783360016)
                 ^ l))] ^ l >>> -1647611832;
         l = (l >>> -924450232
-                ^ ls[(int) (0xffL & (l ^ (long) (((Class126) this).anInt4989
+                ^ ls[(int) (0xffL & (l ^ (long) (this.anInt4989
                 >> 1295609864)))]);
         l = (l >>> -455753976
-                ^ ls[(int) ((l ^ (long) ((Class126) this).anInt4989) & 0xffL)]);
+                ^ ls[(int) ((l ^ (long) this.anInt4989) & 0xffL)]);
         l = (l >>> 926476232
-                ^ ls[(int) (0xffL & ((long) ((Class126) this).anInt4993 ^ l))]);
-        l = ls[(int) ((l ^ (long) (((Class126) this).anInt4982 >> -1449545672))
+                ^ ls[(int) (0xffL & ((long) this.anInt4993 ^ l))]);
+        l = ls[(int) ((l ^ (long) (this.anInt4982 >> -1449545672))
                 & 0xffL)] ^ l >>> -1904788408;
         l = (l >>> -1886860152
-                ^ ls[(int) ((l ^ (long) (((Class126) this).anInt4982
+                ^ ls[(int) ((l ^ (long) (this.anInt4982
                 >> -1179242768))
                 & 0xffL)]);
         if (i < 46)
             return -94L;
-        l = ls[(int) ((l ^ (long) (((Class126) this).anInt4982 >> -365755512))
+        l = ls[(int) ((l ^ (long) (this.anInt4982 >> -365755512))
                 & 0xffL)] ^ l >>> -1299525048;
         l = (l >>> 930759944
-                ^ ls[(int) (0xffL & ((long) ((Class126) this).anInt4982 ^ l))]);
-        l = (ls[(int) (0xffL & (l ^ (long) ((Class126) this).anInt4981))]
+                ^ ls[(int) (0xffL & ((long) this.anInt4982 ^ l))]);
+        l = (ls[(int) (0xffL & (l ^ (long) this.anInt4981))]
                 ^ l >>> 1555250760);
         l = (l >>> -496446648
                 ^ ls[(int) (0xffL
-                & ((long) (((Class126) this).aBoolean4990 ? 1 : 0)
+                & ((long) (this.aBoolean4990 ? 1 : 0)
                 ^ l))]);
         return l;
     }
@@ -102,25 +102,22 @@ final class Class126 implements Interface14 {
         if (!(interface14 instanceof Class126))
             return false;
         Class126 class126_3_ = (Class126) interface14;
-        if (((Class126) this).anInt4991 != ((Class126) class126_3_).anInt4991)
+        if (this.anInt4991 != class126_3_.anInt4991)
             return false;
         if (i <= 50)
             return true;
-        if (((Class126) this).anInt4992 != ((Class126) class126_3_).anInt4992)
+        if (this.anInt4992 != class126_3_.anInt4992)
             return false;
-        if (((Class126) this).anInt4989 != ((Class126) class126_3_).anInt4989)
+        if (this.anInt4989 != class126_3_.anInt4989)
             return false;
-        if ((((Class126) class126_3_).anInt4993 ^ 0xffffffff)
-                != (((Class126) this).anInt4993 ^ 0xffffffff))
+        if ((class126_3_.anInt4993 ^ 0xffffffff)
+                != (this.anInt4993 ^ 0xffffffff))
             return false;
-        if ((((Class126) this).anInt4982 ^ 0xffffffff)
-                != (((Class126) class126_3_).anInt4982 ^ 0xffffffff))
+        if ((this.anInt4982 ^ 0xffffffff)
+                != (class126_3_.anInt4982 ^ 0xffffffff))
             return false;
-        if (((Class126) this).anInt4981 != ((Class126) class126_3_).anInt4981)
+        if (this.anInt4981 != class126_3_.anInt4981)
             return false;
-        if (!((Class126) class126_3_).aBoolean4990
-                != !((Class126) this).aBoolean4990)
-            return false;
-        return true;
+        return !class126_3_.aBoolean4990 == !this.aBoolean4990;
     }
 }

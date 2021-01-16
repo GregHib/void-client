@@ -15,8 +15,8 @@ final class Class348_Sub40_Sub27 extends Class348_Sub40 {
         if (i_0_ != -1564599039)
             return null;
         anInt9356++;
-        int[][] is = ((Class348_Sub40) this).aClass322_7033.method2557(-90, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        int[][] is = this.aClass322_7033.method2557(-90, i);
+        if (this.aClass322_7033.aBoolean4035) {
             int[] is_1_ = this.method3048(i, i_0_ + -2096661920, 2);
             int[][] is_2_ = this.method3039((byte) -74, i, 0);
             int[][] is_3_ = this.method3039((byte) -58, i, 1);
@@ -63,8 +63,8 @@ final class Class348_Sub40_Sub27 extends Class348_Sub40 {
         if (i_16_ != 255)
             return null;
         anInt9359++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             int[] is_17_ = this.method3048(i, i_16_ ^ 0x25c5979e, 0);
             int[] is_18_ = this.method3048(i, 633706337, 1);
             int[] is_19_ = this.method3048(i, i_16_ + 633706082, 2);
@@ -101,7 +101,7 @@ final class Class348_Sub40_Sub27 extends Class348_Sub40 {
         if (i_22_ != 31015)
             anInt9360 = -16;
         if (i == 0)
-            ((Class348_Sub40) this).aBoolean7045
+            this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
     }
 }

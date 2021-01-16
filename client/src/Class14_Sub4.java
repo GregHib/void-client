@@ -70,11 +70,11 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8640 = i;
             anInt8634 = i_3_;
-            ((Class14) this).aClass377_5082.method3850((byte) 76, this);
+            this.aClass377_5082.method3850((byte) 76, this);
             OpenGL.glPixelStorei(3314, i_5_);
-            OpenGL.glTexImage2Di(((Class14) this).anInt5093, 0, 6408,
+            OpenGL.glTexImage2Di(this.anInt5093, 0, 6408,
                     anInt8640, anInt8634, 0, 32993,
-                    (((Class377) ((Class14) this).aClass377_5082)
+                    (this.aClass377_5082
                             .anInt9918),
                     is, i_4_ * 4);
             OpenGL.glPixelStorei(3314, 0);
@@ -96,13 +96,13 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8634 = i_6_;
             anInt8640 = i;
-            ((Class14) this).aClass377_5082.method3850((byte) -127, this);
+            this.aClass377_5082.method3850((byte) -127, this);
             OpenGL.glPixelStorei(3317, 1);
             OpenGL.glPixelStorei(3314, i_8_);
-            OpenGL.glTexImage2Dub(((Class14) this).anInt5093, 0,
+            OpenGL.glTexImage2Dub(this.anInt5093, 0,
                     this.method228(126), i, i_6_, 0,
                     (Class348_Sub40_Sub3.method3055
-                            (111, ((Class14) this).aClass304_5084)),
+                            (111, this.aClass304_5084)),
                     5121, is, i_7_);
             OpenGL.glPixelStorei(3314, 0);
             OpenGL.glPixelStorei(3317, 4);
@@ -132,13 +132,13 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8634 = i_10_;
             anInt8640 = i;
-            ((Class14) this).aClass377_5082.method3850((byte) 115, this);
+            this.aClass377_5082.method3850((byte) 115, this);
             OpenGL.glTexImage2Dub
-                    (((Class14) this).anInt5093, 0, this.method228(109), i, i_10_,
+                    (this.anInt5093, 0, this.method228(109), i, i_10_,
                             0,
                             Class348_Sub40_Sub3
-                                    .method3055(105, ((Class14) this).aClass304_5084),
-                            Class130.method1128(-54, ((Class14) this).aClass68_5088),
+                                    .method3055(105, this.aClass304_5084),
+                            Class130.method1128(-54, this.aClass68_5088),
                             null, 0);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
@@ -154,9 +154,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         anInt8636++;
         if (i_11_ != 5126)
             aByteArrayArray8642 = null;
-        if (i != 0 && (i ^ 0xffffffff) != -3)
-            return false;
-        return true;
+        return i == 0 || (i ^ 0xffffffff) == -3;
     }
 
     static final void method253(int i, int i_12_, int i_13_, int i_14_,
@@ -200,8 +198,8 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         if (i_29_ != 112)
             anInt8634 = 49;
         int[] is_31_ = new int[anInt8634 * anInt8640];
-        ((Class14) this).aClass377_5082.method3850((byte) -34, this);
-        OpenGL.glGetTexImagei(((Class14) this).anInt5093, 0, 32993, 5121,
+        this.aClass377_5082.method3850((byte) -34, this);
+        OpenGL.glGetTexImagei(this.anInt5093, 0, 32993, 5121,
                 is_31_, 0);
         for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (i_28_ ^ 0xffffffff);
              i_32_++)
@@ -224,12 +222,12 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         try {
             anInt8640 = i;
             anInt8634 = i_33_;
-            ((Class14) this).aClass377_5082.method3850((byte) -45, this);
+            this.aClass377_5082.method3850((byte) -45, this);
             OpenGL.glPixelStorei(3314, i_35_);
-            OpenGL.glTexImage2Df(((Class14) this).anInt5093, 0,
+            OpenGL.glTexImage2Df(this.anInt5093, 0,
                     this.method228(107), i, i_33_, 0,
                     (Class348_Sub40_Sub3.method3055
-                            (126, ((Class14) this).aClass304_5084)),
+                            (126, this.aClass304_5084)),
                     5126, fs, i_34_ * 4);
             OpenGL.glPixelStorei(3314, 0);
         } catch (RuntimeException runtimeexception) {
@@ -265,15 +263,15 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
 
     public final void method68(int i, int i_36_, int[] is, int i_37_,
                                int i_38_, int i_39_, int i_40_, int i_41_) {
-        ((Class14) this).aClass377_5082.method3850((byte) 118, this);
+        this.aClass377_5082.method3850((byte) 118, this);
         anInt8650++;
         if ((i ^ 0xffffffff) == -1)
             i = i_39_;
         if (i_39_ != i)
             OpenGL.glPixelStorei(3314, i);
-        OpenGL.glTexSubImage2Di(((Class14) this).anInt5093, 0, i_37_, i_40_,
+        OpenGL.glTexSubImage2Di(this.anInt5093, 0, i_37_, i_40_,
                 i_39_, i_41_, 32993,
-                (((Class377) ((Class14) this).aClass377_5082)
+                (this.aClass377_5082
                         .anInt9918),
                 is, i_38_);
         if ((i_39_ ^ 0xffffffff) != (i ^ 0xffffffff))
@@ -286,7 +284,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
                                int i_45_, int i_46_, int i_47_, byte[] is,
                                Class304 class304) {
         try {
-            ((Class14) this).aClass377_5082.method3850((byte) -39, this);
+            this.aClass377_5082.method3850((byte) -39, this);
             anInt8647++;
             if ((i_44_ ^ 0xffffffff) == -1)
                 i_44_ = i_46_;
@@ -295,7 +293,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
                 method250(74, false, -106);
             if (i_46_ != i_44_)
                 OpenGL.glPixelStorei(3314, i_44_);
-            OpenGL.glTexSubImage2Dub(((Class14) this).anInt5093, 0, i_47_, i,
+            OpenGL.glTexSubImage2Dub(this.anInt5093, 0, i_47_, i,
                     i_46_, i_45_,
                     Class348_Sub40_Sub3.method3055(120,
                             class304),

@@ -26,13 +26,12 @@ final class Class289 {
         Class250.anInt3227 = 0;
         anInt3702++;
         int i_0_
-                = (((((Class318_Sub1) Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                 .anInt6377)
                 >> 768205065)
                 - -za_Sub2.anInt9780);
         int i_1_ = (Class90.anInt1517
-                + (((Class318_Sub1)
-                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6388
+                + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388
                 >> -571249271));
         if (i != 80)
             method2192((byte) -34);

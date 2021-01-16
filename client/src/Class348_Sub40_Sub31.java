@@ -23,8 +23,8 @@ final class Class348_Sub40_Sub31 extends Class348_Sub40 {
         if (i_0_ != -1564599039)
             return null;
         int[][] is
-                = ((Class348_Sub40) this).aClass322_7033.method2557(-111, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+                = this.aClass322_7033.method2557(-111, i);
+        if (this.aClass322_7033.aBoolean4035) {
             int i_1_ = Class348_Sub40_Sub6.anInt9139 / anInt9405;
             int i_2_ = Class286_Sub2.anInt6212 / anInt9410;
             int[][] is_3_;
@@ -87,8 +87,8 @@ final class Class348_Sub40_Sub31 extends Class348_Sub40 {
         if (i_16_ != 255)
             return null;
         anInt9409++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             int i_17_ = Class348_Sub40_Sub6.anInt9139 / anInt9405;
             int i_18_ = Class286_Sub2.anInt6212 / anInt9410;
             int[] is_19_;

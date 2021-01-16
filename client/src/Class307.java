@@ -19,7 +19,7 @@ final class Class307 {
             Class252 class252 = new Class252(is.length);
             int i_1_ = 0;
             int i_2_ = 0;
-            while (i_1_ < ((Class252) class252).anInt3241) {
+            while (i_1_ < class252.anInt3241) {
                 Class348_Sub49 class348_sub49
                         = new Class348_Sub49(class45.method410(-1860, i_0_,
                         is[i_2_++]));
@@ -27,10 +27,10 @@ final class Class307 {
                 int i_4_ = class348_sub49.method3330(i ^ ~0x3235f8a2);
                 int i_5_ = class348_sub49.method3387(255);
                 if (!bool && i_5_ == 1)
-                    ((Class252) class252).anInt3241--;
+                    class252.anInt3241--;
                 else {
-                    ((Class252) class252).anIntArray3238[i_1_] = i_3_;
-                    ((Class252) class252).anIntArray3239[i_1_] = i_4_;
+                    class252.anIntArray3238[i_1_] = i_3_;
+                    class252.anIntArray3239[i_1_] = i_4_;
                     i_1_++;
                 }
             }
@@ -54,23 +54,21 @@ final class Class307 {
         Class348_Sub13 class348_sub13
                 = Class258_Sub4.method1974((byte) -9, i_6_, bool);
         if (class348_sub13 == null)
-            return (((Class348_Sub42_Sub7)
-                    Class127_Sub1.aClass271_8378.method2044(109, i_6_))
+            return (Class127_Sub1.aClass271_8378.method2044(109, i_6_)
                     .anInt9542);
         int i_7_ = 0;
         for (int i_8_ = 0;
-             ((((Class348_Sub13) class348_sub13).anIntArray6757.length
+             ((class348_sub13.anIntArray6757.length
                      ^ 0xffffffff)
                      < (i_8_ ^ 0xffffffff));
              i_8_++) {
-            if (((Class348_Sub13) class348_sub13).anIntArray6757[i_8_] == -1)
+            if (class348_sub13.anIntArray6757[i_8_] == -1)
                 i_7_++;
         }
         if (i != 35)
             method2301((byte) -102, 43, true);
-        i_7_ += (((Class348_Sub42_Sub7)
-                Class127_Sub1.aClass271_8378.method2044(82, i_6_)).anInt9542
-                + -((Class348_Sub13) class348_sub13).anIntArray6757.length);
+        i_7_ += (Class127_Sub1.aClass271_8378.method2044(82, i_6_).anInt9542
+                + -class348_sub13.anIntArray6757.length);
         return i_7_;
     }
 }

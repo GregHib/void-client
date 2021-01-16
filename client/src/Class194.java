@@ -9,7 +9,7 @@ final class Class194 {
     private Class60 aClass60_2594 = new Class60(64);
     static int anInt2595;
     static Class279 aClass279_2596;
-    private Class45 aClass45_2597;
+    private final Class45 aClass45_2597;
     static int anInt2598;
 
     public static void method1441(byte i) {
@@ -57,7 +57,7 @@ final class Class194 {
         anInt2593++;
         Class146 class146;
         synchronized (aClass60_2594) {
-            class146 = (Class146) aClass60_2594.method583((long) i, 76);
+            class146 = (Class146) aClass60_2594.method583(i, 76);
         }
         if (class146 != null)
             return class146;
@@ -73,7 +73,7 @@ final class Class194 {
         if (is != null)
             class146.method1191(i_4_ ^ ~0x800, new Class348_Sub49(is));
         synchronized (aClass60_2594) {
-            aClass60_2594.method582(class146, (long) i, (byte) -105);
+            aClass60_2594.method582(class146, i, (byte) -105);
         }
         return class146;
     }

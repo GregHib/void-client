@@ -12,27 +12,27 @@ final class Class348_Sub40_Sub35 extends Class348_Sub40 {
     static int anInt9446;
     private int anInt9447 = 3216;
     private int anInt9448 = 4096;
-    private int[] anIntArray9449 = new int[3];
+    private final int[] anIntArray9449 = new int[3];
 
     private final void method3143(int i) {
         anInt9440++;
         if (i >= -118)
             method3143(-88);
-        double d = Math.cos((double) ((float) anInt9445 / 4096.0F));
+        double d = Math.cos((float) anInt9445 / 4096.0F);
         anIntArray9449[0]
-                = (int) (d * Math.sin((double) ((float) anInt9447 / 4096.0F))
+                = (int) (d * Math.sin((float) anInt9447 / 4096.0F)
                 * 4096.0);
         anIntArray9449[1]
-                = (int) (d * Math.cos((double) ((float) anInt9447 / 4096.0F))
+                = (int) (d * Math.cos((float) anInt9447 / 4096.0F)
                 * 4096.0);
         anIntArray9449[2]
-                = (int) (Math.sin((double) ((float) anInt9445 / 4096.0F))
+                = (int) (Math.sin((float) anInt9445 / 4096.0F)
                 * 4096.0);
         int i_0_ = anIntArray9449[0] * anIntArray9449[0] >> 1021098412;
         int i_1_ = anIntArray9449[1] * anIntArray9449[1] >> -915615988;
         int i_2_ = anIntArray9449[2] * anIntArray9449[2] >> 832978412;
-        int i_3_ = (int) (4096.0 * Math.sqrt((double) (i_1_ + i_0_ + i_2_
-                >> 1001438988)));
+        int i_3_ = (int) (4096.0 * Math.sqrt(i_1_ + i_0_ + i_2_
+                >> 1001438988));
         if (i_3_ != 0) {
             anIntArray9449[1] = (anIntArray9449[1] << -1724646484) / i_3_;
             anIntArray9449[0] = (anIntArray9449[0] << -10046932) / i_3_;
@@ -42,8 +42,8 @@ final class Class348_Sub40_Sub35 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_4_) {
         anInt9446++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             int i_5_ = Class248.anInt3201 * anInt9448 >> -856871732;
             int[] is_6_ = this.method3048(Class299_Sub2.anInt6325 & -1 + i,
                     633706337, 0);

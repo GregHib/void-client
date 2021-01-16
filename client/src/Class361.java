@@ -30,8 +30,8 @@ final class Class361 {
     static float aFloat4455;
 
     private final void method3493(int i, int i_0_, int i_1_, int i_2_) {
-        ((Class361) this).anIntArrayArray4438[i_1_][i_2_]
-                = Class139.method1166((((Class361) this).anIntArrayArray4438[i_1_]
+        this.anIntArrayArray4438[i_1_][i_2_]
+                = Class139.method1166((this.anIntArrayArray4438[i_1_]
                         [i_2_]),
                 i ^ 0xffffffff);
         if (i_0_ > -120)
@@ -40,8 +40,8 @@ final class Class361 {
     }
 
     private final void method3494(int i, int i_3_, int i_4_, int i_5_) {
-        ((Class361) this).anIntArrayArray4438[i][i_4_]
-                = Class273.method2057((((Class361) this).anIntArrayArray4438[i]
+        this.anIntArrayArray4438[i][i_4_]
+                = Class273.method2057((this.anIntArrayArray4438[i]
                         [i_4_]),
                 i_3_);
         if (i_5_ != -6496)
@@ -62,10 +62,10 @@ final class Class361 {
                 && (-1 + (i_7_ + i_10_) ^ 0xffffffff) <= (i_10_
                 ^ 0xffffffff))
             return true;
-        i_10_ -= ((Class361) this).anInt4441;
-        i_6_ -= ((Class361) this).anInt4441;
-        i -= ((Class361) this).anInt4453;
-        i_9_ -= ((Class361) this).anInt4453;
+        i_10_ -= this.anInt4441;
+        i_6_ -= this.anInt4441;
+        i -= this.anInt4453;
+        i_9_ -= this.anInt4453;
         if (i_7_ == 1) {
             if ((i_11_ ^ 0xffffffff) == -1) {
                 if ((i_8_ ^ 0xffffffff) != -1) {
@@ -74,13 +74,13 @@ final class Class361 {
                             return true;
                         if ((i_9_ ^ 0xffffffff) == (i + -1 ^ 0xffffffff)
                                 && i_10_ == i_6_
-                                && ((((Class361) this).anIntArrayArray4438[i_9_]
+                                && ((this.anIntArrayArray4438[i_9_]
                                 [i_6_])
                                 & 0x2c0108) == 0)
                             return true;
                         if ((i_9_ ^ 0xffffffff) == (i + 1 ^ 0xffffffff)
                                 && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
-                                && (0x2c0180 & (((Class361) this)
+                                && (0x2c0180 & (this
                                 .anIntArrayArray4438[i_9_][i_6_])
                                 ^ 0xffffffff) == -1)
                             return true;
@@ -92,13 +92,13 @@ final class Class361 {
                                 return true;
                             if ((i_9_ ^ 0xffffffff) == (i + -1 ^ 0xffffffff)
                                     && i_10_ == i_6_
-                                    && ((((Class361) this).anIntArrayArray4438
+                                    && ((this.anIntArrayArray4438
                                     [i_9_][i_6_])
                                     & 0x2c0108) == 0)
                                 return true;
                             if ((1 + i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                                     && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
-                                    && ((((Class361) this).anIntArrayArray4438
+                                    && ((this.anIntArrayArray4438
                                     [i_9_][i_6_])
                                     & 0x2c0180) == 0)
                                 return true;
@@ -109,13 +109,13 @@ final class Class361 {
                             return true;
                         if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                                 && (i_6_ ^ 0xffffffff) == (1 + i_10_ ^ 0xffffffff)
-                                && ((((Class361) this).anIntArrayArray4438[i_9_]
+                                && ((this.anIntArrayArray4438[i_9_]
                                 [i_6_])
                                 & 0x2c0120) == 0)
                             return true;
                         if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                                 && (i_6_ ^ 0xffffffff) == (i_10_ + -1 ^ 0xffffffff)
-                                && (0x2c0102 & (((Class361) this)
+                                && (0x2c0102 & (this
                                 .anIntArrayArray4438[i_9_][i_6_])
                                 ^ 0xffffffff) == -1)
                             return true;
@@ -125,13 +125,13 @@ final class Class361 {
                             && i_6_ == i_10_)
                         return true;
                     if (i == i_9_ && i_10_ - -1 == i_6_
-                            && (0x2c0120 & (((Class361) this).anIntArrayArray4438
+                            && (0x2c0120 & (this.anIntArrayArray4438
                             [i_9_][i_6_])
                             ^ 0xffffffff) == -1)
                         return true;
                     if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
                             && i_6_ == -1 + i_10_
-                            && (0x2c0102 & (((Class361) this).anIntArrayArray4438
+                            && (0x2c0102 & (this.anIntArrayArray4438
                             [i_9_][i_6_])
                             ^ 0xffffffff) == -1)
                         return true;
@@ -148,12 +148,12 @@ final class Class361 {
                                         ^ 0xffffffff))
                                     return true;
                                 if (i_9_ == i && 1 + i_10_ == i_6_
-                                        && (0x2c0120 & (((Class361) this)
+                                        && (0x2c0120 & (this
                                         .anIntArrayArray4438[i_9_]
                                         [i_6_])) == 0)
                                     return true;
                                 if (1 + i == i_9_ && i_6_ == i_10_
-                                        && ((((Class361) this).anIntArrayArray4438
+                                        && ((this.anIntArrayArray4438
                                         [i_9_][i_6_])
                                         & 0x2c0180) == 0)
                                     return true;
@@ -165,12 +165,12 @@ final class Class361 {
                         } else {
                             if (i - 1 == i_9_ && i_10_ == i_6_
                                     && (0x2c0108
-                                    & (((Class361) this).anIntArrayArray4438
+                                    & (this.anIntArrayArray4438
                                     [i_9_][i_6_])) == 0)
                                 return true;
                             if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                                     && i_10_ + 1 == i_6_
-                                    && (0x2c0120 & (((Class361) this)
+                                    && (0x2c0120 & (this
                                     .anIntArrayArray4438[i_9_]
                                     [i_6_])
                                     ^ 0xffffffff) == -1)
@@ -184,7 +184,7 @@ final class Class361 {
                     } else {
                         if ((-1 + i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                                 && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
-                                && (0x2c0108 & (((Class361) this)
+                                && (0x2c0108 & (this
                                 .anIntArrayArray4438[i_9_][i_6_])
                                 ^ 0xffffffff) == -1)
                             return true;
@@ -196,7 +196,7 @@ final class Class361 {
                             return true;
                         if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
                                 && i_10_ - 1 == i_6_
-                                && ((((Class361) this).anIntArrayArray4438[i_9_]
+                                && ((this.anIntArrayArray4438[i_9_]
                                 [i_6_]) & 0x2c0102
                                 ^ 0xffffffff) == -1)
                             return true;
@@ -209,12 +209,12 @@ final class Class361 {
                         return true;
                     if ((i_9_ ^ 0xffffffff) == (i + 1 ^ 0xffffffff)
                             && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
-                            && (0x2c0180 & (((Class361) this).anIntArrayArray4438
+                            && (0x2c0180 & (this.anIntArrayArray4438
                             [i_9_][i_6_])) == 0)
                         return true;
                     if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
                             && (i_10_ - 1 ^ 0xffffffff) == (i_6_ ^ 0xffffffff)
-                            && (0x2c0102 & (((Class361) this).anIntArrayArray4438
+                            && (0x2c0102 & (this.anIntArrayArray4438
                             [i_9_][i_6_])) == 0)
                         return true;
                 }
@@ -223,24 +223,23 @@ final class Class361 {
                 if (i_9_ == i
                         && (1 + i_10_ ^ 0xffffffff) == (i_6_ ^ 0xffffffff)
                         && ((0x20
-                        & ((Class361) this).anIntArrayArray4438[i_9_][i_6_])
+                        & this.anIntArrayArray4438[i_9_][i_6_])
                         == 0))
                     return true;
                 if (i == i_9_ && -1 + i_10_ == i_6_
                         && ((0x2
-                        & ((Class361) this).anIntArrayArray4438[i_9_][i_6_])
+                        & this.anIntArrayArray4438[i_9_][i_6_])
                         == 0))
                     return true;
                 if ((i_9_ ^ 0xffffffff) == (-1 + i ^ 0xffffffff)
                         && (i_10_ ^ 0xffffffff) == (i_6_ ^ 0xffffffff)
                         && ((0x8
-                        & ((Class361) this).anIntArrayArray4438[i_9_][i_6_])
+                        & this.anIntArrayArray4438[i_9_][i_6_])
                         == 0))
                     return true;
-                if (i_9_ == 1 + i && i_10_ == i_6_
-                        && (((Class361) this).anIntArrayArray4438[i_9_][i_6_]
-                        & 0x80) == 0)
-                    return true;
+                return i_9_ == 1 + i && i_10_ == i_6_
+                        && (this.anIntArrayArray4438[i_9_][i_6_]
+                        & 0x80) == 0;
             }
         } else {
             int i_14_ = -1 + (i_7_ + i_9_);
@@ -256,13 +255,13 @@ final class Class361 {
                         if (i + -i_7_ == i_9_ && i_6_ <= i_10_
                                 && (i_10_ ^ 0xffffffff) >= (i_15_ ^ 0xffffffff)
                                 && (0x2c0108
-                                & (((Class361) this).anIntArrayArray4438[i_14_]
+                                & (this.anIntArrayArray4438[i_14_]
                                 [i_10_])) == 0)
                             return true;
                         if ((i_9_ ^ 0xffffffff) == (1 + i ^ 0xffffffff)
                                 && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
                                 && (i_10_ ^ 0xffffffff) >= (i_15_ ^ 0xffffffff)
-                                && (0x2c0180 & (((Class361) this)
+                                && (0x2c0180 & (this
                                 .anIntArrayArray4438[i_9_][i_10_])
                                 ^ 0xffffffff) == -1)
                             return true;
@@ -274,14 +273,14 @@ final class Class361 {
                                 return true;
                             if ((i_9_ ^ 0xffffffff) == (i - i_7_ ^ 0xffffffff)
                                     && i_10_ >= i_6_ && i_10_ <= i_15_
-                                    && ((((Class361) this).anIntArrayArray4438
+                                    && ((this.anIntArrayArray4438
                                     [i_14_][i_10_]) & 0x2c0108
                                     ^ 0xffffffff) == -1)
                                 return true;
                             if (i_9_ == 1 + i
                                     && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
                                     && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
-                                    && (0x2c0180 & (((Class361) this)
+                                    && (0x2c0180 & (this
                                     .anIntArrayArray4438[i_9_]
                                     [i_10_])
                                     ^ 0xffffffff) == -1)
@@ -295,14 +294,14 @@ final class Class361 {
                         if (i >= i_9_
                                 && (i_14_ ^ 0xffffffff) <= (i ^ 0xffffffff)
                                 && (i_6_ ^ 0xffffffff) == (i_10_ - -1 ^ 0xffffffff)
-                                && (((Class361) this).anIntArrayArray4438[i][i_6_]
+                                && (this.anIntArrayArray4438[i][i_6_]
                                 & 0x2c0120) == 0)
                             return true;
                         if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
                                 && i_14_ >= i
                                 && (i_6_ ^ 0xffffffff) == (-i_7_ + i_10_
                                 ^ 0xffffffff)
-                                && ((((Class361) this).anIntArrayArray4438[i]
+                                && ((this.anIntArrayArray4438[i]
                                 [i_15_]) & 0x2c0102
                                 ^ 0xffffffff) == -1)
                             return true;
@@ -315,14 +314,14 @@ final class Class361 {
                     if ((i ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)
                             && (i_14_ ^ 0xffffffff) <= (i ^ 0xffffffff)
                             && i_10_ + 1 == i_6_
-                            && ((((Class361) this).anIntArrayArray4438[i][i_6_]
+                            && ((this.anIntArrayArray4438[i][i_6_]
                             & 0x2c0120)
                             ^ 0xffffffff) == -1)
                         return true;
                     if ((i ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)
                             && (i ^ 0xffffffff) >= (i_14_ ^ 0xffffffff)
                             && i_6_ == -i_7_ + i_10_
-                            && ((((Class361) this).anIntArrayArray4438[i][i_15_]
+                            && ((this.anIntArrayArray4438[i][i_15_]
                             & 0x2c0102)
                             ^ 0xffffffff) == -1)
                         return true;
@@ -340,13 +339,13 @@ final class Class361 {
                     if ((i + 1 ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                             && (i_6_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff)
                             && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
-                            && (0x2c0180 & (((Class361) this).anIntArrayArray4438
+                            && (0x2c0180 & (this.anIntArrayArray4438
                             [i_9_][i_10_])
                             ^ 0xffffffff) == -1)
                         return true;
                     if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff) && i <= i_14_
                             && -i_7_ + i_10_ == i_6_
-                            && ((((Class361) this).anIntArrayArray4438[i][i_15_]
+                            && ((this.anIntArrayArray4438[i][i_15_]
                             & 0x2c0102)
                             ^ 0xffffffff) == -1)
                         return true;
@@ -354,13 +353,13 @@ final class Class361 {
                     if (i_8_ == 2) {
                         if (i_9_ == i - i_7_ && i_6_ <= i_10_
                                 && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
-                                && (0x2c0108 & (((Class361) this)
+                                && (0x2c0108 & (this
                                 .anIntArrayArray4438[i_14_][i_10_])
                                 ^ 0xffffffff) == -1)
                             return true;
                         if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
                                 && i_14_ >= i && 1 + i_10_ == i_6_
-                                && (((Class361) this).anIntArrayArray4438[i][i_6_]
+                                && (this.anIntArrayArray4438[i][i_6_]
                                 & 0x2c0120) == 0)
                             return true;
                         if (i - -1 == i_9_
@@ -377,12 +376,12 @@ final class Class361 {
                         if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
                                 && (i ^ 0xffffffff) >= (i_14_ ^ 0xffffffff)
                                 && i_6_ == i_10_ + 1
-                                && (((Class361) this).anIntArrayArray4438[i][i_6_]
+                                && (this.anIntArrayArray4438[i][i_6_]
                                 & 0x2c0120) == 0)
                             return true;
                         if ((i + 1 ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                                 && i_10_ >= i_6_ && i_10_ <= i_15_
-                                && ((((Class361) this).anIntArrayArray4438[i_9_]
+                                && ((this.anIntArrayArray4438[i_9_]
                                 [i_10_])
                                 & 0x2c0180) == 0)
                             return true;
@@ -395,7 +394,7 @@ final class Class361 {
                     if ((-i_7_ + i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                             && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
                             && i_15_ >= i_10_
-                            && (0x2c0108 & (((Class361) this).anIntArrayArray4438
+                            && (0x2c0108 & (this.anIntArrayArray4438
                             [i_14_][i_10_])
                             ^ 0xffffffff) == -1)
                         return true;
@@ -406,7 +405,7 @@ final class Class361 {
                             && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff))
                         return true;
                     if (i_9_ <= i && i <= i_14_ && -i_7_ + i_10_ == i_6_
-                            && ((((Class361) this).anIntArrayArray4438[i][i_15_]
+                            && ((this.anIntArrayArray4438[i][i_15_]
                             & 0x2c0102)
                             ^ 0xffffffff) == -1)
                         return true;
@@ -415,41 +414,40 @@ final class Class361 {
             if ((i_11_ ^ 0xffffffff) == -10) {
                 if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff) && i <= i_14_
                         && i_10_ - -1 == i_6_
-                        && (((Class361) this).anIntArrayArray4438[i][i_6_]
+                        && (this.anIntArrayArray4438[i][i_6_]
                         & 0x2c0120) == 0)
                     return true;
                 if (i_9_ <= i && i_14_ >= i
                         && (i_6_ ^ 0xffffffff) == (i_10_ + -i_7_ ^ 0xffffffff)
-                        && (((Class361) this).anIntArrayArray4438[i][i_15_]
+                        && (this.anIntArrayArray4438[i][i_15_]
                         & 0x2c0102) == 0)
                     return true;
                 if (-i_7_ + i == i_9_
                         && (i_6_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff)
                         && i_10_ <= i_15_
                         && ((0x2c0108
-                        & ((Class361) this).anIntArrayArray4438[i_14_][i_10_])
+                        & this.anIntArrayArray4438[i_14_][i_10_])
                         ^ 0xffffffff) == -1)
                     return true;
-                if ((i - -1 ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
+                return (i - -1 ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
                         && (i_6_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff)
                         && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
                         && ((0x2c0180
-                        & ((Class361) this).anIntArrayArray4438[i_9_][i_10_])
-                        == 0))
-                    return true;
+                        & this.anIntArrayArray4438[i_9_][i_10_])
+                        == 0);
             }
         }
         return false;
     }
 
     final void method3496(int i, int i_16_, int i_17_) {
-        i -= ((Class361) this).anInt4441;
+        i -= this.anInt4441;
         if (i_17_ != 1)
             method3510(113, 9, 32, -49, -123, false, false);
         anInt4444++;
-        i_16_ -= ((Class361) this).anInt4453;
-        ((Class361) this).anIntArrayArray4438[i_16_][i]
-                = Class273.method2057((((Class361) this).anIntArrayArray4438[i_16_]
+        i_16_ -= this.anInt4453;
+        this.anIntArrayArray4438[i_16_][i]
+                = Class273.method2057((this.anIntArrayArray4438[i_16_]
                         [i]),
                 262144);
     }
@@ -470,9 +468,9 @@ final class Class361 {
             for (int i_32_ = ((i_30_ ^ 0xffffffff) < (i_28_ ^ 0xffffffff)
                     ? i_28_ : i_30_);
                  (i_31_ ^ 0xffffffff) > (i_32_ ^ 0xffffffff); i_31_++) {
-                if (((((Class361) this).anIntArrayArray4438
-                        [-((Class361) this).anInt4453 + (i_29_ - 1)]
-                        [i_31_ - ((Class361) this).anInt4441])
+                if (((this.anIntArrayArray4438
+                        [-this.anInt4453 + (i_29_ - 1)]
+                        [i_31_ - this.anInt4441])
                         & 0x8)
                         == 0)
                     return true;
@@ -483,9 +481,9 @@ final class Class361 {
             for (int i_34_ = ((i_28_ ^ 0xffffffff) <= (i_30_ ^ 0xffffffff)
                     ? i_30_ : i_28_);
                  (i_34_ ^ 0xffffffff) < (i_33_ ^ 0xffffffff); i_33_++) {
-                if (((((Class361) this).anIntArrayArray4438
-                        [-((Class361) this).anInt4453 + i_18_]
-                        [-((Class361) this).anInt4441 + i_33_])
+                if (((this.anIntArrayArray4438
+                        [-this.anInt4453 + i_18_]
+                        [-this.anInt4441 + i_33_])
                         & 0x80)
                         == 0)
                     return true;
@@ -495,9 +493,9 @@ final class Class361 {
                     = (i_22_ ^ 0xffffffff) < (i_18_ ^ 0xffffffff) ? i_22_ : i_18_;
             for (int i_36_ = i_27_ < i_29_ ? i_27_ : i_29_; i_36_ > i_35_;
                  i_35_++) {
-                if ((0x2 & (((Class361) this).anIntArrayArray4438
-                        [i_35_ + -((Class361) this).anInt4453]
-                        [-((Class361) this).anInt4441 + -1 + i_30_])
+                if ((0x2 & (this.anIntArrayArray4438
+                        [i_35_ + -this.anInt4453]
+                        [-this.anInt4441 + -1 + i_30_])
                         ^ 0xffffffff)
                         == -1)
                     return true;
@@ -508,9 +506,9 @@ final class Class361 {
                     = (i_18_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff) ? i_22_ : i_18_;
             for (int i_38_ = i_27_ < i_29_ ? i_27_ : i_29_; i_38_ > i_37_;
                  i_37_++) {
-                if (((((Class361) this).anIntArrayArray4438
-                        [i_37_ + -((Class361) this).anInt4453]
-                        [i_25_ - ((Class361) this).anInt4441]) & 0x20
+                if (((this.anIntArrayArray4438
+                        [i_37_ + -this.anInt4453]
+                        [i_25_ - this.anInt4441]) & 0x20
                         ^ 0xffffffff)
                         == -1)
                     return true;
@@ -588,21 +586,21 @@ final class Class361 {
                                  .method1990((byte) 126)) {
                         Class42 class42
                                 = (Class75.aClass153_1238.method1225
-                                (((Class348_Sub21) class348_sub21).anInt6847,
+                                (class348_sub21.anInt6847,
                                         (byte) 71));
                         if (Class60.method589(class42, -4)) {
                             if (Class348_Sub40_Sub30.anInt9399
-                                    == (((Class348_Sub21) class348_sub21)
+                                    == (class348_sub21
                                     .anInt6847)) {
                                 int i_50_
                                         = (i_39_
                                         + (i_42_
-                                        * (((Class348_Sub21) class348_sub21)
+                                        * (class348_sub21
                                         .anInt6852)
                                         / Class75.anInt1259));
                                 int i_51_
                                         = (((Class75.anInt1267
-                                        - (((Class348_Sub21) class348_sub21)
+                                        - (class348_sub21
                                         .anInt6851))
                                         * i_43_ / Class75.anInt1267)
                                         + i_41_);
@@ -612,17 +610,16 @@ final class Class361 {
                                                 | 0xffff00));
                             } else if ((Class34.anInt481 ^ 0xffffffff) != 0
                                     && ((Class34.anInt481 ^ 0xffffffff)
-                                    == (((Class42) class42).anInt596
+                                    == (class42.anInt596
                                     ^ 0xffffffff))) {
                                 int i_52_
                                         = (i_39_
-                                        - -((((Class348_Sub21) class348_sub21)
+                                        - -((class348_sub21
                                         .anInt6852)
                                         * i_42_ / Class75.anInt1259));
                                 int i_53_ = i_41_ - -(i_43_
                                         * (Class75.anInt1267
-                                        + -(((Class348_Sub21)
-                                        class348_sub21)
+                                        + -(class348_sub21
                                         .anInt6851))
                                         / Class75.anInt1267);
                                 var_ha.method3675(4, (byte) -125, i_52_ + -2,
@@ -647,12 +644,12 @@ final class Class361 {
     }
 
     final void method3499(byte i, int i_54_, int i_55_) {
-        i_55_ -= ((Class361) this).anInt4441;
-        i_54_ -= ((Class361) this).anInt4453;
+        i_55_ -= this.anInt4441;
+        i_54_ -= this.anInt4453;
         anInt4446++;
         if (i == -52)
-            ((Class361) this).anIntArrayArray4438[i_54_][i_55_]
-                    = Class139.method1166((((Class361) this).anIntArrayArray4438
+            this.anIntArrayArray4438[i_54_][i_55_]
+                    = Class139.method1166((this.anIntArrayArray4438
                             [i_54_][i_55_]),
                     -262145);
     }
@@ -662,29 +659,29 @@ final class Class361 {
         if (i != 700)
             method3509(120, true, false, 4, -12, 14, -33, -109);
         for (/**/;
-                 (((Class361) this).anInt4437 ^ 0xffffffff) < (i_56_ ^ 0xffffffff);
+                 (this.anInt4437 ^ 0xffffffff) < (i_56_ ^ 0xffffffff);
                  i_56_++) {
-            for (int i_57_ = 0; ((Class361) this).anInt4443 > i_57_; i_57_++) {
+            for (int i_57_ = 0; this.anInt4443 > i_57_; i_57_++) {
                 if (i_56_ != 0 && (i_57_ ^ 0xffffffff) != -1
-                        && i_56_ < ((Class361) this).anInt4437 + -5
-                        && ((-5 + ((Class361) this).anInt4443 ^ 0xffffffff)
+                        && i_56_ < this.anInt4437 + -5
+                        && ((-5 + this.anInt4443 ^ 0xffffffff)
                         < (i_57_ ^ 0xffffffff)))
-                    ((Class361) this).anIntArrayArray4438[i_56_][i_57_]
+                    this.anIntArrayArray4438[i_56_][i_57_]
                             = 2097152;
                 else
-                    ((Class361) this).anIntArrayArray4438[i_56_][i_57_] = -1;
+                    this.anIntArrayArray4438[i_56_][i_57_] = -1;
             }
         }
         anInt4451++;
     }
 
     final void method3501(byte i, int i_58_, int i_59_) {
-        i_59_ -= ((Class361) this).anInt4453;
+        i_59_ -= this.anInt4453;
         anInt4447++;
-        i_58_ -= ((Class361) this).anInt4441;
+        i_58_ -= this.anInt4441;
         int i_60_ = -79 % ((i - 66) / 39);
-        ((Class361) this).anIntArrayArray4438[i_59_][i_58_]
-                = Class139.method1166((((Class361) this).anIntArrayArray4438[i_59_]
+        this.anIntArrayArray4438[i_59_][i_58_]
+                = Class139.method1166((this.anIntArrayArray4438[i_59_]
                         [i_58_]),
                 -2097153);
     }
@@ -719,42 +716,40 @@ final class Class361 {
             return true;
         if ((i ^ 0xffffffff) == (-1 + i_71_ ^ 0xffffffff)
                 && (i_65_ ^ 0xffffffff) >= (i_70_ ^ 0xffffffff) && i_70_ <= i_74_
-                && ((((Class361) this).anIntArrayArray4438
-                [-((Class361) this).anInt4453 + i]
-                [-((Class361) this).anInt4441 + i_70_]) & 0x8
+                && ((this.anIntArrayArray4438
+                [-this.anInt4453 + i]
+                [-this.anInt4441 + i_70_]) & 0x8
                 ^ 0xffffffff) == -1
                 && (i_69_ & 0x8) == 0)
             return true;
         if (1 + i_73_ == i && (i_65_ ^ 0xffffffff) >= (i_70_ ^ 0xffffffff)
                 && (i_70_ ^ 0xffffffff) >= (i_74_ ^ 0xffffffff)
-                && (0x80 & (((Class361) this).anIntArrayArray4438
-                [-((Class361) this).anInt4453 + i]
-                [i_70_ - ((Class361) this).anInt4441])
+                && (0x80 & (this.anIntArrayArray4438
+                [-this.anInt4453 + i]
+                [i_70_ - this.anInt4441])
                 ^ 0xffffffff) == -1
                 && (0x2 & i_69_) == 0)
             return true;
         if (-1 + i_65_ == i_70_ && i >= i_71_ && i_73_ >= i
-                && ((((Class361) this).anIntArrayArray4438
-                [i + -((Class361) this).anInt4453]
-                [-((Class361) this).anInt4441 + i_70_])
+                && ((this.anIntArrayArray4438
+                [i + -this.anInt4453]
+                [-this.anInt4441 + i_70_])
                 & 0x2) == 0
                 && (i_69_ & 0x4) == 0)
             return true;
-        if (i_70_ == i_74_ - -1 && (i ^ 0xffffffff) <= (i_71_ ^ 0xffffffff)
+        return i_70_ == i_74_ - -1 && (i ^ 0xffffffff) <= (i_71_ ^ 0xffffffff)
                 && (i ^ 0xffffffff) >= (i_73_ ^ 0xffffffff)
-                && (0x20 & (((Class361) this).anIntArrayArray4438
-                [-((Class361) this).anInt4453 + i]
-                [i_70_ - ((Class361) this).anInt4441])) == 0
-                && (0x1 & i_69_ ^ 0xffffffff) == -1)
-            return true;
-        return false;
+                && (0x20 & (this.anIntArrayArray4438
+                [-this.anInt4453 + i]
+                [i_70_ - this.anInt4441])) == 0
+                && (0x1 & i_69_ ^ 0xffffffff) == -1;
     }
 
     final boolean method3504(int i, int i_75_, int i_76_, int i_77_, int i_78_,
                              int i_79_, int i_80_, int i_81_) {
         anInt4454++;
         if (i_79_ != 1)
-            ((Class361) this).anInt4443 = -59;
+            this.anInt4443 = -59;
         if ((i_81_ ^ 0xffffffff) != -2) {
             if (i_77_ <= i_76_
                     && (i_76_ ^ 0xffffffff) >= (-1 + i_81_ + i_77_ ^ 0xffffffff)
@@ -762,10 +757,10 @@ final class Class361 {
                 return true;
         } else if (i_77_ == i_76_ && (i ^ 0xffffffff) == (i_75_ ^ 0xffffffff))
             return true;
-        i_76_ -= ((Class361) this).anInt4453;
-        i_77_ -= ((Class361) this).anInt4453;
-        i -= ((Class361) this).anInt4441;
-        i_75_ -= ((Class361) this).anInt4441;
+        i_76_ -= this.anInt4453;
+        i_77_ -= this.anInt4453;
+        i -= this.anInt4441;
+        i_75_ -= this.anInt4441;
         if ((i_81_ ^ 0xffffffff) != -2) {
             int i_82_ = -1 + (i_81_ + i_77_);
             int i_83_ = i_75_ - (-i_81_ - -1);
@@ -780,7 +775,7 @@ final class Class361 {
                                         ^ 0xffffffff)
                                         && (i ^ 0xffffffff) <= (i_75_ ^ 0xffffffff)
                                         && i <= i_83_
-                                        && (0x80 & (((Class361) this)
+                                        && (0x80 & (this
                                         .anIntArrayArray4438[i_77_][i])
                                         ^ 0xffffffff) == -1)
                                     return true;
@@ -789,7 +784,7 @@ final class Class361 {
                                         && i_82_ >= i_76_
                                         && (i_75_ ^ 0xffffffff) == (i - -1
                                         ^ 0xffffffff)
-                                        && ((((Class361) this).anIntArrayArray4438
+                                        && ((this.anIntArrayArray4438
                                         [i_76_][i_75_]) & 0x20
                                         ^ 0xffffffff) == -1)
                                     return true;
@@ -797,13 +792,13 @@ final class Class361 {
                         } else {
                             if (-i_81_ + i_76_ == i_77_ && i >= i_75_
                                     && i_83_ >= i
-                                    && ((((Class361) this).anIntArrayArray4438
+                                    && ((this.anIntArrayArray4438
                                     [i_82_][i]) & 0x8
                                     ^ 0xffffffff) == -1)
                                 return true;
                             if ((i_77_ ^ 0xffffffff) >= (i_76_ ^ 0xffffffff)
                                     && i_76_ <= i_82_ && 1 + i == i_75_
-                                    && ((((Class361) this).anIntArrayArray4438
+                                    && ((this.anIntArrayArray4438
                                     [i_76_][i_75_]) & 0x20
                                     ^ 0xffffffff) == -1)
                                 return true;
@@ -813,12 +808,12 @@ final class Class361 {
                                 ^ 0xffffffff)
                                 && (i_75_ ^ 0xffffffff) >= (i ^ 0xffffffff)
                                 && (i_83_ ^ 0xffffffff) <= (i ^ 0xffffffff)
-                                && (((Class361) this).anIntArrayArray4438[i_82_][i]
+                                && (this.anIntArrayArray4438[i_82_][i]
                                 & 0x8) == 0)
                             return true;
                         if (i_76_ >= i_77_ && i_76_ <= i_82_
                                 && i_75_ == -i_81_ + i
-                                && ((((Class361) this).anIntArrayArray4438[i_76_]
+                                && ((this.anIntArrayArray4438[i_76_]
                                 [i_83_])
                                 & 0x2) == 0)
                             return true;
@@ -828,13 +823,13 @@ final class Class361 {
                             && i_75_ <= i
                             && (i_83_ ^ 0xffffffff) <= (i ^ 0xffffffff)
                             && ((0x80
-                            & ((Class361) this).anIntArrayArray4438[i_77_][i])
+                            & this.anIntArrayArray4438[i_77_][i])
                             == 0))
                         return true;
                     if ((i_77_ ^ 0xffffffff) >= (i_76_ ^ 0xffffffff)
                             && i_76_ <= i_82_
                             && (i_75_ ^ 0xffffffff) == (-i_81_ + i ^ 0xffffffff)
-                            && ((((Class361) this).anIntArrayArray4438[i_76_]
+                            && ((this.anIntArrayArray4438[i_76_]
                             [i_83_]) & 0x2
                             ^ 0xffffffff) == -1)
                         return true;
@@ -844,25 +839,24 @@ final class Class361 {
                 if ((i_77_ ^ 0xffffffff) >= (i_76_ ^ 0xffffffff)
                         && i_82_ >= i_76_ && 1 + i == i_75_
                         && ((0x20
-                        & ((Class361) this).anIntArrayArray4438[i_76_][i_75_])
+                        & this.anIntArrayArray4438[i_76_][i_75_])
                         ^ 0xffffffff) == -1)
                     return true;
                 if (i_76_ >= i_77_ && i_76_ <= i_82_ && i_75_ == -i_81_ + i
                         && ((0x2
-                        & ((Class361) this).anIntArrayArray4438[i_76_][i_83_])
+                        & this.anIntArrayArray4438[i_76_][i_83_])
                         ^ 0xffffffff) == -1)
                     return true;
                 if (i_77_ == i_76_ - i_81_
                         && (i ^ 0xffffffff) <= (i_75_ ^ 0xffffffff) && i <= i_83_
-                        && ((0x8 & ((Class361) this).anIntArrayArray4438[i_82_][i])
+                        && ((0x8 & this.anIntArrayArray4438[i_82_][i])
                         == 0))
                     return true;
-                if (i_77_ == 1 + i_76_ && i_75_ <= i
+                return i_77_ == 1 + i_76_ && i_75_ <= i
                         && (i ^ 0xffffffff) >= (i_83_ ^ 0xffffffff)
                         && ((0x80
-                        & ((Class361) this).anIntArrayArray4438[i_77_][i])
-                        == 0))
-                    return true;
+                        & this.anIntArrayArray4438[i_77_][i])
+                        == 0);
             }
         } else {
             if ((i_78_ ^ 0xffffffff) == -7 || (i_78_ ^ 0xffffffff) == -8) {
@@ -871,47 +865,47 @@ final class Class361 {
                 if (i_80_ == 0) {
                     if ((1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
                             && i_75_ == i
-                            && (0x80 & (((Class361) this).anIntArrayArray4438
+                            && (0x80 & (this.anIntArrayArray4438
                             [i_77_][i_75_])
                             ^ 0xffffffff) == -1)
                         return true;
                     if ((i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
                             && i_75_ == -1 + i
-                            && (0x2 & (((Class361) this).anIntArrayArray4438[i_77_]
+                            && (0x2 & (this.anIntArrayArray4438[i_77_]
                             [i_75_])) == 0)
                         return true;
                 } else if ((i_80_ ^ 0xffffffff) == -2) {
                     if (i_76_ + -1 == i_77_ && i == i_75_
-                            && (((Class361) this).anIntArrayArray4438[i_77_][i_75_]
+                            && (this.anIntArrayArray4438[i_77_][i_75_]
                             & 0x8) == 0)
                         return true;
                     if ((i_77_ ^ 0xffffffff) == (i_76_ ^ 0xffffffff)
                             && i - 1 == i_75_
-                            && ((((Class361) this).anIntArrayArray4438[i_77_]
+                            && ((this.anIntArrayArray4438[i_77_]
                             [i_75_]) & 0x2
                             ^ 0xffffffff) == -1)
                         return true;
                 } else if ((i_80_ ^ 0xffffffff) == -3) {
                     if ((-1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
                             && (i_75_ ^ 0xffffffff) == (i ^ 0xffffffff)
-                            && (0x8 & (((Class361) this).anIntArrayArray4438[i_77_]
+                            && (0x8 & (this.anIntArrayArray4438[i_77_]
                             [i_75_])
                             ^ 0xffffffff) == -1)
                         return true;
                     if (i_76_ == i_77_ && i + 1 == i_75_
-                            && ((((Class361) this).anIntArrayArray4438[i_77_]
+                            && ((this.anIntArrayArray4438[i_77_]
                             [i_75_]) & 0x20
                             ^ 0xffffffff) == -1)
                         return true;
                 } else if (i_80_ == 3) {
                     if (i_76_ - -1 == i_77_
                             && (i ^ 0xffffffff) == (i_75_ ^ 0xffffffff)
-                            && (((Class361) this).anIntArrayArray4438[i_77_][i_75_]
+                            && (this.anIntArrayArray4438[i_77_][i_75_]
                             & 0x80) == 0)
                         return true;
                     if (i_77_ == i_76_
                             && (i_75_ ^ 0xffffffff) == (i + 1 ^ 0xffffffff)
-                            && (0x20 & (((Class361) this).anIntArrayArray4438
+                            && (0x20 & (this.anIntArrayArray4438
                             [i_77_][i_75_])) == 0)
                         return true;
                 }
@@ -919,23 +913,22 @@ final class Class361 {
             if (i_78_ == 8) {
                 if ((i_77_ ^ 0xffffffff) == (i_76_ ^ 0xffffffff)
                         && (i_75_ ^ 0xffffffff) == (1 + i ^ 0xffffffff)
-                        && (((Class361) this).anIntArrayArray4438[i_77_][i_75_]
+                        && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x20) == 0)
                     return true;
                 if ((i_77_ ^ 0xffffffff) == (i_76_ ^ 0xffffffff)
                         && i - 1 == i_75_
-                        && (((Class361) this).anIntArrayArray4438[i_77_][i_75_]
+                        && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x2) == 0)
                     return true;
                 if (i_77_ == i_76_ + -1 && i_75_ == i
-                        && (((Class361) this).anIntArrayArray4438[i_77_][i_75_]
+                        && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x8) == 0)
                     return true;
-                if ((1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
+                return (1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
                         && i_75_ == i
-                        && (((Class361) this).anIntArrayArray4438[i_77_][i_75_]
-                        & 0x80) == 0)
-                    return true;
+                        && (this.anIntArrayArray4438[i_77_][i_75_]
+                        & 0x80) == 0;
             }
         }
         return false;
@@ -944,23 +937,23 @@ final class Class361 {
     final void method3505(boolean bool, int i, int i_84_, boolean bool_85_,
                           int i_86_, boolean bool_87_, int i_88_) {
         if (bool_85_ != true)
-            ((Class361) this).anInt4453 = 116;
+            this.anInt4453 = 116;
         anInt4434++;
         int i_89_ = 256;
         if (bool_87_)
             i_89_ |= 0x20000;
-        i_86_ -= ((Class361) this).anInt4453;
-        i_84_ -= ((Class361) this).anInt4441;
+        i_86_ -= this.anInt4453;
+        i_84_ -= this.anInt4441;
         if (bool)
             i_89_ |= 0x40000000;
         for (int i_90_ = i_86_; i_86_ + i > i_90_; i_90_++) {
             if ((i_90_ ^ 0xffffffff) <= -1
-                    && ((((Class361) this).anInt4437 ^ 0xffffffff)
+                    && ((this.anInt4437 ^ 0xffffffff)
                     < (i_90_ ^ 0xffffffff))) {
                 for (int i_91_ = i_84_;
                      (i_84_ + i_88_ ^ 0xffffffff) < (i_91_ ^ 0xffffffff);
                      i_91_++) {
-                    if (i_91_ >= 0 && ((Class361) this).anInt4443 > i_91_)
+                    if (i_91_ >= 0 && this.anInt4443 > i_91_)
                         method3494(i_90_, i_89_, i_91_, -6496);
                 }
             }
@@ -970,9 +963,9 @@ final class Class361 {
     final void method3506(boolean bool, int i, int i_92_, int i_93_, int i_94_,
                           boolean bool_95_, int i_96_) {
         anInt4435++;
-        i_92_ -= ((Class361) this).anInt4453;
+        i_92_ -= this.anInt4453;
         if (i_96_ == 29216) {
-            i_94_ -= ((Class361) this).anInt4441;
+            i_94_ -= this.anInt4441;
             if ((i_93_ ^ 0xffffffff) == -1) {
                 if (i == 0) {
                     method3493(128, i_96_ ^ ~0x725a, i_92_, i_94_);
@@ -1158,12 +1151,12 @@ final class Class361 {
 
     final void method3507(int i, int i_97_, byte i_98_) {
         if (i_98_ > -32)
-            ((Class361) this).anInt4437 = 85;
-        i -= ((Class361) this).anInt4441;
+            this.anInt4437 = 85;
+        i -= this.anInt4441;
         anInt4431++;
-        i_97_ -= ((Class361) this).anInt4453;
-        ((Class361) this).anIntArrayArray4438[i_97_][i]
-                = Class273.method2057((((Class361) this).anIntArrayArray4438[i_97_]
+        i_97_ -= this.anInt4453;
+        this.anIntArrayArray4438[i_97_][i]
+                = Class273.method2057((this.anIntArrayArray4438[i_97_]
                         [i]),
                 2097152);
     }
@@ -1181,8 +1174,8 @@ final class Class361 {
             int i_105_ = 256;
             if (bool_99_)
                 i_105_ |= 0x20000;
-            i_100_ -= ((Class361) this).anInt4453;
-            i_101_ -= ((Class361) this).anInt4441;
+            i_100_ -= this.anInt4453;
+            i_101_ -= this.anInt4441;
             if (bool)
                 i_105_ |= 0x40000000;
             if (i == 1 || i == 3) {
@@ -1194,13 +1187,13 @@ final class Class361 {
                  (i_104_ + i_100_ ^ 0xffffffff) < (i_107_ ^ 0xffffffff);
                  i_107_++) {
                 if ((i_107_ ^ 0xffffffff) <= -1
-                        && i_107_ < ((Class361) this).anInt4437) {
+                        && i_107_ < this.anInt4437) {
                     for (int i_108_ = i_101_;
                          ((i_108_ ^ 0xffffffff)
                                  > (i_101_ + i_102_ ^ 0xffffffff));
                          i_108_++) {
                         if (i_108_ >= 0
-                                && ((Class361) this).anInt4443 > i_108_)
+                                && this.anInt4443 > i_108_)
                             method3493(i_105_, -122, i_107_, i_108_);
                     }
                 }
@@ -1212,8 +1205,8 @@ final class Class361 {
                           int i_112_, boolean bool, boolean bool_113_) {
         anInt4445++;
         int i_114_ = 49 / ((i_110_ - 6) / 46);
-        i -= ((Class361) this).anInt4441;
-        i_109_ -= ((Class361) this).anInt4453;
+        i -= this.anInt4441;
+        i_109_ -= this.anInt4453;
         if (i_111_ == 0) {
             if ((i_112_ ^ 0xffffffff) == -1) {
                 method3494(i_109_, 128, i, -6496);

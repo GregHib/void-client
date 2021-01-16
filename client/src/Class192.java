@@ -26,7 +26,7 @@ final class Class192 {
             Class318_Sub1_Sub3_Sub4.method2461(class318_sub6, true);
         int i_0_;
         int i_1_;
-        if (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if (Class316.aClass348_Sub51_3959
                 .aClass239_Sub27_7261.method1840(-32350)
                 != 1)
             i_0_ = i_1_ = Class167.anInt2204;
@@ -47,32 +47,28 @@ final class Class192 {
 
     final void method1435(byte i) {
         if (i >= -6)
-            ((Class192) this).aBoolean2577 = true;
+            this.aBoolean2577 = true;
         anInt2575++;
-        if (((Class192) this).anInterface5_Impl2_2576 != null)
-            ((Class192) this).anInterface5_Impl2_2576.method21(23315);
-        ((Class192) this).aBoolean2577 = false;
+        if (this.anInterface5_Impl2_2576 != null)
+            this.anInterface5_Impl2_2576.method21(23315);
+        this.aBoolean2577 = false;
     }
 
     static final boolean method1436(int i, int i_3_) {
         int i_4_ = 22 % ((i - 16) / 35);
         anInt2582++;
-        if ((i_3_ & -i_3_ ^ 0xffffffff) != (i_3_ ^ 0xffffffff))
-            return false;
-        return true;
+        return (i_3_ & -i_3_ ^ 0xffffffff) == (i_3_ ^ 0xffffffff);
     }
 
     Class192(boolean bool) {
-        ((Class192) this).aBoolean2574 = bool;
+        this.aBoolean2574 = bool;
     }
 
     final boolean method1437(byte i) {
         anInt2580++;
         if (i != -100)
-            ((Class192) this).anInterface5_Impl2_2572 = null;
-        if (!((Class192) this).aBoolean2577 || ((Class192) this).aBoolean2574)
-            return false;
-        return true;
+            this.anInterface5_Impl2_2572 = null;
+        return this.aBoolean2577 && !this.aBoolean2574;
     }
 
     public static void method1438(int i) {

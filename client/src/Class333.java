@@ -39,20 +39,20 @@ final class Class333 {
         anInt4149++;
         int i_4_ = -49 / ((i - 44) / 40);
         if (anInt4148 > 0
-                && (((Class356) aClass356_4146).aClass348Array4374[-1 + anInt4148]
+                && (aClass356_4146.aClass348Array4374[-1 + anInt4148]
                 != aClass348_4150)) {
             Class348 class348 = aClass348_4150;
-            aClass348_4150 = ((Class348) class348).aClass348_4294;
+            aClass348_4150 = class348.aClass348_4294;
             return class348;
         }
-        while (((Class356) aClass356_4146).anInt4377 > anInt4148) {
+        while (aClass356_4146.anInt4377 > anInt4148) {
             Class348 class348
-                    = (((Class348) (((Class356) aClass356_4146).aClass348Array4374
-                    [anInt4148++]))
+                    = (aClass356_4146.aClass348Array4374
+                    [anInt4148++]
                     .aClass348_4294);
-            if (((Class356) aClass356_4146).aClass348Array4374[anInt4148 + -1]
+            if (aClass356_4146.aClass348Array4374[anInt4148 + -1]
                     != class348) {
-                aClass348_4150 = ((Class348) class348).aClass348_4294;
+                aClass348_4150 = class348.aClass348_4294;
                 return class348;
             }
         }

@@ -31,7 +31,7 @@ final class Class348_Sub50 extends Class348 {
     }
 
     Class348_Sub50(String string) {
-        ((Class348_Sub50) this).aString7211 = string;
+        this.aString7211 = string;
     }
 
     static final int method3420(int i) {

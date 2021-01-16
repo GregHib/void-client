@@ -4,7 +4,7 @@
 
 final class Class171 {
     static int anInt2267;
-    private ha_Sub2 aHa_Sub2_2268;
+    private final ha_Sub2 aHa_Sub2_2268;
     static short aShort2269 = 32767;
     int anInt2270;
     static int anInt2271;
@@ -31,8 +31,8 @@ final class Class171 {
             if (!r.aBooleanArray9718[i]) {
                 Class211 class211 = Class239_Sub14.aClass211Array5993[i];
                 Class348_Sub1 class348_sub1
-                        = ((Class211) class211).aClass348_Sub1_2745;
-                int i_3_ = ((Class211) class211).anInt2731;
+                        = class211.aClass348_Sub1_2745;
+                int i_3_ = class211.anInt2731;
                 int i_4_ = (class348_sub1.method2723(-1)
                         - Class348_Sub23_Sub2.anInt9037);
                 int i_5_ = 1 + (2 * i_4_ >> Class362.anInt4459);
@@ -51,7 +51,7 @@ final class Class171 {
                 if (i_9_ >= Class348_Sub41.anInt7054)
                     i_9_ = Class348_Sub41.anInt7054 - 1;
                 for (int i_10_ = i_8_; i_10_ <= i_9_; i_10_++) {
-                    int i_11_ = ((Class211) class211).aShortArray2742[i_6_];
+                    int i_11_ = class211.aShortArray2742[i_6_];
                     int i_12_ = i_11_ >>> 8;
                     int i_13_ = i_6_ * i_5_ + i_12_;
                     int i_14_ = i_7_ + (i_11_ >>> 8);
@@ -71,22 +71,22 @@ final class Class171 {
                                                 : (aClass2276
                                                 = method1324("Class318_Sub1_Sub3")))));
                         if (class318_sub1_sub3 != null
-                                && (((Class318_Sub1_Sub3) class318_sub1_sub3)
+                                && (class318_sub1_sub3
                                 .aByte8745) != 0) {
-                            if ((((Class318_Sub1_Sub3) class318_sub1_sub3)
+                            if ((class318_sub1_sub3
                                     .aByte8745)
                                     == 1) {
                                 boolean bool = i_16_ - 1 >= i_14_;
                                 boolean bool_18_ = i_16_ + 1 <= i_15_;
                                 if (!bool && i_10_ + 1 <= i_9_) {
-                                    int i_19_ = (((Class211) class211)
+                                    int i_19_ = (class211
                                             .aShortArray2742[i_6_ + 1]);
                                     int i_20_ = i_7_ + (i_19_ >>> 8);
                                     int i_21_ = i_20_ + (i_19_ & 0xff);
                                     bool = i_16_ > i_20_ && i_16_ < i_21_;
                                 }
                                 if (!bool_18_ && i_10_ - 1 >= i_8_) {
-                                    int i_22_ = (((Class211) class211)
+                                    int i_22_ = (class211
                                             .aShortArray2742[i_6_ - 1]);
                                     int i_23_ = i_7_ + (i_22_ >>> 8);
                                     int i_24_ = i_23_ + (i_22_ & 0xff);
@@ -100,14 +100,14 @@ final class Class171 {
                                 boolean bool = i_16_ - 1 >= i_14_;
                                 boolean bool_25_ = i_16_ + 1 <= i_15_;
                                 if (!bool && i_10_ - 1 >= i_8_) {
-                                    int i_26_ = (((Class211) class211)
+                                    int i_26_ = (class211
                                             .aShortArray2742[i_6_ - 1]);
                                     int i_27_ = i_7_ + (i_26_ >>> 8);
                                     int i_28_ = i_27_ + (i_26_ & 0xff);
                                     bool = i_16_ > i_27_ && i_16_ < i_28_;
                                 }
                                 if (!bool_25_ && i_10_ + 1 <= i_9_) {
-                                    int i_29_ = (((Class211) class211)
+                                    int i_29_ = (class211
                                             .aShortArray2742[i_6_ + 1]);
                                     int i_30_ = i_7_ + (i_29_ >>> 8);
                                     int i_31_ = i_30_ + (i_29_ & 0xff);
@@ -130,7 +130,7 @@ final class Class171 {
     }
 
     protected final void finalize() throws Throwable {
-        aHa_Sub2_2268.method3765((byte) 65, ((Class171) this).anInt2270);
+        aHa_Sub2_2268.method3765((byte) 65, this.anInt2270);
         anInt2274++;
         super.finalize();
     }
@@ -206,7 +206,7 @@ final class Class171 {
 
     Class171(ha_Sub2 var_ha_Sub2, int i, int i_45_) {
         aHa_Sub2_2268 = var_ha_Sub2;
-        ((Class171) this).anInt2270 = i_45_;
+        this.anInt2270 = i_45_;
     }
 
     /*synthetic*/

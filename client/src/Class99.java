@@ -50,12 +50,12 @@ final class Class99 {
             int i_12_ = 0;
             for (Class348_Sub42_Sub12 class348_sub42_sub12
                  = ((Class348_Sub42_Sub12)
-                    ((Class348_Sub42_Sub13) class348_sub42_sub13)
+                    class348_sub42_sub13
                             .aClass107_9621.method1011(-59));
                  class348_sub42_sub12 != null;
                  class348_sub42_sub12
                          = ((Class348_Sub42_Sub12)
-                         ((Class348_Sub42_Sub13) class348_sub42_sub13)
+                         class348_sub42_sub13
                                  .aClass107_9621.method1003((byte) 108))) {
                 int i_13_
                         = OutputStream_Sub2.method138(class348_sub42_sub12, false);
@@ -65,9 +65,9 @@ final class Class99 {
             i_12_ += 8;
             if (bool == true) {
                 Class177.anInt4669
-                        = 16 * (((Class348_Sub42_Sub13) class348_sub42_sub13)
+                        = 16 * (class348_sub42_sub13
                         .anInt9615) + (!Class71.aBoolean1211 ? 22 : 26);
-                int i_14_ = 21 + (((Class348_Sub42_Sub13) class348_sub42_sub13)
+                int i_14_ = 21 + (class348_sub42_sub13
                         .anInt9615) * 16;
                 int i_15_ = Class63.anInt1117 + Class135_Sub1.anInt4717;
                 if (i_12_ + i_15_ > Class321.anInt4017)

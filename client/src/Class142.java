@@ -7,11 +7,11 @@ import jagdx.IDirect3DIndexBuffer;
 import jagdx.ue;
 
 final class Class142 implements Interface5_Impl2 {
-    private Class378 aClass378_8515;
+    private final Class378 aClass378_8515;
     private int anInt8516;
     IDirect3DIndexBuffer anIDirect3DIndexBuffer8517;
     private Class68 aClass68_8518;
-    private boolean aBoolean8519;
+    private final boolean aBoolean8519;
     private boolean aBoolean8520 = false;
     private int anInt8521;
 
@@ -25,7 +25,7 @@ final class Class142 implements Interface5_Impl2 {
         if (i != -23)
             anInt8516 = 118;
         if (aBoolean8520
-                && ue.a(((Class142) this).anIDirect3DIndexBuffer8517.Unlock(),
+                && ue.a(this.anIDirect3DIndexBuffer8517.Unlock(),
                 false)) {
             aBoolean8520 = false;
             return true;
@@ -36,7 +36,7 @@ final class Class142 implements Interface5_Impl2 {
     public final void method23(int i, int i_0_) {
         if (i != 15959)
             anInt8516 = -78;
-        anInt8516 = ((Class68) aClass68_8518).anInt1178 * i_0_;
+        anInt8516 = aClass68_8518.anInt1178 * i_0_;
         if (anInt8521 < anInt8516) {
             int i_1_ = 8;
             int i_2_;
@@ -45,30 +45,30 @@ final class Class142 implements Interface5_Impl2 {
                 i_2_ = 0;
             } else
                 i_2_ = 1;
-            if (null != ((Class142) this).anIDirect3DIndexBuffer8517)
-                ((Class142) this).anIDirect3DIndexBuffer8517.a(9275);
-            ((Class142) this).anIDirect3DIndexBuffer8517
-                    = (((Class378) aClass378_8515).anIDirect3DDevice9810.a
+            if (null != this.anIDirect3DIndexBuffer8517)
+                this.anIDirect3DIndexBuffer8517.a(9275);
+            this.anIDirect3DIndexBuffer8517
+                    = (aClass378_8515.anIDirect3DDevice9810.a
                     (anInt8516, i_1_,
                             aClass68_8518 != Class68.aClass68_1184 ? 102 : 101, i_2_,
-                            ((Class142) this).anIDirect3DIndexBuffer8517));
+                            this.anIDirect3DIndexBuffer8517));
             anInt8521 = anInt8516;
         }
     }
 
     public final Buffer method24(boolean bool, boolean bool_3_) {
-        if (null == ((Class142) this).anIDirect3DIndexBuffer8517)
+        if (null == this.anIDirect3DIndexBuffer8517)
             return null;
         if (bool_3_)
             method23(-111, 54);
         bool &= aBoolean8519;
         if (!aBoolean8520
-                && ue.a((((Class142) this).anIDirect3DIndexBuffer8517.Lock
+                && ue.a((this.anIDirect3DIndexBuffer8517.Lock
                         (0, anInt8521, !bool ? 0 : 8192,
-                                ((Class378) aClass378_8515).aGeometryBuffer9811)),
+                                aClass378_8515.aGeometryBuffer9811)),
                 false)) {
             aBoolean8520 = true;
-            return ((Class378) aClass378_8515).aGeometryBuffer9811;
+            return aClass378_8515.aGeometryBuffer9811;
         }
         return null;
     }
@@ -80,9 +80,9 @@ final class Class142 implements Interface5_Impl2 {
     }
 
     public final void method21(int i) {
-        if (null != ((Class142) this).anIDirect3DIndexBuffer8517) {
-            ((Class142) this).anIDirect3DIndexBuffer8517.a(9275);
-            ((Class142) this).anIDirect3DIndexBuffer8517 = null;
+        if (null != this.anIDirect3DIndexBuffer8517) {
+            this.anIDirect3DIndexBuffer8517.a(9275);
+            this.anIDirect3DIndexBuffer8517 = null;
         }
         if (i != 23315)
             method23(65, -35);

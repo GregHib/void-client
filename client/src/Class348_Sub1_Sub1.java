@@ -19,11 +19,11 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
     }
 
     final void method2725(int i, byte i_4_, int i_5_, int i_6_) {
-        ((Class348_Sub1) this).anInt6553 = i_5_;
-        ((Class348_Sub1) this).anInt6548 = i_6_;
+        this.anInt6553 = i_5_;
+        this.anInt6548 = i_6_;
         if (i_4_ == 70) {
             anInt8809++;
-            ((Class348_Sub1) this).anInt6562 = i;
+            this.anInt6562 = i;
         }
     }
 
@@ -70,7 +70,7 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                     class237_sub1.method1691(i_19_, Class348_Sub8.aHa6654,
                             class348_sub49, is_11_, i_18_,
                             (byte) -126);
-                    if (!((Class237) class237_sub1).aBoolean3109
+                    if (!class237_sub1.aBoolean3109
                             && i_16_ == ha.anInt4581 / 8
                             && ((Class327.anInt4095 / 8 ^ 0xffffffff)
                             == (i_17_ ^ 0xffffffff))
@@ -120,7 +120,7 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
     }
 
     final void method2716(int i, float f) {
-        ((Class348_Sub1) this).aFloat6550 = f;
+        this.aFloat6550 = f;
         if (i != -1)
             aClass60_8807 = null;
         anInt8803++;

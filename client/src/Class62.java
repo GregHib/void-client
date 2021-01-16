@@ -35,12 +35,12 @@ final class Class62 {
              class348_sub15 != null;
              class348_sub15
                      = (Class348_Sub15) Class27.aClass356_389.method3482(0)) {
-            if (!((Class348_Sub15) class348_sub15).aBoolean6772)
+            if (!class348_sub15.aBoolean6772)
                 Class64_Sub3.method690((byte) -94,
-                        (((Class348_Sub15) class348_sub15)
+                        (class348_sub15
                                 .anInt6773));
             else
-                ((Class348_Sub15) class348_sub15).aBoolean6772 = false;
+                class348_sub15.aBoolean6772 = false;
         }
     }
 
@@ -76,14 +76,13 @@ final class Class62 {
             Class133.method1140(120);
             i_3_ = 4;
         }
-        if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if ((Class316.aClass348_Sub51_3959
                 .aClass239_Sub25_7271.method1829(-32350)
                 ^ 0xffffffff)
                 != (i_1_ ^ 0xffffffff)) {
             Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                    (((Class348_Sub51)
-                            (Class316
-                                    .aClass348_Sub51_3959))
+                    (Class316
+                            .aClass348_Sub51_3959
                             .aClass239_Sub25_7251),
                     i_1_);
             Class367_Sub10.method3553(false, (byte) 122, i_1_);

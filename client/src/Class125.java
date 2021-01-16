@@ -74,17 +74,17 @@ final class Class125 implements Interface12 {
              int i_14_, int i_15_, int i_16_, int i_17_, int i_18_,
              boolean bool) {
         try {
-            ((Class125) this).aBoolean4914 = bool;
-            ((Class125) this).anInt4923 = i_15_;
-            ((Class125) this).anInt4918 = i;
-            ((Class125) this).anInt4924 = i_12_;
-            ((Class125) this).anInt4913 = i_16_;
-            ((Class125) this).anInt4929 = i_14_;
-            ((Class125) this).anInt4920 = i_13_;
-            ((Class125) this).anInt4917 = i_18_;
-            ((Class125) this).aClass341_4925 = class341;
-            ((Class125) this).anInt4928 = i_17_;
-            ((Class125) this).aClass221_4922 = class221;
+            this.aBoolean4914 = bool;
+            this.anInt4923 = i_15_;
+            this.anInt4918 = i;
+            this.anInt4924 = i_12_;
+            this.anInt4913 = i_16_;
+            this.anInt4929 = i_14_;
+            this.anInt4920 = i_13_;
+            this.anInt4917 = i_18_;
+            this.aClass341_4925 = class341;
+            this.anInt4928 = i_17_;
+            this.aClass221_4922 = class221;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("nha.<init>(" + i + ','

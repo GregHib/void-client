@@ -18,8 +18,8 @@ abstract class Class272 {
         anInt3472++;
         if (i <= 84)
             anIntArray3475 = null;
-        return new Socket(((Class272) this).aString3476,
-                ((Class272) this).anInt3470);
+        return new Socket(this.aString3476,
+                this.anInt3470);
     }
 
     public static void method2048(int i) {

@@ -25,40 +25,38 @@ final class Class239_Sub6 extends Class239 {
         anInt5896++;
         if (i != -32350)
             return -65;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     final boolean method1744(int i) {
         if (i <= 85)
             method1743(-113);
         anInt5903++;
-        int i_0_ = ((Class239) this).aClass348_Sub51_3136.method3428
+        int i_0_ = this.aClass348_Sub51_3136.method3428
                 ((byte) -93).method1458(-23688);
-        if ((i_0_ ^ 0xffffffff) > -97)
-            return false;
-        return true;
+        return (i_0_ ^ 0xffffffff) <= -97;
     }
 
     final void method1716(boolean bool) {
         anInt5897++;
-        int i = ((Class239) this).aClass348_Sub51_3136.method3428
+        int i = this.aClass348_Sub51_3136.method3428
                 ((byte) -105).method1458(-23688);
         if ((i ^ 0xffffffff) > -97)
-            ((Class239) this).anInt3138 = 0;
+            this.anInt3138 = 0;
         if (bool != false)
             aClass355_5900 = null;
-        if (((Class239) this).anInt3138 > 1 && (i ^ 0xffffffff) > -129)
-            ((Class239) this).anInt3138 = 1;
-        if (((Class239) this).anInt3138 > 2 && i < 192)
-            ((Class239) this).anInt3138 = 2;
-        if (((Class239) this).anInt3138 < 0
-                || (((Class239) this).anInt3138 ^ 0xffffffff) < -4)
-            ((Class239) this).anInt3138 = method1710(20014);
+        if (this.anInt3138 > 1 && (i ^ 0xffffffff) > -129)
+            this.anInt3138 = 1;
+        if (this.anInt3138 > 2 && i < 192)
+            this.anInt3138 = 2;
+        if (this.anInt3138 < 0
+                || (this.anInt3138 ^ 0xffffffff) < -4)
+            this.anInt3138 = method1710(20014);
     }
 
     final int method1714(int i, int i_1_) {
         anInt5899++;
-        int i_2_ = ((Class239) this).aClass348_Sub51_3136.method3428
+        int i_2_ = this.aClass348_Sub51_3136.method3428
                 ((byte) -104).method1458(i ^ ~0x5c84);
         if (i_2_ < 96)
             return 3;
@@ -72,7 +70,7 @@ final class Class239_Sub6 extends Class239 {
     final void method1712(int i, int i_3_) {
         int i_4_ = -32 / ((82 - i) / 35);
         anInt5901++;
-        ((Class239) this).anInt3138 = i_3_;
+        this.anInt3138 = i_3_;
     }
 
     static final int method1745(String string, int i) {

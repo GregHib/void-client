@@ -28,7 +28,7 @@ final class Class320 {
                     Class46 class46
                             = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_]
                             = new Class46());
-                    ((Class46) class46).anInt830 = i_2_ + (i << 1180385680);
+                    class46.anInt830 = i_2_ + (i << 1180385680);
                     if ((is[0] ^ 0xffffffff) != 0)
                         throw new IllegalStateException("if1");
                     class46.method433(new Class348_Sub49(is), true);

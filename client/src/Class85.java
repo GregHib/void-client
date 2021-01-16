@@ -7,17 +7,17 @@ final class Class85 {
     static int anInt1462;
     private int anInt1463;
     static int anInt1464;
-    private byte[] aByteArray1465 = new byte[32];
+    private final byte[] aByteArray1465 = new byte[32];
     static int anInt1466;
     static int anInt1467;
     private int anInt1468;
-    private long[] aLongArray1469;
+    private final long[] aLongArray1469;
     static int anInt1470;
-    private long[] aLongArray1471 = new long[8];
-    private long[] aLongArray1472;
-    private long[] aLongArray1473;
-    private long[] aLongArray1474;
-    private byte[] aByteArray1475;
+    private final long[] aLongArray1471 = new long[8];
+    private final long[] aLongArray1472;
+    private final long[] aLongArray1473;
+    private final long[] aLongArray1474;
+    private final byte[] aByteArray1475;
     static int anInt1476;
 
     private final void method827(int i) {
@@ -29,7 +29,7 @@ final class Class85 {
                     = (Class105_Sub2.method993
                     ((Class105_Sub2.method993
                                     ((Class348_Sub8
-                                                    .method2777(255L, (long) aByteArray1475[i_1_ + 6])
+                                                    .method2777(255L, aByteArray1475[i_1_ + 6])
                                                     << 487716296),
                                             (Class105_Sub2.method993
                                                     (Class348_Sub8.method2777(((long) (aByteArray1475
@@ -55,11 +55,11 @@ final class Class85 {
                                                                                                                             [i_1_ + 2])
                                                                                                                             << 1090491688),
                                                                                                                     255L << 2085795816))))),
-                                                                            Class348_Sub8.method2777((long) (aByteArray1475
-                                                                                            [4 + i_1_]),
+                                                                            Class348_Sub8.method2777(aByteArray1475
+                                                                                            [4 + i_1_],
                                                                                     255L) << 486892568)))))),
                             Class348_Sub8
-                                    .method2777(255L, (long) aByteArray1475[i_1_ - -7])));
+                                    .method2777(255L, aByteArray1475[i_1_ - -7])));
             i_1_ += 8;
         }
         for (int i_2_ = 0; i_2_ < 8; i_2_++)
@@ -242,7 +242,7 @@ final class Class85 {
                 i_37_ = 0;
             if ((l + (long) i_31_ ^ 0xffffffffffffffffL) <= -9L) {
                 anInt1463 += 8 - i_31_;
-                l -= (long) (-i_31_ + 8);
+                l -= -i_31_ + 8;
                 anInt1468++;
                 if (anInt1463 == 512) {
                     method827(0);

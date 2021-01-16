@@ -3,25 +3,25 @@
  */
 
 final class Class299_Sub1_Sub1 extends Class299_Sub1 {
-    private int anInt8686;
+    private final int anInt8686;
     static int anInt8687;
     private Class258_Sub2 aClass258_Sub2_8688;
-    private int anInt8689;
-    private int anInt8690;
-    private int anInt8691;
+    private final int anInt8689;
+    private final int anInt8690;
+    private final int anInt8691;
     static int anInt8692;
-    private ha_Sub2 aHa_Sub2_8693;
+    private final ha_Sub2 aHa_Sub2_8693;
     static long aLong8694;
-    private int anInt8695;
+    private final int anInt8695;
     static float aFloat8696;
-    private int anInt8697;
+    private final int anInt8697;
 
     final Class258_Sub2 method2256(byte i) {
         anInt8692++;
         if (i != -121)
             method2256((byte) 33);
         if (aClass258_Sub2_8688 == null) {
-            d var_d = ((ha) aHa_Sub2_8693).aD4579;
+            d var_d = aHa_Sub2_8693.aD4579;
             Class308.anIntArray3883[3] = anInt8690;
             Class308.anIntArray3883[4] = anInt8686;
             Class308.anIntArray3883[2] = anInt8691;
@@ -35,10 +35,10 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
                     return null;
                 Class12 class12
                         = var_d.method3(Class308.anIntArray3883[i_1_], -6662);
-                int i_2_ = !((Class12) class12).aBoolean199 ? 128 : 64;
+                int i_2_ = !class12.aBoolean199 ? 128 : 64;
                 if (i_0_ < i_2_)
                     i_0_ = i_2_;
-                if ((((Class12) class12).aByte205 ^ 0xffffffff) < -1)
+                if ((class12.aByte205 ^ 0xffffffff) < -1)
                     bool = true;
             }
             for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -7; i_3_++)

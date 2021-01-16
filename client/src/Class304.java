@@ -10,7 +10,7 @@ final class Class304 {
     static int anInt3851;
 
     Class304(int i) {
-        ((Class304) this).anInt3850 = i;
+        this.anInt3850 = i;
     }
 
     public final String toString() {
@@ -133,17 +133,15 @@ final class Class304 {
                          = ((Class348_Sub42_Sub13)
                          Class233.aClass107_3022.method1003((byte) 126))) {
                 int i_9_;
-                if ((((Class348_Sub42_Sub13) class348_sub42_sub13).anInt9615
+                if ((class348_sub42_sub13.anInt9615
                         ^ 0xffffffff)
                         != -2)
                     i_9_ = Class289.method2194(-1, class348_sub42_sub13);
                 else
                     i_9_ = (OutputStream_Sub2.method138
                             (((Class348_Sub42_Sub12)
-                                            (((Class348_Sub42)
-                                                    ((Class107)
-                                                            (((Class348_Sub42_Sub13) class348_sub42_sub13)
-                                                                    .aClass107_9621)).aClass348_Sub42_1647)
+                                            (class348_sub42_sub13
+                                                    .aClass107_9621.aClass348_Sub42_1647
                                                     .aClass348_Sub42_7063)),
                                     false));
                 if ((i_9_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff))

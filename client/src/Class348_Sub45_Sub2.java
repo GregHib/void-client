@@ -18,8 +18,8 @@ final class Class348_Sub45_Sub2 extends Class348_Sub45 {
     final int method3310(int i) {
         anInt9731++;
         if (i < 50)
-            ((Class348_Sub45_Sub2) this).anInt9739 = 69;
-        return ((Class348_Sub45_Sub2) this).anInt9736;
+            this.anInt9739 = 69;
+        return this.anInt9736;
     }
 
     static final void method3316(int i, int i_0_) {
@@ -33,27 +33,27 @@ final class Class348_Sub45_Sub2 extends Class348_Sub45 {
     final int method3311(int i) {
         anInt9740++;
         int i_1_ = 49 / ((-61 - i) / 40);
-        return ((Class348_Sub45_Sub2) this).anInt9733;
+        return this.anInt9733;
     }
 
     final int method3308(byte i) {
         anInt9735++;
         if (i > -126)
-            ((Class348_Sub45_Sub2) this).anInt9739 = 25;
-        return ((Class348_Sub45_Sub2) this).anInt9739;
+            this.anInt9739 = 25;
+        return this.anInt9739;
     }
 
     final long method3312(byte i) {
         if (i > -79)
             return 102L;
         anInt9737++;
-        return ((Class348_Sub45_Sub2) this).aLong9734;
+        return this.aLong9734;
     }
 
     final int method3315(int i) {
         if (i != 0)
-            ((Class348_Sub45_Sub2) this).anInt9739 = 66;
+            this.anInt9739 = 66;
         anInt9738++;
-        return ((Class348_Sub45_Sub2) this).anInt9730;
+        return this.anInt9730;
     }
 }

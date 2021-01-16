@@ -25,16 +25,12 @@ final class OutputStream_Sub1 extends OutputStream {
         if (Class147.aClass357ArrayArrayArray2029 == null)
             Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_,
                     i_2_, -16777216);
-        else if ((((Class318_Sub1)
-                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6377
+        else if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
                 ^ 0xffffffff) > -1
-                || (((Class318_Sub1)
-                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6377
+                || (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
                 >= Class367_Sub4.anInt7319 * 512)
-                || ((Class318_Sub1)
-                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6388 < 0
-                || ((((Class318_Sub1)
-                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6388
+                || Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388 < 0
+                || ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388
                 ^ 0xffffffff)
                 <= (512 * Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)))
             Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_,
@@ -42,14 +38,12 @@ final class OutputStream_Sub1 extends OutputStream {
         else {
             Class239_Sub15.anInt6006++;
             if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 != null
-                    && ((((Class318_Sub1)
-                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6377
+                    && ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
                     + -(256 * Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                     .method2436((byte) 90))
                     - -256) >> -313379639
                     ^ 0xffffffff) == (Class248.anInt3203 ^ 0xffffffff)
-                    && ((((Class318_Sub1)
-                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6388
+                    && ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388
                     + 256
                     + -(256 * Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                     .method2436((byte) 112))) >> 1733391561
@@ -82,12 +76,10 @@ final class OutputStream_Sub1 extends OutputStream {
                 Class17.method268
                         (i_4_,
                                 -200 + (Class275.method2064
-                                        ((((Class318_Sub1)
-                                                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                        ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                         .anInt6377),
                                                 Class355.anInt4372, 11219,
-                                                (((Class318_Sub1)
-                                                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                                (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                         .anInt6388))),
                                 i_5_, Class192.anInt2578, i_2_, -19360,
                                 Class130_Sub1.anInt5799,
@@ -205,7 +197,7 @@ final class OutputStream_Sub1 extends OutputStream {
                         -Class5.anInt4638 & 0x3fff,
                         Class286_Sub4.anInt6246,
                         -Class338.anInt4186 & 0x3fff);
-                byte i_16_ = (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                byte i_16_ = (Class316.aClass348_Sub51_3959
                         .aClass239_Sub14_7264.method1778(-32350) != 2
                         ? (byte) 1 : (byte) Class239_Sub15.anInt6006);
                 if (Class59_Sub1.aBoolean5300) {
@@ -216,19 +208,16 @@ final class OutputStream_Sub1 extends OutputStream {
                     Class230.method1634
                             (Class64.anIntArray1127, -2,
                                     Class289.aByteArrayArrayArray3700,
-                                    (((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt6388) >> -932753879,
-                                    (((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .aByte6381) - -1,
                                     Class327.anIntArray4097, Class286_Sub4.anInt6246,
                                     Class59_Sub2_Sub2.anInt8685,
-                                    ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                                    Class316.aClass348_Sub51_3959
                                             .aClass239_Sub1_7246.method1720(-32350) == 0,
                                     Class305.anInt3855,
-                                    (((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt6377) >> -832039159,
                                     Class156.anIntArray2117,
                                     Class348_Sub40_Sub19.anIntArray9259, i_16_,
@@ -242,17 +231,14 @@ final class OutputStream_Sub1 extends OutputStream {
                                     Class327.anIntArray4097, Class156.anIntArray2117,
                                     Class348_Sub40_Sub19.anIntArray9259,
                                     Class56.anIntArray1045, Class64.anIntArray1127,
-                                    (((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .aByte6381) - -1,
                                     i_16_,
-                                    (((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt6377) >> 1790545481,
-                                    (((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                    (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt6388) >> 1598745993,
-                                    (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                                    (Class316.aClass348_Sub51_3959
                                             .aClass239_Sub1_7246.method1720(-32350)
                                             ^ 0xffffffff) == -1,
                                     true,

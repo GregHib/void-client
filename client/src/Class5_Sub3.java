@@ -22,15 +22,15 @@ final class Class5_Sub3 extends Class5 {
         anInt8376++;
         Class348_Sub8.aHa6654.method3628
                 (-2 + i, i_1_,
-                        4 + ((Class369) ((Class5) this).aClass369_4635).anInt4971,
-                        ((Class369) ((Class5) this).aClass369_4635).anInt4963 + 2,
-                        (((Class369_Sub1) (Class369_Sub1) ((Class5) this).aClass369_4635)
+                        4 + this.aClass369_4635.anInt4971,
+                        this.aClass369_4635.anInt4963 + 2,
+                        (((Class369_Sub1) this.aClass369_4635)
                                 .anInt8580),
                         0);
         Class348_Sub8.aHa6654.method3628
                 (i + -1, i_1_ + 1,
-                        ((Class369) ((Class5) this).aClass369_4635).anInt4971 + 2,
-                        ((Class369) ((Class5) this).aClass369_4635).anInt4963, 0, 0);
+                        this.aClass369_4635.anInt4971 + 2,
+                        this.aClass369_4635.anInt4963, 0, 0);
     }
 
     static final Class348_Sub21 method199(int i) {
@@ -43,12 +43,11 @@ final class Class5_Sub3 extends Class5 {
         if (class348_sub21 == null)
             return null;
         Class42 class42
-                = Class75.aClass153_1238.method1225(((Class348_Sub21)
-                        class348_sub21).anInt6847,
+                = Class75.aClass153_1238.method1225(class348_sub21.anInt6847,
                 (byte) 50);
         if (i != 1)
             anInt8370 = -75;
-        if (class42 != null && ((Class42) class42).aBoolean609
+        if (class42 != null && class42.aBoolean609
                 && class42.method373(Class75.anInterface17_1244, 98))
             return class348_sub21;
         return Class356.method3479(-1);
@@ -59,11 +58,10 @@ final class Class5_Sub3 extends Class5 {
         anInt8373++;
         if (!super.method8((byte) 82))
             return false;
-        return ((Class5) this).aClass45_4632.method421(false,
+        return this.aClass45_4632.method421(false,
                 (((Class369_Sub1)
-                        (Class369_Sub1)
-                                (((Class5) this)
-                                        .aClass369_4635))
+                        this
+                                .aClass369_4635)
                         .anInt8582));
     }
 
@@ -76,7 +74,7 @@ final class Class5_Sub3 extends Class5 {
 
     Class5_Sub3(Class45 class45, Class45 class45_4_,
                 Class369_Sub1 class369_sub1) {
-        super(class45, class45_4_, (Class369) class369_sub1);
+        super(class45, class45_4_, class369_sub1);
     }
 
     static final void method201(int i, int i_5_, String string) {
@@ -94,11 +92,9 @@ final class Class5_Sub3 extends Class5 {
                         if (class318_sub1_sub3_sub3_sub2 != null
                                 && (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 != class318_sub1_sub3_sub3_sub2)
-                                && (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).aString10544
+                                && (class318_sub1_sub3_sub3_sub2.aString10544
                                 != null)
-                                && ((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2)
+                                && class318_sub1_sub3_sub3_sub2
                                 .aString10544.equalsIgnoreCase(string)) {
                             bool = true;
                             if (i == 1) {
@@ -108,10 +104,10 @@ final class Class5_Sub3 extends Class5 {
                                         (Class239_Sub9.aClass351_5929,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 i_5_ + 7158));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3349(4325, is[i_7_]);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3374((byte) -75, 0);
                                 Class348_Sub42_Sub14
@@ -123,10 +119,10 @@ final class Class5_Sub3 extends Class5 {
                                         (Class52.aClass351_4905,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 -88));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3337((byte) 107, is[i_7_]);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3395((byte) -128, 0);
                                 Class348_Sub42_Sub14
@@ -138,10 +134,10 @@ final class Class5_Sub3 extends Class5 {
                                         (Class348_Sub42_Sub18.aClass351_9684,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 -83));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3335(81, is[i_7_]);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, 0);
                                 Class348_Sub42_Sub14
@@ -154,10 +150,10 @@ final class Class5_Sub3 extends Class5 {
                                             (Class348_Sub42_Sub5.aClass351_9533,
                                                     Class348_Sub23_Sub2.aClass77_9029,
                                                     -116));
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116
                                             .method3335(i_5_ ^ 0x1c2c, is[i_7_]);
-                                    ((Class348_Sub47) class348_sub47)
+                                    class348_sub47
                                             .aClass348_Sub49_Sub2_7116
                                             .method3395((byte) 92, 0);
                                     Class348_Sub42_Sub14
@@ -170,10 +166,10 @@ final class Class5_Sub3 extends Class5 {
                                         (Class251.aClass351_3232,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 -83));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3378(false, 0);
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3335(-119, is[i_7_]);
                                 Class348_Sub42_Sub14
@@ -206,30 +202,28 @@ final class Class5_Sub3 extends Class5 {
             super.method7(i);
             aClass105_8366
                     = Class369_Sub3_Sub1.method3577(((Class369_Sub1)
-                            (Class369_Sub1)
-                                    (((Class5) this)
-                                            .aClass369_4635)).anInt8582,
+                            this
+                                    .aClass369_4635).anInt8582,
                     (byte) -96,
-                    ((Class5) this).aClass45_4632);
+                    this.aClass45_4632);
         }
     }
 
     final void method182(int i, int i_8_, int i_9_, boolean bool) {
         anInt8367++;
         int i_10_ = (this.method183(48)
-                * ((Class369) ((Class5) this).aClass369_4635).anInt4971
+                * this.aClass369_4635.anInt4971
                 / 10000);
         int[] is = new int[4];
         int i_11_ = -50 % ((-20 - i) / 57);
         Class348_Sub8.aHa6654.K(is);
         Class348_Sub8.aHa6654.KA(i_9_, 2 + i_8_, i_9_ - -i_10_,
-                i_8_ - -(((Class369)
-                        ((Class5) this).aClass369_4635)
+                i_8_ - -(this.aClass369_4635
                         .anInt4963));
         aClass105_8366.method972(i_9_, 2 + i_8_,
-                (((Class369) ((Class5) this).aClass369_4635)
+                (this.aClass369_4635
                         .anInt4971),
-                (((Class369) ((Class5) this).aClass369_4635)
+                (this.aClass369_4635
                         .anInt4963));
         Class348_Sub8.aHa6654.KA(is[0], is[1], is[2], is[3]);
     }
@@ -242,7 +236,7 @@ final class Class5_Sub3 extends Class5 {
                 if (i == 6 && !Class5_Sub1.aBoolean8335) {
                     class348_sub42_sub12.method2715((byte) 111);
                     Class73.anInt4776--;
-                    if (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    if (class348_sub42_sub12
                             .aBoolean9611) {
                         for (Class348_Sub42_Sub13 class348_sub42_sub13
                              = ((Class348_Sub42_Sub13)
@@ -252,22 +246,20 @@ final class Class5_Sub3 extends Class5 {
                                      = ((Class348_Sub42_Sub13)
                                      Class233.aClass107_3022
                                              .method1003((byte) 110))) {
-                            if (((Class348_Sub42_Sub13) class348_sub42_sub13)
+                            if (class348_sub42_sub13
                                     .aString9617.equals
-                                            (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                                            (class348_sub42_sub12
                                                     .aString9601)) {
                                 boolean bool = false;
                                 for (Class348_Sub42_Sub12 class348_sub42_sub12_12_
                                      = ((Class348_Sub42_Sub12)
-                                        ((Class348_Sub42_Sub13)
-                                                class348_sub42_sub13)
+                                        class348_sub42_sub13
                                                 .aClass107_9621
                                                 .method1011(-58));
                                      class348_sub42_sub12_12_ != null;
                                      class348_sub42_sub12_12_
                                              = ((Class348_Sub42_Sub12)
-                                             ((Class348_Sub42_Sub13)
-                                                     class348_sub42_sub13)
+                                             class348_sub42_sub13
                                                      .aClass107_9621
                                                      .method1003((byte) 112))) {
                                     if (class348_sub42_sub12
@@ -287,7 +279,7 @@ final class Class5_Sub3 extends Class5 {
                             }
                         }
                     } else {
-                        long l = (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                        long l = (class348_sub42_sub12
                                 .aLong9600);
                         Class348_Sub42_Sub13 class348_sub42_sub13;
                         for (class348_sub42_sub13
@@ -299,9 +291,9 @@ final class Class5_Sub3 extends Class5 {
                                      = ((Class348_Sub42_Sub13)
                                      Class348_Sub42_Sub12.aClass356_9603
                                              .method3476(true))) {
-                            if (((Class348_Sub42_Sub13) class348_sub42_sub13)
+                            if (class348_sub42_sub13
                                     .aString9617.equals
-                                            (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                                            (class348_sub42_sub12
                                                     .aString9601))
                                 break;
                         }

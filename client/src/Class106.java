@@ -9,7 +9,7 @@ final class Class106 {
     static int anInt1634;
     static int[] anIntArray1635 = new int[16];
     static int[] anIntArray1636 = null;
-    private Class45 aClass45_1637;
+    private final Class45 aClass45_1637;
     static int[][] anIntArrayArray1638
             = {{0, 1, 2, 3}, {1, -1, -1, 0}, {-1, 2, -1, 0},
             {-1, 0, -1, 2}, {0, 1, -1, 2}, {1, 2, -1, 0},
@@ -18,7 +18,7 @@ final class Class106 {
             {0, 1, 2, 3}};
     static int anInt1639;
     static int anInt1640;
-    private Class45 aClass45_1641;
+    private final Class45 aClass45_1641;
 
     private final Class339 method998(int i) {
         anInt1632++;

@@ -14,6 +14,6 @@ final class Class29 {
     }
 
     Class29(int i, int i_0_) {
-        ((Class29) this).anInt400 = i;
+        this.anInt400 = i;
     }
 }

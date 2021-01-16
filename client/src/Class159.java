@@ -12,7 +12,7 @@ final class Class159 {
     private final void method1251(Class348_Sub49 class348_sub49, int i,
                                   int i_0_) {
         if (i == 5)
-            ((Class159) this).anInt2125 = class348_sub49.method3330(842397944);
+            this.anInt2125 = class348_sub49.method3330(842397944);
         anInt2126++;
         int i_1_ = 60 % ((i_0_ - 33) / 57);
     }
@@ -79,7 +79,7 @@ final class Class159 {
         }
         anInt2128++;
         if (bool != true)
-            ((Class159) this).anInt2125 = 58;
+            this.anInt2125 = 58;
     }
 
     public Class159() {

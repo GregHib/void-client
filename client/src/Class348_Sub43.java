@@ -45,54 +45,40 @@ final class Class348_Sub43 extends Class348 {
                                             + Class274.aClass274_3520
                                             .method2063(Class348_Sub33.anInt6967, 544)),
                                     0, (byte) -109, false, 0, -1, true, 50,
-                                    (long) ((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2).anInt10290,
+                                    class318_sub1_sub3_sub3_sub2.anInt10290,
                                     Class28.aString5001, 0L,
                                     Class348_Sub49_Sub1.anInt9747);
                 }
             } else {
                 String string;
-                if ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                        class318_sub1_sub3_sub3_sub2).anInt10564
+                if ((class318_sub1_sub3_sub3_sub2.anInt10564
                         ^ 0xffffffff)
                         == -1) {
                     boolean bool_0_ = true;
-                    if ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                    if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anInt10561) != -1
-                            && (((Class318_Sub1_Sub3_Sub3_Sub2)
-                            class318_sub1_sub3_sub3_sub2).anInt10561
+                            && (class318_sub1_sub3_sub3_sub2.anInt10561
                             ^ 0xffffffff) != 0) {
                         int i_1_
-                                = ((((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                = ((((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 .anInt10516)
                                 ^ 0xffffffff)
-                                < (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10516
+                                < (class318_sub1_sub3_sub3_sub2.anInt10516
                                 ^ 0xffffffff))
-                                ? (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                ? (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 .anInt10516)
-                                : ((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10516);
+                                : class318_sub1_sub3_sub3_sub2.anInt10516);
                         int i_2_
-                                = (((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 .anInt10561)
-                                >= ((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10561)
-                                ? ((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10561
-                                : (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                >= class318_sub1_sub3_sub3_sub2.anInt10561)
+                                ? class318_sub1_sub3_sub3_sub2.anInt10561
+                                : (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 .anInt10561));
                         int i_3_ = 5 - (-(10 * i_1_ / 100) + -i_2_);
                         int i_4_
-                                = (-((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10516
-                                + (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                = (-class318_sub1_sub3_sub3_sub2.anInt10516
+                                + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 .anInt10516));
                         if ((i_4_ ^ 0xffffffff) > -1)
                             i_4_ = -i_4_;
@@ -106,28 +92,23 @@ final class Class348_Sub43 extends Class348 {
                             .method2063(Class348_Sub33.anInt6967, 544)
                             : Class274.aClass274_3511
                             .method2063(Class348_Sub33.anInt6967, 544));
-                    if ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                            class318_sub1_sub3_sub3_sub2).anInt10557
+                    if ((class318_sub1_sub3_sub3_sub2.anInt10557
                             ^ 0xffffffff)
-                            >= (((Class318_Sub1_Sub3_Sub3_Sub2)
-                            class318_sub1_sub3_sub3_sub2).anInt10516
+                            >= (class318_sub1_sub3_sub3_sub2.anInt10516
                             ^ 0xffffffff))
                         string
                                 = (class318_sub1_sub3_sub3_sub2.method2456(true,
                                 255)
                                 + (!bool_0_ ? "<col=ffffff>"
                                 : (Class14_Sub4.method250
-                                ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                                (Class132
-                                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                ((Class132
+                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                 .anInt10516),
                                         true,
-                                        (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                                class318_sub1_sub3_sub3_sub2)
+                                        (class318_sub1_sub3_sub3_sub2
                                                 .anInt10516))))
                                 + " (" + string_5_
-                                + ((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10516
+                                + class318_sub1_sub3_sub3_sub2.anInt10516
                                 + ")");
                     else
                         string
@@ -135,26 +116,20 @@ final class Class348_Sub43 extends Class348 {
                                 255)
                                 + (bool_0_
                                 ? (Class14_Sub4.method250
-                                ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                                (Class132
-                                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                ((Class132
+                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                 .anInt10516),
                                         true,
-                                        (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                                class318_sub1_sub3_sub3_sub2)
+                                        (class318_sub1_sub3_sub3_sub2
                                                 .anInt10516)))
                                 : "<col=ffffff>")
                                 + " (" + string_5_
-                                + ((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10516
+                                + class318_sub1_sub3_sub3_sub2.anInt10516
                                 + "+"
-                                + (-((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10516
-                                + ((Class318_Sub1_Sub3_Sub3_Sub2)
-                                class318_sub1_sub3_sub3_sub2).anInt10557)
+                                + (-class318_sub1_sub3_sub3_sub2.anInt10516
+                                + class318_sub1_sub3_sub3_sub2.anInt10557)
                                 + ")");
-                } else if ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                        class318_sub1_sub3_sub3_sub2).anInt10564
+                } else if ((class318_sub1_sub3_sub3_sub2.anInt10564
                         ^ 0xffffffff)
                         == 0)
                     string
@@ -165,19 +140,16 @@ final class Class348_Sub43 extends Class348 {
                             + " ("
                             + Class274.aClass274_3512
                             .method2063(Class348_Sub33.anInt6967, 544)
-                            + ((Class318_Sub1_Sub3_Sub3_Sub2)
-                            class318_sub1_sub3_sub3_sub2).anInt10564
+                            + class318_sub1_sub3_sub3_sub2.anInt10564
                             + ")");
                 if (r.aBoolean9722 && !bool && (0x8 & Class38.anInt500) != 0) {
                     Class50_Sub3.method466
                             (false,
                                     Class28.aString5000 + " -> <col=ffffff>" + string, 0,
                                     (byte) -109, false, 0, -1, true, 51,
-                                    (long) ((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2).anInt10290,
+                                    class318_sub1_sub3_sub3_sub2.anInt10290,
                                     Class28.aString5001,
-                                    (long) ((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2).anInt10290,
+                                    class318_sub1_sub3_sub3_sub2.anInt10290,
                                     Class348_Sub49_Sub1.anInt9747);
                     Class341.anInt4228++;
                 }
@@ -186,8 +158,7 @@ final class Class348_Sub43 extends Class348 {
                 if (bool)
                     Class50_Sub3.method466
                             (true, "", 0, (byte) -115, false, 0, 0, false, -1,
-                                    (long) ((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2).anInt10290,
+                                    class318_sub1_sub3_sub3_sub2.anInt10290,
                                     "<col=cccccc>" + string, 0L, -1);
                 else {
                     for (int i_6_ = 7; (i_6_ ^ 0xffffffff) <= -1; i_6_--) {
@@ -204,28 +175,22 @@ final class Class348_Sub43 extends Class348 {
                                 if (Class71.aBooleanArray1214[i_6_])
                                     i_7_ = (short) 2000;
                             } else {
-                                if ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                        (Class132
-                                                .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                if ((Class132
+                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                         .anInt10516)
-                                        < (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                        class318_sub1_sub3_sub3_sub2)
+                                        < (class318_sub1_sub3_sub3_sub2
                                         .anInt10516))
                                     i_7_ = (short) 2000;
-                                if ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                        (Class132
-                                                .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                if ((Class132
+                                        .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                         .anInt10542) != 0
-                                        && (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                        class318_sub1_sub3_sub3_sub2)
+                                        && (class318_sub1_sub3_sub3_sub2
                                         .anInt10542) != 0) {
-                                    if (((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                            (Class132
-                                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                    if (((Class132
+                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt10542)
                                             ^ 0xffffffff)
-                                            != ((((Class318_Sub1_Sub3_Sub3_Sub2)
-                                            class318_sub1_sub3_sub3_sub2)
+                                            != ((class318_sub1_sub3_sub3_sub2
                                             .anInt10542)
                                             ^ 0xffffffff))
                                         i_7_ = (short) 0;
@@ -242,14 +207,12 @@ final class Class348_Sub43 extends Class348 {
                             Class50_Sub3.method466
                                     (false, "<col=ffffff>" + string, 0,
                                             (byte) -105, false, 0, -1, true, i_8_,
-                                            (long) (((Class318_Sub1_Sub3_Sub3)
-                                                    class318_sub1_sub3_sub3_sub2)
-                                                    .anInt10290),
+                                            class318_sub1_sub3_sub3_sub2
+                                                    .anInt10290,
                                             (Class318_Sub1_Sub2_Sub1.aStringArray10195
                                                     [i_6_]),
-                                            (long) (((Class318_Sub1_Sub3_Sub3)
-                                                    class318_sub1_sub3_sub3_sub2)
-                                                    .anInt10290),
+                                            class318_sub1_sub3_sub3_sub2
+                                                    .anInt10290,
                                             i_9_);
                             Canvas_Sub1.anInt69++;
                         }
@@ -265,10 +228,10 @@ final class Class348_Sub43 extends Class348 {
                                  = ((Class348_Sub42_Sub12)
                                  Class348_Sub40_Sub4.aClass262_9111
                                          .method1990((byte) 105))) {
-                        if ((((Class348_Sub42_Sub12) class348_sub42_sub12)
+                        if ((class348_sub42_sub12
                                 .anInt9608)
                                 == 19) {
-                            ((Class348_Sub42_Sub12) class348_sub42_sub12)
+                            class348_sub42_sub12
                                     .aString9595
                                     = "<col=ffffff>" + string;
                             break;
@@ -281,11 +244,11 @@ final class Class348_Sub43 extends Class348 {
 
     final void method3299(byte i) {
         anInt7078++;
-        ((Class348_Sub43) this).aClass348_Sub16_Sub5_7081 = null;
-        ((Class348_Sub43) this).aClass348_Sub19_Sub1_7077 = null;
+        this.aClass348_Sub16_Sub5_7081 = null;
+        this.aClass348_Sub19_Sub1_7077 = null;
         int i_10_ = 71 / ((i - -26) / 58);
-        ((Class348_Sub43) this).aClass23_7075 = null;
-        ((Class348_Sub43) this).aClass348_Sub17_7085 = null;
+        this.aClass23_7075 = null;
+        this.aClass348_Sub17_7085 = null;
     }
 
     public static void method3300(int i) {

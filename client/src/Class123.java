@@ -18,9 +18,9 @@ final class Class123 {
     }
 
     Class123(Interface2 interface2, int i, int i_0_, int i_1_) {
-        ((Class123) this).aShort1810 = (short) i;
-        ((Class123) this).aByte1812 = (byte) i_1_;
-        ((Class123) this).aByte1814 = (byte) i_0_;
-        ((Class123) this).anInterface2_1811 = interface2;
+        this.aShort1810 = (short) i;
+        this.aByte1812 = (byte) i_1_;
+        this.aByte1814 = (byte) i_0_;
+        this.anInterface2_1811 = interface2;
     }
 }

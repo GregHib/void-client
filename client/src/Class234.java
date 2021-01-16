@@ -9,7 +9,7 @@ import java.io.RandomAccessFile;
 
 final class Class234 {
     private RandomAccessFile aRandomAccessFile3036;
-    private long aLong3037;
+    private final long aLong3037;
     static int anInt3038;
     private long aLong3039;
     static int anInt3040;
@@ -18,7 +18,7 @@ final class Class234 {
     static int anInt3043;
     static Class138 aClass138_3044;
     static int anInt3045;
-    private File aFile3046;
+    private final File aFile3046;
     static int anInt3047 = 0;
     static int anInt3048;
     static int anInt3049;
@@ -29,7 +29,7 @@ final class Class234 {
         int i_2_ = aRandomAccessFile3036.read(is, i, i_1_);
         int i_3_ = 39 % ((75 - i_0_) / 39);
         if ((i_2_ ^ 0xffffffff) < -1)
-            aLong3039 += (long) i_2_;
+            aLong3039 += i_2_;
         return i_2_;
     }
 
@@ -55,7 +55,7 @@ final class Class234 {
         if (i < 108)
             aLong3039 = 124L;
         aRandomAccessFile3036.write(is, i_4_, i_5_);
-        aLong3039 += (long) i_5_;
+        aLong3039 += i_5_;
     }
 
     public static void method1659(byte i) {

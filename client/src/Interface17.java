@@ -3,7 +3,7 @@
  */
 
 interface Interface17 {
-    public int method61(int i, byte i_0_);
+    int method61(int i, byte i_0_);
 
-    public int method62(int i, int i_1_);
+    int method62(int i, int i_1_);
 }

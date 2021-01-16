@@ -17,42 +17,42 @@ final class Class16 {
                     = Class147.aClass357ArrayArrayArray2029[i_1_ + 1][i][i_0_]);
             if (class357_2_ != null) {
                 for (Class148 class148
-                     = ((Class357) class357_2_).aClass148_4396;
+                     = class357_2_.aClass148_4396;
                      class148 != null;
-                     class148 = ((Class148) class148).aClass148_2038) {
+                     class148 = class148.aClass148_2038) {
                     Class318_Sub1_Sub3 class318_sub1_sub3
-                            = ((Class148) class148).aClass318_Sub1_Sub3_2040;
-                    if ((((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743
+                            = class148.aClass318_Sub1_Sub3_2040;
+                    if ((class318_sub1_sub3.aShort8743
                             == i)
-                            && (((Class318_Sub1_Sub3) class318_sub1_sub3)
+                            && (class318_sub1_sub3
                             .aShort8750) == i_0_)
-                        ((Class318_Sub1) class318_sub1_sub3).aByte6381--;
+                        class318_sub1_sub3.aByte6381--;
                 }
-                if (((Class357) class357_2_).aClass318_Sub1_Sub1_4402 != null)
-                    ((Class318_Sub1) (((Class357) class357_2_)
-                            .aClass318_Sub1_Sub1_4402)).aByte6381--;
-                if (((Class357) class357_2_).aClass318_Sub1_Sub4_4406 != null)
-                    ((Class318_Sub1) (((Class357) class357_2_)
-                            .aClass318_Sub1_Sub4_4406)).aByte6381--;
-                if (((Class357) class357_2_).aClass318_Sub1_Sub4_4403 != null)
-                    ((Class318_Sub1) (((Class357) class357_2_)
-                            .aClass318_Sub1_Sub4_4403)).aByte6381--;
-                if (((Class357) class357_2_).aClass318_Sub1_Sub5_4395 != null)
-                    ((Class318_Sub1) (((Class357) class357_2_)
-                            .aClass318_Sub1_Sub5_4395)).aByte6381--;
-                if (((Class357) class357_2_).aClass318_Sub1_Sub5_4407 != null)
-                    ((Class318_Sub1) (((Class357) class357_2_)
-                            .aClass318_Sub1_Sub5_4407)).aByte6381--;
+                if (class357_2_.aClass318_Sub1_Sub1_4402 != null)
+                    class357_2_
+                            .aClass318_Sub1_Sub1_4402.aByte6381--;
+                if (class357_2_.aClass318_Sub1_Sub4_4406 != null)
+                    class357_2_
+                            .aClass318_Sub1_Sub4_4406.aByte6381--;
+                if (class357_2_.aClass318_Sub1_Sub4_4403 != null)
+                    class357_2_
+                            .aClass318_Sub1_Sub4_4403.aByte6381--;
+                if (class357_2_.aClass318_Sub1_Sub5_4395 != null)
+                    class357_2_
+                            .aClass318_Sub1_Sub5_4395.aByte6381--;
+                if (class357_2_.aClass318_Sub1_Sub5_4407 != null)
+                    class357_2_
+                            .aClass318_Sub1_Sub5_4407.aByte6381--;
             }
         }
         if (Class147.aClass357ArrayArrayArray2029[0][i][i_0_] == null) {
             Class147.aClass357ArrayArrayArray2029[0][i][i_0_]
                     = new Class357(0);
-            ((Class357) Class147.aClass357ArrayArrayArray2029[0][i][i_0_])
+            Class147.aClass357ArrayArrayArray2029[0][i][i_0_]
                     .aByte4399
                     = (byte) 1;
         }
-        ((Class357) Class147.aClass357ArrayArrayArray2029[0][i][i_0_])
+        Class147.aClass357ArrayArrayArray2029[0][i][i_0_]
                 .aClass357_4400
                 = class357;
         Class147.aClass357ArrayArrayArray2029[3][i][i_0_] = null;

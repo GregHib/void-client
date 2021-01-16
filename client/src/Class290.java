@@ -18,10 +18,10 @@ final class Class290 {
     static int anInt3718;
 
     final void method2195(boolean bool) {
-        if (((Class290) this).anInterface5_Impl1_3708 != null)
-            ((Class290) this).anInterface5_Impl1_3708.method21(23315);
+        if (this.anInterface5_Impl1_3708 != null)
+            this.anInterface5_Impl1_3708.method21(23315);
         anInt3715++;
-        ((Class290) this).aBoolean3714 = bool;
+        this.aBoolean3714 = bool;
     }
 
     static final void method2196(byte i) {
@@ -41,12 +41,10 @@ final class Class290 {
         if (i >= -4)
             method2195(true);
         anInt3718++;
-        if (!((Class290) this).aBoolean3714 || ((Class290) this).aBoolean3709)
-            return false;
-        return true;
+        return this.aBoolean3714 && !this.aBoolean3709;
     }
 
     Class290(boolean bool) {
-        ((Class290) this).aBoolean3709 = bool;
+        this.aBoolean3709 = bool;
     }
 }

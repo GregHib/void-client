@@ -5,7 +5,7 @@
 import java.lang.ref.SoftReference;
 
 final class Class348_Sub42_Sub8_Sub1 extends Class348_Sub42_Sub8 {
-    private SoftReference aSoftReference10428;
+    private final SoftReference aSoftReference10428;
 
     final boolean method3195(int i) {
         if (i != -4)

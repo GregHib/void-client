@@ -19,11 +19,11 @@ final class Class348_Sub22 extends Class348 {
             method2958(-23, null);
         if ((i ^ 0xffffffff) == 0)
             return class46;
-        if (class46 == null || ((Class46) class46).aClass46Array798 == null
-                || ((((Class46) class46).aClass46Array798.length ^ 0xffffffff)
+        if (class46 == null || class46.aClass46Array798 == null
+                || ((class46.aClass46Array798.length ^ 0xffffffff)
                 >= (i ^ 0xffffffff)))
             return null;
-        return ((Class46) class46).aClass46Array798[i];
+        return class46.aClass46Array798[i];
     }
 
     static final int method2958(int i, Class45 class45) {
@@ -80,7 +80,7 @@ final class Class348_Sub22 extends Class348 {
     }
 
     Class348_Sub22(Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1) {
-        ((Class348_Sub22) this).aClass318_Sub1_Sub3_Sub3_Sub1_6859
+        this.aClass318_Sub1_Sub3_Sub3_Sub1_6859
                 = class318_sub1_sub3_sub3_sub1;
     }
 }

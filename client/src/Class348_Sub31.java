@@ -222,20 +222,20 @@ abstract class Class348_Sub31 extends Class348 {
 
     static final void method3014(Class348_Sub49 class348_sub49, byte i) {
         anInt6914++;
-        if (((((Class348_Sub49) class348_sub49).aByteArray7154.length
-                - ((Class348_Sub49) class348_sub49).anInt7197)
+        if (((class348_sub49.aByteArray7154.length
+                - class348_sub49.anInt7197)
                 ^ 0xffffffff)
                 <= -2) {
             int i_89_ = class348_sub49.method3387(255);
             if (i_89_ >= 0 && (i_89_ ^ 0xffffffff) >= -2
-                    && ((((Class348_Sub49) class348_sub49).aByteArray7154.length
-                    - ((Class348_Sub49) class348_sub49).anInt7197)
+                    && ((class348_sub49.aByteArray7154.length
+                    - class348_sub49.anInt7197)
                     ^ 0xffffffff) <= -3) {
                 if (i != -40)
                     method3012(13, -47, -27, 107, -90, (byte) -19, -61, 36);
                 int i_90_ = class348_sub49.method3330(842397944);
-                if (i_90_ * 6 <= (-((Class348_Sub49) class348_sub49).anInt7197
-                        + (((Class348_Sub49) class348_sub49)
+                if (i_90_ * 6 <= (-class348_sub49.anInt7197
+                        + (class348_sub49
                         .aByteArray7154).length)) {
                     for (int i_91_ = 0; i_91_ < i_90_; i_91_++) {
                         int i_92_ = class348_sub49.method3330(842397944);
@@ -243,8 +243,8 @@ abstract class Class348_Sub31 extends Class348 {
                         if (((i_92_ ^ 0xffffffff)
                                 > (Class77.anIntArray1303.length ^ 0xffffffff))
                                 && Class286_Sub6.aBooleanArray6270[i_92_]
-                                && ((((Class160) Class239_Sub14.aClass259_5995
-                                .method1976(i_92_, -107))
+                                && ((Class239_Sub14.aClass259_5995
+                                .method1976(i_92_, -107)
                                 .aChar2132) != '1'
                                 || (i_93_ ^ 0xffffffff) <= 0 && i_93_ <= 1))
                             Class77.anIntArray1303[i_92_] = i_93_;

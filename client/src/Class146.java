@@ -31,9 +31,9 @@ final class Class146 {
         if (i_1_ != 17)
             method1194(-80);
         if (i == 1) {
-            ((Class146) this).anInt2019 = class348_sub49.method3330(842397944);
-            ((Class146) this).anInt2016 = class348_sub49.method3387(255);
-            ((Class146) this).anInt2020
+            this.anInt2019 = class348_sub49.method3330(842397944);
+            this.anInt2016 = class348_sub49.method3387(255);
+            this.anInt2020
                     = class348_sub49.method3387(i_1_ ^ 0xee);
         }
     }
@@ -42,9 +42,7 @@ final class Class146 {
         if (bool != true)
             return true;
         anInt2017++;
-        if ((i_2_ & 0x800 ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (i_2_ & 0x800 ^ 0xffffffff) != -1;
     }
 
     public static void method1194(int i) {

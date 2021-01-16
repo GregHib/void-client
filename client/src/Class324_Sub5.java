@@ -5,10 +5,10 @@
 import jaggl.OpenGL;
 
 final class Class324_Sub5 extends Class324 {
-    private ha_Sub2 aHa_Sub2_6509;
-    private Class61 aClass61_6510;
-    private Class258_Sub3_Sub1 aClass258_Sub3_Sub1_6511;
-    private boolean aBoolean6512;
+    private final ha_Sub2 aHa_Sub2_6509;
+    private final Class61 aClass61_6510;
+    private final Class258_Sub3_Sub1 aClass258_Sub3_Sub1_6511;
+    private final boolean aBoolean6512;
 
     Class324_Sub5(ha_Sub2 var_ha_Sub2, Class143 class143, Class207[] class207s,
                   boolean bool) {
@@ -17,31 +17,31 @@ final class Class324_Sub5 extends Class324 {
         int i = 0;
         for (int i_0_ = 0; i_0_ < 256; i_0_++) {
             Class207 class207 = class207s[i_0_];
-            if (((Class207) class207).anInt2696 > i)
-                i = ((Class207) class207).anInt2696;
-            if (((Class207) class207).anInt2702 > i)
-                i = ((Class207) class207).anInt2702;
+            if (class207.anInt2696 > i)
+                i = class207.anInt2696;
+            if (class207.anInt2702 > i)
+                i = class207.anInt2702;
         }
         int i_1_ = i * 16;
         if (bool) {
             byte[] is = new byte[i_1_ * i_1_];
             for (int i_2_ = 0; i_2_ < 256; i_2_++) {
                 Class207 class207 = class207s[i_2_];
-                int i_3_ = ((Class207) class207).anInt2696;
-                int i_4_ = ((Class207) class207).anInt2702;
+                int i_3_ = class207.anInt2696;
+                int i_4_ = class207.anInt2702;
                 int i_5_ = i_2_ % 16 * i;
                 int i_6_ = i_2_ / 16 * i;
                 int i_7_ = i_6_ * i_1_ + i_5_;
                 int i_8_ = 0;
-                if (((Class207) class207).aByteArray2695 == null) {
-                    byte[] is_9_ = ((Class207) class207).aByteArray2699;
+                if (class207.aByteArray2695 == null) {
+                    byte[] is_9_ = class207.aByteArray2699;
                     for (int i_10_ = 0; i_10_ < i_3_; i_10_++) {
                         for (int i_11_ = 0; i_11_ < i_4_; i_11_++)
                             is[i_7_++] = (byte) (is_9_[i_8_++] == 0 ? 0 : -1);
                         i_7_ += i_1_ - i_4_;
                     }
                 } else {
-                    byte[] is_12_ = ((Class207) class207).aByteArray2695;
+                    byte[] is_12_ = class207.aByteArray2695;
                     for (int i_13_ = 0; i_13_ < i_3_; i_13_++) {
                         for (int i_14_ = 0; i_14_ < i_4_; i_14_++)
                             is[i_7_++] = is_12_[i_8_++];
@@ -57,11 +57,11 @@ final class Class324_Sub5 extends Class324 {
             int[] is = new int[i_1_ * i_1_];
             for (int i_15_ = 0; i_15_ < 256; i_15_++) {
                 Class207 class207 = class207s[i_15_];
-                int[] is_16_ = ((Class207) class207).anIntArray2697;
-                byte[] is_17_ = ((Class207) class207).aByteArray2695;
-                byte[] is_18_ = ((Class207) class207).aByteArray2699;
-                int i_19_ = ((Class207) class207).anInt2696;
-                int i_20_ = ((Class207) class207).anInt2702;
+                int[] is_16_ = class207.anIntArray2697;
+                byte[] is_17_ = class207.aByteArray2695;
+                byte[] is_18_ = class207.aByteArray2699;
+                int i_19_ = class207.anInt2696;
+                int i_20_ = class207.anInt2702;
                 int i_21_ = i_15_ % 16 * i;
                 int i_22_ = i_15_ / 16 * i;
                 int i_23_ = i_22_ * i_1_ + i_21_;
@@ -96,19 +96,19 @@ final class Class324_Sub5 extends Class324 {
         }
         aClass258_Sub3_Sub1_6511.method1957(9728, false);
         aClass61_6510 = new Class61(var_ha_Sub2, 256);
-        float f = (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_6511).aFloat9937
-                / (float) (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_6511)
+        float f = (aClass258_Sub3_Sub1_6511.aFloat9937
+                / (float) (aClass258_Sub3_Sub1_6511
                 .anInt9940));
         float f_30_
-                = (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_6511).aFloat9938
-                / (float) (((Class258_Sub3_Sub1) aClass258_Sub3_Sub1_6511)
+                = (aClass258_Sub3_Sub1_6511.aFloat9938
+                / (float) (aClass258_Sub3_Sub1_6511
                 .anInt9939));
         for (int i_31_ = 0; i_31_ < 256; i_31_++) {
             Class207 class207 = class207s[i_31_];
-            int i_32_ = ((Class207) class207).anInt2696;
-            int i_33_ = ((Class207) class207).anInt2702;
-            int i_34_ = ((Class207) class207).anInt2700;
-            int i_35_ = ((Class207) class207).anInt2703;
+            int i_32_ = class207.anInt2696;
+            int i_33_ = class207.anInt2702;
+            int i_34_ = class207.anInt2700;
+            int i_35_ = class207.anInt2703;
             float f_36_ = (float) (i_31_ % 16 * i);
             float f_37_ = (float) (i_31_ / 16 * i);
             float f_38_ = f_36_ * f;
@@ -118,20 +118,16 @@ final class Class324_Sub5 extends Class324 {
             aClass61_6510.method595((byte) 123, i_31_);
             OpenGL.glBegin(7);
             OpenGL.glTexCoord2f(f_38_,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_6511).aFloat9938 - f_39_);
+                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_);
             OpenGL.glVertex2i(i_35_, i_34_);
             OpenGL.glTexCoord2f(f_38_,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_6511).aFloat9938 - f_41_);
+                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_41_);
             OpenGL.glVertex2i(i_35_, i_34_ + i_32_);
             OpenGL.glTexCoord2f(f_40_,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_6511).aFloat9938 - f_41_);
+                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_41_);
             OpenGL.glVertex2i(i_35_ + i_33_, i_34_ + i_32_);
             OpenGL.glTexCoord2f(f_40_,
-                    ((Class258_Sub3_Sub1)
-                            aClass258_Sub3_Sub1_6511).aFloat9938 - f_39_);
+                    aClass258_Sub3_Sub1_6511.aFloat9938 - f_39_);
             OpenGL.glVertex2i(i_35_ + i_33_, i_34_);
             OpenGL.glEnd();
             aClass61_6510.method591(-1);
@@ -142,7 +138,7 @@ final class Class324_Sub5 extends Class324 {
                           aa var_aa, int i_44_, int i_45_) {
         aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
         Class258_Sub3_Sub1 class258_sub3_sub1
-                = ((aa_Sub1) var_aa_Sub1).aClass258_Sub3_Sub1_5193;
+                = var_aa_Sub1.aClass258_Sub3_Sub1_5193;
         aHa_Sub2_6509.method3735(9473);
         aHa_Sub2_6509.method3771((byte) -109, aClass258_Sub3_Sub1_6511);
         if (aBoolean6512 || bool) {
@@ -157,11 +153,11 @@ final class Class324_Sub5 extends Class324 {
         OpenGL.glTexGeni(8192, 9472, 9216);
         OpenGL.glTexGeni(8193, 9472, 9216);
         float f
-                = (((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9937
-                / (float) ((Class258_Sub3_Sub1) class258_sub3_sub1).anInt9940);
+                = (class258_sub3_sub1.aFloat9937
+                / (float) class258_sub3_sub1.anInt9940);
         float f_46_
-                = (((Class258_Sub3_Sub1) class258_sub3_sub1).aFloat9938
-                / (float) ((Class258_Sub3_Sub1) class258_sub3_sub1).anInt9939);
+                = (class258_sub3_sub1.aFloat9938
+                / (float) class258_sub3_sub1.anInt9939);
         OpenGL.glTexGenfv(8192, 9474,
                 new float[]{f, 0.0F, 0.0F, (float) -i_44_ * f},
                 0);

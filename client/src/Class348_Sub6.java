@@ -32,10 +32,7 @@ final class Class348_Sub6 extends Class348 {
                     = ((Class)
                     Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.get(string));
             if (var_class_0_ != null) {
-                if (var_class_0_.getClassLoader()
-                        != var_class.getClassLoader())
-                    return false;
-                return true;
+                return var_class_0_.getClassLoader() == var_class.getClassLoader();
             }
             File file = null;
             if (file == null)
@@ -50,21 +47,19 @@ final class Class348_Sub6 extends Class348 {
                             = Class.forName("java.lang.reflect.AccessibleObject");
                     Method method
                             = var_class_2_.getDeclaredMethod("setAccessible",
-                            (new Class[]
-                                    {Boolean.TYPE}));
+                            Boolean.TYPE);
                     Method method_3_
                             = (var_class_1_.getDeclaredMethod
-                            ("load0", (new Class[]
-                                    {Class.forName("java.lang.Class"),
-                                            Class.forName("java.lang.String")})));
-                    method.invoke(method_3_, new Object[]{Boolean.TRUE});
+                            ("load0", Class.forName("java.lang.Class"),
+                                    Class.forName("java.lang.String")));
+                    method.invoke(method_3_, Boolean.TRUE);
 
                     // System.out.println(var_class);
 
                     method_3_.invoke(Runtime.getRuntime(),
-                            new Object[]{var_class,
-                                    file.getPath()});
-                    method.invoke(method_3_, new Object[]{Boolean.FALSE});
+                            var_class,
+                            file.getPath());
+                    method.invoke(method_3_, Boolean.FALSE);
                     Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565
                             .put(string, var_class);
                     return true;
@@ -92,8 +87,8 @@ final class Class348_Sub6 extends Class348 {
     }
 
     Class348_Sub6(int i, int i_4_) {
-        ((Class348_Sub6) this).anInt6636 = i_4_;
-        ((Class348_Sub6) this).anInt6630 = i;
+        this.anInt6636 = i_4_;
+        this.anInt6630 = i;
     }
 
     static final void method2770(int i) {

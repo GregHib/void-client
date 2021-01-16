@@ -23,8 +23,8 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
         if (aClass50Array9481 != null) {
             for (int i_2_ = 0; aClass50Array9481.length > i_2_; i_2_++) {
                 Class50 class50 = aClass50Array9481[i_2_];
-                int i_3_ = ((Class50) class50).anInt864;
-                int i_4_ = ((Class50) class50).anInt865;
+                int i_3_ = class50.anInt864;
+                int i_4_ = class50.anInt865;
                 if ((i_3_ ^ 0xffffffff) > -1) {
                     if ((i_4_ ^ 0xffffffff) <= -1)
                         class50.method457(i_1_, i_0_, -43);
@@ -45,10 +45,10 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
     final int[] method3042(int i, int i_5_) {
         anInt9486++;
         int[] is
-                = ((Class348_Sub40) this).aClass191_7032.method1433(i_5_ + -255,
+                = this.aClass191_7032.method1433(i_5_ + -255,
                 i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570)
-            method3151(((Class348_Sub40) this).aClass191_7032
+        if (this.aClass191_7032.aBoolean2570)
+            method3151(this.aClass191_7032
                             .method1427((byte) 16),
                     (byte) -27);
         if (i_5_ != 255)
@@ -65,18 +65,16 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
              class348_sub42_sub13
                      = ((Class348_Sub42_Sub13)
                      Class233.aClass107_3022.method1003((byte) 51))) {
-            if (((Class348_Sub42_Sub13) class348_sub42_sub13).anInt9615 > 1) {
-                ((Class348_Sub42_Sub13) class348_sub42_sub13).anInt9615 = 0;
+            if (class348_sub42_sub13.anInt9615 > 1) {
+                class348_sub42_sub13.anInt9615 = 0;
                 Class259.aClass60_3301.method582
                         (class348_sub42_sub13,
-                                ((Class348_Sub42_Sub12) (Class348_Sub42_Sub12)
-                                        (((Class348_Sub42) (((Class107) (((Class348_Sub42_Sub13)
-                                                class348_sub42_sub13)
-                                                .aClass107_9621))
-                                                .aClass348_Sub42_1647))
-                                                .aClass348_Sub42_7063)).aLong9600,
+                                ((Class348_Sub42_Sub12) class348_sub42_sub13
+                                        .aClass107_9621
+                                        .aClass348_Sub42_1647
+                                        .aClass348_Sub42_7063).aLong9600,
                                 (byte) -108);
-                ((Class348_Sub42_Sub13) class348_sub42_sub13)
+                class348_sub42_sub13
                         .aClass107_9621.method1009(i ^ 0x7dc976c2);
             }
         }
@@ -130,23 +128,23 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                         = Class265.method2022(class348_sub49, 0);
             }
         } else if (i == 1)
-            ((Class348_Sub40) this).aBoolean7045
+            this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
         anInt9484++;
     }
 
     final int[][] method3047(int i, int i_10_) {
         anInt9483++;
-        int[][] is = ((Class348_Sub40) this).aClass322_7033
+        int[][] is = this.aClass322_7033
                 .method2557(i_10_ + 1564598923, i);
         if (i_10_ != -1564599039)
             aClass70_9485 = null;
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        if (this.aClass322_7033.aBoolean4035) {
             int i_11_ = Class348_Sub40_Sub6.anInt9139;
             int i_12_ = Class286_Sub2.anInt6212;
             int[][] is_13_ = new int[i_12_][i_11_];
             int[][][] is_14_
-                    = ((Class348_Sub40) this).aClass322_7033.method2553(0);
+                    = this.aClass322_7033.method2553(0);
             method3151(is_13_, (byte) -27);
             for (int i_15_ = 0;
                  (i_15_ ^ 0xffffffff) > (Class286_Sub2.anInt6212 ^ 0xffffffff);

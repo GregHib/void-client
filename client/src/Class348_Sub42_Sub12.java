@@ -89,13 +89,13 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
             int i_12_ = -Class305.anInt3855 + i_10_;
             int i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685;
             int i_14_
-                    = (int) Math.sqrt((double) (i_11_ * i_11_ + i_13_ * i_13_));
+                    = (int) Math.sqrt(i_11_ * i_11_ + i_13_ * i_13_);
             Class348_Sub42_Sub19.anInt9701
-                    = (int) (Math.atan2((double) i_12_, (double) i_14_)
+                    = (int) (Math.atan2(i_12_, i_14_)
                     * 2607.5945876176133) & 0x3fff;
             Class5.anInt4638 = (int) (-2607.5945876176133
-                    * Math.atan2((double) i_11_,
-                    (double) i_13_)) & 0x3fff;
+                    * Math.atan2(i_11_,
+                    i_13_)) & 0x3fff;
             if ((Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff) > -1025)
                 Class348_Sub42_Sub19.anInt9701 = 1024;
             Class338.anInt4186 = 0;
@@ -110,18 +110,18 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
                          int i_17_, long l, int i_18_, int i_19_, boolean bool,
                          boolean bool_20_, long l_21_, boolean bool_22_) {
         try {
-            ((Class348_Sub42_Sub12) this).anInt9607 = i_19_;
-            ((Class348_Sub42_Sub12) this).anInt9608 = i_16_;
-            ((Class348_Sub42_Sub12) this).anInt9599 = i_17_;
-            ((Class348_Sub42_Sub12) this).aLong9605 = l;
-            ((Class348_Sub42_Sub12) this).aBoolean9610 = bool;
-            ((Class348_Sub42_Sub12) this).aBoolean9597 = bool_20_;
-            ((Class348_Sub42_Sub12) this).aString9601 = string_15_;
-            ((Class348_Sub42_Sub12) this).aBoolean9611 = bool_22_;
-            ((Class348_Sub42_Sub12) this).aString9593 = string;
-            ((Class348_Sub42_Sub12) this).anInt9609 = i;
-            ((Class348_Sub42_Sub12) this).aLong9600 = l_21_;
-            ((Class348_Sub42_Sub12) this).anInt9602 = i_18_;
+            this.anInt9607 = i_19_;
+            this.anInt9608 = i_16_;
+            this.anInt9599 = i_17_;
+            this.aLong9605 = l;
+            this.aBoolean9610 = bool;
+            this.aBoolean9597 = bool_20_;
+            this.aString9601 = string_15_;
+            this.aBoolean9611 = bool_22_;
+            this.aString9593 = string;
+            this.anInt9609 = i;
+            this.aLong9600 = l_21_;
+            this.anInt9602 = i_18_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

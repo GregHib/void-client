@@ -32,7 +32,7 @@ final class Class348_Sub42_Sub18 extends Class348_Sub42 {
     }
 
     Class348_Sub42_Sub18(Class318_Sub1_Sub3_Sub5 class318_sub1_sub3_sub5) {
-        ((Class348_Sub42_Sub18) this).aClass318_Sub1_Sub3_Sub5_9682
+        this.aClass318_Sub1_Sub3_Sub5_9682
                 = class318_sub1_sub3_sub5;
     }
 

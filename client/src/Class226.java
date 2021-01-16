@@ -4,8 +4,8 @@
 
 final class Class226 {
     static Class356 aClass356_2959 = new Class356(512);
-    private Class60 aClass60_2960 = new Class60(64);
-    private Class45 aClass45_2961;
+    private final Class60 aClass60_2960 = new Class60(64);
+    private final Class45 aClass45_2961;
     static int anInt2962;
     static int anInt2963;
     static int anInt2964 = 64;
@@ -20,7 +20,7 @@ final class Class226 {
     final Class348_Sub42_Sub11 method1625(int i, int i_0_) {
         anInt2963++;
         Class348_Sub42_Sub11 class348_sub42_sub11
-                = (Class348_Sub42_Sub11) aClass60_2960.method583((long) i_0_, -51);
+                = (Class348_Sub42_Sub11) aClass60_2960.method583(i_0_, -51);
         if (class348_sub42_sub11 != null)
             return class348_sub42_sub11;
         byte[] is;
@@ -35,7 +35,7 @@ final class Class226 {
             class348_sub42_sub11.method3224((byte) 104);
         if (i != 0)
             aClass45_2965 = null;
-        aClass60_2960.method582(class348_sub42_sub11, (long) i_0_,
+        aClass60_2960.method582(class348_sub42_sub11, i_0_,
                 (byte) -123);
         return class348_sub42_sub11;
     }

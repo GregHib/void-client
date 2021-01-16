@@ -41,7 +41,7 @@ final class Class373_Sub2 extends Class373
     static int anInt7455;
     private int anInt7456;
     static int anInt7457;
-    private boolean aBoolean7458;
+    private final boolean aBoolean7458;
     private Component aComponent7459;
 
     private final void method3603(byte i, Component component) {
@@ -94,9 +94,7 @@ final class Class373_Sub2 extends Class373
         anInt7457++;
         if (i <= 112)
             method3606(-77, 6, -104, -59, 86);
-        if ((anInt7432 & 0x4 ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (anInt7432 & 0x4 ^ 0xffffffff) != -1;
     }
 
     final synchronized void method3589(int i) {
@@ -145,11 +143,11 @@ final class Class373_Sub2 extends Class373
                                   int i_8_) {
         anInt7439++;
         Class348_Sub45_Sub2 class348_sub45_sub2 = new Class348_Sub45_Sub2();
-        ((Class348_Sub45_Sub2) class348_sub45_sub2).anInt9739 = i_6_;
-        ((Class348_Sub45_Sub2) class348_sub45_sub2).anInt9733 = i_5_;
-        ((Class348_Sub45_Sub2) class348_sub45_sub2).anInt9730 = i_7_;
-        ((Class348_Sub45_Sub2) class348_sub45_sub2).anInt9736 = i;
-        ((Class348_Sub45_Sub2) class348_sub45_sub2).aLong9734
+        class348_sub45_sub2.anInt9739 = i_6_;
+        class348_sub45_sub2.anInt9733 = i_5_;
+        class348_sub45_sub2.anInt9730 = i_7_;
+        class348_sub45_sub2.anInt9736 = i;
+        class348_sub45_sub2.aLong9734
                 = Class62.method599(-110);
         aClass262_7450.method1999(class348_sub45_sub2, -20180);
         if (i_8_ >= -110)
@@ -172,18 +170,14 @@ final class Class373_Sub2 extends Class373
     final boolean method3588(int i) {
         int i_9_ = -108 % ((-38 - i) / 48);
         anInt7434++;
-        if ((anInt7432 & 0x2 ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (anInt7432 & 0x2 ^ 0xffffffff) != -1;
     }
 
     final boolean method3595(int i) {
         anInt7455++;
         if (i >= -67)
             mouseExited(null);
-        if ((anInt7432 & 0x1) == 0)
-            return false;
-        return true;
+        return (anInt7432 & 0x1) != 0;
     }
 
     static final String method3607(int i, Class348_Sub49 class348_sub49,
@@ -195,10 +189,10 @@ final class Class373_Sub2 extends Class373
             if ((i_12_ ^ 0xffffffff) < (i ^ 0xffffffff))
                 i_12_ = i;
             byte[] is = new byte[i_12_];
-            ((Class348_Sub49) class348_sub49).anInt7197
+            class348_sub49.anInt7197
                     += (Class64.aClass296_1131.method2226
-                    (is, ((Class348_Sub49) class348_sub49).anInt7197,
-                            ((Class348_Sub49) class348_sub49).aByteArray7154, i_12_,
+                    (is, class348_sub49.anInt7197,
+                            class348_sub49.aByteArray7154, i_12_,
                             -1, 0));
             String string = Class367_Sub8.method3546(is, 0, i_12_, 0);
             return string;

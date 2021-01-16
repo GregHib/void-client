@@ -467,7 +467,7 @@ public abstract class Applet_Sub1 extends Applet
                 Method method = Class297.aMethod3786;
                 if (method != null) {
                     try {
-                        method.invoke(applet, new Object[]{Boolean.TRUE});
+                        method.invoke(applet, Boolean.TRUE);
                     } catch (Throwable throwable) {
                         /* empty */
                     }

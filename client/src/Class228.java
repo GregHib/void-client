@@ -42,8 +42,8 @@ final class Class228 {
                 return false;
             Method method
                     = var_class.getDeclaredMethod("setAccessible",
-                    new Class[]{Boolean.TYPE});
-            method.invoke(field, new Object[]{Boolean.TRUE});
+                    Boolean.TYPE);
+            method.invoke(field, Boolean.TRUE);
             try {
                 enumeration
                         = Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.keys();
@@ -65,7 +65,7 @@ final class Class228 {
                                 Field field_2_ = object.getClass()
                                         .getDeclaredField("name");
                                 method.invoke(field_2_,
-                                        new Object[]{Boolean.TRUE});
+                                        Boolean.TRUE);
                                 try {
                                     String string_3_
                                             = (String) field_2_.get(object);
@@ -78,16 +78,14 @@ final class Class228 {
                                         Method method_5_
                                                 = (object.getClass()
                                                 .getDeclaredMethod
-                                                        ("finalize", new Class[0]));
+                                                        ("finalize"));
                                         method.invoke(field_4_,
-                                                (new Object[]
-                                                        {Boolean.TRUE}));
+                                                Boolean.TRUE);
                                         method.invoke(method_5_,
-                                                (new Object[]
-                                                        {Boolean.TRUE}));
+                                                Boolean.TRUE);
                                         try {
-                                            method_5_.invoke(object,
-                                                    new Object[0]);
+                                            method_5_.invoke(object
+                                            );
                                             field_4_.set(object,
                                                     new Integer(0));
                                             hashtable.remove(string);
@@ -95,17 +93,15 @@ final class Class228 {
                                             /* empty */
                                         }
                                         method.invoke(method_5_,
-                                                (new Object[]
-                                                        {Boolean.FALSE}));
+                                                Boolean.FALSE);
                                         method.invoke(field_4_,
-                                                (new Object[]
-                                                        {Boolean.FALSE}));
+                                                Boolean.FALSE);
                                     }
                                 } catch (Throwable throwable) {
                                     /* empty */
                                 }
                                 method.invoke(field_2_,
-                                        new Object[]{Boolean.FALSE});
+                                        Boolean.FALSE);
                             } catch (Throwable throwable) {
                                 /* empty */
                             }
@@ -117,7 +113,7 @@ final class Class228 {
             } catch (Throwable throwable) {
                 /* empty */
             }
-            method.invoke(field, new Object[]{Boolean.FALSE});
+            method.invoke(field, Boolean.FALSE);
         } catch (Throwable throwable) {
             /* empty */
         }
@@ -181,108 +177,95 @@ final class Class228 {
                          Class289.aClass262_3705.method1990((byte) 116))) {
                 Class42 class42
                         = (Class75.aClass153_1238.method1225
-                        (((Class348_Sub21) (((Class348_Sub12) class348_sub12)
-                                        .aClass348_Sub21_6751)).anInt6847,
+                        (class348_sub12
+                                        .aClass348_Sub21_6751.anInt6847,
                                 (byte) 125));
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
-                    if (((Class42) class42).aStringArray577 != null) {
-                        if (((Class42) class42).aStringArray577[4] != null)
+                    if (class42.aStringArray577 != null) {
+                        if (class42.aStringArray577[4] != null)
                             Class50_Sub3.method466
-                                    (false, ((Class42) class42).aString565, 0,
+                                    (false, class42.aString565, 0,
                                             (byte) -100, false,
-                                            ((Class42) class42).anInt596, -1, true, 1006,
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
-                                            ((Class42) class42).aStringArray577[4],
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
+                                            class42.anInt596, -1, true, 1006,
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
+                                            class42.aStringArray577[4],
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
                                             -1);
-                        if (((Class42) class42).aStringArray577[3] != null)
+                        if (class42.aStringArray577[3] != null)
                             Class50_Sub3.method466
-                                    (false, ((Class42) class42).aString565, 0,
+                                    (false, class42.aString565, 0,
                                             (byte) -127, false,
-                                            ((Class42) class42).anInt596, -1, true, 1003,
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
-                                            ((Class42) class42).aStringArray577[3],
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
+                                            class42.anInt596, -1, true, 1003,
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
+                                            class42.aStringArray577[3],
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
                                             -1);
-                        if (((Class42) class42).aStringArray577[2] != null)
+                        if (class42.aStringArray577[2] != null)
                             Class50_Sub3.method466
-                                    (false, ((Class42) class42).aString565, 0,
+                                    (false, class42.aString565, 0,
                                             (byte) -108, false,
-                                            ((Class42) class42).anInt596, -1, true, 1002,
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
-                                            ((Class42) class42).aStringArray577[2],
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
+                                            class42.anInt596, -1, true, 1002,
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
+                                            class42.aStringArray577[2],
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
                                             -1);
-                        if (((Class42) class42).aStringArray577[1] != null)
+                        if (class42.aStringArray577[1] != null)
                             Class50_Sub3.method466
-                                    (false, ((Class42) class42).aString565, 0,
+                                    (false, class42.aString565, 0,
                                             (byte) -69, false,
-                                            ((Class42) class42).anInt596, -1, true, 1012,
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
-                                            ((Class42) class42).aStringArray577[1],
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
+                                            class42.anInt596, -1, true, 1012,
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
+                                            class42.aStringArray577[1],
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
                                             -1);
-                        if (((Class42) class42).aStringArray577[0] != null)
+                        if (class42.aStringArray577[0] != null)
                             Class50_Sub3.method466
-                                    (false, ((Class42) class42).aString565, 0,
+                                    (false, class42.aString565, 0,
                                             (byte) -92, false,
-                                            ((Class42) class42).anInt596, -1, true, 1009,
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
-                                            ((Class42) class42).aStringArray577[0],
-                                            (long) ((Class348_Sub21)
-                                                    (((Class348_Sub12) class348_sub12)
-                                                            .aClass348_Sub21_6751)).anInt6847,
+                                            class42.anInt596, -1, true, 1009,
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
+                                            class42.aStringArray577[0],
+                                            class348_sub12
+                                                    .aClass348_Sub21_6751.anInt6847,
                                             -1);
                     }
-                    if (!((Class348_Sub21) (((Class348_Sub12) class348_sub12)
-                            .aClass348_Sub21_6751))
+                    if (!class348_sub12
+                            .aClass348_Sub21_6751
                             .aBoolean6848) {
-                        ((Class348_Sub21) (((Class348_Sub12) class348_sub12)
-                                .aClass348_Sub21_6751)).aBoolean6848
+                        class348_sub12
+                                .aClass348_Sub21_6751.aBoolean6848
                                 = true;
                         Class66.method701(Class90.aClass273_1512,
-                                ((Class348_Sub21)
-                                        (((Class348_Sub12) class348_sub12)
-                                                .aClass348_Sub21_6751)).anInt6847,
-                                ((Class42) class42).anInt596);
+                                class348_sub12
+                                        .aClass348_Sub21_6751.anInt6847,
+                                class42.anInt596);
                     }
-                    if (((Class348_Sub21) (((Class348_Sub12) class348_sub12)
-                            .aClass348_Sub21_6751))
+                    if (class348_sub12
+                            .aClass348_Sub21_6751
                             .aBoolean6848)
                         Class66.method701(Class59_Sub1_Sub2.aClass273_8664,
-                                ((Class348_Sub21)
-                                        (((Class348_Sub12) class348_sub12)
-                                                .aClass348_Sub21_6751)).anInt6847,
-                                ((Class42) class42).anInt596);
-                } else if (((Class348_Sub21) (((Class348_Sub12) class348_sub12)
-                        .aClass348_Sub21_6751))
+                                class348_sub12
+                                        .aClass348_Sub21_6751.anInt6847,
+                                class42.anInt596);
+                } else if (class348_sub12
+                        .aClass348_Sub21_6751
                         .aBoolean6848) {
-                    ((Class348_Sub21) (((Class348_Sub12) class348_sub12)
-                            .aClass348_Sub21_6751)).aBoolean6848
+                    class348_sub12
+                            .aClass348_Sub21_6751.aBoolean6848
                             = false;
                     Class66.method701(Class77.aClass273_1298,
-                            ((Class348_Sub21)
-                                    (((Class348_Sub12) class348_sub12)
-                                            .aClass348_Sub21_6751)).anInt6847,
-                            ((Class42) class42).anInt596);
+                            class348_sub12
+                                    .aClass348_Sub21_6751.anInt6847,
+                            class42.anInt596);
                 }
             }
         }

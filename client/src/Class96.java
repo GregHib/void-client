@@ -20,9 +20,9 @@ final class Class96 {
             Method method
                     = (var_class.getDeclaredMethod
                     ("createToolkit",
-                            new Class[]{Class.forName("java.awt.Canvas"),
-                                    Class.forName("d"), Class.forName("Class45"),
-                                    Class.forName("java.lang.Integer")}));
+                            Class.forName("java.awt.Canvas"),
+                            Class.forName("d"), Class.forName("Class45"),
+                            Class.forName("java.lang.Integer")));
             var_ha = (ha) method.invoke(null,
                     new Object[]{canvas, var_d, class45,
                             new Integer(i)});

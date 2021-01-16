@@ -14,34 +14,33 @@ final class Class281 {
     static final void method2106(String string, int i) {
         anInt3645++;
         Class348_Sub47 class348_sub47 = Class203.method1478(true);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
-                .method3378(false, ((Class29) Class178.aClass29_2353).anInt400);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
+                .method3378(false, Class178.aClass29_2353.anInt400);
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3337((byte) 107, 0);
-        int i_0_ = (((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                .aClass348_Sub49_Sub2_7116))
+        int i_0_ = (class348_sub47
+                .aClass348_Sub49_Sub2_7116
                 .anInt7197);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3337((byte) 107, 634);
         int[] is = Class50_Sub1.method463(class348_sub47, false);
-        int i_1_ = (((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                .aClass348_Sub49_Sub2_7116))
+        int i_1_ = (class348_sub47
+                .aClass348_Sub49_Sub2_7116
                 .anInt7197);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3333((byte) -5, string);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3378(false, Class348_Sub33.anInt6967);
-        ((Class348_Sub49)
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116).anInt7197
+        class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197
                 += 7;
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116.method3350
+        class348_sub47.aClass348_Sub49_Sub2_7116.method3350
                 (i_1_, true, is,
-                        ((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                                .aClass348_Sub49_Sub2_7116)).anInt7197);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116.method3383
+                        class348_sub47
+                                .aClass348_Sub49_Sub2_7116.anInt7197);
+        class348_sub47.aClass348_Sub49_Sub2_7116.method3383
                 (1809639944,
-                        -i_0_ + (((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                                .aClass348_Sub49_Sub2_7116))
+                        -i_0_ + (class348_sub47
+                                .aClass348_Sub49_Sub2_7116
                                 .anInt7197));
         Class348_Sub42_Sub14.method3243(118, class348_sub47);
         if (i <= 99)

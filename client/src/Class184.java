@@ -37,8 +37,7 @@ final class Class184 {
                 97);
         if (bool) {
             Class167.method1294((byte) -113,
-                    (((Class348_Sub49)
-                            Class299_Sub1_Sub2.aClass348_Sub49_8698)
+                    (Class299_Sub1_Sub2.aClass348_Sub49_8698
                             .aByteArray7154));
             Class65.aClass110_Sub1Array1146
                     = new Class110_Sub1[Class225.anInt2956];
@@ -72,49 +71,49 @@ final class Class184 {
             if (i >= -38)
                 method1384(-77, 22, 77);
             Interface10 interface10 = null;
-            if (((Class348_Sub27) class348_sub27).anInt6904 == 0)
+            if (class348_sub27.anInt6904 == 0)
                 interface10
                         = ((Interface10)
-                        r_Sub2.method3297((((Class348_Sub27) class348_sub27)
+                        r_Sub2.method3297((class348_sub27
                                         .anInt6899),
-                                (((Class348_Sub27) class348_sub27)
+                                (class348_sub27
                                         .anInt6905),
-                                (((Class348_Sub27) class348_sub27)
+                                (class348_sub27
                                         .anInt6896)));
-            if (((Class348_Sub27) class348_sub27).anInt6904 == 1)
+            if (class348_sub27.anInt6904 == 1)
                 interface10
                         = ((Interface10)
                         (Class348_Sub40_Sub32.method3135
-                                (((Class348_Sub27) class348_sub27).anInt6899,
-                                        ((Class348_Sub27) class348_sub27).anInt6905,
-                                        ((Class348_Sub27) class348_sub27).anInt6896)));
-            if (((Class348_Sub27) class348_sub27).anInt6904 == 2)
+                                (class348_sub27.anInt6899,
+                                        class348_sub27.anInt6905,
+                                        class348_sub27.anInt6896)));
+            if (class348_sub27.anInt6904 == 2)
                 interface10
                         = ((Interface10)
                         (Class177.method1353
-                                (((Class348_Sub27) class348_sub27).anInt6899,
-                                        ((Class348_Sub27) class348_sub27).anInt6905,
-                                        ((Class348_Sub27) class348_sub27).anInt6896,
+                                (class348_sub27.anInt6899,
+                                        class348_sub27.anInt6905,
+                                        class348_sub27.anInt6896,
                                         (aClass2478 != null ? aClass2478
                                                 : (aClass2478 = method1389("Interface10"))))));
-            if ((((Class348_Sub27) class348_sub27).anInt6904 ^ 0xffffffff)
+            if ((class348_sub27.anInt6904 ^ 0xffffffff)
                     == -4)
                 interface10
                         = ((Interface10)
                         (Class348_Sub16_Sub3.method2878
-                                (((Class348_Sub27) class348_sub27).anInt6899,
-                                        ((Class348_Sub27) class348_sub27).anInt6905,
-                                        ((Class348_Sub27) class348_sub27).anInt6896)));
+                                (class348_sub27.anInt6899,
+                                        class348_sub27.anInt6905,
+                                        class348_sub27.anInt6896)));
             if (interface10 == null) {
-                ((Class348_Sub27) class348_sub27).anInt6892 = 0;
-                ((Class348_Sub27) class348_sub27).anInt6902 = -1;
-                ((Class348_Sub27) class348_sub27).anInt6903 = 0;
+                class348_sub27.anInt6892 = 0;
+                class348_sub27.anInt6902 = -1;
+                class348_sub27.anInt6903 = 0;
             } else {
-                ((Class348_Sub27) class348_sub27).anInt6902
+                class348_sub27.anInt6902
                         = interface10.method42(-103);
-                ((Class348_Sub27) class348_sub27).anInt6903
+                class348_sub27.anInt6903
                         = interface10.method39(111);
-                ((Class348_Sub27) class348_sub27).anInt6892
+                class348_sub27.anInt6892
                         = interface10.method41(-32228);
             }
         }

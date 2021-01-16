@@ -7,10 +7,10 @@ final class Class293 implements Runnable {
     private Class315 aClass315_3743;
     private volatile boolean aBoolean3744;
     private volatile boolean aBoolean3745;
-    private ha aHa3746;
-    private int[] anIntArray3747;
-    private Class348_Sub1[] aClass348_Sub1Array3748 = new Class348_Sub1[8];
-    private int anInt3749;
+    private final ha aHa3746;
+    private final int[] anIntArray3747;
+    private final Class348_Sub1[] aClass348_Sub1Array3748 = new Class348_Sub1[8];
+    private final int anInt3749;
     private volatile boolean aBoolean3750;
 
     final long method2204() {
@@ -46,21 +46,21 @@ final class Class293 implements Runnable {
                 Class318 class318 = aClass315_3743.method2362(25061);
                 if (class318 instanceof Class318_Sub1) {
                     Class318_Sub1 class318_sub1 = (Class318_Sub1) class318;
-                    if (((Class318_Sub1) class318_sub1).aBoolean6387)
+                    if (class318_sub1.aBoolean6387)
                         class318_sub1.method2387(Class9.aHa171, -127);
                     else {
                         Class38.method365(class318_sub1,
                                 aClass348_Sub1Array3748);
                         if (Class362.aClass324_4456 != null)
                             Class362.aClass324_4456.method2576
-                                    (((Class315) aClass315_3743).aString3953, -256,
-                                            ((Class318_Sub1) class318_sub1).anInt6380,
-                                            ((Class318_Sub1) class318_sub1).anInt6386,
+                                    (aClass315_3743.aString3953, -256,
+                                            class318_sub1.anInt6380,
+                                            class318_sub1.anInt6386,
                                             -16777216, -114);
                     }
                 } else {
                     int i
-                            = ((Class318_Sub2) (Class318_Sub2) class318).anInt6394;
+                            = ((Class318_Sub2) class318).anInt6394;
                     if (i >= 1 && i <= 4) {
                         s var_s = aa_Sub1.aSArray5191[i - 1];
                         for (int i_0_ = 0;
@@ -82,9 +82,9 @@ final class Class293 implements Runnable {
                                             - Class318_Sub1_Sub4_Sub1.anInt10084
                                             + i_1_);
                                     if (i_2_ >= 0
-                                            && i_2_ < ((s) var_s).anInt4587
+                                            && i_2_ < var_s.anInt4587
                                             && i_3_ >= 0
-                                            && i_3_ < ((s) var_s).anInt4590) {
+                                            && i_3_ < var_s.anInt4590) {
                                         Class9.aHa171.H
                                                 (i_2_ << Class362.anInt4459,
                                                         var_s.method3982((byte) -86, i_3_,
@@ -140,10 +140,8 @@ final class Class293 implements Runnable {
     }
 
     final boolean method2210() {
-        if (aClass315_3743 != null
-                && (aBoolean3744 || !aClass315_3743.method2360(70)))
-            return false;
-        return true;
+        return aClass315_3743 == null
+                || (!aBoolean3744 && aClass315_3743.method2360(70));
     }
 
     Class293(int i, ha var_ha) {

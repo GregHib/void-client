@@ -6,7 +6,7 @@ final class Class316 {
     static int anInt3958;
     static Class348_Sub51 aClass348_Sub51_3959;
     static int anInt3960;
-    private int[] anIntArray3961;
+    private final int[] anIntArray3961;
     static int anInt3962;
     static Class348_Sub42_Sub12 aClass348_Sub42_Sub12_3963;
     static int anInt3964;
@@ -120,36 +120,36 @@ final class Class316 {
                                    Class348_Sub42_Sub12 class348_sub42_sub12) {
         anInt3962++;
         int i_41_ = 9 / ((79 - i) / 46);
-        if (((Class348_Sub42_Sub12) class348_sub42_sub12).aString9595 == null
-                || ((Class348_Sub42_Sub12) class348_sub42_sub12).aString9595
+        if (class348_sub42_sub12.aString9595 == null
+                || class348_sub42_sub12.aString9595
                 .length() == 0) {
-            if ((((Class348_Sub42_Sub12) class348_sub42_sub12).aString9601
+            if ((class348_sub42_sub12.aString9601
                     == null)
-                    || ((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    || class348_sub42_sub12
                     .aString9601.length() <= 0)
-                return (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                return (class348_sub42_sub12
                         .aString9593);
-            return (((Class348_Sub42_Sub12) class348_sub42_sub12).aString9593
+            return (class348_sub42_sub12.aString9593
                     + Class274.aClass274_3515
                     .method2063(Class348_Sub33.anInt6967, 544)
-                    + (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    + (class348_sub42_sub12
                     .aString9601));
         }
-        if (((Class348_Sub42_Sub12) class348_sub42_sub12).aString9601 == null
-                || ((Class348_Sub42_Sub12) class348_sub42_sub12).aString9601
+        if (class348_sub42_sub12.aString9601 == null
+                || class348_sub42_sub12.aString9601
                 .length() <= 0)
-            return (((Class348_Sub42_Sub12) class348_sub42_sub12).aString9593
+            return (class348_sub42_sub12.aString9593
                     + Class274.aClass274_3515
                     .method2063(Class348_Sub33.anInt6967, 544)
-                    + (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    + (class348_sub42_sub12
                     .aString9595));
-        return (((Class348_Sub42_Sub12) class348_sub42_sub12).aString9593
+        return (class348_sub42_sub12.aString9593
                 + Class274.aClass274_3515.method2063(Class348_Sub33.anInt6967,
                 544)
-                + ((Class348_Sub42_Sub12) class348_sub42_sub12).aString9601
+                + class348_sub42_sub12.aString9601
                 + Class274.aClass274_3515.method2063(Class348_Sub33.anInt6967,
                 544)
-                + ((Class348_Sub42_Sub12) class348_sub42_sub12).aString9595);
+                + class348_sub42_sub12.aString9595);
     }
 
     static final void method2368(int i) {

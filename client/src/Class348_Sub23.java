@@ -55,7 +55,7 @@ abstract class Class348_Sub23 extends Class348 {
         if (i != 16384)
             aFloatArray6867 = null;
         anInt6863++;
-        ((Class348_Sub23) this).anInt6868++;
+        this.anInt6868++;
     }
 
     abstract void method2964(byte i, OggPacket oggpacket);
@@ -67,8 +67,7 @@ abstract class Class348_Sub23 extends Class348 {
         if ((i ^ 0xffffffff) == -1) {
             Class348_Sub8.aHa6654
                     = Class104.method958(true, 0, Class348_Sub40_Sub4.aD9113,
-                    ((Class348_Sub51)
-                            Class316.aClass348_Sub51_3959)
+                    Class316.aClass348_Sub51_3959
                             .aClass239_Sub20_7248
                             .method1808(-32350) * 2,
                     Class305.aCanvas3869,
@@ -112,8 +111,7 @@ abstract class Class348_Sub23 extends Class348 {
             try {
                 Class348_Sub8.aHa6654
                         = Class104.method958(true, i, Class348_Sub40_Sub4.aD9113,
-                        2 * ((Class348_Sub51)
-                                Class316.aClass348_Sub51_3959)
+                        2 * Class316.aClass348_Sub51_3959
                                 .aClass239_Sub20_7248
                                 .method1808(i_1_ + -32350),
                         Class305.aCanvas3869,
@@ -136,8 +134,7 @@ abstract class Class348_Sub23 extends Class348 {
                 if (Class348_Sub8.aHa6654.method3693()) {
                     boolean bool_2_ = true;
                     try {
-                        bool_2_ = (((Class348_Sub4)
-                                Class348_Sub40_Sub20.aClass348_Sub4_9264)
+                        bool_2_ = (Class348_Sub40_Sub20.aClass348_Sub4_9264
                                 .anInt6609) > 256;
                     } catch (Throwable throwable) {
                         /* empty */
@@ -150,13 +147,13 @@ abstract class Class348_Sub23 extends Class348 {
                     Class348_Sub8.aHa6654.method3651(var_za);
                 }
             } catch (Throwable throwable) {
-                int i_3_ = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                int i_3_ = Class316.aClass348_Sub51_3959
                         .aClass239_Sub25_7271.method1829(-32350);
                 if ((i_3_ ^ 0xffffffff) == -3)
                     Class139.aBoolean1952 = true;
                 Class316.aClass348_Sub51_3959.method3429
                         ((byte) 74,
-                                (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                                (Class316.aClass348_Sub51_3959
                                         .aClass239_Sub25_7271),
                                 0);
                 method2965(string, i_3_, bool, i_1_);
@@ -171,12 +168,11 @@ abstract class Class348_Sub23 extends Class348 {
                 }
             }
         }
-        ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        Class316.aClass348_Sub51_3959
                 .aClass239_Sub25_7271.method1826(!bool, -142238264);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub25_7271),
                 i);
         Class348_Sub49.method3354(i_1_ + -78);
@@ -185,13 +181,11 @@ abstract class Class348_Sub23 extends Class348 {
         Class157.aClass101_2123 = Class348_Sub8.aHa6654.method3654();
         Class50_Sub1.aClass101_5209 = Class348_Sub8.aHa6654.method3654();
         Class290.method2196((byte) -9);
-        Class348_Sub8.aHa6654.method3630(((Class348_Sub51)
-                Class316.aClass348_Sub51_3959)
+        Class348_Sub8.aHa6654.method3630(Class316.aClass348_Sub51_3959
                 .aClass239_Sub2_7228
                 .method1726(-32350) == 1);
         if (Class348_Sub8.aHa6654.method3627())
-            Class348_Sub40_Sub33.method3137(((Class348_Sub51)
-                            Class316.aClass348_Sub51_3959)
+            Class348_Sub40_Sub33.method3137(Class316.aClass348_Sub51_3959
                             .aClass239_Sub12_7243
                             .method1771(-32350) == 1,
                     (byte) -24);
@@ -206,7 +200,7 @@ abstract class Class348_Sub23 extends Class348 {
     }
 
     Class348_Sub23(OggStreamState oggstreamstate) {
-        ((Class348_Sub23) this).anOggStreamState6869 = oggstreamstate;
+        this.anOggStreamState6869 = oggstreamstate;
     }
 
     static final void method2966(int i, int i_4_, boolean bool) {
@@ -216,7 +210,7 @@ abstract class Class348_Sub23 extends Class348 {
         if (bool != false)
             aFloatArray6865 = null;
         class348_sub42_sub15.method3246(-25490);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i_4_;
+        class348_sub42_sub15.anInt9652 = i_4_;
     }
 
     static {

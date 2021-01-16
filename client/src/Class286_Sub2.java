@@ -17,7 +17,7 @@ final class Class286_Sub2 extends Class286 {
 
     final void method2133(int i) {
         if (i < -75) {
-            ((Class286) this).aHa_Sub2_3684.method3804(false, (byte) -61);
+            this.aHa_Sub2_3684.method3804(false, (byte) -61);
             anInt6211++;
         }
     }
@@ -58,26 +58,26 @@ final class Class286_Sub2 extends Class286 {
                 = Class286_Sub3.method2148(Class59_Sub1.aClass351_5288,
                 Class348_Sub23_Sub2.aClass77_9029,
                 -124);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3378(false, Class348_Sub42_Sub12.method3229(-96));
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3337((byte) 107, Class321.anInt4017);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3337((byte) 107, Class348_Sub42_Sub8_Sub2.anInt10432);
         if (i != -24498)
             aStringArray6205 = null;
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116.method3378
-                (false, ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        class348_sub47.aClass348_Sub49_Sub2_7116.method3378
+                (false, Class316.aClass348_Sub51_3959
                         .aClass239_Sub20_7248.method1808(-32350));
         Class348_Sub42_Sub14.method3243(-101, class348_sub47);
     }
 
     final void method2140(Class258 class258, byte i, int i_5_) {
         anInt6206++;
-        ((Class286) this).aHa_Sub2_3684.method3771((byte) -80, class258);
+        this.aHa_Sub2_3684.method3771((byte) -80, class258);
         if (i >= -89)
             method2136(-67, -39, (byte) 18);
-        ((Class286) this).aHa_Sub2_3684.method3761(0, i_5_);
+        this.aHa_Sub2_3684.method3761(0, i_5_);
     }
 
     static final void method2146(byte i) {
@@ -110,7 +110,7 @@ final class Class286_Sub2 extends Class286 {
     }
 
     final void method2134(boolean bool, boolean bool_9_) {
-        ((Class286) this).aHa_Sub2_3684.method3804(true, (byte) -83);
+        this.aHa_Sub2_3684.method3804(true, (byte) -83);
         if (bool_9_ != false)
             method2136(-78, 73, (byte) 12);
         anInt6204++;

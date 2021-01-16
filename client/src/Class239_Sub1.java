@@ -35,7 +35,7 @@ final class Class239_Sub1 extends Class239 {
         anInt5843++;
         if (i != -32350)
             method1714(82, -89);
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     static final void method1721(String string, byte i) {
@@ -49,10 +49,8 @@ final class Class239_Sub1 extends Class239 {
                 Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                         = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058
                         [is[i_4_]]);
-                if (((Class318_Sub1_Sub3_Sub3_Sub2)
-                        class318_sub1_sub3_sub3_sub2).aString10544 != null
-                        && ((Class318_Sub1_Sub3_Sub3_Sub2)
-                        class318_sub1_sub3_sub3_sub2)
+                if (class318_sub1_sub3_sub3_sub2.aString10544 != null
+                        && class318_sub1_sub3_sub3_sub2
                         .aString10544.equalsIgnoreCase(string)
                         && (((class318_sub1_sub3_sub3_sub2
                         == Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
@@ -65,28 +63,26 @@ final class Class239_Sub1 extends Class239 {
                             (Class348_Sub23_Sub2
                                     .aClass77_9029),
                             -102);
-                    ((Class348_Sub47) class348_sub47)
+                    class348_sub47
                             .aClass348_Sub49_Sub2_7116
                             .method3349(4325, Class9.anInt169);
-                    ((Class348_Sub47) class348_sub47)
+                    class348_sub47
                             .aClass348_Sub49_Sub2_7116
                             .method3353(is[i_4_], (byte) 3);
-                    ((Class348_Sub47) class348_sub47)
+                    class348_sub47
                             .aClass348_Sub49_Sub2_7116
                             .method3353(Class301.anInt3829, (byte) 3);
-                    ((Class348_Sub47) class348_sub47)
+                    class348_sub47
                             .aClass348_Sub49_Sub2_7116
                             .method3356(Class149.anInt2046, -4086);
-                    ((Class348_Sub47) class348_sub47)
+                    class348_sub47
                             .aClass348_Sub49_Sub2_7116.method3374((byte) -64, 0);
                     Class348_Sub42_Sub14.method3243(116, class348_sub47);
                     bool = true;
                     Class298.method2252
                             (true,
-                                    ((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2).anIntArray10320[0],
-                                    ((Class318_Sub1_Sub3_Sub3)
-                                            class318_sub1_sub3_sub3_sub2).anIntArray10317[0],
+                                    class318_sub1_sub3_sub3_sub2.anIntArray10320[0],
+                                    class318_sub1_sub3_sub3_sub2.anIntArray10317[0],
                                     (byte) -99,
                                     class318_sub1_sub3_sub3_sub2.method2436((byte) 54), 0,
                                     class318_sub1_sub3_sub3_sub2.method2436((byte) 91),
@@ -104,9 +100,9 @@ final class Class239_Sub1 extends Class239 {
     }
 
     final void method1716(boolean bool) {
-        if (((Class239) this).anInt3138 != 1
-                && (((Class239) this).anInt3138 ^ 0xffffffff) != -1)
-            ((Class239) this).anInt3138 = method1710(20014);
+        if (this.anInt3138 != 1
+                && (this.anInt3138 ^ 0xffffffff) != -1)
+            this.anInt3138 = method1710(20014);
         if (bool == false)
             anInt5846++;
     }
@@ -118,9 +114,7 @@ final class Class239_Sub1 extends Class239 {
     static final boolean method1722(int i, int i_5_, byte i_6_) {
         int i_7_ = 92 % ((i_6_ - 48) / 32);
         anInt5848++;
-        if ((0x10000 & i ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (0x10000 & i ^ 0xffffffff) != -1;
     }
 
     public static void method1723(byte i) {
@@ -139,7 +133,7 @@ final class Class239_Sub1 extends Class239 {
     final void method1712(int i, int i_9_) {
         int i_10_ = -57 / ((82 - i) / 35);
         anInt5844++;
-        ((Class239) this).anInt3138 = i_9_;
+        this.anInt3138 = i_9_;
     }
 
     Class239_Sub1(int i, Class348_Sub51 class348_sub51) {

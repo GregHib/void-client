@@ -25,7 +25,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
 
     static final void method3072(byte i) {
         anInt9168++;
-        int i_0_ = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        int i_0_ = Class316.aClass348_Sub51_3959
                 .aClass239_Sub14_7264.method1778(-32350);
         int i_1_ = 14 / ((i - -34) / 61);
         if (i_0_ == 0) {
@@ -56,17 +56,15 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
         anInt9172++;
         if (i_4_ != 50)
             return false;
-        if ((0x34 & i_3_ ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (0x34 & i_3_ ^ 0xffffffff) != -1;
     }
 
     final int[] method3042(int i, int i_5_) {
         anInt9166++;
         int[] is
-                = ((Class348_Sub40) this).aClass191_7032.method1433(i_5_ ^ i_5_,
+                = this.aClass191_7032.method1433(i_5_ ^ i_5_,
                 i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        if (this.aClass191_7032.aBoolean2570) {
             int[] is_6_ = this.method3048(Class299_Sub2.anInt6325 & -1 + i,
                     633706337, 0);
             int[] is_7_ = this.method3048(i, 633706337, 0);
@@ -84,9 +82,9 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
                 int i_15_ = i_13_ * i_13_ >> 995519564;
                 int i_16_
                         = (int) (4096.0
-                        * Math.sqrt((double) ((float) (i_15_
+                        * Math.sqrt((float) (i_15_
                         + (i_14_ - -4096))
-                        / 4096.0F)));
+                        / 4096.0F));
                 int i_17_ = i_16_ != 0 ? 16777216 / i_16_ : 0;
                 is[i_9_] = 4096 - i_17_;
             }

@@ -26,12 +26,12 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
         if (aClass356_9494 == null)
             return i_0_;
         Class348_Sub35 class348_sub35
-                = (Class348_Sub35) aClass356_9494.method3480((long) i, -6008);
+                = (Class348_Sub35) aClass356_9494.method3480(i, -6008);
         if (i_1_ < 91)
             return 72;
         if (class348_sub35 == null)
             return i_0_;
-        return ((Class348_Sub35) class348_sub35).anInt6976;
+        return class348_sub35.anInt6976;
     }
 
     private final void method3167(int i, Class348_Sub49 class348_sub49,
@@ -57,7 +57,7 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
                         class348
                                 = new Class348_Sub35(class348_sub49
                                 .method3385((byte) -126));
-                    aClass356_9494.method3483((byte) 29, (long) i_6_,
+                    aClass356_9494.method3483((byte) 29, i_6_,
                             class348);
                 }
             }
@@ -92,10 +92,9 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
                      = (Class348_Sub42_Sub12) Class348_Sub40_Sub4
                      .aClass262_9111
                      .method1990((byte) 99)) {
-            if (Class367_Sub8.method3549(((Class348_Sub42_Sub12)
-                            class348_sub42_sub12).anInt9608,
+            if (Class367_Sub8.method3549(class348_sub42_sub12.anInt9608,
                     (byte) -28)
-                    && (long) i == (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                    && (long) i == (class348_sub42_sub12
                     .aLong9605))
                 return true;
         }
@@ -109,10 +108,10 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
         if (i != -250)
             method3165((byte) 0);
         Class348_Sub50 class348_sub50
-                = (Class348_Sub50) aClass356_9494.method3480((long) i_9_, -6008);
+                = (Class348_Sub50) aClass356_9494.method3480(i_9_, -6008);
         if (class348_sub50 == null)
             return string;
-        return ((Class348_Sub50) class348_sub50).aString7211;
+        return class348_sub50.aString7211;
     }
 
     static {

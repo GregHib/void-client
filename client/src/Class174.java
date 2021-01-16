@@ -106,28 +106,28 @@ final class Class174 {
             class348_sub49.method3387(255);
         else if (i != 3) {
             if ((i ^ 0xffffffff) == -5) {
-                ((Class174) this).anInt2289 = class348_sub49.method3387(255);
-                ((Class174) this).anInt2304
+                this.anInt2289 = class348_sub49.method3387(255);
+                this.anInt2304
                         = class348_sub49.method3385((byte) -126);
             } else if (i != 6) {
                 if ((i ^ 0xffffffff) == -9)
-                    ((Class174) this).anInt2297 = 1;
+                    this.anInt2297 = 1;
                 else if (i == 9)
-                    ((Class174) this).anInt2292 = 1;
+                    this.anInt2292 = 1;
                 else if ((i ^ 0xffffffff) == -11)
                     aBoolean2308 = true;
             } else
-                ((Class174) this).anInt2296 = class348_sub49.method3387(255);
+                this.anInt2296 = class348_sub49.method3387(255);
         } else {
-            ((Class174) this).anInt2291
+            this.anInt2291
                     = class348_sub49.method3385((byte) -126);
-            ((Class174) this).anInt2290
+            this.anInt2290
                     = class348_sub49.method3385((byte) -126);
-            ((Class174) this).anInt2294
+            this.anInt2294
                     = class348_sub49.method3385((byte) -126);
         }
         if (i_8_ >= -124)
-            ((Class174) this).aLong2301 = 65L;
+            this.aLong2301 = 65L;
     }
 
     final void method1336(int i, Class348_Sub49 class348_sub49) {
@@ -139,39 +139,39 @@ final class Class174 {
         }
         anInt2288++;
         if (i <= 36)
-            ((Class174) this).anInt2296 = 8;
+            this.anInt2296 = 8;
     }
 
     final void method1337(int i) {
         anInt2300++;
-        ((Class174) this).anInt2298
+        this.anInt2298
                 = Class70.anIntArray1204[anInt2302 << 259569763];
-        long l = (long) ((Class174) this).anInt2291;
-        long l_10_ = (long) ((Class174) this).anInt2290;
-        long l_11_ = (long) ((Class174) this).anInt2294;
-        ((Class174) this).anInt2299
+        long l = this.anInt2291;
+        long l_10_ = this.anInt2290;
+        long l_11_ = this.anInt2294;
+        this.anInt2299
                 = (int) Math.sqrt((double) (l_10_ * l_10_
                 + (l * l - -(l_11_ * l_11_))));
-        if (((Class174) this).anInt2304 == 0)
-            ((Class174) this).anInt2304 = 1;
-        if ((((Class174) this).anInt2289 ^ 0xffffffff) != i) {
-            if (((Class174) this).anInt2289 == 1) {
-                ((Class174) this).aLong2301
-                        = (long) (((Class174) this).anInt2299 * 8
-                        / ((Class174) this).anInt2304);
-                ((Class174) this).aLong2301 *= ((Class174) this).aLong2301;
-            } else if (((Class174) this).anInt2289 == 2)
-                ((Class174) this).aLong2301
-                        = (long) (8 * ((Class174) this).anInt2299
-                        / ((Class174) this).anInt2304);
+        if (this.anInt2304 == 0)
+            this.anInt2304 = 1;
+        if ((this.anInt2289 ^ 0xffffffff) != i) {
+            if (this.anInt2289 == 1) {
+                this.aLong2301
+                        = this.anInt2299 * 8
+                        / this.anInt2304;
+                this.aLong2301 *= this.aLong2301;
+            } else if (this.anInt2289 == 2)
+                this.aLong2301
+                        = 8 * this.anInt2299
+                        / this.anInt2304;
         } else
-            ((Class174) this).aLong2301 = 2147483647L;
+            this.aLong2301 = 2147483647L;
         if (aBoolean2308)
-            ((Class174) this).anInt2299 *= -1;
+            this.anInt2299 *= -1;
     }
 
     public Class174() {
-        ((Class174) this).anInt2292 = 0;
+        this.anInt2292 = 0;
         aBoolean2308 = false;
     }
 }

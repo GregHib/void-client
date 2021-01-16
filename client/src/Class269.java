@@ -10,7 +10,7 @@ final class Class269 {
     private Interface18_Impl3[] anInterface18_Impl3Array3454;
     Interface18_Impl1 anInterface18_Impl1_3455 = null;
     static int anInt3456;
-    private ha_Sub3 aHa_Sub3_3457;
+    private final ha_Sub3 aHa_Sub3_3457;
     boolean aBoolean3458;
     Interface18_Impl3[] anInterface18_Impl3Array3459;
     static int anInt3460;
@@ -20,15 +20,11 @@ final class Class269 {
     final boolean method2039(int i) {
         anInt3461++;
         if (i < 81)
-            ((Class269) this).anInterface18_Impl1_3452 = null;
-        if (!((Class269) this).aBoolean3458) {
-            if (((Class269) this).anInterface18_Impl3Array3459 == null)
-                return false;
-            return true;
+            this.anInterface18_Impl1_3452 = null;
+        if (!this.aBoolean3458) {
+            return this.anInterface18_Impl3Array3459 != null;
         }
-        if (((Class269) this).anInterface18_Impl1_3452 == null)
-            return false;
-        return true;
+        return this.anInterface18_Impl1_3452 != null;
     }
 
     static final void method2040(int i, boolean bool) {
@@ -44,7 +40,7 @@ final class Class269 {
     final boolean method2041(byte i) {
         if (i < 42)
             aFloat3462 = 2.1357973F;
-        if (((Class269) this).anInterface18_Impl1_3455 == null) {
+        if (this.anInterface18_Impl1_3455 == null) {
             if (Class262.anObject3331 == null) {
                 byte[] is
                         = Class5_Sub2.method194(128, -1922, 8, 0.6F, 128, 4.0F,
@@ -74,9 +70,9 @@ final class Class269 {
                         float f_11_
                                 = (float) (128.0
                                 / (Math.sqrt
-                                ((double) (f * f
+                                (f * f
                                         + (16384.0F
-                                        + f_10_ * f_10_)))));
+                                        + f_10_ * f_10_))));
                         is_0_[i_1_++] = (byte) (int) (f_10_ * f_11_ + 127.0F);
                         is_0_[i_1_++] = (byte) (int) (128.0F * f_11_ + 127.0F);
                         is_0_[i_1_++] = (byte) (int) (f_11_ * f + 127.0F);
@@ -84,14 +80,12 @@ final class Class269 {
                     }
                 }
             }
-            ((Class269) this).anInterface18_Impl1_3455
+            this.anInterface18_Impl1_3455
                     = aHa_Sub3_3457.method3872(16, 128, Class108.aClass304_1662,
                     true, 128, is_0_);
         }
         anInt3456++;
-        if (((Class269) this).anInterface18_Impl1_3455 == null)
-            return false;
-        return true;
+        return this.anInterface18_Impl1_3455 != null;
     }
 
     public static void method2042(byte i) {
@@ -101,27 +95,27 @@ final class Class269 {
 
     Class269(ha_Sub3 var_ha_Sub3) {
         anInterface18_Impl3Array3454 = null;
-        ((Class269) this).anInterface18_Impl3Array3459 = null;
+        this.anInterface18_Impl3Array3459 = null;
         aHa_Sub3_3457 = var_ha_Sub3;
-        ((Class269) this).aBoolean3458
-                = ((ha_Sub3) aHa_Sub3_3457).aBoolean8159;
-        if (((Class269) this).aBoolean3458
+        this.aBoolean3458
+                = aHa_Sub3_3457.aBoolean8159;
+        if (this.aBoolean3458
                 && !aHa_Sub3_3457.method3931(true, Class191.aClass304_2571,
                 Class68.aClass68_1183))
-            ((Class269) this).aBoolean3458 = false;
-        if (((Class269) this).aBoolean3458
+            this.aBoolean3458 = false;
+        if (this.aBoolean3458
                 || aHa_Sub3_3457.method3880(Class68.aClass68_1183,
                 Class191.aClass304_2571, (byte) 123)) {
             OutputStream_Sub1.method134((byte) -126);
-            if (!((Class269) this).aBoolean3458) {
-                ((Class269) this).anInterface18_Impl3Array3459
+            if (!this.aBoolean3458) {
+                this.anInterface18_Impl3Array3459
                         = new Interface18_Impl3[16];
                 for (int i = 0; i < 16; i++) {
                     byte[] is
                             = Class173.method1331((byte) 100,
                             Class355.anObject4366,
                             128 * (i * 128 * 2), 32768);
-                    ((Class269) this).anInterface18_Impl3Array3459[i]
+                    this.anInterface18_Impl3Array3459[i]
                             = aHa_Sub3_3457.method3944(is, 128,
                             Class191.aClass304_2571, 2,
                             true, 128);
@@ -141,7 +135,7 @@ final class Class269 {
                 byte[] is
                         = Class50_Sub1.method461(false, Class355.anObject4366,
                         53146732);
-                ((Class269) this).anInterface18_Impl1_3452
+                this.anInterface18_Impl1_3452
                         = aHa_Sub3_3457.method3872(16, 128,
                         Class191.aClass304_2571, true,
                         128, is);

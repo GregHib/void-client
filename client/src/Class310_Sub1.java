@@ -8,29 +8,29 @@ import jagdx.PixelBuffer;
 import jagdx.ue;
 
 final class Class310_Sub1 extends Class310 implements Interface18_Impl2 {
-    private int anInt6329;
-    private IDirect3DCubeTexture anIDirect3DCubeTexture6330;
+    private final int anInt6329;
+    private final IDirect3DCubeTexture anIDirect3DCubeTexture6330;
 
     public final void method63(byte i) {
-        ((Class310_Sub1) this).aClass378_3893.method3956((byte) -128, this);
+        this.aClass378_3893.method3956((byte) -128, this);
         if (i > -21)
             method2314(88);
     }
 
     Class310_Sub1(Class378 class378, int i, boolean bool, int[][] is) {
         super(class378, Class108.aClass304_1662, Class68.aClass68_1183,
-                bool && ((Class378) class378).aBoolean9802, 6 * i * i);
+                bool && class378.aBoolean9802, 6 * i * i);
         anInt6329 = i;
-        if (((Class310_Sub1) this).aBoolean3892)
+        if (this.aBoolean3892)
             anIDirect3DCubeTexture6330
-                    = ((Class378) ((Class310_Sub1) this).aClass378_3893)
+                    = this.aClass378_3893
                     .anIDirect3DDevice9810.a(anInt6329, 0, 1024, 21, 1);
         else
             anIDirect3DCubeTexture6330
-                    = ((Class378) ((Class310_Sub1) this).aClass378_3893)
+                    = this.aClass378_3893
                     .anIDirect3DDevice9810.a(anInt6329, 1, 0, 21, 1);
         PixelBuffer pixelbuffer
-                = (((Class378) ((Class310_Sub1) this).aClass378_3893)
+                = (this.aClass378_3893
                 .aPixelBuffer9803);
         for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -7; i_0_++) {
             int i_1_

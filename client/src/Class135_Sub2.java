@@ -20,7 +20,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
 
     final void method1152(int i) {
         anInt4840++;
-        ((Class135) this).aHa_Sub2_1927.method3793(1, this);
+        this.aHa_Sub2_1927.method3793(1, this);
         if (i >= -78)
             aClass161_4839 = null;
     }
@@ -53,7 +53,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
         if (i != -23923)
             method35(null, -47, -115, -72);
         anInt4836++;
-        return ((Class135) this).anInt1929;
+        return this.anInt1929;
     }
 
     static final void method1156(int i, int i_3_, int[] is, int i_4_,
@@ -129,9 +129,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
         if (i_9_ != -1)
             aClass161_4839 = null;
         anInt4844++;
-        if ((i_10_ & 0x180 ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (i_10_ & 0x180 ^ 0xffffffff) != -1;
     }
 
     static {

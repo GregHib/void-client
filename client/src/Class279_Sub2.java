@@ -5,7 +5,7 @@
 import java.awt.*;
 
 final class Class279_Sub2 extends Class279 {
-    private int anInt6181;
+    private final int anInt6181;
     private static Interface20 anInterface20_6182;
 
     final void method2083() {
@@ -31,7 +31,7 @@ final class Class279_Sub2 extends Class279 {
 
     final void method2094() {
         anInterface20_6182.method76(anInt6181,
-                ((Class279) this).anIntArray3603);
+                this.anIntArray3603);
     }
 
     Class279_Sub2(Class297 class297, int i) {

@@ -4,7 +4,7 @@
 
 final class Class309 implements Interface7 {
     static int[] anIntArray4806;
-    private String aString4807;
+    private final String aString4807;
     static Class105 aClass105_4808;
     static int anInt4809;
     static int anInt4810;
@@ -41,13 +41,13 @@ final class Class309 implements Interface7 {
                 int i_5_;
                 int i_6_;
                 if ((i_3_ ^ 0xffffffff) == -1 || (i_3_ ^ 0xffffffff) == -3) {
-                    i_5_ = ((Class51) class51).anInt926;
-                    i_6_ = ((Class51) class51).anInt961;
+                    i_5_ = class51.anInt926;
+                    i_6_ = class51.anInt961;
                 } else {
-                    i_5_ = ((Class51) class51).anInt961;
-                    i_6_ = ((Class51) class51).anInt926;
+                    i_5_ = class51.anInt961;
+                    i_6_ = class51.anInt926;
                 }
-                int i_7_ = ((Class51) class51).anInt914;
+                int i_7_ = class51.anInt914;
                 if ((i_3_ ^ 0xffffffff) != -1)
                     i_7_ = (0xf & i_7_ << i_3_) + (i_7_ >> 4 + -i_3_);
                 Class298.method2252(true, i_0_, i, (byte) -99, i_5_, i_7_,
@@ -64,11 +64,9 @@ final class Class309 implements Interface7 {
         if (i != 26)
             anIntArray4822 = null;
         anInt4810++;
-        if (i_8_ != 15 && i_8_ != 2 && i_8_ != 30 && (i_8_ ^ 0xffffffff) != -50
-                && (i_8_ ^ 0xffffffff) != -52 && (i_8_ ^ 0xffffffff) != -51
-                && (i_8_ ^ 0xffffffff) != -7)
-            return false;
-        return true;
+        return i_8_ == 15 || i_8_ == 2 || i_8_ == 30 || (i_8_ ^ 0xffffffff) == -50
+                || (i_8_ ^ 0xffffffff) == -52 || (i_8_ ^ 0xffffffff) == -51
+                || (i_8_ ^ 0xffffffff) == -7;
     }
 
     public final int method31(int i) {
@@ -134,7 +132,7 @@ final class Class309 implements Interface7 {
                                  class262.method1990((byte) 104))) {
                         Class42 class42
                                 = (Class75.aClass153_1238.method1225
-                                (((Class348_Sub21) class348_sub21).anInt6847,
+                                (class348_sub21.anInt6847,
                                         (byte) 82));
                         if (Class60.method589(class42, -4)) {
                             boolean bool

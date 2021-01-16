@@ -22,15 +22,15 @@ class Class348_Sub42 extends Class348 {
         anInt7064++;
         if (bool != true)
             method3163((byte) 50);
-        if (((Class348_Sub42) this).aClass348_Sub42_7060 != null) {
-            ((Class348_Sub42) ((Class348_Sub42) this).aClass348_Sub42_7060)
+        if (this.aClass348_Sub42_7060 != null) {
+            this.aClass348_Sub42_7060
                     .aClass348_Sub42_7063
-                    = ((Class348_Sub42) this).aClass348_Sub42_7063;
-            ((Class348_Sub42) ((Class348_Sub42) this).aClass348_Sub42_7063)
+                    = this.aClass348_Sub42_7063;
+            this.aClass348_Sub42_7063
                     .aClass348_Sub42_7060
-                    = ((Class348_Sub42) this).aClass348_Sub42_7060;
-            ((Class348_Sub42) this).aClass348_Sub42_7060 = null;
-            ((Class348_Sub42) this).aClass348_Sub42_7063 = null;
+                    = this.aClass348_Sub42_7060;
+            this.aClass348_Sub42_7060 = null;
+            this.aClass348_Sub42_7063 = null;
         }
     }
 
@@ -48,7 +48,7 @@ class Class348_Sub42 extends Class348 {
 
     final boolean method3164(byte i) {
         anInt7061++;
-        if (((Class348_Sub42) this).aClass348_Sub42_7060 == null)
+        if (this.aClass348_Sub42_7060 == null)
             return false;
         if (i != 1)
             method3162(false);

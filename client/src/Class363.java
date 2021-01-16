@@ -32,18 +32,18 @@ final class Class363 {
              class348_sub27
                      = (Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711
                      .method1990((byte) 57)) {
-            if ((((Class348_Sub27) class348_sub27).anInt6893 ^ 0xffffffff)
+            if ((class348_sub27.anInt6893 ^ 0xffffffff)
                     == 0) {
-                ((Class348_Sub27) class348_sub27).anInt6894 = 0;
-                if (((((Class348_Sub27) class348_sub27).anInt6905 ^ 0xffffffff)
+                class348_sub27.anInt6894 = 0;
+                if (((class348_sub27.anInt6905 ^ 0xffffffff)
                         <= -1)
-                        && (((Class348_Sub27) class348_sub27).anInt6896
+                        && (class348_sub27.anInt6896
                         ^ 0xffffffff) <= -1
                         && ((Class367_Sub4.anInt7319 ^ 0xffffffff)
-                        < (((Class348_Sub27) class348_sub27).anInt6905
+                        < (class348_sub27.anInt6905
                         ^ 0xffffffff))
                         && ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
-                        < (((Class348_Sub27) class348_sub27).anInt6896
+                        < (class348_sub27.anInt6896
                         ^ 0xffffffff)))
                     Class184.method1387(i + 26, class348_sub27);
             } else

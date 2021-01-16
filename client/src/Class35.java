@@ -10,8 +10,7 @@ final class Class35 {
     static final void method352(int i) {
         anInt483++;
         Class162.method1265(i + 15);
-        IOException_Sub1.method131((((Class348_Sub51)
-                        Class316.aClass348_Sub51_3959)
+        IOException_Sub1.method131((Class316.aClass348_Sub51_3959
                         .aClass239_Sub5_7240.method1739(-32350)
                         ^ 0xffffffff) == -2,
                 2, true, 22050);

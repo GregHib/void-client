@@ -36,17 +36,17 @@ final class Class311 implements Runnable {
         if (i < 103)
             aLong3917 = -58L;
         int i_0_ = aClass56_3916.method525(-118);
-        if (((Class56) aClass56_3916).aBoolean1016
-                && ((((Class56) aClass56_3916).anInt1021 ^ 0xffffffff)
+        if (aClass56_3916.aBoolean1016
+                && ((aClass56_3916.anInt1021 ^ 0xffffffff)
                 < (anInt3915 ^ 0xffffffff)))
             return 1 + anInt3915;
         if ((i_0_ ^ 0xffffffff) > -1
                 || -1 + Class328_Sub2.aClass56Array6515.length <= i_0_)
             return 100;
         if ((anInt3915 ^ 0xffffffff)
-                == (((Class56) aClass56_3916).anInt1025 ^ 0xffffffff))
-            return ((Class56) aClass56_3916).anInt1021;
-        return ((Class56) aClass56_3916).anInt1025;
+                == (aClass56_3916.anInt1025 ^ 0xffffffff))
+            return aClass56_3916.anInt1021;
+        return aClass56_3916.anInt1025;
     }
 
     final synchronized void method2316(Class56 class56, String string, int i,
@@ -165,7 +165,7 @@ final class Class311 implements Runnable {
             long l_3_ = Class62.method599(-73);
             int i = (int) (-l_3_ - -l + 20L);
             if ((i ^ 0xffffffff) < -1)
-                Class286_Sub5.method2161((byte) -3, (long) i);
+                Class286_Sub5.method2161((byte) -3, i);
         }
     }
 

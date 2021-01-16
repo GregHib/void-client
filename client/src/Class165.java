@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 final class Class165 {
-    private Robot aRobot2176;
+    private final Robot aRobot2176;
     private Component aComponent2177;
 
     final void method1280(int i, int i_0_) {

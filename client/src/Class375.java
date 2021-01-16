@@ -43,11 +43,11 @@ final class Class375 {
         anInt4539++;
         if (i_5_ != -19692)
             method3613(10);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3391((byte) 124, i);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3337((byte) 107, i_4_);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3337((byte) 107, i_3_);
     }
 }

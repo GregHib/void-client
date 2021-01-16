@@ -30,17 +30,17 @@ final class Class147 {
     Class147(int i, int i_0_, String string, String string_1_,
              String string_2_, String string_3_, int i_4_, String string_5_) {
         try {
-            ((Class147) this).anInt2031
+            this.anInt2031
                     = Class318_Sub1_Sub3.method2408((byte) 53);
-            ((Class147) this).aString2028 = string_5_;
-            ((Class147) this).anInt2032 = i;
-            ((Class147) this).aString2033 = string_1_;
-            ((Class147) this).aString2025 = string_2_;
-            ((Class147) this).aString2022 = string_3_;
-            ((Class147) this).anInt2030 = Class367_Sub11.anInt7396;
-            ((Class147) this).aString2024 = string;
-            ((Class147) this).anInt2027 = i_0_;
-            ((Class147) this).anInt2026 = i_4_;
+            this.aString2028 = string_5_;
+            this.anInt2032 = i;
+            this.aString2033 = string_1_;
+            this.aString2025 = string_2_;
+            this.aString2022 = string_3_;
+            this.anInt2030 = Class367_Sub11.anInt7396;
+            this.aString2024 = string;
+            this.anInt2027 = i_0_;
+            this.anInt2026 = i_4_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,
@@ -57,20 +57,20 @@ final class Class147 {
                           String string_8_, int i_9_, int i_10_,
                           String string_11_, String string_12_) {
         try {
-            ((Class147) this).anInt2031
+            this.anInt2031
                     = Class318_Sub1_Sub3.method2408((byte) -91);
             anInt2036++;
-            ((Class147) this).aString2033 = string_7_;
-            ((Class147) this).aString2024 = string_11_;
-            ((Class147) this).anInt2030 = Class367_Sub11.anInt7396;
-            ((Class147) this).aString2025 = string;
-            ((Class147) this).anInt2032 = i;
-            ((Class147) this).aString2022 = string_8_;
-            ((Class147) this).aString2028 = string_12_;
-            ((Class147) this).anInt2027 = i_6_;
+            this.aString2033 = string_7_;
+            this.aString2024 = string_11_;
+            this.anInt2030 = Class367_Sub11.anInt7396;
+            this.aString2025 = string;
+            this.anInt2032 = i;
+            this.aString2022 = string_8_;
+            this.aString2028 = string_12_;
+            this.anInt2027 = i_6_;
             if (i_9_ != -18691)
-                ((Class147) this).anInt2027 = -83;
-            ((Class147) this).anInt2026 = i_10_;
+                this.anInt2027 = -83;
+            this.anInt2026 = i_10_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

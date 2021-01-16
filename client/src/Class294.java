@@ -200,9 +200,7 @@ final class Class294 implements Interface16 {
         anInt5027++;
         if (i_4_ != 0)
             aClass338Array5060 = null;
-        if ((i_3_ & 0x21) == 0)
-            return false;
-        return true;
+        return (i_3_ & 0x21) != 0;
     }
 
     public final void method58(boolean bool, int i) {

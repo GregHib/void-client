@@ -13,7 +13,7 @@ import java.awt.*;
 
 final class Class134 implements IEnumModesCallback {
     private static int[] anIntArray4606;
-    private DirectDraw aDirectDraw4607 = new DirectDraw();
+    private final DirectDraw aDirectDraw4607 = new DirectDraw();
     private static int anInt4608;
 
     public final void method1144(DDSurfaceDesc ddsurfacedesc,

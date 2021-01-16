@@ -24,10 +24,10 @@ final class Class52 implements Interface12 {
     static final Class43 method490(byte i, Class348_Sub49 class348_sub49) {
         anInt4897++;
         Class43 class43 = new Class43();
-        ((Class43) class43).anInt615 = class348_sub49.method3330(842397944);
-        ((Class43) class43).aClass348_Sub42_Sub10_614
+        class43.anInt615 = class348_sub49.method3330(842397944);
+        class43.aClass348_Sub42_Sub10_614
                 = Class239_Sub6.aClass355_5900
-                .method3471(((Class43) class43).anInt615, (byte) -90);
+                .method3471(class43.anInt615, (byte) -90);
         int i_0_ = -91 / ((9 - i) / 54);
         return class43;
     }
@@ -71,7 +71,7 @@ final class Class52 implements Interface12 {
     }
 
     Class52(int i) {
-        ((Class52) this).anInt4899 = i;
+        this.anInt4899 = i;
     }
 
     static final void method493(boolean bool) {
@@ -92,31 +92,31 @@ final class Class52 implements Interface12 {
                 Class348_Sub49.method3379(2, 3);
             } else {
                 Class64_Sub2.aString5420
-                        = ((Class56) class56).aClass274_1015
+                        = class56.aClass274_1015
                         .method2063(Class348_Sub33.anInt6967, 544);
-                if (((Class56) Class348_Sub42_Sub15.aClass56_9660)
+                if (Class348_Sub42_Sub15.aClass56_9660
                         .aBoolean1013)
                     Class64_Sub2.aString5420
-                            += ((Class56) class56).anInt1021 + "%";
-                Class251.anInt3236 = ((Class56) class56).anInt1021;
-                if (((Class56) Class348_Sub42_Sub15.aClass56_9660).aBoolean1016
-                        || ((Class56) class56).aBoolean1016)
+                            += class56.anInt1021 + "%";
+                Class251.anInt3236 = class56.anInt1021;
+                if (Class348_Sub42_Sub15.aClass56_9660.aBoolean1016
+                        || class56.aBoolean1016)
                     Class283.aLong3660 = Class62.method599(-128);
             }
         } else {
             Class64_Sub2.aString5420
-                    = ((Class56) Class348_Sub42_Sub15.aClass56_9660)
+                    = Class348_Sub42_Sub15.aClass56_9660
                     .aClass274_1012
                     .method2063(Class348_Sub33.anInt6967, 544);
-            if (((Class56) Class348_Sub42_Sub15.aClass56_9660).aBoolean1016)
+            if (Class348_Sub42_Sub15.aClass56_9660.aBoolean1016)
                 Class251.anInt3236
-                        = (i * ((((Class56) Class348_Sub42_Sub15.aClass56_9660)
+                        = (i * ((Class348_Sub42_Sub15.aClass56_9660
                         .anInt1021)
-                        + -(((Class56) Class348_Sub42_Sub15.aClass56_9660)
+                        + -(Class348_Sub42_Sub15.aClass56_9660
                         .anInt1025)) / 100
-                        + (((Class56) Class348_Sub42_Sub15.aClass56_9660)
+                        + (Class348_Sub42_Sub15.aClass56_9660
                         .anInt1025));
-            if (((Class56) Class348_Sub42_Sub15.aClass56_9660).aBoolean1013)
+            if (Class348_Sub42_Sub15.aClass56_9660.aBoolean1013)
                 Class64_Sub2.aString5420 += Class251.anInt3236 + "%";
         }
         if (bool == true) {

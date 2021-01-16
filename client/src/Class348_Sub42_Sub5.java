@@ -3,15 +3,15 @@
  */
 
 final class Class348_Sub42_Sub5 extends Class348_Sub42 {
-    private Class348_Sub40[] aClass348_Sub40Array9520;
-    private Class348_Sub40 aClass348_Sub40_9521;
+    private final Class348_Sub40[] aClass348_Sub40Array9520;
+    private final Class348_Sub40 aClass348_Sub40_9521;
     static int anInt9522;
-    private int[] anIntArray9523;
-    private int[] anIntArray9524;
+    private final int[] anIntArray9523;
+    private final int[] anIntArray9524;
     static int anInt9525;
     static int anInt9526;
-    private Class348_Sub40 aClass348_Sub40_9527;
-    private Class348_Sub40 aClass348_Sub40_9528;
+    private final Class348_Sub40 aClass348_Sub40_9527;
+    private final Class348_Sub40 aClass348_Sub40_9528;
     static int anInt9529;
     static Class138 aClass138_9530 = new Class138(6, 0, 4, 2);
     static double aDouble9531;
@@ -36,7 +36,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 int[] is_5_;
                 int[] is_6_;
                 int[] is_7_;
-                if (((Class348_Sub40) aClass348_Sub40_9521).aBoolean7045) {
+                if (aClass348_Sub40_9521.aBoolean7045) {
                     int[] is_8_ = aClass348_Sub40_9521.method3042(i_4_, 255);
                     is_7_ = is_8_;
                     is_5_ = is_8_;
@@ -51,7 +51,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 if (bool)
                     i_3_ = i_4_;
                 int[] is_10_;
-                if (((Class348_Sub40) aClass348_Sub40_9527).aBoolean7045)
+                if (aClass348_Sub40_9527.aBoolean7045)
                     is_10_ = aClass348_Sub40_9527.method3042(i_4_, i_1_ + 244);
                 else
                     is_10_ = (aClass348_Sub40_9527.method3047
@@ -181,7 +181,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 int[] is_30_;
                 int[] is_31_;
                 int[] is_32_;
-                if (((Class348_Sub40) aClass348_Sub40_9521).aBoolean7045) {
+                if (aClass348_Sub40_9521.aBoolean7045) {
                     int[] is_33_ = aClass348_Sub40_9521.method3042(i_29_, 255);
                     is_30_ = is_33_;
                     is_31_ = is_33_;
@@ -261,7 +261,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 int[] is;
                 int[] is_46_;
                 int[] is_47_;
-                if (!((Class348_Sub40) aClass348_Sub40_9521).aBoolean7045) {
+                if (!aClass348_Sub40_9521.aBoolean7045) {
                     int[][] is_48_
                             = aClass348_Sub40_9521.method3047(i_45_, -1564599039);
                     is_46_ = is_48_[1];
@@ -274,13 +274,13 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                     is_47_ = is_49_;
                 }
                 int[] is_50_;
-                if (((Class348_Sub40) aClass348_Sub40_9527).aBoolean7045)
+                if (aClass348_Sub40_9527.aBoolean7045)
                     is_50_ = aClass348_Sub40_9527.method3042(i_45_, 255);
                 else
                     is_50_ = (aClass348_Sub40_9527.method3047
                             (i_45_, -1564599039)[0]);
                 int[] is_51_;
-                if (((Class348_Sub40) aClass348_Sub40_9528).aBoolean7045)
+                if (aClass348_Sub40_9528.aBoolean7045)
                     is_51_ = aClass348_Sub40_9528.method3042(i_45_, 255);
                 else
                     is_51_ = (aClass348_Sub40_9528.method3047
@@ -334,15 +334,15 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
         anIntArray9523 = new int[0];
         anIntArray9524 = new int[0];
         aClass348_Sub40_9528 = new Class348_Sub40_Sub15(0);
-        ((Class348_Sub40) aClass348_Sub40_9528).anInt7036 = 1;
+        aClass348_Sub40_9528.anInt7036 = 1;
         aClass348_Sub40_9521 = new Class348_Sub40_Sub15();
-        ((Class348_Sub40) aClass348_Sub40_9521).anInt7036 = 1;
+        aClass348_Sub40_9521.anInt7036 = 1;
         aClass348_Sub40_9527 = new Class348_Sub40_Sub15();
         aClass348_Sub40Array9520
                 = new Class348_Sub40[]{aClass348_Sub40_9521,
                 aClass348_Sub40_9527,
                 aClass348_Sub40_9528};
-        ((Class348_Sub40) aClass348_Sub40_9527).anInt7036 = 1;
+        aClass348_Sub40_9527.anInt7036 = 1;
     }
 
     Class348_Sub42_Sub5(Class348_Sub49 class348_sub49) {
@@ -358,7 +358,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 i_56_++;
             if (class348_sub40.method3043(-1) >= 0)
                 i_57_++;
-            int i_59_ = (((Class348_Sub40) class348_sub40)
+            int i_59_ = (class348_sub40
                     .aClass348_Sub40Array7031).length;
             is[i_58_] = new int[i_59_];
             for (int i_60_ = 0; i_60_ < i_59_; i_60_++)
@@ -371,11 +371,11 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
         i_57_ = 0;
         for (int i_61_ = 0; i > i_61_; i_61_++) {
             Class348_Sub40 class348_sub40 = aClass348_Sub40Array9520[i_61_];
-            int i_62_ = (((Class348_Sub40) class348_sub40)
+            int i_62_ = (class348_sub40
                     .aClass348_Sub40Array7031).length;
             for (int i_63_ = 0; (i_63_ ^ 0xffffffff) > (i_62_ ^ 0xffffffff);
                  i_63_++)
-                ((Class348_Sub40) class348_sub40).aClass348_Sub40Array7031
+                class348_sub40.aClass348_Sub40Array7031
                         [i_63_]
                         = aClass348_Sub40Array9520[is[i_61_][i_63_]];
             int i_64_ = class348_sub40.method3037(-119);

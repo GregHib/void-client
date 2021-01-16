@@ -65,9 +65,9 @@ final class Class160 {
         anInt2136++;
         if ((i_1_ ^ 0xffffffff) != -2) {
             if (i_1_ == 2)
-                ((Class160) this).anInt2135 = 0;
+                this.anInt2135 = 0;
         } else
-            ((Class160) this).aChar2132
+            this.aChar2132
                     = Class50_Sub1.method462(class348_sub49.method3388(-119),
                     -128);
         if (i >= -73)
@@ -78,9 +78,7 @@ final class Class160 {
         if (i > -23)
             aBooleanArrayArray2133 = null;
         anInt2134++;
-        if ((0x20 & i_3_ ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (0x20 & i_3_ ^ 0xffffffff) != -1;
     }
 
     public Class160() {

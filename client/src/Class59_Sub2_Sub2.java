@@ -21,9 +21,9 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
         Class373_Sub2.aClass283Array7446 = new Class283[i_0_];
         for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > (i_0_ ^ 0xffffffff); i_1_++) {
             Class373_Sub2.aClass283Array7446[i_1_] = new Class283();
-            ((Class283) Class373_Sub2.aClass283Array7446[i_1_]).anInt3657
+            Class373_Sub2.aClass283Array7446[i_1_].anInt3657
                     = class348_sub49.method3382(-124);
-            ((Class283) Class373_Sub2.aClass283Array7446[i_1_]).aString3663
+            Class373_Sub2.aClass283Array7446[i_1_].aString3663
                     = class348_sub49.method3371(-13487);
         }
         Class318_Sub1_Sub2.anInt8731 = class348_sub49.method3382(-127);
@@ -38,15 +38,15 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
             Class110_Sub1 class110_sub1
                     = (OutputStream_Sub1.aClass110_Sub1Array97[i_3_]
                     = new Class110_Sub1());
-            ((Class110) class110_sub1).anInt1711
+            class110_sub1.anInt1711
                     = class348_sub49.method3387(255);
-            ((Class110) class110_sub1).anInt1708
+            class110_sub1.anInt1708
                     = class348_sub49.method3385((byte) -126);
-            ((Class110_Sub1) class110_sub1).anInt5786
+            class110_sub1.anInt5786
                     = Class318_Sub1_Sub2.anInt8731 + i_3_;
-            ((Class110_Sub1) class110_sub1).aString5787
+            class110_sub1.aString5787
                     = class348_sub49.method3371(-13487);
-            ((Class110_Sub1) class110_sub1).aString5794
+            class110_sub1.aString5794
                     = class348_sub49.method3371(-13487);
         }
         Class5_Sub1.anInt8349 = class348_sub49.method3385((byte) -126);
@@ -114,20 +114,20 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
     static final void method573(Class348_Sub42 class348_sub42,
                                 Class348_Sub42 class348_sub42_15_, byte i) {
         try {
-            if (((Class348_Sub42) class348_sub42).aClass348_Sub42_7060 != null)
+            if (class348_sub42.aClass348_Sub42_7060 != null)
                 class348_sub42.method3162(true);
             anInt8680++;
-            ((Class348_Sub42) class348_sub42).aClass348_Sub42_7060
+            class348_sub42.aClass348_Sub42_7060
                     = class348_sub42_15_;
-            ((Class348_Sub42) class348_sub42).aClass348_Sub42_7063
-                    = ((Class348_Sub42) class348_sub42_15_).aClass348_Sub42_7063;
+            class348_sub42.aClass348_Sub42_7063
+                    = class348_sub42_15_.aClass348_Sub42_7063;
             if (i != 63)
                 anInt8685 = 110;
-            ((Class348_Sub42) (((Class348_Sub42) class348_sub42)
-                    .aClass348_Sub42_7060)).aClass348_Sub42_7063
+            class348_sub42
+                    .aClass348_Sub42_7060.aClass348_Sub42_7063
                     = class348_sub42;
-            ((Class348_Sub42) (((Class348_Sub42) class348_sub42)
-                    .aClass348_Sub42_7063)).aClass348_Sub42_7060
+            class348_sub42
+                    .aClass348_Sub42_7063.aClass348_Sub42_7060
                     = class348_sub42;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

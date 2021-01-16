@@ -4,10 +4,10 @@
 
 final class Class183 {
     static int anInt2457;
-    private Class60 aClass60_2458 = new Class60(128);
+    private final Class60 aClass60_2458 = new Class60(128);
     static int anInt2459;
     static int anInt2460;
-    private Class45 aClass45_2461;
+    private final Class45 aClass45_2461;
     static Class250 aClass250_2462;
     static int anInt2463;
     static int anInt2464;
@@ -22,17 +22,17 @@ final class Class183 {
                 for (Class318_Sub1 class318_sub1_1_
                      = Class348.aClass318_Sub1Array4293[i];
                      class318_sub1_1_ != null;
-                     class318_sub1_1_ = (((Class318_Sub1) class318_sub1_1_)
+                     class318_sub1_1_ = (class318_sub1_1_
                              .aClass318_Sub1_6379)) {
                     if (class318_sub1_1_ == class318_sub1) {
                         if (class318_sub1_0_ != null)
-                            ((Class318_Sub1) class318_sub1_0_)
+                            class318_sub1_0_
                                     .aClass318_Sub1_6379
-                                    = (((Class318_Sub1) class318_sub1_1_)
+                                    = (class318_sub1_1_
                                     .aClass318_Sub1_6379);
                         else
                             Class348.aClass318_Sub1Array4293[i]
-                                    = (((Class318_Sub1) class318_sub1_1_)
+                                    = (class318_sub1_1_
                                     .aClass318_Sub1_6379);
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                         return;
@@ -43,17 +43,17 @@ final class Class183 {
                 for (Class318_Sub1 class318_sub1_2_
                      = Class250.aClass318_Sub1Array3226[i];
                      class318_sub1_2_ != null;
-                     class318_sub1_2_ = (((Class318_Sub1) class318_sub1_2_)
+                     class318_sub1_2_ = (class318_sub1_2_
                              .aClass318_Sub1_6379)) {
                     if (class318_sub1_2_ == class318_sub1) {
                         if (class318_sub1_0_ != null)
-                            ((Class318_Sub1) class318_sub1_0_)
+                            class318_sub1_0_
                                     .aClass318_Sub1_6379
-                                    = (((Class318_Sub1) class318_sub1_2_)
+                                    = (class318_sub1_2_
                                     .aClass318_Sub1_6379);
                         else
                             Class250.aClass318_Sub1Array3226[i]
-                                    = (((Class318_Sub1) class318_sub1_2_)
+                                    = (class318_sub1_2_
                                     .aClass318_Sub1_6379);
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                         return;
@@ -64,17 +64,17 @@ final class Class183 {
                 for (Class318_Sub1 class318_sub1_3_
                      = Class115.aClass318_Sub1Array1754[i];
                      class318_sub1_3_ != null;
-                     class318_sub1_3_ = (((Class318_Sub1) class318_sub1_3_)
+                     class318_sub1_3_ = (class318_sub1_3_
                              .aClass318_Sub1_6379)) {
                     if (class318_sub1_3_ == class318_sub1) {
                         if (class318_sub1_0_ != null)
-                            ((Class318_Sub1) class318_sub1_0_)
+                            class318_sub1_0_
                                     .aClass318_Sub1_6379
-                                    = (((Class318_Sub1) class318_sub1_3_)
+                                    = (class318_sub1_3_
                                     .aClass318_Sub1_6379);
                         else
                             Class115.aClass318_Sub1Array1754[i]
-                                    = (((Class318_Sub1) class318_sub1_3_)
+                                    = (class318_sub1_3_
                                     .aClass318_Sub1_6379);
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                         return;
@@ -115,7 +115,7 @@ final class Class183 {
             return null;
         Class22 class22;
         synchronized (aClass60_2458) {
-            class22 = (Class22) aClass60_2458.method583((long) i, 77);
+            class22 = (Class22) aClass60_2458.method583(i, 77);
         }
         if (class22 != null)
             return class22;
@@ -127,7 +127,7 @@ final class Class183 {
         if (is != null)
             class22.method290(new Class348_Sub49(is), -1);
         synchronized (aClass60_2458) {
-            aClass60_2458.method582(class22, (long) i, (byte) -124);
+            aClass60_2458.method582(class22, i, (byte) -124);
         }
         return class22;
     }

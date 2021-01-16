@@ -3,7 +3,7 @@
  */
 
 interface Interface14 {
-    public long method52(byte i);
+    long method52(byte i);
 
-    public boolean method53(int i, Interface14 interface14_0_);
+    boolean method53(int i, Interface14 interface14_0_);
 }

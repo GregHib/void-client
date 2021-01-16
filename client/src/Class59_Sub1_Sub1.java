@@ -363,15 +363,15 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
     static final void method560(Class318_Sub4 class318_sub4, int i) {
         try {
             anInt8652++;
-            ((Class318_Sub4) class318_sub4).aClass318_Sub1_6410 = null;
-            int i_11_ = (((Class318_Sub4) class318_sub4)
+            class318_sub4.aClass318_Sub1_6410 = null;
+            int i_11_ = (class318_sub4
                     .aClass318_Sub3Array6414).length;
             int i_12_ = 127 / ((i - 82) / 32);
             for (int i_13_ = 0; (i_11_ ^ 0xffffffff) < (i_13_ ^ 0xffffffff);
                  i_13_++)
-                ((Class318_Sub3) (((Class318_Sub4) class318_sub4)
+                class318_sub4
                         .aClass318_Sub3Array6414
-                        [i_13_])).aBoolean6401
+                        [i_13_].aBoolean6401
                         = false;
             synchronized (Class318.aClass243Array3974) {
                 if ((i_11_ ^ 0xffffffff) > (Class318.aClass243Array3974.length

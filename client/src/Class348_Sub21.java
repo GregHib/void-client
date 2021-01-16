@@ -26,10 +26,7 @@ final class Class348_Sub21 extends Class348 {
                 Class347.aBoolean4284 = false;
                 Class25.aBoolean368 = false;
             } else {
-                if (!Class25.aBoolean368)
-                    Class347.aBoolean4284 = true;
-                else
-                    Class347.aBoolean4284 = false;
+                Class347.aBoolean4284 = !Class25.aBoolean368;
                 Class117.anInt1780 = 65535;
                 Class25.aBoolean368 = true;
             }
@@ -93,13 +90,13 @@ final class Class348_Sub21 extends Class348 {
             float f_21_ = -fs[0] + fs_10_[0];
             float f_22_ = -1.0F * (-fs[1] + fs_10_[1]);
             float f_23_ = -fs[2] + fs_10_[2];
-            double d = Math.sqrt((double) (f_21_ * f_21_ + f_23_ * f_23_));
+            double d = Math.sqrt(f_21_ * f_21_ + f_23_ * f_23_);
             Class348_Sub42_Sub19.anInt9701
                     = 0x3fff & (int) (2607.5945876176133
-                    * Math.atan2((double) f_22_, d));
+                    * Math.atan2(f_22_, d));
             Class5.anInt4638 = 0x3fff & (int) (2607.5945876176133
-                    * -Math.atan2((double) f_21_,
-                    (double) f_23_));
+                    * -Math.atan2(f_21_,
+                    f_23_));
             Class338.anInt4186
                     = ((Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775]
                     [i_1_][3])
@@ -123,7 +120,7 @@ final class Class348_Sub21 extends Class348 {
     }
 
     Class348_Sub21(int i) {
-        ((Class348_Sub21) this).anInt6847 = -1;
-        ((Class348_Sub21) this).anInt6847 = i;
+        this.anInt6847 = -1;
+        this.anInt6847 = i;
     }
 }

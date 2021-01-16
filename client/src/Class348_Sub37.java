@@ -22,7 +22,7 @@ final class Class348_Sub37 extends Class348 {
         }
         if (i != 8)
             method3031(-39, null);
-        Class188 class188 = ((ha_Sub2) var_ha_Sub2).aClass188_7736;
+        Class188 class188 = var_ha_Sub2.aClass188_7736;
         if (class188.method1414(35632) && Class369_Sub2.anObject8592 == null) {
             byte[] is = Class5_Sub2.method194(128, -1922, 8, 0.6F, 128, 4.0F,
                     4.0F, 0.5F, 16.0F,
@@ -39,7 +39,7 @@ final class Class348_Sub37 extends Class348 {
         int i_0_ = class348_sub49.method3387(255);
         Class348_Sub40 class348_sub40
                 = Class59_Sub1_Sub1.method557(i_0_, (byte) -84);
-        ((Class348_Sub40) class348_sub40).anInt7036
+        class348_sub40.anInt7036
                 = class348_sub49.method3387(255);
         int i_1_ = class348_sub49.method3387(255);
         if (i < 123)

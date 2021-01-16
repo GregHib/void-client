@@ -24,8 +24,8 @@ final class Class239_Sub8 extends Class239 {
         try {
             anInt5916++;
             if (i == 1) {
-                int i_2_ = ((Class110) class110_sub1).anInt1704;
-                int i_3_ = ((Class110) class110_sub1_0_).anInt1704;
+                int i_2_ = class110_sub1.anInt1704;
+                int i_3_ = class110_sub1_0_.anInt1704;
                 if (!bool) {
                     if (i_2_ == -1)
                         i_2_ = 2001;
@@ -37,21 +37,21 @@ final class Class239_Sub8 extends Class239 {
             if ((i ^ 0xffffffff) == -3)
                 return (Class239_Sub21.method1811
                         (9152,
-                                (((Class283) class110_sub1_0_.method1038(false))
+                                (class110_sub1_0_.method1038(false)
                                         .aString3663),
                                 Class348_Sub33.anInt6967,
-                                (((Class283) class110_sub1.method1038(false))
+                                (class110_sub1.method1038(false)
                                         .aString3663)));
             if (i == 3) {
-                if (!((Class110_Sub1) class110_sub1).aString5787.equals("-")) {
-                    if (((Class110_Sub1) class110_sub1_0_).aString5787
+                if (!class110_sub1.aString5787.equals("-")) {
+                    if (class110_sub1_0_.aString5787
                             .equals("-")) {
                         if (!bool)
                             return -1;
                         return 1;
                     }
                 } else {
-                    if (((Class110_Sub1) class110_sub1_0_).aString5787
+                    if (class110_sub1_0_.aString5787
                             .equals("-"))
                         return 0;
                     if (bool)
@@ -59,9 +59,9 @@ final class Class239_Sub8 extends Class239 {
                     return 1;
                 }
                 return (Class239_Sub21.method1811
-                        (9152, ((Class110_Sub1) class110_sub1_0_).aString5787,
+                        (9152, class110_sub1_0_.aString5787,
                                 Class348_Sub33.anInt6967,
-                                ((Class110_Sub1) class110_sub1).aString5787));
+                                class110_sub1.aString5787));
             }
             if (i == 4) {
                 if (!class110_sub1.method1033(-85)) {
@@ -106,8 +106,8 @@ final class Class239_Sub8 extends Class239 {
                 return 0;
             }
             if ((i ^ 0xffffffff) == -9) {
-                int i_4_ = ((Class110_Sub1) class110_sub1).anInt5788;
-                int i_5_ = ((Class110_Sub1) class110_sub1_0_).anInt5788;
+                int i_4_ = class110_sub1.anInt5788;
+                int i_5_ = class110_sub1_0_.anInt5788;
                 if (!bool) {
                     if ((i_5_ ^ 0xffffffff) == 0)
                         i_5_ = 1000;
@@ -121,8 +121,8 @@ final class Class239_Sub8 extends Class239 {
                 }
                 return -i_5_ + i_4_;
             }
-            return (((Class110_Sub1) class110_sub1).anInt5786
-                    + -((Class110_Sub1) class110_sub1_0_).anInt5786);
+            return (class110_sub1.anInt5786
+                    + -class110_sub1_0_.anInt5786);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("mfa.L("
@@ -140,7 +140,7 @@ final class Class239_Sub8 extends Class239 {
         if (i != 20014)
             method1749(null, null, false, 94, (byte) -39);
         anInt5914++;
-        if (((Class239) this).aClass348_Sub51_3136.method3428((byte) -80)
+        if (this.aClass348_Sub51_3136.method3428((byte) -80)
                 .method1456((byte) 111))
             return 3;
         return 2;
@@ -156,7 +156,7 @@ final class Class239_Sub8 extends Class239 {
         anInt5917++;
         if (i != -32350)
             anInt5911 = 114;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     Class239_Sub8(Class348_Sub51 class348_sub51) {
@@ -170,7 +170,7 @@ final class Class239_Sub8 extends Class239 {
     final void method1712(int i, int i_7_) {
         int i_8_ = -87 / ((i - 82) / 35);
         anInt5915++;
-        ((Class239) this).anInt3138 = i_7_;
+        this.anInt3138 = i_7_;
     }
 
     final int method1714(int i, int i_9_) {
@@ -219,22 +219,22 @@ final class Class239_Sub8 extends Class239 {
         anInt5924++;
         if ((client.method105(class46).method3307(116) ^ 0xffffffff) == -1)
             return null;
-        if (((Class46) class46).aString780 == null
-                || ((Class46) class46).aString780.trim().length() == 0) {
+        if (class46.aString780 == null
+                || class46.aString780.trim().length() == 0) {
             if (Class299_Sub2.aBoolean6327)
                 return "Hidden-use";
             return null;
         }
         if (i != 0)
             return null;
-        return ((Class46) class46).aString780;
+        return class46.aString780;
     }
 
     final void method1716(boolean bool) {
         anInt5913++;
-        if ((((Class239) this).anInt3138 ^ 0xffffffff) > -2
-                || (((Class239) this).anInt3138 ^ 0xffffffff) < -4)
-            ((Class239) this).anInt3138 = method1710(20014);
+        if ((this.anInt3138 ^ 0xffffffff) > -2
+                || (this.anInt3138 ^ 0xffffffff) < -4)
+            this.anInt3138 = method1710(20014);
         if (bool != false)
             anIntArrayArray5921 = null;
     }
@@ -254,9 +254,9 @@ final class Class239_Sub8 extends Class239 {
              class348_sub21 != null;
              class348_sub21 = (Class348_Sub21) Class75.aClass262_1254
                      .method1990((byte) 113)) {
-            if (((Class348_Sub21) class348_sub21).anInt6847 == i) {
-                int i_18_ = ((Class348_Sub21) class348_sub21).anInt6852;
-                int i_19_ = ((Class348_Sub21) class348_sub21).anInt6851;
+            if (class348_sub21.anInt6847 == i) {
+                int i_18_ = class348_sub21.anInt6852;
+                int i_19_ = class348_sub21.anInt6851;
                 int i_20_ = (i_19_ - -Class75.anInt1263
                         | Class75.anInt1266 + i_18_ << -521899634);
                 int i_21_ = ((-i_19_ + i_17_) * (-i_19_ + i_17_)

@@ -20,7 +20,7 @@ abstract class Class373 {
     static final Class181 method3591(int i, int i_0_) {
         anInt4535++;
         Class181 class181
-                = (Class181) Class5.aClass60_4636.method583((long) i, i_0_ + -128);
+                = (Class181) Class5.aClass60_4636.method583(i, i_0_ + -128);
         if (class181 != null)
             return class181;
         byte[] is = Class239_Sub12.aClass45_5964.method410(-1860, i_0_, i);
@@ -28,7 +28,7 @@ abstract class Class373 {
         if (is != null)
             class181.method1370(24, new Class348_Sub49(is));
         class181.method1371(4);
-        Class5.aClass60_4636.method582(class181, (long) i, (byte) -103);
+        Class5.aClass60_4636.method582(class181, i, (byte) -103);
         return class181;
     }
 
@@ -38,9 +38,7 @@ abstract class Class373 {
         anInt4533++;
         if (i <= 91)
             method3593(53);
-        if (!method3595(-83) && !method3588(-121) && !method3590((byte) 125))
-            return false;
-        return true;
+        return method3595(-83) || method3588(-121) || method3590((byte) 125);
     }
 
     abstract int method3594(byte i);

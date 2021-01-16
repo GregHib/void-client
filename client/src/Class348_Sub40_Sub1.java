@@ -5,7 +5,7 @@
 final class Class348_Sub40_Sub1 extends Class348_Sub40 {
     private int anInt9084 = 4096;
     static int anInt9085;
-    private int[] anIntArray9086 = new int[3];
+    private final int[] anIntArray9086 = new int[3];
     static int anInt9087;
     static int anInt9088;
     static Class351 aClass351_9089 = new Class351(2, 6);
@@ -90,8 +90,8 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
             anInt9091 = 64;
         anInt9093++;
         int[][] is
-                = ((Class348_Sub40) this).aClass322_7033.method2557(-127, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+                = this.aClass322_7033.method2557(-127, i);
+        if (this.aClass322_7033.aBoolean4035) {
             int[][] is_6_ = this.method3039((byte) 62, i, 0);
             int[] is_7_ = is_6_[0];
             int[] is_8_ = is_6_[1];

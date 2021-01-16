@@ -25,7 +25,7 @@ final class Class130_Sub1 extends Class130 {
         aClass144_5800 = null;
     }
 
-    Class130_Sub1(Class58 aclass58[]) {
+    Class130_Sub1(Class58[] aclass58) {
         aClass58Array5801 = aclass58;
     }
 
@@ -4194,6 +4194,6 @@ final class Class130_Sub1 extends Class130 {
     static int anInt5798;
     static int anInt5799;
     static Class144 aClass144_5800;
-    Class58 aClass58Array5801[];
+    Class58[] aClass58Array5801;
     static int anInt5802;
 }

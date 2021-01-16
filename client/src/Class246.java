@@ -27,7 +27,7 @@ abstract class Class246 {
             float f_11_ = ((float) i_3_ * fs_8_[6] + fs_8_[7] * (float) i_4_
                     + (float) i_0_ * fs_8_[i_2_]);
             float f_12_
-                    = 0.5F + ((float) Math.atan2((double) f_9_, (double) f_11_)
+                    = 0.5F + ((float) Math.atan2(f_9_, f_11_)
                     / 6.2831855F);
             if (f_7_ != 1.0F)
                 f_12_ *= f_7_;
@@ -75,11 +75,9 @@ abstract class Class246 {
         anInt3178++;
         if (i != 0)
             return true;
-        if (!(Class348_Sub40_Sub3.method3056(63, i_17_, i_16_)
-                | (0x70000 & i_17_) != 0)
-                && !Class264.method2015(i_17_, i_16_, i + 7))
-            return false;
-        return true;
+        return Class348_Sub40_Sub3.method3056(63, i_17_, i_16_)
+                | (0x70000 & i_17_) != 0
+                || Class264.method2015(i_17_, i_16_, i + 7);
     }
 
     abstract Class348_Sub42_Sub8 method1888

@@ -12,7 +12,7 @@ final class Class348_Sub42_Sub7 extends Class348_Sub42 {
     private final void method3191(int i, Class348_Sub49 class348_sub49,
                                   byte i_0_) {
         if ((i ^ 0xffffffff) == -3)
-            ((Class348_Sub42_Sub7) this).anInt9542
+            this.anInt9542
                     = class348_sub49.method3330(842397944);
         anInt9544++;
         int i_1_ = -60 / ((i_0_ - -26) / 51);

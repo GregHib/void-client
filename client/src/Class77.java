@@ -213,10 +213,8 @@ final class Class77 {
         if (i_15_ != 0)
             return true;
         anInt1299++;
-        if ((0x400 & i_16_ ^ 0xffffffff) == -1)
-            return false;
-        return true;
-    }
+		return (0x400 & i_16_ ^ 0xffffffff) != -1;
+	}
 
     final int method781(byte i) {
         if ((anInt1292 ^ 0xffffffff) == -1) {

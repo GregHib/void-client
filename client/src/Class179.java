@@ -13,7 +13,7 @@ final class Class179 {
     static int anInt2362;
     static int anInt2363;
     private int anInt2364 = -1;
-    private int anInt2365;
+    private final int anInt2365;
     static int anInt2366;
     private String[] aStringArray2367 = new String[0];
     static int anInt2368;
@@ -68,7 +68,7 @@ final class Class179 {
             anInt2369++;
             if (bool_3_) {
                 if (Class297.aString3803.startsWith("win")
-                        && ((Class297) class297).aBoolean3777) {
+                        && class297.aBoolean3777) {
                     String string_4_ = null;
                     if (Class93.anApplet1530 != null)
                         string_4_
@@ -154,8 +154,7 @@ final class Class179 {
             try {
                 Class374.aClass78_4538.method789(0L, (byte) 59);
                 Class374.aClass78_4538.method783(i, 24, true,
-                        (((Class348_Sub49)
-                                class348_sub49)
+                        (class348_sub49
                                 .aByteArray7154));
             } catch (Exception exception) {
                 /* empty */

@@ -100,21 +100,17 @@ final class InputStream_Sub2 extends InputStream {
                         < (i_20_ ^ 0xffffffff))) {
                     int i_28_ = 1 + i_23_;
                     if (((i_19_ + -i_28_ ^ 0xffffffff)
-                            >= ((((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            >= ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10320[0])
                             ^ 0xffffffff))
-                            && ((((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            && ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10320[0])
                             ^ 0xffffffff) >= (i_28_ + i_19_ ^ 0xffffffff)
                             && ((-i_28_ + i_20_ ^ 0xffffffff)
-                            >= ((((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            >= ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10317[0])
                             ^ 0xffffffff))
-                            && ((((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            && ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10317[0])
                             ^ 0xffffffff) >= (i_20_ + i_28_ ^ 0xffffffff))
                         Class239_Sub10.method1760(i_21_, i_26_, false,
@@ -156,20 +152,16 @@ final class InputStream_Sub2 extends InputStream {
                         && i_32_ < Class367_Sub4.anInt7319
                         && i_33_ < Class348_Sub40_Sub3.anInt9109) {
                     int i_41_ = i_36_ + 1;
-                    if ((((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                    if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10320[0]) >= i_32_ - i_41_
-                            && (((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            && (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10320[0]) <= i_41_ + i_32_
                             && ((-i_41_ + i_33_ ^ 0xffffffff)
-                            >= ((((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            >= ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10317[0])
                             ^ 0xffffffff))
                             && (i_33_ - -i_41_
-                            >= (((Class318_Sub1_Sub3_Sub3)
-                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            >= (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                             .anIntArray10317[0])))
                         Class37.method358(i_37_,
                                 (i_36_ + (i_33_ << -253122776)
@@ -268,26 +260,26 @@ final class InputStream_Sub2 extends InputStream {
                             Class348_Sub22 class348_sub22
                                     = ((Class348_Sub22)
                                     Class282.aClass356_3654
-                                            .method3480((long) i_68_, -6008));
+                                            .method3480(i_68_, -6008));
                             if (class348_sub22 != null)
                                 class318_sub1_sub3_sub3
-                                        = (((Class348_Sub22) class348_sub22)
+                                        = (class348_sub22
                                         .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                         }
                         if (class318_sub1_sub3_sub3 != null) {
                             Class225 class225 = class318_sub1_sub3_sub3
                                     .method2422((byte) 72);
-                            if ((((Class225) class225).anIntArrayArray2939
+                            if ((class225.anIntArrayArray2939
                                     != null)
-                                    && (((Class225) class225).anIntArrayArray2939
+                                    && (class225.anIntArrayArray2939
                                     [i_55_]) != null)
-                                i_61_ -= (((Class225) class225)
+                                i_61_ -= (class225
                                         .anIntArrayArray2939[i_55_][1]);
-                            if ((((Class225) class225).anIntArrayArray2910
+                            if ((class225.anIntArrayArray2910
                                     != null)
-                                    && (((Class225) class225).anIntArrayArray2910
+                                    && (class225.anIntArrayArray2910
                                     [i_55_]) != null)
-                                i_61_ -= (((Class225) class225)
+                                i_61_ -= (class225
                                         .anIntArrayArray2910[i_55_][1]);
                         }
                     }
@@ -321,28 +313,28 @@ final class InputStream_Sub2 extends InputStream {
                 Class348_Sub37 class348_sub37
                         = ((Class348_Sub37)
                         (Class130.aClass356_1895.method3480
-                                ((long) (i_72_ << 1888522446
+                                (i_72_ << 1888522446
                                                 | Class348_Sub40_Sub12.anInt9200 << 1520501788
-                                                | i_74_),
+                                                | i_74_,
                                         -6008)));
                 if (class348_sub37 != null) {
                     for (Class348_Sub34 class348_sub34
                          = ((Class348_Sub34)
-                            ((Class348_Sub37) class348_sub37)
+                            class348_sub37
                                     .aClass262_6998.method1995(4));
                          class348_sub34 != null;
                          class348_sub34
                                  = ((Class348_Sub34)
-                                 ((Class348_Sub37) class348_sub37)
+                                 class348_sub37
                                          .aClass262_6998.method1990((byte) 49))) {
-                        if ((((Class348_Sub34) class348_sub34).anInt6973
+                        if ((class348_sub34.anInt6973
                                 ^ 0xffffffff)
                                 == (0x7fff & i_69_ ^ 0xffffffff)) {
                             class348_sub34.method2715((byte) 127);
                             break;
                         }
                     }
-                    if (((Class348_Sub37) class348_sub37).aClass262_6998
+                    if (class348_sub37.aClass262_6998
                             .method2002((byte) 18))
                         class348_sub37.method2715((byte) 62);
                     if ((i_73_ ^ 0xffffffff) <= -1 && i_71_ >= 0
@@ -413,28 +405,27 @@ final class InputStream_Sub2 extends InputStream {
                         Class348_Sub37 class348_sub37
                                 = ((Class348_Sub37)
                                 (Class130.aClass356_1895.method3480
-                                        ((long) (i_93_
+                                        (i_93_
                                                         | ((Class348_Sub40_Sub12.anInt9200
                                                         << -670457092)
-                                                        | i_91_ << -1291559154)),
+                                                        | i_91_ << -1291559154),
                                                 -6008)));
                         if (class348_sub37 != null) {
                             for (Class348_Sub34 class348_sub34
                                  = ((Class348_Sub34)
-                                    ((Class348_Sub37) class348_sub37)
+                                    class348_sub37
                                             .aClass262_6998.method1995(4));
                                  class348_sub34 != null;
                                  class348_sub34
                                          = ((Class348_Sub34)
-                                         ((Class348_Sub37) class348_sub37)
+                                         class348_sub37
                                                  .aClass262_6998
                                                  .method1990((byte) 34))) {
-                                if ((((Class348_Sub34) class348_sub34)
+                                if ((class348_sub34
                                         .anInt6973) == (0x7fff & i_94_)
-                                        && i_95_ == ((Class348_Sub34)
-                                        class348_sub34).anInt6971) {
+                                        && i_95_ == class348_sub34.anInt6971) {
                                     class348_sub34.method2715((byte) 32);
-                                    ((Class348_Sub34) class348_sub34).anInt6971
+                                    class348_sub34.anInt6971
                                             = i_96_;
                                     Class352.method3459(class348_sub34,
                                             (Class348_Sub40_Sub12

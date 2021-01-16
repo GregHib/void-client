@@ -9,7 +9,7 @@ final class Class241_Sub2 extends Class241 {
     private long aLong6161 = 0L;
     private long aLong6162;
     private int anInt6163;
-    private long[] aLongArray6164;
+    private final long[] aLongArray6164;
     private int anInt6165;
 
     private final long method1864(int i) {

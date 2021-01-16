@@ -74,8 +74,8 @@ abstract class Class239 {
     abstract void method1716(boolean bool);
 
     Class239(Class348_Sub51 class348_sub51) {
-        ((Class239) this).aClass348_Sub51_3136 = class348_sub51;
-        ((Class239) this).anInt3138 = method1710(20014);
+        this.aClass348_Sub51_3136 = class348_sub51;
+        this.anInt3138 = method1710(20014);
     }
 
     static final void method1717(int i, int i_4_, int i_5_, int i_6_) {
@@ -86,8 +86,8 @@ abstract class Class239 {
     }
 
     Class239(int i, Class348_Sub51 class348_sub51) {
-        ((Class239) this).aClass348_Sub51_3136 = class348_sub51;
-        ((Class239) this).anInt3138 = i;
+        this.aClass348_Sub51_3136 = class348_sub51;
+        this.anInt3138 = i;
     }
 
     final void method1718(int i, int i_7_) {

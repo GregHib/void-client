@@ -18,7 +18,7 @@ final class Class348_Sub42_Sub6 extends Class348_Sub42 {
             if ((i_2_ ^ 0xffffffff) == -65536)
                 i_2_ = -1;
             if (OutputStream_Sub1.aClass110_Sub1Array97[i_1_] != null)
-                ((Class110) OutputStream_Sub1.aClass110_Sub1Array97[i_1_])
+                OutputStream_Sub1.aClass110_Sub1Array97[i_1_]
                         .anInt1704
                         = i_2_;
         }
@@ -51,14 +51,14 @@ final class Class348_Sub42_Sub6 extends Class348_Sub42 {
                     Class59_Sub1.method555(false, 0);
                 }
             } else {
-                Class363.aString4461 += (String) strings[0];
+                Class363.aString4461 += strings[0];
                 Class348_Sub38.anInt7006 += strings[0].length();
             }
         }
     }
 
     Class348_Sub42_Sub6(Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4) {
-        ((Class348_Sub42_Sub6) this).aClass318_Sub1_Sub3_Sub4_9538
+        this.aClass318_Sub1_Sub3_Sub4_9538
                 = class318_sub1_sub3_sub4;
     }
 

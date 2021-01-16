@@ -38,7 +38,7 @@ final class Class25 {
         anInt361++;
         Class38 class38;
         synchronized (aClass60_360) {
-            class38 = (Class38) aClass60_360.method583((long) i, -91);
+            class38 = (Class38) aClass60_360.method583(i, -91);
         }
         if (class38 != null)
             return class38;
@@ -52,7 +52,7 @@ final class Class25 {
         if (is != null)
             class38.method364(new Class348_Sub49(is), (byte) 54);
         synchronized (aClass60_360) {
-            aClass60_360.method582(class38, (long) i, (byte) -109);
+            aClass60_360.method582(class38, i, (byte) -109);
         }
         return class38;
     }
@@ -93,7 +93,7 @@ final class Class25 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i_11_, (byte) 105, 16);
         class348_sub42_sub15.method3246(-25490);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i;
+        class348_sub42_sub15.anInt9652 = i;
     }
 
     public static void method305(byte i) {

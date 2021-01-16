@@ -9,9 +9,9 @@ final class Class261 {
     static int anInt3316;
     static int anInt3317;
     static int anInt3318;
-    private Class45 aClass45_3319;
+    private final Class45 aClass45_3319;
     static int anInt3320;
-    private Class60 aClass60_3321 = new Class60(64);
+    private final Class60 aClass60_3321 = new Class60(64);
     static int anInt3322;
 
     public static void method1980(int i) {
@@ -45,7 +45,7 @@ final class Class261 {
                 int i_7_ = string.indexOf(c, i_6_);
                 if (i_7_ < 0)
                     break;
-                stringbuffer.append(string.substring(i_6_, i_7_));
+                stringbuffer.append(string, i_6_, i_7_);
                 stringbuffer.append(string_0_);
                 i_6_ = i_7_ + 1;
             }
@@ -70,12 +70,12 @@ final class Class261 {
                 = Class286_Sub3.method2148(Class117.aClass351_1766,
                 Class348_Sub23_Sub2.aClass77_9029,
                 i + -107);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3378(false, 1 - -Class239_Sub6.method1745(string, -65));
         if (i == 16) {
-            ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+            class348_sub47.aClass348_Sub49_Sub2_7116
                     .method3370((byte) -70, i_8_);
-            ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+            class348_sub47.aClass348_Sub49_Sub2_7116
                     .method3333((byte) -5, string);
             Class348_Sub42_Sub14.method3243(117, class348_sub47);
         }
@@ -85,7 +85,7 @@ final class Class261 {
         anInt3320++;
         Class225 class225;
         synchronized (aClass60_3321) {
-            class225 = (Class225) aClass60_3321.method583((long) i, 69);
+            class225 = (Class225) aClass60_3321.method583(i, 69);
         }
         if (class225 != null)
             return class225;
@@ -97,7 +97,7 @@ final class Class261 {
         if (is != null)
             class225.method1620(new Class348_Sub49(is), -108);
         synchronized (aClass60_3321) {
-            aClass60_3321.method582(class225, (long) i, (byte) -109);
+            aClass60_3321.method582(class225, i, (byte) -109);
         }
         return class225;
     }
@@ -147,7 +147,7 @@ final class Class261 {
                      .aClass262_9111
                      .method1990((byte) 83)) {
             int i_13_
-                    = ((Class348_Sub42_Sub12) class348_sub42_sub12).anInt9608;
+                    = class348_sub42_sub12.anInt9608;
             if ((i_13_ ^ 0xffffffff) > -1001) {
                 class348_sub42_sub12.method2715((byte) 97);
                 if (i_13_ == 15 || i_13_ == 2 || (i_13_ ^ 0xffffffff) == -31
@@ -170,20 +170,17 @@ final class Class261 {
                     || Class73.anInt4776 <= 2)
                 Class316.aClass348_Sub42_Sub12_3963
                         = ((Class348_Sub42_Sub12)
-                        ((Class348)
-                                (((Class262) Class348_Sub40_Sub4.aClass262_9111)
-                                        .aClass348_3334)).aClass348_4295);
+                        Class348_Sub40_Sub4.aClass262_9111
+                                .aClass348_3334.aClass348_4295);
             else
                 Class316.aClass348_Sub42_Sub12_3963
                         = ((Class348_Sub42_Sub12)
-                        ((Class348)
-                                ((Class348)
-                                        (((Class262) Class348_Sub40_Sub4.aClass262_9111)
-                                                .aClass348_3334)).aClass348_4295).aClass348_4295);
+                        Class348_Sub40_Sub4.aClass262_9111
+                                .aClass348_3334.aClass348_4295.aClass348_4295);
             Class135_Sub2.aClass348_Sub42_Sub12_4846
                     = ((Class348_Sub42_Sub12)
-                    ((Class348) (((Class262) Class348_Sub40_Sub4.aClass262_9111)
-                            .aClass348_3334)).aClass348_4295);
+                    Class348_Sub40_Sub4.aClass262_9111
+                            .aClass348_3334.aClass348_4295);
         } else {
             Class316.aClass348_Sub42_Sub12_3963 = null;
             Class135_Sub2.aClass348_Sub42_Sub12_4846 = null;
@@ -265,8 +262,7 @@ final class Class261 {
                                              class156.method1243((byte) 74))) {
                                     if ((i_22_ ^ 0xffffffff)
                                             == (i_17_ ^ 0xffffffff)) {
-                                        if (((Class348_Sub42_Sub13)
-                                                class348_sub42_sub13).anInt9615
+                                        if (class348_sub42_sub13.anInt9615
                                                 > 1)
                                             Class99.method881
                                                     (class348_sub42_sub13, i_16_,
@@ -293,8 +289,7 @@ final class Class261 {
                         && Class373.anInt4534 + Class177.anInt4669 >= i_24_) {
                     int i_25_ = -1;
                     for (int i_26_ = 0;
-                         (((Class348_Sub42_Sub13)
-                                 Class242.aClass348_Sub42_Sub13_3152).anInt9615
+                         (Class242.aClass348_Sub42_Sub13_3152.anInt9615
                                  > i_26_);
                          i_26_++) {
                         if (Class71.aBoolean1211) {
@@ -314,9 +309,8 @@ final class Class261 {
                     if ((i_25_ ^ 0xffffffff) != 0) {
                         int i_29_ = 0;
                         Class156 class156
-                                = new Class156(((Class348_Sub42_Sub13)
-                                (Class242
-                                        .aClass348_Sub42_Sub13_3152))
+                                = new Class156(Class242
+                                        .aClass348_Sub42_Sub13_3152
                                 .aClass107_9621);
                         for (Class348_Sub42_Sub12 class348_sub42_sub12
                              = ((Class348_Sub42_Sub12)
@@ -384,12 +378,9 @@ final class Class261 {
                                     Class325.method2599
                                             ((byte) 122,
                                                     ((Class348_Sub42_Sub12)
-                                                            (((Class348_Sub42)
-                                                                    (((Class107)
-                                                                            (((Class348_Sub42_Sub13)
-                                                                                    class348_sub42_sub13)
-                                                                                    .aClass107_9621))
-                                                                            .aClass348_Sub42_1647))
+                                                            (class348_sub42_sub13
+                                                                    .aClass107_9621
+                                                                    .aClass348_Sub42_1647
                                                                     .aClass348_Sub42_7063)),
                                                     i_24_, i_23_);
                                     Class286_Sub2.method2146((byte) 118);

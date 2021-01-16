@@ -52,8 +52,8 @@ final class RuntimeException_Sub1 extends RuntimeException {
     }
 
     RuntimeException_Sub1(Throwable throwable, String string) {
-        ((RuntimeException_Sub1) this).aString4594 = string;
-        ((RuntimeException_Sub1) this).aThrowable4595 = throwable;
+        this.aString4594 = string;
+        this.aThrowable4595 = throwable;
     }
 
     static final void method4011(int i, Class45 class45) {

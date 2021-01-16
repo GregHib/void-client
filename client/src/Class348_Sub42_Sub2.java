@@ -8,14 +8,14 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     static int anInt8561;
     private int anInt8562 = -1;
     private int anInt8563 = -1;
-    private ha_Sub2 aHa_Sub2_8564;
+    private final ha_Sub2 aHa_Sub2_8564;
     int anInt8565;
     static int anInt8566;
-    private int anInt8567;
+    private final int anInt8567;
     static int anInt8568;
     private int anInt8569;
     static int anInt8570;
-    private int anInt8571;
+    private final int anInt8571;
     int anInt8572;
     static long aLong8573 = 0L;
 
@@ -36,10 +36,10 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         Class362.anInt4459 = i_0_;
         Class270.anInt3465 = 1 << Class362.anInt4459;
         Class348_Sub23_Sub2.anInt9037 = Class270.anInt3465 >> 1;
-        Math.sqrt((double) ((Class348_Sub23_Sub2.anInt9037
+        Math.sqrt((Class348_Sub23_Sub2.anInt9037
                 * Class348_Sub23_Sub2.anInt9037)
                 + (Class348_Sub23_Sub2.anInt9037
-                * Class348_Sub23_Sub2.anInt9037)));
+                * Class348_Sub23_Sub2.anInt9037));
         Class189.anInt2524 = i_1_;
         Class318_Sub7.anInt6451 = i_2_;
         Class348_Sub41.anInt7054 = i_3_;
@@ -173,7 +173,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     public final void method37(int i) {
         anInt8561++;
         if (i != -3022)
-            ((Class348_Sub42_Sub2) this).anInt8572 = 15;
+            this.anInt8572 = 15;
         OpenGL.glFramebufferRenderbufferEXT(anInt8562, anInt8563, 36161, 0);
         anInt8562 = -1;
         anInt8563 = -1;
@@ -181,9 +181,9 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
 
     Class348_Sub42_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_11_, int i_12_) {
         try {
-            ((Class348_Sub42_Sub2) this).anInt8572 = i_11_;
+            this.anInt8572 = i_11_;
             aHa_Sub2_8564 = var_ha_Sub2;
-            ((Class348_Sub42_Sub2) this).anInt8565 = i_12_;
+            this.anInt8565 = i_12_;
             anInt8567 = i;
             OpenGL.glGenRenderbuffersEXT(1,
                     Class348_Sub40_Sub34.anIntArray9431,
@@ -191,12 +191,12 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             anInt8569 = Class348_Sub40_Sub34.anIntArray9431[0];
             OpenGL.glBindRenderbufferEXT(36161, anInt8569);
             OpenGL.glRenderbufferStorageEXT(36161, anInt8567,
-                    (((Class348_Sub42_Sub2) this)
+                    (this
                             .anInt8572),
-                    (((Class348_Sub42_Sub2) this)
+                    (this
                             .anInt8565));
-            anInt8571 = (((Class348_Sub42_Sub2) this).anInt8565
-                    * ((Class348_Sub42_Sub2) this).anInt8572
+            anInt8571 = (this.anInt8565
+                    * this.anInt8572
                     * aHa_Sub2_8564.method3798(anInt8567, 2));
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -211,9 +211,9 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     Class348_Sub42_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_13_, int i_14_,
                         int i_15_) {
         try {
-            ((Class348_Sub42_Sub2) this).anInt8572 = i_13_;
+            this.anInt8572 = i_13_;
             anInt8567 = i;
-            ((Class348_Sub42_Sub2) this).anInt8565 = i_14_;
+            this.anInt8565 = i_14_;
             aHa_Sub2_8564 = var_ha_Sub2;
             OpenGL.glGenRenderbuffersEXT(1,
                     Class348_Sub40_Sub34.anIntArray9431,
@@ -222,10 +222,10 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             OpenGL.glBindRenderbufferEXT(36161, anInt8569);
             OpenGL.glRenderbufferStorageMultisampleEXT
                     (36161, i_15_, anInt8567,
-                            ((Class348_Sub42_Sub2) this).anInt8572,
-                            ((Class348_Sub42_Sub2) this).anInt8565);
-            anInt8571 = (((Class348_Sub42_Sub2) this).anInt8565
-                    * ((Class348_Sub42_Sub2) this).anInt8572
+                            this.anInt8572,
+                            this.anInt8565);
+            anInt8571 = (this.anInt8565
+                    * this.anInt8572
                     * aHa_Sub2_8564.method3798(anInt8567, 2));
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

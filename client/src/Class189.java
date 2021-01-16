@@ -21,31 +21,31 @@ final class Class189 {
     private final void method1418(int i, int i_0_,
                                   Class348_Sub49 class348_sub49, byte i_1_) {
         if (i_1_ != 94)
-            ((Class189) this).anInt2526 = -81;
+            this.anInt2526 = -81;
         anInt2532++;
         if ((i ^ 0xffffffff) == -2) {
-            ((Class189) this).anInt2525 = class348_sub49.method3330(842397944);
-            if (((Class189) this).anInt2525 == 65535)
-                ((Class189) this).anInt2525 = -1;
+            this.anInt2525 = class348_sub49.method3330(842397944);
+            if (this.anInt2525 == 65535)
+                this.anInt2525 = -1;
         } else if ((i ^ 0xffffffff) != -3) {
             if ((i ^ 0xffffffff) != -4) {
                 if ((i ^ 0xffffffff) == -5)
-                    ((Class189) this).anInt2534
+                    this.anInt2534
                             = class348_sub49.method3387(255);
                 else if ((i ^ 0xffffffff) != -6) {
                     if (i == 6)
-                        ((Class189) this).aBoolean2522 = true;
+                        this.aBoolean2522 = true;
                     else if ((i ^ 0xffffffff) == -8)
-                        ((Class189) this).aBoolean2531 = true;
+                        this.aBoolean2531 = true;
                 } else
-                    ((Class189) this).anInt2533
+                    this.anInt2533
                             = class348_sub49.method3387(255);
             } else
                 class348_sub49.method3388(-106);
         } else {
-            ((Class189) this).anInt2526
+            this.anInt2526
                     = 1 + class348_sub49.method3330(842397944);
-            ((Class189) this).anInt2530
+            this.anInt2530
                     = class348_sub49.method3330(842397944) - -1;
         }
     }
@@ -79,7 +79,7 @@ final class Class189 {
         Class367_Sub11.anIntArray7397[i_21_] = i_15_;
         int i_22_ = 0;
         Class205.anIntArray2694[i_21_++] = i_16_;
-        int[][] is = ((Class361) class361).anIntArrayArray4438;
+        int[][] is = class361.anIntArrayArray4438;
         while_56_:
         while (i_22_ != i_21_) {
             i_16_ = Class205.anIntArray2694[i_22_];
@@ -87,8 +87,8 @@ final class Class189 {
             i_17_ = i_15_ + -i_19_;
             i_18_ = -i_20_ + i_16_;
             i_22_ = 0xfff & i_22_ - -1;
-            int i_23_ = i_15_ - ((Class361) class361).anInt4453;
-            int i_24_ = i_16_ - ((Class361) class361).anInt4441;
+            int i_23_ = i_15_ - class361.anInt4453;
+            int i_24_ = i_16_ - class361.anInt4441;
             int i_25_ = i_13_;
             while_48_:
             do {
@@ -343,9 +343,9 @@ final class Class189 {
     }
 
     public Class189() {
-        ((Class189) this).anInt2526 = 64;
-        ((Class189) this).anInt2530 = 64;
-        ((Class189) this).anInt2525 = -1;
-        ((Class189) this).anInt2534 = 2;
+        this.anInt2526 = 64;
+        this.anInt2530 = 64;
+        this.anInt2525 = -1;
+        this.anInt2534 = 2;
     }
 }

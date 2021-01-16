@@ -8,7 +8,7 @@ final class Class87 {
     static int anInt1485;
     static int anInt1486;
     private Class60 aClass60_1487 = new Class60(64);
-    private Class45 aClass45_1488;
+    private final Class45 aClass45_1488;
     static int anInt1489;
     static int anInt1490;
     private Class60 aClass60_1491 = new Class60(100);
@@ -29,7 +29,7 @@ final class Class87 {
         anInt1483++;
         Class17 class17;
         synchronized (aClass60_1487) {
-            class17 = (Class17) aClass60_1487.method583((long) i, i_0_ + -68);
+            class17 = (Class17) aClass60_1487.method583(i, i_0_ + -68);
         }
         if (i_0_ != 7)
             aClass60_1491 = null;
@@ -42,13 +42,13 @@ final class Class87 {
                     Class52.method494(i_0_ ^ 0x55, i));
         }
         class17 = new Class17();
-        ((Class17) class17).anInt269 = i;
-        ((Class17) class17).aClass87_251 = this;
+        class17.anInt269 = i;
+        class17.aClass87_251 = this;
         if (is != null)
             class17.method267(new Class348_Sub49(is), false);
         class17.method270((byte) 124);
         synchronized (aClass60_1487) {
-            aClass60_1487.method582(class17, (long) i, (byte) -126);
+            aClass60_1487.method582(class17, i, (byte) -126);
         }
         return class17;
     }
@@ -97,11 +97,11 @@ final class Class87 {
             if (i_5_ != 3)
                 aClass60_1487 = null;
             class348_sub42_sub17
-                    = (Class348_Sub42_Sub17) aClass60_1491.method583((long) i,
+                    = (Class348_Sub42_Sub17) aClass60_1491.method583(i,
                     -60);
             if (class348_sub42_sub17 == null) {
                 class348_sub42_sub17 = new Class348_Sub42_Sub17(i);
-                aClass60_1491.method582(class348_sub42_sub17, (long) i,
+                aClass60_1491.method582(class348_sub42_sub17, i,
                         (byte) -127);
             }
             if (!class348_sub42_sub17.method3268(-122))

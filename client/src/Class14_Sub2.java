@@ -15,14 +15,14 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
         super(class377, 34067, Class108.aClass304_1662, Class68.aClass68_1183,
                 6 * (i * i), bool);
         try {
-            ((Class14) this).aClass377_5082.method3850((byte) -109, this);
+            this.aClass377_5082.method3850((byte) -109, this);
             if (!bool) {
                 for (int i_0_ = 0; i_0_ < 6; i_0_++)
                     OpenGL.glTexImage2Di
                             (34069 + i_0_, 0, this.method228(121), i, i, 0,
                                     Class348_Sub40_Sub3
-                                            .method3055(110, ((Class14) this).aClass304_5084),
-                                    (((Class377) ((Class14) this).aClass377_5082)
+                                            .method3055(110, this.aClass304_5084),
+                                    (this.aClass377_5082
                                             .anInt9918),
                                     is[i_0_], 0);
             } else {
@@ -54,9 +54,9 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
                 Class348_Sub49 class348_sub49
                         = Class316.aClass348_Sub51_3959.method3427(24);
                 class234.method1658((byte) 114, 0,
-                        (((Class348_Sub49) class348_sub49)
+                        (class348_sub49
                                 .anInt7197),
-                        (((Class348_Sub49) class348_sub49)
+                        (class348_sub49
                                 .aByteArray7154));
             }
         } catch (Exception exception) {

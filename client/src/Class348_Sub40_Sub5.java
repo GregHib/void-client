@@ -37,7 +37,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
     private final void method3061(boolean bool) {
         anInt9120++;
         if (bool == true) {
-            Random random = new Random((long) anInt9122);
+            Random random = new Random(anInt9122);
             aShortArray9116 = new short[512];
             if ((anInt9125 ^ 0xffffffff) < -1) {
                 for (int i = 0; (i ^ 0xffffffff) > -513; i++)
@@ -66,10 +66,10 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_0_) {
         anInt9123++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
+        int[] is = this.aClass191_7032.method1433(0, i);
         if (i_0_ != 255)
             method3044(-57);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        if (this.aClass191_7032.aBoolean2570) {
             int i_1_ = anInt9117 * Class239_Sub18.anIntArray6035[i] + 2048;
             int i_2_ = i_1_ >> -1096578100;
             int i_3_ = 1 + i_2_;
@@ -143,21 +143,21 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                         } while (false);
                                         i_12_
                                                 = (int) ((Math.sqrt
-                                                ((double) ((float) (((i_12_
+                                                ((float) (((i_12_
                                                         ^ 0xffffffff)
                                                         > -1)
                                                         ? -i_12_
                                                         : i_12_)
-                                                        / 4096.0F)))
+                                                        / 4096.0F))
                                                 * 4096.0);
                                         i_13_
                                                 = (int) (4096.0
                                                 * (Math.sqrt
-                                                ((double) ((float) ((i_13_
+                                                ((float) ((i_13_
                                                         < 0)
                                                         ? -i_13_
                                                         : i_13_)
-                                                        / 4096.0F))));
+                                                        / 4096.0F)));
                                         i_15_ = i_13_ + i_12_;
                                         i_15_ = i_15_ * i_15_ >> 1689737804;
                                         break while_136_;
@@ -168,9 +168,9 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                             = (int) (4096.0
                                             * (Math.sqrt
                                             (Math.sqrt
-                                                    ((double) ((float) (i_12_
+                                                    ((float) (i_12_
                                                             + i_13_)
-                                                            / 1.6777216E7F)))));
+                                                            / 1.6777216E7F))));
                                     break while_136_;
                                 } while (false);
                                 i_15_ = (((i_12_ ^ 0xffffffff) > -1 ? -i_12_
@@ -180,10 +180,10 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                             } while (false);
                             i_15_ = (int) (4096.0
                                     * (Math.sqrt
-                                    ((double) ((float) (i_12_ * i_12_
+                                    ((float) (i_12_ * i_12_
                                             - -(i_13_
                                             * i_13_))
-                                            / 1.6777216E7F))));
+                                            / 1.6777216E7F)));
                         } while (false);
                         if (Class348_Sub42_Sub20.anInt9715 <= i_15_) {
                             if ((Class215.anInt2835 ^ 0xffffffff)

@@ -21,10 +21,10 @@ final class Class138 {
     }
 
     Class138(int i, int i_0_, int i_1_, int i_2_) {
-        ((Class138) this).anInt1943 = i_1_;
-        ((Class138) this).anInt1945 = i_0_;
-        ((Class138) this).anInt1941 = i;
-        ((Class138) this).anInt1944 = i_2_;
+        this.anInt1943 = i_1_;
+        this.anInt1945 = i_0_;
+        this.anInt1941 = i;
+        this.anInt1944 = i_2_;
     }
 
     public final String toString() {

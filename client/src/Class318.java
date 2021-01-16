@@ -14,14 +14,14 @@ class Class318 {
 
     final void method2373(boolean bool) {
         anInt3975++;
-        if (((Class318) this).aClass318_3976 != null) {
-            ((Class318) ((Class318) this).aClass318_3976).aClass318_3970
-                    = ((Class318) this).aClass318_3970;
-            ((Class318) ((Class318) this).aClass318_3970).aClass318_3976
-                    = ((Class318) this).aClass318_3976;
-            ((Class318) this).aClass318_3970 = null;
+        if (this.aClass318_3976 != null) {
+            this.aClass318_3976.aClass318_3970
+                    = this.aClass318_3970;
+            this.aClass318_3970.aClass318_3976
+                    = this.aClass318_3976;
+            this.aClass318_3970 = null;
             if (bool == false)
-                ((Class318) this).aClass318_3976 = null;
+                this.aClass318_3976 = null;
         }
     }
 

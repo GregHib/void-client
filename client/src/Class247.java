@@ -38,12 +38,10 @@ final class Class247 {
         anInt3184++;
         if (Class289.aBoolean3697) {
             try {
-                if (((Boolean)
+                return !((Boolean)
                         Class224.method1617((byte) 125, Class93.anApplet1530,
                                 "showingVideoAd"))
-                        .booleanValue())
-                    return false;
-                return true;
+                        .booleanValue();
             } catch (Throwable throwable) {
                 /* empty */
             }

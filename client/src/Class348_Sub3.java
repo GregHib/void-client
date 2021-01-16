@@ -9,14 +9,14 @@ import jaclib.memory.heap.NativeHeapBuffer;
 import java.awt.*;
 
 final class Class348_Sub3 extends Class348 {
-    private s_Sub3 aS_Sub3_6566;
+    private final s_Sub3 aS_Sub3_6566;
     int anInt6567;
     static int anInt6568;
     int anInt6569;
     static int anInt6570;
     int anInt6571;
     private NativeHeapBuffer aNativeHeapBuffer6572;
-    private int[] anIntArray6573;
+    private final int[] anIntArray6573;
     private Stream aStream6574;
     int anInt6575;
     static int anInt6576;
@@ -33,7 +33,7 @@ final class Class348_Sub3 extends Class348 {
     static int anInt6587;
     static int anInt6588;
     int anInt6589 = 0;
-    private ha_Sub3 aHa_Sub3_6590;
+    private final ha_Sub3 aHa_Sub3_6590;
 
     final void method2736(byte i, int i_0_) {
         if (i != -57)
@@ -48,7 +48,7 @@ final class Class348_Sub3 extends Class348 {
         anInt6583++;
         Interface5_Impl2 interface5_impl2
                 = aHa_Sub3_6590.method3822(47,
-                ((Class348_Sub3) this).anInt6589 * 3);
+                this.anInt6589 * 3);
         Buffer buffer = interface5_impl2.method24(true, false);
         if (buffer != null) {
             if (i != -30)
@@ -61,7 +61,7 @@ final class Class348_Sub3 extends Class348 {
                 for (int i_5_ = 0; i_1_ > i_5_; i_5_++) {
                     int i_6_ = is[i_5_];
                     short[] is_7_
-                            = ((s_Sub3) aS_Sub3_6566).aShortArrayArray8299[i_6_];
+                            = aS_Sub3_6566.aShortArrayArray8299[i_6_];
                     int i_8_ = anIntArray6573[i_6_];
                     if ((i_8_ ^ 0xffffffff) != -1 && is_7_ != null) {
                         int i_9_ = 0;
@@ -91,7 +91,7 @@ final class Class348_Sub3 extends Class348 {
                 for (int i_13_ = 0; i_1_ > i_13_; i_13_++) {
                     int i_14_ = is[i_13_];
                     short[] is_15_
-                            = ((s_Sub3) aS_Sub3_6566).aShortArrayArray8299[i_14_];
+                            = aS_Sub3_6566.aShortArrayArray8299[i_14_];
                     int i_16_ = anIntArray6573[i_14_];
                     if ((i_16_ ^ 0xffffffff) != -1 && is_15_ != null) {
                         int i_17_ = 0;
@@ -119,26 +119,26 @@ final class Class348_Sub3 extends Class348 {
             }
             stream.a();
             if (interface5_impl2.method22(i + 7) && (i_2_ ^ 0xffffffff) < -1) {
-                aHa_Sub3_6590.method3814((((s_Sub3) aS_Sub3_6566).anInt8294
+                aHa_Sub3_6590.method3814((aS_Sub3_6566.anInt8294
                                 & 0x8) != 0,
                         ((0x7
-                                & ((s_Sub3) aS_Sub3_6566).anInt8294)
+                                & aS_Sub3_6566.anInt8294)
                                 ^ 0xffffffff) != -1,
-                        ((Class348_Sub3) this).anInt6567,
+                        this.anInt6567,
                         (byte) 48);
-                if (((ha_Sub3) aHa_Sub3_6590).aBoolean8160)
+                if (aHa_Sub3_6590.aBoolean8160)
                     aHa_Sub3_6590.EA(2147483647,
-                            ((Class348_Sub3) this).anInt6571,
-                            ((Class348_Sub3) this).anInt6575,
-                            ((Class348_Sub3) this).anInt6569);
+                            this.anInt6571,
+                            this.anInt6575,
+                            this.anInt6569);
                 Class101_Sub2 class101_sub2 = aHa_Sub3_6590.method3820(false);
                 class101_sub2.method932
-                        (1.0F, 1.0F / ((Class348_Sub3) this).aFloat6582,
-                                1.0F / ((Class348_Sub3) this).aFloat6582, (byte) -80);
+                        (1.0F, 1.0F / this.aFloat6582,
+                                1.0F / this.aFloat6582, (byte) -80);
                 aHa_Sub3_6590.method3853(i + -2,
                         Class239_Sub18.aClass251_6030);
                 aHa_Sub3_6590.method3925(55, anInterface5_Impl1_6577, 1);
-                aHa_Sub3_6590.method3862(i + 30, (((s_Sub3) aS_Sub3_6566)
+                aHa_Sub3_6590.method3862(i + 30, (aS_Sub3_6566
                         .aClass130_8324));
                 aHa_Sub3_6590.method3938(Class247.aClass21_3181, i_2_,
                         interface5_impl2, i_3_, 0,
@@ -172,13 +172,13 @@ final class Class348_Sub3 extends Class348 {
     }
 
     final void method2741(int i, float f, int i_24_, int i_25_, int i_26_) {
-        if ((((Class348_Sub3) this).anInt6567 ^ 0xffffffff) != 0) {
+        if ((this.anInt6567 ^ 0xffffffff) != 0) {
             Class12 class12
-                    = ((ha) aHa_Sub3_6590).aD4579
-                    .method3(((Class348_Sub3) this).anInt6567, -6662);
-            int i_27_ = ((Class12) class12).aByte201 & 0xff;
+                    = aHa_Sub3_6590.aD4579
+                    .method3(this.anInt6567, -6662);
+            int i_27_ = class12.aByte201 & 0xff;
             if ((i_27_ ^ 0xffffffff) != -1
-                    && ((Class12) class12).aByte213 != 4) {
+                    && class12.aByte213 != 4) {
                 int i_28_;
                 if ((i_25_ ^ 0xffffffff) > -1)
                     i_28_ = 0;
@@ -198,7 +198,7 @@ final class Class348_Sub3 extends Class348 {
                 } else
                     i_26_ = i_28_;
             }
-            int i_31_ = 0xff & ((Class12) class12).aByte216;
+            int i_31_ = 0xff & class12.aByte216;
             if ((i_31_ ^ 0xffffffff) != -1) {
                 i_31_ += 256;
                 int i_32_ = (0xff & i_26_ >> 630532432) * i_31_;
@@ -240,7 +240,7 @@ final class Class348_Sub3 extends Class348 {
         }
         if (i_24_ != 1624)
             method2743(null, (byte) 67);
-        if (((ha_Sub3) aHa_Sub3_6590).anInt8178 == 0) {
+        if (aHa_Sub3_6590.anInt8178 == 0) {
             aStream6574.f((byte) i_26_);
             aStream6574.f((byte) (i_26_ >> -550100824));
             aStream6574.f((byte) (i_26_ >> 2173840));
@@ -253,14 +253,14 @@ final class Class348_Sub3 extends Class348 {
 
     final void method2742(int i, int i_38_, int i_39_, byte i_40_) {
         anInt6570++;
-        anIntArray6573[i_38_ * ((s) aS_Sub3_6566).anInt4587 - -i_39_]
+        anIntArray6573[i_38_ * aS_Sub3_6566.anInt4587 - -i_39_]
                 = Class273.method2057((anIntArray6573
-                        [(i_38_ * ((s) aS_Sub3_6566).anInt4587
+                        [(i_38_ * aS_Sub3_6566.anInt4587
                         - -i_39_)]),
                 1 << i);
         if (i_40_ > -65)
             aFloat6586 = -1.0413289F;
-        ((Class348_Sub3) this).anInt6589++;
+        this.anInt6589++;
     }
 
     static final Class346 method2743(Component component, byte i) {
@@ -272,7 +272,7 @@ final class Class348_Sub3 extends Class348 {
     final void method2744(byte i, int i_42_) {
         anInt6578++;
         if (i > -106)
-            ((Class348_Sub3) this).anInt6571 = -80;
+            this.anInt6571 = -80;
         aStream6574.e(4 * i_42_ + 3);
         aStream6574.f(-1);
     }
@@ -280,13 +280,13 @@ final class Class348_Sub3 extends Class348 {
     Class348_Sub3(s_Sub3 var_s_Sub3, int i, int i_43_, int i_44_, int i_45_,
                   int i_46_) {
         aS_Sub3_6566 = var_s_Sub3;
-        ((Class348_Sub3) this).anInt6569 = i_46_;
-        ((Class348_Sub3) this).aFloat6582 = (float) i_43_;
-        aHa_Sub3_6590 = ((s_Sub3) aS_Sub3_6566).aHa_Sub3_8322;
-        ((Class348_Sub3) this).anInt6575 = i_45_;
-        ((Class348_Sub3) this).anInt6567 = i;
-        anIntArray6573 = new int[(((s) aS_Sub3_6566).anInt4590
-                * ((s) aS_Sub3_6566).anInt4587)];
-        ((Class348_Sub3) this).anInt6571 = i_44_;
+        this.anInt6569 = i_46_;
+        this.aFloat6582 = (float) i_43_;
+        aHa_Sub3_6590 = aS_Sub3_6566.aHa_Sub3_8322;
+        this.anInt6575 = i_45_;
+        this.anInt6567 = i;
+        anIntArray6573 = new int[(aS_Sub3_6566.anInt4590
+                * aS_Sub3_6566.anInt4587)];
+        this.anInt6571 = i_44_;
     }
 }

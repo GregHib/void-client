@@ -8,7 +8,7 @@ import java.awt.*;
 
 final class Class367_Sub11 extends Class367 {
     private Interface18_Impl3 anInterface18_Impl3_7390;
-    private boolean aBoolean7391;
+    private final boolean aBoolean7391;
     private Class193 aClass193_7392;
     static int anInt7393;
     static byte[] aByteArray7394;
@@ -30,7 +30,7 @@ final class Class367_Sub11 extends Class367 {
     static int anInt7410;
     private boolean aBoolean7411;
     static int anInt7412;
-    private float[] aFloatArray7413 = new float[4];
+    private final float[] aFloatArray7413 = new float[4];
     static int anInt7414;
     static Class32 aClass32_7415 = new Class32(8);
 
@@ -38,19 +38,19 @@ final class Class367_Sub11 extends Class367 {
         if (i <= 45)
             method3557(true);
         anInt7401++;
-        int i_0_ = ((Class367) this).aHa_Sub3_4479.method3941(102);
+        int i_0_ = this.aHa_Sub3_4479.method3941(102);
         Class101_Sub2 class101_sub2
-                = ((Class367) this).aHa_Sub3_4479.method3887((byte) 98);
+                = this.aHa_Sub3_4479.method3887((byte) 98);
         if (!aBoolean7411)
             OpenGL.glBindProgramARB(34336,
                     ((i_0_ ^ 0xffffffff) != -2147483648
-                            ? ((Class193) aClass193_7404).anInt2584
-                            : ((Class193) aClass193_7395).anInt2584));
+                            ? aClass193_7404.anInt2584
+                            : aClass193_7395.anInt2584));
         else
             OpenGL.glBindProgramARB(34336,
                     (i_0_ == 2147483647
-                            ? ((Class193) aClass193_7392).anInt2584
-                            : ((Class193) aClass193_7407).anInt2584));
+                            ? aClass193_7392.anInt2584
+                            : aClass193_7407.anInt2584));
         OpenGL.glEnable(34336);
         aBoolean7406 = true;
         class101_sub2.method919(0.0F, aFloatArray7413, -1.0F, 0.0F,
@@ -71,21 +71,21 @@ final class Class367_Sub11 extends Class367 {
 
     final void method3520(byte i) {
         anInt7408++;
-        ((Class367) this).aHa_Sub3_4479.method3897(1, -4382);
-        ((Class367) this).aHa_Sub3_4479.method3850((byte) -128, null);
-        ((Class367) this).aHa_Sub3_4479
+        this.aHa_Sub3_4479.method3897(1, -4382);
+        this.aHa_Sub3_4479.method3850((byte) -128, null);
+        this.aHa_Sub3_4479
                 .method3874(Class167.aClass229_2207, 116, Class167.aClass229_2207);
-        ((Class367) this).aHa_Sub3_4479.method3849((byte) 47, 0,
+        this.aHa_Sub3_4479.method3849((byte) 47, 0,
                 Class342.aClass70_4247);
-        ((Class367) this).aHa_Sub3_4479
+        this.aHa_Sub3_4479
                 .method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
-        ((Class367) this).aHa_Sub3_4479.method3885(0, true,
+        this.aHa_Sub3_4479.method3885(0, true,
                 Class342.aClass70_4247);
-        ((Class367) this).aHa_Sub3_4479.method3897(0, -4382);
+        this.aHa_Sub3_4479.method3897(0, -4382);
         if (aBoolean7399) {
-            ((Class367) this).aHa_Sub3_4479.method3849((byte) 47, 0,
+            this.aHa_Sub3_4479.method3849((byte) 47, 0,
                     Class342.aClass70_4247);
-            ((Class367) this).aHa_Sub3_4479.method3885(0, true,
+            this.aHa_Sub3_4479.method3885(0, true,
                     Class342.aClass70_4247);
             aBoolean7399 = false;
         }
@@ -108,25 +108,24 @@ final class Class367_Sub11 extends Class367 {
     final void method3527(int i, Interface18 interface18, int i_3_) {
         if (interface18 != null) {
             if (aBoolean7399) {
-                ((Class367) this).aHa_Sub3_4479
+                this.aHa_Sub3_4479
                         .method3849((byte) 47, 0, Class342.aClass70_4247);
-                ((Class367) this).aHa_Sub3_4479
+                this.aHa_Sub3_4479
                         .method3885(0, true, Class342.aClass70_4247);
                 aBoolean7399 = false;
             }
-            ((Class367) this).aHa_Sub3_4479.method3850((byte) -122,
+            this.aHa_Sub3_4479.method3850((byte) -122,
                     interface18);
-            ((Class367) this).aHa_Sub3_4479.method3923(true, i);
+            this.aHa_Sub3_4479.method3923(true, i);
         } else if (!aBoolean7399) {
-            ((Class367) this).aHa_Sub3_4479.method3850((byte) 99,
-                    (((ha_Sub3)
-                            (((Class367) this)
-                                    .aHa_Sub3_4479))
+            this.aHa_Sub3_4479.method3850((byte) 99,
+                    (this
+                            .aHa_Sub3_4479
                             .anInterface18_8147));
-            ((Class367) this).aHa_Sub3_4479.method3923(true, 1);
-            ((Class367) this).aHa_Sub3_4479
+            this.aHa_Sub3_4479.method3923(true, 1);
+            this.aHa_Sub3_4479
                     .method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
-            ((Class367) this).aHa_Sub3_4479
+            this.aHa_Sub3_4479
                     .method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
             aBoolean7399 = true;
         }
@@ -139,22 +138,22 @@ final class Class367_Sub11 extends Class367 {
         if (i != -16252)
             aBoolean7411 = true;
         if (aBoolean7406) {
-            int i_4_ = ((Class367) this).aHa_Sub3_4479.XA();
-            int i_5_ = ((Class367) this).aHa_Sub3_4479.i();
+            int i_4_ = this.aHa_Sub3_4479.XA();
+            int i_5_ = this.aHa_Sub3_4479.i();
             float f = (float) i_4_ - 0.125F * (float) (-i_5_ + i_4_);
             float f_6_ = -(0.25F * (float) (-i_5_ + i_4_)) + (float) i_4_;
             OpenGL.glProgramLocalParameter4fARB
                     (34336, 0, f_6_, f,
-                            1.0F / (float) ((Class367) this).aHa_Sub3_4479
+                            1.0F / (float) this.aHa_Sub3_4479
                                     .method3833((byte) -58),
-                            (float) ((Class367) this).aHa_Sub3_4479
+                            (float) this.aHa_Sub3_4479
                                     .method3826((byte) -70) / 255.0F);
-            ((Class367) this).aHa_Sub3_4479.method3897(1, -4382);
-            ((Class367) this).aHa_Sub3_4479.method3894(-28186,
-                    ((Class367) this)
+            this.aHa_Sub3_4479.method3897(1, -4382);
+            this.aHa_Sub3_4479.method3894(-28186,
+                    this
                             .aHa_Sub3_4479
                             .method3863(-104));
-            ((Class367) this).aHa_Sub3_4479.method3897(0, -4382);
+            this.aHa_Sub3_4479.method3897(0, -4382);
         }
         anInt7412++;
     }
@@ -246,7 +245,7 @@ final class Class367_Sub11 extends Class367 {
     Class367_Sub11(Class377 class377, Class45 class45) {
         super(class377);
         try {
-            if (class45 != null && ((Class377) class377).aBoolean9923) {
+            if (class45 != null && class377.aBoolean9923) {
                 aClass193_7395
                         = za_Sub2.method3442(34336,
                         class45.method391("gl",
@@ -276,7 +275,7 @@ final class Class367_Sub11 extends Class367 {
                     aBoolean7391 = false;
                 else {
                     anInterface18_Impl3_7390
-                            = ((Class367) this).aHa_Sub3_4479.method3839(1, 2,
+                            = this.aHa_Sub3_4479.method3839(1, 2,
                             -15137,
                             false,
                             (new int[]
@@ -311,21 +310,21 @@ final class Class367_Sub11 extends Class367 {
     final void method3525(int i, boolean bool) {
         anInt7400++;
         aBoolean7411 = bool;
-        ((Class367) this).aHa_Sub3_4479.method3897(1, i ^ ~0x2a45);
-        ((Class367) this).aHa_Sub3_4479.method3850((byte) -32,
+        this.aHa_Sub3_4479.method3897(1, i ^ ~0x2a45);
+        this.aHa_Sub3_4479.method3850((byte) -32,
                 anInterface18_Impl3_7390);
-        ((Class367) this).aHa_Sub3_4479.method3874((Class328_Sub3
+        this.aHa_Sub3_4479.method3874((Class328_Sub3
                         .aClass229_6519),
                 109,
                 Class248.aClass229_3196);
-        ((Class367) this).aHa_Sub3_4479
+        this.aHa_Sub3_4479
                 .method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
         if (i == 15192) {
-            ((Class367) this).aHa_Sub3_4479
+            this.aHa_Sub3_4479
                     .method3924(true, false, 2, Class342.aClass70_4247, false);
-            ((Class367) this).aHa_Sub3_4479
+            this.aHa_Sub3_4479
                     .method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
-            ((Class367) this).aHa_Sub3_4479.method3897(0, i + -19574);
+            this.aHa_Sub3_4479.method3897(0, i + -19574);
             method3528(75);
         }
     }

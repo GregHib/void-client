@@ -79,7 +79,7 @@ final class Class5_Sub2 extends Class5 {
 
     Class5_Sub2(Class45 class45, Class45 class45_12_,
                 Class369_Sub2 class369_sub2) {
-        super(class45, class45_12_, (Class369) class369_sub2);
+        super(class45, class45_12_, class369_sub2);
     }
 
     static final void method196(boolean bool, int i, int i_13_, int i_14_,
@@ -106,16 +106,16 @@ final class Class5_Sub2 extends Class5 {
     final void method178(int i, boolean bool, byte i_16_, int i_17_) {
         Class348_Sub8.aHa6654.method3628
                 (-2 + i, i_17_,
-                        4 + ((Class369) ((Class5) this).aClass369_4635).anInt4971,
-                        2 + ((Class369) ((Class5) this).aClass369_4635).anInt4963,
-                        (((Class369_Sub2) (Class369_Sub2) ((Class5) this).aClass369_4635)
+                        4 + this.aClass369_4635.anInt4971,
+                        2 + this.aClass369_4635.anInt4963,
+                        (((Class369_Sub2) this.aClass369_4635)
                                 .anInt8585),
                         0);
         anInt8360++;
         Class348_Sub8.aHa6654.method3628
                 (i - 1, 1 + i_17_,
-                        ((Class369) ((Class5) this).aClass369_4635).anInt4971 - -2,
-                        ((Class369) ((Class5) this).aClass369_4635).anInt4963, 0, 0);
+                        this.aClass369_4635.anInt4971 - -2,
+                        this.aClass369_4635.anInt4963, 0, 0);
         if (i_16_ > -6)
             aClass114_8365 = null;
     }
@@ -124,18 +124,17 @@ final class Class5_Sub2 extends Class5 {
         anInt8355++;
         int i_20_ = -110 / ((-20 - i) / 57);
         int i_21_ = (this.method183(116)
-                * ((Class369) ((Class5) this).aClass369_4635).anInt4971
+                * this.aClass369_4635.anInt4971
                 / 10000);
         Class348_Sub8.aHa6654.aa(i_19_, 2 + i_18_, i_21_,
-                (((Class369) ((Class5) this).aClass369_4635)
+                (this.aClass369_4635
                         .anInt4963) - 2,
-                ((Class369_Sub2) (Class369_Sub2)
-                        ((Class5) this).aClass369_4635).anInt8591,
+                ((Class369_Sub2) this.aClass369_4635).anInt8591,
                 0);
         Class348_Sub8.aHa6654.aa
                 (i_21_ + i_19_, 2 + i_18_,
-                        ((Class369) ((Class5) this).aClass369_4635).anInt4971 - i_21_,
-                        ((Class369) ((Class5) this).aClass369_4635).anInt4963 - 2, 0, 0);
+                        this.aClass369_4635.anInt4971 - i_21_,
+                        this.aClass369_4635.anInt4963 - 2, 0, 0);
     }
 
     static final void method198(Class46 class46, boolean bool, int i,

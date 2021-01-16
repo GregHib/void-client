@@ -26,30 +26,30 @@ abstract class Class314 {
              class348_sub9 != null;
              class348_sub9 = (Class348_Sub9) Class218.aClass262_2859
                      .method1990((byte) 123)) {
-            if (i_2_ == ((Class348_Sub9) class348_sub9).anInt6693
+            if (i_2_ == class348_sub9.anInt6693
                     && ((i << 301027657 ^ 0xffffffff)
-                    == (((Class348_Sub9) class348_sub9).anInt6678
+                    == (class348_sub9.anInt6678
                     ^ 0xffffffff))
                     && (i_1_ << -1672051223
-                    == ((Class348_Sub9) class348_sub9).anInt6689)
-                    && ((((Class51) class51).anInt941 ^ 0xffffffff)
-                    == (((Class51) (((Class348_Sub9) class348_sub9)
-                    .aClass51_6695)).anInt941
+                    == class348_sub9.anInt6689)
+                    && ((class51.anInt941 ^ 0xffffffff)
+                    == (class348_sub9
+                    .aClass51_6695.anInt941
                     ^ 0xffffffff))) {
-                if (((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6676
+                if (class348_sub9.aClass348_Sub16_Sub5_6676
                         != null) {
                     Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880
-                            (((Class348_Sub9) class348_sub9)
+                            (class348_sub9
                                     .aClass348_Sub16_Sub5_6676);
-                    ((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6676
+                    class348_sub9.aClass348_Sub16_Sub5_6676
                             = null;
                 }
-                if (((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6673
+                if (class348_sub9.aClass348_Sub16_Sub5_6673
                         != null) {
                     Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880
-                            (((Class348_Sub9) class348_sub9)
+                            (class348_sub9
                                     .aClass348_Sub16_Sub5_6673);
-                    ((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6673
+                    class348_sub9.aClass348_Sub16_Sub5_6673
                             = null;
                 }
                 class348_sub9.method2715((byte) 125);

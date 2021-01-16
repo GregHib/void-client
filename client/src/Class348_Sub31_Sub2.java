@@ -31,11 +31,11 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
         anInt9068++;
         if (anImageConsumer9083 != null) {
             anImageConsumer9083.setPixels(i_1_, i_2_, i_3_, i, aColorModel9078,
-                    (((Class348_Sub31) this)
+                    (this
                             .anIntArray6916),
-                    i_2_ * (((Class348_Sub31) this)
+                    i_2_ * (this
                             .anInt6917) + i_1_,
-                    ((Class348_Sub31) this).anInt6917);
+                    this.anInt6917);
             anImageConsumer9083.imageComplete(2);
             if (i_0_ != 25786)
                 anIntArray9069 = null;
@@ -66,13 +66,13 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
         int i_4_ = -25 % ((i - -41) / 55);
         if (anImageConsumer9083 != null) {
             anImageConsumer9083.setPixels(0, 0,
-                    ((Class348_Sub31) this).anInt6917,
-                    ((Class348_Sub31) this).anInt6920,
+                    this.anInt6917,
+                    this.anInt6920,
                     aColorModel9078,
-                    (((Class348_Sub31) this)
+                    (this
                             .anIntArray6916),
                     0,
-                    ((Class348_Sub31) this).anInt6917);
+                    this.anInt6917);
             anImageConsumer9083.imageComplete(2);
         }
     }
@@ -80,8 +80,8 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
     public final synchronized void addConsumer(ImageConsumer imageconsumer) {
         anInt9072++;
         anImageConsumer9083 = imageconsumer;
-        imageconsumer.setDimensions(((Class348_Sub31) this).anInt6917,
-                ((Class348_Sub31) this).anInt6920);
+        imageconsumer.setDimensions(this.anInt6917,
+                this.anInt6920);
         imageconsumer.setProperties(null);
         imageconsumer.setColorModel(aColorModel9078);
         imageconsumer.setHints(14);
@@ -89,9 +89,7 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
 
     public final synchronized boolean isConsumer(ImageConsumer imageconsumer) {
         anInt9080++;
-        if (anImageConsumer9083 != imageconsumer)
-            return false;
-        return true;
+        return anImageConsumer9083 == imageconsumer;
     }
 
     final void method3011(int i, int i_5_, int i_6_, Graphics graphics,
@@ -107,13 +105,13 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
     }
 
     final void method3008(Canvas canvas, int i, int i_11_, int i_12_) {
-        ((Class348_Sub31) this).anInt6920 = i_12_;
+        this.anInt6920 = i_12_;
         anInt9079++;
-        ((Class348_Sub31) this).anInt6917 = i;
+        this.anInt6917 = i;
         aCanvas9073 = canvas;
-        ((Class348_Sub31) this).anIntArray6916
-                = new int[(((Class348_Sub31) this).anInt6917
-                * ((Class348_Sub31) this).anInt6920)];
+        this.anIntArray6916
+                = new int[(this.anInt6917
+                * this.anInt6920)];
         aColorModel9078 = new DirectColorModel(32, 16711680, 65280, 255);
         if (i_11_ <= -42) {
             anImage9075 = aCanvas9073.createImage(this);

@@ -5,7 +5,7 @@
 final class Class267 {
     static int anInt3390;
     static int anInt3391;
-    private Class69 aClass69_3392;
+    private final Class69 aClass69_3392;
     static int anInt3393;
     private int anInt3394 = 1;
     static int anInt3395;
@@ -110,38 +110,38 @@ final class Class267 {
             anInt3395++;
             Class218 class218
                     = Class2.aClass141_117
-                    .method1173((byte) 31, ((Class51) class51).anInt875);
-            if ((((Class218) class218).anInt2853 ^ 0xffffffff) != 0) {
-                if (((Class51) class51).aBoolean912) {
-                    i_1_ += ((Class51) class51).anInt923;
+                    .method1173((byte) 31, class51.anInt875);
+            if ((class218.anInt2853 ^ 0xffffffff) != 0) {
+                if (class51.aBoolean912) {
+                    i_1_ += class51.anInt923;
                     i_1_ &= 0x3;
                 } else
                     i_1_ = 0;
                 Class105 class105
                         = class218.method1596(i_1_,
-                        ((Class51) class51).aBoolean925, 82,
+                        class51.aBoolean925, 82,
                         var_ha);
                 if (class105 != null) {
-                    int i_3_ = ((Class51) class51).anInt961;
-                    int i_4_ = ((Class51) class51).anInt926;
+                    int i_3_ = class51.anInt961;
+                    int i_4_ = class51.anInt926;
                     int i_5_ = 60 % ((52 - i_2_) / 56);
                     if ((0x1 & i_1_) == 1) {
-                        i_3_ = ((Class51) class51).anInt926;
-                        i_4_ = ((Class51) class51).anInt961;
+                        i_3_ = class51.anInt926;
+                        i_4_ = class51.anInt961;
                     }
                     int i_6_ = class105.method966();
                     int i_7_ = class105.method980();
-                    if (((Class218) class218).aBoolean2854) {
+                    if (class218.aBoolean2854) {
                         i_7_ = i_4_ * 4;
                         i_6_ = i_3_ * 4;
                     }
-                    if (((Class218) class218).anInt2856 == 0)
+                    if (class218.anInt2856 == 0)
                         class105.method973(i, -((i_4_ + -1) * 4) + i_0_, i_6_,
                                 i_7_);
                     else
                         class105.method970(i, i_0_ - 4 * (-1 + i_4_), i_6_,
                                 i_7_, 0,
-                                (((Class218) class218).anInt2856
+                                (class218.anInt2856
                                         | ~0xffffff),
                                 1);
                 }

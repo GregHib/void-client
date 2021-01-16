@@ -30,7 +30,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
 
     private final void method3109(byte i) {
         anInt9289++;
-        Random random = new Random((long) anInt9301);
+        Random random = new Random(anInt9301);
         anInt9298 = anInt9294 / 2;
         anInt9291 = 4096 / anInt9299;
         anInt9300 = 4096 / anInt9301;
@@ -162,8 +162,8 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_10_) {
         anInt9296++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             int i_11_ = 0;
             int i_12_;
             for (i_12_ = anInt9293 + Class239_Sub18.anIntArray6035[i];

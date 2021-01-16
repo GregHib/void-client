@@ -19,10 +19,10 @@ final class Class122 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i_3_, (byte) 105, 8);
         class348_sub42_sub15.method3246(-25490);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i_0_;
+        class348_sub42_sub15.anInt9652 = i_0_;
         if (i_1_ < -57) {
-            ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9650 = i;
-            ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9651 = i_2_;
+            class348_sub42_sub15.anInt9650 = i;
+            class348_sub42_sub15.anInt9651 = i_2_;
         }
     }
 
@@ -37,9 +37,7 @@ final class Class122 {
         if (i != 12644)
             method1085(55, -60, (byte) -29, -35, -112);
         anInt1809++;
-        if ((0x84080 & i_5_) == 0)
-            return false;
-        return true;
+        return (0x84080 & i_5_) != 0;
     }
 
     static final int method1088(int i, byte i_6_, int i_7_, int i_8_,

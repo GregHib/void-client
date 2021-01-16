@@ -23,33 +23,31 @@ final class Class334 {
         anInt4161++;
         if (bool != true)
             method2653(true, 83);
-        if (c < '0' || c > '9')
-            return false;
-        return true;
+        return c >= '0' && c <= '9';
     }
 
     final void method2648(Class334 class334_0_, byte i) {
-        ((Class334) this).anInt4158 = ((Class334) class334_0_).anInt4158;
-        ((Class334) this).anInt4151 = ((Class334) class334_0_).anInt4151;
+        this.anInt4158 = class334_0_.anInt4158;
+        this.anInt4151 = class334_0_.anInt4151;
         if (i != 118)
             method2647(true, '\uffe5');
         anInt4159++;
-        ((Class334) this).anInt4156 = ((Class334) class334_0_).anInt4156;
-        ((Class334) this).anInt4165 = ((Class334) class334_0_).anInt4165;
-        ((Class334) this).anInt4154 = ((Class334) class334_0_).anInt4154;
-        ((Class334) this).anInt4162 = ((Class334) class334_0_).anInt4162;
+        this.anInt4156 = class334_0_.anInt4156;
+        this.anInt4165 = class334_0_.anInt4165;
+        this.anInt4154 = class334_0_.anInt4154;
+        this.anInt4162 = class334_0_.anInt4162;
     }
 
     final Class334 method2649(int i) {
         if (i != 2)
             method2648(null, (byte) -10);
         anInt4163++;
-        return new Class334(((Class334) this).anInt4156,
-                ((Class334) this).anInt4165,
-                ((Class334) this).anInt4162,
-                ((Class334) this).anInt4158,
-                ((Class334) this).anInt4154,
-                ((Class334) this).anInt4151);
+        return new Class334(this.anInt4156,
+                this.anInt4165,
+                this.anInt4162,
+                this.anInt4158,
+                this.anInt4154,
+                this.anInt4151);
     }
 
     static final void method2650(Class143 class143, int i, aa var_aa, int i_1_,
@@ -63,8 +61,8 @@ final class Class334 {
                 i_7_ = (int) Class314.aFloat3938 & 0x3fff;
             else
                 i_7_ = 0x3fff & r_Sub2.anInt10483 + (int) Class314.aFloat3938;
-            int i_8_ = (Math.max(((Class46) class46).anInt709 / 2,
-                    ((Class46) class46).anInt789 / 2)
+            int i_8_ = (Math.max(class46.anInt709 / 2,
+                    class46.anInt789 / 2)
                     + 10);
             int i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_);
             if ((i_8_ * i_8_ ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)) {
@@ -81,19 +79,19 @@ final class Class334 {
                 int i_14_ = class143.method1187(string, false, 100, null);
                 int i_15_ = class143.method1185(null, 0, 0, i_6_, string);
                 i_12_ -= i_14_ / 2;
-                if (-((Class46) class46).anInt709 <= i_12_
-                        && ((Class46) class46).anInt709 >= i_12_
-                        && ((-((Class46) class46).anInt789 ^ 0xffffffff)
+                if (-class46.anInt709 <= i_12_
+                        && class46.anInt709 >= i_12_
+                        && ((-class46.anInt789 ^ 0xffffffff)
                         >= (i_13_ ^ 0xffffffff))
-                        && (i_13_ ^ 0xffffffff) >= (((Class46) class46).anInt789
+                        && (i_13_ ^ 0xffffffff) >= (class46.anInt789
                         ^ 0xffffffff))
                     class324.method2584(null, 0, 0, null, i, 0, 50, var_aa,
                             (-i_4_
                                     + (i_3_
-                                    + (((Class46) class46).anInt789 / 2
+                                    + (class46.anInt789 / 2
                                     + (-i_13_ - i_15_)))),
                             i_2_, i_3_, i_14_,
-                            (((Class46) class46).anInt709 / 2
+                            (class46.anInt709 / 2
                                     + (i_2_ + i_12_)),
                             false, 1, string);
             }
@@ -143,9 +141,7 @@ final class Class334 {
         if (bool != true)
             anIntArray4152 = null;
         anInt4164++;
-        if ((i ^ 0xffffffff) != -11 && (i ^ 0xffffffff) != -12 && i != 12)
-            return false;
-        return true;
+        return (i ^ 0xffffffff) == -11 || (i ^ 0xffffffff) == -12 || i == 12;
     }
 
     public static void method2654(int i) {
@@ -155,16 +151,16 @@ final class Class334 {
     }
 
     Class334(int i) {
-        ((Class334) this).anInt4156 = i;
+        this.anInt4156 = i;
     }
 
     private Class334(int i, int i_23_, int i_24_, int i_25_, int i_26_,
                      int i_27_) {
-        ((Class334) this).anInt4156 = i;
-        ((Class334) this).anInt4165 = i_23_;
-        ((Class334) this).anInt4154 = i_26_;
-        ((Class334) this).anInt4158 = i_25_;
-        ((Class334) this).anInt4162 = i_24_;
-        ((Class334) this).anInt4151 = i_27_;
+        this.anInt4156 = i;
+        this.anInt4165 = i_23_;
+        this.anInt4154 = i_26_;
+        this.anInt4158 = i_25_;
+        this.anInt4162 = i_24_;
+        this.anInt4151 = i_27_;
     }
 }

@@ -5,7 +5,7 @@
 final class Class326 {
     static int anInt4083;
     static int anInt4084;
-    private Class45 aClass45_4085;
+    private final Class45 aClass45_4085;
     static int anInt4086 = 0;
     private Class60 aClass60_4087 = new Class60(64);
     static int anInt4088;
@@ -15,7 +15,7 @@ final class Class326 {
         anInt4084++;
         Class254 class254;
         synchronized (aClass60_4087) {
-            class254 = (Class254) aClass60_4087.method583((long) i, -67);
+            class254 = (Class254) aClass60_4087.method583(i, -67);
         }
         if (class254 != null)
             return class254;
@@ -29,7 +29,7 @@ final class Class326 {
         if (is != null)
             class254.method1924(new Class348_Sub49(is), (byte) -127);
         synchronized (aClass60_4087) {
-            aClass60_4087.method582(class254, (long) i, (byte) -114);
+            aClass60_4087.method582(class254, i, (byte) -114);
         }
         return class254;
     }

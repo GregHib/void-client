@@ -31,40 +31,38 @@ abstract class Class186 {
             Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                     = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_1_]];
             if (class318_sub1_sub3_sub3_sub2 != null
-                    && ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+                    && ((class318_sub1_sub3_sub3_sub2
                     .anInt10264)
                     ^ 0xffffffff) < -1) {
-                ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+                class318_sub1_sub3_sub3_sub2
                         .anInt10264--;
-                if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+                if ((class318_sub1_sub3_sub3_sub2
                         .anInt10264)
                         == 0)
-                    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+                    class318_sub1_sub3_sub3_sub2
                             .aString10292
                             = null;
             }
         }
         for (int i_2_ = i;
              (Class150.anInt2057 ^ 0xffffffff) < (i_2_ ^ 0xffffffff); i_2_++) {
-            long l = (long) Class74.anIntArray1233[i_2_];
+            long l = Class74.anIntArray1233[i_2_];
             Class348_Sub22 class348_sub22
                     = ((Class348_Sub22)
                     Class282.aClass356_3654.method3480(l, -6008));
             if (class348_sub22 != null) {
                 Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                        = (((Class348_Sub22) class348_sub22)
+                        = (class348_sub22
                         .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+                if (((class318_sub1_sub3_sub3_sub1
                         .anInt10264)
                         ^ 0xffffffff)
                         < -1) {
-                    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+                    class318_sub1_sub3_sub3_sub1
                             .anInt10264--;
-                    if (((Class318_Sub1_Sub3_Sub3)
-                            class318_sub1_sub3_sub3_sub1).anInt10264
+                    if (class318_sub1_sub3_sub3_sub1.anInt10264
                             == 0)
-                        ((Class318_Sub1_Sub3_Sub3)
-                                class318_sub1_sub3_sub3_sub1).aString10292
+                        class318_sub1_sub3_sub3_sub1.aString10292
                                 = null;
                 }
             }

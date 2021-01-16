@@ -23,15 +23,15 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
         Class357 class357
                 = Class147.aClass357ArrayArrayArray2029[i][i_0_][i_1_];
         if (class357 != null) {
-            for (Class148 class148 = ((Class357) class357).aClass148_4396;
+            for (Class148 class148 = class357.aClass148_4396;
                  class148 != null;
-                 class148 = ((Class148) class148).aClass148_2038) {
+                 class148 = class148.aClass148_2038) {
                 Class318_Sub1_Sub3 class318_sub1_sub3
-                        = ((Class148) class148).aClass318_Sub1_Sub3_2040;
+                        = class148.aClass318_Sub1_Sub3_2040;
                 if (var_class.isAssignableFrom(class318_sub1_sub3.getClass())
-                        && (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743
+                        && (class318_sub1_sub3.aShort8743
                         == i_0_)
-                        && (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8750
+                        && (class318_sub1_sub3.aShort8750
                         == i_1_)) {
                     Class348_Sub46.method3320(class318_sub1_sub3, false);
                     break;
@@ -45,39 +45,39 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
                                  Class318_Sub1_Sub4 class318_sub1_sub4_4_) {
         Class357 class357 = Class348_Sub46.method3321(i, i_2_, i_3_);
         if (class357 != null) {
-            ((Class357) class357).aClass318_Sub1_Sub4_4406
+            class357.aClass318_Sub1_Sub4_4406
                     = class318_sub1_sub4;
-            ((Class357) class357).aClass318_Sub1_Sub4_4403
+            class357.aClass318_Sub1_Sub4_4403
                     = class318_sub1_sub4_4_;
             int i_5_ = aa_Sub1.aSArray5191 == Class332.aSArray4142 ? 1 : 0;
             if (class318_sub1_sub4.method2376(-109)) {
                 if (class318_sub1_sub4.method2377((byte) 122)) {
-                    ((Class318_Sub1) class318_sub1_sub4).aClass318_Sub1_6379
+                    class318_sub1_sub4.aClass318_Sub1_6379
                             = Class250.aClass318_Sub1Array3226[i_5_];
                     Class250.aClass318_Sub1Array3226[i_5_]
                             = class318_sub1_sub4;
                 } else {
-                    ((Class318_Sub1) class318_sub1_sub4).aClass318_Sub1_6379
+                    class318_sub1_sub4.aClass318_Sub1_6379
                             = Class348.aClass318_Sub1Array4293[i_5_];
                     Class348.aClass318_Sub1Array4293[i_5_]
                             = class318_sub1_sub4;
                     Class348_Sub16_Sub2.aBoolean8870 = true;
                 }
             } else {
-                ((Class318_Sub1) class318_sub1_sub4).aClass318_Sub1_6379
+                class318_sub1_sub4.aClass318_Sub1_6379
                         = Class115.aClass318_Sub1Array1754[i_5_];
                 Class115.aClass318_Sub1Array1754[i_5_] = class318_sub1_sub4;
             }
             if (class318_sub1_sub4_4_ != null) {
                 if (class318_sub1_sub4_4_.method2376(-118)) {
                     if (class318_sub1_sub4_4_.method2377((byte) 122)) {
-                        ((Class318_Sub1) class318_sub1_sub4_4_)
+                        class318_sub1_sub4_4_
                                 .aClass318_Sub1_6379
                                 = Class250.aClass318_Sub1Array3226[i_5_];
                         Class250.aClass318_Sub1Array3226[i_5_]
                                 = class318_sub1_sub4_4_;
                     } else {
-                        ((Class318_Sub1) class318_sub1_sub4_4_)
+                        class318_sub1_sub4_4_
                                 .aClass318_Sub1_6379
                                 = Class348.aClass318_Sub1Array4293[i_5_];
                         Class348.aClass318_Sub1Array4293[i_5_]
@@ -85,7 +85,7 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                     }
                 } else {
-                    ((Class318_Sub1) class318_sub1_sub4_4_).aClass318_Sub1_6379
+                    class318_sub1_sub4_4_.aClass318_Sub1_6379
                             = Class115.aClass318_Sub1Array1754[i_5_];
                     Class115.aClass318_Sub1Array1754[i_5_]
                             = class318_sub1_sub4_4_;

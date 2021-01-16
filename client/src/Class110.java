@@ -27,9 +27,7 @@ abstract class Class110 {
         anInt1707++;
         if (bool != true)
             aBoolean1712 = false;
-        if ((((Class110) this).anInt1708 & 0x1 ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (this.anInt1708 & 0x1 ^ 0xffffffff) != -1;
     }
 
     public static void method1030(int i) {
@@ -42,9 +40,7 @@ abstract class Class110 {
     final boolean method1031(int i) {
         int i_0_ = 101 / ((54 - i) / 47);
         anInt1699++;
-        if ((0x4 & ((Class110) this).anInt1708) == 0)
-            return false;
-        return true;
+        return (0x4 & this.anInt1708) != 0;
     }
 
     static final int method1032(int i) {
@@ -70,9 +66,7 @@ abstract class Class110 {
     final boolean method1033(int i) {
         anInt1703++;
         int i_4_ = -62 % ((i - -5) / 47);
-        if ((0x8 & ((Class110) this).anInt1708 ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (0x8 & this.anInt1708 ^ 0xffffffff) != -1;
     }
 
     static final void method1034(int i, Class348_Sub49 class348_sub49,
@@ -80,26 +74,26 @@ abstract class Class110 {
         try {
             anInt1710++;
             Class348_Sub48 class348_sub48 = new Class348_Sub48();
-            ((Class348_Sub48) class348_sub48).anInt7126
+            class348_sub48.anInt7126
                     = class348_sub49.method3387(255);
-            ((Class348_Sub48) class348_sub48).anInt7130
+            class348_sub48.anInt7130
                     = class348_sub49.method3385((byte) -126);
-            ((Class348_Sub48) class348_sub48).anIntArray7132
-                    = new int[((Class348_Sub48) class348_sub48).anInt7126];
-            ((Class348_Sub48) class348_sub48).aByteArrayArrayArray7128
-                    = new byte[((Class348_Sub48) class348_sub48).anInt7126][][];
-            ((Class348_Sub48) class348_sub48).aClass144Array7127
-                    = new Class144[((Class348_Sub48) class348_sub48).anInt7126];
+            class348_sub48.anIntArray7132
+                    = new int[class348_sub48.anInt7126];
+            class348_sub48.aByteArrayArrayArray7128
+                    = new byte[class348_sub48.anInt7126][][];
+            class348_sub48.aClass144Array7127
+                    = new Class144[class348_sub48.anInt7126];
             if (i_5_ > 90) {
-                ((Class348_Sub48) class348_sub48).aClass144Array7135
+                class348_sub48.aClass144Array7135
                         = (new Class144
-                        [((Class348_Sub48) class348_sub48).anInt7126]);
-                ((Class348_Sub48) class348_sub48).anIntArray7131
-                        = new int[((Class348_Sub48) class348_sub48).anInt7126];
-                ((Class348_Sub48) class348_sub48).anIntArray7136
-                        = new int[((Class348_Sub48) class348_sub48).anInt7126];
+                        [class348_sub48.anInt7126]);
+                class348_sub48.anIntArray7131
+                        = new int[class348_sub48.anInt7126];
+                class348_sub48.anIntArray7136
+                        = new int[class348_sub48.anInt7126];
                 for (int i_6_ = 0;
-                     i_6_ < ((Class348_Sub48) class348_sub48).anInt7126;
+                     i_6_ < class348_sub48.anInt7126;
                      i_6_++) {
                     try {
                         int i_7_ = class348_sub49.method3387(255);
@@ -130,7 +124,7 @@ abstract class Class110 {
                                                 is[i_11_]);
                                     }
                                 }
-                                ((Class348_Sub48) class348_sub48)
+                                class348_sub48
                                         .anIntArray7132[i_6_]
                                         = i_7_;
                                 Class[] var_classes = new Class[i_9_];
@@ -141,14 +135,14 @@ abstract class Class110 {
                                     var_classes[i_13_]
                                             = (Class348_Sub40_Sub1.method3052
                                             (11012, strings[i_13_]));
-                                ((Class348_Sub48) class348_sub48)
+                                class348_sub48
                                         .aClass144Array7127[i_6_]
                                         = (class297.method2230
                                         (var_classes, 76,
                                                 Class348_Sub40_Sub1.method3052(11012,
                                                         string),
                                                 string_8_));
-                                ((Class348_Sub48) class348_sub48)
+                                class348_sub48
                                         .aByteArrayArrayArray7128[i_6_]
                                         = is;
                             }
@@ -160,13 +154,13 @@ abstract class Class110 {
                             int i_15_ = 0;
                             if ((i_7_ ^ 0xffffffff) == -2)
                                 i_15_ = class348_sub49.method3385((byte) -126);
-                            ((Class348_Sub48) class348_sub48)
+                            class348_sub48
                                     .anIntArray7132[i_6_]
                                     = i_7_;
-                            ((Class348_Sub48) class348_sub48)
+                            class348_sub48
                                     .anIntArray7136[i_6_]
                                     = i_15_;
-                            ((Class348_Sub48) class348_sub48)
+                            class348_sub48
                                     .aClass144Array7135[i_6_]
                                     = (class297.method2243
                                     (0, string_14_,
@@ -174,19 +168,19 @@ abstract class Class110 {
                                                     string)));
                         }
                     } catch (ClassNotFoundException classnotfoundexception) {
-                        ((Class348_Sub48) class348_sub48).anIntArray7131[i_6_]
+                        class348_sub48.anIntArray7131[i_6_]
                                 = -1;
                     } catch (SecurityException securityexception) {
-                        ((Class348_Sub48) class348_sub48).anIntArray7131[i_6_]
+                        class348_sub48.anIntArray7131[i_6_]
                                 = -2;
                     } catch (NullPointerException nullpointerexception) {
-                        ((Class348_Sub48) class348_sub48).anIntArray7131[i_6_]
+                        class348_sub48.anIntArray7131[i_6_]
                                 = -3;
                     } catch (Exception exception) {
-                        ((Class348_Sub48) class348_sub48).anIntArray7131[i_6_]
+                        class348_sub48.anIntArray7131[i_6_]
                                 = -4;
                     } catch (Throwable throwable) {
-                        ((Class348_Sub48) class348_sub48).anIntArray7131[i_6_]
+                        class348_sub48.anIntArray7131[i_6_]
                                 = -5;
                     }
                 }
@@ -228,9 +222,7 @@ abstract class Class110 {
         anInt1709++;
         if (i != -35)
             method1034(11, null, null, -12);
-        if ((((Class110) this).anInt1708 & 0x2) == 0)
-            return false;
-        return true;
+        return (this.anInt1708 & 0x2) != 0;
     }
 
     public Class110() {

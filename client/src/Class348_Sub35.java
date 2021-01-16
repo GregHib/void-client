@@ -13,7 +13,7 @@ final class Class348_Sub35 extends Class348 {
 
     static final void method3027(byte i) {
         anInt6975++;
-        if (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if (Class316.aClass348_Sub51_3959
                 .aClass239_Sub27_7261.method1840(-32350) == 0
                 && Class355.anInt4372 != Class167.anInt2204)
             Class348_Sub41.method3157(Class327.anInt4095, (byte) 123,
@@ -41,7 +41,7 @@ final class Class348_Sub35 extends Class348 {
     }
 
     Class348_Sub35(int i) {
-        ((Class348_Sub35) this).anInt6976 = i;
+        this.anInt6976 = i;
     }
 
     static {

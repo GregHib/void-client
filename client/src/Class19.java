@@ -23,24 +23,24 @@ final class Class19 {
              class318_sub5 != null;
              class318_sub5 = ((Class318_Sub5)
                      Class225.aClass243_2957.method1878((byte) 0))) {
-            if (((Class318_Sub5) class318_sub5).anInt6421
+            if (class318_sub5.anInt6421
                     <= Class367_Sub11.anInt7396)
                 class318_sub5.method2373(false);
             else {
                 Class318_Sub5.method2505
                         (i_0_ >> 882522209,
-                                ((Class318_Sub5) class318_sub5).anInt6420 * 2, 0, i_5_,
+                                class318_sub5.anInt6420 * 2, 0, i_5_,
                                 i_2_ >> 742898945,
-                                ((Class318_Sub5) class318_sub5).anInt6418,
-                                256 + (((Class318_Sub5) class318_sub5).anInt6422
+                                class318_sub5.anInt6418,
+                                256 + (class318_sub5.anInt6422
                                         << 2139317545),
                                 i_1_,
-                                (((Class318_Sub5) class318_sub5).anInt6419
+                                (class318_sub5.anInt6419
                                         << -1529290903) + 256);
                 Class262.aClass324_3326.method2575
                         ((byte) 122, i_3_ - -Class239_Sub21.anIntArray6062[0],
-                                ~0xffffff | ((Class318_Sub5) class318_sub5).anInt6415,
-                                ((Class318_Sub5) class318_sub5).aString6416, 0,
+                                ~0xffffff | class318_sub5.anInt6415,
+                                class318_sub5.aString6416, 0,
                                 i_4_ - -Class239_Sub21.anIntArray6062[1]);
             }
         }
@@ -85,10 +85,10 @@ final class Class19 {
              (i_7_ ^ 0xffffffff) > (class57s.length ^ 0xffffffff); i_7_++) {
             Class57 class57 = new Class57();
             class57s[i_7_] = class57;
-            ((Class57) class57).anInt1047 = is[i_7_ << 1515882146];
-            ((Class57) class57).anInt1054 = is[1 + (i_7_ << -43437246)];
-            ((Class57) class57).anInt1046 = is[2 + (i_7_ << 1424706306)];
-            ((Class57) class57).anInt1052 = is[(i_7_ << 1542845858) + 3];
+            class57.anInt1047 = is[i_7_ << 1515882146];
+            class57.anInt1054 = is[1 + (i_7_ << -43437246)];
+            class57.anInt1046 = is[2 + (i_7_ << 1424706306)];
+            class57.anInt1052 = is[(i_7_ << 1542845858) + 3];
         }
         return class57s;
     }

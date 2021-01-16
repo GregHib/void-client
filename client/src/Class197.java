@@ -32,9 +32,9 @@ final class Class197 {
     }
 
     final void method1452(Class348_Sub49 class348_sub49) {
-        ((Class197) this).anInt2603 = class348_sub49.method3387(255);
-        ((Class197) this).anInt2607 = class348_sub49.method3385((byte) -126);
-        ((Class197) this).anInt2606 = class348_sub49.method3385((byte) -126);
+        this.anInt2603 = class348_sub49.method3387(255);
+        this.anInt2607 = class348_sub49.method3385((byte) -126);
+        this.anInt2606 = class348_sub49.method3385((byte) -126);
         method1454(class348_sub49);
     }
 

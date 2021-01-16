@@ -55,123 +55,123 @@ final class Class291 {
         if (i_2_ < 5 || i_2_ > 6)
             throw new RuntimeException();
         if ((i_2_ ^ 0xffffffff) > -7)
-            ((Class291) this).anInt3732 = 0;
+            this.anInt3732 = 0;
         else
-            ((Class291) this).anInt3732
+            this.anInt3732
                     = class348_sub49.method3385((byte) -126);
         int i_3_ = class348_sub49.method3387(255);
         boolean bool = (i_3_ & 0x1 ^ 0xffffffff) != -1;
         boolean bool_4_ = (i_3_ & 0x2) != 0;
-        ((Class291) this).anInt3727 = class348_sub49.method3330(842397944);
+        this.anInt3727 = class348_sub49.method3330(842397944);
         int i_5_ = 0;
-        ((Class291) this).anIntArray3738
-                = new int[((Class291) this).anInt3727];
+        this.anIntArray3738
+                = new int[this.anInt3727];
         int i_6_ = -1;
         for (int i_7_ = 0;
-             (((Class291) this).anInt3727 ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
+             (this.anInt3727 ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
              i_7_++) {
-            ((Class291) this).anIntArray3738[i_7_] = i_5_
+            this.anIntArray3738[i_7_] = i_5_
                     += class348_sub49.method3330(842397944);
-            if (i_6_ < ((Class291) this).anIntArray3738[i_7_])
-                i_6_ = ((Class291) this).anIntArray3738[i_7_];
+            if (i_6_ < this.anIntArray3738[i_7_])
+                i_6_ = this.anIntArray3738[i_7_];
         }
-        ((Class291) this).anInt3734 = i_6_ - -1;
+        this.anInt3734 = i_6_ - -1;
         if (bool_4_)
-            ((Class291) this).aByteArrayArray3730
-                    = new byte[((Class291) this).anInt3734][];
-        ((Class291) this).anIntArray3729
-                = new int[((Class291) this).anInt3734];
-        ((Class291) this).anIntArray3724
-                = new int[((Class291) this).anInt3734];
-        ((Class291) this).anIntArray3725
-                = new int[((Class291) this).anInt3734];
-        ((Class291) this).anIntArray3722
-                = new int[((Class291) this).anInt3734];
-        ((Class291) this).anIntArrayArray3721
-                = new int[((Class291) this).anInt3734][];
+            this.aByteArrayArray3730
+                    = new byte[this.anInt3734][];
+        this.anIntArray3729
+                = new int[this.anInt3734];
+        this.anIntArray3724
+                = new int[this.anInt3734];
+        this.anIntArray3725
+                = new int[this.anInt3734];
+        this.anIntArray3722
+                = new int[this.anInt3734];
+        this.anIntArrayArray3721
+                = new int[this.anInt3734][];
         if (bool) {
-            ((Class291) this).anIntArray3733
-                    = new int[((Class291) this).anInt3734];
-            for (int i_8_ = 0; i_8_ < ((Class291) this).anInt3734; i_8_++)
-                ((Class291) this).anIntArray3733[i_8_] = -1;
+            this.anIntArray3733
+                    = new int[this.anInt3734];
+            for (int i_8_ = 0; i_8_ < this.anInt3734; i_8_++)
+                this.anIntArray3733[i_8_] = -1;
             for (int i_9_ = 0;
                  ((i_9_ ^ 0xffffffff)
-                         > (((Class291) this).anInt3727 ^ 0xffffffff));
+                         > (this.anInt3727 ^ 0xffffffff));
                  i_9_++)
-                ((Class291) this).anIntArray3733[(((Class291) this)
+                this.anIntArray3733[(this
                         .anIntArray3738[i_9_])]
                         = class348_sub49.method3385((byte) -126);
-            ((Class291) this).aClass316_3723
-                    = new Class316(((Class291) this).anIntArray3733);
+            this.aClass316_3723
+                    = new Class316(this.anIntArray3733);
         }
         if (i >= -83)
             method2200((byte) 42, null);
         for (int i_10_ = 0;
-             (((Class291) this).anInt3727 ^ 0xffffffff) < (i_10_ ^ 0xffffffff);
+             (this.anInt3727 ^ 0xffffffff) < (i_10_ ^ 0xffffffff);
              i_10_++)
-            ((Class291) this).anIntArray3729[(((Class291) this).anIntArray3738
+            this.anIntArray3729[(this.anIntArray3738
                     [i_10_])]
                     = class348_sub49.method3385((byte) -126);
         if (bool_4_) {
-            for (int i_11_ = 0; i_11_ < ((Class291) this).anInt3727; i_11_++) {
+            for (int i_11_ = 0; i_11_ < this.anInt3727; i_11_++) {
                 byte[] is_12_ = new byte[64];
                 class348_sub49.method3389(2147483647, 0, 64, is_12_);
-                ((Class291) this).aByteArrayArray3730[(((Class291) this)
+                this.aByteArrayArray3730[(this
                         .anIntArray3738[i_11_])]
                         = is_12_;
             }
         }
-        for (int i_13_ = 0; i_13_ < ((Class291) this).anInt3727; i_13_++)
-            ((Class291) this).anIntArray3722[(((Class291) this).anIntArray3738
+        for (int i_13_ = 0; i_13_ < this.anInt3727; i_13_++)
+            this.anIntArray3722[(this.anIntArray3738
                     [i_13_])]
                     = class348_sub49.method3385((byte) -126);
-        for (int i_14_ = 0; ((Class291) this).anInt3727 > i_14_; i_14_++)
-            ((Class291) this).anIntArray3725[(((Class291) this).anIntArray3738
+        for (int i_14_ = 0; this.anInt3727 > i_14_; i_14_++)
+            this.anIntArray3725[(this.anIntArray3738
                     [i_14_])]
                     = class348_sub49.method3330(842397944);
         for (int i_15_ = 0;
-             (i_15_ ^ 0xffffffff) > (((Class291) this).anInt3727 ^ 0xffffffff);
+             (i_15_ ^ 0xffffffff) > (this.anInt3727 ^ 0xffffffff);
              i_15_++) {
-            int i_16_ = ((Class291) this).anIntArray3738[i_15_];
+            int i_16_ = this.anIntArray3738[i_15_];
             i_5_ = 0;
-            int i_17_ = ((Class291) this).anIntArray3725[i_16_];
+            int i_17_ = this.anIntArray3725[i_16_];
             int i_18_ = -1;
-            ((Class291) this).anIntArrayArray3721[i_16_] = new int[i_17_];
+            this.anIntArrayArray3721[i_16_] = new int[i_17_];
             for (int i_19_ = 0; (i_19_ ^ 0xffffffff) > (i_17_ ^ 0xffffffff);
                  i_19_++) {
                 int i_20_
-                        = (((Class291) this).anIntArrayArray3721[i_16_][i_19_]
+                        = (this.anIntArrayArray3721[i_16_][i_19_]
                         = i_5_ += class348_sub49.method3330(842397944));
                 if ((i_20_ ^ 0xffffffff) < (i_18_ ^ 0xffffffff))
                     i_18_ = i_20_;
             }
-            ((Class291) this).anIntArray3724[i_16_] = i_18_ + 1;
+            this.anIntArray3724[i_16_] = i_18_ + 1;
             if ((i_17_ ^ 0xffffffff) == (1 + i_18_ ^ 0xffffffff))
-                ((Class291) this).anIntArrayArray3721[i_16_] = null;
+                this.anIntArrayArray3721[i_16_] = null;
         }
         if (bool) {
-            ((Class291) this).anIntArrayArray3735 = new int[i_6_ + 1][];
-            ((Class291) this).aClass316Array3728 = new Class316[1 + i_6_];
-            for (int i_21_ = 0; i_21_ < ((Class291) this).anInt3727; i_21_++) {
-                int i_22_ = ((Class291) this).anIntArray3738[i_21_];
-                int i_23_ = ((Class291) this).anIntArray3725[i_22_];
-                ((Class291) this).anIntArrayArray3735[i_22_]
-                        = new int[((Class291) this).anIntArray3724[i_22_]];
+            this.anIntArrayArray3735 = new int[i_6_ + 1][];
+            this.aClass316Array3728 = new Class316[1 + i_6_];
+            for (int i_21_ = 0; i_21_ < this.anInt3727; i_21_++) {
+                int i_22_ = this.anIntArray3738[i_21_];
+                int i_23_ = this.anIntArray3725[i_22_];
+                this.anIntArrayArray3735[i_22_]
+                        = new int[this.anIntArray3724[i_22_]];
                 for (int i_24_ = 0;
-                     ((Class291) this).anIntArray3724[i_22_] > i_24_; i_24_++)
-                    ((Class291) this).anIntArrayArray3735[i_22_][i_24_] = -1;
+                     this.anIntArray3724[i_22_] > i_24_; i_24_++)
+                    this.anIntArrayArray3735[i_22_][i_24_] = -1;
                 for (int i_25_ = 0; i_23_ > i_25_; i_25_++) {
                     int i_26_;
-                    if (((Class291) this).anIntArrayArray3721[i_22_] != null)
-                        i_26_ = (((Class291) this).anIntArrayArray3721[i_22_]
+                    if (this.anIntArrayArray3721[i_22_] != null)
+                        i_26_ = (this.anIntArrayArray3721[i_22_]
                                 [i_25_]);
                     else
                         i_26_ = i_25_;
-                    ((Class291) this).anIntArrayArray3735[i_22_][i_26_]
+                    this.anIntArrayArray3735[i_22_][i_26_]
                             = class348_sub49.method3385((byte) -126);
                 }
-                ((Class291) this).aClass316Array3728[i_22_]
-                        = new Class316(((Class291) this).anIntArrayArray3735
+                this.aClass316Array3728[i_22_]
+                        = new Class316(this.anIntArrayArray3735
                         [i_22_]);
             }
         }
@@ -179,9 +179,9 @@ final class Class291 {
 
     Class291(byte[] is, int i, byte[] is_27_) {
         try {
-            ((Class291) this).anInt3719
+            this.anInt3719
                     = Class59_Sub1.method554(5126, is.length, is);
-            if (i != ((Class291) this).anInt3719)
+            if (i != this.anInt3719)
                 throw new RuntimeException();
             if (is_27_ != null) {
                 if ((is_27_.length ^ 0xffffffff) != -65)

@@ -86,7 +86,7 @@ final class Class321 {
                                             class348_sub49
                                                     .method3330(842397944);
                                         else if ((i ^ 0xffffffff) == -18)
-                                            ((Class321) this).anInt4000
+                                            this.anInt4000
                                                     = class348_sub49
                                                     .method3330(842397944);
                                         else if ((i ^ 0xffffffff) == -19) {
@@ -181,7 +181,7 @@ final class Class321 {
                                                                     .method3377
                                                                             ((byte) -98)));
                                                 aClass356_4006.method3483
-                                                        ((byte) 123, (long) i_12_,
+                                                        ((byte) 123, i_12_,
                                                                 class348);
                                             }
                                         }

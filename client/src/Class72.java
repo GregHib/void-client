@@ -4,21 +4,21 @@
 
 final class Class72 {
     private static Class105 aClass105_1215;
-    private int anInt1216;
+    private final int anInt1216;
     private int anInt1217;
-    private int anInt1218;
+    private final int anInt1218;
     private int anInt1219;
     private int anInt1220;
     private Class105 aClass105_1221;
-    private int anInt1222;
-    private boolean aBoolean1223;
-    private int anInt1224;
-    private int anInt1225;
+    private final int anInt1222;
+    private final boolean aBoolean1223;
+    private final int anInt1224;
+    private final int anInt1225;
     private static int[] anIntArray1226 = new int[4];
     private static Class64 aClass64_1227;
     private static Class105 aClass105_1228;
-    private int anInt1229;
-    private int anInt1230;
+    private final int anInt1229;
+    private final int anInt1230;
     private int anInt1231;
     int anInt1232;
 
@@ -38,9 +38,7 @@ final class Class72 {
             else if (anInt1230 == 1)
                 method735(var_ha, class72_0_);
         }
-        if (aClass105_1221 == null)
-            return false;
-        return true;
+        return aClass105_1221 != null;
     }
 
     public static void method731() {
@@ -93,29 +91,29 @@ final class Class72 {
             i_14_ = anInt1225 - i;
             i_15_ = anInt1216 - i_11_;
             i_16_ = anInt1229 - i_12_;
-            ((Class72) this).anInt1232
-                    = (int) Math.sqrt((double) (i_14_ * i_14_ + i_15_ * i_15_
-                    + i_16_ * i_16_));
-            if (((Class72) this).anInt1232 == 0)
-                ((Class72) this).anInt1232 = 1;
-            i_14_ = (i_14_ << 8) / ((Class72) this).anInt1232;
-            i_15_ = (i_15_ << 8) / ((Class72) this).anInt1232;
-            i_16_ = (i_16_ << 8) / ((Class72) this).anInt1232;
+            this.anInt1232
+                    = (int) Math.sqrt(i_14_ * i_14_ + i_15_ * i_15_
+                    + i_16_ * i_16_);
+            if (this.anInt1232 == 0)
+                this.anInt1232 = 1;
+            i_14_ = (i_14_ << 8) / this.anInt1232;
+            i_15_ = (i_15_ << 8) / this.anInt1232;
+            i_16_ = (i_16_ << 8) / this.anInt1232;
         } else {
-            ((Class72) this).anInt1232 = 1073741823;
+            this.anInt1232 = 1073741823;
             i_14_ = anInt1225;
             i_15_ = anInt1216;
             i_16_ = anInt1229;
         }
-        int i_17_ = (int) (Math.sqrt((double) (i_14_ * i_14_ + i_15_ * i_15_
-                + i_16_ * i_16_))
+        int i_17_ = (int) (Math.sqrt(i_14_ * i_14_ + i_15_ * i_15_
+                + i_16_ * i_16_)
                 * 256.0);
         if (i_17_ > 128) {
             i_14_ = (i_14_ << 16) / i_17_;
             i_15_ = (i_15_ << 16) / i_17_;
             i_16_ = (i_16_ << 16) / i_17_;
             anInt1217 = anInt1218 * i_13_ / (aBoolean1223 ? 1024
-                    : ((Class72) this).anInt1232);
+                    : this.anInt1232);
         } else
             anInt1217 = 0;
         if (anInt1217 < 8) {
@@ -129,9 +127,9 @@ final class Class72 {
             i_18_ = 512;
         if (i_18_ != anInt1220)
             anInt1220 = i_18_;
-        anInt1231 = (int) (Math.asin((double) ((float) i_15_ / 256.0F))
+        anInt1231 = (int) (Math.asin((float) i_15_ / 256.0F)
                 * 2607.5945876176133) & 0x3fff;
-        anInt1219 = (int) (Math.atan2((double) i_14_, (double) -i_16_)
+        anInt1219 = (int) (Math.atan2(i_14_, -i_16_)
                 * 2607.5945876176133) & 0x3fff;
         aClass105_1221 = null;
         return true;
@@ -203,9 +201,7 @@ final class Class72 {
     }
 
     final boolean method736(ha var_ha, Class72 class72_31_) {
-        if (aClass105_1221 == null && !method730(var_ha, class72_31_))
-            return false;
-        return true;
+        return aClass105_1221 != null || method730(var_ha, class72_31_);
     }
 
     final void method737(ha var_ha, int i, int i_32_, int i_33_, int i_34_,
@@ -268,10 +264,10 @@ final class Class72 {
                             (byte) 0, 1);
                 }
             }
-            ((Class124) class124).anInt1821 = ((Class124) class124).anInt1836;
-            ((Class124) class124).anIntArray1824 = null;
-            ((Class124) class124).anIntArray1868 = null;
-            ((Class124) class124).aByteArray1839 = null;
+            class124.anInt1821 = class124.anInt1836;
+            class124.anIntArray1824 = null;
+            class124.anIntArray1868 = null;
+            class124.aByteArray1839 = null;
             aClass64_1227 = var_ha.method3625(class124, 51200, 33, 64, 768);
         }
     }

@@ -3,5 +3,5 @@
  */
 
 interface Interface9 {
-    public void method37(int i);
+    void method37(int i);
 }

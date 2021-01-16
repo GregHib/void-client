@@ -45,26 +45,25 @@ abstract class Class318_Sub1 extends Class318 {
                 anInt6385++;
                 boolean bool
                         = ((Exception_Sub1.aClass255_112.method1941
-                        (((Class46) class46).anInt672, (byte) -74,
-                                ((Class46) class46).anInt812,
-                                ((Class46) class46).anInt781,
-                                ~0xffffff | ((Class46) class46).anInt809,
-                                ((Class46) class46).anInt678, var_ha,
-                                (!((Class46) class46).aBoolean720 ? null
-                                        : (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                        (class46.anInt672, (byte) -74,
+                                class46.anInt812,
+                                class46.anInt781,
+                                ~0xffffff | class46.anInt809,
+                                class46.anInt678, var_ha,
+                                (!class46.aBoolean720 ? null
+                                        : (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                         .aClass154_10536))))
                         == null);
                 if (!bool)
                     break;
                 Class5_Sub1_Sub1.aClass262_9931.method1999
-                        (new Class348_Sub7(((Class46) class46).anInt812,
-                                        ((Class46) class46).anInt781,
-                                        ((Class46) class46).anInt672,
+                        (new Class348_Sub7(class46.anInt812,
+                                        class46.anInt781,
+                                        class46.anInt672,
                                         (~0xffffff
-                                                | ((Class46) class46).anInt809),
-                                        ((Class46) class46).anInt678,
-                                        ((Class46) class46).aBoolean720),
+                                                | class46.anInt809),
+                                        class46.anInt678,
+                                        class46.aBoolean720),
                                 i ^ 0x4ed2);
                 Class251.method1916(-9343, class46);
             } catch (RuntimeException runtimeexception) {
@@ -93,15 +92,15 @@ abstract class Class318_Sub1 extends Class318 {
                         = Class348_Sub23_Sub2.aClass153_9031.method1225(i_4_,
                         (byte) 98);
                 if (i_7_ < -52) {
-                    if (class42 == null || !((Class42) class42).aBoolean569
+                    if (class42 == null || !class42.aBoolean569
                             || !class42.method373((Class318_Sub1_Sub3_Sub3
                                     .aClass170_10209),
                             69))
                         break;
-                    if (((Class42) class42).anIntArray591 != null) {
+                    if (class42.anIntArray591 != null) {
                         int[] is
                                 = (new int
-                                [((Class42) class42).anIntArray591.length]);
+                                [class42.anIntArray591.length]);
                         for (int i_9_ = 0; is.length / 2 > i_9_; i_9_++) {
                             int i_10_;
                             if (Class348_Sub40_Sub21.anInt9282 != 4)
@@ -121,31 +120,31 @@ abstract class Class318_Sub1 extends Class318 {
                                         .anInt9750));
                             }
                             is[i_9_ * 2]
-                                    = (((i_11_ * (((((Class42) class42)
+                                    = (((i_11_ * (((class42
                                     .anIntArray591[i_9_ * 2 - -1])
                                     * 4)
                                     + i_8_)
-                                    + (i_5_ - -(4 * (((Class42) class42)
+                                    + (i_5_ - -(4 * (class42
                                     .anIntArray591
                                     [2 * i_9_]))) * i_12_)
                                     >> 248635758)
                                     + (i_6_
-                                    - -(((Class46) class46).anInt709 / 2)));
+                                    - -(class46.anInt709 / 2)));
                             is[i_9_ * 2 - -1]
-                                    = (-((((((Class42) class42).anIntArray591
+                                    = (-((((class42.anIntArray591
                                     [1 + i_9_ * 2]) * 4
                                     + i_8_) * i_12_
-                                    - (i_5_ - -((((Class42) class42)
+                                    - (i_5_ - -((class42
                                     .anIntArray591[i_9_ * 2])
                                     * 4)) * i_11_)
                                     >> -772369970)
-                                    + i + ((Class46) class46).anInt789 / 2);
+                                    + i + class46.anInt789 / 2);
                         }
                         Class329.method2619(var_ha, is,
-                                ((Class42) class42).anInt582,
-                                ((Class46) class46).anIntArray677,
-                                ((Class46) class46).anIntArray772);
-                        if ((((Class42) class42).anInt584 ^ 0xffffffff) < -1) {
+                                class42.anInt582,
+                                class46.anIntArray677,
+                                class46.anIntArray772);
+                        if ((class42.anInt584 ^ 0xffffffff) < -1) {
                             for (int i_13_ = 0;
                                  ((-1 + is.length / 2 ^ 0xffffffff)
                                          < (i_13_ ^ 0xffffffff));
@@ -171,15 +170,15 @@ abstract class Class318_Sub1 extends Class318 {
                                     i_17_ = i_20_;
                                 }
                                 var_ha.method3703(i_14_, i_15_, i_16_, i_17_,
-                                        (((Class42) class42)
+                                        (class42
                                                 .anIntArray572
-                                                [((((Class42) class42)
+                                                [((class42
                                                 .aByteArray564[i_13_])
                                                 & 0xff)]),
                                         1, var_aa, i_6_, i,
-                                        ((Class42) class42).anInt584,
-                                        ((Class42) class42).anInt575,
-                                        (((Class42) class42)
+                                        class42.anInt584,
+                                        class42.anInt575,
+                                        (class42
                                                 .anInt601));
                             }
                             int i_21_ = is[-2 + is.length];
@@ -199,17 +198,17 @@ abstract class Class318_Sub1 extends Class318 {
                                 i_24_ = i_27_;
                             }
                             var_ha.method3703(i_21_, i_22_, i_23_, i_24_,
-                                    (((Class42) class42)
+                                    (class42
                                             .anIntArray572
-                                            [(((Class42) class42)
+                                            [(class42
                                             .aByteArray564
-                                            [((((Class42) class42)
+                                            [((class42
                                             .aByteArray564).length
                                             - 1)]) & 0xff]),
                                     1, var_aa, i_6_, i,
-                                    ((Class42) class42).anInt584,
-                                    ((Class42) class42).anInt575,
-                                    ((Class42) class42).anInt601);
+                                    class42.anInt584,
+                                    class42.anInt575,
+                                    class42.anInt601);
                         } else {
                             for (int i_28_ = 0; -1 + is.length / 2 > i_28_;
                                  i_28_++)
@@ -217,50 +216,50 @@ abstract class Class318_Sub1 extends Class318 {
                                         is[2 * i_28_ + 1],
                                         is[2 * (i_28_ - -1)],
                                         is[2 * i_28_ + 3],
-                                        (((Class42) class42)
+                                        (class42
                                                 .anIntArray572
-                                                [((((Class42) class42)
+                                                [((class42
                                                 .aByteArray564[i_28_])
                                                 & 0xff)]),
                                         1, var_aa, i_6_, i);
                             var_ha.method3636(is[is.length + -2],
                                     is[-1 + is.length], is[0], is[1],
-                                    (((Class42) class42)
+                                    (class42
                                             .anIntArray572
-                                            [(((Class42) class42)
+                                            [(class42
                                             .aByteArray564
-                                            [((((Class42) class42)
+                                            [((class42
                                             .aByteArray564).length
                                             + -1)]) & 0xff]),
                                     1, var_aa, i_6_, i);
                         }
                     }
                     Class105 class105 = null;
-                    if ((((Class42) class42).anInt578 ^ 0xffffffff) != 0) {
+                    if ((class42.anInt578 ^ 0xffffffff) != 0) {
                         class105
                                 = class42.method374(false, var_ha, (byte) 127);
                         if (class105 != null)
                             Class151.method1211(i, class105, i_6_, class46,
                                     var_aa, i_8_, 2, i_5_);
                     }
-                    if (((Class42) class42).aString597 == null)
+                    if (class42.aString597 == null)
                         break;
                     int i_29_ = 0;
                     if (class105 != null)
                         i_29_ = class105.method969();
                     Class324 class324 = Class240.aClass324_4684;
                     Class143 class143 = Class258_Sub1.aClass143_8527;
-                    if ((((Class42) class42).anInt576 ^ 0xffffffff) == -2) {
+                    if ((class42.anInt576 ^ 0xffffffff) == -2) {
                         class324 = Applet_Sub1.aClass324_20;
                         class143 = Class246.aClass143_3179;
                     }
-                    if (((Class42) class42).anInt576 == 2) {
+                    if (class42.anInt576 == 2) {
                         class143 = Class369.aClass143_4962;
                         class324 = Class262.aClass324_3326;
                     }
-                    Class334.method2650(class143, ((Class42) class42).anInt580,
+                    Class334.method2650(class143, class42.anInt580,
                             var_aa, i_8_, i_6_,
-                            ((Class42) class42).aString597, i,
+                            class42.aString597, i,
                             class324, i_29_, class46, i_5_, 100);
                 }
             } catch (RuntimeException runtimeexception) {
@@ -293,9 +292,9 @@ abstract class Class318_Sub1 extends Class318 {
                          int i_31_) {
         anInt6384++;
         if (i_30_ != -2)
-            ((Class318_Sub1) this).aByte6376 = (byte) 33;
+            this.aByte6376 = (byte) 33;
         long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431
-                [((Class318_Sub1) this).aByte6381][i][i_31_]);
+                [this.aByte6381][i][i_31_]);
         long l_32_ = 0L;
         int i_33_ = 0;
         for (/**/; (l_32_ ^ 0xffffffffffffffffL) >= -49L; l_32_ += 16L) {
@@ -303,7 +302,7 @@ abstract class Class318_Sub1 extends Class318 {
             if ((i_34_ ^ 0xffffffff) >= -1)
                 break;
             class348_sub1s[i_33_++]
-                    = (((Class211) Class239_Sub14.aClass211Array5993[i_34_ + -1])
+                    = (Class239_Sub14.aClass211Array5993[i_34_ + -1]
                     .aClass348_Sub1_2745);
         }
         for (int i_35_ = i_33_; i_35_ < 4; i_35_++)

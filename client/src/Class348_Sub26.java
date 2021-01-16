@@ -30,7 +30,7 @@ final class Class348_Sub26 extends Class348 {
     }
 
     Class348_Sub26(String string) {
-        ((Class348_Sub26) this).aString6888 = string;
+        this.aString6888 = string;
     }
 
     static {

@@ -18,13 +18,13 @@ final class Class367_Sub1 extends Class367 {
         anInt7281++;
         int[] is = new int[i_0_];
         Class348_Sub40_Sub8 class348_sub40_sub8 = new Class348_Sub40_Sub8();
-        ((Class348_Sub40_Sub8) class348_sub40_sub8).anInt9149
+        class348_sub40_sub8.anInt9149
                 = (int) (f * 4096.0F);
-        ((Class348_Sub40_Sub8) class348_sub40_sub8).anInt9164 = i_4_;
-        ((Class348_Sub40_Sub8) class348_sub40_sub8).anInt9150 = i_1_;
-        ((Class348_Sub40_Sub8) class348_sub40_sub8).aBoolean9160 = bool;
-        ((Class348_Sub40_Sub8) class348_sub40_sub8).anInt9158 = i_2_;
-        ((Class348_Sub40_Sub8) class348_sub40_sub8).anInt9156 = i_3_;
+        class348_sub40_sub8.anInt9164 = i_4_;
+        class348_sub40_sub8.anInt9150 = i_1_;
+        class348_sub40_sub8.aBoolean9160 = bool;
+        class348_sub40_sub8.anInt9158 = i_2_;
+        class348_sub40_sub8.anInt9156 = i_3_;
         class348_sub40_sub8.method3044(110);
         Class79.method797(1, i_0_, (byte) 115);
         class348_sub40_sub8.method3069(0, is, (byte) 115);
@@ -49,29 +49,29 @@ final class Class367_Sub1 extends Class367 {
                  (class46s.length ^ 0xffffffff) < (i_8_ ^ 0xffffffff);
                  i_8_++) {
                 Class46 class46 = class46s[i_8_];
-                if (class46 != null && i == ((Class46) class46).anInt834) {
+                if (class46 != null && i == class46.anInt834) {
                     Class239_Sub28.method1843(i_5_, -326, class46, bool_6_,
                             i_7_);
                     Class14_Sub1.method239((byte) 115, i_5_, i_7_, class46);
-                    if ((((Class46) class46).anInt747 ^ 0xffffffff)
-                            < ((-((Class46) class46).anInt709
-                            + ((Class46) class46).anInt698)
+                    if ((class46.anInt747 ^ 0xffffffff)
+                            < ((-class46.anInt709
+                            + class46.anInt698)
                             ^ 0xffffffff))
-                        ((Class46) class46).anInt747
-                                = (((Class46) class46).anInt698
-                                - ((Class46) class46).anInt709);
-                    if (((Class46) class46).anInt747 < 0)
-                        ((Class46) class46).anInt747 = 0;
-                    if ((((Class46) class46).anInt755 ^ 0xffffffff)
-                            < ((((Class46) class46).anInt791
-                            - ((Class46) class46).anInt789)
+                        class46.anInt747
+                                = (class46.anInt698
+                                - class46.anInt709);
+                    if (class46.anInt747 < 0)
+                        class46.anInt747 = 0;
+                    if ((class46.anInt755 ^ 0xffffffff)
+                            < ((class46.anInt791
+                            - class46.anInt789)
                             ^ 0xffffffff))
-                        ((Class46) class46).anInt755
-                                = (((Class46) class46).anInt791
-                                - ((Class46) class46).anInt789);
-                    if (((Class46) class46).anInt755 < 0)
-                        ((Class46) class46).anInt755 = 0;
-                    if ((((Class46) class46).anInt774 ^ 0xffffffff) == -1)
+                        class46.anInt755
+                                = (class46.anInt791
+                                - class46.anInt789);
+                    if (class46.anInt755 < 0)
+                        class46.anInt755 = 0;
+                    if ((class46.anInt774 ^ 0xffffffff) == -1)
                         Class251.method1913(bool_6_, -116, class46);
                 }
             }
@@ -98,9 +98,9 @@ final class Class367_Sub1 extends Class367 {
     }
 
     final void method3527(int i, Interface18 interface18, int i_12_) {
-        ((Class367) this).aHa_Sub3_4479.method3850((byte) 81, interface18);
+        this.aHa_Sub3_4479.method3850((byte) 81, interface18);
         anInt7280++;
-        ((Class367) this).aHa_Sub3_4479.method3923(true, i);
+        this.aHa_Sub3_4479.method3923(true, i);
         if (i_12_ == -16776) {
             /* empty */
         }

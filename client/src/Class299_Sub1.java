@@ -14,8 +14,8 @@ abstract class Class299_Sub1 extends Class299 {
 
     static final int method2257(int i, int i_0_, byte i_1_) {
         anInt6322++;
-        double d = Math.log((double) i) / Math.log(2.0);
-        double d_2_ = Math.log((double) i_0_) / Math.log(2.0);
+        double d = Math.log(i) / Math.log(2.0);
+        double d_2_ = Math.log(i_0_) / Math.log(2.0);
         int i_3_ = -43 % ((i_1_ - 11) / 59);
         double d_4_ = (d - d_2_) * Math.random() + d_2_;
         return (int) (0.5 + Math.pow(2.0, d_4_));
@@ -31,8 +31,6 @@ abstract class Class299_Sub1 extends Class299 {
         anInt6320++;
         if (i != 0)
             aClass138_6321 = null;
-        if ((0x34 & i_6_) == 0)
-            return false;
-        return true;
+        return (0x34 & i_6_) != 0;
     }
 }

@@ -25,11 +25,11 @@ final class Class357 {
 
     final void method3485(boolean bool) {
         Class148 class148;
-        for (/**/; ((Class357) this).aClass148_4396 != null;
-                 ((Class357) this).aClass148_4396 = class148) {
+        for (/**/; this.aClass148_4396 != null;
+                 this.aClass148_4396 = class148) {
             class148
-                    = ((Class148) ((Class357) this).aClass148_4396).aClass148_2038;
-            ((Class357) this).aClass148_4396.method1199((byte) -106);
+                    = this.aClass148_4396.aClass148_2038;
+            this.aClass148_4396.method1199((byte) -106);
         }
         anInt4393++;
         if (bool != true)
@@ -88,7 +88,7 @@ final class Class357 {
     }
 
     Class357(int i) {
-        ((Class357) this).aByte4399 = (byte) i;
+        this.aByte4399 = (byte) i;
     }
 
     public static void method3487(int i) {

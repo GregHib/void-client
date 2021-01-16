@@ -6,8 +6,8 @@ final class Class50_Sub1 extends Class50 {
     static Class101 aClass101_5209;
     static int anInt5210;
     static int anInt5211;
-    private int anInt5212;
-    private int anInt5213;
+    private final int anInt5212;
+    private final int anInt5213;
     private int anInt5214;
     static int anInt5215;
     static int anInt5216;
@@ -16,7 +16,7 @@ final class Class50_Sub1 extends Class50 {
     static boolean aBoolean5219 = true;
     static int anInt5220;
     static boolean aBoolean5221 = false;
-    private int anInt5222;
+    private final int anInt5222;
     static String[] aStringArray5223;
     static boolean aBoolean5224;
     static boolean[][] aBooleanArrayArray5225;
@@ -30,9 +30,9 @@ final class Class50_Sub1 extends Class50 {
         int i_3_ = i * anInt5213 >> -641039412;
         int i_4_ = anInt5212 * i_0_ >> 53146732;
         int i_5_ = i_0_ * anInt5222 >> -376712532;
-        Class299_Sub2.method2267(10499, i_5_, i_2_, ((Class50) this).anInt865,
-                ((Class50) this).anInt864,
-                ((Class50) this).anInt862, i_4_, i_3_);
+        Class299_Sub2.method2267(10499, i_5_, i_2_, this.anInt865,
+                this.anInt864,
+                this.anInt862, i_4_, i_3_);
     }
 
     public static void method460(int i) {
@@ -67,7 +67,7 @@ final class Class50_Sub1 extends Class50 {
         int i_17_ = anInt5213 * i_14_ >> -678539124;
         int i_18_ = anInt5212 * i_15_ >> -49634420;
         int i_19_ = i_15_ * anInt5222 >> -938127988;
-        ha.method3641(i_18_, i_19_, (byte) -75, ((Class50) this).anInt864,
+        ha.method3641(i_18_, i_19_, (byte) -75, this.anInt864,
                 i_17_, i_16_);
     }
 
@@ -126,9 +126,9 @@ final class Class50_Sub1 extends Class50 {
                 (int) (9.9999999E7 * Math.random()));
         class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (byte) -98,
                 Class318_Sub1_Sub4.aBigInteger8762);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116.method3380
-                (((Class348_Sub49) class348_sub49).anInt7197, 0,
-                        ((Class348_Sub49) class348_sub49).aByteArray7154, 80);
+        class348_sub47.aClass348_Sub49_Sub2_7116.method3380
+                (class348_sub49.anInt7197, 0,
+                        class348_sub49.aByteArray7154, 80);
         return is;
     }
 

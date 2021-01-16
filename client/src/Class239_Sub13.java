@@ -16,18 +16,18 @@ final class Class239_Sub13 extends Class239 {
         if (i != -32350)
             anInt5980 = 42;
         anInt5978++;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     final void method1716(boolean bool) {
-        if (((Class239) this).aClass348_Sub51_3136.method3422(674)
+        if (this.aClass348_Sub51_3136.method3422(674)
                 == Class14_Sub4.aClass230_8638)
-            ((Class239) this).anInt3138 = 2;
+            this.anInt3138 = 2;
         if (bool == false) {
             anInt5974++;
-            if ((((Class239) this).anInt3138 ^ 0xffffffff) > -1
-                    || (((Class239) this).anInt3138 ^ 0xffffffff) < -3)
-                ((Class239) this).anInt3138 = method1710(20014);
+            if ((this.anInt3138 ^ 0xffffffff) > -1
+                    || (this.anInt3138 ^ 0xffffffff) < -3)
+                this.anInt3138 = method1710(20014);
         }
     }
 
@@ -43,24 +43,21 @@ final class Class239_Sub13 extends Class239 {
                             class318_sub1_sub3_sub3);
                     Class348_Sub43.method3298
                             ((byte) 105,
-                                    ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
+                                    ((class318_sub1_sub3_sub3_sub2
                                             .aByte6381)
-                                            != (((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                                            != (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .aByte6381)),
                                     class318_sub1_sub3_sub3_sub2);
                 }
             } else {
                 Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
                         = (Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3;
-                if (((Class318_Sub1_Sub3_Sub3_Sub1)
-                        class318_sub1_sub3_sub3_sub1).aClass79_10505
+                if (class318_sub1_sub3_sub3_sub1.aClass79_10505
                         != null)
                     Class286_Sub3.method2150
-                            (((((Class318_Sub1)
-                                            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                            (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .aByte6381)
-                                            != (((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
+                                            != (class318_sub1_sub3_sub3_sub1
                                             .aByte6381)),
                                     false, class318_sub1_sub3_sub3_sub1);
             }
@@ -81,7 +78,7 @@ final class Class239_Sub13 extends Class239 {
 
     final void method1712(int i, int i_1_) {
         anInt5977++;
-        ((Class239) this).anInt3138 = i_1_;
+        this.anInt3138 = i_1_;
         int i_2_ = -54 / ((82 - i) / 35);
     }
 

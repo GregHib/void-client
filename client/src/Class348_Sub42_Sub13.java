@@ -35,29 +35,27 @@ final class Class348_Sub42_Sub13 extends Class348_Sub42 {
         class348_sub42_sub12.method3162(true);
         Class348_Sub42_Sub12 class348_sub42_sub12_2_
                 = ((Class348_Sub42_Sub12)
-                ((Class348_Sub42_Sub13) this).aClass107_9621.method1011(-74));
+                this.aClass107_9621.method1011(-74));
         while (class348_sub42_sub12_2_ != null) {
             if (Class318_Sub2.method2496
-                    (((Class348_Sub42_Sub12) class348_sub42_sub12_2_).anInt9608,
-                            ((Class348_Sub42_Sub12) class348_sub42_sub12).anInt9608,
+                    (class348_sub42_sub12_2_.anInt9608,
+                            class348_sub42_sub12.anInt9608,
                             true)) {
                 Class69.method721(class348_sub42_sub12_2_,
                         class348_sub42_sub12, -1);
-                ((Class348_Sub42_Sub13) this).anInt9615++;
-                if (bool)
-                    return false;
-                return true;
+                this.anInt9615++;
+                return !bool;
             }
             class348_sub42_sub12_2_
-                    = (Class348_Sub42_Sub12) ((Class348_Sub42_Sub13) this)
+                    = (Class348_Sub42_Sub12) this
                     .aClass107_9621
                     .method1003((byte) 48);
             bool = false;
         }
-        ((Class348_Sub42_Sub13) this).aClass107_9621
+        this.aClass107_9621
                 .method1005(true, class348_sub42_sub12);
         int i_3_ = 80 % ((i - -81) / 33);
-        ((Class348_Sub42_Sub13) this).anInt9615++;
+        this.anInt9615++;
         return bool;
     }
 
@@ -67,40 +65,34 @@ final class Class348_Sub42_Sub13 extends Class348_Sub42 {
         int i_4_ = 41 % ((-30 - i) / 39);
         int i_5_ = method3235(-17937);
         class348_sub42_sub12.method3162(true);
-        ((Class348_Sub42_Sub13) this).anInt9615--;
-        if (((Class348_Sub42_Sub13) this).anInt9615 == 0) {
+        this.anInt9615--;
+        if (this.anInt9615 == 0) {
             this.method2715((byte) 112);
             this.method3162(true);
             Class8.anInt166--;
             Class259.aClass60_3301.method582(this,
-                    ((Class348_Sub42_Sub12)
-                            class348_sub42_sub12).aLong9600,
+                    class348_sub42_sub12.aLong9600,
                     (byte) -128);
             return false;
         }
-        if ((method3235(-17937) ^ 0xffffffff) == (i_5_ ^ 0xffffffff))
-            return false;
-        return true;
+        return (method3235(-17937) ^ 0xffffffff) != (i_5_ ^ 0xffffffff);
     }
 
     Class348_Sub42_Sub13(String string) {
-        ((Class348_Sub42_Sub13) this).aString9617 = string;
-        ((Class348_Sub42_Sub13) this).aClass107_9621 = new Class107();
+        this.aString9617 = string;
+        this.aClass107_9621 = new Class107();
     }
 
     final int method3235(int i) {
         if (i != -17937)
             return 104;
         anInt9619++;
-        if ((((Class107) ((Class348_Sub42_Sub13) this).aClass107_9621)
+        if ((this.aClass107_9621
                 .aClass348_Sub42_1647)
-                != ((Class348_Sub42)
-                (((Class107) ((Class348_Sub42_Sub13) this).aClass107_9621)
-                        .aClass348_Sub42_1647)).aClass348_Sub42_7063)
-            return ((Class348_Sub42_Sub12) (Class348_Sub42_Sub12)
-                    ((Class348_Sub42)
-                            (((Class107) ((Class348_Sub42_Sub13) this).aClass107_9621)
-                                    .aClass348_Sub42_1647)).aClass348_Sub42_7063).anInt9608;
+                != this.aClass107_9621
+                        .aClass348_Sub42_1647.aClass348_Sub42_7063)
+            return ((Class348_Sub42_Sub12) this.aClass107_9621
+                    .aClass348_Sub42_1647.aClass348_Sub42_7063).anInt9608;
         return -1;
     }
 }

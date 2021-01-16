@@ -65,7 +65,7 @@ final class Class348_Sub15 extends Class348 {
         anInt6779++;
         if (i != -44)
             method2812(91, null);
-        return (((Class348_Sub42_Sub13) class348_sub42_sub13).aString9617
+        return (class348_sub42_sub13.aString9617
                 + " <col=ffffff>>");
     }
 
@@ -76,15 +76,15 @@ final class Class348_Sub15 extends Class348 {
         class348_sub42_sub15.method3246(-25490);
         if (bool != true)
             anInt6769 = -113;
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i;
+        class348_sub42_sub15.anInt9652 = i;
     }
 
     static final void method2814(Class348_Sub16 class348_sub16, int i) {
-        ((Class348_Sub16) class348_sub16).aBoolean6784 = false;
+        class348_sub16.aBoolean6784 = false;
         if (i >= 39) {
-            if (((Class348_Sub16) class348_sub16).aClass348_Sub19_6787 != null)
-                ((Class348_Sub19) (((Class348_Sub16) class348_sub16)
-                        .aClass348_Sub19_6787)).anInt6824
+            if (class348_sub16.aClass348_Sub19_6787 != null)
+                class348_sub16
+                        .aClass348_Sub19_6787.anInt6824
                         = 0;
             anInt6771++;
             for (Class348_Sub16 class348_sub16_1_
@@ -96,10 +96,10 @@ final class Class348_Sub15 extends Class348 {
     }
 
     Class348_Sub15(int i, Class55_Sub1 class55_sub1, int i_2_, boolean bool) {
-        ((Class348_Sub15) this).anInt6782 = i_2_;
-        ((Class348_Sub15) this).aClass55_Sub1_6768 = class55_sub1;
-        ((Class348_Sub15) this).anInt6773 = i;
-        ((Class348_Sub15) this).aBoolean6776 = bool;
+        this.anInt6782 = i_2_;
+        this.aClass55_Sub1_6768 = class55_sub1;
+        this.anInt6773 = i;
+        this.aBoolean6776 = bool;
     }
 
     static {

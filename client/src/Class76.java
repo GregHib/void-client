@@ -92,26 +92,26 @@ final class Class76 {
     final void method774(Class318_Sub4 class318_sub4, int i) {
         anInt1280++;
         Class318_Sub1 class318_sub1
-                = ((Class318_Sub4) class318_sub4).aClass318_Sub1_6410;
+                = class318_sub4.aClass318_Sub1_6410;
         boolean bool = true;
         Class318_Sub3[] class318_sub3s
-                = ((Class318_Sub4) class318_sub4).aClass318_Sub3Array6414;
+                = class318_sub4.aClass318_Sub3Array6414;
         for (int i_6_ = 0; class318_sub3s.length > i_6_; i_6_++) {
-            if (((Class318_Sub3) class318_sub3s[i_6_]).aBoolean6401) {
+            if (class318_sub3s[i_6_].aBoolean6401) {
                 bool = false;
                 break;
             }
         }
         if (!bool) {
-            if (((Class76) this).aBoolean1283) {
+            if (this.aBoolean1283) {
                 for (Class318_Sub4 class318_sub4_7_
                      = ((Class318_Sub4)
-                        ((Class76) this).aClass243_1282.method1872(8));
+                        this.aClass243_1282.method1872(8));
                      class318_sub4_7_ != null;
                      class318_sub4_7_
-                             = (Class318_Sub4) ((Class76) this).aClass243_1282
+                             = (Class318_Sub4) this.aClass243_1282
                              .method1878((byte) -103)) {
-                    if (class318_sub1 == (((Class318_Sub4) class318_sub4_7_)
+                    if (class318_sub1 == (class318_sub4_7_
                             .aClass318_Sub1_6410)) {
                         class318_sub4_7_.method2373(false);
                         Class59_Sub1_Sub1.method560(class318_sub4_7_, -41);
@@ -120,21 +120,21 @@ final class Class76 {
             }
             for (Class318_Sub4 class318_sub4_8_
                  = ((Class318_Sub4)
-                    ((Class76) this).aClass243_1282.method1872(8));
+                    this.aClass243_1282.method1872(8));
                  class318_sub4_8_ != null;
                  class318_sub4_8_
-                         = (Class318_Sub4) ((Class76) this).aClass243_1282
+                         = (Class318_Sub4) this.aClass243_1282
                          .method1878((byte) -44)) {
-                if (((Class318_Sub1) class318_sub1).anInt6389
-                        >= ((Class318_Sub1) (((Class318_Sub4) class318_sub4_8_)
-                        .aClass318_Sub1_6410)).anInt6389) {
+                if (class318_sub1.anInt6389
+                        >= class318_sub4_8_
+                        .aClass318_Sub1_6410.anInt6389) {
                     Class245.method1883(class318_sub4_8_, class318_sub4, true);
                     return;
                 }
             }
             if (i != 18802)
                 aClass169_1286 = null;
-            ((Class76) this).aClass243_1282.method1869(-107, class318_sub4);
+            this.aClass243_1282.method1869(-107, class318_sub4);
         }
     }
 
@@ -142,7 +142,7 @@ final class Class76 {
         for (; ; ) {
             Class318_Sub4 class318_sub4
                     = ((Class318_Sub4)
-                    ((Class76) this).aClass243_1282.method1875(60));
+                    this.aClass243_1282.method1875(60));
             if (class318_sub4 == null)
                 break;
             class318_sub4.method2373(false);
@@ -154,7 +154,7 @@ final class Class76 {
     }
 
     Class76(boolean bool) {
-        ((Class76) this).aBoolean1283 = bool;
+        this.aBoolean1283 = bool;
     }
 
     static {

@@ -31,10 +31,7 @@ abstract class Class348_Sub45 extends Class348 {
             aClass304_7103 = null;
         Class348_Sub42_Sub10.anInt9577 = 0;
         Class348_Sub42_Sub19.aClass338Array9700 = new Class338[500];
-        if (Class9.aHa171 instanceof oa)
-            Class348_Sub40_Sub23.aBoolean9307 = false;
-        else
-            Class348_Sub40_Sub23.aBoolean9307 = true;
+        Class348_Sub40_Sub23.aBoolean9307 = !(Class9.aHa171 instanceof oa);
     }
 
     public Class348_Sub45() {

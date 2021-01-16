@@ -5,7 +5,7 @@
 class Class59_Sub2 extends Class59 {
     static int anInt5301;
     private int anInt5302;
-    private int[] anIntArray5303 = new int[((Class59) this).anInt1071];
+    private final int[] anIntArray5303 = new int[this.anInt1071];
     static int anInt5304;
     static String[] aStringArray5305 = {"en", "de", "fr", "pt", "nl"};
     static int[] anIntArray5306
@@ -43,9 +43,9 @@ class Class59_Sub2 extends Class59 {
 
     Class59_Sub2(int i, int i_2_, int i_3_, int i_4_, int i_5_, float f) {
         super(i, i_2_, i_3_, i_4_, i_5_);
-        for (int i_6_ = 0; i_6_ < ((Class59) this).anInt1071; i_6_++)
+        for (int i_6_ = 0; i_6_ < this.anInt1071; i_6_++)
             anIntArray5303[i_6_]
-                    = (short) (int) (Math.pow((double) f, (double) i_6_) * 4096.0);
+                    = (short) (int) (Math.pow(f, i_6_) * 4096.0);
     }
 
     void method563(byte i, int i_7_, byte i_8_) {

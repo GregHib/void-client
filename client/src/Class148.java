@@ -18,9 +18,7 @@ final class Class148 {
         if (i_0_ == 21 || (i_0_ ^ 0xffffffff) == -11 || i_0_ == 47
                 || (i_0_ ^ 0xffffffff) == -23 || i_0_ == 5)
             return true;
-        if (i_0_ == 49 || i_0_ == 1010)
-            return true;
-        return false;
+        return i_0_ == 49 || i_0_ == 1010;
     }
 
     public static void method1198(int i) {
@@ -33,8 +31,8 @@ final class Class148 {
     final void method1199(byte i) {
         anInt2043++;
         if (i == -106 && ha_Sub2.anInt7722 < 500) {
-            ((Class148) this).aClass318_Sub1_Sub3_2040 = null;
-            ((Class148) this).aClass148_2038 = Class16.aClass148_231;
+            this.aClass318_Sub1_Sub3_2040 = null;
+            this.aClass148_2038 = Class16.aClass148_231;
             Class16.aClass148_231 = this;
             ha_Sub2.anInt7722++;
         }

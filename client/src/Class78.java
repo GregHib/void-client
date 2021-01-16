@@ -8,14 +8,14 @@ import java.io.IOException;
 
 final class Class78 {
     static int anInt1304;
-    private byte[] aByteArray1305;
+    private final byte[] aByteArray1305;
     static int anInt1306;
     static int anInt1307;
     static int anInt1308;
     static int anInt1309;
     static int anInt1310;
-    private byte[] aByteArray1311;
-    private Class234 aClass234_1312;
+    private final byte[] aByteArray1311;
+    private final Class234 aClass234_1312;
     static int anInt1313;
     private int anInt1314 = 0;
     private long aLong1315;
@@ -51,7 +51,7 @@ final class Class78 {
                         (int) (-aLong1321 + aLong1324), i_1_);
                 i += i_1_;
                 i_0_ -= i_1_;
-                aLong1324 += (long) i_1_;
+                aLong1324 += i_1_;
                 anInt1314 = aByteArray1305.length;
                 method791(-1);
             }
@@ -61,7 +61,7 @@ final class Class78 {
                     aLong1315 = aLong1324;
                 }
                 aClass234_1312.method1658((byte) 115, i, i_0_, is);
-                aLong1315 += (long) i_0_;
+                aLong1315 += i_0_;
                 if ((aLong1315 ^ 0xffffffffffffffffL)
                         < (aLong1317 ^ 0xffffffffffffffffL))
                     aLong1317 = aLong1315;
@@ -91,7 +91,7 @@ final class Class78 {
                             aByteArray1311, (int) (-aLong1319 + l),
                             i_3_);
                 }
-                aLong1324 += (long) i_0_;
+                aLong1324 += i_0_;
                 return;
             }
             if ((i_0_ ^ 0xffffffff) < -1) {
@@ -99,7 +99,7 @@ final class Class78 {
                     aLong1321 = aLong1324;
                 Class214.method1577(is, i, aByteArray1305,
                         (int) (-aLong1321 + aLong1324), i_0_);
-                aLong1324 += (long) i_0_;
+                aLong1324 += i_0_;
                 if (aLong1324 + -aLong1321 > (long) anInt1314)
                     anInt1314 = (int) (-aLong1321 + aLong1324);
                 return;
@@ -155,7 +155,7 @@ final class Class78 {
                 Class214.method1577(aByteArray1305,
                         (int) (-aLong1321 + aLong1324), is, i,
                         i_5_);
-                aLong1324 += (long) i_5_;
+                aLong1324 += i_5_;
                 return;
             }
             long l = aLong1324;
@@ -170,7 +170,7 @@ final class Class78 {
                 Class214.method1577(aByteArray1311,
                         (int) (aLong1324 + -aLong1319), is, i,
                         i_9_);
-                aLong1324 += (long) i_9_;
+                aLong1324 += i_9_;
                 i_5_ -= i_9_;
                 i += i_9_;
             }
@@ -183,8 +183,8 @@ final class Class78 {
                     if (i_10_ == -1)
                         break;
                     i += i_10_;
-                    aLong1315 += (long) i_10_;
-                    aLong1324 += (long) i_10_;
+                    aLong1315 += i_10_;
+                    aLong1324 += i_10_;
                 }
             } else if ((i_5_ ^ 0xffffffff) < -1) {
                 method792((byte) -46);
@@ -193,7 +193,7 @@ final class Class78 {
                     i_11_ = anInt1320;
                 Class214.method1577(aByteArray1311, 0, is, i, i_11_);
                 i += i_11_;
-                aLong1324 += (long) i_11_;
+                aLong1324 += i_11_;
                 i_5_ -= i_11_;
             }
             if (aLong1321 != -1L) {
@@ -286,7 +286,7 @@ final class Class78 {
             }
             aClass234_1312.method1658((byte) 120, 0, anInt1314,
                     aByteArray1305);
-            aLong1315 += (long) anInt1314;
+            aLong1315 += anInt1314;
             if (aLong1317 < aLong1315)
                 aLong1317 = aLong1315;
             long l = -1L;
@@ -343,7 +343,7 @@ final class Class78 {
             if (i_21_ == -1)
                 break;
             anInt1320 += i_21_;
-            aLong1315 += (long) i_21_;
+            aLong1315 += i_21_;
         }
     }
 

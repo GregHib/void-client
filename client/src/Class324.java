@@ -33,7 +33,7 @@ abstract class Class324 {
                                   int[] is_0_, int[] is_1_, int i_2_,
                                   String string, int i_3_) {
         try {
-            i_2_ -= ((Class143) aClass143_4063).anInt1992;
+            i_2_ -= aClass143_4063.anInt1992;
             anInt4058++;
             int i_4_ = -1;
             int i_5_ = -1;
@@ -96,8 +96,7 @@ abstract class Class324 {
                                                     class105.method964
                                                             (i + i_10_,
                                                                     (-i_13_
-                                                                            + (((Class143)
-                                                                            aClass143_4063)
+                                                                            + (aClass143_4063
                                                                             .anInt1992)
                                                                             + (i_2_ - -i_11_)),
                                                                     1, 0, 1);
@@ -154,8 +153,7 @@ abstract class Class324 {
                                     != 0)
                                 aHa4048.method3649
                                         ((byte) -103, i_16_,
-                                                i_2_ - -(int) ((double) (((Class143)
-                                                        aClass143_4063)
+                                                i_2_ - -(int) ((double) (aClass143_4063
                                                         .anInt1992)
                                                         * 0.7),
                                                 Class318_Sub1_Sub3_Sub3_Sub2.anInt10567,
@@ -163,7 +161,7 @@ abstract class Class324 {
                             if ((Class348_Sub40_Sub2.anInt9101 ^ 0xffffffff)
                                     != 0)
                                 aHa4048.method3649((byte) -96, i_16_,
-                                        (((Class143) aClass143_4063)
+                                        (aClass143_4063
                                                 .anInt1992) + i_2_,
                                         (Class348_Sub40_Sub2
                                                 .anInt9101),
@@ -215,10 +213,10 @@ abstract class Class324 {
                 return 0;
             method2579(i_30_, -76, i_23_);
             if (i_32_ == 0)
-                i_32_ = ((Class143) aClass143_4063).anInt1992;
+                i_32_ = aClass143_4063.anInt1992;
             int[] is_33_;
-            if ((((Class143) aClass143_4063).anInt1993
-                    + ((Class143) aClass143_4063).anInt1988 - -i_32_) <= i
+            if ((aClass143_4063.anInt1993
+                    + aClass143_4063.anInt1988 - -i_32_) <= i
                     || (i ^ 0xffffffff) <= (i_32_ + i_32_ ^ 0xffffffff))
                 is_33_ = new int[]{i_25_};
             else
@@ -244,27 +242,27 @@ abstract class Class324 {
             int i_35_ = -116 % ((i_21_ - -28) / 43);
             int i_36_;
             if (i_26_ == 0)
-                i_36_ = ((Class143) aClass143_4063).anInt1988 + i_24_;
+                i_36_ = aClass143_4063.anInt1988 + i_24_;
             else if ((i_26_ ^ 0xffffffff) != -2) {
                 if ((i_26_ ^ 0xffffffff) != -3) {
                     int i_37_
                             = ((-(i_32_ * (i_34_ + -1))
-                            + (i + (-((Class143) aClass143_4063).anInt1988
-                            + -((Class143) aClass143_4063).anInt1993)))
+                            + (i + (-aClass143_4063.anInt1988
+                            + -aClass143_4063.anInt1993)))
                             / (1 + i_34_));
                     if ((i_37_ ^ 0xffffffff) > -1)
                         i_37_ = 0;
                     i_32_ += i_37_;
-                    i_36_ = ((Class143) aClass143_4063).anInt1988 + (i_24_
+                    i_36_ = aClass143_4063.anInt1988 + (i_24_
                             - -i_37_);
                 } else
-                    i_36_ = (-((Class143) aClass143_4063).anInt1993 + i
+                    i_36_ = (-aClass143_4063.anInt1993 + i
                             + (i_24_ - (i_34_ + -1) * i_32_));
             } else
-                i_36_ = ((-((Class143) aClass143_4063).anInt1993
-                        + (-((Class143) aClass143_4063).anInt1988 + i
+                i_36_ = ((-aClass143_4063.anInt1993
+                        + (-aClass143_4063.anInt1988 + i
                         + -(i_32_ * (-1 + i_34_)))) / 2
-                        + (((Class143) aClass143_4063).anInt1988 + i_24_));
+                        + (aClass143_4063.anInt1988 + i_24_));
             for (int i_38_ = 0; i_38_ < i_34_; i_38_++) {
                 if (i_29_ == 0)
                     method2583(i_27_, i_36_, i_22_, class105s, var_aa,
@@ -350,7 +348,7 @@ abstract class Class324 {
             anInt4047++;
             if (string == null)
                 return 0;
-            random.setSeed((long) i_48_);
+            random.setSeed(i_48_);
             int i_53_ = (random.nextInt() & 0x1f) + 192;
             method2579(i_53_ << 1698302424 | 0xffffff & i_50_, i ^ ~0x79,
                     i_53_ << -2007048616 | i_49_ & 0xffffff);
@@ -602,7 +600,7 @@ abstract class Class324 {
                 aClass138_4062 = null;
             for (int i_100_ = 0; class39s.length > i_100_; i_100_++) {
                 if (class39s[i_100_] == null
-                        || (((Class39) class39s[i_100_]).aLong517
+                        || (class39s[i_100_].aLong517
                         ^ 0xffffffffffffffffL) >= -1L)
                     return null;
             }
@@ -610,7 +608,7 @@ abstract class Class324 {
             for (int i_101_ = 0;
                  (i_101_ ^ 0xffffffff) > (class39s.length ^ 0xffffffff);
                  i_101_++)
-                OpenGL.glAttachObjectARB(l, (((Class39) class39s[i_101_])
+                OpenGL.glAttachObjectARB(l, (class39s[i_101_]
                         .aLong517));
             OpenGL.glLinkProgramARB(l);
             OpenGL.glGetObjectParameterivARB(l, 35714, Class211.anIntArray2744,
@@ -629,7 +627,7 @@ abstract class Class324 {
                 if (Class211.anIntArray2744[0] == 0) {
                     for (int i_102_ = 0; class39s.length > i_102_; i_102_++)
                         OpenGL.glDetachObjectARB(l,
-                                (((Class39) class39s[i_102_])
+                                (class39s[i_102_]
                                         .aLong517));
                     OpenGL.glDeleteObjectARB(l);
                     return null;
@@ -652,7 +650,7 @@ abstract class Class324 {
             (int i, int i_103_, int i_104_, Class105[] class105s, aa var_aa,
              String string, int[] is, int i_105_, int i_106_) {
         try {
-            i_103_ -= ((Class143) aClass143_4063).anInt1992;
+            i_103_ -= aClass143_4063.anInt1992;
             anInt4061++;
             int i_107_ = -1;
             int i_108_ = -1;
@@ -708,8 +706,7 @@ abstract class Class324 {
                                                         class105.method964
                                                                 (i_106_,
                                                                         (-i_113_
-                                                                                + (((Class143)
-                                                                                aClass143_4063)
+                                                                                + (aClass143_4063
                                                                                 .anInt1992)
                                                                                 + i_103_),
                                                                         0,
@@ -721,8 +718,7 @@ abstract class Class324 {
                                                     else
                                                         class105.method964
                                                                 (i_106_,
-                                                                        ((((Class143)
-                                                                                aClass143_4063)
+                                                                        ((aClass143_4063
                                                                                 .anInt1992)
                                                                                 + (i_103_
                                                                                 - i_113_)),
@@ -779,15 +775,14 @@ abstract class Class324 {
                                     != 0)
                                 aHa4048.method3649
                                         ((byte) -119, i_114_,
-                                                (int) ((double) ((Class143)
-                                                        aClass143_4063).anInt1992
+                                                (int) ((double) aClass143_4063.anInt1992
                                                         * 0.7) + i_103_,
                                                 Class318_Sub1_Sub3_Sub3_Sub2.anInt10567,
                                                 i_106_);
                             if ((Class348_Sub40_Sub2.anInt9101 ^ 0xffffffff)
                                     != 0)
                                 aHa4048.method3649((byte) -114, i_114_,
-                                        (((Class143) aClass143_4063)
+                                        (aClass143_4063
                                                 .anInt1992) + (i_103_ + 1),
                                         (Class348_Sub40_Sub2
                                                 .anInt9101),
@@ -859,7 +854,7 @@ abstract class Class324 {
             anInt4050++;
             if (string == null)
                 return 0;
-            random.setSeed((long) i_131_);
+            random.setSeed(i_131_);
             int i_135_ = (0x1f & random.nextInt()) + 192;
             method2579(i_135_ << 1604806488 | i_128_ & 0xffffff, -45,
                     0xffffff & i_126_ | i_135_ << -584606184);
@@ -873,13 +868,13 @@ abstract class Class324 {
                     i_138_++;
             }
             int i_140_ = i_133_;
-            int i_141_ = ((Class143) aClass143_4063).anInt1988 + i_130_;
+            int i_141_ = aClass143_4063.anInt1988 + i_130_;
             int i_142_ = -1;
             if (i_125_ == 1)
-                i_141_ += (-((Class143) aClass143_4063).anInt1988 + i_127_
-                        + -((Class143) aClass143_4063).anInt1993) / 2;
+                i_141_ += (-aClass143_4063.anInt1988 + i_127_
+                        + -aClass143_4063.anInt1993) / 2;
             else if (i_125_ == 2)
-                i_141_ = -((Class143) aClass143_4063).anInt1993 + (i_127_
+                i_141_ = -aClass143_4063.anInt1993 + (i_127_
                         + i_130_);
             if (i_132_ != -33)
                 method2578('\ufffe', 83, -110, 26, true, null, 113, 97);
@@ -898,10 +893,10 @@ abstract class Class324 {
                 if ((i_142_ ^ 0xffffffff) == 0)
                     i_142_ = aClass143_4063.method1183(true, string) - -i_138_;
                 is_134_[2] = i_142_;
-                is_134_[3] = (((Class143) aClass143_4063).anInt1993
-                        + ((Class143) aClass143_4063).anInt1988);
+                is_134_[3] = (aClass143_4063.anInt1993
+                        + aClass143_4063.anInt1988);
                 is_134_[0] = i_140_;
-                is_134_[1] = -((Class143) aClass143_4063).anInt1988 + i_141_;
+                is_134_[1] = -aClass143_4063.anInt1988 + i_141_;
             }
             return i_138_;
         } catch (RuntimeException runtimeexception) {

@@ -48,12 +48,12 @@ final class Class239_Sub19 extends Class239 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i, (byte) 105, 3);
         class348_sub42_sub15.method3246(i_1_ ^ 0x1d18);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).aString9654 = string;
+        class348_sub42_sub15.aString9654 = string;
     }
 
     final void method1712(int i, int i_2_) {
         anInt6046++;
-        ((Class239) this).anInt3138 = i_2_;
+        this.anInt3138 = i_2_;
         int i_3_ = -25 / ((82 - i) / 35);
     }
 
@@ -68,6 +68,6 @@ final class Class239_Sub19 extends Class239 {
         if (i != -32350)
             return -40;
         anInt6044++;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 }

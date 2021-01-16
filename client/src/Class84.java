@@ -3,7 +3,7 @@
  */
 
 final class Class84 {
-    private Class60 aClass60_1449 = new Class60(16);
+    private final Class60 aClass60_1449 = new Class60(16);
     static int[] anIntArray1450 = {1, 2, 4, 8};
     static int anInt1451;
     static int anInt1452;
@@ -14,7 +14,7 @@ final class Class84 {
     static int anInt1457;
     static int anInt1458;
     static int anInt1459;
-    private Class45 aClass45_1460;
+    private final Class45 aClass45_1460;
 
     final void method816(boolean bool) {
         anInt1455++;
@@ -36,28 +36,28 @@ final class Class84 {
             return null;
         Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3 = null;
         int i_3_ = -1;
-        for (Class148 class148 = ((Class357) class357).aClass148_4396;
+        for (Class148 class148 = class357.aClass148_4396;
              class148 != null;
-             class148 = ((Class148) class148).aClass148_2038) {
+             class148 = class148.aClass148_2038) {
             Class318_Sub1_Sub3 class318_sub1_sub3
-                    = ((Class148) class148).aClass318_Sub1_Sub3_2040;
+                    = class148.aClass318_Sub1_Sub3_2040;
             if (class318_sub1_sub3 instanceof Class318_Sub1_Sub3_Sub3) {
                 Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_4_
                         = (Class318_Sub1_Sub3_Sub3) class318_sub1_sub3;
                 int i_5_ = 252 + (-1 + class318_sub1_sub3_sub3_4_
                         .method2436((byte) 88)) * 256;
                 int i_6_
-                        = (-i_5_ + (((Class318_Sub1) class318_sub1_sub3_sub3_4_)
+                        = (-i_5_ + (class318_sub1_sub3_sub3_4_
                         .anInt6377)
                         >> -482650455);
                 int i_7_
-                        = (-i_5_ + (((Class318_Sub1) class318_sub1_sub3_sub3_4_)
+                        = (-i_5_ + (class318_sub1_sub3_sub3_4_
                         .anInt6388)
                         >> -605332215);
-                int i_8_ = i_5_ + (((Class318_Sub1) class318_sub1_sub3_sub3_4_)
+                int i_8_ = i_5_ + (class318_sub1_sub3_sub3_4_
                         .anInt6377) >> 1651294377;
                 int i_9_
-                        = ((((Class318_Sub1) class318_sub1_sub3_sub3_4_).anInt6388
+                        = ((class318_sub1_sub3_sub3_4_.anInt6388
                         + i_5_)
                         >> 783412073);
                 if ((i_6_ ^ 0xffffffff) >= (i_0_ ^ 0xffffffff)
@@ -98,7 +98,7 @@ final class Class84 {
         anInt1458++;
         Class300 class300;
         synchronized (aClass60_1449) {
-            class300 = (Class300) aClass60_1449.method583((long) i, 116);
+            class300 = (Class300) aClass60_1449.method583(i, 116);
         }
         if (class300 != null)
             return class300;
@@ -110,7 +110,7 @@ final class Class84 {
         if (is != null)
             class300.method2275(new Class348_Sub49(is), (byte) -123);
         synchronized (aClass60_1449) {
-            aClass60_1449.method582(class300, (long) i, (byte) -106);
+            aClass60_1449.method582(class300, i, (byte) -106);
         }
         return class300;
     }
@@ -137,27 +137,27 @@ final class Class84 {
         Class300 class300 = method820(i_20_, 29);
         if (i_19_ > -36)
             return null;
-        if (((Class300) class300).anIntArray3821 != null) {
+        if (class300.anIntArray3821 != null) {
             class72s
-                    = new Class72[((Class300) class300).anIntArray3821.length];
+                    = new Class72[class300.anIntArray3821.length];
             for (int i_21_ = 0;
                  (i_21_ ^ 0xffffffff) > (class72s.length ^ 0xffffffff);
                  i_21_++) {
-                Class38 class38 = class25.method301((((Class300) class300)
+                Class38 class38 = class25.method301((class300
                                 .anIntArray3821[i_21_]),
                         29);
-                class72s[i_21_] = new Class72(((Class38) class38).anInt498,
-                        ((Class38) class38).anInt504,
-                        ((Class38) class38).anInt499,
-                        ((Class38) class38).anInt502,
-                        ((Class38) class38).anInt508,
-                        ((Class38) class38).anInt501,
-                        ((Class38) class38).anInt503,
-                        ((Class38) class38).aBoolean507);
+                class72s[i_21_] = new Class72(class38.anInt498,
+                        class38.anInt504,
+                        class38.anInt499,
+                        class38.anInt502,
+                        class38.anInt508,
+                        class38.anInt501,
+                        class38.anInt503,
+                        class38.aBoolean507);
             }
         }
-        return new Class305(((Class300) class300).anInt3817, class72s,
-                ((Class300) class300).anInt3823, i_18_, i, i_17_);
+        return new Class305(class300.anInt3817, class72s,
+                class300.anInt3823, i_18_, i, i_17_);
     }
 
     static final void method824(int i) {

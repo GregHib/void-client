@@ -61,9 +61,7 @@ final class Class30 {
             method323(null, null, (byte) 29);
         int i_17_ = -anInt409 + i_16_;
         int i_18_ = i_14_ + -anInt408;
-        if (anInt405 <= i_17_ * i_17_ + i_18_ * i_18_)
-            return false;
-        return true;
+        return anInt405 > i_17_ * i_17_ + i_18_ * i_18_;
     }
 
     public static void method322(int i) {
@@ -89,7 +87,7 @@ final class Class30 {
                 Class348_Sub41.aString7048 += "windows/";
             if (i != 95)
                 anIntArray407 = null;
-            if (!((Class297) Class59_Sub1.aClass297_5297).aBoolean3794) {
+            if (!Class59_Sub1.aClass297_5297.aBoolean3794) {
                 if (!Class348_Sub24.aString6876.startsWith("amd64")
                         && !Class348_Sub24.aString6876.startsWith("x86_64")) {
                     if (!Class348_Sub24.aString6876.startsWith("i386")

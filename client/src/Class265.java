@@ -3,7 +3,7 @@
  */
 
 final class Class265 implements Interface1 {
-    private Class120 aClass120_4687;
+    private final Class120 aClass120_4687;
     private Class105 aClass105_4688;
     static Class74 aClass74_4689 = new Class74(2, 4);
     static int anInt4690;
@@ -15,13 +15,13 @@ final class Class265 implements Interface1 {
             {false, false, true, false}, {true, false, true, false},
             {true, false, false, true}, {true, false, false, true},
             new boolean[4], new boolean[4], new boolean[4], new boolean[4]};
-    private Class45 aClass45_4694;
+    private final Class45 aClass45_4694;
     static int anInt4695;
     static int anInt4696;
 
     public final void method7(int i) {
         aClass105_4688
-                = Class369_Sub3_Sub1.method3577((((Class120) aClass120_4687)
+                = Class369_Sub3_Sub1.method3577((aClass120_4687
                         .anInt4912),
                 (byte) 116, aClass45_4694);
         if (i != 10286)
@@ -98,6 +98,6 @@ final class Class265 implements Interface1 {
         int i_8_ = -105 % ((25 - i) / 52);
         anInt4690++;
         return aClass45_4694.method421(false,
-                ((Class120) aClass120_4687).anInt4912);
+                aClass120_4687.anInt4912);
     }
 }

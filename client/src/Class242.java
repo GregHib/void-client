@@ -5,7 +5,7 @@
 final class Class242 {
     static int anInt3151;
     static Class348_Sub42_Sub13 aClass348_Sub42_Sub13_3152 = null;
-    private ha_Sub2 aHa_Sub2_3153;
+    private final ha_Sub2 aHa_Sub2_3153;
     static int anInt3154;
     static int anInt3155;
     long aLong3156;
@@ -24,14 +24,14 @@ final class Class242 {
         Class348_Sub47 class348_sub47
                 = Class286_Sub3.method2148(Class318_Sub1_Sub1.aClass351_8724,
                 Class348_Sub23_Sub2.aClass77_9029, -99);
-        ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+        class348_sub47.aClass348_Sub49_Sub2_7116
                 .method3378(false, 0);
         Class348_Sub42_Sub14.method3243(118, class348_sub47);
     }
 
     protected final void finalize() throws Throwable {
         anInt3151++;
-        aHa_Sub2_3153.method3769(((Class242) this).aLong3156, false);
+        aHa_Sub2_3153.method3769(this.aLong3156, false);
         super.finalize();
     }
 
@@ -66,7 +66,7 @@ final class Class242 {
     Class242(ha_Sub2 var_ha_Sub2, long l, int i) {
         try {
             aHa_Sub2_3153 = var_ha_Sub2;
-            ((Class242) this).aLong3156 = l;
+            this.aLong3156 = l;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("tba.<init>("

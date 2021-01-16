@@ -33,7 +33,7 @@ final class Class264 {
         if (i != 15615)
             method2019((byte) 98);
         anInt3365 = 0;
-        ((Class264) this).anInt3370 = i_2_;
+        this.anInt3370 = i_2_;
         anInt3377++;
     }
 
@@ -41,32 +41,32 @@ final class Class264 {
         anInt3367++;
         if (Class147.anInt2021 < 50
                 && (class17 != null
-                && ((Class17) class17).anIntArrayArray264 != null
+                && class17.anIntArrayArray264 != null
                 && ((i ^ 0xffffffff)
-                > (((Class17) class17).anIntArrayArray264.length
+                > (class17.anIntArrayArray264.length
                 ^ 0xffffffff))
-                && ((Class17) class17).anIntArrayArray264[i] != null)) {
-            int i_4_ = ((Class17) class17).anIntArrayArray264[i][0];
+                && class17.anIntArrayArray264[i] != null)) {
+            int i_4_ = class17.anIntArrayArray264[i][0];
             int i_5_ = i_4_ >> 1426050504;
-            if ((((Class17) class17).anIntArrayArray264[i].length ^ 0xffffffff)
+            if ((class17.anIntArrayArray264[i].length ^ 0xffffffff)
                     < -2) {
                 int i_6_ = (int) (Math.random()
-                        * (double) (((Class17) class17)
+                        * (double) (class17
                         .anIntArrayArray264[i]).length);
                 if ((i_6_ ^ 0xffffffff) < -1)
-                    i_5_ = ((Class17) class17).anIntArrayArray264[i][i_6_];
+                    i_5_ = class17.anIntArrayArray264[i][i_6_];
             }
             int i_7_ = 0x7 & i_4_ >> -139443579;
             if (i_3_ > 8) {
                 int i_8_ = 256;
-                if (((Class17) class17).anIntArray236 != null
-                        && ((Class17) class17).anIntArray265 != null)
-                    i_8_ = Class299_Sub1.method2257((((Class17) class17)
+                if (class17.anIntArray236 != null
+                        && class17.anIntArray265 != null)
+                    i_8_ = Class299_Sub1.method2257((class17
                                     .anIntArray265[i]),
-                            (((Class17) class17)
+                            (class17
                                     .anIntArray236[i]),
                             (byte) -125);
-                if (((Class17) class17).aBoolean268)
+                if (class17.aBoolean268)
                     Class279.method2090(i_7_, i_8_, false, (byte) -35, 255, 0,
                             i_5_);
                 else
@@ -87,50 +87,44 @@ final class Class264 {
         if (i >= -18)
             anInt3373 = 32;
         anInt3369++;
-        return ((Class264) this).anInt3370 & 0x3fff;
+        return this.anInt3370 & 0x3fff;
     }
 
     final boolean method2020(int i, int i_9_, int i_10_, byte i_11_) {
         anInt3366++;
         int i_12_ = anInt3365;
-        if (((Class264) this).anInt3370 == i_9_ && anInt3365 == 0)
+        if (this.anInt3370 == i_9_ && anInt3365 == 0)
             return false;
         if (i_11_ > -8)
             return true;
         boolean bool;
         if ((anInt3365 ^ 0xffffffff) != -1) {
             if (anInt3365 > 0
-                    && (i_9_ ^ 0xffffffff) < (((Class264) this).anInt3370
+                    && (i_9_ ^ 0xffffffff) < (this.anInt3370
                     ^ 0xffffffff)) {
                 int i_13_ = anInt3365 * anInt3365 / (2 * i_10_);
-                int i_14_ = i_13_ + ((Class264) this).anInt3370;
-                if ((i_9_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff)
-                        && (i_14_ ^ 0xffffffff) <= (((Class264) this).anInt3370
-                        ^ 0xffffffff))
-                    bool = true;
-                else
-                    bool = false;
-            } else if (anInt3365 >= 0 || (((Class264) this).anInt3370
+                int i_14_ = i_13_ + this.anInt3370;
+                bool = (i_9_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff)
+                        && (i_14_ ^ 0xffffffff) <= (this.anInt3370
+                        ^ 0xffffffff);
+            } else if (anInt3365 >= 0 || (this.anInt3370
                     ^ 0xffffffff) >= (i_9_ ^ 0xffffffff))
                 bool = false;
             else {
                 int i_15_ = anInt3365 * anInt3365 / (2 * i_10_);
-                int i_16_ = ((Class264) this).anInt3370 - i_15_;
-                if ((i_16_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff)
-                        && i_16_ <= ((Class264) this).anInt3370)
-                    bool = true;
-                else
-                    bool = false;
+                int i_16_ = this.anInt3370 - i_15_;
+                bool = (i_16_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff)
+                        && i_16_ <= this.anInt3370;
             }
         } else {
-            if (((((Class264) this).anInt3370 ^ 0xffffffff) > (i_9_
+            if (((this.anInt3370 ^ 0xffffffff) > (i_9_
                     ^ 0xffffffff)
-                    && i_9_ <= i_10_ + ((Class264) this).anInt3370)
-                    || (i_9_ < ((Class264) this).anInt3370
+                    && i_9_ <= i_10_ + this.anInt3370)
+                    || (i_9_ < this.anInt3370
                     && ((i_9_ ^ 0xffffffff)
-                    <= (((Class264) this).anInt3370 - i_10_
+                    <= (this.anInt3370 - i_10_
                     ^ 0xffffffff)))) {
-                ((Class264) this).anInt3370 = i_9_;
+                this.anInt3370 = i_9_;
                 return false;
             }
             bool = true;
@@ -147,7 +141,7 @@ final class Class264 {
             }
         } else {
             if ((i_9_ ^ 0xffffffff)
-                    >= (((Class264) this).anInt3370 ^ 0xffffffff)) {
+                    >= (this.anInt3370 ^ 0xffffffff)) {
                 anInt3365 -= i_10_;
                 if (i != 0 && anInt3365 < -i)
                     anInt3365 = -i;
@@ -159,24 +153,24 @@ final class Class264 {
             }
             if (i_12_ != anInt3365) {
                 int i_17_ = anInt3365 * anInt3365 / (2 * i_10_);
-                if ((((Class264) this).anInt3370 ^ 0xffffffff)
+                if ((this.anInt3370 ^ 0xffffffff)
                         > (i_9_ ^ 0xffffffff)) {
-                    if ((((Class264) this).anInt3370 - -i_17_ ^ 0xffffffff)
+                    if ((this.anInt3370 - -i_17_ ^ 0xffffffff)
                             < (i_9_ ^ 0xffffffff))
                         anInt3365 = i_12_;
-                } else if ((i_9_ ^ 0xffffffff) > (((Class264) this).anInt3370
+                } else if ((i_9_ ^ 0xffffffff) > (this.anInt3370
                         ^ 0xffffffff)
-                        && i_9_ > ((Class264) this).anInt3370 - i_17_)
+                        && i_9_ > this.anInt3370 - i_17_)
                     anInt3365 = i_12_;
             }
         }
-        ((Class264) this).anInt3370 += anInt3365 + i_12_ >> -1379632319;
+        this.anInt3370 += anInt3365 + i_12_ >> -1379632319;
         return bool;
     }
 
     final void method2021(byte i) {
         anInt3364++;
-        ((Class264) this).anInt3370 &= 0x3fff;
+        this.anInt3370 &= 0x3fff;
         if (i < 77)
             method2021((byte) 36);
     }

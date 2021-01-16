@@ -9,7 +9,7 @@ final class Canvas_Sub1 extends Canvas {
     static int anInt61;
     static int anInt62;
     static int anInt63;
-    private Component aComponent64;
+    private final Component aComponent64;
     static int anInt65;
     static int anInt66;
     static int anInt67 = 0;
@@ -22,12 +22,10 @@ final class Canvas_Sub1 extends Canvas {
             anInt66++;
             int i_0_
                     = (Class20.anInt319
-                    + ((Class318_Sub1)
-                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6377);
+                    + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377);
             int i_1_
                     = (Class260.anInt3310
-                    + ((Class318_Sub1)
-                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6388);
+                    + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388);
             if (-i_0_ + Class130_Sub1.anInt5799 < -2000
                     || (-i_0_ + Class130_Sub1.anInt5799 ^ 0xffffffff) < -2001
                     || Class192.anInt2578 - i_1_ < -2000
@@ -94,7 +92,7 @@ final class Canvas_Sub1 extends Canvas {
         if (i_6_ != -364570972)
             anInt70 = -4;
         anInt68++;
-        long l = (long) (i | (!bool ? 0 : -2147483648));
+        long l = i | (!bool ? 0 : -2147483648);
         Class348_Sub13 class348_sub13
                 = ((Class348_Sub13)
                 Class348_Sub40.aClass356_7041.method3480(l, -6008));
@@ -103,30 +101,30 @@ final class Canvas_Sub1 extends Canvas {
             Class348_Sub40.aClass356_7041.method3483((byte) 109, l,
                     class348_sub13);
         }
-        if (((Class348_Sub13) class348_sub13).anIntArray6757.length <= i_7_) {
+        if (class348_sub13.anIntArray6757.length <= i_7_) {
             int[] is = new int[1 + i_7_];
             int[] is_10_ = new int[1 + i_7_];
             for (int i_11_ = 0;
                  ((i_11_ ^ 0xffffffff)
-                         > (((Class348_Sub13) class348_sub13).anIntArray6757.length
+                         > (class348_sub13.anIntArray6757.length
                          ^ 0xffffffff));
                  i_11_++) {
                 is[i_11_]
-                        = ((Class348_Sub13) class348_sub13).anIntArray6757[i_11_];
+                        = class348_sub13.anIntArray6757[i_11_];
                 is_10_[i_11_]
-                        = ((Class348_Sub13) class348_sub13).anIntArray6758[i_11_];
+                        = class348_sub13.anIntArray6758[i_11_];
             }
             for (int i_12_
-                 = ((Class348_Sub13) class348_sub13).anIntArray6757.length;
+                 = class348_sub13.anIntArray6757.length;
                  (i_7_ ^ 0xffffffff) < (i_12_ ^ 0xffffffff); i_12_++) {
                 is[i_12_] = -1;
                 is_10_[i_12_] = 0;
             }
-            ((Class348_Sub13) class348_sub13).anIntArray6757 = is;
-            ((Class348_Sub13) class348_sub13).anIntArray6758 = is_10_;
+            class348_sub13.anIntArray6757 = is;
+            class348_sub13.anIntArray6758 = is_10_;
         }
-        ((Class348_Sub13) class348_sub13).anIntArray6757[i_7_] = i_9_;
-        ((Class348_Sub13) class348_sub13).anIntArray6758[i_7_] = i_8_;
+        class348_sub13.anIntArray6757[i_7_] = i_9_;
+        class348_sub13.anIntArray6758[i_7_] = i_8_;
     }
 
     public final void paint(Graphics graphics) {
@@ -139,7 +137,7 @@ final class Canvas_Sub1 extends Canvas {
         anInt62++;
         if (i_17_ != -35)
             anInt70 = 10;
-        long l = (long) i_16_;
+        long l = i_16_;
         Class64 class64 = (Class64) Class15.aClass60_225.method583(l, 81);
         int i_18_ = 2055;
         if (class64 == null) {
@@ -147,7 +145,7 @@ final class Canvas_Sub1 extends Canvas {
                     = Class300.method2277(0, aa_Sub3.aClass45_5207, i_16_, -1);
             if (class124 == null)
                 return null;
-            if ((((Class124) class124).anInt1830 ^ 0xffffffff) > -14)
+            if ((class124.anInt1830 ^ 0xffffffff) > -14)
                 class124.method1092(2, 105);
             class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275,
                     64, 768);
@@ -229,18 +227,15 @@ final class Canvas_Sub1 extends Canvas {
         if (r_Sub2.aClass252_10488 == null) {
             if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null
                     && (Class348_Sub32.aClass45_6950.method400
-                    (-18308, (((Class348_Sub42_Sub14)
-                            Class348_Sub26.aClass348_Sub42_Sub14_6885)
+                    (-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885
                             .aString9625) + "_staticelements"))) {
                 if (Class348_Sub32.aClass45_6950.method413
-                        (100, (((Class348_Sub42_Sub14)
-                                Class348_Sub26.aClass348_Sub42_Sub14_6885)
+                        (100, (Class348_Sub26.aClass348_Sub42_Sub14_6885
                                 .aString9625) + "_staticelements"))
                     r_Sub2.aClass252_10488
                             = Class307.method2300(Class348_Sub32.aClass45_6950,
-                            ((((Class348_Sub42_Sub14)
-                                    (Class348_Sub26
-                                            .aClass348_Sub42_Sub14_6885))
+                            ((Class348_Sub26
+                                    .aClass348_Sub42_Sub14_6885
                                     .aString9625)
                                     + "_staticelements"),
                             Class130.aBoolean1900,
@@ -307,7 +302,7 @@ final class Canvas_Sub1 extends Canvas {
                 Class239_Sub12.method1772(i ^ 0x41);
                 boolean bool_25_ = false;
                 if (Class348_Sub8.aHa6654.method3639()
-                        && (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                        && (Class316.aClass348_Sub51_3959
                         .aClass239_Sub18_7259.method1800(-32350)
                         ^ 0xffffffff) == -3) {
                     for (int i_26_ = 0;
@@ -323,7 +318,7 @@ final class Canvas_Sub1 extends Canvas {
                     }
                 }
                 int i_27_;
-                if (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                if (Class316.aClass348_Sub51_3959
                         .aClass239_Sub16_7247.method1789(-32350)
                         != 1)
                     i_27_ = Class9.anIntArray168[Class348_Sub15.anInt6769];
@@ -355,24 +350,24 @@ final class Canvas_Sub1 extends Canvas {
                 Class289.method2193(true, (byte) -128);
                 Class36.method354(2);
                 Class291.anInt3720
-                        = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                        = Class316.aClass348_Sub51_3959
                         .aClass239_Sub7_7238.method1748(-32350);
                 Class296.aBoolean3767 = Class226.anInt2964 >= 96;
                 Class369.aBoolean4972
-                        = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                        = Class316.aClass348_Sub51_3959
                         .aClass239_Sub18_7259.method1800(-32350) == 2;
                 Class186.aBoolean2492
-                        = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                        = Class316.aClass348_Sub51_3959
                         .aClass239_Sub28_7230.method1845(i + -32350) == 1;
                 OutputStream_Sub2.anInt101
-                        = (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                        = (Class316.aClass348_Sub51_3959
                         .aClass239_Sub27_7261.method1840(-32350)
                         ^ 0xffffffff) == -2 ? -1 : Class167.anInt2204;
                 IOException_Sub1.aBoolean86
-                        = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                        = Class316.aClass348_Sub51_3959
                         .aClass239_Sub9_7256.method1759(-32350) == 1;
                 Class47.aBoolean845
-                        = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                        = Class316.aClass348_Sub51_3959
                         .aClass239_Sub24_7235.method1820(i ^ ~0x7e5d) == 1;
                 Class338.aClass237_Sub1_4197
                         = new Class237_Sub1(4, Class367_Sub4.anInt7319,
@@ -409,7 +404,7 @@ final class Canvas_Sub1 extends Canvas {
                         Class289.method2193(true, (byte) -125);
                     }
                     Class170.aClass237_Sub1_5067.method1679
-                            (0, 0, (((Class237) Class338.aClass237_Sub1_4197)
+                            (0, 0, (Class338.aClass237_Sub1_4197
                                     .anIntArrayArrayArray3122[0]));
                     Class170.aClass237_Sub1_5067
                             .method1685(Class348_Sub8.aHa6654, null, 21407, null);
@@ -418,7 +413,7 @@ final class Canvas_Sub1 extends Canvas {
                 Class338.aClass237_Sub1_4197.method1685
                         (Class348_Sub8.aHa6654,
                                 (!bool_25_ ? null
-                                        : (((Class237) Class170.aClass237_Sub1_5067)
+                                        : (Class170.aClass237_Sub1_5067
                                         .anIntArrayArrayArray3122)),
                                 21407, Class348_Sub45.aClass361Array7108);
                 if (Class312.anInt3931 == 0) {
@@ -473,13 +468,13 @@ final class Canvas_Sub1 extends Canvas {
                 }
                 Class348_Sub50.method3419(13022);
                 int i_29_
-                        = ((Class237_Sub1) Class338.aClass237_Sub1_4197).anInt5824;
+                        = Class338.aClass237_Sub1_4197.anInt5824;
                 if ((Class355.anInt4372 ^ 0xffffffff) > (i_29_ ^ 0xffffffff))
                     i_29_ = Class355.anInt4372;
                 if ((-1 + Class355.anInt4372 ^ 0xffffffff)
                         < (i_29_ ^ 0xffffffff))
                     i_29_ = Class355.anInt4372 - 1;
-                if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+                if ((Class316.aClass348_Sub51_3959
                         .aClass239_Sub27_7261.method1840(-32350)
                         ^ 0xffffffff)
                         == -1)
@@ -509,7 +504,7 @@ final class Canvas_Sub1 extends Canvas {
                             (Class348_Sub23_Sub2
                                     .aClass77_9029),
                             i ^ ~0x55);
-                    ((Class348_Sub47) class348_sub47)
+                    class348_sub47
                             .aClass348_Sub49_Sub2_7116
                             .method3391((byte) 108, 1057001181);
                     Class348_Sub42_Sub14.method3243(-122, class348_sub47);

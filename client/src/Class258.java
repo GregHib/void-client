@@ -26,10 +26,10 @@ abstract class Class258 implements Interface9 {
     final boolean method1950(int i) {
         anInt4852++;
         int i_0_ = 22 / ((i - -31) / 50);
-        if (((ha_Sub2) ((Class258) this).aHa_Sub2_4851).aBoolean7820) {
+        if (this.aHa_Sub2_4851.aBoolean7820) {
             int i_1_ = method1951(-120);
-            ((Class258) this).aHa_Sub2_4851.method3771((byte) -102, this);
-            OpenGL.glGenerateMipmapEXT(((Class258) this).anInt4849);
+            this.aHa_Sub2_4851.method3771((byte) -102, this);
+            OpenGL.glGenerateMipmapEXT(this.anInt4849);
             aBoolean4860 = true;
             method1956(true);
             method1954(i_1_, 121);
@@ -42,8 +42,8 @@ abstract class Class258 implements Interface9 {
         anInt4861++;
         if (i >= -96)
             anInt4847 = -92;
-        int i_2_ = (((Class258) this).aHa_Sub2_4851
-                .method3798(((Class258) this).anInt4858, 2)
+        int i_2_ = (this.aHa_Sub2_4851
+                .method3798(this.anInt4858, 2)
                 * anInt4847);
         if (aBoolean4860)
             return i_2_ * 4 / 3;
@@ -52,30 +52,30 @@ abstract class Class258 implements Interface9 {
 
     final void method1952(int i) {
         anInt4863++;
-        if (((Class258) this).anInt4859 > 0) {
-            ((Class258) this).aHa_Sub2_4851.method3737((((Class258) this)
+        if (this.anInt4859 > 0) {
+            this.aHa_Sub2_4851.method3737((this
                             .anInt4859),
                     (byte) 121,
                     method1951(i + 19838));
-            ((Class258) this).anInt4859 = 0;
+            this.anInt4859 = 0;
         }
         if (i != -19948)
-            ((Class258) this).anInt4859 = -40;
+            this.anInt4859 = -40;
     }
 
     final int method1953(int i) {
         anInt4853++;
         if (i < 29)
             method1956(true);
-        return ((Class258) this).anInt4859;
+        return this.anInt4859;
     }
 
     private final void method1954(int i, int i_3_) {
         anInt4854++;
         if (i_3_ < 17)
             aBoolean4856 = true;
-        ((ha_Sub2) ((Class258) this).aHa_Sub2_4851).anInt7748 -= i;
-        ((ha_Sub2) ((Class258) this).aHa_Sub2_4851).anInt7748
+        this.aHa_Sub2_4851.anInt7748 -= i;
+        this.aHa_Sub2_4851.anInt7748
                 += method1951(-106);
     }
 
@@ -94,16 +94,16 @@ abstract class Class258 implements Interface9 {
     private final void method1956(boolean bool) {
         anInt4857++;
         if (bool != true)
-            ((Class258) this).anInt4849 = -74;
-        ((Class258) this).aHa_Sub2_4851.method3771((byte) -87, this);
+            this.anInt4849 = -74;
+        this.aHa_Sub2_4851.method3771((byte) -87, this);
         if (!aBoolean4856) {
-            OpenGL.glTexParameteri(((Class258) this).anInt4849, 10241,
+            OpenGL.glTexParameteri(this.anInt4849, 10241,
                     aBoolean4860 ? 9984 : 9728);
-            OpenGL.glTexParameteri(((Class258) this).anInt4849, 10240, 9728);
+            OpenGL.glTexParameteri(this.anInt4849, 10240, 9728);
         } else {
-            OpenGL.glTexParameteri(((Class258) this).anInt4849, 10241,
+            OpenGL.glTexParameteri(this.anInt4849, 10241,
                     aBoolean4860 ? 9987 : 9729);
-            OpenGL.glTexParameteri(((Class258) this).anInt4849, 10240, 9729);
+            OpenGL.glTexParameteri(this.anInt4849, 10240, 9729);
         }
     }
 
@@ -125,12 +125,12 @@ abstract class Class258 implements Interface9 {
 
     Class258(ha_Sub2 var_ha_Sub2, int i, int i_5_, int i_6_, boolean bool) {
         aBoolean4860 = bool;
-        ((Class258) this).anInt4849 = i;
+        this.anInt4849 = i;
         anInt4847 = i_6_;
-        ((Class258) this).anInt4858 = i_5_;
-        ((Class258) this).aHa_Sub2_4851 = var_ha_Sub2;
+        this.anInt4858 = i_5_;
+        this.aHa_Sub2_4851 = var_ha_Sub2;
         OpenGL.glGenTextures(1, Class286_Sub5.anIntArray6260, 0);
-        ((Class258) this).anInt4859 = Class286_Sub5.anIntArray6260[0];
+        this.anInt4859 = Class286_Sub5.anIntArray6260[0];
         method1954(0, 94);
     }
 

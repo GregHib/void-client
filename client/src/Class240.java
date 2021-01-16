@@ -13,10 +13,10 @@ final class Class240 implements Interface1 {
     static Class105[] aClass105Array4679;
     static int anInt4680;
     static int anInt4681;
-    private Class339 aClass339_4682;
+    private final Class339 aClass339_4682;
     static long aLong4683;
     static Class324 aClass324_4684;
-    private Class125 aClass125_4685;
+    private final Class125 aClass125_4685;
     static int anInt4686;
 
     public final boolean method8(byte i) {
@@ -30,26 +30,26 @@ final class Class240 implements Interface1 {
                 = Class147.aClass357ArrayArrayArray2029[i][i_1_][i_2_];
         if (class357 != null) {
             Class318_Sub1_Sub5 class318_sub1_sub5
-                    = ((Class357) class357).aClass318_Sub1_Sub5_4395;
+                    = class357.aClass318_Sub1_Sub5_4395;
             Class318_Sub1_Sub5 class318_sub1_sub5_4_
-                    = ((Class357) class357).aClass318_Sub1_Sub5_4407;
+                    = class357.aClass318_Sub1_Sub5_4407;
             if (class318_sub1_sub5 != null) {
-                ((Class318_Sub1_Sub5) class318_sub1_sub5).aShort8781
-                        = (short) ((((Class318_Sub1_Sub5) class318_sub1_sub5)
+                class318_sub1_sub5.aShort8781
+                        = (short) ((class318_sub1_sub5
                         .aShort8781)
                         * i_3_ / (16 << Class362.anInt4459 - 7));
-                ((Class318_Sub1_Sub5) class318_sub1_sub5).aShort8769
-                        = (short) ((((Class318_Sub1_Sub5) class318_sub1_sub5)
+                class318_sub1_sub5.aShort8769
+                        = (short) ((class318_sub1_sub5
                         .aShort8769)
                         * i_3_ / (16 << Class362.anInt4459 - 7));
             }
             if (class318_sub1_sub5_4_ != null) {
-                ((Class318_Sub1_Sub5) class318_sub1_sub5_4_).aShort8781
-                        = (short) ((((Class318_Sub1_Sub5) class318_sub1_sub5_4_)
+                class318_sub1_sub5_4_.aShort8781
+                        = (short) ((class318_sub1_sub5_4_
                         .aShort8781)
                         * i_3_ / (16 << Class362.anInt4459 - 7));
-                ((Class318_Sub1_Sub5) class318_sub1_sub5_4_).aShort8769
-                        = (short) ((((Class318_Sub1_Sub5) class318_sub1_sub5_4_)
+                class318_sub1_sub5_4_.aShort8769
+                        = (short) ((class318_sub1_sub5_4_
                         .aShort8769)
                         * i_3_ / (16 << Class362.anInt4459 - 7));
             }
@@ -73,9 +73,9 @@ final class Class240 implements Interface1 {
         if (class348_sub13 == null)
             return 0;
         if (i_6_ < 0
-                || i_6_ >= ((Class348_Sub13) class348_sub13).anIntArray6758.length)
+                || i_6_ >= class348_sub13.anIntArray6758.length)
             return 0;
-        return ((Class348_Sub13) class348_sub13).anIntArray6758[i_6_];
+        return class348_sub13.anIntArray6758[i_6_];
     }
 
     public final void method7(int i) {
@@ -87,34 +87,34 @@ final class Class240 implements Interface1 {
         anInt4676++;
         Class295 class295
                 = aClass339_4682.method2667(false,
-                ((Class125) aClass125_4685).anInt4918);
+                aClass125_4685.anInt4918);
         if (class295 != null) {
-            int i_7_ = ((((Class125) aClass125_4685).aClass221_4922.method1607
+            int i_7_ = ((aClass125_4685.aClass221_4922.method1607
                     (Class92.anInt1524,
-                            ((Class125) aClass125_4685).anInt4929, (byte) -118))
-                    - -((Class125) aClass125_4685).anInt4924);
-            int i_8_ = ((((Class125) aClass125_4685).aClass341_4925.method2679
+                            aClass125_4685.anInt4929, (byte) -118))
+                    - -aClass125_4685.anInt4924);
+            int i_8_ = ((aClass125_4685.aClass341_4925.method2679
                     (ha_Sub2.anInt7666,
-                            ((Class125) aClass125_4685).anInt4923, i ^ ~0x60b))
-                    - -((Class125) aClass125_4685).anInt4920);
-            if (((Class125) aClass125_4685).aBoolean4914)
+                            aClass125_4685.anInt4923, i ^ ~0x60b))
+                    - -aClass125_4685.anInt4920);
+            if (aClass125_4685.aBoolean4914)
                 Class348_Sub8.aHa6654.method3628
-                        (i_7_, i_8_, ((Class125) aClass125_4685).anInt4929,
-                                ((Class125) aClass125_4685).anInt4923,
-                                ((Class125) aClass125_4685).anInt4917, 0);
-            i_8_ += method1855(5, ((Class295) class295).aString3756, true,
+                        (i_7_, i_8_, aClass125_4685.anInt4929,
+                                aClass125_4685.anInt4923,
+                                aClass125_4685.anInt4917, 0);
+            i_8_ += method1855(5, class295.aString3756, true,
                     Class262.aClass324_3326, i_7_, i_8_) * 12;
             i_8_ += 8;
-            if (((Class125) aClass125_4685).aBoolean4914)
+            if (aClass125_4685.aBoolean4914)
                 Class348_Sub8.aHa6654.method3709
                         (i_7_, i_8_,
-                                i_7_ + ((Class125) aClass125_4685).anInt4929 + -1, i_8_,
-                                ((Class125) aClass125_4685).anInt4917, 0);
-            i_8_ = ++i_8_ + method1855(5, ((Class295) class295).aString3754,
+                                i_7_ + aClass125_4685.anInt4929 + -1, i_8_,
+                                aClass125_4685.anInt4917, 0);
+            i_8_ = ++i_8_ + method1855(5, class295.aString3754,
                     true, Class262.aClass324_3326, i_7_,
                     i_8_) * 12;
             i_8_ += 5;
-            i_8_ += method1855(5, ((Class295) class295).aString3758, true,
+            i_8_ += method1855(5, class295.aString3758, true,
                     Class262.aClass324_3326, i_7_, i_8_) * 12;
         }
         if (i != -49)
@@ -128,11 +128,11 @@ final class Class240 implements Interface1 {
                 return -62;
             anInt4677++;
             return (class324.method2584
-                    (null, 0, ((Class125) aClass125_4685).anInt4928, null,
-                            ((Class125) aClass125_4685).anInt4913, 0,
-                            -(i * 2) + ((Class125) aClass125_4685).anInt4923, null,
+                    (null, 0, aClass125_4685.anInt4928, null,
+                            aClass125_4685.anInt4913, 0,
+                            -(i * 2) + aClass125_4685.anInt4923, null,
                             i + i_10_, 0, 0,
-                            -(i * 2) + ((Class125) aClass125_4685).anInt4929,
+                            -(i * 2) + aClass125_4685.anInt4929,
                             i_9_ + i, false, 0, string));
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

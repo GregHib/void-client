@@ -5,9 +5,9 @@
 final class Class370 {
     int anInt4514;
     private float[][] aFloatArrayArray4515;
-    private int[] anIntArray4516;
+    private final int[] anIntArray4516;
     private int[] anIntArray4517;
-    private int anInt4518;
+    private final int anInt4518;
     private int[] anIntArray4519;
 
     private final void method3579() {
@@ -77,7 +77,7 @@ final class Class370 {
 
     private static final int method3580(int i, int i_18_) {
         int i_19_;
-        for (i_19_ = (int) Math.pow((double) i, 1.0 / (double) i_18_) + 1;
+        for (i_19_ = (int) Math.pow(i, 1.0 / (double) i_18_) + 1;
              Class348_Sub49.method3331(i_18_, (byte) 64, i_19_) > i; i_19_--) {
             /* empty */
         }
@@ -100,7 +100,7 @@ final class Class370 {
 
     Class370() {
         Class348_Sub10.method2789(24);
-        ((Class370) this).anInt4514 = Class348_Sub10.method2789(16);
+        this.anInt4514 = Class348_Sub10.method2789(16);
         anInt4518 = Class348_Sub10.method2789(24);
         anIntArray4516 = new int[anInt4518];
         boolean bool = Class348_Sub10.method2788() != 0;
@@ -134,19 +134,19 @@ final class Class370 {
             boolean bool_26_ = Class348_Sub10.method2788() != 0;
             int i_27_;
             if (i == 1)
-                i_27_ = method3580(anInt4518, ((Class370) this).anInt4514);
+                i_27_ = method3580(anInt4518, this.anInt4514);
             else
-                i_27_ = anInt4518 * ((Class370) this).anInt4514;
+                i_27_ = anInt4518 * this.anInt4514;
             anIntArray4517 = new int[i_27_];
             for (int i_28_ = 0; i_28_ < i_27_; i_28_++)
                 anIntArray4517[i_28_] = Class348_Sub10.method2789(i_25_);
             aFloatArrayArray4515
-                    = new float[anInt4518][((Class370) this).anInt4514];
+                    = new float[anInt4518][this.anInt4514];
             if (i == 1) {
                 for (int i_29_ = 0; i_29_ < anInt4518; i_29_++) {
                     float f_30_ = 0.0F;
                     int i_31_ = 1;
-                    for (int i_32_ = 0; i_32_ < ((Class370) this).anInt4514;
+                    for (int i_32_ = 0; i_32_ < this.anInt4514;
                          i_32_++) {
                         int i_33_ = i_29_ / i_31_ % i_27_;
                         float f_34_ = ((float) anIntArray4517[i_33_] * f_24_
@@ -160,8 +160,8 @@ final class Class370 {
             } else {
                 for (int i_35_ = 0; i_35_ < anInt4518; i_35_++) {
                     float f_36_ = 0.0F;
-                    int i_37_ = i_35_ * ((Class370) this).anInt4514;
-                    for (int i_38_ = 0; i_38_ < ((Class370) this).anInt4514;
+                    int i_37_ = i_35_ * this.anInt4514;
+                    for (int i_38_ = 0; i_38_ < this.anInt4514;
                          i_38_++) {
                         float f_39_ = ((float) anIntArray4517[i_37_] * f_24_
                                 + f + f_36_);

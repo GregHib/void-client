@@ -30,16 +30,14 @@ final class Class231 {
         if (i_2_ != 14634)
             method1638(-102, null, 28);
         anInt2994++;
-        if (i < 12 || i > 17)
-            return false;
-        return true;
+        return i >= 12 && i <= 17;
     }
 
     final int method1640(int i) {
         if (i != 0)
             return -76;
         anInt2991++;
-        return ((Class231) this).anInt2995;
+        return this.anInt2995;
     }
 
     public static void method1641(byte i) {
@@ -82,7 +80,7 @@ final class Class231 {
                     int i_9_ = (31 + i_4_ + Class348_Sub42_Sub5.anInt9532
                             + i_8_ * 16);
                     i_8_++;
-                    if (((((Class348_Sub42_Sub13) class348_sub42_sub13)
+                    if (((class348_sub42_sub13
                             .anInt9615)
                             ^ 0xffffffff)
                             == -2)
@@ -90,10 +88,8 @@ final class Class231 {
                                 (i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_9_,
                                         var_ha,
                                         ((Class348_Sub42_Sub12)
-                                                (((Class348_Sub42)
-                                                        ((Class107)
-                                                                (((Class348_Sub42_Sub13) class348_sub42_sub13)
-                                                                        .aClass107_9621)).aClass348_Sub42_1647)
+                                                (class348_sub42_sub13
+                                                        .aClass107_9621.aClass348_Sub42_1647
                                                         .aClass348_Sub42_7063)),
                                         Class63.anInt1117, i_7_, -1, (byte) 124,
                                         Class237_Sub1.anInt5819,
@@ -114,20 +110,17 @@ final class Class231 {
                             -16777216);
                     i_8_ = 0;
                     Class262.aClass324_3326.method2576
-                            (((Class348_Sub42_Sub13)
-                                            Class242.aClass348_Sub42_Sub13_3152).aString9617,
+                            (Class242.aClass348_Sub42_Sub13_3152.aString9617,
                                     i_5_, Class373.anInt4534 - -14,
                                     3 + Class50_Sub3.anInt5252, -1, -126);
                     for (Class348_Sub42_Sub12 class348_sub42_sub12
                          = ((Class348_Sub42_Sub12)
-                            ((Class348_Sub42_Sub13)
-                                    Class242.aClass348_Sub42_Sub13_3152)
+                            Class242.aClass348_Sub42_Sub13_3152
                                     .aClass107_9621.method1011(-84));
                          class348_sub42_sub12 != null;
                          class348_sub42_sub12
                                  = ((Class348_Sub42_Sub12)
-                                 ((Class348_Sub42_Sub13)
-                                         Class242.aClass348_Sub42_Sub13_3152)
+                                 Class242.aClass348_Sub42_Sub13_3152
                                          .aClass107_9621.method1003((byte) 73))) {
                         int i_10_ = 31 + (Class373.anInt4534 + i_8_ * 16);
                         i_8_++;
@@ -173,6 +166,6 @@ final class Class231 {
     }
 
     Class231(String string, int i) {
-        ((Class231) this).anInt2995 = i;
+        this.anInt2995 = i;
     }
 }

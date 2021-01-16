@@ -12,14 +12,14 @@ class Class127 implements Interface1 {
     static int anInt4658;
     Class288 aClass288_4659;
     static int anInt4660;
-    private Class45 aClass45_4661;
+    private final Class45 aClass45_4661;
     static int anInt4662;
 
     public final boolean method8(byte i) {
         int i_0_ = -79 / ((i - 25) / 52);
         anInt4658++;
-        return aClass45_4661.method421(false, (((Class288) (((Class127) this)
-                .aClass288_4659))
+        return aClass45_4661.method421(false, (this
+                .aClass288_4659
                 .anInt4958));
     }
 
@@ -27,19 +27,19 @@ class Class127 implements Interface1 {
         anInt4653++;
         if (bool) {
             int i_1_
-                    = ((((Class288) ((Class127) this).aClass288_4659)
+                    = ((this.aClass288_4659
                     .aClass221_4955.method1607
                             (Class92.anInt1524,
-                                    ((Class127) this).aClass105_4655.method966(),
+                                    this.aClass105_4655.method966(),
                                     (byte) -117))
-                    + ((Class288) ((Class127) this).aClass288_4659).anInt4950);
+                    + this.aClass288_4659.anInt4950);
             int i_2_
-                    = ((((Class288) ((Class127) this).aClass288_4659)
+                    = ((this.aClass288_4659
                     .aClass341_4952.method2679
                             (ha_Sub2.anInt7666,
-                                    ((Class127) this).aClass105_4655.method980(), 1595))
-                    - -((Class288) ((Class127) this).aClass288_4659).anInt4951);
-            ((Class127) this).aClass105_4655.method974(i_1_, i_2_);
+                                    this.aClass105_4655.method980(), 1595))
+                    - -this.aClass288_4659.anInt4951);
+            this.aClass105_4655.method974(i_1_, i_2_);
         }
         if (i != -49)
             anInt4656 = 26;
@@ -76,9 +76,8 @@ class Class127 implements Interface1 {
     public final void method7(int i) {
         if (i != 10286)
             anInt4656 = -123;
-        ((Class127) this).aClass105_4655
-                = Class369_Sub3_Sub1.method3577((((Class288)
-                        ((Class127) this).aClass288_4659)
+        this.aClass105_4655
+                = Class369_Sub3_Sub1.method3577((this.aClass288_4659
                         .anInt4958),
                 (byte) -60, aClass45_4661);
         anInt4660++;
@@ -87,7 +86,7 @@ class Class127 implements Interface1 {
     Class127(Class45 class45, Class288 class288) {
         try {
             aClass45_4661 = class45;
-            ((Class127) this).aClass288_4659 = class288;
+            this.aClass288_4659 = class288;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("nl.<init>("

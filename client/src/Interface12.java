@@ -3,5 +3,5 @@
  */
 
 interface Interface12 {
-    public Class223 method51(byte i);
+    Class223 method51(byte i);
 }

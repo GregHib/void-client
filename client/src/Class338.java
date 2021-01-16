@@ -27,9 +27,9 @@ final class Class338 {
             method2661(31, -43, 32, true, -110);
         anInt4189++;
         Class348_Sub41 class348_sub41 = new Class348_Sub41();
-        ((Class348_Sub41) class348_sub41).anInt7050 = i;
-        ((Class348_Sub41) class348_sub41).anInt7053 = i_1_;
-        Class125.aClass356_4915.method3483((byte) 109, (long) i_0_,
+        class348_sub41.anInt7050 = i;
+        class348_sub41.anInt7053 = i_1_;
+        Class125.aClass356_4915.method3483((byte) 109, i_0_,
                 class348_sub41);
         Class348_Sub7.method2772(i, (byte) 110);
         Class46 class46 = Class324.method2570(i_2_ + 1512932718, i_0_);
@@ -99,27 +99,27 @@ final class Class338 {
     Class338(int i, int i_15_, int i_16_, int i_17_, int i_18_, int i_19_,
              int i_20_, int i_21_, int i_22_, int i_23_, int i_24_, int i_25_,
              int i_26_, int i_27_) {
-        ((Class338) this).aByte4192 = (byte) i;
-        ((Class338) this).aByte4181 = (byte) i_15_;
-        ((Class338) this).anIntArray4187 = new int[4];
-        ((Class338) this).anIntArray4187[0] = i_16_;
-        ((Class338) this).anIntArray4187[1] = i_17_;
-        ((Class338) this).anIntArray4187[3] = i_19_;
-        ((Class338) this).anIntArray4187[2] = i_18_;
-        ((Class338) this).anIntArray4191[0] = i_20_;
-        ((Class338) this).anIntArray4191[2] = i_22_;
-        ((Class338) this).anIntArray4191[3] = i_23_;
-        ((Class338) this).anIntArray4191[1] = i_21_;
-        ((Class338) this).anIntArray4184[1] = i_25_;
-        ((Class338) this).aShort4185 = (short) (i_16_ >> Class362.anInt4459);
-        ((Class338) this).anIntArray4184[3] = i_27_;
-        ((Class338) this).anIntArray4184[0] = i_24_;
-        ((Class338) this).anIntArray4184[2] = i_26_;
-        ((Class338) this).aShort4182 = (short) (i_18_ >> Class362.anInt4459);
-        ((Class338) this).aShort4193 = (short) (i_24_ >> Class362.anInt4459);
-        ((Class338) this).aShort4190 = (short) (i_26_ >> Class362.anInt4459);
-        ((Class338) this).aShortArray4188 = new short[4];
-        ((Class338) this).aShortArray4183 = new short[4];
-        ((Class338) this).aShortArray4194 = new short[4];
+        this.aByte4192 = (byte) i;
+        this.aByte4181 = (byte) i_15_;
+        this.anIntArray4187 = new int[4];
+        this.anIntArray4187[0] = i_16_;
+        this.anIntArray4187[1] = i_17_;
+        this.anIntArray4187[3] = i_19_;
+        this.anIntArray4187[2] = i_18_;
+        this.anIntArray4191[0] = i_20_;
+        this.anIntArray4191[2] = i_22_;
+        this.anIntArray4191[3] = i_23_;
+        this.anIntArray4191[1] = i_21_;
+        this.anIntArray4184[1] = i_25_;
+        this.aShort4185 = (short) (i_16_ >> Class362.anInt4459);
+        this.anIntArray4184[3] = i_27_;
+        this.anIntArray4184[0] = i_24_;
+        this.anIntArray4184[2] = i_26_;
+        this.aShort4182 = (short) (i_18_ >> Class362.anInt4459);
+        this.aShort4193 = (short) (i_24_ >> Class362.anInt4459);
+        this.aShort4190 = (short) (i_26_ >> Class362.anInt4459);
+        this.aShortArray4188 = new short[4];
+        this.aShortArray4183 = new short[4];
+        this.aShortArray4194 = new short[4];
     }
 }

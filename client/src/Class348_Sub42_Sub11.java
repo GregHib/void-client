@@ -37,17 +37,17 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
 
     final int method3222(byte i, char c) {
         anInt9585++;
-        if (((Class348_Sub42_Sub11) this).anIntArray9580 == null)
+        if (this.anIntArray9580 == null)
             return -1;
         int i_2_ = 0;
         if (i > -97)
             method3221(126, null);
-        for (/**/; ((Class348_Sub42_Sub11) this).anIntArray9580.length > i_2_;
+        for (/**/; this.anIntArray9580.length > i_2_;
                  i_2_++) {
             if ((c ^ 0xffffffff)
-                    == (((Class348_Sub42_Sub11) this).aCharArray9582[i_2_]
+                    == (this.aCharArray9582[i_2_]
                     ^ 0xffffffff))
-                return ((Class348_Sub42_Sub11) this).anIntArray9580[i_2_];
+                return this.anIntArray9580[i_2_];
         }
         return -1;
     }
@@ -63,26 +63,26 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
     }
 
     final void method3224(byte i) {
-        if (((Class348_Sub42_Sub11) this).anIntArray9580 != null) {
+        if (this.anIntArray9580 != null) {
             for (int i_3_ = 0;
                  ((i_3_ ^ 0xffffffff)
-                         > (((Class348_Sub42_Sub11) this).anIntArray9580.length
+                         > (this.anIntArray9580.length
                          ^ 0xffffffff));
                  i_3_++)
-                ((Class348_Sub42_Sub11) this).anIntArray9580[i_3_]
-                        = Class273.method2057((((Class348_Sub42_Sub11) this)
+                this.anIntArray9580[i_3_]
+                        = Class273.method2057((this
                                 .anIntArray9580[i_3_]),
                         32768);
         }
         anInt9579++;
-        if (((Class348_Sub42_Sub11) this).anIntArray9592 != null) {
+        if (this.anIntArray9592 != null) {
             for (int i_4_ = 0;
                  ((i_4_ ^ 0xffffffff)
-                         > (((Class348_Sub42_Sub11) this).anIntArray9592.length
+                         > (this.anIntArray9592.length
                          ^ 0xffffffff));
                  i_4_++)
-                ((Class348_Sub42_Sub11) this).anIntArray9592[i_4_]
-                        = Class273.method2057((((Class348_Sub42_Sub11) this)
+                this.anIntArray9592[i_4_]
+                        = Class273.method2057((this
                                 .anIntArray9592[i_4_]),
                         32768);
         }
@@ -92,7 +92,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
 
     static final void method3225(int i) {
         anInt9589++;
-        if (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if (Class316.aClass348_Sub51_3959
                 .aClass239_Sub14_7264.method1778(-32350)
                 == 2) {
             byte i_5_ = (byte) (0xff & -4 + Class239_Sub15.anInt6006);
@@ -110,11 +110,9 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                     Class64.anIntArray1127[i_9_] = 1000000;
                     Class56.anIntArray1045[i_9_] = 0;
                 }
-                int i_10_ = (((Class318_Sub1)
-                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                int i_10_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                         .anInt6377);
-                int i_11_ = (((Class318_Sub1)
-                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                int i_11_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                         .anInt6388);
                 if (i >= 100) {
                     if ((Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff) == -2
@@ -276,13 +274,13 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
 
     final int method3226(char c, int i) {
         anInt9584++;
-        if (((Class348_Sub42_Sub11) this).anIntArray9592 == null)
+        if (this.anIntArray9592 == null)
             return -1;
         for (int i_23_ = 0;
-             ((Class348_Sub42_Sub11) this).anIntArray9592.length > i_23_;
+             this.anIntArray9592.length > i_23_;
              i_23_++) {
-            if (((Class348_Sub42_Sub11) this).aCharArray9588[i_23_] == c)
-                return ((Class348_Sub42_Sub11) this).anIntArray9592[i_23_];
+            if (this.aCharArray9588[i_23_] == c)
+                return this.anIntArray9592[i_23_];
         }
         if (i != 57249897)
             method3221(-16, null);
@@ -294,33 +292,33 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
         if ((i_24_ ^ 0xffffffff) != -2) {
             if ((i_24_ ^ 0xffffffff) == -3) {
                 int i_25_ = class348_sub49.method3387(255);
-                ((Class348_Sub42_Sub11) this).anIntArray9592 = new int[i_25_];
-                ((Class348_Sub42_Sub11) this).aCharArray9588 = new char[i_25_];
+                this.anIntArray9592 = new int[i_25_];
+                this.aCharArray9588 = new char[i_25_];
                 for (int i_26_ = 0;
                      (i_25_ ^ 0xffffffff) < (i_26_ ^ 0xffffffff); i_26_++) {
-                    ((Class348_Sub42_Sub11) this).anIntArray9592[i_26_]
+                    this.anIntArray9592[i_26_]
                             = class348_sub49.method3330(842397944);
                     byte i_27_ = class348_sub49.method3388(-121);
-                    ((Class348_Sub42_Sub11) this).aCharArray9588[i_26_]
+                    this.aCharArray9588[i_26_]
                             = ((i_27_ ^ 0xffffffff) != -1
                             ? Class50_Sub1.method462(i_27_, -128) : '\0');
                 }
             } else if ((i_24_ ^ 0xffffffff) == -4) {
                 int i_28_ = class348_sub49.method3387(255);
-                ((Class348_Sub42_Sub11) this).aCharArray9582 = new char[i_28_];
-                ((Class348_Sub42_Sub11) this).anIntArray9580 = new int[i_28_];
+                this.aCharArray9582 = new char[i_28_];
+                this.anIntArray9580 = new int[i_28_];
                 for (int i_29_ = 0;
                      (i_29_ ^ 0xffffffff) > (i_28_ ^ 0xffffffff); i_29_++) {
-                    ((Class348_Sub42_Sub11) this).anIntArray9580[i_29_]
+                    this.anIntArray9580[i_29_]
                             = class348_sub49.method3330(842397944);
                     byte i_30_ = class348_sub49.method3388(-115);
-                    ((Class348_Sub42_Sub11) this).aCharArray9582[i_29_]
+                    this.aCharArray9582[i_29_]
                             = (i_30_ != 0 ? Class50_Sub1.method462(i_30_, -128)
                             : '\0');
                 }
             }
         } else
-            ((Class348_Sub42_Sub11) this).aString9587
+            this.aString9587
                     = class348_sub49.method3377((byte) 100);
         if (i != -5847)
             anInt9586 = 12;

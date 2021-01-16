@@ -19,13 +19,13 @@ abstract class Class55 {
     static int anInt984 = 4;
     static int anInt985;
     static int anInt986;
-    private OggSyncState anOggSyncState987;
+    private final OggSyncState anOggSyncState987;
     static int anInt988;
     static int anInt989;
     static int anInt990;
     private boolean aBoolean991;
     static int anInt992;
-    private OggPacket anOggPacket993;
+    private final OggPacket anOggPacket993;
     static int anInt994;
     private byte[] aByteArray995;
     static int anInt996;
@@ -43,7 +43,7 @@ abstract class Class55 {
     private Class348_Sub23_Sub1 aClass348_Sub23_Sub1_1008;
     private String aString1009;
     static float aFloat1010;
-    private Class356 aClass356_1011;
+    private final Class356 aClass356_1011;
 
     private final void method504(int i) {
         if (i != 1999)
@@ -56,11 +56,11 @@ abstract class Class55 {
             if (class348_sub23 instanceof Class348_Sub23_Sub4) {
                 Class348_Sub23_Sub4 class348_sub23_sub4
                         = (Class348_Sub23_Sub4) class348_sub23;
-                while (((Class348_Sub23) class348_sub23_sub4).anInt6868 <= 8
+                while (class348_sub23_sub4.anInt6868 <= 8
                         || (method519(i ^ 0x7b2)
                         > (double) class348_sub23_sub4
                         .method2984((byte) 97))) {
-                    if (((Class348_Sub23) class348_sub23_sub4)
+                    if (class348_sub23_sub4
                             .anOggStreamState6869.packetOut(anOggPacket993)
                             != 1)
                         break;
@@ -73,7 +73,7 @@ abstract class Class55 {
 
     private final void method505(byte i) throws IOException {
         anInt996++;
-        while (((Class348_Sub23) aClass348_Sub23_Sub2_1001)
+        while (aClass348_Sub23_Sub2_1001
                 .anOggStreamState6869.packetOut(anOggPacket993)
                 != 1) {
             Class348_Sub23 class348_sub23 = method521(1);
@@ -103,19 +103,15 @@ abstract class Class55 {
             method511(-113);
         anInt986++;
         if (aClass348_Sub23_Sub1_1008 != null) {
-            if (aClass348_Sub23_Sub2_1001.method2976(-1)
-                    && !(method519(126)
-                    > aClass348_Sub23_Sub2_1001.method2980((byte) 100)))
-                return false;
-            return true;
-        }
-        double d = (double) aClass348_Sub23_Sub2_1001.method2977(0);
-        if (d != 0.0 && !((double) Class62.method599(-74)
-                >= 1000.0 / d + (double) aClass348_Sub23_Sub2_1001
-                .method2979(30)))
-            return false;
-        return true;
-    }
+			return !aClass348_Sub23_Sub2_1001.method2976(-1)
+					|| method519(126)
+					> aClass348_Sub23_Sub2_1001.method2980((byte) 100);
+		}
+        double d = aClass348_Sub23_Sub2_1001.method2977(0);
+		return d == 0.0 || (double) Class62.method599(-74)
+				>= 1000.0 / d + (double) aClass348_Sub23_Sub2_1001
+				.method2979(30);
+	}
 
     final void method508(int i) {
         anInt989++;
@@ -128,7 +124,7 @@ abstract class Class55 {
                      class348_sub23
                              = (Class348_Sub23) aClass356_1011.method3482(i ^ 0x1)) {
                 class348_sub23.method2961((byte) 13);
-                ((Class348_Sub23) class348_sub23).anOggStreamState6869.a();
+                class348_sub23.anOggStreamState6869.a();
             }
             anOggPacket993.a();
             anOggPage981.a();
@@ -174,11 +170,9 @@ abstract class Class55 {
         int i_0_ = 65 / ((i - -74) / 47);
         if (!aBoolean1007 && !aBoolean991)
             return false;
-        if (aClass348_Sub23_Sub1_1008 != null
-                && aClass348_Sub23_Sub1_1008.method2969(-11020) > 0)
-            return false;
-        return true;
-    }
+		return aClass348_Sub23_Sub1_1008 == null
+				|| aClass348_Sub23_Sub1_1008.method2969(-11020) <= 0;
+	}
 
     private final void method511(int i) {
         anInt1003++;
@@ -188,7 +182,7 @@ abstract class Class55 {
              class348_sub23
                      = (Class348_Sub23) aClass356_1011.method3482(i + 2)) {
             if (class348_sub23 != aClass348_Sub23_Sub2_1001) {
-                while (((Class348_Sub23) class348_sub23)
+                while (class348_sub23
                         .anOggStreamState6869.packetOut()
                         == 1)
                     class348_sub23.method2963(anOggPacket993, i ^ ~0x4001);
@@ -199,7 +193,7 @@ abstract class Class55 {
                 method518(null, (byte) 10);
             for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -11 && method507(false);
                  i_1_++) {
-                if ((((Class348_Sub23) aClass348_Sub23_Sub2_1001)
+                if ((aClass348_Sub23_Sub2_1001
                         .anOggStreamState6869.packetOut()
                         ^ 0xffffffff)
                         != -2) {
@@ -316,12 +310,12 @@ abstract class Class55 {
                         class348_sub23
                                 = ((Class348_Sub23)
                                 (aClass356_1011.method3480
-                                        ((long) anOggPage981.getSerialNumber(),
+                                        (anOggPage981.getSerialNumber(),
                                                 -6008)));
                     if (aClass348_Sub23_Sub1_1008 == class348_sub23) {
                         if (aClass348_Sub23_Sub1_1008.method2969(-11020) >= 50)
                             break;
-                        while ((((Class348_Sub23) aClass348_Sub23_Sub1_1008)
+                        while ((aClass348_Sub23_Sub1_1008
                                 .anOggStreamState6869
                                 .packetOut(anOggPacket993)
                                 ^ 0xffffffff)
@@ -362,12 +356,12 @@ abstract class Class55 {
                                 break;
                             }
                         } else {
-                            while ((((Class348_Sub23) class348_sub23)
+                            while ((class348_sub23
                                     .anOggStreamState6869
                                     .packetOut(anOggPacket993)
                                     ^ 0xffffffff)
                                     == -2) {
-                                if (((((Class348_Sub23) class348_sub23)
+                                if (((class348_sub23
                                         .anInt6868)
                                         ^ 0xffffffff) == -2
                                         && (class348_sub23
@@ -405,12 +399,12 @@ abstract class Class55 {
         anInt1000++;
         Class51 class51 = Class348_Sub40_Sub12.aClass263_9195
                 .method2005(0, interface10.method42(-94));
-        if (((Class51) class51).anInt875 == -1)
+        if (class51.anInt875 == -1)
             return true;
         Class218 class218
                 = Class2.aClass141_117.method1173((byte) 31,
-                ((Class51) class51).anInt875);
-        if (i == ((Class218) class218).anInt2853)
+                class51.anInt875);
+        if (i == class218.anInt2853)
             return true;
         return class218.method1593(106);
     }
@@ -438,8 +432,8 @@ abstract class Class55 {
         if (!anOggPage981.isBOS()) {
             Class348_Sub23 class348_sub23
                     = ((Class348_Sub23)
-                    aClass356_1011.method3480((long) i_32_, -6008));
-            if (!((Class348_Sub23) class348_sub23).anOggStreamState6869
+                    aClass356_1011.method3480(i_32_, -6008));
+            if (!class348_sub23.anOggStreamState6869
                     .pageIn(anOggPage981))
                 throw new IllegalStateException();
             return class348_sub23;
@@ -473,7 +467,7 @@ abstract class Class55 {
             else
                 class348_sub23 = new Class348_Sub23_Sub3(oggstreamstate);
         }
-        aClass356_1011.method3483((byte) 92, (long) i_32_, class348_sub23);
+        aClass356_1011.method3483((byte) 92, i_32_, class348_sub23);
         return class348_sub23;
     }
 

@@ -10,7 +10,7 @@ final class Class292 implements Interface7 {
     static int anInt4801;
     static int anInt4802;
     static int anInt4803 = -1;
-    private Class45 aClass45_4804;
+    private final Class45 aClass45_4804;
     static int anInt4805;
 
     static final int method2201(int i) {
@@ -65,20 +65,18 @@ final class Class292 implements Interface7 {
                     : Class348_Sub40_Sub36.aClass114_9456
                     .method1058((byte) 113))
                     + " - " + Class348_Sub40_Sub25.anInt9341 + ","
-                    + ((((Class318_Sub1_Sub3_Sub3)
-                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                    + ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                     .anIntArray10320[0])
                     + za_Sub2.anInt9780)
                     + ","
                     + (Class90.anInt1517
-                    - -(((Class318_Sub1_Sub3_Sub3)
-                    Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                    - -(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                     .anIntArray10317[0]))
                     + " - ");
             for (int i_2_ = 0;
                  Class348_Sub40_Sub25.anInt9341 > i_2_ && i_2_ < 50; i_2_++)
                 string
-                        += (((Class348_Sub49) Class299.aClass348_Sub49_Sub2_3813)
+                        += (Class299.aClass348_Sub49_Sub2_3813
                         .aByteArray7154[i_2_]) + ",";
             Class156.method1242(string, exception, 15004);
             Class348_Sub40_Sub34.method3141(false, (byte) 11);

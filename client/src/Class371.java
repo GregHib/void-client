@@ -17,12 +17,12 @@ final class Class371 {
             anInt4521++;
             if (i_1_ > -17)
                 return null;
-            if (((ha_Sub2) var_ha_Sub2).aBoolean7793
+            if (var_ha_Sub2.aBoolean7793
                     || Class192.method1436(-58, i_3_) && Class192.method1436(-68,
                     i_0_))
                 return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_2_, i_3_,
                         i_0_, bool, is, i);
-            if (((ha_Sub2) var_ha_Sub2).aBoolean7837)
+            if (var_ha_Sub2.aBoolean7837)
                 return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_2_, i_3_,
                         i_0_, bool, is, i);
             return new Class258_Sub3_Sub1(var_ha_Sub2, i_2_, i_3_, i_0_,
@@ -45,9 +45,7 @@ final class Class371 {
         if (i_4_ != 1)
             return false;
         anInt4523++;
-        if ((i ^ 0xffffffff) != -1 && i != 1 && i != 2)
-            return false;
-        return true;
+        return (i ^ 0xffffffff) == -1 || i == 1 || i == 2;
     }
 
     public Class371() {

@@ -27,7 +27,7 @@ final class Class346_Sub1 extends Class346
     static int anInt6538;
     static int anInt6539;
     static int anInt6540;
-    private Class262 aClass262_6541 = new Class262();
+    private final Class262 aClass262_6541 = new Class262();
     private Class262 aClass262_6542 = new Class262();
     private boolean[] aBooleanArray6543 = new boolean[112];
     private Component aComponent6544;
@@ -100,10 +100,10 @@ final class Class346_Sub1 extends Class346
     private final void method2702(int i, int i_4_, char c, int i_5_) {
         anInt6532++;
         Class348_Sub11 class348_sub11 = new Class348_Sub11();
-        ((Class348_Sub11) class348_sub11).anInt4771 = i_5_;
-        ((Class348_Sub11) class348_sub11).anInt4767 = i;
-        ((Class348_Sub11) class348_sub11).aChar4761 = c;
-        ((Class348_Sub11) class348_sub11).aLong4764 = Class62.method599(-102);
+        class348_sub11.anInt4771 = i_5_;
+        class348_sub11.anInt4767 = i;
+        class348_sub11.aChar4761 = c;
+        class348_sub11.aLong4764 = Class62.method599(-102);
         aClass262_6542.method1999(class348_sub11, -20180);
         if (i_4_ != 128)
             aComponent6544 = null;
@@ -159,30 +159,30 @@ final class Class346_Sub1 extends Class346
                  class348_sub11 != null;
                  class348_sub11
                          = (Class348_Sub11) aClass262_6542.method1997(8)) {
-                ((Class348_Sub11) class348_sub11).anInt4766
+                class348_sub11.anInt4766
                         = method2704((byte) 127);
-                if (((Class348_Sub11) class348_sub11).anInt4771 == 0) {
+                if (class348_sub11.anInt4771 == 0) {
                     if (!aBooleanArray6543
-                            [((Class348_Sub11) class348_sub11).anInt4767]) {
+                            [class348_sub11.anInt4767]) {
                         Class348_Sub11 class348_sub11_10_
                                 = new Class348_Sub11();
-                        ((Class348_Sub11) class348_sub11_10_).anInt4767
-                                = ((Class348_Sub11) class348_sub11).anInt4767;
-                        ((Class348_Sub11) class348_sub11_10_).anInt4771 = 0;
-                        ((Class348_Sub11) class348_sub11_10_).aChar4761 = '\0';
-                        ((Class348_Sub11) class348_sub11_10_).anInt4766
-                                = ((Class348_Sub11) class348_sub11).anInt4766;
-                        ((Class348_Sub11) class348_sub11_10_).aLong4764
-                                = ((Class348_Sub11) class348_sub11).aLong4764;
+                        class348_sub11_10_.anInt4767
+                                = class348_sub11.anInt4767;
+                        class348_sub11_10_.anInt4771 = 0;
+                        class348_sub11_10_.aChar4761 = '\0';
+                        class348_sub11_10_.anInt4766
+                                = class348_sub11.anInt4766;
+                        class348_sub11_10_.aLong4764
+                                = class348_sub11.aLong4764;
                         aClass262_6541.method1999(class348_sub11_10_, -20180);
-                        aBooleanArray6543[(((Class348_Sub11) class348_sub11)
+                        aBooleanArray6543[(class348_sub11
                                 .anInt4767)]
                                 = true;
                     }
-                    ((Class348_Sub11) class348_sub11).anInt4771 = 2;
+                    class348_sub11.anInt4771 = 2;
                     aClass262_6541.method1999(class348_sub11, -20180);
-                } else if (((Class348_Sub11) class348_sub11).anInt4771 != 1) {
-                    if ((((Class348_Sub11) class348_sub11).anInt4771
+                } else if (class348_sub11.anInt4771 != 1) {
+                    if ((class348_sub11.anInt4771
                             ^ 0xffffffff)
                             == 0) {
                         for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -113;
@@ -190,30 +190,30 @@ final class Class346_Sub1 extends Class346
                             if (aBooleanArray6543[i_11_]) {
                                 Class348_Sub11 class348_sub11_12_
                                         = new Class348_Sub11();
-                                ((Class348_Sub11) class348_sub11_12_).aChar4761
+                                class348_sub11_12_.aChar4761
                                         = '\0';
-                                ((Class348_Sub11) class348_sub11_12_).anInt4767
+                                class348_sub11_12_.anInt4767
                                         = i_11_;
-                                ((Class348_Sub11) class348_sub11_12_).anInt4766
-                                        = (((Class348_Sub11) class348_sub11)
+                                class348_sub11_12_.anInt4766
+                                        = (class348_sub11
                                         .anInt4766);
-                                ((Class348_Sub11) class348_sub11_12_).anInt4771
+                                class348_sub11_12_.anInt4771
                                         = 1;
-                                ((Class348_Sub11) class348_sub11_12_).aLong4764
-                                        = (((Class348_Sub11) class348_sub11)
+                                class348_sub11_12_.aLong4764
+                                        = (class348_sub11
                                         .aLong4764);
                                 aClass262_6541.method1999(class348_sub11_12_,
                                         -20180);
                                 aBooleanArray6543[i_11_] = false;
                             }
                         }
-                    } else if (((Class348_Sub11) class348_sub11).anInt4771
+                    } else if (class348_sub11.anInt4771
                             == 3)
                         aClass262_6541.method1999(class348_sub11, -20180);
                 } else if (aBooleanArray6543
-                        [((Class348_Sub11) class348_sub11).anInt4767]) {
+                        [class348_sub11.anInt4767]) {
                     aClass262_6541.method1999(class348_sub11, -20180);
-                    aBooleanArray6543[(((Class348_Sub11) class348_sub11)
+                    aBooleanArray6543[(class348_sub11
                             .anInt4767)]
                             = false;
                 }
@@ -241,7 +241,7 @@ final class Class346_Sub1 extends Class346
         Method method = Class297.aMethod3783;
         if (method != null) {
             try {
-                method.invoke(aComponent6544, new Object[]{Boolean.FALSE});
+                method.invoke(aComponent6544, Boolean.FALSE);
             } catch (Throwable throwable) {
                 /* empty */
             }

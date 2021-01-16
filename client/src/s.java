@@ -49,8 +49,8 @@ abstract class s {
     final int method3982(byte i, int i_20_, int i_21_) {
         anInt4593++;
         if (i != -86)
-            ((s) this).anInt4590 = -59;
-        return ((s) this).anIntArrayArray4584[i_21_][i_20_];
+            this.anInt4590 = -59;
+        return this.anIntArrayArray4584[i_21_][i_20_];
     }
 
     abstract void method3983(int i, int i_22_, int i_23_, boolean[][] bools,
@@ -70,27 +70,27 @@ abstract class s {
 
     final int method3986(int i, int i_30_, byte i_31_) {
         anInt4589++;
-        int i_32_ = i >> ((s) this).anInt4588;
-        int i_33_ = i_30_ >> ((s) this).anInt4588;
+        int i_32_ = i >> this.anInt4588;
+        int i_33_ = i_30_ >> this.anInt4588;
         if (i_32_ < 0 || (i_33_ ^ 0xffffffff) > -1
-                || i_32_ > -1 + ((s) this).anInt4587
-                || (((s) this).anInt4590 - 1 ^ 0xffffffff) > (i_33_ ^ 0xffffffff))
+                || i_32_ > -1 + this.anInt4587
+                || (this.anInt4590 - 1 ^ 0xffffffff) > (i_33_ ^ 0xffffffff))
             return 0;
         int i_34_ = -78 % ((i_31_ - -53) / 36);
-        int i_35_ = i & ((s) this).anInt4592 + -1;
-        int i_36_ = i_30_ & ((s) this).anInt4592 - 1;
+        int i_35_ = i & this.anInt4592 + -1;
+        int i_36_ = i_30_ & this.anInt4592 - 1;
         int i_37_
-                = ((((-i_35_ + ((s) this).anInt4592)
-                * ((s) this).anIntArrayArray4584[i_32_][i_33_])
-                - -(((s) this).anIntArrayArray4584[i_32_ - -1][i_33_] * i_35_))
-                >> ((s) this).anInt4588);
+                = ((((-i_35_ + this.anInt4592)
+                * this.anIntArrayArray4584[i_32_][i_33_])
+                - -(this.anIntArrayArray4584[i_32_ - -1][i_33_] * i_35_))
+                >> this.anInt4588);
         int i_38_
-                = ((i_35_ * ((s) this).anIntArrayArray4584[1 + i_32_][1 + i_33_]
-                + ((((s) this).anInt4592 - i_35_)
-                * ((s) this).anIntArrayArray4584[i_32_][i_33_ + 1]))
-                >> ((s) this).anInt4588);
-        return (i_36_ * i_38_ + (((s) this).anInt4592 + -i_36_) * i_37_
-                >> ((s) this).anInt4588);
+                = ((i_35_ * this.anIntArrayArray4584[1 + i_32_][1 + i_33_]
+                + ((this.anInt4592 - i_35_)
+                * this.anIntArrayArray4584[i_32_][i_33_ + 1]))
+                >> this.anInt4588);
+        return (i_36_ * i_38_ + (this.anInt4592 + -i_36_) * i_37_
+                >> this.anInt4588);
     }
 
     abstract void method3987(int i, int i_39_, int i_40_, int i_41_, int i_42_,
@@ -110,14 +110,14 @@ abstract class s {
                      boolean bool);
 
     s(int i, int i_60_, int i_61_, int[][] is) {
-        ((s) this).anInt4587 = i;
-        ((s) this).anInt4590 = i_60_;
+        this.anInt4587 = i;
+        this.anInt4590 = i_60_;
         int i_62_ = 0;
         for (/**/; i_61_ > 1; i_61_ >>= 1)
             i_62_++;
-        ((s) this).anInt4592 = 1 << i_62_;
-        ((s) this).anIntArrayArray4584 = is;
-        ((s) this).anInt4588 = i_62_;
+        this.anInt4592 = 1 << i_62_;
+        this.anIntArrayArray4584 = is;
+        this.anInt4588 = i_62_;
     }
 
     abstract boolean method3989(r var_r, int i, int i_63_, int i_64_,

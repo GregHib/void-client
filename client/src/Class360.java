@@ -13,9 +13,9 @@ final class Class360 {
     }
 
     Class360(Class360 class360_0_) {
-        ((Class360) this).anInt4430 = ((Class360) class360_0_).anInt4430;
-        ((Class360) this).anInt4428 = ((Class360) class360_0_).anInt4428;
-        ((Class360) this).anInt4427 = ((Class360) class360_0_).anInt4427;
-        ((Class360) this).anInt4429 = ((Class360) class360_0_).anInt4429;
+        this.anInt4430 = class360_0_.anInt4430;
+        this.anInt4428 = class360_0_.anInt4428;
+        this.anInt4427 = class360_0_.anInt4427;
+        this.anInt4429 = class360_0_.anInt4429;
     }
 }

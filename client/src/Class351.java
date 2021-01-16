@@ -51,6 +51,6 @@ final class Class351 {
 
     Class351(int i, int i_1_) {
         anInt4326 = i;
-        ((Class351) this).anInt4323 = i_1_;
+        this.anInt4323 = i_1_;
     }
 }

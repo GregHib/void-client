@@ -12,7 +12,7 @@ final class Class202 implements Runnable {
     static int anInt2646;
     static int anInt2647;
     private int anInt2648 = 0;
-    private Class297 aClass297_2649;
+    private final Class297 aClass297_2649;
     static int anInt2650;
     static int anInt2651;
     private InputStream anInputStream2652;
@@ -31,8 +31,8 @@ final class Class202 implements Runnable {
     static Class114 aClass114_2665 = new Class114(12, 0);
     static int anInt2666;
     static int anInt2667;
-    private Socket aSocket2668;
-    private int anInt2669;
+    private final Socket aSocket2668;
+    private final int anInt2669;
     static int anInt2670 = 0;
     static Class60 aClass60_2671 = new Class60(10);
 

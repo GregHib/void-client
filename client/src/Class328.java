@@ -61,7 +61,7 @@ class Class328 {
         anInt4101++;
         Class348_Sub42_Sub19 class348_sub42_sub19
                 = ((Class348_Sub42_Sub19)
-                Class322.aClass308_4036.method2302((long) i_2_, (byte) -68));
+                Class322.aClass308_4036.method2302(i_2_, (byte) -68));
         if (class348_sub42_sub19 != null)
             return class348_sub42_sub19;
         byte[] is = Class113.aClass45_1743.method410(-1860, i_2_, 0);
@@ -74,7 +74,7 @@ class Class328 {
         }
         if (i > -103)
             return null;
-        Class322.aClass308_4036.method2305((long) i_2_, class348_sub42_sub19,
+        Class322.aClass308_4036.method2305(i_2_, class348_sub42_sub19,
                 -1);
         return class348_sub42_sub19;
     }

@@ -24,9 +24,8 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
         if (bool_0_ == bool)
             return false;
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub12_7243),
                 bool ? 1 : 0);
         Class14_Sub2.method243(37);
@@ -40,10 +39,10 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
 
     final int[][] method3047(int i, int i_2_) {
         anInt9429++;
-        int[][] is = ((Class348_Sub40) this).aClass322_7033.method2557(-97, i);
+        int[][] is = this.aClass322_7033.method2557(-97, i);
         if (i_2_ != -1564599039)
             aClass46ArrayArray9427 = null;
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        if (this.aClass322_7033.aBoolean4035) {
             int[] is_3_ = is[0];
             int[] is_4_ = is[1];
             int[] is_5_ = is[2];
@@ -66,8 +65,8 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
         anInt9428++;
         if (i_8_ != 255)
             aClass46ArrayArray9427 = null;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             for (int i_9_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
                     < (i_9_ ^ 0xffffffff)); i_9_++) {
                 method3139(i_9_, i, (byte) -31);
@@ -84,7 +83,7 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
             aClass46ArrayArray9427 = null;
         anInt9430++;
         if (i == 0)
-            ((Class348_Sub40) this).aBoolean7045
+            this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
     }
 
@@ -98,8 +97,8 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
         int i_15_ = Class239_Sub18.anIntArray6035[i_12_];
         if (i_13_ != -31)
             method3139(-44, -111, (byte) 48);
-        float f = (float) Math.atan2((double) (i_14_ + -2048),
-                (double) (i_15_ + -2048));
+        float f = (float) Math.atan2(i_14_ + -2048,
+                i_15_ + -2048);
         if ((double) f >= -3.141592653589793
                 && (double) f <= -2.356194490192345) {
             Class344.anInt4265 = i_12_;

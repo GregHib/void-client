@@ -48,7 +48,7 @@ abstract class Class348_Sub40 extends Class348 {
     static final void method3038(int i) {
         anInt7044++;
         int i_0_ = 0;
-        if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if ((Class316.aClass348_Sub51_3959
                 .aClass239_Sub28_7230.method1845(-32350)
                 ^ 0xffffffff)
                 == -2) {
@@ -58,7 +58,7 @@ abstract class Class348_Sub40 extends Class348 {
             i_0_ |= 0x2;
             i_0_ |= 0x4;
         }
-        if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if ((Class316.aClass348_Sub51_3959
                 .aClass239_Sub24_7235.method1820(-32350)
                 ^ 0xffffffff)
                 == i)
@@ -78,10 +78,9 @@ abstract class Class348_Sub40 extends Class348 {
     final int[][] method3039(byte i, int i_1_, int i_2_) {
         anInt7039++;
         int i_3_ = 9 / ((6 - i) / 37);
-        if (((Class348_Sub40)
-                ((Class348_Sub40) this).aClass348_Sub40Array7031[i_2_])
+        if (this.aClass348_Sub40Array7031[i_2_]
                 .aBoolean7045) {
-            int[] is = ((Class348_Sub40) this).aClass348_Sub40Array7031
+            int[] is = this.aClass348_Sub40Array7031
                     [i_2_].method3042(i_1_, 255);
             int[][] is_4_ = new int[3][];
             is_4_[2] = is;
@@ -89,7 +88,7 @@ abstract class Class348_Sub40 extends Class348 {
             is_4_[0] = is;
             return is_4_;
         }
-        return ((Class348_Sub40) this).aClass348_Sub40Array7031[i_2_]
+        return this.aClass348_Sub40Array7031[i_2_]
                 .method3047(i_1_, -1564599039);
     }
 
@@ -253,25 +252,25 @@ abstract class Class348_Sub40 extends Class348 {
     int method3043(int i) {
         anInt7037++;
         if (i != -1)
-            ((Class348_Sub40) this).aClass322_7033 = null;
+            this.aClass322_7033 = null;
         return -1;
     }
 
     void method3044(int i) {
         if (i <= 108)
-            ((Class348_Sub40) this).aClass191_7032 = null;
+            this.aClass191_7032 = null;
         anInt7029++;
     }
 
     void method3045(int i, int i_54_, int i_55_) {
         anInt7043++;
-        int i_56_ = (i_55_ != (((Class348_Sub40) this).anInt7036 ^ 0xffffffff)
-                ? ((Class348_Sub40) this).anInt7036 : i_54_);
-        if (((Class348_Sub40) this).aBoolean7045)
-            ((Class348_Sub40) this).aClass191_7032
+        int i_56_ = (i_55_ != (this.anInt7036 ^ 0xffffffff)
+                ? this.anInt7036 : i_54_);
+        if (this.aBoolean7045)
+            this.aClass191_7032
                     = new Class191(i_56_, i_54_, i);
         else
-            ((Class348_Sub40) this).aClass322_7033
+            this.aClass322_7033
                     = new Class322(i_56_, i_54_, i);
     }
 
@@ -279,12 +278,12 @@ abstract class Class348_Sub40 extends Class348 {
         anInt7038++;
         if (i > -102)
             method3046((byte) -112);
-        if (((Class348_Sub40) this).aBoolean7045) {
-            ((Class348_Sub40) this).aClass191_7032.method1432((byte) 124);
-            ((Class348_Sub40) this).aClass191_7032 = null;
+        if (this.aBoolean7045) {
+            this.aClass191_7032.method1432((byte) 124);
+            this.aClass191_7032 = null;
         } else {
-            ((Class348_Sub40) this).aClass322_7033.method2558(6144);
-            ((Class348_Sub40) this).aClass322_7033 = null;
+            this.aClass322_7033.method2558(6144);
+            this.aClass322_7033 = null;
         }
     }
 
@@ -299,14 +298,13 @@ abstract class Class348_Sub40 extends Class348 {
     final int[] method3048(int i, int i_58_, int i_59_) {
         anInt7034++;
         if (i_58_ != 633706337)
-            ((Class348_Sub40) this).aClass191_7032 = null;
-        if (!((Class348_Sub40)
-                ((Class348_Sub40) this).aClass348_Sub40Array7031[i_59_])
+            this.aClass191_7032 = null;
+        if (!this.aClass348_Sub40Array7031[i_59_]
                 .aBoolean7045)
-            return (((Class348_Sub40) this).aClass348_Sub40Array7031[i_59_]
+            return (this.aClass348_Sub40Array7031[i_59_]
                     .method3047
                             (i, -1564599039)[0]);
-        return ((Class348_Sub40) this).aClass348_Sub40Array7031[i_59_]
+        return this.aClass348_Sub40Array7031[i_59_]
                 .method3042(i, i_58_ + -633706082);
     }
 
@@ -317,8 +315,8 @@ abstract class Class348_Sub40 extends Class348 {
     }
 
     Class348_Sub40(int i, boolean bool) {
-        ((Class348_Sub40) this).aClass348_Sub40Array7031
+        this.aClass348_Sub40Array7031
                 = new Class348_Sub40[i];
-        ((Class348_Sub40) this).aBoolean7045 = bool;
+        this.aBoolean7045 = bool;
     }
 }

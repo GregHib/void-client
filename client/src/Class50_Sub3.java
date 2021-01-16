@@ -5,8 +5,8 @@
 import java.awt.*;
 
 final class Class50_Sub3 extends Class50 {
-    private int anInt5236;
-    private int anInt5237;
+    private final int anInt5236;
+    private final int anInt5237;
     static int anInt5238;
     static int anInt5239;
     static int anInt5240;
@@ -14,14 +14,14 @@ final class Class50_Sub3 extends Class50 {
     static Color[] aColorArray5242
             = {new Color(16777215), new Color(16777215), new Color(16741381),
             new Color(16741381)};
-    private int anInt5243;
+    private final int anInt5243;
     static int anInt5244;
-    private int anInt5245;
-    private int anInt5246;
+    private final int anInt5245;
+    private final int anInt5246;
     private int anInt5247;
     static int anInt5248;
-    private int anInt5249;
-    private int anInt5250;
+    private final int anInt5249;
+    private final int anInt5250;
     static int anInt5251;
     static int anInt5252;
     static int anInt5253;
@@ -72,7 +72,7 @@ final class Class50_Sub3 extends Class50 {
             Class348_Sub42_Sub15 class348_sub42_sub15
                     = Class318_Sub9_Sub1.method2516(i, (byte) 105, 1);
             class348_sub42_sub15.method3246(-25490);
-            ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i_10_;
+            class348_sub42_sub15.anInt9652 = i_10_;
         }
     }
 
@@ -94,7 +94,7 @@ final class Class50_Sub3 extends Class50 {
         if (i_13_ > -29)
             anInt5252 = -91;
         int i_21_ = anInt5249 * i >> 1645563660;
-        Class367_Sub3.method3540(i_15_, i_17_, ((Class50) this).anInt865,
+        Class367_Sub3.method3540(i_15_, i_17_, this.anInt865,
                 i_21_, i_16_, i_14_, i_18_, i_19_, i_20_,
                 true);
     }

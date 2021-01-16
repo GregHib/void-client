@@ -21,22 +21,21 @@ final class Class127_Sub1 extends Class127 {
     public final void method9(byte i, boolean bool) {
         anInt8379++;
         int i_0_
-                = ((((Class288) ((Class127) this).aClass288_4659)
+                = ((this.aClass288_4659
                 .aClass221_4955.method1607
                         (Class92.anInt1524,
-                                ((Class127) this).aClass105_4655.method966(), (byte) -117))
-                - -((Class288) ((Class127) this).aClass288_4659).anInt4950);
-        int i_1_ = ((((Class288) ((Class127) this).aClass288_4659)
+                                this.aClass105_4655.method966(), (byte) -117))
+                - -this.aClass288_4659.anInt4950);
+        int i_1_ = ((this.aClass288_4659
                 .aClass341_4952.method2679
                         (ha_Sub2.anInt7666,
-                                ((Class127) this).aClass105_4655.method980(), 1595))
-                + ((Class288) ((Class127) this).aClass288_4659).anInt4951);
-        ((Class127) this).aClass105_4655.method981
-                ((float) (((Class127) this).aClass105_4655.method966() / 2 + i_0_),
-                        (float) (((Class127) this).aClass105_4655.method980() / 2 + i_1_),
+                                this.aClass105_4655.method980(), 1595))
+                + this.aClass288_4659.anInt4951);
+        this.aClass105_4655.method981
+                ((float) (this.aClass105_4655.method966() / 2 + i_0_),
+                        (float) (this.aClass105_4655.method980() / 2 + i_1_),
                         4096, anInt8383);
-        anInt8383 += ((Class288_Sub1) (Class288_Sub1)
-                ((Class127) this).aClass288_4659).anInt8577;
+        anInt8383 += ((Class288_Sub1) this.aClass288_4659).anInt8577;
         if (i != -49)
             method9((byte) -26, true);
     }
@@ -44,8 +43,8 @@ final class Class127_Sub1 extends Class127 {
     static final void method1118(boolean bool, boolean bool_2_,
                                  Class348_Sub41 class348_sub41, int i) {
         anInt8382++;
-        int i_3_ = ((Class348_Sub41) class348_sub41).anInt7050;
-        int i_4_ = (int) ((Class348) class348_sub41).aLong4291;
+        int i_3_ = class348_sub41.anInt7050;
+        int i_4_ = (int) class348_sub41.aLong4291;
         if (i == 2533) {
             class348_sub41.method2715((byte) 35);
             if (bool)
@@ -69,8 +68,8 @@ final class Class127_Sub1 extends Class127 {
                     if (class348_sub41_5_ == null)
                         break;
                 }
-                if (((Class348_Sub41) class348_sub41_5_).anInt7053 == 3) {
-                    int i_6_ = (int) ((Class348) class348_sub41_5_).aLong4291;
+                if (class348_sub41_5_.anInt7053 == 3) {
+                    int i_6_ = (int) class348_sub41_5_.aLong4291;
                     if (i_3_ == i_6_ >>> -1572345968)
                         method1118(true, bool_2_, class348_sub41_5_, 2533);
                 }
@@ -79,7 +78,7 @@ final class Class127_Sub1 extends Class127 {
     }
 
     Class127_Sub1(Class45 class45, Class288_Sub1 class288_sub1) {
-        super(class45, (Class288) class288_sub1);
+        super(class45, class288_sub1);
     }
 
     static final void method1119(boolean bool) {
@@ -88,7 +87,7 @@ final class Class127_Sub1 extends Class127 {
             Method method
                     = (aClass8389 != null ? aClass8389
                     : (aClass8389 = method1121("java.lang.Runtime")))
-                    .getMethod("availableProcessors", new Class[0]);
+                    .getMethod("availableProcessors");
             if (bool != false)
                 method1118(false, false, null, -35);
             if (method != null) {

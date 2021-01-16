@@ -19,9 +19,7 @@ final class aa_Sub3 extends aa {
         if (i < 5)
             method166((byte) -119, -93, 73);
         anInt5203++;
-        if ((i_1_ & 0x800) == 0 || (i_0_ & 0x37) == 0)
-            return false;
-        return true;
+        return (i_1_ & 0x800) != 0 && (i_0_ & 0x37) != 0;
     }
 
     public static void method167(int i) {
@@ -35,13 +33,13 @@ final class aa_Sub3 extends aa {
 
     static final void method168(byte i) {
         do {
-            if (!((Class297) Class348_Sub23_Sub1.aClass297_8992)
+            if (!Class348_Sub23_Sub1.aClass297_8992
                     .aBoolean3794) {
                 try {
                     Method method
                             = (aClass5208 != null ? aClass5208
                             : (aClass5208 = method169("java.lang.Runtime")))
-                            .getMethod("maxMemory", new Class[0]);
+                            .getMethod("maxMemory");
                     if (method != null) {
                         try {
                             Runtime runtime = Runtime.getRuntime();
@@ -66,8 +64,8 @@ final class aa_Sub3 extends aa {
 
     aa_Sub3(int i, int i_3_, int[] is, int[] is_4_) {
         try {
-            ((aa_Sub3) this).anIntArray5201 = is;
-            ((aa_Sub3) this).anIntArray5202 = is_4_;
+            this.anIntArray5201 = is;
+            this.anIntArray5202 = is_4_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("nba.<init>(" + i + ',' + i_3_

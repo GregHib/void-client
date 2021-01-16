@@ -3,20 +3,20 @@
  */
 
 final class Class343 {
-    private int anInt4255;
-    private int anInt4256;
-    private int anInt4257 = Class348_Sub10.method2789(16);
-    private int anInt4258 = Class348_Sub10.method2789(24);
-    private int anInt4259 = Class348_Sub10.method2789(24);
-    private int[] anIntArray4260;
-    private int anInt4261;
+    private final int anInt4255;
+    private final int anInt4256;
+    private final int anInt4257 = Class348_Sub10.method2789(16);
+    private final int anInt4258 = Class348_Sub10.method2789(24);
+    private final int anInt4259 = Class348_Sub10.method2789(24);
+    private final int[] anIntArray4260;
+    private final int anInt4261;
 
     final void method2688(float[] fs, int i, boolean bool) {
         for (int i_0_ = 0; i_0_ < i; i_0_++)
             fs[i_0_] = 0.0F;
         if (!bool) {
             int i_1_
-                    = (((Class370) Class348_Sub10.aClass370Array6718[anInt4261])
+                    = (Class348_Sub10.aClass370Array6718[anInt4261]
                     .anInt4514);
             int i_2_ = anInt4259 - anInt4258;
             int i_3_ = i_2_ / anInt4256;
@@ -43,12 +43,12 @@ final class Class343 {
                             if (anInt4257 == 0) {
                                 int i_12_
                                         = (anInt4256
-                                        / ((Class370) class370).anInt4514);
+                                        / class370.anInt4514);
                                 for (int i_13_ = 0; i_13_ < i_12_; i_13_++) {
                                     float[] fs_14_ = class370.method3582();
                                     for (int i_15_ = 0;
                                          (i_15_
-                                                 < ((Class370) class370).anInt4514);
+                                                 < class370.anInt4514);
                                          i_15_++)
                                         fs[i_11_ + i_13_ + i_15_ * i_12_]
                                                 += fs_14_[i_15_];
@@ -59,7 +59,7 @@ final class Class343 {
                                     float[] fs_17_ = class370.method3582();
                                     for (int i_18_ = 0;
                                          (i_18_
-                                                 < ((Class370) class370).anInt4514);
+                                                 < class370.anInt4514);
                                          i_18_++) {
                                         fs[i_11_ + i_16_] += fs_17_[i_18_];
                                         i_16_++;

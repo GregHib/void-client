@@ -120,23 +120,23 @@ final class Class339 implements Runnable {
                                  byte i_14_) {
         anInt4199++;
         if (class46 != null) {
-            if (((Class46) class46).anObjectArray714 != null) {
+            if (class46.anObjectArray714 != null) {
                 Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                ((Class348_Sub36) class348_sub36).anObjectArray6987
-                        = ((Class46) class46).anObjectArray714;
-                ((Class348_Sub36) class348_sub36).aClass46_6989 = class46;
+                class348_sub36.anObjectArray6987
+                        = class46.anObjectArray714;
+                class348_sub36.aClass46_6989 = class46;
                 Class66.method705(class348_sub36);
             }
-            Class362.anInt4458 = ((Class46) class46).anInt695;
+            Class362.anInt4458 = class46.anInt695;
             Class246.anInt3176 = i;
             Class38.anInt500 = i_13_;
-            Class301.anInt3829 = ((Class46) class46).anInt812;
+            Class301.anInt3829 = class46.anInt812;
             r.aBoolean9722 = true;
-            Class9.anInt169 = ((Class46) class46).anInt704;
-            Class348_Sub49_Sub1.anInt9747 = ((Class46) class46).anInt824;
+            Class9.anInt169 = class46.anInt704;
+            Class348_Sub49_Sub1.anInt9747 = class46.anInt824;
             if (i_14_ != 21)
                 method2665(-99, (byte) -106, 10, -37, 26, -123);
-            Class149.anInt2046 = ((Class46) class46).anInt830;
+            Class149.anInt2046 = class46.anInt830;
             Class251.method1916(-9343, class46);
         }
     }
@@ -163,16 +163,16 @@ final class Class339 implements Runnable {
             try {
                 int i_15_
                         = (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 ? 80
-                        : 7000 - -(((Class161) Class135_Sub2.aClass161_4839)
+                        : 7000 - -(Class135_Sub2.aClass161_4839
                         .anInt2143));
                 aClass144_4201
                         = (Class348_Sub23_Sub1.aClass297_8992.method2237
                         (new URL("http://"
-                                        + (((Class161) Class135_Sub2.aClass161_4839)
+                                        + (Class135_Sub2.aClass161_4839
                                         .aString2147)
                                         + ":" + i_15_ + "/news.ws?game="
-                                        + ((Class230) (Class348_Sub42_Sub8_Sub2
-                                        .aClass230_10434)).anInt2987),
+                                        + Class348_Sub42_Sub8_Sub2
+                                        .aClass230_10434.anInt2987),
                                 8362));
             } catch (java.net.MalformedURLException malformedurlexception) {
                 return true;

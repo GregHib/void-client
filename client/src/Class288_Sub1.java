@@ -15,7 +15,7 @@ final class Class288_Sub1 extends Class288 {
                   int i_1_, int i_2_) {
         super(i, class221, class341, i_0_, i_1_);
         try {
-            ((Class288_Sub1) this).anInt8577 = i_2_;
+            this.anInt8577 = i_2_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("wg.<init>(" + i + ','

@@ -18,7 +18,7 @@ final class Class348_Sub29 extends Class348 {
     }
 
     Class348_Sub29(short i) {
-        ((Class348_Sub29) this).aShort6911 = i;
+        this.aShort6911 = i;
     }
 
     static final void method3004(Class45 class45, boolean bool, d var_d) {

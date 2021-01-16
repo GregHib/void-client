@@ -6,7 +6,7 @@ final class Class150 {
     static Class113 aClass113_2047;
     private Class45 aClass45_2048;
     static int anInt2049;
-    private Class60 aClass60_2050 = new Class60(64);
+    private final Class60 aClass60_2050 = new Class60(64);
     static int anInt2051;
     static int anInt2052;
     static int anInt2053;
@@ -18,15 +18,15 @@ final class Class150 {
     static final void method1202(int i) {
         anInt2052++;
         int[] is
-                = new int[((Class255) Exception_Sub1.aClass255_112).anInt3271];
+                = new int[Exception_Sub1.aClass255_112.anInt3271];
         int i_0_ = i;
         for (int i_1_ = 0;
-             ((Class255) Exception_Sub1.aClass255_112).anInt3271 > i_1_;
+             Exception_Sub1.aClass255_112.anInt3271 > i_1_;
              i_1_++) {
             Class213 class213
                     = Exception_Sub1.aClass255_112.method1940(-104, i_1_);
-            if (((Class213) class213).anInt2815 >= 0
-                    || (((Class213) class213).anInt2788 ^ 0xffffffff) <= -1)
+            if (class213.anInt2815 >= 0
+                    || (class213.anInt2788 ^ 0xffffffff) <= -1)
                 is[i_0_++] = i_1_;
         }
         Class25.anIntArray369 = new int[i_0_];
@@ -40,7 +40,7 @@ final class Class150 {
             aClass45_2048 = null;
         Class34 class34;
         synchronized (aClass60_2050) {
-            class34 = (Class34) aClass60_2050.method583((long) i_3_, -58);
+            class34 = (Class34) aClass60_2050.method583(i_3_, -58);
         }
         if (class34 != null)
             return class34;
@@ -49,11 +49,11 @@ final class Class150 {
             is = aClass45_2048.method410(i + -1893, 3, i_3_);
         }
         class34 = new Class34();
-        ((Class34) class34).aClass150_475 = this;
+        class34.aClass150_475 = this;
         if (is != null)
             class34.method346(i ^ 0xffffffff, new Class348_Sub49(is));
         synchronized (aClass60_2050) {
-            aClass60_2050.method582(class34, (long) i_3_, (byte) -109);
+            aClass60_2050.method582(class34, i_3_, (byte) -109);
         }
         return class34;
     }
@@ -85,7 +85,7 @@ final class Class150 {
                 class348_sub49.method3387(255));
         int i_5_ = class348_sub49.method3387(255);
         for (int i_6_ = 0; (i_5_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff); i_6_++)
-            ((Class348_Sub42_Sub14) class348_sub42_sub14).aClass262_9629
+            class348_sub42_sub14.aClass262_9629
                     .method1999
                             (new Class348_Sub18(class348_sub49.method3387(255),
                                             class348_sub49.method3330(842397944),
@@ -126,7 +126,7 @@ final class Class150 {
 
     Class150(Class230 class230, int i, Class45 class45, Class45 class45_9_) {
         try {
-            ((Class150) this).aClass45_2054 = class45_9_;
+            this.aClass45_2054 = class45_9_;
             aClass45_2048 = class45;
             aClass45_2048.method407(0, 3);
         } catch (RuntimeException runtimeexception) {

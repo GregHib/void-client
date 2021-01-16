@@ -26,9 +26,7 @@ final class Class151 {
         anInt2066++;
         if (i > -93)
             anInt2061 = -39;
-        if ((i_1_ ^ 0xffffffff) != -1 && (i_1_ ^ 0xffffffff) != -3)
-            return false;
-        return true;
+        return (i_1_ ^ 0xffffffff) == -1 || (i_1_ ^ 0xffffffff) == -3;
     }
 
     static final void method1211(int i, Class105 class105, int i_2_,
@@ -43,8 +41,8 @@ final class Class151 {
                             & (int) Class314.aFloat3938 - -r_Sub2.anInt10483);
                 else
                     i_6_ = 0x3fff & (int) Class314.aFloat3938;
-                int i_7_ = 10 + Math.max(((Class46) class46).anInt709 / 2,
-                        ((Class46) class46).anInt789 / i_4_);
+                int i_7_ = 10 + Math.max(class46.anInt709 / 2,
+                        class46.anInt789 / i_4_);
                 int i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_);
                 if (i_7_ * i_7_ >= i_8_) {
                     int i_9_ = Class70.anIntArray1207[i_6_];
@@ -58,10 +56,10 @@ final class Class151 {
                     int i_11_ = i_5_ * i_10_ + i_3_ * i_9_ >> -1536877746;
                     int i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) >> -816073010;
                     class105.method963((i_11_
-                                    + (((Class46) class46).anInt709 / 2
+                                    + (class46.anInt709 / 2
                                     + (i_2_
                                     + -(class105.method966() / 2)))),
-                            (i - -(((Class46) class46).anInt789 / 2)
+                            (i - -(class46.anInt789 / 2)
                                     + (-i_12_
                                     + -(class105.method980() / 2))),
                             var_aa, i_2_, i);
@@ -80,7 +78,7 @@ final class Class151 {
 
     static final void method1212(int i, int i_13_, int i_14_, int i_15_) {
         anInt2059++;
-        i = ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        i = Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7260.method1838(-32350) * i >> -1161142392;
         if (i_14_ == i_13_ && !Class74.aBoolean1236)
             Class104.method960(1);

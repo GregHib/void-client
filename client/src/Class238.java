@@ -21,9 +21,9 @@ abstract class Class238 {
         Class348_Sub42_Sub15 class348_sub42_sub15
                 = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, i_4_);
         class348_sub42_sub15.method3246(-25490);
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9651 = i_3_;
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9652 = i;
-        ((Class348_Sub42_Sub15) class348_sub42_sub15).anInt9650 = i_5_;
+        class348_sub42_sub15.anInt9651 = i_3_;
+        class348_sub42_sub15.anInt9652 = i;
+        class348_sub42_sub15.anInt9650 = i_5_;
     }
 
     public static void method1704(byte i) {

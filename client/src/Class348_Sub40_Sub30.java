@@ -62,7 +62,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
             class348_sub42_sub15.method2715((byte) 113);
             class348_sub42_sub15.method3162(true);
         } while ((~0x7fffffffffffffffL
-                & ((Class348_Sub42) class348_sub42_sub15).aLong7057)
+                & class348_sub42_sub15.aLong7057)
                 == 0L);
         return class348_sub42_sub15;
     }
@@ -164,9 +164,8 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                             }
                             if (Class285_Sub1.method2127
                                     (2,
-                                            (((Class318_Sub1_Sub3_Sub3_Sub2)
-                                                    (Class132
-                                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907))
+                                            (Class132
+                                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                                     .aString10544))
                                     .equals(string_1_))
                                 Class59.method544((Class274.aClass274_3524
@@ -181,11 +180,11 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                                         (Class294.aClass351_5057,
                                                 Class348_Sub23_Sub2.aClass77_9029,
                                                 -85));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116.method3378
                                         (false,
                                                 Class239_Sub6.method1745(string, -65));
-                                ((Class348_Sub47) class348_sub47)
+                                class348_sub47
                                         .aClass348_Sub49_Sub2_7116
                                         .method3333((byte) -5, string);
                                 Class348_Sub42_Sub14
@@ -211,8 +210,8 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
     final int[][] method3047(int i, int i_8_) {
         anInt9393++;
         int[][] is
-                = ((Class348_Sub40) this).aClass322_7033.method2557(-105, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+                = this.aClass322_7033.method2557(-105, i);
+        if (this.aClass322_7033.aBoolean4035) {
             int[][] is_9_ = this.method3039((byte) 50, i, 0);
             int[] is_10_ = is_9_[0];
             int[] is_11_ = is_9_[1];

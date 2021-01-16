@@ -9,10 +9,11 @@ import java.io.OutputStream;
 import java.lang.reflect.Method;
 import java.net.*;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public final class Class272_Sub2 extends Class272 {
-    private ProxySelector aProxySelector6172 = ProxySelector.getDefault();
+    private final ProxySelector aProxySelector6172 = ProxySelector.getDefault();
     static Class aClass6173;
     static Class aClass6174;
 
@@ -22,15 +23,15 @@ public final class Class272_Sub2 extends Class272 {
         socket.setSoTimeout(10000);
         OutputStream outputstream = socket.getOutputStream();
         if (string_0_ != null)
-            outputstream.write(("CONNECT " + ((Class272_Sub2) this).aString3476
-                    + ":" + ((Class272_Sub2) this).anInt3470
+            outputstream.write(("CONNECT " + this.aString3476
+                    + ":" + this.anInt3470
                     + " HTTP/1.0\n" + string_0_ + "\n\n")
-                    .getBytes(Charset.forName("ISO-8859-1")));
+                    .getBytes(StandardCharsets.ISO_8859_1));
         else
-            outputstream.write(("CONNECT " + ((Class272_Sub2) this).aString3476
-                    + ":" + ((Class272_Sub2) this).anInt3470
+            outputstream.write(("CONNECT " + this.aString3476
+                    + ":" + this.anInt3470
                     + " HTTP/1.0\n\n")
-                    .getBytes(Charset.forName("ISO-8859-1")));
+                    .getBytes(StandardCharsets.ISO_8859_1));
         outputstream.flush();
         BufferedReader bufferedreader
                 = new BufferedReader(new InputStreamReader(socket
@@ -73,10 +74,10 @@ public final class Class272_Sub2 extends Class272 {
             System.setProperty("java.net.useSystemProxies", "true");
         flag1 = -444 == ~anInt3470;
         IOException_Sub1 ioexception_sub1;
-        Object aobj1[];
+        Object[] aobj1;
         int j;
         if (i >= -100)
-            return (Socket) null;
+            return null;
         List list;
         List list1;
         try {
@@ -86,7 +87,7 @@ public final class Class272_Sub2 extends Class272 {
             return method2047((byte) 121);
         }
         list.addAll(list1);
-        Object aobj[] = list.toArray();
+        Object[] aobj = list.toArray();
         ioexception_sub1 = null;
         aobj1 = aobj;
         j = 0;
@@ -124,9 +125,9 @@ public final class Class272_Sub2 extends Class272 {
         if (proxy.type() != Proxy.Type.HTTP) {
             if (proxy.type() == Proxy.Type.SOCKS) {
                 Socket socket = new Socket(proxy);
-                socket.connect(new InetSocketAddress((((Class272_Sub2) this)
+                socket.connect(new InetSocketAddress((this
                         .aString3476),
-                        (((Class272_Sub2) this)
+                        (this
                                 .anInt3470)));
                 return socket;
             }
@@ -139,39 +140,36 @@ public final class Class272_Sub2 extends Class272 {
                 Method method
                         = (var_class.getDeclaredMethod
                         ("getProxyAuth",
-                                (new Class[]
-                                        {(aClass6173 == null
-                                                ? aClass6173 = method2054("java.lang.String")
-                                                : aClass6173),
-                                                Integer.TYPE})));
+                                (aClass6173 == null
+                                        ? aClass6173 = method2054("java.lang.String")
+                                        : aClass6173),
+                                Integer.TYPE));
                 method.setAccessible(true);
                 Object object
-                        = method.invoke(null, (new Object[]
-                        {inetsocketaddress.getHostName(),
-                                new Integer(inetsocketaddress
-                                        .getPort())}));
+                        = method.invoke(null, inetsocketaddress.getHostName(),
+                        new Integer(inetsocketaddress
+                                .getPort()));
                 if (null != object) {
                     Method method_14_
                             = (var_class.getDeclaredMethod
-                            ("supportsPreemptiveAuthorization", new Class[0]));
+                            ("supportsPreemptiveAuthorization"));
                     method_14_.setAccessible(true);
                     if (((Boolean) method_14_.invoke(object, new Object[0]))
                             .booleanValue()) {
                         Method method_15_
-                                = var_class.getDeclaredMethod("getHeaderName",
-                                new Class[0]);
+                                = var_class.getDeclaredMethod("getHeaderName"
+                        );
                         method_15_.setAccessible(true);
                         Method method_16_
                                 = (var_class.getDeclaredMethod
                                 ("getHeaderValue",
-                                        (new Class[]
-                                                {(aClass6174 == null
-                                                        ? aClass6174 = method2054("java.net.URL")
-                                                        : aClass6174),
-                                                        (aClass6173 == null
-                                                                ? (aClass6173
-                                                                = method2054("java.lang.String"))
-                                                                : aClass6173)})));
+                                        (aClass6174 == null
+                                                ? aClass6174 = method2054("java.net.URL")
+                                                : aClass6174),
+                                        (aClass6173 == null
+                                                ? (aClass6173
+                                                = method2054("java.lang.String"))
+                                                : aClass6173)));
                         method_16_.setAccessible(true);
                         String string_17_
                                 = ((String)
@@ -181,8 +179,7 @@ public final class Class272_Sub2 extends Class272 {
                                 method_16_.invoke(object,
                                         (new Object[]
                                                 {new URL("https://"
-                                                        + (((Class272_Sub2)
-                                                        this)
+                                                        + (this
                                                         .aString3476)
                                                         + "/"),
                                                         "https"})));

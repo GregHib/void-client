@@ -137,10 +137,10 @@ final class Class348_Sub40_Sub14 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_33_) {
         anInt9207++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
+        int[] is = this.aClass191_7032.method1433(0, i);
         if (i_33_ != 255)
             anIntArray9214 = null;
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        if (this.aClass191_7032.aBoolean2570) {
             int[] is_34_ = this.method3048(i, 633706337, 0);
             for (int i_35_ = 0; i_35_ < Class348_Sub40_Sub6.anInt9139;
                  i_35_++) {

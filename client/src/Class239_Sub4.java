@@ -20,32 +20,30 @@ final class Class239_Sub4 extends Class239 {
         if (bool != false)
             method1736(-57);
         anInt5880++;
-        if (((Class239) this).aClass348_Sub51_3136.method3422(674)
+        if (this.aClass348_Sub51_3136.method3422(674)
                 != Class10.aClass230_186)
-            ((Class239) this).anInt3138 = 1;
-        else if (((Class239) this).aClass348_Sub51_3136.method3425(-95))
-            ((Class239) this).anInt3138 = 0;
-        if ((((Class239) this).anInt3138 ^ 0xffffffff) != -1
-                && (((Class239) this).anInt3138 ^ 0xffffffff) != -2)
-            ((Class239) this).anInt3138 = method1710(20014);
+            this.anInt3138 = 1;
+        else if (this.aClass348_Sub51_3136.method3425(-95))
+            this.anInt3138 = 0;
+        if ((this.anInt3138 ^ 0xffffffff) != -1
+                && (this.anInt3138 ^ 0xffffffff) != -2)
+            this.anInt3138 = method1710(20014);
     }
 
     final void method1712(int i, int i_0_) {
         int i_1_ = 107 / ((i - 82) / 35);
         anInt5879++;
-        ((Class239) this).anInt3138 = i_0_;
+        this.anInt3138 = i_0_;
     }
 
     final boolean method1736(int i) {
         anInt5873++;
-        if (((Class239) this).aClass348_Sub51_3136.method3425(-80))
+        if (this.aClass348_Sub51_3136.method3425(-80))
             return false;
         if (i < 85)
             method1716(true);
-        if (((Class239) this).aClass348_Sub51_3136.method3422(674)
-                == Class10.aClass230_186)
-            return true;
-        return false;
+        return this.aClass348_Sub51_3136.method3422(674)
+                == Class10.aClass230_186;
     }
 
     Class239_Sub4(Class348_Sub51 class348_sub51) {
@@ -63,16 +61,16 @@ final class Class239_Sub4 extends Class239 {
         if (i != -32350)
             method1716(true);
         anInt5875++;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     final int method1714(int i, int i_2_) {
         if (i != 3)
             aString5882 = null;
         anInt5872++;
-        if (((Class239) this).aClass348_Sub51_3136.method3425(-63))
+        if (this.aClass348_Sub51_3136.method3425(-63))
             return 3;
-        if (((Class239) this).aClass348_Sub51_3136.method3422(674)
+        if (this.aClass348_Sub51_3136.method3422(674)
                 == Class10.aClass230_186)
             return 1;
         return 3;

@@ -8,7 +8,7 @@ final class Class39 {
     static int anInt516;
     long aLong517;
     static Class45 aClass45_518;
-    private Class377 aClass377_519;
+    private final Class377 aClass377_519;
     static Class112 aClass112_520;
     static Class323 aClass323_521;
 
@@ -35,7 +35,7 @@ final class Class39 {
     }
 
     protected final void finalize() throws Throwable {
-        aClass377_519.method3966(((Class39) this).aLong517, 34192);
+        aClass377_519.method3966(this.aLong517, 34192);
         anInt516++;
         super.finalize();
     }
@@ -50,7 +50,7 @@ final class Class39 {
 
     Class39(Class377 class377, long l, int i) {
         try {
-            ((Class39) this).aLong517 = l;
+            this.aLong517 = l;
             aClass377_519 = class377;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

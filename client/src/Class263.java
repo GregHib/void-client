@@ -3,7 +3,7 @@
  */
 
 final class Class263 {
-    private Class45 aClass45_3343;
+    private final Class45 aClass45_3343;
     static int anInt3344;
     Class45 aClass45_3345;
     static int anInt3346;
@@ -27,8 +27,8 @@ final class Class263 {
 
     final void method2004(boolean bool, byte i) {
         anInt3346++;
-        if (bool == !((Class263) this).aBoolean3359) {
-            ((Class263) this).aBoolean3359 = bool;
+        if (bool == !this.aBoolean3359) {
+            this.aBoolean3359 = bool;
             if (i != 25)
                 aClass60_3350 = null;
             method2012(i + -23853);
@@ -39,7 +39,7 @@ final class Class263 {
         anInt3351++;
         Class51 class51;
         synchronized (aClass60_3350) {
-            class51 = (Class51) aClass60_3350.method583((long) i_0_, i ^ 0x32);
+            class51 = (Class51) aClass60_3350.method583(i_0_, i ^ 0x32);
         }
         if (class51 != null)
             return class51;
@@ -51,24 +51,24 @@ final class Class263 {
                             (byte) -90));
         }
         class51 = new Class51();
-        ((Class51) class51).anInt941 = i_0_;
-        ((Class51) class51).aClass263_933 = this;
+        class51.anInt941 = i_0_;
+        class51.aClass263_933 = this;
         if (is != null)
             class51.method479((byte) 0, new Class348_Sub49(is));
         class51.method488(-105);
         if (i != 0)
-            ((Class263) this).aClass60_3361 = null;
-        if (!((Class263) this).aBoolean3359
-                && ((Class51) class51).aBoolean942) {
-            ((Class51) class51).anIntArray917 = null;
-            ((Class51) class51).aStringArray913 = null;
+            this.aClass60_3361 = null;
+        if (!this.aBoolean3359
+                && class51.aBoolean942) {
+            class51.anIntArray917 = null;
+            class51.aStringArray913 = null;
         }
-        if (((Class51) class51).aBoolean876) {
-            ((Class51) class51).anInt920 = 0;
-            ((Class51) class51).aBoolean896 = false;
+        if (class51.aBoolean876) {
+            class51.anInt920 = 0;
+            class51.aBoolean896 = false;
         }
         synchronized (aClass60_3350) {
-            aClass60_3350.method582(class51, (long) i_0_, (byte) -109);
+            aClass60_3350.method582(class51, i_0_, (byte) -109);
         }
         return class51;
     }
@@ -79,14 +79,14 @@ final class Class263 {
             synchronized (aClass60_3350) {
                 aClass60_3350.method587(-106);
             }
-            synchronized (((Class263) this).aClass60_3360) {
-                ((Class263) this).aClass60_3360.method587(-125);
+            synchronized (this.aClass60_3360) {
+                this.aClass60_3360.method587(-125);
             }
-            synchronized (((Class263) this).aClass60_3361) {
-                ((Class263) this).aClass60_3361.method587(-122);
+            synchronized (this.aClass60_3361) {
+                this.aClass60_3361.method587(-122);
             }
-            synchronized (((Class263) this).aClass60_3362) {
-                ((Class263) this).aClass60_3362.method587(-101);
+            synchronized (this.aClass60_3362) {
+                this.aClass60_3362.method587(-101);
             }
         }
     }
@@ -109,15 +109,15 @@ final class Class263 {
         Class367_Sub11.anIntArray7397[i_16_] = i_10_;
         int i_17_ = 0;
         Class205.anIntArray2694[i_16_++] = i_11_;
-        int[][] is = ((Class361) class361).anIntArrayArray4438;
+        int[][] is = class361.anIntArrayArray4438;
         while (i_16_ != i_17_) {
             i_11_ = Class205.anIntArray2694[i_17_];
             i_10_ = Class367_Sub11.anIntArray7397[i_17_];
             i_17_ = 0xfff & 1 + i_17_;
             i_12_ = i_10_ - i_14_;
             i_13_ = -i_15_ + i_11_;
-            int i_18_ = i_10_ + -((Class361) class361).anInt4453;
-            int i_19_ = -((Class361) class361).anInt4441 + i_11_;
+            int i_18_ = i_10_ + -class361.anInt4453;
+            int i_19_ = -class361.anInt4441 + i_11_;
             int i_20_ = i;
             while_85_:
             do {
@@ -293,27 +293,27 @@ final class Class263 {
 
     final void method2008(int i, boolean bool) {
         anInt3344++;
-        if (!((Class263) this).aBoolean3355 == bool) {
-            ((Class263) this).aBoolean3355 = bool;
+        if (!this.aBoolean3355 == bool) {
+            this.aBoolean3355 = bool;
             if (i >= -27)
-                ((Class263) this).aClass60_3361 = null;
+                this.aClass60_3361 = null;
             method2012(-23828);
         }
     }
 
     final void method2009(int i, byte i_21_) {
-        ((Class263) this).anInt3363 = i;
+        this.anInt3363 = i;
         anInt3348++;
-        synchronized (((Class263) this).aClass60_3360) {
-            ((Class263) this).aClass60_3360.method590(0);
+        synchronized (this.aClass60_3360) {
+            this.aClass60_3360.method590(0);
         }
-        synchronized (((Class263) this).aClass60_3361) {
-            ((Class263) this).aClass60_3361.method590(0);
+        synchronized (this.aClass60_3361) {
+            this.aClass60_3361.method590(0);
         }
         if (i_21_ < 94)
             anIntArray3347 = null;
-        synchronized (((Class263) this).aClass60_3362) {
-            ((Class263) this).aClass60_3362.method590(0);
+        synchronized (this.aClass60_3362) {
+            this.aClass60_3362.method590(0);
         }
     }
 
@@ -322,14 +322,14 @@ final class Class263 {
         synchronized (aClass60_3350) {
             aClass60_3350.method578(2, i);
         }
-        synchronized (((Class263) this).aClass60_3360) {
-            ((Class263) this).aClass60_3360.method578(i_22_ ^ ~0x2, i);
+        synchronized (this.aClass60_3360) {
+            this.aClass60_3360.method578(i_22_ ^ ~0x2, i);
         }
-        synchronized (((Class263) this).aClass60_3361) {
-            ((Class263) this).aClass60_3361.method578(i_22_ ^ ~0x2, i);
+        synchronized (this.aClass60_3361) {
+            this.aClass60_3361.method578(i_22_ ^ ~0x2, i);
         }
-        synchronized (((Class263) this).aClass60_3362) {
-            ((Class263) this).aClass60_3362.method578(2, i);
+        synchronized (this.aClass60_3362) {
+            this.aClass60_3362.method578(2, i);
             if (i_22_ != -1)
                 method2013(null, (byte) 96);
         }
@@ -347,14 +347,14 @@ final class Class263 {
             aClass60_3350.method590(0);
         }
         anInt3356++;
-        synchronized (((Class263) this).aClass60_3360) {
-            ((Class263) this).aClass60_3360.method590(i ^ i);
+        synchronized (this.aClass60_3360) {
+            this.aClass60_3360.method590(i ^ i);
         }
-        synchronized (((Class263) this).aClass60_3361) {
-            ((Class263) this).aClass60_3361.method590(0);
+        synchronized (this.aClass60_3361) {
+            this.aClass60_3361.method590(0);
         }
-        synchronized (((Class263) this).aClass60_3362) {
-            ((Class263) this).aClass60_3362.method590(0);
+        synchronized (this.aClass60_3362) {
+            this.aClass60_3362.method590(0);
         }
     }
 
@@ -407,19 +407,19 @@ final class Class263 {
         aClass60_3350 = new Class60(i);
         anInt3358++;
         if (bool != true)
-            ((Class263) this).aClass60_3362 = null;
+            this.aClass60_3362 = null;
     }
 
     Class263(Class230 class230, int i, boolean bool, Class45 class45,
              Class45 class45_29_) {
         aClass60_3350 = new Class60(64);
-        ((Class263) this).aClass60_3360 = new Class60(500);
-        ((Class263) this).aClass60_3361 = new Class60(30);
-        ((Class263) this).aClass60_3362 = new Class60(50);
+        this.aClass60_3360 = new Class60(500);
+        this.aClass60_3361 = new Class60(30);
+        this.aClass60_3362 = new Class60(50);
         do {
             try {
-                ((Class263) this).aBoolean3359 = bool;
-                ((Class263) this).aClass45_3345 = class45_29_;
+                this.aBoolean3359 = bool;
+                this.aClass45_3345 = class45_29_;
                 aClass45_3343 = class45;
                 if (aClass45_3343 == null)
                     break;

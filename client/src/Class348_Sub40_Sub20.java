@@ -41,8 +41,8 @@ final class Class348_Sub40_Sub20 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_3_) {
         anInt9261++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        int[] is = this.aClass191_7032.method1433(0, i);
+        if (this.aClass191_7032.aBoolean2570) {
             int i_4_ = Class239_Sub18.anIntArray6035[i];
             for (int i_5_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
                     < (i_5_ ^ 0xffffffff)); i_5_++)

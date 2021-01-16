@@ -19,55 +19,54 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
                  i_1_++) {
                 Class46 class46 = class46s[i_1_];
                 if (class46 != null) {
-                    if ((((Class46) class46).anInt774 ^ 0xffffffff) == -1) {
-                        if (((Class46) class46).aClass46Array798 != null)
-                            method3097(((Class46) class46).aClass46Array798, i,
+                    if ((class46.anInt774 ^ 0xffffffff) == -1) {
+                        if (class46.aClass46Array798 != null)
+                            method3097(class46.aClass46Array798, i,
                                     125);
                         Class348_Sub41 class348_sub41
                                 = ((Class348_Sub41)
                                 (Class125.aClass356_4915.method3480
-                                        ((long) ((Class46) class46).anInt830, -6008)));
+                                        (class46.anInt830, -6008)));
                         if (class348_sub41 != null)
                             Class239_Sub12.method1775((byte) -8,
-                                    (((Class348_Sub41)
-                                            class348_sub41)
+                                    (class348_sub41
                                             .anInt7050),
                                     i);
                     }
                     if ((i ^ 0xffffffff) == -1
-                            && ((Class46) class46).anObjectArray840 != null) {
+                            && class46.anObjectArray840 != null) {
                         Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                        ((Class348_Sub36) class348_sub36).aClass46_6989
+                        class348_sub36.aClass46_6989
                                 = class46;
-                        ((Class348_Sub36) class348_sub36).anObjectArray6987
-                                = ((Class46) class46).anObjectArray840;
+                        class348_sub36.anObjectArray6987
+                                = class46.anObjectArray840;
                         Class66.method705(class348_sub36);
                     }
                     if (i == 1
-                            && ((Class46) class46).anObjectArray701 != null) {
-                        if (((Class46) class46).anInt704 >= 0) {
+                            && class46.anObjectArray701 != null) {
+                        if (class46.anInt704 >= 0) {
                             Class46 class46_2_
                                     = Class324.method2570(1512932720,
-                                    (((Class46) class46)
+                                    (class46
                                             .anInt830));
                             if (class46_2_ == null
-                                    || (((Class46) class46_2_).aClass46Array798
+                                    || (class46_2_.aClass46Array798
                                     == null)
-                                    || (((((Class46) class46_2_)
+                                    || (((class46_2_
                                     .aClass46Array798).length
                                     ^ 0xffffffff)
-                                    >= (((Class46) class46).anInt704
+                                    >= (class46.anInt704
                                     ^ 0xffffffff))
-                                    || class46 != (((Class46) class46_2_)
+                                    || class46 != (class46_2_
                                     .aClass46Array798
-                                    [((Class46) class46).anInt704]))
+                                    [class46.anInt704]))
                                 continue;
                         }
                         Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                        ((Class348_Sub36) class348_sub36).aClass46_6989
+                        class348_sub36.aClass46_6989
                                 = class46;
-                        ((Class348_Sub36) class348_sub36).anObjectArray6987
-                                = ((Class46) class46).anObjectArray701;
+                        class348_sub36.anObjectArray6987
+                                = class46.anObjectArray701;
                         Class66.method705(class348_sub36);
                     }
                 }
@@ -108,10 +107,8 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
         anInt9253++;
         if (bool != false)
             anIntArray9259 = null;
-        if (!(Class230.method1637(i, 32768, i_4_) | (0x800 & i_4_) != 0)
-                && !Class273.method2056(i_4_, 86, i))
-            return false;
-        return true;
+        return Class230.method1637(i, 32768, i_4_) | (0x800 & i_4_) != 0
+                || Class273.method2056(i_4_, 86, i);
     }
 
     /*synthetic*/

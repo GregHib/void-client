@@ -3,11 +3,11 @@
  */
 
 interface Interface8 {
-    public int method33(int i);
+    int method33(int i);
 
-    public int method34(int i);
+    int method34(int i);
 
-    public void method35(byte[] is, int i, int i_0_, int i_1_);
+    void method35(byte[] is, int i, int i_0_, int i_1_);
 
-    public long method36(byte i);
+    long method36(byte i);
 }

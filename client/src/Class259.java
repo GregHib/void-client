@@ -3,11 +3,11 @@
  */
 
 final class Class259 {
-    private Class45 aClass45_3299;
+    private final Class45 aClass45_3299;
     static byte[] aByteArray3300 = new byte[2048];
     static Class60 aClass60_3301 = new Class60(30);
     static int anInt3302;
-    private Class60 aClass60_3303 = new Class60(64);
+    private final Class60 aClass60_3303 = new Class60(64);
     static Class305 aClass305_3304;
     int anInt3305;
     static int anInt3306 = 0;
@@ -23,7 +23,7 @@ final class Class259 {
         anInt3302++;
         Class160 class160;
         synchronized (aClass60_3303) {
-            class160 = (Class160) aClass60_3303.method583((long) i, -51);
+            class160 = (Class160) aClass60_3303.method583(i, -51);
         }
         if (class160 != null)
             return class160;
@@ -36,7 +36,7 @@ final class Class259 {
         if (is != null)
             class160.method1255(new Class348_Sub49(is), -1);
         synchronized (aClass60_3303) {
-            aClass60_3303.method582(class160, (long) i, (byte) -120);
+            aClass60_3303.method582(class160, i, (byte) -120);
         }
         return class160;
     }
@@ -44,7 +44,7 @@ final class Class259 {
     Class259(Class230 class230, int i, Class45 class45) {
         try {
             aClass45_3299 = class45;
-            ((Class259) this).anInt3305 = aClass45_3299.method407(0, 19);
+            this.anInt3305 = aClass45_3299.method407(0, 19);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("uea.<init>("

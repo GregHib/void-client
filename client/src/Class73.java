@@ -9,14 +9,14 @@ final class Class73 implements Interface7 {
     static int anInt4775;
     static int anInt4776;
     static int anInt4777;
-    private String aString4778;
+    private final String aString4778;
     static Class114 aClass114_4779;
     static int[] anIntArray4780;
     static int anInt4781;
     static Class219 aClass219_4782;
     static long aLong4783 = 20000000L;
     static int anInt4784;
-    private Class45 aClass45_4785;
+    private final Class45 aClass45_4785;
     static int anInt4786;
 
     public static void method741(byte i) {
@@ -31,7 +31,7 @@ final class Class73 implements Interface7 {
     static final Class189 method742(int i, int i_0_) {
         anInt4777++;
         Class189 class189
-                = (Class189) Class217.aClass60_2844.method583((long) i_0_, -104);
+                = (Class189) Class217.aClass60_2844.method583(i_0_, -104);
         if (class189 != null)
             return class189;
         byte[] is = Class369_Sub3.aClass45_8601.method410(-1860, 0, i_0_);
@@ -40,7 +40,7 @@ final class Class73 implements Interface7 {
         class189 = new Class189();
         if (is != null)
             class189.method1419(i_0_, new Class348_Sub49(is), (byte) 64);
-        Class217.aClass60_2844.method582(class189, (long) i_0_, (byte) -114);
+        Class217.aClass60_2844.method582(class189, i_0_, (byte) -114);
         return class189;
     }
 

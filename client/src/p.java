@@ -25,7 +25,7 @@ final class p extends Class348 implements Interface19 {
             aLong5146 = Class62.method599(-54);
             aBoolean5144 = true;
         } else if (Class62.method599(-88) - aLong5146 < 30000L)
-            ((p) this).aCanvas5147.repaint();
+            this.aCanvas5147.repaint();
         else
             throw new RuntimeException(exception.getMessage());
     }
@@ -35,8 +35,8 @@ final class p extends Class348 implements Interface19 {
 
     final void method3433(int i, int i_10_) {
         try {
-            synchronized (((p) this).aCanvas5147.getTreeLock()) {
-                Dimension dimension = ((p) this).aCanvas5147.getSize();
+            synchronized (this.aCanvas5147.getTreeLock()) {
+                Dimension dimension = this.aCanvas5147.getSize();
                 H(i, i_10_, dimension.width, dimension.height);
                 aBoolean5144 = false;
             }
@@ -46,21 +46,21 @@ final class p extends Class348 implements Interface19 {
     }
 
     protected final void finalize() {
-        if (((p) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 
     p(oa var_oa, Canvas canvas, int i, int i_11_) {
-        ((p) this).aCanvas5147 = canvas;
-        ((p) this).anInt5145 = i;
-        ((p) this).anInt5148 = i_11_;
-        sa(var_oa, ((p) this).aCanvas5147, i, i_11_);
+        this.aCanvas5147 = canvas;
+        this.anInt5145 = i;
+        this.anInt5148 = i_11_;
+        sa(var_oa, this.aCanvas5147, i, i_11_);
     }
 
     final void method3434(Rectangle[] rectangles, int i, int i_12_,
                           int i_13_) {
         try {
-            synchronized (((p) this).aCanvas5147.getTreeLock()) {
+            synchronized (this.aCanvas5147.getTreeLock()) {
                 for (int i_14_ = 0; i_14_ < i; i_14_++) {
                     Rectangle rectangle = rectangles[i_14_];
                     if (rectangle.width > 0 && rectangle.height > 0)
@@ -75,14 +75,14 @@ final class p extends Class348 implements Interface19 {
     }
 
     final void method3435(Canvas canvas, int i, int i_15_) {
-        ((p) this).anInt5145 = i;
-        ((p) this).anInt5148 = i_15_;
+        this.anInt5145 = i;
+        this.anInt5148 = i_15_;
         oa(canvas, i, i_15_);
     }
 
     final void method3436() {
         w(true);
-        ((p) this).nativeid = 0L;
-        ((p) this).aCanvas5147 = null;
+        this.nativeid = 0L;
+        this.aCanvas5147 = null;
     }
 }

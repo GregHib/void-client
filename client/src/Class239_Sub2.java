@@ -20,7 +20,7 @@ final class Class239_Sub2 extends Class239 {
 
     final void method1716(boolean bool) {
         anInt5854++;
-        ((Class239) this).anInt3138 = method1710(20014);
+        this.anInt3138 = method1710(20014);
         if (bool != false)
             aClass105Array5857 = null;
     }
@@ -29,7 +29,7 @@ final class Class239_Sub2 extends Class239 {
         if (i != 20014)
             method1716(true);
         anInt5853++;
-        if (!((Class239) this).aClass348_Sub51_3136.method3425(-76))
+        if (!this.aClass348_Sub51_3136.method3425(-76))
             return 0;
         return 1;
     }
@@ -81,11 +81,11 @@ final class Class239_Sub2 extends Class239 {
                             && Class79.method802(i_8_, i_7_, true))
                         i_9_++;
                     int i_10_ = 0;
-                    if ((((Class237) Class338.aClass237_Sub1_4197)
+                    if ((Class338.aClass237_Sub1_4197
                             .aByteArrayArrayArray3104) != null
-                            && (((Class237) Class338.aClass237_Sub1_4197)
+                            && (Class338.aClass237_Sub1_4197
                             .aByteArrayArrayArray3104[i_9_]) != null)
-                        i_10_ = 8 * ((((Class237) Class338.aClass237_Sub1_4197)
+                        i_10_ = 8 * ((Class338.aClass237_Sub1_4197
                                 .aByteArrayArrayArray3104[i_9_][i_7_]
                                 [i_8_])
                                 & 0xff) << 1138837506;
@@ -116,7 +116,7 @@ final class Class239_Sub2 extends Class239 {
 
     final void method1712(int i, int i_13_) {
         int i_14_ = 87 / ((82 - i) / 35);
-        ((Class239) this).anInt3138 = i_13_;
+        this.anInt3138 = i_13_;
         anInt5852++;
     }
 
@@ -124,7 +124,7 @@ final class Class239_Sub2 extends Class239 {
         anInt5856++;
         if (i != -32350)
             aClass105Array5857 = null;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     Class239_Sub2(int i, Class348_Sub51 class348_sub51) {

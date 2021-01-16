@@ -24,10 +24,10 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
             if (i_3_ != 12)
                 method3134(9);
             anInt9418++;
-            if (!((ha_Sub2) var_ha_Sub2).aBoolean7793
+            if (!var_ha_Sub2.aBoolean7793
                     && (!Class192.method1436(-74, i_2_)
                     || !Class192.method1436(127, i_1_))) {
-                if (!((ha_Sub2) var_ha_Sub2).aBoolean7837)
+                if (!var_ha_Sub2.aBoolean7837)
                     return (new Class258_Sub3_Sub1
                             (var_ha_Sub2, i_2_, i_1_,
                                     Class33.method340(i_2_, (byte) 108),
@@ -71,7 +71,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
                 float f = (float) i_4_ / 255.0F;
                 float f_6_ = 1.0F - f;
                 Class119_Sub1.anInt4703
-                        = (((i_5_ * ((((Class190) Class239_Sub14.aClass190_5990)
+                        = (((i_5_ * ((Class239_Sub14.aClass190_5990
                         .anInt2540)
                         & 0xff00ff)
                         + (Class318_Sub1_Sub3.anInt8739 & 0xff00ff) * i_4_)
@@ -79,83 +79,82 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
                         - -(0xff0000
                         & (i_4_ * (0xff00 & Class318_Sub1_Sub3.anInt8739)
                         + (0xff00
-                        & (((Class190) Class239_Sub14.aClass190_5990)
+                        & (Class239_Sub14.aClass190_5990
                         .anInt2540)) * i_5_))) >>> -2125200792;
                 Class239_Sub10.aFloat5945
                         = (Class258_Sub4.aFloat8560
-                        + f_6_ * ((((Class190) Class239_Sub14.aClass190_5990)
+                        + f_6_ * ((Class239_Sub14.aClass190_5990
                         .aFloat2551)
                         - Class258_Sub4.aFloat8560));
                 Class348_Sub3.aFloat6586
-                        = (((Class190) Class239_Sub14.aClass190_5990).aFloat2545
+                        = (Class239_Sub14.aClass190_5990.aFloat2545
                         - Class45.aFloat670) * f_6_ + Class45.aFloat670;
                 Class36.anInt486
                         = (i_4_ * Class239_Sub19.anInt6042
-                        + (((Class190) Class239_Sub14.aClass190_5990).anInt2546
+                        + (Class239_Sub14.aClass190_5990.anInt2546
                         * i_5_)) >> 1063786664;
                 Class160.aFloat2137
                         = (Class318_Sub1_Sub1.aFloat8725
                         + (-Class318_Sub1_Sub1.aFloat8725
-                        + (((Class190) Class239_Sub14.aClass190_5990)
+                        + (Class239_Sub14.aClass190_5990
                         .aFloat2547)) * f_6_);
                 Class244.aFloat4626
                         = (Class64.aFloat1136
-                        + f_6_ * ((((Class190) Class239_Sub14.aClass190_5990)
+                        + f_6_ * ((Class239_Sub14.aClass190_5990
                         .aFloat2544)
                         - Class64.aFloat1136));
                 Class187.anInt2500
                         = (((i_4_ * (0xff00 & Canvas_Sub1.anInt70)
                         + (0xff00
-                        & (((Class190) Class239_Sub14.aClass190_5990)
+                        & (Class239_Sub14.aClass190_5990
                         .anInt2549)) * i_5_)
                         & 0xff0000)
                         + (~0xff00ff
                         & (i_4_ * (0xff00ff & Canvas_Sub1.anInt70)
                         - -(i_5_
-                        * (0xff00ff & (((Class190)
-                        Class239_Sub14.aClass190_5990)
+                        * (0xff00ff & (Class239_Sub14.aClass190_5990
                         .anInt2549)))))) >>> -10587896;
                 Class361.aFloat4455
                         = (Class246.aFloat3177
                         + f_6_ * (-Class246.aFloat3177
-                        + (((Class190) Class239_Sub14.aClass190_5990)
+                        + (Class239_Sub14.aClass190_5990
                         .aFloat2536)));
                 Class269.aFloat3462
                         = (Class245.aFloat3172
-                        + (((Class190) Class239_Sub14.aClass190_5990).aFloat2542
+                        + (Class239_Sub14.aClass190_5990.aFloat2542
                         - Class245.aFloat3172) * f_6_);
                 if (Class239_Sub24.aClass299_6098
-                        != (((Class190) Class239_Sub14.aClass190_5990)
+                        != (Class239_Sub14.aClass190_5990
                         .aClass299_2541))
                     Class158.aClass299_4938
                             = (Class60.aHa1098.method3706
                             (Class239_Sub24.aClass299_6098,
-                                    (((Class190) Class239_Sub14.aClass190_5990)
+                                    (Class239_Sub14.aClass190_5990
                                             .aClass299_2541),
                                     f_6_, Class158.aClass299_4938));
             } else {
                 Class158.aClass299_4938
-                        = (((Class190) Class239_Sub14.aClass190_5990)
+                        = (Class239_Sub14.aClass190_5990
                         .aClass299_2541);
                 Class244.aFloat4626
-                        = ((Class190) Class239_Sub14.aClass190_5990).aFloat2544;
+                        = Class239_Sub14.aClass190_5990.aFloat2544;
                 Class348_Sub3.aFloat6586
-                        = ((Class190) Class239_Sub14.aClass190_5990).aFloat2545;
+                        = Class239_Sub14.aClass190_5990.aFloat2545;
                 Class239_Sub10.aFloat5945
-                        = ((Class190) Class239_Sub14.aClass190_5990).aFloat2551;
+                        = Class239_Sub14.aClass190_5990.aFloat2551;
                 Class36.anInt486
-                        = ((Class190) Class239_Sub14.aClass190_5990).anInt2546;
+                        = Class239_Sub14.aClass190_5990.anInt2546;
                 Class269.aFloat3462
-                        = ((Class190) Class239_Sub14.aClass190_5990).aFloat2542;
+                        = Class239_Sub14.aClass190_5990.aFloat2542;
                 Class361.aFloat4455
-                        = ((Class190) Class239_Sub14.aClass190_5990).aFloat2536;
+                        = Class239_Sub14.aClass190_5990.aFloat2536;
                 Class286_Sub5.anInt6248 = -1;
                 Class187.anInt2500
-                        = ((Class190) Class239_Sub14.aClass190_5990).anInt2549;
+                        = Class239_Sub14.aClass190_5990.anInt2549;
                 Class119_Sub1.anInt4703
-                        = ((Class190) Class239_Sub14.aClass190_5990).anInt2540;
+                        = Class239_Sub14.aClass190_5990.anInt2540;
                 Class160.aFloat2137
-                        = ((Class190) Class239_Sub14.aClass190_5990).aFloat2547;
+                        = Class239_Sub14.aClass190_5990.aFloat2547;
             }
             Class348_Sub33.aLong6963 = l;
         }
@@ -166,15 +165,15 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
                 = Class147.aClass357ArrayArrayArray2029[i][i_7_][i_8_];
         if (class357 == null)
             return null;
-        return ((Class357) class357).aClass318_Sub1_Sub5_4395;
+        return class357.aClass318_Sub1_Sub5_4395;
     }
 
     final int[][] method3047(int i, int i_9_) {
         if (i_9_ != -1564599039)
             method3133((byte) 4);
         anInt9417++;
-        int[][] is = ((Class348_Sub40) this).aClass322_7033.method2557(-78, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        int[][] is = this.aClass322_7033.method2557(-78, i);
+        if (this.aClass322_7033.aBoolean4035) {
             int[][] is_10_ = this.method3039((byte) -104, i, 0);
             int[] is_11_ = is_10_[0];
             int[] is_12_ = is_10_[1];
@@ -198,10 +197,10 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_18_) {
         anInt9420++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
+        int[] is = this.aClass191_7032.method1433(0, i);
         if (i_18_ != 255)
             method3047(-113, -46);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        if (this.aClass191_7032.aBoolean2570) {
             int[] is_19_ = this.method3048(i, 633706337, 0);
             for (int i_20_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
                     < (i_20_ ^ 0xffffffff)); i_20_++)
@@ -215,7 +214,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
         if (i_21_ != 31015)
             aClass273_9415 = null;
         if ((i ^ 0xffffffff) == -1)
-            ((Class348_Sub40) this).aBoolean7045
+            this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
     }
 

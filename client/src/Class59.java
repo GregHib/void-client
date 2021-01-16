@@ -20,12 +20,12 @@ abstract class Class59 {
     private int anInt1079;
     static int anInt1080;
     private int anInt1081;
-    private short[] aShortArray1082;
+    private final short[] aShortArray1082;
     static double aDouble1083;
 
     private final void method539(int i) {
         anInt1070++;
-        Random random = new Random((long) anInt1081);
+        Random random = new Random(anInt1081);
         for (int i_0_ = 0; i_0_ < 255; i_0_++)
             aShortArray1082[i_0_] = (short) i_0_;
         for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -256; i_1_++) {
@@ -36,14 +36,14 @@ abstract class Class59 {
             aShortArray1082[i_2_] = aShortArray1082[256 + i_2_] = i_4_;
         }
         if (i <= 6)
-            ((Class59) this).anInt1071 = -11;
+            this.anInt1071 = -11;
     }
 
     private final void method540(int i) {
-        aShortArray1069 = new short[((Class59) this).anInt1071];
+        aShortArray1069 = new short[this.anInt1071];
         anInt1072++;
-        for (int i_5_ = i; ((Class59) this).anInt1071 > i_5_; i_5_++)
-            aShortArray1069[i_5_] = (short) (int) Math.pow(2.0, (double) i_5_);
+        for (int i_5_ = i; this.anInt1071 > i_5_; i_5_++)
+            aShortArray1069[i_5_] = (short) (int) Math.pow(2.0, i_5_);
     }
 
     abstract void method541(int i);
@@ -68,7 +68,7 @@ abstract class Class59 {
                      i_16_++) {
                     for (int i_17_ = 0;
                          ((i_17_ ^ 0xffffffff)
-                                 > (((Class59) this).anInt1071 ^ 0xffffffff));
+                                 > (this.anInt1071 ^ 0xffffffff));
                          i_17_++) {
                         int i_18_ = aShortArray1069[i_17_] << 374187564;
                         int i_19_ = i_18_ * is_11_[i_14_] >> -58102804;
@@ -192,7 +192,7 @@ abstract class Class59 {
 
     static final int method547(String string, int i) {
         anInt1076++;
-        if (!((Class297) Class59_Sub1.aClass297_5297).aBoolean3777)
+        if (!Class59_Sub1.aClass297_5297.aBoolean3777)
             return -1;
         if (Class275.aHashtable3548.containsKey(string))
             return 100;
@@ -259,14 +259,14 @@ abstract class Class59 {
                 if (i_56_ < class105.method969())
                     i_56_ = class105.method969();
                 int i_57_ = 10;
-                int i_58_ = ((Class348_Sub21) class348_sub21).anInt6853;
-                int i_59_ = ((Class348_Sub21) class348_sub21).anInt6855;
+                int i_58_ = class348_sub21.anInt6853;
+                int i_59_ = class348_sub21.anInt6855;
                 int i_60_ = 0;
                 int i_61_ = 0;
                 int i_62_ = 0;
-                if (((Class42) class42).aString597 != null) {
+                if (class42.aString597 != null) {
                     i_60_ = (Class258_Sub1.aClass143_8527.method1188
-                            (((Class42) class42).aString597, null,
+                            (class42.aString597, null,
                                     ha_Sub3.aStringArray8019, (byte) 87, null));
                     for (int i_63_ = 0; i_60_ > i_63_; i_63_++) {
                         String string = ha_Sub3.aStringArray8019[i_63_];
@@ -280,8 +280,8 @@ abstract class Class59 {
                             - -(Class39.aClass323_521.method2560() / 2));
                 }
                 int i_65_
-                        = i_56_ / 2 + ((Class348_Sub21) class348_sub21).anInt6853;
-                int i_66_ = ((Class348_Sub21) class348_sub21).anInt6855;
+                        = i_56_ / 2 + class348_sub21.anInt6853;
+                int i_66_ = class348_sub21.anInt6855;
                 if ((i_58_ ^ 0xffffffff)
                         <= (Class75.anInt1272 - -i_56_ ^ 0xffffffff)) {
                     if ((-i_56_ + Class75.anInt1276 ^ 0xffffffff)
@@ -305,13 +305,11 @@ abstract class Class59 {
                 }
                 int i_67_
                         = (int) (32767.0
-                        * (Math.atan2((double) (i_58_ - (((Class348_Sub21)
-                                class348_sub21)
-                                .anInt6853)),
-                        (double) (-(((Class348_Sub21)
-                                class348_sub21)
-                                .anInt6855)
-                                + i_59_))
+                        * (Math.atan2(i_58_ - (class348_sub21
+                                .anInt6853),
+						-(class348_sub21
+								.anInt6855)
+								+ i_59_)
                         / 3.141592653589793)) & 0xffff;
                 class105.method981((float) i_56_ / 2.0F + (float) i_58_,
                         (float) i_56_ / 2.0F + (float) i_59_, 4096,
@@ -322,19 +320,19 @@ abstract class Class59 {
                 if (i != -43)
                     method545(-91, -16);
                 int i_71_ = -2;
-                if (((Class42) class42).aString597 != null) {
+                if (class42.aString597 != null) {
                     i_69_ = i_66_;
                     i_68_ = i_65_ + -(i_61_ / 2) - 5;
                     i_71_ = 3 + (i_60_ * Class39.aClass323_521.method2565()
                             + i_69_);
                     i_70_ = i_61_ + (i_68_ + 10);
-                    if (((Class42) class42).anInt602 != 0)
+                    if (class42.anInt602 != 0)
                         var_ha.method3675(-i_68_ + i_70_, (byte) -125, i_68_,
                                 i_69_, i_71_ - i_69_,
-                                ((Class42) class42).anInt602);
-                    if ((((Class42) class42).anInt604 ^ 0xffffffff) != -1)
+                                class42.anInt602);
+                    if ((class42.anInt604 ^ 0xffffffff) != -1)
                         var_ha.method3668(-i_68_ + i_70_, i_69_,
-                                ((Class42) class42).anInt604, i_68_,
+                                class42.anInt604, i_68_,
                                 -i_69_ + i_71_, 67);
                     for (int i_72_ = 0; i_60_ > i_72_; i_72_++) {
                         String string = ha_Sub3.aStringArray8019[i_72_];
@@ -342,29 +340,29 @@ abstract class Class59 {
                             string = string.substring(0, -4 + string.length());
                         Class39.aClass323_521.method2563(var_ha, string, i_65_,
                                 i_66_,
-                                (((Class42) class42)
+                                (class42
                                         .anInt580),
                                 true);
                         i_66_ += Class39.aClass323_521.method2565();
                     }
                 }
-                if (((Class42) class42).anInt578 != -1
-                        || ((Class42) class42).aString597 != null) {
+                if (class42.anInt578 != -1
+                        || class42.aString597 != null) {
                     i_56_ >>= 1;
                     Class348_Sub12 class348_sub12
                             = new Class348_Sub12(class348_sub21);
-                    ((Class348_Sub12) class348_sub12).anInt6737 = i_70_;
-                    ((Class348_Sub12) class348_sub12).anInt6746
+                    class348_sub12.anInt6737 = i_70_;
+                    class348_sub12.anInt6746
                             = -i_56_ + i_59_;
-                    ((Class348_Sub12) class348_sub12).anInt6735
+                    class348_sub12.anInt6735
                             = i_59_ - -i_56_;
-                    ((Class348_Sub12) class348_sub12).anInt6750
+                    class348_sub12.anInt6750
                             = i_58_ - -i_56_;
-                    ((Class348_Sub12) class348_sub12).anInt6738 = i_71_;
-                    ((Class348_Sub12) class348_sub12).anInt6753 = i_69_;
-                    ((Class348_Sub12) class348_sub12).anInt6747
+                    class348_sub12.anInt6738 = i_71_;
+                    class348_sub12.anInt6753 = i_69_;
+                    class348_sub12.anInt6747
                             = i_58_ - i_56_;
-                    ((Class348_Sub12) class348_sub12).anInt6745 = i_68_;
+                    class348_sub12.anInt6745 = i_68_;
                     Class289.aClass262_3705.method1999(class348_sub12, -20180);
                 }
             }
@@ -379,12 +377,12 @@ abstract class Class59 {
     }
 
     Class59(int i, int i_73_, int i_74_, int i_75_, int i_76_) {
-        ((Class59) this).anInt1071 = 4;
+        this.anInt1071 = 4;
         anInt1081 = 0;
         aShortArray1082 = new short[512];
         anInt1078 = 4;
         anInt1079 = 4;
-        ((Class59) this).anInt1071 = i_73_;
+        this.anInt1071 = i_73_;
         anInt1078 = i_75_;
         anInt1079 = i_74_;
         anInt1081 = i;

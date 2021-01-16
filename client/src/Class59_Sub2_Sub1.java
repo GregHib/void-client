@@ -22,8 +22,8 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
             int[] is_2_ = null;
             int[] is_3_ = null;
             float[][] fs = null;
-            if (((Class124) class124).aByteArray1820 != null) {
-                int i_4_ = ((Class124) class124).anInt1818;
+            if (class124.aByteArray1820 != null) {
+                int i_4_ = class124.anInt1818;
                 int[] is_5_ = new int[i_4_];
                 int[] is_6_ = new int[i_4_];
                 int[] is_7_ = new int[i_4_];
@@ -44,30 +44,30 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                 for (int i_12_ = 0; (i_0_ ^ 0xffffffff) < (i_12_ ^ 0xffffffff);
                      i_12_++) {
                     int i_13_ = is[i_12_];
-                    if ((((Class124) class124).aByteArray1820[i_13_]
+                    if ((class124.aByteArray1820[i_13_]
                             ^ 0xffffffff)
                             != 0) {
                         int i_14_
-                                = (((Class124) class124).aByteArray1820[i_13_]
+                                = (class124.aByteArray1820[i_13_]
                                 & 0xff);
                         for (int i_15_ = 0; i_15_ < 3; i_15_++) {
                             short i_16_;
                             if ((i_15_ ^ 0xffffffff) != -1) {
                                 if ((i_15_ ^ 0xffffffff) == -2)
-                                    i_16_ = (((Class124) class124)
+                                    i_16_ = (class124
                                             .aShortArray1835[i_13_]);
                                 else
-                                    i_16_ = (((Class124) class124)
+                                    i_16_ = (class124
                                             .aShortArray1855[i_13_]);
                             } else
-                                i_16_ = (((Class124) class124).aShortArray1863
+                                i_16_ = (class124.aShortArray1863
                                         [i_13_]);
                             int i_17_
-                                    = ((Class124) class124).anIntArray1841[i_16_];
+                                    = class124.anIntArray1841[i_16_];
                             int i_18_
-                                    = ((Class124) class124).anIntArray1847[i_16_];
+                                    = class124.anIntArray1847[i_16_];
                             int i_19_
-                                    = ((Class124) class124).anIntArray1852[i_16_];
+                                    = class124.anIntArray1852[i_16_];
                             if ((is_5_[i_14_] ^ 0xffffffff)
                                     < (i_17_ ^ 0xffffffff))
                                 is_5_[i_14_] = i_17_;
@@ -90,7 +90,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                 is_1_ = new int[i_4_];
                 for (int i_20_ = 0; (i_20_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff);
                      i_20_++) {
-                    byte i_21_ = ((Class124) class124).aByteArray1823[i_20_];
+                    byte i_21_ = class124.aByteArray1823[i_20_];
                     if ((i_21_ ^ 0xffffffff) < -1) {
                         is_1_[i_20_] = (is_6_[i_20_] + is_5_[i_20_]) / 2;
                         is_2_[i_20_] = (is_8_[i_20_] + is_7_[i_20_]) / 2;
@@ -100,7 +100,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                         float f_23_;
                         if (i_21_ == 1) {
                             int i_24_
-                                    = ((Class124) class124).anIntArray1859[i_20_];
+                                    = class124.anIntArray1859[i_20_];
                             if ((i_24_ ^ 0xffffffff) == -1) {
                                 f_22_ = 1.0F;
                                 f_23_ = 1.0F;
@@ -111,30 +111,30 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                                 f_23_ = 1.0F;
                                 f_22_ = (float) i_24_ / 1024.0F;
                             }
-                            f = 64.0F / (float) (((Class124) class124)
+                            f = 64.0F / (float) (class124
                                     .anIntArray1816[i_20_]);
                         } else if ((i_21_ ^ 0xffffffff) == -3) {
-                            f = 64.0F / (float) (((Class124) class124)
+                            f = 64.0F / (float) (class124
                                     .anIntArray1816[i_20_]);
-                            f_22_ = 64.0F / (float) (((Class124) class124)
+                            f_22_ = 64.0F / (float) (class124
                                     .anIntArray1844[i_20_]);
-                            f_23_ = 64.0F / (float) (((Class124) class124)
+                            f_23_ = 64.0F / (float) (class124
                                     .anIntArray1859[i_20_]);
                         } else {
-                            f = (float) (((Class124) class124).anIntArray1816
+                            f = (float) (class124.anIntArray1816
                                     [i_20_]) / 1024.0F;
-                            f_22_ = (float) (((Class124) class124)
+                            f_22_ = (float) (class124
                                     .anIntArray1844[i_20_]) / 1024.0F;
-                            f_23_ = (float) (((Class124) class124)
+                            f_23_ = (float) (class124
                                     .anIntArray1859[i_20_]) / 1024.0F;
                         }
                         fs[i_20_]
                                 = (Class175.method1347
-                                (((Class124) class124).aShortArray1825[i_20_],
-                                        ((Class124) class124).aShortArray1849[i_20_],
+                                (class124.aShortArray1825[i_20_],
+                                        class124.aShortArray1849[i_20_],
                                         f_22_, f_23_, 126, f,
-                                        ((Class124) class124).aShortArray1829[i_20_],
-                                        Class139.method1166(255, (((Class124) class124)
+                                        class124.aShortArray1829[i_20_],
+                                        Class139.method1166(255, (class124
                                                 .aByteArray1833
                                                 [i_20_]))));
                     }

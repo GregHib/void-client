@@ -27,11 +27,11 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
         anInt9646++;
         if (bool != true)
             method3248(-60);
-        return (int) (((Class348) this).aLong4291 >>> -1780618848 & 0xffL);
+        return (int) (this.aLong4291 >>> -1780618848 & 0xffL);
     }
 
     final void method3246(int i) {
-        ((Class348_Sub42) this).aLong7057 |= ~0x7fffffffffffffffL;
+        this.aLong7057 |= ~0x7fffffffffffffffL;
         anInt9653++;
         if (method3250((byte) -89) == 0L)
             Class367_Sub4.aClass107_7325.method1005(true, this);
@@ -52,7 +52,7 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
         if (i != 1)
             return -110;
         anInt9647++;
-        return (int) ((Class348) this).aLong4291;
+        return (int) this.aLong4291;
     }
 
     static final Class242 method3249(int i, int i_0_, ha_Sub2 var_ha_Sub2,
@@ -106,17 +106,17 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
         anInt9649++;
         if (i >= -37)
             method3250((byte) 79);
-        return ((Class348_Sub42) this).aLong7057 & 0x7fffffffffffffffL;
+        return this.aLong7057 & 0x7fffffffffffffffL;
     }
 
     Class348_Sub42_Sub15(int i, int i_2_) {
-        ((Class348) this).aLong4291 = (long) i << -1165915296 | (long) i_2_;
+        this.aLong4291 = (long) i << -1165915296 | (long) i_2_;
     }
 
     final void method3251(int i) {
         anInt9648++;
-        ((Class348_Sub42) this).aLong7057
-                = (~0x7fffffffffffffffL & ((Class348_Sub42) this).aLong7057
+        this.aLong7057
+                = (~0x7fffffffffffffffL & this.aLong7057
                 | Class62.method599(-120) + 500L);
         s_Sub2.aClass107_8241.method1005(true, this);
         if (i != -16058)

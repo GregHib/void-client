@@ -93,19 +93,16 @@ final class Class121 {
             if (!Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_9_, i_15_,
                     i_14_, i_14_, i_10_, i_15_, false))
                 return false;
-            if (!Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_13_, i_15_,
-                    i_14_, i_10_, i_10_, i_15_, false))
-                return false;
+			return Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_13_, i_15_,
+					i_14_, i_10_, i_10_, i_15_, false);
         } else {
             if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_9_, i_8_, i_14_,
                     i_14_, i_10_, i_8_, false))
                 return false;
-            if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_13_, i_8_,
-                    i_14_, i_10_, i_10_, i_8_, false))
-                return false;
+			return Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_13_, i_8_,
+					i_14_, i_10_, i_10_, i_8_, false);
         }
-        return true;
-    }
+	}
 
     static {
         anInt1794 = -1;

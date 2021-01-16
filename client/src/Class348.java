@@ -23,9 +23,7 @@ class Class348 {
         if (i_1_ != -1)
             method2711(-42, 89, null, -113, true, -22, -35, 27, -109, null, 74,
                     -94, -119, null);
-        if ((0x21 & i_0_ ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (0x21 & i_0_ ^ 0xffffffff) != -1;
     }
 
     static final int method2710(int i, int i_2_) {
@@ -155,7 +153,7 @@ class Class348 {
             int i_34_ = class64.G();
             Class348_Sub42_Sub17 class348_sub42_sub17 = null;
             if (class17 != null) {
-                i_5_ = ((Class17) class17).anIntArray237[i_5_];
+                i_5_ = class17.anIntArray237[i_5_];
                 class348_sub42_sub17
                         = Class10.aClass87_191.method839(i_5_ >> -2049946032, 3);
                 i_5_ &= 0xffff;
@@ -198,9 +196,7 @@ class Class348 {
         if (i != 4)
             return true;
         anInt4297++;
-        if (((Class348) this).aClass348_4295 == null)
-            return false;
-        return true;
+        return this.aClass348_4295 != null;
     }
 
     public static void method2713(int i) {
@@ -216,23 +212,21 @@ class Class348 {
         if (i != 7351)
             method2709(-15, 59, 58);
         anInt4296++;
-        if ((i_35_ ^ 0xffffffff) != -2 && (i_35_ ^ 0xffffffff) != -4
-                && (i_35_ ^ 0xffffffff) != -6)
-            return false;
-        return true;
+        return (i_35_ ^ 0xffffffff) == -2 || (i_35_ ^ 0xffffffff) == -4
+                || (i_35_ ^ 0xffffffff) == -6;
     }
 
     final void method2715(byte i) {
         anInt4285++;
-        if (((Class348) this).aClass348_4295 != null) {
-            ((Class348) ((Class348) this).aClass348_4295).aClass348_4294
-                    = ((Class348) this).aClass348_4294;
-            ((Class348) ((Class348) this).aClass348_4294).aClass348_4295
-                    = ((Class348) this).aClass348_4295;
+        if (this.aClass348_4295 != null) {
+            this.aClass348_4295.aClass348_4294
+                    = this.aClass348_4294;
+            this.aClass348_4294.aClass348_4295
+                    = this.aClass348_4295;
             if (i < 18)
                 method2712((byte) 46);
-            ((Class348) this).aClass348_4294 = null;
-            ((Class348) this).aClass348_4295 = null;
+            this.aClass348_4294 = null;
+            this.aClass348_4295 = null;
         }
     }
 

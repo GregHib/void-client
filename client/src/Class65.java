@@ -6,11 +6,11 @@ final class Class65 {
     static int anInt1138;
     static int anInt1139;
     static int anInt1140;
-    private Class45 aClass45_1141;
+    private final Class45 aClass45_1141;
     static int anInt1142;
     static int anInt1143;
     static Class351 aClass351_1144;
-    private Class60 aClass60_1145 = new Class60(256);
+    private final Class60 aClass60_1145 = new Class60(256);
     static Class110_Sub1[] aClass110_Sub1Array1146 = new Class110_Sub1[0];
     static int anInt1147;
     static Class357[][][] aClass357ArrayArrayArray1148;
@@ -98,7 +98,7 @@ final class Class65 {
         Class348_Sub42_Sub1 class348_sub42_sub1;
         synchronized (aClass60_1145) {
             class348_sub42_sub1
-                    = (Class348_Sub42_Sub1) aClass60_1145.method583((long) i,
+                    = (Class348_Sub42_Sub1) aClass60_1145.method583(i,
                     -101);
         }
         if (class348_sub42_sub1 != null)
@@ -112,7 +112,7 @@ final class Class65 {
             class348_sub42_sub1.method3168(new Class348_Sub49(is),
                     (byte) -101);
         synchronized (aClass60_1145) {
-            aClass60_1145.method582(class348_sub42_sub1, (long) i,
+            aClass60_1145.method582(class348_sub42_sub1, i,
                     (byte) -114);
         }
         return class348_sub42_sub1;

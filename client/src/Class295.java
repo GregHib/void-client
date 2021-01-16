@@ -41,16 +41,15 @@ final class Class295 {
         Class348_Sub9 class348_sub9
                 = ((Class348_Sub9)
                 (Class348_Sub42_Sub16_Sub2.aClass356_10465.method3480
-                        ((long) ((Class318_Sub1_Sub3_Sub3)
-                                        class318_sub1_sub3_sub3_sub2).anInt10290,
+                        (class318_sub1_sub3_sub3_sub2.anInt10290,
                                 -6008)));
         if (class348_sub9 != null) {
-            if (((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6676
+            if (class348_sub9.aClass348_Sub16_Sub5_6676
                     != null) {
                 Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880
-                        (((Class348_Sub9) class348_sub9)
+                        (class348_sub9
                                 .aClass348_Sub16_Sub5_6676);
-                ((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6676
+                class348_sub9.aClass348_Sub16_Sub5_6676
                         = null;
             }
             class348_sub9.method2715((byte) 82);
@@ -74,9 +73,9 @@ final class Class295 {
 
     Class295(String string, String string_4_, String string_5_) {
         try {
-            ((Class295) this).aString3754 = string_4_;
-            ((Class295) this).aString3758 = string_5_;
-            ((Class295) this).aString3756 = string;
+            this.aString3754 = string_4_;
+            this.aString3758 = string_5_;
+            this.aString3756 = string;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

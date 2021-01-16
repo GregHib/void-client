@@ -50,7 +50,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
         if (i != 42)
             method1077(null, (byte) -124);
         anInt4704++;
-        return ((Class119) this).aBuffer1792.getAddress();
+        return this.aBuffer1792.getAddress();
     }
 
     static final void method1077(ha var_ha, byte i) {
@@ -75,74 +75,66 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                 string = Class316.method2367((byte) -52, class348_sub42_sub12);
                 int[] is = null;
                 if (!Class148.method1197(-12081,
-                        ((Class348_Sub42_Sub12)
-                                class348_sub42_sub12).anInt9608)) {
-                    if (((Class348_Sub42_Sub12) class348_sub42_sub12).anInt9599
+                        class348_sub42_sub12.anInt9608)) {
+                    if (class348_sub42_sub12.anInt9599
                             != -1)
-                        is = ((Class213)
-                                (Exception_Sub1.aClass255_112.method1940
-                                        (98,
-                                                (((Class348_Sub42_Sub12) class348_sub42_sub12)
-                                                        .anInt9599)))).anIntArray2772;
-                    else if (Class367_Sub8.method3549((((Class348_Sub42_Sub12)
-                                    class348_sub42_sub12)
+                        is = Exception_Sub1.aClass255_112.method1940
+								(98,
+										(class348_sub42_sub12
+												.anInt9599)).anIntArray2772;
+                    else if (Class367_Sub8.method3549((class348_sub42_sub12
                                     .anInt9608),
                             (byte) 107)) {
                         Class348_Sub22 class348_sub22
                                 = ((Class348_Sub22)
                                 (Class282.aClass356_3654.method3480
-                                        ((long) (int) ((Class348_Sub42_Sub12)
-                                                        class348_sub42_sub12).aLong9605,
+                                        ((int) class348_sub42_sub12.aLong9605,
                                                 -6008)));
                         if (class348_sub22 != null) {
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
-                                    = (((Class348_Sub22) class348_sub22)
+                                    = (class348_sub22
                                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                            Class79 class79 = (((Class318_Sub1_Sub3_Sub3_Sub1)
-                                    class318_sub1_sub3_sub3_sub1)
+                            Class79 class79 = (class318_sub1_sub3_sub3_sub1
                                     .aClass79_10505);
-                            if (((Class79) class79).anIntArray1377 != null)
+                            if (class79.anIntArray1377 != null)
                                 class79 = (class79.method794
                                         ((Class318_Sub1_Sub3_Sub3
                                                         .aClass170_10209),
                                                 -1));
                             if (class79 != null)
-                                is = ((Class79) class79).anIntArray1342;
+                                is = class79.anIntArray1342;
                         }
                     } else if (Class239_Sub21.method1813
                             (8806,
-                                    (((Class348_Sub42_Sub12) class348_sub42_sub12)
+                                    (class348_sub42_sub12
                                             .anInt9608))) {
                         Object object = null;
                         Class51 class51;
-                        if ((((Class348_Sub42_Sub12) class348_sub42_sub12)
+                        if ((class348_sub42_sub12
                                 .anInt9608)
                                 != 1001)
                             class51 = (Class348_Sub40_Sub12.aClass263_9195
                                     .method2005
-                                            (0, (int) ((((Class348_Sub42_Sub12)
-                                                    class348_sub42_sub12)
+                                            (0, (int) ((class348_sub42_sub12
                                                     .aLong9605) >>> -773937632
                                                     & 0x7fffffffL)));
                         else
                             class51 = (Class348_Sub40_Sub12.aClass263_9195
                                     .method2005
-                                            (0, (int) (((Class348_Sub42_Sub12)
-                                                    class348_sub42_sub12)
+                                            (0, (int) (class348_sub42_sub12
                                                     .aLong9605)));
-                        if (((Class51) class51).anIntArray945 != null)
+                        if (class51.anIntArray945 != null)
                             class51
                                     = class51.method480((Class318_Sub1_Sub3_Sub3
                                             .aClass170_10209),
                                     (byte) 47);
                         if (class51 != null)
-                            is = ((Class51) class51).anIntArray917;
+                            is = class51.anIntArray917;
                     }
                 } else
-                    is = (((Class213) (Exception_Sub1.aClass255_112.method1940
-                            (-73, (int) (((Class348_Sub42_Sub12)
-                                    class348_sub42_sub12)
-                                    .aLong9605))))
+                    is = (Exception_Sub1.aClass255_112.method1940
+                            (-73, (int) (class348_sub42_sub12
+                                    .aLong9605))
                             .anIntArray2772);
                 if (is != null)
                     string += Class163.method1273(is, true);
@@ -162,14 +154,14 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                     class324 = Class262.aClass324_3326;
                 class324.method2585
                         (Class175.anIntArray2330,
-                                ((Class46) Class348_Sub36.aClass46_6990).anInt709,
+                                Class348_Sub36.aClass46_6990.anInt709,
                                 Class341.aClass105Array4234,
-                                ((Class46) Class348_Sub36.aClass46_6990).anInt700,
-                                ((Class46) Class348_Sub36.aClass46_6990).anInt749,
-                                ((Class46) Class348_Sub36.aClass46_6990).anInt789,
-                                ((Class46) Class348_Sub36.aClass46_6990).anInt809,
+                                Class348_Sub36.aClass46_6990.anInt700,
+                                Class348_Sub36.aClass46_6990.anInt749,
+                                Class348_Sub36.aClass46_6990.anInt789,
+                                Class348_Sub36.aClass46_6990.anInt809,
                                 OutputStream_Sub1.aRandom93,
-                                ((Class46) Class348_Sub36.aClass46_6990).anInt762,
+                                Class348_Sub36.aClass46_6990.anInt762,
                                 Class32.anInt451, Class356.anInt4383, -33,
                                 Class332.anInt4141, string, Class195.anIntArray5007);
                 Class13.method226(Class195.anIntArray5007[0],

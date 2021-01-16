@@ -22,9 +22,7 @@ final class Class161 {
         if (i_0_ != -9301)
             method1263(true);
         anInt2150++;
-        if ((0x800 & i) == 0)
-            return false;
-        return true;
+        return (0x800 & i) != 0;
     }
 
     final void method1259(int i) {
@@ -81,138 +79,117 @@ final class Class161 {
             method1258(-105, -70, -80);
         anInt2144++;
         return class297.method2235(aBoolean2139,
-                (aBoolean2146 ? ((Class161) this).anInt2138
-                        : ((Class161) this).anInt2148),
-                ((Class161) this).aString2147, i ^ 0x6e65);
+                (aBoolean2146 ? this.anInt2138
+                        : this.anInt2148),
+                this.aString2147, i ^ 0x6e65);
     }
 
     static final void method1263(boolean bool) {
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub27_7255),
                 1);
         anInt2142++;
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub27_7261),
                 1);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub14_7250),
                 1);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub14_7264),
                 1);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub4_7220),
                 1);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub9_7256),
                 1);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub13_7236),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub1_7246),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub21_7270),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub7_7238),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub24_7235),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub28_7230),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub18_7259),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub16_7247),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub20_7216),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub20_7248),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub15_7224),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub6_7226),
                 0);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub12_7243),
                 0);
         Class237.method1686(55);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub23_7231),
                 2);
         Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                (((Class348_Sub51)
-                        (Class316
-                                .aClass348_Sub51_3959))
+                (Class316
+                        .aClass348_Sub51_3959
                         .aClass239_Sub29_7229),
                 2);
         Class348_Sub40.method3038(-1);
@@ -225,18 +202,15 @@ final class Class161 {
             return false;
         anInt2141++;
         if (class161_2_ != null) {
-            if ((((Class161) this).anInt2143
-                    != ((Class161) class161_2_).anInt2143)
-                    || !((Class161) this).aString2147
-                    .equals(((Class161) class161_2_).aString2147))
-                return false;
-            return true;
+            return (this.anInt2143 == class161_2_.anInt2143)
+                    && this.aString2147
+                    .equals(class161_2_.aString2147);
         }
         return false;
     }
 
     public Class161() {
-        ((Class161) this).anInt2138 = 443;
-        ((Class161) this).anInt2148 = 43594;
+        this.anInt2138 = 443;
+        this.anInt2148 = 43594;
     }
 }

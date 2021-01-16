@@ -7,24 +7,24 @@ import java.awt.*;
 final class Class305 {
     private int anInt3852;
     private int anInt3853;
-    private int anInt3854;
+    private final int anInt3854;
     static int anInt3855;
     static int anInt3856;
     private boolean aBoolean3857 = true;
-    private int anInt3858;
+    private final int anInt3858;
     private int anInt3859 = -1;
     static int anInt3860;
     static int anInt3861;
-    private Class72[] aClass72Array3862;
+    private final Class72[] aClass72Array3862;
     private int anInt3863;
     static int anInt3864;
-    private Class72[] aClass72Array3865;
-    private int anInt3866;
+    private final Class72[] aClass72Array3865;
+    private final int anInt3866;
     private Class105 aClass105_3867;
     static int anInt3868;
     static Canvas aCanvas3869;
     static boolean aBoolean3870 = false;
-    private Class72 aClass72_3871;
+    private final Class72 aClass72_3871;
 
     final boolean method2292(int i, ha var_ha, int i_0_) {
         if ((i_0_ ^ 0xffffffff) != (anInt3859 ^ 0xffffffff)) {
@@ -45,7 +45,7 @@ final class Class305 {
                     Class72 class72 = aClass72Array3862[i_2_];
                     if (class72.method733(anInt3866, anInt3854, anInt3853,
                             anInt3859)) {
-                        is[anInt3852] = ((Class72) class72).anInt1232;
+                        is[anInt3852] = class72.anInt1232;
                         aClass72Array3865[anInt3852++] = class72;
                     }
                 }
@@ -81,7 +81,7 @@ final class Class305 {
             Class12 class12 = Class101_Sub1.aD5684.method3(anInt3858, -6662);
             if (aClass105_3867 == null
                     && Class101_Sub1.aD5684.method4(-7953, anInt3858)) {
-                int[] is = ((((Class12) class12).anInt200 ^ 0xffffffff) == -3
+                int[] is = ((class12.anInt200 ^ 0xffffffff) == -3
                         ? Class101_Sub1.aD5684.method6(-21540, anInt3863,
                         0.7F, anInt3858,
                         false, anInt3863)
@@ -91,10 +91,10 @@ final class Class305 {
                 aClass105_3867 = var_ha.method3662(anInt3863, is, (byte) 94, 0,
                         anInt3863, anInt3863);
             }
-            if ((((Class12) class12).anInt200 ^ 0xffffffff) == -3)
+            if ((class12.anInt200 ^ 0xffffffff) == -3)
                 var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
             if (aClass105_3867 != null) {
-                int i_14_ = ((Class12) class12).anInt200 == 2 ? 1 : 0;
+                int i_14_ = class12.anInt200 == 2 ? 1 : 0;
                 int i_15_ = i_13_ * i_11_ / -4096;
                 int i_16_;
                 for (i_16_ = (-i_13_ + i_8_) / 2 + i_13_ * i_10_ / 4096;

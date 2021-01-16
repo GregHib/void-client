@@ -20,7 +20,7 @@ final class Class303 {
                     = Class286_Sub3.method2148(Class241.aClass351_3150,
                     Class348_Sub23_Sub2.aClass77_9029,
                     -126);
-            ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+            class348_sub47.aClass348_Sub49_Sub2_7116
                     .method3337((byte) 107, i_0_);
             Class348_Sub42_Sub14.method3243(42, class348_sub47);
         }

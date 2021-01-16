@@ -11,13 +11,13 @@ final class Class177 implements Interface1 {
     static int anInt4668;
     static int anInt4669;
     static int[] anIntArray4670 = new int[3];
-    private Class52 aClass52_4671;
+    private final Class52 aClass52_4671;
 
     public final void method9(byte i, boolean bool) {
         if (bool)
             Class348_Sub8.aHa6654.aa(0, 0, Class321.anInt4017,
                     Class348_Sub42_Sub8_Sub2.anInt10432,
-                    ((Class52) aClass52_4671).anInt4899, 0);
+                    aClass52_4671.anInt4899, 0);
         anInt4668++;
         if (i != -49)
             anInt4666 = -20;
@@ -27,7 +27,7 @@ final class Class177 implements Interface1 {
         anInt4664++;
         if (i_2_ != -98)
             method1354((byte) 69);
-        i_0_ = (i_0_ * ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        i_0_ = (i_0_ * Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7260.method1838(-32350)
                 >> -2091864696);
         if (i_0_ != 0 && i != -1) {
@@ -68,14 +68,14 @@ final class Class177 implements Interface1 {
                 = Class147.aClass357ArrayArrayArray2029[i][i_4_][i_5_];
         if (class357 == null)
             return null;
-        for (Class148 class148 = ((Class357) class357).aClass148_4396;
+        for (Class148 class148 = class357.aClass148_4396;
              class148 != null;
-             class148 = ((Class148) class148).aClass148_2038) {
+             class148 = class148.aClass148_2038) {
             Class318_Sub1_Sub3 class318_sub1_sub3
-                    = ((Class148) class148).aClass318_Sub1_Sub3_2040;
+                    = class148.aClass318_Sub1_Sub3_2040;
             if (var_class.isAssignableFrom(class318_sub1_sub3.getClass())
-                    && ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743 == i_4_
-                    && (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8750
+                    && class318_sub1_sub3.aShort8743 == i_4_
+                    && (class318_sub1_sub3.aShort8750
                     == i_5_))
                 return class318_sub1_sub3;
         }

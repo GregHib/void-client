@@ -31,20 +31,18 @@ final class Class284 {
         if (bool != true)
             return true;
         anInt3664++;
-        if (((Class284) class284_0_).anInt3673 == ((Class284) this).anInt3673
-                && ((((Class284) class284_0_).anInt3667 ^ 0xffffffff)
-                == (((Class284) this).anInt3667 ^ 0xffffffff))
-                && ((((Class284) class284_0_).anInt3671 ^ 0xffffffff)
-                == (((Class284) this).anInt3671 ^ 0xffffffff)))
-            return true;
-        return false;
+        return class284_0_.anInt3673 == this.anInt3673
+                && ((class284_0_.anInt3667 ^ 0xffffffff)
+                == (this.anInt3667 ^ 0xffffffff))
+                && ((class284_0_.anInt3671 ^ 0xffffffff)
+                == (this.anInt3671 ^ 0xffffffff));
     }
 
     static final int method2116(int i) {
         anInt3665++;
         ha var_ha = Class348_Sub8.aHa6654;
         boolean bool = false;
-        if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if ((Class316.aClass348_Sub51_3959
                 .aClass239_Sub25_7271.method1829(i + -5766)
                 ^ 0xffffffff)
                 != -1) {

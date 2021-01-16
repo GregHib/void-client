@@ -39,13 +39,13 @@ final class Class169 implements Runnable {
             int i;
             try {
                 byte[] is = InetAddress.getByName
-                        (((Class348_Sub26) class348_sub26).aString6888)
+                        (class348_sub26.aString6888)
                         .getAddress();
                 i = jagmisc.ping(is[0], is[1], is[2], is[3], 1000L);
             } catch (Throwable throwable) {
                 i = 1000;
             }
-            ((Class348_Sub26) class348_sub26).anInt6887 = i;
+            class348_sub26.anInt6887 = i;
         }
     }
 

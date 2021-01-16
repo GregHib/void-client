@@ -29,7 +29,7 @@ abstract class Class348_Sub5 extends Class348 {
         anInt6625++;
         Class138[] class138s = Class348_Sub27.method3002((byte) -97);
         for (int i_3_ = i_2_; class138s.length > i_3_; i_3_++) {
-            if (i == ((Class138) class138s[i_3_]).anInt1941)
+            if (i == class138s[i_3_].anInt1941)
                 return class138s[i_3_];
         }
         return null;
@@ -122,12 +122,10 @@ abstract class Class348_Sub5 extends Class348 {
                                 .method1705(1, 104)) {
                             Class348_Sub40_Sub8.aClass238_9165.method1701
                                     (1, 0, (byte) -116,
-                                            (((Class348_Sub49)
-                                                    Class299.aClass348_Sub49_Sub2_3813)
+                                            (Class299.aClass348_Sub49_Sub2_3813
                                                     .aByteArray7154));
                             int i_11_
-                                    = 0xff & (((Class348_Sub49)
-                                    Class299.aClass348_Sub49_Sub2_3813)
+                                    = 0xff & (Class299.aClass348_Sub49_Sub2_3813
                                     .aByteArray7154[0]);
                             Class352.anInt4337 = i_11_;
                             Class367_Sub2.anInt7297 = 0;
@@ -168,7 +166,7 @@ abstract class Class348_Sub5 extends Class348 {
         if (i != 1)
             method2763((byte) 37);
         anInt6619++;
-        return ((Class348_Sub5) this).aBoolean6621;
+        return this.aBoolean6621;
     }
 
     int method2761(boolean bool) {
@@ -187,7 +185,7 @@ abstract class Class348_Sub5 extends Class348 {
     abstract void method2763(byte i);
 
     Class348_Sub5(ha_Sub2 var_ha_Sub2) {
-        ((Class348_Sub5) this).aHa_Sub2_6618 = var_ha_Sub2;
+        this.aHa_Sub2_6618 = var_ha_Sub2;
     }
 
     final int method2764(int i) {

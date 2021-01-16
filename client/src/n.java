@@ -18,20 +18,20 @@ final class n extends Class324 implements Interface19 {
         int[] is_7_ = new int[class207s.length];
         int[] is_8_ = new int[class207s.length];
         for (int i = 0; i < class207s.length; i++) {
-            is[i] = ((Class207) class207s[i]).aByteArray2699;
-            is_5_[i] = ((Class207) class207s[i]).anInt2702;
-            is_6_[i] = ((Class207) class207s[i]).anInt2696;
-            is_7_[i] = ((Class207) class207s[i]).anInt2703;
-            is_8_[i] = ((Class207) class207s[i]).anInt2700;
+            is[i] = class207s[i].aByteArray2699;
+            is_5_[i] = class207s[i].anInt2702;
+            is_6_[i] = class207s[i].anInt2696;
+            is_7_[i] = class207s[i].anInt2703;
+            is_8_[i] = class207s[i].anInt2700;
         }
-        S(var_oa, var_ya, is, ((Class207) class207s[0]).anIntArray2697, is_5_,
+        S(var_oa, var_ya, is, class207s[0].anIntArray2697, is_5_,
                 is_6_, is_7_, is_8_);
     }
 
     public final native void w(boolean bool);
 
     protected final void finalize() {
-        if (((n) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 

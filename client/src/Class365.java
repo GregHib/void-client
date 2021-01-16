@@ -21,11 +21,11 @@ final class Class365 {
 
     Class365(int i, String string, int i_0_, String string_1_, long l) {
         try {
-            ((Class365) this).aLong4471 = l;
-            ((Class365) this).anInt4475 = i_0_;
-            ((Class365) this).anInt4476 = i;
-            ((Class365) this).aString4472 = string_1_;
-            ((Class365) this).aString4470 = string;
+            this.aLong4471 = l;
+            this.anInt4475 = i_0_;
+            this.anInt4476 = i;
+            this.aString4472 = string_1_;
+            this.aString4470 = string;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("fia.<init>(" + i + ','

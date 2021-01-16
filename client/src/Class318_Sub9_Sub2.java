@@ -65,10 +65,10 @@ class Class318_Sub9_Sub2 extends Class318_Sub9 {
                                                     ((byte) -86, i_1_ + 1,
                                                             i_0_ + 1))) / 4);
                                     Class318_Sub1_Sub4 class318_sub1_sub4
-                                            = (((Class357) class357)
+                                            = (class357
                                             .aClass318_Sub1_Sub4_4406);
                                     Class318_Sub1_Sub4 class318_sub1_sub4_12_
-                                            = (((Class357) class357)
+                                            = (class357
                                             .aClass318_Sub1_Sub4_4403);
                                     if (class318_sub1_sub4 != null
                                             && class318_sub1_sub4.method2388(-127))
@@ -104,54 +104,46 @@ class Class318_Sub9_Sub2 extends Class318_Sub9 {
                                                                 * (Class348_Sub23_Sub2
                                                                 .anInt9037))));
                                     for (Class148 class148
-                                         = (((Class357) class357)
+                                         = (class357
                                             .aClass148_4396);
                                          class148 != null;
-                                         class148 = (((Class148) class148)
+                                         class148 = (class148
                                                  .aClass148_2038)) {
                                         Class318_Sub1_Sub3 class318_sub1_sub3
-                                                = (((Class148) class148)
+                                                = (class148
                                                 .aClass318_Sub1_Sub3_2040);
                                         if (class318_sub1_sub3 != null
                                                 && class318_sub1_sub3
                                                 .method2388(-111)
-                                                && (i_9_ == (((Class318_Sub1_Sub3)
-                                                class318_sub1_sub3)
+                                                && (i_9_ == (class318_sub1_sub3
                                                 .aShort8743)
                                                 || i_9_ == i_4_)
-                                                && (i_10_ == (((Class318_Sub1_Sub3)
-                                                class318_sub1_sub3)
+                                                && (i_10_ == (class318_sub1_sub3
                                                 .aShort8750)
                                                 || i_10_ == i_6_)) {
                                             int i_13_
-                                                    = ((((Class318_Sub1_Sub3)
-                                                    class318_sub1_sub3)
+                                                    = ((class318_sub1_sub3
                                                     .aShort8751)
-                                                    - (((Class318_Sub1_Sub3)
-                                                    class318_sub1_sub3)
+                                                    - (class318_sub1_sub3
                                                     .aShort8743)
                                                     + 1);
                                             int i_14_
-                                                    = ((((Class318_Sub1_Sub3)
-                                                    class318_sub1_sub3)
+                                                    = ((class318_sub1_sub3
                                                     .aShort8747)
-                                                    - (((Class318_Sub1_Sub3)
-                                                    class318_sub1_sub3)
+                                                    - (class318_sub1_sub3
                                                     .aShort8750)
                                                     + 1);
                                             class318_sub1.method2380
                                                     (Class9.aHa171, i_11_, bool,
                                                             class318_sub1_sub3,
-                                                            (((((Class318_Sub1_Sub3)
-                                                                    class318_sub1_sub3)
+                                                            (((class318_sub1_sub3
                                                                     .aShort8750)
                                                                     - i_1_) * Class270.anInt3465
                                                                     + ((i_14_ - i_3_)
                                                                     * (Class348_Sub23_Sub2
                                                                     .anInt9037))),
                                                             (byte) -115,
-                                                            (((((Class318_Sub1_Sub3)
-                                                                    class318_sub1_sub3)
+                                                            (((class318_sub1_sub3
                                                                     .aShort8743)
                                                                     - i_0_) * Class270.anInt3465
                                                                     + ((i_13_ - i_2_)

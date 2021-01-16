@@ -3,5 +3,5 @@
  */
 
 interface Interface19 {
-    public void w(boolean bool);
+    void w(boolean bool);
 }

@@ -95,22 +95,22 @@ final class Class253 {
             if (i != 1) {
                 if (i != 2) {
                     if ((i ^ 0xffffffff) == -4)
-                        ((Class253) this).anInt3244
+                        this.anInt3244
                                 = class348_sub49.method3330(i_13_ ^ 0x3235f8fc);
                     else if (i == 4)
-                        ((Class253) this).anInt3251
+                        this.anInt3251
                                 = class348_sub49.method3372(13638);
                 } else
-                    ((Class253) this).anInt3249
+                    this.anInt3249
                             = class348_sub49.method3330(i_13_ + 842397940);
             } else
-                ((Class253) this).anInt3245 = class348_sub49.method3387(255);
+                this.anInt3245 = class348_sub49.method3387(255);
         }
     }
 
     public Class253() {
-        ((Class253) this).anInt3244 = 2048;
-        ((Class253) this).anInt3249 = 2048;
-        ((Class253) this).anInt3251 = 0;
+        this.anInt3244 = 2048;
+        this.anInt3249 = 2048;
+        this.anInt3251 = 0;
     }
 }

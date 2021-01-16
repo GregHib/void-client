@@ -103,11 +103,11 @@ final class aa_Sub2 extends aa {
 
     aa_Sub2(ha_Sub3 var_ha_Sub3, int i, int i_16_, byte[] is) {
         try {
-            ((aa_Sub2) this).anInterface18_Impl3_5196
+            this.anInterface18_Impl3_5196
                     = var_ha_Sub3.method3944(is, i,
                     Class348_Sub40_Sub38.aClass304_9471,
                     2, false, i_16_);
-            ((aa_Sub2) this).anInterface18_Impl3_5196.method66(false, false,
+            this.anInterface18_Impl3_5196.method66(false, false,
                     25688);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
@@ -122,9 +122,9 @@ final class aa_Sub2 extends aa {
 
     aa_Sub2(ha_Sub3 var_ha_Sub3, int i, int i_17_, int[] is) {
         try {
-            ((aa_Sub2) this).anInterface18_Impl3_5196
+            this.anInterface18_Impl3_5196
                     = var_ha_Sub3.method3839(i_17_, i, -15137, false, is);
-            ((aa_Sub2) this).anInterface18_Impl3_5196.method66(false, false,
+            this.anInterface18_Impl3_5196.method66(false, false,
                     25688);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,

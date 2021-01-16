@@ -38,12 +38,12 @@ class Class369_Sub3 extends Class369 {
                   int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {
         super(class221, class341, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_);
         try {
-            ((Class369_Sub3) this).anInt8600 = i_10_;
-            ((Class369_Sub3) this).anInt8602 = i_9_;
-            ((Class369_Sub3) this).anInt8603 = i_8_;
-            ((Class369_Sub3) this).anInt8599 = i_6_;
-            ((Class369_Sub3) this).anInt8597 = i_11_;
-            ((Class369_Sub3) this).anInt8595 = i_7_;
+            this.anInt8600 = i_10_;
+            this.anInt8602 = i_9_;
+            this.anInt8603 = i_8_;
+            this.anInt8599 = i_6_;
+            this.anInt8597 = i_11_;
+            this.anInt8595 = i_7_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

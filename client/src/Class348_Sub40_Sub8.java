@@ -58,25 +58,25 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                                         break while_147_;
                                     }
                                 } else {
-                                    ((Class348_Sub40_Sub8) this).aBoolean9160
+                                    this.aBoolean9160
                                             = class348_sub49
                                             .method3387(i_0_ ^ 0x79d8) == 1;
                                     break while_151_;
                                 }
-                                ((Class348_Sub40_Sub8) this).anInt9150
+                                this.anInt9150
                                         = class348_sub49.method3387(i_0_ ^ 0x79d8);
                                 break while_151_;
                             } while (false);
-                            ((Class348_Sub40_Sub8) this).anInt9149
+                            this.anInt9149
                                     = class348_sub49.method3372(13638);
-                            if ((((Class348_Sub40_Sub8) this).anInt9149
+                            if ((this.anInt9149
                                     ^ 0xffffffff)
                                     > -1) {
                                 aShortArray9159
-                                        = new short[(((Class348_Sub40_Sub8) this)
+                                        = new short[(this
                                         .anInt9150)];
                                 for (i_1_ = 0;
-                                     (((Class348_Sub40_Sub8) this).anInt9150
+                                     (this.anInt9150
                                              > i_1_);
                                      i_1_++)
                                     aShortArray9159[i_1_]
@@ -85,20 +85,20 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                             }
                             break while_151_;
                         } while (false);
-                        ((Class348_Sub40_Sub8) this).anInt9158
-                                = ((Class348_Sub40_Sub8) this).anInt9164
+                        this.anInt9158
+                                = this.anInt9164
                                 = class348_sub49.method3387(255);
                         break while_151_;
                     } while (false);
-                    ((Class348_Sub40_Sub8) this).anInt9156
+                    this.anInt9156
                             = class348_sub49.method3387(255);
                     break while_151_;
                 } while (false);
-                ((Class348_Sub40_Sub8) this).anInt9158
+                this.anInt9158
                         = class348_sub49.method3387(255);
                 break while_151_;
             } while (false);
-            ((Class348_Sub40_Sub8) this).anInt9164
+            this.anInt9164
                     = class348_sub49.method3387(255);
         } while (false);
         if (i_0_ != 31015)
@@ -109,27 +109,27 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
     final int[] method3042(int i, int i_2_) {
         anInt9154++;
         int[] is
-                = ((Class348_Sub40) this).aClass191_7032.method1433(i_2_ ^ i_2_,
+                = this.aClass191_7032.method1433(i_2_ ^ i_2_,
                 i);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570)
+        if (this.aClass191_7032.aBoolean2570)
             method3069(i, is, (byte) 98);
         return is;
     }
 
     public Class348_Sub40_Sub8() {
         super(0, true);
-        ((Class348_Sub40_Sub8) this).anInt9150 = 4;
-        ((Class348_Sub40_Sub8) this).anInt9156 = 0;
-        ((Class348_Sub40_Sub8) this).anInt9164 = 4;
-        ((Class348_Sub40_Sub8) this).anInt9158 = 4;
+        this.anInt9150 = 4;
+        this.anInt9156 = 0;
+        this.anInt9164 = 4;
+        this.anInt9158 = 4;
     }
 
     final void method3044(int i) {
         aByteArray9152
-                = ha.method3664(((Class348_Sub40_Sub8) this).anInt9156, 95);
+                = ha.method3664(this.anInt9156, 95);
         anInt9148++;
         method3067((byte) -98);
-        int i_3_ = ((Class348_Sub40_Sub8) this).anInt9150 + -1;
+        int i_3_ = this.anInt9150 + -1;
         if (i < 108)
             aClass238_9165 = null;
         for (/**/; i_3_ >= 1; i_3_--) {
@@ -138,40 +138,39 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                 break;
             if (i_4_ < -8)
                 break;
-            ((Class348_Sub40_Sub8) this).anInt9150--;
+            this.anInt9150--;
         }
     }
 
     private final void method3067(byte i) {
         int i_5_ = 25 / ((i - -28) / 57);
-        if ((((Class348_Sub40_Sub8) this).anInt9149 ^ 0xffffffff) < -1) {
+        if ((this.anInt9149 ^ 0xffffffff) < -1) {
             aShortArray9162
-                    = new short[((Class348_Sub40_Sub8) this).anInt9150];
+                    = new short[this.anInt9150];
             aShortArray9159
-                    = new short[((Class348_Sub40_Sub8) this).anInt9150];
-            for (int i_6_ = 0; ((Class348_Sub40_Sub8) this).anInt9150 > i_6_;
+                    = new short[this.anInt9150];
+            for (int i_6_ = 0; this.anInt9150 > i_6_;
                  i_6_++) {
                 aShortArray9159[i_6_]
                         = (short) (int) ((Math.pow
-                        ((double) ((float) ((Class348_Sub40_Sub8)
-                                        this).anInt9149
-                                        / 4096.0F),
-                                (double) i_6_))
+                        ((float) this.anInt9149
+                                        / 4096.0F,
+                                i_6_))
                         * 4096.0);
                 aShortArray9162[i_6_]
-                        = (short) (int) Math.pow(2.0, (double) i_6_);
+                        = (short) (int) Math.pow(2.0, i_6_);
             }
         } else if (aShortArray9159 != null
-                && (((Class348_Sub40_Sub8) this).anInt9150
+                && (this.anInt9150
                 == aShortArray9159.length)) {
             aShortArray9162
-                    = new short[((Class348_Sub40_Sub8) this).anInt9150];
+                    = new short[this.anInt9150];
             for (int i_7_ = 0;
-                 ((((Class348_Sub40_Sub8) this).anInt9150 ^ 0xffffffff)
+                 ((this.anInt9150 ^ 0xffffffff)
                          < (i_7_ ^ 0xffffffff));
                  i_7_++)
                 aShortArray9162[i_7_]
-                        = (short) (int) Math.pow(2.0, (double) i_7_);
+                        = (short) (int) Math.pow(2.0, i_7_);
         }
         anInt9151++;
     }
@@ -186,16 +185,16 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
     final void method3069(int i, int[] is, byte i_8_) {
         anInt9161++;
         int i_9_ = (Class239_Sub18.anIntArray6035[i]
-                * ((Class348_Sub40_Sub8) this).anInt9164);
+                * this.anInt9164);
         if (i_8_ > 91) {
-            if ((((Class348_Sub40_Sub8) this).anInt9150 ^ 0xffffffff) != -2) {
+            if ((this.anInt9150 ^ 0xffffffff) != -2) {
                 int i_10_ = aShortArray9159[0];
                 if ((i_10_ ^ 0xffffffff) < -9 || i_10_ < -8) {
                     int i_11_ = aShortArray9162[0] << -677338356;
                     int i_12_ = i_11_ * i_9_ >> -1635376628;
-                    int i_13_ = (((Class348_Sub40_Sub8) this).anInt9158 * i_11_
+                    int i_13_ = (this.anInt9158 * i_11_
                             >> -435649908);
-                    int i_14_ = (((Class348_Sub40_Sub8) this).anInt9164 * i_11_
+                    int i_14_ = (this.anInt9164 * i_11_
                             >> 973957388);
                     int i_15_ = i_12_ >> 372879340;
                     int i_16_ = 1 + i_15_;
@@ -208,7 +207,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                     for (int i_20_ = 0; Class348_Sub40_Sub6.anInt9139 > i_20_;
                          i_20_++) {
                         int i_21_ = (Class318_Sub6.anIntArray6432[i_20_]
-                                * ((Class348_Sub40_Sub8) this).anInt9158);
+                                * this.anInt9158);
                         int i_22_ = method3070(i_17_, i_12_, i_13_,
                                 i_11_ * i_21_ >> -751471604,
                                 i_19_, true, i_18_);
@@ -216,17 +215,17 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                     }
                 }
                 for (int i_23_ = 1;
-                     ((Class348_Sub40_Sub8) this).anInt9150 > i_23_; i_23_++) {
+                     this.anInt9150 > i_23_; i_23_++) {
                     i_10_ = aShortArray9159[i_23_];
                     if ((i_10_ ^ 0xffffffff) < -9
                             || (i_10_ ^ 0xffffffff) > 7) {
                         int i_24_ = aShortArray9162[i_23_] << -1210710836;
                         int i_25_ = i_24_ * i_9_ >> 959975340;
                         int i_26_
-                                = (((Class348_Sub40_Sub8) this).anInt9158 * i_24_
+                                = (this.anInt9158 * i_24_
                                 >> -1052080788);
                         int i_27_
-                                = (((Class348_Sub40_Sub8) this).anInt9164 * i_24_
+                                = (this.anInt9164 * i_24_
                                 >> 341876908);
                         int i_28_ = i_25_ >> -506368884;
                         int i_29_ = 1 + i_28_;
@@ -236,15 +235,15 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                         int i_30_ = aByteArray9152[i_28_ & 0xff] & 0xff;
                         int i_31_ = Class199.anIntArray2631[i_25_];
                         int i_32_ = 0xff & aByteArray9152[i_29_ & 0xff];
-                        if (((Class348_Sub40_Sub8) this).aBoolean9160
-                                && (((Class348_Sub40_Sub8) this).anInt9150 - 1
+                        if (this.aBoolean9160
+                                && (this.anInt9150 - 1
                                 == i_23_)) {
                             for (int i_33_ = 0;
                                  Class348_Sub40_Sub6.anInt9139 > i_33_;
                                  i_33_++) {
                                 int i_34_
                                         = (Class318_Sub6.anIntArray6432[i_33_]
-                                        * (((Class348_Sub40_Sub8) this)
+                                        * (this
                                         .anInt9158));
                                 int i_35_
                                         = method3070(i_32_, i_25_, i_26_,
@@ -260,7 +259,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                                          < (i_36_ ^ 0xffffffff));
                                  i_36_++) {
                                 int i_37_
-                                        = (((Class348_Sub40_Sub8) this).anInt9158
+                                        = (this.anInt9158
                                         * Class318_Sub6.anIntArray6432[i_36_]);
                                 int i_38_
                                         = method3070(i_32_, i_25_, i_26_,
@@ -275,9 +274,9 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                 int i_39_ = aShortArray9162[0] << 2126450124;
                 int i_40_ = aShortArray9159[0];
                 int i_41_ = i_39_ * i_9_ >> 1963111500;
-                int i_42_ = (i_39_ * ((Class348_Sub40_Sub8) this).anInt9158
+                int i_42_ = (i_39_ * this.anInt9158
                         >> -143668820);
-                int i_43_ = (((Class348_Sub40_Sub8) this).anInt9164 * i_39_
+                int i_43_ = (this.anInt9164 * i_39_
                         >> 16261868);
                 int i_44_ = i_41_ >> -1945608628;
                 int i_45_ = 1 + i_44_;
@@ -287,10 +286,10 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                 int i_46_ = aByteArray9152[0xff & i_45_] & 0xff;
                 int i_47_ = Class199.anIntArray2631[i_41_];
                 int i_48_ = aByteArray9152[0xff & i_44_] & 0xff;
-                if (!((Class348_Sub40_Sub8) this).aBoolean9160) {
+                if (!this.aBoolean9160) {
                     for (int i_49_ = 0; i_49_ < Class348_Sub40_Sub6.anInt9139;
                          i_49_++) {
-                        int i_50_ = (((Class348_Sub40_Sub8) this).anInt9158
+                        int i_50_ = (this.anInt9158
                                 * Class318_Sub6.anIntArray6432[i_49_]);
                         int i_51_ = method3070(i_46_, i_41_, i_42_,
                                 i_39_ * i_50_ >> 1548502028,
@@ -302,7 +301,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                          ((i_52_ ^ 0xffffffff)
                                  > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff));
                          i_52_++) {
-                        int i_53_ = (((Class348_Sub40_Sub8) this).anInt9158
+                        int i_53_ = (this.anInt9158
                                 * Class318_Sub6.anIntArray6432[i_52_]);
                         int i_54_ = method3070(i_46_, i_41_, i_42_,
                                 i_53_ * i_39_ >> 455686348,

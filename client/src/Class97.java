@@ -6,7 +6,7 @@ import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
 final class Class97 {
-    private int anInt1544;
+    private final int anInt1544;
     static int anInt1545;
     private int anInt1546;
     private int anInt1547;
@@ -21,9 +21,9 @@ final class Class97 {
     private Interface18_Impl3 anInterface18_Impl3_1556;
     static int anInt1557;
     private int anInt1558 = -1;
-    private int anInt1559;
-    private Class330 aClass330_1560;
-    private ha_Sub3 aHa_Sub3_1561;
+    private final int anInt1559;
+    private final Class330 aClass330_1560;
+    private final ha_Sub3 aHa_Sub3_1561;
     boolean aBoolean1562 = true;
     int anInt1563;
 
@@ -31,7 +31,7 @@ final class Class97 {
         anInt1552++;
         if (i >= 77)
             method875(-126, anInterface5_Impl2_1551,
-                    ((Class97) this).anInt1563);
+                    this.anInt1563);
     }
 
     static final void method872(int i, int i_0_, int i_1_, int i_2_, int i_3_,
@@ -74,12 +74,12 @@ final class Class97 {
 
     private final void method874(int i) {
         anInt1553++;
-        if (((Class97) this).aBoolean1562) {
-            ((Class97) this).aBoolean1562 = false;
-            byte[] is = ((Class330) aClass330_1560).aByteArray4112;
+        if (this.aBoolean1562) {
+            this.aBoolean1562 = false;
+            byte[] is = aClass330_1560.aByteArray4112;
             int i_8_ = 0;
-            int i_9_ = ((Class330) aClass330_1560).anInt4113;
-            int i_10_ = (((Class330) aClass330_1560).anInt4113 * anInt1559
+            int i_9_ = aClass330_1560.anInt4113;
+            int i_10_ = (aClass330_1560.anInt4113 * anInt1559
                     + anInt1544);
             for (int i_11_ = -128; (i_11_ ^ 0xffffffff) > -1; i_11_++) {
                 i_8_ = (i_8_ << 859744648) - i_8_;
@@ -91,7 +91,7 @@ final class Class97 {
             }
             if (anInterface18_Impl3_1556 != null
                     && (anInt1558 ^ 0xffffffff) == (i_8_ ^ 0xffffffff))
-                ((Class97) this).aBoolean1562 = false;
+                this.aBoolean1562 = false;
             else {
                 anInt1558 = i_8_;
                 if (i != -12763)
@@ -124,7 +124,7 @@ final class Class97 {
                                 is_14_[i_13_++] = (byte) 68;
                             i_10_++;
                         }
-                        i_10_ += -128 + ((Class330) aClass330_1560).anInt4113;
+                        i_10_ += -128 + aClass330_1560.anInt4113;
                     }
                     if (anInterface18_Impl3_1556 == null) {
                         anInterface18_Impl3_1556
@@ -166,7 +166,7 @@ final class Class97 {
                                 is_18_[i_13_++] = 1140850688;
                             i_10_++;
                         }
-                        i_10_ += -128 + ((Class330) aClass330_1560).anInt4113;
+                        i_10_ += -128 + aClass330_1560.anInt4113;
                     }
                     if (anInterface18_Impl3_1556 == null) {
                         anInterface18_Impl3_1556
@@ -194,7 +194,7 @@ final class Class97 {
         }
         anInt1545++;
         if (i > -47)
-            ((Class97) this).anInt1563 = 75;
+            this.anInt1563 = 75;
     }
 
     static final void method876(int i, int i_23_) {
@@ -222,16 +222,16 @@ final class Class97 {
             int i_31_ = i_24_ << i_25_;
             for (int i_32_ = 0; i_28_ > i_32_; i_32_++) {
                 int i_33_
-                        = i_30_ + (i_32_ + i_31_) * ((s) var_s_Sub3).anInt4587;
+                        = i_30_ + (i_32_ + i_31_) * var_s_Sub3.anInt4587;
                 for (int i_34_ = 0; i_28_ > i_34_; i_34_++) {
                     short[] is
-                            = ((s_Sub3) var_s_Sub3).aShortArrayArray8299[i_33_++];
+                            = var_s_Sub3.aShortArrayArray8299[i_33_++];
                     if (is != null)
                         i_29_ += is.length;
                 }
             }
             if (i_29_ <= 0) {
-                ((Class97) this).anInt1563 = 0;
+                this.anInt1563 = 0;
                 anInterface18_Impl3_1556 = null;
             } else {
                 anInt1546 = -2147483648;
@@ -249,7 +249,7 @@ final class Class97 {
                                  (i_28_ ^ 0xffffffff) < (i_36_ ^ 0xffffffff);
                                  i_36_++) {
                                 int i_37_
-                                        = (((s) var_s_Sub3).anInt4587 * (i_31_
+                                        = (var_s_Sub3.anInt4587 * (i_31_
                                         - -i_36_)
                                         + i_30_);
                                 for (int i_38_ = 0;
@@ -257,7 +257,7 @@ final class Class97 {
                                              < (i_38_ ^ 0xffffffff));
                                      i_38_++) {
                                     short[] is
-                                            = (((s_Sub3) var_s_Sub3)
+                                            = (var_s_Sub3
                                             .aShortArrayArray8299[i_37_++]);
                                     if (is != null) {
                                         for (int i_39_ = 0;
@@ -278,7 +278,7 @@ final class Class97 {
                         } else {
                             for (int i_41_ = 0; i_41_ < i_28_; i_41_++) {
                                 int i_42_
-                                        = (((s) var_s_Sub3).anInt4587 * (i_41_
+                                        = (var_s_Sub3.anInt4587 * (i_41_
                                         + i_31_)
                                         - -i_30_);
                                 for (int i_43_ = 0;
@@ -286,7 +286,7 @@ final class Class97 {
                                              > (i_28_ ^ 0xffffffff));
                                      i_43_++) {
                                     short[] is
-                                            = (((s_Sub3) var_s_Sub3)
+                                            = (var_s_Sub3
                                             .aShortArrayArray8299[i_42_++]);
                                     if (is != null) {
                                         for (int i_44_ = 0;
@@ -309,7 +309,7 @@ final class Class97 {
                             break;
                     }
                 }
-                ((Class97) this).anInt1563 = i_29_ / 3;
+                this.anInt1563 = i_29_ / 3;
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929

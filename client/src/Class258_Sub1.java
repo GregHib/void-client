@@ -16,9 +16,9 @@ final class Class258_Sub1 extends Class258 {
 
     final void method1958(int i, int i_0_, int i_1_, int i_2_, int i_3_,
                           int i_4_, int i_5_, int i_6_) {
-        ((Class258) this).aHa_Sub2_4851.method3771((byte) -110, this);
+        this.aHa_Sub2_4851.method3771((byte) -110, this);
         anInt8526++;
-        OpenGL.glCopyTexSubImage3D(((Class258) this).anInt4849, 0, i_2_, i_6_,
+        OpenGL.glCopyTexSubImage3D(this.anInt4849, 0, i_2_, i_6_,
                 i_4_, i_3_, i_0_, i_1_, i_5_);
         OpenGL.glFlush();
         if (i != -26823)
@@ -28,7 +28,7 @@ final class Class258_Sub1 extends Class258 {
     public final void method37(int i) {
         anInt8524++;
         OpenGL.glFramebufferTexture3DEXT(anInt8528, anInt8525,
-                ((Class258) this).anInt4849, 0, 0, 0);
+                this.anInt4849, 0, 0, 0);
         anInt8525 = -1;
         if (i != -3022)
             method1960(112, -107, -46, -98, null, null, null, null, null, null,
@@ -40,16 +40,16 @@ final class Class258_Sub1 extends Class258 {
                   byte[] is, int i_10_) {
         super(var_ha_Sub2, 32879, i, i_7_ * (i_8_ * i_9_), false);
         try {
-            ((Class258_Sub1) this).anInt8523 = i_7_;
-            ((Class258_Sub1) this).anInt8522 = i_9_;
-            ((Class258_Sub1) this).anInt8529 = i_8_;
-            ((Class258) this).aHa_Sub2_4851.method3771((byte) -84, this);
+            this.anInt8523 = i_7_;
+            this.anInt8522 = i_9_;
+            this.anInt8529 = i_8_;
+            this.aHa_Sub2_4851.method3771((byte) -84, this);
             OpenGL.glPixelStorei(3317, 1);
-            OpenGL.glTexImage3Dub(((Class258) this).anInt4849, 0,
-                    ((Class258) this).anInt4858,
-                    ((Class258_Sub1) this).anInt8523,
-                    ((Class258_Sub1) this).anInt8529,
-                    ((Class258_Sub1) this).anInt8522, 0, i_10_,
+            OpenGL.glTexImage3Dub(this.anInt4849, 0,
+                    this.anInt4858,
+                    this.anInt8523,
+                    this.anInt8529,
+                    this.anInt8522, 0, i_10_,
                     5121, is, 0);
             OpenGL.glPixelStorei(3317, 4);
             this.method1957(9728, true);
@@ -208,9 +208,9 @@ final class Class258_Sub1 extends Class258 {
             Class23.aBoolean351 = false;
         }
         Class243.method1877(Class9.aHa171, -69);
-        if (!((Class76) Class71.aClass76_1208).aBoolean1283) {
+        if (!Class71.aClass76_1208.aBoolean1283) {
             Class243 class243
-                    = ((Class76) Class71.aClass76_1208).aClass243_1282;
+                    = Class71.aClass76_1208.aClass243_1282;
             for (Class318_Sub4 class318_sub4
                  = (Class318_Sub4) class243.method1872(8);
                  class318_sub4 != null;
@@ -291,16 +291,16 @@ final class Class258_Sub1 extends Class258 {
     Class258_Sub1(ha_Sub2 var_ha_Sub2, int i, int i_49_, int i_50_,
                   int i_51_) {
         super(var_ha_Sub2, 32879, i, i_51_ * i_49_ * i_50_, false);
-        ((Class258_Sub1) this).anInt8523 = i_49_;
-        ((Class258_Sub1) this).anInt8529 = i_50_;
-        ((Class258_Sub1) this).anInt8522 = i_51_;
-        ((Class258) this).aHa_Sub2_4851.method3771((byte) -123, this);
-        OpenGL.glTexImage3Dub(((Class258) this).anInt4849, 0,
-                ((Class258) this).anInt4858,
-                ((Class258_Sub1) this).anInt8523,
-                ((Class258_Sub1) this).anInt8529,
-                ((Class258_Sub1) this).anInt8522, 0,
-                Class348_Sub9.method2779(true, (((Class258) this)
+        this.anInt8523 = i_49_;
+        this.anInt8529 = i_50_;
+        this.anInt8522 = i_51_;
+        this.aHa_Sub2_4851.method3771((byte) -123, this);
+        OpenGL.glTexImage3Dub(this.anInt4849, 0,
+                this.anInt4858,
+                this.anInt8523,
+                this.anInt8529,
+                this.anInt8522, 0,
+                Class348_Sub9.method2779(true, (this
                         .anInt4858)),
                 5121, null, 0);
         this.method1957(9728, true);

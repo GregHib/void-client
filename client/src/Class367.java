@@ -29,13 +29,13 @@ abstract class Class367 {
     }
 
     Class367(ha_Sub3 var_ha_Sub3) {
-        ((Class367) this).aHa_Sub3_4479 = var_ha_Sub3;
+        this.aHa_Sub3_4479 = var_ha_Sub3;
     }
 
     void method3524(int i) {
         anInt4483++;
         if (i != -14775)
-            ((Class367) this).aHa_Sub3_4479 = null;
+            this.aHa_Sub3_4479 = null;
     }
 
     abstract void method3525(int i, boolean bool);
@@ -46,7 +46,7 @@ abstract class Class367 {
 
     void method3528(int i) {
         if (i < 45)
-            ((Class367) this).aHa_Sub3_4479 = null;
+            this.aHa_Sub3_4479 = null;
         anInt4481++;
     }
 
@@ -68,7 +68,7 @@ abstract class Class367 {
     void method3531(boolean bool) {
         anInt4480++;
         if (bool != false)
-            ((Class367) this).aHa_Sub3_4479 = null;
+            this.aHa_Sub3_4479 = null;
     }
 
     void method3532(int i) {

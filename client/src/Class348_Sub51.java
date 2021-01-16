@@ -315,7 +315,7 @@ final class Class348_Sub51 extends Class348 {
     static int anInt7266;
     static int anInt7267;
     private static short[][] aShortArrayArray7268;
-    private Class230 aClass230_7269;
+    private final Class230 aClass230_7269;
     Class239_Sub21 aClass239_Sub21_7270;
     Class239_Sub25 aClass239_Sub25_7271;
     Class239_Sub26 aClass239_Sub26_7272;
@@ -325,32 +325,32 @@ final class Class348_Sub51 extends Class348 {
                                   int i_0_) {
         do {
             try {
-                ((Class348_Sub51) this).aClass239_Sub10_7232
+                this.aClass239_Sub10_7232
                         = new Class239_Sub10(class348_sub49.method3387(255), this);
                 anInt7233++;
-                ((Class348_Sub51) this).aClass239_Sub27_7255
+                this.aClass239_Sub27_7255
                         = new Class239_Sub27(class348_sub49.method3387(i ^ 0x7860),
                         this);
-                ((Class348_Sub51) this).aClass239_Sub14_7250
+                this.aClass239_Sub14_7250
                         = new Class239_Sub14(1 + class348_sub49.method3387(255),
                         this);
-                ((Class348_Sub51) this).aClass239_Sub4_7220
+                this.aClass239_Sub4_7220
                         = new Class239_Sub4(class348_sub49.method3387(255), this);
-                ((Class348_Sub51) this).aClass239_Sub2_7228
+                this.aClass239_Sub2_7228
                         = new Class239_Sub2(class348_sub49.method3387(i ^ 0x7860),
                         this);
-                ((Class348_Sub51) this).aClass239_Sub13_7236
+                this.aClass239_Sub13_7236
                         = new Class239_Sub13(class348_sub49.method3387(255), this);
-                ((Class348_Sub51) this).aClass239_Sub1_7246
+                this.aClass239_Sub1_7246
                         = new Class239_Sub1(class348_sub49.method3387(255), this);
                 class348_sub49.method3387(i ^ 0x7860);
-                ((Class348_Sub51) this).aClass239_Sub21_7270
+                this.aClass239_Sub21_7270
                         = new Class239_Sub21(class348_sub49.method3387(255), this);
                 int i_1_ = class348_sub49.method3387(i ^ 0x7860);
                 int i_2_ = 0;
                 if ((i_0_ ^ 0xffffffff) <= -18)
                     i_2_ = class348_sub49.method3387(255);
-                ((Class348_Sub51) this).aClass239_Sub7_7238
+                this.aClass239_Sub7_7238
                         = new Class239_Sub7(((i_2_ ^ 0xffffffff) > (i_1_
                         ^ 0xffffffff)
                         ? i_1_ : i_2_),
@@ -365,41 +365,41 @@ final class Class348_Sub51 extends Class348 {
                     bool = class348_sub49.method3387(255) == 1;
                     class348_sub49.method3387(255);
                 }
-                ((Class348_Sub51) this).aClass239_Sub28_7230
+                this.aClass239_Sub28_7230
                         = new Class239_Sub28(!(bool | bool_3_) ? 0 : 1, this);
-                ((Class348_Sub51) this).aClass239_Sub18_7259
+                this.aClass239_Sub18_7259
                         = new Class239_Sub18(class348_sub49.method3387(255), this);
-                ((Class348_Sub51) this).aClass239_Sub16_7247
+                this.aClass239_Sub16_7247
                         = new Class239_Sub16(class348_sub49.method3387(i ^ 0x7860),
                         this);
-                ((Class348_Sub51) this).aClass239_Sub20_7216
+                this.aClass239_Sub20_7216
                         = new Class239_Sub20(class348_sub49.method3387(255), this);
-                ((Class348_Sub51) this).aClass239_Sub5_7240
+                this.aClass239_Sub5_7240
                         = new Class239_Sub5(class348_sub49.method3387(255), this);
-                ((Class348_Sub51) this).aClass239_Sub26_7272
+                this.aClass239_Sub26_7272
                         = new Class239_Sub26(class348_sub49.method3387(i + -30624),
                         this);
                 if (i_0_ >= 20)
-                    ((Class348_Sub51) this).aClass239_Sub26_7215
+                    this.aClass239_Sub26_7215
                             = new Class239_Sub26(class348_sub49.method3387(255),
                             this);
                 else
-                    ((Class348_Sub51) this).aClass239_Sub26_7215
-                            = new Class239_Sub26(((Class348_Sub51) this)
+                    this.aClass239_Sub26_7215
+                            = new Class239_Sub26(this
                             .aClass239_Sub26_7272
                             .method1838(-32350),
                             this);
-                ((Class348_Sub51) this).aClass239_Sub26_7260
+                this.aClass239_Sub26_7260
                         = new Class239_Sub26(class348_sub49.method3387(255), this);
-                ((Class348_Sub51) this).aClass239_Sub26_7234
+                this.aClass239_Sub26_7234
                         = new Class239_Sub26(class348_sub49.method3387(255), this);
                 if (i_0_ >= 21)
-                    ((Class348_Sub51) this).aClass239_Sub26_7245
+                    this.aClass239_Sub26_7245
                             = new Class239_Sub26(class348_sub49.method3387(255),
                             this);
                 else
-                    ((Class348_Sub51) this).aClass239_Sub26_7245
-                            = new Class239_Sub26(((Class348_Sub51) this)
+                    this.aClass239_Sub26_7245
+                            = new Class239_Sub26(this
                             .aClass239_Sub26_7260
                             .method1838(-32350),
                             this);
@@ -410,68 +410,68 @@ final class Class348_Sub51 extends Class348 {
                 if ((i_0_ ^ 0xffffffff) <= -4 && i_0_ < 6)
                     class348_sub49.method3387(255);
                 if ((i_0_ ^ 0xffffffff) <= -5)
-                    ((Class348_Sub51) this).aClass239_Sub15_7224
+                    this.aClass239_Sub15_7224
                             = new Class239_Sub15(class348_sub49.method3387(255),
                             this);
                 if (i != 30879)
                     method3428((byte) -10);
                 class348_sub49.method3385((byte) -126);
                 if ((i_0_ ^ 0xffffffff) <= -7)
-                    ((Class348_Sub51) this).aClass239_Sub8_7227
+                    this.aClass239_Sub8_7227
                             = new Class239_Sub8(class348_sub49
                             .method3387(i ^ 0x7860),
                             this);
                 if (i_0_ >= 7)
-                    ((Class348_Sub51) this).aClass239_Sub11_7265
+                    this.aClass239_Sub11_7265
                             = new Class239_Sub11(class348_sub49.method3387(255),
                             this);
                 if ((i_0_ ^ 0xffffffff) <= -9)
                     class348_sub49.method3387(255);
                 if ((i_0_ ^ 0xffffffff) <= -10)
-                    ((Class348_Sub51) this).aClass239_Sub6_7226
+                    this.aClass239_Sub6_7226
                             = new Class239_Sub6(class348_sub49
                             .method3387(i ^ 0x7860),
                             this);
                 if (i_0_ >= 10)
-                    ((Class348_Sub51) this).aClass239_Sub12_7243
+                    this.aClass239_Sub12_7243
                             = new Class239_Sub12(class348_sub49.method3387(255),
                             this);
                 if (i_0_ >= 11)
-                    ((Class348_Sub51) this).aClass239_Sub22_7253
+                    this.aClass239_Sub22_7253
                             = new Class239_Sub22(class348_sub49.method3387(255),
                             this);
                 if (i_0_ >= 12)
-                    ((Class348_Sub51) this).aClass239_Sub13_7236
+                    this.aClass239_Sub13_7236
                             = new Class239_Sub13(class348_sub49.method3387(255),
                             this);
                 if (i_0_ >= 13)
-                    ((Class348_Sub51) this).aClass239_Sub9_7256
+                    this.aClass239_Sub9_7256
                             = new Class239_Sub9(class348_sub49.method3387(255),
                             this);
                 if ((i_0_ ^ 0xffffffff) <= -15)
-                    ((Class348_Sub51) this).aClass239_Sub25_7251
+                    this.aClass239_Sub25_7251
                             = new Class239_Sub25(class348_sub49.method3387(255),
                             this);
                 if (i_0_ >= 15)
-                    ((Class348_Sub51) this).aClass239_Sub17_7263
+                    this.aClass239_Sub17_7263
                             = new Class239_Sub17(class348_sub49.method3387(255),
                             this);
                 if ((i_0_ ^ 0xffffffff) <= -17)
-                    ((Class348_Sub51) this).aClass239_Sub24_7235
+                    this.aClass239_Sub24_7235
                             = new Class239_Sub24(class348_sub49
                             .method3387(i ^ 0x7860),
                             this);
                 if ((i_0_ ^ 0xffffffff) <= -19)
-                    ((Class348_Sub51) this).aClass239_Sub29_7229
+                    this.aClass239_Sub29_7229
                             = new Class239_Sub29(class348_sub49.method3387(255),
                             this);
                 if ((i_0_ ^ 0xffffffff) <= -20)
-                    ((Class348_Sub51) this).aClass239_Sub23_7231
+                    this.aClass239_Sub23_7231
                             = new Class239_Sub23(class348_sub49.method3387(255),
                             this);
                 if (i_0_ < 22)
                     break;
-                ((Class348_Sub51) this).aClass239_Sub19_7257
+                this.aClass239_Sub19_7257
                         = new Class239_Sub19(class348_sub49.method3387(255), this);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception,
@@ -492,137 +492,137 @@ final class Class348_Sub51 extends Class348 {
     }
 
     private final void method3423(boolean bool, int i) {
-        if (bool || ((Class348_Sub51) this).aClass239_Sub20_7216 == null)
-            ((Class348_Sub51) this).aClass239_Sub20_7216
+        if (bool || this.aClass239_Sub20_7216 == null)
+            this.aClass239_Sub20_7216
                     = new Class239_Sub20(this);
         anInt7242++;
-        if (bool || ((Class348_Sub51) this).aClass239_Sub20_7248 == null)
-            ((Class348_Sub51) this).aClass239_Sub20_7248
-                    = new Class239_Sub20(((Class348_Sub51) this)
+        if (bool || this.aClass239_Sub20_7248 == null)
+            this.aClass239_Sub20_7248
+                    = new Class239_Sub20(this
                     .aClass239_Sub20_7216
                     .method1808(i + -63636),
                     this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub12_7243 == null)
-            ((Class348_Sub51) this).aClass239_Sub12_7243
+        if (bool || this.aClass239_Sub12_7243 == null)
+            this.aClass239_Sub12_7243
                     = new Class239_Sub12(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub10_7232 == null)
-            ((Class348_Sub51) this).aClass239_Sub10_7232
+        if (bool || this.aClass239_Sub10_7232 == null)
+            this.aClass239_Sub10_7232
                     = new Class239_Sub10(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub6_7226 == null)
-            ((Class348_Sub51) this).aClass239_Sub6_7226
+        if (bool || this.aClass239_Sub6_7226 == null)
+            this.aClass239_Sub6_7226
                     = new Class239_Sub6(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub1_7246 == null)
-            ((Class348_Sub51) this).aClass239_Sub1_7246
+        if (bool || this.aClass239_Sub1_7246 == null)
+            this.aClass239_Sub1_7246
                     = new Class239_Sub1(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub16_7247 == null)
-            ((Class348_Sub51) this).aClass239_Sub16_7247
+        if (bool || this.aClass239_Sub16_7247 == null)
+            this.aClass239_Sub16_7247
                     = new Class239_Sub16(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub9_7256 == null)
-            ((Class348_Sub51) this).aClass239_Sub9_7256
+        if (bool || this.aClass239_Sub9_7256 == null)
+            this.aClass239_Sub9_7256
                     = new Class239_Sub9(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub4_7220 == null)
-            ((Class348_Sub51) this).aClass239_Sub4_7220
+        if (bool || this.aClass239_Sub4_7220 == null)
+            this.aClass239_Sub4_7220
                     = new Class239_Sub4(this);
         if (i != 31286)
-            ((Class348_Sub51) this).aClass239_Sub4_7220 = null;
-        if (bool || ((Class348_Sub51) this).aClass239_Sub13_7236 == null)
-            ((Class348_Sub51) this).aClass239_Sub13_7236
+            this.aClass239_Sub4_7220 = null;
+        if (bool || this.aClass239_Sub13_7236 == null)
+            this.aClass239_Sub13_7236
                     = new Class239_Sub13(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub28_7230 == null)
-            ((Class348_Sub51) this).aClass239_Sub28_7230
+        if (bool || this.aClass239_Sub28_7230 == null)
+            this.aClass239_Sub28_7230
                     = new Class239_Sub28(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub7_7238 == null)
-            ((Class348_Sub51) this).aClass239_Sub7_7238
+        if (bool || this.aClass239_Sub7_7238 == null)
+            this.aClass239_Sub7_7238
                     = new Class239_Sub7(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub3_7222 == null)
-            ((Class348_Sub51) this).aClass239_Sub3_7222
+        if (bool || this.aClass239_Sub3_7222 == null)
+            this.aClass239_Sub3_7222
                     = new Class239_Sub3(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub15_7224 == null)
-            ((Class348_Sub51) this).aClass239_Sub15_7224
+        if (bool || this.aClass239_Sub15_7224 == null)
+            this.aClass239_Sub15_7224
                     = new Class239_Sub15(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub14_7250 == null)
-            ((Class348_Sub51) this).aClass239_Sub14_7250
+        if (bool || this.aClass239_Sub14_7250 == null)
+            this.aClass239_Sub14_7250
                     = new Class239_Sub14(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub14_7264 == null)
-            ((Class348_Sub51) this).aClass239_Sub14_7264
-                    = new Class239_Sub14(((Class348_Sub51) this)
+        if (bool || this.aClass239_Sub14_7264 == null)
+            this.aClass239_Sub14_7264
+                    = new Class239_Sub14(this
                     .aClass239_Sub14_7250
                     .method1778(-32350),
                     this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub23_7231 == null)
-            ((Class348_Sub51) this).aClass239_Sub23_7231
+        if (bool || this.aClass239_Sub23_7231 == null)
+            this.aClass239_Sub23_7231
                     = new Class239_Sub23(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub21_7270 == null)
-            ((Class348_Sub51) this).aClass239_Sub21_7270
+        if (bool || this.aClass239_Sub21_7270 == null)
+            this.aClass239_Sub21_7270
                     = new Class239_Sub21(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub2_7228 == null)
-            ((Class348_Sub51) this).aClass239_Sub2_7228
+        if (bool || this.aClass239_Sub2_7228 == null)
+            this.aClass239_Sub2_7228
                     = new Class239_Sub2(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub24_7235 == null)
-            ((Class348_Sub51) this).aClass239_Sub24_7235
+        if (bool || this.aClass239_Sub24_7235 == null)
+            this.aClass239_Sub24_7235
                     = new Class239_Sub24(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub25_7251 == null)
-            ((Class348_Sub51) this).aClass239_Sub25_7251
+        if (bool || this.aClass239_Sub25_7251 == null)
+            this.aClass239_Sub25_7251
                     = new Class239_Sub25(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub25_7271 == null)
-            ((Class348_Sub51) this).aClass239_Sub25_7271
-                    = new Class239_Sub25(((Class348_Sub51) this)
+        if (bool || this.aClass239_Sub25_7271 == null)
+            this.aClass239_Sub25_7271
+                    = new Class239_Sub25(this
                     .aClass239_Sub25_7251
                     .method1829(-32350),
                     this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub27_7255 == null)
-            ((Class348_Sub51) this).aClass239_Sub27_7255
+        if (bool || this.aClass239_Sub27_7255 == null)
+            this.aClass239_Sub27_7255
                     = new Class239_Sub27(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub27_7261 == null)
-            ((Class348_Sub51) this).aClass239_Sub27_7261
-                    = new Class239_Sub27(((Class348_Sub51) this)
+        if (bool || this.aClass239_Sub27_7261 == null)
+            this.aClass239_Sub27_7261
+                    = new Class239_Sub27(this
                     .aClass239_Sub27_7255
                     .method1840(-32350),
                     this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub18_7259 == null)
-            ((Class348_Sub51) this).aClass239_Sub18_7259
+        if (bool || this.aClass239_Sub18_7259 == null)
+            this.aClass239_Sub18_7259
                     = new Class239_Sub18(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub8_7227 == null)
-            ((Class348_Sub51) this).aClass239_Sub8_7227
+        if (bool || this.aClass239_Sub8_7227 == null)
+            this.aClass239_Sub8_7227
                     = new Class239_Sub8(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub8_7254 == null)
-            ((Class348_Sub51) this).aClass239_Sub8_7254
-                    = new Class239_Sub8(((Class348_Sub51) this)
+        if (bool || this.aClass239_Sub8_7254 == null)
+            this.aClass239_Sub8_7254
+                    = new Class239_Sub8(this
                     .aClass239_Sub8_7227
                     .method1751(-32350),
                     this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub22_7253 == null)
-            ((Class348_Sub51) this).aClass239_Sub22_7253
+        if (bool || this.aClass239_Sub22_7253 == null)
+            this.aClass239_Sub22_7253
                     = new Class239_Sub22(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub29_7229 == null)
-            ((Class348_Sub51) this).aClass239_Sub29_7229
+        if (bool || this.aClass239_Sub29_7229 == null)
+            this.aClass239_Sub29_7229
                     = new Class239_Sub29(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub17_7263 == null)
-            ((Class348_Sub51) this).aClass239_Sub17_7263
+        if (bool || this.aClass239_Sub17_7263 == null)
+            this.aClass239_Sub17_7263
                     = new Class239_Sub17(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub19_7257 == null)
-            ((Class348_Sub51) this).aClass239_Sub19_7257
+        if (bool || this.aClass239_Sub19_7257 == null)
+            this.aClass239_Sub19_7257
                     = new Class239_Sub19(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub11_7265 == null)
-            ((Class348_Sub51) this).aClass239_Sub11_7265
+        if (bool || this.aClass239_Sub11_7265 == null)
+            this.aClass239_Sub11_7265
                     = new Class239_Sub11(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub26_7272 == null)
-            ((Class348_Sub51) this).aClass239_Sub26_7272
+        if (bool || this.aClass239_Sub26_7272 == null)
+            this.aClass239_Sub26_7272
                     = new Class239_Sub26(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub26_7234 == null)
-            ((Class348_Sub51) this).aClass239_Sub26_7234
+        if (bool || this.aClass239_Sub26_7234 == null)
+            this.aClass239_Sub26_7234
                     = new Class239_Sub26(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub26_7215 == null)
-            ((Class348_Sub51) this).aClass239_Sub26_7215
+        if (bool || this.aClass239_Sub26_7215 == null)
+            this.aClass239_Sub26_7215
                     = new Class239_Sub26(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub26_7260 == null)
-            ((Class348_Sub51) this).aClass239_Sub26_7260
+        if (bool || this.aClass239_Sub26_7260 == null)
+            this.aClass239_Sub26_7260
                     = new Class239_Sub26(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub26_7245 == null)
-            ((Class348_Sub51) this).aClass239_Sub26_7245
+        if (bool || this.aClass239_Sub26_7245 == null)
+            this.aClass239_Sub26_7245
                     = new Class239_Sub26(this);
-        if (bool || ((Class348_Sub51) this).aClass239_Sub5_7240 == null)
-            ((Class348_Sub51) this).aClass239_Sub5_7240
+        if (bool || this.aClass239_Sub5_7240 == null)
+            this.aClass239_Sub5_7240
                     = new Class239_Sub5(this);
     }
 
@@ -631,170 +631,170 @@ final class Class348_Sub51 extends Class348 {
             if (i == 925) {
                 anInt7266++;
                 if (class348_sub49 != null
-                        && (((Class348_Sub49) class348_sub49).aByteArray7154
+                        && (class348_sub49.aByteArray7154
                         != null)) {
                     int i_4_ = class348_sub49.method3387(i + -670);
                     if ((i_4_ ^ 0xffffffff) <= -24) {
                         if (i_4_ > 24)
                             method3423(true, 31286);
                         else {
-                            ((Class348_Sub51) this).aClass239_Sub20_7216
+                            this.aClass239_Sub20_7216
                                     = new Class239_Sub20(class348_sub49
                                     .method3387(i + -670),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub20_7248
-                                    = new Class239_Sub20((((Class348_Sub51) this)
+                            this.aClass239_Sub20_7248
+                                    = new Class239_Sub20((this
                                     .aClass239_Sub20_7216
                                     .method1808
                                             (i ^ ~0x7dc0)),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub12_7243
+                            this.aClass239_Sub12_7243
                                     = new Class239_Sub12(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub10_7232
+                            this.aClass239_Sub10_7232
                                     = new Class239_Sub10(class348_sub49
                                     .method3387(i + -670),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub6_7226
+                            this.aClass239_Sub6_7226
                                     = new Class239_Sub6(class348_sub49
                                     .method3387(i + -670),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub1_7246
+                            this.aClass239_Sub1_7246
                                     = new Class239_Sub1(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub16_7247
+                            this.aClass239_Sub16_7247
                                     = new Class239_Sub16(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub9_7256
+                            this.aClass239_Sub9_7256
                                     = new Class239_Sub9(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub4_7220
+                            this.aClass239_Sub4_7220
                                     = new Class239_Sub4(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub13_7236
+                            this.aClass239_Sub13_7236
                                     = new Class239_Sub13(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub28_7230
+                            this.aClass239_Sub28_7230
                                     = new Class239_Sub28(class348_sub49
                                     .method3387(i + -670),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub7_7238
+                            this.aClass239_Sub7_7238
                                     = new Class239_Sub7(class348_sub49
                                     .method3387(255),
                                     this);
                             if ((i_4_ ^ 0xffffffff) <= -25)
-                                ((Class348_Sub51) this).aClass239_Sub3_7222
+                                this.aClass239_Sub3_7222
                                         = new Class239_Sub3(class348_sub49
                                         .method3387(255),
                                         this);
-                            ((Class348_Sub51) this).aClass239_Sub15_7224
+                            this.aClass239_Sub15_7224
                                     = new Class239_Sub15(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub14_7250
+                            this.aClass239_Sub14_7250
                                     = new Class239_Sub14(class348_sub49
                                     .method3387(i + -670),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub14_7264
-                                    = new Class239_Sub14(((Class348_Sub51) this)
+                            this.aClass239_Sub14_7264
+                                    = new Class239_Sub14(this
                                     .aClass239_Sub14_7250
                                     .method1778(-32350),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub23_7231
+                            this.aClass239_Sub23_7231
                                     = new Class239_Sub23(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub21_7270
+                            this.aClass239_Sub21_7270
                                     = new Class239_Sub21(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub2_7228
+                            this.aClass239_Sub2_7228
                                     = new Class239_Sub2(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub24_7235
+                            this.aClass239_Sub24_7235
                                     = new Class239_Sub24(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub25_7251
+                            this.aClass239_Sub25_7251
                                     = new Class239_Sub25(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub25_7271
-                                    = new Class239_Sub25(((Class348_Sub51) this)
+                            this.aClass239_Sub25_7271
+                                    = new Class239_Sub25(this
                                     .aClass239_Sub25_7251
                                     .method1829(-32350),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub27_7255
+                            this.aClass239_Sub27_7255
                                     = new Class239_Sub27(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub27_7261
-                                    = new Class239_Sub27(((Class348_Sub51) this)
+                            this.aClass239_Sub27_7261
+                                    = new Class239_Sub27(this
                                     .aClass239_Sub27_7255
                                     .method1840(-32350),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub18_7259
+                            this.aClass239_Sub18_7259
                                     = new Class239_Sub18(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub8_7227
+                            this.aClass239_Sub8_7227
                                     = new Class239_Sub8(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub8_7254
+                            this.aClass239_Sub8_7254
                                     = (new Class239_Sub8
-                                    (((Class348_Sub51) this)
+                                    (this
                                             .aClass239_Sub8_7227
                                             .method1751(i + -33275),
                                             this));
-                            ((Class348_Sub51) this).aClass239_Sub22_7253
+                            this.aClass239_Sub22_7253
                                     = new Class239_Sub22(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub29_7229
+                            this.aClass239_Sub29_7229
                                     = new Class239_Sub29(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub17_7263
+                            this.aClass239_Sub17_7263
                                     = new Class239_Sub17(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub19_7257
+                            this.aClass239_Sub19_7257
                                     = new Class239_Sub19(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub11_7265
+                            this.aClass239_Sub11_7265
                                     = new Class239_Sub11(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub26_7272
+                            this.aClass239_Sub26_7272
                                     = new Class239_Sub26(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub26_7234
+                            this.aClass239_Sub26_7234
                                     = new Class239_Sub26(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub26_7215
+                            this.aClass239_Sub26_7215
                                     = new Class239_Sub26(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub26_7260
+                            this.aClass239_Sub26_7260
                                     = new Class239_Sub26(class348_sub49
                                     .method3387(255),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub26_7245
+                            this.aClass239_Sub26_7245
                                     = new Class239_Sub26(class348_sub49
                                     .method3387(i + -670),
                                     this);
-                            ((Class348_Sub51) this).aClass239_Sub5_7240
+                            this.aClass239_Sub5_7240
                                     = new Class239_Sub5(class348_sub49
                                     .method3387(255),
                                     this);
@@ -825,13 +825,10 @@ final class Class348_Sub51 extends Class348 {
         if (i > -61)
             method3424(21, null);
         anInt7217++;
-        if (!((Class348_Sub51) this).aClass239_Sub25_7271
+        return this.aClass239_Sub25_7271
                 .method1830((byte) -120)
-                || (((Class348_Sub51) this).aClass239_Sub25_7271.method1829(-32350)
-                != 0)
-                || aClass199_7221.method1458(-23688) >= 96)
-            return false;
-        return true;
+                && (this.aClass239_Sub25_7271.method1829(-32350) == 0)
+                && aClass199_7221.method1458(-23688) < 96;
     }
 
     private final void method3426(byte i) {
@@ -863,131 +860,131 @@ final class Class348_Sub51 extends Class348 {
                 = new Class348_Sub49(Class110.method1032(i ^ ~0x18));
         class348_sub49.method3378(false, i);
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub20_7216
                         .method1808(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub12_7243
                         .method1771(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub10_7232
                         .method1764(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub6_7226.method1743(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub1_7246
                         .method1720(i ^ ~0x7e45));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub16_7247
                         .method1789(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub9_7256.method1759(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub4_7220
                         .method1737(i + -32374));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub13_7236
                         .method1776(i + -32374));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub28_7230
                         .method1845(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub7_7238
                         .method1748(i ^ ~0x7e45));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub3_7222.method1727(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub15_7224
                         .method1784(i + -32374));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub14_7250
                         .method1778(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub23_7231
                         .method1818(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub21_7270
                         .method1812(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub2_7228.method1726(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub24_7235
                         .method1820(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub25_7251
                         .method1829(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub27_7255
                         .method1840(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub18_7259
                         .method1800(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub8_7227
                         .method1751(i + -32374));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub22_7253
                         .method1815(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub29_7229
                         .method1848(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub17_7263
                         .method1798(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub19_7257
                         .method1805(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub11_7265
                         .method1768(i ^ ~0x7e45));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub26_7272
                         .method1838(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub26_7234
                         .method1838(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub26_7215
                         .method1838(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub26_7260
                         .method1838(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub26_7245
                         .method1838(-32350));
         class348_sub49.method3378(false,
-                ((Class348_Sub51) this)
+                this
                         .aClass239_Sub5_7240.method1739(-32350));
         return class348_sub49;
     }
@@ -1030,14 +1027,14 @@ final class Class348_Sub51 extends Class348 {
         try {
             aClass230_7269 = class230;
             aClass199_7221
-                    = new Class199((((Class297) Class348_Sub23_Sub1.aClass297_8992)
+                    = new Class199((Class348_Sub23_Sub1.aClass297_8992
                     .aBoolean3777),
                     Class226.anInt2964,
                     Class348_Sub40_Sub29.anInt9372,
                     (Class297.aString3780.toLowerCase()
                             .indexOf("arm")
                             ^ 0xffffffff) != 0);
-            ((Class348_Sub51) this).aClass239_Sub25_7271
+            this.aClass239_Sub25_7271
                     = new Class239_Sub25(i, this);
             method3423(true, 31286);
         } catch (RuntimeException runtimeexception) {
@@ -1053,12 +1050,12 @@ final class Class348_Sub51 extends Class348 {
         try {
             aClass230_7269 = class230;
             aClass199_7221
-                    = new Class199((((Class297) Class348_Sub23_Sub1.aClass297_8992)
+                    = new Class199((Class348_Sub23_Sub1.aClass297_8992
                     .aBoolean3777),
                     Class226.anInt2964,
                     Class348_Sub40_Sub29.anInt9372,
                     Class297.aString3780.indexOf("arm") != -1);
-            ((Class348_Sub51) this).aClass239_Sub25_7271
+            this.aClass239_Sub25_7271
                     = new Class239_Sub25(i, this);
             method3424(925, class348_sub49);
         } catch (RuntimeException runtimeexception) {

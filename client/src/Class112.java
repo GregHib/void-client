@@ -7,7 +7,7 @@ final class Class112 implements Runnable {
     static Class207 aClass207_1727;
     static int anInt1728;
     static int anInt1729;
-    private Class107 aClass107_1730 = new Class107();
+    private final Class107 aClass107_1730 = new Class107();
     static int anInt1731;
     static int anInt1732;
     private Thread aThread1733;
@@ -25,17 +25,17 @@ final class Class112 implements Runnable {
             anInt1732++;
             Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2
                     = new Class348_Sub42_Sub16_Sub2();
-            ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2)
+            class348_sub42_sub16_sub2
                     .aByteArray10461
                     = is;
-            ((Class348_Sub42_Sub16) class348_sub42_sub16_sub2).aBoolean9663
+            class348_sub42_sub16_sub2.aBoolean9663
                     = false;
-            ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2)
+            class348_sub42_sub16_sub2
                     .aClass137_10458
                     = class137;
-            ((Class348_Sub42) class348_sub42_sub16_sub2).aLong7057
-                    = (long) i_0_;
-            ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2).anInt10457
+            class348_sub42_sub16_sub2.aLong7057
+                    = i_0_;
+            class348_sub42_sub16_sub2.anInt10457
                     = 2;
             method1050(class348_sub42_sub16_sub2, i + -123);
             return class348_sub42_sub16_sub2;
@@ -55,7 +55,7 @@ final class Class112 implements Runnable {
         anInt1735++;
         synchronized (aClass107_1730) {
             aClass107_1730.method1005(true, class348_sub42_sub16_sub2);
-            ((Class112) this).anInt1734++;
+            this.anInt1734++;
             if (i > -100)
                 aClass207_1727 = null;
             aClass107_1730.notifyAll();
@@ -88,8 +88,7 @@ final class Class112 implements Runnable {
         if (Class289.aClass46_3701 == null) {
             if (!Class5_Sub1.aBoolean8335
                     && Class316.aClass348_Sub42_Sub12_3963 != null)
-                return (((Class348_Sub42_Sub12)
-                        Class316.aClass348_Sub42_Sub12_3963)
+                return (Class316.aClass348_Sub42_Sub12_3963
                         .anInt9609);
             int i_2_ = Class258_Sub4.aClass373_8552.method3597(true);
             int i_3_ = Class258_Sub4.aClass373_8552.method3594((byte) 81);
@@ -105,8 +104,7 @@ final class Class112 implements Runnable {
                         int i_4_ = -1;
                         for (int i_5_ = 0;
                              ((i_5_ ^ 0xffffffff)
-                                     > ((((Class348_Sub42_Sub13)
-                                     Class242.aClass348_Sub42_Sub13_3152)
+                                     > ((Class242.aClass348_Sub42_Sub13_3152
                                      .anInt9615)
                                      ^ 0xffffffff));
                              i_5_++) {
@@ -128,9 +126,8 @@ final class Class112 implements Runnable {
                         if ((i_4_ ^ 0xffffffff) != 0) {
                             int i_8_ = 0;
                             Class156 class156
-                                    = new Class156(((Class348_Sub42_Sub13)
-                                    (Class242
-                                            .aClass348_Sub42_Sub13_3152))
+                                    = new Class156(Class242
+                                            .aClass348_Sub42_Sub13_3152
                                     .aClass107_9621);
                             for (Class348_Sub42_Sub12 class348_sub42_sub12
                                  = ((Class348_Sub42_Sub12)
@@ -140,8 +137,7 @@ final class Class112 implements Runnable {
                                          = ((Class348_Sub42_Sub12)
                                          class156.method1243((byte) 90))) {
                                 if (i_8_++ == i_4_)
-                                    return (((Class348_Sub42_Sub12)
-                                            class348_sub42_sub12)
+                                    return (class348_sub42_sub12
                                             .anInt9609);
                             }
                         }
@@ -179,13 +175,10 @@ final class Class112 implements Runnable {
                                      class156.method1243((byte) 77))) {
                             if (i_9_ == i_13_++)
                                 return ((Class348_Sub42_Sub12)
-                                        (Class348_Sub42_Sub12)
-                                                (((Class348_Sub42)
-                                                        (((Class107) (((Class348_Sub42_Sub13)
-                                                                class348_sub42_sub13)
-                                                                .aClass107_9621))
-                                                                .aClass348_Sub42_1647))
-                                                        .aClass348_Sub42_7063)).anInt9609;
+                                        class348_sub42_sub13
+                                                .aClass107_9621
+                                                .aClass348_Sub42_1647
+                                                .aClass348_Sub42_7063).anInt9609;
                         }
                     }
                 }
@@ -222,8 +215,7 @@ final class Class112 implements Runnable {
                                  = ((Class348_Sub42_Sub12)
                                  class312.method2329(i + -3102))) {
                         if (i_14_ == i_18_++)
-                            return (((Class348_Sub42_Sub12)
-                                    class348_sub42_sub12)
+                            return (class348_sub42_sub12
                                     .anInt9609);
                     }
                 }
@@ -239,11 +231,11 @@ final class Class112 implements Runnable {
                 = new Class348_Sub42_Sub16_Sub2();
         if (i_19_ != -112)
             return null;
-        ((Class348_Sub42_Sub16) class348_sub42_sub16_sub2).aBoolean9663
+        class348_sub42_sub16_sub2.aBoolean9663
                 = false;
-        ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2).anInt10457 = 3;
-        ((Class348_Sub42) class348_sub42_sub16_sub2).aLong7057 = (long) i;
-        ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2).aClass137_10458
+        class348_sub42_sub16_sub2.anInt10457 = 3;
+        class348_sub42_sub16_sub2.aLong7057 = i;
+        class348_sub42_sub16_sub2.aClass137_10458
                 = class137;
         method1050(class348_sub42_sub16_sub2, -101);
         return class348_sub42_sub16_sub2;
@@ -256,7 +248,7 @@ final class Class112 implements Runnable {
                 class348_sub42_sub16_sub2 = ((Class348_Sub42_Sub16_Sub2)
                         aClass107_1730.method1008(20));
                 if (class348_sub42_sub16_sub2 != null)
-                    ((Class112) this).anInt1734--;
+                    this.anInt1734--;
                 else {
                     try {
                         aClass107_1730.wait();
@@ -267,36 +259,31 @@ final class Class112 implements Runnable {
                 }
             }
             try {
-                if (((((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2)
+                if (((class348_sub42_sub16_sub2
                         .anInt10457)
                         ^ 0xffffffff)
                         != -3) {
-                    if ((((Class348_Sub42_Sub16_Sub2)
-                            class348_sub42_sub16_sub2).anInt10457
+                    if ((class348_sub42_sub16_sub2.anInt10457
                             ^ 0xffffffff)
                             == -4)
-                        ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2)
+                        class348_sub42_sub16_sub2
                                 .aByteArray10461
-                                = (((Class348_Sub42_Sub16_Sub2)
-                                class348_sub42_sub16_sub2)
+                                = (class348_sub42_sub16_sub2
                                 .aClass137_10458.method1161
                                         ((byte) -4,
-                                                (int) ((Class348_Sub42)
-                                                        class348_sub42_sub16_sub2).aLong7057));
+                                                (int) class348_sub42_sub16_sub2.aLong7057));
                 } else
-                    ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2)
+                    class348_sub42_sub16_sub2
                             .aClass137_10458.method1160
-                            (((Class348_Sub42_Sub16_Sub2)
-                                            class348_sub42_sub16_sub2).aByteArray10461.length,
-                                    (int) (((Class348_Sub42) class348_sub42_sub16_sub2)
+                            (class348_sub42_sub16_sub2.aByteArray10461.length,
+                                    (int) (class348_sub42_sub16_sub2
                                             .aLong7057),
-                                    ((Class348_Sub42_Sub16_Sub2)
-                                            class348_sub42_sub16_sub2).aByteArray10461,
+                                    class348_sub42_sub16_sub2.aByteArray10461,
                                     -7305);
             } catch (Exception exception) {
                 Class156.method1242(null, exception, 15004);
             }
-            ((Class348_Sub42_Sub16) class348_sub42_sub16_sub2).aBoolean9664
+            class348_sub42_sub16_sub2.aBoolean9664
                     = false;
         }
         anInt1736++;
@@ -309,7 +296,7 @@ final class Class112 implements Runnable {
         anInt1737++;
         Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2
                 = new Class348_Sub42_Sub16_Sub2();
-        ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2).anInt10457 = 1;
+        class348_sub42_sub16_sub2.anInt10457 = 1;
         synchronized (aClass107_1730) {
             for (Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2_21_
                  = ((Class348_Sub42_Sub16_Sub2)
@@ -318,35 +305,32 @@ final class Class112 implements Runnable {
                  class348_sub42_sub16_sub2_21_
                          = ((Class348_Sub42_Sub16_Sub2)
                          aClass107_1730.method1003((byte) 73))) {
-                if ((((Class348_Sub42) class348_sub42_sub16_sub2_21_).aLong7057
+                if ((class348_sub42_sub16_sub2_21_.aLong7057
                         == (long) i)
-                        && (((Class348_Sub42_Sub16_Sub2)
-                        class348_sub42_sub16_sub2_21_).aClass137_10458
+                        && (class348_sub42_sub16_sub2_21_.aClass137_10458
                         == class137)
-                        && (((Class348_Sub42_Sub16_Sub2)
-                        class348_sub42_sub16_sub2_21_).anInt10457
+                        && (class348_sub42_sub16_sub2_21_.anInt10457
                         ^ 0xffffffff) == -3) {
-                    ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2)
+                    class348_sub42_sub16_sub2
                             .aByteArray10461
-                            = ((Class348_Sub42_Sub16_Sub2)
-                            class348_sub42_sub16_sub2_21_).aByteArray10461;
-                    ((Class348_Sub42_Sub16) class348_sub42_sub16_sub2)
+                            = class348_sub42_sub16_sub2_21_.aByteArray10461;
+                    class348_sub42_sub16_sub2
                             .aBoolean9664
                             = false;
                     return class348_sub42_sub16_sub2;
                 }
             }
         }
-        ((Class348_Sub42_Sub16_Sub2) class348_sub42_sub16_sub2).aByteArray10461
+        class348_sub42_sub16_sub2.aByteArray10461
                 = class137.method1161((byte) -4, i);
-        ((Class348_Sub42_Sub16) class348_sub42_sub16_sub2).aBoolean9663 = true;
-        ((Class348_Sub42_Sub16) class348_sub42_sub16_sub2).aBoolean9664
+        class348_sub42_sub16_sub2.aBoolean9663 = true;
+        class348_sub42_sub16_sub2.aBoolean9664
                 = false;
         return class348_sub42_sub16_sub2;
     }
 
     Class112(Class297 class297) {
-        ((Class112) this).anInt1734 = 0;
+        this.anInt1734 = 0;
         Class144 class144 = class297.method2236(this, -10240, 5);
         while (class144.anInt1997 == 0)
             Class286_Sub5.method2161((byte) 43, 10L);

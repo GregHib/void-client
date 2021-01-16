@@ -48,10 +48,10 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
 
     final int[] method3042(int i, int i_2_) {
         anInt9336++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
+        int[] is = this.aClass191_7032.method1433(0, i);
         if (i_2_ != 255)
             return null;
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        if (this.aClass191_7032.aBoolean2570) {
             for (int i_3_ = 0; i_3_ < Class348_Sub40_Sub6.anInt9139; i_3_++) {
                 int i_4_ = anInt9339 + (Class318_Sub6.anIntArray6432[i_3_]
                         << 1201316012) / anInt9340;

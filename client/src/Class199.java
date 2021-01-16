@@ -6,17 +6,17 @@ import java.awt.*;
 
 final class Class199 {
     static int anInt2624;
-    private boolean aBoolean2625;
+    private final boolean aBoolean2625;
     private int anInt2626;
     static int anInt2627;
     static int anInt2628;
-    private boolean aBoolean2629;
+    private final boolean aBoolean2629;
     static int anInt2630;
     static int[] anIntArray2631 = new int[4096];
     static int[] anIntArray2632;
     static int[] anIntArray2633;
     static int anInt2634;
-    private int anInt2635;
+    private final int anInt2635;
     static Class352[] aClass352Array2636;
     static int anInt2637;
 

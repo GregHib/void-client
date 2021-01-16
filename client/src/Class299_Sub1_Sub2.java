@@ -8,7 +8,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
     static Class348_Sub49 aClass348_Sub49_8698;
     static int anInt8699;
     static int anInt8700;
-    private Class258_Sub2 aClass258_Sub2_8701;
+    private final Class258_Sub2 aClass258_Sub2_8701;
     static int anInt8702;
     static int anInt8703;
     static int anInt8704;
@@ -21,7 +21,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
         try {
             anInt8703++;
             boolean bool = true;
-            Class206 class206 = ((ha_Sub2) aHa_Sub2_8707).aClass206_7778;
+            Class206 class206 = aHa_Sub2_8707.aClass206_7778;
             aHa_Sub2_8707.K(Class348_Sub6.anIntArray6635);
             aHa_Sub2_8707.la();
             aHa_Sub2_8707.method3755(-32);
@@ -32,8 +32,8 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
             OpenGL.glLoadIdentity();
             OpenGL.glPushAttrib(2048);
             OpenGL.glViewport(0, 0,
-                    ((Class258_Sub2) aClass258_Sub2_8701).anInt8538,
-                    ((Class258_Sub2) aClass258_Sub2_8701).anInt8538);
+                    aClass258_Sub2_8701.anInt8538,
+                    aClass258_Sub2_8701.anInt8538);
             aHa_Sub2_8707.method3807(false, i + -65532);
             aHa_Sub2_8707.method3728(false, i + -65411);
             aHa_Sub2_8707.method3752(114, false);
@@ -222,7 +222,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
                     Class348_Sub6.anIntArray6635[1],
                     Class348_Sub6.anIntArray6635[2],
                     Class348_Sub6.anIntArray6635[3]);
-            if (bool && !((ha_Sub2) aHa_Sub2_8707).aBoolean7847)
+            if (bool && !aHa_Sub2_8707.aBoolean7847)
                 aClass258_Sub2_8701.method1950(69);
             return bool;
         } catch (RuntimeException runtimeexception) {
@@ -248,19 +248,19 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
         if (i != 65534)
             aHa_Sub2_8707 = null;
         anInt8699++;
-        return ((Class258_Sub2) aClass258_Sub2_8701).anInt8538;
+        return aClass258_Sub2_8701.anInt8538;
     }
 
     static final Class105 method2263(ha var_ha, int i, int i_4_) {
         anInt8705++;
         Class348_Sub15 class348_sub15
                 = ((Class348_Sub15)
-                Class27.aClass356_389.method3480((long) i_4_, -6008));
+                Class27.aClass356_389.method3480(i_4_, -6008));
         if (class348_sub15 != null) {
             Class348_Sub23_Sub2 class348_sub23_sub2
-                    = ((Class348_Sub15) class348_sub15).aClass55_Sub1_6768
+                    = class348_sub15.aClass55_Sub1_6768
                     .method506(false);
-            ((Class348_Sub15) class348_sub15).aBoolean6772 = true;
+            class348_sub15.aBoolean6772 = true;
             if (class348_sub23_sub2 != null)
                 return class348_sub23_sub2.method2975(var_ha, 0);
         }

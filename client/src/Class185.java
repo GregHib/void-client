@@ -3,8 +3,8 @@
  */
 
 final class Class185 {
-    private Class60 aClass60_2479 = new Class60(64);
-    private Class45 aClass45_2480;
+    private final Class60 aClass60_2479 = new Class60(64);
+    private final Class45 aClass45_2480;
     static int anInt2481;
     static int anInt2482;
     static Class114 aClass114_2483;
@@ -36,7 +36,7 @@ final class Class185 {
         anInt2485++;
         Class253 class253;
         synchronized (aClass60_2479) {
-            class253 = (Class253) aClass60_2479.method583((long) i_1_, 96);
+            class253 = (Class253) aClass60_2479.method583(i_1_, 96);
         }
         if (class253 != null)
             return class253;
@@ -49,7 +49,7 @@ final class Class185 {
         if (is != null)
             class253.method1921((byte) -69, new Class348_Sub49(is));
         synchronized (aClass60_2479) {
-            aClass60_2479.method582(class253, (long) i_1_, (byte) -108);
+            aClass60_2479.method582(class253, i_1_, (byte) -108);
         }
         return class253;
     }
@@ -73,8 +73,8 @@ final class Class185 {
     static final void method1394(int i, int i_5_, int i_6_) {
         boolean bool
                 = (Class147.aClass357ArrayArrayArray2029[0][i_5_][i_6_] != null
-                && ((Class357) (Class147.aClass357ArrayArrayArray2029[0][i_5_]
-                [i_6_])).aClass357_4400 != null);
+                && Class147.aClass357ArrayArrayArray2029[0][i_5_]
+                [i_6_].aClass357_4400 != null);
         for (int i_7_ = i; i_7_ >= 0; i_7_--) {
             if (Class147.aClass357ArrayArrayArray2029[i_7_][i_5_][i_6_]
                     == null) {
@@ -82,7 +82,7 @@ final class Class185 {
                         = (Class147.aClass357ArrayArrayArray2029[i_7_][i_5_][i_6_]
                         = new Class357(i_7_));
                 if (bool)
-                    ((Class357) class357).aByte4399++;
+                    class357.aByte4399++;
             }
         }
     }

@@ -48,8 +48,8 @@ final class Class216 implements Interface13 {
     }
 
     Class216(int i, int i_4_) {
-        ((Class216) this).anInt4978 = i_4_;
-        ((Class216) this).anInt4974 = i;
-        ((Class216) this).aFloatArray4980 = new float[i * i_4_];
+        this.anInt4978 = i_4_;
+        this.anInt4974 = i;
+        this.aFloatArray4980 = new float[i * i_4_];
     }
 }

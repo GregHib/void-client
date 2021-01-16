@@ -33,65 +33,65 @@ final class Class48 {
             try {
                 anInt849++;
                 Class348_Sub47 class348_sub47 = Class203.method1478(true);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3378
-                                (bool, ((Class29) Class178.aClass29_2348).anInt400);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                                (bool, Class178.aClass29_2348.anInt400);
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3337((byte) 107, 0);
                 int i_3_
-                        = (((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                        .aClass348_Sub49_Sub2_7116))
+                        = (class348_sub47
+                        .aClass348_Sub49_Sub2_7116
                         .anInt7197);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3337((byte) 107, 634);
                 int[] is = Class50_Sub1.method463(class348_sub47, false);
                 int i_4_
-                        = (((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                        .aClass348_Sub49_Sub2_7116))
+                        = (class348_sub47
+                        .aClass348_Sub49_Sub2_7116
                         .anInt7197);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3333((byte) -5, string_1_);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3337((byte) 107, Class202.anInt2670);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3333((byte) -5, string);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3392(Class244.aLong4615, (byte) 104);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3378(bool, Class348_Sub33.anInt6967);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3378
                                 (bool,
-                                        (((Class230) Class348_Sub42_Sub8_Sub2.aClass230_10434)
+                                        (Class348_Sub42_Sub8_Sub2.aClass230_10434
                                                 .anInt2987));
-                s_Sub2.method4002((((Class348_Sub47) class348_sub47)
+                s_Sub2.method4002((class348_sub47
                                 .aClass348_Sub49_Sub2_7116),
                         (byte) 55);
                 String string_5_ = Class14_Sub1.aString8605;
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3378(false, string_5_ == null ? 0 : 1);
                 if (string_5_ != null)
-                    ((Class348_Sub47) class348_sub47)
+                    class348_sub47
                             .aClass348_Sub49_Sub2_7116
                             .method3333((byte) -5, string_5_);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3378(false, i);
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3378(false, !bool_2_ ? 0 : 1);
-                ((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                        .aClass348_Sub49_Sub2_7116)).anInt7197
+                class348_sub47
+                        .aClass348_Sub49_Sub2_7116.anInt7197
                         += 7;
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3350
                                 (i_4_, true, is,
-                                        (((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                                                .aClass348_Sub49_Sub2_7116))
+                                        (class348_sub47
+                                                .aClass348_Sub49_Sub2_7116
                                                 .anInt7197));
-                ((Class348_Sub47) class348_sub47).aClass348_Sub49_Sub2_7116
+                class348_sub47.aClass348_Sub49_Sub2_7116
                         .method3383
                                 (1809639944,
-                                        (((Class348_Sub49) (((Class348_Sub47) class348_sub47)
-                                                .aClass348_Sub49_Sub2_7116)).anInt7197
+                                        (class348_sub47
+                                                .aClass348_Sub49_Sub2_7116.anInt7197
                                                 + -i_3_));
                 Class348_Sub42_Sub14.method3243(2, class348_sub47);
                 Class352.anInt4337 = -3;
@@ -125,13 +125,13 @@ final class Class48 {
     }
 
     final void method451(Class48 class48_7_, byte i) {
-        ((Class48) this).anInt857 = ((Class48) class48_7_).anInt857;
-        ((Class48) this).anInt858 = ((Class48) class48_7_).anInt858;
-        ((Class48) this).anInt856 = ((Class48) class48_7_).anInt856;
-        ((Class48) this).anInt854 = ((Class48) class48_7_).anInt854;
+        this.anInt857 = class48_7_.anInt857;
+        this.anInt858 = class48_7_.anInt858;
+        this.anInt856 = class48_7_.anInt856;
+        this.anInt854 = class48_7_.anInt854;
         anInt855++;
-        ((Class48) this).anInt847 = ((Class48) class48_7_).anInt847;
-        ((Class48) this).anInt853 = ((Class48) class48_7_).anInt853;
+        this.anInt847 = class48_7_.anInt847;
+        this.anInt853 = class48_7_.anInt853;
         if (i != -110)
             method448((byte) -93);
     }
@@ -140,28 +140,28 @@ final class Class48 {
         anInt848++;
         if (bool != true)
             method448((byte) -81);
-        return new Class48(((Class48) this).anInt858,
-                ((Class48) this).anInt856,
-                ((Class48) this).anInt857,
-                ((Class48) this).anInt854,
-                ((Class48) this).anInt847,
-                ((Class48) this).anInt853);
+        return new Class48(this.anInt858,
+                this.anInt856,
+                this.anInt857,
+                this.anInt854,
+                this.anInt847,
+                this.anInt853);
     }
 
     Class48(int i) {
-        ((Class48) this).anInt856 = 128;
-        ((Class48) this).anInt858 = i;
+        this.anInt856 = 128;
+        this.anInt858 = i;
     }
 
     private Class48(int i, int i_8_, int i_9_, int i_10_, int i_11_,
                     int i_12_) {
-        ((Class48) this).anInt856 = 128;
-        ((Class48) this).anInt847 = i_11_;
-        ((Class48) this).anInt854 = i_10_;
-        ((Class48) this).anInt853 = i_12_;
-        ((Class48) this).anInt858 = i;
-        ((Class48) this).anInt856 = i_8_;
-        ((Class48) this).anInt857 = i_9_;
+        this.anInt856 = 128;
+        this.anInt847 = i_11_;
+        this.anInt854 = i_10_;
+        this.anInt853 = i_12_;
+        this.anInt858 = i;
+        this.anInt856 = i_8_;
+        this.anInt857 = i_9_;
     }
 
     static {

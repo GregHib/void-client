@@ -4,16 +4,16 @@
 
 final class Class232 {
     private Class258_Sub3 aClass258_Sub3_2998;
-    private Class104 aClass104_2999;
-    private ha_Sub2 aHa_Sub2_3000;
+    private final Class104 aClass104_2999;
+    private final ha_Sub2 aHa_Sub2_3000;
     private Interface8 anInterface8_3001;
-    private int anInt3002;
-    private int anInt3003;
+    private final int anInt3002;
+    private final int anInt3003;
     static int anInt3004;
     static int anInt3005;
     static int anInt3006;
     static int anInt3007;
-    private int anInt3008;
+    private final int anInt3008;
     boolean aBoolean3009 = true;
     private int anInt3010 = -1;
     private Class119_Sub2 aClass119_Sub2_3011;
@@ -76,11 +76,11 @@ final class Class232 {
             for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff);
                  i_12_++) {
                 int i_13_
-                        = ((s) var_s_Sub2).anInt4587 * (i_11_ - -i_12_) - -i_10_;
+                        = var_s_Sub2.anInt4587 * (i_11_ - -i_12_) - -i_10_;
                 for (int i_14_ = 0; (i_8_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff);
                      i_14_++) {
                     short[] is
-                            = ((s_Sub2) var_s_Sub2).aShortArrayArray8267[i_13_++];
+                            = var_s_Sub2.aShortArrayArray8267[i_13_++];
                     if (is != null)
                         i_9_ += is.length;
                 }
@@ -90,16 +90,16 @@ final class Class232 {
                 aClass258_Sub3_2998 = null;
             else {
                 Class348_Sub49 class348_sub49 = new Class348_Sub49(i_9_ * 2);
-                if (!((ha_Sub2) aHa_Sub2_3000).aBoolean7775) {
+                if (!aHa_Sub2_3000.aBoolean7775) {
                     for (int i_15_ = 0;
                          (i_15_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff); i_15_++) {
                         int i_16_
-                                = ((i_11_ - -i_15_) * ((s) var_s_Sub2).anInt4587
+                                = ((i_11_ - -i_15_) * var_s_Sub2.anInt4587
                                 - -i_10_);
                         for (int i_17_ = 0;
                              (i_17_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff);
                              i_17_++) {
-                            short[] is = (((s_Sub2) var_s_Sub2)
+                            short[] is = (var_s_Sub2
                                     .aShortArrayArray8267[i_16_++]);
                             if (is != null) {
                                 for (int i_18_ = 0; is.length > i_18_; i_18_++)
@@ -113,9 +113,9 @@ final class Class232 {
                          (i_19_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff); i_19_++) {
                         int i_20_
                                 = (i_10_
-                                + (i_19_ + i_11_) * ((s) var_s_Sub2).anInt4587);
+                                + (i_19_ + i_11_) * var_s_Sub2.anInt4587);
                         for (int i_21_ = 0; i_8_ > i_21_; i_21_++) {
-                            short[] is = (((s_Sub2) var_s_Sub2)
+                            short[] is = (var_s_Sub2
                                     .aShortArrayArray8267[i_20_++]);
                             if (is != null) {
                                 for (int i_22_ = 0;
@@ -131,8 +131,8 @@ final class Class232 {
                 }
                 anInterface8_3001
                         = (aHa_Sub2_3000.method3733
-                        (5123, -39, ((Class348_Sub49) class348_sub49).anInt7197,
-                                ((Class348_Sub49) class348_sub49).aByteArray7154,
+                        (5123, -39, class348_sub49.anInt7197,
+                                class348_sub49.aByteArray7154,
                                 false));
                 aClass119_Sub2_3011
                         = new Class119_Sub2(aHa_Sub2_3000, 5123, null, 1);
@@ -150,16 +150,16 @@ final class Class232 {
 
     private final void method1648(byte i) {
         anInt3004++;
-        if (((Class232) this).aBoolean3009) {
-            ((Class232) this).aBoolean3009 = false;
-            byte[] is = ((Class104) aClass104_2999).aByteArray1617;
-            byte[] is_23_ = ((ha_Sub2) aHa_Sub2_3000).aByteArray7879;
+        if (this.aBoolean3009) {
+            this.aBoolean3009 = false;
+            byte[] is = aClass104_2999.aByteArray1617;
+            byte[] is_23_ = aHa_Sub2_3000.aByteArray7879;
             if (i > 115) {
                 int i_24_ = 0;
-                int i_25_ = ((Class104) aClass104_2999).anInt1624;
+                int i_25_ = aClass104_2999.anInt1624;
                 int i_26_
                         = (anInt3003
-                        - -(anInt3002 * ((Class104) aClass104_2999).anInt1624));
+                        - -(anInt3002 * aClass104_2999.anInt1624));
                 for (int i_27_ = -128; i_27_ < 0; i_27_++) {
                     i_24_ = (i_24_ << 135697608) + -i_24_;
                     for (int i_28_ = -128; i_28_ < 0; i_28_++) {
@@ -169,7 +169,7 @@ final class Class232 {
                     i_26_ += i_25_ - 128;
                 }
                 if (aClass258_Sub3_2998 != null && i_24_ == anInt3010)
-                    ((Class232) this).aBoolean3009 = false;
+                    this.aBoolean3009 = false;
                 else {
                     anInt3010 = i_24_;
                     i_26_ = anInt3003 - -(i_25_ * anInt3002);
@@ -193,17 +193,17 @@ final class Class232 {
                             }
                             i_26_++;
                         }
-                        i_26_ += ((Class104) aClass104_2999).anInt1624 - 128;
+                        i_26_ += aClass104_2999.anInt1624 - 128;
                     }
                     if (aClass258_Sub3_2998 != null)
                         aClass258_Sub3_2998.method1970
                                 (0, 0, 128, false, 0, 128, 6406, -69,
-                                        ((ha_Sub2) aHa_Sub2_3000).aByteArray7879, 0);
+                                        aHa_Sub2_3000.aByteArray7879, 0);
                     else {
                         aClass258_Sub3_2998
                                 = new Class258_Sub3(aHa_Sub2_3000, 3553, 6406, 128,
                                 128, false,
-                                (((ha_Sub2) aHa_Sub2_3000)
+                                (aHa_Sub2_3000
                                         .aByteArray7879),
                                 6406, false);
                         aClass258_Sub3_2998.method1965(false, false, 10243);

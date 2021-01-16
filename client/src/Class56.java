@@ -10,7 +10,7 @@ final class Class56 {
     static int anInt1014;
     Class274 aClass274_1015;
     boolean aBoolean1016;
-    private int anInt1017;
+    private final int anInt1017;
     static Class56 aClass56_1018 = new Class56(0, Class274.aClass274_3499,
             Class274.aClass274_3499, 0, 1);
     static int anInt1019;
@@ -146,13 +146,13 @@ final class Class56 {
     private Class56(int i, Class274 class274, Class274 class274_5_, int i_6_,
                     int i_7_, boolean bool, boolean bool_8_) {
         try {
-            ((Class56) this).aClass274_1012 = class274;
-            ((Class56) this).anInt1021 = i_7_;
+            this.aClass274_1012 = class274;
+            this.anInt1021 = i_7_;
             anInt1017 = i;
-            ((Class56) this).anInt1025 = i_6_;
-            ((Class56) this).aClass274_1015 = class274_5_;
-            ((Class56) this).aBoolean1016 = bool_8_;
-            ((Class56) this).aBoolean1013 = bool;
+            this.anInt1025 = i_6_;
+            this.aClass274_1015 = class274_5_;
+            this.aBoolean1016 = bool_8_;
+            this.aBoolean1013 = bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("jj.<init>(" + i + ','

@@ -3,7 +3,7 @@
  */
 
 interface Interface7 {
-    public int method31(int i);
+    int method31(int i);
 
-    public Class69 method32(int i);
+    Class69 method32(int i);
 }

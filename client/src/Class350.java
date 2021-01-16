@@ -31,36 +31,36 @@ final class Class350 {
         anInt4318++;
         if (bool != true)
             method3453(false);
-        return new Class350(((Class350) this).anInt4313,
-                ((Class350) this).anInt4314,
-                ((Class350) this).anInt4311,
-                ((Class350) this).anInt4316,
-                ((Class350) this).anInt4317,
-                ((Class350) this).anInt4308);
+        return new Class350(this.anInt4313,
+                this.anInt4314,
+                this.anInt4311,
+                this.anInt4316,
+                this.anInt4317,
+                this.anInt4308);
     }
 
     final void method3454(Class350 class350_3_, boolean bool) {
-        ((Class350) this).anInt4308 = ((Class350) class350_3_).anInt4308;
-        ((Class350) this).anInt4314 = ((Class350) class350_3_).anInt4314;
+        this.anInt4308 = class350_3_.anInt4308;
+        this.anInt4314 = class350_3_.anInt4314;
         if (bool == true) {
-            ((Class350) this).anInt4316 = ((Class350) class350_3_).anInt4316;
-            ((Class350) this).anInt4317 = ((Class350) class350_3_).anInt4317;
+            this.anInt4316 = class350_3_.anInt4316;
+            this.anInt4317 = class350_3_.anInt4317;
             anInt4321++;
-            ((Class350) this).anInt4313 = ((Class350) class350_3_).anInt4313;
-            ((Class350) this).anInt4311 = ((Class350) class350_3_).anInt4311;
+            this.anInt4313 = class350_3_.anInt4313;
+            this.anInt4311 = class350_3_.anInt4311;
         }
     }
 
     Class350(int i) {
-        ((Class350) this).anInt4313 = i;
+        this.anInt4313 = i;
     }
 
     private Class350(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
-        ((Class350) this).anInt4317 = i_7_;
-        ((Class350) this).anInt4313 = i;
-        ((Class350) this).anInt4316 = i_6_;
-        ((Class350) this).anInt4311 = i_5_;
-        ((Class350) this).anInt4308 = i_8_;
-        ((Class350) this).anInt4314 = i_4_;
+        this.anInt4317 = i_7_;
+        this.anInt4313 = i;
+        this.anInt4316 = i_6_;
+        this.anInt4311 = i_5_;
+        this.anInt4308 = i_8_;
+        this.anInt4314 = i_4_;
     }
 }

@@ -28,9 +28,7 @@ final class Class239_Sub21 extends Class239 {
         anInt6063++;
         if (i < 85)
             method1813(11, 68);
-        if (((Class239) this).aClass348_Sub51_3136.method3425(-104))
-            return false;
-        return true;
+        return !this.aClass348_Sub51_3136.method3425(-104);
     }
 
     static final void method1810(int i, int i_0_, int i_1_, int i_2_, int i_3_,
@@ -42,12 +40,12 @@ final class Class239_Sub21 extends Class239 {
                 class357 = new Class357(i_4_);
             if ((i_5_ ^ 0xffffffff) != -2) {
                 if ((i_5_ ^ 0xffffffff) == -3) {
-                    ((Class357) class357).aShort4398 = (short) i_1_;
-                    ((Class357) class357).aShort4397 = (short) i_0_;
+                    class357.aShort4398 = (short) i_1_;
+                    class357.aShort4397 = (short) i_0_;
                 }
             } else {
-                ((Class357) class357).aShort4401 = (short) i_0_;
-                ((Class357) class357).aShort4409 = (short) i_1_;
+                class357.aShort4401 = (short) i_0_;
+                class357.aShort4409 = (short) i_1_;
             }
             if (Class50_Sub1.aBoolean5226)
                 Class286_Sub3.method2152(false);
@@ -180,7 +178,7 @@ final class Class239_Sub21 extends Class239 {
     }
 
     final void method1712(int i, int i_35_) {
-        ((Class239) this).anInt3138 = i_35_;
+        this.anInt3138 = i_35_;
         anInt6059++;
         int i_36_ = -103 % ((i - 82) / 35);
     }
@@ -189,7 +187,7 @@ final class Class239_Sub21 extends Class239 {
         if (i != 3)
             return 91;
         anInt6064++;
-        if (((Class239) this).aClass348_Sub51_3136.method3425(i ^ ~0x4b))
+        if (this.aClass348_Sub51_3136.method3425(i ^ ~0x4b))
             return 3;
         return 1;
     }
@@ -199,14 +197,14 @@ final class Class239_Sub21 extends Class239 {
     }
 
     final void method1716(boolean bool) {
-        if (((Class239) this).aClass348_Sub51_3136.method3425(-112))
-            ((Class239) this).anInt3138 = 0;
+        if (this.aClass348_Sub51_3136.method3425(-112))
+            this.anInt3138 = 0;
         anInt6057++;
         if (bool != false)
             aClass318_Sub1Array6066 = null;
-        if ((((Class239) this).anInt3138 ^ 0xffffffff) != -2
-                && ((Class239) this).anInt3138 != 0)
-            ((Class239) this).anInt3138 = method1710(20014);
+        if ((this.anInt3138 ^ 0xffffffff) != -2
+                && this.anInt3138 != 0)
+            this.anInt3138 = method1710(20014);
     }
 
     Class239_Sub21(int i, Class348_Sub51 class348_sub51) {
@@ -217,7 +215,7 @@ final class Class239_Sub21 extends Class239 {
         if (i != -32350)
             anIntArray6062 = null;
         anInt6068++;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     static final boolean method1813(int i, int i_38_) {
@@ -227,9 +225,7 @@ final class Class239_Sub21 extends Class239 {
         if (i_38_ == 3 || i_38_ == 4 || (i_38_ ^ 0xffffffff) == -10
                 || (i_38_ ^ 0xffffffff) == -60 || i_38_ == 1007)
             return true;
-        if (i_38_ == 2 || (i_38_ ^ 0xffffffff) == -1002)
-            return true;
-        return false;
+        return i_38_ == 2 || (i_38_ ^ 0xffffffff) == -1002;
     }
 
     public static void method1814(byte i) {

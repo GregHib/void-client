@@ -4,8 +4,8 @@
 
 final class Class136 implements Interface7 {
     static Class65 aClass65_4787;
-    private String aString4788;
-    private Class45 aClass45_4789;
+    private final String aString4788;
+    private final Class45 aClass45_4789;
     static int anInt4790;
     static short[][] aShortArrayArray4791;
     static int anInt4792;

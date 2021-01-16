@@ -67,7 +67,7 @@ final class Class37 {
                                 int i_7_, int i_8_) {
         if (i_8_ != -29494)
             anInt496 = 32;
-        if (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if (Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7272.method1838(-32350) != 0
                 && i != 0 && Class147.anInt2021 < 50 && (i_7_ ^ 0xffffffff) != 0)
             Class258_Sub2.aClass10Array8531[Class147.anInt2021++]

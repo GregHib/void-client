@@ -8,9 +8,9 @@ final class Class345_Sub1 extends Class345 {
         if (i != -1)
             return null;
         return (new Class348_Sub42_Sub9_Sub2
-                ((((Class348_Sub42_Sub9) class348_sub42_sub9)
+                ((class348_sub42_sub9
                         .anInterface14_9559),
                         class348_sub42_sub9.method3205(i + 65537),
-                        ((Class348_Sub42_Sub9) class348_sub42_sub9).anInt9556));
+                        class348_sub42_sub9.anInt9556));
     }
 }

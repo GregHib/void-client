@@ -22,7 +22,7 @@ final class Class227 {
     }
 
     Class227(int i) {
-        ((Class227) this).anInt2970 = i;
+        this.anInt2970 = i;
     }
 
     static {

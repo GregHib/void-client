@@ -28,9 +28,7 @@ final class Class254 {
         anInt3262++;
         if (bool != false)
             return true;
-        if ((aChar3259 ^ 0xffffffff) != -116)
-            return false;
-        return true;
+        return (aChar3259 ^ 0xffffffff) == -116;
     }
 
     public static void method1926(int i) {
@@ -44,18 +42,18 @@ final class Class254 {
         anInt3257++;
         if ((i ^ 0xffffffff) != -2) {
             if (i == 2)
-                ((Class254) this).anInt3256
+                this.anInt3256
                         = class348_sub49.method3385((byte) -126);
             else if (i == 4)
-                ((Class254) this).aBoolean3261 = false;
+                this.aBoolean3261 = false;
             else if (i == 5)
-                ((Class254) this).aString3258
+                this.aString3258
                         = class348_sub49.method3377((byte) 91);
         } else
             aChar3259 = Class50_Sub1.method462(class348_sub49.method3388(-115),
                     -128);
         if (bool != true)
-            ((Class254) this).aBoolean3261 = true;
+            this.aBoolean3261 = true;
     }
 
     static final int method1928(int i, int i_2_, int i_3_) {

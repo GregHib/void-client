@@ -40,6 +40,6 @@ final class Class273 implements Interface21 {
     }
 
     Class273(String string, int i) {
-        ((Class273) this).anInt5167 = i;
+        this.anInt5167 = i;
     }
 }

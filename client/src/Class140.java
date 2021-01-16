@@ -102,9 +102,7 @@ final class Class140 {
     static final boolean method1172(byte i, int i_8_) {
         anInt1960++;
         int i_9_ = 35 / ((-45 - i) / 38);
-        if (((i_8_ ^ 0xffffffff) > -1 || i_8_ > 3)
-                && (i_8_ ^ 0xffffffff) != -10)
-            return false;
-        return true;
+        return ((i_8_ ^ 0xffffffff) <= -1 && i_8_ <= 3)
+                || (i_8_ ^ 0xffffffff) == -10;
     }
 }

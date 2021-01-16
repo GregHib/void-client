@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class188 {
-    private ha_Sub2 aHa_Sub2_2511;
+    private final ha_Sub2 aHa_Sub2_2511;
     static Class351 aClass351_2512;
     private Class337 aClass337_2513;
     static boolean aBoolean2514 = false;
@@ -26,9 +26,7 @@ final class Class188 {
         if (i != -35)
             method1411(true);
         anInt2519++;
-        if ((i_1_ & 0x800) == 0 || (0x37 & i_0_ ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (i_1_ & 0x800) != 0 && (0x37 & i_0_ ^ 0xffffffff) != -1;
     }
 
     final boolean method1413(Class258_Sub1 class258_sub1,
@@ -37,13 +35,13 @@ final class Class188 {
             anInt2517++;
             if (!method1414(35632))
                 return false;
-            Class206 class206 = ((ha_Sub2) aHa_Sub2_2511).aClass206_7778;
+            Class206 class206 = aHa_Sub2_2511.aClass206_7778;
             int i_3_ = 30 % ((-55 - i) / 59);
             Class348_Sub42_Sub2 class348_sub42_sub2
                     = new Class348_Sub42_Sub2(aHa_Sub2_2511, 6408,
-                    (((Class258_Sub1) class258_sub1)
+                    (class258_sub1
                             .anInt8523),
-                    (((Class258_Sub1) class258_sub1)
+                    (class258_sub1
                             .anInt8529));
             aHa_Sub2_2511.method3773(-1, class206);
             boolean bool = false;
@@ -57,31 +55,30 @@ final class Class188 {
                 OpenGL.glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0);
                 OpenGL.glPushAttrib(2048);
                 OpenGL.glViewport(0, 0,
-                        ((Class258_Sub1) class258_sub1).anInt8523,
-                        ((Class258_Sub1) class258_sub1).anInt8529);
-                OpenGL.glUseProgramObjectARB(((Class337) aClass337_2513)
+                        class258_sub1.anInt8523,
+                        class258_sub1.anInt8529);
+                OpenGL.glUseProgramObjectARB(aClass337_2513
                         .aLong4178);
                 OpenGL.glUniform1iARB((OpenGL.glGetUniformLocationARB
-                                (((Class337) aClass337_2513).aLong4178,
+                                (aClass337_2513.aLong4178,
                                         "heightMap")),
                         0);
                 OpenGL.glUniform1fARB((OpenGL.glGetUniformLocationARB
-                                (((Class337) aClass337_2513).aLong4178,
+                                (aClass337_2513.aLong4178,
                                         "rcpRelief")),
                         1.0F / f);
                 OpenGL.glUniform2fARB
-                        (OpenGL.glGetUniformLocationARB(((Class337)
-                                        aClass337_2513).aLong4178,
+                        (OpenGL.glGetUniformLocationARB(aClass337_2513.aLong4178,
                                 "sampleSize"),
                                 (1.0F
-                                        / (float) ((Class258_Sub1) class258_sub1_2_).anInt8523),
+                                        / (float) class258_sub1_2_.anInt8523),
                                 (1.0F
-                                        / (float) ((Class258_Sub1) class258_sub1_2_).anInt8529));
+                                        / (float) class258_sub1_2_.anInt8529));
                 for (int i_4_ = 0;
-                     i_4_ < ((Class258_Sub1) class258_sub1).anInt8522;
+                     i_4_ < class258_sub1.anInt8522;
                      i_4_++) {
                     float f_5_ = ((float) i_4_
-                            / (float) (((Class258_Sub1) class258_sub1)
+                            / (float) (class258_sub1
                             .anInt8522));
                     aHa_Sub2_2511.method3771((byte) -118, class258_sub1_2_);
                     OpenGL.glBegin(7);
@@ -95,8 +92,8 @@ final class Class188 {
                     OpenGL.glVertex2f(0.0F, 1.0F);
                     OpenGL.glEnd();
                     class258_sub1.method1958
-                            (-26823, 0, ((Class258_Sub1) class258_sub1).anInt8523,
-                                    0, 0, i_4_, ((Class258_Sub1) class258_sub1).anInt8529,
+                            (-26823, 0, class258_sub1.anInt8523,
+                                    0, 0, i_4_, class258_sub1.anInt8529,
                                     0);
                 }
                 OpenGL.glUseProgramObjectARB(0L);
@@ -122,8 +119,8 @@ final class Class188 {
     }
 
     final boolean method1414(int i) {
-        if (((ha_Sub2) aHa_Sub2_2511).aBoolean7820
-                && ((ha_Sub2) aHa_Sub2_2511).aBoolean7783
+        if (aHa_Sub2_2511.aBoolean7820
+                && aHa_Sub2_2511.aBoolean7783
                 && aClass337_2513 == null) {
             Class242 class242
                     = (Class348_Sub42_Sub15.method3249
@@ -139,9 +136,7 @@ final class Class188 {
         anInt2518++;
         if (i != 35632)
             method1413(null, null, 102, 0.17865802F);
-        if (aClass337_2513 == null)
-            return false;
-        return true;
+        return aClass337_2513 != null;
     }
 
     static final void method1415(int i, int i_6_) {

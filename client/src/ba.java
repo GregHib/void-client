@@ -10,7 +10,7 @@ final class ba extends r implements Interface19 {
     }
 
     protected final void finalize() {
-        if (((ba) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 

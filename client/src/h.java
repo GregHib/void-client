@@ -14,17 +14,17 @@ final class h extends Class324 implements Interface19 {
         int[] is_2_ = new int[class207s.length];
         int[] is_3_ = new int[class207s.length];
         for (int i = 0; i < class207s.length; i++) {
-            is[i] = ((Class207) class207s[i]).aByteArray2699;
-            is_0_[i] = ((Class207) class207s[i]).anInt2702;
-            is_1_[i] = ((Class207) class207s[i]).anInt2696;
-            is_2_[i] = ((Class207) class207s[i]).anInt2703;
-            is_3_[i] = ((Class207) class207s[i]).anInt2700;
+            is[i] = class207s[i].aByteArray2699;
+            is_0_[i] = class207s[i].anInt2702;
+            is_1_[i] = class207s[i].anInt2696;
+            is_2_[i] = class207s[i].anInt2703;
+            is_3_[i] = class207s[i].anInt2700;
         }
         JA(var_oa, var_ya, is, is_0_, is_1_, is_2_, is_3_);
     }
 
     protected final void finalize() {
-        if (((h) this).nativeid != 0L)
+        if (this.nativeid != 0L)
             Class257.method1947(0, this);
     }
 

@@ -38,13 +38,13 @@ final class Class31 {
         if (anInt429 < 0)
             return null;
         Class105 class105
-                = (Class105) ((Class219) ((Class31) this).aClass219_438)
-                .aClass60_2862.method583((long) anInt429, -62);
+                = (Class105) this.aClass219_438
+                .aClass60_2862.method583(anInt429, -62);
         if (class105 == null) {
             method330(var_ha, -41);
             class105
-                    = (Class105) ((Class219) ((Class31) this).aClass219_438)
-                    .aClass60_2862.method583((long) anInt429, 53);
+                    = (Class105) this.aClass219_438
+                    .aClass60_2862.method583(anInt429, 53);
         }
         return class105;
     }
@@ -54,15 +54,15 @@ final class Class31 {
         if (anInt439 < 0)
             return null;
         Class105 class105
-                = (Class105) ((Class219) ((Class31) this).aClass219_438)
-                .aClass60_2862.method583((long) anInt439, -59);
+                = (Class105) this.aClass219_438
+                .aClass60_2862.method583(anInt439, -59);
         if (i < 23)
             return null;
         if (class105 == null) {
             method330(var_ha, -118);
-            class105 = (Class105) ((Class219) ((Class31) this).aClass219_438)
+            class105 = (Class105) this.aClass219_438
                     .aClass60_2862
-                    .method583((long) anInt439, 123);
+                    .method583(anInt439, 123);
         }
         return class105;
     }
@@ -84,13 +84,13 @@ final class Class31 {
         if (anInt421 < 0)
             return null;
         Class105 class105
-                = (Class105) ((Class219) ((Class31) this).aClass219_438)
-                .aClass60_2862.method583((long) anInt421, 118);
+                = (Class105) this.aClass219_438
+                .aClass60_2862.method583(anInt421, 118);
         if (class105 == null) {
             method330(var_ha, -66);
-            class105 = (Class105) ((Class219) ((Class31) this).aClass219_438)
+            class105 = (Class105) this.aClass219_438
                     .aClass60_2862
-                    .method583((long) anInt421, 119);
+                    .method583(anInt421, 119);
         }
         int i_0_ = 20 % ((i - 19) / 51);
         return class105;
@@ -118,35 +118,35 @@ final class Class31 {
                             if ((i_1_ ^ 0xffffffff) != -10) {
                                 if (i_1_ != 10) {
                                     if ((i_1_ ^ 0xffffffff) == -12)
-                                        ((Class31) this).anInt426 = 0;
+                                        this.anInt426 = 0;
                                     else if (i_1_ == 12)
-                                        ((Class31) this).anInt431
+                                        this.anInt431
                                                 = class348_sub49.method3387(255);
                                     else if ((i_1_ ^ 0xffffffff) == -14)
-                                        ((Class31) this).anInt420
+                                        this.anInt420
                                                 = class348_sub49
                                                 .method3372(i ^ ~0x3547);
                                     else if ((i_1_ ^ 0xffffffff) == -15)
-                                        ((Class31) this).anInt426
+                                        this.anInt426
                                                 = class348_sub49
                                                 .method3330(842397944);
                                 } else
-                                    ((Class31) this).anInt422
+                                    this.anInt422
                                             = class348_sub49.method3372(13638);
                             } else
-                                ((Class31) this).anInt434
+                                this.anInt434
                                         = class348_sub49.method3330(842397944);
                         } else
                             aString423 = class348_sub49.method3371(i ^ 0x34af);
                     } else
-                        ((Class31) this).anInt424
+                        this.anInt424
                                 = class348_sub49.method3372(13638);
                 } else
                     anInt429 = class348_sub49.method3330(842397944);
             } else
-                ((Class31) this).anInt444 = class348_sub49.method3351(-1);
+                this.anInt444 = class348_sub49.method3351(-1);
         } else
-            ((Class31) this).anInt435 = class348_sub49.method3330(842397944);
+            this.anInt435 = class348_sub49.method3330(842397944);
         if (i != -2)
             method333(-112, 38);
         anInt437++;
@@ -155,43 +155,43 @@ final class Class31 {
     private final void method330(ha var_ha, int i) {
         anInt446++;
         Class45 class45
-                = ((Class219) ((Class31) this).aClass219_438).aClass45_2873;
+                = this.aClass219_438.aClass45_2873;
         if (anInt421 >= 0
-                && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
-                .method583((long) anInt421, 121) == null
+                && this.aClass219_438.aClass60_2862
+                .method583(anInt421, 121) == null
                 && class45.method421(false, anInt421)) {
             Class207 class207 = Class207.method1512(class45, anInt421);
-            ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
-                    (var_ha.method3691(class207, true), (long) anInt421,
+            this.aClass219_438.aClass60_2862.method582
+                    (var_ha.method3691(class207, true), anInt421,
                             (byte) -112);
         }
         if (anInt433 >= 0
-                && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
-                .method583((long) anInt433, -99) == null
+                && this.aClass219_438.aClass60_2862
+                .method583(anInt433, -99) == null
                 && class45.method421(false, anInt433)) {
             Class207 class207 = Class207.method1512(class45, anInt433);
-            ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
-                    (var_ha.method3691(class207, true), (long) anInt433,
+            this.aClass219_438.aClass60_2862.method582
+                    (var_ha.method3691(class207, true), anInt433,
                             (byte) -128);
         }
         if (anInt429 >= 0
-                && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
-                .method583((long) anInt429, 86) == null
+                && this.aClass219_438.aClass60_2862
+                .method583(anInt429, 86) == null
                 && class45.method421(false, anInt429)) {
             Class207 class207 = Class207.method1512(class45, anInt429);
-            ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
-                    (var_ha.method3691(class207, true), (long) anInt429,
+            this.aClass219_438.aClass60_2862.method582
+                    (var_ha.method3691(class207, true), anInt429,
                             (byte) -108);
         }
         if (i > -7)
-            ((Class31) this).anInt434 = -14;
+            this.anInt434 = -14;
         if ((anInt439 ^ 0xffffffff) <= -1
-                && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
-                .method583((long) anInt439, -83) == null
+                && this.aClass219_438.aClass60_2862
+                .method583(anInt439, -83) == null
                 && class45.method421(false, anInt439)) {
             Class207 class207 = Class207.method1512(class45, anInt439);
-            ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
-                    (var_ha.method3691(class207, true), (long) anInt439,
+            this.aClass219_438.aClass60_2862.method582
+                    (var_ha.method3691(class207, true), anInt439,
                             (byte) -101);
         }
     }
@@ -202,13 +202,13 @@ final class Class31 {
             return null;
         int i_2_ = -84 % ((i - 32) / 35);
         Class105 class105
-                = (Class105) ((Class219) ((Class31) this).aClass219_438)
-                .aClass60_2862.method583((long) anInt433, -50);
+                = (Class105) this.aClass219_438
+                .aClass60_2862.method583(anInt433, -50);
         if (class105 == null) {
             method330(var_ha, -89);
-            class105 = (Class105) ((Class219) ((Class31) this).aClass219_438)
+            class105 = (Class105) this.aClass219_438
                     .aClass60_2862
-                    .method583((long) anInt433, -117);
+                    .method583(anInt433, -117);
         }
         return class105;
     }
@@ -243,16 +243,16 @@ final class Class31 {
 
     public Class31() {
         aString423 = "";
-        ((Class31) this).anInt424 = 0;
+        this.anInt424 = 0;
         anInt433 = -1;
-        ((Class31) this).anInt422 = 0;
+        this.anInt422 = 0;
         anInt439 = -1;
-        ((Class31) this).anInt431 = -1;
-        ((Class31) this).anInt434 = 70;
-        ((Class31) this).anInt435 = -1;
+        this.anInt431 = -1;
+        this.anInt434 = 70;
+        this.anInt435 = -1;
         anInt421 = -1;
-        ((Class31) this).anInt420 = 0;
-        ((Class31) this).anInt444 = 16777215;
+        this.anInt420 = 0;
+        this.anInt444 = 16777215;
     }
 
     static {

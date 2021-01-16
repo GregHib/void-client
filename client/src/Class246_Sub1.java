@@ -9,7 +9,6 @@ final class Class246_Sub1 extends Class246 {
             return null;
         return new Class348_Sub42_Sub8_Sub1(class348_sub42_sub8
                 .method3193(i + 95),
-                ((Class348_Sub42_Sub8)
-                        class348_sub42_sub8).anInt9545);
+                class348_sub42_sub8.anInt9545);
     }
 }

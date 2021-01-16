@@ -13,7 +13,7 @@ abstract class Class14 implements Interface18 {
     static int anInt5087;
     Class68 aClass68_5088;
     static long aLong5089 = -1L;
-    private int anInt5090;
+    private final int anInt5090;
     static int[] anIntArray5091;
     static int anInt5092;
     int anInt5093;
@@ -31,39 +31,39 @@ abstract class Class14 implements Interface18 {
 
     public final void method63(byte i) {
         anInt5104++;
-        int i_0_ = ((Class14) this).aClass377_5082.method3877((byte) -126);
+        int i_0_ = this.aClass377_5082.method3877((byte) -126);
         if (i > -21)
-            ((Class14) this).aClass377_5082 = null;
-        int i_1_ = (((Class377) ((Class14) this).aClass377_5082).anIntArray9927
+            this.aClass377_5082 = null;
+        int i_1_ = (this.aClass377_5082.anIntArray9927
                 [i_0_]);
-        if ((i_1_ ^ 0xffffffff) != (((Class14) this).anInt5093 ^ 0xffffffff)) {
+        if ((i_1_ ^ 0xffffffff) != (this.anInt5093 ^ 0xffffffff)) {
             if ((i_1_ ^ 0xffffffff) != -1) {
                 OpenGL.glBindTexture(i_1_, 0);
                 OpenGL.glDisable(i_1_);
             }
-            OpenGL.glEnable(((Class14) this).anInt5093);
-            ((Class377) ((Class14) this).aClass377_5082).anIntArray9927[i_0_]
-                    = ((Class14) this).anInt5093;
+            OpenGL.glEnable(this.anInt5093);
+            this.aClass377_5082.anIntArray9927[i_0_]
+                    = this.anInt5093;
         }
-        OpenGL.glBindTexture(((Class14) this).anInt5093, anInt5096);
+        OpenGL.glBindTexture(this.anInt5093, anInt5096);
     }
 
     final int method228(int i) {
         anInt5085++;
-        if (Class68.aClass68_1183 != ((Class14) this).aClass68_5088) {
-            if (Class68.aClass68_1186 == ((Class14) this).aClass68_5088) {
-                if (((Class14) this).aClass304_5084
+        if (Class68.aClass68_1183 != this.aClass68_5088) {
+            if (Class68.aClass68_1186 == this.aClass68_5088) {
+                if (this.aClass304_5084
                         == Class348_Sub45.aClass304_7103)
                     return 34843;
-                if (Class108.aClass304_1662 == ((Class14) this).aClass304_5084)
+                if (Class108.aClass304_1662 == this.aClass304_5084)
                     return 34842;
-                if (((Class14) this).aClass304_5084
+                if (this.aClass304_5084
                         != Class348_Sub40_Sub38.aClass304_9471) {
-                    if (((Class14) this).aClass304_5084
+                    if (this.aClass304_5084
                             != Class348_Sub40_Sub22.aClass304_9303) {
                         if (Class191.aClass304_2571
-                                != ((Class14) this).aClass304_5084) {
-                            if (((Class14) this).aClass304_5084
+                                != this.aClass304_5084) {
+                            if (this.aClass304_5084
                                     == Class318.aClass304_3977)
                                 return 6145;
                         } else
@@ -72,22 +72,22 @@ abstract class Class14 implements Interface18 {
                         return 34846;
                 } else
                     return 34844;
-            } else if (((Class14) this).aClass68_5088
+            } else if (this.aClass68_5088
                     == Class68.aClass68_1187) {
                 if (Class348_Sub45.aClass304_7103
-                        != ((Class14) this).aClass304_5084) {
-                    if (((Class14) this).aClass304_5084
+                        != this.aClass304_5084) {
+                    if (this.aClass304_5084
                             == Class108.aClass304_1662)
                         return 34836;
-                    if (((Class14) this).aClass304_5084
+                    if (this.aClass304_5084
                             != Class348_Sub40_Sub38.aClass304_9471) {
                         if (Class348_Sub40_Sub22.aClass304_9303
-                                == ((Class14) this).aClass304_5084)
+                                == this.aClass304_5084)
                             return 34840;
                         if (Class191.aClass304_2571
-                                != ((Class14) this).aClass304_5084) {
+                                != this.aClass304_5084) {
                             if (Class318.aClass304_3977
-                                    == ((Class14) this).aClass304_5084)
+                                    == this.aClass304_5084)
                                 return 6145;
                         } else
                             return 34841;
@@ -96,18 +96,18 @@ abstract class Class14 implements Interface18 {
                 } else
                     return 34837;
             }
-        } else if (((Class14) this).aClass304_5084
+        } else if (this.aClass304_5084
                 != Class348_Sub45.aClass304_7103) {
-            if (((Class14) this).aClass304_5084 != Class108.aClass304_1662) {
-                if (((Class14) this).aClass304_5084
+            if (this.aClass304_5084 != Class108.aClass304_1662) {
+                if (this.aClass304_5084
                         != Class348_Sub40_Sub38.aClass304_9471) {
                     if (Class348_Sub40_Sub22.aClass304_9303
-                            == ((Class14) this).aClass304_5084)
+                            == this.aClass304_5084)
                         return 6409;
-                    if (((Class14) this).aClass304_5084
+                    if (this.aClass304_5084
                             == Class191.aClass304_2571)
                         return 6410;
-                    if (((Class14) this).aClass304_5084
+                    if (this.aClass304_5084
                             == Class318.aClass304_3977)
                         return 6145;
                 } else
@@ -122,16 +122,16 @@ abstract class Class14 implements Interface18 {
     }
 
     private final void method229(boolean bool) {
-        ((Class14) this).aClass377_5082.method3850((byte) 107, this);
+        this.aClass377_5082.method3850((byte) 107, this);
         anInt5083++;
         if (aClass209_5101 != Class71.aClass209_1212) {
-            OpenGL.glTexParameteri(((Class14) this).anInt5093, 10241,
+            OpenGL.glTexParameteri(this.anInt5093, 10241,
                     !aBoolean5099 ? 9728 : 9984);
-            OpenGL.glTexParameteri(((Class14) this).anInt5093, 10240, 9728);
+            OpenGL.glTexParameteri(this.anInt5093, 10240, 9728);
         } else {
-            OpenGL.glTexParameteri(((Class14) this).anInt5093, 10241,
+            OpenGL.glTexParameteri(this.anInt5093, 10241,
                     !aBoolean5099 ? 9729 : 9987);
-            OpenGL.glTexParameteri(((Class14) this).anInt5093, 10240, 9729);
+            OpenGL.glTexParameteri(this.anInt5093, 10240, 9729);
         }
         if (bool != true)
             method232(null, (byte) 106, true, 70);
@@ -143,7 +143,7 @@ abstract class Class14 implements Interface18 {
             throw new IllegalArgumentException("");
         if ((i_3_ ^ 0xffffffff) < -1 && !Class192.method1436(i ^ 0x1cb6, i_3_))
             throw new IllegalArgumentException("");
-        int i_5_ = ((Class304) ((Class14) this).aClass304_5084).anInt3850;
+        int i_5_ = this.aClass304_5084.anInt3850;
         int i_6_ = 0;
         int i_7_ = i_2_ < i_3_ ? i_2_ : i_3_;
         int i_8_ = i_2_ >> -405349983;
@@ -156,7 +156,7 @@ abstract class Class14 implements Interface18 {
             OpenGL.glTexImage2Dub
                     (i_4_, i_6_, method228(108), i_2_, i_3_, 0,
                             Class348_Sub40_Sub3
-                                    .method3055(i + -7265, ((Class14) this).aClass304_5084),
+                                    .method3055(i + -7265, this.aClass304_5084),
                             5121, is_10_, 0);
             if (i_7_ <= 1)
                 break;
@@ -199,8 +199,8 @@ abstract class Class14 implements Interface18 {
         anInt5095++;
         int i_21_
                 = (anInt5090
-                * (((Class68) ((Class14) this).aClass68_5088).anInt1178
-                * ((Class304) ((Class14) this).aClass304_5084).anInt3850));
+                * (this.aClass68_5088.anInt1178
+                * this.aClass304_5084.anInt3850));
         if (i >= -105)
             method232(null, (byte) 118, true, 16);
         if (aBoolean5099)
@@ -217,7 +217,7 @@ abstract class Class14 implements Interface18 {
                 = Class239_Sub3.method1734(i_22_, var_ha, (byte) 55, bool);
         if (class352 == null)
             return null;
-        return ((Class352) class352).aClass324_4332;
+        return class352.aClass324_4332;
     }
 
     final void method233(int i, int i_23_, int[] is, int i_24_, int i_25_) {
@@ -227,7 +227,7 @@ abstract class Class14 implements Interface18 {
         if ((i_23_ ^ 0xffffffff) < -1
                 && !Class192.method1436(i_25_ ^ ~0xd2, i_23_))
             throw new IllegalArgumentException("");
-        if (Class108.aClass304_1662 != ((Class14) this).aClass304_5084)
+        if (Class108.aClass304_1662 != this.aClass304_5084)
             throw new IllegalArgumentException("");
         int i_26_ = 0;
         int i_27_ = (i_23_ ^ 0xffffffff) >= (i ^ 0xffffffff) ? i_23_ : i;
@@ -240,7 +240,7 @@ abstract class Class14 implements Interface18 {
         for (; ; ) {
             OpenGL.glTexImage2Di(i_24_, i_26_, method228(112), i, i_23_, 0,
                     32993,
-                    (((Class377) ((Class14) this).aClass377_5082)
+                    (this.aClass377_5082
                             .anInt9918),
                     is_30_, 0);
             if (i_27_ <= 1)
@@ -301,7 +301,7 @@ abstract class Class14 implements Interface18 {
     private final void method234(int i) {
         if (i == 1617553025) {
             if ((anInt5096 ^ 0xffffffff) < -1) {
-                ((Class14) this).aClass377_5082
+                this.aClass377_5082
                         .method3967(method231(-109), (byte) 59, anInt5096);
                 anInt5096 = 0;
             }
@@ -322,8 +322,8 @@ abstract class Class14 implements Interface18 {
 
     private final void method236(int i, byte i_47_) {
         anInt5098++;
-        ((ha_Sub3) ((Class14) this).aClass377_5082).anInt8062 -= i;
-        ((ha_Sub3) ((Class14) this).aClass377_5082).anInt8062
+        this.aClass377_5082.anInt8062 -= i;
+        this.aClass377_5082.anInt8062
                 += method231(-119);
         if (i_47_ >= -124)
             aBoolean5099 = false;
@@ -338,7 +338,7 @@ abstract class Class14 implements Interface18 {
     public final void method64(Class209 class209, int i) {
         anInt5086++;
         if (i != -22095)
-            ((Class14) this).aClass304_5084 = null;
+            this.aClass304_5084 = null;
         if (class209 != aClass209_5101) {
             aClass209_5101 = class209;
             method229(true);
@@ -352,7 +352,7 @@ abstract class Class14 implements Interface18 {
         if ((i_50_ ^ 0xffffffff) < -1
                 && !Class192.method1436(i_48_ + 109, i_50_))
             throw new IllegalArgumentException("");
-        int i_51_ = ((Class304) ((Class14) this).aClass304_5084).anInt3850;
+        int i_51_ = this.aClass304_5084.anInt3850;
         int i_52_ = 0;
         if (i_48_ != 1)
             method228(107);
@@ -365,7 +365,7 @@ abstract class Class14 implements Interface18 {
         for (; ; ) {
             OpenGL.glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0,
                     (Class348_Sub40_Sub3.method3055
-                            (124, ((Class14) this).aClass304_5084)),
+                            (124, this.aClass304_5084)),
                     5126, fs_56_, 0);
             if (i_53_ <= 1)
                 break;
@@ -413,11 +413,11 @@ abstract class Class14 implements Interface18 {
             int i_66_, boolean bool) {
         try {
             anInt5090 = i_66_;
-            ((Class14) this).aClass377_5082 = class377;
-            ((Class14) this).aClass304_5084 = class304;
-            ((Class14) this).aClass68_5088 = class68;
+            this.aClass377_5082 = class377;
+            this.aClass304_5084 = class304;
+            this.aClass68_5088 = class68;
             aBoolean5099 = bool;
-            ((Class14) this).anInt5093 = i;
+            this.anInt5093 = i;
             OpenGL.glGenTextures(1, Class141.anIntArray1975, 0);
             anInt5096 = Class141.anIntArray1975[0];
             method229(true);

@@ -127,25 +127,23 @@ final class Class163 {
             Class321 class321
                     = Class348_Sub23_Sub2.aClass187_9036.method1408(-12637,
                     is[i_24_]);
-            if ((((Class321) class321).anInt4000 ^ 0xffffffff) != 0) {
+            if ((class321.anInt4000 ^ 0xffffffff) != 0) {
                 Class105 class105
                         = ((Class105)
-                        Class34.aClass60_463.method583((long) (((Class321)
-                                        class321)
-                                        .anInt4000),
+                        Class34.aClass60_463.method583(class321
+                                        .anInt4000,
                                 -74));
                 if (class105 == null) {
                     Class207 class207
                             = Class207.method1521(Class21.aClass45_322,
-                            ((Class321) class321).anInt4000,
+                            class321.anInt4000,
                             0);
                     if (class207 != null) {
                         class105
                                 = Class348_Sub8.aHa6654.method3691(class207, true);
                         Class34.aClass60_463.method582(class105,
-                                (long) (((Class321)
-                                        class321)
-                                        .anInt4000),
+                                class321
+                                        .anInt4000,
                                 (byte) -127);
                     }
                 }

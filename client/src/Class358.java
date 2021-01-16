@@ -20,8 +20,7 @@ final class Class358 {
     }
 
     static final void method3489(int i) {
-        Class60.aHa1098.xa(((float) ((Class348_Sub51)
-                Class316.aClass348_Sub51_3959)
+        Class60.aHa1098.xa(((float) Class316.aClass348_Sub51_3959
                 .aClass239_Sub10_7232
                 .method1764(-32350) * 0.1F
                 + 0.7F) * 1.1523438F);
@@ -35,10 +34,10 @@ final class Class358 {
 
     Class358(int[] is, int[] is_1_, int[] is_2_, float[][] fs) {
         try {
-            ((Class358) this).anIntArray4414 = is_2_;
-            ((Class358) this).aFloatArrayArray4412 = fs;
-            ((Class358) this).anIntArray4415 = is_1_;
-            ((Class358) this).anIntArray4416 = is;
+            this.anIntArray4414 = is_2_;
+            this.aFloatArrayArray4412 = fs;
+            this.anIntArray4415 = is_1_;
+            this.anIntArray4416 = is;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

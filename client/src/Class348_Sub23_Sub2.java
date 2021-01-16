@@ -10,7 +10,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     private TheoraInfo aTheoraInfo9007;
     private boolean aBoolean9008;
     private int anInt9009;
-    private TheoraComment aTheoraComment9010;
+    private final TheoraComment aTheoraComment9010;
     static Class229 aClass229_9011 = new Class229();
     static int anInt9012;
     static int anInt9013;
@@ -35,7 +35,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     private DecoderContext aDecoderContext9032;
     static Class45 aClass45_9033;
     static Class351 aClass351_9034 = new Class351(30, 4);
-    private SetupInfo aSetupInfo9035 = new SetupInfo();
+    private final SetupInfo aSetupInfo9035 = new SetupInfo();
     static Class187 aClass187_9036;
     static int anInt9037;
     static boolean aBoolean9038 = false;

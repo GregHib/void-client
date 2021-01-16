@@ -22,7 +22,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
     static int anInt8876;
     static int anInt8877;
     static int anInt8878;
-    private int anInt8879;
+    private final int anInt8879;
     static int anInt8880;
     static int anInt8881;
     static int anInt8882;
@@ -117,7 +117,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                     if (class348_sub42_sub4 == null)
                         break;
                     short[][] is_6_;
-                    for (is_6_ = (((Class348_Sub42_Sub4) class348_sub42_sub4)
+                    for (is_6_ = (class348_sub42_sub4
                             .aShortArrayArray9518);
                          i < i_3_ && anInt8883 < is_6_[0].length;
                          anInt8883++) {
@@ -195,15 +195,15 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                 = (Class348_Sub42_Sub4) aClass262_8861.method1995(4);
         if (class348_sub42_sub4 == null)
             return -1.0;
-        return ((double) -((float) (((Class348_Sub42_Sub4) class348_sub42_sub4)
+        return ((double) -((float) (class348_sub42_sub4
                 .aShortArrayArray9518[0]).length
                 / (float) Class22.anInt339)
-                + ((Class348_Sub42_Sub4) class348_sub42_sub4).aDouble9512);
+                + class348_sub42_sub4.aDouble9512);
     }
 
     final Class348_Sub42_Sub4 method2838(int i, double d, int i_14_) {
         anInt8860++;
-        long l = (long) (i | anInt8879 << 1401320384);
+        long l = i | anInt8879 << 1401320384;
         Class348_Sub42_Sub4 class348_sub42_sub4
                 = ((Class348_Sub42_Sub4)
                 Class348_Sub40_Sub10.aClass308_9180.method2302(l, (byte) -31));
@@ -213,7 +213,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
             class348_sub42_sub4
                     = new Class348_Sub42_Sub4(new short[anInt8879][i], d);
         else {
-            ((Class348_Sub42_Sub4) class348_sub42_sub4).aDouble9512 = d;
+            class348_sub42_sub4.aDouble9512 = d;
             Class348_Sub40_Sub10.aClass308_9180.method2304(-121, l);
         }
         return class348_sub42_sub4;
@@ -232,13 +232,13 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                     break;
                 }
                 if ((i ^ 0xffffffff)
-                        > ((((Class348_Sub42_Sub4) class348_sub42_sub4)
+                        > ((class348_sub42_sub4
                         .aShortArrayArray9518[0]).length - anInt8883
                         ^ 0xffffffff)) {
                     anInt8883 += i;
                     break;
                 }
-                i -= -anInt8883 + (((Class348_Sub42_Sub4) class348_sub42_sub4)
+                i -= -anInt8883 + (class348_sub42_sub4
                         .aShortArrayArray9518[0]).length;
                 method2831((byte) 111);
             }

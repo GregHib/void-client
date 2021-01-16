@@ -36,8 +36,7 @@ final class Class108 {
                     ^ 0xffffffff)
                     && ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
                     < (i_17_ ^ 0xffffffff))) {
-                int i_18_ = (((Class318_Sub1)
-                        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+                int i_18_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                         .aByte6381);
                 if ((i_18_ ^ 0xffffffff) > -4
                         && ((Class348_Sub33.aByteArrayArrayArray6962[1][i_16_]
@@ -80,17 +79,17 @@ final class Class108 {
                      = ((Class348_Sub42_Sub6)
                      r_Sub2.aClass262_10492.method1990((byte) 55))) {
             Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4
-                    = (((Class348_Sub42_Sub6) class348_sub42_sub6)
+                    = (class348_sub42_sub6
                     .aClass318_Sub1_Sub3_Sub4_9538);
-            if (!((Class318_Sub1_Sub3_Sub4) class318_sub1_sub3_sub4)
+            if (!class318_sub1_sub3_sub4
                     .aBoolean10345) {
-                if (((((Class318_Sub1_Sub3_Sub4) class318_sub1_sub3_sub4)
+                if (((class318_sub1_sub3_sub4
                         .anInt10349)
                         ^ 0xffffffff)
                         >= (Class367_Sub11.anInt7396 ^ 0xffffffff)) {
                     class318_sub1_sub3_sub4
                             .method2470(Class348_Sub51.anInt7267, (byte) -16);
-                    if (((Class318_Sub1_Sub3_Sub4) class318_sub1_sub3_sub4)
+                    if (class318_sub1_sub3_sub4
                             .aBoolean10345)
                         class348_sub42_sub6.method2715((byte) 42);
                     else
@@ -109,10 +108,10 @@ final class Class108 {
         anInt1658++;
         Class190 class190 = Class262.aClass190ArrayArray3335[i][i_20_];
         if (class190 != null) {
-            Class196.anInt2601 = ((Class190) class190).anInt2535;
-            Class21.anInt325 = ((Class190) class190).anInt2538;
+            Class196.anInt2601 = class190.anInt2535;
+            Class21.anInt325 = class190.anInt2538;
             Class318_Sub1_Sub3_Sub1.anInt10023
-                    = ((Class190) class190).anInt2548;
+                    = class190.anInt2548;
         }
         Class348_Sub23_Sub4.method2988(bool);
     }

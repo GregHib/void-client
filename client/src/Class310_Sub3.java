@@ -8,13 +8,13 @@ import jagdx.PixelBuffer;
 import jagdx.ue;
 
 final class Class310_Sub3 extends Class310 implements Interface18_Impl1 {
-    private IDirect3DVolumeTexture anIDirect3DVolumeTexture6336;
-    private int anInt6337;
+    private final IDirect3DVolumeTexture anIDirect3DVolumeTexture6336;
+    private final int anInt6337;
     private int anInt6338;
-    private int anInt6339;
+    private final int anInt6339;
 
     public final void method63(byte i) {
-        ((Class310_Sub3) this).aClass378_3893.method3959(-101, this);
+        this.aClass378_3893.method3959(-101, this);
         if (i >= -21)
             method2314(78);
     }
@@ -37,20 +37,20 @@ final class Class310_Sub3 extends Class310 implements Interface18_Impl1 {
         anInt6337 = i_1_;
         anInt6339 = i_0_;
         anIDirect3DVolumeTexture6336
-                = (((Class378) ((Class310_Sub3) this).aClass378_3893)
+                = (this.aClass378_3893
                 .anIDirect3DDevice9810.a
                         (i, i_0_, i_1_, 1, 0,
-                                Class378.method3958(22, ((Class310_Sub3) this).aClass68_3895,
+                                Class378.method3958(22, this.aClass68_3895,
                                         class304),
                                 1));
         PixelBuffer pixelbuffer
-                = (((Class378) ((Class310_Sub3) this).aClass378_3893)
+                = (this.aClass378_3893
                 .aPixelBuffer9803);
         int i_2_ = anIDirect3DVolumeTexture6336.LockBox(0, 0, 0, 0, i, i_0_,
                 i_1_, 0, pixelbuffer);
         if (ue.a(i_2_, false)) {
             int i_3_
-                    = (((Class304) ((Class310_Sub3) this).aClass304_3896).anInt3850
+                    = (this.aClass304_3896.anInt3850
                     * anInt6338);
             int i_4_ = i_3_ * anInt6339;
             int i_5_ = pixelbuffer.getSlicePitch();

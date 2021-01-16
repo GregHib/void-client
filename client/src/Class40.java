@@ -97,25 +97,23 @@ final class Class40 {
         if (i_4_ != 256)
             return true;
         anInt547++;
-        if ((i & 0x180 ^ 0xffffffff) == -1)
-            return false;
-        return true;
+        return (i & 0x180 ^ 0xffffffff) != -1;
     }
 
     Class40() {
-        ((Class40) this).anInt522 = 0;
-        ((Class40) this).anIntArrayArray529 = new int[6][258];
-        ((Class40) this).anIntArray535 = new int[256];
-        ((Class40) this).aByteArray544 = new byte[18002];
-        ((Class40) this).aBooleanArray523 = new boolean[256];
-        ((Class40) this).aByteArray528 = new byte[256];
-        ((Class40) this).anInt548 = 0;
-        ((Class40) this).aByteArrayArray549 = new byte[6][258];
-        ((Class40) this).aByteArray545 = new byte[4096];
-        ((Class40) this).anIntArray540 = new int[16];
-        ((Class40) this).aBooleanArray532 = new boolean[16];
-        ((Class40) this).anIntArrayArray553 = new int[6][258];
-        ((Class40) this).anIntArrayArray556 = new int[6][258];
-        ((Class40) this).anIntArray557 = new int[257];
+        this.anInt522 = 0;
+        this.anIntArrayArray529 = new int[6][258];
+        this.anIntArray535 = new int[256];
+        this.aByteArray544 = new byte[18002];
+        this.aBooleanArray523 = new boolean[256];
+        this.aByteArray528 = new byte[256];
+        this.anInt548 = 0;
+        this.aByteArrayArray549 = new byte[6][258];
+        this.aByteArray545 = new byte[4096];
+        this.anIntArray540 = new int[16];
+        this.aBooleanArray532 = new boolean[16];
+        this.anIntArrayArray553 = new int[6][258];
+        this.anIntArrayArray556 = new int[6][258];
+        this.anIntArray557 = new int[257];
     }
 }

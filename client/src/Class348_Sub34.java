@@ -24,8 +24,8 @@ final class Class348_Sub34 extends Class348 {
     }
 
     Class348_Sub34(int i, int i_0_) {
-        ((Class348_Sub34) this).anInt6973 = i;
-        ((Class348_Sub34) this).anInt6971 = i_0_;
+        this.anInt6973 = i;
+        this.anInt6971 = i_0_;
     }
 
     static {

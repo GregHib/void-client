@@ -25,9 +25,9 @@ final class Class18 {
     private int anInt287 = 0;
     static int anInt288;
     private boolean aBoolean289;
-    private ha_Sub2 aHa_Sub2_290;
+    private final ha_Sub2 aHa_Sub2_290;
     static int anInt291;
-    private Class262 aClass262_292;
+    private final Class262 aClass262_292;
     private boolean aBoolean293;
     private boolean aBoolean294;
     private Class258_Sub3[] aClass258_Sub3Array295;
@@ -45,15 +45,15 @@ final class Class18 {
         aa var_aa = class46.method425(Class348_Sub8.aHa6654, (byte) 19);
         if (var_aa != null) {
             Class348_Sub8.aHa6654.KA(i_1_, i,
-                    ((Class46) class46).anInt709 + i_1_,
-                    i - -((Class46) class46).anInt789);
+                    class46.anInt709 + i_1_,
+                    i - -class46.anInt789);
             if ((Class259.anInt3306 ^ 0xffffffff) <= -4)
                 Class348_Sub8.aHa6654.A(-16777216, var_aa, i_1_, i);
             else
                 Class79.aClass105_1365.method976
-                        (((float) ((Class46) class46).anInt709 / 2.0F
+                        (((float) class46.anInt709 / 2.0F
                                         + (float) i_1_),
-                                (float) i + (float) ((Class46) class46).anInt789 / 2.0F,
+                                (float) i + (float) class46.anInt789 / 2.0F,
                                 4096,
                                 (0x3fff & (int) -Class314.aFloat3938) << -1614383390,
                                 var_aa, i_1_, i);
@@ -145,8 +145,8 @@ final class Class18 {
 
     static final void method273(Class46 class46, int i) {
         anInt288++;
-        if (((Class46) class46).anInt774 == 5
-                && ((Class46) class46).anInt812 != -1)
+        if (class46.anInt774 == 5
+                && class46.anInt812 != -1)
             Class318_Sub1.method2383(Class348_Sub8.aHa6654, -2, class46);
         if (i != -2835)
             method273(null, 44);
@@ -163,7 +163,7 @@ final class Class18 {
                     if (anInt286 != -1 && anInt275 != -1)
                         class348_sub5.method2754(anInt275, (byte) 55,
                                 anInt286);
-                    ((Class348_Sub5) class348_sub5).aBoolean6621 = true;
+                    class348_sub5.aBoolean6621 = true;
                     return true;
                 }
             }
@@ -184,8 +184,8 @@ final class Class18 {
             anInt286 = i;
             anInt275 = i_10_;
             for (Class348 class348 = aClass262_292.method1995(i_12_ ^ ~0x4);
-                 ((Class262) aClass262_292).aClass348_3334 != class348;
-                 class348 = ((Class348) class348).aClass348_4294)
+                 aClass262_292.aClass348_3334 != class348;
+                 class348 = class348.aClass348_4294)
                 ((Class348_Sub5) class348).method2754(anInt275, (byte) 41,
                         anInt286);
             aBoolean297 = true;
@@ -198,7 +198,7 @@ final class Class18 {
             anInt287 = i_9_;
             aHa_Sub2_290.method3773(i_12_, aClass206_284);
             aClass206_284.method1503(0, (byte) 3);
-            aHa_Sub2_290.method3790(98, (-((ha_Sub2) aHa_Sub2_290).anInt7641
+            aHa_Sub2_290.method3790(98, (-aHa_Sub2_290.anInt7641
                     + (anInt275 - -anInt276)), -anInt287);
             return true;
         }
@@ -219,7 +219,7 @@ final class Class18 {
                 aClass348_Sub42_Sub2_298
                         = new Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286,
                         anInt275,
-                        (((ha_Sub2) aHa_Sub2_290)
+                        (aHa_Sub2_290
                                 .anInt7713));
             if (aBoolean303)
                 aClass258_Sub3_300
@@ -251,7 +251,7 @@ final class Class18 {
                 aClass348_Sub42_Sub2_296
                         = new Class348_Sub42_Sub2(aHa_Sub2_290, anInt301, anInt286,
                         anInt275,
-                        (((ha_Sub2) aHa_Sub2_290)
+                        (aHa_Sub2_290
                                 .anInt7713));
             aClass258_Sub3Array295[0]
                     = new Class258_Sub3(aHa_Sub2_290, 34037, anInt301, anInt286,
@@ -306,9 +306,7 @@ final class Class18 {
             aBoolean299 = !aClass206_284.method1507(118);
             aHa_Sub2_290.method3770(-422613672, aClass206_284);
         }
-        if (aBoolean299)
-            return false;
-        return true;
+        return !aBoolean299;
     }
 
     public static void method277(byte i) {
@@ -319,7 +317,7 @@ final class Class18 {
     final void method278(Class348_Sub5 class348_sub5, boolean bool) {
         anInt280++;
         if (bool == true) {
-            ((Class348_Sub5) class348_sub5).aBoolean6621 = false;
+            class348_sub5.aBoolean6621 = false;
             class348_sub5.method2763((byte) -126);
             class348_sub5.method2715((byte) 103);
             method281((byte) -80);
@@ -336,8 +334,8 @@ final class Class18 {
         aClass258_Sub3Array295 = null;
         if (!aClass262_292.method2002((byte) 18)) {
             for (Class348 class348 = aClass262_292.method1995(4);
-                 ((Class262) aClass262_292).aClass348_3334 != class348;
-                 class348 = ((Class348) class348).aClass348_4294)
+                 aClass262_292.aClass348_3334 != class348;
+                 class348 = class348.aClass348_4294)
                 ((Class348_Sub5) class348).method2763((byte) -124);
         }
         anInt286 = anInt275 = 1;
@@ -347,9 +345,7 @@ final class Class18 {
         anInt270++;
         if (i != 1)
             anInt286 = -99;
-        if (aClass206_284 == null)
-            return false;
-        return true;
+        return aClass206_284 != null;
     }
 
     private final void method281(byte i) {
@@ -424,12 +420,12 @@ final class Class18 {
         anInt301 = -1;
         aBoolean303 = false;
         aHa_Sub2_290 = var_ha_Sub2;
-        if (((ha_Sub2) aHa_Sub2_290).aBoolean7820
-                && ((ha_Sub2) aHa_Sub2_290).aBoolean7837) {
+        if (aHa_Sub2_290.aBoolean7820
+                && aHa_Sub2_290.aBoolean7837) {
             aClass206_284 = aClass206_281 = new Class206(aHa_Sub2_290);
-            if (((ha_Sub2) aHa_Sub2_290).anInt7713 > 1
-                    && ((ha_Sub2) aHa_Sub2_290).aBoolean7815
-                    && ((ha_Sub2) aHa_Sub2_290).aBoolean7807)
+            if (aHa_Sub2_290.anInt7713 > 1
+                    && aHa_Sub2_290.aBoolean7815
+                    && aHa_Sub2_290.aBoolean7807)
                 aClass206_284 = aClass206_285 = new Class206(aHa_Sub2_290);
         }
     }

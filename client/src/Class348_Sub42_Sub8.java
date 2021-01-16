@@ -30,23 +30,19 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         if (i_2_ >= -39)
             return false;
         anInt9546++;
-        if ((i ^ 0xffffffff) != -4 && (i ^ 0xffffffff) != -5 && i != 5
-                && i != 6)
-            return false;
-        return true;
+        return (i ^ 0xffffffff) == -4 || (i ^ 0xffffffff) == -5 || i == 5
+                || i == 6;
     }
 
     Class348_Sub42_Sub8(int i) {
-        ((Class348_Sub42_Sub8) this).anInt9545 = i;
+        this.anInt9545 = i;
     }
 
     static final boolean method3197(int i, byte i_3_) {
         anInt9549++;
         if (i_3_ != 56)
             aClass114_9552 = null;
-        if ((i ^ 0xffffffff) != -8 && (i ^ 0xffffffff) != -10)
-            return false;
-        return true;
+        return (i ^ 0xffffffff) == -8 || (i ^ 0xffffffff) == -10;
     }
 
     static final void method3198(boolean bool, byte i) {
@@ -85,14 +81,14 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         Class33.method338(i + 45, Class348_Sub42_Sub16_Sub1.anInt10447);
         Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                 = new Class318_Sub1_Sub3_Sub3_Sub2();
-        ((Class318_Sub1) Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6377
+        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
                 = 512 * Class367_Sub4.anInt7319 / 2;
-        ((Class318_Sub1_Sub3_Sub3) Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                 .anIntArray10320[0]
                 = Class367_Sub4.anInt7319 / 2;
-        ((Class318_Sub1) Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907).anInt6388
+        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388
                 = 512 * Class348_Sub40_Sub3.anInt9109 / 2;
-        ((Class318_Sub1_Sub3_Sub3) Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
+        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                 .anIntArray10317[0]
                 = Class348_Sub40_Sub3.anInt9109 / 2;
         Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685 = 0;

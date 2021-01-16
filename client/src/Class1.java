@@ -8,19 +8,19 @@ import com.ms.directX.*;
 import java.awt.*;
 
 public final class Class1 implements Interface20 {
-    private DSBufferDesc[] aDSBufferDescArray5152;
-    private DirectSoundBuffer[] aDirectSoundBufferArray5153;
+    private final DSBufferDesc[] aDSBufferDescArray5152;
+    private final DirectSoundBuffer[] aDirectSoundBufferArray5153;
     private int[] anIntArray5154;
-    private DSCursors[] aDSCursorsArray5155 = new DSCursors[2];
-    private boolean[] aBooleanArray5156;
+    private final DSCursors[] aDSCursorsArray5155 = new DSCursors[2];
+    private final boolean[] aBooleanArray5156;
     private int anInt5157;
     private int anInt5158;
-    private byte[][] aByteArrayArray5159;
-    private int[] anIntArray5160;
+    private final byte[][] aByteArrayArray5159;
+    private final int[] anIntArray5160;
     private int anInt5161;
     private DirectSound aDirectSound5162;
-    private WaveFormatEx aWaveFormatEx5163;
-    private int[] anIntArray5164;
+    private final WaveFormatEx aWaveFormatEx5163;
+    private final int[] anIntArray5164;
 
     public final void method77(byte i, int i_0_) {
         try {

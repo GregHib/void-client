@@ -69,7 +69,7 @@ final class Class348_Sub10 extends Class348 {
         int i_2_ = (i & 0x7fe00000) >> 21;
         if (i_1_ != 0)
             i_0_ = -i_0_;
-        return (float) ((double) i_0_ * Math.pow(2.0, (double) (i_2_ - 788)));
+        return (float) ((double) i_0_ * Math.pow(2.0, i_2_ - 788));
     }
 
     private final void method2787(byte[] is) {
@@ -307,20 +307,20 @@ final class Class348_Sub10 extends Class348 {
             i_48_ = i_39_ >> 1;
         }
         Class276 class276 = aClass276Array6704[anIntArray6709[i_38_]];
-        int i_49_ = ((Class276) class276).anInt3557;
-        int i_50_ = ((Class276) class276).anIntArray3556[i_49_];
+        int i_49_ = class276.anInt3557;
+        int i_50_ = class276.anIntArray3556[i_49_];
         boolean bool_51_ = !aClass210Array6715[i_50_].method1534();
         boolean bool_52_ = bool_51_;
-        for (int i_53_ = 0; i_53_ < ((Class276) class276).anInt3555; i_53_++) {
+        for (int i_53_ = 0; i_53_ < class276.anInt3555; i_53_++) {
             Class343 class343
                     = (aClass343Array6710
-                    [((Class276) class276).anIntArray3554[i_53_]]);
+                    [class276.anIntArray3554[i_53_]]);
             float[] fs = aFloatArray6707;
             class343.method2688(fs, i_39_ >> 1, bool_52_);
         }
         if (!bool_51_) {
-            int i_54_ = ((Class276) class276).anInt3557;
-            int i_55_ = ((Class276) class276).anIntArray3556[i_54_];
+            int i_54_ = class276.anInt3557;
+            int i_55_ = class276.anIntArray3556[i_54_];
             aClass210Array6715[i_55_].method1530(aFloatArray6707, i_39_ >> 1);
         }
         if (bool_51_) {

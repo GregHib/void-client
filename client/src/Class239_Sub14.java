@@ -24,18 +24,18 @@ final class Class239_Sub14 extends Class239 {
         if (i != -32350)
             aClass190_5990 = null;
         anInt5984++;
-        return ((Class239) this).anInt3138;
+        return this.anInt3138;
     }
 
     final void method1716(boolean bool) {
-        if (((Class348_Sub51) ((Class239) this).aClass348_Sub51_3136)
+        if (this.aClass348_Sub51_3136
                 .aClass239_Sub3_7222.method1735(bool)
-                && ((Class239) this).anInt3138 == 2)
-            ((Class239) this).anInt3138 = 1;
+                && this.anInt3138 == 2)
+            this.anInt3138 = 1;
         anInt5988++;
-        if (((Class239) this).anInt3138 < 0
-                || (((Class239) this).anInt3138 ^ 0xffffffff) < -3)
-            ((Class239) this).anInt3138 = method1710(20014);
+        if (this.anInt3138 < 0
+                || (this.anInt3138 ^ 0xffffffff) < -3)
+            this.anInt3138 = method1710(20014);
     }
 
     Class239_Sub14(int i, Class348_Sub51 class348_sub51) {
@@ -72,7 +72,7 @@ final class Class239_Sub14 extends Class239 {
         anInt5983++;
         if (Class348_Sub31.anInt6923 == -1)
             return 1;
-        if ((((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if ((Class316.aClass348_Sub51_3959
                 .aClass239_Sub25_7271.method1829(-32350)
                 ^ 0xffffffff)
                 != (i ^ 0xffffffff)) {
@@ -81,7 +81,7 @@ final class Class239_Sub14 extends Class239 {
                             Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967,
                                     544),
                             true, i);
-            if (i != ((Class348_Sub51) Class316.aClass348_Sub51_3959)
+            if (i != Class316.aClass348_Sub51_3959
                     .aClass239_Sub25_7271.method1829(-32350))
                 return -1;
         }
@@ -143,7 +143,7 @@ final class Class239_Sub14 extends Class239 {
     }
 
     final void method1712(int i, int i_8_) {
-        ((Class239) this).anInt3138 = i_8_;
+        this.anInt3138 = i_8_;
         anInt5987++;
         int i_9_ = -73 / ((82 - i) / 35);
     }

@@ -8,7 +8,7 @@ final class Class153 {
     static int anInt2081;
     static int anInt2082;
     private Class60 aClass60_2083 = new Class60(128);
-    private Class45 aClass45_2084;
+    private final Class45 aClass45_2084;
     static int anInt2085;
     static int anInt2086;
     Class45 aClass45_2087;
@@ -20,18 +20,18 @@ final class Class153 {
         synchronized (aClass60_2083) {
             aClass60_2083.method590(0);
         }
-        synchronized (((Class153) this).aClass60_2089) {
+        synchronized (this.aClass60_2089) {
             if (i != 7851) {
                 /* empty */
             } else
-                ((Class153) this).aClass60_2089.method590(i + -7851);
+                this.aClass60_2089.method590(i + -7851);
         }
     }
 
     final void method1220(byte i, int i_0_, int i_1_) {
         anInt2081++;
         aClass60_2083 = new Class60(i_1_);
-        ((Class153) this).aClass60_2089 = new Class60(i_0_);
+        this.aClass60_2089 = new Class60(i_0_);
         int i_2_ = 11 / ((i - -46) / 43);
     }
 
@@ -39,11 +39,9 @@ final class Class153 {
         if (i != -3157)
             return false;
         anInt2088++;
-        if (!(Class299_Sub1.method2259(0, i_4_, i_3_)
-                | (i_3_ & 0x70000 ^ 0xffffffff) != -1)
-                && !Class288.method2187(i_3_, -79, i_4_))
-            return false;
-        return true;
+        return Class299_Sub1.method2259(0, i_4_, i_3_)
+                | (i_3_ & 0x70000 ^ 0xffffffff) != -1
+                || Class288.method2187(i_3_, -79, i_4_);
     }
 
     final void method1222(boolean bool) {
@@ -53,15 +51,15 @@ final class Class153 {
             aClass60_2083.method587(-99);
         }
         anInt2082++;
-        synchronized (((Class153) this).aClass60_2089) {
-            ((Class153) this).aClass60_2089.method587(-78);
+        synchronized (this.aClass60_2089) {
+            this.aClass60_2089.method587(-78);
         }
     }
 
     static final Class348_Sub42_Sub19 method1223(int i, int i_5_, int i_6_,
                                                  Class273 class273) {
         anInt2086++;
-        int i_7_ = ((Class273) class273).anInt5167 | i << 660374826;
+        int i_7_ = class273.anInt5167 | i << 660374826;
         Class348_Sub42_Sub19 class348_sub42_sub19
                 = ((Class348_Sub42_Sub19)
                 Class322.aClass308_4036.method2302((long) i_7_ << 1795487952,
@@ -80,13 +78,13 @@ final class Class153 {
                 throw new RuntimeException(exception.getMessage() + " S: "
                         + i_7_);
             }
-            ((Class348_Sub42_Sub19) class348_sub42_sub19).aClass273_9691
+            class348_sub42_sub19.aClass273_9691
                     = class273;
             Class322.aClass308_4036.method2305((long) i_7_ << -1557989360,
                     class348_sub42_sub19, -1);
             return class348_sub42_sub19;
         }
-        i_7_ = ((Class273) class273).anInt5167 | 65536 + i_5_ << 2087345450;
+        i_7_ = class273.anInt5167 | 65536 + i_5_ << 2087345450;
         class348_sub42_sub19
                 = ((Class348_Sub42_Sub19)
                 Class322.aClass308_4036.method2302((long) i_7_ << -1741106544,
@@ -105,13 +103,13 @@ final class Class153 {
                 throw new RuntimeException(exception.getMessage() + " S: "
                         + i_7_);
             }
-            ((Class348_Sub42_Sub19) class348_sub42_sub19).aClass273_9691
+            class348_sub42_sub19.aClass273_9691
                     = class273;
             Class322.aClass308_4036.method2305((long) i_7_ << -1141322992,
                     class348_sub42_sub19, -1);
             return class348_sub42_sub19;
         }
-        i_7_ = ((Class273) class273).anInt5167 | 0x3fffc00;
+        i_7_ = class273.anInt5167 | 0x3fffc00;
         class348_sub42_sub19
                 = ((Class348_Sub42_Sub19)
                 Class322.aClass308_4036.method2302((long) i_7_ << 96837648,
@@ -129,7 +127,7 @@ final class Class153 {
                 throw new RuntimeException(exception.getMessage() + " S: "
                         + i_7_);
             }
-            ((Class348_Sub42_Sub19) class348_sub42_sub19).aClass273_9691
+            class348_sub42_sub19.aClass273_9691
                     = class273;
             Class322.aClass308_4036.method2305((long) i_7_ << 1563421904,
                     class348_sub42_sub19, -1);
@@ -147,8 +145,8 @@ final class Class153 {
             aClass60_2083.method578(2, i);
         }
         anInt2079++;
-        synchronized (((Class153) this).aClass60_2089) {
-            ((Class153) this).aClass60_2089.method578(2, i);
+        synchronized (this.aClass60_2089) {
+            this.aClass60_2089.method578(2, i);
         }
     }
 
@@ -156,7 +154,7 @@ final class Class153 {
         anInt2085++;
         Class42 class42;
         synchronized (aClass60_2083) {
-            class42 = (Class42) aClass60_2083.method583((long) i, 91);
+            class42 = (Class42) aClass60_2083.method583(i, 91);
         }
         if (class42 != null)
             return class42;
@@ -167,13 +165,13 @@ final class Class153 {
             is = aClass45_2084.method410(-1860, 36, i);
         }
         class42 = new Class42();
-        ((Class42) class42).aClass153_593 = this;
-        ((Class42) class42).anInt581 = i;
+        class42.aClass153_593 = this;
+        class42.anInt581 = i;
         if (is != null)
             class42.method379(new Class348_Sub49(is), 109);
         class42.method372(-25359);
         synchronized (aClass60_2083) {
-            aClass60_2083.method582(class42, (long) i, (byte) -106);
+            aClass60_2083.method582(class42, i, (byte) -106);
         }
         return class42;
     }
@@ -181,7 +179,7 @@ final class Class153 {
     Class153(Class230 class230, int i, Class45 class45, Class45 class45_10_) {
         try {
             aClass45_2084 = class45;
-            ((Class153) this).aClass45_2087 = class45_10_;
+            this.aClass45_2087 = class45_10_;
             aClass45_2084.method407(0, 36);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929

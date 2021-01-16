@@ -92,7 +92,7 @@ final class Class279_Sub1 extends Class279 {
         if (Class282.aBoolean3652)
             i <<= 1;
         for (int i_1_ = 0; i_1_ < i; i_1_++) {
-            int i_2_ = ((Class279_Sub1) this).anIntArray3603[i_1_];
+            int i_2_ = this.anIntArray3603[i_1_];
             if ((i_2_ + 8388608 & ~0xffffff) != 0)
                 i_2_ = 0x7fffff ^ i_2_ >> 31;
             aByteArray6176[i_1_ * 2] = (byte) (i_2_ >> 8);

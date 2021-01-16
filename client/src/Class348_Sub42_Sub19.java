@@ -22,15 +22,15 @@ final class Class348_Sub42_Sub19 extends Class348_Sub42 {
     static final void method3276(Class211 class211) {
         if (Class331.anInt4135 < 65535) {
             Class348_Sub1 class348_sub1
-                    = ((Class211) class211).aClass348_Sub1_2745;
+                    = class211.aClass348_Sub1_2745;
             Class239_Sub14.aClass211Array5993[Class331.anInt4135] = class211;
             r.aBooleanArray9718[Class331.anInt4135] = false;
             Class331.anInt4135++;
-            int i = ((Class211) class211).anInt2731;
-            if (((Class211) class211).aBoolean2749)
+            int i = class211.anInt2731;
+            if (class211.aBoolean2749)
                 i = 0;
-            int i_0_ = ((Class211) class211).anInt2731;
-            if (((Class211) class211).aBoolean2737)
+            int i_0_ = class211.anInt2731;
+            if (class211.aBoolean2737)
                 i_0_ = Class189.anInt2524 - 1;
             for (int i_1_ = i; i_1_ <= i_0_; i_1_++) {
                 int i_2_ = 0;
@@ -49,7 +49,7 @@ final class Class348_Sub42_Sub19 extends Class348_Sub42 {
                 if (i_4_ >= Class348_Sub41.anInt7054)
                     i_4_ = Class348_Sub41.anInt7054 - 1;
                 for (int i_5_ = i_3_; i_5_ <= i_4_; i_5_++) {
-                    int i_6_ = ((Class211) class211).aShortArray2742[i_2_++];
+                    int i_6_ = class211.aShortArray2742[i_2_++];
                     int i_7_ = (((class348_sub1.method2724(-1)
                             - class348_sub1.method2723(-1)
                             + Class348_Sub23_Sub2.anInt9037)

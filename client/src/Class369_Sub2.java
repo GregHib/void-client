@@ -41,8 +41,8 @@ final class Class369_Sub2 extends Class369 {
                   int i_9_) {
         super(class221, class341, i, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_);
         try {
-            ((Class369_Sub2) this).anInt8585 = i_9_;
-            ((Class369_Sub2) this).anInt8591 = i_8_;
+            this.anInt8585 = i_9_;
+            this.anInt8591 = i_8_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     ("ou.<init>("

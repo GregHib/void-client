@@ -41,25 +41,25 @@ final class Class250 implements Runnable {
     }
 
     public final void run() {
-        ((Class250) this).aBoolean3223 = true;
+        this.aBoolean3223 = true;
         anInt3224++;
         try {
-            while (!((Class250) this).aBoolean3221) {
+            while (!this.aBoolean3221) {
                 for (int i = 0; i < 2; i++) {
                     Class279 class279
-                            = ((Class250) this).aClass279Array3218[i];
+                            = this.aClass279Array3218[i];
                     if (class279 != null)
                         class279.method2084(-6858);
                 }
                 Class286_Sub5.method2161((byte) -107, 10L);
                 Class369_Sub3_Sub1.method3578((byte) -42, null,
-                        (((Class250) this)
+                        (this
                                 .aClass297_3228));
             }
         } catch (Exception exception) {
             Class156.method1242(null, exception, 15004);
         } finally {
-            ((Class250) this).aBoolean3223 = false;
+            this.aBoolean3223 = false;
         }
     }
 

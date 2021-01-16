@@ -4,33 +4,33 @@
 
 final class Class105_Sub1 extends Class105 {
     static int anInt8390;
-    private boolean aBoolean8391;
+    private final boolean aBoolean8391;
     static int anInt8392;
     static int anInt8393;
     static int anInt8394;
     static int anInt8395;
-    private boolean aBoolean8396;
+    private final boolean aBoolean8396;
     private int anInt8397 = 0;
     static int anInt8398 = 0;
     static int anInt8399;
     private int anInt8400;
     static int anInt8401;
     static int anInt8402;
-    private Interface18_Impl3 anInterface18_Impl3_8403;
+    private final Interface18_Impl3 anInterface18_Impl3_8403;
     static int anInt8404;
     static int anInt8405;
     static int anInt8406;
-    private ha_Sub3 aHa_Sub3_8407;
-    private boolean aBoolean8408;
+    private final ha_Sub3 aHa_Sub3_8407;
+    private final boolean aBoolean8408;
     static int anInt8409;
-    private boolean aBoolean8410;
-    private int anInt8411;
+    private final boolean aBoolean8410;
+    private final int anInt8411;
     static int anInt8412;
     static int anInt8413;
     static int anInt8414;
     static int anInt8415;
     private int anInt8416 = 0;
-    private int anInt8417;
+    private final int anInt8417;
     private boolean aBoolean8418;
     private int anInt8419 = 0;
     static int anInt8420;
@@ -70,15 +70,15 @@ final class Class105_Sub1 extends Class105 {
             method989(-21, 36, 81);
         int i_8_ = class348_sub49.method3385((byte) -126);
         int i_9_ = class348_sub49.method3385((byte) -126);
-        return new Class369_Sub2(((Class369) class369).aClass221_4968,
-                ((Class369) class369).aClass341_4973,
-                ((Class369) class369).anInt4970,
-                ((Class369) class369).anInt4959,
-                ((Class369) class369).anInt4971,
-                ((Class369) class369).anInt4963,
-                ((Class369) class369).anInt4966,
-                ((Class369) class369).anInt4965,
-                ((Class369) class369).anInt4961, i_8_, i_9_);
+        return new Class369_Sub2(class369.aClass221_4968,
+                class369.aClass341_4973,
+                class369.anInt4970,
+                class369.anInt4959,
+                class369.anInt4971,
+                class369.anInt4963,
+                class369.anInt4966,
+                class369.anInt4965,
+                class369.anInt4961, i_8_, i_9_);
     }
 
     final int method966() {
@@ -94,15 +94,15 @@ final class Class105_Sub1 extends Class105 {
     static final Class361 method988(int i, int i_10_, int i_11_) {
         anInt8415++;
         Class361 class361 = new Class361();
-        ((Class361) class361).anInt4437 = 6 + i_11_;
-        ((Class361) class361).anInt4453 = -1;
-        ((Class361) class361).anInt4443 = 5 + (i - -1);
+        class361.anInt4437 = 6 + i_11_;
+        class361.anInt4453 = -1;
+        class361.anInt4443 = 5 + (i - -1);
         if (i_10_ != 1)
             return null;
-        ((Class361) class361).anInt4441 = -1;
-        ((Class361) class361).anIntArrayArray4438
-                = (new int[((Class361) class361).anInt4437]
-                [((Class361) class361).anInt4443]);
+        class361.anInt4441 = -1;
+        class361.anIntArrayArray4438
+                = (new int[class361.anInt4437]
+                [class361.anInt4443]);
         class361.method3500(700);
         return class361;
     }
@@ -374,7 +374,7 @@ final class Class105_Sub1 extends Class105 {
         Class101_Sub2 class101_sub2_73_ = aHa_Sub3_8407.method3820(false);
         aa_Sub2 var_aa_Sub2 = (aa_Sub2) var_aa;
         Interface18_Impl3 interface18_impl3
-                = ((aa_Sub2) var_aa_Sub2).anInterface18_Impl3_5196;
+                = var_aa_Sub2.anInterface18_Impl3_5196;
         anInterface18_Impl3_8403.method64(((aBoolean8410 || aBoolean8408
                         || (0x1 & i) == 0)
                         ? Class206.aClass209_4874
@@ -498,10 +498,8 @@ final class Class105_Sub1 extends Class105 {
             return true;
         if (i_92_ != -385)
             return false;
-        if ((i_93_ & 0x37) != 0 || !Class273.method2056(i, 120, i_93_))
-            return false;
-        return true;
-    }
+		return (i_93_ & 0x37) == 0 && Class273.method2056(i, 120, i_93_);
+	}
 
     final void method982(int i, int i_94_, int i_95_, int i_96_, int i_97_,
                          int i_98_, int i_99_, int i_100_) {
@@ -609,7 +607,7 @@ final class Class105_Sub1 extends Class105 {
         i_113_ += anInt8419;
         i += anInt8400;
         Interface18_Impl3 interface18_impl3
-                = ((aa_Sub2) var_aa_Sub2).anInterface18_Impl3_5196;
+                = var_aa_Sub2.anInterface18_Impl3_5196;
         anInterface18_Impl3_8403.method64(Class206.aClass209_4874, -22095);
         aHa_Sub3_8407.method3864(-81);
         aHa_Sub3_8407.method3850((byte) -35, anInterface18_Impl3_8403);

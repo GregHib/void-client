@@ -15,7 +15,7 @@ final class Class373_Sub1 extends Class373
     private int anInt7421;
     private int anInt7422;
     private int anInt7423;
-    private boolean aBoolean7424;
+    private final boolean aBoolean7424;
     private Component aComponent7425;
 
     final boolean method3588(int i) {
@@ -26,12 +26,12 @@ final class Class373_Sub1 extends Class373
     private final void method3598(int i, int i_1_, int i_2_, int i_3_,
                                   boolean bool) {
         Class348_Sub45_Sub1 class348_sub45_sub1 = new Class348_Sub45_Sub1();
-        ((Class348_Sub45_Sub1) class348_sub45_sub1).anInt9725 = i_3_;
-        ((Class348_Sub45_Sub1) class348_sub45_sub1).anInt9728 = i_1_;
-        ((Class348_Sub45_Sub1) class348_sub45_sub1).anInt9729 = i;
-        ((Class348_Sub45_Sub1) class348_sub45_sub1).aLong9726
+        class348_sub45_sub1.anInt9725 = i_3_;
+        class348_sub45_sub1.anInt9728 = i_1_;
+        class348_sub45_sub1.anInt9729 = i;
+        class348_sub45_sub1.aLong9726
                 = Class62.method599(-115);
-        ((Class348_Sub45_Sub1) class348_sub45_sub1).anInt9727 = i_2_;
+        class348_sub45_sub1.anInt9727 = i_2_;
         if (bool)
             mouseDragged(null);
         aClass262_7420.method1999(class348_sub45_sub1, -20180);

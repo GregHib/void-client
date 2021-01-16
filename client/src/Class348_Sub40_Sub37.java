@@ -70,17 +70,17 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                 anInt9463 = class348_sub49.method3387(255);
                 return;
             } while (false);
-            ((Class348_Sub40) this).aBoolean7045
+            this.aBoolean7045
                     = class348_sub49.method3387(i_11_ ^ 0x79d8) == 1;
         } while (false);
     }
 
     final int[] method3042(int i, int i_13_) {
         anInt9457++;
-        int[] is = ((Class348_Sub40) this).aClass191_7032.method1433(0, i);
+        int[] is = this.aClass191_7032.method1433(0, i);
         if (i_13_ != 255)
             method3148(true);
-        if (((Class191) ((Class348_Sub40) this).aClass191_7032).aBoolean2570) {
+        if (this.aClass191_7032.aBoolean2570) {
             int i_14_ = 1 + (anInt9463 + anInt9463);
             int i_15_ = 65536 / i_14_;
             int i_16_ = 1 + anInt9466 + anInt9466;
@@ -130,9 +130,9 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
         if (i_28_ != -1564599039)
             return null;
         anInt9462++;
-        int[][] is = ((Class348_Sub40) this).aClass322_7033
+        int[][] is = this.aClass322_7033
                 .method2557(i_28_ ^ 0x5d41e2a6, i);
-        if (((Class322) ((Class348_Sub40) this).aClass322_7033).aBoolean4035) {
+        if (this.aClass322_7033.aBoolean4035) {
             int i_29_ = 1 + (anInt9463 + anInt9463);
             int i_30_ = 65536 / i_29_;
             int i_31_ = anInt9466 + (anInt9466 + 1);

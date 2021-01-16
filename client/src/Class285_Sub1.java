@@ -63,21 +63,21 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
                 = Class348_Sub46.method3322(i ^ i, class348_sub49);
         int i_5_ = class348_sub49.method3372(13638);
         return (new Class369_Sub3_Sub1
-                (((Class369) class369_sub3).aClass221_4968,
-                        ((Class369) class369_sub3).aClass341_4973,
-                        ((Class369) class369_sub3).anInt4970,
-                        ((Class369) class369_sub3).anInt4959,
-                        ((Class369) class369_sub3).anInt4971,
-                        ((Class369) class369_sub3).anInt4963,
-                        ((Class369) class369_sub3).anInt4966,
-                        ((Class369) class369_sub3).anInt4965,
-                        ((Class369) class369_sub3).anInt4961,
-                        ((Class369_Sub3) class369_sub3).anInt8599,
-                        ((Class369_Sub3) class369_sub3).anInt8595,
-                        ((Class369_Sub3) class369_sub3).anInt8603,
-                        ((Class369_Sub3) class369_sub3).anInt8602,
-                        ((Class369_Sub3) class369_sub3).anInt8600,
-                        ((Class369_Sub3) class369_sub3).anInt8597, i_5_));
+                (class369_sub3.aClass221_4968,
+                        class369_sub3.aClass341_4973,
+                        class369_sub3.anInt4970,
+                        class369_sub3.anInt4959,
+                        class369_sub3.anInt4971,
+                        class369_sub3.anInt4963,
+                        class369_sub3.anInt4966,
+                        class369_sub3.anInt4965,
+                        class369_sub3.anInt4961,
+                        class369_sub3.anInt8599,
+                        class369_sub3.anInt8595,
+                        class369_sub3.anInt8603,
+                        class369_sub3.anInt8602,
+                        class369_sub3.anInt8600,
+                        class369_sub3.anInt8597, i_5_));
     }
 
     static final void method2129(byte i) {
@@ -98,7 +98,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
         if (i != 6331)
             anInt8492 = -14;
         anInt8489++;
-        return super.method2123((((Class377) ((Class285) this).aClass377_4759)
+        return super.method2123((this.aClass377_4759
                         .aMapBuffer9915),
                 i ^ 0x18bb);
     }
@@ -115,7 +115,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
         if (i != 26775)
             aByte8491 = (byte) 7;
         return super.method2120(0,
-                (((Class377) ((Class285) this).aClass377_4759)
+                (this.aClass377_4759
                         .aMapBuffer9915),
                 bool);
     }

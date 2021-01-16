@@ -13,7 +13,7 @@ final class Class49 implements Interface4 {
     static volatile boolean aBoolean4726 = true;
     static int anInt4727;
     static boolean aBoolean4728 = false;
-    private ha_Sub1 aHa_Sub1_4729;
+    private final ha_Sub1 aHa_Sub1_4729;
     static Class46 aClass46_4730 = null;
     int[] anIntArray4731;
 
@@ -39,13 +39,12 @@ final class Class49 implements Interface4 {
             i_2_ = 2;
             Class161.method1263(true);
         }
-        if (((Class348_Sub51) Class316.aClass348_Sub51_3959)
+        if (Class316.aClass348_Sub51_3959
                 .aClass239_Sub25_7271.method1829(-32350)
                 != 2) {
             Class316.aClass348_Sub51_3959.method3429((byte) 74,
-                    (((Class348_Sub51)
-                            (Class316
-                                    .aClass348_Sub51_3959))
+                    (Class316
+                            .aClass348_Sub51_3959
                             .aClass239_Sub25_7251),
                     2);
             Class367_Sub10.method3553(false, (byte) 119, 2);
@@ -58,15 +57,15 @@ final class Class49 implements Interface4 {
                                int i_7_, boolean bool, boolean bool_8_) {
         anInt4723++;
         Class213.method1568
-                ((((Class348_Sub31) ((ha_Sub1) aHa_Sub1_4729).aClass348_Sub31_7469)
+                ((aHa_Sub1_4729.aClass348_Sub31_7469
                                 .anIntArray6916),
                         i_3_, i, i_7_,
-                        bool_8_ ? ((ha_Sub1) aHa_Sub1_4729).aFloatArray7502 : null,
-                        bool ? ((Class49) this).anIntArray4731 : null, i_4_, 115, i_5_,
-                        (((Class348_Sub31) ((ha_Sub1) aHa_Sub1_4729).aClass348_Sub31_7469)
+                        bool_8_ ? aHa_Sub1_4729.aFloatArray7502 : null,
+                        bool ? this.anIntArray4731 : null, i_4_, 115, i_5_,
+                        (aHa_Sub1_4729.aClass348_Sub31_7469
                                 .anInt6917),
-                        ((Class49) this).anInt4725, i_6_,
-                        !bool_8_ ? null : ((Class49) this).aFloatArray4719);
+                        this.anInt4725, i_6_,
+                        !bool_8_ ? null : this.aFloatArray4719);
     }
 
     public final void method15(int i, int i_9_, int i_10_, int i_11_,
@@ -74,16 +73,15 @@ final class Class49 implements Interface4 {
                                boolean bool_14_) {
         anInt4721++;
         Class213.method1568
-                (((Class49) this).anIntArray4731, i_9_, i, i_13_,
-                        bool_14_ ? ((Class49) this).aFloatArray4719 : null,
-                        !bool ? null : (((Class348_Sub31)
-                                ((ha_Sub1) aHa_Sub1_4729).aClass348_Sub31_7469)
+                (this.anIntArray4731, i_9_, i, i_13_,
+                        bool_14_ ? this.aFloatArray4719 : null,
+                        !bool ? null : (aHa_Sub1_4729.aClass348_Sub31_7469
                                 .anIntArray6916),
-                        i_10_, 113, i_11_, ((Class49) this).anInt4725,
-                        (((Class348_Sub31) ((ha_Sub1) aHa_Sub1_4729).aClass348_Sub31_7469)
+                        i_10_, 113, i_11_, this.anInt4725,
+                        (aHa_Sub1_4729.aClass348_Sub31_7469
                                 .anInt6917),
                         i_12_,
-                        bool_14_ ? ((ha_Sub1) aHa_Sub1_4729).aFloatArray7502 : null);
+                        bool_14_ ? aHa_Sub1_4729.aFloatArray7502 : null);
     }
 
     Class49(ha_Sub1 var_ha_Sub1, Class105 class105, Class216 class216) {
@@ -95,34 +93,34 @@ final class Class49 implements Interface4 {
                         throw new RuntimeException();
                     Class105_Sub3_Sub3 class105_sub3_sub3
                             = (Class105_Sub3_Sub3) class105;
-                    ((Class49) this).anInt4725
-                            = ((Class105_Sub3) class105_sub3_sub3).anInt8471;
-                    ((Class49) this).anInt4722
-                            = ((Class105_Sub3) class105_sub3_sub3).anInt8470;
-                    ((Class49) this).anIntArray4731
-                            = (((Class105_Sub3_Sub3) class105_sub3_sub3)
+                    this.anInt4725
+                            = class105_sub3_sub3.anInt8471;
+                    this.anInt4722
+                            = class105_sub3_sub3.anInt8470;
+                    this.anIntArray4731
+                            = (class105_sub3_sub3
                             .anIntArray9936);
                 } else {
                     Class105_Sub3_Sub1 class105_sub3_sub1
                             = (Class105_Sub3_Sub1) class105;
-                    ((Class49) this).anIntArray4731
-                            = (((Class105_Sub3_Sub1) class105_sub3_sub1)
+                    this.anIntArray4731
+                            = (class105_sub3_sub1
                             .anIntArray9933);
-                    ((Class49) this).anInt4722
-                            = ((Class105_Sub3) class105_sub3_sub1).anInt8470;
-                    ((Class49) this).anInt4725
-                            = ((Class105_Sub3) class105_sub3_sub1).anInt8471;
+                    this.anInt4722
+                            = class105_sub3_sub1.anInt8470;
+                    this.anInt4725
+                            = class105_sub3_sub1.anInt8471;
                 }
                 if (class216 == null)
                     break;
                 aClass216_4724 = class216;
-                if ((((Class216) aClass216_4724).anInt4974
-                        != ((Class49) this).anInt4725)
-                        || (((Class49) this).anInt4722
-                        != ((Class216) aClass216_4724).anInt4978))
+                if ((aClass216_4724.anInt4974
+                        != this.anInt4725)
+                        || (this.anInt4722
+                        != aClass216_4724.anInt4978))
                     throw new RuntimeException();
-                ((Class49) this).aFloatArray4719
-                        = ((Class216) aClass216_4724).aFloatArray4980;
+                this.aFloatArray4719
+                        = aClass216_4724.aFloatArray4980;
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929
                         (runtimeexception,

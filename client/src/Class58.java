@@ -26,22 +26,22 @@ final class Class58 {
             return 0;
         int i_2_ = 0;
         for (int i_3_ = 0;
-             ((((Class348_Sub13) class348_sub13).anIntArray6758.length
+             ((class348_sub13.anIntArray6758.length
                      ^ 0xffffffff)
                      < (i_3_ ^ 0xffffffff));
              i_3_++) {
             if ((i ^ 0xffffffff)
-                    == (((Class348_Sub13) class348_sub13).anIntArray6757[i_3_]
+                    == (class348_sub13.anIntArray6757[i_3_]
                     ^ 0xffffffff))
-                i_2_ += ((Class348_Sub13) class348_sub13).anIntArray6758[i_3_];
+                i_2_ += class348_sub13.anIntArray6758[i_3_];
         }
         int i_4_ = 73 % ((i_1_ - -52) / 63);
         return i_2_;
     }
 
     private final void method533(Class325 class325, int i) {
-        aLong1057 |= (long) (((Class325) class325).anInt4070
-                << anInt1058++ * Class325.anInt4081);
+        aLong1057 |= class325.anInt4070
+                << anInt1058++ * Class325.anInt4081;
         anInt1063++;
         int i_5_ = 0 % ((28 - i) / 59);
     }
@@ -92,7 +92,7 @@ final class Class58 {
     }
 
     Class58(Class325 class325) {
-        aLong1057 = (long) ((Class325) class325).anInt4070;
+        aLong1057 = class325.anInt4070;
         anInt1058 = 1;
     }
 
@@ -113,10 +113,8 @@ final class Class58 {
         if ((0x10 & Class348_Sub33.aByteArrayArrayArray6962[i_26_][i_24_][i])
                 != 0)
             return false;
-        if (i_25_ == Class239_Sub10.method1762(-55, i_26_, i, i_24_))
-            return true;
-        return false;
-    }
+		return i_25_ == Class239_Sub10.method1762(-55, i_26_, i, i_24_);
+	}
 
     final Class325 method537(int i, int i_27_) {
         anInt1060++;

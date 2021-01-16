@@ -33,19 +33,19 @@ final class Class69 {
                                 Class348_Sub42 class348_sub42_1_, int i) {
         do {
             try {
-                if (((Class348_Sub42) class348_sub42_1_).aClass348_Sub42_7060
+                if (class348_sub42_1_.aClass348_Sub42_7060
                         != null)
                     class348_sub42_1_.method3162(true);
                 anInt1194++;
-                ((Class348_Sub42) class348_sub42_1_).aClass348_Sub42_7063
+                class348_sub42_1_.aClass348_Sub42_7063
                         = class348_sub42;
-                ((Class348_Sub42) class348_sub42_1_).aClass348_Sub42_7060
-                        = ((Class348_Sub42) class348_sub42).aClass348_Sub42_7060;
-                ((Class348_Sub42) (((Class348_Sub42) class348_sub42_1_)
-                        .aClass348_Sub42_7060)).aClass348_Sub42_7063
+                class348_sub42_1_.aClass348_Sub42_7060
+                        = class348_sub42.aClass348_Sub42_7060;
+                class348_sub42_1_
+                        .aClass348_Sub42_7060.aClass348_Sub42_7063
                         = class348_sub42_1_;
-                ((Class348_Sub42) (((Class348_Sub42) class348_sub42_1_)
-                        .aClass348_Sub42_7063)).aClass348_Sub42_7060
+                class348_sub42_1_
+                        .aClass348_Sub42_7063.aClass348_Sub42_7060
                         = class348_sub42_1_;
                 if (i == -1)
                     break;
@@ -90,12 +90,10 @@ final class Class69 {
         anInt1191++;
         if (i_5_ != 393216)
             method723(25, 30, (byte) -113);
-        if (!(Class314_Sub1.method2352(124, i_4_, i)
-                | (0x60000 & i ^ 0xffffffff) != -1)
-                && !Class273.method2056(i, 90, i_4_)
-                && !method723(i, i_4_, (byte) -120))
-            return false;
-        return true;
+        return Class314_Sub1.method2352(124, i_4_, i)
+                | (0x60000 & i ^ 0xffffffff) != -1
+                || Class273.method2056(i, 90, i_4_)
+                || method723(i, i_4_, (byte) -120);
     }
 
     public final String toString() {
