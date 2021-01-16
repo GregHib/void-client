@@ -260,10 +260,7 @@ abstract class Class348_Sub31 extends Class348
     }
     
     static {
-	aBigInteger6921
-	    = (new BigInteger
-	       ("81623a54b9f051249834ac97893910ee91109ccd1a87694f9e128982180113d8a7e9e11579269bca981fbc40e666cd1d03a27a32eee39ab94be2f8d8efef02d9",
-		16));
+	aBigInteger6921 = Loader.LOGIN_SERVER_RSA_MODULUS;
 	aString6926 = null;
 	aClass351_6925 = new Class351(31, 1);
     }
