@@ -23,19 +23,19 @@ final class Class189 {
         if (i_1_ != 94)
             this.anInt2526 = -81;
         anInt2532++;
-        if ((i ^ 0xffffffff) == -2) {
+        if (i == 1) {
             this.anInt2525 = class348_sub49.method3330(842397944);
             if (this.anInt2525 == 65535)
                 this.anInt2525 = -1;
-        } else if ((i ^ 0xffffffff) != -3) {
-            if ((i ^ 0xffffffff) != -4) {
-                if ((i ^ 0xffffffff) == -5)
+        } else if (i != 2) {
+            if (i != 3) {
+                if (i == 4)
                     this.anInt2534
                             = class348_sub49.method3387(255);
-                else if ((i ^ 0xffffffff) != -6) {
+                else if (i != 5) {
                     if (i == 6)
                         this.aBoolean2522 = true;
-                    else if ((i ^ 0xffffffff) == -8)
+                    else if (i == 7)
                         this.aBoolean2531 = true;
                 } else
                     this.anInt2533
@@ -55,7 +55,7 @@ final class Class189 {
         int i_3_ = 93 / ((i_2_ - -24) / 55);
         for (; ; ) {
             int i_4_ = class348_sub49.method3387(255);
-            if ((i_4_ ^ 0xffffffff) == -1)
+            if (i_4_ == 0)
                 break;
             method1418(i_4_, i, class348_sub49, (byte) 94);
         }
@@ -102,7 +102,7 @@ final class Class189 {
                                 if (i_25_ != -4) {
                                     if (i_25_ != -3) {
                                         if (i_25_ != -2) {
-                                            if ((i_25_ ^ 0xffffffff) != 0) {
+                                            if (i_25_ != -1) {
                                                 if (i_25_ == 0 || i_25_ == 1
                                                         || i_25_ == 2 || i_25_ == 3
                                                         || i_25_ == 9)
@@ -115,8 +115,7 @@ final class Class189 {
                                     }
                                 } else {
                                     if (i_15_ == i_9_
-                                            && ((i_14_ ^ 0xffffffff)
-                                            == (i_16_ ^ 0xffffffff))) {
+                                            && (i_16_ == i_14_)) {
                                         Class348_Sub40_Sub30.anInt9388 = i_15_;
                                         Class115.anInt1753 = i_16_;
                                         return true;
@@ -174,9 +173,7 @@ final class Class189 {
                         && ((is[-1 + i_23_][-1 + i_12_ + i_24_] & 0x4e240000)
                         == 0)) {
                     for (int i_26_ = 1; -1 + i_12_ > i_26_; i_26_++) {
-                        if ((is[i_23_ - 1][i_26_ + i_24_] & 0x4fa40000
-                                ^ 0xffffffff)
-                                != -1)
+                        if ((is[i_23_ - 1][i_26_ + i_24_] & 0x4fa40000) != 0)
                             break while_49_;
                     }
                     Class367_Sub11.anIntArray7397[i_21_] = i_15_ - 1;
@@ -194,9 +191,7 @@ final class Class189 {
                         && ((is[i_12_ + i_23_][-1 + (i_24_ - -i_12_)] & 0x78240000)
                         == 0)) {
                     for (int i_27_ = 1; i_12_ - 1 > i_27_; i_27_++) {
-                        if ((is[i_12_ + i_23_][i_24_ - -i_27_] & 0x78e40000
-                                ^ 0xffffffff)
-                                != -1)
+                        if ((is[i_12_ + i_23_][i_24_ - -i_27_] & 0x78e40000) != 0)
                             break while_50_;
                     }
                     Class367_Sub11.anIntArray7397[i_21_] = 1 + i_15_;
@@ -210,10 +205,9 @@ final class Class189 {
             do {
                 if (i_18_ > 0 && r.anIntArrayArray9723[i_17_][-1 + i_18_] == 0
                         && (0x43a40000 & is[i_23_][i_24_ - 1]) == 0
-                        && (0x60e40000 & is[-1 + (i_23_ + i_12_)][i_24_ - 1]
-                        ^ 0xffffffff) == -1) {
+                        && (0x60e40000 & is[-1 + (i_23_ + i_12_)][i_24_ - 1]) == 0) {
                     for (int i_28_ = 1;
-                         (i_28_ ^ 0xffffffff) > (i_12_ - 1 ^ 0xffffffff);
+                         i_12_ - 1 > i_28_;
                          i_28_++) {
                         if ((0x63e40000 & is[i_23_ - -i_28_][-1 + i_24_]) != 0)
                             break while_51_;
@@ -228,10 +222,8 @@ final class Class189 {
             while_52_:
             do {
                 if (i_18_ < -i_12_ + 128
-                        && ((r.anIntArrayArray9723[i_17_][1 + i_18_] ^ 0xffffffff)
-                        == -1)
-                        && ((0x4e240000 & is[i_23_][i_24_ - -i_12_] ^ 0xffffffff)
-                        == -1)
+                        && (r.anIntArrayArray9723[i_17_][1 + i_18_] == 0)
+                        && ((0x4e240000 & is[i_23_][i_24_ - -i_12_]) == 0)
                         && ((0x78240000 & is[-1 + i_12_ + i_23_][i_24_ + i_12_])
                         == 0)) {
                     for (int i_29_ = 1; -1 + i_12_ > i_29_; i_29_++) {
@@ -248,13 +240,11 @@ final class Class189 {
             } while (false);
             while_53_:
             do {
-                if (i_17_ > 0 && (i_18_ ^ 0xffffffff) < -1
+                if (i_17_ > 0 && i_18_ > 0
                         && r.anIntArrayArray9723[i_17_ - 1][-1 + i_18_] == 0
-                        && ((is[i_23_ + -1][-1 + i_24_] & 0x43a40000 ^ 0xffffffff)
-                        == -1)) {
+                        && ((is[i_23_ + -1][-1 + i_24_] & 0x43a40000) == 0)) {
                     for (int i_30_ = 1; i_12_ > i_30_; i_30_++) {
-                        if ((0x4fa40000 & is[-1 + i_23_][i_24_ + (-1 + i_30_)]
-                                ^ 0xffffffff) != -1
+                        if ((0x4fa40000 & is[-1 + i_23_][i_24_ + (-1 + i_30_)]) != 0
                                 || (0x63e40000
                                 & is[i_23_ - (1 + -i_30_)][i_24_ - 1]) != 0)
                             break while_53_;
@@ -269,15 +259,13 @@ final class Class189 {
             } while (false);
             while_54_:
             do {
-                if ((i_17_ ^ 0xffffffff) > (128 - i_12_ ^ 0xffffffff)
+                if (128 - i_12_ > i_17_
                         && i_18_ > 0
                         && r.anIntArrayArray9723[1 + i_17_][i_18_ + -1] == 0
-                        && (0x60e40000 & is[i_23_ + i_12_][-1 + i_24_]
-                        ^ 0xffffffff) == -1) {
+                        && (0x60e40000 & is[i_23_ + i_12_][-1 + i_24_]) == 0) {
                     for (int i_31_ = 1; i_12_ > i_31_; i_31_++) {
                         if ((0x78e40000 & is[i_23_ - -i_12_][i_31_ + (i_24_
-                                - 1)]
-                                ^ 0xffffffff) != -1
+                                - 1)]) != 0
                                 || ((is[i_23_ + i_31_][-1 + i_24_] & 0x63e40000)
                                 != 0))
                             break while_54_;
@@ -293,12 +281,10 @@ final class Class189 {
             while_55_:
             do {
                 if (i_17_ > 0 && i_18_ < -i_12_ + 128
-                        && (r.anIntArrayArray9723[-1 + i_17_][1 + i_18_]
-                        ^ 0xffffffff) == -1
+                        && r.anIntArrayArray9723[-1 + i_17_][1 + i_18_] == 0
                         && (is[i_23_ - 1][i_12_ + i_24_] & 0x4e240000) == 0) {
                     for (int i_32_ = 1; i_32_ < i_12_; i_32_++) {
-                        if ((is[-1 + i_23_][i_32_ + i_24_] & 0x4fa40000
-                                ^ 0xffffffff) != -1
+                        if ((is[-1 + i_23_][i_32_ + i_24_] & 0x4fa40000) != 0
                                 || (is[i_32_ + (i_23_ + -1)][i_24_ - -i_12_]
                                 & 0x7e240000) != 0)
                             break while_55_;
@@ -311,13 +297,12 @@ final class Class189 {
                             = i_25_;
                 }
             } while (false);
-            if ((128 + -i_12_ ^ 0xffffffff) < (i_17_ ^ 0xffffffff)
+            if (i_17_ < 128 + -i_12_
                     && i_18_ < 128 + -i_12_
-                    && ((r.anIntArrayArray9723[i_17_ + 1][1 + i_18_] ^ 0xffffffff)
-                    == -1)
+                    && (r.anIntArrayArray9723[i_17_ + 1][1 + i_18_] == 0)
                     && (0x78240000 & is[i_12_ + i_23_][i_24_ + i_12_]) == 0) {
                 for (int i_33_ = 1;
-                     (i_33_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff); i_33_++) {
+                     i_12_ > i_33_; i_33_++) {
                     if ((0x7e240000 & is[i_23_ + i_33_][i_24_ - -i_12_]) != 0
                             || ((is[i_12_ + i_23_][i_24_ - -i_33_] & 0x78e40000)
                             != 0))

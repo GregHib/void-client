@@ -33,10 +33,10 @@ final class Class241_Sub3 extends Class241 {
         if (i != 10)
             return -56L;
         aLong6169 = l;
-        if (4999999999L > (l_0_ ^ 0xffffffffffffffffL)
-                && -5000000001L < (l_0_ ^ 0xffffffffffffffffL)) {
+        if (l_0_ > -5000000000L
+                && l_0_ < 5000000000L) {
             aLongArray6171[anInt6170] = l_0_;
-            if ((anInt6168 ^ 0xffffffff) > -2)
+            if (anInt6168 < 1)
                 anInt6168++;
             anInt6170 = (1 + anInt6170) % 10;
         }
@@ -54,8 +54,7 @@ final class Class241_Sub3 extends Class241 {
             do {
                 i_3_++;
                 aLong6167 += l;
-            } while (i_3_ < 10 && ((aLong6166 ^ 0xffffffffffffffffL)
-                    < (aLong6167 ^ 0xffffffffffffffffL)));
+            } while (i_3_ < 10 && (aLong6167 < aLong6166));
             if (aLong6167 < aLong6166)
                 aLong6167 = aLong6166;
             return i_3_;

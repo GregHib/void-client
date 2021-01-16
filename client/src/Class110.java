@@ -27,7 +27,7 @@ abstract class Class110 {
         anInt1707++;
         if (bool != true)
             aBoolean1712 = false;
-        return (this.anInt1708 & 0x1 ^ 0xffffffff) != -1;
+        return (this.anInt1708 & 0x1) != 0;
     }
 
     public static void method1030(int i) {
@@ -53,7 +53,7 @@ abstract class Class110 {
                 .getDeclaredFields();
         Field[] fields_2_ = fields;
         for (int i_3_ = 0;
-             (i_3_ ^ 0xffffffff) > (fields_2_.length ^ 0xffffffff); i_3_++) {
+             fields_2_.length > i_3_; i_3_++) {
             Field field = fields_2_[i_3_];
             if ((aClass1714 != null ? aClass1714
                     : (aClass1714 = method1037("Class239")))
@@ -66,7 +66,7 @@ abstract class Class110 {
     final boolean method1033(int i) {
         anInt1703++;
         int i_4_ = -62 % ((i - -5) / 47);
-        return (0x8 & this.anInt1708 ^ 0xffffffff) != -1;
+        return (0x8 & this.anInt1708) != 0;
     }
 
     static final void method1034(int i, Class348_Sub49 class348_sub49,
@@ -97,9 +97,9 @@ abstract class Class110 {
                      i_6_++) {
                     try {
                         int i_7_ = class348_sub49.method3387(255);
-                        if ((i_7_ ^ 0xffffffff) != -1
-                                && (i_7_ ^ 0xffffffff) != -2
-                                && (i_7_ ^ 0xffffffff) != -3) {
+                        if (i_7_ != 0
+                                && i_7_ != 1
+                                && i_7_ != 2) {
                             if (i_7_ == 3 || i_7_ == 4) {
                                 String string
                                         = class348_sub49.method3377((byte) 89);
@@ -129,8 +129,7 @@ abstract class Class110 {
                                         = i_7_;
                                 Class[] var_classes = new Class[i_9_];
                                 for (int i_13_ = 0;
-                                     ((i_9_ ^ 0xffffffff)
-                                             < (i_13_ ^ 0xffffffff));
+                                     (i_13_ < i_9_);
                                      i_13_++)
                                     var_classes[i_13_]
                                             = (Class348_Sub40_Sub1.method3052
@@ -152,7 +151,7 @@ abstract class Class110 {
                             String string_14_
                                     = class348_sub49.method3377((byte) 109);
                             int i_15_ = 0;
-                            if ((i_7_ ^ 0xffffffff) == -2)
+                            if (i_7_ == 1)
                                 i_15_ = class348_sub49.method3385((byte) -126);
                             class348_sub48
                                     .anIntArray7132[i_6_]

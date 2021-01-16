@@ -41,10 +41,9 @@ final class Class348_Sub40_Sub31 extends Class348_Sub40 {
             int[] is_8_ = is[0];
             int[] is_9_ = is[1];
             int[] is_10_ = is[2];
-            for (int i_11_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_11_ ^ 0xffffffff)); i_11_++) {
+            for (int i_11_ = 0; (i_11_ < Class348_Sub40_Sub6.anInt9139); i_11_++) {
                 int i_12_;
-                if ((i_1_ ^ 0xffffffff) >= -1)
+                if (i_1_ <= 0)
                     i_12_ = 0;
                 else {
                     int i_13_ = i_11_ % i_1_;
@@ -92,7 +91,7 @@ final class Class348_Sub40_Sub31 extends Class348_Sub40 {
             int i_17_ = Class348_Sub40_Sub6.anInt9139 / anInt9405;
             int i_18_ = Class286_Sub2.anInt6212 / anInt9410;
             int[] is_19_;
-            if ((i_18_ ^ 0xffffffff) < -1) {
+            if (i_18_ > 0) {
                 int i_20_ = i % i_18_;
                 is_19_
                         = this.method3048(i_20_ * Class286_Sub2.anInt6212 / i_18_,

@@ -19,9 +19,9 @@ final class Class239_Sub15 extends Class239 {
         if (i_0_ != 10144)
             return null;
         anInt6004++;
-        if ((i ^ 0xffffffff) != -1) {
-            if ((i ^ 0xffffffff) != -2) {
-                if ((i ^ 0xffffffff) == -3) {
+        if (i != 0) {
+            if (i != 1) {
+                if (i == 2) {
                     if ((double) Class75.aFloat1247 == 3.0)
                         return Class176.aClass323_2333;
                     if ((double) Class75.aFloat1247 == 4.0)
@@ -63,7 +63,7 @@ final class Class239_Sub15 extends Class239 {
                 < 96)
             this.anInt3138 = 0;
         if (this.anInt3138 < 0
-                || (this.anInt3138 ^ 0xffffffff) < -3)
+                || this.anInt3138 > 2)
             this.anInt3138 = method1710(20014);
     }
 
@@ -89,7 +89,7 @@ final class Class239_Sub15 extends Class239 {
         int i_7_ = -i_3_ + i_4_;
         int i_8_ = i_5_ + -i;
         if ((i_8_ ^ 0xffffffff) != i_2_) {
-            if ((i_7_ ^ 0xffffffff) == -1) {
+            if (i_7_ == 0) {
                 Class12.method223(i_5_, i_6_, i_3_, i, (byte) 47);
                 return;
             }
@@ -98,7 +98,7 @@ final class Class239_Sub15 extends Class239 {
                 Class332.method2641(i_4_, i_3_, -117, i, i_6_);
             return;
         }
-        if ((i_7_ ^ 0xffffffff) > -1)
+        if (i_7_ < 0)
             i_7_ = -i_7_;
         if (i_8_ < 0)
             i_8_ = -i_8_;
@@ -111,7 +111,7 @@ final class Class239_Sub15 extends Class239 {
             i_3_ = i_9_;
             i_4_ = i_10_;
         }
-        if ((i ^ 0xffffffff) < (i_5_ ^ 0xffffffff)) {
+        if (i_5_ < i) {
             int i_11_ = i;
             i = i_5_;
             int i_12_ = i_3_;
@@ -130,7 +130,7 @@ final class Class239_Sub15 extends Class239 {
             for (int i_18_ = i; i_18_ <= i_5_; i_18_++) {
                 i_16_ += i_15_;
                 Class17.anIntArrayArray255[i_13_][i_18_] = i_6_;
-                if ((i_16_ ^ 0xffffffff) < -1) {
+                if (i_16_ > 0) {
                     i_13_ += i_17_;
                     i_16_ -= i_14_;
                 }
@@ -158,10 +158,8 @@ final class Class239_Sub15 extends Class239 {
         anInt5996++;
         if (i != 20014)
             method1782(-76, -103);
-        if ((this.aClass348_Sub51_3136.method3428((byte) -105)
-                .method1458(-23688)
-                ^ 0xffffffff)
-                > -97)
+        if (this.aClass348_Sub51_3136.method3428((byte) -105)
+                .method1458(-23688) < 96)
             return 0;
         return 2;
     }

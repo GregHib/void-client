@@ -43,7 +43,7 @@ final class Class346_Sub1 extends Class346
         if (i_0_ >= -120)
             method2700((byte) 119);
         anInt6539++;
-        if ((i ^ 0xffffffff) > -1 || (i ^ 0xffffffff) <= -113)
+        if (i < 0 || i >= 112)
             return false;
         return aBooleanArray6543[i];
     }
@@ -73,8 +73,7 @@ final class Class346_Sub1 extends Class346
         int i_3_ = keyevent.getKeyCode();
         if (i_3_ != 0) {
             if (i_3_ >= 0
-                    && (i_3_ ^ 0xffffffff) > (Class285_Sub2.anIntArray8507.length
-                    ^ 0xffffffff)) {
+                    && Class285_Sub2.anIntArray8507.length > i_3_) {
                 i_3_ = Class285_Sub2.anIntArray8507[i_3_];
                 if (i_2_ == 0 && (i_3_ & 0x80) != 0)
                     i_3_ = 0;
@@ -117,7 +116,7 @@ final class Class346_Sub1 extends Class346
     public final synchronized void keyTyped(KeyEvent keyevent) {
         anInt6527++;
         char c = keyevent.getKeyChar();
-        if ((c ^ 0xffffffff) != -1 && Class122.method1089(-125, c)) {
+        if (c != 0 && Class122.method1089(-125, c)) {
             method2702(-1, 128, c, 3);
             keyevent.consume();
         }
@@ -182,10 +181,8 @@ final class Class346_Sub1 extends Class346
                     class348_sub11.anInt4771 = 2;
                     aClass262_6541.method1999(class348_sub11, -20180);
                 } else if (class348_sub11.anInt4771 != 1) {
-                    if ((class348_sub11.anInt4771
-                            ^ 0xffffffff)
-                            == 0) {
-                        for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -113;
+                    if (class348_sub11.anInt4771 == -1) {
+                        for (int i_11_ = 0; i_11_ < 112;
                              i_11_++) {
                             if (aBooleanArray6543[i_11_]) {
                                 Class348_Sub11 class348_sub11_12_

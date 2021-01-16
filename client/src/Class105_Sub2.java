@@ -34,13 +34,13 @@ final class Class105_Sub2 extends Class105 {
 
     static final char method990(char c, byte i) {
         anInt8444++;
-        if ((c ^ 0xffffffff) == -199)
+        if (c == 198)
             return 'E';
-        if ((c ^ 0xffffffff) == -231)
+        if (c == 230)
             return 'e';
         if (c == 223)
             return 's';
-        if ((c ^ 0xffffffff) == -339)
+        if (c == 338)
             return 'E';
         if (c == 339)
             return 'e';
@@ -223,8 +223,8 @@ final class Class105_Sub2 extends Class105 {
         anInt8446 = i_41_;
         anInt8426++;
         anInt8432 = i_43_;
-        aBoolean8427 = (anInt8447 != 0 || (anInt8446 ^ 0xffffffff) != -1
-                || (anInt8449 ^ 0xffffffff) != -1 || anInt8432 != 0);
+        aBoolean8427 = (anInt8447 != 0 || anInt8446 != 0
+                || anInt8449 != 0 || anInt8432 != 0);
     }
 
     private final void method991(byte i) {
@@ -411,9 +411,9 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3729(34479, (byte) -47, 7681);
         aHa_Sub2_8430.method3762(34166, 768, (byte) -87, 1);
         if (anInt8429 != 0) {
-            if ((anInt8429 ^ 0xffffffff) == -2)
+            if (anInt8429 == 1)
                 aHa_Sub2_8430.method3749(0.0F, 0.5F, 0.5F, (byte) 64, 1.0F);
-            else if ((anInt8429 ^ 0xffffffff) != -3) {
+            else if (anInt8429 != 2) {
                 if (anInt8429 == 3)
                     aHa_Sub2_8430.method3749(0.0F, 128.5F, 128.5F, (byte) 63,
                             128.5F);
@@ -506,7 +506,7 @@ final class Class105_Sub2 extends Class105 {
                 }
                 i_86_ += i_84_;
             }
-            if ((i_81_ ^ 0xffffffff) < (i_86_ ^ 0xffffffff)) {
+            if (i_86_ < i_81_) {
                 float f = ((aClass258_Sub3_Sub1_8434
                         .aFloat9938)
                         * (float) (aClass258_Sub3_Sub1_8434.anInt9939
@@ -516,7 +516,7 @@ final class Class105_Sub2 extends Class105 {
                         = i + (aClass258_Sub3_Sub1_8434
                         .anInt9940);
                 int i_90_ = i;
-                while ((i_89_ ^ 0xffffffff) >= (i_80_ ^ 0xffffffff)) {
+                while (i_80_ >= i_89_) {
                     OpenGL.glTexCoord2f(0.0F,
                             aClass258_Sub3_Sub1_8434.aFloat9938);
                     OpenGL.glVertex2i(i_90_, i_86_);

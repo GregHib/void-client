@@ -45,7 +45,7 @@ final class Class59_Sub1_Sub2 extends Class59_Sub1 {
 
     static {
         int i = 0;
-        for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -121; i_7_++) {
+        for (int i_7_ = 0; i_7_ < 120; i_7_++) {
             int i_8_ = i_7_ - -1;
             int i_9_ = (int) (300.0 * Math.pow(2.0, (double) i_8_ / 7.0)
                     + (double) i_8_);

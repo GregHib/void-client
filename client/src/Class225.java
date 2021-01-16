@@ -65,16 +65,14 @@ final class Class225 {
     final Class101[] method1618(ha var_ha, int i) {
         anInt2952++;
         if (aClass101Array2925 != null
-                && (anInt2942 ^ 0xffffffff) == (var_ha.anInt4567
-                ^ 0xffffffff))
+                && var_ha.anInt4567 == anInt2942)
             return aClass101Array2925;
         if (this.anIntArrayArray2939 == null)
             return null;
         aClass101Array2925
                 = new Class101[this.anIntArrayArray2939.length];
         for (int i_0_ = i;
-             ((i_0_ ^ 0xffffffff)
-                     > (this.anIntArrayArray2939.length ^ 0xffffffff));
+             (this.anIntArrayArray2939.length > i_0_);
              i_0_++) {
             int i_1_ = 0;
             int i_2_ = 0;
@@ -93,13 +91,13 @@ final class Class225 {
                 i_6_ = (this.anIntArrayArray2939[i_0_][5]
                         << 285198467);
             }
-            if ((i_1_ ^ 0xffffffff) != -1 || i_2_ != 0 || i_3_ != 0
+            if (i_1_ != 0 || i_2_ != 0 || i_3_ != 0
                     || i_4_ != 0 || i_5_ != 0 || i_6_ != 0) {
                 Class101 class101
                         = aClass101Array2925[i_0_] = var_ha.method3654();
                 if (i_6_ != 0)
                     class101.method908(i_6_);
-                if ((i_4_ ^ 0xffffffff) != -1)
+                if (i_4_ != 0)
                     class101.method900(i_4_);
                 if (i_5_ != 0)
                     class101.method896(i_5_);
@@ -119,7 +117,7 @@ final class Class225 {
     final void method1620(Class348_Sub49 class348_sub49, int i) {
         for (; ; ) {
             int i_8_ = class348_sub49.method3387(255);
-            if ((i_8_ ^ 0xffffffff) == -1)
+            if (i_8_ == 0)
                 break;
             method1622(class348_sub49, 48, i_8_);
         }
@@ -148,23 +146,23 @@ final class Class225 {
                                   int i_12_) {
         anInt2903++;
         if (i_12_ != 1) {
-            if ((i_12_ ^ 0xffffffff) != -3) {
+            if (i_12_ != 2) {
                 if (i_12_ == 3)
                     this.anInt2924
                             = class348_sub49.method3330(i + 842397896);
-                else if ((i_12_ ^ 0xffffffff) == -5)
+                else if (i_12_ == 4)
                     this.anInt2958
                             = class348_sub49.method3330(842397944);
-                else if ((i_12_ ^ 0xffffffff) == -6)
+                else if (i_12_ == 5)
                     this.anInt2947
                             = class348_sub49.method3330(842397944);
-                else if ((i_12_ ^ 0xffffffff) != -7) {
-                    if ((i_12_ ^ 0xffffffff) == -8)
+                else if (i_12_ != 6) {
+                    if (i_12_ == 7)
                         this.anInt2920
                                 = class348_sub49.method3330(842397944);
                     else if (i_12_ != 8) {
                         if (i_12_ != 9) {
-                            if ((i_12_ ^ 0xffffffff) == -27) {
+                            if (i_12_ == 26) {
                                 this.anInt2932
                                         = (short) (class348_sub49
                                         .method3387(i ^ 0xcf)
@@ -180,28 +178,28 @@ final class Class225 {
                                 int i_13_ = class348_sub49.method3387(255);
                                 this.anIntArrayArray2939[i_13_]
                                         = new int[6];
-                                for (int i_14_ = 0; (i_14_ ^ 0xffffffff) > -7;
+                                for (int i_14_ = 0; i_14_ < 6;
                                      i_14_++)
                                     this.anIntArrayArray2939
                                             [i_13_][i_14_]
                                             = class348_sub49.method3372(13638);
-                            } else if ((i_12_ ^ 0xffffffff) != -29) {
-                                if ((i_12_ ^ 0xffffffff) != -30) {
+                            } else if (i_12_ != 28) {
+                                if (i_12_ != 29) {
                                     if (i_12_ == 30)
                                         this.anInt2917
                                                 = class348_sub49
                                                 .method3330(842397944);
                                     else if (i_12_ != 31) {
-                                        if ((i_12_ ^ 0xffffffff) == -33)
+                                        if (i_12_ == 32)
                                             this.anInt2935
                                                     = class348_sub49
                                                     .method3330(842397944);
-                                        else if ((i_12_ ^ 0xffffffff) == -34)
+                                        else if (i_12_ == 33)
                                             this.anInt2950
                                                     = class348_sub49
                                                     .method3372(13638);
-                                        else if ((i_12_ ^ 0xffffffff) != -35) {
-                                            if ((i_12_ ^ 0xffffffff) != -36) {
+                                        else if (i_12_ != 34) {
+                                            if (i_12_ != 35) {
                                                 if (i_12_ != 36) {
                                                     if (i_12_ == 37)
                                                         this
@@ -210,12 +208,8 @@ final class Class225 {
                                                                 .method3387
                                                                         (255));
                                                     else if (i_12_ != 38) {
-                                                        if ((i_12_
-                                                                ^ 0xffffffff)
-                                                                != -40) {
-                                                            if ((i_12_
-                                                                    ^ 0xffffffff)
-                                                                    == -41)
+                                                        if (i_12_ != 39) {
+                                                            if (i_12_ == 40)
                                                                 this
                                                                         .anInt2938
                                                                         = (class348_sub49
@@ -231,30 +225,24 @@ final class Class225 {
                                                                                         + 842397896));
                                                             else if (i_12_
                                                                     != 42) {
-                                                                if ((i_12_
-                                                                        ^ 0xffffffff)
-                                                                        == -44)
+                                                                if (i_12_ == 43)
                                                                     this
                                                                             .anInt2909
                                                                             = (class348_sub49.method3330
                                                                             (842397944));
-                                                                else if ((i_12_
-                                                                        ^ 0xffffffff)
-                                                                        != -45) {
+                                                                else if (i_12_ != 44) {
                                                                     if (i_12_
                                                                             != 45) {
-                                                                        if ((i_12_
-                                                                                ^ 0xffffffff)
-                                                                                != -47) {
-                                                                            if ((i_12_ ^ 0xffffffff) == -48)
+                                                                        if (i_12_ != 46) {
+                                                                            if (i_12_ == 47)
                                                                                 this.anInt2927 = class348_sub49.method3330(842397944);
                                                                             else if (i_12_ != 48) {
-                                                                                if ((i_12_ ^ 0xffffffff) == -50)
+                                                                                if (i_12_ == 49)
                                                                                     this.anInt2911 = class348_sub49.method3330(842397944);
-                                                                                else if ((i_12_ ^ 0xffffffff) == -51)
+                                                                                else if (i_12_ == 50)
                                                                                     this.anInt2934 = class348_sub49.method3330(842397944);
-                                                                                else if ((i_12_ ^ 0xffffffff) != -52) {
-                                                                                    if ((i_12_ ^ 0xffffffff) == -53) {
+                                                                                else if (i_12_ != 51) {
+                                                                                    if (i_12_ == 52) {
                                                                                         int i_15_ = class348_sub49.method3387(i ^ 0xcf);
                                                                                         this.anIntArray2915 = new int[i_15_];
                                                                                         this.anIntArray2929 = new int[i_15_];
@@ -266,7 +254,7 @@ final class Class225 {
                                                                                         }
                                                                                     } else if (i_12_ == 53)
                                                                                         this.aBoolean2913 = false;
-                                                                                    else if ((i_12_ ^ 0xffffffff) == -55) {
+                                                                                    else if (i_12_ == 54) {
                                                                                         this.anInt2912 = class348_sub49.method3387(255) << -1300429466;
                                                                                         this.anInt2943 = class348_sub49.method3387(i + 207) << -59678202;
                                                                                     } else if (i_12_ == 55) {
@@ -341,10 +329,8 @@ final class Class225 {
                                 for (int i_21_ = 0; i_21_ < 12; i_21_++) {
                                     this.anIntArray2906[i_21_]
                                             = class348_sub49.method3387(255);
-                                    if (((this.anIntArray2906
-                                            [i_21_])
-                                            ^ 0xffffffff)
-                                            == -256)
+                                    if ((this.anIntArray2906
+                                            [i_21_]) == 255)
                                         this.anIntArray2906[i_21_]
                                                 = -1;
                                 }
@@ -367,7 +353,7 @@ final class Class225 {
             this.anInt2951 = class348_sub49.method3330(842397944);
             if (this.anInt2951 == 65535)
                 this.anInt2951 = -1;
-            if ((this.anInt2918 ^ 0xffffffff) == -65536)
+            if (this.anInt2918 == 65535)
                 this.anInt2918 = -1;
         }
         if (i != 48)
@@ -378,15 +364,14 @@ final class Class225 {
         if (i_22_ >= -32)
             method1618(null, 16);
         anInt2902++;
-        if ((i ^ 0xffffffff) == 0)
+        if (i == -1)
             return false;
-        if ((i ^ 0xffffffff) == (this.anInt2918 ^ 0xffffffff))
+        if (this.anInt2918 == i)
             return true;
         if (this.anIntArray2915 != null) {
             for (int i_23_ = 0;
                  this.anIntArray2915.length > i_23_; i_23_++) {
-                if ((i ^ 0xffffffff)
-                        == (this.anIntArray2915[i_23_] ^ 0xffffffff))
+                if (this.anIntArray2915[i_23_] == i)
                     return true;
             }
         }

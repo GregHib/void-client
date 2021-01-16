@@ -111,7 +111,7 @@ final class Class267 {
             Class218 class218
                     = Class2.aClass141_117
                     .method1173((byte) 31, class51.anInt875);
-            if ((class218.anInt2853 ^ 0xffffffff) != 0) {
+            if (class218.anInt2853 != -1) {
                 if (class51.aBoolean912) {
                     i_1_ += class51.anInt923;
                     i_1_ &= 0x3;

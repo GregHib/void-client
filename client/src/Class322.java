@@ -31,9 +31,8 @@ final class Class322 {
                 = Class258_Sub4.method1974((byte) 4, i, bool);
         if (class348_sub13 == null)
             return -1;
-        if ((i_0_ ^ 0xffffffff) > -1
-                || (class348_sub13.anIntArray6757.length
-                ^ 0xffffffff) >= (i_0_ ^ 0xffffffff))
+        if (i_0_ < 0
+                || i_0_ >= class348_sub13.anIntArray6757.length)
             return -1;
         return class348_sub13.anIntArray6757[i_0_];
     }
@@ -42,7 +41,7 @@ final class Class322 {
         anInt4018++;
         if (anInt4024 != anInt4020)
             throw new RuntimeException("Can only retrieve a full image cache");
-        for (int i_2_ = i; (anInt4020 ^ 0xffffffff) < (i_2_ ^ 0xffffffff);
+        for (int i_2_ = i; i_2_ < anInt4020;
              i_2_++)
             aClass348_Sub24Array4033[i_2_] = Class341.aClass348_Sub24_4226;
         return anIntArrayArrayArray4029;
@@ -54,7 +53,7 @@ final class Class322 {
         anInt4030++;
         if (Class312.anInt3931 == 1 || Class312.anInt3931 == 3
                 || (Class312.anInt3931 != Class83.anInt1447
-                && ((Class312.anInt3931 ^ 0xffffffff) == -1
+                && (Class312.anInt3931 == 0
                 || Class83.anInt1447 == 0))) {
             Class348_Sub32.anInt6930 = 0;
             Class150.anInt2057 = 0;
@@ -77,14 +76,10 @@ final class Class322 {
         anInt4028++;
         int i_3_ = -1;
         int i_4_ = 0;
-        if ((class318_sub1_sub3_sub3.anInt10239
-                ^ 0xffffffff)
-                < (Class367_Sub11.anInt7396 ^ 0xffffffff))
+        if (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10239)
             Class239_Sub26.method1834(class318_sub1_sub3_sub3, (byte) -16);
-        else if (((class318_sub1_sub3_sub3
-                .anInt10300)
-                ^ 0xffffffff)
-                <= (Class367_Sub11.anInt7396 ^ 0xffffffff))
+        else if (Class367_Sub11.anInt7396 <= (class318_sub1_sub3_sub3
+                .anInt10300))
             Class110_Sub1.method1041(-1, class318_sub1_sub3_sub3);
         else {
             Class219.method1600(false, 0, class318_sub1_sub3_sub3);
@@ -93,16 +88,10 @@ final class Class322 {
         }
         if (bool != false)
             aClass114_4027 = null;
-        if (((class318_sub1_sub3_sub3.anInt6377 ^ 0xffffffff)
-                > -513)
+        if ((class318_sub1_sub3_sub3.anInt6377 < 512)
                 || class318_sub1_sub3_sub3.anInt6388 < 512
-                || ((class318_sub1_sub3_sub3.anInt6377
-                ^ 0xffffffff)
-                <= (-512 + Class367_Sub4.anInt7319 * 512 ^ 0xffffffff))
-                || ((class318_sub1_sub3_sub3.anInt6388
-                ^ 0xffffffff)
-                <= (-512 + Class348_Sub40_Sub3.anInt9109 * 512
-                ^ 0xffffffff))) {
+                || (-512 + Class367_Sub4.anInt7319 * 512 <= class318_sub1_sub3_sub3.anInt6377)
+                || (-512 + Class348_Sub40_Sub3.anInt9109 * 512 <= class318_sub1_sub3_sub3.anInt6388)) {
             class318_sub1_sub3_sub3.anInt10291
                     = -1;
             class318_sub1_sub3_sub3.anInt10300 = 0;
@@ -128,11 +117,8 @@ final class Class322 {
         if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                 == class318_sub1_sub3_sub3)
                 && (class318_sub1_sub3_sub3.anInt6377 < 6144
-                || (class318_sub1_sub3_sub3.anInt6388
-                ^ 0xffffffff) > -6145
-                || ((512 * (Class367_Sub4.anInt7319 + -12) ^ 0xffffffff)
-                >= (class318_sub1_sub3_sub3.anInt6377
-                ^ 0xffffffff))
+                || class318_sub1_sub3_sub3.anInt6388 < 6144
+                || (class318_sub1_sub3_sub3.anInt6377 >= 512 * (Class367_Sub4.anInt7319 + -12))
                 || (512 * (Class348_Sub40_Sub3.anInt9109 - 12)
                 <= class318_sub1_sub3_sub3.anInt6388))) {
             class318_sub1_sub3_sub3.anInt10291
@@ -172,16 +158,16 @@ final class Class322 {
         if (i >= -75)
             method2554((byte) -61);
         if (anInt4020 != anInt4024) {
-            if ((anInt4020 ^ 0xffffffff) == -2) {
+            if (anInt4020 == 1) {
                 this.aBoolean4035
-                        = (anInt4022 ^ 0xffffffff) != (i_6_ ^ 0xffffffff);
+                        = i_6_ != anInt4022;
                 anInt4022 = i_6_;
                 return anIntArrayArrayArray4029[0];
             }
             Class348_Sub24 class348_sub24 = aClass348_Sub24Array4033[i_6_];
             if (class348_sub24 == null) {
                 this.aBoolean4035 = true;
-                if ((anInt4025 ^ 0xffffffff) <= (anInt4020 ^ 0xffffffff)) {
+                if (anInt4020 <= anInt4025) {
                     Class348_Sub24 class348_sub24_7_
                             = (Class348_Sub24) aClass262_4021.method1993(-126);
                     class348_sub24
@@ -212,7 +198,7 @@ final class Class322 {
         anInt4019++;
         if (i != 6144)
             anIntArrayArrayArray4029 = null;
-        for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > (anInt4020 ^ 0xffffffff);
+        for (int i_8_ = 0; anInt4020 > i_8_;
              i_8_++) {
             anIntArrayArrayArray4029[i_8_][0] = null;
             anIntArrayArrayArray4029[i_8_][1] = null;

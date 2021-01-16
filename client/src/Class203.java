@@ -33,7 +33,7 @@ final class Class203 {
         int i_5_ = Class90.anInt1517 + i;
         if (Class147.aClass357ArrayArrayArray2029 != null && i_2_ >= 0
                 && i >= 0
-                && (i_2_ ^ 0xffffffff) > (Class367_Sub4.anInt7319 ^ 0xffffffff)
+                && Class367_Sub4.anInt7319 > i_2_
                 && Class348_Sub40_Sub3.anInt9109 > i
                 && (Class316.aClass348_Sub51_3959
                 .aClass239_Sub27_7261.method1840(-32350) != 0
@@ -82,10 +82,7 @@ final class Class203 {
                                         .aClass262_6998.method1990((byte) 55));
                         if (class348_sub34_6_ == null)
                             break;
-                        if ((class318_sub1_sub2_sub1.anInt10181
-                                ^ 0xffffffff)
-                                != (class348_sub34_6_.anInt6973
-                                ^ 0xffffffff)) {
+                        if (class348_sub34_6_.anInt6973 != class318_sub1_sub2_sub1.anInt10181) {
                             class318_sub1_sub2_sub1
                                     .anInt10189
                                     = (class348_sub34_6_
@@ -102,17 +99,11 @@ final class Class203 {
                                                 .method1990((byte) 55));
                                 if (class348_sub34_7_ == null)
                                     break;
-                                if ((((class348_sub34_7_
-                                        .anInt6973)
-                                        ^ 0xffffffff)
-                                        != (class318_sub1_sub2_sub1.anInt10181
-                                        ^ 0xffffffff))
-                                        && (((class348_sub34_7_
-                                        .anInt6973)
-                                        ^ 0xffffffff)
-                                        != ((class318_sub1_sub2_sub1
-                                        .anInt10189)
-                                        ^ 0xffffffff))) {
+                                if ((class318_sub1_sub2_sub1.anInt10181 != (class348_sub34_7_
+                                        .anInt6973))
+                                        && ((class318_sub1_sub2_sub1
+                                        .anInt10189) != (class348_sub34_7_
+                                        .anInt6973))) {
                                     class318_sub1_sub2_sub1.anInt10180
                                             = (class348_sub34_7_
                                             .anInt6973);

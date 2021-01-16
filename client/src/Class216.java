@@ -13,7 +13,7 @@ final class Class216 implements Interface13 {
 
     static final void method1583(byte i) {
         anInt4977++;
-        if ((r.anInt9721 ^ 0xffffffff) != 0) {
+        if (r.anInt9721 != -1) {
             int i_0_ = Class258_Sub4.aClass373_8552.method3597(true);
             int i_1_ = Class258_Sub4.aClass373_8552.method3594((byte) 72);
             Class348_Sub45 class348_sub45

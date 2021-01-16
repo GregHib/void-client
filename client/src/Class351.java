@@ -18,8 +18,7 @@ final class Class351 {
         anInt4324++;
         if (string == null)
             return false;
-        for (int i_0_ = 0; ((Class348_Sub42_Sub12.anInt9604 ^ 0xffffffff)
-                < (i_0_ ^ 0xffffffff)); i_0_++) {
+        for (int i_0_ = 0; (i_0_ < Class348_Sub42_Sub12.anInt9604); i_0_++) {
             if (string.equalsIgnoreCase(Class122.aStringArray1808[i_0_]))
                 return true;
             if (string.equalsIgnoreCase(aa_Sub2.aStringArray5197[i_0_]))

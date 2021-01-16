@@ -61,7 +61,7 @@ final class Class253 {
         anInt3255++;
         for (; ; ) {
             int i_11_ = class348_sub49.method3387(255);
-            if ((i_11_ ^ 0xffffffff) == -1)
+            if (i_11_ == 0)
                 break;
             method1923(i_11_, 4, class348_sub49);
         }
@@ -94,7 +94,7 @@ final class Class253 {
         if (i_13_ == 4) {
             if (i != 1) {
                 if (i != 2) {
-                    if ((i ^ 0xffffffff) == -4)
+                    if (i == 3)
                         this.anInt3244
                                 = class348_sub49.method3330(i_13_ ^ 0x3235f8fc);
                     else if (i == 4)

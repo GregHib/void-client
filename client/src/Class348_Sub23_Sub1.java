@@ -159,13 +159,13 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
 
     final void method2964(byte i, OggPacket oggpacket) {
         anInt8990++;
-        if ((this.anInt6868 ^ 0xffffffff) > -4) {
+        if (this.anInt6868 < 3) {
             int i_7_ = aVorbisInfo9006.headerIn(aVorbisComment9002, oggpacket);
             if (i_7_ < 0)
                 throw new IllegalStateException(String.valueOf(i_7_));
             if (this.anInt6868 == 2) {
                 if (aVorbisInfo9006.channels > 2
-                        || (aVorbisInfo9006.channels ^ 0xffffffff) > -2)
+                        || aVorbisInfo9006.channels < 1)
                     throw new RuntimeException(String.valueOf(aVorbisInfo9006
                             .channels));
                 aDSPState8993 = new DSPState(aVorbisInfo9006);

@@ -25,18 +25,18 @@ final class Class318_Sub4 extends Class318 {
                 for (int i_4_ = 0; i > i_4_; i_4_++) {
                     int i_5_ = is[i_4_] + i_2_ * i_4_;
                     for (int i_6_ = 0;
-                         (i_6_ ^ 0xffffffff) > (is_1_[i_4_] ^ 0xffffffff);
+                         is_1_[i_4_] > i_6_;
                          i_6_++)
                         is_3_[i_5_++] = (byte) -1;
                 }
                 return new aa_Sub2(var_ha_Sub3, i_2_, i, is_3_);
             }
             int[] is_7_ = new int[i * i_2_];
-            for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > (i ^ 0xffffffff);
+            for (int i_8_ = 0; i > i_8_;
                  i_8_++) {
                 int i_9_ = is[i_8_] + i_8_ * i_2_;
                 for (int i_10_ = 0;
-                     (is_1_[i_8_] ^ 0xffffffff) < (i_10_ ^ 0xffffffff);
+                     i_10_ < is_1_[i_8_];
                      i_10_++)
                     is_7_[i_9_++] = -16777216;
             }
@@ -105,13 +105,12 @@ final class Class318_Sub4 extends Class318 {
         class348_sub42_sub19.aStringArray9692
                 = new String[i_13_];
         int i_19_ = 0;
-        while ((i_12_ ^ 0xffffffff)
-                < (class348_sub49.anInt7197 ^ 0xffffffff)) {
+        while (class348_sub49.anInt7197 < i_12_) {
             int i_20_ = class348_sub49.method3330(842397944);
-            if ((i_20_ ^ 0xffffffff) != -4) {
-                if (i_20_ >= 100 || (i_20_ ^ 0xffffffff) == -22
-                        || (i_20_ ^ 0xffffffff) == -39
-                        || (i_20_ ^ 0xffffffff) == -40)
+            if (i_20_ != 3) {
+                if (i_20_ >= 100 || i_20_ == 21
+                        || i_20_ == 38
+                        || i_20_ == 39)
                     class348_sub42_sub19
                             .anIntArray9694[i_19_]
                             = class348_sub49.method3387(255);
@@ -143,14 +142,14 @@ final class Class318_Sub4 extends Class318 {
         if (i_24_ != -16259)
             method2501(-113, null, null, (byte) 40, null, -110);
         int i_29_ = -((i_22_ + i_23_ + -1) / i_22_);
-        for (int i_30_ = i_28_; (i_30_ ^ 0xffffffff) > -1; i_30_++) {
+        for (int i_30_ = i_28_; i_30_ < 0; i_30_++) {
             for (int i_31_ = i_29_; i_31_ < 0; i_31_++) {
-                if ((is[i_21_] ^ 0xffffffff) == -1)
+                if (is[i_21_] == 0)
                     return true;
                 i_21_ += i_22_;
             }
             i_21_ -= i_27_;
-            if ((is[-1 + i_21_] ^ 0xffffffff) == -1)
+            if (is[-1 + i_21_] == 0)
                 return true;
             i_21_ += i;
         }

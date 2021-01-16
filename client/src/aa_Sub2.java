@@ -28,10 +28,10 @@ final class aa_Sub2 extends aa {
         anInt5195++;
         if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351)
             return false;
-        if ((Class225.anInt2946 ^ 0xffffffff) > -101)
+        if (Class225.anInt2946 < 100)
             return false;
         int i_3_ = Class354.anIntArrayArrayArray4356[i][i_0_][i_2_];
-        if ((-Class234.anInt3049 ^ 0xffffffff) == (i_3_ ^ 0xffffffff))
+        if (i_3_ == -Class234.anInt3049)
             return false;
         if (Class234.anInt3049 == i_3_)
             return true;
@@ -72,8 +72,7 @@ final class aa_Sub2 extends aa {
                                 int i_14_) {
         anInt5194++;
         if (i_9_ < 512 || i_11_ < 512
-                || (i_9_ ^ 0xffffffff) < ((-2 + Class367_Sub4.anInt7319) * 512
-                ^ 0xffffffff)
+                || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_
                 || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_)
             Class239_Sub21.anIntArray6062[0]
                     = Class239_Sub21.anIntArray6062[1] = -1;

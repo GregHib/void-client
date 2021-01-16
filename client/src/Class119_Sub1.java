@@ -55,7 +55,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
 
     static final void method1077(ha var_ha, byte i) {
         anInt4700++;
-        if (((Class73.anInt4776 ^ 0xffffffff) <= -3 || r.aBoolean9722)
+        if ((Class73.anInt4776 >= 2 || r.aBoolean9722)
                 && Class289.aClass46_3701 == null) {
             if (i >= -71)
                 method1077(null, (byte) -41);

@@ -44,7 +44,7 @@ class Class318 {
 
     static {
         for (int i = 0;
-             (i ^ 0xffffffff) > (aClass243Array3974.length ^ 0xffffffff); i++)
+             aClass243Array3974.length > i; i++)
             aClass243Array3974[i] = new Class243();
         aClass304_3977 = new Class304(1);
     }

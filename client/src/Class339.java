@@ -40,7 +40,7 @@ final class Class339 implements Runnable {
             for (/**/; string != null; string = bufferedreader.readLine())
                 class179.method1364(-1, string);
             String[] strings = class179.method1361(63);
-            if ((strings.length % 3 ^ 0xffffffff) != -1)
+            if (strings.length % 3 != 0)
                 return;
             aClass295Array4204 = new Class295[strings.length / 3];
             for (int i = 0; i < strings.length; i += 3)
@@ -57,8 +57,8 @@ final class Class339 implements Runnable {
         anInt4200++;
         int i_5_ = i_4_ - i;
         int i_6_ = -i_2_ + i_3_;
-        if ((i_5_ ^ 0xffffffff) != -1) {
-            if ((i_6_ ^ 0xffffffff) == -1) {
+        if (i_5_ != 0) {
+            if (i_6_ == 0) {
                 Class5_Sub2.method196(true, i_4_, i_1_, i, i_2_);
                 return;
             }
@@ -74,7 +74,7 @@ final class Class339 implements Runnable {
         if (i < Class369.anInt4960) {
             i_9_ = (i_7_ * Class369.anInt4960 >> -28340756) + i_8_;
             i_10_ = Class369.anInt4960;
-        } else if ((Class113.anInt1745 ^ 0xffffffff) > (i ^ 0xffffffff)) {
+        } else if (i > Class113.anInt1745) {
             i_9_ = i_8_ - -(Class113.anInt1745 * i_7_ >> -1080981940);
             i_10_ = Class113.anInt1745;
         } else {
@@ -86,7 +86,7 @@ final class Class339 implements Runnable {
         int i_11_;
         int i_12_;
         if (Class369.anInt4960 <= i_4_) {
-            if ((i_4_ ^ 0xffffffff) >= (Class113.anInt1745 ^ 0xffffffff)) {
+            if (Class113.anInt1745 >= i_4_) {
                 i_11_ = i_4_;
                 i_12_ = i_3_;
             } else {
@@ -97,15 +97,15 @@ final class Class339 implements Runnable {
             i_11_ = Class369.anInt4960;
             i_12_ = (i_7_ * Class369.anInt4960 >> 1998070124) + i_8_;
         }
-        if ((Class132.anInt1910 ^ 0xffffffff) < (i_12_ ^ 0xffffffff)) {
+        if (i_12_ < Class132.anInt1910) {
             i_11_ = (Class132.anInt1910 + -i_8_ << -917473556) / i_7_;
             i_12_ = Class132.anInt1910;
-        } else if ((i_12_ ^ 0xffffffff) < (Class38.anInt513 ^ 0xffffffff)) {
+        } else if (Class38.anInt513 < i_12_) {
             i_11_ = (Class38.anInt513 - i_8_ << -1636944852) / i_7_;
             i_12_ = Class38.anInt513;
         }
         if (Class132.anInt1910 <= i_9_) {
-            if ((i_9_ ^ 0xffffffff) < (Class38.anInt513 ^ 0xffffffff)) {
+            if (Class38.anInt513 < i_9_) {
                 i_10_ = (Class38.anInt513 - i_8_ << -897379380) / i_7_;
                 i_9_ = Class38.anInt513;
             }
@@ -146,7 +146,7 @@ final class Class339 implements Runnable {
         if (bool != false)
             return null;
         if (aClass295Array4204 == null || i < 0
-                || (aClass295Array4204.length ^ 0xffffffff) >= (i ^ 0xffffffff))
+                || i >= aClass295Array4204.length)
             return null;
         return aClass295Array4204[i];
     }
@@ -182,7 +182,7 @@ final class Class339 implements Runnable {
             return true;
         if (i != -21913)
             return false;
-        if ((aClass144_4201.anInt1997 ^ 0xffffffff) != -2)
+        if (aClass144_4201.anInt1997 != 1)
             return false;
         if (aThread4206 == null) {
             aThread4206 = new Thread(this);

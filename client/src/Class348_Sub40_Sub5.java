@@ -39,8 +39,8 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
         if (bool == true) {
             Random random = new Random(anInt9122);
             aShortArray9116 = new short[512];
-            if ((anInt9125 ^ 0xffffffff) < -1) {
-                for (int i = 0; (i ^ 0xffffffff) > -513; i++)
+            if (anInt9125 > 0) {
+                for (int i = 0; i < 512; i++)
                     aShortArray9116[i]
                             = (short) Class124.method1097((byte) 81, anInt9125,
                             random);
@@ -75,8 +75,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
             int i_3_ = 1 + i_2_;
             int i_4_ = 0;
             while_140_:
-            for (/**/; (i_4_ ^ 0xffffffff) > (Class348_Sub40_Sub6.anInt9139
-                    ^ 0xffffffff); i_4_++) {
+            for (/**/; Class348_Sub40_Sub6.anInt9139 > i_4_; i_4_++) {
                 Class348_Sub42_Sub20.anInt9715 = Class215.anInt2835
                         = Class147.anInt2023 = Class135_Sub1.anInt4715
                         = 2147483647;
@@ -85,13 +84,13 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                 int i_6_ = i_5_ >> -1684390228;
                 int i_7_ = i_6_ + 1;
                 for (int i_8_ = i_2_ + -1;
-                     (i_3_ ^ 0xffffffff) <= (i_8_ ^ 0xffffffff); i_8_++) {
+                     i_8_ <= i_3_; i_8_++) {
                     int i_9_
                             = 0xff & aByteArray9119[0xff & (i_8_ >= anInt9117
                             ? i_8_ + -anInt9117
                             : i_8_)];
                     for (int i_10_ = -1 + i_6_;
-                         (i_10_ ^ 0xffffffff) >= (i_7_ ^ 0xffffffff);
+                         i_7_ >= i_10_;
                          i_10_++) {
                         int i_11_
                                 = 2 * (0xff
@@ -113,13 +112,10 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                     while_133_:
                                     do {
                                         do {
-                                            if ((i_14_ ^ 0xffffffff) != -2) {
-                                                if ((i_14_ ^ 0xffffffff)
-                                                        != -4) {
+                                            if (i_14_ != 1) {
+                                                if (i_14_ != 3) {
                                                     if (i_14_ != 4) {
-                                                        if ((i_14_
-                                                                ^ 0xffffffff)
-                                                                != -6) {
+                                                        if (i_14_ != 5) {
                                                             if (i_14_ == 2)
                                                                 break while_134_;
                                                             break while_135_;
@@ -135,7 +131,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                                 break while_136_;
                                             }
                                             i_12_ = i_12_ < 0 ? -i_12_ : i_12_;
-                                            i_13_ = ((i_13_ ^ 0xffffffff) > -1
+                                            i_13_ = (i_13_ < 0
                                                     ? -i_13_ : i_13_);
                                             i_15_ = (i_12_ <= i_13_ ? i_13_
                                                     : i_12_);
@@ -143,9 +139,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                         } while (false);
                                         i_12_
                                                 = (int) ((Math.sqrt
-                                                ((float) (((i_12_
-                                                        ^ 0xffffffff)
-                                                        > -1)
+                                                ((float) ((i_12_ < 0)
                                                         ? -i_12_
                                                         : i_12_)
                                                         / 4096.0F))
@@ -173,7 +167,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                                             / 1.6777216E7F))));
                                     break while_136_;
                                 } while (false);
-                                i_15_ = (((i_12_ ^ 0xffffffff) > -1 ? -i_12_
+                                i_15_ = ((i_12_ < 0 ? -i_12_
                                         : i_12_)
                                         - -(i_13_ >= 0 ? i_13_ : -i_13_));
                                 break while_136_;
@@ -186,16 +180,12 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                             / 1.6777216E7F)));
                         } while (false);
                         if (Class348_Sub42_Sub20.anInt9715 <= i_15_) {
-                            if ((Class215.anInt2835 ^ 0xffffffff)
-                                    >= (i_15_ ^ 0xffffffff)) {
-                                if ((Class147.anInt2023 ^ 0xffffffff)
-                                        < (i_15_ ^ 0xffffffff)) {
+                            if (i_15_ >= Class215.anInt2835) {
+                                if (i_15_ < Class147.anInt2023) {
                                     Class135_Sub1.anInt4715
                                             = Class147.anInt2023;
                                     Class147.anInt2023 = i_15_;
-                                } else if ((Class135_Sub1.anInt4715
-                                        ^ 0xffffffff)
-                                        < (i_15_ ^ 0xffffffff))
+                                } else if (i_15_ < Class135_Sub1.anInt4715)
                                     Class135_Sub1.anInt4715 = i_15_;
                             } else {
                                 Class135_Sub1.anInt4715 = Class147.anInt2023;
@@ -217,7 +207,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                     while_137_:
                     do {
                         do {
-                            if ((i_16_ ^ 0xffffffff) != -1) {
+                            if (i_16_ != 0) {
                                 if (i_16_ != 1) {
                                     if (i_16_ != 3) {
                                         if (i_16_ != 4) {
@@ -264,17 +254,12 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                             do {
                                 do {
                                     if (i_18_ != 0) {
-                                        if ((i_18_ ^ 0xffffffff) != -2) {
+                                        if (i_18_ != 1) {
                                             if (i_18_ != 2) {
-                                                if ((i_18_ ^ 0xffffffff)
-                                                        != -4) {
+                                                if (i_18_ != 3) {
                                                     if (i_18_ != 4) {
-                                                        if ((i_18_
-                                                                ^ 0xffffffff)
-                                                                != -6) {
-                                                            if ((i_18_
-                                                                    ^ 0xffffffff)
-                                                                    == -7)
+                                                        if (i_18_ != 5) {
+                                                            if (i_18_ == 6)
                                                                 break while_144_;
                                                             break while_145_;
                                                         }

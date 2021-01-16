@@ -35,7 +35,7 @@ final class Class355 {
         if (class348_sub42_sub10 != null)
             return class348_sub42_sub10;
         byte[] is;
-        if ((i ^ 0xffffffff) <= -32769)
+        if (i >= 32768)
             is = aClass45_4369.method410(-1860, 1, 0x7fff & i);
         else
             is = aClass45_4368.method410(-1860, 1, i);
@@ -45,7 +45,7 @@ final class Class355 {
             class348_sub42_sub10.method3218(new Class348_Sub49(is), 0);
         if (i_0_ >= -86)
             method3473(-12);
-        if ((i ^ 0xffffffff) <= -32769)
+        if (i >= 32768)
             class348_sub42_sub10.method3209(false);
         aClass60_4362.method582(class348_sub42_sub10, i, (byte) -125);
         return class348_sub42_sub10;

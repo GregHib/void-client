@@ -37,7 +37,7 @@ final class Class33 {
                 .aClass239_Sub22_7253.method1815(-32350))
             i_0_ = -1;
         anInt456++;
-        if ((Class337.anInt4179 ^ 0xffffffff) != (i_0_ ^ 0xffffffff)) {
+        if (i_0_ != Class337.anInt4179) {
             if (i_0_ != -1) {
                 Class222 class222
                         = Class239.aClass166_3147.method1287((byte) -104, i_0_);
@@ -67,7 +67,7 @@ final class Class33 {
     static final void method339(int i, int i_1_, byte[] is, int i_2_, int i_3_,
                                 int i_4_) {
         anInt461++;
-        if ((i_1_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff)) {
+        if (i_4_ > i_1_) {
             i += i_1_;
             i_2_ = -i_1_ + i_4_ >> 1135854850;
             while (--i_2_ >= 0) {

@@ -52,7 +52,7 @@ public final class Class272_Sub2 extends Class272 {
                         string_1_
                                 = string_1_.substring(string_3_.length()).trim();
                         int i_4_ = string_1_.indexOf(' ');
-                        if (0 != (i_4_ ^ 0xffffffff))
+                        if (i_4_ != -1)
                             string_1_ = string_1_.substring(0, i_4_);
                         throw new IOException_Sub1(string_1_);
                     }
@@ -72,7 +72,7 @@ public final class Class272_Sub2 extends Class272 {
         boolean flag = Boolean.parseBoolean(System.getProperty("java.net.useSystemProxies"));
         if (!flag)
             System.setProperty("java.net.useSystemProxies", "true");
-        flag1 = -444 == ~anInt3470;
+        flag1 = anInt3470 == 443;
         IOException_Sub1 ioexception_sub1;
         Object[] aobj1;
         int j;

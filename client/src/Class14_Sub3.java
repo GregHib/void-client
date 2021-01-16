@@ -55,14 +55,14 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
                     true);
             while (class144.anInt1997 == 0)
                 Class286_Sub5.method2161((byte) -85, 1L);
-            if ((class144.anInt1997 ^ 0xffffffff) == -2) {
+            if (class144.anInt1997 == 1) {
                 class234 = (Class234) class144.anObject1998;
                 byte[] is = new byte[(int) class234.method1662((byte) -46)];
                 int i_2_;
                 for (int i_3_ = 0; is.length > i_3_; i_3_ += i_2_) {
                     i_2_ = class234.method1656(is, i_3_, (byte) -49,
                             -i_3_ + is.length);
-                    if ((i_2_ ^ 0xffffffff) == 0)
+                    if (i_2_ == -1)
                         throw new IOException("EOF");
                 }
                 class348_sub51 = new Class348_Sub51(new Class348_Sub49(is),
@@ -168,8 +168,7 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
                 = (Class246.aClass143_3179.anInt1988
                 - (-Class246.aClass143_3179.anInt1993 - i));
         for (int i_4_ = 0;
-             ((Class286_Sub1.aStringArray6200.length ^ 0xffffffff)
-                     < (i_4_ ^ 0xffffffff));
+             (i_4_ < Class286_Sub1.aStringArray6200.length);
              i_4_++)
             Class286_Sub1.aStringArray6200[i_4_] = "";
         Applet_Sub1.method94(Class274.aClass274_3483

@@ -16,7 +16,7 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         int i_1_ = i;
         do {
-            if ((i_1_ ^ 0xffffffff) != -1) {
+            if (i_1_ != 0) {
                 if (i_1_ != 1)
                     break;
             } else {
@@ -76,13 +76,11 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
         if (this.aClass191_7032.aBoolean2570) {
             int[] is_4_ = this.method3048(i, 633706337, 0);
             for (int i_5_ = 0;
-                 ((i_5_ ^ 0xffffffff)
-                         > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff));
+                 (Class348_Sub40_Sub6.anInt9139 > i_5_);
                  i_5_++) {
                 int i_6_ = is_4_[i_5_];
                 is[i_5_]
-                        = i_6_ >= anInt9104 && ((anInt9107 ^ 0xffffffff)
-                        <= (i_6_ ^ 0xffffffff)) ? 4096 : 0;
+                        = i_6_ >= anInt9104 && (i_6_ <= anInt9107) ? 4096 : 0;
             }
         }
         return is;

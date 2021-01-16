@@ -109,9 +109,9 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                     i_3_ <<= 1;
                 int i_4_ = 0;
                 int i_5_ = 0;
-                if ((anInt8879 ^ 0xffffffff) == -3)
+                if (anInt8879 == 2)
                     i_5_ = 1;
-                while ((i ^ 0xffffffff) > (i_3_ ^ 0xffffffff)) {
+                while (i_3_ > i) {
                     Class348_Sub42_Sub4 class348_sub42_sub4
                             = method2828(-23076);
                     if (class348_sub42_sub4 == null)
@@ -128,8 +128,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                             is[i++] += (is_6_[i_5_][anInt8883] * anInt8887
                                     + anInt8885 * is_6_[i_4_][anInt8883]);
                     }
-                    if ((is_6_[0].length ^ 0xffffffff)
-                            >= (anInt8883 ^ 0xffffffff))
+                    if (anInt8883 >= is_6_[0].length)
                         method2831((byte) -126);
                 }
             }
@@ -164,7 +163,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     final synchronized void method2835(Class348_Sub42_Sub4 class348_sub42_sub4,
                                        int i) {
-        for (/**/; (anInt8888 ^ 0xffffffff) <= -101; anInt8888--)
+        for (/**/; anInt8888 >= 100; anInt8888--)
             aClass262_8861.method1997(8);
         if (i == 30700) {
             anInt8881++;
@@ -231,10 +230,8 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                     }
                     break;
                 }
-                if ((i ^ 0xffffffff)
-                        > ((class348_sub42_sub4
-                        .aShortArrayArray9518[0]).length - anInt8883
-                        ^ 0xffffffff)) {
+                if ((class348_sub42_sub4
+                        .aShortArrayArray9518[0]).length - anInt8883 > i) {
                     anInt8883 += i;
                     break;
                 }

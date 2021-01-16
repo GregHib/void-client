@@ -47,8 +47,7 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
             int[] is_4_ = is[1];
             int[] is_5_ = is[2];
             for (int i_6_ = 0;
-                 ((i_6_ ^ 0xffffffff)
-                         > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff));
+                 (Class348_Sub40_Sub6.anInt9139 > i_6_);
                  i_6_++) {
                 method3139(i_6_, i, (byte) -31);
                 int[][] is_7_
@@ -67,8 +66,7 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
             aClass46ArrayArray9427 = null;
         int[] is = this.aClass191_7032.method1433(0, i);
         if (this.aClass191_7032.aBoolean2570) {
-            for (int i_9_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_9_ ^ 0xffffffff)); i_9_++) {
+            for (int i_9_ = 0; (i_9_ < Class348_Sub40_Sub6.anInt9139); i_9_++) {
                 method3139(i_9_, i, (byte) -31);
                 int[] is_10_ = this.method3048(Class344.anInt4265,
                         i_8_ ^ 0x25c5979e, 0);

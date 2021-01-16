@@ -30,7 +30,7 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         if (i_2_ >= -39)
             return false;
         anInt9546++;
-        return (i ^ 0xffffffff) == -4 || (i ^ 0xffffffff) == -5 || i == 5
+        return i == 3 || i == 4 || i == 5
                 || i == 6;
     }
 
@@ -42,7 +42,7 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         anInt9549++;
         if (i_3_ != 56)
             aClass114_9552 = null;
-        return (i ^ 0xffffffff) == -8 || (i ^ 0xffffffff) == -10;
+        return i == 7 || i == 9;
     }
 
     static final void method3198(boolean bool, byte i) {
@@ -50,7 +50,7 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         if (i != -45)
             aShort9555 = (short) -74;
         if (bool) {
-            if ((r.anInt9721 ^ 0xffffffff) != 0)
+            if (r.anInt9721 != -1)
                 Class14.method235(r.anInt9721, (byte) -113);
             for (Class348_Sub41 class348_sub41
                  = (Class348_Sub41) Class125.aClass356_4915.method3484(0);
@@ -92,7 +92,7 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
                 .anIntArray10317[0]
                 = Class348_Sub40_Sub3.anInt9109 / 2;
         Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685 = 0;
-        if ((Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff) == -3) {
+        if (Class348_Sub40_Sub21.anInt9282 == 2) {
             Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 << 813833481;
             Class59_Sub2_Sub2.anInt8685 = Class275.anInt3550 << 1515187753;
         } else

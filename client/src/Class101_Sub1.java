@@ -369,7 +369,7 @@ final class Class101_Sub1 extends Class101 {
         if (i <= 115)
             return true;
         anInt5679++;
-        return (Class73.anInt4776 ^ 0xffffffff) < -1;
+        return Class73.anInt4776 > 0;
     }
 
     public Class101_Sub1() {

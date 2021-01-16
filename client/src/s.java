@@ -29,7 +29,7 @@ abstract class s {
             anInt4586++;
             Dimension dimension = canvas.getSize();
             Class85.method828((byte) 38, dimension.height, dimension.width);
-            if ((Class348_Sub49.anInt7207 ^ 0xffffffff) != -2)
+            if (Class348_Sub49.anInt7207 != 1)
                 Class21.aHa326.method3669(canvas, Class59_Sub1.anInt5283,
                         Class107.anInt1651);
             else
@@ -63,7 +63,7 @@ abstract class s {
         anInt4591++;
         if (i != -101)
             method3980(-117, null);
-        if (i_29_ < 0 || (i_29_ ^ 0xffffffff) <= -101)
+        if (i_29_ < 0 || i_29_ >= 100)
             return null;
         return Class318_Sub2.aClass147Array6400[i_29_];
     }
@@ -72,9 +72,9 @@ abstract class s {
         anInt4589++;
         int i_32_ = i >> this.anInt4588;
         int i_33_ = i_30_ >> this.anInt4588;
-        if (i_32_ < 0 || (i_33_ ^ 0xffffffff) > -1
+        if (i_32_ < 0 || i_33_ < 0
                 || i_32_ > -1 + this.anInt4587
-                || (this.anInt4590 - 1 ^ 0xffffffff) > (i_33_ ^ 0xffffffff))
+                || i_33_ > this.anInt4590 - 1)
             return 0;
         int i_34_ = -78 % ((i_31_ - -53) / 36);
         int i_35_ = i & this.anInt4592 + -1;

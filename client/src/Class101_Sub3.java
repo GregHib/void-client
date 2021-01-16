@@ -148,7 +148,7 @@ final class Class101_Sub3 extends Class101 {
 
     final void method939(float f, int i, float f_16_, int i_17_, int i_18_,
                          int i_19_, float f_20_) {
-        if ((i_18_ ^ 0xffffffff) == -1) {
+        if (i_18_ == 0) {
             this.aFloat5761
                     = this.aFloat5756
                     = this.aFloat5750
@@ -461,17 +461,14 @@ final class Class101_Sub3 extends Class101 {
                  i_52_++) {
                 Class369_Sub1.method3570(false);
                 for (int i_53_ = 0;
-                     ((Class367_Sub4.anInt7319 >> 1239349699 ^ 0xffffffff)
-                             < (i_53_ ^ 0xffffffff));
+                     (i_53_ < Class367_Sub4.anInt7319 >> 1239349699);
                      i_53_++) {
                     for (int i_54_ = 0;
-                         ((i_54_ ^ 0xffffffff)
-                                 > (Class348_Sub40_Sub3.anInt9109 >> 1502625827
-                                 ^ 0xffffffff));
+                         (Class348_Sub40_Sub3.anInt9109 >> 1502625827 > i_54_);
                          i_54_++) {
                         int i_55_ = (Class62.anIntArrayArrayArray1116[i_52_]
                                 [i_53_][i_54_]);
-                        if ((i_55_ ^ 0xffffffff) != 0) {
+                        if (i_55_ != -1) {
                             int i_56_ = 0x3 & i_55_ >> 1803633816;
                             if (!class237_sub1.aBoolean3109
                                     || i_56_ == 0) {
@@ -481,12 +478,10 @@ final class Class101_Sub3 extends Class101 {
                                 int i_60_
                                         = i_59_ / 8 + (i_58_ / 8 << 1157268520);
                                 for (int i_61_ = 0;
-                                     (Class348_Sub23_Sub3.anIntArray9042.length
-                                             ^ 0xffffffff) < (i_61_ ^ 0xffffffff);
+                                     i_61_ < Class348_Sub23_Sub3.anIntArray9042.length;
                                      i_61_++) {
-                                    if (((Class348_Sub23_Sub3.anIntArray9042
+                                    if (i_60_ == (Class348_Sub23_Sub3.anIntArray9042
                                             [i_61_])
-                                            ^ 0xffffffff) == (i_60_ ^ 0xffffffff)
                                             && is[i_61_] != null) {
                                         class237_sub1.method1692
                                                 ((i_58_ & 0x7) * 8, i_57_,

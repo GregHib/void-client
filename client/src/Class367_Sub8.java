@@ -25,7 +25,7 @@ final class Class367_Sub8 extends Class367 {
         anInt7349++;
         char[] cs = new char[i_0_];
         int i_2_ = 0;
-        for (int i_3_ = i; (i_0_ ^ 0xffffffff) < (i_3_ ^ 0xffffffff); i_3_++) {
+        for (int i_3_ = i; i_3_ < i_0_; i_3_++) {
             int i_4_ = 0xff & is[i_3_ + i_1_];
             if (i_4_ != 0) {
                 if (i_4_ >= 128 && i_4_ < 160) {
@@ -57,13 +57,11 @@ final class Class367_Sub8 extends Class367 {
                 int i_11_ = is[i_9_];
                 int i_12_ = is_8_[i_9_];
                 for (int i_13_ = 0;
-                     i_11_ != 0 && ((i_13_ ^ 0xffffffff)
-                             > ((class318_sub1_sub3_sub3_sub1
-                             .aClass182Array10308).length
-                             ^ 0xffffffff));
+                     i_11_ != 0 && ((class318_sub1_sub3_sub3_sub1
+                             .aClass182Array10308).length > i_13_);
                      i_13_++) {
                     if ((0x1 & i_11_) != 0) {
-                        if ((i_10_ ^ 0xffffffff) != 0) {
+                        if (i_10_ != -1) {
                             Class17 class17
                                     = Class10.aClass87_191.method835(i_10_,
                                     i + 7394);
@@ -71,15 +69,10 @@ final class Class367_Sub8 extends Class367 {
                             Class182 class182 = (class318_sub1_sub3_sub3_sub1
                                     .aClass182Array10308[i_13_]);
                             if (class182 != null) {
-                                if ((class182.anInt2454
-                                        ^ 0xffffffff)
-                                        != (i_10_ ^ 0xffffffff)) {
-                                    if ((class17.anInt239
-                                            ^ 0xffffffff)
-                                            <= (Class10.aClass87_191.method835
-                                                    (class182.anInt2454,
-                                                            7).anInt239
-                                            ^ 0xffffffff))
+                                if (i_10_ != class182.anInt2454) {
+                                    if (Class10.aClass87_191.method835
+                                            (class182.anInt2454,
+                                                    7).anInt239 <= class17.anInt239)
                                         class182
                                                 = class318_sub1_sub3_sub3_sub1
                                                 .aClass182Array10308[i_13_]
@@ -89,7 +82,7 @@ final class Class367_Sub8 extends Class367 {
                                             = class318_sub1_sub3_sub3_sub1
                                             .aClass182Array10308[i_13_]
                                             = null;
-                                else if ((i_14_ ^ 0xffffffff) != -2) {
+                                else if (i_14_ != 1) {
                                     if (i_14_ == 2)
                                         class182.anInt2445 = 0;
                                 } else {
@@ -181,9 +174,9 @@ final class Class367_Sub8 extends Class367 {
         anInt7351++;
         int i_16_ = -72 / ((37 - i_15_) / 48);
         if (i == 25 || i == 20 || i == 44 || i == 46
-                || (i ^ 0xffffffff) == -61)
+                || i == 60)
             return true;
-        return (i ^ 0xffffffff) == -31 || i == 1008;
+        return i == 30 || i == 1008;
     }
 
     final void method3526(int i, int i_17_, int i_18_) {
@@ -191,7 +184,7 @@ final class Class367_Sub8 extends Class367 {
         anInt7354++;
         if (i != 10756)
             method3527(-26, null, 111);
-        if ((0x80 & i_17_ ^ 0xffffffff) == -1) {
+        if ((0x80 & i_17_) == 0) {
             if ((0x1 & i_18_) != 1) {
                 if (aClass269_7353.aBoolean3458)
                     this.aHa_Sub3_4479.method3850
@@ -239,9 +232,7 @@ final class Class367_Sub8 extends Class367 {
     }
 
     final void method3532(int i) {
-        if ((this.aHa_Sub3_4479.method3877((byte) -126)
-                ^ 0xffffffff)
-                == -1) {
+        if (this.aHa_Sub3_4479.method3877((byte) -126) == 0) {
             Class101_Sub2 class101_sub2
                     = this.aHa_Sub3_4479.method3848(5);
             this.aHa_Sub3_4479.method3897(1, i ^ ~0x39a4);

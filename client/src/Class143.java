@@ -30,8 +30,7 @@ final class Class143 {
                             byte i_0_) {
         try {
             anInt1989++;
-            if ((method1186(string, class105s, false) ^ 0xffffffff)
-                    >= (i ^ 0xffffffff))
+            if (i >= method1186(string, class105s, false))
                 return string;
             i -= method1186("...", null, false);
             int i_1_ = -1;
@@ -41,13 +40,13 @@ final class Class143 {
             int i_3_ = 0;
             int i_4_ = string.length();
             String string_5_ = "";
-            for (int i_6_ = 0; (i_6_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff);
+            for (int i_6_ = 0; i_4_ > i_6_;
                  i_6_++) {
                 char c = string.charAt(i_6_);
                 if (c == 60)
                     i_1_ = i_6_;
                 else {
-                    if ((c ^ 0xffffffff) == -63 && (i_1_ ^ 0xffffffff) != 0) {
+                    if (c == 62 && i_1_ != -1) {
                         String string_7_ = string.substring(i_1_ - -1, i_6_);
                         i_1_ = -1;
                         if (!string_7_.equals("lt")) {
@@ -101,12 +100,12 @@ final class Class143 {
                         } else
                             c = '<';
                     }
-                    if ((i_1_ ^ 0xffffffff) == 0) {
+                    if (i_1_ == -1) {
                         i_3_
                                 += 0xff & (aByteArray1986
                                 [Class354.method3464(c, false) & 0xff]);
                         if (aByteArrayArray1979 != null
-                                && (i_2_ ^ 0xffffffff) != 0)
+                                && i_2_ != -1)
                             i_3_ += aByteArrayArray1979[i_2_][c];
                         i_2_ = c;
                         int i_9_ = i_3_;
@@ -190,13 +189,13 @@ final class Class143 {
             int i_16_ = -1;
             int i_17_ = 0;
             int i_18_ = string.length();
-            for (int i_19_ = 0; (i_18_ ^ 0xffffffff) < (i_19_ ^ 0xffffffff);
+            for (int i_19_ = 0; i_19_ < i_18_;
                  i_19_++) {
                 char c = string.charAt(i_19_);
-                if ((c ^ 0xffffffff) == -61)
+                if (c == 60)
                     i = i_19_;
                 else {
-                    if ((c ^ 0xffffffff) == -63 && (i ^ 0xffffffff) != 0) {
+                    if (c == 62 && i != -1) {
                         String string_20_ = string.substring(1 + i, i_19_);
                         i = -1;
                         if (string_20_.equals("lt"))
@@ -245,7 +244,7 @@ final class Class143 {
                         } else
                             c = '>';
                     }
-                    if ((i ^ 0xffffffff) == 0) {
+                    if (i == -1) {
                         i_17_
                                 += 0xff & (aByteArray1986
                                 [Class354.method3464(c, false) & 0xff]);
@@ -278,7 +277,7 @@ final class Class143 {
             int i_23_ = 0;
             if (bool != false)
                 this.anInt1988 = -58;
-            for (int i_24_ = 0; (i_24_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff);
+            for (int i_24_ = 0; i_22_ > i_24_;
                  i_24_++) {
                 int i_25_ = method1186(Class186.aStringArray2494[i_24_],
                         class105s, false);
@@ -319,7 +318,7 @@ final class Class143 {
                 int i_36_
                         = Class354.method3464(string.charAt(i_35_), false) & 0xff;
                 int i_37_ = 0;
-                if ((i_36_ ^ 0xffffffff) == -61)
+                if (i_36_ == 60)
                     i_31_ = i_35_;
                 else {
                     int i_38_;
@@ -385,7 +384,7 @@ final class Class143 {
                                             i_37_
                                                     += method1184((byte) -48, 174);
                                             if (aByteArrayArray1979 != null
-                                                    && (i_32_ ^ 0xffffffff) != 0)
+                                                    && i_32_ != -1)
                                                 i_37_ += (aByteArrayArray1979
                                                         [i_32_][174]);
                                             i_32_ = 174;
@@ -401,7 +400,7 @@ final class Class143 {
                                 } else {
                                     i_37_ += method1184((byte) -48, 8364);
                                     if (aByteArrayArray1979 != null
-                                            && (i_32_ ^ 0xffffffff) != 0)
+                                            && i_32_ != -1)
                                         i_37_ += (aByteArrayArray1979[i_32_]
                                                 [8364]);
                                     i_32_ = 8364;
@@ -409,7 +408,7 @@ final class Class143 {
                             } else {
                                 i_37_ += method1184((byte) -48, 173);
                                 if (aByteArrayArray1979 != null
-                                        && (i_32_ ^ 0xffffffff) != 0)
+                                        && i_32_ != -1)
                                     i_37_ += aByteArrayArray1979[i_32_][173];
                                 i_32_ = 173;
                             }
@@ -424,7 +423,7 @@ final class Class143 {
                         i_37_ += method1184((byte) -48, i_36_);
                         i_38_ = i_35_;
                         if (aByteArrayArray1979 != null
-                                && (i_32_ ^ 0xffffffff) != 0)
+                                && i_32_ != -1)
                             i_37_ += aByteArrayArray1979[i_32_][i_36_];
                         i_32_ = i_36_;
                     }
@@ -436,15 +435,12 @@ final class Class143 {
                                 i_29_ = i_26_;
                                 i_28_ = i_35_;
                             }
-                            if ((is[is.length > i_33_ ? i_33_ : is.length + -1]
-                                    ^ 0xffffffff)
-                                    > (i_26_ ^ 0xffffffff)) {
-                                if ((i_28_ ^ 0xffffffff) <= -1) {
+                            if (i_26_ > is[is.length > i_33_ ? i_33_ : is.length + -1]) {
+                                if (i_28_ >= 0) {
                                     strings[i_33_]
                                             = string.substring(i_27_,
                                             -i_30_ + 1 + i_28_);
-                                    if ((++i_33_ ^ 0xffffffff)
-                                            <= (strings.length ^ 0xffffffff))
+                                    if (strings.length <= ++i_33_)
                                         return 0;
                                     i_27_ = 1 + i_28_;
                                     i_32_ = -1;
@@ -454,8 +450,7 @@ final class Class143 {
                                     strings[i_33_]
                                             = string.substring(i_27_, i_38_);
                                     i_33_++;
-                                    if ((strings.length ^ 0xffffffff)
-                                            >= (i_33_ ^ 0xffffffff))
+                                    if (i_33_ >= strings.length)
                                         return 0;
                                     i_27_ = i_38_;
                                     i_32_ = -1;
@@ -463,7 +458,7 @@ final class Class143 {
                                     i_26_ = i_37_;
                                 }
                             }
-                            if ((i_36_ ^ 0xffffffff) == -46) {
+                            if (i_36_ == 45) {
                                 i_29_ = i_26_;
                                 i_28_ = i_35_;
                                 i_30_ = 0;
@@ -525,7 +520,7 @@ final class Class143 {
     Class143(byte[] is) {
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
         int i = class348_sub49.method3387(255);
-        if ((i ^ 0xffffffff) != -1)
+        if (i != 0)
             throw new RuntimeException("");
         boolean bool = class348_sub49.method3387(255) == 1;
         aByteArray1986 = new byte[256];
@@ -535,15 +530,14 @@ final class Class143 {
             int[] is_44_ = new int[256];
             for (int i_45_ = 0; i_45_ < 256; i_45_++)
                 is_43_[i_45_] = class348_sub49.method3387(255);
-            for (int i_46_ = 0; (i_46_ ^ 0xffffffff) > -257; i_46_++)
+            for (int i_46_ = 0; i_46_ < 256; i_46_++)
                 is_44_[i_46_] = class348_sub49.method3387(255);
             byte[][] is_47_ = new byte[256][];
             for (int i_48_ = 0; i_48_ < 256; i_48_++) {
                 is_47_[i_48_] = new byte[is_43_[i_48_]];
                 byte i_49_ = 0;
                 for (int i_50_ = 0;
-                     ((i_50_ ^ 0xffffffff)
-                             > (is_47_[i_48_].length ^ 0xffffffff));
+                     (is_47_[i_48_].length > i_50_);
                      i_50_++) {
                     i_49_ += class348_sub49.method3388(-83);
                     is_47_[i_48_][i_50_] = i_49_;
@@ -554,8 +548,7 @@ final class Class143 {
                 is_51_[i_52_] = new byte[is_43_[i_52_]];
                 byte i_53_ = 0;
                 for (int i_54_ = 0;
-                     ((i_54_ ^ 0xffffffff)
-                             > (is_51_[i_52_].length ^ 0xffffffff));
+                     (is_51_[i_52_].length > i_54_);
                      i_54_++) {
                     i_53_ += class348_sub49.method3388(-115);
                     is_51_[i_52_][i_54_] = i_53_;
@@ -563,9 +556,9 @@ final class Class143 {
             }
             aByteArrayArray1979 = new byte[256][256];
             for (int i_55_ = 0; i_55_ < 256; i_55_++) {
-                if (i_55_ != 32 && (i_55_ ^ 0xffffffff) != -161) {
-                    for (int i_56_ = 0; (i_56_ ^ 0xffffffff) > -257; i_56_++) {
-                        if ((i_56_ ^ 0xffffffff) != -33 && i_56_ != 160)
+                if (i_55_ != 32 && i_55_ != 160) {
+                    for (int i_56_ = 0; i_56_ < 256; i_56_++) {
+                        if (i_56_ != 32 && i_56_ != 160)
                             aByteArrayArray1979[i_55_][i_56_]
                                     = (byte) (Class239_Sub8.method1756
                                     (aByteArray1986, -34, i_56_, i_55_,

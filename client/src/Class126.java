@@ -33,7 +33,7 @@ final class Class126 implements Interface14 {
             aClass45_4984 = null;
         return (Class188.method1412((byte) -35, i_0_, i)
                 & (Class274.method2058(i, i_0_, 72)
-                | (i & 0x2000 ^ 0xffffffff) != -1
+                | (i & 0x2000) != 0
                 | Class348_Sub42_Sub9.method3203(i_0_, (byte) 114, i)));
     }
 
@@ -85,7 +85,7 @@ final class Class126 implements Interface14 {
 
     static final void method1114(int i, int i_2_) {
         anInt4986++;
-        if ((i ^ 0xffffffff) > -1 || i > 2)
+        if (i < 0 || i > 2)
             i = 0;
         Class348_Sub6.anInt6637 = i;
         Class348_Sub51.aClass318_Sub10Array7249
@@ -110,11 +110,9 @@ final class Class126 implements Interface14 {
             return false;
         if (this.anInt4989 != class126_3_.anInt4989)
             return false;
-        if ((class126_3_.anInt4993 ^ 0xffffffff)
-                != (this.anInt4993 ^ 0xffffffff))
+        if (this.anInt4993 != class126_3_.anInt4993)
             return false;
-        if ((this.anInt4982 ^ 0xffffffff)
-                != (class126_3_.anInt4982 ^ 0xffffffff))
+        if (class126_3_.anInt4982 != this.anInt4982)
             return false;
         if (this.anInt4981 != class126_3_.anInt4981)
             return false;

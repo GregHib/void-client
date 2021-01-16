@@ -51,7 +51,7 @@ final class Class160 {
     final void method1255(Class348_Sub49 class348_sub49, int i) {
         for (; ; ) {
             int i_0_ = class348_sub49.method3387(255);
-            if ((i_0_ ^ 0xffffffff) == -1)
+            if (i_0_ == 0)
                 break;
             method1256(-90, i_0_, class348_sub49);
         }
@@ -63,7 +63,7 @@ final class Class160 {
     private final void method1256(int i, int i_1_,
                                   Class348_Sub49 class348_sub49) {
         anInt2136++;
-        if ((i_1_ ^ 0xffffffff) != -2) {
+        if (i_1_ != 1) {
             if (i_1_ == 2)
                 this.anInt2135 = 0;
         } else
@@ -78,7 +78,7 @@ final class Class160 {
         if (i > -23)
             aBooleanArrayArray2133 = null;
         anInt2134++;
-        return (0x20 & i_3_ ^ 0xffffffff) != -1;
+        return (0x20 & i_3_) != 0;
     }
 
     public Class160() {

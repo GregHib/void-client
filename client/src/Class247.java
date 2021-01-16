@@ -19,7 +19,7 @@ final class Class247 {
     static final int method1890(int i, byte i_0_, int i_1_, int i_2_) {
         anInt3180++;
         int i_3_ = 88 % (-i_0_ / 55);
-        if ((i ^ 0xffffffff) < -244)
+        if (i > 243)
             i_1_ >>= 4;
         else if (i <= 217) {
             if (i > 192)

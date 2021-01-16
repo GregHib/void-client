@@ -29,15 +29,15 @@ final class Class286_Sub5 extends Class286 {
                     .aClass239_Sub23_7231.method1818(-32350);
         if (i == 56) {
             if (i_0_ == 2) {
-                int i_1_ = ((Class272.anInt3473 ^ 0xffffffff) >= -801
+                int i_1_ = (Class272.anInt3473 <= 800
                         ? Class272.anInt3473 : 800);
                 Class321.anInt4017 = i_1_;
                 Class348_Sub48.anInt7129 = (Class272.anInt3473 + -i_1_) / 2;
-                int i_2_ = ((Class348_Sub22.anInt6857 ^ 0xffffffff) < -601
+                int i_2_ = (Class348_Sub22.anInt6857 > 600
                         ? 600 : Class348_Sub22.anInt6857);
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_2_;
                 Class335.anInt4167 = 0;
-            } else if ((i_0_ ^ 0xffffffff) != -2) {
+            } else if (i_0_ != 1) {
                 Class335.anInt4167 = 0;
                 Class348_Sub42_Sub8_Sub2.anInt10432 = Class348_Sub22.anInt6857;
                 Class348_Sub48.anInt7129 = 0;
@@ -60,7 +60,7 @@ final class Class286_Sub5 extends Class286 {
         float f = -5.0E-4F * (float) (1 + (i & 0x3));
         float f_7_ = 5.0E-4F * (float) (1 + ((i & 0x18) >> -466719645));
         float f_8_
-                = (i & 0x40 ^ 0xffffffff) == -1 ? 4.8828125E-4F : 9.765625E-4F;
+                = (i & 0x40) == 0 ? 4.8828125E-4F : 9.765625E-4F;
         boolean bool = (i & 0x80) != 0;
         this.aHa_Sub2_3684.method3738(-15039, 1);
         if (bool) {
@@ -219,7 +219,7 @@ final class Class286_Sub5 extends Class286 {
         try {
             anInt6251++;
             if (l > 0L) {
-                if ((l % 10L ^ 0xffffffffffffffffL) != -1L)
+                if (l % 10L != 0)
                     Class327.method2606(59, l);
                 else {
                     Class327.method2606(-125, -1L + l);

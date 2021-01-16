@@ -18,8 +18,8 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
         do {
             do {
                 if (i_1_ != 0) {
-                    if ((i_1_ ^ 0xffffffff) != -2) {
-                        if ((i_1_ ^ 0xffffffff) == -3)
+                    if (i_1_ != 1) {
+                        if (i_1_ == 2)
                             break;
                         break while_132_;
                     }
@@ -57,14 +57,14 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
                 int i_7_ = anInt9095 * i_5_ >> 293549036;
                 int i_8_ = i_4_ % (4096 / anInt9099) * anInt9099;
                 int i_9_ = i_5_ % (4096 / anInt9095) * anInt9095;
-                if ((anInt9098 ^ 0xffffffff) < (i_9_ ^ 0xffffffff)) {
+                if (i_9_ < anInt9098) {
                     for (i_6_ -= i_7_; i_6_ < 0; i_6_ += 4) {
                         /* empty */
                     }
                     for (/**/; i_6_ > 3; i_6_ -= 4) {
                         /* empty */
                     }
-                    if ((i_6_ ^ 0xffffffff) != -2) {
+                    if (i_6_ != 1) {
                         is[i_3_] = 0;
                         continue;
                     }
@@ -73,8 +73,8 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
                         continue;
                     }
                 }
-                if ((anInt9098 ^ 0xffffffff) < (i_8_ ^ 0xffffffff)) {
-                    for (i_6_ -= i_7_; (i_6_ ^ 0xffffffff) > -1; i_6_ += 4) {
+                if (i_8_ < anInt9098) {
+                    for (i_6_ -= i_7_; i_6_ < 0; i_6_ += 4) {
                         /* empty */
                     }
                     for (/**/; i_6_ > 3; i_6_ -= 4) {

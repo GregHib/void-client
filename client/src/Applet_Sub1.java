@@ -148,7 +148,7 @@ public abstract class Applet_Sub1 extends Applet
         Class328_Sub2_Sub1.aLongArray8800[Class244.anInt4613] = l;
         Class244.anInt4613 = 0x1f & 1 + Class244.anInt4613;
         if (l_1_ != 0L
-                && (l_1_ ^ 0xffffffffffffffffL) > (l ^ 0xffffffffffffffffL)) {
+                && l > l_1_) {
             /* empty */
         }
         synchronized (this) {
@@ -249,14 +249,11 @@ public abstract class Applet_Sub1 extends Applet
                 && !Class26.aBoolean384) {
             Class49.aBoolean4726 = true;
             if (Class367_Sub4.aBoolean7320
-                    && (-Class348_Sub12.aLong6748 + Class62.method599(-57)
-                    ^ 0xffffffffffffffffL) < -1001L) {
+                    && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 Rectangle rectangle = graphics.getClipBounds();
                 if (rectangle == null
-                        || ((Class272.anInt3473 ^ 0xffffffff) >= (rectangle.width
-                        ^ 0xffffffff)
-                        && ((rectangle.height ^ 0xffffffff)
-                        <= (Class348_Sub22.anInt6857 ^ 0xffffffff))))
+                        || (rectangle.width >= Class272.anInt3473
+                        && (Class348_Sub22.anInt6857 <= rectangle.height)))
                     Class203.aBoolean2674 = true;
             }
         }
@@ -323,7 +320,7 @@ public abstract class Applet_Sub1 extends Applet
             return true;
         for (/**/;
                  (string.length() > 0 && string.charAt(-1 + string.length()) >= '0'
-                         && (string.charAt(-1 + string.length()) ^ 0xffffffff) >= -58);
+                         && string.charAt(-1 + string.length()) <= 57);
                  string = string.substring(0, string.length() - 1)) {
             /* empty */
         }
@@ -430,7 +427,7 @@ public abstract class Applet_Sub1 extends Applet
                 if (Class297.aString3782 != null) {
                     String string = Class297.aString3782.toLowerCase();
                     if (string.indexOf("sun") != -1
-                            || (string.indexOf("apple") ^ 0xffffffff) != 0) {
+                            || string.indexOf("apple") != -1) {
                         String string_5_ = Class297.aString3796;
                         if (string_5_.equals("1.1")
                                 || string_5_.startsWith("1.1.")
@@ -439,7 +436,7 @@ public abstract class Applet_Sub1 extends Applet
                             method82(-119, "wrongjava");
                             break;
                         }
-                    } else if ((string.indexOf("ibm") ^ 0xffffffff) != 0
+                    } else if (string.indexOf("ibm") != -1
                             && (Class297.aString3796 == null
                             || Class297.aString3796.equals("1.4.2"))) {
                         method82(81, "wrongjava");
@@ -450,15 +447,14 @@ public abstract class Applet_Sub1 extends Applet
                         && Class297.aString3796.startsWith("1.")) {
                     int i = 2;
                     int i_6_ = 0;
-                    while ((i ^ 0xffffffff)
-                            > (Class297.aString3796.length() ^ 0xffffffff)) {
+                    while (Class297.aString3796.length() > i) {
                         int i_7_ = Class297.aString3796.charAt(i);
                         if (i_7_ < 48 || i_7_ > 57)
                             break;
                         i++;
                         i_6_ = 10 * i_6_ - (-i_7_ + 48);
                     }
-                    if ((i_6_ ^ 0xffffffff) <= -6)
+                    if (i_6_ >= 5)
                         Class367_Sub4.aBoolean7320 = true;
                 }
                 Applet applet = Class348_Sub40_Sub9.anApplet_Sub1_9169;
@@ -478,9 +474,7 @@ public abstract class Applet_Sub1 extends Applet
                 method92(28740);
                 Class348_Sub8.aClass241_6660 = Class229.method1631(false);
                 while (Class113.aLong1739 == 0L
-                        || ((Class113.aLong1739 ^ 0xffffffffffffffffL)
-                        < (Class62.method599(-124)
-                        ^ 0xffffffffffffffffL))) {
+                        || (Class62.method599(-124) < Class113.aLong1739)) {
                     Class101_Sub2.anInt5744
                             = Class348_Sub8.aClass241_6660
                             .method1861(0, Class73.aLong4783);
@@ -519,7 +513,7 @@ public abstract class Applet_Sub1 extends Applet
         String[] strings = Class348_Sub40_Sub23.method3113('\n', true, string);
         for (int i_12_ = 0; i_12_ < strings.length; i_12_++) {
             for (int i_13_ = Class369_Sub2.anInt8587;
-                 (i_13_ ^ 0xffffffff) < -1; i_13_--)
+                 i_13_ > 0; i_13_--)
                 Class286_Sub1.aStringArray6200[i_13_]
                         = Class286_Sub1.aStringArray6200[-1 + i_13_];
             Class286_Sub1.aStringArray6200[0]
@@ -535,8 +529,7 @@ public abstract class Applet_Sub1 extends Applet
                     /* empty */
                 }
             }
-            if ((Class369_Sub2.anInt8587 ^ 0xffffffff)
-                    > (-1 + Class286_Sub1.aStringArray6200.length ^ 0xffffffff)) {
+            if (-1 + Class286_Sub1.aStringArray6200.length > Class369_Sub2.anInt8587) {
                 Class369_Sub2.anInt8587++;
                 if (Class284.anInt3676 > 0)
                     Class284.anInt3676++;
@@ -574,7 +567,7 @@ public abstract class Applet_Sub1 extends Applet
                         -10240, 1);
                 if (i_19_ != 50)
                     anInt37 = -13;
-                while ((class144.anInt1997 ^ 0xffffffff) == -1)
+                while (class144.anInt1997 == 0)
                     Class286_Sub5.method2161((byte) -126, 10L);
             }
         } catch (Throwable throwable) {

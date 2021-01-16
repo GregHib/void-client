@@ -25,8 +25,8 @@ final class Class239_Sub4 extends Class239 {
             this.anInt3138 = 1;
         else if (this.aClass348_Sub51_3136.method3425(-95))
             this.anInt3138 = 0;
-        if ((this.anInt3138 ^ 0xffffffff) != -1
-                && (this.anInt3138 ^ 0xffffffff) != -2)
+        if (this.anInt3138 != 0
+                && this.anInt3138 != 1)
             this.anInt3138 = method1710(20014);
     }
 
@@ -93,7 +93,7 @@ final class Class239_Sub4 extends Class239 {
 
     static {
         double d = 3.834951969714103E-4;
-        for (int i = 0; (i ^ 0xffffffff) > -16385; i++) {
+        for (int i = 0; i < 16384; i++) {
             aFloatArray5874[i] = (float) Math.sin(d * (double) i);
             aFloatArray5876[i] = (float) Math.cos((double) i * d);
         }

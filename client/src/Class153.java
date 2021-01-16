@@ -40,7 +40,7 @@ final class Class153 {
             return false;
         anInt2088++;
         return Class299_Sub1.method2259(0, i_4_, i_3_)
-                | (i_3_ & 0x70000 ^ 0xffffffff) != -1
+                | (i_3_ & 0x70000) != 0
                 || Class288.method2187(i_3_, -79, i_4_);
     }
 
@@ -70,7 +70,7 @@ final class Class153 {
                 ((byte) 73,
                         Class113.aClass45_1743.method423(i_7_, (byte) -90)));
         if (is != null) {
-            if ((is.length ^ 0xffffffff) >= -2)
+            if (is.length <= 1)
                 return null;
             try {
                 class348_sub42_sub19 = Class318_Sub4.method2502(is, -85);
@@ -95,7 +95,7 @@ final class Class153 {
                 ((byte) 73,
                         Class113.aClass45_1743.method423(i_7_, (byte) -107)));
         if (is != null) {
-            if ((is.length ^ 0xffffffff) >= -2)
+            if (is.length <= 1)
                 return null;
             try {
                 class348_sub42_sub19 = Class318_Sub4.method2502(is, -101);
@@ -119,7 +119,7 @@ final class Class153 {
         is = (Class113.aClass45_1743.method415
                 ((byte) 73, Class113.aClass45_1743.method423(i_7_, (byte) 104)));
         if (is != null) {
-            if ((is.length ^ 0xffffffff) >= -2)
+            if (is.length <= 1)
                 return null;
             try {
                 class348_sub42_sub19 = Class318_Sub4.method2502(is, -110);

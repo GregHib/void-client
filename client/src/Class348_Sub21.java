@@ -22,7 +22,7 @@ final class Class348_Sub21 extends Class348 {
                     >> 1817537424)
                     + Class195.anInt5019);
             Class117.anInt1780 += i_0_;
-            if ((Class117.anInt1780 ^ 0xffffffff) > -65536) {
+            if (Class117.anInt1780 < 65535) {
                 Class347.aBoolean4284 = false;
                 Class25.aBoolean368 = false;
             } else {
@@ -63,7 +63,7 @@ final class Class348_Sub21 extends Class348 {
             float[] fs_10_ = new float[3];
             int i_11_ = 2 * Class264.anInt3373;
             int i_12_ = -88 % ((-64 - i) / 57);
-            for (int i_13_ = 0; (i_13_ ^ 0xffffffff) > -4; i_13_++) {
+            for (int i_13_ = 0; i_13_ < 3; i_13_++) {
                 int i_14_ = 3 * (Class348_Sub43.anIntArrayArrayArray7079
                         [Class292.anInt4803][i_11_][i_13_]);
                 int i_15_ = 3 * (Class348_Sub43.anIntArrayArrayArray7079

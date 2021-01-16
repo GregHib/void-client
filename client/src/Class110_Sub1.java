@@ -28,14 +28,14 @@ final class Class110_Sub1 extends Class110 {
             aFloatArray5791 = null;
         for (int i_0_ = 0; i > i_0_; i_0_++) {
             char c = string.charAt(i_0_);
-            if ((c ^ 0xffffffff) == -38
-                    && (2 + i_0_ ^ 0xffffffff) > (i ^ 0xffffffff)) {
+            if (c == 37
+                    && i > 2 + i_0_) {
                 int i_1_ = string.charAt(i_0_ + 1);
                 boolean bool_2_ = false;
                 int i_3_;
                 if (i_1_ < 48 || i_1_ > 57) {
-                    if (i_1_ < 97 || (i_1_ ^ 0xffffffff) < -103) {
-                        if (i_1_ >= 65 && (i_1_ ^ 0xffffffff) >= -71)
+                    if (i_1_ < 97 || i_1_ > 102) {
+                        if (i_1_ >= 65 && i_1_ <= 70)
                             i_3_ = -55 + i_1_;
                         else {
                             stringbuffer.append('%');
@@ -47,10 +47,10 @@ final class Class110_Sub1 extends Class110 {
                     i_3_ = i_1_ - 48;
                 i_1_ = string.charAt(i_0_ + 2);
                 i_3_ *= 16;
-                if (i_1_ >= 48 && (i_1_ ^ 0xffffffff) >= -58)
+                if (i_1_ >= 48 && i_1_ <= 57)
                     i_3_ += i_1_ - 48;
-                else if ((i_1_ ^ 0xffffffff) > -98 || i_1_ > 102) {
-                    if (i_1_ >= 65 && (i_1_ ^ 0xffffffff) >= -71)
+                else if (i_1_ < 97 || i_1_ > 102) {
+                    if (i_1_ >= 65 && i_1_ <= 70)
                         i_3_ += -65 + (10 + i_1_);
                     else {
                         stringbuffer.append('%');
@@ -58,7 +58,7 @@ final class Class110_Sub1 extends Class110 {
                     }
                 } else
                     i_3_ += 10 + (i_1_ - 97);
-                if ((i_3_ ^ 0xffffffff) != -1
+                if (i_3_ != 0
                         && Class239_Sub3.method1732((byte) i_3_, -129))
                     stringbuffer.append(Class50_Sub1.method462((byte) i_3_,
                             -128));
@@ -82,22 +82,17 @@ final class Class110_Sub1 extends Class110 {
         boolean bool = false;
         if ((Class367_Sub11.anInt7396
                 != class318_sub1_sub3_sub3.anInt10300)
-                && (class318_sub1_sub3_sub3.anInt10286
-                ^ 0xffffffff) != 0
-                && (class318_sub1_sub3_sub3.anInt10218
-                ^ 0xffffffff) == -1) {
+                && class318_sub1_sub3_sub3.anInt10286 != -1
+                && class318_sub1_sub3_sub3.anInt10218 == 0) {
             Class17 class17
                     = Class10.aClass87_191.method835((class318_sub1_sub3_sub3
                             .anInt10286),
                     i + 8);
             if (class17.aBoolean241
-                    || ((1 + (class318_sub1_sub3_sub3
-                    .anInt10232)
-                    ^ 0xffffffff)
-                    < ((class17.anIntArray267
+                    || ((class17.anIntArray267
                     [(class318_sub1_sub3_sub3
-                    .anInt10267)])
-                    ^ 0xffffffff)))
+                    .anInt10267)]) < 1 + (class318_sub1_sub3_sub3
+                    .anInt10232)))
                 bool = true;
         } else
             bool = true;
@@ -134,13 +129,9 @@ final class Class110_Sub1 extends Class110 {
                 ^ 0xffffffff)
                 == i)
             class318_sub1_sub3_sub3.method2435((byte) -108, 8192, false);
-        if ((class318_sub1_sub3_sub3.anInt10231
-                ^ 0xffffffff)
-                == -2)
+        if (class318_sub1_sub3_sub3.anInt10231 == 1)
             class318_sub1_sub3_sub3.method2435((byte) -108, 12288, false);
-        if ((class318_sub1_sub3_sub3.anInt10231
-                ^ 0xffffffff)
-                == -3)
+        if (class318_sub1_sub3_sub3.anInt10231 == 2)
             class318_sub1_sub3_sub3.method2435((byte) -108, 0, false);
         if (class318_sub1_sub3_sub3.anInt10231
                 == 3)

@@ -51,11 +51,11 @@ final class Class30 {
 
     final boolean method321(int i, int i_14_, int i_15_, int i_16_) {
         anInt411++;
-        if (anInt418 > i_16_ || (anInt419 ^ 0xffffffff) > (i_16_ ^ 0xffffffff))
+        if (anInt418 > i_16_ || i_16_ > anInt419)
             return false;
-        if ((i_15_ ^ 0xffffffff) > (anInt416 ^ 0xffffffff) || i_15_ > anInt406)
+        if (anInt416 > i_15_ || i_15_ > anInt406)
             return false;
-        if (i_14_ < anInt412 || (i_14_ ^ 0xffffffff) < (anInt404 ^ 0xffffffff))
+        if (i_14_ < anInt412 || anInt404 < i_14_)
             return false;
         if (i != -14735)
             method323(null, null, (byte) 29);

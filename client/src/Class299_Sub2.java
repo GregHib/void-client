@@ -16,7 +16,7 @@ abstract class Class299_Sub2 extends Class299 {
         anInt6324++;
         if (i != 10499)
             method2267(55, -44, 14, -122, 70, 0, 127, 112);
-        if ((i_0_ ^ 0xffffffff) == (i_6_ ^ 0xffffffff))
+        if (i_6_ == i_0_)
             Class318_Sub1_Sub3_Sub3_Sub1.method2441(i_2_, i_6_, i_4_, -22728,
                     i_5_, i_3_, i_1_);
         else if (Class369.anInt4960 > -i_6_ + i_1_

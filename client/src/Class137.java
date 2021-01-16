@@ -18,8 +18,8 @@ final class Class137 {
             return true;
         anInt1935++;
         synchronized (aClass78_1933) {
-            if ((i ^ 0xffffffff) > -1
-                    || (anInt1939 ^ 0xffffffff) > (i ^ 0xffffffff))
+            if (i < 0
+                    || i > anInt1939)
                 throw new IllegalArgumentException();
             boolean bool = method1162(is, -15096, i_0_, i, true);
             if (!bool)
@@ -32,8 +32,7 @@ final class Class137 {
         anInt1937++;
         synchronized (aClass78_1933) {
             try {
-                if ((aClass78_1938.method787(0) ^ 0xffffffffffffffffL)
-                        > ((long) (6 * i_2_ - -6) ^ 0xffffffffffffffffL))
+                if ((long) (6 * i_2_ - -6) > aClass78_1938.method787(0))
                     return null;
                 aClass78_1938.method789(6 * i_2_, (byte) -106);
                 aClass78_1938.method788(0, Class239.aByteArray3144, 6,
@@ -47,8 +46,8 @@ final class Class137 {
                         = ((0xff & Class239.aByteArray3144[5])
                         + ((0xff & Class239.aByteArray3144[3]) << -1719237520)
                         - -((Class239.aByteArray3144[4] & 0xff) << 1980544360));
-                if ((i_3_ ^ 0xffffffff) > -1
-                        || (i_3_ ^ 0xffffffff) < (anInt1939 ^ 0xffffffff))
+                if (i_3_ < 0
+                        || anInt1939 < i_3_)
                     return null;
                 if (i_4_ <= 0
                         || (long) i_4_ > aClass78_1933.method787(0) / 520L)
@@ -58,8 +57,8 @@ final class Class137 {
                 if (i != -4)
                     return null;
                 int i_6_ = 0;
-                while ((i_5_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff)) {
-                    if ((i_4_ ^ 0xffffffff) == -1)
+                while (i_3_ > i_5_) {
+                    if (i_4_ == 0)
                         return null;
                     aClass78_1933.method789(i_4_ * 520, (byte) -103);
                     int i_7_ = -i_5_ + i_3_;
@@ -80,8 +79,8 @@ final class Class137 {
                             + (Class239.aByteArray3144[6] & 0xff));
                     int i_11_ = 0xff & Class239.aByteArray3144[7];
                     if (i_2_ != i_8_
-                            || (i_6_ ^ 0xffffffff) != (i_9_ ^ 0xffffffff)
-                            || (anInt1932 ^ 0xffffffff) != (i_11_ ^ 0xffffffff))
+                            || i_9_ != i_6_
+                            || i_11_ != anInt1932)
                         return null;
                     if (i_10_ < 0 || ((long) i_10_
                             > aClass78_1933.method787(i + 4) / 520L))
@@ -116,14 +115,12 @@ final class Class137 {
                             << -1115057712)
                             + ((Class239.aByteArray3144[4] & 0xff)
                             << 58869768));
-                    if ((i_15_ ^ 0xffffffff) >= -1
-                            || (((long) i_15_ ^ 0xffffffffffffffffL)
-                            < (aClass78_1933.method787(i ^ ~0x3af7) / 520L
-                            ^ 0xffffffffffffffffL)))
+                    if (i_15_ <= 0
+                            || (aClass78_1933.method787(i ^ ~0x3af7) / 520L < (long) i_15_))
                         return false;
                 } else {
                     i_15_ = (int) ((519L + aClass78_1933.method787(0)) / 520L);
-                    if ((i_15_ ^ 0xffffffff) == -1)
+                    if (i_15_ == 0)
                         i_15_ = 1;
                 }
                 Class239.aByteArray3144[0] = (byte) (i_14_ >> -416234640);
@@ -161,22 +158,20 @@ final class Class137 {
                                 & 0xff00)
                                 + (Class239.aByteArray3144[3] & 0xff));
                         int i_21_ = 0xff & Class239.aByteArray3144[7];
-                        if ((i_13_ ^ 0xffffffff) != (i_19_ ^ 0xffffffff)
+                        if (i_19_ != i_13_
                                 || i_20_ != i_17_ || i_21_ != anInt1932)
                             return false;
-                        if ((i_18_ ^ 0xffffffff) > -1
-                                || (((long) i_18_ ^ 0xffffffffffffffffL)
-                                < (aClass78_1933.method787(0) / 520L
-                                ^ 0xffffffffffffffffL)))
+                        if (i_18_ < 0
+                                || (aClass78_1933.method787(0) / 520L < (long) i_18_))
                             return false;
                     }
                     if (i_18_ == 0) {
                         bool = false;
                         i_18_ = (int) ((aClass78_1933.method787(0) - -519L)
                                 / 520L);
-                        if ((i_18_ ^ 0xffffffff) == -1)
+                        if (i_18_ == 0)
                             i_18_++;
-                        if ((i_18_ ^ 0xffffffff) == (i_15_ ^ 0xffffffff))
+                        if (i_15_ == i_18_)
                             i_18_++;
                     }
                     if (i_14_ + -i_16_ <= 512)
@@ -215,7 +210,7 @@ final class Class137 {
     static final boolean method1163(int i, byte i_23_, int i_24_) {
         int i_25_ = -65 / ((i_23_ - 2) / 55);
         anInt1931++;
-        return (i_24_ & 0x800 ^ 0xffffffff) != -1;
+        return (i_24_ & 0x800) != 0;
     }
 
     Class137(int i, Class78 class78, Class78 class78_26_, int i_27_) {

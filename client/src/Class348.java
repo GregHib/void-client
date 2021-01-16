@@ -23,12 +23,12 @@ class Class348 {
         if (i_1_ != -1)
             method2711(-42, 89, null, -113, true, -22, -35, 27, -109, null, 74,
                     -94, -119, null);
-        return (0x21 & i_0_ ^ 0xffffffff) != -1;
+        return (0x21 & i_0_) != 0;
     }
 
     static final int method2710(int i, int i_2_) {
         anInt4289++;
-        if ((i_2_ ^ 0xffffffff) > -97)
+        if (i_2_ < 96)
             return 0;
         if (i >= -113)
             aClass318_Sub1Array4293 = null;
@@ -62,8 +62,7 @@ class Class348 {
                         = (Class64) Class342.aClass60_4254.method583(l, -64);
             }
             if (class64_13_ == null
-                    || ((var_ha.method3667(class64_13_.ua(), i_12_) ^ 0xffffffff)
-                    != -1)) {
+                    || (var_ha.method3667(class64_13_.ua(), i_12_) != 0)) {
                 if (class64_13_ != null)
                     i_12_ = var_ha.method3679(i_12_, class64_13_.ua());
                 int i_14_;
@@ -71,7 +70,7 @@ class Class348 {
                     if (i_7_ == 2)
                         i_14_ = 12;
                     else if (i_7_ != 3) {
-                        if ((i_7_ ^ 0xffffffff) == -5)
+                        if (i_7_ == 4)
                             i_14_ = 18;
                         else
                             i_14_ = 21;
@@ -90,7 +89,7 @@ class Class348 {
                     int i_19_ = is[i_18_];
                     int i_20_ = is[i_18_];
                     for (int i_21_ = 0;
-                         (i_21_ ^ 0xffffffff) > (i_14_ ^ 0xffffffff);
+                         i_14_ > i_21_;
                          i_21_++) {
                         int i_22_ = (i_21_ << 1406929102) / i_14_;
                         int i_23_ = (Class70.anIntArray1207[i_22_] * i_19_
@@ -102,7 +101,7 @@ class Class348 {
                     }
                 }
                 for (int i_25_ = 0;
-                     (i_25_ ^ 0xffffffff) > (i_15_ ^ 0xffffffff); i_25_++) {
+                     i_15_ > i_25_; i_25_++) {
                     int i_26_ = (i_25_ * 256 + 128) / i_15_;
                     int i_27_ = -i_26_ + 256;
                     byte i_28_
@@ -118,7 +117,7 @@ class Class348 {
                             & 0x7f00))
                             >> -874266712);
                     for (int i_30_ = 0;
-                         (i_14_ ^ 0xffffffff) < (i_30_ ^ 0xffffffff);
+                         i_30_ < i_14_;
                          i_30_++) {
                         if (i_25_ == 0)
                             class124.method1102(i_16_, (byte) 1, (byte) -1,
@@ -174,9 +173,9 @@ class Class348 {
             }
             if (i != 0)
                 class64_13_.FA(i);
-            if ((i_4_ ^ 0xffffffff) != -1)
+            if (i_4_ != 0)
                 class64_13_.VA(i_4_);
-            if ((i_8_ ^ 0xffffffff) != -1)
+            if (i_8_ != 0)
                 class64_13_.H(0, i_8_, 0);
             return class64_13_;
         } catch (RuntimeException runtimeexception) {
@@ -212,8 +211,8 @@ class Class348 {
         if (i != 7351)
             method2709(-15, 59, 58);
         anInt4296++;
-        return (i_35_ ^ 0xffffffff) == -2 || (i_35_ ^ 0xffffffff) == -4
-                || (i_35_ ^ 0xffffffff) == -6;
+        return i_35_ == 1 || i_35_ == 3
+                || i_35_ == 5;
     }
 
     final void method2715(byte i) {

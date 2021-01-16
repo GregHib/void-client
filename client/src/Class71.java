@@ -36,8 +36,8 @@ final class Class71 {
         if (i != -1) {
             if ((class318_sub1_sub3_sub3.anInt10275
                     == -1)
-                    || ((i_3_ ^ 0xffffffff) > -10241
-                    && (i_3_ ^ 0xffffffff) < -2049)) {
+                    || (i_3_ < 10240
+                    && i_3_ > 2048)) {
                 if (i_3_ == 0
                         && (class318_sub1_sub3_sub3
                         .anInt10247) <= 25) {
@@ -57,30 +57,27 @@ final class Class71 {
                             .aBoolean10213
                             = false;
                 } else {
-                    if (i != 2 || (class225.anInt2919
-                            ^ 0xffffffff) == 0) {
-                        if ((i ^ 0xffffffff) != -1
+                    if (i != 2 || class225.anInt2919 == -1) {
+                        if (i != 0
                                 || class225.anInt2940 == -1) {
-                            if ((i_0_ ^ 0xffffffff) > -1
-                                    && (class225.anInt2934
-                                    ^ 0xffffffff) != 0)
+                            if (i_0_ < 0
+                                    && class225.anInt2934 != -1)
                                 class318_sub1_sub3_sub3.anInt10268
                                         = class225.anInt2934;
-                            else if ((i_0_ ^ 0xffffffff) >= -1
+                            else if (i_0_ <= 0
                                     || class225.anInt2953 == -1)
                                 class318_sub1_sub3_sub3.anInt10268
                                         = class225.anInt2951;
                             else
                                 class318_sub1_sub3_sub3.anInt10268
                                         = class225.anInt2953;
-                        } else if ((i_0_ ^ 0xffffffff) > -1
+                        } else if (i_0_ < 0
                                 && class225.anInt2908 != -1)
                             class318_sub1_sub3_sub3
                                     .anInt10268
                                     = class225.anInt2908;
-                        else if ((i_0_ ^ 0xffffffff) < -1
-                                && (class225.anInt2927
-                                ^ 0xffffffff) != 0)
+                        else if (i_0_ > 0
+                                && class225.anInt2927 != -1)
                             class318_sub1_sub3_sub3
                                     .anInt10268
                                     = class225.anInt2927;
@@ -88,9 +85,8 @@ final class Class71 {
                             class318_sub1_sub3_sub3
                                     .anInt10268
                                     = class225.anInt2940;
-                    } else if (i_0_ >= 0 || (class225.anInt2905
-                            ^ 0xffffffff) == 0) {
-                        if ((i_0_ ^ 0xffffffff) >= -1
+                    } else if (i_0_ >= 0 || class225.anInt2905 == -1) {
+                        if (i_0_ <= 0
                                 || class225.anInt2911 == -1)
                             class318_sub1_sub3_sub3
                                     .anInt10268
@@ -112,21 +108,19 @@ final class Class71 {
                         = 0x3fff & (Class10.anIntArray187[i_2_]
                         - class318_sub1_sub3_sub3
                         .aClass264_10217.anInt3370);
-                if ((i ^ 0xffffffff) != -3
+                if (i != 2
                         || class225.anInt2919 == -1) {
-                    if ((i ^ 0xffffffff) == -1
-                            && ((class225.anInt2940 ^ 0xffffffff)
-                            != 0)) {
+                    if (i == 0
+                            && (class225.anInt2940 != -1)) {
                         if (i_4_ <= 2048 || i_4_ > 6144
                                 || class225.anInt2947 == -1) {
-                            if (i_4_ >= 10240 && (i_4_ ^ 0xffffffff) > -14337
+                            if (i_4_ >= 10240 && i_4_ < 14336
                                     && class225.anInt2958 != -1)
                                 class318_sub1_sub3_sub3.anInt10268
                                         = class225.anInt2958;
-                            else if ((i_4_ ^ 0xffffffff) < -6145
+                            else if (i_4_ > 6144
                                     && i_4_ < 10240
-                                    && (class225.anInt2924
-                                    ^ 0xffffffff) != 0)
+                                    && class225.anInt2924 != -1)
                                 class318_sub1_sub3_sub3.anInt10268
                                         = class225.anInt2924;
                             else
@@ -136,20 +130,18 @@ final class Class71 {
                             class318_sub1_sub3_sub3
                                     .anInt10268
                                     = class225.anInt2947;
-                    } else if ((i_4_ ^ 0xffffffff) < -2049 && i_4_ <= 6144
-                            && (class225.anInt2954
-                            ^ 0xffffffff) != 0)
+                    } else if (i_4_ > 2048 && i_4_ <= 6144
+                            && class225.anInt2954 != -1)
                         class318_sub1_sub3_sub3
                                 .anInt10268
                                 = class225.anInt2954;
-                    else if (i_4_ >= 10240 && (i_4_ ^ 0xffffffff) > -14337
-                            && ((class225.anInt2937 ^ 0xffffffff)
-                            != 0))
+                    else if (i_4_ >= 10240 && i_4_ < 14336
+                            && (class225.anInt2937 != -1))
                         class318_sub1_sub3_sub3
                                 .anInt10268
                                 = class225.anInt2937;
-                    else if ((i_4_ ^ 0xffffffff) < -6145
-                            && (i_4_ ^ 0xffffffff) > -10241
+                    else if (i_4_ > 6144
+                            && i_4_ < 10240
                             && class225.anInt2938 != -1)
                         class318_sub1_sub3_sub3
                                 .anInt10268
@@ -158,17 +150,16 @@ final class Class71 {
                         class318_sub1_sub3_sub3
                                 .anInt10268
                                 = class225.anInt2951;
-                } else if ((i_4_ ^ 0xffffffff) < -2049 && i_4_ <= 6144
-                        && ((class225.anInt2949 ^ 0xffffffff)
-                        != 0))
+                } else if (i_4_ > 2048 && i_4_ <= 6144
+                        && (class225.anInt2949 != -1))
                     class318_sub1_sub3_sub3
                             .anInt10268
                             = class225.anInt2949;
-                else if ((i_4_ ^ 0xffffffff) > -10241 || i_4_ >= 14336
+                else if (i_4_ < 10240 || i_4_ >= 14336
                         || class225.anInt2914 == -1) {
-                    if ((i_4_ ^ 0xffffffff) >= -6145
-                            || (i_4_ ^ 0xffffffff) <= -10241
-                            || (class225.anInt2920 ^ 0xffffffff) == 0)
+                    if (i_4_ <= 6144
+                            || i_4_ >= 10240
+                            || class225.anInt2920 == -1)
                         class318_sub1_sub3_sub3
                                 .anInt10268
                                 = class225.anInt2919;
@@ -184,12 +175,12 @@ final class Class71 {
                         .aBoolean10213
                         = false;
             }
-        } else if ((i_3_ ^ 0xffffffff) != -1
+        } else if (i_3_ != 0
                 || (class318_sub1_sub3_sub3
                 .anInt10247) > 25) {
-            if ((i_0_ ^ 0xffffffff) <= -1
-                    || (class225.anInt2916 ^ 0xffffffff) == 0) {
-                if ((i_0_ ^ 0xffffffff) >= -1
+            if (i_0_ >= 0
+                    || class225.anInt2916 == -1) {
+                if (i_0_ <= 0
                         || class225.anInt2922 == -1)
                     class318_sub1_sub3_sub3
                             .anInt10268
@@ -215,9 +206,8 @@ final class Class71 {
             class318_sub1_sub3_sub3.anInt10268
                     = class225.method1621((byte) 37);
             class318_sub1_sub3_sub3.aBoolean10213
-                    = ((class318_sub1_sub3_sub3
-                    .anInt10268)
-                    ^ 0xffffffff) != 0;
+                    = (class318_sub1_sub3_sub3
+                    .anInt10268) != -1;
         }
     }
 

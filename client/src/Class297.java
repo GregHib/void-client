@@ -108,7 +108,7 @@ final class Class297 implements Runnable {
             try {
                 int i = class144.anInt1994;
                 if (i != 1) {
-                    if ((i ^ 0xffffffff) != -23) {
+                    if (i != 22) {
                         if (i == 2) {
                             Thread thread
                                     = new Thread((Runnable) (class144
@@ -117,10 +117,8 @@ final class Class297 implements Runnable {
                             thread.start();
                             thread.setPriority(class144.anInt2000);
                             class144.anObject1998 = thread;
-                        } else if ((i ^ 0xffffffff) == -5) {
-                            if ((aLong3781 ^ 0xffffffffffffffffL)
-                                    < (Class62.method599(-73)
-                                    ^ 0xffffffffffffffffL))
+                        } else if (i == 4) {
+                            if (Class62.method599(-73) < aLong3781)
                                 throw new IOException();
                             class144.anObject1998
                                     = new DataInputStream(((URL)
@@ -128,7 +126,7 @@ final class Class297 implements Runnable {
                                             .anObject1996))
                                     .openStream());
                         } else if (i != 8) {
-                            if ((i ^ 0xffffffff) != -10) {
+                            if (i != 9) {
                                 if (i != 18) {
                                     if (i == 19) {
                                         Transferable transferable
@@ -142,7 +140,7 @@ final class Class297 implements Runnable {
                                                 null);
                                     } else if (this
                                             .aBoolean3777) {
-                                        if ((i ^ 0xffffffff) == -4) {
+                                        if (i == 3) {
                                             if (aLong3781
                                                     > Class62.method599(-123))
                                                 throw new IOException();
@@ -173,9 +171,9 @@ final class Class297 implements Runnable {
                                                             (class144
                                                                     .anObject1996))
                                                     .getAddress();
-                                        } else if ((i ^ 0xffffffff) != -6) {
+                                        } else if (i != 5) {
                                             if (i != 6) {
-                                                if ((i ^ 0xffffffff) == -8) {
+                                                if (i == 7) {
                                                     if (this
                                                             .aBoolean3794)
                                                         aClass134_3802
@@ -203,8 +201,7 @@ final class Class297 implements Runnable {
                                                                     anInt3792));
                                                     class144.anObject1998
                                                             = class234;
-                                                } else if ((i ^ 0xffffffff)
-                                                        != -14) {
+                                                } else if (i != 13) {
                                                     if ((this
                                                             .aBoolean3777)
                                                             && i == 14) {
@@ -239,14 +236,10 @@ final class Class297 implements Runnable {
                                                                                             (i_6_)));
                                                     } else if ((this
                                                             .aBoolean3777)
-                                                            && ((i
-                                                            ^ 0xffffffff)
-                                                            == -16)) {
+                                                            && (i == 15)) {
                                                         boolean bool
-                                                                = (((class144
-                                                                .anInt2000)
-                                                                ^ 0xffffffff)
-                                                                != -1);
+                                                                = ((class144
+                                                                .anInt2000) != 0);
                                                         Component component
                                                                 = ((Component)
                                                                 (class144
@@ -278,9 +271,7 @@ final class Class297 implements Runnable {
                                                                                             (bool)));
                                                     } else if (!(this
                                                             .aBoolean3794)
-                                                            && ((i
-                                                            ^ 0xffffffff)
-                                                            == -18)) {
+                                                            && (i == 17)) {
                                                         Object[] objects
                                                                 = ((Object[])
                                                                 (class144
@@ -322,8 +313,7 @@ final class Class297 implements Runnable {
                                                                                                 .anInt1999)),
                                                                                 objects
                                                                                         [2]);
-                                                    } else if ((i ^ 0xffffffff)
-                                                            == -17) {
+                                                    } else if (i == 16) {
                                                         try {
                                                             if (!aString3803
                                                                     .startsWith
@@ -345,20 +335,15 @@ final class Class297 implements Runnable {
                                                             String string_7_
                                                                     = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
                                                             for (int i_8_ = 0;
-                                                                 (((string
+                                                                 (i_8_ < (string
                                                                          .length
-                                                                                 ())
-                                                                         ^ 0xffffffff)
-                                                                         < (i_8_
-                                                                         ^ 0xffffffff));
+                                                                                 ()));
                                                                  i_8_++) {
-                                                                if (((string_7_
+                                                                if ((string_7_
                                                                         .indexOf
                                                                                 (string
                                                                                         .charAt
-                                                                                                (i_8_)))
-                                                                        ^ 0xffffffff)
-                                                                        == 0)
+                                                                                                (i_8_))) == -1)
                                                                     throw new Exception
                                                                             ();
                                                             }
@@ -492,8 +477,7 @@ final class Class297 implements Runnable {
                                             (Class[]) objects[2]));
                         }
                     } else {
-                        if ((Class62.method599(-92) ^ 0xffffffffffffffffL)
-                                > (aLong3781 ^ 0xffffffffffffffffL))
+                        if (aLong3781 > Class62.method599(-92))
                             throw new IOException();
                         try {
                             class144.anObject1998
@@ -509,8 +493,7 @@ final class Class297 implements Runnable {
                         }
                     }
                 } else {
-                    if ((Class62.method599(-53) ^ 0xffffffffffffffffL)
-                            > (aLong3781 ^ 0xffffffffffffffffL))
+                    if (aLong3781 > Class62.method599(-53))
                         throw new IOException();
                     class144.anObject1998
                             = new Socket(InetAddress.getByName((String)
@@ -620,7 +603,7 @@ final class Class297 implements Runnable {
     private static final Class234 method2241(String string, int i,
                                              String string_14_, int i_15_) {
         String string_16_;
-        if ((i_15_ ^ 0xffffffff) == -34)
+        if (i_15_ == 33)
             string_16_
                     = "jagex_" + string_14_ + "_preferences" + string + "_rc.dat";
         else if (i_15_ != 34)
@@ -635,7 +618,7 @@ final class Class297 implements Runnable {
                 "c:/windows/", "c:/winnt/", "c:/", "/tmp/", ""};
         for (int i_17_ = 0; strings.length > i_17_; i_17_++) {
             String string_18_ = strings[i_17_];
-            if ((string_18_.length() ^ 0xffffffff) >= -1
+            if (string_18_.length() <= 0
                     || new File(string_18_).exists()) {
                 try {
                     Class234 class234
@@ -737,7 +720,7 @@ final class Class297 implements Runnable {
         } catch (Exception exception) {
             /* empty */
         }
-        if ((aString3782.toLowerCase().indexOf("microsoft") ^ 0xffffffff) != 0)
+        if (aString3782.toLowerCase().indexOf("microsoft") != -1)
             this.aBoolean3794 = true;
         try {
             aString3784 = System.getProperty("os.name");
@@ -801,7 +784,7 @@ final class Class297 implements Runnable {
                     "main_file_cache.idx255"),
                     "rw", 1048576L);
             this.aClass234Array3795 = new Class234[i_22_];
-            for (int i_23_ = 0; (i_23_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff);
+            for (int i_23_ = 0; i_22_ > i_23_;
                  i_23_++)
                 this.aClass234Array3795[i_23_]
                         = new Class234(Class201.method1466(-2,
@@ -842,7 +825,7 @@ final class Class297 implements Runnable {
             Thread[] threads = new Thread[1000];
             threadgroup.enumerate(threads);
             for (int i_25_ = 0;
-                 (i_25_ ^ 0xffffffff) > (threads.length ^ 0xffffffff);
+                 threads.length > i_25_;
                  i_25_++) {
                 if (threads[i_25_] != null
                         && threads[i_25_].getName().startsWith("AWT"))

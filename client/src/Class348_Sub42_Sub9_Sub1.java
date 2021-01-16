@@ -52,9 +52,7 @@ final class Class348_Sub42_Sub9_Sub1 extends Class348_Sub42_Sub9 {
                 != null) {
             int i_3_ = (class318_sub1_sub3_sub3
                     .anIntArray10236[1 + i]);
-            if ((class318_sub1_sub3_sub3.anInt10286
-                    ^ 0xffffffff)
-                    != (i_3_ ^ 0xffffffff)) {
+            if (i_3_ != class318_sub1_sub3_sub3.anInt10286) {
                 class318_sub1_sub3_sub3.anInt10322
                         = (class318_sub1_sub3_sub3
                         .anInt10319);

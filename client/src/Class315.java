@@ -78,28 +78,16 @@ final class Class315 {
                 .aBoolean10213)) {
             if ((class318_sub1_sub3_sub3_sub2
                     .anInt10268) != class225.anInt2919
-                    && ((class225.anInt2920 ^ 0xffffffff)
-                    != (class318_sub1_sub3_sub3_sub2.anInt10268
-                    ^ 0xffffffff))
-                    && (((class318_sub1_sub3_sub3_sub2
-                    .anInt10268)
-                    ^ 0xffffffff)
-                    != (class225.anInt2949 ^ 0xffffffff))
-                    && ((class225.anInt2914 ^ 0xffffffff)
-                    != (class318_sub1_sub3_sub3_sub2.anInt10268
-                    ^ 0xffffffff))) {
-                if ((((class318_sub1_sub3_sub3_sub2
-                        .anInt10268)
-                        ^ 0xffffffff)
-                        == (class225.anInt2940 ^ 0xffffffff))
+                    && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2920)
+                    && (class225.anInt2949 != (class318_sub1_sub3_sub3_sub2
+                    .anInt10268))
+                    && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2914)) {
+                if ((class225.anInt2940 == (class318_sub1_sub3_sub3_sub2
+                        .anInt10268))
                         || (class318_sub1_sub3_sub3_sub2.anInt10268
                         == class225.anInt2924)
-                        || ((class225.anInt2947 ^ 0xffffffff)
-                        == (class318_sub1_sub3_sub3_sub2.anInt10268
-                        ^ 0xffffffff))
-                        || ((class225.anInt2958 ^ 0xffffffff)
-                        == (class318_sub1_sub3_sub3_sub2.anInt10268
-                        ^ 0xffffffff)))
+                        || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2947)
+                        || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2958))
                     i_4_ = class318_sub1_sub3_sub3_sub2.anInt10526;
             } else
                 i_4_ = class318_sub1_sub3_sub3_sub2.anInt10519;
@@ -134,7 +122,7 @@ final class Class315 {
     final boolean method2360(int i) {
         int i_7_ = 46 % ((i - 10) / 54);
         anInt3955++;
-        return (anInt3957 ^ 0xffffffff) == -1;
+        return anInt3957 == 0;
     }
 
     final void method2361(int i, Class318_Sub1 class318_sub1) {

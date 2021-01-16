@@ -49,7 +49,7 @@ final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3
                     this.aByte6381, i_0_, this,
                     bool, i_10_);
             aBoolean10056
-                    = (class51.anInt874 ^ 0xffffffff) != -1 && !bool;
+                    = class51.anInt874 != 0 && !bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

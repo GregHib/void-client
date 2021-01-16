@@ -29,7 +29,7 @@ final class Class327 {
         anInt4092++;
         if (i != -99)
             anIntArray4097 = null;
-        return (Class348_Sub43.anInt7068 ^ 0xffffffff) != -1;
+        return Class348_Sub43.anInt7068 != 0;
     }
 
     static final void method2606(int i, long l) {

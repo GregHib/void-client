@@ -47,7 +47,7 @@ final class Class342 {
                             (i_2_ - -(class323.method2565() * i_1_)
                                     - (i_5_ - 1)),
                             class42.anInt602);
-                if ((class42.anInt604 ^ 0xffffffff) != -1)
+                if (class42.anInt604 != 0)
                     var_ha.method3668(i_3_ + 10, i_5_,
                             class42.anInt604, i_4_,
                             (i_1_ * class323.method2565() + i_2_
@@ -57,7 +57,7 @@ final class Class342 {
                 if (class348_sub21.aBoolean6848
                         && class42.anInt567 != -1)
                     i_6_ = class42.anInt567;
-                for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff);
+                for (int i_7_ = 0; i_1_ > i_7_;
                      i_7_++) {
                     String string = ha_Sub3.aStringArray8019[i_7_];
                     if (-1 + i_1_ > i_7_)

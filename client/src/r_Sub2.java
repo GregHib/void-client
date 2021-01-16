@@ -30,7 +30,7 @@ final class r_Sub2 extends r {
         anInt10485++;
         int i_4_ = -1;
         int i_5_ = -8 + this.aByteArray10486.length;
-        while ((i_4_ ^ 0xffffffff) > (i_5_ ^ 0xffffffff)) {
+        while (i_5_ > i_4_) {
             this.aByteArray10486[++i_4_] = (byte) 0;
             this.aByteArray10486[++i_4_] = (byte) 0;
             this.aByteArray10486[++i_4_] = (byte) 0;
@@ -41,8 +41,7 @@ final class r_Sub2 extends r {
             this.aByteArray10486[++i_4_] = (byte) 0;
         }
         if (i == 0) {
-            while ((this.aByteArray10486.length - 1 ^ 0xffffffff)
-                    < (i_4_ ^ 0xffffffff))
+            while (i_4_ < this.aByteArray10486.length - 1)
                 this.aByteArray10486[++i_4_] = (byte) 0;
         }
     }
@@ -58,10 +57,10 @@ final class r_Sub2 extends r {
         if (i_11_ != i_10_)
             i_14_ = (i - i_9_ << -471189328) / (-i_11_ + i_10_);
         int i_15_ = 0;
-        if ((i_7_ ^ 0xffffffff) != (i_10_ ^ 0xffffffff))
+        if (i_10_ != i_7_)
             i_15_ = (i_6_ - i << -752300112) / (i_7_ + -i_10_);
         if (i_11_ >= i_7_ && i_7_ <= i_10_) {
-            if ((i_11_ ^ 0xffffffff) > (i_10_ ^ 0xffffffff)) {
+            if (i_10_ > i_11_) {
                 i = i_6_ <<= -1167965648;
                 if (i_7_ < 0) {
                     i -= i_7_ * i_15_;
@@ -69,17 +68,17 @@ final class r_Sub2 extends r {
                     i_7_ = 0;
                 }
                 i_9_ <<= -1709216688;
-                if ((i_11_ ^ 0xffffffff) > -1) {
+                if (i_11_ < 0) {
                     i_9_ -= i_14_ * i_11_;
                     i_11_ = 0;
                 }
                 if ((i_7_ == i_11_ || i_15_ >= i_12_)
-                        && ((i_11_ ^ 0xffffffff) != (i_7_ ^ 0xffffffff)
-                        || (i_15_ ^ 0xffffffff) >= (i_14_ ^ 0xffffffff))) {
+                        && (i_7_ != i_11_
+                        || i_14_ >= i_15_)) {
                     i_10_ -= i_11_;
                     i_11_ -= i_7_;
                     i_7_ = this.anInt10482 * i_7_;
-                    while ((--i_11_ ^ 0xffffffff) <= -1) {
+                    while (--i_11_ >= 0) {
                         Class304.method2289(i_6_ >> 1294609040, i_7_, -36, 0,
                                 this.aByteArray10486,
                                 i >> -1130520496);
@@ -87,7 +86,7 @@ final class r_Sub2 extends r {
                         i_7_ += this.anInt10482;
                         i += i_15_;
                     }
-                    while ((--i_10_ ^ 0xffffffff) <= -1) {
+                    while (--i_10_ >= 0) {
                         Class304.method2289(i_9_ >> -1092336912, i_7_, -104, 0,
                                 this.aByteArray10486,
                                 i >> -775781552);
@@ -99,7 +98,7 @@ final class r_Sub2 extends r {
                     i_10_ -= i_11_;
                     i_11_ -= i_7_;
                     i_7_ = this.anInt10482 * i_7_;
-                    while ((--i_11_ ^ 0xffffffff) <= -1) {
+                    while (--i_11_ >= 0) {
                         Class304.method2289(i >> -1236966352, i_7_, -111, 0,
                                 this.aByteArray10486,
                                 i_6_ >> 770894736);
@@ -107,7 +106,7 @@ final class r_Sub2 extends r {
                         i += i_15_;
                         i_6_ += i_12_;
                     }
-                    while ((--i_10_ ^ 0xffffffff) <= -1) {
+                    while (--i_10_ >= 0) {
                         Class304.method2289(i >> -1522319888, i_7_, -120, 0,
                                 this.aByteArray10486,
                                 i_9_ >> 1507459440);
@@ -118,7 +117,7 @@ final class r_Sub2 extends r {
                 }
             } else {
                 i_9_ = i_6_ <<= -1228970768;
-                if ((i_7_ ^ 0xffffffff) > -1) {
+                if (i_7_ < 0) {
                     i_6_ -= i_12_ * i_7_;
                     i_9_ -= i_15_ * i_7_;
                     i_7_ = 0;
@@ -128,9 +127,9 @@ final class r_Sub2 extends r {
                     i -= i_14_ * i_10_;
                     i_10_ = 0;
                 }
-                if (((i_10_ ^ 0xffffffff) == (i_7_ ^ 0xffffffff)
+                if ((i_7_ == i_10_
                         || i_12_ <= i_15_)
-                        && ((i_7_ ^ 0xffffffff) != (i_10_ ^ 0xffffffff)
+                        && (i_10_ != i_7_
                         || i_14_ <= i_12_)) {
                     i_11_ -= i_10_;
                     i_10_ -= i_7_;
@@ -143,7 +142,7 @@ final class r_Sub2 extends r {
                         i_7_ += this.anInt10482;
                         i_6_ += i_12_;
                     }
-                    while ((--i_11_ ^ 0xffffffff) <= -1) {
+                    while (--i_11_ >= 0) {
                         Class304.method2289(i_6_ >> -422896112, i_7_, -62, 0,
                                 this.aByteArray10486,
                                 i >> -1919498320);
@@ -155,7 +154,7 @@ final class r_Sub2 extends r {
                     i_11_ -= i_10_;
                     i_10_ -= i_7_;
                     i_7_ *= this.anInt10482;
-                    while ((--i_10_ ^ 0xffffffff) <= -1) {
+                    while (--i_10_ >= 0) {
                         Class304.method2289(i_9_ >> 96551056, i_7_, -102, 0,
                                 this.aByteArray10486,
                                 i_6_ >> -972110128);
@@ -163,7 +162,7 @@ final class r_Sub2 extends r {
                         i_9_ += i_15_;
                         i_6_ += i_12_;
                     }
-                    while ((--i_11_ ^ 0xffffffff) <= -1) {
+                    while (--i_11_ >= 0) {
                         Class304.method2289(i >> 574649104, i_7_, -92, 0,
                                 this.aByteArray10486,
                                 i_6_ >> 2116942416);
@@ -173,11 +172,11 @@ final class r_Sub2 extends r {
                     }
                 }
             }
-        } else if ((i_11_ ^ 0xffffffff) < (i_10_ ^ 0xffffffff)) {
+        } else if (i_10_ < i_11_) {
             if (i_11_ <= i_7_) {
                 i_6_ = i <<= -1859479696;
                 i_9_ <<= -1453584560;
-                if ((i_10_ ^ 0xffffffff) > -1) {
+                if (i_10_ < 0) {
                     i -= i_10_ * i_15_;
                     i_6_ -= i_10_ * i_14_;
                     i_10_ = 0;
@@ -186,11 +185,11 @@ final class r_Sub2 extends r {
                     i_9_ -= i_11_ * i_12_;
                     i_11_ = 0;
                 }
-                if ((i_14_ ^ 0xffffffff) <= (i_15_ ^ 0xffffffff)) {
+                if (i_15_ <= i_14_) {
                     i_7_ -= i_11_;
                     i_11_ -= i_10_;
                     i_10_ = this.anInt10482 * i_10_;
-                    while ((--i_11_ ^ 0xffffffff) <= -1) {
+                    while (--i_11_ >= 0) {
                         Class304.method2289(i >> -969983856, i_10_, -68, 0,
                                 this.aByteArray10486,
                                 i_6_ >> 110992720);
@@ -218,7 +217,7 @@ final class r_Sub2 extends r {
                         i_6_ += i_14_;
                         i_10_ += this.anInt10482;
                     }
-                    while ((--i_7_ ^ 0xffffffff) <= -1) {
+                    while (--i_7_ >= 0) {
                         Class304.method2289(i_9_ >> 1208035216, i_10_, -122, 0,
                                 this.aByteArray10486,
                                 i >> -328427984);
@@ -239,11 +238,11 @@ final class r_Sub2 extends r {
                     i_6_ -= i_7_ * i_12_;
                     i_7_ = 0;
                 }
-                if ((i_15_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff)) {
+                if (i_14_ < i_15_) {
                     i_11_ -= i_7_;
                     i_7_ -= i_10_;
                     i_10_ = this.anInt10482 * i_10_;
-                    while ((--i_7_ ^ 0xffffffff) <= -1) {
+                    while (--i_7_ >= 0) {
                         Class304.method2289(i_9_ >> 813058384, i_10_, -36, 0,
                                 this.aByteArray10486,
                                 i >> -977261424);
@@ -283,17 +282,17 @@ final class r_Sub2 extends r {
             }
         } else if (i_10_ >= i_7_) {
             i = i_9_ <<= -907151120;
-            if ((i_11_ ^ 0xffffffff) > -1) {
+            if (i_11_ < 0) {
                 i -= i_11_ * i_12_;
                 i_9_ -= i_14_ * i_11_;
                 i_11_ = 0;
             }
             i_6_ <<= 209489840;
-            if ((i_7_ ^ 0xffffffff) > -1) {
+            if (i_7_ < 0) {
                 i_6_ -= i_7_ * i_15_;
                 i_7_ = 0;
             }
-            if ((i_12_ ^ 0xffffffff) > (i_14_ ^ 0xffffffff)) {
+            if (i_14_ > i_12_) {
                 i_10_ -= i_7_;
                 i_7_ -= i_11_;
                 i_11_ = this.anInt10482 * i_11_;
@@ -305,7 +304,7 @@ final class r_Sub2 extends r {
                     i_9_ += i_14_;
                     i_11_ += this.anInt10482;
                 }
-                while ((--i_10_ ^ 0xffffffff) <= -1) {
+                while (--i_10_ >= 0) {
                     Class304.method2289(i_6_ >> -1604901200, i_11_, -66, 0,
                             this.aByteArray10486,
                             i_9_ >> 157309744);
@@ -317,7 +316,7 @@ final class r_Sub2 extends r {
                 i_10_ -= i_7_;
                 i_7_ -= i_11_;
                 i_11_ *= this.anInt10482;
-                while ((--i_7_ ^ 0xffffffff) <= -1) {
+                while (--i_7_ >= 0) {
                     Class304.method2289(i_9_ >> 1595067536, i_11_, -67, 0,
                             this.aByteArray10486,
                             i >> -932576240);
@@ -336,7 +335,7 @@ final class r_Sub2 extends r {
             }
         } else {
             i_6_ = i_9_ <<= -1570270288;
-            if ((i_11_ ^ 0xffffffff) > -1) {
+            if (i_11_ < 0) {
                 i_6_ -= i_12_ * i_11_;
                 i_9_ -= i_14_ * i_11_;
                 i_11_ = 0;
@@ -346,10 +345,10 @@ final class r_Sub2 extends r {
                 i -= i_15_ * i_10_;
                 i_10_ = 0;
             }
-            if (((i_11_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
+            if ((i_10_ == i_11_
                     || i_14_ <= i_12_)
-                    && ((i_10_ ^ 0xffffffff) != (i_11_ ^ 0xffffffff)
-                    || (i_12_ ^ 0xffffffff) >= (i_15_ ^ 0xffffffff))) {
+                    && (i_11_ != i_10_
+                    || i_15_ >= i_12_)) {
                 i_7_ -= i_10_;
                 i_10_ -= i_11_;
                 i_11_ = this.anInt10482 * i_11_;
@@ -361,7 +360,7 @@ final class r_Sub2 extends r {
                     i_11_ += this.anInt10482;
                     i_9_ += i_14_;
                 }
-                while ((--i_7_ ^ 0xffffffff) <= -1) {
+                while (--i_7_ >= 0) {
                     Class304.method2289(i >> 70400048, i_11_, -92, 0,
                             this.aByteArray10486,
                             i_6_ >> -1034120880);
@@ -381,7 +380,7 @@ final class r_Sub2 extends r {
                     i_6_ += i_12_;
                     i_9_ += i_14_;
                 }
-                while ((--i_7_ ^ 0xffffffff) <= -1) {
+                while (--i_7_ >= 0) {
                     Class304.method2289(i_6_ >> -449167568, i_11_, -125, 0,
                             this.aByteArray10486,
                             i >> -1901772080);

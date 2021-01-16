@@ -65,15 +65,14 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
             OpenGL.glCompileShaderARB(l);
             OpenGL.glGetObjectParameterivARB(l, 35713, (Class348_Sub42_Sub4
                     .anIntArray9519), 0);
-            if ((Class348_Sub42_Sub4.anIntArray9519[0] ^ 0xffffffff) == -1) {
+            if (Class348_Sub42_Sub4.anIntArray9519[0] == 0) {
                 if (Class348_Sub42_Sub4.anIntArray9519[0] == 0)
                     System.out.println("Shader compile failed:");
                 OpenGL.glGetObjectParameterivARB(l, 35716,
                         (Class348_Sub42_Sub4
                                 .anIntArray9519),
                         1);
-                if ((Class348_Sub42_Sub4.anIntArray9519[1] ^ 0xffffffff)
-                        < -2) {
+                if (Class348_Sub42_Sub4.anIntArray9519[1] > 1) {
                     byte[] is
                             = new byte[Class348_Sub42_Sub4.anIntArray9519[1]];
                     OpenGL.glGetInfoLogARB(l,
@@ -83,8 +82,7 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
                             0, is, 0);
                     System.out.println(new String(is));
                 }
-                if ((Class348_Sub42_Sub4.anIntArray9519[0] ^ 0xffffffff)
-                        == -1) {
+                if (Class348_Sub42_Sub4.anIntArray9519[0] == 0) {
                     OpenGL.glDeleteObjectARB(l);
                     return null;
                 }

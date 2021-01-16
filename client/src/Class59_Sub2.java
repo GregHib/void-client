@@ -33,7 +33,7 @@ class Class59_Sub2 extends Class59 {
     final void method541(int i) {
         anInt5302 = Math.abs(anInt5302);
         anInt5301++;
-        if ((anInt5302 ^ 0xffffffff) <= -4097)
+        if (anInt5302 >= 4096)
             anInt5302 = 4095;
         method563((byte) 92, anInt5308++, (byte) (anInt5302 >> -1981258460));
         if (i != -1538606516)

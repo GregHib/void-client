@@ -127,15 +127,14 @@ abstract class Class101 {
             Class214.method1575(class105s, 0, Class341.aClass105Array4234, 0,
                     Class239_Sub1.anInt5850);
             for (int i_17_ = 0;
-                 (i_17_ ^ 0xffffffff) > (Class239_Sub1.anInt5850 ^ 0xffffffff);
+                 Class239_Sub1.anInt5850 > i_17_;
                  i_17_++)
                 Class175.anIntArray2330[i_17_]
                         = Class341.aClass105Array4234[i_17_].method980();
             if (i != 515880227)
                 anInt1597 = 49;
             for (int i_18_ = Class239_Sub1.anInt5850;
-                 ((Class341.aClass105Array4234.length ^ 0xffffffff)
-                         < (i_18_ ^ 0xffffffff));
+                 (i_18_ < Class341.aClass105Array4234.length);
                  i_18_++)
                 Class175.anIntArray2330[i_18_] = 12;
         } catch (RuntimeException runtimeexception) {
@@ -195,8 +194,7 @@ abstract class Class101 {
     static final void method909(int i) {
         anInt1598++;
         if (Class348_Sub40_Sub30.aBoolean9403 && i == 3553) {
-            while ((Class65.aClass110_Sub1Array1146.length ^ 0xffffffff)
-                    < (Class215.anInt2834 ^ 0xffffffff)) {
+            while (Class215.anInt2834 < Class65.aClass110_Sub1Array1146.length) {
                 Class110_Sub1 class110_sub1
                         = Class65.aClass110_Sub1Array1146[Class215.anInt2834];
                 if (class110_sub1 == null

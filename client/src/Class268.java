@@ -32,20 +32,20 @@ final class Class268 {
         for (int i_1_ = 0; i_1_ < i_0_; i_1_++) {
             l *= 37L;
             int i_2_ = string.charAt(i_1_);
-            if (i_2_ < 65 || (i_2_ ^ 0xffffffff) < -91) {
-                if ((i_2_ ^ 0xffffffff) <= -98 && (i_2_ ^ 0xffffffff) >= -123)
+            if (i_2_ < 65 || i_2_ > 90) {
+                if (i_2_ >= 97 && i_2_ <= 122)
                     l += 1 - (-i_2_ + 97);
                 else if (i_2_ >= 48 && i_2_ <= 57)
                     l += i_2_ + 27 - 48;
             } else
                 l += 1 + (i_2_ + -65);
-            if ((l ^ 0xffffffffffffffffL) <= -177917621779460414L)
+            if (l >= 177917621779460413L)
                 break;
         }
         if (i != -1994)
             aShortArrayArray3443 = null;
-        for (/**/; ((l % 37L ^ 0xffffffffffffffffL) == -1L
-                && (l ^ 0xffffffffffffffffL) != -1L); l /= 37L) {
+        for (/**/; (l % 37L == 0
+                && l != 0); l /= 37L) {
             /* empty */
         }
         return l;
@@ -98,13 +98,12 @@ final class Class268 {
     static final void method2035(int i, int i_4_) {
         anInt3445++;
         int i_5_ = Class367_Sub11.anInt7396 - Class348_Sub49_Sub1.anInt9751;
-        if ((i_5_ ^ 0xffffffff) <= -101) {
+        if (i_5_ >= 100) {
             Class348_Sub40_Sub21.anInt9282 = 1;
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
         } else {
             int i_6_ = (int) Class76.aFloat1287;
-            if ((Class348_Sub35.anInt6979 >> 838758760 ^ 0xffffffff)
-                    < (i_6_ ^ 0xffffffff))
+            if (i_6_ < Class348_Sub35.anInt6979 >> 838758760)
                 i_6_ = Class348_Sub35.anInt6979 >> -1334580536;
             if (Class181.aBooleanArray2374[4]
                     && Class255.anIntArray3273[4] - -128 > i_6_)
@@ -144,7 +143,7 @@ final class Class268 {
                     + Class59_Sub2_Sub2.anInt8685));
             int i_8_ = Class5.anInt4638 - Class253.anInt3253;
             if (i_8_ <= 8192) {
-                if ((i_8_ ^ 0xffffffff) > 8191)
+                if (i_8_ < -8192)
                     i_8_ += 16384;
             } else
                 i_8_ -= 16384;
@@ -175,7 +174,7 @@ final class Class268 {
     static final void method2038(int i) {
         if (i <= -47) {
             for (int i_9_ = 0;
-                 (Class147.anInt2021 ^ 0xffffffff) < (i_9_ ^ 0xffffffff);
+                 i_9_ < Class147.anInt2021;
                  i_9_++) {
                 Class10 class10 = Class258_Sub2.aClass10Array8531[i_9_];
                 if (class10.aByte180 == 3) {

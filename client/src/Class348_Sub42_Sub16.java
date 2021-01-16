@@ -103,19 +103,19 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
             int i_8_ = -i + i_6_;
             for (int i_9_ = 0; i_8_ > i_9_; i_9_++) {
                 int i_10_ = string.charAt(i_9_ + i);
-                if ((i_10_ ^ 0xffffffff) < -1 && (i_10_ ^ 0xffffffff) > -129
+                if (i_10_ > 0 && i_10_ < 128
                         || i_10_ >= 160 && i_10_ <= 255)
                     is[i_7_ + i_9_] = (byte) i_10_;
-                else if ((i_10_ ^ 0xffffffff) == -8365)
+                else if (i_10_ == 8364)
                     is[i_9_ + i_7_] = (byte) -128;
-                else if ((i_10_ ^ 0xffffffff) == -8219)
+                else if (i_10_ == 8218)
                     is[i_9_ + i_7_] = (byte) -126;
                 else if (i_10_ == 402)
                     is[i_7_ - -i_9_] = (byte) -125;
                 else if (i_10_ != 8222) {
-                    if ((i_10_ ^ 0xffffffff) != -8231) {
+                    if (i_10_ != 8230) {
                         if (i_10_ != 8224) {
-                            if ((i_10_ ^ 0xffffffff) == -8226)
+                            if (i_10_ == 8225)
                                 is[i_9_ + i_7_] = (byte) -121;
                             else if (i_10_ == 710)
                                 is[i_7_ + i_9_] = (byte) -120;
@@ -124,26 +124,24 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
                             else if (i_10_ != 352) {
                                 if (i_10_ == 8249)
                                     is[i_9_ + i_7_] = (byte) -117;
-                                else if ((i_10_ ^ 0xffffffff) == -339)
+                                else if (i_10_ == 338)
                                     is[i_9_ + i_7_] = (byte) -116;
                                 else if (i_10_ == 381)
                                     is[i_7_ + i_9_] = (byte) -114;
-                                else if ((i_10_ ^ 0xffffffff) != -8217) {
+                                else if (i_10_ != 8216) {
                                     if (i_10_ == 8217)
                                         is[i_7_ - -i_9_] = (byte) -110;
                                     else if (i_10_ == 8220)
                                         is[i_7_ + i_9_] = (byte) -109;
-                                    else if ((i_10_ ^ 0xffffffff) == -8222)
+                                    else if (i_10_ == 8221)
                                         is[i_7_ + i_9_] = (byte) -108;
                                     else if (i_10_ == 8226)
                                         is[i_7_ + i_9_] = (byte) -107;
                                     else if (i_10_ != 8211) {
                                         if (i_10_ == 8212)
                                             is[i_7_ + i_9_] = (byte) -105;
-                                        else if ((i_10_ ^ 0xffffffff)
-                                                != -733) {
-                                            if ((i_10_ ^ 0xffffffff)
-                                                    != -8483) {
+                                        else if (i_10_ != 732) {
+                                            if (i_10_ != 8482) {
                                                 if (i_10_ != 353) {
                                                     if (i_10_ == 8250)
                                                         is[i_7_ - -i_9_]
@@ -152,9 +150,7 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
                                                         is[i_7_ - -i_9_]
                                                                 = (byte) -100;
                                                     else if (i_10_ != 382) {
-                                                        if ((i_10_
-                                                                ^ 0xffffffff)
-                                                                != -377)
+                                                        if (i_10_ != 376)
                                                             is[i_9_ + i_7_]
                                                                     = (byte) 63;
                                                         else

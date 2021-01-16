@@ -23,7 +23,7 @@ final class Class348_Sub40_Sub36 extends Class348_Sub40 {
         while_211_:
         do {
             do {
-                if ((i_1_ ^ 0xffffffff) != -1) {
+                if (i_1_ != 0) {
                     if (i_1_ != 1) {
                         if (i_1_ == 3)
                             break;
@@ -61,12 +61,11 @@ final class Class348_Sub40_Sub36 extends Class348_Sub40 {
         if (this.aClass191_7032.aBoolean2570) {
             int i_3_ = Class239_Sub18.anIntArray6035[i];
             int i_4_ = -2048 + i_3_ >> 637011457;
-            for (int i_5_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_5_ ^ 0xffffffff)); i_5_++) {
+            for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub6.anInt9139); i_5_++) {
                 int i_6_ = Class318_Sub6.anIntArray6432[i_5_];
                 int i_7_ = -2048 + i_6_ >> -1653460607;
                 int i_8_;
-                if ((anInt9451 ^ 0xffffffff) == -1)
+                if (anInt9451 == 0)
                     i_8_ = anInt9453 * (-i_3_ + i_6_);
                 else {
                     int i_9_ = i_7_ * i_7_ + i_4_ * i_4_ >> -1808160052;

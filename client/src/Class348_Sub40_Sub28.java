@@ -51,9 +51,9 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                 while_202_:
                 do {
                     do {
-                        if ((i_1_ ^ 0xffffffff) != -1) {
-                            if ((i_1_ ^ 0xffffffff) != -2) {
-                                if ((i_1_ ^ 0xffffffff) != -3) {
+                        if (i_1_ != 0) {
+                            if (i_1_ != 1) {
+                                if (i_1_ != 2) {
                                     if (i_1_ != 3) {
                                         if (i_1_ == 4)
                                             break while_203_;
@@ -90,10 +90,10 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
             int[][] is_4_
                     = this.aClass191_7032.method1427((byte) 16);
             Random random = new Random(anInt9367);
-            for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > (anInt9362 ^ 0xffffffff);
+            for (int i_5_ = 0; anInt9362 > i_5_;
                  i_5_++) {
                 int i_6_
-                        = ((anInt9364 ^ 0xffffffff) < -1
+                        = (anInt9364 > 0
                         ? anInt9369 + Class124.method1097((byte) 92, anInt9364,
                         random) + -i_3_
                         : anInt9369);
@@ -111,10 +111,10 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                         + i_8_);
                 int i_11_ = -i_8_ + i_10_;
                 int i_12_ = -i_7_ + i_9_;
-                if (i_12_ != 0 || (i_11_ ^ 0xffffffff) != -1) {
+                if (i_12_ != 0 || i_11_ != 0) {
                     if (i_11_ < 0)
                         i_11_ = -i_11_;
-                    if ((i_12_ ^ 0xffffffff) > -1)
+                    if (i_12_ < 0)
                         i_12_ = -i_12_;
                     boolean bool = i_12_ < i_11_;
                     if (bool) {
@@ -125,7 +125,7 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                         i_9_ = i_10_;
                         i_10_ = i_14_;
                     }
-                    if ((i_7_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff)) {
+                    if (i_9_ < i_7_) {
                         int i_15_ = i_7_;
                         i_7_ = i_9_;
                         int i_16_ = i_8_;
@@ -144,9 +144,9 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                     if (i_19_ < 0)
                         i_19_ = -i_19_;
                     int i_23_
-                            = (i_8_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff) ? -1 : 1;
+                            = i_10_ <= i_8_ ? -1 : 1;
                     for (int i_24_ = i_7_;
-                         (i_9_ ^ 0xffffffff) < (i_24_ ^ 0xffffffff); i_24_++) {
+                         i_24_ < i_9_; i_24_++) {
                         int i_25_ = (i_24_ - i_7_) * i_21_ + (i_22_ + 1024);
                         int i_26_ = Class239_Sub22.anInt6076 & i_24_;
                         int i_27_ = i_17_ & Class299_Sub2.anInt6325;

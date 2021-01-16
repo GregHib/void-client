@@ -109,13 +109,13 @@ final class Class262 {
                         + (float) i_8_ * fs[7]);
                 float f_16_;
                 float f_17_;
-                if ((i_12_ ^ 0xffffffff) != -1) {
-                    if ((i_12_ ^ 0xffffffff) == -2) {
+                if (i_12_ != 0) {
+                    if (i_12_ == 1) {
                         f_17_ = 0.5F + (f_15_ + f);
                         f_16_ = 0.5F + (f_3_ + f_13_);
-                    } else if ((i_12_ ^ 0xffffffff) != -3) {
+                    } else if (i_12_ != 2) {
                         if (i_12_ != 3) {
-                            if ((i_12_ ^ 0xffffffff) == -5) {
+                            if (i_12_ == 4) {
                                 f_16_ = f_15_ + f + 0.5F;
                                 f_17_ = -f_14_ + f_9_ + 0.5F;
                             } else {
@@ -138,7 +138,7 @@ final class Class262 {
                     float f_18_ = f_16_;
                     f_16_ = -f_17_;
                     f_17_ = f_18_;
-                } else if ((i_5_ ^ 0xffffffff) != -3) {
+                } else if (i_5_ != 2) {
                     if (i_5_ == 3) {
                         float f_19_ = f_16_;
                         f_16_ = f_17_;

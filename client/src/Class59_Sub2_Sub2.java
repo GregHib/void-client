@@ -19,7 +19,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
         anInt8675++;
         int i_0_ = class348_sub49.method3382(-128);
         Class373_Sub2.aClass283Array7446 = new Class283[i_0_];
-        for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > (i_0_ ^ 0xffffffff); i_1_++) {
+        for (int i_1_ = 0; i_0_ > i_1_; i_1_++) {
             Class373_Sub2.aClass283Array7446[i_1_] = new Class283();
             Class373_Sub2.aClass283Array7446[i_1_].anInt3657
                     = class348_sub49.method3382(-124);
@@ -33,7 +33,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
                 = new Class110_Sub1[1 + (Class239_Sub29.anInt6151
                 + -Class318_Sub1_Sub2.anInt8731)];
         for (int i_2_ = 0;
-             (i_2_ ^ 0xffffffff) > (Class225.anInt2956 ^ 0xffffffff); i_2_++) {
+             Class225.anInt2956 > i_2_; i_2_++) {
             int i_3_ = class348_sub49.method3382(-126);
             Class110_Sub1 class110_sub1
                     = (OutputStream_Sub1.aClass110_Sub1Array97[i_3_]
@@ -101,7 +101,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
         for (int i_14_ = 0; i_14_ < i_11_; i_14_++) {
             char c = string.charAt(i_14_);
             if (c != 60) {
-                if ((c ^ 0xffffffff) != -63)
+                if (c != 62)
                     stringbuffer.append(c);
                 else
                     stringbuffer.append("<gt>");
@@ -146,15 +146,15 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
              int i_19_, int i_20_, int i_21_, int[] is_22_, int i_23_,
              Class361 class361, int i_24_, int i_25_, int i_26_) {
         try {
-            for (int i_27_ = 0; (i_27_ ^ 0xffffffff) > -129; i_27_++) {
-                for (int i_28_ = 0; (i_28_ ^ 0xffffffff) > -129; i_28_++) {
+            for (int i_27_ = 0; i_27_ < 128; i_27_++) {
+                for (int i_28_ = 0; i_28_ < 128; i_28_++) {
                     r.anIntArrayArray9723[i_27_][i_28_] = 0;
                     Class223.anIntArrayArray2900[i_27_][i_28_] = 99999999;
                 }
             }
             anInt8676++;
             boolean bool_29_;
-            if ((i_16_ ^ 0xffffffff) != -2) {
+            if (i_16_ != 1) {
                 if (i_16_ == 2)
                     bool_29_ = Class263.method2007(i_19_, -125, i_23_,
                             class361, i, i_21_, i_24_,
@@ -180,34 +180,31 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
                 int i_36_ = 10;
                 for (int i_37_ = -i_36_ + i; i - -i_36_ >= i_37_; i_37_++) {
                     for (int i_38_ = i_23_ - i_36_;
-                         (i_23_ - -i_36_ ^ 0xffffffff) <= (i_38_ ^ 0xffffffff);
+                         i_38_ <= i_23_ - -i_36_;
                          i_38_++) {
                         int i_39_ = i_37_ - i_30_;
                         int i_40_ = -i_31_ + i_38_;
-                        if ((i_39_ ^ 0xffffffff) <= -1 && i_40_ >= 0
+                        if (i_39_ >= 0 && i_40_ >= 0
                                 && i_39_ < 128 && i_40_ < 128
                                 && (Class223.anIntArrayArray2900[i_39_][i_40_]
                                 < 100)) {
                             int i_41_ = 0;
-                            if ((i_37_ ^ 0xffffffff) <= (i ^ 0xffffffff)) {
+                            if (i <= i_37_) {
                                 if (-1 + i_24_ + i < i_37_)
                                     i_41_ = i_37_ - -1 - (i + i_24_);
                             } else
                                 i_41_ = -i_37_ + i;
                             int i_42_ = 0;
                             if (i_38_ >= i_23_) {
-                                if ((i_38_ ^ 0xffffffff)
-                                        < (i_17_ + (i_23_ - 1) ^ 0xffffffff))
+                                if (i_17_ + (i_23_ - 1) < i_38_)
                                     i_42_ = -i_17_ - i_23_ - (-1 - i_38_);
                             } else
                                 i_42_ = -i_38_ + i_23_;
                             int i_43_ = i_41_ * i_41_ + i_42_ * i_42_;
-                            if ((i_34_ ^ 0xffffffff) < (i_43_ ^ 0xffffffff)
-                                    || i_34_ == i_43_ && ((i_35_ ^ 0xffffffff)
-                                    < ((Class223
+                            if (i_43_ < i_34_
+                                    || i_34_ == i_43_ && ((Class223
                                     .anIntArrayArray2900
-                                    [i_39_][i_40_])
-                                    ^ 0xffffffff))) {
+                                    [i_39_][i_40_]) < i_35_)) {
                                 i_34_ = i_43_;
                                 i_32_ = i_37_;
                                 i_35_ = (Class223.anIntArrayArray2900[i_39_]
@@ -220,8 +217,8 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
                 if (i_34_ == 2147483647)
                     return -1;
             }
-            if ((i_32_ ^ 0xffffffff) == (i_20_ ^ 0xffffffff)
-                    && (i_21_ ^ 0xffffffff) == (i_33_ ^ 0xffffffff))
+            if (i_20_ == i_32_
+                    && i_33_ == i_21_)
                 return 0;
             int i_44_ = 0;
             if (i_18_ != 120)
@@ -232,27 +229,27 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
             int i_45_
                     = (i_46_
                     = r.anIntArrayArray9723[i_32_ + -i_30_][-i_31_ + i_33_]);
-            while ((i_20_ ^ 0xffffffff) != (i_32_ ^ 0xffffffff)
+            while (i_32_ != i_20_
                     || i_33_ != i_21_) {
-                if ((i_45_ ^ 0xffffffff) != (i_46_ ^ 0xffffffff)) {
+                if (i_46_ != i_45_) {
                     Class367_Sub11.anIntArray7397[i_44_] = i_32_;
                     i_46_ = i_45_;
                     Class205.anIntArray2694[i_44_++] = i_33_;
                 }
-                if ((i_45_ & 0x2 ^ 0xffffffff) == -1) {
+                if ((i_45_ & 0x2) == 0) {
                     if ((0x8 & i_45_) != 0)
                         i_32_--;
                 } else
                     i_32_++;
                 if ((0x1 & i_45_) == 0) {
-                    if ((0x4 & i_45_ ^ 0xffffffff) != -1)
+                    if ((0x4 & i_45_) != 0)
                         i_33_--;
                 } else
                     i_33_++;
                 i_45_ = r.anIntArrayArray9723[-i_30_ + i_32_][i_33_ + -i_31_];
             }
             int i_47_ = 0;
-            while ((i_44_-- ^ 0xffffffff) < -1) {
+            while (i_44_-- > 0) {
                 is_22_[i_47_] = Class367_Sub11.anIntArray7397[i_44_];
                 is[i_47_++] = Class205.anIntArray2694[i_44_];
                 if (is_22_.length <= i_47_)

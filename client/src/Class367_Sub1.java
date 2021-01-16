@@ -46,32 +46,28 @@ final class Class367_Sub1 extends Class367 {
         anInt7279++;
         if (bool == false) {
             for (int i_8_ = 0;
-                 (class46s.length ^ 0xffffffff) < (i_8_ ^ 0xffffffff);
+                 i_8_ < class46s.length;
                  i_8_++) {
                 Class46 class46 = class46s[i_8_];
                 if (class46 != null && i == class46.anInt834) {
                     Class239_Sub28.method1843(i_5_, -326, class46, bool_6_,
                             i_7_);
                     Class14_Sub1.method239((byte) 115, i_5_, i_7_, class46);
-                    if ((class46.anInt747 ^ 0xffffffff)
-                            < ((-class46.anInt709
-                            + class46.anInt698)
-                            ^ 0xffffffff))
+                    if ((-class46.anInt709
+                            + class46.anInt698) < class46.anInt747)
                         class46.anInt747
                                 = (class46.anInt698
                                 - class46.anInt709);
                     if (class46.anInt747 < 0)
                         class46.anInt747 = 0;
-                    if ((class46.anInt755 ^ 0xffffffff)
-                            < ((class46.anInt791
-                            - class46.anInt789)
-                            ^ 0xffffffff))
+                    if ((class46.anInt791
+                            - class46.anInt789) < class46.anInt755)
                         class46.anInt755
                                 = (class46.anInt791
                                 - class46.anInt789);
                     if (class46.anInt755 < 0)
                         class46.anInt755 = 0;
-                    if ((class46.anInt774 ^ 0xffffffff) == -1)
+                    if (class46.anInt774 == 0)
                         Class251.method1913(bool_6_, -116, class46);
                 }
             }

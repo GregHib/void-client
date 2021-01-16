@@ -106,9 +106,9 @@ final class Class56 {
             anInt1020++;
             for (; ; ) {
                 Class144 class144 = class297.method2248((byte) 89, frame);
-                while ((class144.anInt1997 ^ 0xffffffff) == -1)
+                while (class144.anInt1997 == 0)
                     Class286_Sub5.method2161((byte) -124, 10L);
-                if ((class144.anInt1997 ^ 0xffffffff) == -2)
+                if (class144.anInt1997 == 1)
                     break;
                 Class286_Sub5.method2161((byte) 33, 100L);
             }

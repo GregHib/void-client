@@ -60,7 +60,7 @@ abstract class Class348_Sub5 extends Class348 {
     static final void method2755(int i, int i_7_, int i_8_) {
         anInt6629++;
         if ((Class348_Sub43.anInt7068 ^ 0xffffffff) != i) {
-            if ((i_8_ ^ 0xffffffff) <= -1)
+            if (i_8_ >= 0)
                 Class367_Sub3.anIntArray7299[i_8_] = i_7_;
             else {
                 for (int i_9_ = 0; i_9_ < 16; i_9_++)
@@ -74,7 +74,7 @@ abstract class Class348_Sub5 extends Class348 {
 
     static final void method2757(int i) {
         anInt6620++;
-        if ((Class367_Sub2.anInt7297 ^ 0xffffffff) != -1) {
+        if (Class367_Sub2.anInt7297 != 0) {
             try {
                 if (i >= 82) {
                     if (++Class169.anInt2264 > 2000) {
@@ -83,7 +83,7 @@ abstract class Class348_Sub5 extends Class348 {
                                     .method1700((byte) 36);
                             Class348_Sub40_Sub8.aClass238_9165 = null;
                         }
-                        if ((Class105_Sub1.anInt8398 ^ 0xffffffff) <= -3) {
+                        if (Class105_Sub1.anInt8398 >= 2) {
                             Class367_Sub2.anInt7297 = 0;
                             Class352.anInt4337 = -5;
                             return;
@@ -100,10 +100,8 @@ abstract class Class348_Sub5 extends Class348 {
                                         (byte) 36));
                         Class367_Sub2.anInt7297 = 2;
                     }
-                    if ((Class367_Sub2.anInt7297 ^ 0xffffffff) == -3) {
-                        if ((Class130_Sub1.aClass144_5800.anInt1997
-                                ^ 0xffffffff)
-                                == -3)
+                    if (Class367_Sub2.anInt7297 == 2) {
+                        if (Class130_Sub1.aClass144_5800.anInt1997 == 2)
                             throw new IOException();
                         if (Class130_Sub1.aClass144_5800.anInt1997 != 1)
                             return;
@@ -117,7 +115,7 @@ abstract class Class348_Sub5 extends Class348 {
                         Class239_Sub18.method1802(0);
                         Class367_Sub2.anInt7297 = 4;
                     }
-                    if ((Class367_Sub2.anInt7297 ^ 0xffffffff) == -5) {
+                    if (Class367_Sub2.anInt7297 == 4) {
                         if (Class348_Sub40_Sub8.aClass238_9165
                                 .method1705(1, 104)) {
                             Class348_Sub40_Sub8.aClass238_9165.method1701
@@ -140,7 +138,7 @@ abstract class Class348_Sub5 extends Class348 {
                     Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
                     Class348_Sub40_Sub8.aClass238_9165 = null;
                 }
-                if ((Class105_Sub1.anInt8398 ^ 0xffffffff) > -3) {
+                if (Class105_Sub1.anInt8398 < 2) {
                     Class255.aClass161_3285.method1259(0);
                     Class169.anInt2264 = 0;
                     Class105_Sub1.anInt8398++;

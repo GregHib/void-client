@@ -94,7 +94,7 @@ final class Class373_Sub2 extends Class373
         anInt7457++;
         if (i <= 112)
             method3606(-77, 6, -104, -59, 86);
-        return (anInt7432 & 0x4 ^ 0xffffffff) != -1;
+        return (anInt7432 & 0x4) != 0;
     }
 
     final synchronized void method3589(int i) {
@@ -170,7 +170,7 @@ final class Class373_Sub2 extends Class373
     final boolean method3588(int i) {
         int i_9_ = -108 % ((-38 - i) / 48);
         anInt7434++;
-        return (anInt7432 & 0x2 ^ 0xffffffff) != -1;
+        return (anInt7432 & 0x2) != 0;
     }
 
     final boolean method3595(int i) {
@@ -186,7 +186,7 @@ final class Class373_Sub2 extends Class373
         anInt7451++;
         try {
             int i_12_ = class348_sub49.method3382(-122);
-            if ((i_12_ ^ 0xffffffff) < (i ^ 0xffffffff))
+            if (i < i_12_)
                 i_12_ = i;
             byte[] is = new byte[i_12_];
             class348_sub49.anInt7197
@@ -204,9 +204,9 @@ final class Class373_Sub2 extends Class373
     public final synchronized void mouseReleased(MouseEvent mouseevent) {
         anInt7428++;
         int i = method3604(-6345, mouseevent);
-        if ((i & anInt7456 ^ 0xffffffff) == -1)
+        if ((i & anInt7456) == 0)
             i = anInt7456;
-        if ((i & 0x1 ^ 0xffffffff) != -1)
+        if ((i & 0x1) != 0)
             method3606(3, mouseevent.getY(), mouseevent.getX(),
                     mouseevent.getClickCount(), -116);
         if ((0x4 & i) != 0)

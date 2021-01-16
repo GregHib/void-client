@@ -27,7 +27,7 @@ final class Class12 {
 
     static final void method223(int i, int i_0_, int i_1_, int i_2_,
                                 byte i_3_) {
-        if ((i ^ 0xffffffff) > (i_2_ ^ 0xffffffff))
+        if (i_2_ > i)
             Class135_Sub2.method1156(-27, i_2_,
                     Class17.anIntArrayArray255[i_1_], i,
                     i_0_);

@@ -18,7 +18,7 @@ final class Class300 {
         anInt3824++;
         if (i != -103)
             return null;
-        if ((Class239_Sub13.anInt5980 ^ 0xffffffff) == -1)
+        if (Class239_Sub13.anInt5980 == 0)
             return new Class348_Sub47();
         return Class176.aClass348_Sub47Array2334[--Class239_Sub13.anInt5980];
     }
@@ -29,8 +29,7 @@ final class Class300 {
             return -1;
         if (i >= -41)
             return 97;
-        for (int i_0_ = 0; ((Class348_Sub40_Sub30.anInt9383 ^ 0xffffffff)
-                < (i_0_ ^ 0xffffffff)); i_0_++) {
+        for (int i_0_ = 0; (i_0_ < Class348_Sub40_Sub30.anInt9383); i_0_++) {
             if (string.equalsIgnoreCase(Class83.aStringArray1441[i_0_]))
                 return i_0_;
         }
@@ -52,15 +51,14 @@ final class Class300 {
                                   int i_3_) {
         if (i_3_ == 1)
             this.anInt3817 = class348_sub49.method3330(842397944);
-        else if ((i_3_ ^ 0xffffffff) != -3) {
+        else if (i_3_ != 2) {
             if (i_3_ == 3)
                 this.anInt3823 = class348_sub49.method3387(255);
         } else {
             this.anIntArray3821
                     = new int[class348_sub49.method3387(255)];
             for (int i_4_ = 0;
-                 ((this.anIntArray3821.length ^ 0xffffffff)
-                         < (i_4_ ^ 0xffffffff));
+                 (i_4_ < this.anIntArray3821.length);
                  i_4_++)
                 this.anIntArray3821[i_4_]
                         = class348_sub49.method3330(842397944);

@@ -51,8 +51,7 @@ final class Class265 implements Interface1 {
             int i_0_ = (Class321.anInt4017 > Class92.anInt1524
                     ? Class321.anInt4017 : Class92.anInt1524);
             int i_1_
-                    = (((ha_Sub2.anInt7666 ^ 0xffffffff)
-                    > (Class348_Sub42_Sub8_Sub2.anInt10432 ^ 0xffffffff))
+                    = ((Class348_Sub42_Sub8_Sub2.anInt10432 > ha_Sub2.anInt7666)
                     ? Class348_Sub42_Sub8_Sub2.anInt10432 : ha_Sub2.anInt7666);
             int i_2_ = aClass105_4688.method966();
             int i_3_ = aClass105_4688.method980();

@@ -64,7 +64,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
         if ((Class286_Sub5.anInt6248 ^ 0xffffffff) <= i) {
             long l = Class62.method599(i ^ 0x3c);
             Class286_Sub5.anInt6248 -= -Class348_Sub33.aLong6963 + l;
-            if ((Class286_Sub5.anInt6248 ^ 0xffffffff) < -1) {
+            if (Class286_Sub5.anInt6248 > 0) {
                 int i_4_ = ((Class286_Sub5.anInt6248 << 1553370600)
                         / Class206.anInt4889);
                 int i_5_ = -i_4_ + 255;
@@ -202,8 +202,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
             method3047(-113, -46);
         if (this.aClass191_7032.aBoolean2570) {
             int[] is_19_ = this.method3048(i, 633706337, 0);
-            for (int i_20_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_20_ ^ 0xffffffff)); i_20_++)
+            for (int i_20_ = 0; (i_20_ < Class348_Sub40_Sub6.anInt9139); i_20_++)
                 is[i_20_] = 4096 + -is_19_[i_20_];
         }
         return is;
@@ -213,7 +212,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
         anInt9414++;
         if (i_21_ != 31015)
             aClass273_9415 = null;
-        if ((i ^ 0xffffffff) == -1)
+        if (i == 0)
             this.aBoolean7045
                     = class348_sub49.method3387(255) == 1;
     }

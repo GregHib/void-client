@@ -35,15 +35,15 @@ final class Class289 {
                 >> -571249271));
         if (i != 80)
             method2192((byte) -34);
-        if ((i_0_ ^ 0xffffffff) <= -3054 && i_0_ <= 3156
-                && (i_1_ ^ 0xffffffff) <= -3057 && i_1_ <= 3136)
+        if (i_0_ >= 3053 && i_0_ <= 3156
+                && i_1_ >= 3056 && i_1_ <= 3136)
             Class250.anInt3227 = 1;
-        if (i_0_ >= 3072 && (i_0_ ^ 0xffffffff) >= -3119 && i_1_ >= 9492
-                && (i_1_ ^ 0xffffffff) >= -9536)
+        if (i_0_ >= 3072 && i_0_ <= 3118 && i_1_ >= 9492
+                && i_1_ <= 9535)
             Class250.anInt3227 = 1;
-        if ((Class250.anInt3227 ^ 0xffffffff) == -2
-                && (i_0_ ^ 0xffffffff) <= -3140 && (i_0_ ^ 0xffffffff) >= -3200
-                && (i_1_ ^ 0xffffffff) <= -3009 && i_1_ <= 3062)
+        if (Class250.anInt3227 == 1
+                && i_0_ >= 3139 && i_0_ <= 3199
+                && i_1_ >= 3008 && i_1_ <= 3062)
             Class250.anInt3227 = 0;
     }
 

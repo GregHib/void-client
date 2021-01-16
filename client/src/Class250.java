@@ -21,7 +21,7 @@ final class Class250 implements Runnable {
         anInt3222++;
         String string_0_ = null;
         int i_1_ = string.indexOf("--> ");
-        if ((i_1_ ^ 0xffffffff) <= -1) {
+        if (i_1_ >= 0) {
             string_0_ = string.substring(0, 4 + i_1_);
             string = string.substring(i_1_ + 4);
         }
@@ -31,7 +31,7 @@ final class Class250 implements Runnable {
                 int i_3_ = string.length();
                 string = string.substring(0, i_2_) + " ";
                 for (int i_4_ = 1 + i_2_;
-                     (i_3_ ^ 0xffffffff) < (i_4_ ^ 0xffffffff); i_4_++)
+                     i_4_ < i_3_; i_4_++)
                     string += "*";
             }
         }

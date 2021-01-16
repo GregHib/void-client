@@ -78,7 +78,7 @@ public final class Class1 implements Interface20 {
                 .getCurrentPosition(aDSCursorsArray5155[i_7_]);
         int i_8_ = aDSCursorsArray5155[i_7_].write / anInt5161;
         int i_9_ = anIntArray5160[i_7_] + -i_8_ & 0xffff;
-        if ((anIntArray5164[i_7_] ^ 0xffffffff) > (i_9_ ^ 0xffffffff)) {
+        if (i_9_ > anIntArray5164[i_7_]) {
             for (int i_10_ = 0xffff & i_8_ + -anIntArray5160[i_7_]; i_10_ > 0;
                  i_10_ -= 256)
                 method76(i_7_, anIntArray5154);
@@ -90,7 +90,7 @@ public final class Class1 implements Interface20 {
     public final void method78(int i, boolean bool, Component component,
                                int i_11_) throws Exception {
         if (anInt5158 == 0) {
-            if (i < 8000 || (i ^ 0xffffffff) < -48001)
+            if (i < 8000 || i > 48000)
                 throw new IllegalArgumentException();
             anInt5157 = !bool ? 1 : 2;
             if (i_11_ != 27929)
@@ -99,7 +99,7 @@ public final class Class1 implements Interface20 {
             anIntArray5154 = new int[anInt5157 * 256];
             aDirectSound5162.initialize(null);
             aDirectSound5162.setCooperativeLevel(component, 2);
-            for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > -3; i_12_++)
+            for (int i_12_ = 0; i_12_ < 2; i_12_++)
                 aDSBufferDescArray5152[i_12_].flags = 16384;
             aWaveFormatEx5163.avgBytesPerSec = anInt5161 * i;
             aWaveFormatEx5163.formatTag = 1;
@@ -139,9 +139,9 @@ public final class Class1 implements Interface20 {
         anIntArray5164 = new int[2];
         aDirectSound5162 = new DirectSound();
         aWaveFormatEx5163 = new WaveFormatEx();
-        for (int i = 0; (i ^ 0xffffffff) > -3; i++)
+        for (int i = 0; i < 2; i++)
             aDSBufferDescArray5152[i] = new DSBufferDesc();
-        for (int i = 0; (i ^ 0xffffffff) > -3; i++)
+        for (int i = 0; i < 2; i++)
             aDSCursorsArray5155[i] = new DSCursors();
     }
 }

@@ -41,14 +41,12 @@ final class Class92 {
                 if (Class348_Sub50.aByteArrayArray7212[i_1_] != null) {
                     int i_2_ = -1;
                     for (int i_3_ = 0; i_3_ < Class27.anInt388; i_3_++) {
-                        if ((Class348_Sub23_Sub3.anIntArray9042[i_1_]
-                                ^ 0xffffffff)
-                                == (Class342.anIntArray4250[i_3_] ^ 0xffffffff)) {
+                        if (Class342.anIntArray4250[i_3_] == Class348_Sub23_Sub3.anIntArray9042[i_1_]) {
                             i_2_ = i_3_;
                             break;
                         }
                     }
-                    if ((i_2_ ^ 0xffffffff) == 0) {
+                    if (i_2_ == -1) {
                         Class342.anIntArray4250[Class27.anInt388]
                                 = Class348_Sub23_Sub3.anIntArray9042[i_1_];
                         i_2_ = Class27.anInt388++;
@@ -57,12 +55,9 @@ final class Class92 {
                             = new Class348_Sub49(Class348_Sub50.aByteArrayArray7212
                             [i_1_]);
                     int i_4_ = 0;
-                    while ((Class348_Sub50.aByteArrayArray7212[i_1_].length
-                            ^ 0xffffffff)
-                            < (class348_sub49.anInt7197
-                            ^ 0xffffffff)) {
-                        if ((i_4_ ^ 0xffffffff) <= -512
-                                || (Class150.anInt2057 ^ 0xffffffff) <= -1024)
+                    while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212[i_1_].length) {
+                        if (i_4_ >= 511
+                                || Class150.anInt2057 >= 1023)
                             break;
                         int i_5_ = i_2_ | i_4_++ << 1526835142;
                         int i_6_ = class348_sub49.method3330(842397944);
@@ -88,15 +83,10 @@ final class Class92 {
                         if (class348_sub22 == null
                                 && (class79.aByte1325 & 0x1) > 0
                                 && i_7_ == Class167.anInt2204
-                                && (i_10_ ^ 0xffffffff) <= -1
-                                && ((i_10_ - -class79.anInt1399
-                                ^ 0xffffffff)
-                                > (Class367_Sub4.anInt7319 ^ 0xffffffff))
+                                && i_10_ >= 0
+                                && (Class367_Sub4.anInt7319 > i_10_ - -class79.anInt1399)
                                 && i_11_ >= 0
-                                && ((i_11_ + class79.anInt1399
-                                ^ 0xffffffff)
-                                > (Class348_Sub40_Sub3.anInt9109
-                                ^ 0xffffffff))) {
+                                && (Class348_Sub40_Sub3.anInt9109 > i_11_ + class79.anInt1399)) {
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
                                     = new Class318_Sub1_Sub3_Sub3_Sub1();
                             class318_sub1_sub3_sub3_sub1.anInt10290

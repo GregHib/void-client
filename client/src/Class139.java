@@ -18,15 +18,15 @@ final class Class139 {
         int i_0_
                 = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 8);
         if (i == 1) {
-            if ((Class150.anInt2057 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)) {
+            if (i_0_ < Class150.anInt2057) {
                 for (int i_1_ = i_0_; Class150.anInt2057 > i_1_; i_1_++)
                     Class5_Sub1_Sub1.anIntArray9932[Class358.anInt4411++]
                             = Class74.anIntArray1233[i_1_];
             }
-            if ((Class150.anInt2057 ^ 0xffffffff) > (i_0_ ^ 0xffffffff))
+            if (i_0_ > Class150.anInt2057)
                 throw new RuntimeException("gnpov1");
             Class150.anInt2057 = 0;
-            for (int i_2_ = 0; (i_0_ ^ 0xffffffff) < (i_2_ ^ 0xffffffff);
+            for (int i_2_ = 0; i_2_ < i_0_;
                  i_2_++) {
                 int i_3_ = Class74.anIntArray1233[i_2_];
                 Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
@@ -35,7 +35,7 @@ final class Class139 {
                 int i_4_
                         = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24,
                         1);
-                if ((i_4_ ^ 0xffffffff) == -1) {
+                if (i_4_ == 0) {
                     Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
                     class318_sub1_sub3_sub3_sub1
                             .anInt10306
@@ -48,7 +48,7 @@ final class Class139 {
                         class318_sub1_sub3_sub3_sub1.anInt10306
                                 = Class348_Sub23_Sub3.anInt9041;
                         Class13.anIntArray224[Class101.anInt1597++] = i_3_;
-                    } else if ((i_5_ ^ 0xffffffff) == -2) {
+                    } else if (i_5_ == 1) {
                         Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
                         class318_sub1_sub3_sub3_sub1.anInt10306
                                 = Class348_Sub23_Sub3.anInt9041;

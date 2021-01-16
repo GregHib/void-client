@@ -25,10 +25,9 @@ final class Class13 {
                                 int i_3_) {
         for (int i_4_ = i_2_; Class348_Sub38.anInt7008 > i_4_; i_4_++) {
             Rectangle rectangle = Class180.aRectangleArray2371[i_4_];
-            if ((rectangle.width + rectangle.x ^ 0xffffffff) < (i ^ 0xffffffff)
-                    && (rectangle.x ^ 0xffffffff) > (i_0_ + i ^ 0xffffffff)
-                    && ((rectangle.y - -rectangle.height ^ 0xffffffff)
-                    < (i_1_ ^ 0xffffffff))
+            if (i < rectangle.width + rectangle.x
+                    && i_0_ + i > rectangle.x
+                    && (i_1_ < rectangle.y - -rectangle.height)
                     && rectangle.y < i_1_ + i_3_)
                 Class152.aBooleanArray2076[i_4_] = true;
         }

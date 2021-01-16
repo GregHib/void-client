@@ -31,7 +31,7 @@ final class Class177 implements Interface1 {
                 .aClass239_Sub26_7260.method1838(-32350)
                 >> -2091864696);
         if (i_0_ != 0 && i != -1) {
-            if (!Class74.aBoolean1236 && (Class267.anInt3428 ^ 0xffffffff) != 0
+            if (!Class74.aBoolean1236 && Class267.anInt3428 != -1
                     && Class167.method1296(true)
                     && !Class327.method2605((byte) -99)) {
                 Class209.aClass348_Sub16_Sub3_2718

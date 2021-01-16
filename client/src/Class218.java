@@ -20,11 +20,11 @@ final class Class218 {
     static final void method1591(int i, int i_0_, int i_1_, int i_2_, int i_3_,
                                  int i_4_, int i_5_, int i_6_, int i_7_) {
         anInt2855++;
-        if ((i ^ 0xffffffff) <= -2 && (i_5_ ^ 0xffffffff) <= -2
-                && (i ^ 0xffffffff) >= (-2 + Class367_Sub4.anInt7319 ^ 0xffffffff)
+        if (i >= 1 && i_5_ >= 1
+                && -2 + Class367_Sub4.anInt7319 >= i
                 && i_5_ <= -2 + Class348_Sub40_Sub3.anInt9109) {
             int i_8_ = i_7_;
-            if ((i_8_ ^ 0xffffffff) > -4 && Class79.method802(i_5_, i, true))
+            if (i_8_ < 3 && Class79.method802(i_5_, i, true))
                 i_8_++;
             if ((Class316.aClass348_Sub51_3959
                     .aClass239_Sub27_7261.method1840(-32350) == 0
@@ -38,7 +38,7 @@ final class Class218 {
                     i_1_, i_7_,
                     Class348_Sub8.aHa6654, i,
                     i_5_, (byte) 106);
-            if ((i_3_ ^ 0xffffffff) <= -1) {
+            if (i_3_ >= 0) {
                 int i_9_ = Class316.aClass348_Sub51_3959
                         .aClass239_Sub4_7220.method1737(-32350);
                 Class316.aClass348_Sub51_3959.method3429
@@ -73,15 +73,12 @@ final class Class218 {
         int i_14_ = (class318_sub1_sub3_sub3_sub2
                 .anIntArray10317[0]);
         if (i_13_ >= 0 && Class367_Sub4.anInt7319 > i_13_
-                && (i_14_ ^ 0xffffffff) <= -1
-                && (Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff) < (i_14_
-                ^ 0xffffffff)
-                && ((i_12_ ^ 0xffffffff) <= -1
-                && (Class367_Sub4.anInt7319 ^ 0xffffffff) < (i_12_
-                ^ 0xffffffff)
+                && i_14_ >= 0
+                && i_14_ < Class348_Sub40_Sub3.anInt9109
+                && (i_12_ >= 0
+                && i_12_ < Class367_Sub4.anInt7319
                 && i_10_ >= 0
-                && (i_10_ ^ 0xffffffff) > (Class348_Sub40_Sub3.anInt9109
-                ^ 0xffffffff))) {
+                && Class348_Sub40_Sub3.anInt9109 > i_10_)) {
             int i_15_
                     = (Class59_Sub2_Sub2.method574
                     (i_12_, class318_sub1_sub3_sub3_sub2.method2436((byte) 62),
@@ -92,7 +89,7 @@ final class Class218 {
                                     [(class318_sub1_sub3_sub3_sub2
                                     .aByte6381)]),
                             0, 0, 0));
-            if ((i_15_ ^ 0xffffffff) <= -2) {
+            if (i_15_ >= 1) {
                 if (i_11_ != 4)
                     aClass262_2859 = null;
                 if (i_15_ <= 3) {
@@ -129,10 +126,10 @@ final class Class218 {
                                   Class348_Sub49 class348_sub49) {
         anInt2852++;
         if (i >= 5) {
-            if ((i_17_ ^ 0xffffffff) == -2)
+            if (i_17_ == 1)
                 this.anInt2853
                         = class348_sub49.method3330(842397944);
-            else if ((i_17_ ^ 0xffffffff) != -3) {
+            else if (i_17_ != 2) {
                 if (i_17_ == 3)
                     this.aBoolean2854 = true;
                 else if (i_17_ == 4)

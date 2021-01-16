@@ -45,7 +45,7 @@ final class Class371 {
         if (i_4_ != 1)
             return false;
         anInt4523++;
-        return (i ^ 0xffffffff) == -1 || i == 1 || i == 2;
+        return i == 0 || i == 1 || i == 2;
     }
 
     public Class371() {

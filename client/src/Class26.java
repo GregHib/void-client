@@ -53,14 +53,14 @@ final class Class26 {
         anInt373++;
         if ((aClass45_379.method414(-1) ^ 0xffffffff) == i_3_)
             return method307(i, is, 122, 0);
-        if ((aClass45_379.method407(0, i) ^ 0xffffffff) == -2)
+        if (aClass45_379.method407(0, i) == 1)
             return method307(0, is, 69, i);
         throw new RuntimeException();
     }
 
     final Class348_Sub19_Sub1 method309(int[] is, int i, int i_4_) {
         anInt376++;
-        if ((aClass45_377.method414(i_4_) ^ 0xffffffff) == -2)
+        if (aClass45_377.method414(i_4_) == 1)
             return method310(i, 0, (byte) 92, is);
         if (aClass45_377.method407(0, i) == 1)
             return method310(0, i, (byte) 78, is);
@@ -102,7 +102,7 @@ final class Class26 {
         anInt380++;
         if (i <= 85)
             method311((byte) -75, '\014');
-        return c == 160 || c == 32 || c == 95 || (c ^ 0xffffffff) == -46;
+        return c == 160 || c == 32 || c == 95 || c == 45;
     }
 
     Class26(Class45 class45, Class45 class45_9_) {

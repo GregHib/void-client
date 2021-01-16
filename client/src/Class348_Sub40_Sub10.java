@@ -22,8 +22,8 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
         do {
             do {
                 if (i_1_ != 0) {
-                    if ((i_1_ ^ 0xffffffff) != -2) {
-                        if ((i_1_ ^ 0xffffffff) == -3)
+                    if (i_1_ != 1) {
+                        if (i_1_ == 2)
                             break;
                         break while_152_;
                     }
@@ -35,7 +35,7 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
                 break while_152_;
             } while (false);
             this.aBoolean7045
-                    = (class348_sub49.method3387(255) ^ 0xffffffff) == -2;
+                    = class348_sub49.method3387(255) == 1;
         } while (false);
         if (i_0_ != 31015)
             method3049(null, -85, -85);
@@ -77,8 +77,7 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
             int[] is_11_ = is[1];
             int[] is_12_ = is[2];
             for (int i_13_ = 0;
-                 ((i_13_ ^ 0xffffffff)
-                         > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff));
+                 (Class348_Sub40_Sub6.anInt9139 > i_13_);
                  i_13_++) {
                 is_10_[i_13_]
                         = (anInt9182 * is_7_[i_13_] >> -1017334964) + anInt9176;

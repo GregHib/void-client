@@ -28,7 +28,7 @@ final class Class234 {
         anInt3040++;
         int i_2_ = aRandomAccessFile3036.read(is, i, i_1_);
         int i_3_ = 39 % ((75 - i_0_) / 39);
-        if ((i_2_ ^ 0xffffffff) < -1)
+        if (i_2_ > 0)
             aLong3039 += i_2_;
         return i_2_;
     }
@@ -46,8 +46,7 @@ final class Class234 {
     final void method1658(byte i, int i_4_, int i_5_, byte[] is)
             throws IOException {
         anInt3043++;
-        if (((long) i_5_ - -aLong3039 ^ 0xffffffffffffffffL)
-                < (aLong3037 ^ 0xffffffffffffffffL)) {
+        if (aLong3037 < (long) i_5_ - -aLong3039) {
             aRandomAccessFile3036.seek(aLong3037);
             aRandomAccessFile3036.write(1);
             throw new EOFException();
@@ -103,7 +102,7 @@ final class Class234 {
 
     Class234(File file, String string, long l) throws IOException {
         try {
-            if ((l ^ 0xffffffffffffffffL) == 0L)
+            if (l == -1)
                 l = 9223372036854775807L;
             if (l < file.length())
                 file.delete();
@@ -112,7 +111,7 @@ final class Class234 {
             aLong3039 = 0L;
             aFile3046 = file;
             int i = aRandomAccessFile3036.read();
-            if ((i ^ 0xffffffff) != 0 && !string.equals("r")) {
+            if (i != -1 && !string.equals("r")) {
                 aRandomAccessFile3036.seek(0L);
                 aRandomAccessFile3036.write(i);
             }

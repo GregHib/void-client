@@ -109,11 +109,11 @@ final class Class51 {
         }
         for (int i_0_ = 0; i_0_ < this.anIntArray945.length;
              i_0_++) {
-            if ((this.anIntArray945[i_0_] ^ 0xffffffff) != 0) {
+            if (this.anIntArray945[i_0_] != -1) {
                 Class51 class51_1_
                         = this.aClass263_933
                         .method2005(0, this.anIntArray945[i_0_]);
-                if ((class51_1_.anInt887 ^ 0xffffffff) != 0
+                if (class51_1_.anInt887 != -1
                         || class51_1_.anIntArray904 != null)
                     return true;
             }
@@ -149,9 +149,9 @@ final class Class51 {
             if (aByte886 == 3)
                 i_11_ |= 0x7;
             else {
-                if (aByte886 != 0 || (anInt954 ^ 0xffffffff) != -1)
+                if (aByte886 != 0 || anInt954 != 0)
                     i_11_ |= 0x2;
-                if ((anInt893 ^ 0xffffffff) != -1)
+                if (anInt893 != 0)
                     i_11_ |= 0x1;
                 if (anInt890 != 0)
                     i_11_ |= 0x4;
@@ -177,7 +177,7 @@ final class Class51 {
                 class64 = method477(i_9_, var_ha, i, i_10_ ^ ~0xec, i_12_);
                 if (class64 == null)
                     return null;
-                if (i == 10 && (i_9_ ^ 0xffffffff) < -4)
+                if (i == 10 && i_9_ > 3)
                     class64.a(2048);
                 if (bool)
                     var_r = class64.ba(null);
@@ -198,10 +198,10 @@ final class Class51 {
             }
             if (i_10_ != 128)
                 method477(-4, null, 72, 42, -33);
-            boolean bool_13_ = ((aByte886 ^ 0xffffffff) != -1
+            boolean bool_13_ = (aByte886 != 0
                     && (var_s_6_ != null || var_s != null));
             boolean bool_14_ = (anInt893 != 0 || anInt954 != 0
-                    || (anInt890 ^ 0xffffffff) != -1);
+                    || anInt890 != 0);
             if (bool_13_ || bool_14_) {
                 class64 = class64.method614((byte) 0, i_11_, true);
                 if (bool_13_)
@@ -233,7 +233,7 @@ final class Class51 {
         int i_19_ = 850 + anInt880;
         int i_20_ = i_17_;
         boolean bool = (this.aBoolean902
-                || (i_15_ ^ 0xffffffff) == -3 && i > 3);
+                || i_15_ == 2 && i > 3);
         if (bool)
             i_17_ |= 0x10;
         if (i != 0)
@@ -241,7 +241,7 @@ final class Class51 {
         else {
             if (anInt928 != 128 || anInt900 != 0)
                 i_17_ |= 0x1;
-            if ((anInt882 ^ 0xffffffff) != -129 || anInt946 != 0)
+            if (anInt882 != 128 || anInt946 != 0)
                 i_17_ |= 0x4;
         }
         if (anInt935 != 128 || anInt873 != 0)
@@ -259,19 +259,19 @@ final class Class51 {
             return null;
         int i_21_ = -1;
         for (int i_22_ = 0;
-             (i_22_ ^ 0xffffffff) > (aByteArray885.length ^ 0xffffffff);
+             aByteArray885.length > i_22_;
              i_22_++) {
-            if ((i_15_ ^ 0xffffffff) == (aByteArray885[i_22_] ^ 0xffffffff)) {
+            if (aByteArray885[i_22_] == i_15_) {
                 i_21_ = i_22_;
                 break;
             }
         }
-        if ((i_21_ ^ 0xffffffff) == 0)
+        if (i_21_ == -1)
             return null;
         int i_23_ = anIntArrayArray907[i_21_].length;
-        if ((i_23_ ^ 0xffffffff) < -1) {
+        if (i_23_ > 0) {
             long l = var_ha.anInt4567;
-            for (int i_24_ = 0; (i_24_ ^ 0xffffffff) > (i_23_ ^ 0xffffffff);
+            for (int i_24_ = 0; i_23_ > i_24_;
                  i_24_++)
                 l = l * 67783L + (long) anIntArrayArray907[i_21_][i_24_];
             synchronized (this.aClass263_933
@@ -280,13 +280,12 @@ final class Class51 {
                         .aClass60_3360.method583(l, 78);
             }
             if (class64 != null) {
-                if ((class64.WA() ^ 0xffffffff) != (i_18_ ^ 0xffffffff))
+                if (i_18_ != class64.WA())
                     i_17_ |= 0x1000;
                 if (i_19_ != class64.da())
                     i_17_ |= 0x2000;
             }
-            if (class64 == null || (var_ha.method3667(class64.ua(), i_17_)
-                    ^ 0xffffffff) != -1) {
+            if (class64 == null || var_ha.method3667(class64.ua(), i_17_) != 0) {
                 int i_25_ = i_17_ | 0x1f01f;
                 if (class64 != null)
                     i_25_ = var_ha.method3679(i_25_, class64.ua());
@@ -309,7 +308,7 @@ final class Class51 {
                             return null;
                         if (class124.anInt1830 < 13)
                             class124.method1092(2, 96);
-                        if ((i_23_ ^ 0xffffffff) < -2)
+                        if (i_23_ > 1)
                             Class341.aClass124Array4236[i_26_] = class124;
                     }
                     if (i_23_ > 1)
@@ -328,18 +327,18 @@ final class Class51 {
             }
         }
         Class64 class64_27_ = class64.method614((byte) 0, i_17_, true);
-        if ((class64.WA() ^ 0xffffffff) != (i_18_ ^ 0xffffffff))
+        if (i_18_ != class64.WA())
             class64_27_.C(i_18_);
         if (class64.da() != i_19_)
             class64_27_.LA(i_19_);
         if (bool)
             class64_27_.v();
-        if ((i_15_ ^ 0xffffffff) == -5 && (i ^ 0xffffffff) < -4) {
+        if (i_15_ == 4 && i > 3) {
             class64_27_.k(2048);
             class64_27_.H(180, 0, -180);
         }
         i &= 0x3;
-        if ((i ^ 0xffffffff) == -2)
+        if (i == 1)
             class64_27_.k(4096);
         else if (i != 2) {
             if (i == 3)
@@ -348,11 +347,10 @@ final class Class51 {
             class64_27_.k(8192);
         if (aShortArray940 != null) {
             for (int i_28_ = 0;
-                 (i_28_ ^ 0xffffffff) > (aShortArray940.length ^ 0xffffffff);
+                 aShortArray940.length > i_28_;
                  i_28_++) {
                 if (aByteArray872 != null
-                        && (i_28_ ^ 0xffffffff) > (aByteArray872.length
-                        ^ 0xffffffff))
+                        && aByteArray872.length > i_28_)
                     class64_27_.ia(aShortArray940[i_28_],
                             (Class348_Sub26.aShortArray6889
                                     [0xff & aByteArray872[i_28_]]));
@@ -363,18 +361,18 @@ final class Class51 {
         }
         if (aShortArray919 != null) {
             for (int i_29_ = 0;
-                 (aShortArray919.length ^ 0xffffffff) < (i_29_ ^ 0xffffffff);
+                 i_29_ < aShortArray919.length;
                  i_29_++)
                 class64_27_.aa(aShortArray919[i_29_], aShortArray892[i_29_]);
         }
-        if ((aByte922 ^ 0xffffffff) != -1)
+        if (aByte922 != 0)
             class64_27_.method624(aByte944, aByte952, aByte879,
                     0xff & aByte922);
-        if ((anInt928 ^ 0xffffffff) != -129 || anInt935 != 128
-                || (anInt882 ^ 0xffffffff) != -129)
+        if (anInt928 != 128 || anInt935 != 128
+                || anInt882 != 128)
             class64_27_.O(anInt928, anInt935, anInt882);
-        if (anInt900 != 0 || (anInt873 ^ 0xffffffff) != -1
-                || (anInt946 ^ 0xffffffff) != -1)
+        if (anInt900 != 0 || anInt873 != 0
+                || anInt946 != 0)
             class64_27_.H(anInt900, anInt873, anInt946);
         class64_27_.s(i_20_);
         return class64_27_;
@@ -391,8 +389,7 @@ final class Class51 {
             for (int i_31_ = 0; aByteArray885.length > i_31_; i_31_++) {
                 if (aByteArray885[i_31_] == i) {
                     for (int i_32_ = 0;
-                         ((i_32_ ^ 0xffffffff)
-                                 > (anIntArrayArray907[i_31_].length ^ 0xffffffff));
+                         (anIntArrayArray907[i_31_].length > i_32_);
                          i_32_++) {
                         if (!this.aClass263_933
                                 .aClass45_3345.method420
@@ -450,8 +447,7 @@ final class Class51 {
         if (this.anIntArray943 != null) {
             for (int i_37_ = 0; i_37_ < this.anIntArray943.length;
                  i_37_++) {
-                if ((i_36_ ^ 0xffffffff)
-                        == (this.anIntArray943[i_37_] ^ 0xffffffff))
+                if (this.anIntArray943[i_37_] == i_36_)
                     return true;
             }
         }
@@ -463,29 +459,28 @@ final class Class51 {
     private final void method482(Class348_Sub49 class348_sub49, int i,
                                  byte i_38_) {
         anInt960++;
-        if (i != 1 && (i ^ 0xffffffff) != -6) {
-            if ((i ^ 0xffffffff) == -3)
+        if (i != 1 && i != 5) {
+            if (i == 2)
                 this.aString884
                         = class348_sub49.method3377((byte) 121);
             else if (i == 14)
                 this.anInt961 = class348_sub49.method3387(255);
-            else if ((i ^ 0xffffffff) != -16) {
-                if ((i ^ 0xffffffff) == -18) {
+            else if (i != 15) {
+                if (i == 17) {
                     this.aBoolean896 = false;
                     this.anInt920 = 0;
                 } else if (i == 18)
                     this.aBoolean896 = false;
-                else if ((i ^ 0xffffffff) != -20) {
+                else if (i != 19) {
                     if (i == 21)
                         aByte886 = (byte) 1;
                     else if (i != 22) {
-                        if ((i ^ 0xffffffff) == -24)
+                        if (i == 23)
                             this.anInt955 = 1;
-                        else if ((i ^ 0xffffffff) == -25) {
+                        else if (i == 24) {
                             this.anInt868
                                     = class348_sub49.method3330(842397944);
-                            if ((this.anInt868 ^ 0xffffffff)
-                                    == -65536)
+                            if (this.anInt868 == 65535)
                                 this.anInt868 = -1;
                         } else if (i == 27)
                             this.anInt920 = 1;
@@ -494,7 +489,7 @@ final class Class51 {
                                 if (i == 39)
                                     anInt880
                                             = class348_sub49.method3388(-86) * 5;
-                                else if ((i ^ 0xffffffff) <= -31 && i < 35)
+                                else if (i >= 30 && i < 35)
                                     this.aStringArray913[-30 + i]
                                             = class348_sub49.method3377((byte) 88);
                                 else if (i != 40) {
@@ -509,51 +504,34 @@ final class Class51 {
                                                             .method3330
                                                                     (842397944));
                                                 else if (i != 66) {
-                                                    if ((i ^ 0xffffffff)
-                                                            != -68) {
+                                                    if (i != 67) {
                                                         if (i == 69)
                                                             this
                                                                     .anInt914
                                                                     = (class348_sub49
                                                                     .method3387
                                                                             (255));
-                                                        else if ((i
-                                                                ^ 0xffffffff)
-                                                                != -71) {
-                                                            if ((i
-                                                                    ^ 0xffffffff)
-                                                                    == -72)
+                                                        else if (i != 70) {
+                                                            if (i == 71)
                                                                 anInt873
                                                                         = ((class348_sub49
                                                                         .method3372
                                                                                 (13638))
                                                                         << 732014370);
-                                                            else if ((i
-                                                                    ^ 0xffffffff)
-                                                                    != -73) {
-                                                                if ((i
-                                                                        ^ 0xffffffff)
-                                                                        == -74)
+                                                            else if (i != 72) {
+                                                                if (i == 73)
                                                                     this
                                                                             .aBoolean947
                                                                             = true;
-                                                                else if ((i
-                                                                        ^ 0xffffffff)
-                                                                        == -75)
+                                                                else if (i == 74)
                                                                     this
                                                                             .aBoolean876
                                                                             = true;
-                                                                else if ((i
-                                                                        ^ 0xffffffff)
-                                                                        != -76) {
+                                                                else if (i != 75) {
                                                                     if (i != 77
-                                                                            && ((i
-                                                                            ^ 0xffffffff)
-                                                                            != -93)) {
-                                                                        if ((i
-                                                                                ^ 0xffffffff)
-                                                                                != -79) {
-                                                                            if ((i ^ 0xffffffff) != -80) {
+                                                                            && (i != 92)) {
+                                                                        if (i != 78) {
+                                                                            if (i != 79) {
                                                                                 if (i == 81) {
                                                                                     aByte886 = (byte) 2;
                                                                                     anInt915 = class348_sub49.method3387(255) * 256;
@@ -561,25 +539,25 @@ final class Class51 {
                                                                                     if (i == 88)
                                                                                         this.aBoolean894 = false;
                                                                                     else if (i != 89) {
-                                                                                        if ((i ^ 0xffffffff) == -92)
+                                                                                        if (i == 91)
                                                                                             this.aBoolean942 = true;
                                                                                         else if (i != 93) {
                                                                                             if (i == 94)
                                                                                                 aByte886 = (byte) 4;
-                                                                                            else if ((i ^ 0xffffffff) == -96) {
+                                                                                            else if (i == 95) {
                                                                                                 aByte886 = (byte) 5;
                                                                                                 anInt915 = class348_sub49.method3372(13638);
                                                                                             } else if (i != 97) {
-                                                                                                if ((i ^ 0xffffffff) != -99) {
-                                                                                                    if ((i ^ 0xffffffff) != -100) {
+                                                                                                if (i != 98) {
+                                                                                                    if (i != 99) {
                                                                                                         if (i != 100) {
                                                                                                             if (i != 101) {
                                                                                                                 if (i == 102)
                                                                                                                     this.anInt875 = class348_sub49.method3330(842397944);
-                                                                                                                else if ((i ^ 0xffffffff) != -104) {
-                                                                                                                    if ((i ^ 0xffffffff) == -105)
+                                                                                                                else if (i != 103) {
+                                                                                                                    if (i == 104)
                                                                                                                         this.anInt936 = class348_sub49.method3387(255);
-                                                                                                                    else if ((i ^ 0xffffffff) != -106) {
+                                                                                                                    else if (i != 105) {
                                                                                                                         if (i == 106) {
                                                                                                                             int i_39_ = class348_sub49.method3387(255);
                                                                                                                             this.anIntArray943 = new int[i_39_];
@@ -590,9 +568,9 @@ final class Class51 {
                                                                                                                                 anIntArray959[i_40_] = i_41_;
                                                                                                                                 anInt911 += i_41_;
                                                                                                                             }
-                                                                                                                        } else if ((i ^ 0xffffffff) != -108) {
+                                                                                                                        } else if (i != 107) {
                                                                                                                             if (i < 150 || i >= 155) {
-                                                                                                                                if ((i ^ 0xffffffff) != -161) {
+                                                                                                                                if (i != 160) {
                                                                                                                                     if (i == 162) {
                                                                                                                                         aByte886 = (byte) 3;
                                                                                                                                         anInt915 = class348_sub49.method3385((byte) -126);
@@ -602,14 +580,14 @@ final class Class51 {
                                                                                                                                         aByte879 = class348_sub49.method3388(-87);
                                                                                                                                         aByte922 = class348_sub49.method3388(-111);
                                                                                                                                     } else if (i != 164) {
-                                                                                                                                        if ((i ^ 0xffffffff) != -166) {
+                                                                                                                                        if (i != 165) {
                                                                                                                                             if (i != 166) {
                                                                                                                                                 if (i == 167)
                                                                                                                                                     this.anInt930 = class348_sub49.method3330(842397944);
-                                                                                                                                                else if ((i ^ 0xffffffff) != -169) {
-                                                                                                                                                    if ((i ^ 0xffffffff) != -170) {
+                                                                                                                                                else if (i != 168) {
+                                                                                                                                                    if (i != 169) {
                                                                                                                                                         if (i != 170) {
-                                                                                                                                                            if ((i ^ 0xffffffff) == -172)
+                                                                                                                                                            if (i == 171)
                                                                                                                                                                 this.anInt953 = class348_sub49.method3382(-121);
                                                                                                                                                             else if (i == 173) {
                                                                                                                                                                 this.anInt878 = class348_sub49.method3330(842397944);
@@ -620,7 +598,7 @@ final class Class51 {
                                                                                                                                                                     int i_43_ = Class33.method340(i_42_, (byte) 108);
                                                                                                                                                                     aClass356_881 = new Class356(i_43_);
                                                                                                                                                                 }
-                                                                                                                                                                for (int i_44_ = 0; (i_42_ ^ 0xffffffff) < (i_44_ ^ 0xffffffff); i_44_++) {
+                                                                                                                                                                for (int i_44_ = 0; i_44_ < i_42_; i_44_++) {
                                                                                                                                                                     boolean bool = class348_sub49.method3387(255) == 1;
                                                                                                                                                                     int i_45_ = class348_sub49.method3351(-1);
                                                                                                                                                                     Class348 class348;
@@ -688,7 +666,7 @@ final class Class51 {
                                                                                 this.anInt889 = class348_sub49.method3387(255);
                                                                                 int i_48_ = class348_sub49.method3387(255);
                                                                                 this.anIntArray904 = new int[i_48_];
-                                                                                for (int i_49_ = 0; (i_49_ ^ 0xffffffff) > (i_48_ ^ 0xffffffff); i_49_++)
+                                                                                for (int i_49_ = 0; i_48_ > i_49_; i_49_++)
                                                                                     this.anIntArray904[i_49_] = class348_sub49.method3330(842397944);
                                                                             }
                                                                         } else {
@@ -700,9 +678,7 @@ final class Class51 {
                                                                     } else {
                                                                         anInt934
                                                                                 = class348_sub49.method3330(842397944);
-                                                                        if ((anInt934
-                                                                                ^ 0xffffffff)
-                                                                                == -65536)
+                                                                        if (anInt934 == 65535)
                                                                             anInt934 = -1;
                                                                         anInt939
                                                                                 = class348_sub49.method3330(842397944);
@@ -711,11 +687,9 @@ final class Class51 {
                                                                             anInt939 = -1;
                                                                         int i_50_
                                                                                 = -1;
-                                                                        if ((i
-                                                                                ^ 0xffffffff)
-                                                                                == -93) {
+                                                                        if (i == 92) {
                                                                             i_50_ = class348_sub49.method3330(842397944);
-                                                                            if ((i_50_ ^ 0xffffffff) == -65536)
+                                                                            if (i_50_ == 65535)
                                                                                 i_50_ = -1;
                                                                         }
                                                                         int i_51_
@@ -728,7 +702,7 @@ final class Class51 {
                                                                              i_52_++) {
                                                                             this.anIntArray945[i_52_]
                                                                                     = class348_sub49.method3330(842397944);
-                                                                            if ((this.anIntArray945[i_52_] ^ 0xffffffff) == -65536)
+                                                                            if (this.anIntArray945[i_52_] == 65535)
                                                                                 this.anIntArray945[i_52_] = -1;
                                                                         }
                                                                         this
@@ -797,8 +771,7 @@ final class Class51 {
                                     aShortArray940 = new short[i_57_];
                                     aShortArray908 = new short[i_57_];
                                     for (int i_58_ = 0;
-                                         ((i_57_ ^ 0xffffffff)
-                                                 < (i_58_ ^ 0xffffffff));
+                                         (i_58_ < i_57_);
                                          i_58_++) {
                                         aShortArray940[i_58_]
                                                 = (short) (class348_sub49
@@ -823,7 +796,7 @@ final class Class51 {
             } else
                 this.anInt926 = class348_sub49.method3387(255);
         } else {
-            if ((i ^ 0xffffffff) == -6
+            if (i == 5
                     && this.aClass263_933.aBoolean3355)
                 method484(class348_sub49, -528);
             int i_59_ = class348_sub49.method3387(255);
@@ -859,17 +832,17 @@ final class Class51 {
             l |= var_ha.anInt4567 << 1626230813;
             if (class17 != null)
                 i_67_ |= class17.method263(i, 123, i_70_, false);
-            if ((aByte886 ^ 0xffffffff) != -4) {
-                if ((aByte886 ^ 0xffffffff) != -1
-                        || (anInt954 ^ 0xffffffff) != -1)
+            if (aByte886 != 3) {
+                if (aByte886 != 0
+                        || anInt954 != 0)
                     i_67_ |= 0x2;
-                if ((anInt893 ^ 0xffffffff) != -1)
+                if (anInt893 != 0)
                     i_67_ |= 0x1;
                 if (anInt890 != 0)
                     i_67_ |= 0x4;
             } else
                 i_67_ |= 0x7;
-            if (i_64_ == 10 && (i_66_ ^ 0xffffffff) < -4)
+            if (i_64_ == 10 && i_66_ > 3)
                 i_67_ |= 0x5;
             Class64 class64;
             synchronized (this.aClass263_933
@@ -941,7 +914,7 @@ final class Class51 {
             method486(79);
         anInt871++;
         int i_74_ = class348_sub49.method3387(255);
-        for (int i_75_ = 0; (i_74_ ^ 0xffffffff) < (i_75_ ^ 0xffffffff);
+        for (int i_75_ = 0; i_75_ < i_74_;
              i_75_++) {
             class348_sub49.anInt7197++;
             int i_76_ = class348_sub49.method3387(i ^ ~0x2f0);
@@ -960,8 +933,7 @@ final class Class51 {
                 .aClass45_3345) {
             for (int i_77_ = 0; i_77_ < anIntArrayArray907.length; i_77_++) {
                 for (int i_78_ = 0;
-                     ((i_78_ ^ 0xffffffff)
-                             > (anIntArrayArray907[i_77_].length ^ 0xffffffff));
+                     (anIntArrayArray907[i_77_].length > i_78_);
                      i_78_++)
                     bool &= (this.aClass263_933
                             .aClass45_3345.method420
@@ -992,10 +964,10 @@ final class Class51 {
     }
 
     final void method488(int i) {
-        if ((this.anInt874 ^ 0xffffffff) == 0) {
+        if (this.anInt874 == -1) {
             this.anInt874 = 0;
             if (aByteArray885 != null
-                    && (aByteArray885.length ^ 0xffffffff) == -2
+                    && aByteArray885.length == 1
                     && aByteArray885[0] == 10)
                 this.anInt874 = 1;
             for (int i_82_ = 0; i_82_ < 5; i_82_++) {
@@ -1017,7 +989,7 @@ final class Class51 {
             int i_84_ = (int) (Math.random() * (double) anInt911);
             int i_85_;
             for (i_85_ = 0;
-                 (anIntArray959[i_85_] ^ 0xffffffff) >= (i_84_ ^ 0xffffffff);
+                 i_84_ >= anIntArray959[i_85_];
                  i_85_++)
                 i_84_ -= anIntArray959[i_85_];
             return this.anIntArray943[i_85_];

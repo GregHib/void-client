@@ -93,13 +93,13 @@ final class Class50_Sub1 extends Class50 {
     static final char method462(byte i, int i_20_) {
         anInt5216++;
         int i_21_ = 0xff & i;
-        if ((i_21_ ^ 0xffffffff) == -1)
+        if (i_21_ == 0)
             throw new IllegalArgumentException("Non cp1252 character 0x"
                     + Integer.toString(i_21_, 16)
                     + " provided");
-        if ((i_21_ ^ 0xffffffff) <= -129 && i_21_ < 160) {
+        if (i_21_ >= 128 && i_21_ < 160) {
             int i_22_ = Class44.aCharArray625[i_21_ + -128];
-            if ((i_22_ ^ 0xffffffff) == -1)
+            if (i_22_ == 0)
                 i_22_ = 63;
             i_21_ = i_22_;
         }
@@ -112,14 +112,14 @@ final class Class50_Sub1 extends Class50 {
         anInt5210++;
         Class348_Sub49 class348_sub49 = new Class348_Sub49(518);
         int[] is = new int[4];
-        for (int i = 0; (i ^ 0xffffffff) > -5; i++)
+        for (int i = 0; i < 4; i++)
             is[i] = (int) (Math.random() * 9.9999999E7);
         class348_sub49.method3378(bool, 10);
         class348_sub49.method3391((byte) 114, is[0]);
         class348_sub49.method3391((byte) 97, is[1]);
         class348_sub49.method3391((byte) 109, is[2]);
         class348_sub49.method3391((byte) 105, is[3]);
-        for (int i = 0; (i ^ 0xffffffff) > -11; i++)
+        for (int i = 0; i < 10; i++)
             class348_sub49.method3391((byte) 120,
                     (int) (9.9999999E7 * Math.random()));
         class348_sub49.method3337((byte) 107,

@@ -24,7 +24,7 @@ final class Class226 {
         if (class348_sub42_sub11 != null)
             return class348_sub42_sub11;
         byte[] is;
-        if ((i_0_ ^ 0xffffffff) > -32769)
+        if (i_0_ < 32768)
             is = aClass45_2961.method410(-1860, 0, i_0_);
         else
             is = aClass45_2965.method410(-1860, 0, 0x7fff & i_0_);

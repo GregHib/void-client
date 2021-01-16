@@ -18,14 +18,11 @@ final class Class103 {
         if (i_2_ < 117)
             aClass345_1607 = null;
         anInt1609++;
-        for (int i_5_ = i_3_; (i_5_ ^ 0xffffffff) >= (i_0_ ^ 0xffffffff);
+        for (int i_5_ = i_3_; i_0_ >= i_5_;
              i_5_++) {
             for (int i_6_ = i; i_4_ >= i_6_; i_6_++) {
-                if (((i_1_ ^ 0xffffffff)
-                        == (Class348_Sub42_Sub17.anIntArrayArray9678[i_5_][i_6_]
-                        ^ 0xffffffff))
-                        && (Class239_Sub8.anIntArrayArray5921[i_5_][i_6_]
-                        ^ 0xffffffff) >= -2)
+                if ((Class348_Sub42_Sub17.anIntArrayArray9678[i_5_][i_6_] == i_1_)
+                        && Class239_Sub8.anIntArrayArray5921[i_5_][i_6_] <= 1)
                     return true;
             }
         }
@@ -43,7 +40,7 @@ final class Class103 {
             Class65.aClass110_Sub1Array1146[i_13_]
                     = Class65.aClass110_Sub1Array1146[i_8_];
             Class65.aClass110_Sub1Array1146[i_8_] = class110_sub1;
-            for (int i_15_ = i_7_; (i_8_ ^ 0xffffffff) < (i_15_ ^ 0xffffffff);
+            for (int i_15_ = i_7_; i_15_ < i_8_;
                  i_15_++) {
                 if (Class50_Sub4.method473((byte) -122, i_10_, class110_sub1,
                         i, bool_11_, bool,

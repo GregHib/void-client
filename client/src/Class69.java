@@ -91,7 +91,7 @@ final class Class69 {
         if (i_5_ != 393216)
             method723(25, 30, (byte) -113);
         return Class314_Sub1.method2352(124, i_4_, i)
-                | (0x60000 & i ^ 0xffffffff) != -1
+                | (0x60000 & i) != 0
                 || Class273.method2056(i, 90, i_4_)
                 || method723(i, i_4_, (byte) -120);
     }

@@ -33,21 +33,21 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
                 break;
         }
         for (/**/;
-                 ((i_1_ ^ 0xffffffff) < (i_0_ ^ 0xffffffff)
+                 (i_0_ < i_1_
                          && Class26.method311((byte) 104, string.charAt(i_1_ + -1)));
                  i_1_--) {
             /* empty */
         }
         int i_2_ = i_1_ + -i_0_;
-        if ((i_2_ ^ 0xffffffff) > -2 || i_2_ > 12)
+        if (i_2_ < 1 || i_2_ > 12)
             return null;
         StringBuffer stringbuffer = new StringBuffer(i_2_);
-        for (int i_3_ = i_0_; (i_3_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff);
+        for (int i_3_ = i_0_; i_1_ > i_3_;
              i_3_++) {
             char c = string.charAt(i_3_);
             if (Class239_Sub29.method1849(c, i + 108)) {
                 char c_4_ = Class287.method2184(c, -10072);
-                if ((c_4_ ^ 0xffffffff) != -1)
+                if (c_4_ != 0)
                     stringbuffer.append(c_4_);
             }
         }

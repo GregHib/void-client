@@ -61,14 +61,14 @@ final class Class310_Sub3 extends Class310 implements Interface18_Impl1 {
                 if (i_3_ != i_6_) {
                     for (int i_7_ = 0; i_7_ < anInt6337; i_7_++) {
                         for (int i_8_ = 0;
-                             (i_8_ ^ 0xffffffff) > (anInt6339 ^ 0xffffffff);
+                             anInt6339 > i_8_;
                              i_8_++)
                             pixelbuffer.a(is, i_3_ * i_8_ + i_4_ * i_7_,
                                     i_8_ * i_6_ + i_7_ * i_5_, i_3_);
                     }
                 } else {
                     for (int i_9_ = 0;
-                         (i_9_ ^ 0xffffffff) > (anInt6337 ^ 0xffffffff);
+                         anInt6337 > i_9_;
                          i_9_++)
                         pixelbuffer.a(is, i_4_ * i_9_, i_9_ * i_5_, i_4_);
                 }

@@ -26,13 +26,9 @@ final class Class58 {
             return 0;
         int i_2_ = 0;
         for (int i_3_ = 0;
-             ((class348_sub13.anIntArray6758.length
-                     ^ 0xffffffff)
-                     < (i_3_ ^ 0xffffffff));
+             (i_3_ < class348_sub13.anIntArray6758.length);
              i_3_++) {
-            if ((i ^ 0xffffffff)
-                    == (class348_sub13.anIntArray6757[i_3_]
-                    ^ 0xffffffff))
+            if (class348_sub13.anIntArray6757[i_3_] == i)
                 i_2_ += class348_sub13.anIntArray6758[i_3_];
         }
         int i_4_ = 73 % ((i_1_ - -52) / 63);
@@ -70,8 +66,8 @@ final class Class58 {
                 Class132.anInt1910, 32);
         int i_18_ = Class85.method831(Class38.anInt513, -i_8_ + i_7_,
                 Class132.anInt1910, 41);
-        for (int i_19_ = i_13_; (i_19_ ^ 0xffffffff) > (i_17_ ^ 0xffffffff);
-             i_19_++)
+        for (int i_19_ = i_13_; i_17_ > i_19_;
+			 i_19_++)
             Class135_Sub2.method1156(-27, i_16_,
                     Class17.anIntArrayArray255[i_19_], i_15_,
                     i_10_);
@@ -83,8 +79,8 @@ final class Class58 {
                 Class369.anInt4960, 121);
         int i_22_ = Class85.method831(Class113.anInt1745, -i_8_ + i_9_,
                 Class369.anInt4960, -101);
-        for (int i_23_ = i_17_; (i_18_ ^ 0xffffffff) <= (i_23_ ^ 0xffffffff);
-             i_23_++) {
+        for (int i_23_ = i_17_; i_23_ <= i_18_;
+			 i_23_++) {
             int[] is = Class17.anIntArrayArray255[i_23_];
             Class135_Sub2.method1156(-27, i_21_, is, i_15_, i_10_);
             Class135_Sub2.method1156(-27, i_16_, is, i_22_, i_10_);
@@ -106,9 +102,7 @@ final class Class58 {
         if (bool != false)
             method536(-65, true, 105, -126, 39);
         anInt1066++;
-        if ((Class348_Sub33.aByteArrayArrayArray6962[0][i_24_][i] & 0x2
-                ^ 0xffffffff)
-                != -1)
+        if ((Class348_Sub33.aByteArrayArrayArray6962[0][i_24_][i] & 0x2) != 0)
             return true;
         if ((0x10 & Class348_Sub33.aByteArrayArrayArray6962[i_26_][i_24_][i])
                 != 0)

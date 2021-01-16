@@ -41,8 +41,7 @@ final class Class52 implements Interface12 {
 
     static final void method491(byte i) {
         for (int i_1_ = 0;
-             ((i_1_ ^ 0xffffffff)
-                     > (Class348_Sub33.aByteArrayArrayArray6962.length ^ 0xffffffff));
+             (Class348_Sub33.aByteArrayArrayArray6962.length > i_1_);
              i_1_++) {
             for (int i_2_ = 0;
                  i_2_ < Class348_Sub33.aByteArrayArrayArray6962[0].length;
@@ -128,15 +127,12 @@ final class Class52 implements Interface12 {
                         Class283.aLong3660, false);
                 if (Class182.anInterface16Array2447 != null) {
                     for (int i_5_ = Class375.anInt4544 - -1;
-                         ((i_5_ ^ 0xffffffff)
-                                 > (Class182.anInterface16Array2447.length
-                                 ^ 0xffffffff));
+                         (Class182.anInterface16Array2447.length > i_5_);
                          i_5_++) {
-                        if ((Class182.anInterface16Array2447[i_5_]
-                                .method60(-19079)
-                                ^ 0xffffffff) <= -101
+                        if (Class182.anInterface16Array2447[i_5_]
+                                .method60(-19079) >= 100
                                 && Class375.anInt4544 == -1 + i_5_
-                                && (Class240.anInt4674 ^ 0xffffffff) <= -2
+                                && Class240.anInt4674 >= 1
                                 && Class51.aClass311_897.method2322(0)) {
                             try {
                                 Class182.anInterface16Array2447[i_5_]
@@ -151,8 +147,7 @@ final class Class52 implements Interface12 {
                             if ((Class375.anInt4544
                                     >= (-1
                                     + Class182.anInterface16Array2447.length))
-                                    && (Class182.anInterface16Array2447.length
-                                    ^ 0xffffffff) < -2)
+                                    && Class182.anInterface16Array2447.length > 1)
                                 Class375.anInt4544
                                         = !Class186_Sub1.aClass111_5813
                                         .method1044(26) ? -1 : 0;

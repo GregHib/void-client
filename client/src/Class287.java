@@ -24,18 +24,14 @@ final class Class287 {
             if (Class147.anInt2021 < 50
                     && (class17 != null
                     && class17.anIntArrayArray264 != null
-                    && ((i ^ 0xffffffff)
-                    > (class17.anIntArrayArray264.length
-                    ^ 0xffffffff))
+                    && (class17.anIntArrayArray264.length > i)
                     && class17.anIntArrayArray264[i] != null)) {
                 int i_1_ = class17.anIntArrayArray264[i][0];
                 int i_2_ = i_1_ >> 572505608;
                 int i_3_ = (i_1_ & 0xf1) >> 1350926597;
                 if (i_0_ > -13)
                     anInt3695 = 0;
-                if ((class17.anIntArrayArray264[i].length
-                        ^ 0xffffffff)
-                        < -2) {
+                if (class17.anIntArrayArray264[i].length > 1) {
                     int i_4_ = (int) ((double) (class17
                             .anIntArrayArray264[i]).length
                             * Math.random());
@@ -64,10 +60,8 @@ final class Class287 {
                             Class279.method2090(i_3_, i_6_, false, (byte) -35,
                                     i_7_, 0, i_2_);
                     }
-                } else if ((Class316.aClass348_Sub51_3959
-                        .aClass239_Sub26_7234.method1838(-32350)
-                        ^ 0xffffffff)
-                        != -1) {
+                } else if (Class316.aClass348_Sub51_3959
+                        .aClass239_Sub26_7234.method1838(-32350) != 0) {
                     int i_8_
                             = (class318_sub1.anInt6377 + -256
                             >> -301859767);
@@ -106,7 +100,7 @@ final class Class287 {
         long l = 0L;
         if (i <= 98)
             method2184('\uffed', -66);
-        for (int i_12_ = 0; (i_11_ ^ 0xffffffff) < (i_12_ ^ 0xffffffff);
+        for (int i_12_ = 0; i_12_ < i_11_;
              i_12_++)
             l = (l << -1032089403) + -l + (long) string.charAt(i_12_);
         return l;
@@ -124,8 +118,7 @@ final class Class287 {
         try {
             anInt3686++;
             int i_18_ = i_14_ * i_14_ + i_16_ * i_16_;
-            if (((long) i_18_ ^ 0xffffffffffffffffL)
-                    >= (l ^ 0xffffffffffffffffL)) {
+            if (l >= (long) i_18_) {
                 if (i_13_ > -49)
                     method2178(null, -119, null, 58);
                 int i_19_ = Math.min(class46.anInt709 / 2,
@@ -140,7 +133,7 @@ final class Class287 {
                                 + r_Sub2.anInt10483);
                     int i_21_ = Class70.anIntArray1207[i_20_];
                     int i_22_ = Class70.anIntArray1204[i_20_];
-                    if ((Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff) != -5) {
+                    if (Class348_Sub40_Sub21.anInt9282 != 4) {
                         i_22_ = i_22_ * 256 / (Class348_Sub49_Sub1.anInt9750
                                 - -256);
                         i_21_ = 256 * i_21_ / (Class348_Sub49_Sub1.anInt9750
@@ -266,48 +259,27 @@ final class Class287 {
                                         while_89_:
                                         do {
                                             do {
-                                                if ((i_28_ ^ 0xffffffff) != -33
-                                                        && ((i_28_ ^ 0xffffffff)
-                                                        != -161)
-                                                        && ((i_28_ ^ 0xffffffff)
-                                                        != -96)
+                                                if (i_28_ != 32
+                                                        && (i_28_ != 160)
+                                                        && (i_28_ != 95)
                                                         && i_28_ != 45) {
-                                                    if (((i_28_ ^ 0xffffffff)
-                                                            != -92)
-                                                            && ((i_28_
-                                                            ^ 0xffffffff)
-                                                            != -94)
+                                                    if ((i_28_ != 91)
+                                                            && (i_28_ != 93)
                                                             && i_28_ != 35) {
-                                                        if (((i_28_
-                                                                ^ 0xffffffff)
-                                                                != -225)
-                                                                && ((i_28_
-                                                                ^ 0xffffffff)
-                                                                != -226)
+                                                        if ((i_28_ != 224)
+                                                                && (i_28_ != 225)
                                                                 && i_28_ != 226
-                                                                && ((i_28_
-                                                                ^ 0xffffffff)
-                                                                != -229)
+                                                                && (i_28_ != 228)
                                                                 && i_28_ != 227
                                                                 && i_28_ != 192
-                                                                && ((i_28_
-                                                                ^ 0xffffffff)
-                                                                != -194)
-                                                                && ((i_28_
-                                                                ^ 0xffffffff)
-                                                                != -195)
-                                                                && ((i_28_
-                                                                ^ 0xffffffff)
-                                                                != -197)
+                                                                && (i_28_ != 193)
+                                                                && (i_28_ != 194)
+                                                                && (i_28_ != 196)
                                                                 && i_28_ != 195) {
                                                             if (i_28_ != 232
                                                                     && i_28_ != 233
-                                                                    && ((i_28_
-                                                                    ^ 0xffffffff)
-                                                                    != -235)
-                                                                    && ((i_28_
-                                                                    ^ 0xffffffff)
-                                                                    != -236)
+                                                                    && (i_28_ != 234)
+                                                                    && (i_28_ != 235)
                                                                     && i_28_ != 200
                                                                     && i_28_ != 201
                                                                     && i_28_ != 202
@@ -319,50 +291,35 @@ final class Class287 {
                                                                         != 238)
                                                                         && (i_28_
                                                                         != 239)
-                                                                        && ((i_28_
-                                                                        ^ 0xffffffff)
-                                                                        != -206)
-                                                                        && ((i_28_
-                                                                        ^ 0xffffffff)
-                                                                        != -207)
+                                                                        && (i_28_ != 205)
+                                                                        && (i_28_ != 206)
                                                                         && (i_28_
                                                                         != 207)) {
                                                                     if ((i_28_
                                                                             != 242)
                                                                             && (i_28_
                                                                             != 243)
-                                                                            && ((i_28_
-                                                                            ^ 0xffffffff)
-                                                                            != -245)
-                                                                            && ((i_28_
-                                                                            ^ 0xffffffff)
-                                                                            != -247)
+                                                                            && (i_28_ != 244)
+                                                                            && (i_28_ != 246)
                                                                             && (i_28_
                                                                             != 245)
-                                                                            && ((i_28_
-                                                                            ^ 0xffffffff)
-                                                                            != -211)
+                                                                            && (i_28_ != 210)
                                                                             && (i_28_
                                                                             != 211)
-                                                                            && ((i_28_
-                                                                            ^ 0xffffffff)
-                                                                            != -213)
-                                                                            && ((i_28_
-                                                                            ^ 0xffffffff)
-                                                                            != -215)
+                                                                            && (i_28_ != 212)
+                                                                            && (i_28_ != 214)
                                                                             && (i_28_
                                                                             != 213)) {
-                                                                        if ((i_28_
-                                                                                ^ 0xffffffff) != -250
-                                                                                && (i_28_ ^ 0xffffffff) != -251
+                                                                        if (i_28_ != 249
+                                                                                && i_28_ != 250
                                                                                 && i_28_ != 251
-                                                                                && (i_28_ ^ 0xffffffff) != -253
+                                                                                && i_28_ != 252
                                                                                 && i_28_ != 217
-                                                                                && (i_28_ ^ 0xffffffff) != -219
-                                                                                && (i_28_ ^ 0xffffffff) != -220
+                                                                                && i_28_ != 218
+                                                                                && i_28_ != 219
                                                                                 && i_28_ != 220) {
-                                                                            if ((i_28_ ^ 0xffffffff) != -232 && i_28_ != 199) {
-                                                                                if ((i_28_ ^ 0xffffffff) != -256 && i_28_ != 376) {
+                                                                            if (i_28_ != 231 && i_28_ != 199) {
+                                                                                if (i_28_ != 255 && i_28_ != 376) {
                                                                                     if (i_28_ != 241 && i_28_ != 209) {
                                                                                         if (i_28_ == 223)
                                                                                             break while_96_;

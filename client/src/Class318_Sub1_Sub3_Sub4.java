@@ -47,7 +47,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         anInt10352++;
         Class64 class64
                 = method2465(var_ha, anInt10355,
-                ((anInt10334 ^ 0xffffffff) == -1 ? 0 : 5) | 0x800,
+                (anInt10334 == 0 ? 0 : 5) | 0x800,
                 (byte) -82);
         if (class64 == null)
             return null;
@@ -93,7 +93,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
             aClass46_10336 = null;
         class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = null;
         anInt10361++;
-        if ((Class365.anInt4474 ^ 0xffffffff) > -21) {
+        if (Class365.anInt4474 < 20) {
             Class62.aClass243_1114.method1869(-89, class318_sub6);
             Class365.anInt4474++;
         }
@@ -144,8 +144,8 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                 + (-128 + Class301.method2278(1, i_4_, (byte) 120, i_3_)
                 >> 1900779458)));
         i_5_ = (int) (0.3 * (double) i_5_) + 35;
-        if ((i_5_ ^ 0xffffffff) <= -11) {
-            if ((i_5_ ^ 0xffffffff) < -61)
+        if (i_5_ >= 10) {
+            if (i_5_ > 60)
                 i_5_ = 60;
         } else
             i_5_ = 10;
@@ -166,24 +166,19 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         anInt10344++;
         if (!class297.method2247(-4))
             return null;
-        if ((i_7_ ^ 0xffffffff) == -1) {
+        if (i_7_ == 0) {
             Class57[] class57s = Class19.method286((byte) -49, class297);
             if (class57s == null)
                 return null;
             boolean bool = false;
             for (int i_10_ = 0;
-                 (i_10_ ^ 0xffffffff) > (class57s.length ^ 0xffffffff);
+                 class57s.length > i_10_;
                  i_10_++) {
                 if (i_6_ == class57s[i_10_].anInt1047
-                        && ((class57s[i_10_].anInt1054 ^ 0xffffffff)
-                        == (i ^ 0xffffffff))
-                        && ((i_9_ ^ 0xffffffff) == -1
-                        || ((i_9_ ^ 0xffffffff)
-                        == (class57s[i_10_].anInt1052
-                        ^ 0xffffffff)))
-                        && (!bool || ((i_7_ ^ 0xffffffff)
-                        > (class57s[i_10_].anInt1046
-                        ^ 0xffffffff)))) {
+                        && (i == class57s[i_10_].anInt1054)
+                        && (i_9_ == 0
+                        || (class57s[i_10_].anInt1052 == i_9_))
+                        && (!bool || (class57s[i_10_].anInt1046 > i_7_))) {
                     i_7_ = class57s[i_10_].anInt1046;
                     bool = true;
                 }
@@ -193,14 +188,14 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         }
         Class144 class144
                 = class297.method2229(i_9_, i, i_7_, i_6_, (byte) -11);
-        while ((class144.anInt1997 ^ 0xffffffff) == -1)
+        while (class144.anInt1997 == 0)
             Class286_Sub5.method2161((byte) 19, 10L);
         Frame frame = (Frame) class144.anObject1998;
         if (frame == null)
             return null;
         if (i_8_ != 14199)
             return null;
-        if ((class144.anInt1997 ^ 0xffffffff) == -3) {
+        if (class144.anInt1997 == 2) {
             Class56.method527(frame, class297, false);
             return null;
         }
@@ -212,10 +207,10 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         do {
             try {
                 anInt10357++;
-                if ((Class348.anInt4290 ^ 0xffffffff) > -101)
+                if (Class348.anInt4290 < 100)
                     Class318_Sub7.method2512(var_d, var_ha, i ^ 0x74);
                 var_ha.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_);
-                if ((Class348.anInt4290 ^ 0xffffffff) > -101) {
+                if (Class348.anInt4290 < 100) {
                     int i_15_ = 20;
                     int i_16_ = i_12_ / 2 + i_11_;
                     int i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_;
@@ -267,9 +262,9 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                         method2462(63, -7, -14);
                     Class262 class262 = Class75.method758(var_ha);
                     Class309.method2312(-13084, 0, class262, 0, var_ha);
-                    if ((Class367_Sub9.anInt7379 ^ 0xffffffff) < -1) {
+                    if (Class367_Sub9.anInt7379 > 0) {
                         Class164.anInt2173--;
-                        if ((Class164.anInt2173 ^ 0xffffffff) == -1) {
+                        if (Class164.anInt2173 == 0) {
                             Class367_Sub9.anInt7379--;
                             Class164.anInt2173 = 20;
                         }
@@ -319,7 +314,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                 = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 122, i);
         s var_s
                 = Class348_Sub1_Sub1.aSArray8801[this.aByte6381];
-        s var_s_28_ = ((this.aByte6376 ^ 0xffffffff) > -4
+        s var_s_28_ = (this.aByte6376 < 3
                 ? (Class348_Sub1_Sub1.aSArray8801
                 [1 + this.aByte6376])
                 : null);
@@ -479,7 +474,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                 = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 57,
                 anInt10355);
         int i_46_ = class368.anInt4503;
-        if ((i_46_ ^ 0xffffffff) == 0)
+        if (i_46_ == -1)
             this.aBoolean10345 = true;
         else {
             aClass17_10332 = Class10.aClass87_191.method835(i_46_, 7);
@@ -494,9 +489,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
             anInt10333++;
             if (!this.aBoolean10345) {
                 anInt10339 += i;
-                while ((anInt10339 ^ 0xffffffff)
-                        < (aClass17_10332.anIntArray267[anInt10335]
-                        ^ 0xffffffff)) {
+                while (aClass17_10332.anIntArray267[anInt10335] < anInt10339) {
                     anInt10339 -= (aClass17_10332.anIntArray267
                             [anInt10335]);
                     anInt10335++;

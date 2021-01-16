@@ -88,7 +88,7 @@ final class Class50_Sub4 extends Class50 {
                     return i_29_;
                 return -i_29_;
             }
-            if ((i_26_ ^ 0xffffffff) == 0)
+            if (i_26_ == -1)
                 return 0;
             if (i >= -42)
                 return -65;

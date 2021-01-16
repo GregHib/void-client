@@ -98,9 +98,8 @@ final class Class367_Sub7 extends Class367 {
         if (null == class45
                 || !this.aHa_Sub3_4479.aBoolean8101
                 || !this.aHa_Sub3_4479.aBoolean8159
-                || ((aClass378_7346.aD3DCAPS9791.VertexShaderVersion
-                & 0xffff)
-                ^ 0xffffffff) > -258) {
+                || (aClass378_7346.aD3DCAPS9791.VertexShaderVersion
+                & 0xffff) < 257) {
             anIDirect3DVertexShader7345 = null;
             aBoolean7347 = false;
             anIDirect3DPixelShader7343 = null;

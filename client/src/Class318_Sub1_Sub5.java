@@ -50,10 +50,8 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
         anInt8776++;
         if (Class135_Sub2.aClass348_Sub42_Sub12_4846 == null)
             return false;
-        if (((Class135_Sub2.aClass348_Sub42_Sub12_4846
-                .anInt9608)
-                ^ 0xffffffff)
-                <= -2001)
+        if ((Class135_Sub2.aClass348_Sub42_Sub12_4846
+                .anInt9608) >= 2000)
             Class135_Sub2.aClass348_Sub42_Sub12_4846
                     .anInt9608
                     -= 2000;
@@ -114,8 +112,8 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
     static final void method2486(int i, int i_5_, int i_6_, int i_7_, int i_8_,
                                  int i_9_) {
         if (i_8_ >= Class369.anInt4960
-                && (Class113.anInt1745 ^ 0xffffffff) <= (i_5_ ^ 0xffffffff)
-                && (i_9_ ^ 0xffffffff) <= (Class132.anInt1910 ^ 0xffffffff)
+                && i_5_ <= Class113.anInt1745
+                && Class132.anInt1910 <= i_9_
                 && Class38.anInt513 >= i_7_)
             Class125.method1111(i_7_, i, i_5_, i_8_, i_9_, i_6_);
         else

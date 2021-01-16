@@ -29,8 +29,7 @@ abstract class Class286 {
             return false;
         int i_3_ = 118 % ((-40 - i) / 50);
         for (int i_4_ = 0;
-             ((i_4_ ^ 0xffffffff)
-                     > (class348_sub48.anInt7126 ^ 0xffffffff));
+             (class348_sub48.anInt7126 > i_4_);
              i_4_++) {
             if ((class348_sub48.aClass144Array7135[i_4_]
                     != null)

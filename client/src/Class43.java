@@ -43,7 +43,7 @@ final class Class43 {
                 String string_2_
                         = (string_0_ + "settings=" + string
                         + "; version=1; path=/; domain=" + string_1_);
-                if ((string.length() ^ 0xffffffff) == -1)
+                if (string.length() == 0)
                     string_2_
                             += "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
                 else
@@ -62,7 +62,7 @@ final class Class43 {
 
     static final void method383(int i) {
         for (int i_3_ = i;
-             (i_3_ ^ 0xffffffff) > (Class250.anInt3225 ^ 0xffffffff); i_3_++) {
+             Class250.anInt3225 > i_3_; i_3_++) {
             int i_4_ = (Class350.method3452(Class286.anInt3682 + i_3_,
                     (byte) -15, Class250.anInt3225)
                     * Class31.anInt425);
@@ -71,8 +71,7 @@ final class Class43 {
                         = (Class350.method3452(i_5_ - -Class239_Sub24.anInt6095,
                         (byte) -15, Class31.anInt425)
                         + i_4_);
-                if ((Class318_Sub1_Sub1_Sub2.anInt9997 ^ 0xffffffff)
-                        == (Class132.anIntArray1909[i_6_] ^ 0xffffffff))
+                if (Class132.anIntArray1909[i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997)
                     Class92.anInterface4Array1525[i_6_].method14
                             (0, 0, Class58.anInt1067, Class344.anInt4267,
                                     i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_,

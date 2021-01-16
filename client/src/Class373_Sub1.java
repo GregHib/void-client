@@ -20,7 +20,7 @@ final class Class373_Sub1 extends Class373
 
     final boolean method3588(int i) {
         int i_0_ = -59 % ((i - -38) / 48);
-        return -1 != (anInt7419 & 0x2 ^ 0xffffffff);
+        return (anInt7419 & 0x2) != 0;
     }
 
     private final void method3598(int i, int i_1_, int i_2_, int i_3_,
@@ -39,12 +39,12 @@ final class Class373_Sub1 extends Class373
 
     public final synchronized void mouseReleased(MouseEvent mouseevent) {
         int i = method3600(mouseevent, -75);
-        if (-1 == (i & anInt7422 ^ 0xffffffff))
+        if ((i & anInt7422) == 0)
             i = anInt7422;
         if (0 != (0x1 & i))
             method3598(mouseevent.getX(), 3, mouseevent.getClickCount(),
                     mouseevent.getY(), false);
-        if (-1 != (i & 0x4 ^ 0xffffffff))
+        if ((i & 0x4) != 0)
             method3598(mouseevent.getX(), 5, mouseevent.getClickCount(),
                     mouseevent.getY(), false);
         if ((0x2 & i) != 0)
@@ -73,7 +73,7 @@ final class Class373_Sub1 extends Class373
     final boolean method3590(byte i) {
         if (i <= 112)
             return false;
-        return (anInt7419 & 0x4 ^ 0xffffffff) != -1;
+        return (anInt7419 & 0x4) != 0;
     }
 
     public final synchronized void mousePressed(MouseEvent mouseevent) {
@@ -81,10 +81,10 @@ final class Class373_Sub1 extends Class373
         if (1 == i)
             method3598(mouseevent.getX(), 0, mouseevent.getClickCount(),
                     mouseevent.getY(), false);
-        else if ((i ^ 0xffffffff) == -5)
+        else if (i == 4)
             method3598(mouseevent.getX(), 2, mouseevent.getClickCount(),
                     mouseevent.getY(), false);
-        else if (-3 == (i ^ 0xffffffff))
+        else if (i == 2)
             method3598(mouseevent.getX(), 1, mouseevent.getClickCount(),
                     mouseevent.getY(), false);
         anInt7422 |= i;
@@ -124,7 +124,7 @@ final class Class373_Sub1 extends Class373
     final boolean method3595(int i) {
         if (i >= -67)
             mouseMoved(null);
-        return (anInt7419 & 0x1 ^ 0xffffffff) != -1;
+        return (anInt7419 & 0x1) != 0;
     }
 
     final Class348_Sub45 method3596(int i) {

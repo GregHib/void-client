@@ -16,7 +16,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
     static final int method3140(int i, int i_0_) {
         int i_1_ = 40 / ((i - 19) / 63);
         anInt9435++;
-        if ((i_0_ ^ 0xffffffff) == -16711936)
+        if (i_0_ == 16711935)
             return -1;
         return aa.method160(27076, i_0_);
     }
@@ -32,7 +32,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
         Class318_Sub1_Sub3_Sub3.method2433();
         if (i != 11)
             anIntArray9436 = null;
-        for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > -5; i_2_++)
+        for (int i_2_ = 0; i_2_ < 4; i_2_++)
             Class348_Sub45.aClass361Array7108[i_2_].method3500(700);
         Class348_Sub42_Sub3.method3177(-50, false);
         System.gc();
@@ -47,12 +47,11 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
         Class327.anInt4095 = 0;
         Class83.anInt1447 = Class312.anInt3931 = 0;
         for (int i_3_ = 0;
-             ((Class348_Sub27.aClass302Array6897.length ^ 0xffffffff)
-                     < (i_3_ ^ 0xffffffff));
+             (i_3_ < Class348_Sub27.aClass302Array6897.length);
              i_3_++)
             Class348_Sub27.aClass302Array6897[i_3_] = null;
         Class348_Sub42.method3163((byte) -114);
-        for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -2049; i_4_++)
+        for (int i_4_ = 0; i_4_ < 2048; i_4_++)
             Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_4_] = null;
         Class150.anInt2057 = 0;
         Class282.aClass356_3654.method3481(i ^ 0xb);
@@ -86,7 +85,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
                 anInt9433++;
                 int i_6_ = i;
                 if (i_6_ != 0) {
-                    if ((i_6_ ^ 0xffffffff) != -2)
+                    if (i_6_ != 1)
                         break;
                 } else {
                     anInt9438 = class348_sub49.method3330(842397944);

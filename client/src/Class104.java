@@ -60,15 +60,14 @@ final class Class104 {
             i_7_ += i_10_;
             i_3_ += i_10_;
         }
-        if ((this.anInt1624 ^ 0xffffffff)
-                >= (i_5_ + i ^ 0xffffffff)) {
+        if (i_5_ + i >= this.anInt1624) {
             int i_11_ = 1 + (i - -i_5_ + -this.anInt1624);
             i_7_ += i_11_;
             i_6_ += i_11_;
             i_5_ -= i_11_;
         }
         int i_12_ = 101 / ((-30 - i_1_) / 62);
-        if (i_5_ > 0 && (i_4_ ^ 0xffffffff) < -1) {
+        if (i_5_ > 0 && i_4_ > 0) {
             Class248.method1895(i_3_, this.aByteArray1617, i_4_,
                     i_2_, i_6_, i_7_,
                     var_r_Sub2.aByteArray10486, i_5_,
@@ -88,7 +87,7 @@ final class Class104 {
             for (int i_21_ = i_17_; i_18_ >= i_21_; i_21_++) {
                 Class232[] class232s = aClass232ArrayArray1623[i_21_];
                 for (int i_22_ = i_19_;
-                     (i_20_ ^ 0xffffffff) <= (i_22_ ^ 0xffffffff); i_22_++)
+                     i_22_ <= i_20_; i_22_++)
                     class232s[i_22_].aBoolean3009 = true;
             }
         }
@@ -119,11 +118,11 @@ final class Class104 {
             i_24_ = 1;
             i_25_ += this.anInt1624 * i_29_;
         }
-        if ((anInt1612 ^ 0xffffffff) >= (i_26_ + i_24_ ^ 0xffffffff)) {
+        if (i_26_ + i_24_ >= anInt1612) {
             int i_30_ = -anInt1612 + (1 + (i_24_ + i_26_));
             i_26_ -= i_30_;
         }
-        if ((i ^ 0xffffffff) >= -1) {
+        if (i <= 0) {
             int i_31_ = -i + 1;
             i_27_ -= i_31_;
             i_25_ += i_31_;
@@ -135,7 +134,7 @@ final class Class104 {
             i_27_ -= i_32_;
             i_28_ += i_32_;
         }
-        if (i_27_ <= 0 || (i_26_ ^ 0xffffffff) >= -1)
+        if (i_27_ <= 0 || i_26_ <= 0)
             return false;
         int i_33_ = 8;
         i_28_ += (-1 + i_33_) * this.anInt1624;
@@ -147,7 +146,7 @@ final class Class104 {
         if (i != 22311)
             aClass221_1620 = null;
         anInt1615++;
-        return (i_34_ ^ 0xffffffff) <= -5 && i_34_ <= 8;
+        return i_34_ >= 4 && i_34_ <= 8;
     }
 
     final void method956(boolean bool, int i, boolean[][] bools, int i_35_,
@@ -165,7 +164,7 @@ final class Class104 {
                 int i_40_ = i_39_ << anInt1613;
                 int i_41_ = i_39_ + 1 << anInt1613;
                 for (int i_42_ = 0;
-                     (i_42_ ^ 0xffffffff) > (anInt1618 ^ 0xffffffff);
+                     anInt1618 > i_42_;
                      i_42_++) {
                     int i_43_ = 0;
                     int i_44_ = i_42_ << anInt1613;
@@ -174,16 +173,14 @@ final class Class104 {
                             = aHa_Sub2_1616.aClass348_Sub49_Sub1_7798;
                     class348_sub49_sub1.anInt7197 = 0;
                     for (int i_46_ = i_40_; i_41_ > i_46_; i_46_++) {
-                        if ((-i_36_ + i_46_ ^ 0xffffffff) <= (-i_35_
-                                ^ 0xffffffff)
+                        if (-i_35_ <= -i_36_ + i_46_
                                 && -i_36_ + i_46_ <= i_35_) {
                             int i_47_
                                     = i_44_ + i_46_ * aS_Sub2_1622.anInt4587;
                             for (int i_48_ = i_44_;
-                                 (i_48_ ^ 0xffffffff) > (i_45_ ^ 0xffffffff);
+                                 i_45_ > i_48_;
                                  i_48_++) {
-                                if (((-i_37_ + i_48_ ^ 0xffffffff)
-                                        <= (-i_35_ ^ 0xffffffff))
+                                if ((-i_35_ <= -i_37_ + i_48_)
                                         && -i_37_ + i_48_ <= i_35_
                                         && (bools[i_35_ + i_48_ - i_37_]
                                         [i_35_ + i_46_ + -i_36_])) {
@@ -201,8 +198,7 @@ final class Class104 {
                                             }
                                         } else {
                                             for (int i_50_ = 0;
-                                                 ((is.length ^ 0xffffffff)
-                                                         < (i_50_ ^ 0xffffffff));
+                                                 (i_50_ < is.length);
                                                  i_50_++) {
                                                 i_43_++;
                                                 class348_sub49_sub1.method3337
@@ -216,7 +212,7 @@ final class Class104 {
                             }
                         }
                     }
-                    if ((i_43_ ^ 0xffffffff) < -1) {
+                    if (i_43_ > 0) {
                         OpenGL.glMatrixMode(5890);
                         OpenGL.glLoadIdentity();
                         OpenGL.glScalef(f, f, 1.0F);
@@ -232,7 +228,7 @@ final class Class104 {
             }
         } else {
             for (int i_51_ = 0;
-                 (anInt1625 ^ 0xffffffff) < (i_51_ ^ 0xffffffff); i_51_++) {
+                 i_51_ < anInt1625; i_51_++) {
                 int i_52_ = i_51_ << anInt1613;
                 int i_53_ = 1 + i_51_ << anInt1613;
                 for (int i_54_ = 0; i_54_ < anInt1618; i_54_++) {
@@ -240,10 +236,9 @@ final class Class104 {
                     int i_56_ = 1 + i_54_ << anInt1613;
                     while_43_:
                     for (int i_57_ = i_55_;
-                         (i_57_ ^ 0xffffffff) > (i_56_ ^ 0xffffffff);
+                         i_56_ > i_57_;
                          i_57_++) {
-                        if ((i_57_ + -i_37_ ^ 0xffffffff) <= (-i_35_
-                                ^ 0xffffffff)
+                        if (-i_35_ <= i_57_ + -i_37_
                                 && i_35_ >= -i_37_ + i_57_) {
                             for (int i_58_ = i_52_; i_53_ > i_58_; i_58_++) {
                                 if (-i_35_ <= -i_36_ + i_58_
@@ -275,10 +270,10 @@ final class Class104 {
     final void method957(int i) {
         anInt1628++;
         aClass232ArrayArray1623 = new Class232[anInt1618][anInt1625];
-        for (int i_59_ = i; (anInt1625 ^ 0xffffffff) < (i_59_ ^ 0xffffffff);
+        for (int i_59_ = i; i_59_ < anInt1625;
              i_59_++) {
             for (int i_60_ = 0;
-                 (i_60_ ^ 0xffffffff) > (anInt1618 ^ 0xffffffff); i_60_++)
+                 anInt1618 > i_60_; i_60_++)
                 aClass232ArrayArray1623[i_60_][i_59_]
                         = new Class232(aHa_Sub2_1616, this, aS_Sub2_1622, i_60_,
                         i_59_, anInt1613, 1 + 128 * i_60_,
@@ -335,7 +330,7 @@ final class Class104 {
             int i_73_ = -anInt1612 + (1 + i_64_) - -i_68_;
             i_68_ -= i_73_;
         }
-        if ((i ^ 0xffffffff) >= -1) {
+        if (i <= 0) {
             int i_74_ = -i + 1;
             i_69_ -= i_74_;
             i_66_ += i_74_;
@@ -350,7 +345,7 @@ final class Class104 {
             i_69_ -= i_75_;
             i_70_ += i_75_;
         }
-        if ((i_69_ ^ 0xffffffff) < -1 && i_68_ > 0) {
+        if (i_69_ > 0 && i_68_ > 0) {
             Class22.method295(i_72_, i_67_, 256,
                     var_r_Sub2.aByteArray10486, i_69_,
                     this.aByteArray1617, i_68_, i_66_,

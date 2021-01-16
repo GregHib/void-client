@@ -49,20 +49,16 @@ final class Class239_Sub9 extends Class239 {
             return 3;
         if (this.aClass348_Sub51_3136.method3422(674)
                 == Class10.aClass230_186) {
-            if ((i_2_ ^ 0xffffffff) == -1) {
+            if (i_2_ == 0) {
                 if (this.aClass348_Sub51_3136
                         .aClass239_Sub16_7247.method1789(-32350)
                         == 1)
                     return 2;
-                if ((this.aClass348_Sub51_3136
-                        .aClass239_Sub24_7235.method1820(i + -32353)
-                        ^ 0xffffffff)
-                        == -2)
+                if (this.aClass348_Sub51_3136
+                        .aClass239_Sub24_7235.method1820(i + -32353) == 1)
                     return 2;
-                if ((this.aClass348_Sub51_3136
-                        .aClass239_Sub18_7259.method1800(-32350)
-                        ^ 0xffffffff)
-                        < -1)
+                if (this.aClass348_Sub51_3136
+                        .aClass239_Sub18_7259.method1800(-32350) > 0)
                     return 2;
             }
             return 1;

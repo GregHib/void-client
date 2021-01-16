@@ -42,7 +42,7 @@ final class Class50_Sub3 extends Class50 {
         try {
             anInt5238++;
             if (!Class5_Sub1.aBoolean8335 && Class73.anInt4776 < 500) {
-                i_8_ = (i_8_ ^ 0xffffffff) != 0 ? i_8_ : Class362.anInt4458;
+                i_8_ = i_8_ != -1 ? i_8_ : Class362.anInt4458;
                 if (i_0_ >= -65)
                     method469((byte) 19);
                 Class348_Sub42_Sub12 class348_sub42_sub12

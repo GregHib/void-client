@@ -14,10 +14,10 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
 
     static final void method3575(byte i, int i_0_, int i_1_, int i_2_,
                                  int i_3_, int i_4_) {
-        if ((Class38.anInt513 ^ 0xffffffff) <= (i_3_ ^ 0xffffffff)
-                && (Class132.anInt1910 ^ 0xffffffff) >= (i_2_ ^ 0xffffffff)) {
+        if (i_3_ <= Class38.anInt513
+                && i_2_ >= Class132.anInt1910) {
             boolean bool;
-            if ((i_4_ ^ 0xffffffff) <= (Class369.anInt4960 ^ 0xffffffff)) {
+            if (Class369.anInt4960 <= i_4_) {
                 if (i_4_ <= Class113.anInt1745)
                     bool = true;
                 else {
@@ -32,8 +32,7 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
             if (Class369.anInt4960 > i_0_) {
                 i_0_ = Class369.anInt4960;
                 bool_5_ = false;
-            } else if ((i_0_ ^ 0xffffffff)
-                    < (Class113.anInt1745 ^ 0xffffffff)) {
+            } else if (Class113.anInt1745 < i_0_) {
                 i_0_ = Class113.anInt1745;
                 bool_5_ = false;
             } else
@@ -44,7 +43,7 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
                 Class135_Sub2.method1156(-27, i_0_,
                         Class17.anIntArrayArray255[i_3_++],
                         i_4_, i_1_);
-            if ((i_2_ ^ 0xffffffff) >= (Class38.anInt513 ^ 0xffffffff))
+            if (Class38.anInt513 >= i_2_)
                 Class135_Sub2.method1156(-27, i_0_,
                         Class17.anIntArrayArray255[i_2_--],
                         i_4_, i_1_);
@@ -58,12 +57,12 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
                     }
                 } else {
                     for (int i_7_ = i_3_;
-                         (i_2_ ^ 0xffffffff) <= (i_7_ ^ 0xffffffff); i_7_++)
+                         i_7_ <= i_2_; i_7_++)
                         Class17.anIntArrayArray255[i_7_][i_4_] = i_1_;
                 }
             } else {
                 for (int i_8_ = i_3_;
-                     (i_8_ ^ 0xffffffff) >= (i_2_ ^ 0xffffffff); i_8_++) {
+                     i_2_ >= i_8_; i_8_++) {
                     int[] is = Class17.anIntArrayArray255[i_8_];
                     is[i_4_] = is[i_0_] = i_1_;
                 }

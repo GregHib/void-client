@@ -15,11 +15,11 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
     static final void method3097(Class46[] class46s, int i, int i_0_) {
         if (i_0_ >= 116) {
             for (int i_1_ = 0;
-                 (i_1_ ^ 0xffffffff) > (class46s.length ^ 0xffffffff);
+                 class46s.length > i_1_;
                  i_1_++) {
                 Class46 class46 = class46s[i_1_];
                 if (class46 != null) {
-                    if ((class46.anInt774 ^ 0xffffffff) == -1) {
+                    if (class46.anInt774 == 0) {
                         if (class46.aClass46Array798 != null)
                             method3097(class46.aClass46Array798, i,
                                     125);
@@ -33,7 +33,7 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
                                             .anInt7050),
                                     i);
                     }
-                    if ((i ^ 0xffffffff) == -1
+                    if (i == 0
                             && class46.anObjectArray840 != null) {
                         Class348_Sub36 class348_sub36 = new Class348_Sub36();
                         class348_sub36.aClass46_6989
@@ -52,11 +52,8 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
                             if (class46_2_ == null
                                     || (class46_2_.aClass46Array798
                                     == null)
-                                    || (((class46_2_
-                                    .aClass46Array798).length
-                                    ^ 0xffffffff)
-                                    >= (class46.anInt704
-                                    ^ 0xffffffff))
+                                    || (class46.anInt704 >= (class46_2_
+                                    .aClass46Array798).length)
                                     || class46 != (class46_2_
                                     .aClass46Array798
                                     [class46.anInt704]))

@@ -20,7 +20,7 @@ final class Class320 {
         }
         if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i] == null)
             Class348_Sub40_Sub33.aClass46ArrayArray9427[i] = new Class46[i_1_];
-        for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff); i_2_++) {
+        for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
             if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_] == null) {
                 byte[] is
                         = Class229.aClass45_2978.method410(i_0_ ^ ~0x717, i, i_2_);
@@ -29,7 +29,7 @@ final class Class320 {
                             = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_]
                             = new Class46());
                     class46.anInt830 = i_2_ + (i << 1180385680);
-                    if ((is[0] ^ 0xffffffff) != 0)
+                    if (is[0] != -1)
                         throw new IllegalStateException("if1");
                     class46.method433(new Class348_Sub49(is), true);
                 }

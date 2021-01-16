@@ -33,7 +33,7 @@ abstract class Class50 {
                 return null;
             OpenGL.glProgramStringARB(i, 34933, string);
             OpenGL.glGetIntegerv(34379, Class348_Sub31_Sub2.anIntArray9069, 0);
-            if ((Class348_Sub31_Sub2.anIntArray9069[0] ^ 0xffffffff) != 0) {
+            if (Class348_Sub31_Sub2.anIntArray9069[0] != -1) {
                 OpenGL.glBindProgramARB(i, 0);
                 return null;
             }

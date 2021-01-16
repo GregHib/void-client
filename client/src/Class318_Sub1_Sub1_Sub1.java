@@ -178,7 +178,7 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1
                     = new Class235(var_ha, class51, 22, i_11_, i, i_7_, this, bool,
                     i_12_);
             aBoolean9966
-                    = (class51.anInt874 ^ 0xffffffff) != -1 && !bool;
+                    = class51.anInt874 != 0 && !bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929
                     (runtimeexception,

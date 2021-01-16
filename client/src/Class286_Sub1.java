@@ -42,8 +42,7 @@ final class Class286_Sub1 extends Class286 {
             else
                 OpenGL.glBindProgramARB
                         (34336,
-                                ((this.aHa_Sub2_3684.anInt7788
-                                        ^ 0xffffffff) != -2147483648
+                                (this.aHa_Sub2_3684.anInt7788 != 2147483647
                                         ? aClass171_6187.anInt2270
                                         : aClass171_6196.anInt2270));
             class101_sub3.method937(true, 0.0F, 0.0F, -1.0F,

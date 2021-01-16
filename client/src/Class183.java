@@ -150,7 +150,7 @@ final class Class183 {
                 if (i != 6410) {
                     if (i == 6407)
                         return 3;
-                    if ((i ^ 0xffffffff) == -6409)
+                    if (i == 6408)
                         return 4;
                 } else
                     return 2;

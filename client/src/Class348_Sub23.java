@@ -23,7 +23,7 @@ abstract class Class348_Sub23 extends Class348 {
         while_128_:
         do {
             do {
-                if ((i_0_ ^ 0xffffffff) != -1) {
+                if (i_0_ != 0) {
                     if (i_0_ != 1) {
                         if (i_0_ == 2)
                             break;
@@ -64,7 +64,7 @@ abstract class Class348_Sub23 extends Class348 {
                                  int i_1_) {
         anInt6866++;
         Class187.method1406(true);
-        if ((i ^ 0xffffffff) == -1) {
+        if (i == 0) {
             Class348_Sub8.aHa6654
                     = Class104.method958(true, 0, Class348_Sub40_Sub4.aD9113,
                     Class316.aClass348_Sub51_3959
@@ -149,7 +149,7 @@ abstract class Class348_Sub23 extends Class348 {
             } catch (Throwable throwable) {
                 int i_3_ = Class316.aClass348_Sub51_3959
                         .aClass239_Sub25_7271.method1829(-32350);
-                if ((i_3_ ^ 0xffffffff) == -3)
+                if (i_3_ == 2)
                     Class139.aBoolean1952 = true;
                 Class316.aClass348_Sub51_3959.method3429
                         ((byte) 74,
@@ -215,7 +215,7 @@ abstract class Class348_Sub23 extends Class348 {
 
     static {
         double d = 3.834951969714103E-4;
-        for (int i = 0; (i ^ 0xffffffff) > -16385; i++) {
+        for (int i = 0; i < 16384; i++) {
             aFloatArray6865[i] = (float) Math.sin(d * (double) i);
             aFloatArray6867[i] = (float) Math.cos((double) i * d);
         }

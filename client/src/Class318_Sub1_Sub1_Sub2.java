@@ -137,7 +137,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
         anInt9994++;
         if (i_6_ >= -52)
             return true;
-        return (i ^ 0xffffffff) == -5 || i == 8 || (i ^ 0xffffffff) == -12;
+        return i == 4 || i == 8 || i == 11;
     }
 
     final void method2392(boolean bool) {
@@ -226,7 +226,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
             method2402(-3, (byte) 46);
         Class302[] class302s = Class348_Sub27.aClass302Array6897;
         for (int i_13_ = 0;
-             (class302s.length ^ 0xffffffff) < (i_13_ ^ 0xffffffff); i_13_++) {
+             i_13_ < class302s.length; i_13_++) {
             Class302 class302 = class302s[i_13_];
             if (class302 != null && class302.anInt3840 == 2) {
                 Class318_Sub5.method2505(i_9_ >> 1758883841,
@@ -235,7 +235,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
                         class302.anInt3838,
                         class302.anInt3832, i_7_,
                         class302.anInt3835);
-                if ((Class239_Sub21.anIntArray6062[0] ^ 0xffffffff) < 0
+                if (Class239_Sub21.anIntArray6062[0] > -1
                         && Class367_Sub11.anInt7396 % 20 < 10) {
                     Class105 class105 = (Class239_Sub9.aClass105Array5933
                             [class302.anInt3831]);
@@ -324,7 +324,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
             try {
                 aBoolean9983 = bool;
                 aBoolean9974
-                        = ((class51.anInt874 ^ 0xffffffff) != -1
+                        = (class51.anInt874 != 0
                         && !bool);
                 this.anInt6388 = i_23_;
                 aBoolean9989 = bool_25_;
@@ -334,9 +334,8 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
                 aBoolean9988
                         = (var_ha.method3682() && class51.aBoolean894
                         && !aBoolean9983
-                        && (Class316.aClass348_Sub51_3959
-                        .aClass239_Sub7_7238.method1748(-32350)
-                        ^ 0xffffffff) != -1);
+                        && Class316.aClass348_Sub51_3959
+                        .aClass239_Sub7_7238.method1748(-32350) != 0);
                 int i_26_ = 2048;
                 if (aBoolean9989)
                     i_26_ |= 0x10000;

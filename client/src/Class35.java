@@ -10,9 +10,8 @@ final class Class35 {
     static final void method352(int i) {
         anInt483++;
         Class162.method1265(i + 15);
-        IOException_Sub1.method131((Class316.aClass348_Sub51_3959
-                        .aClass239_Sub5_7240.method1739(-32350)
-                        ^ 0xffffffff) == -2,
+        IOException_Sub1.method131(Class316.aClass348_Sub51_3959
+                        .aClass239_Sub5_7240.method1739(-32350) == 1,
                 2, true, 22050);
         Class348_Sub40.aClass279_7042
                 = Class193.method1439(22050, Class348_Sub23_Sub1.aClass297_8992,
@@ -33,7 +32,7 @@ final class Class35 {
         if (i_0_ > -25)
             return 58;
         if (i_1_ == -1) {
-            if ((i ^ 0xffffffff) <= -3) {
+            if (i >= 2) {
                 if (i > 126)
                     i = 126;
             } else
@@ -41,9 +40,9 @@ final class Class35 {
             return i;
         }
         i = (0x7f & i_1_) * i >> 1768082311;
-        if ((i ^ 0xffffffff) > -3)
+        if (i < 2)
             i = 2;
-        else if ((i ^ 0xffffffff) < -127)
+        else if (i > 126)
             i = 126;
         return i + (0xff80 & i_1_);
     }

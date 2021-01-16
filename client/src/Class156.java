@@ -52,8 +52,8 @@ final class Class156 {
         if (i_3_ > -111)
             method1239(-81);
         anInt2119++;
-        return ((i_2_ & 0x18 ^ 0xffffffff) != -1
-                | (0x220 & i_2_ ^ 0xffffffff) == -545);
+        return ((i_2_ & 0x18) != 0
+                | (0x220 & i_2_) == 544);
     }
 
     public Class156() {
@@ -93,9 +93,9 @@ final class Class156 {
                                                     + Class297.aString3796 + "&e="
                                                     + string_4_)),
                                     8362));
-                    while ((class144.anInt1997 ^ 0xffffffff) == -1)
+                    while (class144.anInt1997 == 0)
                         Class286_Sub5.method2161((byte) -123, 1L);
-                    if ((class144.anInt1997 ^ 0xffffffff) != -2)
+                    if (class144.anInt1997 != 1)
                         break;
                     DataInputStream datainputstream
                             = (DataInputStream) class144.anObject1998;

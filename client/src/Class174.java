@@ -30,7 +30,7 @@ final class Class174 {
     static final boolean method1332(boolean bool, boolean bool_0_, int i,
                                     String string) {
         anInt2293++;
-        if ((i ^ 0xffffffff) > -3 || (i ^ 0xffffffff) < -37)
+        if (i < 2 || i > 36)
             throw new IllegalArgumentException("Invalid radix:" + i);
         boolean bool_1_ = false;
         boolean bool_2_ = false;
@@ -38,19 +38,19 @@ final class Class174 {
         if (bool != true)
             aClass45_2306 = null;
         int i_4_ = string.length();
-        for (int i_5_ = 0; (i_4_ ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++) {
+        for (int i_5_ = 0; i_5_ < i_4_; i_5_++) {
             int i_6_ = string.charAt(i_5_);
             if (i_5_ == 0) {
                 if (i_6_ == 45) {
                     bool_1_ = true;
                     continue;
                 }
-                if ((i_6_ ^ 0xffffffff) == -44 && bool_0_)
+                if (i_6_ == 43 && bool_0_)
                     continue;
             }
-            if ((i_6_ ^ 0xffffffff) > -49 || (i_6_ ^ 0xffffffff) < -58) {
-                if ((i_6_ ^ 0xffffffff) > -66 || i_6_ > 90) {
-                    if (i_6_ >= 97 && (i_6_ ^ 0xffffffff) >= -123)
+            if (i_6_ < 48 || i_6_ > 57) {
+                if (i_6_ < 65 || i_6_ > 90) {
+                    if (i_6_ >= 97 && i_6_ <= 122)
                         i_6_ -= 87;
                     else
                         return false;
@@ -63,7 +63,7 @@ final class Class174 {
             if (bool_1_)
                 i_6_ = -i_6_;
             int i_7_ = i * i_3_ - -i_6_;
-            if ((i_3_ ^ 0xffffffff) != (i_7_ / i ^ 0xffffffff))
+            if (i_7_ / i != i_3_)
                 return false;
             bool_2_ = true;
             i_3_ = i_7_;
@@ -102,19 +102,19 @@ final class Class174 {
         anInt2287++;
         if (i == 1)
             anInt2302 = class348_sub49.method3330(842397944);
-        else if ((i ^ 0xffffffff) == -3)
+        else if (i == 2)
             class348_sub49.method3387(255);
         else if (i != 3) {
-            if ((i ^ 0xffffffff) == -5) {
+            if (i == 4) {
                 this.anInt2289 = class348_sub49.method3387(255);
                 this.anInt2304
                         = class348_sub49.method3385((byte) -126);
             } else if (i != 6) {
-                if ((i ^ 0xffffffff) == -9)
+                if (i == 8)
                     this.anInt2297 = 1;
                 else if (i == 9)
                     this.anInt2292 = 1;
-                else if ((i ^ 0xffffffff) == -11)
+                else if (i == 10)
                     aBoolean2308 = true;
             } else
                 this.anInt2296 = class348_sub49.method3387(255);
@@ -133,7 +133,7 @@ final class Class174 {
     final void method1336(int i, Class348_Sub49 class348_sub49) {
         for (; ; ) {
             int i_9_ = class348_sub49.method3387(255);
-            if ((i_9_ ^ 0xffffffff) == -1)
+            if (i_9_ == 0)
                 break;
             method1335(class348_sub49, i_9_, (byte) -128);
         }

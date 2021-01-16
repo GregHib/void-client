@@ -25,10 +25,10 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                 Class50 class50 = aClass50Array9481[i_2_];
                 int i_3_ = class50.anInt864;
                 int i_4_ = class50.anInt865;
-                if ((i_3_ ^ 0xffffffff) > -1) {
-                    if ((i_4_ ^ 0xffffffff) <= -1)
+                if (i_3_ < 0) {
+                    if (i_4_ >= 0)
                         class50.method457(i_1_, i_0_, -43);
-                } else if ((i_4_ ^ 0xffffffff) > -1)
+                } else if (i_4_ < 0)
                     class50.method456(i ^ ~0x6a, i_0_, i_1_);
                 else
                     class50.method455(i_0_, i_1_, -124);
@@ -98,10 +98,10 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                 while_214_:
                 do {
                     do {
-                        if ((i_9_ ^ 0xffffffff) != -1) {
-                            if ((i_9_ ^ 0xffffffff) != -2) {
+                        if (i_9_ != 0) {
+                            if (i_9_ != 1) {
                                 if (i_9_ != 2) {
-                                    if ((i_9_ ^ 0xffffffff) != -4)
+                                    if (i_9_ != 3)
                                         continue while_216_;
                                 } else
                                     break;
@@ -147,7 +147,7 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                     = this.aClass322_7033.method2553(0);
             method3151(is_13_, (byte) -27);
             for (int i_15_ = 0;
-                 (i_15_ ^ 0xffffffff) > (Class286_Sub2.anInt6212 ^ 0xffffffff);
+                 Class286_Sub2.anInt6212 > i_15_;
                  i_15_++) {
                 int[] is_16_ = is_13_[i_15_];
                 int[][] is_17_ = is_14_[i_15_];

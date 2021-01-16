@@ -125,7 +125,7 @@ final class Class341 {
                 Class40.method369(-29776);
                 Class376.method3616(12639);
                 Class348_Sub42_Sub3.method3177(-78, false);
-                for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > -2049; i_12_++) {
+                for (int i_12_ = 0; i_12_ < 2048; i_12_++) {
                     Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                             = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058
                             [i_12_]);

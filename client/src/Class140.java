@@ -16,7 +16,7 @@ final class Class140 {
     static final void method1168(int i, int i_0_, Rectangle[] rectangles)
             throws Exception_Sub1 {
         anInt1957++;
-        if ((Class348_Sub49.anInt7207 ^ 0xffffffff) != -2)
+        if (Class348_Sub49.anInt7207 != 1)
             Class21.aHa326.method3707(rectangles, i, 0, 0);
         else
             Class21.aHa326.method3707(rectangles, i, Class339.anInt4211,
@@ -43,8 +43,8 @@ final class Class140 {
             int i_4_ = -i_2_ + (Class348_Sub22.anInt6857
                     + -Class348_Sub42_Sub8_Sub2.anInt10432);
             do {
-                if ((i_1_ ^ 0xffffffff) < -1 || (i_3_ ^ 0xffffffff) < -1
-                        || (i_2_ ^ 0xffffffff) < -1 || (i_4_ ^ 0xffffffff) < -1) {
+                if (i_1_ > 0 || i_3_ > 0
+                        || i_2_ > 0 || i_4_ > 0) {
                     try {
                         java.awt.Container container;
                         if (Class52.aFrame4904 == null) {
@@ -70,7 +70,7 @@ final class Class140 {
                         if (i_2_ > 0)
                             graphics.fillRect(i_5_, i_6_, Class272.anInt3473,
                                     i_2_);
-                        if ((i_3_ ^ 0xffffffff) < -1)
+                        if (i_3_ > 0)
                             graphics.fillRect((-i_3_ + Class272.anInt3473
                                             + i_5_),
                                     i_6_, i_3_,
@@ -94,7 +94,7 @@ final class Class140 {
         if (i_7_ < 43)
             return null;
         anInt1958++;
-        if (!bool || (i ^ 0xffffffff) > -1)
+        if (!bool || i < 0)
             return Integer.toString(i);
         return Class367_Sub9.method3551(8320, 10, i, bool);
     }
@@ -102,7 +102,7 @@ final class Class140 {
     static final boolean method1172(byte i, int i_8_) {
         anInt1960++;
         int i_9_ = 35 / ((-45 - i) / 38);
-        return ((i_8_ ^ 0xffffffff) <= -1 && i_8_ <= 3)
-                || (i_8_ ^ 0xffffffff) == -10;
+        return (i_8_ >= 0 && i_8_ <= 3)
+                || i_8_ == 9;
     }
 }

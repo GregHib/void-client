@@ -110,7 +110,7 @@ final class Class244 implements d {
                     = new Class348_Sub49(class45.method410(-1860, 0, 0));
             anInt4625 = class348_sub49.method3330(842397944);
             aClass12Array4611 = new Class12[anInt4625];
-            for (int i = 0; (i ^ 0xffffffff) > (anInt4625 ^ 0xffffffff); i++) {
+            for (int i = 0; anInt4625 > i; i++) {
                 if (class348_sub49.method3387(255) == 1)
                     aClass12Array4611[i] = new Class12();
             }
@@ -119,7 +119,7 @@ final class Class244 implements d {
                     aClass12Array4611[i].aBoolean209
                             = class348_sub49.method3387(255) == 0;
             }
-            for (int i = 0; (anInt4625 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
+            for (int i = 0; i < anInt4625; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aBoolean199
                             = class348_sub49.method3387(255) == 1;
@@ -134,7 +134,7 @@ final class Class244 implements d {
                     aClass12Array4611[i].aByte216
                             = class348_sub49.method3388(-85);
             }
-            for (int i = 0; (anInt4625 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
+            for (int i = 0; i < anInt4625; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aByte201
                             = class348_sub49.method3388(-113);
@@ -154,22 +154,22 @@ final class Class244 implements d {
                     aClass12Array4611[i].aShort208
                             = (short) class348_sub49.method3330(842397944);
             }
-            for (int i = 0; (i ^ 0xffffffff) > (anInt4625 ^ 0xffffffff); i++) {
+            for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aByte198
                             = class348_sub49.method3388(-86);
             }
-            for (int i = 0; (i ^ 0xffffffff) > (anInt4625 ^ 0xffffffff); i++) {
+            for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aByte211
                             = class348_sub49.method3388(-104);
             }
-            for (int i = 0; (i ^ 0xffffffff) > (anInt4625 ^ 0xffffffff); i++) {
+            for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aBoolean212
-                            = (class348_sub49.method3387(255) ^ 0xffffffff) == -2;
+                            = class348_sub49.method3387(255) == 1;
             }
-            for (int i = 0; (i ^ 0xffffffff) > (anInt4625 ^ 0xffffffff); i++) {
+            for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aBoolean207
                             = class348_sub49.method3387(255) == 1;
@@ -182,12 +182,12 @@ final class Class244 implements d {
             for (int i = 0; i < anInt4625; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aBoolean217
-                            = (class348_sub49.method3387(255) ^ 0xffffffff) == -2;
+                            = class348_sub49.method3387(255) == 1;
             }
             for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null)
                     aClass12Array4611[i].aBoolean215
-                            = (class348_sub49.method3387(255) ^ 0xffffffff) == -2;
+                            = class348_sub49.method3387(255) == 1;
             }
             for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null)

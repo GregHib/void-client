@@ -91,20 +91,20 @@ final class Class348_Sub9 extends Class348 {
 
     static final int method2779(boolean bool, int i) {
         anInt6672++;
-        if ((i ^ 0xffffffff) == -6408 || i == 34843
-                || (i ^ 0xffffffff) == -34838)
+        if (i == 6407 || i == 34843
+                || i == 34837)
             return 6407;
-        if (i == 6408 || (i ^ 0xffffffff) == -34843 || i == 34836)
+        if (i == 6408 || i == 34842 || i == 34836)
             return 6408;
-        if ((i ^ 0xffffffff) == -6407 || i == 34844)
+        if (i == 6406 || i == 34844)
             return 6406;
-        if ((i ^ 0xffffffff) == -6410 || i == 34846)
+        if (i == 6409 || i == 34846)
             return 6409;
-        if ((i ^ 0xffffffff) == -6411 || i == 34847)
+        if (i == 6410 || i == 34847)
             return 6410;
         if (bool != true)
             method2780(36, null, (byte) -28, -58, -120);
-        if ((i ^ 0xffffffff) == -6403)
+        if (i == 6402)
             return 6402;
         throw new IllegalArgumentException("");
     }
@@ -130,7 +130,7 @@ final class Class348_Sub9 extends Class348 {
                     if (Class240.anInt4674 == 10
                             && client.method105(class46).method3301(-1 + i_8_,
                             false)) {
-                        if ((i_8_ ^ 0xffffffff) == -2) {
+                        if (i_8_ == 1) {
                             Class127_Sub1.anInt8380++;
                             Class348_Sub47 class348_sub47
                                     = Class286_Sub3.method2148((Class27
@@ -158,7 +158,7 @@ final class Class348_Sub9 extends Class348 {
                             Class348_Sub42_Sub14.method3243(126,
                                     class348_sub47);
                         }
-                        if ((i_8_ ^ 0xffffffff) == -4) {
+                        if (i_8_ == 3) {
                             Class289.anInt3703++;
                             Class348_Sub47 class348_sub47
                                     = Class286_Sub3.method2148((Class286_Sub4
@@ -172,7 +172,7 @@ final class Class348_Sub9 extends Class348 {
                             Class348_Sub42_Sub14.method3243(-80,
                                     class348_sub47);
                         }
-                        if ((i_8_ ^ 0xffffffff) == -5) {
+                        if (i_8_ == 4) {
                             Class90.anInt1514++;
                             Class348_Sub47 class348_sub47
                                     = Class286_Sub3.method2148((aa_Sub3
@@ -201,7 +201,7 @@ final class Class348_Sub9 extends Class348 {
                             Class348_Sub42_Sub14.method3243(123,
                                     class348_sub47);
                         }
-                        if ((i_8_ ^ 0xffffffff) == -7) {
+                        if (i_8_ == 6) {
                             Class240.anInt4680++;
                             Class348_Sub47 class348_sub47
                                     = Class286_Sub3.method2148((Class222
@@ -215,7 +215,7 @@ final class Class348_Sub9 extends Class348 {
                             Class348_Sub42_Sub14.method3243(-4,
                                     class348_sub47);
                         }
-                        if ((i_8_ ^ 0xffffffff) == -8) {
+                        if (i_8_ == 7) {
                             Class331.anInt4134++;
                             Class348_Sub47 class348_sub47
                                     = Class286_Sub3.method2148((Class358
@@ -243,7 +243,7 @@ final class Class348_Sub9 extends Class348 {
                             Class348_Sub42_Sub14.method3243(-96,
                                     class348_sub47);
                         }
-                        if ((i_8_ ^ 0xffffffff) == -10) {
+                        if (i_8_ == 9) {
                             Class339.anInt4198++;
                             Class348_Sub47 class348_sub47
                                     = Class286_Sub3.method2148((Class311
@@ -257,7 +257,7 @@ final class Class348_Sub9 extends Class348 {
                             Class348_Sub42_Sub14.method3243(119,
                                     class348_sub47);
                         }
-                        if ((i_8_ ^ 0xffffffff) != -11)
+                        if (i_8_ != 10)
                             break;
                         Class308.anInt3886++;
                         Class348_Sub47 class348_sub47
@@ -390,8 +390,7 @@ final class Class348_Sub9 extends Class348 {
                             = class51.anIntArray904;
                 }
             }
-            if ((((this.anInt6685 ^ 0xffffffff)
-                    != (i_11_ ^ 0xffffffff))
+            if (((i_11_ != this.anInt6685)
                     || bool == !this.aBoolean6674)
                     && this.aClass348_Sub16_Sub5_6676 != null) {
                 Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880
@@ -407,9 +406,9 @@ final class Class348_Sub9 extends Class348 {
         if (i_14_ != 0)
             method2783(-96, (byte) -65, -96);
         anInt6690++;
-        if ((i_13_ ^ 0xffffffff) != -10)
+        if (i_13_ != 9)
             return (byte) 0;
-        if ((i & 0x1 ^ 0xffffffff) == -1)
+        if ((i & 0x1) == 0)
             return (byte) 1;
         return (byte) 2;
     }

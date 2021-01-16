@@ -21,11 +21,11 @@ final class RuntimeException_Sub1 extends RuntimeException {
         try {
             anInt4597++;
             byte[] is_3_ = new byte[i * i_2_];
-            for (int i_4_ = i_1_; (i_2_ ^ 0xffffffff) < (i_4_ ^ 0xffffffff);
+            for (int i_4_ = i_1_; i_4_ < i_2_;
                  i_4_++) {
                 int i_5_ = i * i_4_ - -is[i_4_];
                 for (int i_6_ = 0;
-                     (is_0_[i_4_] ^ 0xffffffff) < (i_6_ ^ 0xffffffff); i_6_++)
+                     i_6_ < is_0_[i_4_]; i_6_++)
                     is_3_[i_5_++] = (byte) -1;
             }
             return new aa_Sub1(var_ha_Sub2, i, i_2_, is_3_);
@@ -81,7 +81,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
         boolean bool = false;
         for (; ; ) {
             int i_8_ = class348_sub49.method3387(255);
-            if ((i_8_ ^ 0xffffffff) == -1)
+            if (i_8_ == 0)
                 break;
             if (i_8_ == 1) {
                 if (Class118.anIntArray1786 == null) {
@@ -97,8 +97,8 @@ final class RuntimeException_Sub1 extends RuntimeException {
                             = class348_sub49.method3372(13638);
                 }
                 bool = true;
-            } else if ((i_8_ ^ 0xffffffff) != -3) {
-                if ((i_8_ ^ 0xffffffff) == -4) {
+            } else if (i_8_ != 2) {
+                if (i_8_ == 3) {
                     Class132.anInt1905 = class348_sub49.method3387(255);
                     Class118.anIntArray1786 = new int[Class132.anInt1905];
                     Class106.anIntArray1636 = new int[Class132.anInt1905];

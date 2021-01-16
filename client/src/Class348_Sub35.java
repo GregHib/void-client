@@ -22,8 +22,7 @@ final class Class348_Sub35 extends Class348 {
             Class348_Sub46.method3319(Class348_Sub8.aHa6654, (byte) -121);
             if (i != 33)
                 method3028(-79);
-            if ((Class355.anInt4372 ^ 0xffffffff)
-                    != (Class318_Sub1_Sub3_Sub5.anInt10395 ^ 0xffffffff))
+            if (Class318_Sub1_Sub3_Sub5.anInt10395 != Class355.anInt4372)
                 Class348_Sub40_Sub9.method3072((byte) -96);
         }
     }

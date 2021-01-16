@@ -39,10 +39,10 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                 do {
                     do {
                         if (i_1_ != 0) {
-                            if ((i_1_ ^ 0xffffffff) != -2) {
-                                if ((i_1_ ^ 0xffffffff) != -3) {
+                            if (i_1_ != 1) {
+                                if (i_1_ != 2) {
                                     if (i_1_ != 3) {
-                                        if ((i_1_ ^ 0xffffffff) == -5)
+                                        if (i_1_ == 4)
                                             break while_130_;
                                         break while_131_;
                                     }
@@ -103,9 +103,9 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                  i_13_++) {
                 int i_14_ = is_7_[i_13_];
                 int i_15_ = i_14_ - anIntArray9086[0];
-                if ((i_15_ ^ 0xffffffff) > -1)
+                if (i_15_ < 0)
                     i_15_ = -i_15_;
-                if ((i_15_ ^ 0xffffffff) < (anInt9094 ^ 0xffffffff)) {
+                if (anInt9094 < i_15_) {
                     is_10_[i_13_] = i_14_;
                     is_11_[i_13_] = is_8_[i_13_];
                     is_12_[i_13_] = is_9_[i_13_];
@@ -114,7 +114,7 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                     i_15_ = -anIntArray9086[1] + i_16_;
                     if (i_15_ < 0)
                         i_15_ = -i_15_;
-                    if ((i_15_ ^ 0xffffffff) < (anInt9094 ^ 0xffffffff)) {
+                    if (anInt9094 < i_15_) {
                         is_10_[i_13_] = i_14_;
                         is_11_[i_13_] = i_16_;
                         is_12_[i_13_] = is_9_[i_13_];

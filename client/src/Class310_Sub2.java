@@ -47,7 +47,7 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
             if (i_4_ == 4 * i && i == i_2_)
                 pixelbuffer.a(is, i_1_, 0, i * i_0_);
             else {
-                for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > (i_0_ ^ 0xffffffff);
+                for (int i_5_ = 0; i_0_ > i_5_;
                      i_5_++)
                     pixelbuffer.a(is, i_5_ * i_2_ + i_1_, i_4_ * i_5_, i);
             }
@@ -158,8 +158,8 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
             i_18_ *= (this.aClass304_3896
                     .anInt3850);
             int i_20_ = pixelbuffer.getRowPitch();
-            if ((i_20_ ^ 0xffffffff) != (i ^ 0xffffffff)
-                    || (i_18_ ^ 0xffffffff) != (i ^ 0xffffffff)) {
+            if (i != i_20_
+                    || i != i_18_) {
                 for (int i_21_ = 0; i_16_ > i_21_; i_21_++)
                     pixelbuffer.a(is, i_21_ * i_18_ + i_17_, i_20_ * i_21_, i);
             } else
@@ -186,10 +186,10 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
                 i_27_, 0, pixelbuffer);
         if (ue.a(i_28_, false)) {
             int i_29_ = pixelbuffer.getRowPitch();
-            if ((i_25_ * 4 ^ 0xffffffff) != (i_29_ ^ 0xffffffff)
-                    || (i ^ 0xffffffff) != (i_25_ ^ 0xffffffff)) {
+            if (i_29_ != i_25_ * 4
+                    || i_25_ != i) {
                 for (int i_30_ = 0;
-                     (i_30_ ^ 0xffffffff) > (i_27_ ^ 0xffffffff); i_30_++)
+                     i_27_ > i_30_; i_30_++)
                     pixelbuffer.a(is, i_24_ + i * i_30_, i_30_ * i_29_, i_25_);
             } else
                 pixelbuffer.a(is, i_24_, 0, i_27_ * i_25_);
@@ -229,7 +229,7 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
                 i_35_ *= (this.aClass304_3896
                         .anInt3850);
                 int i_38_ = pixelbuffer.getRowPitch();
-                if ((i_35_ ^ 0xffffffff) == (i_38_ ^ 0xffffffff)
+                if (i_38_ == i_35_
                         && i_33_ == i_35_)
                     pixelbuffer.a(is, i_31_, 0, i_35_ * i_34_);
                 else {

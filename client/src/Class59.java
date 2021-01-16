@@ -28,7 +28,7 @@ abstract class Class59 {
         Random random = new Random(anInt1081);
         for (int i_0_ = 0; i_0_ < 255; i_0_++)
             aShortArray1082[i_0_] = (short) i_0_;
-        for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -256; i_1_++) {
+        for (int i_1_ = 0; i_1_ < 255; i_1_++) {
             int i_2_ = -i_1_ + 255;
             int i_3_ = Class124.method1097((byte) 106, i_2_, random);
             short i_4_ = aShortArray1082[i_3_];
@@ -55,20 +55,19 @@ abstract class Class59 {
         for (int i_10_ = 0; i_10_ < i_6_; i_10_++)
             is[i_10_] = (i_10_ << -797283828) / i_6_;
         int[] is_11_ = new int[i_8_];
-        for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (i ^ 0xffffffff); i_12_++)
+        for (int i_12_ = 0; i > i_12_; i_12_++)
             is_9_[i_12_] = (i_12_ << 924292012) / i;
         for (int i_13_ = i_7_; i_13_ < i_8_; i_13_++)
             is_11_[i_13_] = (i_13_ << 1719216812) / i_8_;
         method543(true);
-        for (int i_14_ = 0; (i_14_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff);
-             i_14_++) {
-            for (int i_15_ = 0; (i_15_ ^ 0xffffffff) > (i ^ 0xffffffff);
-                 i_15_++) {
-                for (int i_16_ = 0; (i_16_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff);
-                     i_16_++) {
+        for (int i_14_ = 0; i_8_ > i_14_;
+			 i_14_++) {
+            for (int i_15_ = 0; i > i_15_;
+				 i_15_++) {
+                for (int i_16_ = 0; i_6_ > i_16_;
+					 i_16_++) {
                     for (int i_17_ = 0;
-                         ((i_17_ ^ 0xffffffff)
-                                 > (this.anInt1071 ^ 0xffffffff));
+                         (this.anInt1071 > i_17_);
                          i_17_++) {
                         int i_18_ = aShortArray1069[i_17_] << 374187564;
                         int i_19_ = i_18_ * is_11_[i_14_] >> -58102804;
@@ -90,7 +89,7 @@ abstract class Class59 {
                         int i_30_ = i_29_ + 1;
                         i_22_ &= 0xfff;
                         i_24_ &= 0xfff;
-                        if ((i_21_ ^ 0xffffffff) >= (i_28_ ^ 0xffffffff))
+                        if (i_28_ >= i_21_)
                             i_28_ = 0;
                         else
                             i_28_ &= 0xff;
@@ -218,11 +217,11 @@ abstract class Class59 {
             boolean bool = true;
             byte[] is_54_ = Class239_Sub24.method1821(i ^ 0x1d5b, file);
             if (is_54_ == null
-                    || (is.length ^ 0xffffffff) != (is_54_.length ^ 0xffffffff))
+                    || is_54_.length != is.length)
                 bool = false;
             else {
                 for (int i_55_ = 0;
-                     (is_54_.length ^ 0xffffffff) < (i_55_ ^ 0xffffffff);
+					 i_55_ < is_54_.length;
                      i_55_++) {
                     if (is_54_[i_55_] != is[i_55_]) {
                         bool = false;
@@ -270,10 +269,10 @@ abstract class Class59 {
                                     ha_Sub3.aStringArray8019, (byte) 87, null));
                     for (int i_63_ = 0; i_60_ > i_63_; i_63_++) {
                         String string = ha_Sub3.aStringArray8019[i_63_];
-                        if ((i_63_ ^ 0xffffffff) > (i_60_ + -1 ^ 0xffffffff))
+                        if (i_60_ + -1 > i_63_)
                             string = string.substring(0, string.length() - 4);
                         int i_64_ = Class39.aClass323_521.method2564(string);
-                        if ((i_64_ ^ 0xffffffff) < (i_61_ ^ 0xffffffff))
+                        if (i_61_ < i_64_)
                             i_61_ = i_64_;
                     }
                     i_62_ = (i_60_ * Class39.aClass323_521.method2565()
@@ -282,10 +281,8 @@ abstract class Class59 {
                 int i_65_
                         = i_56_ / 2 + class348_sub21.anInt6853;
                 int i_66_ = class348_sub21.anInt6855;
-                if ((i_58_ ^ 0xffffffff)
-                        <= (Class75.anInt1272 - -i_56_ ^ 0xffffffff)) {
-                    if ((-i_56_ + Class75.anInt1276 ^ 0xffffffff)
-                            > (i_58_ ^ 0xffffffff)) {
+                if (Class75.anInt1272 - -i_56_ <= i_58_) {
+                    if (i_58_ > -i_56_ + Class75.anInt1276) {
                         i_58_ = -i_56_ + Class75.anInt1276;
                         i_65_ = (-(i_56_ / 2) + Class75.anInt1276
                                 + (-i_57_ + -(i_61_ / 2) - 5));
@@ -330,13 +327,13 @@ abstract class Class59 {
                         var_ha.method3675(-i_68_ + i_70_, (byte) -125, i_68_,
                                 i_69_, i_71_ - i_69_,
                                 class42.anInt602);
-                    if ((class42.anInt604 ^ 0xffffffff) != -1)
+                    if (class42.anInt604 != 0)
                         var_ha.method3668(-i_68_ + i_70_, i_69_,
                                 class42.anInt604, i_68_,
                                 -i_69_ + i_71_, 67);
                     for (int i_72_ = 0; i_60_ > i_72_; i_72_++) {
                         String string = ha_Sub3.aStringArray8019[i_72_];
-                        if ((i_60_ + -1 ^ 0xffffffff) < (i_72_ ^ 0xffffffff))
+                        if (i_72_ < i_60_ + -1)
                             string = string.substring(0, -4 + string.length());
                         Class39.aClass323_521.method2563(var_ha, string, i_65_,
                                 i_66_,

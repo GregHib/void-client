@@ -55,9 +55,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                     = (Class348_Sub42_Sub15) s_Sub2.aClass107_8241.method1011(-87);
             if (class348_sub42_sub15 == null)
                 return null;
-            if ((class348_sub42_sub15.method3250((byte) -51)
-                    ^ 0xffffffffffffffffL)
-                    < (Class62.method599(-59) ^ 0xffffffffffffffffL))
+            if (Class62.method599(-59) < class348_sub42_sub15.method3250((byte) -51))
                 return null;
             class348_sub42_sub15.method2715((byte) 113);
             class348_sub42_sub15.method3162(true);
@@ -73,7 +71,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                 anInt9391++;
                 if (string != null) {
                     if (anInt9383 >= 200 && !Class206.aBoolean4888
-                            || (anInt9383 ^ 0xffffffff) <= -201) {
+                            || anInt9383 >= 200) {
                         Class59.method544((Class274.aClass274_3493.method2063
                                         (Class348_Sub33.anInt6967, 544)),
                                 false, 4);
@@ -86,8 +84,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                         String string_1_ = Class285_Sub1.method2127(2, string);
                         if (string_1_ != null) {
                             for (int i_2_ = 0;
-                                 ((i_2_ ^ 0xffffffff)
-                                         > (anInt9383 ^ 0xffffffff));
+                                 (anInt9383 > i_2_);
                                  i_2_++) {
                                 String string_3_
                                         = (Class285_Sub1.method2127
@@ -219,8 +216,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
             int[] is_13_ = is[0];
             int[] is_14_ = is[1];
             int[] is_15_ = is[2];
-            for (int i_16_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_16_ ^ 0xffffffff)); i_16_++) {
+            for (int i_16_ = 0; (i_16_ < Class348_Sub40_Sub6.anInt9139); i_16_++) {
                 method3129(is_10_[i_16_], is_11_[i_16_], (byte) 82,
                         is_12_[i_16_]);
                 anInt9401 += anInt9390;
@@ -234,7 +230,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                 for (/**/; anInt9400 > 4096; anInt9400 -= 4096) {
                     /* empty */
                 }
-                if ((anInt9389 ^ 0xffffffff) > -1)
+                if (anInt9389 < 0)
                     anInt9389 = 0;
                 if (anInt9401 > 4096)
                     anInt9401 = 4096;
@@ -256,26 +252,26 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
         int i_20_ = i_17_ >= i ? i_17_ : i;
         if (i_18_ == 82) {
             i_20_ = i_19_ <= i_20_ ? i_20_ : i_19_;
-            int i_21_ = (i_17_ ^ 0xffffffff) < (i ^ 0xffffffff) ? i : i_17_;
+            int i_21_ = i < i_17_ ? i : i_17_;
             i_21_ = i_19_ >= i_21_ ? i_21_ : i_19_;
             anInt9389 = (i_20_ + i_21_) / 2;
             int i_22_ = i_20_ - i_21_;
-            if ((i_22_ ^ 0xffffffff) < -1) {
+            if (i_22_ > 0) {
                 int i_23_ = (i_20_ + -i << -747580724) / i_22_;
                 int i_24_ = (i_20_ + -i_17_ << -350784244) / i_22_;
                 int i_25_ = (-i_19_ + i_20_ << -1252014868) / i_22_;
                 if (i == i_20_)
-                    anInt9400 = ((i_21_ ^ 0xffffffff) != (i_17_ ^ 0xffffffff)
+                    anInt9400 = (i_17_ != i_21_
                             ? 4096 + -i_24_ : i_25_ + 20480);
-                else if ((i_20_ ^ 0xffffffff) != (i_17_ ^ 0xffffffff))
+                else if (i_17_ != i_20_)
                     anInt9400 = i != i_21_ ? -i_23_ + 20480 : 12288 - -i_24_;
                 else
-                    anInt9400 = ((i_19_ ^ 0xffffffff) == (i_21_ ^ 0xffffffff)
+                    anInt9400 = (i_21_ == i_19_
                             ? 4096 + i_23_ : -i_25_ + 12288);
                 anInt9400 /= 6;
             } else
                 anInt9400 = 0;
-            if ((anInt9389 ^ 0xffffffff) < -1 && anInt9389 < 4096)
+            if (anInt9389 > 0 && anInt9389 < 4096)
                 anInt9401 = (i_22_ << 1825032396) / (anInt9389 > 2048
                         ? 8192 - anInt9389 * 2
                         : anInt9389 * 2);
@@ -287,7 +283,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
     private final void method3130(int i, int i_26_, byte i_27_, int i_28_) {
         anInt9397++;
         int i_29_ = 31 / ((i_27_ - -74) / 40);
-        int i_30_ = ((i ^ 0xffffffff) < -2049
+        int i_30_ = (i > 2048
                 ? i_28_ + (i - (i * i_28_ >> -947995028))
                 : i * (4096 - -i_28_) >> -1900506004);
         if (i_30_ <= 0)
@@ -316,11 +312,9 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                                 if (i_38_ != 0) {
                                     if (i_38_ != 1) {
                                         if (i_38_ != 2) {
-                                            if ((i_38_ ^ 0xffffffff) != -4) {
-                                                if ((i_38_ ^ 0xffffffff)
-                                                        != -5) {
-                                                    if ((i_38_ ^ 0xffffffff)
-                                                            != -6)
+                                            if (i_38_ != 3) {
+                                                if (i_38_ != 4) {
+                                                    if (i_38_ != 5)
                                                         break while_208_;
                                                 } else
                                                     break while_206_;
@@ -371,8 +365,8 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                 if (i_39_ == 31015) {
                     int i_40_ = i;
                     do {
-                        if ((i_40_ ^ 0xffffffff) != -1) {
-                            if ((i_40_ ^ 0xffffffff) != -2) {
+                        if (i_40_ != 0) {
+                            if (i_40_ != 1) {
                                 if (i_40_ == 2)
                                     break;
                                 break while_209_;

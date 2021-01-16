@@ -53,8 +53,7 @@ final class Class348_Sub11 extends Class348 implements Interface6 {
         anInt4763++;
         if (string == null)
             return false;
-        for (int i_1_ = 0; ((Class348_Sub40_Sub30.anInt9383 ^ 0xffffffff)
-                < (i_1_ ^ 0xffffffff)); i_1_++) {
+        for (int i_1_ = 0; (i_1_ < Class348_Sub40_Sub30.anInt9383); i_1_++) {
             if (string.equalsIgnoreCase(Class83.aStringArray1441[i_1_]))
                 return true;
         }

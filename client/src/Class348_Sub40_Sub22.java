@@ -43,7 +43,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
         if (i >= -111)
             method3109((byte) 67);
         for (int i_2_ = 0; i_2_ < anInt9301; i_2_++) {
-            if ((i_2_ ^ 0xffffffff) < -1) {
+            if (i_2_ > 0) {
                 int i_3_ = anInt9300;
                 int i_4_ = ((Class124.method1097((byte) 90, 4096, random)
                         - 2048) * anInt9305
@@ -53,7 +53,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
             }
             anIntArrayArray9287[i_2_][0] = 0;
             for (int i_5_ = 0; anInt9299 > i_5_; i_5_++) {
-                if ((i_5_ ^ 0xffffffff) < -1) {
+                if (i_5_ > 0) {
                     int i_6_ = anInt9291;
                     int i_7_ = ((Class124.method1097((byte) 117, 4096, random)
                             - 2048) * anInt9302
@@ -106,19 +106,14 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                             while_184_:
                             do {
                                 do {
-                                    if ((i_9_ ^ 0xffffffff) != -1) {
+                                    if (i_9_ != 0) {
                                         if (i_9_ != 1) {
-                                            if ((i_9_ ^ 0xffffffff) != -3) {
-                                                if ((i_9_ ^ 0xffffffff)
-                                                        != -4) {
+                                            if (i_9_ != 2) {
+                                                if (i_9_ != 3) {
                                                     if (i_9_ != 4) {
                                                         if (i_9_ != 5) {
-                                                            if ((i_9_
-                                                                    ^ 0xffffffff)
-                                                                    != -7) {
-                                                                if ((i_9_
-                                                                        ^ 0xffffffff)
-                                                                        != -8)
+                                                            if (i_9_ != 6) {
+                                                                if (i_9_ != 7)
                                                                     break while_189_;
                                                             } else
                                                                 break while_187_;
@@ -173,17 +168,17 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
             for (/**/; i_12_ > 4096; i_12_ -= 4096) {
                 /* empty */
             }
-            for (/**/; (anInt9301 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
+            for (/**/; i_11_ < anInt9301;
                      i_11_++) {
                 if (i_12_ < anIntArray9297[i_11_])
                     break;
             }
             int i_13_ = -1 + i_11_;
-            boolean bool = (0x1 & i_11_ ^ 0xffffffff) == -1;
+            boolean bool = (0x1 & i_11_) == 0;
             int i_14_ = anIntArray9297[i_11_];
             int i_15_ = anIntArray9297[i_11_ - 1];
             if (anInt9298 + i_15_ < i_12_
-                    && (i_14_ - anInt9298 ^ 0xffffffff) < (i_12_ ^ 0xffffffff)) {
+                    && i_12_ < i_14_ - anInt9298) {
                 for (int i_16_ = 0; Class348_Sub40_Sub6.anInt9139 > i_16_;
                      i_16_++) {
                     int i_17_ = 0;
@@ -191,23 +186,21 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                     int i_19_;
                     for (i_19_ = (Class318_Sub6.anIntArray6432[i_16_]
                             + (i_18_ * anInt9291 >> -742925460));
-                         (i_19_ ^ 0xffffffff) > -1; i_19_ += 4096) {
+                         i_19_ < 0; i_19_ += 4096) {
                         /* empty */
                     }
                     for (/**/; i_19_ > 4096; i_19_ -= 4096) {
                         /* empty */
                     }
-                    for (/**/; (anInt9299 ^ 0xffffffff) < (i_17_ ^ 0xffffffff);
+                    for (/**/; i_17_ < anInt9299;
                              i_17_++) {
-                        if ((i_19_ ^ 0xffffffff)
-                                > (anIntArrayArray9287[i_13_][i_17_] ^ 0xffffffff))
+                        if (anIntArrayArray9287[i_13_][i_17_] > i_19_)
                             break;
                     }
                     int i_20_ = i_17_ - 1;
                     int i_21_ = anIntArrayArray9287[i_13_][i_20_];
                     int i_22_ = anIntArrayArray9287[i_13_][i_17_];
-                    if ((i_19_ ^ 0xffffffff) >= (anInt9298 + i_21_
-                            ^ 0xffffffff)
+                    if (anInt9298 + i_21_ >= i_19_
                             || i_19_ >= -anInt9298 + i_22_)
                         is[i_16_] = 0;
                     else

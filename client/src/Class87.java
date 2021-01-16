@@ -67,13 +67,13 @@ final class Class87 {
     static final int method837(int i, boolean bool, int i_3_, int i_4_) {
         i_4_ &= 0x3;
         anInt1486++;
-        if ((i_4_ ^ 0xffffffff) == -1)
+        if (i_4_ == 0)
             return i_3_;
         if (bool != true)
             return -75;
         if (i_4_ == 1)
             return 7 - i;
-        if ((i_4_ ^ 0xffffffff) == -3)
+        if (i_4_ == 2)
             return 7 - i_3_;
         return i;
     }

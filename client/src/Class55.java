@@ -191,12 +191,10 @@ abstract class Class55 {
         if (aClass348_Sub23_Sub2_1001 != null) {
             if (i != -2)
                 method518(null, (byte) 10);
-            for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -11 && method507(false);
-                 i_1_++) {
-                if ((aClass348_Sub23_Sub2_1001
-                        .anOggStreamState6869.packetOut()
-                        ^ 0xffffffff)
-                        != -2) {
+            for (int i_1_ = 0; i_1_ < 10 && method507(false);
+				 i_1_++) {
+                if (aClass348_Sub23_Sub2_1001
+						.anOggStreamState6869.packetOut() != 1) {
                     method508(1);
                     break;
                 }
@@ -254,8 +252,8 @@ abstract class Class55 {
                 Class17.anIntArrayArray255[i_3_],
                 -i_5_ + i_2_, i);
         int i_22_ = i_17_ * (-1 + i_8_);
-        while ((i_8_ ^ 0xffffffff) < -1) {
-            if ((i_15_ ^ 0xffffffff) > -1) {
+        while (i_8_ > 0) {
+            if (i_15_ < 0) {
                 while (i_15_ < 0) {
                     i_16_ += i_21_;
                     i_15_ += i_19_;
@@ -264,7 +262,7 @@ abstract class Class55 {
                     i_19_ += i_18_;
                 }
             }
-            if ((i_16_ ^ 0xffffffff) > -1) {
+            if (i_16_ < 0) {
                 i_16_ += i_21_;
                 i_15_ += i_19_;
                 i_7_++;
@@ -315,11 +313,9 @@ abstract class Class55 {
                     if (aClass348_Sub23_Sub1_1008 == class348_sub23) {
                         if (aClass348_Sub23_Sub1_1008.method2969(-11020) >= 50)
                             break;
-                        while ((aClass348_Sub23_Sub1_1008
-                                .anOggStreamState6869
-                                .packetOut(anOggPacket993)
-                                ^ 0xffffffff)
-                                == -2) {
+                        while (aClass348_Sub23_Sub1_1008
+								.anOggStreamState6869
+								.packetOut(anOggPacket993) == 1) {
                             aClass348_Sub23_Sub1_1008
                                     .method2963(anOggPacket993, i + 16386);
                             method504(1999);
@@ -337,9 +333,7 @@ abstract class Class55 {
                                         > d)
                                     return;
                             }
-                            if ((aClass348_Sub23_Sub1_1008.method2969(-11020)
-                                    ^ 0xffffffff)
-                                    <= -51)
+                            if (aClass348_Sub23_Sub1_1008.method2969(-11020) >= 50)
                                 return;
                         }
                     } else if (!(class348_sub23
@@ -356,14 +350,11 @@ abstract class Class55 {
                                 break;
                             }
                         } else {
-                            while ((class348_sub23
-                                    .anOggStreamState6869
-                                    .packetOut(anOggPacket993)
-                                    ^ 0xffffffff)
-                                    == -2) {
-                                if (((class348_sub23
-                                        .anInt6868)
-                                        ^ 0xffffffff) == -2
+                            while (class348_sub23
+									.anOggStreamState6869
+									.packetOut(anOggPacket993) == 1) {
+                                if ((class348_sub23
+										.anInt6868) == 1
                                         && (class348_sub23
                                         instanceof Class348_Sub23_Sub4))
                                     method509(-22, aString1009);
@@ -417,11 +408,11 @@ abstract class Class55 {
             return null;
         while (anOggSyncState987.pageOut(anOggPage981) <= 0) {
             int i_31_ = method516((byte) 21, aByteArray995);
-            if ((i_31_ ^ 0xffffffff) == 0) {
+            if (i_31_ == -1) {
                 aBoolean991 = true;
                 return null;
             }
-            if ((i_31_ ^ 0xffffffff) == -1)
+            if (i_31_ == 0)
                 return null;
             if (!anOggSyncState987.write(aByteArray995, i_31_))
                 throw new RuntimeException("");

@@ -68,13 +68,13 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         Class101.method901(Class113.aClass105Array1744, 515880227);
         Class354.method3466(i ^ ~0x4f);
         Class348_Sub40.method3038(-1);
-        if ((Class240.anInt4674 ^ 0xffffffff) == -4)
+        if (Class240.anInt4674 == 3)
             Class348_Sub49.method3379(2, 4);
-        else if ((Class240.anInt4674 ^ 0xffffffff) == -8)
+        else if (Class240.anInt4674 == 7)
             Class348_Sub49.method3379(2, 8);
-        else if ((Class240.anInt4674 ^ 0xffffffff) != -11) {
-            if ((Class240.anInt4674 ^ 0xffffffff) == -2
-                    || (Class240.anInt4674 ^ 0xffffffff) == -3)
+        else if (Class240.anInt4674 != 10) {
+            if (Class240.anInt4674 == 1
+                    || Class240.anInt4674 == 2)
                 Class376.method3616(12639);
         } else
             Class348_Sub49.method3379(2, 11);
@@ -122,7 +122,7 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         super(var_ha_Sub2, i, 6408, i_22_, i_23_, bool, is, i_24_, i_25_,
                 true);
         try {
-            if ((this.anInt4849 ^ 0xffffffff) == -34038) {
+            if (this.anInt4849 == 34037) {
                 this.aFloat9937 = (float) i_22_;
                 this.aBoolean9941 = false;
                 this.aFloat9938 = (float) i_23_;

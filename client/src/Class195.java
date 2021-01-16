@@ -96,8 +96,7 @@ final class Class195 implements Interface16 {
             anInt5005++;
             if (i < 30)
                 method1449(-81, 10, -115);
-            return (Class62.method599(-97) ^ 0xffffffffffffffffL) <= (l - -(long) aClass287_5006.anInt3690
-                    ^ 0xffffffffffffffffL);
+            return l - -(long) aClass287_5006.anInt3690 <= Class62.method599(-97);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception,
                     "qt.I(" + i + ',' + l + ')');
@@ -110,8 +109,7 @@ final class Class195 implements Interface16 {
             anInterface1Array5012
                     = new Interface1[(aClass287_5006
                     .anInterface12Array3688).length];
-            for (int i = 0; ((anInterface1Array5012.length ^ 0xffffffff)
-                    < (i ^ 0xffffffff)); i++)
+            for (int i = 0; (i < anInterface1Array5012.length); i++)
                 anInterface1Array5012[i]
                         = class106.method1000(true, (aClass287_5006
                         .anInterface12Array3688[i]));

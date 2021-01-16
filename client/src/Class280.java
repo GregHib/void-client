@@ -58,7 +58,7 @@ final class Class280 {
         try {
             anInt3633++;
             if (var_ha_Sub3.aClass101_Sub2_8080 != null) {
-                if ((i ^ 0xffffffff) <= -1)
+                if (i >= 0)
                     method2098(var_ha_Sub3, -121, i);
                 else
                     method2103((byte) -33, var_ha_Sub3);
@@ -95,7 +95,7 @@ final class Class280 {
                                 + (float) (class318_sub9_sub2.anInt8789
                                 >> 66762796) * f_5_
                                 + f_6_);
-                        if ((i_11_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff))
+                        if (i_9_ < i_11_)
                             i_9_ = i_11_;
                         anIntArray3631[i_7_++] = i_11_;
                         if (i_8_ > i_11_)
@@ -120,7 +120,7 @@ final class Class280 {
                     while (class318_sub9_14_ != class318_sub9) {
                         anInt3626 = 0;
                         for (int i_17_ = 0;
-                             (i_17_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff);
+                             i_12_ > i_17_;
                              i_17_++)
                             anIntArray3636[i_17_] = 0;
                         for (int i_18_ = 0; i_18_ < 64; i_18_++)
@@ -146,13 +146,12 @@ final class Class280 {
                             int i_19_
                                     = -i_8_ + anIntArray3631[i_7_++] >> i_13_;
                             if (i_19_ < 1600) {
-                                if ((anIntArray3636[i_19_] ^ 0xffffffff) > -65)
+                                if (anIntArray3636[i_19_] < 64)
                                     aClass318_Sub9_Sub2ArrayArray3632
                                             [i_19_][anIntArray3636[i_19_]++]
                                             = class318_sub9_sub2;
                                 else {
-                                    if ((anIntArray3636[i_19_] ^ 0xffffffff)
-                                            == -65) {
+                                    if (anIntArray3636[i_19_] == 64) {
                                         if (anInt3626 == 64)
                                             continue;
                                         anIntArray3636[i_19_]
@@ -221,7 +220,7 @@ final class Class280 {
                 for (int i_35_ = -1 + i; i_35_ >= 0; i_35_--) {
                     int i_36_ = (anIntArray3636[i_35_] > 64 ? 64
                             : anIntArray3636[i_35_]);
-                    if ((i_36_ ^ 0xffffffff) < -1) {
+                    if (i_36_ > 0) {
                         for (int i_37_ = i_36_ + -1; i_37_ >= 0; i_37_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2
                                     = (aClass318_Sub9_Sub2ArrayArray3632[i_35_]
@@ -258,9 +257,7 @@ final class Class280 {
                             stream.b(f_43_ + (float) i_46_ * f_29_);
                             stream.b(f_44_ + (float) i_46_ * f_30_);
                             stream.b(f_45_ + (float) i_46_ * f_31_);
-                            if ((var_ha_Sub3.anInt8178
-                                    ^ 0xffffffff)
-                                    != -1)
+                            if (var_ha_Sub3.anInt8178 != 0)
                                 stream.a(i_39_, i_40_, i_41_, i_42_);
                             else
                                 stream.b(i_39_, i_40_, i_41_, i_42_);
@@ -269,9 +266,7 @@ final class Class280 {
                             stream.b(f_43_ + f_26_ * (float) i_46_);
                             stream.b(f_27_ * (float) i_46_ + f_44_);
                             stream.b(f_28_ * (float) i_46_ + f_45_);
-                            if ((var_ha_Sub3.anInt8178
-                                    ^ 0xffffffff)
-                                    == -1)
+                            if (var_ha_Sub3.anInt8178 == 0)
                                 stream.b(i_39_, i_40_, i_41_, i_42_);
                             else
                                 stream.a(i_39_, i_40_, i_41_, i_42_);
@@ -315,9 +310,7 @@ final class Class280 {
                                 stream.b(f_54_ + (float) -i_57_ * f_26_);
                                 stream.b((float) -i_57_ * f_27_ + f_55_);
                                 stream.b(f_56_ + f_28_ * (float) -i_57_);
-                                if ((var_ha_Sub3.anInt8178
-                                        ^ 0xffffffff)
-                                        == -1)
+                                if (var_ha_Sub3.anInt8178 == 0)
                                     stream.b(i_50_, i_51_, i_52_, i_53_);
                                 else
                                     stream.a(i_50_, i_51_, i_52_, i_53_);
@@ -344,9 +337,7 @@ final class Class280 {
                                 stream.b(f_54_ + f_32_ * (float) i_57_);
                                 stream.b(f_55_ + (float) i_57_ * f_33_);
                                 stream.b((float) i_57_ * f_34_ + f_56_);
-                                if ((var_ha_Sub3.anInt8178
-                                        ^ 0xffffffff)
-                                        != -1)
+                                if (var_ha_Sub3.anInt8178 != 0)
                                     stream.a(i_50_, i_51_, i_52_, i_53_);
                                 else
                                     stream.b(i_50_, i_51_, i_52_, i_53_);
@@ -358,10 +349,10 @@ final class Class280 {
                     }
                 }
             } else {
-                for (int i_58_ = i + -1; (i_58_ ^ 0xffffffff) <= -1; i_58_--) {
-                    int i_59_ = ((anIntArray3636[i_58_] ^ 0xffffffff) < -65
+                for (int i_58_ = i + -1; i_58_ >= 0; i_58_--) {
+                    int i_59_ = (anIntArray3636[i_58_] > 64
                             ? 64 : anIntArray3636[i_58_]);
-                    if ((i_59_ ^ 0xffffffff) < -1) {
+                    if (i_59_ > 0) {
                         for (int i_60_ = i_59_ + -1; i_60_ >= 0; i_60_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2
                                     = (aClass318_Sub9_Sub2ArrayArray3632[i_58_]
@@ -398,9 +389,7 @@ final class Class280 {
                             stream.a(f_29_ * (float) i_69_ + f_66_);
                             stream.a((float) i_69_ * f_30_ + f_67_);
                             stream.a(f_68_ + f_31_ * (float) i_69_);
-                            if ((var_ha_Sub3.anInt8178
-                                    ^ 0xffffffff)
-                                    != -1)
+                            if (var_ha_Sub3.anInt8178 != 0)
                                 stream.a(i_62_, i_63_, i_64_, i_65_);
                             else
                                 stream.b(i_62_, i_63_, i_64_, i_65_);
@@ -409,9 +398,7 @@ final class Class280 {
                             stream.a(f_66_ + f_26_ * (float) i_69_);
                             stream.a(f_67_ + f_27_ * (float) i_69_);
                             stream.a(f_28_ * (float) i_69_ + f_68_);
-                            if ((var_ha_Sub3.anInt8178
-                                    ^ 0xffffffff)
-                                    != -1)
+                            if (var_ha_Sub3.anInt8178 != 0)
                                 stream.a(i_62_, i_63_, i_64_, i_65_);
                             else
                                 stream.b(i_62_, i_63_, i_64_, i_65_);
@@ -428,7 +415,7 @@ final class Class280 {
                             i_20_++;
                             stream.a(1.0F);
                         }
-                        if ((anIntArray3636[i_58_] ^ 0xffffffff) < -65) {
+                        if (anIntArray3636[i_58_] > 64) {
                             int i_70_ = anIntArray3636[i_58_] - 65;
                             for (int i_71_ = -1 + anIntArray3627[i_70_];
                                  i_71_ >= 0; i_71_--) {
@@ -473,9 +460,7 @@ final class Class280 {
                                 stream.a(f_77_ + (float) i_80_ * f_26_);
                                 stream.a((float) i_80_ * f_27_ + f_78_);
                                 stream.a((float) i_80_ * f_28_ + f_79_);
-                                if ((var_ha_Sub3.anInt8178
-                                        ^ 0xffffffff)
-                                        != -1)
+                                if (var_ha_Sub3.anInt8178 != 0)
                                     stream.a(i_73_, i_74_, i_75_, i_76_);
                                 else
                                     stream.b(i_73_, i_74_, i_75_, i_76_);
@@ -581,7 +566,7 @@ final class Class280 {
         if (buffer_83_ != null) {
             Stream stream = var_ha_Sub3.method3893(buffer_83_, 9179);
             if (!Stream.c()) {
-                for (int i = 0; (i ^ 0xffffffff) > -8192; i++) {
+                for (int i = 0; i < 8191; i++) {
                     stream.b(0.0F);
                     stream.b(-1.0F);
                     stream.b(0.0F);

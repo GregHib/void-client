@@ -41,7 +41,7 @@ final class Class348_Sub4 extends Class348 {
             aString6614 = aString6614.substring(0, 40);
         if (aString6610.length() > i)
             aString6610 = aString6610.substring(0, 10);
-        if ((aString6597.length() ^ 0xffffffff) < -11)
+        if (aString6597.length() > 10)
             aString6597 = aString6597.substring(0, 10);
     }
 
@@ -115,13 +115,10 @@ final class Class348_Sub4 extends Class348 {
             aBoolean6608 = Class297.aString3780.startsWith("amd64")
                     || Class297.aString3780.startsWith("x86_64");
             if (anInt6613 != 1) {
-                if ((anInt6613 ^ 0xffffffff) == -3) {
-                    if ((Class297.aString3778.indexOf("10.4") ^ 0xffffffff)
-                            == 0) {
+                if (anInt6613 == 2) {
+                    if (Class297.aString3778.indexOf("10.4") == -1) {
                         if (Class297.aString3778.indexOf("10.5") == -1) {
-                            if ((Class297.aString3778.indexOf("10.6")
-                                    ^ 0xffffffff)
-                                    != 0)
+                            if (Class297.aString3778.indexOf("10.6") != -1)
                                 anInt6595 = 22;
                         } else
                             anInt6595 = 21;
@@ -131,14 +128,11 @@ final class Class348_Sub4 extends Class348 {
             } else if (Class297.aString3778.indexOf("4.0") != -1)
                 anInt6595 = 1;
             else if (Class297.aString3778.indexOf("4.1") == -1) {
-                if ((Class297.aString3778.indexOf("4.9") ^ 0xffffffff) == 0) {
-                    if ((Class297.aString3778.indexOf("5.0") ^ 0xffffffff)
-                            != 0)
+                if (Class297.aString3778.indexOf("4.9") == -1) {
+                    if (Class297.aString3778.indexOf("5.0") != -1)
                         anInt6595 = 4;
-                    else if ((Class297.aString3778.indexOf("5.1") ^ 0xffffffff)
-                            == 0) {
-                        if ((Class297.aString3778.indexOf("6.0") ^ 0xffffffff)
-                                != 0)
+                    else if (Class297.aString3778.indexOf("5.1") == -1) {
+                        if (Class297.aString3778.indexOf("6.0") != -1)
                             anInt6595 = 6;
                         else if (Class297.aString3778.indexOf("6.1") != -1)
                             anInt6595 = 7;
@@ -148,16 +142,10 @@ final class Class348_Sub4 extends Class348 {
                     anInt6595 = 3;
             } else
                 anInt6595 = 2;
-            if ((Class297.aString3782.toLowerCase().indexOf("sun")
-                    ^ 0xffffffff)
-                    != 0)
+            if (Class297.aString3782.toLowerCase().indexOf("sun") != -1)
                 anInt6594 = 1;
-            else if ((Class297.aString3782.toLowerCase().indexOf("microsoft")
-                    ^ 0xffffffff)
-                    == 0) {
-                if ((Class297.aString3782.toLowerCase().indexOf("apple")
-                        ^ 0xffffffff)
-                        != 0)
+            else if (Class297.aString3782.toLowerCase().indexOf("microsoft") == -1) {
+                if (Class297.aString3782.toLowerCase().indexOf("apple") != -1)
                     anInt6594 = 3;
                 else
                     anInt6594 = 4;
@@ -166,10 +154,9 @@ final class Class348_Sub4 extends Class348 {
             int i = 2;
             int i_3_ = 0;
             try {
-                while ((i ^ 0xffffffff)
-                        > (Class297.aString3796.length() ^ 0xffffffff)) {
+                while (Class297.aString3796.length() > i) {
                     int i_4_ = Class297.aString3796.charAt(i);
-                    if ((i_4_ ^ 0xffffffff) > -49 || (i_4_ ^ 0xffffffff) < -58)
+                    if (i_4_ < 48 || i_4_ > 57)
                         break;
                     i++;
                     i_3_ = i_3_ * 10 - -i_4_ + -48;
@@ -181,10 +168,9 @@ final class Class348_Sub4 extends Class348 {
             i = Class297.aString3796.indexOf('.', 2) - -1;
             i_3_ = 0;
             try {
-                for (/**/; ((Class297.aString3796.length() ^ 0xffffffff)
-                        < (i ^ 0xffffffff)); i++) {
+                for (/**/; (i < Class297.aString3796.length()); i++) {
                     int i_5_ = Class297.aString3796.charAt(i);
-                    if ((i_5_ ^ 0xffffffff) > -49 || i_5_ > 57)
+                    if (i_5_ < 48 || i_5_ > 57)
                         break;
                     i_3_ = i_3_ * 10 + i_5_ + -48;
                 }

@@ -41,11 +41,11 @@ abstract class Class324 {
             if (i_3_ == 174) {
                 int i_7_ = string.length();
                 int i_8_ = 0;
-                for (/**/; (i_8_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff); i_8_++) {
+                for (/**/; i_7_ > i_8_; i_8_++) {
                     char c = (char) (Class354.method3464(string.charAt(i_8_),
                             false)
                             & 0xff);
-                    if ((c ^ 0xffffffff) == -61)
+                    if (c == 60)
                         i_4_ = i_8_;
                     else {
                         if (c == 62 && i_4_ != -1) {
@@ -118,7 +118,7 @@ abstract class Class324 {
                             } else
                                 c = '>';
                         }
-                        if ((i_4_ ^ 0xffffffff) == 0) {
+                        if (i_4_ == -1) {
                             if (i_5_ != -1)
                                 i += aClass143_4063.method1182(i_5_,
                                         (byte) -104, c);
@@ -132,15 +132,13 @@ abstract class Class324 {
                                 i_15_ = 0;
                             else
                                 i_15_ = is[i_6_];
-                            if ((c ^ 0xffffffff) != -33) {
-                                if ((Class20.anInt320 & ~0xffffff ^ 0xffffffff)
-                                        != -1)
+                            if (c != 32) {
+                                if ((Class20.anInt320 & ~0xffffff) != 0)
                                     fa(c, 1 + i - -i_14_, i_2_ - -1 + i_15_,
                                             Class20.anInt320, true);
                                 fa(c, i + i_14_, i_2_ + i_15_,
                                         Class348_Sub42_Sub1.anInt9492, false);
-                            } else if ((Class131.anInt1902 ^ 0xffffffff)
-                                    < -1) {
+                            } else if (Class131.anInt1902 > 0) {
                                 Class258.anInt4848 += Class131.anInt1902;
                                 i += Class258.anInt4848 >> 1675515336;
                                 Class258.anInt4848 &= 0xff;
@@ -148,9 +146,7 @@ abstract class Class324 {
                             i_6_++;
                             int i_16_
                                     = aClass143_4063.method1184((byte) -48, c);
-                            if ((Class318_Sub1_Sub3_Sub3_Sub2.anInt10567
-                                    ^ 0xffffffff)
-                                    != 0)
+                            if (Class318_Sub1_Sub3_Sub3_Sub2.anInt10567 != -1)
                                 aHa4048.method3649
                                         ((byte) -103, i_16_,
                                                 i_2_ - -(int) ((double) (aClass143_4063
@@ -158,8 +154,7 @@ abstract class Class324 {
                                                         * 0.7),
                                                 Class318_Sub1_Sub3_Sub3_Sub2.anInt10567,
                                                 i);
-                            if ((Class348_Sub40_Sub2.anInt9101 ^ 0xffffffff)
-                                    != 0)
+                            if (Class348_Sub40_Sub2.anInt9101 != -1)
                                 aHa4048.method3649((byte) -96, i_16_,
                                         (aClass143_4063
                                                 .anInt1992) + i_2_,
@@ -217,7 +212,7 @@ abstract class Class324 {
             int[] is_33_;
             if ((aClass143_4063.anInt1993
                     + aClass143_4063.anInt1988 - -i_32_) <= i
-                    || (i ^ 0xffffffff) <= (i_32_ + i_32_ ^ 0xffffffff))
+                    || i_32_ + i_32_ <= i)
                 is_33_ = new int[]{i_25_};
             else
                 is_33_ = null;
@@ -226,10 +221,10 @@ abstract class Class324 {
                     (byte) 87, class105s);
             if (i_31_ == -1) {
                 i_31_ = i / i_32_;
-                if ((i_31_ ^ 0xffffffff) >= -1)
+                if (i_31_ <= 0)
                     i_31_ = 1;
             }
-            if (i_31_ > 0 && (i_34_ ^ 0xffffffff) <= (i_31_ ^ 0xffffffff)) {
+            if (i_31_ > 0 && i_31_ <= i_34_) {
                 Class156.aStringArray2113[i_31_ - 1]
                         = aClass143_4063.method1181(class105s, i_25_,
                         (Class156.aStringArray2113
@@ -237,20 +232,20 @@ abstract class Class324 {
                         (byte) 55);
                 i_34_ = i_31_;
             }
-            if (i_26_ == 3 && (i_34_ ^ 0xffffffff) == -2)
+            if (i_26_ == 3 && i_34_ == 1)
                 i_26_ = 1;
             int i_35_ = -116 % ((i_21_ - -28) / 43);
             int i_36_;
             if (i_26_ == 0)
                 i_36_ = aClass143_4063.anInt1988 + i_24_;
-            else if ((i_26_ ^ 0xffffffff) != -2) {
-                if ((i_26_ ^ 0xffffffff) != -3) {
+            else if (i_26_ != 1) {
+                if (i_26_ != 2) {
                     int i_37_
                             = ((-(i_32_ * (i_34_ + -1))
                             + (i + (-aClass143_4063.anInt1988
                             + -aClass143_4063.anInt1993)))
                             / (1 + i_34_));
-                    if ((i_37_ ^ 0xffffffff) > -1)
+                    if (i_37_ < 0)
                         i_37_ = 0;
                     i_32_ += i_37_;
                     i_36_ = aClass143_4063.anInt1988 + (i_24_
@@ -268,7 +263,7 @@ abstract class Class324 {
                     method2583(i_27_, i_36_, i_22_, class105s, var_aa,
                             Class156.aStringArray2113[i_38_], is, 25625,
                             i_28_);
-                else if ((i_29_ ^ 0xffffffff) == -2)
+                else if (i_29_ == 1)
                     method2583(i_27_, i_36_, i_22_, class105s, var_aa,
                             Class156.aStringArray2113[i_38_], is, 25625,
                             (-aClass143_4063.method1183(true,
@@ -357,10 +352,10 @@ abstract class Class324 {
                 aClass138_4062 = null;
             int[] is_55_ = new int[i_54_];
             int i_56_ = 0;
-            for (int i_57_ = 0; (i_57_ ^ 0xffffffff) > (i_54_ ^ 0xffffffff);
+            for (int i_57_ = 0; i_54_ > i_57_;
                  i_57_++) {
                 is_55_[i_57_] = i_56_;
-                if ((0x3 & random.nextInt() ^ 0xffffffff) == -1)
+                if ((0x3 & random.nextInt()) == 0)
                     i_56_++;
             }
             method2566(class105s, null, i_52_, is, is_55_, i_51_, string, 174);
@@ -479,7 +474,7 @@ abstract class Class324 {
             int[] is = new int[i_62_];
             if (bool != false)
                 aHa4048 = null;
-            for (int i_63_ = 0; (i_62_ ^ 0xffffffff) < (i_63_ ^ 0xffffffff);
+            for (int i_63_ = 0; i_63_ < i_62_;
                  i_63_++)
                 is[i_63_] = (int) (5.0 * Math.sin((double) i_63_ / 2.0
                         + (double) i_61_ / 5.0));
@@ -555,10 +550,10 @@ abstract class Class324 {
         boolean bool = false;
         for (int i_90_ = i; i_90_ < string.length(); i_90_++) {
             int i_91_ = string.charAt(i_90_);
-            if ((i_91_ ^ 0xffffffff) != -61) {
-                if ((i_91_ ^ 0xffffffff) == -63)
+            if (i_91_ != 60) {
+                if (i_91_ == 62)
                     bool = false;
-                else if (!bool && (i_91_ ^ 0xffffffff) == -33)
+                else if (!bool && i_91_ == 32)
                     i_89_++;
             } else
                 bool = true;
@@ -579,7 +574,7 @@ abstract class Class324 {
             int i_97_ = string.length();
             int[] is = new int[i_97_];
             int[] is_98_ = new int[i_97_];
-            for (int i_99_ = 0; (i_99_ ^ 0xffffffff) > (i_97_ ^ 0xffffffff);
+            for (int i_99_ = 0; i_97_ > i_99_;
                  i_99_++) {
                 is[i_99_] = (int) (5.0 * Math.sin((double) i_92_ / 5.0
                         + (double) i_99_ / 5.0));
@@ -600,21 +595,20 @@ abstract class Class324 {
                 aClass138_4062 = null;
             for (int i_100_ = 0; class39s.length > i_100_; i_100_++) {
                 if (class39s[i_100_] == null
-                        || (class39s[i_100_].aLong517
-                        ^ 0xffffffffffffffffL) >= -1L)
+                        || class39s[i_100_].aLong517 <= 0)
                     return null;
             }
             long l = OpenGL.glCreateProgramObjectARB();
             for (int i_101_ = 0;
-                 (i_101_ ^ 0xffffffff) > (class39s.length ^ 0xffffffff);
+                 class39s.length > i_101_;
                  i_101_++)
                 OpenGL.glAttachObjectARB(l, (class39s[i_101_]
                         .aLong517));
             OpenGL.glLinkProgramARB(l);
             OpenGL.glGetObjectParameterivARB(l, 35714, Class211.anIntArray2744,
                     0);
-            if ((Class211.anIntArray2744[0] ^ 0xffffffff) == -1) {
-                if ((Class211.anIntArray2744[0] ^ 0xffffffff) == -1)
+            if (Class211.anIntArray2744[0] == 0) {
+                if (Class211.anIntArray2744[0] == 0)
                     System.out.println("Shader linking failed:");
                 OpenGL.glGetObjectParameterivARB(l, 35716,
                         Class211.anIntArray2744, 1);
@@ -661,7 +655,7 @@ abstract class Class324 {
                     char c = (char) (Class354.method3464(string.charAt(i_110_),
                             false)
                             & 0xff);
-                    if ((c ^ 0xffffffff) == -61)
+                    if (c == 60)
                         i_107_ = i_110_;
                     else {
                         if (c == 62 && i_107_ != -1) {
@@ -742,7 +736,7 @@ abstract class Class324 {
                             } else
                                 c = '\u00a0';
                         }
-                        if ((i_107_ ^ 0xffffffff) == 0) {
+                        if (i_107_ == -1) {
                             if (i_108_ != -1)
                                 i_106_ += aClass143_4063.method1182(i_108_,
                                         (byte) -90,
@@ -770,17 +764,14 @@ abstract class Class324 {
                             }
                             int i_114_
                                     = aClass143_4063.method1184((byte) -48, c);
-                            if ((Class318_Sub1_Sub3_Sub3_Sub2.anInt10567
-                                    ^ 0xffffffff)
-                                    != 0)
+                            if (Class318_Sub1_Sub3_Sub3_Sub2.anInt10567 != -1)
                                 aHa4048.method3649
                                         ((byte) -119, i_114_,
                                                 (int) ((double) aClass143_4063.anInt1992
                                                         * 0.7) + i_103_,
                                                 Class318_Sub1_Sub3_Sub3_Sub2.anInt10567,
                                                 i_106_);
-                            if ((Class348_Sub40_Sub2.anInt9101 ^ 0xffffffff)
-                                    != 0)
+                            if (Class348_Sub40_Sub2.anInt9101 != -1)
                                 aHa4048.method3649((byte) -114, i_114_,
                                         (aClass143_4063
                                                 .anInt1992) + (i_103_ + 1),
@@ -861,10 +852,10 @@ abstract class Class324 {
             int i_136_ = string.length();
             int[] is_137_ = new int[i_136_];
             int i_138_ = 0;
-            for (int i_139_ = 0; (i_139_ ^ 0xffffffff) > (i_136_ ^ 0xffffffff);
+            for (int i_139_ = 0; i_136_ > i_139_;
                  i_139_++) {
                 is_137_[i_139_] = i_138_;
-                if ((0x3 & random.nextInt() ^ 0xffffffff) == -1)
+                if ((0x3 & random.nextInt()) == 0)
                     i_138_++;
             }
             int i_140_ = i_133_;
@@ -890,7 +881,7 @@ abstract class Class324 {
             method2566(class105s, null, i_140_, is, is_137_, i_141_, string,
                     174);
             if (is_134_ != null) {
-                if ((i_142_ ^ 0xffffffff) == 0)
+                if (i_142_ == -1)
                     i_142_ = aClass143_4063.method1183(true, string) - -i_138_;
                 is_134_[2] = i_142_;
                 is_134_[3] = (aClass143_4063.anInt1993

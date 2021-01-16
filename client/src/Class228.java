@@ -58,7 +58,7 @@ final class Class228 {
                                 = ((Vector)
                                 field.get(var_class_1_.getClassLoader()));
                         for (int i = 0;
-                             (vector.size() ^ 0xffffffff) < (i ^ 0xffffffff);
+                             i < vector.size();
                              i++) {
                             try {
                                 Object object = vector.elementAt(i);
@@ -143,7 +143,7 @@ final class Class228 {
         }
         anInt2971++;
         if (i != (Class244.anInt4609 ^ 0xffffffff)
-                && (Class48.anInt859 ^ 0xffffffff) != 0) {
+                && Class48.anInt859 != -1) {
             int i_8_ = Class244.anInt4609 - Class348_Sub36.anInt6992;
             if (i_8_ < 2 || i_8_ > 2)
                 i_8_ /= 8;
@@ -152,7 +152,7 @@ final class Class228 {
             if (i_9_ < 2 || i_9_ > 2)
                 i_9_ /= 8;
             Class245.anInt3170 -= -i_9_;
-            if ((i_8_ ^ 0xffffffff) == -1 && i_9_ == 0) {
+            if (i_8_ == 0 && i_9_ == 0) {
                 Class244.anInt4609 = -1;
                 Class48.anInt859 = -1;
             }
@@ -160,7 +160,7 @@ final class Class228 {
         }
         if (Class367_Sub9.anInt7379 > 0) {
             Class164.anInt2173--;
-            if ((Class164.anInt2173 ^ 0xffffffff) == -1) {
+            if (Class164.anInt2173 == 0) {
                 Class367_Sub9.anInt7379--;
                 Class164.anInt2173 = 100;
             }

@@ -46,14 +46,13 @@ class Class237 {
                         = (class277 != null && class277.aBoolean3560
                         ? Class50_Sub1.aBooleanArrayArray5225[i_7_]
                         : Class265.aBooleanArrayArray4693[i_7_]);
-                if ((i_1_ ^ 0xffffffff) < -1) {
+                if (i_1_ > 0) {
                     if (i > 0) {
                         int i_9_ = is_5_[i + -1][i_1_ - 1] & 0xff;
                         if (i_9_ > 0) {
                             Class277 class277_10_
                                     = aClass268_3119.method2034(i_9_ - 1, false);
-                            if ((class277_10_.anInt3563
-                                    ^ 0xffffffff) != 0
+                            if (class277_10_.anInt3563 != -1
                                     && class277_10_.aBoolean3560) {
                                 byte i_11_ = is[-1 + i][i_1_ - 1];
                                 int i_12_
@@ -77,7 +76,7 @@ class Class237 {
                             }
                         }
                     }
-                    if ((i_6_ + -1 ^ 0xffffffff) < (i ^ 0xffffffff)) {
+                    if (i < i_6_ + -1) {
                         int i_14_ = 0xff & is_5_[1 + i][i_1_ - 1];
                         if (i_14_ > 0) {
                             Class277 class277_15_
@@ -107,14 +106,13 @@ class Class237 {
                         }
                     }
                 }
-                if ((i_1_ ^ 0xffffffff) > (i_3_ + i_0_ ^ 0xffffffff)) {
+                if (i_3_ + i_0_ > i_1_) {
                     if (i > 0) {
                         int i_19_ = is_5_[-1 + i][1 + i_1_] & 0xff;
-                        if ((i_19_ ^ 0xffffffff) < -1) {
+                        if (i_19_ > 0) {
                             Class277 class277_20_
                                     = aClass268_3119.method2034(-1 + i_19_, false);
-                            if ((class277_20_.anInt3563
-                                    ^ 0xffffffff) != 0
+                            if (class277_20_.anInt3563 != -1
                                     && class277_20_.aBoolean3560) {
                                 byte i_21_ = is[-1 + i][1 + i_1_];
                                 int i_22_
@@ -170,13 +168,12 @@ class Class237 {
                         }
                     }
                 }
-                if ((i_1_ ^ 0xffffffff) < -1) {
+                if (i_1_ > 0) {
                     int i_29_ = 0xff & is_5_[i][i_1_ + -1];
                     if (i_29_ > 0) {
                         Class277 class277_30_
                                 = aClass268_3119.method2034(-1 + i_29_, false);
-                        if ((class277_30_.anInt3563 ^ 0xffffffff)
-                                != 0) {
+                        if (class277_30_.anInt3563 != -1) {
                             byte i_31_ = is[i][-1 + i_1_];
                             int i_32_ = is_2_[i][i_1_ - 1];
                             if (class277_30_.aBoolean3560) {
@@ -184,17 +181,14 @@ class Class237 {
                                 int i_34_ = 4 + i_32_ * 2;
                                 int i_35_ = (Class348_Sub42_Sub17.method3266
                                         (var_ha, 125, class277_30_));
-                                for (int i_36_ = 0; (i_36_ ^ 0xffffffff) > -4;
+                                for (int i_36_ = 0; i_36_ < 3;
                                      i_36_++) {
                                     i_33_ &= 0x7;
                                     i_34_ = 0x7 & i_34_;
                                     if ((Class160.aBooleanArrayArray2133[i_31_]
                                             [i_34_])
-                                            && (((class277_30_
-                                            .anInt3564)
-                                            ^ 0xffffffff)
-                                            <= (Class306.anIntArray3873[i_33_]
-                                            ^ 0xffffffff))) {
+                                            && (Class306.anIntArray3873[i_33_] <= (class277_30_
+                                            .anInt3564))) {
                                         Class348_Sub15.anIntArray6775[i_33_]
                                                 = (class277_30_
                                                 .anInt3563);
@@ -207,11 +201,8 @@ class Class237 {
                                         Class348_Sub6.anIntArray6631[i_33_]
                                                 = (class277_30_
                                                 .anInt3570);
-                                        if (((class277_30_
-                                                .anInt3564)
-                                                ^ 0xffffffff)
-                                                != (Class306.anIntArray3873[i_33_]
-                                                ^ 0xffffffff))
+                                        if (Class306.anIntArray3873[i_33_] != (class277_30_
+                                                .anInt3564))
                                             Class180.anIntArray2370[i_33_]
                                                     = 32;
                                         else
@@ -239,13 +230,12 @@ class Class237 {
                         }
                     }
                 }
-                if ((-1 + i_0_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff)) {
+                if (i_1_ < -1 + i_0_) {
                     int i_37_ = is_5_[i][i_1_ - -1] & 0xff;
                     if (i_37_ > 0) {
                         Class277 class277_38_
                                 = aClass268_3119.method2034(-1 + i_37_, false);
-                        if ((class277_38_.anInt3563 ^ 0xffffffff)
-                                != 0) {
+                        if (class277_38_.anInt3563 != -1) {
                             byte i_39_ = is[i][i_1_ + 1];
                             int i_40_ = is_2_[i][i_1_ - -1];
                             if (class277_38_.aBoolean3560) {
@@ -253,17 +243,14 @@ class Class237 {
                                 int i_42_ = 2 * i_40_ + 2;
                                 int i_43_ = (Class348_Sub42_Sub17.method3266
                                         (var_ha, 124, class277_38_));
-                                for (int i_44_ = 0; (i_44_ ^ 0xffffffff) > -4;
+                                for (int i_44_ = 0; i_44_ < 3;
                                      i_44_++) {
                                     i_41_ &= 0x7;
                                     i_42_ = 0x7 & i_42_;
                                     if ((Class160.aBooleanArrayArray2133[i_39_]
                                             [i_42_])
-                                            && ((Class306.anIntArray3873[i_41_]
-                                            ^ 0xffffffff)
-                                            >= ((class277_38_
-                                            .anInt3564)
-                                            ^ 0xffffffff))) {
+                                            && ((class277_38_
+                                            .anInt3564) >= Class306.anIntArray3873[i_41_])) {
                                         Class348_Sub15.anIntArray6775[i_41_]
                                                 = (class277_38_
                                                 .anInt3563);
@@ -276,11 +263,8 @@ class Class237 {
                                         Class348_Sub6.anIntArray6631[i_41_]
                                                 = (class277_38_
                                                 .anInt3570);
-                                        if (((class277_38_
-                                                .anInt3564)
-                                                ^ 0xffffffff)
-                                                != (Class306.anIntArray3873[i_41_]
-                                                ^ 0xffffffff))
+                                        if (Class306.anIntArray3873[i_41_] != (class277_38_
+                                                .anInt3564))
                                             Class180.anIntArray2370[i_41_]
                                                     = 16;
                                         else
@@ -308,7 +292,7 @@ class Class237 {
                         }
                     }
                 }
-                if ((i ^ 0xffffffff) < -1) {
+                if (i > 0) {
                     int i_45_ = 0xff & is_5_[i + -1][i_1_];
                     if (i_45_ > 0) {
                         Class277 class277_46_
@@ -328,7 +312,7 @@ class Class237 {
                                 int i_50_ = 2 * i_48_ + 4;
                                 int i_51_ = (Class348_Sub42_Sub17.method3266
                                         (var_ha, 127, class277_46_));
-                                for (int i_52_ = 0; (i_52_ ^ 0xffffffff) > -4;
+                                for (int i_52_ = 0; i_52_ < 3;
                                      i_52_++) {
                                     i_50_ &= 0x7;
                                     i_49_ = 0x7 & i_49_;
@@ -349,11 +333,8 @@ class Class237 {
                                         Class348_Sub6.anIntArray6631[i_49_]
                                                 = (class277_46_
                                                 .anInt3570);
-                                        if (((class277_46_
-                                                .anInt3564)
-                                                ^ 0xffffffff)
-                                                != (Class306.anIntArray3873[i_49_]
-                                                ^ 0xffffffff))
+                                        if (Class306.anIntArray3873[i_49_] != (class277_46_
+                                                .anInt3564))
                                             Class180.anIntArray2370[i_49_] = 8;
                                         else
                                             Class180.anIntArray2370[i_49_]
@@ -378,13 +359,12 @@ class Class237 {
                         }
                     }
                 }
-                if ((i ^ 0xffffffff) > (i_6_ - 1 ^ 0xffffffff)) {
+                if (i_6_ - 1 > i) {
                     int i_53_ = is_5_[1 + i][i_1_] & 0xff;
                     if (i_53_ > 0) {
                         Class277 class277_54_
                                 = aClass268_3119.method2034(-1 + i_53_, false);
-                        if ((class277_54_.anInt3563 ^ 0xffffffff)
-                                != 0) {
+                        if (class277_54_.anInt3563 != -1) {
                             byte i_55_ = is[i + 1][i_1_];
                             int i_56_ = is_2_[1 + i][i_1_];
                             if (class277_54_.aBoolean3560) {
@@ -392,17 +372,14 @@ class Class237 {
                                 int i_58_ = 6 + i_56_ * 2;
                                 int i_59_ = (Class348_Sub42_Sub17.method3266
                                         (var_ha, 127, class277_54_));
-                                for (int i_60_ = 0; (i_60_ ^ 0xffffffff) > -4;
+                                for (int i_60_ = 0; i_60_ < 3;
                                      i_60_++) {
                                     i_57_ = 0x7 & i_57_;
                                     i_58_ = 0x7 & i_58_;
                                     if ((Class160.aBooleanArrayArray2133[i_55_]
                                             [i_58_])
-                                            && (((class277_54_
-                                            .anInt3564)
-                                            ^ 0xffffffff)
-                                            <= (Class306.anIntArray3873[i_57_]
-                                            ^ 0xffffffff))) {
+                                            && (Class306.anIntArray3873[i_57_] <= (class277_54_
+                                            .anInt3564))) {
                                         Class348_Sub15.anIntArray6775[i_57_]
                                                 = (class277_54_
                                                 .anInt3563);
@@ -451,12 +428,10 @@ class Class237 {
                         class277);
                 if (!class277.aBoolean3560)
                     break;
-                for (int i_62_ = 0; (i_62_ ^ 0xffffffff) > -9; i_62_++) {
+                for (int i_62_ = 0; i_62_ < 8; i_62_++) {
                     int i_63_ = -(i_4_ * 2) + i_62_ & 0x7;
                     if (Class160.aBooleanArrayArray2133[i_7_][i_62_]
-                            && ((class277.anInt3564 ^ 0xffffffff)
-                            <= (Class306.anIntArray3873[i_63_]
-                            ^ 0xffffffff))) {
+                            && (Class306.anIntArray3873[i_63_] <= class277.anInt3564)) {
                         Class348_Sub15.anIntArray6775[i_63_]
                                 = class277.anInt3563;
                         Class348_Sub40_Sub38.anIntArray9480[i_63_] = i_61_;
@@ -504,16 +479,14 @@ class Class237 {
             byte[][] is_68_ = aByteArrayArrayArray3129[i_66_];
             byte[][] is_69_ = aByteArrayArrayArray3113[i_66_];
             byte[][] is_70_ = aByteArrayArrayArray3123[i_66_];
-            for (int i_71_ = 0; ((this.anInt3117 ^ 0xffffffff)
-                    < (i_71_ ^ 0xffffffff)); i_71_++) {
+            for (int i_71_ = 0; (i_71_ < this.anInt3117); i_71_++) {
                 int i_72_ = (i_71_ >= this.anInt3117 - 1 ? i_71_
                         : i_71_ + 1);
                 for (int i_73_ = 0; i_73_ < this.anInt3114;
                      i_73_++) {
-                    int i_74_ = ((this.anInt3114 + -1
-                            ^ 0xffffffff) < (i_73_ ^ 0xffffffff)
+                    int i_74_ = (i_73_ < this.anInt3114 + -1
                             ? 1 + i_73_ : i_73_);
-                    if ((OutputStream_Sub2.anInt101 ^ 0xffffffff) == 0
+                    if (OutputStream_Sub2.anInt101 == -1
                             || Class58.method536(i_73_, false, i_71_,
                             OutputStream_Sub2.anInt101,
                             i_66_)) {
@@ -527,13 +500,13 @@ class Class237 {
                         int i_80_ = 0xff & is_69_[i_71_][i_74_];
                         int i_81_ = is_69_[i_72_][i_74_] & 0xff;
                         int i_82_ = is_69_[i_72_][i_73_] & 0xff;
-                        if (i_78_ != 0 || (i_79_ ^ 0xffffffff) != -1) {
+                        if (i_78_ != 0 || i_79_ != 0) {
                             Class277 class277
-                                    = ((i_78_ ^ 0xffffffff) == -1 ? null
+                                    = (i_78_ == 0 ? null
                                     : aClass268_3119.method2034(i_78_ - 1,
                                     false));
                             Class22 class22
-                                    = ((i_79_ ^ 0xffffffff) == -1 ? null
+                                    = (i_79_ == 0 ? null
                                     : aClass183_3120.method1380(true,
                                     -1 + i_79_));
                             if (i_76_ == 0 && class277 == null)
@@ -541,8 +514,7 @@ class Class237 {
                             Class277 class277_83_ = class277;
                             if (class277 != null) {
                                 if (class277.anInt3563 != -1
-                                        || (class277.anInt3569
-                                        ^ 0xffffffff) != 0) {
+                                        || class277.anInt3569 != -1) {
                                     if (class22 != null && i_76_ != 0)
                                         bool_75_ = (class277
                                                 .aBoolean3560);
@@ -552,14 +524,10 @@ class Class237 {
                                 }
                             }
                             if ((i_76_ == 0 || i_76_ == 12)
-                                    && (i_71_ ^ 0xffffffff) < -1
-                                    && (i_73_ ^ 0xffffffff) < -1
-                                    && ((i_71_ ^ 0xffffffff)
-                                    > (this.anInt3117
-                                    ^ 0xffffffff))
-                                    && ((i_73_ ^ 0xffffffff)
-                                    > (this.anInt3114
-                                    ^ 0xffffffff))) {
+                                    && i_71_ > 0
+                                    && i_73_ > 0
+                                    && (this.anInt3117 > i_71_)
+                                    && (this.anInt3114 > i_73_)) {
                                 int i_84_ = 0;
                                 int i_85_ = 0;
                                 int i_86_ = 0;
@@ -589,8 +557,7 @@ class Class237 {
                                     i_85_++;
                                     i_86_++;
                                 }
-                                if ((is_69_[i_71_][i_74_] ^ 0xffffffff)
-                                        == (i_79_ ^ 0xffffffff)) {
+                                if (i_79_ == is_69_[i_71_][i_74_]) {
                                     i_86_++;
                                     i_87_++;
                                 } else {
@@ -605,13 +572,12 @@ class Class237 {
                                     i_84_--;
                                 }
                                 int i_88_ = i_84_ + -i_86_;
-                                if ((i_88_ ^ 0xffffffff) > -1)
+                                if (i_88_ < 0)
                                     i_88_ = -i_88_;
                                 int i_89_ = -i_87_ + i_85_;
-                                if ((i_89_ ^ 0xffffffff) > -1)
+                                if (i_89_ < 0)
                                     i_89_ = -i_89_;
-                                if ((i_88_ ^ 0xffffffff)
-                                        == (i_89_ ^ 0xffffffff)) {
+                                if (i_89_ == i_88_) {
                                     i_88_
                                             = (var_s_64_.method3982((byte) -86,
                                             i_73_, i_71_)
@@ -628,8 +594,7 @@ class Class237 {
                                     if (i_89_ < 0)
                                         i_89_ = -i_89_;
                                 }
-                                i_77_ = ((i_88_ ^ 0xffffffff) <= (i_89_
-                                        ^ 0xffffffff)
+                                i_77_ = (i_89_ <= i_88_
                                         ? 0 : 1);
                             }
                             for (int i_90_ = 0; i_90_ < 13; i_90_++) {
@@ -649,19 +614,13 @@ class Class237 {
                                     var_ha);
                             boolean bool_92_
                                     = (class277 != null
-                                    && ((class277.anInt3569
-                                    ^ 0xffffffff)
-                                    != (class277.anInt3563
-                                    ^ 0xffffffff)));
+                                    && (class277.anInt3563 != class277.anInt3569));
                             if (!bool_92_) {
                                 for (int i_93_ = 0; i_93_ < 8; i_93_++) {
                                     if (Class306.anIntArray3873[i_93_] >= 0
-                                            && (((Class348_Sub40_Sub38
-                                            .anIntArray9480[i_93_])
-                                            ^ 0xffffffff)
-                                            != ((Class348_Sub15.anIntArray6775
-                                            [i_93_])
-                                            ^ 0xffffffff))) {
+                                            && ((Class348_Sub15.anIntArray6775
+                                            [i_93_]) != (Class348_Sub40_Sub38
+                                            .anIntArray9480[i_93_]))) {
                                         bool_92_ = true;
                                         break;
                                     }
@@ -691,27 +650,25 @@ class Class237 {
                                 bools[0]
                                         = (Class369_Sub3_Sub1.method3576
                                         (bools[0],
-                                                (Class139.method1166((Class180
+                                                Class139.method1166((Class180
                                                                 .anIntArray2370
                                                                 [0]),
                                                         (Class180
                                                                 .anIntArray2370
-                                                                [2]))
-                                                        ^ 0xffffffff) == -1));
+                                                                [2])) == 0));
                             if (!bools_91_[i_77_ + 2 & 0x3])
                                 bools[2]
                                         = (Class369_Sub3_Sub1.method3576
                                         (bools[2],
-                                                (Class139.method1166((Class180
+                                                Class139.method1166((Class180
                                                                 .anIntArray2370
                                                                 [4]),
                                                         (Class180
                                                                 .anIntArray2370
-                                                                [6]))
-                                                        ^ 0xffffffff) == -1));
+                                                                [6])) == 0));
                             if (!bool_75_
-                                    && ((i_76_ ^ 0xffffffff) == -1
-                                    || (i_76_ ^ 0xffffffff) == -13)) {
+                                    && (i_76_ == 0
+                                    || i_76_ == 12)) {
                                 if (!bools[0] || bools[1] || bools[2]
                                         || !bools[3]) {
                                     if (!bools[0] || !bools[1] || bools[2]
@@ -719,7 +676,7 @@ class Class237 {
                                         if (!bools[0] && bools[1] && bools[2]
                                                 && !bools[3]) {
                                             i_77_ = 2;
-                                            i_76_ = ((i_76_ ^ 0xffffffff) != -1
+                                            i_76_ = (i_76_ != 0
                                                     ? (byte) 14 : (byte) 13);
                                             bools[1] = bools[2] = false;
                                         } else if (!bools[0] && !bools[1]
@@ -738,7 +695,7 @@ class Class237 {
                                 } else {
                                     bools[0] = bools[3] = false;
                                     i_77_ = 0;
-                                    i_76_ = ((i_76_ ^ 0xffffffff) == -1
+                                    i_76_ = (i_76_ == 0
                                             ? (byte) 13 : (byte) 14);
                                 }
                             }
@@ -838,15 +795,10 @@ class Class237 {
                                             if (!bools[-i_77_ + 2 & 0x3]
                                                     || is_95_[2] != i_102_) {
                                                 if (!bools[-i_77_ + 1 & 0x3]
-                                                        || ((i_102_ ^ 0xffffffff)
-                                                        != (is_95_[1]
-                                                        ^ 0xffffffff))) {
+                                                        || (is_95_[1] != i_102_)) {
                                                     if (!(bools
                                                             [0x3 & -i_77_ + 3])
-                                                            || ((is_95_[3]
-                                                            ^ 0xffffffff)
-                                                            != (i_102_
-                                                            ^ 0xffffffff))) {
+                                                            || (i_102_ != is_95_[3])) {
                                                         Class348
                                                                 .anIntArray4288[0]
                                                                 = is_96_[i_102_];
@@ -920,8 +872,7 @@ class Class237 {
                                             i_119_ = 6;
                                         }
                                         for (int i_120_ = 0;
-                                             ((i_120_ ^ 0xffffffff)
-                                                     > (i_119_ ^ 0xffffffff));
+                                             (i_119_ > i_120_);
                                              i_120_++) {
                                             int i_121_
                                                     = (Class348.anIntArray4288
@@ -935,12 +886,10 @@ class Class237 {
                                             int i_125_;
                                             int i_126_;
                                             if (i_77_ != 1) {
-                                                if ((i_77_ ^ 0xffffffff)
-                                                        == -3) {
+                                                if (i_77_ == 2) {
                                                     i_126_ = 512 - i_123_;
                                                     i_125_ = -i_124_ + 512;
-                                                } else if ((i_77_ ^ 0xffffffff)
-                                                        == -4) {
+                                                } else if (i_77_ == 3) {
                                                     i_125_ = i_123_;
                                                     i_126_ = 512 + -i_124_;
                                                 } else {
@@ -1021,7 +970,7 @@ class Class237 {
                                                                     (byte) 73)));
                                                 }
                                             }
-                                            if ((i_121_ ^ 0xffffffff) > -9
+                                            if (i_121_ < 8
                                                     && ((Class306.anIntArray3873
                                                     [i_122_])
                                                     > (class277
@@ -1078,11 +1027,11 @@ class Class237 {
                                 else
                                     i_102_ += Class48.anIntArray860[i_76_];
                                 if (class22 != null) {
-                                    if ((i_82_ ^ 0xffffffff) == -1)
+                                    if (i_82_ == 0)
                                         i_82_ = i_79_;
                                     if (i_81_ == 0)
                                         i_81_ = i_79_;
-                                    if ((i_80_ ^ 0xffffffff) == -1)
+                                    if (i_80_ == 0)
                                         i_80_ = i_79_;
                                     Class22 class22_133_
                                             = aClass183_3120
@@ -1097,8 +1046,7 @@ class Class237 {
                                             = aClass183_3120
                                             .method1380(true, -1 + i_82_);
                                     for (int i_137_ = 0;
-                                         ((i_137_ ^ 0xffffffff)
-                                                 > (i_98_ ^ 0xffffffff));
+                                         (i_98_ > i_137_);
                                          i_137_++) {
                                         boolean bool_138_ = false;
                                         int i_139_;
@@ -1107,9 +1055,7 @@ class Class237 {
                                             if (!bools[2 + -i_77_ & 0x3]
                                                     || i_102_ != is_95_[2]) {
                                                 if (bools[0x3 & -i_77_ + 1]
-                                                        && ((i_102_ ^ 0xffffffff)
-                                                        == (is_95_[1]
-                                                        ^ 0xffffffff))) {
+                                                        && (is_95_[1] == i_102_)) {
                                                     Class348.anIntArray4288[0]
                                                             = is_96_[i_102_];
                                                     Class348.anIntArray4288[1]
@@ -1177,8 +1123,7 @@ class Class237 {
                                         }
                                         i_102_++;
                                         for (int i_140_ = 0;
-                                             ((i_139_ ^ 0xffffffff)
-                                                     < (i_140_ ^ 0xffffffff));
+                                             (i_140_ < i_139_);
                                              i_140_++) {
                                             int i_141_
                                                     = (Class348.anIntArray4288
@@ -1191,7 +1136,7 @@ class Class237 {
                                                     = anIntArray3128[i_141_];
                                             int i_145_;
                                             int i_146_;
-                                            if ((i_77_ ^ 0xffffffff) == -2) {
+                                            if (i_77_ == 1) {
                                                 i_146_ = i_144_;
                                                 i_145_ = -i_143_ + 512;
                                             } else if (i_77_ != 2) {
@@ -1276,15 +1221,14 @@ class Class237 {
                                                                     (byte) 106)));
                                                 }
                                             }
-                                            if ((i_141_ ^ 0xffffffff) <= -9
+                                            if (i_141_ >= 8
                                                     || (Class306.anIntArray3873
                                                     [i_142_]) < 0) {
                                                 if (!bool_75_
                                                         || !(Class160
                                                         .aBooleanArrayArray2133
                                                         [i_76_][i_141_])) {
-                                                    if (((i_146_ ^ 0xffffffff)
-                                                            == -1)
+                                                    if ((i_146_ == 0)
                                                             && i_145_ == 0) {
                                                         is_108_[i_103_]
                                                                 = is[i_71_][i_73_];
@@ -1295,9 +1239,7 @@ class Class237 {
                                                                 = (class22_133_
                                                                 .anInt336);
                                                     } else if (i_146_ != 0
-                                                            || ((i_145_
-                                                            ^ 0xffffffff)
-                                                            != -513)) {
+                                                            || (i_145_ != 512)) {
                                                         if (i_146_ == 512
                                                                 && i_145_ == 512) {
                                                             is_108_[i_103_]
@@ -1309,15 +1251,9 @@ class Class237 {
                                                             is_110_[i_103_]
                                                                     = (class22_135_
                                                                     .anInt336);
-                                                        } else if (((i_146_
-                                                                ^ 0xffffffff)
-                                                                != -513)
-                                                                || ((i_145_
-                                                                ^ 0xffffffff)
-                                                                != -1)) {
-                                                            if ((i_146_
-                                                                    ^ 0xffffffff)
-                                                                    <= -257) {
+                                                        } else if ((i_146_ != 512)
+                                                                || (i_145_ != 0)) {
+                                                            if (i_146_ >= 256) {
                                                                 if (i_145_
                                                                         >= 256) {
                                                                     is_109_
@@ -1338,9 +1274,7 @@ class Class237 {
                                                                             = (class22_136_
                                                                             .anInt336);
                                                                 }
-                                                            } else if ((i_145_
-                                                                    ^ 0xffffffff)
-                                                                    > -257) {
+                                                            } else if (i_145_ < 256) {
                                                                 is_109_[i_103_]
                                                                         = (class22_133_
                                                                         .anInt331);
@@ -1454,23 +1388,22 @@ class Class237 {
                                         i_71_);
                                 boolean bool_159_
                                         = Class79.method802(i_73_, i_71_, true);
-                                if (bool_159_ && (i_66_ ^ 0xffffffff) < -2
+                                if (bool_159_ && i_66_ > 1
                                         || (!bool_159_
-                                        && (i_66_ ^ 0xffffffff) < -1)) {
+                                        && i_66_ > 0)) {
                                     boolean bool_160_ = true;
                                     if (class22 != null
                                             && !class22.aBoolean334)
                                         bool_160_ = false;
-                                    else if ((i_79_ ^ 0xffffffff) == -1
-                                            && (i_76_ ^ 0xffffffff) != -1)
+                                    else if (i_79_ == 0
+                                            && i_76_ != 0)
                                         bool_160_ = false;
                                     else if (i_78_ > 0 && class277_83_ != null
                                             && !(class277_83_
                                             .aBoolean3561))
                                         bool_160_ = false;
                                     if (bool_160_
-                                            && ((i_155_ ^ 0xffffffff)
-                                            == (i_156_ ^ 0xffffffff))
+                                            && (i_156_ == i_155_)
                                             && i_157_ == i_155_
                                             && i_155_ == i_158_)
                                         this
@@ -1533,30 +1466,29 @@ class Class237 {
         if (i_168_ >= -80)
             this.aByteArrayArrayArray3108 = null;
         for (int i_171_ = i_167_;
-             (i_171_ ^ 0xffffffff) > (i_166_ + i_167_ ^ 0xffffffff);
+             i_166_ + i_167_ > i_171_;
              i_171_++) {
             for (int i_172_ = i;
-                 (i_172_ ^ 0xffffffff) > (i_169_ + i ^ 0xffffffff); i_172_++) {
-                if ((i_172_ ^ 0xffffffff) <= -1
+                 i_169_ + i > i_172_; i_172_++) {
+                if (i_172_ >= 0
                         && i_172_ < this.anInt3117
-                        && (i_171_ ^ 0xffffffff) <= -1
+                        && i_171_ >= 0
                         && this.anInt3114 > i_171_)
                     this.anIntArrayArrayArray3122[i_170_]
                             [i_172_][i_171_]
-                            = ((i_170_ ^ 0xffffffff) >= -1 ? 0
+                            = (i_170_ <= 0 ? 0
                             : -960 + (this.anIntArrayArrayArray3122
                             [-1 + i_170_][i_172_][i_171_]));
             }
         }
         anInt3105++;
         if (i > 0
-                && (i ^ 0xffffffff) > (this.anInt3117 ^ 0xffffffff)) {
+                && this.anInt3117 > i) {
             for (int i_173_ = i_167_ - -1;
-                 (i_167_ - -i_166_ ^ 0xffffffff) < (i_173_ ^ 0xffffffff);
+                 i_173_ < i_167_ - -i_166_;
                  i_173_++) {
                 if (i_173_ >= 0
-                        && (i_173_ ^ 0xffffffff) > (this.anInt3114
-                        ^ 0xffffffff))
+                        && this.anInt3114 > i_173_)
                     this.anIntArrayArrayArray3122[i_170_][i]
                             [i_173_]
                             = (this.anIntArrayArrayArray3122[i_170_]
@@ -1565,8 +1497,8 @@ class Class237 {
         }
         if (i_167_ > 0 && i_167_ < this.anInt3114) {
             for (int i_174_ = 1 + i;
-                 (i_169_ + i ^ 0xffffffff) < (i_174_ ^ 0xffffffff); i_174_++) {
-                if ((i_174_ ^ 0xffffffff) <= -1
+                 i_174_ < i_169_ + i; i_174_++) {
+                if (i_174_ >= 0
                         && i_174_ < this.anInt3117)
                     this.anIntArrayArrayArray3122[i_170_]
                             [i_174_][i_167_]
@@ -1577,7 +1509,7 @@ class Class237 {
         if (i >= 0 && i_167_ >= 0 && this.anInt3117 > i
                 && i_167_ < this.anInt3114) {
             if (i_170_ != 0) {
-                if ((i ^ 0xffffffff) < -1
+                if (i > 0
                         && ((this.anIntArrayArrayArray3122[i_170_ - 1]
                         [-1 + i][i_167_])
                         != (this.anIntArrayArrayArray3122[i_170_]
@@ -1586,18 +1518,15 @@ class Class237 {
                             [i_167_]
                             = (this.anIntArrayArrayArray3122[i_170_]
                             [i - 1][i_167_]);
-                else if ((i_167_ ^ 0xffffffff) >= -1
+                else if (i_167_ <= 0
                         || ((this.anIntArrayArrayArray3122
                         [i_170_][i][-1 + i_167_])
                         == (this.anIntArrayArrayArray3122
                         [-1 + i_170_][i][-1 + i_167_]))) {
-                    if ((i ^ 0xffffffff) < -1 && i_167_ > 0
-                            && (((this.anIntArrayArrayArray3122
-                            [i_170_][i + -1][-1 + i_167_])
-                            ^ 0xffffffff)
-                            != ((this.anIntArrayArrayArray3122
-                            [i_170_ + -1][i + -1][-1 + i_167_])
-                            ^ 0xffffffff)))
+                    if (i > 0 && i_167_ > 0
+                            && ((this.anIntArrayArrayArray3122
+                            [i_170_ + -1][i + -1][-1 + i_167_]) != (this.anIntArrayArrayArray3122
+                            [i_170_][i + -1][-1 + i_167_])))
                         this.anIntArrayArrayArray3122[i_170_]
                                 [i][i_167_]
                                 = (this.anIntArrayArrayArray3122
@@ -1607,15 +1536,13 @@ class Class237 {
                             [i_167_]
                             = (this.anIntArrayArrayArray3122[i_170_]
                             [i][i_167_ + -1]);
-            } else if ((i ^ 0xffffffff) >= -1
-                    || ((this.anIntArrayArrayArray3122[i_170_]
-                    [-1 + i][i_167_])
-                    ^ 0xffffffff) == -1) {
-                if ((i_167_ ^ 0xffffffff) >= -1
-                        || ((this.anIntArrayArrayArray3122[i_170_][i]
-                        [-1 + i_167_])
-                        ^ 0xffffffff) == -1) {
-                    if ((i ^ 0xffffffff) < -1 && (i_167_ ^ 0xffffffff) < -1
+            } else if (i <= 0
+                    || (this.anIntArrayArrayArray3122[i_170_]
+                    [-1 + i][i_167_]) == 0) {
+                if (i_167_ <= 0
+                        || (this.anIntArrayArrayArray3122[i_170_][i]
+                        [-1 + i_167_]) == 0) {
+                    if (i > 0 && i_167_ > 0
                             && (this.anIntArrayArrayArray3122[i_170_]
                             [-1 + i][i_167_ - 1]) != 0)
                         this.anIntArrayArrayArray3122[i_170_]
@@ -1638,12 +1565,10 @@ class Class237 {
         anInt3121++;
         int[][] is_176_ = this.anIntArrayArrayArray3122[i];
         for (int i_177_ = i_175_;
-             ((this.anInt3117 - -1 ^ 0xffffffff)
-                     < (i_177_ ^ 0xffffffff));
+             (i_177_ < this.anInt3117 - -1);
              i_177_++) {
             for (int i_178_ = 0;
-                 ((this.anInt3114 + 1 ^ 0xffffffff)
-                         < (i_178_ ^ 0xffffffff));
+                 (i_178_ < this.anInt3114 + 1);
                  i_178_++)
                 is_176_[i_177_][i_178_] += is[i_177_][i_178_];
         }
@@ -1682,16 +1607,14 @@ class Class237 {
                     for (int i_182_ = -5; i_182_ < this.anInt3117;
                          i_182_++) {
                         for (int i_183_ = 0;
-                             ((this.anInt3114 ^ 0xffffffff)
-                                     < (i_183_ ^ 0xffffffff));
+                             (i_183_ < this.anInt3114);
                              i_183_++) {
                             int i_184_ = i_182_ - -5;
-                            if ((i_184_ ^ 0xffffffff)
-                                    > (this.anInt3117 ^ 0xffffffff)) {
+                            if (this.anInt3117 > i_184_) {
                                 int i_185_ = ((aByteArrayArrayArray3113[i_180_]
                                         [i_184_][i_183_])
                                         & 0xff);
-                                if ((i_185_ ^ 0xffffffff) < -1) {
+                                if (i_185_ > 0) {
                                     Class22 class22
                                             = aClass183_3120
                                             .method1380(true, -1 + i_185_);
@@ -1735,13 +1658,10 @@ class Class237 {
                             int i_191_ = 0;
                             int i_192_ = 0;
                             for (int i_193_ = -5;
-                                 ((i_193_ ^ 0xffffffff)
-                                         > (this.anInt3114
-                                         ^ 0xffffffff));
+                                 (this.anInt3114 > i_193_);
                                  i_193_++) {
                                 int i_194_ = 5 + i_193_;
-                                if ((this.anInt3114 ^ 0xffffffff)
-                                        < (i_194_ ^ 0xffffffff)) {
+                                if (i_194_ < this.anInt3114) {
                                     i_190_ += (Class348_Sub8.anIntArray6655
                                             [i_194_]);
                                     i_189_ += (Class348_Sub40_Sub6
@@ -1753,7 +1673,7 @@ class Class237 {
                                     i_191_ += Class265.anIntArray4692[i_194_];
                                 }
                                 int i_195_ = i_193_ + -5;
-                                if ((i_195_ ^ 0xffffffff) <= -1) {
+                                if (i_195_ >= 0) {
                                     i_191_ -= Class265.anIntArray4692[i_195_];
                                     i_188_ -= (Class348_Sub24.anIntArray6878
                                             [i_195_]);
@@ -1764,7 +1684,7 @@ class Class237 {
                                     i_189_ -= (Class348_Sub40_Sub6
                                             .anIntArray9135[i_195_]);
                                 }
-                                if ((i_193_ ^ 0xffffffff) <= -1 && i_191_ > 0
+                                if (i_193_ >= 0 && i_191_ > 0
                                         && i_192_ > 0)
                                     is[i_182_][i_193_]
                                             = Class247.method1890(i_190_ / i_192_,
@@ -1777,7 +1697,7 @@ class Class237 {
                     }
                     if (!IOException_Sub1.aBoolean86)
                         method1683(var_ha,
-                                (i_180_ ^ 0xffffffff) != -1 ? null : var_s,
+                                i_180_ != 0 ? null : var_s,
                                 i_180_, (byte) 127, is,
                                 aa_Sub1.aSArray5191[i_180_],
                                 i_180_ != 0 ? null : var_s_179_);
@@ -1792,14 +1712,13 @@ class Class237 {
                     aByteArrayArrayArray3129[i_180_] = null;
                 }
                 if (!this.aBoolean3109) {
-                    if ((Class291.anInt3720 ^ 0xffffffff) != -1)
+                    if (Class291.anInt3720 != 0)
                         Class258_Sub3.method1968();
                     if (Class186.aBoolean2492)
                         Class171.method1320();
                 }
                 for (int i_196_ = 0;
-                     ((i_196_ ^ 0xffffffff)
-                             > (this.anInt3130 ^ 0xffffffff));
+                     (this.anInt3130 > i_196_);
                      i_196_++)
                     aa_Sub1.aSArray5191[i_196_].YA();
             }
@@ -1818,19 +1737,16 @@ class Class237 {
         try {
             anInt3107++;
             if (!this.aBoolean3109) {
-                for (int i_201_ = 0; (i_201_ ^ 0xffffffff) > -5; i_201_++) {
+                for (int i_201_ = 0; i_201_ < 4; i_201_++) {
                     Class361 class361 = class361s[i_201_];
                     for (int i_202_ = 0; i_202_ < 64; i_202_++) {
                         for (int i_203_ = 0; i_203_ < 64; i_203_++) {
                             int i_204_ = i_202_ + i;
                             int i_205_ = i_199_ + i_203_;
                             if (i_204_ >= 0
-                                    && ((this.anInt3117 ^ 0xffffffff)
-                                    < (i_204_ ^ 0xffffffff))
-                                    && (i_205_ ^ 0xffffffff) <= -1
-                                    && ((i_205_ ^ 0xffffffff)
-                                    > (this.anInt3114
-                                    ^ 0xffffffff)))
+                                    && (i_204_ < this.anInt3117)
+                                    && i_205_ >= 0
+                                    && (this.anInt3114 > i_205_))
                                 class361.method3501((byte) 107, i_205_,
                                         i_204_);
                         }
@@ -1876,21 +1792,19 @@ class Class237 {
                 i_214_ = 1;
         } else
             i = 1;
-        if ((i_216_ ^ 0xffffffff) > -1
-                || (this.anInt3117 ^ 0xffffffff) >= (i_216_
-                ^ 0xffffffff)
+        if (i_216_ < 0
+                || i_216_ >= this.anInt3117
                 || i_212_ < 0
-                || (i_212_ ^ 0xffffffff) <= (this.anInt3114
-                ^ 0xffffffff)) {
+                || this.anInt3114 <= i_212_) {
             for (; ; ) {
                 int i_220_ = class348_sub49.method3387(255);
-                if ((i_220_ ^ 0xffffffff) == -1)
+                if (i_220_ == 0)
                     break;
-                if ((i_220_ ^ 0xffffffff) == -2) {
+                if (i_220_ == 1) {
                     class348_sub49.method3387(i_215_ ^ 0x4278cb1d);
                     break;
                 }
-                if ((i_220_ ^ 0xffffffff) >= -50)
+                if (i_220_ <= 49)
                     class348_sub49.method3387(255);
             }
         } else {
@@ -1899,12 +1813,12 @@ class Class237 {
                         = (byte) 0;
             for (; ; ) {
                 int i_221_ = class348_sub49.method3387(i_215_ ^ 0x4278cb1d);
-                if ((i_221_ ^ 0xffffffff) == -1) {
+                if (i_221_ == 0) {
                     if (this.aBoolean3109)
                         this.anIntArrayArrayArray3122[0]
                                 [i_214_ + i_216_][i + i_212_]
                                 = 0;
-                    else if ((i_219_ ^ 0xffffffff) != -1)
+                    else if (i_219_ != 0)
                         this.anIntArrayArrayArray3122[i_219_]
                                 [i_214_ + i_216_][i + i_212_]
                                 = -960 + (this
@@ -1925,7 +1839,7 @@ class Class237 {
                                 [i_216_ - -i_214_][i_212_ + i]
                                 = i_222_ * 8 << 1925033730;
                     else {
-                        if ((i_222_ ^ 0xffffffff) == -2)
+                        if (i_222_ == 1)
                             i_222_ = 0;
                         if (i_219_ != 0)
                             this.anIntArrayArrayArray3122
@@ -1940,7 +1854,7 @@ class Class237 {
                     }
                     break;
                 }
-                if ((i_221_ ^ 0xffffffff) >= -50) {
+                if (i_221_ <= 49) {
                     if (bool)
                         class348_sub49.method3387(255);
                     else {
@@ -1975,7 +1889,7 @@ class Class237 {
                      i_226_++) {
                     for (int i_227_ = 0; this.anInt3114 > i_227_;
                          i_227_++) {
-                        if ((OutputStream_Sub2.anInt101 ^ 0xffffffff) == 0
+                        if (OutputStream_Sub2.anInt101 == -1
                                 || Class58.method536(i_227_, false, i_226_,
                                 OutputStream_Sub2.anInt101,
                                 i)) {
@@ -1989,15 +1903,15 @@ class Class237 {
                             int i_231_ = 0xff & (aByteArrayArrayArray3113[i]
                                     [i_226_][i_227_]);
                             Class277 class277
-                                    = ((i_230_ ^ 0xffffffff) != -1
+                                    = (i_230_ != 0
                                     ? aClass268_3119.method2034(-1 + i_230_,
                                     false)
                                     : null);
-                            if ((i_228_ ^ 0xffffffff) == -1
+                            if (i_228_ == 0
                                     && class277 == null)
                                 i_228_ = (byte) 12;
                             Class22 class22
-                                    = ((i_231_ ^ 0xffffffff) == -1 ? null
+                                    = (i_231_ == 0 ? null
                                     : aClass183_3120.method1380(true,
                                     i_231_ - 1));
                             int i_232_ = 0;
@@ -2016,7 +1930,7 @@ class Class237 {
                                         [i_228_]);
                             int i_234_ = i_233_ + i_232_;
                             int i_235_ = 0;
-                            if ((i_234_ ^ 0xffffffff) != -1) {
+                            if (i_234_ != 0) {
                                 int i_236_
                                         = (class277 != null
                                         ? class277.anInt3575 : -1);
@@ -2030,8 +1944,7 @@ class Class237 {
                                 boolean bool = false;
                                 boolean bool_242_ = false;
                                 if (class277 == null
-                                        || ((class277.anInt3563
-                                        ^ 0xffffffff) == 0
+                                        || (class277.anInt3563 == -1
                                         && (class277.anInt3569
                                         == -1)
                                         && i_236_ == -1)) {
@@ -2043,23 +1956,18 @@ class Class237 {
                                     }
                                 } else {
                                     for (int i_244_ = 0;
-                                         ((i_244_ ^ 0xffffffff)
-                                                 > (i_233_ ^ 0xffffffff));
+                                         (i_233_ > i_244_);
                                          i_244_++) {
                                         is_240_[i_235_] = i_236_;
                                         is_241_[i_235_]
                                                 = class277.anInt3570;
-                                        if ((class277.anInt3563
-                                                ^ 0xffffffff)
-                                                != 0)
+                                        if (class277.anInt3563 != -1)
                                             is_238_[i_235_]
                                                     = (class277
                                                     .anInt3563);
                                         else
                                             is_238_[i_235_] = -1;
-                                        if ((class277.anInt3569
-                                                ^ 0xffffffff)
-                                                == 0)
+                                        if (class277.anInt3569 == -1)
                                             is_239_[i_235_] = -1;
                                         else {
                                             bool = true;
@@ -2070,7 +1978,7 @@ class Class237 {
                                         i_235_++;
                                     }
                                     if (!this.aBoolean3109
-                                            && (i ^ 0xffffffff) == -1)
+                                            && i == 0)
                                         Class333.method2643
                                                 (i_226_, i_227_,
                                                         class277.anInt3559,
@@ -2090,8 +1998,7 @@ class Class237 {
                                     }
                                 } else {
                                     for (int i_246_ = 0;
-                                         ((i_246_ ^ 0xffffffff)
-                                                 > (i_232_ ^ 0xffffffff));
+                                         (i_232_ > i_246_);
                                          i_246_++) {
                                         is_240_[i_235_] = i_237_;
                                         is_241_[i_235_]
@@ -2114,12 +2021,12 @@ class Class237 {
                                      i_252_++) {
                                     int i_253_ = anIntArray3124[i_252_];
                                     int i_254_ = anIntArray3128[i_252_];
-                                    if ((i_229_ ^ 0xffffffff) == -1) {
+                                    if (i_229_ == 0) {
                                         is_248_[i_252_] = i_253_;
                                         is_249_[i_252_] = i_254_;
                                     } else if (i_229_ != 1) {
-                                        if ((i_229_ ^ 0xffffffff) != -3) {
-                                            if ((i_229_ ^ 0xffffffff) == -4) {
+                                        if (i_229_ != 2) {
+                                            if (i_229_ == 3) {
                                                 is_248_[i_252_] = 512 - i_254_;
                                                 int i_255_ = i_253_;
                                                 is_249_[i_252_] = i_255_;
@@ -2207,19 +2114,16 @@ class Class237 {
                                             && !class22.aBoolean334)
                                         bool_268_ = false;
                                     else if (i_231_ == 0
-                                            && (i_228_ ^ 0xffffffff) != -1)
+                                            && i_228_ != 0)
                                         bool_268_ = false;
                                     else if (i_230_ > 0 && class277 != null
                                             && !(class277
                                             .aBoolean3561))
                                         bool_268_ = false;
                                     if (bool_268_
-                                            && ((i_263_ ^ 0xffffffff)
-                                            == (i_264_ ^ 0xffffffff))
-                                            && ((i_265_ ^ 0xffffffff)
-                                            == (i_263_ ^ 0xffffffff))
-                                            && ((i_266_ ^ 0xffffffff)
-                                            == (i_263_ ^ 0xffffffff)))
+                                            && (i_264_ == i_263_)
+                                            && (i_263_ == i_265_)
+                                            && (i_263_ == i_266_))
                                         this
                                                 .aByteArrayArrayArray3108[i]
                                                 [i_226_][i_227_]
@@ -2294,7 +2198,7 @@ class Class237 {
                                     + i_275_);
                             if (i_283_ > 0
                                     && i_283_ < -1 + this.anInt3117
-                                    && (i_284_ ^ 0xffffffff) < -1
+                                    && i_284_ > 0
                                     && this.anInt3114 + -1 > i_284_)
                                 class361.method3501((byte) 124, i_284_,
                                         i_283_);
@@ -2305,8 +2209,8 @@ class Class237 {
                 int i_286_ = (~0x7 & i_274_) << -2068774973;
                 int i_287_ = 0;
                 int i_288_ = 0;
-                if ((i_277_ ^ 0xffffffff) != -2) {
-                    if ((i_277_ ^ 0xffffffff) != -3) {
+                if (i_277_ != 1) {
+                    if (i_277_ != 2) {
                         if (i_277_ == 3)
                             i_287_ = 1;
                     } else {
@@ -2317,19 +2221,15 @@ class Class237 {
                     i_288_ = 1;
                 for (int i_289_ = 0; this.anInt3130 > i_289_;
                      i_289_++) {
-                    for (int i_290_ = 0; (i_290_ ^ 0xffffffff) > -65;
+                    for (int i_290_ = 0; i_290_ < 64;
                          i_290_++) {
-                        for (int i_291_ = 0; (i_291_ ^ 0xffffffff) > -65;
+                        for (int i_291_ = 0; i_291_ < 64;
                              i_291_++) {
                             if (i_278_ != i_289_
-                                    || (i_290_ ^ 0xffffffff) > (i_279_
-                                    ^ 0xffffffff)
-                                    || (i_279_ - -8 ^ 0xffffffff) > (i_290_
-                                    ^ 0xffffffff)
-                                    || (i_291_ ^ 0xffffffff) > (i_280_
-                                    ^ 0xffffffff)
-                                    || (i_291_ ^ 0xffffffff) < (8 + i_280_
-                                    ^ 0xffffffff))
+                                    || i_279_ > i_290_
+                                    || i_290_ > i_279_ - -8
+                                    || i_280_ > i_291_
+                                    || 8 + i_280_ < i_291_)
                                 method1682(false, 0, -1, 0, class348_sub49, 0,
                                         1115212770, -1, 0, 0, 0);
                             else {
@@ -2353,11 +2253,11 @@ class Class237 {
                                             i_285_ - -i_290_,
                                             i_291_ + i_286_, i_272_);
                                 } else {
-                                    if ((i_277_ ^ 0xffffffff) == -1) {
+                                    if (i_277_ == 0) {
                                         i_292_ = -i_280_ + (i_291_ + i_275_);
                                         i_293_ = -i_279_ - -i_290_ + i;
                                     } else if (i_277_ != 1) {
-                                        if ((i_277_ ^ 0xffffffff) != -3) {
+                                        if (i_277_ != 2) {
                                             i_293_
                                                     = i_280_ - (i_291_ - i) - -8;
                                             i_292_
@@ -2379,23 +2279,22 @@ class Class237 {
                                 }
                                 if (i_290_ == 63 || i_291_ == 63) {
                                     int i_294_ = 1;
-                                    if ((i_290_ ^ 0xffffffff) == -64
-                                            && (i_291_ ^ 0xffffffff) == -64)
+                                    if (i_290_ == 63
+                                            && i_291_ == 63)
                                         i_294_ = 3;
                                     for (int i_295_ = 0;
-                                         ((i_295_ ^ 0xffffffff)
-                                                 > (i_294_ ^ 0xffffffff));
+                                         (i_294_ > i_295_);
                                          i_295_++) {
                                         int i_296_ = i_290_;
                                         int i_297_ = i_291_;
                                         if (i_295_ != 0) {
-                                            if ((i_295_ ^ 0xffffffff) == -2)
+                                            if (i_295_ == 1)
                                                 i_296_ = 64;
                                             else if (i_295_ == 2)
                                                 i_297_ = 64;
                                         } else {
                                             i_297_
-                                                    = ((i_291_ ^ 0xffffffff) == -64
+                                                    = (i_291_ == 63
                                                     ? 64 : i_291_);
                                             i_296_
                                                     = i_290_ == 63 ? 64 : i_290_;
@@ -2406,8 +2305,7 @@ class Class237 {
                                             i_298_
                                                     = -i_280_ - -i_297_ + i_275_;
                                             i_299_ = i_296_ + -i_279_ + i;
-                                        } else if ((i_277_ ^ 0xffffffff)
-                                                == -2) {
+                                        } else if (i_277_ == 1) {
                                             i_298_ = i_279_ - (i_296_
                                                     - i_275_) - -8;
                                             i_299_ = i + i_297_ - i_280_;
@@ -2420,14 +2318,10 @@ class Class237 {
                                                     + i_280_);
                                             i_299_ = i_279_ - (i_296_ - i - 8);
                                         }
-                                        if ((i_299_ ^ 0xffffffff) <= -1
-                                                && ((this.anInt3117
-                                                ^ 0xffffffff)
-                                                < (i_299_ ^ 0xffffffff))
+                                        if (i_299_ >= 0
+                                                && (i_299_ < this.anInt3117)
                                                 && i_298_ >= 0
-                                                && ((i_298_ ^ 0xffffffff)
-                                                > (this.anInt3114
-                                                ^ 0xffffffff)))
+                                                && (this.anInt3114 > i_298_))
                                             this
                                                     .anIntArrayArrayArray3122
                                                     [i_272_][i_299_][i_298_]
@@ -2466,22 +2360,19 @@ class Class237 {
             if (!this.aBoolean3109) {
                 for (int i_300_ = 0; i_300_ < 4; i_300_++) {
                     for (int i_301_ = 0;
-                         ((this.anInt3117 ^ 0xffffffff)
-                                 < (i_301_ ^ 0xffffffff));
+                         (i_301_ < this.anInt3117);
                          i_301_++) {
                         for (int i_302_ = 0;
                              this.anInt3114 > i_302_; i_302_++) {
                             if ((0x1 & (Class348_Sub33.aByteArrayArrayArray6962
-                                    [i_300_][i_301_][i_302_])
-                                    ^ 0xffffffff)
-                                    != -1) {
+                                    [i_300_][i_301_][i_302_])) != 0) {
                                 int i_303_ = i_300_;
                                 if ((0x2
                                         & (Class348_Sub33.aByteArrayArrayArray6962
                                         [1][i_301_][i_302_]))
                                         != 0)
                                     i_303_--;
-                                if ((i_303_ ^ 0xffffffff) <= -1)
+                                if (i_303_ >= 0)
                                     class361s[i_303_].method3507(i_302_,
                                             i_301_,
                                             (byte) -116);
@@ -2499,8 +2390,8 @@ class Class237 {
                         i_305_ |= 0x2;
                     if (Class369.aBoolean4972)
                         i_306_ |= 0x8;
-                    if ((Class291.anInt3720 ^ 0xffffffff) != -1) {
-                        if ((i_304_ ^ 0xffffffff) == -1
+                    if (Class291.anInt3720 != 0) {
+                        if (i_304_ == 0
                                 | Class296.aBoolean3767)
                             i_306_ |= 0x10;
                         i_305_ |= 0x1;
@@ -2511,8 +2402,7 @@ class Class237 {
                 if (!Class47.aBoolean845)
                     i_306_ |= 0x20;
                 int[][] is_307_
-                        = (is == null || (i_304_ ^ 0xffffffff) <= (is.length
-                        ^ 0xffffffff)
+                        = (is == null || is.length <= i_304_
                         ? this.anIntArrayArrayArray3122[i_304_]
                         : is[i_304_]);
                 Class348_Sub45.method3313
@@ -2534,7 +2424,7 @@ class Class237 {
 
     static final void method1686(int i) {
         int i_308_ = -110 / ((i - -74) / 44);
-        if ((Class348_Sub40_Sub29.anInt9372 ^ 0xffffffff) < -2)
+        if (Class348_Sub40_Sub29.anInt9372 > 1)
             Class316.aClass348_Sub51_3959.method3429((byte) 74,
                     (Class316
                             .aClass348_Sub51_3959
@@ -2563,8 +2453,7 @@ class Class237 {
              class348_sub41 != null;
              class348_sub41
                      = (Class348_Sub41) class333.method2646((byte) 117)) {
-            if ((class348_sub41.anInt7050 ^ 0xffffffff)
-                    == (i_309_ ^ 0xffffffff))
+            if (i_309_ == class348_sub41.anInt7050)
                 return Class324.method2570(1512932720,
                         (int) (class348_sub41
                                 .aLong4291));
@@ -2576,8 +2465,7 @@ class Class237 {
                           int i_313_) {
         if (i_312_ > 50) {
             for (int i_314_ = 0;
-                 ((i_314_ ^ 0xffffffff)
-                         > (this.anInt3130 ^ 0xffffffff));
+                 (this.anInt3130 > i_314_);
                  i_314_++)
                 method1678(i_313_, i_310_, i, -124, i_311_, i_314_);
             anInt3127++;

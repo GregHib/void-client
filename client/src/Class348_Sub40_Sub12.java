@@ -19,7 +19,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         if (i == 0) {
             int i_1_ = class348_sub49.method3387(255);
-            if ((i_1_ ^ 0xffffffff) != -1)
+            if (i_1_ != 0)
                 method3078(i_1_, i_0_ + -31111);
             else {
                 anIntArrayArray9194
@@ -166,11 +166,10 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
             int[] is_6_ = is[1];
             int[] is_7_ = is[2];
             for (int i_8_ = 0;
-                 ((i_8_ ^ 0xffffffff)
-                         > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff));
+                 (Class348_Sub40_Sub6.anInt9139 > i_8_);
                  i_8_++) {
                 int i_9_ = is_4_[i_8_] >> -1107729820;
-                if ((i_9_ ^ 0xffffffff) > -1)
+                if (i_9_ < 0)
                     i_9_ = 0;
                 if (i_9_ > 256)
                     i_9_ = 256;
@@ -218,10 +217,9 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
                             do {
                                 do {
                                     if (i_11_ != 1) {
-                                        if ((i_11_ ^ 0xffffffff) != -3) {
-                                            if ((i_11_ ^ 0xffffffff) != -4) {
-                                                if ((i_11_ ^ 0xffffffff)
-                                                        != -5) {
+                                        if (i_11_ != 2) {
+                                            if (i_11_ != 3) {
+                                                if (i_11_ != 4) {
                                                     if (i_11_ != 5) {
                                                         if (i_11_ != 6)
                                                             break while_156_;
@@ -436,7 +434,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
         if (i != -29547)
             method3076(-28, false);
         int i_12_ = anIntArrayArray9194.length;
-        if ((i_12_ ^ 0xffffffff) < -1) {
+        if (i_12_ > 0) {
             for (int i_13_ = 0; i_13_ < 257; i_13_++) {
                 int i_14_ = 0;
                 int i_15_ = i_13_ << -1331710044;
@@ -455,7 +453,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
                     i_18_ = is[3];
                 } else {
                     int[] is = anIntArrayArray9194[i_14_];
-                    if ((i_14_ ^ 0xffffffff) >= -1) {
+                    if (i_14_ <= 0) {
                         i_17_ = is[1];
                         i_18_ = is[3];
                         i_19_ = is[2];
@@ -476,14 +474,14 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
                 i_18_ >>= 4;
                 if (i_17_ < 0)
                     i_17_ = 0;
-                else if ((i_17_ ^ 0xffffffff) < -256)
+                else if (i_17_ > 255)
                     i_17_ = 255;
                 if (i_18_ >= 0) {
-                    if ((i_18_ ^ 0xffffffff) < -256)
+                    if (i_18_ > 255)
                         i_18_ = 255;
                 } else
                     i_18_ = 0;
-                if ((i_19_ ^ 0xffffffff) <= -1) {
+                if (i_19_ >= 0) {
                     if (i_19_ > 255)
                         i_19_ = 255;
                 } else

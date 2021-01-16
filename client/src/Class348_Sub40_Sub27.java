@@ -29,11 +29,10 @@ final class Class348_Sub40_Sub27 extends Class348_Sub40 {
             int[] is_10_ = is_3_[0];
             int[] is_11_ = is_3_[1];
             int[] is_12_ = is_3_[2];
-            for (int i_13_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_13_ ^ 0xffffffff)); i_13_++) {
+            for (int i_13_ = 0; (i_13_ < Class348_Sub40_Sub6.anInt9139); i_13_++) {
                 int i_14_ = is_1_[i_13_];
                 if (i_14_ != 4096) {
-                    if ((i_14_ ^ 0xffffffff) != -1) {
+                    if (i_14_ != 0) {
                         int i_15_ = 4096 + -i_14_;
                         is_4_[i_13_]
                                 = (is_10_[i_13_] * i_15_ + is_7_[i_13_] * i_14_
@@ -72,7 +71,7 @@ final class Class348_Sub40_Sub27 extends Class348_Sub40 {
                  i_20_++) {
                 int i_21_ = is_19_[i_20_];
                 if (i_21_ != 4096) {
-                    if ((i_21_ ^ 0xffffffff) == -1)
+                    if (i_21_ == 0)
                         is[i_20_] = is_18_[i_20_];
                     else
                         is[i_20_]

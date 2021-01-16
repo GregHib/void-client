@@ -48,7 +48,7 @@ abstract class Class285 implements Interface5 {
         anInt4756++;
         if (i != 0)
             this.aClass377_4759 = null;
-        if ((anInt4736 ^ 0xffffffff) == -1) {
+        if (anInt4736 == 0) {
             method2126((byte) -36);
             if (anInt4746 <= 0) {
                 anInt4736 = 2;
@@ -103,7 +103,7 @@ abstract class Class285 implements Interface5 {
         if (i != 23315)
             aClass323_4754 = null;
         anInt4749++;
-        if ((anInt4746 ^ 0xffffffff) < -1) {
+        if (anInt4746 > 0) {
             this.aClass377_4759.method3969(anInt4747, anInt4746,
                     3089);
             anInt4746 = -1;
@@ -114,7 +114,7 @@ abstract class Class285 implements Interface5 {
         anInt4758++;
         if (i != 27819)
             return 59L;
-        if ((anInt4746 ^ 0xffffffff) == -1)
+        if (anInt4746 == 0)
             return aNativeHeapBuffer4748.getAddress();
         return 0L;
     }
@@ -125,7 +125,7 @@ abstract class Class285 implements Interface5 {
         if (i != anInt4736) {
             if (anInt4746 > 0) {
                 OpenGL.glBindBufferARB(anInt4755, anInt4746);
-                if ((anInt4736 ^ 0xffffffff) != -2)
+                if (anInt4736 != 1)
                     bool = mapbuffer.b();
                 else
                     OpenGL.glBufferSubDataARBa(anInt4755, 0, anInt4739,
@@ -149,9 +149,9 @@ abstract class Class285 implements Interface5 {
 
     void method23(int i, int i_4_) {
         anInt4752++;
-        if ((anInt4739 ^ 0xffffffff) > (i_4_ ^ 0xffffffff)) {
+        if (i_4_ > anInt4739) {
             method2126((byte) -36);
-            if ((anInt4746 ^ 0xffffffff) >= -1)
+            if (anInt4746 <= 0)
                 aNativeHeapBuffer4748
                         = this.aClass377_4759.method3869((byte) 47,
                         false, i_4_);
@@ -194,7 +194,7 @@ abstract class Class285 implements Interface5 {
         anInt4757++;
         if (i != -36)
             anInt4736 = -3;
-        if ((anInt4746 ^ 0xffffffff) > -1) {
+        if (anInt4746 < 0) {
             if (!this.aClass377_4759.aBoolean9920)
                 anInt4746 = 0;
             else {

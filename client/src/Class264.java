@@ -42,18 +42,15 @@ final class Class264 {
         if (Class147.anInt2021 < 50
                 && (class17 != null
                 && class17.anIntArrayArray264 != null
-                && ((i ^ 0xffffffff)
-                > (class17.anIntArrayArray264.length
-                ^ 0xffffffff))
+                && (class17.anIntArrayArray264.length > i)
                 && class17.anIntArrayArray264[i] != null)) {
             int i_4_ = class17.anIntArrayArray264[i][0];
             int i_5_ = i_4_ >> 1426050504;
-            if ((class17.anIntArrayArray264[i].length ^ 0xffffffff)
-                    < -2) {
+            if (class17.anIntArrayArray264[i].length > 1) {
                 int i_6_ = (int) (Math.random()
                         * (double) (class17
                         .anIntArrayArray264[i]).length);
-                if ((i_6_ ^ 0xffffffff) < -1)
+                if (i_6_ > 0)
                     i_5_ = class17.anIntArrayArray264[i][i_6_];
             }
             int i_7_ = 0x7 & i_4_ >> -139443579;
@@ -98,32 +95,26 @@ final class Class264 {
         if (i_11_ > -8)
             return true;
         boolean bool;
-        if ((anInt3365 ^ 0xffffffff) != -1) {
+        if (anInt3365 != 0) {
             if (anInt3365 > 0
-                    && (i_9_ ^ 0xffffffff) < (this.anInt3370
-                    ^ 0xffffffff)) {
+                    && this.anInt3370 < i_9_) {
                 int i_13_ = anInt3365 * anInt3365 / (2 * i_10_);
                 int i_14_ = i_13_ + this.anInt3370;
-                bool = (i_9_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff)
-                        && (i_14_ ^ 0xffffffff) <= (this.anInt3370
-                        ^ 0xffffffff);
-            } else if (anInt3365 >= 0 || (this.anInt3370
-                    ^ 0xffffffff) >= (i_9_ ^ 0xffffffff))
+                bool = i_14_ < i_9_
+                        && this.anInt3370 <= i_14_;
+            } else if (anInt3365 >= 0 || i_9_ >= this.anInt3370)
                 bool = false;
             else {
                 int i_15_ = anInt3365 * anInt3365 / (2 * i_10_);
                 int i_16_ = this.anInt3370 - i_15_;
-                bool = (i_16_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff)
+                bool = i_9_ < i_16_
                         && i_16_ <= this.anInt3370;
             }
         } else {
-            if (((this.anInt3370 ^ 0xffffffff) > (i_9_
-                    ^ 0xffffffff)
+            if ((i_9_ > this.anInt3370
                     && i_9_ <= i_10_ + this.anInt3370)
                     || (i_9_ < this.anInt3370
-                    && ((i_9_ ^ 0xffffffff)
-                    <= (this.anInt3370 - i_10_
-                    ^ 0xffffffff)))) {
+                    && (this.anInt3370 - i_10_ <= i_9_))) {
                 this.anInt3370 = i_9_;
                 return false;
             }
@@ -136,30 +127,26 @@ final class Class264 {
                     anInt3365 = 0;
             } else {
                 anInt3365 -= i_10_;
-                if ((anInt3365 ^ 0xffffffff) > -1)
+                if (anInt3365 < 0)
                     anInt3365 = 0;
             }
         } else {
-            if ((i_9_ ^ 0xffffffff)
-                    >= (this.anInt3370 ^ 0xffffffff)) {
+            if (this.anInt3370 >= i_9_) {
                 anInt3365 -= i_10_;
                 if (i != 0 && anInt3365 < -i)
                     anInt3365 = -i;
             } else {
                 anInt3365 += i_10_;
-                if ((i ^ 0xffffffff) != -1
-                        && (anInt3365 ^ 0xffffffff) < (i ^ 0xffffffff))
+                if (i != 0
+                        && i < anInt3365)
                     anInt3365 = i;
             }
             if (i_12_ != anInt3365) {
                 int i_17_ = anInt3365 * anInt3365 / (2 * i_10_);
-                if ((this.anInt3370 ^ 0xffffffff)
-                        > (i_9_ ^ 0xffffffff)) {
-                    if ((this.anInt3370 - -i_17_ ^ 0xffffffff)
-                            < (i_9_ ^ 0xffffffff))
+                if (i_9_ > this.anInt3370) {
+                    if (i_9_ < this.anInt3370 - -i_17_)
                         anInt3365 = i_12_;
-                } else if ((i_9_ ^ 0xffffffff) > (this.anInt3370
-                        ^ 0xffffffff)
+                } else if (this.anInt3370 > i_9_
                         && i_9_ > this.anInt3370 - i_17_)
                     anInt3365 = i_12_;
             }

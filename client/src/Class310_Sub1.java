@@ -32,7 +32,7 @@ final class Class310_Sub1 extends Class310 implements Interface18_Impl2 {
         PixelBuffer pixelbuffer
                 = (this.aClass378_3893
                 .aPixelBuffer9803);
-        for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -7; i_0_++) {
+        for (int i_0_ = 0; i_0_ < 6; i_0_++) {
             int i_1_
                     = anIDirect3DCubeTexture6330.LockRect(i_0_, 0, 0, 0, anInt6329,
                     anInt6329, 0,
@@ -43,7 +43,7 @@ final class Class310_Sub1 extends Class310 implements Interface18_Impl2 {
                     pixelbuffer.a(is[i_0_], 0, 0, anInt6329 * anInt6329);
                 else {
                     for (int i_3_ = 0;
-                         (i_3_ ^ 0xffffffff) > (anInt6329 ^ 0xffffffff);
+                         anInt6329 > i_3_;
                          i_3_++)
                         pixelbuffer.a(is[i_0_], anInt6329 * i_3_, i_3_ * i_2_,
                                 anInt6329);

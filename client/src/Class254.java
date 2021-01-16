@@ -28,7 +28,7 @@ final class Class254 {
         anInt3262++;
         if (bool != false)
             return true;
-        return (aChar3259 ^ 0xffffffff) == -116;
+        return aChar3259 == 115;
     }
 
     public static void method1926(int i) {
@@ -40,7 +40,7 @@ final class Class254 {
     private final void method1927(boolean bool, Class348_Sub49 class348_sub49,
                                   int i) {
         anInt3257++;
-        if ((i ^ 0xffffffff) != -2) {
+        if (i != 1) {
             if (i == 2)
                 this.anInt3256
                         = class348_sub49.method3385((byte) -126);

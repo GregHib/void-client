@@ -33,7 +33,7 @@ final class Class348_Sub13 extends Class348 {
                     ^ l >>> -612505656);
             l = ls[(int) (0xffL & (l ^ (long) i))] ^ l >>> 2087460680;
             for (int i_8_ = 0;
-                 (i_8_ ^ 0xffffffff) > (is_6_.length ^ 0xffffffff); i_8_++) {
+                 is_6_.length > i_8_; i_8_++) {
                 l = (ls[(int) (0xffL
                         & (l ^ (long) (is_6_[i_8_] >> 1458625336)))]
                         ^ l >>> -1571777848);
@@ -82,14 +82,11 @@ final class Class348_Sub13 extends Class348 {
                     && class225.anIntArray2906 != null) {
                 is = new int[class225.anIntArray2906.length];
                 for (int i_16_ = 0;
-                     ((class225.anIntArray2906.length
-                             ^ 0xffffffff)
-                             < (i_16_ ^ 0xffffffff));
+                     (i_16_ < class225.anIntArray2906.length);
                      i_16_++) {
                     int i_17_ = class225.anIntArray2906[i_16_];
-                    if ((i_17_ ^ 0xffffffff) <= -1
-                            && (this.anIntArray6757.length
-                            ^ 0xffffffff) < (i_17_ ^ 0xffffffff))
+                    if (i_17_ >= 0
+                            && i_17_ < this.anIntArray6757.length)
                         is[i_16_]
                                 = this.anIntArray6757[i_17_];
                     else
@@ -126,7 +123,7 @@ final class Class348_Sub13 extends Class348 {
                     i_24_ = class17.anIntArray267[i_10_];
                     int i_27_ = i_23_ >>> -1808250608;
                     i_23_ &= 0xffff;
-                    if ((i_26_ ^ 0xffffffff) == (i_27_ ^ 0xffffffff))
+                    if (i_27_ == i_26_)
                         class348_sub42_sub17_25_ = class348_sub42_sub17;
                     else
                         class348_sub42_sub17_25_
@@ -175,9 +172,9 @@ final class Class348_Sub13 extends Class348 {
                     return null;
                 Class124[] class124s = new Class124[is.length];
                 for (int i_31_ = 0;
-                     (is.length ^ 0xffffffff) < (i_31_ ^ 0xffffffff);
+                     i_31_ < is.length;
                      i_31_++) {
-                    if ((is[i_31_] ^ 0xffffffff) != 0)
+                    if (is[i_31_] != -1)
                         class124s[i_31_]
                                 = Exception_Sub1.aClass255_112.method1940
                                 (Class348_Sub21.method2955(i_14_, -112),
@@ -187,9 +184,7 @@ final class Class348_Sub13 extends Class348 {
                 if (class225 != null
                         && class225.anIntArrayArray2939 != null) {
                     for (int i_32_ = 0;
-                         ((i_32_ ^ 0xffffffff)
-                                 > (class225.anIntArrayArray2939.length
-                                 ^ 0xffffffff));
+                         (class225.anIntArrayArray2939.length > i_32_);
                          i_32_++) {
                         if ((class225.anIntArrayArray2939[i_32_]
                                 != null)
@@ -206,8 +201,8 @@ final class Class348_Sub13 extends Class348 {
                                     .anIntArrayArray2939[i_32_][4]);
                             int i_38_ = (class225
                                     .anIntArrayArray2939[i_32_][5]);
-                            if ((i_36_ ^ 0xffffffff) != -1 || i_37_ != 0
-                                    || (i_38_ ^ 0xffffffff) != -1)
+                            if (i_36_ != 0 || i_37_ != 0
+                                    || i_38_ != 0)
                                 class124s[i_32_].method1107(6875, i_37_, i_38_,
                                         i_36_);
                             if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0)
@@ -228,11 +223,8 @@ final class Class348_Sub13 extends Class348 {
                              i_40_ < (Class367_Sub2
                                      .aShortArrayArrayArray7290).length;
                              i_40_++) {
-                            if (((Class367_Sub2.aShortArrayArrayArray7290
-                                    [i_40_][i_39_]).length
-                                    ^ 0xffffffff)
-                                    < (class154.anIntArray2095[i_39_]
-                                    ^ 0xffffffff))
+                            if (class154.anIntArray2095[i_39_] < (Class367_Sub2.aShortArrayArrayArray7290
+                                    [i_40_][i_39_]).length)
                                 class64.ia((Class136.aShortArrayArray4791
                                                 [i_40_][i_39_]),
                                         (Class367_Sub2

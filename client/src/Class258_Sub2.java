@@ -54,7 +54,7 @@ final class Class258_Sub2 extends Class258 {
         try {
             this.anInt8538 = i_6_;
             this.aHa_Sub2_4851.method3771((byte) -127, this);
-            for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > -7; i_8_++)
+            for (int i_8_ = 0; i_8_ < 6; i_8_++)
                 OpenGL.glTexImage2Dub(i_8_ + 34069, 0,
                         this.anInt4858, i_6_, i_6_,
                         0, i_7_, 5121, is[i_8_], 0);
@@ -78,7 +78,7 @@ final class Class258_Sub2 extends Class258 {
             this.anInt8538 = i_9_;
             this.aHa_Sub2_4851.method3771((byte) -77, this);
             if (bool) {
-                for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -7; i_10_++)
+                for (int i_10_ = 0; i_10_ < 6; i_10_++)
                     Class353.method3460(i_10_ + 34069,
                             this.anInt4858, i_9_,
                             this

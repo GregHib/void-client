@@ -24,9 +24,7 @@ final class Class32 {
                  class348_sub42 != aClass348_Sub42_454;
                  aClass348_Sub42_454 = (aClass348_Sub42_454
                          .aClass348_Sub42_7063)) {
-                if ((l ^ 0xffffffffffffffffL)
-                        == (aClass348_Sub42_454.aLong7057
-                        ^ 0xffffffffffffffffL)) {
+                if (aClass348_Sub42_454.aLong7057 == l) {
                     Class348_Sub42 class348_sub42_0_ = aClass348_Sub42_454;
                     aClass348_Sub42_454
                             = (aClass348_Sub42_454
@@ -98,9 +96,7 @@ final class Class32 {
              class348_sub42 != aClass348_Sub42_454;
              aClass348_Sub42_454 = (aClass348_Sub42_454
                      .aClass348_Sub42_7063)) {
-            if ((aClass348_Sub42_454.aLong7057
-                    ^ 0xffffffffffffffffL)
-                    == (aLong453 ^ 0xffffffffffffffffL)) {
+            if (aLong453 == aClass348_Sub42_454.aLong7057) {
                 Class348_Sub42 class348_sub42_3_ = aClass348_Sub42_454;
                 aClass348_Sub42_454 = (aClass348_Sub42_454
                         .aClass348_Sub42_7063);

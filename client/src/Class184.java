@@ -43,8 +43,7 @@ final class Class184 {
                     = new Class110_Sub1[Class225.anInt2956];
             int i_2_ = 0;
             for (int i_3_ = Class318_Sub1_Sub2.anInt8731;
-                 ((i_3_ ^ 0xffffffff)
-                         >= (Class239_Sub29.anInt6151 ^ 0xffffffff));
+                 (Class239_Sub29.anInt6151 >= i_3_);
                  i_3_++) {
                 Class110_Sub1 class110_sub1
                         = Class239_Sub5.method1742(false, i_3_);
@@ -96,8 +95,7 @@ final class Class184 {
                                         class348_sub27.anInt6896,
                                         (aClass2478 != null ? aClass2478
                                                 : (aClass2478 = method1389("Interface10"))))));
-            if ((class348_sub27.anInt6904 ^ 0xffffffff)
-                    == -4)
+            if (class348_sub27.anInt6904 == 3)
                 interface10
                         = ((Interface10)
                         (Class348_Sub16_Sub3.method2878

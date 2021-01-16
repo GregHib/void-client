@@ -30,19 +30,16 @@ final class Class90 {
         Class322.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(125, i_0_);
         Class299.aClass348_Sub49_Sub2_3813.method3417(-122);
-        for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -5; i_3_++) {
+        for (int i_3_ = 0; i_3_ < 4; i_3_++) {
             for (int i_4_ = 0;
-                 ((i_4_ ^ 0xffffffff)
-                         > (Class367_Sub4.anInt7319 >> 615048547 ^ 0xffffffff));
+                 (Class367_Sub4.anInt7319 >> 615048547 > i_4_);
                  i_4_++) {
                 for (int i_5_ = 0;
-                     ((Class348_Sub40_Sub3.anInt9109 >> -410724637
-                             ^ 0xffffffff)
-                             < (i_5_ ^ 0xffffffff));
+                     (i_5_ < Class348_Sub40_Sub3.anInt9109 >> -410724637);
                      i_5_++) {
                     int i_6_ = Class299.aClass348_Sub49_Sub2_3813
                             .method3410((byte) -24, 1);
-                    if ((i_6_ ^ 0xffffffff) != -2)
+                    if (i_6_ != 1)
                         Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_]
                                 = -1;
                     else
@@ -60,7 +57,7 @@ final class Class90 {
         int i_8_ = 0;
         if (i != 99)
             method852(-55);
-        for (/**/; (i_7_ ^ 0xffffffff) < (i_8_ ^ 0xffffffff); i_8_++) {
+        for (/**/; i_8_ < i_7_; i_8_++) {
             for (int i_9_ = 0; i_9_ < 4; i_9_++)
                 Class239_Sub6.anIntArrayArray5894[i_8_][i_9_]
                         = Class299.aClass348_Sub49_Sub2_3813
@@ -78,10 +75,9 @@ final class Class90 {
         Class14_Sub4.aByteArrayArray8642 = new byte[i_7_][];
         Class347.aByteArrayArray4281 = new byte[i_7_][];
         i_7_ = 0;
-        for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -5; i_10_++) {
+        for (int i_10_ = 0; i_10_ < 4; i_10_++) {
             for (int i_11_ = 0;
-                 ((i_11_ ^ 0xffffffff)
-                         > (Class367_Sub4.anInt7319 >> -1281045661 ^ 0xffffffff));
+                 (Class367_Sub4.anInt7319 >> -1281045661 > i_11_);
                  i_11_++) {
                 for (int i_12_ = 0;
                      i_12_ < Class348_Sub40_Sub3.anInt9109 >> -192444093;
@@ -93,16 +89,14 @@ final class Class90 {
                         int i_15_ = (i_13_ & 0x3ff9) >> -1151168317;
                         int i_16_ = i_15_ / 8 + (i_14_ / 8 << -498087576);
                         for (int i_17_ = 0;
-                             (i_17_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff);
+                             i_7_ > i_17_;
                              i_17_++) {
-                            if ((Class348_Sub23_Sub3.anIntArray9042[i_17_]
-                                    ^ 0xffffffff)
-                                    == (i_16_ ^ 0xffffffff)) {
+                            if (i_16_ == Class348_Sub23_Sub3.anIntArray9042[i_17_]) {
                                 i_16_ = -1;
                                 break;
                             }
                         }
-                        if ((i_16_ ^ 0xffffffff) != 0) {
+                        if (i_16_ != -1) {
                             Class348_Sub23_Sub3.anIntArray9042[i_7_] = i_16_;
                             int i_18_ = 0xff & i_16_ >> 1924313768;
                             int i_19_ = 0xff & i_16_;

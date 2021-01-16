@@ -64,15 +64,13 @@ final class Class314_Sub1 extends Class314 {
                  class348 = aClass262_6369.method1990((byte) 112)) {
                 int i_0_ = (int) class348.aLong4291;
                 if (i_0_ < 0
-                        || ((i_0_ ^ 0xffffffff)
-                        <= (aClass291_6342.anInt3734
-                        ^ 0xffffffff))
+                        || (aClass291_6342.anInt3734 <= i_0_)
                         || aClass291_6342.anIntArray3725[i_0_] == 0)
                     class348.method2715((byte) 37);
                 else {
-                    if ((aByteArray6351[i_0_] ^ 0xffffffff) == -1)
+                    if (aByteArray6351[i_0_] == 0)
                         method2350(i_0_, (byte) 65, 1);
-                    if ((aByteArray6351[i_0_] ^ 0xffffffff) == 0)
+                    if (aByteArray6351[i_0_] == -1)
                         method2350(i_0_, (byte) 65, 2);
                     if (aByteArray6351[i_0_] == 1)
                         class348.method2715((byte) 29);
@@ -99,12 +97,8 @@ final class Class314_Sub1 extends Class314 {
                     else
                         bool = false;
                 }
-                while ((anInt6373 ^ 0xffffffff)
-                        > (aClass291_6342.anIntArray3725.length
-                        ^ 0xffffffff)) {
-                    if ((aClass291_6342.anIntArray3725[anInt6373]
-                            ^ 0xffffffff)
-                            == -1)
+                while (aClass291_6342.anIntArray3725.length > anInt6373) {
+                    if (aClass291_6342.anIntArray3725[anInt6373] == 0)
                         anInt6373++;
                     else {
                         if (aClass112_6354.anInt1734 >= 250) {
@@ -113,7 +107,7 @@ final class Class314_Sub1 extends Class314 {
                         }
                         if (aByteArray6351[anInt6373] == 0)
                             method2350(anInt6373, (byte) 65, 1);
-                        if ((aByteArray6351[anInt6373] ^ 0xffffffff) == -1) {
+                        if (aByteArray6351[anInt6373] == 0) {
                             Class348 class348 = new Class348();
                             class348.aLong4291 = anInt6373;
                             aClass262_6372.method1999(class348, -20180);
@@ -132,19 +126,15 @@ final class Class314_Sub1 extends Class314 {
                      class348 != null;
                      class348 = aClass262_6372.method1990((byte) 43)) {
                     int i_2_ = (int) class348.aLong4291;
-                    if ((aByteArray6351[i_2_] ^ 0xffffffff) != -2)
+                    if (aByteArray6351[i_2_] != 1)
                         method2350(i_2_, (byte) 65, 2);
                     if (aByteArray6351[i_2_] != 1)
                         bool = false;
                     else
                         class348.method2715((byte) 60);
                 }
-                while ((anInt6373 ^ 0xffffffff)
-                        > (aClass291_6342.anIntArray3725.length
-                        ^ 0xffffffff)) {
-                    if ((aClass291_6342.anIntArray3725[anInt6373]
-                            ^ 0xffffffff)
-                            == -1)
+                while (aClass291_6342.anIntArray3725.length > anInt6373) {
+                    if (aClass291_6342.anIntArray3725[anInt6373] == 0)
                         anInt6373++;
                     else {
                         if (aClass248_6347.method1899(-124)) {
@@ -153,7 +143,7 @@ final class Class314_Sub1 extends Class314 {
                         }
                         if (aByteArray6351[anInt6373] != 1)
                             method2350(anInt6373, (byte) 65, 2);
-                        if ((aByteArray6351[anInt6373] ^ 0xffffffff) != -2) {
+                        if (aByteArray6351[anInt6373] != 1) {
                             Class348 class348 = new Class348();
                             class348.aLong4291 = anInt6373;
                             bool = false;
@@ -259,9 +249,8 @@ final class Class314_Sub1 extends Class314 {
             return "";
         if (((Class316.aClass348_Sub42_Sub12_3963
                 .aString9601) == null
-                || (Class316.aClass348_Sub42_Sub12_3963
-                .aString9601.length()
-                ^ 0xffffffff) == -1)
+                || Class316.aClass348_Sub42_Sub12_3963
+                .aString9601.length() == 0)
                 && (Class316.aClass348_Sub42_Sub12_3963
                 .aString9595) != null
                 && Class316.aClass348_Sub42_Sub12_3963
@@ -283,7 +272,7 @@ final class Class314_Sub1 extends Class314 {
         } else {
             int i_7_ = Class284.method2116(-26584);
             if (i_7_ > 100) {
-                if ((i_7_ ^ 0xffffffff) >= -501) {
+                if (i_7_ <= 500) {
                     i_6_ = 3;
                     Class47.method447((byte) -59);
                 } else if (i_7_ <= 1000) {
@@ -362,14 +351,14 @@ final class Class314_Sub1 extends Class314 {
                     class348_sub42_sub16
                             = aClass112_6354.method1055(aClass137_6365, i,
                             (byte) -110);
-            } else if ((i_10_ ^ 0xffffffff) == -2) {
+            } else if (i_10_ == 1) {
                 if (aClass137_6365 == null)
                     throw new RuntimeException();
                 class348_sub42_sub16
                         = aClass112_6354.method1054(aClass137_6365, i,
                         (byte) -112);
             } else {
-                if ((i_10_ ^ 0xffffffff) != -3)
+                if (i_10_ != 2)
                     throw new RuntimeException();
                 if (aClass137_6365 == null)
                     throw new RuntimeException();
@@ -394,9 +383,7 @@ final class Class314_Sub1 extends Class314 {
                 Class287.aCRC32_3691.reset();
                 Class287.aCRC32_3691.update(is, 0, -2 + is.length);
                 int i_11_ = (int) Class287.aCRC32_3691.getValue();
-                if ((i_11_ ^ 0xffffffff)
-                        != (aClass291_6342.anIntArray3729[i]
-                        ^ 0xffffffff))
+                if (aClass291_6342.anIntArray3729[i] != i_11_)
                     throw new RuntimeException();
                 if (aClass291_6342.aByteArrayArray3730 != null
                         && (aClass291_6342.aByteArrayArray3730[i]
@@ -406,9 +393,8 @@ final class Class314_Sub1 extends Class314 {
                     byte[] is_13_
                             = Class348_Sub1_Sub2.method2730(i_9_ ^ 0x1196, 0, is,
                             is.length + -2);
-                    for (int i_14_ = 0; (i_14_ ^ 0xffffffff) > -65; i_14_++) {
-                        if ((is_13_[i_14_] ^ 0xffffffff)
-                                != (is_12_[i_14_] ^ 0xffffffff))
+                    for (int i_14_ = 0; i_14_ < 64; i_14_++) {
+                        if (is_12_[i_14_] != is_13_[i_14_])
                             throw new RuntimeException();
                     }
                 }
@@ -434,7 +420,7 @@ final class Class314_Sub1 extends Class314 {
                     = (byte) aClass291_6342.anIntArray3722[i];
             if (aClass137_6365 != null) {
                 aClass112_6354.method1049(is, aClass137_6365, (byte) 10, i);
-                if ((aByteArray6351[i] ^ 0xffffffff) != -2) {
+                if (aByteArray6351[i] != 1) {
                     anInt6361++;
                     aByteArray6351[i] = (byte) 1;
                 }
@@ -444,13 +430,12 @@ final class Class314_Sub1 extends Class314 {
             return class348_sub42_sub16;
         }
         try {
-            if (is == null || (is.length ^ 0xffffffff) >= -3)
+            if (is == null || is.length <= 2)
                 throw new RuntimeException();
             Class287.aCRC32_3691.reset();
             Class287.aCRC32_3691.update(is, 0, is.length + -2);
             int i_15_ = (int) Class287.aCRC32_3691.getValue();
-            if ((aClass291_6342.anIntArray3729[i] ^ 0xffffffff)
-                    != (i_15_ ^ 0xffffffff))
+            if (i_15_ != aClass291_6342.anIntArray3729[i])
                 throw new RuntimeException();
             if (aClass291_6342.aByteArrayArray3730 != null
                     && (aClass291_6342.aByteArrayArray3730[i]
@@ -460,9 +445,8 @@ final class Class314_Sub1 extends Class314 {
                 byte[] is_17_
                         = Class348_Sub1_Sub2.method2730(i_9_ + 4502, 0, is,
                         is.length - 2);
-                for (int i_18_ = 0; (i_18_ ^ 0xffffffff) > -65; i_18_++) {
-                    if ((is_16_[i_18_] ^ 0xffffffff)
-                            != (is_17_[i_18_] ^ 0xffffffff))
+                for (int i_18_ = 0; i_18_ < 64; i_18_++) {
+                    if (is_17_[i_18_] != is_16_[i_18_])
                         throw new RuntimeException();
                 }
             }
@@ -524,8 +508,7 @@ final class Class314_Sub1 extends Class314 {
                         throw new RuntimeException();
                     aClass291_6342
                             = new Class291(is, anInt6344, aByteArray6346);
-                    if ((aClass291_6342.anInt3732 ^ 0xffffffff)
-                            != (anInt6352 ^ 0xffffffff))
+                    if (anInt6352 != aClass291_6342.anInt3732)
                         throw new RuntimeException();
                     break;
                 } catch (RuntimeException runtimeexception) {
@@ -569,7 +552,7 @@ final class Class314_Sub1 extends Class314 {
     static final boolean method2352(int i, int i_20_, int i_21_) {
         anInt6358++;
         int i_22_ = -38 / ((60 - i) / 40);
-        return (0x10 & i_21_ ^ 0xffffffff) != -1;
+        return (0x10 & i_21_) != 0;
     }
 
     Class314_Sub1(int i, Class137 class137, Class137 class137_23_,

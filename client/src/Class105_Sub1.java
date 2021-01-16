@@ -49,9 +49,9 @@ final class Class105_Sub1 extends Class105 {
         anInt8397 = i_2_;
         anInt8400 = i;
         anInt8416 = i_1_;
-        aBoolean8418 = (anInt8400 != 0 || (anInt8419 ^ 0xffffffff) != -1
-                || (anInt8416 ^ 0xffffffff) != -1
-                || (anInt8397 ^ 0xffffffff) != -1);
+        aBoolean8418 = (anInt8400 != 0 || anInt8419 != 0
+                || anInt8416 != 0
+                || anInt8397 != 0);
     }
 
     private final void method986(int i, int i_3_, int i_4_, int i_5_, int[] is,
@@ -114,8 +114,7 @@ final class Class105_Sub1 extends Class105 {
         Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-114);
         Class101_Sub2 class101_sub2_20_ = aHa_Sub3_8407.method3820(false);
         anInterface18_Impl3_8403.method64(((aBoolean8410 || aBoolean8408
-                        || ((0x1 & i_19_ ^ 0xffffffff)
-                        == -1))
+                        || ((0x1 & i_19_) == 0))
                         ? Class206.aClass209_4874
                         : Class71.aClass209_1212),
                 -22095);
@@ -181,9 +180,9 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
         aHa_Sub3_8407.method3894(-28186, i_39_);
         boolean bool
-                = aBoolean8391 && anInt8419 == 0 && (anInt8397 ^ 0xffffffff) == -1;
-        boolean bool_42_ = (aBoolean8396 && (anInt8400 ^ 0xffffffff) == -1
-                && (anInt8416 ^ 0xffffffff) == -1);
+                = aBoolean8391 && anInt8419 == 0 && anInt8397 == 0;
+        boolean bool_42_ = (aBoolean8396 && anInt8400 == 0
+                && anInt8416 == 0);
         if (!(bool_42_ & bool)) {
             if (bool_42_) {
                 int i_43_ = i_37_ + i_35_;
@@ -206,7 +205,7 @@ final class Class105_Sub1 extends Class105 {
                     i_45_ += i_44_;
                     aHa_Sub3_8407.method3933(-57);
                 }
-                if ((i_45_ ^ 0xffffffff) > (i_43_ ^ 0xffffffff)) {
+                if (i_43_ > i_45_) {
                     int i_47_ = i_43_ - i_45_;
                     class101_sub2_41_.method932
                             (1.0F,
@@ -241,7 +240,7 @@ final class Class105_Sub1 extends Class105 {
                             Class239_Sub18.aClass251_6030);
                     int i_54_ = anInt8400 + i;
                     for (int i_55_ = i_54_ - -anInt8411;
-                         (i_49_ ^ 0xffffffff) <= (i_55_ ^ 0xffffffff);
+						 i_55_ <= i_49_;
                          i_55_ += i_50_) {
                         class101_sub2.method932(0.0F, (float) anInt8417,
                                 (float) anInt8411, (byte) -65);
@@ -270,7 +269,7 @@ final class Class105_Sub1 extends Class105 {
                     i_53_ += i_51_;
                     i_52_ += i_51_;
                 }
-                if ((i_48_ ^ 0xffffffff) < (i_52_ ^ 0xffffffff)) {
+                if (i_52_ < i_48_) {
                     int i_57_ = i_48_ + -i_52_;
                     class101_sub2_41_.method932
                             (1.0F,
@@ -292,7 +291,7 @@ final class Class105_Sub1 extends Class105 {
                         i_59_ += i_50_;
                         aHa_Sub3_8407.method3933(-69);
                     }
-                    if ((i_58_ ^ 0xffffffff) > (i_49_ ^ 0xffffffff)) {
+                    if (i_49_ > i_58_) {
                         int i_60_ = i_49_ - i_58_;
                         class101_sub2_41_.method932
                                 (1.0F,
@@ -436,9 +435,9 @@ final class Class105_Sub1 extends Class105 {
         int[] is_79_ = new int[anInt8417 * anInt8411];
         anInterface18_Impl3_8403.method65(0, is_79_, anInt8411, 0, anInt8417,
                 (byte) 112, 0);
-        if ((i_78_ ^ 0xffffffff) == -1) {
+        if (i_78_ == 0) {
             for (int i_80_ = 0;
-                 (i_80_ ^ 0xffffffff) > (anInt8417 ^ 0xffffffff); i_80_++) {
+				 anInt8417 > i_80_; i_80_++) {
                 int i_81_ = i_80_ * anInt8411;
                 for (int i_82_ = 0; i_82_ < anInt8411; i_82_++)
                     is_79_[i_81_ + i_82_]
@@ -451,7 +450,7 @@ final class Class105_Sub1 extends Class105 {
             }
         } else if (i_78_ == 1) {
             for (int i_83_ = 0;
-                 (i_83_ ^ 0xffffffff) > (anInt8417 ^ 0xffffffff); i_83_++) {
+				 anInt8417 > i_83_; i_83_++) {
                 int i_84_ = i_83_ * anInt8411;
                 for (int i_85_ = 0; anInt8411 > i_85_; i_85_++)
                     is_79_[i_85_ + i_84_]
@@ -461,10 +460,10 @@ final class Class105_Sub1 extends Class105 {
                                     (Class139.method1166(is[i_84_ - -i_85_], 743571200)
                                             << -86836496)));
             }
-        } else if ((i_78_ ^ 0xffffffff) != -3) {
+        } else if (i_78_ != 2) {
             if (i_78_ == 3) {
                 for (int i_86_ = 0;
-                     (i_86_ ^ 0xffffffff) > (anInt8417 ^ 0xffffffff);
+					 anInt8417 > i_86_;
                      i_86_++) {
                     int i_87_ = i_86_ * anInt8411;
                     for (int i_88_ = 0; i_88_ < anInt8411; i_88_++)
@@ -479,7 +478,7 @@ final class Class105_Sub1 extends Class105 {
             for (int i_89_ = 0; anInt8417 > i_89_; i_89_++) {
                 int i_90_ = i_89_ * anInt8411;
                 for (int i_91_ = 0;
-                     (anInt8411 ^ 0xffffffff) < (i_91_ ^ 0xffffffff); i_91_++)
+					 i_91_ < anInt8411; i_91_++)
                     is_79_[i_90_ + i_91_]
                             = (Class273.method2057
                             (Class139.method1166(is_79_[i_90_ + i_91_],
@@ -507,8 +506,7 @@ final class Class105_Sub1 extends Class105 {
         Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-95);
         Class101_Sub2 class101_sub2_101_ = aHa_Sub3_8407.method3820(false);
         anInterface18_Impl3_8403.method64(((aBoolean8410 || aBoolean8408
-                        || ((i_100_ & 0x1 ^ 0xffffffff)
-                        == -1))
+                        || ((i_100_ & 0x1) == 0))
                         ? Class206.aClass209_4874
                         : Class71.aClass209_1212),
                 -22095);
@@ -663,10 +661,8 @@ final class Class105_Sub1 extends Class105 {
                 (bool ? Class108.aClass304_1662
                         : Class348_Sub45.aClass304_7103));
         anInterface18_Impl3_8403.method66(true, true, 25688);
-        aBoolean8410 = ((anInterface18_Impl3_8403.method69(false) ^ 0xffffffff)
-                != (i ^ 0xffffffff));
-        aBoolean8408 = ((anInterface18_Impl3_8403.method72(-39) ^ 0xffffffff)
-                != (i_118_ ^ 0xffffffff));
+        aBoolean8410 = (i != anInterface18_Impl3_8403.method69(false));
+        aBoolean8408 = (i_118_ != anInterface18_Impl3_8403.method72(-39));
         aBoolean8396 = !aBoolean8410 && anInterface18_Impl3_8403.method73(97);
         aBoolean8391 = !aBoolean8408 && anInterface18_Impl3_8403.method73(119);
     }
@@ -683,8 +679,7 @@ final class Class105_Sub1 extends Class105 {
                     = var_ha_Sub3.method3830(i, is, false, (byte) -116, i_120_,
                     i_121_, i_119_);
             anInterface18_Impl3_8403.method66(true, true, 25688);
-            aBoolean8410 = (anInterface18_Impl3_8403.method69(false)
-                    ^ 0xffffffff) != (i ^ 0xffffffff);
+            aBoolean8410 = i != anInterface18_Impl3_8403.method69(false);
             aBoolean8408 = anInterface18_Impl3_8403.method72(-74) != i_119_;
             aBoolean8396
                     = !aBoolean8410 && anInterface18_Impl3_8403.method73(91);

@@ -30,7 +30,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
                 [this.anInt7197])
                 - aClass77_9756.method778((byte) 19))
                 & 0xff);
-        return (i_0_ ^ 0xffffffff) <= -129;
+        return i_0_ >= 128;
     }
 
     static final int method3405(int i, boolean bool) {
@@ -87,7 +87,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
 
     final void method3409(int i, byte[] is, int i_6_, int i_7_) {
         if (i_7_ == -32769) {
-            for (int i_8_ = 0; (i ^ 0xffffffff) < (i_8_ ^ 0xffffffff); i_8_++)
+            for (int i_8_ = 0; i_8_ < i; i_8_++)
                 is[i_6_ + i_8_]
                         = (byte) ((this.aByteArray7154
                         [this.anInt7197++])

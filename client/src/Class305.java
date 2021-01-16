@@ -27,14 +27,14 @@ final class Class305 {
     private final Class72 aClass72_3871;
 
     final boolean method2292(int i, ha var_ha, int i_0_) {
-        if ((i_0_ ^ 0xffffffff) != (anInt3859 ^ 0xffffffff)) {
+        if (anInt3859 != i_0_) {
             anInt3859 = i_0_;
             int i_1_ = Class348_Sub40_Sub1.method3051(i_0_, 4096);
             if (i_1_ > 512)
                 i_1_ = 512;
-            if ((i_1_ ^ 0xffffffff) >= -1)
+            if (i_1_ <= 0)
                 i_1_ = 1;
-            if ((anInt3863 ^ 0xffffffff) != (i_1_ ^ 0xffffffff)) {
+            if (i_1_ != anInt3863) {
                 aClass105_3867 = null;
                 anInt3863 = i_1_;
             }
@@ -60,7 +60,7 @@ final class Class305 {
         boolean bool = false;
         if (aBoolean3857) {
             aBoolean3857 = false;
-            for (int i_3_ = -1 + anInt3852; (i_3_ ^ 0xffffffff) <= -1;
+            for (int i_3_ = -1 + anInt3852; i_3_ >= 0;
                  i_3_--) {
                 boolean bool_4_
                         = aClass72Array3865[i_3_].method736(var_ha, aClass72_3871);
@@ -77,11 +77,11 @@ final class Class305 {
                           int i_13_) {
         i_10_ = 0x3fff & i + i_10_;
         anInt3860++;
-        if ((anInt3858 ^ 0xffffffff) != 0 && (anInt3863 ^ 0xffffffff) != -1) {
+        if (anInt3858 != -1 && anInt3863 != 0) {
             Class12 class12 = Class101_Sub1.aD5684.method3(anInt3858, -6662);
             if (aClass105_3867 == null
                     && Class101_Sub1.aD5684.method4(-7953, anInt3858)) {
-                int[] is = ((class12.anInt200 ^ 0xffffffff) == -3
+                int[] is = (class12.anInt200 == 2
                         ? Class101_Sub1.aD5684.method6(-21540, anInt3863,
                         0.7F, anInt3858,
                         false, anInt3863)
@@ -91,7 +91,7 @@ final class Class305 {
                 aClass105_3867 = var_ha.method3662(anInt3863, is, (byte) 94, 0,
                         anInt3863, anInt3863);
             }
-            if ((class12.anInt200 ^ 0xffffffff) == -3)
+            if (class12.anInt200 == 2)
                 var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
             if (aClass105_3867 != null) {
                 int i_14_ = class12.anInt200 == 2 ? 1 : 0;
@@ -111,10 +111,10 @@ final class Class305 {
                     /* empty */
                 }
                 for (int i_17_ = -i_13_ + i_16_;
-                     (i_17_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff);
+                     i_8_ > i_17_;
                      i_17_ += i_13_) {
                     for (int i_18_ = i_15_ + -i_13_;
-                         (i_13_ ^ 0xffffffff) < (i_18_ ^ 0xffffffff);
+                         i_18_ < i_13_;
                          i_18_ += i_13_)
                         aClass105_3867.method970(i_7_ + i_17_, i_18_ + i_9_,
                                 i_13_, i_13_, 1, 0, i_14_);
@@ -148,7 +148,7 @@ final class Class305 {
     static final void method2296(int i) {
         anInt3868++;
         if (i < -46) {
-            for (int i_22_ = 0; (i_22_ ^ 0xffffffff) > -101; i_22_++)
+            for (int i_22_ = 0; i_22_ < 100; i_22_++)
                 Class318_Sub2.aClass147Array6400[i_22_] = null;
             za_Sub1.anInt9774 = 0;
         }

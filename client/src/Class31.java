@@ -106,27 +106,27 @@ final class Class31 {
                                  int i_1_) {
         if (i_1_ != 1) {
             if (i_1_ != 2) {
-                if ((i_1_ ^ 0xffffffff) == -4)
+                if (i_1_ == 3)
                     anInt421 = class348_sub49.method3330(842397944);
-                else if ((i_1_ ^ 0xffffffff) != -5) {
-                    if ((i_1_ ^ 0xffffffff) == -6)
+                else if (i_1_ != 4) {
+                    if (i_1_ == 5)
                         anInt433 = class348_sub49.method3330(842397944);
                     else if (i_1_ == 6)
                         anInt439 = class348_sub49.method3330(842397944);
                     else if (i_1_ != 7) {
-                        if ((i_1_ ^ 0xffffffff) != -9) {
-                            if ((i_1_ ^ 0xffffffff) != -10) {
+                        if (i_1_ != 8) {
+                            if (i_1_ != 9) {
                                 if (i_1_ != 10) {
-                                    if ((i_1_ ^ 0xffffffff) == -12)
+                                    if (i_1_ == 11)
                                         this.anInt426 = 0;
                                     else if (i_1_ == 12)
                                         this.anInt431
                                                 = class348_sub49.method3387(255);
-                                    else if ((i_1_ ^ 0xffffffff) == -14)
+                                    else if (i_1_ == 13)
                                         this.anInt420
                                                 = class348_sub49
                                                 .method3372(i ^ ~0x3547);
-                                    else if ((i_1_ ^ 0xffffffff) == -15)
+                                    else if (i_1_ == 14)
                                         this.anInt426
                                                 = class348_sub49
                                                 .method3330(842397944);
@@ -185,7 +185,7 @@ final class Class31 {
         }
         if (i > -7)
             this.anInt434 = -14;
-        if ((anInt439 ^ 0xffffffff) <= -1
+        if (anInt439 >= 0
                 && this.aClass219_438.aClass60_2862
                 .method583(anInt439, -83) == null
                 && class45.method421(false, anInt439)) {
@@ -198,7 +198,7 @@ final class Class31 {
 
     final Class105 method331(ha var_ha, byte i) {
         anInt441++;
-        if ((anInt433 ^ 0xffffffff) > -1)
+        if (anInt433 < 0)
             return null;
         int i_2_ = -84 % ((i - 32) / 35);
         Class105 class105
@@ -218,7 +218,7 @@ final class Class31 {
             method333(119, -71);
         for (; ; ) {
             int i_3_ = class348_sub49.method3387(255);
-            if ((i_3_ ^ 0xffffffff) == -1)
+            if (i_3_ == 0)
                 break;
             method329(class348_sub49, -2, i_3_);
         }

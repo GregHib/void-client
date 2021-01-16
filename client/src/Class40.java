@@ -97,7 +97,7 @@ final class Class40 {
         if (i_4_ != 256)
             return true;
         anInt547++;
-        return (i & 0x180 ^ 0xffffffff) != -1;
+        return (i & 0x180) != 0;
     }
 
     Class40() {

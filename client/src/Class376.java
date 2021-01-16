@@ -44,7 +44,7 @@ final class Class376 implements Runnable {
         if (Class182.anInterface16Array2447 != null) {
             Interface16[] interface16s = Class182.anInterface16Array2447;
             for (int i_0_ = 0;
-                 (interface16s.length ^ 0xffffffff) < (i_0_ ^ 0xffffffff);
+                 i_0_ < interface16s.length;
                  i_0_++) {
                 Interface16 interface16 = interface16s[i_0_];
                 interface16.method57(108);
@@ -62,14 +62,14 @@ final class Class376 implements Runnable {
                 for (; ; ) {
                     if (anIOException4560 != null)
                         return;
-                    if ((anInt4556 ^ 0xffffffff) != -1) {
+                    if (anInt4556 != 0) {
                         if (anInt4556 < anInt4558)
                             i = -anInt4558 + anInt4546;
                         else
                             i = -1 + anInt4556 - anInt4558;
                     } else
                         i = -1 + (anInt4546 + -anInt4558);
-                    if ((i ^ 0xffffffff) < -1)
+                    if (i > 0)
                         break;
                     try {
                         this.wait();
@@ -98,16 +98,16 @@ final class Class376 implements Runnable {
     final int method3617(int i, int i_2_, int i_3_, byte[] is)
             throws IOException {
         anInt4555++;
-        if ((i ^ 0xffffffff) > -1 || (i_2_ ^ 0xffffffff) > -1
-                || (i_2_ + i ^ 0xffffffff) < (is.length ^ 0xffffffff))
+        if (i < 0 || i_2_ < 0
+                || is.length < i_2_ + i)
             throw new IOException();
         synchronized (this) {
             int i_4_;
-            if ((anInt4558 ^ 0xffffffff) <= (anInt4556 ^ 0xffffffff))
+            if (anInt4556 <= anInt4558)
                 i_4_ = anInt4558 + -anInt4556;
             else
                 i_4_ = anInt4546 + (-anInt4556 - -anInt4558);
-            if ((i ^ 0xffffffff) < (i_4_ ^ 0xffffffff))
+            if (i_4_ < i)
                 i = i_4_;
             if (i_3_ == i && anIOException4560 != null)
                 throw new IOException(anIOException4560.toString());
@@ -133,15 +133,15 @@ final class Class376 implements Runnable {
 
     final boolean method3619(int i, boolean bool) throws IOException {
         anInt4551++;
-        if ((i ^ 0xffffffff) >= -1 || i >= anInt4546)
+        if (i <= 0 || i >= anInt4546)
             throw new IOException();
         synchronized (this) {
             int i_6_;
-            if ((anInt4558 ^ 0xffffffff) > (anInt4556 ^ 0xffffffff))
+            if (anInt4556 > anInt4558)
                 i_6_ = -anInt4556 + anInt4546 - -anInt4558;
             else
                 i_6_ = anInt4558 - anInt4556;
-            if ((i_6_ ^ 0xffffffff) > (i ^ 0xffffffff)) {
+            if (i > i_6_) {
                 if (anIOException4560 != null)
                     throw new IOException(anIOException4560.toString());
                 return false;

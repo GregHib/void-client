@@ -17,7 +17,7 @@ final class Class222 {
     private final void method1608(int i, Class348_Sub49 class348_sub49,
                                   byte i_0_) {
         anInt2887++;
-        if ((i ^ 0xffffffff) == -2)
+        if (i == 1)
             anInt2891 = class348_sub49.method3330(842397944);
         else if (i == 2) {
             this.anInt2883 = class348_sub49.method3387(255);

@@ -69,7 +69,7 @@ final class Class312 {
                 Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_0_] = null;
             Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 = null;
             for (int i_1_ = 0;
-                 (i_1_ ^ 0xffffffff) > (Class348_Sub32.anInt6930 ^ 0xffffffff);
+                 Class348_Sub32.anInt6930 > i_1_;
                  i_1_++) {
                 Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
                         = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_1_]
@@ -83,7 +83,7 @@ final class Class312 {
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
             Class348_Sub40_Sub21.anInt9282 = 1;
             Class348_Sub49.method3379(2, 10);
-            for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > -101; i_2_++)
+            for (int i_2_ = 0; i_2_ < 100; i_2_++)
                 Class152.aBooleanArray2076[i_2_] = true;
             Class286_Sub2.method2145(-24498);
             Class239_Sub4.aClass348_Sub26_5881 = null;

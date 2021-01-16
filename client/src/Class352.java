@@ -50,10 +50,10 @@ final class Class352 {
                         = (Exception_Sub1.aClass255_112.method1940
                         (104, class348_sub34_4_.anInt6973));
                 int i_5_ = class213.anInt2819;
-                if ((class213.anInt2820 ^ 0xffffffff) == -2)
+                if (class213.anInt2820 == 1)
                     i_5_
                             *= class348_sub34_4_.anInt6971 - -1;
-                if ((i_5_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff)) {
+                if (i_3_ > i_5_) {
                     Class348_Sub42_Sub16_Sub2.method3265(i_2_ ^ 0x6c,
                             class348_sub34,
                             class348_sub34_4_);

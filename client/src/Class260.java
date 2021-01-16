@@ -14,7 +14,7 @@ final class Class260 {
         if (i != -79)
             return false;
         anInt3308++;
-        return i_0_ == 3 || i_0_ == 7 || (i_0_ ^ 0xffffffff) == -11;
+        return i_0_ == 3 || i_0_ == 7 || i_0_ == 10;
     }
 
     static final void method1978() {

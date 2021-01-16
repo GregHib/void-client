@@ -63,7 +63,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
                                 while_98_:
                                 do {
                                     do {
-                                        if ((i_3_ ^ 0xffffffff) != -34070) {
+                                        if (i_3_ != 34069) {
                                             if (i_3_ != 34070) {
                                                 if (i_3_ != 34071) {
                                                     if (i_3_ != 34072) {

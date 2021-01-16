@@ -33,7 +33,7 @@ final class Class291 {
             method2198(52, -11, 108);
         anInt3741++;
         if (i_0_ >= 2) {
-            if ((i_0_ ^ 0xffffffff) < -127)
+            if (i_0_ > 126)
                 i_0_ = 126;
         } else
             i_0_ = 2;
@@ -54,13 +54,13 @@ final class Class291 {
         int i_2_ = class348_sub49.method3387(255);
         if (i_2_ < 5 || i_2_ > 6)
             throw new RuntimeException();
-        if ((i_2_ ^ 0xffffffff) > -7)
+        if (i_2_ < 6)
             this.anInt3732 = 0;
         else
             this.anInt3732
                     = class348_sub49.method3385((byte) -126);
         int i_3_ = class348_sub49.method3387(255);
-        boolean bool = (i_3_ & 0x1 ^ 0xffffffff) != -1;
+        boolean bool = (i_3_ & 0x1) != 0;
         boolean bool_4_ = (i_3_ & 0x2) != 0;
         this.anInt3727 = class348_sub49.method3330(842397944);
         int i_5_ = 0;
@@ -68,7 +68,7 @@ final class Class291 {
                 = new int[this.anInt3727];
         int i_6_ = -1;
         for (int i_7_ = 0;
-             (this.anInt3727 ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
+             i_7_ < this.anInt3727;
              i_7_++) {
             this.anIntArray3738[i_7_] = i_5_
                     += class348_sub49.method3330(842397944);
@@ -95,8 +95,7 @@ final class Class291 {
             for (int i_8_ = 0; i_8_ < this.anInt3734; i_8_++)
                 this.anIntArray3733[i_8_] = -1;
             for (int i_9_ = 0;
-                 ((i_9_ ^ 0xffffffff)
-                         > (this.anInt3727 ^ 0xffffffff));
+                 (this.anInt3727 > i_9_);
                  i_9_++)
                 this.anIntArray3733[(this
                         .anIntArray3738[i_9_])]
@@ -107,7 +106,7 @@ final class Class291 {
         if (i >= -83)
             method2200((byte) 42, null);
         for (int i_10_ = 0;
-             (this.anInt3727 ^ 0xffffffff) < (i_10_ ^ 0xffffffff);
+             i_10_ < this.anInt3727;
              i_10_++)
             this.anIntArray3729[(this.anIntArray3738
                     [i_10_])]
@@ -130,23 +129,23 @@ final class Class291 {
                     [i_14_])]
                     = class348_sub49.method3330(842397944);
         for (int i_15_ = 0;
-             (i_15_ ^ 0xffffffff) > (this.anInt3727 ^ 0xffffffff);
+             this.anInt3727 > i_15_;
              i_15_++) {
             int i_16_ = this.anIntArray3738[i_15_];
             i_5_ = 0;
             int i_17_ = this.anIntArray3725[i_16_];
             int i_18_ = -1;
             this.anIntArrayArray3721[i_16_] = new int[i_17_];
-            for (int i_19_ = 0; (i_19_ ^ 0xffffffff) > (i_17_ ^ 0xffffffff);
+            for (int i_19_ = 0; i_17_ > i_19_;
                  i_19_++) {
                 int i_20_
                         = (this.anIntArrayArray3721[i_16_][i_19_]
                         = i_5_ += class348_sub49.method3330(842397944));
-                if ((i_20_ ^ 0xffffffff) < (i_18_ ^ 0xffffffff))
+                if (i_18_ < i_20_)
                     i_18_ = i_20_;
             }
             this.anIntArray3724[i_16_] = i_18_ + 1;
-            if ((i_17_ ^ 0xffffffff) == (1 + i_18_ ^ 0xffffffff))
+            if (1 + i_18_ == i_17_)
                 this.anIntArrayArray3721[i_16_] = null;
         }
         if (bool) {
@@ -184,13 +183,12 @@ final class Class291 {
             if (i != this.anInt3719)
                 throw new RuntimeException();
             if (is_27_ != null) {
-                if ((is_27_.length ^ 0xffffffff) != -65)
+                if (is_27_.length != 64)
                     throw new RuntimeException();
                 aByteArray3740
                         = Class348_Sub1_Sub2.method2730(4567, 0, is, is.length);
-                for (int i_28_ = 0; (i_28_ ^ 0xffffffff) > -65; i_28_++) {
-                    if ((is_27_[i_28_] ^ 0xffffffff)
-                            != (aByteArray3740[i_28_] ^ 0xffffffff))
+                for (int i_28_ = 0; i_28_ < 64; i_28_++) {
+                    if (aByteArray3740[i_28_] != is_27_[i_28_])
                         throw new RuntimeException();
                 }
             }

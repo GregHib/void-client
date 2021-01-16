@@ -33,8 +33,7 @@ final class Class348_Sub44 extends Class348 {
         anInt7094++;
         if (i != 1)
             anInt7092 = -24;
-        return ((this.anInt7098 & 0x433bfd) >> -1271980362
-                ^ 0xffffffff) != -1;
+        return (this.anInt7098 & 0x433bfd) >> -1271980362 != 0;
     }
 
     final int method3304(byte i) {
@@ -48,14 +47,14 @@ final class Class348_Sub44 extends Class348 {
         anInt7096++;
         if (i != 0)
             return true;
-        return (0x1 & this.anInt7098 ^ 0xffffffff) != -1;
+        return (0x1 & this.anInt7098) != 0;
     }
 
     static final int method3306(byte i) {
         if (i >= -90)
             anInt7101 = -7;
         anInt7097++;
-        if ((Class348_Sub49.anInt7207 ^ 0xffffffff) == -2)
+        if (Class348_Sub49.anInt7207 == 1)
             return Class239_Sub16.anInt6008;
         return Class107.anInt1651;
     }

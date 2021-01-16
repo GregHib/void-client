@@ -56,7 +56,7 @@ final class Class70 {
     static {
         anIntArray1204 = new int[16384];
         double d = 3.834951969714103E-4;
-        for (int i = 0; (i ^ 0xffffffff) > -16385; i++) {
+        for (int i = 0; i < 16384; i++) {
             anIntArray1207[i] = (int) (16384.0 * Math.sin(d * (double) i));
             anIntArray1204[i] = (int) (Math.cos(d * (double) i) * 16384.0);
         }

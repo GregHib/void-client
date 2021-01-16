@@ -55,8 +55,8 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                 int i_4_ = Class348_Sub40_Sub1.method3051(anInt8841, 4096);
                 int i_5_ = Class348_Sub40_Sub1.method3051(anInt8833, 4096);
                 int i_6_ = 0;
-                while ((i_4_ ^ 0xffffffff) < -257
-                        || (i_5_ ^ 0xffffffff) < -257) {
+                while (i_4_ > 256
+                        || i_5_ > 256) {
                     OpenGL.glViewport(0, 0, i_4_, i_5_);
                     aClass206_8844.method1509(aClass258_Sub3Array8837[i_6_], 0,
                             0);
@@ -88,9 +88,9 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                         OpenGL.glVertex2i(0, 1);
                         OpenGL.glEnd();
                     }
-                    if ((i_5_ ^ 0xffffffff) < -257)
+                    if (i_5_ > 256)
                         i_5_ >>= 1;
-                    if ((i_4_ ^ 0xffffffff) < -257)
+                    if (i_4_ > 256)
                         i_4_ >>= 1;
                     i_6_++;
                 }
@@ -261,7 +261,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             string_12_
                     = string_12_.substring(1 + string_12_.lastIndexOf('\t'));
             string += string_12_;
-            if ((i ^ 0xffffffff) != 0 && i_11_ != -1) {
+            if (i != -1 && i_11_ != -1) {
                 int i_13_ = string_10_.indexOf(".java:", i);
                 if (i_13_ >= 0)
                     string += string_10_.substring(i_13_ - -5, i_11_);
@@ -279,22 +279,21 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             anInt8841 = i_15_;
             int i_16_ = Class348_Sub40_Sub1.method3051(anInt8841, 4096);
             int i_17_ = Class348_Sub40_Sub1.method3051(anInt8833, 4096);
-            if ((i_16_ ^ 0xffffffff) != (anInt8826 ^ 0xffffffff)
+            if (anInt8826 != i_16_
                     || anInt8838 != i_17_) {
                 if (aClass258_Sub3Array8837 != null) {
                     for (int i_18_ = 0;
-                         ((aClass258_Sub3Array8837.length ^ 0xffffffff)
-                                 < (i_18_ ^ 0xffffffff));
+                         (i_18_ < aClass258_Sub3Array8837.length);
                          i_18_++)
                         aClass258_Sub3Array8837[i_18_].method1952(-19948);
                     aClass258_Sub3Array8837 = null;
                 }
-                if (i_16_ > 256 || (i_17_ ^ 0xffffffff) < -257) {
+                if (i_16_ > 256 || i_17_ > 256) {
                     int i_19_ = i_16_;
                     int i_20_ = i_17_;
                     int i_21_ = 0;
-                    while (i_19_ > 256 || (i_20_ ^ 0xffffffff) < -257) {
-                        if ((i_20_ ^ 0xffffffff) < -257)
+                    while (i_19_ > 256 || i_20_ > 256) {
+                        if (i_20_ > 256)
                             i_20_ >>= 1;
                         if (i_19_ > 256)
                             i_19_ >>= 1;
@@ -307,15 +306,15 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                     aClass258_Sub3Array8837 = new Class258_Sub3[i_21_];
                     i_20_ = i_17_;
                     i_21_ = 0;
-                    while ((i_19_ ^ 0xffffffff) < -257
-                            || (i_20_ ^ 0xffffffff) < -257) {
+                    while (i_19_ > 256
+                            || i_20_ > 256) {
                         aClass258_Sub3Array8837[i_21_++]
                                 = new Class258_Sub3((this
                                 .aHa_Sub2_6618),
                                 3553, 34842, i_19_, i_20_);
-                        if ((i_20_ ^ 0xffffffff) < -257)
+                        if (i_20_ > 256)
                             i_20_ >>= 1;
-                        if ((i_19_ ^ 0xffffffff) < -257)
+                        if (i_19_ > 256)
                             i_19_ >>= 1;
                     }
                 } else

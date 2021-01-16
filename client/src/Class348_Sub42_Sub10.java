@@ -46,13 +46,12 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
                 if (anIntArray9574 != null) {
                     int i_1_ = 0;
                     for (; ; ) {
-                        if ((i_1_ ^ 0xffffffff)
-                                <= (anIntArray9574.length ^ 0xffffffff))
+                        if (anIntArray9574.length <= i_1_)
                             break while_221_;
-                        if ((is.length ^ 0xffffffff) >= (i_1_ ^ 0xffffffff))
+                        if (i_1_ >= is.length)
                             break;
                         int i_2_ = method3212(0, i_1_).anInt1945;
-                        if ((i_2_ ^ 0xffffffff) < -1)
+                        if (i_2_ > 0)
                             class348_sub49.method3357(i_2_, is[i_1_],
                                     (byte) 116);
                         i_1_++;
@@ -105,11 +104,10 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
         if (bool != true)
             method3213(41, 104, true);
         if (anIntArray9574 == null || i_5_ < 0
-                || (anIntArray9574.length ^ 0xffffffff) > (i_5_ ^ 0xffffffff))
+                || i_5_ > anIntArray9574.length)
             return -1;
-        if (anIntArrayArray9565[i_5_] == null || (i ^ 0xffffffff) > -1
-                || ((anIntArrayArray9565[i_5_].length ^ 0xffffffff)
-                > (i ^ 0xffffffff)))
+        if (anIntArrayArray9565[i_5_] == null || i < 0
+                || (i > anIntArrayArray9565[i_5_].length))
             return -1;
         return anIntArrayArray9565[i_5_][i];
     }
@@ -118,12 +116,12 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
                                   int i_6_) {
         if (i_6_ == 60) {
             if (i != 1) {
-                if ((i ^ 0xffffffff) == -3) {
+                if (i == 2) {
                     int i_7_ = class348_sub49.method3387(255);
                     this.anIntArray9566
                             = new int[i_7_];
                     for (int i_8_ = 0;
-                         (i_7_ ^ 0xffffffff) < (i_8_ ^ 0xffffffff); i_8_++)
+                         i_8_ < i_7_; i_8_++)
                         this.anIntArray9566[i_8_]
                                 = class348_sub49.method3330(i_6_ + 842397884);
                 } else if (i == 3) {
@@ -131,7 +129,7 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
                     anIntArrayArray9565 = new int[i_9_][];
                     anIntArray9574 = new int[i_9_];
                     for (int i_10_ = 0;
-                         (i_10_ ^ 0xffffffff) > (i_9_ ^ 0xffffffff); i_10_++) {
+                         i_9_ > i_10_; i_10_++) {
                         int i_11_ = class348_sub49.method3330(842397944);
                         Class138 class138
                                 = Class348_Sub5.method2752(i_11_, i_6_ + -60);
@@ -140,9 +138,7 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
                             anIntArrayArray9565[i_10_]
                                     = new int[class138.anInt1944];
                             for (int i_12_ = 0;
-                                 ((i_12_ ^ 0xffffffff)
-                                         > (class138.anInt1944
-                                         ^ 0xffffffff));
+                                 (class138.anInt1944 > i_12_);
                                  i_12_++)
                                 anIntArrayArray9565[i_10_][i_12_]
                                         = class348_sub49

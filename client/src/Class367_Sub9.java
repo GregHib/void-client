@@ -63,7 +63,7 @@ final class Class367_Sub9 extends Class367 {
         anInt7374++;
         if (i_5_ < 2 || i_5_ > 36)
             throw new IllegalArgumentException("Invalid radix:" + i_5_);
-        if (!bool || (i_6_ ^ 0xffffffff) > -1)
+        if (!bool || i_6_ < 0)
             return Integer.toString(i_6_, i_5_);
         int i_7_ = 2;
         int i_8_ = i_6_ / i_5_;

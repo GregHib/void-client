@@ -235,7 +235,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5
         if (!aBoolean10138) {
             var_s = (Class348_Sub1_Sub1.aSArray8801
                     [this.aByte6376]);
-            if ((this.aByte6376 ^ 0xffffffff) > -4)
+            if (this.aByte6376 < 3)
                 var_s_6_ = (Class348_Sub1_Sub1.aSArray8801
                         [this.aByte6376 - -1]);
             else
@@ -276,9 +276,8 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5
                 aBoolean10137
                         = (var_ha.method3682() && class51.aBoolean894
                         && !aBoolean10138
-                        && (Class316.aClass348_Sub51_3959
-                        .aClass239_Sub7_7238.method1748(-32350)
-                        ^ 0xffffffff) != -1);
+                        && Class316.aClass348_Sub51_3959
+                        .aClass239_Sub7_7238.method1748(-32350) != 0);
                 Class2 class2
                         = method2491((byte) -51, aBoolean10137, 2048, var_ha);
                 if (class2 == null)

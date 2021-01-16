@@ -35,27 +35,27 @@ final class r_Sub1 extends r {
         if (i_7_ != i)
             i_10_ = (-i_5_ + i_6_ << 136201552) / (i_7_ + -i);
         int i_11_ = 0;
-        if ((i_8_ ^ 0xffffffff) != (i_7_ ^ 0xffffffff))
+        if (i_7_ != i_8_)
             i_11_ = (-i_6_ + i_9_ << 1450537008) / (i_8_ + -i_7_);
         int i_12_ = -10 % ((-65 - i_4_) / 55);
         int i_13_ = 0;
-        if ((i ^ 0xffffffff) != (i_8_ ^ 0xffffffff))
+        if (i_8_ != i)
             i_13_ = (i_5_ - i_9_ << -1880826096) / (i + -i_8_);
-        if ((i_7_ ^ 0xffffffff) > (i ^ 0xffffffff) || i > i_8_) {
-            if ((i_7_ ^ 0xffffffff) >= (i_8_ ^ 0xffffffff)) {
+        if (i > i_7_ || i > i_8_) {
+            if (i_8_ >= i_7_) {
                 if (i_8_ >= i) {
                     i_9_ = i_6_ <<= 477681040;
-                    if ((i_7_ ^ 0xffffffff) > -1) {
+                    if (i_7_ < 0) {
                         i_6_ -= i_7_ * i_11_;
                         i_9_ -= i_7_ * i_10_;
                         i_7_ = 0;
                     }
                     i_5_ <<= 193943408;
-                    if ((i ^ 0xffffffff) > -1) {
+                    if (i < 0) {
                         i_5_ -= i * i_13_;
                         i = 0;
                     }
-                    if ((i_10_ ^ 0xffffffff) > (i_11_ ^ 0xffffffff)) {
+                    if (i_11_ > i_10_) {
                         i_8_ -= i;
                         i -= i_7_;
                         i_7_ = this.anInt10466 * i_7_;
@@ -68,7 +68,7 @@ final class r_Sub1 extends r {
                             i_7_ += this.anInt10466;
                             i_6_ += i_11_;
                         }
-                        while ((--i_8_ ^ 0xffffffff) <= -1) {
+                        while (--i_8_ >= 0) {
                             Class33.method339(i_7_, i_5_ >> 873512592,
                                     this.aByteArray10471,
                                     0, 1354705384,
@@ -81,7 +81,7 @@ final class r_Sub1 extends r {
                         i_8_ -= i;
                         i -= i_7_;
                         i_7_ = this.anInt10466 * i_7_;
-                        while ((--i ^ 0xffffffff) <= -1) {
+                        while (--i >= 0) {
                             Class33.method339(i_7_, i_6_ >> 1575398320,
                                     this.aByteArray10471,
                                     0, 1354705384,
@@ -102,20 +102,20 @@ final class r_Sub1 extends r {
                     }
                 } else {
                     i_5_ = i_6_ <<= -1310795248;
-                    if ((i_7_ ^ 0xffffffff) > -1) {
+                    if (i_7_ < 0) {
                         i_6_ -= i_11_ * i_7_;
                         i_5_ -= i_10_ * i_7_;
                         i_7_ = 0;
                     }
                     i_9_ <<= -280513936;
-                    if ((i_8_ ^ 0xffffffff) > -1) {
+                    if (i_8_ < 0) {
                         i_9_ -= i_8_ * i_13_;
                         i_8_ = 0;
                     }
-                    if (((i_7_ ^ 0xffffffff) == (i_8_ ^ 0xffffffff)
-                            || (i_11_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff))
-                            && ((i_7_ ^ 0xffffffff) != (i_8_ ^ 0xffffffff)
-                            || (i_10_ ^ 0xffffffff) >= (i_13_ ^ 0xffffffff))) {
+                    if ((i_8_ == i_7_
+                            || i_10_ >= i_11_)
+                            && (i_8_ != i_7_
+                            || i_13_ >= i_10_)) {
                         i -= i_8_;
                         i_8_ -= i_7_;
                         i_7_ *= this.anInt10466;
@@ -141,7 +141,7 @@ final class r_Sub1 extends r {
                         i -= i_8_;
                         i_8_ -= i_7_;
                         i_7_ *= this.anInt10466;
-                        while ((--i_8_ ^ 0xffffffff) <= -1) {
+                        while (--i_8_ >= 0) {
                             Class33.method339(i_7_, i_5_ >> -852939952,
                                     this.aByteArray10471,
                                     0, 1354705384,
@@ -161,19 +161,19 @@ final class r_Sub1 extends r {
                         }
                     }
                 }
-            } else if ((i ^ 0xffffffff) > (i_7_ ^ 0xffffffff)) {
+            } else if (i_7_ > i) {
                 i_6_ = i_9_ <<= -547798224;
                 i_5_ <<= -1378422192;
-                if ((i_8_ ^ 0xffffffff) > -1) {
+                if (i_8_ < 0) {
                     i_9_ -= i_13_ * i_8_;
                     i_6_ -= i_11_ * i_8_;
                     i_8_ = 0;
                 }
-                if ((i ^ 0xffffffff) > -1) {
+                if (i < 0) {
                     i_5_ -= i_10_ * i;
                     i = 0;
                 }
-                if ((i_11_ ^ 0xffffffff) > (i_13_ ^ 0xffffffff)) {
+                if (i_13_ > i_11_) {
                     i_7_ -= i;
                     i -= i_8_;
                     i_8_ *= this.anInt10466;
@@ -185,7 +185,7 @@ final class r_Sub1 extends r {
                         i_6_ += i_11_;
                         i_9_ += i_13_;
                     }
-                    while ((--i_7_ ^ 0xffffffff) <= -1) {
+                    while (--i_7_ >= 0) {
                         Class33.method339(i_8_, i_6_ >> -1140344752,
                                 this.aByteArray10471, 0,
                                 1354705384, i_5_ >> -1498772432);
@@ -197,7 +197,7 @@ final class r_Sub1 extends r {
                     i_7_ -= i;
                     i -= i_8_;
                     i_8_ = this.anInt10466 * i_8_;
-                    while ((--i ^ 0xffffffff) <= -1) {
+                    while (--i >= 0) {
                         Class33.method339(i_8_, i_9_ >> 1834027728,
                                 this.aByteArray10471, 0,
                                 1354705384, i_6_ >> 1058894288);
@@ -205,7 +205,7 @@ final class r_Sub1 extends r {
                         i_8_ += this.anInt10466;
                         i_9_ += i_13_;
                     }
-                    while ((--i_7_ ^ 0xffffffff) <= -1) {
+                    while (--i_7_ >= 0) {
                         Class33.method339(i_8_, i_5_ >> -1051671728,
                                 this.aByteArray10471, 0,
                                 1354705384, i_6_ >> -2004115696);
@@ -216,17 +216,17 @@ final class r_Sub1 extends r {
                 }
             } else {
                 i_5_ = i_9_ <<= -2101498192;
-                if ((i_8_ ^ 0xffffffff) > -1) {
+                if (i_8_ < 0) {
                     i_9_ -= i_13_ * i_8_;
                     i_5_ -= i_8_ * i_11_;
                     i_8_ = 0;
                 }
                 i_6_ <<= -1561324976;
-                if ((i_7_ ^ 0xffffffff) > -1) {
+                if (i_7_ < 0) {
                     i_6_ -= i_10_ * i_7_;
                     i_7_ = 0;
                 }
-                if ((i_13_ ^ 0xffffffff) >= (i_11_ ^ 0xffffffff)) {
+                if (i_11_ >= i_13_) {
                     i -= i_7_;
                     i_7_ -= i_8_;
                     i_8_ = this.anInt10466 * i_8_;
@@ -238,7 +238,7 @@ final class r_Sub1 extends r {
                         i_5_ += i_11_;
                         i_9_ += i_13_;
                     }
-                    while ((--i ^ 0xffffffff) <= -1) {
+                    while (--i >= 0) {
                         Class33.method339(i_8_, i_9_ >> -516460048,
                                 this.aByteArray10471, 0,
                                 1354705384, i_6_ >> 929098704);
@@ -271,21 +271,21 @@ final class r_Sub1 extends r {
         } else if (i_7_ >= i_8_) {
             i_6_ = i_5_ <<= 1567994448;
             i_9_ <<= -487806832;
-            if ((i ^ 0xffffffff) > -1) {
+            if (i < 0) {
                 i_6_ -= i * i_13_;
                 i_5_ -= i_10_ * i;
                 i = 0;
             }
-            if ((i_8_ ^ 0xffffffff) > -1) {
+            if (i_8_ < 0) {
                 i_9_ -= i_8_ * i_11_;
                 i_8_ = 0;
             }
             if (i_8_ != i && i_13_ < i_10_
-                    || (i_8_ ^ 0xffffffff) == (i ^ 0xffffffff) && i_10_ < i_11_) {
+                    || i == i_8_ && i_10_ < i_11_) {
                 i_7_ -= i_8_;
                 i_8_ -= i;
                 i = this.anInt10466 * i;
-                while ((--i_8_ ^ 0xffffffff) <= -1) {
+                while (--i_8_ >= 0) {
                     Class33.method339(i, i_6_ >> 42122608,
                             this.aByteArray10471, 0,
                             1354705384, i_5_ >> -1331298416);
@@ -305,7 +305,7 @@ final class r_Sub1 extends r {
                 i_7_ -= i_8_;
                 i_8_ -= i;
                 i *= this.anInt10466;
-                while ((--i_8_ ^ 0xffffffff) <= -1) {
+                while (--i_8_ >= 0) {
                     Class33.method339(i, i_5_ >> -1963976848,
                             this.aByteArray10471, 0,
                             1354705384, i_6_ >> -778751888);
@@ -330,7 +330,7 @@ final class r_Sub1 extends r {
                 i = 0;
             }
             i_6_ <<= 797030512;
-            if ((i_7_ ^ 0xffffffff) > -1) {
+            if (i_7_ < 0) {
                 i_6_ -= i_7_ * i_11_;
                 i_7_ = 0;
             }
@@ -339,7 +339,7 @@ final class r_Sub1 extends r {
                 i_8_ -= i_7_;
                 i_7_ -= i;
                 i = this.anInt10466 * i;
-                while ((--i_7_ ^ 0xffffffff) <= -1) {
+                while (--i_7_ >= 0) {
                     Class33.method339(i, i_5_ >> 739407504,
                             this.aByteArray10471, 0,
                             1354705384, i_9_ >> 1031372208);
@@ -409,9 +409,8 @@ final class r_Sub1 extends r {
     static final void method3290(int i) {
         if (i < 30)
             aClass262_10479 = null;
-        IOException_Sub1.method131((Class316.aClass348_Sub51_3959
-                        .aClass239_Sub5_7240.method1739(-32350)
-                        ^ 0xffffffff) == -2,
+        IOException_Sub1.method131(Class316.aClass348_Sub51_3959
+                        .aClass239_Sub5_7240.method1739(-32350) == 1,
                 2, true, 22050);
         anInt10470++;
         Class348_Sub40.aClass279_7042
@@ -433,7 +432,7 @@ final class r_Sub1 extends r {
         anInt10469++;
         if (i_18_ != -59)
             this.anInt10467 = 41;
-        return (this.aByteArray10471.length ^ 0xffffffff) <= (i_17_ * i ^ 0xffffffff);
+        return i_17_ * i <= this.aByteArray10471.length;
     }
 
     r_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_19_) {

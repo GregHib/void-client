@@ -61,7 +61,7 @@ final class Class278 {
         anInt3584++;
         if (i_1_ > -125)
             anInt3581 = -110;
-        return (i & 0x100100 ^ 0xffffffff) != -1;
+        return (i & 0x100100) != 0;
     }
 
     final void method2076(int i, boolean bool) {
@@ -82,7 +82,7 @@ final class Class278 {
     static final boolean method2077(int i, int i_3_, int i_4_) {
         int i_5_ = -75 % ((-43 - i) / 40);
         anInt3588++;
-        return (i_4_ & 0x8000 ^ 0xffffffff) != -1;
+        return (i_4_ & 0x8000) != 0;
     }
 
     final void method2078(int i) {

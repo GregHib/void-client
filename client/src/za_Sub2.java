@@ -24,7 +24,7 @@ final class za_Sub2 extends za {
             OpenGL.glBindProgramARB(i, i_1_);
             OpenGL.glProgramRawARB(i, 34933, is);
             OpenGL.glGetIntegerv(34379, Class104.anIntArray1626, 0);
-            if ((Class104.anIntArray1626[0] ^ 0xffffffff) != 0) {
+            if (Class104.anIntArray1626[0] != -1) {
                 OpenGL.glBindProgramARB(i, 0);
                 return null;
             }
@@ -61,7 +61,7 @@ final class za_Sub2 extends za {
                         != null)
                     i_3_ = (class318_sub1_sub3_sub3
                             .anIntArray10242[i]);
-                if ((i_3_ ^ 0xffffffff) == 0) {
+                if (i_3_ == -1) {
                     if (!class318_sub1_sub3_sub3.method2423(-80, i, -1))
                         bool_2_ = false;
                 } else {
@@ -70,7 +70,7 @@ final class za_Sub2 extends za {
                     boolean bool_5_ = false;
                     int i_6_;
                     int i_7_;
-                    if ((i_3_ & ~0x3fffffff ^ 0xffffffff) == 1073741823) {
+                    if ((i_3_ & ~0x3fffffff) == -1073741824) {
                         int i_8_ = i_3_ & 0xfffffff;
                         int i_9_ = i_8_ >> -934245874;
                         i_7_ = (class318_sub1_sub3_sub3
@@ -117,7 +117,7 @@ final class za_Sub2 extends za {
                                 + (class318_sub1_sub3_sub3
                                 .anInt6377));
                     }
-                    if ((i_7_ ^ 0xffffffff) != -1 || (i_6_ ^ 0xffffffff) != -1)
+                    if (i_7_ != 0 || i_6_ != 0)
                         class318_sub1_sub3_sub3.method2423
                                 (-100, i, 0x3fff & (int) (Math.atan2(i_7_,
                                         i_6_)

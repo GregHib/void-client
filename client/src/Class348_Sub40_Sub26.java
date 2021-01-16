@@ -25,7 +25,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         if (i_1_ <= 39)
             method3119(-106, 118, -21);
         anInt9355++;
-        return (i & 0xc580 ^ 0xffffffff) != -1;
+        return (i & 0xc580) != 0;
     }
 
     final int[][] method3047(int i, int i_3_) {
@@ -42,13 +42,12 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
             int[] is_8_ = is[0];
             int[] is_9_ = is[1];
             int[] is_10_ = is[2];
-            for (int i_11_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_11_ ^ 0xffffffff)); i_11_++) {
+            for (int i_11_ = 0; (i_11_ < Class348_Sub40_Sub6.anInt9139); i_11_++) {
                 int i_12_ = is_5_[i_11_];
                 int i_13_ = is_7_[i_11_];
                 int i_14_ = is_6_[i_11_];
                 if (i_13_ != i_12_
-                        || (i_14_ ^ 0xffffffff) != (i_13_ ^ 0xffffffff)) {
+                        || i_13_ != i_14_) {
                     is_8_[i_11_] = anInt9344;
                     is_9_[i_11_] = anInt9354;
                     is_10_[i_11_] = anInt9347;
@@ -69,9 +68,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         int i_16_ = Class299.aClass348_Sub49_Sub2_3813.readLEShort128(-117);
         int i_17_ = Class299.aClass348_Sub49_Sub2_3813.readLEShort(false);
         boolean bool
-                = ((Class299.aClass348_Sub49_Sub2_3813.method3329((byte) 21)
-                ^ 0xffffffff)
-                == -2);
+                = (Class299.aClass348_Sub49_Sub2_3813.method3329((byte) 21) == 1);
 
         System.out.println("i_15_: " + i_15_);
         System.out.println("i_16_: " + i_16_);
@@ -109,9 +106,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
              i_21_++) {
             for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.anInt9109
                     >> -1689129020)) / 8;
-                 ((((Class348_Sub40_Sub3.anInt9109 >> -163377948) + i_16_) / 8
-                         ^ 0xffffffff)
-                         <= (i_22_ ^ 0xffffffff));
+                 (i_22_ <= ((Class348_Sub40_Sub3.anInt9109 >> -163377948) + i_16_) / 8);
                  i_22_++) {
                 Class348_Sub23_Sub3.anIntArray9042[i_18_]
                         = i_22_ + (i_21_ << -209519576);
@@ -142,7 +137,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
                     do {
                         if (i_24_ != 0) {
                             if (i_24_ != 1) {
-                                if ((i_24_ ^ 0xffffffff) == -3)
+                                if (i_24_ == 2)
                                     break;
                                 break while_201_;
                             }

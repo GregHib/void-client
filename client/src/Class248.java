@@ -65,7 +65,7 @@ final class Class248 {
         if (aClass202_3209 != null) {
             long l = Class62.method599(-106);
             int i_0_ = (int) (-aLong3207 + l);
-            if ((i_0_ ^ 0xffffffff) < -201)
+            if (i_0_ > 200)
                 i_0_ = 200;
             aLong3207 = l;
             anInt3210 += i_0_;
@@ -80,8 +80,8 @@ final class Class248 {
         }
         anInt3190++;
         if (aClass202_3209 == null) {
-            return (method1902(4) ^ 0xffffffff) == -1
-                    && (method1894(4350) ^ 0xffffffff) == -1;
+            return method1902(4) == 0
+                    && method1894(4350) == 0;
         }
         try {
             aClass202_3209.method1472(true);
@@ -120,9 +120,9 @@ final class Class248 {
                         4, 0, -1);
                 aClass107_3206.method1005(true, class348_sub42_sub16_sub1);
             }
-            for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -101; i_1_++) {
+            for (int i_1_ = 0; i_1_ < 100; i_1_++) {
                 int i_2_ = aClass202_3209.method1467((byte) 83);
-                if ((i_2_ ^ 0xffffffff) > -1)
+                if (i_2_ < 0)
                     throw new IOException();
                 if (i_2_ == 0)
                     break;
@@ -130,22 +130,18 @@ final class Class248 {
                 int i_3_ = 0;
                 if (aClass348_Sub42_Sub16_Sub1_3215 == null)
                     i_3_ = 8;
-                else if ((aClass348_Sub42_Sub16_Sub1_3215.anInt10456
-                        ^ 0xffffffff)
-                        == -1)
+                else if (aClass348_Sub42_Sub16_Sub1_3215.anInt10456 == 0)
                     i_3_ = 1;
-                if ((i_3_ ^ 0xffffffff) >= -1) {
+                if (i_3_ <= 0) {
                     int i_4_
                             = (aClass348_Sub42_Sub16_Sub1_3215
                                     .aClass348_Sub49_10453.aByteArray7154.length
                             + -aClass348_Sub42_Sub16_Sub1_3215.aByte10449);
                     int i_5_ = (-aClass348_Sub42_Sub16_Sub1_3215.anInt10456
                             + 512);
-                    if ((-(aClass348_Sub42_Sub16_Sub1_3215
+                    if (i_5_ > -(aClass348_Sub42_Sub16_Sub1_3215
                             .aClass348_Sub49_10453
-                            .anInt7197) + i_4_
-                            ^ 0xffffffff)
-                            > (i_5_ ^ 0xffffffff))
+                            .anInt7197) + i_4_)
                         i_5_ = i_4_ - aClass348_Sub42_Sub16_Sub1_3215
                                 .aClass348_Sub49_10453.anInt7197;
                     if (i_2_ < i_5_)
@@ -159,7 +155,7 @@ final class Class248 {
                                     (byte) -72, i_5_);
                     if (aByte3212 != 0) {
                         for (int i_6_ = 0;
-                             (i_6_ ^ 0xffffffff) > (i_5_ ^ 0xffffffff); i_6_++)
+                             i_5_ > i_6_; i_6_++)
                             aClass348_Sub42_Sub16_Sub1_3215
                                     .aClass348_Sub49_10453
                                     .aByteArray7154
@@ -180,10 +176,8 @@ final class Class248 {
                     aClass348_Sub42_Sub16_Sub1_3215
                             .aClass348_Sub49_10453.anInt7197
                             += i_5_;
-                    if ((aClass348_Sub42_Sub16_Sub1_3215
-                            .aClass348_Sub49_10453.anInt7197
-                            ^ 0xffffffff)
-                            == (i_4_ ^ 0xffffffff)) {
+                    if (i_4_ == aClass348_Sub42_Sub16_Sub1_3215
+                            .aClass348_Sub49_10453.anInt7197) {
                         aClass348_Sub42_Sub16_Sub1_3215.method3162(true);
                         aClass348_Sub42_Sub16_Sub1_3215.aBoolean9664
                                 = false;
@@ -201,7 +195,7 @@ final class Class248 {
                                     .aByteArray7154),
                             aClass348_Sub49_3211.anInt7197,
                             (byte) -72, i_7_);
-                    if ((aByte3212 ^ 0xffffffff) != -1) {
+                    if (aByte3212 != 0) {
                         for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
                             aClass348_Sub49_3211
                                     .aByteArray7154
@@ -226,7 +220,7 @@ final class Class248 {
                             int i_12_
                                     = aClass348_Sub49_3211.method3385((byte) -126);
                             int i_13_ = 0x7f & i_11_;
-                            boolean bool = (0x80 & i_11_ ^ 0xffffffff) != -1;
+                            boolean bool = (0x80 & i_11_) != 0;
                             long l = (i_9_ << 1674464528) + i_10_;
                             Object object = null;
                             Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1_14_;
@@ -252,16 +246,14 @@ final class Class248 {
                                              = ((Class348_Sub42_Sub16_Sub1)
                                              aClass107_3204
                                                      .method1003((byte) 90))) {
-                                    if (((class348_sub42_sub16_sub1_14_
-                                            .aLong7057)
-                                            ^ 0xffffffffffffffffL)
-                                            == (l ^ 0xffffffffffffffffL))
+                                    if (l == (class348_sub42_sub16_sub1_14_
+                                            .aLong7057))
                                         break;
                                 }
                             }
                             if (class348_sub42_sub16_sub1_14_ == null)
                                 throw new IOException();
-                            int i_15_ = (i_13_ ^ 0xffffffff) == -1 ? 5 : 9;
+                            int i_15_ = i_13_ == 0 ? 5 : 9;
                             aClass348_Sub42_Sub16_Sub1_3215
                                     = class348_sub42_sub16_sub1_14_;
                             aClass348_Sub42_Sub16_Sub1_3215
@@ -279,10 +271,8 @@ final class Class248 {
                                     = 0;
                             aClass348_Sub42_Sub16_Sub1_3215.anInt10456
                                     = 8;
-                        } else if (((aClass348_Sub42_Sub16_Sub1_3215
-                                .anInt10456)
-                                ^ 0xffffffff)
-                                == -1) {
+                        } else if ((aClass348_Sub42_Sub16_Sub1_3215
+                                .anInt10456) == 0) {
                             if ((aClass348_Sub49_3211
                                     .aByteArray7154[0])
                                     != -1)
@@ -309,7 +299,7 @@ final class Class248 {
             this.anInt3214 = -2;
             this.anInt3213++;
             aClass202_3209 = null;
-            return (method1902(4) ^ 0xffffffff) == -1 && method1894(4350) == 0;
+            return method1902(4) == 0 && method1894(4350) == 0;
         }
     }
 
@@ -329,7 +319,7 @@ final class Class248 {
             i_21_ = -(0x3 & i_21_);
             if (i_22_ != 121)
                 aClass229_3196 = null;
-            for (int i_24_ = -i_16_; (i_24_ ^ 0xffffffff) > -1; i_24_++) {
+            for (int i_24_ = -i_16_; i_24_ < 0; i_24_++) {
                 for (int i_25_ = i_23_; i_25_ < 0; i_25_++) {
                     is[i_17_++] += -is_20_[i++];
                     is[i_17_++] += -is_20_[i++];
@@ -402,7 +392,7 @@ final class Class248 {
     final boolean method1900(int i) {
         int i_27_ = -51 % ((41 - i) / 47);
         anInt3195++;
-        return (method1902(4) ^ 0xffffffff) <= -21;
+        return method1902(4) >= 20;
     }
 
     final void method1901(int i) {

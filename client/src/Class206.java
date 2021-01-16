@@ -79,7 +79,7 @@ final class Class206 implements Interface11 {
     static final void method1501(int i) {
         int i_3_ = 56 / ((i - -56) / 42);
         for (int i_4_ = 0;
-             (Class147.anInt2021 ^ 0xffffffff) < (i_4_ ^ 0xffffffff); i_4_++) {
+             i_4_ < Class147.anInt2021; i_4_++) {
             Class10 class10 = Class258_Sub2.aClass10Array8531[i_4_];
             boolean bool = false;
             if (class10.aClass348_Sub16_Sub5_176 != null) {
@@ -90,7 +90,7 @@ final class Class206 implements Interface11 {
                 class10.anInt188--;
                 if (class10.anInt188
                         >= (!class10.method220((byte) -66) ? -10 : -1500)) {
-                    if ((class10.aByte180 ^ 0xffffffff) == -2
+                    if (class10.aByte180 == 1
                             && class10.aClass317_183 == null) {
                         class10.aClass317_183
                                 = Class317.method2372(Class129.aClass45_1878,
@@ -123,7 +123,7 @@ final class Class206 implements Interface11 {
                                 continue;
                         }
                     }
-                    if ((class10.anInt188 ^ 0xffffffff) > -1) {
+                    if (class10.anInt188 < 0) {
                         int i_5_ = 8192;
                         int i_6_;
                         if (class10.anInt178 == 0)
@@ -139,11 +139,9 @@ final class Class206 implements Interface11 {
                         else {
                             int i_7_ = 0x3 & (class10.anInt178
                                     >> 262440888);
-                            if ((i_7_ ^ 0xffffffff)
-                                    == ((Class132
-                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                    .aByte6381)
-                                    ^ 0xffffffff)) {
+                            if ((Class132
+                                    .aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                                    .aByte6381) == i_7_) {
                                 int i_8_
                                         = 0x1fe00 & (class10.anInt178
                                         << 1928411817);
@@ -171,8 +169,7 @@ final class Class206 implements Interface11 {
                                         - i_9_));
                                 int i_14_ = (Math.abs(i_11_)
                                         + (Math.abs(i_13_) + -512));
-                                if ((i_14_ ^ 0xffffffff)
-                                        < (i_8_ ^ 0xffffffff)) {
+                                if (i_8_ < i_14_) {
                                     class10.anInt188 = -99999;
                                     continue;
                                 }
@@ -205,12 +202,12 @@ final class Class206 implements Interface11 {
                                             * (Math.atan2
                                             (i_11_,
                                                     i_13_)))));
-                                    if ((i_17_ ^ 0xffffffff) < -8193)
+                                    if (i_17_ > 8192)
                                         i_17_ = 16384 + -i_17_;
                                     int i_18_;
-                                    if ((i_14_ ^ 0xffffffff) >= -1)
+                                    if (i_14_ <= 0)
                                         i_18_ = 8192;
-                                    else if ((i_14_ ^ 0xffffffff) <= -4097)
+                                    else if (i_14_ >= 4096)
                                         i_18_ = 16384;
                                     else
                                         i_18_ = 8192 + (-i_14_ + 8192) / 4096;
@@ -220,10 +217,9 @@ final class Class206 implements Interface11 {
                             } else
                                 i_6_ = 0;
                         }
-                        if ((i_6_ ^ 0xffffffff) < -1) {
+                        if (i_6_ > 0) {
                             Class348_Sub19_Sub1 class348_sub19_sub1 = null;
-                            if ((class10.aByte180 ^ 0xffffffff)
-                                    != -2) {
+                            if (class10.aByte180 != 1) {
                                 if (class10.method220((byte) -112))
                                     class348_sub19_sub1
                                             = (class10
@@ -259,9 +255,8 @@ final class Class206 implements Interface11 {
         }
         anInt4890++;
         if (Class74.aBoolean1236 && !Class167.method1296(true)) {
-            if ((Class316.aClass348_Sub51_3959
-                    .aClass239_Sub26_7260.method1838(-32350)
-                    ^ 0xffffffff) != -1
+            if (Class316.aClass348_Sub51_3959
+                    .aClass239_Sub26_7260.method1838(-32350) != 0
                     && Class267.anInt3428 != -1) {
                 if (Class209.aClass348_Sub16_Sub3_2718 != null)
                     Class348_Sub40_Sub15.method3086
@@ -279,10 +274,9 @@ final class Class206 implements Interface11 {
             }
             Class74.aBoolean1236 = false;
             Class209.aClass348_Sub16_Sub3_2718 = null;
-        } else if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub26_7260.method1838(-32350)
-                ^ 0xffffffff) != -1
-                && (Class267.anInt3428 ^ 0xffffffff) != 0
+        } else if (Class316.aClass348_Sub51_3959
+                .aClass239_Sub26_7260.method1838(-32350) != 0
+                && Class267.anInt3428 != -1
                 && !Class167.method1296(true)) {
             Class318.anInt3973++;
             Class348_Sub47 class348_sub47
@@ -300,12 +294,12 @@ final class Class206 implements Interface11 {
                                   Class258_Sub2 class258_sub2, int i_21_,
                                   int i_22_) {
         anInt4876++;
-        if ((anInt4873 ^ 0xffffffff) == 0)
+        if (anInt4873 == -1)
             throw new RuntimeException();
         int i_23_ = 1 << i_21_;
         if (i_20_ > -16)
             aBoolean4888 = false;
-        if ((anInt4884 & (i_23_ ^ 0xffffffff) ^ 0xffffffff) != -1) {
+        if ((anInt4884 & (i_23_ ^ 0xffffffff)) != 0) {
             if (class258_sub2.anInt8538 != anInt4882
                     || anInt4886 != class258_sub2.anInt8538)
                 throw new RuntimeException();
@@ -342,7 +336,7 @@ final class Class206 implements Interface11 {
             return 36160;
         if (i >= -112)
             method1502(84, (byte) -103, null, 17, 11);
-        if ((0x2 & anInt4872 ^ 0xffffffff) != -1)
+        if ((0x2 & anInt4872) != 0)
             return 36009;
         if ((0x1 & anInt4872) != 0)
             return 36008;
@@ -368,14 +362,13 @@ final class Class206 implements Interface11 {
     private final void method1506(int i, Class258_Sub3 class258_sub3,
                                   int i_27_, int i_28_) {
         anInt4892++;
-        if ((anInt4873 ^ 0xffffffff) == 0)
+        if (anInt4873 == -1)
             throw new RuntimeException();
         int i_29_ = 1 << i_27_;
         if (i_28_ == ((i_29_ ^ 0xffffffff) & anInt4884 ^ 0xffffffff)) {
             anInt4882 = class258_sub3.anInt8547;
             anInt4886 = class258_sub3.anInt8551;
-        } else if (((class258_sub3.anInt8547 ^ 0xffffffff)
-                != (anInt4882 ^ 0xffffffff))
+        } else if ((anInt4882 != class258_sub3.anInt8547)
                 || class258_sub3.anInt8551 != anInt4886)
             throw new RuntimeException();
         class258_sub3.method1963(anInt4873, i, 0,
@@ -407,9 +400,7 @@ final class Class206 implements Interface11 {
             throw new RuntimeException();
         int i_33_ = 1 << i;
         if ((anInt4884 & (i_33_ ^ 0xffffffff)) != 0) {
-            if (((anInt4882 ^ 0xffffffff)
-                    != (class348_sub42_sub2.anInt8572
-                    ^ 0xffffffff))
+            if ((class348_sub42_sub2.anInt8572 != anInt4882)
                     || (anInt4886
                     != class348_sub42_sub2.anInt8565))
                 throw new RuntimeException();

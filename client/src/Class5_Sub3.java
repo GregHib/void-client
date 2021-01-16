@@ -112,7 +112,7 @@ final class Class5_Sub3 extends Class5 {
                                         .method3374((byte) -75, 0);
                                 Class348_Sub42_Sub14
                                         .method3243(i_5_ ^ 0x1c2a, class348_sub47);
-                            } else if ((i ^ 0xffffffff) == -5) {
+                            } else if (i == 4) {
                                 Class318_Sub1_Sub4_Sub1.anInt10073++;
                                 Class348_Sub47 class348_sub47
                                         = (Class286_Sub3.method2148
@@ -127,7 +127,7 @@ final class Class5_Sub3 extends Class5 {
                                         .method3395((byte) -128, 0);
                                 Class348_Sub42_Sub14
                                         .method3243(126, class348_sub47);
-                            } else if ((i ^ 0xffffffff) == -6) {
+                            } else if (i == 5) {
                                 Class216.anInt4979++;
                                 Class348_Sub47 class348_sub47
                                         = (Class286_Sub3.method2148

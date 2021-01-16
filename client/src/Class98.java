@@ -27,7 +27,7 @@ final class Class98 {
     static final byte[] method878(String string, int i) {
         anInt1571++;
         int i_2_ = string.length();
-        if ((i_2_ ^ 0xffffffff) == -1)
+        if (i_2_ == 0)
             return new byte[0];
         int i_3_ = ~0x3 & 3 + i_2_;
         int i_4_ = i_3_ / 4 * 3;
@@ -35,8 +35,7 @@ final class Class98 {
                 || Class186_Sub1.method1399(7, string.charAt(i_3_ + -2)) == -1)
             i_4_ -= 2;
         else if (i_2_ <= i_3_ + -1
-                || (Class186_Sub1.method1399(7, string.charAt(i_3_ - 1))
-                ^ 0xffffffff) == 0)
+                || Class186_Sub1.method1399(7, string.charAt(i_3_ - 1)) == -1)
             i_4_--;
         if (i > -92)
             method877(-51, -45, (byte) -74);

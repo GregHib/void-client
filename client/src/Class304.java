@@ -23,10 +23,10 @@ final class Class304 {
         if (i_1_ > -32)
             method2290();
         anInt3848++;
-        if ((i_3_ ^ 0xffffffff) < (i ^ 0xffffffff)) {
+        if (i < i_3_) {
             i_0_ += i;
             i_2_ = -i + i_3_ >> 1976000866;
-            while ((--i_2_ ^ 0xffffffff) <= -1) {
+            while (--i_2_ >= 0) {
                 is[i_0_++] = (byte) 1;
                 is[i_0_++] = (byte) 1;
                 is[i_0_++] = (byte) 1;
@@ -133,9 +133,7 @@ final class Class304 {
                          = ((Class348_Sub42_Sub13)
                          Class233.aClass107_3022.method1003((byte) 126))) {
                 int i_9_;
-                if ((class348_sub42_sub13.anInt9615
-                        ^ 0xffffffff)
-                        != -2)
+                if (class348_sub42_sub13.anInt9615 != 1)
                     i_9_ = Class289.method2194(-1, class348_sub42_sub13);
                 else
                     i_9_ = (OutputStream_Sub2.method138
@@ -144,7 +142,7 @@ final class Class304 {
                                                     .aClass107_9621.aClass348_Sub42_1647
                                                     .aClass348_Sub42_7063)),
                                     false));
-                if ((i_9_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff))
+                if (i_6_ < i_9_)
                     i_6_ = i_9_;
             }
             i_6_ += 8;
@@ -162,7 +160,7 @@ final class Class304 {
             method2290();
         if (i_11_ + i_7_ > Class348_Sub42_Sub8_Sub2.anInt10432)
             i_11_ = Class348_Sub42_Sub8_Sub2.anInt10432 + -i_7_;
-        if ((i_11_ ^ 0xffffffff) > -1)
+        if (i_11_ < 0)
             i_11_ = 0;
         Class135_Sub1.anInt4717 = i_10_;
         Class5_Sub1.aBoolean8335 = true;

@@ -28,7 +28,7 @@ final class Class356 {
         anInt4387++;
         int i_0_ = 0;
         for (int i_1_ = 0;
-             (i_1_ ^ 0xffffffff) > (this.anInt4377 ^ 0xffffffff);
+             this.anInt4377 > i_1_;
              i_1_++) {
             Class348 class348 = this.aClass348Array4374[i_1_];
             for (Class348 class348_2_ = class348.aClass348_4294;
@@ -73,7 +73,7 @@ final class Class356 {
         anInt4380++;
         int i_4_ = 0;
         for (int i_5_ = 0;
-             (i_5_ ^ 0xffffffff) > (this.anInt4377 ^ 0xffffffff);
+             this.anInt4377 > i_5_;
              i_5_++) {
             Class348 class348 = this.aClass348Array4374[i_5_];
             for (Class348 class348_6_ = class348.aClass348_4294;
@@ -123,9 +123,7 @@ final class Class356 {
             for (aClass348_4389 = class348.aClass348_4294;
                  aClass348_4389 != class348;
                  aClass348_4389 = aClass348_4389.aClass348_4294) {
-                if ((aClass348_4389.aLong4291
-                        ^ 0xffffffffffffffffL)
-                        == (l ^ 0xffffffffffffffffL)) {
+                if (l == aClass348_4389.aLong4291) {
                     Class348 class348_7_ = aClass348_4389;
                     aClass348_4389
                             = aClass348_4389.aClass348_4294;
@@ -143,7 +141,7 @@ final class Class356 {
     final void method3481(int i) {
         anInt4375++;
         for (int i_8_ = i;
-             (i_8_ ^ 0xffffffff) > (this.anInt4377 ^ 0xffffffff);
+             this.anInt4377 > i_8_;
              i_8_++) {
             Class348 class348 = this.aClass348Array4374[i_8_];
             for (; ; ) {
@@ -166,8 +164,7 @@ final class Class356 {
             aClass348_4390 = class348.aClass348_4294;
             return class348;
         }
-        while ((anInt4391 ^ 0xffffffff)
-                > (this.anInt4377 ^ 0xffffffff)) {
+        while (this.anInt4377 > anInt4391) {
             Class348 class348
                     = (this.aClass348Array4374[anInt4391++]
                     .aClass348_4294);
@@ -216,7 +213,7 @@ final class Class356 {
     Class356(int i) {
         this.anInt4377 = i;
         this.aClass348Array4374 = new Class348[i];
-        for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > (i ^ 0xffffffff); i_11_++) {
+        for (int i_11_ = 0; i > i_11_; i_11_++) {
             Class348 class348
                     = this.aClass348Array4374[i_11_] = new Class348();
             class348.aClass348_4294 = class348;

@@ -69,7 +69,7 @@ final class Class16 {
         if (bool != false)
             aClass45_233 = null;
         anInt232++;
-        if ((Class348_Sub49.anInt7207 ^ 0xffffffff) == -2)
+        if (Class348_Sub49.anInt7207 == 1)
             return Class348_Sub40_Sub8.anInt9157;
         return 0;
     }

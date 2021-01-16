@@ -22,10 +22,10 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
             while_199_:
             do {
                 do {
-                    if ((i_1_ ^ 0xffffffff) != -1) {
+                    if (i_1_ != 0) {
                         if (i_1_ != 1) {
                             if (i_1_ != 2) {
-                                if ((i_1_ ^ 0xffffffff) != -4)
+                                if (i_1_ != 3)
                                     break while_200_;
                             } else
                                 break;
@@ -65,8 +65,8 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
                 int i_11_ = i_5_ * i_5_ >> 165795660;
                 int i_12_;
                 for (i_12_ = 0;
-                     ((i_11_ + i_10_ ^ 0xffffffff) > -16385
-                             && (i_12_ ^ 0xffffffff) > (anInt9343 ^ 0xffffffff));
+                     (i_11_ + i_10_ < 16384
+                             && anInt9343 > i_12_);
                      i_10_ = i_8_ * i_8_ >> 622958668) {
                     i_9_ = i_7_ + 2 * (i_9_ * i_8_ >> 743516524);
                     i_8_ = i_6_ + i_10_ - i_11_;
@@ -74,7 +74,7 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
                     i_11_ = i_9_ * i_9_ >> -830226996;
                 }
                 is[i_3_]
-                        = ((anInt9343 - 1 ^ 0xffffffff) >= (i_12_ ^ 0xffffffff) ? 0
+                        = (i_12_ >= anInt9343 - 1 ? 0
                         : (i_12_ << -306783156) / anInt9343);
             }
         }

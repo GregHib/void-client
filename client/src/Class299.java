@@ -16,7 +16,7 @@ abstract class Class299 {
             i_2_ += 16;
             i >>>= 16;
         }
-        if ((i ^ 0xffffffff) <= -257) {
+        if (i >= 256) {
             i >>>= 8;
             i_2_ += 8;
         }
@@ -24,7 +24,7 @@ abstract class Class299 {
             i_2_ += 4;
             i >>>= 4;
         }
-        if ((i ^ 0xffffffff) <= -5) {
+        if (i >= 4) {
             i_2_ += 2;
             i >>>= 2;
         }
@@ -53,7 +53,7 @@ abstract class Class299 {
             method2255(-118, -20, (byte) -121, 100, -62, 77, -119);
         int i_9_ = 0;
         int i_10_ = -i_5_ + i;
-        if ((i_10_ ^ 0xffffffff) > -1)
+        if (i_10_ < 0)
             i_10_ = 0;
         int i_11_ = i;
         int i_12_ = -i;
@@ -72,7 +72,7 @@ abstract class Class299 {
             i_15_ += 2;
             i_14_ += i_16_;
             i_12_ += i_15_;
-            if (i_14_ >= 0 && (i_13_ ^ 0xffffffff) <= -2) {
+            if (i_14_ >= 0 && i_13_ >= 1) {
                 Class348_Sub49_Sub2.anIntArray9757[i_13_] = i_9_;
                 i_13_--;
                 i_14_ -= i_13_ << -840432831;
@@ -110,7 +110,7 @@ abstract class Class299 {
             int i_33_ = i_3_ - i_11_;
             if (i_10_ > i_9_) {
                 int i_34_
-                        = ((i_13_ ^ 0xffffffff) <= (i_9_ ^ 0xffffffff) ? i_13_
+                        = (i_9_ <= i_13_ ? i_13_
                         : Class348_Sub49_Sub2.anIntArray9757[i_9_]);
                 int i_35_ = i_34_ + i_3_;
                 int i_36_ = i_3_ + -i_34_;

@@ -101,7 +101,7 @@ final class Class233 {
                     }
                     int i_10_ = i_7_ - i_6_;
                     int i_11_;
-                    if ((2 + i_10_ ^ 0xffffffff) < -1601) {
+                    if (2 + i_10_ > 1600) {
                         i_11_
                                 = 1 - -Class299.method2253(i_10_, -86) - anInt3026;
                         i_10_ = (i_10_ >> i_11_) + 2;
@@ -120,10 +120,10 @@ final class Class233 {
                     while (class318_sub9 != class318_sub9_12_) {
                         anInt3034 = 0;
                         for (int i_15_ = 0;
-                             (i_15_ ^ 0xffffffff) > (i_10_ ^ 0xffffffff);
+                             i_10_ > i_15_;
                              i_15_++)
                             anIntArray3033[i_15_] = 0;
-                        for (int i_16_ = 0; (i_16_ ^ 0xffffffff) > -65;
+                        for (int i_16_ = 0; i_16_ < 64;
                              i_16_++)
                             anIntArray3035[i_16_] = 0;
                         for (/**/; class318_sub9 != class318_sub9_12_;
@@ -137,7 +137,7 @@ final class Class233 {
                                 i_13_ = class318_sub9_sub2.anInt8792;
                                 bool_14_ = false;
                             }
-                            if ((i_5_ ^ 0xffffffff) < -1
+                            if (i_5_ > 0
                                     && ((class318_sub9_sub2
                                     .anInt8792) != i_13_
                                     || (class318_sub9_sub2.aBoolean8794
@@ -147,8 +147,8 @@ final class Class233 {
                             }
                             int i_17_
                                     = anIntArray3032[i_5_++] + -i_6_ >> i_11_;
-                            if ((i_17_ ^ 0xffffffff) > -1601) {
-                                if ((anIntArray3033[i_17_] ^ 0xffffffff) > -65)
+                            if (i_17_ < 1600) {
+                                if (anIntArray3033[i_17_] < 64)
                                     aClass318_Sub9_Sub2ArrayArray3031
                                             [i_17_][anIntArray3033[i_17_]++]
                                             = class318_sub9_sub2;
@@ -167,7 +167,7 @@ final class Class233 {
                                 }
                             }
                         }
-                        if ((i_13_ ^ 0xffffffff) > -1)
+                        if (i_13_ < 0)
                             var_ha_Sub2.method3757(-1, -124);
                         else
                             var_ha_Sub2.method3757(i_13_, -100);
@@ -246,11 +246,11 @@ final class Class233 {
             float f_32_ = -f_20_ + f_23_;
             if (!var_ha_Sub2.aBoolean7775) {
                 for (int i_33_ = -1 + i; i_33_ >= 0; i_33_--) {
-                    int i_34_ = ((anIntArray3033[i_33_] ^ 0xffffffff) >= -65
+                    int i_34_ = (anIntArray3033[i_33_] <= 64
                             ? anIntArray3033[i_33_] : 64);
                     if (i_34_ > 0) {
                         for (int i_35_ = -1 + i_34_;
-                             (i_35_ ^ 0xffffffff) <= -1; i_35_--) {
+                             i_35_ >= 0; i_35_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2
                                     = (aClass318_Sub9_Sub2ArrayArray3031[i_33_]
                                     [i_35_]);
@@ -433,11 +433,11 @@ final class Class233 {
                 }
             } else {
                 for (int i_56_ = i - 1; i_56_ >= 0; i_56_--) {
-                    int i_57_ = ((anIntArray3033[i_56_] ^ 0xffffffff) < -65
+                    int i_57_ = (anIntArray3033[i_56_] > 64
                             ? 64 : anIntArray3033[i_56_]);
                     if (i_57_ > 0) {
                         for (int i_58_ = -1 + i_57_;
-                             (i_58_ ^ 0xffffffff) <= -1; i_58_--) {
+                             i_58_ >= 0; i_58_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2
                                     = (aClass318_Sub9_Sub2ArrayArray3031[i_56_]
                                     [i_58_]);
@@ -518,10 +518,10 @@ final class Class233 {
                             aClass348_Sub49_Sub1_3020.method3378(false, i_62_);
                             aClass348_Sub49_Sub1_3020.method3378(false, i_63_);
                         }
-                        if ((anIntArray3033[i_56_] ^ 0xffffffff) < -65) {
+                        if (anIntArray3033[i_56_] > 64) {
                             int i_68_ = -64 + anIntArray3033[i_56_] - 1;
                             for (int i_69_ = anIntArray3035[i_68_] - 1;
-                                 (i_69_ ^ 0xffffffff) <= -1; i_69_--) {
+                                 i_69_ >= 0; i_69_--) {
                                 Class318_Sub9_Sub2 class318_sub9_sub2
                                         = (aClass318_Sub9_Sub2ArrayArray3030[i_68_]
                                         [i_69_]);
@@ -631,9 +631,7 @@ final class Class233 {
                     }
                 }
             }
-            if ((aClass348_Sub49_Sub1_3020.anInt7197
-                    ^ 0xffffffff)
-                    != -1) {
+            if (aClass348_Sub49_Sub1_3020.anInt7197 != 0) {
                 anInterface2_3027.method11
                         (24,
                                 aClass348_Sub49_Sub1_3020.anInt7197,

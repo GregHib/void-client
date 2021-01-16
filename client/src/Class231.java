@@ -80,10 +80,8 @@ final class Class231 {
                     int i_9_ = (31 + i_4_ + Class348_Sub42_Sub5.anInt9532
                             + i_8_ * 16);
                     i_8_++;
-                    if (((class348_sub42_sub13
-                            .anInt9615)
-                            ^ 0xffffffff)
-                            == -2)
+                    if ((class348_sub42_sub13
+                            .anInt9615) == 1)
                         Class318_Sub2.method2494
                                 (i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_9_,
                                         var_ha,

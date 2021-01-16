@@ -44,7 +44,7 @@ final class Class232 {
 
     private final void method1646(Interface8 interface8, int i, int i_2_) {
         anInt3007++;
-        if ((i_2_ ^ 0xffffffff) != -1) {
+        if (i_2_ != 0) {
             method1648((byte) 121);
             if (i <= 107)
                 method1647(-124, -86);
@@ -73,11 +73,11 @@ final class Class232 {
             int i_9_ = 0;
             int i_10_ = i << i_5_;
             int i_11_ = i_4_ << i_5_;
-            for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff);
+            for (int i_12_ = 0; i_8_ > i_12_;
                  i_12_++) {
                 int i_13_
                         = var_s_Sub2.anInt4587 * (i_11_ - -i_12_) - -i_10_;
-                for (int i_14_ = 0; (i_8_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff);
+                for (int i_14_ = 0; i_14_ < i_8_;
                      i_14_++) {
                     short[] is
                             = var_s_Sub2.aShortArrayArray8267[i_13_++];
@@ -92,12 +92,12 @@ final class Class232 {
                 Class348_Sub49 class348_sub49 = new Class348_Sub49(i_9_ * 2);
                 if (!aHa_Sub2_3000.aBoolean7775) {
                     for (int i_15_ = 0;
-                         (i_15_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff); i_15_++) {
+                         i_8_ > i_15_; i_15_++) {
                         int i_16_
                                 = ((i_11_ - -i_15_) * var_s_Sub2.anInt4587
                                 - -i_10_);
                         for (int i_17_ = 0;
-                             (i_17_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff);
+                             i_8_ > i_17_;
                              i_17_++) {
                             short[] is = (var_s_Sub2
                                     .aShortArrayArray8267[i_16_++]);
@@ -110,7 +110,7 @@ final class Class232 {
                     }
                 } else {
                     for (int i_19_ = 0;
-                         (i_19_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff); i_19_++) {
+                         i_8_ > i_19_; i_19_++) {
                         int i_20_
                                 = (i_10_
                                 + (i_19_ + i_11_) * var_s_Sub2.anInt4587);
@@ -119,8 +119,7 @@ final class Class232 {
                                     .aShortArrayArray8267[i_20_++]);
                             if (is != null) {
                                 for (int i_22_ = 0;
-                                     ((is.length ^ 0xffffffff)
-                                             < (i_22_ ^ 0xffffffff));
+                                     (i_22_ < is.length);
                                      i_22_++)
                                     class348_sub49.method3337((byte) 107,
                                             (is[i_22_]
@@ -163,7 +162,7 @@ final class Class232 {
                 for (int i_27_ = -128; i_27_ < 0; i_27_++) {
                     i_24_ = (i_24_ << 135697608) + -i_24_;
                     for (int i_28_ = -128; i_28_ < 0; i_28_++) {
-                        if ((is[i_26_++] ^ 0xffffffff) != -1)
+                        if (is[i_26_++] != 0)
                             i_24_++;
                     }
                     i_26_ += i_25_ - 128;
@@ -174,20 +173,20 @@ final class Class232 {
                     anInt3010 = i_24_;
                     i_26_ = anInt3003 - -(i_25_ * anInt3002);
                     int i_29_ = 0;
-                    for (int i_30_ = -128; (i_30_ ^ 0xffffffff) > -1;
+                    for (int i_30_ = -128; i_30_ < 0;
                          i_30_++) {
                         for (int i_31_ = -128; i_31_ < 0; i_31_++) {
-                            if ((is[i_26_] ^ 0xffffffff) != -1)
+                            if (is[i_26_] != 0)
                                 is_23_[i_29_++] = (byte) 68;
                             else {
                                 int i_32_ = 0;
-                                if ((is[i_26_ - 1] ^ 0xffffffff) != -1)
+                                if (is[i_26_ - 1] != 0)
                                     i_32_++;
-                                if ((is[1 + i_26_] ^ 0xffffffff) != -1)
+                                if (is[1 + i_26_] != 0)
                                     i_32_++;
                                 if (is[-i_25_ + i_26_] != 0)
                                     i_32_++;
-                                if ((is[i_25_ + i_26_] ^ 0xffffffff) != -1)
+                                if (is[i_25_ + i_26_] != 0)
                                     i_32_++;
                                 is_23_[i_29_++] = (byte) (i_32_ * 17);
                             }

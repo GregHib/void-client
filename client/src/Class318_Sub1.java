@@ -110,8 +110,7 @@ abstract class Class318_Sub1 extends Class318 {
                                 i_10_ = (int) Class314.aFloat3938 & 0x3fff;
                             int i_11_ = Class70.anIntArray1207[i_10_];
                             int i_12_ = Class70.anIntArray1204[i_10_];
-                            if ((Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff)
-                                    != -5) {
+                            if (Class348_Sub40_Sub21.anInt9282 != 4) {
                                 i_11_ = (i_11_ * 256
                                         / (Class348_Sub49_Sub1.anInt9750
                                         + 256));
@@ -144,18 +143,16 @@ abstract class Class318_Sub1 extends Class318 {
                                 class42.anInt582,
                                 class46.anIntArray677,
                                 class46.anIntArray772);
-                        if ((class42.anInt584 ^ 0xffffffff) < -1) {
+                        if (class42.anInt584 > 0) {
                             for (int i_13_ = 0;
-                                 ((-1 + is.length / 2 ^ 0xffffffff)
-                                         < (i_13_ ^ 0xffffffff));
+                                 (i_13_ < -1 + is.length / 2);
                                  i_13_++) {
                                 int i_14_ = is[i_13_ * 2];
                                 int i_15_ = is[1 + 2 * i_13_];
                                 int i_16_ = is[2 + i_13_ * 2];
                                 int i_17_ = is[1 + 2 * (i_13_ - -1)];
                                 if (i_14_ <= i_16_) {
-                                    if ((i_16_ ^ 0xffffffff) == (i_14_
-                                            ^ 0xffffffff)
+                                    if (i_14_ == i_16_
                                             && i_15_ > i_17_) {
                                         int i_18_ = i_15_;
                                         i_15_ = i_17_;
@@ -235,7 +232,7 @@ abstract class Class318_Sub1 extends Class318 {
                         }
                     }
                     Class105 class105 = null;
-                    if ((class42.anInt578 ^ 0xffffffff) != 0) {
+                    if (class42.anInt578 != -1) {
                         class105
                                 = class42.method374(false, var_ha, (byte) 127);
                         if (class105 != null)
@@ -249,7 +246,7 @@ abstract class Class318_Sub1 extends Class318 {
                         i_29_ = class105.method969();
                     Class324 class324 = Class240.aClass324_4684;
                     Class143 class143 = Class258_Sub1.aClass143_8527;
-                    if ((class42.anInt576 ^ 0xffffffff) == -2) {
+                    if (class42.anInt576 == 1) {
                         class324 = Applet_Sub1.aClass324_20;
                         class143 = Class246.aClass143_3179;
                     }
@@ -297,9 +294,9 @@ abstract class Class318_Sub1 extends Class318 {
                 [this.aByte6381][i][i_31_]);
         long l_32_ = 0L;
         int i_33_ = 0;
-        for (/**/; (l_32_ ^ 0xffffffffffffffffL) >= -49L; l_32_ += 16L) {
+        for (/**/; l_32_ <= 48; l_32_ += 16L) {
             int i_34_ = (int) (0xffffL & l >> (int) l_32_);
-            if ((i_34_ ^ 0xffffffff) >= -1)
+            if (i_34_ <= 0)
                 break;
             class348_sub1s[i_33_++]
                     = (Class239_Sub14.aClass211Array5993[i_34_ + -1]

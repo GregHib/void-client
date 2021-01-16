@@ -20,7 +20,7 @@ final class Class239_Sub22 extends Class239 {
 
     final void method1716(boolean bool) {
         if (this.anInt3138 != 1
-                && (this.anInt3138 ^ 0xffffffff) != -1)
+                && this.anInt3138 != 0)
             this.anInt3138 = method1710(20014);
         anInt6070++;
         if (bool != false)

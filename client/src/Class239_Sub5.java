@@ -99,8 +99,8 @@ final class Class239_Sub5 extends Class239 {
         Class286_Sub7.anIntArray6290[Class328_Sub1.anInt6513++] = i_3_;
         Class348_Sub5.aByteArray6624[i_3_] = (byte) 0;
         Class348_Sub42_Sub4.anInt9513 = 0;
-        for (int i_8_ = 1; (i_8_ ^ 0xffffffff) > -2049; i_8_++) {
-            if ((i_3_ ^ 0xffffffff) != (i_8_ ^ 0xffffffff)) {
+        for (int i_8_ = 1; i_8_ < 2048; i_8_++) {
+            if (i_8_ != i_3_) {
                 int i_9_ = class348_sub49_sub2.method3410((byte) -24, 18);
                 int i_10_ = i_9_ >> -916532240;
                 int i_11_ = (i_9_ & 0xff78) >> 1563982568;
@@ -129,7 +129,7 @@ final class Class239_Sub5 extends Class239 {
             method1740(35, -126, false);
         anInt5885++;
         if (!Class195.aBoolean5013 || Class318_Sub1_Sub2.anInt8731 > i
-                || (i ^ 0xffffffff) < (Class239_Sub29.anInt6151 ^ 0xffffffff))
+                || Class239_Sub29.anInt6151 < i)
             return null;
         return (OutputStream_Sub1.aClass110_Sub1Array97
                 [i + -Class318_Sub1_Sub2.anInt8731]);
@@ -146,8 +146,8 @@ final class Class239_Sub5 extends Class239 {
         anInt5888++;
         if (bool != false)
             method1710(-110);
-        if ((this.anInt3138 ^ 0xffffffff) != -2
-                && (this.anInt3138 ^ 0xffffffff) != -1)
+        if (this.anInt3138 != 1
+                && this.anInt3138 != 0)
             this.anInt3138 = method1710(20014);
     }
 }

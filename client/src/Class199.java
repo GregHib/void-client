@@ -176,7 +176,7 @@ final class Class199 {
     }
 
     static {
-        for (int i = 0; (i ^ 0xffffffff) > -4097; i++)
+        for (int i = 0; i < 4096; i++)
             anIntArray2631[i] = Class252.method1918(-3358, i);
         anIntArray2632 = new int[32];
         anIntArray2633 = new int[32];

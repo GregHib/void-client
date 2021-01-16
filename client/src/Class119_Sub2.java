@@ -41,9 +41,9 @@ final class Class119_Sub2 extends Class119 implements Interface8 {
         i_2_ &= 0x3;
         if (i_2_ == 0)
             return i_3_;
-        if ((i_2_ ^ 0xffffffff) == -2)
+        if (i_2_ == 1)
             return 4095 - i_4_;
-        if ((i_2_ ^ 0xffffffff) == -3)
+        if (i_2_ == 2)
             return 4095 + -i_3_;
         return i_4_;
     }

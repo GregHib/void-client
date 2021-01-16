@@ -33,11 +33,11 @@ final class Class208 implements Runnable {
                 for (; ; ) {
                     if (anIOException2704 != null)
                         return;
-                    if ((anInt2713 ^ 0xffffffff) > (anInt2705 ^ 0xffffffff))
+                    if (anInt2705 > anInt2713)
                         i = -anInt2705 + anInt2715 - -anInt2713;
                     else
                         i = anInt2713 - anInt2705;
-                    if ((i ^ 0xffffffff) < -1)
+                    if (i > 0)
                         break;
                     try {
                         this.wait();
@@ -93,7 +93,7 @@ final class Class208 implements Runnable {
             throws IOException {
         anInt2709++;
         if (i_1_ < 0 || i_2_ < 0
-                || (is.length ^ 0xffffffff) > (i_1_ + i_2_ ^ 0xffffffff))
+                || i_1_ + i_2_ > is.length)
             throw new IOException();
         synchronized (this) {
             if (anIOException2704 != null)

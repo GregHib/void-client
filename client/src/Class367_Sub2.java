@@ -164,8 +164,7 @@ final class Class367_Sub2 extends Class367 {
                 if (bool != true)
                     method3536(9, 65, -72, 107, null);
                 for (int i = 0;
-                     ((i ^ 0xffffffff)
-                             > (Class348_Sub42_Sub12.anInt9604 ^ 0xffffffff));
+                     (Class348_Sub42_Sub12.anInt9604 > i);
                      i++) {
                     String string_9_ = Class51.aStringArray932[i];
                     if (string_9_.startsWith("*"))

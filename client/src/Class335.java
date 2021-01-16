@@ -27,44 +27,34 @@ final class Class335 {
             Class225 class225 = class348_sub9
                     .aClass318_Sub1_Sub3_Sub3_Sub1_6691
                     .method2422((byte) 72);
-            if ((class348_sub9
-                    .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268
-                    ^ 0xffffffff) == 0
+            if (class348_sub9
+                    .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268 == -1
                     || class348_sub9
                             .aClass318_Sub1_Sub3_Sub3_Sub1_6691.aBoolean10213)
                 i_4_ = 0;
             else if ((class225.anInt2919
                     == class348_sub9
                             .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268)
-                    || ((class348_sub9
-                            .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268
-                    ^ 0xffffffff)
-                    == (class225.anInt2920 ^ 0xffffffff))
+                    || (class225.anInt2920 == class348_sub9
+                    .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268)
                     || (class225.anInt2949
                     == class348_sub9
                             .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268)
-                    || ((class225.anInt2914 ^ 0xffffffff)
-                    == (class348_sub9
-                            .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268
-                    ^ 0xffffffff)))
+                    || (class348_sub9
+                    .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268 == class225.anInt2914))
                 i_4_ = 2;
-            else if (((class225.anInt2940 ^ 0xffffffff)
-                    == (class348_sub9
-                            .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268
-                    ^ 0xffffffff))
+            else if ((class348_sub9
+                    .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268 == class225.anInt2940)
                     || (class225.anInt2924
                     == class348_sub9
                             .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268)
-                    || ((class348_sub9
-                            .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268
-                    ^ 0xffffffff)
-                    == (class225.anInt2947 ^ 0xffffffff))
+                    || (class225.anInt2947 == class348_sub9
+                    .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268)
                     || (class348_sub9
                             .aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt10268
                     == class225.anInt2958))
                 i_4_ = 3;
-            if ((i_4_ ^ 0xffffffff)
-                    != (class348_sub9.anInt6675 ^ 0xffffffff)) {
+            if (class348_sub9.anInt6675 != i_4_) {
                 int i_5_
                         = Class8.method214((class348_sub9
                                 .aClass318_Sub1_Sub3_Sub3_Sub1_6691),
@@ -77,9 +67,7 @@ final class Class335 {
                                     .aClass170_10209),
                             -1);
                 if (class79 != null && i_5_ != -1) {
-                    if (((i_5_ ^ 0xffffffff)
-                            == (class348_sub9.anInt6685
-                            ^ 0xffffffff))
+                    if ((class348_sub9.anInt6685 == i_5_)
                             && (!class79.aBoolean1370
                             != class348_sub9.aBoolean6674)) {
                         class348_sub9.anInt6677
@@ -93,9 +81,7 @@ final class Class335 {
                             bool = true;
                         else {
                             class348_sub9.anInt6677 -= 512;
-                            if ((class348_sub9.anInt6677
-                                    ^ 0xffffffff)
-                                    >= -1) {
+                            if (class348_sub9.anInt6677 <= 0) {
                                 Class348_Sub43.aClass348_Sub16_Sub4_7065
                                         .method2880
                                                 (class348_sub9
@@ -179,27 +165,17 @@ final class Class335 {
                         && (class225.anInt2949
                         != class348_sub9
                                 .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268)
-                        && ((class225.anInt2914 ^ 0xffffffff)
-                        != (class348_sub9
-                                .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268
-                        ^ 0xffffffff))) {
-                    if (((class225.anInt2940 ^ 0xffffffff)
-                            == (class348_sub9
-                                    .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268
-                            ^ 0xffffffff))
+                        && (class348_sub9
+                        .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268 != class225.anInt2914)) {
+                    if ((class348_sub9
+                            .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268 == class225.anInt2940)
+                            || (class225.anInt2924 == class348_sub9
+                            .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268)
                             || ((class348_sub9
-                                    .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268
-                            ^ 0xffffffff)
-                            == (class225.anInt2924 ^ 0xffffffff))
-                            || ((class225.anInt2947 ^ 0xffffffff)
-                            == ((class348_sub9
-                                    .aClass318_Sub1_Sub3_Sub3_Sub2_6679
-                            .anInt10268)
-                            ^ 0xffffffff))
-                            || ((class348_sub9
-                                    .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268
-                            ^ 0xffffffff)
-                            == (class225.anInt2958 ^ 0xffffffff)))
+                            .aClass318_Sub1_Sub3_Sub3_Sub2_6679
+                            .anInt10268) == class225.anInt2947)
+                            || (class225.anInt2958 == class348_sub9
+                            .aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10268))
                         i_7_ = 3;
                 } else
                     i_7_ = 2;

@@ -77,12 +77,12 @@ final class Class19 {
         Class144 class144 = class297.method2240(972476528);
         while (class144.anInt1997 == 0)
             Class286_Sub5.method2161((byte) -97, 10L);
-        if ((class144.anInt1997 ^ 0xffffffff) == -3)
+        if (class144.anInt1997 == 2)
             return new Class57[0];
         int[] is = (int[]) class144.anObject1998;
         Class57[] class57s = new Class57[is.length >> -119668702];
         for (int i_7_ = 0;
-             (i_7_ ^ 0xffffffff) > (class57s.length ^ 0xffffffff); i_7_++) {
+             class57s.length > i_7_; i_7_++) {
             Class57 class57 = new Class57();
             class57s[i_7_] = class57;
             class57.anInt1047 = is[i_7_ << 1515882146];

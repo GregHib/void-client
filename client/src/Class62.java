@@ -49,8 +49,7 @@ final class Class62 {
             return -121L;
         anInt1113++;
         long l = System.currentTimeMillis();
-        if ((l ^ 0xffffffffffffffffL)
-                > (Class101_Sub1.aLong5663 ^ 0xffffffffffffffffL))
+        if (Class101_Sub1.aLong5663 > l)
             Class318_Sub1_Sub1.aLong8728 += Class101_Sub1.aLong5663 - l;
         Class101_Sub1.aLong5663 = l;
         return l + Class318_Sub1_Sub1.aLong8728;
@@ -61,7 +60,7 @@ final class Class62 {
         int i_3_;
         if (i_2_ <= 20000) {
             if (i_2_ <= 10000) {
-                if ((i_2_ ^ 0xffffffff) >= -5001) {
+                if (i_2_ <= 5000) {
                     Class348_Sub40_Sub12.method3076(0, true);
                     i_3_ = 1;
                 } else {
@@ -76,10 +75,8 @@ final class Class62 {
             Class133.method1140(120);
             i_3_ = 4;
         }
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub25_7271.method1829(-32350)
-                ^ 0xffffffff)
-                != (i_1_ ^ 0xffffffff)) {
+        if (i_1_ != Class316.aClass348_Sub51_3959
+                .aClass239_Sub25_7271.method1829(-32350)) {
             Class316.aClass348_Sub51_3959.method3429((byte) 74,
                     (Class316
                             .aClass348_Sub51_3959

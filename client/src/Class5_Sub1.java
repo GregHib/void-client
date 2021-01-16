@@ -113,15 +113,12 @@ class Class5_Sub1 extends Class5 {
                             do {
                                 if (i_26_ != -4) {
                                     if (i_26_ != -3) {
-                                        if ((i_26_ ^ 0xffffffff) != 1) {
+                                        if (i_26_ != -2) {
                                             if (i_26_ != -1) {
                                                 if (i_26_ == 0
-                                                        || ((i_26_ ^ 0xffffffff)
-                                                        == -2)
-                                                        || ((i_26_ ^ 0xffffffff)
-                                                        == -3)
-                                                        || ((i_26_ ^ 0xffffffff)
-                                                        == -4)
+                                                        || (i_26_ == 1)
+                                                        || (i_26_ == 2)
+                                                        || (i_26_ == 3)
                                                         || i_26_ == 9)
                                                     break while_1_;
                                                 break while_2_;
@@ -132,8 +129,7 @@ class Class5_Sub1 extends Class5 {
                                     }
                                 } else {
                                     if (i_16_ == i
-                                            && ((i_7_ ^ 0xffffffff)
-                                            == (i_17_ ^ 0xffffffff))) {
+                                            && (i_17_ == i_7_)) {
                                         Class348_Sub40_Sub30.anInt9388 = i_16_;
                                         Class115.anInt1753 = i_17_;
                                         return true;
@@ -183,9 +179,8 @@ class Class5_Sub1 extends Class5 {
                 }
             } while (false);
             i_26_ = 1 + Class223.anIntArrayArray2900[i_18_][i_19_];
-            if ((i_18_ ^ 0xffffffff) < -1
-                    && ((r.anIntArrayArray9723[i_18_ + -1][i_19_] ^ 0xffffffff)
-                    == -1)
+            if (i_18_ > 0
+                    && (r.anIntArrayArray9723[i_18_ + -1][i_19_] == 0)
                     && (is[-1 + i_25_][i_24_] & 0x42240000) == 0) {
                 Class367_Sub11.anIntArray7397[i_22_] = -1 + i_16_;
                 Class205.anIntArray2694[i_22_] = i_17_;
@@ -193,18 +188,17 @@ class Class5_Sub1 extends Class5 {
                 r.anIntArrayArray9723[i_18_ + -1][i_19_] = 2;
                 Class223.anIntArrayArray2900[-1 + i_18_][i_19_] = i_26_;
             }
-            if ((i_18_ ^ 0xffffffff) > -128
+            if (i_18_ < 127
                     && r.anIntArrayArray9723[1 + i_18_][i_19_] == 0
-                    && (0x60240000 & is[1 + i_25_][i_24_] ^ 0xffffffff) == -1) {
+                    && (0x60240000 & is[1 + i_25_][i_24_]) == 0) {
                 Class367_Sub11.anIntArray7397[i_22_] = i_16_ + 1;
                 Class205.anIntArray2694[i_22_] = i_17_;
                 r.anIntArrayArray9723[1 + i_18_][i_19_] = 8;
                 i_22_ = 0xfff & i_22_ - -1;
                 Class223.anIntArrayArray2900[1 + i_18_][i_19_] = i_26_;
             }
-            if ((i_19_ ^ 0xffffffff) < -1
-                    && ((r.anIntArrayArray9723[i_18_][i_19_ + -1] ^ 0xffffffff)
-                    == -1)
+            if (i_19_ > 0
+                    && (r.anIntArrayArray9723[i_18_][i_19_ + -1] == 0)
                     && (is[i_25_][i_24_ - 1] & 0x40a40000) == 0) {
                 Class367_Sub11.anIntArray7397[i_22_] = i_16_;
                 Class205.anIntArray2694[i_22_] = -1 + i_17_;
@@ -213,7 +207,7 @@ class Class5_Sub1 extends Class5 {
                 Class223.anIntArrayArray2900[i_18_][-1 + i_19_] = i_26_;
             }
             if (i_19_ < 127
-                    && (r.anIntArrayArray9723[i_18_][1 + i_19_] ^ 0xffffffff) == -1
+                    && r.anIntArrayArray9723[i_18_][1 + i_19_] == 0
                     && (0x48240000 & is[i_25_][i_24_ - -1]) == 0) {
                 Class367_Sub11.anIntArray7397[i_22_] = i_16_;
                 Class205.anIntArray2694[i_22_] = i_17_ + 1;
@@ -221,34 +215,32 @@ class Class5_Sub1 extends Class5 {
                 i_22_ = 0xfff & i_22_ + 1;
                 Class223.anIntArrayArray2900[i_18_][i_19_ + 1] = i_26_;
             }
-            if ((i_18_ ^ 0xffffffff) < -1 && i_19_ > 0
-                    && (r.anIntArrayArray9723[-1 + i_18_][i_19_ + -1]
-                    ^ 0xffffffff) == -1
-                    && (is[-1 + i_25_][i_24_ - 1] & 0x43a40000 ^ 0xffffffff) == -1
+            if (i_18_ > 0 && i_19_ > 0
+                    && r.anIntArrayArray9723[-1 + i_18_][i_19_ + -1] == 0
+                    && (is[-1 + i_25_][i_24_ - 1] & 0x43a40000) == 0
                     && (is[-1 + i_25_][i_24_] & 0x42240000) == 0
-                    && (0x40a40000 & is[i_25_][i_24_ - 1] ^ 0xffffffff) == -1) {
+                    && (0x40a40000 & is[i_25_][i_24_ - 1]) == 0) {
                 Class367_Sub11.anIntArray7397[i_22_] = -1 + i_16_;
                 Class205.anIntArray2694[i_22_] = i_17_ - 1;
                 i_22_ = 1 + i_22_ & 0xfff;
                 r.anIntArrayArray9723[i_18_ + -1][-1 + i_19_] = 3;
                 Class223.anIntArrayArray2900[i_18_ + -1][-1 + i_19_] = i_26_;
             }
-            if ((i_18_ ^ 0xffffffff) > -128 && (i_19_ ^ 0xffffffff) < -1
-                    && ((r.anIntArrayArray9723[i_18_ + 1][i_19_ - 1] ^ 0xffffffff)
-                    == -1)
-                    && (0x60e40000 & is[i_25_ - -1][i_24_ + -1] ^ 0xffffffff) == -1
-                    && (is[1 + i_25_][i_24_] & 0x60240000 ^ 0xffffffff) == -1
-                    && (is[i_25_][-1 + i_24_] & 0x40a40000 ^ 0xffffffff) == -1) {
+            if (i_18_ < 127 && i_19_ > 0
+                    && (r.anIntArrayArray9723[i_18_ + 1][i_19_ - 1] == 0)
+                    && (0x60e40000 & is[i_25_ - -1][i_24_ + -1]) == 0
+                    && (is[1 + i_25_][i_24_] & 0x60240000) == 0
+                    && (is[i_25_][-1 + i_24_] & 0x40a40000) == 0) {
                 Class367_Sub11.anIntArray7397[i_22_] = i_16_ + 1;
                 Class205.anIntArray2694[i_22_] = i_17_ - 1;
                 i_22_ = 0xfff & 1 + i_22_;
                 r.anIntArrayArray9723[1 + i_18_][-1 + i_19_] = 9;
                 Class223.anIntArrayArray2900[1 + i_18_][i_19_ + -1] = i_26_;
             }
-            if ((i_18_ ^ 0xffffffff) < -1 && (i_19_ ^ 0xffffffff) > -128
+            if (i_18_ > 0 && i_19_ < 127
                     && r.anIntArrayArray9723[-1 + i_18_][i_19_ - -1] == 0
-                    && (is[i_25_ + -1][i_24_ - -1] & 0x4e240000 ^ 0xffffffff) == -1
-                    && (0x42240000 & is[i_25_ - 1][i_24_] ^ 0xffffffff) == -1
+                    && (is[i_25_ + -1][i_24_ - -1] & 0x4e240000) == 0
+                    && (0x42240000 & is[i_25_ - 1][i_24_]) == 0
                     && (0x48240000 & is[i_25_][1 + i_24_]) == 0) {
                 Class367_Sub11.anIntArray7397[i_22_] = i_16_ - 1;
                 Class205.anIntArray2694[i_22_] = i_17_ + 1;
@@ -257,8 +249,7 @@ class Class5_Sub1 extends Class5 {
                 Class223.anIntArrayArray2900[-1 + i_18_][1 + i_19_] = i_26_;
             }
             if (i_18_ < 127 && i_19_ < 127
-                    && ((r.anIntArrayArray9723[1 + i_18_][1 + i_19_] ^ 0xffffffff)
-                    == -1)
+                    && (r.anIntArrayArray9723[1 + i_18_][1 + i_19_] == 0)
                     && (0x78240000 & is[i_25_ - -1][1 + i_24_]) == 0
                     && (0x60240000 & is[1 + i_25_][i_24_]) == 0
                     && (0x48240000 & is[i_25_][i_24_ - -1]) == 0) {

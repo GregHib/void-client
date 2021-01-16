@@ -13,7 +13,7 @@ abstract class aa {
     }
 
     static final void method159(int i) {
-        if ((Class260.anInt3312 ^ 0xffffffff) < -1) {
+        if (Class260.anInt3312 > 0) {
             int i_1_ = 0;
             for (int i_2_ = 0; Class286_Sub1.aStringArray6200.length > i_2_;
                  i_2_++) {
@@ -75,19 +75,19 @@ abstract class aa {
         int i_11_ = (int) (256.0 * d_8_);
         int i_12_ = (int) (256.0 * d_9_);
         int i_13_ = (int) (256.0 * d_10_);
-        if ((i_12_ ^ 0xffffffff) > -1)
+        if (i_12_ < 0)
             i_12_ = 0;
-        else if ((i_12_ ^ 0xffffffff) < -256)
+        else if (i_12_ > 255)
             i_12_ = 255;
         if (i_13_ < 0)
             i_13_ = 0;
         else if (i_13_ > 255)
             i_13_ = 255;
-        if ((i_13_ ^ 0xffffffff) < -244)
+        if (i_13_ > 243)
             i_12_ >>= 4;
         else if (i_13_ > 217)
             i_12_ >>= 3;
-        else if ((i_13_ ^ 0xffffffff) < -193)
+        else if (i_13_ > 192)
             i_12_ >>= 2;
         else if (i_13_ > 179)
             i_12_ >>= 1;

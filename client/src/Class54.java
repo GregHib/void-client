@@ -56,7 +56,7 @@ final class Class54 {
         do {
             do {
                 if (i_6_ != 0) {
-                    if ((i_6_ ^ 0xffffffff) != -2) {
+                    if (i_6_ != 1) {
                         if (i_6_ == 2)
                             break;
                         break while_4_;
@@ -72,9 +72,9 @@ final class Class54 {
             } while (false);
             if (Class314.anInt3939 < i_4_)
                 Class314.anInt3939 = i_4_;
-            if ((i_2_ ^ 0xffffffff) > (Class314.anInt3941 ^ 0xffffffff))
+            if (Class314.anInt3941 > i_2_)
                 Class314.anInt3941 = i_2_;
-            if ((i_5_ ^ 0xffffffff) > (Class239.anInt3142 ^ 0xffffffff))
+            if (Class239.anInt3142 > i_5_)
                 Class239.anInt3142 = i_5_;
             if (i > Class348_Sub3.anInt6585)
                 Class348_Sub3.anInt6585 = i;

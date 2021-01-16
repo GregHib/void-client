@@ -40,7 +40,7 @@ final class Class239_Sub1 extends Class239 {
 
     static final void method1721(String string, byte i) {
         anInt5849++;
-        if (r.aBoolean9722 && (0x18 & Class38.anInt500 ^ 0xffffffff) != -1) {
+        if (r.aBoolean9722 && (0x18 & Class38.anInt500) != 0) {
             int i_2_ = -88 / ((i - -33) / 37);
             boolean bool = false;
             int i_3_ = Class328_Sub1.anInt6513;
@@ -56,7 +56,7 @@ final class Class239_Sub1 extends Class239 {
                         == Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907)
                         && (0x10 & Class38.anInt500) != 0)
                         || (class318_sub1_sub3_sub3_sub2 != null
-                        && (Class38.anInt500 & 0x8 ^ 0xffffffff) != -1))) {
+                        && (Class38.anInt500 & 0x8) != 0))) {
                     Class228.anInt2975++;
                     Class348_Sub47 class348_sub47
                             = Class286_Sub3.method2148(Class52.aClass351_4907,
@@ -101,7 +101,7 @@ final class Class239_Sub1 extends Class239 {
 
     final void method1716(boolean bool) {
         if (this.anInt3138 != 1
-                && (this.anInt3138 ^ 0xffffffff) != -1)
+                && this.anInt3138 != 0)
             this.anInt3138 = method1710(20014);
         if (bool == false)
             anInt5846++;
@@ -114,7 +114,7 @@ final class Class239_Sub1 extends Class239 {
     static final boolean method1722(int i, int i_5_, byte i_6_) {
         int i_7_ = 92 % ((i_6_ - 48) / 32);
         anInt5848++;
-        return (0x10000 & i ^ 0xffffffff) != -1;
+        return (0x10000 & i) != 0;
     }
 
     public static void method1723(byte i) {

@@ -26,7 +26,7 @@ final class Class188 {
         if (i != -35)
             method1411(true);
         anInt2519++;
-        return (i_1_ & 0x800) != 0 && (0x37 & i_0_ ^ 0xffffffff) != -1;
+        return (i_1_ & 0x800) != 0 && (0x37 & i_0_) != 0;
     }
 
     final boolean method1413(Class258_Sub1 class258_sub1,

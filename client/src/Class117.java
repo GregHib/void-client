@@ -30,18 +30,18 @@ final class Class117 {
 
     private final void method1065(Class348_Sub49 class348_sub49, int i,
                                   int i_0_) {
-        if ((i_0_ ^ 0xffffffff) == -2)
+        if (i_0_ == 1)
             this.aChar1778
                     = Class50_Sub1.method462(class348_sub49.method3388(-91), -128);
-        else if ((i_0_ ^ 0xffffffff) == -3)
+        else if (i_0_ == 2)
             this.aChar1779
                     = Class50_Sub1.method462(class348_sub49.method3388(-119),
                     -128);
-        else if ((i_0_ ^ 0xffffffff) == -4)
+        else if (i_0_ == 3)
             aString1774 = class348_sub49.method3377((byte) 86);
         else if (i_0_ == 4)
             anInt1764 = class348_sub49.method3385((byte) -126);
-        else if (i_0_ == 5 || (i_0_ ^ 0xffffffff) == -7) {
+        else if (i_0_ == 5 || i_0_ == 6) {
             int i_1_ = class348_sub49.method3330(i ^ ~0x3235ab57);
             this.aClass356_1767
                     = new Class356(Class33.method340(i_1_, (byte) 108));

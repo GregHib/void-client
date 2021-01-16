@@ -27,14 +27,13 @@ final class Class211 {
                                     Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt2732++;
         int i_1_ = class348_sub49_sub2.method3410((byte) -24, 2);
-        if ((i_1_ ^ 0xffffffff) == -1) {
+        if (i_1_ == 0) {
             if (class348_sub49_sub2.method3410((byte) -24, 1) != 0)
                 method1538(i, (byte) 105, class348_sub49_sub2);
             int i_2_ = class348_sub49_sub2.method3410((byte) -24, 6);
             int i_3_ = class348_sub49_sub2.method3410((byte) -24, 6);
             boolean bool
-                    = ((class348_sub49_sub2.method3410((byte) -24, 1) ^ 0xffffffff)
-                    == -2);
+                    = (class348_sub49_sub2.method3410((byte) -24, 1) == 1);
             if (bool)
                 Class18.anIntArray279[Class101_Sub3.anInt5768++] = i;
             if (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i] != null)
@@ -78,7 +77,7 @@ final class Class211 {
             Class348_Sub17.aClass359Array6802[i] = null;
             return true;
         }
-        if ((i_1_ ^ 0xffffffff) == -2) {
+        if (i_1_ == 1) {
             int i_10_ = class348_sub49_sub2.method3410((byte) -24, 2);
             int i_11_
                     = Class348_Sub17.aClass359Array6802[i].anInt4420;
@@ -96,19 +95,19 @@ final class Class211 {
             int i_16_ = 0x3 & i_13_ + (i_15_ >> -890531620);
             int i_17_ = (i_15_ & 0x3fd366) >> -1713508850;
             int i_18_ = 0xff & i_15_;
-            if ((i_14_ ^ 0xffffffff) == -1) {
+            if (i_14_ == 0) {
                 i_17_--;
                 i_18_--;
             }
-            if ((i_14_ ^ 0xffffffff) == -2)
+            if (i_14_ == 1)
                 i_18_--;
-            if ((i_14_ ^ 0xffffffff) == -3) {
+            if (i_14_ == 2) {
                 i_18_--;
                 i_17_++;
             }
             if (i_14_ == 3)
                 i_17_--;
-            if ((i_14_ ^ 0xffffffff) == -5)
+            if (i_14_ == 4)
                 i_17_++;
             if (i_14_ == 5) {
                 i_17_--;
@@ -116,7 +115,7 @@ final class Class211 {
             }
             if (i_14_ == 6)
                 i_18_++;
-            if ((i_14_ ^ 0xffffffff) == -8) {
+            if (i_14_ == 7) {
                 i_17_++;
                 i_18_++;
             }
@@ -201,20 +200,18 @@ final class Class211 {
                                                                 do {
                                                                     if (i_38_
                                                                             != 2) {
-                                                                        if ((i_38_
-                                                                                ^ 0xffffffff)
-                                                                                != -4) {
+                                                                        if (i_38_ != 3) {
                                                                             if (i_38_ != 4) {
-                                                                                if ((i_38_ ^ 0xffffffff) != -6) {
-                                                                                    if ((i_38_ ^ 0xffffffff) != -13) {
-                                                                                        if ((i_38_ ^ 0xffffffff) != -14) {
+                                                                                if (i_38_ != 5) {
+                                                                                    if (i_38_ != 12) {
+                                                                                        if (i_38_ != 13) {
                                                                                             if (i_38_ != 10) {
-                                                                                                if ((i_38_ ^ 0xffffffff) != -12) {
-                                                                                                    if ((i_38_ ^ 0xffffffff) != -7) {
+                                                                                                if (i_38_ != 11) {
+                                                                                                    if (i_38_ != 6) {
                                                                                                         if (i_38_ != 7) {
-                                                                                                            if ((i_38_ ^ 0xffffffff) != -9) {
-                                                                                                                if ((i_38_ ^ 0xffffffff) != -10) {
-                                                                                                                    if ((i_38_ ^ 0xffffffff) != -15) {
+                                                                                                            if (i_38_ != 8) {
+                                                                                                                if (i_38_ != 9) {
+                                                                                                                    if (i_38_ != 14) {
                                                                                                                         if (i_38_ != 15) {
                                                                                                                             if (i_38_ == 16)
                                                                                                                                 break while_68_;
@@ -380,9 +377,9 @@ final class Class211 {
                         do {
                             do {
                                 if (i_42_ != 1) {
-                                    if ((i_42_ ^ 0xffffffff) != -4) {
+                                    if (i_42_ != 3) {
                                         if (i_42_ != 4) {
-                                            if ((i_42_ ^ 0xffffffff) != -3) {
+                                            if (i_42_ != 2) {
                                                 if (i_42_ == 5)
                                                     break while_72_;
                                                 break while_73_;
@@ -407,7 +404,7 @@ final class Class211 {
                         i_40_ = i_41_;
                         break while_74_;
                     } while (false);
-                    i_40_ = ((i_41_ ^ 0xffffffff) <= -1025 ? -i_41_ + 2048
+                    i_40_ = (i_41_ >= 1024 ? -i_41_ + 2048
                             : i_41_) << -203822847;
                     break while_74_;
                 } while (false);
@@ -433,7 +430,7 @@ final class Class211 {
             this.aBoolean2737
                     = (0x8 & this.anInt2731) != 0;
             this.aBoolean2749
-                    = (this.anInt2731 & 0x10 ^ 0xffffffff) != -1;
+                    = (this.anInt2731 & 0x10) != 0;
             this.anInt2731 = 0x7 & this.anInt2731;
             int i_43_ = class348_sub49.method3330(842397944) << i;
             int i_44_ = class348_sub49.method3330(842397944) << i;
@@ -442,12 +439,11 @@ final class Class211 {
             int i_47_ = 1 + i_46_ * 2;
             this.aShortArray2742 = new short[i_47_];
             for (int i_48_ = 0;
-                 ((this.aShortArray2742.length ^ 0xffffffff)
-                         < (i_48_ ^ 0xffffffff));
+                 (i_48_ < this.aShortArray2742.length);
                  i_48_++) {
                 int i_49_ = (short) class348_sub49.method3330(842397944);
                 int i_50_ = i_49_ >>> 1797513576;
-                if ((i_50_ ^ 0xffffffff) <= (i_47_ ^ 0xffffffff))
+                if (i_47_ <= i_50_)
                     i_50_ = i_47_ - 1;
                 int i_51_ = 0xff & i_49_;
                 if (-i_50_ + i_47_ < i_51_)

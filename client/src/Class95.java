@@ -14,7 +14,7 @@ final class Class95 {
         anInt1539++;
         if (bool != false)
             method868(89, 115, true);
-        if ((i ^ 0xffffffff) == -2 || (i ^ 0xffffffff) == -4)
+        if (i == 1 || i == 3)
             return Class348_Sub42_Sub10.anIntArray9572[i_0_ & 0x3];
         return Class348_Sub42_Sub20.anIntArray9714[i_0_ & 0x3];
     }

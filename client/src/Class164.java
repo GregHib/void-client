@@ -21,18 +21,13 @@ final class Class164 {
     }
 
     static final int method1278(int i) {
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub11_7265.method1768(i + -3690)
-                ^ 0xffffffff)
-                == -1) {
-            for (int i_0_ = 0; ((Class348_Sub42_Sub19.anInt9699 ^ 0xffffffff)
-                    < (i_0_ ^ 0xffffffff)); i_0_++) {
-                if ((Class348_Sub42_Sub5.anInterface6Array9534[i_0_]
-                        .method28((byte) 31)
-                        ^ 0xffffffff) == -116
-                        || (Class348_Sub42_Sub5.anInterface6Array9534[i_0_]
-                        .method28((byte) 71)
-                        ^ 0xffffffff) == -84) {
+        if (Class316.aClass348_Sub51_3959
+				.aClass239_Sub11_7265.method1768(i + -3690) == 0) {
+            for (int i_0_ = 0; (i_0_ < Class348_Sub42_Sub19.anInt9699); i_0_++) {
+                if (Class348_Sub42_Sub5.anInterface6Array9534[i_0_]
+						.method28((byte) 31) == 115
+                        || Class348_Sub42_Sub5.anInterface6Array9534[i_0_]
+						.method28((byte) 71) == 83) {
                     Class316.aClass348_Sub51_3959.method3429
                             ((byte) 74,
                                     (Class316.aClass348_Sub51_3959
@@ -49,10 +44,9 @@ final class Class164 {
             int i_1_ = (int) ((runtime.totalMemory() + -runtime.freeMemory())
                     / 1024L);
             long l = Class62.method599(i + 28559);
-            if ((Class348_Sub17.aLong6791 ^ 0xffffffffffffffffL) == -1L)
+            if (Class348_Sub17.aLong6791 == 0)
                 Class348_Sub17.aLong6791 = l;
-            if (i_1_ > 16384 && (-Class348_Sub17.aLong6791 + l
-                    ^ 0xffffffffffffffffL) > -5001L) {
+            if (i_1_ > 16384 && -Class348_Sub17.aLong6791 + l < 5000) {
                 if (-Class173.aLong2286 + l > 1000L) {
                     System.gc();
                     Class173.aLong2286 = l;
@@ -90,7 +84,7 @@ final class Class164 {
             i_2_ += Class13.aClass314_Sub1Array223[13].method2349(1);
             i_2_ = i_2_ + (!bool ? Class348_Sub40_Sub17_Sub1.aClass45_10426
                     .method398((byte) -31) : 100);
-            if ((i_2_ ^ 0xffffffff) != -401)
+            if (i_2_ != 400)
                 return i_2_ / 4;
             Class348_Sub31.anInt6924
                     = Class286_Sub7.aClass45_6277.method389(77);
@@ -104,15 +98,14 @@ final class Class164 {
                     Class348_Sub33.anInt6967,
                     Class348_Sub40_Sub17_Sub1.aClass45_10426);
             int[] is = Class186_Sub1.aClass111_5813.method1046(i_3_, 0);
-            if ((is.length ^ 0xffffffff) == -1)
+            if (is.length == 0)
                 is = Class186_Sub1.aClass111_5813.method1046(0, 0);
             Class106 class106 = new Class106(Class286_Sub7.aClass45_6277,
                     Class104.aClass45_1627);
-            if ((is.length ^ 0xffffffff) < -1) {
+            if (is.length > 0) {
                 Class182.anInterface16Array2447 = new Interface16[is.length];
                 for (int i_4_ = 0;
-                     ((i_4_ ^ 0xffffffff)
-                             > (Class182.anInterface16Array2447.length ^ 0xffffffff));
+                     (Class182.anInterface16Array2447.length > i_4_);
                      i_4_++)
                     Class182.anInterface16Array2447[i_4_]
                             = new Class195(Class186_Sub1.aClass111_5813
@@ -127,18 +120,15 @@ final class Class164 {
         if (Class56.aClass56_1027 == Class348_Sub42_Sub15.aClass56_9660) {
             int i_5_ = Class348_Sub50.method3420(0);
             int i_6_ = Class348_Sub42_Sub16.method3256(2);
-            if ((i_5_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff))
+            if (i_6_ > i_5_)
                 return 100 * i_5_ / i_6_;
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1028) {
             if (Class182.anInterface16Array2447 != null
-                    && ((Class182.anInterface16Array2447.length ^ 0xffffffff)
-                    < -1)) {
-                if ((Class182.anInterface16Array2447[0].method60(-19079)
-                        ^ 0xffffffff)
-                        > -101)
+                    && (Class182.anInterface16Array2447.length > 0)) {
+                if (Class182.anInterface16Array2447[0].method60(-19079) < 100)
                     return 0;
-                if ((Class182.anInterface16Array2447.length ^ 0xffffffff) < -2
+                if (Class182.anInterface16Array2447.length > 1
                         && Class186_Sub1.aClass111_5813.method1044(86)
                         && (Class182.anInterface16Array2447[1].method60(i + 9581)
                         < 100))
@@ -149,7 +139,7 @@ final class Class164 {
             Class348_Sub49.method3379(2, 1);
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1029) {
-            for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -5; i_7_++)
+            for (int i_7_ = 0; i_7_ < 4; i_7_++)
                 Class348_Sub45.aClass361Array7108[i_7_]
                         = Class105_Sub1.method988(Class348_Sub40_Sub3.anInt9109, 1,
                         Class367_Sub4.anInt7319);
@@ -228,7 +218,7 @@ final class Class164 {
                             .method2349(i + 28661)
                             * Class8.anIntArray164[i_9_] / 100);
             }
-            if ((i_8_ ^ 0xffffffff) != -101) {
+            if (i_8_ != 100) {
                 if (Class268.anInt3435 < 0)
                     Class268.anInt3435 = i_8_;
                 return ((i_8_ + -Class268.anInt3435) * 100
@@ -241,7 +231,7 @@ final class Class164 {
                     Class21.aClass45_322);
         }
         if (Class56.aClass56_1032 == Class348_Sub42_Sub15.aClass56_9660) {
-            if ((Class345.anInt4270 ^ 0xffffffff) == 0)
+            if (Class345.anInt4270 == -1)
                 Class345.anInt4270
                         = Class59_Sub2_Sub1.aClass45_8667.method417("scape main",
                         0);
@@ -253,7 +243,7 @@ final class Class164 {
                     Class348_Sub23_Sub1.aClass297_8992, (byte) 95);
         if (Class56.aClass56_1034 == Class348_Sub42_Sub15.aClass56_9660) {
             int i_10_ = Class239_Sub11.method1770((byte) -25);
-            if ((i_10_ ^ 0xffffffff) > -101)
+            if (i_10_ < 100)
                 return i_10_;
             Class263.method2013(Class367_Sub8.aClass45_7362
                             .method415((byte) 73, 1),
@@ -384,9 +374,8 @@ final class Class164 {
                     new Class28());
             Class150.method1202(0);
             Class348_Sub40_Sub12.aClass263_9195.method2008
-                    (i + 28539, (Class316.aClass348_Sub51_3959
-                            .aClass239_Sub27_7261.method1840(i + -3690)
-                            ^ 0xffffffff) == -1);
+                    (i + 28539, Class316.aClass348_Sub51_3959
+							.aClass239_Sub27_7261.method1840(i + -3690) == 0);
             Class318_Sub1_Sub3_Sub3.aClass170_10209 = new Class170();
             Class348_Sub40.method3038(-1);
             RuntimeException_Sub1.method4011(i + 29684,
@@ -433,10 +422,8 @@ final class Class164 {
             for (int i_13_ = 0;
                  Class239_Sub14.aClass259_5995.anInt3305 > i_13_;
                  i_13_++) {
-                if ((Class239_Sub14.aClass259_5995
-                        .method1976(i_13_, i ^ ~0x6fc0).anInt2135
-                        ^ 0xffffffff)
-                        == -1) {
+                if (Class239_Sub14.aClass259_5995
+						.method1976(i_13_, i ^ ~0x6fc0).anInt2135 == 0) {
                     Class286_Sub6.aBooleanArray6270[i_13_] = true;
                     Class335.anInt4168++;
                 }
@@ -473,7 +460,7 @@ final class Class164 {
                  i_14_++) {
                 Class46 class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427
                         [Class285.anInt4737][i_14_]);
-                if ((class46.anInt774 ^ 0xffffffff) == -6
+                if (class46.anInt774 == 5
                         && class46.anInt756 != -1
                         && !Class21.aClass45_322.method420(-10499,
                         (class46
@@ -516,10 +503,8 @@ final class Class164 {
                                 0);
             else if (Class316.aClass348_Sub51_3959
 					.aClass239_Sub25_7251.aBoolean6113
-                    && (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609
-                    ^ 0xffffffff) > -513
-                    && (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609
-                    ^ 0xffffffff) != -1)
+                    && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 < 512
+                    && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 != 0)
                 Class316.aClass348_Sub51_3959.method3429
                         ((byte) 74,
                                 (Class316.aClass348_Sub51_3959
@@ -549,7 +534,7 @@ final class Class164 {
                                    int i_15_) {
         try {
             anInt2172++;
-            if ((i ^ 0xffffffff) == -1)
+            if (i == 0)
                 return "";
             if (i == 1) {
                 String string = strings[i_15_];
@@ -560,7 +545,7 @@ final class Class164 {
             int i_16_ = i + i_15_;
             int i_17_ = 0;
             for (int i_18_ = i_15_;
-                 (i_18_ ^ 0xffffffff) > (i_16_ ^ 0xffffffff); i_18_++) {
+				 i_16_ > i_18_; i_18_++) {
                 String string = strings[i_18_];
                 if (string == null)
                     i_17_ += 4;
@@ -569,7 +554,7 @@ final class Class164 {
             }
             StringBuffer stringbuffer = new StringBuffer(i_17_);
             for (int i_19_ = i_15_;
-                 (i_16_ ^ 0xffffffff) < (i_19_ ^ 0xffffffff); i_19_++) {
+				 i_19_ < i_16_; i_19_++) {
                 String string = strings[i_19_];
                 if (string == null)
                     stringbuffer.append("null");

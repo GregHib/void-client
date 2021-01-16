@@ -14,7 +14,7 @@ final class Class221 {
 
     final int method1607(int i, int i_0_, byte i_1_) {
         anInt2882++;
-        int i_2_ = ((i ^ 0xffffffff) > (Class321.anInt4017 ^ 0xffffffff)
+        int i_2_ = (Class321.anInt4017 > i
                 ? Class321.anInt4017 : i);
         if (Class5_Sub1.aClass221_8344 == this)
             return 0;

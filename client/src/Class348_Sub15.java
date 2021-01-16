@@ -35,7 +35,7 @@ final class Class348_Sub15 extends Class348 {
 
     static final void method2811(boolean bool) {
         anInt6777++;
-        if ((Class348_Sub36.anInt6992 ^ 0xffffffff) > -1) {
+        if (Class348_Sub36.anInt6992 < 0) {
             Class348_Sub36.anInt6992 = 0;
             Class244.anInt4609 = -1;
             Class48.anInt859 = -1;
@@ -45,13 +45,12 @@ final class Class348_Sub15 extends Class348 {
             Class48.anInt859 = -1;
             Class244.anInt4609 = -1;
         }
-        if ((Class245.anInt3170 ^ 0xffffffff) > -1) {
+        if (Class245.anInt3170 < 0) {
             Class48.anInt859 = -1;
             Class245.anInt3170 = 0;
             Class244.anInt4609 = -1;
         }
-        if ((Class245.anInt3170 ^ 0xffffffff)
-                < (Class75.anInt1267 ^ 0xffffffff)) {
+        if (Class75.anInt1267 < Class245.anInt3170) {
             Class245.anInt3170 = Class75.anInt1267;
             Class244.anInt4609 = -1;
             Class48.anInt859 = -1;

@@ -40,8 +40,8 @@ abstract class Class348_Sub31 extends Class348 {
     static final void method3009(int i, int i_3_, int i_4_, int i_5_, int i_6_,
                                  byte i_7_, int i_8_, int i_9_, int i_10_,
                                  int i_11_) {
-        if ((i_4_ ^ 0xffffffff) != (i_11_ ^ 0xffffffff)
-                || (i_9_ ^ 0xffffffff) != (i ^ 0xffffffff) || i_8_ != i_5_
+        if (i_11_ != i_4_
+                || i != i_9_ || i_8_ != i_5_
                 || i_3_ != i_6_) {
             int i_12_ = i_11_;
             int i_13_ = i_9_;
@@ -57,7 +57,7 @@ abstract class Class348_Sub31 extends Class348 {
             int i_23_ = -i_17_ + (-i_17_ + (i_19_ - -i_15_));
             int i_24_ = -i_14_ + i_16_;
             int i_25_ = i_17_ - i_15_;
-            for (int i_26_ = 128; (i_26_ ^ 0xffffffff) >= -4097;
+            for (int i_26_ = 128; i_26_ <= 4096;
                  i_26_ += 128) {
                 int i_27_ = i_26_ * i_26_ >> 722108876;
                 int i_28_ = i_27_ * i_26_ >> -811820148;
@@ -134,7 +134,7 @@ abstract class Class348_Sub31 extends Class348 {
         Class135_Sub2.method1156(-27, i_45_ + i_47_, is, i_47_ + i_54_, i_46_);
         while (i_52_ > 0) {
             boolean bool = i_55_ >= i_52_;
-            if ((i_66_ ^ 0xffffffff) > -1) {
+            if (i_66_ < 0) {
                 while (i_66_ < 0) {
                     i_67_ += i_78_;
                     i_66_ += i_74_;
@@ -144,7 +144,7 @@ abstract class Class348_Sub31 extends Class348 {
                 }
             }
             if (bool) {
-                if ((i_68_ ^ 0xffffffff) > -1) {
+                if (i_68_ < 0) {
                     while (i_68_ < 0) {
                         i_69_ += i_81_;
                         i_68_ += i_76_;
@@ -153,7 +153,7 @@ abstract class Class348_Sub31 extends Class348 {
                         i_76_ += i_73_;
                     }
                 }
-                if ((i_69_ ^ 0xffffffff) > -1) {
+                if (i_69_ < 0) {
                     i_69_ += i_81_;
                     i_68_ += i_76_;
                     i_76_ += i_73_;
@@ -165,7 +165,7 @@ abstract class Class348_Sub31 extends Class348 {
                 i_77_ -= i_72_;
                 i_82_ -= i_72_;
             }
-            if ((i_67_ ^ 0xffffffff) > -1) {
+            if (i_67_ < 0) {
                 i_67_ += i_78_;
                 i_66_ += i_74_;
                 i_78_ += i_71_;
@@ -222,15 +222,12 @@ abstract class Class348_Sub31 extends Class348 {
 
     static final void method3014(Class348_Sub49 class348_sub49, byte i) {
         anInt6914++;
-        if (((class348_sub49.aByteArray7154.length
-                - class348_sub49.anInt7197)
-                ^ 0xffffffff)
-                <= -2) {
+        if ((class348_sub49.aByteArray7154.length
+                - class348_sub49.anInt7197) >= 1) {
             int i_89_ = class348_sub49.method3387(255);
-            if (i_89_ >= 0 && (i_89_ ^ 0xffffffff) >= -2
-                    && ((class348_sub49.aByteArray7154.length
-                    - class348_sub49.anInt7197)
-                    ^ 0xffffffff) <= -3) {
+            if (i_89_ >= 0 && i_89_ <= 1
+                    && (class348_sub49.aByteArray7154.length
+                    - class348_sub49.anInt7197) >= 2) {
                 if (i != -40)
                     method3012(13, -47, -27, 107, -90, (byte) -19, -61, 36);
                 int i_90_ = class348_sub49.method3330(842397944);
@@ -240,13 +237,12 @@ abstract class Class348_Sub31 extends Class348 {
                     for (int i_91_ = 0; i_91_ < i_90_; i_91_++) {
                         int i_92_ = class348_sub49.method3330(842397944);
                         int i_93_ = class348_sub49.method3385((byte) -126);
-                        if (((i_92_ ^ 0xffffffff)
-                                > (Class77.anIntArray1303.length ^ 0xffffffff))
+                        if ((Class77.anIntArray1303.length > i_92_)
                                 && Class286_Sub6.aBooleanArray6270[i_92_]
                                 && ((Class239_Sub14.aClass259_5995
                                 .method1976(i_92_, -107)
                                 .aChar2132) != '1'
-                                || (i_93_ ^ 0xffffffff) <= 0 && i_93_ <= 1))
+                                || i_93_ >= -1 && i_93_ <= 1))
                             Class77.anIntArray1303[i_92_] = i_93_;
                     }
                 }

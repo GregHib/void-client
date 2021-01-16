@@ -314,15 +314,13 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
         i_25_ = (i & 0x7f) * i_25_ >> -598107193;
         if (i_25_ < 2)
             i_25_ = 2;
-        else if ((i_25_ ^ 0xffffffff) < -127)
+        else if (i_25_ > 126)
             i_25_ = 126;
         return i_25_ + (i & 0xff80);
     }
 
     static final void method3402(byte i) {
-        if ((Class297.aString3782.toLowerCase().indexOf("microsoft")
-                ^ 0xffffffff)
-                != 0) {
+        if (Class297.aString3782.toLowerCase().indexOf("microsoft") != -1) {
             Class285_Sub2.anIntArray8507[222] = 59;
             Class285_Sub2.anIntArray8507[187] = 27;
             Class285_Sub2.anIntArray8507[186] = 57;

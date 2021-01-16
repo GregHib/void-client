@@ -13,7 +13,7 @@ final class Class307 {
             int i_0_ = class45.method417(string, 0);
             if (i != -91)
                 return null;
-            if ((i_0_ ^ 0xffffffff) == 0)
+            if (i_0_ == -1)
                 return new Class252(0);
             int[] is = class45.method396(i_0_, i ^ ~0x5a);
             Class252 class252 = new Class252(is.length);
@@ -58,9 +58,7 @@ final class Class307 {
                     .anInt9542);
         int i_7_ = 0;
         for (int i_8_ = 0;
-             ((class348_sub13.anIntArray6757.length
-                     ^ 0xffffffff)
-                     < (i_8_ ^ 0xffffffff));
+             (i_8_ < class348_sub13.anIntArray6757.length);
              i_8_++) {
             if (class348_sub13.anIntArray6757[i_8_] == -1)
                 i_7_++;

@@ -42,7 +42,7 @@ final class Class146 {
         if (bool != true)
             return true;
         anInt2017++;
-        return (i_2_ & 0x800 ^ 0xffffffff) != -1;
+        return (i_2_ & 0x800) != 0;
     }
 
     public static void method1194(int i) {

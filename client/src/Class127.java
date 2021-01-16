@@ -60,7 +60,7 @@ class Class127 implements Interface1 {
         if (Class369.anInt4960 > i_9_ + -i_10_
                 || Class113.anInt1745 < i_10_ + i_9_
                 || Class132.anInt1910 > i - i_10_
-                || (Class38.anInt513 ^ 0xffffffff) > (i - -i_10_ ^ 0xffffffff))
+                || i - -i_10_ > Class38.anInt513)
             Class6.method203(-107, i_9_, i_8_, i, i_10_);
         else
             Class14_Sub4.method253(i, i_9_, -648, i_8_, i_10_);

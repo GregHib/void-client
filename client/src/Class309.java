@@ -32,7 +32,7 @@ final class Class309 implements Interface7 {
             int i_2_ = (int) l >> -1914464274 & 0x1f;
             int i_3_ = (0x37d8b0 & (int) l) >> -425142188;
             int i_4_ = 0x7fffffff & (int) (l >>> -587776800);
-            if (i_2_ != 10 && i_2_ != 11 && (i_2_ ^ 0xffffffff) != -23)
+            if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22)
                 Class298.method2252(true, i_0_, i, (byte) -119, 0, 0, 0, i_2_,
                         i_3_);
             else {
@@ -40,7 +40,7 @@ final class Class309 implements Interface7 {
                         = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_4_);
                 int i_5_;
                 int i_6_;
-                if ((i_3_ ^ 0xffffffff) == -1 || (i_3_ ^ 0xffffffff) == -3) {
+                if (i_3_ == 0 || i_3_ == 2) {
                     i_5_ = class51.anInt926;
                     i_6_ = class51.anInt961;
                 } else {
@@ -48,7 +48,7 @@ final class Class309 implements Interface7 {
                     i_6_ = class51.anInt926;
                 }
                 int i_7_ = class51.anInt914;
-                if ((i_3_ ^ 0xffffffff) != -1)
+                if (i_3_ != 0)
                     i_7_ = (0xf & i_7_ << i_3_) + (i_7_ >> 4 + -i_3_);
                 Class298.method2252(true, i_0_, i, (byte) -99, i_5_, i_7_,
                         i_6_, 0, 0);
@@ -64,16 +64,16 @@ final class Class309 implements Interface7 {
         if (i != 26)
             anIntArray4822 = null;
         anInt4810++;
-        return i_8_ == 15 || i_8_ == 2 || i_8_ == 30 || (i_8_ ^ 0xffffffff) == -50
-                || (i_8_ ^ 0xffffffff) == -52 || (i_8_ ^ 0xffffffff) == -51
-                || (i_8_ ^ 0xffffffff) == -7;
+        return i_8_ == 15 || i_8_ == 2 || i_8_ == 30 || i_8_ == 49
+                || i_8_ == 51 || i_8_ == 50
+                || i_8_ == 6;
     }
 
     public final int method31(int i) {
         int i_9_ = 88 % ((-43 - i) / 62);
         anInt4821++;
         int i_10_ = Class59.method547(aString4807, 7468);
-        if (i_10_ >= 0 && (i_10_ ^ 0xffffffff) >= -101)
+        if (i_10_ >= 0 && i_10_ <= 100)
             return i_10_;
         aBoolean4824 = true;
         return 100;

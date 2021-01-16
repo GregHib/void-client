@@ -385,8 +385,8 @@ final class ha_Sub2 extends ha {
     int[] anIntArray7883;
 
     final void L(int i, int i_0_, int i_1_) {
-        if ((this.anInt7856 ^ 0xffffffff) != (i ^ 0xffffffff)
-                || (this.anInt7782 ^ 0xffffffff) != (i_0_ ^ 0xffffffff)
+        if (i != this.anInt7856
+                || i_0_ != this.anInt7782
                 || this.anInt7813 != i_1_) {
             this.anInt7782 = i_0_;
             this.anInt7856 = i;
@@ -434,7 +434,7 @@ final class ha_Sub2 extends ha {
                 bool = true;
                 anInt7804 = i;
             }
-            if ((anInt7861 ^ 0xffffffff) != (i_6_ ^ 0xffffffff)) {
+            if (i_6_ != anInt7861) {
                 OpenGL.glTexEnvi(8960, 34162, i_6_);
                 anInt7861 = i_6_;
                 bool = true;
@@ -495,7 +495,7 @@ final class ha_Sub2 extends ha {
         method3772((byte) 124);
         if (anInt7865 == 3)
             method3747((byte) -63);
-        else if ((anInt7865 ^ 0xffffffff) == -3)
+        else if (anInt7865 == 2)
             method3730((byte) 119);
     }
 
@@ -542,7 +542,7 @@ final class ha_Sub2 extends ha {
     final void method3735(int i) {
         if (i != 9473)
             method3661(-10, -73, null, null);
-        if ((anInt7765 ^ 0xffffffff) != -5) {
+        if (anInt7765 != 4) {
             method3763(i ^ 0x3201);
             method3807(false, 2);
             method3728(false, 79);
@@ -663,7 +663,7 @@ final class ha_Sub2 extends ha {
     }
 
     private final void method3740(int i) {
-        if ((anInt7865 ^ 0xffffffff) != -3) {
+        if (anInt7865 != 2) {
             anInt7865 = 2;
             method3730((byte) 125);
             method3754((byte) 90);
@@ -766,7 +766,7 @@ final class ha_Sub2 extends ha {
 
     private final void method3742(int i) {
         anInt7638++;
-        if ((anInt7865 ^ 0xffffffff) != -4) {
+        if (anInt7865 != 3) {
             anInt7865 = 3;
             method3747((byte) -63);
             method3754((byte) 89);
@@ -885,7 +885,7 @@ final class ha_Sub2 extends ha {
 
     final void method3746(boolean bool, int i, boolean bool_46_, int i_47_) {
         anInt7631++;
-        if ((i ^ 0xffffffff) != (anInt7796 ^ 0xffffffff)
+        if (anInt7796 != i
                 || aBoolean7859 == !this.aBoolean7846) {
             Class258_Sub3 class258_sub3 = null;
             int i_48_ = 0;
@@ -960,7 +960,7 @@ final class ha_Sub2 extends ha {
     final boolean method3627() {
         anInt7542++;
         return aClass348_Sub5_Sub1_7721 != null
-                && ((this.anInt7713 ^ 0xffffffff) >= -2 || aBoolean7822);
+                && (this.anInt7713 <= 1 || aBoolean7822);
     }
 
     final void method3748(int i, boolean bool) {
@@ -995,10 +995,8 @@ final class ha_Sub2 extends ha {
             float f;
             float f_64_;
             if (aClass258_Sub3_Sub1_7776 == null
-                    || (aClass258_Sub3_Sub1_7776.anInt8547
-                    ^ 0xffffffff) > (i_58_ ^ 0xffffffff)
-                    || (aClass258_Sub3_Sub1_7776.anInt8551
-                    ^ 0xffffffff) > (i_59_ ^ 0xffffffff)) {
+                    || i_58_ > aClass258_Sub3_Sub1_7776.anInt8547
+                    || i_59_ > aClass258_Sub3_Sub1_7776.anInt8551) {
                 aClass258_Sub3_Sub1_7776
                         = Class371.method3583(false, is, 6406, i_59_, this, -45,
                         6406, i_58_);
@@ -1095,7 +1093,7 @@ final class ha_Sub2 extends ha {
                 this.aClass101_Sub3_7766.method942(3128);
                 this.aClass101_Sub3_7767
                         .method946(this.aClass101_Sub3_7766, -7929);
-                if ((anInt7865 ^ 0xffffffff) == -2)
+                if (anInt7865 == 1)
                     break;
                 method3754((byte) 89);
             } catch (RuntimeException runtimeexception) {
@@ -1253,7 +1251,7 @@ final class ha_Sub2 extends ha {
     final void ZA(int i, float f, float f_93_, float f_94_, float f_95_,
                   float f_96_) {
         anInt7633++;
-        boolean bool = (anInt7808 ^ 0xffffffff) != (i ^ 0xffffffff);
+        boolean bool = i != anInt7808;
         if (bool || this.aFloat7832 != f
                 || f_93_ != this.aFloat7871) {
             this.aFloat7832 = f;
@@ -1399,11 +1397,11 @@ final class ha_Sub2 extends ha {
                 aLong7636 = aLong7553
                         = anOpenGL7664.init(canvas, 8, 8, 8, 24, 0,
                         this.anInt7713);
-                if ((aLong7553 ^ 0xffffffffffffffffL) == -1L)
+                if (aLong7553 == 0)
                     throw new RuntimeException("");
                 method3776(22544);
                 int i_99_ = method3774((byte) -62);
-                if ((i_99_ ^ 0xffffffff) != -1)
+                if (i_99_ != 0)
                     throw new RuntimeException("");
                 this.anInt7812
                         = this.aBoolean7775 ? 33639 : 5121;
@@ -1417,9 +1415,9 @@ final class ha_Sub2 extends ha {
                     for (int i_102_ = 0; i_102_ < strings.length; i_102_++) {
                         String string = strings[i_102_];
                         try {
-                            if ((string.length() ^ 0xffffffff) < -1) {
+                            if (string.length() > 0) {
                                 if (string.charAt(0) == 'x'
-                                        && (string.length() ^ 0xffffffff) <= -4
+                                        && string.length() >= 3
                                         && (Class50_Sub3.method468
                                         (string.substring(1, 3), 111))) {
                                     string = string.substring(1);
@@ -1432,7 +1430,7 @@ final class ha_Sub2 extends ha {
                                         bool = true;
                                         string = string.substring(2);
                                     }
-                                    if ((string.length() ^ 0xffffffff) <= -5
+                                    if (string.length() >= 4
                                             && (Class50_Sub3.method468
                                             (string.substring(0, 4), 47))) {
                                         i_100_
@@ -1447,12 +1445,12 @@ final class ha_Sub2 extends ha {
                         }
                     }
                     if (!bool_101_ && !bool) {
-                        if ((i_100_ ^ 0xffffffff) <= -7001 && i_100_ <= 7999)
+                        if (i_100_ >= 7000 && i_100_ <= 7999)
                             aBoolean7873 = false;
-                        if (i_100_ >= 7000 && (i_100_ ^ 0xffffffff) >= -9251)
+                        if (i_100_ >= 7000 && i_100_ <= 9250)
                             this.aBoolean7831 = false;
                     }
-                    if (!bool || (i_100_ ^ 0xffffffff) > -4001)
+                    if (!bool || i_100_ < 4000)
                         this.aBoolean7818 = false;
                     this.aBoolean7837
                             &= anOpenGL7664.a("GL_ARB_half_float_pixel");
@@ -1511,12 +1509,12 @@ final class ha_Sub2 extends ha {
             boolean bool;
             int i_104_;
             boolean bool_105_;
-            if ((i ^ 0xffffffff) == -2) {
+            if (i == 1) {
                 bool_105_ = true;
                 i_104_ = 1;
                 bool = true;
             } else if (i != 2) {
-                if ((i ^ 0xffffffff) != -129) {
+                if (i != 128) {
                     bool = false;
                     i_104_ = 0;
                     bool_105_ = true;
@@ -1541,7 +1539,7 @@ final class ha_Sub2 extends ha {
                     OpenGL.glEnable(3008);
                 aBoolean7761 = bool;
             }
-            if ((i_104_ ^ 0xffffffff) != (anInt7762 ^ 0xffffffff)) {
+            if (anInt7762 != i_104_) {
                 if (i_104_ == 1) {
                     OpenGL.glEnable(3042);
                     OpenGL.glBlendFunc(770, 771);
@@ -1609,7 +1607,7 @@ final class ha_Sub2 extends ha {
 
     final void method3696(int i) {
         anInt7635++;
-        if ((i ^ 0xffffffff) > -129 || (i ^ 0xffffffff) < -1025)
+        if (i < 128 || i > 1024)
             throw new IllegalArgumentException();
         this.anInt7712 = i;
         aClass354_7723.method3463((byte) -110);
@@ -1717,7 +1715,7 @@ final class ha_Sub2 extends ha {
                     = (Class348_Sub35) aClass262_7753.method1997(8);
             Class328_Sub3.anIntArray6522[i_122_++]
                     = class348_sub35.anInt6976;
-            if ((i_122_ ^ 0xffffffff) == -1001) {
+            if (i_122_ == 1000) {
                 OpenGL.glDeleteFramebuffersEXT(i_122_,
                         Class328_Sub3.anIntArray6522,
                         0);
@@ -1735,7 +1733,7 @@ final class ha_Sub2 extends ha {
             Class328_Sub3.anIntArray6522[i_122_++]
                     = (int) class348_sub35.aLong4291;
             anInt7750 -= class348_sub35.anInt6976;
-            if ((i_122_ ^ 0xffffffff) == -1001) {
+            if (i_122_ == 1000) {
                 OpenGL.glDeleteRenderbuffersEXT(i_122_,
                         Class328_Sub3.anIntArray6522,
                         0);
@@ -1768,7 +1766,7 @@ final class ha_Sub2 extends ha {
                     class348_sub35.anInt6976);
         }
         aClass354_7723.method3469(8218);
-        if ((E() ^ 0xffffffff) < -100663297
+        if (E() > 100663296
                 && 60000L + aLong7757 < Class62.method599(-96)) {
             System.gc();
             aLong7757 = Class62.method599(-91);
@@ -1810,7 +1808,7 @@ final class ha_Sub2 extends ha {
         if (i != 1)
             method3759(65, 117, -33, null, -33);
         anInt7643++;
-        if ((anInt7765 ^ 0xffffffff) != -17) {
+        if (anInt7765 != 16) {
             method3742(3);
             method3807(true, 2);
             method3752(122, true);
@@ -1824,12 +1822,12 @@ final class ha_Sub2 extends ha {
         if (i != 0)
             aClass262_7751 = null;
         anInt7654++;
-        if ((i_133_ ^ 0xffffffff) == -2)
+        if (i_133_ == 1)
             method3729(7681, (byte) 114, 7681);
         else if (i_133_ == 0)
             method3729(8448, (byte) 107, 8448);
         else if (i_133_ != 2) {
-            if ((i_133_ ^ 0xffffffff) != -4) {
+            if (i_133_ != 3) {
                 if (i_133_ == 4)
                     method3729(34023, (byte) 123, 34023);
             } else
@@ -1856,7 +1854,7 @@ final class ha_Sub2 extends ha {
         if (anInt7865 != 1) {
             OpenGL.glMatrixMode(5889);
             OpenGL.glLoadIdentity();
-            if ((this.anInt7688 ^ 0xffffffff) < -1
+            if (this.anInt7688 > 0
                     && this.anInt7641 > 0)
                 OpenGL.glOrtho(0.0, this.anInt7688,
                         this.anInt7641, 0.0, -1.0,
@@ -1873,7 +1871,7 @@ final class ha_Sub2 extends ha {
     final void method3764(int i, Interface11 interface11) {
         try {
             anInt7586++;
-            if ((anInt7742 ^ 0xffffffff) > -1
+            if (anInt7742 < 0
                     || anInterface11Array7737[anInt7742] != interface11)
                 throw new RuntimeException();
             anInterface11Array7737[anInt7742--] = null;
@@ -1972,9 +1970,9 @@ final class ha_Sub2 extends ha {
         if (i_141_ < 0)
             i_141_ = -i_141_;
         anInt7728++;
-        if ((i + i_141_ ^ 0xffffffff) <= (anInt7868 ^ 0xffffffff)
+        if (anInt7868 <= i + i_141_
                 && anInt7855 >= -i_141_ + i && anInt7773 <= i_140_ + i_141_
-                && (anInt7787 ^ 0xffffffff) <= (i_140_ + -i_141_ ^ 0xffffffff)) {
+                && i_140_ + -i_141_ <= anInt7787) {
             method3778((byte) -117);
             method3753(i_143_, 1);
             OpenGL.glColor4ub((byte) (i_142_ >> -202869680),
@@ -2008,7 +2006,7 @@ final class ha_Sub2 extends ha {
                     i_146_ = 64;
                 i_146_ = Class348_Sub40_Sub1.method3051(i_146_, 4096);
                 OpenGL.glVertex2f((float) i_141_ + f, f_144_);
-                for (int i_147_ = 16384 + -i_146_; (i_147_ ^ 0xffffffff) < -1;
+                for (int i_147_ = 16384 + -i_146_; i_147_ > 0;
                      i_147_ -= i_146_)
                     OpenGL.glVertex2f((float) i_141_ * (Class348_Sub23
                                     .aFloatArray6867
@@ -2063,8 +2061,8 @@ final class ha_Sub2 extends ha {
 
     final void method3673() {
         anInt7568++;
-        if (aBoolean7774 && (this.anInt7688 ^ 0xffffffff) < -1
-                && (this.anInt7641 ^ 0xffffffff) < -1) {
+        if (aBoolean7774 && this.anInt7688 > 0
+                && this.anInt7641 > 0) {
             int i = anInt7868;
             int i_148_ = anInt7855;
             int i_149_ = anInt7773;
@@ -2132,7 +2130,7 @@ final class ha_Sub2 extends ha {
                         throw new RuntimeException();
                     anInterface11Array7743[anInt7746--] = null;
                     interface11.method48(46);
-                    if ((anInt7746 ^ 0xffffffff) > -1)
+                    if (anInt7746 < 0)
                         anInterface11_7745 = anInterface11_7740 = null;
                     else {
                         anInterface11_7745 = anInterface11_7740
@@ -2165,9 +2163,7 @@ final class ha_Sub2 extends ha {
                     OpenGL.glDisable(class258_156_.anInt4849);
                 else {
                     if (class258_156_ != null) {
-                        if ((class258.anInt4849 ^ 0xffffffff)
-                                != (class258_156_.anInt4849
-                                ^ 0xffffffff)) {
+                        if (class258_156_.anInt4849 != class258.anInt4849) {
                             OpenGL.glDisable(class258_156_
                                     .anInt4849);
                             OpenGL.glEnable(class258.anInt4849);
@@ -2202,7 +2198,7 @@ final class ha_Sub2 extends ha {
                           int i_160_, int i_161_, int i_162_, int i_163_,
                           int i_164_) {
         anInt7656++;
-        if ((i ^ 0xffffffff) != (i_158_ ^ 0xffffffff) || i_157_ != i_159_) {
+        if (i_158_ != i || i_157_ != i_159_) {
             method3778((byte) -119);
             method3753(i_161_, 1);
             float f = (float) i_158_ - (float) i;
@@ -2233,7 +2229,7 @@ final class ha_Sub2 extends ha {
             float f_175_ = f * (float) i_163_;
             float f_176_ = f_165_ * (float) i_163_;
             for (; ; ) {
-                if ((i_158_ ^ 0xffffffff) >= (i ^ 0xffffffff)) {
+                if (i >= i_158_) {
                     if ((float) i_158_ + 0.35F > f_173_)
                         break;
                     if (f_173_ + f_171_ < (float) i_158_)
@@ -2357,7 +2353,7 @@ final class ha_Sub2 extends ha {
             } else {
                 if (anInt7746 >= 3)
                     throw new RuntimeException();
-                if ((anInt7746 ^ 0xffffffff) <= -1)
+                if (anInt7746 >= 0)
                     anInterface11Array7743[anInt7746].method48(-76);
                 anInterface11_7745 = anInterface11_7740
                         = anInterface11Array7743[++anInt7746] = interface11;
@@ -2396,7 +2392,7 @@ final class ha_Sub2 extends ha {
             }
         } else
             i_183_ |= 0x4;
-        if ((anInt7789 ^ 0xffffffff) > -13)
+        if (anInt7789 < 12)
             i_183_ |= 0x2;
         if (!anOpenGL7664.a("GL_ARB_multitexture"))
             i_183_ |= 0x8;
@@ -2411,8 +2407,8 @@ final class ha_Sub2 extends ha {
         anInt7799 = is[0];
         OpenGL.glGetIntegerv(34930, is, 0);
         anInt7819 = is[0];
-        if (this.anInt7795 < 2 || (anInt7799 ^ 0xffffffff) > -3
-                || (anInt7819 ^ 0xffffffff) > -3)
+        if (this.anInt7795 < 2 || anInt7799 < 2
+                || anInt7819 < 2)
             i_183_ |= 0x10;
         this.aBoolean7775 = Stream.c();
         aBoolean7866 = anOpenGL7664.arePbuffersAvailable();
@@ -2451,7 +2447,7 @@ final class ha_Sub2 extends ha {
         try {
             anInt7618++;
             if (i_187_ != i
-                    || (i_186_ ^ 0xffffffff) != (i_188_ ^ 0xffffffff)) {
+                    || i_188_ != i_186_) {
                 aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
                 Class258_Sub3_Sub1 class258_sub3_sub1
                         = var_aa_Sub1.aClass258_Sub3_Sub1_5193;
@@ -2497,7 +2493,7 @@ final class ha_Sub2 extends ha {
                 float f_208_ = (float) i_194_ * f_197_;
                 float f_209_ = (float) i_194_ * f_198_;
                 for (; ; ) {
-                    if ((i_187_ ^ 0xffffffff) < (i ^ 0xffffffff)) {
+                    if (i < i_187_) {
                         if (f_206_ > 0.35F + (float) i_187_)
                             break;
                         if ((float) i_187_ < f_206_ + f_204_)
@@ -2551,7 +2547,7 @@ final class ha_Sub2 extends ha {
     final void X(int i) {
         this.anInt7731 = 0;
         anInt7521++;
-        for (/**/; (i ^ 0xffffffff) < -2; i >>= 1)
+        for (/**/; i > 1; i >>= 1)
             this.anInt7731++;
         this.anInt7733 = 1 << this.anInt7731;
     }
@@ -2729,7 +2725,7 @@ final class ha_Sub2 extends ha {
             this.aNativeHeap7730 = null;
         int i_218_ = 0;
         while (!anOpenGL7664.b()) {
-            if ((i_218_++ ^ 0xffffffff) < -6)
+            if (i_218_++ > 5)
                 throw new RuntimeException("");
             Class286_Sub5.method2161((byte) -3, 1000L);
         }
@@ -2764,12 +2760,12 @@ final class ha_Sub2 extends ha {
     }
 
     final void T(int i, int i_228_, int i_229_, int i_230_) {
-        if ((anInt7773 ^ 0xffffffff) > (i_228_ ^ 0xffffffff))
+        if (i_228_ > anInt7773)
             anInt7773 = i_228_;
         anInt7648++;
         if (anInt7787 > i_230_)
             anInt7787 = i_230_;
-        if ((anInt7868 ^ 0xffffffff) > (i ^ 0xffffffff))
+        if (i > anInt7868)
             anInt7868 = i;
         if (i_229_ < anInt7855)
             anInt7855 = i_229_;
@@ -2879,12 +2875,12 @@ final class ha_Sub2 extends ha {
 
     final int method3781(byte i, int i_237_) {
         anInt7613++;
-        if ((i_237_ ^ 0xffffffff) == -2)
+        if (i_237_ == 1)
             return 7681;
-        if ((i_237_ ^ 0xffffffff) == -1)
+        if (i_237_ == 0)
             return 8448;
         if (i_237_ != 2) {
-            if ((i_237_ ^ 0xffffffff) != -4) {
+            if (i_237_ != 3) {
                 if (i_237_ == 4)
                     return 34023;
             } else
@@ -3036,7 +3032,7 @@ final class ha_Sub2 extends ha {
                             * class348_sub1.method2723(-1)));
             OpenGL.glEnable(i_251_);
         }
-        for (/**/; (i_250_ ^ 0xffffffff) > (anInt7839 ^ 0xffffffff); i_250_++)
+        for (/**/; anInt7839 > i_250_; i_250_++)
             OpenGL.glDisable(i_250_ + 16386);
         anInt7839 = anInt7862;
     }
@@ -3057,13 +3053,13 @@ final class ha_Sub2 extends ha {
 
     final int method3785(int i, int i_253_) {
         anInt7682++;
-        if ((i ^ 0xffffffff) == -5122 || i == 5120)
+        if (i == 5121 || i == 5120)
             return 1;
         if (i_253_ != 4)
             this.aBoolean7793 = false;
         if (i == 5123 || i == 5122)
             return 2;
-        if (i == 5125 || i == 5124 || (i ^ 0xffffffff) == -5127)
+        if (i == 5125 || i == 5124 || i == 5126)
             return 4;
         throw new IllegalArgumentException("");
     }
@@ -3124,7 +3120,7 @@ final class ha_Sub2 extends ha {
         anInt7607++;
         int i = -1;
         if (aString7845.indexOf("nvidia") == -1) {
-            if ((aString7845.indexOf("intel") ^ 0xffffffff) != 0)
+            if (aString7845.indexOf("intel") != -1)
                 i = 32902;
             else if (aString7845.indexOf("ati") != -1)
                 i = 4098;
@@ -3219,11 +3215,11 @@ final class ha_Sub2 extends ha {
         if (i_259_ < 0)
             i_259_ = 0;
         anInt7717++;
-        if ((this.anInt7688 ^ 0xffffffff) > (i_260_ ^ 0xffffffff))
+        if (i_260_ > this.anInt7688)
             i_260_ = this.anInt7688;
-        if ((i ^ 0xffffffff) > -1)
+        if (i < 0)
             i = 0;
-        if ((this.anInt7641 ^ 0xffffffff) > (i_261_ ^ 0xffffffff))
+        if (i_261_ > this.anInt7641)
             i_261_ = this.anInt7641;
         anInt7855 = i_260_;
         anInt7787 = i_261_;
@@ -3620,7 +3616,7 @@ final class ha_Sub2 extends ha {
                     aClass348_Sub1Array7858[i_282_] = class348_sub1s[i_282_];
                 anInt7610++;
                 anInt7862 = i;
-                if ((anInt7865 ^ 0xffffffff) == -2)
+                if (anInt7865 == 1)
                     break;
                 method3783(0);
             } catch (RuntimeException runtimeexception) {
@@ -3745,18 +3741,18 @@ final class ha_Sub2 extends ha {
         if (i_295_ != 2)
             this.aFloat7872 = -1.3399854F;
         if (i != 6406 && i != 6409) {
-            if ((i ^ 0xffffffff) != -6411 && i != 34846 && i != 34844) {
+            if (i != 6410 && i != 34846 && i != 34844) {
                 if (i == 6407)
                     return 3;
-                if ((i ^ 0xffffffff) == -6409 || (i ^ 0xffffffff) == -34848)
+                if (i == 6408 || i == 34847)
                     return 4;
-                if ((i ^ 0xffffffff) == -34844)
+                if (i == 34843)
                     return 6;
-                if ((i ^ 0xffffffff) == -34843)
+                if (i == 34842)
                     return 8;
                 if (i == 6402)
                     return 3;
-                if ((i ^ 0xffffffff) == -6402)
+                if (i == 6401)
                     return 1;
             } else
                 return 2;
@@ -3915,8 +3911,7 @@ final class ha_Sub2 extends ha {
         int i_321_ = Class328_Sub1.anInt6513;
         Class88.anInt1497 = 0;
         int[] is = Class286_Sub7.anIntArray6290;
-        for (int i_322_ = 0; ((Class150.anInt2057 + i_321_ ^ 0xffffffff)
-                < (i_322_ ^ 0xffffffff)); i_322_++) {
+        for (int i_322_ = 0; (i_322_ < Class150.anInt2057 + i_321_); i_322_++) {
             Class79 class79 = null;
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_321_ > i_322_)
@@ -3941,15 +3936,10 @@ final class ha_Sub2 extends ha {
             }
             if ((class318_sub1_sub3_sub3.anInt10285
                     >= 0)
-                    && (((Class239_Sub15.anInt6006 ^ 0xffffffff)
-                    == ((class318_sub1_sub3_sub3
-                    .anInt10301)
-                    ^ 0xffffffff))
-                    || ((class318_sub1_sub3_sub3.aByte6381
-                    ^ 0xffffffff)
-                    == ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                    .aByte6381)
-                    ^ 0xffffffff)))) {
+                    && (((class318_sub1_sub3_sub3
+                    .anInt10301) == Class239_Sub15.anInt6006)
+                    || ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                    .aByte6381) == class318_sub1_sub3_sub3.aByte6381))) {
                 Class348_Sub13.method2801(class318_sub1_sub3_sub3
                                 .method2426(200),
                         i_318_ >> -595777951, i_320_, i_319_,
@@ -3959,7 +3949,7 @@ final class ha_Sub2 extends ha {
                     if ((class318_sub1_sub3_sub3
                             .aString10292) != null
                             && (i_321_ <= i_322_
-                            || (za.anInt7276 ^ 0xffffffff) == -1
+                            || za.anInt7276 == 0
                             || za.anInt7276 == 3
                             || (za.anInt7276 == 1
                             && (Class348_Sub11.method2797
@@ -3988,14 +3978,12 @@ final class ha_Sub2 extends ha {
                     int i_323_ = Class239_Sub21.anIntArray6062[1] + i;
                     if (!(class318_sub1_sub3_sub3
                             .aBoolean10309)
-                            && ((class318_sub1_sub3_sub3.anInt10223
-                            ^ 0xffffffff)
-                            < (Class367_Sub11.anInt7396 ^ 0xffffffff))) {
+                            && (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10223)) {
                         int i_324_ = -1;
                         int i_325_ = 1;
-                        if ((i_322_ ^ 0xffffffff) <= (i_321_ ^ 0xffffffff)) {
+                        if (i_321_ <= i_322_) {
                             i_324_ = class79.anInt1373;
-                            if ((i_324_ ^ 0xffffffff) == 0)
+                            if (i_324_ == -1)
                                 i_324_
                                         = (class318_sub1_sub3_sub3
                                         .method2422((byte) 72)
@@ -4014,7 +4002,7 @@ final class ha_Sub2 extends ha {
                         }
                         Class105[] class105s
                                 = Class348_Sub45.aClass105Array7107;
-                        if ((i_324_ ^ 0xffffffff) != 0) {
+                        if (i_324_ != -1) {
                             Class105[] class105s_326_
                                     = ((Class105[])
                                     (Class353.aClass60_4346.method583
@@ -4037,11 +4025,10 @@ final class ha_Sub2 extends ha {
                                 }
                             }
                             if (class105s_326_ != null
-                                    && (class105s_326_.length ^ 0xffffffff) <= -3)
+                                    && class105s_326_.length >= 2)
                                 class105s = class105s_326_;
                         }
-                        if ((i_325_ ^ 0xffffffff)
-                                <= (class105s.length ^ 0xffffffff))
+                        if (class105s.length <= i_325_)
                             i_325_ = 1;
                         Class105 class105 = class105s[0];
                         Class105 class105_328_ = class105s[i_325_];
@@ -4056,9 +4043,8 @@ final class ha_Sub2 extends ha {
                                 * class318_sub1_sub3_sub3.anInt10295
                                 / 255);
                         int i_331_ = class105.method969();
-                        if ((class318_sub1_sub3_sub3.anInt10295
-                                ^ 0xffffffff) < -1
-                                && (i_330_ ^ 0xffffffff) > -3)
+                        if (class318_sub1_sub3_sub3.anInt10295 > 0
+                                && i_330_ < 2)
                             i_330_ = 2;
                         class105.method974(i_329_, i_323_);
                         Class348_Sub8.aHa6654.T(i_329_, i_323_,
@@ -4102,7 +4088,7 @@ final class ha_Sub2 extends ha {
                                         = (class318_sub1_sub3_sub3
                                         .method2422((byte) 72)
                                         .anInt2923);
-                            if ((i_333_ ^ 0xffffffff) != 0) {
+                            if (i_333_ != -1) {
                                 Class105[] class105s
                                         = ((Class105[])
                                         Class328_Sub2.aClass60_6517
@@ -4116,9 +4102,7 @@ final class ha_Sub2 extends ha {
                                         class105s
                                                 = new Class105[class207s.length];
                                         for (int i_334_ = 0;
-                                             ((i_334_ ^ 0xffffffff)
-                                                     > (class207s.length
-                                                     ^ 0xffffffff));
+                                             (class207s.length > i_334_);
                                              i_334_++)
                                             class105s[i_334_]
                                                     = (Class348_Sub8.aHa6654
@@ -4144,13 +4128,10 @@ final class ha_Sub2 extends ha {
                                     = (-Class367_Sub11.anInt7396
                                     + class318_sub1_sub3_sub3.anInt10287);
                             int i_336_;
-                            if ((class318_sub1_sub3_sub3.anInt10227
-                                    ^ 0xffffffff)
-                                    > (i_335_ ^ 0xffffffff)) {
+                            if (i_335_ > class318_sub1_sub3_sub3.anInt10227) {
                                 i_335_ -= class318_sub1_sub3_sub3.anInt10227;
                                 int i_337_
-                                        = ((class318_sub1_sub3_sub3.anInt10271
-                                        ^ 0xffffffff) != -1
+                                        = (class318_sub1_sub3_sub3.anInt10271 != 0
                                         ? (class318_sub1_sub3_sub3.anInt10271
                                         * (((class318_sub1_sub3_sub3
                                         .anInt10210)
@@ -4180,13 +4161,11 @@ final class ha_Sub2 extends ha {
                                     i_323_, i_338_ + i_323_);
                             i_323_ -= 2;
                         }
-                        if ((i_321_ ^ 0xffffffff) < (i_322_ ^ 0xffffffff)) {
+                        if (i_322_ < i_321_) {
                             Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                                     = ((Class318_Sub1_Sub3_Sub3_Sub2)
                                     class318_sub1_sub3_sub3);
-                            if ((class318_sub1_sub3_sub3_sub2.anInt10540
-                                    ^ 0xffffffff)
-                                    != 0) {
+                            if (class318_sub1_sub3_sub3_sub2.anInt10540 != -1) {
                                 i_323_ -= 25;
                                 Class105 class105
                                         = (Class318_Sub1_Sub1_Sub1
@@ -4207,9 +4186,7 @@ final class ha_Sub2 extends ha {
                                                 i_323_, i_323_ + class105.method980());
                                 i_323_ -= 2;
                             }
-                            if ((class318_sub1_sub3_sub3_sub2.anInt10522
-                                    ^ 0xffffffff)
-                                    != 0) {
+                            if (class318_sub1_sub3_sub3_sub2.anInt10522 != -1) {
                                 i_323_ -= 25;
                                 Class105 class105
                                         = (Class264.aClass105Array3378
@@ -4229,10 +4206,7 @@ final class ha_Sub2 extends ha {
                                 i_323_ -= 2;
                             }
                         } else if (class79.anInt1375 >= 0
-                                && ((Class264.aClass105Array3378.length
-                                ^ 0xffffffff)
-                                < (class79.anInt1375
-                                ^ 0xffffffff))) {
+                                && (class79.anInt1375 < Class264.aClass105Array3378.length)) {
                             Class105 class105
                                     = (Class264.aClass105Array3378
                                     [class79.anInt1375]);
@@ -4258,25 +4232,21 @@ final class ha_Sub2 extends ha {
                     }
                     if (class318_sub1_sub3_sub3
                             instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
-                        if ((i_322_ ^ 0xffffffff) <= -1) {
+                        if (i_322_ >= 0) {
                             int i_340_ = 0;
                             Class302[] class302s
                                     = Class348_Sub27.aClass302Array6897;
                             for (int i_341_ = 0;
-                                 ((class302s.length ^ 0xffffffff)
-                                         < (i_341_ ^ 0xffffffff));
+                                 (i_341_ < class302s.length);
                                  i_341_++) {
                                 Class302 class302 = class302s[i_341_];
                                 if (class302 != null
                                         && class302.anInt3840 == 10
-                                        && ((class302.anInt3833
-                                        ^ 0xffffffff)
-                                        == (is[i_322_] ^ 0xffffffff))) {
+                                        && (is[i_322_] == class302.anInt3833)) {
                                     Class105 class105
                                             = (Class239_Sub9.aClass105Array5933
                                             [class302.anInt3831]);
-                                    if ((class105.method969() ^ 0xffffffff)
-                                            < (i_340_ ^ 0xffffffff))
+                                    if (i_340_ < class105.method969())
                                         i_340_ = class105.method969();
                                     class105.method974(-12 + ((Class239_Sub21
                                                     .anIntArray6062
@@ -4298,7 +4268,7 @@ final class ha_Sub2 extends ha {
                                                             - -class105.method980()));
                                 }
                             }
-                            if ((i_340_ ^ 0xffffffff) < -1)
+                            if (i_340_ > 0)
                                 i_323_ -= 2 + i_340_;
                         }
                     } else {
@@ -4309,17 +4279,12 @@ final class ha_Sub2 extends ha {
                              i_343_++) {
                             Class302 class302 = class302s[i_343_];
                             if (class302 != null
-                                    && (class302.anInt3840
-                                    ^ 0xffffffff) == -2
-                                    && ((Class74.anIntArray1233[i_322_ - i_321_]
-                                    ^ 0xffffffff)
-                                    == (class302.anInt3833
-                                    ^ 0xffffffff))) {
+                                    && class302.anInt3840 == 1
+                                    && (class302.anInt3833 == Class74.anIntArray1233[i_322_ - i_321_])) {
                                 Class105 class105
                                         = (Class239_Sub9.aClass105Array5933
                                         [class302.anInt3831]);
-                                if ((i_342_ ^ 0xffffffff)
-                                        > (class105.method969() ^ 0xffffffff))
+                                if (class105.method969() > i_342_)
                                     i_342_ = class105.method969();
                                 if (Class367_Sub11.anInt7396 % 20 < 10) {
                                     class105.method974
@@ -4351,26 +4316,25 @@ final class ha_Sub2 extends ha {
                         Class31 class31 = null;
                         int i_347_ = 0;
                         if (i_346_ >= 0) {
-                            if ((Class367_Sub11.anInt7396 ^ 0xffffffff)
-                                    <= (i_345_ ^ 0xffffffff))
+                            if (i_345_ <= Class367_Sub11.anInt7396)
                                 continue;
                             class31 = (Class73.aClass219_4782.method1601
                                     (46, (class318_sub1_sub3_sub3
                                             .anIntArray10259[i_344_])));
                             i_347_ = class31.anInt434;
-                        } else if ((i_345_ ^ 0xffffffff) > -1)
+                        } else if (i_345_ < 0)
                             continue;
                         int i_348_ = (class318_sub1_sub3_sub3
                                 .anIntArray10304[i_344_]);
                         Class31 class31_349_ = null;
-                        if ((i_348_ ^ 0xffffffff) <= -1)
+                        if (i_348_ >= 0)
                             class31_349_
                                     = Class73.aClass219_4782.method1601(46,
                                     i_348_);
                         if (-i_347_ + i_345_ <= Class367_Sub11.anInt7396) {
                             int i_350_ = (class318_sub1_sub3_sub3
                                     .anIntArray10303[i_344_]);
-                            if ((i_350_ ^ 0xffffffff) <= -1) {
+                            if (i_350_ >= 0) {
                                 class318_sub1_sub3_sub3.anInt10223
                                         = 300 + Class367_Sub11.anInt7396;
                                 class318_sub1_sub3_sub3.anInt10295
@@ -4430,8 +4394,7 @@ final class ha_Sub2 extends ha {
                                         int i_376_ = class105_375_.method969();
                                         class105_375_.method984
                                                 (Class151.anIntArray2062);
-                                        if ((i_376_ ^ 0xffffffff)
-                                                < (i_374_ ^ 0xffffffff))
+                                        if (i_374_ < i_376_)
                                             i_374_ = i_376_;
                                         i_359_ = Class151.anIntArray2062[0];
                                     }
@@ -4444,8 +4407,7 @@ final class ha_Sub2 extends ha {
                                         int i_378_ = class105_377_.method969();
                                         class105_377_.method984
                                                 (Class151.anIntArray2062);
-                                        if ((i_374_ ^ 0xffffffff)
-                                                > (i_378_ ^ 0xffffffff))
+                                        if (i_378_ > i_374_)
                                             i_374_ = i_378_;
                                         i_360_ = Class151.anIntArray2062[0];
                                     }
@@ -4456,8 +4418,7 @@ final class ha_Sub2 extends ha {
                                     if (class105_379_ != null) {
                                         i_357_ = class105_379_.method971();
                                         int i_380_ = class105_379_.method969();
-                                        if ((i_380_ ^ 0xffffffff)
-                                                < (i_374_ ^ 0xffffffff))
+                                        if (i_374_ < i_380_)
                                             i_374_ = i_380_;
                                         class105_379_.method984
                                                 (Class151.anIntArray2062);
@@ -4472,8 +4433,7 @@ final class ha_Sub2 extends ha {
                                         int i_382_ = class105_381_.method969();
                                         class105_381_.method984
                                                 (Class151.anIntArray2062);
-                                        if ((i_382_ ^ 0xffffffff)
-                                                < (i_374_ ^ 0xffffffff))
+                                        if (i_374_ < i_382_)
                                             i_374_ = i_382_;
                                         i_362_ = Class151.anIntArray2062[0];
                                     }
@@ -4515,8 +4475,7 @@ final class ha_Sub2 extends ha {
                                                     = class105_364_.method969();
                                             class105_364_.method984
                                                     (Class151.anIntArray2062);
-                                            if ((i_374_ ^ 0xffffffff)
-                                                    > (i_385_ ^ 0xffffffff))
+                                            if (i_385_ > i_374_)
                                                 i_374_ = i_385_;
                                             i_372_
                                                     = Class151.anIntArray2062[0];
@@ -4546,7 +4505,7 @@ final class ha_Sub2 extends ha {
                                     int i_388_ = class31.anInt435;
                                     Class143 class143_389_
                                             = Class258_Sub1.aClass143_8527;
-                                    if ((i_388_ ^ 0xffffffff) <= -1) {
+                                    if (i_388_ >= 0) {
                                         Class324 class324_390_
                                                 = Class14.method232((Class348_Sub8
                                                         .aHa6654),
@@ -4565,7 +4524,7 @@ final class ha_Sub2 extends ha {
                                     if (class31_349_ != null) {
                                         i_388_ = (class31_349_
                                                 .anInt435);
-                                        if ((i_388_ ^ 0xffffffff) <= -1) {
+                                        if (i_388_ >= 0) {
                                             Class324 class324_392_
                                                     = (Class14.method232
                                                     (Class348_Sub8.aHa6654,
@@ -4619,7 +4578,7 @@ final class ha_Sub2 extends ha {
                                         i_400_ += i_357_;
                                     int i_403_ = i_400_;
                                     int i_404_ = i_400_;
-                                    if ((i_356_ ^ 0xffffffff) >= -1)
+                                    if (i_356_ <= 0)
                                         i_400_ += i_397_;
                                     else {
                                         int i_405_ = i_356_ * i_398_;
@@ -4627,7 +4586,7 @@ final class ha_Sub2 extends ha {
                                         i_400_ += i_405_;
                                     }
                                     int i_406_ = i_400_;
-                                    if ((i_358_ ^ 0xffffffff) < -1)
+                                    if (i_358_ > 0)
                                         i_400_ += i_358_;
                                     int i_407_ = 0;
                                     int i_408_ = 0;
@@ -4652,7 +4611,7 @@ final class ha_Sub2 extends ha {
                                         } else
                                             i_400_ += i_395_;
                                         i_410_ = i_400_;
-                                        if ((i_369_ ^ 0xffffffff) < -1)
+                                        if (i_369_ > 0)
                                             i_400_ += i_369_;
                                     }
                                     int i_413_
@@ -4689,8 +4648,7 @@ final class ha_Sub2 extends ha {
                                     int i_422_
                                             = (i_420_
                                             - -class143.anInt1993);
-                                    if ((i_421_ ^ 0xffffffff)
-                                            > (i_418_ ^ 0xffffffff))
+                                    if (i_418_ > i_421_)
                                         i_418_ = i_421_;
                                     if (i_419_ < i_422_)
                                         i_419_ = i_422_;
@@ -4709,8 +4667,7 @@ final class ha_Sub2 extends ha {
                                                 = ((class143_389_
                                                 .anInt1993)
                                                 + i_423_);
-                                        if ((i_425_ ^ 0xffffffff)
-                                                < (i_419_ ^ 0xffffffff))
+                                        if (i_419_ < i_425_)
                                             i_419_ = i_425_;
                                     }
                                     int i_426_ = 255;
@@ -4721,7 +4678,7 @@ final class ha_Sub2 extends ha {
                                                 + (class31
                                                 .anInt434)));
                                     if (i_426_ >= 0
-                                            && (i_426_ ^ 0xffffffff) > -256) {
+                                            && i_426_ < 255) {
                                         int i_427_ = i_426_ << 1184399416;
                                         int i_428_ = 0xffffff | i_427_;
                                         if (class105_375_ != null)
@@ -4738,8 +4695,7 @@ final class ha_Sub2 extends ha {
                                                     i_428_, 1);
                                         if (class105_377_ != null) {
                                             for (int i_429_ = 0;
-                                                 ((i_429_ ^ 0xffffffff)
-                                                         > (i_398_ ^ 0xffffffff));
+                                                 (i_398_ > i_429_);
                                                  i_429_++)
                                                 class105_377_.method964
                                                         ((i_403_
@@ -4865,7 +4821,7 @@ final class ha_Sub2 extends ha {
             }
         }
         for (int i_433_ = 0;
-             (Class45.anInt669 ^ 0xffffffff) < (i_433_ ^ 0xffffffff);
+             i_433_ < Class45.anInt669;
              i_433_++) {
             int i_434_ = Class258_Sub4.anIntArray8557[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
@@ -4879,7 +4835,7 @@ final class ha_Sub2 extends ha {
                         = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_434_];
             int i_435_ = Class268.anIntArray3432[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_436_;
-            if ((i_435_ ^ 0xffffffff) <= -2049)
+            if (i_435_ >= 2048)
                 class318_sub1_sub3_sub3_436_
                         = (((Class348_Sub22) Class282.aClass356_3654
                                 .method3480(-2048 + i_435_, -6008))
@@ -4906,16 +4862,12 @@ final class ha_Sub2 extends ha {
                     if (i_440_ - -2 > Class309.anIntArray4813[i_442_] + -i_437_
                             && (-i_437_ + i_440_
                             < 2 + Class309.anIntArray4813[i_442_])
-                            && ((i_439_ + -i_441_ ^ 0xffffffff)
-                            > ((Class309.anIntArray4822[i_442_]
-                            - -Class309.anIntArray4819[i_442_])
-                            ^ 0xffffffff))
+                            && ((Class309.anIntArray4822[i_442_]
+                            - -Class309.anIntArray4819[i_442_]) > i_439_ + -i_441_)
                             && ((-Class309.anIntArray4819[i_442_]
                             + Class309.anIntArray4822[i_442_])
                             < i_439_ + i_441_)
-                            && ((i_440_ ^ 0xffffffff)
-                            < (-i_437_ + Class309.anIntArray4813[i_442_]
-                            ^ 0xffffffff))) {
+                            && (-i_437_ + Class309.anIntArray4813[i_442_] < i_440_)) {
                         i_440_ = -i_437_ + Class309.anIntArray4813[i_442_];
                         bool = true;
                     }
@@ -4938,29 +4890,29 @@ final class ha_Sub2 extends ha {
                         i_440_ + i);
             } else {
                 int i_448_ = 16776960;
-                if ((Class309.anIntArray4817[i_438_] ^ 0xffffffff) > -7)
+                if (Class309.anIntArray4817[i_438_] < 6)
                     i_448_ = (Class115.anIntArray1757
                             [Class309.anIntArray4817[i_438_]]);
-                if ((Class309.anIntArray4817[i_438_] ^ 0xffffffff) == -7)
+                if (Class309.anIntArray4817[i_438_] == 6)
                     i_448_ = (Class239_Sub15.anInt6006 % 20 >= 10 ? 16776960
                             : 16711680);
                 if (Class309.anIntArray4817[i_438_] == 7)
                     i_448_ = Class239_Sub15.anInt6006 % 20 < 10 ? 255 : 65535;
-                if ((Class309.anIntArray4817[i_438_] ^ 0xffffffff) == -9)
+                if (Class309.anIntArray4817[i_438_] == 8)
                     i_448_ = (Class239_Sub15.anInt6006 % 20 >= 10 ? 8454016
                             : 45056);
                 if (Class309.anIntArray4817[i_438_] == 9) {
                     int i_449_ = -Class309.anIntArray4812[i_438_] + 150;
-                    if ((i_449_ ^ 0xffffffff) > -51)
+                    if (i_449_ < 50)
                         i_448_ = 1280 * i_449_ + 16711680;
-                    else if ((i_449_ ^ 0xffffffff) > -101)
+                    else if (i_449_ < 100)
                         i_448_ = -(327680 * i_449_) + 16384000 + 16776960;
                     else if (i_449_ < 150)
                         i_448_ = 5 * (-100 + i_449_) + 65280;
                 }
                 if (Class309.anIntArray4817[i_438_] == 10) {
                     int i_450_ = 150 - Class309.anIntArray4812[i_438_];
-                    if ((i_450_ ^ 0xffffffff) <= -51) {
+                    if (i_450_ >= 50) {
                         if (i_450_ >= 100) {
                             if (i_450_ < 150)
                                 i_448_ = (-(5 * i_450_) - -500
@@ -4970,10 +4922,10 @@ final class ha_Sub2 extends ha {
                     } else
                         i_448_ = 16711680 + 5 * i_450_;
                 }
-                if ((Class309.anIntArray4817[i_438_] ^ 0xffffffff) == -12) {
+                if (Class309.anIntArray4817[i_438_] == 11) {
                     int i_451_ = 150 - Class309.anIntArray4812[i_438_];
                     if (i_451_ >= 50) {
-                        if ((i_451_ ^ 0xffffffff) > -101)
+                        if (i_451_ < 100)
                             i_448_ = 327685 * (-50 + i_451_) + 65280;
                         else if (i_451_ < 150)
                             i_448_ = 16777215 + -(327680 * (i_451_ - 100));
@@ -4981,7 +4933,7 @@ final class ha_Sub2 extends ha {
                         i_448_ = 16777215 + -(i_451_ * 327685);
                 }
                 int i_452_ = ~0xffffff | i_448_;
-                if ((Class309.anIntArray4806[i_438_] ^ 0xffffffff) == -1) {
+                if (Class309.anIntArray4806[i_438_] == 0) {
                     Class262.aClass324_3326.method2575((byte) 115,
                             i_439_ + i_317_, i_452_,
                             string, -16777216,
@@ -4998,7 +4950,7 @@ final class ha_Sub2 extends ha {
                     i_447_ += 5;
                     i_445_ -= 5;
                 }
-                if ((Class309.anIntArray4806[i_438_] ^ 0xffffffff) == -3) {
+                if (Class309.anIntArray4806[i_438_] == 2) {
                     i_447_ += 5;
                     i_446_ -= -5 + (i_443_ >> 142018977);
                     Class262.aClass324_3326.method2581(string, i_452_,
@@ -5020,7 +4972,7 @@ final class ha_Sub2 extends ha {
                                     i_439_ + i_317_, -20509);
                     i_445_ -= 7;
                 }
-                if ((Class309.anIntArray4806[i_438_] ^ 0xffffffff) == -5) {
+                if (Class309.anIntArray4806[i_438_] == 4) {
                     int i_453_
                             = ((150 + -Class309.anIntArray4812[i_438_])
                             * (Class369.aClass143_4962.method1183(true, string)
@@ -5044,7 +4996,7 @@ final class ha_Sub2 extends ha {
                     int i_454_ = 150 + -Class309.anIntArray4812[i_438_];
                     int i_455_ = 0;
                     if (i_454_ >= 25) {
-                        if ((i_454_ ^ 0xffffffff) < -126)
+                        if (i_454_ > 125)
                             i_455_ = i_454_ + -125;
                     } else
                         i_455_ = i_454_ - 25;
@@ -5117,7 +5069,7 @@ final class ha_Sub2 extends ha {
             anInt7814 = i_458_;
             method3806(98);
             method3803(16711680);
-            if ((anInt7865 ^ 0xffffffff) == -4)
+            if (anInt7865 == 3)
                 method3747((byte) -63);
             else if (anInt7865 == 2)
                 method3730((byte) 121);
@@ -5156,7 +5108,7 @@ final class ha_Sub2 extends ha {
 
     final void method3631(int i) {
         anInt7520++;
-        if ((i ^ 0xffffffff) != -2)
+        if (i != 1)
             throw new IllegalArgumentException("");
     }
 
@@ -5243,8 +5195,7 @@ final class ha_Sub2 extends ha {
                 for (int i_468_ = 0; class207.anInt2696 > i_468_;
                      i_468_++) {
                     for (int i_469_ = 0;
-                         ((class207.anInt2702 ^ 0xffffffff)
-                                 < (i_469_ ^ 0xffffffff));
+                         (i_469_ < class207.anInt2702);
                          i_469_++) {
                         is[i_467_++]
                                 = (Class273.method2057
@@ -5261,8 +5212,7 @@ final class ha_Sub2 extends ha {
                 for (int i_470_ = 0; class207.anInt2696 > i_470_;
                      i_470_++) {
                     for (int i_471_ = 0;
-                         ((i_471_ ^ 0xffffffff)
-                                 > (class207.anInt2702 ^ 0xffffffff));
+                         (class207.anInt2702 > i_471_);
                          i_471_++) {
                         int i_472_ = (class207.anIntArray2697
                                 [0xff & (class207
@@ -5354,7 +5304,7 @@ final class ha_Sub2 extends ha {
     private final void method3811(byte i) {
         anInt7690++;
         if (i == 11) {
-            if ((anInt7868 ^ 0xffffffff) >= (anInt7855 ^ 0xffffffff)
+            if (anInt7855 >= anInt7868
                     && anInt7773 <= anInt7787)
                 OpenGL.glScissor(anInt7770 + anInt7868,
                         (anInt7867 + this.anInt7641

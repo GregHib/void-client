@@ -51,9 +51,8 @@ final class Class219 {
             if (i != ((class318_sub1_sub3_sub3
                     .anInt10286)
                     ^ 0xffffffff)
-                    && ((class318_sub1_sub3_sub3
-                    .anInt10218)
-                    ^ 0xffffffff) == -1) {
+                    && (class318_sub1_sub3_sub3
+                    .anInt10218) == 0) {
                 Class17 class17
                         = (Class10.aClass87_191.method835
                         ((class318_sub1_sub3_sub3
@@ -61,7 +60,7 @@ final class Class219 {
                                 i + 7));
                 if ((class318_sub1_sub3_sub3
                         .anInt10322) > 0
-                        && (class17.anInt262 ^ 0xffffffff) == -1) {
+                        && class17.anInt262 == 0) {
                     Class235.anInt3062 = -1;
                     Class127_Sub1.anInt8387 = 0;
                     class318_sub1_sub3_sub3
@@ -70,7 +69,7 @@ final class Class219 {
                 }
                 if ((class318_sub1_sub3_sub3
                         .anInt10322) <= 0
-                        && (class17.anInt245 ^ 0xffffffff) == -1) {
+                        && class17.anInt245 == 0) {
                     Class127_Sub1.anInt8387 = 0;
                     Class235.anInt3062 = -1;
                     class318_sub1_sub3_sub3
@@ -78,8 +77,7 @@ final class Class219 {
                     return;
                 }
             }
-            if ((class318_sub1_sub3_sub3.anInt10269
-                    ^ 0xffffffff) != 0
+            if (class318_sub1_sub3_sub3.anInt10269 != -1
                     && (class318_sub1_sub3_sub3
                     .anInt10225) <= Class367_Sub11.anInt7396) {
                 Class368 class368
@@ -88,23 +86,22 @@ final class Class219 {
                                 (class318_sub1_sub3_sub3
                                         .anInt10269)));
                 if (class368.aBoolean4487
-                        && (class368.anInt4503 ^ 0xffffffff) != 0) {
+                        && class368.anInt4503 != -1) {
                     Class17 class17
                             = Class10.aClass87_191
                             .method835(class368.anInt4503, 7);
                     if ((class318_sub1_sub3_sub3
                             .anInt10322) > 0
-                            && (class17.anInt262 ^ 0xffffffff) == -1) {
+                            && class17.anInt262 == 0) {
                         Class127_Sub1.anInt8387 = 0;
                         class318_sub1_sub3_sub3
                                 .anInt10326++;
                         Class235.anInt3062 = -1;
                         return;
                     }
-                    if (((class318_sub1_sub3_sub3
-                            .anInt10322)
-                            ^ 0xffffffff) >= -1
-                            && (class17.anInt245 ^ 0xffffffff) == -1) {
+                    if ((class318_sub1_sub3_sub3
+                            .anInt10322) <= 0
+                            && class17.anInt245 == 0) {
                         Class235.anInt3062 = -1;
                         Class127_Sub1.anInt8387 = 0;
                         class318_sub1_sub3_sub3
@@ -113,12 +110,9 @@ final class Class219 {
                     }
                 }
             }
-            if ((class318_sub1_sub3_sub3.anInt10269
-                    ^ 0xffffffff) != 0
-                    && ((Class367_Sub11.anInt7396 ^ 0xffffffff)
-                    <= ((class318_sub1_sub3_sub3
-                    .anInt10225)
-                    ^ 0xffffffff))) {
+            if (class318_sub1_sub3_sub3.anInt10269 != -1
+                    && ((class318_sub1_sub3_sub3
+                    .anInt10225) <= Class367_Sub11.anInt7396)) {
                 Class368 class368
                         = (Class348_Sub40_Sub18.aClass319_9245.method2543
                         ((byte) 98,
@@ -130,10 +124,9 @@ final class Class219 {
                             = Class10.aClass87_191.method835((class368
                                     .anInt4503),
                             i ^ 0x7);
-                    if (((class318_sub1_sub3_sub3
-                            .anInt10322)
-                            ^ 0xffffffff) < -1
-                            && (class17.anInt262 ^ 0xffffffff) == -1) {
+                    if ((class318_sub1_sub3_sub3
+                            .anInt10322) > 0
+                            && class17.anInt262 == 0) {
                         Class127_Sub1.anInt8387 = 0;
                         class318_sub1_sub3_sub3
                                 .anInt10326++;
@@ -142,7 +135,7 @@ final class Class219 {
                     }
                     if ((class318_sub1_sub3_sub3
                             .anInt10322) <= 0
-                            && (class17.anInt245 ^ 0xffffffff) == -1) {
+                            && class17.anInt245 == 0) {
                         Class235.anInt3062 = -1;
                         Class127_Sub1.anInt8387 = 0;
                         class318_sub1_sub3_sub3
@@ -165,19 +158,19 @@ final class Class219 {
                     - -(class318_sub1_sub3_sub3.method2436((byte) 72) * 256));
             if (i_2_ >= i_4_) {
                 if (i_4_ < i_2_) {
-                    if ((i_3_ ^ 0xffffffff) > (i_5_ ^ 0xffffffff))
+                    if (i_5_ > i_3_)
                         class318_sub1_sub3_sub3.method2440((byte) 49, 6144);
-                    else if ((i_3_ ^ 0xffffffff) < (i_5_ ^ 0xffffffff))
+                    else if (i_5_ < i_3_)
                         class318_sub1_sub3_sub3.method2440((byte) 49, 2048);
                     else
                         class318_sub1_sub3_sub3.method2440((byte) 49, 4096);
                 } else if (i_5_ <= i_3_) {
-                    if ((i_5_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff))
+                    if (i_3_ > i_5_)
                         class318_sub1_sub3_sub3.method2440((byte) 49, 0);
                 } else
                     class318_sub1_sub3_sub3.method2440((byte) 49, 8192);
-            } else if ((i_5_ ^ 0xffffffff) >= (i_3_ ^ 0xffffffff)) {
-                if ((i_3_ ^ 0xffffffff) < (i_5_ ^ 0xffffffff))
+            } else if (i_3_ >= i_5_) {
+                if (i_5_ < i_3_)
                     class318_sub1_sub3_sub3.method2440((byte) 49, 14336);
                 else
                     class318_sub1_sub3_sub3.method2440((byte) 49, 12288);
@@ -189,8 +182,8 @@ final class Class219 {
                     [-1 + (class318_sub1_sub3_sub3
                     .anInt10319)]);
             if (!bool
-                    && (i_4_ - i_2_ > 1024 || (i_4_ + -i_2_ ^ 0xffffffff) > 1023
-                    || (-i_3_ + i_5_ ^ 0xffffffff) < -1025
+                    && (i_4_ - i_2_ > 1024 || i_4_ + -i_2_ < -1024
+                    || -i_3_ + i_5_ > 1024
                     || i_5_ + -i_3_ < -1024)) {
                 class318_sub1_sub3_sub3.anInt6388 = i_5_;
                 class318_sub1_sub3_sub3.anInt6377 = i_4_;
@@ -201,10 +194,8 @@ final class Class219 {
                 Class235.anInt3062 = -1;
                 class318_sub1_sub3_sub3
                         .anInt10319--;
-                if (((class318_sub1_sub3_sub3
-                        .anInt10322)
-                        ^ 0xffffffff)
-                        < -1)
+                if ((class318_sub1_sub3_sub3
+                        .anInt10322) > 0)
                     class318_sub1_sub3_sub3
                             .anInt10322--;
                 Class127_Sub1.anInt8387 = 0;
@@ -222,9 +213,8 @@ final class Class219 {
                             .anInt10282)
                             - class318_sub1_sub3_sub3
                             .aClass264_10217.anInt3370);
-                    if ((i_9_ ^ 0xffffffff) != -1
-                            && (class318_sub1_sub3_sub3.anInt10275
-                            ^ 0xffffffff) == 0
+                    if (i_9_ != 0
+                            && class318_sub1_sub3_sub3.anInt10275 == -1
                             && (class318_sub1_sub3_sub3
                             .anInt10310) != 0)
                         i_7_ = 8;
@@ -237,11 +227,9 @@ final class Class219 {
                             .anInt10319) > 3)
                         i_7_ = 32;
                 } else {
-                    if (!bool && (class318_sub1_sub3_sub3.anInt10319
-                            ^ 0xffffffff) < -2)
+                    if (!bool && class318_sub1_sub3_sub3.anInt10319 > 1)
                         i_7_ = 24;
-                    if (!bool && (class318_sub1_sub3_sub3.anInt10319
-                            ^ 0xffffffff) < -3)
+                    if (!bool && class318_sub1_sub3_sub3.anInt10319 > 2)
                         i_7_ = 32;
                 }
                 if ((class318_sub1_sub3_sub3
@@ -252,25 +240,21 @@ final class Class219 {
                     class318_sub1_sub3_sub3
                             .anInt10326--;
                 }
-                if ((i_6_ ^ 0xffffffff) == -3)
+                if (i_6_ == 2)
                     i_7_ <<= 1;
                 else if (i_6_ == 0)
                     i_7_ >>= 1;
                 Class127_Sub1.anInt8387 = 0;
-                if ((class225.anInt2945 ^ 0xffffffff) != 0) {
+                if (class225.anInt2945 != -1) {
                     i_7_ <<= 9;
-                    if (((class318_sub1_sub3_sub3
-                            .anInt10319)
-                            ^ 0xffffffff)
-                            != -2) {
+                    if ((class318_sub1_sub3_sub3
+                            .anInt10319) != 1) {
                         if (i_7_ <= class318_sub1_sub3_sub3.anInt10325) {
                             if (class318_sub1_sub3_sub3.anInt10325
                                     > 0) {
                                 class318_sub1_sub3_sub3.anInt10325
                                         -= class225.anInt2945;
-                                if ((class318_sub1_sub3_sub3.anInt10325
-                                        ^ 0xffffffff)
-                                        > -1)
+                                if (class318_sub1_sub3_sub3.anInt10325 < 0)
                                     class318_sub1_sub3_sub3.anInt10325
                                             = 0;
                             }
@@ -310,9 +294,7 @@ final class Class219 {
                                         < 0)
                                     class318_sub1_sub3_sub3.anInt10325
                                             = 0;
-                            } else if ((class318_sub1_sub3_sub3.anInt10325
-                                    ^ 0xffffffff)
-                                    > (i_7_ ^ 0xffffffff)) {
+                            } else if (i_7_ > class318_sub1_sub3_sub3.anInt10325) {
                                 class318_sub1_sub3_sub3.anInt10325
                                         += class225.anInt2945;
                                 if (class318_sub1_sub3_sub3.anInt10325
@@ -333,7 +315,7 @@ final class Class219 {
                 if (i_2_ == i_4_ && i_5_ == i_3_)
                     Class235.anInt3062 = -1;
                 else {
-                    if ((i_2_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff)) {
+                    if (i_4_ > i_2_) {
                         Class127_Sub1.anInt8387 |= 0x4;
                         class318_sub1_sub3_sub3.anInt6377
                                 += i_7_;
@@ -350,18 +332,16 @@ final class Class219 {
                             class318_sub1_sub3_sub3.anInt6377
                                     = i_4_;
                     }
-                    if ((i_7_ ^ 0xffffffff) <= -33)
+                    if (i_7_ >= 32)
                         Class235.anInt3062 = 2;
                     else
                         Class235.anInt3062 = i_6_;
-                    if ((i_5_ ^ 0xffffffff) < (i_3_ ^ 0xffffffff)) {
+                    if (i_3_ < i_5_) {
                         Class127_Sub1.anInt8387 |= 0x1;
                         class318_sub1_sub3_sub3.anInt6388
                                 += i_7_;
-                        if (((class318_sub1_sub3_sub3
-                                .anInt6388)
-                                ^ 0xffffffff)
-                                < (i_5_ ^ 0xffffffff))
+                        if (i_5_ < (class318_sub1_sub3_sub3
+                                .anInt6388))
                             class318_sub1_sub3_sub3.anInt6388
                                     = i_5_;
                     } else if (i_5_ < i_3_) {
@@ -374,14 +354,11 @@ final class Class219 {
                                     = i_5_;
                     }
                 }
-                if ((class318_sub1_sub3_sub3.anInt6377
-                        ^ 0xffffffff) == (i_4_ ^ 0xffffffff)
+                if (i_4_ == class318_sub1_sub3_sub3.anInt6377
                         && i_5_ == (class318_sub1_sub3_sub3
                         .anInt6388)) {
-                    if (((class318_sub1_sub3_sub3
-                            .anInt10322)
-                            ^ 0xffffffff)
-                            < -1)
+                    if ((class318_sub1_sub3_sub3
+                            .anInt10322) > 0)
                         class318_sub1_sub3_sub3
                                 .anInt10322--;
                     class318_sub1_sub3_sub3

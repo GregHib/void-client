@@ -30,16 +30,10 @@ final class Class61 {
             return 0;
         int i_3_ = 0;
         for (int i_4_ = 0;
-             ((i_4_ ^ 0xffffffff)
-                     > (class348_sub13.anIntArray6757.length
-                     ^ 0xffffffff));
+             (class348_sub13.anIntArray6757.length > i_4_);
              i_4_++) {
-            if ((class348_sub13.anIntArray6757[i_4_]
-                    ^ 0xffffffff) <= -1
-                    && ((class348_sub13.anIntArray6757[i_4_]
-                    ^ 0xffffffff)
-                    > (Exception_Sub1.aClass255_112.anInt3271
-                    ^ 0xffffffff))) {
+            if (class348_sub13.anIntArray6757[i_4_] >= 0
+                    && (Exception_Sub1.aClass255_112.anInt3271 > class348_sub13.anIntArray6757[i_4_])) {
                 Class213 class213 = (Exception_Sub1.aClass255_112.method1940
                         (-127, (class348_sub13
                                 .anIntArray6757[i_4_])));

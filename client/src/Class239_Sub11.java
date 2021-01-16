@@ -20,14 +20,14 @@ final class Class239_Sub11 extends Class239 {
         Class101_Sub3.method947((byte) 41);
         int i_0_ = (Class269.aClass217_3453.method1588(-51, i)
                 .anInt2125);
-        if ((i_0_ ^ 0xffffffff) != -1) {
+        if (i_0_ != 0) {
             if (bool != true)
                 method1769(-43);
             int i_1_ = (Class318_Sub1_Sub3_Sub3.aClass170_10209
                     .anIntArray5063[i]);
             if (i_0_ == 5)
                 Class318_Sub1_Sub5.anInt8770 = i_1_;
-            if ((i_0_ ^ 0xffffffff) == -7)
+            if (i_0_ == 6)
                 Class348_Sub40_Sub31.anInt9408 = i_1_;
         }
     }
@@ -58,7 +58,7 @@ final class Class239_Sub11 extends Class239 {
             method1716(false);
         anInt5954++;
         if (this.anInt3138 != 1
-                && (this.anInt3138 ^ 0xffffffff) != -1)
+                && this.anInt3138 != 0)
             this.anInt3138 = method1710(20014);
     }
 
@@ -76,16 +76,14 @@ final class Class239_Sub11 extends Class239 {
         anInt5957++;
         if (Class367_Sub8.anInt7365 == 0) {
             Class267.aClass267_3401.method2025(new Class309("jaclib"), false);
-            if ((Class267.aClass267_3401.method2027(119).method31(28)
-                    ^ 0xffffffff)
-                    != -101)
+            if (Class267.aClass267_3401.method2027(119).method31(28) != 100)
                 return 1;
             if (!((Class309) Class267.aClass267_3401.method2027(71))
                     .method2313(124))
                 Class79.aClient1367.method97(i + 24);
             Class367_Sub8.anInt7365 = 1;
         }
-        if ((Class367_Sub8.anInt7365 ^ 0xffffffff) == -2) {
+        if (Class367_Sub8.anInt7365 == 1) {
             Class126.aClass267Array4987 = Class267.method2029(110);
             Class267.aClass267_3396
                     .method2025(new Class292(Class367_Sub8.aClass45_7362), false);
@@ -164,7 +162,7 @@ final class Class239_Sub11 extends Class239 {
             anInt5951 = -33;
         Class267[] class267s = Class126.aClass267Array4987;
         for (int i_11_ = 0;
-             (i_11_ ^ 0xffffffff) > (class267s.length ^ 0xffffffff); i_11_++) {
+             class267s.length > i_11_; i_11_++) {
             Class267 class267 = class267s[i_11_];
             int i_12_ = class267.method2024(-1);
             int i_13_ = class267.method2027(70).method31(i ^ 0x75);
@@ -185,7 +183,7 @@ final class Class239_Sub11 extends Class239 {
         i_9_ -= Class348_Sub40_Sub24.anInt9327;
         i_10_ -= Class348_Sub40_Sub24.anInt9327;
         int i_14_ = i_9_ <= 0 ? 100 : 100 * i_10_ / i_9_;
-        if (!bool && (i_14_ ^ 0xffffffff) < -100)
+        if (!bool && i_14_ > 99)
             i_14_ = 99;
         return i_14_;
     }

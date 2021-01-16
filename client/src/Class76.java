@@ -18,9 +18,9 @@ final class Class76 {
     static final boolean method771(int i, byte i_0_, int i_1_, int i_2_,
                                    int i_3_, int i_4_, int[] is, int i_5_) {
         anInt1281++;
-        if ((Class306.anInt3872 ^ 0xffffffff) > (i_3_ ^ 0xffffffff))
+        if (i_3_ > Class306.anInt3872)
             i_3_ = Class306.anInt3872;
-        if ((i_4_ ^ 0xffffffff) > -1)
+        if (i_4_ < 0)
             i_4_ = 0;
         if (i_0_ != -25)
             anInt1288 = -32;
@@ -29,10 +29,10 @@ final class Class76 {
         i_5_ += -1 + i_4_;
         i_1_ += i * i_4_;
         i_2_ = -i_4_ + i_3_ >> 79407298;
-        if ((Class350.anInt4319 ^ 0xffffffff) != -2) {
+        if (Class350.anInt4319 != 1) {
             i_1_ -= 38400;
-            while ((--i_2_ ^ 0xffffffff) <= -1) {
-                if ((i_1_ ^ 0xffffffff) > (is[++i_5_] ^ 0xffffffff))
+            while (--i_2_ >= 0) {
+                if (is[++i_5_] > i_1_)
                     return false;
                 i_1_ += i;
                 if (is[++i_5_] > i_1_)
@@ -54,22 +54,22 @@ final class Class76 {
         } else {
             Class225.anInt2946 += i_2_;
             while (--i_2_ >= 0) {
-                if ((i_1_ ^ 0xffffffff) > (is[++i_5_] ^ 0xffffffff))
+                if (is[++i_5_] > i_1_)
                     is[i_5_] = i_1_;
                 i_1_ += i;
-                if ((i_1_ ^ 0xffffffff) > (is[++i_5_] ^ 0xffffffff))
+                if (is[++i_5_] > i_1_)
                     is[i_5_] = i_1_;
                 i_1_ += i;
                 if (i_1_ < is[++i_5_])
                     is[i_5_] = i_1_;
                 i_1_ += i;
-                if ((i_1_ ^ 0xffffffff) > (is[++i_5_] ^ 0xffffffff))
+                if (is[++i_5_] > i_1_)
                     is[i_5_] = i_1_;
                 i_1_ += i;
             }
             i_2_ = 0x3 & i_3_ - i_4_;
-            while ((--i_2_ ^ 0xffffffff) <= -1) {
-                if ((i_1_ ^ 0xffffffff) > (is[++i_5_] ^ 0xffffffff))
+            while (--i_2_ >= 0) {
+                if (is[++i_5_] > i_1_)
                     is[i_5_] = i_1_;
                 i_1_ += i;
             }

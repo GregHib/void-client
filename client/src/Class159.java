@@ -22,7 +22,7 @@ final class Class159 {
         anInt2124++;
         if (!Class320.method2547(i_2_, (byte) 84)) {
             if (i_4_ == -1) {
-                for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -101; i_10_++)
+                for (int i_10_ = 0; i_10_ < 100; i_10_++)
                     Class152.aBooleanArray2076[i_10_] = true;
             } else
                 Class152.aBooleanArray2076[i_4_] = true;
@@ -48,7 +48,7 @@ final class Class159 {
                         -1, i_7_);
             else
                 Class348_Sub40_Sub7.method3064(i_9_, i,
-                        (i_4_ ^ 0xffffffff) > -1, i_5_,
+                        i_4_ < 0, i_5_,
                         i_3_, i_4_, i_6_, false,
                         (Class369_Sub2
                                 .aClass46ArrayArray8584[i_2_]),
@@ -56,7 +56,7 @@ final class Class159 {
             if (i_8_ <= 58)
                 anInt2127 = -84;
             if (Class59_Sub1.aBoolean5300) {
-                if ((i_4_ ^ 0xffffffff) <= -1
+                if (i_4_ >= 0
                         && Class348_Sub42_Sub16_Sub2.anInt10463 == 2)
                     Class338.method2663(-5590, Class314.anInt3941,
                             Class314.anInt3939, Class239.anInt3142,
@@ -73,7 +73,7 @@ final class Class159 {
     final void method1253(Class348_Sub49 class348_sub49, boolean bool) {
         for (; ; ) {
             int i = class348_sub49.method3387(255);
-            if ((i ^ 0xffffffff) == -1)
+            if (i == 0)
                 break;
             method1251(class348_sub49, i, -105);
         }

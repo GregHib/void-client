@@ -43,7 +43,7 @@ final class Class367_Sub11 extends Class367 {
                 = this.aHa_Sub3_4479.method3887((byte) 98);
         if (!aBoolean7411)
             OpenGL.glBindProgramARB(34336,
-                    ((i_0_ ^ 0xffffffff) != -2147483648
+                    (i_0_ != 2147483647
                             ? aClass193_7404.anInt2584
                             : aClass193_7395.anInt2584));
         else
@@ -208,7 +208,7 @@ final class Class367_Sub11 extends Class367 {
                                 = ha_Sub2.anInt7666;
                     }
                     if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                        if ((Class321.anInt4017 ^ 0xffffffff) > -1025
+                        if (Class321.anInt4017 < 1024
                                 && Class348_Sub42_Sub8_Sub2.anInt10432 < 768) {
                             /* empty */
                         }
@@ -234,7 +234,7 @@ final class Class367_Sub11 extends Class367 {
                                 (insets.left - -Class348_Sub48.anInt7129,
                                         Class335.anInt4167 + insets.top);
                     }
-                    if ((r.anInt9721 ^ 0xffffffff) != 0)
+                    if (r.anInt9721 != -1)
                         Class239.method1713(true, 520);
                     Class140.method1170((byte) -78);
                 }

@@ -24,8 +24,8 @@ final class Class283 {
         anInt3656++;
         if (bool != true)
             method2114(90, true);
-        return (i ^ 0xffffffff) == -4 || (i ^ 0xffffffff) == -6
-                || (i ^ 0xffffffff) == -7;
+        return i == 3 || i == 5
+                || i == 6;
     }
 
     static {

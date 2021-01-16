@@ -47,7 +47,7 @@ final class Class18 {
             Class348_Sub8.aHa6654.KA(i_1_, i,
                     class46.anInt709 + i_1_,
                     i - -class46.anInt789);
-            if ((Class259.anInt3306 ^ 0xffffffff) <= -4)
+            if (Class259.anInt3306 >= 3)
                 Class348_Sub8.aHa6654.A(-16777216, var_aa, i_1_, i);
             else
                 Class79.aClass105_1365.method976
@@ -92,7 +92,7 @@ final class Class18 {
                 class348_sub5
                         = (Class348_Sub5) aClass262_292.method1990((byte) 113);
                 int i_7_ = class348_sub5_6_.method2764(1);
-                for (int i_8_ = 0; (i_7_ ^ 0xffffffff) < (i_8_ ^ 0xffffffff);
+                for (int i_8_ = 0; i_8_ < i_7_;
                      i_8_++) {
                     class348_sub5_6_.method2750(aClass258_Sub3_300,
                             aClass258_Sub3Array295[i_4_],
@@ -180,7 +180,7 @@ final class Class18 {
         anInt272++;
         if (aClass206_284 == null || aClass262_292.method2002((byte) 18))
             return false;
-        if ((i ^ 0xffffffff) != (anInt286 ^ 0xffffffff) || i_10_ != anInt275) {
+        if (anInt286 != i || i_10_ != anInt275) {
             anInt286 = i;
             anInt275 = i_10_;
             for (Class348 class348 = aClass262_292.method1995(i_12_ ^ ~0x4);
@@ -273,7 +273,7 @@ final class Class18 {
                 aClass206_281.method1500(2983, 1);
                 aClass206_281.method1500(2983, 8);
                 aClass206_281.method1509(aClass258_Sub3Array295[0], 0, 0);
-                if ((anInt302 ^ 0xffffffff) < -2)
+                if (anInt302 > 1)
                     aClass206_281.method1509(aClass258_Sub3Array295[1], 0, 1);
                 if (aBoolean303)
                     aClass206_281.method1509(aClass258_Sub3_300, 0, 8);
@@ -286,7 +286,7 @@ final class Class18 {
                 aClass206_281.method1500(2983, 1);
                 aClass206_281.method1500(2983, 8);
                 aClass206_281.method1509(aClass258_Sub3Array295[0], 0, 0);
-                if ((anInt302 ^ 0xffffffff) < -2)
+                if (anInt302 > 1)
                     aClass206_281.method1509(aClass258_Sub3Array295[1], 0, 1);
                 if (aBoolean303)
                     aClass206_281.method1509(aClass258_Sub3_300, 0, 8);
@@ -361,13 +361,13 @@ final class Class18 {
                          = (Class348_Sub5) aClass262_292.method1990((byte) 67)) {
             int i_17_ = class348_sub5.method2761(true);
             i_15_ += class348_sub5.method2764(1);
-            if ((i_17_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff))
+            if (i_14_ < i_17_)
                 i_14_ = i_17_;
             bool |= class348_sub5.method2759(1);
         }
         int i_18_;
         if (i_14_ != 2) {
-            if ((i_14_ ^ 0xffffffff) == -2)
+            if (i_14_ == 1)
                 i_18_ = 34842;
             else
                 i_18_ = 6408;
@@ -377,7 +377,7 @@ final class Class18 {
             aBoolean297 = true;
             anInt301 = i_18_;
         }
-        int i_19_ = (anInt302 ^ 0xffffffff) < -3 ? 2 : anInt302;
+        int i_19_ = anInt302 > 2 ? 2 : anInt302;
         int i_20_ = i_15_ <= 2 ? i_15_ : 2;
         anInt302 = i_15_;
         if (!bool == aBoolean303) {

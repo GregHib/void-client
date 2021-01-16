@@ -70,14 +70,13 @@ final class Class124 {
         }
         if (i_0_ <= 39)
             method1107(40, -7, -80, -24);
-        if ((this.anInt1818 ^ 0xffffffff) < -1
+        if (this.anInt1818 > 0
                 && this.anIntArray1859 != null) {
             for (int i_2_ = 0; i_2_ < this.anIntArray1859.length;
                  i_2_++) {
                 this.anIntArray1859[i_2_] <<= i;
                 this.anIntArray1816[i_2_] <<= i;
-                if ((this.aByteArray1823[i_2_] ^ 0xffffffff)
-                        != -2)
+                if (this.aByteArray1823[i_2_] != 1)
                     this.anIntArray1844[i_2_] <<= i;
             }
         }
@@ -98,8 +97,8 @@ final class Class124 {
             }
         }
         int[][] is_6_ = new int[1 + i_3_][];
-        for (int i_7_ = 0; (i_3_ ^ 0xffffffff) <= (i_7_ ^ 0xffffffff);
-             i_7_++) {
+        for (int i_7_ = 0; i_7_ <= i_3_;
+			 i_7_++) {
             is_6_[i_7_] = new int[is[i_7_]];
             is[i_7_] = 0;
         }
@@ -121,7 +120,7 @@ final class Class124 {
         int i_10_ = 0;
         for (int i_11_ = 0; i_11_ < this.anInt1817; i_11_++) {
             int i_12_ = this.anIntArray1824[i_11_];
-            if ((i_12_ ^ 0xffffffff) <= -1) {
+            if (i_12_ >= 0) {
                 if (i_10_ < i_12_)
                     i_10_ = i_12_;
                 is[i_12_]++;
@@ -131,16 +130,16 @@ final class Class124 {
         if (i <= 13)
             method1102(-65, (byte) -8, (byte) 94, (short) -89, (byte) 6,
                     (short) -117, 21, (byte) 21, -31);
-        for (int i_14_ = 0; (i_14_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff);
-             i_14_++) {
+        for (int i_14_ = 0; i_10_ >= i_14_;
+			 i_14_++) {
             is_13_[i_14_] = new int[is[i_14_]];
             is[i_14_] = 0;
         }
         for (int i_15_ = 0;
-             (this.anInt1817 ^ 0xffffffff) < (i_15_ ^ 0xffffffff);
+			 i_15_ < this.anInt1817;
              i_15_++) {
             int i_16_ = this.anIntArray1824[i_15_];
-            if ((i_16_ ^ 0xffffffff) <= -1)
+            if (i_16_ >= 0)
                 is_13_[i_16_][is[i_16_]++] = i_15_;
         }
         return is_13_;
@@ -176,15 +175,14 @@ final class Class124 {
         int i_22_;
         do
             i_22_ = random.nextInt();
-        while ((i_21_ ^ 0xffffffff) >= (i_22_ ^ 0xffffffff));
+        while (i_22_ >= i_21_);
         return Class350.method3452(i_22_, (byte) -15, i_20_);
     }
 
     final void method1098(short i, byte i_23_, short i_24_) {
         if (i_23_ == 126) {
             for (int i_25_ = 0; i_25_ < this.anInt1817; i_25_++) {
-                if ((this.aShortArray1862[i_25_] ^ 0xffffffff)
-                        == (i ^ 0xffffffff))
+                if (i == this.aShortArray1862[i_25_])
                     this.aShortArray1862[i_25_] = i_24_;
             }
             anInt1826++;
@@ -195,7 +193,7 @@ final class Class124 {
         int i_29_ = 0;
         int i_30_ = 19 % ((-40 - i) / 33);
         for (/**/;
-                 (i_29_ ^ 0xffffffff) > (this.anInt1836 ^ 0xffffffff);
+				 this.anInt1836 > i_29_;
                  i_29_++) {
             this.anIntArray1841[i_29_] += i_27_;
             this.anIntArray1847[i_29_] += i_28_;
@@ -212,21 +210,21 @@ final class Class124 {
                 : this.anInt1836);
         for (int i_33_ = 0; i_33_ < i_32_; i_33_++) {
             int i_34_ = this.anIntArray1868[i_33_];
-            if ((i_34_ ^ 0xffffffff) <= -1) {
+            if (i_34_ >= 0) {
                 is[i_34_]++;
                 if (i_31_ < i_34_)
                     i_31_ = i_34_;
             }
         }
         int[][] is_35_ = new int[1 + i_31_][];
-        for (int i_36_ = 0; (i_31_ ^ 0xffffffff) <= (i_36_ ^ 0xffffffff);
-             i_36_++) {
+        for (int i_36_ = 0; i_36_ <= i_31_;
+			 i_36_++) {
             is_35_[i_36_] = new int[is[i_36_]];
             is[i_36_] = 0;
         }
         for (int i_37_ = 0; i_32_ > i_37_; i_37_++) {
             int i_38_ = this.anIntArray1868[i_37_];
-            if ((i_38_ ^ 0xffffffff) <= -1)
+            if (i_38_ >= 0)
                 is_35_[i_38_][is[i_38_]++] = i_37_;
         }
         if (i > -14)
@@ -300,10 +298,10 @@ final class Class124 {
         int i_68_ = i_66_;
         i_66_ += this.anInt1817;
         int i_69_ = i_66_;
-        if ((i_58_ ^ 0xffffffff) == -256)
+        if (i_58_ == 255)
             i_66_ += this.anInt1817;
         int i_70_ = i_66_;
-        if ((i_60_ ^ 0xffffffff) == -2)
+        if (i_60_ == 1)
             i_66_ += this.anInt1817;
         int i_71_ = i_66_;
         if (i_57_ == 1)
@@ -327,7 +325,7 @@ final class Class124 {
         int i_79_ = i_66_;
         this.aShortArray1862
                 = new short[this.anInt1817];
-        if ((i_58_ ^ 0xffffffff) == -256)
+        if (i_58_ == 255)
             this.aByteArray1839
                     = new byte[this.anInt1817];
         else
@@ -340,7 +338,7 @@ final class Class124 {
                     = new byte[this.anInt1817];
         this.aShortArray1863
                 = new short[this.anInt1817];
-        if ((i_57_ ^ 0xffffffff) == -2) {
+        if (i_57_ == 1) {
             this.aShortArray1822
                     = new short[this.anInt1817];
             this.aByteArray1820
@@ -350,7 +348,7 @@ final class Class124 {
         }
         this.anIntArray1847
                 = new int[this.anInt1836];
-        if ((i_60_ ^ 0xffffffff) == -2)
+        if (i_60_ == 1)
             this.anIntArray1824
                     = new int[this.anInt1817];
         this.aShortArray1855
@@ -386,7 +384,7 @@ final class Class124 {
             if ((i_84_ & 0x1) != 0)
                 i_85_ = class348_sub49_53_.method3362((byte) 77);
             int i_86_ = 0;
-            if ((i_84_ & 0x2 ^ 0xffffffff) != -1)
+            if ((i_84_ & 0x2) != 0)
                 i_86_ = class348_sub49_54_.method3362((byte) 77);
             int i_87_ = 0;
             if ((0x4 & i_84_) != 0)
@@ -410,7 +408,7 @@ final class Class124 {
         for (int i_88_ = 0; i_88_ < this.anInt1817; i_88_++) {
             this.aShortArray1862[i_88_]
                     = (short) class348_sub49.method3330(842397944);
-            if ((i_57_ ^ 0xffffffff) == -2) {
+            if (i_57_ == 1) {
                 int i_89_ = class348_sub49_53_.method3387(255);
                 if ((0x1 & i_89_) != 1)
                     this.aByteArray1843[i_88_] = (byte) 0;
@@ -427,15 +425,14 @@ final class Class124 {
                     this.aShortArray1822[i_88_]
                             = this.aShortArray1862[i_88_];
                     this.aShortArray1862[i_88_] = (short) 127;
-                    if ((this.aShortArray1822[i_88_] ^ 0xffffffff)
-                            != 0)
+                    if (this.aShortArray1822[i_88_] != -1)
                         bool_52_ = true;
                 }
             }
-            if ((i_58_ ^ 0xffffffff) == -256)
+            if (i_58_ == 255)
                 this.aByteArray1839[i_88_]
                         = class348_sub49_54_.method3388(-108);
-            if ((i_59_ ^ 0xffffffff) == -2)
+            if (i_59_ == 1)
                 this.aByteArray1834[i_88_]
                         = class348_sub49_55_
                         .method3388(Class348_Sub21.method2955(i, -120));
@@ -451,10 +448,10 @@ final class Class124 {
         short i_92_ = 0;
         int i_93_ = 0;
         for (int i_94_ = 0;
-             (this.anInt1817 ^ 0xffffffff) < (i_94_ ^ 0xffffffff);
+			 i_94_ < this.anInt1817;
              i_94_++) {
             int i_95_ = class348_sub49_53_.method3387(255);
-            if ((i_95_ ^ 0xffffffff) == -2) {
+            if (i_95_ == 1) {
                 i_90_ = (short) (i_93_ + class348_sub49.method3362((byte) 77));
                 i_93_ = i_90_;
                 i_91_ = (short) (class348_sub49.method3362((byte) 77) + i_93_);
@@ -464,17 +461,14 @@ final class Class124 {
                 i_93_ = i_92_;
                 this.aShortArray1835[i_94_] = i_91_;
                 this.aShortArray1855[i_94_] = i_92_;
-                if ((this.anInt1821 ^ 0xffffffff)
-                        > (i_90_ ^ 0xffffffff))
+                if (i_90_ > this.anInt1821)
                     this.anInt1821 = i_90_;
-                if ((i_91_ ^ 0xffffffff)
-                        < (this.anInt1821 ^ 0xffffffff))
+                if (this.anInt1821 < i_91_)
                     this.anInt1821 = i_91_;
-                if ((i_92_ ^ 0xffffffff)
-                        < (this.anInt1821 ^ 0xffffffff))
+                if (this.anInt1821 < i_92_)
                     this.anInt1821 = i_92_;
             }
-            if ((i_95_ ^ 0xffffffff) == -3) {
+            if (i_95_ == 2) {
                 i_91_ = i_92_;
                 i_92_ = (short) (class348_sub49.method3362((byte) 77) + i_93_);
                 this.aShortArray1863[i_94_] = i_90_;
@@ -510,7 +504,7 @@ final class Class124 {
         this.anInt1821++;
         class348_sub49.anInt7197 = i_76_;
         for (int i_97_ = 0;
-             (this.anInt1818 ^ 0xffffffff) < (i_97_ ^ 0xffffffff);
+			 i_97_ < this.anInt1818;
              i_97_++) {
             this.aByteArray1823[i_97_] = (byte) 0;
             this.aShortArray1829[i_97_]
@@ -524,7 +518,7 @@ final class Class124 {
             boolean bool_98_ = false;
             for (int i_99_ = 0; i_99_ < this.anInt1817; i_99_++) {
                 int i_100_ = this.aByteArray1820[i_99_] & 0xff;
-                if ((i_100_ ^ 0xffffffff) != -256) {
+                if (i_100_ != 255) {
                     if (((0xffff & this.aShortArray1829[i_100_])
                             != this.aShortArray1863[i_99_])
                             || (this.aShortArray1835[i_99_]
@@ -556,8 +550,7 @@ final class Class124 {
         for (int i_107_ = i; i_107_ < this.anInt1836; i_107_++) {
             if (this.anIntArray1841[i_107_] == i_104_
                     && i_105_ == this.anIntArray1847[i_107_]
-                    && ((this.anIntArray1852[i_107_] ^ 0xffffffff)
-                    == (i_106_ ^ 0xffffffff))) {
+                    && (i_106_ == this.anIntArray1852[i_107_])) {
                 this.aShortArray1842[i_107_]
                         = (short) Class273.method2057((this
                                 .aShortArray1842[i_107_]),
@@ -614,9 +607,9 @@ final class Class124 {
         this.anInt1817 = class348_sub49.method3330(842397944);
         this.anInt1818 = class348_sub49.method3387(255);
         int i_124_ = class348_sub49.method3387(255);
-        boolean bool = (0x1 & i_124_ ^ 0xffffffff) == -2;
+        boolean bool = (0x1 & i_124_) == 1;
         boolean bool_125_ = (i_124_ & 0x2) == 2;
-        boolean bool_126_ = (i_124_ & 0x4 ^ 0xffffffff) == -5;
+        boolean bool_126_ = (i_124_ & 0x4) == 4;
         boolean bool_127_ = (i_124_ & 0x8) == 8;
         if (bool_127_) {
             class348_sub49.anInt7197 -= 7;
@@ -636,15 +629,14 @@ final class Class124 {
         int i_138_ = 0;
         int i_139_ = 0;
         int i_140_ = 0;
-        if ((this.anInt1818 ^ 0xffffffff) < -1) {
+        if (this.anInt1818 > 0) {
             class348_sub49.anInt7197 = 0;
             this.aByteArray1823
                     = new byte[this.anInt1818];
-            for (int i_141_ = 0; ((this.anInt1818 ^ 0xffffffff)
-                    < (i_141_ ^ 0xffffffff)); i_141_++) {
+            for (int i_141_ = 0; (i_141_ < this.anInt1818); i_141_++) {
                 byte i_142_ = (this.aByteArray1823[i_141_]
                         = class348_sub49.method3388(-124));
-                if (i_142_ >= 1 && (i_142_ ^ 0xffffffff) >= -4)
+                if (i_142_ >= 1 && i_142_ <= 3)
                     i_139_++;
                 if (i_142_ == 2)
                     i_140_++;
@@ -661,10 +653,10 @@ final class Class124 {
         int i_146_ = i_143_;
         i_143_ += this.anInt1817;
         int i_147_ = i_143_;
-        if ((i_128_ ^ 0xffffffff) == -256)
+        if (i_128_ == 255)
             i_143_ += this.anInt1817;
         int i_148_ = i_143_;
-        if ((i_130_ ^ 0xffffffff) == -2)
+        if (i_130_ == 1)
             i_143_ += this.anInt1817;
         int i_149_ = i_143_;
         if (i_132_ == 1)
@@ -710,7 +702,7 @@ final class Class124 {
                 = new short[this.anInt1817];
         this.aShortArray1862
                 = new short[this.anInt1817];
-        if ((i_130_ ^ 0xffffffff) == -2)
+        if (i_130_ == 1)
             this.anIntArray1824
                     = new int[this.anInt1817];
         if (this.anInt1818 > 0) {
@@ -722,7 +714,7 @@ final class Class124 {
                     = new short[this.anInt1818];
             this.aShortArray1829
                     = new short[this.anInt1818];
-            if ((i_139_ ^ 0xffffffff) < -1) {
+            if (i_139_ > 0) {
                 this.anIntArray1867 = new int[i_139_];
                 this.aByteArray1853 = new byte[i_139_];
                 this.anIntArray1816 = new int[i_139_];
@@ -736,10 +728,10 @@ final class Class124 {
         if (bool)
             this.aByteArray1843
                     = new byte[this.anInt1817];
-        if ((i_129_ ^ 0xffffffff) == -2)
+        if (i_129_ == 1)
             this.aByteArray1834
                     = new byte[this.anInt1817];
-        if ((i_128_ ^ 0xffffffff) == -256)
+        if (i_128_ == 255)
             this.aByteArray1839
                     = new byte[this.anInt1817];
         else
@@ -750,8 +742,8 @@ final class Class124 {
                 = new int[this.anInt1836];
         this.aShortArray1863
                 = new short[this.anInt1817];
-        if ((i_131_ ^ 0xffffffff) == -2
-                && (this.anInt1818 ^ 0xffffffff) < -1)
+        if (i_131_ == 1
+                && this.anInt1818 > 0)
             this.aByteArray1820
                     = new byte[this.anInt1817];
         int i_165_ = i_143_;
@@ -759,11 +751,11 @@ final class Class124 {
                 = new int[this.anInt1836];
         this.anIntArray1841
                 = new int[this.anInt1836];
-        if ((i_132_ ^ 0xffffffff) == -2)
+        if (i_132_ == 1)
             this.anIntArray1868
                     = new int[this.anInt1836];
         class348_sub49.anInt7197 = i_144_;
-        if ((i_131_ ^ 0xffffffff) == -2)
+        if (i_131_ == 1)
             this.aShortArray1822
                     = new short[this.anInt1817];
         class348_sub49_118_.anInt7197 = i_155_;
@@ -776,13 +768,13 @@ final class Class124 {
         for (int i_169_ = 0; this.anInt1836 > i_169_; i_169_++) {
             int i_170_ = class348_sub49.method3387(255);
             int i_171_ = 0;
-            if ((i_170_ & 0x1 ^ 0xffffffff) != -1)
+            if ((i_170_ & 0x1) != 0)
                 i_171_ = class348_sub49_118_.method3362((byte) 77);
             int i_172_ = 0;
-            if ((i_170_ & 0x2 ^ 0xffffffff) != -1)
+            if ((i_170_ & 0x2) != 0)
                 i_172_ = class348_sub49_119_.method3362((byte) 77);
             int i_173_ = 0;
-            if ((0x4 & i_170_ ^ 0xffffffff) != -1)
+            if ((0x4 & i_170_) != 0)
                 i_173_ = class348_sub49_120_.method3362((byte) 77);
             this.anIntArray1841[i_169_] = i_171_ + i_166_;
             this.anIntArray1847[i_169_] = i_172_ + i_167_;
@@ -790,7 +782,7 @@ final class Class124 {
             i_167_ = this.anIntArray1847[i_169_];
             i_166_ = this.anIntArray1841[i_169_];
             i_168_ = this.anIntArray1852[i_169_];
-            if ((i_132_ ^ 0xffffffff) == -2)
+            if (i_132_ == 1)
                 this.anIntArray1868[i_169_]
                         = class348_sub49_121_.method3387(255);
         }
@@ -802,15 +794,14 @@ final class Class124 {
         class348_sub49_122_.anInt7197 = i_152_;
         class348_sub49_123_.anInt7197 = i_153_;
         for (int i_174_ = 0;
-             ((i_174_ ^ 0xffffffff)
-                     > (this.anInt1817 ^ 0xffffffff));
+             (this.anInt1817 > i_174_);
              i_174_++) {
             this.aShortArray1862[i_174_]
                     = (short) class348_sub49.method3330(842397944);
             if (bool)
                 this.aByteArray1843[i_174_]
                         = class348_sub49_118_.method3388(-98);
-            if ((i_128_ ^ 0xffffffff) == -256)
+            if (i_128_ == 255)
                 this.aByteArray1839[i_174_]
                         = class348_sub49_119_.method3388(-78);
             if (i_129_ == 1)
@@ -837,10 +828,9 @@ final class Class124 {
         short i_176_ = 0;
         short i_177_ = 0;
         int i_178_ = 0;
-        for (int i_179_ = 0; ((this.anInt1817 ^ 0xffffffff)
-                < (i_179_ ^ 0xffffffff)); i_179_++) {
+        for (int i_179_ = 0; (i_179_ < this.anInt1817); i_179_++) {
             int i_180_ = class348_sub49_118_.method3387(255);
-            if ((i_180_ ^ 0xffffffff) == -2) {
+            if (i_180_ == 1) {
                 i_175_
                         = (short) (class348_sub49.method3362((byte) 77) + i_178_);
                 i_178_ = i_175_;
@@ -853,15 +843,14 @@ final class Class124 {
                 this.aShortArray1863[i_179_] = i_175_;
                 this.aShortArray1835[i_179_] = i_176_;
                 this.aShortArray1855[i_179_] = i_177_;
-                if ((this.anInt1821 ^ 0xffffffff)
-                        > (i_175_ ^ 0xffffffff))
+                if (i_175_ > this.anInt1821)
                     this.anInt1821 = i_175_;
                 if (this.anInt1821 < i_176_)
                     this.anInt1821 = i_176_;
                 if (i_177_ > this.anInt1821)
                     this.anInt1821 = i_177_;
             }
-            if ((i_180_ ^ 0xffffffff) == -3) {
+            if (i_180_ == 2) {
                 i_176_ = i_177_;
                 i_177_
                         = (short) (class348_sub49.method3362((byte) 77) + i_178_);
@@ -914,7 +903,7 @@ final class Class124 {
                 this.aShortArray1825[i_182_]
                         = (short) class348_sub49.method3330(842397944);
             }
-            if ((i_183_ ^ 0xffffffff) == -2) {
+            if (i_183_ == 1) {
                 this.aShortArray1829[i_182_]
                         = (short) class348_sub49_118_.method3330(842397944);
                 this.aShortArray1849[i_182_]
@@ -931,7 +920,7 @@ final class Class124 {
                 } else {
                     this.anIntArray1859[i_182_]
                             = class348_sub49_119_.method3330(842397944);
-                    if ((this.anInt1830 ^ 0xffffffff) <= -15)
+                    if (this.anInt1830 >= 14)
                         this.anIntArray1816[i_182_]
                                 = class348_sub49_119_.method3351(-1);
                     else
@@ -954,7 +943,7 @@ final class Class124 {
                         = (short) class348_sub49_118_.method3330(842397944);
                 this.aShortArray1825[i_182_]
                         = (short) class348_sub49_118_.method3330(842397944);
-                if ((this.anInt1830 ^ 0xffffffff) <= -16) {
+                if (this.anInt1830 >= 15) {
                     this.anIntArray1859[i_182_]
                             = class348_sub49_119_.method3351(-1);
                     this.anIntArray1816[i_182_]
@@ -964,7 +953,7 @@ final class Class124 {
                 } else {
                     this.anIntArray1859[i_182_]
                             = class348_sub49_119_.method3330(842397944);
-                    if ((this.anInt1830 ^ 0xffffffff) > -15)
+                    if (this.anInt1830 < 14)
                         this.anIntArray1816[i_182_]
                                 = class348_sub49_119_.method3330(842397944);
                     else
@@ -991,10 +980,10 @@ final class Class124 {
                         = (short) class348_sub49_118_.method3330(842397944);
                 this.aShortArray1825[i_182_]
                         = (short) class348_sub49_118_.method3330(842397944);
-                if ((this.anInt1830 ^ 0xffffffff) > -16) {
+                if (this.anInt1830 < 15) {
                     this.anIntArray1859[i_182_]
                             = class348_sub49_119_.method3330(842397944);
-                    if ((this.anInt1830 ^ 0xffffffff) > -15)
+                    if (this.anInt1830 < 14)
                         this.anIntArray1816[i_182_]
                                 = class348_sub49_119_.method3330(842397944);
                     else
@@ -1021,13 +1010,13 @@ final class Class124 {
         class348_sub49.anInt7197 = i_165_;
         if (bool_125_) {
             int i_184_ = class348_sub49.method3387(255);
-            if ((i_184_ ^ 0xffffffff) < -1) {
+            if (i_184_ > 0) {
                 this.aClass129Array1846 = new Class129[i_184_];
                 for (int i_185_ = 0; i_184_ > i_185_; i_185_++) {
                     int i_186_ = class348_sub49.method3330(842397944);
                     int i_187_ = class348_sub49.method3330(842397944);
                     byte i_188_;
-                    if ((i_128_ ^ 0xffffffff) != -256)
+                    if (i_128_ != 255)
                         i_188_ = (byte) i_128_;
                     else
                         i_188_ = this.aByteArray1839[i_187_];
@@ -1040,7 +1029,7 @@ final class Class124 {
                 }
             }
             int i_189_ = class348_sub49.method3387(255);
-            if ((i_189_ ^ 0xffffffff) < -1) {
+            if (i_189_ > 0) {
                 this.aClass342Array1866 = new Class342[i_189_];
                 for (int i_190_ = 0; i_189_ > i_190_; i_190_++) {
                     int i_191_ = class348_sub49.method3330(842397944);
@@ -1052,10 +1041,10 @@ final class Class124 {
         }
         if (bool_126_) {
             int i_193_ = class348_sub49.method3387(255);
-            if ((i_193_ ^ 0xffffffff) < -1) {
+            if (i_193_ > 0) {
                 this.aClass162Array1832 = new Class162[i_193_];
                 for (int i_194_ = 0;
-                     (i_194_ ^ 0xffffffff) > (i_193_ ^ 0xffffffff); i_194_++) {
+					 i_193_ > i_194_; i_194_++) {
                     int i_195_ = class348_sub49.method3330(842397944);
                     int i_196_ = class348_sub49.method3330(842397944);
                     int i_197_ = class348_sub49.method3387(255);
@@ -1068,7 +1057,7 @@ final class Class124 {
     }
 
     final void method1107(int i, int i_199_, int i_200_, int i_201_) {
-        if ((i_200_ ^ 0xffffffff) != -1) {
+        if (i_200_ != 0) {
             int i_202_ = Class70.anIntArray1207[i_200_];
             int i_203_ = Class70.anIntArray1204[i_200_];
             for (int i_204_ = 0; i_204_ < this.anInt1836;
@@ -1133,8 +1122,8 @@ final class Class124 {
         this.aByte1851 = (byte) 0;
         this.anInt1821 = 0;
         this.anInt1818 = 0;
-        if ((is[is.length + -1] ^ 0xffffffff) == 0
-                && (is[-2 + is.length] ^ 0xffffffff) == 0)
+        if (is[is.length + -1] == -1
+                && is[-2 + is.length] == -1)
             method1106(is, (byte) 93);
         else
             method1103(1, is);
@@ -1165,7 +1154,7 @@ final class Class124 {
         this.anIntArray1868 = new int[i];
         this.anIntArray1824 = new int[i_214_];
         this.anIntArray1852 = new int[i];
-        if ((i_215_ ^ 0xffffffff) < -1) {
+        if (i_215_ > 0) {
             this.anIntArray1857 = new int[i_215_];
             this.anIntArray1867 = new int[i_215_];
             this.aShortArray1849 = new short[i_215_];
@@ -1239,8 +1228,7 @@ final class Class124 {
                     if (this.aByte1851 == -1)
                         this.aByte1851
                                 = class124_225_.aByte1851;
-                    if ((class124_225_.aByte1851 ^ 0xffffffff)
-                            != (this.aByte1851 ^ 0xffffffff))
+                    if (this.aByte1851 != class124_225_.aByte1851)
                         bool_219_ = true;
                 }
                 bool_220_
@@ -1253,7 +1241,7 @@ final class Class124 {
         }
         this.aShortArray1835
                 = new short[this.anInt1817];
-        if ((this.anInt1818 ^ 0xffffffff) < -1) {
+        if (this.anInt1818 > 0) {
             this.aShortArray1829
                     = new short[this.anInt1818];
             this.aByteArray1823
@@ -1295,9 +1283,9 @@ final class Class124 {
         if (bool)
             this.aByteArray1843
                     = new byte[this.anInt1817];
-        if ((i_218_ ^ 0xffffffff) < -1)
+        if (i_218_ > 0)
             this.aClass162Array1832 = new Class162[i_218_];
-        if ((i_217_ ^ 0xffffffff) < -1)
+        if (i_217_ > 0)
             this.aClass342Array1866 = new Class342[i_217_];
         this.anIntArray1868
                 = new int[this.anInt1836];
@@ -1327,8 +1315,8 @@ final class Class124 {
         i_216_ = 0;
         this.anInt1817 = 0;
         this.anInt1836 = 0;
-        for (int i_226_ = 0; (i_226_ ^ 0xffffffff) > (i ^ 0xffffffff);
-             i_226_++) {
+        for (int i_226_ = 0; i > i_226_;
+			 i_226_++) {
             short i_227_ = (short) (1 << i_226_);
             Class124 class124_228_ = class124s[i_226_];
             if (class124_228_ != null) {
@@ -1448,9 +1436,8 @@ final class Class124 {
                 }
                 if (class124_228_.aClass342Array1866 != null) {
                     for (int i_235_ = 0;
-                         (i_235_ ^ 0xffffffff) > ((class124_228_
-                                 .aClass342Array1866).length
-                                 ^ 0xffffffff);
+						 (class124_228_
+								 .aClass342Array1866).length > i_235_;
                          i_235_++) {
                         int i_236_ = method1104(class124_228_, 0,
                                 class124_228_
@@ -1467,8 +1454,8 @@ final class Class124 {
         }
         int i_237_ = 0;
         this.anInt1821 = this.anInt1836;
-        for (int i_238_ = 0; (i_238_ ^ 0xffffffff) > (i ^ 0xffffffff);
-             i_238_++) {
+        for (int i_238_ = 0; i > i_238_;
+			 i_238_++) {
             short i_239_ = (short) (1 << i_238_);
             Class124 class124_240_ = class124s[i_238_];
             if (class124_240_ != null) {
@@ -1478,24 +1465,22 @@ final class Class124 {
                         this.aByteArray1820[i_237_++]
                                 = (byte) (((class124_240_
                                 .aByteArray1820) != null
-                                && ((class124_240_
-                                .aByteArray1820[i_241_])
-                                ^ 0xffffffff) != 0)
+                                && (class124_240_
+								.aByteArray1820[i_241_]) != -1)
                                 ? ((class124_240_
                                 .aByteArray1820[i_241_])
                                 + this.anInt1818)
                                 : -1);
                 }
                 for (int i_242_ = 0;
-                     ((i_242_ ^ 0xffffffff)
-                             > (class124_240_.anInt1818 ^ 0xffffffff));
+                     (class124_240_.anInt1818 > i_242_);
                      i_242_++) {
                     byte i_243_
                             = (this.aByteArray1823[(this
                             .anInt1818)]
                             = (class124_240_.aByteArray1823
                             [i_242_]));
-                    if ((i_243_ ^ 0xffffffff) == -1) {
+                    if (i_243_ == 0) {
                         this.aShortArray1829[(this
                                 .anInt1818)]
                                 = (short) method1104(class124_240_, 0,
@@ -1515,8 +1500,8 @@ final class Class124 {
                                         .aShortArray1825[i_242_]),
                                 i_239_);
                     }
-                    if ((i_243_ ^ 0xffffffff) <= -2
-                            && (i_243_ ^ 0xffffffff) >= -4) {
+                    if (i_243_ >= 1
+                            && i_243_ <= 3) {
                         this.aShortArray1829[(this
                                 .anInt1818)]
                                 = (class124_240_.aShortArray1829

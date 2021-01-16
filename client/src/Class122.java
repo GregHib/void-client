@@ -55,14 +55,14 @@ final class Class122 {
         anInt1807++;
         if (i >= -107)
             aBooleanArray1806 = null;
-        if ((c ^ 0xffffffff) < -1 && c < 128
-                || (c ^ 0xffffffff) <= -161 && (c ^ 0xffffffff) >= -256)
+        if (c > 0 && c < 128
+                || c >= 160 && c <= 255)
             return true;
-        if ((c ^ 0xffffffff) != -1) {
+        if (c != 0) {
             char[] cs = Class44.aCharArray625;
             for (int i_11_ = 0; cs.length > i_11_; i_11_++) {
                 int i_12_ = cs[i_11_];
-                if ((i_12_ ^ 0xffffffff) == (c ^ 0xffffffff))
+                if (c == i_12_)
                     return true;
             }
         }

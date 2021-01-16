@@ -38,10 +38,10 @@ final class Class97 {
                                 int i_4_, int i_5_) {
         anInt1554++;
         if (i_5_ >= Class369.anInt4960
-                && (i_4_ ^ 0xffffffff) >= (Class113.anInt1745 ^ 0xffffffff)
+                && Class113.anInt1745 >= i_4_
                 && Class132.anInt1910 <= i_2_
-                && (i_3_ ^ 0xffffffff) >= (Class38.anInt513 ^ 0xffffffff)) {
-            if ((i_1_ ^ 0xffffffff) == -2)
+                && Class38.anInt513 >= i_3_) {
+            if (i_1_ == 1)
                 Class184.method1388(i_2_, i, i_0_ + 107, i_4_, i_5_, i_3_);
             else
                 Class89.method849(i_1_, i_2_, i_5_, i_4_, i_3_, 100, i);
@@ -81,16 +81,16 @@ final class Class97 {
             int i_9_ = aClass330_1560.anInt4113;
             int i_10_ = (aClass330_1560.anInt4113 * anInt1559
                     + anInt1544);
-            for (int i_11_ = -128; (i_11_ ^ 0xffffffff) > -1; i_11_++) {
+            for (int i_11_ = -128; i_11_ < 0; i_11_++) {
                 i_8_ = (i_8_ << 859744648) - i_8_;
                 for (int i_12_ = -128; i_12_ < 0; i_12_++) {
-                    if ((is[i_10_++] ^ 0xffffffff) != -1)
+                    if (is[i_10_++] != 0)
                         i_8_++;
                 }
                 i_10_ += i_9_ - 128;
             }
             if (anInterface18_Impl3_1556 != null
-                    && (anInt1558 ^ 0xffffffff) == (i_8_ ^ 0xffffffff))
+                    && i_8_ == anInt1558)
                 this.aBoolean1562 = false;
             else {
                 anInt1558 = i_8_;
@@ -105,19 +105,19 @@ final class Class97 {
                     if (Class367_Sub11.aByteArray7394 == null)
                         Class367_Sub11.aByteArray7394 = new byte[16384];
                     byte[] is_14_ = Class367_Sub11.aByteArray7394;
-                    for (int i_15_ = -128; (i_15_ ^ 0xffffffff) > -1;
+                    for (int i_15_ = -128; i_15_ < 0;
                          i_15_++) {
-                        for (int i_16_ = -128; (i_16_ ^ 0xffffffff) > -1;
+                        for (int i_16_ = -128; i_16_ < 0;
                              i_16_++) {
-                            if ((is[i_10_] ^ 0xffffffff) == -1) {
+                            if (is[i_10_] == 0) {
                                 int i_17_ = 0;
-                                if ((is[i_10_ + -1] ^ 0xffffffff) != -1)
+                                if (is[i_10_ + -1] != 0)
                                     i_17_++;
                                 if (is[1 + i_10_] != 0)
                                     i_17_++;
-                                if ((is[i_10_ + -i_9_] ^ 0xffffffff) != -1)
+                                if (is[i_10_ + -i_9_] != 0)
                                     i_17_++;
-                                if ((is[i_9_ + i_10_] ^ 0xffffffff) != -1)
+                                if (is[i_9_ + i_10_] != 0)
                                     i_17_++;
                                 is_14_[i_13_++] = (byte) (17 * i_17_);
                             } else
@@ -149,15 +149,15 @@ final class Class97 {
                         Class40.anIntArray543 = new int[16384];
                     int[] is_18_ = Class40.anIntArray543;
                     for (int i_19_ = -128; i_19_ < 0; i_19_++) {
-                        for (int i_20_ = -128; (i_20_ ^ 0xffffffff) > -1;
+                        for (int i_20_ = -128; i_20_ < 0;
                              i_20_++) {
                             if (is[i_10_] == 0) {
                                 int i_21_ = 0;
-                                if ((is[i_10_ + -1] ^ 0xffffffff) != -1)
+                                if (is[i_10_ + -1] != 0)
                                     i_21_++;
                                 if (is[i_10_ - -1] != 0)
                                     i_21_++;
-                                if ((is[i_10_ + -i_9_] ^ 0xffffffff) != -1)
+                                if (is[i_10_ + -i_9_] != 0)
                                     i_21_++;
                                 if (is[i_9_ + i_10_] != 0)
                                     i_21_++;
@@ -246,27 +246,24 @@ final class Class97 {
                         Stream stream = aHa_Sub3_1561.method3893(buffer, 9179);
                         if (!Stream.c()) {
                             for (int i_36_ = 0;
-                                 (i_28_ ^ 0xffffffff) < (i_36_ ^ 0xffffffff);
+                                 i_36_ < i_28_;
                                  i_36_++) {
                                 int i_37_
                                         = (var_s_Sub3.anInt4587 * (i_31_
                                         - -i_36_)
                                         + i_30_);
                                 for (int i_38_ = 0;
-                                     ((i_28_ ^ 0xffffffff)
-                                             < (i_38_ ^ 0xffffffff));
+                                     (i_38_ < i_28_);
                                      i_38_++) {
                                     short[] is
                                             = (var_s_Sub3
                                             .aShortArrayArray8299[i_37_++]);
                                     if (is != null) {
                                         for (int i_39_ = 0;
-                                             ((is.length ^ 0xffffffff)
-                                                     < (i_39_ ^ 0xffffffff));
+                                             (i_39_ < is.length);
                                              i_39_++) {
                                             int i_40_ = 0xffff & is[i_39_];
-                                            if ((i_40_ ^ 0xffffffff)
-                                                    > (anInt1547 ^ 0xffffffff))
+                                            if (anInt1547 > i_40_)
                                                 anInt1547 = i_40_;
                                             if (i_40_ > anInt1546)
                                                 anInt1546 = i_40_;
@@ -282,16 +279,14 @@ final class Class97 {
                                         + i_31_)
                                         - -i_30_);
                                 for (int i_43_ = 0;
-                                     ((i_43_ ^ 0xffffffff)
-                                             > (i_28_ ^ 0xffffffff));
+                                     (i_28_ > i_43_);
                                      i_43_++) {
                                     short[] is
                                             = (var_s_Sub3
                                             .aShortArrayArray8299[i_42_++]);
                                     if (is != null) {
                                         for (int i_44_ = 0;
-                                             ((i_44_ ^ 0xffffffff)
-                                                     > (is.length ^ 0xffffffff));
+                                             (is.length > i_44_);
                                              i_44_++) {
                                             int i_45_ = 0xffff & is[i_44_];
                                             if (anInt1546 < i_45_)

@@ -71,13 +71,13 @@ final class Class239_Sub2 extends Class239 {
                 = Class275.method2064(Class130_Sub1.anInt5799, Class355.anInt4372,
                 11219, Class192.anInt2578);
         int i_6_ = 0;
-        if (i_3_ > 3 && (i_4_ ^ 0xffffffff) < -4
+        if (i_3_ > 3 && i_4_ > 3
                 && -4 + Class367_Sub4.anInt7319 > i_3_
                 && Class348_Sub40_Sub3.anInt9109 - 4 > i_4_) {
             for (int i_7_ = i_3_ - 4; i_3_ - -4 >= i_7_; i_7_++) {
                 for (int i_8_ = -4 + i_4_; i_8_ <= 4 + i_4_; i_8_++) {
                     int i_9_ = Class355.anInt4372;
-                    if ((i_9_ ^ 0xffffffff) > -4
+                    if (i_9_ < 3
                             && Class79.method802(i_8_, i_7_, true))
                         i_9_++;
                     int i_10_ = 0;
@@ -102,11 +102,11 @@ final class Class239_Sub2 extends Class239 {
             }
         }
         int i_12_ = 1536 * (i_6_ >> -437446494);
-        if ((i_12_ ^ 0xffffffff) < -786433)
+        if (i_12_ > 786432)
             i_12_ = 786432;
         if (i_12_ < i)
             i_12_ = 262144;
-        if ((i_12_ ^ 0xffffffff) < (Class348_Sub35.anInt6979 ^ 0xffffffff))
+        if (Class348_Sub35.anInt6979 < i_12_)
             Class348_Sub35.anInt6979
                     += (i_12_ - Class348_Sub35.anInt6979) / 24;
         else if (Class348_Sub35.anInt6979 > i_12_)

@@ -126,7 +126,7 @@ final class Class166 {
                     -8 + (i_7_ - -class105.method966()), -8 + i_8_,
                     class105.method980() + -8 + i_8_);
         }
-        if ((Class239_Sub20.anInt6048 ^ 0xffffffff) == -3) {
+        if (Class239_Sub20.anInt6048 == 2) {
             Class105 class105 = (Class348_Sub40_Sub37.aClass105Array9467
                     [Class348.anInt4292 / 100 + 4]);
             class105.method974(i_7_ + -8, -8 + i_8_);

@@ -42,7 +42,7 @@ final class Class60 {
         if (i_1_ <= 21)
             method589(null, -21);
         anInt1088++;
-		return i == 2 || (i ^ 0xffffffff) == -4;
+		return i == 2 || i == 3;
 	}
 
     final int method577(int i) {
@@ -64,9 +64,7 @@ final class Class60 {
                              = ((Class348_Sub42_Sub8)
                              aClass107_1089.method1003((byte) 97))) {
                     if (!class348_sub42_sub8.method3195(-4)) {
-                        if ((++class348_sub42_sub8.aLong7057
-                                ^ 0xffffffffffffffffL)
-                                < ((long) i_2_ ^ 0xffffffffffffffffL)) {
+                        if ((long) i_2_ < ++class348_sub42_sub8.aLong7057) {
                             Class348_Sub42_Sub8 class348_sub42_sub8_3_
                                     = Class101_Sub1.aClass246_5675
                                     .method1888(3, class348_sub42_sub8);
@@ -124,7 +122,7 @@ final class Class60 {
                 throw new IllegalStateException("s>cs");
             method586(l, 0);
             anInt1086 -= i_5_;
-            while ((anInt1086 ^ 0xffffffff) > -1) {
+            while (anInt1086 < 0) {
                 Class348_Sub42_Sub8 class348_sub42_sub8
                         = ((Class348_Sub42_Sub8)
                         aClass107_1089.method1008(i ^ 0x7c8a));
@@ -309,8 +307,8 @@ final class Class60 {
         anInt1084 = i;
         int i_11_;
         for (i_11_ = 1;
-             (i_11_ + i_11_ ^ 0xffffffff) > (i ^ 0xffffffff) && i_10_ > i_11_;
-             i_11_ += i_11_) {
+			 i > i_11_ + i_11_ && i_10_ > i_11_;
+			 i_11_ += i_11_) {
             /* empty */
         }
         aClass356_1100 = new Class356(i_11_);

@@ -80,13 +80,11 @@ final class Class255 {
             if (i_0_ > 1 && class213.anIntArray2762 != null) {
                 int i_7_ = -1;
                 for (int i_8_ = 0; i_8_ < 10; i_8_++) {
-                    if (((i_0_ ^ 0xffffffff)
-                            <= (class213.anIntArray2831[i_8_]
-                            ^ 0xffffffff))
+                    if ((class213.anIntArray2831[i_8_] <= i_0_)
                             && class213.anIntArray2831[i_8_] != 0)
                         i_7_ = class213.anIntArray2762[i_8_];
                 }
-                if ((i_7_ ^ 0xffffffff) != 0)
+                if (i_7_ != -1)
                     class213 = method1940(127, i_7_);
             }
             if (i_2_ != 83)
@@ -139,7 +137,7 @@ final class Class255 {
                         = var_ha.method3691(class207s[i], true);
             class207s = Class207.method1519(class45, Class106.anInt1639, 0);
             Class348_Sub45.aClass105Array7107 = new Class105[class207s.length];
-            for (int i = 0; (i ^ 0xffffffff) > (class207s.length ^ 0xffffffff);
+            for (int i = 0; class207s.length > i;
                  i++)
                 Class348_Sub45.aClass105Array7107[i]
                         = var_ha.method3691(class207s[i], true);
@@ -162,7 +160,7 @@ final class Class255 {
                         = var_ha.method3691(class207s[i], true);
             class207s = Class207.method1519(class45, Class115.anInt1756, 0);
             Class239_Sub9.aClass105Array5933 = new Class105[class207s.length];
-            for (int i = 0; (class207s.length ^ 0xffffffff) < (i ^ 0xffffffff);
+            for (int i = 0; i < class207s.length;
                  i++)
                 Class239_Sub9.aClass105Array5933[i]
                         = var_ha.method3691(class207s[i], true);
@@ -180,13 +178,13 @@ final class Class255 {
                     = Class207.method1519(class45, Class239_Sub10.anInt5948, 0);
             Class348_Sub40_Sub37.aClass105Array9467
                     = new Class105[class207s.length];
-            for (int i = 0; (class207s.length ^ 0xffffffff) < (i ^ 0xffffffff);
+            for (int i = 0; i < class207s.length;
                  i++)
                 Class348_Sub40_Sub37.aClass105Array9467[i]
                         = var_ha.method3691(class207s[i], true);
             class207s = Class207.method1519(class45, Class113.anInt1742, 0);
             Class348_Sub12.aClass105Array6742 = new Class105[class207s.length];
-            for (int i = 0; (i ^ 0xffffffff) > (class207s.length ^ 0xffffffff);
+            for (int i = 0; class207s.length > i;
                  i++)
                 Class348_Sub12.aClass105Array6742[i]
                         = var_ha.method3691(class207s[i], true);

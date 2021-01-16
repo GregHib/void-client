@@ -86,12 +86,12 @@ class Class258_Sub3 extends Class258 {
             i_15_ = i_13_;
         if (bool) {
             int[] is_16_ = new int[i_13_ * i];
-            for (int i_17_ = 0; (i ^ 0xffffffff) < (i_17_ ^ 0xffffffff);
+            for (int i_17_ = 0; i_17_ < i;
                  i_17_++) {
                 int i_18_ = i_13_ * i_17_;
                 int i_19_ = (-1 + i - i_17_) * i_15_ + i_11_;
                 for (int i_20_ = 0;
-                     (i_13_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff); i_20_++)
+                     i_20_ < i_13_; i_20_++)
                     is_16_[i_18_++] = is[i_19_++];
             }
             is = is_16_;
@@ -104,7 +104,7 @@ class Class258_Sub3 extends Class258 {
                 (this.aHa_Sub2_4851
                         .anInt7812),
                 is, i_11_);
-        if ((i_15_ ^ 0xffffffff) != (i_13_ ^ 0xffffffff))
+        if (i_13_ != i_15_)
             OpenGL.glPixelStorei(3314, 0);
         if (i_12_ > -65)
             this.anInt8547 = 101;
@@ -124,14 +124,14 @@ class Class258_Sub3 extends Class258 {
                     int i_29_ = i_28_ * i_22_;
                     int i_30_ = i_22_ * (-1 + -i_28_ + i_23_);
                     for (int i_31_ = 0;
-                         (i_22_ ^ 0xffffffff) < (i_31_ ^ 0xffffffff); i_31_++)
+                         i_31_ < i_22_; i_31_++)
                         is_27_[i_29_++] = is[i_30_++];
                 }
                 is = is_27_;
             }
             this.aHa_Sub2_4851.method3771((byte) -79, this);
-            if ((this.anInt4849 ^ 0xffffffff) == -34038 || !bool
-                    || (i_24_ ^ 0xffffffff) != -1 || i_25_ != 0) {
+            if (this.anInt4849 == 34037 || !bool
+                    || i_24_ != 0 || i_25_ != 0) {
                 OpenGL.glPixelStorei(3314, i_24_);
                 OpenGL.glTexImage2Di(this.anInt4849, 0,
                         this.anInt4858,
@@ -181,7 +181,7 @@ class Class258_Sub3 extends Class258 {
                     int i_39_ = i_33_ * i_38_;
                     int i_40_ = i_33_ * (-i_38_ + (i_34_ + -1));
                     for (int i_41_ = 0;
-                         (i_41_ ^ 0xffffffff) > (i_33_ ^ 0xffffffff); i_41_++)
+                         i_33_ > i_41_; i_41_++)
                         is_37_[i_39_++] = is[i_40_++];
                 }
                 is = is_37_;
@@ -220,7 +220,7 @@ class Class258_Sub3 extends Class258 {
         anInt8540++;
         if (i != 10243)
             method1966(-20, 83, 1, -22, (byte) -31, 74, -57, 109, -102);
-        if ((this.anInt4849 ^ 0xffffffff) == -3554) {
+        if (this.anInt4849 == 3553) {
             this.aHa_Sub2_4851.method3771((byte) -102, this);
             OpenGL.glTexParameteri(this.anInt4849, 10242,
                     bool_42_ ? 10497 : 33071);
@@ -285,7 +285,7 @@ class Class258_Sub3 extends Class258 {
                 int i_58_ = image.getWidth(Class79.aClient1367);
                 int i_59_ = image.getHeight(Class79.aClient1367);
                 if (mediatracker.isErrorAny() || i_58_ < 0
-                        || (i_59_ ^ 0xffffffff) > -1)
+                        || i_59_ < 0)
                     throw new RuntimeException("");
                 int[] is_60_ = new int[i_59_ * i_58_];
                 PixelGrabber pixelgrabber
@@ -312,7 +312,7 @@ class Class258_Sub3 extends Class258 {
             int i_69_ = i_68_ * i_62_;
             int i_70_ = i_63_ * i_68_;
             byte[] is_71_ = new byte[i_64_ * i_69_];
-            for (int i_72_ = 0; (i_72_ ^ 0xffffffff) > (i_64_ ^ 0xffffffff);
+            for (int i_72_ = 0; i_64_ > i_72_;
                  i_72_++) {
                 int i_73_ = i_69_ * i_72_;
                 int i_74_ = (-1 + i_64_ - i_72_) * i_70_ + i_67_;

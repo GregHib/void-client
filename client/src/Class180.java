@@ -18,7 +18,7 @@ final class Class180 {
     }
 
     static {
-        for (int i = 0; (i ^ 0xffffffff) > -101; i++)
+        for (int i = 0; i < 100; i++)
             aRectangleArray2371[i] = new Rectangle();
         aClass196_2372 = new Class196();
     }

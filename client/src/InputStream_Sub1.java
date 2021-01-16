@@ -30,7 +30,7 @@ final class InputStream_Sub1 extends InputStream {
         anInt72++;
         if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351)
             return false;
-        if ((Class225.anInt2946 ^ 0xffffffff) > -101)
+        if (Class225.anInt2946 < 100)
             return false;
         if (!aa_Sub2.method164(i_1_, i_0_, (byte) -97, i))
             return false;
@@ -71,8 +71,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
-                == -5) {
+        if (class318_sub1_sub4.aShort8759 == 4) {
             if (!Class286_Sub7.method2169(i_3_ + Class270.anInt3465,
                     Class270.anInt3465 + i_3_, i_4_,
                     Class270.anInt3465 + i_3_,
@@ -89,8 +88,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
-                == -9) {
+        if (class318_sub1_sub4.aShort8759 == 8) {
             if (!Class286_Sub7.method2169(i_3_, Class270.anInt3465 + i_3_,
                     i_4_, i_3_, i_4_, i_6_, i_6_, i_5_,
                     i_4_, false))
@@ -102,8 +100,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
-                == -17) {
+        if (class318_sub1_sub4.aShort8759 == 16) {
             if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037,
                     Class348_Sub23_Sub2.anInt9037 + i_4_,
                     i_3_, i_5_, Class348_Sub23_Sub2.anInt9037,
@@ -131,8 +128,7 @@ final class InputStream_Sub1 extends InputStream {
             Class42.anInt562++;
             return true;
         }
-        if ((class318_sub1_sub4.aShort8759 ^ 0xffffffff)
-                == -129) {
+        if (class318_sub1_sub4.aShort8759 == 128) {
             if (!Class121.method1084(i_6_, Class348_Sub23_Sub2.anInt9037, i_4_,
                     i_3_, i_5_, Class348_Sub23_Sub2.anInt9037,
                     18507))
@@ -152,7 +148,7 @@ final class InputStream_Sub1 extends InputStream {
     static final void method126(int i) {
         Class318_Sub1_Sub3_Sub3.method2433();
         anInt73++;
-        for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -5; i_7_++)
+        for (int i_7_ = 0; i_7_ < 4; i_7_++)
             Class348_Sub45.aClass361Array7108[i_7_].method3500(700);
         if (i != -16203)
             method125(125, -95, 109, null, (byte) -52);
@@ -169,10 +165,10 @@ final class InputStream_Sub1 extends InputStream {
             int i_8_
                     = "\u1823\uc6e8\u87b8\u014f\u36a6\ud2f5\u796f\u9152\u60bc\u9b8e\ua30c\u7b35\u1de0\ud7c2\u2e4b\ufe57\u1577\u37e5\u9ff0\u4ada\u58c9\u290a\ub1a0\u6b85\ubd5d\u10f4\ucb3e\u0567\ue427\u418b\ua77d\u95d8\ufbee\u7c66\udd17\u479e\uca2d\ubf07\uad5a\u8333\u6302\uaa71\uc819\u49d9\uf2e3\u5b88\u9a26\u32b0\ue90f\ud580\ubecd\u3448\uff7a\u905f\u2068\u1aae\ub454\u9322\u64f1\u7312\u4008\uc3ec\udba1\u8d3d\u9700\ucf2b\u7682\ud61b\ub5af\u6a50\u45f3\u30ef\u3f55\ua2ea\u65ba\u2fc0\ude1c\ufd4d\u9275\u068a\ub2e6\u0e1f\u62d4\ua896\uf9c5\u2559\u8472\u394c\u5e78\u388c\ud1a5\ue261\ub321\u9c1e\u43c7\ufc04\u5199\u6d0d\ufadf\u7e24\u3bab\uce11\u8f4e\ub7eb\u3c81\u94f7\ub913\u2cd3\ue76e\uc403\u5644\u7fa9\u2abb\uc153\udc0b\u9d6c\u3174\uf646\uac89\u14e1\u163a\u6909\u70b6\ud0ed\ucc42\u98a4\u285c\uf886"
                     .charAt(i / 2);
-            long l = (i & 0x1 ^ 0xffffffff) == -1 ? i_8_ >>> 2132006120
+            long l = (i & 0x1) == 0 ? i_8_ >>> 2132006120
                     : 0xff & i_8_;
             long l_9_ = l << 890183233;
-            if ((l_9_ ^ 0xffffffffffffffffL) <= -257L)
+            if (l_9_ >= 256)
                 l_9_ ^= 0x11dL;
             long l_10_ = l_9_ << -452574655;
             if (l_10_ >= 256L)
@@ -196,7 +192,7 @@ final class InputStream_Sub1 extends InputStream {
                                                                                             (Class277.method2068(l << 1543848568,
                                                                                                     l << -1922363472),
                                                                                                     l_10_ << -1442666392))))))))))));
-            for (int i_14_ = 1; (i_14_ ^ 0xffffffff) > -9; i_14_++)
+            for (int i_14_ = 1; i_14_ < 8; i_14_++)
                 aLongArrayArray75[i_14_][i]
                         = Class277.method2068((aLongArrayArray75[i_14_ + -1][i]
                                 >>> -2081483448),
@@ -204,7 +200,7 @@ final class InputStream_Sub1 extends InputStream {
                                 << 501233912));
         }
         aLongArray76[0] = 0L;
-        for (int i = 1; (i ^ 0xffffffff) >= -11; i++) {
+        for (int i = 1; i <= 10; i++) {
             int i_15_ = -8 + i * 8;
             aLongArray76[i]
                     = (Class105_Sub2.method993

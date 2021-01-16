@@ -41,19 +41,17 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                 fs = new float[i_4_][];
                 is_3_ = new int[i_4_];
                 is_2_ = new int[i_4_];
-                for (int i_12_ = 0; (i_0_ ^ 0xffffffff) < (i_12_ ^ 0xffffffff);
+                for (int i_12_ = 0; i_12_ < i_0_;
                      i_12_++) {
                     int i_13_ = is[i_12_];
-                    if ((class124.aByteArray1820[i_13_]
-                            ^ 0xffffffff)
-                            != 0) {
+                    if (class124.aByteArray1820[i_13_] != -1) {
                         int i_14_
                                 = (class124.aByteArray1820[i_13_]
                                 & 0xff);
                         for (int i_15_ = 0; i_15_ < 3; i_15_++) {
                             short i_16_;
-                            if ((i_15_ ^ 0xffffffff) != -1) {
-                                if ((i_15_ ^ 0xffffffff) == -2)
+                            if (i_15_ != 0) {
+                                if (i_15_ == 1)
                                     i_16_ = (class124
                                             .aShortArray1835[i_13_]);
                                 else
@@ -68,30 +66,26 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                                     = class124.anIntArray1847[i_16_];
                             int i_19_
                                     = class124.anIntArray1852[i_16_];
-                            if ((is_5_[i_14_] ^ 0xffffffff)
-                                    < (i_17_ ^ 0xffffffff))
+                            if (i_17_ < is_5_[i_14_])
                                 is_5_[i_14_] = i_17_;
-                            if ((i_17_ ^ 0xffffffff)
-                                    < (is_6_[i_14_] ^ 0xffffffff))
+                            if (is_6_[i_14_] < i_17_)
                                 is_6_[i_14_] = i_17_;
-                            if ((i_18_ ^ 0xffffffff)
-                                    > (is_7_[i_14_] ^ 0xffffffff))
+                            if (is_7_[i_14_] > i_18_)
                                 is_7_[i_14_] = i_18_;
                             if (i_18_ > is_8_[i_14_])
                                 is_8_[i_14_] = i_18_;
                             if (i_19_ < is_9_[i_14_])
                                 is_9_[i_14_] = i_19_;
-                            if ((is_10_[i_14_] ^ 0xffffffff)
-                                    > (i_19_ ^ 0xffffffff))
+                            if (i_19_ > is_10_[i_14_])
                                 is_10_[i_14_] = i_19_;
                         }
                     }
                 }
                 is_1_ = new int[i_4_];
-                for (int i_20_ = 0; (i_20_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff);
+                for (int i_20_ = 0; i_4_ > i_20_;
                      i_20_++) {
                     byte i_21_ = class124.aByteArray1823[i_20_];
-                    if ((i_21_ ^ 0xffffffff) < -1) {
+                    if (i_21_ > 0) {
                         is_1_[i_20_] = (is_6_[i_20_] + is_5_[i_20_]) / 2;
                         is_2_[i_20_] = (is_8_[i_20_] + is_7_[i_20_]) / 2;
                         is_3_[i_20_] = (is_9_[i_20_] + is_10_[i_20_]) / 2;
@@ -101,10 +95,10 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                         if (i_21_ == 1) {
                             int i_24_
                                     = class124.anIntArray1859[i_20_];
-                            if ((i_24_ ^ 0xffffffff) == -1) {
+                            if (i_24_ == 0) {
                                 f_22_ = 1.0F;
                                 f_23_ = 1.0F;
-                            } else if ((i_24_ ^ 0xffffffff) >= -1) {
+                            } else if (i_24_ <= 0) {
                                 f_22_ = 1.0F;
                                 f_23_ = (float) -i_24_ / 1024.0F;
                             } else {
@@ -113,7 +107,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                             }
                             f = 64.0F / (float) (class124
                                     .anIntArray1816[i_20_]);
-                        } else if ((i_21_ ^ 0xffffffff) == -3) {
+                        } else if (i_21_ == 2) {
                             f = 64.0F / (float) (class124
                                     .anIntArray1816[i_20_]);
                             f_22_ = 64.0F / (float) (class124

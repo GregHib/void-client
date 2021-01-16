@@ -27,30 +27,30 @@ final class Class354 {
             method3464('\uffe1', false);
         byte i;
         if ((c <= 0 || c >= 128) && (c < 160 || c > 255)) {
-            if ((c ^ 0xffffffff) != -8365) {
+            if (c != 8364) {
                 if (c != 8218) {
-                    if ((c ^ 0xffffffff) == -403)
+                    if (c == 402)
                         i = (byte) -125;
                     else if (c == 8222)
                         i = (byte) -124;
-                    else if ((c ^ 0xffffffff) == -8231)
+                    else if (c == 8230)
                         i = (byte) -123;
                     else if (c == 8224)
                         i = (byte) -122;
-                    else if ((c ^ 0xffffffff) == -8226)
+                    else if (c == 8225)
                         i = (byte) -121;
-                    else if ((c ^ 0xffffffff) != -711) {
-                        if ((c ^ 0xffffffff) == -8241)
+                    else if (c != 710) {
+                        if (c == 8240)
                             i = (byte) -119;
                         else if (c == 352)
                             i = (byte) -118;
-                        else if ((c ^ 0xffffffff) == -8250)
+                        else if (c == 8249)
                             i = (byte) -117;
                         else if (c == 338)
                             i = (byte) -116;
-                        else if ((c ^ 0xffffffff) != -382) {
+                        else if (c != 381) {
                             if (c != 8216) {
-                                if ((c ^ 0xffffffff) == -8218)
+                                if (c == 8217)
                                     i = (byte) -110;
                                 else if (c != 8220) {
                                     if (c != 8221) {
@@ -65,14 +65,10 @@ final class Class354 {
                                                 else if (c == 353)
                                                     i = (byte) -102;
                                                 else if (c != 8250) {
-                                                    if ((c ^ 0xffffffff)
-                                                            != -340) {
-                                                        if ((c ^ 0xffffffff)
-                                                                == -383)
+                                                    if (c != 339) {
+                                                        if (c == 382)
                                                             i = (byte) -98;
-                                                        else if ((c
-                                                                ^ 0xffffffff)
-                                                                == -377)
+                                                        else if (c == 376)
                                                             i = (byte) -97;
                                                         else
                                                             i = (byte) 63;
@@ -111,7 +107,7 @@ final class Class354 {
                         class338.anIntArray4184[i],
                         Class318_Sub1_Sub5_Sub2.anIntArray10172);
         int i_1_ = Class318_Sub1_Sub5_Sub2.anIntArray10172[2];
-        if ((i_1_ ^ 0xffffffff) > -51)
+        if (i_1_ < 50)
             return false;
         class338.aShortArray4194[i]
                 = (short) (Class69.anInt1202
@@ -128,7 +124,7 @@ final class Class354 {
     static final void method3466(int i) {
         int i_2_ = 22 / ((-2 - i) / 52);
         anInt4352++;
-        for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -101; i_3_++)
+        for (int i_3_ = 0; i_3_ < 100; i_3_++)
             Class152.aBooleanArray2076[i_3_] = true;
     }
 
@@ -147,12 +143,11 @@ final class Class354 {
             float[] fs = aD4359.method1(i_5_, 0.7F, false, -30824, i_5_, i);
             class258_sub3
                     = new Class258_Sub3(aHa_Sub2_4355, 3553, 34842, i_5_, i_5_,
-                    (class12.aByte205
-                            ^ 0xffffffff) != -1,
+                    class12.aByte205 != 0,
                     fs, 6408);
         } else {
             int[] is;
-            if ((class12.anInt200 ^ 0xffffffff) == -3
+            if (class12.anInt200 == 2
                     || !Class251.method1915((byte) 4,
                     class12.aByte213))
                 is = aD4359.method6(-21540, i_5_, 0.7F, i, false, i_5_);

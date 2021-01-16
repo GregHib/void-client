@@ -31,11 +31,11 @@ final class Class163 {
             int[] is_2_ = new int[i_1_];
             int i_3_ = 0;
             int i_4_ = 0;
-            for (int i_5_ = 0; (is.length ^ 0xffffffff) < (i_5_ ^ 0xffffffff);
+            for (int i_5_ = 0; i_5_ < is.length;
                  i_5_++) {
                 int i_6_ = is[i_5_];
                 int[] is_7_ = anIntArrayArray2163[i_4_];
-                for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > -15; i_8_++)
+                for (int i_8_ = 0; i_8_ < 14; i_8_++)
                     is_2_[i_3_ + i_8_] += i_6_ * is_7_[i_8_] >> -503982046;
                 i_4_ += anInt2159;
                 int i_9_ = i_4_ / anInt2164;
@@ -43,10 +43,10 @@ final class Class163 {
                 i_3_ += i_9_;
             }
             is = new short[i_1_];
-            for (int i_10_ = 0; (i_1_ ^ 0xffffffff) < (i_10_ ^ 0xffffffff);
+            for (int i_10_ = 0; i_10_ < i_1_;
                  i_10_++) {
                 int i_11_ = 8192 + is_2_[i_10_] >> -1603539186;
-                if ((i_11_ ^ 0xffffffff) <= 32767) {
+                if (i_11_ >= -32768) {
                     if (i_11_ > 32767)
                         is[i_10_] = (short) 32767;
                     else
@@ -107,8 +107,8 @@ final class Class163 {
             is = new byte[i_13_];
             for (int i_22_ = 0; i_22_ < i_13_; i_22_++) {
                 int i_23_ = is_14_[i_22_] - -32768 >> -445894576;
-                if ((i_23_ ^ 0xffffffff) <= 127) {
-                    if ((i_23_ ^ 0xffffffff) < -128)
+                if (i_23_ >= -128) {
+                    if (i_23_ > 127)
                         is[i_22_] = (byte) 127;
                     else
                         is[i_22_] = (byte) i_23_;
@@ -127,7 +127,7 @@ final class Class163 {
             Class321 class321
                     = Class348_Sub23_Sub2.aClass187_9036.method1408(-12637,
                     is[i_24_]);
-            if ((class321.anInt4000 ^ 0xffffffff) != 0) {
+            if (class321.anInt4000 != -1) {
                 Class105 class105
                         = ((Class105)
                         Class34.aClass60_463.method583(class321
@@ -173,25 +173,25 @@ final class Class163 {
     }
 
     Class163(int i, int i_27_) {
-        if ((i_27_ ^ 0xffffffff) != (i ^ 0xffffffff)) {
+        if (i != i_27_) {
             int i_28_ = Class348_Sub1_Sub1.method2726(-21806, i, i_27_);
             i /= i_28_;
             i_27_ /= i_28_;
             anIntArrayArray2163 = new int[i][14];
             anInt2159 = i_27_;
             anInt2164 = i;
-            for (int i_29_ = 0; (i ^ 0xffffffff) < (i_29_ ^ 0xffffffff);
+            for (int i_29_ = 0; i_29_ < i;
                  i_29_++) {
                 int[] is = anIntArrayArray2163[i_29_];
                 double d = (double) i_29_ / (double) i + 6.0;
                 int i_30_ = (int) Math.floor(1.0 + (-7.0 + d));
-                if ((i_30_ ^ 0xffffffff) > -1)
+                if (i_30_ < 0)
                     i_30_ = 0;
                 int i_31_ = (int) Math.ceil(d + 7.0);
-                if ((i_31_ ^ 0xffffffff) < -15)
+                if (i_31_ > 14)
                     i_31_ = 14;
                 double d_32_ = (double) i_27_ / (double) i;
-                for (/**/; (i_31_ ^ 0xffffffff) < (i_30_ ^ 0xffffffff);
+                for (/**/; i_30_ < i_31_;
                          i_30_++) {
                     double d_33_ = 3.141592653589793 * (-d + (double) i_30_);
                     double d_34_ = d_32_;

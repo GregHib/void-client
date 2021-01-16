@@ -35,10 +35,8 @@ final class Class348_Sub46 extends Class348 {
         if (i > -108)
             method3321(19, 60, 108);
         anInt7114++;
-        if (((Class334.anInt4155 ^ 0xffffffff)
-                != ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                .aByte6381)
-                ^ 0xffffffff))
+        if (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+                .aByte6381) != Class334.anInt4155)
                 && Class147.aClass357ArrayArrayArray2029 != null) {
             if (Class348_Sub14.method2808
                     ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907

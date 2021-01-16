@@ -26,7 +26,7 @@ final class Class239_Sub25 extends Class239 {
         if (!this.aClass348_Sub51_3136.method3428((byte) -89)
                 .method1460(-38))
             return 3;
-        if ((i_0_ ^ 0xffffffff) == -4
+        if (i_0_ == 3
                 && !Applet_Sub1.method86("jagdx", i ^ 0x3))
             return 3;
         return 2;
@@ -66,7 +66,7 @@ final class Class239_Sub25 extends Class239 {
         double d = 0.7 + (0.03 * Math.random() - 0.015);
         int i_5_ = 0;
         if (i == 1415665776) {
-            for (int i_6_ = 0; (i_6_ ^ 0xffffffff) > -513; i_6_++) {
+            for (int i_6_ = 0; i_6_ < 512; i_6_++) {
                 float f = (((float) (i_6_ >> -1851515709) / 64.0F + 0.0078125F)
                         * 360.0F);
                 float f_7_ = (float) (i_6_ & 0x7) / 8.0F + 0.0625F;
@@ -82,12 +82,12 @@ final class Class239_Sub25 extends Class239 {
                     float f_17_ = f_9_ * (-f_7_ + 1.0F);
                     float f_18_ = f_9_ * (1.0F - f_16_ * f_7_);
                     float f_19_ = (1.0F - (1.0F - f_16_) * f_7_) * f_9_;
-                    if ((i_15_ ^ 0xffffffff) != -1) {
-                        if ((i_15_ ^ 0xffffffff) != -2) {
-                            if ((i_15_ ^ 0xffffffff) != -3) {
+                    if (i_15_ != 0) {
+                        if (i_15_ != 1) {
+                            if (i_15_ != 2) {
                                 if (i_15_ != 3) {
                                     if (i_15_ != 4) {
-                                        if ((i_15_ ^ 0xffffffff) == -6) {
+                                        if (i_15_ == 5) {
                                             f_10_ = f_9_;
                                             f_11_ = f_17_;
                                             f_12_ = f_18_;

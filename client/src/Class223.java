@@ -29,7 +29,7 @@ final class Class223 {
         if (bool != false)
             method1612((byte) -104);
         anInt2897++;
-        return (i_0_ & 0x22 ^ 0xffffffff) != -1;
+        return (i_0_ & 0x22) != 0;
     }
 
     Class223(int i, int i_1_) {
@@ -116,7 +116,7 @@ final class Class223 {
                 class348_sub9.aClass51_6695 = class51;
                 int i_6_ = class51.anInt961;
                 int i_7_ = class51.anInt926;
-                if (i_5_ == 1 || (i_5_ ^ 0xffffffff) == -4) {
+                if (i_5_ == 1 || i_5_ == 3) {
                     i_6_ = class51.anInt926;
                     i_7_ = class51.anInt961;
                 }

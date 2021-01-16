@@ -33,7 +33,7 @@ final class Class152 {
             method1217(-39, null);
         anInt2078++;
         if (Class240.anInt4674 != 9) {
-            if ((Class240.anInt4674 ^ 0xffffffff) == -6
+            if (Class240.anInt4674 == 5
                     || Class240.anInt4674 == 6)
                 Class348_Sub49.method3379(2, 3);
             else if (Class240.anInt4674 == 12)
@@ -56,8 +56,7 @@ final class Class152 {
             Class357[][] class357s_3_ = class357s[i_2_];
             for (int i_4_ = 0; i_4_ < class357s_3_.length; i_4_++) {
                 for (int i_5_ = 0;
-                     ((i_5_ ^ 0xffffffff)
-                             > (class357s_3_[i_4_].length ^ 0xffffffff));
+                     (class357s_3_[i_4_].length > i_5_);
                      i_5_++) {
                     Class357 class357 = class357s_3_[i_4_][i_5_];
                     if (class357 != null) {
@@ -112,9 +111,8 @@ final class Class152 {
             if (i != 29123)
                 method1217(-91, null);
             anInt2073++;
-            if (((class348_sub49.aByteArray7154
-                    [class348_sub49.anInt7197])
-                    ^ 0xffffffff) != -32
+            if ((class348_sub49.aByteArray7154
+                    [class348_sub49.anInt7197]) != 31
                     || (class348_sub49.aByteArray7154
                     [1 + class348_sub49.anInt7197]) != -117)
                 throw new RuntimeException("Invalid GZIP header!");

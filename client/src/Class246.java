@@ -37,7 +37,7 @@ abstract class Class246 {
                 f_12_ = -f_13_;
                 f_13_ = f_14_;
             } else if (i_1_ != 2) {
-                if ((i_1_ ^ 0xffffffff) == -4) {
+                if (i_1_ == 3) {
                     float f_15_ = f_12_;
                     f_12_ = f_13_;
                     f_13_ = -f_15_;

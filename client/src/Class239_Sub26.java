@@ -21,7 +21,7 @@ final class Class239_Sub26 extends Class239 {
         if (i > -111)
             method1834(null, (byte) -87);
         anInt6126++;
-        return (i_0_ & 0x84080 ^ 0xffffffff) != -1;
+        return (i_0_ & 0x84080) != 0;
     }
 
     final int method1710(int i) {
@@ -109,23 +109,23 @@ final class Class239_Sub26 extends Class239 {
         for (int i_11_ = 0; i_11_ < i_10_; i_11_++) {
             int i_12_ = string.charAt(i_11_);
             if (i_11_ == 0) {
-                if ((i_12_ ^ 0xffffffff) == -46) {
+                if (i_12_ == 45) {
                     bool_7_ = true;
                     continue;
                 }
                 if (i_12_ == 43 && bool)
                     continue;
             }
-            if ((i_12_ ^ 0xffffffff) <= -49 && i_12_ <= 57)
+            if (i_12_ >= 48 && i_12_ <= 57)
                 i_12_ -= 48;
             else if (i_12_ >= 65 && i_12_ <= 90)
                 i_12_ -= 55;
-            else if ((i_12_ ^ 0xffffffff) <= -98
-                    && (i_12_ ^ 0xffffffff) >= -123)
+            else if (i_12_ >= 97
+                    && i_12_ <= 122)
                 i_12_ -= 87;
             else
                 throw new NumberFormatException();
-            if ((i_6_ ^ 0xffffffff) >= (i_12_ ^ 0xffffffff))
+            if (i_12_ >= i_6_)
                 throw new NumberFormatException();
             if (bool_7_)
                 i_12_ = -i_12_;
@@ -144,7 +144,7 @@ final class Class239_Sub26 extends Class239 {
         if (i_14_ < 41)
             aClass114_6121 = null;
         anInt6122++;
-        return (i_15_ & 0x800 ^ 0xffffffff) != -1;
+        return (i_15_ & 0x800) != 0;
     }
 
     final void method1712(int i, int i_16_) {

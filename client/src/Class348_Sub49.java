@@ -103,8 +103,8 @@ class Class348_Sub49 extends Class348 {
     static final int method3331(int i, byte i_0_, int i_1_) {
         anInt7161++;
         int i_2_ = 1;
-        for (/**/; (i ^ 0xffffffff) < -2; i >>= 1) {
-            if ((0x1 & i ^ 0xffffffff) != -1)
+        for (/**/; i > 1; i >>= 1) {
+            if ((0x1 & i) != 0)
                 i_2_ *= i_1_;
             i_1_ *= i_1_;
         }
@@ -128,7 +128,7 @@ class Class348_Sub49 extends Class348 {
         if (i != -5)
             this.aByteArray7154 = null;
         int i_5_ = string.indexOf('\0');
-        if ((i_5_ ^ 0xffffffff) <= -1)
+        if (i_5_ >= 0)
             throw new IllegalArgumentException("NUL character at " + i_5_
                     + " - cannot pjstr");
         this.anInt7197
@@ -399,7 +399,7 @@ class Class348_Sub49 extends Class348 {
                 = Class171.method1319(this.anInt7197, true,
                 this.aByteArray7154, 0);
         int i_35_ = method3385((byte) -126);
-        return (i_34_ ^ 0xffffffff) == (i_35_ ^ 0xffffffff);
+        return i_35_ == i_34_;
     }
 
     final void method3353(int i, byte i_36_) {
@@ -456,7 +456,7 @@ class Class348_Sub49 extends Class348 {
     final void method3357(int i, long l, byte i_40_) {
         try {
             anInt7193++;
-            if ((--i ^ 0xffffffff) > -1 || (i ^ 0xffffffff) < -8)
+            if (--i < 0 || i > 7)
                 throw new IllegalArgumentException();
             int i_41_ = 101 % ((-11 - i_40_) / 49);
             for (int i_42_ = 8 * i; i_42_ >= 0; i_42_ -= 8)
@@ -593,14 +593,14 @@ class Class348_Sub49 extends Class348 {
         int i_49_ = this.anInt7197;
         this.anInt7197 = i_47_;
         int i_50_ = (i_48_ + -i_47_) / 8;
-        for (int i_51_ = 0; (i_51_ ^ 0xffffffff) > (i_50_ ^ 0xffffffff);
+        for (int i_51_ = 0; i_50_ > i_51_;
              i_51_++) {
             int i_52_ = method3385((byte) -126);
             int i_53_ = method3385((byte) -126);
             int i_54_ = -957401312;
             int i_55_ = -1640531527;
             int i_56_ = 32;
-            while ((i_56_-- ^ 0xffffffff) < -1) {
+            while (i_56_-- > 0) {
                 i_53_ -= ((i_52_ << 870651652 ^ i_52_ >>> -1871304219) + i_52_
                         ^ i_54_ - -is[0x4d000003 & i_54_ >>> 1029019211]);
                 i_54_ -= i_55_;
@@ -619,7 +619,7 @@ class Class348_Sub49 extends Class348 {
     final long method3368(int i, int i_57_) {
         i--;
         anInt7191++;
-        if (i < 0 || (i ^ 0xffffffff) < -8)
+        if (i < 0 || i > 7)
             throw new IllegalArgumentException();
         if (i_57_ != 3060)
             return 99L;
@@ -646,7 +646,7 @@ class Class348_Sub49 extends Class348 {
                 + ((0xff & (this.aByteArray7154
                 [this.anInt7197 + -2]))
                 << -270410424)));
-        if ((i_59_ ^ 0xffffffff) < -8388608)
+        if (i_59_ > 8388607)
             i_59_ -= 16777216;
         return i_59_;
     }
@@ -666,10 +666,8 @@ class Class348_Sub49 extends Class348 {
         if (i_62_ != 0)
             throw new IllegalStateException("Bad version number in gjstr2");
         int i_63_ = this.anInt7197;
-        while (((this.aByteArray7154
-                [this.anInt7197++])
-                ^ 0xffffffff)
-                != -1) {
+        while ((this.aByteArray7154
+                [this.anInt7197++]) != 0) {
             /* empty */
         }
         int i_64_ = this.anInt7197 - (i_63_ + 1);
@@ -693,7 +691,7 @@ class Class348_Sub49 extends Class348 {
                 [-2 + this.anInt7197])
                 & 0xff)
                 << 2010075272));
-        if ((i_65_ ^ 0xffffffff) < -32768)
+        if (i_65_ > 32767)
             i_65_ -= 65536;
         return i_65_;
     }
@@ -731,7 +729,7 @@ class Class348_Sub49 extends Class348 {
                 << 1003977064));
         if (i != 84)
             return 85;
-        if ((i_67_ ^ 0xffffffff) < -32768)
+        if (i_67_ > 32767)
             i_67_ -= 65536;
         return i_67_;
     }
@@ -747,10 +745,8 @@ class Class348_Sub49 extends Class348 {
         anInt7166++;
         int i_68_ = -81 / ((i - 30) / 52);
         int i_69_ = this.anInt7197;
-        while (((this.aByteArray7154
-                [this.anInt7197++])
-                ^ 0xffffffff)
-                != -1) {
+        while ((this.aByteArray7154
+                [this.anInt7197++]) != 0) {
             /* empty */
         }
         int i_70_ = -1 + this.anInt7197 - i_69_;
@@ -772,7 +768,7 @@ class Class348_Sub49 extends Class348 {
     static final void method3379(int i, int i_71_) {
         anInt7201++;
         if (i_71_ != Class240.anInt4674) {
-            if ((i_71_ ^ 0xffffffff) == -14) {
+            if (i_71_ == 13) {
                 if (Class348_Sub23_Sub3.aString9043 != null)
                     Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596,
                             (byte) -81);
@@ -786,13 +782,10 @@ class Class348_Sub49 extends Class348 {
                 Class213.aClass238_2773 = null;
             }
             if (i_71_ == 3)
-                Class348_Sub42_Sub8.method3198(((r.anInt9721 ^ 0xffffffff)
-                                != (Class285.anInt4737
-                                ^ 0xffffffff)),
+                Class348_Sub42_Sub8.method3198((Class285.anInt4737 != r.anInt9721),
                         (byte) -45);
-            if ((i_71_ ^ 0xffffffff) == -8)
-                Class107.method1006(((Class54.anInt970 ^ 0xffffffff)
-                                != (r.anInt9721 ^ 0xffffffff)),
+            if (i_71_ == 7)
+                Class107.method1006((r.anInt9721 != Class54.anInt970),
                         (byte) 102);
             if (i_71_ == 5) {
                 if (Class348_Sub23_Sub3.aString9043 == null)
@@ -800,7 +793,7 @@ class Class348_Sub49 extends Class348 {
                             Class186.aString2496, -124);
                 else
                     Class182.method1372(-1);
-            } else if ((i_71_ ^ 0xffffffff) != -7) {
+            } else if (i_71_ != 6) {
                 if (i_71_ == 9) {
                     if (Class348_Sub23_Sub3.aString9043 != null)
                         Class135_Sub2.method1157((RuntimeException_Sub1
@@ -810,7 +803,7 @@ class Class348_Sub49 extends Class348 {
                         Class253.method1922(Class186.aString2496,
                                 RuntimeException_Sub1.anInt4596,
                                 Class64_Sub3.aString5600, true);
-                } else if ((i_71_ ^ 0xffffffff) == -13) {
+                } else if (i_71_ == 12) {
                     if (Class348_Sub23_Sub3.aString9043 == null)
                         Class151.method1213(Class64_Sub3.aString5600,
                                 Class186.aString2496, -98);
@@ -849,7 +842,7 @@ class Class348_Sub49 extends Class348 {
                 r_Sub2.aClass45_10480.anInt634 = 1;
                 Class78.aClass45_1322.anInt634 = 1;
             }
-            if ((i_71_ ^ 0xffffffff) == -12 || (i_71_ ^ 0xffffffff) == -4)
+            if (i_71_ == 11 || i_71_ == 3)
                 Class348_Sub40_Sub16.method3088(9);
             boolean bool = (i == i_71_
                     || Class348_Sub42_Sub8.method3196(i_71_, i ^ ~0x58)
@@ -880,7 +873,7 @@ class Class348_Sub49 extends Class348 {
                 }
             }
             if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (byte) -64)
-                    || (i_71_ ^ 0xffffffff) == -14)
+                    || i_71_ == 13)
                 Class348_Sub8.aHa6654.method3673();
             Class240.anInt4674 = i_71_;
         }
@@ -897,9 +890,9 @@ class Class348_Sub49 extends Class348 {
 
     final void method3381(int i, int i_77_) {
         anInt7180++;
-        if ((i_77_ ^ 0xffffffff) <= -1 && (i_77_ ^ 0xffffffff) > -129)
+        if (i_77_ >= 0 && i_77_ < 128)
             method3378(false, i_77_);
-        else if ((i_77_ ^ 0xffffffff) <= -1 && i_77_ < 32768)
+        else if (i_77_ >= 0 && i_77_ < 32768)
             method3337((byte) 107, i_77_ + 32768);
         else if (i == 5537)
             throw new IllegalArgumentException();
@@ -911,7 +904,7 @@ class Class348_Sub49 extends Class348 {
         anInt7176++;
         int i_78_ = 0xff & (this.aByteArray7154
                 [this.anInt7197]);
-        if ((i_78_ ^ 0xffffffff) > -129)
+        if (i_78_ < 128)
             return method3387(255);
         return method3330(842397944) + -32768;
     }
@@ -965,7 +958,7 @@ class Class348_Sub49 extends Class348 {
         anInt7182++;
         int i_80_ = -21 % ((42 - i) / 52);
         int i_81_ = string.indexOf('\0');
-        if ((i_81_ ^ 0xffffffff) <= -1)
+        if (i_81_ >= 0)
             throw new IllegalArgumentException("NUL character at " + i_81_
                     + " - cannot pjstr2");
         this.aByteArray7154
@@ -1003,7 +996,7 @@ class Class348_Sub49 extends Class348 {
     final void method3389(int i, int i_82_, int i_83_, byte[] is) {
         anInt7159++;
         for (int i_84_ = i_82_;
-             (i_84_ ^ 0xffffffff) > (i_83_ + i_82_ ^ 0xffffffff); i_84_++)
+             i_83_ + i_82_ > i_84_; i_84_++)
             is[i_84_] = (this.aByteArray7154
                     [this.anInt7197++]);
         if (i != 2147483647)
@@ -1137,8 +1130,8 @@ class Class348_Sub49 extends Class348 {
             aClass223_7175 = null;
         anInt7146++;
         if ((i & ~0x7f) != 0) {
-            if ((i & ~0x3fff ^ 0xffffffff) != -1) {
-                if ((~0x1fffff & i ^ 0xffffffff) != -1) {
+            if ((i & ~0x3fff) != 0) {
+                if ((~0x1fffff & i) != 0) {
                     if ((i & ~0xfffffff) != 0)
                         method3378(false, 0x80 | i >>> 1028243868);
                     method3378(false, 0x80 | i >>> 955016565);

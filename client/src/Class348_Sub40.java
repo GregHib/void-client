@@ -48,10 +48,8 @@ abstract class Class348_Sub40 extends Class348 {
     static final void method3038(int i) {
         anInt7044++;
         int i_0_ = 0;
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub28_7230.method1845(-32350)
-                ^ 0xffffffff)
-                == -2) {
+        if (Class316.aClass348_Sub51_3959
+                .aClass239_Sub28_7230.method1845(-32350) == 1) {
             i_0_ |= 0x1;
             i_0_ |= 0x10;
             i_0_ |= 0x20;
@@ -133,7 +131,7 @@ abstract class Class348_Sub40 extends Class348 {
         int i_40_ = i_31_ * (i_7_ + i_8_);
         int i_41_ = i_34_;
         int i_42_ = i_33_ * (-1 + i_16_);
-        if ((Class132.anInt1910 ^ 0xffffffff) >= (i_6_ ^ 0xffffffff)
+        if (i_6_ >= Class132.anInt1910
                 && Class38.anInt513 >= i_6_) {
             int[] is = Class17.anIntArrayArray255[i_6_];
             int i_43_ = Class85.method831(Class113.anInt1745, i_5_ + -i,
@@ -148,11 +146,11 @@ abstract class Class348_Sub40 extends Class348 {
             Class135_Sub2.method1156(-27, i_46_, is, i_45_, i_9_);
             Class135_Sub2.method1156(-27, i_44_, is, i_46_, i_10_);
         }
-        while ((i_13_ ^ 0xffffffff) < -1) {
+        while (i_13_ > 0) {
             boolean bool = i_16_ >= i_13_;
             if (bool) {
                 if (i_29_ < 0) {
-                    while ((i_29_ ^ 0xffffffff) > -1) {
+                    while (i_29_ < 0) {
                         i_29_ += i_37_;
                         i_30_ += i_41_;
                         i_41_ += i_34_;
@@ -160,7 +158,7 @@ abstract class Class348_Sub40 extends Class348 {
                         i_37_ += i_34_;
                     }
                 }
-                if ((i_30_ ^ 0xffffffff) > -1) {
+                if (i_30_ < 0) {
                     i_29_ += i_37_;
                     i_30_ += i_41_;
                     i_41_ += i_34_;
@@ -172,7 +170,7 @@ abstract class Class348_Sub40 extends Class348 {
                 i_42_ -= i_33_;
                 i_38_ -= i_33_;
             }
-            if ((i_27_ ^ 0xffffffff) > -1) {
+            if (i_27_ < 0) {
                 while (i_27_ < 0) {
                     i_27_ += i_35_;
                     i_28_ += i_39_;
@@ -181,7 +179,7 @@ abstract class Class348_Sub40 extends Class348 {
                     i_35_ += i_32_;
                 }
             }
-            if ((i_28_ ^ 0xffffffff) > -1) {
+            if (i_28_ < 0) {
                 i_28_ += i_39_;
                 i_27_ += i_35_;
                 i_35_ += i_32_;
@@ -195,16 +193,15 @@ abstract class Class348_Sub40 extends Class348 {
             i_40_ -= i_31_;
             int i_47_ = -i_13_ + i_6_;
             int i_48_ = i_13_ + i_6_;
-            if ((Class132.anInt1910 ^ 0xffffffff) >= (i_48_ ^ 0xffffffff)
-                    && (i_47_ ^ 0xffffffff) >= (Class38.anInt513 ^ 0xffffffff)) {
+            if (i_48_ >= Class132.anInt1910
+                    && Class38.anInt513 >= i_47_) {
                 int i_49_ = Class85.method831(Class113.anInt1745, i_12_ + i_5_,
                         Class369.anInt4960, 36);
                 int i_50_
                         = Class85.method831(Class113.anInt1745, -i_12_ + i_5_,
                         Class369.anInt4960, 97);
                 if (!bool) {
-                    if ((Class132.anInt1910 ^ 0xffffffff)
-                            >= (i_47_ ^ 0xffffffff))
+                    if (i_47_ >= Class132.anInt1910)
                         Class135_Sub2.method1156(-27, i_49_,
                                 (Class17.anIntArrayArray255
                                         [i_47_]),
@@ -221,8 +218,7 @@ abstract class Class348_Sub40 extends Class348 {
                     int i_52_
                             = Class85.method831(Class113.anInt1745, -i_14_ + i_5_,
                             Class369.anInt4960, 32);
-                    if ((i_47_ ^ 0xffffffff)
-                            <= (Class132.anInt1910 ^ 0xffffffff)) {
+                    if (Class132.anInt1910 <= i_47_) {
                         int[] is = Class17.anIntArrayArray255[i_47_];
                         Class135_Sub2.method1156(-27, i_52_, is, i_50_, i_10_);
                         Class135_Sub2.method1156(-27, i_51_, is, i_52_, i_9_);

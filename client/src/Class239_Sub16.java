@@ -18,7 +18,7 @@ final class Class239_Sub16 extends Class239 {
     static final String method1788(byte i, long l) {
         try {
             anInt6016++;
-            if (l <= 0L || (l ^ 0xffffffffffffffffL) <= -6582952005840035282L)
+            if (l <= 0L || l >= 6582952005840035281L)
                 return null;
             if (l % 37L == 0L)
                 return null;
@@ -28,11 +28,11 @@ final class Class239_Sub16 extends Class239 {
             for (/**/; l_1_ != 0L; l_1_ /= 37L)
                 i_0_++;
             StringBuffer stringbuffer = new StringBuffer(i_0_);
-            while ((l ^ 0xffffffffffffffffL) != -1L) {
+            while (l != 0) {
                 long l_3_ = l;
                 l /= 37L;
                 char c = Class48.aCharArray852[(int) (l_3_ + -(37L * l))];
-                if ((c ^ 0xffffffff) == -96) {
+                if (c == 95) {
                     int i_4_ = stringbuffer.length() + -1;
                     stringbuffer.setCharAt
                             (i_4_,
@@ -55,10 +55,9 @@ final class Class239_Sub16 extends Class239 {
         if (i != 3)
             anInt6012 = -22;
         anInt6014++;
-        if ((i_5_ ^ 0xffffffff) == -1
-                || (this.aClass348_Sub51_3136
-                .aClass239_Sub9_7256.method1759(i ^ ~0x7e5e)
-                ^ 0xffffffff) == -2)
+        if (i_5_ == 0
+                || this.aClass348_Sub51_3136
+                .aClass239_Sub9_7256.method1759(i ^ ~0x7e5e) == 1)
             return 1;
         return 2;
     }
@@ -66,13 +65,13 @@ final class Class239_Sub16 extends Class239 {
     final void method1716(boolean bool) {
         if (bool != false)
             anInt6012 = 46;
-        if ((this.anInt3138 ^ 0xffffffff) != -1
+        if (this.anInt3138 != 0
                 && this.aClass348_Sub51_3136
                 .aClass239_Sub9_7256.method1759(-32350) != 1)
             this.anInt3138 = 0;
         anInt6007++;
         if (this.anInt3138 < 0
-                || (this.anInt3138 ^ 0xffffffff) < -2)
+                || this.anInt3138 > 1)
             this.anInt3138 = method1710(20014);
     }
 
@@ -118,22 +117,19 @@ final class Class239_Sub16 extends Class239 {
                          (class318_sub1_sub3_sub3_sub2.anIntArray10236.length
                                  > i_9_);
                          i_9_++) {
-                        if ((is[i_9_] ^ 0xffffffff)
-                                != ((class318_sub1_sub3_sub3_sub2
-                                .anIntArray10236[i_9_])
-                                ^ 0xffffffff)) {
+                        if ((class318_sub1_sub3_sub3_sub2
+                                .anIntArray10236[i_9_]) != is[i_9_]) {
                             bool = false;
                             break;
                         }
                     }
-                    if (bool && (class318_sub1_sub3_sub3_sub2.anInt10286
-                            ^ 0xffffffff) != 0) {
+                    if (bool && class318_sub1_sub3_sub3_sub2.anInt10286 != -1) {
                         Class17 class17
                                 = (Class10.aClass87_191.method835
                                 (class318_sub1_sub3_sub3_sub2.anInt10286,
                                         7));
                         int i_10_ = class17.anInt248;
-                        if ((i_10_ ^ 0xffffffff) == -2) {
+                        if (i_10_ == 1) {
                             class318_sub1_sub3_sub3_sub2.anInt10232
                                     = 0;
                             class318_sub1_sub3_sub3_sub2.anInt10267
@@ -150,7 +146,7 @@ final class Class239_Sub16 extends Class239 {
                                                 class318_sub1_sub3_sub3_sub2.anInt10267,
                                                 class17, i ^ ~0x5df4);
                         }
-                        if ((i_10_ ^ 0xffffffff) == -3)
+                        if (i_10_ == 2)
                             class318_sub1_sub3_sub3_sub2.anInt10294
                                     = 0;
                     }
@@ -159,23 +155,19 @@ final class Class239_Sub16 extends Class239 {
                 if (i != 23946)
                     method1791(126, null, -73, null);
                 for (int i_11_ = 0;
-                     (i_11_ ^ 0xffffffff) > (is.length ^ 0xffffffff);
+                     is.length > i_11_;
                      i_11_++) {
                     if (is[i_11_] != -1)
                         bool = false;
                     if (class318_sub1_sub3_sub3_sub2.anIntArray10236 == null
-                            || ((class318_sub1_sub3_sub3_sub2
-                            .anIntArray10236[i_11_])
-                            ^ 0xffffffff) == 0
-                            || (((Class10.aClass87_191
-                            .method835(is[i_11_], i ^ 0x5d8d)
-                            .anInt239)
-                            ^ 0xffffffff)
-                            <= (Class10.aClass87_191.method835
+                            || (class318_sub1_sub3_sub3_sub2
+                            .anIntArray10236[i_11_]) == -1
+                            || (Class10.aClass87_191.method835
                             ((class318_sub1_sub3_sub3_sub2
                                             .anIntArray10236[i_11_]),
-                                    7).anInt239
-                            ^ 0xffffffff))) {
+                                    7).anInt239 <= (Class10.aClass87_191
+                            .method835(is[i_11_], i ^ 0x5d8d)
+                            .anInt239))) {
                         class318_sub1_sub3_sub3_sub2.anInt10218
                                 = i_8_;
                         class318_sub1_sub3_sub3_sub2.anIntArray10236

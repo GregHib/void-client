@@ -41,7 +41,7 @@ final class Class348_Sub47 extends Class348 {
                             Class318_Sub1_Sub5.anInt8780++;
                     }
                     if (!Class348_Sub16_Sub2.aBoolean8874
-                            || (l % 100L ^ 0xffffffffffffffffL) != -1L)
+                            || l % 100L != 0)
                         break;
                     System.out.println("Particle system count: "
                             + Class152.aClass243_2077.method1874(0)
@@ -68,7 +68,7 @@ final class Class348_Sub47 extends Class348 {
         if (bool != true)
             return false;
         anInt7121++;
-        return (((0x2000 & i ^ 0xffffffff) != -1
+        return (((0x2000 & i) != 0
                 | Class156.method1241(i_2_, i, -118)
                 | Class239_Sub1.method1722(i, i_2_, (byte) 94))
                 & aa_Sub3.method166((byte) 105, i_2_, i));

@@ -26,7 +26,7 @@ final class Class151 {
         anInt2066++;
         if (i > -93)
             anInt2061 = -39;
-        return (i_1_ ^ 0xffffffff) == -1 || (i_1_ ^ 0xffffffff) == -3;
+        return i_1_ == 0 || i_1_ == 2;
     }
 
     static final void method1211(int i, Class105 class105, int i_2_,

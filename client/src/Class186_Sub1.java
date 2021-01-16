@@ -39,7 +39,7 @@ final class Class186_Sub1 extends Class186 {
         i_12_ &= i_10_;
         int i_17_ = anIntArray5804[i_12_];
         int i_18_ = anIntArray5804[i_13_];
-        for (int i_19_ = 0; (i_19_ ^ 0xffffffff) > (i_0_ ^ 0xffffffff);
+        for (int i_19_ = 0; i_0_ > i_19_;
              i_19_++) {
             float f_20_ = f_5_ * (float) i_19_;
             int i_21_ = (int) f_20_;
@@ -139,9 +139,8 @@ final class Class186_Sub1 extends Class186 {
         anInt5805++;
         if (i != 7)
             method1400(-22);
-        if ((c ^ 0xffffffff) <= -1
-                && (c ^ 0xffffffff) > (Class239_Sub6.anIntArray5902.length
-                ^ 0xffffffff))
+        if (c >= 0
+                && Class239_Sub6.anIntArray5902.length > c)
             return Class239_Sub6.anIntArray5902[c];
         return -1;
     }
@@ -175,9 +174,9 @@ final class Class186_Sub1 extends Class186 {
 
     Class186_Sub1(int i) {
         Random random = new Random(i);
-        for (int i_41_ = 0; (i_41_ ^ 0xffffffff) > -257; i_41_++)
+        for (int i_41_ = 0; i_41_ < 256; i_41_++)
             anIntArray5804[i_41_] = anIntArray5804[256 + i_41_] = i_41_;
-        for (int i_42_ = 0; (i_42_ ^ 0xffffffff) > -257; i_42_++) {
+        for (int i_42_ = 0; i_42_ < 256; i_42_++) {
             int i_43_ = 0xff & random.nextInt();
             int i_44_ = anIntArray5804[i_43_];
             anIntArray5804[i_43_] = anIntArray5804[256 + i_43_]
@@ -198,7 +197,7 @@ final class Class186_Sub1 extends Class186 {
         anInt5806++;
         if (i_45_ > 0 && !Class192.method1436(69, i_45_))
             throw new IllegalArgumentException("");
-        if ((i ^ 0xffffffff) < -1 && !Class192.method1436(100, i))
+        if (i > 0 && !Class192.method1436(100, i))
             throw new IllegalArgumentException("");
         int i_49_ = Class183.method1382(i_46_, -6409);
         int i_50_ = 0;
@@ -221,9 +220,9 @@ final class Class186_Sub1 extends Class186 {
                 int i_60_ = i_58_;
                 int i_61_ = i_56_ + i_60_;
                 for (int i_62_ = 0;
-                     (i_53_ ^ 0xffffffff) < (i_62_ ^ 0xffffffff); i_62_++) {
+                     i_62_ < i_53_; i_62_++) {
                     for (int i_63_ = 0;
-                         (i_52_ ^ 0xffffffff) < (i_63_ ^ 0xffffffff);
+                         i_63_ < i_52_;
                          i_63_++) {
                         int i_64_ = is_54_[i_60_];
                         i_60_ += i_49_;

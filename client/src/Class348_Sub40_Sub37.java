@@ -31,7 +31,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                     is[i_4_++] += -is_5_[i_6_++];
                     is[i_4_++] += -is_5_[i_6_++];
                 }
-                for (int i_10_ = i_0_; (i_10_ ^ 0xffffffff) > -1; i_10_++)
+                for (int i_10_ = i_0_; i_10_ < 0; i_10_++)
                     is[i_4_++] += -is_5_[i_6_++];
                 i_4_ += i;
                 i_6_ += i_2_;
@@ -57,9 +57,9 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
         while_212_:
         do {
             do {
-                if ((i_12_ ^ 0xffffffff) != -1) {
-                    if ((i_12_ ^ 0xffffffff) != -2) {
-                        if ((i_12_ ^ 0xffffffff) == -3)
+                if (i_12_ != 0) {
+                    if (i_12_ != 1) {
+                        if (i_12_ == 2)
                             break;
                         break while_212_;
                     }
@@ -109,7 +109,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                  i_25_++) {
                 int i_26_ = 0;
                 for (int i_27_ = 0;
-                     (i_27_ ^ 0xffffffff) > (i_14_ ^ 0xffffffff); i_27_++)
+                     i_14_ > i_27_; i_27_++)
                     i_26_ += is_18_[i_27_][i_25_];
                 is[i_25_] = i_26_ * i_15_ >> 408717616;
             }
@@ -150,7 +150,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                 int[] is_41_ = is_35_[1];
                 int[] is_42_ = is_35_[2];
                 for (int i_43_ = -anInt9466;
-                     (anInt9466 ^ 0xffffffff) <= (i_43_ ^ 0xffffffff);
+                     i_43_ <= anInt9466;
                      i_43_++) {
                     int i_44_ = Class239_Sub22.anInt6076 & i_43_;
                     i_39_ += is_42_[i_44_];
@@ -161,8 +161,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                 int[] is_46_ = is_36_[1];
                 int[] is_47_ = is_36_[2];
                 int i_48_ = 0;
-                while ((i_48_ ^ 0xffffffff)
-                        > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)) {
+                while (Class348_Sub40_Sub6.anInt9139 > i_48_) {
                     is_45_[i_48_] = i_37_ * i_32_ >> -1831624048;
                     is_46_[i_48_] = i_38_ * i_32_ >> 1511888464;
                     is_47_[i_48_] = i_39_ * i_32_ >> -501021904;

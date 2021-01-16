@@ -26,28 +26,22 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
             while_108_:
             for (int i_3_ = 0; class57s.length > i_3_; i_3_++) {
                 Class57 class57 = class57s[i_3_];
-                if (((class57.anInt1046 ^ 0xffffffff) >= -1
-                        || (class57.anInt1046 ^ 0xffffffff) <= -25)
-                        && (class57.anInt1047 ^ 0xffffffff) <= -801
-                        && (class57.anInt1054 ^ 0xffffffff) <= -601
-                        && ((i_2_ ^ 0xffffffff) != -3
-                        || ((class57.anInt1047 ^ 0xffffffff)
-                        >= -801) && class57.anInt1054 <= 600)
-                        && ((i_2_ ^ 0xffffffff) != -2
-                        || (((class57.anInt1047 ^ 0xffffffff)
-                        >= -1025)
-                        && ((class57.anInt1054 ^ 0xffffffff)
-                        >= -769)))) {
+                if ((class57.anInt1046 <= 0
+                        || class57.anInt1046 >= 24)
+                        && class57.anInt1047 >= 800
+                        && class57.anInt1054 >= 600
+                        && (i_2_ != 2
+                        || (class57.anInt1047 <= 800) && class57.anInt1054 <= 600)
+                        && (i_2_ != 1
+                        || ((class57.anInt1047 <= 1024)
+                        && (class57.anInt1054 <= 768)))) {
                     for (int i_4_ = 0;
-                         (i_1_ ^ 0xffffffff) < (i_4_ ^ 0xffffffff); i_4_++) {
+                         i_4_ < i_1_; i_4_++) {
                         Class57 class57_5_ = class57s_0_[i_4_];
                         if ((class57_5_.anInt1047
                                 == class57.anInt1047)
-                                && ((class57.anInt1054 ^ 0xffffffff)
-                                == (class57_5_.anInt1054
-                                ^ 0xffffffff))) {
-                            if ((class57_5_.anInt1046 ^ 0xffffffff)
-                                    > (class57.anInt1046 ^ 0xffffffff))
+                                && (class57_5_.anInt1054 == class57.anInt1054)) {
+                            if (class57.anInt1046 > class57_5_.anInt1046)
                                 class57s_0_[i_4_] = class57;
                             continue while_108_;
                         }
@@ -61,8 +55,7 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
                     i_1_);
             int[] is = new int[Class228.aClass57Array2974.length];
             for (int i_6_ = 0;
-                 ((i_6_ ^ 0xffffffff)
-                         > (Class228.aClass57Array2974.length ^ 0xffffffff));
+                 (Class228.aClass57Array2974.length > i_6_);
                  i_6_++) {
                 Class57 class57 = Class228.aClass57Array2974[i_6_];
                 is[i_6_] = (class57.anInt1047

@@ -29,7 +29,7 @@ abstract class Class64 {
              Class4 class4_8_, int i_9_, boolean bool_10_) {
         try {
             anInt1130++;
-            if (class4 == null || (i_7_ ^ 0xffffffff) == -1) {
+            if (class4 == null || i_7_ == 0) {
                 for (int i_11_ = 0; class4_8_.anInt126 > i_11_;
                      i_11_++) {
                     short i_12_ = class4_8_.aShortArray130[i_11_];
@@ -67,15 +67,12 @@ abstract class Class64 {
                 for (/**/; class348_sub33.anInt6965 > i_16_;
                          i_16_++) {
                     boolean bool_18_ = false;
-                    if ((i_14_ ^ 0xffffffff) > (class4_8_.anInt126
-                            ^ 0xffffffff)
+                    if (class4_8_.anInt126 > i_14_
                             && class4_8_.aShortArray130[i_14_] == i_16_)
                         bool_18_ = true;
                     boolean bool_19_ = false;
-                    if ((i_15_ ^ 0xffffffff) > (class4.anInt126
-                            ^ 0xffffffff)
-                            && (class4.aShortArray130[i_15_]
-                            ^ 0xffffffff) == (i_16_ ^ 0xffffffff))
+                    if (class4.anInt126 > i_15_
+                            && i_16_ == class4.aShortArray130[i_15_])
                         bool_19_ = true;
                     if (bool_18_ || bool_19_) {
                         if (bools != null && bool == !bools[i_16_]
@@ -89,8 +86,8 @@ abstract class Class64 {
                             int i_20_ = 0;
                             int i_21_ = (class348_sub33
                                     .anIntArray6957[i_16_]);
-                            if ((i_21_ ^ 0xffffffff) == -4
-                                    || (i_21_ ^ 0xffffffff) == -11)
+                            if (i_21_ == 3
+                                    || i_21_ == 10)
                                 i_20_ = 128;
                             int i_22_;
                             short i_23_;
@@ -147,7 +144,7 @@ abstract class Class64 {
                                                 & (class348_sub33
                                                 .anIntArray6960[i_23_])),
                                         (byte) -93, 0, is, 0);
-                            else if ((i_31_ ^ 0xffffffff) != 0)
+                            else if (i_31_ != -1)
                                 method627((class348_sub33
                                                 .anIntArrayArray6959[i_31_]),
                                         bool_10_, i, 0, 0,
@@ -159,19 +156,19 @@ abstract class Class64 {
                             int i_33_;
                             int i_34_;
                             if ((0x2 & i_25_) != 0
-                                    || (i_29_ & 0x1 ^ 0xffffffff) != -1) {
+                                    || (i_29_ & 0x1) != 0) {
                                 i_32_ = i_26_;
                                 i_34_ = i_22_;
                                 i_33_ = i_24_;
-                            } else if ((i_21_ ^ 0xffffffff) != -3) {
-                                if ((i_21_ ^ 0xffffffff) == -10) {
+                            } else if (i_21_ != 2) {
+                                if (i_21_ == 9) {
                                     int i_35_ = i_30_ + -i_26_ & 0x3fff;
                                     if (i_35_ >= 8192)
                                         i_35_ -= 16384;
                                     i_32_
                                             = i_35_ * i_7_ / i_6_ + i_26_ & 0x3fff;
                                     i_33_ = i_34_ = 0;
-                                } else if ((i_21_ ^ 0xffffffff) == -8) {
+                                } else if (i_21_ == 7) {
                                     int i_36_ = 0x3f & i_30_ + -i_26_;
                                     if (i_36_ >= 32)
                                         i_36_ -= 64;
@@ -193,11 +190,11 @@ abstract class Class64 {
                                 int i_37_ = 0x3fff & i_30_ - i_26_;
                                 int i_38_ = i_27_ + -i_24_ & 0x3fff;
                                 int i_39_ = 0x3fff & i_28_ - i_22_;
-                                if ((i_37_ ^ 0xffffffff) <= -8193)
+                                if (i_37_ >= 8192)
                                     i_37_ -= 16384;
-                                if ((i_38_ ^ 0xffffffff) <= -8193)
+                                if (i_38_ >= 8192)
                                     i_38_ -= 16384;
-                                if ((i_39_ ^ 0xffffffff) <= -8193)
+                                if (i_39_ >= 8192)
                                     i_39_ -= 16384;
                                 i_32_
                                         = i_26_ - -(i_37_ * i_7_ / i_6_) & 0x3fff;
@@ -294,7 +291,7 @@ abstract class Class64 {
                 = ((!bool ? Class239_Sub6.aClass355_5900.anInt4365
                 : Class239_Sub6.aClass355_5900.anInt4364)
                 + i_53_);
-        for (int i_55_ = i_53_; (i_54_ ^ 0xffffffff) < (i_55_ ^ 0xffffffff);
+        for (int i_55_ = i_53_; i_55_ < i_54_;
              i_55_++) {
             Class348_Sub42_Sub10 class348_sub42_sub10
                     = Class239_Sub6.aClass355_5900.method3471(i_55_, (byte) -102);
@@ -348,12 +345,10 @@ abstract class Class64 {
                 is[i_65_] = is[i];
                 is[i] = i_67_;
                 for (int i_68_ = i_64_;
-                     (i ^ 0xffffffff) < (i_68_ ^ 0xffffffff); i_68_++) {
+                     i_68_ < i; i_68_++) {
                     if (string == null
                             || (strings[i_68_] != null
-                            && ((i_68_ & 0x1 ^ 0xffffffff)
-                            < (strings[i_68_].compareTo(string)
-                            ^ 0xffffffff)))) {
+                            && (strings[i_68_].compareTo(string) < (i_68_ & 0x1)))) {
                         String string_69_ = strings[i_68_];
                         strings[i_68_] = strings[i_66_];
                         strings[i_66_] = string_69_;
@@ -413,7 +408,7 @@ abstract class Class64 {
     final void method611(int i, int i_74_,
                          Class348_Sub42_Sub17 class348_sub42_sub17) {
         anInt1126++;
-        if ((i ^ 0xffffffff) != 0) {
+        if (i != -1) {
             method622();
             if (!NA())
                 method621();
@@ -422,14 +417,11 @@ abstract class Class64 {
                         .aClass4Array9673[i]);
                 Class348_Sub33 class348_sub33
                         = class4.aClass348_Sub33_134;
-                for (int i_75_ = 0; ((class4.anInt126 ^ 0xffffffff)
-                        < (i_75_ ^ 0xffffffff)); i_75_++) {
+                for (int i_75_ = 0; (i_75_ < class4.anInt126); i_75_++) {
                     short i_76_ = class4.aShortArray130[i_75_];
                     if (class348_sub33.aBooleanArray6954
                             [i_76_]) {
-                        if ((class4.aShortArray128[i_75_]
-                                ^ 0xffffffff)
-                                != 0)
+                        if (class4.aShortArray128[i_75_] != -1)
                             P(0, 0, 0, 0);
                         P((class348_sub33.anIntArray6957
                                         [i_76_]),
@@ -562,7 +554,7 @@ abstract class Class64 {
              int i_110_, boolean[] bools, int i_111_) {
         try {
             anInt1135++;
-            if ((i_104_ ^ 0xffffffff) != 0) {
+            if (i_104_ != -1) {
                 if (i_101_ <= 103)
                     aFloat1136 = 0.38855714F;
                 if (bools == null || i_105_ == -1)
@@ -656,15 +648,15 @@ abstract class Class64 {
         int i_136_
                 = var_s.method3986(i_118_ + i_134_, i_135_ + i_122_, (byte) 50);
         int i_137_
-                = (i_127_ ^ 0xffffffff) > (i_130_ ^ 0xffffffff) ? i_127_ : i_130_;
+                = i_130_ > i_127_ ? i_127_ : i_130_;
         int i_138_ = i_136_ <= i_133_ ? i_136_ : i_133_;
         int i_139_
-                = (i_130_ ^ 0xffffffff) > (i_136_ ^ 0xffffffff) ? i_130_ : i_136_;
-        if ((i_119_ ^ 0xffffffff) != -1) {
+                = i_136_ > i_130_ ? i_130_ : i_136_;
+        if (i_119_ != 0) {
             int i_140_ = 0x3fff & (int) (Math.atan2(i_137_ - i_138_,
                     i_119_)
                     * 2607.5945876176133);
-            if ((i_140_ ^ 0xffffffff) != -1) {
+            if (i_140_ != 0) {
                 if (i_121_ != 0) {
                     if (i_140_ > 8192) {
                         int i_141_ = -i_121_ + 16384;
@@ -677,15 +669,15 @@ abstract class Class64 {
             }
         }
         int i_142_
-                = (i_127_ ^ 0xffffffff) <= (i_133_ ^ 0xffffffff) ? i_133_ : i_127_;
-        if ((i ^ 0xffffffff) != -1) {
+                = i_133_ <= i_127_ ? i_133_ : i_127_;
+        if (i != 0) {
             int i_143_
                     = (0x3fff
                     & (int) (Math.atan2(-i_139_ + i_142_, i)
                     * 2607.5945876176133));
-            if ((i_143_ ^ 0xffffffff) != -1) {
+            if (i_143_ != 0) {
                 if (i_117_ != 0) {
-                    if ((i_143_ ^ 0xffffffff) < -8193) {
+                    if (i_143_ > 8192) {
                         int i_144_ = 16384 - i_117_;
                         if (i_144_ > i_143_)
                             i_143_ = i_144_;
@@ -696,10 +688,10 @@ abstract class Class64 {
             }
         }
         int i_145_ = i_136_ + i_127_;
-        if ((i_145_ ^ 0xffffffff) < (i_133_ + i_130_ ^ 0xffffffff))
+        if (i_133_ + i_130_ < i_145_)
             i_145_ = i_133_ + i_130_;
         i_145_ = (i_145_ >> -642454047) - i_120_;
-        if ((i_145_ ^ 0xffffffff) != -1)
+        if (i_145_ != 0)
             H(0, i_145_, 0);
     }
 
@@ -709,11 +701,11 @@ abstract class Class64 {
         try {
             anInt1132++;
             if (i_149_ == -93) {
-                if ((i ^ 0xffffffff) != -2) {
-                    if ((i ^ 0xffffffff) != -3) {
-                        if ((i ^ 0xffffffff) == -4) {
-                            if (i_147_ != 0 && (i_147_ ^ 0xffffffff) != -2) {
-                                if ((i_147_ ^ 0xffffffff) != -4) {
+                if (i != 1) {
+                    if (i != 2) {
+                        if (i == 3) {
+                            if (i_147_ != 0 && i_147_ != 1) {
+                                if (i_147_ != 3) {
                                     if (i_147_ == 2) {
                                         int i_153_ = i_150_;
                                         i_150_ = i_152_ & 0x3fff;
@@ -730,15 +722,15 @@ abstract class Class64 {
                                 i_152_ = i_155_;
                             }
                         }
-                    } else if (i_147_ == 0 || (i_147_ ^ 0xffffffff) == -2) {
+                    } else if (i_147_ == 0 || i_147_ == 1) {
                         i_150_ = -i_150_;
                         i_152_ = -i_152_;
                     } else if (i_147_ == 2) {
                         i_152_ = 0x3fff & -i_152_;
                         i_150_ = 0x3fff & -i_150_;
                     }
-                } else if ((i_147_ ^ 0xffffffff) == -1
-                        || (i_147_ ^ 0xffffffff) == -2) {
+                } else if (i_147_ == 0
+                        || i_147_ == 1) {
                     int i_156_ = -i_150_;
                     i_150_ = i_152_;
                     i_152_ = i_156_;

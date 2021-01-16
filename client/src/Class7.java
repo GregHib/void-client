@@ -22,7 +22,7 @@ public final class Class7 {
             DisplayMode[] displaymodes = aGraphicsDevice157.getDisplayModes();
             boolean bool = false;
             for (int i_4_ = 0;
-                 (displaymodes.length ^ 0xffffffff) < (i_4_ ^ 0xffffffff);
+                 i_4_ < displaymodes.length;
                  i_4_++) {
                 if (i == displaymodes[i_4_].getWidth()
                         && i_0_ == displaymodes[i_4_].getHeight()

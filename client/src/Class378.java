@@ -65,7 +65,7 @@ public final class Class378 extends ha_Sub3 {
             do {
                 do {
                     if (i_2_ != 1) {
-                        if (-3 != (i_2_ ^ 0xffffffff))
+                        if (i_2_ != 2)
                             break;
                     } else {
                         i_3_ = 6;
@@ -101,8 +101,8 @@ public final class Class378 extends ha_Sub3 {
                 false)) {
             is = new int[i_6_ * i_5_];
             int i_8_ = this.aPixelBuffer9803.getRowPitch();
-            if ((4 * i_5_ ^ 0xffffffff) != (i_8_ ^ 0xffffffff)) {
-                for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff);
+            if (i_8_ != 4 * i_5_) {
+                for (int i_9_ = 0; i_6_ > i_9_;
                      i_9_++)
                     this.aPixelBuffer9803.b(is, i_9_ * i_5_,
                             i_9_ * i_8_, i_5_);
@@ -239,7 +239,7 @@ public final class Class378 extends ha_Sub3 {
         do {
             do {
                 if (1 != i_14_) {
-                    if ((i_14_ ^ 0xffffffff) != -3)
+                    if (i_14_ != 2)
                         break;
                 } else {
                     i_15_ = 3;
@@ -311,31 +311,29 @@ public final class Class378 extends ha_Sub3 {
             hb var_hb = new hb();
             IDirect3D idirect3d = IDirect3D.a(-2147483616, var_hb);
             D3DCAPS d3dcaps = idirect3d.b(i, i_20_);
-            if (-1 == (d3dcaps.RasterCaps & 0x1000000 ^ 0xffffffff))
+            if ((d3dcaps.RasterCaps & 0x1000000) == 0)
                 throw new RuntimeException("");
-            if ((d3dcaps.MaxSimultaneousTextures ^ 0xffffffff) > -3)
+            if (d3dcaps.MaxSimultaneousTextures < 2)
                 throw new RuntimeException("");
-            if ((0x2 & d3dcaps.TextureOpCaps ^ 0xffffffff) == -1)
+            if ((0x2 & d3dcaps.TextureOpCaps) == 0)
                 throw new RuntimeException("");
-            if ((d3dcaps.TextureOpCaps & 0x8 ^ 0xffffffff) == -1)
+            if ((d3dcaps.TextureOpCaps & 0x8) == 0)
                 throw new RuntimeException("");
             if ((0x40 & d3dcaps.TextureOpCaps) == 0)
                 throw new RuntimeException("");
-            if (-1 == (0x200 & d3dcaps.TextureOpCaps ^ 0xffffffff))
+            if ((0x200 & d3dcaps.TextureOpCaps) == 0)
                 throw new RuntimeException("");
-            if (-1 == (0x2000000 & d3dcaps.TextureOpCaps ^ 0xffffffff))
+            if ((0x2000000 & d3dcaps.TextureOpCaps) == 0)
                 throw new RuntimeException("");
             if (0 == (0x10 & (d3dcaps.DestBlendCaps & d3dcaps.SrcBlendCaps)))
                 throw new RuntimeException("");
-            if ((d3dcaps.DestBlendCaps & d3dcaps.SrcBlendCaps & 0x20
-                    ^ 0xffffffff)
-                    == -1)
+            if ((d3dcaps.DestBlendCaps & d3dcaps.SrcBlendCaps & 0x20) == 0)
                 throw new RuntimeException("");
             if (0 == (d3dcaps.SrcBlendCaps & d3dcaps.DestBlendCaps & 0x2))
                 throw new RuntimeException("");
             if (0 < d3dcaps.MaxActiveLights && 2 > d3dcaps.MaxActiveLights)
                 throw new RuntimeException("");
-            if (-6 < (d3dcaps.MaxStreams ^ 0xffffffff))
+            if (d3dcaps.MaxStreams < 5)
                 throw new RuntimeException("");
             D3DPRESENT_PARAMETERS d3dpresent_parameters
                     = new D3DPRESENT_PARAMETERS(canvas);
@@ -346,7 +344,7 @@ public final class Class378 extends ha_Sub3 {
             d3dpresent_parameters.EnableAutoDepthStencil = true;
             d3dpresent_parameters.Windowed = true;
             int i_21_ = 2;
-            if ((0x100000 & d3dcaps.DevCaps ^ 0xffffffff) != -1)
+            if ((0x100000 & d3dcaps.DevCaps) != 0)
                 i_21_ |= 0x10;
             Object object = null;
             IDirect3DDevice idirect3ddevice;
@@ -545,7 +543,7 @@ public final class Class378 extends ha_Sub3 {
         if (ue.a(idirect3deventquery.Issue(), false)) {
             for (; ; ) {
                 int i = idirect3deventquery.IsSignaled();
-                if (-2 != (i ^ 0xffffffff))
+                if (i != 1)
                     break;
                 Thread.yield();
             }
@@ -577,7 +575,7 @@ public final class Class378 extends ha_Sub3 {
         int i_34_ = -115 % ((i - -39) / 62);
         int i_35_;
         for (i_35_ = 0;
-             (i_35_ ^ 0xffffffff) > (this.anInt8151 ^ 0xffffffff);
+             this.anInt8151 > i_35_;
              i_35_++) {
             Class348_Sub1 class348_sub1
                     = this.aClass348_Sub1Array8132[i_35_];
@@ -601,7 +599,7 @@ public final class Class378 extends ha_Sub3 {
             this.anIDirect3DDevice9810.LightEnable(i_36_, true);
         }
         for (/**/;
-                 (this.anInt8122 ^ 0xffffffff) < (i_35_ ^ 0xffffffff);
+                 i_35_ < this.anInt8122;
                  i_35_++)
             this.anIDirect3DDevice9810.LightEnable(i_35_ - -2,
                     false);
@@ -644,16 +642,13 @@ public final class Class378 extends ha_Sub3 {
                     = new GeometryBuffer(this.aHb9788);
             new GeometryBuffer(this.aHb9788);
             this.aBoolean8101
-                    = (0x800 & this.aD3DCAPS9791.TextureCaps
-                    ^ 0xffffffff) != -1;
+                    = (0x800 & this.aD3DCAPS9791.TextureCaps) != 0;
             this.aBoolean9798
                     = (0x4000 & this.aD3DCAPS9791.TextureCaps) != 0;
             this.aBoolean9792
-                    = -1 == (0x2 & this.aD3DCAPS9791.TextureCaps
-                    ^ 0xffffffff);
+                    = (0x2 & this.aD3DCAPS9791.TextureCaps) == 0;
             this.aBoolean9802
-                    = (this.aD3DCAPS9791.TextureCaps & 0x10000
-                    ^ 0xffffffff) != -1;
+                    = (this.aD3DCAPS9791.TextureCaps & 0x10000) != 0;
             this.anInt8138
                     = (this.aD3DCAPS9791.MaxActiveLights <= 0 ? 8
                     : this.aD3DCAPS9791.MaxActiveLights);
@@ -662,7 +657,7 @@ public final class Class378 extends ha_Sub3 {
             this.anInt8090
                     = this.aD3DCAPS9791.MaxSimultaneousTextures;
             this.aBoolean8182
-                    = ((this.anInt8117 ^ 0xffffffff) < -1
+                    = (this.anInt8117 > 0
                     || ((anIDirect3D9793.CheckDeviceMultiSampleType
                     (anInt9799, anInt9807,
                             aD3DPRESENT_PARAMETERS9800.BackBufferFormat, true, 2))
@@ -979,8 +974,8 @@ public final class Class378 extends ha_Sub3 {
         while_234_:
         do {
             do {
-                if (-4 != (i_65_ ^ 0xffffffff)) {
-                    if ((i_65_ ^ 0xffffffff) != -5) {
+                if (i_65_ != 3) {
+                    if (i_65_ != 4) {
                         if (8 == i_65_)
                             break;
                         break while_234_;
@@ -1118,9 +1113,7 @@ public final class Class378 extends ha_Sub3 {
                                         .method918(aFloatArray9797, i ^ 0x1));
             int i_72_ = method3963(594, (this.aClass251Array8113
                     [this.anInt8175]));
-            if ((i_72_ ^ 0xffffffff)
-                    != (anIntArray9805[this.anInt8175]
-                    ^ 0xffffffff)) {
+            if (anIntArray9805[this.anInt8175] != i_72_) {
                 this.anIDirect3DDevice9810.SetTextureStageState
                         (this.anInt8175, 24, i_72_);
                 anIntArray9805[this.anInt8175] = i_72_;
@@ -1144,7 +1137,7 @@ public final class Class378 extends ha_Sub3 {
     final void method3844(int i, Canvas canvas, Object object) {
         if (canvas == this.aCanvas7925) {
             Dimension dimension = canvas.getSize();
-            if (-1 > (dimension.width ^ 0xffffffff) && 0 < dimension.height) {
+            if (dimension.width > 0 && 0 < dimension.height) {
                 this.anIDirect3DDevice9810.EndScene();
                 method3960(false);
                 this.anIDirect3DDevice9810.BeginScene();
@@ -1166,19 +1159,19 @@ public final class Class378 extends ha_Sub3 {
             if (ue.a((byte) 97, idirect3d.a(j, d3ddisplaymode)))
                 return false;
             label0:
-            for (; -1 >= ~l; l--) {
+            for (; l >= 0; l--) {
                 if (1 == l)
                     continue;
                 k1 = l + 0;
                 label1:
                 for (int l1 = 0; l1 < anIntArray9790.length; l1++) {
-                    if (-1 != ~idirect3d.CheckDeviceType(j, k, d3ddisplaymode.Format, anIntArray9790[l1], true) || -1 != ~idirect3d.CheckDeviceFormat(j, k, d3ddisplaymode.Format, 1, 1, anIntArray9790[l1]) || l != 0 && ~idirect3d.CheckDeviceMultiSampleType(j, k, anIntArray9790[l1], true, k1) != -1)
+                    if (idirect3d.CheckDeviceType(j, k, d3ddisplaymode.Format, anIntArray9790[l1], true) != 0 || idirect3d.CheckDeviceFormat(j, k, d3ddisplaymode.Format, 1, 1, anIntArray9790[l1]) != 0 || l != 0 && idirect3d.CheckDeviceMultiSampleType(j, k, anIntArray9790[l1], true, k1) != 0)
                         continue;
                     int i2 = 0;
                     do {
                         if (anIntArray9809.length <= i2)
                             continue label1;
-                        if (~idirect3d.CheckDeviceFormat(j, k, d3ddisplaymode.Format, 2, 1, anIntArray9809[i2]) == -1 && ~idirect3d.CheckDepthStencilMatch(j, k, d3ddisplaymode.Format, anIntArray9790[l1], anIntArray9809[i2]) == -1 && (~l == -1 || -1 == ~idirect3d.CheckDeviceMultiSampleType(j, k, anIntArray9809[l1], true, k1))) {
+                        if (idirect3d.CheckDeviceFormat(j, k, d3ddisplaymode.Format, 2, 1, anIntArray9809[i2]) == 0 && idirect3d.CheckDepthStencilMatch(j, k, d3ddisplaymode.Format, anIntArray9790[l1], anIntArray9809[i2]) == 0 && (l == 0 || idirect3d.CheckDeviceMultiSampleType(j, k, anIntArray9809[l1], true, k1) == 0)) {
                             i1 = anIntArray9809[i2];
                             j1 = anIntArray9790[l1];
                             break label0;
@@ -1189,7 +1182,7 @@ public final class Class378 extends ha_Sub3 {
 
             }
 
-            if (l < 0 || -1 == ~j1 || -1 == ~i1)
+            if (l < 0 || j1 == 0 || i1 == 0)
                 return false;
             d3dpresent_parameters.MultiSampleType = k1;
             d3dpresent_parameters.AutoDepthStencilFormat = i1;

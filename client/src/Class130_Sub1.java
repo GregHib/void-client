@@ -4100,7 +4100,7 @@ final class Class130_Sub1 extends Class130 {
         Class347.aBoolean4278 = true;
         Class175.aBoolean2329 = true;
         Class318_Sub1_Sub4.method2480(~i);
-        for (int j = 0; ~j > ~Class348_Sub27.aClass302Array6897.length; j++)
+        for (int j = 0; Class348_Sub27.aClass302Array6897.length > j; j++)
             Class348_Sub27.aClass302Array6897[j] = null;
 
         r.aBoolean9722 = false;
@@ -4112,7 +4112,7 @@ final class Class130_Sub1 extends Class130 {
         Class195.anInt5016 = (int) (80D * Math.random()) - 40;
         Class20.anInt319 = (int) (Math.random() * 100D) - 50;
         Class348_Sub40_Sub16.method3089(-126);
-        for (int k = 0; ~k > -2049; k++)
+        for (int k = 0; k < 2048; k++)
             Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[k] = null;
 
         Class150.anInt2057 = 0;
@@ -4135,11 +4135,11 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub31.anInt9406 = 0;
         Class348_Sub35.anInt6981 = 0;
         Class367_Sub11.anInt7403 = 0;
-        for (int l = 0; ~Class77.anIntArray1303.length < ~l; l++)
+        for (int l = 0; l < Class77.anIntArray1303.length; l++)
             if (!Class286_Sub6.aBooleanArray6270[l])
                 Class77.anIntArray1303[l] = -1;
 
-        if (~r.anInt9721 != 0)
+        if (r.anInt9721 != -1)
             Class14.method235(r.anInt9721, (byte) -105);
         for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3482(0)) {
             if (!class348_sub41.method2712((byte) 4)) {
@@ -4154,7 +4154,7 @@ final class Class130_Sub1 extends Class130 {
         Class125.aClass356_4915 = new Class356(8);
         Class99.method882((byte) 11);
         Class49.aClass46_4730 = null;
-        for (int i1 = 0; ~i1 > -9; i1++) {
+        for (int i1 = 0; i1 < 8; i1++) {
             Class318_Sub1_Sub2_Sub1.aStringArray10195[i1] = null;
             Class71.aBooleanArray1214[i1] = false;
             Canvas_Sub1.anIntArray60[i1] = -1;

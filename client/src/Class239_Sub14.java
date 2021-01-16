@@ -34,7 +34,7 @@ final class Class239_Sub14 extends Class239 {
             this.anInt3138 = 1;
         anInt5988++;
         if (this.anInt3138 < 0
-                || (this.anInt3138 ^ 0xffffffff) < -3)
+                || this.anInt3138 > 2)
             this.anInt3138 = method1710(20014);
     }
 
@@ -72,10 +72,8 @@ final class Class239_Sub14 extends Class239 {
         anInt5983++;
         if (Class348_Sub31.anInt6923 == -1)
             return 1;
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub25_7271.method1829(-32350)
-                ^ 0xffffffff)
-                != (i ^ 0xffffffff)) {
+        if (i != Class316.aClass348_Sub51_3959
+                .aClass239_Sub25_7271.method1829(-32350)) {
             Class258_Sub3_Sub1.method1971
                     (-2,
                             Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967,
@@ -111,12 +109,12 @@ final class Class239_Sub14 extends Class239 {
                     64, 64, 768);
             int i_3_ = 0;
             while_80_:
-            for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -501; i_4_++) {
+            for (int i_4_ = 0; i_4_ < 500; i_4_++) {
                 Class348_Sub8.aHa6654.GA(0);
                 Class348_Sub8.aHa6654.ya();
-                for (int i_5_ = 15; (i_5_ ^ 0xffffffff) <= -1; i_5_--) {
+                for (int i_5_ = 15; i_5_ >= 0; i_5_--) {
                     for (int i_6_ = 0;
-                         (i_5_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff); i_6_++) {
+                         i_6_ <= i_5_; i_6_++) {
                         Class50_Sub1.aClass101_5209.method894
                                 ((int) ((-((float) i_5_ / 2.0F) + (float) i_6_)
                                                 * (float) Class270.anInt3465),
@@ -124,9 +122,7 @@ final class Class239_Sub14 extends Class239 {
                         i_3_++;
                         class64.method615(Class50_Sub1.aClass101_5209, null,
                                 0);
-                        if (((long) i_2_ ^ 0xffffffffffffffffL)
-                                >= (Class62.method599(-105) + -l
-                                ^ 0xffffffffffffffffL))
+                        if (Class62.method599(-105) + -l >= (long) i_2_)
                             break while_80_;
                     }
                 }

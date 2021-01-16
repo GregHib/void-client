@@ -29,7 +29,7 @@ final class Class15 {
         if (i != 4)
             aClass114_229 = null;
         int i_2_ = string.length();
-        for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i_2_ ^ 0xffffffff); i_3_++) {
+        for (int i_3_ = 0; i_2_ > i_3_; i_3_++) {
             if (c == string.charAt(i_3_))
                 i_1_++;
         }

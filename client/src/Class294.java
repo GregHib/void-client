@@ -248,7 +248,7 @@ final class Class294 implements Interface16 {
                     int i_13_ = i_7_ + -(anInt5050 / 2) + anInt5029;
                     int i_14_ = anInt5029 + anInt5050 / 2;
                     for (int i_15_ = i_13_;
-                         (i_15_ ^ 0xffffffff) >= (i_14_ ^ 0xffffffff);
+                         i_14_ >= i_15_;
                          i_15_ += i_9_)
                         graphics_6_.drawImage(anImage5056,
                                 i_15_ + (method2215((byte) 77,
@@ -288,18 +288,16 @@ final class Class294 implements Interface16 {
                                 (-i_18_ + (-i_16_ + anInt5023), anInt5036));
                     Graphics graphics_28_ = anImage5059.getGraphics();
                     for (int i_29_ = 0;
-                         ((i_29_ ^ 0xffffffff)
-                                 > (-i_18_ + (anInt5023 + -i_16_) ^ 0xffffffff));
+                         (-i_18_ + (anInt5023 + -i_16_) > i_29_);
                          i_29_ += i_21_)
                         graphics_28_.drawImage(anImage5054, i_29_, 0, null);
                     for (int i_30_ = 0;
-                         ((anInt5023 - (i_16_ + i_18_) ^ 0xffffffff)
-                                 < (i_30_ ^ 0xffffffff));
+                         (i_30_ < anInt5023 - (i_16_ + i_18_));
                          i_30_ += i_23_)
                         graphics_28_.drawImage(anImage5041, i_30_,
                                 -i_20_ + anInt5036, null);
                     int i_31_ = i_5_ * (-i_18_ + (-i_16_ + anInt5023)) / 100;
-                    if ((i_31_ ^ 0xffffffff) < -1) {
+                    if (i_31_ > 0) {
                         Image image
                                 = Class305.aCanvas3869.createImage(i_31_,
                                 (-i_22_
@@ -310,7 +308,7 @@ final class Class294 implements Interface16 {
                         int i_34_
                                 = anInt5042 * aa_Sub2.method163(512) / 10 % i_24_;
                         for (int i_35_ = -i_24_ + i_34_;
-                             (i_32_ ^ 0xffffffff) < (i_35_ ^ 0xffffffff);
+                             i_35_ < i_32_;
                              i_35_ += i_24_)
                             graphics_33_.drawImage(anImage5047, i_35_, 0,
                                     null);

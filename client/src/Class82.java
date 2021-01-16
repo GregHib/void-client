@@ -93,7 +93,7 @@ final class Class82 {
                     break;
                 }
                 if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271
-                        || (Class192.anInt2581 ^ 0xffffffff) <= -3) {
+                        || Class192.anInt2581 >= 2) {
                     if (string.equalsIgnoreCase("errortest"))
                         throw new RuntimeException();
                     if (string.equals("nativememerror"))
@@ -194,10 +194,10 @@ final class Class82 {
                         if (string.equalsIgnoreCase("clientdrop")) {
                             Applet_Sub1.method94("Dropped client connection",
                                     -119);
-                            if ((Class240.anInt4674 ^ 0xffffffff) == -11)
+                            if (Class240.anInt4674 == 10)
                                 Class272.method2049(105);
                             else {
-                                if ((Class240.anInt4674 ^ 0xffffffff) == -12)
+                                if (Class240.anInt4674 == 11)
                                     Class110.aBoolean1712 = true;
                                 break;
                             }
@@ -278,10 +278,8 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk0")) {
                             Class367_Sub10.method3553(false, (byte) 104, 0);
-                            if ((Class316.aClass348_Sub51_3959
-                                    .aClass239_Sub25_7271.method1829(-32350)
-                                    ^ 0xffffffff)
-                                    != -1)
+                            if (Class316.aClass348_Sub51_3959
+									.aClass239_Sub25_7271.method1829(-32350) != 0)
                                 Applet_Sub1.method94("Failed to enter tk0",
                                         69);
                             else {
@@ -299,10 +297,8 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk1")) {
                             Class367_Sub10.method3553(false, (byte) 109, 1);
-                            if ((Class316.aClass348_Sub51_3959
-                                    .aClass239_Sub25_7271.method1829(-32350)
-                                    ^ 0xffffffff)
-                                    != -2)
+                            if (Class316.aClass348_Sub51_3959
+									.aClass239_Sub25_7271.method1829(-32350) != 1)
                                 Applet_Sub1.method94("Failed to enter tk1",
                                         -56);
                             else {
@@ -340,10 +336,8 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("tk3")) {
                             Class367_Sub10.method3553(false, (byte) 107, 3);
-                            if ((Class316.aClass348_Sub51_3959
-                                    .aClass239_Sub25_7271.method1829(-32350)
-                                    ^ 0xffffffff)
-                                    != -4)
+                            if (Class316.aClass348_Sub51_3959
+									.aClass239_Sub25_7271.method1829(-32350) != 3)
                                 Applet_Sub1.method94("Failed to enter tk3",
                                         54);
                             else {
@@ -381,13 +375,13 @@ final class Class82 {
                             break;
                         }
                         if (string.startsWith("setba")) {
-                            if ((string.length() ^ 0xffffffff) > -7)
+                            if (string.length() < 6)
                                 Applet_Sub1.method94("Invalid buildarea value",
                                         i + -36);
                             else {
                                 int i_6_ = (Class348_Sub41.method3156
                                         (true, string.substring(6)));
-                                if ((i_6_ ^ 0xffffffff) > -1
+                                if (i_6_ < 0
                                         || (Class348.method2710(-126,
                                         Class226.anInt2964)
                                         < i_6_))
@@ -414,7 +408,7 @@ final class Class82 {
                             break;
                         }
                         if (string.startsWith("rect_debug")) {
-                            if ((string.length() ^ 0xffffffff) > -11)
+                            if (string.length() < 10)
                                 Applet_Sub1
                                         .method94("Invalid rect_debug value", -94);
                             else {
@@ -541,7 +535,7 @@ final class Class82 {
                                 int i_8_
                                         = Integer.parseInt(string.substring(3));
                                 if (i_8_ >= 1) {
-                                    if ((i_8_ ^ 0xffffffff) < -5)
+                                    if (i_8_ > 4)
                                         i_8_ = 4;
                                 } else
                                     i_8_ = 1;
@@ -774,8 +768,7 @@ final class Class82 {
                         }
                         if (string.equals("scramblevarcs")) {
                             for (int i_14_ = 0;
-                                 ((Class77.anIntArray1303.length ^ 0xffffffff)
-                                         < (i_14_ ^ 0xffffffff));
+                                 (i_14_ < Class77.anIntArray1303.length);
                                  i_14_++) {
                                 if (Class286_Sub6.aBooleanArray6270[i_14_]) {
                                     Class77.anIntArray1303[i_14_]
@@ -834,7 +827,7 @@ final class Class82 {
                             String[] strings
                                     = (Class348_Sub40_Sub23.method3113
                                     (' ', true, string.substring(12)));
-                            if ((strings.length ^ 0xffffffff) <= -3) {
+                            if (strings.length >= 2) {
                                 int i_17_
                                         = (strings.length > 2
                                         ? Integer.parseInt(strings[2]) : 0);
@@ -916,7 +909,7 @@ final class Class82 {
                         }
                         if (string.startsWith("ortho ")) {
                             int i_20_ = string.indexOf(' ');
-                            if ((i_20_ ^ 0xffffffff) > -1)
+                            if (i_20_ < 0)
                                 Applet_Sub1.method94("Syntax: ortho <n>", 66);
                             else {
                                 int i_21_
@@ -946,11 +939,9 @@ final class Class82 {
                             break;
                         }
                         if (string.startsWith("orthozoom ")) {
-                            if ((Class316.aClass348_Sub51_3959
-                                    .aClass239_Sub3_7222
-                                    .method1727(i + -32271)
-                                    ^ 0xffffffff)
-                                    == -1)
+                            if (Class316.aClass348_Sub51_3959
+									.aClass239_Sub3_7222
+									.method1727(i + -32271) == 0)
                                 Applet_Sub1.method94
                                         ("enable ortho mode first (use 'ortho <n>')",
                                                 i + 182);
@@ -1094,7 +1085,7 @@ final class Class82 {
                         break;
                     }
                 }
-                if ((Class240.anInt4674 ^ 0xffffffff) == -11)
+                if (Class240.anInt4674 == 10)
                     break;
                 Applet_Sub1.method94
                         (Class274.aClass274_3486
@@ -1128,15 +1119,15 @@ final class Class82 {
                 if (Class130_Sub1.anInt5799 != i_27_) {
                     int i_28_ = i_27_ - Class130_Sub1.anInt5799;
                     int i_29_ = (int) ((long) i_28_ * l / 320L);
-                    if ((i_28_ ^ 0xffffffff) >= -1) {
+                    if (i_28_ <= 0) {
                         if (i_29_ != 0) {
-                            if ((i_28_ ^ 0xffffffff) < (i_29_ ^ 0xffffffff))
+                            if (i_29_ < i_28_)
                                 i_29_ = i_28_;
                         } else
                             i_29_ = -1;
-                    } else if ((i_29_ ^ 0xffffffff) == -1)
+                    } else if (i_29_ == 0)
                         i_29_ = 1;
-                    else if ((i_29_ ^ 0xffffffff) < (i_28_ ^ 0xffffffff))
+                    else if (i_28_ < i_29_)
                         i_29_ = i_28_;
                     Class130_Sub1.anInt5799 += i_29_;
                 }
@@ -1148,12 +1139,12 @@ final class Class82 {
                 if (Class192.anInt2578 != i_30_) {
                     int i_31_ = -Class192.anInt2578 + i_30_;
                     int i_32_ = (int) (l * (long) i_31_ / 320L);
-                    if ((i_31_ ^ 0xffffffff) >= -1) {
+                    if (i_31_ <= 0) {
                         if (i_32_ == 0)
                             i_32_ = -1;
                         else if (i_32_ < i_31_)
                             i_32_ = i_31_;
-                    } else if ((i_32_ ^ 0xffffffff) != -1) {
+                    } else if (i_32_ != 0) {
                         if (i_31_ < i_32_)
                             i_32_ = i_31_;
                     } else

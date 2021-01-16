@@ -82,7 +82,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
                             int i_4_, int i_5_, int i_6_, int i_7_, int i_8_,
                             int i_9_, boolean bool_10_) {
         super(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_,
-                (class51.anInt895 ^ 0xffffffff) == -2,
+                class51.anInt895 == 1,
                 Class348_Sub9.method2782(i_9_, i_8_, 0));
         do {
             try {
@@ -165,10 +165,9 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
             method2392(false);
         anInt10004++;
         if (this.aClass64_10028 != null
-                && (var_ha.method3667(this
+                && var_ha.method3667(this
                         .aClass64_10028.ua(),
-                i_14_)
-                ^ 0xffffffff) == -1)
+                i_14_) == 0)
             return this.aClass64_10028;
         Class2 class2 = method2417(0, var_ha, i_14_, false);
         if (class2 == null)
@@ -299,14 +298,14 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
         } else {
             var_s = (Class348_Sub1_Sub1.aSArray8801
                     [this.aByte6376]);
-            if ((this.aByte6376 ^ 0xffffffff) <= -4)
+            if (this.aByte6376 >= 3)
                 var_s_21_ = null;
             else
                 var_s_21_ = (Class348_Sub1_Sub1.aSArray8801
                         [this.aByte6376 - -1]);
         }
         return class51.method476(var_ha, var_s_21_,
-                ((aByte10024 ^ 0xffffffff) != -12 ? aByte10024
+                (aByte10024 != 11 ? aByte10024
                         : 10),
                 i_20_, this.anInt6377, bool,
                 var_s, this.anInt6382,

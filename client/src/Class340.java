@@ -23,8 +23,7 @@ final class Class340 {
     final void method2670(int i) {
         anInt4222++;
         if (aClass314_Sub1Array4216 != null) {
-            for (int i_0_ = 0; ((aClass314_Sub1Array4216.length ^ 0xffffffff)
-                    < (i_0_ ^ 0xffffffff)); i_0_++) {
+            for (int i_0_ = 0; (i_0_ < aClass314_Sub1Array4216.length); i_0_++) {
                 if (aClass314_Sub1Array4216[i_0_] != null)
                     aClass314_Sub1Array4216[i_0_].method2342(0);
             }
@@ -46,7 +45,7 @@ final class Class340 {
         anInt4224++;
         if (i_2_ >= -89)
             return true;
-        return i == 7 || (i ^ 0xffffffff) == -9 || (i ^ 0xffffffff) == -10;
+        return i == 7 || i == 8 || i == 9;
     }
 
     final Class314_Sub1 method2673(Class137 class137, int i,
@@ -115,7 +114,7 @@ final class Class340 {
         } else {
             is_6_ = is;
         }
-        if ((is_6_.length ^ 0xffffffff) != -66)
+        if (is_6_.length != 65)
             throw new RuntimeException();
         byte[] is_8_
                 = Class348_Sub1_Sub2.method2730(4567, 5,
@@ -123,8 +122,8 @@ final class Class340 {
                         .aByteArray7154),
                 (class348_sub49
                         .anInt7197) - (is.length + 5));
-        for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > -65; i_9_++) {
-            if ((is_6_[i_9_ + 1] ^ 0xffffffff) != (is_8_[i_9_] ^ 0xffffffff))
+        for (int i_9_ = 0; i_9_ < 64; i_9_++) {
+            if (is_8_[i_9_] != is_6_[i_9_ + 1])
                 throw new RuntimeException();
         }
         aClass348_Sub49_4215 = class348_sub49;
@@ -139,7 +138,7 @@ final class Class340 {
             anInt4221++;
             if (aClass348_Sub49_4215 == null)
                 throw new RuntimeException();
-            if ((i_10_ ^ 0xffffffff) > -1
+            if (i_10_ < 0
                     || i_10_ >= aClass314_Sub1Array4216.length)
                 throw new RuntimeException();
             if (aClass314_Sub1Array4216[i_10_] != null)

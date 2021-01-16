@@ -35,13 +35,13 @@ final class Class330 {
         int i_4_ = var_r_Sub1.anInt10467;
         int i_5_ = var_r_Sub1.anInt10466;
         int i_6_ = -i_5_ + this.anInt4113;
-        if ((i_1_ ^ 0xffffffff) >= -1) {
+        if (i_1_ <= 0) {
             int i_7_ = 1 + -i_1_;
             i_4_ -= i_7_;
             i_3_ += this.anInt4113 * i_7_;
             i_1_ = 1;
         }
-        if ((i_4_ + i_1_ ^ 0xffffffff) <= (anInt4123 ^ 0xffffffff)) {
+        if (anInt4123 <= i_4_ + i_1_) {
             int i_8_ = -anInt4123 + (i_4_ + i_1_) - -1;
             i_4_ -= i_8_;
         }
@@ -57,7 +57,7 @@ final class Class330 {
             i_5_ -= i_10_;
             i_6_ += i_10_;
         }
-        if ((i_5_ ^ 0xffffffff) >= -1 || i_4_ <= 0)
+        if (i_5_ <= 0 || i_4_ <= 0)
             return false;
         int i_11_ = 8;
         i_6_ += (i_11_ + -1) * this.anInt4113;
@@ -84,7 +84,7 @@ final class Class330 {
             i_15_ += i_19_ * i_17_;
         }
         int i_20_ = 0;
-        if ((i_16_ + i ^ 0xffffffff) <= (anInt4123 ^ 0xffffffff)) {
+        if (anInt4123 <= i_16_ + i) {
             int i_21_ = -anInt4123 + i - -i_16_ + 1;
             i_16_ -= i_21_;
         }
@@ -97,14 +97,13 @@ final class Class330 {
             i_15_ += i_22_;
             i_17_ -= i_22_;
         }
-        if ((this.anInt4113 ^ 0xffffffff)
-                >= (i_13_ + i_17_ ^ 0xffffffff)) {
+        if (i_13_ + i_17_ >= this.anInt4113) {
             int i_23_ = 1 + i_17_ + (i_13_ - this.anInt4113);
             i_18_ += i_23_;
             i_17_ -= i_23_;
             i_20_ += i_23_;
         }
-        if (i_17_ > 0 && (i_16_ ^ 0xffffffff) < -1) {
+        if (i_17_ > 0 && i_16_ > 0) {
             Class348_Sub40_Sub37.method3146(i_18_, i_17_, (byte) -116, i_20_,
                     i_16_, i_14_,
                     this.aByteArray4112,
@@ -126,7 +125,7 @@ final class Class330 {
         float f = 1.0F / (float) (aHa_Sub3_4111.anInt8125 * i);
         if (bool) {
             for (int i_27_ = 0;
-                 (i_27_ ^ 0xffffffff) > (anInt4118 ^ 0xffffffff); i_27_++) {
+                 anInt4118 > i_27_; i_27_++) {
                 int i_28_ = i_27_ << anInt4124;
                 int i_29_ = 1 + i_27_ << anInt4124;
                 for (int i_30_ = 0; anInt4121 > i_30_; i_30_++) {
@@ -135,12 +134,10 @@ final class Class330 {
                         int i_32_ = i_30_ + 1 << anInt4124;
                         while_119_:
                         for (int i_33_ = i_31_; i_33_ < i_32_; i_33_++) {
-                            if ((-i_24_ ^ 0xffffffff) >= (-i_25_ + i_33_
-                                    ^ 0xffffffff)
+                            if (-i_25_ + i_33_ >= -i_24_
                                     && i_24_ >= -i_25_ + i_33_) {
                                 for (int i_34_ = i_28_;
-                                     ((i_34_ ^ 0xffffffff)
-                                             > (i_29_ ^ 0xffffffff));
+                                     (i_29_ > i_34_);
                                      i_34_++) {
                                     if (-i_24_ <= i_34_ + -i_26_
                                             && i_24_ >= -i_26_ + i_34_
@@ -185,17 +182,14 @@ final class Class330 {
                             int i_41_ = i_38_ + 1 << anInt4124;
                             for (int i_42_ = i_36_; i_42_ < i_37_; i_42_++) {
                                 if (-i_26_ + i_42_ >= -i_24_
-                                        && ((i_24_ ^ 0xffffffff)
-                                        <= (i_42_ - i_26_ ^ 0xffffffff))) {
+                                        && (i_42_ - i_26_ <= i_24_)) {
                                     int i_43_
                                             = (i_42_ * aS_Sub3_4116.anInt4587
                                             - -i_40_);
                                     for (int i_44_ = i_40_;
-                                         ((i_41_ ^ 0xffffffff)
-                                                 < (i_44_ ^ 0xffffffff));
+                                         (i_44_ < i_41_);
                                          i_44_++) {
-                                        if (((-i_24_ ^ 0xffffffff)
-                                                >= (-i_25_ + i_44_ ^ 0xffffffff))
+                                        if ((-i_25_ + i_44_ >= -i_24_)
                                                 && i_24_ >= i_44_ - i_25_
                                                 && (bools[i_24_ + (i_44_ + -i_25_)]
                                                 [i_24_ + -i_26_ + i_42_])) {
@@ -214,9 +208,7 @@ final class Class330 {
                                                     }
                                                 } else {
                                                     for (int i_46_ = 0;
-                                                         ((i_46_ ^ 0xffffffff)
-                                                                 > (is.length
-                                                                 ^ 0xffffffff));
+                                                         (is.length > i_46_);
                                                          i_46_++) {
                                                         stream.d(is[i_46_]
                                                                 & 0xffff);
@@ -306,8 +298,7 @@ final class Class330 {
             i_50_ = 1;
             i_55_ -= i_60_;
         }
-        if ((this.anInt4113 ^ 0xffffffff)
-                >= (i_55_ + i_50_ ^ 0xffffffff)) {
+        if (i_55_ + i_50_ >= this.anInt4113) {
             int i_61_ = 1 + (i_55_ + (i_50_ + -this.anInt4113));
             i_58_ += i_61_;
             i_55_ -= i_61_;
@@ -330,7 +321,7 @@ final class Class330 {
             int i_68_ = i + -1 >> -1757142265;
             int i_69_ = i_62_ + (-1 + (i - -i_64_)) >> -477227129;
             for (int i_70_ = i_66_;
-                 (i_70_ ^ 0xffffffff) >= (i_67_ ^ 0xffffffff); i_70_++) {
+                 i_67_ >= i_70_; i_70_++) {
                 Class97[] class97s = aClass97ArrayArray4122[i_70_];
                 for (int i_71_ = i_68_; i_69_ >= i_71_; i_71_++) {
                     if (class97s[i_71_] != null)

@@ -79,7 +79,7 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
         Class367_Sub11.anInt7403 = i_6_;
         anInt9598++;
         Class281.anInt3647 = i;
-        if ((Class239_Sub12.anInt5973 ^ 0xffffffff) <= -101) {
+        if (Class239_Sub12.anInt5973 >= 100) {
             int i_8_ = Class352.anInt4336 * 512 - -256;
             int i_9_ = Class281.anInt3647 * 512 - -256;
             int i_10_
@@ -96,10 +96,10 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
             Class5.anInt4638 = (int) (-2607.5945876176133
                     * Math.atan2(i_11_,
                     i_13_)) & 0x3fff;
-            if ((Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff) > -1025)
+            if (Class348_Sub42_Sub19.anInt9701 < 1024)
                 Class348_Sub42_Sub19.anInt9701 = 1024;
             Class338.anInt4186 = 0;
-            if ((Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff) < -3073)
+            if (Class348_Sub42_Sub19.anInt9701 > 3072)
                 Class348_Sub42_Sub19.anInt9701 = 3072;
         }
         Class348_Sub40_Sub21.anInt9282 = 2;

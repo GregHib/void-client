@@ -32,9 +32,9 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
             method2730(-48, 112, null, -45);
         anInt8811++;
         byte[] is_6_;
-        if ((i_4_ ^ 0xffffffff) < -1) {
+        if (i_4_ > 0) {
             is_6_ = new byte[i_5_];
-            for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > (i_5_ ^ 0xffffffff);
+            for (int i_7_ = 0; i_5_ > i_7_;
                  i_7_++)
                 is_6_[i_7_] = is[i_4_ + i_7_];
         } else

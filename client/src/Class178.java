@@ -87,7 +87,7 @@ final class Class178 {
                         } else if (class213.method1567(i_4_, -116, i_0_) != i)
                             continue;
                     }
-                    if ((i_6_ ^ 0xffffffff) <= -251) {
+                    if (i_6_ >= 250) {
                         Class192.aShortArray2579 = null;
                         Class76.anInt1285 = -1;
                         return;
@@ -106,7 +106,7 @@ final class Class178 {
             Class148.anInt2037 = 0;
             String[] strings = new String[Class76.anInt1285];
             for (int i_10_ = 0;
-                 (i_10_ ^ 0xffffffff) > (Class76.anInt1285 ^ 0xffffffff);
+                 Class76.anInt1285 > i_10_;
                  i_10_++)
                 strings[i_10_]
                         = Exception_Sub1.aClass255_112

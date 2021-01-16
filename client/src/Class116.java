@@ -27,18 +27,18 @@ final class Class116 {
             Class144 class144
                     = Class348_Sub23_Sub1.aClass297_8992.method2233((byte) -46,
                     "2", true);
-            while ((class144.anInt1997 ^ 0xffffffff) == -1)
+            while (class144.anInt1997 == 0)
                 Class286_Sub5.method2161((byte) 63, 1L);
-            if ((class144.anInt1997 ^ 0xffffffff) == -2) {
+            if (class144.anInt1997 == 1) {
                 class234 = (Class234) class144.anObject1998;
                 byte[] is = new byte[(int) class234.method1662((byte) -46)];
                 int i_0_;
                 for (int i_1_ = 0;
-                     (i_1_ ^ 0xffffffff) > (is.length ^ 0xffffffff);
+                     is.length > i_1_;
                      i_1_ += i_0_) {
                     i_0_ = class234.method1656(is, i_1_, (byte) -12,
                             is.length + -i_1_);
-                    if ((i_0_ ^ 0xffffffff) == 0)
+                    if (i_0_ == -1)
                         throw new IOException("EOF");
                 }
                 Class348_Sub31.method3014(new Class348_Sub49(is), (byte) -40);

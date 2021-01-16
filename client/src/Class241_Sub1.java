@@ -19,8 +19,7 @@ final class Class241_Sub1 extends Class241 {
     final int method1859(int i, long l) {
         if (i != 71)
             return 127;
-        if ((aLong6158 ^ 0xffffffffffffffffL)
-                > (aLong6154 ^ 0xffffffffffffffffL)) {
+        if (aLong6154 > aLong6158) {
             aLong6155 += aLong6154 - aLong6158;
             aLong6158 += -aLong6158 + aLong6154;
             aLong6154 += l;
@@ -30,9 +29,8 @@ final class Class241_Sub1 extends Class241 {
         do {
             i_0_++;
             aLong6154 += l;
-        } while ((i_0_ ^ 0xffffffff) > -11
-                && ((aLong6158 ^ 0xffffffffffffffffL)
-                < (aLong6154 ^ 0xffffffffffffffffL)));
+        } while (i_0_ < 10
+                && (aLong6154 < aLong6158));
         if (aLong6154 < aLong6158)
             aLong6154 = aLong6158;
         return i_0_;
@@ -42,8 +40,7 @@ final class Class241_Sub1 extends Class241 {
         if (i >= -60)
             anInt6156 = 64;
         aLong6158 += method1863(56);
-        if ((aLong6154 ^ 0xffffffffffffffffL)
-                < (aLong6158 ^ 0xffffffffffffffffL))
+        if (aLong6158 < aLong6154)
             return (aLong6154 - aLong6158) / 1000000L;
         return 0L;
     }
@@ -62,7 +59,7 @@ final class Class241_Sub1 extends Class241 {
         aLong6155 = l;
         if (l_1_ > -5000000000L && l_1_ < 5000000000L) {
             aLongArray6157[anInt6159] = l_1_;
-            if ((anInt6156 ^ 0xffffffff) > -11)
+            if (anInt6156 < 10)
                 anInt6156++;
             anInt6159 = (anInt6159 - -1) % 10;
         }

@@ -56,11 +56,11 @@ final class Class269 {
             for (int i_2_ = 0; i_2_ < 16; i_2_++) {
                 int i_3_ = 128 * (i_2_ * 128);
                 int i_4_ = i_3_;
-                for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > -129; i_5_++) {
+                for (int i_5_ = 0; i_5_ < 128; i_5_++) {
                     int i_6_ = 128 * i_5_ + i_4_;
                     int i_7_ = (0x7f & -1 + i_5_) * 128 + i_4_;
                     int i_8_ = i_4_ + 128 * (0x7f & 1 + i_5_);
-                    for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > -129; i_9_++) {
+                    for (int i_9_ = 0; i_9_ < 128; i_9_++) {
                         float f = (float) ((is[i_9_ + i_7_] & 0xff)
                                 - (is[i_9_ + i_8_] & 0xff));
                         float f_10_
@@ -121,7 +121,7 @@ final class Class269 {
                             true, 128);
                 }
                 anInterface18_Impl3Array3454 = new Interface18_Impl3[16];
-                for (int i = 0; (i ^ 0xffffffff) > -17; i++) {
+                for (int i = 0; i < 16; i++) {
                     byte[] is
                             = Class173.method1331((byte) 120,
                             Class227.anObject2969,

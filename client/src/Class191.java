@@ -24,7 +24,7 @@ final class Class191 {
         anInt2558++;
         if (anInt2559 != anInt2565)
             throw new RuntimeException("Can only retrieve a full image cache");
-        for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > (anInt2559 ^ 0xffffffff);
+        for (int i_0_ = 0; anInt2559 > i_0_;
              i_0_++)
             aClass348_Sub6Array2563[i_0_] = aa_Sub3.aClass348_Sub6_5206;
         if (i != 16)
@@ -120,7 +120,7 @@ final class Class191 {
     }
 
     final void method1432(byte i) {
-        for (int i_13_ = 0; (anInt2559 ^ 0xffffffff) < (i_13_ ^ 0xffffffff);
+        for (int i_13_ = 0; i_13_ < anInt2559;
              i_13_++)
             anIntArrayArray2564[i_13_] = null;
         anInt2556++;
@@ -146,7 +146,7 @@ final class Class191 {
             Class348_Sub6 class348_sub6 = aClass348_Sub6Array2563[i_14_];
             if (class348_sub6 == null) {
                 this.aBoolean2570 = true;
-                if ((anInt2559 ^ 0xffffffff) < (anInt2557 ^ 0xffffffff)) {
+                if (anInt2557 < anInt2559) {
                     class348_sub6 = new Class348_Sub6(i_14_, anInt2557);
                     anInt2557++;
                 } else {

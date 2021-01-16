@@ -24,7 +24,7 @@ abstract class Class346 {
         try {
             if (i != 16383)
                 return null;
-            for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > (fs.length ^ 0xffffffff);
+            for (int i_1_ = 0; fs.length > i_1_;
                  i_1_++) {
                 for (int i_2_ = 0; i_2_ < is[i_1_].length; i_2_++)
                     is[i_1_][i_2_] = (short) (int) (16383.0F * fs[i_1_][i_2_]);

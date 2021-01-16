@@ -26,7 +26,7 @@ final class Class150 {
             Class213 class213
                     = Exception_Sub1.aClass255_112.method1940(-104, i_1_);
             if (class213.anInt2815 >= 0
-                    || (class213.anInt2788 ^ 0xffffffff) <= -1)
+                    || class213.anInt2788 >= 0)
                 is[i_0_++] = i_1_;
         }
         Class25.anIntArray369 = new int[i_0_];
@@ -79,12 +79,11 @@ final class Class150 {
                 class348_sub49.method3377((byte) 120),
                 class348_sub49.method3385((byte) -126),
                 class348_sub49.method3385((byte) -126),
-                (class348_sub49.method3387(255)
-                        ^ 0xffffffff) == -2,
+                class348_sub49.method3387(255) == 1,
                 class348_sub49.method3387(255),
                 class348_sub49.method3387(255));
         int i_5_ = class348_sub49.method3387(255);
-        for (int i_6_ = 0; (i_5_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff); i_6_++)
+        for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
             class348_sub42_sub14.aClass262_9629
                     .method1999
                             (new Class348_Sub18(class348_sub49.method3387(255),

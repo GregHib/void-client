@@ -109,9 +109,9 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                          .method1990((byte) 101)) {
                 int i_14_ = (16 * (-1 + (Class73.anInt4776 - i_13_)) + 13
                         + (i_7_ + i_10_));
-                if ((anInt4717 - -i_4_ ^ 0xffffffff) > (i_11_ ^ 0xffffffff)
+                if (i_11_ > anInt4717 - -i_4_
                         && anInt4717 + i_4_ - -Class63.anInt1117 > i_11_
-                        && (i_14_ - 13 ^ 0xffffffff) > (i_12_ ^ 0xffffffff)
+                        && i_12_ > i_14_ - 13
                         && 4 + i_14_ > i_12_
                         && (class348_sub42_sub12
                         .aBoolean9610))
@@ -132,13 +132,12 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                          = ((Class348_Sub42_Sub13)
                          Class233.aClass107_3022.method1003((byte) 61))) {
                 int i_16_ = 16 * i_15_ + i_7_ - (-i_10_ + -13);
-                if ((i_11_ ^ 0xffffffff) < (i_4_ + anInt4717 ^ 0xffffffff)
+                if (i_4_ + anInt4717 < i_11_
                         && i_11_ < Class63.anInt1117 + (i_4_ + anInt4717)
-                        && (-13 + i_16_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff)
-                        && (i_12_ ^ 0xffffffff) > (i_16_ - -4 ^ 0xffffffff)
-                        && (((class348_sub42_sub13
-                        .anInt9615)
-                        ^ 0xffffffff) < -2
+                        && i_12_ > -13 + i_16_
+                        && i_16_ - -4 > i_12_
+                        && ((class348_sub42_sub13
+                        .anInt9615) > 1
                         || ((Class348_Sub42_Sub12) class348_sub42_sub13
                                 .aClass107_9621.aClass348_Sub42_1647
                                 .aClass348_Sub42_7063).aBoolean9610))
@@ -172,7 +171,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                     if (Class50_Sub3.anInt5252 < i_11_
                             && (Class50_Sub3.anInt5252
                             - -Class348_Sub1_Sub1.anInt8806) > i_11_
-                            && (i_12_ ^ 0xffffffff) < (-13 + i_17_ ^ 0xffffffff)
+                            && -13 + i_17_ < i_12_
                             && i_17_ - -4 > i_12_
                             && (class348_sub42_sub12
                             .aBoolean9610))

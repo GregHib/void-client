@@ -153,9 +153,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
                         return;
                 }
                 if (!aBoolean9028 || oggpacket.isKeyFrame() == 1) {
-                    if ((aDecoderContext9032.decodeFrame(aFrame9024)
-                            ^ 0xffffffff)
-                            != -1)
+                    if (aDecoderContext9032.decodeFrame(aFrame9024) != 0)
                         throw new IllegalStateException(String.valueOf(i_1_));
                     aBoolean9014 = true;
                 }

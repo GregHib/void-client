@@ -40,32 +40,32 @@ final class Class296 {
             int i_8_ = i;
             for (; ; ) {
                 byte i_9_ = is_3_[i_8_];
-                if ((i_9_ ^ 0xffffffff) <= -1)
+                if (i_9_ >= 0)
                     i_7_++;
                 else
                     i_7_ = anIntArray3774[i_7_];
                 int i_10_;
-                if (((i_10_ = anIntArray3774[i_7_]) ^ 0xffffffff) > -1) {
+                if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (i_10_ ^ 0xffffffff);
-                    if ((i_6_ ^ 0xffffffff) <= (i_4_ ^ 0xffffffff))
+                    if (i_4_ <= i_6_)
                         break;
                     i_7_ = 0;
                 }
-                if ((0x40 & i_9_ ^ 0xffffffff) != -1)
+                if ((0x40 & i_9_) != 0)
                     i_7_ = anIntArray3774[i_7_];
                 else
                     i_7_++;
-                if (((i_10_ = anIntArray3774[i_7_]) ^ 0xffffffff) > -1) {
+                if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (i_10_ ^ 0xffffffff);
                     if (i_6_ >= i_4_)
                         break;
                     i_7_ = 0;
                 }
-                if ((0x20 & i_9_ ^ 0xffffffff) == -1)
+                if ((0x20 & i_9_) == 0)
                     i_7_++;
                 else
                     i_7_ = anIntArray3774[i_7_];
-                if (((i_10_ = anIntArray3774[i_7_]) ^ 0xffffffff) > -1) {
+                if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (i_10_ ^ 0xffffffff);
                     if (i_6_ >= i_4_)
                         break;
@@ -75,13 +75,13 @@ final class Class296 {
                     i_7_++;
                 else
                     i_7_ = anIntArray3774[i_7_];
-                if (((i_10_ = anIntArray3774[i_7_]) ^ 0xffffffff) > -1) {
+                if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (i_10_ ^ 0xffffffff);
-                    if ((i_4_ ^ 0xffffffff) >= (i_6_ ^ 0xffffffff))
+                    if (i_6_ >= i_4_)
                         break;
                     i_7_ = 0;
                 }
-                if ((0x8 & i_9_ ^ 0xffffffff) == -1)
+                if ((0x8 & i_9_) == 0)
                     i_7_++;
                 else
                     i_7_ = anIntArray3774[i_7_];
@@ -91,7 +91,7 @@ final class Class296 {
                         break;
                     i_7_ = 0;
                 }
-                if ((i_9_ & 0x4 ^ 0xffffffff) != -1)
+                if ((i_9_ & 0x4) != 0)
                     i_7_ = anIntArray3774[i_7_];
                 else
                     i_7_++;
@@ -107,7 +107,7 @@ final class Class296 {
                     i_7_ = anIntArray3774[i_7_];
                 if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (i_10_ ^ 0xffffffff);
-                    if ((i_6_ ^ 0xffffffff) <= (i_4_ ^ 0xffffffff))
+                    if (i_4_ <= i_6_)
                         break;
                     i_7_ = 0;
                 }
@@ -115,7 +115,7 @@ final class Class296 {
                     i_7_ = anIntArray3774[i_7_];
                 else
                     i_7_++;
-                if (((i_10_ = anIntArray3774[i_7_]) ^ 0xffffffff) > -1) {
+                if ((i_10_ = anIntArray3774[i_7_]) < 0) {
                     is[i_6_++] = (byte) (i_10_ ^ 0xffffffff);
                     if (i_6_ >= i_4_)
                         break;
@@ -145,7 +145,7 @@ final class Class296 {
             int i_16_ = i_12_ << 12223459;
             if (i_13_ <= 14)
                 method2226(null, 61, null, 89, 122, 10);
-            for (/**/; (i_11_ ^ 0xffffffff) > (i ^ 0xffffffff); i_11_++) {
+            for (/**/; i > i_11_; i_11_++) {
                 int i_17_ = 0xff & is[i_11_];
                 int i_18_ = anIntArray3766[i_17_];
                 int i_19_ = aByteArray3769[i_17_];
@@ -161,11 +161,11 @@ final class Class296 {
                 is_14_[i_20_]
                         = (byte) (i_15_
                         = Class273.method2057(i_15_, i_18_ >>> i_21_));
-                if ((i_20_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff)) {
+                if (i_22_ > i_20_) {
                     i_20_++;
                     i_21_ -= 8;
                     is_14_[i_20_] = (byte) (i_15_ = i_18_ >>> i_21_);
-                    if ((i_22_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff)) {
+                    if (i_20_ < i_22_) {
                         i_20_++;
                         i_21_ -= 8;
                         is_14_[i_20_] = (byte) (i_15_ = i_18_ >>> i_21_);
@@ -211,14 +211,14 @@ final class Class296 {
         anIntArray3774 = new int[8];
         int[] is_23_ = new int[33];
         int i_24_ = 0;
-        for (int i_25_ = 0; (i ^ 0xffffffff) < (i_25_ ^ 0xffffffff); i_25_++) {
+        for (int i_25_ = 0; i_25_ < i; i_25_++) {
             int i_26_ = is[i_25_];
             if (i_26_ != 0) {
                 int i_27_ = 1 << 32 - i_26_;
                 int i_28_ = is_23_[i_26_];
                 anIntArray3766[i_25_] = i_28_;
                 int i_29_;
-                if ((i_27_ & i_28_ ^ 0xffffffff) != -1)
+                if ((i_27_ & i_28_) != 0)
                     i_29_ = is_23_[-1 + i_26_];
                 else {
                     for (int i_30_ = -1 + i_26_; i_30_ >= 1; i_30_--) {
@@ -226,7 +226,7 @@ final class Class296 {
                         if (i_31_ != i_28_)
                             break;
                         int i_32_ = 1 << 32 + -i_30_;
-                        if ((i_31_ & i_32_ ^ 0xffffffff) != -1) {
+                        if ((i_31_ & i_32_) != 0) {
                             is_23_[i_30_] = is_23_[i_30_ - 1];
                             break;
                         }
@@ -235,9 +235,9 @@ final class Class296 {
                     i_29_ = i_27_ | i_28_;
                 }
                 is_23_[i_26_] = i_29_;
-                for (int i_33_ = i_26_ + 1; (i_33_ ^ 0xffffffff) >= -33;
+                for (int i_33_ = i_26_ + 1; i_33_ <= 32;
                      i_33_++) {
-                    if ((is_23_[i_33_] ^ 0xffffffff) == (i_28_ ^ 0xffffffff))
+                    if (i_28_ == is_23_[i_33_])
                         is_23_[i_33_] = i_29_;
                 }
                 int i_34_ = 0;
@@ -251,8 +251,7 @@ final class Class296 {
                         i_34_ = anIntArray3774[i_34_];
                     }
                     i_36_ >>>= 1;
-                    if ((i_34_ ^ 0xffffffff)
-                            <= (anIntArray3774.length ^ 0xffffffff)) {
+                    if (anIntArray3774.length <= i_34_) {
                         int[] is_37_ = new int[anIntArray3774.length * 2];
                         for (int i_38_ = 0; anIntArray3774.length > i_38_;
                              i_38_++)
@@ -261,7 +260,7 @@ final class Class296 {
                     }
                 }
                 anIntArray3774[i_34_] = i_25_ ^ 0xffffffff;
-                if ((i_24_ ^ 0xffffffff) >= (i_34_ ^ 0xffffffff))
+                if (i_34_ >= i_24_)
                     i_24_ = 1 + i_34_;
             }
         }

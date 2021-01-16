@@ -35,8 +35,7 @@ final class Class362 {
                     int i_4_ = i_3_ + 4;
                     i_2_ += 2 * i_4_;
                     i_1_ += 2 * i_4_;
-                    if ((Class269.anInt3451 ^ 0xffffffff)
-                            < (i_2_ ^ 0xffffffff))
+                    if (i_2_ < Class269.anInt3451)
                         i_2_ = Class269.anInt3451;
                     if (i_1_ < Class289.anInt3704)
                         i_1_ = Class289.anInt3704;

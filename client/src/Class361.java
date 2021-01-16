@@ -53,99 +53,91 @@ final class Class361 {
                              int i_10_, int i_11_, int i_12_) {
         anInt4440++;
         int i_13_ = 64 % ((-11 - i_12_) / 37);
-        if ((i_7_ ^ 0xffffffff) == -2) {
-            if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff) && i_10_ == i_6_)
+        if (i_7_ == 1) {
+            if (i_9_ == i && i_10_ == i_6_)
                 return true;
-        } else if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
+        } else if (i >= i_9_
                 && -1 + i_9_ + i_7_ >= i
-                && (i_10_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff)
-                && (-1 + (i_7_ + i_10_) ^ 0xffffffff) <= (i_10_
-                ^ 0xffffffff))
+                && i_10_ >= i_10_
+                && i_10_ <= -1 + (i_7_ + i_10_))
             return true;
         i_10_ -= this.anInt4441;
         i_6_ -= this.anInt4441;
         i -= this.anInt4453;
         i_9_ -= this.anInt4453;
         if (i_7_ == 1) {
-            if ((i_11_ ^ 0xffffffff) == -1) {
-                if ((i_8_ ^ 0xffffffff) != -1) {
+            if (i_11_ == 0) {
+                if (i_8_ != 0) {
                     if (i_8_ == 1) {
                         if (i_9_ == i && i_10_ - -1 == i_6_)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) == (i + -1 ^ 0xffffffff)
+                        if (i + -1 == i_9_
                                 && i_10_ == i_6_
                                 && ((this.anIntArrayArray4438[i_9_]
                                 [i_6_])
                                 & 0x2c0108) == 0)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) == (i + 1 ^ 0xffffffff)
-                                && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
+                        if (i + 1 == i_9_
+                                && i_10_ == i_6_
                                 && (0x2c0180 & (this
-                                .anIntArrayArray4438[i_9_][i_6_])
-                                ^ 0xffffffff) == -1)
+                                .anIntArrayArray4438[i_9_][i_6_])) == 0)
                             return true;
                     } else if (i_8_ != 2) {
                         if (i_8_ == 3) {
-                            if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                                    && (i_6_ ^ 0xffffffff) == (-1 + i_10_
-                                    ^ 0xffffffff))
+                            if (i_9_ == i
+                                    && -1 + i_10_ == i_6_)
                                 return true;
-                            if ((i_9_ ^ 0xffffffff) == (i + -1 ^ 0xffffffff)
+                            if (i + -1 == i_9_
                                     && i_10_ == i_6_
                                     && ((this.anIntArrayArray4438
                                     [i_9_][i_6_])
                                     & 0x2c0108) == 0)
                                 return true;
-                            if ((1 + i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                                    && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
+                            if (i_9_ == 1 + i
+                                    && i_10_ == i_6_
                                     && ((this.anIntArrayArray4438
                                     [i_9_][i_6_])
                                     & 0x2c0180) == 0)
                                 return true;
                         }
                     } else {
-                        if ((i_9_ ^ 0xffffffff) == (i + 1 ^ 0xffffffff)
-                                && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff))
+                        if (i + 1 == i_9_
+                                && i_10_ == i_6_)
                             return true;
-                        if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                                && (i_6_ ^ 0xffffffff) == (1 + i_10_ ^ 0xffffffff)
+                        if (i_9_ == i
+                                && 1 + i_10_ == i_6_
                                 && ((this.anIntArrayArray4438[i_9_]
                                 [i_6_])
                                 & 0x2c0120) == 0)
                             return true;
-                        if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                                && (i_6_ ^ 0xffffffff) == (i_10_ + -1 ^ 0xffffffff)
+                        if (i_9_ == i
+                                && i_10_ + -1 == i_6_
                                 && (0x2c0102 & (this
-                                .anIntArrayArray4438[i_9_][i_6_])
-                                ^ 0xffffffff) == -1)
+                                .anIntArrayArray4438[i_9_][i_6_])) == 0)
                             return true;
                     }
                 } else {
-                    if ((-1 + i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
+                    if (i_9_ == -1 + i
                             && i_6_ == i_10_)
                         return true;
                     if (i == i_9_ && i_10_ - -1 == i_6_
                             && (0x2c0120 & (this.anIntArrayArray4438
-                            [i_9_][i_6_])
-                            ^ 0xffffffff) == -1)
+                            [i_9_][i_6_])) == 0)
                         return true;
-                    if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
+                    if (i == i_9_
                             && i_6_ == -1 + i_10_
                             && (0x2c0102 & (this.anIntArrayArray4438
-                            [i_9_][i_6_])
-                            ^ 0xffffffff) == -1)
+                            [i_9_][i_6_])) == 0)
                         return true;
                 }
             }
             if (i_11_ == 2) {
-                if ((i_8_ ^ 0xffffffff) != -1) {
-                    if ((i_8_ ^ 0xffffffff) != -2) {
-                        if ((i_8_ ^ 0xffffffff) != -3) {
-                            if ((i_8_ ^ 0xffffffff) == -4) {
-                                if ((i_9_ ^ 0xffffffff) == (i + -1
-                                        ^ 0xffffffff)
-                                        && (i_10_ ^ 0xffffffff) == (i_6_
-                                        ^ 0xffffffff))
+                if (i_8_ != 0) {
+                    if (i_8_ != 1) {
+                        if (i_8_ != 2) {
+                            if (i_8_ == 3) {
+                                if (i + -1 == i_9_
+                                        && i_6_ == i_10_)
                                     return true;
                                 if (i_9_ == i && 1 + i_10_ == i_6_
                                         && (0x2c0120 & (this
@@ -157,9 +149,8 @@ final class Class361 {
                                         [i_9_][i_6_])
                                         & 0x2c0180) == 0)
                                     return true;
-                                if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
-                                        && ((i_10_ + -1 ^ 0xffffffff)
-                                        == (i_6_ ^ 0xffffffff)))
+                                if (i == i_9_
+                                        && (i_6_ == i_10_ + -1))
                                     return true;
                             }
                         } else {
@@ -168,60 +159,57 @@ final class Class361 {
                                     & (this.anIntArrayArray4438
                                     [i_9_][i_6_])) == 0)
                                 return true;
-                            if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
+                            if (i_9_ == i
                                     && i_10_ + 1 == i_6_
                                     && (0x2c0120 & (this
                                     .anIntArrayArray4438[i_9_]
-                                    [i_6_])
-                                    ^ 0xffffffff) == -1)
+                                    [i_6_])) == 0)
                                 return true;
                             if (i_9_ == i + 1 && i_10_ == i_6_)
                                 return true;
-                            if ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
+                            if (i_9_ == i
                                     && -1 + i_10_ == i_6_)
                                 return true;
                         }
                     } else {
-                        if ((-1 + i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                                && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
+                        if (i_9_ == -1 + i
+                                && i_10_ == i_6_
                                 && (0x2c0108 & (this
-                                .anIntArrayArray4438[i_9_][i_6_])
-                                ^ 0xffffffff) == -1)
+                                .anIntArrayArray4438[i_9_][i_6_])) == 0)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
+                        if (i == i_9_
                                 && i_10_ + 1 == i_6_)
                             return true;
                         if (i_9_ == i - -1
-                                && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff))
+                                && i_10_ == i_6_)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
+                        if (i == i_9_
                                 && i_10_ - 1 == i_6_
                                 && ((this.anIntArrayArray4438[i_9_]
-                                [i_6_]) & 0x2c0102
-                                ^ 0xffffffff) == -1)
+                                [i_6_]) & 0x2c0102) == 0)
                             return true;
                     }
                 } else {
-                    if ((i_9_ ^ 0xffffffff) == (-1 + i ^ 0xffffffff)
-                            && (i_10_ ^ 0xffffffff) == (i_6_ ^ 0xffffffff))
+                    if (-1 + i == i_9_
+                            && i_6_ == i_10_)
                         return true;
                     if (i == i_9_ && i_6_ == i_10_ - -1)
                         return true;
-                    if ((i_9_ ^ 0xffffffff) == (i + 1 ^ 0xffffffff)
-                            && (i_6_ ^ 0xffffffff) == (i_10_ ^ 0xffffffff)
+                    if (i + 1 == i_9_
+                            && i_10_ == i_6_
                             && (0x2c0180 & (this.anIntArrayArray4438
                             [i_9_][i_6_])) == 0)
                         return true;
-                    if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff)
-                            && (i_10_ - 1 ^ 0xffffffff) == (i_6_ ^ 0xffffffff)
+                    if (i == i_9_
+                            && i_6_ == i_10_ - 1
                             && (0x2c0102 & (this.anIntArrayArray4438
                             [i_9_][i_6_])) == 0)
                         return true;
                 }
             }
-            if ((i_11_ ^ 0xffffffff) == -10) {
+            if (i_11_ == 9) {
                 if (i_9_ == i
-                        && (1 + i_10_ ^ 0xffffffff) == (i_6_ ^ 0xffffffff)
+                        && i_6_ == 1 + i_10_
                         && ((0x20
                         & this.anIntArrayArray4438[i_9_][i_6_])
                         == 0))
@@ -231,8 +219,8 @@ final class Class361 {
                         & this.anIntArrayArray4438[i_9_][i_6_])
                         == 0))
                     return true;
-                if ((i_9_ ^ 0xffffffff) == (-1 + i ^ 0xffffffff)
-                        && (i_10_ ^ 0xffffffff) == (i_6_ ^ 0xffffffff)
+                if (-1 + i == i_9_
+                        && i_6_ == i_10_
                         && ((0x8
                         & this.anIntArrayArray4438[i_9_][i_6_])
                         == 0))
@@ -245,193 +233,178 @@ final class Class361 {
             int i_14_ = -1 + (i_7_ + i_9_);
             int i_15_ = -1 + i_7_ + i_6_;
             if (i_11_ == 0) {
-                if ((i_8_ ^ 0xffffffff) != -1) {
-                    if ((i_8_ ^ 0xffffffff) == -2) {
-                        if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
+                if (i_8_ != 0) {
+                    if (i_8_ == 1) {
+                        if (i >= i_9_
                                 && i <= i_14_
-                                && (i_6_ ^ 0xffffffff) == (i_10_ - -1
-                                ^ 0xffffffff))
+                                && i_10_ - -1 == i_6_)
                             return true;
                         if (i + -i_7_ == i_9_ && i_6_ <= i_10_
-                                && (i_10_ ^ 0xffffffff) >= (i_15_ ^ 0xffffffff)
+                                && i_15_ >= i_10_
                                 && (0x2c0108
                                 & (this.anIntArrayArray4438[i_14_]
                                 [i_10_])) == 0)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) == (1 + i ^ 0xffffffff)
-                                && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
-                                && (i_10_ ^ 0xffffffff) >= (i_15_ ^ 0xffffffff)
+                        if (1 + i == i_9_
+                                && i_6_ <= i_10_
+                                && i_15_ >= i_10_
                                 && (0x2c0180 & (this
-                                .anIntArrayArray4438[i_9_][i_10_])
-                                ^ 0xffffffff) == -1)
+                                .anIntArrayArray4438[i_9_][i_10_])) == 0)
                             return true;
-                    } else if ((i_8_ ^ 0xffffffff) != -3) {
+                    } else if (i_8_ != 2) {
                         if (i_8_ == 3) {
-                            if ((i ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)
-                                    && (i ^ 0xffffffff) >= (i_14_ ^ 0xffffffff)
+                            if (i_9_ <= i
+                                    && i_14_ >= i
                                     && i_10_ + -i_7_ == i_6_)
                                 return true;
-                            if ((i_9_ ^ 0xffffffff) == (i - i_7_ ^ 0xffffffff)
+                            if (i - i_7_ == i_9_
                                     && i_10_ >= i_6_ && i_10_ <= i_15_
                                     && ((this.anIntArrayArray4438
-                                    [i_14_][i_10_]) & 0x2c0108
-                                    ^ 0xffffffff) == -1)
+                                    [i_14_][i_10_]) & 0x2c0108) == 0)
                                 return true;
                             if (i_9_ == 1 + i
-                                    && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
-                                    && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
+                                    && i_6_ <= i_10_
+                                    && i_10_ <= i_15_
                                     && (0x2c0180 & (this
                                     .anIntArrayArray4438[i_9_]
-                                    [i_10_])
-                                    ^ 0xffffffff) == -1)
+                                    [i_10_])) == 0)
                                 return true;
                         }
                     } else {
                         if (i_9_ == 1 + i
-                                && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
-                                && (i_10_ ^ 0xffffffff) >= (i_15_ ^ 0xffffffff))
+                                && i_6_ <= i_10_
+                                && i_15_ >= i_10_)
                             return true;
                         if (i >= i_9_
-                                && (i_14_ ^ 0xffffffff) <= (i ^ 0xffffffff)
-                                && (i_6_ ^ 0xffffffff) == (i_10_ - -1 ^ 0xffffffff)
+                                && i <= i_14_
+                                && i_10_ - -1 == i_6_
                                 && (this.anIntArrayArray4438[i][i_6_]
                                 & 0x2c0120) == 0)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
+                        if (i >= i_9_
                                 && i_14_ >= i
-                                && (i_6_ ^ 0xffffffff) == (-i_7_ + i_10_
-                                ^ 0xffffffff)
+                                && -i_7_ + i_10_ == i_6_
                                 && ((this.anIntArrayArray4438[i]
-                                [i_15_]) & 0x2c0102
-                                ^ 0xffffffff) == -1)
+                                [i_15_]) & 0x2c0102) == 0)
                             return true;
                     }
                 } else {
                     if (-i_7_ + i == i_9_
-                            && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
-                            && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff))
+                            && i_6_ <= i_10_
+                            && i_10_ <= i_15_)
                         return true;
-                    if ((i ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)
-                            && (i_14_ ^ 0xffffffff) <= (i ^ 0xffffffff)
+                    if (i_9_ <= i
+                            && i <= i_14_
                             && i_10_ + 1 == i_6_
-                            && ((this.anIntArrayArray4438[i][i_6_]
-                            & 0x2c0120)
-                            ^ 0xffffffff) == -1)
+                            && (this.anIntArrayArray4438[i][i_6_]
+                            & 0x2c0120) == 0)
                         return true;
-                    if ((i ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)
-                            && (i ^ 0xffffffff) >= (i_14_ ^ 0xffffffff)
+                    if (i_9_ <= i
+                            && i_14_ >= i
                             && i_6_ == -i_7_ + i_10_
-                            && ((this.anIntArrayArray4438[i][i_15_]
-                            & 0x2c0102)
-                            ^ 0xffffffff) == -1)
+                            && (this.anIntArrayArray4438[i][i_15_]
+                            & 0x2c0102) == 0)
                         return true;
                 }
             }
-            if ((i_11_ ^ 0xffffffff) == -3) {
+            if (i_11_ == 2) {
                 if (i_8_ == 0) {
-                    if ((i_9_ ^ 0xffffffff) == (i - i_7_ ^ 0xffffffff)
-                            && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
-                            && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff))
+                    if (i - i_7_ == i_9_
+                            && i_6_ <= i_10_
+                            && i_10_ <= i_15_)
                         return true;
-                    if ((i ^ 0xffffffff) <= (i_9_ ^ 0xffffffff) && i <= i_14_
-                            && (1 + i_10_ ^ 0xffffffff) == (i_6_ ^ 0xffffffff))
+                    if (i_9_ <= i && i <= i_14_
+                            && i_6_ == 1 + i_10_)
                         return true;
-                    if ((i + 1 ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                            && (i_6_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff)
-                            && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
+                    if (i_9_ == i + 1
+                            && i_10_ >= i_6_
+                            && i_10_ <= i_15_
                             && (0x2c0180 & (this.anIntArrayArray4438
-                            [i_9_][i_10_])
-                            ^ 0xffffffff) == -1)
+                            [i_9_][i_10_])) == 0)
                         return true;
-                    if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff) && i <= i_14_
+                    if (i >= i_9_ && i <= i_14_
                             && -i_7_ + i_10_ == i_6_
-                            && ((this.anIntArrayArray4438[i][i_15_]
-                            & 0x2c0102)
-                            ^ 0xffffffff) == -1)
+                            && (this.anIntArrayArray4438[i][i_15_]
+                            & 0x2c0102) == 0)
                         return true;
                 } else if (i_8_ != 1) {
                     if (i_8_ == 2) {
                         if (i_9_ == i - i_7_ && i_6_ <= i_10_
-                                && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
+                                && i_10_ <= i_15_
                                 && (0x2c0108 & (this
-                                .anIntArrayArray4438[i_14_][i_10_])
-                                ^ 0xffffffff) == -1)
+                                .anIntArrayArray4438[i_14_][i_10_])) == 0)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
+                        if (i >= i_9_
                                 && i_14_ >= i && 1 + i_10_ == i_6_
                                 && (this.anIntArrayArray4438[i][i_6_]
                                 & 0x2c0120) == 0)
                             return true;
                         if (i - -1 == i_9_
-                                && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
+                                && i_6_ <= i_10_
                                 && i_15_ >= i_10_)
                             return true;
                         if (i >= i_9_ && i <= i_14_ && -i_7_ + i_10_ == i_6_)
                             return true;
-                    } else if ((i_8_ ^ 0xffffffff) == -4) {
-                        if ((i + -i_7_ ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
+                    } else if (i_8_ == 3) {
+                        if (i_9_ == i + -i_7_
                                 && i_6_ <= i_10_
-                                && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff))
+                                && i_10_ <= i_15_)
                             return true;
-                        if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff)
-                                && (i ^ 0xffffffff) >= (i_14_ ^ 0xffffffff)
+                        if (i >= i_9_
+                                && i_14_ >= i
                                 && i_6_ == i_10_ + 1
                                 && (this.anIntArrayArray4438[i][i_6_]
                                 & 0x2c0120) == 0)
                             return true;
-                        if ((i + 1 ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
+                        if (i_9_ == i + 1
                                 && i_10_ >= i_6_ && i_10_ <= i_15_
                                 && ((this.anIntArrayArray4438[i_9_]
                                 [i_10_])
                                 & 0x2c0180) == 0)
                             return true;
                         if (i >= i_9_ && i <= i_14_
-                                && (i_10_ + -i_7_ ^ 0xffffffff) == (i_6_
-                                ^ 0xffffffff))
+                                && i_6_ == i_10_ + -i_7_)
                             return true;
                     }
                 } else {
-                    if ((-i_7_ + i ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                            && (i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)
+                    if (i_9_ == -i_7_ + i
+                            && i_6_ <= i_10_
                             && i_15_ >= i_10_
                             && (0x2c0108 & (this.anIntArrayArray4438
-                            [i_14_][i_10_])
-                            ^ 0xffffffff) == -1)
+                            [i_14_][i_10_])) == 0)
                         return true;
                     if (i >= i_9_ && i <= i_14_ && i_6_ == i_10_ + 1)
                         return true;
-                    if ((i_9_ ^ 0xffffffff) == (1 + i ^ 0xffffffff)
+                    if (1 + i == i_9_
                             && i_10_ >= i_6_
-                            && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff))
+                            && i_10_ <= i_15_)
                         return true;
                     if (i_9_ <= i && i <= i_14_ && -i_7_ + i_10_ == i_6_
-                            && ((this.anIntArrayArray4438[i][i_15_]
-                            & 0x2c0102)
-                            ^ 0xffffffff) == -1)
+                            && (this.anIntArrayArray4438[i][i_15_]
+                            & 0x2c0102) == 0)
                         return true;
                 }
             }
-            if ((i_11_ ^ 0xffffffff) == -10) {
-                if ((i_9_ ^ 0xffffffff) >= (i ^ 0xffffffff) && i <= i_14_
+            if (i_11_ == 9) {
+                if (i >= i_9_ && i <= i_14_
                         && i_10_ - -1 == i_6_
                         && (this.anIntArrayArray4438[i][i_6_]
                         & 0x2c0120) == 0)
                     return true;
                 if (i_9_ <= i && i_14_ >= i
-                        && (i_6_ ^ 0xffffffff) == (i_10_ + -i_7_ ^ 0xffffffff)
+                        && i_10_ + -i_7_ == i_6_
                         && (this.anIntArrayArray4438[i][i_15_]
                         & 0x2c0102) == 0)
                     return true;
                 if (-i_7_ + i == i_9_
-                        && (i_6_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff)
+                        && i_10_ >= i_6_
                         && i_10_ <= i_15_
-                        && ((0x2c0108
-                        & this.anIntArrayArray4438[i_14_][i_10_])
-                        ^ 0xffffffff) == -1)
+                        && (0x2c0108
+                        & this.anIntArrayArray4438[i_14_][i_10_]) == 0)
                     return true;
-                return (i - -1 ^ 0xffffffff) == (i_9_ ^ 0xffffffff)
-                        && (i_6_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff)
-                        && (i_15_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff)
+                return i_9_ == i - -1
+                        && i_10_ >= i_6_
+                        && i_10_ <= i_15_
                         && ((0x2c0180
                         & this.anIntArrayArray4438[i_9_][i_10_])
                         == 0);
@@ -462,12 +435,12 @@ final class Class361 {
         int i_28_ = i_23_ + i_24_;
         int i_29_ = i_18_ - -i_26_;
         int i_30_ = i_25_ - -i_21_;
-        if ((i_22_ ^ 0xffffffff) == (i_29_ ^ 0xffffffff)
+        if (i_29_ == i_22_
                 && (i_19_ & 0x2) == 0) {
             int i_31_ = i_25_ < i_24_ ? i_24_ : i_25_;
-            for (int i_32_ = ((i_30_ ^ 0xffffffff) < (i_28_ ^ 0xffffffff)
+            for (int i_32_ = (i_28_ < i_30_
                     ? i_28_ : i_30_);
-                 (i_31_ ^ 0xffffffff) > (i_32_ ^ 0xffffffff); i_31_++) {
+                 i_32_ > i_31_; i_31_++) {
                 if (((this.anIntArrayArray4438
                         [-this.anInt4453 + (i_29_ - 1)]
                         [i_31_ - this.anInt4441])
@@ -475,12 +448,12 @@ final class Class361 {
                         == 0)
                     return true;
             }
-        } else if ((i_27_ ^ 0xffffffff) == (i_18_ ^ 0xffffffff)
+        } else if (i_18_ == i_27_
                 && (0x8 & i_19_) == 0) {
             int i_33_ = i_25_ >= i_24_ ? i_25_ : i_24_;
-            for (int i_34_ = ((i_28_ ^ 0xffffffff) <= (i_30_ ^ 0xffffffff)
+            for (int i_34_ = (i_30_ <= i_28_
                     ? i_30_ : i_28_);
-                 (i_34_ ^ 0xffffffff) < (i_33_ ^ 0xffffffff); i_33_++) {
+                 i_33_ < i_34_; i_33_++) {
                 if (((this.anIntArrayArray4438
                         [-this.anInt4453 + i_18_]
                         [-this.anInt4441 + i_33_])
@@ -490,27 +463,23 @@ final class Class361 {
             }
         } else if (i_30_ == i_24_ && (i_19_ & 0x1) == 0) {
             int i_35_
-                    = (i_22_ ^ 0xffffffff) < (i_18_ ^ 0xffffffff) ? i_22_ : i_18_;
+                    = i_18_ < i_22_ ? i_22_ : i_18_;
             for (int i_36_ = i_27_ < i_29_ ? i_27_ : i_29_; i_36_ > i_35_;
                  i_35_++) {
                 if ((0x2 & (this.anIntArrayArray4438
                         [i_35_ + -this.anInt4453]
-                        [-this.anInt4441 + -1 + i_30_])
-                        ^ 0xffffffff)
-                        == -1)
+                        [-this.anInt4441 + -1 + i_30_])) == 0)
                     return true;
             }
-        } else if ((i_28_ ^ 0xffffffff) == (i_25_ ^ 0xffffffff)
+        } else if (i_25_ == i_28_
                 && (i_19_ & 0x4) == 0) {
             int i_37_
-                    = (i_18_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff) ? i_22_ : i_18_;
+                    = i_22_ > i_18_ ? i_22_ : i_18_;
             for (int i_38_ = i_27_ < i_29_ ? i_27_ : i_29_; i_38_ > i_37_;
                  i_37_++) {
                 if (((this.anIntArrayArray4438
                         [i_37_ + -this.anInt4453]
-                        [i_25_ - this.anInt4441]) & 0x20
-                        ^ 0xffffffff)
-                        == -1)
+                        [i_25_ - this.anInt4441]) & 0x20) == 0)
                     return true;
             }
         }
@@ -538,9 +507,7 @@ final class Class361 {
                     i_39_ += (i_40_ + -i_42_) / 2;
                     if (Class67.aClass105_4643 == null
                             || i_40_ != Class67.aClass105_4643.method971()
-                            || ((i ^ 0xffffffff)
-                            != (Class67.aClass105_4643.method969()
-                            ^ 0xffffffff))) {
+                            || (Class67.aClass105_4643.method969() != i)) {
                         Class75.method751(Class75.anInt1266,
                                 (Class75.anInt1267
                                         + Class75.anInt1263),
@@ -608,10 +575,8 @@ final class Class361 {
                                         -2 + i_51_, 4,
                                         (i_49_ << -96926312
                                                 | 0xffff00));
-                            } else if ((Class34.anInt481 ^ 0xffffffff) != 0
-                                    && ((Class34.anInt481 ^ 0xffffffff)
-                                    == (class42.anInt596
-                                    ^ 0xffffffff))) {
+                            } else if (Class34.anInt481 != -1
+                                    && (class42.anInt596 == Class34.anInt481)) {
                                 int i_52_
                                         = (i_39_
                                         - -((class348_sub21
@@ -659,13 +624,12 @@ final class Class361 {
         if (i != 700)
             method3509(120, true, false, 4, -12, 14, -33, -109);
         for (/**/;
-                 (this.anInt4437 ^ 0xffffffff) < (i_56_ ^ 0xffffffff);
+                 i_56_ < this.anInt4437;
                  i_56_++) {
             for (int i_57_ = 0; this.anInt4443 > i_57_; i_57_++) {
-                if (i_56_ != 0 && (i_57_ ^ 0xffffffff) != -1
+                if (i_56_ != 0 && i_57_ != 0
                         && i_56_ < this.anInt4437 + -5
-                        && ((-5 + this.anInt4443 ^ 0xffffffff)
-                        < (i_57_ ^ 0xffffffff)))
+                        && (i_57_ < -5 + this.anInt4443))
                     this.anIntArrayArray4438[i_56_][i_57_]
                             = 2097152;
                 else
@@ -712,22 +676,20 @@ final class Class361 {
         int i_73_ = -1 + i_68_ + i_71_;
         int i_74_ = i_65_ - (-i_67_ + 1);
         if (i >= i_71_ && i_73_ >= i
-                && (i_70_ ^ 0xffffffff) <= (i_65_ ^ 0xffffffff) && i_70_ <= i_74_)
+                && i_65_ <= i_70_ && i_70_ <= i_74_)
             return true;
-        if ((i ^ 0xffffffff) == (-1 + i_71_ ^ 0xffffffff)
-                && (i_65_ ^ 0xffffffff) >= (i_70_ ^ 0xffffffff) && i_70_ <= i_74_
+        if (-1 + i_71_ == i
+                && i_70_ >= i_65_ && i_70_ <= i_74_
                 && ((this.anIntArrayArray4438
                 [-this.anInt4453 + i]
-                [-this.anInt4441 + i_70_]) & 0x8
-                ^ 0xffffffff) == -1
+                [-this.anInt4441 + i_70_]) & 0x8) == 0
                 && (i_69_ & 0x8) == 0)
             return true;
-        if (1 + i_73_ == i && (i_65_ ^ 0xffffffff) >= (i_70_ ^ 0xffffffff)
-                && (i_70_ ^ 0xffffffff) >= (i_74_ ^ 0xffffffff)
+        if (1 + i_73_ == i && i_70_ >= i_65_
+                && i_74_ >= i_70_
                 && (0x80 & (this.anIntArrayArray4438
                 [-this.anInt4453 + i]
-                [i_70_ - this.anInt4441])
-                ^ 0xffffffff) == -1
+                [i_70_ - this.anInt4441])) == 0
                 && (0x2 & i_69_) == 0)
             return true;
         if (-1 + i_65_ == i_70_ && i >= i_71_ && i_73_ >= i
@@ -737,12 +699,12 @@ final class Class361 {
                 & 0x2) == 0
                 && (i_69_ & 0x4) == 0)
             return true;
-        return i_70_ == i_74_ - -1 && (i ^ 0xffffffff) <= (i_71_ ^ 0xffffffff)
-                && (i ^ 0xffffffff) >= (i_73_ ^ 0xffffffff)
+        return i_70_ == i_74_ - -1 && i_71_ <= i
+                && i_73_ >= i
                 && (0x20 & (this.anIntArrayArray4438
                 [-this.anInt4453 + i]
                 [i_70_ - this.anInt4441])) == 0
-                && (0x1 & i_69_ ^ 0xffffffff) == -1;
+                && (0x1 & i_69_) == 0;
     }
 
     final boolean method3504(int i, int i_75_, int i_76_, int i_77_, int i_78_,
@@ -750,64 +712,56 @@ final class Class361 {
         anInt4454++;
         if (i_79_ != 1)
             this.anInt4443 = -59;
-        if ((i_81_ ^ 0xffffffff) != -2) {
+        if (i_81_ != 1) {
             if (i_77_ <= i_76_
-                    && (i_76_ ^ 0xffffffff) >= (-1 + i_81_ + i_77_ ^ 0xffffffff)
-                    && i <= i && (i ^ 0xffffffff) >= (i_81_ + i - 1 ^ 0xffffffff))
+                    && -1 + i_81_ + i_77_ >= i_76_
+                    && i <= i && i_81_ + i - 1 >= i)
                 return true;
-        } else if (i_77_ == i_76_ && (i ^ 0xffffffff) == (i_75_ ^ 0xffffffff))
+        } else if (i_77_ == i_76_ && i_75_ == i)
             return true;
         i_76_ -= this.anInt4453;
         i_77_ -= this.anInt4453;
         i -= this.anInt4441;
         i_75_ -= this.anInt4441;
-        if ((i_81_ ^ 0xffffffff) != -2) {
+        if (i_81_ != 1) {
             int i_82_ = -1 + (i_81_ + i_77_);
             int i_83_ = i_75_ - (-i_81_ - -1);
-            if ((i_78_ ^ 0xffffffff) == -7 || (i_78_ ^ 0xffffffff) == -8) {
+            if (i_78_ == 6 || i_78_ == 7) {
                 if (i_78_ == 7)
                     i_80_ = 0x3 & 2 + i_80_;
-                if ((i_80_ ^ 0xffffffff) != -1) {
+                if (i_80_ != 0) {
                     if (i_80_ != 1) {
                         if (i_80_ != 2) {
-                            if ((i_80_ ^ 0xffffffff) == -4) {
-                                if ((i_76_ - -1 ^ 0xffffffff) == (i_77_
-                                        ^ 0xffffffff)
-                                        && (i ^ 0xffffffff) <= (i_75_ ^ 0xffffffff)
+                            if (i_80_ == 3) {
+                                if (i_77_ == i_76_ - -1
+                                        && i_75_ <= i
                                         && i <= i_83_
                                         && (0x80 & (this
-                                        .anIntArrayArray4438[i_77_][i])
-                                        ^ 0xffffffff) == -1)
+                                        .anIntArrayArray4438[i_77_][i])) == 0)
                                     return true;
-                                if ((i_77_ ^ 0xffffffff) >= (i_76_
-                                        ^ 0xffffffff)
+                                if (i_76_ >= i_77_
                                         && i_82_ >= i_76_
-                                        && (i_75_ ^ 0xffffffff) == (i - -1
-                                        ^ 0xffffffff)
+                                        && i - -1 == i_75_
                                         && ((this.anIntArrayArray4438
-                                        [i_76_][i_75_]) & 0x20
-                                        ^ 0xffffffff) == -1)
+                                        [i_76_][i_75_]) & 0x20) == 0)
                                     return true;
                             }
                         } else {
                             if (-i_81_ + i_76_ == i_77_ && i >= i_75_
                                     && i_83_ >= i
                                     && ((this.anIntArrayArray4438
-                                    [i_82_][i]) & 0x8
-                                    ^ 0xffffffff) == -1)
+                                    [i_82_][i]) & 0x8) == 0)
                                 return true;
-                            if ((i_77_ ^ 0xffffffff) >= (i_76_ ^ 0xffffffff)
+                            if (i_76_ >= i_77_
                                     && i_76_ <= i_82_ && 1 + i == i_75_
                                     && ((this.anIntArrayArray4438
-                                    [i_76_][i_75_]) & 0x20
-                                    ^ 0xffffffff) == -1)
+                                    [i_76_][i_75_]) & 0x20) == 0)
                                 return true;
                         }
                     } else {
-                        if ((i_76_ + -i_81_ ^ 0xffffffff) == (i_77_
-                                ^ 0xffffffff)
-                                && (i_75_ ^ 0xffffffff) >= (i ^ 0xffffffff)
-                                && (i_83_ ^ 0xffffffff) <= (i ^ 0xffffffff)
+                        if (i_77_ == i_76_ + -i_81_
+                                && i >= i_75_
+                                && i <= i_83_
                                 && (this.anIntArrayArray4438[i_82_][i]
                                 & 0x8) == 0)
                             return true;
@@ -819,104 +773,97 @@ final class Class361 {
                             return true;
                     }
                 } else {
-                    if ((1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
+                    if (i_77_ == 1 + i_76_
                             && i_75_ <= i
-                            && (i_83_ ^ 0xffffffff) <= (i ^ 0xffffffff)
+                            && i <= i_83_
                             && ((0x80
                             & this.anIntArrayArray4438[i_77_][i])
                             == 0))
                         return true;
-                    if ((i_77_ ^ 0xffffffff) >= (i_76_ ^ 0xffffffff)
+                    if (i_76_ >= i_77_
                             && i_76_ <= i_82_
-                            && (i_75_ ^ 0xffffffff) == (-i_81_ + i ^ 0xffffffff)
+                            && -i_81_ + i == i_75_
                             && ((this.anIntArrayArray4438[i_76_]
-                            [i_83_]) & 0x2
-                            ^ 0xffffffff) == -1)
+                            [i_83_]) & 0x2) == 0)
                         return true;
                 }
             }
-            if ((i_78_ ^ 0xffffffff) == -9) {
-                if ((i_77_ ^ 0xffffffff) >= (i_76_ ^ 0xffffffff)
+            if (i_78_ == 8) {
+                if (i_76_ >= i_77_
                         && i_82_ >= i_76_ && 1 + i == i_75_
-                        && ((0x20
-                        & this.anIntArrayArray4438[i_76_][i_75_])
-                        ^ 0xffffffff) == -1)
+                        && (0x20
+                        & this.anIntArrayArray4438[i_76_][i_75_]) == 0)
                     return true;
                 if (i_76_ >= i_77_ && i_76_ <= i_82_ && i_75_ == -i_81_ + i
-                        && ((0x2
-                        & this.anIntArrayArray4438[i_76_][i_83_])
-                        ^ 0xffffffff) == -1)
+                        && (0x2
+                        & this.anIntArrayArray4438[i_76_][i_83_]) == 0)
                     return true;
                 if (i_77_ == i_76_ - i_81_
-                        && (i ^ 0xffffffff) <= (i_75_ ^ 0xffffffff) && i <= i_83_
+                        && i_75_ <= i && i <= i_83_
                         && ((0x8 & this.anIntArrayArray4438[i_82_][i])
                         == 0))
                     return true;
                 return i_77_ == 1 + i_76_ && i_75_ <= i
-                        && (i ^ 0xffffffff) >= (i_83_ ^ 0xffffffff)
+                        && i_83_ >= i
                         && ((0x80
                         & this.anIntArrayArray4438[i_77_][i])
                         == 0);
             }
         } else {
-            if ((i_78_ ^ 0xffffffff) == -7 || (i_78_ ^ 0xffffffff) == -8) {
-                if ((i_78_ ^ 0xffffffff) == -8)
+            if (i_78_ == 6 || i_78_ == 7) {
+                if (i_78_ == 7)
                     i_80_ = 2 + i_80_ & 0x3;
                 if (i_80_ == 0) {
-                    if ((1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
+                    if (i_77_ == 1 + i_76_
                             && i_75_ == i
                             && (0x80 & (this.anIntArrayArray4438
-                            [i_77_][i_75_])
-                            ^ 0xffffffff) == -1)
+                            [i_77_][i_75_])) == 0)
                         return true;
-                    if ((i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
+                    if (i_77_ == i_76_
                             && i_75_ == -1 + i
                             && (0x2 & (this.anIntArrayArray4438[i_77_]
                             [i_75_])) == 0)
                         return true;
-                } else if ((i_80_ ^ 0xffffffff) == -2) {
+                } else if (i_80_ == 1) {
                     if (i_76_ + -1 == i_77_ && i == i_75_
                             && (this.anIntArrayArray4438[i_77_][i_75_]
                             & 0x8) == 0)
                         return true;
-                    if ((i_77_ ^ 0xffffffff) == (i_76_ ^ 0xffffffff)
+                    if (i_76_ == i_77_
                             && i - 1 == i_75_
                             && ((this.anIntArrayArray4438[i_77_]
-                            [i_75_]) & 0x2
-                            ^ 0xffffffff) == -1)
+                            [i_75_]) & 0x2) == 0)
                         return true;
-                } else if ((i_80_ ^ 0xffffffff) == -3) {
-                    if ((-1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
-                            && (i_75_ ^ 0xffffffff) == (i ^ 0xffffffff)
+                } else if (i_80_ == 2) {
+                    if (i_77_ == -1 + i_76_
+                            && i == i_75_
                             && (0x8 & (this.anIntArrayArray4438[i_77_]
-                            [i_75_])
-                            ^ 0xffffffff) == -1)
+                            [i_75_])) == 0)
                         return true;
                     if (i_76_ == i_77_ && i + 1 == i_75_
                             && ((this.anIntArrayArray4438[i_77_]
-                            [i_75_]) & 0x20
-                            ^ 0xffffffff) == -1)
+                            [i_75_]) & 0x20) == 0)
                         return true;
                 } else if (i_80_ == 3) {
                     if (i_76_ - -1 == i_77_
-                            && (i ^ 0xffffffff) == (i_75_ ^ 0xffffffff)
+                            && i_75_ == i
                             && (this.anIntArrayArray4438[i_77_][i_75_]
                             & 0x80) == 0)
                         return true;
                     if (i_77_ == i_76_
-                            && (i_75_ ^ 0xffffffff) == (i + 1 ^ 0xffffffff)
+                            && i + 1 == i_75_
                             && (0x20 & (this.anIntArrayArray4438
                             [i_77_][i_75_])) == 0)
                         return true;
                 }
             }
             if (i_78_ == 8) {
-                if ((i_77_ ^ 0xffffffff) == (i_76_ ^ 0xffffffff)
-                        && (i_75_ ^ 0xffffffff) == (1 + i ^ 0xffffffff)
+                if (i_76_ == i_77_
+                        && 1 + i == i_75_
                         && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x20) == 0)
                     return true;
-                if ((i_77_ ^ 0xffffffff) == (i_76_ ^ 0xffffffff)
+                if (i_76_ == i_77_
                         && i - 1 == i_75_
                         && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x2) == 0)
@@ -925,7 +872,7 @@ final class Class361 {
                         && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x8) == 0)
                     return true;
-                return (1 + i_76_ ^ 0xffffffff) == (i_77_ ^ 0xffffffff)
+                return i_77_ == 1 + i_76_
                         && i_75_ == i
                         && (this.anIntArrayArray4438[i_77_][i_75_]
                         & 0x80) == 0;
@@ -947,11 +894,10 @@ final class Class361 {
         if (bool)
             i_89_ |= 0x40000000;
         for (int i_90_ = i_86_; i_86_ + i > i_90_; i_90_++) {
-            if ((i_90_ ^ 0xffffffff) <= -1
-                    && ((this.anInt4437 ^ 0xffffffff)
-                    < (i_90_ ^ 0xffffffff))) {
+            if (i_90_ >= 0
+                    && (i_90_ < this.anInt4437)) {
                 for (int i_91_ = i_84_;
-                     (i_84_ + i_88_ ^ 0xffffffff) < (i_91_ ^ 0xffffffff);
+                     i_91_ < i_84_ + i_88_;
                      i_91_++) {
                     if (i_91_ >= 0 && this.anInt4443 > i_91_)
                         method3494(i_90_, i_89_, i_91_, -6496);
@@ -966,30 +912,30 @@ final class Class361 {
         i_92_ -= this.anInt4453;
         if (i_96_ == 29216) {
             i_94_ -= this.anInt4441;
-            if ((i_93_ ^ 0xffffffff) == -1) {
+            if (i_93_ == 0) {
                 if (i == 0) {
                     method3493(128, i_96_ ^ ~0x725a, i_92_, i_94_);
                     method3493(8, i_96_ + -29342, i_92_ + -1, i_94_);
                 }
-                if ((i ^ 0xffffffff) == -2) {
+                if (i == 1) {
                     method3493(2, -122, i_92_, i_94_);
                     method3493(32, -124, i_92_, i_94_ + 1);
                 }
-                if ((i ^ 0xffffffff) == -3) {
+                if (i == 2) {
                     method3493(8, -127, i_92_, i_94_);
                     method3493(128, -127, 1 + i_92_, i_94_);
                 }
-                if ((i ^ 0xffffffff) == -4) {
+                if (i == 3) {
                     method3493(32, -125, i_92_, i_94_);
                     method3493(2, i_96_ ^ ~0x725f, i_92_, i_94_ + -1);
                 }
             }
-            if (i_93_ == 1 || (i_93_ ^ 0xffffffff) == -4) {
+            if (i_93_ == 1 || i_93_ == 3) {
                 if (i == 0) {
                     method3493(1, -123, i_92_, i_94_);
                     method3493(16, -127, -1 + i_92_, i_94_ + 1);
                 }
-                if ((i ^ 0xffffffff) == -2) {
+                if (i == 1) {
                     method3493(4, -123, i_92_, i_94_);
                     method3493(64, -128, i_92_ - -1, 1 + i_94_);
                 }
@@ -1003,29 +949,29 @@ final class Class361 {
                 }
             }
             if (i_93_ == 2) {
-                if ((i ^ 0xffffffff) == -1) {
+                if (i == 0) {
                     method3493(130, -122, i_92_, i_94_);
                     method3493(8, -123, -1 + i_92_, i_94_);
                     method3493(32, -124, i_92_, i_94_ + 1);
                 }
-                if ((i ^ 0xffffffff) == -2) {
+                if (i == 1) {
                     method3493(10, -123, i_92_, i_94_);
                     method3493(32, -122, i_92_, i_94_ - -1);
                     method3493(128, -127, i_92_ - -1, i_94_);
                 }
-                if ((i ^ 0xffffffff) == -3) {
+                if (i == 2) {
                     method3493(40, -122, i_92_, i_94_);
                     method3493(128, -123, 1 + i_92_, i_94_);
                     method3493(2, -127, i_92_, i_94_ + -1);
                 }
-                if ((i ^ 0xffffffff) == -4) {
+                if (i == 3) {
                     method3493(160, -127, i_92_, i_94_);
                     method3493(2, -128, i_92_, i_94_ - 1);
                     method3493(8, i_96_ + -29343, -1 + i_92_, i_94_);
                 }
             }
             if (bool) {
-                if ((i_93_ ^ 0xffffffff) == -1) {
+                if (i_93_ == 0) {
                     if (i == 0) {
                         method3493(65536, i_96_ ^ ~0x7258, i_92_, i_94_);
                         method3493(4096, -127, i_92_ - 1, i_94_);
@@ -1034,7 +980,7 @@ final class Class361 {
                         method3493(1024, i_96_ ^ ~0x725f, i_92_, i_94_);
                         method3493(16384, -122, i_92_, 1 + i_94_);
                     }
-                    if ((i ^ 0xffffffff) == -3) {
+                    if (i == 2) {
                         method3493(4096, -124, i_92_, i_94_);
                         method3493(65536, -121, 1 + i_92_, i_94_);
                     }
@@ -1043,7 +989,7 @@ final class Class361 {
                         method3493(1024, -125, i_92_, i_94_ - 1);
                     }
                 }
-                if (i_93_ == 1 || (i_93_ ^ 0xffffffff) == -4) {
+                if (i_93_ == 1 || i_93_ == 3) {
                     if (i == 0) {
                         method3493(512, -125, i_92_, i_94_);
                         method3493(8192, -128, -1 + i_92_, 1 + i_94_);
@@ -1062,7 +1008,7 @@ final class Class361 {
                     }
                 }
                 if (i_93_ == 2) {
-                    if ((i ^ 0xffffffff) == -1) {
+                    if (i == 0) {
                         method3493(66560, i_96_ + -29342, i_92_, i_94_);
                         method3493(4096, -121, -1 + i_92_, i_94_);
                         method3493(16384, -127, i_92_, i_94_ - -1);
@@ -1072,7 +1018,7 @@ final class Class361 {
                         method3493(16384, -125, i_92_, 1 + i_94_);
                         method3493(65536, -123, 1 + i_92_, i_94_);
                     }
-                    if ((i ^ 0xffffffff) == -3) {
+                    if (i == 2) {
                         method3493(20480, i_96_ + -29339, i_92_, i_94_);
                         method3493(65536, -124, 1 + i_92_, i_94_);
                         method3493(1024, -125, i_92_, i_94_ + -1);
@@ -1090,7 +1036,7 @@ final class Class361 {
                         method3493(536870912, -125, i_92_, i_94_);
                         method3493(33554432, -128, i_92_ + -1, i_94_);
                     }
-                    if ((i ^ 0xffffffff) == -2) {
+                    if (i == 1) {
                         method3493(8388608, i_96_ + -29338, i_92_, i_94_);
                         method3493(134217728, i_96_ + -29339, i_92_,
                                 i_94_ - -1);
@@ -1105,7 +1051,7 @@ final class Class361 {
                     }
                 }
                 if (i_93_ == 1 || i_93_ == 3) {
-                    if ((i ^ 0xffffffff) == -1) {
+                    if (i == 0) {
                         method3493(4194304, -121, i_92_, i_94_);
                         method3493(67108864, -121, i_92_ + -1, 1 + i_94_);
                     }
@@ -1117,7 +1063,7 @@ final class Class361 {
                         method3493(67108864, -122, i_92_, i_94_);
                         method3493(4194304, -126, 1 + i_92_, -1 + i_94_);
                     }
-                    if ((i ^ 0xffffffff) == -4) {
+                    if (i == 3) {
                         method3493(268435456, -122, i_92_, i_94_);
                         method3493(16777216, -126, -1 + i_92_, i_94_ + -1);
                     }
@@ -1128,7 +1074,7 @@ final class Class361 {
                         method3493(33554432, -123, -1 + i_92_, i_94_);
                         method3493(134217728, -123, i_92_, i_94_ + 1);
                     }
-                    if ((i ^ 0xffffffff) == -2) {
+                    if (i == 1) {
                         method3493(41943040, -123, i_92_, i_94_);
                         method3493(134217728, i_96_ ^ ~0x725f, i_92_,
                                 1 + i_94_);
@@ -1184,13 +1130,12 @@ final class Class361 {
                 i_102_ = i_106_;
             }
             for (int i_107_ = i_100_;
-                 (i_104_ + i_100_ ^ 0xffffffff) < (i_107_ ^ 0xffffffff);
+                 i_107_ < i_104_ + i_100_;
                  i_107_++) {
-                if ((i_107_ ^ 0xffffffff) <= -1
+                if (i_107_ >= 0
                         && i_107_ < this.anInt4437) {
                     for (int i_108_ = i_101_;
-                         ((i_108_ ^ 0xffffffff)
-                                 > (i_101_ + i_102_ ^ 0xffffffff));
+                         (i_101_ + i_102_ > i_108_);
                          i_108_++) {
                         if (i_108_ >= 0
                                 && this.anInt4443 > i_108_)
@@ -1208,11 +1153,11 @@ final class Class361 {
         i -= this.anInt4441;
         i_109_ -= this.anInt4453;
         if (i_111_ == 0) {
-            if ((i_112_ ^ 0xffffffff) == -1) {
+            if (i_112_ == 0) {
                 method3494(i_109_, 128, i, -6496);
                 method3494(-1 + i_109_, 8, i, -6496);
             }
-            if ((i_112_ ^ 0xffffffff) == -2) {
+            if (i_112_ == 1) {
                 method3494(i_109_, 2, i, -6496);
                 method3494(i_109_, 32, 1 + i, -6496);
             }
@@ -1220,13 +1165,13 @@ final class Class361 {
                 method3494(i_109_, 8, i, -6496);
                 method3494(i_109_ + 1, 128, i, -6496);
             }
-            if ((i_112_ ^ 0xffffffff) == -4) {
+            if (i_112_ == 3) {
                 method3494(i_109_, 32, i, -6496);
                 method3494(i_109_, 2, -1 + i, -6496);
             }
         }
-        if ((i_111_ ^ 0xffffffff) == -2 || (i_111_ ^ 0xffffffff) == -4) {
-            if ((i_112_ ^ 0xffffffff) == -1) {
+        if (i_111_ == 1 || i_111_ == 3) {
+            if (i_112_ == 0) {
                 method3494(i_109_, 1, i, -6496);
                 method3494(i_109_ - 1, 16, 1 + i, -6496);
             }
@@ -1259,19 +1204,19 @@ final class Class361 {
                 method3494(i_109_ + 1, 128, i, -6496);
                 method3494(i_109_, 2, -1 + i, -6496);
             }
-            if ((i_112_ ^ 0xffffffff) == -4) {
+            if (i_112_ == 3) {
                 method3494(i_109_, 160, i, -6496);
                 method3494(i_109_, 2, -1 + i, -6496);
                 method3494(-1 + i_109_, 8, i, -6496);
             }
         }
         if (bool_113_) {
-            if ((i_111_ ^ 0xffffffff) == -1) {
-                if ((i_112_ ^ 0xffffffff) == -1) {
+            if (i_111_ == 0) {
+                if (i_112_ == 0) {
                     method3494(i_109_, 65536, i, -6496);
                     method3494(i_109_ - 1, 4096, i, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -2) {
+                if (i_112_ == 1) {
                     method3494(i_109_, 1024, i, -6496);
                     method3494(i_109_, 16384, i + 1, -6496);
                 }
@@ -1284,8 +1229,8 @@ final class Class361 {
                     method3494(i_109_, 1024, i - 1, -6496);
                 }
             }
-            if ((i_111_ ^ 0xffffffff) == -2 || (i_111_ ^ 0xffffffff) == -4) {
-                if ((i_112_ ^ 0xffffffff) == -1) {
+            if (i_111_ == 1 || i_111_ == 3) {
+                if (i_112_ == 0) {
                     method3494(i_109_, 512, i, -6496);
                     method3494(-1 + i_109_, 8192, i + 1, -6496);
                 }
@@ -1293,16 +1238,16 @@ final class Class361 {
                     method3494(i_109_, 2048, i, -6496);
                     method3494(i_109_ + 1, 32768, i - -1, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -3) {
+                if (i_112_ == 2) {
                     method3494(i_109_, 8192, i, -6496);
                     method3494(1 + i_109_, 512, i - 1, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -4) {
+                if (i_112_ == 3) {
                     method3494(i_109_, 32768, i, -6496);
                     method3494(i_109_ + -1, 2048, -1 + i, -6496);
                 }
             }
-            if ((i_111_ ^ 0xffffffff) == -3) {
+            if (i_111_ == 2) {
                 if (i_112_ == 0) {
                     method3494(i_109_, 66560, i, -6496);
                     method3494(i_109_ + -1, 4096, i, -6496);
@@ -1313,12 +1258,12 @@ final class Class361 {
                     method3494(i_109_, 16384, i + 1, -6496);
                     method3494(i_109_ - -1, 65536, i, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -3) {
+                if (i_112_ == 2) {
                     method3494(i_109_, 20480, i, -6496);
                     method3494(1 + i_109_, 65536, i, -6496);
                     method3494(i_109_, 1024, -1 + i, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -4) {
+                if (i_112_ == 3) {
                     method3494(i_109_, 81920, i, -6496);
                     method3494(i_109_, 1024, i - 1, -6496);
                     method3494(i_109_ + -1, 4096, i, -6496);
@@ -1331,7 +1276,7 @@ final class Class361 {
                     method3494(i_109_, 536870912, i, -6496);
                     method3494(-1 + i_109_, 33554432, i, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -2) {
+                if (i_112_ == 1) {
                     method3494(i_109_, 8388608, i, -6496);
                     method3494(i_109_, 134217728, i - -1, -6496);
                 }
@@ -1344,8 +1289,8 @@ final class Class361 {
                     method3494(i_109_, 8388608, i - 1, -6496);
                 }
             }
-            if ((i_111_ ^ 0xffffffff) == -2 || (i_111_ ^ 0xffffffff) == -4) {
-                if ((i_112_ ^ 0xffffffff) == -1) {
+            if (i_111_ == 1 || i_111_ == 3) {
+                if (i_112_ == 0) {
                     method3494(i_109_, 4194304, i, -6496);
                     method3494(-1 + i_109_, 67108864, i - -1, -6496);
                 }
@@ -1362,13 +1307,13 @@ final class Class361 {
                     method3494(i_109_ - 1, 16777216, -1 + i, -6496);
                 }
             }
-            if ((i_111_ ^ 0xffffffff) == -3) {
-                if ((i_112_ ^ 0xffffffff) == -1) {
+            if (i_111_ == 2) {
+                if (i_112_ == 0) {
                     method3494(i_109_, 545259520, i, -6496);
                     method3494(i_109_ + -1, 33554432, i, -6496);
                     method3494(i_109_, 134217728, i - -1, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -2) {
+                if (i_112_ == 1) {
                     method3494(i_109_, 41943040, i, -6496);
                     method3494(i_109_, 134217728, 1 + i, -6496);
                     method3494(1 + i_109_, 536870912, i, -6496);
@@ -1378,7 +1323,7 @@ final class Class361 {
                     method3494(1 + i_109_, 536870912, i, -6496);
                     method3494(i_109_, 8388608, -1 + i, -6496);
                 }
-                if ((i_112_ ^ 0xffffffff) == -4) {
+                if (i_112_ == 3) {
                     method3494(i_109_, 671088640, i, -6496);
                     method3494(i_109_, 8388608, i + -1, -6496);
                     method3494(-1 + i_109_, 33554432, i, -6496);

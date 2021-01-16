@@ -31,14 +31,14 @@ final class Class111 {
         if (i < 15)
             anIntArrayArray1724 = null;
         anInt1717++;
-		return (anInt1715 ^ 0xffffffff) != 0;
+		return anInt1715 != -1;
 	}
 
     static final int method1045(int i, int i_1_, int i_2_, int i_3_, int i_4_,
                                 int i_5_, byte i_6_) {
         i_5_ &= 0x3;
         anInt1716++;
-        if ((i_2_ & 0x1 ^ 0xffffffff) == -2) {
+        if ((i_2_ & 0x1) == 1) {
             int i_7_ = i_3_;
             i_3_ = i_1_;
             i_1_ = i_7_;
@@ -49,7 +49,7 @@ final class Class111 {
             return -78;
         if (i_5_ == 1)
             return 7 + -i - i_3_ - -1;
-        if ((i_5_ ^ 0xffffffff) == -3)
+        if (i_5_ == 2)
             return -i_4_ + 7 - -1 - i_1_;
         return i;
     }
@@ -57,13 +57,13 @@ final class Class111 {
     final int[] method1046(int i, int i_8_) {
         anInt1719++;
         if (i < 0
-                || (i ^ 0xffffffff) <= (anIntArrayArray1724.length ^ 0xffffffff)) {
+                || anIntArrayArray1724.length <= i) {
             if (anInt1715 == -1)
                 return new int[0];
             return new int[]{anInt1715};
         }
         if (!aBooleanArray1725[i]
-                || (anIntArrayArray1724[i].length ^ 0xffffffff) >= -2)
+                || anIntArrayArray1724[i].length <= 1)
             return anIntArrayArray1724[i];
         int i_9_ = i_8_ == (anInt1715 ^ 0xffffffff) ? 0 : 1;
         Random random = new Random();
@@ -109,7 +109,7 @@ final class Class111 {
             Class348_Sub49 class348_sub49
                     = new Class348_Sub49(aClass45_1718.method410(-1860, 0, 0));
             int i_17_ = class348_sub49.method3387(255);
-            if ((i_17_ ^ 0xffffffff) < -4) {
+            if (i_17_ > 3) {
                 anIntArrayArray1724 = new int[0][];
                 aBooleanArray1725 = new boolean[0];
                 anInt1715 = -1;
@@ -117,10 +117,9 @@ final class Class111 {
                 int i_18_ = class348_sub49.method3387(255);
                 Class223[] class223s = Class19.method285(-122);
                 boolean bool = true;
-                if ((i_18_ ^ 0xffffffff) == (class223s.length ^ 0xffffffff)) {
+                if (class223s.length == i_18_) {
                     for (int i_19_ = 0;
-                         ((i_19_ ^ 0xffffffff)
-                                 > (class223s.length ^ 0xffffffff));
+                         (class223s.length > i_19_);
                          i_19_++) {
                         int i_20_ = class348_sub49.method3387(255);
                         if (i_20_ != class223s[i_19_].anInt2896) {
@@ -148,10 +147,10 @@ final class Class111 {
                         aBooleanArray1725[i_24_]
                                 = class348_sub49.method3387(255) == 1;
                         int i_25_ = class348_sub49.method3330(842397944);
-                        if ((anInt1715 ^ 0xffffffff) == 0) {
+                        if (anInt1715 == -1) {
                             anIntArrayArray1724[i_24_] = new int[i_25_];
                             for (int i_26_ = 0;
-                                 (i_26_ ^ 0xffffffff) > (i_25_ ^ 0xffffffff);
+								 i_25_ > i_26_;
                                  i_26_++)
                                 anIntArrayArray1724[i_24_][i_26_]
                                         = class348_sub49.method3330(842397944);
@@ -159,7 +158,7 @@ final class Class111 {
                             anIntArrayArray1724[i_24_] = new int[1 + i_25_];
                             anIntArrayArray1724[i_24_][0] = anInt1715;
                             for (int i_27_ = 0;
-                                 (i_27_ ^ 0xffffffff) > (i_25_ ^ 0xffffffff);
+								 i_25_ > i_27_;
                                  i_27_++)
                                 anIntArrayArray1724[i_24_][1 + i_27_]
                                         = class348_sub49.method3330(842397944);

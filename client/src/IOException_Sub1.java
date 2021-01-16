@@ -17,7 +17,7 @@ final class IOException_Sub1 extends IOException {
         do {
             try {
                 anInt89++;
-                if ((i ^ 0xffffffff) > (i_1_ ^ 0xffffffff)) {
+                if (i_1_ > i) {
                     int i_2_ = (i_1_ + i) / 2;
                     int i_3_ = i;
                     long l = ls[i_2_];
@@ -28,10 +28,8 @@ final class IOException_Sub1 extends IOException {
                     is[i_1_] = i_4_;
                     int i_5_ = l == 9223372036854775807L ? 0 : 1;
                     for (int i_6_ = i;
-                         (i_6_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff); i_6_++) {
-                        if ((ls[i_6_] ^ 0xffffffffffffffffL)
-                                > (l - -(long) (i_5_ & i_6_)
-                                ^ 0xffffffffffffffffL)) {
+                         i_1_ > i_6_; i_6_++) {
+                        if (l - -(long) (i_5_ & i_6_) > ls[i_6_]) {
                             long l_7_ = ls[i_6_];
                             ls[i_6_] = ls[i_3_];
                             ls[i_3_] = l_7_;
@@ -74,7 +72,7 @@ final class IOException_Sub1 extends IOException {
     static final void method131(boolean bool, int i, boolean bool_9_,
                                 int i_10_) {
         anInt87++;
-        if ((i_10_ ^ 0xffffffff) > -8001 || i_10_ > 48000)
+        if (i_10_ < 8000 || i_10_ > 48000)
             throw new IllegalArgumentException();
         Class253.anInt3248 = i;
         Class22.anInt339 = i_10_;

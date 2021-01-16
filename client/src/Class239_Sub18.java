@@ -33,9 +33,8 @@ final class Class239_Sub18 extends Class239 {
         if (this.aClass348_Sub51_3136.method3425(-62))
             return 3;
         if (i_1_ == 0
-                || (this.aClass348_Sub51_3136
-                .aClass239_Sub9_7256.method1759(-32350)
-                ^ 0xffffffff) == -2)
+                || this.aClass348_Sub51_3136
+                .aClass239_Sub9_7256.method1759(-32350) == 1)
             return 1;
         return 2;
     }
@@ -59,7 +58,7 @@ final class Class239_Sub18 extends Class239 {
         if (bool == false) {
             if (this.aClass348_Sub51_3136.method3425(-94))
                 this.anInt3138 = 0;
-            if ((this.anInt3138 ^ 0xffffffff) > -1
+            if (this.anInt3138 < 0
                     && this.anInt3138 > 2)
                 this.anInt3138 = method1710(20014);
         }
@@ -74,7 +73,7 @@ final class Class239_Sub18 extends Class239 {
 
     static final void method1802(int i) throws IOException {
         if (Class348_Sub40_Sub8.aClass238_9165 != null
-                && (Class348_Sub34.anInt6969 ^ 0xffffffff) < -1) {
+                && Class348_Sub34.anInt6969 > 0) {
             int i_2_ = 0;
             for (; ; ) {
                 Class348_Sub47 class348_sub47

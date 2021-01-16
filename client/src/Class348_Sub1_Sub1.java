@@ -28,7 +28,7 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
     }
 
     static final int method2726(int i, int i_7_, int i_8_) {
-        if ((i_7_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff)) {
+        if (i_8_ > i_7_) {
             int i_9_ = i_7_;
             i_7_ = i_8_;
             i_8_ = i_9_;
@@ -72,9 +72,8 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                             (byte) -126);
                     if (!class237_sub1.aBoolean3109
                             && i_16_ == ha.anInt4581 / 8
-                            && ((Class327.anInt4095 / 8 ^ 0xffffffff)
-                            == (i_17_ ^ 0xffffffff))
-                            && (is_11_[0] ^ 0xffffffff) != 0) {
+                            && (i_17_ == Class327.anInt4095 / 8)
+                            && is_11_[0] != -1) {
                         Class259.aClass305_3304
                                 = Class30.aClass84_413.method823(is_11_[2],
                                 is_11_[3],
@@ -86,7 +85,7 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                     }
                 }
             }
-            for (int i_20_ = 0; (i_13_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff);
+            for (int i_20_ = 0; i_20_ < i_13_;
                  i_20_++) {
                 int i_21_ = ((Class348_Sub23_Sub3.anIntArray9042[i_20_]
                         >> -1341199640) * 64

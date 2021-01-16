@@ -54,9 +54,8 @@ final class Class348_Sub20 extends Class348 {
         anInt6837++;
         if (bool != true)
             method2950(121);
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub26_7272.method1838(-32350)
-                ^ 0xffffffff) != -1
+        if (Class316.aClass348_Sub51_3959
+                .aClass239_Sub26_7272.method1838(-32350) != 0
                 && i_5_ != 0 && Class147.anInt2021 < 50 && i_4_ != -1)
             Class258_Sub2.aClass10Array8531[Class147.anInt2021++]
                     = new Class10((byte) 1, i_4_, i_5_, i_6_, i, 0, i_7_, null);
@@ -74,7 +73,7 @@ final class Class348_Sub20 extends Class348 {
                 short[] is_12_
                         = aS_Sub2_6839.aShortArrayArray8267[i_11_];
                 int i_13_ = anIntArray6842[i_11_];
-                if ((i_13_ ^ 0xffffffff) != -1 && is_12_ != null) {
+                if (i_13_ != 0 && is_12_ != null) {
                     int i_14_ = 0;
                     int i_15_ = 0;
                     while (is_12_.length > i_15_) {
@@ -104,7 +103,7 @@ final class Class348_Sub20 extends Class348 {
                 int i_18_ = anIntArray6842[i_17_];
                 short[] is_19_
                         = aS_Sub2_6839.aShortArrayArray8267[i_17_];
-                if ((i_18_ ^ 0xffffffff) != -1 && is_19_ != null) {
+                if (i_18_ != 0 && is_19_ != null) {
                     int i_20_ = 0;
                     int i_21_ = 0;
                     while (i_21_ < is_19_.length) {
@@ -164,22 +163,22 @@ final class Class348_Sub20 extends Class348 {
 
     final void method2949(byte i, int i_22_, int i_23_, int i_24_, float f) {
         if (i == 97) {
-            if ((this.anInt6841 ^ 0xffffffff) != 0) {
+            if (this.anInt6841 != -1) {
                 Class12 class12
                         = aHa_Sub2_6831.aD4579
                         .method3(this.anInt6841, -6662);
                 int i_25_ = 0xff & class12.aByte201;
-                if ((i_25_ ^ 0xffffffff) != -1
-                        && (class12.aByte213 ^ 0xffffffff) != -5) {
+                if (i_25_ != 0
+                        && class12.aByte213 != 4) {
                     int i_26_;
-                    if ((i_23_ ^ 0xffffffff) <= -1) {
+                    if (i_23_ >= 0) {
                         if (i_23_ > 127)
                             i_26_ = 16777215;
                         else
                             i_26_ = 131586 * i_23_;
                     } else
                         i_26_ = 0;
-                    if ((i_25_ ^ 0xffffffff) != -257) {
+                    if (i_25_ != 256) {
                         int i_27_ = i_25_;
                         int i_28_ = -i_25_ + 256;
                         i_24_ = ((((i_28_ * (i_24_ & 0xff00ff)
@@ -192,16 +191,16 @@ final class Class348_Sub20 extends Class348 {
                         i_24_ = i_26_;
                 }
                 int i_29_ = 0xff & class12.aByte216;
-                if ((i_29_ ^ 0xffffffff) != -1) {
+                if (i_29_ != 0) {
                     i_29_ += 256;
                     int i_30_ = i_29_ * ((0xff0000 & i_24_) >> -1137372912);
-                    if ((i_30_ ^ 0xffffffff) < -65536)
+                    if (i_30_ > 65535)
                         i_30_ = 65535;
                     int i_31_ = ((i_24_ & 0xff00) >> -277346296) * i_29_;
-                    if ((i_31_ ^ 0xffffffff) < -65536)
+                    if (i_31_ > 65535)
                         i_31_ = 65535;
                     int i_32_ = (0xff & i_24_) * i_29_;
-                    if ((i_32_ ^ 0xffffffff) < -65536)
+                    if (i_32_ > 65535)
                         i_32_ = 65535;
                     i_24_ = (0xff00 & i_31_) + (((~0x5ff00ff & i_30_)
                             << -139080152)
@@ -217,17 +216,17 @@ final class Class348_Sub20 extends Class348 {
                 i_33_ *= f;
                 if (i_33_ < 0)
                     i_33_ = 0;
-                else if ((i_33_ ^ 0xffffffff) < -256)
+                else if (i_33_ > 255)
                     i_33_ = 255;
                 i_34_ *= f;
                 i_35_ *= f;
                 if (i_34_ < 0)
                     i_34_ = 0;
-                else if ((i_34_ ^ 0xffffffff) < -256)
+                else if (i_34_ > 255)
                     i_34_ = 255;
-                if ((i_35_ ^ 0xffffffff) > -1)
+                if (i_35_ < 0)
                     i_35_ = 0;
-                else if ((i_35_ ^ 0xffffffff) < -256)
+                else if (i_35_ > 255)
                     i_35_ = 255;
                 i_24_ = i_34_ << -832692120 | i_33_ << 2030250768 | i_35_;
             }
@@ -269,7 +268,7 @@ final class Class348_Sub20 extends Class348 {
         if (Class240.anInt4674 == 3)
             Class348_Sub49.method3379(2, 4);
         else if (Class240.anInt4674 != 7) {
-            if ((Class240.anInt4674 ^ 0xffffffff) == -11)
+            if (Class240.anInt4674 == 10)
                 Class348_Sub49.method3379(2, 11);
         } else
             Class348_Sub49.method3379(2, 8);

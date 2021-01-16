@@ -36,8 +36,8 @@ abstract class Class14 implements Interface18 {
             this.aClass377_5082 = null;
         int i_1_ = (this.aClass377_5082.anIntArray9927
                 [i_0_]);
-        if ((i_1_ ^ 0xffffffff) != (this.anInt5093 ^ 0xffffffff)) {
-            if ((i_1_ ^ 0xffffffff) != -1) {
+        if (this.anInt5093 != i_1_) {
+            if (i_1_ != 0) {
                 OpenGL.glBindTexture(i_1_, 0);
                 OpenGL.glDisable(i_1_);
             }
@@ -141,7 +141,7 @@ abstract class Class14 implements Interface18 {
         anInt5100++;
         if (i_2_ > 0 && !Class192.method1436(66, i_2_))
             throw new IllegalArgumentException("");
-        if ((i_3_ ^ 0xffffffff) < -1 && !Class192.method1436(i ^ 0x1cb6, i_3_))
+        if (i_3_ > 0 && !Class192.method1436(i ^ 0x1cb6, i_3_))
             throw new IllegalArgumentException("");
         int i_5_ = this.aClass304_5084.anInt3850;
         int i_6_ = 0;
@@ -161,7 +161,7 @@ abstract class Class14 implements Interface18 {
             if (i_7_ <= 1)
                 break;
             int i_12_ = i_2_ * i_5_;
-            for (int i_13_ = 0; (i_13_ ^ 0xffffffff) > (i_5_ ^ 0xffffffff);
+            for (int i_13_ = 0; i_5_ > i_13_;
                  i_13_++) {
                 int i_14_ = i_13_;
                 int i_15_ = i_13_;
@@ -222,15 +222,15 @@ abstract class Class14 implements Interface18 {
 
     final void method233(int i, int i_23_, int[] is, int i_24_, int i_25_) {
         anInt5092++;
-        if ((i ^ 0xffffffff) < -1 && !Class192.method1436(-43, i))
+        if (i > 0 && !Class192.method1436(-43, i))
             throw new IllegalArgumentException("");
-        if ((i_23_ ^ 0xffffffff) < -1
+        if (i_23_ > 0
                 && !Class192.method1436(i_25_ ^ ~0xd2, i_23_))
             throw new IllegalArgumentException("");
         if (Class108.aClass304_1662 != this.aClass304_5084)
             throw new IllegalArgumentException("");
         int i_26_ = 0;
-        int i_27_ = (i_23_ ^ 0xffffffff) >= (i ^ 0xffffffff) ? i_23_ : i;
+        int i_27_ = i >= i_23_ ? i_23_ : i;
         int i_28_ = i >> 1089811809;
         int i_29_ = i_23_ >> -264056511;
         int[] is_30_ = is;
@@ -250,7 +250,7 @@ abstract class Class14 implements Interface18 {
             int i_34_ = i_33_ + i;
             for (int i_35_ = 0; i_29_ > i_35_; i_35_++) {
                 for (int i_36_ = 0;
-                     (i_36_ ^ 0xffffffff) > (i_28_ ^ 0xffffffff); i_36_++) {
+                     i_28_ > i_36_; i_36_++) {
                     int i_37_ = is_30_[i_33_++];
                     int i_38_ = is_30_[i_33_++];
                     int i_39_ = is_30_[i_34_++];
@@ -300,7 +300,7 @@ abstract class Class14 implements Interface18 {
 
     private final void method234(int i) {
         if (i == 1617553025) {
-            if ((anInt5096 ^ 0xffffffff) < -1) {
+            if (anInt5096 > 0) {
                 this.aClass377_5082
                         .method3967(method231(-109), (byte) 59, anInt5096);
                 anInt5096 = 0;
@@ -311,7 +311,7 @@ abstract class Class14 implements Interface18 {
 
     static final void method235(int i, byte i_46_) {
         anInt5087++;
-        if ((i ^ 0xffffffff) != 0 && Class163.aBooleanArray2162[i]) {
+        if (i != -1 && Class163.aBooleanArray2162[i]) {
             Class229.aClass45_2978.method411(i, -120);
             Class348_Sub40_Sub33.aClass46ArrayArray9427[i] = null;
             Class369_Sub2.aClass46ArrayArray8584[i] = null;
@@ -349,7 +349,7 @@ abstract class Class14 implements Interface18 {
         anInt5102++;
         if (i_49_ > 0 && !Class192.method1436(100, i_49_))
             throw new IllegalArgumentException("");
-        if ((i_50_ ^ 0xffffffff) < -1
+        if (i_50_ > 0
                 && !Class192.method1436(i_48_ + 109, i_50_))
             throw new IllegalArgumentException("");
         int i_51_ = this.aClass304_5084.anInt3850;
@@ -357,7 +357,7 @@ abstract class Class14 implements Interface18 {
         if (i_48_ != 1)
             method228(107);
         int i_53_
-                = (i_49_ ^ 0xffffffff) > (i_50_ ^ 0xffffffff) ? i_49_ : i_50_;
+                = i_50_ > i_49_ ? i_49_ : i_50_;
         int i_54_ = i_49_ >> -1187902719;
         int i_55_ = i_50_ >> 1286076865;
         float[] fs_56_ = fs;

@@ -36,14 +36,12 @@ final class Class239_Sub7 extends Class239 {
         if (this.aClass348_Sub51_3136.method3425(-82))
             this.anInt3138 = 0;
         anInt5904++;
-        if ((this.aClass348_Sub51_3136
-                .aClass239_Sub24_7235.method1820(-32350)
-                ^ 0xffffffff)
-                == -1)
+        if (this.aClass348_Sub51_3136
+                .aClass239_Sub24_7235.method1820(-32350) == 0)
             this.anInt3138 = 0;
         if (bool != false)
             method1712(-60, 72);
-        if ((this.anInt3138 ^ 0xffffffff) > -1
+        if (this.anInt3138 < 0
                 || this.anInt3138 > 2)
             this.anInt3138 = method1710(20014);
     }

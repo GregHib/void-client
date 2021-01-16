@@ -16,7 +16,7 @@ final class Class348_Sub42_Sub13 extends Class348_Sub42 {
     static final void method3232(double d, byte i) {
         if (i <= -54) {
             if (d != Class299_Sub2_Sub1.aDouble8713) {
-                for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -257; i_0_++) {
+                for (int i_0_ = 0; i_0_ < 256; i_0_++) {
                     int i_1_
                             = (int) (255.0 * Math.pow((double) i_0_ / 255.0, d));
                     Class318_Sub1_Sub3_Sub3.anIntArray10266[i_0_]
@@ -75,7 +75,7 @@ final class Class348_Sub42_Sub13 extends Class348_Sub42 {
                     (byte) -128);
             return false;
         }
-        return (method3235(-17937) ^ 0xffffffff) != (i_5_ ^ 0xffffffff);
+        return i_5_ != method3235(-17937);
     }
 
     Class348_Sub42_Sub13(String string) {

@@ -13,7 +13,7 @@ class Class328 {
                                     int i_0_) {
         try {
             anInt4099++;
-            if (is == null || (is.length ^ 0xffffffff) == -1)
+            if (is == null || is.length == 0)
                 return null;
             long l = OpenGL.glCreateShaderObjectARB(i_0_);
             OpenGL.glShaderSourceRawARB(l, is);
@@ -22,7 +22,7 @@ class Class328 {
                 method2608(null, null, -27, 75);
             OpenGL.glGetObjectParameterivARB(l, 35713, (Class348_Sub40_Sub2
                     .anIntArray9096), 0);
-            if ((Class348_Sub40_Sub2.anIntArray9096[0] ^ 0xffffffff) == -1) {
+            if (Class348_Sub40_Sub2.anIntArray9096[0] == 0) {
                 if (Class348_Sub40_Sub2.anIntArray9096[0] == 0)
                     System.out.println("Shader compile failed:");
                 OpenGL.glGetObjectParameterivARB(l, 35716,
@@ -39,8 +39,7 @@ class Class328 {
                             0, is_1_, 0);
                     System.out.println(new String(is_1_));
                 }
-                if ((Class348_Sub40_Sub2.anIntArray9096[0] ^ 0xffffffff)
-                        == -1) {
+                if (Class348_Sub40_Sub2.anIntArray9096[0] == 0) {
                     OpenGL.glDeleteObjectARB(l);
                     return null;
                 }

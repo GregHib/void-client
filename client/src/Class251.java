@@ -62,7 +62,7 @@ final class Class251 {
         if (i != 4)
             return false;
         anInt3233++;
-        return (i_4_ ^ 0xffffffff) != -2 && i_4_ != 7;
+        return i_4_ != 1 && i_4_ != 7;
     }
 
     static final void method1916(int i, Class46 class46) {

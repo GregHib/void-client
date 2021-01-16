@@ -24,7 +24,7 @@ final class Callback_Sub1 extends Callback {
     final void method3622(boolean bool, int i, Component component) {
         WComponentPeer wcomponentpeer = (WComponentPeer) component.getPeer();
         int i_2_ = wcomponentpeer.getTopHwnd();
-        if ((anInt7461 ^ 0xffffffff) != (i_2_ ^ 0xffffffff)
+        if (i_2_ != anInt7461
                 || !bool == aBoolean7460) {
             if (i != 13259)
                 method3622(true, -90, null);
@@ -33,7 +33,7 @@ final class Callback_Sub1 extends Callback {
                 Root.alloc(this);
                 aBoolean7464 = true;
             }
-            if ((i_2_ ^ 0xffffffff) != (anInt7461 ^ 0xffffffff)) {
+            if (anInt7461 != i_2_) {
                 if (anInt7461 != 0) {
                     aBoolean7460 = true;
                     User32.SendMessage(i_2_, 101024, 0, 0);
@@ -68,7 +68,7 @@ final class Callback_Sub1 extends Callback {
             User32.SetCursor(!aBoolean7460 ? 0 : anInt7462);
             return 0;
         }
-        if ((i_3_ ^ 0xffffffff) == -2) {
+        if (i_3_ == 1) {
             anInt7461 = 0;
             aBoolean7460 = true;
         }

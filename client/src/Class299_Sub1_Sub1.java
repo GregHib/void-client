@@ -38,10 +38,10 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
                 int i_2_ = !class12.aBoolean199 ? 128 : 64;
                 if (i_0_ < i_2_)
                     i_0_ = i_2_;
-                if ((class12.aByte205 ^ 0xffffffff) < -1)
+                if (class12.aByte205 > 0)
                     bool = true;
             }
-            for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -7; i_3_++)
+            for (int i_3_ = 0; i_3_ < 6; i_3_++)
                 Class341.anIntArrayArray4233[i_3_]
                         = var_d.method5(false, Class308.anIntArray3883[i_3_], 1.0F,
                         i_0_, i_0_, i + 192);

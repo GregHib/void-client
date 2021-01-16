@@ -136,20 +136,17 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
              class348_sub18 = (Class348_Sub18) this
                      .aClass262_9629
                      .method1990((byte) 52)) {
-            if ((class348_sub18.anInt6812 ^ 0xffffffff)
-                    > (this.anInt9643 ^ 0xffffffff))
+            if (this.anInt9643 > class348_sub18.anInt6812)
                 this.anInt9643
                         = class348_sub18.anInt6812;
-            if ((this.anInt9627 ^ 0xffffffff)
-                    > (class348_sub18.anInt6813 ^ 0xffffffff))
+            if (class348_sub18.anInt6813 > this.anInt9627)
                 this.anInt9627
                         = class348_sub18.anInt6813;
             if (this.anInt9635
                     < class348_sub18.anInt6819)
                 this.anInt9635
                         = class348_sub18.anInt6819;
-            if ((this.anInt9644 ^ 0xffffffff)
-                    < (class348_sub18.anInt6809 ^ 0xffffffff))
+            if (class348_sub18.anInt6809 < this.anInt9644)
                 this.anInt9644
                         = class348_sub18.anInt6809;
         }
@@ -172,9 +169,8 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
             if ((Class306.anInt3872
                     != (int) ((float) Class348_Sub40_Sub34.anIntArray9436[0]
                     / 3.0F))
-                    || ((int) ((float) Class348_Sub40_Sub34.anIntArray9436[1]
-                    / 3.0F)
-                    ^ 0xffffffff) != (Class86.anInt1480 ^ 0xffffffff)) {
+                    || Class86.anInt1480 != (int) ((float) Class348_Sub40_Sub34.anIntArray9436[1]
+                    / 3.0F)) {
                 Class86.anInt1480
                         = (int) ((float) Class348_Sub40_Sub34.anIntArray9436[1]
                         / 3.0F);
@@ -193,12 +189,12 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
             if (i_7_ < 37)
                 method3241(-25, (byte) 65, null);
             for (/**/;
-                     (i_8_ ^ 0xffffffff) > (Class239_Sub26.anInt6115 ^ 0xffffffff);
+                     Class239_Sub26.anInt6115 > i_8_;
                      i_8_++)
                 Class318_Sub2.method2498(Class147.aClass338Array2034[i_8_],
                         var_ha, (byte) -112, i);
             for (int i_9_ = 0;
-                 (Class69.anInt1200 ^ 0xffffffff) < (i_9_ ^ 0xffffffff);
+                 i_9_ < Class69.anInt1200;
                  i_9_++)
                 Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4
                                 .aClass338Array10330[i_9_]),
@@ -211,7 +207,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
                 int i_11_ = Class14.anIntArray5091.length;
                 int i_12_ = i_11_ + -i_11_ & 0x7;
                 int i_13_ = 0;
-                while ((i_12_ ^ 0xffffffff) < (i_13_ ^ 0xffffffff)) {
+                while (i_13_ < i_12_) {
                     Class14.anIntArray5091[i_13_++] = 2147483647;
                     Class14.anIntArray5091[i_13_++] = 2147483647;
                     Class14.anIntArray5091[i_13_++] = 2147483647;
@@ -221,12 +217,11 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
                     Class14.anIntArray5091[i_13_++] = 2147483647;
                     Class14.anIntArray5091[i_13_++] = 2147483647;
                 }
-                while ((i_13_ ^ 0xffffffff) > (i_11_ ^ 0xffffffff))
+                while (i_11_ > i_13_)
                     Class14.anIntArray5091[i_13_++] = 2147483647;
                 Class350.anInt4319 = 1;
                 for (int i_14_ = 0;
-                     ((Class348_Sub42_Sub10.anInt9577 ^ 0xffffffff)
-                             < (i_14_ ^ 0xffffffff));
+                     (i_14_ < Class348_Sub42_Sub10.anInt9577);
                      i_14_++) {
                     Class338 class338
                             = Class348_Sub42_Sub19.aClass338Array9700[i_14_];
@@ -314,7 +309,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
             this.anInt9634 = i_22_;
             this.anInt9628 = i;
             this.aBoolean9639 = bool;
-            if ((this.anInt9631 ^ 0xffffffff) == -256)
+            if (this.anInt9631 == 255)
                 this.anInt9631 = 0;
             this.aClass262_9629 = new Class262();
         } catch (RuntimeException runtimeexception) {

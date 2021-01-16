@@ -31,8 +31,8 @@ final class Class348_Sub18 extends Class348 {
         anInt6822++;
         if (i != 3589)
             method2941(null, 70, false);
-        return (anInt6820 ^ 0xffffffff) >= (i_0_ ^ 0xffffffff)
-                && (anInt6806 ^ 0xffffffff) <= (i_0_ ^ 0xffffffff)
+        return i_0_ >= anInt6820
+                && i_0_ <= anInt6806
                 && i_1_ >= anInt6811 && anInt6810 >= i_1_;
     }
 
@@ -40,8 +40,8 @@ final class Class348_Sub18 extends Class348 {
         anInt6821++;
         if (bool != true)
             anInt6811 = -84;
-        return i_3_ == anInt6815 && (anInt6820 ^ 0xffffffff) >= (i_2_ ^ 0xffffffff)
-                && anInt6806 >= i_2_ && (anInt6811 ^ 0xffffffff) >= (i ^ 0xffffffff)
+        return i_3_ == anInt6815 && i_2_ >= anInt6820
+                && anInt6806 >= i_2_ && i >= anInt6811
                 && anInt6810 >= i;
     }
 
@@ -147,11 +147,9 @@ final class Class348_Sub18 extends Class348 {
         if (i_7_ != 2)
             return true;
         return this.anInt6809 <= i
-                && (i ^ 0xffffffff) >= (this.anInt6819
-                ^ 0xffffffff)
-                && ((this.anInt6812 ^ 0xffffffff) >= (i_8_ ^ 0xffffffff))
-                && (i_8_ ^ 0xffffffff) >= (this.anInt6813
-                ^ 0xffffffff);
+                && this.anInt6819 >= i
+                && (i_8_ >= this.anInt6812)
+                && this.anInt6813 >= i_8_;
     }
 
     final void method2940(int i, boolean bool, int[] is, int i_9_) {
@@ -185,8 +183,7 @@ final class Class348_Sub18 extends Class348 {
 
     static final void method2942(Class46 class46, byte i) {
         anInt6805++;
-        if ((Class244.anInt4610 ^ 0xffffffff)
-                == (class46.anInt765 ^ 0xffffffff)) {
+        if (class46.anInt765 == Class244.anInt4610) {
             if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544
                     == null) {
                 class46.anInt779 = 0;
@@ -212,7 +209,7 @@ final class Class348_Sub18 extends Class348 {
                 class46.anInt795
                         = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt10245;
                 Class17 class17
-                        = ((class46.anInt699 ^ 0xffffffff) != 0
+                        = (class46.anInt699 != -1
                         ? Class10.aClass87_191
                         .method835(class46.anInt699, 7)
                         : null);

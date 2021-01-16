@@ -15,8 +15,8 @@ final class Class148 {
         if (i != -12081)
             return true;
         anInt2041++;
-        if (i_0_ == 21 || (i_0_ ^ 0xffffffff) == -11 || i_0_ == 47
-                || (i_0_ ^ 0xffffffff) == -23 || i_0_ == 5)
+        if (i_0_ == 21 || i_0_ == 10 || i_0_ == 47
+                || i_0_ == 22 || i_0_ == 5)
             return true;
         return i_0_ == 49 || i_0_ == 1010;
     }

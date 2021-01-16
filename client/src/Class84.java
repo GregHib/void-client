@@ -60,11 +60,11 @@ final class Class84 {
                         = ((class318_sub1_sub3_sub3_4_.anInt6388
                         + i_5_)
                         >> 783412073);
-                if ((i_6_ ^ 0xffffffff) >= (i_0_ ^ 0xffffffff)
-                        && (i_2_ ^ 0xffffffff) <= (i_7_ ^ 0xffffffff)
+                if (i_0_ >= i_6_
+                        && i_7_ <= i_2_
                         && i_0_ <= i_8_ && i_2_ <= i_9_) {
                     int i_10_ = (1 + i_9_ - i_2_) * (-i_0_ + (1 + i_8_));
-                    if ((i_10_ ^ 0xffffffff) < (i_3_ ^ 0xffffffff)) {
+                    if (i_3_ < i_10_) {
                         i_3_ = i_10_;
                         class318_sub1_sub3_sub3 = class318_sub1_sub3_sub3_4_;
                     }
@@ -141,7 +141,7 @@ final class Class84 {
             class72s
                     = new Class72[class300.anIntArray3821.length];
             for (int i_21_ = 0;
-                 (i_21_ ^ 0xffffffff) > (class72s.length ^ 0xffffffff);
+                 class72s.length > i_21_;
                  i_21_++) {
                 Class38 class38 = class25.method301((class300
                                 .anIntArray3821[i_21_]),

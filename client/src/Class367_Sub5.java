@@ -23,9 +23,8 @@ final class Class367_Sub5 extends Class367 {
         super(class378);
         aClass378_7328 = class378;
         if (null == class45
-                || -258 < ((aClass378_7328.aD3DCAPS9791
-                .VertexShaderVersion) & 0xffff
-                ^ 0xffffffff))
+                || ((aClass378_7328.aD3DCAPS9791
+                .VertexShaderVersion) & 0xffff) < 257)
             aBoolean7329 = false;
         else {
             anIDirect3DVertexShader7332
@@ -64,11 +63,11 @@ final class Class367_Sub5 extends Class367 {
                 = this.aHa_Sub3_4479.method3887((byte) 61);
         IDirect3DVertexShader idirect3dvertexshader;
         if (aBoolean7336)
-            idirect3dvertexshader = ((i_0_ ^ 0xffffffff) != -2147483648
+            idirect3dvertexshader = (i_0_ != 2147483647
                     ? anIDirect3DVertexShader7335
                     : anIDirect3DVertexShader7330);
         else
-            idirect3dvertexshader = ((i_0_ ^ 0xffffffff) == -2147483648
+            idirect3dvertexshader = (i_0_ == 2147483647
                     ? anIDirect3DVertexShader7332
                     : anIDirect3DVertexShader7334);
         if (anIDirect3DVertexShader7333 != idirect3dvertexshader) {

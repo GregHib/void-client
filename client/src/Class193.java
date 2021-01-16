@@ -35,7 +35,7 @@ final class Class193 {
                 if (class279.anInt3613 > 16384)
                     class279.anInt3613 = 16384;
                 class279.method2082(class279.anInt3613);
-                if ((Class253.anInt3248 ^ 0xffffffff) < -1
+                if (Class253.anInt3248 > 0
                         && Class183.aClass250_2462 == null) {
                     Class183.aClass250_2462 = new Class250();
                     Class183.aClass250_2462.aClass297_3228

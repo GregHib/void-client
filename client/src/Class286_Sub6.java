@@ -69,7 +69,7 @@ final class Class286_Sub6 extends Class286 {
     static final boolean method2163(boolean bool) {
         anInt6273++;
         try {
-            if ((Class348_Sub43.anInt7068 ^ 0xffffffff) == -3) {
+            if (Class348_Sub43.anInt7068 == 2) {
                 if (Class286.aClass348_Sub2_3683 == null) {
                     Class286.aClass348_Sub2_3683
                             = Class348_Sub2.method2734(Class124.aClass45_1848,
@@ -95,7 +95,7 @@ final class Class286_Sub6 extends Class286 {
                         -35)) {
                     Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3;
                     Class98.aClass348_Sub16_Sub3_1564.method2864((byte) 52);
-                    if ((Class348_Sub40_Sub35.anInt9444 ^ 0xffffffff) >= -1) {
+                    if (Class348_Sub40_Sub35.anInt9444 <= 0) {
                         Class348_Sub43.anInt7068 = 0;
                         Class98.aClass348_Sub16_Sub3_1564
                                 .method2861(0, Class58.anInt1059);
@@ -108,21 +108,17 @@ final class Class286_Sub6 extends Class286 {
                     } else {
                         Class348_Sub43.anInt7068 = 3;
                         Class98.aClass348_Sub16_Sub3_1564.method2861
-                                (0, (((Class348_Sub40_Sub35.anInt9444 ^ 0xffffffff)
-                                        < (Class58.anInt1059 ^ 0xffffffff))
+                                (0, ((Class58.anInt1059 < Class348_Sub40_Sub35.anInt9444)
                                         ? Class58.anInt1059
                                         : Class348_Sub40_Sub35.anInt9444));
-                        for (int i = 0; ((i ^ 0xffffffff)
-                                > (Class367_Sub3.anIntArray7299.length
-                                ^ 0xffffffff)); i++) {
+                        for (int i = 0; (Class367_Sub3.anIntArray7299.length > i); i++) {
                             Class98.aClass348_Sub16_Sub3_1564.method2843
                                     (Class367_Sub3.anIntArray7299[i], i, -7836);
                             Class367_Sub3.anIntArray7299[i] = 255;
                         }
                     }
                     if (Class285.aClass348_Sub16_Sub3_4743 == null) {
-                        if ((Class239_Sub12.aLong5971 ^ 0xffffffffffffffffL)
-                                >= -1L)
+                        if (Class239_Sub12.aLong5971 <= 0)
                             Class98.aClass348_Sub16_Sub3_1564.method2869
                                     (Class286.aClass348_Sub2_3683,
                                             Class346.aBoolean4275, false);

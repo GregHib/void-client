@@ -104,10 +104,8 @@ abstract class ha {
         if (i_35_ == i_38_)
             Class127.method1116(i, i_37_, i_39_, i_38_, (byte) -99);
         else if (Class369.anInt4960 <= i_39_ + -i_38_
-                && (i_39_ - -i_38_ ^ 0xffffffff) >= (Class113.anInt1745
-                ^ 0xffffffff)
-                && (Class132.anInt1910 ^ 0xffffffff) >= (-i_35_ + i
-                ^ 0xffffffff)
+                && Class113.anInt1745 >= i_39_ - -i_38_
+                && -i_35_ + i >= Class132.anInt1910
                 && Class38.anInt513 >= i + i_35_)
             Class55.method515(i_37_, i_39_, i, i_35_, i_38_, -122);
         else
@@ -219,9 +217,9 @@ abstract class ha {
         if (class348_sub42_sub3 == null) {
             byte[] is = new byte[512];
             Random random = new Random(i);
-            for (int i_89_ = 0; (i_89_ ^ 0xffffffff) > -256; i_89_++)
+            for (int i_89_ = 0; i_89_ < 255; i_89_++)
                 is[i_89_] = (byte) i_89_;
-            for (int i_90_ = 0; (i_90_ ^ 0xffffffff) > -256; i_90_++) {
+            for (int i_90_ = 0; i_90_ < 255; i_90_++) {
                 int i_91_ = -i_90_ + 255;
                 int i_92_ = Class124.method1097((byte) 95, i_91_, random);
                 byte i_93_ = is[i_92_];
@@ -362,9 +360,9 @@ abstract class ha {
                 return Class306.method2297(-6, i_168_, var_d, canvas, i_169_);
             if (i_171_ == 1)
                 return Class262.method2000(3, i, canvas, var_d);
-            if ((i_171_ ^ 0xffffffff) == -6)
+            if (i_171_ == 5)
                 return Class93.method862(canvas, var_d, class45, 25542, i);
-            if ((i_171_ ^ 0xffffffff) == -4)
+            if (i_171_ == 3)
                 return Class96.method870(i, i_170_ ^ 0x4a31, var_d, class45,
                         canvas);
             throw new IllegalArgumentException("UM");

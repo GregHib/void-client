@@ -31,15 +31,15 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             Class270.anIntArray3464[0] = anInt8716;
             boolean bool_0_ = false;
             int i = 0;
-            for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -7; i_1_++) {
+            for (int i_1_ = 0; i_1_ < 6; i_1_++) {
                 if (!var_d.method4(-7953, Class270.anIntArray3464[i_1_]))
                     return null;
                 Class12 class12
                         = var_d.method3(Class270.anIntArray3464[i_1_], -6662);
                 int i_2_ = class12.aBoolean199 ? 64 : 128;
-                if ((i_2_ ^ 0xffffffff) < (i ^ 0xffffffff))
+                if (i < i_2_)
                     i = i_2_;
-                if ((class12.aByte205 ^ 0xffffffff) < -1)
+                if (class12.aByte205 > 0)
                     bool_0_ = true;
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)
@@ -86,7 +86,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
                     && Class121.aClass105_1800 != null) {
                 int i_8_ = ((i - 2 * Class121.aClass105_1800.method971())
                         / OutputStream_Sub2.aClass105_106.method971());
-                for (int i_9_ = 0; (i_8_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff);
+                for (int i_9_ = 0; i_9_ < i_8_;
                      i_9_++)
                     OutputStream_Sub2.aClass105_106.method974
                             ((Class121.aClass105_1800.method971() + i_4_

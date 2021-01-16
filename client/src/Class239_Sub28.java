@@ -20,11 +20,11 @@ final class Class239_Sub28 extends Class239 {
         anInt6134++;
         if (i_1_ != -1)
             return false;
-        if ((i + i_5_ ^ 0xffffffff) >= (i_3_ ^ 0xffffffff)
-                || (i_5_ ^ 0xffffffff) <= (i_3_ - -i_6_ ^ 0xffffffff))
+        if (i_3_ >= i + i_5_
+                || i_3_ - -i_6_ <= i_5_)
             return false;
-        return (i_4_ ^ 0xffffffff) > (i_0_ + i_7_ ^ 0xffffffff)
-                && (i_2_ + i_4_ ^ 0xffffffff) < (i_0_ ^ 0xffffffff);
+        return i_0_ + i_7_ > i_4_
+                && i_0_ < i_2_ + i_4_;
     }
 
     static final void method1843(int i, int i_8_, Class46 class46,
@@ -52,36 +52,33 @@ final class Class239_Sub28 extends Class239 {
                         = i_9_ - class46.anInt728;
         } else
             class46.anInt789 = class46.anInt728;
-        if ((class46.aByte778 ^ 0xffffffff) == -5)
+        if (class46.aByte778 == 4)
             class46.anInt709
                     = (class46.anInt789 * class46.anInt710
                     / class46.anInt775);
-        if ((class46.aByte724 ^ 0xffffffff) == -5)
+        if (class46.aByte724 == 4)
             class46.anInt789
                     = (class46.anInt775 * class46.anInt709
                     / class46.anInt710);
         if (Class299_Sub2.aBoolean6327
                 && (client.method105(class46).anInt7098 != 0
-                || (class46.anInt774 ^ 0xffffffff) == -1)) {
+                || class46.anInt774 == 0)) {
             if (class46.anInt789 < 5
                     && class46.anInt709 < 5) {
                 class46.anInt789 = 5;
                 class46.anInt709 = 5;
             } else {
-                if ((class46.anInt789 ^ 0xffffffff) >= -1)
+                if (class46.anInt789 <= 0)
                     class46.anInt789 = 5;
-                if ((class46.anInt709 ^ 0xffffffff) >= -1)
+                if (class46.anInt709 <= 0)
                     class46.anInt709 = 5;
             }
         }
-        if ((class46.anInt765 ^ 0xffffffff)
-                == (Class239_Sub10.anInt5943 ^ 0xffffffff))
+        if (Class239_Sub10.anInt5943 == class46.anInt765)
             Class348_Sub1.aClass46_6561 = class46;
         if (bool && class46.anObjectArray727 != null
-                && ((class46.anInt709 ^ 0xffffffff) != (i_10_
-                ^ 0xffffffff)
-                || ((class46.anInt789 ^ 0xffffffff)
-                != (i_11_ ^ 0xffffffff)))) {
+                && (i_10_ != class46.anInt709
+                || (i_11_ != class46.anInt789))) {
             Class348_Sub36 class348_sub36 = new Class348_Sub36();
             class348_sub36.aClass46_6989 = class46;
             class348_sub36.anObjectArray6987
@@ -133,7 +130,7 @@ final class Class239_Sub28 extends Class239 {
         if (bool != false)
             method1847(null, 64);
         anInt6142++;
-        if ((this.anInt3138 ^ 0xffffffff) != -2
+        if (this.anInt3138 != 1
                 && this.anInt3138 != 0)
             this.anInt3138 = method1710(20014);
     }

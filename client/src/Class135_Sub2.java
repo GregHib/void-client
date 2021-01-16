@@ -129,13 +129,13 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
         if (i_9_ != -1)
             aClass161_4839 = null;
         anInt4844++;
-        return (i_10_ & 0x180 ^ 0xffffffff) != -1;
+        return (i_10_ & 0x180) != 0;
     }
 
     static {
-        for (int i = 0; (i ^ 0xffffffff) > -27; i++)
+        for (int i = 0; i < 26; i++)
             aCharArray4845[i] = (char) (65 + i);
-        for (int i = 26; (i ^ 0xffffffff) > -53; i++)
+        for (int i = 26; i < 52; i++)
             aCharArray4845[i] = (char) (i + 71);
         for (int i = 52; i < 62; i++)
             aCharArray4845[i] = (char) (-4 + i);

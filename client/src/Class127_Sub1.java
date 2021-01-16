@@ -54,7 +54,7 @@ final class Class127_Sub1 extends Class127 {
             if (class46 != null)
                 Class251.method1916(-9343, class46);
             Class348_Sub42_Sub17.method3270((byte) 119);
-            if (!bool_2_ && (r.anInt9721 ^ 0xffffffff) != 0)
+            if (!bool_2_ && r.anInt9721 != -1)
                 Class239_Sub12.method1775((byte) -8, r.anInt9721, 1);
             Class333 class333 = new Class333(Class125.aClass356_4915);
             for (Class348_Sub41 class348_sub41_5_

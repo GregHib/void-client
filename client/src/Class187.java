@@ -32,9 +32,7 @@ final class Class187 {
                 = Class258_Sub4.method1974((byte) 42, i, bool);
         if (class348_sub13 != null && bool_0_ == true) {
             for (int i_1_ = 0;
-                 ((i_1_ ^ 0xffffffff)
-                         > (class348_sub13.anIntArray6757.length
-                         ^ 0xffffffff));
+                 (class348_sub13.anIntArray6757.length > i_1_);
                  i_1_++) {
                 class348_sub13.anIntArray6757[i_1_] = -1;
                 class348_sub13.anIntArray6758[i_1_] = 0;

@@ -32,20 +32,16 @@ final class Class284 {
             return true;
         anInt3664++;
         return class284_0_.anInt3673 == this.anInt3673
-                && ((class284_0_.anInt3667 ^ 0xffffffff)
-                == (this.anInt3667 ^ 0xffffffff))
-                && ((class284_0_.anInt3671 ^ 0xffffffff)
-                == (this.anInt3671 ^ 0xffffffff));
+                && (this.anInt3667 == class284_0_.anInt3667)
+                && (this.anInt3671 == class284_0_.anInt3671);
     }
 
     static final int method2116(int i) {
         anInt3665++;
         ha var_ha = Class348_Sub8.aHa6654;
         boolean bool = false;
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub25_7271.method1829(i + -5766)
-                ^ 0xffffffff)
-                != -1) {
+        if (Class316.aClass348_Sub51_3959
+                .aClass239_Sub25_7271.method1829(i + -5766) != 0) {
             Canvas canvas = new Canvas();
             canvas.setSize(100, 100);
             var_ha = Class104.method958(true, 0, null, 0, canvas, null);

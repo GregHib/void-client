@@ -25,7 +25,7 @@ final class Class179 {
         anInt2363++;
         if (is == null)
             return null;
-        if ((is.length ^ 0xffffffff) < -137 && !Class17.aBoolean247) {
+        if (is.length > 136 && !Class17.aBoolean247) {
             try {
                 Class344 class344
                         = (Class344) Class.forName("Class344_Sub1").newInstance();
@@ -123,9 +123,9 @@ final class Class179 {
         if (i >= -56)
             aBoolean2360 = true;
         anInt2366++;
-        if ((anInt2364 ^ 0xffffffff) > (i_8_ ^ 0xffffffff))
+        if (i_8_ > anInt2364)
             anInt2364 = i_8_;
-        if ((i_8_ ^ 0xffffffff) <= (aStringArray2367.length ^ 0xffffffff))
+        if (aStringArray2367.length <= i_8_)
             method1363(i_8_, -107);
         aStringArray2367[i_8_] = string;
     }
@@ -172,8 +172,8 @@ final class Class179 {
         anInt2357++;
         StringBuffer stringbuffer = new StringBuffer();
         stringbuffer.append("[");
-        for (int i = 0; (i ^ 0xffffffff) > (anInt2364 ^ 0xffffffff); i++) {
-            if ((i ^ 0xffffffff) != -1)
+        for (int i = 0; anInt2364 > i; i++) {
+            if (i != 0)
                 stringbuffer.append(", ");
             stringbuffer.append(aStringArray2367[i]);
         }

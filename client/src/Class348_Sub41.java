@@ -47,7 +47,7 @@ final class Class348_Sub41 extends Class348 {
                     int i_13_ = i_11_ - -i_0_;
                     int i_14_ = i_2_ + i_10_;
                     if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i
-                            && (i_14_ ^ 0xffffffff) > (-1 + i_1_ ^ 0xffffffff)) {
+                            && -1 + i_1_ > i_14_) {
                         Class51 class51 = Class348_Sub40_Sub12
                                 .aClass263_9195
                                 .method2005(0, i_4_);
@@ -55,8 +55,7 @@ final class Class348_Sub41 extends Class348 {
                                 || Class316.aClass348_Sub51_3959
                                 .aClass239_Sub4_7220.method1737(-32350) != 0
                                 || class51.anInt874 != 0
-                                || ((class51.anInt920 ^ 0xffffffff)
-                                == -2)
+                                || (class51.anInt920 == 1)
                                 || class51.aBoolean947) {
                             bool_7_ = true;
                             if (!class51.method485(9773)) {
@@ -89,7 +88,7 @@ final class Class348_Sub41 extends Class348 {
                                  boolean bool) {
         anInt7049++;
         if (bool || i_16_ != ha.anInt4581
-                || (i ^ 0xffffffff) != (Class327.anInt4095 ^ 0xffffffff)
+                || Class327.anInt4095 != i
                 || (Class355.anInt4372 != Class167.anInt2204
                 && Class316.aClass348_Sub51_3959
                 .aClass239_Sub27_7261.method1840(-32350) != 1)) {
@@ -127,7 +126,7 @@ final class Class348_Sub41 extends Class348 {
                         Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1
                                 = (class348_sub22
                                 .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                        for (int i_23_ = 0; (i_23_ ^ 0xffffffff) > -11;
+                        for (int i_23_ = 0; i_23_ < 10;
                              i_23_++) {
                             class318_sub1_sub3_sub3_sub1
                                     .anIntArray10320[i_23_]
@@ -150,8 +149,7 @@ final class Class348_Sub41 extends Class348 {
                 int i_25_ = Class367_Sub4.anInt7319 * 512 - 512;
                 int i_26_ = 512 * (-1 + Class348_Sub40_Sub3.anInt9109);
                 for (int i_27_ = 0;
-                     ((i_27_ ^ 0xffffffff)
-                             > (Class348_Sub32.anInt6930 ^ 0xffffffff));
+                     (Class348_Sub32.anInt6930 > i_27_);
                      i_27_++) {
                     Class348_Sub22 class348_sub22
                             = Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_27_];
@@ -167,9 +165,8 @@ final class Class348_Sub41 extends Class348 {
                                 -= 512 * i_20_;
                         if ((class318_sub1_sub3_sub3_sub1
                                 .anInt6377) < 0
-                                || ((class318_sub1_sub3_sub3_sub1
+                                || i_25_ < (class318_sub1_sub3_sub3_sub1
                                 .anInt6377)
-                                ^ 0xffffffff) < (i_25_ ^ 0xffffffff)
                                 || (class318_sub1_sub3_sub3_sub1
                                 .anInt6388) < 0
                                 || i_26_ < (class318_sub1_sub3_sub3_sub1
@@ -179,7 +176,7 @@ final class Class348_Sub41 extends Class348 {
                             bool_24_ = true;
                         } else {
                             boolean bool_28_ = true;
-                            for (int i_29_ = 0; (i_29_ ^ 0xffffffff) > -11;
+                            for (int i_29_ = 0; i_29_ < 10;
                                  i_29_++) {
                                 class318_sub1_sub3_sub3_sub1
                                         .anIntArray10320[i_29_]
@@ -189,18 +186,12 @@ final class Class348_Sub41 extends Class348 {
                                         -= i_21_;
                                 if ((class318_sub1_sub3_sub3_sub1
                                         .anIntArray10320[i_29_]) < 0
-                                        || ((Class367_Sub4.anInt7319 ^ 0xffffffff)
-                                        >= ((class318_sub1_sub3_sub3_sub1
-                                        .anIntArray10320[i_29_])
-                                        ^ 0xffffffff))
                                         || ((class318_sub1_sub3_sub3_sub1
-                                        .anIntArray10317[i_29_])
-                                        ^ 0xffffffff) > -1
-                                        || (((class318_sub1_sub3_sub3_sub1
-                                        .anIntArray10317[i_29_])
-                                        ^ 0xffffffff)
-                                        <= (Class348_Sub40_Sub3.anInt9109
-                                        ^ 0xffffffff)))
+                                        .anIntArray10320[i_29_]) >= Class367_Sub4.anInt7319)
+                                        || (class318_sub1_sub3_sub3_sub1
+                                        .anIntArray10317[i_29_]) < 0
+                                        || (Class348_Sub40_Sub3.anInt9109 <= (class318_sub1_sub3_sub3_sub1
+                                        .anIntArray10317[i_29_])))
                                     bool_28_ = false;
                             }
                             if (!bool_28_) {
@@ -223,7 +214,7 @@ final class Class348_Sub41 extends Class348 {
                 }
             }
             if (i_15_ > 122) {
-                for (int i_30_ = 0; (i_30_ ^ 0xffffffff) > -2049; i_30_++) {
+                for (int i_30_ = 0; i_30_ < 2048; i_30_++) {
                     Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                             = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058
                             [i_30_]);
@@ -246,7 +237,7 @@ final class Class348_Sub41 extends Class348 {
                 }
                 Class302[] class302s = Class348_Sub27.aClass302Array6897;
                 for (int i_32_ = 0;
-                     (i_32_ ^ 0xffffffff) > (class302s.length ^ 0xffffffff);
+                     class302s.length > i_32_;
                      i_32_++) {
                     Class302 class302 = class302s[i_32_];
                     if (class302 != null) {
@@ -264,18 +255,16 @@ final class Class348_Sub41 extends Class348 {
                              .method1990((byte) 68)) {
                     class348_sub27.anInt6896 -= i_21_;
                     class348_sub27.anInt6905 -= i_20_;
-                    if ((Class312.anInt3931 ^ 0xffffffff) != -5
+                    if (Class312.anInt3931 != 4
                             && (class348_sub27.anInt6905 < 0
                             || class348_sub27.anInt6896 < 0
-                            || ((Class367_Sub4.anInt7319 ^ 0xffffffff)
-                            >= (class348_sub27.anInt6905
-                            ^ 0xffffffff))
+                            || (class348_sub27.anInt6905 >= Class367_Sub4.anInt7319)
                             || (Class348_Sub40_Sub3.anInt9109
                             <= (class348_sub27
                             .anInt6896))))
                         class348_sub27.method2715((byte) 101);
                 }
-                if ((Class312.anInt3931 ^ 0xffffffff) != -5) {
+                if (Class312.anInt3931 != 4) {
                     for (Class348_Sub37 class348_sub37
                          = ((Class348_Sub37)
                             Class130.aClass356_1895.method3484(0));
@@ -292,32 +281,29 @@ final class Class348_Sub41 extends Class348 {
                                 & (class348_sub37.aLong4291
                                 >> -1372612402));
                         int i_36_ = i_35_ + -Class90.anInt1517;
-                        if ((i_34_ ^ 0xffffffff) > -1
-                                || (i_36_ ^ 0xffffffff) > -1
-                                || ((Class367_Sub4.anInt7319 ^ 0xffffffff)
-                                >= (i_34_ ^ 0xffffffff))
+                        if (i_34_ < 0
+                                || i_36_ < 0
+                                || (i_34_ >= Class367_Sub4.anInt7319)
                                 || i_36_ >= Class348_Sub40_Sub3.anInt9109)
                             class348_sub37.method2715((byte) 37);
                     }
                 }
-                if ((Class248.anInt3203 ^ 0xffffffff) != -1) {
+                if (Class248.anInt3203 != 0) {
                     Class248.anInt3203 -= i_20_;
                     Class97.anInt1548 -= i_21_;
                 }
                 Class348_Sub17.method2928(true);
-                if ((i_17_ ^ 0xffffffff) != -12) {
+                if (i_17_ != 11) {
                     Class275.anInt3550 -= i_21_;
                     Class286_Sub4.anInt6246 -= 512 * i_20_;
                     Class352.anInt4336 -= i_20_;
                     Class281.anInt3647 -= i_21_;
                     Class348_Sub35.anInt6981 -= i_20_;
                     Class59_Sub2_Sub2.anInt8685 -= 512 * i_21_;
-                    if (((Math.abs(i_20_) ^ 0xffffffff)
-                            < (Class367_Sub4.anInt7319 ^ 0xffffffff))
+                    if ((Class367_Sub4.anInt7319 < Math.abs(i_20_))
                             || Math.abs(i_21_) > Class348_Sub40_Sub3.anInt9109)
                         Class76.method773(true);
-                } else if ((Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff)
-                        == -5) {
+                } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                     Class348_Sub7.anInt6652 -= i_21_ * 512;
                     Class130_Sub1.anInt5799 -= i_20_ * 512;
                     Class192.anInt2578 -= 512 * i_21_;
@@ -345,13 +331,13 @@ final class Class348_Sub41 extends Class348 {
         int i_38_ = class348_sub49.method3385((byte) -126);
         if (i_38_ < 0
                 || (Class29.anInt401 != 0
-                && (Class29.anInt401 ^ 0xffffffff) > (i_38_ ^ 0xffffffff)))
+                && i_38_ > Class29.anInt401))
             throw new RuntimeException();
         if (i_37_ != 0) {
             int i_39_ = class348_sub49.method3385((byte) -126);
             if (i_39_ < 0
-                    || ((Class29.anInt401 ^ 0xffffffff) != -1
-                    && (Class29.anInt401 ^ 0xffffffff) > (i_39_ ^ 0xffffffff)))
+                    || (Class29.anInt401 != 0
+                    && i_39_ > Class29.anInt401))
                 throw new RuntimeException();
             byte[] is_40_ = new byte[i_39_];
             if (i_37_ == 1)
@@ -380,32 +366,32 @@ final class Class348_Sub41 extends Class348 {
                     .method2005(0, interface10.method42(-124));
             int i_48_ = 0x3 & interface10.method41(-32228);
             int i_49_ = interface10.method39(35);
-            if ((class51.anInt875 ^ 0xffffffff) != 0)
+            if (class51.anInt875 != -1)
                 Class267.method2028(i_46_, class51, i_42_, var_ha, i_48_, 126);
             else {
                 int i_50_ = i_47_;
-                if ((class51.anInt874 ^ 0xffffffff) < -1)
+                if (class51.anInt874 > 0)
                     i_50_ = i;
-                if ((i_49_ ^ 0xffffffff) == -1 || (i_49_ ^ 0xffffffff) == -3) {
+                if (i_49_ == 0 || i_49_ == 2) {
                     if (i_48_ != 0) {
-                        if ((i_48_ ^ 0xffffffff) == -2)
+                        if (i_48_ == 1)
                             var_ha.method3649((byte) -79, 4, i_42_, i_50_,
                                     i_46_);
                         else if (i_48_ == 2)
                             var_ha.method3660(3 + i_46_, i_50_, 4, i_42_,
                                     true);
-                        else if ((i_48_ ^ 0xffffffff) == -4)
+                        else if (i_48_ == 3)
                             var_ha.method3649((byte) -121, 4, i_42_ + 3, i_50_,
                                     i_46_);
                     } else
                         var_ha.method3660(i_46_, i_50_, 4, i_42_, !bool);
                 }
                 if (i_49_ == 3) {
-                    if ((i_48_ ^ 0xffffffff) != -1) {
-                        if ((i_48_ ^ 0xffffffff) == -2)
+                    if (i_48_ != 0) {
+                        if (i_48_ == 1)
                             var_ha.method3675(1, (byte) -125, 3 + i_46_, i_42_,
                                     1, i_50_);
-                        else if ((i_48_ ^ 0xffffffff) != -3) {
+                        else if (i_48_ != 2) {
                             if (i_48_ == 3)
                                 var_ha.method3675(1, (byte) -125, i_46_,
                                         3 + i_42_, 1, i_50_);
@@ -416,13 +402,13 @@ final class Class348_Sub41 extends Class348 {
                         var_ha.method3675(1, (byte) -125, i_46_, i_42_, 1,
                                 i_50_);
                 }
-                if ((i_49_ ^ 0xffffffff) == -3) {
-                    if ((i_48_ ^ 0xffffffff) != -1) {
+                if (i_49_ == 2) {
+                    if (i_48_ != 0) {
                         if (i_48_ == 1)
                             var_ha.method3660(3 + i_46_, i_50_, 4, i_42_,
                                     true);
                         else if (i_48_ != 2) {
-                            if ((i_48_ ^ 0xffffffff) == -4)
+                            if (i_48_ == 3)
                                 var_ha.method3660(i_46_, i_50_, 4, i_42_,
                                         true);
                         } else
@@ -445,7 +431,7 @@ final class Class348_Sub41 extends Class348 {
                     .method2005(0, interface10.method42(-88));
             int i_51_ = interface10.method41(-32228) & 0x3;
             int i_52_ = interface10.method39(-126);
-            if ((class51.anInt875 ^ 0xffffffff) != 0)
+            if (class51.anInt875 != -1)
                 Class267.method2028(i_46_, class51, i_42_, var_ha, i_51_, -86);
             else if (i_52_ == 9) {
                 int i_53_ = -1118482;
@@ -466,7 +452,7 @@ final class Class348_Sub41 extends Class348 {
             Class51 class51 = Class348_Sub40_Sub12.aClass263_9195
                     .method2005(0, interface10.method42(-118));
             int i_54_ = interface10.method41(-32228) & 0x3;
-            if ((class51.anInt875 ^ 0xffffffff) != 0)
+            if (class51.anInt875 != -1)
                 Class267.method2028(i_46_, class51, i_42_, var_ha, i_54_, -5);
         }
     }

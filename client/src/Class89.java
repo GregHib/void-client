@@ -22,13 +22,13 @@ final class Class89 {
                     Class17.anIntArrayArray255[i_8_], i_1_,
                     i_5_);
         int i_9_ = -i + i_2_;
-        for (int i_10_ = i_3_; (i_7_ ^ 0xffffffff) > (i_10_ ^ 0xffffffff);
+        for (int i_10_ = i_3_; i_10_ > i_7_;
              i_10_--)
             Class135_Sub2.method1156(-27, i_2_,
                     Class17.anIntArrayArray255[i_10_], i_1_,
                     i_5_);
         int i_11_ = i + i_1_;
-        for (int i_12_ = i_6_; (i_12_ ^ 0xffffffff) >= (i_7_ ^ 0xffffffff);
+        for (int i_12_ = i_6_; i_7_ >= i_12_;
              i_12_++) {
             int[] is = Class17.anIntArrayArray255[i_12_];
             Class135_Sub2.method1156(-27, i_11_, is, i_1_, i_5_);
@@ -177,7 +177,7 @@ final class Class89 {
     static {
         for (int i = 0; i < 256; i++) {
             int i_23_ = i;
-            for (int i_24_ = 0; (i_24_ ^ 0xffffffff) > -9; i_24_++) {
+            for (int i_24_ = 0; i_24_ < 8; i_24_++) {
                 if ((i_23_ & 0x1) != 1)
                     i_23_ >>>= 1;
                 else

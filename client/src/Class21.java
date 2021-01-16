@@ -27,7 +27,7 @@ final class Class21 {
     static final void method289(int i, int i_0_, int i_1_, int i_2_) {
         anInt324++;
         if (Class369_Sub1.anInt8583 != i_2_
-                || (i_0_ ^ 0xffffffff) != (Class295.anInt3760 ^ 0xffffffff)
+                || Class295.anInt3760 != i_0_
                 || i_1_ != Class27.anInt396) {
             Class369_Sub1.anInt8583 = i_2_;
             Class348_Sub16_Sub2.aBoolean8870 = true;

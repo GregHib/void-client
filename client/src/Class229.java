@@ -40,6 +40,6 @@ final class Class229 {
         if (bool != false)
             method1633(false, 85, -80);
         anInt2977++;
-        return (0x400 & i ^ 0xffffffff) != -1;
+        return (0x400 & i) != 0;
     }
 }

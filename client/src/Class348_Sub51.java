@@ -348,18 +348,17 @@ final class Class348_Sub51 extends Class348 {
                         = new Class239_Sub21(class348_sub49.method3387(255), this);
                 int i_1_ = class348_sub49.method3387(i ^ 0x7860);
                 int i_2_ = 0;
-                if ((i_0_ ^ 0xffffffff) <= -18)
+                if (i_0_ >= 17)
                     i_2_ = class348_sub49.method3387(255);
                 this.aClass239_Sub7_7238
-                        = new Class239_Sub7(((i_2_ ^ 0xffffffff) > (i_1_
-                        ^ 0xffffffff)
+                        = new Class239_Sub7((i_1_ > i_2_
                         ? i_1_ : i_2_),
                         this);
                 boolean bool = true;
                 boolean bool_3_ = true;
-                if ((i_0_ ^ 0xffffffff) <= -3) {
+                if (i_0_ >= 2) {
                     bool = class348_sub49.method3387(i + -30624) == 1;
-                    if ((i_0_ ^ 0xffffffff) <= -18)
+                    if (i_0_ >= 17)
                         bool_3_ = class348_sub49.method3387(255) == 1;
                 } else {
                     bool = class348_sub49.method3387(255) == 1;
@@ -407,16 +406,16 @@ final class Class348_Sub51 extends Class348 {
                     class348_sub49.method3330(842397944);
                     class348_sub49.method3330(842397944);
                 }
-                if ((i_0_ ^ 0xffffffff) <= -4 && i_0_ < 6)
+                if (i_0_ >= 3 && i_0_ < 6)
                     class348_sub49.method3387(255);
-                if ((i_0_ ^ 0xffffffff) <= -5)
+                if (i_0_ >= 4)
                     this.aClass239_Sub15_7224
                             = new Class239_Sub15(class348_sub49.method3387(255),
                             this);
                 if (i != 30879)
                     method3428((byte) -10);
                 class348_sub49.method3385((byte) -126);
-                if ((i_0_ ^ 0xffffffff) <= -7)
+                if (i_0_ >= 6)
                     this.aClass239_Sub8_7227
                             = new Class239_Sub8(class348_sub49
                             .method3387(i ^ 0x7860),
@@ -425,9 +424,9 @@ final class Class348_Sub51 extends Class348 {
                     this.aClass239_Sub11_7265
                             = new Class239_Sub11(class348_sub49.method3387(255),
                             this);
-                if ((i_0_ ^ 0xffffffff) <= -9)
+                if (i_0_ >= 8)
                     class348_sub49.method3387(255);
-                if ((i_0_ ^ 0xffffffff) <= -10)
+                if (i_0_ >= 9)
                     this.aClass239_Sub6_7226
                             = new Class239_Sub6(class348_sub49
                             .method3387(i ^ 0x7860),
@@ -448,7 +447,7 @@ final class Class348_Sub51 extends Class348 {
                     this.aClass239_Sub9_7256
                             = new Class239_Sub9(class348_sub49.method3387(255),
                             this);
-                if ((i_0_ ^ 0xffffffff) <= -15)
+                if (i_0_ >= 14)
                     this.aClass239_Sub25_7251
                             = new Class239_Sub25(class348_sub49.method3387(255),
                             this);
@@ -456,16 +455,16 @@ final class Class348_Sub51 extends Class348 {
                     this.aClass239_Sub17_7263
                             = new Class239_Sub17(class348_sub49.method3387(255),
                             this);
-                if ((i_0_ ^ 0xffffffff) <= -17)
+                if (i_0_ >= 16)
                     this.aClass239_Sub24_7235
                             = new Class239_Sub24(class348_sub49
                             .method3387(i ^ 0x7860),
                             this);
-                if ((i_0_ ^ 0xffffffff) <= -19)
+                if (i_0_ >= 18)
                     this.aClass239_Sub29_7229
                             = new Class239_Sub29(class348_sub49.method3387(255),
                             this);
-                if ((i_0_ ^ 0xffffffff) <= -20)
+                if (i_0_ >= 19)
                     this.aClass239_Sub23_7231
                             = new Class239_Sub23(class348_sub49.method3387(255),
                             this);
@@ -634,7 +633,7 @@ final class Class348_Sub51 extends Class348 {
                         && (class348_sub49.aByteArray7154
                         != null)) {
                     int i_4_ = class348_sub49.method3387(i + -670);
-                    if ((i_4_ ^ 0xffffffff) <= -24) {
+                    if (i_4_ >= 23) {
                         if (i_4_ > 24)
                             method3423(true, 31286);
                         else {
@@ -688,7 +687,7 @@ final class Class348_Sub51 extends Class348 {
                                     = new Class239_Sub7(class348_sub49
                                     .method3387(255),
                                     this);
-                            if ((i_4_ ^ 0xffffffff) <= -25)
+                            if (i_4_ >= 24)
                                 this.aClass239_Sub3_7222
                                         = new Class239_Sub3(class348_sub49
                                         .method3387(255),
@@ -839,7 +838,7 @@ final class Class348_Sub51 extends Class348 {
                 aClass199_7221 = null;
             Field[] fields_5_ = fields;
             for (int i_6_ = 0;
-                 (i_6_ ^ 0xffffffff) > (fields_5_.length ^ 0xffffffff);
+                 fields_5_.length > i_6_;
                  i_6_++) {
                 Field field = fields_5_[i_6_];
                 if ((aClass7273 != null ? aClass7273
@@ -1031,9 +1030,8 @@ final class Class348_Sub51 extends Class348 {
                     .aBoolean3777),
                     Class226.anInt2964,
                     Class348_Sub40_Sub29.anInt9372,
-                    (Class297.aString3780.toLowerCase()
-                            .indexOf("arm")
-                            ^ 0xffffffff) != 0);
+                    Class297.aString3780.toLowerCase()
+                            .indexOf("arm") != -1);
             this.aClass239_Sub25_7271
                     = new Class239_Sub25(i, this);
             method3423(true, 31286);

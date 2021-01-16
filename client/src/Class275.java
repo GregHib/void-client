@@ -18,15 +18,13 @@ final class Class275 {
             return 0;
         int i_3_ = i >> 937361225;
         int i_4_ = i_2_ >> -1589419447;
-        if ((i_3_ ^ 0xffffffff) > -1 || (i_4_ ^ 0xffffffff) > -1
+        if (i_3_ < 0 || i_4_ < 0
                 || i_3_ > -1 + Class367_Sub4.anInt7319
-                || ((Class348_Sub40_Sub3.anInt9109 + -1 ^ 0xffffffff)
-                > (i_4_ ^ 0xffffffff)))
+                || (i_4_ > Class348_Sub40_Sub3.anInt9109 + -1))
             return 0;
         int i_5_ = i_0_;
-        if ((i_5_ ^ 0xffffffff) > -4
-                && (Class348_Sub33.aByteArrayArrayArray6962[1][i_3_][i_4_] & 0x2
-                ^ 0xffffffff) != -1)
+        if (i_5_ < 3
+                && (Class348_Sub33.aByteArrayArrayArray6962[1][i_3_][i_4_] & 0x2) != 0)
             i_5_++;
         if (i_1_ != 11219)
             aHashtable3548 = null;
@@ -43,7 +41,7 @@ final class Class275 {
 
     static final boolean method2066(byte i) {
         anInt3553++;
-        if ((Class240.anInt4674 ^ 0xffffffff) > -2)
+        if (Class240.anInt4674 < 1)
             return false;
         if (i < 101)
             method2065(66);

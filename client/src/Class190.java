@@ -32,7 +32,7 @@ final class Class190 {
         Class348_Sub40_Sub4.aClass101_9114
                 .method897(i_1_, i, i_0_, Class318_Sub1_Sub5_Sub2.anIntArray10172);
         int i_3_ = Class318_Sub1_Sub5_Sub2.anIntArray10172[2];
-        if ((i_3_ ^ 0xffffffff) > -51)
+        if (i_3_ < 50)
             return false;
         Class318_Sub1_Sub5_Sub2.anIntArray10172[2] = i_3_;
         Class318_Sub1_Sub5_Sub2.anIntArray10172[0]
@@ -61,15 +61,15 @@ final class Class190 {
         anInt2543++;
         if (i != 84)
             return false;
-        return ((class190_4_.anInt2540 ^ 0xffffffff) == (this.anInt2540 ^ 0xffffffff))
+        return (this.anInt2540 == class190_4_.anInt2540)
                 && (this.aFloat2547 == class190_4_.aFloat2547)
                 && (class190_4_.aFloat2544 == this.aFloat2544)
                 && (this.aFloat2536 == class190_4_.aFloat2536)
                 && (class190_4_.aFloat2542 == this.aFloat2542)
                 && (class190_4_.aFloat2545 == this.aFloat2545)
                 && (class190_4_.aFloat2551 == this.aFloat2551)
-                && ((this.anInt2549 ^ 0xffffffff) == (class190_4_.anInt2549 ^ 0xffffffff))
-                && ((this.anInt2546 ^ 0xffffffff) == (class190_4_.anInt2546 ^ 0xffffffff))
+                && (class190_4_.anInt2549 == this.anInt2549)
+                && (class190_4_.anInt2546 == this.anInt2546)
                 && (class190_4_.aClass299_2541 == this.aClass299_2541);
     }
 
@@ -180,7 +180,7 @@ final class Class190 {
                     }
                     i_19_ = i_6_ + i_16_ + -(i_18_ / 2);
                     i_20_ = i_6_ + i_16_ + i_18_ / 2;
-                    if ((i_19_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff))
+                    if (i_7_ > i_19_)
                         i_7_ = i_19_;
                     i_21_ = i_17_ + i_5_;
                     if (i_20_ > i_8_)
@@ -188,22 +188,22 @@ final class Class190 {
                     i_22_ = i_5_ + (i_17_ + class323.method2565() * i_15_);
                     if (i_9_ > i_21_)
                         i_9_ = i_21_;
-                    if ((i_22_ ^ 0xffffffff) < (i_10_ ^ 0xffffffff))
+                    if (i_10_ < i_22_)
                         i_10_ = i_22_;
                 }
             }
             if (Class75.anInt1272 > i_8_
-                    || (Class75.anInt1276 ^ 0xffffffff) > (i_7_ ^ 0xffffffff)
-                    || (Class75.anInt1262 ^ 0xffffffff) < (i_10_ ^ 0xffffffff)
+                    || i_7_ > Class75.anInt1276
+                    || i_10_ < Class75.anInt1262
                     || i_9_ > Class75.anInt1268)
                 return true;
             Class75.method745(var_ha, class348_sub21, class42);
             if (class105 != null) {
-                if ((Class367_Sub9.anInt7379 ^ 0xffffffff) < -1
+                if (Class367_Sub9.anInt7379 > 0
                         && ((Class348_Sub40_Sub30.anInt9399 != -1
                         && (Class348_Sub40_Sub30.anInt9399
                         == class348_sub21.anInt6847))
-                        || ((Class34.anInt481 ^ 0xffffffff) != 0
+                        || (Class34.anInt481 != -1
                         && (class42.anInt596
                         == Class34.anInt481)))) {
                     int i_25_;
@@ -304,39 +304,38 @@ final class Class190 {
 
     Class190(Class348_Sub49 class348_sub49) {
         int i = class348_sub49.method3387(255);
-        if ((Class316.aClass348_Sub51_3959
-                .aClass239_Sub28_7230.method1845(-32350)
-                ^ 0xffffffff) != -2
-                || (Class60.aHa1098.method3704() ^ 0xffffffff) >= -1) {
-            if ((0x1 & i ^ 0xffffffff) != -1)
+        if (Class316.aClass348_Sub51_3959
+                .aClass239_Sub28_7230.method1845(-32350) != 1
+                || Class60.aHa1098.method3704() <= 0) {
+            if ((0x1 & i) != 0)
                 class348_sub49.method3385((byte) -126);
             if ((0x2 & i) != 0)
                 class348_sub49.method3330(842397944);
             if ((i & 0x4) != 0)
                 class348_sub49.method3330(842397944);
-            if ((0x8 & i ^ 0xffffffff) != -1)
+            if ((0x8 & i) != 0)
                 class348_sub49.method3330(842397944);
             this.anInt2540 = Class268.anInt3439;
             this.aFloat2547 = 1.1523438F;
             this.aFloat2544 = 0.69921875F;
             this.aFloat2536 = 1.2F;
         } else {
-            if ((i & 0x1 ^ 0xffffffff) != -1)
+            if ((i & 0x1) != 0)
                 this.anInt2540
                         = class348_sub49.method3385((byte) -126);
             else
                 this.anInt2540 = Class268.anInt3439;
-            if ((0x2 & i ^ 0xffffffff) != -1)
+            if ((0x2 & i) != 0)
                 this.aFloat2547
                         = (float) class348_sub49.method3330(842397944) / 256.0F;
             else
                 this.aFloat2547 = 1.1523438F;
-            if ((i & 0x4 ^ 0xffffffff) == -1)
+            if ((i & 0x4) == 0)
                 this.aFloat2544 = 0.69921875F;
             else
                 this.aFloat2544
                         = (float) class348_sub49.method3330(842397944) / 256.0F;
-            if ((0x8 & i ^ 0xffffffff) != -1)
+            if ((0x8 & i) != 0)
                 this.aFloat2536
                         = (float) class348_sub49.method3330(842397944) / 256.0F;
             else
@@ -351,12 +350,12 @@ final class Class190 {
             this.anInt2548 = class348_sub49.method3372(13638);
             this.anInt2535 = class348_sub49.method3372(13638);
         }
-        if ((0x20 & i ^ 0xffffffff) == -1)
+        if ((0x20 & i) == 0)
             this.anInt2549 = Class268.anInt3444;
         else
             this.anInt2549
                     = class348_sub49.method3385((byte) -126);
-        if ((i & 0x40 ^ 0xffffffff) != -1)
+        if ((i & 0x40) != 0)
             this.anInt2546 = class348_sub49.method3330(842397944);
         else
             this.anInt2546 = 0;

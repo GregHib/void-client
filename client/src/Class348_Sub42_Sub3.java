@@ -21,27 +21,25 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         if (i_1_ < 1)
             i_1_ = 1;
         anInt9507++;
-        if ((i_3_ ^ 0xffffffff) > -2)
+        if (i_3_ < 1)
             i_3_ = 1;
         int i_4_ = i_3_ - 334;
         if (i_4_ < 0)
             i_4_ = 0;
-        else if ((i_4_ ^ 0xffffffff) < -101)
+        else if (i_4_ > 100)
             i_4_ = 100;
         int i_5_ = ((-Class110.aShort1700 + Class168.aShort2250) * i_4_ / 100
                 + Class110.aShort1700);
-        if ((Class348_Sub42_Sub8.aShort9555 ^ 0xffffffff)
-                < (i_5_ ^ 0xffffffff))
+        if (i_5_ < Class348_Sub42_Sub8.aShort9555)
             i_5_ = Class348_Sub42_Sub8.aShort9555;
         else if (Class48.aShort851 < i_5_)
             i_5_ = Class48.aShort851;
         int i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334);
         if (i_6_ >= Class367_Sub8.aShort7355) {
-            if ((Class171.aShort2269 ^ 0xffffffff) > (i_6_ ^ 0xffffffff)) {
+            if (i_6_ > Class171.aShort2269) {
                 i_6_ = Class171.aShort2269;
                 i_5_ = i_1_ * i_6_ * 334 / (i_3_ * 512);
-                if ((Class348_Sub42_Sub8.aShort9555 ^ 0xffffffff)
-                        < (i_5_ ^ 0xffffffff)) {
+                if (i_5_ < Class348_Sub42_Sub8.aShort9555) {
                     i_5_ = Class348_Sub42_Sub8.aShort9555;
                     int i_7_ = i_6_ * (i_1_ * 334) / (i_5_ * 512);
                     int i_8_ = (-i_7_ + i_3_) / 2;
@@ -61,7 +59,7 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         } else {
             i_6_ = Class367_Sub8.aShort7355;
             i_5_ = i_6_ * (i_1_ * 334) / (i_3_ * 512);
-            if ((i_5_ ^ 0xffffffff) < (Class48.aShort851 ^ 0xffffffff)) {
+            if (Class48.aShort851 < i_5_) {
                 i_5_ = Class48.aShort851;
                 int i_9_ = i_5_ * i_3_ * 512 / (334 * i_6_);
                 int i_10_ = (i_1_ + -i_9_) / 2;
@@ -94,12 +92,10 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
             int i_13_ = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                     .anIntArray10317[0])
                     >> 1031515907);
-            if ((i_12_ ^ 0xffffffff) > -1
+            if (i_12_ < 0
                     || Class367_Sub4.anInt7319 >> -1390409597 <= i_12_
-                    || (i_13_ ^ 0xffffffff) > -1
-                    || ((i_13_ ^ 0xffffffff)
-                    <= (Class348_Sub40_Sub3.anInt9109 >> 269827523
-                    ^ 0xffffffff)))
+                    || i_13_ < 0
+                    || (Class348_Sub40_Sub3.anInt9109 >> 269827523 <= i_13_))
                 Class346_Sub1.method2703(0,
                         Class367_Sub4.anInt7319 >> -887543164,
                         (Class348_Sub40_Sub3.anInt9109

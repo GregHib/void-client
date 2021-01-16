@@ -27,7 +27,7 @@ final class Class273 implements Interface21 {
             return true;
         return ((Class156.method1241(i_1_, i, -128)
                 | Class239_Sub1.method1722(i, i_1_, (byte) 92))
-                & (0x37 & i_1_ ^ 0xffffffff) == -1);
+                & (0x37 & i_1_) == 0);
     }
 
     static int method2057(int i, int i_2_) {

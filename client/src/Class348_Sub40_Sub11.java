@@ -25,22 +25,19 @@ final class Class348_Sub40_Sub11 extends Class348_Sub40 {
             anIntArray9185 = null;
         if (this.aClass191_7032.aBoolean2570) {
             int i_1_ = Class239_Sub18.anIntArray6035[i];
-            for (int i_2_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_2_ ^ 0xffffffff)); i_2_++) {
+            for (int i_2_ = 0; (i_2_ < Class348_Sub40_Sub6.anInt9139); i_2_++) {
                 int i_3_ = Class318_Sub6.anIntArray6432[i_2_];
-                if ((i_3_ ^ 0xffffffff) < (anInt9187 ^ 0xffffffff)
-                        && (i_3_ ^ 0xffffffff) > (4096 - anInt9187 ^ 0xffffffff)
-                        && (2048 + -anInt9187 ^ 0xffffffff) > (i_1_ ^ 0xffffffff)
-                        && (2048 + anInt9187 ^ 0xffffffff) < (i_1_ ^ 0xffffffff)) {
+                if (anInt9187 < i_3_
+                        && 4096 - anInt9187 > i_3_
+                        && i_1_ > 2048 + -anInt9187
+                        && i_1_ < 2048 + anInt9187) {
                     int i_4_ = -i_3_ + 2048;
                     i_4_ = i_4_ < 0 ? -i_4_ : i_4_;
                     i_4_ <<= 12;
                     i_4_ /= 2048 - anInt9187;
                     is[i_2_] = -i_4_ + 4096;
-                } else if ((i_3_ ^ 0xffffffff) < (2048 - anInt9187
-                        ^ 0xffffffff)
-                        && (i_3_ ^ 0xffffffff) > (anInt9187 + 2048
-                        ^ 0xffffffff)) {
+                } else if (2048 - anInt9187 < i_3_
+                        && anInt9187 + 2048 > i_3_) {
                     int i_5_ = i_1_ + -2048;
                     i_5_ = i_5_ < 0 ? -i_5_ : i_5_;
                     i_5_ -= anInt9187;
@@ -54,7 +51,7 @@ final class Class348_Sub40_Sub11 extends Class348_Sub40 {
                     is[i_2_] = i_6_ / (2048 + -anInt9187);
                 } else if (i_3_ < anInt9187 || i_3_ > 4096 + -anInt9187) {
                     int i_7_ = 2048 + -i_1_;
-                    i_7_ = (i_7_ ^ 0xffffffff) > -1 ? -i_7_ : i_7_;
+                    i_7_ = i_7_ < 0 ? -i_7_ : i_7_;
                     i_7_ <<= 12;
                     i_7_ /= 2048 + -anInt9187;
                     is[i_2_] = 4096 - i_7_;

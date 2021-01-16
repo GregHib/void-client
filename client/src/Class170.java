@@ -34,10 +34,8 @@ final class Class170 implements Interface17 {
                 : (Class348_Sub14) aClass356_5070.method3482(0));
              class348_sub14 != null;
              class348_sub14 = (Class348_Sub14) aClass356_5070.method3482(0)) {
-            if (((class348_sub14.aLong6762
-                    & 0x3fffffffffffffffL)
-                    ^ 0xffffffffffffffffL)
-                    > (l ^ 0xffffffffffffffffL)) {
+            if (l > (class348_sub14.aLong6762
+                    & 0x3fffffffffffffffL)) {
                 if ((0x4000000000000000L
                         & class348_sub14.aLong6762)
                         != 0L) {
@@ -91,7 +89,7 @@ final class Class170 implements Interface17 {
         int i_12_ = class146.anInt2020;
         int i_13_ = Class129.anIntArray1885[-i_11_ + i_12_];
         if (i_8_ < (i_9_ ^ 0xffffffff)
-                || (i_9_ ^ 0xffffffff) < (i_13_ ^ 0xffffffff))
+                || i_13_ < i_9_)
             i_9_ = 0;
         i_13_ <<= i_11_;
         method1306((byte) -78,
@@ -135,8 +133,7 @@ final class Class170 implements Interface17 {
         anInt5064++;
         if (i != 5139)
             anInt5065 = 62;
-        for (int i_21_ = 0; ((Class348_Sub1.anIntArray6547.length ^ 0xffffffff)
-                < (i_21_ ^ 0xffffffff)); i_21_++) {
+        for (int i_21_ = 0; (i_21_ < Class348_Sub1.anIntArray6547.length); i_21_++) {
             int i_22_ = Class348_Sub1.anIntArray6547[i_21_];
             Class143 class143 = Class239_Sub10.method1766((byte) -86, i_22_,
                     s.aClass45_4585);
@@ -177,13 +174,12 @@ final class Class170 implements Interface17 {
 
     final void method1314(byte i) {
         for (int i_26_ = 0;
-             ((Class269.aClass217_3453.anInt2845 ^ 0xffffffff)
-                     < (i_26_ ^ 0xffffffff));
+             (i_26_ < Class269.aClass217_3453.anInt2845);
              i_26_++) {
             Class159 class159
                     = Class269.aClass217_3453.method1588(-105, i_26_);
             if (class159 != null
-                    && (class159.anInt2125 ^ 0xffffffff) == -1) {
+                    && class159.anInt2125 == 0) {
                 anIntArray5078[i_26_] = 0;
                 this.anIntArray5063[i_26_] = 0;
             }
@@ -203,8 +199,7 @@ final class Class170 implements Interface17 {
     static final void method1315(int i) {
         anInt5077++;
         if (Class318_Sub1_Sub5.aClass144_8766 != null) {
-            if ((Class318_Sub1_Sub5.aClass144_8766.anInt1997 ^ 0xffffffff)
-                    == -2) {
+            if (Class318_Sub1_Sub5.aClass144_8766.anInt1997 == 1) {
                 Class318_Sub1_Sub5.aClass144_8766 = null;
                 return;
             }
@@ -227,7 +222,7 @@ final class Class170 implements Interface17 {
         if (i < -56) {
             int i_34_ = class146.anInt2020;
             int i_35_ = Class129.anIntArray1885[i_34_ - i_33_];
-            if ((i_31_ ^ 0xffffffff) > -1 || i_35_ < i_31_)
+            if (i_31_ < 0 || i_35_ < i_31_)
                 i_31_ = 0;
             i_35_ <<= i_33_;
             method1313((byte) 42,
@@ -254,7 +249,7 @@ final class Class170 implements Interface17 {
                     = (((Class348_Sub22) Class282.aClass356_3654.method3480(i_39_, -6008))
                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
             int i_40_ = Class299.aClass348_Sub49_Sub2_3813.method3387(255);
-            if ((0x10 & i_40_ ^ 0xffffffff) != -1)
+            if ((0x10 & i_40_) != 0)
                 i_40_ += Class299.aClass348_Sub49_Sub2_3813
                         .method3387(i ^ ~0xff00) << -1561154840;
             if ((0x2 & i_40_) != 0) {
@@ -284,9 +279,9 @@ final class Class170 implements Interface17 {
                                     .anIntArray10320[0]),
                             null, null, 0);
             }
-            if ((0x8 & i_40_ ^ 0xffffffff) != -1) {
+            if ((0x8 & i_40_) != 0) {
                 int[] is = new int[4];
-                for (int i_41_ = 0; (i_41_ ^ 0xffffffff) > -5; i_41_++) {
+                for (int i_41_ = 0; i_41_ < 4; i_41_++) {
                     is[i_41_] = Class299.aClass348_Sub49_Sub2_3813
                             .method3330(842397944);
                     if (is[i_41_] == 65535)
@@ -302,12 +297,12 @@ final class Class170 implements Interface17 {
                         = Class299.aClass348_Sub49_Sub2_3813.readLEShort(false);
                 int i_44_
                         = Class299.aClass348_Sub49_Sub2_3813.method3343((byte) 82);
-                if ((i_43_ ^ 0xffffffff) == -65536)
+                if (i_43_ == 65535)
                     i_43_ = -1;
                 int i_45_ = Class299.aClass348_Sub49_Sub2_3813.method3387(255);
                 int i_46_ = 0x7 & i_45_;
                 int i_47_ = (i_45_ & 0x79) >> 1196815907;
-                if ((i_47_ ^ 0xffffffff) == -16)
+                if (i_47_ == 15)
                     i_47_ = -1;
                 class318_sub1_sub3_sub3_sub1.method2437(i_46_, i_43_,
                         i ^ 0x3c569b2e, i_47_,
@@ -320,10 +315,10 @@ final class Class170 implements Interface17 {
                 int[] is_49_ = new int[i_48_];
                 int[] is_50_ = new int[i_48_];
                 for (int i_51_ = 0;
-                     (i_51_ ^ 0xffffffff) > (i_48_ ^ 0xffffffff); i_51_++) {
+                     i_48_ > i_51_; i_51_++) {
                     int i_52_ = Class299.aClass348_Sub49_Sub2_3813
                             .method3330(842397944);
-                    if ((i_52_ ^ 0xffffffff) == -65536)
+                    if (i_52_ == 65535)
                         i_52_ = -1;
                     is[i_51_] = i_52_;
                     is_49_[i_51_] = Class299.aClass348_Sub49_Sub2_3813
@@ -340,10 +335,10 @@ final class Class170 implements Interface17 {
                 int[] is = new int[i_53_];
                 int[] is_54_ = new int[i_53_];
                 for (int i_55_ = 0;
-                     (i_55_ ^ 0xffffffff) > (i_53_ ^ 0xffffffff); i_55_++) {
+                     i_53_ > i_55_; i_55_++) {
                     int i_56_
                             = Class299.aClass348_Sub49_Sub2_3813.method3355(124);
-                    if ((0xc000 & i_56_ ^ 0xffffffff) == -49153) {
+                    if ((0xc000 & i_56_) == 49152) {
                         int i_57_ = Class299.aClass348_Sub49_Sub2_3813
                                 .method3330(i + 842463480);
                         is[i_55_]
@@ -433,12 +428,12 @@ final class Class170 implements Interface17 {
                         .aClass348_Sub49_Sub2_3813
                         .method3330(842397944);
             }
-            if ((i_40_ & 0x40 ^ 0xffffffff) != -1) {
+            if ((i_40_ & 0x40) != 0) {
                 int i_58_ = Class299.aClass348_Sub49_Sub2_3813
                         .method3342((byte) -100);
                 if (i_58_ > 0) {
                     for (int i_59_ = 0;
-                         (i_59_ ^ 0xffffffff) > (i_58_ ^ 0xffffffff);
+                         i_58_ > i_59_;
                          i_59_++) {
                         int i_60_ = -1;
                         int i_61_ = -1;
@@ -446,7 +441,7 @@ final class Class170 implements Interface17 {
                         int i_63_ = Class299.aClass348_Sub49_Sub2_3813
                                 .method3382(-126);
                         if (i_63_ != 32767) {
-                            if ((i_63_ ^ 0xffffffff) != -32767)
+                            if (i_63_ != 32766)
                                 i_61_ = Class299.aClass348_Sub49_Sub2_3813
                                         .method3382(-123);
                             else
@@ -471,7 +466,7 @@ final class Class170 implements Interface17 {
                     }
                 }
             }
-            if ((i_40_ & 0x80 ^ 0xffffffff) != -1) {
+            if ((i_40_ & 0x80) != 0) {
                 class318_sub1_sub3_sub3_sub1
                         .anInt10275
                         = Class299.aClass348_Sub49_Sub2_3813.method3330(842397944);
@@ -491,7 +486,7 @@ final class Class170 implements Interface17 {
                         .anInt10264
                         = 100;
             }
-            if ((i_40_ & 0x800 ^ 0xffffffff) != -1) {
+            if ((i_40_ & 0x800) != 0) {
                 int i_66_
                         = Class299.aClass348_Sub49_Sub2_3813.method3330(842397944);
                 class318_sub1_sub3_sub3_sub1
@@ -519,7 +514,7 @@ final class Class170 implements Interface17 {
                         = Class299.aClass348_Sub49_Sub2_3813.readLEShort(false);
                 int i_68_ = Class299.aClass348_Sub49_Sub2_3813
                         .method3364((byte) -127);
-                if ((i_67_ ^ 0xffffffff) == -65536)
+                if (i_67_ == 65535)
                     i_67_ = -1;
                 int i_69_ = Class299.aClass348_Sub49_Sub2_3813
                         .method3342((byte) -116);

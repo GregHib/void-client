@@ -33,14 +33,14 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                 = (Exception_Sub1.aClass255_112.method1940
                 (-115, this.anInt10181));
         int i_0_ = class213.anInt2784;
-        if ((this.anInt10189 ^ 0xffffffff) != 0) {
+        if (this.anInt10189 != -1) {
             Class213 class213_1_
                     = (Exception_Sub1.aClass255_112.method1940
                     (74, this.anInt10189));
             if (class213_1_.anInt2784 > i_0_)
                 i_0_ = class213_1_.anInt2784;
         }
-        if ((this.anInt10180 ^ 0xffffffff) != 0) {
+        if (this.anInt10180 != -1) {
             Class213 class213_2_
                     = (Exception_Sub1.aClass255_112.method1940
                     (-88, this.anInt10180));
@@ -199,9 +199,9 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                     (byte) 5);
             int i_28_ = i_18_ >= i_21_ ? i_21_ : i_18_;
             int i_29_
-                    = (i_27_ ^ 0xffffffff) < (i_24_ ^ 0xffffffff) ? i_24_ : i_27_;
+                    = i_24_ < i_27_ ? i_24_ : i_27_;
             int i_30_
-                    = (i_21_ ^ 0xffffffff) > (i_27_ ^ 0xffffffff) ? i_21_ : i_27_;
+                    = i_27_ > i_21_ ? i_21_ : i_27_;
             if (i_15_ != 0) {
                 int i_31_ = ((int) (2607.5945876176133
                         * Math.atan2(i_28_ + -i_29_,
@@ -211,17 +211,17 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                     class101.method900(i_31_);
             }
             int i_32_
-                    = (i_18_ ^ 0xffffffff) <= (i_24_ ^ 0xffffffff) ? i_24_ : i_18_;
+                    = i_24_ <= i_18_ ? i_24_ : i_18_;
             int i_33_ = i_18_ - -i_27_;
             if (i_14_ != 0) {
                 int i_34_ = ((int) (2607.5945876176133
                         * Math.atan2(i_32_ - i_30_,
                         i_14_))
                         & 0x3fff);
-                if ((i_34_ ^ 0xffffffff) != -1)
+                if (i_34_ != 0)
                     class101.method908(-i_34_);
             }
-            if ((i_33_ ^ 0xffffffff) < (i_24_ + i_21_ ^ 0xffffffff))
+            if (i_24_ + i_21_ < i_33_)
                 i_33_ = i_24_ + i_21_;
             i_33_ = (i_33_ >> 46522977) + -this.anInt6382;
             if (i_33_ != 0)
@@ -234,7 +234,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                 = OutputStream_Sub2.method136(3, true, false);
         aBoolean10191 = false;
         anInt10184 = 0;
-        if ((this.anInt10180 ^ 0xffffffff) != 0) {
+        if (this.anInt10180 != -1) {
             Class64 class64
                     = (Exception_Sub1.aClass255_112.method1940
                     (i ^ 0x6c, this.anInt10180)
@@ -257,7 +257,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                 anInt10184 = class64.ma();
             }
         }
-        if ((this.anInt10189 ^ 0xffffffff) != 0) {
+        if (this.anInt10189 != -1) {
             Class64 class64
                     = (Exception_Sub1.aClass255_112.method1940
                     (i ^ ~0x3b, this.anInt10189)
@@ -277,7 +277,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                                     .aClass318_Sub3Array6414[1]),
                             Class132.anInt1906, 0);
                 aBoolean10191 |= class64.F();
-                if ((class64.ma() ^ 0xffffffff) < (anInt10184 ^ 0xffffffff))
+                if (anInt10184 < class64.ma())
                     anInt10184 = class64.ma();
             }
         }
@@ -298,7 +298,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                                 .aClass318_Sub3Array6414[0]),
                         Class132.anInt1906, 0);
             aBoolean10191 |= class64.F();
-            if ((class64.ma() ^ 0xffffffff) < (anInt10184 ^ 0xffffffff))
+            if (anInt10184 < class64.ma())
                 anInt10184 = class64.ma();
         }
         return class318_sub4;

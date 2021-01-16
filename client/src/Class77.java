@@ -27,7 +27,7 @@ final class Class77 {
                 = ((i & 0x37) != 0 ? Class126.method1113(i_0_, i, -7)
                 : Class348_Sub42_Sub8_Sub2.method3200(i_0_, i, (byte) 111));
         return bool | (Class274.method2058(i_0_, i, i_1_ ^ 0x1003d)
-                | (0x10000 & i_0_ ^ 0xffffffff) != -1);
+                | (0x10000 & i_0_) != 0);
     }
 
     private Class77() {
@@ -37,7 +37,7 @@ final class Class77 {
     Class77(int[] is) {
         anIntArray1296 = new int[256];
         anIntArray1289 = new int[256];
-        for (int i = 0; (i ^ 0xffffffff) > (is.length ^ 0xffffffff); i++)
+        for (int i = 0; is.length > i; i++)
             anIntArray1289[i] = is[i];
         method777(-94);
     }
@@ -53,7 +53,7 @@ final class Class77 {
         int i_9_;
         int i_2_
                 = i_3_ = i_4_ = i_5_ = i_6_ = i_7_ = i_8_ = i_9_ = -1640531527;
-        for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -5; i_10_++) {
+        for (int i_10_ = 0; i_10_ < 4; i_10_++) {
             i_2_ ^= i_3_ << 522744683;
             i_5_ += i_2_;
             i_3_ += i_4_;
@@ -172,7 +172,7 @@ final class Class77 {
 
     final int method778(byte i) {
         anInt1300++;
-        if ((anInt1292 ^ 0xffffffff) == -1) {
+        if (anInt1292 == 0) {
             method779(false);
             anInt1292 = 256;
         }
@@ -184,10 +184,10 @@ final class Class77 {
     private final void method779(boolean bool) {
         anInt1301++;
         anInt1291 += ++anInt1294;
-        for (int i = 0; (i ^ 0xffffffff) > -257; i++) {
+        for (int i = 0; i < 256; i++) {
             int i_13_ = anIntArray1296[i];
             if ((i & 0x2) != 0) {
-                if ((0x1 & i ^ 0xffffffff) == -1)
+                if ((0x1 & i) == 0)
                     anInt1293 ^= anInt1293 << -853467134;
                 else
                     anInt1293 ^= anInt1293 >>> 1323677776;
@@ -213,11 +213,11 @@ final class Class77 {
         if (i_15_ != 0)
             return true;
         anInt1299++;
-		return (0x400 & i_16_ ^ 0xffffffff) != -1;
+		return (0x400 & i_16_) != 0;
 	}
 
     final int method781(byte i) {
-        if ((anInt1292 ^ 0xffffffff) == -1) {
+        if (anInt1292 == 0) {
             method779(false);
             anInt1292 = 256;
         }

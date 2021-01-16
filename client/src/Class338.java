@@ -44,7 +44,7 @@ final class Class338 {
             Class251.method1913(!bool, i_2_ + -104, class46);
         if (!bool)
             Class66.method703(i);
-        if (!bool && (r.anInt9721 ^ 0xffffffff) != 0)
+        if (!bool && r.anInt9721 != -1)
             Class239_Sub12.method1775((byte) -8, r.anInt9721, 1);
         return class348_sub41;
     }
@@ -59,24 +59,24 @@ final class Class338 {
     static final void method2663(int i, int i_3_, int i_4_, int i_5_,
                                  int i_6_) {
         anInt4195++;
-        if ((Class348_Sub49.anInt7207 ^ 0xffffffff) == -2) {
+        if (Class348_Sub49.anInt7207 == 1) {
             int i_7_ = i_3_ / Class58.anInt1067;
             int i_8_ = i_4_ / Class58.anInt1067;
             int i_9_ = i_5_ / Class344.anInt4267;
             int i_10_ = i_6_ / Class344.anInt4267;
-            if (i_7_ < Class31.anInt425 && (i_8_ ^ 0xffffffff) <= -1
-                    && Class250.anInt3225 > i_9_ && (i_10_ ^ 0xffffffff) <= -1
+            if (i_7_ < Class31.anInt425 && i_8_ >= 0
+                    && Class250.anInt3225 > i_9_ && i_10_ >= 0
                     && i == -5590) {
                 if (i_8_ >= Class31.anInt425)
                     i_8_ = -1 + Class31.anInt425;
                 if (i_9_ < 0)
                     i_9_ = 0;
-                if ((Class250.anInt3225 ^ 0xffffffff) >= (i_10_ ^ 0xffffffff))
+                if (i_10_ >= Class250.anInt3225)
                     i_10_ = Class250.anInt3225 + -1;
-                if ((i_7_ ^ 0xffffffff) > -1)
+                if (i_7_ < 0)
                     i_7_ = 0;
                 for (int i_11_ = i_9_;
-                     (i_10_ ^ 0xffffffff) <= (i_11_ ^ 0xffffffff); i_11_++) {
+                     i_11_ <= i_10_; i_11_++) {
                     int i_12_
                             = (Class350.method3452(i_11_ + Class286.anInt3682,
                             (byte) -15, Class250.anInt3225)

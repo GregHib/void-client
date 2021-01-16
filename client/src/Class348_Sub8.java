@@ -35,10 +35,8 @@ final class Class348_Sub8 extends Class348 {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_0_ = null;
             if (class318_sub1_sub3_sub3.anInt10275
                     >= 32768) {
-                if (((class318_sub1_sub3_sub3
-                        .anInt10275)
-                        ^ 0xffffffff)
-                        <= -32769)
+                if ((class318_sub1_sub3_sub3
+                        .anInt10275) >= 32768)
                     class318_sub1_sub3_sub3_0_
                             = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058
                             [class318_sub1_sub3_sub3.anInt10275 + -32768]);
@@ -60,7 +58,7 @@ final class Class348_Sub8 extends Class348 {
                 int i_2_ = (class318_sub1_sub3_sub3.anInt6388
                         + -(class318_sub1_sub3_sub3_0_
                         .anInt6388));
-                if ((i_1_ ^ 0xffffffff) != -1 || i_2_ != 0)
+                if (i_1_ != 0 || i_2_ != 0)
                     class318_sub1_sub3_sub3.method2440
                             ((byte) 49, 0x3fff & (int) (Math.atan2(i_1_,
                                     i_2_)
@@ -70,13 +68,11 @@ final class Class348_Sub8 extends Class348 {
         if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
             Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                     = (Class318_Sub1_Sub3_Sub3_Sub2) class318_sub1_sub3_sub3;
-            if (((class318_sub1_sub3_sub3_sub2
-                    .anInt10524)
-                    ^ 0xffffffff) != 0
+            if ((class318_sub1_sub3_sub3_sub2
+                    .anInt10524) != -1
                     && ((class318_sub1_sub3_sub3_sub2
                     .anInt10319) == 0
-                    || (class318_sub1_sub3_sub3_sub2.anInt10326
-                    ^ 0xffffffff) < -1)) {
+                    || class318_sub1_sub3_sub3_sub2.anInt10326 > 0)) {
                 class318_sub1_sub3_sub3_sub2.method2440
                         ((byte) 49, class318_sub1_sub3_sub3_sub2.anInt10524);
                 class318_sub1_sub3_sub3_sub2
@@ -91,8 +87,7 @@ final class Class348_Sub8 extends Class348 {
                     .anInt10499) != -1
                     && ((class318_sub1_sub3_sub3_sub1
                     .anInt10319) == 0
-                    || (class318_sub1_sub3_sub3_sub1.anInt10326
-                    ^ 0xffffffff) < -1)) {
+                    || class318_sub1_sub3_sub3_sub1.anInt10326 > 0)) {
                 int i_3_ = (-((-za_Sub2.anInt9780
                         + class318_sub1_sub3_sub3_sub1.anInt10499
                         - za_Sub2.anInt9780)
@@ -103,7 +98,7 @@ final class Class348_Sub8 extends Class348 {
                         = (class318_sub1_sub3_sub3_sub1.anInt6388
                         - 256 * (class318_sub1_sub3_sub3_sub1.anInt10512
                         + (-Class90.anInt1517 + -Class90.anInt1517)));
-                if (i_3_ != 0 || (i_4_ ^ 0xffffffff) != -1)
+                if (i_3_ != 0 || i_4_ != 0)
                     class318_sub1_sub3_sub3_sub1.method2440
                             ((byte) 49, 0x3fff & (int) (Math.atan2(i_3_,
                                     i_4_)
@@ -142,7 +137,7 @@ final class Class348_Sub8 extends Class348 {
             aBooleanArrayArray6656 = null;
         Class364[] class364s = Class348_Sub40_Sub28.method3122((byte) 91);
         for (int i_6_ = 0;
-             (i_6_ ^ 0xffffffff) > (class364s.length ^ 0xffffffff); i_6_++) {
+             class364s.length > i_6_; i_6_++) {
             Class364 class364 = class364s[i_6_];
             if (class364.anInt4466 == i_5_)
                 return class364;

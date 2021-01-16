@@ -29,8 +29,7 @@ final class Class286_Sub7 extends Class286 {
             String string_0_ = Class285_Sub1.method2127(2, string);
             if (string_0_ != null) {
                 for (int i = 0;
-                     ((i ^ 0xffffffff)
-                             > (Class348_Sub40_Sub30.anInt9383 ^ 0xffffffff));
+                     (Class348_Sub40_Sub30.anInt9383 > i);
                      i++) {
                     String string_1_ = Class83.aStringArray1441[i];
                     if (string_1_.startsWith("*"))
@@ -241,9 +240,7 @@ final class Class286_Sub7 extends Class286 {
     final void method2133(int i) {
         aClass61_6284.method594('\001', 28666);
         anInt6282++;
-        if ((this.aHa_Sub2_3684.anInt7782
-                ^ 0xffffffff)
-                < -1) {
+        if (this.aHa_Sub2_3684.anInt7782 > 0) {
             this.aHa_Sub2_3684.method3738(-15039, 1);
             this.aHa_Sub2_3684.method3771((byte) -115, null);
             this.aHa_Sub2_3684.method3744(0.0F, 770, 1.0F);

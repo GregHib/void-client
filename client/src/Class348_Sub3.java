@@ -63,24 +63,21 @@ final class Class348_Sub3 extends Class348 {
                     short[] is_7_
                             = aS_Sub3_6566.aShortArrayArray8299[i_6_];
                     int i_8_ = anIntArray6573[i_6_];
-                    if ((i_8_ ^ 0xffffffff) != -1 && is_7_ != null) {
+                    if (i_8_ != 0 && is_7_ != null) {
                         int i_9_ = 0;
                         int i_10_ = 0;
-                        while ((is_7_.length ^ 0xffffffff)
-                                < (i_10_ ^ 0xffffffff)) {
-                            if ((i_8_ & 1 << i_9_++ ^ 0xffffffff) == -1)
+                        while (i_10_ < is_7_.length) {
+                            if ((i_8_ & 1 << i_9_++) == 0)
                                 i_10_ += 3;
                             else {
                                 i_2_++;
-                                for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -4;
+                                for (int i_11_ = 0; i_11_ < 3;
                                      i_11_++) {
                                     int i_12_ = 0xffff & is_7_[i_10_++];
-                                    if ((i_3_ ^ 0xffffffff)
-                                            < (i_12_ ^ 0xffffffff))
+                                    if (i_12_ < i_3_)
                                         i_3_ = i_12_;
                                     stream.d(i_12_);
-                                    if ((i_12_ ^ 0xffffffff)
-                                            < (i_4_ ^ 0xffffffff))
+                                    if (i_4_ < i_12_)
                                         i_4_ = i_12_;
                                 }
                             }
@@ -93,22 +90,19 @@ final class Class348_Sub3 extends Class348 {
                     short[] is_15_
                             = aS_Sub3_6566.aShortArrayArray8299[i_14_];
                     int i_16_ = anIntArray6573[i_14_];
-                    if ((i_16_ ^ 0xffffffff) != -1 && is_15_ != null) {
+                    if (i_16_ != 0 && is_15_ != null) {
                         int i_17_ = 0;
                         int i_18_ = 0;
-                        while ((i_18_ ^ 0xffffffff)
-                                > (is_15_.length ^ 0xffffffff)) {
-                            if ((1 << i_17_++ & i_16_ ^ 0xffffffff) != -1) {
+                        while (is_15_.length > i_18_) {
+                            if ((1 << i_17_++ & i_16_) != 0) {
                                 i_2_++;
-                                for (int i_19_ = 0; (i_19_ ^ 0xffffffff) > -4;
+                                for (int i_19_ = 0; i_19_ < 3;
                                      i_19_++) {
                                     int i_20_ = 0xffff & is_15_[i_18_++];
-                                    if ((i_20_ ^ 0xffffffff)
-                                            > (i_3_ ^ 0xffffffff))
+                                    if (i_3_ > i_20_)
                                         i_3_ = i_20_;
                                     stream.a(i_20_);
-                                    if ((i_4_ ^ 0xffffffff)
-                                            > (i_20_ ^ 0xffffffff))
+                                    if (i_20_ > i_4_)
                                         i_4_ = i_20_;
                                 }
                             } else
@@ -118,12 +112,11 @@ final class Class348_Sub3 extends Class348 {
                 }
             }
             stream.a();
-            if (interface5_impl2.method22(i + 7) && (i_2_ ^ 0xffffffff) < -1) {
+            if (interface5_impl2.method22(i + 7) && i_2_ > 0) {
                 aHa_Sub3_6590.method3814((aS_Sub3_6566.anInt8294
                                 & 0x8) != 0,
-                        ((0x7
-                                & aS_Sub3_6566.anInt8294)
-                                ^ 0xffffffff) != -1,
+                        (0x7
+                                & aS_Sub3_6566.anInt8294) != 0,
                         this.anInt6567,
                         (byte) 48);
                 if (aHa_Sub3_6590.aBoolean8160)
@@ -172,17 +165,17 @@ final class Class348_Sub3 extends Class348 {
     }
 
     final void method2741(int i, float f, int i_24_, int i_25_, int i_26_) {
-        if ((this.anInt6567 ^ 0xffffffff) != 0) {
+        if (this.anInt6567 != -1) {
             Class12 class12
                     = aHa_Sub3_6590.aD4579
                     .method3(this.anInt6567, -6662);
             int i_27_ = class12.aByte201 & 0xff;
-            if ((i_27_ ^ 0xffffffff) != -1
+            if (i_27_ != 0
                     && class12.aByte213 != 4) {
                 int i_28_;
-                if ((i_25_ ^ 0xffffffff) > -1)
+                if (i_25_ < 0)
                     i_28_ = 0;
-                else if ((i_25_ ^ 0xffffffff) >= -128)
+                else if (i_25_ <= 127)
                     i_28_ = i_25_ * 131586;
                 else
                     i_28_ = 16777215;
@@ -199,7 +192,7 @@ final class Class348_Sub3 extends Class348 {
                     i_26_ = i_28_;
             }
             int i_31_ = 0xff & class12.aByte216;
-            if ((i_31_ ^ 0xffffffff) != -1) {
+            if (i_31_ != 0) {
                 i_31_ += 256;
                 int i_32_ = (0xff & i_26_ >> 630532432) * i_31_;
                 if (i_32_ > 65535)
@@ -224,17 +217,17 @@ final class Class348_Sub3 extends Class348 {
             int i_37_ = 0xff & i_26_;
             if (i_35_ < 0)
                 i_35_ = 0;
-            else if ((i_35_ ^ 0xffffffff) < -256)
+            else if (i_35_ > 255)
                 i_35_ = 255;
             i_36_ *= f;
             if (i_36_ < 0)
                 i_36_ = 0;
-            else if ((i_36_ ^ 0xffffffff) < -256)
+            else if (i_36_ > 255)
                 i_36_ = 255;
             i_37_ *= f;
             if (i_37_ < 0)
                 i_37_ = 0;
-            else if ((i_37_ ^ 0xffffffff) < -256)
+            else if (i_37_ > 255)
                 i_37_ = 255;
             i_26_ = i_37_ | (i_35_ << -1175233776 | i_36_ << 456301160);
         }

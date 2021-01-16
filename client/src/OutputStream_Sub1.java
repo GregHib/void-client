@@ -25,29 +25,24 @@ final class OutputStream_Sub1 extends OutputStream {
         if (Class147.aClass357ArrayArrayArray2029 == null)
             Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_,
                     i_2_, -16777216);
-        else if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
-                ^ 0xffffffff) > -1
+        else if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377 < 0
                 || (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
                 >= Class367_Sub4.anInt7319 * 512)
                 || Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388 < 0
-                || ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388
-                ^ 0xffffffff)
-                <= (512 * Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)))
+                || (512 * Class348_Sub40_Sub3.anInt9109 <= Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388))
             Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_,
                     i_2_, -16777216);
         else {
             Class239_Sub15.anInt6006++;
             if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 != null
-                    && ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
+                    && Class248.anInt3203 == (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377
                     + -(256 * Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                     .method2436((byte) 90))
                     - -256) >> -313379639
-                    ^ 0xffffffff) == (Class248.anInt3203 ^ 0xffffffff)
-                    && ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388
+                    && Class97.anInt1548 == (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388
                     + 256
                     + -(256 * Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                    .method2436((byte) 112))) >> 1733391561
-                    ^ 0xffffffff) == (Class97.anInt1548 ^ 0xffffffff)) {
+                    .method2436((byte) 112))) >> 1733391561) {
                 Class97.anInt1548 = -1;
                 Class248.anInt3203 = -1;
                 Class299_Sub1_Sub2.method2264(false);
@@ -65,8 +60,7 @@ final class OutputStream_Sub1 extends OutputStream {
             i_0_ = Class127.anInt4656;
             if (Class348_Sub40_Sub21.anInt9282 == 1) {
                 int i_4_ = (int) Class76.aFloat1287;
-                if ((i_4_ ^ 0xffffffff)
-                        > (Class348_Sub35.anInt6979 >> -2058606168 ^ 0xffffffff))
+                if (Class348_Sub35.anInt6979 >> -2058606168 > i_4_)
                     i_4_ = Class348_Sub35.anInt6979 >> 937303208;
                 if (Class181.aBooleanArray2374[4]
                         && Class255.anIntArray3273[4] + 128 > i_4_)
@@ -89,8 +83,7 @@ final class OutputStream_Sub1 extends OutputStream {
                 if (i_6_ < Class348_Sub35.anInt6979 >> 2080798280)
                     i_6_ = Class348_Sub35.anInt6979 >> -2131173688;
                 if (Class181.aBooleanArray2374[4]
-                        && ((Class255.anIntArray3273[4] + 128 ^ 0xffffffff)
-                        < (i_6_ ^ 0xffffffff)))
+                        && (i_6_ < Class255.anIntArray3273[4] + 128))
                     i_6_ = 128 + Class255.anIntArray3273[4];
                 int i_7_ = (int) Class314.aFloat3938 & 0x3fff;
                 Class17.method268
@@ -124,7 +117,7 @@ final class OutputStream_Sub1 extends OutputStream {
                             / 100.0))
                             * (double) (Class255.anIntArray3273
                             [i_13_])));
-                    if ((i_13_ ^ 0xffffffff) == -5) {
+                    if (i_13_ == 4) {
                         Class348_Sub42_Sub19.anInt9701 += i_14_;
                         if (Class348_Sub42_Sub19.anInt9701 >= 1024) {
                             if (Class348_Sub42_Sub19.anInt9701 > 3072)
@@ -132,13 +125,13 @@ final class OutputStream_Sub1 extends OutputStream {
                         } else
                             Class348_Sub42_Sub19.anInt9701 = 1024;
                     }
-                    if ((i_13_ ^ 0xffffffff) == -1)
+                    if (i_13_ == 0)
                         Class286_Sub4.anInt6246 += i_14_ << -2090649694;
-                    if ((i_13_ ^ 0xffffffff) == -4)
+                    if (i_13_ == 3)
                         Class5.anInt4638 = 0x3fff & i_14_ + Class5.anInt4638;
-                    if ((i_13_ ^ 0xffffffff) == -2)
+                    if (i_13_ == 1)
                         Class305.anInt3855 += i_14_ << 1737719458;
-                    if ((i_13_ ^ 0xffffffff) == -3)
+                    if (i_13_ == 2)
                         Class59_Sub2_Sub2.anInt8685 += i_14_ << 666991490;
                 }
             }
@@ -148,10 +141,9 @@ final class OutputStream_Sub1 extends OutputStream {
                     < Class286_Sub4.anInt6246)
                 Class286_Sub4.anInt6246
                         = -1 + (Class318_Sub7.anInt6451 << -1280769655);
-            if ((Class59_Sub2_Sub2.anInt8685 ^ 0xffffffff) > -1)
+            if (Class59_Sub2_Sub2.anInt8685 < 0)
                 Class59_Sub2_Sub2.anInt8685 = 0;
-            if (((Class348_Sub41.anInt7054 << -412209207) + -1 ^ 0xffffffff)
-                    > (Class59_Sub2_Sub2.anInt8685 ^ 0xffffffff))
+            if (Class59_Sub2_Sub2.anInt8685 > (Class348_Sub41.anInt7054 << -412209207) + -1)
                 Class59_Sub2_Sub2.anInt8685
                         = (Class348_Sub41.anInt7054 << -1496605559) - 1;
             Class348_Sub42_Sub11.method3225(114);
@@ -160,8 +152,7 @@ final class OutputStream_Sub1 extends OutputStream {
             Class226.method1626(1, true);
             if (Class59_Sub1.aBoolean5300) {
                 Class101_Sub3.method941(124, Class187.anInt2500);
-                if ((Class375.anInt4545 ^ 0xffffffff)
-                        != (Class132.anInt1906 ^ 0xffffffff))
+                if (Class132.anInt1906 != Class375.anInt4545)
                     Class348_Sub16_Sub2.aBoolean8870 = true;
                 Class375.anInt4545 = Class132.anInt1906;
             } else {
@@ -238,14 +229,13 @@ final class OutputStream_Sub1 extends OutputStream {
                                             .anInt6377) >> 1790545481,
                                     (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                             .anInt6388) >> 1598745993,
-                                    (Class316.aClass348_Sub51_3959
-                                            .aClass239_Sub1_7246.method1720(-32350)
-                                            ^ 0xffffffff) == -1,
+                                    Class316.aClass348_Sub51_3959
+                                            .aClass239_Sub1_7246.method1720(-32350) == 0,
                                     true,
                                     !Class305.aBoolean3870 ? -1 : Class132.anInt1906, 0,
                                     false);
                 Class369_Sub1.method3570(false);
-                if ((Class240.anInt4674 ^ 0xffffffff) == -11) {
+                if (Class240.anInt4674 == 10) {
                     Class19.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256);
                     ha_Sub2.method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256);
                     Class318_Sub1_Sub1_Sub2.method2403(i_1_, 256, i_3_, i_0_,

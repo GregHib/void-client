@@ -20,10 +20,10 @@ final class Class27 {
     static final void method312(int i, byte i_0_) {
         Class48.anInt859 = -1;
         if (i != 37) {
-            if ((i ^ 0xffffffff) != -51) {
+            if (i != 50) {
                 if (i != 75) {
                     if (i != 100) {
-                        if ((i ^ 0xffffffff) == -201)
+                        if (i == 200)
                             Class75.aFloat1249 = 16.0F;
                     } else
                         Class75.aFloat1249 = 8.0F;
@@ -42,18 +42,18 @@ final class Class27 {
     static final String method313(long l, int i) {
         try {
             anInt392++;
-            if (l <= 0L || (l ^ 0xffffffffffffffffL) <= -6582952005840035282L)
+            if (l <= 0L || l >= 6582952005840035281L)
                 return null;
             if (l % 37L == 0L)
                 return null;
             int i_1_ = 0;
-            for (long l_2_ = l; (l_2_ ^ 0xffffffffffffffffL) != -1L;
+            for (long l_2_ = l; l_2_ != 0;
                  l_2_ /= 37L)
                 i_1_++;
             if (i >= -82)
                 anInt396 = -58;
             StringBuffer stringbuffer = new StringBuffer(i_1_);
-            while ((l ^ 0xffffffffffffffffL) != -1L) {
+            while (l != 0) {
                 long l_3_ = l;
                 l /= 37L;
                 stringbuffer.append(Class48.aCharArray852[(int) (-(37L * l)
@@ -100,7 +100,7 @@ final class Class27 {
     static final void method317(String string, int i, boolean bool) {
         anInt391++;
         if (string != null) {
-            if ((Class348_Sub42_Sub12.anInt9604 ^ 0xffffffff) <= -101)
+            if (Class348_Sub42_Sub12.anInt9604 >= 100)
                 Class59.method544((Class274.aClass274_3522.method2063
                                 (Class348_Sub33.anInt6967, 544)),
                         false, 4);
@@ -108,8 +108,7 @@ final class Class27 {
                 String string_6_ = Class285_Sub1.method2127(2, string);
                 if (string_6_ != null) {
                     for (int i_7_ = 0;
-                         ((Class348_Sub42_Sub12.anInt9604 ^ 0xffffffff)
-                                 < (i_7_ ^ 0xffffffff));
+                         (i_7_ < Class348_Sub42_Sub12.anInt9604);
                          i_7_++) {
                         String string_8_
                                 = Class285_Sub1.method2127(2,

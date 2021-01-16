@@ -28,7 +28,7 @@ final class Class168 {
         if (i != 393216)
             anInt2251 = -106;
         return Class348_Sub42_Sub16_Sub1.method3262(i_0_, i_1_, 102)
-                | (i_0_ & 0x60000 ^ 0xffffffff) != -1
+                | (i_0_ & 0x60000) != 0
                 || Class348_Sub9.method2783(i_1_, (byte) -99, i_0_);
     }
 

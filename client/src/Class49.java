@@ -26,13 +26,13 @@ final class Class49 implements Interface4 {
         int i_1_ = 20 / ((i_0_ - -4) / 37);
         anInt4727++;
         int i_2_;
-        if ((i ^ 0xffffffff) < -12001) {
+        if (i > 12000) {
             Class133.method1140(73);
             i_2_ = 4;
         } else if (i > 5000) {
             Class47.method447((byte) -59);
             i_2_ = 3;
-        } else if ((i ^ 0xffffffff) >= -2001) {
+        } else if (i <= 2000) {
             i_2_ = 1;
             Class348_Sub40_Sub12.method3076(0, true);
         } else {

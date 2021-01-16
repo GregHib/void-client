@@ -93,37 +93,31 @@ final class Class112 implements Runnable {
             int i_2_ = Class258_Sub4.aClass373_8552.method3597(true);
             int i_3_ = Class258_Sub4.aClass373_8552.method3594((byte) 81);
             if (Class348_Sub42_Sub6.aBoolean9535) {
-                if ((Class135_Sub1.anInt4717 ^ 0xffffffff) <= (i_2_
-                        ^ 0xffffffff)
+                if (i_2_ <= Class135_Sub1.anInt4717
                         || i_2_ >= Class63.anInt1117 + Class135_Sub1.anInt4717) {
                     if (Class242.aClass348_Sub42_Sub13_3152 != null
                             && Class50_Sub3.anInt5252 < i_2_
-                            && (i_2_ ^ 0xffffffff) > ((Class348_Sub1_Sub1.anInt8806
-                            + Class50_Sub3.anInt5252)
-                            ^ 0xffffffff)) {
+                            && (Class348_Sub1_Sub1.anInt8806
+                            + Class50_Sub3.anInt5252) > i_2_) {
                         int i_4_ = -1;
                         for (int i_5_ = 0;
-                             ((i_5_ ^ 0xffffffff)
-                                     > ((Class242.aClass348_Sub42_Sub13_3152
-                                     .anInt9615)
-                                     ^ 0xffffffff));
+                             ((Class242.aClass348_Sub42_Sub13_3152
+                                     .anInt9615) > i_5_);
                              i_5_++) {
                             if (!Class71.aBoolean1211) {
                                 int i_6_ = i_5_ * 16 + 31 + Class373.anInt4534;
-                                if ((i_3_ ^ 0xffffffff) < (-13 + i_6_
-                                        ^ 0xffffffff)
+                                if (-13 + i_6_ < i_3_
                                         && i_6_ - -3 >= i_3_)
                                     i_4_ = i_5_;
                             } else {
                                 int i_7_
                                         = Class373.anInt4534 + (33 + 16 * i_5_);
                                 if (-13 + i_7_ < i_3_
-                                        && (i_3_ ^ 0xffffffff) >= (3 + i_7_
-                                        ^ 0xffffffff))
+                                        && 3 + i_7_ >= i_3_)
                                     i_4_ = i_5_;
                             }
                         }
-                        if ((i_4_ ^ 0xffffffff) != 0) {
+                        if (i_4_ != -1) {
                             int i_8_ = 0;
                             Class156 class156
                                     = new Class156(Class242
@@ -148,17 +142,14 @@ final class Class112 implements Runnable {
                         if (Class71.aBoolean1211) {
                             int i_11_ = (Class348_Sub42_Sub5.anInt9532 - -33
                                     - -(i_10_ * 16));
-                            if ((-13 + i_11_ ^ 0xffffffff) > (i_3_
-                                    ^ 0xffffffff)
+                            if (i_3_ > -13 + i_11_
                                     && i_3_ <= i_11_ + 3)
                                 i_9_ = i_10_;
                         } else {
                             int i_12_ = (i_10_ * 16 + 31
                                     + Class348_Sub42_Sub5.anInt9532);
-                            if ((-13 + i_12_ ^ 0xffffffff) > (i_3_
-                                    ^ 0xffffffff)
-                                    && (i_12_ + 3 ^ 0xffffffff) <= (i_3_
-                                    ^ 0xffffffff))
+                            if (i_3_ > -13 + i_12_
+                                    && i_3_ <= i_12_ + 3)
                                 i_9_ = i_10_;
                         }
                     }
@@ -182,8 +173,7 @@ final class Class112 implements Runnable {
                         }
                     }
                 }
-            } else if ((Class135_Sub1.anInt4717 ^ 0xffffffff) > (i_2_
-                    ^ 0xffffffff)
+            } else if (i_2_ > Class135_Sub1.anInt4717
                     && (i_2_
                     < Class135_Sub1.anInt4717 - -Class63.anInt1117)) {
                 int i_14_ = -1;
@@ -192,18 +182,18 @@ final class Class112 implements Runnable {
                         int i_16_
                                 = 31 + (Class348_Sub42_Sub5.anInt9532
                                 + (-i_15_ + (Class73.anInt4776 - 1)) * 16);
-                        if ((i_3_ ^ 0xffffffff) < (-13 + i_16_ ^ 0xffffffff)
+                        if (-13 + i_16_ < i_3_
                                 && i_16_ + 3 >= i_3_)
                             i_14_ = i_15_;
                     } else {
                         int i_17_ = ((-i_15_ + (-1 + Class73.anInt4776)) * 16
                                 + Class348_Sub42_Sub5.anInt9532 + 33);
                         if (i_3_ > i_17_ - 13
-                                && (i_3_ ^ 0xffffffff) >= (i_17_ + 3 ^ 0xffffffff))
+                                && i_17_ + 3 >= i_3_)
                             i_14_ = i_15_;
                     }
                 }
-                if ((i_14_ ^ 0xffffffff) != 0) {
+                if (i_14_ != -1) {
                     int i_18_ = 0;
                     Class312 class312
                             = new Class312(Class348_Sub40_Sub4.aClass262_9111);
@@ -259,13 +249,9 @@ final class Class112 implements Runnable {
                 }
             }
             try {
-                if (((class348_sub42_sub16_sub2
-                        .anInt10457)
-                        ^ 0xffffffff)
-                        != -3) {
-                    if ((class348_sub42_sub16_sub2.anInt10457
-                            ^ 0xffffffff)
-                            == -4)
+                if ((class348_sub42_sub16_sub2
+                        .anInt10457) != 2) {
+                    if (class348_sub42_sub16_sub2.anInt10457 == 3)
                         class348_sub42_sub16_sub2
                                 .aByteArray10461
                                 = (class348_sub42_sub16_sub2
@@ -309,8 +295,7 @@ final class Class112 implements Runnable {
                         == (long) i)
                         && (class348_sub42_sub16_sub2_21_.aClass137_10458
                         == class137)
-                        && (class348_sub42_sub16_sub2_21_.anInt10457
-                        ^ 0xffffffff) == -3) {
+                        && class348_sub42_sub16_sub2_21_.anInt10457 == 2) {
                     class348_sub42_sub16_sub2
                             .aByteArray10461
                             = class348_sub42_sub16_sub2_21_.aByteArray10461;
@@ -334,7 +319,7 @@ final class Class112 implements Runnable {
         Class144 class144 = class297.method2236(this, -10240, 5);
         while (class144.anInt1997 == 0)
             Class286_Sub5.method2161((byte) 43, 10L);
-        if ((class144.anInt1997 ^ 0xffffffff) == -3)
+        if (class144.anInt1997 == 2)
             throw new RuntimeException();
         aThread1733 = (Thread) class144.anObject1998;
     }

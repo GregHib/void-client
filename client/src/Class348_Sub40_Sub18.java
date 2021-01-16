@@ -20,11 +20,10 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
         int i_0_ = 0;
         class348_sub49_sub2.method3417(-87);
         for (int i_1_ = 0;
-             (Class328_Sub1.anInt6513 ^ 0xffffffff) < (i_1_ ^ 0xffffffff);
+             i_1_ < Class328_Sub1.anInt6513;
              i_1_++) {
             int i_2_ = Class286_Sub7.anIntArray6290[i_1_];
-            if ((0x1 & Class348_Sub5.aByteArray6624[i_2_] ^ 0xffffffff)
-                    == -1) {
+            if ((0x1 & Class348_Sub5.aByteArray6624[i_2_]) == 0) {
                 if (i_0_ > 0) {
                     Class348_Sub5.aByteArray6624[i_2_]
                             = (byte) Class273.method2057((Class348_Sub5
@@ -33,7 +32,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                     i_0_--;
                 } else {
                     int i_3_ = class348_sub49_sub2.method3410((byte) -24, 1);
-                    if ((i_3_ ^ 0xffffffff) == -1) {
+                    if (i_3_ == 0) {
                         i_0_ = Class318_Sub1_Sub3
                                 .method2413(1, class348_sub49_sub2);
                         Class348_Sub5.aByteArray6624[i_2_]
@@ -47,13 +46,12 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
             }
         }
         class348_sub49_sub2.method3412(false);
-        if ((i_0_ ^ 0xffffffff) != -1)
+        if (i_0_ != 0)
             throw new RuntimeException("nsn0");
         class348_sub49_sub2.method3417(-65);
         for (int i_4_ = 0; i_4_ < Class328_Sub1.anInt6513; i_4_++) {
             int i_5_ = Class286_Sub7.anIntArray6290[i_4_];
-            if ((0x1 & Class348_Sub5.aByteArray6624[i_5_] ^ 0xffffffff)
-                    != -1) {
+            if ((0x1 & Class348_Sub5.aByteArray6624[i_5_]) != 0) {
                 if (i_0_ > 0) {
                     Class348_Sub5.aByteArray6624[i_5_]
                             = (byte) Class273.method2057((Class348_Sub5
@@ -80,11 +78,10 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
         if (i_0_ != 0)
             throw new RuntimeException("nsn1");
         class348_sub49_sub2.method3417(i ^ ~0x5398);
-        for (int i_7_ = 0; ((Class348_Sub42_Sub4.anInt9513 ^ 0xffffffff)
-                < (i_7_ ^ 0xffffffff)); i_7_++) {
+        for (int i_7_ = 0; (i_7_ < Class348_Sub42_Sub4.anInt9513); i_7_++) {
             int i_8_ = Class135_Sub1.anIntArray4709[i_7_];
             if ((0x1 & Class348_Sub5.aByteArray6624[i_8_]) != 0) {
-                if ((i_0_ ^ 0xffffffff) < -1) {
+                if (i_0_ > 0) {
                     Class348_Sub5.aByteArray6624[i_8_]
                             = (byte) Class273.method2057((Class348_Sub5
                                     .aByteArray6624[i_8_]),
@@ -116,8 +113,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                 throw new RuntimeException("nsn2");
             class348_sub49_sub2.method3417(36);
             for (int i_10_ = 0;
-                 ((i_10_ ^ 0xffffffff)
-                         > (Class348_Sub42_Sub4.anInt9513 ^ 0xffffffff));
+                 (Class348_Sub42_Sub4.anInt9513 > i_10_);
                  i_10_++) {
                 int i_11_ = Class135_Sub1.anIntArray4709[i_10_];
                 if ((Class348_Sub5.aByteArray6624[i_11_] & 0x1) == 0) {
@@ -131,7 +127,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                     } else {
                         int i_12_
                                 = class348_sub49_sub2.method3410((byte) -24, 1);
-                        if ((i_12_ ^ 0xffffffff) == -1) {
+                        if (i_12_ == 0) {
                             i_0_ = Class318_Sub1_Sub3
                                     .method2413(1, class348_sub49_sub2);
                             Class348_Sub5.aByteArray6624[i_11_]
@@ -150,7 +146,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                 }
             }
             class348_sub49_sub2.method3412(false);
-            if ((i_0_ ^ 0xffffffff) != -1)
+            if (i_0_ != 0)
                 throw new RuntimeException("nsn3");
             Class328_Sub1.anInt6513 = 0;
             Class348_Sub42_Sub4.anInt9513 = 0;

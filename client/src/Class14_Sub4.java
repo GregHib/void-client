@@ -30,19 +30,19 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             method251((byte) 96);
         anInt8641++;
         int i_1_ = -i_0_ + i;
-        if ((i_1_ ^ 0xffffffff) > 8)
+        if (i_1_ < -9)
             return "<col=ff0000>";
         if (i_1_ < -6)
             return "<col=ff3000>";
-        if ((i_1_ ^ 0xffffffff) > 2)
+        if (i_1_ < -3)
             return "<col=ff7000>";
-        if ((i_1_ ^ 0xffffffff) > -1)
+        if (i_1_ < 0)
             return "<col=ffb000>";
-        if ((i_1_ ^ 0xffffffff) < -10)
+        if (i_1_ > 9)
             return "<col=00ff00>";
-        if ((i_1_ ^ 0xffffffff) < -7)
+        if (i_1_ > 6)
             return "<col=40ff00>";
-        if ((i_1_ ^ 0xffffffff) < -4)
+        if (i_1_ > 3)
             return "<col=80ff00>";
         if (i_1_ > 0)
             return "<col=c0ff00>";
@@ -154,7 +154,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         anInt8636++;
         if (i_11_ != 5126)
             aByteArrayArray8642 = null;
-        return i == 0 || (i ^ 0xffffffff) == -3;
+        return i == 0 || i == 2;
     }
 
     static final void method253(int i, int i_12_, int i_13_, int i_14_,
@@ -169,11 +169,11 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         Class135_Sub2.method1156(i_13_ + 621, i_12_ + i_15_,
                 Class17.anIntArrayArray255[i], i_12_ + -i_15_,
                 i_14_);
-        while ((i_17_ ^ 0xffffffff) < (i_16_ ^ 0xffffffff)) {
+        while (i_16_ < i_17_) {
             i_19_ += 2;
             i_18_ += i_19_;
             i_16_++;
-            if ((i_18_ ^ 0xffffffff) <= -1) {
+            if (i_18_ >= 0) {
                 i_17_--;
                 i_18_ -= i_17_ << -13726015;
                 int[] is = Class17.anIntArrayArray255[i - -i_17_];
@@ -201,7 +201,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         this.aClass377_5082.method3850((byte) -34, this);
         OpenGL.glGetTexImagei(this.anInt5093, 0, 32993, 5121,
                 is_31_, 0);
-        for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (i_28_ ^ 0xffffffff);
+        for (int i_32_ = 0; i_28_ > i_32_;
              i_32_++)
             Class214.method1578(is_31_,
                     anInt8640 * (i_28_ + -1 + (i_27_ + -i_32_)),
@@ -265,7 +265,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
                                int i_38_, int i_39_, int i_40_, int i_41_) {
         this.aClass377_5082.method3850((byte) 118, this);
         anInt8650++;
-        if ((i ^ 0xffffffff) == -1)
+        if (i == 0)
             i = i_39_;
         if (i_39_ != i)
             OpenGL.glPixelStorei(3314, i);
@@ -274,7 +274,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
                 (this.aClass377_5082
                         .anInt9918),
                 is, i_38_);
-        if ((i_39_ ^ 0xffffffff) != (i ^ 0xffffffff))
+        if (i != i_39_)
             OpenGL.glPixelStorei(3314, 0);
         if (i_36_ != 22809)
             anInt8634 = 115;
@@ -286,7 +286,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         try {
             this.aClass377_5082.method3850((byte) -39, this);
             anInt8647++;
-            if ((i_44_ ^ 0xffffffff) == -1)
+            if (i_44_ == 0)
                 i_44_ = i_46_;
             OpenGL.glPixelStorei(3317, 1);
             if (i_43_ >= -4)
@@ -298,7 +298,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
                     Class348_Sub40_Sub3.method3055(120,
                             class304),
                     5121, is, i_42_);
-            if ((i_44_ ^ 0xffffffff) != (i_46_ ^ 0xffffffff))
+            if (i_46_ != i_44_)
                 OpenGL.glPixelStorei(3314, 0);
             OpenGL.glPixelStorei(3317, 4);
         } catch (RuntimeException runtimeexception) {
@@ -318,7 +318,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
     static final void method254(int i, byte i_48_) {
         if (i_48_ > -79)
             method252(127, 53);
-        if ((Class239_Sub12.anInt5969 ^ 0xffffffff) != -2) {
+        if (Class239_Sub12.anInt5969 != 1) {
             if (Class239_Sub12.anInt5969 == 2)
                 Class348_Sub6.anInt6634 = i;
         } else

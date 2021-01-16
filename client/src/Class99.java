@@ -19,13 +19,13 @@ final class Class99 {
             if (i_2_ != 13880)
                 method880(9, null, null, -128, 85, -75, 62, 85, -51);
             for (int i_8_ = -i_3_; i_8_ < 0; i_8_++) {
-                for (int i_9_ = i_7_; (i_9_ ^ 0xffffffff) > -1; i_9_++) {
+                for (int i_9_ = i_7_; i_9_ < 0; i_9_++) {
                     is[i_4_++] += is_0_[i_1_++];
                     is[i_4_++] += is_0_[i_1_++];
                     is[i_4_++] += is_0_[i_1_++];
                     is[i_4_++] += is_0_[i_1_++];
                 }
-                for (int i_10_ = i; (i_10_ ^ 0xffffffff) > -1; i_10_++)
+                for (int i_10_ = i; i_10_ < 0; i_10_++)
                     is[i_4_++] += is_0_[i_1_++];
                 i_4_ += i_5_;
                 i_1_ += i_6_;
@@ -59,7 +59,7 @@ final class Class99 {
                                  .aClass107_9621.method1003((byte) 108))) {
                 int i_13_
                         = OutputStream_Sub2.method138(class348_sub42_sub12, false);
-                if ((i_12_ ^ 0xffffffff) > (i_13_ ^ 0xffffffff))
+                if (i_13_ > i_12_)
                     i_12_ = i_13_;
             }
             i_12_ += 8;
@@ -72,15 +72,14 @@ final class Class99 {
                 int i_15_ = Class63.anInt1117 + Class135_Sub1.anInt4717;
                 if (i_12_ + i_15_ > Class321.anInt4017)
                     i_15_ = -i_12_ + Class135_Sub1.anInt4717;
-                if ((i_15_ ^ 0xffffffff) > -1)
+                if (i_15_ < 0)
                     i_15_ = 0;
                 int i_16_ = !Class71.aBoolean1211 ? 31 : 33;
                 int i_17_ = 13 + i_11_ + -i_16_;
-                if ((Class348_Sub42_Sub8_Sub2.anInt10432 ^ 0xffffffff)
-                        > (i_17_ + i_14_ ^ 0xffffffff))
+                if (i_17_ + i_14_ > Class348_Sub42_Sub8_Sub2.anInt10432)
                     i_17_ = Class348_Sub42_Sub8_Sub2.anInt10432 - i_14_;
                 Class50_Sub3.anInt5252 = i_15_;
-                if ((i_17_ ^ 0xffffffff) > -1)
+                if (i_17_ < 0)
                     i_17_ = 0;
                 Class242.aClass348_Sub42_Sub13_3152 = class348_sub42_sub13;
                 Class348_Sub1_Sub1.anInt8806 = i_12_;

@@ -39,7 +39,7 @@ final class OutputStream_Sub2 extends OutputStream {
                 class318_sub4 = new Class318_Sub4();
                 class318_sub4.aClass318_Sub3Array6414
                         = new Class318_Sub3[i];
-                for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i ^ 0xffffffff);
+                for (int i_3_ = 0; i > i_3_;
                      i_3_++)
                     class318_sub4.aClass318_Sub3Array6414
                             [i_3_]
@@ -77,10 +77,8 @@ final class OutputStream_Sub2 extends OutputStream {
                                     .anInt9608))) {
                         Object object = null;
                         Class51 class51;
-                        if (((class348_sub42_sub12
-                                .anInt9608)
-                                ^ 0xffffffff)
-                                == -1002)
+                        if ((class348_sub42_sub12
+                                .anInt9608) == 1001)
                             class51 = (Class348_Sub40_Sub12.aClass263_9195
                                     .method2005
                                             (0, (int) (class348_sub42_sub12

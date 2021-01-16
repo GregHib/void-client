@@ -46,13 +46,13 @@ final class Class321 {
         if (i_0_ != 52)
             anIntArray4014 = null;
         anInt4013++;
-        if ((i ^ 0xffffffff) != -2) {
+        if (i != 1) {
             if (i == 2)
                 aString4010 = class348_sub49.method3371(i_0_ ^ ~0x349a);
-            else if ((i ^ 0xffffffff) == -4) {
+            else if (i == 3) {
                 int i_1_ = class348_sub49.method3387(i_0_ ^ 0xcb);
                 anIntArrayArray3997 = new int[i_1_][3];
-                for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff);
+                for (int i_2_ = 0; i_1_ > i_2_;
                      i_2_++) {
                     anIntArrayArray3997[i_2_][0]
                             = class348_sub49.method3330(842397944);
@@ -61,35 +61,35 @@ final class Class321 {
                     anIntArrayArray3997[i_2_][2]
                             = class348_sub49.method3385((byte) -126);
                 }
-            } else if ((i ^ 0xffffffff) != -5) {
-                if ((i ^ 0xffffffff) != -6) {
+            } else if (i != 4) {
+                if (i != 5) {
                     if (i == 6)
                         class348_sub49.method3387(255);
-                    else if ((i ^ 0xffffffff) == -8)
+                    else if (i == 7)
                         class348_sub49.method3387(255);
                     else if (i != 8) {
-                        if ((i ^ 0xffffffff) != -10) {
-                            if ((i ^ 0xffffffff) == -11) {
+                        if (i != 9) {
+                            if (i == 10) {
                                 int i_3_
                                         = class348_sub49.method3387(i_0_ + 203);
                                 anIntArray4008 = new int[i_3_];
                                 for (int i_4_ = 0;
-                                     (i_4_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff);
+                                     i_3_ > i_4_;
                                      i_4_++)
                                     anIntArray4008[i_4_]
                                             = class348_sub49
                                             .method3385((byte) -126);
                             } else if (i != 12) {
-                                if ((i ^ 0xffffffff) != -14) {
+                                if (i != 13) {
                                     if (i != 14) {
                                         if (i == 15)
                                             class348_sub49
                                                     .method3330(842397944);
-                                        else if ((i ^ 0xffffffff) == -18)
+                                        else if (i == 17)
                                             this.anInt4000
                                                     = class348_sub49
                                                     .method3330(842397944);
-                                        else if ((i ^ 0xffffffff) == -19) {
+                                        else if (i == 18) {
                                             int i_5_ = class348_sub49
                                                     .method3387(255);
                                             anIntArray4014 = new int[i_5_];
@@ -98,8 +98,7 @@ final class Class321 {
                                             anIntArray4007 = new int[i_5_];
                                             anIntArray4001 = new int[i_5_];
                                             for (int i_6_ = 0;
-                                                 ((i_5_ ^ 0xffffffff)
-                                                         < (i_6_ ^ 0xffffffff));
+                                                 (i_6_ < i_5_);
                                                  i_6_++) {
                                                 anIntArray4014[i_6_]
                                                         = (class348_sub49
@@ -118,7 +117,7 @@ final class Class321 {
                                                         .method3377
                                                                 ((byte) 123));
                                             }
-                                        } else if ((i ^ 0xffffffff) == -20) {
+                                        } else if (i == 19) {
                                             int i_7_ = class348_sub49
                                                     .method3387(255);
                                             aStringArray4016
@@ -127,8 +126,7 @@ final class Class321 {
                                             anIntArray4009 = new int[i_7_];
                                             anIntArray3998 = new int[i_7_];
                                             for (int i_8_ = 0;
-                                                 ((i_7_ ^ 0xffffffff)
-                                                         < (i_8_ ^ 0xffffffff));
+                                                 (i_8_ < i_7_);
                                                  i_8_++) {
                                                 anIntArray4009[i_8_]
                                                         = (class348_sub49
@@ -160,10 +158,8 @@ final class Class321 {
                                             for (int i_11_ = 0; i_9_ > i_11_;
                                                  i_11_++) {
                                                 boolean bool
-                                                        = ((class348_sub49
-                                                        .method3387(255)
-                                                        ^ 0xffffffff)
-                                                        == -2);
+                                                        = (class348_sub49
+                                                        .method3387(255) == 1);
                                                 int i_12_
                                                         = class348_sub49
                                                         .method3351(-1);
@@ -221,7 +217,7 @@ final class Class321 {
                 int i_17_ = class348_sub49.method3387(255);
                 anIntArrayArray3996 = new int[i_17_][3];
                 for (int i_18_ = 0;
-                     (i_18_ ^ 0xffffffff) > (i_17_ ^ 0xffffffff); i_18_++) {
+                     i_17_ > i_18_; i_18_++) {
                     anIntArrayArray3996[i_18_][0]
                             = class348_sub49.method3330(842397944);
                     anIntArrayArray3996[i_18_][1]

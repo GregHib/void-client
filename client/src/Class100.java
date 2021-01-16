@@ -24,16 +24,16 @@ final class Class100 {
                          boolean bool_3_) {
         anInt1587++;
         bool_3_ &= aHa_Sub2_1581.method3639();
-        if (!bool_3_ && ((i_0_ ^ 0xffffffff) == -5 || (i_0_ ^ 0xffffffff) == -9
-                || (i_0_ ^ 0xffffffff) == -10)) {
+        if (!bool_3_ && (i_0_ == 4 || i_0_ == 8
+                || i_0_ == 9)) {
             if (i_0_ == 4)
                 i_1_ = i;
             i_0_ = 2;
         }
-        if ((i_0_ ^ 0xffffffff) != -1 && bool)
+        if (i_0_ != 0 && bool)
             i_0_ |= ~0x7fffffff;
-        if ((i_0_ ^ 0xffffffff) != (anInt1578 ^ 0xffffffff)) {
-            if ((anInt1578 ^ 0xffffffff) != -1)
+        if (anInt1578 != i_0_) {
+            if (anInt1578 != 0)
                 aClass286Array1588[0x7fffffff & anInt1578].method2133(-93);
             if (i_0_ != 0) {
                 aClass286Array1588[i_0_ & 0x7fffffff].method2134(bool, false);
@@ -48,7 +48,7 @@ final class Class100 {
         } else if (anInt1578 != 0) {
             aClass286Array1588[0x7fffffff & anInt1578].method2139(bool,
                     (byte) -101);
-            if ((anInt1592 ^ 0xffffffff) != (i ^ 0xffffffff)
+            if (i != anInt1592
                     || anInt1584 != i_1_) {
                 aClass286Array1588[0x7fffffff & anInt1578]
                         .method2136(i, i_1_, (byte) -98);

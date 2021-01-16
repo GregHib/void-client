@@ -38,9 +38,8 @@ final class Class8 {
         if (i != -1)
             return 14;
         Class225 class225 = class318_sub1_sub3_sub3_sub1.method2422((byte) 72);
-        if (((class318_sub1_sub3_sub3_sub1
-                .anInt10268)
-                ^ 0xffffffff) != 0
+        if ((class318_sub1_sub3_sub3_sub1
+                .anInt10268) != -1
                 && !(class318_sub1_sub3_sub3_sub1
                 .aBoolean10213)) {
             if ((class318_sub1_sub3_sub3_sub1
@@ -49,20 +48,14 @@ final class Class8 {
                     != class318_sub1_sub3_sub3_sub1.anInt10268)
                     && (class225.anInt2949
                     != class318_sub1_sub3_sub3_sub1.anInt10268)
-                    && (((class318_sub1_sub3_sub3_sub1
-                    .anInt10268)
-                    ^ 0xffffffff)
-                    != (class225.anInt2914 ^ 0xffffffff))) {
+                    && (class225.anInt2914 != (class318_sub1_sub3_sub3_sub1
+                    .anInt10268))) {
                 if ((class225.anInt2940
                         == class318_sub1_sub3_sub3_sub1.anInt10268)
-                        || ((class318_sub1_sub3_sub3_sub1.anInt10268
-                        ^ 0xffffffff)
-                        == (class225.anInt2924 ^ 0xffffffff))
+                        || (class225.anInt2924 == class318_sub1_sub3_sub3_sub1.anInt10268)
                         || (class318_sub1_sub3_sub3_sub1.anInt10268
                         == class225.anInt2947)
-                        || ((class225.anInt2958 ^ 0xffffffff)
-                        == (class318_sub1_sub3_sub3_sub1.anInt10268
-                        ^ 0xffffffff)))
+                        || (class318_sub1_sub3_sub3_sub1.anInt10268 == class225.anInt2958))
                     i_0_ = class79.anInt1395;
             } else
                 i_0_ = class79.anInt1327;

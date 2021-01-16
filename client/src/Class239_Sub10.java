@@ -27,13 +27,12 @@ final class Class239_Sub10 extends Class239 {
         if (i_2_ > -85)
             method1762(-14, 70, 13, -100);
         anInt5940++;
-        if (((bool
+        if ((bool
                 ? Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7215.method1838(-32350)
                 : Class316.aClass348_Sub51_3959
-                .aClass239_Sub26_7272.method1838(-32350))
-                ^ 0xffffffff) != -1
-                && i_3_ != 0 && (Class147.anInt2021 ^ 0xffffffff) > -51 && i != -1)
+                .aClass239_Sub26_7272.method1838(-32350)) != 0
+                && i_3_ != 0 && Class147.anInt2021 < 50 && i != -1)
             Class258_Sub2.aClass10Array8531[Class147.anInt2021++]
                     = new Class10(!bool ? (byte) 2 : (byte) 3, i, i_3_, i_5_, i_0_,
                     i_1_, i_4_, null);
@@ -43,8 +42,8 @@ final class Class239_Sub10 extends Class239 {
         anInt5941++;
         if (bool != false)
             method1712(-34, -61);
-        if ((this.anInt3138 ^ 0xffffffff) > -1
-                || (this.anInt3138 ^ 0xffffffff) < -5)
+        if (this.anInt3138 < 0
+                || this.anInt3138 > 4)
             this.anInt3138 = method1710(20014);
     }
 
@@ -57,7 +56,7 @@ final class Class239_Sub10 extends Class239 {
         if (r.anInt9721 != -1)
             Class75_Sub1.method769(r.anInt9721, (byte) 118);
         for (int i_6_ = 0;
-             (i_6_ ^ 0xffffffff) > (Class348_Sub38.anInt7008 ^ 0xffffffff);
+             Class348_Sub38.anInt7008 > i_6_;
              i_6_++) {
             if (Class152.aBooleanArray2076[i_6_])
                 Class268.aBooleanArray3438[i_6_] = true;
@@ -73,7 +72,7 @@ final class Class239_Sub10 extends Class239 {
         Class348_Sub8.aHa6654.la();
         Class348_Sub42_Sub20.method3281((byte) 77, Class348_Sub8.aHa6654);
         int i_7_ = Class112.method1053(3112);
-        if ((i_7_ ^ 0xffffffff) == 0)
+        if (i_7_ == -1)
             i_7_ = Class362.anInt4458;
         if (i_7_ == -1)
             i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447;
@@ -94,7 +93,7 @@ final class Class239_Sub10 extends Class239 {
                 & Class348_Sub33.aByteArrayArrayArray6962[i_10_][i_12_][i_11_])
                 != 0)
             return 0;
-        if ((i_10_ ^ 0xffffffff) < -1
+        if (i_10_ > 0
                 && ((0x2
                 & Class348_Sub33.aByteArrayArrayArray6962[1][i_12_][i_11_])
                 != 0))
@@ -125,40 +124,40 @@ final class Class239_Sub10 extends Class239 {
     static final char method1765(char c, int i, int i_15_) {
         anInt5946++;
         if (c >= 192 && c <= 255) {
-            if (c >= 192 && (c ^ 0xffffffff) >= -199)
+            if (c >= 192 && c <= 198)
                 return 'A';
-            if ((c ^ 0xffffffff) == -200)
+            if (c == 199)
                 return 'C';
             if (c >= 200 && c <= 203)
                 return 'E';
-            if ((c ^ 0xffffffff) <= -205 && c <= 207)
+            if (c >= 204 && c <= 207)
                 return 'I';
-            if ((c ^ 0xffffffff) <= -211 && c <= 214)
+            if (c >= 210 && c <= 214)
                 return 'O';
-            if ((c ^ 0xffffffff) <= -218 && (c ^ 0xffffffff) >= -221)
+            if (c >= 217 && c <= 220)
                 return 'U';
             if (c == 221)
                 return 'Y';
             if (c == 223)
                 return 's';
-            if ((c ^ 0xffffffff) <= -225 && (c ^ 0xffffffff) >= -231)
+            if (c >= 224 && c <= 230)
                 return 'a';
             if (c == 231)
                 return 'c';
-            if ((c ^ 0xffffffff) <= -233 && c <= 235)
+            if (c >= 232 && c <= 235)
                 return 'e';
             if (c >= 236 && c <= 239)
                 return 'i';
             if (c >= 242 && c <= 246)
                 return 'o';
-            if (c >= 249 && (c ^ 0xffffffff) >= -253)
+            if (c >= 249 && c <= 252)
                 return 'u';
             if (c == 253 || c == 255)
                 return 'y';
         }
         if (i_15_ != 105)
             aClass351_5938 = null;
-        if ((c ^ 0xffffffff) == -339)
+        if (c == 338)
             return 'O';
         if (c == 339)
             return 'o';

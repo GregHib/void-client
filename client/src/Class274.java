@@ -92,7 +92,7 @@ final class Class274 {
         if (i_1_ <= 28)
             method2059(108);
         anInt3478++;
-        return (0x18 & i ^ 0xffffffff) != -1 | (i & 0x220) == 544;
+        return (0x18 & i) != 0 | (i & 0x220) == 544;
     }
 
     public static void method2059(int i) {
@@ -185,8 +185,7 @@ final class Class274 {
                 if (class348_sub41 == null)
                     break;
             }
-            if ((class348_sub41.anInt7053 ^ 0xffffffff)
-                    == -1)
+            if (class348_sub41.anInt7053 == 0)
                 Class127_Sub1.method1118(true, bool, class348_sub41, 2533);
         }
         if (Class49.aClass46_4730 != null) {
@@ -212,7 +211,7 @@ final class Class274 {
     static final void method2062(byte i) {
         if (Class147.aClass338Array2034 != null) {
             for (int i_3_ = 0;
-                 (Class239_Sub26.anInt6115 ^ 0xffffffff) < (i_3_ ^ 0xffffffff);
+                 i_3_ < Class239_Sub26.anInt6115;
                  i_3_++)
                 Class147.aClass338Array2034[i_3_] = null;
             Class147.aClass338Array2034 = null;

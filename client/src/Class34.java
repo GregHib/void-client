@@ -42,13 +42,13 @@ final class Class34 {
                         anIntArray472[i_0_], -1);
         }
         for (int i_1_ = 0;
-             (i_1_ ^ 0xffffffff) > (anIntArray472.length ^ 0xffffffff);
+             anIntArray472.length > i_1_;
              i_1_++) {
-            if ((class124s[i_1_].anInt1830 ^ 0xffffffff) > -14)
+            if (class124s[i_1_].anInt1830 < 13)
                 class124s[i_1_].method1092(2, 113);
         }
         Class124 class124;
-        if ((class124s.length ^ 0xffffffff) != -2)
+        if (class124s.length != 1)
             class124 = new Class124(class124s, class124s.length);
         else
             class124 = class124s[0];
@@ -58,14 +58,14 @@ final class Class34 {
             method341(-22);
         if (aShortArray474 != null) {
             for (int i_2_ = 0;
-                 (aShortArray474.length ^ 0xffffffff) < (i_2_ ^ 0xffffffff);
+                 i_2_ < aShortArray474.length;
                  i_2_++)
                 class124.method1098(aShortArray474[i_2_], (byte) 126,
                         aShortArray480[i_2_]);
         }
         if (aShortArray465 != null) {
             for (int i_3_ = 0;
-                 (aShortArray465.length ^ 0xffffffff) < (i_3_ ^ 0xffffffff);
+                 i_3_ < aShortArray465.length;
                  i_3_++)
                 class124.method1095(aShortArray465[i_3_], 0,
                         aShortArray477[i_3_]);
@@ -78,8 +78,8 @@ final class Class34 {
         boolean bool = true;
         synchronized (this.aClass150_475
                 .aClass45_2054) {
-            for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -6; i_4_++) {
-                if ((anIntArray464[i_4_] ^ 0xffffffff) != 0
+            for (int i_4_ = 0; i_4_ < 5; i_4_++) {
+                if (anIntArray464[i_4_] != -1
                         && !this.aClass150_475
                         .aClass45_2054
                         .method420(-10499, anIntArray464[i_4_], 0))
@@ -97,8 +97,8 @@ final class Class34 {
         int i_5_ = 0;
         synchronized (this.aClass150_475
                 .aClass45_2054) {
-            for (int i_6_ = 0; (i_6_ ^ 0xffffffff) > -6; i_6_++) {
-                if ((anIntArray464[i_6_] ^ 0xffffffff) != 0)
+            for (int i_6_ = 0; i_6_ < 5; i_6_++) {
+                if (anIntArray464[i_6_] != -1)
                     class124s[i_5_++]
                             = Class300.method2277(0,
                             (this.aClass150_475
@@ -106,7 +106,7 @@ final class Class34 {
                             anIntArray464[i_6_], -1);
             }
         }
-        for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -6; i_7_++) {
+        for (int i_7_ = 0; i_7_ < 5; i_7_++) {
             if (class124s[i_7_] != null
                     && class124s[i_7_].anInt1830 < 13)
                 class124s[i_7_].method1092(2, 99);
@@ -121,7 +121,7 @@ final class Class34 {
         }
         if (aShortArray465 != null) {
             for (int i_9_ = 0;
-                 (i_9_ ^ 0xffffffff) > (aShortArray465.length ^ 0xffffffff);
+                 aShortArray465.length > i_9_;
                  i_9_++)
                 class124.method1095(aShortArray465[i_9_], 0,
                         aShortArray477[i_9_]);
@@ -131,32 +131,32 @@ final class Class34 {
 
     private final void method344(int i, Class348_Sub49 class348_sub49,
                                  byte i_10_) {
-        if ((i ^ 0xffffffff) != -2) {
+        if (i != 1) {
             if (i == 2) {
                 int i_11_ = class348_sub49.method3387(i_10_ + 320);
                 anIntArray472 = new int[i_11_];
                 for (int i_12_ = 0; i_12_ < i_11_; i_12_++)
                     anIntArray472[i_12_]
                             = class348_sub49.method3330(842397944);
-            } else if ((i ^ 0xffffffff) != -4) {
-                if ((i ^ 0xffffffff) == -41) {
+            } else if (i != 3) {
+                if (i == 40) {
                     int i_13_ = class348_sub49.method3387(i_10_ ^ ~0xbf);
                     aShortArray480 = new short[i_13_];
                     aShortArray474 = new short[i_13_];
                     for (int i_14_ = 0;
-                         (i_13_ ^ 0xffffffff) < (i_14_ ^ 0xffffffff);
+                         i_14_ < i_13_;
                          i_14_++) {
                         aShortArray474[i_14_]
                                 = (short) class348_sub49.method3330(842397944);
                         aShortArray480[i_14_]
                                 = (short) class348_sub49.method3330(842397944);
                     }
-                } else if ((i ^ 0xffffffff) == -42) {
+                } else if (i == 41) {
                     int i_15_ = class348_sub49.method3387(255);
                     aShortArray465 = new short[i_15_];
                     aShortArray477 = new short[i_15_];
                     for (int i_16_ = 0;
-                         (i_16_ ^ 0xffffffff) > (i_15_ ^ 0xffffffff);
+                         i_15_ > i_16_;
                          i_16_++) {
                         aShortArray465[i_16_]
                                 = (short) class348_sub49
@@ -213,7 +213,7 @@ final class Class34 {
                 int i_26_ = is_20_[i_23_];
                 is_20_[i_23_] = is_20_[i_22_];
                 is_20_[i_22_] = i_26_;
-                int i_27_ = (i_25_ ^ 0xffffffff) == -2147483648 ? 0 : 1;
+                int i_27_ = i_25_ == 2147483647 ? 0 : 1;
                 for (int i_28_ = i; i_28_ < i_22_; i_28_++) {
                     if (is[i_28_] < (i_28_ & i_27_) + i_25_) {
                         int i_29_ = is[i_28_];

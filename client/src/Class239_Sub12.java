@@ -78,7 +78,7 @@ final class Class239_Sub12 extends Class239 {
                         .method1829(-32350)))
             this.anInt3138 = 0;
         if (this.anInt3138 < 0
-                || (this.anInt3138 ^ 0xffffffff) < -2)
+                || this.anInt3138 > 1)
             this.anInt3138 = method1710(20014);
     }
 

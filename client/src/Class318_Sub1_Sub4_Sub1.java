@@ -50,7 +50,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4
                 aBoolean10090 = bool_6_;
                 this.anInt6377 = i_1_;
                 aBoolean10076
-                        = ((class51.anInt874 ^ 0xffffffff) != -1
+                        = (class51.anInt874 != 0
                         && !bool);
                 this.anInt6388 = i_3_;
                 aByte10079 = (byte) i_4_;
@@ -250,7 +250,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4
         if (!aBoolean10066) {
             var_s_16_ = (Class348_Sub1_Sub1.aSArray8801
                     [this.aByte6376]);
-            if ((this.aByte6376 ^ 0xffffffff) > -4)
+            if (this.aByte6376 < 3)
                 var_s = (Class348_Sub1_Sub1.aSArray8801
                         [1 + this.aByte6376]);
             else
@@ -294,10 +294,9 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4
             method2387(null, -99);
         anInt10072++;
         if (this.aClass64_10071 != null
-                && (var_ha.method3667(this
+                && var_ha.method3667(this
                         .aClass64_10071.ua(),
-                i_17_)
-                ^ 0xffffffff) == -1)
+                i_17_) == 0)
             return this.aClass64_10071;
         Class2 class2 = method2481(false, i_17_, -4, var_ha);
         if (class2 != null)

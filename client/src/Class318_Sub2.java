@@ -21,20 +21,18 @@ final class Class318_Sub2 extends Class318 {
                 anInt6397++;
                 if (i_5_ < 123)
                     method2499(27, -8, -96, 71, 72, (byte) 72, -82);
-                if ((i_7_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff)
-                        && (i_8_ ^ 0xffffffff) > (i_7_ + i_2_ ^ 0xffffffff)
+                if (i_8_ > i_7_
+                        && i_7_ + i_2_ > i_8_
                         && i_3_ > -13 + i_1_
-                        && (i_3_ ^ 0xffffffff) > (i_1_ + 3 ^ 0xffffffff)
+                        && i_1_ + 3 > i_3_
                         && (class348_sub42_sub12
                         .aBoolean9610))
                     i_4_ = i_0_;
                 int[] is = null;
                 if (!Class148.method1197(-12081,
                         class348_sub42_sub12.anInt9608)) {
-                    if (((class348_sub42_sub12
-                            .anInt9599)
-                            ^ 0xffffffff)
-                            == 0) {
+                    if ((class348_sub42_sub12
+                            .anInt9599) == -1) {
                         if (!Class367_Sub8.method3549((class348_sub42_sub12
                                         .anInt9608),
                                 (byte) -119)) {
@@ -44,9 +42,7 @@ final class Class318_Sub2 extends Class318 {
                                                     .anInt9608))) {
                                 Object object = null;
                                 Class51 class51;
-                                if ((class348_sub42_sub12.anInt9608
-                                        ^ 0xffffffff)
-                                        != -1002)
+                                if (class348_sub42_sub12.anInt9608 != 1001)
                                     class51
                                             = (Class348_Sub40_Sub12
                                             .aClass263_9195.method2005
@@ -141,14 +137,14 @@ final class Class318_Sub2 extends Class318 {
         if (bool != true)
             method2497(null, (byte) -29, null, 73);
         anInt6396++;
-        if (i >= 1000 && (i_9_ ^ 0xffffffff) > -1001)
+        if (i >= 1000 && i_9_ < 1000)
             return true;
-        if ((i ^ 0xffffffff) > -1001 && i_9_ < 1000) {
+        if (i < 1000 && i_9_ < 1000) {
             if (Class309.method2308((byte) 26, i_9_))
                 return true;
             return !Class309.method2308((byte) 26, i);
         }
-        return (i ^ 0xffffffff) <= -1001 && (i_9_ ^ 0xffffffff) <= -1001;
+        return i >= 1000 && i_9_ >= 1000;
     }
 
     Class318_Sub2(int i) {
@@ -163,7 +159,7 @@ final class Class318_Sub2 extends Class318 {
             int i_13_ = 0;
             if (i != 0)
                 method2496(21, -5, true);
-            for (/**/; (i_13_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff);
+            for (/**/; i_12_ > i_13_;
                      i_13_ += 4) {
                 int i_14_ = Class186_Sub1.method1399(7, string.charAt(i_13_));
                 int i_15_
@@ -175,12 +171,12 @@ final class Class318_Sub2 extends Class318 {
                         ? Class186_Sub1.method1399(7, string.charAt(i_13_ + 2))
                         : -1);
                 int i_17_
-                        = ((3 + i_13_ ^ 0xffffffff) <= (i_12_ ^ 0xffffffff) ? -1
+                        = (i_12_ <= 3 + i_13_ ? -1
                         : Class186_Sub1.method1399(7,
                         string.charAt(i_13_ + 3)));
                 is[i_10_++] = (byte) Class273.method2057(i_14_ << -1270769342,
                         i_15_ >>> 1087501732);
-                if ((i_16_ ^ 0xffffffff) == 0)
+                if (i_16_ == -1)
                     break;
                 is[i_10_++]
                         = (byte) Class273.method2057((Class139.method1166(15,
@@ -213,19 +209,15 @@ final class Class318_Sub2 extends Class318 {
             if (i > -101)
                 anIntArray6393 = null;
             if (Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566 != null
-                    && (i_18_ ^ 0xffffffff) >= (class338.aByte4181
-                    ^ 0xffffffff)) {
+                    && class338.aByte4181 >= i_18_) {
                 for (int i_19_ = 0;
                      (i_19_
                              < Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566.length);
                      i_19_++) {
                     if ((Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566[i_19_]
                             != -1000000)
-                            && (((class338.anIntArray4191[0]
-                            ^ 0xffffffff)
-                            >= ((Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566
-                            [i_19_])
-                            ^ 0xffffffff))
+                            && (((Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566
+                            [i_19_]) >= class338.anIntArray4191[0])
                             || (class338.anIntArray4191[1]
                             <= (Class318_Sub1_Sub3_Sub3_Sub2
                             .anIntArray10566[i_19_]))
@@ -253,10 +245,7 @@ final class Class318_Sub2 extends Class318 {
                             <= class338.anIntArray4187[3]))
                             && ((Class299_Sub2_Sub1.anIntArray8712[i_19_]
                             >= class338.anIntArray4184[0])
-                            || ((class338.anIntArray4184[1]
-                            ^ 0xffffffff)
-                            >= (Class299_Sub2_Sub1.anIntArray8712[i_19_]
-                            ^ 0xffffffff))
+                            || (Class299_Sub2_Sub1.anIntArray8712[i_19_] >= class338.anIntArray4184[1])
                             || (class338.anIntArray4184[2]
                             <= Class299_Sub2_Sub1.anIntArray8712[i_19_])
                             || (Class299_Sub2_Sub1.anIntArray8712[i_19_]
@@ -276,18 +265,16 @@ final class Class318_Sub2 extends Class318 {
                 int i_20_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                         + (-Class239_Sub25.anInt6111
                         + class338.aShort4185));
-                if ((i_20_ ^ 0xffffffff) <= -1
+                if (i_20_ >= 0
                         && i_20_ <= (Class318_Sub1_Sub4_Sub1.anInt10084
                         + Class318_Sub1_Sub4_Sub1.anInt10084)) {
                     int i_21_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                             + class338.aShort4193
                             - Class285_Sub2.anInt8502);
-                    if ((i_21_ ^ 0xffffffff) > -1)
+                    if (i_21_ < 0)
                         i_21_ = 0;
-                    else if ((i_21_ ^ 0xffffffff)
-                            < ((Class318_Sub1_Sub4_Sub1.anInt10084
-                            + Class318_Sub1_Sub4_Sub1.anInt10084)
-                            ^ 0xffffffff))
+                    else if ((Class318_Sub1_Sub4_Sub1.anInt10084
+                            + Class318_Sub1_Sub4_Sub1.anInt10084) < i_21_)
                         return;
                     int i_22_ = (-Class285_Sub2.anInt8502
                             + (class338.aShort4190
@@ -297,10 +284,10 @@ final class Class318_Sub2 extends Class318 {
                             < i_22_)
                         i_22_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                                 - -Class318_Sub1_Sub4_Sub1.anInt10084);
-                    else if ((i_22_ ^ 0xffffffff) > -1)
+                    else if (i_22_ < 0)
                         return;
                     boolean bool = false;
-                    while ((i_21_ ^ 0xffffffff) >= (i_22_ ^ 0xffffffff)) {
+                    while (i_22_ >= i_21_) {
                         if (Class99.aBooleanArrayArray1572[i_20_][i_21_++]) {
                             bool = true;
                             break;
@@ -326,13 +313,13 @@ final class Class318_Sub2 extends Class318 {
                 int i_23_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                         + (class338.aShort4193
                         - Class285_Sub2.anInt8502));
-                if ((i_23_ ^ 0xffffffff) <= -1
+                if (i_23_ >= 0
                         && i_23_ <= (Class318_Sub1_Sub4_Sub1.anInt10084
                         + Class318_Sub1_Sub4_Sub1.anInt10084)) {
                     int i_24_ = (class338.aShort4185
                             + (-Class239_Sub25.anInt6111
                             + Class318_Sub1_Sub4_Sub1.anInt10084));
-                    if ((i_24_ ^ 0xffffffff) <= -1) {
+                    if (i_24_ >= 0) {
                         if (i_24_ > (Class318_Sub1_Sub4_Sub1.anInt10084
                                 + Class318_Sub1_Sub4_Sub1.anInt10084))
                             return;
@@ -344,13 +331,13 @@ final class Class318_Sub2 extends Class318 {
                     if ((Class318_Sub1_Sub4_Sub1.anInt10084
                             + Class318_Sub1_Sub4_Sub1.anInt10084)
                             >= i_25_) {
-                        if ((i_25_ ^ 0xffffffff) > -1)
+                        if (i_25_ < 0)
                             return;
                     } else
                         i_25_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                                 + Class318_Sub1_Sub4_Sub1.anInt10084);
                     boolean bool = false;
-                    while ((i_25_ ^ 0xffffffff) <= (i_24_ ^ 0xffffffff)) {
+                    while (i_24_ <= i_25_) {
                         if (Class99.aBooleanArrayArray1572[i_24_++][i_23_]) {
                             bool = true;
                             break;
@@ -384,10 +371,8 @@ final class Class318_Sub2 extends Class318 {
                             + (-Class285_Sub2.anInt8502
                             - -Class318_Sub1_Sub4_Sub1.anInt10084));
                     if (i_27_ >= 0
-                            && ((i_27_ ^ 0xffffffff)
-                            >= ((Class318_Sub1_Sub4_Sub1.anInt10084
-                            - -Class318_Sub1_Sub4_Sub1.anInt10084)
-                            ^ 0xffffffff))
+                            && ((Class318_Sub1_Sub4_Sub1.anInt10084
+                            - -Class318_Sub1_Sub4_Sub1.anInt10084) >= i_27_)
                             && Class99.aBooleanArrayArray1572[i_26_][i_27_]) {
                         float f = (float) (Class141.anInt1974
                                 - (class338
@@ -410,14 +395,14 @@ final class Class318_Sub2 extends Class318 {
                                     = class338;
                     }
                 }
-            } else if ((class338.aByte4192 ^ 0xffffffff) == -5) {
+            } else if (class338.aByte4192 == 4) {
                 float f = (float) (-Class232.anInt3006
                         + class338.anIntArray4191[0]);
                 if (!(f <= (float) ha_Sub2.anInt7714)) {
                     int i_29_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                             + -Class285_Sub2.anInt8502
                             + class338.aShort4193);
-                    if ((i_29_ ^ 0xffffffff) <= -1) {
+                    if (i_29_ >= 0) {
                         if ((Class318_Sub1_Sub4_Sub1.anInt10084
                                 + Class318_Sub1_Sub4_Sub1.anInt10084)
                                 < i_29_)
@@ -427,11 +412,9 @@ final class Class318_Sub2 extends Class318 {
                     int i_30_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                             + -Class285_Sub2.anInt8502
                             + class338.aShort4190);
-                    if (((Class318_Sub1_Sub4_Sub1.anInt10084
-                            + Class318_Sub1_Sub4_Sub1.anInt10084)
-                            ^ 0xffffffff)
-                            <= (i_30_ ^ 0xffffffff)) {
-                        if ((i_30_ ^ 0xffffffff) > -1)
+                    if (i_30_ <= (Class318_Sub1_Sub4_Sub1.anInt10084
+                            + Class318_Sub1_Sub4_Sub1.anInt10084)) {
+                        if (i_30_ < 0)
                             return;
                     } else
                         i_30_ = (Class318_Sub1_Sub4_Sub1.anInt10084
@@ -439,7 +422,7 @@ final class Class318_Sub2 extends Class318 {
                     int i_31_ = (-Class239_Sub25.anInt6111
                             + (class338.aShort4185
                             + Class318_Sub1_Sub4_Sub1.anInt10084));
-                    if ((i_31_ ^ 0xffffffff) > -1)
+                    if (i_31_ < 0)
                         i_31_ = 0;
                     else if (i_31_ > (Class318_Sub1_Sub4_Sub1.anInt10084
                             + Class318_Sub1_Sub4_Sub1.anInt10084))
@@ -452,15 +435,15 @@ final class Class318_Sub2 extends Class318 {
                             < i_32_)
                         i_32_ = (Class318_Sub1_Sub4_Sub1.anInt10084
                                 + Class318_Sub1_Sub4_Sub1.anInt10084);
-                    else if ((i_32_ ^ 0xffffffff) > -1)
+                    else if (i_32_ < 0)
                         return;
                     boolean bool = false;
                     while_102_:
                     for (int i_33_ = i_31_;
-                         (i_32_ ^ 0xffffffff) <= (i_33_ ^ 0xffffffff);
+                         i_33_ <= i_32_;
                          i_33_++) {
                         for (int i_34_ = i_29_;
-                             (i_34_ ^ 0xffffffff) >= (i_30_ ^ 0xffffffff);
+                             i_30_ >= i_34_;
                              i_34_++) {
                             if (Class99.aBooleanArrayArray1572[i_33_][i_34_]) {
                                 bool = true;
@@ -494,9 +477,9 @@ final class Class318_Sub2 extends Class318 {
         anInt6398++;
         if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351)
             return false;
-        if ((Class225.anInt2946 ^ 0xffffffff) > -101)
+        if (Class225.anInt2946 < 100)
             return false;
-        if ((i_40_ ^ 0xffffffff) == (i_38_ ^ 0xffffffff) && i_36_ == i_35_) {
+        if (i_38_ == i_40_ && i_36_ == i_35_) {
             if (!aa_Sub2.method164(i, i_38_, (byte) -97, i_36_))
                 return false;
             int i_41_ = i_38_ << Class362.anInt4459;
@@ -512,10 +495,10 @@ final class Class318_Sub2 extends Class318 {
         }
         if (i_39_ <= 101)
             method2499(66, -39, -55, 105, 96, (byte) 114, -44);
-        for (int i_43_ = i_38_; (i_40_ ^ 0xffffffff) <= (i_43_ ^ 0xffffffff);
+        for (int i_43_ = i_38_; i_43_ <= i_40_;
              i_43_++) {
             for (int i_44_ = i_36_;
-                 (i_35_ ^ 0xffffffff) <= (i_44_ ^ 0xffffffff); i_44_++) {
+                 i_44_ <= i_35_; i_44_++) {
                 if (Class354.anIntArrayArrayArray4356[i][i_43_][i_44_]
                         == -Class234.anInt3049)
                     return false;

@@ -57,7 +57,7 @@ final class Class334 {
         try {
             anInt4153++;
             int i_7_;
-            if ((Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff) == -5)
+            if (Class348_Sub40_Sub21.anInt9282 == 4)
                 i_7_ = (int) Class314.aFloat3938 & 0x3fff;
             else
                 i_7_ = 0x3fff & r_Sub2.anInt10483 + (int) Class314.aFloat3938;
@@ -65,7 +65,7 @@ final class Class334 {
                     class46.anInt789 / 2)
                     + 10);
             int i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_);
-            if ((i_8_ * i_8_ ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)) {
+            if (i_9_ <= i_8_ * i_8_) {
                 int i_10_ = Class70.anIntArray1207[i_7_];
                 int i_11_ = Class70.anIntArray1204[i_7_];
                 if (Class348_Sub40_Sub21.anInt9282 != 4) {
@@ -81,10 +81,8 @@ final class Class334 {
                 i_12_ -= i_14_ / 2;
                 if (-class46.anInt709 <= i_12_
                         && class46.anInt709 >= i_12_
-                        && ((-class46.anInt789 ^ 0xffffffff)
-                        >= (i_13_ ^ 0xffffffff))
-                        && (i_13_ ^ 0xffffffff) >= (class46.anInt789
-                        ^ 0xffffffff))
+                        && (i_13_ >= -class46.anInt789)
+                        && class46.anInt789 >= i_13_)
                     class324.method2584(null, 0, 0, null, i, 0, 50, var_aa,
                             (-i_4_
                                     + (i_3_
@@ -141,7 +139,7 @@ final class Class334 {
         if (bool != true)
             anIntArray4152 = null;
         anInt4164++;
-        return (i ^ 0xffffffff) == -11 || (i ^ 0xffffffff) == -12 || i == 12;
+        return i == 10 || i == 11 || i == 12;
     }
 
     public static void method2654(int i) {

@@ -35,16 +35,16 @@ final class Class65 {
 
     static final void method696(int i, int i_0_, int i_1_, int i_2_) {
         if (i_2_ == -1007) {
-            if ((i ^ 0xffffffff) == -1010)
+            if (i == 1009)
                 Class66.method701(Class327.aClass273_4091, i_1_, i_0_);
-            else if ((i ^ 0xffffffff) != -1013) {
+            else if (i != 1012) {
                 if (i == 1002)
                     Class66.method701(Class348_Sub40_Sub32.aClass273_9415,
                             i_1_, i_0_);
                 else if (i == 1003)
                     Class66.method701(Class348_Sub12.aClass273_6743, i_1_,
                             i_0_);
-                else if ((i ^ 0xffffffff) == -1007)
+                else if (i == 1006)
                     Class66.method701(Class239_Sub17.aClass273_6018, i_1_,
                             i_0_);
             } else

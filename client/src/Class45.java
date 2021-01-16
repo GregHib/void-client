@@ -96,10 +96,9 @@ final class Class45 {
         anInt646++;
         if (!method399(false))
             return false;
-        if ((i ^ 0xffffffff) > -1
+        if (i < 0
                 || aClass291_629.anIntArray3724.length <= i
-                || ((aClass291_629.anIntArray3724[i] ^ 0xffffffff)
-                == -1)) {
+                || (aClass291_629.anIntArray3724[i] == 0)) {
             if (Class285.aBoolean4741)
                 throw new IllegalArgumentException(Integer.toString(i));
             return false;
@@ -126,10 +125,9 @@ final class Class45 {
         byte[] is_7_
                 = Class50_Sub1.method461(false, anObjectArrayArray664[i][i_5_],
                 53146732);
-        if ((this.anInt634 ^ 0xffffffff) == -2) {
+        if (this.anInt634 == 1) {
             anObjectArrayArray664[i][i_5_] = null;
-            if ((aClass291_629.anIntArray3724[i] ^ 0xffffffff)
-                    == -2)
+            if (aClass291_629.anIntArray3724[i] == 1)
                 anObjectArrayArray664[i] = null;
         } else if (this.anInt634 == 2)
             anObjectArrayArray664[i] = null;
@@ -149,7 +147,7 @@ final class Class45 {
                     = new Object[aClass291_629.anIntArray3724[i_9_]];
         Object[] objects = anObjectArrayArray664[i_9_];
         boolean bool = true;
-        for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (i_10_ ^ 0xffffffff);
+        for (int i_12_ = 0; i_10_ > i_12_;
              i_12_++) {
             int i_13_;
             if (is_11_ == null)
@@ -165,8 +163,8 @@ final class Class45 {
             return true;
         byte[] is_14_;
         if (is == null
-                || ((is[0] ^ 0xffffffff) == -1 && (is[1] ^ 0xffffffff) == -1
-                && (is[2] ^ 0xffffffff) == -1 && (is[3] ^ 0xffffffff) == -1))
+                || (is[0] == 0 && is[1] == 0
+                && is[2] == 0 && is[3] == 0))
             is_14_ = Class50_Sub1.method461(false, anObjectArray656[i_9_],
                     53146732);
         else {
@@ -196,7 +194,7 @@ final class Class45 {
             anObjectArray656[i_9_] = null;
         if (i_8_ >= -17)
             method415((byte) 70, -7);
-        if ((i_10_ ^ 0xffffffff) < -2) {
+        if (i_10_ > 1) {
             if (this.anInt634 != 2) {
                 int i_16_ = is_15_.length;
                 int i_17_ = 0xff & is_15_[--i_16_];
@@ -213,14 +211,14 @@ final class Class45 {
                 }
                 byte[][] is_22_ = new byte[i_10_][];
                 for (int i_23_ = 0;
-                     (i_23_ ^ 0xffffffff) > (i_10_ ^ 0xffffffff); i_23_++) {
+                     i_10_ > i_23_; i_23_++) {
                     is_22_[i_23_] = new byte[is_18_[i_23_]];
                     is_18_[i_23_] = 0;
                 }
                 class348_sub49.anInt7197 = i_16_;
                 int i_24_ = 0;
                 for (int i_25_ = 0;
-                     (i_17_ ^ 0xffffffff) < (i_25_ ^ 0xffffffff); i_25_++) {
+                     i_25_ < i_17_; i_25_++) {
                     int i_26_ = 0;
                     for (int i_27_ = 0; i_10_ > i_27_; i_27_++) {
                         i_26_ += class348_sub49.method3385((byte) -126);
@@ -236,7 +234,7 @@ final class Class45 {
                         i_29_ = i_28_;
                     else
                         i_29_ = is_11_[i_28_];
-                    if ((this.anInt634 ^ 0xffffffff) != -1)
+                    if (this.anInt634 != 0)
                         objects[i_29_] = is_22_[i_28_];
                     else
                         objects[i_29_]
@@ -252,7 +250,7 @@ final class Class45 {
                 int i_33_ = 0;
                 class348_sub49.anInt7197 = i_30_;
                 for (int i_34_ = 0;
-                     (i_31_ ^ 0xffffffff) < (i_34_ ^ 0xffffffff); i_34_++) {
+                     i_34_ < i_31_; i_34_++) {
                     int i_35_ = 0;
                     for (int i_36_ = 0; i_36_ < i_10_; i_36_++) {
                         i_35_ += class348_sub49.method3385((byte) -126);
@@ -261,13 +259,13 @@ final class Class45 {
                             i_37_ = i_36_;
                         else
                             i_37_ = is_11_[i_36_];
-                        if ((i_37_ ^ 0xffffffff) == (i ^ 0xffffffff)) {
+                        if (i == i_37_) {
                             i_33_ = i_37_;
                             i_32_ += i_35_;
                         }
                     }
                 }
-                if ((i_32_ ^ 0xffffffff) == -1)
+                if (i_32_ == 0)
                     return true;
                 byte[] is_38_ = new byte[i_32_];
                 class348_sub49.anInt7197 = i_30_;
@@ -298,7 +296,7 @@ final class Class45 {
                 i_44_ = is_11_[0];
             else
                 i_44_ = 0;
-            if ((this.anInt634 ^ 0xffffffff) != -1)
+            if (this.anInt634 != 0)
                 objects[i_44_] = is_15_;
             else
                 objects[i_44_]
@@ -355,13 +353,12 @@ final class Class45 {
         if (i != -31)
             return 50;
         for (/**/; anObjectArray656.length > i_50_; i_50_++) {
-            if ((aClass291_629.anIntArray3725[i_50_] ^ 0xffffffff)
-                    < -1) {
+            if (aClass291_629.anIntArray3725[i_50_] > 0) {
                 i_49_ += method419(0, i_50_);
                 i_48_ += 100;
             }
         }
-        if ((i_48_ ^ 0xffffffff) == -1)
+        if (i_48_ == 0)
             return 100;
         int i_51_ = i_49_ * 100 / i_48_;
         return i_51_;
@@ -392,7 +389,7 @@ final class Class45 {
         string = string.toLowerCase();
         int i_52_ = aClass291_629.aClass316_3723
                 .method2365(1, Class281.method2108(string, -29286));
-        return (i_52_ ^ 0xffffffff) <= -1;
+        return i_52_ >= 0;
     }
 
     final boolean method401(int i) {
@@ -401,8 +398,7 @@ final class Class45 {
             return false;
         boolean bool = true;
         for (int i_53_ = 0;
-             ((aClass291_629.anIntArray3738.length ^ 0xffffffff)
-                     < (i_53_ ^ 0xffffffff));
+             (i_53_ < aClass291_629.anIntArray3738.length);
              i_53_++) {
             int i_54_ = aClass291_629.anIntArray3738[i_53_];
             if (anObjectArray656[i_54_] == null) {
@@ -580,8 +576,7 @@ final class Class45 {
             return null;
         if (i != 73)
             anObjectArrayArray664 = null;
-        if ((aClass291_629.anIntArray3724[i_70_] ^ 0xffffffff)
-                == -2)
+        if (aClass291_629.anIntArray3724[i_70_] == 1)
             return method410(i ^ ~0x70a, i_70_, 0);
         throw new RuntimeException();
     }
@@ -589,7 +584,7 @@ final class Class45 {
     final boolean method416(byte i, String string) {
         anInt631++;
         int i_71_ = method417("", i + 74);
-        if ((i_71_ ^ 0xffffffff) != 0)
+        if (i_71_ != -1)
             return method403("", 7195, string);
         if (i != -74)
             return false;
@@ -614,13 +609,9 @@ final class Class45 {
         anInt662++;
         if (!method399(false))
             return false;
-        if (i_74_ < i_73_ || (i ^ 0xffffffff) > -1
-                || ((i_74_ ^ 0xffffffff)
-                <= (aClass291_629.anIntArray3724.length
-                ^ 0xffffffff))
-                || ((i ^ 0xffffffff)
-                <= (aClass291_629.anIntArray3724[i_74_]
-                ^ 0xffffffff))) {
+        if (i_74_ < i_73_ || i < 0
+                || (aClass291_629.anIntArray3724.length <= i_74_)
+                || (aClass291_629.anIntArray3724[i_74_] <= i)) {
             if (Class285.aBoolean4741)
                 throw new IllegalArgumentException(i_74_ + ","
                         + i);
@@ -682,7 +673,7 @@ final class Class45 {
             int i_79_
                     = aClass291_629.aClass316_3723
                     .method2365(1, Class281.method2108(string_78_, -29286));
-            if ((i_79_ ^ 0xffffffff) > -1)
+            if (i_79_ < 0)
                 return false;
             int i_80_
                     = aClass291_629.aClass316Array3728[i_79_]
@@ -712,7 +703,7 @@ final class Class45 {
     }
 
     Class45(Class314 class314, boolean bool, int i) {
-        if (i < 0 || (i ^ 0xffffffff) < -3)
+        if (i < 0 || i > 2)
             throw new IllegalArgumentException
                     ("js5: Invalid value " + i
                             + " supplied for discardunpacked");

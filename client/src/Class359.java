@@ -75,14 +75,14 @@ final class Class359 {
                 return 1;
             if (i_3_ == 1)
                 return 2;
-            if ((i_3_ ^ 0xffffffff) == -3)
+            if (i_3_ == 2)
                 return 4;
-            if ((i_3_ ^ 0xffffffff) == -4)
+            if (i_3_ == 3)
                 return 8;
-        } else if ((i_2_ ^ 0xffffffff) == -20 || (i_2_ ^ 0xffffffff) == -22) {
-            if ((i_3_ ^ 0xffffffff) == -1)
+        } else if (i_2_ == 19 || i_2_ == 21) {
+            if (i_3_ == 0)
                 return 16;
-            if ((i_3_ ^ 0xffffffff) == -2)
+            if (i_3_ == 1)
                 return 32;
             if (i_3_ == 2)
                 return 64;

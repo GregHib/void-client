@@ -99,7 +99,7 @@ final class Class353 {
         do {
             try {
                 anInt4351++;
-                if ((i ^ 0xffffffff) > (i_26_ ^ 0xffffffff)) {
+                if (i_26_ > i) {
                     int i_28_ = (i + i_26_) / 2;
                     int i_29_ = i;
                     long l = ls[i_28_];
@@ -109,7 +109,7 @@ final class Class353 {
                     objects[i_28_] = objects[i_26_];
                     objects[i_26_] = object;
                     int i_30_
-                            = ((l ^ 0xffffffffffffffffL) != -9223372036854775808L
+                            = (l != 9223372036854775807L
                             ? 1 : 0);
                     for (int i_31_ = i; i_26_ > i_31_; i_31_++) {
                         if ((long) (i_31_ & i_30_) + l > ls[i_31_]) {

@@ -35,7 +35,7 @@ final class Class348_Sub42_Sub4 extends Class348_Sub42 {
                             Class75_Sub1.method769(class348_sub41.anInt7050,
                                     (byte) 116);
                     }
-                    if ((class46.anInt774 ^ 0xffffffff) == -7
+                    if (class46.anInt774 == 6
                             && class46.anInt699 != -1) {
                         Class17 class17
                                 = Class10.aClass87_191
@@ -57,28 +57,18 @@ final class Class348_Sub42_Sub4 extends Class348_Sub42 {
                                     class46.anInt795
                                             -= class17.anInt238;
                                     if (class46.anInt795 < 0
-                                            || (((class17
-                                            .anIntArray237).length
-                                            ^ 0xffffffff)
-                                            >= (class46.anInt795
-                                            ^ 0xffffffff)))
+                                            || (class46.anInt795 >= (class17
+                                            .anIntArray237).length))
                                         class46.anInt795 = 0;
                                 }
                                 class46.anInt730
                                         = 1 + class46.anInt795;
-                                if ((class17.anIntArray237.length
-                                        ^ 0xffffffff)
-                                        >= (class46.anInt730
-                                        ^ 0xffffffff)) {
+                                if (class46.anInt730 >= class17.anIntArray237.length) {
                                     class46.anInt730
                                             -= class17.anInt238;
-                                    if ((class46.anInt730
-                                            ^ 0xffffffff) > -1
-                                            || ((class46.anInt730
-                                            ^ 0xffffffff)
-                                            <= ((class17
-                                            .anIntArray237).length
-                                            ^ 0xffffffff)))
+                                    if (class46.anInt730 < 0
+                                            || ((class17
+                                            .anIntArray237).length <= class46.anInt730))
                                         class46.anInt730 = -1;
                                 }
                                 Class251.method1916(-9343, class46);

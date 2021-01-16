@@ -54,7 +54,7 @@ class Class59_Sub1 extends Class59 {
             throw new IllegalArgumentException("");
         int i_7_ = Class183.method1382(i_2_, -6409);
         int i_8_ = 0;
-        int i_9_ = (i ^ 0xffffffff) > (i_5_ ^ 0xffffffff) ? i : i_5_;
+        int i_9_ = i_5_ > i ? i : i_5_;
         int i_10_ = i >> 1517170401;
         int i_11_ = i_5_ >> -322977663;
         float[] fs_12_ = fs;
@@ -62,18 +62,18 @@ class Class59_Sub1 extends Class59 {
         for (; ; ) {
             OpenGL.glTexImage2Df(i_3_, i_8_, i_6_, i, i_5_, 0, i_2_, 5126,
                     fs_12_, 0);
-            if ((i_9_ ^ 0xffffffff) >= -2)
+            if (i_9_ <= 1)
                 break;
             int i_14_ = i * i_7_;
             float[] fs_15_ = fs_13_;
-            for (int i_16_ = 0; (i_7_ ^ 0xffffffff) < (i_16_ ^ 0xffffffff);
-                 i_16_++) {
+            for (int i_16_ = 0; i_16_ < i_7_;
+				 i_16_++) {
                 int i_17_ = i_16_;
                 int i_18_ = i_16_;
                 int i_19_ = i_14_ + i_18_;
                 for (int i_20_ = 0; i_11_ > i_20_; i_20_++) {
                     for (int i_21_ = 0;
-                         (i_21_ ^ 0xffffffff) > (i_10_ ^ 0xffffffff);
+						 i_10_ > i_21_;
                          i_21_++) {
                         float f = fs_12_[i_18_];
                         i_18_ += i_7_;
@@ -115,7 +115,7 @@ class Class59_Sub1 extends Class59 {
         int i_33_ = i_31_ % i_30_;
         int i_34_ = 39 / ((31 - i_29_) / 63);
         int i_35_;
-        if ((i_33_ ^ 0xffffffff) != -1)
+        if (i_33_ != 0)
             i_35_ = i_30_ - i_33_;
         else
             i_35_ = 0;
@@ -144,9 +144,9 @@ class Class59_Sub1 extends Class59 {
                 anInt5290 = anInt5280;
             } else {
                 anInt5289 = anInt5280 * anInt5298 >> -640192180;
-                if ((anInt5289 ^ 0xffffffff) > -1)
+                if (anInt5289 < 0)
                     anInt5289 = 0;
-                else if ((anInt5289 ^ 0xffffffff) < -4097)
+                else if (anInt5289 > 4096)
                     anInt5289 = 4096;
                 anInt5280 = anInt5278 + -(i < 0 ? -i : i);
                 anInt5280 = anInt5280 * anInt5280 >> 655434060;

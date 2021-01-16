@@ -31,7 +31,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
         if (i_0_ == 0) {
             Class289.aByteArrayArrayArray3700 = null;
             Class46.method440(0, (byte) -61);
-        } else if ((i_0_ ^ 0xffffffff) == -2) {
+        } else if (i_0_ == 1) {
             Class301.method2280((byte) 0, 28587);
             Class46.method440(512, (byte) -61);
             if (Class348_Sub33.aByteArrayArrayArray6962 != null)
@@ -56,7 +56,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
         anInt9172++;
         if (i_4_ != 50)
             return false;
-        return (0x34 & i_3_ ^ 0xffffffff) != -1;
+        return (0x34 & i_3_) != 0;
     }
 
     final int[] method3042(int i, int i_5_) {

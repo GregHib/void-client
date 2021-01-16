@@ -137,7 +137,7 @@ final class Class377 extends ha_Sub3 {
                     = (int) class348_sub35.aLong4291;
             this.anInt8063
                     -= class348_sub35.anInt6976;
-            if ((i_0_ ^ 0xffffffff) == -1001) {
+            if (i_0_ == 1000) {
                 OpenGL.glDeleteBuffersARB(i_0_, Class107.anIntArray1650, 0);
                 i_0_ = 0;
             }
@@ -167,7 +167,7 @@ final class Class377 extends ha_Sub3 {
                     = (Class348_Sub35) aClass262_9902.method1997(8);
             Class107.anIntArray1650[i_0_++]
                     = class348_sub35.anInt6976;
-            if ((i_0_ ^ 0xffffffff) == -1001) {
+            if (i_0_ == 1000) {
                 OpenGL.glDeleteFramebuffersEXT(i_0_, Class107.anIntArray1650,
                         0);
                 i_0_ = 0;
@@ -184,13 +184,13 @@ final class Class377 extends ha_Sub3 {
                     = (int) class348_sub35.aLong4291;
             this.anInt8079
                     -= class348_sub35.anInt6976;
-            if ((i_0_ ^ 0xffffffff) == -1001) {
+            if (i_0_ == 1000) {
                 OpenGL.glDeleteRenderbuffersEXT(i_0_, Class107.anIntArray1650,
                         0);
                 i_0_ = 0;
             }
         }
-        if ((i_0_ ^ 0xffffffff) < -1) {
+        if (i_0_ > 0) {
             OpenGL.glDeleteRenderbuffersEXT(i_0_, Class107.anIntArray1650, 0);
             boolean bool = false;
         }
@@ -215,8 +215,7 @@ final class Class377 extends ha_Sub3 {
                     class348_sub35.anInt6976);
         }
         if (this.E() > 100663296
-                && ((60000L + aLong9906 ^ 0xffffffffffffffffL)
-                > (Class62.method599(-82) ^ 0xffffffffffffffffL))) {
+                && (Class62.method599(-82) > 60000L + aLong9906)) {
             System.gc();
             aLong9906 = Class62.method599(-96);
         }
@@ -564,7 +563,7 @@ final class Class377 extends ha_Sub3 {
         anInt9887++;
         int i_20_
                 = this.anIntArray9927[this.anInt8175];
-        if ((i_20_ ^ 0xffffffff) != -1) {
+        if (i_20_ != 0) {
             this.anIntArray9927[this.anInt8175] = 0;
             OpenGL.glBindTexture(i_20_, 0);
             OpenGL.glDisable(i_20_);
@@ -600,7 +599,7 @@ final class Class377 extends ha_Sub3 {
         int i_22_ = 0;
         if (i < 45)
             anInt9925 = 51;
-        for (/**/; (i_22_ ^ 0xffffffff) > -9; i_22_++) {
+        for (/**/; i_22_ < 8; i_22_++) {
             int i_23_ = i_22_ + 16384;
             OpenGL.glLightfv(i_23_, 4608, fs, 0);
             OpenGL.glLightf(i_23_, 4615, 0.0F);
@@ -647,7 +646,7 @@ final class Class377 extends ha_Sub3 {
             if (i != -1)
                 GA(-118);
             long l = anOpenGL9856.prepareSurface(canvas);
-            if ((l ^ 0xffffffffffffffffL) == 0L)
+            if (l == -1)
                 throw new RuntimeException();
             return new Long(l);
         } catch (RuntimeException runtimeexception) {
@@ -662,7 +661,7 @@ final class Class377 extends ha_Sub3 {
     final Class365 c() {
         anInt9843++;
         int i = -1;
-        if ((aString9917.indexOf("nvidia") ^ 0xffffffff) != 0)
+        if (aString9917.indexOf("nvidia") != -1)
             i = 4318;
         else if (aString9917.indexOf("intel") != -1)
             i = 32902;
@@ -843,7 +842,7 @@ final class Class377 extends ha_Sub3 {
                 aString9917 = OpenGL.glGetString(7936).toLowerCase();
                 aString9916 = OpenGL.glGetString(7937).toLowerCase();
                 if (aString9917.indexOf("microsoft") != -1
-                        || (aString9917.indexOf("brian paul") ^ 0xffffffff) != 0
+                        || aString9917.indexOf("brian paul") != -1
                         || aString9917.indexOf("mesa") != -1)
                     throw new RuntimeException("");
                 String string = OpenGL.glGetString(7938);
@@ -899,13 +898,12 @@ final class Class377 extends ha_Sub3 {
                     String[] strings_36_
                             = (Class348_Sub40_Sub23.method3113
                             (' ', true, aString9916.replace('/', ' ')));
-                    for (int i_37_ = 0; ((strings_36_.length ^ 0xffffffff)
-                            < (i_37_ ^ 0xffffffff)); i_37_++) {
+                    for (int i_37_ = 0; (i_37_ < strings_36_.length); i_37_++) {
                         String string_38_ = strings_36_[i_37_];
                         try {
-                            if ((string_38_.length() ^ 0xffffffff) < -1) {
+                            if (string_38_.length() > 0) {
                                 if (string_38_.charAt(0) == 'x'
-                                        && (string_38_.length() ^ 0xffffffff) <= -4
+                                        && string_38_.length() >= 3
                                         && (Class50_Sub3.method468
                                         (string_38_.substring(1, 3), -115))) {
                                     bool_35_ = true;
@@ -936,7 +934,7 @@ final class Class377 extends ha_Sub3 {
                     if (!bool_35_ && !bool) {
                         if (i_34_ >= 7000 && i_34_ <= 7999)
                             this.aBoolean9920 = false;
-                        if ((i_34_ ^ 0xffffffff) <= -7001 && i_34_ <= 9250)
+                        if (i_34_ >= 7000 && i_34_ <= 9250)
                             this.aBoolean8159 = false;
                     }
                     aBoolean9919 &= anOpenGL9856.a("GL_ARB_half_float_pixel");
@@ -1053,7 +1051,7 @@ final class Class377 extends ha_Sub3 {
             OpenGL.glEnable(i_49_);
         }
         for (/**/;
-                 (this.anInt8122 ^ 0xffffffff) < (i_47_ ^ 0xffffffff);
+                 i_47_ < this.anInt8122;
                  i_47_++)
             OpenGL.glDisable(16386 - -i_47_);
         super.method3823((byte) 107);
@@ -1205,9 +1203,9 @@ final class Class377 extends ha_Sub3 {
         while_237_:
         do {
             do {
-                if ((i_59_ ^ 0xffffffff) != -4) {
-                    if ((i_59_ ^ 0xffffffff) != -5) {
-                        if ((i_59_ ^ 0xffffffff) == -9)
+                if (i_59_ != 3) {
+                    if (i_59_ != 4) {
+                        if (i_59_ == 8)
                             break;
                         break while_237_;
                     }
@@ -1265,8 +1263,8 @@ final class Class377 extends ha_Sub3 {
 
     final void method3673() {
         anInt9892++;
-        if ((this.anInt7931 ^ 0xffffffff) < -1
-                || (this.anInt7962 ^ 0xffffffff) < -1) {
+        if (this.anInt7931 > 0
+                || this.anInt7962 > 0) {
             int i = this.anInt8106;
             int i_67_ = this.anInt8183;
             int i_68_ = this.anInt8165;
@@ -1378,8 +1376,7 @@ final class Class377 extends ha_Sub3 {
                 long l = class285_sub1.method2122(27819);
                 class285_sub1.method2125(0);
                 for (int i_80_ = 0;
-                     ((class58.method538((byte) -119) ^ 0xffffffff)
-                             < (i_80_ ^ 0xffffffff));
+                     (i_80_ < class58.method538((byte) -119));
                      i_80_++) {
                     Class325 class325 = class58.method537(i_80_, -119);
                     if (class325 == Class325.aClass325_4073) {
@@ -1438,7 +1435,7 @@ final class Class377 extends ha_Sub3 {
                     OpenGL.glEnableClientState(32886);
                 aBoolean9908 = bool;
             }
-            if ((anInt9909 ^ 0xffffffff) <= (i_74_ ^ 0xffffffff)) {
+            if (i_74_ <= anInt9909) {
                 if (anInt9909 > i_74_) {
                     for (int i_81_ = i_74_; anInt9909 > i_81_; i_81_++) {
                         OpenGL.glClientActiveTexture(i_81_ + 33984);
@@ -1448,7 +1445,7 @@ final class Class377 extends ha_Sub3 {
                 }
             } else {
                 for (int i_82_ = anInt9909;
-                     (i_74_ ^ 0xffffffff) < (i_82_ ^ 0xffffffff); i_82_++) {
+                     i_82_ < i_74_; i_82_++) {
                     OpenGL.glClientActiveTexture(33984 - -i_82_);
                     OpenGL.glEnableClientState(32888);
                 }
@@ -1645,7 +1642,7 @@ final class Class377 extends ha_Sub3 {
     final int[] na(int i, int i_90_, int i_91_, int i_92_) {
         anInt9820++;
         int[] is = new int[i_92_ * i_91_];
-        for (int i_93_ = 0; (i_92_ ^ 0xffffffff) < (i_93_ ^ 0xffffffff);
+        for (int i_93_ = 0; i_93_ < i_92_;
              i_93_++)
             OpenGL.glReadPixelsi(i,
                     (-1 + (-i_93_ + -i_90_)

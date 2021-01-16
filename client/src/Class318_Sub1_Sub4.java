@@ -21,9 +21,9 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         int i_1_ = this.anInt6388 >> Class362.anInt4459;
         int i_2_ = -103 / ((i - -14) / 61);
         int i_3_ = 0;
-        if ((i_0_ ^ 0xffffffff) == (Class239_Sub25.anInt6111 ^ 0xffffffff))
+        if (Class239_Sub25.anInt6111 == i_0_)
             i_3_++;
-        else if ((i_0_ ^ 0xffffffff) < (Class239_Sub25.anInt6111 ^ 0xffffffff))
+        else if (Class239_Sub25.anInt6111 < i_0_)
             i_3_ += 2;
         if (i_1_ == Class285_Sub2.anInt8502)
             i_3_ += 3;
@@ -33,21 +33,21 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         if ((this.aShort8759 & i_4_) != 0)
             return this.method2390(class348_sub1s, i_0_, -2, i_1_);
         if (this.aShort8759 == 1
-                && (i_0_ ^ 0xffffffff) < -1)
+                && i_0_ > 0)
             return this.method2390(class348_sub1s, -1 + i_0_, -2, i_1_);
         if (this.aShort8759 == 4
                 && i_0_ <= Class318_Sub7.anInt6451)
             return this.method2390(class348_sub1s, 1 + i_0_, -2, i_1_);
-        if ((this.aShort8759 ^ 0xffffffff) == -9
+        if (this.aShort8759 == 8
                 && i_1_ > 0)
             return this.method2390(class348_sub1s, i_0_, -2, -1 + i_1_);
-        if ((this.aShort8759 ^ 0xffffffff) == -3
-                && (Class348_Sub41.anInt7054 ^ 0xffffffff) <= (i_1_ ^ 0xffffffff))
+        if (this.aShort8759 == 2
+                && i_1_ <= Class348_Sub41.anInt7054)
             return this.method2390(class348_sub1s, i_0_, -2, i_1_ + 1);
         if (this.aShort8759 == 16
-                && (i_0_ ^ 0xffffffff) < -1 && i_1_ <= Class348_Sub41.anInt7054)
+                && i_0_ > 0 && i_1_ <= Class348_Sub41.anInt7054)
             return this.method2390(class348_sub1s, -1 + i_0_, -2, i_1_ + 1);
-        if ((this.aShort8759 ^ 0xffffffff) == -33
+        if (this.aShort8759 == 32
                 && Class318_Sub7.anInt6451 >= i_0_
                 && Class348_Sub41.anInt7054 >= i_1_)
             return this.method2390(class348_sub1s, i_0_ + 1, -2, i_1_ + 1);
@@ -55,8 +55,8 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                 && i_1_ > 0)
             return this.method2390(class348_sub1s, i_0_ - 1, -2, i_1_ - 1);
         if (this.aShort8759 == 64
-                && (Class318_Sub7.anInt6451 ^ 0xffffffff) <= (i_0_ ^ 0xffffffff)
-                && (i_1_ ^ 0xffffffff) < -1)
+                && i_0_ <= Class318_Sub7.anInt6451
+                && i_1_ > 0)
             return this.method2390(class348_sub1s, 1 + i_0_, -2, -1 + i_1_);
         throw new RuntimeException("");
     }
@@ -103,10 +103,8 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
             if (bool_6_) {
                 try {
                     i_9_ = Class239_Sub14.method1781(3, -70, 1000);
-                    if ((Class316.aClass348_Sub51_3959
-                            .aClass239_Sub25_7271.method1829(i + -33350)
-                            ^ 0xffffffff)
-                            == -4) {
+                    if (Class316.aClass348_Sub51_3959
+                            .aClass239_Sub25_7271.method1829(i + -33350) == 3) {
                         Class365 class365 = Class348_Sub8.aHa6654.c();
                         long l = (0xffffffffffffL
                                 & class365.aLong4471);
@@ -115,12 +113,10 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                             if (i_10_ != 4098)
                                 break;
                         } else {
-                            bool_5_ = bool_5_ & ((l ^ 0xffffffffffffffffL)
-                                    <= -64425238955L);
+                            bool_5_ = bool_5_ & (l >= 64425238954L);
                             break;
                         }
-                        bool_5_ = bool_5_ & ((l ^ 0xffffffffffffffffL)
-                                <= -60129613780L);
+                        bool_5_ = bool_5_ & (l >= 60129613779L);
                     }
                 } catch (Exception exception) {
                     /* empty */
@@ -134,11 +130,11 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                 /* empty */
             }
         }
-        if ((i_7_ ^ 0xffffffff) == 0 && i_8_ == -1 && i_9_ == -1)
+        if (i_7_ == -1 && i_8_ == -1 && i_9_ == -1)
             return Class314_Sub1.method2348(i + -9454);
         i_9_ *= 1.1F;
         i_8_ *= 1.1F;
-        if ((i_9_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff) && i_8_ < i_7_)
+        if (i_7_ > i_9_ && i_8_ < i_7_)
             return Class49.method454(i_7_, (byte) -116);
         if (i_9_ <= i_8_)
             return Class62.method600((byte) -59, 1, i_8_);

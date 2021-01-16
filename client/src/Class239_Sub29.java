@@ -51,15 +51,15 @@ final class Class239_Sub29 extends Class239 {
         char[] cs = Class185.aCharArray2488;
         for (int i_2_ = 0; cs.length > i_2_; i_2_++) {
             int i_3_ = cs[i_2_];
-            if ((i_3_ ^ 0xffffffff) == (c ^ 0xffffffff))
+            if (c == i_3_)
                 return true;
         }
         int i_4_ = -127 / ((i - 44) / 45);
         char[] cs_5_ = Class131.aCharArray1903;
-        for (int i_6_ = 0; (i_6_ ^ 0xffffffff) > (cs_5_.length ^ 0xffffffff);
+        for (int i_6_ = 0; cs_5_.length > i_6_;
              i_6_++) {
             int i_7_ = cs_5_[i_6_];
-            if ((c ^ 0xffffffff) == (i_7_ ^ 0xffffffff))
+            if (i_7_ == c)
                 return true;
         }
         return false;
@@ -80,7 +80,7 @@ final class Class239_Sub29 extends Class239 {
 
     static final void method1851(byte i) {
         anInt6152++;
-        for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -6; i_11_++)
+        for (int i_11_ = 0; i_11_ < 5; i_11_++)
             Class181.aBooleanArray2374[i_11_] = false;
         Class359.anInt4424 = Class59_Sub2_Sub2.anInt8685;
         Class283.anInt3662 = Class348_Sub42_Sub19.anInt9701;
@@ -99,7 +99,7 @@ final class Class239_Sub29 extends Class239 {
 
     final void method1716(boolean bool) {
         if (this.anInt3138 < 0
-                || (this.anInt3138 ^ 0xffffffff) < -5)
+                || this.anInt3138 > 4)
             this.anInt3138 = method1710(20014);
         anInt6150++;
         if (bool != false)

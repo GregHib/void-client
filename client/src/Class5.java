@@ -117,8 +117,8 @@ abstract class Class5 implements Interface1 {
             this.aClass369_4635 = null;
         int i_8_ = Class51.aClass311_897.method2320((byte) 106);
         int i_9_ = 100 * i_8_;
-        if ((i_8_ ^ 0xffffffff) != (anInt4630 ^ 0xffffffff)
-                || (i_8_ ^ 0xffffffff) == -1) {
+        if (anInt4630 != i_8_
+                || i_8_ == 0) {
             anInt4630 = i_8_;
             aLong4640 = Class62.method599(-125);
         } else {

@@ -30,7 +30,7 @@ final class Class302 {
             anInt3841++;
             if (Class147.aClass357ArrayArrayArray2029 != null) {
                 if (Class348_Sub40_Sub21.anInt9282 != 1
-                        && (Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff) != -6) {
+                        && Class348_Sub40_Sub21.anInt9282 != 5) {
                     if (Class348_Sub40_Sub21.anInt9282 == 4)
                         Class82.method814((byte) 125, l);
                 } else
@@ -41,7 +41,7 @@ final class Class302 {
             if (r.anInt9721 != -1)
                 Class75_Sub1.method769(r.anInt9721, (byte) 118);
             for (int i_3_ = 0;
-                 (Class348_Sub38.anInt7008 ^ 0xffffffff) < (i_3_ ^ 0xffffffff);
+                 i_3_ < Class348_Sub38.anInt7008;
                  i_3_++) {
                 if (Class152.aBooleanArray2076[i_3_])
                     Class268.aBooleanArray3438[i_3_] = true;

@@ -61,8 +61,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
             int[] is_7_ = is[0];
             int[] is_8_ = is[1];
             int[] is_9_ = is[2];
-            for (int i_10_ = 0; ((Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff)
-                    < (i_10_ ^ 0xffffffff)); i_10_++) {
+            for (int i_10_ = 0; (i_10_ < Class348_Sub40_Sub6.anInt9139); i_10_++) {
                 int i_11_ = is_4_[i_10_];
                 int i_12_ = is_5_[i_10_];
                 int i_13_ = is_6_[i_10_];
@@ -74,12 +73,12 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
                     is_7_[i_10_] = anInt9470;
                 if (anInt9474 > i_12_)
                     is_8_[i_10_] = anInt9474;
-                else if ((anInt9470 ^ 0xffffffff) <= (i_12_ ^ 0xffffffff))
+                else if (i_12_ <= anInt9470)
                     is_8_[i_10_] = i_12_;
                 else
                     is_8_[i_10_] = anInt9470;
-                if ((i_13_ ^ 0xffffffff) <= (anInt9474 ^ 0xffffffff)) {
-                    if ((anInt9470 ^ 0xffffffff) <= (i_13_ ^ 0xffffffff))
+                if (anInt9474 <= i_13_) {
+                    if (i_13_ <= anInt9470)
                         is_9_[i_10_] = i_13_;
                     else
                         is_9_[i_10_] = anInt9470;
@@ -105,7 +104,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
         int i = 0;
         if (bool != true)
             method3150(false);
-        for (/**/; (i ^ 0xffffffff) > (Class150.anInt2057 ^ 0xffffffff); i++) {
+        for (/**/; Class150.anInt2057 > i; i++) {
             int i_14_ = Class74.anIntArray1233[i];
             Class348_Sub22 class348_sub22
                     = ((Class348_Sub22)
@@ -132,7 +131,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
             for (int i_17_ = 0; i_17_ < Class348_Sub40_Sub6.anInt9139;
                  i_17_++) {
                 int i_18_ = is_16_[i_17_];
-                if ((i_18_ ^ 0xffffffff) > (anInt9474 ^ 0xffffffff))
+                if (anInt9474 > i_18_)
                     is[i_17_] = anInt9474;
                 else if (i_18_ > anInt9470)
                     is[i_17_] = anInt9470;

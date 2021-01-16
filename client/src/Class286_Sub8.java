@@ -132,7 +132,7 @@ final class Class286_Sub8 extends Class286 {
         anInt6292++;
         if (bool) {
             Class26.anInt383--;
-            if ((Class26.anInt383 ^ 0xffffffff) == -1)
+            if (Class26.anInt383 == 0)
                 Class10.anIntArray179 = null;
         }
         if (bool_6_) {

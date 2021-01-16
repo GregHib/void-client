@@ -17,11 +17,10 @@ final class Class348_Sub22 extends Class348 {
         Class46 class46 = Class324.method2570(i_0_ + 1512932774, i_1_);
         if (i_0_ != -54)
             method2958(-23, null);
-        if ((i ^ 0xffffffff) == 0)
+        if (i == -1)
             return class46;
         if (class46 == null || class46.aClass46Array798 == null
-                || ((class46.aClass46Array798.length ^ 0xffffffff)
-                >= (i ^ 0xffffffff)))
+                || (i >= class46.aClass46Array798.length))
             return null;
         return class46.aClass46Array798[i];
     }

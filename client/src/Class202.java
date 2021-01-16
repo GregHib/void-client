@@ -61,7 +61,7 @@ final class Class202 implements Runnable {
         Class239_Sub24.anInt6095 = 0;
         int i_0_ = 29 % ((-42 - i) / 63);
         for (int i_1_ = 0;
-             (i_1_ ^ 0xffffffff) > (Class250.anInt3225 ^ 0xffffffff); i_1_++) {
+             Class250.anInt3225 > i_1_; i_1_++) {
             int i_2_ = Class31.anInt425 * i_1_;
             for (int i_3_ = 0; i_3_ < Class31.anInt425; i_3_++) {
                 int i_4_ = i_2_ - -i_3_;
@@ -86,13 +86,11 @@ final class Class202 implements Runnable {
                 if (i_6_ != -1) {
                     /* empty */
                 } else {
-                    for (int i_7_ = 0; (i ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
+                    for (int i_7_ = 0; i_7_ < i;
                          i_7_++) {
                         aByteArray2663[anInt2648] = is[i_7_ + i_5_];
                         anInt2648 = (anInt2648 - -1) % anInt2669;
-                        if (((anInt2656 - (-anInt2669 - -100)) % anInt2669
-                                ^ 0xffffffff)
-                                == (anInt2648 ^ 0xffffffff))
+                        if (anInt2648 == (anInt2656 - (-anInt2669 - -100)) % anInt2669)
                             throw new IOException();
                     }
                     if (aClass144_2658 == null)
@@ -190,7 +188,7 @@ final class Class202 implements Runnable {
         if (!aBoolean2654) {
             while (i_10_ > 0) {
                 int i_11_ = anInputStream2652.read(is, i, i_10_);
-                if ((i_11_ ^ 0xffffffff) >= -1)
+                if (i_11_ <= 0)
                     throw new EOFException();
                 i_10_ -= i_11_;
                 i += i_11_;

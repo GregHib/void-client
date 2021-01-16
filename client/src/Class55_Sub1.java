@@ -88,7 +88,7 @@ final class Class55_Sub1 extends Class55 {
             aClass348_Sub49_5276.anInt7197 = 0;
             int i_5_ = is_4_.length >> 994128513;
             anIntArray5269 = new int[i_5_];
-            for (int i_6_ = 0; (i_5_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff);
+            for (int i_6_ = 0; i_6_ < i_5_;
                  i_6_++)
                 anIntArray5269[i_6_]
                         = aClass348_Sub49_5276.method3330(842397944);
@@ -100,10 +100,7 @@ final class Class55_Sub1 extends Class55 {
             aByteArrayArray5275 = null;
         aClass348_Sub49_5276.aByteArray7154 = is;
         aClass348_Sub49_5276.anInt7197 = 0;
-        while ((aClass348_Sub49_5276.aByteArray7154.length
-                ^ 0xffffffff)
-                < (aClass348_Sub49_5276.anInt7197
-                ^ 0xffffffff)) {
+        while (aClass348_Sub49_5276.anInt7197 < aClass348_Sub49_5276.aByteArray7154.length) {
             if (aClass348_Sub49_5274.aByteArray7154
                     == null) {
                 if (aByteArrayArray5275[0] == null) {
@@ -120,7 +117,7 @@ final class Class55_Sub1 extends Class55 {
             int i_8_ = (-aClass348_Sub49_5274.anInt7197
                     + (aClass348_Sub49_5274
                     .aByteArray7154).length);
-            if ((i_7_ ^ 0xffffffff) <= (i_8_ ^ 0xffffffff)) {
+            if (i_8_ <= i_7_) {
                 aClass348_Sub49_5276.method3380
                         (i_8_, aClass348_Sub49_5274.anInt7197,
                                 aClass348_Sub49_5274.aByteArray7154,

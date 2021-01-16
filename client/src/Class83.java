@@ -61,7 +61,7 @@ final class Class83 {
                         true, is, 6410, false);
             }
             this.aClass258_Sub3Array1448 = new Class258_Sub3[16];
-            for (int i = 0; (i ^ 0xffffffff) > -17; i++) {
+            for (int i = 0; i < 16; i++) {
                 byte[] is
                         = Class173.method1331((byte) 110, Class319.anObject3985,
                         2 * i * 16384, 32768);

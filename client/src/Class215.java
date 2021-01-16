@@ -35,7 +35,7 @@ final class Class215 {
                 Class14_Sub2.method243(37);
             }
         }
-        if ((i_2_ ^ 0xffffffff) == -4 && Class34.aFrame476 == null)
+        if (i_2_ == 3 && Class34.aFrame476 == null)
             method1580((byte) -126, true, -1, i_1_,
                     Class316.aClass348_Sub51_3959
                             .aClass239_Sub8_7227.method1751(-32350),
@@ -73,9 +73,8 @@ final class Class215 {
                 Class335.anInt4167 = 0;
             }
             if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                if ((Class321.anInt4017 ^ 0xffffffff) > -1025
-                        && ((Class348_Sub42_Sub8_Sub2.anInt10432 ^ 0xffffffff)
-                        > -769)) {
+                if (Class321.anInt4017 < 1024
+                        && (Class348_Sub42_Sub8_Sub2.anInt10432 < 768)) {
                     /* empty */
                 }
             }
@@ -103,7 +102,7 @@ final class Class215 {
                             Class335.anInt4167);
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2;
-            if ((r.anInt9721 ^ 0xffffffff) != 0)
+            if (r.anInt9721 != -1)
                 Class239.method1713(true, 520);
             if (Class348_Sub40_Sub8.aClass238_9165 != null
                     && Class334.method2653(true, Class240.anInt4674))
@@ -118,8 +117,8 @@ final class Class215 {
         anInt2838++;
         if (i >= -18)
             return false;
-        return ((c ^ 0xffffffff) <= -66 && c <= 90)
-                || (c >= 97 && (c ^ 0xffffffff) >= -123);
+        return (c >= 65 && c <= 90)
+                || (c >= 97 && c <= 122);
     }
 
     static final void method1582(int i) {
@@ -127,14 +126,14 @@ final class Class215 {
         if (i == 7851) {
             do {
                 try {
-                    if ((Class348_Sub43.anInt7068 ^ 0xffffffff) == -2) {
+                    if (Class348_Sub43.anInt7068 == 1) {
                         int i_6_ = Class98.aClass348_Sub16_Sub3_1564
                                 .method2844((byte) 123);
-                        if ((i_6_ ^ 0xffffffff) < -1
+                        if (i_6_ > 0
                                 && Class98.aClass348_Sub16_Sub3_1564
                                 .method2860(124)) {
                             i_6_ -= Class239_Sub14.anInt5994;
-                            if ((i_6_ ^ 0xffffffff) > -1)
+                            if (i_6_ < 0)
                                 i_6_ = 0;
                             Class98.aClass348_Sub16_Sub3_1564.method2861(0,
                                     i_6_);
@@ -157,8 +156,7 @@ final class Class215 {
                     if (i_7_ < Class58.anInt1059
                             && Class98.aClass348_Sub16_Sub3_1564.method2860(95)) {
                         i_7_ += Class348_Sub40_Sub35.anInt9444;
-                        if ((i_7_ ^ 0xffffffff)
-                                < (Class58.anInt1059 ^ 0xffffffff))
+                        if (Class58.anInt1059 < i_7_)
                             i_7_ = Class58.anInt1059;
                         Class98.aClass348_Sub16_Sub3_1564
                                 .method2861(i ^ 0x1eab, i_7_);

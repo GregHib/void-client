@@ -22,9 +22,9 @@ final class Class121 {
         while_44_:
         do {
             do {
-                if ((i_1_ ^ 0xffffffff) != -1) {
+                if (i_1_ != 0) {
                     if (i_1_ != 1) {
-                        if ((i_1_ ^ 0xffffffff) == -3)
+                        if (i_1_ == 2)
                             break;
                         break while_44_;
                     }

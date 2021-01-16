@@ -34,7 +34,7 @@ final class Class239_Sub8 extends Class239 {
                 }
                 return -i_3_ + i_2_;
             }
-            if ((i ^ 0xffffffff) == -3)
+            if (i == 2)
                 return (Class239_Sub21.method1811
                         (9152,
                                 (class110_sub1_0_.method1038(false)
@@ -83,7 +83,7 @@ final class Class239_Sub8 extends Class239 {
                     return 0;
                 return -1;
             }
-            if ((i ^ 0xffffffff) == -7) {
+            if (i == 6) {
                 if (class110_sub1.method1031(i_1_ ^ ~0x61)) {
                     if (class110_sub1_0_.method1031(-105))
                         return 0;
@@ -105,18 +105,18 @@ final class Class239_Sub8 extends Class239 {
                     return -1;
                 return 0;
             }
-            if ((i ^ 0xffffffff) == -9) {
+            if (i == 8) {
                 int i_4_ = class110_sub1.anInt5788;
                 int i_5_ = class110_sub1_0_.anInt5788;
                 if (!bool) {
-                    if ((i_5_ ^ 0xffffffff) == 0)
+                    if (i_5_ == -1)
                         i_5_ = 1000;
-                    if ((i_4_ ^ 0xffffffff) == 0)
+                    if (i_4_ == -1)
                         i_4_ = 1000;
                 } else {
                     if (i_5_ == 1000)
                         i_5_ = -1;
-                    if ((i_4_ ^ 0xffffffff) == -1001)
+                    if (i_4_ == 1000)
                         i_4_ = -1;
                 }
                 return -i_5_ + i_4_;
@@ -208,7 +208,7 @@ final class Class239_Sub8 extends Class239 {
                 Class348_Sub42_Sub9_Sub1.anInt10444
                         = (Class239_Sub16.anInt6008 - Class107.anInt1651
                         >> 1812758785);
-            } else if ((Class348_Sub49.anInt7207 ^ 0xffffffff) == -3) {
+            } else if (Class348_Sub49.anInt7207 == 2) {
                 Class348_Sub16_Sub1.anInt8854 = Class59_Sub1.anInt5283;
                 Class239_Sub16.anInt6008 = Class107.anInt1651;
             }
@@ -217,7 +217,7 @@ final class Class239_Sub8 extends Class239 {
 
     static final String method1753(int i, Class46 class46) {
         anInt5924++;
-        if ((client.method105(class46).method3307(116) ^ 0xffffffff) == -1)
+        if (client.method105(class46).method3307(116) == 0)
             return null;
         if (class46.aString780 == null
                 || class46.aString780.trim().length() == 0) {
@@ -232,8 +232,8 @@ final class Class239_Sub8 extends Class239 {
 
     final void method1716(boolean bool) {
         anInt5913++;
-        if ((this.anInt3138 ^ 0xffffffff) > -2
-                || (this.anInt3138 ^ 0xffffffff) < -4)
+        if (this.anInt3138 < 1
+                || this.anInt3138 > 3)
             this.anInt3138 = method1710(20014);
         if (bool != false)
             anIntArrayArray5921 = null;
@@ -241,7 +241,7 @@ final class Class239_Sub8 extends Class239 {
 
     static final int method1754(boolean bool, int i, int i_12_, int i_13_) {
         anInt5920++;
-        if ((Class348.anInt4290 ^ 0xffffffff) > -101)
+        if (Class348.anInt4290 < 100)
             return -2;
         if (bool != true)
             method1754(false, 115, 112, -104);
@@ -261,8 +261,8 @@ final class Class239_Sub8 extends Class239 {
                         | Class75.anInt1266 + i_18_ << -521899634);
                 int i_21_ = ((-i_19_ + i_17_) * (-i_19_ + i_17_)
                         + (i_16_ - i_18_) * (-i_18_ + i_16_));
-                if ((i_14_ ^ 0xffffffff) > -1
-                        || (i_21_ ^ 0xffffffff) > (i_15_ ^ 0xffffffff)) {
+                if (i_14_ < 0
+                        || i_15_ > i_21_) {
                     i_15_ = i_21_;
                     i_14_ = i_20_;
                 }
@@ -288,7 +288,7 @@ final class Class239_Sub8 extends Class239 {
             int i_31_ = is_26_[i_22_];
             int i_32_ = is_27_[i_22_] + i_31_;
             int i_33_ = i_29_;
-            if ((i_31_ ^ 0xffffffff) < (i_29_ ^ 0xffffffff))
+            if (i_29_ < i_31_)
                 i_33_ = i_31_;
             int i_34_ = i_30_;
             if (i_32_ < i_30_)
@@ -302,7 +302,7 @@ final class Class239_Sub8 extends Class239 {
             int i_39_ = -i_31_ + i_33_;
             for (int i_40_ = i_33_; i_34_ > i_40_; i_40_++) {
                 int i_41_ = is_37_[i_39_++] + is_36_[i_38_++];
-                if ((i_35_ ^ 0xffffffff) < (i_41_ ^ 0xffffffff))
+                if (i_41_ < i_35_)
                     i_35_ = i_41_;
             }
             return -i_35_;

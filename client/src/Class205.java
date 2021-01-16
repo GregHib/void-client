@@ -20,7 +20,7 @@ final class Class205 {
         anInt2685++;
         int i_6_ = 0;
         int i_7_ = -i_4_ + i_2_;
-        if ((i_7_ ^ 0xffffffff) > -1)
+        if (i_7_ < 0)
             i_7_ = 0;
         int i_8_ = i_2_;
         int i_9_ = -i_2_;
@@ -42,12 +42,12 @@ final class Class205 {
             Class135_Sub2.method1156(-27, i_14_, is, i_16_, i);
         }
         int i_17_ = -1;
-        while ((i_8_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff)) {
+        while (i_6_ < i_8_) {
             i_12_ += 2;
             i_17_ += 2;
             i_11_ += i_17_;
             i_9_ += i_12_;
-            if ((i_11_ ^ 0xffffffff) <= -1 && i_10_ >= 1) {
+            if (i_11_ >= 0 && i_10_ >= 1) {
                 i_10_--;
                 Class348_Sub49_Sub2.anIntArray9757[i_10_] = i_6_;
                 i_11_ -= i_10_ << 1786913601;
@@ -58,9 +58,9 @@ final class Class205 {
                 i_9_ -= i_8_ << 768824161;
                 int i_18_ = i_0_ - i_8_;
                 int i_19_ = i_0_ + i_8_;
-                if ((i_19_ ^ 0xffffffff) <= (Class132.anInt1910 ^ 0xffffffff)
+                if (Class132.anInt1910 <= i_19_
                         && Class38.anInt513 >= i_18_) {
-                    if ((i_7_ ^ 0xffffffff) >= (i_8_ ^ 0xffffffff)) {
+                    if (i_8_ >= i_7_) {
                         int i_20_ = Class85.method831(Class113.anInt1745,
                                 i_6_ + i_5_,
                                 Class369.anInt4960,
@@ -68,15 +68,13 @@ final class Class205 {
                         int i_21_ = Class85.method831(Class113.anInt1745,
                                 i_5_ - i_6_,
                                 Class369.anInt4960, 112);
-                        if ((Class38.anInt513 ^ 0xffffffff)
-                                <= (i_19_ ^ 0xffffffff))
+                        if (i_19_ <= Class38.anInt513)
                             Class135_Sub2.method1156(-27, i_20_,
                                     (Class17
                                             .anIntArrayArray255
                                             [i_19_]),
                                     i_21_, i);
-                        if ((i_18_ ^ 0xffffffff)
-                                <= (Class132.anInt1910 ^ 0xffffffff))
+                        if (Class132.anInt1910 <= i_18_)
                             Class135_Sub2.method1156(-27, i_20_,
                                     (Class17
                                             .anIntArrayArray255
@@ -97,8 +95,7 @@ final class Class205 {
                         int i_26_ = Class85.method831(Class113.anInt1745,
                                 i_5_ - i_22_,
                                 Class369.anInt4960, 84);
-                        if ((i_19_ ^ 0xffffffff)
-                                >= (Class38.anInt513 ^ 0xffffffff)) {
+                        if (Class38.anInt513 >= i_19_) {
                             int[] is = Class17.anIntArrayArray255[i_19_];
                             Class135_Sub2.method1156(-27, i_26_, is, i_24_, i);
                             Class135_Sub2.method1156(-27, i_25_, is, i_26_,
@@ -117,7 +114,7 @@ final class Class205 {
             }
             int i_27_ = -i_6_ + i_0_;
             int i_28_ = i_0_ + i_6_;
-            if ((i_28_ ^ 0xffffffff) <= (Class132.anInt1910 ^ 0xffffffff)
+            if (Class132.anInt1910 <= i_28_
                     && i_27_ <= Class38.anInt513) {
                 int i_29_ = i_8_ + i_5_;
                 int i_30_ = i_5_ + -i_8_;
@@ -127,23 +124,21 @@ final class Class205 {
                             Class369.anInt4960, 102);
                     i_30_ = Class85.method831(Class113.anInt1745, i_30_,
                             Class369.anInt4960, -100);
-                    if ((i_7_ ^ 0xffffffff) >= (i_6_ ^ 0xffffffff)) {
-                        if ((i_28_ ^ 0xffffffff)
-                                >= (Class38.anInt513 ^ 0xffffffff))
+                    if (i_6_ >= i_7_) {
+                        if (Class38.anInt513 >= i_28_)
                             Class135_Sub2.method1156(-27, i_29_,
                                     (Class17
                                             .anIntArrayArray255
                                             [i_28_]),
                                     i_30_, i);
-                        if ((Class132.anInt1910 ^ 0xffffffff)
-                                >= (i_27_ ^ 0xffffffff))
+                        if (i_27_ >= Class132.anInt1910)
                             Class135_Sub2.method1156(-27, i_29_,
                                     (Class17
                                             .anIntArrayArray255
                                             [i_27_]),
                                     i_30_, i);
                     } else {
-                        int i_31_ = ((i_10_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff)
+                        int i_31_ = (i_6_ > i_10_
                                 ? Class348_Sub49_Sub2.anIntArray9757[i_6_]
                                 : i_10_);
                         int i_32_ = Class85.method831(Class113.anInt1745,
@@ -159,8 +154,7 @@ final class Class205 {
                                     i_1_);
                             Class135_Sub2.method1156(-27, i_29_, is, i_32_, i);
                         }
-                        if ((i_27_ ^ 0xffffffff)
-                                <= (Class132.anInt1910 ^ 0xffffffff)) {
+                        if (Class132.anInt1910 <= i_27_) {
                             int[] is = Class17.anIntArrayArray255[i_27_];
                             Class135_Sub2.method1156(i_3_ + -29, i_33_, is,
                                     i_30_, i);

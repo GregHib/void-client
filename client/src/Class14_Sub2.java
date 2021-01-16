@@ -49,7 +49,7 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
                     true);
             while (class144.anInt1997 == 0)
                 Class286_Sub5.method2161((byte) -122, 1L);
-            if ((class144.anInt1997 ^ 0xffffffff) == -2) {
+            if (class144.anInt1997 == 1) {
                 class234 = (Class234) class144.anObject1998;
                 Class348_Sub49 class348_sub49
                         = Class316.aClass348_Sub51_3959.method3427(24);

@@ -27,7 +27,7 @@ public class Class201 {
         for (int i_3_ = i; i_3_ < 2; i_3_++) {
             for (int i_4_ = 0; strings_2_.length > i_4_; i_4_++) {
                 for (int i_5_ = 0;
-                     (i_5_ ^ 0xffffffff) > (strings.length ^ 0xffffffff);
+                     strings.length > i_5_;
                      i_5_++) {
                     String string_6_
                             = (strings[i_5_] + strings_2_[i_4_] + "/"
@@ -38,7 +38,7 @@ public class Class201 {
                         File file_7_ = new File(string_6_);
                         if (i_3_ != 0 || file_7_.exists()) {
                             String string_8_ = strings[i_5_];
-                            if ((i_3_ ^ 0xffffffff) != -2
+                            if (i_3_ != 1
                                     || string_8_.length() <= 0
                                     || new File(string_8_).exists()) {
                                 new File(strings[i_5_] + strings_2_[i_4_])

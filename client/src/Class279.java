@@ -55,8 +55,7 @@ class Class279 {
         if (!aBoolean3610) {
             long l = Class62.method599(-107);
             try {
-                if ((aLong3602 + 6000L ^ 0xffffffffffffffffL)
-                        > (l ^ 0xffffffffffffffffL))
+                if (l > aLong3602 + 6000L)
                     aLong3602 = -6000L + l;
                 if (i != -6858)
                     anInt3616 = 114;
@@ -69,9 +68,8 @@ class Class279 {
             }
             if (this.anIntArray3603 != null) {
                 try {
-                    if ((aLong3614 ^ 0xffffffffffffffffL) != -1L) {
-                        if ((l ^ 0xffffffffffffffffL)
-                                > (aLong3614 ^ 0xffffffffffffffffL))
+                    if (aLong3614 != 0) {
+                        if (aLong3614 > l)
                             return;
                         method2082(this.anInt3613);
                         aBoolean3623 = true;
@@ -81,7 +79,7 @@ class Class279 {
                     if (-i_0_ + anInt3622 > anInt3624)
                         anInt3624 = -i_0_ + anInt3622;
                     int i_1_ = this.anInt3620 - -anInt3616;
-                    if ((i_1_ - -256 ^ 0xffffffff) < -16385)
+                    if (i_1_ - -256 > 16384)
                         i_1_ = 16128;
                     if (256 + i_1_ > this.anInt3613) {
                         this.anInt3613 += 1024;
@@ -96,7 +94,7 @@ class Class279 {
                             anInt3616 = -this.anInt3620 + i_1_;
                         }
                     }
-                    for (/**/; (i_1_ ^ 0xffffffff) < (i_0_ ^ 0xffffffff);
+                    for (/**/; i_0_ < i_1_;
                              i_0_ += 256) {
                         method2086(this.anIntArray3603, 256);
                         method2094();
@@ -104,7 +102,7 @@ class Class279 {
                     if (l > aLong3618) {
                         if (!aBoolean3623) {
                             if (anInt3624 == 0
-                                    && (anInt3617 ^ 0xffffffff) == -1) {
+                                    && anInt3617 == 0) {
                                 method2091();
                                 aLong3614 = 2000L + l;
                                 return;
@@ -281,7 +279,7 @@ class Class279 {
     private final void method2089(int i, byte i_19_) {
         anInt3611++;
         anInt3615 -= i;
-        if ((anInt3615 ^ 0xffffffff) > -1)
+        if (anInt3615 < 0)
             anInt3615 = 0;
         if (aClass348_Sub16_3604 != null)
             aClass348_Sub16_3604.method2819(i);
@@ -291,14 +289,13 @@ class Class279 {
 
     static final void method2090(int i, int i_20_, boolean bool, byte i_21_,
                                  int i_22_, int i_23_, int i_24_) {
-        if (((bool
+        if ((bool
                 ? Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7215.method1838(-32350)
                 : Class316.aClass348_Sub51_3959
-                .aClass239_Sub26_7272.method1838(-32350))
-                ^ 0xffffffff) != -1
-                && i != 0 && (Class147.anInt2021 ^ 0xffffffff) > -51
-                && (i_24_ ^ 0xffffffff) != 0)
+                .aClass239_Sub26_7272.method1838(-32350)) != 0
+                && i != 0 && Class147.anInt2021 < 50
+                && i_24_ != -1)
             Class258_Sub2.aClass10Array8531[Class147.anInt2021++]
                     = new Class10(!bool ? (byte) 2 : (byte) 3, i_24_, i, i_23_,
                     i_22_, 0, i_20_, null);
@@ -314,7 +311,7 @@ class Class279 {
                                  Object[] objects) {
         try {
             int i_27_ = -92 / ((i_26_ - -55) / 57);
-            if ((i ^ 0xffffffff) < (i_25_ ^ 0xffffffff)) {
+            if (i_25_ < i) {
                 int i_28_ = (i + i_25_) / 2;
                 int i_29_ = i_25_;
                 int i_30_ = is[i_28_];
@@ -325,7 +322,7 @@ class Class279 {
                 objects[i] = object;
                 int i_31_ = i_30_ != 2147483647 ? 1 : 0;
                 for (int i_32_ = i_25_;
-                     (i ^ 0xffffffff) < (i_32_ ^ 0xffffffff); i_32_++) {
+                     i_32_ < i; i_32_++) {
                     if (is[i_32_] < (i_31_ & i_32_) + i_30_) {
                         int i_33_ = is[i_32_];
                         is[i_32_] = is[i_29_];
@@ -358,7 +355,7 @@ class Class279 {
         anInt3609++;
         if (Class183.aClass250_2462 != null) {
             boolean bool_35_ = true;
-            for (int i = 0; (i ^ 0xffffffff) > -3; i++) {
+            for (int i = 0; i < 2; i++) {
                 if (Class183.aClass250_2462.aClass279Array3218[i]
                         == this)
                     Class183.aClass250_2462.aClass279Array3218[i]

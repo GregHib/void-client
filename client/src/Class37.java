@@ -16,15 +16,15 @@ final class Class37 {
         String string = Integer.toString(i_0_);
         if (i >= -109)
             return null;
-        for (int i_1_ = -3 + string.length(); (i_1_ ^ 0xffffffff) < -1;
+        for (int i_1_ = -3 + string.length(); i_1_ > 0;
              i_1_ -= 3)
             string = string.substring(0, i_1_) + "," + string.substring(i_1_);
-        if ((string.length() ^ 0xffffffff) < -10)
+        if (string.length() > 9)
             return (" <col=00ff80>" + string.substring(0, string.length() + -8)
                     + Class274.aClass274_3516
                     .method2063(Class348_Sub33.anInt6967, 544)
                     + " (" + string + ")</col>");
-        if ((string.length() ^ 0xffffffff) < -7)
+        if (string.length() > 6)
             return (" <col=ffffff>" + string.substring(0, -4 + string.length())
                     + Class274.aClass274_3518
                     .method2063(Class348_Sub33.anInt6967, 544)
@@ -35,7 +35,7 @@ final class Class37 {
     static final synchronized void method357(int i, byte[] is) {
         anInt491++;
         if (is.length == 100
-                && (Class348_Sub40_Sub31.anInt9412 ^ 0xffffffff) > -1001)
+                && Class348_Sub40_Sub31.anInt9412 < 1000)
             Class24.aByteArrayArray358[Class348_Sub40_Sub31.anInt9412++] = is;
         else {
             if (i != 0)
@@ -49,8 +49,7 @@ final class Class37 {
             else if (Class348_Sub40_Sub6.aByteArrayArrayArray9134 != null) {
                 for (int i_2_ = 0;
                      Class59_Sub2_Sub2.anIntArray8684.length > i_2_; i_2_++) {
-                    if (((Class59_Sub2_Sub2.anIntArray8684[i_2_] ^ 0xffffffff)
-                            == (is.length ^ 0xffffffff))
+                    if ((is.length == Class59_Sub2_Sub2.anIntArray8684[i_2_])
                             && (Class348_Sub40_Sub6.aByteArrayArrayArray9134
                             [i_2_]).length > Class190.anIntArray2552[i_2_]) {
                         Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_2_]
@@ -69,7 +68,7 @@ final class Class37 {
             anInt496 = 32;
         if (Class316.aClass348_Sub51_3959
                 .aClass239_Sub26_7272.method1838(-32350) != 0
-                && i != 0 && Class147.anInt2021 < 50 && (i_7_ ^ 0xffffffff) != 0)
+                && i != 0 && Class147.anInt2021 < 50 && i_7_ != -1)
             Class258_Sub2.aClass10Array8531[Class147.anInt2021++]
                     = new Class10((byte) 1, i_7_, i, i_4_, i_5_, i_3_, i_6_, null);
         anInt490++;
@@ -77,8 +76,8 @@ final class Class37 {
 
     static final synchronized byte[] method359(int i, int i_9_) {
         anInt493++;
-        if ((i ^ 0xffffffff) == -101
-                && (Class348_Sub40_Sub31.anInt9412 ^ 0xffffffff) < -1) {
+        if (i == 100
+                && Class348_Sub40_Sub31.anInt9412 > 0) {
             byte[] is
                     = Class24.aByteArrayArray358[--Class348_Sub40_Sub31.anInt9412];
             Class24.aByteArrayArray358[Class348_Sub40_Sub31.anInt9412] = null;
@@ -93,7 +92,7 @@ final class Class37 {
         }
         if (i_9_ != -1)
             method359(-88, -45);
-        if (i == 30000 && (Class348_Sub31.anInt6913 ^ 0xffffffff) < -1) {
+        if (i == 30000 && Class348_Sub31.anInt6913 > 0) {
             byte[] is = (Class285_Sub2.aByteArrayArray8505
                     [--Class348_Sub31.anInt6913]);
             Class285_Sub2.aByteArrayArray8505[Class348_Sub31.anInt6913] = null;
@@ -102,9 +101,8 @@ final class Class37 {
         if (Class348_Sub40_Sub6.aByteArrayArrayArray9134 != null) {
             for (int i_10_ = 0;
                  Class59_Sub2_Sub2.anIntArray8684.length > i_10_; i_10_++) {
-                if (((Class59_Sub2_Sub2.anIntArray8684[i_10_] ^ 0xffffffff)
-                        == (i ^ 0xffffffff))
-                        && (Class190.anIntArray2552[i_10_] ^ 0xffffffff) < -1) {
+                if ((i == Class59_Sub2_Sub2.anIntArray8684[i_10_])
+                        && Class190.anIntArray2552[i_10_] > 0) {
                     byte[] is = (Class348_Sub40_Sub6.aByteArrayArrayArray9134
                             [i_10_][--Class190.anIntArray2552[i_10_]]);
                     Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_10_]

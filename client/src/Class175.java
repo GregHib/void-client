@@ -101,7 +101,7 @@ final class Class175 {
         try {
             if (i < -84) {
                 anInt2314++;
-                if ((i_0_ ^ 0xffffffff) < (anInt2324 ^ 0xffffffff))
+                if (anInt2324 < i_0_)
                     throw new IllegalStateException("s>cs");
                 method1338(7, interface14);
                 anInt2311 -= i_0_;
@@ -194,10 +194,8 @@ final class Class175 {
                                 += (class348_sub42_sub9
                                 .anInt9556);
                     }
-                } else if (((long) i_4_ ^ 0xffffffffffffffffL)
-                        > (++class348_sub42_sub9
-                        .aLong7057
-                        ^ 0xffffffffffffffffL)) {
+                } else if (++class348_sub42_sub9
+                        .aLong7057 > (long) i_4_) {
                     Class348_Sub42_Sub9 class348_sub42_sub9_5_
                             = Class103.aClass345_1607
                             .method2694(-1, class348_sub42_sub9);

@@ -29,9 +29,9 @@ final class Class316 {
                                  int i_4_, int i_5_, int i_6_, int i_7_,
                                  int i_8_) {
         if (i_7_ == 3) {
-            if ((i_1_ ^ 0xffffffff) != (i_3_ ^ 0xffffffff) || i_2_ != i_6_
+            if (i_3_ != i_1_ || i_2_ != i_6_
                     || i_5_ != i_0_
-                    || (i_4_ ^ 0xffffffff) != (i_8_ ^ 0xffffffff)) {
+                    || i_8_ != i_4_) {
                 int i_9_ = i_1_;
                 int i_10_ = i_6_;
                 int i_11_ = i_1_ * 3;
@@ -46,7 +46,7 @@ final class Class316 {
                 int i_20_ = i_12_ + -i_14_ + (i_16_ - i_14_);
                 int i_21_ = -i_11_ + i_13_;
                 int i_22_ = -i_12_ + i_14_;
-                for (int i_23_ = 128; (i_23_ ^ 0xffffffff) >= -4097;
+                for (int i_23_ = 128; i_23_ <= 4096;
                      i_23_ += 128) {
                     int i_24_ = i_23_ * i_23_ >> -1915365876;
                     int i_25_ = i_24_ * i_23_ >> -1959497172;
@@ -77,10 +77,10 @@ final class Class316 {
             /* empty */
         }
         anIntArray3961 = new int[i + i];
-        for (int i_34_ = 0; (i + i ^ 0xffffffff) < (i_34_ ^ 0xffffffff);
+        for (int i_34_ = 0; i_34_ < i + i;
              i_34_++)
             anIntArray3961[i_34_] = -1;
-        for (int i_35_ = 0; (i_35_ ^ 0xffffffff) > (is.length ^ 0xffffffff);
+        for (int i_35_ = 0; is.length > i_35_;
              i_35_++) {
             int i_36_;
             for (i_36_ = is[i_35_] & -1 + i;

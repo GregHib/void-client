@@ -27,7 +27,7 @@ final class Class22 {
             this.anInt332 = 25;
         for (; ; ) {
             int i_0_ = class348_sub49.method3387(255);
-            if ((i_0_ ^ 0xffffffff) == -1)
+            if (i_0_ == 0)
                 break;
             method291(i_0_, -4, class348_sub49);
         }
@@ -36,14 +36,14 @@ final class Class22 {
 
     private final void method291(int i, int i_1_,
                                  Class348_Sub49 class348_sub49) {
-        if ((i ^ 0xffffffff) != -2) {
+        if (i != 1) {
             if (i == 2) {
                 this.anInt331
                         = class348_sub49.method3330(i_1_ + 842397948);
                 if (this.anInt331 == 65535)
                     this.anInt331 = -1;
-            } else if ((i ^ 0xffffffff) != -4) {
-                if ((i ^ 0xffffffff) != -5) {
+            } else if (i != 3) {
+                if (i != 4) {
                     if (i == 5)
                         this.aBoolean334 = false;
                 } else
@@ -96,7 +96,7 @@ final class Class22 {
         d_7_ /= 6.0;
         this.anInt335 = (int) (256.0 * d_9_);
         if (this.anInt332 >= 0) {
-            if ((this.anInt332 ^ 0xffffffff) < -256)
+            if (this.anInt332 > 255)
                 this.anInt332 = 255;
         } else
             this.anInt332 = 0;
@@ -104,11 +104,11 @@ final class Class22 {
             this.anInt343 = (int) (512.0 * ((1.0 - d_9_) * d_8_));
         else
             this.anInt343 = (int) (512.0 * (d_9_ * d_8_));
-        if ((this.anInt335 ^ 0xffffffff) > -1)
+        if (this.anInt335 < 0)
             this.anInt335 = 0;
         else if (this.anInt335 > 255)
             this.anInt335 = 255;
-        if ((this.anInt343 ^ 0xffffffff) > -2)
+        if (this.anInt343 < 1)
             this.anInt343 = 1;
         int i_10_ = 39 % ((i_2_ - 61) / 55);
         this.anInt341
@@ -124,10 +124,8 @@ final class Class22 {
     static final void method294(ha var_ha, int i) {
         anInt328++;
         if (Class5_Sub1_Sub1.aClass262_9931.method1998(i) != 0) {
-            if ((Class316.aClass348_Sub51_3959
-                    .aClass239_Sub25_7271.method1829(-32350)
-                    ^ 0xffffffff)
-                    == -1) {
+            if (Class316.aClass348_Sub51_3959
+                    .aClass239_Sub25_7271.method1829(-32350) == 0) {
                 for (Class348_Sub7 class348_sub7
                      = ((Class348_Sub7)
                         Class5_Sub1_Sub1.aClass262_9931.method1995(4));
@@ -201,14 +199,14 @@ final class Class22 {
             i_13_ = -(0x3 & i_13_);
             if (i_12_ != 256)
                 anInt339 = -63;
-            for (int i_19_ = -i_15_; (i_19_ ^ 0xffffffff) > -1; i_19_++) {
+            for (int i_19_ = -i_15_; i_19_ < 0; i_19_++) {
                 for (int i_20_ = i_18_; i_20_ < 0; i_20_++) {
                     is_14_[i_16_++] += is[i_11_++];
                     is_14_[i_16_++] += is[i_11_++];
                     is_14_[i_16_++] += is[i_11_++];
                     is_14_[i_16_++] += is[i_11_++];
                 }
-                for (int i_21_ = i_13_; (i_21_ ^ 0xffffffff) > -1; i_21_++)
+                for (int i_21_ = i_13_; i_21_ < 0; i_21_++)
                     is_14_[i_16_++] += is[i_11_++];
                 i_16_ += i_17_;
                 i_11_ += i;

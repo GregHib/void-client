@@ -61,13 +61,13 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
 
     static final void method239(byte i, int i_3_, int i_4_, Class46 class46) {
         anInt8610++;
-        if ((class46.aByte817 ^ 0xffffffff) != -1) {
-            if ((class46.aByte817 ^ 0xffffffff) == -2)
+        if (class46.aByte817 != 0) {
+            if (class46.aByte817 == 1)
                 class46.anInt800
                         = ((-class46.anInt709 + i_3_) / 2
                         + class46.anInt788);
-            else if ((class46.aByte817 ^ 0xffffffff) != -3) {
-                if ((class46.aByte817 ^ 0xffffffff) != -4) {
+            else if (class46.aByte817 != 2) {
+                if (class46.aByte817 != 3) {
                     if (class46.aByte817 != 4)
                         class46.anInt800
                                 = (-class46.anInt709 + i_3_
@@ -97,8 +97,8 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                 class46.anInt750
                         = (i_4_ - class46.anInt789
                         - class46.anInt739);
-            else if ((class46.aByte681 ^ 0xffffffff) != -4) {
-                if ((class46.aByte681 ^ 0xffffffff) != -5)
+            else if (class46.aByte681 != 3) {
+                if (class46.aByte681 != 4)
                     class46.anInt750
                             = (-(i_4_ * class46.anInt739
                             >> -1401218514)
@@ -113,15 +113,12 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         } else
             class46.anInt750 = class46.anInt739;
         if (Class299_Sub2.aBoolean6327
-                && ((client.method105(class46).anInt7098
-                ^ 0xffffffff) != -1
+                && (client.method105(class46).anInt7098 != 0
                 || class46.anInt774 == 0)) {
             if (class46.anInt750 < 0)
                 class46.anInt750 = 0;
-            else if (((class46.anInt789
-                    + class46.anInt750)
-                    ^ 0xffffffff)
-                    < (i_4_ ^ 0xffffffff))
+            else if (i_4_ < (class46.anInt789
+                    + class46.anInt750))
                 class46.anInt750
                         = i_4_ - class46.anInt789;
             if (class46.anInt800 >= 0) {
@@ -223,29 +220,25 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                         += (Class348_Sub40_Sub31.anInt9406
                         + (Class258_Sub2.anInt8537
                         * (i_16_ + -Class286_Sub4.anInt6246) / 1000));
-                if ((Class286_Sub4.anInt6246 ^ 0xffffffff)
-                        < (i_16_ ^ 0xffffffff))
+                if (i_16_ < Class286_Sub4.anInt6246)
                     Class286_Sub4.anInt6246 = i_16_;
             }
-            if ((i_16_ ^ 0xffffffff)
-                    > (Class286_Sub4.anInt6246 ^ 0xffffffff)) {
+            if (Class286_Sub4.anInt6246 > i_16_) {
                 Class286_Sub4.anInt6246
                         -= (Class348_Sub40_Sub31.anInt9406
                         - -(Class258_Sub2.anInt8537
                         * (-i_16_ + Class286_Sub4.anInt6246) / 1000));
-                if ((i_16_ ^ 0xffffffff)
-                        < (Class286_Sub4.anInt6246 ^ 0xffffffff))
+                if (Class286_Sub4.anInt6246 < i_16_)
                     Class286_Sub4.anInt6246 = i_16_;
             }
-            if ((i_18_ ^ 0xffffffff) < (Class305.anInt3855 ^ 0xffffffff)) {
+            if (Class305.anInt3855 < i_18_) {
                 Class305.anInt3855
                         += ((-Class305.anInt3855 + i_18_) * Class258_Sub2.anInt8537
                         / 1000) + Class348_Sub40_Sub31.anInt9406;
                 if (i_18_ < Class305.anInt3855)
                     Class305.anInt3855 = i_18_;
             }
-            if ((i_17_ ^ 0xffffffff)
-                    < (Class59_Sub2_Sub2.anInt8685 ^ 0xffffffff)) {
+            if (Class59_Sub2_Sub2.anInt8685 < i_17_) {
                 Class59_Sub2_Sub2.anInt8685
                         += (Class348_Sub40_Sub31.anInt9406
                         - -((i_17_ + -Class59_Sub2_Sub2.anInt8685)
@@ -253,11 +246,11 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                 if (Class59_Sub2_Sub2.anInt8685 > i_17_)
                     Class59_Sub2_Sub2.anInt8685 = i_17_;
             }
-            if ((Class305.anInt3855 ^ 0xffffffff) < (i_18_ ^ 0xffffffff)) {
+            if (i_18_ < Class305.anInt3855) {
                 Class305.anInt3855
                         -= ((Class305.anInt3855 - i_18_) * Class258_Sub2.anInt8537
                         / 1000) + Class348_Sub40_Sub31.anInt9406;
-                if ((Class305.anInt3855 ^ 0xffffffff) > (i_18_ ^ 0xffffffff))
+                if (i_18_ > Class305.anInt3855)
                     Class305.anInt3855 = i_18_;
             }
             if (Class59_Sub2_Sub2.anInt8685 > i_17_) {
@@ -290,24 +283,20 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                 * Math.atan2(i_19_, i_21_));
         if (i_23_ > 3072)
             i_23_ = 3072;
-        if ((Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff)
-                > (i_23_ ^ 0xffffffff)) {
+        if (i_23_ > Class348_Sub42_Sub19.anInt9701) {
             Class348_Sub42_Sub19.anInt9701
                     += (Class239_Sub12.anInt5973
                     * (i_23_ - Class348_Sub42_Sub19.anInt9701 >> 519847139)
                     / 1000) + Class367_Sub11.anInt7403 << 1929986915;
-            if ((Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff)
-                    < (i_23_ ^ 0xffffffff))
+            if (i_23_ < Class348_Sub42_Sub19.anInt9701)
                 Class348_Sub42_Sub19.anInt9701 = i_23_;
         }
-        if ((i_23_ ^ 0xffffffff)
-                > (Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff)) {
+        if (Class348_Sub42_Sub19.anInt9701 > i_23_) {
             Class348_Sub42_Sub19.anInt9701
                     -= (((-i_23_ + Class348_Sub42_Sub19.anInt9701 >> 2087935011)
                     * Class239_Sub12.anInt5973 / 1000)
                     + Class367_Sub11.anInt7403) << 1130272515;
-            if ((i_23_ ^ 0xffffffff)
-                    < (Class348_Sub42_Sub19.anInt9701 ^ 0xffffffff))
+            if (Class348_Sub42_Sub19.anInt9701 < i_23_)
                 Class348_Sub42_Sub19.anInt9701 = i_23_;
         }
         int i_25_ = -Class5.anInt4638 + i_24_;
@@ -322,7 +311,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                     + Class239_Sub12.anInt5973 * i_25_ / 1000) << -213819261;
             Class5.anInt4638 &= 0x3fff;
         }
-        if ((i_25_ ^ 0xffffffff) > -1) {
+        if (i_25_ < 0) {
             Class5.anInt4638
                     -= Class367_Sub11.anInt7403 - -(-i_25_
                     * Class239_Sub12.anInt5973
@@ -330,12 +319,12 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
             Class5.anInt4638 &= 0x3fff;
         }
         int i_26_ = i_24_ - Class5.anInt4638;
-        if ((i_26_ ^ 0xffffffff) < -8193)
+        if (i_26_ > 8192)
             i_26_ -= 16384;
         if (i_26_ < -8192)
             i_26_ += 16384;
         Class338.anInt4186 = 0;
-        if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && (i_25_ ^ 0xffffffff) > -1)
+        if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && i_25_ < 0)
             Class5.anInt4638 = i_24_;
     }
 
@@ -378,7 +367,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         OpenGL.glGetTexImagei(this.anInt5093, 0, 32993, 5121,
                 is_38_, 0);
         if (i_36_ == 112) {
-            for (int i_39_ = 0; (i_39_ ^ 0xffffffff) > (i_35_ ^ 0xffffffff);
+            for (int i_39_ = 0; i_35_ > i_39_;
                  i_39_++)
                 Class214.method1578(is_38_,
                         ((-i_39_ + i_35_ + (-1 + i_34_))
@@ -468,8 +457,8 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
             anInt8612 = i;
             anInt8604 = i_49_;
             this.aClass377_5082.method3850((byte) -67, this);
-            if (bool || (i_51_ ^ 0xffffffff) != -1
-                    || (i_50_ ^ 0xffffffff) != -1) {
+            if (bool || i_51_ != 0
+                    || i_50_ != 0) {
                 OpenGL.glPixelStorei(3314, i_51_);
                 OpenGL.glTexImage2Df(this.anInt5093, 0,
                         this.method228(111), i, i_49_, 0,

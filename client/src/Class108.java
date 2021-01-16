@@ -31,17 +31,14 @@ final class Class108 {
             float f_15_ = f_1_ + f_9_ * f_6_;
             int i_16_ = (int) f_13_ >> 430575337;
             int i_17_ = (int) f_15_ >> 1868123209;
-            if ((i_16_ ^ 0xffffffff) < -1 && i_17_ > 0
-                    && (i_16_ ^ 0xffffffff) > (Class367_Sub4.anInt7319
-                    ^ 0xffffffff)
-                    && ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
-                    < (i_17_ ^ 0xffffffff))) {
+            if (i_16_ > 0 && i_17_ > 0
+                    && Class367_Sub4.anInt7319 > i_16_
+                    && (i_17_ < Class348_Sub40_Sub3.anInt9109)) {
                 int i_18_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                         .aByte6381);
-                if ((i_18_ ^ 0xffffffff) > -4
+                if (i_18_ < 3
                         && ((Class348_Sub33.aByteArrayArrayArray6962[1][i_16_]
-                        [i_17_]) & 0x2
-                        ^ 0xffffffff) != -1)
+						[i_17_]) & 0x2) != 0)
                     i_18_++;
                 int i_19_
                         = Class348_Sub1_Sub1.aSArray8801[i_18_]
@@ -83,10 +80,8 @@ final class Class108 {
                     .aClass318_Sub1_Sub3_Sub4_9538);
             if (!class318_sub1_sub3_sub4
                     .aBoolean10345) {
-                if (((class318_sub1_sub3_sub4
-                        .anInt10349)
-                        ^ 0xffffffff)
-                        >= (Class367_Sub11.anInt7396 ^ 0xffffffff)) {
+                if (Class367_Sub11.anInt7396 >= (class318_sub1_sub3_sub4
+						.anInt10349)) {
                     class318_sub1_sub3_sub4
                             .method2470(Class348_Sub51.anInt7267, (byte) -16);
                     if (class318_sub1_sub3_sub4

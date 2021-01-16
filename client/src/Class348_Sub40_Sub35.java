@@ -58,13 +58,13 @@ final class Class348_Sub40_Sub35 extends Class348_Sub40 {
                         >> 1636786828);
                 int i_12_ = i_11_ >> -1826425116;
                 int i_13_ = i_10_ >> -386914108;
-                if ((i_12_ ^ 0xffffffff) > -1)
+                if (i_12_ < 0)
                     i_12_ = -i_12_;
                 if (i_13_ < 0)
                     i_13_ = -i_13_;
-                if ((i_12_ ^ 0xffffffff) < -256)
+                if (i_12_ > 255)
                     i_12_ = 255;
-                if ((i_13_ ^ 0xffffffff) < -256)
+                if (i_13_ > 255)
                     i_13_ = 255;
                 int i_14_ = (Class46.aByteArray821[i_12_ + (i_13_ * (1 + i_13_)
                         >> 1034972801)]
@@ -101,9 +101,9 @@ final class Class348_Sub40_Sub35 extends Class348_Sub40 {
         while_210_:
         do {
             do {
-                if ((i_19_ ^ 0xffffffff) != -1) {
+                if (i_19_ != 0) {
                     if (i_19_ != 1) {
-                        if ((i_19_ ^ 0xffffffff) == -3)
+                        if (i_19_ == 2)
                             break;
                         break while_210_;
                     }

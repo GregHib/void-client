@@ -33,13 +33,13 @@ final class Class239_Sub21 extends Class239 {
 
     static final void method1810(int i, int i_0_, int i_1_, int i_2_, int i_3_,
                                  int i_4_, int i_5_) {
-        if (i_5_ != 8 && (i_5_ ^ 0xffffffff) != -17) {
+        if (i_5_ != 8 && i_5_ != 16) {
             Class357 class357
                     = Class147.aClass357ArrayArrayArray2029[i_4_][i][i_2_];
             if (class357 == null)
                 class357 = new Class357(i_4_);
-            if ((i_5_ ^ 0xffffffff) != -2) {
-                if ((i_5_ ^ 0xffffffff) == -3) {
+            if (i_5_ != 1) {
+                if (i_5_ == 2) {
                     class357.aShort4398 = (short) i_1_;
                     class357.aShort4397 = (short) i_0_;
                 }
@@ -99,12 +99,12 @@ final class Class239_Sub21 extends Class239 {
                 char c_25_;
                 char c_26_;
                 for (; ; ) {
-                    if ((i_20_ ^ 0xffffffff) >= (-c + i_22_ ^ 0xffffffff)
+                    if (-c + i_22_ >= i_20_
                             && -c_24_ + i_23_ >= i_21_)
                         break while_81_;
                     if (-c + i_22_ >= i_20_)
                         return -1;
-                    if ((-c_24_ + i_23_ ^ 0xffffffff) <= (i_21_ ^ 0xffffffff))
+                    if (i_21_ <= -c_24_ + i_23_)
                         return 1;
                     if (c != 0) {
                         c_25_ = c;
@@ -120,12 +120,11 @@ final class Class239_Sub21 extends Class239 {
                     c_24_ = Class105_Sub2.method990(c_26_, (byte) -127);
                     c_25_ = Class239_Sub10.method1765(c_25_, i_18_, 105);
                     c_26_ = Class239_Sub10.method1765(c_26_, i_18_, 105);
-                    if ((c_26_ ^ 0xffffffff) != (c_25_ ^ 0xffffffff)
-                            && ((Character.toUpperCase(c_25_) ^ 0xffffffff)
-                            != (Character.toUpperCase(c_26_) ^ 0xffffffff))) {
+                    if (c_25_ != c_26_
+                            && (Character.toUpperCase(c_26_) != Character.toUpperCase(c_25_))) {
                         c_25_ = Character.toLowerCase(c_25_);
                         c_26_ = Character.toLowerCase(c_26_);
-                        if ((c_26_ ^ 0xffffffff) != (c_25_ ^ 0xffffffff))
+                        if (c_25_ != c_26_)
                             break;
                     }
                 }
@@ -142,7 +141,7 @@ final class Class239_Sub21 extends Class239 {
                 }
                 char c_29_ = string_19_.charAt(i_22_);
                 char c_30_ = string.charAt(i_23_);
-                if ((c_30_ ^ 0xffffffff) != (c_29_ ^ 0xffffffff)
+                if (c_29_ != c_30_
                         && (Character.toUpperCase(c_29_)
                         != Character.toUpperCase(c_30_))) {
                     c_29_ = Character.toLowerCase(c_29_);
@@ -155,7 +154,7 @@ final class Class239_Sub21 extends Class239 {
             if (i != 9152)
                 method1810(-67, 60, -16, -117, -17, -84, 39);
             int i_31_ = -i_21_ + i_20_;
-            if ((i_31_ ^ 0xffffffff) != -1)
+            if (i_31_ != 0)
                 return i_31_;
             for (int i_32_ = 0; i_27_ > i_32_; i_32_++) {
                 char c_33_ = string_19_.charAt(i_32_);
@@ -202,7 +201,7 @@ final class Class239_Sub21 extends Class239 {
         anInt6057++;
         if (bool != false)
             aClass318_Sub1Array6066 = null;
-        if ((this.anInt3138 ^ 0xffffffff) != -2
+        if (this.anInt3138 != 1
                 && this.anInt3138 != 0)
             this.anInt3138 = method1710(20014);
     }
@@ -222,10 +221,10 @@ final class Class239_Sub21 extends Class239 {
         anInt6069++;
         if (i != 8806)
             method1813(-86, 33);
-        if (i_38_ == 3 || i_38_ == 4 || (i_38_ ^ 0xffffffff) == -10
-                || (i_38_ ^ 0xffffffff) == -60 || i_38_ == 1007)
+        if (i_38_ == 3 || i_38_ == 4 || i_38_ == 9
+                || i_38_ == 59 || i_38_ == 1007)
             return true;
-        return i_38_ == 2 || (i_38_ ^ 0xffffffff) == -1002;
+        return i_38_ == 2 || i_38_ == 1001;
     }
 
     public static void method1814(byte i) {

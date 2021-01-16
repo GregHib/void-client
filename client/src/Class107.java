@@ -111,7 +111,7 @@ final class Class107 {
                     anIntArray1650 = null;
                 var_ha.KA(i, i_1_, i + class46.anInt709,
                         class46.anInt789 + i_1_);
-                if ((Class259.anInt3306 ^ 0xffffffff) != -3
+                if (Class259.anInt3306 != 2
                         && Class259.anInt3306 != 5
                         && Class108.aClass105_1664 != null) {
                     int i_3_;
@@ -172,8 +172,7 @@ final class Class107 {
                                 var_ha);
                     }
                     for (int i_14_ = 0;
-                         ((i_14_ ^ 0xffffffff)
-                                 > (Class348_Sub40_Sub38.anInt9479 ^ 0xffffffff));
+                         (Class348_Sub40_Sub38.anInt9479 > i_14_);
                          i_14_++) {
                         int i_15_ = (Class348_Sub15.anIntArray6770[i_14_] * 4
                                 - -2 - i_4_ / 128);
@@ -190,8 +189,7 @@ final class Class107 {
                                             .aClass170_10209),
                                     (byte) 47);
                             if (class51 == null
-                                    || ((class51.anInt921 ^ 0xffffffff)
-                                    == 0))
+                                    || (class51.anInt921 == -1))
                                 continue;
                         }
                         Class318_Sub1.method2385(class46, i_1_, var_aa,
@@ -226,8 +224,7 @@ final class Class107 {
                                     i_2_ ^ 0x59b2, i_20_);
                         }
                     }
-                    for (int i_22_ = 0; ((Class150.anInt2057 ^ 0xffffffff)
-                            < (i_22_ ^ 0xffffffff)); i_22_++) {
+                    for (int i_22_ = 0; (i_22_ < Class150.anInt2057); i_22_++) {
                         Class348_Sub22 class348_sub22
                                 = ((Class348_Sub22)
                                 (Class282.aClass356_3654.method3480
@@ -239,13 +236,10 @@ final class Class107 {
                                     .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                             if (class318_sub1_sub3_sub3_sub1
                                     .method2445((byte) -126)
-                                    && (((Class132
-                                            .aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                    .aByte6381)
-                                    ^ 0xffffffff)
-                                    == ((class318_sub1_sub3_sub3_sub1
-                                    .aByte6381)
-                                    ^ 0xffffffff))) {
+                                    && ((class318_sub1_sub3_sub3_sub1
+									.aByte6381) == (Class132
+									.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+									.aByte6381))) {
                                 Class79 class79
                                         = (class318_sub1_sub3_sub3_sub1
                                         .aClass79_10505);
@@ -267,9 +261,7 @@ final class Class107 {
                                             = ((class318_sub1_sub3_sub3_sub1
                                             .anInt6388) / 128
                                             + -(i_3_ / 128));
-                                    if ((class79.anInt1383
-                                            ^ 0xffffffff)
-                                            != 0)
+                                    if (class79.anInt1383 != -1)
                                         Class318_Sub1.method2385
                                                 (class46, i_1_, var_aa,
                                                         class79.anInt1383,
@@ -289,7 +281,7 @@ final class Class107 {
                     int i_25_ = Class328_Sub1.anInt6513;
                     int[] is = Class286_Sub7.anIntArray6290;
                     for (int i_26_ = 0;
-                         (i_25_ ^ 0xffffffff) < (i_26_ ^ 0xffffffff);
+						 i_26_ < i_25_;
                          i_26_++) {
                         Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                                 = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058
@@ -300,11 +292,8 @@ final class Class107 {
                                 && !class318_sub1_sub3_sub3_sub2.aBoolean10551
                                 && (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
                                 != class318_sub1_sub3_sub3_sub2)
-                                && (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
-                                .aByte6381)
-                                ^ 0xffffffff)
-                                == (class318_sub1_sub3_sub3_sub2.aByte6381
-                                ^ 0xffffffff))) {
+                                && (class318_sub1_sub3_sub3_sub2.aByte6381 == (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907
+								.aByte6381))) {
                             int i_27_ = (-(i_4_ / 128)
                                     + (class318_sub1_sub3_sub3_sub2
                                     .anInt6377) / 128);
@@ -313,15 +302,12 @@ final class Class107 {
                                     .anInt6388) / 128);
                             boolean bool = false;
                             for (int i_29_ = 0;
-                                 ((i_29_ ^ 0xffffffff)
-                                         > (Class348_Sub40_Sub30.anInt9383
-                                         ^ 0xffffffff));
+                                 (Class348_Sub40_Sub30.anInt9383 > i_29_);
                                  i_29_++) {
                                 if ((class318_sub1_sub3_sub3_sub2
                                         .aString10544.equals
                                                 (Class83.aStringArray1441[i_29_]))
-                                        && ((ha.anIntArray4578[i_29_] ^ 0xffffffff)
-                                        != -1)) {
+                                        && (ha.anIntArray4578[i_29_] != 0)) {
                                     bool = true;
                                     break;
                                 }
@@ -387,15 +373,12 @@ final class Class107 {
                         }
                     }
                     Class302[] class302s = Class348_Sub27.aClass302Array6897;
-                    for (int i_33_ = 0; ((class302s.length ^ 0xffffffff)
-                            < (i_33_ ^ 0xffffffff)); i_33_++) {
+                    for (int i_33_ = 0; (i_33_ < class302s.length); i_33_++) {
                         Class302 class302 = class302s[i_33_];
                         if (class302 != null
-                                && ((class302.anInt3840 ^ 0xffffffff)
-                                != -1)
+                                && (class302.anInt3840 != 0)
                                 && Class367_Sub11.anInt7396 % 20 < 10) {
-                            if ((class302.anInt3840 ^ 0xffffffff)
-                                    == -2) {
+                            if (class302.anInt3840 == 1) {
                                 Class348_Sub22 class348_sub22
                                         = ((Class348_Sub22)
                                         (Class282.aClass356_3654.method3480
@@ -422,8 +405,7 @@ final class Class107 {
                                             var_aa);
                                 }
                             }
-                            if ((class302.anInt3840 ^ 0xffffffff)
-                                    == -3) {
+                            if (class302.anInt3840 == 2) {
                                 int i_36_ = (-(i_4_ / 128)
                                         + (class302.anInt3835
                                         / 128));
@@ -440,15 +422,10 @@ final class Class107 {
                                                 .anInt3831),
                                         var_aa);
                             }
-                            if (((class302.anInt3840 ^ 0xffffffff)
-                                    == -11)
-                                    && (class302.anInt3833
-                                    ^ 0xffffffff) <= -1
-                                    && (((Class294
-                                    .aClass318_Sub1_Sub3_Sub3_Sub2Array5058).length
-                                    ^ 0xffffffff)
-                                    < (class302.anInt3833
-                                    ^ 0xffffffff))) {
+                            if ((class302.anInt3840 == 10)
+                                    && class302.anInt3833 >= 0
+                                    && (class302.anInt3833 < (Class294
+									.aClass318_Sub1_Sub3_Sub3_Sub2Array5058).length)) {
                                 Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2
                                         = (Class294
                                         .aClass318_Sub1_Sub3_Sub3_Sub2Array5058
@@ -473,7 +450,7 @@ final class Class107 {
                         }
                     }
                     if (Class348_Sub40_Sub21.anInt9282 != 4) {
-                        if ((Class248.anInt3203 ^ 0xffffffff) != -1) {
+                        if (Class248.anInt3203 != 0) {
                             int i_40_
                                     = (-(i_4_ / 128) + (Class248.anInt3203 * 4 + 2)
                                     - (-(2

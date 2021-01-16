@@ -23,47 +23,47 @@ final class Class239_Sub17 extends Class239 {
             return null;
         int i_3_ = i;
         int i_4_ = i_1_ + i;
-        while ((i_3_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff)) {
+        while (i_4_ > i_3_) {
             int i_5_ = 0xff & is[i_3_++];
             int i_6_;
-            if ((i_5_ ^ 0xffffffff) > -129) {
+            if (i_5_ < 128) {
                 if (i_5_ == 0)
                     i_6_ = 65533;
                 else
                     i_6_ = i_5_;
-            } else if ((i_5_ ^ 0xffffffff) <= -193) {
-                if ((i_5_ ^ 0xffffffff) <= -225) {
+            } else if (i_5_ >= 192) {
+                if (i_5_ >= 224) {
                     if (i_5_ < 240) {
                         if (i_3_ + 1 < i_4_
-                                && (is[i_3_] & 0xc0 ^ 0xffffffff) == -129
+                                && (is[i_3_] & 0xc0) == 128
                                 && (0xc0 & is[1 + i_3_]) == 128) {
                             i_6_ = ((i_5_ & 0xf) << 640802508
                                     | is[i_3_++] << 393745350 & 0xfc0
                                     | is[i_3_++] & 0x3f);
-                            if ((i_6_ ^ 0xffffffff) > -2049)
+                            if (i_6_ < 2048)
                                 i_6_ = 65533;
                         } else
                             i_6_ = 65533;
                     } else if (i_5_ >= 248)
                         i_6_ = 65533;
                     else if (i_4_ <= i_3_ - -2
-                            || (0xc0 & is[i_3_] ^ 0xffffffff) != -129
-                            || (0xc0 & is[1 + i_3_] ^ 0xffffffff) != -129
-                            || (is[2 + i_3_] & 0xc0 ^ 0xffffffff) != -129)
+                            || (0xc0 & is[i_3_]) != 128
+                            || (0xc0 & is[1 + i_3_]) != 128
+                            || (is[2 + i_3_] & 0xc0) != 128)
                         i_6_ = 65533;
                     else {
                         i_6_ = (i_5_ << -564067822 & 0x1c0000
                                 | (is[i_3_++] & 0x3f) << 1045214124
                                 | 0xfc0 & is[i_3_++] << -1022009914
                                 | 0x3f & is[i_3_++]);
-                        if ((i_6_ ^ 0xffffffff) <= -65537
-                                && (i_6_ ^ 0xffffffff) >= -1114112)
+                        if (i_6_ >= 65536
+                                && i_6_ <= 1114111)
                             i_6_ = 65533;
                         else
                             i_6_ = 65533;
                     }
                 } else if (i_3_ >= i_4_
-                        || (0xc0 & is[i_3_] ^ 0xffffffff) != -129)
+                        || (0xc0 & is[i_3_]) != 128)
                     i_6_ = 65533;
                 else {
                     i_6_ = is[i_3_++] & 0x3f | i_5_ << 405261830 & 0x7c0;
@@ -101,7 +101,7 @@ final class Class239_Sub17 extends Class239 {
         if (bool != false)
             method1793(null, 50, -30, -126);
         if (this.anInt3138 < 0
-                && (this.anInt3138 ^ 0xffffffff) < -5)
+                && this.anInt3138 > 4)
             this.anInt3138 = method1710(20014);
         anInt6024++;
     }
@@ -117,7 +117,7 @@ final class Class239_Sub17 extends Class239 {
         if (i < 53)
             return true;
         anInt6019++;
-        return i_10_ == 18 || (i_10_ ^ 0xffffffff) == -7 || i_10_ == 1011
+        return i_10_ == 18 || i_10_ == 6 || i_10_ == 1011
                 || i_10_ == 13 || i_10_ == 16;
     }
 
@@ -129,7 +129,7 @@ final class Class239_Sub17 extends Class239 {
                     .method2600(Class246.anInt3176, 28364)
                     : null);
             if (client.method105(class46).method3303(1)
-                    && (Class38.anInt500 & 0x20 ^ 0xffffffff) != -1
+                    && (Class38.anInt500 & 0x20) != 0
                     && (class254 == null
                     || (class46.method428(class254.anInt3256,
                     Class246.anInt3176, -128)
@@ -242,10 +242,8 @@ final class Class239_Sub17 extends Class239 {
         if (i != 20014)
             aClass273_6018 = null;
         anInt6027++;
-        if ((this.aClass348_Sub51_3136.method3428((byte) -96)
-                .method1462(-113)
-                ^ 0xffffffff)
-                < -2)
+        if (this.aClass348_Sub51_3136.method3428((byte) -96)
+                .method1462(-113) > 1)
             return 4;
         return 2;
     }

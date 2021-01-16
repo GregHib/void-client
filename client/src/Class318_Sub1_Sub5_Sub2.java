@@ -237,7 +237,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
         try {
             anInt10167++;
             for (int i_16_ = 0;
-                 (class242s.length ^ 0xffffffff) < (i_16_ ^ 0xffffffff);
+                 i_16_ < class242s.length;
                  i_16_++) {
                 if (class242s[i_16_] == null
                         || class242s[i_16_].aLong3156 <= 0L)
@@ -245,7 +245,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
             }
             long l = OpenGL.glCreateProgramObjectARB();
             for (int i_17_ = 0;
-                 (i_17_ ^ 0xffffffff) > (class242s.length ^ 0xffffffff);
+                 class242s.length > i_17_;
                  i_17_++)
                 OpenGL.glAttachObjectARB(l, (class242s[i_17_]
                         .aLong3156));

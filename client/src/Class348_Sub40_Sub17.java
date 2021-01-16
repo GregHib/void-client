@@ -22,9 +22,9 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
             return true;
         if (this.anIntArray9232 != null)
             return true;
-        if ((anInt9243 ^ 0xffffffff) <= -1) {
+        if (anInt9243 >= 0) {
             Class207 class207
-                    = ((Class101_Sub2.anInt5713 ^ 0xffffffff) <= -1
+                    = (Class101_Sub2.anInt5713 >= 0
                     ? Class207.method1521(Class348.aClass45_4286,
                     Class101_Sub2.anInt5713, anInt9243)
                     : Class207.method1512(Class348.aClass45_4286, anInt9243));
@@ -79,17 +79,14 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
             int[] is_3_ = is[1];
             int[] is_4_ = is[2];
             int i_5_ = (this.anInt9237
-                    * (((Class286_Sub2.anInt6212 ^ 0xffffffff)
-                    != (this.anInt9241
-                    ^ 0xffffffff))
+                    * ((this.anInt9241 != Class286_Sub2.anInt6212)
                     ? (this.anInt9241 * i
                     / Class286_Sub2.anInt6212)
                     : i));
             if (Class348_Sub40_Sub6.anInt9139
                     == this.anInt9237) {
                 for (int i_6_ = 0;
-                     ((i_6_ ^ 0xffffffff)
-                             > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff));
+                     (Class348_Sub40_Sub6.anInt9139 > i_6_);
                      i_6_++) {
                     int i_7_
                             = this.anIntArray9232[i_5_++];
@@ -101,8 +98,7 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
                 }
             } else {
                 for (int i_8_ = 0;
-                     ((i_8_ ^ 0xffffffff)
-                             > (Class348_Sub40_Sub6.anInt9139 ^ 0xffffffff));
+                     (Class348_Sub40_Sub6.anInt9139 > i_8_);
                      i_8_++) {
                     int i_9_ = (this.anInt9237 * i_8_
                             / Class348_Sub40_Sub6.anInt9139);

@@ -72,7 +72,7 @@ final class Class5_Sub2 extends Class5 {
             i = 10;
         if (bool != false)
             return false;
-        if (i >= 5 && (i ^ 0xffffffff) >= -9)
+        if (i >= 5 && i <= 8)
             i = 4;
         return class51.method478(i, -31076);
     }

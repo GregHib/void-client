@@ -17,9 +17,9 @@ final class Class241_Sub2 extends Class241 {
         long l_0_ = l + -aLong6162;
         aLong6162 = l;
         if (l_0_ > -5000000000L
-                && (l_0_ ^ 0xffffffffffffffffL) > -5000000001L) {
+                && l_0_ < 5000000000L) {
             aLongArray6164[anInt6163] = l_0_;
-            if ((anInt6165 ^ 0xffffffff) > -2)
+            if (anInt6165 < 1)
                 anInt6165++;
             anInt6163 = (1 + anInt6163) % 10;
         }
@@ -61,7 +61,7 @@ final class Class241_Sub2 extends Class241 {
         aLongArray6164 = new long[10];
         anInt6165 = 1;
         aLong6160 = aLong6161 = jagmisc.nanoTime();
-        if ((aLong6161 ^ 0xffffffffffffffffL) == -1L)
+        if (aLong6161 == 0)
             throw new RuntimeException();
     }
 
@@ -79,8 +79,7 @@ final class Class241_Sub2 extends Class241 {
             i_3_++;
             aLong6160 += l;
         } while (i_3_ < 10 && aLong6161 > aLong6160);
-        if ((aLong6161 ^ 0xffffffffffffffffL)
-                < (aLong6160 ^ 0xffffffffffffffffL))
+        if (aLong6160 < aLong6161)
             aLong6160 = aLong6161;
         return i_3_;
     }

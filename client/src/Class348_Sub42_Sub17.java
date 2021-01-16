@@ -19,7 +19,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
     static final int method3266(ha var_ha, int i, Class277 class277) {
         try {
             anInt9674++;
-            if ((class277.anInt3569 ^ 0xffffffff) == 0) {
+            if (class277.anInt3569 == -1) {
                 if (class277.anInt3575 != -1) {
                     Class12 class12 = var_ha.aD4579.method3(
                             class277.anInt3575, -6662);
@@ -55,7 +55,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
                     return false;
                 int[] is = Class138.aClass45_1940.method396(anInt9669, 0);
                 aByteArrayArray9671 = new byte[is.length][];
-                for (int i_1_ = 0; (is.length ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++)
+                for (int i_1_ = 0; i_1_ < is.length; i_1_++)
                     aByteArrayArray9671[i_1_] = Class138.aClass45_1940
                             .method410(-1860, anInt9669, is[i_1_]);
             }
