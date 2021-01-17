@@ -56,45 +56,40 @@ final class Class340 {
 
     final boolean method2674(int i) {
         anInt4214++;
-        if (aClass348_Sub49_4215 != null) return true;
+        if (aClass348_Sub49_4215 != null) {
+            return true;
+        }
         if (aClass348_Sub42_Sub16_Sub1_4220 == null) {
-            if (aClass248_4212.method1900(-71)) return false;
+            if (aClass248_4212.method1900(-71)) {
+                return false;
+            }
             aClass348_Sub42_Sub16_Sub1_4220 = aClass248_4212.method1906((byte) -84, (byte) 0, true, 255, 255);
         }
-        if (aClass348_Sub42_Sub16_Sub1_4220.aBoolean9664) return false;
+        if (aClass348_Sub42_Sub16_Sub1_4220.aBoolean9664) {
+            return false;
+        }
         Class348_Sub49 class348_sub49 = new Class348_Sub49(aClass348_Sub42_Sub16_Sub1_4220.method3259(i ^ 0x17));
         class348_sub49.anInt7197 = 5;
-
         int idxCount = class348_sub49.method3387(i ^ 0xf8);
-        System.out.println("i_5_: " + idxCount);
-
         class348_sub49.anInt7197 += idxCount * 72;
         byte[] is = new byte[(class348_sub49.aByteArray7154.length - class348_sub49.anInt7197)];
-
-        System.out.println("is len: " + is.length); // 512
-
         class348_sub49.method3389(2147483647, 0, is.length, is);
-        if (i != 7) aClass112_4217 = null;
-
-
-        String ukeys = "";
-        for (int t3 = 0; t3 < is.length; t3++) {
-            ukeys += is[t3] + ", ";
-        }
-        System.out.println("ukeys: " + ukeys);
-
         byte[] is_6_;
-        if (Loader.loadRunescape && aBigInteger4213 != null && aBigInteger4218 != null) {
+        if (aBigInteger4213 != null && aBigInteger4218 != null) {
             BigInteger biginteger = new BigInteger(is);
             BigInteger biginteger_7_ = biginteger.modPow(aBigInteger4213, aBigInteger4218);
             is_6_ = biginteger_7_.toByteArray();
         } else {
             is_6_ = is;
         }
-        if (is_6_.length != 65) throw new RuntimeException();
+        if (is_6_.length != 65) {
+            throw new RuntimeException();
+        }
         byte[] is_8_ = Class348_Sub1_Sub2.method2730(4567, 5, (class348_sub49.aByteArray7154), (class348_sub49.anInt7197) - (is.length + 5));
         for (int i_9_ = 0; i_9_ < 64; i_9_++) {
-            if (is_8_[i_9_] != is_6_[i_9_ + 1]) throw new RuntimeException();
+            if (is_8_[i_9_] != is_6_[i_9_ + 1]) {
+                throw new RuntimeException();
+            }
         }
         aClass348_Sub49_4215 = class348_sub49;
         aClass314_Sub1Array4216 = new Class314_Sub1[idxCount];
