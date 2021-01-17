@@ -58,6 +58,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i = Class299.aClass348_Sub49_Sub2_3813.method3407(15295);
             if (i < 0 || i >= class114s.length) throw new IOException("invo:" + i + " ip:" + (Class299.aClass348_Sub49_Sub2_3813.anInt7197));
             Class348_Sub3.aClass114_6584 = class114s[i];
+            if (Loader.debug) {
+                System.out.println("Packet read:" + i + " length: " + Class348_Sub3.aClass114_6584.anInt1749);
+            }
             Class348_Sub40_Sub25.anInt9341 = Class348_Sub3.aClass114_6584.anInt1749;
         }
         if (Class348_Sub40_Sub25.anInt9341 == -1) {
