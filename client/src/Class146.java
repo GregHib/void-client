@@ -17,7 +17,7 @@ final class Class146 {
         if (i == 2048) {
             anInt2018++;
             for (; ; ) {
-                int i_0_ = class348_sub49.method3387(255);
+                int i_0_ = class348_sub49.readUnsignedByte(255);
                 if (i_0_ == 0) break;
                 method1192(i_0_, class348_sub49, (byte) 17);
             }
@@ -28,9 +28,9 @@ final class Class146 {
         anInt2014++;
         if (i_1_ != 17) method1194(-80);
         if (i == 1) {
-            this.anInt2019 = class348_sub49.method3330(842397944);
-            this.anInt2016 = class348_sub49.method3387(255);
-            this.anInt2020 = class348_sub49.method3387(i_1_ ^ 0xee);
+            this.anInt2019 = class348_sub49.readShort(842397944);
+            this.anInt2016 = class348_sub49.readUnsignedByte(255);
+            this.anInt2020 = class348_sub49.readUnsignedByte(i_1_ ^ 0xee);
         }
     }
 

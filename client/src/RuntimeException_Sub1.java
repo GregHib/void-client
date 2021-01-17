@@ -64,7 +64,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
         int i_7_ = -91 % ((i - -51) / 42);
         boolean bool = false;
         for (; ; ) {
-            int i_8_ = class348_sub49.method3387(255);
+            int i_8_ = class348_sub49.readUnsignedByte(255);
             if (i_8_ == 0) break;
             if (i_8_ == 1) {
                 if (Class118.anIntArray1786 == null) {
@@ -79,11 +79,11 @@ final class RuntimeException_Sub1 extends RuntimeException {
                 bool = true;
             } else if (i_8_ != 2) {
                 if (i_8_ == 3) {
-                    Class132.anInt1905 = class348_sub49.method3387(255);
+                    Class132.anInt1905 = class348_sub49.readUnsignedByte(255);
                     Class118.anIntArray1786 = new int[Class132.anInt1905];
                     Class106.anIntArray1636 = new int[Class132.anInt1905];
                 }
-            } else Class348_Sub31.anInt6923 = class348_sub49.method3330(842397944);
+            } else Class348_Sub31.anInt6923 = class348_sub49.readShort(842397944);
         }
         if (!bool) {
             if (Class118.anIntArray1786 == null) {

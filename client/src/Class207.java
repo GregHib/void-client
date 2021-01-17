@@ -236,22 +236,22 @@ final class Class207 {
     private static final Class207[] method1517(byte[] is) {
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
         class348_sub49.anInt7197 = is.length - 2;
-        int i = class348_sub49.method3330(842397944);
+        int i = class348_sub49.readShort(842397944);
         Class207[] class207s = new Class207[i];
         for (int i_72_ = 0; i_72_ < i; i_72_++)
             class207s[i_72_] = new Class207();
         class348_sub49.anInt7197 = is.length - 7 - i * 8;
-        int i_73_ = class348_sub49.method3330(842397944);
-        int i_74_ = class348_sub49.method3330(842397944);
-        int i_75_ = (class348_sub49.method3387(255) & 0xff) + 1;
+        int i_73_ = class348_sub49.readShort(842397944);
+        int i_74_ = class348_sub49.readShort(842397944);
+        int i_75_ = (class348_sub49.readUnsignedByte(255) & 0xff) + 1;
         for (int i_76_ = 0; i_76_ < i; i_76_++)
-            class207s[i_76_].anInt2703 = class348_sub49.method3330(842397944);
+            class207s[i_76_].anInt2703 = class348_sub49.readShort(842397944);
         for (int i_77_ = 0; i_77_ < i; i_77_++)
-            class207s[i_77_].anInt2700 = class348_sub49.method3330(842397944);
+            class207s[i_77_].anInt2700 = class348_sub49.readShort(842397944);
         for (int i_78_ = 0; i_78_ < i; i_78_++)
-            class207s[i_78_].anInt2702 = class348_sub49.method3330(842397944);
+            class207s[i_78_].anInt2702 = class348_sub49.readShort(842397944);
         for (int i_79_ = 0; i_79_ < i; i_79_++)
-            class207s[i_79_].anInt2696 = class348_sub49.method3330(842397944);
+            class207s[i_79_].anInt2696 = class348_sub49.readShort(842397944);
         for (int i_80_ = 0; i_80_ < i; i_80_++) {
             Class207 class207 = class207s[i_80_];
             class207.anInt2698 = (i_73_ - class207.anInt2702 - class207.anInt2703);
@@ -270,7 +270,7 @@ final class Class207 {
             Class207 class207 = class207s[i_84_];
             int i_85_ = (class207.anInt2702 * class207.anInt2696);
             class207.aByteArray2699 = new byte[i_85_];
-            int i_86_ = class348_sub49.method3387(255);
+            int i_86_ = class348_sub49.readUnsignedByte(255);
             if ((i_86_ & 0x2) == 0) {
                 if ((i_86_ & 0x1) == 0) {
                     for (int i_87_ = 0; i_87_ < i_85_; i_87_++)

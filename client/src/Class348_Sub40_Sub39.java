@@ -64,10 +64,10 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_6_) {
         if (i_6_ != 31015) aClass70_9485 = null;
         if (i == 0) {
-            aClass50Array9481 = new Class50[class348_sub49.method3387(255)];
+            aClass50Array9481 = new Class50[class348_sub49.readUnsignedByte(255)];
             while_216_:
             for (int i_7_ = 0; aClass50Array9481.length > i_7_; i_7_++) {
-                int i_8_ = class348_sub49.method3387(255);
+                int i_8_ = class348_sub49.readUnsignedByte(255);
                 int i_9_ = i_8_;
                 while_214_:
                 do {
@@ -89,7 +89,7 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                 } while (false);
                 aClass50Array9481[i_7_] = Class265.method2022(class348_sub49, 0);
             }
-        } else if (i == 1) this.aBoolean7045 = class348_sub49.method3387(255) == 1;
+        } else if (i == 1) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1;
         anInt9484++;
     }
 

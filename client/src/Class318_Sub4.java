@@ -43,24 +43,24 @@ final class Class318_Sub4 extends Class318 {
         Class348_Sub42_Sub19 class348_sub42_sub19 = new Class348_Sub42_Sub19();
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
         class348_sub49.anInt7197 = -2 + class348_sub49.aByteArray7154.length;
-        int i_11_ = class348_sub49.method3330(842397944);
+        int i_11_ = class348_sub49.readShort(842397944);
         int i_12_ = -12 + -i_11_ + (-2 + (class348_sub49.aByteArray7154).length);
         class348_sub49.anInt7197 = i_12_;
-        int i_13_ = class348_sub49.method3385((byte) -126);
-        class348_sub42_sub19.anInt9688 = class348_sub49.method3330(842397944);
-        class348_sub42_sub19.anInt9689 = class348_sub49.method3330(842397944);
-        class348_sub42_sub19.anInt9697 = class348_sub49.method3330(842397944);
-        class348_sub42_sub19.anInt9695 = class348_sub49.method3330(842397944);
-        int i_14_ = class348_sub49.method3387(255);
+        int i_13_ = class348_sub49.readInt((byte) -126);
+        class348_sub42_sub19.anInt9688 = class348_sub49.readShort(842397944);
+        class348_sub42_sub19.anInt9689 = class348_sub49.readShort(842397944);
+        class348_sub42_sub19.anInt9697 = class348_sub49.readShort(842397944);
+        class348_sub42_sub19.anInt9695 = class348_sub49.readShort(842397944);
+        int i_14_ = class348_sub49.readUnsignedByte(255);
         if (i_14_ > 0) {
             class348_sub42_sub19.aClass356Array9693 = new Class356[i_14_];
             for (int i_15_ = 0; i_15_ < i_14_; i_15_++) {
-                int i_16_ = class348_sub49.method3330(842397944);
+                int i_16_ = class348_sub49.readShort(842397944);
                 Class356 class356 = new Class356(Class33.method340(i_16_, (byte) 108));
                 class348_sub42_sub19.aClass356Array9693[i_15_] = class356;
                 while (i_16_-- > 0) {
-                    int i_17_ = class348_sub49.method3385((byte) -126);
-                    int i_18_ = class348_sub49.method3385((byte) -126);
+                    int i_17_ = class348_sub49.readInt((byte) -126);
+                    int i_18_ = class348_sub49.readInt((byte) -126);
                     class356.method3483((byte) 124, i_17_, new Class348_Sub35(i_18_));
                 }
             }
@@ -72,10 +72,10 @@ final class Class318_Sub4 extends Class318 {
         class348_sub42_sub19.aStringArray9692 = new String[i_13_];
         int i_19_ = 0;
         while (class348_sub49.anInt7197 < i_12_) {
-            int i_20_ = class348_sub49.method3330(842397944);
+            int i_20_ = class348_sub49.readShort(842397944);
             if (i_20_ != 3) {
-                if (i_20_ >= 100 || i_20_ == 21 || i_20_ == 38 || i_20_ == 39) class348_sub42_sub19.anIntArray9694[i_19_] = class348_sub49.method3387(255);
-                else class348_sub42_sub19.anIntArray9694[i_19_] = class348_sub49.method3385((byte) -126);
+                if (i_20_ >= 100 || i_20_ == 21 || i_20_ == 38 || i_20_ == 39) class348_sub42_sub19.anIntArray9694[i_19_] = class348_sub49.readUnsignedByte(255);
+                else class348_sub42_sub19.anIntArray9694[i_19_] = class348_sub49.readInt((byte) -126);
             } else class348_sub42_sub19.aStringArray9692[i_19_] = class348_sub49.method3377((byte) -98).intern();
             class348_sub42_sub19.anIntArray9696[i_19_++] = i_20_;
         }

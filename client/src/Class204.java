@@ -23,7 +23,7 @@ final class Class204 {
 
     private final int method1481(int i, int i_1_) {
         if (i_1_ == 255) {
-            int i_2_ = aClass348_Sub49_2677.method3387(255);
+            int i_2_ = aClass348_Sub49_2677.readUnsignedByte(255);
             int i_3_ = aClass348_Sub49_2677.method3366((byte) 112);
             if (i_2_ == 47) {
                 aClass348_Sub49_2677.anInt7197 += i_3_;
@@ -43,22 +43,22 @@ final class Class204 {
         }
         byte i_6_ = aByteArray2676[i_1_ - 128];
         int i_7_ = i_1_;
-        if (i_6_ >= 1) i_7_ |= aClass348_Sub49_2677.method3387(255) << 8;
-        if (i_6_ >= 2) i_7_ |= aClass348_Sub49_2677.method3387(255) << 16;
+        if (i_6_ >= 1) i_7_ |= aClass348_Sub49_2677.readUnsignedByte(255) << 8;
+        if (i_6_ >= 2) i_7_ |= aClass348_Sub49_2677.readUnsignedByte(255) << 16;
         return i_7_;
     }
 
     final void method1482(byte[] is) {
         aClass348_Sub49_2677.aByteArray7154 = is;
         aClass348_Sub49_2677.anInt7197 = 10;
-        int i = aClass348_Sub49_2677.method3330(842397944);
-        this.anInt2683 = aClass348_Sub49_2677.method3330(842397944);
+        int i = aClass348_Sub49_2677.readShort(842397944);
+        this.anInt2683 = aClass348_Sub49_2677.readShort(842397944);
         anInt2684 = 500000;
         anIntArray2679 = new int[i];
         int i_8_ = 0;
         while (i_8_ < i) {
-            int i_9_ = aClass348_Sub49_2677.method3385((byte) -126);
-            int i_10_ = aClass348_Sub49_2677.method3385((byte) -126);
+            int i_9_ = aClass348_Sub49_2677.readInt((byte) -126);
+            int i_10_ = aClass348_Sub49_2677.readInt((byte) -126);
             if (i_9_ == 1297379947) {
                 anIntArray2679[i_8_] = aClass348_Sub49_2677.anInt7197;
                 i_8_++;

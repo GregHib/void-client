@@ -69,7 +69,7 @@ final class Class218 {
     private final void method1595(byte i, int i_17_, Class348_Sub49 class348_sub49) {
         anInt2852++;
         if (i >= 5) {
-            if (i_17_ == 1) this.anInt2853 = class348_sub49.method3330(842397944);
+            if (i_17_ == 1) this.anInt2853 = class348_sub49.readShort(842397944);
             else if (i_17_ != 2) {
                 if (i_17_ == 3) this.aBoolean2854 = true;
                 else if (i_17_ == 4) this.anInt2853 = -1;
@@ -99,7 +99,7 @@ final class Class218 {
     final void method1597(byte i, Class348_Sub49 class348_sub49) {
         anInt2850++;
         for (; ; ) {
-            int i_20_ = class348_sub49.method3387(255);
+            int i_20_ = class348_sub49.readUnsignedByte(255);
             if (i_20_ == 0) break;
             method1595((byte) 61, i_20_, class348_sub49);
         }

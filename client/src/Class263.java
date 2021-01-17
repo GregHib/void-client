@@ -298,28 +298,28 @@ final class Class263 {
         anInt3357++;
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
         for (; ; ) {
-            int i_23_ = class348_sub49.method3387(255);
+            int i_23_ = class348_sub49.readUnsignedByte(255);
             if (i_23_ == 0) break;
             if (i_23_ == 1) {
                 int[] is_28_ = Class81.anIntArray1432 = new int[6];
-                is_28_[0] = class348_sub49.method3330(i + 842397832);
-                is_28_[1] = class348_sub49.method3330(i + 842397832);
-                is_28_[2] = class348_sub49.method3330(842397944);
-                is_28_[3] = class348_sub49.method3330(842397944);
-                is_28_[4] = class348_sub49.method3330(842397944);
-                is_28_[5] = class348_sub49.method3330(842397944);
+                is_28_[0] = class348_sub49.readShort(i + 842397832);
+                is_28_[1] = class348_sub49.readShort(i + 842397832);
+                is_28_[2] = class348_sub49.readShort(842397944);
+                is_28_[3] = class348_sub49.readShort(842397944);
+                is_28_[4] = class348_sub49.readShort(842397944);
+                is_28_[5] = class348_sub49.readShort(842397944);
             } else if (i_23_ == 4) {
-                int i_24_ = class348_sub49.method3387(255);
+                int i_24_ = class348_sub49.readUnsignedByte(255);
                 RuntimeException_Sub1.anIntArray4603 = new int[i_24_];
                 for (int i_25_ = 0; i_24_ > i_25_; i_25_++) {
-                    RuntimeException_Sub1.anIntArray4603[i_25_] = class348_sub49.method3330(842397944);
+                    RuntimeException_Sub1.anIntArray4603[i_25_] = class348_sub49.readShort(842397944);
                     if (RuntimeException_Sub1.anIntArray4603[i_25_] == 65535) RuntimeException_Sub1.anIntArray4603[i_25_] = -1;
                 }
             } else if (i_23_ == 5) {
-                int i_26_ = class348_sub49.method3387(255);
+                int i_26_ = class348_sub49.readUnsignedByte(255);
                 Class239_Sub17.anIntArray6021 = new int[i_26_];
                 for (int i_27_ = 0; i_27_ < i_26_; i_27_++) {
-                    Class239_Sub17.anIntArray6021[i_27_] = class348_sub49.method3330(842397944);
+                    Class239_Sub17.anIntArray6021[i_27_] = class348_sub49.readShort(842397944);
                     if (Class239_Sub17.anIntArray6021[i_27_] == 65535) Class239_Sub17.anIntArray6021[i_27_] = -1;
                 }
             }

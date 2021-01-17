@@ -47,7 +47,7 @@ final class Class80 {
         aClass197_1418.method1452(class348_sub49);
         aClass197_1408 = new Class197();
         aClass197_1408.method1452(class348_sub49);
-        int i = class348_sub49.method3387(255);
+        int i = class348_sub49.readUnsignedByte(255);
         if (i != 0) {
             class348_sub49.anInt7197--;
             aClass197_1415 = new Class197();
@@ -55,7 +55,7 @@ final class Class80 {
             aClass197_1425 = new Class197();
             aClass197_1425.method1452(class348_sub49);
         }
-        i = class348_sub49.method3387(255);
+        i = class348_sub49.readUnsignedByte(255);
         if (i != 0) {
             class348_sub49.anInt7197--;
             aClass197_1413 = new Class197();
@@ -63,7 +63,7 @@ final class Class80 {
             aClass197_1423 = new Class197();
             aClass197_1423.method1452(class348_sub49);
         }
-        i = class348_sub49.method3387(255);
+        i = class348_sub49.readUnsignedByte(255);
         if (i != 0) {
             class348_sub49.anInt7197--;
             aClass197_1414 = new Class197();
@@ -80,8 +80,8 @@ final class Class80 {
         }
         anInt1427 = class348_sub49.method3382(-120);
         anInt1422 = class348_sub49.method3382(-122);
-        this.anInt1421 = class348_sub49.method3330(842397944);
-        this.anInt1407 = class348_sub49.method3330(842397944);
+        this.anInt1421 = class348_sub49.readShort(842397944);
+        this.anInt1407 = class348_sub49.readShort(842397944);
         aClass349_1419 = new Class349();
         aClass197_1417 = new Class197();
         aClass349_1419.method3446(class348_sub49, aClass197_1417);

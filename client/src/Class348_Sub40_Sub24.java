@@ -77,16 +77,16 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
         do {
             do {
                 if (i_10_ == 0) {
-                    anInt9329 = class348_sub49.method3387(255);
+                    anInt9329 = class348_sub49.readUnsignedByte(255);
                     break while_198_;
                 } else if (i_10_ != 1) {
                     if (i_10_ == 2) break;
                     break while_198_;
                 }
-                anInt9334 = class348_sub49.method3330(842397944);
+                anInt9334 = class348_sub49.readShort(842397944);
                 break while_198_;
             } while (false);
-            anInt9325 = class348_sub49.method3387(i_9_ ^ 0x79d8);
+            anInt9325 = class348_sub49.readUnsignedByte(i_9_ ^ 0x79d8);
         } while (false);
         if (i_9_ != 31015) method3049(null, 38, 1);
     }

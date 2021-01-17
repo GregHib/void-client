@@ -73,21 +73,21 @@ final class Class348_Sub10 extends Class348 {
 
     private final void method2787(byte[] is) {
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        anInt6702 = class348_sub49.method3385((byte) -126);
-        anInt6716 = class348_sub49.method3385((byte) -126);
-        anInt6723 = class348_sub49.method3385((byte) -126);
-        anInt6717 = class348_sub49.method3385((byte) -126);
+        anInt6702 = class348_sub49.readInt((byte) -126);
+        anInt6716 = class348_sub49.readInt((byte) -126);
+        anInt6723 = class348_sub49.readInt((byte) -126);
+        anInt6717 = class348_sub49.readInt((byte) -126);
         if (anInt6717 < 0) {
             anInt6717 = ~anInt6717;
             aBoolean6728 = true;
         }
-        int i = class348_sub49.method3385((byte) -126);
+        int i = class348_sub49.readInt((byte) -126);
         aByteArrayArray6703 = new byte[i][];
         for (int i_3_ = 0; i_3_ < i; i_3_++) {
             int i_4_ = 0;
             int i_5_;
             do {
-                i_5_ = class348_sub49.method3387(255);
+                i_5_ = class348_sub49.readUnsignedByte(255);
                 i_4_ += i_5_;
             } while (i_5_ >= 255);
             byte[] is_6_ = new byte[i_4_];

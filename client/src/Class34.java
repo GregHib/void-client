@@ -94,30 +94,30 @@ final class Class34 {
     private final void method344(int i, Class348_Sub49 class348_sub49, byte i_10_) {
         if (i != 1) {
             if (i == 2) {
-                int i_11_ = class348_sub49.method3387(i_10_ + 320);
+                int i_11_ = class348_sub49.readUnsignedByte(i_10_ + 320);
                 anIntArray472 = new int[i_11_];
                 for (int i_12_ = 0; i_12_ < i_11_; i_12_++)
-                    anIntArray472[i_12_] = class348_sub49.method3330(842397944);
+                    anIntArray472[i_12_] = class348_sub49.readShort(842397944);
             } else if (i != 3) {
                 if (i == 40) {
-                    int i_13_ = class348_sub49.method3387(i_10_ ^ ~0xbf);
+                    int i_13_ = class348_sub49.readUnsignedByte(i_10_ ^ ~0xbf);
                     aShortArray480 = new short[i_13_];
                     aShortArray474 = new short[i_13_];
                     for (int i_14_ = 0; i_14_ < i_13_; i_14_++) {
-                        aShortArray474[i_14_] = (short) class348_sub49.method3330(842397944);
-                        aShortArray480[i_14_] = (short) class348_sub49.method3330(842397944);
+                        aShortArray474[i_14_] = (short) class348_sub49.readShort(842397944);
+                        aShortArray480[i_14_] = (short) class348_sub49.readShort(842397944);
                     }
                 } else if (i == 41) {
-                    int i_15_ = class348_sub49.method3387(255);
+                    int i_15_ = class348_sub49.readUnsignedByte(255);
                     aShortArray465 = new short[i_15_];
                     aShortArray477 = new short[i_15_];
                     for (int i_16_ = 0; i_15_ > i_16_; i_16_++) {
-                        aShortArray465[i_16_] = (short) class348_sub49.method3330(i_10_ + 842398009);
-                        aShortArray477[i_16_] = (short) class348_sub49.method3330(842397944);
+                        aShortArray465[i_16_] = (short) class348_sub49.readShort(i_10_ + 842398009);
+                        aShortArray477[i_16_] = (short) class348_sub49.readShort(842397944);
                     }
-                } else if (i >= 60 && i < 70) anIntArray464[i + -60] = class348_sub49.method3330(842397944);
+                } else if (i >= 60 && i < 70) anIntArray464[i + -60] = class348_sub49.readShort(842397944);
             }
-        } else class348_sub49.method3387(i_10_ + 320);
+        } else class348_sub49.readUnsignedByte(i_10_ + 320);
         anInt479++;
         if (i_10_ != -65) aLong482 = -90L;
     }
@@ -132,7 +132,7 @@ final class Class34 {
     final void method346(int i, Class348_Sub49 class348_sub49) {
         anInt467++;
         for (; ; ) {
-            int i_18_ = class348_sub49.method3387(255);
+            int i_18_ = class348_sub49.readUnsignedByte(255);
             if (i_18_ == 0) break;
             method344(i_18_, class348_sub49, (byte) -65);
         }

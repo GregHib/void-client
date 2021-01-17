@@ -16,9 +16,9 @@ final class Class375 {
         for (int i_0_ = 0; i_0_ < Class101_Sub3.anInt5768; i_0_++) {
             int i_1_ = Class18.anIntArray279[i_0_];
             Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_1_];
-            int i_2_ = class348_sub49_sub2.method3387(255);
-            if ((i_2_ & 0x40) != 0) i_2_ += class348_sub49_sub2.method3387(255) << -1102225048;
-            if ((i_2_ & 0x4000) != 0) i_2_ += class348_sub49_sub2.method3387(255) << -2048992976;
+            int i_2_ = class348_sub49_sub2.readUnsignedByte(255);
+            if ((i_2_ & 0x40) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) << -1102225048;
+            if ((i_2_ & 0x4000) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) << -2048992976;
             Class133.method1141(class348_sub49_sub2, i_1_, i_2_, 123, class318_sub1_sub3_sub3_sub2);
         }
         anInt4541++;

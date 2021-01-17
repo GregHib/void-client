@@ -19,11 +19,11 @@ final class Class90 {
 
     static final void method853(byte i) {
         anInt1515++;
-        int i_0_ = Class299.aClass348_Sub49_Sub2_3813.method3387(255);
-        int i_1_ = Class299.aClass348_Sub49_Sub2_3813.readLEShort128(-121);
-        boolean bool = Class299.aClass348_Sub49_Sub2_3813.method3387(i + 156) == 1;
-        int i_2_ = Class299.aClass348_Sub49_Sub2_3813.method3355(i + -172);
-        Class312.anInt3931 = Class299.aClass348_Sub49_Sub2_3813.method3393((byte) -112);
+        int i_0_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
+        int i_1_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-121);
+        boolean bool = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(i + 156) == 1;
+        int i_2_ = Class299.aClass348_Sub49_Sub2_3813.readByteAdd(i + -172);
+        Class312.anInt3931 = Class299.aClass348_Sub49_Sub2_3813.readByteSubtract((byte) -112);
         Class322.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(125, i_0_);
         Class299.aClass348_Sub49_Sub2_3813.method3417(-122);
@@ -43,7 +43,7 @@ final class Class90 {
         if (i != 99) method852(-55);
         for (/**/; i_8_ < i_7_; i_8_++) {
             for (int i_9_ = 0; i_9_ < 4; i_9_++)
-                Class239_Sub6.anIntArrayArray5894[i_8_][i_9_] = Class299.aClass348_Sub49_Sub2_3813.method3385((byte) -126);
+                Class239_Sub6.anIntArrayArray5894[i_8_][i_9_] = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
         }
         Class322.anIntArray4031 = null;
         Applet_Sub1.anIntArray38 = new int[i_7_];

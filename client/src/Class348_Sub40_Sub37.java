@@ -46,16 +46,16 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
         do {
             do {
                 if (i_12_ == 0) {
-                    anInt9466 = class348_sub49.method3387(255);
+                    anInt9466 = class348_sub49.readUnsignedByte(255);
                     return;
                 } else if (i_12_ != 1) {
                     if (i_12_ == 2) break;
                     break while_212_;
                 }
-                anInt9463 = class348_sub49.method3387(255);
+                anInt9463 = class348_sub49.readUnsignedByte(255);
                 return;
             } while (false);
-            this.aBoolean7045 = class348_sub49.method3387(i_11_ ^ 0x79d8) == 1;
+            this.aBoolean7045 = class348_sub49.readUnsignedByte(i_11_ ^ 0x79d8) == 1;
         } while (false);
     }
 

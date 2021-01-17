@@ -40,13 +40,13 @@ final class Class92 {
                     while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212[i_1_].length) {
                         if (i_4_ >= 511 || Class150.anInt2057 >= 1023) break;
                         int i_5_ = i_2_ | i_4_++ << 1526835142;
-                        int i_6_ = class348_sub49.method3330(842397944);
+                        int i_6_ = class348_sub49.readShort(842397944);
                         int i_7_ = i_6_ >> -377444754;
                         int i_8_ = 0x3f & i_6_ >> 1964330791;
                         int i_9_ = i_6_ & 0x3f;
                         int i_10_ = (i_8_ + (-za_Sub2.anInt9780 + (Class348_Sub23_Sub3.anIntArray9042[i_1_] >> -1716641816) * 64));
                         int i_11_ = (-Class90.anInt1517 + (64 * (0xff & (Class348_Sub23_Sub3.anIntArray9042[i_1_])) - -i_9_));
-                        Class79 class79 = (Class189.aClass278_2529.method2079(class348_sub49.method3330(842397944), -1));
+                        Class79 class79 = (Class189.aClass278_2529.method2079(class348_sub49.readShort(842397944), -1));
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_5_, -6008));
                         if (class348_sub22 == null && (class79.aByte1325 & 0x1) > 0 && i_7_ == Class167.anInt2204 && i_10_ >= 0 && (Class367_Sub4.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_11_ + class79.anInt1399)) {
                             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = new Class318_Sub1_Sub3_Sub3_Sub1();

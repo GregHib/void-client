@@ -10,7 +10,7 @@ final class Class159 {
     static int anInt2128;
 
     private final void method1251(Class348_Sub49 class348_sub49, int i, int i_0_) {
-        if (i == 5) this.anInt2125 = class348_sub49.method3330(842397944);
+        if (i == 5) this.anInt2125 = class348_sub49.readShort(842397944);
         anInt2126++;
         int i_1_ = 60 % ((i_0_ - 33) / 57);
     }
@@ -50,7 +50,7 @@ final class Class159 {
 
     final void method1253(Class348_Sub49 class348_sub49, boolean bool) {
         for (; ; ) {
-            int i = class348_sub49.method3387(255);
+            int i = class348_sub49.readUnsignedByte(255);
             if (i == 0) break;
             method1251(class348_sub49, i, -105);
         }

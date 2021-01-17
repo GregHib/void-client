@@ -63,7 +63,7 @@ final class Class55_Sub1 extends Class55 {
             int i_5_ = is_4_.length >> 994128513;
             anIntArray5269 = new int[i_5_];
             for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
-                anIntArray5269[i_6_] = aClass348_Sub49_5276.method3330(842397944);
+                anIntArray5269[i_6_] = aClass348_Sub49_5276.readShort(842397944);
         }
         if (anInt5270 >= anIntArray5269.length) return -1;
         method522((byte) -74);

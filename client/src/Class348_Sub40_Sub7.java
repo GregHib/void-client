@@ -460,16 +460,16 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                     int i_73_ = i;
                     do {
                         if (i_73_ == 0) {
-                            aBoolean9140 = class348_sub49.method3387(255) == 1;
+                            aBoolean9140 = class348_sub49.readUnsignedByte(255) == 1;
                             return;
                         } else if (i_73_ != 1) {
                             if (i_73_ == 2) break;
                             break while_146_;
                         }
-                        aBoolean9147 = class348_sub49.method3387(255) == 1;
+                        aBoolean9147 = class348_sub49.readUnsignedByte(255) == 1;
                         return;
                     } while (false);
-                    this.aBoolean7045 = class348_sub49.method3387(255) == 1;
+                    this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1;
                     break;
                 }
                 break;

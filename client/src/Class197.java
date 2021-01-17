@@ -28,9 +28,9 @@ final class Class197 {
     }
 
     final void method1452(Class348_Sub49 class348_sub49) {
-        this.anInt2603 = class348_sub49.method3387(255);
-        this.anInt2607 = class348_sub49.method3385((byte) -126);
-        this.anInt2606 = class348_sub49.method3385((byte) -126);
+        this.anInt2603 = class348_sub49.readUnsignedByte(255);
+        this.anInt2607 = class348_sub49.readInt((byte) -126);
+        this.anInt2606 = class348_sub49.readInt((byte) -126);
         method1454(class348_sub49);
     }
 
@@ -51,12 +51,12 @@ final class Class197 {
     }
 
     final void method1454(Class348_Sub49 class348_sub49) {
-        anInt2604 = class348_sub49.method3387(255);
+        anInt2604 = class348_sub49.readUnsignedByte(255);
         anIntArray2605 = new int[anInt2604];
         anIntArray2602 = new int[anInt2604];
         for (int i = 0; i < anInt2604; i++) {
-            anIntArray2605[i] = class348_sub49.method3330(842397944);
-            anIntArray2602[i] = class348_sub49.method3330(842397944);
+            anIntArray2605[i] = class348_sub49.readShort(842397944);
+            anIntArray2602[i] = class348_sub49.readShort(842397944);
         }
     }
 }

@@ -88,7 +88,7 @@ final class Class348_Sub40_Sub21 extends Class348_Sub40 {
                         do {
                             do {
                                 if (i_14_ == 0) {
-                                    anInt9269 = class348_sub49.method3330(842397944);
+                                    anInt9269 = class348_sub49.readShort(842397944);
                                     return;
                                 } else if (i_14_ != 1) {
                                     if (i_14_ != 2) {
@@ -104,22 +104,22 @@ final class Class348_Sub40_Sub21 extends Class348_Sub40 {
                                     } else break;
                                     break while_179_;
                                 }
-                                anInt9278 = class348_sub49.method3330(842397944);
+                                anInt9278 = class348_sub49.readShort(842397944);
                                 return;
                             } while (false);
-                            anInt9266 = class348_sub49.method3330(842397944);
+                            anInt9266 = class348_sub49.readShort(842397944);
                             return;
                         } while (false);
-                        anInt9281 = class348_sub49.method3330(842397944);
+                        anInt9281 = class348_sub49.readShort(842397944);
                         return;
                     } while (false);
-                    anInt9279 = class348_sub49.method3330(842397944);
+                    anInt9279 = class348_sub49.readShort(842397944);
                     return;
                 } while (false);
-                anInt9276 = class348_sub49.method3330(842397944);
+                anInt9276 = class348_sub49.readShort(842397944);
                 return;
             } while (false);
-            anInt9277 = class348_sub49.method3330(842397944);
+            anInt9277 = class348_sub49.readShort(842397944);
         } while (false);
     }
 

@@ -22,17 +22,17 @@ final class Class189 {
         if (i_1_ != 94) this.anInt2526 = -81;
         anInt2532++;
         if (i == 1) {
-            this.anInt2525 = class348_sub49.method3330(842397944);
+            this.anInt2525 = class348_sub49.readShort(842397944);
             if (this.anInt2525 == 65535) this.anInt2525 = -1;
         } else if (i == 2) {
-            this.anInt2526 = 1 + class348_sub49.method3330(842397944);
-            this.anInt2530 = class348_sub49.method3330(842397944) - -1;
+            this.anInt2526 = 1 + class348_sub49.readShort(842397944);
+            this.anInt2530 = class348_sub49.readShort(842397944) - -1;
         } else if (i != 3) {
-            if (i == 4) this.anInt2534 = class348_sub49.method3387(255);
+            if (i == 4) this.anInt2534 = class348_sub49.readUnsignedByte(255);
             else if (i != 5) {
                 if (i == 6) this.aBoolean2522 = true;
                 else if (i == 7) this.aBoolean2531 = true;
-            } else this.anInt2533 = class348_sub49.method3387(255);
+            } else this.anInt2533 = class348_sub49.readUnsignedByte(255);
         } else class348_sub49.method3388(-106);
     }
 
@@ -40,7 +40,7 @@ final class Class189 {
         anInt2528++;
         int i_3_ = 93 / ((i_2_ - -24) / 55);
         for (; ; ) {
-            int i_4_ = class348_sub49.method3387(255);
+            int i_4_ = class348_sub49.readUnsignedByte(255);
             if (i_4_ == 0) break;
             method1418(i_4_, i, class348_sub49, (byte) 94);
         }

@@ -16,7 +16,7 @@ final class Class254 {
     final void method1924(Class348_Sub49 class348_sub49, byte i) {
         int i_0_ = -47 % ((i - -74) / 49);
         for (; ; ) {
-            int i_1_ = class348_sub49.method3387(255);
+            int i_1_ = class348_sub49.readUnsignedByte(255);
             if (i_1_ == 0) break;
             method1927(true, class348_sub49, i_1_);
         }
@@ -37,7 +37,7 @@ final class Class254 {
     private final void method1927(boolean bool, Class348_Sub49 class348_sub49, int i) {
         anInt3257++;
         if (i != 1) {
-            if (i == 2) this.anInt3256 = class348_sub49.method3385((byte) -126);
+            if (i == 2) this.anInt3256 = class348_sub49.readInt((byte) -126);
             else if (i == 4) this.aBoolean3261 = false;
             else if (i == 5) this.aString3258 = class348_sub49.method3377((byte) 91);
         } else aChar3259 = Class50_Sub1.method462(class348_sub49.method3388(-115), -128);

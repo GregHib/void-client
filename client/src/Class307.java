@@ -18,9 +18,9 @@ final class Class307 {
             int i_2_ = 0;
             while (i_1_ < class252.anInt3241) {
                 Class348_Sub49 class348_sub49 = new Class348_Sub49(class45.method410(-1860, i_0_, is[i_2_++]));
-                int i_3_ = class348_sub49.method3385((byte) -126);
-                int i_4_ = class348_sub49.method3330(i ^ ~0x3235f8a2);
-                int i_5_ = class348_sub49.method3387(255);
+                int i_3_ = class348_sub49.readInt((byte) -126);
+                int i_4_ = class348_sub49.readShort(i ^ ~0x3235f8a2);
+                int i_5_ = class348_sub49.readUnsignedByte(255);
                 if (!bool && i_5_ == 1) class252.anInt3241--;
                 else {
                     class252.anIntArray3238[i_1_] = i_3_;

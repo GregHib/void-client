@@ -123,13 +123,13 @@ final class Class287 {
     final void method2183(Class348_Sub49 class348_sub49, int i) {
         this.anInt3690 = class348_sub49.method3351(-1);
         anInt3693++;
-        this.anInt3687 = class348_sub49.method3330(842397944);
-        this.anInterface12Array3688 = new Interface12[class348_sub49.method3387(i ^ 0x557d)];
+        this.anInt3687 = class348_sub49.readShort(842397944);
+        this.anInterface12Array3688 = new Interface12[class348_sub49.readUnsignedByte(i ^ 0x557d)];
         Class223[] class223s = Class19.method285(-99);
         int i_27_ = 0;
         if (i != 21890) method2180((byte) 25);
         for (/**/; this.anInterface12Array3688.length > i_27_; i_27_++)
-            this.anInterface12Array3688[i_27_] = method2182(true, class223s[(class348_sub49.method3387(Class348_Sub21.method2955(i, 21885)))], class348_sub49);
+            this.anInterface12Array3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i, 21885)))], class348_sub49);
     }
 
     static final char method2184(char c, int i) {

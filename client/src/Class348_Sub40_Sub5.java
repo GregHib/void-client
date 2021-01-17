@@ -192,7 +192,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                             do {
                                 do {
                                     if (i_18_ == 0) {
-                                        anInt9129 = anInt9117 = class348_sub49.method3387(i_17_ ^ 0x79d8);
+                                        anInt9129 = anInt9117 = class348_sub49.readUnsignedByte(i_17_ ^ 0x79d8);
                                         break while_145_;
                                     } else if (i_18_ != 1) {
                                         if (i_18_ != 2) {
@@ -208,22 +208,22 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                         } else break;
                                         break while_141_;
                                     }
-                                    anInt9122 = class348_sub49.method3387(i_17_ + -30760);
+                                    anInt9122 = class348_sub49.readUnsignedByte(i_17_ + -30760);
                                     break while_145_;
                                 } while (false);
-                                anInt9125 = class348_sub49.method3330(842397944);
+                                anInt9125 = class348_sub49.readShort(842397944);
                                 break while_145_;
                             } while (false);
-                            anInt9124 = class348_sub49.method3387(i_17_ ^ 0x79d8);
+                            anInt9124 = class348_sub49.readUnsignedByte(i_17_ ^ 0x79d8);
                             break while_145_;
                         } while (false);
-                        anInt9118 = class348_sub49.method3387(i_17_ ^ 0x79d8);
+                        anInt9118 = class348_sub49.readUnsignedByte(i_17_ ^ 0x79d8);
                         break while_145_;
                     } while (false);
-                    anInt9129 = class348_sub49.method3387(255);
+                    anInt9129 = class348_sub49.readUnsignedByte(255);
                     break while_145_;
                 } while (false);
-                anInt9117 = class348_sub49.method3387(255);
+                anInt9117 = class348_sub49.readUnsignedByte(255);
             } while (false);
             anInt9127++;
         }

@@ -96,7 +96,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                             do {
                                 do {
                                     if (i_9_ == 0) {
-                                        anInt9299 = class348_sub49.method3387(255);
+                                        anInt9299 = class348_sub49.readUnsignedByte(255);
                                         return;
                                     } else if (i_9_ != 1) {
                                         if (i_9_ != 2) {
@@ -114,25 +114,25 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                                         } else break;
                                         break while_184_;
                                     }
-                                    anInt9301 = class348_sub49.method3387(255);
+                                    anInt9301 = class348_sub49.readUnsignedByte(255);
                                     return;
                                 } while (false);
-                                anInt9302 = class348_sub49.method3330(842397944);
+                                anInt9302 = class348_sub49.readShort(842397944);
                                 return;
                             } while (false);
-                            anInt9305 = class348_sub49.method3330(842397944);
+                            anInt9305 = class348_sub49.readShort(842397944);
                             return;
                         } while (false);
-                        anInt9288 = class348_sub49.method3330(842397944);
+                        anInt9288 = class348_sub49.readShort(842397944);
                         return;
                     } while (false);
-                    anInt9293 = class348_sub49.method3330(842397944);
+                    anInt9293 = class348_sub49.readShort(842397944);
                     return;
                 } while (false);
-                anInt9294 = class348_sub49.method3330(842397944);
+                anInt9294 = class348_sub49.readShort(842397944);
                 return;
             } while (false);
-            anInt9284 = class348_sub49.method3330(i_8_ + 842366929);
+            anInt9284 = class348_sub49.readShort(i_8_ + 842366929);
         } while (false);
     }
 

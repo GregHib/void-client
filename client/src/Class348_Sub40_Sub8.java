@@ -38,7 +38,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                         do {
                             do {
                                 if (i_1_ == 0) {
-                                    this.aBoolean9160 = class348_sub49.method3387(i_0_ ^ 0x79d8) == 1;
+                                    this.aBoolean9160 = class348_sub49.readUnsignedByte(i_0_ ^ 0x79d8) == 1;
                                     break while_151_;
                                 } else if (i_1_ != 1) {
                                     if (i_1_ != 2) {
@@ -54,7 +54,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                                     } else break;
                                     break while_147_;
                                 }
-                                this.anInt9150 = class348_sub49.method3387(i_0_ ^ 0x79d8);
+                                this.anInt9150 = class348_sub49.readUnsignedByte(i_0_ ^ 0x79d8);
                                 break while_151_;
                             } while (false);
                             this.anInt9149 = class348_sub49.method3372(13638);
@@ -65,16 +65,16 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                             }
                             break while_151_;
                         } while (false);
-                        this.anInt9158 = this.anInt9164 = class348_sub49.method3387(255);
+                        this.anInt9158 = this.anInt9164 = class348_sub49.readUnsignedByte(255);
                         break while_151_;
                     } while (false);
-                    this.anInt9156 = class348_sub49.method3387(255);
+                    this.anInt9156 = class348_sub49.readUnsignedByte(255);
                     break while_151_;
                 } while (false);
-                this.anInt9158 = class348_sub49.method3387(255);
+                this.anInt9158 = class348_sub49.readUnsignedByte(255);
                 break while_151_;
             } while (false);
-            this.anInt9164 = class348_sub49.method3387(255);
+            this.anInt9164 = class348_sub49.readUnsignedByte(255);
         } while (false);
         if (i_0_ != 31015) method3070(20, 127, -38, 124, -110, true, 16);
         anInt9153++;

@@ -70,7 +70,7 @@ final class Class340 {
         }
         Class348_Sub49 class348_sub49 = new Class348_Sub49(aClass348_Sub42_Sub16_Sub1_4220.method3259(i ^ 0x17));
         class348_sub49.anInt7197 = 5;
-        int idxCount = class348_sub49.method3387(i ^ 0xf8);
+        int idxCount = class348_sub49.readUnsignedByte(i ^ 0xf8);
         class348_sub49.anInt7197 += idxCount * 72;
         byte[] is = new byte[(class348_sub49.aByteArray7154.length - class348_sub49.anInt7197)];
         class348_sub49.method3389(2147483647, 0, is.length, is);
@@ -103,8 +103,8 @@ final class Class340 {
             if (i_10_ < 0 || i_10_ >= aClass314_Sub1Array4216.length) throw new RuntimeException();
             if (aClass314_Sub1Array4216[i_10_] != null) return aClass314_Sub1Array4216[i_10_];
             aClass348_Sub49_4215.anInt7197 = 6 + i_10_ * 72;
-            int i_12_ = aClass348_Sub49_4215.method3385((byte) -126);
-            int i_13_ = aClass348_Sub49_4215.method3385((byte) -126);
+            int i_12_ = aClass348_Sub49_4215.readInt((byte) -126);
+            int i_13_ = aClass348_Sub49_4215.readInt((byte) -126);
             byte[] is = new byte[64];
             aClass348_Sub49_4215.method3389(2147483647, 0, 64, is);
             if (i >= -18) method2671(103);

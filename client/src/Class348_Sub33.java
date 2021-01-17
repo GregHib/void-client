@@ -127,24 +127,24 @@ final class Class348_Sub33 extends Class348 {
     Class348_Sub33(int i, byte[] is) {
         this.anInt6958 = i;
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        this.anInt6965 = class348_sub49.method3387(255);
+        this.anInt6965 = class348_sub49.readUnsignedByte(255);
         this.anIntArrayArray6959 = new int[this.anInt6965][];
         this.anIntArray6957 = new int[this.anInt6965];
         this.anIntArray6960 = new int[this.anInt6965];
         this.aBooleanArray6954 = new boolean[this.anInt6965];
         for (int i_8_ = 0; (i_8_ < this.anInt6965); i_8_++) {
-            this.anIntArray6957[i_8_] = class348_sub49.method3387(255);
+            this.anIntArray6957[i_8_] = class348_sub49.readUnsignedByte(255);
             if (this.anIntArray6957[i_8_] == 6) this.anIntArray6957[i_8_] = 2;
         }
         for (int i_9_ = 0; (i_9_ < this.anInt6965); i_9_++)
-            this.aBooleanArray6954[i_9_] = class348_sub49.method3387(255) == 1;
+            this.aBooleanArray6954[i_9_] = class348_sub49.readUnsignedByte(255) == 1;
         for (int i_10_ = 0; (i_10_ < this.anInt6965); i_10_++)
-            this.anIntArray6960[i_10_] = class348_sub49.method3330(842397944);
+            this.anIntArray6960[i_10_] = class348_sub49.readShort(842397944);
         for (int i_11_ = 0; (this.anInt6965 > i_11_); i_11_++)
-            this.anIntArrayArray6959[i_11_] = new int[class348_sub49.method3387(255)];
+            this.anIntArrayArray6959[i_11_] = new int[class348_sub49.readUnsignedByte(255)];
         for (int i_12_ = 0; i_12_ < this.anInt6965; i_12_++) {
             for (int i_13_ = 0; (i_13_ < this.anIntArrayArray6959[i_12_].length); i_13_++)
-                this.anIntArrayArray6959[i_12_][i_13_] = class348_sub49.method3387(255);
+                this.anIntArrayArray6959[i_12_][i_13_] = class348_sub49.readUnsignedByte(255);
         }
     }
 

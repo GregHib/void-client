@@ -153,7 +153,7 @@ final class Class45 {
                 for (int i_34_ = 0; i_34_ < i_31_; i_34_++) {
                     int i_35_ = 0;
                     for (int i_36_ = 0; i_36_ < i_10_; i_36_++) {
-                        i_35_ += class348_sub49.method3385((byte) -126);
+                        i_35_ += class348_sub49.readInt((byte) -126);
                         int i_37_;
                         if (is_11_ == null) i_37_ = i_36_;
                         else i_37_ = is_11_[i_36_];
@@ -171,7 +171,7 @@ final class Class45 {
                 for (int i_40_ = 0; i_40_ < i_31_; i_40_++) {
                     int i_41_ = 0;
                     for (int i_42_ = 0; i_42_ < i_10_; i_42_++) {
-                        i_41_ += class348_sub49.method3385((byte) -126);
+                        i_41_ += class348_sub49.readInt((byte) -126);
                         int i_43_;
                         if (is_11_ != null) i_43_ = is_11_[i_42_];
                         else i_43_ = i_42_;
@@ -193,7 +193,7 @@ final class Class45 {
                 for (int i_19_ = 0; i_19_ < i_17_; i_19_++) {
                     int i_20_ = 0;
                     for (int i_21_ = 0; i_21_ < i_10_; i_21_++) {
-                        i_20_ += class348_sub49.method3385((byte) -126);
+                        i_20_ += class348_sub49.readInt((byte) -126);
                         is_18_[i_21_] += i_20_;
                     }
                 }
@@ -207,7 +207,7 @@ final class Class45 {
                 for (int i_25_ = 0; i_25_ < i_17_; i_25_++) {
                     int i_26_ = 0;
                     for (int i_27_ = 0; i_10_ > i_27_; i_27_++) {
-                        i_26_ += class348_sub49.method3385((byte) -126);
+                        i_26_ += class348_sub49.readInt((byte) -126);
                         Class214.method1577(is_15_, i_24_, is_22_[i_27_], is_18_[i_27_], i_26_);
                         i_24_ += i_26_;
                         is_18_[i_27_] += i_26_;

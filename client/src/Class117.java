@@ -31,14 +31,14 @@ final class Class117 {
         if (i_0_ == 1) this.aChar1778 = Class50_Sub1.method462(class348_sub49.method3388(-91), -128);
         else if (i_0_ == 2) this.aChar1779 = Class50_Sub1.method462(class348_sub49.method3388(-119), -128);
         else if (i_0_ == 3) aString1774 = class348_sub49.method3377((byte) 86);
-        else if (i_0_ == 4) anInt1764 = class348_sub49.method3385((byte) -126);
+        else if (i_0_ == 4) anInt1764 = class348_sub49.readInt((byte) -126);
         else if (i_0_ == 5 || i_0_ == 6) {
-            int i_1_ = class348_sub49.method3330(i ^ ~0x3235ab57);
+            int i_1_ = class348_sub49.readShort(i ^ ~0x3235ab57);
             this.aClass356_1767 = new Class356(Class33.method340(i_1_, (byte) 108));
             for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
-                int i_3_ = class348_sub49.method3385((byte) -126);
+                int i_3_ = class348_sub49.readInt((byte) -126);
                 Class348 class348;
-                if (i_0_ != 5) class348 = new Class348_Sub35(class348_sub49.method3385((byte) -126));
+                if (i_0_ != 5) class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
                 else class348 = new Class348_Sub50(class348_sub49.method3377((byte) -35));
                 this.aClass356_1767.method3483((byte) 21, i_3_, class348);
             }
@@ -80,7 +80,7 @@ final class Class117 {
     final void method1069(int i, Class348_Sub49 class348_sub49) {
         anInt1763++;
         for (; ; ) {
-            int i_5_ = class348_sub49.method3387(i + 255);
+            int i_5_ = class348_sub49.readUnsignedByte(i + 255);
             if (i_5_ == 0) break;
             method1065(class348_sub49, i + -21424, i_5_);
         }

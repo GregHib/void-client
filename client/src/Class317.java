@@ -55,15 +55,15 @@ final class Class317 {
     private Class317(Class348_Sub49 class348_sub49) {
         aClass80Array3969 = new Class80[10];
         for (int i = 0; i < 10; i++) {
-            int i_10_ = class348_sub49.method3387(255);
+            int i_10_ = class348_sub49.readUnsignedByte(255);
             if (i_10_ != 0) {
                 class348_sub49.anInt7197--;
                 aClass80Array3969[i] = new Class80();
                 aClass80Array3969[i].method807(class348_sub49);
             }
         }
-        anInt3967 = class348_sub49.method3330(842397944);
-        anInt3968 = class348_sub49.method3330(842397944);
+        anInt3967 = class348_sub49.readShort(842397944);
+        anInt3968 = class348_sub49.readShort(842397944);
     }
 
     private Class317() {

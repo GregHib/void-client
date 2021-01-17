@@ -314,15 +314,15 @@ final class Class237_Sub1 extends Class237 {
                     int i_41_ = -112 / ((-71 - i_40_) / 38);
                     if (is != null) is[0] = -1;
                     while (class348_sub49.anInt7197 < (class348_sub49.aByteArray7154).length) {
-                        int i_42_ = class348_sub49.method3387(255);
+                        int i_42_ = class348_sub49.readUnsignedByte(255);
                         if (i_42_ == 0) class190 = new Class190(class348_sub49);
                         else if (i_42_ == 1) {
-                            int i_58_ = class348_sub49.method3387(255);
+                            int i_58_ = class348_sub49.readUnsignedByte(255);
                             if (i_58_ > 0) {
                                 for (int i_59_ = 0; i_58_ > i_59_; i_59_++) {
                                     Class211 class211 = new Class211(var_ha, class348_sub49, 2);
                                     if (class211.anInt2734 == 31) {
-                                        Class253 class253 = (Class348_Sub1.aClass185_6559.method1391((byte) -1, class348_sub49.method3330(842397944)));
+                                        Class253 class253 = (Class348_Sub1.aClass185_6559.method1391((byte) -1, class348_sub49.readShort(842397944)));
                                         class211.method1539(class253.anInt3251, (byte) 115, class253.anInt3249, class253.anInt3245, class253.anInt3244);
                                     }
                                     if (var_ha.method3704() > 0) {
@@ -410,11 +410,11 @@ final class Class237_Sub1 extends Class237 {
                                 bool = true;
                             } else throw new IllegalStateException("");
                         } else if (is != null) {
-                            is[0] = class348_sub49.method3330(842397944);
+                            is[0] = class348_sub49.readShort(842397944);
                             is[1] = class348_sub49.method3372(13638);
                             is[2] = class348_sub49.method3372(13638);
                             is[3] = class348_sub49.method3372(13638);
-                            is[4] = class348_sub49.method3330(842397944);
+                            is[4] = class348_sub49.readShort(842397944);
                         } else class348_sub49.anInt7197 += 10;
                     }
                     if (class190 != null) {
@@ -464,7 +464,7 @@ final class Class237_Sub1 extends Class237 {
                     int i_84_ = i_82_ & 0x3f;
                     int i_85_ = i_82_ >> -2140633114 & 0x3f;
                     int i_86_ = i_82_ >> -1732605940;
-                    int i_87_ = class348_sub49.method3387(255);
+                    int i_87_ = class348_sub49.readUnsignedByte(255);
                     int i_88_ = i_87_ >> -518193950;
                     int i_89_ = i_87_ & 0x3;
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
@@ -567,7 +567,7 @@ final class Class237_Sub1 extends Class237 {
                         int i_105_ = 0x3f & i_103_;
                         int i_106_ = i_103_ >> 664943686 & 0x3f;
                         int i_107_ = i_103_ >> -106385364;
-                        int i_108_ = class348_sub49.method3387(255);
+                        int i_108_ = class348_sub49.readUnsignedByte(255);
                         int i_109_ = i_108_ >> -126132382;
                         int i_110_ = 0x3 & i_108_;
                         int i_111_ = i_99_ + i_106_;
@@ -604,15 +604,15 @@ final class Class237_Sub1 extends Class237 {
                     int i_123_ = 8 * (0x7 & i_116_);
                     int i_124_ = (i & 0x7) * 8;
                     while ((class348_sub49.aByteArray7154).length > class348_sub49.anInt7197) {
-                        int i_125_ = class348_sub49.method3387(255);
+                        int i_125_ = class348_sub49.readUnsignedByte(255);
                         if (i_125_ != 0) {
                             if (i_125_ == 1) {
-                                int i_126_ = class348_sub49.method3387(255);
+                                int i_126_ = class348_sub49.readUnsignedByte(255);
                                 if (i_126_ > 0) {
                                     for (int i_127_ = 0; (i_126_ > i_127_); i_127_++) {
                                         Class211 class211 = new Class211(var_ha, class348_sub49, 2);
                                         if (class211.anInt2734 == 31) {
-                                            Class253 class253 = (Class348_Sub1.aClass185_6559.method1391((byte) 111, (class348_sub49.method3330(842397944))));
+                                            Class253 class253 = (Class348_Sub1.aClass185_6559.method1391((byte) 111, (class348_sub49.readShort(842397944))));
                                             class211.method1539((class253.anInt3251), (byte) 124, (class253.anInt3249), (class253.anInt3245), (class253.anInt3244));
                                         }
                                         if (var_ha.method3704() > 0) {
@@ -637,11 +637,11 @@ final class Class237_Sub1 extends Class237 {
                                 class190.method1423(8, class348_sub49);
                             } else if (i_125_ == 128) {
                                 if (is != null) {
-                                    is[0] = class348_sub49.method3330(842397944);
+                                    is[0] = class348_sub49.readShort(842397944);
                                     is[1] = class348_sub49.method3372(13638);
                                     is[2] = class348_sub49.method3372(13638);
                                     is[3] = class348_sub49.method3372(13638);
-                                    is[4] = class348_sub49.method3330(842397944);
+                                    is[4] = class348_sub49.readShort(842397944);
                                 } else class348_sub49.anInt7197 += 10;
                             } else if (i_125_ == 129) {
                                 if (this.aByteArrayArrayArray3104 == null) this.aByteArrayArrayArray3104 = new byte[4][][];

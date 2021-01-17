@@ -46,19 +46,19 @@ final class Class291 {
     private final void method2200(byte i, byte[] is) {
         anInt3731++;
         Class348_Sub49 class348_sub49 = new Class348_Sub49(Class348_Sub41.method3158(is, -105));
-        int i_2_ = class348_sub49.method3387(255);
+        int i_2_ = class348_sub49.readUnsignedByte(255);
         if (i_2_ < 5 || i_2_ > 6) throw new RuntimeException();
         if (i_2_ < 6) this.anInt3732 = 0;
-        else this.anInt3732 = class348_sub49.method3385((byte) -126);
-        int i_3_ = class348_sub49.method3387(255);
+        else this.anInt3732 = class348_sub49.readInt((byte) -126);
+        int i_3_ = class348_sub49.readUnsignedByte(255);
         boolean bool = (i_3_ & 0x1) != 0;
         boolean bool_4_ = (i_3_ & 0x2) != 0;
-        this.anInt3727 = class348_sub49.method3330(842397944);
+        this.anInt3727 = class348_sub49.readShort(842397944);
         int i_5_ = 0;
         this.anIntArray3738 = new int[this.anInt3727];
         int i_6_ = -1;
         for (int i_7_ = 0; i_7_ < this.anInt3727; i_7_++) {
-            this.anIntArray3738[i_7_] = i_5_ += class348_sub49.method3330(842397944);
+            this.anIntArray3738[i_7_] = i_5_ += class348_sub49.readShort(842397944);
             if (i_6_ < this.anIntArray3738[i_7_]) i_6_ = this.anIntArray3738[i_7_];
         }
         this.anInt3734 = i_6_ - -1;
@@ -73,12 +73,12 @@ final class Class291 {
             for (int i_8_ = 0; i_8_ < this.anInt3734; i_8_++)
                 this.anIntArray3733[i_8_] = -1;
             for (int i_9_ = 0; (this.anInt3727 > i_9_); i_9_++)
-                this.anIntArray3733[(this.anIntArray3738[i_9_])] = class348_sub49.method3385((byte) -126);
+                this.anIntArray3733[(this.anIntArray3738[i_9_])] = class348_sub49.readInt((byte) -126);
             this.aClass316_3723 = new Class316(this.anIntArray3733);
         }
         if (i >= -83) method2200((byte) 42, null);
         for (int i_10_ = 0; i_10_ < this.anInt3727; i_10_++)
-            this.anIntArray3729[(this.anIntArray3738[i_10_])] = class348_sub49.method3385((byte) -126);
+            this.anIntArray3729[(this.anIntArray3738[i_10_])] = class348_sub49.readInt((byte) -126);
         if (bool_4_) {
             for (int i_11_ = 0; i_11_ < this.anInt3727; i_11_++) {
                 byte[] is_12_ = new byte[64];
@@ -87,9 +87,9 @@ final class Class291 {
             }
         }
         for (int i_13_ = 0; i_13_ < this.anInt3727; i_13_++)
-            this.anIntArray3722[(this.anIntArray3738[i_13_])] = class348_sub49.method3385((byte) -126);
+            this.anIntArray3722[(this.anIntArray3738[i_13_])] = class348_sub49.readInt((byte) -126);
         for (int i_14_ = 0; this.anInt3727 > i_14_; i_14_++)
-            this.anIntArray3725[(this.anIntArray3738[i_14_])] = class348_sub49.method3330(842397944);
+            this.anIntArray3725[(this.anIntArray3738[i_14_])] = class348_sub49.readShort(842397944);
         for (int i_15_ = 0; this.anInt3727 > i_15_; i_15_++) {
             int i_16_ = this.anIntArray3738[i_15_];
             i_5_ = 0;
@@ -97,7 +97,7 @@ final class Class291 {
             int i_18_ = -1;
             this.anIntArrayArray3721[i_16_] = new int[i_17_];
             for (int i_19_ = 0; i_17_ > i_19_; i_19_++) {
-                int i_20_ = (this.anIntArrayArray3721[i_16_][i_19_] = i_5_ += class348_sub49.method3330(842397944));
+                int i_20_ = (this.anIntArrayArray3721[i_16_][i_19_] = i_5_ += class348_sub49.readShort(842397944));
                 if (i_18_ < i_20_) i_18_ = i_20_;
             }
             this.anIntArray3724[i_16_] = i_18_ + 1;
@@ -116,7 +116,7 @@ final class Class291 {
                     int i_26_;
                     if (this.anIntArrayArray3721[i_22_] != null) i_26_ = (this.anIntArrayArray3721[i_22_][i_25_]);
                     else i_26_ = i_25_;
-                    this.anIntArrayArray3735[i_22_][i_26_] = class348_sub49.method3385((byte) -126);
+                    this.anIntArrayArray3735[i_22_][i_26_] = class348_sub49.readInt((byte) -126);
                 }
                 this.aClass316Array3728[i_22_] = new Class316(this.anIntArrayArray3735[i_22_]);
             }

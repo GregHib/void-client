@@ -102,7 +102,7 @@ public final class client extends Applet_Sub1 {
                     Class348_Sub49 class348_sub49 = new Class348_Sub49(class267s.length * 4);
                     Class193.aClass202_2589.method1474(class348_sub49.aByteArray7154, 0, (byte) -72, (class348_sub49.aByteArray7154).length);
                     for (int i_1_ = 0; i_1_ < class267s.length; i_1_++)
-                        class267s[i_1_].method2030(1, class348_sub49.method3385((byte) -126));
+                        class267s[i_1_].method2030(1, class348_sub49.readInt((byte) -126));
                     Class348_Sub4.aClass248_6601.method1903(false, !bool, Class193.aClass202_2589);
                     Class47.anInt846 = 0;
                     aa.aClass144_114 = null;

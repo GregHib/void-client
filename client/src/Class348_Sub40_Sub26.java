@@ -60,14 +60,10 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
     static final void method3120(int i) {
         Class312.anInt3931 = 0;
         anInt9345++;
-        int i_15_ = Class299.aClass348_Sub49_Sub2_3813.method3342((byte) -118);
-        int i_16_ = Class299.aClass348_Sub49_Sub2_3813.readLEShort128(-117);
-        int i_17_ = Class299.aClass348_Sub49_Sub2_3813.readLEShort(false);
-        boolean bool = (Class299.aClass348_Sub49_Sub2_3813.method3329((byte) 21) == 1);
-
-        System.out.println("i_15_: " + i_15_);
-        System.out.println("i_16_: " + i_16_);
-        System.out.println("i_17_: " + i_17_);
+        int i_15_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -118);
+        int i_16_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-117);
+        int i_17_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
+        boolean bool = (Class299.aClass348_Sub49_Sub2_3813.readShortInverse((byte) 21) == 1);
 
         Class322.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(111, i_15_);
@@ -75,7 +71,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         Class239_Sub6.anIntArrayArray5894 = new int[i_18_][4];
         for (int i_19_ = 0; i_19_ < i_18_; i_19_++) {
             for (int i_20_ = 0; i_20_ < 4; i_20_++)
-                Class239_Sub6.anIntArrayArray5894[i_19_][i_20_] = Class299.aClass348_Sub49_Sub2_3813.method3385((byte) -126);
+                Class239_Sub6.anIntArrayArray5894[i_19_][i_20_] = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
         }
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_18_][];
         Class129.aByteArrayArray1887 = new byte[i_18_][];
@@ -111,16 +107,16 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
                 do {
                     do {
                         if (i_24_ == 0) {
-                            anInt9344 = class348_sub49.method3330(i_23_ + 842366929);
+                            anInt9344 = class348_sub49.readShort(i_23_ + 842366929);
                             break while_201_;
                         } else if (i_24_ != 1) {
                             if (i_24_ == 2) break;
                             break while_201_;
                         }
-                        anInt9354 = class348_sub49.method3330(842397944);
+                        anInt9354 = class348_sub49.readShort(842397944);
                         break while_201_;
                     } while (false);
-                    anInt9347 = class348_sub49.method3330(842397944);
+                    anInt9347 = class348_sub49.readShort(842397944);
                 } while (false);
                 anInt9350++;
                 if (i_23_ == 31015) break;

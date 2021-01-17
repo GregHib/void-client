@@ -80,26 +80,26 @@ final class Class174 {
 
     private final void method1335(Class348_Sub49 class348_sub49, int i, byte i_8_) {
         anInt2287++;
-        if (i == 1) anInt2302 = class348_sub49.method3330(842397944);
-        else if (i == 2) class348_sub49.method3387(255);
+        if (i == 1) anInt2302 = class348_sub49.readShort(842397944);
+        else if (i == 2) class348_sub49.readUnsignedByte(255);
         else if (i == 3) {
-            this.anInt2291 = class348_sub49.method3385((byte) -126);
-            this.anInt2290 = class348_sub49.method3385((byte) -126);
-            this.anInt2294 = class348_sub49.method3385((byte) -126);
+            this.anInt2291 = class348_sub49.readInt((byte) -126);
+            this.anInt2290 = class348_sub49.readInt((byte) -126);
+            this.anInt2294 = class348_sub49.readInt((byte) -126);
         } else if (i == 4) {
-            this.anInt2289 = class348_sub49.method3387(255);
-            this.anInt2304 = class348_sub49.method3385((byte) -126);
+            this.anInt2289 = class348_sub49.readUnsignedByte(255);
+            this.anInt2304 = class348_sub49.readInt((byte) -126);
         } else if (i != 6) {
             if (i == 8) this.anInt2297 = 1;
             else if (i == 9) this.anInt2292 = 1;
             else if (i == 10) aBoolean2308 = true;
-        } else this.anInt2296 = class348_sub49.method3387(255);
+        } else this.anInt2296 = class348_sub49.readUnsignedByte(255);
         if (i_8_ >= -124) this.aLong2301 = 65L;
     }
 
     final void method1336(int i, Class348_Sub49 class348_sub49) {
         for (; ; ) {
-            int i_9_ = class348_sub49.method3387(255);
+            int i_9_ = class348_sub49.readUnsignedByte(255);
             if (i_9_ == 0) break;
             method1335(class348_sub49, i_9_, (byte) -128);
         }

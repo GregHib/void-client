@@ -121,16 +121,16 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     static final Class369 method2834(byte i, Class348_Sub49 class348_sub49) {
         anInt8876++;
-        Class221 class221 = Class158.method1248(15)[class348_sub49.method3387(255)];
+        Class221 class221 = Class158.method1248(15)[class348_sub49.readUnsignedByte(255)];
         if (i > -113) aDouble8869 = -1.5911312034627048;
-        Class341 class341 = Class62.method596(20000)[class348_sub49.method3387(255)];
+        Class341 class341 = Class62.method596(20000)[class348_sub49.readUnsignedByte(255)];
         int i_7_ = class348_sub49.method3372(13638);
         int i_8_ = class348_sub49.method3372(13638);
-        int i_9_ = class348_sub49.method3330(842397944);
-        int i_10_ = class348_sub49.method3330(842397944);
+        int i_9_ = class348_sub49.readShort(842397944);
+        int i_10_ = class348_sub49.readShort(842397944);
         int i_11_ = class348_sub49.method3372(13638);
-        int i_12_ = class348_sub49.method3385((byte) -126);
-        int i_13_ = class348_sub49.method3385((byte) -126);
+        int i_12_ = class348_sub49.readInt((byte) -126);
+        int i_13_ = class348_sub49.readInt((byte) -126);
         return new Class369(class221, class341, i_7_, i_8_, i_9_, i_10_, i_11_, i_12_, i_13_);
     }
 

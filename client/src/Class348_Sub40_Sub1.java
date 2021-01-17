@@ -37,7 +37,7 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                 do {
                     do {
                         if (i_1_ == 0) {
-                            anInt9094 = class348_sub49.method3330(i_0_ + 842366929);
+                            anInt9094 = class348_sub49.readShort(i_0_ + 842366929);
                             return;
                         } else if (i_1_ != 1) {
                             if (i_1_ != 2) {
@@ -48,13 +48,13 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                             } else break;
                             break while_129_;
                         }
-                        anInt9084 = class348_sub49.method3330(842397944);
+                        anInt9084 = class348_sub49.readShort(842397944);
                         return;
                     } while (false);
-                    anInt9091 = class348_sub49.method3330(842397944);
+                    anInt9091 = class348_sub49.readShort(842397944);
                     return;
                 } while (false);
-                anInt9092 = class348_sub49.method3330(i_0_ + 842366929);
+                anInt9092 = class348_sub49.readShort(i_0_ + 842366929);
                 return;
             } while (false);
             int i_2_ = class348_sub49.method3351(-1);

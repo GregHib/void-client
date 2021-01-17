@@ -48,10 +48,10 @@ final class Class348_Sub40_Sub6 extends Class348_Sub40 {
         int i_12_ = i;
         do {
             if (i_12_ == 0) {
-                anInt9133 = class348_sub49.method3330(842397944) << -1225450108;
+                anInt9133 = class348_sub49.readShort(842397944) << -1225450108;
                 break;
             } else if (i_12_ != 1) break;
-            this.aBoolean7045 = class348_sub49.method3387(255) == 1;
+            this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1;
         } while (false);
         if (i_11_ != 31015) method3062(false);
         anInt9138++;

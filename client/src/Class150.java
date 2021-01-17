@@ -61,10 +61,10 @@ final class Class150 {
         anInt2053++;
         Class348_Sub49 class348_sub49 = new Class348_Sub49(class45.method410(-1860, i_4_, i));
         if (bool != true) method1208(102);
-        Class348_Sub42_Sub14 class348_sub42_sub14 = new Class348_Sub42_Sub14(i, class348_sub49.method3377((byte) 88), class348_sub49.method3377((byte) 120), class348_sub49.method3385((byte) -126), class348_sub49.method3385((byte) -126), class348_sub49.method3387(255) == 1, class348_sub49.method3387(255), class348_sub49.method3387(255));
-        int i_5_ = class348_sub49.method3387(255);
+        Class348_Sub42_Sub14 class348_sub42_sub14 = new Class348_Sub42_Sub14(i, class348_sub49.method3377((byte) 88), class348_sub49.method3377((byte) 120), class348_sub49.readInt((byte) -126), class348_sub49.readInt((byte) -126), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255));
+        int i_5_ = class348_sub49.readUnsignedByte(255);
         for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
-            class348_sub42_sub14.aClass262_9629.method1999(new Class348_Sub18(class348_sub49.method3387(255), class348_sub49.method3330(842397944), class348_sub49.method3330(842397944), class348_sub49.method3330(842397944), class348_sub49.method3330(842397944), class348_sub49.method3330(842397944), class348_sub49.method3330(842397944), class348_sub49.method3330(842397944), class348_sub49.method3330(842397944)), -20180);
+            class348_sub42_sub14.aClass262_9629.method1999(new Class348_Sub18(class348_sub49.readUnsignedByte(255), class348_sub49.readShort(842397944), class348_sub49.readShort(842397944), class348_sub49.readShort(842397944), class348_sub49.readShort(842397944), class348_sub49.readShort(842397944), class348_sub49.readShort(842397944), class348_sub49.readShort(842397944), class348_sub49.readShort(842397944)), -20180);
         class348_sub42_sub14.method3240((byte) 37);
         return class348_sub42_sub14;
     }

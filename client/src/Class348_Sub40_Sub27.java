@@ -80,6 +80,6 @@ final class Class348_Sub40_Sub27 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_22_) {
         anInt9358++;
         if (i_22_ != 31015) anInt9360 = -16;
-        if (i == 0) this.aBoolean7045 = class348_sub49.method3387(255) == 1;
+        if (i == 0) this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1;
     }
 }

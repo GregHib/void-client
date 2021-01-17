@@ -19,10 +19,10 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
         int i_1_ = i;
         do {
             if (i_1_ == 0) {
-                anInt9226 = class348_sub49.method3387(255);
+                anInt9226 = class348_sub49.readUnsignedByte(255);
                 break;
             } else if (i_1_ != 1) break;
-            this.aBoolean7045 = class348_sub49.method3387(255) == 1;
+            this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1;
         } while (false);
         anInt9227++;
     }

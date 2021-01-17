@@ -71,13 +71,13 @@ final class Class348_Sub46 extends Class348 {
     static final Class369_Sub3 method3322(int i, Class348_Sub49 class348_sub49) {
         anInt7109++;
         Class369 class369 = Class348_Sub16_Sub2.method2834((byte) -125, class348_sub49);
-        int i_4_ = class348_sub49.method3330(i ^ 0x3235f8f8);
-        int i_5_ = class348_sub49.method3330(842397944);
+        int i_4_ = class348_sub49.readShort(i ^ 0x3235f8f8);
+        int i_5_ = class348_sub49.readShort(842397944);
         if (i != 0) aClass114_7113 = null;
-        int i_6_ = class348_sub49.method3330(842397944);
-        int i_7_ = class348_sub49.method3330(i + 842397944);
-        int i_8_ = class348_sub49.method3330(842397944);
-        int i_9_ = class348_sub49.method3330(842397944);
+        int i_6_ = class348_sub49.readShort(842397944);
+        int i_7_ = class348_sub49.readShort(i + 842397944);
+        int i_8_ = class348_sub49.readShort(842397944);
+        int i_9_ = class348_sub49.readShort(842397944);
         return new Class369_Sub3(class369.aClass221_4968, class369.aClass341_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_);
     }
 

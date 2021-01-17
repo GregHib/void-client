@@ -34,17 +34,17 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
         if (i_2_ == -86) {
             anInt9489++;
             if (i == 249) {
-                int i_3_ = class348_sub49.method3387(255);
+                int i_3_ = class348_sub49.readUnsignedByte(255);
                 if (aClass356_9494 == null) {
                     int i_4_ = Class33.method340(i_3_, (byte) 108);
                     aClass356_9494 = new Class356(i_4_);
                 }
                 for (int i_5_ = 0; i_5_ < i_3_; i_5_++) {
-                    boolean bool = class348_sub49.method3387(i_2_ + 341) == 1;
+                    boolean bool = class348_sub49.readUnsignedByte(i_2_ + 341) == 1;
                     int i_6_ = class348_sub49.method3351(-1);
                     Class348 class348;
                     if (bool) class348 = new Class348_Sub50(class348_sub49.method3377((byte) -39));
-                    else class348 = new Class348_Sub35(class348_sub49.method3385((byte) -126));
+                    else class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
                     aClass356_9494.method3483((byte) 29, i_6_, class348);
                 }
             }
@@ -53,7 +53,7 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
 
     final void method3168(Class348_Sub49 class348_sub49, byte i) {
         for (; ; ) {
-            int i_7_ = class348_sub49.method3387(255);
+            int i_7_ = class348_sub49.readUnsignedByte(255);
             if (i_7_ == 0) break;
             method3167(i_7_, class348_sub49, (byte) -86);
         }

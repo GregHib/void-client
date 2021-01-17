@@ -17,11 +17,11 @@ final class Class348_Sub40_Sub14 extends Class348_Sub40 {
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         if (i == 0) {
-            anInt9211 = class348_sub49.method3387(i_0_ + -30760);
-            anIntArrayArray9210 = new int[class348_sub49.method3387(255)][2];
+            anInt9211 = class348_sub49.readUnsignedByte(i_0_ + -30760);
+            anIntArrayArray9210 = new int[class348_sub49.readUnsignedByte(255)][2];
             for (int i_1_ = 0; (i_1_ < anIntArrayArray9210.length); i_1_++) {
-                anIntArrayArray9210[i_1_][0] = class348_sub49.method3330(842397944);
-                anIntArrayArray9210[i_1_][1] = class348_sub49.method3330(842397944);
+                anIntArrayArray9210[i_1_][0] = class348_sub49.readShort(842397944);
+                anIntArrayArray9210[i_1_][1] = class348_sub49.readShort(842397944);
             }
         }
         if (i_0_ == 31015) anInt9213++;

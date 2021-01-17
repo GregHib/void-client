@@ -24,7 +24,7 @@ final class Class52 implements Interface12 {
     static final Class43 method490(byte i, Class348_Sub49 class348_sub49) {
         anInt4897++;
         Class43 class43 = new Class43();
-        class43.anInt615 = class348_sub49.method3330(842397944);
+        class43.anInt615 = class348_sub49.readShort(842397944);
         class43.aClass348_Sub42_Sub10_614 = Class239_Sub6.aClass355_5900.method3471(class43.anInt615, (byte) -90);
         int i_0_ = -91 / ((9 - i) / 54);
         return class43;

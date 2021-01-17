@@ -55,7 +55,7 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
         anInt9063++;
         if (this.anInt6868 <= 0 || "SUB".equals(aString9057)) {
             Class348_Sub49 class348_sub49 = new Class348_Sub49(oggpacket.getData());
-            int i_2_ = class348_sub49.method3387(255);
+            int i_2_ = class348_sub49.readUnsignedByte(255);
             if (this.anInt6868 <= 8) {
                 if ((i_2_ | 0x80) == 0) throw new IllegalStateException();
                 if (this.anInt6868 == 0) {

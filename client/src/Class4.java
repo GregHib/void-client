@@ -30,9 +30,9 @@ final class Class4 {
         try {
             Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
             Class348_Sub49 class348_sub49_0_ = new Class348_Sub49(is);
-            class348_sub49.method3387(255);
+            class348_sub49.readUnsignedByte(255);
             class348_sub49.anInt7197 += 2;
-            int i = class348_sub49.method3387(255);//byte
+            int i = class348_sub49.readUnsignedByte(255);//byte
             int i_1_ = 0;
             int i_2_ = -1;
             int i_3_ = -1;
@@ -40,7 +40,7 @@ final class Class4 {
             for (int i_4_ = 0; i_4_ < i; i_4_++) {
                 int i_5_ = (this.aClass348_Sub33_134.anIntArray6957[i_4_]);
                 if (i_5_ == 0) i_2_ = i_4_;
-                int i_6_ = class348_sub49.method3387(255);//byte
+                int i_6_ = class348_sub49.readUnsignedByte(255);//byte
                 if (i_6_ > 0) {
                     if (i_5_ == 0) i_3_ = i_4_;
                     aShortArray141[i_1_] = (short) i_4_;

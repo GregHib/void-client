@@ -154,12 +154,12 @@ class Class75 {
     }
 
     private static final void method750(ha var_ha, Class348_Sub49 class348_sub49, int i, int i_21_, int i_22_, int i_23_, int[] is, int[] is_24_) {
-        int i_25_ = class348_sub49.method3387(255);
+        int i_25_ = class348_sub49.readUnsignedByte(255);
         if ((i_25_ & 0x1) == 0) {
             boolean bool = (i_25_ & 0x2) == 0;
             int i_26_ = i_25_ >> 2 & 0x3f;
             if (i_26_ != 62) {
-                if (i_26_ == 63) i_26_ = class348_sub49.method3387(255);
+                if (i_26_ == 63) i_26_ = class348_sub49.readUnsignedByte(255);
                 else if (bool) i_26_ = is[i_26_];
                 else i_26_ = is_24_[i_26_];
                 if (bool) {
@@ -176,28 +176,28 @@ class Class75 {
             boolean bool = (i_25_ & 0x8) != 0;
             boolean bool_28_ = (i_25_ & 0x10) != 0;
             for (int i_29_ = 0; i_29_ < i_27_; i_29_++) {
-                int i_30_ = class348_sub49.method3387(255);
+                int i_30_ = class348_sub49.readUnsignedByte(255);
                 int i_31_ = 0;
                 int i_32_ = 0;
                 if (bool) {
-                    i_31_ = class348_sub49.method3387(255);
-                    i_32_ = class348_sub49.method3387(255);
+                    i_31_ = class348_sub49.readUnsignedByte(255);
+                    i_32_ = class348_sub49.readUnsignedByte(255);
                 }
                 int i_33_ = 0;
-                if (bool_28_) i_33_ = class348_sub49.method3387(255);
+                if (bool_28_) i_33_ = class348_sub49.readUnsignedByte(255);
                 if (i_29_ == 0) {
                     aByteArray1273[i_22_ + i_23_ * anInt1259] = (byte) i_30_;
                     aByteArray1256[i_22_ + i_23_ * anInt1259] = (byte) i_31_;
                     aByteArray1275[i_22_ + i_23_ * anInt1259] = (byte) i_32_;
                     if (i_33_ == 1) {
-                        aShortArray1261[i_22_ + i_23_ * anInt1259] = (short) (class348_sub49.method3330(842397944) + 1);
+                        aShortArray1261[i_22_ + i_23_ * anInt1259] = (short) (class348_sub49.readShort(842397944) + 1);
                         aByteArray1258[i_22_ + i_23_ * anInt1259] = class348_sub49.method3388(-122);
                     } else if (i_33_ > 1) {
                         aShortArray1261[i_22_ + i_23_ * anInt1259] = (short) -1;
                         short[] is_34_ = new short[i_33_];
                         byte[] is_35_ = new byte[i_33_];
                         for (int i_36_ = 0; i_36_ < i_33_; i_36_++) {
-                            is_34_[i_36_] = (short) class348_sub49.method3330(842397944);
+                            is_34_[i_36_] = (short) class348_sub49.readShort(842397944);
                             is_35_[i_36_] = class348_sub49.method3388(-120);
                         }
                         aClass356_1271.method3483((byte) 33, i_22_ << 16 | i_23_, new Class348_Sub39(is_34_, is_35_));
@@ -209,7 +209,7 @@ class Class75 {
                         is_37_ = new short[i_33_];
                         is_38_ = new byte[i_33_];
                         for (int i_39_ = 0; i_39_ < i_33_; i_39_++) {
-                            is_37_[i_39_] = (short) class348_sub49.method3330(842397944);
+                            is_37_[i_39_] = (short) class348_sub49.readShort(842397944);
                             is_38_[i_39_] = class348_sub49.method3388(-92);
                         }
                     }
@@ -395,18 +395,18 @@ class Class75 {
 
     static final void method756(ha var_ha, int i, int i_75_) {
         Class348_Sub49 class348_sub49 = (new Class348_Sub49(aClass45_1237.method391((aClass348_Sub42_Sub14_1243.aString9625), "area", -29832)));
-        int i_76_ = class348_sub49.method3387(255);
+        int i_76_ = class348_sub49.readUnsignedByte(255);
         int[] is = new int[i_76_];
         for (int i_77_ = 0; i_77_ < i_76_; i_77_++)
-            is[i_77_] = class348_sub49.method3387(255);
-        int i_78_ = class348_sub49.method3387(255);
+            is[i_77_] = class348_sub49.readUnsignedByte(255);
+        int i_78_ = class348_sub49.readUnsignedByte(255);
         int[] is_79_ = new int[i_78_];
         for (int i_80_ = 0; i_80_ < i_78_; i_80_++)
-            is_79_[i_80_] = class348_sub49.method3387(255);
+            is_79_[i_80_] = class348_sub49.readUnsignedByte(255);
         while (class348_sub49.anInt7197 < class348_sub49.aByteArray7154.length) {
-            if (class348_sub49.method3387(255) == 0) {
-                int i_81_ = class348_sub49.method3387(255);
-                int i_82_ = class348_sub49.method3387(255);
+            if (class348_sub49.readUnsignedByte(255) == 0) {
+                int i_81_ = class348_sub49.readUnsignedByte(255);
+                int i_82_ = class348_sub49.readUnsignedByte(255);
                 for (int i_83_ = 0; i_83_ < 64; i_83_++) {
                     for (int i_84_ = 0; i_84_ < 64; i_84_++) {
                         int i_85_ = i_81_ * 64 + i_83_ - anInt1266;
@@ -415,10 +415,10 @@ class Class75 {
                     }
                 }
             } else {
-                int i_87_ = class348_sub49.method3387(255);
-                int i_88_ = class348_sub49.method3387(255);
-                int i_89_ = class348_sub49.method3387(255);
-                int i_90_ = class348_sub49.method3387(255);
+                int i_87_ = class348_sub49.readUnsignedByte(255);
+                int i_88_ = class348_sub49.readUnsignedByte(255);
+                int i_89_ = class348_sub49.readUnsignedByte(255);
+                int i_90_ = class348_sub49.readUnsignedByte(255);
                 for (int i_91_ = 0; i_91_ < 8; i_91_++) {
                     for (int i_92_ = 0; i_92_ < 8; i_92_++) {
                         int i_93_ = i_87_ * 64 + i_89_ * 8 + i_91_ - anInt1266;

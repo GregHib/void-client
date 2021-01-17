@@ -78,8 +78,8 @@ final class Class348_Sub2 extends Class348 {
 
     private Class348_Sub2(Class348_Sub49 class348_sub49) {
         class348_sub49.anInt7197 = class348_sub49.aByteArray7154.length - 3;
-        int i = class348_sub49.method3387(255);
-        int i_16_ = class348_sub49.method3330(842397944);
+        int i = class348_sub49.readUnsignedByte(255);
+        int i_16_ = class348_sub49.readShort(842397944);
         int i_17_ = 14 + i * 10;
         class348_sub49.anInt7197 = 0;
         int i_18_ = 0;
@@ -94,7 +94,7 @@ final class Class348_Sub2 extends Class348 {
         for (int i_26_ = 0; i_26_ < i; i_26_++) {
             int i_27_ = -1;
             for (; ; ) {
-                int i_28_ = class348_sub49.method3387(255);
+                int i_28_ = class348_sub49.readUnsignedByte(255);
                 if (i_28_ != i_27_) i_17_++;
                 i_27_ = i_28_ & 0xf;
                 if (i_28_ == 7) continue while_121_;
@@ -135,7 +135,7 @@ final class Class348_Sub2 extends Class348 {
         int i_44_ = 0;
         int i_45_ = 0;
         for (int i_46_ = 0; i_46_ < i_19_; i_46_++) {
-            i_45_ = i_45_ + class348_sub49.method3387(255) & 0x7f;
+            i_45_ = i_45_ + class348_sub49.readUnsignedByte(255) & 0x7f;
             if (i_45_ == 0 || i_45_ == 32) i_25_++;
             else if (i_45_ == 1) i_33_++;
             else if (i_45_ == 33) i_34_++;

@@ -79,13 +79,13 @@ class Class348_Sub49 extends Class348 {
     static int anInt7208;
     static int anInt7209;
 
-    final int method3329(byte i) {
+    final int readShortInverse(byte i) {
         anInt7163++;
         if (i != 21) return -10;
         return (-(this.aByteArray7154[this.anInt7197++]) & 0xff);
     }
 
-    final int method3330(int i) {
+    final int readShort(int i) {
         if (i != 842397944) return 111;
         this.anInt7197 += 2;
         anInt7186++;
@@ -183,7 +183,7 @@ class Class348_Sub49 extends Class348 {
         return (byte) (-128 + (this.aByteArray7154[this.anInt7197++]));
     }
 
-    final int method3342(byte i) {
+    final int readUnsignedByteSubtract(byte i) {
         anInt7174++;
         int i_16_ = 27 / ((-33 - i) / 51);
         return (-(this.aByteArray7154[this.anInt7197++]) + 128 & 0xff);
@@ -247,8 +247,8 @@ class Class348_Sub49 extends Class348 {
         this.anInt7197 = i;
         int i_27_ = (-i + i_25_) / 8;
         for (int i_28_ = 0; i_27_ > i_28_; i_28_++) {
-            int i_29_ = method3385((byte) -126);
-            int i_30_ = method3385((byte) -126);
+            int i_29_ = readInt((byte) -126);
+            int i_30_ = readInt((byte) -126);
             int i_31_ = 0;
             int i_32_ = -1640531527;
             int i_33_ = 32;
@@ -277,7 +277,7 @@ class Class348_Sub49 extends Class348 {
         this.anInt7197 -= 4;
         if (i != -25541) method3369((byte) 56);
         int i_34_ = Class171.method1319(this.anInt7197, true, this.aByteArray7154, 0);
-        int i_35_ = method3385((byte) -126);
+        int i_35_ = readInt((byte) -126);
         return i_35_ == i_34_;
     }
 
@@ -298,7 +298,7 @@ class Class348_Sub49 extends Class348 {
         anInt7173++;
     }
 
-    final int method3355(int i) {
+    final int readByteAdd(int i) {
         anInt7158++;
         int i_38_ = -108 / ((i - 73) / 50);
         this.anInt7197 += 2;
@@ -326,7 +326,7 @@ class Class348_Sub49 extends Class348 {
         }
     }
 
-    final int readLEShort128(int i) {
+    final int readShortAddLittle(int i) {
         anInt7181++;
         if (i > -105) this.aByteArray7154 = null;
         this.anInt7197 += 2;
@@ -357,8 +357,8 @@ class Class348_Sub49 extends Class348 {
         anInt7155++;
         int i_43_ = ((this.aByteArray7154[this.anInt7197]) & 0xff);
         if (i != 77) method3388(-48);
-        if (i_43_ < 128) return -64 + method3387(255);
-        return method3330(i ^ 0x3235f8b5) - 49152;
+        if (i_43_ < 128) return -64 + readUnsignedByte(255);
+        return readShort(i ^ 0x3235f8b5) - 49152;
     }
 
     final int method3363(int i) {
@@ -378,8 +378,8 @@ class Class348_Sub49 extends Class348 {
     final long method3365(int i) {
         anInt7149++;
         if (i != -456577760) return 14L;
-        long l = 0xffffffffL & (long) method3385((byte) -126);
-        long l_44_ = (long) method3385((byte) -126) & 0xffffffffL;
+        long l = 0xffffffffL & (long) readInt((byte) -126);
+        long l_44_ = (long) readInt((byte) -126) & 0xffffffffL;
         return l_44_ + (l << -456577760);
     }
 
@@ -399,8 +399,8 @@ class Class348_Sub49 extends Class348 {
         this.anInt7197 = i_47_;
         int i_50_ = (i_48_ + -i_47_) / 8;
         for (int i_51_ = 0; i_50_ > i_51_; i_51_++) {
-            int i_52_ = method3385((byte) -126);
-            int i_53_ = method3385((byte) -126);
+            int i_52_ = readInt((byte) -126);
+            int i_53_ = readInt((byte) -126);
             int i_54_ = -957401312;
             int i_55_ = -1640531527;
             int i_56_ = 32;
@@ -466,7 +466,7 @@ class Class348_Sub49 extends Class348 {
         return i_65_;
     }
 
-    final int readLEShort(boolean bool) {
+    final int readShortLittle(boolean bool) {
         if (bool != false) return 113;
         anInt7171++;
         this.anInt7197 += 2;
@@ -601,8 +601,8 @@ class Class348_Sub49 extends Class348 {
         if (i > -116) return -4;
         anInt7176++;
         int i_78_ = 0xff & (this.aByteArray7154[this.anInt7197]);
-        if (i_78_ < 128) return method3387(255);
-        return method3330(842397944) + -32768;
+        if (i_78_ < 128) return readUnsignedByte(255);
+        return readShort(842397944) + -32768;
     }
 
     final void method3383(int i, int i_79_) {
@@ -622,7 +622,7 @@ class Class348_Sub49 extends Class348 {
         return method3377((byte) 92);
     }
 
-    final int method3385(byte i) {
+    final int readInt(byte i) {
         anInt7196++;
         this.anInt7197 += 4;
         if (i != -126) method3368(-61, -64);
@@ -639,7 +639,7 @@ class Class348_Sub49 extends Class348 {
         this.aByteArray7154[this.anInt7197++] = (byte) 0;
     }
 
-    final int method3387(int i) {
+    final int readUnsignedByte(int i) {
         if (i != 255) method3380(-101, 111, null, 33);
         anInt7153++;
         return ((this.aByteArray7154[this.anInt7197++]) & 0xff);
@@ -703,7 +703,7 @@ class Class348_Sub49 extends Class348 {
         }
     }
 
-    final int method3393(byte i) {
+    final int readByteSubtract(byte i) {
         anInt7169++;
         int i_92_ = 18 / ((-28 - i) / 40);
         return ((this.aByteArray7154[this.anInt7197++]) - 128 & 0xff);
@@ -750,7 +750,7 @@ class Class348_Sub49 extends Class348 {
         anInt7189++;
         this.aByteArray7154[this.anInt7197++] = (byte) i_97_;
         this.aByteArray7154[this.anInt7197++] = (byte) (i_97_ >> 811935240);
-        if (i < 22) method3387(6);
+        if (i < 22) readUnsignedByte(6);
     }
 
     Class348_Sub49(byte[] is) {

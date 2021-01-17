@@ -31,13 +31,13 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
         for (int i_2_ = 0; Class225.anInt2956 > i_2_; i_2_++) {
             int i_3_ = class348_sub49.method3382(-126);
             Class110_Sub1 class110_sub1 = (OutputStream_Sub1.aClass110_Sub1Array97[i_3_] = new Class110_Sub1());
-            class110_sub1.anInt1711 = class348_sub49.method3387(255);
-            class110_sub1.anInt1708 = class348_sub49.method3385((byte) -126);
+            class110_sub1.anInt1711 = class348_sub49.readUnsignedByte(255);
+            class110_sub1.anInt1708 = class348_sub49.readInt((byte) -126);
             class110_sub1.anInt5786 = Class318_Sub1_Sub2.anInt8731 + i_3_;
             class110_sub1.aString5787 = class348_sub49.method3371(-13487);
             class110_sub1.aString5794 = class348_sub49.method3371(-13487);
         }
-        Class5_Sub1.anInt8349 = class348_sub49.method3385((byte) -126);
+        Class5_Sub1.anInt8349 = class348_sub49.readInt((byte) -126);
         Class195.aBoolean5013 = true;
         if (i > -110) method569((byte) -34, null);
     }

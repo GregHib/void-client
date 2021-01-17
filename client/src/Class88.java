@@ -265,16 +265,16 @@ final class Class88 {
                             if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 93)) return;
                             Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 60, (class348_sub49_sub2.aByteArray7154));
                             class348_sub49_sub2.anInt7197 = 0;
-                            Class192.anInt2581 = class348_sub49_sub2.method3387(255);
-                            Class125.anInt4919 = class348_sub49_sub2.method3387(255);
-                            Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.method3387(255) == 1;
-                            Class133.aBoolean1915 = class348_sub49_sub2.method3387(255) == 1;
-                            Class52.aBoolean4903 = class348_sub49_sub2.method3387(255) == 1;
-                            Class50_Sub2.aBoolean5233 = class348_sub49_sub2.method3387(255) == 1;
-                            Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.method3330(842397944);
-                            Class206.aBoolean4888 = class348_sub49_sub2.method3387(255) == 1;
+                            Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class50_Sub2.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.readShort(842397944);
+                            Class206.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class24.anInt359 = class348_sub49_sub2.method3369((byte) 125);
-                            Class130.aBoolean1900 = class348_sub49_sub2.method3387(255) == 1;
+                            Class130.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class348_Sub40_Sub12.aClass263_9195.method2004(Class130.aBoolean1900, (byte) 25);
                             Exception_Sub1.aClass255_112.method1934((byte) 11, Class130.aBoolean1900);
                             Class189.aClass278_2529.method2072((byte) 88, Class130.aBoolean1900);
@@ -282,27 +282,28 @@ final class Class88 {
                             if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 107)) return;
                             Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 85, (class348_sub49_sub2.aByteArray7154));
                             class348_sub49_sub2.anInt7197 = 0;
-                            Class192.anInt2581 = class348_sub49_sub2.method3387(255);
-                            Class125.anInt4919 = class348_sub49_sub2.method3387(255);
-                            Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.method3387(255) == 1;
-                            Class133.aBoolean1915 = class348_sub49_sub2.method3387(255) == 1;
-                            Class52.aBoolean4903 = class348_sub49_sub2.method3387(255) == 1;
+                            Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class116.anInt1758 = class348_sub49_sub2.method3372(13638);
                             Class206.aBoolean4888 = Class116.anInt1758 > 0;
-                            Class135_Sub1.anInt4716 = class348_sub49_sub2.method3330(842397944);
-                            Class322.anInt4026 = class348_sub49_sub2.method3330(842397944);
-                            Class206.anInt4870 = class348_sub49_sub2.method3330(842397944);
-                            Class170.anInt5065 = class348_sub49_sub2.method3385((byte) -126);
+                            Class135_Sub1.anInt4716 = class348_sub49_sub2.readShort(842397944);
+                            Class322.anInt4026 = class348_sub49_sub2.readShort(842397944);
+                            Class206.anInt4870 = class348_sub49_sub2.readShort(842397944);
+                            Class170.anInt5065 = class348_sub49_sub2.readInt((byte) -126);
                             Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992.method2232(116, Class170.anInt5065);
-                            Class216.anInt4976 = class348_sub49_sub2.method3387(255);
-                            Class130_Sub1.anInt5797 = class348_sub49_sub2.method3330(842397944);
-                            Class348_Sub6.anInt6632 = class348_sub49_sub2.method3330(842397944);
-                            Class290.aBoolean3706 = class348_sub49_sub2.method3387(255) == 1;
+                            Class216.anInt4976 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class130_Sub1.anInt5797 = class348_sub49_sub2.readShort(842397944);
+                            Class348_Sub6.anInt6632 = class348_sub49_sub2.readShort(842397944);
+                            Class290.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10537 = s_Sub2.aString8265 = class348_sub49_sub2.method3371(-13487);
-                            Applet_Sub1.anInt37 = class348_sub49_sub2.method3387(255);
-                            Class348_Sub1.anInt6551 = class348_sub49_sub2.method3385((byte) -126);
+                            System.out.println("String " + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544);
+                            Applet_Sub1.anInt37 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class348_Sub1.anInt6551 = class348_sub49_sub2.readInt((byte) -126);
                             aa_Sub2.aClass161_5199 = new Class161();
-                            aa_Sub2.aClass161_5199.anInt2143 = class348_sub49_sub2.method3330(842397944);
+                            aa_Sub2.aClass161_5199.anInt2143 = class348_sub49_sub2.readShort(842397944);
                             if (aa_Sub2.aClass161_5199.anInt2143 == 65535) aa_Sub2.aClass161_5199.anInt2143 = -1;
                             aa_Sub2.aClass161_5199.aString2147 = class348_sub49_sub2.method3371(-13487);
                             if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
@@ -360,7 +361,7 @@ final class Class88 {
                             Class348_Sub40_Sub8.aClass238_9165.method1701(1, 3, (byte) -127, (class348_sub49_sub2.aByteArray7154));
                         }
                         Class348_Sub3.aClass114_6584 = (Class14_Sub3.method248(-11271)[class348_sub49_sub2.method3407(15295)]);
-                        Class348_Sub40_Sub25.anInt9341 = class348_sub49_sub2.method3330(842397944);
+                        Class348_Sub40_Sub25.anInt9341 = class348_sub49_sub2.readShort(842397944);
                         Class225.anInt2955 = 10;
                     }
                     if (Class225.anInt2955 == 10) {
@@ -385,7 +386,7 @@ final class Class88 {
                                 if (!Class348_Sub40_Sub8.aClass238_9165.method1705(2, 106)) return;
                                 Class348_Sub40_Sub8.aClass238_9165.method1701(2, 0, (byte) -128, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                                 Class299.aClass348_Sub49_Sub2_3813.anInt7197 = 0;
-                                Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813.method3330(842397944);
+                                Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813.readShort(842397944);
                             }
                             if (Class348_Sub40_Sub8.aClass238_9165.method1705(Class348_Sub40_Sub25.anInt9341, 117)) {
                                 Class348_Sub40_Sub8.aClass238_9165.method1701(Class348_Sub40_Sub25.anInt9341, 0, (byte) -104, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));

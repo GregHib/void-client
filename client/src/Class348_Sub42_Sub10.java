@@ -93,22 +93,22 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
         if (i_6_ == 60) {
             if (i != 1) {
                 if (i == 2) {
-                    int i_7_ = class348_sub49.method3387(255);
+                    int i_7_ = class348_sub49.readUnsignedByte(255);
                     this.anIntArray9566 = new int[i_7_];
                     for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
-                        this.anIntArray9566[i_8_] = class348_sub49.method3330(i_6_ + 842397884);
+                        this.anIntArray9566[i_8_] = class348_sub49.readShort(i_6_ + 842397884);
                 } else if (i == 3) {
-                    int i_9_ = class348_sub49.method3387(i_6_ + 195);
+                    int i_9_ = class348_sub49.readUnsignedByte(i_6_ + 195);
                     anIntArrayArray9565 = new int[i_9_][];
                     anIntArray9574 = new int[i_9_];
                     for (int i_10_ = 0; i_9_ > i_10_; i_10_++) {
-                        int i_11_ = class348_sub49.method3330(842397944);
+                        int i_11_ = class348_sub49.readShort(842397944);
                         Class138 class138 = Class348_Sub5.method2752(i_11_, i_6_ + -60);
                         if (class138 != null) {
                             anIntArray9574[i_10_] = i_11_;
                             anIntArrayArray9565[i_10_] = new int[class138.anInt1944];
                             for (int i_12_ = 0; (class138.anInt1944 > i_12_); i_12_++)
-                                anIntArrayArray9565[i_10_][i_12_] = class348_sub49.method3330(i_6_ + 842397884);
+                                anIntArrayArray9565[i_10_][i_12_] = class348_sub49.readShort(i_6_ + 842397884);
                         }
                     }
                 } else if (i == 4) this.aBoolean9562 = false;
@@ -151,7 +151,7 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
     final void method3218(Class348_Sub49 class348_sub49, int i) {
         anInt9568++;
         for (; ; ) {
-            int i_14_ = class348_sub49.method3387(i ^ 0xff);
+            int i_14_ = class348_sub49.readUnsignedByte(i ^ 0xff);
             if (i_14_ == 0) break;
             method3214(i_14_, class348_sub49, 60);
         }

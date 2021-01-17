@@ -133,10 +133,10 @@ final class Class248 {
                     if (aClass348_Sub49_3211.anInt7197 >= i_3_) {
                         if (aClass348_Sub42_Sub16_Sub1_3215 == null) {
                             aClass348_Sub49_3211.anInt7197 = 0;
-                            int i_9_ = aClass348_Sub49_3211.method3387(255);
-                            int i_10_ = aClass348_Sub49_3211.method3330(842397944);
-                            int i_11_ = aClass348_Sub49_3211.method3387(255);
-                            int i_12_ = aClass348_Sub49_3211.method3385((byte) -126);
+                            int i_9_ = aClass348_Sub49_3211.readUnsignedByte(255);
+                            int i_10_ = aClass348_Sub49_3211.readShort(842397944);
+                            int i_11_ = aClass348_Sub49_3211.readUnsignedByte(255);
+                            int i_12_ = aClass348_Sub49_3211.readInt((byte) -126);
                             int i_13_ = 0x7f & i_11_;
                             boolean bool = (0x80 & i_11_) != 0;
                             long l = (i_9_ << 1674464528) + i_10_;

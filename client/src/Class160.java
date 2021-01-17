@@ -21,7 +21,7 @@ final class Class160 {
 
     final void method1255(Class348_Sub49 class348_sub49, int i) {
         for (; ; ) {
-            int i_0_ = class348_sub49.method3387(255);
+            int i_0_ = class348_sub49.readUnsignedByte(255);
             if (i_0_ == 0) break;
             method1256(-90, i_0_, class348_sub49);
         }

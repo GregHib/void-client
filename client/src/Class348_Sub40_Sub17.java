@@ -37,7 +37,7 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         if (i_0_ == 31015) {
-            if (i == 0) anInt9243 = class348_sub49.method3330(842397944);
+            if (i == 0) anInt9243 = class348_sub49.readShort(842397944);
             anInt9236++;
         }
     }

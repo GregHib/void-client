@@ -13,17 +13,17 @@ final class Class349 {
     private static float[][] aFloatArrayArray4306 = new float[2][8];
 
     final void method3446(Class348_Sub49 class348_sub49, Class197 class197) {
-        int i = class348_sub49.method3387(255);
+        int i = class348_sub49.readUnsignedByte(255);
         this.anIntArray4299[0] = i >> 4;
         this.anIntArray4299[1] = i & 0xf;
         if (i != 0) {
-            anIntArray4304[0] = class348_sub49.method3330(842397944);
-            anIntArray4304[1] = class348_sub49.method3330(842397944);
-            int i_0_ = class348_sub49.method3387(255);
+            anIntArray4304[0] = class348_sub49.readShort(842397944);
+            anIntArray4304[1] = class348_sub49.readShort(842397944);
+            int i_0_ = class348_sub49.readUnsignedByte(255);
             for (int i_1_ = 0; i_1_ < 2; i_1_++) {
                 for (int i_2_ = 0; i_2_ < this.anIntArray4299[i_1_]; i_2_++) {
-                    anIntArrayArrayArray4302[i_1_][0][i_2_] = class348_sub49.method3330(842397944);
-                    anIntArrayArrayArray4300[i_1_][0][i_2_] = class348_sub49.method3330(842397944);
+                    anIntArrayArrayArray4302[i_1_][0][i_2_] = class348_sub49.readShort(842397944);
+                    anIntArrayArrayArray4300[i_1_][0][i_2_] = class348_sub49.readShort(842397944);
                 }
             }
             for (int i_3_ = 0; i_3_ < 2; i_3_++) {
@@ -32,8 +32,8 @@ final class Class349 {
                         anIntArrayArrayArray4302[i_3_][1][i_4_] = anIntArrayArrayArray4302[i_3_][0][i_4_];
                         anIntArrayArrayArray4300[i_3_][1][i_4_] = anIntArrayArrayArray4300[i_3_][0][i_4_];
                     } else {
-                        anIntArrayArrayArray4302[i_3_][1][i_4_] = class348_sub49.method3330(842397944);
-                        anIntArrayArrayArray4300[i_3_][1][i_4_] = class348_sub49.method3330(842397944);
+                        anIntArrayArrayArray4302[i_3_][1][i_4_] = class348_sub49.readShort(842397944);
+                        anIntArrayArrayArray4300[i_3_][1][i_4_] = class348_sub49.readShort(842397944);
                     }
                 }
             }

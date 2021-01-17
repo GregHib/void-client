@@ -340,18 +340,18 @@ final class Class143 {
 
     Class143(byte[] is) {
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        int i = class348_sub49.method3387(255);
+        int i = class348_sub49.readUnsignedByte(255);
         if (i != 0) throw new RuntimeException("");
-        boolean bool = class348_sub49.method3387(255) == 1;
+        boolean bool = class348_sub49.readUnsignedByte(255) == 1;
         aByteArray1986 = new byte[256];
         class348_sub49.method3389(2147483647, 0, 256, aByteArray1986);
         if (bool) {
             int[] is_43_ = new int[256];
             int[] is_44_ = new int[256];
             for (int i_45_ = 0; i_45_ < 256; i_45_++)
-                is_43_[i_45_] = class348_sub49.method3387(255);
+                is_43_[i_45_] = class348_sub49.readUnsignedByte(255);
             for (int i_46_ = 0; i_46_ < 256; i_46_++)
-                is_44_[i_46_] = class348_sub49.method3387(255);
+                is_44_[i_46_] = class348_sub49.readUnsignedByte(255);
             byte[][] is_47_ = new byte[256][];
             for (int i_48_ = 0; i_48_ < 256; i_48_++) {
                 is_47_[i_48_] = new byte[is_43_[i_48_]];
@@ -379,10 +379,10 @@ final class Class143 {
                 }
             }
             this.anInt1992 = is_44_[32] - -is_43_[32];
-        } else this.anInt1992 = class348_sub49.method3387(255);
-        class348_sub49.method3387(255);
-        class348_sub49.method3387(255);
-        this.anInt1988 = class348_sub49.method3387(255);
-        this.anInt1993 = class348_sub49.method3387(255);
+        } else this.anInt1992 = class348_sub49.readUnsignedByte(255);
+        class348_sub49.readUnsignedByte(255);
+        class348_sub49.readUnsignedByte(255);
+        this.anInt1988 = class348_sub49.readUnsignedByte(255);
+        this.anInt1993 = class348_sub49.readUnsignedByte(255);
     }
 }

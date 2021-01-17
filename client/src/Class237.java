@@ -921,18 +921,18 @@ class Class237 {
         } else i = 1;
         if (i_216_ < 0 || i_216_ >= this.anInt3117 || i_212_ < 0 || this.anInt3114 <= i_212_) {
             for (; ; ) {
-                int i_220_ = class348_sub49.method3387(255);
+                int i_220_ = class348_sub49.readUnsignedByte(255);
                 if (i_220_ == 0) break;
                 if (i_220_ == 1) {
-                    class348_sub49.method3387(i_215_ ^ 0x4278cb1d);
+                    class348_sub49.readUnsignedByte(i_215_ ^ 0x4278cb1d);
                     break;
                 }
-                if (i_220_ <= 49) class348_sub49.method3387(255);
+                if (i_220_ <= 49) class348_sub49.readUnsignedByte(255);
             }
         } else {
             if (!this.aBoolean3109 && !bool) Class348_Sub33.aByteArrayArrayArray6962[i_219_][i_216_][i_212_] = (byte) 0;
             for (; ; ) {
-                int i_221_ = class348_sub49.method3387(i_215_ ^ 0x4278cb1d);
+                int i_221_ = class348_sub49.readUnsignedByte(i_215_ ^ 0x4278cb1d);
                 if (i_221_ == 0) {
                     if (this.aBoolean3109) this.anIntArrayArrayArray3122[0][i_214_ + i_216_][i + i_212_] = 0;
                     else if (i_219_ != 0) this.anIntArrayArrayArray3122[i_219_][i_214_ + i_216_][i + i_212_] = -960 + (this.anIntArrayArrayArray3122[-1 + i_219_][i_214_ + i_216_][i + i_212_]);
@@ -940,7 +940,7 @@ class Class237 {
                     break;
                 }
                 if (i_221_ == 1) {
-                    int i_222_ = class348_sub49.method3387(255);
+                    int i_222_ = class348_sub49.readUnsignedByte(255);
                     if (this.aBoolean3109) this.anIntArrayArrayArray3122[0][i_216_ - -i_214_][i_212_ + i] = i_222_ * 8 << 1925033730;
                     else {
                         if (i_222_ == 1) i_222_ = 0;
@@ -950,7 +950,7 @@ class Class237 {
                     break;
                 }
                 if (i_221_ <= 49) {
-                    if (bool) class348_sub49.method3387(255);
+                    if (bool) class348_sub49.readUnsignedByte(255);
                     else {
                         aByteArrayArrayArray3123[i_219_][i_216_][i_212_] = class348_sub49.method3388(i_215_ + -1115212859);
                         aByteArrayArrayArray3126[i_219_][i_216_][i_212_] = (byte) ((i_221_ + -2) / 4);

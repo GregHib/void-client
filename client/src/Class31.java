@@ -85,25 +85,25 @@ final class Class31 {
     private final void method329(Class348_Sub49 class348_sub49, int i, int i_1_) {
         if (i_1_ != 1) {
             if (i_1_ != 2) {
-                if (i_1_ == 3) anInt421 = class348_sub49.method3330(842397944);
+                if (i_1_ == 3) anInt421 = class348_sub49.readShort(842397944);
                 else if (i_1_ != 4) {
-                    if (i_1_ == 5) anInt433 = class348_sub49.method3330(842397944);
-                    else if (i_1_ == 6) anInt439 = class348_sub49.method3330(842397944);
+                    if (i_1_ == 5) anInt433 = class348_sub49.readShort(842397944);
+                    else if (i_1_ == 6) anInt439 = class348_sub49.readShort(842397944);
                     else if (i_1_ != 7) {
                         if (i_1_ != 8) {
                             if (i_1_ != 9) {
                                 if (i_1_ != 10) {
                                     if (i_1_ == 11) this.anInt426 = 0;
-                                    else if (i_1_ == 12) this.anInt431 = class348_sub49.method3387(255);
+                                    else if (i_1_ == 12) this.anInt431 = class348_sub49.readUnsignedByte(255);
                                     else if (i_1_ == 13) this.anInt420 = class348_sub49.method3372(i ^ ~0x3547);
-                                    else if (i_1_ == 14) this.anInt426 = class348_sub49.method3330(842397944);
+                                    else if (i_1_ == 14) this.anInt426 = class348_sub49.readShort(842397944);
                                 } else this.anInt422 = class348_sub49.method3372(13638);
-                            } else this.anInt434 = class348_sub49.method3330(842397944);
+                            } else this.anInt434 = class348_sub49.readShort(842397944);
                         } else aString423 = class348_sub49.method3371(i ^ 0x34af);
                     } else this.anInt424 = class348_sub49.method3372(13638);
-                } else anInt429 = class348_sub49.method3330(842397944);
+                } else anInt429 = class348_sub49.readShort(842397944);
             } else this.anInt444 = class348_sub49.method3351(-1);
-        } else this.anInt435 = class348_sub49.method3330(842397944);
+        } else this.anInt435 = class348_sub49.readShort(842397944);
         if (i != -2) method333(-112, 38);
         anInt437++;
     }
@@ -145,7 +145,7 @@ final class Class31 {
     final void method332(int i, Class348_Sub49 class348_sub49) {
         if (i > -119) method333(119, -71);
         for (; ; ) {
-            int i_3_ = class348_sub49.method3387(255);
+            int i_3_ = class348_sub49.readUnsignedByte(255);
             if (i_3_ == 0) break;
             method329(class348_sub49, -2, i_3_);
         }

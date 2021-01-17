@@ -31,14 +31,14 @@ final class Class348_Sub41 extends Class348 {
                 if (bool_7_) {
                     int i_8_ = class348_sub49.method3382(-118);
                     if (i_8_ == 0) break;
-                    class348_sub49.method3387(255);
+                    class348_sub49.readUnsignedByte(255);
                 } else {
                     int i_9_ = class348_sub49.method3382(i_3_ ^ ~0x58);
                     if (i_9_ == 0) break;
                     i_6_ += -1 + i_9_;
                     int i_10_ = i_6_ & 0x3f;
                     int i_11_ = i_6_ >> -131632442 & 0x3f;
-                    int i_12_ = class348_sub49.method3387(255) >> 1964747714;
+                    int i_12_ = class348_sub49.readUnsignedByte(255) >> 1964747714;
                     int i_13_ = i_11_ - -i_0_;
                     int i_14_ = i_2_ + i_10_;
                     if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
@@ -204,12 +204,12 @@ final class Class348_Sub41 extends Class348 {
     static final byte[] method3158(byte[] is, int i) {
         anInt7046++;
         Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        int i_37_ = class348_sub49.method3387(255);
+        int i_37_ = class348_sub49.readUnsignedByte(255);
         if (i > -74) method3156(true, null);
-        int i_38_ = class348_sub49.method3385((byte) -126);
+        int i_38_ = class348_sub49.readInt((byte) -126);
         if (i_38_ < 0 || (Class29.anInt401 != 0 && i_38_ > Class29.anInt401)) throw new RuntimeException();
         if (i_37_ != 0) {
-            int i_39_ = class348_sub49.method3385((byte) -126);
+            int i_39_ = class348_sub49.readInt((byte) -126);
             if (i_39_ < 0 || (Class29.anInt401 != 0 && i_39_ > Class29.anInt401)) throw new RuntimeException();
             byte[] is_40_ = new byte[i_39_];
             if (i_37_ == 1) Class212.method1547(is_40_, i_39_, is, i_38_, 9);

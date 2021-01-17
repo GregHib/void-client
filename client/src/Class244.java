@@ -81,19 +81,19 @@ final class Class244 implements d {
             aClass45_4619 = class45_12_;
             aClass45_4624 = class45_13_;
             Class348_Sub49 class348_sub49 = new Class348_Sub49(class45.method410(-1860, 0, 0));
-            anInt4625 = class348_sub49.method3330(842397944);
+            anInt4625 = class348_sub49.readShort(842397944);
             aClass12Array4611 = new Class12[anInt4625];
             for (int i = 0; anInt4625 > i; i++) {
-                if (class348_sub49.method3387(255) == 1) aClass12Array4611[i] = new Class12();
+                if (class348_sub49.readUnsignedByte(255) == 1) aClass12Array4611[i] = new Class12();
             }
             for (int i = 0; i < anInt4625; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean209 = class348_sub49.method3387(255) == 0;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean209 = class348_sub49.readUnsignedByte(255) == 0;
             }
             for (int i = 0; i < anInt4625; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean199 = class348_sub49.method3387(255) == 1;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean199 = class348_sub49.readUnsignedByte(255) == 1;
             }
             for (int i = 0; anInt4625 > i; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean204 = class348_sub49.method3387(255) == 1;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean204 = class348_sub49.readUnsignedByte(255) == 1;
             }
             for (int i = 0; i < anInt4625; i++) {
                 if (aClass12Array4611[i] != null) aClass12Array4611[i].aByte216 = class348_sub49.method3388(-85);
@@ -108,7 +108,7 @@ final class Class244 implements d {
                 if (aClass12Array4611[i] != null) aClass12Array4611[i].aByte202 = class348_sub49.method3388(-82);
             }
             for (int i = 0; i < anInt4625; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aShort208 = (short) class348_sub49.method3330(842397944);
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aShort208 = (short) class348_sub49.readShort(842397944);
             }
             for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null) aClass12Array4611[i].aByte198 = class348_sub49.method3388(-86);
@@ -117,31 +117,31 @@ final class Class244 implements d {
                 if (aClass12Array4611[i] != null) aClass12Array4611[i].aByte211 = class348_sub49.method3388(-104);
             }
             for (int i = 0; anInt4625 > i; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean212 = class348_sub49.method3387(255) == 1;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean212 = class348_sub49.readUnsignedByte(255) == 1;
             }
             for (int i = 0; anInt4625 > i; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean207 = class348_sub49.method3387(255) == 1;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean207 = class348_sub49.readUnsignedByte(255) == 1;
             }
             for (int i = 0; i < anInt4625; i++) {
                 if (aClass12Array4611[i] != null) aClass12Array4611[i].aByte205 = class348_sub49.method3388(-77);
             }
             for (int i = 0; i < anInt4625; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean217 = class348_sub49.method3387(255) == 1;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean217 = class348_sub49.readUnsignedByte(255) == 1;
             }
             for (int i = 0; anInt4625 > i; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean215 = class348_sub49.method3387(255) == 1;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean215 = class348_sub49.readUnsignedByte(255) == 1;
             }
             for (int i = 0; anInt4625 > i; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean218 = class348_sub49.method3387(255) == 1;
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aBoolean218 = class348_sub49.readUnsignedByte(255) == 1;
             }
             for (int i = 0; i < anInt4625; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].anInt203 = class348_sub49.method3387(255);
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].anInt203 = class348_sub49.readUnsignedByte(255);
             }
             for (int i = 0; anInt4625 > i; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].anInt206 = class348_sub49.method3385((byte) -126);
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].anInt206 = class348_sub49.readInt((byte) -126);
             }
             for (int i = 0; anInt4625 > i; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].anInt200 = class348_sub49.method3387(255);
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].anInt200 = class348_sub49.readUnsignedByte(255);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("tda.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class45_12_ != null ? "{...}" : "null") + ',' + (class45_13_ != null ? "{...}" : "null") + ')'));
