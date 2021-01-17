@@ -79,6 +79,7 @@ public class Loader extends Applet {
         aJFrame2.getContentPane().add(aJPanel3, "Center");
         aJFrame2.pack();
         aJFrame2.setVisible(true);
+        aJFrame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     void startClient() {
