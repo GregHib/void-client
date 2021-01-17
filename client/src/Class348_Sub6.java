@@ -74,8 +74,8 @@ final class Class348_Sub6 extends Class348 {
         else return;
         double d = 0.7 + (0.03 * Math.random() - 0.015);
         for (int i_5_ = 0; i_5_ < 65536; i_5_++) {
-            double d_6_ = 0.0078125 + (double) ((0xfebd & i_5_) >> 717938698) / 64.0;
-            double d_7_ = (double) ((0x384 & i_5_) >> -1412274425) / 8.0 + 0.0625;
+            double d_6_ = 0.0078125 + (double) ((0xfebd & i_5_) >> 10) / 64.0;
+            double d_7_ = (double) ((0x384 & i_5_) >> 7) / 8.0 + 0.0625;
             double d_8_ = (double) (i_5_ & 0x7f) / 128.0;
             double d_9_ = d_8_;
             double d_10_ = d_8_;
@@ -113,7 +113,7 @@ final class Class348_Sub6 extends Class348 {
             int i_17_ = (int) (d_9_ * 256.0);
             int i_18_ = (int) (d_10_ * 256.0);
             int i_19_ = (int) (d_11_ * 256.0);
-            int i_20_ = (i_18_ << -1909096792) + (i_17_ << 2115128912) - -i_19_;
+            int i_20_ = (i_18_ << 8) + (i_17_ << 16) - -i_19_;
             Class10.anIntArray179[i_5_] = i_20_;
         }
         if (i != 2) anInt6634 = 92;

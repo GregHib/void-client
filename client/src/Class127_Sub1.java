@@ -47,7 +47,7 @@ final class Class127_Sub1 extends Class127 {
                 }
                 if (class348_sub41_5_.anInt7053 == 3) {
                     int i_6_ = (int) class348_sub41_5_.aLong4291;
-                    if (i_3_ == i_6_ >>> -1572345968) method1118(true, bool_2_, class348_sub41_5_, 2533);
+                    if (i_3_ == i_6_ >>> 16) method1118(true, bool_2_, class348_sub41_5_, 2533);
                 }
             }
         }

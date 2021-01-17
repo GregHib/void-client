@@ -99,7 +99,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
             anInt9309++;
             int i_6_ = (anInt9310 <= 0 ? 4096 : 4096 - Class124.method1097((byte) 117, anInt9310, random));
             int i_7_ = 88 % ((i - 57) / 55);
-            int i_8_ = anInt9306 * anInt9314 >> -1291409268;
+            int i_8_ = anInt9306 * anInt9314 >> 12;
             int i_9_ = (anInt9306 - (i_8_ > 0 ? Class124.method1097((byte) 82, i_8_, random) : 0));
             if (Class348_Sub40_Sub6.anInt9139 <= i_3_) i_3_ -= Class348_Sub40_Sub6.anInt9139;
             if (i_9_ <= 0) {
@@ -128,7 +128,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                         if (anInt9312 == 0) {
                             for (int i_23_ = 0; i_23_ < i_16_; i_23_++) {
                                 int i_24_ = i_6_ * i_23_ / i_16_;
-                                is_21_[Class139.method1166(i_23_ + i_3_, (Class239_Sub22.anInt6076))] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ >> 1318683468;
+                                is_21_[Class139.method1166(i_23_ + i_3_, (Class239_Sub22.anInt6076))] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ >> 12;
                             }
                         } else {
                             for (int i_25_ = 0; i_16_ > i_25_; i_25_++) {
@@ -149,7 +149,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                             if (anInt9312 == 0) {
                                 for (int i_30_ = 0; i_16_ > i_30_; i_30_++) {
                                     int i_31_ = i_6_ * i_30_ / i_16_;
-                                    is_21_[Class139.method1166((Class239_Sub22.anInt6076), i_30_ + i_3_)] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ >> 299348108;
+                                    is_21_[Class139.method1166((Class239_Sub22.anInt6076), i_30_ + i_3_)] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ >> 12;
                                 }
                             } else {
                                 for (int i_32_ = 0; (i_16_ > i_32_); i_32_++) {
@@ -231,12 +231,12 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
             boolean bool_48_ = true;
             int i_49_ = 0;
             int i_50_ = 0;
-            int i_51_ = anInt9317 * Class348_Sub40_Sub6.anInt9139 >> 1202357772;
-            int i_52_ = Class348_Sub40_Sub6.anInt9139 * anInt9320 >> -1513067412;
-            int i_53_ = anInt9322 * Class286_Sub2.anInt6212 >> -1185109972;
-            int i_54_ = Class286_Sub2.anInt6212 * anInt9323 >> 867771724;
+            int i_51_ = anInt9317 * Class348_Sub40_Sub6.anInt9139 >> 12;
+            int i_52_ = Class348_Sub40_Sub6.anInt9139 * anInt9320 >> 12;
+            int i_53_ = anInt9322 * Class286_Sub2.anInt6212 >> 12;
+            int i_54_ = Class286_Sub2.anInt6212 * anInt9323 >> 12;
             if (i_54_ <= 1) return is_42_[i];
-            anInt9306 = Class348_Sub40_Sub6.anInt9139 / 8 * anInt9311 >> -336223796;
+            anInt9306 = Class348_Sub40_Sub6.anInt9139 / 8 * anInt9311 >> 12;
             int i_55_ = 1 + Class348_Sub40_Sub6.anInt9139 / i_51_;
             int[][] is_56_ = new int[i_55_][3];
             int[][] is_57_ = new int[i_55_][3];

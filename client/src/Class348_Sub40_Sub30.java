@@ -160,15 +160,15 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
             anInt9389 = (i_20_ + i_21_) / 2;
             int i_22_ = i_20_ - i_21_;
             if (i_22_ > 0) {
-                int i_23_ = (i_20_ + -i << -747580724) / i_22_;
-                int i_24_ = (i_20_ + -i_17_ << -350784244) / i_22_;
-                int i_25_ = (-i_19_ + i_20_ << -1252014868) / i_22_;
+                int i_23_ = (i_20_ + -i << 12) / i_22_;
+                int i_24_ = (i_20_ + -i_17_ << 12) / i_22_;
+                int i_25_ = (-i_19_ + i_20_ << 12) / i_22_;
                 if (i == i_20_) anInt9400 = (i_17_ != i_21_ ? 4096 + -i_24_ : i_25_ + 20480);
                 else if (i_17_ != i_20_) anInt9400 = i != i_21_ ? -i_23_ + 20480 : 12288 - -i_24_;
                 else anInt9400 = (i_21_ == i_19_ ? 4096 + i_23_ : -i_25_ + 12288);
                 anInt9400 /= 6;
             } else anInt9400 = 0;
-            if (anInt9389 > 0 && anInt9389 < 4096) anInt9401 = (i_22_ << 1825032396) / (anInt9389 > 2048 ? 8192 - anInt9389 * 2 : anInt9389 * 2);
+            if (anInt9389 > 0 && anInt9389 < 4096) anInt9401 = (i_22_ << 12) / (anInt9389 > 2048 ? 8192 - anInt9389 * 2 : anInt9389 * 2);
             else anInt9401 = 0;
         }
     }
@@ -176,17 +176,17 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
     private final void method3130(int i, int i_26_, byte i_27_, int i_28_) {
         anInt9397++;
         int i_29_ = 31 / ((i_27_ - -74) / 40);
-        int i_30_ = (i > 2048 ? i_28_ + (i - (i * i_28_ >> -947995028)) : i * (4096 - -i_28_) >> -1900506004);
+        int i_30_ = (i > 2048 ? i_28_ + (i - (i * i_28_ >> 12)) : i * (4096 - -i_28_) >> 12);
         if (i_30_ <= 0) anInt9386 = anInt9396 = anInt9392 = i;
         else {
             i_26_ *= 6;
             int i_31_ = -i_30_ + i - -i;
-            int i_32_ = (-i_31_ + i_30_ << 44203052) / i_30_;
-            int i_33_ = i_26_ >> 1177620780;
-            int i_34_ = i_26_ + -(i_33_ << 1663702028);
+            int i_32_ = (-i_31_ + i_30_ << 12) / i_30_;
+            int i_33_ = i_26_ >> 12;
+            int i_34_ = i_26_ + -(i_33_ << 12);
             int i_35_ = i_30_;
-            i_35_ = i_35_ * i_32_ >> -598033268;
-            i_35_ = i_35_ * i_34_ >> 236386604;
+            i_35_ = i_35_ * i_32_ >> 12;
+            i_35_ = i_35_ * i_34_ >> 12;
             int i_36_ = i_35_ + i_31_;
             int i_37_ = i_30_ - i_35_;
             int i_38_ = i_33_;
@@ -257,10 +257,10 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                             if (i_40_ == 2) break;
                             break while_209_;
                         }
-                        anInt9390 = (class348_sub49.method3388(-83) << 1365062124) / 100;
+                        anInt9390 = (class348_sub49.method3388(-83) << 12) / 100;
                         return;
                     } while (false);
-                    anInt9398 = (class348_sub49.method3388(i_39_ + -31101) << 1792937036) / 100;
+                    anInt9398 = (class348_sub49.method3388(i_39_ + -31101) << 12) / 100;
                     break;
                 }
                 break;

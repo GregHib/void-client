@@ -28,7 +28,7 @@ final class Class291 {
     static int anInt3741;
 
     static final int method2198(int i, int i_0_, int i_1_) {
-        i_0_ = i_0_ * (i_1_ & 0x7f) >> 1298920711;
+        i_0_ = i_0_ * (i_1_ & 0x7f) >> 7;
         if (i != 0) method2198(52, -11, 108);
         anInt3741++;
         if (i_0_ >= 2) {

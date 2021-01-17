@@ -53,7 +53,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
                     Class121.aClass105_1800 = var_ha.method3691(class207, true);
                     class207.method1518();
                     Class348_Sub5.aClass105_6627 = var_ha.method3691(class207, true);
-                } else var_ha.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 << -833477000 | Class264.anInt3376), 1);
+                } else var_ha.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 << 24 | Class264.anInt3376), 1);
             }
             anInt8709++;
             if (OutputStream_Sub2.aClass105_106 != null && Class121.aClass105_1800 != null) {
@@ -65,7 +65,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             }
             if (bool == false) {
                 Class262.aClass324_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);
-                var_ha.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 | 255 + -Class51.anInt948 << 602467960), 1);
+                var_ha.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 | 255 + -Class51.anInt948 << 24), 1);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));

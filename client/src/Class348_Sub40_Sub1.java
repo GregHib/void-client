@@ -58,21 +58,21 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                 return;
             } while (false);
             int i_2_ = class348_sub49.method3351(-1);
-            anIntArray9086[2] = Class139.method1166(0, i_2_ >> -203039092);
-            anIntArray9086[1] = Class139.method1166(i_2_, 65280) >> 408194532;
-            anIntArray9086[0] = Class139.method1166(i_2_ << 926309764, 267386880);
+            anIntArray9086[2] = Class139.method1166(0, i_2_ >> 12);
+            anIntArray9086[1] = Class139.method1166(i_2_, 65280) >> 4;
+            anIntArray9086[0] = Class139.method1166(i_2_ << 4, 267386880);
         } while (false);
     }
 
     static final int method3051(int i, int i_3_) {
         if (i_3_ != 4096) return -68;
         anInt9085++;
-        int i_4_ = i >>> -670594175;
-        i_4_ |= i_4_ >>> 1210835649;
-        i_4_ |= i_4_ >>> 1321252034;
-        i_4_ |= i_4_ >>> -1143561660;
-        i_4_ |= i_4_ >>> -441538616;
-        i_4_ |= i_4_ >>> 63462768;
+        int i_4_ = i >>> 1;
+        i_4_ |= i_4_ >>> 1;
+        i_4_ |= i_4_ >>> 2;
+        i_4_ |= i_4_ >>> 4;
+        i_4_ |= i_4_ >>> 8;
+        i_4_ |= i_4_ >>> 16;
         return (~i_4_) & i;
     }
 
@@ -113,9 +113,9 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                             is_11_[i_13_] = i_16_;
                             is_12_[i_13_] = i_17_;
                         } else {
-                            is_10_[i_13_] = i_14_ * anInt9092 >> -1298954676;
-                            is_11_[i_13_] = i_16_ * anInt9091 >> -1848186100;
-                            is_12_[i_13_] = i_17_ * anInt9084 >> 2023563212;
+                            is_10_[i_13_] = i_14_ * anInt9092 >> 12;
+                            is_11_[i_13_] = i_16_ * anInt9091 >> 12;
+                            is_12_[i_13_] = i_17_ * anInt9084 >> 12;
                         }
                     }
                 }

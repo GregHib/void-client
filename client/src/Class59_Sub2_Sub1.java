@@ -119,7 +119,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
     final void method563(byte i, int i_27_, byte i_28_) {
         if (i > 79) {
             anInt8669++;
-            i_28_ = (byte) (((i_28_ & 0xff) >> -1204496767) + 127);
+            i_28_ = (byte) (((i_28_ & 0xff) >> 1) + 127);
             int i_29_ = 2 * i_27_;
             aByteArray8674[i_29_++] = i_28_;
             aByteArray8674[i_29_] = i_28_;

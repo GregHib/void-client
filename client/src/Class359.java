@@ -46,7 +46,7 @@ final class Class359 {
     static final int method3492(int i, int i_1_) {
         anInt4422++;
         int i_2_ = 0x3f & i;
-        int i_3_ = (i_1_ & i) >> -278934362;
+        int i_3_ = (i_1_ & i) >> 6;
         if (i_2_ == 18) {
             if (i_3_ == 0) return 1;
             if (i_3_ == 1) return 2;

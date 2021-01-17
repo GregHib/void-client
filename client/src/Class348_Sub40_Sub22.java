@@ -44,16 +44,16 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
         for (int i_2_ = 0; i_2_ < anInt9301; i_2_++) {
             if (i_2_ > 0) {
                 int i_3_ = anInt9300;
-                int i_4_ = ((Class124.method1097((byte) 90, 4096, random) - 2048) * anInt9305 >> -1633784916);
-                i_3_ += i_4_ * i_1_ >> 48155276;
+                int i_4_ = ((Class124.method1097((byte) 90, 4096, random) - 2048) * anInt9305 >> 12);
+                i_3_ += i_4_ * i_1_ >> 12;
                 anIntArray9297[i_2_] = i_3_ + anIntArray9297[-1 + i_2_];
             }
             anIntArrayArray9287[i_2_][0] = 0;
             for (int i_5_ = 0; anInt9299 > i_5_; i_5_++) {
                 if (i_5_ > 0) {
                     int i_6_ = anInt9291;
-                    int i_7_ = ((Class124.method1097((byte) 117, 4096, random) - 2048) * anInt9302 >> -1511824500);
-                    i_6_ += i_0_ * i_7_ >> -176195412;
+                    int i_7_ = ((Class124.method1097((byte) 117, 4096, random) - 2048) * anInt9302 >> 12);
+                    i_6_ += i_0_ * i_7_ >> 12;
                     anIntArrayArray9287[i_2_][i_5_] = anIntArrayArray9287[i_2_][i_5_ + -1] + i_6_;
                 }
                 anIntArrayArray9286[i_2_][i_5_] = (anInt9284 <= 0 ? 4096 : (-Class124.method1097((byte) 124, anInt9284, random) + 4096));
@@ -160,7 +160,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                     int i_17_ = 0;
                     int i_18_ = !bool ? -anInt9288 : anInt9288;
                     int i_19_;
-                    for (i_19_ = (Class318_Sub6.anIntArray6432[i_16_] + (i_18_ * anInt9291 >> -742925460)); i_19_ < 0; i_19_ += 4096) {
+                    for (i_19_ = (Class318_Sub6.anIntArray6432[i_16_] + (i_18_ * anInt9291 >> 12)); i_19_ < 0; i_19_ += 4096) {
                         /* empty */
                     }
                     for (/**/; i_19_ > 4096; i_19_ -= 4096) {
@@ -187,8 +187,8 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
             if (i < 18) aClass304_9303 = null;
             Class367_Sub4.anInt7319 = Class348_Sub40_Sub3.anInt9109 = Class73.anIntArray4780[i_23_];
             Class290.method2196((byte) -9);
-            Class62.anIntArrayArrayArray1116 = (new int[4][Class367_Sub4.anInt7319 >> 629360931]
-                    [Class348_Sub40_Sub3.anInt9109 >> -1129488413]);
+            Class62.anIntArrayArrayArray1116 = (new int[4][Class367_Sub4.anInt7319 >> 3]
+                    [Class348_Sub40_Sub3.anInt9109 >> 3]);
             Class239_Sub8.anIntArrayArray5921 = (new int[Class367_Sub4.anInt7319]
                     [Class348_Sub40_Sub3.anInt9109]);
             Class348_Sub42_Sub17.anIntArrayArray9678 = (new int[Class367_Sub4.anInt7319]
@@ -198,7 +198,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
             Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.anInt7319]
                     [Class348_Sub40_Sub3.anInt9109]);
             Class239.method1717(19278, Class348_Sub40_Sub3.anInt9109, Class367_Sub4.anInt7319, 4);
-            Class97.method873(Class367_Sub4.anInt7319 >> 1025673859, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.anInt9109 >> -184361181);
+            Class97.method873(Class367_Sub4.anInt7319 >> 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.anInt9109 >> 3);
             Class348_Sub15.anInt6769 = i_23_;
         }
     }

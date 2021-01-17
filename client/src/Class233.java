@@ -65,7 +65,7 @@ final class Class233 {
                     Class318_Sub9 class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503);
                     for (Class318_Sub9 class318_sub9_8_ = (class318_sub9.aClass318_Sub9_6469); class318_sub9_8_ != class318_sub9; class318_sub9_8_ = (class318_sub9_8_.aClass318_Sub9_6469)) {
                         Class318_Sub9_Sub2 class318_sub9_sub2 = (Class318_Sub9_Sub2) class318_sub9_8_;
-                        int i_9_ = (int) (f_4_ + ((float) (class318_sub9_sub2.anInt8796 >> -271966900) * f_2_ + (float) ((class318_sub9_sub2.anInt8791) >> 1348930796) * f + (float) ((class318_sub9_sub2.anInt8789) >> 643267468) * f_3_));
+                        int i_9_ = (int) (f_4_ + ((float) (class318_sub9_sub2.anInt8796 >> 12) * f_2_ + (float) ((class318_sub9_sub2.anInt8791) >> 12) * f + (float) ((class318_sub9_sub2.anInt8789) >> 12) * f_3_));
                         if (i_7_ < i_9_) i_7_ = i_9_;
                         if (i_6_ > i_9_) i_6_ = i_9_;
                         anIntArray3032[i_5_++] = i_9_;
@@ -184,14 +184,14 @@ final class Class233 {
                         for (int i_58_ = -1 + i_57_; i_58_ >= 0; i_58_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3031[i_56_][i_58_]);
                             int i_59_ = (class318_sub9_sub2.anInt8790);
-                            byte i_60_ = (byte) (i_59_ >> -319015984);
-                            byte i_61_ = (byte) (i_59_ >> 104964232);
+                            byte i_60_ = (byte) (i_59_ >> 16);
+                            byte i_61_ = (byte) (i_59_ >> 8);
                             byte i_62_ = (byte) i_59_;
-                            byte i_63_ = (byte) (i_59_ >>> -900582568);
-                            float f_64_ = (float) (class318_sub9_sub2.anInt8791 >> 452963788);
-                            float f_65_ = (float) (class318_sub9_sub2.anInt8796 >> -2131197972);
-                            float f_66_ = (float) (class318_sub9_sub2.anInt8789 >> 1052672716);
-                            int i_67_ = ((class318_sub9_sub2.anInt8793) >> 1855056108);
+                            byte i_63_ = (byte) (i_59_ >>> 24);
+                            float f_64_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                            float f_65_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                            float f_66_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                            int i_67_ = ((class318_sub9_sub2.anInt8793) >> 12);
                             aClass348_Sub49_Sub1_3020.method3400(0.0F, (byte) -88);
                             aClass348_Sub49_Sub1_3020.method3400(0.0F, (byte) -96);
                             aClass348_Sub49_Sub1_3020.method3400((float) -i_67_ * f_24_ + f_64_, (byte) -96);
@@ -234,14 +234,14 @@ final class Class233 {
                             for (int i_69_ = anIntArray3035[i_68_] - 1; i_69_ >= 0; i_69_--) {
                                 Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3030[i_68_][i_69_]);
                                 int i_70_ = (class318_sub9_sub2.anInt8790);
-                                byte i_71_ = (byte) (i_70_ >> 1542759504);
-                                byte i_72_ = (byte) (i_70_ >> -755379768);
+                                byte i_71_ = (byte) (i_70_ >> 16);
+                                byte i_72_ = (byte) (i_70_ >> 8);
                                 byte i_73_ = (byte) i_70_;
-                                byte i_74_ = (byte) (i_70_ >>> 1724620856);
-                                float f_75_ = (float) (class318_sub9_sub2.anInt8791 >> 632083564);
-                                float f_76_ = (float) (class318_sub9_sub2.anInt8796 >> -551087476);
-                                float f_77_ = (float) (class318_sub9_sub2.anInt8789 >> 1855739532);
-                                int i_78_ = (class318_sub9_sub2.anInt8793 >> 1572201996);
+                                byte i_74_ = (byte) (i_70_ >>> 24);
+                                float f_75_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                                float f_76_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                                float f_77_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                                int i_78_ = (class318_sub9_sub2.anInt8793 >> 12);
                                 aClass348_Sub49_Sub1_3020.method3400(0.0F, (byte) -77);
                                 aClass348_Sub49_Sub1_3020.method3400(0.0F, (byte) -103);
                                 aClass348_Sub49_Sub1_3020.method3400((float) -i_78_ * f_24_ + f_75_, (byte) -79);
@@ -289,14 +289,14 @@ final class Class233 {
                         for (int i_35_ = -1 + i_34_; i_35_ >= 0; i_35_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3031[i_33_][i_35_]);
                             int i_36_ = (class318_sub9_sub2.anInt8790);
-                            byte i_37_ = (byte) (i_36_ >> 1489574736);
-                            byte i_38_ = (byte) (i_36_ >> 744331240);
+                            byte i_37_ = (byte) (i_36_ >> 16);
+                            byte i_38_ = (byte) (i_36_ >> 8);
                             byte i_39_ = (byte) i_36_;
-                            byte i_40_ = (byte) (i_36_ >>> 630665784);
-                            float f_41_ = (float) (class318_sub9_sub2.anInt8791 >> 662455084);
-                            float f_42_ = (float) (class318_sub9_sub2.anInt8796 >> -1266192340);
-                            float f_43_ = (float) (class318_sub9_sub2.anInt8789 >> -1918646804);
-                            int i_44_ = ((class318_sub9_sub2.anInt8793) >> 145880268);
+                            byte i_40_ = (byte) (i_36_ >>> 24);
+                            float f_41_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                            float f_42_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                            float f_43_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                            int i_44_ = ((class318_sub9_sub2.anInt8793) >> 12);
                             aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
                             aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
                             aClass348_Sub49_Sub1_3020.method3399(18291, (float) -i_44_ * f_24_ + f_41_);
@@ -339,14 +339,14 @@ final class Class233 {
                             for (int i_46_ = -1 + anIntArray3035[i_45_]; i_46_ >= 0; i_46_--) {
                                 Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3030[i_45_][i_46_]);
                                 int i_47_ = (class318_sub9_sub2.anInt8790);
-                                byte i_48_ = (byte) (i_47_ >> -677345808);
-                                byte i_49_ = (byte) (i_47_ >> -641259768);
+                                byte i_48_ = (byte) (i_47_ >> 16);
+                                byte i_49_ = (byte) (i_47_ >> 8);
                                 byte i_50_ = (byte) i_47_;
-                                byte i_51_ = (byte) (i_47_ >>> -1739606664);
-                                float f_52_ = (float) (class318_sub9_sub2.anInt8791 >> -259728660);
-                                float f_53_ = (float) (class318_sub9_sub2.anInt8796 >> 785980556);
-                                float f_54_ = (float) (class318_sub9_sub2.anInt8789 >> 1677319308);
-                                int i_55_ = (class318_sub9_sub2.anInt8793 >> 1896095500);
+                                byte i_51_ = (byte) (i_47_ >>> 24);
+                                float f_52_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                                float f_53_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                                float f_54_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                                int i_55_ = (class318_sub9_sub2.anInt8793 >> 12);
                                 aClass348_Sub49_Sub1_3020.method3399(i_18_ + -785962265, 0.0F);
                                 aClass348_Sub49_Sub1_3020.method3399(18291, 0.0F);
                                 aClass348_Sub49_Sub1_3020.method3399(i_18_ ^ 0x2ed95bff, f_52_ + (float) -i_55_ * f_24_);

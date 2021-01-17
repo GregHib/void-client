@@ -32,7 +32,7 @@ final class Class318_Sub2 extends Class318 {
                         } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                             Object object = null;
                             Class51 class51;
-                            if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (0x7fffffffL & ((class348_sub42_sub12.aLong9605) >>> 1787173280))));
+                            if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (0x7fffffffL & ((class348_sub42_sub12.aLong9605) >>> 32))));
                             else class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
                             if (class51.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47));
                             if (class51 != null) is = class51.anIntArray917;
@@ -84,11 +84,11 @@ final class Class318_Sub2 extends Class318 {
                 int i_15_ = (i_12_ > i_13_ - -1 ? Class186_Sub1.method1399(7, string.charAt(1 + i_13_)) : -1);
                 int i_16_ = (2 + i_13_ < i_12_ ? Class186_Sub1.method1399(7, string.charAt(i_13_ + 2)) : -1);
                 int i_17_ = (i_12_ <= 3 + i_13_ ? -1 : Class186_Sub1.method1399(7, string.charAt(i_13_ + 3)));
-                is[i_10_++] = (byte) Class273.method2057(i_14_ << -1270769342, i_15_ >>> 1087501732);
+                is[i_10_++] = (byte) Class273.method2057(i_14_ << 2, i_15_ >>> 4);
                 if (i_16_ == -1) break;
-                is[i_10_++] = (byte) Class273.method2057((Class139.method1166(15, i_15_) << -2046845404), i_16_ >>> 647108994);
+                is[i_10_++] = (byte) Class273.method2057((Class139.method1166(15, i_15_) << 4), i_16_ >>> 2);
                 if (i_17_ == -1) break;
-                is[i_10_++] = (byte) Class273.method2057((Class139.method1166(3, i_16_) << -1508075802), i_17_);
+                is[i_10_++] = (byte) Class273.method2057((Class139.method1166(3, i_16_) << 6), i_17_);
             }
             return -i_11_ + i_10_;
         } catch (RuntimeException runtimeexception) {

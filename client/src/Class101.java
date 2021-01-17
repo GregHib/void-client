@@ -24,8 +24,8 @@ abstract class Class101 {
     static final void method893(byte i) {
         Class348_Sub40_Sub22.method3111(91, Class316.aClass348_Sub51_3959.aClass239_Sub6_7226.method1743(-32350));
         anInt1595++;
-        int i_4_ = ((Class286_Sub4.anInt6246 >> 239567308) - -(za_Sub2.anInt9780 >> 515880227));
-        int i_5_ = ((Class90.anInt1517 >> 591146499) + (Class59_Sub2_Sub2.anInt8685 >> 1861651468));
+        int i_4_ = ((Class286_Sub4.anInt6246 >> 12) - -(za_Sub2.anInt9780 >> 3));
+        int i_5_ = ((Class90.anInt1517 >> 3) + (Class59_Sub2_Sub2.anInt8685 >> 12));
         Class355.anInt4372 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381 = (byte) 0;
         Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2449(8, 8, (byte) 118);
         if (i != -49) anInt1597 = 115;
@@ -43,9 +43,9 @@ abstract class Class101 {
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_6_][];
         Class129.aByteArrayArray1887 = new byte[i_6_][];
         i_6_ = 0;
-        for (int i_7_ = (i_4_ + -(Class367_Sub4.anInt7319 >> 1284666244)) / 8; (i_4_ - -(Class367_Sub4.anInt7319 >> 21179204)) / 8 >= i_7_; i_7_++) {
-            for (int i_8_ = (-(Class348_Sub40_Sub3.anInt9109 >> 1754847652) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.anInt9109 >> -1988934620)) / 8 >= i_8_); i_8_++) {
-                int i_9_ = i_8_ + (i_7_ << 1959591592);
+        for (int i_7_ = (i_4_ + -(Class367_Sub4.anInt7319 >> 4)) / 8; (i_4_ - -(Class367_Sub4.anInt7319 >> 4)) / 8 >= i_7_; i_7_++) {
+            for (int i_8_ = (-(Class348_Sub40_Sub3.anInt9109 >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8 >= i_8_); i_8_++) {
+                int i_9_ = i_8_ + (i_7_ << 8);
                 Class348_Sub23_Sub3.anIntArray9042[i_6_] = i_9_;
                 aa_Sub1.anIntArray5192[i_6_] = Class367_Sub10.aClass45_7382.method417("m" + i_7_ + "_" + i_8_, i + 49);
                 Applet_Sub1.anIntArray38[i_6_] = Class367_Sub10.aClass45_7382.method417("l" + i_7_ + "_" + i_8_, 0);

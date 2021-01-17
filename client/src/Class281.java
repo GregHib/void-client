@@ -45,7 +45,7 @@ final class Class281 {
         int i_2_ = string.length();
         int i_3_ = 0;
         for (int i_4_ = 0; i_2_ > i_4_; i_4_++)
-            i_3_ = (Class354.method3464(string.charAt(i_4_), false) + ((i_3_ << -126731387) - i_3_));
+            i_3_ = (Class354.method3464(string.charAt(i_4_), false) + ((i_3_ << 5) - i_3_));
         if (i != -29286) return 0;
         return i_3_;
     }

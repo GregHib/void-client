@@ -18,7 +18,7 @@ final class Class15 {
     static final int method256(int i, byte i_0_) {
         anInt228++;
         if (i_0_ < 61) method257(-27, null, 'G');
-        return i >>> 129941127;
+        return i >>> 7;
     }
 
     static final int method257(int i, String string, char c) {

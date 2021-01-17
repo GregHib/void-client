@@ -44,8 +44,8 @@ final class Class151 {
                         i_10_ = 256 * i_10_ / (Class348_Sub49_Sub1.anInt9750 - -256);
                         i_9_ = i_9_ * 256 / (Class348_Sub49_Sub1.anInt9750 - -256);
                     }
-                    int i_11_ = i_5_ * i_10_ + i_3_ * i_9_ >> -1536877746;
-                    int i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) >> -816073010;
+                    int i_11_ = i_5_ * i_10_ + i_3_ * i_9_ >> 14;
+                    int i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) >> 14;
                     class105.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(class105.method966() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(class105.method980() / 2))), var_aa, i_2_, i);
                 }
             }
@@ -56,7 +56,7 @@ final class Class151 {
 
     static final void method1212(int i, int i_13_, int i_14_, int i_15_) {
         anInt2059++;
-        i = Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) * i >> -1161142392;
+        i = Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) * i >> 8;
         if (i_14_ == i_13_ && !Class74.aBoolean1236) Class104.method960(1);
         else if (i_13_ != -1 && (i_13_ != Class267.anInt3428 || !Class167.method1296(true)) && i != 0 && !Class74.aBoolean1236) {
             Class40.method368(i, 18002, false, i_13_, Class59_Sub2_Sub1.aClass45_8667, 0, i_15_);

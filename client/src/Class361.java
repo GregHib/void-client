@@ -233,11 +233,11 @@ final class Class361 {
                             if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
                                 int i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259));
                                 int i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_);
-                                var_ha.method3675(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << -96926312 | 0xffff00));
+                                var_ha.method3675(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << 24 | 0xffff00));
                             } else if (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)) {
                                 int i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / Class75.anInt1259));
                                 int i_53_ = i_41_ - -(i_43_ * (Class75.anInt1267 + -(class348_sub21.anInt6851)) / Class75.anInt1267);
-                                var_ha.method3675(4, (byte) -125, i_52_ + -2, -2 + i_53_, 4, (i_49_ << -400160968 | 0xffff00));
+                                var_ha.method3675(4, (byte) -125, i_52_ + -2, -2 + i_53_, 4, (i_49_ << 24 | 0xffff00));
                             }
                         }
                     }
@@ -278,7 +278,7 @@ final class Class361 {
 
     static final void method3502(int i, int i_61_, int i_62_, int i_63_) {
         anInt4439++;
-        String string = ("tele " + i_62_ + "," + (i_63_ >> -219309274) + "," + (i >> 621781894) + "," + (0x3f & i_63_) + "," + (0x3f & i));
+        String string = ("tele " + i_62_ + "," + (i_63_ >> 6) + "," + (i >> 6) + "," + (0x3f & i_63_) + "," + (0x3f & i));
         System.out.println(string);
         if (i_61_ != 2) method3502(-25, -23, 24, 63);
         Class82.method812(string, true, false, (byte) -79);

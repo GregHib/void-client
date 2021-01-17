@@ -50,7 +50,7 @@ final class Class297 implements Runnable {
 
     final Class144 method2229(int i, int i_0_, int i_1_, int i_2_, byte i_3_) {
         if (i_3_ != -11) aLong3781 = 34L;
-        return method2246(8, (i_1_ << -1229135248) - -i, 6, i_0_ + (i_2_ << -1182263728), null);
+        return method2246(8, (i_1_ << 16) - -i, 6, i_0_ + (i_2_ << 16), null);
     }
 
     final Class144 method2230(Class[] var_classes, int i, Class var_class, String string) {
@@ -133,7 +133,7 @@ final class Class297 implements Runnable {
                 } else if (this.aBoolean3777) {
                     if (i == 3) {
                         if (aLong3781 > Class62.method599(-123)) throw new IOException();
-                        String string = (((0xff & (class144.anInt2000 >> 1726433208))) + "." + (0xff & (class144.anInt2000 >> -1141472112)) + "." + ((class144.anInt2000 >> 1095645000) & 0xff) + "." + (0xff & class144.anInt2000));
+                        String string = (((0xff & (class144.anInt2000 >> 24))) + "." + (0xff & (class144.anInt2000 >> 16)) + "." + ((class144.anInt2000 >> 8) & 0xff) + "." + (0xff & class144.anInt2000));
                         class144.anObject1998 = InetAddress.getByName(string).getHostName();
                     } else if (i == 21) {
                         if (Class62.method599(-82) < aLong3781) throw new IOException();
@@ -143,9 +143,9 @@ final class Class297 implements Runnable {
                             Frame frame = (new Frame("Jagex Full Screen"));
                             class144.anObject1998 = frame;
                             frame.setResizable(false);
-                            if (this.aBoolean3794) aClass134_3802.method1146((class144.anInt2000 & 0xffff), (class144.anInt1999 >> 1209541904), (class144.anInt2000 >>> 1536588080), -43, 0xffff & (class144.anInt1999), frame);
+                            if (this.aBoolean3794) aClass134_3802.method1146((class144.anInt2000 & 0xffff), (class144.anInt1999 >> 16), (class144.anInt2000 >>> 16), -43, 0xffff & (class144.anInt1999), frame);
                             else
-                                Class.forName("Class7").getMethod("method209", (new Class[]{(aClass3807 != null ? aClass3807 : (aClass3807 = (method2249("java.awt.Frame")))), Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE})).invoke(anObject3793, frame, (new Integer((class144.anInt2000) >>> 35629040)), (new Integer(0xffff & (class144.anInt2000))), (new Integer((class144.anInt1999) >> 972476528)), (new Integer((class144.anInt1999) & 0xffff)));
+                                Class.forName("Class7").getMethod("method209", (new Class[]{(aClass3807 != null ? aClass3807 : (aClass3807 = (method2249("java.awt.Frame")))), Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE})).invoke(anObject3793, frame, (new Integer((class144.anInt2000) >>> 16)), (new Integer(0xffff & (class144.anInt2000))), (new Integer((class144.anInt1999) >> 16)), (new Integer((class144.anInt1999) & 0xffff)));
                         } else if (i == 7) {
                             if (this.aBoolean3794) aClass134_3802.method1147(((Frame) (class144.anObject1996)), 8);
                             else Class.forName("Class7").getMethod("method211", new Class[0]).invoke(anObject3793);

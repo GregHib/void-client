@@ -23,7 +23,7 @@ final class Class304 {
         anInt3848++;
         if (i < i_3_) {
             i_0_ += i;
-            i_2_ = -i + i_3_ >> 1976000866;
+            i_2_ = -i + i_3_ >> 2;
             while (--i_2_ >= 0) {
                 is[i_0_++] = (byte) 1;
                 is[i_0_++] = (byte) 1;

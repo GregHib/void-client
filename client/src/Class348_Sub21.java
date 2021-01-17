@@ -17,7 +17,7 @@ final class Class348_Sub21 extends Class348 {
     static final void method2954(byte i) {
         anInt6856++;
         if (za_Sub1.anInt9775 != -1 && Class292.anInt4803 != -1) {
-            int i_0_ = ((Class117.anInt1780 * (Class331.anInt4133 + -Class195.anInt5019) >> 1817537424) + Class195.anInt5019);
+            int i_0_ = ((Class117.anInt1780 * (Class331.anInt4133 + -Class195.anInt5019) >> 16) + Class195.anInt5019);
             Class117.anInt1780 += i_0_;
             if (Class117.anInt1780 < 65535) {
                 Class347.aBoolean4284 = false;
@@ -62,7 +62,7 @@ final class Class348_Sub21 extends Class348 {
             double d = Math.sqrt(f_21_ * f_21_ + f_23_ * f_23_);
             Class348_Sub42_Sub19.anInt9701 = 0x3fff & (int) (2607.5945876176133 * Math.atan2(f_22_, d));
             Class5.anInt4638 = 0x3fff & (int) (2607.5945876176133 * -Math.atan2(f_21_, f_23_));
-            Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][i_1_][3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][i_1_][3]) + (Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][2 + i_1_][3])) * Class117.anInt1780) >> -1809261616));
+            Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][i_1_][3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][i_1_][3]) + (Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][2 + i_1_][3])) * Class117.anInt1780) >> 16));
         }
     }
 

@@ -56,12 +56,12 @@ final class Class348_Sub40_Sub21 extends Class348_Sub40 {
 
     private final boolean method3105(int i, int i_8_, int i_9_) {
         anInt9273++;
-        int i_10_ = (i_9_ + i) * anInt9279 >> 706529164;
-        int i_11_ = Class127.anIntArray4654[(i_10_ * 255 & 0xfff2f) >> -1918018836];
+        int i_10_ = (i_9_ + i) * anInt9279 >> 12;
+        int i_11_ = Class127.anIntArray4654[(i_10_ * 255 & 0xfff2f) >> 12];
         if (i_8_ != -7981) anInt9266 = -52;
-        i_11_ = (i_11_ << -1990692532) / anInt9279;
-        i_11_ = (i_11_ << -200932500) / anInt9277;
-        i_11_ = i_11_ * anInt9276 >> 395676524;
+        i_11_ = (i_11_ << 12) / anInt9279;
+        i_11_ = (i_11_ << 12) / anInt9277;
+        i_11_ = i_11_ * anInt9276 >> 12;
         return i_11_ > i + -i_9_ && -i_9_ + i > -i_11_;
     }
 
@@ -128,22 +128,22 @@ final class Class348_Sub40_Sub21 extends Class348_Sub40 {
         long l = 4194304L;
         long l_17_ = -9223372036854775808L;
         Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-107));
-        long l_18_ = interface10.method39(-14) << -810638610 | (i_16_ | i_15_ << 409106119) | interface10.method41(-32228) << -1876485644 | 0x40000000;
+        long l_18_ = interface10.method39(-14) << 14 | (i_16_ | i_15_ << 7) | interface10.method41(-32228) << 20 | 0x40000000;
         if (class51.anInt874 == 0) l_18_ |= l_17_;
         if (class51.anInt895 == 1) l_18_ |= l;
         int i_19_ = 57 % ((-24 - i) / 57);
-        l_18_ |= (long) interface10.method42(-102) << 1771513312;
+        l_18_ |= (long) interface10.method42(-102) << 32;
         return l_18_;
     }
 
     private final boolean method3108(int i, int i_20_, int i_21_) {
         if (i_20_ != 9619) return true;
         anInt9271++;
-        int i_22_ = anInt9279 * (i - i_21_) >> -613325908;
-        int i_23_ = Class127.anIntArray4654[(0xff530 & 255 * i_22_) >> -1766956564];
-        i_23_ = (i_23_ << 1313955820) / anInt9279;
-        i_23_ = (i_23_ << -1206741460) / anInt9277;
-        i_23_ = anInt9276 * i_23_ >> -30765876;
+        int i_22_ = anInt9279 * (i - i_21_) >> 12;
+        int i_23_ = Class127.anIntArray4654[(0xff530 & 255 * i_22_) >> 12];
+        i_23_ = (i_23_ << 12) / anInt9279;
+        i_23_ = (i_23_ << 12) / anInt9277;
+        i_23_ = anInt9276 * i_23_ >> 12;
         return i_23_ > i_21_ - -i && -i_23_ < i + i_21_;
     }
 
@@ -160,7 +160,7 @@ final class Class348_Sub40_Sub21 extends Class348_Sub40 {
         for (int i = 0; i < 256; i++) {
             long l = i;
             for (int i_24_ = 0; i_24_ < 8; i_24_++) {
-                if ((0x1L & l) == 1L) l = ~0x3693a86a2878f0bdL ^ l >>> 2032730177;
+                if ((0x1L & l) == 1L) l = ~0x3693a86a2878f0bdL ^ l >>> 1;
                 else l >>>= 1;
             }
             aLongArray9283[i] = l;

@@ -37,8 +37,8 @@ final class Class348_Sub41 extends Class348 {
                     if (i_9_ == 0) break;
                     i_6_ += -1 + i_9_;
                     int i_10_ = i_6_ & 0x3f;
-                    int i_11_ = i_6_ >> -131632442 & 0x3f;
-                    int i_12_ = class348_sub49.readUnsignedByte(255) >> 1964747714;
+                    int i_11_ = i_6_ >> 6 & 0x3f;
+                    int i_12_ = class348_sub49.readUnsignedByte(255) >> 2;
                     int i_13_ = i_11_ - -i_0_;
                     int i_14_ = i_2_ + i_10_;
                     if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
@@ -80,8 +80,8 @@ final class Class348_Sub41 extends Class348 {
             Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
             int i_18_ = za_Sub2.anInt9780;
             int i_19_ = Class90.anInt1517;
-            za_Sub2.anInt9780 = (-(Class367_Sub4.anInt7319 >> 22403844) + ha.anInt4581) * 8;
-            Class90.anInt1517 = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 >> 809039044));
+            za_Sub2.anInt9780 = (-(Class367_Sub4.anInt7319 >> 4) + ha.anInt4581) * 8;
+            Class90.anInt1517 = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 >> 4));
             Class348_Sub26.aClass348_Sub42_Sub14_6885 = Class75.method766(ha.anInt4581 * 8, Class327.anInt4095 * 8);
             r_Sub2.aClass252_10488 = null;
             int i_20_ = za_Sub2.anInt9780 - i_18_;
@@ -164,7 +164,7 @@ final class Class348_Sub41 extends Class348 {
                     for (Class348_Sub37 class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3484(0)); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
                         int i_33_ = (int) (0x3fffL & class348_sub37.aLong4291);
                         int i_34_ = -za_Sub2.anInt9780 + i_33_;
-                        int i_35_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> -1372612402));
+                        int i_35_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
                         int i_36_ = i_35_ + -Class90.anInt1517;
                         if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.anInt7319) || i_36_ >= Class348_Sub40_Sub3.anInt9109) class348_sub37.method2715((byte) 37);
                     }

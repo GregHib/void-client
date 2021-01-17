@@ -1948,7 +1948,7 @@ abstract class ha_Sub3 extends ha {
     }
 
     final void method3909(byte i, int i_209_) {
-        method3894(-28186, i | (i << 374072168 | (i << -578597712 | i << 645072952)));
+        method3894(-28186, i | (i << 8 | (i << 16 | i << 24)));
         anInt7996++;
         if (i_209_ > -103) method3887((byte) 51);
     }
@@ -1983,7 +1983,7 @@ abstract class ha_Sub3 extends ha {
                 } else {
                     for (int i_215_ = 0; i_215_ < class207.anInt2696; i_215_++) {
                         for (int i_216_ = 0; class207.anInt2702 > i_216_; i_216_++) {
-                            is[i_211_++] = (Class273.method2057((class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]), 255)]), (class207.aByteArray2695[i] << 109322168)));
+                            is[i_211_++] = (Class273.method2057((class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]), 255)]), (class207.aByteArray2695[i] << 24)));
                             i++;
                         }
                     }

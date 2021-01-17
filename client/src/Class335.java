@@ -53,9 +53,9 @@ final class Class335 {
                 }
             }
             class348_sub9.anInt6678 = (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt6377);
-            class348_sub9.anInt6698 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt6377) - -(class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.method2436((byte) 55) << -206175832));
+            class348_sub9.anInt6698 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt6377) - -(class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.method2436((byte) 55) << 8));
             class348_sub9.anInt6689 = (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt6388);
-            class348_sub9.anInt6687 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt6388) + (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.method2436((byte) 92) << 271262248));
+            class348_sub9.anInt6687 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.anInt6388) + (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691.method2436((byte) 92) << 8));
             Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
         }
         Class348_Sub9 class348_sub9 = ((Class348_Sub9) Class348_Sub42_Sub16_Sub2.aClass356_10465.method3484(0));
@@ -95,9 +95,9 @@ final class Class335 {
                 }
             }
             class348_sub9.anInt6678 = (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt6377);
-            class348_sub9.anInt6698 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt6377) + (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.method2436((byte) 123) << -125487992));
+            class348_sub9.anInt6698 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt6377) + (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.method2436((byte) 123) << 8));
             class348_sub9.anInt6689 = (class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt6388);
-            class348_sub9.anInt6687 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt6388) - -(class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.method2436((byte) 126) << -658545816));
+            class348_sub9.anInt6687 = ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt6388) - -(class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679.method2436((byte) 126) << 8));
             Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
         }
     }

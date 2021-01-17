@@ -9,7 +9,7 @@ final class Class130_Sub1 extends Class130 {
     static final void method1131(int i) {
         int j = 64 / ((11 - i) / 54);
         anInt5795++;
-        Class60.aHa1098.L(Class187.anInt2500, Class316.aClass348_Sub51_3959.aClass239_Sub16_7247.method1789(-32350) != 1 ? -1 : Class36.anInt486 - -256 << 0xea4f7342, 0);
+        Class60.aHa1098.L(Class187.anInt2500, Class316.aClass348_Sub51_3959.aClass239_Sub16_7247.method1789(-32350) != 1 ? -1 : Class36.anInt486 - -256 << 2, 0);
     }
 
     static final boolean method1132(int i, int j, int k) {

@@ -312,19 +312,19 @@ final class Class105_Sub1 extends Class105 {
             for (int i_80_ = 0; anInt8417 > i_80_; i_80_++) {
                 int i_81_ = i_80_ * anInt8411;
                 for (int i_82_ = 0; i_82_ < anInt8411; i_82_++)
-                    is_79_[i_81_ + i_82_] = (Class273.method2057((Class139.method1166(1828651008, is[i_81_ - -i_82_]) << 1430274504), Class139.method1166(is_79_[i_81_ - -i_82_], 16777215)));
+                    is_79_[i_81_ + i_82_] = (Class273.method2057((Class139.method1166(1828651008, is[i_81_ - -i_82_]) << 8), Class139.method1166(is_79_[i_81_ - -i_82_], 16777215)));
             }
         } else if (i_78_ == 1) {
             for (int i_83_ = 0; anInt8417 > i_83_; i_83_++) {
                 int i_84_ = i_83_ * anInt8411;
                 for (int i_85_ = 0; anInt8411 > i_85_; i_85_++)
-                    is_79_[i_85_ + i_84_] = (Class273.method2057(Class139.method1166(is_79_[i_85_ + i_84_], 16777215), (Class139.method1166(is[i_84_ - -i_85_], 743571200) << -86836496)));
+                    is_79_[i_85_ + i_84_] = (Class273.method2057(Class139.method1166(is_79_[i_85_ + i_84_], 16777215), (Class139.method1166(is[i_84_ - -i_85_], 743571200) << 16)));
             }
         } else if (i_78_ == 2) {
             for (int i_89_ = 0; anInt8417 > i_89_; i_89_++) {
                 int i_90_ = i_89_ * anInt8411;
                 for (int i_91_ = 0; i_91_ < anInt8411; i_91_++)
-                    is_79_[i_90_ + i_91_] = (Class273.method2057(Class139.method1166(is_79_[i_90_ + i_91_], 16777215), Class139.method1166(-3725444, (is[i_91_ + i_90_] << -903347560))));
+                    is_79_[i_90_ + i_91_] = (Class273.method2057(Class139.method1166(is_79_[i_90_ + i_91_], 16777215), Class139.method1166(-3725444, (is[i_91_ + i_90_] << 24))));
             }
         } else if (i_78_ == 3) {
             for (int i_86_ = 0; anInt8417 > i_86_; i_86_++) {

@@ -1194,7 +1194,7 @@ public final class client extends Applet_Sub1 {
                                             }
                                             if (r.aBoolean9722 && ((Class38.anInt500 & 0x40) != 0)) {
                                                 Class46 class46_69_ = (Class348_Sub22.method2957(Class9.anInt169, (byte) -54, Class149.anInt2046));
-                                                if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (byte) -109, true, i_66_, (class46.anInt812), true, 15, ((class46.anInt704) << 32) | (class46.anInt830), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747));
+                                                if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (byte) -109, true, i_66_, (class46.anInt812), true, 15, ((class46.anInt704) << 0) | (class46.anInt830), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747));
                                                 else Class341.method2678(-2049);
                                             } else {
                                                 if ((Class348_Sub42_Sub8_Sub2.aClass230_10434) == (Class14_Sub4.aClass230_8638)) Class50_Sub3.method466(false, "", i_67_, (byte) -116, true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1);
@@ -1642,7 +1642,7 @@ public final class client extends Applet_Sub1 {
         if (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
             if (Class348_Sub40_Sub21.anInt9282 == 2) Class14_Sub1.method241((byte) 127);
             else Class348_Sub21.method2954((byte) -127);
-            if (Class286_Sub4.anInt6246 >> -1885185047 < 14 || (Class286_Sub4.anInt6246 >> 817127913 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 >> 114206697 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 >> 1350311433))
+            if (Class286_Sub4.anInt6246 >> 9 < 14 || (Class286_Sub4.anInt6246 >> 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 >> 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 >> 9))
                 Class101.method893((byte) -49);
         }
         if (i != 112) anInt5171 = 22;

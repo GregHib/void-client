@@ -94,9 +94,9 @@ final class Class348_Sub14 extends Class348 {
                 is[i_12_] = -16777216;
             Class108.aClass105_1664 = var_ha.method3662(512, is, (byte) 94, 0, 512, 512);
             Class358.method3489(-3);
-            int i_13_ = (((-10 + (238 + (int) (20.0 * Math.random())) << 2133185320) + (-10 + (int) (Math.random() * 20.0) + 238 << 547238064) - (-(int) (Math.random() * 20.0) + -228)) | ~0xffffff);
-            int i_14_ = (228 - -(int) (20.0 * Math.random()) << -1504898832 | ~0xffffff);
-            int i_15_ = ((int) (8.0 * Math.random()) | ((int) (8.0 * Math.random()) << -49172688 | (int) (8.0 * Math.random()) << -621657144));
+            int i_13_ = (((-10 + (238 + (int) (20.0 * Math.random())) << 8) + (-10 + (int) (Math.random() * 20.0) + 238 << 16) - (-(int) (Math.random() * 20.0) + -228)) | ~0xffffff);
+            int i_14_ = (228 - -(int) (20.0 * Math.random()) << 16 | ~0xffffff);
+            int i_15_ = ((int) (8.0 * Math.random()) | ((int) (8.0 * Math.random()) << 16 | (int) (8.0 * Math.random()) << 8));
             boolean[][] bools = (new boolean[3 + RuntimeException_Sub1.anInt4600]
                     [RuntimeException_Sub1.anInt4600 - -1 + 2]);
             for (int i_16_ = i_5_; i_16_ < i_5_ - -104; i_16_ += RuntimeException_Sub1.anInt4600) {
@@ -221,8 +221,8 @@ final class Class348_Sub14 extends Class348 {
                     Class348_Sub23_Sub2.aClass153_9031.method1220((byte) 116, 64, 1024);
                     for (int i_51_ = 0; i_51_ < r_Sub2.aClass252_10488.anInt3241; i_51_++) {
                         int i_52_ = (r_Sub2.aClass252_10488.anIntArray3238[i_51_]);
-                        if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) == i_52_ >> -172998788) {
-                            int i_53_ = ((i_52_ >> -1013473906 & 0x3fff) - za_Sub2.anInt9780);
+                        if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) == i_52_ >> 28) {
+                            int i_53_ = ((i_52_ >> 14 & 0x3fff) - za_Sub2.anInt9780);
                             int i_54_ = (i_52_ & 0x3fff) + -Class90.anInt1517;
                             if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);
                             else {

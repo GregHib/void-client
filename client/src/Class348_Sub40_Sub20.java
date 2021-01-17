@@ -19,7 +19,7 @@ final class Class348_Sub40_Sub20 extends Class348_Sub40 {
         anInt9262++;
         if (i_1_ < 14) aClass348_Sub4_9264 = null;
         int i_2_ = i_0_ - -(57 * i);
-        i_2_ ^= i_2_ << 1180720577;
+        i_2_ ^= i_2_ << 1;
         return (-(((789221 + 15731 * (i_2_ * i_2_)) * i_2_ + 1376312589 & 0x7fffffff) / 262144) + 4096);
     }
 

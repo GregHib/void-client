@@ -52,7 +52,7 @@ final class Class286_Sub5 extends Class286 {
     final void method2136(int i, int i_5_, byte i_6_) {
         anInt6252++;
         float f = -5.0E-4F * (float) (1 + (i & 0x3));
-        float f_7_ = 5.0E-4F * (float) (1 + ((i & 0x18) >> -466719645));
+        float f_7_ = 5.0E-4F * (float) (1 + ((i & 0x18) >> 3));
         float f_8_ = (i & 0x40) == 0 ? 4.8828125E-4F : 9.765625E-4F;
         boolean bool = (i & 0x80) != 0;
         this.aHa_Sub2_3684.method3738(-15039, 1);

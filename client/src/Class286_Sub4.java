@@ -56,12 +56,12 @@ final class Class286_Sub4 extends Class286 {
 
     static final int method2155(int i, byte i_3_) {
         if (i_3_ != 43) return -54;
-        i = (i & 0x55555555) + ((~0x55555554 & i) >>> -1508933023);
+        i = (i & 0x55555555) + ((~0x55555554 & i) >>> 1);
         anInt6241++;
-        i = (0x33333333 & i >>> -1060983742) + (0x33333333 & i);
-        i = 0xf0f0f0f & (i >>> -1446808796) + i;
-        i += i >>> 1189483944;
-        i += i >>> 2141644080;
+        i = (0x33333333 & i >>> 2) + (0x33333333 & i);
+        i = 0xf0f0f0f & (i >>> 4) + i;
+        i += i >>> 8;
+        i += i >>> 16;
         return i & 0xff;
     }
 
@@ -117,12 +117,12 @@ final class Class286_Sub4 extends Class286 {
     final void method2136(int i, int i_7_, byte i_8_) {
         if (aBoolean6233) {
             int i_9_ = 1 << (0x3 & i);
-            float f = (float) (1 << (0x7 & i >> -1543365501)) / 32.0F;
+            float f = (float) (1 << (0x7 & i >> 3)) / 32.0F;
             int i_10_ = i_7_ & 0xffff;
-            float f_11_ = (float) (0x3 & i_7_ >> 1976938512) / 8.0F;
-            float f_12_ = (float) ((i_7_ & 0x7c05fa) >> -1136962093) / 16.0F;
-            float f_13_ = (float) ((0x784c903 & i_7_) >> -1176310281) / 16.0F;
-            int i_14_ = (0x79631502 & i_7_) >> 884356891;
+            float f_11_ = (float) (0x3 & i_7_ >> 16) / 8.0F;
+            float f_12_ = (float) ((i_7_ & 0x7c05fa) >> 19) / 16.0F;
+            float f_13_ = (float) ((0x784c903 & i_7_) >> 23) / 16.0F;
+            int i_14_ = (0x79631502 & i_7_) >> 27;
             long l = aClass337_6234.aLong4178;
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "time"), (float) (i_9_ * (this.aHa_Sub2_3684.anInt7735) % 40000) / 40000.0F);
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "scale"), f);

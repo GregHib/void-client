@@ -258,10 +258,10 @@ final class Class330 {
     private final void method2634(int i, int i_62_, int i_63_, int i_64_, int i_65_) {
         anInt4110++;
         if (aClass97ArrayArray4122 != null) {
-            int i_66_ = -1 + i_63_ >> -1966430841;
-            int i_67_ = -1 + (i_65_ + i_63_ - 1) >> -390948537;
-            int i_68_ = i + -1 >> -1757142265;
-            int i_69_ = i_62_ + (-1 + (i - -i_64_)) >> -477227129;
+            int i_66_ = -1 + i_63_ >> 7;
+            int i_67_ = -1 + (i_65_ + i_63_ - 1) >> 7;
+            int i_68_ = i + -1 >> 7;
+            int i_69_ = i_62_ + (-1 + (i - -i_64_)) >> 7;
             for (int i_70_ = i_66_; i_67_ >= i_70_; i_70_++) {
                 Class97[] class97s = aClass97ArrayArray4122[i_70_];
                 for (int i_71_ = i_68_; i_69_ >= i_71_; i_71_++) {

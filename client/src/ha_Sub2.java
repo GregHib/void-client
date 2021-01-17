@@ -547,7 +547,7 @@ final class ha_Sub2 extends ha {
             float f_29_ = (float) i_22_ - (float) i_20_;
             float f_30_ = (float) (1.0 / Math.sqrt(f_29_ * f_29_ + f_28_ * f_28_));
             f_28_ *= f_30_;
-            OpenGL.glColor4ub((byte) (i_23_ >> 1509112720), (byte) (i_23_ >> 1465269896), (byte) i_23_, (byte) (i_23_ >> -1039413416));
+            OpenGL.glColor4ub((byte) (i_23_ >> 16), (byte) (i_23_ >> 8), (byte) i_23_, (byte) (i_23_ >> 24));
             f_29_ *= f_30_;
             OpenGL.glBegin(1);
             OpenGL.glTexCoord2f((float) (-i_25_ + i) * f, f_27_ * (float) (i_20_ + -i_26_));
@@ -819,7 +819,7 @@ final class ha_Sub2 extends ha {
             method3792(58);
             method3771((byte) -117, aClass258_Sub3_Sub1_7776);
             method3753(i_63_, 1);
-            OpenGL.glColor4ub((byte) (i_60_ >> -774897008), (byte) (i_60_ >> -1275297560), (byte) i_60_, (byte) (i_60_ >> -1810921544));
+            OpenGL.glColor4ub((byte) (i_60_ >> 16), (byte) (i_60_ >> 8), (byte) i_60_, (byte) (i_60_ >> 24));
             method3808(i_61_, 120);
             method3729(34165, (byte) 101, 34165);
             method3762(34166, 768, (byte) -87, 0);
@@ -903,11 +903,11 @@ final class ha_Sub2 extends ha {
         anInt7567++;
         method3753(i_83_, 1);
         OpenGL.glBegin(4);
-        OpenGL.glColor4ub((byte) (i_80_ >> -922029488), (byte) (i_80_ >> -363075352), (byte) i_80_, (byte) (i_80_ >> -738592904));
+        OpenGL.glColor4ub((byte) (i_80_ >> 16), (byte) (i_80_ >> 8), (byte) i_80_, (byte) (i_80_ >> 24));
         OpenGL.glVertex3f((float) i + 0.35F, (float) i_72_ + 0.35F, (float) i_73_);
-        OpenGL.glColor4ub((byte) (i_81_ >> 367288016), (byte) (i_81_ >> 1217613608), (byte) i_81_, (byte) (i_81_ >> -1536249672));
+        OpenGL.glColor4ub((byte) (i_81_ >> 16), (byte) (i_81_ >> 8), (byte) i_81_, (byte) (i_81_ >> 24));
         OpenGL.glVertex3f((float) i_74_ + 0.35F, (float) i_75_ + 0.35F, (float) i_76_);
-        OpenGL.glColor4ub((byte) (i_82_ >> -142028400), (byte) (i_82_ >> -1588100216), (byte) i_82_, (byte) (i_82_ >> -377920360));
+        OpenGL.glColor4ub((byte) (i_82_ >> 16), (byte) (i_82_ >> 8), (byte) i_82_, (byte) (i_82_ >> 24));
         OpenGL.glVertex3f(0.35F + (float) i_77_, (float) i_78_ + 0.35F, (float) i_79_);
         OpenGL.glEnd();
     }
@@ -973,7 +973,7 @@ final class ha_Sub2 extends ha {
         method3778((byte) -127);
         float f_92_ = f_90_ + (float) i_87_;
         method3753(i_89_, 1);
-        OpenGL.glColor4ub((byte) (i_88_ >> 569861520), (byte) (i_88_ >> 1465495208), (byte) i_88_, (byte) (i_88_ >> -928002024));
+        OpenGL.glColor4ub((byte) (i_88_ >> 16), (byte) (i_88_ >> 8), (byte) i_88_, (byte) (i_88_ >> 24));
         if (aBoolean7843) OpenGL.glDisable(32925);
         OpenGL.glBegin(7);
         OpenGL.glVertex2f(f, f_90_);
@@ -1027,7 +1027,7 @@ final class ha_Sub2 extends ha {
     final void GA(int i) {
         anInt7592++;
         method3753(0, 1);
-        OpenGL.glClearColor((float) (i & 0xff0000) / 1.671168E7F, (float) (0xff00 & i) / 65280.0F, (float) (0xff & i) / 255.0F, (float) (i >>> -968601000) / 255.0F);
+        OpenGL.glClearColor((float) (i & 0xff0000) / 1.671168E7F, (float) (0xff00 & i) / 65280.0F, (float) (0xff & i) / 255.0F, (float) (i >>> 24) / 255.0F);
         OpenGL.glClear(16384);
     }
 
@@ -1277,7 +1277,7 @@ final class ha_Sub2 extends ha {
         anInt7525++;
         method3753(i_112_, 1);
         float f = (float) i + 0.35F;
-        OpenGL.glColor4ub((byte) (i_111_ >> -396044880), (byte) (i_111_ >> -86733240), (byte) i_111_, (byte) (i_111_ >> -339234760));
+        OpenGL.glColor4ub((byte) (i_111_ >> 16), (byte) (i_111_ >> 8), (byte) i_111_, (byte) (i_111_ >> 24));
         float f_113_ = (float) i_109_ + 0.35F;
         OpenGL.glBegin(1);
         OpenGL.glVertex2f(f, f_113_);
@@ -1426,7 +1426,7 @@ final class ha_Sub2 extends ha {
             f *= f_129_;
             f_128_ *= f_129_;
         }
-        OpenGL.glColor4ub((byte) (i_126_ >> -2077419600), (byte) (i_126_ >> 1360079592), (byte) i_126_, (byte) (i_126_ >> 1738929368));
+        OpenGL.glColor4ub((byte) (i_126_ >> 16), (byte) (i_126_ >> 8), (byte) i_126_, (byte) (i_126_ >> 24));
         OpenGL.glBegin(1);
         OpenGL.glVertex2f(0.35F + (float) i, (float) i_123_ + 0.35F);
         OpenGL.glVertex2f(0.35F + (f + (float) i_124_), 0.35F + (f_128_ + (float) i_125_));
@@ -1572,10 +1572,10 @@ final class ha_Sub2 extends ha {
         if (anInt7868 <= i + i_141_ && anInt7855 >= -i_141_ + i && anInt7773 <= i_140_ + i_141_ && i_140_ + -i_141_ <= anInt7787) {
             method3778((byte) -117);
             method3753(i_143_, 1);
-            OpenGL.glColor4ub((byte) (i_142_ >> -202869680), (byte) (i_142_ >> -114727128), (byte) i_142_, (byte) (i_142_ >> -1918896680));
+            OpenGL.glColor4ub((byte) (i_142_ >> 16), (byte) (i_142_ >> 8), (byte) i_142_, (byte) (i_142_ >> 24));
             float f = (float) i + 0.35F;
             float f_144_ = (float) i_140_ + 0.35F;
-            int i_145_ = i_141_ << -1645082495;
+            int i_145_ = i_141_ << 1;
             if (aFloat7829 > (float) i_145_) {
                 OpenGL.glBegin(7);
                 OpenGL.glVertex2f(1.0F + f, 1.0F + f_144_);
@@ -1760,7 +1760,7 @@ final class ha_Sub2 extends ha {
             float f_166_ = (float) (1.0 / Math.sqrt(f_165_ * f_165_ + f * f));
             f *= f_166_;
             f_165_ *= f_166_;
-            OpenGL.glColor4ub((byte) (i_160_ >> -407472976), (byte) (i_160_ >> 530490792), (byte) i_160_, (byte) (i_160_ >> -460617384));
+            OpenGL.glColor4ub((byte) (i_160_ >> 16), (byte) (i_160_ >> 8), (byte) i_160_, (byte) (i_160_ >> 24));
             i_164_ %= i_162_ + i_163_;
             float f_167_ = (float) i_162_ * f;
             float f_168_ = f_165_ * (float) i_162_;
@@ -1947,7 +1947,7 @@ final class ha_Sub2 extends ha {
                 float f_197_ = (float) -i + (float) i_187_;
                 float f_198_ = (float) i_188_ - (float) i_186_;
                 float f_199_ = (float) (1.0 / Math.sqrt(f_197_ * f_197_ + f_198_ * f_198_));
-                OpenGL.glColor4ub((byte) (i_189_ >> -1912919152), (byte) (i_189_ >> 2066160904), (byte) i_189_, (byte) (i_189_ >> 1342572312));
+                OpenGL.glColor4ub((byte) (i_189_ >> 16), (byte) (i_189_ >> 8), (byte) i_189_, (byte) (i_189_ >> 24));
                 f_197_ *= f_199_;
                 f_198_ *= f_199_;
                 i_195_ %= i_194_ + i_193_;
@@ -2101,7 +2101,7 @@ final class ha_Sub2 extends ha {
             method3762(34167, 768, (byte) -87, 0);
             float f = (class258_sub3_sub1.aFloat9937 / (float) (class258_sub3_sub1.anInt9940));
             float f_214_ = (class258_sub3_sub1.aFloat9938 / (float) (class258_sub3_sub1.anInt9939));
-            OpenGL.glColor4ub((byte) (i >> 880062864), (byte) (i >> -1724466520), (byte) i, (byte) (i >> 586918264));
+            OpenGL.glColor4ub((byte) (i >> 16), (byte) (i >> 8), (byte) i, (byte) (i >> 24));
             OpenGL.glBegin(7);
             OpenGL.glTexCoord2f(f * (float) (anInt7868 + -i_212_), (float) (anInt7773 + -i_213_) * f_214_);
             OpenGL.glVertex2i(anInt7868, anInt7773);
@@ -2292,7 +2292,7 @@ final class ha_Sub2 extends ha {
         method3778((byte) -119);
         float f_245_ = -1.0F + (f_243_ + (float) i_240_);
         method3753(i_242_, 1);
-        OpenGL.glColor4ub((byte) (i_241_ >> 499977360), (byte) (i_241_ >> -1876422360), (byte) i_241_, (byte) (i_241_ >> 1065854040));
+        OpenGL.glColor4ub((byte) (i_241_ >> 16), (byte) (i_241_ >> 8), (byte) i_241_, (byte) (i_241_ >> 24));
         if (aBoolean7843) OpenGL.glDisable(32925);
         OpenGL.glBegin(2);
         OpenGL.glVertex2f(f, f_243_);
@@ -2351,8 +2351,8 @@ final class ha_Sub2 extends ha {
             int i_252_ = class348_sub1.method2720(-1);
             float f = class348_sub1.method2721(-76) / 255.0F;
             Class328_Sub1.aFloatArray6514[2] = (float) Class139.method1166(i_252_, 255) * f;
-            Class328_Sub1.aFloatArray6514[0] = ((float) (Class139.method1166(16762087, i_252_) >> -23446704) * f);
-            Class328_Sub1.aFloatArray6514[1] = ((float) (Class139.method1166(i_252_, 65533) >> -42240920) * f);
+            Class328_Sub1.aFloatArray6514[0] = ((float) (Class139.method1166(16762087, i_252_) >> 16) * f);
+            Class328_Sub1.aFloatArray6514[1] = ((float) (Class139.method1166(i_252_, 65533) >> 8) * f);
             OpenGL.glLightfv(i_251_, 4609, Class328_Sub1.aFloatArray6514, 0);
             OpenGL.glLightf(i_251_, 4617, 1.0F / (float) (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)));
             OpenGL.glEnable(i_251_);
@@ -2839,7 +2839,7 @@ final class ha_Sub2 extends ha {
         anInt7583++;
         method3753(i_303_, 1);
         float f = 0.35F + (float) i;
-        OpenGL.glColor4ub((byte) (i_302_ >> -994374448), (byte) (i_302_ >> 1427975400), (byte) i_302_, (byte) (i_302_ >> -267048680));
+        OpenGL.glColor4ub((byte) (i_302_ >> 16), (byte) (i_302_ >> 8), (byte) i_302_, (byte) (i_302_ >> 24));
         float f_304_ = (float) i_300_ + 0.35F;
         OpenGL.glBegin(1);
         OpenGL.glVertex2f(f, f_304_);
@@ -2937,7 +2937,7 @@ final class ha_Sub2 extends ha {
                 }
             }
             if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) == class318_sub1_sub3_sub3.aByte6381))) {
-                Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ >> -595777951, i_320_, i_319_, i_315_ >> 2059440961, class318_sub1_sub3_sub3, (byte) 100);
+                Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ >> 1, i_320_, i_319_, i_315_ >> 1, class318_sub1_sub3_sub3, (byte) 100);
                 if (Class239_Sub21.anIntArray6062[0] >= 0) {
                     if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || za.anInt7276 == 0 || za.anInt7276 == 3 || (za.anInt7276 == 1 && (Class348_Sub11.method2797(((Class318_Sub1_Sub3_Sub3_Sub2) class318_sub1_sub3_sub3).aString10544, (byte) -63)))) && Class88.anInt1497 < Class309.anInt4814) {
                         Class309.anIntArray4819[Class88.anInt1497] = ((Class369.aClass143_4962.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2);
@@ -2979,7 +2979,7 @@ final class ha_Sub2 extends ha {
                         Class105 class105 = class105s[0];
                         Class105 class105_328_ = class105s[i_325_];
                         i_323_ -= Math.max((Class369.aClass143_4962.anInt1988), class105.method969());
-                        int i_329_ = (Class239_Sub21.anIntArray6062[0] + (i_317_ + -(class105.method971() >> 1317367617)));
+                        int i_329_ = (Class239_Sub21.anIntArray6062[0] + (i_317_ + -(class105.method971() >> 1)));
                         int i_330_ = (class105.method971() * class318_sub1_sub3_sub3.anInt10295 / 255);
                         int i_331_ = class105.method969();
                         if (class318_sub1_sub3_sub3.anInt10295 > 0 && i_330_ < 2) i_330_ = 2;
@@ -3024,7 +3024,7 @@ final class ha_Sub2 extends ha {
                             } else i_336_ = class105.method971();
                             int i_338_ = class105.method969();
                             i_323_ -= i_338_;
-                            int i_339_ = (Class239_Sub21.anIntArray6062[0] + (i_317_ + -(class105.method971() >> -2077907103)));
+                            int i_339_ = (Class239_Sub21.anIntArray6062[0] + (i_317_ + -(class105.method971() >> 1)));
                             class105.method974(i_339_, i_323_);
                             Class348_Sub8.aHa6654.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_);
                             class105_332_.method974(i_339_, i_323_);
@@ -3051,8 +3051,8 @@ final class ha_Sub2 extends ha {
                         } else if (class79.anInt1375 >= 0 && (class79.anInt1375 < Class264.aClass105Array3378.length)) {
                             Class105 class105 = (Class264.aClass105Array3378[class79.anInt1375]);
                             i_323_ -= 25;
-                            class105.method974((i_317_ + (Class239_Sub21.anIntArray6062[0]) + -(class105.method971() >> -1621265407)), i_323_);
-                            Class338.method2663(-5590, (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> -805397247))), (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> -339613983)) + class105.method966()), i_323_, class105.method980() + i_323_);
+                            class105.method974((i_317_ + (Class239_Sub21.anIntArray6062[0]) + -(class105.method971() >> 1)), i_323_);
+                            Class338.method2663(-5590, (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> 1))), (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> 1)) + class105.method966()), i_323_, class105.method980() + i_323_);
                             i_323_ -= 2;
                         }
                     }
@@ -3111,7 +3111,7 @@ final class ha_Sub2 extends ha {
                             if (class31 == null) class318_sub1_sub3_sub3.anIntArray10219[i_344_] = -1;
                             else {
                                 int i_351_ = (class318_sub1_sub3_sub3.method2426(200) / 2);
-                                Class348_Sub13.method2801(i_351_, i_318_ >> -1646876255, i_320_, i_319_, i_315_ >> 1160500417, class318_sub1_sub3_sub3, (byte) -107);
+                                Class348_Sub13.method2801(i_351_, i_318_ >> 1, i_320_, i_319_, i_315_ >> 1, class318_sub1_sub3_sub3, (byte) -107);
                                 if (Class239_Sub21.anIntArray6062[0] > -1) {
                                     Class239_Sub21.anIntArray6062[0] += Class118.anIntArray1786[i_344_];
                                     Class239_Sub21.anIntArray6062[1] += Class106.anIntArray1636[i_344_];
@@ -3285,7 +3285,7 @@ final class ha_Sub2 extends ha {
                                     int i_413_ = (-Class367_Sub11.anInt7396 + (class318_sub1_sub3_sub3.anIntArray10219[i_344_]));
                                     int i_414_ = (-(class31.anInt424 * i_413_ / class31.anInt434) + class31.anInt424);
                                     int i_415_ = (-class31.anInt422 + (class31.anInt422 * i_413_ / class31.anInt434));
-                                    int i_416_ = (i_317_ + Class239_Sub21.anIntArray6062[0] + -(i_400_ >> -167601311) - -i_414_);
+                                    int i_416_ = (i_317_ + Class239_Sub21.anIntArray6062[0] + -(i_400_ >> 1) - -i_414_);
                                     int i_417_ = -12 + (i + ((Class239_Sub21.anIntArray6062[1]) - -i_415_));
                                     int i_418_ = i_417_;
                                     int i_419_ = i_417_ + i_374_;
@@ -3303,9 +3303,9 @@ final class ha_Sub2 extends ha {
                                         if (i_419_ < i_425_) i_419_ = i_425_;
                                     }
                                     int i_426_ = 255;
-                                    if (class31.anInt426 >= 0) i_426_ = ((i_413_ << 1167909288) / (-class31.anInt426 + (class31.anInt434)));
+                                    if (class31.anInt426 >= 0) i_426_ = ((i_413_ << 8) / (-class31.anInt426 + (class31.anInt434)));
                                     if (i_426_ >= 0 && i_426_ < 255) {
-                                        int i_427_ = i_426_ << 1184399416;
+                                        int i_427_ = i_426_ << 24;
                                         int i_428_ = 0xffffff | i_427_;
                                         if (class105_375_ != null) class105_375_.method964((-i_359_ + i_401_ + i_416_), i_417_, 0, i_428_, 1);
                                         if (class105_379_ != null) class105_379_.method964((-i_361_ + i_402_ + i_416_), i_417_, 0, i_428_, 1);
@@ -3416,26 +3416,26 @@ final class ha_Sub2 extends ha {
                 int i_452_ = ~0xffffff | i_448_;
                 if (Class309.anIntArray4806[i_438_] == 0) {
                     Class262.aClass324_3326.method2575((byte) 115, i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i);
-                    i_444_ -= i_443_ >> -1527899615;
-                    i_446_ -= i_443_ >> 1173651809;
+                    i_444_ -= i_443_ >> 1;
+                    i_446_ -= i_443_ >> 1;
                 }
                 if (Class309.anIntArray4806[i_438_] == 1) {
-                    i_446_ -= i_443_ >> -1547789087;
-                    i_444_ -= i_443_ >> 1064426241;
+                    i_446_ -= i_443_ >> 1;
+                    i_444_ -= i_443_ >> 1;
                     Class262.aClass324_3326.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Class239_Sub15.anInt6006, false);
                     i_447_ += 5;
                     i_445_ -= 5;
                 }
                 if (Class309.anIntArray4806[i_438_] == 2) {
                     i_447_ += 5;
-                    i_446_ -= -5 + (i_443_ >> 142018977);
+                    i_446_ -= -5 + (i_443_ >> 1);
                     Class262.aClass324_3326.method2581(string, i_452_, (Class239_Sub15.anInt6006), i_440_ + i, (byte) -112, -16777216, i_317_ - -i_439_);
                     i_445_ -= 5;
-                    i_444_ -= (i_443_ >> -1695666079) - -5;
+                    i_444_ -= (i_443_ >> 1) - -5;
                 }
                 if (Class309.anIntArray4806[i_438_] == 3) {
-                    i_446_ -= i_443_ >> -2028345439;
-                    i_444_ -= i_443_ >> 41564993;
+                    i_446_ -= i_443_ >> 1;
+                    i_444_ -= i_443_ >> 1;
                     i_447_ += 7;
                     Class262.aClass324_3326.method2577(Class239_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812[i_438_], i_439_ + i_317_, -20509);
                     i_445_ -= 7;
@@ -3456,16 +3456,16 @@ final class ha_Sub2 extends ha {
                     } else i_455_ = i_454_ - 25;
                     int i_456_ = (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988);
                     Class348_Sub8.aHa6654.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i);
-                    i_444_ -= i_443_ >> -1477560799;
+                    i_444_ -= i_443_ >> 1;
                     i_447_ += i_455_;
                     Class262.aClass324_3326.method2575((byte) -105, i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_));
                     i_445_ += i_455_;
-                    i_446_ -= i_443_ >> -1141783167;
+                    i_446_ -= i_443_ >> 1;
                     Class348_Sub8.aHa6654.KA(i_317_, i, i_318_ + i_317_, i_315_ + i);
                 }
             } else {
-                i_444_ -= i_443_ >> 799409921;
-                i_446_ -= i_443_ >> 975521729;
+                i_444_ -= i_443_ >> 1;
+                i_446_ -= i_443_ >> 1;
                 Class262.aClass324_3326.method2575((byte) 118, i_439_ + i_317_, -256, string, -16777216, i_440_ + i);
             }
             Class338.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_);
@@ -3615,7 +3615,7 @@ final class ha_Sub2 extends ha {
             } else {
                 for (int i_468_ = 0; class207.anInt2696 > i_468_; i_468_++) {
                     for (int i_469_ = 0; (i_469_ < class207.anInt2702); i_469_++) {
-                        is[i_467_++] = (Class273.method2057((class207.aByteArray2695[i] << 1325175288), (class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]), 255)])));
+                        is[i_467_++] = (Class273.method2057((class207.aByteArray2695[i] << 24), (class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]), 255)])));
                         i++;
                     }
                 }
@@ -3641,7 +3641,7 @@ final class ha_Sub2 extends ha {
     final void method3808(int i, int i_473_) {
         InputStream_Sub2.aFloatArray84[2] = (float) Class139.method1166(i, 255) / 255.0F;
         if (i_473_ <= 116) this.anInt7771 = 76;
-        InputStream_Sub2.aFloatArray84[3] = (float) (i >>> 444720536) / 255.0F;
+        InputStream_Sub2.aFloatArray84[3] = (float) (i >>> 24) / 255.0F;
         InputStream_Sub2.aFloatArray84[1] = (float) Class139.method1166(i, 65280) / 65280.0F;
         anInt7659++;
         InputStream_Sub2.aFloatArray84[0] = (float) Class139.method1166(16711680, i) / 1.671168E7F;

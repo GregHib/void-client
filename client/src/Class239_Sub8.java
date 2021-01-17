@@ -145,8 +145,8 @@ final class Class239_Sub8 extends Class239 {
                 Class250.anInt3225 = (Class73.anInt4784 + Class107.anInt1651 / Class344.anInt4267 - -2);
                 Class348_Sub16_Sub1.anInt8854 = Class58.anInt1067 * Class31.anInt425;
                 Class239_Sub16.anInt6008 = Class344.anInt4267 * Class250.anInt3225;
-                Class211.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 >> -344004767);
-                Class348_Sub42_Sub9_Sub1.anInt10444 = (Class239_Sub16.anInt6008 - Class107.anInt1651 >> 1812758785);
+                Class211.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 >> 1);
+                Class348_Sub42_Sub9_Sub1.anInt10444 = (Class239_Sub16.anInt6008 - Class107.anInt1651 >> 1);
             } else if (Class348_Sub49.anInt7207 == 2) {
                 Class348_Sub16_Sub1.anInt8854 = Class59_Sub1.anInt5283;
                 Class239_Sub16.anInt6008 = Class107.anInt1651;
@@ -183,7 +183,7 @@ final class Class239_Sub8 extends Class239 {
             if (class348_sub21.anInt6847 == i) {
                 int i_18_ = class348_sub21.anInt6852;
                 int i_19_ = class348_sub21.anInt6851;
-                int i_20_ = (i_19_ - -Class75.anInt1263 | Class75.anInt1266 + i_18_ << -521899634);
+                int i_20_ = (i_19_ - -Class75.anInt1263 | Class75.anInt1266 + i_18_ << 14);
                 int i_21_ = ((-i_19_ + i_17_) * (-i_19_ + i_17_) + (i_16_ - i_18_) * (-i_18_ + i_16_));
                 if (i_14_ < 0 || i_15_ > i_21_) {
                     i_15_ = i_21_;

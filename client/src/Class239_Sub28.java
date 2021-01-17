@@ -28,11 +28,11 @@ final class Class239_Sub28 extends Class239 {
         int i_11_ = class46.anInt789;
         if (class46.aByte778 == 0) class46.anInt709 = class46.anInt842;
         else if (class46.aByte778 != 1) {
-            if (class46.aByte778 == 2) class46.anInt709 = class46.anInt842 * i >> -2118078482;
+            if (class46.aByte778 == 2) class46.anInt709 = class46.anInt842 * i >> 14;
         } else class46.anInt709 = -class46.anInt842 + i;
         if (class46.aByte724 != 0) {
             if (class46.aByte724 != 1) {
-                if (class46.aByte724 == 2) class46.anInt789 = class46.anInt728 * i_9_ >> -1100535122;
+                if (class46.aByte724 == 2) class46.anInt789 = class46.anInt728 * i_9_ >> 14;
             } else class46.anInt789 = i_9_ - class46.anInt728;
         } else class46.anInt789 = class46.anInt728;
         if (class46.aByte778 == 4) class46.anInt709 = (class46.anInt789 * class46.anInt710 / class46.anInt775);

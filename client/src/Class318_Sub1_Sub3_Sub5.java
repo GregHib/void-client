@@ -189,8 +189,8 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                             int i_15_ = 0x3fff & -i_13_ + i_14_;
                             int i_16_ = Class70.anIntArray1207[i_15_];
                             int i_17_ = Class70.anIntArray1204[i_15_];
-                            int i_18_ = i_12_ * i_16_ + i_11_ * i_17_ >> 803701742;
-                            i_12_ = (-(i_11_ * i_16_) + i_12_ * i_17_ >> 266139598);
+                            int i_18_ = i_12_ * i_16_ + i_11_ * i_17_ >> 14;
+                            i_12_ = (-(i_11_ * i_16_) + i_12_ * i_17_ >> 14);
                             i_11_ = i_18_;
                             this.anInt6377 += i_11_;
                             this.anInt6388 += i_12_;
@@ -275,7 +275,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
     }
 
     Class318_Sub1_Sub3_Sub5(int i, int i_22_, int i_23_, int i_24_, int i_25_, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_, int i_32_, int i_33_, boolean bool, int i_34_) {
-        super(i_22_, i_23_, i_24_, Class275.method2064(i_24_, i_22_, 11219, i_25_) + -i_26_, i_25_, i_24_ >> 1935861961, i_24_ >> -1586353271, i_25_ >> -1765420471, i_25_ >> -1229148183, false, (byte) 0);
+        super(i_22_, i_23_, i_24_, Class275.method2064(i_24_, i_22_, 11219, i_25_) + -i_26_, i_25_, i_24_ >> 9, i_24_ >> 9, i_25_ >> 9, i_25_ >> 9, false, (byte) 0);
         anInt10365 = 0;
         anInt10403 = 0;
         aBoolean10407 = false;

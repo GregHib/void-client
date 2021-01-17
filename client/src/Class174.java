@@ -109,7 +109,7 @@ final class Class174 {
 
     final void method1337(int i) {
         anInt2300++;
-        this.anInt2298 = Class70.anIntArray1204[anInt2302 << 259569763];
+        this.anInt2298 = Class70.anIntArray1204[anInt2302 << 3];
         long l = this.anInt2291;
         long l_10_ = this.anInt2290;
         long l_11_ = this.anInt2294;

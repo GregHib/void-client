@@ -22,7 +22,7 @@ final class Class320 {
                 byte[] is = Class229.aClass45_2978.method410(i_0_ ^ ~0x717, i, i_2_);
                 if (is != null) {
                     Class46 class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_] = new Class46());
-                    class46.anInt830 = i_2_ + (i << 1180385680);
+                    class46.anInt830 = i_2_ + (i << 16);
                     if (is[0] != -1) throw new IllegalStateException("if1");
                     class46.method433(new Class348_Sub49(is), true);
                 }

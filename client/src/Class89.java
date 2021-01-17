@@ -114,7 +114,7 @@ final class Class89 {
             int i_23_ = i;
             for (int i_24_ = 0; i_24_ < 8; i_24_++) {
                 if ((i_23_ & 0x1) != 1) i_23_ >>>= 1;
-                else i_23_ = i_23_ >>> -1253707679 ^ ~0x12477cdf;
+                else i_23_ = i_23_ >>> 1 ^ ~0x12477cdf;
             }
             anIntArray1508[i] = i_23_;
         }

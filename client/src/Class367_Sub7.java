@@ -20,9 +20,9 @@ final class Class367_Sub7 extends Class367 {
         if (aBoolean7344) {
             IDirect3DDevice idirect3ddevice = aClass378_7346.anIDirect3DDevice9810;
             int i_2_ = 1 << (i_0_ & 0x3);
-            float f = (float) (1 << ((0x38 & i_0_) >> -1657014269)) / 32.0F;
+            float f = (float) (1 << ((0x38 & i_0_) >> 3)) / 32.0F;
             int i_3_ = i_1_ & 0xffff;
-            float f_4_ = (float) ((i_1_ & 0x320d7) >> -1712887664) / 8.0F;
+            float f_4_ = (float) ((i_1_ & 0x320d7) >> 16) / 8.0F;
             idirect3ddevice.a(14, (float) (this.aHa_Sub3_4479.anInt8146 * i_2_ % 40000) / 40000.0F, 0.0F, 0.0F, 0.0F);
             idirect3ddevice.a(15, f, 0.0F, 0.0F, 0.0F);
             idirect3ddevice.b(4, (float) i_3_, 0.0F, 0.0F, 0.0F);
@@ -56,7 +56,7 @@ final class Class367_Sub7 extends Class367 {
                 float f_6_ = (this.aHa_Sub3_4479.aFloat8173);
                 idirect3ddevice.a(16, f, 1.0F / (f - f_6_), 0.0F, 0.0F);
             }
-            idirect3ddevice.b(0, (float) ((this.aHa_Sub3_4479.anInt8144 >> -621516848) & 0xff) / 255.0F, (float) ((this.aHa_Sub3_4479.anInt8144 >> 1567558920) & 0xff) / 255.0F, (float) (this.aHa_Sub3_4479.anInt8144 & 0xff) / 255.0F, 0.0F);
+            idirect3ddevice.b(0, (float) ((this.aHa_Sub3_4479.anInt8144 >> 16) & 0xff) / 255.0F, (float) ((this.aHa_Sub3_4479.anInt8144 >> 8) & 0xff) / 255.0F, (float) (this.aHa_Sub3_4479.anInt8144 & 0xff) / 255.0F, 0.0F);
         }
         if (i != -16252) aClass378_7346 = null;
     }

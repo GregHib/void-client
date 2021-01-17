@@ -106,17 +106,17 @@ final class Class296 {
             anInt3771++;
             int i_15_ = 0;
             i += i_11_;
-            int i_16_ = i_12_ << 12223459;
+            int i_16_ = i_12_ << 3;
             if (i_13_ <= 14) method2226(null, 61, null, 89, 122, 10);
             for (/**/; i > i_11_; i_11_++) {
                 int i_17_ = 0xff & is[i_11_];
                 int i_18_ = anIntArray3766[i_17_];
                 int i_19_ = aByteArray3769[i_17_];
                 if (i_19_ == 0) throw new RuntimeException("No codeword for data value " + i_17_);
-                int i_20_ = i_16_ >> -198850077;
+                int i_20_ = i_16_ >> 3;
                 int i_21_ = i_16_ & 0x7;
-                i_15_ &= -i_21_ >> -1249434113;
-                int i_22_ = (i_21_ - -i_19_ + -1 >> 1825582691) + i_20_;
+                i_15_ &= -i_21_ >> 31;
+                int i_22_ = (i_21_ - -i_19_ + -1 >> 3) + i_20_;
                 i_16_ += i_19_;
                 i_21_ += 24;
                 is_14_[i_20_] = (byte) (i_15_ = Class273.method2057(i_15_, i_18_ >>> i_21_));
@@ -141,7 +141,7 @@ final class Class296 {
                     }
                 }
             }
-            return -i_12_ + (i_16_ - -7 >> 1600726371);
+            return -i_12_ + (i_16_ - -7 >> 3);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wda.C(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (is != null ? "{...}" : "null") + ',' + i_13_ + ',' + (is_14_ != null ? "{...}" : "null") + ')'));
         }

@@ -109,7 +109,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
             boolean bool_12_ = false;
             boolean bool_13_ = false;
             s var_s = aa_Sub1.aSArray5191[this.aByte6376];
-            int i_14_ = anInt10184 << -1650690047;
+            int i_14_ = anInt10184 << 1;
             int i_15_ = i_14_;
             int i_16_ = -i_14_ / 2;
             int i_17_ = -i_15_ / 2;
@@ -137,7 +137,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                 if (i_34_ != 0) class101.method908(-i_34_);
             }
             if (i_24_ + i_21_ < i_33_) i_33_ = i_24_ + i_21_;
-            i_33_ = (i_33_ >> 46522977) + -this.anInt6382;
+            i_33_ = (i_33_ >> 1) + -this.anInt6382;
             if (i_33_ != 0) class101.method891(0, i_33_, 0);
         }
         class101.method891(this.anInt6377, -10 + this.anInt6382, this.anInt6388);

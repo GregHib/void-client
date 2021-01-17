@@ -68,7 +68,7 @@ final class Class280 {
                     Class318_Sub9 class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503);
                     for (Class318_Sub9 class318_sub9_10_ = (class318_sub9.aClass318_Sub9_6469); class318_sub9 != class318_sub9_10_; class318_sub9_10_ = (class318_sub9_10_.aClass318_Sub9_6469)) {
                         Class318_Sub9_Sub2 class318_sub9_sub2 = (Class318_Sub9_Sub2) class318_sub9_10_;
-                        int i_11_ = (int) ((float) (class318_sub9_sub2.anInt8791 >> -1269979284) * f + f_4_ * (float) ((class318_sub9_sub2.anInt8796) >> 1246085868) + (float) (class318_sub9_sub2.anInt8789 >> 66762796) * f_5_ + f_6_);
+                        int i_11_ = (int) ((float) (class318_sub9_sub2.anInt8791 >> 12) * f + f_4_ * (float) ((class318_sub9_sub2.anInt8796) >> 12) + (float) (class318_sub9_sub2.anInt8789 >> 12) * f_5_ + f_6_);
                         if (i_9_ < i_11_) i_9_ = i_11_;
                         anIntArray3631[i_7_++] = i_11_;
                         if (i_8_ > i_11_) i_8_ = i_11_;
@@ -161,14 +161,14 @@ final class Class280 {
                         for (int i_60_ = i_59_ + -1; i_60_ >= 0; i_60_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3632[i_58_][i_60_]);
                             int i_61_ = (class318_sub9_sub2.anInt8790);
-                            byte i_62_ = (byte) (i_61_ >> 1814567952);
-                            byte i_63_ = (byte) (i_61_ >> -832218584);
+                            byte i_62_ = (byte) (i_61_ >> 16);
+                            byte i_63_ = (byte) (i_61_ >> 8);
                             byte i_64_ = (byte) i_61_;
-                            byte i_65_ = (byte) (i_61_ >>> 2034244920);
-                            float f_66_ = (float) (class318_sub9_sub2.anInt8791 >> -78374836);
-                            float f_67_ = (float) (class318_sub9_sub2.anInt8796 >> -140447572);
-                            float f_68_ = (float) (class318_sub9_sub2.anInt8789 >> 989328140);
-                            int i_69_ = ((class318_sub9_sub2.anInt8793) >> 927822636);
+                            byte i_65_ = (byte) (i_61_ >>> 24);
+                            float f_66_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                            float f_67_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                            float f_68_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                            int i_69_ = ((class318_sub9_sub2.anInt8793) >> 12);
                             stream.a(f_26_ * (float) -i_69_ + f_66_);
                             stream.a(f_67_ + f_27_ * (float) -i_69_);
                             stream.a(f_68_ + (float) -i_69_ * f_28_);
@@ -204,14 +204,14 @@ final class Class280 {
                             for (int i_71_ = -1 + anIntArray3627[i_70_]; i_71_ >= 0; i_71_--) {
                                 Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3642[i_70_][i_71_]);
                                 int i_72_ = (class318_sub9_sub2.anInt8790);
-                                byte i_73_ = (byte) (i_72_ >> 2110732976);
-                                byte i_74_ = (byte) (i_72_ >> 1078642568);
+                                byte i_73_ = (byte) (i_72_ >> 16);
+                                byte i_74_ = (byte) (i_72_ >> 8);
                                 byte i_75_ = (byte) i_72_;
-                                byte i_76_ = (byte) (i_72_ >>> -2009136648);
-                                float f_77_ = (float) (class318_sub9_sub2.anInt8791 >> 707732940);
-                                float f_78_ = (float) (class318_sub9_sub2.anInt8796 >> 1530985548);
-                                float f_79_ = (float) (class318_sub9_sub2.anInt8789 >> 1258372492);
-                                int i_80_ = (class318_sub9_sub2.anInt8793 >> -2009271764);
+                                byte i_76_ = (byte) (i_72_ >>> 24);
+                                float f_77_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                                float f_78_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                                float f_79_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                                int i_80_ = (class318_sub9_sub2.anInt8793 >> 12);
                                 stream.a(f_26_ * (float) -i_80_ + f_77_);
                                 stream.a((float) -i_80_ * f_27_ + f_78_);
                                 stream.a(f_79_ + f_28_ * (float) -i_80_);
@@ -252,14 +252,14 @@ final class Class280 {
                         for (int i_37_ = i_36_ + -1; i_37_ >= 0; i_37_--) {
                             Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3632[i_35_][i_37_]);
                             int i_38_ = (class318_sub9_sub2.anInt8790);
-                            byte i_39_ = (byte) (i_38_ >> -736715792);
-                            byte i_40_ = (byte) (i_38_ >> -1063337784);
+                            byte i_39_ = (byte) (i_38_ >> 16);
+                            byte i_40_ = (byte) (i_38_ >> 8);
                             byte i_41_ = (byte) i_38_;
-                            byte i_42_ = (byte) (i_38_ >>> -1252471048);
-                            float f_43_ = (float) (class318_sub9_sub2.anInt8791 >> -2025421812);
-                            float f_44_ = (float) (class318_sub9_sub2.anInt8796 >> -415207028);
-                            float f_45_ = (float) (class318_sub9_sub2.anInt8789 >> 392344716);
-                            int i_46_ = ((class318_sub9_sub2.anInt8793) >> -1509143636);
+                            byte i_42_ = (byte) (i_38_ >>> 24);
+                            float f_43_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                            float f_44_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                            float f_45_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                            int i_46_ = ((class318_sub9_sub2.anInt8793) >> 12);
                             stream.b((float) -i_46_ * f_26_ + f_43_);
                             stream.b(f_44_ + (float) -i_46_ * f_27_);
                             stream.b((float) -i_46_ * f_28_ + f_45_);
@@ -295,14 +295,14 @@ final class Class280 {
                             for (int i_48_ = anIntArray3627[i_47_] + -1; i_48_ >= 0; i_48_--) {
                                 Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3642[i_47_][i_48_]);
                                 int i_49_ = (class318_sub9_sub2.anInt8790);
-                                byte i_50_ = (byte) (i_49_ >> 320854256);
-                                byte i_51_ = (byte) (i_49_ >> -482279800);
+                                byte i_50_ = (byte) (i_49_ >> 16);
+                                byte i_51_ = (byte) (i_49_ >> 8);
                                 byte i_52_ = (byte) i_49_;
-                                byte i_53_ = (byte) (i_49_ >>> -1552108456);
-                                float f_54_ = (float) (class318_sub9_sub2.anInt8791 >> 1057100684);
-                                float f_55_ = (float) (class318_sub9_sub2.anInt8796 >> -1217417812);
-                                float f_56_ = (float) (class318_sub9_sub2.anInt8789 >> 159979852);
-                                int i_57_ = (class318_sub9_sub2.anInt8793 >> 525024908);
+                                byte i_53_ = (byte) (i_49_ >>> 24);
+                                float f_54_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
+                                float f_55_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
+                                float f_56_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
+                                int i_57_ = (class318_sub9_sub2.anInt8793 >> 12);
                                 stream.b(f_54_ + (float) -i_57_ * f_26_);
                                 stream.b((float) -i_57_ * f_27_ + f_55_);
                                 stream.b(f_56_ + f_28_ * (float) -i_57_);

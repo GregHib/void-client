@@ -48,9 +48,9 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
                     is_9_[i_11_] = anInt9354;
                     is_10_[i_11_] = anInt9347;
                 } else {
-                    is_8_[i_11_] = i_12_ * anInt9344 >> -1822350100;
-                    is_9_[i_11_] = anInt9354 * i_13_ >> 1973584748;
-                    is_10_[i_11_] = anInt9347 * i_14_ >> -2011567156;
+                    is_8_[i_11_] = i_12_ * anInt9344 >> 12;
+                    is_9_[i_11_] = anInt9354 * i_13_ >> 12;
+                    is_10_[i_11_] = anInt9347 * i_14_ >> 12;
                 }
             }
         }
@@ -86,9 +86,9 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         Class295.anIntArray3759 = new int[i_18_];
         Class348_Sub23_Sub3.anIntArray9042 = new int[i_18_];
         i_18_ = 0;
-        for (int i_21_ = (-(Class367_Sub4.anInt7319 >> -647938396) + i_17_) / 8; i_21_ <= (i_17_ + (Class367_Sub4.anInt7319 >> -1293697276)) / 8; i_21_++) {
-            for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.anInt9109 >> -1689129020)) / 8; (i_22_ <= ((Class348_Sub40_Sub3.anInt9109 >> -163377948) + i_16_) / 8); i_22_++) {
-                Class348_Sub23_Sub3.anIntArray9042[i_18_] = i_22_ + (i_21_ << -209519576);
+        for (int i_21_ = (-(Class367_Sub4.anInt7319 >> 4) + i_17_) / 8; i_21_ <= (i_17_ + (Class367_Sub4.anInt7319 >> 4)) / 8; i_21_++) {
+            for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8; (i_22_ <= ((Class348_Sub40_Sub3.anInt9109 >> 4) + i_16_) / 8); i_22_++) {
+                Class348_Sub23_Sub3.anIntArray9042[i_18_] = i_22_ + (i_21_ << 8);
                 aa_Sub1.anIntArray5192[i_18_] = Class367_Sub10.aClass45_7382.method417("m" + i_21_ + "_" + i_22_, 0);
                 Applet_Sub1.anIntArray38[i_18_] = Class367_Sub10.aClass45_7382.method417("l" + i_21_ + "_" + i_22_, 0);
                 Class295.anIntArray3759[i_18_] = Class367_Sub10.aClass45_7382.method417("um" + i_21_ + "_" + i_22_, 0);

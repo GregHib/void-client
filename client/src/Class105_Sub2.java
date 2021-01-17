@@ -74,7 +74,7 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3771((byte) -93, aClass258_Sub3_Sub1_8434);
         aHa_Sub2_8430.method3753(i_6_, 1);
         aHa_Sub2_8430.method3761(0, i);
-        OpenGL.glColor4ub((byte) (i_5_ >> 1922769168), (byte) (i_5_ >> -2091244728), (byte) i_5_, (byte) (i_5_ >> 1938750680));
+        OpenGL.glColor4ub((byte) (i_5_ >> 16), (byte) (i_5_ >> 8), (byte) i_5_, (byte) (i_5_ >> 24));
         OpenGL.glBegin(7);
         OpenGL.glTexCoord2f(0.0F, (aClass258_Sub3_Sub1_8434.aFloat9938));
         OpenGL.glVertex2f(f, f_0_);
@@ -263,7 +263,7 @@ final class Class105_Sub2 extends Class105 {
         anInt8425++;
         aHa_Sub2_8430.method3792(121);
         aHa_Sub2_8430.method3753(i_72_, 1);
-        OpenGL.glColor4ub((byte) (i_71_ >> 1876827600), (byte) (i_71_ >> 1157707368), (byte) i_71_, (byte) (i_71_ >> -1725228616));
+        OpenGL.glColor4ub((byte) (i_71_ >> 16), (byte) (i_71_ >> 8), (byte) i_71_, (byte) (i_71_ >> 24));
         i += anInt8447;
         i_69_ += anInt8446;
         if (aClass258_Sub3_Sub1_8431 == null) {
@@ -329,7 +329,7 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3771((byte) -88, aClass258_Sub3_Sub1_8434);
         aHa_Sub2_8430.method3753(i_79_, 1);
         aHa_Sub2_8430.method3761(0, i_77_);
-        OpenGL.glColor4ub((byte) (i_78_ >> -696243888), (byte) (i_78_ >> 1448891336), (byte) i_78_, (byte) (i_78_ >> -293809640));
+        OpenGL.glColor4ub((byte) (i_78_ >> 16), (byte) (i_78_ >> 8), (byte) i_78_, (byte) (i_78_ >> 24));
         if (aClass258_Sub3_Sub1_8434.aBoolean9941 && !aBoolean8427) {
             float f = (aClass258_Sub3_Sub1_8434.aFloat9938 * (float) i_76_ / (float) (aClass258_Sub3_Sub1_8434.anInt9939));
             float f_82_ = ((float) i_75_ * aClass258_Sub3_Sub1_8434.aFloat9937 / (float) (aClass258_Sub3_Sub1_8434.anInt9940));
@@ -421,7 +421,7 @@ final class Class105_Sub2 extends Class105 {
         aClass258_Sub3_Sub1_8434.method1957(9728, (0x1 & i_98_) != 0);
         aHa_Sub2_8430.method3792(103);
         aHa_Sub2_8430.method3753(i_97_, 1);
-        OpenGL.glColor4ub((byte) (i_96_ >> 218257456), (byte) (i_96_ >> 237122376), (byte) i_96_, (byte) (i_96_ >> -858895688));
+        OpenGL.glColor4ub((byte) (i_96_ >> 16), (byte) (i_96_ >> 8), (byte) i_96_, (byte) (i_96_ >> 24));
         if (aBoolean8427) {
             float f = (float) i_93_ / (float) method966();
             float f_99_ = (float) i_94_ / (float) method980();

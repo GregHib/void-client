@@ -39,9 +39,9 @@ final class Class223 {
             anInt2898++;
             if (i != 979190089) aBoolean2895 = false;
             Class348_Sub9 class348_sub9 = new Class348_Sub9();
-            class348_sub9.anInt6678 = i_4_ << 1855627529;
+            class348_sub9.anInt6678 = i_4_ << 9;
             class348_sub9.anInt6693 = i_2_;
-            class348_sub9.anInt6689 = i_3_ << -90042871;
+            class348_sub9.anInt6689 = i_3_ << 9;
             if (class51 == null) {
                 if (class318_sub1_sub3_sub3_sub1 != null) {
                     class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691 = class318_sub1_sub3_sub3_sub1;
@@ -51,11 +51,11 @@ final class Class223 {
                         class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i ^ ~0x3a5d4149);
                     }
                     if (class79 != null) {
-                        class348_sub9.anInt6698 = (i_4_ + class79.anInt1399 << 2136949737);
-                        class348_sub9.anInt6687 = (i_3_ - -class79.anInt1399 << -871288535);
+                        class348_sub9.anInt6698 = (i_4_ + class79.anInt1399 << 9);
+                        class348_sub9.anInt6687 = (i_3_ - -class79.anInt1399 << 9);
                         class348_sub9.anInt6685 = Class8.method214(class318_sub1_sub3_sub3_sub1, -1);
                         class348_sub9.anInt6696 = class79.anInt1340;
-                        class348_sub9.anInt6694 = class79.anInt1392 << 2145198185;
+                        class348_sub9.anInt6694 = class79.anInt1392 << 9;
                         class348_sub9.anInt6677 = class79.anInt1356;
                         class348_sub9.anInt6681 = class79.anInt1363;
                         class348_sub9.aBoolean6674 = class79.aBoolean1370;
@@ -63,11 +63,11 @@ final class Class223 {
                     client.aClass262_5185.method1999(class348_sub9, i + -979210269);
                 } else if (class318_sub1_sub3_sub3_sub2 != null) {
                     class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub2_6679 = class318_sub1_sub3_sub3_sub2;
-                    class348_sub9.anInt6698 = (class318_sub1_sub3_sub3_sub2.method2436((byte) 74) + i_4_) << -5982327;
-                    class348_sub9.anInt6687 = (class318_sub1_sub3_sub3_sub2.method2436((byte) 86) + i_3_) << 1741296713;
+                    class348_sub9.anInt6698 = (class318_sub1_sub3_sub3_sub2.method2436((byte) 74) + i_4_) << 9;
+                    class348_sub9.anInt6687 = (class318_sub1_sub3_sub3_sub2.method2436((byte) 86) + i_3_) << 9;
                     class348_sub9.anInt6685 = Class315.method2357(-1, class318_sub1_sub3_sub3_sub2);
                     class348_sub9.anInt6681 = 256;
-                    class348_sub9.anInt6694 = (class318_sub1_sub3_sub3_sub2.anInt10553 << 979190089);
+                    class348_sub9.anInt6694 = (class318_sub1_sub3_sub3_sub2.anInt10553 << 9);
                     class348_sub9.anInt6677 = class318_sub1_sub3_sub3_sub2.anInt10558;
                     class348_sub9.anInt6696 = 256;
                     class348_sub9.aBoolean6674 = class318_sub1_sub3_sub3_sub2.aBoolean10517;
@@ -81,16 +81,16 @@ final class Class223 {
                     i_6_ = class51.anInt926;
                     i_7_ = class51.anInt961;
                 }
-                class348_sub9.anInt6687 = i_7_ + i_3_ << 648119049;
+                class348_sub9.anInt6687 = i_7_ + i_3_ << 9;
                 class348_sub9.anInt6680 = class51.anInt962;
                 class348_sub9.anInt6685 = class51.anInt887;
                 class348_sub9.anInt6681 = class51.anInt916;
                 class348_sub9.anIntArray6697 = class51.anIntArray904;
                 class348_sub9.anInt6696 = class51.anInt878;
                 class348_sub9.aBoolean6699 = class51.aBoolean903;
-                class348_sub9.anInt6694 = class51.anInt889 << -800621463;
+                class348_sub9.anInt6694 = class51.anInt889 << 9;
                 class348_sub9.anInt6668 = class51.anInt937;
-                class348_sub9.anInt6698 = i_6_ + i_4_ << -513314007;
+                class348_sub9.anInt6698 = i_6_ + i_4_ << 9;
                 class348_sub9.anInt6677 = class51.anInt936;
                 class348_sub9.aBoolean6674 = class51.aBoolean888;
                 if (class51.anIntArray945 != null) {

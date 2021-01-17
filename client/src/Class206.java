@@ -93,23 +93,23 @@ final class Class206 implements Interface11 {
                     if (class10.anInt188 < 0) {
                         int i_5_ = 8192;
                         int i_6_;
-                        if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (class10.aByte180 == 3 ? Class316.aClass348_Sub51_3959.aClass239_Sub26_7215.method1838(-32350) : Class316.aClass348_Sub51_3959.aClass239_Sub26_7272.method1838(-32350))) >> -520945758);
+                        if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (class10.aByte180 == 3 ? Class316.aClass348_Sub51_3959.aClass239_Sub26_7215.method1838(-32350) : Class316.aClass348_Sub51_3959.aClass239_Sub26_7272.method1838(-32350))) >> 2);
                         else {
-                            int i_7_ = 0x3 & (class10.anInt178 >> 262440888);
+                            int i_7_ = 0x3 & (class10.anInt178 >> 24);
                             if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) == i_7_) {
-                                int i_8_ = 0x1fe00 & (class10.anInt178 << 1928411817);
-                                int i_9_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2436((byte) 52) << 1410573576);
-                                int i_10_ = ((class10.anInt178 & 0xff7e29) >> -1370832976);
-                                int i_11_ = (-(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) + 256 + (i_10_ << 1971089481) + i_9_);
-                                int i_12_ = ((class10.anInt178 & 0xffc1) >> -1236313432);
-                                int i_13_ = (256 + (i_12_ << 351836265) - ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) - i_9_));
+                                int i_8_ = 0x1fe00 & (class10.anInt178 << 9);
+                                int i_9_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2436((byte) 52) << 8);
+                                int i_10_ = ((class10.anInt178 & 0xff7e29) >> 16);
+                                int i_11_ = (-(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) + 256 + (i_10_ << 9) + i_9_);
+                                int i_12_ = ((class10.anInt178 & 0xffc1) >> 8);
+                                int i_13_ = (256 + (i_12_ << 9) - ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) - i_9_));
                                 int i_14_ = (Math.abs(i_11_) + (Math.abs(i_13_) + -512));
                                 if (i_8_ < i_14_) {
                                     class10.anInt188 = -99999;
                                     continue;
                                 }
                                 if (i_14_ < 0) i_14_ = 0;
-                                i_6_ = ((i_8_ + -i_14_) * (Class316.aClass348_Sub51_3959.aClass239_Sub26_7234.method1838(-32350) * class10.anInt184) / i_8_) >> -504009758;
+                                i_6_ = ((i_8_ + -i_14_) * (Class316.aClass348_Sub51_3959.aClass239_Sub26_7234.method1838(-32350) * class10.anInt184) / i_8_) >> 2;
                                 if ((class10.aClass318_Sub1_172 != null) && (class10.aClass318_Sub1_172 instanceof Class318_Sub1_Sub3)) {
                                     Class318_Sub1_Sub3 class318_sub1_sub3 = ((Class318_Sub1_Sub3) (class10.aClass318_Sub1_172));
                                     short i_15_ = (class318_sub1_sub3.aShort8743);
@@ -122,7 +122,7 @@ final class Class206 implements Interface11 {
                                     if (i_14_ <= 0) i_18_ = 8192;
                                     else if (i_14_ >= 4096) i_18_ = 16384;
                                     else i_18_ = 8192 + (-i_14_ + 8192) / 4096;
-                                    i_5_ = ((-i_18_ + 16384 >> 1269717825) + i_18_ * i_17_ / 8192);
+                                    i_5_ = ((-i_18_ + 16384 >> 1) + i_18_ * i_17_ / 8192);
                                 }
                             } else i_6_ = 0;
                         }

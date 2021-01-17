@@ -39,12 +39,12 @@ final class Class92 {
                     int i_4_ = 0;
                     while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212[i_1_].length) {
                         if (i_4_ >= 511 || Class150.anInt2057 >= 1023) break;
-                        int i_5_ = i_2_ | i_4_++ << 1526835142;
+                        int i_5_ = i_2_ | i_4_++ << 6;
                         int i_6_ = class348_sub49.readShort(842397944);
-                        int i_7_ = i_6_ >> -377444754;
-                        int i_8_ = 0x3f & i_6_ >> 1964330791;
+                        int i_7_ = i_6_ >> 14;
+                        int i_8_ = 0x3f & i_6_ >> 7;
                         int i_9_ = i_6_ & 0x3f;
-                        int i_10_ = (i_8_ + (-za_Sub2.anInt9780 + (Class348_Sub23_Sub3.anIntArray9042[i_1_] >> -1716641816) * 64));
+                        int i_10_ = (i_8_ + (-za_Sub2.anInt9780 + (Class348_Sub23_Sub3.anIntArray9042[i_1_] >> 8) * 64));
                         int i_11_ = (-Class90.anInt1517 + (64 * (0xff & (Class348_Sub23_Sub3.anIntArray9042[i_1_])) - -i_9_));
                         Class79 class79 = (Class189.aClass278_2529.method2079(class348_sub49.readShort(842397944), -1));
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_5_, -6008));
@@ -58,8 +58,8 @@ final class Class92 {
                             class318_sub1_sub3_sub3_sub1.anInt10306 = Class367_Sub11.anInt7396;
                             class318_sub1_sub3_sub3_sub1.method2448(class79, -2);
                             class318_sub1_sub3_sub3_sub1.method2434((byte) 120, class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1399);
-                            class318_sub1_sub3_sub3_sub1.anInt10310 = (class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329 << -1022992797);
-                            class318_sub1_sub3_sub3_sub1.method2435((byte) -108, (class318_sub1_sub3_sub3_sub1.aClass79_10505.aByte1355 - -4 & ~0x631ffff8) << -1060468053, true);
+                            class318_sub1_sub3_sub3_sub1.anInt10310 = (class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329 << 3);
+                            class318_sub1_sub3_sub3_sub1.method2435((byte) -108, (class318_sub1_sub3_sub3_sub1.aClass79_10505.aByte1355 - -4 & ~0x631ffff8) << 11, true);
                             class318_sub1_sub3_sub3_sub1.method2444(i_11_, true, i_10_, 123, class318_sub1_sub3_sub3_sub1.method2436((byte) 54), i_7_);
                         }
                     }

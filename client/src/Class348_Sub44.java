@@ -24,19 +24,19 @@ final class Class348_Sub44 extends Class348 {
     final boolean method3302(int i) {
         if (i != 17356) method3305(8);
         anInt7095++;
-        return (0x3df376 & this.anInt7098) >> -1283732331 != 0;
+        return (0x3df376 & this.anInt7098) >> 21 != 0;
     }
 
     final boolean method3303(int i) {
         anInt7094++;
         if (i != 1) anInt7092 = -24;
-        return (this.anInt7098 & 0x433bfd) >> -1271980362 != 0;
+        return (this.anInt7098 & 0x433bfd) >> 22 != 0;
     }
 
     final int method3304(byte i) {
         anInt7099++;
         if (i < 43) method3301(-16, false);
-        return (this.anInt7098 & 0x1f77eb) >> 877593970;
+        return (this.anInt7098 & 0x1f77eb) >> 18;
     }
 
     final boolean method3305(int i) {

@@ -32,8 +32,8 @@ abstract class aa {
 
     static final int method160(int i, int i_3_) {
         anInt113++;
-        double d = (double) (i_3_ >> -320535056 & 0xff) / 256.0;
-        double d_4_ = (double) (0xff & i_3_ >> -196722904) / 256.0;
+        double d = (double) (i_3_ >> 16 & 0xff) / 256.0;
+        double d_4_ = (double) (0xff & i_3_ >> 8) / 256.0;
         double d_5_ = (double) (i_3_ & 0xff) / 256.0;
         double d_6_ = d;
         if (d_4_ < d_6_) d_6_ = d_4_;
@@ -66,6 +66,6 @@ abstract class aa {
         else if (i_13_ > 217) i_12_ >>= 3;
         else if (i_13_ > 192) i_12_ >>= 2;
         else if (i_13_ > 179) i_12_ >>= 1;
-        return ((i_13_ >> 2140240129) + ((i_11_ & 0xff) >> -615751774 << 779990378) + (i_12_ >> 1750853765 << 698382727));
+        return ((i_13_ >> 1) + ((i_11_ & 0xff) >> 2 << 10) + (i_12_ >> 5 << 7));
     }
 }

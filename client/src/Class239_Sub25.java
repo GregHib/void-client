@@ -57,7 +57,7 @@ final class Class239_Sub25 extends Class239 {
         int i_5_ = 0;
         if (i == 1415665776) {
             for (int i_6_ = 0; i_6_ < 512; i_6_++) {
-                float f = (((float) (i_6_ >> -1851515709) / 64.0F + 0.0078125F) * 360.0F);
+                float f = (((float) (i_6_ >> 3) / 64.0F + 0.0078125F) * 360.0F);
                 float f_7_ = (float) (i_6_ & 0x7) / 8.0F + 0.0625F;
                 for (int i_8_ = 0; i_8_ < 128; i_8_++) {
                     float f_9_ = (float) i_8_ / 128.0F;
@@ -102,7 +102,7 @@ final class Class239_Sub25 extends Class239 {
                     int i_20_ = (int) (f_10_ * 256.0F);
                     int i_21_ = (int) (256.0F * f_11_);
                     int i_22_ = (int) (256.0F * f_12_);
-                    int i_23_ = ((i_21_ << -142238264) + ((i_20_ << 1415665776) + (-16777216 + i_22_)));
+                    int i_23_ = ((i_21_ << 8) + ((i_20_ << 16) + (-16777216 + i_22_)));
                     Class126.anIntArray4983[i_5_++] = i_23_;
                 }
             }

@@ -120,7 +120,7 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
     static final void method2988(boolean bool) {
         Class60.aHa1098.xa(((float) Class316.aClass348_Sub51_3959.aClass239_Sub10_7232.method1764(-32350) * 0.1F + 0.7F) * Class160.aFloat2137);
         anInt9049++;
-        Class60.aHa1098.ZA(Class119_Sub1.anInt4703, Class244.aFloat4626, Class361.aFloat4455, (float) (Class21.anInt325 << -1467252254), (float) (Class318_Sub1_Sub3_Sub1.anInt10023 << 1007991618), (float) (Class196.anInt2601 << -2056140414));
+        Class60.aHa1098.ZA(Class119_Sub1.anInt4703, Class244.aFloat4626, Class361.aFloat4455, (float) (Class21.anInt325 << 2), (float) (Class318_Sub1_Sub3_Sub1.anInt10023 << 2), (float) (Class196.anInt2601 << 2));
         Class60.aHa1098.method3653(Class158.aClass299_4938);
         if (bool != true) anIntArray9050 = null;
     }

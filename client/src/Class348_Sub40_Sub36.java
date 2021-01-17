@@ -53,14 +53,14 @@ final class Class348_Sub40_Sub36 extends Class348_Sub40 {
         if (i_2_ != 255) anInt9451 = -74;
         if (this.aClass191_7032.aBoolean2570) {
             int i_3_ = Class239_Sub18.anIntArray6035[i];
-            int i_4_ = -2048 + i_3_ >> 637011457;
+            int i_4_ = -2048 + i_3_ >> 1;
             for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub6.anInt9139); i_5_++) {
                 int i_6_ = Class318_Sub6.anIntArray6432[i_5_];
-                int i_7_ = -2048 + i_6_ >> -1653460607;
+                int i_7_ = -2048 + i_6_ >> 1;
                 int i_8_;
                 if (anInt9451 == 0) i_8_ = anInt9453 * (-i_3_ + i_6_);
                 else {
-                    int i_9_ = i_7_ * i_7_ + i_4_ * i_4_ >> -1808160052;
+                    int i_9_ = i_7_ * i_7_ + i_4_ * i_4_ >> 12;
                     i_8_ = (int) (4096.0 * Math.sqrt((float) i_9_ / 4096.0F));
                     i_8_ = (int) (3.141592653589793 * (double) (anInt9453 * i_8_));
                 }
@@ -69,9 +69,9 @@ final class Class348_Sub40_Sub36 extends Class348_Sub40 {
                     if (anInt9455 == 2) {
                         i_8_ -= 2048;
                         if (i_8_ < 0) i_8_ = -i_8_;
-                        i_8_ = 2048 - i_8_ << -859615231;
+                        i_8_ = 2048 - i_8_ << 1;
                     }
-                } else i_8_ = 4096 + (Class235.anIntArray3068[i_8_ >> -1710700252 & 0xff]) >> -1799565727;
+                } else i_8_ = 4096 + (Class235.anIntArray3068[i_8_ >> 4 & 0xff]) >> 1;
                 is[i_5_] = i_8_;
             }
         }

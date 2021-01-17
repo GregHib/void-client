@@ -102,9 +102,9 @@ abstract class Class14 implements Interface18 {
         int i_5_ = this.aClass304_5084.anInt3850;
         int i_6_ = 0;
         int i_7_ = Math.min(i_2_, i_3_);
-        int i_8_ = i_2_ >> -405349983;
+        int i_8_ = i_2_ >> 1;
         if (i != 7365) method236(0, (byte) -113);
-        int i_9_ = i_3_ >> 1617553025;
+        int i_9_ = i_3_ >> 1;
         byte[] is_10_ = is;
         byte[] is_11_ = new byte[i_9_ * (i_8_ * i_5_)];
         for (; ; ) {
@@ -124,7 +124,7 @@ abstract class Class14 implements Interface18 {
                         i_15_ += i_5_;
                         i_16_ += i_5_;
                         i_19_ += is_10_[i_16_];
-                        is_11_[i_14_] = (byte) (i_19_ >> 2039303106);
+                        is_11_[i_14_] = (byte) (i_19_ >> 2);
                         i_16_ += i_5_;
                         i_14_ += i_5_;
                     }
@@ -167,8 +167,8 @@ abstract class Class14 implements Interface18 {
         if (Class108.aClass304_1662 != this.aClass304_5084) throw new IllegalArgumentException("");
         int i_26_ = 0;
         int i_27_ = Math.min(i, i_23_);
-        int i_28_ = i >> 1089811809;
-        int i_29_ = i_23_ >> -264056511;
+        int i_28_ = i >> 1;
+        int i_29_ = i_23_ >> 1;
         int[] is_30_ = is;
         int[] is_31_ = new int[i_29_ * i_28_];
         if (i_25_ != 255) aBoolean5099 = true;
@@ -183,24 +183,24 @@ abstract class Class14 implements Interface18 {
                     int i_37_ = is_30_[i_33_++];
                     int i_38_ = is_30_[i_33_++];
                     int i_39_ = is_30_[i_34_++];
-                    int i_40_ = i_37_ >> 2144123728 & 0xff;
-                    int i_41_ = 0xff & i_37_ >> 2031441784;
+                    int i_40_ = i_37_ >> 16 & 0xff;
+                    int i_41_ = 0xff & i_37_ >> 24;
                     int i_42_ = 0xff & i_37_;
-                    int i_43_ = (i_37_ & 0xff58) >> -370758264;
+                    int i_43_ = (i_37_ & 0xff58) >> 8;
                     int i_44_ = is_30_[i_34_++];
                     i_42_ += i_38_ & 0xff;
-                    i_40_ += (0xffba54 & i_38_) >> 1504541648;
-                    i_41_ += 0xff & i_38_ >> -1964777448;
-                    i_43_ += 0xff & i_38_ >> -471235224;
-                    i_41_ += i_39_ >> -1881110568 & 0xff;
+                    i_40_ += (0xffba54 & i_38_) >> 16;
+                    i_41_ += 0xff & i_38_ >> 24;
+                    i_43_ += 0xff & i_38_ >> 8;
+                    i_41_ += i_39_ >> 24 & 0xff;
                     i_42_ += i_39_ & 0xff;
-                    i_43_ += (0xff9c & i_39_) >> -1849973624;
-                    i_40_ += i_39_ >> 1897894960 & 0xff;
-                    i_41_ += i_44_ >> -467438504 & 0xff;
-                    i_40_ += 0xff & i_44_ >> -1408161200;
-                    i_43_ += 0xff & i_44_ >> 1265083336;
+                    i_43_ += (0xff9c & i_39_) >> 8;
+                    i_40_ += i_39_ >> 16 & 0xff;
+                    i_41_ += i_44_ >> 24 & 0xff;
+                    i_40_ += 0xff & i_44_ >> 16;
+                    i_43_ += 0xff & i_44_ >> 8;
                     i_42_ += i_44_ & 0xff;
-                    is_31_[i_32_++] = (Class273.method2057((Class273.method2057(Class139.method1166(i_43_ << -1540493786, 65280), Class273.method2057((Class139.method1166(i_41_, 1020) << -1408675754), (Class139.method1166(1020, i_40_) << 1588792334)))), Class139.method1166(255, i_42_ >> -1111915006)));
+                    is_31_[i_32_++] = (Class273.method2057((Class273.method2057(Class139.method1166(i_43_ << 6, 65280), Class273.method2057((Class139.method1166(i_41_, 1020) << 22), (Class139.method1166(1020, i_40_) << 14)))), Class139.method1166(255, i_42_ >> 2)));
                 }
                 i_33_ += i;
                 i_34_ += i;
@@ -266,8 +266,8 @@ abstract class Class14 implements Interface18 {
         int i_52_ = 0;
         if (i_48_ != 1) method228(107);
         int i_53_ = Math.min(i_50_, i_49_);
-        int i_54_ = i_49_ >> -1187902719;
-        int i_55_ = i_50_ >> 1286076865;
+        int i_54_ = i_49_ >> 1;
+        int i_55_ = i_50_ >> 1;
         float[] fs_56_ = fs;
         float[] fs_57_ = new float[i_54_ * (i_55_ * i_51_)];
         for (; ; ) {

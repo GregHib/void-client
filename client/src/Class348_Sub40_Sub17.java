@@ -68,17 +68,17 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
             if (Class348_Sub40_Sub6.anInt9139 == this.anInt9237) {
                 for (int i_6_ = 0; (Class348_Sub40_Sub6.anInt9139 > i_6_); i_6_++) {
                     int i_7_ = this.anIntArray9232[i_5_++];
-                    is_4_[i_6_] = Class139.method1166(4080, i_7_ << 1154281412);
-                    is_3_[i_6_] = Class139.method1166(65280, i_7_) >> 1238793732;
-                    is_2_[i_6_] = Class139.method1166(4080, i_7_ >> 812723916);
+                    is_4_[i_6_] = Class139.method1166(4080, i_7_ << 4);
+                    is_3_[i_6_] = Class139.method1166(65280, i_7_) >> 4;
+                    is_2_[i_6_] = Class139.method1166(4080, i_7_ >> 12);
                 }
             } else {
                 for (int i_8_ = 0; (Class348_Sub40_Sub6.anInt9139 > i_8_); i_8_++) {
                     int i_9_ = (this.anInt9237 * i_8_ / Class348_Sub40_Sub6.anInt9139);
                     int i_10_ = (this.anIntArray9232[i_9_ + i_5_]);
-                    is_4_[i_8_] = Class139.method1166(i_10_, 255) << -1837452316;
-                    is_3_[i_8_] = Class139.method1166(i_10_ >> -2005178940, 4080);
-                    is_2_[i_8_] = Class139.method1166(i_10_, 16711680) >> 77341932;
+                    is_4_[i_8_] = Class139.method1166(i_10_, 255) << 4;
+                    is_3_[i_8_] = Class139.method1166(i_10_ >> 4, 4080);
+                    is_2_[i_8_] = Class139.method1166(i_10_, 16711680) >> 12;
                 }
             }
         }

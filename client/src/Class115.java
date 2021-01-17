@@ -14,7 +14,7 @@ final class Class115 {
     static final int method1060(int i, byte i_0_) {
         if (i_0_ != 69) aClass348_Sub1Array1752 = null;
         anInt1755++;
-        return i >>> -463267641;
+        return i >>> 7;
     }
 
     public static void method1061(int i) {

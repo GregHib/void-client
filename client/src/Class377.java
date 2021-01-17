@@ -779,8 +779,8 @@ final class Class377 extends ha_Sub3 {
             RuntimeException_Sub1.aFloatArray4602[3] = 1.0F;
             OpenGL.glLightfv(i_49_, 4611, RuntimeException_Sub1.aFloatArray4602, 0);
             RuntimeException_Sub1.aFloatArray4602[2] = (float) Class139.method1166(255, i_48_) * f;
-            RuntimeException_Sub1.aFloatArray4602[1] = f * (float) (Class139.method1166(i_48_, 65338) >> 1736677832);
-            RuntimeException_Sub1.aFloatArray4602[0] = (float) Class139.method1166(255, i_48_ >> 1806447760) * f;
+            RuntimeException_Sub1.aFloatArray4602[1] = f * (float) (Class139.method1166(i_48_, 65338) >> 8);
+            RuntimeException_Sub1.aFloatArray4602[0] = (float) Class139.method1166(255, i_48_ >> 16) * f;
             RuntimeException_Sub1.aFloatArray4602[3] = 1.0F;
             OpenGL.glLightfv(i_49_, 4609, RuntimeException_Sub1.aFloatArray4602, 0);
             OpenGL.glLightf(i_49_, 4617, 1.0F / (float) (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)));
@@ -1123,7 +1123,7 @@ final class Class377 extends ha_Sub3 {
     final void method3945(int i) {
         RuntimeException_Sub1.aFloatArray4602[1] = ((float) Class139.method1166(65280, this.anInt8119) / 65280.0F);
         RuntimeException_Sub1.aFloatArray4602[2] = ((float) Class139.method1166(255, this.anInt8119) / 255.0F);
-        RuntimeException_Sub1.aFloatArray4602[3] = (float) (this.anInt8119 >>> 1199324056) / 255.0F;
+        RuntimeException_Sub1.aFloatArray4602[3] = (float) (this.anInt8119 >>> 24) / 255.0F;
         anInt9889++;
         RuntimeException_Sub1.aFloatArray4602[0] = ((float) Class139.method1166(16711680, this.anInt8119) / 1.671168E7F);
         if (i >= -107) anInt9909 = -64;
@@ -1137,7 +1137,7 @@ final class Class377 extends ha_Sub3 {
     }
 
     final void GA(int i) {
-        OpenGL.glClearColor((float) (0xff0000 & i) / 1.671168E7F, (float) (0xff00 & i) / 65280.0F, (float) (i & 0xff) / 255.0F, (float) (i >>> 1909717048) / 255.0F);
+        OpenGL.glClearColor((float) (0xff0000 & i) / 1.671168E7F, (float) (0xff00 & i) / 65280.0F, (float) (i & 0xff) / 255.0F, (float) (i >>> 24) / 255.0F);
         anInt9835++;
         OpenGL.glClear(16384);
     }

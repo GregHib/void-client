@@ -51,7 +51,7 @@ final class Class179 {
     static final int method1359(boolean bool, int i) {
         anInt2368++;
         if (bool != true) anInt2361 = -32;
-        return i >>> 799854122;
+        return i >>> 10;
     }
 
     static final void method1360(String string, Class297 class297, boolean bool, boolean bool_3_, int i) {

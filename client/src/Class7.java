@@ -35,12 +35,12 @@ public final class Class7 {
 
     public final int[] method210() {
         DisplayMode[] displaymodes = aGraphicsDevice157.getDisplayModes();
-        int[] is = new int[displaymodes.length << -1444763358];
+        int[] is = new int[displaymodes.length << 2];
         for (int i = 0; i < displaymodes.length; i++) {
-            is[i << 1179533410] = displaymodes[i].getWidth();
-            is[1 + (i << 856020194)] = displaymodes[i].getHeight();
-            is[(i << -1137663966) + 2] = displaymodes[i].getBitDepth();
-            is[(i << -2065826366) + 3] = displaymodes[i].getRefreshRate();
+            is[i << 2] = displaymodes[i].getWidth();
+            is[1 + (i << 2)] = displaymodes[i].getHeight();
+            is[(i << 2) + 2] = displaymodes[i].getBitDepth();
+            is[(i << 2) + 3] = displaymodes[i].getRefreshRate();
         }
         return is;
     }

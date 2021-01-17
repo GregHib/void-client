@@ -166,7 +166,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     final Class348_Sub42_Sub4 method2838(int i, double d, int i_14_) {
         anInt8860++;
-        long l = i | anInt8879 << 1401320384;
+        long l = i | anInt8879 << 0;
         Class348_Sub42_Sub4 class348_sub42_sub4 = ((Class348_Sub42_Sub4) Class348_Sub40_Sub10.aClass308_9180.method2302(l, (byte) -31));
         if (i_14_ != 1401320384) return null;
         if (class348_sub42_sub4 == null) class348_sub42_sub4 = new Class348_Sub42_Sub4(new short[anInt8879][i], d);

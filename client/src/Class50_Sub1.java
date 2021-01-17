@@ -25,10 +25,10 @@ final class Class50_Sub1 extends Class50 {
     final void method455(int i, int i_0_, int i_1_) {
         anInt5220++;
         if (i_1_ >= -98) aBoolean5221 = false;
-        int i_2_ = anInt5214 * i >> -1153073620;
-        int i_3_ = i * anInt5213 >> -641039412;
-        int i_4_ = anInt5212 * i_0_ >> 53146732;
-        int i_5_ = i_0_ * anInt5222 >> -376712532;
+        int i_2_ = anInt5214 * i >> 12;
+        int i_3_ = i * anInt5213 >> 12;
+        int i_4_ = anInt5212 * i_0_ >> 12;
+        int i_5_ = i_0_ * anInt5222 >> 12;
         Class299_Sub2.method2267(10499, i_5_, i_2_, this.anInt865, this.anInt864, this.anInt862, i_4_, i_3_);
     }
 
@@ -56,10 +56,10 @@ final class Class50_Sub1 extends Class50 {
     final void method456(int i, int i_14_, int i_15_) {
         if (i <= 87) anInt5214 = -17;
         anInt5218++;
-        int i_16_ = i_14_ * anInt5214 >> -246469844;
-        int i_17_ = anInt5213 * i_14_ >> -678539124;
-        int i_18_ = anInt5212 * i_15_ >> -49634420;
-        int i_19_ = i_15_ * anInt5222 >> -938127988;
+        int i_16_ = i_14_ * anInt5214 >> 12;
+        int i_17_ = anInt5213 * i_14_ >> 12;
+        int i_18_ = anInt5212 * i_15_ >> 12;
+        int i_19_ = i_15_ * anInt5222 >> 12;
         ha.method3641(i_18_, i_19_, (byte) -75, this.anInt864, i_17_, i_16_);
     }
 

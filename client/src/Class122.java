@@ -38,9 +38,9 @@ final class Class122 {
 
     static final int method1088(int i, byte i_6_, int i_7_, int i_8_, int i_9_) {
         anInt1804++;
-        int i_10_ = -Class70.anIntArray1204[8192 * i_8_ / i_7_] + 65536 >> -67609151;
+        int i_10_ = -Class70.anIntArray1204[8192 * i_8_ / i_7_] + 65536 >> 1;
         if (i_6_ != 22) return -73;
-        return ((i_10_ * i >> 1589488528) + (i_9_ * (65536 + -i_10_) >> 450835216));
+        return ((i_10_ * i >> 16) + (i_9_ * (65536 + -i_10_) >> 16));
     }
 
     static final boolean method1089(int i, char c) {
@@ -65,7 +65,7 @@ final class Class122 {
                 for (int i_14_ = 0; i_14_ < i_13_; i_14_++) {
                     byte[] is_15_ = is[i_14_];
                     if (is_15_ != null) {
-                        int i_16_ = (64 * (Class348_Sub23_Sub3.anIntArray9042[i_14_] >> -2145332984) + -za_Sub2.anInt9780);
+                        int i_16_ = (64 * (Class348_Sub23_Sub3.anIntArray9042[i_14_] >> 8) + -za_Sub2.anInt9780);
                         int i_17_ = ((Class348_Sub23_Sub3.anIntArray9042[i_14_] & 0xff) * 64 - Class90.anInt1517);
                         Class369_Sub1.method3570(false);
                         class237_sub1.method1695(is_15_, (Class348_Sub45.aClass361Array7108), i_17_, Class348_Sub8.aHa6654, i_16_, i ^ 0x1054f);

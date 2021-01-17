@@ -16,7 +16,7 @@ final class Class184 {
     /*synthetic*/ static Class aClass2478;
 
     static final int method1384(int i, int i_0_, int i_1_) {
-        i_1_ = (0x7f & i) * i_1_ >> 1421041063;
+        i_1_ = (0x7f & i) * i_1_ >> 7;
         if (i_0_ != 1421041063) return -72;
         anInt2476++;
         if (i_1_ >= 2) {

@@ -23,10 +23,10 @@ final class Class113 {
     static final int method1056(int i, int i_0_, char c) {
         if (i_0_ != 30316) return 27;
         anInt1740++;
-        int i_1_ = c << -939602812;
+        int i_1_ = c << 4;
         if (Character.isUpperCase(c) || Character.isTitleCase(c)) {
             int i_2_ = Character.toLowerCase(c);
-            i_1_ = 1 + (i_2_ << 648405028);
+            i_1_ = 1 + (i_2_ << 4);
         }
         return i_1_;
     }

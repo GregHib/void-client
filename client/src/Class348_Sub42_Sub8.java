@@ -73,8 +73,8 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10317[0] = Class348_Sub40_Sub3.anInt9109 / 2;
         Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685 = 0;
         if (Class348_Sub40_Sub21.anInt9282 == 2) {
-            Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 << 813833481;
-            Class59_Sub2_Sub2.anInt8685 = Class275.anInt3550 << 1515187753;
+            Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 << 9;
+            Class59_Sub2_Sub2.anInt8685 = Class275.anInt3550 << 9;
         } else Class348_Sub21.method2954((byte) 62);
         Class76.method773(true);
     }

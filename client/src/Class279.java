@@ -116,7 +116,7 @@ class Class279 {
 
     private final void method2085(int i, Class348_Sub16 class348_sub16, int i_2_) {
         anInt3597++;
-        int i_3_ = i_2_ >> -1846918107;
+        int i_3_ = i_2_ >> 5;
         if (i != -1846918107) method2088(true, null);
         Class348_Sub16 class348_sub16_4_ = aClass348_Sub16Array3621[i_3_];
         if (class348_sub16_4_ != null) class348_sub16_4_.aClass348_Sub16_6785 = class348_sub16;

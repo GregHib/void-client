@@ -170,7 +170,7 @@ final class Class348_Sub9 extends Class348 {
                 if (this.aClass318_Sub1_Sub3_Sub3_Sub1_6691 == null) {
                     if ((this.aClass318_Sub1_Sub3_Sub3_Sub2_6679) != null) {
                         this.anInt6685 = (Class315.method2357(-1, (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679)));
-                        this.anInt6694 = (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10553) << -1345944631;
+                        this.anInt6694 = (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10553) << 9;
                         this.anInt6677 = (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10558);
                         this.anInt6681 = 256;
                         this.anInt6696 = 256;
@@ -188,7 +188,7 @@ final class Class348_Sub9 extends Class348 {
                             this.anInt6696 = 256;
                             this.aBoolean6674 = this.aClass318_Sub1_Sub3_Sub3_Sub1_6691.aClass79_10505.aBoolean1370;
                         } else {
-                            this.anInt6694 = class79.anInt1392 << -401249015;
+                            this.anInt6694 = class79.anInt1392 << 9;
                             this.anInt6681 = class79.anInt1363;
                             this.anInt6677 = class79.anInt1356;
                             this.aBoolean6674 = class79.aBoolean1370;
@@ -213,7 +213,7 @@ final class Class348_Sub9 extends Class348 {
                     this.anInt6681 = class51.anInt916;
                     this.anInt6685 = class51.anInt887;
                     this.anInt6696 = class51.anInt878;
-                    this.anInt6694 = class51.anInt889 << 2099748617;
+                    this.anInt6694 = class51.anInt889 << 9;
                     this.aBoolean6674 = class51.aBoolean888;
                     this.anInt6680 = class51.anInt962;
                     this.anInt6677 = class51.anInt936;

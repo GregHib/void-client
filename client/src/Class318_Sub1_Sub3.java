@@ -57,7 +57,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
         anInt8752++;
         if (i >= -21) return true;
         if (!Class5_Sub1.aBoolean8335) return false;
-        int i_7_ = i_6_ >> 1784451792;
+        int i_7_ = i_6_ >> 16;
         int i_8_ = i_6_ & 0xffff;
         if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_7_] == null || Class348_Sub40_Sub33.aClass46ArrayArray9427[i_7_][i_8_] == null) return false;
         Class46 class46 = Class348_Sub40_Sub33.aClass46ArrayArray9427[i_7_][i_8_];

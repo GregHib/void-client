@@ -46,10 +46,10 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
                                 if (i_6_ == 3) break;
                                 break while_197_;
                             }
-                            i_3_ = ((i_5_ + (-4096 - -i_1_) >> -1099071423) + 2048);
+                            i_3_ = ((i_5_ + (-4096 - -i_1_) >> 1) + 2048);
                             break while_197_;
                         } while (false);
-                        i_3_ = 2048 + (i_5_ - i_1_ >> 482406657);
+                        i_3_ = 2048 + (i_5_ - i_1_ >> 1);
                     } while (false);
                     for (i_6_ = 0; i_6_ < anInt9329; i_6_++) {
                         if (i_3_ >= anIntArray9332[i_6_] && i_3_ < anIntArray9332[1 + i_6_]) {
@@ -101,7 +101,7 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
         anIntArray9333 = new int[anInt9329 - -1];
         anIntArray9332 = new int[anInt9329 - -1];
         int i_12_ = 4096 / anInt9329;
-        int i_13_ = i_12_ * anInt9334 >> -462355156;
+        int i_13_ = i_12_ * anInt9334 >> 12;
         for (int i_14_ = 0; anInt9329 > i_14_; i_14_++) {
             anIntArray9332[i_14_] = i_11_;
             anIntArray9333[i_14_] = i_13_ + i_11_;

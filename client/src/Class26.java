@@ -25,8 +25,8 @@ final class Class26 {
 
     private final Class348_Sub19_Sub1 method307(int i, int[] is, int i_0_, int i_1_) {
         anInt378++;
-        int i_2_ = i ^ (i_1_ >>> 1578798380 | i_1_ << -1997163324 & 0xfff1);
-        i_2_ |= i_1_ << -1230270352;
+        int i_2_ = i ^ (i_1_ >>> 12 | i_1_ << 4 & 0xfff1);
+        i_2_ |= i_1_ << 16;
         long l = i_2_;
         Class348_Sub19_Sub1 class348_sub19_sub1 = (Class348_Sub19_Sub1) aClass356_381.method3480(l, -6008);
         if (class348_sub19_sub1 != null) return class348_sub19_sub1;
@@ -57,8 +57,8 @@ final class Class26 {
 
     private final Class348_Sub19_Sub1 method310(int i, int i_5_, byte i_6_, int[] is) {
         anInt375++;
-        int i_7_ = i ^ (0xfff0 & i_5_ << -2102985404 | i_5_ >>> -313218292);
-        i_7_ |= i_5_ << 1075063824;
+        int i_7_ = i ^ (0xfff0 & i_5_ << 4 | i_5_ >>> 12);
+        i_7_ |= i_5_ << 16;
         int i_8_ = -113 / ((i_6_ - 16) / 34);
         long l = (long) i_7_ ^ 0x100000000L;
         Class348_Sub19_Sub1 class348_sub19_sub1 = (Class348_Sub19_Sub1) aClass356_381.method3480(l, -6008);

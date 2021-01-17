@@ -66,8 +66,8 @@ final class Class311 implements Runnable {
                         if (Class348_Sub8.aHa6654 != null && anInterface16_3919 != null && anInterface16_3919.method55((byte) -58) != 0 && (aLong3914 >= l_1_ - (long) anInterface16_3919.method55((byte) -58))) {
                             int i = (int) ((l_1_ + -aLong3914) * 255L / (long) anInterface16_3919.method55((byte) -58));
                             int i_2_ = -i + 255;
-                            i_2_ = 0xffffff | i_2_ << 848635896;
-                            i = 0xffffff | i << -1673863400;
+                            i_2_ = 0xffffff | i_2_ << 24;
+                            i = 0xffffff | i << 24;
                             Class140.method1170((byte) -121);
                             Class348_Sub8.aHa6654.GA(0);
                             Class105 class105 = (Class348_Sub8.aHa6654.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true));

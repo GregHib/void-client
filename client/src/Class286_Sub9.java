@@ -209,7 +209,7 @@ final class Class286_Sub9 extends Class286 {
             else {
                 if (Class348_Sub42_Sub11.anInt9591 == i_22_) throw new RuntimeException("s:lr");
                 Class359 class359 = (Class348_Sub17.aClass359Array6802[i_22_] = new Class359());
-                class359.anInt4420 = ((Class90.anInt1517 - -(class318_sub1_sub3_sub3_sub2.anIntArray10317[0]) >> 592604966) + ((class318_sub1_sub3_sub3_sub2.anIntArray10320[0] + za_Sub2.anInt9780) >> 1829075398 << -2094968434) + ((class318_sub1_sub3_sub3_sub2.aByte6381) << 471827900));
+                class359.anInt4420 = ((Class90.anInt1517 - -(class318_sub1_sub3_sub3_sub2.anIntArray10317[0]) >> 6) + ((class318_sub1_sub3_sub3_sub2.anIntArray10320[0] + za_Sub2.anInt9780) >> 6 << 14) + ((class318_sub1_sub3_sub3_sub2.aByte6381) << 28));
                 if (class318_sub1_sub3_sub3_sub2.anInt10524 != -1) class359.anInt4423 = class318_sub1_sub3_sub3_sub2.anInt10524;
                 else class359.anInt4423 = class318_sub1_sub3_sub3_sub2.aClass264_10217.method2019((byte) -91);
                 class359.aBoolean4426 = class318_sub1_sub3_sub3_sub2.aBoolean10554;
@@ -303,8 +303,8 @@ final class Class286_Sub9 extends Class286 {
             int i_30_ = class348_sub49_sub2.method3410((byte) -24, 1);
             if (i_30_ == 0) {
                 int i_31_ = class348_sub49_sub2.method3410((byte) -24, 12);
-                int i_32_ = i_31_ >> -1062068982;
-                int i_33_ = 0x1f & i_31_ >> -1409005179;
+                int i_32_ = i_31_ >> 10;
+                int i_33_ = 0x1f & i_31_ >> 5;
                 if (i_33_ > 15) i_33_ -= 32;
                 int i_34_ = 0x1f & i_31_;
                 if (i_34_ > 15) i_34_ -= 32;
@@ -323,8 +323,8 @@ final class Class286_Sub9 extends Class286 {
                 }
             } else {
                 int i_37_ = class348_sub49_sub2.method3410((byte) -24, 30);
-                int i_38_ = i_37_ >> -1838781572;
-                int i_39_ = 0x3fff & i_37_ >> -946421778;
+                int i_38_ = i_37_ >> 28;
+                int i_39_ = 0x3fff & i_37_ >> 14;
                 int i_40_ = 0x3fff & i_37_;
                 int i_41_ = ((i_39_ + ((class318_sub1_sub3_sub3_sub2.anIntArray10320[0]) + za_Sub2.anInt9780) & 0x3fff) - za_Sub2.anInt9780);
                 int i_42_ = (-Class90.anInt1517 + (0x3fff & (i_40_ + Class90.anInt1517 + (class318_sub1_sub3_sub3_sub2.anIntArray10317[0]))));

@@ -21,20 +21,20 @@ final class Class348_Sub13 extends Class348 {
             anInt6755++;
             long[] ls = Class348_Sub40_Sub21.aLongArray9283;
             long l = -1L;
-            l = (ls[(int) (0xffL & (l ^ (long) (i >> -134478552)))] ^ l >>> -612505656);
-            l = ls[(int) (0xffL & (l ^ (long) i))] ^ l >>> 2087460680;
+            l = (ls[(int) (0xffL & (l ^ (long) (i >> 8)))] ^ l >>> 8);
+            l = ls[(int) (0xffL & (l ^ (long) i))] ^ l >>> 8;
             for (int i_8_ = 0; is_6_.length > i_8_; i_8_++) {
-                l = (ls[(int) (0xffL & (l ^ (long) (is_6_[i_8_] >> 1458625336)))] ^ l >>> -1571777848);
-                l = (l >>> 29428872 ^ ls[(int) (0xffL & (l ^ (long) (is_6_[i_8_] >> 1682481232)))]);
-                l = l >>> 710000776 ^ ls[(int) ((l ^ (long) (is_6_[i_8_] >> 367092488)) & 0xffL)];
-                l = (ls[(int) (((long) is_6_[i_8_] ^ l) & 0xffL)] ^ l >>> -874221624);
+                l = (ls[(int) (0xffL & (l ^ (long) (is_6_[i_8_] >> 24)))] ^ l >>> 8);
+                l = (l >>> 8 ^ ls[(int) (0xffL & (l ^ (long) (is_6_[i_8_] >> 16)))]);
+                l = l >>> 8 ^ ls[(int) ((l ^ (long) (is_6_[i_8_] >> 8)) & 0xffL)];
+                l = (ls[(int) (((long) is_6_[i_8_] ^ l) & 0xffL)] ^ l >>> 8);
             }
             if (i_7_ != -74) this.anIntArray6757 = null;
             if (is != null) {
                 for (int i_9_ = 0; i_9_ < 5; i_9_++)
-                    l = l >>> 65979848 ^ ls[(int) ((l ^ (long) is[i_9_]) & 0xffL)];
+                    l = l >>> 8 ^ ls[(int) ((l ^ (long) is[i_9_]) & 0xffL)];
             }
-            l = (ls[(int) (0xffL & ((long) (!bool ? 0 : 1) ^ l))] ^ l >>> -637577400);
+            l = (ls[(int) (0xffL & ((long) (!bool ? 0 : 1) ^ l))] ^ l >>> 8);
             return l;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ie.C(" + (is != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (is_6_ != null ? "{...}" : "null") + ',' + i_7_ + ')'));
@@ -69,7 +69,7 @@ final class Class348_Sub13 extends Class348 {
             if (class17 != null) {
                 i_22_ = class17.anIntArray237[i_10_];
                 i_15_ |= 0x20;
-                int i_26_ = i_22_ >>> -253639728;
+                int i_26_ = i_22_ >>> 16;
                 class348_sub42_sub17 = Class10.aClass87_191.method839(i_26_, i_14_ + 4);
                 i_22_ &= 0xffff;
                 if (class348_sub42_sub17 != null) {
@@ -81,10 +81,10 @@ final class Class348_Sub13 extends Class348 {
                 if ((class17.aBoolean241 || Class28.aBoolean5002) && i_12_ != -1 && class17.anIntArray237.length > i_12_) {
                     i_23_ = class17.anIntArray237[i_12_];
                     i_24_ = class17.anIntArray267[i_10_];
-                    int i_27_ = i_23_ >>> -1808250608;
+                    int i_27_ = i_23_ >>> 16;
                     i_23_ &= 0xffff;
                     if (i_27_ == i_26_) class348_sub42_sub17_25_ = class348_sub42_sub17;
-                    else class348_sub42_sub17_25_ = Class10.aClass87_191.method839(i_23_ >>> -35683280, 3);
+                    else class348_sub42_sub17_25_ = Class10.aClass87_191.method839(i_23_ >>> 16, 3);
                     if (class348_sub42_sub17_25_ != null) {
                         bool_19_ |= class348_sub42_sub17_25_.method3272(i_23_, 0);
                         bool_18_ |= class348_sub42_sub17_25_.method3271(i_23_, 14);

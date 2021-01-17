@@ -46,7 +46,7 @@ final class Class254 {
 
     static final int method1928(int i, int i_2_, int i_3_) {
         anInt3260++;
-        int i_4_ = i_3_ >>> 1872132287;
+        int i_4_ = i_3_ >>> 31;
         if (i_2_ > 0) method1928(82, -44, -111);
         return (i_3_ - -i_4_) / i + -i_4_;
     }

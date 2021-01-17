@@ -63,15 +63,15 @@ final class Class50_Sub3 extends Class50 {
 
     final void method457(int i, int i_12_, int i_13_) {
         anInt5254++;
-        int i_14_ = anInt5246 * i_12_ >> 875302988;
-        int i_15_ = anInt5250 * i >> -121302612;
-        int i_16_ = anInt5245 * i_12_ >> 621620332;
-        int i_17_ = anInt5247 * i >> -1857421396;
-        int i_18_ = i_12_ * anInt5236 >> -1636518164;
-        int i_19_ = anInt5237 * i >> -300138580;
-        int i_20_ = i_12_ * anInt5243 >> -932753684;
+        int i_14_ = anInt5246 * i_12_ >> 12;
+        int i_15_ = anInt5250 * i >> 12;
+        int i_16_ = anInt5245 * i_12_ >> 12;
+        int i_17_ = anInt5247 * i >> 12;
+        int i_18_ = i_12_ * anInt5236 >> 12;
+        int i_19_ = anInt5237 * i >> 12;
+        int i_20_ = i_12_ * anInt5243 >> 12;
         if (i_13_ > -29) anInt5252 = -91;
-        int i_21_ = anInt5249 * i >> 1645563660;
+        int i_21_ = anInt5249 * i >> 12;
         Class367_Sub3.method3540(i_15_, i_17_, this.anInt865, i_21_, i_16_, i_14_, i_18_, i_19_, i_20_, true);
     }
 

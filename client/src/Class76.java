@@ -23,7 +23,7 @@ final class Class76 {
         if (i_4_ >= i_3_) return true;
         i_5_ += -1 + i_4_;
         i_1_ += i * i_4_;
-        i_2_ = -i_4_ + i_3_ >> 79407298;
+        i_2_ = -i_4_ + i_3_ >> 2;
         if (Class350.anInt4319 == 1) {
             Class225.anInt2946 += i_2_;
             while (--i_2_ >= 0) {

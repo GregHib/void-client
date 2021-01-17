@@ -36,21 +36,21 @@ final class Class126 implements Interface14 {
         anInt4988++;
         long[] ls = Class348_Sub40_Sub21.aLongArray9283;
         long l = -1L;
-        l = (ls[(int) ((l ^ (long) this.anInt4991) & 0xffL)] ^ l >>> -912339384);
-        l = (l >>> -1815341496 ^ ls[(int) (0xffL & ((long) (this.anInt4992 >> -1724957784) ^ l))]);
-        l = (l >>> 541427656 ^ ls[(int) ((l ^ (long) this.anInt4992) & 0xffL)]);
-        l = (l >>> -1073243512 ^ ls[(int) (0xffL & (l ^ (long) (this.anInt4989 >> -112708680)))]);
-        l = ls[(int) (0xffL & ((long) (this.anInt4989 >> 1783360016) ^ l))] ^ l >>> -1647611832;
-        l = (l >>> -924450232 ^ ls[(int) (0xffL & (l ^ (long) (this.anInt4989 >> 1295609864)))]);
-        l = (l >>> -455753976 ^ ls[(int) ((l ^ (long) this.anInt4989) & 0xffL)]);
-        l = (l >>> 926476232 ^ ls[(int) (0xffL & ((long) this.anInt4993 ^ l))]);
-        l = ls[(int) ((l ^ (long) (this.anInt4982 >> -1449545672)) & 0xffL)] ^ l >>> -1904788408;
-        l = (l >>> -1886860152 ^ ls[(int) ((l ^ (long) (this.anInt4982 >> -1179242768)) & 0xffL)]);
+        l = (ls[(int) ((l ^ (long) this.anInt4991) & 0xffL)] ^ l >>> 8);
+        l = (l >>> 8 ^ ls[(int) (0xffL & ((long) (this.anInt4992 >> 8) ^ l))]);
+        l = (l >>> 8 ^ ls[(int) ((l ^ (long) this.anInt4992) & 0xffL)]);
+        l = (l >>> 8 ^ ls[(int) (0xffL & (l ^ (long) (this.anInt4989 >> 24)))]);
+        l = ls[(int) (0xffL & ((long) (this.anInt4989 >> 16) ^ l))] ^ l >>> 8;
+        l = (l >>> 8 ^ ls[(int) (0xffL & (l ^ (long) (this.anInt4989 >> 8)))]);
+        l = (l >>> 8 ^ ls[(int) ((l ^ (long) this.anInt4989) & 0xffL)]);
+        l = (l >>> 8 ^ ls[(int) (0xffL & ((long) this.anInt4993 ^ l))]);
+        l = ls[(int) ((l ^ (long) (this.anInt4982 >> 24)) & 0xffL)] ^ l >>> 8;
+        l = (l >>> 8 ^ ls[(int) ((l ^ (long) (this.anInt4982 >> 16)) & 0xffL)]);
         if (i < 46) return -94L;
-        l = ls[(int) ((l ^ (long) (this.anInt4982 >> -365755512)) & 0xffL)] ^ l >>> -1299525048;
-        l = (l >>> 930759944 ^ ls[(int) (0xffL & ((long) this.anInt4982 ^ l))]);
-        l = (ls[(int) (0xffL & (l ^ (long) this.anInt4981))] ^ l >>> 1555250760);
-        l = (l >>> -496446648 ^ ls[(int) (0xffL & ((long) (this.aBoolean4990 ? 1 : 0) ^ l))]);
+        l = ls[(int) ((l ^ (long) (this.anInt4982 >> 8)) & 0xffL)] ^ l >>> 8;
+        l = (l >>> 8 ^ ls[(int) (0xffL & ((long) this.anInt4982 ^ l))]);
+        l = (ls[(int) (0xffL & (l ^ (long) this.anInt4981))] ^ l >>> 8);
+        l = (l >>> 8 ^ ls[(int) (0xffL & ((long) (this.aBoolean4990 ? 1 : 0) ^ l))]);
         return l;
     }
 

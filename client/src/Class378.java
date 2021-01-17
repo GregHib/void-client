@@ -411,7 +411,7 @@ public final class Class378 extends ha_Sub3 {
             int i_37_ = class348_sub1.method2720(-1);
             float f = class348_sub1.method2721(-115) / 255.0F;
             aD3DLIGHT9808.SetPosition((float) class348_sub1.method2724(-1), (float) class348_sub1.method2722(123), (float) class348_sub1.method2717((byte) 115));
-            aD3DLIGHT9808.SetDiffuse(f * (float) ((i_37_ & 0xff34ed) >> 362112720), (float) (0xff & i_37_ >> 1430366856) * f, f * (float) (i_37_ & 0xff), 0.0F);
+            aD3DLIGHT9808.SetDiffuse(f * (float) ((i_37_ & 0xff34ed) >> 16), (float) (0xff & i_37_ >> 8) * f, f * (float) (i_37_ & 0xff), 0.0F);
             aD3DLIGHT9808.SetAttenuation(0.0F, 0.0F, 1.0F / (float) (class348_sub1.method2723(-1) * class348_sub1.method2723(-1)));
             aD3DLIGHT9808.SetRange((float) class348_sub1.method2723(-1));
             this.anIDirect3DDevice9810.SetLight(i_36_, aD3DLIGHT9808);

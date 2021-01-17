@@ -252,14 +252,14 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements Interf
         int i_23_ = string.length();
         int i_24_ = 0;
         for (int i_25_ = 0; i_23_ > i_25_; i_25_++)
-            i_24_ = string.charAt(i_25_) + ((i_24_ << 873766853) + -i_24_);
+            i_24_ = string.charAt(i_25_) + ((i_24_ << 5) + -i_24_);
         return i_24_;
     }
 
     static final int method2419(byte i, int i_26_) {
         anInt10018++;
         if (i < 122) return -49;
-        return i_26_ >>> -1834667160;
+        return i_26_ >>> 8;
     }
 
     public final int method39(int i) {

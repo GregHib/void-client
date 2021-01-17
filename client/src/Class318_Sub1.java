@@ -73,8 +73,8 @@ abstract class Class318_Sub1 extends Class318 {
                                 i_11_ = (i_11_ * 256 / (Class348_Sub49_Sub1.anInt9750 + 256));
                                 i_12_ = i_12_ * 256 / (256 + (Class348_Sub49_Sub1.anInt9750));
                             }
-                            is[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591[i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591[2 * i_9_]))) * i_12_) >> 248635758) + (i_6_ - -(class46.anInt709 / 2)));
-                            is[i_9_ * 2 - -1] = (-((((class42.anIntArray591[1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591[i_9_ * 2]) * 4)) * i_11_) >> -772369970) + i + class46.anInt789 / 2);
+                            is[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591[i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591[2 * i_9_]))) * i_12_) >> 14) + (i_6_ - -(class46.anInt709 / 2)));
+                            is[i_9_ * 2 - -1] = (-((((class42.anIntArray591[1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591[i_9_ * 2]) * 4)) * i_11_) >> 14) + i + class46.anInt789 / 2);
                         }
                         Class329.method2619(var_ha, is, class42.anInt582, class46.anIntArray677, class46.anIntArray772);
                         if (class42.anInt584 > 0) {

@@ -45,7 +45,7 @@ final class Class5_Sub3 extends Class5 {
     static final int method200(int i, int i_3_) {
         if (i >= -75) return -109;
         anInt8377++;
-        return i_3_ >>> 1202519912;
+        return i_3_ >>> 8;
     }
 
     Class5_Sub3(Class45 class45, Class45 class45_4_, Class369_Sub1 class369_sub1) {

@@ -26,7 +26,7 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
     final int method3245(boolean bool) {
         anInt9646++;
         if (bool != true) method3248(-60);
-        return (int) (this.aLong4291 >>> -1780618848 & 0xffL);
+        return (int) (this.aLong4291 >>> 32 & 0xffL);
     }
 
     final void method3246(int i) {
@@ -84,7 +84,7 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
     }
 
     Class348_Sub42_Sub15(int i, int i_2_) {
-        this.aLong4291 = (long) i << -1165915296 | (long) i_2_;
+        this.aLong4291 = (long) i << 32 | (long) i_2_;
     }
 
     final void method3251(int i) {

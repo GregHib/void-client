@@ -93,7 +93,7 @@ abstract class Class324 {
                                 fa(c, i + i_14_, i_2_ + i_15_, Class348_Sub42_Sub1.anInt9492, false);
                             } else if (Class131.anInt1902 > 0) {
                                 Class258.anInt4848 += Class131.anInt1902;
-                                i += Class258.anInt4848 >> 1675515336;
+                                i += Class258.anInt4848 >> 8;
                                 Class258.anInt4848 &= 0xff;
                             }
                             i_6_++;
@@ -184,7 +184,7 @@ abstract class Class324 {
     static final Class46 method2570(int i, int i_45_) {
         anInt4055++;
         if (i != 1512932720) return null;
-        int i_46_ = i_45_ >> 1512932720;
+        int i_46_ = i_45_ >> 16;
         int i_47_ = i_45_ & 0xffff;
         if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_] == null || (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_][i_47_] == null)) {
             boolean bool = Class320.method2547(i_46_, (byte) 84);
@@ -199,7 +199,7 @@ abstract class Class324 {
             if (string == null) return 0;
             random.setSeed(i_48_);
             int i_53_ = (random.nextInt() & 0x1f) + 192;
-            method2579(i_53_ << 1698302424 | 0xffffff & i_50_, i ^ ~0x79, i_53_ << -2007048616 | i_49_ & 0xffffff);
+            method2579(i_53_ << 24 | 0xffffff & i_50_, i ^ ~0x79, i_53_ << 24 | i_49_ & 0xffffff);
             int i_54_ = string.length();
             if (i != -1) aClass138_4062 = null;
             int[] is_55_ = new int[i_54_];
@@ -325,7 +325,7 @@ abstract class Class324 {
                 else if (!bool && i_91_ == 32) i_89_++;
             } else bool = true;
         }
-        if (i_89_ > 0) Class131.anInt1902 = (-aClass143_4063.method1183(true, string) + i_88_ << 1031114280) / i_89_;
+        if (i_89_ > 0) Class131.anInt1902 = (-aClass143_4063.method1183(true, string) + i_88_ << 8) / i_89_;
     }
 
     final void method2581(String string, int i, int i_92_, int i_93_, byte i_94_, int i_95_, int i_96_) {
@@ -433,7 +433,7 @@ abstract class Class324 {
                                 }
                             } else if (Class131.anInt1902 > 0) {
                                 Class258.anInt4848 += Class131.anInt1902;
-                                i_106_ += Class258.anInt4848 >> 1721945800;
+                                i_106_ += Class258.anInt4848 >> 8;
                                 Class258.anInt4848 &= 0xff;
                             }
                             int i_114_ = aClass143_4063.method1184((byte) -48, c);
@@ -475,7 +475,7 @@ abstract class Class324 {
             if (string == null) return 0;
             random.setSeed(i_131_);
             int i_135_ = (0x1f & random.nextInt()) + 192;
-            method2579(i_135_ << 1604806488 | i_128_ & 0xffffff, -45, 0xffffff & i_126_ | i_135_ << -584606184);
+            method2579(i_135_ << 24 | i_128_ & 0xffffff, -45, 0xffffff & i_126_ | i_135_ << 24);
             int i_136_ = string.length();
             int[] is_137_ = new int[i_136_];
             int i_138_ = 0;

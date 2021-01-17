@@ -18,7 +18,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
     static final void method3146(int i, int i_0_, byte i_1_, int i_2_, int i_3_, int i_4_, byte[] is, byte[] is_5_, int i_6_) {
         try {
             anInt9464++;
-            int i_7_ = -(i_0_ >> -394325566);
+            int i_7_ = -(i_0_ >> 2);
             i_0_ = -(i_0_ & 0x3);
             if (i_1_ >= -12) method3148(true);
             for (int i_8_ = -i_3_; i_8_ < 0; i_8_++) {
@@ -77,7 +77,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                     i_22_ += is_20_[i_23_ & Class239_Sub22.anInt6076];
                 int i_24_ = 0;
                 while (i_24_ < Class348_Sub40_Sub6.anInt9139) {
-                    is_21_[i_24_] = i_17_ * i_22_ >> 1257667792;
+                    is_21_[i_24_] = i_17_ * i_22_ >> 16;
                     i_22_ -= (is_20_[-anInt9466 + i_24_ & Class239_Sub22.anInt6076]);
                     i_24_++;
                     i_22_ += (is_20_[i_24_ + anInt9466 & Class239_Sub22.anInt6076]);
@@ -88,7 +88,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                 int i_26_ = 0;
                 for (int i_27_ = 0; i_14_ > i_27_; i_27_++)
                     i_26_ += is_18_[i_27_][i_25_];
-                is[i_25_] = i_26_ * i_15_ >> 408717616;
+                is[i_25_] = i_26_ * i_15_ >> 16;
             }
         }
         return is;
@@ -132,9 +132,9 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                 int[] is_47_ = is_36_[2];
                 int i_48_ = 0;
                 while (Class348_Sub40_Sub6.anInt9139 > i_48_) {
-                    is_45_[i_48_] = i_37_ * i_32_ >> -1831624048;
-                    is_46_[i_48_] = i_38_ * i_32_ >> 1511888464;
-                    is_47_[i_48_] = i_39_ * i_32_ >> -501021904;
+                    is_45_[i_48_] = i_37_ * i_32_ >> 16;
+                    is_46_[i_48_] = i_38_ * i_32_ >> 16;
+                    is_47_[i_48_] = i_39_ * i_32_ >> 16;
                     int i_49_ = Class239_Sub22.anInt6076 & -anInt9466 + i_48_;
                     i_37_ -= is_40_[i_49_];
                     i_48_++;
@@ -160,9 +160,9 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                     i_55_ += is_58_[1][i_53_];
                     i_56_ += is_58_[2][i_53_];
                 }
-                is_50_[i_53_] = i_54_ * i_30_ >> -1078571920;
-                is_51_[i_53_] = i_55_ * i_30_ >> 345370960;
-                is_52_[i_53_] = i_30_ * i_56_ >> 569677936;
+                is_50_[i_53_] = i_54_ * i_30_ >> 16;
+                is_51_[i_53_] = i_55_ * i_30_ >> 16;
+                is_52_[i_53_] = i_30_ * i_56_ >> 16;
             }
         }
         return is;

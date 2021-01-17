@@ -44,8 +44,8 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         if (i >= -125) method2386(111, null);
         Class64 class64 = this.aClass235_10115.method1668(true, true, -128, 262144, var_ha);
         if (class64 != null) {
-            int i_1_ = this.anInt6377 >> -4724599;
-            int i_2_ = this.anInt6388 >> 1294324713;
+            int i_1_ = this.anInt6377 >> 9;
+            int i_2_ = this.anInt6388 >> 9;
             Class101 class101 = var_ha.method3705();
             class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
             this.aClass235_10115.method1670(i_1_, class101, i_2_, var_ha, i_1_, class64, false, (byte) -73, i_2_);
@@ -116,8 +116,8 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         Class101 class101 = var_ha.method3705();
         class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10114, false);
-        int i_12_ = this.anInt6377 >> -2076119959;
-        int i_13_ = this.anInt6388 >> -2035686871;
+        int i_12_ = this.anInt6377 >> 9;
+        int i_13_ = this.anInt6388 >> 9;
         this.aClass235_10115.method1670(i_12_, class101, i_13_, var_ha, i_12_, class64, true, (byte) -73, i_13_);
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);

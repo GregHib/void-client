@@ -104,7 +104,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
 
     static final int method2462(int i, int i_3_, int i_4_) {
         anInt10351++;
-        int i_5_ = (Class301.method2278(4, 91923 + i_4_, (byte) 120, i_3_ + 45365) - 128 + ((Class301.method2278(2, 37821 + i_4_, (byte) 122, 10294 + i_3_) - 128 >> 1938883169) + (-128 + Class301.method2278(1, i_4_, (byte) 120, i_3_) >> 1900779458)));
+        int i_5_ = (Class301.method2278(4, 91923 + i_4_, (byte) 120, i_3_ + 45365) - 128 + ((Class301.method2278(2, 37821 + i_4_, (byte) 122, 10294 + i_3_) - 128 >> 1) + (-128 + Class301.method2278(1, i_4_, (byte) 120, i_3_) >> 2)));
         i_5_ = (int) (0.3 * (double) i_5_) + 35;
         if (i_5_ >= 10) {
             if (i_5_ > 60) i_5_ = 60;

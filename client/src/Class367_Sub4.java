@@ -56,9 +56,9 @@ final class Class367_Sub4 extends Class367 {
                             i_10_ = (int) ((double) i * Math.pow(f_8_, 36.0));
                             i_11_ = (int) (Math.pow(f_8_, 12.0) * (double) i);
                         } else i_9_ = i_10_ = i_11_ = 0;
-                        is_0_[i_7_][i_2_] = i_9_ << 1864042872;
-                        is_1_[i_7_][i_2_] = i_10_ << -808975368;
-                        is[i_7_][i_2_] = i_11_ << 571661400;
+                        is_0_[i_7_][i_2_] = i_9_ << 24;
+                        is_1_[i_7_][i_2_] = i_10_ << 24;
+                        is[i_7_][i_2_] = i_11_ << 24;
                     }
                     i_2_++;
                 }
@@ -158,10 +158,10 @@ final class Class367_Sub4 extends Class367 {
         Class289.aByteArrayArrayArray3700[Class355.anInt4372][i_13_][i] = i_16_;
         while (i_17_ != i_18_) {
             int i_19_ = 0xffff & Class348_Sub16_Sub2.anIntArray8862[i_18_];
-            int i_20_ = ((Class348_Sub16_Sub2.anIntArray8862[i_18_] & 0xff3677) >> -690290320);
-            int i_21_ = (0xff & Class348_Sub16_Sub2.anIntArray8862[i_18_] >> 1098074104);
+            int i_20_ = ((Class348_Sub16_Sub2.anIntArray8862[i_18_] & 0xff3677) >> 16);
+            int i_21_ = (0xff & Class348_Sub16_Sub2.anIntArray8862[i_18_] >> 24);
             int i_22_ = 0xffff & Exception_Sub1.anIntArray110[i_18_];
-            int i_23_ = ((0xff5347 & Exception_Sub1.anIntArray110[i_18_]) >> -782063056);
+            int i_23_ = ((0xff5347 & Exception_Sub1.anIntArray110[i_18_]) >> 16);
             i_18_ = i_18_ + 1 & 0xfff;
             boolean bool_24_ = false;
             if ((0x4 & (Class348_Sub33.aByteArrayArrayArray6962[Class355.anInt4372][i_19_][i_22_])) == 0) bool_24_ = true;
@@ -193,7 +193,7 @@ final class Class367_Sub4 extends Class367 {
                                         int i_30_ = interface10.method39(59);
                                         int i_31_ = interface10.method41(-32228);
                                         if (i_30_ == 21) i_30_ = 19;
-                                        int i_32_ = i_31_ << -1688308698 | i_30_;
+                                        int i_32_ = i_31_ << 6 | i_30_;
                                         if (i_32_ == i_20_ || i_21_ != 0 && i_21_ == i_32_ || i_23_ != 0 && i_23_ == i_32_) continue while_223_;
                                     }
                                 }
@@ -219,10 +219,10 @@ final class Class367_Sub4 extends Class367 {
             if (bool_25_) {
                 int i_35_ = aa_Sub1.aSArray5191[1 + Class355.anInt4372].method3982((byte) -86, i_22_, i_19_);
                 if (i_35_ > Class327.anIntArray4097[i_15_]) Class327.anIntArray4097[i_15_] = i_35_;
-                int i_36_ = i_19_ << -1709276023;
+                int i_36_ = i_19_ << 9;
                 if (i_36_ < Class156.anIntArray2117[i_15_]) Class156.anIntArray2117[i_15_] = i_36_;
                 else if (i_36_ > Class348_Sub40_Sub19.anIntArray9259[i_15_]) Class348_Sub40_Sub19.anIntArray9259[i_15_] = i_36_;
-                int i_37_ = i_22_ << -544812791;
+                int i_37_ = i_22_ << 9;
                 if (i_37_ >= Class64.anIntArray1127[i_15_]) {
                     if (Class56.anIntArray1045[i_15_] < i_37_) Class56.anIntArray1045[i_15_] = i_37_;
                 } else Class64.anIntArray1127[i_15_] = i_37_;

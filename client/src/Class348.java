@@ -42,7 +42,7 @@ class Class348 {
                 i_12_ |= class17.method263(-1, 103, i_5_, false);
                 i_12_ &= ~0x200;
             }
-            long l = (((long) i_10_ << -2085704656) + (long) (i_7_ + ((i_9_ << 2071996176) + (i_11_ << -799739208))) - -((long) i_6_ << -84137248));
+            long l = (((long) i_10_ << 48) + (long) (i_7_ + ((i_9_ << 16) + (i_11_ << 24))) - -((long) i_6_ << 32));
             Class64 class64_13_;
             synchronized (Class342.aClass60_4254) {
                 class64_13_ = (Class64) Class342.aClass60_4254.method583(l, -64);
@@ -66,17 +66,17 @@ class Class348 {
                     int i_19_ = is[i_18_];
                     int i_20_ = is[i_18_];
                     for (int i_21_ = 0; i_14_ > i_21_; i_21_++) {
-                        int i_22_ = (i_21_ << 1406929102) / i_14_;
-                        int i_23_ = (Class70.anIntArray1207[i_22_] * i_19_ >> 428811726);
-                        int i_24_ = (Class70.anIntArray1204[i_22_] * i_20_ >> 700180942);
+                        int i_22_ = (i_21_ << 14) / i_14_;
+                        int i_23_ = (Class70.anIntArray1207[i_22_] * i_19_ >> 14);
+                        int i_24_ = (Class70.anIntArray1204[i_22_] * i_20_ >> 14);
                         is_17_[i_18_][i_21_] = class124.method1101(0, i_24_, i_23_, 123);
                     }
                 }
                 for (int i_25_ = 0; i_15_ > i_25_; i_25_++) {
                     int i_26_ = (i_25_ * 256 + 128) / i_15_;
                     int i_27_ = -i_26_ + 256;
-                    byte i_28_ = (byte) (i_26_ * i_11_ + i_9_ * i_27_ >> 267274728);
-                    short i_29_ = (short) (((0xfc0000 & ((i_10_ & 0xfc00) * i_26_ + i_27_ * (0xfc00 & i_6_))) + (((i_10_ & 0x380) * i_26_ + i_27_ * (0x380 & i_6_)) & 0x38000) + ((i_26_ * (i_10_ & 0x7f) + (0x7f & i_6_) * i_27_) & 0x7f00)) >> -874266712);
+                    byte i_28_ = (byte) (i_26_ * i_11_ + i_9_ * i_27_ >> 8);
+                    short i_29_ = (short) (((0xfc0000 & ((i_10_ & 0xfc00) * i_26_ + i_27_ * (0xfc00 & i_6_))) + (((i_10_ & 0x380) * i_26_ + i_27_ * (0x380 & i_6_)) & 0x38000) + ((i_26_ * (i_10_ & 0x7f) + (0x7f & i_6_) * i_27_) & 0x7f00)) >> 8);
                     for (int i_30_ = 0; i_30_ < i_14_; i_30_++) {
                         if (i_25_ == 0) class124.method1102(i_16_, (byte) 1, (byte) -1, (short) -1, (byte) 45, i_29_, is_17_[0][(1 + i_30_) % i_14_], i_28_, is_17_[0][i_30_]);
                         else {
@@ -97,17 +97,17 @@ class Class348 {
             Class348_Sub42_Sub17 class348_sub42_sub17 = null;
             if (class17 != null) {
                 i_5_ = class17.anIntArray237[i_5_];
-                class348_sub42_sub17 = Class10.aClass87_191.method839(i_5_ >> -2049946032, 3);
+                class348_sub42_sub17 = Class10.aClass87_191.method839(i_5_ >> 16, 3);
                 i_5_ &= 0xffff;
             }
             if (class348_sub42_sub17 == null) {
                 class64_13_ = class64_13_.method614((byte) 3, i_12_, true);
-                class64_13_.O(-i_31_ + i_32_ >> -789200671, 128, -i_33_ + i_34_ >> 1953774497);
-                class64_13_.H(i_32_ + i_31_ >> 1443854625, 0, i_34_ + i_33_ >> 1541673761);
+                class64_13_.O(-i_31_ + i_32_ >> 1, 128, -i_33_ + i_34_ >> 1);
+                class64_13_.H(i_32_ + i_31_ >> 1, 0, i_34_ + i_33_ >> 1);
             } else {
                 class64_13_ = class64_13_.method614((byte) 3, i_12_, true);
-                class64_13_.O(-i_31_ + i_32_ >> -418609087, 128, i_34_ - i_33_ >> -542993311);
-                class64_13_.H(i_32_ + i_31_ >> -29475039, 0, i_34_ + i_33_ >> 1501472385);
+                class64_13_.O(-i_31_ + i_32_ >> 1, 128, i_34_ - i_33_ >> 1);
+                class64_13_.H(i_32_ + i_31_ >> 1, 0, i_34_ + i_33_ >> 1);
                 class64_13_.method611(i_5_, -8700, class348_sub42_sub17);
             }
             if (i != 0) class64_13_.FA(i);

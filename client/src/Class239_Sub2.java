@@ -55,8 +55,8 @@ final class Class239_Sub2 extends Class239 {
         for (/**/; Class314.aFloat3938 < 0.0F; Class314.aFloat3938 += 16384.0F) {
             /* empty */
         }
-        int i_3_ = Class130_Sub1.anInt5799 >> 927495497;
-        int i_4_ = Class192.anInt2578 >> -170949527;
+        int i_3_ = Class130_Sub1.anInt5799 >> 9;
+        int i_4_ = Class192.anInt2578 >> 9;
         int i_5_ = Class275.method2064(Class130_Sub1.anInt5799, Class355.anInt4372, 11219, Class192.anInt2578);
         int i_6_ = 0;
         if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.anInt7319 > i_3_ && Class348_Sub40_Sub3.anInt9109 - 4 > i_4_) {
@@ -65,7 +65,7 @@ final class Class239_Sub2 extends Class239 {
                     int i_9_ = Class355.anInt4372;
                     if (i_9_ < 3 && Class79.method802(i_8_, i_7_, true)) i_9_++;
                     int i_10_ = 0;
-                    if ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104) != null && (Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_]) != null) i_10_ = 8 * ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_][i_7_][i_8_]) & 0xff) << 1138837506;
+                    if ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104) != null && (Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_]) != null) i_10_ = 8 * ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_][i_7_][i_8_]) & 0xff) << 2;
                     if (aa_Sub1.aSArray5191 != null && aa_Sub1.aSArray5191[i_9_] != null) {
                         int i_11_ = (i_5_ + i_10_ + -aa_Sub1.aSArray5191[i_9_].method3982((byte) -86, i_8_, i_7_));
                         if (i_6_ < i_11_) i_6_ = i_11_;
@@ -73,7 +73,7 @@ final class Class239_Sub2 extends Class239 {
                 }
             }
         }
-        int i_12_ = 1536 * (i_6_ >> -437446494);
+        int i_12_ = 1536 * (i_6_ >> 2);
         if (i_12_ > 786432) i_12_ = 786432;
         if (i_12_ < i) i_12_ = 262144;
         if (Class348_Sub35.anInt6979 < i_12_) Class348_Sub35.anInt6979 += (i_12_ - Class348_Sub35.anInt6979) / 24;

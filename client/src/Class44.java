@@ -24,16 +24,16 @@ final class Class44 {
                 int[] is_5_ = {-1, 0, 0, 0, 0};
                 for (int i = 0; i < class237_sub1.anInt3130; i++) {
                     Class369_Sub1.method3570(false);
-                    for (int i_6_ = 0; (Class367_Sub4.anInt7319 >> -1410936221 > i_6_); i_6_++) {
-                        for (int i_7_ = 0; i_7_ < Class348_Sub40_Sub3.anInt9109 >> 48975811; i_7_++) {
+                    for (int i_6_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_6_); i_6_++) {
+                        for (int i_7_ = 0; i_7_ < Class348_Sub40_Sub3.anInt9109 >> 3; i_7_++) {
                             int i_8_ = (Class62.anIntArrayArrayArray1116[i][i_6_][i_7_]);
                             if (i_8_ != -1) {
-                                int i_9_ = i_8_ >> -1306551304 & 0x3;
+                                int i_9_ = i_8_ >> 24 & 0x3;
                                 if (!class237_sub1.aBoolean3109 || i_9_ == 0) {
-                                    int i_10_ = (i_8_ & 0x6) >> 1432689025;
-                                    int i_11_ = (i_8_ & 0xffd064) >> 86505390;
-                                    int i_12_ = i_8_ >> 1357170371 & 0x7ff;
-                                    int i_13_ = ((i_11_ / 8 << 649524712) - -(i_12_ / 8));
+                                    int i_10_ = (i_8_ & 0x6) >> 1;
+                                    int i_11_ = (i_8_ & 0xffd064) >> 14;
+                                    int i_12_ = i_8_ >> 3 & 0x7ff;
+                                    int i_13_ = ((i_11_ / 8 << 8) - -(i_12_ / 8));
                                     for (int i_14_ = 0; i_14_ < (Class348_Sub23_Sub3.anIntArray9042).length; i_14_++) {
                                         if ((i_13_ == (Class348_Sub23_Sub3.anIntArray9042[i_14_])) && is[i_14_] != null) {
                                             Class348_Sub49 class348_sub49 = new Class348_Sub49(is[i_14_]);
@@ -49,8 +49,8 @@ final class Class44 {
                 }
                 for (int i = 0; class237_sub1.anInt3130 > i; i++) {
                     Class369_Sub1.method3570(false);
-                    for (int i_15_ = 0; (i_15_ < Class367_Sub4.anInt7319 >> 1013179203); i_15_++) {
-                        for (int i_16_ = 0; (i_16_ < Class348_Sub40_Sub3.anInt9109 >> -811826653); i_16_++) {
+                    for (int i_15_ = 0; (i_15_ < Class367_Sub4.anInt7319 >> 3); i_15_++) {
+                        for (int i_16_ = 0; (i_16_ < Class348_Sub40_Sub3.anInt9109 >> 3); i_16_++) {
                             int i_17_ = (Class62.anIntArrayArrayArray1116[i][i_15_][i_16_]);
                             if (i_17_ == -1) class237_sub1.method1678(i_15_ * 8, 8, i_16_ * 8, -100, 8, i);
                         }

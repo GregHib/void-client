@@ -27,8 +27,8 @@ final class Class108 {
             float f_13_ = f_7_ * f_6_ + f_3_;
             float f_14_ = f + f_6_ * f_8_;
             float f_15_ = f_1_ + f_9_ * f_6_;
-            int i_16_ = (int) f_13_ >> 430575337;
-            int i_17_ = (int) f_15_ >> 1868123209;
+            int i_16_ = (int) f_13_ >> 9;
+            int i_17_ = (int) f_15_ >> 9;
             if (i_16_ > 0 && i_17_ > 0 && Class367_Sub4.anInt7319 > i_16_ && (i_17_ < Class348_Sub40_Sub3.anInt9109)) {
                 int i_18_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381);
                 if (i_18_ < 3 && ((Class348_Sub33.aByteArrayArrayArray6962[1][i_16_][i_17_]) & 0x2) != 0) i_18_++;

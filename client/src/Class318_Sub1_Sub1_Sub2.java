@@ -170,7 +170,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
         for (int i_13_ = 0; i_13_ < class302s.length; i_13_++) {
             Class302 class302 = class302s[i_13_];
             if (class302 != null && class302.anInt3840 == 2) {
-                Class318_Sub5.method2505(i_9_ >> 1758883841, 2 * class302.anInt3839, 0, i_12_, i_11_ >> 74837057, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835);
+                Class318_Sub5.method2505(i_9_ >> 1, 2 * class302.anInt3839, 0, i_12_, i_11_ >> 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835);
                 if (Class239_Sub21.anIntArray6062[0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
                     Class105 class105 = (Class239_Sub9.aClass105Array5933[class302.anInt3831]);
                     int i_14_ = -12 + (i - -Class239_Sub21.anIntArray6062[0]);

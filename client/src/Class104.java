@@ -76,10 +76,10 @@ final class Class104 {
     private final void method952(int i, int i_13_, int i_14_, int i_15_, int i_16_) {
         anInt1629++;
         if (aClass232ArrayArray1623 != null) {
-            int i_17_ = i_14_ + -1 >> -271430585;
-            int i_18_ = -1 + i_14_ - 1 - -i_13_ >> 2032031335;
-            int i_19_ = i_15_ + i_16_ >> 472514151;
-            int i_20_ = -1 + i + i_16_ - 1 >> 1145890055;
+            int i_17_ = i_14_ + -1 >> 7;
+            int i_18_ = -1 + i_14_ - 1 - -i_13_ >> 7;
+            int i_19_ = i_15_ + i_16_ >> 7;
+            int i_20_ = -1 + i + i_16_ - 1 >> 7;
             for (int i_21_ = i_17_; i_18_ >= i_21_; i_21_++) {
                 Class232[] class232s = aClass232ArrayArray1623[i_21_];
                 for (int i_22_ = i_19_; i_22_ <= i_20_; i_22_++)

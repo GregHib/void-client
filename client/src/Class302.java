@@ -51,7 +51,7 @@ final class Class302 {
             if (i_4_ == -1) i_4_ = Class348_Sub42_Sub16_Sub1.anInt10447;
             Class33.method338(0, i_4_);
             if (i == -43) {
-                int i_5_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2436((byte) 103) << 1788292200);
+                int i_5_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2436((byte) 103) << 8);
                 Class335.method2655(98, Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381, Class348_Sub51.anInt7267, i_5_ + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388), (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377 - -i_5_));
                 Class348_Sub51.anInt7267 = 0;
             }

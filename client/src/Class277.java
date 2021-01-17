@@ -23,7 +23,7 @@ final class Class277 {
     int anInt3575;
 
     final void method2067(int i) {
-        this.anInt3564 = (this.anInt3564 << -267776152 | this.anInt3573);
+        this.anInt3564 = (this.anInt3564 << 8 | this.anInt3573);
         if (i != -4860) method2067(-102);
         anInt3571++;
     }
@@ -47,14 +47,14 @@ final class Class277 {
                 } else if (i_1_ != 5) {
                     if (i_1_ != 7) {
                         if (i_1_ == 8) this.aClass268_3562.anInt3447 = this.anInt3573;
-                        else if (i_1_ == 9) this.anInt3570 = (class348_sub49.readShort(842397944) << -345189086);
+                        else if (i_1_ == 9) this.anInt3570 = (class348_sub49.readShort(842397944) << 2);
                         else if (i_1_ == 10) this.aBoolean3566 = false;
                         else if (i_1_ == 11) this.anInt3564 = class348_sub49.readUnsignedByte(255);
                         else if (i_1_ != 12) {
                             if (i_1_ != 13) {
                                 if (i_1_ != 14) {
                                     if (i_1_ == 16) this.anInt3574 = class348_sub49.readUnsignedByte(255);
-                                } else this.anInt3558 = (class348_sub49.readUnsignedByte(255) << 991859202);
+                                } else this.anInt3558 = (class348_sub49.readUnsignedByte(255) << 2);
                             } else this.anInt3559 = class348_sub49.method3351(-1);
                         } else this.aBoolean3560 = true;
                     } else this.anInt3569 = (Class348_Sub40_Sub34.method3140(-67, class348_sub49.method3351(-1)));

@@ -77,10 +77,10 @@ final class Class225 {
             if (this.anIntArrayArray2939[i_0_] != null) {
                 i_2_ = this.anIntArrayArray2939[i_0_][1];
                 i_3_ = this.anIntArrayArray2939[i_0_][2];
-                i_4_ = (this.anIntArrayArray2939[i_0_][3] << 1768174275);
+                i_4_ = (this.anIntArrayArray2939[i_0_][3] << 3);
                 i_1_ = this.anIntArrayArray2939[i_0_][0];
-                i_5_ = (this.anIntArrayArray2939[i_0_][4] << -1947272285);
-                i_6_ = (this.anIntArrayArray2939[i_0_][5] << 285198467);
+                i_5_ = (this.anIntArrayArray2939[i_0_][4] << 3);
+                i_6_ = (this.anIntArrayArray2939[i_0_][5] << 3);
             }
             if (i_1_ != 0 || i_2_ != 0 || i_3_ != 0 || i_4_ != 0 || i_5_ != 0 || i_6_ != 0) {
                 Class101 class101 = aClass101Array2925[i_0_] = var_ha.method3654();
@@ -189,8 +189,8 @@ final class Class225 {
                                                                                 }
                                                                             } else if (i_12_ == 53) this.aBoolean2913 = false;
                                                                             else if (i_12_ == 54) {
-                                                                                this.anInt2912 = class348_sub49.readUnsignedByte(255) << -1300429466;
-                                                                                this.anInt2943 = class348_sub49.readUnsignedByte(i + 207) << -59678202;
+                                                                                this.anInt2912 = class348_sub49.readUnsignedByte(255) << 6;
+                                                                                this.anInt2943 = class348_sub49.readUnsignedByte(i + 207) << 6;
                                                                             } else if (i_12_ == 55) {
                                                                                 if (this.anIntArray2907 == null) this.anIntArray2907 = new int[12];
                                                                                 int i_18_ = class348_sub49.readUnsignedByte(i ^ 0xcf);

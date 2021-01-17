@@ -143,8 +143,8 @@ final class Class219 {
                     i_7_ <<= 9;
                     if ((class318_sub1_sub3_sub3.anInt10319) == 1) {
                         int i_10_ = (class318_sub1_sub3_sub3.anInt10325 * class318_sub1_sub3_sub3.anInt10325);
-                        int i_11_ = ((i_4_ >= class318_sub1_sub3_sub3.anInt6377 ? -(class318_sub1_sub3_sub3.anInt6377) + i_4_ : (class318_sub1_sub3_sub3.anInt6377) + -i_4_) << -606376951);
-                        int i_12_ = (((class318_sub1_sub3_sub3.anInt6388) <= i_5_ ? i_5_ - class318_sub1_sub3_sub3.anInt6388 : (class318_sub1_sub3_sub3.anInt6388) + -i_5_) << 1550268617);
+                        int i_11_ = ((i_4_ >= class318_sub1_sub3_sub3.anInt6377 ? -(class318_sub1_sub3_sub3.anInt6377) + i_4_ : (class318_sub1_sub3_sub3.anInt6377) + -i_4_) << 9);
+                        int i_12_ = (((class318_sub1_sub3_sub3.anInt6388) <= i_5_ ? i_5_ - class318_sub1_sub3_sub3.anInt6388 : (class318_sub1_sub3_sub3.anInt6388) + -i_5_) << 9);
                         int i_13_ = Math.max(i_12_, i_11_);
                         int i_14_ = class225.anInt2945 * 2 * i_13_;
                         if (i_10_ <= i_14_) {
@@ -165,7 +165,7 @@ final class Class219 {
                         class318_sub1_sub3_sub3.anInt10325 += class225.anInt2945;
                         if (i_7_ < class318_sub1_sub3_sub3.anInt10325) class318_sub1_sub3_sub3.anInt10325 = i_7_;
                     }
-                    i_7_ = (class318_sub1_sub3_sub3.anInt10325) >> -961523191;
+                    i_7_ = (class318_sub1_sub3_sub3.anInt10325) >> 9;
                     if (i_7_ < 1) i_7_ = 1;
                 }
                 if (i_2_ == i_4_ && i_5_ == i_3_) Class235.anInt3062 = -1;

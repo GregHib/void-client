@@ -173,9 +173,9 @@ final class Class286_Sub6 extends Class286 {
     final void method2136(int i, int i_5_, byte i_6_) {
         if (aBoolean6266) {
             int i_7_ = 1 << (0x3 & i);
-            float f = (float) (1 << ((i & 0x3d) >> 1237007235)) / 32.0F;
+            float f = (float) (1 << ((i & 0x3d) >> 3)) / 32.0F;
             int i_8_ = i_5_ & 0xffff;
-            float f_9_ = (float) (0x3 & i_5_ >> -533417136) / 8.0F;
+            float f_9_ = (float) (0x3 & i_5_ >> 16) / 8.0F;
             long l = aClass337_6274.aLong4178;
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "time"), (float) (i_7_ * (this.aHa_Sub2_3684.anInt7735) % 40000) / 40000.0F);
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "scale"), f);

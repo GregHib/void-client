@@ -28,8 +28,8 @@ final class Class59_Sub1_Sub2 extends Class59_Sub1 {
         anInt8659++;
         int i_2_ = i * 2;
         int i_3_ = i_0_ & 0xff;
-        aByteArray8660[i_2_++] = (byte) (i_3_ * 3 >> -479460411);
-        if (i_1_ == 14) aByteArray8660[i_2_] = (byte) (i_3_ * 3 >> 1998283269);
+        aByteArray8660[i_2_++] = (byte) (i_3_ * 3 >> 5);
+        if (i_1_ == 14) aByteArray8660[i_2_] = (byte) (i_3_ * 3 >> 5);
     }
 
     final byte[] method562(int i, int i_4_, byte i_5_, int i_6_) {

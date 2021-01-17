@@ -129,8 +129,8 @@ final class Class51 {
         try {
             if (Class104.method955(22311, i)) i = 4;
             anInt938++;
-            long l = i_9_ + (i << -1253023421) + (this.anInt941 << -1906774710);
-            l |= var_ha.anInt4567 << 1616267869;
+            long l = i_9_ + (i << 3) + (this.anInt941 << 10);
+            l |= var_ha.anInt4567 << 29;
             int i_11_ = i_4_;
             if (aByte886 == 3) i_11_ |= 0x7;
             else {
@@ -388,7 +388,7 @@ final class Class51 {
                                     if (i != 67) {
                                         if (i == 69) this.anInt914 = (class348_sub49.readUnsignedByte(255));
                                         else if (i != 70) {
-                                            if (i == 71) anInt873 = ((class348_sub49.method3372(13638)) << 732014370);
+                                            if (i == 71) anInt873 = ((class348_sub49.method3372(13638)) << 2);
                                             else if (i != 72) {
                                                 if (i == 73) this.aBoolean947 = true;
                                                 else if (i == 74) this.aBoolean876 = true;
@@ -518,13 +518,13 @@ final class Class51 {
                                                         this.anIntArray945[i_51_ + 1] = i_50_;
                                                     }
                                                 } else this.anInt895 = (class348_sub49.readUnsignedByte(255));
-                                            } else anInt946 = ((class348_sub49.method3372(13638)) << -414027806);
-                                        } else anInt900 = ((class348_sub49.method3372(13638)) << -1099102046);
+                                            } else anInt946 = ((class348_sub49.method3372(13638)) << 2);
+                                        } else anInt900 = ((class348_sub49.method3372(13638)) << 2);
                                     } else anInt882 = (class348_sub49.readShort(842397944));
                                 } else anInt935 = (class348_sub49.readShort(842397944));
                             } else this.aBoolean918 = false;
                         } else anInt949 = class348_sub49.method3388(-77);
-                    } else this.anInt883 = (class348_sub49.readUnsignedByte(255) << -1561278014);
+                    } else this.anInt883 = (class348_sub49.readUnsignedByte(255) << 2);
                 } else this.aBoolean906 = true;
             } else this.anInt874 = class348_sub49.readUnsignedByte(255);
         } else this.anInt926 = class348_sub49.readUnsignedByte(255);
@@ -535,9 +535,9 @@ final class Class51 {
         try {
             if (Class104.method955(22311, i_64_)) i_64_ = 4;
             anInt910++;
-            long l = (this.anInt941 << 930035434) + ((i_64_ << -1222243261) - -i_66_);
+            long l = (this.anInt941 << 10) + ((i_64_ << 3) - -i_66_);
             int i_73_ = i_67_;
-            l |= var_ha.anInt4567 << 1626230813;
+            l |= var_ha.anInt4567 << 29;
             if (class17 != null) i_67_ |= class17.method263(i, 123, i_70_, false);
             if (aByte886 != 3) {
                 if (aByte886 != 0 || anInt954 != 0) i_67_ |= 0x2;

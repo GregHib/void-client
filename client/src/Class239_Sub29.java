@@ -61,7 +61,7 @@ final class Class239_Sub29 extends Class239 {
     static final int method1850(int i, int i_8_) {
         anInt6144++;
         int i_9_ = 101 % ((-20 - i_8_) / 37);
-        return i >>> -1456438840;
+        return i >>> 8;
     }
 
     final int method1714(int i, int i_10_) {

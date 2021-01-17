@@ -212,20 +212,20 @@ final class Class181 {
     }
 
     final void method1371(int i) {
-        this.anInt2429 = (0xff8084 & anInt2428) >> -1101605264;
-        anInt2420 = anInt2434 >> 499648816 & 0xff;
+        this.anInt2429 = (0xff8084 & anInt2428) >> 16;
+        anInt2420 = anInt2434 >> 16 & 0xff;
         if (this.anInt2384 > -2 || this.anInt2423 > -2) this.aBoolean2397 = true;
         anInt2378++;
-        anInt2419 = anInt2434 >> -299034488 & 0xff;
-        this.anInt2390 = 0xff & anInt2428 >> 1929846536;
+        anInt2419 = anInt2434 >> 8 & 0xff;
+        this.anInt2390 = 0xff & anInt2428 >> 8;
         this.anInt2433 = -this.anInt2429 + anInt2420;
         anInt2412 = 0xff & anInt2434;
         this.anInt2399 = anInt2428 & 0xff;
         this.anInt2403 = anInt2419 - this.anInt2390;
         if (i != 4) this.aBoolean2376 = false;
-        this.anInt2413 = anInt2428 >> -671976424 & 0xff;
+        this.anInt2413 = anInt2428 >> 24 & 0xff;
         this.anInt2408 = anInt2412 - this.anInt2399;
-        anInt2444 = 0xff & anInt2434 >> -1555004712;
+        anInt2444 = 0xff & anInt2434 >> 24;
         this.anInt2410 = -this.anInt2413 + anInt2444;
         if (this.anInt2427 != -1) {
             this.anInt2388 = this.anInt2407 * anInt2432 / 100;
@@ -236,15 +236,15 @@ final class Class181 {
             this.anInt2381 = this.anInt2407 * anInt2440 / 100;
             this.anInt2373 = anInt2375 * this.anInt2407 / 100;
             if (this.anInt2373 == 0) this.anInt2373 = 1;
-            this.anInt2426 = ((((this.anInt2386 & 0xff61a1) >> -1333958768) + (-this.anInt2429 - this.anInt2433 / 2)) << -1835545336) / this.anInt2373;
-            this.anInt2405 = (((0xff & this.anInt2386) - (this.anInt2399 - -(this.anInt2408 / 2))) << 177669928) / this.anInt2373;
+            this.anInt2426 = ((((this.anInt2386 & 0xff61a1) >> 16) + (-this.anInt2429 - this.anInt2433 / 2)) << 8) / this.anInt2373;
+            this.anInt2405 = (((0xff & this.anInt2386) - (this.anInt2399 - -(this.anInt2408 / 2))) << 8) / this.anInt2373;
             if (this.anInt2381 == 0) this.anInt2381 = 1;
-            this.anInt2421 = ((-(this.anInt2403 / 2) + -this.anInt2390 + ((this.anInt2386 & 0xff16) >> -1967266872)) << -479429560) / this.anInt2373;
+            this.anInt2421 = ((-(this.anInt2403 / 2) + -this.anInt2390 + ((this.anInt2386 & 0xff16) >> 8)) << 8) / this.anInt2373;
             Class181 class181_26_ = this;
             class181_26_.anInt2426 = (class181_26_.anInt2426 + (this.anInt2426 > 0 ? -4 : 4));
             Class181 class181_27_ = this;
             class181_27_.anInt2405 = (class181_27_.anInt2405 + (this.anInt2405 <= 0 ? 4 : -4));
-            this.anInt2416 = (((this.anInt2386 >> -847692680 & 0xff) - this.anInt2410 / 2 - this.anInt2413) << 1376302568) / this.anInt2381;
+            this.anInt2416 = (((this.anInt2386 >> 24 & 0xff) - this.anInt2410 / 2 - this.anInt2413) << 8) / this.anInt2381;
             Class181 class181_28_ = this;
             class181_28_.anInt2421 = (class181_28_.anInt2421 + (this.anInt2421 > 0 ? -4 : 4));
             Class181 class181_29_ = this;

@@ -16,7 +16,7 @@ class Class59_Sub2 extends Class59 {
 
     final void method546(int i, int i_0_, int i_1_) {
         if (i_1_ != -2) method543(false);
-        anInt5302 += anIntArray5303[i_0_] * i >> -1992303476;
+        anInt5302 += anIntArray5303[i_0_] * i >> 12;
         anInt5304++;
     }
 
@@ -31,7 +31,7 @@ class Class59_Sub2 extends Class59 {
         anInt5302 = Math.abs(anInt5302);
         anInt5301++;
         if (anInt5302 >= 4096) anInt5302 = 4095;
-        method563((byte) 92, anInt5308++, (byte) (anInt5302 >> -1981258460));
+        method563((byte) 92, anInt5308++, (byte) (anInt5302 >> 4));
         if (i != -1538606516) method546(-74, -93, 118);
         anInt5302 = 0;
     }
@@ -43,7 +43,7 @@ class Class59_Sub2 extends Class59 {
     }
 
     void method563(byte i, int i_7_, byte i_8_) {
-        aByteArray5309[anInt5308++] = (byte) (Class139.method1166(127, i_8_ >> -2027440895) + 127);
+        aByteArray5309[anInt5308++] = (byte) (Class139.method1166(127, i_8_ >> 1) + 127);
         if (i < 79) method543(true);
         anInt5310++;
     }

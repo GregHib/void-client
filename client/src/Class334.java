@@ -57,8 +57,8 @@ final class Class334 {
                     i_11_ = 256 * i_11_ / (Class348_Sub49_Sub1.anInt9750 + 256);
                     i_10_ = 256 * i_10_ / (256 + Class348_Sub49_Sub1.anInt9750);
                 }
-                int i_12_ = i_10_ * i_1_ + i_5_ * i_11_ >> -233642546;
-                int i_13_ = -(i_5_ * i_10_) + i_11_ * i_1_ >> 1277373550;
+                int i_12_ = i_10_ * i_1_ + i_5_ * i_11_ >> 14;
+                int i_13_ = -(i_5_ * i_10_) + i_11_ * i_1_ >> 14;
                 int i_14_ = class143.method1187(string, false, 100, null);
                 int i_15_ = class143.method1185(null, 0, 0, i_6_, string);
                 i_12_ -= i_14_ / 2;
@@ -85,9 +85,9 @@ final class Class334 {
         if (i == i_16_) return i;
         int i_19_ = 128 + -i_18_;
         if (i_17_ != 1) return -53;
-        int i_20_ = (0x7f & i_16_) * i_18_ + i_19_ * (i & 0x7f) >> 683456039;
-        int i_21_ = (0x380 & i_16_) * i_18_ + (i & 0x380) * i_19_ >> 23249671;
-        int i_22_ = (0xfc00 & i_16_) * i_18_ + i_19_ * (i & 0xfc00) >> -592151193;
+        int i_20_ = (0x7f & i_16_) * i_18_ + i_19_ * (i & 0x7f) >> 7;
+        int i_21_ = (0x380 & i_16_) * i_18_ + (i & 0x380) * i_19_ >> 7;
+        int i_22_ = (0xfc00 & i_16_) * i_18_ + i_19_ * (i & 0xfc00) >> 7;
         return i_22_ & 0xfc00 | 0x380 & i_21_ | i_20_ & 0x7f;
     }
 

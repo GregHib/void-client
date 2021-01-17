@@ -53,8 +53,8 @@ final class Class153 {
 
     static final Class348_Sub42_Sub19 method1223(int i, int i_5_, int i_6_, Class273 class273) {
         anInt2086++;
-        int i_7_ = class273.anInt5167 | i << 660374826;
-        Class348_Sub42_Sub19 class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 1795487952, (byte) -91));
+        int i_7_ = class273.anInt5167 | i << 10;
+        Class348_Sub42_Sub19 class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -91));
         if (class348_sub42_sub19 != null) return class348_sub42_sub19;
         byte[] is = (Class113.aClass45_1743.method415((byte) 73, Class113.aClass45_1743.method423(i_7_, (byte) -90)));
         if (is != null) {
@@ -65,11 +65,11 @@ final class Class153 {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
             class348_sub42_sub19.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << -1557989360, class348_sub42_sub19, -1);
+            Class322.aClass308_4036.method2305((long) i_7_ << 16, class348_sub42_sub19, -1);
             return class348_sub42_sub19;
         }
-        i_7_ = class273.anInt5167 | 65536 + i_5_ << 2087345450;
-        class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << -1741106544, (byte) -31));
+        i_7_ = class273.anInt5167 | 65536 + i_5_ << 10;
+        class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -31));
         if (class348_sub42_sub19 != null) return class348_sub42_sub19;
         is = (Class113.aClass45_1743.method415((byte) 73, Class113.aClass45_1743.method423(i_7_, (byte) -107)));
         if (is != null) {
@@ -80,11 +80,11 @@ final class Class153 {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
             class348_sub42_sub19.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << -1141322992, class348_sub42_sub19, -1);
+            Class322.aClass308_4036.method2305((long) i_7_ << 16, class348_sub42_sub19, -1);
             return class348_sub42_sub19;
         }
         i_7_ = class273.anInt5167 | 0x3fffc00;
-        class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 96837648, (byte) -107));
+        class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -107));
         if (class348_sub42_sub19 != null) return class348_sub42_sub19;
         is = (Class113.aClass45_1743.method415((byte) 73, Class113.aClass45_1743.method423(i_7_, (byte) 104)));
         if (is != null) {
@@ -95,7 +95,7 @@ final class Class153 {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
             class348_sub42_sub19.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << 1563421904, class348_sub42_sub19, -1);
+            Class322.aClass308_4036.method2305((long) i_7_ << 16, class348_sub42_sub19, -1);
             return class348_sub42_sub19;
         }
         if (i_6_ != 96837648) return null;

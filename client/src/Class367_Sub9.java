@@ -25,9 +25,9 @@ final class Class367_Sub9 extends Class367 {
         anInt7372++;
         if (aBoolean7373) {
             int i_2_ = 1 << (i_0_ & 0x3);
-            float f = (float) (1 << (0x7 & i_0_ >> 1410997091)) / 32.0F;
+            float f = (float) (1 << (0x7 & i_0_ >> 3)) / 32.0F;
             int i_3_ = i_1_ & 0xffff;
-            float f_4_ = (float) (0x3 & i_1_ >> 1922292912) / 8.0F;
+            float f_4_ = (float) (0x3 & i_1_ >> 16) / 8.0F;
             long l = aClass89_7369.aLong1510;
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "time"), (float) ((this.aHa_Sub3_4479.anInt8146) * i_2_ % 40000) / 40000.0F);
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "scale"), f);

@@ -60,7 +60,7 @@ final class Class55_Sub1 extends Class55 {
             if (is_4_ == null) throw new IllegalStateException("");
             aClass348_Sub49_5276.aByteArray7154 = is_4_;
             aClass348_Sub49_5276.anInt7197 = 0;
-            int i_5_ = is_4_.length >> 994128513;
+            int i_5_ = is_4_.length >> 1;
             anIntArray5269 = new int[i_5_];
             for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
                 anIntArray5269[i_6_] = aClass348_Sub49_5276.readShort(842397944);

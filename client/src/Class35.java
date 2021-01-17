@@ -27,7 +27,7 @@ final class Class35 {
             } else i = 2;
             return i;
         }
-        i = (0x7f & i_1_) * i >> 1768082311;
+        i = (0x7f & i_1_) * i >> 7;
         if (i < 2) i = 2;
         else if (i > 126) i = 126;
         return i + (0xff80 & i_1_);

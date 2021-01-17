@@ -60,7 +60,7 @@ final class Class348_Sub38 extends Class348 {
         int i_13_ = i_8_ - -(i_9_ << aS_Sub3_7019.anInt4588);
         int i_14_ = aS_Sub3_7019.method3986(i_12_, i_13_, (byte) -127);
         if ((i_10_ & 0x7f) == 0 || (i_8_ & 0x7f) == 0) {
-            l = ((long) i_13_ & 0xffffL) << 926055376 | (long) i_12_ & 0xffffL;
+            l = ((long) i_13_ & 0xffffL) << 16 | (long) i_12_ & 0xffffL;
             Class348 class348 = aClass356_7011.method3480(l, i_7_ + 23335);
             if (class348 != null) {
                 method3034((((Class348_Sub29) class348).aShort6911), (byte) 49);
@@ -128,9 +128,9 @@ final class Class348_Sub38 extends Class348 {
             float f_34_ = f_32_ * f_33_ * 2.0F;
             if (f_34_ > 1.0F) f_34_ = 1.0F;
             int i_35_ = aClass348_Sub1_7004.method2720(-1);
-            int i_36_ = (int) (f_34_ * (float) (0xff & i_35_ >> 331175152));
+            int i_36_ = (int) (f_34_ * (float) (0xff & i_35_ >> 16));
             if (i_36_ > 255) i_36_ = 255;
-            int i_37_ = (int) (f_34_ * (float) ((0xff76 & i_35_) >> -1961847640));
+            int i_37_ = (int) (f_34_ * (float) ((0xff76 & i_35_) >> 8));
             if (i_37_ > 255) i_37_ = 255;
             int i_38_ = (int) ((float) (i_35_ & 0xff) * f_34_);
             if (i_38_ > 255) i_38_ = 255;
@@ -173,7 +173,7 @@ final class Class348_Sub38 extends Class348 {
             aHa_Sub3_7007 = var_ha_Sub3;
             aS_Sub3_7019 = var_s_Sub3;
             aClass348_Sub1_7004 = class348_sub1;
-            int i = (aClass348_Sub1_7004.method2723(-1) + -(var_s_Sub3.anInt4592 >> -108667167));
+            int i = (aClass348_Sub1_7004.method2723(-1) + -(var_s_Sub3.anInt4592 >> 1));
             anInt7023 = (-i + aClass348_Sub1_7004.method2724(-1) >> var_s_Sub3.anInt4588);
             anInt7017 = (aClass348_Sub1_7004.method2724(-1) + i >> var_s_Sub3.anInt4588);
             anInt7014 = (-i + aClass348_Sub1_7004.method2717((byte) 124) >> var_s_Sub3.anInt4588);

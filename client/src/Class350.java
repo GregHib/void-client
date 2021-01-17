@@ -22,8 +22,8 @@ final class Class350 {
     static final int method3452(int i, byte i_0_, int i_1_) {
         if (i_0_ != -15) method3452(80, (byte) 123, -88);
         anInt4315++;
-        int i_2_ = i_1_ + -1 & i >> 1328912127;
-        return (i + (i >>> -1222530561)) % i_1_ + i_2_;
+        int i_2_ = i_1_ + -1 & i >> 31;
+        return (i + (i >>> 31)) % i_1_ + i_2_;
     }
 
     final Class350 method3453(boolean bool) {

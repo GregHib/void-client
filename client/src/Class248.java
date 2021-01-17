@@ -139,7 +139,7 @@ final class Class248 {
                             int i_12_ = aClass348_Sub49_3211.readInt((byte) -126);
                             int i_13_ = 0x7f & i_11_;
                             boolean bool = (0x80 & i_11_) != 0;
-                            long l = (i_9_ << 1674464528) + i_10_;
+                            long l = (i_9_ << 16) + i_10_;
                             Object object = null;
                             Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1_14_;
                             if (bool) {
@@ -191,7 +191,7 @@ final class Class248 {
     static final void method1895(int i, byte[] is, int i_16_, int i_17_, int i_18_, int i_19_, byte[] is_20_, int i_21_, byte i_22_) {
         try {
             anInt3198++;
-            int i_23_ = -(i_21_ >> 375931490);
+            int i_23_ = -(i_21_ >> 2);
             i_21_ = -(0x3 & i_21_);
             if (i_22_ != 121) aClass229_3196 = null;
             for (int i_24_ = -i_16_; i_24_ < 0; i_24_++) {
@@ -353,7 +353,7 @@ final class Class248 {
     final Class348_Sub42_Sub16_Sub1 method1906(byte i, byte i_29_, boolean bool, int i_30_, int i_31_) {
         anInt3187++;
         int i_32_ = -118 % ((i - -15) / 61);
-        long l = (i_31_ << -433204560) - -i_30_;
+        long l = (i_31_ << 16) - -i_30_;
         Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = new Class348_Sub42_Sub16_Sub1();
         class348_sub42_sub16_sub1.aBoolean9663 = bool;
         class348_sub42_sub16_sub1.aLong7057 = l;

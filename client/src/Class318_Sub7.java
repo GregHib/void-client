@@ -115,20 +115,20 @@ final class Class318_Sub7 extends Class318 {
                     Class348.anInt4290 = 10;
                 }
                 if (Class348.anInt4290 == 10) {
-                    Class75.anInt1266 = (Class75.aClass348_Sub42_Sub14_1243.anInt9644 >> 840340166 << -549653210);
-                    Class75.anInt1263 = (Class75.aClass348_Sub42_Sub14_1243.anInt9643 >> 1417700934 << 822341702);
-                    Class75.anInt1259 = 64 + ((Class75.aClass348_Sub42_Sub14_1243.anInt9635 >> 573896006 << -297311578) - Class75.anInt1266);
-                    Class75.anInt1267 = 64 + ((Class75.aClass348_Sub42_Sub14_1243.anInt9627 >> -66097498 << -396192762) - Class75.anInt1263);
+                    Class75.anInt1266 = (Class75.aClass348_Sub42_Sub14_1243.anInt9644 >> 6 << 6);
+                    Class75.anInt1263 = (Class75.aClass348_Sub42_Sub14_1243.anInt9643 >> 6 << 6);
+                    Class75.anInt1259 = 64 + ((Class75.aClass348_Sub42_Sub14_1243.anInt9635 >> 6 << 6) - Class75.anInt1266);
+                    Class75.anInt1267 = 64 + ((Class75.aClass348_Sub42_Sub14_1243.anInt9627 >> 6 << 6) - Class75.anInt1263);
                     int[] is = new int[3];
                     int i_7_ = -1;
                     int i_8_ = -1;
-                    if (Class75.aClass348_Sub42_Sub14_1243.method3236(is, (za_Sub2.anInt9780 - -((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) >> -1269731799)), ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) >> -1006269719) + Class90.anInt1517, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381), (byte) -28)) {
+                    if (Class75.aClass348_Sub42_Sub14_1243.method3236(is, (za_Sub2.anInt9780 - -((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) >> 9)), ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) >> 9) + Class90.anInt1517, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381), (byte) -28)) {
                         i_7_ = -Class75.anInt1266 + is[1];
                         i_8_ = -Class75.anInt1263 + is[2];
                     }
                     if (Class88.aBoolean1500 || i_7_ < 0 || Class75.anInt1259 <= i_7_ || i_8_ < 0 || Class75.anInt1267 <= i_8_) {
                         if (Class239_Sub7.anInt5909 == -1 || Class339.anInt4202 == -1) {
-                            Class75.aClass348_Sub42_Sub14_1243.method3242(is, 123, 0x3fff & (Class75.aClass348_Sub42_Sub14_1243.anInt9640), (Class75.aClass348_Sub42_Sub14_1243.anInt9640) >> 1984760846 & 0x3fff);
+                            Class75.aClass348_Sub42_Sub14_1243.method3242(is, 123, 0x3fff & (Class75.aClass348_Sub42_Sub14_1243.anInt9640), (Class75.aClass348_Sub42_Sub14_1243.anInt9640) >> 14 & 0x3fff);
                             Class245.anInt3170 = is[2] - Class75.anInt1263;
                             Class348_Sub36.anInt6992 = is[1] - Class75.anInt1266;
                         } else {
@@ -155,7 +155,7 @@ final class Class318_Sub7 extends Class318 {
                             } else Class75.aFloat1249 = Class75.aFloat1247 = 6.0F;
                         } else Class75.aFloat1249 = Class75.aFloat1247 = 4.0F;
                     } else Class75.aFloat1249 = Class75.aFloat1247 = 3.0F;
-                    Class75.anInt1255 = (int) Class75.aFloat1247 >> 1900961505;
+                    Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
                     Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871);
                     Class348_Sub15.method2811(false);
                     Class75.method760();
@@ -166,7 +166,7 @@ final class Class318_Sub7 extends Class318 {
                     Class75.anInt1253 += -2 + (int) (5.0 * Math.random());
                     if (Class75.anInt1253 < -16) Class75.anInt1253 = -16;
                     if (Class75.anInt1253 > 16) Class75.anInt1253 = 16;
-                    Class75.method764(var_d, (Class75.anInt1250 >> 636273666 << -1945256278), Class75.anInt1253 >> -817127487);
+                    Class75.method764(var_d, (Class75.anInt1250 >> 2 << 10), Class75.anInt1253 >> 1);
                     Class75.aClass153_1238.method1220((byte) 73, 256, 1024);
                     Class75.aClass141_1242.method1178(256, 1, 256);
                     Class75.aClass263_1245.method2014(4096, true);
@@ -285,14 +285,14 @@ final class Class318_Sub7 extends Class318 {
                             int i_21_ = (int) (2607.5945876176133 * Math.atan2(anInt6458, anInt6455));
                             int i_22_ = (int) (2607.5945876176133 * (Math.atan2(anInt6457, (Math.sqrt(anInt6458 * anInt6458 + (anInt6455 * anInt6455))))));
                             anInt6456 = (this.aClass181_6441.aShort2415 - (this.aClass181_6441.aShort2431));
-                            anInt6459 = (this.aClass181_6441.aShort2431 + i_21_ - (anInt6456 >> 596241153));
+                            anInt6459 = (this.aClass181_6441.aShort2431 + i_21_ - (anInt6456 >> 1));
                             anInt6454 = (-this.aClass181_6441.aShort2418 + (this.aClass181_6441.aShort2441));
-                            anInt6452 = i_22_ - (-(this.aClass181_6441.aShort2418) - -(anInt6454 >> 1307903809));
+                            anInt6452 = i_22_ - (-(this.aClass181_6441.aShort2418) - -(anInt6454 >> 1));
                         }
                     }
                     anInt6434 += (int) ((((double) (-this.aClass181_6441.anInt2391 + this.aClass181_6441.anInt2389) * Math.random()) + (double) this.aClass181_6441.anInt2391) * (double) i);
                     if (anInt6434 > 63) {
-                        int i_23_ = anInt6434 >> -745479194;
+                        int i_23_ = anInt6434 >> 6;
                         anInt6434 &= 0x3f;
                         for (int i_24_ = 0; i_24_ < i_23_; i_24_++) {
                             int i_25_;
@@ -313,7 +313,7 @@ final class Class318_Sub7 extends Class318 {
                                 int i_33_ = Class70.anIntArray1204[i_31_];
                                 int i_34_ = 13;
                                 i_25_ = i_32_ * i_30_ >> i_34_;
-                                i_26_ = -1 * (i_33_ << -1640659231);
+                                i_26_ = -1 * (i_33_ << 1);
                                 i_27_ = i_32_ * i_29_ >> i_34_;
                             }
                             float f = (float) Math.random();
@@ -341,9 +341,9 @@ final class Class318_Sub7 extends Class318 {
                             int i_52_;
                             if (this.aClass181_6441.aBoolean2443) {
                                 double d = Math.random();
-                                i_52_ = ((int) (d * (double) (this.aClass181_6441.anInt2408) + (double) (this.aClass181_6441.anInt2399)) | (((int) ((double) (this.aClass181_6441.anInt2433) * d + (double) (this.aClass181_6441.anInt2429)) << 1921263376) | (int) ((double) (this.aClass181_6441.anInt2390) + ((double) (this.aClass181_6441.anInt2403) * d)) << -1984302872) | (int) ((double) (this.aClass181_6441.anInt2413) + ((double) (this.aClass181_6441.anInt2410) * (Math.random()))) << 1995494808);
+                                i_52_ = ((int) (d * (double) (this.aClass181_6441.anInt2408) + (double) (this.aClass181_6441.anInt2399)) | (((int) ((double) (this.aClass181_6441.anInt2433) * d + (double) (this.aClass181_6441.anInt2429)) << 16) | (int) ((double) (this.aClass181_6441.anInt2390) + ((double) (this.aClass181_6441.anInt2403) * d)) << 8) | (int) ((double) (this.aClass181_6441.anInt2413) + ((double) (this.aClass181_6441.anInt2410) * (Math.random()))) << 24);
                             } else
-                                i_52_ = (((int) (((double) (this.aClass181_6441.anInt2410) * Math.random()) + (double) (this.aClass181_6441.anInt2413)) << -560068936) | (((int) ((Math.random() * (double) (this.aClass181_6441.anInt2433)) + (double) (this.aClass181_6441.anInt2429)) << -1616981840) | ((int) ((Math.random() * (double) (this.aClass181_6441.anInt2403)) + (double) (this.aClass181_6441.anInt2390)) << 1898176808) | (int) (((double) (this.aClass181_6441.anInt2408) * Math.random()) + (double) (this.aClass181_6441.anInt2399))));
+                                i_52_ = (((int) (((double) (this.aClass181_6441.anInt2410) * Math.random()) + (double) (this.aClass181_6441.anInt2413)) << 24) | (((int) ((Math.random() * (double) (this.aClass181_6441.anInt2433)) + (double) (this.aClass181_6441.anInt2429)) << 16) | ((int) ((Math.random() * (double) (this.aClass181_6441.anInt2403)) + (double) (this.aClass181_6441.anInt2390)) << 8) | (int) (((double) (this.aClass181_6441.anInt2408) * Math.random()) + (double) (this.aClass181_6441.anInt2399))));
                             int i_53_ = (this.aClass181_6441.anInt2414);
                             if (!var_ha.method3644() && !(this.aClass181_6441.aBoolean2382)) i_53_ = -1;
                             if (client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {

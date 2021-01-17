@@ -42,16 +42,16 @@ final class Class316 {
                 int i_21_ = -i_11_ + i_13_;
                 int i_22_ = -i_12_ + i_14_;
                 for (int i_23_ = 128; i_23_ <= 4096; i_23_ += 128) {
-                    int i_24_ = i_23_ * i_23_ >> -1915365876;
-                    int i_25_ = i_24_ * i_23_ >> -1959497172;
+                    int i_24_ = i_23_ * i_23_ >> 12;
+                    int i_25_ = i_24_ * i_23_ >> 12;
                     int i_26_ = i_17_ * i_25_;
                     int i_27_ = i_18_ * i_25_;
                     int i_28_ = i_19_ * i_24_;
                     int i_29_ = i_24_ * i_20_;
                     int i_30_ = i_23_ * i_21_;
                     int i_31_ = i_22_ * i_23_;
-                    int i_32_ = i_1_ - -(i_26_ - (-i_28_ + -i_30_) >> -1959399924);
-                    int i_33_ = i_6_ - -(i_29_ + (i_27_ - -i_31_) >> -1929822580);
+                    int i_32_ = i_1_ - -(i_26_ - (-i_28_ + -i_30_) >> 12);
+                    int i_33_ = i_6_ - -(i_29_ + (i_27_ - -i_31_) >> 12);
                     Class339.method2665(i_9_, (byte) 109, i, i_10_, i_33_, i_32_);
                     i_9_ = i_32_;
                     i_10_ = i_33_;
@@ -63,7 +63,7 @@ final class Class316 {
 
     Class316(int[] is) {
         int i;
-        for (i = 1; is.length - -(is.length >> 874943841) >= i; i <<= 1) {
+        for (i = 1; is.length - -(is.length >> 1) >= i; i <<= 1) {
             /* empty */
         }
         anIntArray3961 = new int[i + i];
@@ -82,7 +82,7 @@ final class Class316 {
     final int method2365(int i, int i_37_) {
         anInt3960++;
         if (i != 1) method2365(-74, 111);
-        int i_38_ = -1 + (anIntArray3961.length >> 1748618689);
+        int i_38_ = -1 + (anIntArray3961.length >> 1);
         int i_39_ = i_38_ & i_37_;
         for (; ; ) {
             int i_40_ = anIntArray3961[i_39_ + i_39_ - -1];

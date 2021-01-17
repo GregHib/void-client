@@ -12,7 +12,7 @@ final class Class99 {
     static final void method880(int i, byte[] is, byte[] is_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_) {
         try {
             anInt1575++;
-            int i_7_ = -(i >> -1209643998);
+            int i_7_ = -(i >> 2);
             i = -(i & 0x3);
             if (i_2_ != 13880) method880(9, null, null, -128, 85, -75, 62, 85, -51);
             for (int i_8_ = -i_3_; i_8_ < 0; i_8_++) {

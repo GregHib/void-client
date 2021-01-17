@@ -36,12 +36,12 @@ final class Class264 {
         anInt3367++;
         if (Class147.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264.length > i) && class17.anIntArrayArray264[i] != null)) {
             int i_4_ = class17.anIntArrayArray264[i][0];
-            int i_5_ = i_4_ >> 1426050504;
+            int i_5_ = i_4_ >> 8;
             if (class17.anIntArrayArray264[i].length > 1) {
                 int i_6_ = (int) (Math.random() * (double) (class17.anIntArrayArray264[i]).length);
                 if (i_6_ > 0) i_5_ = class17.anIntArrayArray264[i][i_6_];
             }
-            int i_7_ = 0x7 & i_4_ >> -139443579;
+            int i_7_ = 0x7 & i_4_ >> 5;
             if (i_3_ > 8) {
                 int i_8_ = 256;
                 if (class17.anIntArray236 != null && class17.anIntArray265 != null) i_8_ = Class299_Sub1.method2257((class17.anIntArray265[i]), (class17.anIntArray236[i]), (byte) -125);
@@ -106,7 +106,7 @@ final class Class264 {
             anInt3365 -= i_10_;
             if (anInt3365 < 0) anInt3365 = 0;
         }
-        this.anInt3370 += anInt3365 + i_12_ >> -1379632319;
+        this.anInt3370 += anInt3365 + i_12_ >> 1;
         return bool;
     }
 

@@ -48,7 +48,7 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
         if (this.aClass191_7032.aBoolean2570) {
             int[] is_3_ = this.method3048(i, 633706337, 0);
             for (int i_4_ = 0; Class348_Sub40_Sub6.anInt9139 > i_4_; i_4_++)
-                is[i_4_] = anInt9176 - -(anInt9182 * is_3_[i_4_] >> -1371325748);
+                is[i_4_] = anInt9176 - -(anInt9182 * is_3_[i_4_] >> 12);
         }
         if (i_2_ != 255) return null;
         return is;
@@ -67,9 +67,9 @@ final class Class348_Sub40_Sub10 extends Class348_Sub40 {
             int[] is_11_ = is[1];
             int[] is_12_ = is[2];
             for (int i_13_ = 0; (Class348_Sub40_Sub6.anInt9139 > i_13_); i_13_++) {
-                is_10_[i_13_] = (anInt9182 * is_7_[i_13_] >> -1017334964) + anInt9176;
-                is_11_[i_13_] = (anInt9182 * is_8_[i_13_] >> -1317832724) + anInt9176;
-                is_12_[i_13_] = (is_9_[i_13_] * anInt9182 >> 1226212588) + anInt9176;
+                is_10_[i_13_] = (anInt9182 * is_7_[i_13_] >> 12) + anInt9176;
+                is_11_[i_13_] = (anInt9182 * is_8_[i_13_] >> 12) + anInt9176;
+                is_12_[i_13_] = (is_9_[i_13_] * anInt9182 >> 12) + anInt9176;
             }
         }
         return is;

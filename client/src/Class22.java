@@ -43,15 +43,15 @@ final class Class22 {
             if (i != 4) {
                 if (i == 5) this.aBoolean334 = false;
             } else this.aBoolean342 = false;
-        } else this.anInt336 = class348_sub49.readShort(842397944) << -1659645310;
+        } else this.anInt336 = class348_sub49.readShort(842397944) << 2;
         if (i_1_ != -4) method290(null, 12);
         anInt333++;
     }
 
     private final void method292(int i, byte i_2_) {
         anInt340++;
-        double d = (double) (0xff & i >> -1657899472) / 256.0;
-        double d_3_ = (double) ((0xff2b & i) >> -2095055736) / 256.0;
+        double d = (double) (0xff & i >> 16) / 256.0;
+        double d_3_ = (double) ((0xff2b & i) >> 8) / 256.0;
         double d_4_ = (double) (0xff & i) / 256.0;
         double d_5_ = d;
         if (d_3_ < d_5_) d_5_ = d_3_;
@@ -118,7 +118,7 @@ final class Class22 {
     static final void method295(int i, int i_11_, int i_12_, byte[] is, int i_13_, byte[] is_14_, int i_15_, int i_16_, int i_17_) {
         try {
             anInt338++;
-            int i_18_ = -(i_13_ >> 2077359746);
+            int i_18_ = -(i_13_ >> 2);
             i_13_ = -(0x3 & i_13_);
             if (i_12_ != 256) anInt339 = -63;
             for (int i_19_ = -i_15_; i_19_ < 0; i_19_++) {

@@ -50,13 +50,13 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 if (aClass348_Sub40_9527.aBoolean7045) is_10_ = aClass348_Sub40_9527.method3042(i_4_, i_1_ + 244);
                 else is_10_ = (aClass348_Sub40_9527.method3047(i_4_, -1564599039)[0]);
                 for (int i_11_ = i - 1; i_11_ >= 0; i_11_--) {
-                    int i_12_ = is_7_[i_11_] >> 1832681924;
+                    int i_12_ = is_7_[i_11_] >> 4;
                     if (i_12_ > 255) i_12_ = 255;
                     if (i_12_ < 0) i_12_ = 0;
-                    int i_13_ = is_6_[i_11_] >> 1956846788;
+                    int i_13_ = is_6_[i_11_] >> 4;
                     if (i_13_ > 255) i_13_ = 255;
                     if (i_13_ < 0) i_13_ = 0;
-                    int i_14_ = is_5_[i_11_] >> -816062588;
+                    int i_14_ = is_5_[i_11_] >> 4;
                     if (i_14_ > 255) i_14_ = 255;
                     i_13_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_13_];
                     if (i_14_ < 0) i_14_ = 0;
@@ -65,11 +65,11 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                     int i_15_;
                     if (i_12_ == 0 && i_13_ == 0 && i_14_ == 0) i_15_ = 0;
                     else {
-                        i_15_ = is_10_[i_11_] >> 153204452;
+                        i_15_ = is_10_[i_11_] >> 4;
                         if (i_15_ > 255) i_15_ = 255;
                         if (i_15_ < 0) i_15_ = 0;
                     }
-                    is[i_3_++] = (i_14_ + (i_15_ << 881050840) + ((i_12_ << 521342256) + (i_13_ << 1696622760)));
+                    is[i_3_++] = (i_14_ + (i_15_ << 24) + ((i_12_ << 16) + (i_13_ << 8)));
                     if (bool) i_3_ += -1 + i;
                 }
             }
@@ -145,19 +145,19 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 }
                 if (bool) i_28_ = i_29_;
                 for (int i_35_ = i_25_; i_35_ != i_27_; i_35_ += i_26_) {
-                    int i_36_ = is_31_[i_35_] >> -168548476;
+                    int i_36_ = is_31_[i_35_] >> 4;
                     if (i_36_ > 255) i_36_ = 255;
                     if (i_36_ < 0) i_36_ = 0;
-                    int i_37_ = is_30_[i_35_] >> -1597493052;
+                    int i_37_ = is_30_[i_35_] >> 4;
                     if (i_37_ > 255) i_37_ = 255;
                     if (i_37_ < 0) i_37_ = 0;
-                    int i_38_ = is_32_[i_35_] >> -310157596;
+                    int i_38_ = is_32_[i_35_] >> 4;
                     if (i_38_ > 255) i_38_ = 255;
                     i_37_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_37_];
                     i_36_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_36_];
                     if (i_38_ < 0) i_38_ = 0;
                     i_38_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_38_];
-                    int i_39_ = (i_37_ << 1965956712) + (i_36_ << 934532560) + i_38_;
+                    int i_39_ = (i_37_ << 8) + (i_36_ << 16) + i_38_;
                     if (i_39_ != 0) i_39_ |= ~0xffffff;
                     is[i_28_++] = i_39_;
                     if (bool) i_28_ += -1 + i;
@@ -203,7 +203,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 int[] is_51_;
                 if (aClass348_Sub40_9528.aBoolean7045) is_51_ = aClass348_Sub40_9528.method3042(i_45_, 255);
                 else is_51_ = (aClass348_Sub40_9528.method3047(i_45_, -1564599039)[0]);
-                if (bool) i_44_ = i_45_ << 1696393858;
+                if (bool) i_44_ = i_45_ << 2;
                 for (int i_52_ = i + -1; i_52_ >= 0; i_52_--) {
                     float f = (float) is_50_[i_52_] / 4096.0F;
                     float f_53_ = ((31.0F * (float) is_51_[i_52_] / 4096.0F + 1.0F) / 4096.0F);
@@ -214,7 +214,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                     fs[i_44_++] = f_53_ * (float) is_46_[i_52_];
                     fs[i_44_++] = (float) is[i_52_] * f_53_;
                     fs[i_44_++] = f;
-                    if (bool) i_44_ += -4 + (i << 842241826);
+                    if (bool) i_44_ += -4 + (i << 2);
                 }
             }
             for (int i_54_ = 0; (aClass348_Sub40Array9520.length > i_54_); i_54_++)

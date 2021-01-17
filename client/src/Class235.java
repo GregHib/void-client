@@ -205,7 +205,7 @@ final class Class235 {
     static final String method1669(int i, int i_6_) {
         if (i != -19918) method1669(75, 33);
         anInt3066++;
-        return ((0xff & i_6_ >> -1244403464) + "." + ((i_6_ & 0xffb428) >> 2041842800) + "." + (i_6_ >> 1609002984 & 0xff) + "." + (i_6_ & 0xff));
+        return ((0xff & i_6_ >> 24) + "." + ((i_6_ & 0xffb428) >> 16) + "." + (i_6_ >> 8 & 0xff) + "." + (i_6_ & 0xff));
     }
 
     final void method1670(int i, Class101 class101, int i_7_, ha var_ha, int i_8_, Class64 class64, boolean bool, byte i_9_, int i_10_) {

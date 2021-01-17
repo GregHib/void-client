@@ -304,7 +304,7 @@ final class Class46 {
             if (this.anInt770 == 1) {
                 int i_25_ = i;
                 if (class17 != null) i |= class17.method263(i_24_, 106, i_21_, true);
-                long l = this.anInt753 + ((this.anInt770 << 1791612336) + (var_ha.anInt4567 << 2111310621));
+                long l = this.anInt753 + ((this.anInt770 << 16) + (var_ha.anInt4567 << 29));
                 Class64 class64 = (Class64) Class358.aClass60_4417.method583(l, -90);
                 if (class64 == null || var_ha.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_ha.method3679(i, class64.ua());
@@ -358,7 +358,7 @@ final class Class46 {
             }
             if (this.anInt770 == 7) {
                 if (class154 == null) return null;
-                int i_26_ = this.anInt753 >>> -2052415248;
+                int i_26_ = this.anInt753 >>> 16;
                 int i_27_ = 0xffff & this.anInt753;
                 int i_28_ = this.anInt779;
                 Class64 class64 = class154.method1232(i_24_, i, i_28_, i_27_, class87, class150, -15331, i_26_, i_22_, var_ha, i_21_, class17);
@@ -507,8 +507,8 @@ final class Class46 {
             this.aByteArray746 = new byte[11];
             this.anIntArray707 = new int[11];
             for (/**/; i_41_ != 0; i_41_ = class348_sub49.readUnsignedByte(255)) {
-                int i_42_ = -1 + (i_41_ >> 202238372);
-                i_41_ = i_41_ << -1198606488 | class348_sub49.readUnsignedByte(255);
+                int i_42_ = -1 + (i_41_ >> 4);
+                i_41_ = i_41_ << 8 | class348_sub49.readUnsignedByte(255);
                 i_41_ &= 0xfff;
                 if (i_41_ == 4095) i_41_ = -1;
                 byte i_43_ = class348_sub49.method3388(-87);
@@ -527,7 +527,7 @@ final class Class46 {
             for (int i_47_ = 0; i_47_ < i_46_; i_47_++)
                 this.aStringArray833[i_47_] = class348_sub49.method3377((byte) -68);
         }
-        int i_48_ = i_45_ >> -315745276;
+        int i_48_ = i_45_ >> 4;
         if (i_48_ > 0) {
             int i_49_ = class348_sub49.readUnsignedByte(255);
             this.anIntArray706 = new int[1 + i_49_];
@@ -741,7 +741,7 @@ final class Class46 {
     final Class105 method443(ha var_ha, byte i) {
         anInt819++;
         Class348_Sub42_Sub13.aBoolean9616 = false;
-        long l = (((long) this.anInt809 << 1562209832) + (((this.aBoolean790 ? 1L : 0L) << 1884969510) + (((long) this.anInt672 << 164034916) + ((this.aBoolean745 ? 1L : 0L) << -187380061))) + ((long) this.anInt756 + ((!this.aBoolean735 ? 0L : 1L) << -888958681)));
+        long l = (((long) this.anInt809 << 40) + (((this.aBoolean790 ? 1L : 0L) << 38) + (((long) this.anInt672 << 36) + ((this.aBoolean745 ? 1L : 0L) << 35))) + ((long) this.anInt756 + ((!this.aBoolean735 ? 0L : 1L) << 39)));
         Class105 class105 = (Class105) Class351.aClass60_4327.method583(l, -71);
         if (i > -27) method434(true);
         if (class105 != null) return class105;
@@ -767,7 +767,7 @@ final class Class46 {
             if (bool != false) method424(122, -123, null, -111, 40, 28, -109, null, 76, 127, -66, 8, -45);
             anInt804++;
             if (this.anInt705 == -1) return null;
-            long l = (((long) this.anInt693 << -1127798448 & 65535L << 177554128) | (((long) this.anInt733 << -1024504224 & 65535L << -611758752) | ((long) this.anInt674 << 885236336 & 65535L << -767283792)) | (long) this.anInt705 & 0xffffL);
+            long l = (((long) this.anInt693 << 16 & 65535L << 16) | (((long) this.anInt733 << 32 & 65535L << 32) | ((long) this.anInt674 << 48 & 65535L << 48)) | (long) this.anInt705 & 0xffffL);
             Class305 class305 = ((Class305) Class348_Sub40_Sub9.aClass60_9171.method583(l, 78));
             if (class305 == null) {
                 class305 = class84.method823(this.anInt733, this.anInt693, this.anInt674, -43, class25, this.anInt705);

@@ -54,7 +54,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
         int i_4_ = (((this.aByteArray7154[this.anInt7197++]) - aClass77_9756.method781((byte) -67)) & 0xff);
         if (i_4_ < 128) return i_4_;
         if (i != 15295) anIntArray9757 = null;
-        return ((((this.aByteArray7154[this.anInt7197++]) - aClass77_9756.method781((byte) -62)) & 0xff) + (i_4_ + -128 << -932038008));
+        return ((((this.aByteArray7154[this.anInt7197++]) - aClass77_9756.method781((byte) -62)) & 0xff) + (i_4_ + -128 << 8));
     }
 
     final void method3408(int i, int i_5_) {
@@ -73,7 +73,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
     final int method3410(byte i, int i_9_) {
         if (i != -24) return -126;
         anInt9763++;
-        int i_10_ = anInt9754 >> -1710832093;
+        int i_10_ = anInt9754 >> 3;
         int i_11_ = 8 + -(anInt9754 & 0x7);
         anInt9754 += i_9_;
         int i_12_ = 0;

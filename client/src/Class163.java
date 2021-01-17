@@ -29,7 +29,7 @@ final class Class163 {
                 int i_6_ = is[i_5_];
                 int[] is_7_ = anIntArrayArray2163[i_4_];
                 for (int i_8_ = 0; i_8_ < 14; i_8_++)
-                    is_2_[i_3_ + i_8_] += i_6_ * is_7_[i_8_] >> -503982046;
+                    is_2_[i_3_ + i_8_] += i_6_ * is_7_[i_8_] >> 2;
                 i_4_ += anInt2159;
                 int i_9_ = i_4_ / anInt2164;
                 i_4_ -= anInt2164 * i_9_;
@@ -37,7 +37,7 @@ final class Class163 {
             }
             is = new short[i_1_];
             for (int i_10_ = 0; i_10_ < i_1_; i_10_++) {
-                int i_11_ = 8192 + is_2_[i_10_] >> -1603539186;
+                int i_11_ = 8192 + is_2_[i_10_] >> 14;
                 if (i_11_ >= -32768) {
                     if (i_11_ > 32767) is[i_10_] = (short) 32767;
                     else is[i_10_] = (short) i_11_;
@@ -88,7 +88,7 @@ final class Class163 {
             }
             is = new byte[i_13_];
             for (int i_22_ = 0; i_22_ < i_13_; i_22_++) {
-                int i_23_ = is_14_[i_22_] - -32768 >> -445894576;
+                int i_23_ = is_14_[i_22_] - -32768 >> 16;
                 if (i_23_ >= -128) {
                     if (i_23_ > 127) is[i_22_] = (byte) 127;
                     else is[i_22_] = (byte) i_23_;

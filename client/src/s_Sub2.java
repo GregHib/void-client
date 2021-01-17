@@ -64,8 +64,8 @@ final class s_Sub2 extends s {
     final void wa(r var_r, int i, int i_0_, int i_1_, int i_2_, boolean bool) {
         anInt8251++;
         if (aClass104_8266 != null && var_r != null) {
-            int i_3_ = (i - ((this.aHa_Sub2_8272.anInt7772 * i_0_) >> -1906808056) >> this.aHa_Sub2_8272.anInt7731);
-            int i_4_ = (-(i_0_ * this.aHa_Sub2_8272.anInt7777 >> -1062589048) + i_1_ >> this.aHa_Sub2_8272.anInt7731);
+            int i_3_ = (i - ((this.aHa_Sub2_8272.anInt7772 * i_0_) >> 8) >> this.aHa_Sub2_8272.anInt7731);
+            int i_4_ = (-(i_0_ * this.aHa_Sub2_8272.anInt7777 >> 8) + i_1_ >> this.aHa_Sub2_8272.anInt7731);
             aClass104_8266.method951(var_r, i_3_, i_4_, 70);
         }
     }
@@ -127,7 +127,7 @@ final class s_Sub2 extends s {
             byte[][] is = new byte[1 + this.anInt4587][this.anInt4590 + 1];
             for (int i = 1; i < this.anInt4587; i++) {
                 for (int i_33_ = 1; i_33_ < this.anInt4590; i_33_++)
-                    is[i][i_33_] = (byte) ((aByteArrayArray8273[i][1 + i_33_] >> -1654232061) + (aByteArrayArray8273[i][-1 + i_33_] >> 717396930) + ((aByteArrayArray8273[i + 1][i_33_] >> 289517251) + ((aByteArrayArray8273[i - 1][i_33_] >> -657576094) + (aByteArrayArray8273[i][i_33_] >> -120860607))));
+                    is[i][i_33_] = (byte) ((aByteArrayArray8273[i][1 + i_33_] >> 3) + (aByteArrayArray8273[i][-1 + i_33_] >> 2) + ((aByteArrayArray8273[i + 1][i_33_] >> 3) + ((aByteArrayArray8273[i - 1][i_33_] >> 2) + (aByteArrayArray8273[i][i_33_] >> 1))));
             }
             aClass348_Sub20Array8282 = new Class348_Sub20[aClass356_8278.method3474(1)];
             aClass356_8278.method3477(3, aClass348_Sub20Array8282);
@@ -188,7 +188,7 @@ final class s_Sub2 extends s {
                             int i_69_ = is_42_[i_64_];
                             int i_70_ = is_41_[i_64_];
                             int i_71_ = is_43_ != null ? is_43_[i_64_] : 0;
-                            long l = ((long) (i_67_ << -1515346160) | ((long) i_69_ << -776651232 | (long) i_70_ << 194768176) | (long) i_68_);
+                            long l = ((long) (i_67_ << 16) | ((long) i_69_ << 32 | (long) i_70_ << 48) | (long) i_68_);
                             int i_72_ = is_39_[i_64_];
                             int i_73_ = is_40_[i_64_];
                             int i_74_ = 74;
@@ -240,7 +240,7 @@ final class s_Sub2 extends s {
                             }
                             float f_89_ = 1.0F;
                             if (i_69_ != -1) {
-                                int i_90_ = (0x7f & i_69_) * i_74_ >> -564021913;
+                                int i_90_ = (0x7f & i_69_) * i_74_ >> 7;
                                 if (i_90_ >= 2) {
                                     if (i_90_ > 126) i_90_ = 126;
                                 } else i_90_ = 2;
@@ -256,15 +256,15 @@ final class s_Sub2 extends s {
                             if (class348 == null) {
                                 int i_92_;
                                 if (i_69_ != i_70_) {
-                                    int i_93_ = (i_70_ & 0x7f) * i_74_ >> -80773721;
+                                    int i_93_ = (i_70_ & 0x7f) * i_74_ >> 7;
                                     if (i_93_ < 2) i_93_ = 2;
                                     else if (i_93_ > 126) i_93_ = 126;
                                     i_92_ = (Class10.anIntArray179[0xff80 & i_70_ | i_93_]);
                                     if ((0x7 & this.anInt8235) == 0) {
                                         float f_94_ = ((this.aHa_Sub2_8272.aFloatArray7825[0]) * f_77_ + f_76_ * (this.aHa_Sub2_8272.aFloatArray7825[1]) + f_78_ * (this.aHa_Sub2_8272.aFloatArray7825[2]));
                                         f_94_ = ((f_89_ > 0.0F ? (this.aHa_Sub2_8272.aFloat7832) : (this.aHa_Sub2_8272.aFloat7871)) * f_89_ + (this.aHa_Sub2_8272.aFloat7768));
-                                        int i_95_ = (i_92_ & 0xffcb9e) >> 79407792;
-                                        int i_96_ = (0xff29 & i_92_) >> -1206628760;
+                                        int i_95_ = (i_92_ & 0xffcb9e) >> 16;
+                                        int i_96_ = (0xff29 & i_92_) >> 8;
                                         int i_97_ = 0xff & i_92_;
                                         i_95_ *= f_94_;
                                         i_96_ *= f_94_;
@@ -276,15 +276,15 @@ final class s_Sub2 extends s {
                                         i_97_ *= f_94_;
                                         if (i_97_ < 0) i_97_ = 0;
                                         else if (i_97_ > 255) i_97_ = 255;
-                                        i_92_ = (i_95_ << -257450448 | i_96_ << -2131484888 | i_97_);
+                                        i_92_ = (i_95_ << 16 | i_96_ << 8 | i_97_);
                                     }
                                 } else i_92_ = i_75_;
                                 if (this.aHa_Sub2_8272.aBoolean7775) {
                                     stream.a((float) i_65_);
                                     stream.a((float) (this.method3986(i_65_, i_66_, (byte) -121) + i_71_));
                                     stream.a((float) i_66_);
-                                    stream.f((byte) (i_92_ >> 1261138128));
-                                    stream.f((byte) (i_92_ >> 517846952));
+                                    stream.f((byte) (i_92_ >> 16));
+                                    stream.f((byte) (i_92_ >> 8));
                                     stream.f((byte) i_92_);
                                     stream.f(-1);
                                     stream.a((float) i_65_);
@@ -299,8 +299,8 @@ final class s_Sub2 extends s {
                                     stream.b((float) i_65_);
                                     stream.b((float) (this.method3986(i_65_, i_66_, (byte) -101) - -i_71_));
                                     stream.b((float) i_66_);
-                                    stream.f((byte) (i_92_ >> 883603664));
-                                    stream.f((byte) (i_92_ >> -422171160));
+                                    stream.f((byte) (i_92_ >> 16));
+                                    stream.f((byte) (i_92_ >> 8));
                                     stream.f((byte) i_92_);
                                     stream.f(-1);
                                     stream.b((float) i_65_);
@@ -438,8 +438,8 @@ final class s_Sub2 extends s {
     final void CA(r var_r, int i, int i_128_, int i_129_, int i_130_, boolean bool) {
         anInt8236++;
         if (aClass104_8266 != null && var_r != null) {
-            int i_131_ = (i - ((i_128_ * this.aHa_Sub2_8272.anInt7772) >> -2036370040) >> this.aHa_Sub2_8272.anInt7731);
-            int i_132_ = (-((this.aHa_Sub2_8272.anInt7777 * i_128_) >> 272294184) + i_129_ >> this.aHa_Sub2_8272.anInt7731);
+            int i_131_ = (i - ((i_128_ * this.aHa_Sub2_8272.anInt7772) >> 8) >> this.aHa_Sub2_8272.anInt7731);
+            int i_132_ = (-((this.aHa_Sub2_8272.anInt7777 * i_128_) >> 8) + i_129_ >> this.aHa_Sub2_8272.anInt7731);
             aClass104_8266.method959(i_131_, i_132_, (byte) 107, var_r);
         }
     }
@@ -490,8 +490,8 @@ final class s_Sub2 extends s {
     final boolean method3989(r var_r, int i, int i_142_, int i_143_, int i_144_, boolean bool) {
         anInt8244++;
         if (aClass104_8266 == null || var_r == null) return false;
-        int i_145_ = (-(i_142_ * this.aHa_Sub2_8272.anInt7772 >> -543390936) + i >> this.aHa_Sub2_8272.anInt7731);
-        int i_146_ = (i_143_ + -((this.aHa_Sub2_8272.anInt7777 * i_142_) >> 1945917928) >> this.aHa_Sub2_8272.anInt7731);
+        int i_145_ = (-(i_142_ * this.aHa_Sub2_8272.anInt7772 >> 8) + i >> this.aHa_Sub2_8272.anInt7731);
+        int i_146_ = (i_143_ + -((this.aHa_Sub2_8272.anInt7777 * i_142_) >> 8) >> this.aHa_Sub2_8272.anInt7731);
         return aClass104_8266.method954(i_145_, (byte) 88, i_146_, var_r);
     }
 
@@ -689,7 +689,7 @@ final class s_Sub2 extends s {
                     i_188_ = -1;
                     i_189_ = 128;
                 }
-                long l = ((long) i_184_ << -959811300 | ((long) i_185_ << -596093334 | (long) i_186_ << -1058938960) | (long) (i_189_ << -1413990866) | (long) i_188_);
+                long l = ((long) i_184_ << 28 | ((long) i_185_ << 42 | (long) i_186_ << 48) | (long) (i_189_ << 14) | (long) i_188_);
                 Class348 class348;
                 for (class348 = aClass356_8278.method3480(l, -6008); class348 != null; class348 = aClass356_8278.method3476(true)) {
                     Class348_Sub20 class348_sub20 = (Class348_Sub20) class348;

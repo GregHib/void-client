@@ -28,9 +28,9 @@ final class Class309 implements Interface7 {
         try {
             anInt4823++;
             if (i_1_ <= 3) method2308((byte) -121, 59);
-            int i_2_ = (int) l >> -1914464274 & 0x1f;
-            int i_3_ = (0x37d8b0 & (int) l) >> -425142188;
-            int i_4_ = 0x7fffffff & (int) (l >>> -587776800);
+            int i_2_ = (int) l >> 14 & 0x1f;
+            int i_3_ = (0x37d8b0 & (int) l) >> 20;
+            int i_4_ = 0x7fffffff & (int) (l >>> 32);
             if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) Class298.method2252(true, i_0_, i, (byte) -119, 0, 0, 0, i_2_, i_3_);
             else {
                 Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_4_);

@@ -52,7 +52,7 @@ final class Class33 {
         anInt461++;
         if (i_4_ > i_1_) {
             i += i_1_;
-            i_2_ = -i_1_ + i_4_ >> 1135854850;
+            i_2_ = -i_1_ + i_4_ >> 2;
             while (--i_2_ >= 0) {
                 is[i++] = (byte) 1;
                 is[i++] = (byte) 1;
@@ -68,12 +68,12 @@ final class Class33 {
 
     static final int method340(int i, byte i_5_) {
         anInt459++;
-        i = --i | i >>> 750142081;
-        i |= i >>> -1369908414;
-        i |= i >>> -1532713180;
+        i = --i | i >>> 1;
+        i |= i >>> 2;
+        i |= i >>> 4;
         if (i_5_ != 108) return 34;
-        i |= i >>> 1354705384;
-        i |= i >>> 255192560;
+        i |= i >>> 8;
+        i |= i >>> 16;
         return 1 + i;
     }
 

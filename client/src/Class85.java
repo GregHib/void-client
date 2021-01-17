@@ -25,7 +25,7 @@ final class Class85 {
         int i_0_ = 0;
         int i_1_ = i;
         for (/**/; i_0_ < 8; i_0_++) {
-            aLongArray1473[i_0_] = (Class105_Sub2.method993((Class105_Sub2.method993((Class348_Sub8.method2777(255L, aByteArray1475[i_1_ + 6]) << 487716296), (Class105_Sub2.method993(Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ - -5]) << -896856240), 255L << 407026192), (Class105_Sub2.method993((Class105_Sub2.method993(Class348_Sub8.method2777(255L << -561803296, ((long) (aByteArray1475[i_1_ + 3]) << 1709594400)), (Class105_Sub2.method993(Class105_Sub2.method993((Class348_Sub8.method2777(255L << -1772986896, ((long) (aByteArray1475[1 + i_1_]) << -295236176))), ((long) (aByteArray1475[i_1_]) << 1398616696)), Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ + 2]) << 1090491688), 255L << 2085795816))))), Class348_Sub8.method2777(aByteArray1475[4 + i_1_], 255L) << 486892568)))))), Class348_Sub8.method2777(255L, aByteArray1475[i_1_ - -7])));
+            aLongArray1473[i_0_] = (Class105_Sub2.method993((Class105_Sub2.method993((Class348_Sub8.method2777(255L, aByteArray1475[i_1_ + 6]) << 8), (Class105_Sub2.method993(Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ - -5]) << 16), 255L << 16), (Class105_Sub2.method993((Class105_Sub2.method993(Class348_Sub8.method2777(255L << 32, ((long) (aByteArray1475[i_1_ + 3]) << 32)), (Class105_Sub2.method993(Class105_Sub2.method993((Class348_Sub8.method2777(255L << 48, ((long) (aByteArray1475[1 + i_1_]) << 48))), ((long) (aByteArray1475[i_1_]) << 56)), Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ + 2]) << 40), 255L << 40))))), Class348_Sub8.method2777(aByteArray1475[4 + i_1_], 255L) << 24)))))), Class348_Sub8.method2777(255L, aByteArray1475[i_1_ - -7])));
             i_1_ += 8;
         }
         for (int i_2_ = 0; i_2_ < 8; i_2_++)
@@ -179,13 +179,13 @@ final class Class85 {
         int i_39_ = i;
         while (i_38_ < 8) {
             long l = aLongArray1474[i_38_];
-            is[i_39_] = (byte) (int) (l >>> -494522120);
-            is[i_39_ + 1] = (byte) (int) (l >>> -1323727504);
-            is[2 + i_39_] = (byte) (int) (l >>> -1362540312);
-            is[i_39_ - -3] = (byte) (int) (l >>> -816276512);
-            is[i_39_ + 4] = (byte) (int) (l >>> -1281121832);
-            is[i_39_ + 5] = (byte) (int) (l >>> 1026016144);
-            is[6 + i_39_] = (byte) (int) (l >>> -800909304);
+            is[i_39_] = (byte) (int) (l >>> 56);
+            is[i_39_ + 1] = (byte) (int) (l >>> 48);
+            is[2 + i_39_] = (byte) (int) (l >>> 40);
+            is[i_39_ - -3] = (byte) (int) (l >>> 32);
+            is[i_39_ + 4] = (byte) (int) (l >>> 24);
+            is[i_39_ + 5] = (byte) (int) (l >>> 16);
+            is[6 + i_39_] = (byte) (int) (l >>> 8);
             is[i_39_ + 7] = (byte) (int) l;
             i_38_++;
             i_39_ += 8;

@@ -151,7 +151,7 @@ final class Class64_Sub2 extends Class64 {
                     float f_5_ = Class240.aFloat4673 + (Class353.aFloat4338 * f_1_ + f * Class328_Sub3.aFloat6523 + f_2_ * ha.aFloat4582);
                     float f_6_ = ((float) (1.0 / Math.sqrt(f_5_ * f_5_ + (f_4_ * f_4_ + f_3_ * f_3_))) * (float) class353.anInt4347);
                     Class101_Sub2 class101_sub2 = aHa_Sub3_5419.method3934(-96);
-                    class101_sub2.method936(class334.anInt4151, 0, (class353.aShort4340 * class334.anInt4162) >> -219485145, (-(f_3_ * f_6_) + ((float) class334.anInt4158 + f_3_)), -(f_6_ * f_5_) + f_5_, ((float) class334.anInt4154 + f_4_ - f_4_ * f_6_), (class334.anInt4165 * class353.aShort4341) >> -1881253305);
+                    class101_sub2.method936(class334.anInt4151, 0, (class353.aShort4340 * class334.anInt4162) >> 7, (-(f_3_ * f_6_) + ((float) class334.anInt4158 + f_3_)), -(f_6_ * f_5_) + f_5_, ((float) class334.anInt4154 + f_4_ - f_4_ * f_6_), (class334.anInt4165 * class353.aShort4341) >> 7);
                     class101_sub2.method917((aHa_Sub3_5419.aClass101_Sub2_8082), (byte) 112);
                     aHa_Sub3_5419.method3915(0);
                     int i_7_ = class334.anInt4156;
@@ -326,8 +326,8 @@ final class Class64_Sub2 extends Class64 {
         int i_18_ = Class70.anIntArray1207[i];
         int i_19_ = Class70.anIntArray1204[i];
         for (int i_20_ = 0; anInt5433 > i_20_; i_20_++) {
-            int i_21_ = ((anIntArray5511[i_20_] * i_19_ + i_18_ * anIntArray5519[i_20_]) >> -1381445650);
-            anIntArray5519[i_20_] = (i_19_ * anIntArray5519[i_20_] + -(i_18_ * anIntArray5511[i_20_]) >> -1803260562);
+            int i_21_ = ((anIntArray5511[i_20_] * i_19_ + i_18_ * anIntArray5519[i_20_]) >> 14);
+            anIntArray5519[i_20_] = (i_19_ * anIntArray5519[i_20_] + -(i_18_ * anIntArray5511[i_20_]) >> 14);
             anIntArray5511[i_20_] = i_21_;
         }
         method667(0);
@@ -351,20 +351,20 @@ final class Class64_Sub2 extends Class64 {
             int i;
             int i_24_;
             if (aHa_Sub3_5419.anInt8133 <= 0) {
-                i = (-(anInt5461 * aHa_Sub3_5419.anInt8133 >> 892456840) + anInt5507 >> aHa_Sub3_5419.anInt8107);
-                i_24_ = ((anInt5467 - (aHa_Sub3_5419.anInt8133 * anInt5509 >> -1283866616)) >> aHa_Sub3_5419.anInt8107);
+                i = (-(anInt5461 * aHa_Sub3_5419.anInt8133 >> 8) + anInt5507 >> aHa_Sub3_5419.anInt8107);
+                i_24_ = ((anInt5467 - (aHa_Sub3_5419.anInt8133 * anInt5509 >> 8)) >> aHa_Sub3_5419.anInt8107);
             } else {
-                i = (-(anInt5509 * aHa_Sub3_5419.anInt8133 >> -719512) + anInt5507 >> aHa_Sub3_5419.anInt8107);
-                i_24_ = ((anInt5467 - (anInt5461 * aHa_Sub3_5419.anInt8133 >> 1010714376)) >> aHa_Sub3_5419.anInt8107);
+                i = (-(anInt5509 * aHa_Sub3_5419.anInt8133 >> 8) + anInt5507 >> aHa_Sub3_5419.anInt8107);
+                i_24_ = ((anInt5467 - (anInt5461 * aHa_Sub3_5419.anInt8133 >> 8)) >> aHa_Sub3_5419.anInt8107);
             }
             int i_25_;
             int i_26_;
             if (aHa_Sub3_5419.anInt8114 > 0) {
-                i_25_ = ((anInt5418 - (anInt5509 * aHa_Sub3_5419.anInt8114 >> 1561077320)) >> aHa_Sub3_5419.anInt8107);
-                i_26_ = (-(anInt5461 * aHa_Sub3_5419.anInt8114 >> 667633736) + anInt5443 >> aHa_Sub3_5419.anInt8107);
+                i_25_ = ((anInt5418 - (anInt5509 * aHa_Sub3_5419.anInt8114 >> 8)) >> aHa_Sub3_5419.anInt8107);
+                i_26_ = (-(anInt5461 * aHa_Sub3_5419.anInt8114 >> 8) + anInt5443 >> aHa_Sub3_5419.anInt8107);
             } else {
-                i_25_ = ((anInt5418 - (anInt5461 * aHa_Sub3_5419.anInt8114 >> 244182312)) >> aHa_Sub3_5419.anInt8107);
-                i_26_ = ((anInt5443 + -(anInt5509 * aHa_Sub3_5419.anInt8114 >> 1884676328)) >> aHa_Sub3_5419.anInt8107);
+                i_25_ = ((anInt5418 - (anInt5461 * aHa_Sub3_5419.anInt8114 >> 8)) >> aHa_Sub3_5419.anInt8107);
+                i_26_ = ((anInt5443 + -(anInt5509 * aHa_Sub3_5419.anInt8114 >> 8)) >> aHa_Sub3_5419.anInt8107);
             }
             int i_27_ = 1 + (i_24_ - i);
             int i_28_ = 1 + -i_25_ + i_26_;
@@ -386,9 +386,9 @@ final class Class64_Sub2 extends Class64 {
     final void wa() {
         anInt5484++;
         for (int i = 0; anInt5497 > i; i++) {
-            anIntArray5511[i] = anIntArray5511[i] + 7 >> 412430372;
-            anIntArray5519[i] = 7 + anIntArray5519[i] >> -1681532604;
-            anIntArray5429[i] = 7 + anIntArray5429[i] >> 1212351300;
+            anIntArray5511[i] = anIntArray5511[i] + 7 >> 4;
+            anIntArray5519[i] = 7 + anIntArray5519[i] >> 4;
+            anIntArray5429[i] = 7 + anIntArray5429[i] >> 4;
         }
         method667(0);
         aBoolean5477 = false;
@@ -425,10 +425,10 @@ final class Class64_Sub2 extends Class64 {
             int i_42_ = aHa_Sub3_5419.anInt8129;
             int i_43_ = aHa_Sub3_5419.anInt8134;
             if (!aBoolean5477) method675(0);
-            int i_44_ = -anInt5507 + anInt5467 >> -2136100895;
-            int i_45_ = anInt5509 + -anInt5461 >> 318059649;
+            int i_44_ = -anInt5507 + anInt5467 >> 1;
+            int i_45_ = anInt5509 + -anInt5461 >> 1;
             if (i_32_ <= 121) O(86, -105, 66);
-            int i_46_ = -anInt5418 + anInt5443 >> -1735034175;
+            int i_46_ = -anInt5418 + anInt5443 >> 1;
             int i_47_ = i_44_ + anInt5507;
             int i_48_ = i_45_ + anInt5461;
             int i_49_ = i_46_ + anInt5418;
@@ -611,8 +611,8 @@ final class Class64_Sub2 extends Class64 {
         int i_83_ = Class70.anIntArray1207[i];
         int i_84_ = Class70.anIntArray1204[i];
         for (int i_85_ = 0; anInt5433 > i_85_; i_85_++) {
-            int i_86_ = ((i_84_ * anIntArray5511[i_85_] + anIntArray5429[i_85_] * i_83_) >> -630570226);
-            anIntArray5429[i_85_] = (i_84_ * anIntArray5429[i_85_] + -(i_83_ * anIntArray5511[i_85_]) >> 939243182);
+            int i_86_ = ((i_84_ * anIntArray5511[i_85_] + anIntArray5429[i_85_] * i_83_) >> 14);
+            anIntArray5429[i_85_] = (i_84_ * anIntArray5429[i_85_] + -(i_83_ * anIntArray5511[i_85_]) >> 14);
             anIntArray5511[i_85_] = i_86_;
         }
         method667(0);
@@ -624,8 +624,8 @@ final class Class64_Sub2 extends Class64 {
         int i_87_ = Class70.anIntArray1207[i];
         int i_88_ = Class70.anIntArray1204[i];
         for (int i_89_ = 0; i_89_ < anInt5433; i_89_++) {
-            int i_90_ = (anIntArray5519[i_89_] * i_88_ + -(anIntArray5429[i_89_] * i_87_) >> -718755826);
-            anIntArray5429[i_89_] = (anIntArray5429[i_89_] * i_88_ + anIntArray5519[i_89_] * i_87_) >> -934376946;
+            int i_90_ = (anIntArray5519[i_89_] * i_88_ + -(anIntArray5429[i_89_] * i_87_) >> 14);
+            anIntArray5429[i_89_] = (anIntArray5429[i_89_] * i_88_ + anIntArray5519[i_89_] * i_87_) >> 14;
             anIntArray5519[i_89_] = i_90_;
         }
         method667(0);
@@ -694,22 +694,22 @@ final class Class64_Sub2 extends Class64 {
                 if (i_93_ != 0) {
                     int i_98_ = Class70.anIntArray1207[i_93_];
                     int i_99_ = Class70.anIntArray1204[i_93_];
-                    int i_100_ = ((16383 + i_99_ * anIntArray5511[i_97_] + anIntArray5519[i_97_] * i_98_) >> -1815493362);
-                    anIntArray5519[i_97_] = (16383 + (-(anIntArray5511[i_97_] * i_98_) + anIntArray5519[i_97_] * i_99_) >> -1523789874);
+                    int i_100_ = ((16383 + i_99_ * anIntArray5511[i_97_] + anIntArray5519[i_97_] * i_98_) >> 14);
+                    anIntArray5519[i_97_] = (16383 + (-(anIntArray5511[i_97_] * i_98_) + anIntArray5519[i_97_] * i_99_) >> 14);
                     anIntArray5511[i_97_] = i_100_;
                 }
                 if (i_91_ != 0) {
                     int i_101_ = Class70.anIntArray1207[i_91_];
                     int i_102_ = Class70.anIntArray1204[i_91_];
-                    int i_103_ = (16383 + (anIntArray5519[i_97_] * i_102_ + -(i_101_ * anIntArray5429[i_97_])) >> -1149481138);
-                    anIntArray5429[i_97_] = (anIntArray5429[i_97_] * i_102_ + (anIntArray5519[i_97_] * i_101_ - -16383)) >> 1357563438;
+                    int i_103_ = (16383 + (anIntArray5519[i_97_] * i_102_ + -(i_101_ * anIntArray5429[i_97_])) >> 14);
+                    anIntArray5429[i_97_] = (anIntArray5429[i_97_] * i_102_ + (anIntArray5519[i_97_] * i_101_ - -16383)) >> 14;
                     anIntArray5519[i_97_] = i_103_;
                 }
                 if (i_92_ != 0) {
                     int i_104_ = Class70.anIntArray1207[i_92_];
                     int i_105_ = Class70.anIntArray1204[i_92_];
-                    int i_106_ = ((i_105_ * anIntArray5511[i_97_] + anIntArray5429[i_97_] * i_104_ + 16383) >> -947357106);
-                    anIntArray5429[i_97_] = (16383 + -(i_104_ * anIntArray5511[i_97_]) + i_105_ * anIntArray5429[i_97_]) >> -905894130;
+                    int i_106_ = ((i_105_ * anIntArray5511[i_97_] + anIntArray5429[i_97_] * i_104_ + 16383) >> 14);
+                    anIntArray5429[i_97_] = (16383 + -(i_104_ * anIntArray5511[i_97_]) + i_105_ * anIntArray5429[i_97_]) >> 14;
                     anIntArray5511[i_97_] = i_106_;
                 }
                 anIntArray5511[i_97_] += Class136.anInt4795;
@@ -740,15 +740,15 @@ final class Class64_Sub2 extends Class64 {
                 for (int i_110_ = 0; anInt5406 > i_110_; i_110_++) {
                     Class353 class353 = aClass353Array5524[i_110_];
                     Class334 class334 = aClass334Array5442[i_110_];
-                    class334.anInt4156 = (class334.anInt4156 & 0xffffff | 255 - ((aByteArray5515[class353.anInt4342]) & 0xff) << -872349032);
+                    class334.anInt4156 = (class334.anInt4156 & 0xffffff | 255 - ((aByteArray5515[class353.anInt4342]) & 0xff) << 24);
                 }
             }
             method670(-89);
         } else if (i == 7) {
             for (int i_111_ = 0; i_111_ < anInt5478; i_111_++) {
                 int i_112_ = 0xffff & aShortArray5486[i_111_];
-                int i_113_ = 0x3f & i_112_ >> 795221034;
-                int i_114_ = (i_112_ & 0x3e6) >> -1597457529;
+                int i_113_ = 0x3f & i_112_ >> 10;
+                int i_114_ = (i_112_ & 0x3e6) >> 7;
                 i_114_ += i_92_ / 4;
                 int i_115_ = 0x7f & i_112_;
                 i_113_ = 0x3f & i_113_ + i_91_;
@@ -758,7 +758,7 @@ final class Class64_Sub2 extends Class64 {
                 } else i_114_ = 0;
                 if (i_115_ < 0) i_115_ = 0;
                 else if (i_115_ > 127) i_115_ = 127;
-                aShortArray5486[i_111_] = (short) (Class273.method2057(Class273.method2057(i_114_ << -1337386713, i_113_ << 1113440778), i_115_));
+                aShortArray5486[i_111_] = (short) (Class273.method2057(Class273.method2057(i_114_ << 7, i_113_ << 10), i_115_));
             }
             if (aClass353Array5524 != null) {
                 for (int i_116_ = 0; i_116_ < anInt5406; i_116_++) {
@@ -777,8 +777,8 @@ final class Class64_Sub2 extends Class64 {
         } else if (i == 10) {
             for (int i_118_ = 0; anInt5406 > i_118_; i_118_++) {
                 Class334 class334 = aClass334Array5442[i_118_];
-                class334.anInt4162 = class334.anInt4162 * i_92_ >> -965464857;
-                class334.anInt4165 = class334.anInt4165 * i_91_ >> -1141349497;
+                class334.anInt4162 = class334.anInt4162 * i_92_ >> 7;
+                class334.anInt4165 = class334.anInt4165 * i_91_ >> 7;
             }
         } else if (i == 9) {
             for (int i_119_ = 0; anInt5406 > i_119_; i_119_++) {
@@ -790,9 +790,9 @@ final class Class64_Sub2 extends Class64 {
 
     final void O(int i, int i_120_, int i_121_) {
         for (int i_122_ = 0; anInt5433 > i_122_; i_122_++) {
-            if (i != 128) anIntArray5511[i_122_] = i * anIntArray5511[i_122_] >> -412648313;
-            if (i_120_ != 128) anIntArray5519[i_122_] = i_120_ * anIntArray5519[i_122_] >> -1292061689;
-            if (i_121_ != 128) anIntArray5429[i_122_] = i_121_ * anIntArray5429[i_122_] >> 1791778983;
+            if (i != 128) anIntArray5511[i_122_] = i * anIntArray5511[i_122_] >> 7;
+            if (i_120_ != 128) anIntArray5519[i_122_] = i_120_ * anIntArray5519[i_122_] >> 7;
+            if (i_121_ != 128) anIntArray5429[i_122_] = i_121_ * anIntArray5429[i_122_] >> 7;
         }
         anInt5525++;
         method667(0);
@@ -808,8 +808,8 @@ final class Class64_Sub2 extends Class64 {
             anInt5453++;
             if (i >= 0) {
                 for (int i_123_ = 0; anInt5433 > i_123_; i_123_++) {
-                    int i_124_ = (-var_r_Sub1.anInt10468 + ((anIntArray5511[i_123_] + -((aHa_Sub3_5419.anInt8133 * anIntArray5519[i_123_]) >> -2141079544)) >> aHa_Sub3_5419.anInt8107));
-                    int i_125_ = (((anIntArray5429[i_123_] + -((aHa_Sub3_5419.anInt8114 * anIntArray5519[i_123_]) >> 1576544776)) >> aHa_Sub3_5419.anInt8107) + -var_r_Sub1.anInt10474);
+                    int i_124_ = (-var_r_Sub1.anInt10468 + ((anIntArray5511[i_123_] + -((aHa_Sub3_5419.anInt8133 * anIntArray5519[i_123_]) >> 8)) >> aHa_Sub3_5419.anInt8107));
+                    int i_125_ = (((anIntArray5429[i_123_] + -((aHa_Sub3_5419.anInt8114 * anIntArray5519[i_123_]) >> 8)) >> aHa_Sub3_5419.anInt8107) + -var_r_Sub1.anInt10474);
                     int i_126_ = anIntArray5455[i_123_];
                     int i_127_ = anIntArray5455[i_123_ - -1];
                     for (int i_128_ = i_126_; i_128_ < i_127_; i_128_++) {
@@ -844,13 +844,13 @@ final class Class64_Sub2 extends Class64 {
         int i_140_ = Class70.anIntArray1207[i];
         int i_141_ = Class70.anIntArray1204[i];
         for (int i_142_ = 0; i_142_ < anInt5433; i_142_++) {
-            int i_143_ = ((anIntArray5511[i_142_] * i_141_ + anIntArray5429[i_142_] * i_140_) >> -851647666);
-            anIntArray5429[i_142_] = (i_141_ * anIntArray5429[i_142_] + -(i_140_ * anIntArray5511[i_142_])) >> 154368622;
+            int i_143_ = ((anIntArray5511[i_142_] * i_141_ + anIntArray5429[i_142_] * i_140_) >> 14);
+            anIntArray5429[i_142_] = (i_141_ * anIntArray5429[i_142_] + -(i_140_ * anIntArray5511[i_142_])) >> 14;
             anIntArray5511[i_142_] = i_143_;
         }
         for (int i_144_ = 0; i_144_ < anInt5475; i_144_++) {
-            int i_145_ = (aShortArray5436[i_144_] * i_140_ - -(aShortArray5493[i_144_] * i_141_) >> -1035835378);
-            aShortArray5436[i_144_] = (short) ((i_141_ * aShortArray5436[i_144_] + -(i_140_ * aShortArray5493[i_144_])) >> -1167846130);
+            int i_145_ = (aShortArray5436[i_144_] * i_140_ - -(aShortArray5493[i_144_] * i_141_) >> 14);
+            aShortArray5436[i_144_] = (short) ((i_141_ * aShortArray5436[i_144_] + -(i_140_ * aShortArray5493[i_144_])) >> 14);
             aShortArray5493[i_144_] = (short) i_145_;
         }
         method667(0);
@@ -1272,8 +1272,8 @@ final class Class64_Sub2 extends Class64 {
                                 ha.aFloat4582 = (((class101_sub2.aFloat5736) * (class101_sub2_180_.aFloat5704)) + ((class101_sub2.aFloat5691) * class101_sub2_180_.aFloat5732) + ((class101_sub2_180_.aFloat5716) * (class101_sub2.aFloat5716)));
                             }
                             if (class318_sub3 != null) {
-                                int i_192_ = anInt5467 + anInt5507 >> -601120319;
-                                int i_193_ = anInt5418 + anInt5443 >> 1720315521;
+                                int i_192_ = anInt5467 + anInt5507 >> 1;
+                                int i_193_ = anInt5418 + anInt5443 >> 1;
                                 int i_194_ = (int) (Class345.aFloat4268 + ((float) i_192_ * Class55.aFloat1010) + ((Class318_Sub1_Sub2_Sub1.aFloat10199) * (float) anInt5461) + ((float) i_193_ * (Class348_Sub42_Sub4.aFloat9516)));
                                 int i_195_ = (int) (Class348_Sub12.aFloat6752 + (Class348_Sub20.aFloat6835 * (float) i_192_) + ((float) anInt5461 * Class290.aFloat3710) + (Class318_Sub6.aFloat6430 * (float) i_193_));
                                 int i_196_ = (int) (((float) anInt5461 * Class353.aFloat4338) + ((Class328_Sub3.aFloat6523 * (float) i_192_) + Class240.aFloat4673) + (float) i_193_ * ha.aFloat4582);
@@ -1426,22 +1426,22 @@ final class Class64_Sub2 extends Class64 {
                                 if (i_214_ != 0) {
                                     int i_233_ = Class70.anIntArray1207[i_214_];
                                     int i_234_ = Class70.anIntArray1204[i_214_];
-                                    int i_235_ = ((16383 + (i_234_ * anIntArray5511[i_232_] + (anIntArray5519[i_232_] * i_233_))) >> -268526258);
-                                    anIntArray5519[i_232_] = ((16383 + (i_234_ * anIntArray5519[i_232_] + -(i_233_ * anIntArray5511[i_232_]))) >> -7306290);
+                                    int i_235_ = ((16383 + (i_234_ * anIntArray5511[i_232_] + (anIntArray5519[i_232_] * i_233_))) >> 14);
+                                    anIntArray5519[i_232_] = ((16383 + (i_234_ * anIntArray5519[i_232_] + -(i_233_ * anIntArray5511[i_232_]))) >> 14);
                                     anIntArray5511[i_232_] = i_235_;
                                 }
                                 if (i_212_ != 0) {
                                     int i_236_ = Class70.anIntArray1207[i_212_];
                                     int i_237_ = Class70.anIntArray1204[i_212_];
-                                    int i_238_ = (16383 + (-(i_236_ * anIntArray5429[i_232_]) + i_237_ * (anIntArray5519[i_232_])) >> -171225298);
-                                    anIntArray5429[i_232_] = (16383 + (i_236_ * anIntArray5519[i_232_] - -(anIntArray5429[i_232_] * i_237_))) >> -24285938;
+                                    int i_238_ = (16383 + (-(i_236_ * anIntArray5429[i_232_]) + i_237_ * (anIntArray5519[i_232_])) >> 14);
+                                    anIntArray5429[i_232_] = (16383 + (i_236_ * anIntArray5519[i_232_] - -(anIntArray5429[i_232_] * i_237_))) >> 14;
                                     anIntArray5519[i_232_] = i_238_;
                                 }
                                 if (i_213_ != 0) {
                                     int i_239_ = Class70.anIntArray1207[i_213_];
                                     int i_240_ = Class70.anIntArray1204[i_213_];
-                                    int i_241_ = ((i_239_ * anIntArray5429[i_232_] + i_240_ * anIntArray5511[i_232_] + 16383) >> 223397550);
-                                    anIntArray5429[i_232_] = (16383 + (-(i_239_ * anIntArray5511[i_232_]) + i_240_ * (anIntArray5429[i_232_])) >> 219567822);
+                                    int i_241_ = ((i_239_ * anIntArray5429[i_232_] + i_240_ * anIntArray5511[i_232_] + 16383) >> 14);
+                                    anIntArray5429[i_232_] = (16383 + (-(i_239_ * anIntArray5511[i_232_]) + i_240_ * (anIntArray5429[i_232_])) >> 14);
                                     anIntArray5511[i_232_] = i_241_;
                                 }
                                 anIntArray5511[i_232_] += Class136.anInt4795;
@@ -1457,22 +1457,22 @@ final class Class64_Sub2 extends Class64 {
                                 if (i_212_ != 0) {
                                     int i_244_ = Class70.anIntArray1207[i_212_];
                                     int i_245_ = Class70.anIntArray1204[i_212_];
-                                    int i_246_ = (anIntArray5519[i_243_] * i_245_ + -(i_244_ * anIntArray5429[i_243_]) + 16383) >> -828527250;
-                                    anIntArray5429[i_243_] = ((16383 + anIntArray5429[i_243_] * i_245_ + i_244_ * anIntArray5519[i_243_]) >> -732062706);
+                                    int i_246_ = (anIntArray5519[i_243_] * i_245_ + -(i_244_ * anIntArray5429[i_243_]) + 16383) >> 14;
+                                    anIntArray5429[i_243_] = ((16383 + anIntArray5429[i_243_] * i_245_ + i_244_ * anIntArray5519[i_243_]) >> 14);
                                     anIntArray5519[i_243_] = i_246_;
                                 }
                                 if (i_214_ != 0) {
                                     int i_247_ = Class70.anIntArray1207[i_214_];
                                     int i_248_ = Class70.anIntArray1204[i_214_];
-                                    int i_249_ = ((i_248_ * anIntArray5511[i_243_] + i_247_ * anIntArray5519[i_243_] + 16383) >> 216373742);
-                                    anIntArray5519[i_243_] = (anIntArray5519[i_243_] * i_248_ - (anIntArray5511[i_243_] * i_247_ + -16383)) >> -432655186;
+                                    int i_249_ = ((i_248_ * anIntArray5511[i_243_] + i_247_ * anIntArray5519[i_243_] + 16383) >> 14);
+                                    anIntArray5519[i_243_] = (anIntArray5519[i_243_] * i_248_ - (anIntArray5511[i_243_] * i_247_ + -16383)) >> 14;
                                     anIntArray5511[i_243_] = i_249_;
                                 }
                                 if (i_213_ != 0) {
                                     int i_250_ = Class70.anIntArray1207[i_213_];
                                     int i_251_ = Class70.anIntArray1204[i_213_];
-                                    int i_252_ = ((i_251_ * anIntArray5511[i_243_] + i_250_ * anIntArray5429[i_243_] - -16383) >> -359360018);
-                                    anIntArray5429[i_243_] = ((16383 + -(anIntArray5511[i_243_] * i_250_) + anIntArray5429[i_243_] * i_251_) >> 858078766);
+                                    int i_252_ = ((i_251_ * anIntArray5511[i_243_] + i_250_ * anIntArray5429[i_243_] - -16383) >> 14);
+                                    anIntArray5429[i_243_] = ((16383 + -(anIntArray5511[i_243_] * i_250_) + anIntArray5429[i_243_] * i_251_) >> 14);
                                     anIntArray5511[i_243_] = i_252_;
                                 }
                                 anIntArray5511[i_243_] += Class136.anInt4795;
@@ -1497,22 +1497,22 @@ final class Class64_Sub2 extends Class64 {
                                     if (i_214_ != 0) {
                                         int i_262_ = Class70.anIntArray1207[i_214_];
                                         int i_263_ = Class70.anIntArray1204[i_214_];
-                                        int i_264_ = ((16383 + (aShortArray5438[i_261_] * i_262_) + (aShortArray5493[i_261_] * i_263_)) >> 1401667022);
-                                        aShortArray5438[i_261_] = (short) (((i_263_ * (aShortArray5438[i_261_])) + -((aShortArray5493[i_261_]) * i_262_) + 16383) >> 248775502);
+                                        int i_264_ = ((16383 + (aShortArray5438[i_261_] * i_262_) + (aShortArray5493[i_261_] * i_263_)) >> 14);
+                                        aShortArray5438[i_261_] = (short) (((i_263_ * (aShortArray5438[i_261_])) + -((aShortArray5493[i_261_]) * i_262_) + 16383) >> 14);
                                         aShortArray5493[i_261_] = (short) i_264_;
                                     }
                                     if (i_212_ != 0) {
                                         int i_265_ = Class70.anIntArray1207[i_212_];
                                         int i_266_ = Class70.anIntArray1204[i_212_];
-                                        int i_267_ = ((16383 + (aShortArray5438[i_261_] * i_266_) + -(i_265_ * aShortArray5436[i_261_])) >> 1673862382);
-                                        aShortArray5436[i_261_] = (short) ((16383 + ((i_266_ * (aShortArray5436[i_261_])) + ((aShortArray5438[i_261_]) * i_265_))) >> 2129062862);
+                                        int i_267_ = ((16383 + (aShortArray5438[i_261_] * i_266_) + -(i_265_ * aShortArray5436[i_261_])) >> 14);
+                                        aShortArray5436[i_261_] = (short) ((16383 + ((i_266_ * (aShortArray5436[i_261_])) + ((aShortArray5438[i_261_]) * i_265_))) >> 14);
                                         aShortArray5438[i_261_] = (short) i_267_;
                                     }
                                     if (i_213_ != 0) {
                                         int i_268_ = Class70.anIntArray1207[i_213_];
                                         int i_269_ = Class70.anIntArray1204[i_213_];
-                                        int i_270_ = (i_269_ * aShortArray5493[i_261_] + (i_268_ * aShortArray5436[i_261_]) - -16383) >> 718903598;
-                                        aShortArray5436[i_261_] = (short) ((-(i_268_ * (aShortArray5493[i_261_])) + (aShortArray5436[i_261_]) * i_269_ - -16383) >> -662138354);
+                                        int i_270_ = (i_269_ * aShortArray5493[i_261_] + (i_268_ * aShortArray5436[i_261_]) - -16383) >> 14;
+                                        aShortArray5436[i_261_] = (short) ((-(i_268_ * (aShortArray5493[i_261_])) + (aShortArray5436[i_261_]) * i_269_ - -16383) >> 14);
                                         aShortArray5493[i_261_] = (short) i_270_;
                                     }
                                 }
@@ -1531,9 +1531,9 @@ final class Class64_Sub2 extends Class64 {
                             anIntArray5511[i_275_] -= Class136.anInt4795;
                             anIntArray5519[i_275_] -= Class26.anInt386;
                             anIntArray5429[i_275_] -= Class346.anInt4274;
-                            anIntArray5511[i_275_] = (anIntArray5511[i_275_] * i_212_ >> -1790012185);
-                            anIntArray5519[i_275_] = anIntArray5519[i_275_] * i_213_ >> -22477849;
-                            anIntArray5429[i_275_] = i_214_ * anIntArray5429[i_275_] >> 795347207;
+                            anIntArray5511[i_275_] = (anIntArray5511[i_275_] * i_212_ >> 7);
+                            anIntArray5519[i_275_] = anIntArray5519[i_275_] * i_213_ >> 7;
+                            anIntArray5429[i_275_] = i_214_ * anIntArray5429[i_275_] >> 7;
                             anIntArray5511[i_275_] += Class136.anInt4795;
                             anIntArray5519[i_275_] += Class26.anInt386;
                             anIntArray5429[i_275_] += Class346.anInt4274;
@@ -1563,7 +1563,7 @@ final class Class64_Sub2 extends Class64 {
                             for (int i_283_ = 0; anInt5406 > i_283_; i_283_++) {
                                 Class353 class353 = aClass353Array5524[i_283_];
                                 Class334 class334 = aClass334Array5442[i_283_];
-                                class334.anInt4156 = ((0xffffff & class334.anInt4156) | (255 + -(0xff & (aByteArray5515[(class353.anInt4342)])) << -1929301480));
+                                class334.anInt4156 = ((0xffffff & class334.anInt4156) | (255 + -(0xff & (aByteArray5515[(class353.anInt4342)])) << 24));
                             }
                         }
                         method670(-86);
@@ -1579,8 +1579,8 @@ final class Class64_Sub2 extends Class64 {
                             for (int i_288_ = 0; i_288_ < is_287_.length; i_288_++) {
                                 int i_289_ = is_287_[i_288_];
                                 int i_290_ = aShortArray5486[i_289_] & 0xffff;
-                                int i_291_ = (0xfc26 & i_290_) >> 1659446186;
-                                int i_292_ = 0x7 & i_290_ >> 959755015;
+                                int i_291_ = (0xfc26 & i_290_) >> 10;
+                                int i_292_ = 0x7 & i_290_ >> 7;
                                 int i_293_ = 0x7f & i_290_;
                                 i_292_ += i_213_ / 4;
                                 i_291_ = i_212_ + i_291_ & 0x3f;
@@ -1591,7 +1591,7 @@ final class Class64_Sub2 extends Class64 {
                                 if (i_293_ >= 0) {
                                     if (i_293_ > 127) i_293_ = 127;
                                 } else i_293_ = 0;
-                                aShortArray5486[i_289_] = (short) (Class273.method2057(i_293_, (Class273.method2057(i_291_ << 1556353450, i_292_ << 963606823))));
+                                aShortArray5486[i_289_] = (short) (Class273.method2057(i_293_, (Class273.method2057(i_291_ << 10, i_292_ << 7))));
                             }
                             bool_284_ = bool_284_ | is_287_.length > 0;
                         }
@@ -1629,8 +1629,8 @@ final class Class64_Sub2 extends Class64 {
                             int[] is_301_ = anIntArrayArray5412[i_300_];
                             for (int i_302_ = 0; is_301_.length > i_302_; i_302_++) {
                                 Class334 class334 = aClass334Array5442[is_301_[i_302_]];
-                                class334.anInt4165 = (i_212_ * class334.anInt4165 >> -1246070777);
-                                class334.anInt4162 = (i_213_ * class334.anInt4162 >> -1906265369);
+                                class334.anInt4165 = (i_212_ * class334.anInt4165 >> 7);
+                                class334.anInt4162 = (i_213_ * class334.anInt4162 >> 7);
                             }
                         }
                     }
@@ -1714,8 +1714,8 @@ final class Class64_Sub2 extends Class64 {
                             if (class318_sub3 != null) {
                                 boolean bool = false;
                                 boolean bool_319_ = true;
-                                int i_320_ = anInt5507 - -anInt5467 >> -1556641663;
-                                int i_321_ = anInt5418 + anInt5443 >> -1247284767;
+                                int i_320_ = anInt5507 - -anInt5467 >> 1;
+                                int i_321_ = anInt5418 + anInt5443 >> 1;
                                 int i_322_ = (int) (((float) anInt5461 * (Class318_Sub1_Sub2_Sub1.aFloat10199)) + (Class345.aFloat4268 + (Class55.aFloat1010 * (float) i_320_)) + (Class348_Sub42_Sub4.aFloat9516 * (float) i_321_));
                                 int i_323_ = (int) ((Class318_Sub6.aFloat6430 * (float) i_321_) + (((float) i_320_ * Class348_Sub20.aFloat6835) + Class348_Sub12.aFloat6752 + (Class290.aFloat3710 * (float) anInt5461)));
                                 int i_324_ = (int) (Class240.aFloat4673 + ((float) i_320_ * Class328_Sub3.aFloat6523) + ((float) anInt5461 * Class353.aFloat4338) + (float) i_321_ * ha.aFloat4582);
@@ -1736,16 +1736,16 @@ final class Class64_Sub2 extends Class64 {
                                     if ((aHa_Sub3_5419.anInt8095 > i_324_) && ((aHa_Sub3_5419.anInt8095) > i_327_)) bool_319_ = false;
                                     else if (i_324_ >= (aHa_Sub3_5419.anInt8095)) {
                                         if (aHa_Sub3_5419.anInt8095 > i_327_) {
-                                            int i_328_ = ((i_324_ + -(aHa_Sub3_5419.anInt8095) << -708969744) / (-i_327_ + i_324_));
-                                            int i_329_ = i_322_ + (((i_322_ - i_325_) * i_328_) >> 383047760);
-                                            int i_330_ = (((-i_326_ + i_323_) * i_328_ >> 2005259120) + i_323_);
+                                            int i_328_ = ((i_324_ + -(aHa_Sub3_5419.anInt8095) << 16) / (-i_327_ + i_324_));
+                                            int i_329_ = i_322_ + (((i_322_ - i_325_) * i_328_) >> 16);
+                                            int i_330_ = (((-i_326_ + i_323_) * i_328_ >> 16) + i_323_);
                                             class318_sub3.anInt6405 = ((aHa_Sub3_5419.anInt8094) + (aHa_Sub3_5419.anInt8129 * i_329_ / (aHa_Sub3_5419.anInt8095)));
                                             class318_sub3.anInt6402 = ((aHa_Sub3_5419.anInt8130) + (i_330_ * (aHa_Sub3_5419.anInt8134) / (aHa_Sub3_5419.anInt8095)));
                                         }
                                     } else {
-                                        int i_331_ = ((-(aHa_Sub3_5419.anInt8095) + i_327_ << -295035600) / (-i_324_ + i_327_));
-                                        int i_332_ = ((i_331_ * (-i_322_ + i_325_) >> 1714933488) + i_325_);
-                                        int i_333_ = (i_326_ - -(i_331_ * (-i_323_ + i_326_) >> 36981232));
+                                        int i_331_ = ((-(aHa_Sub3_5419.anInt8095) + i_327_ << 16) / (-i_324_ + i_327_));
+                                        int i_332_ = ((i_331_ * (-i_322_ + i_325_) >> 16) + i_325_);
+                                        int i_333_ = (i_326_ - -(i_331_ * (-i_323_ + i_326_) >> 16));
                                         class318_sub3.anInt6405 = ((aHa_Sub3_5419.anInt8094) + (i_332_ * (aHa_Sub3_5419.anInt8129) / (aHa_Sub3_5419.anInt8095)));
                                         class318_sub3.anInt6402 = ((i_333_ * (aHa_Sub3_5419.anInt8134) / (aHa_Sub3_5419.anInt8095)) + (aHa_Sub3_5419.anInt8130));
                                     }
@@ -1865,13 +1865,13 @@ final class Class64_Sub2 extends Class64 {
                         }
                     }
                     boolean bool_348_ = ((class124.aByteArray1834 != null && class124.aByteArray1834[i_339_] != 0) || (class12 != null && class12.anInt200 != 0));
-                    if ((bool || bool_348_) && class124.aByteArray1839 != null) i_340_ += (class124.aByteArray1839[i_339_] << -102838223);
+                    if ((bool || bool_348_) && class124.aByteArray1839 != null) i_340_ += (class124.aByteArray1839[i_339_] << 17);
                     if (bool_348_) i_340_ += 65536;
-                    i_340_ += 0xff00 & i_342_ << -532184728;
-                    i_341_ += (i_347_ & 0xffff) << 893913680;
+                    i_340_ += 0xff00 & i_342_ << 8;
+                    i_341_ += (i_347_ & 0xffff) << 16;
                     i_340_ += 0xff & i_343_;
                     i_341_ += 0xffff & i_338_;
-                    ls[i_338_] = ((long) i_340_ << -35569760) + (long) i_341_;
+                    ls[i_338_] = ((long) i_340_ << 32) + (long) i_341_;
                     Class64_Sub2 class64_sub2_349_ = this;
                     class64_sub2_349_.aBoolean5502 = (class64_sub2_349_.aBoolean5502 | (class12 != null && (class12.aByte198 != 0 || class12.aByte211 != 0)));
                     aBoolean5428 |= bool_348_;
@@ -1902,7 +1902,7 @@ final class Class64_Sub2 extends Class64 {
                         }
                         if (i_351_ == -1) throw new RuntimeException();
                         int i_353_ = (0xffffff & (Class10.anIntArray179[((class124.aShortArray1862[class162.anInt2155]) & 0xffff)]));
-                        i_353_ = (i_353_ | -(class124.aByteArray1834 == null ? 0 : (class124.aByteArray1834[(class162.anInt2155)])) + 255 << -1876030536);
+                        i_353_ = (i_353_ | -(class124.aByteArray1834 == null ? 0 : (class124.aByteArray1834[(class162.anInt2155)])) + 255 << 24);
                         aClass353Array5524[i_350_] = new Class353(i_351_, (class124.aShortArray1863[class162.anInt2155]), (class124.aShortArray1835[class162.anInt2155]), (class124.aShortArray1855[class162.anInt2155]), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158);
                         aClass334Array5442[i_350_] = new Class334(i_353_);
                     }
@@ -2191,7 +2191,7 @@ final class Class64_Sub2 extends Class64 {
                     if (class124.aByteArray1843 != null) i_446_ = class124.aByteArray1843[i_374_];
                     else i_446_ = (byte) 0;
                     if (i_446_ == 0) {
-                        long l = ((long) (i_376_ << 2126334786) + (((long) (i_375_ << -1054710264) + ((long) (i_386_ << -917798856) - -(long) i_377_)) << -1342406624));
+                        long l = ((long) (i_376_ << 2) + (((long) (i_375_ << 8) + ((long) (i_386_ << 24) - -(long) i_377_)) << 32));
                         short i_447_ = class124.aShortArray1863[i_374_];
                         short i_448_ = class124.aShortArray1835[i_374_];
                         short i_449_ = class124.aShortArray1855[i_374_];
@@ -2203,7 +2203,7 @@ final class Class64_Sub2 extends Class64 {
                         aShortArray5512[i_373_] = method669(class371.anInt4524, (long) i_385_ + l, i_373_, class371.anInt4522, class371.anInt4520, -112, f_382_, i_449_, f_383_, class124, class371.anInt4525);
                     } else if (i_446_ == 1) {
                         Class63 class63 = class63s[i_374_];
-                        long l = ((((long) i_377_ + ((long) (i_386_ << 1692109112) - -(long) (i_375_ << 47229608))) << -448546016) + (long) (((256 + class63.anInt1119) << -779612820) + (class63.anInt1118 > 0 ? 1024 : 2048) + (i_376_ << 475395522) + ((class63.anInt1122 - -256) << -2005953578)));
+                        long l = ((((long) i_377_ + ((long) (i_386_ << 24) - -(long) (i_375_ << 8))) << 32) + (long) (((256 + class63.anInt1119) << 12) + (class63.anInt1118 > 0 ? 1024 : 2048) + (i_376_ << 2) + ((class63.anInt1122 - -256) << 22)));
                         aShortArray5508[i_373_] = method669(class63.anInt1122, l, i_373_, 0, class63.anInt1118, -106, f, (class124.aShortArray1863[i_374_]), f_379_, class124, class63.anInt1119);
                         aShortArray5495[i_373_] = method669(class63.anInt1122, l + (long) i_384_, i_373_, 0, class63.anInt1118, -57, f_380_, (class124.aShortArray1835[i_374_]), f_381_, class124, class63.anInt1119);
                         aShortArray5512[i_373_] = method669(class63.anInt1122, l + (long) i_385_, i_373_, 0, class63.anInt1118, -109, f_382_, (class124.aShortArray1855[i_374_]), f_383_, class124, class63.anInt1119);
@@ -2565,15 +2565,15 @@ final class Class64_Sub2 extends Class64 {
                     int i_543_ = anInt5461;
                     if (i_543_ == 0) return;
                     for (int i_544_ = 0; anInt5433 > i_544_; i_544_++) {
-                        int i_545_ = ((anIntArray5519[i_544_] << 757183184) / i_543_);
+                        int i_545_ = ((anIntArray5519[i_544_] << 16) / i_543_);
                         if (i_545_ < i_534_) anIntArray5519[i_544_] = (anIntArray5519[i_544_] - -((i_534_ + -i_545_) * (-i_537_ + (var_s.method3986((i_536_ + anIntArray5511[i_544_]), (anIntArray5429[i_544_] - -i_538_), (byte) -92))) / i_534_));
                     }
                 } else if (i == 3) {
                     int i_555_ = 4 * (i_534_ & 0xff);
-                    int i_556_ = (i_534_ >> 1133839304 & 0xff) * 4;
-                    int i_557_ = 0x3fc0 & i_534_ >> -2049872944 << 820278054;
-                    int i_558_ = 0x3fc0 & i_534_ >> 1544117016 << 1758291814;
-                    if ((i_536_ - (i_555_ >> -1438536063) < 0) || ((var_s.anInt4592 + (i_555_ >> -1936171295) + i_536_) >= var_s.anInt4587 << var_s.anInt4588) || -(i_556_ >> -1818641951) + i_538_ < 0 || ((var_s.anInt4592 + ((i_556_ >> -1982909791) + i_538_)) >= var_s.anInt4590 << var_s.anInt4588))
+                    int i_556_ = (i_534_ >> 8 & 0xff) * 4;
+                    int i_557_ = 0x3fc0 & i_534_ >> 16 << 6;
+                    int i_558_ = 0x3fc0 & i_534_ >> 24 << 6;
+                    if ((i_536_ - (i_555_ >> 1) < 0) || ((var_s.anInt4592 + (i_555_ >> 1) + i_536_) >= var_s.anInt4587 << var_s.anInt4588) || -(i_556_ >> 1) + i_538_ < 0 || ((var_s.anInt4592 + ((i_556_ >> 1) + i_538_)) >= var_s.anInt4590 << var_s.anInt4588))
                         return;
                     this.method626(i_555_, 10947, i_558_, i_536_, i_556_, i_537_, i_557_, var_s, i_538_);
                 } else if (i == 4) {
@@ -2588,7 +2588,7 @@ final class Class64_Sub2 extends Class64 {
                         int i_550_ = var_s.method3986(i_548_, i_549_, (byte) 57);
                         int i_551_ = var_s_535_.method3986(i_548_, i_549_, (byte) -111);
                         int i_552_ = i_550_ - (i_551_ - -i_534_);
-                        anIntArray5519[i_547_] = ((i_552_ * ((anIntArray5519[i_547_] << -1185828312) / i_546_) >> -1782422200) + (i_550_ + -i_537_));
+                        anIntArray5519[i_547_] = ((i_552_ * ((anIntArray5519[i_547_] << 8) / i_546_) >> 8) + (i_550_ + -i_537_));
                     }
                 }
                 method667(0);
@@ -2612,13 +2612,13 @@ final class Class64_Sub2 extends Class64 {
         anInt5522++;
         for (int i_563_ = 0; anInt5478 > i_563_; i_563_++) {
             int i_564_ = 0xffff & aShortArray5486[i_563_];
-            int i_565_ = 0x3f & i_564_ >> -435106262;
-            int i_566_ = (i_564_ & 0x3f5) >> 136053671;
-            if (i != -1) i_565_ = (i_562_ * (i - i_565_) >> -1815631961) + i_565_;
+            int i_565_ = 0x3f & i_564_ >> 10;
+            int i_566_ = (i_564_ & 0x3f5) >> 7;
+            if (i != -1) i_565_ = (i_562_ * (i - i_565_) >> 7) + i_565_;
             int i_567_ = i_564_ & 0x7f;
-            if (i_560_ != -1) i_566_ += (-i_566_ + i_560_) * i_562_ >> -1185032121;
-            if (i_561_ != -1) i_567_ = ((-i_567_ + i_561_) * i_562_ >> -1396128473) + i_567_;
-            aShortArray5486[i_563_] = (short) (Class273.method2057(Class273.method2057(i_565_ << 1183061994, i_566_ << 2021602471), i_567_));
+            if (i_560_ != -1) i_566_ += (-i_566_ + i_560_) * i_562_ >> 7;
+            if (i_561_ != -1) i_567_ = ((-i_567_ + i_561_) * i_562_ >> 7) + i_567_;
+            aShortArray5486[i_563_] = (short) (Class273.method2057(Class273.method2057(i_565_ << 10, i_566_ << 7), i_567_));
         }
         if (aClass353Array5524 != null) {
             for (int i_568_ = 0; anInt5406 > i_568_; i_568_++) {
@@ -2766,9 +2766,9 @@ final class Class64_Sub2 extends Class64 {
                 }
             } else if (i == 1) {
                 if (is_594_ != null) {
-                    int i_602_ = (is_594_[0] * i_590_ - (-(is_594_[1] * i_591_) - (i_592_ * is_594_[2] + 8192)) >> -1583164466);
-                    int i_603_ = ((i_592_ * is_594_[5] + is_594_[3] * i_590_ - -(is_594_[4] * i_591_) - -8192) >> 1534505166);
-                    int i_604_ = ((8192 + is_594_[8] * i_592_ + is_594_[6] * i_590_ + i_591_ * is_594_[7]) >> -2057887218);
+                    int i_602_ = (is_594_[0] * i_590_ - (-(is_594_[1] * i_591_) - (i_592_ * is_594_[2] + 8192)) >> 14);
+                    int i_603_ = ((i_592_ * is_594_[5] + is_594_[3] * i_590_ - -(is_594_[4] * i_591_) - -8192) >> 14);
+                    int i_604_ = ((8192 + is_594_[8] * i_592_ + is_594_[6] * i_590_ + i_591_ * is_594_[7]) >> 14);
                     i_592_ = i_604_;
                     i_591_ = i_603_;
                     i_590_ = i_602_;
@@ -2805,22 +2805,22 @@ final class Class64_Sub2 extends Class64 {
                                     if (i_592_ != 0) {
                                         int i_663_ = Class70.anIntArray1207[i_592_];
                                         int i_664_ = Class70.anIntArray1204[i_592_];
-                                        int i_665_ = ((i_663_ * anIntArray5519[i_662_] + ((i_664_ * anIntArray5511[i_662_]) - -16383)) >> -137825202);
-                                        anIntArray5519[i_662_] = (-(anIntArray5511[i_662_] * i_663_) + (anIntArray5519[i_662_] * i_664_) - -16383) >> -1412041106;
+                                        int i_665_ = ((i_663_ * anIntArray5519[i_662_] + ((i_664_ * anIntArray5511[i_662_]) - -16383)) >> 14);
+                                        anIntArray5519[i_662_] = (-(anIntArray5511[i_662_] * i_663_) + (anIntArray5519[i_662_] * i_664_) - -16383) >> 14;
                                         anIntArray5511[i_662_] = i_665_;
                                     }
                                     if (i_590_ != 0) {
                                         int i_666_ = Class70.anIntArray1207[i_590_];
                                         int i_667_ = Class70.anIntArray1204[i_590_];
-                                        int i_668_ = ((16383 + ((i_667_ * anIntArray5519[i_662_]) - i_666_ * (anIntArray5429[i_662_]))) >> -1423274194);
-                                        anIntArray5429[i_662_] = ((16383 + (i_667_ * anIntArray5429[i_662_]) + (i_666_ * anIntArray5519[i_662_])) >> 1711758478);
+                                        int i_668_ = ((16383 + ((i_667_ * anIntArray5519[i_662_]) - i_666_ * (anIntArray5429[i_662_]))) >> 14);
+                                        anIntArray5429[i_662_] = ((16383 + (i_667_ * anIntArray5429[i_662_]) + (i_666_ * anIntArray5519[i_662_])) >> 14);
                                         anIntArray5519[i_662_] = i_668_;
                                     }
                                     if (i_591_ != 0) {
                                         int i_669_ = Class70.anIntArray1207[i_591_];
                                         int i_670_ = Class70.anIntArray1204[i_591_];
-                                        int i_671_ = ((16383 + (anIntArray5429[i_662_] * i_669_) + (i_670_ * anIntArray5511[i_662_])) >> -581109842);
-                                        anIntArray5429[i_662_] = (-(i_669_ * anIntArray5511[i_662_]) + ((i_670_ * anIntArray5429[i_662_]) - -16383)) >> -548775954;
+                                        int i_671_ = ((16383 + (anIntArray5429[i_662_] * i_669_) + (i_670_ * anIntArray5511[i_662_])) >> 14);
+                                        anIntArray5429[i_662_] = (-(i_669_ * anIntArray5511[i_662_]) + ((i_670_ * anIntArray5429[i_662_]) - -16383)) >> 14;
                                         anIntArray5511[i_662_] = i_671_;
                                     }
                                     anIntArray5511[i_662_] += Class136.anInt4795;
@@ -2846,22 +2846,22 @@ final class Class64_Sub2 extends Class64 {
                                             if (i_592_ != 0) {
                                                 int i_681_ = (Class70.anIntArray1207[i_592_]);
                                                 int i_682_ = (Class70.anIntArray1204[i_592_]);
-                                                int i_683_ = (((i_682_ * (aShortArray5493[i_680_])) + (aShortArray5438[i_680_]) * i_681_ - -16383) >> 795697294);
-                                                aShortArray5438[i_680_] = (short) ((16383 + -((aShortArray5493[i_680_]) * i_681_) + (i_682_ * (aShortArray5438[i_680_]))) >> 466268942);
+                                                int i_683_ = (((i_682_ * (aShortArray5493[i_680_])) + (aShortArray5438[i_680_]) * i_681_ - -16383) >> 14);
+                                                aShortArray5438[i_680_] = (short) ((16383 + -((aShortArray5493[i_680_]) * i_681_) + (i_682_ * (aShortArray5438[i_680_]))) >> 14);
                                                 aShortArray5493[i_680_] = (short) i_683_;
                                             }
                                             if (i_590_ != 0) {
                                                 int i_684_ = (Class70.anIntArray1207[i_590_]);
                                                 int i_685_ = (Class70.anIntArray1204[i_590_]);
-                                                int i_686_ = ((16383 + ((aShortArray5438[i_680_]) * i_685_ - ((aShortArray5436[i_680_]) * i_684_))) >> 226327598);
-                                                aShortArray5436[i_680_] = (short) (((i_684_ * (aShortArray5438[i_680_])) + (i_685_ * (aShortArray5436[i_680_])) - -16383) >> -1799450482);
+                                                int i_686_ = ((16383 + ((aShortArray5438[i_680_]) * i_685_ - ((aShortArray5436[i_680_]) * i_684_))) >> 14);
+                                                aShortArray5436[i_680_] = (short) (((i_684_ * (aShortArray5438[i_680_])) + (i_685_ * (aShortArray5436[i_680_])) - -16383) >> 14);
                                                 aShortArray5438[i_680_] = (short) i_686_;
                                             }
                                             if (i_591_ != 0) {
                                                 int i_687_ = (Class70.anIntArray1207[i_591_]);
                                                 int i_688_ = (Class70.anIntArray1204[i_591_]);
-                                                int i_689_ = ((16383 + ((aShortArray5436[i_680_]) * i_687_ + (i_688_ * (aShortArray5493[i_680_])))) >> -885342930);
-                                                aShortArray5436[i_680_] = (short) (((i_688_ * (aShortArray5436[i_680_])) + (-(i_687_ * (aShortArray5493[i_680_])) - -16383)) >> 989343982);
+                                                int i_689_ = ((16383 + ((aShortArray5436[i_680_]) * i_687_ + (i_688_ * (aShortArray5493[i_680_])))) >> 14);
+                                                aShortArray5436[i_680_] = (short) (((i_688_ * (aShortArray5436[i_680_])) + (-(i_687_ * (aShortArray5493[i_680_])) - -16383)) >> 14);
                                                 aShortArray5493[i_680_] = (short) i_689_;
                                             }
                                         }
@@ -2872,17 +2872,17 @@ final class Class64_Sub2 extends Class64 {
                         method673((byte) -82);
                     }
                 } else {
-                    int i_610_ = is_594_[9] << -190417500;
-                    int i_611_ = is_594_[10] << -1270503100;
-                    int i_612_ = is_594_[11] << 823214852;
-                    int i_613_ = is_594_[12] << -318877276;
-                    int i_614_ = is_594_[13] << -1834337788;
-                    int i_615_ = is_594_[14] << -634575516;
+                    int i_610_ = is_594_[9] << 4;
+                    int i_611_ = is_594_[10] << 4;
+                    int i_612_ = is_594_[11] << 4;
+                    int i_613_ = is_594_[12] << 4;
+                    int i_614_ = is_594_[13] << 4;
+                    int i_615_ = is_594_[14] << 4;
                     if (Class64_Sub3.aBoolean5609) {
-                        int i_616_ = ((is_594_[6] * Class346.anInt4274 + (Class136.anInt4795 * is_594_[0] - -(Class26.anInt386 * is_594_[3])) + 8192) >> -2036713778);
-                        int i_617_ = ((is_594_[7] * Class346.anInt4274 + (is_594_[1] * Class136.anInt4795 - -(is_594_[4] * Class26.anInt386) + 8192)) >> -310259442);
+                        int i_616_ = ((is_594_[6] * Class346.anInt4274 + (Class136.anInt4795 * is_594_[0] - -(Class26.anInt386 * is_594_[3])) + 8192) >> 14);
+                        int i_617_ = ((is_594_[7] * Class346.anInt4274 + (is_594_[1] * Class136.anInt4795 - -(is_594_[4] * Class26.anInt386) + 8192)) >> 14);
                         i_616_ += i_613_;
-                        int i_618_ = ((8192 + Class346.anInt4274 * is_594_[8] + Class136.anInt4795 * is_594_[2] + Class26.anInt386 * is_594_[5]) >> -507434962);
+                        int i_618_ = ((8192 + Class346.anInt4274 * is_594_[8] + Class136.anInt4795 * is_594_[2] + Class26.anInt386 * is_594_[5]) >> 14);
                         i_617_ += i_614_;
                         i_618_ += i_615_;
                         Class136.anInt4795 = i_616_;
@@ -2897,20 +2897,20 @@ final class Class64_Sub2 extends Class64 {
                     int i_623_ = Class70.anIntArray1207[i_591_];
                     int i_624_ = Class70.anIntArray1204[i_592_];
                     int i_625_ = Class70.anIntArray1207[i_592_];
-                    int i_626_ = i_621_ * i_624_ + 8192 >> -1076874578;
-                    int i_627_ = 8192 + i_621_ * i_625_ >> 810434542;
+                    int i_626_ = i_621_ * i_624_ + 8192 >> 14;
+                    int i_627_ = 8192 + i_621_ * i_625_ >> 14;
                     is_619_[5] = -i_621_;
-                    is_619_[4] = 8192 + i_620_ * i_624_ >> 269233742;
-                    is_619_[1] = (8192 + -i_622_ * i_625_ + i_623_ * i_626_ >> -557240466);
-                    is_619_[6] = (8192 + -i_623_ * i_624_ + i_627_ * i_622_ >> -1985908498);
-                    is_619_[7] = (i_625_ * i_623_ - (-(i_622_ * i_626_) - 8192) >> 421801774);
-                    is_619_[0] = (8192 + (i_627_ * i_623_ + i_624_ * i_622_) >> 817013838);
-                    is_619_[2] = i_620_ * i_623_ + 8192 >> 1225355566;
-                    is_619_[8] = i_622_ * i_620_ + 8192 >> 1680055758;
-                    is_619_[3] = 8192 + i_625_ * i_620_ >> 189075598;
-                    int i_628_ = ((-Class346.anInt4274 * is_619_[2] + is_619_[1] * -Class26.anInt386 + (is_619_[0] * -Class136.anInt4795 + 8192)) >> 605423374);
-                    int i_629_ = ((8192 + -Class346.anInt4274 * is_619_[5] + (-Class136.anInt4795 * is_619_[3] - -(is_619_[4] * -Class26.anInt386))) >> 45982382);
-                    int i_630_ = ((8192 + -Class346.anInt4274 * is_619_[8] + (-Class136.anInt4795 * is_619_[6] + -Class26.anInt386 * is_619_[7])) >> 827152270);
+                    is_619_[4] = 8192 + i_620_ * i_624_ >> 14;
+                    is_619_[1] = (8192 + -i_622_ * i_625_ + i_623_ * i_626_ >> 14);
+                    is_619_[6] = (8192 + -i_623_ * i_624_ + i_627_ * i_622_ >> 14);
+                    is_619_[7] = (i_625_ * i_623_ - (-(i_622_ * i_626_) - 8192) >> 14);
+                    is_619_[0] = (8192 + (i_627_ * i_623_ + i_624_ * i_622_) >> 14);
+                    is_619_[2] = i_620_ * i_623_ + 8192 >> 14;
+                    is_619_[8] = i_622_ * i_620_ + 8192 >> 14;
+                    is_619_[3] = 8192 + i_625_ * i_620_ >> 14;
+                    int i_628_ = ((-Class346.anInt4274 * is_619_[2] + is_619_[1] * -Class26.anInt386 + (is_619_[0] * -Class136.anInt4795 + 8192)) >> 14);
+                    int i_629_ = ((8192 + -Class346.anInt4274 * is_619_[5] + (-Class136.anInt4795 * is_619_[3] - -(is_619_[4] * -Class26.anInt386))) >> 14);
+                    int i_630_ = ((8192 + -Class346.anInt4274 * is_619_[8] + (-Class136.anInt4795 * is_619_[6] + -Class26.anInt386 * is_619_[7])) >> 14);
                     int i_631_ = Class136.anInt4795 + i_628_;
                     int i_632_ = i_629_ + Class26.anInt386;
                     int i_633_ = i_630_ - -Class346.anInt4274;
@@ -2920,13 +2920,13 @@ final class Class64_Sub2 extends Class64 {
                             int i_637_ = 0;
                             for (int i_638_ = 0; i_638_ < 3; i_638_++)
                                 i_637_ += (is_594_[i_636_ * 3 - -i_638_] * is_619_[3 * i_635_ - -i_638_]);
-                            is_634_[3 * i_635_ - -i_636_] = 8192 + i_637_ >> -1225429490;
+                            is_634_[3 * i_635_ - -i_636_] = 8192 + i_637_ >> 14;
                         }
                     }
-                    int i_639_ = ((is_619_[2] * i_615_ + is_619_[0] * i_613_ - (-(i_614_ * is_619_[1]) + -8192)) >> 1727847054);
-                    int i_640_ = ((8192 + is_619_[4] * i_614_ + (is_619_[3] * i_613_ - -(i_615_ * is_619_[5]))) >> 127751022);
+                    int i_639_ = ((is_619_[2] * i_615_ + is_619_[0] * i_613_ - (-(i_614_ * is_619_[1]) + -8192)) >> 14);
+                    int i_640_ = ((8192 + is_619_[4] * i_614_ + (is_619_[3] * i_613_ - -(i_615_ * is_619_[5]))) >> 14);
                     i_639_ += i_631_;
-                    int i_641_ = (i_615_ * is_619_[8] + (is_619_[6] * i_613_ + (is_619_[7] * i_614_ + 8192)) >> 306718446);
+                    int i_641_ = (i_615_ * is_619_[8] + (is_619_[6] * i_613_ + (is_619_[7] * i_614_ + 8192)) >> 14);
                     i_640_ += i_632_;
                     i_641_ += i_633_;
                     int[] is_642_ = new int[9];
@@ -2935,12 +2935,12 @@ final class Class64_Sub2 extends Class64 {
                             int i_645_ = 0;
                             for (int i_646_ = 0; i_646_ < 3; i_646_++)
                                 i_645_ += (is_594_[i_646_ + 3 * i_643_] * is_634_[3 * i_646_ + i_644_]);
-                            is_642_[3 * i_643_ - -i_644_] = i_645_ - -8192 >> -1828498;
+                            is_642_[3 * i_643_ - -i_644_] = i_645_ - -8192 >> 14;
                         }
                     }
-                    int i_647_ = ((i_640_ * is_594_[1] + (is_594_[0] * i_639_ - -(i_641_ * is_594_[2])) - -8192) >> 1840735246);
-                    int i_648_ = (8192 + is_594_[5] * i_641_ + (is_594_[4] * i_640_ + i_639_ * is_594_[3]) >> 565697038);
-                    int i_649_ = ((is_594_[7] * i_640_ + is_594_[6] * i_639_ - -(i_641_ * is_594_[8]) - -8192) >> -1388127378);
+                    int i_647_ = ((i_640_ * is_594_[1] + (is_594_[0] * i_639_ - -(i_641_ * is_594_[2])) - -8192) >> 14);
+                    int i_648_ = (8192 + is_594_[5] * i_641_ + (is_594_[4] * i_640_ + i_639_ * is_594_[3]) >> 14);
+                    int i_649_ = ((is_594_[7] * i_640_ + is_594_[6] * i_639_ - -(i_641_ * is_594_[8]) - -8192) >> 14);
                     i_647_ += i_610_;
                     i_648_ += i_611_;
                     i_649_ += i_612_;
@@ -2951,10 +2951,10 @@ final class Class64_Sub2 extends Class64 {
                             for (int i_653_ = 0; i_653_ < is_652_.length; i_653_++) {
                                 int i_654_ = is_652_[i_653_];
                                 if (aShortArray5494 == null || (i_593_ & aShortArray5494[i_654_]) != 0) {
-                                    int i_655_ = ((8192 + (anIntArray5519[i_654_] * is_642_[1]) + ((anIntArray5511[i_654_] * is_642_[0]) - -(is_642_[2] * anIntArray5429[i_654_]))) >> 59406126);
-                                    int i_656_ = ((8192 + (is_642_[3] * anIntArray5511[i_654_]) + ((is_642_[4] * anIntArray5519[i_654_]) + (anIntArray5429[i_654_] * is_642_[5]))) >> -1843323058);
+                                    int i_655_ = ((8192 + (anIntArray5519[i_654_] * is_642_[1]) + ((anIntArray5511[i_654_] * is_642_[0]) - -(is_642_[2] * anIntArray5429[i_654_]))) >> 14);
+                                    int i_656_ = ((8192 + (is_642_[3] * anIntArray5511[i_654_]) + ((is_642_[4] * anIntArray5519[i_654_]) + (anIntArray5429[i_654_] * is_642_[5]))) >> 14);
                                     i_655_ += i_647_;
-                                    int i_657_ = ((8192 + ((is_642_[6] * anIntArray5511[i_654_]) + (anIntArray5519[i_654_] * is_642_[7])) + (anIntArray5429[i_654_] * is_642_[8])) >> 756752398);
+                                    int i_657_ = ((8192 + ((is_642_[6] * anIntArray5511[i_654_]) + (anIntArray5519[i_654_] * is_642_[7])) + (anIntArray5429[i_654_] * is_642_[8])) >> 14);
                                     i_656_ += i_648_;
                                     i_657_ += i_649_;
                                     anIntArray5511[i_654_] = i_655_;
@@ -2977,9 +2977,9 @@ final class Class64_Sub2 extends Class64 {
                                     anIntArray5511[i_694_] -= Class136.anInt4795;
                                     anIntArray5519[i_694_] -= Class26.anInt386;
                                     anIntArray5429[i_694_] -= Class346.anInt4274;
-                                    anIntArray5511[i_694_] = (i_590_ * anIntArray5511[i_694_] >> 858556839);
-                                    anIntArray5519[i_694_] = (anIntArray5519[i_694_] * i_591_ >> 1820037831);
-                                    anIntArray5429[i_694_] = (i_592_ * anIntArray5429[i_694_] >> -1153528537);
+                                    anIntArray5511[i_694_] = (i_590_ * anIntArray5511[i_694_] >> 7);
+                                    anIntArray5519[i_694_] = (anIntArray5519[i_694_] * i_591_ >> 7);
+                                    anIntArray5429[i_694_] = (i_592_ * anIntArray5429[i_694_] >> 7);
                                     anIntArray5511[i_694_] += Class136.anInt4795;
                                     anIntArray5519[i_694_] += Class26.anInt386;
                                     anIntArray5429[i_694_] += Class346.anInt4274;
@@ -2988,47 +2988,47 @@ final class Class64_Sub2 extends Class64 {
                         }
                     }
                 } else {
-                    int i_695_ = is_594_[9] << -668979964;
-                    int i_696_ = is_594_[10] << -1034319612;
-                    int i_697_ = is_594_[11] << 1935722340;
-                    int i_698_ = is_594_[12] << 190348292;
-                    int i_699_ = is_594_[13] << 1935268868;
-                    int i_700_ = is_594_[14] << -655617340;
+                    int i_695_ = is_594_[9] << 4;
+                    int i_696_ = is_594_[10] << 4;
+                    int i_697_ = is_594_[11] << 4;
+                    int i_698_ = is_594_[12] << 4;
+                    int i_699_ = is_594_[13] << 4;
+                    int i_700_ = is_594_[14] << 4;
                     if (Class64_Sub3.aBoolean5609) {
-                        int i_701_ = ((Class346.anInt4274 * is_594_[6] + (Class136.anInt4795 * is_594_[0] + (is_594_[3] * Class26.anInt386 + 8192))) >> 427072206);
-                        int i_702_ = (8192 + (Class136.anInt4795 * is_594_[1] + (Class26.anInt386 * is_594_[4] - -(is_594_[7] * Class346.anInt4274))) >> 1150745582);
+                        int i_701_ = ((Class346.anInt4274 * is_594_[6] + (Class136.anInt4795 * is_594_[0] + (is_594_[3] * Class26.anInt386 + 8192))) >> 14);
+                        int i_702_ = (8192 + (Class136.anInt4795 * is_594_[1] + (Class26.anInt386 * is_594_[4] - -(is_594_[7] * Class346.anInt4274))) >> 14);
                         i_701_ += i_698_;
                         i_702_ += i_699_;
-                        int i_703_ = ((8192 + is_594_[2] * Class136.anInt4795 - -(is_594_[5] * Class26.anInt386) - -(Class346.anInt4274 * is_594_[8])) >> 1952778350);
+                        int i_703_ = ((8192 + is_594_[2] * Class136.anInt4795 - -(is_594_[5] * Class26.anInt386) - -(Class346.anInt4274 * is_594_[8])) >> 14);
                         i_703_ += i_700_;
                         Class136.anInt4795 = i_701_;
                         Class26.anInt386 = i_702_;
                         Class64_Sub3.aBoolean5609 = false;
                         Class346.anInt4274 = i_703_;
                     }
-                    int i_704_ = i_590_ << -1097327217 >> -1623758425;
-                    int i_705_ = i_591_ << -535466417 >> 1037632647;
-                    int i_706_ = i_592_ << 1282269679 >> -560463641;
-                    int i_707_ = -Class136.anInt4795 * i_704_ + 8192 >> 331984494;
-                    int i_708_ = 8192 + -Class26.anInt386 * i_705_ >> 416776206;
-                    int i_709_ = 8192 + -Class346.anInt4274 * i_706_ >> -250638706;
+                    int i_704_ = i_590_ << 15 >> 7;
+                    int i_705_ = i_591_ << 15 >> 7;
+                    int i_706_ = i_592_ << 15 >> 7;
+                    int i_707_ = -Class136.anInt4795 * i_704_ + 8192 >> 14;
+                    int i_708_ = 8192 + -Class26.anInt386 * i_705_ >> 14;
+                    int i_709_ = 8192 + -Class346.anInt4274 * i_706_ >> 14;
                     int i_710_ = i_707_ + Class136.anInt4795;
                     int i_711_ = i_708_ + Class26.anInt386;
                     int i_712_ = Class346.anInt4274 + i_709_;
                     int[] is_713_ = new int[9];
-                    is_713_[0] = 8192 + i_704_ * is_594_[0] >> 2080933486;
-                    is_713_[1] = is_594_[3] * i_704_ + 8192 >> 1908426510;
-                    is_713_[2] = 8192 + is_594_[6] * i_704_ >> 1910050606;
-                    is_713_[6] = i_706_ * is_594_[2] + 8192 >> 1429779982;
-                    is_713_[5] = i_705_ * is_594_[7] - -8192 >> 1468662414;
-                    is_713_[3] = 8192 + i_705_ * is_594_[1] >> 296698638;
-                    is_713_[4] = i_705_ * is_594_[4] - -8192 >> -275845490;
-                    is_713_[7] = i_706_ * is_594_[5] - -8192 >> -112672210;
-                    is_713_[8] = 8192 + i_706_ * is_594_[8] >> 214928782;
-                    int i_714_ = i_698_ * i_704_ + 8192 >> -1890613842;
-                    int i_715_ = i_699_ * i_705_ - -8192 >> -1486887730;
+                    is_713_[0] = 8192 + i_704_ * is_594_[0] >> 14;
+                    is_713_[1] = is_594_[3] * i_704_ + 8192 >> 14;
+                    is_713_[2] = 8192 + is_594_[6] * i_704_ >> 14;
+                    is_713_[6] = i_706_ * is_594_[2] + 8192 >> 14;
+                    is_713_[5] = i_705_ * is_594_[7] - -8192 >> 14;
+                    is_713_[3] = 8192 + i_705_ * is_594_[1] >> 14;
+                    is_713_[4] = i_705_ * is_594_[4] - -8192 >> 14;
+                    is_713_[7] = i_706_ * is_594_[5] - -8192 >> 14;
+                    is_713_[8] = 8192 + i_706_ * is_594_[8] >> 14;
+                    int i_714_ = i_698_ * i_704_ + 8192 >> 14;
+                    int i_715_ = i_699_ * i_705_ - -8192 >> 14;
                     i_714_ += i_710_;
-                    int i_716_ = 8192 + i_706_ * i_700_ >> 1049923726;
+                    int i_716_ = 8192 + i_706_ * i_700_ >> 14;
                     i_715_ += i_711_;
                     i_716_ += i_712_;
                     int[] is_717_ = new int[9];
@@ -3037,12 +3037,12 @@ final class Class64_Sub2 extends Class64 {
                             int i_720_ = 0;
                             for (int i_721_ = 0; i_721_ < 3; i_721_++)
                                 i_720_ += (is_713_[i_719_ - -(3 * i_721_)] * is_594_[i_721_ + i_718_ * 3]);
-                            is_717_[i_718_ * 3 - -i_719_] = i_720_ + 8192 >> 1965218958;
+                            is_717_[i_718_ * 3 - -i_719_] = i_720_ + 8192 >> 14;
                         }
                     }
-                    int i_722_ = ((i_715_ * is_594_[1] + i_714_ * is_594_[0] + is_594_[2] * i_716_ - -8192) >> -883470706);
-                    int i_723_ = (i_716_ * is_594_[5] + (is_594_[3] * i_714_ - -(i_715_ * is_594_[4]) - -8192) >> -917794770);
-                    int i_724_ = (i_714_ * is_594_[6] + (i_715_ * is_594_[7] + is_594_[8] * i_716_ + 8192) >> -1585808434);
+                    int i_722_ = ((i_715_ * is_594_[1] + i_714_ * is_594_[0] + is_594_[2] * i_716_ - -8192) >> 14);
+                    int i_723_ = (i_716_ * is_594_[5] + (is_594_[3] * i_714_ - -(i_715_ * is_594_[4]) - -8192) >> 14);
+                    int i_724_ = (i_714_ * is_594_[6] + (i_715_ * is_594_[7] + is_594_[8] * i_716_ + 8192) >> 14);
                     i_723_ += i_696_;
                     i_722_ += i_695_;
                     i_724_ += i_697_;
@@ -3053,11 +3053,11 @@ final class Class64_Sub2 extends Class64 {
                             for (int i_728_ = 0; i_728_ < is_727_.length; i_728_++) {
                                 int i_729_ = is_727_[i_728_];
                                 if (aShortArray5494 == null || ((i_593_ & aShortArray5494[i_729_]) != 0)) {
-                                    int i_730_ = ((is_717_[1] * anIntArray5519[i_729_] + (anIntArray5511[i_729_] * is_717_[0]) - (-(anIntArray5429[i_729_] * is_717_[2]) - 8192)) >> -1132523922);
-                                    int i_731_ = ((8192 + ((is_717_[5] * anIntArray5429[i_729_]) + (is_717_[4] * anIntArray5519[i_729_]) + (is_717_[3] * anIntArray5511[i_729_]))) >> -1459330130);
+                                    int i_730_ = ((is_717_[1] * anIntArray5519[i_729_] + (anIntArray5511[i_729_] * is_717_[0]) - (-(anIntArray5429[i_729_] * is_717_[2]) - 8192)) >> 14);
+                                    int i_731_ = ((8192 + ((is_717_[5] * anIntArray5429[i_729_]) + (is_717_[4] * anIntArray5519[i_729_]) + (is_717_[3] * anIntArray5511[i_729_]))) >> 14);
                                     i_731_ += i_723_;
                                     i_730_ += i_722_;
-                                    int i_732_ = ((anIntArray5519[i_729_] * is_717_[7] + ((anIntArray5511[i_729_] * is_717_[6]) - (-(is_717_[8] * anIntArray5429[i_729_]) - 8192))) >> -1127316786);
+                                    int i_732_ = ((anIntArray5519[i_729_] * is_717_[7] + ((anIntArray5511[i_729_] * is_717_[6]) - (-(is_717_[8] * anIntArray5429[i_729_]) - 8192))) >> 14);
                                     anIntArray5511[i_729_] = i_730_;
                                     i_732_ += i_724_;
                                     anIntArray5519[i_729_] = i_731_;
@@ -3091,7 +3091,7 @@ final class Class64_Sub2 extends Class64 {
                             for (int i_740_ = 0; i_740_ < anInt5406; i_740_++) {
                                 Class353 class353 = aClass353Array5524[i_740_];
                                 Class334 class334 = aClass334Array5442[i_740_];
-                                class334.anInt4156 = ((-(0xff & (aByteArray5515[(class353.anInt4342)])) + 255 << -1377764584) | (class334.anInt4156 & 0xffffff));
+                                class334.anInt4156 = ((-(0xff & (aByteArray5515[(class353.anInt4342)])) + 255 << 24) | (class334.anInt4156 & 0xffffff));
                             }
                         }
                         method670(-126);
@@ -3108,8 +3108,8 @@ final class Class64_Sub2 extends Class64 {
                                 int i_746_ = is_744_[i_745_];
                                 if (aShortArray5432 == null || ((aShortArray5432[i_746_] & i_593_) != 0)) {
                                     int i_747_ = 0xffff & aShortArray5486[i_746_];
-                                    int i_748_ = (i_747_ & 0xfdd5) >> 17175658;
-                                    int i_749_ = i_747_ >> -459129273 & 0x7;
+                                    int i_748_ = (i_747_ & 0xfdd5) >> 10;
+                                    int i_749_ = i_747_ >> 7 & 0x7;
                                     i_749_ += i_591_ / 4;
                                     i_748_ = 0x3f & i_590_ + i_748_;
                                     int i_750_ = i_747_ & 0x7f;
@@ -3120,7 +3120,7 @@ final class Class64_Sub2 extends Class64 {
                                     if (i_750_ >= 0) {
                                         if (i_750_ > 127) i_750_ = 127;
                                     } else i_750_ = 0;
-                                    aShortArray5486[i_746_] = (short) (Class273.method2057((Class273.method2057(i_749_ << 1623344743, i_748_ << 46741706)), i_750_));
+                                    aShortArray5486[i_746_] = (short) (Class273.method2057((Class273.method2057(i_749_ << 7, i_748_ << 10)), i_750_));
                                 }
                             }
                             bool_741_ = (bool_741_ | is_744_.length > 0);
@@ -3159,8 +3159,8 @@ final class Class64_Sub2 extends Class64 {
                             int[] is_758_ = anIntArrayArray5412[i_757_];
                             for (int i_759_ = 0; (i_759_ < is_758_.length); i_759_++) {
                                 Class334 class334 = aClass334Array5442[is_758_[i_759_]];
-                                class334.anInt4162 = (i_591_ * class334.anInt4162 >> 735317159);
-                                class334.anInt4165 = (i_590_ * class334.anInt4165 >> 31832679);
+                                class334.anInt4162 = (i_591_ * class334.anInt4162 >> 7);
+                                class334.anInt4165 = (i_590_ * class334.anInt4165 >> 7);
                             }
                         }
                     }

@@ -50,8 +50,8 @@ class Class59_Sub1 extends Class59 {
         int i_7_ = Class183.method1382(i_2_, -6409);
         int i_8_ = 0;
         int i_9_ = Math.min(i_5_, i);
-        int i_10_ = i >> 1517170401;
-        int i_11_ = i_5_ >> -322977663;
+        int i_10_ = i >> 1;
+        int i_11_ = i_5_ >> 1;
         float[] fs_12_ = fs;
         float[] fs_13_ = new float[i_7_ * i_10_ * i_11_];
         for (; ; ) {
@@ -124,17 +124,17 @@ class Class59_Sub1 extends Class59 {
             if (i_40_ == 0) {
                 anInt5280 = -(i >= 0 ? i : -i) + anInt5278;
                 anInt5289 = 4096;
-                anInt5280 = anInt5280 * anInt5280 >> -1109421716;
+                anInt5280 = anInt5280 * anInt5280 >> 12;
                 anInt5290 = anInt5280;
             } else {
-                anInt5289 = anInt5280 * anInt5298 >> -640192180;
+                anInt5289 = anInt5280 * anInt5298 >> 12;
                 if (anInt5289 < 0) anInt5289 = 0;
                 else if (anInt5289 > 4096) anInt5289 = 4096;
                 anInt5280 = anInt5278 + -(i < 0 ? -i : i);
-                anInt5280 = anInt5280 * anInt5280 >> 655434060;
-                anInt5280 = anInt5289 * anInt5280 >> 62440396;
-                anInt5290 += anInt5280 * anInt5285 >> 830941324;
-                anInt5285 = anInt5285 * anInt5279 >> 1740894476;
+                anInt5280 = anInt5280 * anInt5280 >> 12;
+                anInt5280 = anInt5289 * anInt5280 >> 12;
+                anInt5290 += anInt5280 * anInt5285 >> 12;
+                anInt5285 = anInt5285 * anInt5279 >> 12;
             }
             anInt5292++;
         }

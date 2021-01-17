@@ -48,8 +48,8 @@ final class Class348_Sub40_Sub2 extends Class348_Sub40 {
             for (/**/; i_3_ < Class348_Sub40_Sub6.anInt9139; i_3_++) {
                 int i_4_ = Class318_Sub6.anIntArray6432[i_3_];
                 int i_5_ = Class239_Sub18.anIntArray6035[i];
-                int i_6_ = anInt9099 * i_4_ >> -1577829012;
-                int i_7_ = anInt9095 * i_5_ >> 293549036;
+                int i_6_ = anInt9099 * i_4_ >> 12;
+                int i_7_ = anInt9095 * i_5_ >> 12;
                 int i_8_ = i_4_ % (4096 / anInt9099) * anInt9099;
                 int i_9_ = i_5_ % (4096 / anInt9095) * anInt9095;
                 if (i_9_ < anInt9098) {

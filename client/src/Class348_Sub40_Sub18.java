@@ -123,10 +123,10 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
     }
 
     private final void method3095(int i, int i_19_) {
-        anInt9244 = 0xff0 & i_19_ >> -2106963764;
-        anInt9252 = i_19_ >> 1732680260 & 0xff0;
+        anInt9244 = 0xff0 & i_19_ >> 12;
+        anInt9252 = i_19_ >> 4 & 0xff0;
         anInt9248++;
-        anInt9250 = (i_19_ & 0xff) << 1427078244;
+        anInt9250 = (i_19_ & 0xff) << 4;
         if (i >= -54) anInt9250 = -42;
     }
 

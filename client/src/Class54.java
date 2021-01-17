@@ -26,7 +26,7 @@ final class Class54 {
     static final int method500(int i, int i_0_) {
         anInt975++;
         if (i != 7) return -107;
-        return i_0_ >>> 503944;
+        return i_0_ >>> 8;
     }
 
     public static void method501(int i) {

@@ -133,10 +133,10 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
         this.aBoolean10517 = (0x2 & i_11_) != 0;
         boolean bool_12_ = (i_11_ & 0x4) != 0;
         int i_13_ = super.method2436((byte) 68);
-        this.method2434((byte) 51, 1 + ((0x3f & i_11_) >> 939208163));
-        aByte10552 = (byte) (i_11_ >> 2109005158 & 0x3);
-        this.anInt6377 += -i_13_ + method2436((byte) 47) << 1271420456;
-        this.anInt6388 += method2436((byte) 96) + -i_13_ << 2109816392;
+        this.method2434((byte) 51, 1 + ((0x3f & i_11_) >> 3));
+        aByte10552 = (byte) (i_11_ >> 6 & 0x3);
+        this.anInt6377 += -i_13_ + method2436((byte) 47) << 8;
+        this.anInt6388 += method2436((byte) 96) + -i_13_ << 8;
         aByte10556 = class348_sub49.method3388(-114);
         this.anInt10540 = class348_sub49.method3388(-89);
         this.anInt10522 = class348_sub49.method3388(i ^ ~0x1);
@@ -150,7 +150,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
             if (i_16_ == 0) is[i_15_] = 0;
             else {
                 int i_17_ = class348_sub49.readUnsignedByte(255);
-                int i_18_ = i_17_ + (i_16_ << 1691219592);
+                int i_18_ = i_17_ + (i_16_ << 8);
                 if (i_15_ == 0 && i_18_ == 65535) {
                     i_14_ = class348_sub49.readShort(842397944);
                     this.anInt10542 = class348_sub49.readUnsignedByte(255);
@@ -208,8 +208,8 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
         int[] is_30_ = (this.aClass154_10536.anIntArray2095);
         this.aClass154_10536.method1228(i_14_, 105, method2421((byte) 121), is, aByte10538 == 1, is_20_);
         if (i_14_ != i_29_) {
-            this.anInt6377 = (this.anIntArray10320[0] << -757818679) - -(method2436((byte) 89) << -341559384);
-            this.anInt6388 = (this.anIntArray10317[0] << 1810217385) - -(method2436((byte) 98) << -592799704);
+            this.anInt6377 = (this.anIntArray10320[0] << 9) - -(method2436((byte) 89) << 8);
+            this.anInt6388 = (this.anIntArray10317[0] << 9) - -(method2436((byte) 98) << 8);
         }
         if ((Class348_Sub42_Sub11.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (int i_31_ = 0; i_31_ < is_20_.length; i_31_++) {
@@ -367,7 +367,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
                     if (class302.anInt3840 == 2) {
                         int i_59_ = (-(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) + 256 + class302.anInt3835);
                         int i_60_ = (-(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) + 256 + class302.anInt3832);
-                        int i_61_ = class302.anInt3837 << 1821623465;
+                        int i_61_ = class302.anInt3837 << 9;
                         i_61_ *= i_61_;
                         if (Class305.aBoolean3870) method2454(6253, i_59_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_ha, i_60_);
                         else method2453(i_59_, var_ha, i_61_, (this.aClass64Array10323[0]), 0, i_60_, class101, class302.anInt3834);
@@ -501,7 +501,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
             if (this.anInt10302 != 0) class64.FA(this.anInt10302);
             if (this.anInt10208 != 0) class64.VA(this.anInt10208);
             if (this.anInt10252 != 0) class64.H(0, this.anInt10252, 0);
-        } else this.method2424(i_74_, method2436((byte) 124) << 471770697, 0, method2436((byte) 58) << -790952727, (byte) 65, 0);
+        } else this.method2424(i_74_, method2436((byte) 124) << 9, 0, method2436((byte) 58) << 9, (byte) 65, 0);
         if (bool) class64.method624(this.aByte10255, this.aByte10206, this.aByte10270, (this.aByte10279 & 0xff));
         if (!this.aBoolean10521 && this.anInt10269 != -1 && this.anInt10240 != -1) {
             Class368 class368 = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 76, this.anInt10269));
@@ -535,13 +535,13 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
                         if (i_85_ != 0) class64_80_.a(i_85_);
                         int i_86_ = Class70.anIntArray1207[i_85_];
                         int i_87_ = Class70.anIntArray1204[i_85_];
-                        int i_88_ = i_87_ * i_81_ + i_83_ * i_86_ >> -181246066;
-                        i_83_ = -(i_81_ * i_86_) + i_83_ * i_87_ >> 455229710;
+                        int i_88_ = i_87_ * i_81_ + i_83_ * i_86_ >> 14;
+                        i_83_ = -(i_81_ * i_86_) + i_83_ * i_87_ >> 14;
                         i_81_ = i_88_;
                     }
                     class64_80_.H(i_81_, i_82_, i_83_);
                 } else if (this.anInt10237 != 0) class64_80_.a(2048 * this.anInt10237);
-                if (this.anInt10220 != 0) class64_80_.H(0, (-this.anInt10220 << -1384741150), 0);
+                if (this.anInt10220 != 0) class64_80_.H(0, (-this.anInt10220 << 2), 0);
                 if (bool_78_) {
                     if (this.anInt10302 != 0) class64_80_.FA(this.anInt10302);
                     if (this.anInt10208 != 0) class64_80_.VA(this.anInt10208);
@@ -585,13 +585,13 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
                         if (i_96_ != 0) class64_91_.a(i_96_);
                         int i_97_ = Class70.anIntArray1207[i_96_];
                         int i_98_ = Class70.anIntArray1204[i_96_];
-                        int i_99_ = i_94_ * i_97_ + i_98_ * i_92_ >> 845034542;
-                        i_94_ = -(i_97_ * i_92_) + i_98_ * i_94_ >> 1085825006;
+                        int i_99_ = i_94_ * i_97_ + i_98_ * i_92_ >> 14;
+                        i_94_ = -(i_97_ * i_92_) + i_98_ * i_94_ >> 14;
                         i_92_ = i_99_;
                     }
                     class64_91_.H(i_92_, i_93_, i_94_);
                 }
-                if (this.anInt10260 != 0) class64_91_.H(0, (-this.anInt10260 << -1898332830), 0);
+                if (this.anInt10260 != 0) class64_91_.H(0, (-this.anInt10260 << 2), 0);
                 if (bool_89_) {
                     if (this.anInt10302 != 0) class64_91_.FA(this.anInt10302);
                     if (this.anInt10208 != 0) class64_91_.VA(this.anInt10208);

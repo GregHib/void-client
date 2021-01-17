@@ -61,7 +61,7 @@ final class Class348_Sub42_Sub4 extends Class348_Sub42 {
     final long method3182(int i) {
         if (i < 76) anInt9515 = 111;
         anInt9510++;
-        return (this.aShortArrayArray9518).length << -1917987552 | (this.aShortArrayArray9518[0]).length;
+        return (this.aShortArrayArray9518).length << 0 | (this.aShortArrayArray9518[0]).length;
     }
 
     Class348_Sub42_Sub4(short[][] is, double d) {

@@ -19,7 +19,7 @@ final class Class352 {
 
     static final void method3459(Class348_Sub34 class348_sub34, int i, int i_0_, int i_1_, int i_2_) {
         anInt4330++;
-        long l = i_0_ << -1072233266 | i << 1409307868 | i_1_;
+        long l = i_0_ << 14 | i << 28 | i_1_;
         Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aClass356_1895.method3480(l, -6008);
         if (class348_sub37 == null) {
             class348_sub37 = new Class348_Sub37();

@@ -28,17 +28,17 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
             if (Class348_Sub40_Sub6.anInt9139 == anInt9374) {
                 for (int i_8_ = 0; (Class348_Sub40_Sub6.anInt9139 > i_8_); i_8_++) {
                     int i_9_ = anIntArray9375[i_1_++];
-                    is_4_[i_8_] = Class139.method1166(255, i_9_) << -2131950236;
-                    is_3_[i_8_] = Class139.method1166(i_9_ >> -613090268, 4080);
-                    is_2_[i_8_] = Class139.method1166(16711680, i_9_) >> 1624740716;
+                    is_4_[i_8_] = Class139.method1166(255, i_9_) << 4;
+                    is_3_[i_8_] = Class139.method1166(i_9_ >> 4, 4080);
+                    is_2_[i_8_] = Class139.method1166(16711680, i_9_) >> 12;
                 }
             } else {
                 for (int i_5_ = 0; i_5_ < Class348_Sub40_Sub6.anInt9139; i_5_++) {
                     int i_6_ = anInt9374 * i_5_ / Class348_Sub40_Sub6.anInt9139;
                     int i_7_ = anIntArray9375[i_6_ + i_1_];
-                    is_4_[i_5_] = Class139.method1166(i_7_, 255) << 53282276;
-                    is_3_[i_5_] = Class139.method1166(65280, i_7_) >> 1400355748;
-                    is_2_[i_5_] = Class139.method1166(i_7_ >> -1716259188, 4080);
+                    is_4_[i_5_] = Class139.method1166(i_7_, 255) << 4;
+                    is_3_[i_5_] = Class139.method1166(65280, i_7_) >> 4;
+                    is_2_[i_5_] = Class139.method1166(i_7_ >> 12, 4080);
                 }
             }
         }
@@ -86,11 +86,11 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         if (i_16_ < -2000 || i_21_ < -2000 || i_24_ < -2000 || i_23_ < -2000 || i_17_ < -2000 || i < -2000) return false;
         if (Class350.anInt4319 == 2) {
             int i_25_ = i_23_ + i_16_ * Class306.anInt3872;
-            if (i_25_ >= 0 && Class14.anIntArray5091.length > i_25_ && Class14.anIntArray5091[i_25_] > -38400 + (i_22_ << 2075177096)) return false;
+            if (i_25_ >= 0 && Class14.anIntArray5091.length > i_25_ && Class14.anIntArray5091[i_25_] > -38400 + (i_22_ << 8)) return false;
             i_25_ = i_17_ + i_21_ * Class306.anInt3872;
-            if (i_25_ >= 0 && Class14.anIntArray5091.length > i_25_ && ((i_19_ << -1686995544) + -38400 < Class14.anIntArray5091[i_25_])) return false;
+            if (i_25_ >= 0 && Class14.anIntArray5091.length > i_25_ && ((i_19_ << 8) + -38400 < Class14.anIntArray5091[i_25_])) return false;
             i_25_ = i + i_24_ * Class306.anInt3872;
-            if (i_25_ >= 0 && Class14.anIntArray5091.length > i_25_ && (Class14.anIntArray5091[i_25_] > (i_18_ << -1755059256) - 38400)) return false;
+            if (i_25_ >= 0 && Class14.anIntArray5091.length > i_25_ && (Class14.anIntArray5091[i_25_] > (i_18_ << 8) - 38400)) return false;
         }
         int i_26_ = -i_23_ + i_17_;
         int i_27_ = i_21_ - i_16_;
@@ -112,20 +112,20 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         }
         int i_31_ = -i_22_ + i_18_;
         int i_32_ = 0;
-        if (i_21_ != i_16_) i_32_ = (i_17_ - i_23_ << 1584783212) / (i_21_ - i_16_);
+        if (i_21_ != i_16_) i_32_ = (i_17_ - i_23_ << 12) / (i_21_ - i_16_);
         int i_33_ = 0;
-        if (i_21_ != i_24_) i_33_ = (-i_17_ + i << 1710101324) / (i_24_ + -i_21_);
+        if (i_21_ != i_24_) i_33_ = (-i_17_ + i << 12) / (i_24_ + -i_21_);
         if (i_20_ >= -7) anInt9372 = 8;
         int i_34_ = 0;
-        if (i_24_ != i_16_) i_34_ = (i_23_ + -i << 526094892) / (i_16_ - i_24_);
+        if (i_24_ != i_16_) i_34_ = (i_23_ + -i << 12) / (i_16_ - i_24_);
         int i_35_ = -(i_27_ * i_28_) + i_29_ * i_26_;
         if (i_35_ == 0) return false;
-        int i_36_ = (-(i_31_ * i_27_) + i_30_ * i_29_ << -1676685432) / i_35_;
-        int i_37_ = (i_26_ * i_31_ + -(i_30_ * i_28_) << -1391736184) / i_35_;
+        int i_36_ = (-(i_31_ * i_27_) + i_30_ * i_29_ << 8) / i_35_;
+        int i_37_ = (i_26_ * i_31_ + -(i_30_ * i_28_) << 8) / i_35_;
         if (i_16_ > i_21_ || i_24_ < i_16_) {
             if (i_24_ < i_21_) {
                 if (Class86.anInt1480 <= i_24_) return true;
-                i_18_ = -(i_36_ * i) + ((i_18_ << -670323960) - -i_36_);
+                i_18_ = -(i_36_ * i) + ((i_18_ << 8) - -i_36_);
                 if (Class86.anInt1480 < i_16_) i_16_ = Class86.anInt1480;
                 if (Class86.anInt1480 < i_21_) i_21_ = Class86.anInt1480;
                 if (i_21_ > i_16_) {
@@ -146,14 +146,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                         i_16_ -= i_24_;
                         i_24_ *= Class306.anInt3872;
                         while (--i_16_ >= 0) {
-                            if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, 1 + (i >> -1524286484), (i_17_ >> -994516500) - 1, Class14.anIntArray5091, i_24_)) return false;
+                            if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, 1 + (i >> 12), (i_17_ >> 12) - 1, Class14.anIntArray5091, i_24_)) return false;
                             i_24_ += Class306.anInt3872;
                             i += i_34_;
                             i_17_ += i_33_;
                             i_18_ += i_37_;
                         }
                         while (--i_21_ >= 0) {
-                            if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, 1 + (i_23_ >> -1948496852), -1 + (i_17_ >> -550520852), Class14.anIntArray5091, i_24_)) return false;
+                            if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, 1 + (i_23_ >> 12), -1 + (i_17_ >> 12), Class14.anIntArray5091, i_24_)) return false;
                             i_24_ += Class306.anInt3872;
                             i_23_ += i_32_;
                             i_18_ += i_37_;
@@ -165,14 +165,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                     i_16_ -= i_24_;
                     i_24_ *= Class306.anInt3872;
                     while (--i_16_ >= 0) {
-                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_17_ >> 1477560204) + 1, -1 + (i >> -1767810580), Class14.anIntArray5091, i_24_)) return false;
+                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_17_ >> 12) + 1, -1 + (i >> 12), Class14.anIntArray5091, i_24_)) return false;
                         i_18_ += i_37_;
                         i_17_ += i_33_;
                         i_24_ += Class306.anInt3872;
                         i += i_34_;
                     }
                     while (--i_21_ >= 0) {
-                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_17_ >> 959027948) - -1, (i_23_ >> 1256482412) - 1, Class14.anIntArray5091, i_24_)) return false;
+                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_17_ >> 12) - -1, (i_23_ >> 12) - 1, Class14.anIntArray5091, i_24_)) return false;
                         i_18_ += i_37_;
                         i_17_ += i_33_;
                         i_24_ += Class306.anInt3872;
@@ -197,14 +197,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                     i_21_ -= i_24_;
                     i_24_ *= Class306.anInt3872;
                     while (--i_21_ >= 0) {
-                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_23_ >> -970412564) - -1, (i >> 1449150252) - 1, Class14.anIntArray5091, i_24_)) return false;
+                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_23_ >> 12) - -1, (i >> 12) - 1, Class14.anIntArray5091, i_24_)) return false;
                         i_18_ += i_37_;
                         i_24_ += Class306.anInt3872;
                         i_23_ += i_33_;
                         i += i_34_;
                     }
                     while (--i_16_ >= 0) {
-                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_17_ >> 1063677324) - -1, (i >> 1961462444) + -1, Class14.anIntArray5091, i_24_)) return false;
+                        if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i_17_ >> 12) - -1, (i >> 12) + -1, Class14.anIntArray5091, i_24_)) return false;
                         i += i_34_;
                         i_17_ += i_32_;
                         i_18_ += i_37_;
@@ -216,14 +216,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                 i_21_ -= i_24_;
                 i_24_ = Class306.anInt3872 * i_24_;
                 while (--i_21_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, 1 + (i >> -1967411956), -1 + (i_23_ >> -194463860), Class14.anIntArray5091, i_24_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, 1 + (i >> 12), -1 + (i_23_ >> 12), Class14.anIntArray5091, i_24_)) return false;
                     i += i_34_;
                     i_24_ += Class306.anInt3872;
                     i_23_ += i_33_;
                     i_18_ += i_37_;
                 }
                 while (--i_16_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i >> -561320052) - -1, -1 + (i_17_ >> -405997108), Class14.anIntArray5091, i_24_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_18_, 0, (i >> 12) - -1, -1 + (i_17_ >> 12), Class14.anIntArray5091, i_24_)) return false;
                     i_18_ += i_37_;
                     i_17_ += i_32_;
                     i_24_ += Class306.anInt3872;
@@ -232,7 +232,7 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                 return true;
             }
             if (Class86.anInt1480 <= i_21_) return true;
-            i_19_ = i_36_ + -(i_17_ * i_36_) + (i_19_ << -864177496);
+            i_19_ = i_36_ + -(i_17_ * i_36_) + (i_19_ << 8);
             if (Class86.anInt1480 < i_24_) i_24_ = Class86.anInt1480;
             if (Class86.anInt1480 < i_16_) i_16_ = Class86.anInt1480;
             if (i_24_ >= i_16_) {
@@ -253,14 +253,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                     i_16_ -= i_21_;
                     i_21_ = Class306.anInt3872 * i_21_;
                     while (--i_16_ >= 0) {
-                        if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i >> -2146024084) - -1, (i_17_ >> 210165868) - 1, Class14.anIntArray5091, i_21_)) return false;
+                        if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i >> 12) - -1, (i_17_ >> 12) - 1, Class14.anIntArray5091, i_21_)) return false;
                         i_17_ += i_33_;
                         i_19_ += i_37_;
                         i_21_ += Class306.anInt3872;
                         i += i_32_;
                     }
                     while (--i_24_ >= 0) {
-                        if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_23_ >> 420219628) - -1, -1 + (i_17_ >> 1451381804), Class14.anIntArray5091, i_21_)) return false;
+                        if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_23_ >> 12) - -1, -1 + (i_17_ >> 12), Class14.anIntArray5091, i_21_)) return false;
                         i_19_ += i_37_;
                         i_21_ += Class306.anInt3872;
                         i_17_ += i_33_;
@@ -272,14 +272,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                 i_16_ -= i_21_;
                 i_21_ = Class306.anInt3872 * i_21_;
                 while (--i_16_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, 1 + (i_17_ >> -882742292), (i >> -753509684) - 1, Class14.anIntArray5091, i_21_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, 1 + (i_17_ >> 12), (i >> 12) - 1, Class14.anIntArray5091, i_21_)) return false;
                     i_21_ += Class306.anInt3872;
                     i_17_ += i_33_;
                     i_19_ += i_37_;
                     i += i_32_;
                 }
                 while (--i_24_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, 1 + (i_17_ >> 2033173292), (i_23_ >> -527595092) - 1, Class14.anIntArray5091, i_21_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, 1 + (i_17_ >> 12), (i_23_ >> 12) - 1, Class14.anIntArray5091, i_21_)) return false;
                     i_17_ += i_33_;
                     i_23_ += i_34_;
                     i_19_ += i_37_;
@@ -304,14 +304,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                 i_24_ -= i_21_;
                 i_21_ = Class306.anInt3872 * i_21_;
                 while (--i_24_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_17_ >> 944667532) - -1, -1 + (i_23_ >> -322023924), Class14.anIntArray5091, i_21_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_17_ >> 12) - -1, -1 + (i_23_ >> 12), Class14.anIntArray5091, i_21_)) return false;
                     i_23_ += i_32_;
                     i_19_ += i_37_;
                     i_21_ += Class306.anInt3872;
                     i_17_ += i_33_;
                 }
                 while (--i_16_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i >> -997966292) - -1, -1 + (i_23_ >> 136238828), Class14.anIntArray5091, i_21_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i >> 12) - -1, -1 + (i_23_ >> 12), Class14.anIntArray5091, i_21_)) return false;
                     i_23_ += i_32_;
                     i += i_34_;
                     i_19_ += i_37_;
@@ -323,14 +323,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
             i_24_ -= i_21_;
             i_21_ = Class306.anInt3872 * i_21_;
             while (--i_24_ >= 0) {
-                if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_23_ >> -268922004) - -1, (i_17_ >> -1524642452) - 1, Class14.anIntArray5091, i_21_)) return false;
+                if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_23_ >> 12) - -1, (i_17_ >> 12) - 1, Class14.anIntArray5091, i_21_)) return false;
                 i_17_ += i_33_;
                 i_23_ += i_32_;
                 i_21_ += Class306.anInt3872;
                 i_19_ += i_37_;
             }
             while (--i_16_ >= 0) {
-                if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_23_ >> -1423791764) - -1, -1 + (i >> 817771468), Class14.anIntArray5091, i_21_)) return false;
+                if (!Class76.method771(i_36_, (byte) -25, i_19_, 0, (i_23_ >> 12) - -1, -1 + (i >> 12), Class14.anIntArray5091, i_21_)) return false;
                 i_19_ += i_37_;
                 i_21_ += Class306.anInt3872;
                 i_23_ += i_32_;
@@ -339,7 +339,7 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
             return true;
         }
         if (i_16_ >= Class86.anInt1480) return true;
-        i_22_ = (i_22_ << -1822508792) - (i_23_ * i_36_ + -i_36_);
+        i_22_ = (i_22_ << 8) - (i_23_ * i_36_ + -i_36_);
         if (Class86.anInt1480 < i_24_) i_24_ = Class86.anInt1480;
         if (Class86.anInt1480 < i_21_) i_21_ = Class86.anInt1480;
         if (i_24_ > i_21_) {
@@ -360,14 +360,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
                 i_21_ -= i_16_;
                 i_16_ *= Class306.anInt3872;
                 while (--i_21_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_23_ >> 1812195852), -1 + (i >> -401207892), Class14.anIntArray5091, i_16_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_23_ >> 12), -1 + (i >> 12), Class14.anIntArray5091, i_16_)) return false;
                     i_22_ += i_37_;
                     i_16_ += Class306.anInt3872;
                     i_23_ += i_32_;
                     i += i_34_;
                 }
                 while (--i_24_ >= 0) {
-                    if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_17_ >> 2047102380), (i >> -1818124404) + -1, Class14.anIntArray5091, i_16_)) return false;
+                    if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_17_ >> 12), (i >> 12) + -1, Class14.anIntArray5091, i_16_)) return false;
                     i_17_ += i_33_;
                     i += i_34_;
                     i_22_ += i_37_;
@@ -379,14 +379,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
             i_21_ -= i_16_;
             i_16_ *= Class306.anInt3872;
             while (--i_21_ >= 0) {
-                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i >> -1733887156), (i_23_ >> -1395190036) + -1, Class14.anIntArray5091, i_16_)) return false;
+                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i >> 12), (i_23_ >> 12) + -1, Class14.anIntArray5091, i_16_)) return false;
                 i_16_ += Class306.anInt3872;
                 i_22_ += i_37_;
                 i += i_34_;
                 i_23_ += i_32_;
             }
             while (--i_24_ >= 0) {
-                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, (i >> 384835916) - -1, -1 + (i_17_ >> 47598284), Class14.anIntArray5091, i_16_)) return false;
+                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, (i >> 12) - -1, -1 + (i_17_ >> 12), Class14.anIntArray5091, i_16_)) return false;
                 i_17_ += i_33_;
                 i_16_ += Class306.anInt3872;
                 i_22_ += i_37_;
@@ -411,14 +411,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
             i_24_ -= i_16_;
             i_16_ = Class306.anInt3872 * i_16_;
             while (--i_24_ >= 0) {
-                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_17_ >> 715667756), -1 + (i_23_ >> -1218053108), Class14.anIntArray5091, i_16_)) return false;
+                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_17_ >> 12), -1 + (i_23_ >> 12), Class14.anIntArray5091, i_16_)) return false;
                 i_17_ += i_34_;
                 i_23_ += i_32_;
                 i_22_ += i_37_;
                 i_16_ += Class306.anInt3872;
             }
             while (--i_21_ >= 0) {
-                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, (i >> -367931892) - -1, -1 + (i_23_ >> 1594676012), Class14.anIntArray5091, i_16_)) return false;
+                if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, (i >> 12) - -1, -1 + (i_23_ >> 12), Class14.anIntArray5091, i_16_)) return false;
                 i_23_ += i_32_;
                 i_22_ += i_37_;
                 i += i_33_;
@@ -430,14 +430,14 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         i_24_ -= i_16_;
         i_16_ *= Class306.anInt3872;
         while (--i_24_ >= 0) {
-            if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_23_ >> -458312212), -1 + (i_17_ >> -887501556), Class14.anIntArray5091, i_16_)) return false;
+            if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, 1 + (i_23_ >> 12), -1 + (i_17_ >> 12), Class14.anIntArray5091, i_16_)) return false;
             i_16_ += Class306.anInt3872;
             i_23_ += i_32_;
             i_22_ += i_37_;
             i_17_ += i_34_;
         }
         while (--i_21_ >= 0) {
-            if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, (i_23_ >> -1149685396) - -1, (i >> 754460364) - 1, Class14.anIntArray5091, i_16_)) return false;
+            if (!Class76.method771(i_36_, (byte) -25, i_22_, 0, (i_23_ >> 12) - -1, (i >> 12) - 1, Class14.anIntArray5091, i_16_)) return false;
             i_16_ += Class306.anInt3872;
             i += i_33_;
             i_22_ += i_37_;

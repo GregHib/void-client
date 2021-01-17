@@ -102,10 +102,10 @@ final class Class107 {
                     }
                     int i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208;
                     int i_8_ = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48) + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128);
-                    Class108.aClass105_1664.method967(((float) class46.anInt709 / 2.0F + (float) i), ((float) class46.anInt789 / 2.0F + (float) i_1_), (float) i_7_, (float) i_8_, i_5_, i_6_ << 2110355138, var_aa, i, i_1_);
+                    Class108.aClass105_1664.method967(((float) class46.anInt709 / 2.0F + (float) i), ((float) class46.anInt789 / 2.0F + (float) i_1_), (float) i_7_, (float) i_8_, i_5_, i_6_ << 2, var_aa, i, i_1_);
                     for (Class348_Sub35 class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1995(i_2_ ^ 0x59b4); class348_sub35 != null; class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1990((byte) 92)) {
                         int i_9_ = class348_sub35.anInt6976;
-                        int i_10_ = (-za_Sub2.anInt9780 + ((0xfffe5b0 & (r_Sub2.aClass252_10488.anIntArray3238[i_9_])) >> -1329227730));
+                        int i_10_ = (-za_Sub2.anInt9780 + ((0xfffe5b0 & (r_Sub2.aClass252_10488.anIntArray3238[i_9_])) >> 14));
                         int i_11_ = (-Class90.anInt1517 + (0x3fff & (r_Sub2.aClass252_10488.anIntArray3238[i_9_])));
                         int i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_;
                         int i_13_ = 2 + (4 * i_11_ - i_3_ / 128);
@@ -122,10 +122,10 @@ final class Class107 {
                         Class318_Sub1.method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, (byte) -113, i_16_, var_ha);
                     }
                     for (Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aClass356_1895.method3484(i_2_ ^ 0x59b0); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
-                        int i_17_ = (int) (0x3L & (class348_sub37.aLong4291) >> 1012614876);
+                        int i_17_ = (int) (0x3L & (class348_sub37.aLong4291) >> 28);
                         if (Class334.anInt4155 == i_17_) {
                             int i_18_ = (-za_Sub2.anInt9780 + (int) ((class348_sub37.aLong4291) & 0x3fffL));
-                            int i_19_ = (-Class90.anInt1517 + (int) ((class348_sub37.aLong4291) >> -1442950322 & 0x3fffL));
+                            int i_19_ = (-Class90.anInt1517 + (int) ((class348_sub37.aLong4291) >> 14 & 0x3fffL));
                             int i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4);
                             int i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4);
                             Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[0]), i, class46, var_aa, i_21_, i_2_ ^ 0x59b2, i_20_);
@@ -195,7 +195,7 @@ final class Class107 {
                             if (class302.anInt3840 == 2) {
                                 int i_36_ = (-(i_4_ / 128) + (class302.anInt3835 / 128));
                                 int i_37_ = (-(i_3_ / 128) + (class302.anInt3832 / 128));
-                                long l = class302.anInt3837 << -660810585;
+                                long l = class302.anInt3837 << 7;
                                 l *= l;
                                 Class287.method2181(l, i_1_, -112, i_37_, i, class46, i_36_, (class302.anInt3831), var_aa);
                             }

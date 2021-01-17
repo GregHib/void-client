@@ -95,13 +95,13 @@ final class Class228 {
             Class75.aFloat1247 += (double) Class75.aFloat1247 / 30.0;
             if (Class75.aFloat1249 < Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249;
             Class348_Sub15.method2811(false);
-            Class75.anInt1255 = (int) Class75.aFloat1247 >> 1963656225;
+            Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
             Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871);
         } else if (Class75.aFloat1247 > Class75.aFloat1249) {
             Class75.aFloat1247 -= (double) Class75.aFloat1247 / 30.0;
             if (Class75.aFloat1249 > Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249;
             Class348_Sub15.method2811(false);
-            Class75.anInt1255 = (int) Class75.aFloat1247 >> -1950894367;
+            Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
             Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, i + 12871);
         }
         anInt2971++;

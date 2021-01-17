@@ -31,8 +31,8 @@ final class Class137 {
                 if ((long) (6 * i_2_ - -6) > aClass78_1938.method787(0)) return null;
                 aClass78_1938.method789(6 * i_2_, (byte) -106);
                 aClass78_1938.method788(0, Class239.aByteArray3144, 6, i + -16713);
-                int i_3_ = ((0xff & Class239.aByteArray3144[2]) + ((0xff00 & Class239.aByteArray3144[1] << -648170616) + (0xff0000 & Class239.aByteArray3144[0] << 1045546992)));
-                int i_4_ = ((0xff & Class239.aByteArray3144[5]) + ((0xff & Class239.aByteArray3144[3]) << -1719237520) - -((Class239.aByteArray3144[4] & 0xff) << 1980544360));
+                int i_3_ = ((0xff & Class239.aByteArray3144[2]) + ((0xff00 & Class239.aByteArray3144[1] << 8) + (0xff0000 & Class239.aByteArray3144[0] << 16)));
+                int i_4_ = ((0xff & Class239.aByteArray3144[5]) + ((0xff & Class239.aByteArray3144[3]) << 16) - -((Class239.aByteArray3144[4] & 0xff) << 8));
                 if (i_3_ < 0 || anInt1939 < i_3_) return null;
                 if (i_4_ <= 0 || (long) i_4_ > aClass78_1933.method787(0) / 520L) return null;
                 byte[] is = new byte[i_3_];
@@ -45,9 +45,9 @@ final class Class137 {
                     int i_7_ = -i_5_ + i_3_;
                     if (i_7_ > 512) i_7_ = 512;
                     aClass78_1933.method788(0, Class239.aByteArray3144, 8 + i_7_, i ^ 0x414f);
-                    int i_8_ = ((0xff00 & Class239.aByteArray3144[0] << 927302184) + (Class239.aByteArray3144[1] & 0xff));
-                    int i_9_ = ((Class239.aByteArray3144[2] << -1931300120 & 0xff00) + (Class239.aByteArray3144[3] & 0xff));
-                    int i_10_ = (((Class239.aByteArray3144[5] & 0xff) << 198622888) + (0xff0000 & Class239.aByteArray3144[4] << 406901168) + (Class239.aByteArray3144[6] & 0xff));
+                    int i_8_ = ((0xff00 & Class239.aByteArray3144[0] << 8) + (Class239.aByteArray3144[1] & 0xff));
+                    int i_9_ = ((Class239.aByteArray3144[2] << 8 & 0xff00) + (Class239.aByteArray3144[3] & 0xff));
+                    int i_10_ = (((Class239.aByteArray3144[5] & 0xff) << 8) + (0xff0000 & Class239.aByteArray3144[4] << 16) + (Class239.aByteArray3144[6] & 0xff));
                     int i_11_ = 0xff & Class239.aByteArray3144[7];
                     if (i_2_ != i_8_ || i_9_ != i_6_ || i_11_ != anInt1932) return null;
                     if (i_10_ < 0 || ((long) i_10_ > aClass78_1933.method787(i + 4) / 520L)) return null;
@@ -72,17 +72,17 @@ final class Class137 {
                     if (aClass78_1938.method787(i + 15096) < (long) (i_13_ * 6 - -6)) return false;
                     aClass78_1938.method789(i_13_ * 6, (byte) 70);
                     aClass78_1938.method788(0, Class239.aByteArray3144, 6, -16717);
-                    i_15_ = ((0xff & Class239.aByteArray3144[5]) + ((0xff & Class239.aByteArray3144[3]) << -1115057712) + ((Class239.aByteArray3144[4] & 0xff) << 58869768));
+                    i_15_ = ((0xff & Class239.aByteArray3144[5]) + ((0xff & Class239.aByteArray3144[3]) << 16) + ((Class239.aByteArray3144[4] & 0xff) << 8));
                     if (i_15_ <= 0 || (aClass78_1933.method787(i ^ ~0x3af7) / 520L < (long) i_15_)) return false;
                 } else {
                     i_15_ = (int) ((519L + aClass78_1933.method787(0)) / 520L);
                     if (i_15_ == 0) i_15_ = 1;
                 }
-                Class239.aByteArray3144[0] = (byte) (i_14_ >> -416234640);
-                Class239.aByteArray3144[4] = (byte) (i_15_ >> -1627219416);
+                Class239.aByteArray3144[0] = (byte) (i_14_ >> 16);
+                Class239.aByteArray3144[4] = (byte) (i_15_ >> 8);
                 Class239.aByteArray3144[2] = (byte) i_14_;
-                Class239.aByteArray3144[1] = (byte) (i_14_ >> -710484280);
-                Class239.aByteArray3144[3] = (byte) (i_15_ >> 1575572496);
+                Class239.aByteArray3144[1] = (byte) (i_14_ >> 8);
+                Class239.aByteArray3144[3] = (byte) (i_15_ >> 16);
                 Class239.aByteArray3144[5] = (byte) i_15_;
                 aClass78_1938.method789(i_13_ * 6, (byte) 111);
                 aClass78_1938.method783(0, 6, true, Class239.aByteArray3144);
@@ -98,9 +98,9 @@ final class Class137 {
                         } catch (java.io.EOFException eofexception) {
                             break;
                         }
-                        int i_19_ = ((0xff & Class239.aByteArray3144[1]) + (0xff00 & (Class239.aByteArray3144[0] << -1890598040)));
-                        i_18_ = ((0xff00 & Class239.aByteArray3144[5] << 1381585320) + (((Class239.aByteArray3144[4] & 0xff) << 1811989488) - -(0xff & Class239.aByteArray3144[6])));
-                        int i_20_ = ((Class239.aByteArray3144[2] << -519862680 & 0xff00) + (Class239.aByteArray3144[3] & 0xff));
+                        int i_19_ = ((0xff & Class239.aByteArray3144[1]) + (0xff00 & (Class239.aByteArray3144[0] << 8)));
+                        i_18_ = ((0xff00 & Class239.aByteArray3144[5] << 8) + (((Class239.aByteArray3144[4] & 0xff) << 16) - -(0xff & Class239.aByteArray3144[6])));
+                        int i_20_ = ((Class239.aByteArray3144[2] << 8 & 0xff00) + (Class239.aByteArray3144[3] & 0xff));
                         int i_21_ = 0xff & Class239.aByteArray3144[7];
                         if (i_19_ != i_13_ || i_20_ != i_17_ || i_21_ != anInt1932) return false;
                         if (i_18_ < 0 || (aClass78_1933.method787(0) / 520L < (long) i_18_)) return false;
@@ -113,13 +113,13 @@ final class Class137 {
                     }
                     if (i_14_ + -i_16_ <= 512) i_18_ = 0;
                     Class239.aByteArray3144[3] = (byte) i_17_;
-                    Class239.aByteArray3144[2] = (byte) (i_17_ >> -912843704);
-                    Class239.aByteArray3144[0] = (byte) (i_13_ >> -932895448);
+                    Class239.aByteArray3144[2] = (byte) (i_17_ >> 8);
+                    Class239.aByteArray3144[0] = (byte) (i_13_ >> 8);
                     Class239.aByteArray3144[1] = (byte) i_13_;
-                    Class239.aByteArray3144[5] = (byte) (i_18_ >> 1550098056);
+                    Class239.aByteArray3144[5] = (byte) (i_18_ >> 8);
                     Class239.aByteArray3144[6] = (byte) i_18_;
                     Class239.aByteArray3144[7] = (byte) anInt1932;
-                    Class239.aByteArray3144[4] = (byte) (i_18_ >> -832016080);
+                    Class239.aByteArray3144[4] = (byte) (i_18_ >> 16);
                     aClass78_1933.method789(520 * i_15_, (byte) -121);
                     aClass78_1933.method783(0, 8, true, Class239.aByteArray3144);
                     int i_22_ = -i_16_ + i_14_;

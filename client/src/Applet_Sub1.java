@@ -234,7 +234,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         Class348_Sub49.aLongArray7206[Class152.anInt2071] = l;
         if (l_2_ != 0L && l_2_ < l) {
             int i_3_ = (int) (l - l_2_);
-            Class239_Sub5.anInt5891 = (32000 + (i_3_ >> -1288403455)) / i_3_;
+            Class239_Sub5.anInt5891 = (32000 + (i_3_ >> 1)) / i_3_;
         }
         Class152.anInt2071 = Class152.anInt2071 - -1 & 0x1f;
         if (Class159.anInt2127++ > 50) {

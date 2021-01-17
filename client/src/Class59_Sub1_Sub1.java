@@ -304,7 +304,7 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
             int i_5_ = i * 2;
             aByteArray8657[i_5_++] = (byte) -1;
             int i_6_ = i_3_ & 0xff;
-            aByteArray8657[i_5_] = (byte) (i_6_ * 3 >> -1531704795);
+            aByteArray8657[i_5_] = (byte) (i_6_ * 3 >> 5);
         }
     }
 

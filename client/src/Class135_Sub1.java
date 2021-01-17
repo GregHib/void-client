@@ -78,7 +78,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
             for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-73)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 61))) {
                 int i_16_ = 16 * i_15_ + i_7_ - (-i_10_ + -13);
                 if (i_4_ + anInt4717 < i_11_ && i_11_ < Class63.anInt1117 + (i_4_ + anInt4717) && i_12_ > -13 + i_16_ && i_16_ - -4 > i_12_ && ((class348_sub42_sub13.anInt9615) > 1 || ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).aBoolean9610))
-                    var_ha.aa(anInt4717 + i_4_, -12 + i_16_, Class63.anInt1117, 16, (255 + -Class348_Sub42_Sub4.anInt9511 << 766164024) | Class264.anInt3374, 1);
+                    var_ha.aa(anInt4717 + i_4_, -12 + i_16_, Class63.anInt1117, 16, (255 + -Class348_Sub42_Sub4.anInt9511 << 24) | Class264.anInt3374, 1);
                 i_15_++;
             }
             if (Class242.aClass348_Sub42_Sub13_3152 != null) {
@@ -87,7 +87,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                 for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aClass107_9621.method1011(-44)); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aClass107_9621.method1003((byte) 71))) {
                     int i_17_ = i_15_ * 16 + (Class373.anInt4534 + i_10_ - -13);
                     if (Class50_Sub3.anInt5252 < i_11_ && (Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806) > i_11_ && -13 + i_17_ < i_12_ && i_17_ - -4 > i_12_ && (class348_sub42_sub12.aBoolean9610))
-                        var_ha.aa(Class50_Sub3.anInt5252, i_17_ - 12, Class348_Sub1_Sub1.anInt8806, 16, (-Class348_Sub42_Sub4.anInt9511 + 255 << -1854364648) | Class264.anInt3374, 1);
+                        var_ha.aa(Class50_Sub3.anInt5252, i_17_ - 12, Class348_Sub1_Sub1.anInt8806, 16, (-Class348_Sub42_Sub4.anInt9511 + 255 << 24) | Class264.anInt3374, 1);
                     i_15_++;
                 }
                 Class84.method826(i_10_, Class50_Sub3.anInt5252, Class348_Sub1_Sub1.anInt8806, Class177.anInt4669, 125, Class373.anInt4534, var_ha);
@@ -97,7 +97,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
             for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 101)) {
                 int i_14_ = (16 * (-1 + (Class73.anInt4776 - i_13_)) + 13 + (i_7_ + i_10_));
                 if (i_11_ > anInt4717 - -i_4_ && anInt4717 + i_4_ - -Class63.anInt1117 > i_11_ && i_12_ > i_14_ - 13 && 4 + i_14_ > i_12_ && (class348_sub42_sub12.aBoolean9610))
-                    var_ha.aa(i_4_ + anInt4717, -12 + i_14_, Class63.anInt1117, 16, (255 + -Class348_Sub42_Sub4.anInt9511 << 1707681656) | Class264.anInt3374, 1);
+                    var_ha.aa(i_4_ + anInt4717, -12 + i_14_, Class63.anInt1117, 16, (255 + -Class348_Sub42_Sub4.anInt9511 << 24) | Class264.anInt3374, 1);
                 i_13_++;
             }
         }

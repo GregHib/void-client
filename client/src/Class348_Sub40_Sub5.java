@@ -29,7 +29,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
     static final int method3060(int i, boolean bool) {
         anInt9128++;
         if (bool != true) aClass351_9130 = null;
-        return 0x7f & i >> -1006227701;
+        return 0x7f & i >> 11;
     }
 
     private final void method3061(boolean bool) {
@@ -66,21 +66,21 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
         if (i_0_ != 255) method3044(-57);
         if (this.aClass191_7032.aBoolean2570) {
             int i_1_ = anInt9117 * Class239_Sub18.anIntArray6035[i] + 2048;
-            int i_2_ = i_1_ >> -1096578100;
+            int i_2_ = i_1_ >> 12;
             int i_3_ = 1 + i_2_;
             int i_4_ = 0;
             while_140_:
             for (/**/; Class348_Sub40_Sub6.anInt9139 > i_4_; i_4_++) {
                 Class348_Sub42_Sub20.anInt9715 = Class215.anInt2835 = Class147.anInt2023 = Class135_Sub1.anInt4715 = 2147483647;
                 int i_5_ = 2048 - -(Class318_Sub6.anIntArray6432[i_4_] * anInt9129);
-                int i_6_ = i_5_ >> -1684390228;
+                int i_6_ = i_5_ >> 12;
                 int i_7_ = i_6_ + 1;
                 for (int i_8_ = i_2_ + -1; i_8_ <= i_3_; i_8_++) {
                     int i_9_ = 0xff & aByteArray9119[0xff & (i_8_ >= anInt9117 ? i_8_ + -anInt9117 : i_8_)];
                     for (int i_10_ = -1 + i_6_; i_7_ >= i_10_; i_10_++) {
                         int i_11_ = 2 * (0xff & aByteArray9119[((anInt9129 > i_10_ ? i_10_ : -anInt9129 + i_10_) + i_9_) & 0xff]);
-                        int i_12_ = (-(i_10_ << -998561588) - (aShortArray9116[i_11_++] - i_5_));
-                        int i_13_ = (-(i_8_ << 1000534348) + (-aShortArray9116[i_11_] + i_1_));
+                        int i_12_ = (-(i_10_ << 12) - (aShortArray9116[i_11_++] - i_5_));
+                        int i_13_ = (-(i_8_ << 12) + (-aShortArray9116[i_11_] + i_1_));
                         int i_14_ = anInt9118;
                         int i_15_;
                         while_136_:
@@ -93,7 +93,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                     do {
                                         do {
                                             if (i_14_ == 1) {
-                                                i_15_ = ((i_13_ * i_13_ + i_12_ * i_12_) >> 1735086860);
+                                                i_15_ = ((i_13_ * i_13_ + i_12_ * i_12_) >> 12);
                                                 break while_136_;
                                             } else if (i_14_ != 3) {
                                                 if (i_14_ != 4) {
@@ -112,7 +112,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                         i_12_ = (int) ((Math.sqrt((float) ((i_12_ < 0) ? -i_12_ : i_12_) / 4096.0F)) * 4096.0);
                                         i_13_ = (int) (4096.0 * (Math.sqrt((float) ((i_13_ < 0) ? -i_13_ : i_13_) / 4096.0F)));
                                         i_15_ = i_13_ + i_12_;
-                                        i_15_ = i_15_ * i_15_ >> 1689737804;
+                                        i_15_ = i_15_ * i_15_ >> 12;
                                         break while_136_;
                                     } while (false);
                                     i_13_ *= i_13_;

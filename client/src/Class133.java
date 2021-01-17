@@ -73,7 +73,7 @@ final class Class133 {
                             int i_7_ = class348_sub49_sub2.readShortAddLittle(-118);
                             if ((i_7_ & 0xc000) == 49152) {
                                 int i_8_ = class348_sub49_sub2.readShortLittle(false);
-                                is[i_6_] = Class273.method2057(i_7_ << -66426544, i_8_);
+                                is[i_6_] = Class273.method2057(i_7_ << 16, i_8_);
                             } else is[i_6_] = i_7_;
                             is_5_[i_6_] = class348_sub49_sub2.readShortLittle(false);
                         }
@@ -170,7 +170,7 @@ final class Class133 {
                         int i_24_ = class348_sub49_sub2.method3364((byte) -121);
                         int i_25_ = class348_sub49_sub2.readUnsignedByteSubtract((byte) 54);
                         int i_26_ = i_25_ & 0x7;
-                        int i_27_ = 0xf & i_25_ >> 946985891;
+                        int i_27_ = 0xf & i_25_ >> 3;
                         if (i_27_ == 15) i_27_ = -1;
                         class318_sub1_sub3_sub3_sub2.method2437(i_26_, i_23_, -1012294866, i_27_, true, i_24_);
                     }
@@ -189,7 +189,7 @@ final class Class133 {
                         int i_29_ = class348_sub49_sub2.method3346(255);
                         int i_30_ = class348_sub49_sub2.readByteSubtract((byte) -125);
                         int i_31_ = i_30_ & 0x7;
-                        int i_32_ = (0x78 & i_30_) >> -1543635709;
+                        int i_32_ = (0x78 & i_30_) >> 3;
                         if (i_32_ == 15) i_32_ = -1;
                         class318_sub1_sub3_sub3_sub2.method2437(i_31_, i_28_, -1012294866, i_32_, false, i_29_);
                     }

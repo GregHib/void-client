@@ -21,11 +21,11 @@ final class Class50_Sub4 extends Class50 {
 
     final void method457(int i, int i_2_, int i_3_) {
         anInt5261++;
-        int i_4_ = i_2_ * anInt5255 >> -1124871060;
+        int i_4_ = i_2_ * anInt5255 >> 12;
         if (i_3_ >= -29) anInt5264 = 119;
-        int i_5_ = i_2_ * anInt5264 >> -152215924;
-        int i_6_ = anInt5259 * i >> 748459148;
-        int i_7_ = anInt5258 * i >> 1457878060;
+        int i_5_ = i_2_ * anInt5264 >> 12;
+        int i_6_ = anInt5259 * i >> 12;
+        int i_7_ = anInt5258 * i >> 12;
         Class339.method2665(i_4_, (byte) 118, this.anInt865, i_6_, i_7_, i_5_);
     }
 

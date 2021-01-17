@@ -112,8 +112,8 @@ final class Class186_Sub1 extends Class186 {
         int i_50_ = 0;
         int i_51_ = Math.min(i_45_, i);
         if (bool != false) anInt5807 = -127;
-        int i_52_ = i_45_ >> -1315657727;
-        int i_53_ = i >> 1701348065;
+        int i_52_ = i_45_ >> 1;
+        int i_53_ = i >> 1;
         byte[] is_54_ = is;
         byte[] is_55_ = new byte[i_52_ * (i_53_ * i_49_)];
         for (; ; ) {
@@ -134,7 +134,7 @@ final class Class186_Sub1 extends Class186 {
                         i_60_ += i_49_;
                         i_61_ += i_49_;
                         i_64_ += is_54_[i_61_];
-                        is_55_[i_59_] = (byte) (i_64_ >> -175981054);
+                        is_55_[i_59_] = (byte) (i_64_ >> 2);
                         i_61_ += i_49_;
                         i_59_ += i_49_;
                     }

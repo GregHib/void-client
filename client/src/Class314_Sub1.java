@@ -302,7 +302,7 @@ final class Class314_Sub1 extends Class314 {
                 }
                 return null;
             }
-            is[is.length - 2] = (byte) (aClass291_6342.anIntArray3722[i] >>> 1807905608);
+            is[is.length - 2] = (byte) (aClass291_6342.anIntArray3722[i] >>> 8);
             is[is.length - 1] = (byte) aClass291_6342.anIntArray3722[i];
             if (aClass137_6365 != null) {
                 aClass112_6354.method1049(is, aClass137_6365, (byte) 10, i);
@@ -327,7 +327,7 @@ final class Class314_Sub1 extends Class314 {
                     if (is_17_[i_18_] != is_16_[i_18_]) throw new RuntimeException();
                 }
             }
-            int i_19_ = ((0xff00 & is[-2 + is.length] << -1875567128) + (0xff & is[is.length + -1]));
+            int i_19_ = ((0xff00 & is[-2 + is.length] << 8) + (0xff & is[is.length + -1]));
             if ((aClass291_6342.anIntArray3722[i] & 0xffff) != i_19_) throw new RuntimeException();
             if (aByteArray6351[i] != 1) {
                 anInt6361++;

@@ -34,10 +34,10 @@ class Class127 implements Interface1 {
     static final int method1115(int i, int i_3_, byte i_4_) {
         anInt4652++;
         int i_5_ = i - -(57 * i_3_);
-        i_5_ ^= i_5_ << -2091775763;
+        i_5_ ^= i_5_ << 13;
         int i_6_ = -76 / ((i_4_ - 22) / 60);
         int i_7_ = 1376312589 + i_5_ * (15731 * i_5_ * i_5_ + 789221) & 0x7fffffff;
-        return (i_7_ & 0x7fa112f) >> -2006955341;
+        return (i_7_ & 0x7fa112f) >> 19;
     }
 
     static final void method1116(int i, int i_8_, int i_9_, int i_10_, byte i_11_) {

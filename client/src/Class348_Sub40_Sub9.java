@@ -62,10 +62,10 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
             for (int i_9_ = 0; Class348_Sub40_Sub6.anInt9139 > i_9_; i_9_++) {
                 int i_10_ = anInt9167 * (-is_6_[i_9_] + is_8_[i_9_]);
                 int i_11_ = (anInt9167 * (-is_7_[Class239_Sub22.anInt6076 & -1 + i_9_] + is_7_[Class239_Sub22.anInt6076 & i_9_ - -1]));
-                int i_12_ = i_11_ >> 2123489804;
-                int i_13_ = i_10_ >> 1743510028;
-                int i_14_ = i_12_ * i_12_ >> 179681036;
-                int i_15_ = i_13_ * i_13_ >> 995519564;
+                int i_12_ = i_11_ >> 12;
+                int i_13_ = i_10_ >> 12;
+                int i_14_ = i_12_ * i_12_ >> 12;
+                int i_15_ = i_13_ * i_13_ >> 12;
                 int i_16_ = (int) (4096.0 * Math.sqrt((float) (i_15_ + (i_14_ - -4096)) / 4096.0F));
                 int i_17_ = i_16_ != 0 ? 16777216 / i_16_ : 0;
                 is[i_9_] = 4096 - i_17_;

@@ -70,11 +70,11 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
 
     static final void method3175(byte i) {
         if (!Class348_Sub42_Sub8.method3196(Class240.anInt4674, -114) && !Class340.method2672(Class240.anInt4674, -103)) {
-            int i_12_ = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10320[0]) >> 123282371);
-            int i_13_ = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10317[0]) >> 1031515907);
-            if (i_12_ < 0 || Class367_Sub4.anInt7319 >> -1390409597 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.anInt9109 >> 269827523 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.anInt7319 >> -887543164, (Class348_Sub40_Sub3.anInt9109 >> -2041704060), (byte) -13);
+            int i_12_ = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10320[0]) >> 3);
+            int i_13_ = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10317[0]) >> 3);
+            if (i_12_ < 0 || Class367_Sub4.anInt7319 >> 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.anInt9109 >> 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.anInt7319 >> 4, (Class348_Sub40_Sub3.anInt9109 >> 4), (byte) -13);
             else Class346_Sub1.method2703(5000, i_12_, i_13_, (byte) -13);
-        } else Class346_Sub1.method2703(5000, Class286_Sub4.anInt6246 >> 1946107980, Class59_Sub2_Sub2.anInt8685 >> 313659148, (byte) -13);
+        } else Class346_Sub1.method2703(5000, Class286_Sub4.anInt6246 >> 12, Class59_Sub2_Sub2.anInt8685 >> 12, (byte) -13);
         anInt9509++;
         Class348_Sub40_Sub32.method3134(-1);
         Class348_Sub23_Sub4.method2988(true);

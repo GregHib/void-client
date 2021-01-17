@@ -244,7 +244,7 @@ final class Class213 {
             if (class17 != null) i_27_ |= class17.method263(i_24_, 105, i_22_, true);
             Class64 class64;
             synchronized (this.aClass255_2761.aClass60_3287) {
-                class64 = (Class64) (this.aClass255_2761.aClass60_3287.method583(var_ha.anInt4567 << -786392163 | this.anInt2769, 69));
+                class64 = (Class64) (this.aClass255_2761.aClass60_3287.method583(var_ha.anInt4567 << 29 | this.anInt2769, 69));
             }
             if (class64 == null || var_ha.method3667(class64.ua(), i_27_) != 0) {
                 if (class64 != null) i_27_ = var_ha.method3679(i_27_, class64.ua());
@@ -278,7 +278,7 @@ final class Class213 {
                 }
                 class64.s(i_27_);
                 synchronized (this.aClass255_2761.aClass60_3287) {
-                    this.aClass255_2761.aClass60_3287.method582(class64, var_ha.anInt4567 << -1631386755 | this.anInt2769, (byte) -111);
+                    this.aClass255_2761.aClass60_3287.method582(class64, var_ha.anInt4567 << 29 | this.anInt2769, (byte) -111);
                 }
             }
             if (class17 != null) class64 = class17.method269(116, class64, i_24_, i_20_, i_27_, i_22_);
@@ -359,9 +359,9 @@ final class Class213 {
             }
             int i_48_;
             if (!bool) {
-                if (i_41_ == 2) i_48_ = ((int) (1.04 * (double) this.anInt2825) << -1862212478);
-                else i_48_ = this.anInt2825 << -1012953438;
-            } else i_48_ = ((int) (1.5 * (double) this.anInt2825) << -1409493118);
+                if (i_41_ == 2) i_48_ = ((int) (1.04 * (double) this.anInt2825) << 2);
+                else i_48_ = this.anInt2825 << 2;
+            } else i_48_ = ((int) (1.5 * (double) this.anInt2825) << 2);
             var_ha_38_.DA(16, 16, 512, 512);
             Class101 class101 = var_ha_38_.method3654();
             class101.method910();
@@ -369,10 +369,10 @@ final class Class213 {
             var_ha_38_.xa(1.0F);
             var_ha_38_.ZA(16777215, 1.0F, 1.0F, -50.0F, -10.0F, -50.0F);
             Class101 class101_49_ = var_ha_38_.method3705();
-            class101_49_.method902(-this.anInt2810 << -1511086397);
-            class101_49_.method896(this.anInt2781 << -276342205);
-            class101_49_.method891(this.anInt2779 << 680634690, ((i_48_ * (Class70.anIntArray1207[this.anInt2787 << -2046860573]) >> -1439442898) - class64.fa() / 2 + (this.anInt2826 << 203456290)), ((i_48_ * (Class70.anIntArray1204[this.anInt2787 << 935998435]) >> 1535648686) - -(this.anInt2826 << 1979023778)));
-            class101_49_.method900(this.anInt2787 << 324700291);
+            class101_49_.method902(-this.anInt2810 << 3);
+            class101_49_.method896(this.anInt2781 << 3);
+            class101_49_.method891(this.anInt2779 << 2, ((i_48_ * (Class70.anIntArray1207[this.anInt2787 << 3]) >> 14) - class64.fa() / 2 + (this.anInt2826 << 2)), ((i_48_ * (Class70.anIntArray1204[this.anInt2787 << 3]) >> 14) - -(this.anInt2826 << 2)));
+            class101_49_.method900(this.anInt2787 << 3);
             int i_50_ = var_ha_38_.i();
             int i_51_ = var_ha_38_.XA();
             var_ha_38_.f(50, 2147483647);
@@ -506,13 +506,13 @@ final class Class213 {
                                                         else if (i_57_ != 121) {
                                                             if (i_57_ != 122) {
                                                                 if (i_57_ == 125) {
-                                                                    anInt2807 = class348_sub49.method3388(-99) << 448961666;
-                                                                    anInt2797 = class348_sub49.method3388(i + -99) << 1336603138;
-                                                                    anInt2808 = class348_sub49.method3388(-111) << 1630838114;
+                                                                    anInt2807 = class348_sub49.method3388(-99) << 2;
+                                                                    anInt2797 = class348_sub49.method3388(i + -99) << 2;
+                                                                    anInt2808 = class348_sub49.method3388(-111) << 2;
                                                                 } else if (i_57_ == 126) {
-                                                                    anInt2803 = class348_sub49.method3388(-121) << -39131134;
-                                                                    anInt2753 = class348_sub49.method3388(-92) << -179898174;
-                                                                    anInt2823 = class348_sub49.method3388(-93) << -1917956926;
+                                                                    anInt2803 = class348_sub49.method3388(-121) << 2;
+                                                                    anInt2753 = class348_sub49.method3388(-92) << 2;
+                                                                    anInt2823 = class348_sub49.method3388(-93) << 2;
                                                                 } else if (i_57_ == 127) {
                                                                     this.anInt2752 = class348_sub49.readUnsignedByte(255);
                                                                     this.anInt2759 = class348_sub49.readShort(842397944);

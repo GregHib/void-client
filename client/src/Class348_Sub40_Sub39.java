@@ -111,9 +111,9 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
                 int[] is_20_ = is_17_[2];
                 for (int i_21_ = 0; i_21_ < Class348_Sub40_Sub6.anInt9139; i_21_++) {
                     int i_22_ = is_16_[i_21_];
-                    is_20_[i_21_] = Class139.method1166(i_22_, 255) << -1027400764;
-                    is_19_[i_21_] = Class139.method1166(i_22_ >> 1794601060, 4080);
-                    is_18_[i_21_] = Class139.method1166(4080, i_22_ >> 2055996268);
+                    is_20_[i_21_] = Class139.method1166(i_22_, 255) << 4;
+                    is_19_[i_21_] = Class139.method1166(i_22_ >> 4, 4080);
+                    is_18_[i_21_] = Class139.method1166(4080, i_22_ >> 12);
                 }
             }
         }

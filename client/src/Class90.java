@@ -28,8 +28,8 @@ final class Class90 {
         Class348_Sub40_Sub22.method3111(125, i_0_);
         Class299.aClass348_Sub49_Sub2_3813.method3417(-122);
         for (int i_3_ = 0; i_3_ < 4; i_3_++) {
-            for (int i_4_ = 0; (Class367_Sub4.anInt7319 >> 615048547 > i_4_); i_4_++) {
-                for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub3.anInt9109 >> -410724637); i_5_++) {
+            for (int i_4_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_4_); i_4_++) {
+                for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub3.anInt9109 >> 3); i_5_++) {
                     int i_6_ = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 1);
                     if (i_6_ != 1) Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_] = -1;
                     else Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_] = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 26);
@@ -58,13 +58,13 @@ final class Class90 {
         Class347.aByteArrayArray4281 = new byte[i_7_][];
         i_7_ = 0;
         for (int i_10_ = 0; i_10_ < 4; i_10_++) {
-            for (int i_11_ = 0; (Class367_Sub4.anInt7319 >> -1281045661 > i_11_); i_11_++) {
-                for (int i_12_ = 0; i_12_ < Class348_Sub40_Sub3.anInt9109 >> -192444093; i_12_++) {
+            for (int i_11_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_11_); i_11_++) {
+                for (int i_12_ = 0; i_12_ < Class348_Sub40_Sub3.anInt9109 >> 3; i_12_++) {
                     int i_13_ = (Class62.anIntArrayArrayArray1116[i_10_][i_11_][i_12_]);
                     if (i_13_ != -1) {
-                        int i_14_ = i_13_ >> -1268148658 & 0x3ff;
-                        int i_15_ = (i_13_ & 0x3ff9) >> -1151168317;
-                        int i_16_ = i_15_ / 8 + (i_14_ / 8 << -498087576);
+                        int i_14_ = i_13_ >> 14 & 0x3ff;
+                        int i_15_ = (i_13_ & 0x3ff9) >> 3;
+                        int i_16_ = i_15_ / 8 + (i_14_ / 8 << 8);
                         for (int i_17_ = 0; i_7_ > i_17_; i_17_++) {
                             if (i_16_ == Class348_Sub23_Sub3.anIntArray9042[i_17_]) {
                                 i_16_ = -1;
@@ -73,7 +73,7 @@ final class Class90 {
                         }
                         if (i_16_ != -1) {
                             Class348_Sub23_Sub3.anIntArray9042[i_7_] = i_16_;
-                            int i_18_ = 0xff & i_16_ >> 1924313768;
+                            int i_18_ = 0xff & i_16_ >> 8;
                             int i_19_ = 0xff & i_16_;
                             aa_Sub1.anIntArray5192[i_7_] = (Class367_Sub10.aClass45_7382.method417("m" + i_18_ + "_" + i_19_, Class348_Sub21.method2955(i, 99)));
                             Applet_Sub1.anIntArray38[i_7_] = Class367_Sub10.aClass45_7382.method417("l" + i_18_ + "_" + i_19_, 0);

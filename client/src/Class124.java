@@ -142,7 +142,7 @@ final class Class124 {
     static final int method1097(byte i, int i_20_, Random random) {
         anInt1861++;
         if (i_20_ <= 0) throw new IllegalArgumentException();
-        if (Class192.method1436(-19, i_20_)) return (int) ((long) i_20_ * (0xffffffffL & (long) random.nextInt()) >> -945125600);
+        if (Class192.method1436(-19, i_20_)) return (int) ((long) i_20_ * (0xffffffffL & (long) random.nextInt()) >> 32);
         int i_21_ = -2147483648 + -(int) (4294967296L % (long) i_20_);
         if (i < 78) aClass45_1848 = null;
         int i_22_;
@@ -333,7 +333,7 @@ final class Class124 {
                     bool = true;
                 } else this.aByteArray1843[i_88_] = (byte) 0;
                 if ((i_89_ & 0x2) == 2) {
-                    this.aByteArray1820[i_88_] = (byte) (i_89_ >> -231090654);
+                    this.aByteArray1820[i_88_] = (byte) (i_89_ >> 2);
                     this.aShortArray1822[i_88_] = this.aShortArray1862[i_88_];
                     this.aShortArray1862[i_88_] = (short) 127;
                     if (this.aShortArray1822[i_88_] != -1) bool_52_ = true;
@@ -793,8 +793,8 @@ final class Class124 {
             int i_202_ = Class70.anIntArray1207[i_200_];
             int i_203_ = Class70.anIntArray1204[i_200_];
             for (int i_204_ = 0; i_204_ < this.anInt1836; i_204_++) {
-                int i_205_ = ((i_203_ * this.anIntArray1841[i_204_] + this.anIntArray1847[i_204_] * i_202_) >> 53081646);
-                this.anIntArray1847[i_204_] = ((-(this.anIntArray1841[i_204_] * i_202_) + this.anIntArray1847[i_204_] * i_203_) >> 788620462);
+                int i_205_ = ((i_203_ * this.anIntArray1841[i_204_] + this.anIntArray1847[i_204_] * i_202_) >> 14);
+                this.anIntArray1847[i_204_] = ((-(this.anIntArray1841[i_204_] * i_202_) + this.anIntArray1847[i_204_] * i_203_) >> 14);
                 this.anIntArray1841[i_204_] = i_205_;
             }
         }
@@ -804,8 +804,8 @@ final class Class124 {
             int i_206_ = Class70.anIntArray1207[i_201_];
             int i_207_ = Class70.anIntArray1204[i_201_];
             for (int i_208_ = 0; i_208_ < this.anInt1836; i_208_++) {
-                int i_209_ = ((this.anIntArray1847[i_208_] * i_207_ + -(i_206_ * this.anIntArray1852[i_208_])) >> -723657074);
-                this.anIntArray1852[i_208_] = ((this.anIntArray1847[i_208_] * i_206_ - -(i_207_ * this.anIntArray1852[i_208_])) >> 1866464078);
+                int i_209_ = ((this.anIntArray1847[i_208_] * i_207_ + -(i_206_ * this.anIntArray1852[i_208_])) >> 14);
+                this.anIntArray1852[i_208_] = ((this.anIntArray1847[i_208_] * i_206_ - -(i_207_ * this.anIntArray1852[i_208_])) >> 14);
                 this.anIntArray1847[i_208_] = i_209_;
             }
         }
@@ -813,8 +813,8 @@ final class Class124 {
             int i_210_ = Class70.anIntArray1207[i_199_];
             int i_211_ = Class70.anIntArray1204[i_199_];
             for (int i_212_ = 0; this.anInt1836 > i_212_; i_212_++) {
-                int i_213_ = ((i_211_ * this.anIntArray1841[i_212_] + this.anIntArray1852[i_212_] * i_210_) >> -1869821682);
-                this.anIntArray1852[i_212_] = ((i_211_ * this.anIntArray1852[i_212_] + -(this.anIntArray1841[i_212_] * i_210_)) >> -1993052722);
+                int i_213_ = ((i_211_ * this.anIntArray1841[i_212_] + this.anIntArray1852[i_212_] * i_210_) >> 14);
+                this.anIntArray1852[i_212_] = ((i_211_ * this.anIntArray1852[i_212_] + -(this.anIntArray1841[i_212_] * i_210_)) >> 14);
                 this.anIntArray1841[i_212_] = i_213_;
             }
         }

@@ -120,7 +120,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             i_16_++;
             if (i_18_ >= 0) {
                 i_17_--;
-                i_18_ -= i_17_ << -13726015;
+                i_18_ -= i_17_ << 1;
                 int[] is = Class17.anIntArrayArray255[i - -i_17_];
                 int[] is_20_ = Class17.anIntArrayArray255[i + -i_17_];
                 int i_21_ = i_16_ + i_12_;

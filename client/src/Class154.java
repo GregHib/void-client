@@ -39,7 +39,7 @@ final class Class154 {
                         l ^= ~0xffffffffL;
                     } else {
                         is_10_[5] = Class273.method2057((class17_0_.anInt249), 1073741824);
-                        l ^= (long) is_10_[5] << 1203402208;
+                        l ^= (long) is_10_[5] << 32;
                     }
                 }
                 if (class17_0_.anInt261 >= 0) {
@@ -67,7 +67,7 @@ final class Class154 {
                         int i_19_ = class182s[i_17_].anInt2451;
                         int i_20_ = class182s[i_17_].anInt2455;
                         int i_21_ = class17_18_.anIntArray237[i_19_];
-                        Class95.aClass348_Sub42_Sub17Array1543[i_17_] = class87.method839(i_21_ >>> -592672144, 3);
+                        Class95.aClass348_Sub42_Sub17Array1543[i_17_] = class87.method839(i_21_ >>> 16, 3);
                         i_21_ &= 0xffff;
                         Class184.anIntArray2471[i_17_] = i_21_;
                         if (Class95.aClass348_Sub42_Sub17Array1543[i_17_] != null) {
@@ -79,7 +79,7 @@ final class Class154 {
                             Class100.anIntArray1583[i_17_] = class17_18_.anIntArray267[i_19_];
                             Class50_Sub3.anIntArray5241[i_17_] = class182s[i_17_].anInt2456;
                             int i_22_ = class17_18_.anIntArray237[i_20_];
-                            Class295.aClass348_Sub42_Sub17Array3753[i_17_] = class87.method839(i_22_ >>> -117955952, 3);
+                            Class295.aClass348_Sub42_Sub17Array3753[i_17_] = class87.method839(i_22_ >>> 16, 3);
                             i_22_ &= 0xffff;
                             Class227.anIntArray2967[i_17_] = i_22_;
                             if (Class295.aClass348_Sub42_Sub17Array3753[i_17_] != null) {
@@ -109,7 +109,7 @@ final class Class154 {
             if (bool_15_) {
                 if (class17_0_ != null) {
                     i_23_ = class17_0_.anIntArray237[i_7_];
-                    int i_32_ = i_23_ >>> -648185776;
+                    int i_32_ = i_23_ >>> 16;
                     class348_sub42_sub17 = class87.method839(i_32_, 3);
                     i_23_ &= 0xffff;
                     if (class348_sub42_sub17 != null) {
@@ -120,7 +120,7 @@ final class Class154 {
                     if ((class17_0_.aBoolean241 || Class28.aBoolean5002) && i_1_ != -1 && i_1_ < class17_0_.anIntArray237.length) {
                         i_24_ = class17_0_.anIntArray237[i_1_];
                         i_25_ = class17_0_.anIntArray267[i_7_];
-                        int i_33_ = i_24_ >>> -1324422000;
+                        int i_33_ = i_24_ >>> 16;
                         class348_sub42_sub17_26_ = (i_32_ == i_33_ ? class348_sub42_sub17 : class87.method839(i_33_, 3));
                         i_24_ &= 0xffff;
                         if (class348_sub42_sub17_26_ != null) {
@@ -133,7 +133,7 @@ final class Class154 {
                 i_9_ |= 0x20;
                 if (class17 != null) {
                     i_27_ = class17.anIntArray237[i_6_];
-                    int i_34_ = i_27_ >>> 32772016;
+                    int i_34_ = i_27_ >>> 16;
                     i_27_ &= 0xffff;
                     class348_sub42_sub17_30_ = class87.method839(i_34_, 3);
                     if (class348_sub42_sub17_30_ != null) {
@@ -144,7 +144,7 @@ final class Class154 {
                     if ((class17.aBoolean241 || Class28.aBoolean5002) && i_3_ != -1 && i_3_ < class17.anIntArray237.length) {
                         i_28_ = class17.anIntArray237[i_3_];
                         i_29_ = class17.anIntArray267[i_6_];
-                        int i_35_ = i_28_ >>> -1633872496;
+                        int i_35_ = i_28_ >>> 16;
                         i_28_ &= 0xffff;
                         class348_sub42_sub17_31_ = (i_35_ == i_34_ ? class348_sub42_sub17_30_ : class87.method839(i_35_, 3));
                         if (class348_sub42_sub17_31_ != null) {
@@ -205,11 +205,11 @@ final class Class154 {
                                 int i_47_ = 0;
                                 int i_48_ = 0;
                                 if ((class225.anIntArrayArray2939[i_42_]) != null) {
-                                    i_47_ = ((class225.anIntArrayArray2939[i_42_][4]) << -1287260509);
+                                    i_47_ = ((class225.anIntArrayArray2939[i_42_][4]) << 3);
                                     i_44_ = (class225.anIntArrayArray2939[i_42_][1]);
-                                    i_48_ = ((class225.anIntArrayArray2939[i_42_][5]) << -1954446141);
+                                    i_48_ = ((class225.anIntArrayArray2939[i_42_][5]) << 3);
                                     i_43_ = (class225.anIntArrayArray2939[i_42_][0]);
-                                    i_46_ = ((class225.anIntArrayArray2939[i_42_][3]) << -810830909);
+                                    i_46_ = ((class225.anIntArrayArray2939[i_42_][3]) << 3);
                                     i_45_ = (class225.anIntArrayArray2939[i_42_][2]);
                                 }
                                 if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) class124s[i_42_].method1107(6875, i_47_, i_48_, i_46_);
@@ -340,7 +340,7 @@ final class Class154 {
                 i_70_ |= 0x20;
                 Object object_76_ = null;
                 i_74_ = class17.anIntArray237[i_66_];
-                int i_77_ = i_74_ >>> 1903356656;
+                int i_77_ = i_74_ >>> 16;
                 i_74_ &= 0xffff;
                 Class348_Sub42_Sub17 class348_sub42_sub17 = class87.method839(i_77_, 3);
                 if (class348_sub42_sub17 != null) {
@@ -351,7 +351,7 @@ final class Class154 {
                 }
                 if ((class17.aBoolean241 || Class28.aBoolean5002) && i_67_ != -1 && i_67_ < class17.anIntArray237.length) {
                     i_75_ = class17.anIntArray237[i_67_];
-                    int i_78_ = i_75_ >>> 1156303088;
+                    int i_78_ = i_75_ >>> 16;
                     Class348_Sub42_Sub17 class348_sub42_sub17_79_ = (i_78_ != i_77_ ? class87.method839(i_78_, i ^ ~0x17f6eb54) : class348_sub42_sub17);
                     i_75_ &= 0xffff;
                     if (class348_sub42_sub17_79_ != null) {
@@ -440,7 +440,7 @@ final class Class154 {
                 Object object_104_ = null;
                 i_98_ |= 0x20;
                 i_102_ = class17.anIntArray237[i_97_];
-                int i_105_ = i_102_ >>> -1261807632;
+                int i_105_ = i_102_ >>> 16;
                 Class348_Sub42_Sub17 class348_sub42_sub17 = class87.method839(i_105_, 3);
                 i_102_ &= 0xffff;
                 if (class348_sub42_sub17 != null) {
@@ -451,10 +451,10 @@ final class Class154 {
                 }
                 if ((class17.aBoolean241 || Class28.aBoolean5002) && i != -1 && i < class17.anIntArray237.length) {
                     i_103_ = class17.anIntArray237[i];
-                    int i_106_ = i_103_ >>> -173330576;
+                    int i_106_ = i_103_ >>> 16;
                     i_103_ &= 0xffff;
                     Class348_Sub42_Sub17 class348_sub42_sub17_107_;
-                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = class87.method839(i_103_ >>> -1076087696, 3);
+                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = class87.method839(i_103_ >>> 16, 3);
                     else class348_sub42_sub17_107_ = class348_sub42_sub17;
                     if (class348_sub42_sub17_107_ != null) {
                         bool_99_ |= class348_sub42_sub17_107_.method3272(i_103_, 0);
@@ -467,7 +467,7 @@ final class Class154 {
                 if (bool_100_) i_98_ |= 0x200;
                 if (bool_101_) i_98_ |= 0x400;
             }
-            long l = (long) i_95_ | ((long) (i_93_ << 1803883248) | (long) i_92_ << 127342816);
+            long l = (long) i_95_ | ((long) (i_93_ << 16) | (long) i_92_ << 32);
             Class64 class64;
             synchronized (Class130.aClass60_1894) {
                 class64 = (Class64) Class130.aClass60_1894.method583(l, i_94_ ^ ~0x3bd4);
@@ -525,18 +525,18 @@ final class Class154 {
         anInt2096++;
         aLong2102 = -1L;
         long[] ls = Class348_Sub40_Sub21.aLongArray9283;
-        aLong2102 = ls[(int) (((long) (anInt2103 >> -402058072) ^ aLong2102) & 0xffL)] ^ aLong2102 >>> -2055468152;
+        aLong2102 = ls[(int) (((long) (anInt2103 >> 8) ^ aLong2102) & 0xffL)] ^ aLong2102 >>> 8;
         if (i > -6) aLong2094 = 43L;
-        aLong2102 = aLong2102 >>> -491450104 ^ ls[(int) (0xffL & ((long) anInt2103 ^ aLong2102))];
+        aLong2102 = aLong2102 >>> 8 ^ ls[(int) (0xffL & ((long) anInt2103 ^ aLong2102))];
         for (int i_115_ = 0; i_115_ < 12; i_115_++) {
-            aLong2102 = (aLong2102 >>> 280710280 ^ ls[(int) (((long) (anIntArray2092[i_115_] >> -471329768) ^ aLong2102) & 0xffL)]);
-            aLong2102 = ls[(int) (0xffL & ((long) (anIntArray2092[i_115_] >> -227638928) ^ aLong2102))] ^ aLong2102 >>> -169217272;
-            aLong2102 = (aLong2102 >>> -805153720 ^ ls[(int) (0xffL & (aLong2102 ^ (long) (anIntArray2092[i_115_] >> 916941480)))]);
-            aLong2102 = (ls[(int) (0xffL & (aLong2102 ^ (long) anIntArray2092[i_115_]))] ^ aLong2102 >>> -891415416);
+            aLong2102 = (aLong2102 >>> 8 ^ ls[(int) (((long) (anIntArray2092[i_115_] >> 24) ^ aLong2102) & 0xffL)]);
+            aLong2102 = ls[(int) (0xffL & ((long) (anIntArray2092[i_115_] >> 16) ^ aLong2102))] ^ aLong2102 >>> 8;
+            aLong2102 = (aLong2102 >>> 8 ^ ls[(int) (0xffL & (aLong2102 ^ (long) (anIntArray2092[i_115_] >> 8)))]);
+            aLong2102 = (ls[(int) (0xffL & (aLong2102 ^ (long) anIntArray2092[i_115_]))] ^ aLong2102 >>> 8);
         }
         for (int i_116_ = 0; i_116_ < 5; i_116_++)
-            aLong2102 = (ls[(int) (0xffL & (aLong2102 ^ (long) (this.anIntArray2095[i_116_])))] ^ aLong2102 >>> 1598624328);
-        aLong2102 = (aLong2102 >>> -354100856 ^ ls[(int) (0xffL & (aLong2102 ^ (long) (!this.aBoolean2100 ? 0 : 1)))]);
+            aLong2102 = (ls[(int) (0xffL & (aLong2102 ^ (long) (this.anIntArray2095[i_116_])))] ^ aLong2102 >>> 8);
+        aLong2102 = (aLong2102 >>> 8 ^ ls[(int) (0xffL & (aLong2102 ^ (long) (!this.aBoolean2100 ? 0 : 1)))]);
     }
 
     public static void method1235(byte i) {

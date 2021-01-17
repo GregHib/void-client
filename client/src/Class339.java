@@ -57,15 +57,15 @@ final class Class339 implements Runnable {
             Class5_Sub2.method196(true, i_4_, i_1_, i, i_2_);
             return;
         }
-        int i_7_ = (i_6_ << 1475002892) / i_5_;
-        int i_8_ = -(i_7_ * i >> 1276386988) + i_2_;
+        int i_7_ = (i_6_ << 12) / i_5_;
+        int i_8_ = -(i_7_ * i >> 12) + i_2_;
         int i_9_;
         int i_10_;
         if (i < Class369.anInt4960) {
-            i_9_ = (i_7_ * Class369.anInt4960 >> -28340756) + i_8_;
+            i_9_ = (i_7_ * Class369.anInt4960 >> 12) + i_8_;
             i_10_ = Class369.anInt4960;
         } else if (i > Class113.anInt1745) {
-            i_9_ = i_8_ - -(Class113.anInt1745 * i_7_ >> -1080981940);
+            i_9_ = i_8_ - -(Class113.anInt1745 * i_7_ >> 12);
             i_10_ = Class113.anInt1745;
         } else {
             i_10_ = i;
@@ -80,26 +80,26 @@ final class Class339 implements Runnable {
                 i_12_ = i_3_;
             } else {
                 i_11_ = Class113.anInt1745;
-                i_12_ = i_8_ + (Class113.anInt1745 * i_7_ >> -1213141044);
+                i_12_ = i_8_ + (Class113.anInt1745 * i_7_ >> 12);
             }
         } else {
             i_11_ = Class369.anInt4960;
-            i_12_ = (i_7_ * Class369.anInt4960 >> 1998070124) + i_8_;
+            i_12_ = (i_7_ * Class369.anInt4960 >> 12) + i_8_;
         }
         if (i_12_ < Class132.anInt1910) {
-            i_11_ = (Class132.anInt1910 + -i_8_ << -917473556) / i_7_;
+            i_11_ = (Class132.anInt1910 + -i_8_ << 12) / i_7_;
             i_12_ = Class132.anInt1910;
         } else if (Class38.anInt513 < i_12_) {
-            i_11_ = (Class38.anInt513 - i_8_ << -1636944852) / i_7_;
+            i_11_ = (Class38.anInt513 - i_8_ << 12) / i_7_;
             i_12_ = Class38.anInt513;
         }
         if (Class132.anInt1910 <= i_9_) {
             if (Class38.anInt513 < i_9_) {
-                i_10_ = (Class38.anInt513 - i_8_ << -897379380) / i_7_;
+                i_10_ = (Class38.anInt513 - i_8_ << 12) / i_7_;
                 i_9_ = Class38.anInt513;
             }
         } else {
-            i_10_ = (-i_8_ + Class132.anInt1910 << -720084404) / i_7_;
+            i_10_ = (-i_8_ + Class132.anInt1910 << 12) / i_7_;
             i_9_ = Class132.anInt1910;
         }
         Class239_Sub15.method1783(i_10_, -1, i_9_, i_12_, i_11_, i_1_);

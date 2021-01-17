@@ -135,10 +135,10 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
         anInt9741++;
         int i_23_ = Stream.floatToRawIntBits(f);
         this.aByteArray7154[this.anInt7197++] = (byte) i_23_;
-        this.aByteArray7154[this.anInt7197++] = (byte) (i_23_ >> -625325816);
+        this.aByteArray7154[this.anInt7197++] = (byte) (i_23_ >> 8);
         if (i != 18291) aBoolean9746 = true;
-        this.aByteArray7154[this.anInt7197++] = (byte) (i_23_ >> -1343777264);
-        this.aByteArray7154[this.anInt7197++] = (byte) (i_23_ >> 1134918776);
+        this.aByteArray7154[this.anInt7197++] = (byte) (i_23_ >> 16);
+        this.aByteArray7154[this.anInt7197++] = (byte) (i_23_ >> 24);
     }
 
     Class348_Sub49_Sub1(int i) {
@@ -148,10 +148,10 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
     final void method3400(float f, byte i) {
         anInt9744++;
         int i_24_ = Stream.floatToRawIntBits(f);
-        this.aByteArray7154[this.anInt7197++] = (byte) (i_24_ >> 573844344);
-        this.aByteArray7154[this.anInt7197++] = (byte) (i_24_ >> 1420388720);
+        this.aByteArray7154[this.anInt7197++] = (byte) (i_24_ >> 24);
+        this.aByteArray7154[this.anInt7197++] = (byte) (i_24_ >> 16);
         if (i >= -76) aBoolean9746 = true;
-        this.aByteArray7154[this.anInt7197++] = (byte) (i_24_ >> 29185928);
+        this.aByteArray7154[this.anInt7197++] = (byte) (i_24_ >> 8);
         this.aByteArray7154[this.anInt7197++] = (byte) i_24_;
     }
 
@@ -159,7 +159,7 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
         anInt9745++;
         if (i_26_ <= 10) return -118;
         if (i == -1) return 12345678;
-        i_25_ = (i & 0x7f) * i_25_ >> -598107193;
+        i_25_ = (i & 0x7f) * i_25_ >> 7;
         if (i_25_ < 2) i_25_ = 2;
         else if (i_25_ > 126) i_25_ = 126;
         return i_25_ + (i & 0xff80);

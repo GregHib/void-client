@@ -33,7 +33,7 @@ final class Class6 {
             i_6_ += i_7_;
             if (i_6_ > 0) {
                 i_5_--;
-                i_6_ -= i_5_ << -1793741023;
+                i_6_ -= i_5_ << 1;
                 int i_10_ = -i_5_ + i_2_;
                 int i_11_ = i_5_ + i_2_;
                 if (i_11_ >= Class132.anInt1910 && Class38.anInt513 >= i_10_) {
@@ -79,12 +79,12 @@ final class Class6 {
             if (i_21_ > 15) i_21_ -= 32;
             int i_22_ = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 5);
             if (i_22_ > 15) i_22_ -= 32;
-            int i_23_ = 0x3d01 & 4 + Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 3) << -724138005;
+            int i_23_ = 0x3d01 & 4 + Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 3) << 11;
             int i_24_ = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 1);
             if (i_24_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_18_;
             class318_sub1_sub3_sub3_sub1.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 14), -1)), i ^ 0x2b297815);
             class318_sub1_sub3_sub3_sub1.method2434((byte) 111, class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1399);
-            class318_sub1_sub3_sub3_sub1.anInt10310 = (class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329) << -233569405;
+            class318_sub1_sub3_sub3_sub1.anInt10310 = (class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329) << 3;
             if (bool) class318_sub1_sub3_sub3_sub1.method2435((byte) -108, i_23_, true);
             class318_sub1_sub3_sub3_sub1.method2444((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10317[0]) - -i_21_, i_20_ == 1, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10320[0]) + i_22_, i + 724138125, class318_sub1_sub3_sub3_sub1.method2436((byte) 50), i_19_);
             if (class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(0)) Class223.method1614(979190089, class318_sub1_sub3_sub3_sub1, class318_sub1_sub3_sub3_sub1.aByte6381, (class318_sub1_sub3_sub3_sub1.anIntArray10317[0]), (class318_sub1_sub3_sub3_sub1.anIntArray10320[0]), null, null, 0);
@@ -112,10 +112,10 @@ final class Class6 {
 
     static final int method206(int i, int i_31_, int i_32_) {
         anInt152++;
-        int i_33_ = i_31_ >>> 991466168;
+        int i_33_ = i_31_ >>> 24;
         int i_34_ = -i_33_ + i_32_;
-        i_31_ = (0xff0000 & (i_31_ & 0xff00) * i_33_ | (0xff00ff & i_31_) * i_33_ & ~0xff00ff) >>> 931628616;
-        return i_31_ + (((i & 0xff00) * i_34_ & 0xff0000 | ~0xff00ff & (0xff00ff & i) * i_34_) >>> -658762712);
+        i_31_ = (0xff0000 & (i_31_ & 0xff00) * i_33_ | (0xff00ff & i_31_) * i_33_ & ~0xff00ff) >>> 8;
+        return i_31_ + (((i & 0xff00) * i_34_ & 0xff0000 | ~0xff00ff & (0xff00ff & i) * i_34_) >>> 8);
     }
 
     static final void method207(ha var_ha, byte i) {
@@ -130,7 +130,7 @@ final class Class6 {
                     i_36_ = Class16.method260(false);
                 }
                 var_ha.KA(i_35_, i_36_, Class321.anInt4017 + i_35_, i_36_ + 350);
-                var_ha.aa(i_35_, i_36_, Class321.anInt4017, 350, 0x332277 | Class168.anInt2254 << -61075752, 1);
+                var_ha.aa(i_35_, i_36_, Class321.anInt4017, 350, 0x332277 | Class168.anInt2254 << 24, 1);
                 Class338.method2663(-5590, i_35_, Class321.anInt4017 + i_35_, i_36_, i_36_ + 350);
                 int i_37_ = 350 / Class68.anInt1188;
                 if (Class369_Sub2.anInt8587 > 0) {
@@ -138,7 +138,7 @@ final class Class6 {
                     int i_39_ = (i_37_ * i_38_ / (-1 + (i_37_ - -Class369_Sub2.anInt8587)));
                     int i_40_ = 4;
                     if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -Class284.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1));
-                    var_ha.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 | Class168.anInt2254 << 1028581656, 2);
+                    var_ha.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 | Class168.anInt2254 << 24, 2);
                     for (int i_41_ = Class284.anInt3676; ((i_41_ < i_37_ + Class284.anInt3676) && Class369_Sub2.anInt8587 > i_41_); i_41_++) {
                         String[] strings = (Class348_Sub40_Sub23.method3113('\010', true, Class286_Sub1.aStringArray6200[i_41_]));
                         int i_42_ = (-16 + Class321.anInt4017 + -8) / strings.length;

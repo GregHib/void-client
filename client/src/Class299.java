@@ -70,12 +70,12 @@ abstract class Class299 {
             if (i_14_ >= 0 && i_13_ >= 1) {
                 Class348_Sub49_Sub2.anIntArray9757[i_13_] = i_9_;
                 i_13_--;
-                i_14_ -= i_13_ << -840432831;
+                i_14_ -= i_13_ << 1;
             }
             i_9_++;
             if (i_12_ >= 0) {
                 i_11_--;
-                i_12_ -= i_11_ << -2028572287;
+                i_12_ -= i_11_ << 1;
                 if (i_10_ <= i_11_) {
                     int[] is_19_ = Class17.anIntArrayArray255[i_11_ + i_6_];
                     int[] is_20_ = Class17.anIntArrayArray255[i_6_ + -i_11_];

@@ -74,16 +74,16 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
         if (i_2_ != 255) method3044(-48);
         int[] is = this.aClass191_7032.method1433(0, i);
         if (this.aClass191_7032.aBoolean2570) {
-            int i_3_ = anInt9364 >> 1093508865;
+            int i_3_ = anInt9364 >> 1;
             int[][] is_4_ = this.aClass191_7032.method1427((byte) 16);
             Random random = new Random(anInt9367);
             for (int i_5_ = 0; anInt9362 > i_5_; i_5_++) {
                 int i_6_ = (anInt9364 > 0 ? anInt9369 + Class124.method1097((byte) 92, anInt9364, random) + -i_3_ : anInt9369);
-                i_6_ = i_6_ >> -807902044 & 0xff;
+                i_6_ = i_6_ >> 4 & 0xff;
                 int i_7_ = Class124.method1097((byte) 81, Class348_Sub40_Sub6.anInt9139, random);
                 int i_8_ = Class124.method1097((byte) 123, Class286_Sub2.anInt6212, random);
-                int i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654[i_6_] >> -1741119764);
-                int i_10_ = ((Class235.anIntArray3068[i_6_] * anInt9368 >> 226725452) + i_8_);
+                int i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654[i_6_] >> 12);
+                int i_10_ = ((Class235.anIntArray3068[i_6_] * anInt9368 >> 12) + i_8_);
                 int i_11_ = -i_8_ + i_10_;
                 int i_12_ = -i_7_ + i_9_;
                 if (i_12_ != 0 || i_11_ != 0) {
@@ -111,7 +111,7 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                     int i_19_ = -i_8_ + i_10_;
                     int i_20_ = -i_18_ / 2;
                     int i_21_ = 2048 / i_18_;
-                    int i_22_ = 1024 - (Class124.method1097((byte) 90, 4096, random) >> -1276678686);
+                    int i_22_ = 1024 - (Class124.method1097((byte) 90, 4096, random) >> 2);
                     if (i_19_ < 0) i_19_ = -i_19_;
                     int i_23_ = i_10_ <= i_8_ ? -1 : 1;
                     for (int i_24_ = i_7_; i_24_ < i_9_; i_24_++) {

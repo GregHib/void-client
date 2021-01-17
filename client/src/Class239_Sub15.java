@@ -89,7 +89,7 @@ final class Class239_Sub15 extends Class239 {
         int i_13_ = i_3_;
         int i_14_ = -i + i_5_;
         int i_15_ = -i_3_ + i_4_;
-        int i_16_ = -(i_14_ >> 1644589633);
+        int i_16_ = -(i_14_ >> 1);
         if (i_15_ < 0) i_15_ = -i_15_;
         int i_17_ = i_4_ <= i_3_ ? -1 : 1;
         if (bool) {

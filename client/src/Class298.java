@@ -12,8 +12,8 @@ final class Class298 {
         if (i_0_ < 36) aBoolean3811 = true;
         anInt3810++;
         int i_3_ = -i_1_ + 255;
-        i_2_ = (~0xff00ff & (i_2_ & 0xff00ff) * i_1_ | 0xff0000 & (0xff00 & i_2_) * i_1_) >>> -1350294936;
-        return i_2_ + ((i_3_ * (i & 0xff00ff) & ~0xff00ff | i_3_ * (0xff00 & i) & 0xff0000) >>> 751176872);
+        i_2_ = (~0xff00ff & (i_2_ & 0xff00ff) * i_1_ | 0xff0000 & (0xff00 & i_2_) * i_1_) >>> 8;
+        return i_2_ + ((i_3_ * (i & 0xff00ff) & ~0xff00ff | i_3_ * (0xff00 & i) & 0xff0000) >>> 8);
     }
 
     public static void method2251(int i) {

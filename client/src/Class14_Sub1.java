@@ -50,9 +50,9 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
             if (class46.aByte817 == 1) class46.anInt800 = ((-class46.anInt709 + i_3_) / 2 + class46.anInt788);
             else if (class46.aByte817 != 2) {
                 if (class46.aByte817 != 3) {
-                    if (class46.aByte817 != 4) class46.anInt800 = (-class46.anInt709 + i_3_ + -(i_3_ * class46.anInt788 >> 179764142));
-                    else class46.anInt800 = ((-class46.anInt709 + i_3_) / 2 - -(i_3_ * class46.anInt788 >> 113635214));
-                } else class46.anInt800 = i_3_ * class46.anInt788 >> -626591410;
+                    if (class46.aByte817 != 4) class46.anInt800 = (-class46.anInt709 + i_3_ + -(i_3_ * class46.anInt788 >> 14));
+                    else class46.anInt800 = ((-class46.anInt709 + i_3_) / 2 - -(i_3_ * class46.anInt788 >> 14));
+                } else class46.anInt800 = i_3_ * class46.anInt788 >> 14;
             } else class46.anInt800 = (-class46.anInt788 + (-class46.anInt709 + i_3_));
         } else class46.anInt800 = class46.anInt788;
         int i_5_ = 83 % ((i - 50) / 50);
@@ -60,9 +60,9 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
             if (class46.aByte681 == 1) class46.anInt750 = ((i_4_ + -class46.anInt789) / 2 - -class46.anInt739);
             else if (class46.aByte681 == 2) class46.anInt750 = (i_4_ - class46.anInt789 - class46.anInt739);
             else if (class46.aByte681 != 3) {
-                if (class46.aByte681 != 4) class46.anInt750 = (-(i_4_ * class46.anInt739 >> -1401218514) + (i_4_ + -class46.anInt789));
-                else class46.anInt750 = ((i_4_ * class46.anInt739 >> 143654990) + (-class46.anInt789 + i_4_) / 2);
-            } else class46.anInt750 = class46.anInt739 * i_4_ >> 1086795502;
+                if (class46.aByte681 != 4) class46.anInt750 = (-(i_4_ * class46.anInt739 >> 14) + (i_4_ + -class46.anInt789));
+                else class46.anInt750 = ((i_4_ * class46.anInt739 >> 14) + (-class46.anInt789 + i_4_) / 2);
+            } else class46.anInt750 = class46.anInt739 * i_4_ >> 14;
         } else class46.anInt750 = class46.anInt739;
         if (Class299_Sub2.aBoolean6327 && (client.method105(class46).anInt7098 != 0 || class46.anInt774 == 0)) {
             if (class46.anInt750 < 0) class46.anInt750 = 0;
@@ -158,11 +158,11 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         int i_24_ = 0x3fff & (int) (-2607.5945876176133 * Math.atan2(i_19_, i_21_));
         if (i_23_ > 3072) i_23_ = 3072;
         if (i_23_ > Class348_Sub42_Sub19.anInt9701) {
-            Class348_Sub42_Sub19.anInt9701 += (Class239_Sub12.anInt5973 * (i_23_ - Class348_Sub42_Sub19.anInt9701 >> 519847139) / 1000) + Class367_Sub11.anInt7403 << 1929986915;
+            Class348_Sub42_Sub19.anInt9701 += (Class239_Sub12.anInt5973 * (i_23_ - Class348_Sub42_Sub19.anInt9701 >> 3) / 1000) + Class367_Sub11.anInt7403 << 3;
             if (i_23_ < Class348_Sub42_Sub19.anInt9701) Class348_Sub42_Sub19.anInt9701 = i_23_;
         }
         if (Class348_Sub42_Sub19.anInt9701 > i_23_) {
-            Class348_Sub42_Sub19.anInt9701 -= (((-i_23_ + Class348_Sub42_Sub19.anInt9701 >> 2087935011) * Class239_Sub12.anInt5973 / 1000) + Class367_Sub11.anInt7403) << 1130272515;
+            Class348_Sub42_Sub19.anInt9701 -= (((-i_23_ + Class348_Sub42_Sub19.anInt9701 >> 3) * Class239_Sub12.anInt5973 / 1000) + Class367_Sub11.anInt7403) << 3;
             if (Class348_Sub42_Sub19.anInt9701 < i_23_) Class348_Sub42_Sub19.anInt9701 = i_23_;
         }
         int i_25_ = -Class5.anInt4638 + i_24_;
@@ -170,11 +170,11 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         if (i_25_ < -8192) i_25_ += 16384;
         i_25_ >>= 3;
         if (i_25_ > 0) {
-            Class5.anInt4638 += (Class367_Sub11.anInt7403 + Class239_Sub12.anInt5973 * i_25_ / 1000) << -213819261;
+            Class5.anInt4638 += (Class367_Sub11.anInt7403 + Class239_Sub12.anInt5973 * i_25_ / 1000) << 3;
             Class5.anInt4638 &= 0x3fff;
         }
         if (i_25_ < 0) {
-            Class5.anInt4638 -= Class367_Sub11.anInt7403 - -(-i_25_ * Class239_Sub12.anInt5973 / 1000) << 182570755;
+            Class5.anInt4638 -= Class367_Sub11.anInt7403 - -(-i_25_ * Class239_Sub12.anInt5973 / 1000) << 3;
             Class5.anInt4638 &= 0x3fff;
         }
         int i_26_ = i_24_ - Class5.anInt4638;

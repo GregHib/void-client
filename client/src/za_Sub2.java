@@ -51,7 +51,7 @@ final class za_Sub2 extends za {
                     int i_7_;
                     if ((i_3_ & ~0x3fffffff) == -1073741824) {
                         int i_8_ = i_3_ & 0xfffffff;
-                        int i_9_ = i_8_ >> -934245874;
+                        int i_9_ = i_8_ >> 14;
                         i_7_ = (class318_sub1_sub3_sub3.anInt6377) - 512 * (i_9_ - anInt9780) - 256;
                         int i_10_ = i_8_ & 0x3fff;
                         i_6_ = (-256 - (i_10_ - Class90.anInt1517) * 512 + (class318_sub1_sub3_sub3.anInt6388));

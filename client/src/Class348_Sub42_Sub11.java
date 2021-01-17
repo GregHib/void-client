@@ -91,12 +91,12 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                             i_11_ = Class318_Sub1_Sub5_Sub2.anInt10163;
                             i_10_ = Class9.anInt167;
                         }
-                        if ((0x4 & (Class348_Sub33.aByteArrayArrayArray6962[Class355.anInt4372][i_10_ >> -504285367][i_11_ >> -1016460983])) != 0) Class367_Sub4.method3542(i_11_ >> 1382553737, Class147.aClass357ArrayArrayArray2029, i_10_ >> -2113770807, 0, 0, false);
+                        if ((0x4 & (Class348_Sub33.aByteArrayArrayArray6962[Class355.anInt4372][i_10_ >> 9][i_11_ >> 9])) != 0) Class367_Sub4.method3542(i_11_ >> 9, Class147.aClass357ArrayArrayArray2029, i_10_ >> 9, 0, 0, false);
                         if (Class348_Sub42_Sub19.anInt9701 < 2560) {
-                            int i_12_ = Class286_Sub4.anInt6246 >> 1549184105;
-                            int i_13_ = Class59_Sub2_Sub2.anInt8685 >> -651476279;
-                            int i_14_ = i_10_ >> 248970249;
-                            int i_15_ = i_11_ >> -1537591159;
+                            int i_12_ = Class286_Sub4.anInt6246 >> 9;
+                            int i_13_ = Class59_Sub2_Sub2.anInt8685 >> 9;
+                            int i_14_ = i_10_ >> 9;
+                            int i_15_ = i_11_ >> 9;
                             int i_16_;
                             if (i_14_ > i_12_) i_16_ = i_14_ + -i_12_;
                             else i_16_ = i_12_ + -i_14_;
@@ -152,8 +152,8 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                         }
                     } else {
                         int i_22_ = Class275.method2064(Class286_Sub4.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685);
-                        if (i_22_ - Class305.anInt3855 < 3200 && ((Class348_Sub33.aByteArrayArrayArray6962[Class355.anInt4372][Class286_Sub4.anInt6246 >> 378417865][Class59_Sub2_Sub2.anInt8685 >> -1035753239]) & 0x4) != 0)
-                            Class367_Sub4.method3542(Class59_Sub2_Sub2.anInt8685 >> -280539447, Class147.aClass357ArrayArrayArray2029, Class286_Sub4.anInt6246 >> 57249897, 0, 1, false);
+                        if (i_22_ - Class305.anInt3855 < 3200 && ((Class348_Sub33.aByteArrayArrayArray6962[Class355.anInt4372][Class286_Sub4.anInt6246 >> 9][Class59_Sub2_Sub2.anInt8685 >> 9]) & 0x4) != 0)
+                            Class367_Sub4.method3542(Class59_Sub2_Sub2.anInt8685 >> 9, Class147.aClass357ArrayArrayArray2029, Class286_Sub4.anInt6246 >> 9, 0, 1, false);
                     }
                 }
             }

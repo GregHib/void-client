@@ -98,9 +98,9 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
             if ((Class306.anInt3872 != (int) ((float) Class348_Sub40_Sub34.anIntArray9436[0] / 3.0F)) || Class86.anInt1480 != (int) ((float) Class348_Sub40_Sub34.anIntArray9436[1] / 3.0F)) {
                 Class86.anInt1480 = (int) ((float) Class348_Sub40_Sub34.anIntArray9436[1] / 3.0F);
                 Class306.anInt3872 = (int) ((float) Class348_Sub40_Sub34.anIntArray9436[0] / 3.0F);
-                Class348_Sub49_Sub2.anInt9759 = Class86.anInt1480 >> 1916599777;
+                Class348_Sub49_Sub2.anInt9759 = Class86.anInt1480 >> 1;
                 Class14.anIntArray5091 = new int[Class86.anInt1480 * Class306.anInt3872];
-                Class69.anInt1202 = Class306.anInt3872 >> -633234367;
+                Class69.anInt1202 = Class306.anInt3872 >> 1;
             }
             Class348_Sub40_Sub4.aClass101_9114 = var_ha.method3640();
             Class348_Sub42_Sub10.anInt9577 = 0;

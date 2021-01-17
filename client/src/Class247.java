@@ -23,7 +23,7 @@ final class Class247 {
             if (i > 192) i_1_ >>= 2;
             else if (i > 179) i_1_ >>= 1;
         } else i_1_ >>= 3;
-        return ((i >> -1873068927) + (i_1_ >> 2083908837 << 314376967) + ((0xff & i_2_) >> 1227155490 << 683224458));
+        return ((i >> 1) + (i_1_ >> 5 << 7) + ((0xff & i_2_) >> 2 << 10));
     }
 
     static final boolean method1891(int i) {
