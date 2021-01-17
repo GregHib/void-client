@@ -207,10 +207,14 @@ final class Class348_Sub41 extends Class348 {
         int i_37_ = class348_sub49.readUnsignedByte(255);
         if (i > -74) method3156(true, null);
         int i_38_ = class348_sub49.readInt((byte) -126);
-        if (i_38_ < 0 || (Class29.anInt401 != 0 && i_38_ > Class29.anInt401)) throw new RuntimeException();
+        if (i_38_ < 0 || (Class29.anInt401 != 0 && i_38_ > Class29.anInt401)) {
+            throw new RuntimeException();
+        }
         if (i_37_ != 0) {
             int i_39_ = class348_sub49.readInt((byte) -126);
-            if (i_39_ < 0 || (Class29.anInt401 != 0 && i_39_ > Class29.anInt401)) throw new RuntimeException();
+            if (i_39_ < 0 || (Class29.anInt401 != 0 && i_39_ > Class29.anInt401) || i_39_ > 10000000) {
+                return new byte[4];
+            }
             byte[] is_40_ = new byte[i_39_];
             if (i_37_ == 1) Class212.method1547(is_40_, i_39_, is, i_38_, 9);
             else {
