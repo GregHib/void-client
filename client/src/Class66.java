@@ -937,7 +937,7 @@ final class Class66 {
                 return;
             }
             if (i == 5420) {
-                anIntArray1149[anInt1173++] = (Class348_Sub23_Sub1.aClass297_8992.aBoolean3777) ? 0 : 1;
+                anIntArray1149[anInt1173++] = Class348_Sub23_Sub1.aClass297_8992.aBoolean3777 && Loader.lobby ? 0 : 1;
                 return;
             }
             if (i == 5421) {
