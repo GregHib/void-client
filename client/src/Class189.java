@@ -33,7 +33,7 @@ final class Class189 {
                 if (i == 6) this.aBoolean2522 = true;
                 else if (i == 7) this.aBoolean2531 = true;
             } else this.anInt2533 = class348_sub49.readUnsignedByte(255);
-        } else class348_sub49.method3388(-106);
+        } else class348_sub49.readByte(-106);
     }
 
     final void method1419(int i, Class348_Sub49 class348_sub49, byte i_2_) {

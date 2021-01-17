@@ -40,7 +40,7 @@ final class Class254 {
             if (i == 2) this.anInt3256 = class348_sub49.readInt((byte) -126);
             else if (i == 4) this.aBoolean3261 = false;
             else if (i == 5) this.aString3258 = class348_sub49.method3377((byte) 91);
-        } else aChar3259 = Class50_Sub1.method462(class348_sub49.method3388(-115), -128);
+        } else aChar3259 = Class50_Sub1.method462(class348_sub49.readByte(-115), -128);
         if (bool != true) this.aBoolean3261 = true;
     }
 

@@ -952,7 +952,7 @@ class Class237 {
                 if (i_221_ <= 49) {
                     if (bool) class348_sub49.readUnsignedByte(255);
                     else {
-                        aByteArrayArrayArray3123[i_219_][i_216_][i_212_] = class348_sub49.method3388(i_215_ + -1115212859);
+                        aByteArrayArrayArray3123[i_219_][i_216_][i_212_] = class348_sub49.readByte(i_215_ + -1115212859);
                         aByteArrayArrayArray3126[i_219_][i_216_][i_212_] = (byte) ((i_221_ + -2) / 4);
                         aByteArrayArrayArray3129[i_219_][i_216_][i_212_] = (byte) Class139.method1166(3, -2 + i_221_ + i_213_);
                     }

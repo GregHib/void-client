@@ -33,7 +33,7 @@ final class Class160 {
         anInt2136++;
         if (i_1_ != 1) {
             if (i_1_ == 2) this.anInt2135 = 0;
-        } else this.aChar2132 = Class50_Sub1.method462(class348_sub49.method3388(-119), -128);
+        } else this.aChar2132 = Class50_Sub1.method462(class348_sub49.readByte(-119), -128);
         if (i >= -73) method1255(null, -43);
     }
 

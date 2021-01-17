@@ -357,7 +357,7 @@ final class Class143 {
                 is_47_[i_48_] = new byte[is_43_[i_48_]];
                 byte i_49_ = 0;
                 for (int i_50_ = 0; (is_47_[i_48_].length > i_50_); i_50_++) {
-                    i_49_ += class348_sub49.method3388(-83);
+                    i_49_ += class348_sub49.readByte(-83);
                     is_47_[i_48_][i_50_] = i_49_;
                 }
             }
@@ -366,7 +366,7 @@ final class Class143 {
                 is_51_[i_52_] = new byte[is_43_[i_52_]];
                 byte i_53_ = 0;
                 for (int i_54_ = 0; (is_51_[i_52_].length > i_54_); i_54_++) {
-                    i_53_ += class348_sub49.method3388(-115);
+                    i_53_ += class348_sub49.readByte(-115);
                     is_51_[i_52_][i_54_] = i_53_;
                 }
             }

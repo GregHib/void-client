@@ -420,10 +420,10 @@ final class Class46 {
         this.anInt739 = class348_sub49.method3372(13638);
         this.anInt842 = class348_sub49.readShort(842397944);
         this.anInt728 = class348_sub49.readShort(842397944);
-        this.aByte778 = class348_sub49.method3388(-96);
-        this.aByte724 = class348_sub49.method3388(-87);
-        this.aByte817 = class348_sub49.method3388(-86);
-        this.aByte681 = class348_sub49.method3388(-108);
+        this.aByte778 = class348_sub49.readByte(-96);
+        this.aByte724 = class348_sub49.readByte(-87);
+        this.aByte817 = class348_sub49.readByte(-86);
+        this.aByte681 = class348_sub49.readByte(-108);
         this.anInt834 = class348_sub49.readShort(842397944);
         if (this.anInt834 == 65535) this.anInt834 = -1;
         else this.anInt834 = ((~0xffff & this.anInt830) + this.anInt834);
@@ -511,9 +511,9 @@ final class Class46 {
                 i_41_ = i_41_ << 8 | class348_sub49.readUnsignedByte(255);
                 i_41_ &= 0xfff;
                 if (i_41_ == 4095) i_41_ = -1;
-                byte i_43_ = class348_sub49.method3388(-87);
+                byte i_43_ = class348_sub49.readByte(-87);
                 if (i_43_ != 0) this.aBoolean676 = true;
-                byte i_44_ = class348_sub49.method3388(-102);
+                byte i_44_ = class348_sub49.readByte(-102);
                 this.anIntArray707[i_42_] = i_41_;
                 this.aByteArray746[i_42_] = i_43_;
                 this.aByteArray832[i_42_] = i_44_;

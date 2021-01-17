@@ -274,11 +274,11 @@ final class Class207 {
             if ((i_86_ & 0x2) == 0) {
                 if ((i_86_ & 0x1) == 0) {
                     for (int i_87_ = 0; i_87_ < i_85_; i_87_++)
-                        class207.aByteArray2699[i_87_] = class348_sub49.method3388(-126);
+                        class207.aByteArray2699[i_87_] = class348_sub49.readByte(-126);
                 } else {
                     for (int i_88_ = 0; i_88_ < class207.anInt2702; i_88_++) {
                         for (int i_89_ = 0; i_89_ < class207.anInt2696; i_89_++)
-                            class207.aByteArray2699[(i_88_ + i_89_ * class207.anInt2702)] = class348_sub49.method3388(-96);
+                            class207.aByteArray2699[(i_88_ + i_89_ * class207.anInt2702)] = class348_sub49.readByte(-96);
                     }
                 }
             } else {
@@ -286,19 +286,19 @@ final class Class207 {
                 class207.aByteArray2695 = new byte[i_85_];
                 if ((i_86_ & 0x1) == 0) {
                     for (int i_90_ = 0; i_90_ < i_85_; i_90_++)
-                        class207.aByteArray2699[i_90_] = class348_sub49.method3388(-118);
+                        class207.aByteArray2699[i_90_] = class348_sub49.readByte(-118);
                     for (int i_91_ = 0; i_91_ < i_85_; i_91_++) {
-                        byte i_92_ = (class207.aByteArray2695[i_91_] = class348_sub49.method3388(-89));
+                        byte i_92_ = (class207.aByteArray2695[i_91_] = class348_sub49.readByte(-89));
                         bool = bool | i_92_ != -1;
                     }
                 } else {
                     for (int i_93_ = 0; i_93_ < class207.anInt2702; i_93_++) {
                         for (int i_94_ = 0; i_94_ < class207.anInt2696; i_94_++)
-                            class207.aByteArray2699[(i_93_ + i_94_ * class207.anInt2702)] = class348_sub49.method3388(-84);
+                            class207.aByteArray2699[(i_93_ + i_94_ * class207.anInt2702)] = class348_sub49.readByte(-84);
                     }
                     for (int i_95_ = 0; i_95_ < class207.anInt2702; i_95_++) {
                         for (int i_96_ = 0; i_96_ < class207.anInt2696; i_96_++) {
-                            byte i_97_ = (class207.aByteArray2695[i_95_ + i_96_ * (class207.anInt2702)] = class348_sub49.method3388(-122));
+                            byte i_97_ = (class207.aByteArray2695[i_95_ + i_96_ * (class207.anInt2702)] = class348_sub49.readByte(-122));
                             bool = bool | i_97_ != -1;
                         }
                     }

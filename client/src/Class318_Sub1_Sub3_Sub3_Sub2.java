@@ -137,10 +137,10 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
         aByte10552 = (byte) (i_11_ >> 6 & 0x3);
         this.anInt6377 += -i_13_ + method2436((byte) 47) << 8;
         this.anInt6388 += method2436((byte) 96) + -i_13_ << 8;
-        aByte10556 = class348_sub49.method3388(-114);
-        this.anInt10540 = class348_sub49.method3388(-89);
-        this.anInt10522 = class348_sub49.method3388(i ^ ~0x1);
-        this.aBoolean10551 = class348_sub49.method3388(i + -199) == 1;
+        aByte10556 = class348_sub49.readByte(-114);
+        this.anInt10540 = class348_sub49.readByte(-89);
+        this.anInt10522 = class348_sub49.readByte(i ^ ~0x1);
+        this.aBoolean10551 = class348_sub49.readByte(i + -199) == 1;
         if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && Class192.anInt2581 >= 2) this.aBoolean10551 = false;
         this.anInt10542 = 0;
         int i_14_ = -1;

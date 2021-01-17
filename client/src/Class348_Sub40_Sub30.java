@@ -257,10 +257,10 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                             if (i_40_ == 2) break;
                             break while_209_;
                         }
-                        anInt9390 = (class348_sub49.method3388(-83) << 12) / 100;
+                        anInt9390 = (class348_sub49.readByte(-83) << 12) / 100;
                         return;
                     } while (false);
-                    anInt9398 = (class348_sub49.method3388(i_39_ + -31101) << 12) / 100;
+                    anInt9398 = (class348_sub49.readByte(i_39_ + -31101) << 12) / 100;
                     break;
                 }
                 break;

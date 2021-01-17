@@ -144,7 +144,7 @@ final class Class348_Sub17 extends Class348 {
         }
         byte[] is_9_ = new byte[i];
         for (int i_10_ = 0; i > i_10_; i_10_++)
-            is_9_[i_10_] = class348_sub49.method3388(-128);
+            is_9_[i_10_] = class348_sub49.readByte(-128);
         class348_sub49.anInt7197++;
         i++;
         int i_11_ = class348_sub49.anInt7197;
@@ -155,7 +155,7 @@ final class Class348_Sub17 extends Class348 {
         }
         byte[] is_13_ = new byte[i_12_];
         for (int i_14_ = 0; i_12_ > i_14_; i_14_++)
-            is_13_[i_14_] = class348_sub49.method3388(-81);
+            is_13_[i_14_] = class348_sub49.readByte(-81);
         i_12_++;
         class348_sub49.anInt7197++;
         int i_15_ = class348_sub49.anInt7197;
@@ -166,7 +166,7 @@ final class Class348_Sub17 extends Class348 {
         }
         byte[] is_17_ = new byte[i_16_];
         for (int i_18_ = 0; i_16_ > i_18_; i_18_++)
-            is_17_[i_18_] = class348_sub49.method3388(-82);
+            is_17_[i_18_] = class348_sub49.readByte(-82);
         class348_sub49.anInt7197++;
         byte[] is_19_ = new byte[++i_16_];
         int i_20_;
@@ -205,7 +205,7 @@ final class Class348_Sub17 extends Class348 {
         }
         byte[] is_30_ = new byte[i_29_];
         for (int i_31_ = 0; i_29_ > i_31_; i_31_++)
-            is_30_[i_31_] = class348_sub49.method3388(-108);
+            is_30_[i_31_] = class348_sub49.readByte(-108);
         class348_sub49.anInt7197++;
         i_29_++;
         int i_32_ = 0;
@@ -290,20 +290,20 @@ final class Class348_Sub17 extends Class348 {
             Class23 class23_47_ = class23s[i_46_];
             if (class23_47_.aByteArray348 != null) {
                 for (int i_48_ = 1; i_48_ < class23_47_.aByteArray348.length; i_48_ += 2)
-                    class23_47_.aByteArray348[i_48_] = class348_sub49.method3388(-93);
+                    class23_47_.aByteArray348[i_48_] = class348_sub49.readByte(-93);
             }
             if (class23_47_.aByteArray344 != null) {
                 for (int i_49_ = 3; -2 + class23_47_.aByteArray344.length > i_49_; i_49_ += 2)
-                    class23_47_.aByteArray344[i_49_] = class348_sub49.method3388(-89);
+                    class23_47_.aByteArray344[i_49_] = class348_sub49.readByte(-89);
             }
         }
         if (is_27_ != null) {
             for (int i_50_ = 1; i_50_ < is_27_.length; i_50_ += 2)
-                is_27_[i_50_] = class348_sub49.method3388(-82);
+                is_27_[i_50_] = class348_sub49.readByte(-82);
         }
         if (is_28_ != null) {
             for (int i_51_ = 1; is_28_.length > i_51_; i_51_ += 2)
-                is_28_[i_51_] = class348_sub49.method3388(-126);
+                is_28_[i_51_] = class348_sub49.readByte(-126);
         }
         for (int i_52_ = 0; i_52_ < i_20_; i_52_++) {
             Class23 class23_53_ = class23s[i_52_];

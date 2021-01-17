@@ -345,7 +345,7 @@ final class Class237_Sub1 extends Class237 {
                             if (i_42_ == 129) {
                                 if ((this.aByteArrayArrayArray3104) == null) this.aByteArrayArrayArray3104 = new byte[4][][];
                                 for (int i_43_ = 0; i_43_ < 4; i_43_++) {
-                                    byte i_44_ = class348_sub49.method3388(-102);
+                                    byte i_44_ = class348_sub49.readByte(-102);
                                     if (i_44_ != 0 || (this.aByteArrayArrayArray3104[i_43_]) == null) {
                                         if (i_44_ == 1) {
                                             if ((this.aByteArrayArrayArray3104[i_43_]) == null) this.aByteArrayArrayArray3104[i_43_] = (new byte
@@ -353,7 +353,7 @@ final class Class237_Sub1 extends Class237 {
                                                     [1 + (this.anInt3114)]);
                                             for (int i_49_ = 0; (i_49_ < 64); i_49_ += 4) {
                                                 for (int i_50_ = 0; (i_50_ < 64); i_50_ += 4) {
-                                                    byte i_51_ = (class348_sub49.method3388(-103));
+                                                    byte i_51_ = (class348_sub49.readByte(-103));
                                                     for (int i_52_ = (i_49_ + i_39_); (i_52_ < (4 + i_49_ + i_39_)); i_52_++) {
                                                         for (int i_53_ = i + i_50_; ((4 + i + i_50_) > i_53_); i_53_++) {
                                                             if (i_52_ >= 0 && (this.anInt3117 > i_52_) && (i_53_ >= 0) && (i_53_ < (this.anInt3114))) this.aByteArrayArrayArray3104[i_43_][i_52_][i_53_] = i_51_;
@@ -646,7 +646,7 @@ final class Class237_Sub1 extends Class237 {
                             } else if (i_125_ == 129) {
                                 if (this.aByteArrayArrayArray3104 == null) this.aByteArrayArrayArray3104 = new byte[4][][];
                                 for (int i_132_ = 0; i_132_ < 4; i_132_++) {
-                                    byte i_133_ = class348_sub49.method3388(-112);
+                                    byte i_133_ = class348_sub49.readByte(-112);
                                     if (i_133_ == 0 && ((this.aByteArrayArrayArray3104[i_118_]) != null)) {
                                         if (i_121_ >= i_132_) {
                                             int i_134_ = i_117_;
@@ -674,7 +674,7 @@ final class Class237_Sub1 extends Class237 {
                                                 [1 + (this.anInt3114)]);
                                         for (int i_138_ = 0; i_138_ < 64; i_138_ += 4) {
                                             for (int i_139_ = 0; i_139_ < 64; i_139_ += 4) {
-                                                byte i_140_ = class348_sub49.method3388(-113);
+                                                byte i_140_ = class348_sub49.readByte(-113);
                                                 if (i_132_ <= i_121_) {
                                                     for (int i_141_ = i_138_; (i_141_ < i_138_ - -4); i_141_++) {
                                                         for (int i_142_ = i_139_; (i_142_ < i_139_ - -4); i_142_++) {

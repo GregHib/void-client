@@ -28,8 +28,8 @@ final class Class117 {
     }
 
     private final void method1065(Class348_Sub49 class348_sub49, int i, int i_0_) {
-        if (i_0_ == 1) this.aChar1778 = Class50_Sub1.method462(class348_sub49.method3388(-91), -128);
-        else if (i_0_ == 2) this.aChar1779 = Class50_Sub1.method462(class348_sub49.method3388(-119), -128);
+        if (i_0_ == 1) this.aChar1778 = Class50_Sub1.method462(class348_sub49.readByte(-91), -128);
+        else if (i_0_ == 2) this.aChar1779 = Class50_Sub1.method462(class348_sub49.readByte(-119), -128);
         else if (i_0_ == 3) aString1774 = class348_sub49.method3377((byte) 86);
         else if (i_0_ == 4) anInt1764 = class348_sub49.readInt((byte) -126);
         else if (i_0_ == 5 || i_0_ == 6) {

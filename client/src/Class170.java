@@ -189,7 +189,7 @@ final class Class170 implements Interface17 {
             if ((0x10 & i_40_) != 0) i_40_ += Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(i ^ ~0xff00) << 8;
             if ((0x2 & i_40_) != 0) {
                 if (class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(i ^ ~0xffff)) Class5.method181(true, class318_sub1_sub3_sub3_sub1);
-                class318_sub1_sub3_sub3_sub1.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.readByteAdd(-1), -1)), -2);
+                class318_sub1_sub3_sub3_sub1.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.readShortAdd(-1), -1)), -2);
                 class318_sub1_sub3_sub3_sub1.method2434((byte) 95, class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1399);
                 class318_sub1_sub3_sub3_sub1.anInt10310 = class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329 << 3;
                 if (class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(0)) Class223.method1614(979190089, class318_sub1_sub3_sub3_sub1, (class318_sub1_sub3_sub3_sub1.aByte6381), (class318_sub1_sub3_sub3_sub1.anIntArray10317[0]), (class318_sub1_sub3_sub3_sub1.anIntArray10320[0]), null, null, 0);
@@ -205,7 +205,7 @@ final class Class170 implements Interface17 {
             }
             if ((i_40_ & 0x20) != 0) {
                 int i_43_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
-                int i_44_ = Class299.aClass348_Sub49_Sub2_3813.method3343((byte) 82);
+                int i_44_ = Class299.aClass348_Sub49_Sub2_3813.readIntInverse((byte) 82);
                 if (i_43_ == 65535) i_43_ = -1;
                 int i_45_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
                 int i_46_ = 0x7 & i_45_;
@@ -214,7 +214,7 @@ final class Class170 implements Interface17 {
                 class318_sub1_sub3_sub3_sub1.method2437(i_46_, i_43_, i ^ 0x3c569b2e, i_47_, false, i_44_);
             }
             if ((0x4000 & i_40_) != 0) {
-                int i_48_ = Class299.aClass348_Sub49_Sub2_3813.readShortInverse((byte) 21);
+                int i_48_ = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
                 int[] is = new int[i_48_];
                 int[] is_49_ = new int[i_48_];
                 int[] is_50_ = new int[i_48_];
@@ -222,7 +222,7 @@ final class Class170 implements Interface17 {
                     int i_52_ = Class299.aClass348_Sub49_Sub2_3813.readShort(842397944);
                     if (i_52_ == 65535) i_52_ = -1;
                     is[i_51_] = i_52_;
-                    is_49_[i_51_] = Class299.aClass348_Sub49_Sub2_3813.readShortInverse((byte) 21);
+                    is_49_[i_51_] = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
                     is_50_[i_51_] = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-109);
                 }
                 Class367_Sub8.method3548(-7387, class318_sub1_sub3_sub3_sub1, is_50_, is, is_49_);
@@ -232,7 +232,7 @@ final class Class170 implements Interface17 {
                 int[] is = new int[i_53_];
                 int[] is_54_ = new int[i_53_];
                 for (int i_55_ = 0; i_53_ > i_55_; i_55_++) {
-                    int i_56_ = Class299.aClass348_Sub49_Sub2_3813.readByteAdd(124);
+                    int i_56_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(124);
                     if ((0xc000 & i_56_) == 49152) {
                         int i_57_ = Class299.aClass348_Sub49_Sub2_3813.readShort(i + 842463480);
                         is[i_55_] = Class273.method2057(i_57_, i_56_ << 16);
@@ -242,16 +242,16 @@ final class Class170 implements Interface17 {
                 class318_sub1_sub3_sub3_sub1.method2430(is_54_, is, -100);
             }
             if ((0x4 & i_40_) != 0) {
-                class318_sub1_sub3_sub3_sub1.anInt10499 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd(124);
+                class318_sub1_sub3_sub3_sub1.anInt10499 = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(124);
                 class318_sub1_sub3_sub3_sub1.anInt10512 = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
             }
             if ((0x1000 & i_40_) != 0) {
                 class318_sub1_sub3_sub3_sub1.anInt10293 = Class299.aClass348_Sub49_Sub2_3813.method3345(-27697);
                 class318_sub1_sub3_sub3_sub1.anInt10314 = Class299.aClass348_Sub49_Sub2_3813.method3345(-27697);
-                class318_sub1_sub3_sub3_sub1.anInt10241 = Class299.aClass348_Sub49_Sub2_3813.method3388(-128);
+                class318_sub1_sub3_sub3_sub1.anInt10241 = Class299.aClass348_Sub49_Sub2_3813.readByte(-128);
                 class318_sub1_sub3_sub3_sub1.anInt10288 = Class299.aClass348_Sub49_Sub2_3813.method3345(-27697);
                 class318_sub1_sub3_sub3_sub1.anInt10239 = (Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false) + Class367_Sub11.anInt7396);
-                class318_sub1_sub3_sub3_sub1.anInt10300 = (Class299.aClass348_Sub49_Sub2_3813.readByteAdd(12) - -Class367_Sub11.anInt7396);
+                class318_sub1_sub3_sub3_sub1.anInt10300 = (Class299.aClass348_Sub49_Sub2_3813.readShortAdd(12) - -Class367_Sub11.anInt7396);
                 class318_sub1_sub3_sub3_sub1.anInt10231 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) 66);
                 class318_sub1_sub3_sub3_sub1.anInt10314 += class318_sub1_sub3_sub3_sub1.anIntArray10317[0];
                 class318_sub1_sub3_sub3_sub1.anInt10322 = 0;
@@ -307,7 +307,7 @@ final class Class170 implements Interface17 {
             }
             if ((i_40_ & 0x400) != 0) {
                 int i_67_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
-                int i_68_ = Class299.aClass348_Sub49_Sub2_3813.method3364((byte) -127);
+                int i_68_ = Class299.aClass348_Sub49_Sub2_3813.readIntLittle((byte) -127);
                 if (i_67_ == 65535) i_67_ = -1;
                 int i_69_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -116);
                 int i_70_ = i_69_ & 0x7;

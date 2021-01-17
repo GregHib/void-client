@@ -99,7 +99,7 @@ final class Class133 {
                         class318_sub1_sub3_sub3_sub2.anInt10201 = 0;
                     }
                     if ((i_0_ & 0x4) != 0) {
-                        int i_10_ = class348_sub49_sub2.readShortInverse((byte) 21);
+                        int i_10_ = class348_sub49_sub2.readByteInverse((byte) 21);
                         if (i_10_ > 0) {
                             for (int i_11_ = 0; i_10_ > i_11_; i_11_++) {
                                 int i_12_ = -1;
@@ -114,7 +114,7 @@ final class Class133 {
                                 } else if (i_14_ != 32766) i_13_ = class348_sub49_sub2.method3382(-117);
                                 else i_14_ = -1;
                                 int i_16_ = class348_sub49_sub2.method3382(-123);
-                                int i_17_ = class348_sub49_sub2.readByteSubtract((byte) -98);
+                                int i_17_ = class348_sub49_sub2.readByteAdd((byte) -98);
                                 class318_sub1_sub3_sub3_sub2.method2438(i_13_, Class367_Sub11.anInt7396, i_14_, i_15_, i_12_, i_16_, i_17_, (byte) 102);
                             }
                         }
@@ -126,9 +126,9 @@ final class Class133 {
                             class318_sub1_sub3_sub3_sub2.anInt10524 = -1;
                         }
                     }
-                    if ((0x8000 & i_0_) != 0) class318_sub1_sub3_sub3_sub2.aBoolean10554 = class348_sub49_sub2.readByteSubtract((byte) -94) == 1;
+                    if ((0x8000 & i_0_) != 0) class318_sub1_sub3_sub3_sub2.aBoolean10554 = class348_sub49_sub2.readByteAdd((byte) -94) == 1;
                     if ((i_0_ & 0x100) != 0) {
-                        int i_18_ = class348_sub49_sub2.readShortInverse((byte) 21);
+                        int i_18_ = class348_sub49_sub2.readByteInverse((byte) 21);
                         int[] is = new int[i_18_];
                         int[] is_19_ = new int[i_18_];
                         int[] is_20_ = new int[i_18_];
@@ -136,18 +136,18 @@ final class Class133 {
                             int i_22_ = class348_sub49_sub2.readShort(842397944);
                             if (i_22_ == 65535) i_22_ = -1;
                             is[i_21_] = i_22_;
-                            is_19_[i_21_] = class348_sub49_sub2.readShortInverse((byte) 21);
+                            is_19_[i_21_] = class348_sub49_sub2.readByteInverse((byte) 21);
                             is_20_[i_21_] = class348_sub49_sub2.readShort(842397944);
                         }
                         Class167.method1297((byte) -116, class318_sub1_sub3_sub3_sub2, is_20_, is, is_19_);
                     }
                     if ((0x2000 & i_0_) != 0) {
-                        class318_sub1_sub3_sub3_sub2.anInt10293 = class348_sub49_sub2.method3388(-121);
+                        class318_sub1_sub3_sub3_sub2.anInt10293 = class348_sub49_sub2.readByte(-121);
                         class318_sub1_sub3_sub3_sub2.anInt10314 = class348_sub49_sub2.method3345(-27697);
                         class318_sub1_sub3_sub3_sub2.anInt10241 = class348_sub49_sub2.method3361(-622951480);
                         class318_sub1_sub3_sub3_sub2.anInt10288 = class348_sub49_sub2.method3361(-622951480);
                         class318_sub1_sub3_sub3_sub2.anInt10239 = (class348_sub49_sub2.readShortAddLittle(-118) - -Class367_Sub11.anInt7396);
-                        class318_sub1_sub3_sub3_sub2.anInt10300 = (class348_sub49_sub2.readByteAdd(19) - -Class367_Sub11.anInt7396);
+                        class318_sub1_sub3_sub3_sub2.anInt10300 = (class348_sub49_sub2.readShortAdd(19) - -Class367_Sub11.anInt7396);
                         class318_sub1_sub3_sub3_sub2.anInt10231 = class348_sub49_sub2.readUnsignedByte(255);
                         class318_sub1_sub3_sub3_sub2.anInt10322 = 0;
                         if (class318_sub1_sub3_sub3_sub2.aBoolean10539) {
@@ -167,7 +167,7 @@ final class Class133 {
                     if ((0x200 & i_0_) != 0) {
                         int i_23_ = class348_sub49_sub2.readShortAddLittle(-107);
                         if (i_23_ == 65535) i_23_ = -1;
-                        int i_24_ = class348_sub49_sub2.method3364((byte) -121);
+                        int i_24_ = class348_sub49_sub2.readIntLittle((byte) -121);
                         int i_25_ = class348_sub49_sub2.readUnsignedByteSubtract((byte) 54);
                         int i_26_ = i_25_ & 0x7;
                         int i_27_ = 0xf & i_25_ >> 3;
@@ -176,18 +176,18 @@ final class Class133 {
                     }
                     if ((i_0_ & 0x40000) != 0) {
                         class318_sub1_sub3_sub3_sub2.aByte10255 = class348_sub49_sub2.method3361(-622951480);
-                        class318_sub1_sub3_sub3_sub2.aByte10206 = class348_sub49_sub2.method3388(-99);
-                        class318_sub1_sub3_sub3_sub2.aByte10270 = class348_sub49_sub2.method3388(-87);
+                        class318_sub1_sub3_sub3_sub2.aByte10206 = class348_sub49_sub2.readByte(-99);
+                        class318_sub1_sub3_sub3_sub2.aByte10270 = class348_sub49_sub2.readByte(-87);
                         class318_sub1_sub3_sub3_sub2.aByte10279 = (byte) class348_sub49_sub2.readUnsignedByte(255);
                         class318_sub1_sub3_sub3_sub2.anInt10248 = (Class367_Sub11.anInt7396 - -class348_sub49_sub2.readShortAddLittle(-120));
-                        class318_sub1_sub3_sub3_sub2.anInt10250 = (Class367_Sub11.anInt7396 - -class348_sub49_sub2.readByteAdd(125));
+                        class318_sub1_sub3_sub3_sub2.anInt10250 = (Class367_Sub11.anInt7396 - -class348_sub49_sub2.readShortAdd(125));
                     }
                     if ((i_0_ & 0x80) != 0) Class259.aByteArray3300[i] = class348_sub49_sub2.method3345(-27697);
                     if ((i_0_ & 0x20) != 0) {
                         int i_28_ = class348_sub49_sub2.readShortAddLittle(-126);
                         if (i_28_ == 65535) i_28_ = -1;
-                        int i_29_ = class348_sub49_sub2.method3346(255);
-                        int i_30_ = class348_sub49_sub2.readByteSubtract((byte) -125);
+                        int i_29_ = class348_sub49_sub2.readIntInverseMiddle(255);
+                        int i_30_ = class348_sub49_sub2.readByteAdd((byte) -125);
                         int i_31_ = i_30_ & 0x7;
                         int i_32_ = (0x78 & i_30_) >> 3;
                         if (i_32_ == 15) i_32_ = -1;
@@ -196,10 +196,10 @@ final class Class133 {
                     if ((0x8 & i_0_) != 0) {
                         int[] is = new int[4];
                         for (int i_33_ = 0; i_33_ < 4; i_33_++) {
-                            is[i_33_] = class348_sub49_sub2.readByteAdd(123);
+                            is[i_33_] = class348_sub49_sub2.readShortAdd(123);
                             if (is[i_33_] == 65535) is[i_33_] = -1;
                         }
-                        int i_34_ = class348_sub49_sub2.readByteSubtract((byte) -101);
+                        int i_34_ = class348_sub49_sub2.readByteAdd((byte) -101);
                         Class239_Sub16.method1791(23946, is, i_34_, class318_sub1_sub3_sub3_sub2);
                     }
                     if ((i_0_ & 0x10) != 0) {

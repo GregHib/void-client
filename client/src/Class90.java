@@ -22,8 +22,8 @@ final class Class90 {
         int i_0_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
         int i_1_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-121);
         boolean bool = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(i + 156) == 1;
-        int i_2_ = Class299.aClass348_Sub49_Sub2_3813.readByteAdd(i + -172);
-        Class312.anInt3931 = Class299.aClass348_Sub49_Sub2_3813.readByteSubtract((byte) -112);
+        int i_2_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(i + -172);
+        Class312.anInt3931 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -112);
         Class322.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(125, i_0_);
         Class299.aClass348_Sub49_Sub2_3813.method3417(-122);

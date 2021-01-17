@@ -158,7 +158,7 @@ final class Class42 {
                         this.anIntArray572[i_12_] = class348_sub49.readInt((byte) -126);
                     this.aByteArray564 = new byte[i_9_];
                     for (int i_13_ = 0; i_9_ > i_13_; i_13_++)
-                        this.aByteArray564[i_13_] = class348_sub49.method3388(-107);
+                        this.aByteArray564[i_13_] = class348_sub49.readByte(-107);
                 } else if (i != 16) {
                     if (i == 17) this.aString565 = class348_sub49.method3377((byte) 117);
                     else if (i == 18) anInt598 = class348_sub49.readShort(842397944);

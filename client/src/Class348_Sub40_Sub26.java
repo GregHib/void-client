@@ -63,7 +63,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         int i_15_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -118);
         int i_16_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-117);
         int i_17_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
-        boolean bool = (Class299.aClass348_Sub49_Sub2_3813.readShortInverse((byte) 21) == 1);
+        boolean bool = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21) == 1);
 
         Class322.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(111, i_15_);
