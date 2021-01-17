@@ -171,7 +171,7 @@ final class Class77 {
             anInt1292 = 256;
         }
         if (i <= 12) return 116;
-        return Loader.loadRunescape ? anIntArray1289[anInt1292 - 1] : 0;
+        return anIntArray1289[anInt1292 - 1];
     }
 
     private final void method779(boolean bool) {
@@ -205,7 +205,7 @@ final class Class77 {
         }
         anInt1295++;
         if (i >= -47) method779(false);
-        return Loader.loadRunescape ? anIntArray1289[--anInt1292] : 0;
+        return anIntArray1289[--anInt1292];
     }
 
     public static void method782(int i) {

@@ -660,20 +660,18 @@ class Class348_Sub49 extends Class348 {
 
     final void method3390(BigInteger biginteger, byte i, BigInteger biginteger_85_) {
         try {
-            if (Loader.loadRunescape) {
-                anInt7147++;
-                int i_86_ = this.anInt7197;
-                this.anInt7197 = 0;
-                byte[] is = new byte[i_86_];
-                method3389(2147483647, 0, i_86_, is);
-                if (i >= -33) method3354(-73);
-                BigInteger biginteger_87_ = new BigInteger(is);
-                BigInteger biginteger_88_ = biginteger_87_.modPow(biginteger_85_, biginteger);
-                byte[] is_89_ = biginteger_88_.toByteArray();
-                this.anInt7197 = 0;
-                method3337((byte) 107, is_89_.length);
-                method3380(is_89_.length, 0, is_89_, 85);
-            }
+            anInt7147++;
+            int i_86_ = this.anInt7197;
+            this.anInt7197 = 0;
+            byte[] is = new byte[i_86_];
+            method3389(2147483647, 0, i_86_, is);
+            if (i >= -33) method3354(-73);
+            BigInteger biginteger_87_ = new BigInteger(is);
+            BigInteger biginteger_88_ = biginteger_87_.modPow(biginteger_85_, biginteger);
+            byte[] is_89_ = biginteger_88_.toByteArray();
+            this.anInt7197 = 0;
+            method3337((byte) 107, is_89_.length);
+            method3380(is_89_.length, 0, is_89_, 85);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("cea.SA(" + (biginteger != null ? "{...}" : "null") + ',' + i + ',' + (biginteger_85_ != null ? "{...}" : "null") + ')'));
         }
