@@ -1175,6 +1175,10 @@ final class Class66 {
                 }
                 return;
             }
+            if (i == 5547) {
+                anIntArray1149[anInt1173++] = Class348_Sub40_Sub21.anInt9282 == 1 ? 1 : 0;
+                return;
+            }
         } else if (i < 5700) {
             if (i == 5600) {
                 anInt1170 -= 2;
@@ -4012,6 +4016,12 @@ final class Class66 {
                     anIntArray1149[anInt1173++] = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aClass264_10217.method2019((byte) -31) >> 3;
                     return;
                 }
+                if (i == 3351) {
+                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3595(-83) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3588(-121) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3590((byte) 125) ? 1 : 0;
+                    return;
+                }
             } else if (i < 3500) {
                 if (i == 3400) {
                     anInt1173 -= 2;
@@ -5030,6 +5040,10 @@ final class Class66 {
                         Class356 class356 = (class348_sub42_sub19.aClass356Array9693[is_489_[i_488_]]);
                         Class348_Sub35 class348_sub35 = ((Class348_Sub35) class356.method3480(anIntArray1149[--anInt1173], -6008));
                         if (class348_sub35 != null) i_488_ += class348_sub35.anInt6976;
+                    } else if (i_490_ == 86) {
+                        if (anIntArray1149[--anInt1173] == 1) {
+                            i_488_ += is_489_[i_488_];
+                        }
                     }
                 } else {
                     boolean bool;
