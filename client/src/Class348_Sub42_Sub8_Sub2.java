@@ -636,7 +636,6 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return false;
         }
 
-        // 105 - gpi
         if (Class367_Sub4.aClass114_7323 == Class348_Sub3.aClass114_6584) {
             Class348_Sub16_Sub1.method2822(-101, Class299.aClass348_Sub49_Sub2_3813, Class348_Sub40_Sub25.anInt9341);
             Class348_Sub3.aClass114_6584 = null;
@@ -875,7 +874,6 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
 
-        // ping
         if (Class348_Sub3.aClass114_6584 == Class348_Sub46.aClass114_7113) {
             Class348_Sub3.aClass114_6584 = null;
             return false;
@@ -1312,7 +1310,6 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
 
-        // 19 - region
         if (Class348_Sub3.aClass114_6584 == Class20.aClass114_318) {
             Class348_Sub40_Sub26.method3120(-86);
             Class348_Sub3.aClass114_6584 = null;

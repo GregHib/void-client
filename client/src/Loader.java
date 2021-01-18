@@ -59,7 +59,7 @@ public class Loader extends Applet {
         aProperties1.put("haveie6", "0");
         aProperties1.put("havefirefox", "1");
         aProperties1.put("cookieprefix", "");
-        aProperties1.put("cookiehost", "rs2rsps.no-ip.org");
+        aProperties1.put("cookiehost", "127.0.0.1");
         aProperties1.put("cachesubdirid", "0");
         aProperties1.put("crashurl", "");
         aProperties1.put("unsignedurl", "");

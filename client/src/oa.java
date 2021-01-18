@@ -473,7 +473,7 @@ final class oa extends ha implements Interface19 {
 
                 if (!Class348_Sub40_Sub19.method3098(-30282, "sw3d")) throw new RuntimeException("");
                 Class257.method1949((byte) -128);
-                MA(aD4579, 0, 0); // error method
+                MA(aD4579, 0, 0);
                 Class59_Sub2_Sub1.method566(false, true, (byte) 23);
                 aBoolean5142 = true;
                 aClass101_5131 = new ja();
