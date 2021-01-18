@@ -1875,6 +1875,7 @@ public final class client extends Applet_Sub1 {
                 field.set(Class93.anApplet1530, null);
                 if (Class305.aCanvas3869 != null) return;
             } catch (Exception exception) {
+                exception.printStackTrace();
                 /* empty */
             }
         }
@@ -2073,19 +2074,23 @@ public final class client extends Applet_Sub1 {
                                     method.invoke(field_138_, Boolean.FALSE);
                                 }
                             } catch (Throwable throwable) {
+                                throwable.printStackTrace();
                                 /* empty */
                             }
                             method.invoke(field_136_, Boolean.FALSE);
                         } catch (Throwable throwable) {
+                            throwable.printStackTrace();
                             /* empty */
                         }
                     }
                 }
             } catch (Throwable throwable) {
+                throwable.printStackTrace();
                 /* empty */
             }
             string += "]";
         } catch (Throwable throwable) {
+            throwable.printStackTrace();
             /* empty */
         }
         return string;

@@ -62,28 +62,34 @@ final class Class228 {
                                             field_4_.set(object, new Integer(0));
                                             hashtable.remove(string);
                                         } catch (Throwable throwable) {
+                                            throwable.printStackTrace();
                                             /* empty */
                                         }
                                         method.invoke(method_5_, Boolean.FALSE);
                                         method.invoke(field_4_, Boolean.FALSE);
                                     }
                                 } catch (Throwable throwable) {
+                                    throwable.printStackTrace();
                                     /* empty */
                                 }
                                 method.invoke(field_2_, Boolean.FALSE);
                             } catch (Throwable throwable) {
+                                throwable.printStackTrace();
                                 /* empty */
                             }
                         }
                     } catch (Throwable throwable) {
+                        throwable.printStackTrace();
                         /* empty */
                     }
                 }
             } catch (Throwable throwable) {
+                throwable.printStackTrace();
                 /* empty */
             }
             method.invoke(field, Boolean.FALSE);
         } catch (Throwable throwable) {
+            throwable.printStackTrace();
             /* empty */
         }
         Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565 = hashtable;

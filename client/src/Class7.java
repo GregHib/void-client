@@ -83,6 +83,7 @@ public final class Class7 {
                 bool = true;
             }
         } catch (Throwable throwable) {
+            throwable.printStackTrace();
             /* empty */
         }
         try {
@@ -93,6 +94,7 @@ public final class Class7 {
                     Field field = Class.forName("sun.awt.Win32GraphicsDevice").getDeclaredField("valid");
                     field.set(aGraphicsDevice157, Boolean.TRUE);
                 } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
         }
@@ -101,6 +103,7 @@ public final class Class7 {
                 Field field = Class.forName("sun.awt.Win32GraphicsDevice").getDeclaredField("valid");
                 field.set(aGraphicsDevice157, Boolean.TRUE);
             } catch (Throwable throwable) {
+                throwable.printStackTrace();
                 /* empty */
             }
         }
