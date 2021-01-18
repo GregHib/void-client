@@ -126,7 +126,8 @@ final class Class348_Sub4 extends Class348 {
                 if (Class297.aString3782.toLowerCase().indexOf("apple") != -1) anInt6594 = 3;
                 else anInt6594 = 4;
             } else anInt6594 = 2;
-            int i = 2;
+            boolean oldJava = Class297.aString3796.startsWith("1.");
+            int i = oldJava ? 2 : 0;
             int i_3_ = 0;
             try {
                 while (Class297.aString3796.length() > i) {
@@ -152,7 +153,7 @@ final class Class348_Sub4 extends Class348 {
             }
             anInt6605 = i_3_;
             i_3_ = 0;
-            i = 1 + Class297.aString3796.indexOf('_', 4);
+            i = 1 + Class297.aString3796.indexOf(oldJava ? '_' : '.', 4);
             try {
                 for (/**/; Class297.aString3796.length() > i; i++) {
                     int i_6_ = Class297.aString3796.charAt(i);
