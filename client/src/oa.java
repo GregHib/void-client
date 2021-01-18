@@ -368,13 +368,7 @@ final class oa extends ha implements Interface19 {
     final void method3643(Canvas canvas, int i, int i_153_) {
         p var_p = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
         if (var_p == null) {
-            try {
-                Class var_class = Class.forName("java.awt.Canvas");
-                Method method = var_class.getMethod("setIgnoreRepaint", Boolean.TYPE);
-                method.invoke(canvas, Boolean.TRUE);
-            } catch (Exception exception) {
-                /* empty */
-            }
+            canvas.setIgnoreRepaint(true);
             var_p = new p(this, canvas, i, i_153_);
             aClass356_5126.method3483((byte) 36, canvas.hashCode(), var_p);
         } else if (var_p.anInt5145 != i || var_p.anInt5148 != i_153_) var_p.method3435(canvas, i, i_153_);

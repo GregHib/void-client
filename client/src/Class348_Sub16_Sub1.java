@@ -148,7 +148,7 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
     static final Class47 method2826(int i) {
         anInt8845++;
         try {
-            return (Class47) Class.forName("Class47_Sub2").newInstance();
+            return new Class47_Sub2();
         } catch (Throwable throwable) {
             if (i != 15) return null;
             return new Class47_Sub1();

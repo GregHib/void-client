@@ -1813,13 +1813,7 @@ final class ha_Sub2 extends ha {
                 if (aCanvas7626 == canvas) throw new RuntimeException();
                 if (aHashtable7577.containsKey(canvas)) break;
                 if (!canvas.isShowing()) throw new RuntimeException();
-                try {
-                    Class var_class = Class.forName("java.awt.Canvas");
-                    Method method = var_class.getMethod("setIgnoreRepaint", Boolean.TYPE);
-                    method.invoke(canvas, Boolean.TRUE);
-                } catch (Exception exception) {
-                    /* empty */
-                }
+                canvas.setIgnoreRepaint(true);
                 long l = anOpenGL7664.prepareSurface(canvas);
                 if (l == -1L) throw new RuntimeException();
                 aHashtable7577.put(canvas, new Long(l));

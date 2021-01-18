@@ -2051,17 +2051,14 @@ public final class client extends Applet_Sub1 {
             if (Class348_Sub40_Sub20.aClass348_Sub4_9264 != null) string += "|15)" + (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609);
             try {
                 if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
-                    Class var_class = Class.forName("java.lang.ClassLoader");
-                    Field field = var_class.getDeclaredField("nativeLibraries");
-                    Class var_class_134_ = Class.forName("java.lang.reflect.AccessibleObject");
-                    Method method = var_class_134_.getDeclaredMethod("setAccessible", Boolean.TYPE);
-                    method.invoke(field, Boolean.TRUE);
-                    Vector vector = ((Vector) field.get((aClass5189 != null ? aClass5189 : (aClass5189 = method118("client"))).getClassLoader()));
+                    Field field = ClassLoader.class.getDeclaredField("nativeLibraries");
+                    field.setAccessible(true);
+                    Vector vector = ((Vector) field.get((aClass5189 != null ? aClass5189 : (aClass5189 = client.class)).getClassLoader()));
                     for (int i_135_ = 0; i_135_ < vector.size(); i_135_++) {
                         try {
                             Object object = vector.elementAt(i_135_);
                             Field field_136_ = object.getClass().getDeclaredField("name");
-                            method.invoke(field_136_, Boolean.TRUE);
+                            field_136_.setAccessible(true);
                             try {
                                 String string_137_ = (String) field_136_.get(object);
 
@@ -2069,15 +2066,15 @@ public final class client extends Applet_Sub1 {
                                     Field field_138_ = object.getClass().getDeclaredField("handle");
 
 
-                                    method.invoke(field_138_, Boolean.TRUE);
+                                    field_138_.setAccessible(true);
                                     string += ("|16)" + (Long.toHexString(field_138_.getLong(object))));
-                                    method.invoke(field_138_, Boolean.FALSE);
+                                    field_138_.setAccessible(false);
                                 }
                             } catch (Throwable throwable) {
                                 throwable.printStackTrace();
                                 /* empty */
                             }
-                            method.invoke(field_136_, Boolean.FALSE);
+                            field_136_.setAccessible(false);
                         } catch (Throwable throwable) {
                             throwable.printStackTrace();
                             /* empty */
@@ -2096,12 +2093,4 @@ public final class client extends Applet_Sub1 {
         return string;
     }
 
-    /*synthetic*/
-    static Class method118(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

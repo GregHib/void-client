@@ -312,7 +312,7 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
         int i_7_ = -98 % ((i - -34) / 33);
         anInt8658++;
         try {
-            return (Class345) Class.forName("Class345_Sub1").newInstance();
+            return new Class345_Sub1();
         } catch (Throwable throwable) {
             return null;
         }

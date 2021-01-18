@@ -17,7 +17,7 @@ final class Class229 {
             return new Class241_Sub2();
         } catch (Throwable throwable) {
             try {
-                return (Class241) Class.forName("Class241_Sub3").newInstance();
+                return new Class241_Sub3();
             } catch (Throwable throwable_0_) {
                 return new Class241_Sub1();
             }

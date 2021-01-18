@@ -145,10 +145,10 @@ final class Class297 implements Runnable {
                             frame.setResizable(false);
                             if (this.aBoolean3794) aClass134_3802.method1146((class144.anInt2000 & 0xffff), (class144.anInt1999 >> 16), (class144.anInt2000 >>> 16), -43, 0xffff & (class144.anInt1999), frame);
                             else
-                                Class.forName("Class7").getMethod("method209", (new Class[]{(aClass3807 != null ? aClass3807 : (aClass3807 = (method2249("java.awt.Frame")))), Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE})).invoke(anObject3793, frame, (new Integer((class144.anInt2000) >>> 16)), (new Integer(0xffff & (class144.anInt2000))), (new Integer((class144.anInt1999) >> 16)), (new Integer((class144.anInt1999) & 0xffff)));
+                                ((Class7) anObject3793).method209(frame, (new Integer((class144.anInt2000) >>> 16)), (new Integer(0xffff & (class144.anInt2000))), (new Integer((class144.anInt1999) >> 16)), (new Integer((class144.anInt1999) & 0xffff)));
                         } else if (i == 7) {
                             if (this.aBoolean3794) aClass134_3802.method1147(((Frame) (class144.anObject1996)), 8);
-                            else Class.forName("Class7").getMethod("method211", new Class[0]).invoke(anObject3793);
+                            else ((Class7) anObject3793).method211();
                         } else if (i == 12) {
                             Class234 class234 = (method2241(((String) (class144.anObject1996)), 12606, aString3789, anInt3792));
                             class144.anObject1998 = class234;
@@ -159,15 +159,15 @@ final class Class297 implements Runnable {
                             int i_5_ = (class144.anInt2000);
                             int i_6_ = (class144.anInt1999);
                             if (this.aBoolean3794) aCallback_Sub1_3776.method3621(i_5_, (byte) 115, i_6_);
-                            else Class.forName("Class165").getDeclaredMethod("method1280", (new Class[]{(Integer.TYPE), (Integer.TYPE)})).invoke(anObject3791, (new Integer(i_5_)), (new Integer(i_6_)));
+                            else ((Class165) anObject3791).method1280((new Integer(i_5_)), (new Integer(i_6_)));
                         } else if ((this.aBoolean3777) && (i == 15)) {
                             boolean bool = ((class144.anInt2000) != 0);
                             Component component = ((Component) (class144.anObject1996));
                             if (this.aBoolean3794) aCallback_Sub1_3776.method3622(bool, 13259, component);
-                            else Class.forName("Class165").getDeclaredMethod("method1281", (new Class[]{((aClass3804 != null) ? aClass3804 : (aClass3804 = (method2249("java.awt.Component")))), (Boolean.TYPE)})).invoke(anObject3791, component, (new Boolean(bool)));
+                            else ((Class165) anObject3791).method1281(component, (new Boolean(bool)));
                         } else if (!(this.aBoolean3794) && (i == 17)) {
                             Object[] objects = ((Object[]) (class144.anObject1996));
-                            Class.forName("Class165").getDeclaredMethod("method1282", (new Class[]{((aClass3804 != null) ? aClass3804 : (aClass3804 = (method2249("java.awt.Component")))), ((aClass3805 != null) ? aClass3805 : (aClass3805 = (method2249("[I")))), Integer.TYPE, Integer.TYPE, ((aClass3806 != null) ? aClass3806 : (aClass3806 = (method2249("java.awt.Point"))))})).invoke(anObject3791, objects[0], objects[1], (new Integer(class144.anInt2000)), (new Integer(class144.anInt1999)), objects[2]);
+                            ((Class165) anObject3791).method1282((Component) objects[0], (int[]) objects[1], (new Integer(class144.anInt2000)), (new Integer(class144.anInt1999)), (Point) objects[2]);
                         } else if (i == 16) {
                             try {
                                 if (!aString3803.startsWith("win")) throw new Exception();
@@ -184,7 +184,7 @@ final class Class297 implements Runnable {
                                 throw exception;
                             }
                         } else throw new Exception("");
-                    } else if (!this.aBoolean3794) class144.anObject1998 = (Class.forName("Class7").getMethod("method210", new Class[0]).invoke(anObject3793));
+                    } else if (!this.aBoolean3794) class144.anObject1998 = ((Class7) anObject3793).method210();
                     else class144.anObject1998 = aClass134_3802.method1145(true);
                 } else throw new Exception("");
                 class144.anInt1997 = 1;
@@ -405,12 +405,12 @@ final class Class297 implements Runnable {
         }
         if (!this.aBoolean3794) {
             try {
-                aMethod3783 = (Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE));
+                aMethod3783 = Component.class.getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
             } catch (Exception exception) {
                 /* empty */
             }
             try {
-                aMethod3786 = (Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE));
+                aMethod3786 = (Container.class.getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE));
             } catch (Exception exception) {
                 /* empty */
             }
@@ -425,19 +425,19 @@ final class Class297 implements Runnable {
                 this.aClass234Array3795[i_23_] = new Class234(Class201.method1466(-2, ("main_file_cache.idx" + i_23_)), "rw", 1048576L);
             if (this.aBoolean3794) {
                 try {
-                    anObject3787 = Class.forName("Class1").newInstance();
+                    anObject3787 = new Class1();
                 } catch (Throwable throwable) {
                     /* empty */
                 }
             }
             try {
-                if (!this.aBoolean3794) anObject3793 = Class.forName("Class7").newInstance();
+                if (!this.aBoolean3794) anObject3793 = new Class7();
                 else aClass134_3802 = new Class134();
             } catch (Throwable throwable) {
                 /* empty */
             }
             try {
-                if (!this.aBoolean3794) anObject3791 = Class.forName("Class165").newInstance();
+                if (!this.aBoolean3794) anObject3791 = new Class165();
                 else aCallback_Sub1_3776 = new Callback_Sub1();
             } catch (Throwable throwable) {
                 /* empty */
@@ -460,12 +460,4 @@ final class Class297 implements Runnable {
         aThread3790.start();
     }
 
-    /*synthetic*/
-    static Class method2249(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

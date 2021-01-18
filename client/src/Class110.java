@@ -45,11 +45,11 @@ abstract class Class110 {
         anInt1701++;
         int i_1_ = 0;
         if (i != -1) method1034(117, null, null, 29);
-        Field[] fields = (aClass1713 != null ? aClass1713 : (aClass1713 = method1037("Class348_Sub51"))).getDeclaredFields();
+        Field[] fields = (aClass1713 != null ? aClass1713 : (aClass1713 = Class348_Sub51.class)).getDeclaredFields();
         Field[] fields_2_ = fields;
         for (int i_3_ = 0; fields_2_.length > i_3_; i_3_++) {
             Field field = fields_2_[i_3_];
-            if ((aClass1714 != null ? aClass1714 : (aClass1714 = method1037("Class239"))).isAssignableFrom(field.getType())) i_1_++;
+            if ((aClass1714 != null ? aClass1714 : (aClass1714 = Class239.class)).isAssignableFrom(field.getType())) i_1_++;
         }
         return i_1_ - -1;
     }
@@ -132,8 +132,7 @@ abstract class Class110 {
         anInt1705++;
         if (i != 9029) return null;
         try {
-            Class var_class = Class.forName("Class348_Sub31_Sub1");
-            Class348_Sub31 class348_sub31 = (Class348_Sub31) var_class.newInstance();
+            Class348_Sub31 class348_sub31 = new Class348_Sub31_Sub1();
             class348_sub31.method3008(canvas, i_17_, -90, i_16_);
             return class348_sub31;
         } catch (Throwable throwable) {
@@ -151,15 +150,6 @@ abstract class Class110 {
 
     public Class110() {
         /* empty */
-    }
-
-    /*synthetic*/
-    static Class method1037(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
     }
 
     static {

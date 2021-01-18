@@ -298,7 +298,7 @@ final class Class237_Sub1 extends Class237 {
         Interface10 interface10 = null;
         if (i == 0) interface10 = (Interface10) r_Sub2.method3297(i_37_, i_36_, i_35_);
         if (i == 1) interface10 = (Interface10) Class348_Sub40_Sub32.method3135(i_37_, i_36_, i_35_);
-        if (i == 2) interface10 = ((Interface10) Class177.method1353(i_37_, i_36_, i_35_, (aClass5827 != null ? aClass5827 : (aClass5827 = method1699("Interface10")))));
+        if (i == 2) interface10 = ((Interface10) Class177.method1353(i_37_, i_36_, i_35_, (aClass5827 != null ? aClass5827 : (aClass5827 = Interface10.class))));
         if (i_38_ != 30987) method1698(-120);
         if (i == 3) interface10 = (Interface10) Class348_Sub16_Sub3.method2878(i_37_, i_36_, i_35_);
         return interface10;
@@ -527,7 +527,7 @@ final class Class237_Sub1 extends Class237 {
                     } else {
                         if (i != 1) {
                             if (i == 2) {
-                                Class348_Sub42_Sub16.method3253(i_93_, i_94_, i_95_, (aClass5827 != null ? aClass5827 : (aClass5827 = method1699("Interface10"))));
+                                Class348_Sub42_Sub16.method3253(i_93_, i_94_, i_95_, (aClass5827 != null ? aClass5827 : (aClass5827 = Interface10.class)));
                                 if (class51.anInt920 != 0 && (class51.anInt961 + i_94_ < this.anInt3117) && (i_95_ - -class51.anInt961 < this.anInt3114) && (class51.anInt926 + i_94_ < this.anInt3117) && (this.anInt3114 > (i_95_ + class51.anInt926)))
                                     class361.method3509(i_98_, !class51.aBoolean876, class51.aBoolean896, i_94_, i_95_, class51.anInt926, 84, class51.anInt961);
                                 if (i_97_ != 9) break;
@@ -773,12 +773,4 @@ final class Class237_Sub1 extends Class237 {
         if (i != 1) method1698(-10);
     }
 
-    /*synthetic*/
-    static Class method1699(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

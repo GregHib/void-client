@@ -69,19 +69,10 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
         Interface10 interface10 = (Interface10) r_Sub2.method3297(i, i_2_, i_3_);
         boolean bool = true;
         if (interface10 != null) bool &= Class55.method520(interface10, -1);
-        interface10 = ((Interface10) Class177.method1353(i, i_2_, i_3_, (aClass8623 != null ? aClass8623 : (aClass8623 = method246("Interface10")))));
+        interface10 = ((Interface10) Class177.method1353(i, i_2_, i_3_, (aClass8623 != null ? aClass8623 : (aClass8623 = Interface10.class))));
         if (interface10 != null) bool &= Class55.method520(interface10, -1);
         interface10 = (Interface10) Class348_Sub16_Sub3.method2878(i, i_2_, i_3_);
         if (interface10 != null) bool &= Class55.method520(interface10, -1);
         return bool;
-    }
-
-    /*synthetic*/
-    static Class method246(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
     }
 }

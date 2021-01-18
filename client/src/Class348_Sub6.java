@@ -37,22 +37,16 @@ final class Class348_Sub6 extends Class348 {
             if (file != null) {
                 try {
                     file = new File(file.getCanonicalPath());
-                    Class var_class_1_ = Class.forName("java.lang.Runtime");
-                    Class var_class_2_ = Class.forName("java.lang.reflect.AccessibleObject");
-                    Method method = var_class_2_.getDeclaredMethod("setAccessible", Boolean.TYPE);
-                    Method method_3_ = (var_class_1_.getDeclaredMethod("load0", Class.forName("java.lang.Class"), Class.forName("java.lang.String")));
-                    method.invoke(method_3_, Boolean.TRUE);
-
-                    // System.out.println(var_class);
-
+                    Method method_3_ = Runtime.class.getDeclaredMethod("load0", Class.class, String.class);
+                    method_3_.setAccessible(true);
                     method_3_.invoke(Runtime.getRuntime(), var_class, file.getPath());
-                    method.invoke(method_3_, Boolean.FALSE);
+                    method_3_.setAccessible(false);
                     Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.put(string, var_class);
                     return true;
                 } catch (NoSuchMethodException nosuchmethodexception) {
                     nosuchmethodexception.printStackTrace();
                     System.load(file.getPath());
-                    Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = method2771("Class90"))));
+                    Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = Class90.class)));
                     return true;
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
@@ -119,15 +113,6 @@ final class Class348_Sub6 extends Class348 {
             Class10.anIntArray179[i_5_] = i_20_;
         }
         if (i != 2) anInt6634 = 92;
-    }
-
-    /*synthetic*/
-    static Class method2771(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
     }
 
     static {

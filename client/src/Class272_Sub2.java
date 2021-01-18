@@ -2,6 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import sun.net.www.protocol.http.AuthenticationInfo;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -100,17 +102,16 @@ public final class Class272_Sub2 extends Class272 {
         if (proxy.type() == Proxy.Type.HTTP) {
             String string = null;
             try {
-                Class var_class = (Class.forName("sun.net.www.protocol.http.AuthenticationInfo"));
-                Method method = (var_class.getDeclaredMethod("getProxyAuth", (aClass6173 == null ? aClass6173 = method2054("java.lang.String") : aClass6173), Integer.TYPE));
+                Method method = (AuthenticationInfo.class.getDeclaredMethod("getProxyAuth", (aClass6173 == null ? aClass6173 = String.class : aClass6173), Integer.TYPE));
                 method.setAccessible(true);
                 Object object = method.invoke(null, inetsocketaddress.getHostName(), new Integer(inetsocketaddress.getPort()));
                 if (null != object) {
-                    Method method_14_ = (var_class.getDeclaredMethod("supportsPreemptiveAuthorization"));
+                    Method method_14_ = (AuthenticationInfo.class.getDeclaredMethod("supportsPreemptiveAuthorization"));
                     method_14_.setAccessible(true);
                     if (((Boolean) method_14_.invoke(object, new Object[0])).booleanValue()) {
-                        Method method_15_ = var_class.getDeclaredMethod("getHeaderName");
+                        Method method_15_ = AuthenticationInfo.class.getDeclaredMethod("getHeaderName");
                         method_15_.setAccessible(true);
-                        Method method_16_ = (var_class.getDeclaredMethod("getHeaderValue", (aClass6174 == null ? aClass6174 = method2054("java.net.URL") : aClass6174), (aClass6173 == null ? (aClass6173 = method2054("java.lang.String")) : aClass6173)));
+                        Method method_16_ = (AuthenticationInfo.class.getDeclaredMethod("getHeaderValue", (aClass6174 == null ? aClass6174 = URL.class : aClass6174), (aClass6173 == null ? (aClass6173 = String.class) : aClass6173)));
                         method_16_.setAccessible(true);
                         String string_17_ = ((String) method_15_.invoke(object, new Object[0]));
                         String string_18_ = ((String) method_16_.invoke(object, (new Object[]{new URL("https://" + (this.aString3476) + "/"), "https"})));
@@ -127,20 +128,5 @@ public final class Class272_Sub2 extends Class272 {
             return socket;
         }
         return null;
-    }
-
-    static Class method2054(String string) {
-        Class var_class = null;
-        try {
-            var_class = Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            try {
-                throw new NoClassDefFoundError().initCause(classnotfoundexception);
-            } catch (Throwable e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }
-        return var_class;
     }
 }

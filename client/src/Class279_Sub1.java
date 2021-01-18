@@ -22,7 +22,7 @@ final class Class279_Sub1 extends Class279 {
 
     final void method2082(int i) throws LineUnavailableException {
         try {
-            DataLine.Info info = (new DataLine.Info((aClass6180 == null ? (aClass6180 = method2096("javax.sound.sampled.SourceDataLine")) : aClass6180), anAudioFormat6179, i << (Class282.aBoolean3652 ? 2 : 1)));
+            DataLine.Info info = (new DataLine.Info((aClass6180 == null ? (aClass6180 = SourceDataLine.class) : aClass6180), anAudioFormat6179, i << (Class282.aBoolean3652 ? 2 : 1)));
             aSourceDataLine6177 = (SourceDataLine) AudioSystem.getLine(info);
             aSourceDataLine6177.open();
             aSourceDataLine6177.start();
@@ -60,7 +60,7 @@ final class Class279_Sub1 extends Class279 {
         if (aBoolean6178) {
             aSourceDataLine6177.close();
             aSourceDataLine6177 = null;
-            DataLine.Info info = (new DataLine.Info((aClass6180 == null ? (aClass6180 = method2096("javax.sound.sampled.SourceDataLine")) : aClass6180), anAudioFormat6179, anInt6175 << (!Class282.aBoolean3652 ? 1 : 2)));
+            DataLine.Info info = (new DataLine.Info((aClass6180 == null ? (aClass6180 = SourceDataLine.class) : aClass6180), anAudioFormat6179, anInt6175 << (!Class282.aBoolean3652 ? 1 : 2)));
             aSourceDataLine6177 = (SourceDataLine) AudioSystem.getLine(info);
             aSourceDataLine6177.open();
             aSourceDataLine6177.start();
@@ -77,20 +77,5 @@ final class Class279_Sub1 extends Class279 {
             aByteArray6176[i_1_ * 2 + 1] = (byte) (i_2_ >> 16);
         }
         aSourceDataLine6177.write(aByteArray6176, 0, i << 1);
-    }
-
-    static Class method2096(String string) {
-        Class var_class = null;
-        try {
-            var_class = Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            try {
-                throw new NoClassDefFoundError().initCause(classnotfoundexception);
-            } catch (Throwable e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }
-        return var_class;
     }
 }

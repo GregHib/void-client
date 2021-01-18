@@ -55,7 +55,7 @@ final class Class171 {
                     if (i_15_ >= Class318_Sub7.anInt6451) i_15_ = Class318_Sub7.anInt6451 - 1;
                     for (int i_16_ = i_14_; i_16_ <= i_15_; i_16_++) {
                         int i_17_ = 1;
-                        Class318_Sub1_Sub3 class318_sub1_sub3 = (Class177.method1353(i_3_, i_16_, i_10_, (aClass2276 != null ? aClass2276 : (aClass2276 = method1324("Class318_Sub1_Sub3")))));
+                        Class318_Sub1_Sub3 class318_sub1_sub3 = (Class177.method1353(i_3_, i_16_, i_10_, (aClass2276 != null ? aClass2276 : (aClass2276 = Class318_Sub1_Sub3.class))));
                         if (class318_sub1_sub3 != null && (class318_sub1_sub3.aByte8745) != 0) {
                             if ((class318_sub1_sub3.aByte8745) == 1) {
                                 boolean bool = i_16_ - 1 >= i_14_;
@@ -150,12 +150,4 @@ final class Class171 {
         this.anInt2270 = i_45_;
     }
 
-    /*synthetic*/
-    static Class method1324(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

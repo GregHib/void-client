@@ -25,7 +25,7 @@ final class Class179 {
         if (is == null) return null;
         if (is.length > 136 && !Class17.aBoolean247) {
             try {
-                Class344 class344 = (Class344) Class.forName("Class344_Sub1").newInstance();
+                Class344 class344 = new Class344_Sub1();
                 class344.method2691((byte) 62, is);
                 return class344;
             } catch (Throwable throwable) {

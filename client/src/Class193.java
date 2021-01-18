@@ -21,7 +21,7 @@ final class Class193 {
             if (i_0_ < 0 || i_0_ >= 2) throw new IllegalArgumentException();
             if (i < 256) i = 256;
             try {
-                Class279 class279 = (Class279) Class.forName("Class279_Sub1").newInstance();
+                Class279 class279 = new Class279_Sub1();
                 class279.anInt3620 = i;
                 class279.anIntArray3603 = new int[(Class282.aBoolean3652 ? 2 : 1) * 256];
                 class279.method2095(component);

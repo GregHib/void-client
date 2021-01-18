@@ -2,6 +2,9 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import com.sun.management.HotSpotDiagnosticMXBean;
+
+import java.lang.management.ManagementFactory;
 import java.lang.reflect.Method;
 
 final class Class133 {
@@ -231,13 +234,7 @@ final class Class133 {
         anInt1913++;
         if (Class168.anObject2256 == null) {
             try {
-                Class var_class = Class.forName("java.lang.management.ManagementFactory");
-                Method method = var_class.getDeclaredMethod("getPlatformMBeanServer", null);
-                Object object = method.invoke(null, null);
-                if (i == 26) {
-                    Method method_37_ = (var_class.getMethod("newPlatformMXBeanProxy", (Class.forName("javax.management.MBeanServerConnection")), (aClass1919 != null ? aClass1919 : (aClass1919 = method1143("java.lang.String"))), (aClass1920 != null ? aClass1920 : (aClass1920 = method1143("java.lang.Class")))));
-                    Class168.anObject2256 = (method_37_.invoke(null, object, "com.sun.management:type=HotSpotDiagnostic", (Class.forName("com.sun.management.HotSpotDiagnosticMXBean"))));
-                }
+                Class168.anObject2256 = ManagementFactory.newPlatformMXBeanProxy(ManagementFactory.getPlatformMBeanServer(), "com.sun.management:type=HotSpotDiagnostic", HotSpotDiagnosticMXBean.class);
             } catch (Exception exception) {
                 System.out.println("HeapDump setup error:");
                 exception.printStackTrace();
@@ -245,12 +242,4 @@ final class Class133 {
         }
     }
 
-    /*synthetic*/
-    static Class method1143(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

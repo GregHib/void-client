@@ -611,7 +611,7 @@ abstract class ha_Sub3 extends ha {
                     }
                 }
             } else if (i_41_ == 2) {
-                Interface10 interface10 = ((Interface10) (Class177.method1353(i_40_, i_37_, i, (aClass8211 != null ? aClass8211 : (aClass8211 = method3951("Interface10"))))));
+                Interface10 interface10 = ((Interface10) (Class177.method1353(i_40_, i_37_, i, (aClass8211 != null ? aClass8211 : (aClass8211 = Interface10.class)))));
                 if (interface10 != null) {
                     if (i_36_ == 11) i_36_ = 10;
                     if (!(interface10 instanceof Class318_Sub1_Sub3_Sub2)) Class218.method1591(i_37_, 43, i_41_, i_35_, interface10.method42(-107), i_36_, i, i_38_, i_40_);
@@ -1846,13 +1846,7 @@ abstract class ha_Sub3 extends ha {
                 if (canvas == this.aCanvas7925) throw new RuntimeException();
                 if (aHashtable8014.containsKey(canvas)) break;
                 if (!canvas.isShowing()) throw new RuntimeException();
-                try {
-                    Class var_class = Class.forName("java.awt.Canvas");
-                    Method method = var_class.getMethod("setIgnoreRepaint", Boolean.TYPE);
-                    method.invoke(canvas, Boolean.TRUE);
-                } catch (Exception exception) {
-                    /* empty */
-                }
+                canvas.setIgnoreRepaint(true);
                 Object object = method3876(-1, canvas);
                 if (object == null) throw new RuntimeException();
                 aHashtable8014.put(canvas, object);
@@ -2794,15 +2788,6 @@ abstract class ha_Sub3 extends ha {
     }
 
     abstract void method3950(int i);
-
-    /*synthetic*/
-    static Class method3951(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 
     static {
         anInt8001 = -1;

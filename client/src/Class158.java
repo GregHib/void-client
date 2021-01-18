@@ -2,6 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import com.sun.management.HotSpotDiagnosticMXBean;
+
 import java.io.File;
 import java.lang.reflect.Method;
 
@@ -31,8 +33,7 @@ final class Class158 implements Interface12 {
         anInt4939++;
         if (bool_0_ != false) aClass299_4938 = null;
         try {
-            Class var_class = Class.forName("com.sun.management.HotSpotDiagnosticMXBean");
-            Method method = (var_class.getDeclaredMethod("dumpHeap", (aClass4949 != null ? aClass4949 : (aClass4949 = method1250("java.lang.String"))), Boolean.TYPE));
+            Method method = (HotSpotDiagnosticMXBean.class.getDeclaredMethod("dumpHeap", (aClass4949 != null ? aClass4949 : (aClass4949 = String.class)), Boolean.TYPE));
             method.invoke(Class168.anObject2256, file.getAbsolutePath(), new Boolean(bool));
         } catch (Exception exception) {
             System.out.println("HeapDump error:");
@@ -78,12 +79,4 @@ final class Class158 implements Interface12 {
         }
     }
 
-    /*synthetic*/
-    static Class method1250(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

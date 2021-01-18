@@ -265,7 +265,7 @@ final class Class348_Sub41 extends Class348 {
             } else Class267.method2028(i_46_, class51, i_42_, var_ha, i_48_, 126);
         }
         if (bool != false) anInt7054 = 122;
-        interface10 = ((Interface10) Class177.method1353(i_43_, i_45_, i_44_, (aClass7056 != null ? aClass7056 : (aClass7056 = method3160("Interface10")))));
+        interface10 = ((Interface10) Class177.method1353(i_43_, i_45_, i_44_, (aClass7056 != null ? aClass7056 : (aClass7056 = Interface10.class))));
         if (interface10 != null) {
             Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-88));
             int i_51_ = interface10.method41(-32228) & 0x3;
@@ -290,12 +290,4 @@ final class Class348_Sub41 extends Class348 {
         /* empty */
     }
 
-    /*synthetic*/
-    static Class method3160(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

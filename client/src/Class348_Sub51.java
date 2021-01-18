@@ -261,7 +261,7 @@ final class Class348_Sub51 extends Class348 {
             Field[] fields_5_ = fields;
             for (int i_6_ = 0; fields_5_.length > i_6_; i_6_++) {
                 Field field = fields_5_[i_6_];
-                if ((aClass7273 != null ? aClass7273 : (aClass7273 = method3431("Class239"))).isAssignableFrom(field.getType())) {
+                if ((aClass7273 != null ? aClass7273 : (aClass7273 = Class239.class)).isAssignableFrom(field.getType())) {
                     Class239 class239 = (Class239) field.get(this);
                     class239.method1716(false);
                 }
@@ -358,15 +358,6 @@ final class Class348_Sub51 extends Class348 {
             method3424(925, class348_sub49);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("dh.<init>(" + (class348_sub49 != null ? "{...}" : "null") + ',' + (class230 != null ? "{...}" : "null") + ',' + i + ')'));
-        }
-    }
-
-    /*synthetic*/
-    static Class method3431(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
         }
     }
 

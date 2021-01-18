@@ -39,7 +39,7 @@ final class Class61 {
         anInt1104++;
         Class272 class272;
         try {
-            class272 = (Class272) Class.forName("Class272_Sub2").newInstance();
+            class272 = new Class272_Sub2();
         } catch (Throwable throwable) {
             class272 = new Class272_Sub1();
         }

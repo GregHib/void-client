@@ -170,7 +170,7 @@ final class Class348_Sub14 extends Class348 {
                         for (int i_39_ = i; i_39_ <= 1 + i && i_39_ <= 3; i_39_++) {
                             if (Class58.method536(i_38_, !bool, i_37_, i, i_39_)) {
                                 Interface10 interface10 = ((Interface10) Class348_Sub16_Sub3.method2878(i_39_, i_37_, i_38_));
-                                if (interface10 == null) interface10 = ((Interface10) (Class177.method1353(i_39_, i_37_, i_38_, (aClass6767 != null ? aClass6767 : (aClass6767 = (method2809("Interface10")))))));
+                                if (interface10 == null) interface10 = ((Interface10) (Class177.method1353(i_39_, i_37_, i_38_, (aClass6767 != null ? aClass6767 : (aClass6767 = Interface10.class)))));
                                 if (interface10 == null) interface10 = ((Interface10) r_Sub2.method3297(i_39_, i_37_, i_38_));
                                 if (interface10 == null) interface10 = ((Interface10) (Class348_Sub40_Sub32.method3135(i_39_, i_37_, i_38_)));
                                 if (interface10 != null) {
@@ -240,15 +240,6 @@ final class Class348_Sub14 extends Class348 {
             return true;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ij.E(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool + ')'));
-        }
-    }
-
-    /*synthetic*/
-    static Class method2809(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
         }
     }
 }

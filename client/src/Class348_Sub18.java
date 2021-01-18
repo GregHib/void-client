@@ -150,7 +150,7 @@ final class Class348_Sub18 extends Class348 {
     static final Class373 method2941(Component component, int i, boolean bool) {
         anInt6808++;
         try {
-            Constructor constructor = (Class.forName("Class373_Sub1").getDeclaredConstructor((aClass6823 != null ? aClass6823 : (aClass6823 = method2943("java.awt.Component"))), Boolean.TYPE));
+            Constructor constructor = (Class373_Sub1.class.getDeclaredConstructor((aClass6823 != null ? aClass6823 : (aClass6823 = Component.class)), Boolean.TYPE));
             return ((Class373) constructor.newInstance(new Object[]{component, new Boolean(bool)}));
         } catch (Throwable throwable) {
             if (i != 0) return null;
@@ -194,12 +194,4 @@ final class Class348_Sub18 extends Class348 {
         this.anInt6813 = i_18_;
     }
 
-    /*synthetic*/
-    static Class method2943(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

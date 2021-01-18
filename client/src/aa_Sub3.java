@@ -33,15 +33,12 @@ final class aa_Sub3 extends aa {
         do {
             if (!Class348_Sub23_Sub1.aClass297_8992.aBoolean3794) {
                 try {
-                    Method method = (aClass5208 != null ? aClass5208 : (aClass5208 = method169("java.lang.Runtime"))).getMethod("maxMemory");
-                    if (method != null) {
-                        try {
-                            Runtime runtime = Runtime.getRuntime();
-                            Long var_long = (Long) method.invoke(runtime, null);
-                            Class226.anInt2964 = 1 + (int) (var_long.longValue() / 1048576L);
-                        } catch (Throwable throwable) {
-                            /* empty */
-                        }
+                    try {
+                        Runtime runtime = Runtime.getRuntime();
+                        Long var_long = runtime.maxMemory();
+                        Class226.anInt2964 = 1 + (int) (var_long.longValue() / 1048576L);
+                    } catch (Throwable throwable) {
+                        /* empty */
                     }
                     break;
                 } catch (Exception exception) {
@@ -63,12 +60,4 @@ final class aa_Sub3 extends aa {
         }
     }
 
-    /*synthetic*/
-    static Class method169(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
-    }
 }

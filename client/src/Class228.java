@@ -31,12 +31,9 @@ final class Class228 {
             hashtable.put(object, Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.get(object));
         }
         try {
-            Class var_class = Class.forName("java.lang.reflect.AccessibleObject");
-            Class var_class_0_ = Class.forName("java.lang.ClassLoader");
-            Field field = var_class_0_.getDeclaredField("nativeLibraries");
+            Field field = ClassLoader.class.getDeclaredField("nativeLibraries");
             if (bool != true) return false;
-            Method method = var_class.getDeclaredMethod("setAccessible", Boolean.TYPE);
-            method.invoke(field, Boolean.TRUE);
+            field.setAccessible(true);
             try {
                 enumeration = Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.keys();
                 while (enumeration.hasMoreElements()) {
@@ -49,14 +46,14 @@ final class Class228 {
                             try {
                                 Object object = vector.elementAt(i);
                                 Field field_2_ = object.getClass().getDeclaredField("name");
-                                method.invoke(field_2_, Boolean.TRUE);
+                                field_2_.setAccessible(true);
                                 try {
                                     String string_3_ = (String) field_2_.get(object);
                                     if (string_3_ != null && (string_3_.equalsIgnoreCase(file.getCanonicalPath()))) {
                                         Field field_4_ = object.getClass().getDeclaredField("handle");
                                         Method method_5_ = (object.getClass().getDeclaredMethod("finalize"));
-                                        method.invoke(field_4_, Boolean.TRUE);
-                                        method.invoke(method_5_, Boolean.TRUE);
+                                        field_4_.setAccessible(true);
+                                        method_5_.setAccessible(true);
                                         try {
                                             method_5_.invoke(object);
                                             field_4_.set(object, new Integer(0));
@@ -65,14 +62,14 @@ final class Class228 {
                                             throwable.printStackTrace();
                                             /* empty */
                                         }
-                                        method.invoke(method_5_, Boolean.FALSE);
-                                        method.invoke(field_4_, Boolean.FALSE);
+                                        method_5_.setAccessible(false);
+                                        field_4_.setAccessible(false);
                                     }
                                 } catch (Throwable throwable) {
                                     throwable.printStackTrace();
                                     /* empty */
                                 }
-                                method.invoke(field_2_, Boolean.FALSE);
+                                field_2_.setAccessible(false);
                             } catch (Throwable throwable) {
                                 throwable.printStackTrace();
                                 /* empty */
@@ -87,7 +84,7 @@ final class Class228 {
                 throwable.printStackTrace();
                 /* empty */
             }
-            method.invoke(field, Boolean.FALSE);
+            field.setAccessible(false);
         } catch (Throwable throwable) {
             throwable.printStackTrace();
             /* empty */

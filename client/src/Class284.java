@@ -57,7 +57,7 @@ final class Class284 {
         anInt3674++;
         try {
             if (i != -42) anInt3676 = -23;
-            return (Class246) Class.forName("Class246_Sub1").newInstance();
+            return new Class246_Sub1();
         } catch (Throwable throwable) {
             return null;
         }

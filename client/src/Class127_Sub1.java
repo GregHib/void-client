@@ -60,16 +60,13 @@ final class Class127_Sub1 extends Class127 {
     static final void method1119(boolean bool) {
         anInt8381++;
         try {
-            Method method = (aClass8389 != null ? aClass8389 : (aClass8389 = method1121("java.lang.Runtime"))).getMethod("availableProcessors");
             if (bool != false) method1118(false, false, null, -35);
-            if (method != null) {
-                try {
-                    Runtime runtime = Runtime.getRuntime();
-                    Integer integer = (Integer) method.invoke(runtime, null);
-                    Class348_Sub40_Sub29.anInt9372 = integer.intValue();
-                } catch (Throwable throwable) {
-                    /* empty */
-                }
+            try {
+                Runtime runtime = Runtime.getRuntime();
+                Integer integer = runtime.availableProcessors();
+                Class348_Sub40_Sub29.anInt9372 = integer.intValue();
+            } catch (Throwable throwable) {
+                /* empty */
             }
         } catch (Exception exception) {
             /* empty */
@@ -81,15 +78,6 @@ final class Class127_Sub1 extends Class127 {
         aClass271_8378 = null;
         aClass114_8385 = null;
         if (i != 1) method1119(true);
-    }
-
-    /*synthetic*/
-    static Class method1121(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
     }
 
     static {

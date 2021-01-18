@@ -57,7 +57,7 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
     static final boolean method3098(int i, String string) {
         if (i != -30282) return true;
         anInt9255++;
-        return Class348_Sub6.method2769((aClass9260 != null ? aClass9260 : (aClass9260 = method3101("Class90"))), (byte) 20, string);
+        return Class348_Sub6.method2769((aClass9260 != null ? aClass9260 : (aClass9260 = Class90.class)), (byte) 20, string);
     }
 
     public static void method3099(byte i) {
@@ -71,15 +71,6 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
         anInt9253++;
         if (bool != false) anIntArray9259 = null;
         return Class230.method1637(i, 32768, i_4_) | (0x800 & i_4_) != 0 || Class273.method2056(i_4_, 86, i);
-    }
-
-    /*synthetic*/
-    static Class method3101(String string) {
-        try {
-            return Class.forName(string);
-        } catch (ClassNotFoundException classnotfoundexception) {
-            throw new NoClassDefFoundError(classnotfoundexception.getMessage());
-        }
     }
 
     static {
