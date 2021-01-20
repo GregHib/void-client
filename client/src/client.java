@@ -950,8 +950,12 @@ public final class client extends Applet_Sub1 {
             Class348_Sub40_Sub35.aClass161_9443.anInt2143 = Integer.parseInt(this.getParameter("demoid"));
             Class348_Sub40_Sub35.aClass161_9443.aString2147 = this.getParameter("demoaddress");
             Class8.aClass364_165 = (Class348_Sub8.method2776((byte) -93, Integer.parseInt(this.getParameter("modewhere"))));
-            if (Class76.aClass364_1279 == Class8.aClass364_165) Class8.aClass364_165 = Class108.aClass364_1657;
-            else if (!Class315.method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) Class8.aClass364_165 = Class55_Sub1.aClass364_5271;
+            if (Class76.aClass364_1279 == Class8.aClass364_165) {
+                Class8.aClass364_165 = Class108.aClass364_1657;
+            }
+            else if (!Class315.method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
+                Class8.aClass364_165 = Class55_Sub1.aClass364_5271;
+            }
             Class11.aClass231_196 = (Class237.method1677(-121, Integer.parseInt(this.getParameter("modewhat"))));
             if (Class11.aClass231_196 != Class288.aClass231_4953 && Class11.aClass231_196 != Class348_Sub40_Sub20.aClass231_9263 && Class68.aClass231_1189 != Class11.aClass231_196) Class11.aClass231_196 = Class68.aClass231_1189;
             try {
