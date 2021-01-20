@@ -44,12 +44,16 @@ final class Class348_Sub6 extends Class348 {
                     Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.put(string, var_class);
                     return true;
                 } catch (NoSuchMethodException nosuchmethodexception) {
-                    nosuchmethodexception.printStackTrace();
+                    if (Loader.trace) {
+                        nosuchmethodexception.printStackTrace();
+                    }
                     System.load(file.getPath());
                     Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = Class90.class)));
                     return true;
                 } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    if (Loader.trace) {
+                        throwable.printStackTrace();
+                    }
                     /* empty */
                 }
             }

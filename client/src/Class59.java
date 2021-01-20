@@ -160,7 +160,9 @@ abstract class Class59 {
         try {
             file = Class201.method1466(i + -7470, string_52_);
         } catch (RuntimeException runtimeexception) {
-            runtimeexception.printStackTrace();
+            if (Loader.trace) {
+                runtimeexception.printStackTrace();
+            }
             return -1;
         }
         if (is != null && file != null) {
@@ -178,7 +180,9 @@ abstract class Class59 {
             try {
                 if (!bool) Class59_Sub1.aClass297_5297.method2242(is, (byte) -104, file);
             } catch (Throwable throwable) {
-                throwable.printStackTrace();
+                if (Loader.trace) {
+                    throwable.printStackTrace();
+                }
                 return -1;
             }
             Class166.method1286(file, 64, string);

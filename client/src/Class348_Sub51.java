@@ -267,7 +267,9 @@ final class Class348_Sub51 extends Class348 {
                 }
             }
         } catch (IllegalAccessException illegalaccessexception) {
-            illegalaccessexception.printStackTrace();
+            if (Loader.trace) {
+                illegalaccessexception.printStackTrace();
+            }
             /* empty */
         }
     }

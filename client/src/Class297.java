@@ -189,7 +189,9 @@ final class Class297 implements Runnable {
                 } else throw new Exception("");
                 class144.anInt1997 = 1;
             } catch (Throwable throwable) {
-                throwable.printStackTrace();
+                if (Loader.trace) {
+                    throwable.printStackTrace();
+                }
                 class144.anInt1997 = 2;
             }
             synchronized (class144) {

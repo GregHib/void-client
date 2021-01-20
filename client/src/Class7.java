@@ -85,7 +85,9 @@ public final class Class7 {
                 bool = true;
             }
         } catch (Throwable throwable) {
-            throwable.printStackTrace();
+            if (Loader.trace) {
+                throwable.printStackTrace();
+            }
             /* empty */
         }
         try {
@@ -96,7 +98,9 @@ public final class Class7 {
                     Field field = Win32GraphicsDevice.class.getDeclaredField("valid");
                     field.set(aGraphicsDevice157, Boolean.TRUE);
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    if (Loader.trace) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
@@ -105,7 +109,9 @@ public final class Class7 {
                 Field field = Win32GraphicsDevice.class.getDeclaredField("valid");
                 field.set(aGraphicsDevice157, Boolean.TRUE);
             } catch (Throwable throwable) {
-                throwable.printStackTrace();
+                if (Loader.trace) {
+                    throwable.printStackTrace();
+                }
                 /* empty */
             }
         }

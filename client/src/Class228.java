@@ -59,34 +59,46 @@ final class Class228 {
                                             field_4_.set(object, new Integer(0));
                                             hashtable.remove(string);
                                         } catch (Throwable throwable) {
-                                            throwable.printStackTrace();
+                                            if (Loader.trace) {
+                                                throwable.printStackTrace();
+                                            }
                                             /* empty */
                                         }
                                         method_5_.setAccessible(false);
                                         field_4_.setAccessible(false);
                                     }
                                 } catch (Throwable throwable) {
-                                    throwable.printStackTrace();
+                                    if (Loader.trace) {
+                                        throwable.printStackTrace();
+                                    }
                                     /* empty */
                                 }
                                 field_2_.setAccessible(false);
                             } catch (Throwable throwable) {
-                                throwable.printStackTrace();
+                                if (Loader.trace) {
+                                    throwable.printStackTrace();
+                                }
                                 /* empty */
                             }
                         }
                     } catch (Throwable throwable) {
-                        throwable.printStackTrace();
+                        if (Loader.trace) {
+                            throwable.printStackTrace();
+                        }
                         /* empty */
                     }
                 }
             } catch (Throwable throwable) {
-                throwable.printStackTrace();
+                if (Loader.trace) {
+                    throwable.printStackTrace();
+                }
                 /* empty */
             }
             field.setAccessible(false);
         } catch (Throwable throwable) {
-            throwable.printStackTrace();
+            if (Loader.trace) {
+                throwable.printStackTrace();
+            }
             /* empty */
         }
         Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565 = hashtable;

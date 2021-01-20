@@ -1875,7 +1875,9 @@ public final class client extends Applet_Sub1 {
                 field.set(Class93.anApplet1530, null);
                 if (Class305.aCanvas3869 != null) return;
             } catch (Exception exception) {
-                exception.printStackTrace();
+                if (Loader.trace) {
+                    exception.printStackTrace();
+                }
                 /* empty */
             }
         }
@@ -2071,23 +2073,31 @@ public final class client extends Applet_Sub1 {
                                     field_138_.setAccessible(false);
                                 }
                             } catch (Throwable throwable) {
-                                throwable.printStackTrace();
+                                if (Loader.trace) {
+                                    throwable.printStackTrace();
+                                }
                                 /* empty */
                             }
                             field_136_.setAccessible(false);
                         } catch (Throwable throwable) {
-                            throwable.printStackTrace();
+                            if (Loader.trace) {
+                                throwable.printStackTrace();
+                            }
                             /* empty */
                         }
                     }
                 }
             } catch (Throwable throwable) {
-                throwable.printStackTrace();
+                if (Loader.trace) {
+                    throwable.printStackTrace();
+                }
                 /* empty */
             }
             string += "]";
         } catch (Throwable throwable) {
-            throwable.printStackTrace();
+            if (Loader.trace) {
+                throwable.printStackTrace();
+            }
             /* empty */
         }
         return string;
