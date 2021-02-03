@@ -127,16 +127,16 @@ final class Class225 {
     private final void method1622(Class348_Sub49 class348_sub49, int i, int i_12_) {
         anInt2903++;
         if (i_12_ == 1) {
-            this.anInt2918 = class348_sub49.readShort(i ^ 0x3235f8c8);
-            this.anInt2951 = class348_sub49.readShort(842397944);
+            this.anInt2918 = class348_sub49.readUnsignedShort(i ^ 0x3235f8c8);
+            this.anInt2951 = class348_sub49.readUnsignedShort(842397944);
             if (this.anInt2951 == 65535) this.anInt2951 = -1;
             if (this.anInt2918 == 65535) this.anInt2918 = -1;
         } else if (i_12_ != 2) {
-            if (i_12_ == 3) this.anInt2924 = class348_sub49.readShort(i + 842397896);
-            else if (i_12_ == 4) this.anInt2958 = class348_sub49.readShort(842397944);
-            else if (i_12_ == 5) this.anInt2947 = class348_sub49.readShort(842397944);
+            if (i_12_ == 3) this.anInt2924 = class348_sub49.readUnsignedShort(i + 842397896);
+            else if (i_12_ == 4) this.anInt2958 = class348_sub49.readUnsignedShort(842397944);
+            else if (i_12_ == 5) this.anInt2947 = class348_sub49.readUnsignedShort(842397944);
             else if (i_12_ != 6) {
-                if (i_12_ == 7) this.anInt2920 = class348_sub49.readShort(842397944);
+                if (i_12_ == 7) this.anInt2920 = class348_sub49.readUnsignedShort(842397944);
                 else if (i_12_ != 8) {
                     if (i_12_ != 9) {
                         if (i_12_ == 26) {
@@ -147,7 +147,7 @@ final class Class225 {
                             int i_13_ = class348_sub49.readUnsignedByte(255);
                             this.anIntArrayArray2939[i_13_] = new int[6];
                             for (int i_14_ = 0; i_14_ < 6; i_14_++)
-                                this.anIntArrayArray2939[i_13_][i_14_] = class348_sub49.method3372(13638);
+                                this.anIntArrayArray2939[i_13_][i_14_] = class348_sub49.readShort(13638);
                         } else if (i_12_ == 28) {
                             this.anIntArray2906 = new int[12];
                             for (int i_21_ = 0; i_21_ < 12; i_21_++) {
@@ -155,34 +155,34 @@ final class Class225 {
                                 if ((this.anIntArray2906[i_21_]) == 255) this.anIntArray2906[i_21_] = -1;
                             }
                         } else if (i_12_ != 29) {
-                            if (i_12_ == 30) this.anInt2917 = class348_sub49.readShort(842397944);
+                            if (i_12_ == 30) this.anInt2917 = class348_sub49.readUnsignedShort(842397944);
                             else if (i_12_ != 31) {
-                                if (i_12_ == 32) this.anInt2935 = class348_sub49.readShort(842397944);
-                                else if (i_12_ == 33) this.anInt2950 = class348_sub49.method3372(13638);
+                                if (i_12_ == 32) this.anInt2935 = class348_sub49.readUnsignedShort(842397944);
+                                else if (i_12_ == 33) this.anInt2950 = class348_sub49.readShort(13638);
                                 else if (i_12_ != 34) {
                                     if (i_12_ != 35) {
                                         if (i_12_ != 36) {
                                             if (i_12_ == 37) this.anInt2945 = (class348_sub49.readUnsignedByte(255));
                                             else if (i_12_ != 38) {
                                                 if (i_12_ != 39) {
-                                                    if (i_12_ == 40) this.anInt2938 = (class348_sub49.readShort(842397944));
-                                                    else if (i_12_ == 41) this.anInt2937 = (class348_sub49.readShort(i + 842397896));
+                                                    if (i_12_ == 40) this.anInt2938 = (class348_sub49.readUnsignedShort(842397944));
+                                                    else if (i_12_ == 41) this.anInt2937 = (class348_sub49.readUnsignedShort(i + 842397896));
                                                     else if (i_12_ != 42) {
-                                                        if (i_12_ == 43) this.anInt2909 = (class348_sub49.readShort(842397944));
+                                                        if (i_12_ == 43) this.anInt2909 = (class348_sub49.readUnsignedShort(842397944));
                                                         else if (i_12_ != 44) {
                                                             if (i_12_ != 45) {
                                                                 if (i_12_ != 46) {
-                                                                    if (i_12_ == 47) this.anInt2927 = class348_sub49.readShort(842397944);
+                                                                    if (i_12_ == 47) this.anInt2927 = class348_sub49.readUnsignedShort(842397944);
                                                                     else if (i_12_ != 48) {
-                                                                        if (i_12_ == 49) this.anInt2911 = class348_sub49.readShort(842397944);
-                                                                        else if (i_12_ == 50) this.anInt2934 = class348_sub49.readShort(842397944);
+                                                                        if (i_12_ == 49) this.anInt2911 = class348_sub49.readUnsignedShort(842397944);
+                                                                        else if (i_12_ == 50) this.anInt2934 = class348_sub49.readUnsignedShort(842397944);
                                                                         else if (i_12_ != 51) {
                                                                             if (i_12_ == 52) {
                                                                                 int i_15_ = class348_sub49.readUnsignedByte(i ^ 0xcf);
                                                                                 this.anIntArray2915 = new int[i_15_];
                                                                                 this.anIntArray2929 = new int[i_15_];
                                                                                 for (int i_16_ = 0; i_16_ < i_15_; i_16_++) {
-                                                                                    this.anIntArray2915[i_16_] = class348_sub49.readShort(842397944);
+                                                                                    this.anIntArray2915[i_16_] = class348_sub49.readUnsignedShort(842397944);
                                                                                     int i_17_ = class348_sub49.readUnsignedByte(255);
                                                                                     this.anIntArray2929[i_16_] = i_17_;
                                                                                     anInt2930 += i_17_;
@@ -194,31 +194,31 @@ final class Class225 {
                                                                             } else if (i_12_ == 55) {
                                                                                 if (this.anIntArray2907 == null) this.anIntArray2907 = new int[12];
                                                                                 int i_18_ = class348_sub49.readUnsignedByte(i ^ 0xcf);
-                                                                                this.anIntArray2907[i_18_] = class348_sub49.readShort(i + 842397896);
+                                                                                this.anIntArray2907[i_18_] = class348_sub49.readUnsignedShort(i + 842397896);
                                                                             } else if (i_12_ == 56) {
                                                                                 if (this.anIntArrayArray2910 == null) this.anIntArrayArray2910 = new int[12][];
                                                                                 int i_19_ = class348_sub49.readUnsignedByte(255);
                                                                                 this.anIntArrayArray2910[i_19_] = new int[3];
                                                                                 for (int i_20_ = 0; i_20_ < 3; i_20_++)
-                                                                                    this.anIntArrayArray2910[i_19_][i_20_] = class348_sub49.method3372(i + 13590);
+                                                                                    this.anIntArrayArray2910[i_19_][i_20_] = class348_sub49.readShort(i + 13590);
                                                                             }
-                                                                        } else this.anInt2953 = class348_sub49.readShort(842397944);
-                                                                    } else this.anInt2905 = class348_sub49.readShort(842397944);
-                                                                } else this.anInt2908 = class348_sub49.readShort(842397944);
-                                                            } else this.anInt2928 = class348_sub49.readShort(842397944);
-                                                        } else this.anInt2923 = (class348_sub49.readShort(842397944));
-                                                    } else this.anInt2954 = (class348_sub49.readShort(842397944));
-                                                } else this.anInt2922 = (class348_sub49.readShort(842397944));
-                                            } else this.anInt2916 = (class348_sub49.readShort(842397944));
-                                        } else this.anInt2926 = (class348_sub49.method3372(i ^ 0x3576));
-                                    } else this.anInt2904 = (class348_sub49.readShort(i + 842397896));
+                                                                        } else this.anInt2953 = class348_sub49.readUnsignedShort(842397944);
+                                                                    } else this.anInt2905 = class348_sub49.readUnsignedShort(842397944);
+                                                                } else this.anInt2908 = class348_sub49.readUnsignedShort(842397944);
+                                                            } else this.anInt2928 = class348_sub49.readUnsignedShort(842397944);
+                                                        } else this.anInt2923 = (class348_sub49.readUnsignedShort(842397944));
+                                                    } else this.anInt2954 = (class348_sub49.readUnsignedShort(842397944));
+                                                } else this.anInt2922 = (class348_sub49.readUnsignedShort(842397944));
+                                            } else this.anInt2916 = (class348_sub49.readUnsignedShort(842397944));
+                                        } else this.anInt2926 = (class348_sub49.readShort(i ^ 0x3576));
+                                    } else this.anInt2904 = (class348_sub49.readUnsignedShort(i + 842397896));
                                 } else this.anInt2936 = class348_sub49.readUnsignedByte(255);
                             } else this.anInt2901 = class348_sub49.readUnsignedByte(255);
                         } else this.anInt2948 = class348_sub49.readUnsignedByte(255);
-                    } else this.anInt2949 = class348_sub49.readShort(842397944);
-                } else this.anInt2914 = class348_sub49.readShort(842397944);
-            } else this.anInt2919 = class348_sub49.readShort(842397944);
-        } else this.anInt2940 = class348_sub49.readShort(i + 842397896);
+                    } else this.anInt2949 = class348_sub49.readUnsignedShort(842397944);
+                } else this.anInt2914 = class348_sub49.readUnsignedShort(842397944);
+            } else this.anInt2919 = class348_sub49.readUnsignedShort(842397944);
+        } else this.anInt2940 = class348_sub49.readUnsignedShort(i + 842397896);
         if (i != 48) this.anInt2928 = -71;
     }
 

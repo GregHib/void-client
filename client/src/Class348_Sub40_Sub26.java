@@ -107,16 +107,16 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
                 do {
                     do {
                         if (i_24_ == 0) {
-                            anInt9344 = class348_sub49.readShort(i_23_ + 842366929);
+                            anInt9344 = class348_sub49.readUnsignedShort(i_23_ + 842366929);
                             break while_201_;
                         } else if (i_24_ != 1) {
                             if (i_24_ == 2) break;
                             break while_201_;
                         }
-                        anInt9354 = class348_sub49.readShort(842397944);
+                        anInt9354 = class348_sub49.readUnsignedShort(842397944);
                         break while_201_;
                     } while (false);
-                    anInt9347 = class348_sub49.readShort(842397944);
+                    anInt9347 = class348_sub49.readUnsignedShort(842397944);
                 } while (false);
                 anInt9350++;
                 if (i_23_ == 31015) break;

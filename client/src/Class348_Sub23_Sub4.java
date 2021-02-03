@@ -65,10 +65,10 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
                     if (anInt9055 == 0 || anInt9054 == 0) throw new IllegalStateException();
                     Class348_Sub49 class348_sub49_3_ = new Class348_Sub49(16);
                     class348_sub49.method3389(2147483647, 0, 16, (class348_sub49_3_.aByteArray7154));
-                    aString9051 = class348_sub49_3_.method3377((byte) -91);
+                    aString9051 = class348_sub49_3_.readString((byte) -91);
                     class348_sub49_3_.anInt7197 = 0;
                     class348_sub49.method3389(2147483647, 0, 16, (class348_sub49_3_.aByteArray7154));
-                    aString9057 = class348_sub49_3_.method3377((byte) -40);
+                    aString9057 = class348_sub49_3_.readString((byte) -40);
                 }
             } else {
                 if (i_2_ == 0) {

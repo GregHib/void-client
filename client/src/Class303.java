@@ -14,7 +14,7 @@ final class Class303 {
         anInt3843++;
         if (bool) {
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class241.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126);
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3337((byte) 107, i_0_);
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_0_);
             Class348_Sub42_Sub14.method3243(42, class348_sub47);
         } else Class66.method701(Class141.aClass273_1966, i_0_, -1);
     }
@@ -29,10 +29,10 @@ final class Class303 {
         int i_1_ = class348_sub49.readUnsignedByte(255);
         Class221 class221 = Class158.method1248(87)[class348_sub49.readUnsignedByte(255)];
         Class341 class341 = Class62.method596(20000)[class348_sub49.readUnsignedByte(255)];
-        int i_2_ = class348_sub49.method3372(13638);
-        int i_3_ = class348_sub49.method3372(13638);
-        int i_4_ = class348_sub49.readShort(842397944);
-        int i_5_ = class348_sub49.readShort(842397944);
+        int i_2_ = class348_sub49.readShort(13638);
+        int i_3_ = class348_sub49.readShort(13638);
+        int i_4_ = class348_sub49.readUnsignedShort(842397944);
+        int i_5_ = class348_sub49.readUnsignedShort(842397944);
         int i_6_ = class348_sub49.readInt((byte) -126);
         int i_7_ = class348_sub49.readInt((byte) -126);
         int i_8_ = class348_sub49.readInt((byte) -126);

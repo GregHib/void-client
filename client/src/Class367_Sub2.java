@@ -133,8 +133,8 @@ final class Class367_Sub2 extends Class367 {
                         Class285_Sub1.anInt8493++;
                         Class126.anInt4985 = Class311.anInt3918;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(ha.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, Class239_Sub6.method1745(string, -65));
-                        class348_sub47.aClass348_Sub49_Sub2_7116.method3333((byte) -5, string);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                         Class348_Sub42_Sub14.method3243(118, class348_sub47);
                         break;
                     }

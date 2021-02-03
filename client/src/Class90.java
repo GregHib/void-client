@@ -30,9 +30,9 @@ final class Class90 {
         for (int i_3_ = 0; i_3_ < 4; i_3_++) {
             for (int i_4_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_4_); i_4_++) {
                 for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub3.anInt9109 >> 3); i_5_++) {
-                    int i_6_ = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 1);
+                    int i_6_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
                     if (i_6_ != 1) Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_] = -1;
-                    else Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_] = Class299.aClass348_Sub49_Sub2_3813.method3410((byte) -24, 26);
+                    else Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_] = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 26);
                 }
             }
         }

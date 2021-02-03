@@ -117,22 +117,22 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                                     anInt9301 = class348_sub49.readUnsignedByte(255);
                                     return;
                                 } while (false);
-                                anInt9302 = class348_sub49.readShort(842397944);
+                                anInt9302 = class348_sub49.readUnsignedShort(842397944);
                                 return;
                             } while (false);
-                            anInt9305 = class348_sub49.readShort(842397944);
+                            anInt9305 = class348_sub49.readUnsignedShort(842397944);
                             return;
                         } while (false);
-                        anInt9288 = class348_sub49.readShort(842397944);
+                        anInt9288 = class348_sub49.readUnsignedShort(842397944);
                         return;
                     } while (false);
-                    anInt9293 = class348_sub49.readShort(842397944);
+                    anInt9293 = class348_sub49.readUnsignedShort(842397944);
                     return;
                 } while (false);
-                anInt9294 = class348_sub49.readShort(842397944);
+                anInt9294 = class348_sub49.readUnsignedShort(842397944);
                 return;
             } while (false);
-            anInt9284 = class348_sub49.readShort(i_8_ + 842366929);
+            anInt9284 = class348_sub49.readUnsignedShort(i_8_ + 842366929);
         } while (false);
     }
 

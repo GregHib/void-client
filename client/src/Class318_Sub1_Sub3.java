@@ -191,13 +191,13 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
 
     static final int method2413(int i, Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt8749++;
-        int i_35_ = class348_sub49_sub2.method3410((byte) -24, 2);
+        int i_35_ = class348_sub49_sub2.readBits((byte) -24, 2);
         if (i != 1) aClass262_8744 = null;
         int i_36_;
         if (i_35_ != 0) {
-            if (i_35_ == 1) i_36_ = class348_sub49_sub2.method3410((byte) -24, 5);
-            else if (i_35_ != 2) i_36_ = class348_sub49_sub2.method3410((byte) -24, 11);
-            else i_36_ = class348_sub49_sub2.method3410((byte) -24, 8);
+            if (i_35_ == 1) i_36_ = class348_sub49_sub2.readBits((byte) -24, 5);
+            else if (i_35_ != 2) i_36_ = class348_sub49_sub2.readBits((byte) -24, 11);
+            else i_36_ = class348_sub49_sub2.readBits((byte) -24, 8);
         } else i_36_ = 0;
         return i_36_;
     }

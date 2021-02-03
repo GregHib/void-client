@@ -82,6 +82,10 @@ final class Class286_Sub3 extends Class286 {
                 else class348_sub47.aClass348_Sub49_Sub2_7116 = new Class348_Sub49_Sub2(260);
             } else class348_sub47.aClass348_Sub49_Sub2_7116 = new Class348_Sub49_Sub2(260);
             class348_sub47.aClass348_Sub49_Sub2_7116.method3416(-17, class77);
+
+            if (Loader.debug) {
+                System.out.println("Encode packet " + class348_sub47.aClass351_7118.method3456(200));
+            }
             class348_sub47.aClass348_Sub49_Sub2_7116.method3408(class348_sub47.aClass351_7118.method3456(200), 18676);
             class348_sub47.anInt7119 = 0;
             return class348_sub47;

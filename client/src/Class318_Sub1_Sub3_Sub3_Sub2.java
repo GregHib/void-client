@@ -2,6 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import java.util.Arrays;
 import java.util.Hashtable;
 
 final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
@@ -126,8 +127,10 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
 
     final void method2452(byte i, Class348_Sub49 class348_sub49) {
         anInt10547++;
+        System.out.println(Arrays.toString(class348_sub49.aByteArray7154));
         class348_sub49.anInt7197 = 0;
         int i_11_ = class348_sub49.readUnsignedByte(255);
+        System.out.println("Flag " + i_11_);
         aByte10538 = (byte) (i_11_ & 0x1);
         boolean bool = this.aBoolean10517;
         this.aBoolean10517 = (0x2 & i_11_) != 0;
@@ -138,8 +141,11 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
         this.anInt6377 += -i_13_ + method2436((byte) 47) << 8;
         this.anInt6388 += method2436((byte) 96) + -i_13_ << 8;
         aByte10556 = class348_sub49.readByte(-114);
+        System.out.println("Title " + aByte10556);
         this.anInt10540 = class348_sub49.readByte(-89);
+        System.out.println("Skull " + anInt10540);
         this.anInt10522 = class348_sub49.readByte(i ^ ~0x1);
+        System.out.println("Icon " + anInt10522);
         this.aBoolean10551 = class348_sub49.readByte(i + -199) == 1;
         if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && Class192.anInt2581 >= 2) this.aBoolean10551 = false;
         this.anInt10542 = 0;
@@ -147,12 +153,14 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
         int[] is = new int[12];
         for (int i_15_ = 0; i_15_ < 12; i_15_++) {
             int i_16_ = class348_sub49.readUnsignedByte(255);
+            System.out.println("Read " + i_15_ + " " + i_16_);
             if (i_16_ == 0) is[i_15_] = 0;
             else {
                 int i_17_ = class348_sub49.readUnsignedByte(255);
                 int i_18_ = i_17_ + (i_16_ << 8);
+                System.out.println("Combined " + i_18_);
                 if (i_15_ == 0 && i_18_ == 65535) {
-                    i_14_ = class348_sub49.readShort(842397944);
+                    i_14_ = class348_sub49.readUnsignedShort(842397944);
                     this.anInt10542 = class348_sub49.readUnsignedByte(255);
                     break;
                 }
@@ -170,14 +178,14 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
             if (Class367_Sub2.aShortArrayArrayArray7290.length < 1 || i_22_ < 0 || i_22_ >= Class367_Sub2.aShortArrayArrayArray7290[0][i_21_].length) i_22_ = 0;
             is_20_[i_21_] = i_22_;
         }
-        anInt10520 = class348_sub49.readShort(842397944);
-        this.aString10537 = class348_sub49.method3377((byte) -47);
+        anInt10520 = class348_sub49.readUnsignedShort(842397944);
+        this.aString10537 = class348_sub49.readString((byte) -47);
         this.aString10544 = this.aString10537;
         if (this == Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907) s_Sub2.aString8265 = this.aString10537;
         this.anInt10516 = class348_sub49.readUnsignedByte(i ^ 0xab);
         if (i != 84) anInt10520 = 87;
         if (bool_12_) {
-            this.anInt10564 = class348_sub49.readShort(842397944);
+            this.anInt10564 = class348_sub49.readUnsignedShort(842397944);
             this.anInt10557 = this.anInt10516;
             if (this.anInt10564 == 65535) this.anInt10564 = -1;
             this.anInt10561 = -1;
@@ -196,10 +204,10 @@ final class Class318_Sub1_Sub3_Sub3_Sub2 extends Class318_Sub1_Sub3_Sub3 {
             int i_26_ = this.anInt10560;
             int i_27_ = this.anInt10519;
             int i_28_ = this.anInt10558;
-            this.anInt10535 = class348_sub49.readShort(842397944);
-            this.anInt10526 = class348_sub49.readShort(842397944);
-            this.anInt10560 = class348_sub49.readShort(842397944);
-            this.anInt10519 = class348_sub49.readShort(842397944);
+            this.anInt10535 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt10526 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt10560 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt10519 = class348_sub49.readUnsignedShort(842397944);
             this.anInt10558 = class348_sub49.readUnsignedByte(i ^ 0xab);
             if (!this.aBoolean10517 != !bool || this.anInt10553 != i_23_ || i_24_ != this.anInt10535 || i_25_ != this.anInt10526 || (this.anInt10560 != i_26_) || this.anInt10519 != i_27_ || i_28_ != this.anInt10558) Class92.method858(true, this);
         }

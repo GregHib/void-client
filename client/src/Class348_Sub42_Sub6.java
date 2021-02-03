@@ -12,8 +12,8 @@ final class Class348_Sub42_Sub6 extends Class348_Sub42 {
     static final void method3188(byte i, Class348_Sub49 class348_sub49) {
         anInt9539++;
         for (int i_0_ = 0; i_0_ < Class225.anInt2956; i_0_++) {
-            int i_1_ = class348_sub49.method3382(-127);
-            int i_2_ = class348_sub49.readShort(842397944);
+            int i_1_ = class348_sub49.readSmart(-127);
+            int i_2_ = class348_sub49.readUnsignedShort(842397944);
             if (i_2_ == 65535) i_2_ = -1;
             if (OutputStream_Sub1.aClass110_Sub1Array97[i_1_] != null) OutputStream_Sub1.aClass110_Sub1Array97[i_1_].anInt1704 = i_2_;
         }

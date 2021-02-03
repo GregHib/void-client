@@ -28,7 +28,7 @@ final class Class184 {
     static final void method1385(boolean bool, byte[] is, byte i) {
         anInt2475++;
         if (Class299_Sub1_Sub2.aClass348_Sub49_8698 == null) Class299_Sub1_Sub2.aClass348_Sub49_8698 = new Class348_Sub49(20000);
-        Class299_Sub1_Sub2.aClass348_Sub49_8698.method3380(is.length, 0, is, 97);
+        Class299_Sub1_Sub2.aClass348_Sub49_8698.writeBytes(is.length, 0, is, 97);
         if (bool) {
             Class167.method1294((byte) -113, (Class299_Sub1_Sub2.aClass348_Sub49_8698.aByteArray7154));
             Class65.aClass110_Sub1Array1146 = new Class110_Sub1[Class225.anInt2956];

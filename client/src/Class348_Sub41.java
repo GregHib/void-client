@@ -29,11 +29,11 @@ final class Class348_Sub41 extends Class348 {
             boolean bool_7_ = false;
             for (; ; ) {
                 if (bool_7_) {
-                    int i_8_ = class348_sub49.method3382(-118);
+                    int i_8_ = class348_sub49.readSmart(-118);
                     if (i_8_ == 0) break;
                     class348_sub49.readUnsignedByte(255);
                 } else {
-                    int i_9_ = class348_sub49.method3382(i_3_ ^ ~0x58);
+                    int i_9_ = class348_sub49.readSmart(i_3_ ^ ~0x58);
                     if (i_9_ == 0) break;
                     i_6_ += -1 + i_9_;
                     int i_10_ = i_6_ & 0x3f;

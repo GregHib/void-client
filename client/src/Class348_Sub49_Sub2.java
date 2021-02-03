@@ -70,7 +70,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
         }
     }
 
-    final int method3410(byte i, int i_9_) {
+    final int readBits(byte i, int i_9_) {
         if (i != -24) return -126;
         anInt9763++;
         int i_10_ = anInt9754 >> 3;

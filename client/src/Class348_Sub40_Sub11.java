@@ -59,7 +59,7 @@ final class Class348_Sub40_Sub11 extends Class348_Sub40 {
         anInt9188++;
         if (i_8_ == 31015) {
             int i_9_ = i;
-            if (i_9_ == 0) anInt9187 = class348_sub49.readShort(842397944);
+            if (i_9_ == 0) anInt9187 = class348_sub49.readUnsignedShort(842397944);
         }
     }
 }

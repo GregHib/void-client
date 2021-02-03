@@ -22,7 +22,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
             if (i_1_ == 0) {
                 anIntArrayArray9194 = new int[class348_sub49.readUnsignedByte(255)][4];
                 for (int i_2_ = 0; anIntArrayArray9194.length > i_2_; i_2_++) {
-                    anIntArrayArray9194[i_2_][0] = class348_sub49.readShort(842397944);
+                    anIntArrayArray9194[i_2_][0] = class348_sub49.readUnsignedShort(842397944);
                     anIntArrayArray9194[i_2_][1] = class348_sub49.readUnsignedByte(255) << 4;
                     anIntArrayArray9194[i_2_][2] = class348_sub49.readUnsignedByte(255) << 4;
                     anIntArrayArray9194[i_2_][3] = ((class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i_0_, 31192))) << 4);

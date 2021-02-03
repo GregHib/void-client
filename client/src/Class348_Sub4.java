@@ -53,30 +53,30 @@ final class Class348_Sub4 extends Class348 {
     }
 
     final void method2747(int i, Class348_Sub49 class348_sub49) {
-        class348_sub49.method3378(false, 5);
+        class348_sub49.writeByte(false, 5);
         anInt6611++;
-        class348_sub49.method3378(false, anInt6613);
-        class348_sub49.method3378(false, aBoolean6608 ? 1 : 0);
-        class348_sub49.method3378(false, anInt6595);
-        class348_sub49.method3378(false, anInt6594);
-        class348_sub49.method3378(false, anInt6616);
-        class348_sub49.method3378(false, anInt6605);
-        class348_sub49.method3378(false, anInt6612);
-        class348_sub49.method3378(false, !aBoolean6607 ? 0 : 1);
-        class348_sub49.method3337((byte) 107, anInt6592);
-        class348_sub49.method3378(false, anInt6599);
+        class348_sub49.writeByte(false, anInt6613);
+        class348_sub49.writeByte(false, aBoolean6608 ? 1 : 0);
+        class348_sub49.writeByte(false, anInt6595);
+        class348_sub49.writeByte(false, anInt6594);
+        class348_sub49.writeByte(false, anInt6616);
+        class348_sub49.writeByte(false, anInt6605);
+        class348_sub49.writeByte(false, anInt6612);
+        class348_sub49.writeByte(false, !aBoolean6607 ? 0 : 1);
+        class348_sub49.writeShort((byte) 107, anInt6592);
+        class348_sub49.writeByte(false, anInt6599);
         class348_sub49.method3340(i ^ ~0x26b6, this.anInt6609);
-        class348_sub49.method3337((byte) 107, anInt6591);
-        class348_sub49.method3378(false, anInt6598);
-        class348_sub49.method3378(false, anInt6596);
-        class348_sub49.method3378(false, anInt6603);
+        class348_sub49.writeShort((byte) 107, anInt6591);
+        class348_sub49.writeByte(false, anInt6598);
+        class348_sub49.writeByte(false, anInt6596);
+        class348_sub49.writeByte(false, anInt6603);
         class348_sub49.method3386(aString6604, 123);
         class348_sub49.method3386(aString6614, -45);
         class348_sub49.method3386(aString6610, 100);
         if (i == 1) {
             class348_sub49.method3386(aString6597, -14);
-            class348_sub49.method3378(false, anInt6606);
-            class348_sub49.method3337((byte) 107, anInt6617);
+            class348_sub49.writeByte(false, anInt6606);
+            class348_sub49.writeShort((byte) 107, anInt6617);
         }
     }
 

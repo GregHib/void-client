@@ -190,14 +190,14 @@ class Class75 {
                     aByteArray1256[i_22_ + i_23_ * anInt1259] = (byte) i_31_;
                     aByteArray1275[i_22_ + i_23_ * anInt1259] = (byte) i_32_;
                     if (i_33_ == 1) {
-                        aShortArray1261[i_22_ + i_23_ * anInt1259] = (short) (class348_sub49.readShort(842397944) + 1);
+                        aShortArray1261[i_22_ + i_23_ * anInt1259] = (short) (class348_sub49.readUnsignedShort(842397944) + 1);
                         aByteArray1258[i_22_ + i_23_ * anInt1259] = class348_sub49.readByte(-122);
                     } else if (i_33_ > 1) {
                         aShortArray1261[i_22_ + i_23_ * anInt1259] = (short) -1;
                         short[] is_34_ = new short[i_33_];
                         byte[] is_35_ = new byte[i_33_];
                         for (int i_36_ = 0; i_36_ < i_33_; i_36_++) {
-                            is_34_[i_36_] = (short) class348_sub49.readShort(842397944);
+                            is_34_[i_36_] = (short) class348_sub49.readUnsignedShort(842397944);
                             is_35_[i_36_] = class348_sub49.readByte(-120);
                         }
                         aClass356_1271.method3483((byte) 33, i_22_ << 16 | i_23_, new Class348_Sub39(is_34_, is_35_));
@@ -209,7 +209,7 @@ class Class75 {
                         is_37_ = new short[i_33_];
                         is_38_ = new byte[i_33_];
                         for (int i_39_ = 0; i_39_ < i_33_; i_39_++) {
-                            is_37_[i_39_] = (short) class348_sub49.readShort(842397944);
+                            is_37_[i_39_] = (short) class348_sub49.readUnsignedShort(842397944);
                             is_38_[i_39_] = class348_sub49.readByte(-92);
                         }
                     }

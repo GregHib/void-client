@@ -158,8 +158,8 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
         if (!string.equals("")) {
             Class88.anInt1498++;
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class318_Sub1_Sub1.aClass351_8724, Class348_Sub23_Sub2.aClass77_9029, -124);
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, Class239_Sub6.method1745(string, -65));
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3333((byte) -5, string);
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65));
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
             Class348_Sub42_Sub14.method3243(121, class348_sub47);
         }
     }

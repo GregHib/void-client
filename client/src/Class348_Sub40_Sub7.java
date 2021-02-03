@@ -488,8 +488,8 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
         anInt9142++;
         if (bool != false) method3065(-42, true, 43);
         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class348_Sub40_Sub1.aClass351_9089, Class348_Sub23_Sub2.aClass77_9029, -97);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3335(52, i_74_);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3336(i, (byte) 44);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(52, i_74_);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeIntMiddle(i, (byte) 44);
         Class348_Sub42_Sub14.method3243(25, class348_sub47);
     }
 

@@ -177,7 +177,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                 this.anIntArray9592 = new int[i_25_];
                 this.aCharArray9588 = new char[i_25_];
                 for (int i_26_ = 0; i_26_ < i_25_; i_26_++) {
-                    this.anIntArray9592[i_26_] = class348_sub49.readShort(842397944);
+                    this.anIntArray9592[i_26_] = class348_sub49.readUnsignedShort(842397944);
                     byte i_27_ = class348_sub49.readByte(-121);
                     this.aCharArray9588[i_26_] = (i_27_ != 0 ? Class50_Sub1.method462(i_27_, -128) : '\0');
                 }
@@ -186,12 +186,12 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                 this.aCharArray9582 = new char[i_28_];
                 this.anIntArray9580 = new int[i_28_];
                 for (int i_29_ = 0; i_28_ > i_29_; i_29_++) {
-                    this.anIntArray9580[i_29_] = class348_sub49.readShort(842397944);
+                    this.anIntArray9580[i_29_] = class348_sub49.readUnsignedShort(842397944);
                     byte i_30_ = class348_sub49.readByte(-115);
                     this.aCharArray9582[i_29_] = (i_30_ != 0 ? Class50_Sub1.method462(i_30_, -128) : '\0');
                 }
             }
-        } else this.aString9587 = class348_sub49.method3377((byte) 100);
+        } else this.aString9587 = class348_sub49.readString((byte) 100);
         if (i != -5847) anInt9586 = 12;
         anInt9581++;
     }

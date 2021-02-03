@@ -43,7 +43,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_2_) {
         if (i_2_ != 31015) method3042(-111, 25);
         anInt9170++;
-        if (i == 0) anInt9167 = class348_sub49.readShort(842397944);
+        if (i == 0) anInt9167 = class348_sub49.readUnsignedShort(842397944);
     }
 
     static final boolean method3073(int i, int i_3_, byte i_4_) {

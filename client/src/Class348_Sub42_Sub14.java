@@ -154,9 +154,6 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
 
     static final void method3243(int i, Class348_Sub47 class348_sub47) {
         anInt9630++;
-        if (Loader.debug) {
-            System.out.println("Encode packet " + class348_sub47.anInt7122);
-        }
         Class348_Sub40_Sub13.aClass262_9201.method1999(class348_sub47, -20180);
         class348_sub47.anInt7119 = class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197;
         class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 = 0;

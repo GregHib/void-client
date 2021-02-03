@@ -42,7 +42,7 @@ final class Class248 {
         if (aClass202_3209 != null) {
             try {
                 aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.method3378(false, bool ? 2 : 3);
+                aClass348_Sub49_3208.writeByte(false, bool ? 2 : 3);
                 aClass348_Sub49_3208.method3340(-9912, 0);
                 if (i < -66) aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
             } catch (IOException ioexception) {
@@ -82,7 +82,7 @@ final class Class248 {
             aClass202_3209.method1472(true);
             for (Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3197.method1011(-30)); class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3197.method1003((byte) 65))) {
                 aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.method3378(false, 1);
+                aClass348_Sub49_3208.writeByte(false, 1);
                 aClass348_Sub49_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.aLong7057));
                 aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
                 aClass107_3204.method1005(true, class348_sub42_sub16_sub1);
@@ -91,7 +91,7 @@ final class Class248 {
             if (i <= 72) return false;
             for (/**/; class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3205.method1003((byte) 102))) {
                 aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.method3378(false, 0);
+                aClass348_Sub49_3208.writeByte(false, 0);
                 aClass348_Sub49_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.aLong7057));
                 aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
                 aClass107_3206.method1005(true, class348_sub42_sub16_sub1);
@@ -134,7 +134,7 @@ final class Class248 {
                         if (aClass348_Sub42_Sub16_Sub1_3215 == null) {
                             aClass348_Sub49_3211.anInt7197 = 0;
                             int i_9_ = aClass348_Sub49_3211.readUnsignedByte(255);
-                            int i_10_ = aClass348_Sub49_3211.readShort(842397944);
+                            int i_10_ = aClass348_Sub49_3211.readUnsignedShort(842397944);
                             int i_11_ = aClass348_Sub49_3211.readUnsignedByte(255);
                             int i_12_ = aClass348_Sub49_3211.readInt((byte) -126);
                             int i_13_ = 0x7f & i_11_;
@@ -155,8 +155,8 @@ final class Class248 {
                             int i_15_ = i_13_ == 0 ? 5 : 9;
                             aClass348_Sub42_Sub16_Sub1_3215 = class348_sub42_sub16_sub1_14_;
                             aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453 = (new Class348_Sub49((aClass348_Sub42_Sub16_Sub1_3215.aByte10449) + i_15_ + i_12_));
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.method3378(false, i_13_);
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.method3391((byte) 97, i_12_);
+                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeByte(false, i_13_);
+                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeInt((byte) 97, i_12_);
                             aClass348_Sub49_3211.anInt7197 = 0;
                             aClass348_Sub42_Sub16_Sub1_3215.anInt10456 = 8;
                         } else if ((aClass348_Sub42_Sub16_Sub1_3215.anInt10456) == 0) {
@@ -217,7 +217,7 @@ final class Class248 {
             if (aClass202_3209 != null) {
                 try {
                     aClass348_Sub49_3208.anInt7197 = 0;
-                    aClass348_Sub49_3208.method3378(false, 6);
+                    aClass348_Sub49_3208.writeByte(false, 6);
                     aClass348_Sub49_3208.method3340(-9912, 3);
                     aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
                 } catch (IOException ioexception) {
@@ -297,9 +297,9 @@ final class Class248 {
         if (aByte3212 != 0) {
             try {
                 aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.method3378(bool, 4);
-                aClass348_Sub49_3208.method3378(bool, aByte3212);
-                aClass348_Sub49_3208.method3337((byte) 107, 0);
+                aClass348_Sub49_3208.writeByte(bool, 4);
+                aClass348_Sub49_3208.writeByte(bool, aByte3212);
+                aClass348_Sub49_3208.writeShort((byte) 107, 0);
                 aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
             } catch (IOException ioexception) {
                 try {
@@ -334,7 +334,7 @@ final class Class248 {
         if (aClass202_3209 != null) {
             try {
                 aClass348_Sub49_3208.anInt7197 = i;
-                aClass348_Sub49_3208.method3378(false, 7);
+                aClass348_Sub49_3208.writeByte(false, 7);
                 aClass348_Sub49_3208.method3340(-9912, 0);
                 aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, ~i);
             } catch (IOException ioexception) {

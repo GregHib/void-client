@@ -69,7 +69,7 @@ final class Class218 {
     private final void method1595(byte i, int i_17_, Class348_Sub49 class348_sub49) {
         anInt2852++;
         if (i >= 5) {
-            if (i_17_ == 1) this.anInt2853 = class348_sub49.readShort(842397944);
+            if (i_17_ == 1) this.anInt2853 = class348_sub49.readUnsignedShort(842397944);
             else if (i_17_ != 2) {
                 if (i_17_ == 3) this.aBoolean2854 = true;
                 else if (i_17_ == 4) this.anInt2853 = -1;

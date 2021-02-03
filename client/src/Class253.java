@@ -64,9 +64,9 @@ final class Class253 {
         if (i_13_ == 4) {
             if (i != 1) {
                 if (i != 2) {
-                    if (i == 3) this.anInt3244 = class348_sub49.readShort(i_13_ ^ 0x3235f8fc);
-                    else if (i == 4) this.anInt3251 = class348_sub49.method3372(13638);
-                } else this.anInt3249 = class348_sub49.readShort(i_13_ + 842397940);
+                    if (i == 3) this.anInt3244 = class348_sub49.readUnsignedShort(i_13_ ^ 0x3235f8fc);
+                    else if (i == 4) this.anInt3251 = class348_sub49.readShort(13638);
+                } else this.anInt3249 = class348_sub49.readUnsignedShort(i_13_ + 842397940);
             } else this.anInt3245 = class348_sub49.readUnsignedByte(255);
         }
     }

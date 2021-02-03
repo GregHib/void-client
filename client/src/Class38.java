@@ -39,14 +39,14 @@ final class Class38 {
     private final void method361(int i, Class348_Sub49 class348_sub49, int i_2_) {
         if (i != -6617) method363(95);
         anInt497++;
-        if (i_2_ == 1) this.anInt501 = class348_sub49.readShort(842397944);
+        if (i_2_ == 1) this.anInt501 = class348_sub49.readUnsignedShort(842397944);
         else if (i_2_ == 2) this.aBoolean507 = true;
         else if (i_2_ == 3) {
-            this.anInt499 = class348_sub49.method3372(13638);
-            this.anInt502 = class348_sub49.method3372(13638);
-            this.anInt508 = class348_sub49.method3372(13638);
+            this.anInt499 = class348_sub49.readShort(13638);
+            this.anInt502 = class348_sub49.readShort(13638);
+            this.anInt508 = class348_sub49.readShort(13638);
         } else if (i_2_ == 4) this.anInt498 = class348_sub49.readUnsignedByte(255);
-        else if (i_2_ == 5) this.anInt504 = class348_sub49.readShort(842397944);
+        else if (i_2_ == 5) this.anInt504 = class348_sub49.readUnsignedShort(842397944);
         else if (i_2_ == 6) this.anInt503 = class348_sub49.method3351(-1);
     }
 

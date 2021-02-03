@@ -74,7 +74,7 @@ final class Class54 {
 
     Class54(Class348_Sub49 class348_sub49) {
         aByte966 = class348_sub49.readByte(-113);
-        this.anInt969 = class348_sub49.readShort(842397944);
+        this.anInt969 = class348_sub49.readUnsignedShort(842397944);
         this.anInt976 = class348_sub49.readInt((byte) -126);
         this.anInt967 = class348_sub49.readInt((byte) -126);
         this.anInt977 = class348_sub49.readInt((byte) -126);

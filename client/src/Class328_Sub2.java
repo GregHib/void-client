@@ -10,7 +10,7 @@ class Class328_Sub2 extends Class328 {
 
     static final Class120 method2612(Class348_Sub49 class348_sub49, boolean bool) {
         anInt6518++;
-        int i = class348_sub49.readShort(842397944);
+        int i = class348_sub49.readUnsignedShort(842397944);
         if (bool != true) method2613(-27);
         return new Class120(i);
     }

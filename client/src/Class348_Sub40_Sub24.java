@@ -83,7 +83,7 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
                     if (i_10_ == 2) break;
                     break while_198_;
                 }
-                anInt9334 = class348_sub49.readShort(842397944);
+                anInt9334 = class348_sub49.readUnsignedShort(842397944);
                 break while_198_;
             } while (false);
             anInt9325 = class348_sub49.readUnsignedByte(i_9_ ^ 0x79d8);

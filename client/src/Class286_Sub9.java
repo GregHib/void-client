@@ -200,9 +200,9 @@ final class Class286_Sub9 extends Class286 {
 
     static final void method2177(int i, int i_22_, Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt6311++;
-        boolean bool = (class348_sub49_sub2.method3410((byte) -24, i) == 1);
+        boolean bool = (class348_sub49_sub2.readBits((byte) -24, i) == 1);
         if (bool) Class18.anIntArray279[Class101_Sub3.anInt5768++] = i_22_;
-        int i_23_ = class348_sub49_sub2.method3410((byte) -24, 2);
+        int i_23_ = class348_sub49_sub2.readBits((byte) -24, 2);
         Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_22_];
         if (i_23_ == 0) {
             if (bool) class318_sub1_sub3_sub3_sub2.aBoolean10539 = false;
@@ -216,10 +216,10 @@ final class Class286_Sub9 extends Class286 {
                 class359.anInt4425 = (class318_sub1_sub3_sub3_sub2.anInt10275);
                 if (class318_sub1_sub3_sub3_sub2.anInt10553 > 0) Class295.method2221(class318_sub1_sub3_sub3_sub2, -28482);
                 Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_22_] = null;
-                if (class348_sub49_sub2.method3410((byte) -24, 1) != 0) Class211.method1538(i_22_, (byte) 105, class348_sub49_sub2);
+                if (class348_sub49_sub2.readBits((byte) -24, 1) != 0) Class211.method1538(i_22_, (byte) 105, class348_sub49_sub2);
             }
         } else if (i_23_ == 1) {
-            int i_24_ = class348_sub49_sub2.method3410((byte) -24, 3);
+            int i_24_ = class348_sub49_sub2.readBits((byte) -24, 3);
             int i_25_ = (class318_sub1_sub3_sub3_sub2.anIntArray10320[0]);
             int i_26_ = (class318_sub1_sub3_sub3_sub2.anIntArray10317[0]);
             if (i_24_ == 0) {
@@ -248,7 +248,7 @@ final class Class286_Sub9 extends Class286 {
                 class318_sub1_sub3_sub3_sub2.anInt10549 = i_25_;
             } else class318_sub1_sub3_sub3_sub2.method2455(i_26_, -26443, (Class259.aByteArray3300[i_22_]), i_25_);
         } else if (i_23_ == 2) {
-            int i_27_ = class348_sub49_sub2.method3410((byte) -24, 4);
+            int i_27_ = class348_sub49_sub2.readBits((byte) -24, 4);
             int i_28_ = (class318_sub1_sub3_sub3_sub2.anIntArray10320[0]);
             int i_29_ = (class318_sub1_sub3_sub3_sub2.anIntArray10317[0]);
             if (i_27_ == 0) {
@@ -300,9 +300,9 @@ final class Class286_Sub9 extends Class286 {
                 class318_sub1_sub3_sub3_sub2.anInt10531 = i_29_;
             } else class318_sub1_sub3_sub3_sub2.method2455(i_29_, -26443, (Class259.aByteArray3300[i_22_]), i_28_);
         } else {
-            int i_30_ = class348_sub49_sub2.method3410((byte) -24, 1);
+            int i_30_ = class348_sub49_sub2.readBits((byte) -24, 1);
             if (i_30_ == 0) {
-                int i_31_ = class348_sub49_sub2.method3410((byte) -24, 12);
+                int i_31_ = class348_sub49_sub2.readBits((byte) -24, 12);
                 int i_32_ = i_31_ >> 10;
                 int i_33_ = 0x1f & i_31_ >> 5;
                 if (i_33_ > 15) i_33_ -= 32;
@@ -322,7 +322,7 @@ final class Class286_Sub9 extends Class286 {
                     Class355.anInt4372 = (class318_sub1_sub3_sub3_sub2.aByte6381);
                 }
             } else {
-                int i_37_ = class348_sub49_sub2.method3410((byte) -24, 30);
+                int i_37_ = class348_sub49_sub2.readBits((byte) -24, 30);
                 int i_38_ = i_37_ >> 28;
                 int i_39_ = 0x3fff & i_37_ >> 14;
                 int i_40_ = 0x3fff & i_37_;

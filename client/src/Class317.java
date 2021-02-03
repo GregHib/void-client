@@ -62,8 +62,8 @@ final class Class317 {
                 aClass80Array3969[i].method807(class348_sub49);
             }
         }
-        anInt3967 = class348_sub49.readShort(842397944);
-        anInt3968 = class348_sub49.readShort(842397944);
+        anInt3967 = class348_sub49.readUnsignedShort(842397944);
+        anInt3968 = class348_sub49.readUnsignedShort(842397944);
     }
 
     private Class317() {

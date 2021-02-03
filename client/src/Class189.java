@@ -22,11 +22,11 @@ final class Class189 {
         if (i_1_ != 94) this.anInt2526 = -81;
         anInt2532++;
         if (i == 1) {
-            this.anInt2525 = class348_sub49.readShort(842397944);
+            this.anInt2525 = class348_sub49.readUnsignedShort(842397944);
             if (this.anInt2525 == 65535) this.anInt2525 = -1;
         } else if (i == 2) {
-            this.anInt2526 = 1 + class348_sub49.readShort(842397944);
-            this.anInt2530 = class348_sub49.readShort(842397944) - -1;
+            this.anInt2526 = 1 + class348_sub49.readUnsignedShort(842397944);
+            this.anInt2530 = class348_sub49.readUnsignedShort(842397944) - -1;
         } else if (i != 3) {
             if (i == 4) this.anInt2534 = class348_sub49.readUnsignedByte(255);
             else if (i != 5) {

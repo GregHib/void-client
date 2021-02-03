@@ -28,7 +28,7 @@ final class Class146 {
         anInt2014++;
         if (i_1_ != 17) method1194(-80);
         if (i == 1) {
-            this.anInt2019 = class348_sub49.readShort(842397944);
+            this.anInt2019 = class348_sub49.readUnsignedShort(842397944);
             this.anInt2016 = class348_sub49.readUnsignedByte(255);
             this.anInt2020 = class348_sub49.readUnsignedByte(i_1_ ^ 0xee);
         }

@@ -28,13 +28,13 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
         do {
             do {
                 if (i_1_ == 0) {
-                    anInt9474 = class348_sub49.readShort(i_0_ + 842366929);
+                    anInt9474 = class348_sub49.readUnsignedShort(i_0_ + 842366929);
                     break while_213_;
                 } else if (i_1_ != 1) {
                     if (i_1_ == 2) break;
                     break while_213_;
                 }
-                anInt9470 = class348_sub49.readShort(i_0_ + 842366929);
+                anInt9470 = class348_sub49.readUnsignedShort(i_0_ + 842366929);
                 break while_213_;
             } while (false);
             this.aBoolean7045 = class348_sub49.readUnsignedByte(i_0_ + -30760) == 1;

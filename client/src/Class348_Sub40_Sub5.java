@@ -211,7 +211,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
                                     anInt9122 = class348_sub49.readUnsignedByte(i_17_ + -30760);
                                     break while_145_;
                                 } while (false);
-                                anInt9125 = class348_sub49.readShort(842397944);
+                                anInt9125 = class348_sub49.readUnsignedShort(842397944);
                                 break while_145_;
                             } while (false);
                             anInt9124 = class348_sub49.readUnsignedByte(i_17_ ^ 0x79d8);

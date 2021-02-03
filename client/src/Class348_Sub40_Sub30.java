@@ -98,8 +98,8 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                             else {
                                 Class146.anInt2012++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, Class239_Sub6.method1745(string, -65));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.method3333((byte) -5, string);
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65));
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47);
                                 if (i <= -31) break;
                                 method3127(-4);
@@ -251,7 +251,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                     int i_40_ = i;
                     do {
                         if (i_40_ == 0) {
-                            anInt9402 = class348_sub49.method3372(13638);
+                            anInt9402 = class348_sub49.readShort(13638);
                             return;
                         } else if (i_40_ != 1) {
                             if (i_40_ == 2) break;

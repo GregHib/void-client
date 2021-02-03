@@ -428,10 +428,10 @@ final class Class82 {
                         }
                         if (string.startsWith("pc")) {
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub40_Sub22.aClass351_9304, Class348_Sub23_Sub2.aClass77_9029, -97));
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, 0);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
                             int i_12_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197);
                             int i_13_ = string.indexOf(" ", 4);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3333((byte) -5, string.substring(3, i_13_));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string.substring(3, i_13_));
                             Class367_Sub4.method3544((class348_sub47.aClass348_Sub49_Sub2_7116), i + -12, string.substring(i_13_));
                             class348_sub47.aClass348_Sub49_Sub2_7116.method3339(114, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 + -i_12_));
                             Class348_Sub42_Sub14.method3243(i ^ ~0x49, class348_sub47);
@@ -629,10 +629,10 @@ final class Class82 {
                         if (Class240.anInt4674 == 10) {
                             Class292.anInt4799++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class101_Sub2.aClass351_5699), (Class348_Sub23_Sub2.aClass77_9029), i ^ 0x24);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, string.length() + 3);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, bool ? 1 : 0);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, bool_0_ ? 1 : 0);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3333((byte) -5, string);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, string.length() + 3);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, bool ? 1 : 0);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, bool_0_ ? 1 : 0);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                             Class348_Sub42_Sub14.method3243(120, class348_sub47);
                         }
                         if (string.startsWith("fps ") && (Class8.aClass364_165 != Class55_Sub1.aClass364_5271)) {

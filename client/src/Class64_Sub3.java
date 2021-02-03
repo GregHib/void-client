@@ -201,9 +201,9 @@ final class Class64_Sub3 extends Class64 {
         Class348_Sub49_Sub1 class348_sub49_sub1 = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798;
         if (aHa_Sub2_5598.aBoolean7775) {
             for (int i_12_ = 0; i_12_ < anInt5537; i_12_++) {
-                class348_sub49_sub1.method3337((byte) 107, aShortArray5592[i_12_]);
-                class348_sub49_sub1.method3337((byte) 107, aShortArray5579[i_12_]);
-                class348_sub49_sub1.method3337((byte) 107, aShortArray5566[i_12_]);
+                class348_sub49_sub1.writeShort((byte) 107, aShortArray5592[i_12_]);
+                class348_sub49_sub1.writeShort((byte) 107, aShortArray5579[i_12_]);
+                class348_sub49_sub1.writeShort((byte) 107, aShortArray5566[i_12_]);
             }
         } else {
             for (int i_13_ = 0; i_13_ < anInt5537; i_13_++) {
@@ -1340,9 +1340,9 @@ final class Class64_Sub3 extends Class64 {
                                 int i_307_ = -1 + aShortArray5649[i_306_];
                                 if (i_307_ == -1) break;
                                 class348_sub49_sub1.anInt7197 = i_295_ * i_307_;
-                                class348_sub49_sub1.method3391((byte) 111, i_301_);
-                                class348_sub49_sub1.method3391((byte) 109, i_302_);
-                                class348_sub49_sub1.method3391((byte) 116, i_303_);
+                                class348_sub49_sub1.writeInt((byte) 111, i_301_);
+                                class348_sub49_sub1.writeInt((byte) 109, i_302_);
+                                class348_sub49_sub1.writeInt((byte) 116, i_303_);
                             }
                         }
                     } else {
@@ -1409,10 +1409,10 @@ final class Class64_Sub3 extends Class64 {
                             class348_sub49_sub1.anInt7197 = i_329_ * i_295_ + i_297_;
                             if (i_335_ < 0) i_335_ = 0;
                             else if (i_335_ > 255) i_335_ = 255;
-                            class348_sub49_sub1.method3378(false, i_333_);
-                            class348_sub49_sub1.method3378(false, i_334_);
-                            class348_sub49_sub1.method3378(false, i_335_);
-                            class348_sub49_sub1.method3378(false, (255 + -((aByteArray5542[i_324_]) & 0xff)));
+                            class348_sub49_sub1.writeByte(false, i_333_);
+                            class348_sub49_sub1.writeByte(false, i_334_);
+                            class348_sub49_sub1.writeByte(false, i_335_);
+                            class348_sub49_sub1.writeByte(false, (255 + -((aByteArray5542[i_324_]) & 0xff)));
                             i_329_ = aShortArray5579[i_324_];
                             i_330_ = is_316_[i_329_];
                             if (i_330_ != 0) f_331_ = (((float) is[i_329_] * f_320_ + (f * (float) is_318_[i_329_] + (float) is_317_[i_329_] * f_319_)) / (float) (i_330_ * 256));
@@ -1428,10 +1428,10 @@ final class Class64_Sub3 extends Class64 {
                             class348_sub49_sub1.anInt7197 = i_297_ - -(i_329_ * i_295_);
                             if (i_335_ < 0) i_335_ = 0;
                             else if (i_335_ > 255) i_335_ = 255;
-                            class348_sub49_sub1.method3378(false, i_333_);
-                            class348_sub49_sub1.method3378(false, i_334_);
-                            class348_sub49_sub1.method3378(false, i_335_);
-                            class348_sub49_sub1.method3378(false, 255 - (aByteArray5542[i_324_] & 0xff));
+                            class348_sub49_sub1.writeByte(false, i_333_);
+                            class348_sub49_sub1.writeByte(false, i_334_);
+                            class348_sub49_sub1.writeByte(false, i_335_);
+                            class348_sub49_sub1.writeByte(false, 255 - (aByteArray5542[i_324_] & 0xff));
                             i_329_ = aShortArray5566[i_324_];
                             i_330_ = is_316_[i_329_];
                             if (i_330_ != 0) f_331_ = (((float) is[i_329_] * f_320_ + ((float) is_317_[i_329_] * f_319_ + (float) is_318_[i_329_] * f)) / (float) (256 * i_330_));
@@ -1450,20 +1450,20 @@ final class Class64_Sub3 extends Class64 {
                                 if (i_335_ > 255) i_335_ = 255;
                             } else i_335_ = 0;
                             class348_sub49_sub1.anInt7197 = i_295_ * i_329_ + i_297_;
-                            class348_sub49_sub1.method3378(false, i_333_);
-                            class348_sub49_sub1.method3378(false, i_334_);
-                            class348_sub49_sub1.method3378(false, i_335_);
-                            class348_sub49_sub1.method3378(false, (-(0xff & (aByteArray5542[i_324_])) + 255));
+                            class348_sub49_sub1.writeByte(false, i_333_);
+                            class348_sub49_sub1.writeByte(false, i_334_);
+                            class348_sub49_sub1.writeByte(false, i_335_);
+                            class348_sub49_sub1.writeByte(false, (-(0xff & (aByteArray5542[i_324_])) + 255));
                         }
                     } else {
                         for (int i_336_ = 0; i_336_ < anInt5632; i_336_++) {
                             int i_337_ = method680(i + 19990, aShort5544, aByteArray5542[i_336_], aShortArray5601[i_336_], aShortArray5580[i_336_]);
                             class348_sub49_sub1.anInt7197 = i_297_ + aShortArray5592[i_336_] * i_295_;
-                            class348_sub49_sub1.method3391((byte) 105, i_337_);
+                            class348_sub49_sub1.writeInt((byte) 105, i_337_);
                             class348_sub49_sub1.anInt7197 = i_297_ - -(aShortArray5579[i_336_] * i_295_);
-                            class348_sub49_sub1.method3391((byte) 87, i_337_);
+                            class348_sub49_sub1.writeInt((byte) 87, i_337_);
                             class348_sub49_sub1.anInt7197 = i_297_ - -(i_295_ * aShortArray5566[i_336_]);
-                            class348_sub49_sub1.method3391((byte) 120, i_337_);
+                            class348_sub49_sub1.writeInt((byte) 120, i_337_);
                         }
                     }
                 }

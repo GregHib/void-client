@@ -17,19 +17,19 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
 
     static final void method569(byte i, Class348_Sub49 class348_sub49) {
         anInt8675++;
-        int i_0_ = class348_sub49.method3382(-128);
+        int i_0_ = class348_sub49.readSmart(-128);
         Class373_Sub2.aClass283Array7446 = new Class283[i_0_];
         for (int i_1_ = 0; i_0_ > i_1_; i_1_++) {
             Class373_Sub2.aClass283Array7446[i_1_] = new Class283();
-            Class373_Sub2.aClass283Array7446[i_1_].anInt3657 = class348_sub49.method3382(-124);
+            Class373_Sub2.aClass283Array7446[i_1_].anInt3657 = class348_sub49.readSmart(-124);
             Class373_Sub2.aClass283Array7446[i_1_].aString3663 = class348_sub49.method3371(-13487);
         }
-        Class318_Sub1_Sub2.anInt8731 = class348_sub49.method3382(-127);
-        Class239_Sub29.anInt6151 = class348_sub49.method3382(-119);
-        Class225.anInt2956 = class348_sub49.method3382(-122);
+        Class318_Sub1_Sub2.anInt8731 = class348_sub49.readSmart(-127);
+        Class239_Sub29.anInt6151 = class348_sub49.readSmart(-119);
+        Class225.anInt2956 = class348_sub49.readSmart(-122);
         OutputStream_Sub1.aClass110_Sub1Array97 = new Class110_Sub1[1 + (Class239_Sub29.anInt6151 + -Class318_Sub1_Sub2.anInt8731)];
         for (int i_2_ = 0; Class225.anInt2956 > i_2_; i_2_++) {
-            int i_3_ = class348_sub49.method3382(-126);
+            int i_3_ = class348_sub49.readSmart(-126);
             Class110_Sub1 class110_sub1 = (OutputStream_Sub1.aClass110_Sub1Array97[i_3_] = new Class110_Sub1());
             class110_sub1.anInt1711 = class348_sub49.readUnsignedByte(255);
             class110_sub1.anInt1708 = class348_sub49.readInt((byte) -126);

@@ -26,8 +26,8 @@ final class Class306 {
         if (Class169.aClass19Array2261 != null) {
             Class119_Sub1.anInt4698++;
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class357.aClass351_4405, Class348_Sub23_Sub2.aClass77_9029, -97);
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, Class239_Sub6.method1745(string, -65));
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3333((byte) -5, string);
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65));
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
             if (i > -50) method2297(104, 26, null, null, -19);
             Class348_Sub42_Sub14.method3243(-43, class348_sub47);
         }

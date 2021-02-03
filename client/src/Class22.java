@@ -37,13 +37,13 @@ final class Class22 {
             anInt337 = class348_sub49.method3351(-1);
             method292(anInt337, (byte) 117);
         } else if (i == 2) {
-            this.anInt331 = class348_sub49.readShort(i_1_ + 842397948);
+            this.anInt331 = class348_sub49.readUnsignedShort(i_1_ + 842397948);
             if (this.anInt331 == 65535) this.anInt331 = -1;
         } else if (i != 3) {
             if (i != 4) {
                 if (i == 5) this.aBoolean334 = false;
             } else this.aBoolean342 = false;
-        } else this.anInt336 = class348_sub49.readShort(842397944) << 2;
+        } else this.anInt336 = class348_sub49.readUnsignedShort(842397944) << 2;
         if (i_1_ != -4) method290(null, 12);
         anInt333++;
     }

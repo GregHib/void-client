@@ -55,8 +55,8 @@ final class Class197 {
         anIntArray2605 = new int[anInt2604];
         anIntArray2602 = new int[anInt2604];
         for (int i = 0; i < anInt2604; i++) {
-            anIntArray2605[i] = class348_sub49.readShort(842397944);
-            anIntArray2602[i] = class348_sub49.readShort(842397944);
+            anIntArray2605[i] = class348_sub49.readUnsignedShort(842397944);
+            anIntArray2602[i] = class348_sub49.readUnsignedShort(842397944);
         }
     }
 }

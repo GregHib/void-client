@@ -55,10 +55,10 @@ final class Class261 {
         Class348_Sub42_Sub12.anInt9594++;
         anInt3318++;
         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class117.aClass351_1766, Class348_Sub23_Sub2.aClass77_9029, i + -107);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3378(false, 1 - -Class239_Sub6.method1745(string, -65));
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 1 - -Class239_Sub6.method1745(string, -65));
         if (i == 16) {
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3370((byte) -70, i_8_);
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3333((byte) -5, string);
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -70, i_8_);
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
             Class348_Sub42_Sub14.method3243(117, class348_sub47);
         }
     }

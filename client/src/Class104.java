@@ -193,7 +193,7 @@ final class Class104 {
                                         if (aHa_Sub2_1616.aBoolean7775) {
                                             for (int i_50_ = 0; (i_50_ < is.length); i_50_++) {
                                                 i_43_++;
-                                                class348_sub49_sub1.method3337((byte) 107, 0xffff & is[i_50_]);
+                                                class348_sub49_sub1.writeShort((byte) 107, 0xffff & is[i_50_]);
                                             }
                                         } else {
                                             for (int i_49_ = 0; is.length > i_49_; i_49_++) {

@@ -49,7 +49,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
     static final Class369_Sub3_Sub1 method2128(int i, Class348_Sub49 class348_sub49) {
         anInt8495++;
         Class369_Sub3 class369_sub3 = Class348_Sub46.method3322(0, class348_sub49);
-        int i_5_ = class348_sub49.method3372(13638);
+        int i_5_ = class348_sub49.readShort(13638);
         return (new Class369_Sub3_Sub1(class369_sub3.aClass221_4968, class369_sub3.aClass341_4973, class369_sub3.anInt4970, class369_sub3.anInt4959, class369_sub3.anInt4971, class369_sub3.anInt4963, class369_sub3.anInt4966, class369_sub3.anInt4965, class369_sub3.anInt4961, class369_sub3.anInt8599, class369_sub3.anInt8595, class369_sub3.anInt8603, class369_sub3.anInt8602, class369_sub3.anInt8600, class369_sub3.anInt8597, i_5_));
     }
 

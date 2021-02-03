@@ -43,7 +43,7 @@ final class Class182 {
     static final Class50_Sub4 method1374(int i, Class348_Sub49 class348_sub49) {
         if (i < 106) aClass346_2449 = null;
         anInt2453++;
-        return new Class50_Sub4(class348_sub49.method3372(13638), class348_sub49.method3372(13638), class348_sub49.method3372(13638), class348_sub49.method3372(13638), class348_sub49.method3351(-1), class348_sub49.readUnsignedByte(255));
+        return new Class50_Sub4(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.method3351(-1), class348_sub49.readUnsignedByte(255));
     }
 
     public static void method1375(int i) {

@@ -2,6 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
+import java.util.Arrays;
+
 final class Class375 {
     static int anInt4539;
     static boolean aBoolean4540 = false;
@@ -32,8 +34,8 @@ final class Class375 {
     static final void method3614(int i, int i_3_, int i_4_, Class348_Sub47 class348_sub47, int i_5_) {
         anInt4539++;
         if (i_5_ != -19692) method3613(10);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3391((byte) 124, i);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3337((byte) 107, i_4_);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3337((byte) 107, i_3_);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 124, i);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_4_);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_3_);
     }
 }

@@ -41,11 +41,11 @@ final class Class239_Sub1 extends Class239 {
                 if (class318_sub1_sub3_sub3_sub2.aString10544 != null && class318_sub1_sub3_sub3_sub2.aString10544.equalsIgnoreCase(string) && (((class318_sub1_sub3_sub3_sub2 == Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907) && (0x10 & Class38.anInt500) != 0) || (class318_sub1_sub3_sub3_sub2 != null && (Class38.anInt500 & 0x8) != 0))) {
                     Class228.anInt2975++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3349(4325, Class9.anInt169);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3353(is[i_4_], (byte) 3);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3353(Class301.anInt3829, (byte) 3);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3356(Class149.anInt2046, -4086);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3374((byte) -64, 0);
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169);
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(is[i_4_], (byte) 3);
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class301.anInt3829, (byte) 3);
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeIntInverseMiddle(Class149.anInt2046, -4086);
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -64, 0);
                     Class348_Sub42_Sub14.method3243(116, class348_sub47);
                     bool = true;
                     Class298.method2252(true, class318_sub1_sub3_sub3_sub2.anIntArray10320[0], class318_sub1_sub3_sub3_sub2.anIntArray10317[0], (byte) -99, class318_sub1_sub3_sub3_sub2.method2436((byte) 54), 0, class318_sub1_sub3_sub3_sub2.method2436((byte) 91), -2, 0);

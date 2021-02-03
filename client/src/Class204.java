@@ -51,8 +51,8 @@ final class Class204 {
     final void method1482(byte[] is) {
         aClass348_Sub49_2677.aByteArray7154 = is;
         aClass348_Sub49_2677.anInt7197 = 10;
-        int i = aClass348_Sub49_2677.readShort(842397944);
-        this.anInt2683 = aClass348_Sub49_2677.readShort(842397944);
+        int i = aClass348_Sub49_2677.readUnsignedShort(842397944);
+        this.anInt2683 = aClass348_Sub49_2677.readUnsignedShort(842397944);
         anInt2684 = 500000;
         anIntArray2679 = new int[i];
         int i_8_ = 0;

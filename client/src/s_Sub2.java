@@ -578,7 +578,7 @@ final class s_Sub2 extends s {
                             short[] is = this.aShortArrayArray8267[i_160_];
                             if (is != null) {
                                 for (int i_162_ = 0; i_162_ < is.length; i_162_++) {
-                                    class348_sub49_sub1.method3337((byte) 107, (is[i_162_] & 0xffff));
+                                    class348_sub49_sub1.writeShort((byte) 107, (is[i_162_] & 0xffff));
                                     i_158_++;
                                 }
                             }
@@ -651,7 +651,7 @@ final class s_Sub2 extends s {
                         is[i_171_] = (byte) -1;
                 }
             }
-            class348_sub49.method3380(24, 0, is, i ^ 0x8);
+            class348_sub49.writeBytes(24, 0, is, i ^ 0x8);
         }
     }
 

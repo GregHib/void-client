@@ -42,12 +42,12 @@ final class Class277 {
             if (i_1_ != 1) {
                 if (i_1_ == 2) this.anInt3575 = class348_sub49.readUnsignedByte(255);
                 else if (i_1_ == 3) {
-                    this.anInt3575 = class348_sub49.readShort(842397944);
+                    this.anInt3575 = class348_sub49.readUnsignedShort(842397944);
                     if (this.anInt3575 == 65535) this.anInt3575 = -1;
                 } else if (i_1_ != 5) {
                     if (i_1_ != 7) {
                         if (i_1_ == 8) this.aClass268_3562.anInt3447 = this.anInt3573;
-                        else if (i_1_ == 9) this.anInt3570 = (class348_sub49.readShort(842397944) << 2);
+                        else if (i_1_ == 9) this.anInt3570 = (class348_sub49.readUnsignedShort(842397944) << 2);
                         else if (i_1_ == 10) this.aBoolean3566 = false;
                         else if (i_1_ == 11) this.anInt3564 = class348_sub49.readUnsignedByte(255);
                         else if (i_1_ != 12) {

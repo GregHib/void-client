@@ -53,12 +53,12 @@ final class Class291 {
         int i_3_ = class348_sub49.readUnsignedByte(255);
         boolean bool = (i_3_ & 0x1) != 0;
         boolean bool_4_ = (i_3_ & 0x2) != 0;
-        this.anInt3727 = class348_sub49.readShort(842397944);
+        this.anInt3727 = class348_sub49.readUnsignedShort(842397944);
         int i_5_ = 0;
         this.anIntArray3738 = new int[this.anInt3727];
         int i_6_ = -1;
         for (int i_7_ = 0; i_7_ < this.anInt3727; i_7_++) {
-            this.anIntArray3738[i_7_] = i_5_ += class348_sub49.readShort(842397944);
+            this.anIntArray3738[i_7_] = i_5_ += class348_sub49.readUnsignedShort(842397944);
             if (i_6_ < this.anIntArray3738[i_7_]) i_6_ = this.anIntArray3738[i_7_];
         }
         this.anInt3734 = i_6_ - -1;
@@ -89,7 +89,7 @@ final class Class291 {
         for (int i_13_ = 0; i_13_ < this.anInt3727; i_13_++)
             this.anIntArray3722[(this.anIntArray3738[i_13_])] = class348_sub49.readInt((byte) -126);
         for (int i_14_ = 0; this.anInt3727 > i_14_; i_14_++)
-            this.anIntArray3725[(this.anIntArray3738[i_14_])] = class348_sub49.readShort(842397944);
+            this.anIntArray3725[(this.anIntArray3738[i_14_])] = class348_sub49.readUnsignedShort(842397944);
         for (int i_15_ = 0; this.anInt3727 > i_15_; i_15_++) {
             int i_16_ = this.anIntArray3738[i_15_];
             i_5_ = 0;
@@ -97,7 +97,7 @@ final class Class291 {
             int i_18_ = -1;
             this.anIntArrayArray3721[i_16_] = new int[i_17_];
             for (int i_19_ = 0; i_17_ > i_19_; i_19_++) {
-                int i_20_ = (this.anIntArrayArray3721[i_16_][i_19_] = i_5_ += class348_sub49.readShort(842397944));
+                int i_20_ = (this.anIntArrayArray3721[i_16_][i_19_] = i_5_ += class348_sub49.readUnsignedShort(842397944));
                 if (i_18_ < i_20_) i_18_ = i_20_;
             }
             this.anIntArray3724[i_16_] = i_18_ + 1;

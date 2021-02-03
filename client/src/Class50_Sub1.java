@@ -98,16 +98,16 @@ final class Class50_Sub1 extends Class50 {
         int[] is = new int[4];
         for (int i = 0; i < 4; i++)
             is[i] = (int) (Math.random() * 9.9999999E7);
-        class348_sub49.method3378(bool, 10);
-        class348_sub49.method3391((byte) 114, is[0]);
-        class348_sub49.method3391((byte) 97, is[1]);
-        class348_sub49.method3391((byte) 109, is[2]);
-        class348_sub49.method3391((byte) 105, is[3]);
+        class348_sub49.writeByte(bool, 10);
+        class348_sub49.writeInt((byte) 114, is[0]);
+        class348_sub49.writeInt((byte) 97, is[1]);
+        class348_sub49.writeInt((byte) 109, is[2]);
+        class348_sub49.writeInt((byte) 105, is[3]);
         for (int i = 0; i < 10; i++)
-            class348_sub49.method3391((byte) 120, (int) (9.9999999E7 * Math.random()));
-        class348_sub49.method3337((byte) 107, (int) (9.9999999E7 * Math.random()));
+            class348_sub49.writeInt((byte) 120, (int) (9.9999999E7 * Math.random()));
+        class348_sub49.writeShort((byte) 107, (int) (9.9999999E7 * Math.random()));
         class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (byte) -98, Class318_Sub1_Sub4.aBigInteger8762);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3380(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, 80);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, 80);
         return is;
     }
 

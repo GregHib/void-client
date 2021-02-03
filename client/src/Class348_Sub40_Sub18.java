@@ -24,11 +24,13 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                     Class348_Sub5.aByteArray6624[i_2_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_2_]), 2);
                     i_0_--;
                 } else {
-                    int i_3_ = class348_sub49_sub2.method3410((byte) -24, 1);
+                    int i_3_ = class348_sub49_sub2.readBits((byte) -24, 1);
                     if (i_3_ == 0) {
                         i_0_ = Class318_Sub1_Sub3.method2413(1, class348_sub49_sub2);
                         Class348_Sub5.aByteArray6624[i_2_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_2_]), 2);
-                    } else Class286_Sub9.method2177(1, i_2_, class348_sub49_sub2);
+                    } else {
+                        Class286_Sub9.method2177(1, i_2_, class348_sub49_sub2);
+                    }
                 }
             }
         }
@@ -42,7 +44,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                     Class348_Sub5.aByteArray6624[i_5_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_5_]), 2);
                     i_0_--;
                 } else {
-                    int i_6_ = class348_sub49_sub2.method3410((byte) -24, 1);
+                    int i_6_ = class348_sub49_sub2.readBits((byte) -24, 1);
                     if (i_6_ == 0) {
                         i_0_ = Class318_Sub1_Sub3.method2413(1, class348_sub49_sub2);
                         Class348_Sub5.aByteArray6624[i_5_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_5_]), 2);
@@ -60,7 +62,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                     Class348_Sub5.aByteArray6624[i_8_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_8_]), 2);
                     i_0_--;
                 } else {
-                    int i_9_ = class348_sub49_sub2.method3410((byte) -24, 1);
+                    int i_9_ = class348_sub49_sub2.readBits((byte) -24, 1);
                     if (i_9_ == 0) {
                         i_0_ = Class318_Sub1_Sub3.method2413(i + 21479, class348_sub49_sub2);
                         Class348_Sub5.aByteArray6624[i_8_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_8_]), 2);
@@ -79,7 +81,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
                         Class348_Sub5.aByteArray6624[i_11_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_11_]), 2);
                         i_0_--;
                     } else {
-                        int i_12_ = class348_sub49_sub2.method3410((byte) -24, 1);
+                        int i_12_ = class348_sub49_sub2.readBits((byte) -24, 1);
                         if (i_12_ == 0) {
                             i_0_ = Class318_Sub1_Sub3.method2413(1, class348_sub49_sub2);
                             Class348_Sub5.aByteArray6624[i_11_] = (byte) Class273.method2057((Class348_Sub5.aByteArray6624[i_11_]), 2);

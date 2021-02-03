@@ -88,9 +88,9 @@ final class Class368 {
     private final void method3564(int i, Class348_Sub49 class348_sub49, int i_11_) {
         anInt4486++;
         if (i < -119) {
-            if (i_11_ == 1) anInt4506 = class348_sub49.readShort(842397944);
+            if (i_11_ == 1) anInt4506 = class348_sub49.readUnsignedShort(842397944);
             else if (i_11_ != 2) {
-                if (i_11_ == 4) anInt4498 = class348_sub49.readShort(842397944);
+                if (i_11_ == 4) anInt4498 = class348_sub49.readUnsignedShort(842397944);
                 else if (i_11_ != 5) {
                     if (i_11_ != 6) {
                         if (i_11_ != 7) {
@@ -107,7 +107,7 @@ final class Class368 {
                                             anInt4507 = class348_sub49.readUnsignedByte(255) * 256;
                                         } else if (i_11_ == 15) {
                                             this.aByte4488 = (byte) 3;
-                                            anInt4507 = class348_sub49.readShort(842397944);
+                                            anInt4507 = class348_sub49.readUnsignedShort(842397944);
                                         } else if (i_11_ == 16) {
                                             this.aByte4488 = (byte) 3;
                                             anInt4507 = (class348_sub49.readInt((byte) -126));
@@ -116,25 +116,25 @@ final class Class368 {
                                             aShortArray4490 = new short[i_14_];
                                             aShortArray4502 = new short[i_14_];
                                             for (int i_15_ = 0; i_14_ > i_15_; i_15_++) {
-                                                aShortArray4490[i_15_] = (short) (class348_sub49.readShort(842397944));
-                                                aShortArray4502[i_15_] = (short) (class348_sub49.readShort(842397944));
+                                                aShortArray4490[i_15_] = (short) (class348_sub49.readUnsignedShort(842397944));
+                                                aShortArray4502[i_15_] = (short) (class348_sub49.readUnsignedShort(842397944));
                                             }
                                         } else if (i_11_ == 41) {
                                             int i_12_ = (class348_sub49.readUnsignedByte(255));
                                             aShortArray4504 = new short[i_12_];
                                             aShortArray4499 = new short[i_12_];
                                             for (int i_13_ = 0; i_12_ > i_13_; i_13_++) {
-                                                aShortArray4499[i_13_] = (short) (class348_sub49.readShort(842397944));
-                                                aShortArray4504[i_13_] = (short) (class348_sub49.readShort(842397944));
+                                                aShortArray4499[i_13_] = (short) (class348_sub49.readUnsignedShort(842397944));
+                                                aShortArray4504[i_13_] = (short) (class348_sub49.readUnsignedShort(842397944));
                                             }
                                         }
                                     } else this.aByte4488 = (byte) 1;
                                 } else this.aBoolean4487 = true;
                             } else anInt4512 = class348_sub49.readUnsignedByte(255);
                         } else anInt4489 = class348_sub49.readUnsignedByte(255);
-                    } else anInt4508 = class348_sub49.readShort(842397944);
-                } else anInt4492 = class348_sub49.readShort(842397944);
-            } else this.anInt4503 = class348_sub49.readShort(842397944);
+                    } else anInt4508 = class348_sub49.readUnsignedShort(842397944);
+                } else anInt4492 = class348_sub49.readUnsignedShort(842397944);
+            } else this.anInt4503 = class348_sub49.readUnsignedShort(842397944);
         }
     }
 

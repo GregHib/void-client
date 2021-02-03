@@ -83,7 +83,7 @@ final class Class232 {
                             short[] is = (var_s_Sub2.aShortArrayArray8267[i_20_++]);
                             if (is != null) {
                                 for (int i_22_ = 0; (i_22_ < is.length); i_22_++)
-                                    class348_sub49.method3337((byte) 107, (is[i_22_] & 0xffff));
+                                    class348_sub49.writeShort((byte) 107, (is[i_22_] & 0xffff));
                             }
                         }
                     }

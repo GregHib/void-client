@@ -60,9 +60,9 @@ final class Class348_Sub14 extends Class348 {
             class348_sub47 = Class286_Sub3.method2148(Class301.aClass351_3825, Class348_Sub23_Sub2.aClass77_9029, -93);
             Class177.anInt4665++;
         }
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3353(i + Class90.anInt1517, (byte) 3);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3395((byte) 78, !Class182.aClass346_2449.method2696(82, -124) ? 0 : 1);
-        class348_sub47.aClass348_Sub49_Sub2_7116.method3335(-124, za_Sub2.anInt9780 + i_2_);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i + Class90.anInt1517, (byte) 3);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 78, !Class182.aClass346_2449.method2696(82, -124) ? 0 : 1);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-124, za_Sub2.anInt9780 + i_2_);
         Class248.anInt3203 = i_2_;
         if (i_3_ >= -88) aClass351_6764 = null;
         Class97.anInt1548 = i;

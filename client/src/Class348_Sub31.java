@@ -196,10 +196,10 @@ abstract class Class348_Sub31 extends Class348 {
             int i_89_ = class348_sub49.readUnsignedByte(255);
             if (i_89_ >= 0 && i_89_ <= 1 && (class348_sub49.aByteArray7154.length - class348_sub49.anInt7197) >= 2) {
                 if (i != -40) method3012(13, -47, -27, 107, -90, (byte) -19, -61, 36);
-                int i_90_ = class348_sub49.readShort(842397944);
+                int i_90_ = class348_sub49.readUnsignedShort(842397944);
                 if (i_90_ * 6 <= (-class348_sub49.anInt7197 + (class348_sub49.aByteArray7154).length)) {
                     for (int i_91_ = 0; i_91_ < i_90_; i_91_++) {
-                        int i_92_ = class348_sub49.readShort(842397944);
+                        int i_92_ = class348_sub49.readUnsignedShort(842397944);
                         int i_93_ = class348_sub49.readInt((byte) -126);
                         if ((Class77.anIntArray1303.length > i_92_) && Class286_Sub6.aBooleanArray6270[i_92_] && ((Class239_Sub14.aClass259_5995.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) Class77.anIntArray1303[i_92_] = i_93_;
                     }

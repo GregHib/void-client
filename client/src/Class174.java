@@ -80,7 +80,7 @@ final class Class174 {
 
     private final void method1335(Class348_Sub49 class348_sub49, int i, byte i_8_) {
         anInt2287++;
-        if (i == 1) anInt2302 = class348_sub49.readShort(842397944);
+        if (i == 1) anInt2302 = class348_sub49.readUnsignedShort(842397944);
         else if (i == 2) class348_sub49.readUnsignedByte(255);
         else if (i == 3) {
             this.anInt2291 = class348_sub49.readInt((byte) -126);

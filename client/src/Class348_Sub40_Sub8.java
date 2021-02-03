@@ -57,11 +57,11 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
                                 this.anInt9150 = class348_sub49.readUnsignedByte(i_0_ ^ 0x79d8);
                                 break while_151_;
                             } while (false);
-                            this.anInt9149 = class348_sub49.method3372(13638);
+                            this.anInt9149 = class348_sub49.readShort(13638);
                             if (this.anInt9149 < 0) {
                                 aShortArray9159 = new short[(this.anInt9150)];
                                 for (i_1_ = 0; (this.anInt9150 > i_1_); i_1_++)
-                                    aShortArray9159[i_1_] = (short) class348_sub49.method3372(13638);
+                                    aShortArray9159[i_1_] = (short) class348_sub49.readShort(13638);
                             }
                             break while_151_;
                         } while (false);

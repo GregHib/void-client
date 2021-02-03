@@ -125,10 +125,10 @@ final class Class348_Sub32 extends Class348 {
             aClass348_Sub49_Sub1_6953.method3399(18291, (float) i_7_);
         }
         if (i_33_ > 255) i_33_ = 255;
-        aClass348_Sub49_Sub1_6953.method3378(false, i_31_);
-        aClass348_Sub49_Sub1_6953.method3378(false, i_32_);
-        aClass348_Sub49_Sub1_6953.method3378(false, i_33_);
-        aClass348_Sub49_Sub1_6953.method3378(false, 255);
+        aClass348_Sub49_Sub1_6953.writeByte(false, i_31_);
+        aClass348_Sub49_Sub1_6953.writeByte(false, i_32_);
+        aClass348_Sub49_Sub1_6953.writeByte(false, i_33_);
+        aClass348_Sub49_Sub1_6953.writeByte(false, 255);
         method3022((byte) -46, i_9_);
     }
 
@@ -155,7 +155,7 @@ final class Class348_Sub32 extends Class348 {
         anInt6939++;
         if (i == -46) {
             if (!aHa_Sub2_6951.aBoolean7775) aClass348_Sub49_6936.method3397(i + 135, i_34_);
-            else aClass348_Sub49_6936.method3337((byte) 107, i_34_);
+            else aClass348_Sub49_6936.writeShort((byte) 107, i_34_);
         }
     }
 

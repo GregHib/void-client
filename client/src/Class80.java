@@ -72,16 +72,16 @@ final class Class80 {
             aClass197_1420.method1452(class348_sub49);
         }
         for (int i_2_ = 0; i_2_ < 10; i_2_++) {
-            int i_3_ = class348_sub49.method3382(-118);
+            int i_3_ = class348_sub49.readSmart(-118);
             if (i_3_ == 0) break;
             anIntArray1410[i_2_] = i_3_;
             anIntArray1411[i_2_] = class348_sub49.method3362((byte) 77);
-            anIntArray1428[i_2_] = class348_sub49.method3382(-121);
+            anIntArray1428[i_2_] = class348_sub49.readSmart(-121);
         }
-        anInt1427 = class348_sub49.method3382(-120);
-        anInt1422 = class348_sub49.method3382(-122);
-        this.anInt1421 = class348_sub49.readShort(842397944);
-        this.anInt1407 = class348_sub49.readShort(842397944);
+        anInt1427 = class348_sub49.readSmart(-120);
+        anInt1422 = class348_sub49.readSmart(-122);
+        this.anInt1421 = class348_sub49.readUnsignedShort(842397944);
+        this.anInt1407 = class348_sub49.readUnsignedShort(842397944);
         aClass349_1419 = new Class349();
         aClass197_1417 = new Class197();
         aClass349_1419.method3446(class348_sub49, aClass197_1417);

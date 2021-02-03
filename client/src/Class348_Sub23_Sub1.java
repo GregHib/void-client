@@ -60,7 +60,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
     static final Class50_Sub3 method2970(int i, Class348_Sub49 class348_sub49) {
         anInt8998++;
         if (i != 2) method2972(null, -114, 15);
-        return new Class50_Sub3(class348_sub49.method3372(13638), class348_sub49.method3372(i + 13636), class348_sub49.method3372(13638), class348_sub49.method3372(i ^ 0x3544), class348_sub49.method3372(13638), class348_sub49.method3372(i + 13636), class348_sub49.method3372(13638), class348_sub49.method3372(13638), class348_sub49.method3351(-1), class348_sub49.readUnsignedByte(255));
+        return new Class50_Sub3(class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(i ^ 0x3544), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.method3351(-1), class348_sub49.readUnsignedByte(255));
     }
 
     final Class348_Sub16_Sub2 method2971(int i) {

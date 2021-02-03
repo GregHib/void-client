@@ -81,7 +81,7 @@ final class Class244 implements d {
             aClass45_4619 = class45_12_;
             aClass45_4624 = class45_13_;
             Class348_Sub49 class348_sub49 = new Class348_Sub49(class45.method410(-1860, 0, 0));
-            anInt4625 = class348_sub49.readShort(842397944);
+            anInt4625 = class348_sub49.readUnsignedShort(842397944);
             aClass12Array4611 = new Class12[anInt4625];
             for (int i = 0; anInt4625 > i; i++) {
                 if (class348_sub49.readUnsignedByte(255) == 1) aClass12Array4611[i] = new Class12();
@@ -108,7 +108,7 @@ final class Class244 implements d {
                 if (aClass12Array4611[i] != null) aClass12Array4611[i].aByte202 = class348_sub49.readByte(-82);
             }
             for (int i = 0; i < anInt4625; i++) {
-                if (aClass12Array4611[i] != null) aClass12Array4611[i].aShort208 = (short) class348_sub49.readShort(842397944);
+                if (aClass12Array4611[i] != null) aClass12Array4611[i].aShort208 = (short) class348_sub49.readUnsignedShort(842397944);
             }
             for (int i = 0; anInt4625 > i; i++) {
                 if (aClass12Array4611[i] != null) aClass12Array4611[i].aByte198 = class348_sub49.readByte(-86);

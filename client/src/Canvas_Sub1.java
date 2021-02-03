@@ -304,7 +304,7 @@ final class Canvas_Sub1 extends Canvas {
                 if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aClass238_9165 != null && Class240.anInt4674 == 11) {
                     Class352.anInt4335++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i ^ ~0x55);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3391((byte) 108, 1057001181);
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 108, 1057001181);
                     Class348_Sub42_Sub14.method3243(-122, class348_sub47);
                 }
                 if (Class312.anInt3931 == 0) {

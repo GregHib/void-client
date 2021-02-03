@@ -25,12 +25,13 @@ final class Class211 {
 
     static final boolean method1538(int i, byte i_0_, Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt2732++;
-        int i_1_ = class348_sub49_sub2.method3410((byte) -24, 2);
+        int i_1_ = class348_sub49_sub2.readBits((byte) -24, 2);
+        System.out.println("Another type: " + i_1_);
         if (i_1_ == 0) {
-            if (class348_sub49_sub2.method3410((byte) -24, 1) != 0) method1538(i, (byte) 105, class348_sub49_sub2);
-            int i_2_ = class348_sub49_sub2.method3410((byte) -24, 6);
-            int i_3_ = class348_sub49_sub2.method3410((byte) -24, 6);
-            boolean bool = (class348_sub49_sub2.method3410((byte) -24, 1) == 1);
+            if (class348_sub49_sub2.readBits((byte) -24, 1) != 0) method1538(i, (byte) 105, class348_sub49_sub2);
+            int i_2_ = class348_sub49_sub2.readBits((byte) -24, 6);
+            int i_3_ = class348_sub49_sub2.readBits((byte) -24, 6);
+            boolean bool = (class348_sub49_sub2.readBits((byte) -24, 1) == 1);
             if (bool) Class18.anIntArray279[Class101_Sub3.anInt5768++] = i;
             if (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i] != null) throw new RuntimeException("hr:lr");
             Class359 class359 = Class348_Sub17.aClass359Array6802[i];
@@ -55,13 +56,13 @@ final class Class211 {
             return true;
         }
         if (i_1_ == 1) {
-            int i_10_ = class348_sub49_sub2.method3410((byte) -24, 2);
+            int i_10_ = class348_sub49_sub2.readBits((byte) -24, 2);
             int i_11_ = Class348_Sub17.aClass359Array6802[i].anInt4420;
             Class348_Sub17.aClass359Array6802[i].anInt4420 = (0xfffffff & i_11_) + (((i_11_ >> 28) + i_10_ & 0x3) << 28);
             return false;
         }
         if (i_1_ == 2) {
-            int i_12_ = class348_sub49_sub2.method3410((byte) -24, 5);
+            int i_12_ = class348_sub49_sub2.readBits((byte) -24, 5);
             int i_13_ = i_12_ >> 3;
             int i_14_ = 0x7 & i_12_;
             int i_15_ = Class348_Sub17.aClass359Array6802[i].anInt4420;
@@ -91,7 +92,7 @@ final class Class211 {
             Class348_Sub17.aClass359Array6802[i].anInt4420 = i_18_ + ((i_16_ << 28) + (i_17_ << 14));
             return false;
         }
-        int i_19_ = class348_sub49_sub2.method3410((byte) -24, 18);
+        int i_19_ = class348_sub49_sub2.readBits((byte) -24, 18);
         int i_20_ = i_19_ >> 16;
         int i_21_ = 0xff & i_19_ >> 8;
         int i_22_ = 0xff & i_19_;
@@ -353,14 +354,14 @@ final class Class211 {
             this.aBoolean2737 = (0x8 & this.anInt2731) != 0;
             this.aBoolean2749 = (this.anInt2731 & 0x10) != 0;
             this.anInt2731 = 0x7 & this.anInt2731;
-            int i_43_ = class348_sub49.readShort(842397944) << i;
-            int i_44_ = class348_sub49.readShort(842397944) << i;
-            int i_45_ = class348_sub49.readShort(842397944) << i;
+            int i_43_ = class348_sub49.readUnsignedShort(842397944) << i;
+            int i_44_ = class348_sub49.readUnsignedShort(842397944) << i;
+            int i_45_ = class348_sub49.readUnsignedShort(842397944) << i;
             int i_46_ = class348_sub49.readUnsignedByte(255);
             int i_47_ = 1 + i_46_ * 2;
             this.aShortArray2742 = new short[i_47_];
             for (int i_48_ = 0; (i_48_ < this.aShortArray2742.length); i_48_++) {
-                int i_49_ = (short) class348_sub49.readShort(842397944);
+                int i_49_ = (short) class348_sub49.readUnsignedShort(842397944);
                 int i_50_ = i_49_ >>> 8;
                 if (i_47_ <= i_50_) i_50_ = i_47_ - 1;
                 int i_51_ = 0xff & i_49_;
@@ -368,7 +369,7 @@ final class Class211 {
                 this.aShortArray2742[i_48_] = (short) Class273.method2057(i_51_, i_50_ << 8);
             }
             i_46_ = ((i_46_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037);
-            int i_52_ = (Class10.anIntArray179 == null ? (Class126.anIntArray4983[Class25.method303(class348_sub49.readShort(842397944), 30) & 0xffff]) : (Class10.anIntArray179[class348_sub49.readShort(842397944)]));
+            int i_52_ = (Class10.anIntArray179 == null ? (Class126.anIntArray4983[Class25.method303(class348_sub49.readUnsignedShort(842397944), 30) & 0xffff]) : (Class10.anIntArray179[class348_sub49.readUnsignedShort(842397944)]));
             int i_53_ = class348_sub49.readUnsignedByte(255);
             anInt2739 = (0xe0 & i_53_) << 3;
             this.anInt2734 = 0x1f & i_53_;

@@ -79,12 +79,12 @@ abstract class Class110 {
                         int i_7_ = class348_sub49.readUnsignedByte(255);
                         if (i_7_ != 0 && i_7_ != 1 && i_7_ != 2) {
                             if (i_7_ == 3 || i_7_ == 4) {
-                                String string = class348_sub49.method3377((byte) 89);
-                                String string_8_ = class348_sub49.method3377((byte) -81);
+                                String string = class348_sub49.readString((byte) 89);
+                                String string_8_ = class348_sub49.readString((byte) -81);
                                 int i_9_ = class348_sub49.readUnsignedByte(255);
                                 String[] strings = new String[i_9_];
                                 for (int i_10_ = 0; i_9_ > i_10_; i_10_++)
-                                    strings[i_10_] = class348_sub49.method3377((byte) -23);
+                                    strings[i_10_] = class348_sub49.readString((byte) -23);
                                 byte[][] is = new byte[i_9_][];
                                 if (i_7_ == 3) {
                                     for (int i_11_ = 0; i_11_ < i_9_; i_11_++) {
@@ -101,8 +101,8 @@ abstract class Class110 {
                                 class348_sub48.aByteArrayArrayArray7128[i_6_] = is;
                             }
                         } else {
-                            String string = class348_sub49.method3377((byte) 103);
-                            String string_14_ = class348_sub49.method3377((byte) 109);
+                            String string = class348_sub49.readString((byte) 103);
+                            String string_14_ = class348_sub49.readString((byte) 109);
                             int i_15_ = 0;
                             if (i_7_ == 1) i_15_ = class348_sub49.readInt((byte) -126);
                             class348_sub48.anIntArray7132[i_6_] = i_7_;

@@ -42,11 +42,11 @@ final class Class300 {
     }
 
     private final void method2276(int i, Class348_Sub49 class348_sub49, int i_3_) {
-        if (i_3_ == 1) this.anInt3817 = class348_sub49.readShort(842397944);
+        if (i_3_ == 1) this.anInt3817 = class348_sub49.readUnsignedShort(842397944);
         else if (i_3_ == 2) {
             this.anIntArray3821 = new int[class348_sub49.readUnsignedByte(255)];
             for (int i_4_ = 0; (i_4_ < this.anIntArray3821.length); i_4_++)
-                this.anIntArray3821[i_4_] = class348_sub49.readShort(842397944);
+                this.anIntArray3821[i_4_] = class348_sub49.readUnsignedShort(842397944);
         } else if (i_3_ == 3) this.anInt3823 = class348_sub49.readUnsignedByte(255);
         if (i != 0) aBoolean3819 = true;
         anInt3822++;

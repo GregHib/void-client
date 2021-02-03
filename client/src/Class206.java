@@ -156,7 +156,7 @@ final class Class206 implements Interface11 {
         } else if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !Class167.method1296(true)) {
             Class318.anInt3973++;
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(ha_Sub2.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107);
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3391((byte) 118, Class267.anInt3428);
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 118, Class267.anInt3428);
             Class348_Sub42_Sub14.method3243(-54, class348_sub47);
             Class267.anInt3428 = -1;
         }

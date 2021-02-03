@@ -65,12 +65,12 @@ final class Class348_Sub20 extends Class348 {
                     while (is_12_.length > i_15_) {
                         if ((i_13_ & 1 << i_14_++) == 0) i_15_ += 3;
                         else {
-                            class348_sub49_sub1.method3337((byte) 107, (is_12_[i_15_++] & 0xffff));
+                            class348_sub49_sub1.writeShort((byte) 107, (is_12_[i_15_++] & 0xffff));
                             i_9_++;
-                            class348_sub49_sub1.method3337((byte) 107, (is_12_[i_15_++] & 0xffff));
+                            class348_sub49_sub1.writeShort((byte) 107, (is_12_[i_15_++] & 0xffff));
                             i_9_++;
                             i_9_++;
-                            class348_sub49_sub1.method3337((byte) 107, (0xffff & (is_12_[i_15_++])));
+                            class348_sub49_sub1.writeShort((byte) 107, (0xffff & (is_12_[i_15_++])));
                         }
                     }
                 }

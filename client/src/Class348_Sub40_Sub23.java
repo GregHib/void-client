@@ -65,28 +65,28 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                             } else break;
                                             break while_190_;
                                         }
-                                        anInt9317 = class348_sub49.readShort(842397944);
+                                        anInt9317 = class348_sub49.readUnsignedShort(842397944);
                                         return;
                                     } while (false);
-                                    anInt9320 = class348_sub49.readShort(842397944);
+                                    anInt9320 = class348_sub49.readUnsignedShort(842397944);
                                     return;
                                 } while (false);
-                                anInt9322 = class348_sub49.readShort(i_0_ ^ 0x323581df);
+                                anInt9322 = class348_sub49.readUnsignedShort(i_0_ ^ 0x323581df);
                                 return;
                             } while (false);
-                            anInt9323 = class348_sub49.readShort(842397944);
+                            anInt9323 = class348_sub49.readUnsignedShort(842397944);
                             return;
                         } while (false);
-                        anInt9311 = class348_sub49.readShort(842397944);
+                        anInt9311 = class348_sub49.readUnsignedShort(842397944);
                         return;
                     } while (false);
                     anInt9312 = class348_sub49.readUnsignedByte(i_0_ ^ 0x79d8);
                     return;
                 } while (false);
-                anInt9314 = class348_sub49.readShort(842397944);
+                anInt9314 = class348_sub49.readUnsignedShort(842397944);
                 return;
             } while (false);
-            anInt9310 = class348_sub49.readShort(842397944);
+            anInt9310 = class348_sub49.readUnsignedShort(842397944);
         } while (false);
     }
 

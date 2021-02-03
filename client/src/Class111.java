@@ -115,23 +115,23 @@ final class Class111 {
                 if (bool) {
                     int i_21_ = class348_sub49.readUnsignedByte(255);
                     int i_22_ = class348_sub49.readUnsignedByte(255);
-                    if (i_17_ > 2) anInt1715 = class348_sub49.method3372(13638);
+                    if (i_17_ > 2) anInt1715 = class348_sub49.readShort(13638);
                     else anInt1715 = -1;
                     anIntArrayArray1724 = new int[i_22_ - -1][];
                     aBooleanArray1725 = new boolean[i_22_ + 1];
                     for (int i_23_ = 0; i_21_ > i_23_; i_23_++) {
                         int i_24_ = class348_sub49.readUnsignedByte(255);
                         aBooleanArray1725[i_24_] = class348_sub49.readUnsignedByte(255) == 1;
-                        int i_25_ = class348_sub49.readShort(842397944);
+                        int i_25_ = class348_sub49.readUnsignedShort(842397944);
                         if (anInt1715 == -1) {
                             anIntArrayArray1724[i_24_] = new int[i_25_];
                             for (int i_26_ = 0; i_25_ > i_26_; i_26_++)
-                                anIntArrayArray1724[i_24_][i_26_] = class348_sub49.readShort(842397944);
+                                anIntArrayArray1724[i_24_][i_26_] = class348_sub49.readUnsignedShort(842397944);
                         } else {
                             anIntArrayArray1724[i_24_] = new int[1 + i_25_];
                             anIntArrayArray1724[i_24_][0] = anInt1715;
                             for (int i_27_ = 0; i_25_ > i_27_; i_27_++)
-                                anIntArrayArray1724[i_24_][1 + i_27_] = class348_sub49.readShort(842397944);
+                                anIntArrayArray1724[i_24_][1 + i_27_] = class348_sub49.readUnsignedShort(842397944);
                         }
                     }
                     for (int i_28_ = 0; i_22_ + 1 > i_28_; i_28_++) {

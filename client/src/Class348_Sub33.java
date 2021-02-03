@@ -47,7 +47,7 @@ final class Class348_Sub33 extends Class348 {
             if (i < 37) aLong6966 = -3L;
             if (!bool) {
                 int i_1_ = class348_sub49_sub2.anInt7197;
-                class348_sub49_sub2.method3391((byte) 94, class348_sub48.anInt7130);
+                class348_sub49_sub2.writeInt((byte) 94, class348_sub48.anInt7130);
                 for (int i_2_ = 0; (i_2_ < class348_sub48.anInt7126); i_2_++) {
                     if (class348_sub48.anIntArray7131[i_2_] == 0) {
                         try {
@@ -55,17 +55,17 @@ final class Class348_Sub33 extends Class348 {
                             if (i_3_ == 0) {
                                 Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].anObject1998));
                                 int i_5_ = field.getInt(null);
-                                class348_sub49_sub2.method3378(false, 0);
-                                class348_sub49_sub2.method3391((byte) 108, i_5_);
+                                class348_sub49_sub2.writeByte(false, 0);
+                                class348_sub49_sub2.writeInt((byte) 108, i_5_);
                             } else if (i_3_ == 1) {
                                 Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].anObject1998));
                                 field.setInt(null, (class348_sub48.anIntArray7136[i_2_]));
-                                class348_sub49_sub2.method3378(false, 0);
+                                class348_sub49_sub2.writeByte(false, 0);
                             } else if (i_3_ == 2) {
                                 Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].anObject1998));
                                 int i_4_ = field.getModifiers();
-                                class348_sub49_sub2.method3378(false, 0);
-                                class348_sub49_sub2.method3391((byte) 122, i_4_);
+                                class348_sub49_sub2.writeByte(false, 0);
+                                class348_sub49_sub2.writeInt((byte) 122, i_4_);
                             }
                             if (i_3_ == 3) {
                                 Method method = ((Method) (class348_sub48.aClass144Array7127[i_2_].anObject1998));
@@ -78,45 +78,45 @@ final class Class348_Sub33 extends Class348 {
                                 Object object = method.invoke(null, objects);
                                 if (object != null) {
                                     if (object instanceof Number) {
-                                        class348_sub49_sub2.method3378(false, 1);
-                                        class348_sub49_sub2.method3392(((Number) object).longValue(), (byte) -81);
+                                        class348_sub49_sub2.writeByte(false, 1);
+                                        class348_sub49_sub2.writeLong(((Number) object).longValue(), (byte) -81);
                                     } else if (object instanceof String) {
-                                        class348_sub49_sub2.method3378(false, 2);
-                                        class348_sub49_sub2.method3333((byte) -5, (String) object);
-                                    } else class348_sub49_sub2.method3378(false, 4);
-                                } else class348_sub49_sub2.method3378(false, 0);
+                                        class348_sub49_sub2.writeByte(false, 2);
+                                        class348_sub49_sub2.writeString((byte) -5, (String) object);
+                                    } else class348_sub49_sub2.writeByte(false, 4);
+                                } else class348_sub49_sub2.writeByte(false, 0);
                             } else if (i_3_ == 4) {
                                 Method method = ((Method) (class348_sub48.aClass144Array7127[i_2_].anObject1998));
                                 int i_7_ = method.getModifiers();
-                                class348_sub49_sub2.method3378(false, 0);
-                                class348_sub49_sub2.method3391((byte) 95, i_7_);
+                                class348_sub49_sub2.writeByte(false, 0);
+                                class348_sub49_sub2.writeInt((byte) 95, i_7_);
                             }
                         } catch (ClassNotFoundException classnotfoundexception) {
-                            class348_sub49_sub2.method3378(false, -10);
+                            class348_sub49_sub2.writeByte(false, -10);
                         } catch (java.io.InvalidClassException invalidclassexception) {
-                            class348_sub49_sub2.method3378(false, -11);
+                            class348_sub49_sub2.writeByte(false, -11);
                         } catch (java.io.StreamCorruptedException streamcorruptedexception) {
-                            class348_sub49_sub2.method3378(false, -12);
+                            class348_sub49_sub2.writeByte(false, -12);
                         } catch (java.io.OptionalDataException optionaldataexception) {
-                            class348_sub49_sub2.method3378(false, -13);
+                            class348_sub49_sub2.writeByte(false, -13);
                         } catch (IllegalAccessException illegalaccessexception) {
-                            class348_sub49_sub2.method3378(false, -14);
+                            class348_sub49_sub2.writeByte(false, -14);
                         } catch (IllegalArgumentException illegalargumentexception) {
-                            class348_sub49_sub2.method3378(false, -15);
+                            class348_sub49_sub2.writeByte(false, -15);
                         } catch (java.lang.reflect.InvocationTargetException invocationtargetexception) {
-                            class348_sub49_sub2.method3378(false, -16);
+                            class348_sub49_sub2.writeByte(false, -16);
                         } catch (SecurityException securityexception) {
-                            class348_sub49_sub2.method3378(false, -17);
+                            class348_sub49_sub2.writeByte(false, -17);
                         } catch (java.io.IOException ioexception) {
-                            class348_sub49_sub2.method3378(false, -18);
+                            class348_sub49_sub2.writeByte(false, -18);
                         } catch (NullPointerException nullpointerexception) {
-                            class348_sub49_sub2.method3378(false, -19);
+                            class348_sub49_sub2.writeByte(false, -19);
                         } catch (Exception exception) {
-                            class348_sub49_sub2.method3378(false, -20);
+                            class348_sub49_sub2.writeByte(false, -20);
                         } catch (Throwable throwable) {
-                            class348_sub49_sub2.method3378(false, -21);
+                            class348_sub49_sub2.writeByte(false, -21);
                         }
-                    } else class348_sub49_sub2.method3378(false, (class348_sub48.anIntArray7131[i_2_]));
+                    } else class348_sub49_sub2.writeByte(false, (class348_sub48.anIntArray7131[i_2_]));
                 }
                 class348_sub49_sub2.method3344(i_1_, false);
                 class348_sub48.method2715((byte) 46);
@@ -139,7 +139,7 @@ final class Class348_Sub33 extends Class348 {
         for (int i_9_ = 0; (i_9_ < this.anInt6965); i_9_++)
             this.aBooleanArray6954[i_9_] = class348_sub49.readUnsignedByte(255) == 1;
         for (int i_10_ = 0; (i_10_ < this.anInt6965); i_10_++)
-            this.anIntArray6960[i_10_] = class348_sub49.readShort(842397944);
+            this.anIntArray6960[i_10_] = class348_sub49.readUnsignedShort(842397944);
         for (int i_11_ = 0; (this.anInt6965 > i_11_); i_11_++)
             this.anIntArrayArray6959[i_11_] = new int[class348_sub49.readUnsignedByte(255)];
         for (int i_12_ = 0; i_12_ < this.anInt6965; i_12_++) {

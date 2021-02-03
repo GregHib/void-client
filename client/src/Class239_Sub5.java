@@ -48,7 +48,7 @@ final class Class239_Sub5 extends Class239 {
         int i_3_ = Class348_Sub42_Sub11.anInt9591;
         Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_3_] = new Class318_Sub1_Sub3_Sub3_Sub2());
         class318_sub1_sub3_sub3_sub2.anInt10290 = i_3_;
-        int i_4_ = class348_sub49_sub2.method3410((byte) -24, 30);
+        int i_4_ = class348_sub49_sub2.readBits((byte) -24, 30);
         if (i != 118) anInt5886 = 111;
         byte i_5_ = (byte) (i_4_ >> 28);
         int i_6_ = i_4_ >> 14 & 0x3fff;
@@ -66,7 +66,7 @@ final class Class239_Sub5 extends Class239 {
         Class348_Sub42_Sub4.anInt9513 = 0;
         for (int i_8_ = 1; i_8_ < 2048; i_8_++) {
             if (i_8_ != i_3_) {
-                int i_9_ = class348_sub49_sub2.method3410((byte) -24, 18);
+                int i_9_ = class348_sub49_sub2.readBits((byte) -24, 18);
                 int i_10_ = i_9_ >> 16;
                 int i_11_ = (i_9_ & 0xff78) >> 8;
                 int i_12_ = i_9_ & 0xff;

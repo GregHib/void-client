@@ -4,7 +4,6 @@
 
 import java.awt.*;
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.GregorianCalendar;
 import java.util.Vector;
@@ -77,8 +76,8 @@ public final class client extends Applet_Sub1 {
                 if (Class47.anInt846 == 2) {
                     Class193.aClass202_2589 = new Class202((Socket) aa.aClass144_114.anObject1998, Class348_Sub23_Sub1.aClass297_8992, 25000);
                     Class348_Sub49 class348_sub49 = new Class348_Sub49(5);
-                    class348_sub49.method3378(false, (Class178.aClass29_2341.anInt400));
-                    class348_sub49.method3391((byte) 103, 634);
+                    class348_sub49.writeByte(false, (Class178.aClass29_2341.anInt400));
+                    class348_sub49.writeInt((byte) 103, 634);
                     Class193.aClass202_2589.method1470((class348_sub49.aByteArray7154), 5, 0, -1);
                     Class47.anInt846++;
                     Class45.aLong667 = Class62.method599(-70);

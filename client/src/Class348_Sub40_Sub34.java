@@ -78,7 +78,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
                 anInt9433++;
                 int i_6_ = i;
                 if (i_6_ == 0) {
-                    anInt9438 = class348_sub49.readShort(842397944);
+                    anInt9438 = class348_sub49.readUnsignedShort(842397944);
                     break;
                 } else if (i_6_ != 1) break;
                 aBoolean9439 = class348_sub49.readUnsignedByte(255) == 1;

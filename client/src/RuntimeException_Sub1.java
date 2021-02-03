@@ -73,8 +73,8 @@ final class RuntimeException_Sub1 extends RuntimeException {
                     Class106.anIntArray1636 = new int[4];
                 }
                 for (int i_9_ = 0; i_9_ < Class118.anIntArray1786.length; i_9_++) {
-                    Class118.anIntArray1786[i_9_] = class348_sub49.method3372(13638);
-                    Class106.anIntArray1636[i_9_] = class348_sub49.method3372(13638);
+                    Class118.anIntArray1786[i_9_] = class348_sub49.readShort(13638);
+                    Class106.anIntArray1636[i_9_] = class348_sub49.readShort(13638);
                 }
                 bool = true;
             } else if (i_8_ != 2) {
@@ -83,7 +83,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
                     Class118.anIntArray1786 = new int[Class132.anInt1905];
                     Class106.anIntArray1636 = new int[Class132.anInt1905];
                 }
-            } else Class348_Sub31.anInt6923 = class348_sub49.readShort(842397944);
+            } else Class348_Sub31.anInt6923 = class348_sub49.readUnsignedShort(842397944);
         }
         if (!bool) {
             if (Class118.anIntArray1786 == null) {

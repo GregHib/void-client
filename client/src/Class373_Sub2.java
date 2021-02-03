@@ -164,7 +164,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         int i_11_ = 17 % ((9 - i_10_) / 59);
         anInt7451++;
         try {
-            int i_12_ = class348_sub49.method3382(-122);
+            int i_12_ = class348_sub49.readSmart(-122);
             if (i < i_12_) i_12_ = i;
             byte[] is = new byte[i_12_];
             class348_sub49.anInt7197 += (Class64.aClass296_1131.method2226(is, class348_sub49.anInt7197, class348_sub49.aByteArray7154, i_12_, -1, 0));

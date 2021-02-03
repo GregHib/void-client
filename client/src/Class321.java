@@ -47,7 +47,7 @@ final class Class321 {
                 int i_1_ = class348_sub49.readUnsignedByte(i_0_ ^ 0xcb);
                 anIntArrayArray3997 = new int[i_1_][3];
                 for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
-                    anIntArrayArray3997[i_2_][0] = class348_sub49.readShort(842397944);
+                    anIntArrayArray3997[i_2_][0] = class348_sub49.readUnsignedShort(842397944);
                     anIntArrayArray3997[i_2_][1] = class348_sub49.readInt((byte) -126);
                     anIntArrayArray3997[i_2_][2] = class348_sub49.readInt((byte) -126);
                 }
@@ -55,7 +55,7 @@ final class Class321 {
                 int i_17_ = class348_sub49.readUnsignedByte(255);
                 anIntArrayArray3996 = new int[i_17_][3];
                 for (int i_18_ = 0; i_17_ > i_18_; i_18_++) {
-                    anIntArrayArray3996[i_18_][0] = class348_sub49.readShort(842397944);
+                    anIntArrayArray3996[i_18_][0] = class348_sub49.readUnsignedShort(842397944);
                     anIntArrayArray3996[i_18_][1] = class348_sub49.readInt((byte) -126);
                     anIntArrayArray3996[i_18_][2] = class348_sub49.readInt((byte) -126);
                 }
@@ -74,7 +74,7 @@ final class Class321 {
                                 int i_15_ = class348_sub49.readUnsignedByte(255);
                                 anIntArray4004 = new int[i_15_];
                                 for (int i_16_ = 0; i_16_ < i_15_; i_16_++)
-                                    anIntArray4004[i_16_] = class348_sub49.readShort(842397944);
+                                    anIntArray4004[i_16_] = class348_sub49.readUnsignedShort(842397944);
                             } else if (i == 14) {
                                 int i_13_ = class348_sub49.readUnsignedByte(i_0_ ^ 0xcb);
                                 anIntArrayArray4002 = new int[i_13_][2];
@@ -82,8 +82,8 @@ final class Class321 {
                                     anIntArrayArray4002[i_14_][0] = class348_sub49.readUnsignedByte(255);
                                     anIntArrayArray4002[i_14_][1] = (class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i_0_, 203)));
                                 }
-                            } else if (i == 15) class348_sub49.readShort(842397944);
-                            else if (i == 17) this.anInt4000 = class348_sub49.readShort(842397944);
+                            } else if (i == 15) class348_sub49.readUnsignedShort(842397944);
+                            else if (i == 17) this.anInt4000 = class348_sub49.readUnsignedShort(842397944);
                             else if (i == 18) {
                                 int i_5_ = class348_sub49.readUnsignedByte(255);
                                 anIntArray4014 = new int[i_5_];
@@ -94,7 +94,7 @@ final class Class321 {
                                     anIntArray4014[i_6_] = (class348_sub49.readInt((byte) -126));
                                     anIntArray4001[i_6_] = (class348_sub49.readInt((byte) -126));
                                     anIntArray4007[i_6_] = (class348_sub49.readInt((byte) -126));
-                                    aStringArray4011[i_6_] = (class348_sub49.method3377((byte) 123));
+                                    aStringArray4011[i_6_] = (class348_sub49.readString((byte) 123));
                                 }
                             } else if (i == 19) {
                                 int i_7_ = class348_sub49.readUnsignedByte(255);
@@ -106,7 +106,7 @@ final class Class321 {
                                     anIntArray4009[i_8_] = (class348_sub49.readInt((byte) -126));
                                     anIntArray3998[i_8_] = (class348_sub49.readInt((byte) -126));
                                     anIntArray4003[i_8_] = (class348_sub49.readInt((byte) -126));
-                                    aStringArray4016[i_8_] = (class348_sub49.method3377((byte) -25));
+                                    aStringArray4016[i_8_] = (class348_sub49.readString((byte) -25));
                                 }
                             } else if (i == 249) {
                                 int i_9_ = class348_sub49.readUnsignedByte(255);
@@ -119,14 +119,14 @@ final class Class321 {
                                     int i_12_ = class348_sub49.method3351(-1);
                                     Class348 class348;
                                     if (!bool) class348 = (new Class348_Sub35(class348_sub49.readInt((byte) -126)));
-                                    else class348 = (new Class348_Sub50(class348_sub49.method3377((byte) -98)));
+                                    else class348 = (new Class348_Sub50(class348_sub49.readString((byte) -98)));
                                     aClass356_4006.method3483((byte) 123, i_12_, class348);
                                 }
                             }
                         } else class348_sub49.readInt((byte) -126);
                     } else class348_sub49.readUnsignedByte(255);
                 }
-            } else class348_sub49.readShort(842397944);
+            } else class348_sub49.readUnsignedShort(842397944);
         } else aString4012 = class348_sub49.method3371(-13487);
     }
 

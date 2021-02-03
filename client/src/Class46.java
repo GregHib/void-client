@@ -399,7 +399,7 @@ final class Class46 {
         for (int i_34_ = 0; i_34_ < i_33_; i_34_++) {
             int i_35_ = class348_sub49.readUnsignedByte(255);
             if (i_35_ != 0) {
-                if (i_35_ == 1) objects[i_34_] = class348_sub49.method3377((byte) 124);
+                if (i_35_ == 1) objects[i_34_] = class348_sub49.readString((byte) 124);
             } else objects[i_34_] = new Integer(class348_sub49.readInt((byte) -126));
         }
         this.aBoolean682 = true;
@@ -413,31 +413,31 @@ final class Class46 {
         this.anInt774 = class348_sub49.readUnsignedByte(255);
         if ((0x80 & this.anInt774) != 0) {
             this.anInt774 &= 0x7f;
-            this.aString721 = class348_sub49.method3377((byte) -72);
+            this.aString721 = class348_sub49.readString((byte) -72);
         }
-        this.anInt765 = class348_sub49.readShort(842397944);
-        this.anInt788 = class348_sub49.method3372(13638);
-        this.anInt739 = class348_sub49.method3372(13638);
-        this.anInt842 = class348_sub49.readShort(842397944);
-        this.anInt728 = class348_sub49.readShort(842397944);
+        this.anInt765 = class348_sub49.readUnsignedShort(842397944);
+        this.anInt788 = class348_sub49.readShort(13638);
+        this.anInt739 = class348_sub49.readShort(13638);
+        this.anInt842 = class348_sub49.readUnsignedShort(842397944);
+        this.anInt728 = class348_sub49.readUnsignedShort(842397944);
         this.aByte778 = class348_sub49.readByte(-96);
         this.aByte724 = class348_sub49.readByte(-87);
         this.aByte817 = class348_sub49.readByte(-86);
         this.aByte681 = class348_sub49.readByte(-108);
-        this.anInt834 = class348_sub49.readShort(842397944);
+        this.anInt834 = class348_sub49.readUnsignedShort(842397944);
         if (this.anInt834 == 65535) this.anInt834 = -1;
         else this.anInt834 = ((~0xffff & this.anInt830) + this.anInt834);
         int i_36_ = class348_sub49.readUnsignedByte(255);
         if (i >= 0) this.aBoolean776 = (0x2 & i_36_) != 0;
         this.aBoolean813 = (0x1 & i_36_) != 0;
         if (this.anInt774 == 0) {
-            this.anInt698 = class348_sub49.readShort(842397944);
-            this.anInt791 = class348_sub49.readShort(842397944);
+            this.anInt698 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt791 = class348_sub49.readUnsignedShort(842397944);
             if (i < 0) this.aBoolean776 = class348_sub49.readUnsignedByte(255) == 1;
         }
         if (this.anInt774 == 5) {
             this.anInt756 = class348_sub49.readInt((byte) -126);
-            this.anInt828 = class348_sub49.readShort(842397944);
+            this.anInt828 = class348_sub49.readUnsignedShort(842397944);
             int i_37_ = class348_sub49.readUnsignedByte(255);
             this.aBoolean697 = (i_37_ & 0x1) != 0;
             this.aBoolean745 = (0x2 & i_37_) != 0;
@@ -450,7 +450,7 @@ final class Class46 {
         }
         if (this.anInt774 == 6) {
             this.anInt770 = 1;
-            this.anInt753 = class348_sub49.readShort(842397944);
+            this.anInt753 = class348_sub49.readUnsignedShort(842397944);
             if (this.anInt753 == 65535) this.anInt753 = -1;
             int i_38_ = class348_sub49.readUnsignedByte(255);
             this.aBoolean784 = (0x2 & i_38_) == 2;
@@ -458,30 +458,30 @@ final class Class46 {
             this.aBoolean689 = (i_38_ & 0x4) == 4;
             this.aBoolean754 = (i_38_ & 0x8) == 8;
             if (bool_39_) {
-                this.anInt688 = class348_sub49.method3372(13638);
-                this.anInt799 = class348_sub49.method3372(13638);
-                this.anInt757 = class348_sub49.readShort(842397944);
-                this.anInt675 = class348_sub49.readShort(842397944);
-                this.anInt717 = class348_sub49.readShort(842397944);
-                this.anInt716 = class348_sub49.readShort(842397944);
+                this.anInt688 = class348_sub49.readShort(13638);
+                this.anInt799 = class348_sub49.readShort(13638);
+                this.anInt757 = class348_sub49.readUnsignedShort(842397944);
+                this.anInt675 = class348_sub49.readUnsignedShort(842397944);
+                this.anInt717 = class348_sub49.readUnsignedShort(842397944);
+                this.anInt716 = class348_sub49.readUnsignedShort(842397944);
             } else if (this.aBoolean784) {
-                this.anInt688 = class348_sub49.method3372(13638);
-                this.anInt799 = class348_sub49.method3372(13638);
-                this.anInt787 = class348_sub49.method3372(13638);
-                this.anInt757 = class348_sub49.readShort(842397944);
-                this.anInt675 = class348_sub49.readShort(842397944);
-                this.anInt717 = class348_sub49.readShort(842397944);
-                this.anInt716 = class348_sub49.method3372(13638);
+                this.anInt688 = class348_sub49.readShort(13638);
+                this.anInt799 = class348_sub49.readShort(13638);
+                this.anInt787 = class348_sub49.readShort(13638);
+                this.anInt757 = class348_sub49.readUnsignedShort(842397944);
+                this.anInt675 = class348_sub49.readUnsignedShort(842397944);
+                this.anInt717 = class348_sub49.readUnsignedShort(842397944);
+                this.anInt716 = class348_sub49.readShort(13638);
             }
-            this.anInt699 = class348_sub49.readShort(842397944);
+            this.anInt699 = class348_sub49.readUnsignedShort(842397944);
             if (this.anInt699 == 65535) this.anInt699 = -1;
-            if (this.aByte778 != 0) this.anInt796 = class348_sub49.readShort(842397944);
-            if (this.aByte724 != 0) this.anInt826 = class348_sub49.readShort(842397944);
+            if (this.aByte778 != 0) this.anInt796 = class348_sub49.readUnsignedShort(842397944);
+            if (this.aByte724 != 0) this.anInt826 = class348_sub49.readUnsignedShort(842397944);
         }
         if (this.anInt774 == 4) {
-            this.anInt702 = class348_sub49.readShort(842397944);
+            this.anInt702 = class348_sub49.readUnsignedShort(842397944);
             if (this.anInt702 == 65535) this.anInt702 = -1;
-            this.aString792 = class348_sub49.method3377((byte) 111);
+            this.aString792 = class348_sub49.readString((byte) 111);
             this.anInt673 = class348_sub49.readUnsignedByte(255);
             this.anInt762 = class348_sub49.readUnsignedByte(255);
             this.anInt700 = class348_sub49.readUnsignedByte(255);
@@ -519,13 +519,13 @@ final class Class46 {
                 this.aByteArray832[i_42_] = i_44_;
             }
         }
-        this.aString752 = class348_sub49.method3377((byte) 82);
+        this.aString752 = class348_sub49.readString((byte) 82);
         int i_45_ = class348_sub49.readUnsignedByte(255);
         int i_46_ = 0xf & i_45_;
         if (i_46_ > 0) {
             this.aStringArray833 = new String[i_46_];
             for (int i_47_ = 0; i_47_ < i_46_; i_47_++)
-                this.aStringArray833[i_47_] = class348_sub49.method3377((byte) -68);
+                this.aStringArray833[i_47_] = class348_sub49.readString((byte) -68);
         }
         int i_48_ = i_45_ >> 4;
         if (i_48_ > 0) {
@@ -533,29 +533,29 @@ final class Class46 {
             this.anIntArray706 = new int[1 + i_49_];
             for (int i_50_ = 0; i_50_ < this.anIntArray706.length; i_50_++)
                 this.anIntArray706[i_50_] = -1;
-            this.anIntArray706[i_49_] = class348_sub49.readShort(842397944);
+            this.anIntArray706[i_49_] = class348_sub49.readUnsignedShort(842397944);
         }
         if (i_48_ > 1) {
             int i_51_ = class348_sub49.readUnsignedByte(255);
-            this.anIntArray706[i_51_] = class348_sub49.readShort(842397944);
+            this.anIntArray706[i_51_] = class348_sub49.readUnsignedShort(842397944);
         }
-        this.aString816 = class348_sub49.method3377((byte) 95);
+        this.aString816 = class348_sub49.readString((byte) 95);
         if (this.aString816.equals("")) this.aString816 = null;
         this.anInt729 = class348_sub49.readUnsignedByte(255);
         this.anInt703 = class348_sub49.readUnsignedByte(255);
         this.anInt797 = class348_sub49.readUnsignedByte(255);
-        this.aString780 = class348_sub49.method3377((byte) -87);
+        this.aString780 = class348_sub49.readString((byte) -87);
         int i_52_ = -1;
         if (Class348_Sub40_Sub5.method3060(i_40_, bool) != 0) {
-            i_52_ = class348_sub49.readShort(842397944);
-            this.anInt824 = class348_sub49.readShort(842397944);
+            i_52_ = class348_sub49.readUnsignedShort(842397944);
+            this.anInt824 = class348_sub49.readUnsignedShort(842397944);
             if (i_52_ == 65535) i_52_ = -1;
             if (this.anInt824 == 65535) this.anInt824 = -1;
-            this.anInt695 = class348_sub49.readShort(842397944);
+            this.anInt695 = class348_sub49.readUnsignedShort(842397944);
             if (this.anInt695 == 65535) this.anInt695 = -1;
         }
         if (i >= 0) {
-            this.anInt719 = class348_sub49.readShort(842397944);
+            this.anInt719 = class348_sub49.readUnsignedShort(842397944);
             if (this.anInt719 == 65535) this.anInt719 = -1;
         }
         this.aClass348_Sub44_748 = new Class348_Sub44(i_40_, i_52_);

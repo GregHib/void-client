@@ -44,7 +44,7 @@ abstract class Class5 implements Interface1 {
         int i_3_ = class348_sub49.readInt((byte) -126);
         int i_4_ = class348_sub49.readInt((byte) -126);
         if (i != 16533) aClass60_4636 = null;
-        int i_5_ = class348_sub49.readShort(842397944);
+        int i_5_ = class348_sub49.readUnsignedShort(842397944);
         return new Class369_Sub1(class369.aClass221_4968, class369.aClass341_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_3_, i_4_, i_5_);
     }
 
