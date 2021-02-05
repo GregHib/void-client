@@ -211,6 +211,16 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                 String string = ("Cache:" + (Class357.method3486(2, true, 0, i_49_, 16980)) + "% (" + i_48_ + "%)");
                                                 Class240.aClass324_4684.method2569(string, i_38_, -256, i_37_, -127, -1);
                                                 i_38_ += 12;
+                                                if (Loader.showCoordinates) {
+                                                    int playerX = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377 >> 9) + za_Sub2.anInt9780;
+                                                    int playerY = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388 >> 9) + Class90.anInt1517;
+                                                    Class240.aClass324_4684.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381, i_38_, -256, i_37_, -127, -1);
+                                                    i_38_ += 12;
+                                                    Class240.aClass324_4684.method2569("Region id: " + (((playerX >> 6) << 8) + (playerY >> 6)) + " (" + (playerX >> 6) + ", " + (playerY >> 6) + ")", i_38_, -256, i_37_, -127, -1);
+                                                    i_38_ += 12;
+                                                    Class240.aClass324_4684.method2569("Chunk: " + (playerX >> 3) + ", " + (playerY >> 3), i_38_, -256, i_37_, -127, -1);
+                                                    i_38_ += 12;
+                                                }
                                             }
                                             if (Class313.anInt3936 > 0) Class240.aClass324_4684.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1);
                                             i_38_ += 12;

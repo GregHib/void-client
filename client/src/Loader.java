@@ -11,6 +11,7 @@ public class Loader extends Applet {
     public JFrame aJFrame2;
     public JPanel aJPanel3 = new JPanel();
     public static boolean loadRunescape = false;
+    public static boolean showCoordinates = true;
     public static boolean skipLobby = true;
     public static boolean debug = true;
     public static boolean trace = false;
