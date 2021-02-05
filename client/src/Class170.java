@@ -321,6 +321,7 @@ final class Class170 implements Interface17 {
 
     public Class170() {
         this.anIntArray5063 = new int[Class269.aClass217_3453.anInt2845];
+        System.out.println("Varp size " + Class269.aClass217_3453.anInt2845);
         anIntArray5078 = new int[Class269.aClass217_3453.anInt2845];
     }
 }

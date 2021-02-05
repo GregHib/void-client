@@ -236,7 +236,7 @@ final class Class377 extends ha_Sub3 {
     static final void method3965(String string, int i, int i_1_) {
         try {
             anInt9841++;
-            Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, (byte) 105, i_1_);
+            Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, (byte) 105, i_1_);//2
             class348_sub42_sub15.method3246(-25490);
             class348_sub42_sub15.aString9654 = string;
         } catch (RuntimeException runtimeexception) {

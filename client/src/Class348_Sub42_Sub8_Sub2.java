@@ -998,6 +998,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         if (Class348_Sub3.aClass114_6584 == Class348_Sub40_Sub19.aClass114_9254) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -88);
             int i_124_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(!bool);
+            System.out.println("Read varbit " + i + " " + i_124_);
             Class318_Sub1_Sub3_Sub3.aClass170_10209.method1316((byte) -58, i_124_, i);
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1674,7 +1675,6 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class140.aClass114_1959 == Class348_Sub3.aClass114_6584) {
-
             int i = Class299.aClass348_Sub49_Sub2_3813.readIntInverseMiddle(255);
             int i_232_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(-110);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -124);

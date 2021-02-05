@@ -151,7 +151,7 @@ final class Class239_Sub15 extends Class239 {
 
     static final void method1787(int i, int i_22_) {
         anInt6002++;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, (byte) 105, i_22_);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, (byte) 105, i_22_);//8
         class348_sub42_sub15.method3251(-16058);
     }
 }

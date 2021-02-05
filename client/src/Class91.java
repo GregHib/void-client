@@ -11,7 +11,7 @@ final class Class91 {
 
     static final void method855(int i, int i_0_, int i_1_) {
         anInt1520++;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_1_, (byte) 105, i);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_1_, (byte) 105, i);//6
         class348_sub42_sub15.method3246(i ^ ~0x6397);
         class348_sub42_sub15.anInt9652 = i_0_;
     }

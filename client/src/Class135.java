@@ -21,7 +21,7 @@ abstract class Class135 {
 
     static final void method1148(int i, int i_0_) {
         anInt1925++;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, (byte) 105, i_0_);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, (byte) 105, i_0_);//6
         class348_sub42_sub15.method3251(i_0_ ^ ~0x3ebf);
     }
 

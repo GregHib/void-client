@@ -48,7 +48,7 @@ final class Class73 implements Interface7 {
 
     static final void method743(int i, int i_2_) {
         anInt4775++;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, i);
+        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, i);//9
         class348_sub42_sub15.method3251(i ^ ~0x3eb0);
     }
 
