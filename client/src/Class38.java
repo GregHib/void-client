@@ -47,7 +47,7 @@ final class Class38 {
             this.anInt508 = class348_sub49.readShort(13638);
         } else if (i_2_ == 4) this.anInt498 = class348_sub49.readUnsignedByte(255);
         else if (i_2_ == 5) this.anInt504 = class348_sub49.readUnsignedShort(842397944);
-        else if (i_2_ == 6) this.anInt503 = class348_sub49.method3351(-1);
+        else if (i_2_ == 6) this.anInt503 = class348_sub49.readMedium(-1);
     }
 
     static final void method362(int i) {

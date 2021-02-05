@@ -478,7 +478,7 @@ final class Class51 {
                                                                                                                     }
                                                                                                                     for (int i_44_ = 0; i_44_ < i_42_; i_44_++) {
                                                                                                                         boolean bool = class348_sub49.readUnsignedByte(255) == 1;
-                                                                                                                        int i_45_ = class348_sub49.method3351(-1);
+                                                                                                                        int i_45_ = class348_sub49.readMedium(-1);
                                                                                                                         Class348 class348;
                                                                                                                         if (!bool) class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
                                                                                                                         else class348 = new Class348_Sub50(class348_sub49.readString((byte) -87));

@@ -30,7 +30,7 @@ final class Class204 {
                 return 1;
             }
             if (i_2_ == 81) {
-                int i_4_ = aClass348_Sub49_2677.method3351(-1);
+                int i_4_ = aClass348_Sub49_2677.readMedium(-1);
                 i_3_ -= 3;
                 int i_5_ = this.anIntArray2681[i];
                 aLong2680 += (long) i_5_ * (long) (anInt2684 - i_4_);

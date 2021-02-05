@@ -102,7 +102,7 @@ final class Class31 {
                         } else aString423 = class348_sub49.method3371(i ^ 0x34af);
                     } else this.anInt424 = class348_sub49.readShort(13638);
                 } else anInt429 = class348_sub49.readUnsignedShort(842397944);
-            } else this.anInt444 = class348_sub49.method3351(-1);
+            } else this.anInt444 = class348_sub49.readMedium(-1);
         } else this.anInt435 = class348_sub49.readUnsignedShort(842397944);
         if (i != -2) method333(-112, 38);
         anInt437++;

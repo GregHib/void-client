@@ -131,7 +131,7 @@ final class Class17 {
                                             int i_22_ = class348_sub49.readUnsignedByte(255);
                                             if (i_22_ > 0) {
                                                 this.anIntArrayArray264[i_21_] = new int[i_22_];
-                                                this.anIntArrayArray264[i_21_][0] = class348_sub49.method3351(-1);
+                                                this.anIntArrayArray264[i_21_][0] = class348_sub49.readMedium(-1);
                                                 for (int i_23_ = 1; (i_22_ > i_23_); i_23_++)
                                                     this.anIntArrayArray264[i_21_][i_23_] = (class348_sub49.readUnsignedShort(842397944));
                                             }

@@ -41,7 +41,7 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
                 }
                 for (int i_5_ = 0; i_5_ < i_3_; i_5_++) {
                     boolean bool = class348_sub49.readUnsignedByte(i_2_ + 341) == 1;
-                    int i_6_ = class348_sub49.method3351(-1);
+                    int i_6_ = class348_sub49.readMedium(-1);
                     Class348 class348;
                     if (bool) class348 = new Class348_Sub50(class348_sub49.readString((byte) -39));
                     else class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));

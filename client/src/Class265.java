@@ -23,7 +23,7 @@ final class Class265 implements Interface1 {
     static final Class50_Sub1 method2022(Class348_Sub49 class348_sub49, int i) {
         if (i != 0) return null;
         anInt4691++;
-        return new Class50_Sub1(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13638), class348_sub49.readShort(13638), class348_sub49.method3351(-1), class348_sub49.method3351(-1), class348_sub49.readUnsignedByte(255));
+        return new Class50_Sub1(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255));
     }
 
     public final void method9(byte i, boolean bool) {

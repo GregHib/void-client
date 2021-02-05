@@ -27,7 +27,7 @@ abstract class Class348_Sub40 extends Class348 {
     static final Class50_Sub2 method3036(Class348_Sub49 class348_sub49, int i) {
         anInt7026++;
         if (i > -4) return null;
-        return new Class50_Sub2(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.method3351(-1), class348_sub49.method3351(-1), class348_sub49.readUnsignedByte(255));
+        return new Class50_Sub2(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255));
     }
 
     int method3037(int i) {

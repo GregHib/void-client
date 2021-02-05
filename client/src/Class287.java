@@ -121,7 +121,7 @@ final class Class287 {
     }
 
     final void method2183(Class348_Sub49 class348_sub49, int i) {
-        this.anInt3690 = class348_sub49.method3351(-1);
+        this.anInt3690 = class348_sub49.readMedium(-1);
         anInt3693++;
         this.anInt3687 = class348_sub49.readUnsignedShort(842397944);
         this.anInterface12Array3688 = new Interface12[class348_sub49.readUnsignedByte(i ^ 0x557d)];

@@ -697,12 +697,12 @@ final class Class124 {
                 this.aShortArray1849[i_182_] = (short) class348_sub49_118_.readUnsignedShort(842397944);
                 this.aShortArray1825[i_182_] = (short) class348_sub49_118_.readUnsignedShort(842397944);
                 if (this.anInt1830 >= 15) {
-                    this.anIntArray1859[i_182_] = class348_sub49_119_.method3351(-1);
-                    this.anIntArray1816[i_182_] = class348_sub49_119_.method3351(-1);
-                    this.anIntArray1844[i_182_] = class348_sub49_119_.method3351(-1);
+                    this.anIntArray1859[i_182_] = class348_sub49_119_.readMedium(-1);
+                    this.anIntArray1816[i_182_] = class348_sub49_119_.readMedium(-1);
+                    this.anIntArray1844[i_182_] = class348_sub49_119_.readMedium(-1);
                 } else {
                     this.anIntArray1859[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
-                    if (this.anInt1830 >= 14) this.anIntArray1816[i_182_] = class348_sub49_119_.method3351(-1);
+                    if (this.anInt1830 >= 14) this.anIntArray1816[i_182_] = class348_sub49_119_.readMedium(-1);
                     else this.anIntArray1816[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
                     this.anIntArray1844[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
                 }
@@ -715,13 +715,13 @@ final class Class124 {
                 this.aShortArray1849[i_182_] = (short) class348_sub49_118_.readUnsignedShort(842397944);
                 this.aShortArray1825[i_182_] = (short) class348_sub49_118_.readUnsignedShort(842397944);
                 if (this.anInt1830 >= 15) {
-                    this.anIntArray1859[i_182_] = class348_sub49_119_.method3351(-1);
-                    this.anIntArray1816[i_182_] = class348_sub49_119_.method3351(-1);
-                    this.anIntArray1844[i_182_] = class348_sub49_119_.method3351(-1);
+                    this.anIntArray1859[i_182_] = class348_sub49_119_.readMedium(-1);
+                    this.anIntArray1816[i_182_] = class348_sub49_119_.readMedium(-1);
+                    this.anIntArray1844[i_182_] = class348_sub49_119_.readMedium(-1);
                 } else {
                     this.anIntArray1859[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
                     if (this.anInt1830 < 14) this.anIntArray1816[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
-                    else this.anIntArray1816[i_182_] = class348_sub49_119_.method3351(-1);
+                    else this.anIntArray1816[i_182_] = class348_sub49_119_.readMedium(-1);
                     this.anIntArray1844[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
                 }
                 this.aByteArray1833[i_182_] = class348_sub49_120_.readByte(-97);
@@ -737,12 +737,12 @@ final class Class124 {
                 if (this.anInt1830 < 15) {
                     this.anIntArray1859[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
                     if (this.anInt1830 < 14) this.anIntArray1816[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
-                    else this.anIntArray1816[i_182_] = class348_sub49_119_.method3351(-1);
+                    else this.anIntArray1816[i_182_] = class348_sub49_119_.readMedium(-1);
                     this.anIntArray1844[i_182_] = class348_sub49_119_.readUnsignedShort(842397944);
                 } else {
-                    this.anIntArray1859[i_182_] = class348_sub49_119_.method3351(-1);
-                    this.anIntArray1816[i_182_] = class348_sub49_119_.method3351(-1);
-                    this.anIntArray1844[i_182_] = class348_sub49_119_.method3351(-1);
+                    this.anIntArray1859[i_182_] = class348_sub49_119_.readMedium(-1);
+                    this.anIntArray1816[i_182_] = class348_sub49_119_.readMedium(-1);
+                    this.anIntArray1844[i_182_] = class348_sub49_119_.readMedium(-1);
                 }
                 this.aByteArray1833[i_182_] = class348_sub49_120_.readByte(-104);
                 this.aByteArray1853[i_182_] = class348_sub49_121_.readByte(-127);

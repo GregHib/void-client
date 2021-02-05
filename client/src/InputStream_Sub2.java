@@ -264,7 +264,7 @@ final class InputStream_Sub2 extends InputStream {
                     int i_120_ = (0x7 & i_118_) + Class73.anInt4786;
                     int i_121_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(i ^ 0x3235f8f0);
                     int i_122_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
-                    int i_123_ = Class299.aClass348_Sub49_Sub2_3813.method3351(-1);
+                    int i_123_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
                     String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -126);
                     Class6.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, Class348_Sub40_Sub12.anInt9200);
                 } else {

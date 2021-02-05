@@ -131,7 +131,7 @@ final class Class42 {
             if (i == 2) this.anInt605 = class348_sub49.readUnsignedShort(842397944);
             else if (i == 3) this.aString597 = class348_sub49.readString((byte) 93);
             else if (i != 4) {
-                if (i == 5) this.anInt567 = class348_sub49.method3351(-1);
+                if (i == 5) this.anInt567 = class348_sub49.readMedium(-1);
                 else if (i == 6) this.anInt576 = class348_sub49.readUnsignedByte(255);
                 else if (i == 7) {
                     int i_8_ = class348_sub49.readUnsignedByte(255);
@@ -187,7 +187,7 @@ final class Class42 {
                             }
                             for (int i_16_ = 0; (i_16_ < i_14_); i_16_++) {
                                 boolean bool = (class348_sub49.readUnsignedByte(255) == 1);
-                                int i_17_ = class348_sub49.method3351(-1);
+                                int i_17_ = class348_sub49.readMedium(-1);
                                 Class348 class348;
                                 if (!bool) class348 = (new Class348_Sub35(class348_sub49.readInt((byte) -126)));
                                 else class348 = (new Class348_Sub50(class348_sub49.readString((byte) -41)));
@@ -196,7 +196,7 @@ final class Class42 {
                         }
                     } else this.anInt604 = class348_sub49.readInt((byte) -126);
                 } else this.aBoolean609 = false;
-            } else this.anInt580 = class348_sub49.method3351(-1);
+            } else this.anInt580 = class348_sub49.readMedium(-1);
         } else this.anInt578 = class348_sub49.readUnsignedShort(842397944);
         if (i_7_ > -113) method375(null, true);
     }

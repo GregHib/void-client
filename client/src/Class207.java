@@ -260,7 +260,7 @@ final class Class207 {
         class348_sub49.anInt7197 = is.length - 7 - i * 8 - (i_75_ - 1) * 3;
         int[] is_81_ = new int[i_75_];
         for (int i_82_ = 1; i_82_ < i_75_; i_82_++) {
-            is_81_[i_82_] = class348_sub49.method3351(-1);
+            is_81_[i_82_] = class348_sub49.readMedium(-1);
             if (is_81_[i_82_] == 0) is_81_[i_82_] = 1;
         }
         for (int i_83_ = 0; i_83_ < i; i_83_++)

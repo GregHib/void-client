@@ -500,7 +500,7 @@ final class Class46 {
             this.anInt749 = class348_sub49.readInt((byte) -126);
             this.aBoolean744 = class348_sub49.readUnsignedByte(255) == 1;
         }
-        int i_40_ = class348_sub49.method3351(-1);
+        int i_40_ = class348_sub49.readMedium(-1);
         int i_41_ = class348_sub49.readUnsignedByte(255);
         if (i_41_ != 0) {
             this.aByteArray832 = new byte[11];
@@ -562,13 +562,13 @@ final class Class46 {
         if (i >= 0) {
             int i_53_ = class348_sub49.readUnsignedByte(255);
             for (int i_54_ = 0; i_53_ > i_54_; i_54_++) {
-                int i_55_ = class348_sub49.method3351(-1);
+                int i_55_ = class348_sub49.readMedium(-1);
                 int i_56_ = class348_sub49.readInt((byte) -126);
                 aClass356_711.method3483((byte) 120, i_55_, new Class348_Sub35(i_56_));
             }
             int i_57_ = class348_sub49.readUnsignedByte(255);
             for (int i_58_ = 0; i_58_ < i_57_; i_58_++) {
-                int i_59_ = class348_sub49.method3351(-1);
+                int i_59_ = class348_sub49.readMedium(-1);
                 String string = class348_sub49.method3371(-13487);
                 aClass356_711.method3483((byte) 119, i_59_, new Class348_Sub50(string));
             }

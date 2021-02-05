@@ -73,7 +73,7 @@ final class Class218 {
             else if (i_17_ != 2) {
                 if (i_17_ == 3) this.aBoolean2854 = true;
                 else if (i_17_ == 4) this.anInt2853 = -1;
-            } else this.anInt2856 = class348_sub49.method3351(-1);
+            } else this.anInt2856 = class348_sub49.readMedium(-1);
         }
     }
 

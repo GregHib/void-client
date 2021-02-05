@@ -140,7 +140,7 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_20_) {
         int i_21_ = i;
-        if (i_21_ == 0) method3095(-124, class348_sub49.method3351(-1));
+        if (i_21_ == 0) method3095(-124, class348_sub49.readMedium(-1));
         anInt9251++;
         if (i_20_ != 31015) anInt9250 = 105;
     }

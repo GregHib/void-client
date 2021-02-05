@@ -55,11 +55,11 @@ final class Class277 {
                                 if (i_1_ != 14) {
                                     if (i_1_ == 16) this.anInt3574 = class348_sub49.readUnsignedByte(255);
                                 } else this.anInt3558 = (class348_sub49.readUnsignedByte(255) << 2);
-                            } else this.anInt3559 = class348_sub49.method3351(-1);
+                            } else this.anInt3559 = class348_sub49.readMedium(-1);
                         } else this.aBoolean3560 = true;
-                    } else this.anInt3569 = (Class348_Sub40_Sub34.method3140(-67, class348_sub49.method3351(-1)));
+                    } else this.anInt3569 = (Class348_Sub40_Sub34.method3140(-67, class348_sub49.readMedium(-1)));
                 } else this.aBoolean3561 = false;
-            } else this.anInt3563 = Class348_Sub40_Sub34.method3140(-57, class348_sub49.method3351(-1));
+            } else this.anInt3563 = Class348_Sub40_Sub34.method3140(-57, class348_sub49.readMedium(-1));
         }
     }
 

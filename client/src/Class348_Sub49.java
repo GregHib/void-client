@@ -265,7 +265,7 @@ class Class348_Sub49 extends Class348 {
         this.anInt7197 = i_26_;
     }
 
-    final int method3351(int i) {
+    final int readMedium(int i) {
         this.anInt7197 += 3;
         anInt7203++;
         if (i != -1) return -52;

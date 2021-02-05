@@ -210,7 +210,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             if (bool_15_) string_16_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -64);
             long l = Class299.aClass348_Sub49_Sub2_3813.method3365(-456577760);
             long l_17_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
-            long l_18_ = Class299.aClass348_Sub49_Sub2_3813.method3351(-1);
+            long l_18_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             long l_19_ = l_18_ + (l_17_ << 32);
             boolean bool_20_ = false;
@@ -833,7 +833,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             String string_98_ = string;
             if (bool_97_) string_98_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 86);
             long l = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
-            long l_99_ = Class299.aClass348_Sub49_Sub2_3813.method3351(-1);
+            long l_99_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             long l_100_ = (l << 32) - -l_99_;
             boolean bool_101_ = false;
@@ -946,7 +946,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             if (bool_113_) string_114_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -39);
             long l = Class299.aClass348_Sub49_Sub2_3813.method3365(-456577760);
             long l_115_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
-            long l_116_ = Class299.aClass348_Sub49_Sub2_3813.method3351(-1);
+            long l_116_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             int i_117_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             long l_118_ = (l_115_ << 32) - -l_116_;
@@ -1333,7 +1333,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             String string_175_ = string;
             if (bool_174_) string_175_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -71);
             long l = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
-            long l_176_ = Class299.aClass348_Sub49_Sub2_3813.method3351(-1);
+            long l_176_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             int i_177_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             long l_178_ = l_176_ + (l << 32);
@@ -1389,7 +1389,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class318_Sub1_Sub1_Sub1.method2397((byte) -125);
             if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i] != null) {
                 for (int i_186_ = i_184_; i_185_ > i_186_; i_186_++) {
-                    int i_187_ = Class299.aClass348_Sub49_Sub2_3813.method3351(-1);
+                    int i_187_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
                     if ((Class348_Sub40_Sub33.aClass46ArrayArray9427[i]).length > i_186_ && (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_186_]) != null) Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_186_].anInt732 = i_187_;
                 }
             }

@@ -57,7 +57,7 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40 {
                 anInt9092 = class348_sub49.readUnsignedShort(i_0_ + 842366929);
                 return;
             } while (false);
-            int i_2_ = class348_sub49.method3351(-1);
+            int i_2_ = class348_sub49.readMedium(-1);
             anIntArray9086[2] = Class139.method1166(0, i_2_ >> 12);
             anIntArray9086[1] = Class139.method1166(i_2_, 65280) >> 4;
             anIntArray9086[0] = Class139.method1166(i_2_ << 4, 267386880);
