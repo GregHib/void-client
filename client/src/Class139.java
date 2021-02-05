@@ -13,7 +13,7 @@ final class Class139 {
     static int anInt1955;
 
     static final void method1165(int i) {
-        Class299.aClass348_Sub49_Sub2_3813.method3417(i ^ ~0x79);
+        Class299.aClass348_Sub49_Sub2_3813.startBitAccess(i ^ ~0x79);
         anInt1950++;
         int i_0_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 8);
         if (i == 1) {

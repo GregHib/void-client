@@ -44,7 +44,7 @@ final class Class239_Sub5 extends Class239 {
 
     static final void method1741(Class348_Sub49_Sub2 class348_sub49_sub2, byte i) {
         anInt5893++;
-        class348_sub49_sub2.method3417(122);
+        class348_sub49_sub2.startBitAccess(122);
         int i_3_ = Class348_Sub42_Sub11.anInt9591;
         Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_3_] = new Class318_Sub1_Sub3_Sub3_Sub2());
         class318_sub1_sub3_sub3_sub2.anInt10290 = i_3_;
@@ -79,7 +79,7 @@ final class Class239_Sub5 extends Class239 {
                 Class348_Sub5.aByteArray6624[i_8_] = (byte) 0;
             }
         }
-        class348_sub49_sub2.method3412(false);
+        class348_sub49_sub2.stopBitAccess(false);
     }
 
     Class239_Sub5(int i, Class348_Sub51 class348_sub51) {

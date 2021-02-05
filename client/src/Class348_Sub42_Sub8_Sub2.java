@@ -1642,7 +1642,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class367_Sub11.aClass114_7398 == Class348_Sub3.aClass114_6584) {//16
+        if (Class367_Sub11.aClass114_7398 == Class348_Sub3.aClass114_6584) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readIntLittle((byte) -124);
             int i_226_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -124);

@@ -93,7 +93,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
         class348_sub42_sub15.anInt9652 = i_14_;
     }
 
-    final void method3412(boolean bool) {
+    final void stopBitAccess(boolean bool) {
         anInt9753++;
         this.anInt7197 = (7 + anInt9754) / 8;
         if (bool != false) aShortArray9768 = null;
@@ -137,7 +137,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
         super(i);
     }
 
-    final void method3417(int i) {
+    final void startBitAccess(int i) {
         int i_24_ = -126 / ((-15 - i) / 49);
         anInt9767++;
         anInt9754 = 8 * this.anInt7197;

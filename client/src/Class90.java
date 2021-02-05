@@ -26,7 +26,7 @@ final class Class90 {
         Class312.anInt3931 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -112);
         Class322.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(125, i_0_);
-        Class299.aClass348_Sub49_Sub2_3813.method3417(-122);
+        Class299.aClass348_Sub49_Sub2_3813.startBitAccess(-122);
         for (int i_3_ = 0; i_3_ < 4; i_3_++) {
             for (int i_4_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_4_); i_4_++) {
                 for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub3.anInt9109 >> 3); i_5_++) {
@@ -36,7 +36,7 @@ final class Class90 {
                 }
             }
         }
-        Class299.aClass348_Sub49_Sub2_3813.method3412(false);
+        Class299.aClass348_Sub49_Sub2_3813.stopBitAccess(false);
         int i_7_ = (-Class299.aClass348_Sub49_Sub2_3813.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16;
         Class239_Sub6.anIntArrayArray5894 = new int[i_7_][4];
         int i_8_ = 0;

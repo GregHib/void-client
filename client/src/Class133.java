@@ -184,8 +184,8 @@ final class Class133 {
                         class318_sub1_sub3_sub3_sub2.aByte10206 = class348_sub49_sub2.readByte(-99);
                         class318_sub1_sub3_sub3_sub2.aByte10270 = class348_sub49_sub2.readByte(-87);
                         class318_sub1_sub3_sub3_sub2.aByte10279 = (byte) class348_sub49_sub2.readUnsignedByte(255);
-                        class318_sub1_sub3_sub3_sub2.anInt10248 = (Class367_Sub11.anInt7396 - -class348_sub49_sub2.readShortAddLittle(-120));
-                        class318_sub1_sub3_sub3_sub2.anInt10250 = (Class367_Sub11.anInt7396 - -class348_sub49_sub2.readShortAdd(125));
+                        class318_sub1_sub3_sub3_sub2.anInt10248 = (Class367_Sub11.anInt7396 + class348_sub49_sub2.readShortAddLittle(-120));
+                        class318_sub1_sub3_sub3_sub2.anInt10250 = (Class367_Sub11.anInt7396 + class348_sub49_sub2.readShortAdd(125));
                     }
                     if ((i_0_ & 0x80) != 0) {
                         Class259.aByteArray3300[i] = class348_sub49_sub2.readByteSubtract(-27697);
