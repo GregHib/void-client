@@ -325,7 +325,9 @@ final class Class239_Sub24 extends Class239 {
                                             }
                                         }
                                     }
-                                    Class50_Sub3.method466(((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) != class318_sub4.aClass318_Sub1_6410.aByte6381), ("<col=00ffff>" + class51.aString884), i_32_, (byte) -120, false, i_33_, -1, true, 1001, interface10.hashCode(), (Class274.aClass274_3505.method2063(Class348_Sub33.anInt6967, 544)), class51.anInt941, Class286_Sub8.anInt6299);
+                                    int x = i_33_ + za_Sub2.anInt9780;
+                                    int y = i_32_ + Class90.anInt1517;
+                                    Class50_Sub3.method466(((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) != class318_sub4.aClass318_Sub1_6410.aByte6381), ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410.aByte6381)), i_32_, (byte) -120, false, i_33_, -1, true, 1001, interface10.hashCode(), (Class274.aClass274_3505.method2063(Class348_Sub33.anInt6967, 544)), class51.anInt941, Class286_Sub8.anInt6299);
                                     anInt6094++;
                                 }
                             }
