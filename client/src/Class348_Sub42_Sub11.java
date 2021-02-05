@@ -83,8 +83,8 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                     Class64.anIntArray1127[i_9_] = 1000000;
                     Class56.anIntArray1045[i_9_] = 0;
                 }
-                int i_10_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x);
-                int i_11_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y);
+                int i_10_ = (Class132.aPlayer_1907.x);
+                int i_11_ = (Class132.aPlayer_1907.y);
                 if (i >= 100) {
                     if (Class348_Sub40_Sub21.anInt9282 == 1 || Class9.anInt167 != -1) {
                         if (Class348_Sub40_Sub21.anInt9282 != 1) {

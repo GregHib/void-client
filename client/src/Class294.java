@@ -44,7 +44,7 @@ final class Class294 implements Interface16 {
     static int anInt5055;
     private Image anImage5056;
     static Class351 aClass351_5057 = new Class351(10, -1);
-    static Class318_Sub1_Sub3_Sub3_Sub2[] aClass318_Sub1_Sub3_Sub3_Sub2Array5058 = new Class318_Sub1_Sub3_Sub3_Sub2[2048];
+    static Player[] aPlayerArray5058 = new Player[2048];
     private Image anImage5059;
     static Class338[] aClass338Array5060;
     static int anInt5061;
@@ -121,9 +121,9 @@ final class Class294 implements Interface16 {
 
     public static void method2214(int i) {
         aClass351_5057 = null;
-        if (i != 0) aClass318_Sub1_Sub3_Sub3_Sub2Array5058 = null;
+        if (i != 0) aPlayerArray5058 = null;
         aClass338Array5060 = null;
-        aClass318_Sub1_Sub3_Sub3_Sub2Array5058 = null;
+        aPlayerArray5058 = null;
     }
 
     public final int method60(int i) {

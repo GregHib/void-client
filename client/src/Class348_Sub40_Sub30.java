@@ -94,7 +94,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                                     }
                                 }
                             }
-                            if (Class285_Sub1.method2127(2, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544)).equals(string_1_)) Class59.method544((Class274.aClass274_3524.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
+                            if (Class285_Sub1.method2127(2, (Class132.aPlayer_1907.aString10544)).equals(string_1_)) Class59.method544((Class274.aClass274_3524.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
                             else {
                                 Class146.anInt2012++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85));

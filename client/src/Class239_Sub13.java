@@ -28,12 +28,12 @@ final class Class239_Sub13 extends Class239 {
 
     static final void method1777(int i, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
         if (i == -3) {
-            if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub1) {
-                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3;
-                if (class318_sub1_sub3_sub3_sub1.aClass79_10505 != null) Class286_Sub3.method2150(((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) != (class318_sub1_sub3_sub3_sub1.plane)), false, class318_sub1_sub3_sub3_sub1);
-            } else if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
-                Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = ((Class318_Sub1_Sub3_Sub3_Sub2) class318_sub1_sub3_sub3);
-                Class348_Sub43.method3298((byte) 105, ((class318_sub1_sub3_sub3_sub2.plane) != (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane)), class318_sub1_sub3_sub3_sub2);
+            if (class318_sub1_sub3_sub3 instanceof Npc) {
+                Npc npc = (Npc) class318_sub1_sub3_sub3;
+                if (npc.aClass79_10505 != null) Class286_Sub3.method2150(((Class132.aPlayer_1907.plane) != (npc.plane)), false, npc);
+            } else if (class318_sub1_sub3_sub3 instanceof Player) {
+                Player player = ((Player) class318_sub1_sub3_sub3);
+                Class348_Sub43.method3298((byte) 105, ((player.plane) != (Class132.aPlayer_1907.plane)), player);
             }
             anInt5981++;
         }

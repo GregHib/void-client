@@ -2920,19 +2920,19 @@ final class ha_Sub2 extends ha {
         for (int i_322_ = 0; (i_322_ < Class150.anInt2057 + i_321_); i_322_++) {
             Class79 class79 = null;
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
-            if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_322_]]);
+            if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_322_]]);
             else {
-                class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_322_ + -i_321_], i_316_ ^ ~0x1775)).aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                class79 = ((Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3).aClass79_10505;
+                class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_322_ + -i_321_], i_316_ ^ ~0x1775)).aNpc_6859);
+                class79 = ((Npc) class318_sub1_sub3_sub3).aClass79_10505;
                 if (class79.anIntArray1377 != null) {
                     class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i_316_ + -3);
                     if (class79 == null) continue;
                 }
             }
-            if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) == class318_sub1_sub3_sub3.plane))) {
+            if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((Class132.aPlayer_1907.plane) == class318_sub1_sub3_sub3.plane))) {
                 Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ >> 1, i_320_, i_319_, i_315_ >> 1, class318_sub1_sub3_sub3, (byte) 100);
                 if (Class239_Sub21.anIntArray6062[0] >= 0) {
-                    if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || za.anInt7276 == 0 || za.anInt7276 == 3 || (za.anInt7276 == 1 && (Class348_Sub11.method2797(((Class318_Sub1_Sub3_Sub3_Sub2) class318_sub1_sub3_sub3).aString10544, (byte) -63)))) && Class88.anInt1497 < Class309.anInt4814) {
+                    if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || za.anInt7276 == 0 || za.anInt7276 == 3 || (za.anInt7276 == 1 && (Class348_Sub11.method2797(((Player) class318_sub1_sub3_sub3).aString10544, (byte) -63)))) && Class88.anInt1497 < Class309.anInt4814) {
                         Class309.anIntArray4819[Class88.anInt1497] = ((Class369.aClass143_4962.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2);
                         Class309.anIntArray4822[Class88.anInt1497] = Class239_Sub21.anIntArray6062[0];
                         Class309.anIntArray4813[Class88.anInt1497] = Class239_Sub21.anIntArray6062[1];
@@ -2950,9 +2950,9 @@ final class ha_Sub2 extends ha {
                             i_324_ = class79.anInt1373;
                             if (i_324_ == -1) i_324_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2909);
                         } else {
-                            Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_322_]]);
+                            Player player = (Class294.aPlayerArray5058[is[i_322_]]);
                             i_324_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2909);
-                            if (class318_sub1_sub3_sub3_sub2.aBoolean10554) i_325_ = 2;
+                            if (player.aBoolean10554) i_325_ = 2;
                         }
                         Class105[] class105s = Class348_Sub45.aClass105Array7107;
                         if (i_324_ != -1) {
@@ -2988,7 +2988,7 @@ final class ha_Sub2 extends ha {
                             Class105 class105 = (Class239_Sub2.aClass105Array5857[(class318_sub1_sub3_sub3.aBoolean10226 ? 2 : 0)]);
                             Class105 class105_332_ = (Class239_Sub2.aClass105Array5857[(!class318_sub1_sub3_sub3.aBoolean10226 ? 1 : 3)]);
                             int i_333_ = -1;
-                            if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub1) {
+                            if (class318_sub1_sub3_sub3 instanceof Npc) {
                                 i_333_ = class79.anInt1382;
                                 if (i_333_ == -1) i_333_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2923);
                             } else i_333_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2923);
@@ -3026,17 +3026,17 @@ final class ha_Sub2 extends ha {
                             i_323_ -= 2;
                         }
                         if (i_322_ < i_321_) {
-                            Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = ((Class318_Sub1_Sub3_Sub3_Sub2) class318_sub1_sub3_sub3);
-                            if (class318_sub1_sub3_sub3_sub2.anInt10540 != -1) {
+                            Player player = ((Player) class318_sub1_sub3_sub3);
+                            if (player.anInt10540 != -1) {
                                 i_323_ -= 25;
-                                Class105 class105 = (Class318_Sub1_Sub1_Sub1.aClass105Array9959[(class318_sub1_sub3_sub3_sub2.anInt10540)]);
+                                Class105 class105 = (Class318_Sub1_Sub1_Sub1.aClass105Array9959[(player.anInt10540)]);
                                 class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062[0])), i_323_);
                                 Class338.method2663(-5590, i_317_ + (Class239_Sub21.anIntArray6062[0] + -12), (i_317_ - -Class239_Sub21.anIntArray6062[0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980());
                                 i_323_ -= 2;
                             }
-                            if (class318_sub1_sub3_sub3_sub2.anInt10522 != -1) {
+                            if (player.anInt10522 != -1) {
                                 i_323_ -= 25;
-                                Class105 class105 = (Class264.aClass105Array3378[(class318_sub1_sub3_sub3_sub2.anInt10522)]);
+                                Class105 class105 = (Class264.aClass105Array3378[(player.anInt10522)]);
                                 class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062[0])), i_323_);
                                 Class338.method2663(-5590, (-12 + Class239_Sub21.anIntArray6062[0] + i_317_), (Class239_Sub21.anIntArray6062[0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980());
                                 i_323_ -= 2;
@@ -3049,7 +3049,7 @@ final class ha_Sub2 extends ha {
                             i_323_ -= 2;
                         }
                     }
-                    if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
+                    if (class318_sub1_sub3_sub3 instanceof Player) {
                         if (i_322_ >= 0) {
                             int i_340_ = 0;
                             Class302[] class302s = Class348_Sub27.aClass302Array6897;
@@ -3349,12 +3349,12 @@ final class ha_Sub2 extends ha {
         for (int i_433_ = 0; i_433_ < Class45.anInt669; i_433_++) {
             int i_434_ = Class258_Sub4.anIntArray8557[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
-            if (i_434_ >= 2048) class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_434_, -6008)).aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-            else class318_sub1_sub3_sub3 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_434_];
+            if (i_434_ >= 2048) class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_434_, -6008)).aNpc_6859);
+            else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058[i_434_];
             int i_435_ = Class268.anIntArray3432[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_436_;
-            if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_435_, -6008)).aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-            else class318_sub1_sub3_sub3_436_ = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_435_];
+            if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_435_, -6008)).aNpc_6859);
+            else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_];
             Class191.method1430(--class318_sub1_sub3_sub3.anInt10261, (byte) 119, i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3);
         }
         int i_437_ = i_316_ + (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988);

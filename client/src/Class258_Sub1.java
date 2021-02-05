@@ -106,7 +106,7 @@ final class Class258_Sub1 extends Class258 {
             }
             if (i_25_ >= 0) Class23.aBoolean351 = false;
             else {
-                Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566 = is_15_;
+                Player.anIntArray10566 = is_15_;
                 Class250.anIntArray3220 = is_16_;
                 Class59_Sub1_Sub2.anIntArray8666 = is_17_;
                 Class299_Sub2_Sub1.anIntArray8712 = is_18_;
@@ -171,7 +171,7 @@ final class Class258_Sub1 extends Class258 {
             Class304.method2290();
             for (int i_48_ = 0; i_48_ < Class189.anInt2524; i_48_++)
                 Class115.aBooleanArrayArrayArray1751[i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361[i_48_];
-            if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 2) {
+            if (Npc.anInt10503 == 2) {
                 if (Class146.aLongArray2013[0] < Class146.aLongArray2013[1]) {
                     if (Class17.anIntArray256[0] + Class345.anIntArray4271[0] > Class348_Sub40_Sub10.anIntArray9183[0]) Class345.anIntArray4271[0]++;
                 } else if ((Class146.aLongArray2013[0] > Class146.aLongArray2013[1]) && ((Class17.anIntArray256[0] + Class345.anIntArray4271[0]) < Class348_Sub40_Sub10.anIntArray9183[2])) Class345.anIntArray4271[0]--;

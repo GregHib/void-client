@@ -221,7 +221,7 @@ final class Class348_Sub14 extends Class348 {
                     Class348_Sub23_Sub2.aClass153_9031.method1220((byte) 116, 64, 1024);
                     for (int i_51_ = 0; i_51_ < r_Sub2.aClass252_10488.anInt3241; i_51_++) {
                         int i_52_ = (r_Sub2.aClass252_10488.anIntArray3238[i_51_]);
-                        if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) == i_52_ >> 28) {
+                        if ((Class132.aPlayer_1907.plane) == i_52_ >> 28) {
                             int i_53_ = ((i_52_ >> 14 & 0x3fff) - za_Sub2.regionTileX);
                             int i_54_ = (i_52_ & 0x3fff) + -Class90.regionTileY;
                             if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);

@@ -25,35 +25,35 @@ final class Class139 {
             Class150.anInt2057 = 0;
             for (int i_2_ = 0; i_2_ < i_0_; i_2_++) {
                 int i_3_ = Class74.anIntArray1233[i_2_];
-                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (((Class348_Sub22) Class282.aClass356_3654.method3480(i_3_, -6008)).aClass318_Sub1_Sub3_Sub3_Sub1_6859);
+                Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(i_3_, -6008)).aNpc_6859);
                 int i_4_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
                 if (i_4_ == 0) {
                     Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                    class318_sub1_sub3_sub3_sub1.anInt10306 = Class348_Sub23_Sub3.anInt9041;
+                    npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
                 } else {
                     int i_5_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 2);
                     if (i_5_ == 0) {
                         Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                        class318_sub1_sub3_sub3_sub1.anInt10306 = Class348_Sub23_Sub3.anInt9041;
+                        npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
                         Class13.anIntArray224[Class101.anInt1597++] = i_3_;
                     } else if (i_5_ == 1) {
                         Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                        class318_sub1_sub3_sub3_sub1.anInt10306 = Class348_Sub23_Sub3.anInt9041;
+                        npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
                         int i_6_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 3);
-                        class318_sub1_sub3_sub3_sub1.method2443(i_6_, 1, -10);
+                        npc.method2443(i_6_, 1, -10);
                         int i_7_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
                         if (i_7_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_3_;
                     } else if (i_5_ == 2) {
                         Class74.anIntArray1233[Class150.anInt2057++] = i_3_;
-                        class318_sub1_sub3_sub3_sub1.anInt10306 = Class348_Sub23_Sub3.anInt9041;
+                        npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
                         if (Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1) == 1) {
                             int i_9_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 3);
-                            class318_sub1_sub3_sub3_sub1.method2443(i_9_, 2, -10);
+                            npc.method2443(i_9_, 2, -10);
                             int i_10_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 3);
-                            class318_sub1_sub3_sub3_sub1.method2443(i_10_, 2, -10);
+                            npc.method2443(i_10_, 2, -10);
                         } else {
                             int i_8_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 3);
-                            class318_sub1_sub3_sub3_sub1.method2443(i_8_, 0, i + -11);
+                            npc.method2443(i_8_, 0, i + -11);
                         }
                         int i_11_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
                         if (i_11_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_3_;

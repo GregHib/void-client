@@ -61,8 +61,8 @@ final class Class5_Sub3 extends Class5 {
                 if (i_5_ == -7257) {
                     boolean bool = false;
                     for (int i_7_ = 0; i_6_ > i_7_; i_7_++) {
-                        Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_7_]]);
-                        if (class318_sub1_sub3_sub3_sub2 != null && (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 != class318_sub1_sub3_sub3_sub2) && (class318_sub1_sub3_sub3_sub2.aString10544 != null) && class318_sub1_sub3_sub3_sub2.aString10544.equalsIgnoreCase(string)) {
+                        Player player = (Class294.aPlayerArray5058[is[i_7_]]);
+                        if (player != null && (Class132.aPlayer_1907 != player) && (player.aString10544 != null) && player.aString10544.equalsIgnoreCase(string)) {
                             bool = true;
                             if (i == 1) {
                                 Class127.anInt4657++;

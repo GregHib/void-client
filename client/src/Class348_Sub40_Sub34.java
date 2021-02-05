@@ -48,7 +48,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
             Class348_Sub27.aClass302Array6897[i_3_] = null;
         Class348_Sub42.method3163((byte) -114);
         for (int i_4_ = 0; i_4_ < 2048; i_4_++)
-            Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_4_] = null;
+            Class294.aPlayerArray5058[i_4_] = null;
         Class150.anInt2057 = 0;
         Class282.aClass356_3654.method3481(i ^ 0xb);
         Class348_Sub32.anInt6930 = 0;

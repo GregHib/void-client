@@ -123,7 +123,7 @@ final class Class167 {
         return Class98.aClass348_Sub16_Sub3_1564.method2860(120);
     }
 
-    static final void method1297(byte i, Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2, int[] is, int[] is_7_, int[] is_8_) {
+    static final void method1297(byte i, Player player, int[] is, int[] is_7_, int[] is_8_) {
         try {
             anInt2206++;
             if (i > -96) aFloat2203 = 0.6824298F;
@@ -131,42 +131,42 @@ final class Class167 {
                 int i_10_ = is_7_[i_9_];
                 int i_11_ = is[i_9_];
                 int i_12_ = is_8_[i_9_];
-                for (int i_13_ = 0; i_11_ != 0 && i_13_ < (class318_sub1_sub3_sub3_sub2.aClass182Array10308).length; i_11_ >>>= 1) {
+                for (int i_13_ = 0; i_11_ != 0 && i_13_ < (player.aClass182Array10308).length; i_11_ >>>= 1) {
                     if ((i_11_ & 0x1) != 0) {
                         if (i_10_ != -1) {
                             Class17 class17 = Class10.aClass87_191.method835(i_10_, 7);
                             int i_14_ = class17.anInt248;
-                            Class182 class182 = (class318_sub1_sub3_sub3_sub2.aClass182Array10308[i_13_]);
+                            Class182 class182 = (player.aClass182Array10308[i_13_]);
                             if (class182 != null) {
                                 if (class182.anInt2454 == i_10_) {
-                                    if (i_14_ == 0) class182 = class318_sub1_sub3_sub3_sub2.aClass182Array10308[i_13_] = null;
+                                    if (i_14_ == 0) class182 = player.aClass182Array10308[i_13_] = null;
                                     else if (i_14_ == 1) {
                                         class182.anInt2448 = i_12_;
                                         class182.anInt2455 = 1;
                                         class182.anInt2456 = 0;
                                         class182.anInt2451 = 0;
                                         class182.anInt2445 = 0;
-                                        if (!class318_sub1_sub3_sub3_sub2.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3_sub2, 0, class17, -54);
+                                        if (!player.aBoolean10309) Class287.method2178(player, 0, class17, -54);
                                     } else if (i_14_ == 2) class182.anInt2445 = 0;
-                                } else if (class17.anInt239 >= Class10.aClass87_191.method835((class182.anInt2454), 7).anInt239) class182 = class318_sub1_sub3_sub3_sub2.aClass182Array10308[i_13_] = null;
+                                } else if (class17.anInt239 >= Class10.aClass87_191.method835((class182.anInt2454), 7).anInt239) class182 = player.aClass182Array10308[i_13_] = null;
                             }
                             if (class182 == null) {
-                                class182 = class318_sub1_sub3_sub3_sub2.aClass182Array10308[i_13_] = new Class182();
+                                class182 = player.aClass182Array10308[i_13_] = new Class182();
                                 class182.anInt2445 = 0;
                                 class182.anInt2455 = 1;
                                 class182.anInt2448 = i_12_;
                                 class182.anInt2456 = 0;
                                 class182.anInt2454 = i_10_;
                                 class182.anInt2451 = 0;
-                                if (!class318_sub1_sub3_sub3_sub2.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3_sub2, 0, class17, -123);
+                                if (!player.aBoolean10309) Class287.method2178(player, 0, class17, -123);
                             }
-                        } else class318_sub1_sub3_sub3_sub2.aClass182Array10308[i_13_] = null;
+                        } else player.aClass182Array10308[i_13_] = null;
                     }
                     i_13_++;
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pga.G(" + i + ',' + (class318_sub1_sub3_sub3_sub2 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + (is_7_ != null ? "{...}" : "null") + ',' + (is_8_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("pga.G(" + i + ',' + (player != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + (is_7_ != null ? "{...}" : "null") + ',' + (is_8_ != null ? "{...}" : "null") + ')'));
         }
     }
 

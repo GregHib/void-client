@@ -34,14 +34,14 @@ final class Class287 {
                 if (class17.anIntArray236 != null && class17.anIntArray265 != null) i_6_ = ((int) (Math.random() * (double) (-(class17.anIntArray236[i]) + (class17.anIntArray265[i]))) + class17.anIntArray236[i]);
                 int i_7_ = (class17.anIntArray253 == null ? 255 : class17.anIntArray253[i]);
                 if (i_5_ == 0) {
-                    if (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 == class318_sub1) {
+                    if (Class132.aPlayer_1907 == class318_sub1) {
                         if (!class17.aBoolean268) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_);
                         else Class279.method2090(i_3_, i_6_, false, (byte) -35, i_7_, 0, i_2_);
                     }
                 } else if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7234.method1838(-32350) != 0) {
                     int i_8_ = (class318_sub1.x + -256 >> 9);
                     int i_9_ = (class318_sub1.y - 256 >> 9);
-                    int i_10_ = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 != class318_sub1) ? ((class318_sub1.plane << 24) + ((i_8_ << 16) + (i_9_ << 8)) + i_5_) : 0);
+                    int i_10_ = ((Class132.aPlayer_1907 != class318_sub1) ? ((class318_sub1.plane << 24) + ((i_8_ << 16) + (i_9_ << 8)) + i_5_) : 0);
                     Class258_Sub2.aClass10Array8531[Class147.anInt2021++] = new Class10((class17.aBoolean268 ? (byte) 2 : (byte) 1), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1);
                 }
             }

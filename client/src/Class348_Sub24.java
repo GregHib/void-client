@@ -364,11 +364,11 @@ final class Class348_Sub24 extends Class348 {
                         if (Class168.aClass46_2249 == null) Class348_Sub42.anInt7059 = 0;
                         if (Class289.aClass46_3701 != null) Class347.method2708(-30206);
                         if (Class192.anInt2581 > 0 && Class182.aClass346_2449.method2696(82, i ^ ~0x2cd5) && Class182.aClass346_2449.method2696(81, -121) && Class98.anInt1565 != 0) {
-                            int i_30_ = ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) - Class98.anInt1565);
+                            int i_30_ = ((Class132.aPlayer_1907.plane) - Class98.anInt1565);
                             if (i_30_ >= 0) {
                                 if (i_30_ > 3) i_30_ = 3;
                             } else i_30_ = 0;
-                            Class361.method3502((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10317[0]) + Class90.regionTileY, i ^ 0x2caa, i_30_, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10320[0]) + za_Sub2.regionTileX);
+                            Class361.method3502((Class132.aPlayer_1907.anIntArray10317[0]) + Class90.regionTileY, i ^ 0x2caa, i_30_, (Class132.aPlayer_1907.anIntArray10320[0]) + za_Sub2.regionTileX);
                         }
                         Class261.method1987(-120);
                         int i_31_ = 0;

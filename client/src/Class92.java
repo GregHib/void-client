@@ -9,11 +9,11 @@ final class Class92 {
     static int anInt1527;
     static float[] aFloatArray1528 = {0.0F, -1.0F, 0.0F, 0.0F};
 
-    static final void method858(boolean bool, Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2) {
+    static final void method858(boolean bool, Player player) {
         anInt1526++;
-        Class348_Sub9 class348_sub9 = ((Class348_Sub9) (Class348_Sub42_Sub16_Sub2.aClass356_10465.method3480(class318_sub1_sub3_sub3_sub2.anInt10290, -6008)));
+        Class348_Sub9 class348_sub9 = ((Class348_Sub9) (Class348_Sub42_Sub16_Sub2.aClass356_10465.method3480(player.anInt10290, -6008)));
         if (bool == true) {
-            if (class348_sub9 == null) Class223.method1614(979190089, null, class318_sub1_sub3_sub3_sub2.plane, (class318_sub1_sub3_sub3_sub2.anIntArray10317[0]), (class318_sub1_sub3_sub3_sub2.anIntArray10320[0]), class318_sub1_sub3_sub3_sub2, null, 0);
+            if (class348_sub9 == null) Class223.method1614(979190089, null, player.plane, (player.anIntArray10317[0]), (player.anIntArray10320[0]), player, null, 0);
             else class348_sub9.method2781((byte) 21);
         }
     }
@@ -49,18 +49,18 @@ final class Class92 {
                         Class79 class79 = (Class189.aClass278_2529.method2079(class348_sub49.readUnsignedShort(842397944), -1));
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_5_, -6008));
                         if (class348_sub22 == null && (class79.aByte1325 & 0x1) > 0 && i_7_ == Class167.anInt2204 && i_10_ >= 0 && (Class367_Sub4.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_11_ + class79.anInt1399)) {
-                            Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = new Class318_Sub1_Sub3_Sub3_Sub1();
-                            class318_sub1_sub3_sub3_sub1.anInt10290 = i_5_;
-                            Class348_Sub22 class348_sub22_12_ = (new Class348_Sub22(class318_sub1_sub3_sub3_sub1));
+                            Npc npc = new Npc();
+                            npc.anInt10290 = i_5_;
+                            Class348_Sub22 class348_sub22_12_ = (new Class348_Sub22(npc));
                             Class282.aClass356_3654.method3483((byte) 91, i_5_, class348_sub22_12_);
                             Class348_Sub40_Sub23.aClass348_Sub22Array9319[Class348_Sub32.anInt6930++] = class348_sub22_12_;
                             Class74.anIntArray1233[Class150.anInt2057++] = i_5_;
-                            class318_sub1_sub3_sub3_sub1.anInt10306 = Class367_Sub11.anInt7396;
-                            class318_sub1_sub3_sub3_sub1.method2448(class79, -2);
-                            class318_sub1_sub3_sub3_sub1.method2434((byte) 120, class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1399);
-                            class318_sub1_sub3_sub3_sub1.anInt10310 = (class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329 << 3);
-                            class318_sub1_sub3_sub3_sub1.method2435((byte) -108, (class318_sub1_sub3_sub3_sub1.aClass79_10505.aByte1355 - -4 & ~0x631ffff8) << 11, true);
-                            class318_sub1_sub3_sub3_sub1.method2444(i_11_, true, i_10_, 123, class318_sub1_sub3_sub3_sub1.method2436((byte) 54), i_7_);
+                            npc.anInt10306 = Class367_Sub11.anInt7396;
+                            npc.method2448(class79, -2);
+                            npc.method2434((byte) 120, npc.aClass79_10505.anInt1399);
+                            npc.anInt10310 = (npc.aClass79_10505.anInt1329 << 3);
+                            npc.method2435((byte) -108, (npc.aClass79_10505.aByte1355 - -4 & ~0x631ffff8) << 11, true);
+                            npc.method2444(i_11_, true, i_10_, 123, npc.method2436((byte) 54), i_7_);
                         }
                     }
                 }

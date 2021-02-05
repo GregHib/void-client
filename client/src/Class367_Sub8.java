@@ -44,50 +44,50 @@ final class Class367_Sub8 extends Class367 {
         return 0;
     }
 
-    static final void method3548(int i, Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1, int[] is, int[] is_7_, int[] is_8_) {
+    static final void method3548(int i, Npc npc, int[] is, int[] is_7_, int[] is_8_) {
         try {
             if (i != -7387) method3550((byte) 10);
             for (int i_9_ = 0; is_7_.length > i_9_; i_9_++) {
                 int i_10_ = is_7_[i_9_];
                 int i_11_ = is[i_9_];
                 int i_12_ = is_8_[i_9_];
-                for (int i_13_ = 0; i_11_ != 0 && ((class318_sub1_sub3_sub3_sub1.aClass182Array10308).length > i_13_); i_13_++) {
+                for (int i_13_ = 0; i_11_ != 0 && ((npc.aClass182Array10308).length > i_13_); i_13_++) {
                     if ((0x1 & i_11_) != 0) {
                         if (i_10_ != -1) {
                             Class17 class17 = Class10.aClass87_191.method835(i_10_, i + 7394);
                             int i_14_ = class17.anInt248;
-                            Class182 class182 = (class318_sub1_sub3_sub3_sub1.aClass182Array10308[i_13_]);
+                            Class182 class182 = (npc.aClass182Array10308[i_13_]);
                             if (class182 != null) {
                                 if (i_10_ != class182.anInt2454) {
-                                    if (Class10.aClass87_191.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) class182 = class318_sub1_sub3_sub3_sub1.aClass182Array10308[i_13_] = null;
-                                } else if (i_14_ == 0) class182 = class318_sub1_sub3_sub3_sub1.aClass182Array10308[i_13_] = null;
+                                    if (Class10.aClass87_191.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) class182 = npc.aClass182Array10308[i_13_] = null;
+                                } else if (i_14_ == 0) class182 = npc.aClass182Array10308[i_13_] = null;
                                 else if (i_14_ == 1) {
                                     class182.anInt2448 = i_12_;
                                     class182.anInt2456 = 0;
                                     class182.anInt2455 = 1;
                                     class182.anInt2451 = 0;
                                     class182.anInt2445 = 0;
-                                    if (!class318_sub1_sub3_sub3_sub1.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3_sub1, 0, class17, -75);
+                                    if (!npc.aBoolean10309) Class287.method2178(npc, 0, class17, -75);
                                 } else if (i_14_ == 2) class182.anInt2445 = 0;
                             }
                             if (class182 == null) {
-                                class182 = class318_sub1_sub3_sub3_sub1.aClass182Array10308[i_13_] = new Class182();
+                                class182 = npc.aClass182Array10308[i_13_] = new Class182();
                                 class182.anInt2455 = 1;
                                 class182.anInt2454 = i_10_;
                                 class182.anInt2456 = 0;
                                 class182.anInt2445 = 0;
                                 class182.anInt2451 = 0;
                                 class182.anInt2448 = i_12_;
-                                if (!class318_sub1_sub3_sub3_sub1.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3_sub1, 0, class17, -19);
+                                if (!npc.aBoolean10309) Class287.method2178(npc, 0, class17, -19);
                             }
-                        } else class318_sub1_sub3_sub3_sub1.aClass182Array10308[i_13_] = null;
+                        } else npc.aClass182Array10308[i_13_] = null;
                     }
                     i_11_ >>>= 1;
                 }
             }
             anInt7359++;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kl.E(" + i + ',' + (class318_sub1_sub3_sub3_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + (is_7_ != null ? "{...}" : "null") + ',' + (is_8_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kl.E(" + i + ',' + (npc != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + (is_7_ != null ? "{...}" : "null") + ',' + (is_8_ != null ? "{...}" : "null") + ')'));
         }
     }
 

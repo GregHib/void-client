@@ -85,47 +85,47 @@ final class Class239_Sub16 extends Class239 {
         super(i, class348_sub51);
     }
 
-    static final void method1791(int i, int[] is, int i_8_, Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2) {
+    static final void method1791(int i, int[] is, int i_8_, Player player) {
         do {
             try {
                 anInt6009++;
-                if ((class318_sub1_sub3_sub3_sub2.anIntArray10236) != null) {
+                if ((player.anIntArray10236) != null) {
                     boolean bool = true;
-                    for (int i_9_ = 0; (class318_sub1_sub3_sub3_sub2.anIntArray10236.length > i_9_); i_9_++) {
-                        if ((class318_sub1_sub3_sub3_sub2.anIntArray10236[i_9_]) != is[i_9_]) {
+                    for (int i_9_ = 0; (player.anIntArray10236.length > i_9_); i_9_++) {
+                        if ((player.anIntArray10236[i_9_]) != is[i_9_]) {
                             bool = false;
                             break;
                         }
                     }
-                    if (bool && class318_sub1_sub3_sub3_sub2.anInt10286 != -1) {
-                        Class17 class17 = (Class10.aClass87_191.method835(class318_sub1_sub3_sub3_sub2.anInt10286, 7));
+                    if (bool && player.anInt10286 != -1) {
+                        Class17 class17 = (Class10.aClass87_191.method835(player.anInt10286, 7));
                         int i_10_ = class17.anInt248;
                         if (i_10_ == 1) {
-                            class318_sub1_sub3_sub3_sub2.anInt10232 = 0;
-                            class318_sub1_sub3_sub3_sub2.anInt10267 = 0;
-                            class318_sub1_sub3_sub3_sub2.anInt10294 = 0;
-                            class318_sub1_sub3_sub3_sub2.anInt10218 = i_8_;
-                            class318_sub1_sub3_sub3_sub2.anInt10244 = 1;
-                            if (!class318_sub1_sub3_sub3_sub2.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3_sub2, class318_sub1_sub3_sub3_sub2.anInt10267, class17, i ^ ~0x5df4);
+                            player.anInt10232 = 0;
+                            player.anInt10267 = 0;
+                            player.anInt10294 = 0;
+                            player.anInt10218 = i_8_;
+                            player.anInt10244 = 1;
+                            if (!player.aBoolean10309) Class287.method2178(player, player.anInt10267, class17, i ^ ~0x5df4);
                         }
-                        if (i_10_ == 2) class318_sub1_sub3_sub3_sub2.anInt10294 = 0;
+                        if (i_10_ == 2) player.anInt10294 = 0;
                     }
                 }
                 boolean bool = true;
                 if (i != 23946) method1791(126, null, -73, null);
                 for (int i_11_ = 0; is.length > i_11_; i_11_++) {
                     if (is[i_11_] != -1) bool = false;
-                    if (class318_sub1_sub3_sub3_sub2.anIntArray10236 == null || (class318_sub1_sub3_sub3_sub2.anIntArray10236[i_11_]) == -1 || (Class10.aClass87_191.method835((class318_sub1_sub3_sub3_sub2.anIntArray10236[i_11_]), 7).anInt239 <= (Class10.aClass87_191.method835(is[i_11_], i ^ 0x5d8d).anInt239))) {
-                        class318_sub1_sub3_sub3_sub2.anInt10218 = i_8_;
-                        class318_sub1_sub3_sub3_sub2.anIntArray10236 = is;
+                    if (player.anIntArray10236 == null || (player.anIntArray10236[i_11_]) == -1 || (Class10.aClass87_191.method835((player.anIntArray10236[i_11_]), 7).anInt239 <= (Class10.aClass87_191.method835(is[i_11_], i ^ 0x5d8d).anInt239))) {
+                        player.anInt10218 = i_8_;
+                        player.anIntArray10236 = is;
                         break;
                     }
                 }
                 if (!bool) break;
-                class318_sub1_sub3_sub3_sub2.anIntArray10236 = is;
-                class318_sub1_sub3_sub3_sub2.anInt10218 = i_8_;
+                player.anIntArray10236 = is;
+                player.anInt10218 = i_8_;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("sba.E(" + i + ',' + (is != null ? "{...}" : "null") + ',' + i_8_ + ',' + (class318_sub1_sub3_sub3_sub2 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("sba.E(" + i + ',' + (is != null ? "{...}" : "null") + ',' + i_8_ + ',' + (player != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

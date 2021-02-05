@@ -46,48 +46,48 @@ final class Class348_Sub17 extends Class348 {
         int i_0_ = -14 / ((i - 61) / 43);
     }
 
-    static final void method2931(int i, byte i_1_, int[] is, Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1) {
+    static final void method2931(int i, byte i_1_, int[] is, Npc npc) {
         do {
             try {
                 anInt6801++;
-                if ((class318_sub1_sub3_sub3_sub1.anIntArray10236) != null) {
+                if ((npc.anIntArray10236) != null) {
                     boolean bool = true;
-                    for (int i_2_ = 0; i_2_ < class318_sub1_sub3_sub3_sub1.anIntArray10236.length; i_2_++) {
-                        if ((class318_sub1_sub3_sub3_sub1.anIntArray10236[i_2_]) != is[i_2_]) {
+                    for (int i_2_ = 0; i_2_ < npc.anIntArray10236.length; i_2_++) {
+                        if ((npc.anIntArray10236[i_2_]) != is[i_2_]) {
                             bool = false;
                             break;
                         }
                     }
-                    if (bool && class318_sub1_sub3_sub3_sub1.anInt10286 != -1) {
-                        Class17 class17 = (Class10.aClass87_191.method835(class318_sub1_sub3_sub3_sub1.anInt10286, 7));
+                    if (bool && npc.anInt10286 != -1) {
+                        Class17 class17 = (Class10.aClass87_191.method835(npc.anInt10286, 7));
                         int i_3_ = class17.anInt248;
                         if (i_3_ == 1) {
-                            class318_sub1_sub3_sub3_sub1.anInt10232 = 0;
-                            class318_sub1_sub3_sub3_sub1.anInt10218 = i;
-                            class318_sub1_sub3_sub3_sub1.anInt10294 = 0;
-                            class318_sub1_sub3_sub3_sub1.anInt10267 = 0;
-                            class318_sub1_sub3_sub3_sub1.anInt10244 = 1;
-                            if (!class318_sub1_sub3_sub3_sub1.aBoolean10309) Class287.method2178(class318_sub1_sub3_sub3_sub1, class318_sub1_sub3_sub3_sub1.anInt10267, class17, -72);
+                            npc.anInt10232 = 0;
+                            npc.anInt10218 = i;
+                            npc.anInt10294 = 0;
+                            npc.anInt10267 = 0;
+                            npc.anInt10244 = 1;
+                            if (!npc.aBoolean10309) Class287.method2178(npc, npc.anInt10267, class17, -72);
                         }
-                        if (i_3_ == 2) class318_sub1_sub3_sub3_sub1.anInt10294 = 0;
+                        if (i_3_ == 2) npc.anInt10294 = 0;
                     }
                 }
                 boolean bool = true;
                 for (int i_4_ = 0; is.length > i_4_; i_4_++) {
                     if (is[i_4_] != -1) bool = false;
-                    if (class318_sub1_sub3_sub3_sub1.anIntArray10236 == null || (class318_sub1_sub3_sub3_sub1.anIntArray10236[i_4_]) == -1 || (Class10.aClass87_191.method835(is[i_4_], 7).anInt239 >= Class10.aClass87_191.method835((class318_sub1_sub3_sub3_sub1.anIntArray10236[i_4_]), 7).anInt239)) {
-                        class318_sub1_sub3_sub3_sub1.anInt10218 = i;
-                        class318_sub1_sub3_sub3_sub1.anInt10322 = class318_sub1_sub3_sub3_sub1.anInt10319;
-                        class318_sub1_sub3_sub3_sub1.anIntArray10236 = is;
+                    if (npc.anIntArray10236 == null || (npc.anIntArray10236[i_4_]) == -1 || (Class10.aClass87_191.method835(is[i_4_], 7).anInt239 >= Class10.aClass87_191.method835((npc.anIntArray10236[i_4_]), 7).anInt239)) {
+                        npc.anInt10218 = i;
+                        npc.anInt10322 = npc.anInt10319;
+                        npc.anIntArray10236 = is;
                     }
                 }
                 if (i_1_ <= 31) method2931(-66, (byte) 125, null, null);
                 if (!bool) break;
-                class318_sub1_sub3_sub3_sub1.anIntArray10236 = is;
-                class318_sub1_sub3_sub3_sub1.anInt10218 = i;
-                class318_sub1_sub3_sub3_sub1.anInt10322 = (class318_sub1_sub3_sub3_sub1.anInt10319);
+                npc.anIntArray10236 = is;
+                npc.anInt10218 = i;
+                npc.anInt10322 = (npc.anInt10319);
             } catch (RuntimeException runtimeexception) {
-                throw method2929(runtimeexception, ("jf.E(" + i + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ',' + (class318_sub1_sub3_sub3_sub1 != null ? "{...}" : "null") + ')'));
+                throw method2929(runtimeexception, ("jf.E(" + i + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ',' + (npc != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

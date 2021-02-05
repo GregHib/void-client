@@ -21,7 +21,7 @@ final class Class253 {
             int i_9_ = 0;
             if (i_5_ < 11) method1919(97, -1.4756906F, null, 0.7518226F, 93, -0.33127537F, null, -0.6670833F, 25, (byte) -96, 123, -1.8054857F, 43);
             for (/**/; i_9_ < i_6_; i_9_++) {
-                Class318_Sub1_Sub3_Sub3_Sub2.method2460(f, i_1_, f_0_, i_4_, i, f_7_, class186, i_9_, (byte) 30, i_8_, f_3_, is, i_6_, f_2_);
+                Player.method2460(f, i_1_, f_0_, i_4_, i, f_7_, class186, i_9_, (byte) 30, i_8_, f_3_, is, i_6_, f_2_);
                 i_1_ += i * i_8_;
             }
             anInt3250++;

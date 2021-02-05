@@ -26,8 +26,8 @@ abstract class Class101 {
         anInt1595++;
         int i_4_ = ((Class286_Sub4.anInt6246 >> 12) - -(za_Sub2.regionTileX >> 3));
         int i_5_ = ((Class90.regionTileY >> 3) + (Class59_Sub2_Sub2.anInt8685 >> 12));
-        Class355.anInt4372 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane = (byte) 0;
-        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2449(8, 8, (byte) 118);
+        Class355.anInt4372 = Class132.aPlayer_1907.plane = (byte) 0;
+        Class132.aPlayer_1907.method2449(8, 8, (byte) 118);
         if (i != -49) anInt1597 = 115;
         int i_6_ = 18;
         Class322.anIntArray4031 = new int[i_6_];

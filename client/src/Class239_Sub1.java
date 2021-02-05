@@ -37,8 +37,8 @@ final class Class239_Sub1 extends Class239 {
             int i_3_ = Class328_Sub1.anInt6513;
             int[] is = Class286_Sub7.anIntArray6290;
             for (int i_4_ = 0; i_3_ > i_4_; i_4_++) {
-                Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_4_]]);
-                if (class318_sub1_sub3_sub3_sub2.aString10544 != null && class318_sub1_sub3_sub3_sub2.aString10544.equalsIgnoreCase(string) && (((class318_sub1_sub3_sub3_sub2 == Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907) && (0x10 & Class38.anInt500) != 0) || (class318_sub1_sub3_sub3_sub2 != null && (Class38.anInt500 & 0x8) != 0))) {
+                Player player = (Class294.aPlayerArray5058[is[i_4_]]);
+                if (player.aString10544 != null && player.aString10544.equalsIgnoreCase(string) && (((player == Class132.aPlayer_1907) && (0x10 & Class38.anInt500) != 0) || (player != null && (Class38.anInt500 & 0x8) != 0))) {
                     Class228.anInt2975++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169);
@@ -48,7 +48,7 @@ final class Class239_Sub1 extends Class239 {
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -64, 0);
                     Class348_Sub42_Sub14.method3243(116, class348_sub47);
                     bool = true;
-                    Class298.method2252(true, class318_sub1_sub3_sub3_sub2.anIntArray10320[0], class318_sub1_sub3_sub3_sub2.anIntArray10317[0], (byte) -99, class318_sub1_sub3_sub3_sub2.method2436((byte) 54), 0, class318_sub1_sub3_sub3_sub2.method2436((byte) 91), -2, 0);
+                    Class298.method2252(true, player.anIntArray10320[0], player.anIntArray10317[0], (byte) -99, player.method2436((byte) 54), 0, player.method2436((byte) 91), -2, 0);
                     break;
                 }
             }

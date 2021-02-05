@@ -95,7 +95,7 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
                     if (Class348_Sub40_Sub5.aBoolean9121) {
                         if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
                         else aa_Sub1.aSArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
-                        for (int i_15_ = 0; i_15_ < Class318_Sub1_Sub3_Sub3_Sub1.anInt10503; i_15_++)
+                        for (int i_15_ = 0; i_15_ < Npc.anInt10503; i_15_++)
                             Class319.aClass315Array3982[i_15_].method2359(new Class318_Sub2(i_7_ + 1), -1);
                     } else if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, false, i_1_, i_2_);
                     else aa_Sub1.aSArray5191[i_7_].method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, false, i_2_);
@@ -117,7 +117,7 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
                     if (Class348_Sub40_Sub5.aBoolean9121) {
                         if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
                         else aa_Sub1.aSArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
-                        for (int i_21_ = 0; i_21_ < Class318_Sub1_Sub3_Sub3_Sub1.anInt10503; i_21_++)
+                        for (int i_21_ = 0; i_21_ < Npc.anInt10503; i_21_++)
                             Class319.aClass315Array3982[i_21_].method2359(new Class318_Sub2(i_7_ + 1), -1);
                     } else if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, true, i_1_, i_2_);
                     else aa_Sub1.aSArray5191[i_7_].method3983(Class239_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, true, i_2_);

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
+final class Npc extends Class318_Sub1_Sub3_Sub3 {
     static int anInt10493;
     static int anInt10494;
     static int anInt10495;
@@ -294,7 +294,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
         }
     }
 
-    public Class318_Sub1_Sub3_Sub3_Sub1() {
+    public Npc() {
         /* empty */
     }
 

@@ -195,8 +195,8 @@ final class Class34 {
         int i_32_ = Class328_Sub1.anInt6513;
         int[] is = Class286_Sub7.anIntArray6290;
         for (int i_33_ = 0; i_33_ < i_32_; i_33_++) {
-            Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[is[i_33_]];
-            if (class318_sub1_sub3_sub3_sub2 != null) Class322.method2556(false, class318_sub1_sub3_sub3_sub2.method2436((byte) 60), class318_sub1_sub3_sub3_sub2);
+            Player player = Class294.aPlayerArray5058[is[i_33_]];
+            if (player != null) Class322.method2556(false, player.method2436((byte) 60), player);
         }
         if (i != 4740) method347(null, null, 79, -21, 64);
     }

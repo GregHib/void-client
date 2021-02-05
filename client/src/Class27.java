@@ -117,7 +117,7 @@ final class Class27 {
                                 }
                             }
                         }
-                        if (Class285_Sub1.method2127(2, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aString10544)).equals(string_6_)) Class59.method544((Class274.aClass274_3525.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
+                        if (Class285_Sub1.method2127(2, (Class132.aPlayer_1907.aString10544)).equals(string_6_)) Class59.method544((Class274.aClass274_3525.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
                         else {
                             Class5.anInt4628++;
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub42_Sub19.aClass351_9687, Class348_Sub23_Sub2.aClass77_9029, -94));

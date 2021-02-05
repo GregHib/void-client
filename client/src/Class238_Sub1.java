@@ -67,7 +67,7 @@ final class Class238_Sub1 extends Class238 {
                 i_7_ -= 256;
                 if (i_7_ < 0) i_7_ = 0;
                 int i_9_ = ((class348_sub9.anInt6694 + -i_7_) * i_8_ / class348_sub9.anInt6694);
-                Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2436((byte) 100);
+                Class132.aPlayer_1907.method2436((byte) 100);
                 if (i_6_ == -78) {
                     int i_10_ = 8192;
                     int i_11_ = (-i_3_ + ((class348_sub9.anInt6678 + class348_sub9.anInt6698) / 2));

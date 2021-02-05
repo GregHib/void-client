@@ -7,7 +7,7 @@ import java.awt.*;
 final class Class348_Sub22 extends Class348 {
     static int anInt6857;
     static int anInt6858;
-    Class318_Sub1_Sub3_Sub3_Sub1 aClass318_Sub1_Sub3_Sub3_Sub1_6859;
+    Npc aNpc_6859;
     static int anInt6860;
     static int anInt6861;
     static int anInt6862;
@@ -55,7 +55,7 @@ final class Class348_Sub22 extends Class348 {
         Class258_Sub4.aClass373_8552 = Class348_Sub18.method2941(Class305.aCanvas3869, 0, true);
     }
 
-    Class348_Sub22(Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1) {
-        this.aClass318_Sub1_Sub3_Sub3_Sub1_6859 = class318_sub1_sub3_sub3_sub1;
+    Class348_Sub22(Npc npc) {
+        this.aNpc_6859 = npc;
     }
 }

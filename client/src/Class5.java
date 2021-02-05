@@ -53,11 +53,11 @@ abstract class Class5 implements Interface1 {
         if (i != -19960) method180(-71);
     }
 
-    static final void method181(boolean bool, Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1) {
+    static final void method181(boolean bool, Npc npc) {
         if (bool != true) method180(54);
         anInt4627++;
         for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aClass262_5185.method1990((byte) 78))) {
-            if ((class348_sub9.aClass318_Sub1_Sub3_Sub3_Sub1_6691) == class318_sub1_sub3_sub3_sub1) {
+            if ((class348_sub9.aNpc_6691) == npc) {
                 if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                     Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676);
                     class348_sub9.aClass348_Sub16_Sub5_6676 = null;

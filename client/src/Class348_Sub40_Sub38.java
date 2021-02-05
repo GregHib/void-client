@@ -87,8 +87,8 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
             int i_14_ = Class74.anIntArray1233[i];
             Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_14_, -6008));
             if (class348_sub22 != null) {
-                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                Class322.method2556(false, class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1399, class318_sub1_sub3_sub3_sub1);
+                Npc npc = (class348_sub22.aNpc_6859);
+                Class322.method2556(false, npc.aClass79_10505.anInt1399, npc);
             }
         }
     }

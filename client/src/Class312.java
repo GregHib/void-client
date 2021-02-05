@@ -60,11 +60,11 @@ final class Class312 {
             Class348_Sub40_Sub39.method3153(0);
             Class348_Sub40_Sub37.method3147((byte) 27);
             for (int i_0_ = 0; i_0_ < 2048; i_0_++)
-                Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_0_] = null;
-            Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 = null;
+                Class294.aPlayerArray5058[i_0_] = null;
+            Class132.aPlayer_1907 = null;
             for (int i_1_ = 0; Class348_Sub32.anInt6930 > i_1_; i_1_++) {
-                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_1_].aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                if (class318_sub1_sub3_sub3_sub1 != null) class318_sub1_sub3_sub3_sub1.anInt10275 = -1;
+                Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_1_].aNpc_6859);
+                if (npc != null) npc.anInt10275 = -1;
             }
             Class363.method3515(i + 36);
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;

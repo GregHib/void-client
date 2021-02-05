@@ -25,22 +25,22 @@ final class Class228 {
     static final boolean method1629(boolean bool) {
         anInt2973++;
         Hashtable hashtable = new Hashtable();
-        Enumeration enumeration = Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.keys();
+        Enumeration enumeration = Player.aHashtable10565.keys();
         while (enumeration.hasMoreElements()) {
             Object object = enumeration.nextElement();
-            hashtable.put(object, Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.get(object));
+            hashtable.put(object, Player.aHashtable10565.get(object));
         }
         try {
             Field field = ClassLoader.class.getDeclaredField("nativeLibraries");
             if (bool != true) return false;
             field.setAccessible(true);
             try {
-                enumeration = Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.keys();
+                enumeration = Player.aHashtable10565.keys();
                 while (enumeration.hasMoreElements()) {
                     String string = (String) enumeration.nextElement();
                     try {
                         File file = (File) Class275.aHashtable3548.get(string);
-                        Class var_class_1_ = (Class) Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.get(string);
+                        Class var_class_1_ = (Class) Player.aHashtable10565.get(string);
                         Vector vector = ((Vector) field.get(var_class_1_.getClassLoader()));
                         for (int i = 0; i < vector.size(); i++) {
                             try {
@@ -101,8 +101,8 @@ final class Class228 {
             }
             /* empty */
         }
-        Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565 = hashtable;
-        return Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.isEmpty();
+        Player.aHashtable10565 = hashtable;
+        return Player.aHashtable10565.isEmpty();
     }
 
     static final void method1630(int i, int i_6_, int i_7_) {

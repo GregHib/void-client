@@ -122,7 +122,7 @@ final class Class219 {
             } else {
                 int i_7_ = 16;
                 boolean bool_8_ = true;
-                if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub1) bool_8_ = ((Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3).aClass79_10505.aBoolean1331;
+                if (class318_sub1_sub3_sub3 instanceof Npc) bool_8_ = ((Npc) class318_sub1_sub3_sub3).aClass79_10505.aBoolean1331;
                 if (bool_8_) {
                     int i_9_ = ((class318_sub1_sub3_sub3.anInt10282) - class318_sub1_sub3_sub3.aClass264_10217.anInt3370);
                     if (i_9_ != 0 && class318_sub1_sub3_sub3.anInt10275 == -1 && (class318_sub1_sub3_sub3.anInt10310) != 0) i_7_ = 8;

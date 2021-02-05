@@ -66,11 +66,11 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         Class195.method1448(-56);
         Class362.anInt4458 = -1;
         Class33.method338(i + 45, Class348_Sub42_Sub16_Sub1.anInt10447);
-        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907 = new Class318_Sub1_Sub3_Sub3_Sub2();
-        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x = 512 * Class367_Sub4.anInt7319 / 2;
-        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10320[0] = Class367_Sub4.anInt7319 / 2;
-        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y = 512 * Class348_Sub40_Sub3.anInt9109 / 2;
-        Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10317[0] = Class348_Sub40_Sub3.anInt9109 / 2;
+        Class132.aPlayer_1907 = new Player();
+        Class132.aPlayer_1907.x = 512 * Class367_Sub4.anInt7319 / 2;
+        Class132.aPlayer_1907.anIntArray10320[0] = Class367_Sub4.anInt7319 / 2;
+        Class132.aPlayer_1907.y = 512 * Class348_Sub40_Sub3.anInt9109 / 2;
+        Class132.aPlayer_1907.anIntArray10317[0] = Class348_Sub40_Sub3.anInt9109 / 2;
         Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685 = 0;
         if (Class348_Sub40_Sub21.anInt9282 == 2) {
             Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 << 9;

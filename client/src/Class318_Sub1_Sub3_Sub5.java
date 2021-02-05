@@ -159,12 +159,12 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                 Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3 = null;
                 if (anInt10387 < 0) {
                     int i_9_ = -1 + -anInt10387;
-                    if (i_9_ == Class348_Sub42_Sub11.anInt9591) class318_sub1_sub3_sub3 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907;
-                    else class318_sub1_sub3_sub3 = (Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_9_]);
+                    if (i_9_ == Class348_Sub42_Sub11.anInt9591) class318_sub1_sub3_sub3 = Class132.aPlayer_1907;
+                    else class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[i_9_]);
                 } else {
                     int i_10_ = -1 + anInt10387;
                     Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_10_, -6008));
-                    if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
+                    if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859);
                 }
                 if (class318_sub1_sub3_sub3 != null) {
                     this.y = class318_sub1_sub3_sub3.y;

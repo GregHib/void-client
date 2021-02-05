@@ -20,8 +20,8 @@ final class Canvas_Sub1 extends Canvas {
     static final void method119(int i, long l) {
         try {
             anInt66++;
-            int i_0_ = (Class20.anInt319 + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x);
-            int i_1_ = (Class260.anInt3310 + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y);
+            int i_0_ = (Class20.anInt319 + Class132.aPlayer_1907.x);
+            int i_1_ = (Class260.anInt3310 + Class132.aPlayer_1907.y);
             if (-i_0_ + Class130_Sub1.anInt5799 < -2000 || -i_0_ + Class130_Sub1.anInt5799 > 2000 || Class192.anInt2578 - i_1_ < -2000 || -i_1_ + Class192.anInt2578 > 2000) {
                 Class192.anInt2578 = i_1_;
                 Class130_Sub1.anInt5799 = i_0_;

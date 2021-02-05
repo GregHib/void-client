@@ -129,7 +129,7 @@ final class Class38 {
                                         Class260.anInt3312--;
                                         aa.method159(-615751774);
                                         Class348_Sub38.anInt7006 = Class363.aString4461.length();
-                                    } else if (Class318_Sub1_Sub3_Sub3_Sub1.method2446(c, (byte) 105) || c == 92 || c == 47 || c == 46 || c == 58 || c == 44 || c == 32 || c == 95 || c == 45 || c == 43 || c == 91 || c == 93) {
+                                    } else if (Npc.method2446(c, (byte) 105) || c == 92 || c == 47 || c == 46 || c == 58 || c == 44 || c == 32 || c == 95 || c == 45 || c == 43 || c == 91 || c == 93) {
                                         Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.anInterface6Array9534[i_6_].method28((byte) 23) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)));
                                         Class348_Sub38.anInt7006++;
                                     }

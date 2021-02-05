@@ -28,11 +28,11 @@ final class Class91 {
         for (int i_2_ = 0; i_2_ < Class358.anInt4411; i_2_++) {
             int i_3_ = Class5_Sub1_Sub1.anIntArray9932[i_2_];
             Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_3_, -6008));
-            Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
+            Npc npc = (class348_sub22.aNpc_6859);
             if (Class5_Sub1.aBoolean8335 && Class348_Sub42_Sub1.method3169(i_3_, 0)) Class286_Sub2.method2146((byte) 84);
-            if (Class348_Sub23_Sub3.anInt9041 != (class318_sub1_sub3_sub3_sub1.anInt10306)) {
-                if (class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(0)) Class5.method181(true, class318_sub1_sub3_sub3_sub1);
-                class318_sub1_sub3_sub3_sub1.method2448(null, -2);
+            if (Class348_Sub23_Sub3.anInt9041 != (npc.anInt10306)) {
+                if (npc.aClass79_10505.method793(0)) Class5.method181(true, npc);
+                npc.method2448(null, -2);
                 class348_sub22.method2715((byte) 52);
                 bool = true;
             }
@@ -48,7 +48,7 @@ final class Class91 {
         }
         if (Class348_Sub32.anInt6930 - Class150.anInt2057 != 0) throw new RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - Class150.anInt2057));
         for (int i_5_ = 0; i_5_ < Class348_Sub32.anInt6930; i_5_++) {
-            if (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_].aClass318_Sub1_Sub3_Sub3_Sub1_6859.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw new RuntimeException("gnp4 uk:" + (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_].aClass318_Sub1_Sub3_Sub3_Sub1_6859.anInt10290));
+            if (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_].aNpc_6859.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw new RuntimeException("gnp4 uk:" + (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_].aNpc_6859.anInt10290));
         }
     }
 

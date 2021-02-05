@@ -62,17 +62,17 @@ final class Class6 {
             boolean bool = false;
             Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_18_, -6008));
             if (class348_sub22 == null) {
-                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = new Class318_Sub1_Sub3_Sub3_Sub1();
-                class318_sub1_sub3_sub3_sub1.anInt10290 = i_18_;
-                class348_sub22 = new Class348_Sub22(class318_sub1_sub3_sub3_sub1);
+                Npc npc = new Npc();
+                npc.anInt10290 = i_18_;
+                class348_sub22 = new Class348_Sub22(npc);
                 Class282.aClass356_3654.method3483((byte) 57, i_18_, class348_sub22);
                 bool = true;
                 Class348_Sub40_Sub23.aClass348_Sub22Array9319[Class348_Sub32.anInt6930++] = class348_sub22;
             }
-            Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
+            Npc npc = (class348_sub22.aNpc_6859);
             Class74.anIntArray1233[Class150.anInt2057++] = i_18_;
-            class318_sub1_sub3_sub3_sub1.anInt10306 = Class348_Sub23_Sub3.anInt9041;
-            if ((class318_sub1_sub3_sub3_sub1.aClass79_10505) != null && class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(0)) Class5.method181(true, class318_sub1_sub3_sub3_sub1);
+            npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
+            if ((npc.aClass79_10505) != null && npc.aClass79_10505.method793(0)) Class5.method181(true, npc);
             int i_19_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 2);
             int i_20_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
             int i_21_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 5);
@@ -82,12 +82,12 @@ final class Class6 {
             int i_23_ = 0x3d01 & 4 + Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 3) << 11;
             int i_24_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
             if (i_24_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_18_;
-            class318_sub1_sub3_sub3_sub1.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 14), -1)), i ^ 0x2b297815);
-            class318_sub1_sub3_sub3_sub1.method2434((byte) 111, class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1399);
-            class318_sub1_sub3_sub3_sub1.anInt10310 = (class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329) << 3;
-            if (bool) class318_sub1_sub3_sub3_sub1.method2435((byte) -108, i_23_, true);
-            class318_sub1_sub3_sub3_sub1.method2444((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10317[0]) - -i_21_, i_20_ == 1, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anIntArray10320[0]) + i_22_, i + 724138125, class318_sub1_sub3_sub3_sub1.method2436((byte) 50), i_19_);
-            if (class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(0)) Class223.method1614(979190089, class318_sub1_sub3_sub3_sub1, class318_sub1_sub3_sub3_sub1.plane, (class318_sub1_sub3_sub3_sub1.anIntArray10317[0]), (class318_sub1_sub3_sub3_sub1.anIntArray10320[0]), null, null, 0);
+            npc.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 14), -1)), i ^ 0x2b297815);
+            npc.method2434((byte) 111, npc.aClass79_10505.anInt1399);
+            npc.anInt10310 = (npc.aClass79_10505.anInt1329) << 3;
+            if (bool) npc.method2435((byte) -108, i_23_, true);
+            npc.method2444((Class132.aPlayer_1907.anIntArray10317[0]) - -i_21_, i_20_ == 1, (Class132.aPlayer_1907.anIntArray10320[0]) + i_22_, i + 724138125, npc.method2436((byte) 50), i_19_);
+            if (npc.aClass79_10505.method793(0)) Class223.method1614(979190089, npc, npc.plane, (npc.anIntArray10317[0]), (npc.anIntArray10320[0]), null, null, 0);
         }
         if (i == -724138005) Class299.aClass348_Sub49_Sub2_3813.stopBitAccess(false);
     }

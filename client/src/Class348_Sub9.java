@@ -14,7 +14,7 @@ final class Class348_Sub9 extends Class348 {
     Class348_Sub16_Sub5 aClass348_Sub16_Sub5_6676;
     int anInt6677;
     int anInt6678;
-    Class318_Sub1_Sub3_Sub3_Sub2 aClass318_Sub1_Sub3_Sub3_Sub2_6679;
+    Player aPlayer_6679;
     int anInt6680;
     int anInt6681;
     static int anInt6682;
@@ -26,7 +26,7 @@ final class Class348_Sub9 extends Class348 {
     Class348_Sub10 aClass348_Sub10_6688;
     int anInt6689;
     static int anInt6690;
-    Class318_Sub1_Sub3_Sub3_Sub1 aClass318_Sub1_Sub3_Sub3_Sub1_6691;
+    Npc aNpc_6691;
     Class348_Sub19_Sub1 aClass348_Sub19_Sub1_6692;
     int anInt6693;
     int anInt6694;
@@ -167,26 +167,26 @@ final class Class348_Sub9 extends Class348 {
         if (i == 21) {
             boolean bool = this.aBoolean6674;
             if (this.aClass51_6695 == null) {
-                if (this.aClass318_Sub1_Sub3_Sub3_Sub1_6691 == null) {
-                    if ((this.aClass318_Sub1_Sub3_Sub3_Sub2_6679) != null) {
-                        this.anInt6685 = (Class315.method2357(-1, (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679)));
-                        this.anInt6694 = (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10553) << 9;
-                        this.anInt6677 = (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679.anInt10558);
+                if (this.aNpc_6691 == null) {
+                    if ((this.aPlayer_6679) != null) {
+                        this.anInt6685 = (Class315.method2357(-1, (this.aPlayer_6679)));
+                        this.anInt6694 = (this.aPlayer_6679.anInt10553) << 9;
+                        this.anInt6677 = (this.aPlayer_6679.anInt10558);
                         this.anInt6681 = 256;
                         this.anInt6696 = 256;
-                        this.aBoolean6674 = (this.aClass318_Sub1_Sub3_Sub3_Sub2_6679.aBoolean10517);
+                        this.aBoolean6674 = (this.aPlayer_6679.aBoolean10517);
                     }
                 } else {
-                    int i_12_ = (Class8.method214((this.aClass318_Sub1_Sub3_Sub3_Sub1_6691), -1));
+                    int i_12_ = (Class8.method214((this.aNpc_6691), -1));
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_;
-                        Class79 class79 = (this.aClass318_Sub1_Sub3_Sub3_Sub1_6691.aClass79_10505);
+                        Class79 class79 = (this.aNpc_6691.aClass79_10505);
                         if (class79.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
                         if (class79 == null) {
                             this.anInt6677 = this.anInt6694 = 0;
                             this.anInt6681 = 256;
                             this.anInt6696 = 256;
-                            this.aBoolean6674 = this.aClass318_Sub1_Sub3_Sub3_Sub1_6691.aClass79_10505.aBoolean1370;
+                            this.aBoolean6674 = this.aNpc_6691.aClass79_10505.aBoolean1370;
                         } else {
                             this.anInt6694 = class79.anInt1392 << 9;
                             this.anInt6681 = class79.anInt1363;

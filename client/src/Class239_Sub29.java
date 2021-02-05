@@ -43,7 +43,7 @@ final class Class239_Sub29 extends Class239 {
     static final boolean method1849(char c, int i) {
         anInt6149++;
         if (Character.isISOControl(c)) return false;
-        if (Class318_Sub1_Sub3_Sub3_Sub1.method2446(c, (byte) 105)) return true;
+        if (Npc.method2446(c, (byte) 105)) return true;
         char[] cs = Class185.aCharArray2488;
         for (int i_2_ = 0; cs.length > i_2_; i_2_++) {
             int i_3_ = cs[i_2_];

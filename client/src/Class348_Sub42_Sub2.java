@@ -27,8 +27,8 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
 
     static final void method3171(ha var_ha, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, boolean bool, boolean bool_5_) {
         Class9.aHa171 = var_ha;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 = i;
-        Class348_Sub40_Sub5.aBoolean9121 = (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 > 1 && Class9.aHa171.method3708());
+        Npc.anInt10503 = i;
+        Class348_Sub40_Sub5.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aHa171.method3708());
         Class362.anInt4459 = i_0_;
         Class270.anInt3465 = 1 << Class362.anInt4459;
         Class348_Sub23_Sub2.anInt9037 = Class270.anInt3465 >> 1;
@@ -91,7 +91,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
                     [(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)]);
             Class5_Sub2.aBooleanArrayArrayArray8361 = new boolean[i_1_][][];
             if (Class348_Sub40_Sub34.aClass293Array9432 != null) Class260.method1978();
-            Class348_Sub40_Sub34.aClass293Array9432 = new Class293[Class318_Sub1_Sub3_Sub3_Sub1.anInt10503];
+            Class348_Sub40_Sub34.aClass293Array9432 = new Class293[Npc.anInt10503];
             Class9.aHa171.method3631((Class348_Sub40_Sub34.aClass293Array9432).length + 1);
             Class9.aHa171.method3659(0);
             for (int i_6_ = 0; i_6_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_6_++) {
@@ -99,10 +99,10 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
                 new Thread(Class348_Sub40_Sub34.aClass293Array9432[i_6_], "wr" + i_6_).start();
             }
             int i_7_;
-            if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 2) {
+            if (Npc.anInt10503 == 2) {
                 i_7_ = 4;
                 Class75_Sub1.anInt5652 = 2;
-            } else if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 3) {
+            } else if (Npc.anInt10503 == 3) {
                 i_7_ = 6;
                 Class75_Sub1.anInt5652 = 3;
             } else {
@@ -111,7 +111,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             }
             Class319.aClass315Array3982 = new Class315[i_7_];
             for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
-                Class319.aClass315Array3982[i_8_] = new Class315(Class239_Sub24.aStringArrayArray6093[(Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 - 2)][i_8_]);
+                Class319.aClass315Array3982[i_8_] = new Class315(Class239_Sub24.aStringArrayArray6093[(Npc.anInt10503 - 2)][i_8_]);
         } else Class75_Sub1.anInt5652 = 1;
         Class17.anIntArray256 = new int[Class75_Sub1.anInt5652 - 1];
         Class345.anIntArray4271 = new int[Class75_Sub1.anInt5652 - 1];

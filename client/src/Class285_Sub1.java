@@ -111,10 +111,10 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
 
     static final void method2131(int i) {
         if (i == 0) {
-            if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 2) {
+            if (Npc.anInt10503 == 2) {
                 Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[0]);
                 Class348_Sub40_Sub34.aClass293Array9432[1].method2206(Class319.aClass315Array3982[1]);
-            } else if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 3) {
+            } else if (Npc.anInt10503 == 3) {
                 Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[0]);
                 Class348_Sub40_Sub34.aClass293Array9432[1].method2206(Class319.aClass315Array3982[1]);
                 Class348_Sub40_Sub34.aClass293Array9432[2].method2206(Class319.aClass315Array3982[2]);
@@ -125,8 +125,8 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
                 Class348_Sub40_Sub34.aClass293Array9432[3].method2206(Class319.aClass315Array3982[3]);
             }
         } else if (i == 1) {
-            if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 2) Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[2]);
-            else if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 3) {
+            if (Npc.anInt10503 == 2) Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[2]);
+            else if (Npc.anInt10503 == 3) {
                 Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[3]);
                 Class348_Sub40_Sub34.aClass293Array9432[1].method2206(Class319.aClass315Array3982[4]);
             } else {
@@ -135,8 +135,8 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
                 Class348_Sub40_Sub34.aClass293Array9432[2].method2206(Class319.aClass315Array3982[6]);
             }
         } else if (i == 2) {
-            if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 2) Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[3]);
-            else if (Class318_Sub1_Sub3_Sub3_Sub1.anInt10503 == 3) Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[5]);
+            if (Npc.anInt10503 == 2) Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[3]);
+            else if (Npc.anInt10503 == 3) Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[5]);
             else Class348_Sub40_Sub34.aClass293Array9432[0].method2206(Class319.aClass315Array3982[7]);
         }
     }

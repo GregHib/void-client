@@ -24,8 +24,8 @@ final class Class289 {
     static final void method2192(byte i) {
         Class250.anInt3227 = 0;
         anInt3702++;
-        int i_0_ = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x) >> 9) - -za_Sub2.regionTileX);
-        int i_1_ = (Class90.regionTileY + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y >> 9));
+        int i_0_ = (((Class132.aPlayer_1907.x) >> 9) - -za_Sub2.regionTileX);
+        int i_1_ = (Class90.regionTileY + (Class132.aPlayer_1907.y >> 9));
         if (i != 80) method2192((byte) -34);
         if (i_0_ >= 3053 && i_0_ <= 3156 && i_1_ >= 3056 && i_1_ <= 3136) Class250.anInt3227 = 1;
         if (i_0_ >= 3072 && i_0_ <= 3118 && i_1_ >= 9492 && i_1_ <= 9535) Class250.anInt3227 = 1;

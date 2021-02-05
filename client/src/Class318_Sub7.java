@@ -122,7 +122,7 @@ final class Class318_Sub7 extends Class318 {
                     int[] is = new int[3];
                     int i_7_ = -1;
                     int i_8_ = -1;
-                    if (Class75.aClass348_Sub42_Sub14_1243.method3236(is, (za_Sub2.regionTileX - -((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x) >> 9)), ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y) >> 9) + Class90.regionTileY, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane), (byte) -28)) {
+                    if (Class75.aClass348_Sub42_Sub14_1243.method3236(is, (za_Sub2.regionTileX - -((Class132.aPlayer_1907.x) >> 9)), ((Class132.aPlayer_1907.y) >> 9) + Class90.regionTileY, (Class132.aPlayer_1907.plane), (byte) -28)) {
                         i_7_ = -Class75.anInt1266 + is[1];
                         i_8_ = -Class75.anInt1263 + is[2];
                     }

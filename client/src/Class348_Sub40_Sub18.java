@@ -95,8 +95,8 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
             Class348_Sub42_Sub4.anInt9513 = 0;
             for (int i_13_ = 1; i_13_ < 2048; i_13_++) {
                 Class348_Sub5.aByteArray6624[i_13_] >>= 1;
-                Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[i_13_];
-                if (class318_sub1_sub3_sub3_sub2 == null) Class135_Sub1.anIntArray4709[Class348_Sub42_Sub4.anInt9513++] = i_13_;
+                Player player = Class294.aPlayerArray5058[i_13_];
+                if (player == null) Class135_Sub1.anIntArray4709[Class348_Sub42_Sub4.anInt9513++] = i_13_;
                 else Class286_Sub7.anIntArray6290[Class328_Sub1.anInt6513++] = i_13_;
             }
         }

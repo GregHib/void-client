@@ -5,7 +5,7 @@
 final class Class132 {
     static int anInt1905 = 4;
     static int anInt1906;
-    static Class318_Sub1_Sub3_Sub3_Sub2 aClass318_Sub1_Sub3_Sub3_Sub2_1907;
+    static Player aPlayer_1907;
     static int anInt1908;
     static int[] anIntArray1909;
     static int anInt1910 = 0;
@@ -14,7 +14,7 @@ final class Class132 {
     public static void method1137(int i) {
         if (i != 3) method1138(null, true, null, (byte) 70);
         anIntArray1909 = null;
-        aClass318_Sub1_Sub3_Sub3_Sub2_1907 = null;
+        aPlayer_1907 = null;
     }
 
     static final void method1138(String string, boolean bool, String string_0_, byte i) {

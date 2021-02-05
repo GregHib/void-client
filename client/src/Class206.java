@@ -96,13 +96,13 @@ final class Class206 implements Interface11 {
                         if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (class10.aByte180 == 3 ? Class316.aClass348_Sub51_3959.aClass239_Sub26_7215.method1838(-32350) : Class316.aClass348_Sub51_3959.aClass239_Sub26_7272.method1838(-32350))) >> 2);
                         else {
                             int i_7_ = 0x3 & (class10.anInt178 >> 24);
-                            if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) == i_7_) {
+                            if ((Class132.aPlayer_1907.plane) == i_7_) {
                                 int i_8_ = 0x1fe00 & (class10.anInt178 << 9);
-                                int i_9_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2436((byte) 52) << 8);
+                                int i_9_ = (Class132.aPlayer_1907.method2436((byte) 52) << 8);
                                 int i_10_ = ((class10.anInt178 & 0xff7e29) >> 16);
-                                int i_11_ = (-(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x) + 256 + (i_10_ << 9) + i_9_);
+                                int i_11_ = (-(Class132.aPlayer_1907.x) + 256 + (i_10_ << 9) + i_9_);
                                 int i_12_ = ((class10.anInt178 & 0xffc1) >> 8);
-                                int i_13_ = (256 + (i_12_ << 9) - ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y) - i_9_));
+                                int i_13_ = (256 + (i_12_ << 9) - ((Class132.aPlayer_1907.y) - i_9_));
                                 int i_14_ = (Math.abs(i_11_) + (Math.abs(i_13_) + -512));
                                 if (i_8_ < i_14_) {
                                     class10.anInt188 = -99999;

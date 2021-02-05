@@ -24,8 +24,8 @@ final class Class318_Sub2 extends Class318 {
                         if (Class367_Sub8.method3549((class348_sub42_sub12.anInt9608), (byte) -119)) {
                             Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480((int) (class348_sub42_sub12.aLong9605), -6008)));
                             if (class348_sub22 != null) {
-                                Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-                                Class79 class79 = (class318_sub1_sub3_sub3_sub1.aClass79_10505);
+                                Npc npc = (class348_sub22.aNpc_6859);
+                                Class79 class79 = (npc.aClass79_10505);
                                 if (class79.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
                                 if (class79 != null) is = class79.anIntArray1342;
                             }
@@ -100,9 +100,9 @@ final class Class318_Sub2 extends Class318 {
         try {
             anInt6395++;
             if (i > -101) anIntArray6393 = null;
-            if (Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566 != null && class338.aByte4181 >= i_18_) {
-                for (int i_19_ = 0; (i_19_ < Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566.length); i_19_++) {
-                    if ((Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566[i_19_] != -1000000) && (((Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566[i_19_]) >= class338.anIntArray4191[0]) || (class338.anIntArray4191[1] <= (Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566[i_19_])) || (class338.anIntArray4191[2] <= (Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566[i_19_])) || ((Class318_Sub1_Sub3_Sub3_Sub2.anIntArray10566[i_19_]) >= class338.anIntArray4191[3])) && ((class338.anIntArray4187[0] <= Class59_Sub1_Sub2.anIntArray8666[i_19_]) || (class338.anIntArray4187[1] <= Class59_Sub1_Sub2.anIntArray8666[i_19_]) || (class338.anIntArray4187[2] <= Class59_Sub1_Sub2.anIntArray8666[i_19_]) || (Class59_Sub1_Sub2.anIntArray8666[i_19_] >= class338.anIntArray4187[3])) && ((class338.anIntArray4187[0] >= Class250.anIntArray3220[i_19_]) || (Class250.anIntArray3220[i_19_] <= class338.anIntArray4187[1]) || (class338.anIntArray4187[2] >= Class250.anIntArray3220[i_19_]) || (Class250.anIntArray3220[i_19_] <= class338.anIntArray4187[3])) && ((Class299_Sub2_Sub1.anIntArray8712[i_19_] >= class338.anIntArray4184[0]) || (Class299_Sub2_Sub1.anIntArray8712[i_19_] >= class338.anIntArray4184[1]) || (class338.anIntArray4184[2] <= Class299_Sub2_Sub1.anIntArray8712[i_19_]) || (Class299_Sub2_Sub1.anIntArray8712[i_19_] >= class338.anIntArray4184[3])) && ((class338.anIntArray4184[0] >= client.anIntArray5176[i_19_]) || (class338.anIntArray4184[1] >= client.anIntArray5176[i_19_]) || (class338.anIntArray4184[2] >= client.anIntArray5176[i_19_]) || (class338.anIntArray4184[3] >= client.anIntArray5176[i_19_])))
+            if (Player.anIntArray10566 != null && class338.aByte4181 >= i_18_) {
+                for (int i_19_ = 0; (i_19_ < Player.anIntArray10566.length); i_19_++) {
+                    if ((Player.anIntArray10566[i_19_] != -1000000) && (((Player.anIntArray10566[i_19_]) >= class338.anIntArray4191[0]) || (class338.anIntArray4191[1] <= (Player.anIntArray10566[i_19_])) || (class338.anIntArray4191[2] <= (Player.anIntArray10566[i_19_])) || ((Player.anIntArray10566[i_19_]) >= class338.anIntArray4191[3])) && ((class338.anIntArray4187[0] <= Class59_Sub1_Sub2.anIntArray8666[i_19_]) || (class338.anIntArray4187[1] <= Class59_Sub1_Sub2.anIntArray8666[i_19_]) || (class338.anIntArray4187[2] <= Class59_Sub1_Sub2.anIntArray8666[i_19_]) || (Class59_Sub1_Sub2.anIntArray8666[i_19_] >= class338.anIntArray4187[3])) && ((class338.anIntArray4187[0] >= Class250.anIntArray3220[i_19_]) || (Class250.anIntArray3220[i_19_] <= class338.anIntArray4187[1]) || (class338.anIntArray4187[2] >= Class250.anIntArray3220[i_19_]) || (Class250.anIntArray3220[i_19_] <= class338.anIntArray4187[3])) && ((Class299_Sub2_Sub1.anIntArray8712[i_19_] >= class338.anIntArray4184[0]) || (Class299_Sub2_Sub1.anIntArray8712[i_19_] >= class338.anIntArray4184[1]) || (class338.anIntArray4184[2] <= Class299_Sub2_Sub1.anIntArray8712[i_19_]) || (Class299_Sub2_Sub1.anIntArray8712[i_19_] >= class338.anIntArray4184[3])) && ((class338.anIntArray4184[0] >= client.anIntArray5176[i_19_]) || (class338.anIntArray4184[1] >= client.anIntArray5176[i_19_]) || (class338.anIntArray4184[2] >= client.anIntArray5176[i_19_]) || (class338.anIntArray4184[3] >= client.anIntArray5176[i_19_])))
                         return;
                 }
             }

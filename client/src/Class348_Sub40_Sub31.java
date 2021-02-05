@@ -68,7 +68,7 @@ final class Class348_Sub40_Sub31 extends Class348_Sub40 {
     static final boolean method3131(byte i, String string) {
         if (i != 50) method3131((byte) -33, null);
         anInt9404++;
-        return Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.containsKey(string);
+        return Player.aHashtable10565.containsKey(string);
     }
 
     final int[] method3042(int i, int i_16_) {

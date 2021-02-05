@@ -115,8 +115,8 @@ final class Class130_Sub1 extends Class130 {
         Class244.anInt4618 = 0;
         Class348_Sub49.anInt7166 = 0;
         Class281.anInt3646 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10504 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10547 = 0;
+        Npc.anInt10504 = 0;
+        Player.anInt10547 = 0;
         Class239_Sub21.anInt6059 = 0;
         Class202.anInt2646 = 0;
         Class64_Sub2.anInt5480 = 0;
@@ -133,7 +133,7 @@ final class Class130_Sub1 extends Class130 {
         Class243.anInt3160 = 0;
         Class324.anInt4054 = 0;
         Class367_Sub10.anInt7389 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10496 = 0;
+        Npc.anInt10496 = 0;
         Class377.anInt9842 = 0;
         ha_Sub3.anInt7914 = 0;
         Class206.anInt4876 = 0;
@@ -185,14 +185,14 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub16_Sub2.anInt8881 = 0;
         Class318_Sub1_Sub4_Sub2.anInt10104 = 0;
         Class318_Sub1_Sub5_Sub2.anInt10170 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10518 = 0;
+        Player.anInt10518 = 0;
         Class106.anInt1632 = 0;
         ha_Sub2.anInt7632 = 0;
         Class48.anInt849 = 0;
         Class377.anInt9818 = 0;
         Class64_Sub2.anInt5409 = 0;
         Class161.anInt2140 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10559 = 0;
+        Player.anInt10559 = 0;
         Class141.anInt1969 = 0;
         Class254.anInt3260 = 0;
         Class14_Sub1.anInt8609 = 0;
@@ -301,7 +301,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub49.anInt7150 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9944 = 0;
         Class322.anInt4034 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10495 = 0;
+        Npc.anInt10495 = 0;
         Class348_Sub40_Sub8.anInt9155 = 0;
         Class60.anInt1091 = 0;
         Class170.anInt5081 = 0;
@@ -680,7 +680,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub43.anInt7078 = 0;
         Class296.anInt3771 = 0;
         Class258.anInt4853 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10513 = 0;
+        Npc.anInt10513 = 0;
         Class355.anInt4371 = 0;
         Class238_Sub1.anInt5828 = 0;
         ha_Sub3.anInt7945 = 0;
@@ -707,7 +707,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub38.anInt9469 = 0;
         Class178.anInt2340 = 0;
         ha_Sub3.anInt8057 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10530 = 0;
+        Player.anInt10530 = 0;
         Class348_Sub5_Sub1.anInt8834 = 0;
         Class70.anInt1205 = 0;
         Class14_Sub1.anInt8613 = 0;
@@ -952,7 +952,7 @@ final class Class130_Sub1 extends Class130 {
         Class5_Sub3.anInt8372 = 0;
         Class373_Sub2.anInt7428 = 0;
         Class239_Sub22.anInt6071 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10523 = 0;
+        Player.anInt10523 = 0;
         Class324.anInt4064 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10077 = 0;
         Class369_Sub1.anInt8581 = 0;
@@ -1274,7 +1274,7 @@ final class Class130_Sub1 extends Class130 {
         Class179.anInt2369 = 0;
         Class286_Sub8.anInt6297 = 0;
         Class128.anInt1870 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10527 = 0;
+        Player.anInt10527 = 0;
         Class69.anInt1193 = 0;
         Class239_Sub27.anInt6130 = 0;
         Class101_Sub3.anInt5777 = 0;
@@ -1335,7 +1335,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub15.anInt6001 = 0;
         Class45.anInt652 = 0;
         Class339.anInt4199 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10534 = 0;
+        Player.anInt10534 = 0;
         Class52.anInt4897 = 0;
         Class5_Sub2.anInt8355 = 0;
         Class49.anInt4721 = 0;
@@ -1415,7 +1415,7 @@ final class Class130_Sub1 extends Class130 {
         Class234.anInt3048 = 0;
         Class278.anInt3580 = 0;
         Class352.anInt4330 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10506 = 0;
+        Npc.anInt10506 = 0;
         Class367_Sub2.anInt7291 = 0;
         Class318_Sub1_Sub2_Sub1.anInt10183 = 0;
         Class318_Sub1_Sub3.anInt8746 = 0;
@@ -1706,14 +1706,14 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub24.anInt6873 = 0;
         Class338.anInt4189 = 0;
         Class101_Sub3.anInt5755 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10501 = 0;
+        Npc.anInt10501 = 0;
         Class2.anInt120 = 0;
         Class46.anInt722 = 0;
         Class377.anInt9890 = 0;
         Class348_Sub16_Sub3.anInt8905 = 0;
         Class286_Sub7.anInt6291 = 0;
         Class324.anInt4059 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10533 = 0;
+        Player.anInt10533 = 0;
         Class348_Sub40_Sub8.anInt9161 = 0;
         Class239_Sub17.anInt6026 = 0;
         Class18.anInt277 = 0;
@@ -1739,7 +1739,7 @@ final class Class130_Sub1 extends Class130 {
         Class290.anInt3707 = 0;
         Class255.anInt3274 = 0;
         Class14_Sub4.anInt8650 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10508 = 0;
+        Npc.anInt10508 = 0;
         Class372.anInt4529 = 0;
         Class45.anInt637 = 0;
         Class36.anInt488 = 0;
@@ -1786,7 +1786,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7518 = 0;
         Class239_Sub7.anInt5905 = 0;
         Class286_Sub3.anInt6226 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10562 = 0;
+        Player.anInt10562 = 0;
         ha.anInt4576 = 0;
         Class348_Sub15.anInt6771 = 0;
         ha_Sub2.anInt7576 = 0;
@@ -1906,7 +1906,7 @@ final class Class130_Sub1 extends Class130 {
         Class290.anInt3716 = 0;
         Class221.anInt2882 = 0;
         Class241.anInt3148 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10502 = 0;
+        Npc.anInt10502 = 0;
         Class348_Sub46.anInt7109 = 0;
         Class284.anInt3665 = 0;
         Class143.anInt1984 = 0;
@@ -2034,7 +2034,7 @@ final class Class130_Sub1 extends Class130 {
         Class367_Sub2.anInt7286 = 0;
         Class231.anInt2994 = 0;
         Class189.anInt2532 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10514 = 0;
+        Npc.anInt10514 = 0;
         Class296.anInt3765 = 0;
         Class348_Sub40.anInt7029 = 0;
         Class14_Sub4.anInt8635 = 0;
@@ -2100,7 +2100,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub51.anInt7233 = 0;
         Class348_Sub16_Sub3.anInt8893 = 0;
         Class50_Sub1.anInt5216 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10541 = 0;
+        Player.anInt10541 = 0;
         Class166.anInt2179 = 0;
         Class348_Sub23_Sub4.anInt9052 = 0;
         ha_Sub2.anInt7637 = 0;
@@ -2155,7 +2155,7 @@ final class Class130_Sub1 extends Class130 {
         Class222.anInt2888 = 0;
         Class348_Sub42_Sub12.anInt9594 = 0;
         Class239_Sub29.anInt6146 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10510 = 0;
+        Npc.anInt10510 = 0;
         Class346_Sub1.anInt6529 = 0;
         Class348_Sub40_Sub30.anInt9397 = 0;
         Class101_Sub3.anInt5757 = 0;
@@ -2237,7 +2237,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7995 = 0;
         Class18.anInt272 = 0;
         Class30.anInt411 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10555 = 0;
+        Player.anInt10555 = 0;
         Class377.anInt9884 = 0;
         Class110.anInt1707 = 0;
         Class239_Sub22.anInt6070 = 0;
@@ -2357,7 +2357,7 @@ final class Class130_Sub1 extends Class130 {
         Class25.anInt372 = 0;
         Class218.anInt2852 = 0;
         Class55.anInt992 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10509 = 0;
+        Npc.anInt10509 = 0;
         ha_Sub3.anInt7913 = 0;
         Class143.anInt1990 = 0;
         Class64_Sub3.anInt5633 = 0;
@@ -2475,7 +2475,7 @@ final class Class130_Sub1 extends Class130 {
         Class50_Sub2.anInt5235 = 0;
         Class64_Sub3.anInt5636 = 0;
         Class348_Sub42_Sub3.anInt9507 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10545 = 0;
+        Player.anInt10545 = 0;
         Class348_Sub1.anInt6563 = 0;
         Class348_Sub16_Sub3.anInt8903 = 0;
         Class361.anInt4434 = 0;
@@ -2497,7 +2497,7 @@ final class Class130_Sub1 extends Class130 {
         Class195.anInt5005 = 0;
         Class237.anInt3115 = 0;
         Class361.anInt4432 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10563 = 0;
+        Player.anInt10563 = 0;
         Class348_Sub16_Sub3.anInt8908 = 0;
         Class14_Sub4.anInt8646 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10216 = 0;
@@ -2561,7 +2561,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7622 = 0;
         Class373_Sub2.anInt7436 = 0;
         Class213.anInt2782 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10500 = 0;
+        Npc.anInt10500 = 0;
         Class239_Sub14.anInt5984 = 0;
         Class348_Sub42_Sub8_Sub2.anInt10438 = 0;
         Class318_Sub1_Sub5_Sub1.anInt10139 = 0;
@@ -2659,7 +2659,7 @@ final class Class130_Sub1 extends Class130 {
         Class18.anInt274 = 0;
         s_Sub2.anInt8255 = 0;
         Class348_Sub40_Sub19.anInt9253 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10494 = 0;
+        Npc.anInt10494 = 0;
         ha_Sub2.anInt7590 = 0;
         Class377.anInt9823 = 0;
         Class101_Sub1.anInt5674 = 0;
@@ -2675,10 +2675,10 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3_Sub3.anInt10313 = 0;
         Class108.anInt1658 = 0;
         ha_Sub2.anInt7514 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10529 = 0;
+        Player.anInt10529 = 0;
         Class318_Sub1_Sub3_Sub5.anInt10374 = 0;
         Class117.anInt1765 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10532 = 0;
+        Player.anInt10532 = 0;
         Class47.anInt844 = 0;
         Class117.anInt1777 = 0;
         Class122.anInt1809 = 0;
@@ -2721,7 +2721,7 @@ final class Class130_Sub1 extends Class130 {
         Class291.anInt3731 = 0;
         Class158.anInt4933 = 0;
         Class286_Sub9.anInt6314 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10511 = 0;
+        Npc.anInt10511 = 0;
         Class5_Sub3.anInt8369 = 0;
         Class318_Sub1_Sub5.anInt8778 = 0;
         Class350.anInt4318 = 0;
@@ -2731,7 +2731,7 @@ final class Class130_Sub1 extends Class130 {
         Class231.anInt2997 = 0;
         Class229.anInt2980 = 0;
         Class14.anInt5094 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10528 = 0;
+        Player.anInt10528 = 0;
         Class64_Sub2.anInt5466 = 0;
         ha_Sub3.anInt8008 = 0;
         Class372.anInt4527 = 0;
@@ -2741,7 +2741,7 @@ final class Class130_Sub1 extends Class130 {
         Class179.anInt2356 = 0;
         Class348_Sub49_Sub1.anInt9742 = 0;
         Class239_Sub23.anInt6081 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10546 = 0;
+        Player.anInt10546 = 0;
         Class101_Sub1.anInt5668 = 0;
         Class367.anInt4482 = 0;
         Class76.anInt1278 = 0;
@@ -2753,7 +2753,7 @@ final class Class130_Sub1 extends Class130 {
         Class16.anInt230 = 0;
         Class59_Sub2.anInt5301 = 0;
         Class318_Sub1_Sub2.anInt8735 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10525 = 0;
+        Player.anInt10525 = 0;
         Class151.anInt2066 = 0;
         Class14_Sub3.anInt8627 = 0;
         Class377.anInt9886 = 0;
@@ -2845,7 +2845,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub3.anInt5535 = 0;
         Class156.anInt2116 = 0;
         Class9.anInt170 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10515 = 0;
+        Npc.anInt10515 = 0;
         Class314_Sub1.anInt6356 = 0;
         Class24.anInt356 = 0;
         ha_Sub2.anInt7646 = 0;
@@ -2941,7 +2941,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub23_Sub3.anInt9045 = 0;
         Class119_Sub2.anInt4830 = 0;
         Class305.anInt3864 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10548 = 0;
+        Player.anInt10548 = 0;
         Class239_Sub24.anInt6088 = 0;
         Class278.anInt3579 = 0;
         Class348_Sub49.anInt7195 = 0;
@@ -3040,7 +3040,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3_Sub3.anInt10205 = 0;
         Class239_Sub24.anInt6085 = 0;
         Class356.anInt4375 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10498 = 0;
+        Npc.anInt10498 = 0;
         Class239_Sub10.anInt5944 = 0;
         Class255.anInt3272 = 0;
         anInt5802 = 0;
@@ -3073,7 +3073,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7936 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10041 = 0;
         Class239_Sub9.anInt5931 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10507 = 0;
+        Npc.anInt10507 = 0;
         Class318_Sub1_Sub1_Sub2.anInt10001 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9958 = 0;
         ha_Sub3.anInt8023 = 0;
@@ -3216,7 +3216,7 @@ final class Class130_Sub1 extends Class130 {
         s_Sub2.anInt8248 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10088 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10214 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10543 = 0;
+        Player.anInt10543 = 0;
         Class285.anInt4740 = 0;
         Class269.anInt3461 = 0;
         Class348_Sub49.anInt7158 = 0;
@@ -3304,7 +3304,7 @@ final class Class130_Sub1 extends Class130 {
         Class377.anInt9853 = 0;
         Class184.anInt2472 = 0;
         Class348_Sub16_Sub2.anInt8873 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10493 = 0;
+        Npc.anInt10493 = 0;
         ha_Sub3.anInt8017 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10297 = 0;
         Class50_Sub2.anInt5234 = 0;
@@ -3458,7 +3458,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub4.anInt8760 = 0;
         Class64_Sub2.anInt5465 = 0;
         Class355.anInt4363 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub1.anInt10497 = 0;
+        Npc.anInt10497 = 0;
         Class348_Sub33.anInt6956 = 0;
         Class319.anInt3987 = 0;
         ha_Sub3.anInt7981 = 0;
@@ -3962,7 +3962,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub4_Sub2.anInt10099 = 0;
         ha_Sub2.anInt7651 = 0;
         Class101_Sub1.anInt5683 = 0;
-        Class318_Sub1_Sub3_Sub3_Sub2.anInt10550 = 0;
+        Player.anInt10550 = 0;
         Class101_Sub3.anInt5748 = 0;
         Class61.anInt1107 = 0;
         Class318_Sub1_Sub4_Sub2.anInt10112 = 0;
@@ -4110,7 +4110,7 @@ final class Class130_Sub1 extends Class130 {
         Class20.anInt319 = (int) (Math.random() * 100D) - 50;
         Class348_Sub40_Sub16.method3089(-126);
         for (int k = 0; k < 2048; k++)
-            Class294.aClass318_Sub1_Sub3_Sub3_Sub2Array5058[k] = null;
+            Class294.aPlayerArray5058[k] = null;
 
         Class150.anInt2057 = 0;
         Class348_Sub32.anInt6930 = 0;

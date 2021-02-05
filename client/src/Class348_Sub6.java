@@ -27,7 +27,7 @@ final class Class348_Sub6 extends Class348 {
     static final boolean method2769(Class var_class, byte i, String string) {
         try {
             anInt6639++;
-            Class var_class_0_ = ((Class) Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.get(string));
+            Class var_class_0_ = ((Class) Player.aHashtable10565.get(string));
             if (var_class_0_ != null) {
                 return var_class_0_.getClassLoader() == var_class.getClassLoader();
             }
@@ -41,14 +41,14 @@ final class Class348_Sub6 extends Class348 {
                     method_3_.setAccessible(true);
                     method_3_.invoke(Runtime.getRuntime(), var_class, file.getPath());
                     method_3_.setAccessible(false);
-                    Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.put(string, var_class);
+                    Player.aHashtable10565.put(string, var_class);
                     return true;
                 } catch (NoSuchMethodException nosuchmethodexception) {
                     if (Loader.trace) {
                         nosuchmethodexception.printStackTrace();
                     }
                     System.load(file.getPath());
-                    Class318_Sub1_Sub3_Sub3_Sub2.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = Class90.class)));
+                    Player.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = Class90.class)));
                     return true;
                 } catch (Throwable throwable) {
                     if (Loader.trace) {

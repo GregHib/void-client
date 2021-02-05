@@ -96,7 +96,7 @@ final class Class22 {
         if (Class5_Sub1_Sub1.aClass262_9931.method1998(i) != 0) {
             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 0) {
                 for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1995(4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1990((byte) 31)) {
-                    Exception_Sub1.aClass255_112.method1932(var_ha, class348_sub7.anInt6647, class348_sub7.anInt6648, Class240.aClass324_4684, (!class348_sub7.aBoolean6650 ? null : (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aClass154_10536)), class348_sub7.anInt6642, false, (byte) 83, var_ha, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
+                    Exception_Sub1.aClass255_112.method1932(var_ha, class348_sub7.anInt6647, class348_sub7.anInt6648, Class240.aClass324_4684, (!class348_sub7.aBoolean6650 ? null : (Class132.aPlayer_1907.aClass154_10536)), class348_sub7.anInt6642, false, (byte) 83, var_ha, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
                     class348_sub7.method2715((byte) 29);
                 }
                 Class354.method3466(i + -113);
@@ -108,7 +108,7 @@ final class Class22 {
                     Class348_Sub40_Sub9.aClass324_9173 = (Class348_Sub34.aHa6968.method3686(Class239_Sub23.method1819(Class56.anInt1044, 0, -44, Class104.aClass45_1627), Class207.method1519(Class21.aClass45_322, Class56.anInt1044, 0), true));
                 }
                 for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1995(i + 4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1990((byte) 118)) {
-                    Exception_Sub1.aClass255_112.method1932(Class348_Sub34.aHa6968, class348_sub7.anInt6647, class348_sub7.anInt6648, Class348_Sub40_Sub9.aClass324_9173, (class348_sub7.aBoolean6650 ? (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aClass154_10536) : null), class348_sub7.anInt6642, false, (byte) 83, var_ha, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
+                    Exception_Sub1.aClass255_112.method1932(Class348_Sub34.aHa6968, class348_sub7.anInt6647, class348_sub7.anInt6648, Class348_Sub40_Sub9.aClass324_9173, (class348_sub7.aBoolean6650 ? (Class132.aPlayer_1907.aClass154_10536) : null), class348_sub7.anInt6642, false, (byte) 83, var_ha, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
                     class348_sub7.method2715((byte) 21);
                 }
             }

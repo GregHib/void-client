@@ -57,16 +57,16 @@ final class Class315 {
         anInt3949++;
     }
 
-    static final int method2357(int i, Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2) {
+    static final int method2357(int i, Player player) {
         anInt3951++;
-        int i_4_ = (class318_sub1_sub3_sub3_sub2.anInt10560);
-        Class225 class225 = class318_sub1_sub3_sub3_sub2.method2422((byte) 72);
-        if (i != (class318_sub1_sub3_sub3_sub2.anInt10268) && !(class318_sub1_sub3_sub3_sub2.aBoolean10213)) {
-            if ((class318_sub1_sub3_sub3_sub2.anInt10268) != class225.anInt2919 && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2920) && (class225.anInt2949 != (class318_sub1_sub3_sub3_sub2.anInt10268)) && (class318_sub1_sub3_sub3_sub2.anInt10268 != class225.anInt2914)) {
-                if ((class225.anInt2940 == (class318_sub1_sub3_sub3_sub2.anInt10268)) || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2924) || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2947) || (class318_sub1_sub3_sub3_sub2.anInt10268 == class225.anInt2958))
-                    i_4_ = class318_sub1_sub3_sub3_sub2.anInt10526;
-            } else i_4_ = class318_sub1_sub3_sub3_sub2.anInt10519;
-        } else i_4_ = class318_sub1_sub3_sub3_sub2.anInt10535;
+        int i_4_ = (player.anInt10560);
+        Class225 class225 = player.method2422((byte) 72);
+        if (i != (player.anInt10268) && !(player.aBoolean10213)) {
+            if ((player.anInt10268) != class225.anInt2919 && (player.anInt10268 != class225.anInt2920) && (class225.anInt2949 != (player.anInt10268)) && (player.anInt10268 != class225.anInt2914)) {
+                if ((class225.anInt2940 == (player.anInt10268)) || (player.anInt10268 == class225.anInt2924) || (player.anInt10268 == class225.anInt2947) || (player.anInt10268 == class225.anInt2958))
+                    i_4_ = player.anInt10526;
+            } else i_4_ = player.anInt10519;
+        } else i_4_ = player.anInt10535;
         return i_4_;
     }
 
