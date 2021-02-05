@@ -117,4 +117,8 @@ public class Loader extends Applet {
         }
         return url;
     }
+
+    public static String getDebug(int id, boolean last, int x, int y, int plane) {
+        return debug && last ? " <col=00ff00>(</col>" + id + " - " + x + ", " + y + ", " + plane + "<col=00ff00>)</col>" : "";
+    }
 }
