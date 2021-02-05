@@ -1061,7 +1061,7 @@ final class Class66 {
                 int i_125_ = anIntArray1149[anInt1173 + 1];
                 int i_126_ = anIntArray1149[anInt1173 + 2];
                 int i_127_ = anIntArray1149[anInt1173 + 3];
-                Class239_Sub28.method1844(i_126_, ((i_124_ >> 14 & 0x3fff) - za_Sub2.anInt9780), false, i_125_ << 2, false, i_127_, ((i_124_ & 0x3fff) - Class90.anInt1517));
+                Class239_Sub28.method1844(i_126_, ((i_124_ >> 14 & 0x3fff) - za_Sub2.regionTileX), false, i_125_ << 2, false, i_127_, ((i_124_ & 0x3fff) - Class90.regionTileY));
                 return;
             }
             if (i == 5501) {
@@ -1070,7 +1070,7 @@ final class Class66 {
                 int i_129_ = anIntArray1149[anInt1173 + 1];
                 int i_130_ = anIntArray1149[anInt1173 + 2];
                 int i_131_ = anIntArray1149[anInt1173 + 3];
-                Class348_Sub42_Sub12.method3231(((i_128_ & 0x3fff) - Class90.anInt1517), ((i_128_ >> 14 & 0x3fff) - za_Sub2.anInt9780), i_129_ << 2, i_131_, i_130_, -128);
+                Class348_Sub42_Sub12.method3231(((i_128_ & 0x3fff) - Class90.regionTileY), ((i_128_ >> 14 & 0x3fff) - za_Sub2.regionTileX), i_129_ << 2, i_131_, i_130_, -128);
                 return;
             }
             if (i == 5502) {
@@ -1131,10 +1131,10 @@ final class Class66 {
                 int i_136_ = anIntArray1149[--anInt1173];
                 int i_137_ = i_136_ >> 14 & 0x3fff;
                 int i_138_ = i_136_ & 0x3fff;
-                i_137_ -= za_Sub2.anInt9780;
+                i_137_ -= za_Sub2.regionTileX;
                 if (i_137_ < 0) i_137_ = 0;
                 else if (i_137_ >= Class367_Sub4.anInt7319) i_137_ = Class367_Sub4.anInt7319;
-                i_138_ -= Class90.anInt1517;
+                i_138_ -= Class90.regionTileY;
                 if (i_138_ < 0) i_138_ = 0;
                 else if (i_138_ >= Class348_Sub40_Sub3.anInt9109) i_138_ = Class348_Sub40_Sub3.anInt9109;
                 Class348_Sub6.anInt6633 = (i_137_ << 9) + 256;
@@ -1160,10 +1160,10 @@ final class Class66 {
                 if (i_139_ == -1) {
                     int i_140_ = i_139_ >> 14 & 0x3fff;
                     int i_141_ = i_139_ & 0x3fff;
-                    i_140_ -= za_Sub2.anInt9780;
+                    i_140_ -= za_Sub2.regionTileX;
                     if (i_140_ < 0) i_140_ = 0;
                     else if (i_140_ >= Class367_Sub4.anInt7319) i_140_ = Class367_Sub4.anInt7319;
-                    i_141_ -= Class90.anInt1517;
+                    i_141_ -= Class90.regionTileY;
                     if (i_141_ < 0) i_141_ = 0;
                     else if (i_141_ >= Class348_Sub40_Sub3.anInt9109) i_141_ = Class348_Sub40_Sub3.anInt9109;
                     Class9.anInt167 = (i_140_ << 9) + 256;
@@ -3827,9 +3827,9 @@ final class Class66 {
                     return;
                 }
                 if (i == 3308) {
-                    int i_327_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381);
-                    int i_328_ = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) >> 9) + za_Sub2.anInt9780);
-                    int i_329_ = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) >> 9) + Class90.anInt1517);
+                    int i_327_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane);
+                    int i_328_ = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x) >> 9) + za_Sub2.regionTileX);
+                    int i_329_ = (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y) >> 9) + Class90.regionTileY);
                     anIntArray1149[anInt1173++] = (i_327_ << 28) + (i_328_ << 14) + i_329_;
                     return;
                 }

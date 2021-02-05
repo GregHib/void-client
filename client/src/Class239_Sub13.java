@@ -30,10 +30,10 @@ final class Class239_Sub13 extends Class239 {
         if (i == -3) {
             if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub1) {
                 Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3;
-                if (class318_sub1_sub3_sub3_sub1.aClass79_10505 != null) Class286_Sub3.method2150(((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) != (class318_sub1_sub3_sub3_sub1.aByte6381)), false, class318_sub1_sub3_sub3_sub1);
+                if (class318_sub1_sub3_sub3_sub1.aClass79_10505 != null) Class286_Sub3.method2150(((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) != (class318_sub1_sub3_sub3_sub1.plane)), false, class318_sub1_sub3_sub3_sub1);
             } else if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub2) {
                 Class318_Sub1_Sub3_Sub3_Sub2 class318_sub1_sub3_sub3_sub2 = ((Class318_Sub1_Sub3_Sub3_Sub2) class318_sub1_sub3_sub3);
-                Class348_Sub43.method3298((byte) 105, ((class318_sub1_sub3_sub3_sub2.aByte6381) != (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381)), class318_sub1_sub3_sub3_sub2);
+                Class348_Sub43.method3298((byte) 105, ((class318_sub1_sub3_sub3_sub2.plane) != (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane)), class318_sub1_sub3_sub3_sub2);
             }
             anInt5981++;
         }

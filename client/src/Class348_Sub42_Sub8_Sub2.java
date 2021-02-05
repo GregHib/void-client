@@ -491,8 +491,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 }
             } else {
                 int i_60_ = (i_40_ & 0x33705717) >> 28;
-                int i_61_ = -za_Sub2.anInt9780 + ((0xffff4fe & i_40_) >> 14);
-                int i_62_ = -Class90.anInt1517 + (0x3fff & i_40_);
+                int i_61_ = -za_Sub2.regionTileX + ((0xffff4fe & i_40_) >> 14);
+                int i_62_ = -Class90.regionTileY + (0x3fff & i_40_);
                 if (i_61_ >= 0 && i_62_ >= 0 && Class367_Sub4.anInt7319 > i_61_ && Class348_Sub40_Sub3.anInt9109 > i_62_) {
                     int i_63_ = 256 + 512 * i_61_;
                     int i_64_ = 512 * i_62_ + 256;
@@ -622,8 +622,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     }
                     class302.anInt3840 = 2;
                     class302.anInt3838 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
-                    class302.anInt3835 += (Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) + -za_Sub2.anInt9780 << 9);
-                    class302.anInt3832 += (Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) - Class90.anInt1517 << 9);
+                    class302.anInt3835 += (Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) + -za_Sub2.regionTileX << 9);
+                    class302.anInt3832 += (Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) - Class90.regionTileY << 9);
                     class302.anInt3839 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) << 2;
                     class302.anInt3837 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
                 }
@@ -980,9 +980,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
             } else {
                 int i_122_ = 0x3fff & i >> 14;
-                i_122_ -= za_Sub2.anInt9780;
+                i_122_ -= za_Sub2.regionTileX;
                 int i_123_ = 0x3fff & i;
-                i_123_ -= Class90.anInt1517;
+                i_123_ -= Class90.regionTileY;
                 if (i_122_ >= 0) {
                     if (Class367_Sub4.anInt7319 <= i_122_) i_122_ = Class367_Sub4.anInt7319;
                 } else i_122_ = 0;
@@ -1018,8 +1018,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i_130_ = (0x36079814 & i_129_) >> 28;
             int i_131_ = i_129_ >> 14 & 0x3fff;
             int i_132_ = 0x3fff & i_129_;
-            i_131_ -= za_Sub2.anInt9780;
-            i_132_ -= Class90.anInt1517;
+            i_131_ -= za_Sub2.regionTileX;
+            i_132_ -= Class90.regionTileY;
             ha_Sub3.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_);
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1407,9 +1407,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             for (Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aClass356_1895.method3484(0); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
                 int i = (int) ((class348_sub37.aLong4291 >> 28) & 0x3L);
                 int i_188_ = (int) (class348_sub37.aLong4291 & 0x3fffL);
-                int i_189_ = i_188_ + -za_Sub2.anInt9780;
+                int i_189_ = i_188_ + -za_Sub2.regionTileX;
                 int i_190_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
-                int i_191_ = -Class90.anInt1517 + i_190_;
+                int i_191_ = -Class90.regionTileY + i_190_;
                 if (i == Class348_Sub40_Sub12.anInt9200 && Class278.anInt3581 <= i_189_ && 8 + Class278.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
                     class348_sub37.method2715((byte) 89);
                     if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < Class348_Sub40_Sub3.anInt9109)) Class203.method1479(i_191_, (byte) -118, i_189_, Class348_Sub40_Sub12.anInt9200);

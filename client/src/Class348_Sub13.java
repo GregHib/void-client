@@ -13,7 +13,7 @@ final class Class348_Sub13 extends Class348 {
     static final void method2801(int i, int i_0_, int i_1_, int i_2_, int i_3_, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3, byte i_4_) {
         int i_5_ = 1 / ((i_4_ - 6) / 48);
         anInt6754++;
-        aa_Sub2.method165(class318_sub1_sub3_sub3.aByte6381, i_2_, i, i_3_, class318_sub1_sub3_sub3.anInt6377, 0, class318_sub1_sub3_sub3.anInt6388, (byte) 110, i_0_, i_1_);
+        aa_Sub2.method165(class318_sub1_sub3_sub3.plane, i_2_, i, i_3_, class318_sub1_sub3_sub3.x, 0, class318_sub1_sub3_sub3.y, (byte) 110, i_0_, i_1_);
     }
 
     private final long method2802(int[] is, int i, boolean bool, int[] is_6_, byte i_7_) {

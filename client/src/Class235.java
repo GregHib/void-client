@@ -144,7 +144,7 @@ final class Class235 {
             return null;
         }
         if (bool_3_) {
-            Class169.method1301(aR3071, aByte3067, (aClass318_Sub1_3051.anInt6377), (aClass318_Sub1_3051.anInt6388), aBooleanArray3072);
+            Class169.method1301(aR3071, aByte3067, (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072);
             anInt3056 = -1;
             anInt3073 = -1;
         }
@@ -157,7 +157,7 @@ final class Class235 {
         if (aClass17_3057 == null) {
             if (aClass64_3059 == null || i_4_ != (i_4_ & aClass64_3059.ua()) || (anInt3053 != class51.anInt941)) {
                 if (aClass64_3059 != null) i_4_ |= aClass64_3059.ua();
-                Class2 class2 = (class51.method476(var_ha, var_s_5_, (this.anInt3079 != 11 ? this.anInt3079 : 10), i_4_, aClass318_Sub1_3051.anInt6377, bool_3_, var_s, var_s.method3986((aClass318_Sub1_3051.anInt6377), (aClass318_Sub1_3051.anInt6388), (byte) -114), aClass318_Sub1_3051.anInt6388, (this.anInt3079 == 11 ? 4 + this.anInt3052 : this.anInt3052), 128));
+                Class2 class2 = (class51.method476(var_ha, var_s_5_, (this.anInt3079 != 11 ? this.anInt3079 : 10), i_4_, aClass318_Sub1_3051.x, bool_3_, var_s, var_s.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -114), aClass318_Sub1_3051.y, (this.anInt3079 == 11 ? 4 + this.anInt3052 : this.anInt3052), 128));
                 if (class2 == null) {
                     anInt3055 = 0;
                     aBooleanArray3072 = null;
@@ -169,7 +169,7 @@ final class Class235 {
                     if (bool_3_) {
                         aBooleanArray3072 = null;
                         aR3071 = class2.aR118;
-                        Class130.method1130(aR3071, aByte3067, aClass318_Sub1_3051.anInt6377, aClass318_Sub1_3051.anInt6388, null);
+                        Class130.method1130(aR3071, aByte3067, aClass318_Sub1_3051.x, aClass318_Sub1_3051.y, null);
                         anInt3073 = -1;
                         anInt3056 = class51.anInt941;
                     }
@@ -179,7 +179,7 @@ final class Class235 {
             } else class64 = aClass64_3059;
         } else {
             if (bool_3_) i_4_ |= 0x40000;
-            class64 = (class51.method483(anInt3083, anInt3054, (this.anInt3079 == 11 ? 10 : this.anInt3079), var_s.method3986((aClass318_Sub1_3051.anInt6377), (aClass318_Sub1_3051.anInt6388), (byte) -2), var_ha, (this.anInt3079 == 11 ? this.anInt3052 + 4 : this.anInt3052), i_4_, (byte) 76, var_s_5_, aClass318_Sub1_3051.anInt6388, anInt3084, aClass318_Sub1_3051.anInt6377, aClass17_3057, var_s));
+            class64 = (class51.method483(anInt3083, anInt3054, (this.anInt3079 == 11 ? 10 : this.anInt3079), var_s.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -2), var_ha, (this.anInt3079 == 11 ? this.anInt3052 + 4 : this.anInt3052), i_4_, (byte) 76, var_s_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s));
             if (class64 == null) {
                 anInt3055 = 0;
                 aBooleanArray3072 = null;
@@ -189,7 +189,7 @@ final class Class235 {
                 if (bool_3_) {
                     if (aBooleanArray3072 == null) aBooleanArray3072 = new boolean[4];
                     aR3071 = class64.ba(aR3071);
-                    Class130.method1130(aR3071, aByte3067, (aClass318_Sub1_3051.anInt6377), (aClass318_Sub1_3051.anInt6388), aBooleanArray3072);
+                    Class130.method1130(aR3071, aByte3067, (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072);
                     anInt3073 = anInt3084;
                     anInt3056 = class51.anInt941;
                 }
@@ -327,7 +327,7 @@ final class Class235 {
     final void method1674(int i, ha var_ha) {
         if (i != -1) aBoolean3064 = false;
         if (aR3071 != null) {
-            Class169.method1301(aR3071, aByte3067, (aClass318_Sub1_3051.anInt6377), (aClass318_Sub1_3051.anInt6388), aBooleanArray3072);
+            Class169.method1301(aR3071, aByte3067, (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072);
             aR3071 = null;
             aBooleanArray3072 = null;
         }

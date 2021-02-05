@@ -24,9 +24,9 @@ abstract class Class101 {
     static final void method893(byte i) {
         Class348_Sub40_Sub22.method3111(91, Class316.aClass348_Sub51_3959.aClass239_Sub6_7226.method1743(-32350));
         anInt1595++;
-        int i_4_ = ((Class286_Sub4.anInt6246 >> 12) - -(za_Sub2.anInt9780 >> 3));
-        int i_5_ = ((Class90.anInt1517 >> 3) + (Class59_Sub2_Sub2.anInt8685 >> 12));
-        Class355.anInt4372 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381 = (byte) 0;
+        int i_4_ = ((Class286_Sub4.anInt6246 >> 12) - -(za_Sub2.regionTileX >> 3));
+        int i_5_ = ((Class90.regionTileY >> 3) + (Class59_Sub2_Sub2.anInt8685 >> 12));
+        Class355.anInt4372 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane = (byte) 0;
         Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2449(8, 8, (byte) 118);
         if (i != -49) anInt1597 = 115;
         int i_6_ = 18;

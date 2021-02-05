@@ -4,18 +4,18 @@
 
 abstract class Class318_Sub1 extends Class318 {
     byte aByte6376;
-    int anInt6377;
+    int x;
     static int anInt6378;
     Class318_Sub1 aClass318_Sub1_6379;
     int anInt6380;
-    byte aByte6381;
+    byte plane;
     int anInt6382;
     static Class114 aClass114_6383 = new Class114(11, 6);
     static int anInt6384;
     static int anInt6385;
     int anInt6386;
     boolean aBoolean6387;
-    int anInt6388;
+    int y;
     int anInt6389;
     static int anInt6390;
     boolean aBoolean6391 = false;
@@ -163,7 +163,7 @@ abstract class Class318_Sub1 extends Class318 {
     final int method2390(Class348_Sub1[] class348_sub1s, int i, int i_30_, int i_31_) {
         anInt6384++;
         if (i_30_ != -2) this.aByte6376 = (byte) 33;
-        long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.aByte6381][i][i_31_]);
+        long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.plane][i][i_31_]);
         long l_32_ = 0L;
         int i_33_ = 0;
         for (/**/; l_32_ <= 48; l_32_ += 16L) {

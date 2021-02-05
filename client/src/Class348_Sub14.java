@@ -60,9 +60,9 @@ final class Class348_Sub14 extends Class348 {
             class348_sub47 = Class286_Sub3.method2148(Class301.aClass351_3825, Class348_Sub23_Sub2.aClass77_9029, -93);
             Class177.anInt4665++;
         }
-        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i + Class90.anInt1517, (byte) 3);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i + Class90.regionTileY, (byte) 3);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 78, !Class182.aClass346_2449.method2696(82, -124) ? 0 : 1);
-        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-124, za_Sub2.anInt9780 + i_2_);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-124, za_Sub2.regionTileX + i_2_);
         Class248.anInt3203 = i_2_;
         if (i_3_ >= -88) aClass351_6764 = null;
         Class97.anInt1548 = i;
@@ -221,9 +221,9 @@ final class Class348_Sub14 extends Class348 {
                     Class348_Sub23_Sub2.aClass153_9031.method1220((byte) 116, 64, 1024);
                     for (int i_51_ = 0; i_51_ < r_Sub2.aClass252_10488.anInt3241; i_51_++) {
                         int i_52_ = (r_Sub2.aClass252_10488.anIntArray3238[i_51_]);
-                        if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) == i_52_ >> 28) {
-                            int i_53_ = ((i_52_ >> 14 & 0x3fff) - za_Sub2.anInt9780);
-                            int i_54_ = (i_52_ & 0x3fff) + -Class90.anInt1517;
+                        if ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) == i_52_ >> 28) {
+                            int i_53_ = ((i_52_ >> 14 & 0x3fff) - za_Sub2.regionTileX);
+                            int i_54_ = (i_52_ & 0x3fff) + -Class90.regionTileY;
                             if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);
                             else {
                                 Class42 class42 = (Class348_Sub23_Sub2.aClass153_9031.method1225((r_Sub2.aClass252_10488.anIntArray3239[i_51_]), (byte) 120));

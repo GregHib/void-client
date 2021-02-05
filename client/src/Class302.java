@@ -52,7 +52,7 @@ final class Class302 {
             Class33.method338(0, i_4_);
             if (i == -43) {
                 int i_5_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.method2436((byte) 103) << 8);
-                Class335.method2655(98, Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381, Class348_Sub51.anInt7267, i_5_ + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388), (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377 - -i_5_));
+                Class335.method2655(98, Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane, Class348_Sub51.anInt7267, i_5_ + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y), (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x - -i_5_));
                 Class348_Sub51.anInt7267 = 0;
             }
         } catch (RuntimeException runtimeexception) {

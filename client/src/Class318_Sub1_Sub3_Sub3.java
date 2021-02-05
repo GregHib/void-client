@@ -152,11 +152,11 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
     final void method2409(byte i) {
         anInt10307++;
         int i_2_ = 240 + (-1 + anInt10280 << 8);
-        this.aShort8747 = (short) (i_2_ + this.anInt6388 >> 9);
-        this.aShort8750 = (short) (-i_2_ + this.anInt6388 >> 9);
-        this.aShort8751 = (short) (i_2_ + this.anInt6377 >> 9);
+        this.aShort8747 = (short) (i_2_ + this.y >> 9);
+        this.aShort8750 = (short) (-i_2_ + this.y >> 9);
+        this.aShort8751 = (short) (i_2_ + this.x >> 9);
         if (i >= -109) aShortArrayArray10258 = null;
-        this.aShort8743 = (short) (this.anInt6377 + -i_2_ >> 9);
+        this.aShort8743 = (short) (this.x + -i_2_ >> 9);
     }
 
     final boolean method2423(int i, int i_3_, int i_4_) {
@@ -210,23 +210,23 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         int i_24_ = -i_16_ / 2;
         int i_25_ = i_23_ * i_22_ + i_24_ * i_21_ >> 14;
         int i_26_ = -(i_21_ * i_23_) + i_24_ * i_22_ >> 14;
-        int i_27_ = Class171.method1321((byte) -125, i_25_ + this.anInt6377, i_26_ + this.anInt6388, i_19_, this.aByte6381, i_20_);
+        int i_27_ = Class171.method1321((byte) -125, i_25_ + this.x, i_26_ + this.y, i_19_, this.plane, i_20_);
         int i_28_ = i_14_ / 2;
         int i_29_ = -i_16_ / 2;
         int i_30_ = i_28_ * i_22_ + i_21_ * i_29_ >> 14;
         int i_31_ = -(i_21_ * i_28_) + i_29_ * i_22_ >> 14;
-        int i_32_ = Class171.method1321((byte) -119, i_30_ + this.anInt6377, this.anInt6388 + i_31_, i_19_, this.aByte6381, i_20_);
+        int i_32_ = Class171.method1321((byte) -119, i_30_ + this.x, this.y + i_31_, i_19_, this.plane, i_20_);
         int i_33_ = -i_14_ / 2;
         int i_34_ = i_16_ / 2;
         int i_35_ = i_34_ * i_21_ - -(i_33_ * i_22_) >> 14;
         int i_36_ = -(i_33_ * i_21_) + i_34_ * i_22_ >> 14;
-        int i_37_ = Class171.method1321((byte) 101, i_35_ + this.anInt6377, this.anInt6388 + i_36_, i_19_, this.aByte6381, i_20_);
+        int i_37_ = Class171.method1321((byte) 101, i_35_ + this.x, this.y + i_36_, i_19_, this.plane, i_20_);
         if (i_17_ <= 63) this.anInt10243 = -62;
         int i_38_ = i_14_ / 2;
         int i_39_ = i_16_ / 2;
         int i_40_ = i_22_ * i_38_ + i_39_ * i_21_ >> 14;
         int i_41_ = i_22_ * i_39_ + -(i_21_ * i_38_) >> 14;
-        int i_42_ = Class171.method1321((byte) -114, i_40_ + this.anInt6377, this.anInt6388 + i_41_, i_19_, this.aByte6381, i_20_);
+        int i_42_ = Class171.method1321((byte) -114, i_40_ + this.x, this.y + i_41_, i_19_, this.plane, i_20_);
         int i_43_ = Math.min(i_32_, i_27_);
         int i_44_ = Math.min(i_37_, i_42_);
         int i_45_ = Math.min(i_42_, i_32_);
@@ -514,7 +514,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                         }
                     } else if ((this.aClass318_Sub10_10327) != null) this.aClass318_Sub10_10327.method2540(Class367_Sub11.anInt7396);
                     if (this.aClass318_Sub10_10327 == null) break;
-                    this.aClass318_Sub10_10327.method2533(this.aByte6381, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
+                    this.aClass318_Sub10_10327.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ',' + bool + ',' + (class64s != null ? "{...}" : "null") + ')'));

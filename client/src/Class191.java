@@ -54,7 +54,7 @@ final class Class191 {
                     class105 = Class348_Sub8.aHa6654.method3691(class207s[0], true);
                     Class348_Sub1_Sub1.aClass60_8807.method582(class105, i_9_, (byte) -115);
                 }
-                aa_Sub2.method165(class318_sub1_sub3_sub3_8_.aByte6381, i_5_, 0, i_3_ >> 1, class318_sub1_sub3_sub3_8_.anInt6377, class318_sub1_sub3_sub3_8_.method2436((byte) 126) * 256, class318_sub1_sub3_sub3_8_.anInt6388, (byte) 92, i_6_ >> 1, i_2_);
+                aa_Sub2.method165(class318_sub1_sub3_sub3_8_.plane, i_5_, 0, i_3_ >> 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436((byte) 126) * 256, class318_sub1_sub3_sub3_8_.y, (byte) 92, i_6_ >> 1, i_2_);
                 int i_10_ = i_7_ + (Class239_Sub21.anIntArray6062[0] + -18);
                 int i_11_ = -54 + (Class239_Sub21.anIntArray6062[1] + i_4_) - 16;
                 i_10_ += i / 4 * 18;

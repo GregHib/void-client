@@ -8,7 +8,6 @@ import jaclib.memory.heap.NativeHeap;
 import jaggl.OpenGL;
 
 import java.awt.*;
-import java.lang.reflect.Method;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
@@ -2930,7 +2929,7 @@ final class ha_Sub2 extends ha {
                     if (class79 == null) continue;
                 }
             }
-            if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) == class318_sub1_sub3_sub3.aByte6381))) {
+            if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) == class318_sub1_sub3_sub3.plane))) {
                 Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ >> 1, i_320_, i_319_, i_315_ >> 1, class318_sub1_sub3_sub3, (byte) 100);
                 if (Class239_Sub21.anIntArray6062[0] >= 0) {
                     if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || za.anInt7276 == 0 || za.anInt7276 == 3 || (za.anInt7276 == 1 && (Class348_Sub11.method2797(((Class318_Sub1_Sub3_Sub3_Sub2) class318_sub1_sub3_sub3).aString10544, (byte) -63)))) && Class88.anInt1497 < Class309.anInt4814) {

@@ -54,10 +54,10 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                     Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
                     int i_16_ = (Class348_Sub23_Sub3.anIntArray9042[i_14_] >> 8);
                     int i_17_ = 0xff & Class348_Sub23_Sub3.anIntArray9042[i_14_];
-                    int i_18_ = -za_Sub2.anInt9780 + i_16_ * 64;
-                    int i_19_ = -Class90.anInt1517 + i_17_ * 64;
+                    int i_18_ = -za_Sub2.regionTileX + i_16_ * 64;
+                    int i_19_ = -Class90.regionTileY + i_17_ * 64;
                     Class369_Sub1.method3570(false);
-                    class237_sub1.method1681(class348_sub49, i_18_, Class348_Sub45.aClass361Array7108, Class90.anInt1517, za_Sub2.anInt9780, i_19_, (byte) 110);
+                    class237_sub1.method1681(class348_sub49, i_18_, Class348_Sub45.aClass361Array7108, Class90.regionTileY, za_Sub2.regionTileX, i_19_, (byte) 110);
                     class237_sub1.method1691(i_19_, Class348_Sub8.aHa6654, class348_sub49, is_11_, i_18_, (byte) -126);
                     if (!class237_sub1.aBoolean3109 && i_16_ == ha.anInt4581 / 8 && (i_17_ == Class327.anInt4095 / 8) && is_11_[0] != -1) {
                         Class259.aClass305_3304 = Class30.aClass84_413.method823(is_11_[2], is_11_[3], is_11_[1], -66, (Class123.aClass25_1813), is_11_[0]);
@@ -66,8 +66,8 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                 }
             }
             for (int i_20_ = 0; i_20_ < i_13_; i_20_++) {
-                int i_21_ = ((Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) * 64 - za_Sub2.anInt9780);
-                int i_22_ = (-Class90.anInt1517 + ((0xff & Class348_Sub23_Sub3.anIntArray9042[i_20_]) * 64));
+                int i_21_ = ((Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) * 64 - za_Sub2.regionTileX);
+                int i_22_ = (-Class90.regionTileY + ((0xff & Class348_Sub23_Sub3.anIntArray9042[i_20_]) * 64));
                 byte[] is_23_ = is[i_20_];
                 if (is_23_ == null && Class327.anInt4095 < 800) {
                     Class369_Sub1.method3570(false);

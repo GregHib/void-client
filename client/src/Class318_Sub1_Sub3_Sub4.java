@@ -49,7 +49,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         if (class64 == null) return null;
         if (anInt10334 != 0) class64.a(anInt10334 * 2048);
         Class101 class101 = var_ha.method3705();
-        class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
+        class101.method894(this.x, this.anInt6382, this.y);
         method2467(class64, var_ha, -1, class101);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, false, false);
         if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
@@ -204,10 +204,10 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         anInt10353++;
         if (i_27_ != -82) return null;
         Class368 class368 = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 122, i);
-        s var_s = Class348_Sub1_Sub1.aSArray8801[this.aByte6381];
+        s var_s = Class348_Sub1_Sub1.aSArray8801[this.plane];
         s var_s_28_ = (this.aByte6376 < 3 ? (Class348_Sub1_Sub1.aSArray8801[1 + this.aByte6376]) : null);
-        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_ha, anInt10350, this.anInt6377, -129, Class10.aClass87_191, var_s_28_, this.anInt6388, var_s);
-        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_ha, -1, this.anInt6377, -129, Class10.aClass87_191, var_s_28_, this.anInt6388, var_s);
+        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_ha, anInt10350, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s);
+        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_ha, -1, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s);
     }
 
     final void method2466(boolean bool) {
@@ -234,7 +234,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341.aBoolean6470)) && (class129s != null || class342s != null)) aClass318_Sub10_10341 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                     if (aClass318_Sub10_10341 == null) break;
                     aClass318_Sub10_10341.method2536(var_ha, Class367_Sub11.anInt7396, class129s, class342s, false);
-                    aClass318_Sub10_10341.method2533(this.aByte6381, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
+                    aClass318_Sub10_10341.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (class64 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ')'));
@@ -267,7 +267,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         Class64 class64 = method2465(var_ha, anInt10355, 0, (byte) -82);
         if (class64 != null) {
             Class101 class101 = var_ha.method3705();
-            class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
+            class101.method894(this.x, this.anInt6382, this.y);
             method2467(class64, var_ha, -1, class101);
         }
     }

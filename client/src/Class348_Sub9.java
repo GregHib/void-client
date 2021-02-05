@@ -38,9 +38,9 @@ final class Class348_Sub9 extends Class348 {
 
     static final boolean method2778(Class318_Sub1 class318_sub1, boolean bool, byte[][][] is, int i, byte i_0_) {
         if (!Class348_Sub40_Sub17.aBoolean9242) return false;
-        int i_1_ = class318_sub1.anInt6377 >> Class362.anInt4459;
+        int i_1_ = class318_sub1.x >> Class362.anInt4459;
         int i_2_ = i_1_;
-        int i_3_ = class318_sub1.anInt6388 >> Class362.anInt4459;
+        int i_3_ = class318_sub1.y >> Class362.anInt4459;
         int i_4_ = i_3_;
         if (class318_sub1 instanceof Class318_Sub1_Sub3) {
             i_2_ = (((Class318_Sub1_Sub3) class318_sub1).aShort8751);
@@ -51,7 +51,7 @@ final class Class348_Sub9 extends Class348 {
         for (int i_5_ = i_1_; i_5_ <= i_2_; i_5_++) {
             for (int i_6_ = i_3_; i_6_ <= i_4_; i_6_++) {
                 if ((class318_sub1.aByte6376 < Class189.anInt2524) && i_5_ >= Class37.anInt492 && i_5_ < Class27.anInt387 && i_6_ >= Class348_Sub34.anInt6974 && i_6_ < Class59_Sub1.anInt5293) {
-                    if ((is != null && class318_sub1.aByte6381 >= i && (is[class318_sub1.aByte6381][i_5_][i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((byte) -79)) {
+                    if ((is != null && class318_sub1.plane >= i && (is[class318_sub1.plane][i_5_][i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((byte) -79)) {
                         if (!bool && i_5_ >= Class239_Sub25.anInt6111 - 16 && i_5_ <= Class239_Sub25.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
                             if (Class348_Sub40_Sub5.aBoolean9121) {
                                 Class319.aClass315Array3982[Class139.anInt1949++].method2361(-15481, class318_sub1);

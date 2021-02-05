@@ -256,9 +256,9 @@ final class Class286_Sub3 extends Class286 {
                     }
                 }
                 Class205.anInt2690++;
-                int npcX = (class318_sub1_sub3_sub3_sub1.anInt6377 >> 9) + za_Sub2.anInt9780;
-                int npcY = (class318_sub1_sub3_sub3_sub1.anInt6388 >> 9) + Class90.anInt1517;
-                Class50_Sub3.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, class318_sub1_sub3_sub3_sub1.aByte6381), 0, (byte) -105, bool_14_, 0, -1, true, 1008, class318_sub1_sub3_sub3_sub1.anInt10290, Class274.aClass274_3505.method2063(Class348_Sub33.anInt6967, 544), class318_sub1_sub3_sub3_sub1.anInt10290, Class286_Sub8.anInt6299);
+                int npcX = (class318_sub1_sub3_sub3_sub1.x >> 9) + za_Sub2.regionTileX;
+                int npcY = (class318_sub1_sub3_sub3_sub1.y >> 9) + Class90.regionTileY;
+                Class50_Sub3.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, class318_sub1_sub3_sub3_sub1.plane), 0, (byte) -105, bool_14_, 0, -1, true, 1008, class318_sub1_sub3_sub3_sub1.anInt10290, Class274.aClass274_3505.method2063(Class348_Sub33.anInt6967, 544), class318_sub1_sub3_sub3_sub1.anInt10290, Class286_Sub8.anInt6299);
             }
         }
     }

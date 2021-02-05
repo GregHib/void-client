@@ -67,7 +67,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
     final boolean method2391(ha var_ha, int i, int i_7_, int i_8_) {
         anInt10188++;
         Class101 class101 = var_ha.method3705();
-        class101.method894(this.anInt6377, -10 + this.anInt6382, this.anInt6388);
+        class101.method894(this.x, -10 + this.anInt6382, this.y);
         Class213 class213 = (Exception_Sub1.aClass255_112.method1940(i_8_ ^ 0x6b, this.anInt10181));
         Class64 class64 = class213.method1559(null, null, var_ha, 131072, 0, this.anInt10185, 0, (byte) 88, -1);
         if (class64 != null && (Class305.aBoolean3870 ? class64.method623(i_7_, i, class101, true, class213.anInt2784, Class132.anInt1906) : class64.method628(i_7_, i, class101, true, class213.anInt2784))) return true;
@@ -93,7 +93,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
     final Class318_Sub4 method2386(int i, ha var_ha) {
         if (i != 1) method2386(60, null);
         anInt10179++;
-        Class148 class148 = Class195.method1449(this.aByte6381, (this.anInt6377 >> Class362.anInt4459), (this.anInt6388 >> Class362.anInt4459));
+        Class148 class148 = Class195.method1449(this.plane, (this.x >> Class362.anInt4459), (this.y >> Class362.anInt4459));
         if (class148 != null && class148.aClass318_Sub1_Sub3_2040.aBoolean8741) {
             int i_11_ = class148.aClass318_Sub1_Sub3_2040.method2394(true);
             if (this.anInt10196 != i_11_) {
@@ -113,16 +113,16 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
             int i_15_ = i_14_;
             int i_16_ = -i_14_ / 2;
             int i_17_ = -i_15_ / 2;
-            int i_18_ = var_s.method3986(this.anInt6377 + i_16_, this.anInt6388 + i_17_, (byte) -102);
+            int i_18_ = var_s.method3986(this.x + i_16_, this.y + i_17_, (byte) -102);
             int i_19_ = i_14_ / 2;
             int i_20_ = -i_15_ / 2;
-            int i_21_ = var_s.method3986(i_19_ + this.anInt6377, this.anInt6388 - -i_20_, (byte) 94);
+            int i_21_ = var_s.method3986(i_19_ + this.x, this.y - -i_20_, (byte) 94);
             int i_22_ = -i_14_ / 2;
             int i_23_ = i_15_ / 2;
-            int i_24_ = var_s.method3986(this.anInt6377 + i_22_, i_23_ + this.anInt6388, (byte) -102);
+            int i_24_ = var_s.method3986(this.x + i_22_, i_23_ + this.y, (byte) -102);
             int i_25_ = i_14_ / 2;
             int i_26_ = i_15_ / 2;
-            int i_27_ = var_s.method3986(this.anInt6377 + i_25_, this.anInt6388 + i_26_, (byte) 5);
+            int i_27_ = var_s.method3986(this.x + i_25_, this.y + i_26_, (byte) 5);
             int i_28_ = Math.min(i_18_, i_21_);
             int i_29_ = Math.min(i_24_, i_27_);
             int i_30_ = Math.min(i_27_, i_21_);
@@ -140,7 +140,7 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
             i_33_ = (i_33_ >> 1) + -this.anInt6382;
             if (i_33_ != 0) class101.method891(0, i_33_, 0);
         }
-        class101.method891(this.anInt6377, -10 + this.anInt6382, this.anInt6388);
+        class101.method891(this.x, -10 + this.anInt6382, this.y);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(3, true, false);
         aBoolean10191 = false;
         anInt10184 = 0;

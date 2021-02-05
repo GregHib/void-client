@@ -20,8 +20,8 @@ final class Canvas_Sub1 extends Canvas {
     static final void method119(int i, long l) {
         try {
             anInt66++;
-            int i_0_ = (Class20.anInt319 + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377);
-            int i_1_ = (Class260.anInt3310 + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388);
+            int i_0_ = (Class20.anInt319 + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x);
+            int i_1_ = (Class260.anInt3310 + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y);
             if (-i_0_ + Class130_Sub1.anInt5799 < -2000 || -i_0_ + Class130_Sub1.anInt5799 > 2000 || Class192.anInt2578 - i_1_ < -2000 || -i_1_ + Class192.anInt2578 > 2000) {
                 Class192.anInt2578 = i_1_;
                 Class130_Sub1.anInt5799 = i_0_;
@@ -179,8 +179,8 @@ final class Canvas_Sub1 extends Canvas {
             for (int i_20_ = 0; i_20_ < Class347.aByteArrayArray4281.length; i_20_++) {
                 byte[] is = Class14_Sub4.aByteArrayArray8642[i_20_];
                 if (is != null) {
-                    int i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) - za_Sub2.anInt9780;
-                    int i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] & 0xff) - Class90.anInt1517;
+                    int i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) - za_Sub2.regionTileX;
+                    int i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] & 0xff) - Class90.regionTileY;
                     if (Class312.anInt3931 != 0) {
                         i_22_ = 10;
                         i_21_ = 10;
@@ -189,8 +189,8 @@ final class Canvas_Sub1 extends Canvas {
                 }
                 is = Class348_Sub23_Sub1.aByteArrayArray8996[i_20_];
                 if (is != null) {
-                    int i_23_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) - za_Sub2.anInt9780;
-                    int i_24_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] & 0xff) + -Class90.anInt1517;
+                    int i_23_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) - za_Sub2.regionTileX;
+                    int i_24_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] & 0xff) + -Class90.regionTileY;
                     if (Class312.anInt3931 != 0) {
                         i_24_ = 10;
                         i_23_ = 10;

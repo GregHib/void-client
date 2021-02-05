@@ -209,7 +209,7 @@ final class Class286_Sub9 extends Class286 {
             else {
                 if (Class348_Sub42_Sub11.anInt9591 == i_22_) throw new RuntimeException("s:lr");
                 Class359 class359 = (Class348_Sub17.aClass359Array6802[i_22_] = new Class359());
-                class359.anInt4420 = ((Class90.anInt1517 - -(class318_sub1_sub3_sub3_sub2.anIntArray10317[0]) >> 6) + ((class318_sub1_sub3_sub3_sub2.anIntArray10320[0] + za_Sub2.anInt9780) >> 6 << 14) + ((class318_sub1_sub3_sub3_sub2.aByte6381) << 28));
+                class359.anInt4420 = ((Class90.regionTileY - -(class318_sub1_sub3_sub3_sub2.anIntArray10317[0]) >> 6) + ((class318_sub1_sub3_sub3_sub2.anIntArray10320[0] + za_Sub2.regionTileX) >> 6 << 14) + ((class318_sub1_sub3_sub3_sub2.plane) << 28));
                 if (class318_sub1_sub3_sub3_sub2.anInt10524 != -1) class359.anInt4423 = class318_sub1_sub3_sub3_sub2.anInt10524;
                 else class359.anInt4423 = class318_sub1_sub3_sub3_sub2.aClass264_10217.method2019((byte) -91);
                 class359.aBoolean4426 = class318_sub1_sub3_sub3_sub2.aBoolean10554;
@@ -315,27 +315,27 @@ final class Class286_Sub9 extends Class286 {
                     class318_sub1_sub3_sub3_sub2.anInt10549 = i_35_;
                     class318_sub1_sub3_sub3_sub2.aBoolean10539 = true;
                 } else class318_sub1_sub3_sub3_sub2.method2455(i_36_, -26443, (Class259.aByteArray3300[i_22_]), i_35_);
-                class318_sub1_sub3_sub3_sub2.aByte6381 = class318_sub1_sub3_sub3_sub2.aByte6376 = (byte) (0x3 & (class318_sub1_sub3_sub3_sub2.aByte6381) + i_32_);
+                class318_sub1_sub3_sub3_sub2.plane = class318_sub1_sub3_sub3_sub2.aByte6376 = (byte) (0x3 & (class318_sub1_sub3_sub3_sub2.plane) + i_32_);
                 if (Class79.method802(i_36_, i_35_, true)) class318_sub1_sub3_sub3_sub2.aByte6376++;
                 if (Class348_Sub42_Sub11.anInt9591 == i_22_) {
-                    if ((class318_sub1_sub3_sub3_sub2.aByte6381) != Class355.anInt4372) Class348_Sub16_Sub2.aBoolean8870 = true;
-                    Class355.anInt4372 = (class318_sub1_sub3_sub3_sub2.aByte6381);
+                    if ((class318_sub1_sub3_sub3_sub2.plane) != Class355.anInt4372) Class348_Sub16_Sub2.aBoolean8870 = true;
+                    Class355.anInt4372 = (class318_sub1_sub3_sub3_sub2.plane);
                 }
             } else {
                 int i_37_ = class348_sub49_sub2.readBits((byte) -24, 30);
                 int i_38_ = i_37_ >> 28;
                 int i_39_ = 0x3fff & i_37_ >> 14;
                 int i_40_ = 0x3fff & i_37_;
-                int i_41_ = ((i_39_ + ((class318_sub1_sub3_sub3_sub2.anIntArray10320[0]) + za_Sub2.anInt9780) & 0x3fff) - za_Sub2.anInt9780);
-                int i_42_ = (-Class90.anInt1517 + (0x3fff & (i_40_ + Class90.anInt1517 + (class318_sub1_sub3_sub3_sub2.anIntArray10317[0]))));
+                int i_41_ = ((i_39_ + ((class318_sub1_sub3_sub3_sub2.anIntArray10320[0]) + za_Sub2.regionTileX) & 0x3fff) - za_Sub2.regionTileX);
+                int i_42_ = (-Class90.regionTileY + (0x3fff & (i_40_ + Class90.regionTileY + (class318_sub1_sub3_sub3_sub2.anIntArray10317[0]))));
                 if (bool) {
                     class318_sub1_sub3_sub3_sub2.aBoolean10539 = true;
                     class318_sub1_sub3_sub3_sub2.anInt10531 = i_42_;
                     class318_sub1_sub3_sub3_sub2.anInt10549 = i_41_;
                 } else class318_sub1_sub3_sub3_sub2.method2455(i_42_, -26443, (Class259.aByteArray3300[i_22_]), i_41_);
-                class318_sub1_sub3_sub3_sub2.aByte6381 = class318_sub1_sub3_sub3_sub2.aByte6376 = (byte) ((class318_sub1_sub3_sub3_sub2.aByte6381) + i_38_ & 0x3);
+                class318_sub1_sub3_sub3_sub2.plane = class318_sub1_sub3_sub3_sub2.aByte6376 = (byte) ((class318_sub1_sub3_sub3_sub2.plane) + i_38_ & 0x3);
                 if (Class79.method802(i_42_, i_41_, true)) class318_sub1_sub3_sub3_sub2.aByte6376++;
-                if (Class348_Sub42_Sub11.anInt9591 == i_22_) Class355.anInt4372 = (class318_sub1_sub3_sub3_sub2.aByte6381);
+                if (Class348_Sub42_Sub11.anInt9591 == i_22_) Class355.anInt4372 = (class318_sub1_sub3_sub3_sub2.plane);
             }
         }
     }

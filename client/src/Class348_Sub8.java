@@ -33,8 +33,8 @@ final class Class348_Sub8 extends Class348 {
                 if (class348_sub22 != null) class318_sub1_sub3_sub3_0_ = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
             }
             if (class318_sub1_sub3_sub3_0_ != null) {
-                int i_1_ = (class318_sub1_sub3_sub3.anInt6377 + -(class318_sub1_sub3_sub3_0_.anInt6377));
-                int i_2_ = (class318_sub1_sub3_sub3.anInt6388 + -(class318_sub1_sub3_sub3_0_.anInt6388));
+                int i_1_ = (class318_sub1_sub3_sub3.x + -(class318_sub1_sub3_sub3_0_.x));
+                int i_2_ = (class318_sub1_sub3_sub3.y + -(class318_sub1_sub3_sub3_0_.y));
                 if (i_1_ != 0 || i_2_ != 0) class318_sub1_sub3_sub3.method2440((byte) 49, 0x3fff & (int) (Math.atan2(i_1_, i_2_) * 2607.5945876176133));
             }
         }
@@ -47,8 +47,8 @@ final class Class348_Sub8 extends Class348 {
         } else if (class318_sub1_sub3_sub3 instanceof Class318_Sub1_Sub3_Sub3_Sub1) {
             Class318_Sub1_Sub3_Sub3_Sub1 class318_sub1_sub3_sub3_sub1 = (Class318_Sub1_Sub3_Sub3_Sub1) class318_sub1_sub3_sub3;
             if ((class318_sub1_sub3_sub3_sub1.anInt10499) != -1 && ((class318_sub1_sub3_sub3_sub1.anInt10319) == 0 || class318_sub1_sub3_sub3_sub1.anInt10326 > 0)) {
-                int i_3_ = (-((-za_Sub2.anInt9780 + class318_sub1_sub3_sub3_sub1.anInt10499 - za_Sub2.anInt9780) * 256) + (class318_sub1_sub3_sub3_sub1.anInt6377));
-                int i_4_ = (class318_sub1_sub3_sub3_sub1.anInt6388 - 256 * (class318_sub1_sub3_sub3_sub1.anInt10512 + (-Class90.anInt1517 + -Class90.anInt1517)));
+                int i_3_ = (-((-za_Sub2.regionTileX + class318_sub1_sub3_sub3_sub1.anInt10499 - za_Sub2.regionTileX) * 256) + (class318_sub1_sub3_sub3_sub1.x));
+                int i_4_ = (class318_sub1_sub3_sub3_sub1.y - 256 * (class318_sub1_sub3_sub3_sub1.anInt10512 + (-Class90.regionTileY + -Class90.regionTileY)));
                 if (i_3_ != 0 || i_4_ != 0) class318_sub1_sub3_sub3_sub1.method2440((byte) 49, 0x3fff & (int) (Math.atan2(i_3_, i_4_) * 2607.5945876176133));
                 class318_sub1_sub3_sub3_sub1.anInt10499 = -1;
             }

@@ -152,9 +152,9 @@ final class InputStream_Sub2 extends InputStream {
                 int i_69_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-128);
                 int i_70_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) 31);
                 int i_71_ = Class73.anInt4786 + (i_70_ & 0x7);
-                int i_72_ = Class90.anInt1517 + i_71_;
+                int i_72_ = Class90.regionTileY + i_71_;
                 int i_73_ = Class278.anInt3581 + (i_70_ >> 4 & 0x7);
-                int i_74_ = za_Sub2.anInt9780 + i_73_;
+                int i_74_ = za_Sub2.regionTileX + i_73_;
                 Class348_Sub37 class348_sub37 = ((Class348_Sub37) (Class130.aClass356_1895.method3480(i_72_ << 14 | Class348_Sub40_Sub12.anInt9200 << 28 | i_74_, -6008)));
                 if (class348_sub37 != null) {
                     for (Class348_Sub34 class348_sub34 = ((Class348_Sub34) class348_sub37.aClass262_6998.method1995(4)); class348_sub34 != null; class348_sub34 = ((Class348_Sub34) class348_sub37.aClass262_6998.method1990((byte) 49))) {
@@ -171,9 +171,9 @@ final class InputStream_Sub2 extends InputStream {
                 int i_76_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
                 int i_77_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
                 int i_78_ = Class73.anInt4786 - -(0x7 & i_77_);
-                int i_79_ = i_78_ + Class90.anInt1517;
+                int i_79_ = i_78_ + Class90.regionTileY;
                 int i_80_ = Class278.anInt3581 - -((i_77_ & 0x79) >> 4);
-                int i_81_ = za_Sub2.anInt9780 - -i_80_;
+                int i_81_ = za_Sub2.regionTileX - -i_80_;
                 boolean bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && Class348_Sub40_Sub3.anInt9109 > i_78_);
                 if (bool || Class282.method2112(124, Class312.anInt3931)) {
                     Class352.method3459(new Class348_Sub34(i_76_, i_75_), Class348_Sub40_Sub12.anInt9200, i_79_, i_81_, -2);
@@ -193,9 +193,9 @@ final class InputStream_Sub2 extends InputStream {
                 if (Class39.aClass74_515 == class74) {
                     int i_89_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
                     int i_90_ = Class73.anInt4786 + (0x7 & i_89_);
-                    int i_91_ = i_90_ + Class90.anInt1517;
+                    int i_91_ = i_90_ + Class90.regionTileY;
                     int i_92_ = (Class278.anInt3581 - -((i_89_ & 0x7a) >> 4));
-                    int i_93_ = za_Sub2.anInt9780 + i_92_;
+                    int i_93_ = za_Sub2.regionTileX + i_92_;
                     int i_94_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
                     int i_95_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(i + 842397936);
                     int i_96_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
@@ -217,9 +217,9 @@ final class InputStream_Sub2 extends InputStream {
                     int i_97_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
                     int i_98_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
                     int i_99_ = (0x7 & i_98_) + Class73.anInt4786;
-                    int i_100_ = Class90.anInt1517 + i_99_;
+                    int i_100_ = Class90.regionTileY + i_99_;
                     int i_101_ = Class278.anInt3581 - -((i_98_ & 0x7b) >> 4);
-                    int i_102_ = za_Sub2.anInt9780 + i_101_;
+                    int i_102_ = za_Sub2.regionTileX + i_101_;
                     int i_103_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(-25);
                     int i_104_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(123);
                     if (i_104_ != Class348_Sub42_Sub11.anInt9591) {

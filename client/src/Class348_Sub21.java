@@ -40,9 +40,9 @@ final class Class348_Sub21 extends Class348 {
                 int i_9_ = -i_6_ + ((Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][i_1_ - -2][i_2_]) + i_4_) + -i_5_;
                 fs[i_2_] = (float) i_6_ + f * ((float) i_7_ + f * (f * (float) i_9_ + (float) i_8_));
             }
-            Class286_Sub4.anInt6246 = (int) fs[0] - 512 * za_Sub2.anInt9780;
+            Class286_Sub4.anInt6246 = (int) fs[0] - 512 * za_Sub2.regionTileX;
             Class305.anInt3855 = -1 * (int) fs[1];
-            Class59_Sub2_Sub2.anInt8685 = (int) fs[2] + -(Class90.anInt1517 * 512);
+            Class59_Sub2_Sub2.anInt8685 = (int) fs[2] + -(Class90.regionTileY * 512);
             float[] fs_10_ = new float[3];
             int i_11_ = 2 * Class264.anInt3373;
             int i_12_ = -88 % ((-64 - i) / 57);

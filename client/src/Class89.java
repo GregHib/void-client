@@ -44,7 +44,7 @@ final class Class89 {
         short i_16_ = 0;
         for (int i_17_ = class318_sub1_sub3.aShort8743; i_17_ <= class318_sub1_sub3.aShort8751; i_17_++) {
             for (int i_18_ = class318_sub1_sub3.aShort8750; i_18_ <= class318_sub1_sub3.aShort8747; i_18_++) {
-                Class357 class357 = Class348_Sub46.method3321(class318_sub1_sub3.aByte6381, i_17_, i_18_);
+                Class357 class357 = Class348_Sub46.method3321(class318_sub1_sub3.plane, i_17_, i_18_);
                 if (class357 != null) {
                     Class148 class148 = Class376.method3620(class318_sub1_sub3, 118);
                     Class148 class148_19_ = class357.aClass148_4396;

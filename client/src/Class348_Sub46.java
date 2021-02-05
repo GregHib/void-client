@@ -32,15 +32,15 @@ final class Class348_Sub46 extends Class348 {
     static final void method3319(ha var_ha, byte i) {
         if (i > -108) method3321(19, 60, 108);
         anInt7114++;
-        if (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) != Class334.anInt4155) && Class147.aClass357ArrayArrayArray2029 != null) {
-            if (Class348_Sub14.method2808((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381), var_ha, true)) Class334.anInt4155 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381;
+        if (((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) != Class334.anInt4155) && Class147.aClass357ArrayArrayArray2029 != null) {
+            if (Class348_Sub14.method2808((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane), var_ha, true)) Class334.anInt4155 = Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane;
         }
     }
 
     static final void method3320(Class318_Sub1_Sub3 class318_sub1_sub3, boolean bool) {
         for (int i = class318_sub1_sub3.aShort8743; i <= class318_sub1_sub3.aShort8751; i++) {
             for (int i_0_ = class318_sub1_sub3.aShort8750; i_0_ <= class318_sub1_sub3.aShort8747; i_0_++) {
-                Class357 class357 = (Class147.aClass357ArrayArrayArray2029[class318_sub1_sub3.aByte6381][i][i_0_]);
+                Class357 class357 = (Class147.aClass357ArrayArrayArray2029[class318_sub1_sub3.plane][i][i_0_]);
                 if (class357 != null) {
                     Class148 class148 = class357.aClass148_4396;
                     Class148 class148_1_ = null;

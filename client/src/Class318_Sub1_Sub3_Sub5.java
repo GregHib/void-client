@@ -72,13 +72,13 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
 
     final void method2471(byte i, int i_0_, int i_1_, int i_2_, int i_3_) {
         if (!aBoolean10407) {
-            double d = i_3_ + -this.anInt6377;
-            double d_4_ = i_1_ + -this.anInt6388;
+            double d = i_3_ + -this.x;
+            double d_4_ = i_1_ + -this.y;
             double d_5_ = Math.sqrt(d * d + d_4_ * d_4_);
-            aDouble10408 = ((double) this.anInt6377 + (double) anInt10393 * d / d_5_);
-            aDouble10371 = ((double) anInt10393 * d_4_ / d_5_ + (double) this.anInt6388);
+            aDouble10408 = ((double) this.x + (double) anInt10393 * d / d_5_);
+            aDouble10371 = ((double) anInt10393 * d_4_ / d_5_ + (double) this.y);
             if (!aBoolean10398) aDouble10384 = this.anInt6382;
-            else aDouble10384 = Class275.method2064((int) aDouble10408, (this.aByte6381), 11219, (int) aDouble10371) - anInt10413;
+            else aDouble10384 = Class275.method2064((int) aDouble10408, (this.plane), 11219, (int) aDouble10371) - anInt10413;
         }
         anInt10405++;
         if (i != -103) anInt10381 = 104;
@@ -129,7 +129,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                 if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378.aBoolean6470) && (class129s != null || class342s != null)) aClass318_Sub10_10378 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                 if (aClass318_Sub10_10378 != null) {
                     aClass318_Sub10_10378.method2536(var_ha, Class367_Sub11.anInt7396, class129s, class342s, false);
-                    aClass318_Sub10_10378.method2533(this.aByte6381, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
+                    aClass318_Sub10_10378.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
                 if (i == -2393) break;
                 finalize();
@@ -167,9 +167,9 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                     if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aClass318_Sub1_Sub3_Sub3_Sub1_6859);
                 }
                 if (class318_sub1_sub3_sub3 != null) {
-                    this.anInt6388 = class318_sub1_sub3_sub3.anInt6388;
-                    this.anInt6377 = class318_sub1_sub3_sub3.anInt6377;
-                    this.anInt6382 = Class275.method2064((class318_sub1_sub3_sub3.anInt6377), this.aByte6381, 11219, (class318_sub1_sub3_sub3.anInt6388)) + -anInt10413;
+                    this.y = class318_sub1_sub3_sub3.y;
+                    this.x = class318_sub1_sub3_sub3.x;
+                    this.anInt6382 = Class275.method2064((class318_sub1_sub3_sub3.x), this.plane, 11219, (class318_sub1_sub3_sub3.y)) + -anInt10413;
                     if (anInt10367 >= 0) {
                         Class225 class225 = class318_sub1_sub3_sub3.method2422((byte) 72);
                         int i_11_ = 0;
@@ -192,8 +192,8 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                             int i_18_ = i_12_ * i_16_ + i_11_ * i_17_ >> 14;
                             i_12_ = (-(i_11_ * i_16_) + i_12_ * i_17_ >> 14);
                             i_11_ = i_18_;
-                            this.anInt6377 += i_11_;
-                            this.anInt6388 += i_12_;
+                            this.x += i_11_;
+                            this.y += i_12_;
                         }
                     }
                 }
@@ -241,7 +241,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         anInt10388++;
         aDouble10408 += (double) i_21_ * aDouble10401;
         aDouble10371 += (double) i_21_ * aDouble10414;
-        if (aBoolean10398) aDouble10384 = Class275.method2064((int) aDouble10408, (this.aByte6381), 11219, (int) aDouble10371) + -anInt10413;
+        if (aBoolean10398) aDouble10384 = Class275.method2064((int) aDouble10408, (this.plane), 11219, (int) aDouble10371) + -anInt10413;
         else if (anInt10381 == -1) aDouble10384 += aDouble10409 * (double) i_21_;
         else {
             aDouble10384 += ((double) i_21_ * (aDouble10383 * 0.5) * (double) i_21_ + (double) i_21_ * aDouble10409);

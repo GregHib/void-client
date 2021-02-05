@@ -212,9 +212,9 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                 Class240.aClass324_4684.method2569(string, i_38_, -256, i_37_, -127, -1);
                                                 i_38_ += 12;
                                                 if (Loader.showCoordinates) {
-                                                    int playerX = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377 >> 9) + za_Sub2.anInt9780;
-                                                    int playerY = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388 >> 9) + Class90.anInt1517;
-                                                    Class240.aClass324_4684.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381, i_38_, -256, i_37_, -127, -1);
+                                                    int playerX = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x >> 9) + za_Sub2.regionTileX;
+                                                    int playerY = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y >> 9) + Class90.regionTileY;
+                                                    Class240.aClass324_4684.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane, i_38_, -256, i_37_, -127, -1);
                                                     i_38_ += 12;
                                                     Class240.aClass324_4684.method2569("Region id: " + (((playerX >> 6) << 8) + (playerY >> 6)) + " (" + (playerX >> 6) + ", " + (playerY >> 6) + ")", i_38_, -256, i_37_, -127, -1);
                                                     i_38_ += 12;

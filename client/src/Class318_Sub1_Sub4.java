@@ -17,8 +17,8 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
 
     final int method2384(Class348_Sub1[] class348_sub1s, int i) {
         anInt8758++;
-        int i_0_ = this.anInt6377 >> Class362.anInt4459;
-        int i_1_ = this.anInt6388 >> Class362.anInt4459;
+        int i_0_ = this.x >> Class362.anInt4459;
+        int i_1_ = this.y >> Class362.anInt4459;
         int i_2_ = -103 / ((i - -14) / 61);
         int i_3_ = 0;
         if (Class239_Sub25.anInt6111 == i_0_) i_3_++;
@@ -102,7 +102,7 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
     final boolean method2382(byte i) {
         if (i >= -51) return false;
         anInt8760++;
-        return InputStream_Sub1.method125((this.anInt6388 >> Class362.anInt4459), (this.anInt6377 >> Class362.anInt4459), this.aByte6376, this, (byte) 120);
+        return InputStream_Sub1.method125((this.y >> Class362.anInt4459), (this.x >> Class362.anInt4459), this.aByte6376, this, (byte) 120);
     }
 
     public static void method2479(int i) {
@@ -113,18 +113,18 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
     }
 
     Class318_Sub1_Sub4(int i, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_) {
-        this.anInt6377 = i;
+        this.x = i;
         this.anInt6382 = i_11_;
         this.aByte6376 = (byte) i_14_;
-        this.anInt6388 = i_12_;
-        this.aByte6381 = (byte) i_13_;
+        this.y = i_12_;
+        this.plane = (byte) i_13_;
         this.aShort8759 = (short) i_15_;
     }
 
     final boolean method2378(int i) {
         anInt8757++;
         if (i != 0) method2378(-104);
-        return (Class99.aBooleanArrayArray1572[(-Class239_Sub25.anInt6111 + (this.anInt6377 >> Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)][(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.anInt6388 >> Class362.anInt4459))]);
+        return (Class99.aBooleanArrayArray1572[(-Class239_Sub25.anInt6111 + (this.x >> Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)][(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y >> Class362.anInt4459))]);
     }
 
     static final void method2480(int i) {

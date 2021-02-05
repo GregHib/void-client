@@ -44,11 +44,11 @@ final class Class211 {
             int i_5_ = i_4_ >> 28;
             int i_6_ = (0x3fcd8e & i_4_) >> 14;
             int i_7_ = 0xff & i_4_;
-            int i_8_ = -za_Sub2.anInt9780 + i_2_ + (i_6_ << 6);
+            int i_8_ = -za_Sub2.regionTileX + i_2_ + (i_6_ << 6);
             class318_sub1_sub3_sub3_sub2.aBoolean10554 = class359.aBoolean4426;
-            int i_9_ = -Class90.anInt1517 + i_3_ + (i_7_ << 6);
+            int i_9_ = -Class90.regionTileY + i_3_ + (i_7_ << 6);
             class318_sub1_sub3_sub3_sub2.aByteArray10321[0] = Class259.aByteArray3300[i];
-            class318_sub1_sub3_sub3_sub2.aByte6381 = class318_sub1_sub3_sub3_sub2.aByte6376 = (byte) i_5_;
+            class318_sub1_sub3_sub3_sub2.plane = class318_sub1_sub3_sub3_sub2.aByte6376 = (byte) i_5_;
             if (Class79.method802(i_9_, i_8_, true)) class318_sub1_sub3_sub3_sub2.aByte6376++;
             class318_sub1_sub3_sub3_sub2.method2449(i_9_, i_8_, (byte) 102);
             class318_sub1_sub3_sub3_sub2.aBoolean10539 = false;

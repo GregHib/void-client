@@ -44,10 +44,10 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         if (i >= -125) method2386(111, null);
         Class64 class64 = this.aClass235_10115.method1668(true, true, -128, 262144, var_ha);
         if (class64 != null) {
-            int i_1_ = this.anInt6377 >> 9;
-            int i_2_ = this.anInt6388 >> 9;
+            int i_1_ = this.x >> 9;
+            int i_2_ = this.y >> 9;
             Class101 class101 = var_ha.method3705();
-            class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
+            class101.method894(this.x, this.anInt6382, this.y);
             this.aClass235_10115.method1670(i_1_, class101, i_2_, var_ha, i_1_, class64, false, (byte) -73, i_2_);
         }
     }
@@ -63,7 +63,7 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         Class64 class64 = this.aClass235_10115.method1668(false, false, -127, 131072, var_ha);
         if (class64 == null) return false;
         Class101 class101 = var_ha.method3705();
-        class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
+        class101.method894(this.x, this.anInt6382, this.y);
         if (i_4_ != 0) return true;
         if (Class305.aBoolean3870) return class64.method623(i_3_, i, class101, false, 0, Class132.anInt1906);
         return class64.method628(i_3_, i, class101, false, 0);
@@ -78,7 +78,7 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
     Class318_Sub1_Sub4_Sub2(ha var_ha, Class51 class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_) {
         super(i_6_, i_7_, i_8_, i, i_5_, Class95.method868(i_9_, i_10_, false));
         try {
-            this.aClass235_10115 = new Class235(var_ha, class51, i_9_, i_10_, this.aByte6381, i_5_, this, bool, i_11_);
+            this.aClass235_10115 = new Class235(var_ha, class51, i_9_, i_10_, this.plane, i_5_, this, bool, i_11_);
             aBoolean10114 = class51.anInt874 != 0 && !bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ju.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'));
@@ -114,10 +114,10 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         Class64 class64 = this.aClass235_10115.method1668(false, true, i ^ ~0x7f, 2048, var_ha);
         if (class64 == null) return null;
         Class101 class101 = var_ha.method3705();
-        class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
+        class101.method894(this.x, this.anInt6382, this.y);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10114, false);
-        int i_12_ = this.anInt6377 >> 9;
-        int i_13_ = this.anInt6388 >> 9;
+        int i_12_ = this.x >> 9;
+        int i_13_ = this.y >> 9;
         this.aClass235_10115.method1670(i_12_, class101, i_13_, var_ha, i_12_, class64, true, (byte) -73, i_13_);
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
@@ -127,8 +127,8 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
             else var_ha.method3684(class98);
         }
         aBoolean10095 = class64.F() || (this.aClass235_10115.aClass318_Sub10_3081) != null;
-        if (aClass30_10116 != null) Class255.method1935(this.anInt6388, this.anInt6382, aClass30_10116, class64, false, this.anInt6377);
-        else aClass30_10116 = (Class348_Sub23_Sub1.method2967(this.anInt6377, class64, this.anInt6388, this.anInt6382, 2));
+        if (aClass30_10116 != null) Class255.method1935(this.y, this.anInt6382, aClass30_10116, class64, false, this.x);
+        else aClass30_10116 = (Class348_Sub23_Sub1.method2967(this.x, class64, this.y, this.anInt6382, 2));
         return class318_sub4;
     }
 

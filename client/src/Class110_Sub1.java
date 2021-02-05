@@ -75,8 +75,8 @@ final class Class110_Sub1 extends Class110 {
             int i_7_ = (512 * (class318_sub1_sub3_sub3.anInt10314) - -(class318_sub1_sub3_sub3.method2436((byte) 44) * 256));
             int i_8_ = (512 * (class318_sub1_sub3_sub3.anInt10241) + 256 * class318_sub1_sub3_sub3.method2436((byte) 98));
             int i_9_ = ((class318_sub1_sub3_sub3.anInt10288) * 512 - -(class318_sub1_sub3_sub3.method2436((byte) 76) * 256));
-            class318_sub1_sub3_sub3.anInt6377 = (i_8_ * i_5_ + (i_4_ - i_5_) * i_6_) / i_4_;
-            class318_sub1_sub3_sub3.anInt6388 = (i_7_ * (-i_5_ + i_4_) - -(i_5_ * i_9_)) / i_4_;
+            class318_sub1_sub3_sub3.x = (i_8_ * i_5_ + (i_4_ - i_5_) * i_6_) / i_4_;
+            class318_sub1_sub3_sub3.y = (i_7_ * (-i_5_ + i_4_) - -(i_5_ * i_9_)) / i_4_;
         }
         class318_sub1_sub3_sub3.anInt10326 = 0;
         if ((~class318_sub1_sub3_sub3.anInt10231) == i) class318_sub1_sub3_sub3.method2435((byte) -108, 8192, false);

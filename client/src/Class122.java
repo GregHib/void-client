@@ -65,8 +65,8 @@ final class Class122 {
                 for (int i_14_ = 0; i_14_ < i_13_; i_14_++) {
                     byte[] is_15_ = is[i_14_];
                     if (is_15_ != null) {
-                        int i_16_ = (64 * (Class348_Sub23_Sub3.anIntArray9042[i_14_] >> 8) + -za_Sub2.anInt9780);
-                        int i_17_ = ((Class348_Sub23_Sub3.anIntArray9042[i_14_] & 0xff) * 64 - Class90.anInt1517);
+                        int i_16_ = (64 * (Class348_Sub23_Sub3.anIntArray9042[i_14_] >> 8) + -za_Sub2.regionTileX);
+                        int i_17_ = ((Class348_Sub23_Sub3.anIntArray9042[i_14_] & 0xff) * 64 - Class90.regionTileY);
                         Class369_Sub1.method3570(false);
                         class237_sub1.method1695(is_15_, (Class348_Sub45.aClass361Array7108), i_17_, Class348_Sub8.aHa6654, i_16_, i ^ 0x1054f);
                     }

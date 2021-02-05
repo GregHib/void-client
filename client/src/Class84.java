@@ -36,10 +36,10 @@ final class Class84 {
             if (class318_sub1_sub3 instanceof Class318_Sub1_Sub3_Sub3) {
                 Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_4_ = (Class318_Sub1_Sub3_Sub3) class318_sub1_sub3;
                 int i_5_ = 252 + (-1 + class318_sub1_sub3_sub3_4_.method2436((byte) 88)) * 256;
-                int i_6_ = (-i_5_ + (class318_sub1_sub3_sub3_4_.anInt6377) >> 9);
-                int i_7_ = (-i_5_ + (class318_sub1_sub3_sub3_4_.anInt6388) >> 9);
-                int i_8_ = i_5_ + (class318_sub1_sub3_sub3_4_.anInt6377) >> 9;
-                int i_9_ = ((class318_sub1_sub3_sub3_4_.anInt6388 + i_5_) >> 9);
+                int i_6_ = (-i_5_ + (class318_sub1_sub3_sub3_4_.x) >> 9);
+                int i_7_ = (-i_5_ + (class318_sub1_sub3_sub3_4_.y) >> 9);
+                int i_8_ = i_5_ + (class318_sub1_sub3_sub3_4_.x) >> 9;
+                int i_9_ = ((class318_sub1_sub3_sub3_4_.y + i_5_) >> 9);
                 if (i_0_ >= i_6_ && i_7_ <= i_2_ && i_0_ <= i_8_ && i_2_ <= i_9_) {
                     int i_10_ = (1 + i_9_ - i_2_) * (-i_0_ + (1 + i_8_));
                     if (i_3_ < i_10_) {

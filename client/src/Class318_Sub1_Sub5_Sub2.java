@@ -73,10 +73,10 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
         anInt10154++;
         Class64 class64 = this.aClass235_10155.method1668(false, true, -127, 262144, var_ha);
         if (class64 != null) {
-            int i_0_ = this.anInt6377 >> 9;
-            int i_1_ = this.anInt6388 >> 9;
+            int i_0_ = this.x >> 9;
+            int i_1_ = this.y >> 9;
             Class101 class101 = var_ha.method3705();
-            class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
+            class101.method894(this.x, this.anInt6382, this.y);
             this.aClass235_10155.method1670(i_0_, class101, i_1_, var_ha, i_0_, class64, false, (byte) -73, i_1_);
         }
     }
@@ -98,10 +98,10 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
         Class64 class64 = this.aClass235_10155.method1668(false, true, -127, 2048, var_ha);
         if (class64 == null) return null;
         Class101 class101 = var_ha.method3705();
-        class101.method894((this.anInt6377 + this.aShort8781), this.anInt6382, (this.anInt6388 + this.aShort8769));
+        class101.method894((this.x + this.aShort8781), this.anInt6382, (this.y + this.aShort8769));
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10153, false);
-        int i_3_ = this.anInt6377 >> 9;
-        int i_4_ = this.anInt6388 >> 9;
+        int i_3_ = this.x >> 9;
+        int i_4_ = this.y >> 9;
         this.aClass235_10155.method1670(i_3_, class101, i_4_, var_ha, i_3_, class64, true, (byte) -73, i_4_);
         if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
@@ -111,8 +111,8 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
             else var_ha.method3685(class98, Class132.anInt1906);
         }
         aBoolean10148 = class64.F() || (this.aClass235_10155.aClass318_Sub10_3081) != null;
-        if (aClass30_10150 == null) aClass30_10150 = (Class348_Sub23_Sub1.method2967(this.anInt6377, class64, this.anInt6388, this.anInt6382, 2));
-        else Class255.method1935(this.anInt6388, this.anInt6382, aClass30_10150, class64, false, this.anInt6377);
+        if (aClass30_10150 == null) aClass30_10150 = (Class348_Sub23_Sub1.method2967(this.x, class64, this.y, this.anInt6382, 2));
+        else Class255.method1935(this.y, this.anInt6382, aClass30_10150, class64, false, this.x);
         return class318_sub4;
     }
 
@@ -138,7 +138,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
     Class318_Sub1_Sub5_Sub2(ha var_ha, Class51 class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
         super(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_);
         try {
-            this.aClass235_10155 = new Class235(var_ha, class51, i_11_, i_12_, this.aByte6381, i_5_, this, bool, i_13_);
+            this.aClass235_10155 = new Class235(var_ha, class51, i_11_, i_12_, this.plane, i_5_, this, bool, i_13_);
             aBoolean10153 = class51.anInt874 != 0 && !bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("pw.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'));
@@ -151,7 +151,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
         if (class64 == null) return false;
         if (i_15_ != 0) return true;
         Class101 class101 = var_ha.method3705();
-        class101.method894((this.aShort8781 + this.anInt6377), this.anInt6382, (this.aShort8769 + this.anInt6388));
+        class101.method894((this.aShort8781 + this.x), this.anInt6382, (this.aShort8769 + this.y));
         if (Class305.aBoolean3870) return class64.method623(i_14_, i, class101, false, 0, Class132.anInt1906);
         return class64.method628(i_14_, i, class101, false, 0);
     }

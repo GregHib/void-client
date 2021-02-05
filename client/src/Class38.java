@@ -190,10 +190,10 @@ final class Class38 {
                 i = (((Class318_Sub1_Sub3) class318_sub1).aShort8743);
                 i_12_ = ((Class318_Sub1_Sub3) class318_sub1).aShort8750;
             } else {
-                i = (class318_sub1.anInt6377 >> Class362.anInt4459);
-                i_12_ = (class318_sub1.anInt6388 >> Class362.anInt4459);
+                i = (class318_sub1.x >> Class362.anInt4459);
+                i_12_ = (class318_sub1.y >> Class362.anInt4459);
             }
-            Class9.aHa171.EA((Class348_Sub1_Sub1.aSArray8801[0].method3986(class318_sub1.anInt6377, class318_sub1.anInt6388, (byte) -118)), Class367_Sub8.method3547(i, i_12_), Class318_Sub1_Sub5.method2483(i, i_12_), Class199.method1457(i, i_12_));
+            Class9.aHa171.EA((Class348_Sub1_Sub1.aSArray8801[0].method3986(class318_sub1.x, class318_sub1.y, (byte) -118)), Class367_Sub8.method3547(i, i_12_), Class318_Sub1_Sub5.method2483(i, i_12_), Class199.method1457(i, i_12_));
         }
         Class318_Sub4 class318_sub4 = class318_sub1.method2386(1, Class9.aHa171);
         if (class318_sub4 != null) {

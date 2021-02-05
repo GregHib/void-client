@@ -36,8 +36,8 @@ final class Class239_Sub26 extends Class239 {
             int i_3_ = ((class318_sub1_sub3_sub3.anInt10293) * 512 + 256 * class318_sub1_sub3_sub3.method2436((byte) 73));
             int i_4_ = (512 * (class318_sub1_sub3_sub3.anInt10314) - -(class318_sub1_sub3_sub3.method2436((byte) 114) * 256));
             class318_sub1_sub3_sub3.anInt10326 = 0;
-            class318_sub1_sub3_sub3.anInt6388 += ((i_4_ + -class318_sub1_sub3_sub3.anInt6388) / i_2_);
-            class318_sub1_sub3_sub3.anInt6377 += ((i_3_ + -class318_sub1_sub3_sub3.anInt6377) / i_2_);
+            class318_sub1_sub3_sub3.y += ((i_4_ + -class318_sub1_sub3_sub3.y) / i_2_);
+            class318_sub1_sub3_sub3.x += ((i_3_ + -class318_sub1_sub3_sub3.x) / i_2_);
             if (class318_sub1_sub3_sub3.anInt10231 == 0) class318_sub1_sub3_sub3.method2440((byte) 49, 8192);
             if (class318_sub1_sub3_sub3.anInt10231 == 1) class318_sub1_sub3_sub3.method2440((byte) 49, 12288);
             if (class318_sub1_sub3_sub3.anInt10231 == 2) class318_sub1_sub3_sub3.method2440((byte) 49, 0);

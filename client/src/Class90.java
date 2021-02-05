@@ -8,7 +8,7 @@ final class Class90 {
     static int anInt1514;
     static int anInt1515;
     static long aLong1516;
-    static int anInt1517;
+    static int regionTileY;
     static int[] anIntArray1518 = new int[14];
 
     public static void method852(int i) {

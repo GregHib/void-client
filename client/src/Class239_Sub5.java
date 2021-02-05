@@ -52,12 +52,12 @@ final class Class239_Sub5 extends Class239 {
         if (i != 118) anInt5886 = 111;
         byte i_5_ = (byte) (i_4_ >> 28);
         int i_6_ = i_4_ >> 14 & 0x3fff;
-        class318_sub1_sub3_sub3_sub2.anIntArray10320[0] = -za_Sub2.anInt9780 + i_6_;
+        class318_sub1_sub3_sub3_sub2.anIntArray10320[0] = -za_Sub2.regionTileX + i_6_;
         int i_7_ = 0x3fff & i_4_;
-        class318_sub1_sub3_sub3_sub2.anInt6377 = (((class318_sub1_sub3_sub3_sub2.anIntArray10320[0]) << 9) + (class318_sub1_sub3_sub3_sub2.method2436((byte) 91) << 8));
-        class318_sub1_sub3_sub3_sub2.anIntArray10317[0] = i_7_ + -Class90.anInt1517;
-        class318_sub1_sub3_sub3_sub2.anInt6388 = (((class318_sub1_sub3_sub3_sub2.anIntArray10317[0]) << 9) - -(class318_sub1_sub3_sub3_sub2.method2436((byte) 85) << 8));
-        Class355.anInt4372 = class318_sub1_sub3_sub3_sub2.aByte6381 = class318_sub1_sub3_sub3_sub2.aByte6376 = i_5_;
+        class318_sub1_sub3_sub3_sub2.x = (((class318_sub1_sub3_sub3_sub2.anIntArray10320[0]) << 9) + (class318_sub1_sub3_sub3_sub2.method2436((byte) 91) << 8));
+        class318_sub1_sub3_sub3_sub2.anIntArray10317[0] = i_7_ + -Class90.regionTileY;
+        class318_sub1_sub3_sub3_sub2.y = (((class318_sub1_sub3_sub3_sub2.anIntArray10317[0]) << 9) - -(class318_sub1_sub3_sub3_sub2.method2436((byte) 85) << 8));
+        Class355.anInt4372 = class318_sub1_sub3_sub3_sub2.plane = class318_sub1_sub3_sub3_sub2.aByte6376 = i_5_;
         if (Class79.method802((class318_sub1_sub3_sub3_sub2.anIntArray10317[0]), (class318_sub1_sub3_sub3_sub2.anIntArray10320[0]), true)) class318_sub1_sub3_sub3_sub2.aByte6376++;
         if (Class154.aClass348_Sub49Array2105[i_3_] != null) class318_sub1_sub3_sub3_sub2.method2452((byte) 84, (Class154.aClass348_Sub49Array2105[i_3_]));
         Class328_Sub1.anInt6513 = 0;

@@ -60,7 +60,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
         anInt10122++;
         if (aClass64_10124 == null) return null;
         Class101 class101 = var_ha.method3705();
-        class101.method894((this.anInt6377 - -this.aShort8781), this.anInt6382, (this.anInt6388 - -this.aShort8769));
+        class101.method894((this.x - -this.aShort8781), this.anInt6382, (this.y - -this.aShort8769));
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10130, false);
         if (Class305.aBoolean3870) aClass64_10124.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         else aClass64_10124.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
@@ -104,7 +104,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
         Class64 class64 = method2488(131072, i_3_, var_ha);
         if (class64 != null) {
             Class101 class101 = var_ha.method3705();
-            class101.method894(this.anInt6377, this.anInt6382, this.anInt6388);
+            class101.method894(this.x, this.anInt6382, this.y);
             if (Class305.aBoolean3870) return class64.method623(i_2_, i, class101, false, 0, Class132.anInt1906);
             return class64.method628(i_2_, i, class101, false, 0);
         }
@@ -138,7 +138,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
             Class2 class2 = method2491((byte) -51, true, 262144, var_ha);
             var_r = class2 == null ? null : class2.aR118;
         }
-        if (var_r != null) Class169.method1301(var_r, this.aByte6376, this.anInt6377, this.anInt6388, null);
+        if (var_r != null) Class169.method1301(var_r, this.aByte6376, this.x, this.y, null);
     }
 
     final void method2387(ha var_ha, int i) {
@@ -156,13 +156,13 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
             var_r = aR10128;
             aR10128 = null;
         }
-        if (var_r != null) Class130.method1130(var_r, this.aByte6376, this.anInt6377, this.anInt6388, null);
+        if (var_r != null) Class130.method1130(var_r, this.aByte6376, this.x, this.y, null);
         if (i != 836) method2391(null, -123, 0, -64);
     }
 
     final Class30 method2381(ha var_ha, int i) {
         if (i != 7) method2381(null, -71);
-        if (aClass30_10127 == null) aClass30_10127 = (Class348_Sub23_Sub1.method2967(this.anInt6377, method2488(0, 0, var_ha), this.anInt6388, this.anInt6382, 2));
+        if (aClass30_10127 == null) aClass30_10127 = (Class348_Sub23_Sub1.method2967(this.x, method2488(0, 0, var_ha), this.y, this.anInt6382, 2));
         anInt10140++;
         return aClass30_10127;
     }
@@ -181,7 +181,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
             if (this.aByte6376 < 3) var_s_6_ = (Class348_Sub1_Sub1.aSArray8801[this.aByte6376 - -1]);
             else var_s_6_ = null;
         }
-        return class51.method476(var_ha, var_s_6_, aByte10145, i_5_, this.anInt6377, bool, var_s, this.anInt6382, this.anInt6388, aByte10118, 128);
+        return class51.method476(var_ha, var_s_6_, aByte10145, i_5_, this.x, bool, var_s, this.anInt6382, this.y, aByte10118, 128);
     }
 
     final int method2394(boolean bool) {
@@ -198,9 +198,9 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
                 aBoolean10130 = class51.anInt874 != 0 && !bool;
                 aByte10145 = (byte) i_13_;
                 aShort10129 = (short) class51.anInt941;
-                this.anInt6388 = i_10_;
+                this.y = i_10_;
                 aBoolean10138 = bool;
-                this.anInt6377 = i_8_;
+                this.x = i_8_;
                 aByte10118 = (byte) i_14_;
                 aBoolean10137 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean10138 && Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350) != 0);
                 Class2 class2 = method2491((byte) -51, aBoolean10137, 2048, var_ha);

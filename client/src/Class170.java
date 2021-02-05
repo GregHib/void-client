@@ -192,7 +192,7 @@ final class Class170 implements Interface17 {
                 class318_sub1_sub3_sub3_sub1.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.readShortAdd(-1), -1)), -2);
                 class318_sub1_sub3_sub3_sub1.method2434((byte) 95, class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1399);
                 class318_sub1_sub3_sub3_sub1.anInt10310 = class318_sub1_sub3_sub3_sub1.aClass79_10505.anInt1329 << 3;
-                if (class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(0)) Class223.method1614(979190089, class318_sub1_sub3_sub3_sub1, (class318_sub1_sub3_sub3_sub1.aByte6381), (class318_sub1_sub3_sub3_sub1.anIntArray10317[0]), (class318_sub1_sub3_sub3_sub1.anIntArray10320[0]), null, null, 0);
+                if (class318_sub1_sub3_sub3_sub1.aClass79_10505.method793(0)) Class223.method1614(979190089, class318_sub1_sub3_sub3_sub1, (class318_sub1_sub3_sub3_sub1.plane), (class318_sub1_sub3_sub3_sub1.anIntArray10317[0]), (class318_sub1_sub3_sub3_sub1.anIntArray10320[0]), null, null, 0);
             }
             if ((0x8 & i_40_) != 0) {
                 int[] is = new int[4];

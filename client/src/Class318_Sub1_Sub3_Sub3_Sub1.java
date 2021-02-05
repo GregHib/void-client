@@ -62,7 +62,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
         Class101 class101 = var_ha.method3705();
         int i_11_ = this.aClass264_10217.method2019((byte) -78);
         class101.method895(i_11_);
-        class101.method891(this.anInt6377, this.anInt6382, this.anInt6388);
+        class101.method891(this.x, this.anInt6382, this.y);
         boolean bool = false;
         for (int i_12_ = i_10_; (this.aClass64Array10323.length > i_12_); i_12_++) {
             if (this.aClass64Array10323[i_12_] != null) {
@@ -133,12 +133,12 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
         Class101 class101 = var_ha.method3705();
         int i_20_ = this.aClass264_10217.method2019((byte) -69);
         class101.method895(i_20_);
-        Class357 class357 = (Class147.aClass357ArrayArrayArray2029[this.aByte6381][this.anInt6377 >> Class362.anInt4459][this.anInt6388 >> Class362.anInt4459]);
+        Class357 class357 = (Class147.aClass357ArrayArrayArray2029[this.plane][this.x >> Class362.anInt4459][this.y >> Class362.anInt4459]);
         if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null) {
             int i_21_ = (-class357.aClass318_Sub1_Sub1_4402.aShort8727 + this.anInt10274);
             this.anInt10274 -= (float) i_21_ / 10.0F;
         } else this.anInt10274 -= (float) this.anInt10274 / 10.0F;
-        class101.method891(this.anInt6377, (-this.anInt10274 + this.anInt6382 + -20), this.anInt6388);
+        class101.method891(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y);
         Class225 class225 = this.method2422((byte) 72);
         Class79 class79 = (this.aClass79_10505.anIntArray1377 != null ? this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1) : this.aClass79_10505);
         this.aBoolean10324 = false;
@@ -157,7 +157,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
             }
         }
         class101.method895(i_20_);
-        class101.method891(this.anInt6377, (-this.anInt10274 + (-5 + this.anInt6382)), this.anInt6388);
+        class101.method891(this.x, (-this.anInt10274 + (-5 + this.anInt6382)), this.y);
         if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aClass64Array10323).length, method2442(1810797122), false);
         this.method2432(var_ha, -15074, class101, false, this.aClass64Array10323);
         if (Class305.aBoolean3870) {
@@ -200,7 +200,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
     }
 
     final void method2444(int i, boolean bool, int i_26_, int i_27_, int i_28_, int i_29_) {
-        this.aByte6381 = this.aByte6376 = (byte) i_29_;
+        this.plane = this.aByte6376 = (byte) i_29_;
         anInt10515++;
         if (Class79.method802(i, i_26_, true)) this.aByte6376++;
         if (this.anInt10286 != -1 && Class10.aClass87_191.method835(this.anInt10286, 7).anInt245 == 1) {
@@ -237,8 +237,8 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
         if (i_27_ >= 91) {
             this.anInt10326 = 0;
             this.anIntArray10317[0] = i;
-            this.anInt6377 = (this.anIntArray10320[0] << 9) + (i_28_ << 8);
-            this.anInt6388 = (this.anIntArray10317[0] << 9) + (i_28_ << 8);
+            this.x = (this.anIntArray10320[0] << 9) + (i_28_ << 8);
+            this.y = (this.anIntArray10317[0] << 9) + (i_28_ << 8);
             if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327.method2529();
         }
     }
@@ -288,7 +288,7 @@ final class Class318_Sub1_Sub3_Sub3_Sub1 extends Class318_Sub1_Sub3_Sub3 {
             if (i > -125) method2391(null, -2, -103, 34);
             Class101 class101 = var_ha.method3705();
             class101.method895(this.aClass264_10217.method2019((byte) -118));
-            class101.method891(this.anInt6377, -20 + this.anInt6382, this.anInt6388);
+            class101.method891(this.x, -20 + this.anInt6382, this.y);
             this.method2432(var_ha, -15074, class101, this.aBoolean10318, (this.aClass64Array10323));
             this.aClass64Array10323[0] = this.aClass64Array10323[1] = this.aClass64Array10323[2] = null;
         }

@@ -331,11 +331,11 @@ final class Class82 {
                             break;
                         }
                         if (string.equalsIgnoreCase("getcgcoord")) {
-                            Applet_Sub1.method94(("x:" + ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) >> 9) + " z:" + ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) >> 9)), -117);
+                            Applet_Sub1.method94(("x:" + ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x) >> 9) + " z:" + ((Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y) >> 9)), -117);
                             break;
                         }
                         if (string.equalsIgnoreCase("getheight")) {
-                            Applet_Sub1.method94(("Height: " + (aa_Sub1.aSArray5191[(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381)].method3982((byte) -86, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388) >> 9, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377) >> 9))), i ^ 0x1);
+                            Applet_Sub1.method94(("Height: " + (aa_Sub1.aSArray5191[(Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane)].method3982((byte) -86, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y) >> 9, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x) >> 9))), i ^ 0x1);
                             break;
                         }
                         if (string.equalsIgnoreCase("resetminimap")) {
@@ -369,8 +369,8 @@ final class Class82 {
                             break;
                         }
                         if (string.equalsIgnoreCase("getcamerapos")) {
-                            Applet_Sub1.method94(("Pos: " + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) + "," + (((Class286_Sub4.anInt6246 >> 9) - -za_Sub2.anInt9780) >> 6) + "," + ((Class59_Sub2_Sub2.anInt8685 >> 9) + Class90.anInt1517 >> 6) + "," + (((Class286_Sub4.anInt6246 >> 9) - -za_Sub2.anInt9780) & 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 >> 9) - -Class90.anInt1517 & 0x3f) + " Height: " + ((Class275.method2064(Class286_Sub4.anInt6246, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381), 11219, Class59_Sub2_Sub2.anInt8685)) - Class305.anInt3855)), 126);
-                            Applet_Sub1.method94(("Look: " + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381) + "," + (Class352.anInt4336 - -za_Sub2.anInt9780 >> 6) + "," + (Class90.anInt1517 + Class281.anInt3647 >> 6) + "," + (0x3f & Class352.anInt4336 - -za_Sub2.anInt9780) + "," + (0x3f & Class281.anInt3647 - -Class90.anInt1517) + " Height: " + ((Class275.method2064(Class352.anInt4336, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381), 11219, Class281.anInt3647)) - Class121.anInt1797)), -90);
+                            Applet_Sub1.method94(("Pos: " + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) + "," + (((Class286_Sub4.anInt6246 >> 9) - -za_Sub2.regionTileX) >> 6) + "," + ((Class59_Sub2_Sub2.anInt8685 >> 9) + Class90.regionTileY >> 6) + "," + (((Class286_Sub4.anInt6246 >> 9) - -za_Sub2.regionTileX) & 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 >> 9) - -Class90.regionTileY & 0x3f) + " Height: " + ((Class275.method2064(Class286_Sub4.anInt6246, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane), 11219, Class59_Sub2_Sub2.anInt8685)) - Class305.anInt3855)), 126);
+                            Applet_Sub1.method94(("Look: " + (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane) + "," + (Class352.anInt4336 - -za_Sub2.regionTileX >> 6) + "," + (Class90.regionTileY + Class281.anInt3647 >> 6) + "," + (0x3f & Class352.anInt4336 - -za_Sub2.regionTileX) + "," + (0x3f & Class281.anInt3647 - -Class90.regionTileY) + " Height: " + ((Class275.method2064(Class352.anInt4336, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane), 11219, Class281.anInt3647)) - Class121.anInt1797)), -90);
                             break;
                         }
                         if (string.equals("renderprofile") || string.equals("rp")) {

@@ -82,11 +82,11 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
         this.anInt6382 = i_12_;
         this.aBoolean8741 = bool;
         this.aShort8747 = (short) i_17_;
-        this.anInt6377 = i_11_;
+        this.x = i_11_;
         this.aByte8745 = i_18_;
         this.aShort8751 = (short) i_15_;
-        this.anInt6388 = i_13_;
-        this.aByte6381 = (byte) i;
+        this.y = i_13_;
+        this.plane = (byte) i;
         this.aShort8750 = (short) i_16_;
         this.aShort8743 = (short) i_14_;
         this.aByte6376 = (byte) i_10_;
@@ -114,7 +114,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
         while_104_:
         for (int i_20_ = this.aShort8743; (i_20_ <= this.aShort8751); i_20_++) {
             for (int i_21_ = this.aShort8750; this.aShort8747 >= i_21_; i_21_++) {
-                long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.aByte6381][i_20_][i_21_]);
+                long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.plane][i_20_][i_21_]);
                 long l_22_ = 0L;
                 while_103_:
                 while (l_22_ <= 48L) {
@@ -169,13 +169,13 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
             int i_33_ = 0;
             while_106_:
             for (/**/; i_19_ > i_33_; i_33_++) {
-                long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.aByte6381][i_32_][i_31_]);
+                long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.plane][i_32_][i_31_]);
                 while (l != 0L) {
                     Class211 class211 = (Class239_Sub14.aClass211Array5993[(int) (-1L + (l & 0xffffL))]);
                     l >>>= 16;
                     if (class211.aClass348_Sub1_2745 == class348_sub1s[i_33_]) continue while_106_;
                 }
-                l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.aByte6381][i_29_][i_30_]);
+                l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.plane][i_29_][i_30_]);
                 while (l != 0) {
                     Class211 class211 = (Class239_Sub14.aClass211Array5993[(int) (-1L + (0xffffL & l))]);
                     l >>>= 16;

@@ -406,8 +406,8 @@ final class Class325 {
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, r_Sub2.anInt10483);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class348_Sub49_Sub1.anInt9750);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 89);
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388));
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x));
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 63);
                             } else {
                                 Class93.anInt1534 = i_72_;
@@ -417,7 +417,7 @@ final class Class325 {
                             }
                             Class348_Sub42_Sub14.method3243(123, class348_sub47);
                             Class298.method2252(true, i_74_, i_75_, (byte) -120, 1, 0, 1, -4, 0);
-                        } else Class361.method3502(i_75_ + Class90.anInt1517, 2, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381), i_74_ + za_Sub2.anInt9780);
+                        } else Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane), i_74_ + za_Sub2.regionTileX);
                     }
                     if (i_76_ == 4) {
                         Class93.anInt1534 = i_72_;
@@ -426,8 +426,8 @@ final class Class325 {
                         Class348.anInt4292 = 0;
                         Class21.anInt321++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub42_Sub8.aClass351_9553), (Class348_Sub23_Sub2.aClass77_9029), -113);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class90.anInt1517 + i_75_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(120, i_74_ + za_Sub2.anInt9780);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class90.regionTileY + i_75_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(120, i_74_ + za_Sub2.regionTileX);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) 117, (!Class182.aClass346_2449.method2696(82, -122) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, 0x7fffffff & (int) (l >>> 32));
                         Class348_Sub42_Sub14.method3243(117, class348_sub47);
@@ -473,10 +473,10 @@ final class Class325 {
                         Class93.anInt1534 = i_72_;
                         Class205.anInt2689++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class344.aClass351_4262, (Class348_Sub23_Sub2.aClass77_9029), -107);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_74_ + za_Sub2.anInt9780, (byte) 3);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_74_ + za_Sub2.regionTileX, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-107, i_77_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class9.anInt169, (byte) 3);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.anInt1517 + i_75_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.regionTileY + i_75_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -126) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(90, Class301.anInt3829);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeIntMiddle(Class149.anInt2046, (byte) 44);
@@ -494,8 +494,8 @@ final class Class325 {
                         Class239_Sub20.anInt6048 = 2;
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class190.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.anInt1517 + i_75_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-110, i_74_ + za_Sub2.anInt9780);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.regionTileY + i_75_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-110, i_74_ + za_Sub2.regionTileX);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -44, (!Class182.aClass346_2449.method2696(82, -122) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(97, i_77_);
                         Class348_Sub42_Sub14.method3243(118, class348_sub47);
@@ -541,8 +541,8 @@ final class Class325 {
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class101_Sub1.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 86, (!Class182.aClass346_2449.method2696(82, -121) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(31, (int) (l >>> 32) & 0x7fffffff);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-104, za_Sub2.anInt9780 + i_74_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.anInt1517 + i_75_, (byte) 3);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-104, za_Sub2.regionTileX + i_74_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.regionTileY + i_75_, (byte) 3);
                         Class348_Sub42_Sub14.method3243(119, class348_sub47);
                         Class309.method2307(i_75_, l, i_74_, 93);
                     }
@@ -566,7 +566,7 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 12) {
-                        if (Class192.anInt2581 > 0 && Class182.aClass346_2449.method2696(82, -127) && Class182.aClass346_2449.method2696(81, -126)) Class361.method3502(i_75_ + Class90.anInt1517, 2, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.aByte6381), za_Sub2.anInt9780 - -i_74_);
+                        if (Class192.anInt2581 > 0 && Class182.aClass346_2449.method2696(82, -127) && Class182.aClass346_2449.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.plane), za_Sub2.regionTileX - -i_74_);
                         else {
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
@@ -574,8 +574,8 @@ final class Class325 {
                             Class348.anInt4292 = 0;
                             Class239_Sub20.anInt6048 = 1;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class195.aClass351_5015), (Class348_Sub23_Sub2.aClass77_9029), -123);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(101, za_Sub2.anInt9780 + i_74_);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.anInt1517 - -i_75_);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(101, za_Sub2.regionTileX + i_74_);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.regionTileY - -i_75_);
                             Class348_Sub42_Sub14.method3243(6, class348_sub47);
                         }
                     }
@@ -629,9 +629,9 @@ final class Class325 {
                         Class348.anInt4292 = 0;
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class193.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.anInt1517 + i_75_, (byte) 3);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.regionTileY + i_75_, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -96, (Class182.aClass346_2449.method2696(82, -125) ? 1 : 0));
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.anInt9780 + i_74_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(68, 0x7fffffff & (int) (l >>> 32));
                         Class348_Sub42_Sub14.method3243(-68, class348_sub47);
                         Class309.method2307(i_75_, l, i_74_, 25);
@@ -679,8 +679,8 @@ final class Class325 {
                         Class26.anInt385 = i_73_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(r_Sub1.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, za_Sub2.anInt9780 + i_74_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_75_ + Class90.anInt1517);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, za_Sub2.regionTileX + i_74_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_75_ + Class90.regionTileY);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) 120, (!Class182.aClass346_2449.method2696(82, -123) ? 0 : 1));
                         Class348_Sub42_Sub14.method3243(120, class348_sub47);
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
@@ -692,11 +692,11 @@ final class Class325 {
                         Class93.anInt1534 = i_72_;
                         client.anInt5187++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class344.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(za_Sub2.anInt9780 - -i_74_, (byte) 3);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(za_Sub2.regionTileX - -i_74_, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-85, Class301.anInt3829);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class9.anInt169, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 127, Class149.anInt2046);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-84, Class90.anInt1517 + i_75_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-84, Class90.regionTileY + i_75_);
                         Class348_Sub42_Sub14.method3243(-62, class348_sub47);
                         Class298.method2252(true, i_74_, i_75_, (byte) -91, 1, 0, 1, -4, 0);
                     }
@@ -724,9 +724,9 @@ final class Class325 {
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub16_Sub1.aClass351_8857), (Class348_Sub23_Sub2.aClass77_9029), -105);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class301.anInt3829);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.anInt9780 + i_74_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeIntLittle(-128, Class149.anInt2046);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-82, Class90.anInt1517 + i_75_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-82, Class90.regionTileY + i_75_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -74, (!Class182.aClass346_2449.method2696(82, -125) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class9.anInt169, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle((int) (l >>> 32) & 0x7fffffff, (byte) 3);
@@ -771,9 +771,9 @@ final class Class325 {
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub49_Sub1.aClass351_9749), (Class348_Sub23_Sub2.aClass77_9029), -81);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(106, i_74_ - -za_Sub2.anInt9780);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(106, i_74_ - -za_Sub2.regionTileX);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, i_75_ - -Class90.anInt1517);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, i_75_ - -Class90.regionTileY);
                         Class348_Sub42_Sub14.method3243(116, class348_sub47);
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
                     }
@@ -785,8 +785,8 @@ final class Class325 {
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub42_Sub17.aClass351_9679), (Class348_Sub23_Sub2.aClass77_9029), -98);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -83, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.anInt9780 + i_74_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_75_ + Class90.anInt1517, (byte) 3);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_);
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_75_ + Class90.regionTileY, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, 0x7fffffff & (int) (l >>> 32));
                         Class348_Sub42_Sub14.method3243(127, class348_sub47);
                         Class309.method2307(i_75_, l, i_74_, 63);
@@ -826,8 +826,8 @@ final class Class325 {
                             Class348_Sub42_Sub13.anInt9620++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class202.aClass351_2661), (Class348_Sub23_Sub2.aClass77_9029), -117);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -101, (!Class182.aClass346_2449.method2696(82, -125) ? 0 : 1));
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-69, za_Sub2.anInt9780 + i_74_);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.anInt1517 + i_75_, (byte) 3);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-69, za_Sub2.regionTileX + i_74_);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.regionTileY + i_75_, (byte) 3);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(116, class348_sub47);
                             Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
@@ -897,9 +897,9 @@ final class Class325 {
                                 Class239_Sub20.anInt6048 = 2;
                                 Class93.anInt1534 = i_72_;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class252.aClass351_3237, Class348_Sub23_Sub2.aClass77_9029, -125));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-96, Class90.anInt1517 + i_75_);
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-96, Class90.regionTileY + i_75_);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, 0x7fffffff & (int) (l >>> 32));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_74_ - -za_Sub2.anInt9780, (byte) 3);
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_74_ - -za_Sub2.regionTileX, (byte) 3);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -91, (!Class182.aClass346_2449.method2696(82, -127) ? 0 : 1));
                                 Class348_Sub42_Sub14.method3243(118, class348_sub47);
                                 Class309.method2307(i_75_, l, i_74_, 24);
@@ -927,9 +927,9 @@ final class Class325 {
                                 Class300.anInt3820++;
                                 Class93.anInt1534 = i_72_;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class188.aClass351_2512, Class348_Sub23_Sub2.aClass77_9029, -91));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-108, i_75_ - -Class90.anInt1517);
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-108, i_75_ - -Class90.regionTileY);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-70, i_77_);
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(za_Sub2.anInt9780 + i_74_, (byte) 3);
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(za_Sub2.regionTileX + i_74_, (byte) 3);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -70, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
                                 Class348_Sub42_Sub14.method3243(-22, class348_sub47);
                                 Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);

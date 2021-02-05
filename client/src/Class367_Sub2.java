@@ -21,9 +21,9 @@ final class Class367_Sub2 extends Class367 {
     static final void method3536(int i, int i_0_, int i_1_, int i_2_, Class318_Sub1_Sub2 class318_sub1_sub2) {
         Class357 class357 = Class348_Sub46.method3321(i, i_0_, i_1_);
         if (class357 != null) {
-            class318_sub1_sub2.anInt6377 = (i_0_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037;
+            class318_sub1_sub2.x = (i_0_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037;
             class318_sub1_sub2.anInt6382 = i_2_;
-            class318_sub1_sub2.anInt6388 = (i_1_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037;
+            class318_sub1_sub2.y = (i_1_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037;
             class357.aClass318_Sub1_Sub2_4408 = class318_sub1_sub2;
             int i_3_ = aa_Sub1.aSArray5191 == Class332.aSArray4142 ? 1 : 0;
             if (class318_sub1_sub2.method2376(-52)) {

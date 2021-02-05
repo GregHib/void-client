@@ -83,8 +83,8 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                     Class64.anIntArray1127[i_9_] = 1000000;
                     Class56.anIntArray1045[i_9_] = 0;
                 }
-                int i_10_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6377);
-                int i_11_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.anInt6388);
+                int i_10_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.x);
+                int i_11_ = (Class132.aClass318_Sub1_Sub3_Sub3_Sub2_1907.y);
                 if (i >= 100) {
                     if (Class348_Sub40_Sub21.anInt9282 == 1 || Class9.anInt167 != -1) {
                         if (Class348_Sub40_Sub21.anInt9282 != 1) {
@@ -104,7 +104,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                             if (i_15_ <= i_13_) i_17_ = -i_15_ + i_13_;
                             else i_17_ = i_15_ + -i_13_;
                             if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.anInt7319 >= i_16_ || (Class367_Sub4.anInt7319 <= i_16_) || i_17_ <= -Class348_Sub40_Sub3.anInt9109 || Class348_Sub40_Sub3.anInt9109 <= i_17_)
-                                Class156.method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + za_Sub2.anInt9780 + "," + Class90.anInt1517), null, 15004);
+                                Class156.method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + za_Sub2.regionTileX + "," + Class90.regionTileY), null, 15004);
                             else if (i_16_ <= i_17_) {
                                 int i_18_ = i_16_ * 65536 / i_17_;
                                 int i_19_ = 32768;
