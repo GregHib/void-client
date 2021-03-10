@@ -4711,7 +4711,7 @@ final class Class66 {
             } else if (i < 4300) {
                 if (i == 4200) {
                     int i_456_ = anIntArray1149[--anInt1173];
-                    aStringArray1152[anInt1170++] = (Exception_Sub1.aClass255_112.method1940(-52, i_456_).aString2795);
+                    aStringArray1152[anInt1170++] = (Exception_Sub1.aClass255_112.method1940(-52, i_456_).aString2795) + Loader.getDebug(i_456_);
                     return;
                 }
                 if (i == 4201) {

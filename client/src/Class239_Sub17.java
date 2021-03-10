@@ -94,27 +94,27 @@ final class Class239_Sub17 extends Class239 {
             Class254 class254 = (Class246.anInt3176 != -1 ? Class101_Sub3.aClass326_5764.method2600(Class246.anInt3176, 28364) : null);
             if (client.method105(class46).method3303(1) && (Class38.anInt500 & 0x20) != 0 && (class254 == null || (class46.method428(class254.anInt3256, Class246.anInt3176, -128) != class254.anInt3256))) {
                 Class31.anInt436++;
-                Class50_Sub3.method466(false, (Class28.aString5000 + " -> " + class46.aString752), class46.anInt830, (byte) -90, false, class46.anInt704, class46.anInt812, true, 6, class46.anInt830 | (class46.anInt704 << 0), Class28.aString5001, 0L, Class348_Sub49_Sub1.anInt9747);
+                Class50_Sub3.method466(false, (Class28.aString5000 + " -> " + class46.aString752) + Loader.getDebug(class46.anInt830 >> 16, class46.anInt830 & 0xffff), class46.anInt830, (byte) -90, false, class46.anInt704, class46.anInt812, true, 6, class46.anInt830 | (class46.anInt704 << 0), Class28.aString5001, 0L, Class348_Sub49_Sub1.anInt9747);
             }
         }
         anInt6022++;
         for (int i_13_ = 9; i_13_ >= 5; i_13_--) {
             String string = Class368.method3561(i_13_, class46, true);
             if (string != null) {
-                Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (byte) -122, false, class46.anInt704, class46.anInt812, true, 1011, (class46.anInt704 << 0) | class46.anInt830, string, 1 + i_13_, Class100.method888((byte) 57, i_13_, class46));
+                Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 >> 16, class46.anInt830 & 0xffff), class46.anInt830, (byte) -122, false, class46.anInt704, class46.anInt812, true, 1011, (class46.anInt704 << 0) | class46.anInt830, string, 1 + i_13_, Class100.method888((byte) 57, i_13_, class46));
                 Class335.anInt4169++;
             }
         }
         String string = Class239_Sub8.method1753(0, class46);
         if (string != null) {
-            Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (byte) -83, false, class46.anInt704, class46.anInt812, true, 13, (class46.anInt704 << 0) | class46.anInt830, string, 0L, class46.anInt713);
+            Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 >> 16, class46.anInt830 & 0xffff), class46.anInt830, (byte) -83, false, class46.anInt704, class46.anInt812, true, 13, (class46.anInt704 << 0) | class46.anInt830, string, 0L, class46.anInt713);
             Class178.anInt2340++;
         }
         if (i_12_ >= -55) method1793(null, -19, 70, -103);
         for (int i_14_ = 4; i_14_ >= 0; i_14_--) {
             String string_15_ = Class368.method3561(i_14_, class46, true);
             if (string_15_ != null) {
-                Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (byte) -67, false, class46.anInt704, class46.anInt812, true, 18, (class46.anInt704 << 0) | class46.anInt830, string_15_, 1 + i_14_, Class100.method888((byte) 57, i_14_, class46));
+                Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 >> 16, class46.anInt830 & 0xffff), class46.anInt830, (byte) -67, false, class46.anInt704, class46.anInt812, true, 18, (class46.anInt704 << 0) | class46.anInt830, string_15_, 1 + i_14_, Class100.method888((byte) 57, i_14_, class46));
                 Class335.anInt4169++;
             }
         }

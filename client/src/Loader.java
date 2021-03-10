@@ -118,6 +118,14 @@ public class Loader extends Applet {
         return url;
     }
 
+    public static String getDebug(int id) {
+        return debug ? " <col=00ff00>(</col>" + id + "<col=00ff00>)</col>" : "";
+    }
+
+    public static String getDebug(int id, int component) {
+        return debug ? " <col=00ff00>(</col>" + id + " - " + component + "<col=00ff00>)</col>" : "";
+    }
+
     public static String getDebug(int id, int x, int y, int plane) {
         return debug ? " <col=00ff00>(</col>" + id + " - " + x + ", " + y + ", " + plane + "<col=00ff00>)</col>" : "";
     }

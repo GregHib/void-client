@@ -288,7 +288,7 @@ final class Class239_Sub24 extends Class239 {
                                         }
                                     }
                                     Class348_Sub33.anInt6956++;
-                                    Class50_Sub3.method466(((Class132.aPlayer_1907.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=ff9040>" + class213.aString2795), i_32_, (byte) -122, false, i_33_, -1, true, 1010, i_57_, (Class274.aClass274_3505.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973, Class286_Sub8.anInt6299);
+                                    Class50_Sub3.method466(((Class132.aPlayer_1907.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (byte) -122, false, i_33_, -1, true, 1010, i_57_, (Class274.aClass274_3505.method2063(Class348_Sub33.anInt6967, 544)), class348_sub34.anInt6973, Class286_Sub8.anInt6299);
                                     class348_sub34 = ((Class348_Sub34) class348_sub37.aClass262_6998.method2003(-127));
                                     i_57_++;
                                 }
