@@ -22,7 +22,7 @@ final class Class330 {
     private final int anInt4123;
     private final int anInt4124;
     static int anInt4125;
-    static Class114 aClass114_4126 = new Class114(5, 6);
+    static Class114 aClass114_4126 = new Class114(5, 8);
     static boolean aBoolean4127 = false;
 
     final boolean method2628(int i, byte i_0_, r var_r, int i_1_) {

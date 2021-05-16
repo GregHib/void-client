@@ -50,6 +50,6 @@ abstract class Class47 {
     }
 
     static {
-        aClass114_843 = new Class114(66, 6);
+        aClass114_843 = new Class114(66, 8);
     }
 }
