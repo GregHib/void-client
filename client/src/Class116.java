@@ -6,7 +6,7 @@ import java.io.IOException;
 
 final class Class116 {
     static int anInt1758;
-    static boolean aBoolean1759 = false;
+    static boolean shiftClick = true;
     static int anInt1760;
     static String aString1761;
     static Class114 aClass114_1762;

@@ -122,7 +122,7 @@ final class Class261 {
         Class166.aClass262_2187.method1988(Class348_Sub40_Sub4.aClass262_9111, (byte) -115);
         Class348_Sub40_Sub38.aClass262_9478.method1988(Class348_Sub40_Sub4.aClass262_9111, (byte) -115);
         if (Class73.anInt4776 > 1) {
-            if (!Class116.aBoolean1759 || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295);
+            if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295);
             else Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295.aClass348_4295);
             Class135_Sub2.aClass348_Sub42_Sub12_4846 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295);
         } else {

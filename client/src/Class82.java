@@ -320,12 +320,12 @@ final class Class82 {
                             break;
                         }
                         if (string.equalsIgnoreCase("shiftclick")) {
-                            if (Class116.aBoolean1759) {
+                            if (Class116.shiftClick) {
                                 Applet_Sub1.method94("Shift-click disabled.", i ^ ~0x24);
-                                Class116.aBoolean1759 = false;
+                                Class116.shiftClick = false;
                             } else {
                                 Applet_Sub1.method94("Shift-click ENABLED!", 106);
-                                Class116.aBoolean1759 = true;
+                                Class116.shiftClick = true;
                                 break;
                             }
                             break;

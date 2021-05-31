@@ -45,7 +45,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
             if (i >= -71) method1077(null, (byte) -41);
             String string;
             if (r.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + Class274.aClass274_3515.method2063(Class348_Sub33.anInt6967, 544) + Class28.aString5000 + " ->");
-            else if (!Class116.aBoolean1759 || !Class182.aClass346_2449.method2696(81, -121) || Class73.anInt4776 <= 2) {
+            else if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -121) || Class73.anInt4776 <= 2) {
                 Class348_Sub42_Sub12 class348_sub42_sub12 = Class316.aClass348_Sub42_Sub12_3963;
                 if (class348_sub42_sub12 == null) return;
                 string = Class316.method2367((byte) -52, class348_sub42_sub12);

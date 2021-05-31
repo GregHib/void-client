@@ -149,7 +149,7 @@ public final class client extends Applet_Sub1 {
         Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172 = new short[256];
         if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class10.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false;
         if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
-            Class116.aBoolean1759 = true;
+            Class116.shiftClick = true;
             Class136.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664;
             Class268.anInt3439 = 16777215;
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub51.aShortArrayArrayArray7262;
