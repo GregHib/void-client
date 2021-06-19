@@ -123,7 +123,6 @@ final class Class133 {
                     }
                     if ((i_0_ & 0x2) != 0) {
                         player.anInt10524 = class348_sub49_sub2.readUnsignedShort(842397944);
-                        System.out.println("Read face " + player.anInt10524);
                         if (player.anInt10319 == 0) {
                             player.method2440((byte) 49, player.anInt10524);
                             player.anInt10524 = -1;
@@ -189,7 +188,6 @@ final class Class133 {
                     }
                     if ((i_0_ & 0x80) != 0) {
                         Class259.aByteArray3300[i] = class348_sub49_sub2.readByteSubtract(-27697);
-                        System.out.println("Read movement type " + Class259.aByteArray3300[i]);
                     }
                     if ((i_0_ & 0x20) != 0) {
                         int i_28_ = class348_sub49_sub2.readShortAddLittle(-126);
