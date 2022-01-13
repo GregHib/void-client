@@ -208,7 +208,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -34);
             String string_16_ = string;
             if (bool_15_) string_16_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -64);
-            long l = Class299.aClass348_Sub49_Sub2_3813.method3365(-456577760);
+            long l = Class299.aClass348_Sub49_Sub2_3813.readLong(-456577760);
             long l_17_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             long l_18_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
@@ -944,7 +944,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -81);
             String string_114_ = string;
             if (bool_113_) string_114_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -39);
-            long l = Class299.aClass348_Sub49_Sub2_3813.method3365(-456577760);
+            long l = Class299.aClass348_Sub49_Sub2_3813.readLong(-456577760);
             long l_115_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             long l_116_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
@@ -1694,7 +1694,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub21.aString6854 = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -112);
             boolean bool_233_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1;
             if (bool_233_) Class299.aClass348_Sub49_Sub2_3813.readString((byte) 108);
-            long l = Class299.aClass348_Sub49_Sub2_3813.method3365(-456577760);
+            long l = Class299.aClass348_Sub49_Sub2_3813.readLong(-456577760);
             Class50.aString863 = Class27.method313(l, -104);
             Class219.aByte2871 = Class299.aClass348_Sub49_Sub2_3813.readByte(-90);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);

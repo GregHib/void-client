@@ -375,7 +375,7 @@ class Class348_Sub49 extends Class348 {
         return ((0xff & (this.aByteArray7154[this.anInt7197 - 4])) + (((0xff & (this.aByteArray7154[-3 + this.anInt7197])) << 8) + (~0xffffff & ((this.aByteArray7154[this.anInt7197 - 1]) << 24)) + (((this.aByteArray7154[this.anInt7197 - 2]) & 0xff) << 16)));
     }
 
-    final long method3365(int i) {
+    final long readLong(int i) {
         anInt7149++;
         if (i != -456577760) return 14L;
         long l = 0xffffffffL & (long) readInt((byte) -126);

@@ -26,8 +26,8 @@ final class Class182 {
             return;
         } else {
             Class348_Sub49 class348_sub49 = new Class348_Sub49(Class98.method878((Class110_Sub1.method1039((Class348_Sub23_Sub3.aString9043), true)), -125));
-            l = class348_sub49.method3365(-456577760);
-            Class348_Sub33.aLong6966 = class348_sub49.method3365(-456577760);
+            l = class348_sub49.readLong(-456577760);
+            Class348_Sub33.aLong6966 = class348_sub49.readLong(-456577760);
         }
         Class132.method1138(Class27.method313(l, -100), true, "", (byte) -115);
     }
