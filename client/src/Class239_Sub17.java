@@ -114,7 +114,7 @@ final class Class239_Sub17 extends Class239 {
         for (int i_14_ = 4; i_14_ >= 0; i_14_--) {
             String string_15_ = Class368.method3561(i_14_, class46, true);
             if (string_15_ != null) {
-                Class50_Sub3.method466(false, class46.aString752 + Loader.getDebug(class46.anInt830 >> 16, class46.anInt830 & 0xffff), class46.anInt830, (byte) -67, false, class46.anInt704, class46.anInt812, true, 18, (class46.anInt704 << 0) | class46.anInt830, string_15_, 1 + i_14_, Class100.method888((byte) 57, i_14_, class46));
+                Class50_Sub3.method466(false, class46.aString752, class46.anInt830, (byte) -67, false, class46.anInt704, class46.anInt812, true, 18, (class46.anInt704 << 0) | class46.anInt830, string_15_, 1 + i_14_, Class100.method888((byte) 57, i_14_, class46));
                 Class335.anInt4169++;
             }
         }
