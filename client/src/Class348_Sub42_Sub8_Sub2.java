@@ -125,7 +125,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class318_Sub6.aClass114_6424) {
-            InputStream_Sub2.method128(Class348_Sub26.aClass74_6891, (byte) 8);
+            InputStream_Sub2.method128(Class348_Sub26.aClass74_6891, (byte) 8); // object add
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -192,7 +192,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class330.aClass114_4126) {
-            InputStream_Sub2.method128(Class348_Sub16_Sub1.aClass74_8853, (byte) 8);
+            InputStream_Sub2.method128(Class348_Sub16_Sub1.aClass74_8853, (byte) 8); // sound area
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -246,22 +246,22 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == InputStream_Sub2.aClass114_82) {
-            InputStream_Sub2.method128(Class39.aClass74_515, (byte) 8);
+            InputStream_Sub2.method128(Class39.aClass74_515, (byte) 8); // floor item update
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class73.aClass114_4779) {
-            int i = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -78);
-            int i_23_ = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
-            int i_24_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(127);
-            int i_25_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -128);
-            int i_26_ = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
+            int shakeIntensity = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -78);
+            int type = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
+            int cycle = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(127);
+            int movementIntensity = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -128);
+            int speed = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -127);
-            Class181.aBooleanArray2374[i_23_] = true;
-            Class275.anIntArray3552[i_23_] = i;
-            Class255.anIntArray3273[i_23_] = i_25_;
-            Class338.anIntArray4196[i_23_] = i_26_;
-            Class318_Sub1_Sub1_Sub2.anIntArray9981[i_23_] = i_24_;
+            Class181.aBooleanArray2374[type] = true;
+            Class275.anIntArray3552[type] = shakeIntensity;
+            Class255.anIntArray3273[type] = movementIntensity;
+            Class338.anIntArray4196[type] = speed;
+            Class318_Sub1_Sub1_Sub2.anIntArray9981[type] = cycle;
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -285,7 +285,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class369_Sub2.aClass114_8590 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(Class374.aClass74_4537, (byte) 8);
+            InputStream_Sub2.method128(Class374.aClass74_4537, (byte) 8); // object remove
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -654,7 +654,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class264.aClass114_3371 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(Class59_Sub1_Sub2.aClass74_8662, (byte) 8);
+            InputStream_Sub2.method128(Class59_Sub1_Sub2.aClass74_8662, (byte) 8); // floor item add
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -708,18 +708,18 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class15.aClass114_229 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(Class286_Sub1.aClass74_6201, (byte) 8);
+            InputStream_Sub2.method128(Class286_Sub1.aClass74_6201, (byte) 8); // projectile displace
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class101_Sub2.aClass114_5742) {
-            int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) 31);
+            int y = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) 31);
             int i_85_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -104);
-            int i_86_ = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
-            int i_87_ = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
-            int i_88_ = (Class299.aClass348_Sub49_Sub2_3813.readShortAdd(126) << 2);
+            int x = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
+            int variableSpeed = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
+            int z = (Class299.aClass348_Sub49_Sub2_3813.readShortAdd(126) << 2);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -127);
-            Class239_Sub28.method1844(i_85_, i_86_, true, i_88_, !bool, i_87_, i);
+            Class239_Sub28.method1844(i_85_, x, true, z, !bool, variableSpeed, y);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -774,7 +774,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class312.aClass114_3925 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(aClass74_10437, (byte) 8);
+            InputStream_Sub2.method128(aClass74_10437, (byte) 8); // floor item remove
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -867,13 +867,13 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class168.aClass114_2248 == Class348_Sub3.aClass114_6584) {
-            int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
-            int i_104_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -87);
+            int x = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
+            int y = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -87);
             int i_105_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
-            int i_106_ = (Class299.aClass348_Sub49_Sub2_3813.readShortLittle(!bool) << 2);
-            int i_107_ = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
+            int z = (Class299.aClass348_Sub49_Sub2_3813.readShortLittle(!bool) << 2);
+            int variableSpeed = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -125);
-            Class348_Sub42_Sub12.method3231(i_104_, i, i_106_, i_107_, i_105_, -127);
+            Class348_Sub42_Sub12.method3231(y, x, z, variableSpeed, i_105_, -127);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -909,7 +909,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813.readByteSubtract(-27697) << 3);
             while ((Class299.aClass348_Sub49_Sub2_3813.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
                 Class74 class74 = (Class255.method1929((byte) -19)[Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255)]);
-                InputStream_Sub2.method128(class74, (byte) 8);
+                InputStream_Sub2.method128(class74, (byte) 8); // batch update
             }
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1003,7 +1003,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class133.aClass114_1914 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(Class348_Sub40_Sub38.aClass74_9475, (byte) 8);
+            InputStream_Sub2.method128(Class348_Sub40_Sub38.aClass74_9475, (byte) 8); // gfx area
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1033,7 +1033,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class348_Sub42_Sub8.aClass114_9550) {
-            InputStream_Sub2.method128(Class327.aClass74_4098, (byte) 8);
+            InputStream_Sub2.method128(Class327.aClass74_4098, (byte) 8); // floor item reveal
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1067,7 +1067,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class239_Sub21.aClass114_6058 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(Class186.aClass74_2491, (byte) 8);
+            InputStream_Sub2.method128(Class186.aClass74_2491, (byte) 8); // tile text
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1297,7 +1297,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class280.aClass114_3641) {
-            InputStream_Sub2.method128(Class348_Sub35.aClass74_6977, (byte) 8);
+            InputStream_Sub2.method128(Class348_Sub35.aClass74_6977, (byte) 8); // object pre fetch
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1396,7 +1396,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class239_Sub14.aClass114_5992) {
-            InputStream_Sub2.method128(Class265.aClass74_4689, (byte) 8);
+            InputStream_Sub2.method128(Class265.aClass74_4689, (byte) 8); // object anim specific
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1539,7 +1539,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class47.aClass114_843) {
-            InputStream_Sub2.method128(Class91.aClass74_1519, (byte) 8);
+            InputStream_Sub2.method128(Class91.aClass74_1519, (byte) 8); // midi area
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1600,7 +1600,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class19.aClass114_315 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(Class162.aClass74_2157, (byte) 8);
+            InputStream_Sub2.method128(Class162.aClass74_2157, (byte) 8); // projectile add
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
