@@ -35,17 +35,17 @@ final class Class348_Sub24 extends Class348 {
                     int i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197);
                     Class348_Sub33.method3025((byte) 121, (class348_sub47.aClass348_Sub49_Sub2_7116));
                     class348_sub47.aClass348_Sub49_Sub2_7116.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) + -i_1_);
-                    Class348_Sub42_Sub14.method3243(119, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(119, class348_sub47);
                 }
                 if (Class239_Sub4.aClass348_Sub26_5881 != null) {
                     if ((Class239_Sub4.aClass348_Sub26_5881.anInt6887) != -1) {
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class367_Sub4.aClass351_7318), (Class348_Sub23_Sub2.aClass77_9029), -81);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class239_Sub4.aClass348_Sub26_5881.anInt6887);
-                        Class348_Sub42_Sub14.method3243(122, class348_sub47);
+                        Class348_Sub42_Sub14.writePacket(122, class348_sub47);
                         Class239_Sub4.aClass348_Sub26_5881 = null;
                         Class101_Sub2.aLong5745 = Class62.method599(-106) + 30000L;
                     }
-                } else if (Class101_Sub2.aLong5745 <= Class62.method599(-121)) Class239_Sub4.aClass348_Sub26_5881 = Class76.aClass169_1286.method1302(-5255, (Class3.aClass161_125.aString2147));
+                } else if (Class101_Sub2.aLong5745 <= Class62.method599(-121)) Class239_Sub4.aClass348_Sub26_5881 = Class76.aClass169_1286.method1302(-5255, (Class3.currentWorld.address));
                 Class348_Sub45 class348_sub45 = ((Class348_Sub45) Class318_Sub1_Sub3.aClass262_8744.method1995(4));
                 if (class348_sub45 != null || (Class355.aLong4367 < -2000L + Class62.method599(-97))) {
                     Class348_Sub47 class348_sub47 = null;
@@ -98,7 +98,7 @@ final class Class348_Sub24 extends Class348 {
                     }
                     if (class348_sub47 != null) {
                         class348_sub47.aClass348_Sub49_Sub2_7116.method3339(105, class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 + -i_2_);
-                        Class348_Sub42_Sub14.method3243(23, class348_sub47);
+                        Class348_Sub42_Sub14.writePacket(23, class348_sub47);
                     }
                 }
                 if (class348_sub45 != null) {
@@ -119,7 +119,7 @@ final class Class348_Sub24 extends Class348 {
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class27.aClass351_395, (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_12_ | i_11_ << 15);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 121, i_9_ << 16 | i_10_);
-                    Class348_Sub42_Sub14.method3243(25, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(25, class348_sub47);
                 }
                 if (Class253.anInt3246 > 0) {
                     Class348_Sub40_Sub26.anInt9348++;
@@ -133,7 +133,7 @@ final class Class348_Sub24 extends Class348 {
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, interface6.method30(false));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (int) l);
                     }
-                    Class348_Sub42_Sub14.method3243(-49, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(-49, class348_sub47);
                 }
                 if (Class147.anInt2035 > 0) Class147.anInt2035--;
                 if (Class369_Sub3_Sub1.aBoolean10174 && Class147.anInt2035 <= 0) {
@@ -143,14 +143,14 @@ final class Class348_Sub24 extends Class348 {
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class281.aClass351_3648, (Class348_Sub23_Sub2.aClass77_9029), i + -11549);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(i ^ 0x3c4d, (int) Class314.aFloat3938 >> 3);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (int) Class76.aFloat1287 >> 3);
-                    Class348_Sub42_Sub14.method3243(-31, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(-31, class348_sub47);
                 }
                 if (Class347.aBoolean4278 != Class175.aBoolean2329) {
                     Class269.anInt3460++;
                     Class347.aBoolean4278 = Class175.aBoolean2329;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((InputStream_Sub1.aClass351_77), (Class348_Sub23_Sub2.aClass77_9029), i ^ ~0x2cc8);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, !Class175.aBoolean2329 ? 0 : 1);
-                    Class348_Sub42_Sub14.method3243(i + -11501, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(i + -11501, class348_sub47);
                 }
                 if (!r.aBoolean9719) {
                     Class62.anInt1110++;
@@ -160,7 +160,7 @@ final class Class348_Sub24 extends Class348 {
                     Class348_Sub49 class348_sub49 = Class316.aClass348_Sub51_3959.method3427(i ^ 0x2cb0);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, 82);
                     class348_sub47.aClass348_Sub49_Sub2_7116.method3339(96, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) + -i_14_);
-                    Class348_Sub42_Sub14.method3243(i + -11473, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(i + -11473, class348_sub47);
                     r.aBoolean9719 = true;
                 }
                 if (Class147.aClass357ArrayArrayArray2029 != null) {
@@ -328,11 +328,11 @@ final class Class348_Sub24 extends Class348 {
                             Class98.anInt1568++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((ha_Sub2.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 117, (InputStream_Sub2.anInt85 << 14 | (Class348_Sub40_Sub26.anInt9349 << 28) | Class79.anInt1404));
-                            Class348_Sub42_Sub14.method3243(30, class348_sub47);
+                            Class348_Sub42_Sub14.writePacket(30, class348_sub47);
                             Class237.aBoolean3103 = false;
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class208.aClass262_2707.method1997(8));
+                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) OutputStreamBuffer.aClass262_2707.method1997(8));
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {
@@ -363,7 +363,7 @@ final class Class348_Sub24 extends Class348 {
                         }
                         if (Class168.aClass46_2249 == null) Class348_Sub42.anInt7059 = 0;
                         if (Class289.aClass46_3701 != null) Class347.method2708(-30206);
-                        if (Class192.anInt2581 > 0 && Class182.aClass346_2449.method2696(82, i ^ ~0x2cd5) && Class182.aClass346_2449.method2696(81, -121) && Class98.anInt1565 != 0) {
+                        if (Class192.rights > 0 && Class182.aClass346_2449.method2696(82, i ^ ~0x2cd5) && Class182.aClass346_2449.method2696(81, -121) && Class98.anInt1565 != 0) {
                             int i_30_ = ((Class132.aPlayer_1907.plane) - Class98.anInt1565);
                             if (i_30_ >= 0) {
                                 if (i_30_ > 3) i_30_ = 3;
@@ -412,7 +412,7 @@ final class Class348_Sub24 extends Class348 {
                             if (Class11.anInt193 > 50) {
                                 IOException_Sub1.anInt88++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class239_Sub10.aClass351_5938, Class348_Sub23_Sub2.aClass77_9029, -125));
-                                Class348_Sub42_Sub14.method3243(i ^ ~0x2cc0, class348_sub47);
+                                Class348_Sub42_Sub14.writePacket(i ^ ~0x2cc0, class348_sub47);
                             }
                             if (Class239_Sub29.aBoolean6147) {
                                 Class313.method2334(0);

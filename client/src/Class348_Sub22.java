@@ -34,7 +34,7 @@ final class Class348_Sub22 extends Class348 {
         if (class45.method421(false, Class86.anInt1481)) i_2_++;
         if (class45.method421(false, Class239_Sub10.anInt5948)) i_2_++;
         if (class45.method421(false, Class113.anInt1742)) i_2_++;
-        if (class45.method421(false, Class364.anInt4469)) i_2_++;
+        if (class45.method421(false, WhereMode.anInt4469)) i_2_++;
         if (i != 22388) return 8;
         if (class45.method421(false, Class348_Sub40_Sub38.anInt9473)) i_2_++;
         if (class45.method421(false, Class187.anInt2510)) i_2_++;

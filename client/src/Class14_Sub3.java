@@ -35,19 +35,19 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
     static final Class348_Sub51 method247(int i) {
         anInt8632++;
         Class234 class234 = null;
-        Class348_Sub51 class348_sub51 = new Class348_Sub51(Class348_Sub42_Sub8_Sub2.aClass230_10434, 0);
+        Class348_Sub51 class348_sub51 = new Class348_Sub51(Class348_Sub42_Sub8_Sub2.aGame_10434, 0);
         try {
             Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2233((byte) -46, "", true);
             while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) -85, 1L);
             if (class144.anInt1997 == 1) {
-                class234 = (Class234) class144.anObject1998;
+                class234 = (Class234) class144.socket;
                 byte[] is = new byte[(int) class234.method1662((byte) -46)];
                 int i_2_;
                 for (int i_3_ = 0; is.length > i_3_; i_3_ += i_2_) {
                     i_2_ = class234.method1656(is, i_3_, (byte) -49, -i_3_ + is.length);
                     if (i_2_ == -1) throw new IOException("EOF");
                 }
-                class348_sub51 = new Class348_Sub51(new Class348_Sub49(is), (Class348_Sub42_Sub8_Sub2.aClass230_10434), 0);
+                class348_sub51 = new Class348_Sub51(new Class348_Sub49(is), (Class348_Sub42_Sub8_Sub2.aGame_10434), 0);
             }
         } catch (Exception exception) {
             /* empty */

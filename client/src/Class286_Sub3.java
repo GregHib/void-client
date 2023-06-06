@@ -207,7 +207,7 @@ final class Class286_Sub3 extends Class286 {
             if (class79.aBoolean1396) {
                 String string = class79.aString1372;
                 if (class79.anInt1361 != 0) {
-                    String string_15_ = ((Class14_Sub4.aClass230_8638 != Class348_Sub42_Sub8_Sub2.aClass230_10434) ? Class274.aClass274_3511.method2063(Class348_Sub33.anInt6967, 544) : Class274.aClass274_3513.method2063(Class348_Sub33.anInt6967, 544));
+                    String string_15_ = ((Class14_Sub4.aGame_8638 != Class348_Sub42_Sub8_Sub2.aGame_10434) ? Class274.aClass274_3511.method2063(Class348_Sub33.anInt6967, 544) : Class274.aClass274_3513.method2063(Class348_Sub33.anInt6967, 544));
                     string += ((Class14_Sub4.method250((Class132.aPlayer_1907.anInt10516), true, class79.anInt1361)) + " (" + string_15_ + class79.anInt1361 + ")");
                 }
                 if (r.aBoolean9722 && !bool) {

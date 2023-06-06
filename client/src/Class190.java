@@ -214,7 +214,7 @@ final class Class190 {
             int i_30_ = class348_sub49.readUnsignedShort(842397944);
             int i_31_ = class348_sub49.readUnsignedShort(842397944);
             int i_32_ = class348_sub49.readUnsignedShort(842397944);
-            this.aClass299_2541 = Class230.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_);
+            this.aClass299_2541 = Game.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_);
         } else this.aClass299_2541 = Class348_Sub42_Sub10.aClass299_9571;
     }
 }

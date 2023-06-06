@@ -12,14 +12,14 @@ final class Class26 {
     private final Class45 aClass45_379;
     static int anInt380;
     private final Class356 aClass356_381 = new Class356(256);
-    static Class364 aClass364_382 = new Class364("WTQA", 2);
+    static WhereMode aWhereMode_382 = new WhereMode("WTQA", 2);
     static int anInt383;
     static boolean aBoolean384 = false;
     static int anInt385 = 0;
     static int anInt386;
 
     public static void method306(boolean bool) {
-        aClass364_382 = null;
+        aWhereMode_382 = null;
         if (bool != true) method311((byte) -5, '\002');
     }
 

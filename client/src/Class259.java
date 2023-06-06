@@ -39,12 +39,12 @@ final class Class259 {
         return class160;
     }
 
-    Class259(Class230 class230, int i, Class45 class45) {
+    Class259(Game game, int i, Class45 class45) {
         try {
             aClass45_3299 = class45;
             this.anInt3305 = aClass45_3299.method407(0, 19);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

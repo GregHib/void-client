@@ -51,7 +51,7 @@ final class Class215 {
                 Class348_Sub48.anInt7129 = (Class272.anInt3473 + -Class92.anInt1524) / 2;
                 Class335.anInt4167 = 0;
             } else Class286_Sub5.method2158((byte) 56);
-            if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
+            if (Class55_Sub1.liveWhereMode != Class8.whereMode) {
                 if (Class321.anInt4017 < 1024 && (Class348_Sub42_Sub8_Sub2.anInt10432 < 768)) {
                     /* empty */
                 }
@@ -68,7 +68,7 @@ final class Class215 {
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2;
             if (r.anInt9721 != -1) Class239.method1713(true, 520);
-            if (Class348_Sub40_Sub8.aClass238_9165 != null && Class334.method2653(true, Class240.anInt4674)) Class286_Sub2.method2145(-24498);
+            if (Class348_Sub40_Sub8.connection != null && Class334.method2653(true, Class240.anInt4674)) Class286_Sub2.method2145(-24498);
             for (int i_5_ = 0; i_5_ < 100; i_5_++)
                 Class152.aBooleanArray2076[i_5_] = true;
             Class49.aBoolean4726 = true;

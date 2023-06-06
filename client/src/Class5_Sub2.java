@@ -97,7 +97,7 @@ final class Class5_Sub2 extends Class5 {
     }
 
     static final void method198(Class46 class46, boolean bool, int i, int i_22_) {
-        Class238_Sub1.anInt5832 = i;
+        ConnectionChannel.anInt5832 = i;
         Class120.anInt4911 = i_22_;
         Class21.aClass46_323 = class46;
         anInt8359++;

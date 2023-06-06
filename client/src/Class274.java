@@ -154,7 +154,7 @@ final class Class274 {
         anInt3484++;
         Class5_Sub3.anInt8374++;
         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class348_Sub34.aClass351_6970, Class348_Sub23_Sub2.aClass77_9029, -109);
-        Class348_Sub42_Sub14.method3243(37, class348_sub47);
+        Class348_Sub42_Sub14.writePacket(37, class348_sub47);
         for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3482(0)) {
             if (!class348_sub41.method2712((byte) 4)) {
                 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0);

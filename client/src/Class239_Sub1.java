@@ -38,7 +38,7 @@ final class Class239_Sub1 extends Class239 {
             int[] is = Class286_Sub7.anIntArray6290;
             for (int i_4_ = 0; i_3_ > i_4_; i_4_++) {
                 Player player = (Class294.aPlayerArray5058[is[i_4_]]);
-                if (player.aString10544 != null && player.aString10544.equalsIgnoreCase(string) && (((player == Class132.aPlayer_1907) && (0x10 & Class38.anInt500) != 0) || (player != null && (Class38.anInt500 & 0x8) != 0))) {
+                if (player.username != null && player.username.equalsIgnoreCase(string) && (((player == Class132.aPlayer_1907) && (0x10 & Class38.anInt500) != 0) || (player != null && (Class38.anInt500 & 0x8) != 0))) {
                     Class228.anInt2975++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169);
@@ -46,7 +46,7 @@ final class Class239_Sub1 extends Class239 {
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class301.anInt3829, (byte) 3);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeIntInverseMiddle(Class149.anInt2046, -4086);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -64, 0);
-                    Class348_Sub42_Sub14.method3243(116, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(116, class348_sub47);
                     bool = true;
                     Class298.method2252(true, player.anIntArray10320[0], player.anIntArray10317[0], (byte) -99, player.method2436((byte) 54), 0, player.method2436((byte) 91), -2, 0);
                     break;

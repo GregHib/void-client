@@ -65,7 +65,7 @@ final class Class82 {
                     Applet_Sub1.method94((Class274.aClass274_3485.method2063(Class348_Sub33.anInt6967, 544)), -99);
                     break;
                 }
-                if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || Class192.anInt2581 >= 2) {
+                if (Class8.whereMode != Class55_Sub1.liveWhereMode || Class192.rights >= 2) {
                     if (string.equalsIgnoreCase("errortest")) throw new RuntimeException();
                     if (string.equals("nativememerror")) throw new OutOfMemoryError("native(MPR");
                     try {
@@ -142,7 +142,7 @@ final class Class82 {
                             break;
                         }
                         if (string.equalsIgnoreCase("rotateconnectmethods")) {
-                            Class3.aClass161_125.method1259(0);
+                            Class3.currentWorld.method1259(0);
                             Applet_Sub1.method94("Rotated connection methods", i ^ ~0x13);
                             break;
                         }
@@ -158,7 +158,7 @@ final class Class82 {
                         }
                         if (string.equalsIgnoreCase("breakcon")) {
                             Class348_Sub23_Sub1.aClass297_8992.method2239(-95);
-                            Class348_Sub40_Sub8.aClass238_9165.method1702(i + 123);
+                            Class348_Sub40_Sub8.connection.method1702(i + 123);
                             Class348_Sub4.aClass248_6601.method1898(true);
                             Applet_Sub1.method94("Breaking new connections for 5 seconds", i + -4);
                             break;
@@ -418,12 +418,12 @@ final class Class82 {
                         }
                         if (string.startsWith("switchworld")) {
                             int i_11_ = Integer.parseInt(string.substring(12));
-                            Class348_Sub23_Sub1.method2972((Class239_Sub5.method1742(false, i_11_).aString5794), i_11_, -93);
+                            Class348_Sub23_Sub1.switchWorld((Class239_Sub5.method1742(false, i_11_).aString5794), i_11_, -93);
                             Applet_Sub1.method94("switched", 70);
                             break;
                         }
                         if (string.equals("getworld")) {
-                            Applet_Sub1.method94(("w: " + (Class3.aClass161_125.anInt2143)), -120);
+                            Applet_Sub1.method94(("w: " + (Class3.currentWorld.port)), -120);
                             break;
                         }
                         if (string.startsWith("pc")) {
@@ -434,7 +434,7 @@ final class Class82 {
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string.substring(3, i_13_));
                             Class367_Sub4.method3544((class348_sub47.aClass348_Sub49_Sub2_7116), i + -12, string.substring(i_13_));
                             class348_sub47.aClass348_Sub49_Sub2_7116.method3339(114, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 + -i_12_));
-                            Class348_Sub42_Sub14.method3243(i ^ ~0x49, class348_sub47);
+                            Class348_Sub42_Sub14.writePacket(i ^ ~0x49, class348_sub47);
                             break;
                         }
                         if (string.equals("savevarcs")) {
@@ -633,9 +633,9 @@ final class Class82 {
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, bool ? 1 : 0);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, bool_0_ ? 1 : 0);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
-                            Class348_Sub42_Sub14.method3243(120, class348_sub47);
+                            Class348_Sub42_Sub14.writePacket(120, class348_sub47);
                         }
-                        if (string.startsWith("fps ") && (Class8.aClass364_165 != Class55_Sub1.aClass364_5271)) {
+                        if (string.startsWith("fps ") && (Class8.whereMode != Class55_Sub1.liveWhereMode)) {
                             Class295.method2222((Class348_Sub41.method3156(true, string.substring(4))), (byte) -124);
                             break;
                         }
@@ -696,13 +696,13 @@ final class Class82 {
         }
     }
 
-    Class82(Class230 class230, int i, Class45 class45) {
+    Class82(Game game, int i, Class45 class45) {
         new Class60(64);
         try {
             aClass45_1436 = class45;
             this.anInt1439 = aClass45_1436.method407(0, 15);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

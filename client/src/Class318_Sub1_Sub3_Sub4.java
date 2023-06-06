@@ -136,7 +136,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         }
         Class144 class144 = class297.method2229(i_9_, i, i_7_, i_6_, (byte) -11);
         while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) 19, 10L);
-        Frame frame = (Frame) class144.anObject1998;
+        Frame frame = (Frame) class144.socket;
         if (frame == null) return null;
         if (i_8_ != 14199) return null;
         if (class144.anInt1997 == 2) {

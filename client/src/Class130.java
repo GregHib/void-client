@@ -9,7 +9,7 @@ abstract class Class130 {
     static Class45 aClass45_1897;
     static int anInt1898;
     static boolean aBoolean1899 = false;
-    static boolean aBoolean1900 = false;
+    static boolean membersWorld = false;
 
     public static void method1127(int i) {
         aClass45_1897 = null;

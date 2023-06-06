@@ -59,236 +59,243 @@ final class Class88 {
 
     static final void method843(byte i) {
         anInt1499++;
-        if (Class225.anInt2955 != 0 && Class225.anInt2955 != 5) {
+        if (Class225.loginStage != 0 && Class225.loginStage != 5) {
             try {
                 int i_2_;
                 if (Class318_Sub1_Sub1_Sub2.anInt9971 != 0) i_2_ = 2000;
                 else i_2_ = 250;
                 if (i_2_ < ++Class11.anInt197) {
-                    if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                        Class348_Sub40_Sub8.aClass238_9165 = null;
+                    if (Class348_Sub40_Sub8.connection != null) {
+                        Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                        Class348_Sub40_Sub8.connection = null;
                     }
                     if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
-                        Class225.anInt2955 = 0;
+                        Class225.loginStage = 0;
                         Class14_Sub4.method254(-5, (byte) -111);
                         return;
                     }
-                    if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285.method1259(0);
-                    else Class3.aClass161_125.method1259(0);
+                    if (Class239_Sub12.anInt5969 != 2) Class255.gameLobby.method1259(0);
+                    else Class3.currentWorld.method1259(0);
                     Class318_Sub1_Sub1_Sub2.anInt9971++;
-                    Class225.anInt2955 = 1;
+                    Class225.loginStage = 1;
                     Class11.anInt197 = 0;
                 }
-                if (Class225.anInt2955 == 1) {
-                    if (Class239_Sub12.anInt5969 == 2 && !Loader.skipLobby) Class130_Sub1.aClass144_5800 = (Class3.aClass161_125.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
-                    else Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
-                    Class225.anInt2955 = 2;
+                System.out.println("Stage " + Class225.loginStage + " " + Class239_Sub12.anInt5969);
+                if (Class225.loginStage == 1) { // Setup socket to game server
+                    if (Class239_Sub12.anInt5969 == 2 && !Loader.SPLIT_PORTS) {
+                        Class130_Sub1.gameConnection = (Class3.currentWorld.openSocket(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
+                    } else {
+                        Class130_Sub1.gameConnection = (Class255.gameLobby.openSocket(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
+                    }
+                    Class225.loginStage = 2;
                 }
-                if (Class225.anInt2955 == 2) {
-                    if (Class130_Sub1.aClass144_5800.anInt1997 == 2) throw new IOException();
-                    if (Class130_Sub1.aClass144_5800.anInt1997 != 1) return;
-                    Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982(((Socket) (Class130_Sub1.aClass144_5800.anObject1998)), (byte) -118, 7500);
-                    Class130_Sub1.aClass144_5800 = null;
+                if (Class225.loginStage == 2) { // Sync with client
+                    if (Class130_Sub1.gameConnection.anInt1997 == 2) throw new IOException();
+                    if (Class130_Sub1.gameConnection.anInt1997 != 1) return;
+                    Class348_Sub40_Sub8.connection = Class348_Sub23_Sub3.createConnection(((Socket) (Class130_Sub1.gameConnection.socket)), (byte) -118, 7500);
+                    Class130_Sub1.gameConnection = null;
                     Class348_Sub3.method2739(0);
-                    Class348_Sub47 class348_sub47 = Class203.method1478(true);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class178.aClass29_2339.anInt400);
-                    Class348_Sub42_Sub14.method3243(9, class348_sub47);
+                    Class348_Sub47 class348_sub47 = Class203.createPacket(true);
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class178.aClass29_2339.anInt400); // 14
+                    Class348_Sub42_Sub14.writePacket(9, class348_sub47);
                     Class239_Sub18.method1802(0);
-                    Class225.anInt2955 = 3;
+                    Class225.loginStage = 3;
                 }
-                if (Class225.anInt2955 == 3) {
-                    if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 107)) return;
-                    Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -118, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
-                    int i_3_ = ((Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]) & 0xff);
-                    if (i_3_ != 0) {
-                        Class225.anInt2955 = 0;
-                        Class14_Sub4.method254(i_3_, (byte) -113);
-                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                        Class348_Sub40_Sub8.aClass238_9165 = null;
+                if (Class225.loginStage == 3) {// Session accepted
+                    if (!Class348_Sub40_Sub8.connection.available(1, 107)) return;
+                    Class348_Sub40_Sub8.connection.read(1, 0, (byte) -118, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                    int error = ((Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]) & 0xff);
+                    if (error != 0) {
+                        Class225.loginStage = 0;
+                        Class14_Sub4.method254(error, (byte) -113);
+                        Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                        Class348_Sub40_Sub8.connection = null;
                         Class152.method1215((byte) 3);
                         return;
                     }
                     Class299.aClass348_Sub49_Sub2_3813.anInt7197 = 0;
-                    Class348_Sub49 class348_sub49 = new Class348_Sub49(518);
-                    int[] is = new int[4];
-                    is[0] = (int) (Math.random() * 9.9999999E7);
-                    is[1] = (int) (9.9999999E7 * Math.random());
-                    is[3] = (int) (9.9999999E7 * Math.random());
-                    is[2] = (int) (9.9999999E7 * Math.random());
-                    class348_sub49.writeByte(false, 10);
-                    class348_sub49.writeInt((byte) 91, is[0]);
-                    class348_sub49.writeInt((byte) 96, is[1]);
-                    class348_sub49.writeInt((byte) 95, is[2]);
-                    class348_sub49.writeInt((byte) 127, is[3]);
-                    class348_sub49.writeLong(0L, (byte) 70);
-                    class348_sub49.writeString((byte) -5, Class186.aString2496);
-                    class348_sub49.writeLong(Class348_Sub33.aLong6966, (byte) -124);
-                    class348_sub49.writeLong(OutputStream_Sub2.aLong108, (byte) -112);
-                    class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (byte) -76, (Class318_Sub1_Sub4.aBigInteger8762));
+                    Class348_Sub49 writer = new Class348_Sub49(518);
+                    int[] isaac = new int[4];
+                    isaac[0] = (int) (Math.random() * 9.9999999E7);
+                    isaac[1] = (int) (9.9999999E7 * Math.random());
+                    isaac[3] = (int) (9.9999999E7 * Math.random());
+                    isaac[2] = (int) (9.9999999E7 * Math.random());
+                    writer.writeByte(false, 10); // Session
+                    writer.writeInt((byte) 91, isaac[0]);
+                    writer.writeInt((byte) 96, isaac[1]);
+                    writer.writeInt((byte) 95, isaac[2]);
+                    writer.writeInt((byte) 127, isaac[3]);
+                    writer.writeLong(0L, (byte) 70); // password marker
+                    writer.writeString((byte) -5, Class186.password);
+                    writer.writeLong(Class348_Sub33.aLong6966, (byte) -124); // username?
+                    writer.writeLong(OutputStream_Sub2.aLong108, (byte) -112);
+                    writer.encryptRSA(Class348_Sub31.aBigInteger6921, (byte) -76, (Class318_Sub1_Sub4.aBigInteger8762));
                     Class348_Sub3.method2739(0);
-                    Class348_Sub47 class348_sub47 = Class203.method1478(true);
-                    Class348_Sub49_Sub2 class348_sub49_sub2 = (class348_sub47.aClass348_Sub49_Sub2_7116);
+                    Class348_Sub47 class348_sub47 = Class203.createPacket(true);
+                    Class348_Sub49_Sub2 buffer = (class348_sub47.aClass348_Sub49_Sub2_7116);
                     if (Class239_Sub12.anInt5969 == 2 || Loader.skipLobby) {
-                        if (Class240.anInt4674 != 13) class348_sub49_sub2.writeByte(false, Class178.aClass29_2342.anInt400);
-                        else class348_sub49_sub2.writeByte(false, Class178.aClass29_2344.anInt400);
-                        class348_sub49_sub2.writeShort((byte) 107, 0);
-                        int i_6_ = class348_sub49_sub2.anInt7197;
-                        class348_sub49_sub2.writeInt((byte) 117, 634);
-                        class348_sub49_sub2.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, 92);
-                        int i_7_ = class348_sub49_sub2.anInt7197;
-                        class348_sub49_sub2.writeString((byte) -5, Class64_Sub3.aString5600);
-                        class348_sub49_sub2.writeByte(false, (RuntimeException_Sub1.anInt4596));
-                        class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub12.method3229(-71));
-                        class348_sub49_sub2.writeShort((byte) 107, Class321.anInt4017);
-                        class348_sub49_sub2.writeShort((byte) 107, Class348_Sub42_Sub8_Sub2.anInt10432);
-                        class348_sub49_sub2.writeByte(false, Class316.aClass348_Sub51_3959.aClass239_Sub20_7248.method1808(-32350));
-                        s_Sub2.method4002(class348_sub49_sub2, (byte) 55);
-                        class348_sub49_sub2.writeString((byte) -5, Class239_Sub12.aString5966);
-                        class348_sub49_sub2.writeInt((byte) 120, Class202.anInt2670);
+                        if (Class240.anInt4674 != 13) buffer.writeByte(false, Class178.aClass29_2342.anInt400);
+                        else buffer.writeByte(false, Class178.aClass29_2344.anInt400);
+                        buffer.writeShort((byte) 107, 0);
+                        int i_6_ = buffer.anInt7197;
+                        buffer.writeInt((byte) 117, 634);
+                        buffer.writeBytes(writer.anInt7197, 0, writer.aByteArray7154, 92);
+                        int i_7_ = buffer.anInt7197;
+                        buffer.writeString((byte) -5, Class64_Sub3.aString5600);
+                        buffer.writeByte(false, (RuntimeException_Sub1.anInt4596));
+                        buffer.writeByte(false, Class348_Sub42_Sub12.method3229(-71));
+                        buffer.writeShort((byte) 107, Class321.anInt4017);
+                        buffer.writeShort((byte) 107, Class348_Sub42_Sub8_Sub2.anInt10432);
+                        buffer.writeByte(false, Class316.aClass348_Sub51_3959.aClass239_Sub20_7248.method1808(-32350));
+                        s_Sub2.method4002(buffer, (byte) 55);
+                        buffer.writeString((byte) -5, Class239_Sub12.aString5966);
+                        buffer.writeInt((byte) 120, Class202.anInt2670);
                         Class348_Sub49 class348_sub49_8_ = Class316.aClass348_Sub51_3959.method3427(24);
-                        class348_sub49_sub2.writeByte(false, (class348_sub49_8_.anInt7197));
-                        class348_sub49_sub2.writeBytes(class348_sub49_8_.anInt7197, 0, (class348_sub49_8_.aByteArray7154), 74);
+                        buffer.writeByte(false, (class348_sub49_8_.anInt7197));
+                        buffer.writeBytes(class348_sub49_8_.anInt7197, 0, (class348_sub49_8_.aByteArray7154), 74);
                         r.aBoolean9719 = true;
                         Class348_Sub49 class348_sub49_9_ = new Class348_Sub49(Class348_Sub40_Sub20.aClass348_Sub4_9264.method2746((byte) -76));
                         Class348_Sub40_Sub20.aClass348_Sub4_9264.method2747(1, class348_sub49_9_);
-                        class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154).length, 0, (class348_sub49_9_.aByteArray7154), -73);
-                        class348_sub49_sub2.writeShort((byte) 107, Class135_Sub1.anInt4718);
-                        class348_sub49_sub2.writeLong(Class244.aLong4615, (byte) -63);
-                        class348_sub49_sub2.writeByte(false, Class14_Sub1.aString8605 == null ? 0 : 1);
-                        if (Class14_Sub1.aString8605 != null) class348_sub49_sub2.writeString((byte) -5, (Class14_Sub1.aString8605));
-                        class348_sub49_sub2.writeByte(false, (!Class348_Sub40_Sub31.method3131((byte) 50, "jagtheora") ? 0 : 1));
-                        Class157.method1244(64, class348_sub49_sub2);
-                        class348_sub49_sub2.method3350(i_7_, true, is, (class348_sub49_sub2.anInt7197));
-                        class348_sub49_sub2.method3383(1809639944, -i_6_ + (class348_sub49_sub2.anInt7197));
+                        buffer.writeBytes((class348_sub49_9_.aByteArray7154).length, 0, (class348_sub49_9_.aByteArray7154), -73);
+                        buffer.writeShort((byte) 107, Class135_Sub1.anInt4718);
+                        buffer.writeLong(Class244.aLong4615, (byte) -63);
+                        buffer.writeByte(false, Class14_Sub1.aString8605 == null ? 0 : 1);
+                        if (Class14_Sub1.aString8605 != null) buffer.writeString((byte) -5, (Class14_Sub1.aString8605));
+                        buffer.writeByte(false, (!Class348_Sub40_Sub31.method3131((byte) 50, "jagtheora") ? 0 : 1));
+                        Class157.method1244(64, buffer);
+                        buffer.method3350(i_7_, true, isaac, (buffer.anInt7197));
+                        buffer.method3383(1809639944, -i_6_ + (buffer.anInt7197));
                     } else {
-                        class348_sub49_sub2.writeByte(false, Class178.aClass29_2345.anInt400);
-                        class348_sub49_sub2.writeShort((byte) 107, 0);
-                        int i_4_ = class348_sub49_sub2.anInt7197;
-                        class348_sub49_sub2.writeInt((byte) 119, 634);
-                        class348_sub49_sub2.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, -109);
-                        int i_5_ = class348_sub49_sub2.anInt7197;
-                        class348_sub49_sub2.writeString((byte) -5, Class64_Sub3.aString5600);
-                        class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987);
-                        class348_sub49_sub2.writeByte(false, Class348_Sub33.anInt6967);
-                        s_Sub2.method4002(class348_sub49_sub2, (byte) 55);
-                        class348_sub49_sub2.writeString((byte) -5, Class239_Sub12.aString5966);
-                        class348_sub49_sub2.writeInt((byte) 106, Class202.anInt2670);
-                        Class157.method1244(92, class348_sub49_sub2);
-                        class348_sub49_sub2.method3350(i_5_, true, is, (class348_sub49_sub2.anInt7197));
-                        class348_sub49_sub2.method3383(1809639944, -i_4_ + (class348_sub49_sub2.anInt7197));
+                        buffer.writeByte(false, Class178.aClass29_2345.anInt400);
+                        buffer.writeShort((byte) 107, 0);
+                        int i_4_ = buffer.anInt7197;
+                        buffer.writeInt((byte) 119, 634);
+                        buffer.writeBytes(writer.anInt7197, 0, writer.aByteArray7154, -109);
+                        int i_5_ = buffer.anInt7197;
+                        buffer.writeString((byte) -5, Class64_Sub3.aString5600);
+                        buffer.writeByte(false, Class348_Sub42_Sub8_Sub2.aGame_10434.anInt2987);
+                        buffer.writeByte(false, Class348_Sub33.anInt6967);
+                        s_Sub2.method4002(buffer, (byte) 55);
+                        buffer.writeString((byte) -5, Class239_Sub12.aString5966);
+                        buffer.writeInt((byte) 106, Class202.anInt2670);
+                        Class157.method1244(92, buffer);
+                        buffer.method3350(i_5_, true, isaac, (buffer.anInt7197));
+                        buffer.method3383(1809639944, -i_4_ + (buffer.anInt7197));
                     }
-                    Class348_Sub42_Sub14.method3243(-48, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(-48, class348_sub47);
                     Class239_Sub18.method1802(0);
-                    Class348_Sub23_Sub2.aClass77_9029 = new Class77(is);
+                    Class348_Sub23_Sub2.aClass77_9029 = new Class77(isaac);
                     for (int i_10_ = 0; i_10_ < 4; i_10_++)
-                        is[i_10_] += 50;
-                    Class299.aClass348_Sub49_Sub2_3813.method3406(-111, is);
-                    Class225.anInt2955 = 4;
+                        isaac[i_10_] += 50;
+                    Class299.aClass348_Sub49_Sub2_3813.method3406(-111, isaac);
+                    Class225.loginStage = 4;
                 }
-                if (Class225.anInt2955 == 4) {
-                    if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 94)) return;
-                    Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -117, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
-                    int i_11_ = ((Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]) & 0xff);
-                    if (i_11_ != 21) {
-                        if (i_11_ == 29) Class225.anInt2955 = 13;
+                if (Class225.loginStage == 4) {
+                    if (!Class348_Sub40_Sub8.connection.available(1, 94)) return;
+                    Class348_Sub40_Sub8.connection.read(1, 0, (byte) -117, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                    int response = ((Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]) & 0xff);
+                    if (response != 21) {
+                        if (response == 29) Class225.loginStage = 13;
                         else {
-                            if (i_11_ == 1) {
-                                Class225.anInt2955 = 5;
-                                Class14_Sub4.method254(i_11_, (byte) -125);
+                            if (response == 1) { // Video ad
+                                Class225.loginStage = 5;
+                                Class14_Sub4.method254(response, (byte) -125);
                                 return;
                             }
-                            if (i_11_ != 2) {
-                                if (i_11_ != 15) {
-                                    if (i_11_ == 23 && Class318_Sub1_Sub1_Sub2.anInt9971 < 3) {
-                                        Class225.anInt2955 = 1;
-                                        Class318_Sub1_Sub1_Sub2.anInt9971++;
-                                        Class11.anInt197 = 0;
-                                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                                        Class348_Sub40_Sub8.aClass238_9165 = null;
-                                    } else {
-                                        Class225.anInt2955 = 0;
-                                        Class14_Sub4.method254(i_11_, (byte) -87);
-                                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                                        Class348_Sub40_Sub8.aClass238_9165 = null;
-                                        Class152.method1215((byte) 3);
-                                        return;
-                                    }
+                            if (response == 2) {
+                                Class225.loginStage = 8; // success
+                            } else if (response == 15) { // reconnecting
+                                Class225.loginStage = 14;
+                                Class348_Sub40_Sub25.anInt9341 = -2;
+                            } else {
+                                if (response == 23 && Class318_Sub1_Sub1_Sub2.anInt9971 < 3) {
+                                    Class225.loginStage = 1;
+                                    Class318_Sub1_Sub1_Sub2.anInt9971++;
+                                    Class11.anInt197 = 0;
+                                    Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                                    Class348_Sub40_Sub8.connection = null;
+                                } else {
+                                    Class225.loginStage = 0;
+                                    Class14_Sub4.method254(response, (byte) -87);
+                                    Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                                    Class348_Sub40_Sub8.connection = null;
+                                    Class152.method1215((byte) 3);
                                     return;
                                 }
-                                Class225.anInt2955 = 14;
-                                Class348_Sub40_Sub25.anInt9341 = -2;
-                            } else Class225.anInt2955 = 8;
+                                return;
+                            }
                         }
-                    } else Class225.anInt2955 = 7;
+                    } else Class225.loginStage = 7; // Transfer profile
                 }
-                if (Class225.anInt2955 == 6) {
+                if (Class225.loginStage == 6) {
                     Class348_Sub3.method2739(0);
-                    Class348_Sub47 class348_sub47 = Class203.method1478(true);
+                    Class348_Sub47 class348_sub47 = Class203.createPacket(true);
                     Class348_Sub49_Sub2 class348_sub49_sub2 = (class348_sub47.aClass348_Sub49_Sub2_7116);
                     class348_sub49_sub2.method3416(-18, Class348_Sub23_Sub2.aClass77_9029);
                     class348_sub49_sub2.method3408((Class178.aClass29_2351.anInt400), 18676);
-                    Class348_Sub42_Sub14.method3243(-87, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(-87, class348_sub47);
                     Class239_Sub18.method1802(0);
-                    Class225.anInt2955 = 4;
-                } else if (Class225.anInt2955 == 7) {
-                    if (Class348_Sub40_Sub8.aClass238_9165.method1705(1, 118)) {
-                        Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -109, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                    Class225.loginStage = 4;
+                } else if (Class225.loginStage == 7) {// Transfer profile
+                    if (Class348_Sub40_Sub8.connection.available(1, 118)) {
+                        Class348_Sub40_Sub8.connection.read(1, 0, (byte) -109, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                         int i_12_ = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
-                        Class225.anInt2955 = 0;
+                        Class225.loginStage = 0;
                         Class63.anInt1121 = (3 + i_12_) * 60;
                         Class14_Sub4.method254(21, (byte) -95);
-                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                        Class348_Sub40_Sub8.aClass238_9165 = null;
+                        Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                        Class348_Sub40_Sub8.connection = null;
                         Class152.method1215((byte) 3);
                     }
-                } else if (Class225.anInt2955 == 13) {
-                    if (Class348_Sub40_Sub8.aClass238_9165.method1705(1, 102)) {
-                        Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -128, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
-                        Class225.anInt2955 = 0;
+                } else if (Class225.loginStage == 13) {
+                    if (Class348_Sub40_Sub8.connection.available(1, 102)) {
+                        Class348_Sub40_Sub8.connection.read(1, 0, (byte) -128, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                        Class225.loginStage = 0;
                         Class348_Sub42_Sub7.anInt9541 = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
                         Class14_Sub4.method254(29, (byte) -97);
-                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                        Class348_Sub40_Sub8.aClass238_9165 = null;
+                        Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                        Class348_Sub40_Sub8.connection = null;
                         Class152.method1215((byte) 3);
                     }
-                } else if (Class225.anInt2955 == 8) {
-                    if (Class348_Sub40_Sub8.aClass238_9165.method1705(1, 107)) {
-                        Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -107, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
-                        Class76.anInt1288 = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
-                        Class225.anInt2955 = 9;
+                } else if (Class225.loginStage == 8) { // Success
+                    if (Class348_Sub40_Sub8.connection.available(1, 107)) {
+                        Class348_Sub40_Sub8.connection.read(1, 0, (byte) -107, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                        Class76.length = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
+                        Class225.loginStage = 9;
                     }
                 } else {
-                    if (Class225.anInt2955 == 9) {
+                    if (Class225.loginStage == 9) { // Login info
                         Class348_Sub49_Sub2 class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813;
                         if (Class239_Sub12.anInt5969 == 2 || Loader.skipLobby) {
-                            if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 93)) return;
-                            Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 60, (class348_sub49_sub2.aByteArray7154));
+                            if (!Class348_Sub40_Sub8.connection.available(Class76.length, 93)) return;
+                            Class348_Sub40_Sub8.connection.read(Class76.length, 0, (byte) 60, (class348_sub49_sub2.aByteArray7154));
                             class348_sub49_sub2.anInt7197 = 0;
-                            Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255);
-                            Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class192.rights = class348_sub49_sub2.readUnsignedByte(255);
+                            Class125.skipChat = class348_sub49_sub2.readUnsignedByte(255);
                             Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1;
-                            Class50_Sub2.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1;
-                            Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944);
-                            Class206.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class50_Sub2.moveChatBox = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class348_Sub42_Sub11.playerIndex = class348_sub49_sub2.readUnsignedShort(842397944);
+                            Class206.isMember = class348_sub49_sub2.readUnsignedByte(255) == 1;
+
                             Class24.anInt359 = class348_sub49_sub2.method3369((byte) 125);
-                            Class130.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1;
-                            Class348_Sub40_Sub12.aClass263_9195.method2004(Class130.aBoolean1900, (byte) 25);
-                            Exception_Sub1.aClass255_112.method1934((byte) 11, Class130.aBoolean1900);
-                            Class189.aClass278_2529.method2072((byte) 88, Class130.aBoolean1900);
+                            Class130.membersWorld = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class348_Sub40_Sub12.aClass263_9195.method2004(Class130.membersWorld, (byte) 25);
+                            Exception_Sub1.aClass255_112.method1934((byte) 11, Class130.membersWorld);
+                            Class189.aClass278_2529.method2072((byte) 88, Class130.membersWorld);
                         } else {
-                            if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 107)) return;
-                            Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 85, (class348_sub49_sub2.aByteArray7154));
+                            if (!Class348_Sub40_Sub8.connection.available(Class76.length, 107)) return;
+                            Class348_Sub40_Sub8.connection.read(Class76.length, 0, (byte) 85, (class348_sub49_sub2.aByteArray7154));
                             class348_sub49_sub2.anInt7197 = 0;
-                            Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255);
-                            Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class192.rights = class348_sub49_sub2.readUnsignedByte(255);
+                            Class125.skipChat = class348_sub49_sub2.readUnsignedByte(255);
                             Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class116.anInt1758 = class348_sub49_sub2.readShort(13638);
-                            Class206.aBoolean4888 = Class116.anInt1758 > 0;
+                            Class206.isMember = Class116.anInt1758 > 0;
+
                             Class135_Sub1.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944);
@@ -298,20 +305,20 @@ final class Class88 {
                             Class130_Sub1.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class290.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1;
-                            Class132.aPlayer_1907.aString10544 = Class132.aPlayer_1907.aString10537 = s_Sub2.aString8265 = class348_sub49_sub2.method3371(-13487);
+                            Class132.aPlayer_1907.username = Class132.aPlayer_1907.displayName = s_Sub2.aString8265 = class348_sub49_sub2.method3371(-13487);
                             Applet_Sub1.anInt37 = class348_sub49_sub2.readUnsignedByte(255);
                             Class348_Sub1.anInt6551 = class348_sub49_sub2.readInt((byte) -126);
-                            aa_Sub2.aClass161_5199 = new Class161();
-                            aa_Sub2.aClass161_5199.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944);
-                            if (aa_Sub2.aClass161_5199.anInt2143 == 65535) aa_Sub2.aClass161_5199.anInt2143 = -1;
-                            aa_Sub2.aClass161_5199.aString2147 = class348_sub49_sub2.method3371(-13487);
-                            if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                                aa_Sub2.aClass161_5199.anInt2138 = (50000 + (aa_Sub2.aClass161_5199.anInt2143));
-                                aa_Sub2.aClass161_5199.anInt2148 = (40000 + (aa_Sub2.aClass161_5199.anInt2143));
+                            aa_Sub2.targetAddress = new Class161();
+                            aa_Sub2.targetAddress.port = class348_sub49_sub2.readUnsignedShort(842397944);
+                            if (aa_Sub2.targetAddress.port == 65535) aa_Sub2.targetAddress.port = -1;
+                            aa_Sub2.targetAddress.address = class348_sub49_sub2.method3371(-13487);
+                            if (Class55_Sub1.liveWhereMode != Class8.whereMode) {
+                                aa_Sub2.targetAddress.highPort = (50000 + (aa_Sub2.targetAddress.port));
+                                aa_Sub2.targetAddress.lowPort = (40000 + (aa_Sub2.targetAddress.port));
                             }
-                            if (Class8.aClass364_165 != Class76.aClass364_1279 && ((Class3.aClass161_125.method1264((byte) 94, Class135_Sub2.aClass161_4839)) || (Class3.aClass161_125.method1264((byte) 112, (Class348_Sub40_Sub35.aClass161_9443))))) Class348_Sub42_Sub20.method3283(114);
+                            if (Class8.whereMode != Class76.localWhereMode && ((Class3.currentWorld.method1264((byte) 94, Class135_Sub2.gameWorld)) || (Class3.currentWorld.method1264((byte) 112, (Class348_Sub40_Sub35.demoMode))))) Class348_Sub42_Sub20.method3283(114);
                         }
-                        if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !Class206.aBoolean4888) {
+                        if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !Class206.isMember) {
                             try {
                                 Class224.method1617((byte) 125, Class93.anApplet1530, "unzap");
                             } catch (Throwable throwable) {
@@ -330,16 +337,16 @@ final class Class88 {
                                 }
                             }
                         }
-                        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) {
+                        if (Class8.whereMode == Class55_Sub1.liveWhereMode) {
                             try {
                                 Class224.method1617((byte) 125, Class93.anApplet1530, "loggedin");
                             } catch (Throwable throwable) {
                                 /* empty */
                             }
                         }
-                        if (Class239_Sub12.anInt5969 == 2 || Loader.skipLobby) Class225.anInt2955 = 11;
+                        if (Class239_Sub12.anInt5969 == 2 || Loader.skipLobby) Class225.loginStage = 11;
                         else {
-                            Class225.anInt2955 = 0;
+                            Class225.loginStage = 0;
                             Class14_Sub4.method254(2, (byte) -92);
                             Class239_Sub19.method1804(8839);
                             Class348_Sub49.method3379(2, 7);
@@ -347,27 +354,27 @@ final class Class88 {
                             return;
                         }
                     }
-                    if (Class225.anInt2955 == 11) {
-                        if (!Class348_Sub40_Sub8.aClass238_9165.method1705(3, 94)) return;
-                        Class348_Sub40_Sub8.aClass238_9165.method1701(3, 0, (byte) 11, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
-                        Class225.anInt2955 = 12;
+                    if (Class225.loginStage == 11) {
+                        if (!Class348_Sub40_Sub8.connection.available(3, 94)) return;
+                        Class348_Sub40_Sub8.connection.read(3, 0, (byte) 11, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                        Class225.loginStage = 12;
                     }
-                    if (Class225.anInt2955 == 12) {
+                    if (Class225.loginStage == 12) {
                         Class348_Sub49_Sub2 class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813;
                         class348_sub49_sub2.anInt7197 = 0;
                         if (class348_sub49_sub2.method3404(-1510)) {
-                            if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 110)) return;
-                            Class348_Sub40_Sub8.aClass238_9165.method1701(1, 3, (byte) -127, (class348_sub49_sub2.aByteArray7154));
+                            if (!Class348_Sub40_Sub8.connection.available(1, 110)) return;
+                            Class348_Sub40_Sub8.connection.read(1, 3, (byte) -127, (class348_sub49_sub2.aByteArray7154));
                         }
                         Class348_Sub3.aClass114_6584 = (Class14_Sub3.method248(-11271)[class348_sub49_sub2.method3407(15295)]);
                         Class348_Sub40_Sub25.anInt9341 = class348_sub49_sub2.readUnsignedShort(842397944);
-                        Class225.anInt2955 = 10;
+                        Class225.loginStage = 10;
                     }
-                    if (Class225.anInt2955 == 10) {
-                        if (Class348_Sub40_Sub8.aClass238_9165.method1705(Class348_Sub40_Sub25.anInt9341, 96)) {
-                            Class348_Sub40_Sub8.aClass238_9165.method1701(Class348_Sub40_Sub25.anInt9341, 0, (byte) 28, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                    if (Class225.loginStage == 10) {
+                        if (Class348_Sub40_Sub8.connection.available(Class348_Sub40_Sub25.anInt9341, 96)) {
+                            Class348_Sub40_Sub8.connection.read(Class348_Sub40_Sub25.anInt9341, 0, (byte) 28, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                             Class299.aClass348_Sub49_Sub2_3813.anInt7197 = 0;
-                            Class225.anInt2955 = 0;
+                            Class225.loginStage = 0;
                             int i_13_ = Class348_Sub40_Sub25.anInt9341;
                             Class14_Sub4.method254(2, (byte) -124);
                             Class130_Sub1.method1135(0);
@@ -380,18 +387,18 @@ final class Class88 {
                         }
                     } else {
                         int i_14_ = -128 / (-i / 53);
-                        if (Class225.anInt2955 == 14) {
+                        if (Class225.loginStage == 14) {
                             if (Class348_Sub40_Sub25.anInt9341 == -2) {
-                                if (!Class348_Sub40_Sub8.aClass238_9165.method1705(2, 106)) return;
-                                Class348_Sub40_Sub8.aClass238_9165.method1701(2, 0, (byte) -128, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                                if (!Class348_Sub40_Sub8.connection.available(2, 106)) return;
+                                Class348_Sub40_Sub8.connection.read(2, 0, (byte) -128, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                                 Class299.aClass348_Sub49_Sub2_3813.anInt7197 = 0;
                                 Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
                             }
-                            if (Class348_Sub40_Sub8.aClass238_9165.method1705(Class348_Sub40_Sub25.anInt9341, 117)) {
-                                Class348_Sub40_Sub8.aClass238_9165.method1701(Class348_Sub40_Sub25.anInt9341, 0, (byte) -104, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                            if (Class348_Sub40_Sub8.connection.available(Class348_Sub40_Sub25.anInt9341, 117)) {
+                                Class348_Sub40_Sub8.connection.read(Class348_Sub40_Sub25.anInt9341, 0, (byte) -104, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                                 Class299.aClass348_Sub49_Sub2_3813.anInt7197 = 0;
                                 int i_15_ = Class348_Sub40_Sub25.anInt9341;
-                                Class225.anInt2955 = 0;
+                                Class225.loginStage = 0;
                                 Class14_Sub4.method254(15, (byte) -120);
                                 Class312.method2330((byte) 86);
                                 Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813, (byte) 118);
@@ -402,20 +409,20 @@ final class Class88 {
                     }
                 }
             } catch (IOException ioexception) {
-                if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                    Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                    Class348_Sub40_Sub8.aClass238_9165 = null;
+                if (Class348_Sub40_Sub8.connection != null) {
+                    Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                    Class348_Sub40_Sub8.connection = null;
                 }
                 if (Class318_Sub1_Sub1_Sub2.anInt9971 >= 3) {
-                    Class225.anInt2955 = 0;
+                    Class225.loginStage = 0;
                     Class14_Sub4.method254(-4, (byte) -87);
                     Class152.method1215((byte) 3);
                 } else {
-                    if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285.method1259(0);
-                    else Class3.aClass161_125.method1259(0);
+                    if (Class239_Sub12.anInt5969 != 2) Class255.gameLobby.method1259(0);
+                    else Class3.currentWorld.method1259(0);
                     Class318_Sub1_Sub1_Sub2.anInt9971++;
                     Class11.anInt197 = 0;
-                    Class225.anInt2955 = 1;
+                    Class225.loginStage = 1;
                 }
             }
         }

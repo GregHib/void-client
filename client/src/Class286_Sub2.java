@@ -49,7 +49,7 @@ final class Class286_Sub2 extends Class286 {
         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class348_Sub42_Sub8_Sub2.anInt10432);
         if (i != -24498) aStringArray6205 = null;
         class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class316.aClass348_Sub51_3959.aClass239_Sub20_7248.method1808(-32350));
-        Class348_Sub42_Sub14.method3243(-101, class348_sub47);
+        Class348_Sub42_Sub14.writePacket(-101, class348_sub47);
     }
 
     final void method2140(Class258 class258, byte i, int i_5_) {

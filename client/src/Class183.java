@@ -123,12 +123,12 @@ final class Class183 {
         if (i != 32841) anInt2464 = 86;
     }
 
-    Class183(Class230 class230, int i, Class45 class45) {
+    Class183(Game game, int i, Class45 class45) {
         try {
             aClass45_2461 = class45;
             aClass45_2461.method407(0, 1);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qe.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qe.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

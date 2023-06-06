@@ -359,7 +359,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             if (i_61_ >= 0 && (i_61_ < 2048)) {
                                                 Player player = (Class294.aPlayerArray5058[i_61_]);
                                                 Class17 class17 = ((class46.anInt699) == -1 ? null : (Class10.aClass87_191.method835((class46.anInt699), 7)));
-                                                if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.anInt9591)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.aString10544), (byte) -50)))))
+                                                if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.playerIndex)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.username), (byte) -50)))))
                                                     class64 = (player.aClass154_10536.method1226((Class318_Sub1_Sub3_Sub3.aClass170_10209), null, null, true, (Exception_Sub1.aClass255_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.aClass150_9342), class46.anInt841, (Class348_Sub8.aHa6654), (Class189.aClass278_2529), (Class10.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aClass261_5558)));
                                             }
                                         } else if ((class46.anInt770) == 8 || (class46.anInt770) == 9) {
@@ -500,7 +500,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class348_Sub40_Sub1.aClass351_9089, Class348_Sub23_Sub2.aClass77_9029, -97);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(52, i_74_);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeIntMiddle(i, (byte) 44);
-        Class348_Sub42_Sub14.method3243(25, class348_sub47);
+        Class348_Sub42_Sub14.writePacket(25, class348_sub47);
     }
 
     final int[] method3042(int i, int i_75_) {

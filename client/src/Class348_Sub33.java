@@ -53,22 +53,22 @@ final class Class348_Sub33 extends Class348 {
                         try {
                             int i_3_ = (class348_sub48.anIntArray7132[i_2_]);
                             if (i_3_ == 0) {
-                                Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].anObject1998));
+                                Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].socket));
                                 int i_5_ = field.getInt(null);
                                 class348_sub49_sub2.writeByte(false, 0);
                                 class348_sub49_sub2.writeInt((byte) 108, i_5_);
                             } else if (i_3_ == 1) {
-                                Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].anObject1998));
+                                Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].socket));
                                 field.setInt(null, (class348_sub48.anIntArray7136[i_2_]));
                                 class348_sub49_sub2.writeByte(false, 0);
                             } else if (i_3_ == 2) {
-                                Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].anObject1998));
+                                Field field = ((Field) (class348_sub48.aClass144Array7135[i_2_].socket));
                                 int i_4_ = field.getModifiers();
                                 class348_sub49_sub2.writeByte(false, 0);
                                 class348_sub49_sub2.writeInt((byte) 122, i_4_);
                             }
                             if (i_3_ == 3) {
-                                Method method = ((Method) (class348_sub48.aClass144Array7127[i_2_].anObject1998));
+                                Method method = ((Method) (class348_sub48.aClass144Array7127[i_2_].socket));
                                 byte[][] is = (class348_sub48.aByteArrayArrayArray7128[i_2_]);
                                 Object[] objects = new Object[is.length];
                                 for (int i_6_ = 0; is.length > i_6_; i_6_++) {
@@ -86,7 +86,7 @@ final class Class348_Sub33 extends Class348 {
                                     } else class348_sub49_sub2.writeByte(false, 4);
                                 } else class348_sub49_sub2.writeByte(false, 0);
                             } else if (i_3_ == 4) {
-                                Method method = ((Method) (class348_sub48.aClass144Array7127[i_2_].anObject1998));
+                                Method method = ((Method) (class348_sub48.aClass144Array7127[i_2_].socket));
                                 int i_7_ = method.getModifiers();
                                 class348_sub49_sub2.writeByte(false, 0);
                                 class348_sub49_sub2.writeInt((byte) 95, i_7_);

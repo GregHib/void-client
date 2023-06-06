@@ -144,7 +144,7 @@ final class Class286_Sub5 extends Class286 {
         Class86.anInt1481 = class45.method417("mapflag", 0);
         Class239_Sub10.anInt5948 = class45.method417("cross", 0);
         Class113.anInt1742 = class45.method417("mapdots", 0);
-        Class364.anInt4469 = class45.method417("scrollbar", 0);
+        WhereMode.anInt4469 = class45.method417("scrollbar", 0);
         Class348_Sub40_Sub38.anInt9473 = class45.method417("name_icons", 0);
         Class187.anInt2510 = class45.method417("floorshadows", 0);
         Class52.anInt4895 = class45.method417("compass", 0);

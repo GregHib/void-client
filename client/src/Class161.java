@@ -3,17 +3,17 @@
  */
 
 final class Class161 {
-    int anInt2138;
+    int highPort;
     private boolean aBoolean2139 = false;
     static int anInt2140;
     static int anInt2141;
     static int anInt2142;
-    int anInt2143;
+    int port;
     static int anInt2144;
     static int[] anIntArray2145 = new int[25];
-    private boolean aBoolean2146 = true;
-    String aString2147;
-    int anInt2148;
+    private boolean useHighPort = true;
+    String address;
+    int lowPort;
     static int anInt2149;
     static int anInt2150;
     static boolean aBoolean2151 = false;
@@ -27,10 +27,10 @@ final class Class161 {
     final void method1259(int i) {
         if (i != 0) method1258(39, 119, 4);
         anInt2149++;
-        if (!aBoolean2146) {
+        if (!useHighPort) {
             aBoolean2139 = true;
-            aBoolean2146 = true;
-        } else if (!aBoolean2139) aBoolean2146 = false;
+            useHighPort = true;
+        } else if (!aBoolean2139) useHighPort = false;
         else aBoolean2139 = false;
     }
 
@@ -65,10 +65,12 @@ final class Class161 {
         if (i > 46) anIntArray2145 = null;
     }
 
-    final Class144 method1262(Class297 class297, byte i) {
+    final Class144 openSocket(Class297 class297, byte i) {
         if (i != 36) method1258(-105, -70, -80);
         anInt2144++;
-        return class297.method2235(aBoolean2139, (aBoolean2146 ? this.anInt2138 : this.anInt2148), this.aString2147, i ^ 0x6e65);
+        System.out.println("Open socket " + useHighPort + " " + this.highPort + " " +  this.lowPort);
+        System.out.println(aBoolean2139 + " " + (useHighPort ? this.highPort : this.lowPort) + " " + this.address);
+        return class297.method2235(aBoolean2139, (useHighPort ? this.highPort : this.lowPort), this.address, i ^ 0x6e65);
     }
 
     static final void method1263(boolean bool) {
@@ -104,13 +106,13 @@ final class Class161 {
         if (i <= 69) return false;
         anInt2141++;
         if (class161_2_ != null) {
-            return (this.anInt2143 == class161_2_.anInt2143) && this.aString2147.equals(class161_2_.aString2147);
+            return (this.port == class161_2_.port) && this.address.equals(class161_2_.address);
         }
         return false;
     }
 
     public Class161() {
-        this.anInt2138 = 443;
-        this.anInt2148 = 43594;
+        this.highPort = 443;
+        this.lowPort = 43594;
     }
 }

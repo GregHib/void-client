@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class231 {
+final class WhatMode {
     static int anInt2990;
     static int anInt2991;
     static int anInt2992;
@@ -88,7 +88,7 @@ final class Class231 {
         }
     }
 
-    Class231(String string, int i) {
+    WhatMode(String string, int i) {
         this.anInt2995 = i;
     }
 }

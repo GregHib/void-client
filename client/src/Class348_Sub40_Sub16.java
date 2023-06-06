@@ -352,7 +352,7 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
 
     static final void method3088(int i) {
         anInt9228++;
-        if (Class76.aClass364_1279 != Class8.aClass364_165 && i == 9) {
+        if (Class76.localWhereMode != Class8.whereMode && i == 9) {
             try {
                 Class224.method1617((byte) 125, Class79.aClient1367, "tbrefresh");
             } catch (Throwable throwable) {

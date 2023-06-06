@@ -332,7 +332,7 @@ final class Class263 {
         if (bool != true) this.aClass60_3362 = null;
     }
 
-    Class263(Class230 class230, int i, boolean bool, Class45 class45, Class45 class45_29_) {
+    Class263(Game game, int i, boolean bool, Class45 class45, Class45 class45_29_) {
         aClass60_3350 = new Class60(64);
         this.aClass60_3360 = new Class60(500);
         this.aClass60_3361 = new Class60(30);
@@ -346,7 +346,7 @@ final class Class263 {
                 int i_30_ = aClass45_3343.method414(-1) + -1;
                 aClass45_3343.method407(0, i_30_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_29_ != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_29_ != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

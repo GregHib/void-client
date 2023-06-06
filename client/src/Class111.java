@@ -89,7 +89,7 @@ final class Class111 {
         Class14_Sub1.method239((byte) -114, i_16_, i_15_, class46);
     }
 
-    Class111(Class230 class230, int i, Class45 class45) {
+    Class111(Game game, int i, Class45 class45) {
         try {
             aClass45_1718 = class45;
             aClass45_1718.method407(0, 1);
@@ -147,7 +147,7 @@ final class Class111 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mt.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("mt.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

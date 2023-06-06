@@ -87,14 +87,14 @@ final class Class187 {
         anInt2502++;
     }
 
-    Class187(Class230 class230, int i, Class45 class45) {
+    Class187(Game game, int i, Class45 class45) {
         do {
             try {
                 aClass45_2498 = class45;
                 if (aClass45_2498 == null) break;
                 aClass45_2498.method407(0, 35);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("qga.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

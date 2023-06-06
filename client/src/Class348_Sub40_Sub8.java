@@ -22,7 +22,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
     private short[] aShortArray9162;
     static Color[] aColorArray9163 = {new Color(9179409), new Color(16777215), new Color(16726277), new Color(16726277)};
     int anInt9164;
-    static Class238 aClass238_9165;
+    static NetworkChannel connection;
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
         int i_1_ = i;
@@ -100,7 +100,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
         anInt9148++;
         method3067((byte) -98);
         int i_3_ = this.anInt9150 + -1;
-        if (i < 108) aClass238_9165 = null;
+        if (i < 108) connection = null;
         for (/**/; i_3_ >= 1; i_3_--) {
             short i_4_ = aShortArray9159[i_3_];
             if (i_4_ > 8) break;
@@ -128,8 +128,8 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
 
     public static void method3068(int i) {
         aColorArray9163 = null;
-        if (i != 13715) aClass238_9165 = null;
-        aClass238_9165 = null;
+        if (i != 13715) connection = null;
+        connection = null;
     }
 
     final void method3069(int i, int[] is, byte i_8_) {

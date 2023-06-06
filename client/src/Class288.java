@@ -6,7 +6,7 @@ class Class288 implements Interface12 {
     int anInt4950;
     int anInt4951;
     Class341 aClass341_4952;
-    static Class231 aClass231_4953 = new Class231("WIP", 2);
+    static WhatMode wipWhatMode = new WhatMode("WIP", 2);
     static int anInt4954;
     Class221 aClass221_4955;
     static int anInt4956;
@@ -14,8 +14,8 @@ class Class288 implements Interface12 {
     int anInt4958;
 
     public static void method2185(int i) {
-        aClass231_4953 = null;
-        if (i != 2) aClass231_4953 = null;
+        wipWhatMode = null;
+        if (i != 2) wipWhatMode = null;
     }
 
     static final int method2186(byte i, String string) {

@@ -121,13 +121,13 @@ final class Class166 {
         }
     }
 
-    Class166(Class230 class230, int i, Class45 class45, Class45 class45_9_) {
+    Class166(Game game, int i, Class45 class45, Class45 class45_9_) {
         try {
             aClass45_2188 = class45;
             this.aClass45_2180 = class45_9_;
             aClass45_2188.method407(0, 33);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_9_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_9_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

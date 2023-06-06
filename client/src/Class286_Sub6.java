@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class286_Sub6 extends Class286 {
-    static Class230 aClass230_6262 = new Class230("game3", 2);
+    static Game aGame_6262 = new Game("game3", 2);
     static int anInt6263;
     static int anInt6264;
     static int anInt6265;
@@ -45,14 +45,14 @@ final class Class286_Sub6 extends Class286 {
         if (bool != false) aLong6276 = -88L;
         anInt6271++;
         String string = "www";
-        if (Class367_Sub8.aClass364_7361 != Class8.aClass364_165) {
-            if (Class8.aClass364_165 != Class26.aClass364_382) {
-                if (Class8.aClass364_165 == Class108.aClass364_1657) string = "www-wtwip";
+        if (Class367_Sub8.aWhereMode_7361 != Class8.whereMode) {
+            if (Class8.whereMode != Class26.aWhereMode_382) {
+                if (Class8.whereMode == Class108.wipWhereMode) string = "www-wtwip";
             } else string = "www-wtqa";
         } else string = "www-wtrc";
         String string_2_ = "";
         if (Class239_Sub12.aString5966 != null) string_2_ = "/p=" + Class239_Sub12.aString5966;
-        return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_2_ + "/");
+        return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aGame_10434.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_2_ + "/");
     }
 
     static final boolean method2163(boolean bool) {
@@ -147,7 +147,7 @@ final class Class286_Sub6 extends Class286 {
 
     public static void method2164(boolean bool) {
         if (bool == true) {
-            aClass230_6262 = null;
+            aGame_6262 = null;
             aBooleanArray6270 = null;
         }
     }

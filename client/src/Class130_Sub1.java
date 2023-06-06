@@ -20,7 +20,7 @@ final class Class130_Sub1 extends Class130 {
 
     public static void method1133(int i) {
         if (i <= 38) anInt5799 = 61;
-        aClass144_5800 = null;
+        gameConnection = null;
     }
 
     Class130_Sub1(Class58[] aclass58) {
@@ -30,7 +30,7 @@ final class Class130_Sub1 extends Class130 {
     static final void method1134(int i) {
         Class348_Sub49.method3379(2, 11);
         anInt5802++;
-        if (i < 28) aClass144_5800 = null;
+        if (i < 28) gameConnection = null;
         Class301.method2282(-12648);
         System.gc();
     }
@@ -51,7 +51,7 @@ final class Class130_Sub1 extends Class130 {
         Class60.anInt1085 = 0;
         Class124.anInt1827 = 0;
         Class188.anInt2519 = 0;
-        Class376.anInt4551 = 0;
+        InputStreamBuffer.anInt4551 = 0;
         Class14.anInt5098 = 0;
         Class286_Sub4.anInt6245 = 0;
         Class233.anInt3021 = 0;
@@ -155,7 +155,7 @@ final class Class130_Sub1 extends Class130 {
         Class283.anInt3656 = 0;
         Class348_Sub40_Sub22.anInt9295 = 0;
         Class64.anInt1132 = 0;
-        Class231.anInt2990 = 0;
+        WhatMode.anInt2990 = 0;
         Class348_Sub46.anInt7114 = 0;
         Class5_Sub1.anInt8337 = 0;
         Class348_Sub29.anInt6910 = 0;
@@ -178,7 +178,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub3.anInt5585 = 0;
         Class58.anInt1066 = 0;
         Class348_Sub42_Sub10.anInt9560 = 0;
-        Class376.anInt4553 = 0;
+        InputStreamBuffer.anInt4553 = 0;
         Class363.anInt4465 = 0;
         Class347.anInt4280 = 0;
         Class239_Sub2.anInt5854 = 0;
@@ -211,7 +211,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt8054 = 0;
         Class59_Sub1.anInt5286 = 0;
         Class18.anInt288 = 0;
-        Class230.anInt2982 = 0;
+        Game.anInt2982 = 0;
         Class61.anInt1105 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10091 = 0;
         Class135.anInt1922 = 0;
@@ -285,7 +285,7 @@ final class Class130_Sub1 extends Class130 {
         Class82.anInt1438 = 0;
         Class239_Sub25.anInt6104 = 0;
         Class348_Sub49.anInt7172 = 0;
-        Class376.anInt4547 = 0;
+        InputStreamBuffer.anInt4547 = 0;
         Class88.anInt1504 = 0;
         Class243.anInt3163 = 0;
         Class206.anInt4867 = 0;
@@ -306,7 +306,7 @@ final class Class130_Sub1 extends Class130 {
         Class60.anInt1091 = 0;
         Class170.anInt5081 = 0;
         Class45.anInt646 = 0;
-        Class238_Sub1.anInt5829 = 0;
+        ConnectionChannel.anInt5829 = 0;
         Class64_Sub2.anInt5408 = 0;
         Class243.anInt3157 = 0;
         Class348_Sub49.anInt7161 = 0;
@@ -479,7 +479,7 @@ final class Class130_Sub1 extends Class130 {
         Class124.anInt1837 = 0;
         Class318_Sub1_Sub5_Sub2.anInt10161 = 0;
         Class348_Sub51.anInt7242 = 0;
-        Class238_Sub1.anInt5835 = 0;
+        ConnectionChannel.anInt5835 = 0;
         Class225.anInt2903 = 0;
         Class244.anInt4616 = 0;
         Class286_Sub5.anInt6250 = 0;
@@ -682,7 +682,7 @@ final class Class130_Sub1 extends Class130 {
         Class258.anInt4853 = 0;
         Npc.anInt10513 = 0;
         Class355.anInt4371 = 0;
-        Class238_Sub1.anInt5828 = 0;
+        ConnectionChannel.anInt5828 = 0;
         ha_Sub3.anInt7945 = 0;
         Class308.anInt3885 = 0;
         Class348_Sub40_Sub27.anInt9359 = 0;
@@ -703,7 +703,7 @@ final class Class130_Sub1 extends Class130 {
         Class135_Sub2.anInt4844 = 0;
         Class263.anInt3349 = 0;
         Class239_Sub17.anInt6027 = 0;
-        Class208.anInt2709 = 0;
+        OutputStreamBuffer.anInt2709 = 0;
         Class348_Sub40_Sub38.anInt9469 = 0;
         Class178.anInt2340 = 0;
         ha_Sub3.anInt8057 = 0;
@@ -801,7 +801,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7635 = 0;
         Class164.anInt2175 = 0;
         Class31.anInt442 = 0;
-        Class238.anInt3132 = 0;
+        NetworkChannel.anInt3132 = 0;
         Class239_Sub15.anInt6003 = 0;
         Class348_Sub15.anInt6777 = 0;
         Class237.anInt3118 = 0;
@@ -935,7 +935,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7976 = 0;
         Class286_Sub4.anInt6236 = 0;
         ha_Sub2.anInt7565 = 0;
-        Class238_Sub1.anInt5830 = 0;
+        ConnectionChannel.anInt5830 = 0;
         Class299_Sub1_Sub2.anInt8704 = 0;
         Class242.anInt3154 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9963 = 0;
@@ -976,7 +976,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub22.anInt6073 = 0;
         ha_Sub3.anInt7920 = 0;
         Class348_Sub4.anInt6600 = 0;
-        Class238_Sub1.anInt5839 = 0;
+        ConnectionChannel.anInt5839 = 0;
         Class64_Sub3.anInt5565 = 0;
         ha_Sub3.anInt8043 = 0;
         Class100.anInt1590 = 0;
@@ -1460,7 +1460,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub49.anInt7144 = 0;
         Class348_Sub42_Sub9.anInt9557 = 0;
         Class124.anInt1864 = 0;
-        Class238_Sub1.anInt5838 = 0;
+        ConnectionChannel.anInt5838 = 0;
         Class240.anInt4675 = 0;
         ha_Sub3.anInt8058 = 0;
         Class5_Sub2.anInt8354 = 0;
@@ -1499,7 +1499,7 @@ final class Class130_Sub1 extends Class130 {
         Class262.anInt3324 = 0;
         Class348_Sub42_Sub15.anInt9655 = 0;
         Class248.anInt3190 = 0;
-        Class231.anInt2992 = 0;
+        WhatMode.anInt2992 = 0;
         Class286_Sub8.anInt6295 = 0;
         Class3.anInt124 = 0;
         Class101_Sub2.anInt5709 = 0;
@@ -1671,7 +1671,7 @@ final class Class130_Sub1 extends Class130 {
         Class237.anInt3127 = 0;
         Class318_Sub1.anInt6385 = 0;
         Class331.anInt4134 = 0;
-        Class208.anInt2711 = 0;
+        OutputStreamBuffer.anInt2711 = 0;
         ha_Sub2.anInt7568 = 0;
         Class59_Sub1.anInt5277 = 0;
         Class267.anInt3400 = 0;
@@ -1753,7 +1753,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7561 = 0;
         Class348_Sub5.anInt6620 = 0;
         ha_Sub2.anInt7648 = 0;
-        Class364.anInt4467 = 0;
+        WhereMode.anInt4467 = 0;
         Class209.anInt2716 = 0;
         Class367_Sub11.anInt7412 = 0;
         Class320.anInt3993 = 0;
@@ -1781,7 +1781,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub29.anInt6145 = 0;
         Class50_Sub3.anInt5253 = 0;
         Class184.anInt2476 = 0;
-        Class376.anInt4550 = 0;
+        InputStreamBuffer.anInt4550 = 0;
         client.anInt5174 = 0;
         ha_Sub2.anInt7518 = 0;
         Class239_Sub7.anInt5905 = 0;
@@ -1804,7 +1804,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7609 = 0;
         ha_Sub2.anInt7604 = 0;
         Class348_Sub42_Sub16.anInt9666 = 0;
-        Class238_Sub1.anInt5831 = 0;
+        ConnectionChannel.anInt5831 = 0;
         Class219.anInt2874 = 0;
         Class348_Sub49.anInt7205 = 0;
         ha_Sub3.anInt7906 = 0;
@@ -1893,7 +1893,7 @@ final class Class130_Sub1 extends Class130 {
         Class367_Sub1.anInt7279 = 0;
         Class2.anInt116 = 0;
         Class88.anInt1496 = 0;
-        Class231.anInt2991 = 0;
+        WhatMode.anInt2991 = 0;
         Class311.anInt3912 = 0;
         InputStream_Sub1.anInt72 = 0;
         Class318_Sub2.anInt6398 = 0;
@@ -1943,7 +1943,7 @@ final class Class130_Sub1 extends Class130 {
         Class124.anInt1860 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10022 = 0;
         Class121.anInt1799 = 0;
-        Class238_Sub1.anInt5833 = 0;
+        ConnectionChannel.anInt5833 = 0;
         Class348_Sub16_Sub3.anInt8907 = 0;
         Class373_Sub2.anInt7447 = 0;
         Class6.anInt153 = 0;
@@ -1982,7 +1982,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub8.anInt5916 = 0;
         Class318_Sub1_Sub1_Sub2.anInt9969 = 0;
         Class318_Sub1_Sub3_Sub4.anInt10328 = 0;
-        Class230.anInt2983 = 0;
+        Game.anInt2983 = 0;
         Class348_Sub20.anInt6837 = 0;
         Class64_Sub2.anInt5426 = 0;
         ha_Sub2.anInt7642 = 0;
@@ -2032,7 +2032,7 @@ final class Class130_Sub1 extends Class130 {
         Class367_Sub8.anInt7354 = 0;
         Class348_Sub26.anInt6886 = 0;
         Class367_Sub2.anInt7286 = 0;
-        Class231.anInt2994 = 0;
+        WhatMode.anInt2994 = 0;
         Class189.anInt2532 = 0;
         Npc.anInt10514 = 0;
         Class296.anInt3765 = 0;
@@ -2528,7 +2528,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub1.anInt5846 = 0;
         Class348_Sub45_Sub2.anInt9732 = 0;
         Class59.anInt1072 = 0;
-        Class376.anInt4555 = 0;
+        InputStreamBuffer.anInt4555 = 0;
         Class94.anInt1536 = 0;
         Class64_Sub2.anInt5514 = 0;
         Class14_Sub3.anInt8624 = 0;
@@ -2728,7 +2728,7 @@ final class Class130_Sub1 extends Class130 {
         Class90.anInt1513 = 0;
         Class239_Sub7.anInt5906 = 0;
         Class239_Sub24.anInt6090 = 0;
-        Class231.anInt2997 = 0;
+        WhatMode.anInt2997 = 0;
         Class229.anInt2980 = 0;
         Class14.anInt5094 = 0;
         Player.anInt10528 = 0;
@@ -2965,7 +2965,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3_Sub3.anInt10233 = 0;
         ha_Sub2.anInt7528 = 0;
         ha_Sub3.anInt8067 = 0;
-        Class208.anInt2714 = 0;
+        OutputStreamBuffer.anInt2714 = 0;
         Class356.anInt4380 = 0;
         Class255.anInt3277 = 0;
         Class235.anInt3080 = 0;
@@ -3033,7 +3033,7 @@ final class Class130_Sub1 extends Class130 {
         Class237.anInt3107 = 0;
         ha_Sub2.anInt7539 = 0;
         Class261.anInt3316 = 0;
-        Class376.anInt4552 = 0;
+        InputStreamBuffer.anInt4552 = 0;
         Class248.anInt3194 = 0;
         Class367_Sub9.anInt7374 = 0;
         Class289.anInt3703 = 0;
@@ -3206,7 +3206,7 @@ final class Class130_Sub1 extends Class130 {
         Class54.anInt971 = 0;
         Class64_Sub2.anInt5479 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10020 = 0;
-        Class208.anInt2710 = 0;
+        OutputStreamBuffer.anInt2710 = 0;
         Class115.anInt1755 = 0;
         Class348_Sub6.anInt6639 = 0;
         Class181.anInt2409 = 0;
@@ -3437,7 +3437,7 @@ final class Class130_Sub1 extends Class130 {
         Class48.anInt850 = 0;
         Class348_Sub4.anInt6615 = 0;
         Class143.anInt1978 = 0;
-        Class364.anInt4468 = 0;
+        WhereMode.anInt4468 = 0;
         Class348_Sub42_Sub3.anInt9508 = 0;
         ha_Sub3.anInt7912 = 0;
         Class348_Sub41.anInt7055 = 0;
@@ -3568,7 +3568,7 @@ final class Class130_Sub1 extends Class130 {
         Class46.anInt718 = 0;
         ha_Sub2.anInt7653 = 0;
         Class348_Sub49.anInt7137 = 0;
-        Class230.anInt2989 = 0;
+        Game.anInt2989 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10018 = 0;
         Class377.anInt9877 = 0;
         Class237.anInt3102 = 0;
@@ -3759,7 +3759,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub7.anInt6641 = 0;
         Class377.anInt9871 = 0;
         Class268.anInt3446 = 0;
-        Class376.anInt4549 = 0;
+        InputStreamBuffer.anInt4549 = 0;
         Class377.anInt9876 = 0;
         s_Sub2.anInt8261 = 0;
         Class51.anInt956 = 0;
@@ -3951,7 +3951,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub1.anInt6549 = 0;
         Class31.anInt436 = 0;
         Class315.anInt3948 = 0;
-        Class230.anInt2988 = 0;
+        Game.anInt2988 = 0;
         ha.anInt4574 = 0;
         Class46.anInt819 = 0;
         Class318_Sub1_Sub5_Sub1.anInt10119 = 0;
@@ -4063,7 +4063,7 @@ final class Class130_Sub1 extends Class130 {
         Class140.anInt1958 = 0;
         Class286_Sub3.anInt6232 = 0;
         Class348_Sub42_Sub1.anInt9496 = 0;
-        Class230.anInt2984 = 0;
+        Game.anInt2984 = 0;
         Class159.anInt2124 = 0;
         ha_Sub2.anInt7572 = 0;
         IOException_Sub1.anInt89 = 0;
@@ -4155,7 +4155,7 @@ final class Class130_Sub1 extends Class130 {
         }
 
         Class363.method3515(-45);
-        Class238_Sub1.aBoolean5840 = true;
+        ConnectionChannel.aBoolean5840 = true;
         for (int j1 = 0; j1 < 100; j1++)
             Class152.aBooleanArray2076[j1] = true;
 
@@ -4187,7 +4187,7 @@ final class Class130_Sub1 extends Class130 {
     static int anInt5797;
     static int anInt5798;
     static int anInt5799;
-    static Class144 aClass144_5800;
+    static Class144 gameConnection;
     Class58[] aClass58Array5801;
     static int anInt5802;
 }

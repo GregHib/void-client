@@ -88,14 +88,14 @@ final class Class319 {
         }
     }
 
-    Class319(Class230 class230, int i, Class45 class45, Class45 class45_3_) {
+    Class319(Game game, int i, Class45 class45, Class45 class45_3_) {
         try {
             this.aClass45_3981 = class45_3_;
             aClass45_3979 = class45;
             int i_4_ = -1 + aClass45_3979.method414(-1);
             aClass45_3979.method407(0, i_4_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cn.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_3_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cn.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_3_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

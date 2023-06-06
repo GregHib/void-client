@@ -59,7 +59,7 @@ final class Class348_Sub51 extends Class348 {
     static int anInt7266;
     static int anInt7267;
     private static short[][] aShortArrayArray7268;
-    private final Class230 aClass230_7269;
+    private final Game aGame_7269;
     Class239_Sub21 aClass239_Sub21_7270;
     Class239_Sub25 aClass239_Sub25_7271;
     Class239_Sub26 aClass239_Sub26_7272;
@@ -133,10 +133,10 @@ final class Class348_Sub51 extends Class348 {
         } while (false);
     }
 
-    final Class230 method3422(int i) {
+    final Game method3422(int i) {
         anInt7258++;
         if (i != 674) method3425(45);
-        return aClass230_7269;
+        return aGame_7269;
     }
 
     private final void method3423(boolean bool, int i) {
@@ -341,25 +341,25 @@ final class Class348_Sub51 extends Class348 {
         aShortArrayArrayArray7262 = null;
     }
 
-    Class348_Sub51(Class230 class230, int i) {
+    Class348_Sub51(Game game, int i) {
         try {
-            aClass230_7269 = class230;
+            aGame_7269 = game;
             aClass199_7221 = new Class199((Class348_Sub23_Sub1.aClass297_8992.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780.toLowerCase().indexOf("arm") != -1);
             this.aClass239_Sub25_7271 = new Class239_Sub25(i, this);
             method3423(true, 31286);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dh.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("dh.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
-    Class348_Sub51(Class348_Sub49 class348_sub49, Class230 class230, int i) {
+    Class348_Sub51(Class348_Sub49 class348_sub49, Game game, int i) {
         try {
-            aClass230_7269 = class230;
+            aGame_7269 = game;
             aClass199_7221 = new Class199((Class348_Sub23_Sub1.aClass297_8992.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780.indexOf("arm") != -1);
             this.aClass239_Sub25_7271 = new Class239_Sub25(i, this);
             method3424(925, class348_sub49);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dh.<init>(" + (class348_sub49 != null ? "{...}" : "null") + ',' + (class230 != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("dh.<init>(" + (class348_sub49 != null ? "{...}" : "null") + ',' + (game != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 

@@ -32,10 +32,10 @@ final class Class315 {
         }
     }
 
-    static final boolean method2354(Class364 class364, int i) {
+    static final boolean isWTMode(WhereMode whereMode, int i) {
         anInt3954++;
         if (i != -1) method2355(-93, (byte) 115, true, null, -92, -67, 6);
-        return Class367_Sub8.aClass364_7361 == class364 || Class26.aClass364_382 == class364 || Class108.aClass364_1657 == class364 || class364 == Class342.aClass364_4246;
+        return Class367_Sub8.aWhereMode_7361 == whereMode || Class26.aWhereMode_382 == whereMode || Class108.wipWhereMode == whereMode || whereMode == Class342.aWhereMode_4246;
     }
 
     static final void method2355(int i, byte i_0_, boolean bool, Class45 class45, int i_1_, int i_2_, int i_3_) {

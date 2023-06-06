@@ -94,7 +94,7 @@ final class Class87 {
         return class348_sub42_sub17;
     }
 
-    Class87(Class230 class230, int i, Class45 class45, Class45 class45_6_, Class45 class45_7_) {
+    Class87(Game game, int i, Class45 class45, Class45 class45_6_, Class45 class45_7_) {
         try {
             aClass45_1488 = class45;
             if (aClass45_1488 != null) {
@@ -103,7 +103,7 @@ final class Class87 {
             }
             Class239.method1711(7, class45_6_, 2, class45_7_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_6_ != null ? "{...}" : "null") + ',' + (class45_7_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_6_ != null ? "{...}" : "null") + ',' + (class45_7_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

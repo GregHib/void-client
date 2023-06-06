@@ -166,7 +166,7 @@ final class Canvas_Sub1 extends Canvas {
         if (r_Sub2.aClass252_10488 == null) {
             if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.aClass45_6950.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))) {
                 if (Class348_Sub32.aClass45_6950.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))
-                    r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.aBoolean1900, (byte) -91);
+                    r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.membersWorld, (byte) -91);
                 else {
                     bool = false;
                     Class268.anInt3441++;
@@ -301,11 +301,11 @@ final class Canvas_Sub1 extends Canvas {
                 Class363.method3514((byte) -105);
                 Class348_Sub18.method2938((byte) 62);
                 Class130_Sub1.method1131(99);
-                if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aClass238_9165 != null && Class240.anInt4674 == 11) {
+                if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.connection != null && Class240.anInt4674 == 11) {
                     Class352.anInt4335++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i ^ ~0x55);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 108, 1057001181);
-                    Class348_Sub42_Sub14.method3243(-122, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(-122, class348_sub47);
                 }
                 if (Class312.anInt3931 == 0) {
                     int i_33_ = ((ha.anInt4581 + -(Class367_Sub4.anInt7319 >> 4)) / 8);
@@ -324,9 +324,9 @@ final class Canvas_Sub1 extends Canvas {
                 if (Class240.anInt4674 != 4) {
                     if (Class240.anInt4674 != 8) {
                         Class348_Sub49.method3379(2, 10);
-                        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
+                        if (Class348_Sub40_Sub8.connection != null) {
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class340.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106);
-                            Class348_Sub42_Sub14.method3243(127, class348_sub47);
+                            Class348_Sub42_Sub14.writePacket(127, class348_sub47);
                         }
                     } else Class348_Sub49.method3379(2, 7);
                 } else Class348_Sub49.method3379(i ^ 0x2, 3);

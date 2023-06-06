@@ -59,7 +59,7 @@ final class Class261 {
         if (i == 16) {
             class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -70, i_8_);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
-            Class348_Sub42_Sub14.method3243(117, class348_sub47);
+            Class348_Sub42_Sub14.writePacket(117, class348_sub47);
         }
     }
 
@@ -277,12 +277,12 @@ final class Class261 {
         }
     }
 
-    Class261(Class230 class230, int i, Class45 class45) {
+    Class261(Game game, int i, Class45 class45) {
         try {
             aClass45_3319 = class45;
             aClass45_3319.method407(0, 32);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("uga.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

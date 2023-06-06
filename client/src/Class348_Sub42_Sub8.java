@@ -62,7 +62,7 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
             Class66.method703(r.anInt9721);
         }
         Class223.aBoolean2895 = false;
-        Class64_Sub3.aString5600 = Class186.aString2496 = "";
+        Class64_Sub3.aString5600 = Class186.password = "";
         Class195.method1448(-56);
         Class362.anInt4458 = -1;
         Class33.method338(i + 45, Class348_Sub42_Sub16_Sub1.anInt10447);

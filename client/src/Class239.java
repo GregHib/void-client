@@ -18,10 +18,10 @@ abstract class Class239 {
     static Class45 aClass45_3146;
     static Class166 aClass166_3147;
 
-    static final Class231[] method1709(int i) {
+    static final WhatMode[] method1709(int i) {
         if (i > -110) method1715(97);
         anInt3141++;
-        return (new Class231[]{Class68.aClass231_1189, Class348_Sub40_Sub20.aClass231_9263, Class288.aClass231_4953});
+        return (new WhatMode[]{Class68.aWhatMode_1189, Class348_Sub40_Sub20.rcWhatMode, Class288.wipWhatMode});
     }
 
     abstract int method1710(int i);

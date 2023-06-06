@@ -28,10 +28,10 @@ final class Class348_Sub23_Sub3 extends Class348_Sub23 {
         aString9043 = null;
     }
 
-    static final Class238 method2982(Socket socket, byte i, int i_0_) throws IOException {
+    static final NetworkChannel createConnection(Socket socket, byte i, int bufferSize) throws IOException {
         int i_1_ = -41 / ((i - -40) / 42);
         anInt9040++;
-        return new Class238_Sub1(socket, i_0_);
+        return new ConnectionChannel(socket, bufferSize);
     }
 
     final void method2961(byte i) {

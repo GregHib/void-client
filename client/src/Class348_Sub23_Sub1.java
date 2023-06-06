@@ -59,7 +59,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
 
     static final Class50_Sub3 method2970(int i, Class348_Sub49 class348_sub49) {
         anInt8998++;
-        if (i != 2) method2972(null, -114, 15);
+        if (i != 2) switchWorld(null, -114, 15);
         return new Class50_Sub3(class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(i ^ 0x3544), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255));
     }
 
@@ -69,24 +69,24 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
         return aClass348_Sub16_Sub2_8995;
     }
 
-    static final boolean method2972(String string, int i, int i_3_) {
+    static final boolean switchWorld(String address, int port, int i_3_) {
         anInt9004++;
         if (aClass297_8992.aBoolean3777) {
-            Class3.aClass161_125 = new Class161();
-            Class3.aClass161_125.anInt2143 = i;
-            Class3.aClass161_125.aString2147 = string;
-            if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
-                Class3.aClass161_125.anInt2138 = 50000 - -Class3.aClass161_125.anInt2143;
-                Class3.aClass161_125.anInt2148 = 40000 - -Class3.aClass161_125.anInt2143;
+            Class3.currentWorld = new Class161();
+            Class3.currentWorld.port = port;
+            Class3.currentWorld.address = address;
+            if (Class8.whereMode != Class55_Sub1.liveWhereMode) {
+                Class3.currentWorld.highPort = 50000 - -Class3.currentWorld.port;
+                Class3.currentWorld.lowPort = 40000 - -Class3.currentWorld.port;
             }
-            if (i < Class65.aClass110_Sub1Array1146.length && Class65.aClass110_Sub1Array1146[i] != null) Class251.anInt3234 = (Class65.aClass110_Sub1Array1146[i].anInt1708);
+            if (port < Class65.aClass110_Sub1Array1146.length && Class65.aClass110_Sub1Array1146[port] != null) Class251.anInt3234 = (Class65.aClass110_Sub1Array1146[port].anInt1708);
             return true;
         }
         String string_4_ = "";
-        if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) string_4_ = ":" + (7000 + i);
+        if (Class55_Sub1.liveWhereMode != Class8.whereMode) string_4_ = ":" + (7000 + port);
         String string_5_ = "";
         if (Class239_Sub12.aString5966 != null) string_5_ = "/p=" + Class239_Sub12.aString5966;
-        String string_6_ = ("http://" + string + string_4_ + "/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (!Class289.aBoolean3697 ? "0" : "1") + ",o" + (Class348_Sub37.aBoolean6997 ? "1" : "0") + ",a2");
+        String string_6_ = ("http://" + address + string_4_ + "/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (!Class289.aBoolean3697 ? "0" : "1") + ",o" + (Class348_Sub37.aBoolean6997 ? "1" : "0") + ",a2");
         try {
             Class79.aClient1367.getAppletContext().showDocument(new URL(string_6_), "_self");
             if (i_3_ >= -17) aClass297_8992 = null;

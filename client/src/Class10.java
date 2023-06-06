@@ -17,7 +17,7 @@ final class Class10 {
     Class317 aClass317_183;
     int anInt184;
     int anInt185;
-    static Class230 aClass230_186;
+    static Game runescape;
     static int[] anIntArray187 = {-1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048};
     int anInt188;
     Class348_Sub19_Sub1 aClass348_Sub19_Sub1_189;
@@ -36,7 +36,7 @@ final class Class10 {
         if (i < 101) method218((byte) -85);
         anIntArray187 = null;
         anIntArray179 = null;
-        aClass230_186 = null;
+        runescape = null;
         aClass87_191 = null;
         anIntArrayArray174 = null;
     }
@@ -65,6 +65,6 @@ final class Class10 {
     }
 
     static {
-        aClass230_186 = new Class230("runescape", 0);
+        runescape = new Game("runescape", 0);
     }
 }

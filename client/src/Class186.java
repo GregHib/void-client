@@ -9,7 +9,7 @@ abstract class Class186 {
     static int anInt2493;
     static String[] aStringArray2494;
     static Class351 aClass351_2495;
-    static String aString2496;
+    static String password;
     static int[] anIntArray2497;
 
     public static void method1396(int i) {
@@ -17,7 +17,7 @@ abstract class Class186 {
         aClass74_2491 = null;
         aStringArray2494 = null;
         anIntArray2497 = null;
-        aString2496 = null;
+        password = null;
         aClass351_2495 = null;
         if (i != 25) aClass351_2495 = null;
     }
@@ -56,7 +56,7 @@ abstract class Class186 {
         aClass74_2491 = new Class74(13, -1);
         aStringArray2494 = new String[100];
         aClass351_2495 = new Class351(35, 5);
-        aString2496 = "";
+        password = "";
         anIntArray2497 = new int[25];
     }
 }

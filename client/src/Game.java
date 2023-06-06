@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class230 {
+final class Game {
     static int anInt2982;
     static int anInt2983;
     static int anInt2984;
@@ -524,7 +524,7 @@ final class Class230 {
         throw new IllegalStateException();
     }
 
-    Class230(String string, int i) {
+    Game(String string, int i) {
         try {
             this.aString2985 = string;
             this.anInt2987 = i;

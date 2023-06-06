@@ -95,13 +95,13 @@ final class Class141 {
         if (i >= -111) method1177((byte) 47);
     }
 
-    Class141(Class230 class230, int i, Class45 class45, Class45 class45_4_) {
+    Class141(Game game, int i, Class45 class45, Class45 class45_4_) {
         try {
             this.aClass45_1965 = class45_4_;
             aClass45_1971 = class45;
             aClass45_1971.method407(0, 34);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_4_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_4_ != null ? "{...}" : "null") + ')'));
         }
     }
 

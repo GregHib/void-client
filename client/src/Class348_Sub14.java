@@ -175,7 +175,7 @@ final class Class348_Sub14 extends Class348 {
                                 if (interface10 == null) interface10 = ((Interface10) (Class348_Sub40_Sub32.method3135(i_39_, i_37_, i_38_)));
                                 if (interface10 != null) {
                                     Class51 class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-99)));
-                                    if (!class51.aBoolean942 || Class130.aBoolean1900) {
+                                    if (!class51.aBoolean942 || Class130.membersWorld) {
                                         int i_40_ = class51.anInt921;
                                         if (class51.anIntArray945 != null) {
                                             for (int i_41_ = 0; ((class51.anIntArray945).length > i_41_); i_41_++) {

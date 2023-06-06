@@ -136,13 +136,13 @@ final class Class153 {
         return class42;
     }
 
-    Class153(Class230 class230, int i, Class45 class45, Class45 class45_10_) {
+    Class153(Game game, int i, Class45 class45, Class45 class45_10_) {
         try {
             aClass45_2084 = class45;
             this.aClass45_2087 = class45_10_;
             aClass45_2084.method407(0, 36);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_10_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_10_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

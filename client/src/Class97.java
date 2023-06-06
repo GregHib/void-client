@@ -47,7 +47,7 @@ final class Class97 {
         Class262.aClass190ArrayArray3335 = new Class190[i][i_7_];
         if (i_6_ == 21719) {
             anInt1549++;
-            if (Class81.anIntArray1432 != null) Class348_Sub42_Sub10.aClass299_9571 = Class230.method1636(Class81.anIntArray1432[4], Class81.anIntArray1432[3], Class81.anIntArray1432[0], Class81.anIntArray1432[5], Class81.anIntArray1432[1], -1, Class81.anIntArray1432[2]);
+            if (Class81.anIntArray1432 != null) Class348_Sub42_Sub10.aClass299_9571 = Game.method1636(Class81.anIntArray1432[4], Class81.anIntArray1432[3], Class81.anIntArray1432[0], Class81.anIntArray1432[5], Class81.anIntArray1432[1], -1, Class81.anIntArray1432[2]);
             Class274.aClass190_3547 = new Class190();
             ha_Sub3.method3936(0);
         }

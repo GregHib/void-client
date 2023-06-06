@@ -30,7 +30,7 @@ final class Class348_Sub42_Sub18 extends Class348_Sub42 {
     static final void method3275(int i, int i_0_, int i_1_) {
         anInt9683++;
         if (i != 1) aClass351_9684 = null;
-        if (Class348_Sub42_Sub8_Sub2.aClass230_10434 != Class14_Sub4.aClass230_8638) {
+        if (Class348_Sub42_Sub8_Sub2.aGame_10434 != Class14_Sub4.aGame_8638) {
             if (!Class298.method2252(false, i_1_, i_0_, (byte) -108, 1, 0, 1, -3, 0)) Class298.method2252(false, i_1_, i_0_, (byte) -99, 1, 0, 1, -2, 0);
         } else if (!Class298.method2252(false, i_1_, i_0_, (byte) -128, 1, 0, 1, -2, 0)) Class298.method2252(false, i_1_, i_0_, (byte) -115, 1, 0, 1, -3, 0);
     }

@@ -517,7 +517,7 @@ class Class348_Sub49 extends Class348 {
         if (i_71_ != Class240.anInt4674) {
             if (i_71_ == 13) {
                 if (Class348_Sub23_Sub3.aString9043 != null) Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596, (byte) -81);
-                else Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
+                else Class253.method1922(Class186.password, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
             }
             if (i_71_ != 13 && Class213.aClass238_2773 != null) {
                 Class213.aClass238_2773.method1700((byte) 36);
@@ -526,17 +526,17 @@ class Class348_Sub49 extends Class348 {
             if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != r.anInt9721), (byte) -45);
             if (i_71_ == 7) Class107.method1006((r.anInt9721 != Class54.anInt970), (byte) 102);
             if (i_71_ == 5) {
-                if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.aString2496, -124);
+                if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.password, -124);
                 else Class182.method1372(-1);
             } else if (i_71_ != 6) {
                 if (i_71_ == 9) {
                     if (Class348_Sub23_Sub3.aString9043 != null) Class135_Sub2.method1157((RuntimeException_Sub1.anInt4596), (byte) -120);
-                    else Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
+                    else Class253.method1922(Class186.password, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
                 } else if (i_71_ == 12) {
-                    if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.aString2496, -98);
+                    if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.password, -98);
                     else Class182.method1372(-1);
                 }
-            } else if (Class348_Sub23_Sub3.aString9043 == null) Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
+            } else if (Class348_Sub23_Sub3.aString9043 == null) Class253.method1922(Class186.password, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
             else Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596, (byte) -99);
             if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -78)) {
                 Class95.aClass45_1541.anInt634 = 2;
@@ -658,7 +658,7 @@ class Class348_Sub49 extends Class348 {
         if (i != 2147483647) anInt7207 = -47;
     }
 
-    final void method3390(BigInteger biginteger, byte i, BigInteger biginteger_85_) {
+    final void encryptRSA(BigInteger modulus, byte i, BigInteger exponent) {
         try {
             anInt7147++;
             int i_86_ = this.anInt7197;
@@ -667,13 +667,13 @@ class Class348_Sub49 extends Class348 {
             method3389(2147483647, 0, i_86_, is);
             if (i >= -33) method3354(-73);
             BigInteger biginteger_87_ = new BigInteger(is);
-            BigInteger biginteger_88_ = biginteger_87_.modPow(biginteger_85_, biginteger);
-            byte[] is_89_ = biginteger_88_.toByteArray();
+            BigInteger biginteger_88_ = biginteger_87_.modPow(exponent, modulus);
+            byte[] array = biginteger_88_.toByteArray();
             this.anInt7197 = 0;
-            writeShort((byte) 107, is_89_.length);
-            writeBytes(is_89_.length, 0, is_89_, 85);
+            writeShort((byte) 107, array.length);
+            writeBytes(array.length, 0, array, 85);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cea.SA(" + (biginteger != null ? "{...}" : "null") + ',' + i + ',' + (biginteger_85_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cea.SA(" + (modulus != null ? "{...}" : "null") + ',' + i + ',' + (exponent != null ? "{...}" : "null") + ')'));
         }
     }
 

@@ -19,6 +19,6 @@ final class Class313 {
         anInt3933++;
         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(aa_Sub3.aClass351_5200, Class348_Sub23_Sub2.aClass77_9029, i ^ ~0x53);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class135_Sub1.anInt4718);
-        Class348_Sub42_Sub14.method3243(118, class348_sub47);
+        Class348_Sub42_Sub14.writePacket(118, class348_sub47);
     }
 }

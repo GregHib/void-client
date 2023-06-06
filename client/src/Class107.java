@@ -156,14 +156,14 @@ final class Class107 {
                             int i_28_ = (-(i_3_ / 128) + (player.y) / 128);
                             boolean bool = false;
                             for (int i_29_ = 0; (Class348_Sub40_Sub30.anInt9383 > i_29_); i_29_++) {
-                                if ((player.aString10544.equals(Class83.aStringArray1441[i_29_])) && (ha.anIntArray4578[i_29_] != 0)) {
+                                if ((player.username.equals(Class83.aStringArray1441[i_29_])) && (ha.anIntArray4578[i_29_] != 0)) {
                                     bool = true;
                                     break;
                                 }
                             }
                             boolean bool_30_ = false;
                             for (int i_31_ = 0; Class37.anInt496 > i_31_; i_31_++) {
-                                if (player.aString10544.equals(Class169.aClass19Array2261[i_31_].aString306)) {
+                                if (player.username.equals(Class169.aClass19Array2261[i_31_].aString306)) {
                                     bool_30_ = true;
                                     break;
                                 }

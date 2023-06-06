@@ -4,7 +4,7 @@
 
 final class Class108 {
     static int anInt1656 = 0;
-    static Class364 aClass364_1657 = new Class364("WTWIP", 3);
+    static WhereMode wipWhereMode = new WhereMode("WTWIP", 3);
     static int anInt1658;
     static int anInt1659;
     static int anInt1660;
@@ -47,7 +47,7 @@ final class Class108 {
     }
 
     public static void method1013(byte i) {
-        aClass364_1657 = null;
+        wipWhereMode = null;
         if (i < 111) method1013((byte) 17);
         aClass304_1662 = null;
         aClass105_1664 = null;

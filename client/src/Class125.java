@@ -9,7 +9,7 @@ final class Class125 implements Interface12 {
     static int anInt4916;
     int anInt4917;
     int anInt4918;
-    static int anInt4919 = 0;
+    static int skipChat = 0;
     int anInt4920;
     static Class323 aClass323_4921;
     Class221 aClass221_4922;
@@ -41,7 +41,7 @@ final class Class125 implements Interface12 {
         if (!aa_Sub2.method164(i_1_, i_3_, (byte) -97, i)) return false;
         int i_4_ = i_3_ << Class362.anInt4459;
         int i_5_ = i << Class362.anInt4459;
-        if (i_2_ != -79) anInt4919 = 64;
+        if (i_2_ != -79) skipChat = 64;
         if (Class121.method1084(i_0_, Class270.anInt3465, i_5_, i_4_, aa_Sub1.aSArray5191[i_1_].method3982((byte) -86, i, i_3_), Class270.anInt3465, 18507)) {
             Class348_Sub40_Sub4.anInt9112++;
             return true;

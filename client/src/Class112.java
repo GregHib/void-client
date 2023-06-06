@@ -194,6 +194,6 @@ final class Class112 implements Runnable {
         Class144 class144 = class297.method2236(this, -10240, 5);
         while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) 43, 10L);
         if (class144.anInt1997 == 2) throw new RuntimeException();
-        aThread1733 = (Thread) class144.anObject1998;
+        aThread1733 = (Thread) class144.socket;
     }
 }

@@ -93,9 +93,9 @@ final class Class133 {
                         player.aString10292 = class348_sub49_sub2.readString((byte) 110);
                         if (player.aString10292.charAt(0) == '~') {
                             player.aString10292 = player.aString10292.substring(1);
-                            Class286_Sub2.method2144(player.method2450(false, -70), 2, (byte) -116, 0, player.aString10292, player.method2456(true, 255), player.aString10537);
+                            Class286_Sub2.method2144(player.method2450(false, -70), 2, (byte) -116, 0, player.aString10292, player.method2456(true, 255), player.displayName);
                         } else if (Class132.aPlayer_1907 == player)
-                            Class286_Sub2.method2144(player.method2450(false, -88), 2, (byte) -102, 0, (player.aString10292), player.method2456(true, 255), (player.aString10537));
+                            Class286_Sub2.method2144(player.method2450(false, -88), 2, (byte) -102, 0, (player.aString10292), player.method2456(true, 255), (player.displayName));
                         player.anInt10264 = 150;
                         player.anInt10234 = 0;
                         player.anInt10201 = 0;

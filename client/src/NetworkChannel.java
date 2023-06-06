@@ -4,13 +4,13 @@
 
 import java.io.IOException;
 
-abstract class Class238 {
+abstract class NetworkChannel {
     static int anInt3132;
     static Class114 aClass114_3133;
 
     abstract void method1700(byte i);
 
-    abstract int method1701(int i, int i_0_, byte i_1_, byte[] is) throws IOException;
+    abstract int read(int i, int i_0_, byte i_1_, byte[] is) throws IOException;
 
     abstract void method1702(int i);
 
@@ -28,11 +28,11 @@ abstract class Class238 {
         aClass114_3133 = null;
     }
 
-    public Class238() {
+    public NetworkChannel() {
         /* empty */
     }
 
-    abstract boolean method1705(int i, int i_6_) throws IOException;
+    abstract boolean available(int i, int i_6_) throws IOException;
 
     abstract void method1706(int i, int i_7_, int i_8_, byte[] is) throws IOException;
 }

@@ -23,7 +23,7 @@ final class Class255 {
     static int anInt3282;
     static int anInt3283;
     static int anInt3284;
-    static Class161 aClass161_3285;
+    static Class161 gameLobby;
     int anInt3286;
     Class60 aClass60_3287 = new Class60(50);
     Class175 aClass175_3288 = new Class175(250);
@@ -51,7 +51,7 @@ final class Class255 {
         anIntArray3273 = null;
         if (bool != true) aClass114_3265 = null;
         aClass114_3265 = null;
-        aClass161_3285 = null;
+        gameLobby = null;
     }
 
     final Class105 method1932(ha var_ha, int i, int i_0_, Class324 class324, Class154 class154, int i_1_, boolean bool, byte i_2_, ha var_ha_3_, int i_4_, boolean bool_5_, int i_6_) {
@@ -133,7 +133,7 @@ final class Class255 {
             Class348_Sub12.aClass105Array6742 = new Class105[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class348_Sub12.aClass105Array6742[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class364.anInt4469, 0);
+            class207s = Class207.method1519(class45, WhereMode.anInt4469, 0);
             Class240.aClass105Array4679 = new Class105[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class240.aClass105Array4679[i] = var_ha.method3691(class207s[i], true);
@@ -293,7 +293,7 @@ final class Class255 {
         }
     }
 
-    Class255(Class230 class230, int i, boolean bool, Class326 class326, Class45 class45, Class45 class45_22_) {
+    Class255(Game game, int i, boolean bool, Class326 class326, Class45 class45, Class45 class45_22_) {
         try {
             aBoolean3269 = bool;
             aClass326_3292 = class326;
@@ -307,7 +307,7 @@ final class Class255 {
             aStringArray3290 = (new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null});
             aStringArray3293 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class326 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_22_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class326 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_22_ != null ? "{...}" : "null") + ')'));
         }
     }
 

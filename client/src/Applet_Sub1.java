@@ -359,7 +359,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.method599(-108);
             Class286_Sub5.method2161((byte) 77, 5000L);
-            Class231.aClass297_2993 = null;
+            WhatMode.aClass297_2993 = null;
             method90(false, false);
         }
     }
@@ -466,7 +466,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                 Class348_Sub1_Sub3.anInt8818 = i_15_;
                 Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530;
-                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i_17_, string, i_18_, Class93.anApplet1530 != null);
+                WhatMode.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i_17_, string, i_18_, Class93.anApplet1530 != null);
                 Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, -10240, 1);
                 if (i_19_ != 50) anInt37 = -13;
                 while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) -126, 10L);
@@ -499,7 +499,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             Class52.aFrame4904.toFront();
             Insets insets = Class52.aFrame4904.getInsets();
             Class52.aFrame4904.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)));
-            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i, string, i_22_, true);
+            WhatMode.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i, string, i_22_, true);
             Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, i_23_ + -33739, 1);
             while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) 21, 10L);
         } catch (Exception exception) {

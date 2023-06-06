@@ -8,12 +8,12 @@ final class aa_Sub2 extends aa {
     Interface18_Impl3 anInterface18_Impl3_5196;
     static String[] aStringArray5197 = new String[100];
     static int anInt5198;
-    static Class161 aClass161_5199;
+    static Class161 targetAddress;
 
     public static void method162(byte i) {
         aStringArray5197 = null;
-        if (i >= -67) aClass161_5199 = null;
-        aClass161_5199 = null;
+        if (i >= -67) targetAddress = null;
+        targetAddress = null;
     }
 
     static final int method163(int i) {

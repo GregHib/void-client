@@ -10,7 +10,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
     static int anInt8635;
     static int anInt8636;
     static int anInt8637;
-    static Class230 aClass230_8638 = new Class230("stellardawn", 1);
+    static Game aGame_8638 = new Game("stellardawn", 1);
     static int anInt8639;
     private int anInt8640;
     static int anInt8641;
@@ -49,7 +49,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
     public static void method251(byte i) {
         if (i != 2) method250(-45, false, -102);
         aClass323_8644 = null;
-        aClass230_8638 = null;
+        aGame_8638 = null;
         aByteArrayArray8642 = null;
     }
 
@@ -213,9 +213,14 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
 
     static final void method254(int i, byte i_48_) {
         if (i_48_ > -79) method252(127, 53);
-        if (Class239_Sub12.anInt5969 != 1) {
-            if (Class239_Sub12.anInt5969 == 2) Class348_Sub6.anInt6634 = i;
-        } else Class107.anInt1645 = i;
+        if (Loader.DISABLE_LOBBY) { // Prevents a loop TODO findout what and why
+            Class348_Sub6.anInt6634 = i;
+            Class107.anInt1645 = i;
+        } else {
+            if (Class239_Sub12.anInt5969 != 1) {
+                if (Class239_Sub12.anInt5969 == 2) Class348_Sub6.anInt6634 = i;
+            } else Class107.anInt1645 = i;
+        }
         anInt8643++;
     }
 }

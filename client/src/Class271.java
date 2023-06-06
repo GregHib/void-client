@@ -37,12 +37,12 @@ final class Class271 {
         Class71.aClass76_1208 = Class71.aClass76_1210;
     }
 
-    Class271(Class230 class230, int i, Class45 class45) {
+    Class271(Game game, int i, Class45 class45) {
         try {
             aClass45_3468 = class45;
             aClass45_3468.method407(0, 5);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ut.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ut.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

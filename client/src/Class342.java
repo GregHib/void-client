@@ -13,7 +13,7 @@ final class Class342 {
     static int anInt4243;
     int anInt4244;
     int anInt4245;
-    static Class364 aClass364_4246 = new Class364("WTI", 5);
+    static WhereMode aWhereMode_4246 = new WhereMode("WTI", 5);
     static Class70 aClass70_4247;
     Class342 aClass342_4248;
     static Image anImage4249;
@@ -24,7 +24,7 @@ final class Class342 {
     static Class60 aClass60_4254;
 
     public static void method2682(int i) {
-        aClass364_4246 = null;
+        aWhereMode_4246 = null;
         anIntArrayArray4253 = null;
         if (i > 5) {
             aClass70_4247 = null;

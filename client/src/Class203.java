@@ -14,7 +14,7 @@ final class Class203 {
         class348_sub42_sub15.method3251(-16058);
     }
 
-    static final Class348_Sub47 method1478(boolean bool) {
+    static final Class348_Sub47 createPacket(boolean bool) {
         anInt2673++;
         Class348_Sub47 class348_sub47 = Class300.method2273((byte) -103);
         if (bool != true) return null;

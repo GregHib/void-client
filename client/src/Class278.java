@@ -5,7 +5,7 @@
 final class Class278 {
     Class45 aClass45_3576;
     private Class60 aClass60_3577 = new Class60(64);
-    Class230 aClass230_3578;
+    Game aGame_3578;
     static int anInt3579;
     static int anInt3580;
     static int anInt3581;
@@ -133,18 +133,18 @@ final class Class278 {
         if (i <= 122) method2075(-125, -46, 9);
     }
 
-    Class278(Class230 class230, int i, boolean bool, Class45 class45, Class45 class45_7_) {
+    Class278(Game game, int i, boolean bool, Class45 class45, Class45 class45_7_) {
         do {
             try {
                 this.aBoolean3583 = bool;
                 aClass45_3585 = class45;
                 this.aClass45_3576 = class45_7_;
-                this.aClass230_3578 = class230;
+                this.aGame_3578 = game;
                 if (aClass45_3585 == null) break;
                 int i_8_ = aClass45_3585.method414(-1) + -1;
                 aClass45_3585.method407(0, i_8_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_7_ != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_7_ != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

@@ -41,7 +41,7 @@ final class Class2 {
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, class46.anInt704);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, class46.anInt812);
             if (i > -50) aClass141_117 = null;
-            Class348_Sub42_Sub14.method3243(-100, class348_sub47);
+            Class348_Sub42_Sub14.writePacket(-100, class348_sub47);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ak.E(" + i + ',' + (class46 != null ? "{...}" : "null") + ',' + (class46_0_ != null ? "{...}" : "null") + ')'));
         }

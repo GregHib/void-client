@@ -5,9 +5,9 @@
 public class Class144 {
     int anInt1994;
     Class144 aClass144_1995;
-    Object anObject1996;
+    Object socketAddress;
     public volatile int anInt1997 = 0;
-    public volatile Object anObject1998;
+    public volatile Object socket;
     int anInt1999;
-    public int anInt2000;
+    public int socketPort;
 }

@@ -1002,7 +1002,7 @@ final class Class64_Sub3 extends Class64 {
                 class64_sub3_211_.aClass270_5575.anInterface8_3463 = aClass270_5575.anInterface8_3463;
             } else if (!Class156.method1238(i, anInt5556, -93)) class64_sub3_211_.aClass270_5575 = null;
             else class64_sub3_211_.aClass270_5575 = aClass270_5575;
-            if (Class230.method1637(anInt5556, 32768, i)) {
+            if (Game.method1637(anInt5556, 32768, i)) {
                 if (class64_sub3_213_.aShortArray5601 == null || class64_sub3_213_.aShortArray5601.length < anInt5632) {
                     int i_230_ = anInt5632;
                     class64_sub3_211_.aShortArray5601 = class64_sub3_213_.aShortArray5601 = new short[i_230_];
@@ -3304,8 +3304,8 @@ final class Class64_Sub3 extends Class64 {
                 aShortArray5583 = Class119_Sub2.method1078(aShortArray5583, anInt5529, 126);
                 aShortArray5576 = Class119_Sub2.method1078(aShortArray5576, anInt5529, 100);
                 aByteArray5594 = Class93.method863(anInt5529, (byte) 113, aByteArray5594);
-                aFloatArray5552 = Class231.method1638(anInt5529, aFloatArray5552, -1);
-                aFloatArray5571 = Class231.method1638(anInt5529, aFloatArray5571, -1);
+                aFloatArray5552 = WhatMode.method1638(anInt5529, aFloatArray5552, -1);
+                aFloatArray5571 = WhatMode.method1638(anInt5529, aFloatArray5571, -1);
                 if (class124.anIntArray1868 != null && Class312.method2332(anInt5556, (byte) 125, i)) anIntArrayArray5539 = class124.method1100(false, -42);
                 if (class124.aClass162Array1832 != null && Class229.method1633(false, i, anInt5556)) anIntArrayArray5627 = class124.method1093((byte) -69);
                 if (class124.anIntArray1824 == null || !Class40.method371(i, 256, anInt5556)) break;

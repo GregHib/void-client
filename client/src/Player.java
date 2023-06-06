@@ -27,14 +27,14 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     static int anInt10534;
     int anInt10535;
     Class154 aClass154_10536;
-    String aString10537;
+    String displayName;
     private byte aByte10538;
     boolean aBoolean10539;
     int anInt10540;
     static int anInt10541;
     int anInt10542;
     static int anInt10543;
-    String aString10544;
+    String username;
     static int anInt10545;
     static int anInt10546;
     static int anInt10547;
@@ -89,8 +89,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     final String method2450(boolean bool, int i) {
         if (i > -67) this.aBoolean10554 = false;
         anInt10555++;
-        if (bool) return this.aString10537;
-        return this.aString10544;
+        if (bool) return this.displayName;
+        return this.username;
     }
 
     final void method2451(byte i, int i_3_, int i_4_, int i_5_) {
@@ -147,7 +147,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         this.anInt10522 = class348_sub49.readByte(i ^ ~0x1);
         System.out.println("Icon " + anInt10522);
         this.aBoolean10551 = class348_sub49.readByte(i + -199) == 1;
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && Class192.anInt2581 >= 2) this.aBoolean10551 = false;
+        if (Class8.whereMode == Class55_Sub1.liveWhereMode && Class192.rights >= 2) this.aBoolean10551 = false;
         this.anInt10542 = 0;
         int i_14_ = -1;
         int[] is = new int[12];
@@ -179,9 +179,9 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             is_20_[i_21_] = i_22_;
         }
         anInt10520 = class348_sub49.readUnsignedShort(842397944);
-        this.aString10537 = class348_sub49.readString((byte) -47);
-        this.aString10544 = this.aString10537;
-        if (this == Class132.aPlayer_1907) s_Sub2.aString8265 = this.aString10537;
+        this.displayName = class348_sub49.readString((byte) -47);
+        this.username = this.displayName;
+        if (this == Class132.aPlayer_1907) s_Sub2.aString8265 = this.displayName;
         this.anInt10516 = class348_sub49.readUnsignedByte(i ^ 0xab);
         if (i != 84) anInt10520 = 87;
         if (bool_12_) {
@@ -219,7 +219,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             this.x = (this.anIntArray10320[0] << 9) - -(method2436((byte) 89) << 8);
             this.y = (this.anIntArray10317[0] << 9) - -(method2436((byte) 98) << 8);
         }
-        if ((Class348_Sub42_Sub11.anInt9591 == this.anInt10290) && is_30_ != null) {
+        if ((Class348_Sub42_Sub11.playerIndex == this.anInt10290) && is_30_ != null) {
             for (int i_31_ = 0; i_31_ < is_20_.length; i_31_++) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
                     Exception_Sub1.aClass255_112.method1936(72);
@@ -262,7 +262,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     private final void method2454(int i, int i_39_, int i_40_, int i_41_, Class64 class64, int i_42_, Class101 class101, ha var_ha, int i_43_) {
         do {
             try {
-                if (i != 6253) this.aString10544 = null;
+                if (i != 6253) this.username = null;
                 anInt10563++;
                 int i_44_ = i_43_ * i_43_ + i_39_ * i_39_;
                 if (i_44_ >= 262144 && i_44_ <= i_42_) {
@@ -281,13 +281,13 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     }
 
     final Class30 method2381(ha var_ha, int i) {
-        if (i != 7) this.aString10544 = null;
+        if (i != 7) this.username = null;
         anInt10518++;
         return null;
     }
 
     final void method2392(boolean bool) {
-        if (bool != true) this.aString10544 = null;
+        if (bool != true) this.username = null;
         anInt10534++;
         throw new IllegalStateException();
     }
@@ -435,8 +435,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 is[aByte10552] = -1;
             } else string += class117.method1074(0xff & aByte10556, i + -145);
         }
-        if (!bool) string += this.aString10544;
-        else string += this.aString10537;
+        if (!bool) string += this.username;
+        else string += this.displayName;
         if (Class54.aStringArray974 != null) string += Class54.aStringArray974[aByte10552];
         return string;
     }
@@ -488,7 +488,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         int i_75_ = Class292.method2201(2121);
         if (Class226.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268);
         int i_76_ = 3 % ((63 - i_69_) / 47);
-        if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165 && i_75_ < 50) {
+        if (Class55_Sub1.liveWhereMode != Class8.whereMode && i_75_ < 50) {
             int i_77_;
             for (i_77_ = -i_75_ + 50; Class127_Sub1.anInt8388 < i_77_; Class127_Sub1.anInt8388++)
                 Class308.aByteArrayArray3882[Class127_Sub1.anInt8388] = new byte[102400];
@@ -496,7 +496,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 Class127_Sub1.anInt8388--;
                 Class308.aByteArrayArray3882[Class127_Sub1.anInt8388] = null;
             }
-        } else if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
+        } else if (Class8.whereMode != Class55_Sub1.liveWhereMode) {
             Class127_Sub1.anInt8388 = 0;
             Class308.aByteArrayArray3882 = new byte[50][];
         }

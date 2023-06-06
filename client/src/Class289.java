@@ -39,10 +39,10 @@ final class Class289 {
             Class11.anInt193++;
             if (i < -118 && (Class11.anInt193 >= 50 || bool)) {
                 Class11.anInt193 = 0;
-                if (!Class110.aBoolean1712 && Class348_Sub40_Sub8.aClass238_9165 != null) {
+                if (!Class110.aBoolean1712 && Class348_Sub40_Sub8.connection != null) {
                     IOException_Sub1.anInt88++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -106);
-                    Class348_Sub42_Sub14.method3243(122, class348_sub47);
+                    Class348_Sub42_Sub14.writePacket(122, class348_sub47);
                     try {
                         Class239_Sub18.method1802(0);
                     } catch (java.io.IOException ioexception) {

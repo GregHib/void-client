@@ -9,7 +9,7 @@ final class Class50_Sub2 extends Class50 {
     private final int anInt5230;
     private int anInt5231;
     private final int anInt5232;
-    static boolean aBoolean5233 = false;
+    static boolean moveChatBox = false;
     static int anInt5234;
     static int anInt5235;
 
@@ -18,7 +18,7 @@ final class Class50_Sub2 extends Class50 {
         int i_2_ = i * anInt5231 >> 12;
         int i_3_ = anInt5232 * i >> 12;
         int i_4_ = i_0_ * anInt5227 >> 12;
-        if (i_1_ > -98) aBoolean5233 = false;
+        if (i_1_ > -98) moveChatBox = false;
         int i_5_ = i_0_ * anInt5230 >> 12;
         Class170.method1308(this.anInt864, i_4_, i_2_, this.anInt865, (byte) -123, this.anInt862, i_3_, i_5_);
     }

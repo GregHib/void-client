@@ -100,7 +100,7 @@ final class Class322 {
         za_Sub2.method3443(true, class318_sub1_sub3_sub3);
         Class71.method729(i_3_, i_5_, (byte) 67, class318_sub1_sub3_sub3, i_4_);
         Class348_Sub42_Sub9_Sub1.method3208(class318_sub1_sub3_sub3, i_3_, -98);
-        Class230.method1635(-69, class318_sub1_sub3_sub3);
+        Game.method1635(-69, class318_sub1_sub3_sub3);
     }
 
     final int[][] method2557(int i, int i_6_) {

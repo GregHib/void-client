@@ -91,13 +91,13 @@ final class Class150 {
         int i_8_ = -65 / ((i - -58) / 57);
     }
 
-    Class150(Class230 class230, int i, Class45 class45, Class45 class45_9_) {
+    Class150(Game game, int i, Class45 class45, Class45 class45_9_) {
         try {
             this.aClass45_2054 = class45_9_;
             aClass45_2048 = class45;
             aClass45_2048.method407(0, 3);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_9_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_9_ != null ? "{...}" : "null") + ')'));
         }
     }
 

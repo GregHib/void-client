@@ -6,7 +6,7 @@ final class Class348_Sub40_Sub35 extends Class348_Sub40 {
     static int anInt9440;
     static int anInt9441;
     static int anInt9442;
-    static Class161 aClass161_9443;
+    static Class161 demoMode;
     static int anInt9444;
     private int anInt9445 = 3216;
     static int anInt9446;
@@ -64,7 +64,7 @@ final class Class348_Sub40_Sub35 extends Class348_Sub40 {
     }
 
     public static void method3144(byte i) {
-        aClass161_9443 = null;
+        demoMode = null;
         if (i < 34) method3144((byte) 127);
     }
 
@@ -92,7 +92,7 @@ final class Class348_Sub40_Sub35 extends Class348_Sub40 {
             anInt9445 = class348_sub49.readUnsignedShort(842397944);
         } while (false);
         anInt9442++;
-        if (i_18_ != 31015) aClass161_9443 = null;
+        if (i_18_ != 31015) demoMode = null;
     }
 
     public Class348_Sub40_Sub35() {

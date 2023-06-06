@@ -63,7 +63,7 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
     }
 
     static final void method3283(int i) {
-        if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3777 && (aa_Sub2.aClass161_5199.anInt2143 != -1)) Class348_Sub23_Sub1.method2972((aa_Sub2.aClass161_5199.aString2147), (aa_Sub2.aClass161_5199.anInt2143), -54);
+        if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3777 && (aa_Sub2.targetAddress.port != -1)) Class348_Sub23_Sub1.switchWorld((aa_Sub2.targetAddress.address), (aa_Sub2.targetAddress.port), -54);
         anInt9713++;
         int i_7_ = 9 / ((i - 60) / 50);
     }

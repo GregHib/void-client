@@ -99,7 +99,7 @@ final class OutputStream_Sub1 extends OutputStream {
                 byte i_16_ = (Class316.aClass348_Sub51_3959.aClass239_Sub14_7264.method1778(-32350) != 2 ? (byte) 1 : (byte) Class239_Sub15.anInt6006);
                 if (Class59_Sub1.aBoolean5300) {
                     Class21.method289(-15902, 0x3fff & -Class5.anInt4638, -Class338.anInt4186 & 0x3fff, (-Class348_Sub42_Sub19.anInt9701 & 0x3fff));
-                    Class230.method1634(Class64.anIntArray1127, -2, Class289.aByteArrayArrayArray3700, (Class132.aPlayer_1907.y) >> 9, (Class132.aPlayer_1907.plane) - -1, Class327.anIntArray4097, Class286_Sub4.anInt6246, Class59_Sub2_Sub2.anInt8685, Class316.aClass348_Sub51_3959.aClass239_Sub1_7246.method1720(-32350) == 0, Class305.anInt3855, (Class132.aPlayer_1907.x) >> 9, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, i_16_, Class56.anIntArray1045, Class367_Sub11.anInt7396, true, Class132.anInt1906);
+                    Game.method1634(Class64.anIntArray1127, -2, Class289.aByteArrayArrayArray3700, (Class132.aPlayer_1907.y) >> 9, (Class132.aPlayer_1907.plane) - -1, Class327.anIntArray4097, Class286_Sub4.anInt6246, Class59_Sub2_Sub2.anInt8685, Class316.aClass348_Sub51_3959.aClass239_Sub1_7246.method1720(-32350) == 0, Class305.anInt3855, (Class132.aPlayer_1907.x) >> 9, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, i_16_, Class56.anIntArray1045, Class367_Sub11.anInt7396, true, Class132.anInt1906);
                 } else
                     Class258_Sub1.method1960(Class367_Sub11.anInt7396, Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, Class289.aByteArrayArrayArray3700, Class327.anIntArray4097, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, Class56.anIntArray1045, Class64.anIntArray1127, (Class132.aPlayer_1907.plane) - -1, i_16_, (Class132.aPlayer_1907.x) >> 9, (Class132.aPlayer_1907.y) >> 9, Class316.aClass348_Sub51_3959.aClass239_Sub1_7246.method1720(-32350) == 0, true, !Class305.aBoolean3870 ? -1 : Class132.anInt1906, 0, false);
                 Class369_Sub1.method3570(false);
@@ -115,8 +115,8 @@ final class OutputStream_Sub1 extends OutputStream {
                 Class5.anInt4638 = i_12_;
                 Class305.anInt3855 = i_9_;
                 Class59_Sub2_Sub2.anInt8685 = i_10_;
-                if (Class238_Sub1.aBoolean5840 && Class348_Sub4.aClass248_6601.method1902(4) == 0) Class238_Sub1.aBoolean5840 = false;
-                if (Class238_Sub1.aBoolean5840) {
+                if (ConnectionChannel.aBoolean5840 && Class348_Sub4.aClass248_6601.method1902(4) == 0) ConnectionChannel.aBoolean5840 = false;
+                if (ConnectionChannel.aBoolean5840) {
                     Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
                     Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
                 }

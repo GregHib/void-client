@@ -28,7 +28,7 @@ final class Class48 {
         do {
             try {
                 anInt849++;
-                Class348_Sub47 class348_sub47 = Class203.method1478(true);
+                Class348_Sub47 class348_sub47 = Class203.createPacket(true);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(bool, Class178.aClass29_2348.anInt400);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, 0);
                 int i_3_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197);
@@ -40,7 +40,7 @@ final class Class48 {
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeLong(Class244.aLong4615, (byte) 104);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(bool, Class348_Sub33.anInt6967);
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(bool, (Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987));
+                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(bool, (Class348_Sub42_Sub8_Sub2.aGame_10434.anInt2987));
                 s_Sub2.method4002((class348_sub47.aClass348_Sub49_Sub2_7116), (byte) 55);
                 String string_5_ = Class14_Sub1.aString8605;
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, string_5_ == null ? 0 : 1);
@@ -50,7 +50,7 @@ final class Class48 {
                 class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 += 7;
                 class348_sub47.aClass348_Sub49_Sub2_7116.method3350(i_4_, true, is, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197));
                 class348_sub47.aClass348_Sub49_Sub2_7116.method3383(1809639944, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 + -i_3_));
-                Class348_Sub42_Sub14.method3243(2, class348_sub47);
+                Class348_Sub42_Sub14.writePacket(2, class348_sub47);
                 Class352.anInt4337 = -3;
                 Class367_Sub2.anInt7297 = 1;
                 Class169.anInt2264 = 0;

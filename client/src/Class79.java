@@ -337,7 +337,7 @@ final class Class79 {
         if (i >= -75) aByte1376 = (byte) 102;
         anInt1334++;
         if (this.aByte1384 == -1) {
-            if (Class10.aClass230_186 == this.aClass278_1348.aClass230_3578) this.aByte1384 = (byte) 1;
+            if (Class10.runescape == this.aClass278_1348.aGame_3578) this.aByte1384 = (byte) 1;
             else this.aByte1384 = (byte) 0;
         }
     }

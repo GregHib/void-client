@@ -65,50 +65,50 @@ abstract class Class348_Sub5 extends Class348 {
             try {
                 if (i >= 82) {
                     if (++Class169.anInt2264 > 2000) {
-                        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                            Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                            Class348_Sub40_Sub8.aClass238_9165 = null;
+                        if (Class348_Sub40_Sub8.connection != null) {
+                            Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                            Class348_Sub40_Sub8.connection = null;
                         }
                         if (Class105_Sub1.anInt8398 >= 2) {
                             Class367_Sub2.anInt7297 = 0;
                             Class352.anInt4337 = -5;
                             return;
                         }
-                        Class255.aClass161_3285.method1259(0);
+                        Class255.gameLobby.method1259(0);
                         Class367_Sub2.anInt7297 = 1;
                         Class169.anInt2264 = 0;
                         Class105_Sub1.anInt8398++;
                     }
                     if (Class367_Sub2.anInt7297 == 1) {
-                        Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
+                        Class130_Sub1.gameConnection = (Class255.gameLobby.openSocket(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
                         Class367_Sub2.anInt7297 = 2;
                     }
                     if (Class367_Sub2.anInt7297 == 2) {
-                        if (Class130_Sub1.aClass144_5800.anInt1997 == 2) throw new IOException();
-                        if (Class130_Sub1.aClass144_5800.anInt1997 != 1) return;
-                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982(((Socket) (Class130_Sub1.aClass144_5800.anObject1998)), (byte) 24, 7500);
-                        Class130_Sub1.aClass144_5800 = null;
+                        if (Class130_Sub1.gameConnection.anInt1997 == 2) throw new IOException();
+                        if (Class130_Sub1.gameConnection.anInt1997 != 1) return;
+                        Class348_Sub40_Sub8.connection = Class348_Sub23_Sub3.createConnection(((Socket) (Class130_Sub1.gameConnection.socket)), (byte) 24, 7500);
+                        Class130_Sub1.gameConnection = null;
                         Class239_Sub18.method1802(0);
                         Class367_Sub2.anInt7297 = 4;
                     }
                     if (Class367_Sub2.anInt7297 == 4) {
-                        if (Class348_Sub40_Sub8.aClass238_9165.method1705(1, 104)) {
-                            Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -116, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                        if (Class348_Sub40_Sub8.connection.available(1, 104)) {
+                            Class348_Sub40_Sub8.connection.read(1, 0, (byte) -116, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                             int i_11_ = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
                             Class352.anInt4337 = i_11_;
                             Class367_Sub2.anInt7297 = 0;
-                            Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                            Class348_Sub40_Sub8.aClass238_9165 = null;
+                            Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                            Class348_Sub40_Sub8.connection = null;
                         }
                     }
                 }
             } catch (IOException ioexception) {
-                if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                    Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                    Class348_Sub40_Sub8.aClass238_9165 = null;
+                if (Class348_Sub40_Sub8.connection != null) {
+                    Class348_Sub40_Sub8.connection.method1700((byte) 36);
+                    Class348_Sub40_Sub8.connection = null;
                 }
                 if (Class105_Sub1.anInt8398 < 2) {
-                    Class255.aClass161_3285.method1259(0);
+                    Class255.gameLobby.method1259(0);
                     Class169.anInt2264 = 0;
                     Class105_Sub1.anInt8398++;
                     Class367_Sub2.anInt7297 = 1;

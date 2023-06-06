@@ -15,7 +15,7 @@ final class Class303 {
         if (bool) {
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class241.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_0_);
-            Class348_Sub42_Sub14.method3243(42, class348_sub47);
+            Class348_Sub42_Sub14.writePacket(42, class348_sub47);
         } else Class66.method701(Class141.aClass273_1966, i_0_, -1);
     }
 
@@ -43,7 +43,7 @@ final class Class303 {
 
     static final void method2288(boolean bool, ha var_ha) {
         anInt3845++;
-        if (!Class71.aBoolean1211) Class231.method1642((byte) 108, var_ha);
+        if (!Class71.aBoolean1211) WhatMode.method1642((byte) 108, var_ha);
         else Class135_Sub1.method1153(var_ha, 16);
         if (bool != false) anInt3844 = -97;
     }

@@ -57,7 +57,7 @@ final class Class225 {
     static int anInt2952;
     int anInt2953;
     int anInt2954;
-    static int anInt2955;
+    static int loginStage;
     static int anInt2956;
     static Class243 aClass243_2957;
     int anInt2958;
@@ -281,7 +281,7 @@ final class Class225 {
 
     static {
         aClass173_2944 = new Class173();
-        anInt2955 = 0;
+        loginStage = 0;
         aClass243_2957 = new Class243();
     }
 }

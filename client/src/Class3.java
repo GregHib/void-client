@@ -5,7 +5,7 @@
 final class Class3 {
     static Class114 aClass114_123 = new Class114(110, 10);
     static int anInt124;
-    static Class161 aClass161_125;
+    static Class161 currentWorld;
 
     static final void method175(byte i) {
         Class295.anInt3760 = -1;
@@ -26,7 +26,7 @@ final class Class3 {
 
     public static void method176(int i) {
         aClass114_123 = null;
-        aClass161_125 = null;
+        currentWorld = null;
         if (i != -1) method176(-19);
     }
 }

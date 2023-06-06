@@ -197,7 +197,7 @@ final class Class202 implements Runnable {
                 while (aClass144_2658.anInt1997 == 0) Class286_Sub5.method2161((byte) 105, 1L);
                 if (aClass144_2658.anInt1997 == 1) {
                     try {
-                        ((Thread) aClass144_2658.anObject1998).join();
+                        ((Thread) aClass144_2658.socket).join();
                     } catch (InterruptedException interruptedexception) {
                         /* empty */
                     }

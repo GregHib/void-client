@@ -9,7 +9,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
     static int anInt4836;
     private int anInt4837;
     static int anInt4838;
-    static Class161 aClass161_4839;
+    static Class161 gameWorld;
     static int anInt4840;
     static int anInt4841;
     static int anInt4842;
@@ -21,7 +21,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
     final void method1152(int i) {
         anInt4840++;
         this.aHa_Sub2_1927.method3793(1, this);
-        if (i >= -78) aClass161_4839 = null;
+        if (i >= -78) gameWorld = null;
     }
 
     public final int method34(int i) {
@@ -40,7 +40,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
 
     public static void method1155(byte i) {
         aClass251_4835 = null;
-        aClass161_4839 = null;
+        gameWorld = null;
         int i_2_ = -29 / ((i - -49) / 43);
         aClass45_4843 = null;
         aCharArray4845 = null;
@@ -82,6 +82,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
                 Class14_Sub4.method254(35, (byte) -87);
                 return;
             } else {
+                System.out.println("A string " + Class348_Sub23_Sub3.aString9043);
                 Class348_Sub49 class348_sub49 = (new Class348_Sub49(Class98.method878((Class110_Sub1.method1039(Class348_Sub23_Sub3.aString9043, true)), -126)));
                 l = class348_sub49.readLong(-456577760);
                 Class348_Sub33.aLong6966 = class348_sub49.readLong(-456577760);
@@ -106,7 +107,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
     }
 
     static final boolean method1158(int i, int i_9_, int i_10_) {
-        if (i_9_ != -1) aClass161_4839 = null;
+        if (i_9_ != -1) gameWorld = null;
         anInt4844++;
         return (i_10_ & 0x180) != 0;
     }

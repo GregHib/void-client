@@ -78,12 +78,12 @@ final class Class348_Sub18 extends Class348 {
         Class164.method1277((byte) 62);
         Class84.method821(-126);
         Class318.method2375(16127);
-        if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
+        if (Class55_Sub1.liveWhereMode != Class8.whereMode) {
             for (int i_6_ = 0; Class308.aByteArrayArray3882.length > i_6_; i_6_++)
                 Class308.aByteArrayArray3882[i_6_] = null;
             Class127_Sub1.anInt8388 = 0;
         }
-        Class364.method3517(83);
+        WhereMode.method3517(83);
         Class316.method2368(-1);
         Class239_Sub25.method1828(87);
         if (i > 53) {
@@ -91,7 +91,7 @@ final class Class348_Sub18 extends Class348 {
             Class186_Sub1.method1402(1);
             Class66.aClass60_1174.method590(0);
             Class348_Sub8.aHa6654.method3663();
-            Class238_Sub1.method1707(26469);
+            ConnectionChannel.method1707(26469);
             Class348_Sub49.method3354(-52);
             Class348_Sub29.aClass45_6909.method412((byte) -124);
             Class186.aClass45_2490.method412((byte) -119);
@@ -161,15 +161,15 @@ final class Class348_Sub18 extends Class348 {
     static final void method2942(Class46 class46, byte i) {
         anInt6805++;
         if (class46.anInt765 == Class244.anInt4610) {
-            if (Class132.aPlayer_1907.aString10544 == null) {
+            if (Class132.aPlayer_1907.username == null) {
                 class46.anInt779 = 0;
                 class46.anInt753 = 0;
             } else {
                 class46.anInt757 = 150;
                 class46.anInt675 = 0x7ff & (int) (256.0 * Math.sin((double) (Class367_Sub11.anInt7396) / 40.0));
                 class46.anInt770 = 5;
-                class46.anInt753 = Class348_Sub42_Sub11.anInt9591;
-                class46.anInt779 = (Class318_Sub1_Sub3_Sub1.method2418((Class132.aPlayer_1907.aString10544), (byte) -41));
+                class46.anInt753 = Class348_Sub42_Sub11.playerIndex;
+                class46.anInt779 = (Class318_Sub1_Sub3_Sub1.method2418((Class132.aPlayer_1907.username), (byte) -41));
                 class46.anInt699 = Class132.aPlayer_1907.anInt10268;
                 class46.anInt841 = 0;
                 class46.anInt730 = Class132.aPlayer_1907.anInt10312;

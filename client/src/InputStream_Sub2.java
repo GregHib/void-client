@@ -131,7 +131,7 @@ final class InputStream_Sub2 extends InputStream {
                         Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3 = null;
                         if (i_58_ < 0) {
                             int i_67_ = -i_58_ + -1;
-                            if (Class348_Sub42_Sub11.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[i_67_]);
+                            if (Class348_Sub42_Sub11.playerIndex != i_67_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[i_67_]);
                             else class318_sub1_sub3_sub3 = (Class132.aPlayer_1907);
                         } else {
                             int i_68_ = i_58_ + -1;
@@ -222,7 +222,7 @@ final class InputStream_Sub2 extends InputStream {
                     int i_102_ = za_Sub2.regionTileX + i_101_;
                     int i_103_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(-25);
                     int i_104_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(123);
-                    if (i_104_ != Class348_Sub42_Sub11.anInt9591) {
+                    if (i_104_ != Class348_Sub42_Sub11.playerIndex) {
                         boolean bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367_Sub4.anInt7319) && (i_99_ < Class348_Sub40_Sub3.anInt9109));
                         if (bool || Class282.method2112(122, Class312.anInt3931)) {
                             Class352.method3459(new Class348_Sub34(i_103_, i_97_), Class348_Sub40_Sub12.anInt9200, i_100_, i_102_, i + -10);

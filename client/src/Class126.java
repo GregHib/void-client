@@ -61,7 +61,7 @@ final class Class126 implements Interface14 {
         Class348_Sub51.aClass318_Sub10Array7249 = new Class318_Sub10[1 + (Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637])];
         Class258_Sub3.anInt8550 = 0;
         if (i_2_ >= -118) method1114(-43, -71);
-        Class376.anInt4559 = 0;
+        InputStreamBuffer.anInt4559 = 0;
     }
 
     public final boolean method53(int i, Interface14 interface14) {

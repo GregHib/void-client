@@ -97,95 +97,96 @@ final class Class297 implements Runnable {
                 int i = class144.anInt1994;
                 if (i == 1) {
                     if (aLong3781 > Class62.method599(-53)) throw new IOException();
-                    class144.anObject1998 = new Socket(InetAddress.getByName((String) (class144.anObject1996)), class144.anInt2000);
+                    System.out.println("Open socket 4 " + ((String) (class144.socketAddress)) + " " + class144.socketPort);
+                    class144.socket = new Socket(InetAddress.getByName((String) (class144.socketAddress)), class144.socketPort);
                 } else if (i == 22) {
                     if (aLong3781 > Class62.method599(-92)) throw new IOException();
                     try {
-                        class144.anObject1998 = Class61.method593(class144.anInt2000, (byte) -90, ((String) class144.anObject1996)).method2050(-112);
+                        class144.socket = Class61.method593(class144.socketPort, (byte) -90, ((String) class144.socketAddress)).method2050(-112);
                     } catch (IOException_Sub1 ioexception_sub1) {
-                        class144.anObject1998 = ioexception_sub1.getMessage();
+                        class144.socket = ioexception_sub1.getMessage();
                         throw ioexception_sub1;
                     }
                 } else if (i == 2) {
-                    Thread thread = new Thread((Runnable) (class144.anObject1996));
+                    Thread thread = new Thread((Runnable) (class144.socketAddress));
                     thread.setDaemon(true);
                     thread.start();
-                    thread.setPriority(class144.anInt2000);
-                    class144.anObject1998 = thread;
+                    thread.setPriority(class144.socketPort);
+                    class144.socket = thread;
                 } else if (i == 4) {
                     if (Class62.method599(-73) < aLong3781) throw new IOException();
-                    class144.anObject1998 = new DataInputStream(((URL) (class144.anObject1996)).openStream());
+                    class144.socket = new DataInputStream(((URL) (class144.socketAddress)).openStream());
                 } else if (i == 8) {
-                    Object[] objects = ((Object[]) class144.anObject1996);
+                    Object[] objects = ((Object[]) class144.socketAddress);
                     if (this.aBoolean3777 && (((Class) objects[0]).getClassLoader() == null)) throw new SecurityException();
-                    class144.anObject1998 = (((Class) objects[0]).getDeclaredMethod((String) objects[1], (Class[]) objects[2]));
+                    class144.socket = (((Class) objects[0]).getDeclaredMethod((String) objects[1], (Class[]) objects[2]));
                 } else if (i == 9) {
-                    Object[] objects = ((Object[]) class144.anObject1996);
+                    Object[] objects = ((Object[]) class144.socketAddress);
                     if (this.aBoolean3777 && (((Class) objects[0]).getClassLoader() == null)) throw new SecurityException();
-                    class144.anObject1998 = (((Class) objects[0]).getDeclaredField((String) objects[1]));
+                    class144.socket = (((Class) objects[0]).getDeclaredField((String) objects[1]));
                 } else if (i == 18) {
                     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-                    class144.anObject1998 = clipboard.getContents(null);
+                    class144.socket = clipboard.getContents(null);
                 } else if (i == 19) {
-                    Transferable transferable = ((Transferable) (class144.anObject1996));
+                    Transferable transferable = ((Transferable) (class144.socketAddress));
                     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
                     clipboard.setContents(transferable, null);
                 } else if (this.aBoolean3777) {
                     if (i == 3) {
                         if (aLong3781 > Class62.method599(-123)) throw new IOException();
-                        String string = (((0xff & (class144.anInt2000 >> 24))) + "." + (0xff & (class144.anInt2000 >> 16)) + "." + ((class144.anInt2000 >> 8) & 0xff) + "." + (0xff & class144.anInt2000));
-                        class144.anObject1998 = InetAddress.getByName(string).getHostName();
+                        String string = (((0xff & (class144.socketPort >> 24))) + "." + (0xff & (class144.socketPort >> 16)) + "." + ((class144.socketPort >> 8) & 0xff) + "." + (0xff & class144.socketPort));
+                        class144.socket = InetAddress.getByName(string).getHostName();
                     } else if (i == 21) {
                         if (Class62.method599(-82) < aLong3781) throw new IOException();
-                        class144.anObject1998 = InetAddress.getByName((String) (class144.anObject1996)).getAddress();
+                        class144.socket = InetAddress.getByName((String) (class144.socketAddress)).getAddress();
                     } else if (i != 5) {
                         if (i == 6) {
                             Frame frame = (new Frame("Jagex Full Screen"));
-                            class144.anObject1998 = frame;
+                            class144.socket = frame;
                             frame.setResizable(false);
-                            if (this.aBoolean3794) aClass134_3802.method1146((class144.anInt2000 & 0xffff), (class144.anInt1999 >> 16), (class144.anInt2000 >>> 16), -43, 0xffff & (class144.anInt1999), frame);
+                            if (this.aBoolean3794) aClass134_3802.method1146((class144.socketPort & 0xffff), (class144.anInt1999 >> 16), (class144.socketPort >>> 16), -43, 0xffff & (class144.anInt1999), frame);
                             else
-                                ((Class7) anObject3793).method209(frame, (new Integer((class144.anInt2000) >>> 16)), (new Integer(0xffff & (class144.anInt2000))), (new Integer((class144.anInt1999) >> 16)), (new Integer((class144.anInt1999) & 0xffff)));
+                                ((Class7) anObject3793).method209(frame, (new Integer((class144.socketPort) >>> 16)), (new Integer(0xffff & (class144.socketPort))), (new Integer((class144.anInt1999) >> 16)), (new Integer((class144.anInt1999) & 0xffff)));
                         } else if (i == 7) {
-                            if (this.aBoolean3794) aClass134_3802.method1147(((Frame) (class144.anObject1996)), 8);
+                            if (this.aBoolean3794) aClass134_3802.method1147(((Frame) (class144.socketAddress)), 8);
                             else ((Class7) anObject3793).method211();
                         } else if (i == 12) {
-                            Class234 class234 = (method2241(((String) (class144.anObject1996)), 12606, aString3789, anInt3792));
-                            class144.anObject1998 = class234;
+                            Class234 class234 = (method2241(((String) (class144.socketAddress)), 12606, aString3789, anInt3792));
+                            class144.socket = class234;
                         } else if (i == 13) {
-                            Class234 class234 = (method2241(((String) (class144.anObject1996)), 12606, "", anInt3792));
-                            class144.anObject1998 = class234;
+                            Class234 class234 = (method2241(((String) (class144.socketAddress)), 12606, "", anInt3792));
+                            class144.socket = class234;
                         } else if ((this.aBoolean3777) && i == 14) {
-                            int i_5_ = (class144.anInt2000);
+                            int i_5_ = (class144.socketPort);
                             int i_6_ = (class144.anInt1999);
                             if (this.aBoolean3794) aCallback_Sub1_3776.method3621(i_5_, (byte) 115, i_6_);
                             else ((Class165) anObject3791).method1280((new Integer(i_5_)), (new Integer(i_6_)));
                         } else if ((this.aBoolean3777) && (i == 15)) {
-                            boolean bool = ((class144.anInt2000) != 0);
-                            Component component = ((Component) (class144.anObject1996));
+                            boolean bool = ((class144.socketPort) != 0);
+                            Component component = ((Component) (class144.socketAddress));
                             if (this.aBoolean3794) aCallback_Sub1_3776.method3622(bool, 13259, component);
                             else ((Class165) anObject3791).method1281(component, (new Boolean(bool)));
                         } else if (!(this.aBoolean3794) && (i == 17)) {
-                            Object[] objects = ((Object[]) (class144.anObject1996));
-                            ((Class165) anObject3791).method1282((Component) objects[0], (int[]) objects[1], (new Integer(class144.anInt2000)), (new Integer(class144.anInt1999)), (Point) objects[2]);
+                            Object[] objects = ((Object[]) (class144.socketAddress));
+                            ((Class165) anObject3791).method1282((Component) objects[0], (int[]) objects[1], (new Integer(class144.socketPort)), (new Integer(class144.anInt1999)), (Point) objects[2]);
                         } else if (i == 16) {
                             try {
                                 if (!aString3803.startsWith("win")) throw new Exception();
-                                String string = ((String) (class144.anObject1996));
+                                String string = ((String) (class144.socketAddress));
                                 if (!(string.startsWith("http://")) && !(string.startsWith("https://"))) throw new Exception();
                                 String string_7_ = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
                                 for (int i_8_ = 0; (i_8_ < (string.length())); i_8_++) {
                                     if ((string_7_.indexOf(string.charAt(i_8_))) == -1) throw new Exception();
                                 }
                                 Runtime.getRuntime().exec("cmd /c start \"j\" \"" + string + "\"");
-                                class144.anObject1998 = null;
+                                class144.socket = null;
                             } catch (Exception exception) {
-                                class144.anObject1998 = exception;
+                                class144.socket = exception;
                                 throw exception;
                             }
                         } else throw new Exception("");
-                    } else if (!this.aBoolean3794) class144.anObject1998 = ((Class7) anObject3793).method210();
-                    else class144.anObject1998 = aClass134_3802.method1145(true);
+                    } else if (!this.aBoolean3794) class144.socket = ((Class7) anObject3793).method210();
+                    else class144.socket = aClass134_3802.method1145(true);
                 } else throw new Exception("");
                 class144.anInt1997 = 1;
             } catch (Throwable throwable) {
@@ -326,12 +327,12 @@ final class Class297 implements Runnable {
         return method2246(i + -8, 0, 16, 0, string);
     }
 
-    private final Class144 method2246(int i, int i_19_, int i_20_, int i_21_, Object object) {
+    private final Class144 method2246(int i, int i_19_, int i_20_, int port, Object address) {
         Class144 class144 = new Class144();
-        class144.anObject1996 = object;
+        class144.socketAddress = address;
         class144.anInt1999 = i_19_;
         class144.anInt1994 = i_20_;
-        class144.anInt2000 = i_21_;
+        class144.socketPort = port;
         synchronized (this) {
             if (aClass144_3798 == null) aClass144_3798 = aClass144_3797 = class144;
             else {

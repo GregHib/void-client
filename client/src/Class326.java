@@ -55,14 +55,14 @@ final class Class326 {
         anInt4083++;
     }
 
-    Class326(Class230 class230, int i, Class45 class45) {
+    Class326(Game game, int i, Class45 class45) {
         do {
             try {
                 aClass45_4085 = class45;
                 if (aClass45_4085 == null) break;
                 aClass45_4085.method407(0, 11);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

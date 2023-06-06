@@ -25,7 +25,7 @@ final class Class213 {
     private int anInt2770 = -1;
     private short[] aShortArray2771;
     int[] anIntArray2772;
-    static Class238 aClass238_2773;
+    static NetworkChannel aClass238_2773;
     int anInt2774;
     private int anInt2775;
     static int anInt2776;

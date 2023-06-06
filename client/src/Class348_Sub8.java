@@ -63,7 +63,7 @@ final class Class348_Sub8 extends Class348 {
         anIntArray6666 = null;
         aShortArray6663 = null;
         anIntArray6655 = null;
-        if (i > -123) method2776((byte) -65, -91);
+        if (i > -123) getWhereMode((byte) -65, -91);
         aClass241_6660 = null;
         aBooleanArrayArray6656 = null;
         anApplet6662 = null;
@@ -75,13 +75,13 @@ final class Class348_Sub8 extends Class348 {
         this.aByteArray6657 = is;
     }
 
-    static final Class364 method2776(byte i, int i_5_) {
+    static final WhereMode getWhereMode(byte i, int i_5_) {
         anInt6659++;
         if (i > -35) aBooleanArrayArray6656 = null;
-        Class364[] class364s = Class348_Sub40_Sub28.method3122((byte) 91);
-        for (int i_6_ = 0; class364s.length > i_6_; i_6_++) {
-            Class364 class364 = class364s[i_6_];
-            if (class364.anInt4466 == i_5_) return class364;
+        WhereMode[] whereModes = Class348_Sub40_Sub28.method3122((byte) 91);
+        for (int i_6_ = 0; whereModes.length > i_6_; i_6_++) {
+            WhereMode whereMode = whereModes[i_6_];
+            if (whereMode.anInt4466 == i_5_) return whereMode;
         }
         return null;
     }

@@ -6,19 +6,19 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 
-final class Class376 implements Runnable {
-    private int anInt4546;
+final class InputStreamBuffer implements Runnable {
+    private int size;
     static int anInt4547;
-    private InputStream anInputStream4548;
+    private InputStream stream;
     static int anInt4549;
     static int anInt4550;
     static int anInt4551;
     static int anInt4552;
     static int anInt4553;
-    private final byte[] aByteArray4554;
+    private final byte[] buffer;
     static int anInt4555;
     private int anInt4556 = 0;
-    private final Thread aThread4557;
+    private final Thread thread;
     private int anInt4558 = 0;
     static int anInt4559 = 0;
     private IOException anIOException4560;
@@ -31,7 +31,7 @@ final class Class376 implements Runnable {
         }
         anInt4552++;
         try {
-            aThread4557.join();
+            thread.join();
         } catch (InterruptedException interruptedexception) {
             /* empty */
         }
@@ -57,9 +57,9 @@ final class Class376 implements Runnable {
                 for (; ; ) {
                     if (anIOException4560 != null) return;
                     if (anInt4556 != 0) {
-                        if (anInt4556 < anInt4558) i = -anInt4558 + anInt4546;
+                        if (anInt4556 < anInt4558) i = -anInt4558 + size;
                         else i = -1 + anInt4556 - anInt4558;
-                    } else i = -1 + (anInt4546 + -anInt4558);
+                    } else i = -1 + (size + -anInt4558);
                     if (i > 0) break;
                     try {
                         this.wait();
@@ -70,7 +70,7 @@ final class Class376 implements Runnable {
             }
             int i_1_;
             try {
-                i_1_ = anInputStream4548.read(aByteArray4554, anInt4558, i);
+                i_1_ = stream.read(buffer, anInt4558, i);
                 if (i_1_ == -1) throw new EOFException();
             } catch (IOException ioexception) {
                 synchronized (this) {
@@ -79,7 +79,7 @@ final class Class376 implements Runnable {
                 }
             }
             synchronized (this) {
-                anInt4558 = (i_1_ + anInt4558) % anInt4546;
+                anInt4558 = (i_1_ + anInt4558) % size;
             }
         }
     }
@@ -90,15 +90,15 @@ final class Class376 implements Runnable {
         synchronized (this) {
             int i_4_;
             if (anInt4556 <= anInt4558) i_4_ = anInt4558 + -anInt4556;
-            else i_4_ = anInt4546 + (-anInt4556 - -anInt4558);
+            else i_4_ = size + (-anInt4556 - -anInt4558);
             if (i_4_ < i) i = i_4_;
             if (i_3_ == i && anIOException4560 != null) throw new IOException(anIOException4560.toString());
-            if (anInt4546 < i + anInt4556) {
-                int i_5_ = anInt4546 - anInt4556;
-                Class214.method1577(aByteArray4554, anInt4556, is, i_2_, i_5_);
-                Class214.method1577(aByteArray4554, 0, is, i_2_ - -i_5_, i - i_5_);
-            } else Class214.method1577(aByteArray4554, anInt4556, is, i_2_, i);
-            anInt4556 = (anInt4556 - -i) % anInt4546;
+            if (size < i + anInt4556) {
+                int i_5_ = size - anInt4556;
+                Class214.method1577(buffer, anInt4556, is, i_2_, i_5_);
+                Class214.method1577(buffer, 0, is, i_2_ - -i_5_, i - i_5_);
+            } else Class214.method1577(buffer, anInt4556, is, i_2_, i);
+            anInt4556 = (anInt4556 - -i) % size;
             this.notifyAll();
             return i;
         }
@@ -106,16 +106,16 @@ final class Class376 implements Runnable {
 
     final void method3618(int i) {
         anInt4550++;
-        if (i != 0) anInt4546 = 110;
-        anInputStream4548 = new InputStream_Sub1();
+        if (i != 0) size = 110;
+        stream = new InputStream_Sub1();
     }
 
     final boolean method3619(int i, boolean bool) throws IOException {
         anInt4551++;
-        if (i <= 0 || i >= anInt4546) throw new IOException();
+        if (i <= 0 || i >= size) throw new IOException();
         synchronized (this) {
             int i_6_;
-            if (anInt4556 > anInt4558) i_6_ = -anInt4556 + anInt4546 - -anInt4558;
+            if (anInt4556 > anInt4558) i_6_ = -anInt4556 + size - -anInt4558;
             else i_6_ = anInt4558 - anInt4556;
             if (i > i_6_) {
                 if (anIOException4560 != null) throw new IOException(anIOException4560.toString());
@@ -125,13 +125,13 @@ final class Class376 implements Runnable {
         }
     }
 
-    Class376(InputStream inputstream, int i) {
-        anInt4546 = i - -1;
-        anInputStream4548 = inputstream;
-        aByteArray4554 = new byte[anInt4546];
-        aThread4557 = new Thread(this);
-        aThread4557.setDaemon(true);
-        aThread4557.start();
+    InputStreamBuffer(InputStream inputstream, int i) {
+        size = i - -1;
+        stream = inputstream;
+        buffer = new byte[size];
+        thread = new Thread(this);
+        thread.setDaemon(true);
+        thread.start();
     }
 
     static final Class148 method3620(Class318_Sub1_Sub3 class318_sub1_sub3, int i) {

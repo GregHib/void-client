@@ -161,12 +161,12 @@ final class Class84 {
         int i_34_ = -24 % ((i_27_ - 85) / 35);
     }
 
-    Class84(Class230 class230, int i, Class45 class45) {
+    Class84(Game game, int i, Class45 class45) {
         try {
             aClass45_1460 = class45;
             aClass45_1460.method407(0, 29);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lca.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lca.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
         }
     }
 }

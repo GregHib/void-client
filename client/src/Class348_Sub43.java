@@ -50,7 +50,7 @@ final class Class348_Sub43 extends Class348 {
                         if (i_4_ < 0) i_4_ = -i_4_;
                         if (i_3_ < i_4_) bool_0_ = false;
                     }
-                    String string_5_ = ((Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) ? Class274.aClass274_3513.method2063(Class348_Sub33.anInt6967, 544) : Class274.aClass274_3511.method2063(Class348_Sub33.anInt6967, 544));
+                    String string_5_ = ((Class14_Sub4.aGame_8638 == Class348_Sub42_Sub8_Sub2.aGame_10434) ? Class274.aClass274_3513.method2063(Class348_Sub33.anInt6967, 544) : Class274.aClass274_3511.method2063(Class348_Sub33.anInt6967, 544));
                     if (player.anInt10516 >= player.anInt10557)
                         string = (player.method2456(true, 255) + (!bool_0_ ? "<col=ffffff>" : (Class14_Sub4.method250((Class132.aPlayer_1907.anInt10516), true, (player.anInt10516)))) + " (" + string_5_ + player.anInt10516 + ")");
                     else
@@ -67,7 +67,7 @@ final class Class348_Sub43 extends Class348 {
                     for (int i_6_ = 7; i_6_ >= 0; i_6_--) {
                         if (Class318_Sub1_Sub2_Sub1.aStringArray10195[i_6_] != null) {
                             short i_7_ = 0;
-                            if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 != Class10.aClass230_186) || !(Class318_Sub1_Sub2_Sub1.aStringArray10195[i_6_].equalsIgnoreCase(Class274.aClass274_3506.method2063(Class348_Sub33.anInt6967, 544)))) {
+                            if ((Class348_Sub42_Sub8_Sub2.aGame_10434 != Class10.runescape) || !(Class318_Sub1_Sub2_Sub1.aStringArray10195[i_6_].equalsIgnoreCase(Class274.aClass274_3506.method2063(Class348_Sub33.anInt6967, 544)))) {
                                 if (Class71.aBooleanArray1214[i_6_]) i_7_ = (short) 2000;
                             } else {
                                 if ((Class132.aPlayer_1907.anInt10516) < (player.anInt10516)) i_7_ = (short) 2000;

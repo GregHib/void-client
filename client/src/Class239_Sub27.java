@@ -100,7 +100,7 @@ final class Class239_Sub27 extends Class239 {
     final int method1710(int i) {
         anInt6133++;
         if (i != 20014) method1716(true);
-        if ((this.aClass348_Sub51_3136.method3422(674) == Class10.aClass230_186) && this.aClass348_Sub51_3136.method3425(-111)) return 0;
+        if ((this.aClass348_Sub51_3136.method3422(674) == Class10.runescape) && this.aClass348_Sub51_3136.method3425(-111)) return 0;
         return 1;
     }
 

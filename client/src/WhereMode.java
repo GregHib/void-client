@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class364 {
+final class WhereMode {
     int anInt4466;
     static int anInt4467;
     static int anInt4468;
@@ -19,7 +19,7 @@ final class Class364 {
         Class375.aClass60_4543.method590(0);
     }
 
-    Class364(String string, int i) {
+    WhereMode(String string, int i) {
         this.anInt4466 = i;
     }
 }

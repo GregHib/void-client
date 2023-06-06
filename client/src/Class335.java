@@ -11,7 +11,7 @@ final class Class335 {
     static final void method2655(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
         anInt4166++;
         for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) Class218.aClass262_2859.method1990((byte) 97)))
-            Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
+            ConnectionChannel.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
         for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aClass262_5185.method1990((byte) 85))) {
             int i_4_ = 1;
             Class225 class225 = class348_sub9.aNpc_6691.method2422((byte) 72);
@@ -56,7 +56,7 @@ final class Class335 {
             class348_sub9.anInt6698 = ((class348_sub9.aNpc_6691.x) - -(class348_sub9.aNpc_6691.method2436((byte) 55) << 8));
             class348_sub9.anInt6689 = (class348_sub9.aNpc_6691.y);
             class348_sub9.anInt6687 = ((class348_sub9.aNpc_6691.y) + (class348_sub9.aNpc_6691.method2436((byte) 92) << 8));
-            Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
+            ConnectionChannel.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
         }
         Class348_Sub9 class348_sub9 = ((Class348_Sub9) Class348_Sub42_Sub16_Sub2.aClass356_10465.method3484(0));
         int i_6_ = -122 / (-i / 47);
@@ -98,7 +98,7 @@ final class Class335 {
             class348_sub9.anInt6698 = ((class348_sub9.aPlayer_6679.x) + (class348_sub9.aPlayer_6679.method2436((byte) 123) << 8));
             class348_sub9.anInt6689 = (class348_sub9.aPlayer_6679.y);
             class348_sub9.anInt6687 = ((class348_sub9.aPlayer_6679.y) - -(class348_sub9.aPlayer_6679.method2436((byte) 126) << 8));
-            Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
+            ConnectionChannel.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
         }
     }
 }

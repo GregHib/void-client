@@ -21,9 +21,9 @@ final class Class132 {
         try {
             anInt1908++;
             Class64_Sub3.aString5600 = string;
-            Class186.aString2496 = string_0_;
+            Class186.password = string_0_;
             Class318_Sub1_Sub3_Sub3.aBoolean10238 = bool;
-            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600.equals("") || Class186.aString2496.equals(""))) Class14_Sub4.method254(3, (byte) -100);
+            if (!Class318_Sub1_Sub3_Sub3.aBoolean10238 && (Class64_Sub3.aString5600.equals("") || Class186.password.equals(""))) Class14_Sub4.method254(3, (byte) -100);
             else {
                 int i_1_ = 34 % ((16 - i) / 55);
                 if (Class239_Sub12.anInt5969 != 1) {
@@ -32,7 +32,7 @@ final class Class132 {
                 }
                 Class110.aBoolean1712 = false;
                 Class14_Sub4.method254(-3, (byte) -94);
-                Class225.anInt2955 = 1;
+                Class225.loginStage = 1;
                 Class11.anInt197 = 0;
                 Class318_Sub1_Sub1_Sub2.anInt9971 = 0;
             }

@@ -5,7 +5,7 @@
 final class Class348_Sub40_Sub20 extends Class348_Sub40 {
     static int anInt9261;
     static int anInt9262;
-    static Class231 aClass231_9263 = new Class231("RC", 1);
+    static WhatMode rcWhatMode = new WhatMode("RC", 1);
     static Class348_Sub4 aClass348_Sub4_9264;
     static int anInt9265;
 
@@ -30,7 +30,7 @@ final class Class348_Sub40_Sub20 extends Class348_Sub40 {
     public static void method3104(boolean bool) {
         if (bool == false) {
             aClass348_Sub4_9264 = null;
-            aClass231_9263 = null;
+            rcWhatMode = null;
         }
     }
 

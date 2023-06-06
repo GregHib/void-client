@@ -15,7 +15,7 @@ final class Class367_Sub8 extends Class367 {
     static int anInt7358;
     static int anInt7359;
     static int anInt7360;
-    static Class364 aClass364_7361 = new Class364("WTRC", 1);
+    static WhereMode aWhereMode_7361 = new WhereMode("WTRC", 1);
     static Class45 aClass45_7362;
     static Class114 aClass114_7363;
     static int anInt7364;
@@ -149,7 +149,7 @@ final class Class367_Sub8 extends Class367 {
         aClass114_7363 = null;
         aClass45_7362 = null;
         int i_20_ = -90 % ((-54 - i) / 60);
-        aClass364_7361 = null;
+        aWhereMode_7361 = null;
     }
 
     final void method3532(int i) {

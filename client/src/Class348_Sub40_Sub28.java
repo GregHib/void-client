@@ -22,10 +22,10 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
         if (i < 108) method3122((byte) -111);
     }
 
-    static final Class364[] method3122(byte i) {
+    static final WhereMode[] method3122(byte i) {
         if (i < 86) aClass45_9365 = null;
         anInt9361++;
-        return (new Class364[]{Class55_Sub1.aClass364_5271, Class367_Sub8.aClass364_7361, Class26.aClass364_382, Class108.aClass364_1657, Class76.aClass364_1279, Class342.aClass364_4246});
+        return (new WhereMode[]{Class55_Sub1.liveWhereMode, Class367_Sub8.aWhereMode_7361, Class26.aWhereMode_382, Class108.wipWhereMode, Class76.localWhereMode, Class342.aWhereMode_4246});
     }
 
     public static void method3123(int i) {

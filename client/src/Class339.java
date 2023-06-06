@@ -30,7 +30,7 @@ final class Class339 implements Runnable {
     public final void run() {
         anInt4203++;
         try {
-            BufferedReader bufferedreader = new BufferedReader(new InputStreamReader((DataInputStream) (aClass144_4201.anObject1998)));
+            BufferedReader bufferedreader = new BufferedReader(new InputStreamReader((DataInputStream) (aClass144_4201.socket)));
             String string = bufferedreader.readLine();
             Class179 class179 = Class43.method381((byte) 68);
             for (/**/; string != null; string = bufferedreader.readLine())
@@ -143,8 +143,8 @@ final class Class339 implements Runnable {
         if (aBoolean4205) return true;
         if (aClass144_4201 == null) {
             try {
-                int i_15_ = (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 ? 80 : 7000 - -(Class135_Sub2.aClass161_4839.anInt2143));
-                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992.method2237(new URL("http://" + (Class135_Sub2.aClass161_4839.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987), 8362));
+                int i_15_ = (Class8.whereMode == Class55_Sub1.liveWhereMode ? 80 : 7000 - -(Class135_Sub2.gameWorld.port));
+                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992.method2237(new URL("http://" + (Class135_Sub2.gameWorld.address) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aGame_10434.anInt2987), 8362));
             } catch (java.net.MalformedURLException malformedurlexception) {
                 return true;
             }

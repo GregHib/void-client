@@ -152,7 +152,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
         return false;
     }
 
-    static final void method3243(int i, Class348_Sub47 class348_sub47) {
+    static final void writePacket(int i, Class348_Sub47 class348_sub47) {
         anInt9630++;
         Class348_Sub40_Sub13.aClass262_9201.method1999(class348_sub47, -20180);
         class348_sub47.anInt7119 = class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197;
@@ -164,7 +164,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
     static final void method3244(int i, int i_18_, int i_19_) {
         Class348_Sub5.method2755(-1, i_18_, i);
         anInt9633++;
-        if (i_19_ <= 108) method3243(-47, null);
+        if (i_19_ <= 108) writePacket(-47, null);
     }
 
     Class348_Sub42_Sub14(int i, String string, String string_20_, int i_21_, int i_22_, boolean bool, int i_23_, int i_24_) {

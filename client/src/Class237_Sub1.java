@@ -59,7 +59,7 @@ final class Class237_Sub1 extends Class237 {
                     boolean bool = (Class348_Sub42_Sub3.aBoolean9498 && !this.aBoolean3109 && class51.aBoolean906);
                     if (class51.method474((byte) 82)) Class223.method1614(979190089, null, i_0_, i_5_, i, null, class51, i_7_);
                     boolean bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929);
-                    if (!Class49.aBoolean4728 || ((!Class140.method1172((byte) -85, i_4_) || class51.anInt955 == 1) && (!Class231.method1639(i_4_, i_3_ ^ 0x3918) || class51.anInt955 != 0))) {
+                    if (!Class49.aBoolean4728 || ((!Class140.method1172((byte) -85, i_4_) || class51.anInt955 == 1) && (!WhatMode.method1639(i_4_, i_3_ ^ 0x3918) || class51.anInt955 != 0))) {
                         if (i_4_ == 22) {
                             if ((Class316.aClass348_Sub51_3959.aClass239_Sub4_7220.method1737(-32350) != 0) || (class51.anInt874 != 0) || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 Class318_Sub1_Sub1 class318_sub1_sub1;

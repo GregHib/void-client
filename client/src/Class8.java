@@ -9,13 +9,13 @@ final class Class8 {
     int anInt162;
     static int anInt163;
     static int[] anIntArray164 = {4, 4, 1, 2, 6, 4, 2, 44, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1};
-    static Class364 aClass364_165;
+    static WhereMode whereMode;
     static int anInt166 = 0;
 
     public static void method213(byte i) {
         anIntArray164 = null;
         if (i != -106) method214(null, 18);
-        aClass364_165 = null;
+        whereMode = null;
     }
 
     static final int method214(Npc npc, int i) {

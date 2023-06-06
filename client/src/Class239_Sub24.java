@@ -60,7 +60,7 @@ final class Class239_Sub24 extends Class239 {
 
     final int method1714(int i, int i_3_) {
         anInt6092++;
-        if (this.aClass348_Sub51_3136.method3422(674) == Class10.aClass230_186) {
+        if (this.aClass348_Sub51_3136.method3422(674) == Class10.runescape) {
             if (this.aClass348_Sub51_3136.method3425(i + -70)) return 3;
             if (i_3_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256.method1759(-32350) == 1) return 1;
             return 2;
@@ -96,7 +96,7 @@ final class Class239_Sub24 extends Class239 {
                 i_9_ = Class305.anInt3861;
                 i_7_ = Class336.anInt4171;
                 i_10_ = Class18.anInt282;
-                var_ha.KA(Class120.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861);
+                var_ha.KA(Class120.anInt4911, ConnectionChannel.anInt5832, Class18.anInt282, Class305.anInt3861);
                 class101 = var_ha.method3654();
                 class101.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, Class348_Sub51.anInt7244);
                 var_ha.method3638(class101);
@@ -341,7 +341,7 @@ final class Class239_Sub24 extends Class239 {
     }
 
     final void method1716(boolean bool) {
-        if (this.aClass348_Sub51_3136.method3422(674) != Class10.aClass230_186) this.anInt3138 = 1;
+        if (this.aClass348_Sub51_3136.method3422(674) != Class10.runescape) this.anInt3138 = 1;
         else if (this.aClass348_Sub51_3136.method3425(-95)) this.anInt3138 = 0;
         anInt6090++;
         if (this.anInt3138 != 0 && this.anInt3138 != 1) this.anInt3138 = method1710(20014);
@@ -351,7 +351,7 @@ final class Class239_Sub24 extends Class239 {
     final boolean method1824(int i) {
         anInt6087++;
         if (i < 85) method1823(null, 104, -95, (byte) 26);
-        if (this.aClass348_Sub51_3136.method3422(674) == Class10.aClass230_186) {
+        if (this.aClass348_Sub51_3136.method3422(674) == Class10.runescape) {
             return !this.aClass348_Sub51_3136.method3425(-96);
         }
         return false;

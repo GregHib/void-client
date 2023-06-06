@@ -42,7 +42,7 @@ final class Class239_Sub14 extends Class239 {
 
     static final void method1779(byte i) {
         anInt5985++;
-        Class364.method3517(73);
+        WhereMode.method3517(73);
         Class262.aClass190ArrayArray3335 = null;
         Class60.aHa1098 = null;
         if (i <= 89) anInt5994 = -75;

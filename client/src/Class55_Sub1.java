@@ -11,7 +11,7 @@ final class Class55_Sub1 extends Class55 {
     static int anInt5268;
     private int[] anIntArray5269;
     private int anInt5270;
-    static Class364 aClass364_5271 = new Class364("LIVE", 0);
+    static WhereMode liveWhereMode = new WhereMode("LIVE", 0);
     private final int anInt5272;
     static int anInt5273;
     private final Class348_Sub49 aClass348_Sub49_5274;
@@ -29,7 +29,7 @@ final class Class55_Sub1 extends Class55 {
 
     public static void method523(int i) {
         if (i <= 80) method524(-87, true, 104, 0);
-        aClass364_5271 = null;
+        liveWhereMode = null;
     }
 
     private Class55_Sub1(int i, Class45 class45, int i_1_) {

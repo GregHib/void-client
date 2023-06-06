@@ -94,6 +94,6 @@ final class Class90 {
 
     static final void method854(byte i) {
         anInt1513++;
-        if (Class225.anInt2955 == 5 && i < -48) Class225.anInt2955 = 6;
+        if (Class225.loginStage == 5 && i < -48) Class225.loginStage = 6;
     }
 }

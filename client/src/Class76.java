@@ -4,7 +4,7 @@
 
 final class Class76 {
     static int anInt1278;
-    static Class364 aClass364_1279 = new Class364("LOCAL", 4);
+    static WhereMode localWhereMode = new WhereMode("LOCAL", 4);
     static int anInt1280;
     static int anInt1281;
     Class243 aClass243_1282 = new Class243();
@@ -13,13 +13,13 @@ final class Class76 {
     static int anInt1285;
     static Class169 aClass169_1286;
     static float aFloat1287 = 1024.0F;
-    static int anInt1288;
+    static int length;
 
     static final boolean method771(int i, byte i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int[] is, int i_5_) {
         anInt1281++;
         if (i_3_ > Class306.anInt3872) i_3_ = Class306.anInt3872;
         if (i_4_ < 0) i_4_ = 0;
-        if (i_0_ != -25) anInt1288 = -32;
+        if (i_0_ != -25) length = -32;
         if (i_4_ >= i_3_) return true;
         i_5_ += -1 + i_4_;
         i_1_ += i * i_4_;
@@ -64,7 +64,7 @@ final class Class76 {
 
     public static void method772(byte i) {
         aClass169_1286 = null;
-        aClass364_1279 = null;
+        localWhereMode = null;
         if (i >= -110) method771(-68, (byte) 45, 58, 119, 101, -92, null, 79);
     }
 
@@ -112,7 +112,7 @@ final class Class76 {
             Class59_Sub1_Sub1.method560(class318_sub4, 123);
         }
         anInt1278++;
-        if (i != 69) anInt1288 = -20;
+        if (i != 69) length = -20;
     }
 
     Class76(boolean bool) {

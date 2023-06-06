@@ -13,7 +13,7 @@ final class Class281 {
 
     static final void method2106(String string, int i) {
         anInt3645++;
-        Class348_Sub47 class348_sub47 = Class203.method1478(true);
+        Class348_Sub47 class348_sub47 = Class203.createPacket(true);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class178.aClass29_2353.anInt400);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, 0);
         int i_0_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197);
@@ -25,7 +25,7 @@ final class Class281 {
         class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 += 7;
         class348_sub47.aClass348_Sub49_Sub2_7116.method3350(i_1_, true, is, class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197);
         class348_sub47.aClass348_Sub49_Sub2_7116.method3383(1809639944, -i_0_ + (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197));
-        Class348_Sub42_Sub14.method3243(118, class348_sub47);
+        Class348_Sub42_Sub14.writePacket(118, class348_sub47);
         if (i <= 99) method2108(null, 70);
         Class367_Sub2.anInt7297 = 1;
         Class352.anInt4337 = -3;

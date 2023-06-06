@@ -5,17 +5,17 @@
 import java.io.IOException;
 import java.net.Socket;
 
-final class Class238_Sub1 extends Class238 {
+final class ConnectionChannel extends NetworkChannel {
     static int anInt5828;
     static int anInt5829;
     static int anInt5830;
     static int anInt5831;
     static int anInt5832 = -1;
     static int anInt5833;
-    private Class376 aClass376_5834;
+    private InputStreamBuffer input;
     static int anInt5835;
     private final Socket aSocket5836;
-    private final Class208 aClass208_5837;
+    private final OutputStreamBuffer output;
     static int anInt5838;
     static int anInt5839;
     static boolean aBoolean5840 = true;
@@ -28,15 +28,15 @@ final class Class238_Sub1 extends Class238 {
 
     final void method1706(int i, int i_0_, int i_1_, byte[] is) throws IOException {
         anInt5833++;
-        aClass208_5837.method1528((byte) 5, i_1_, i, is);
+        output.method1528((byte) 5, i_1_, i, is);
         if (i_0_ < 89) method1708(-99, 31, -13, 83, (byte) 112, null);
     }
 
     final void method1702(int i) {
         anInt5828++;
-        aClass376_5834.method3618(0);
+        input.method3618(0);
         int i_2_ = 29 / ((-25 - i) / 38);
-        aClass208_5837.method1527(-21179);
+        output.method1527(-21179);
     }
 
     static final void method1708(int i, int i_3_, int i_4_, int i_5_, byte i_6_, Class348_Sub9 class348_sub9) {
@@ -162,28 +162,28 @@ final class Class238_Sub1 extends Class238 {
         } catch (IOException ioexception) {
             /* empty */
         }
-        aClass376_5834.method3615(15984);
-        if (i == 36) aClass208_5837.method1526((byte) -99);
+        input.method3615(15984);
+        if (i == 36) output.method1526((byte) -99);
     }
 
-    final int method1701(int i, int i_19_, byte i_20_, byte[] is) throws IOException {
+    final int read(int count, int offset, byte i_20_, byte[] dest) throws IOException {
         int i_21_ = 84 / ((-56 - i_20_) / 47);
         anInt5831++;
-        return aClass376_5834.method3617(i, i_19_, 0, is);
+        return input.method3617(count, offset, 0, dest);
     }
 
-    final boolean method1705(int i, int i_22_) throws IOException {
-        if (i_22_ <= 91) aClass376_5834 = null;
+    final boolean available(int i, int i_22_) throws IOException {
+        if (i_22_ <= 91) input = null;
         anInt5838++;
-        return aClass376_5834.method3619(i, false);
+        return input.method3619(i, false);
     }
 
-    Class238_Sub1(Socket socket, int i) throws IOException {
+    ConnectionChannel(Socket socket, int bufferSize) throws IOException {
         aSocket5836 = socket;
         aSocket5836.setSoTimeout(30000);
         aSocket5836.setTcpNoDelay(true);
-        aClass376_5834 = new Class376(aSocket5836.getInputStream(), i);
-        aClass208_5837 = new Class208(aSocket5836.getOutputStream(), i);
+        input = new InputStreamBuffer(aSocket5836.getInputStream(), bufferSize);
+        output = new OutputStreamBuffer(aSocket5836.getOutputStream(), bufferSize);
     }
 
     protected final void finalize() {

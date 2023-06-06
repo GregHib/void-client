@@ -53,7 +53,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
         Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103 = new Class318_Sub9_Sub2_Sub1[1024];
         Class348_Sub51.aClass318_Sub10Array7249 = new Class318_Sub10[(Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637]) + 1];
         Class258_Sub3.anInt8550 = 0;
-        Class376.anInt4559 = 0;
+        InputStreamBuffer.anInt4559 = 0;
         Class117.method1072(class45, (byte) -107);
         Class2.method172(30284, class45);
     }

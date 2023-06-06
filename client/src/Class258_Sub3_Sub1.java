@@ -65,7 +65,7 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         if (Class240.anInt4674 == 3) Class348_Sub49.method3379(2, 4);
         else if (Class240.anInt4674 == 7) Class348_Sub49.method3379(2, 8);
         else if (Class240.anInt4674 != 10) {
-            if (Class240.anInt4674 == 1 || Class240.anInt4674 == 2) Class376.method3616(12639);
+            if (Class240.anInt4674 == 1 || Class240.anInt4674 == 2) InputStreamBuffer.method3616(12639);
         } else Class348_Sub49.method3379(2, 11);
     }
 

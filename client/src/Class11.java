@@ -6,12 +6,12 @@ final class Class11 {
     static int anInt193 = 0;
     static int anInt194;
     static int anInt195;
-    static Class231 aClass231_196;
+    static WhatMode whatMode;
     static int anInt197 = 0;
 
     public static void method221(int i) {
         if (i != 0) anInt197 = -100;
-        aClass231_196 = null;
+        whatMode = null;
     }
 
     static final void method222(Player player, int i, byte i_0_, int i_1_) {

@@ -21,12 +21,12 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
     }
 
     static final void method3141(boolean bool, byte i) {
-        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-            Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-            Class348_Sub40_Sub8.aClass238_9165 = null;
+        if (Class348_Sub40_Sub8.connection != null) {
+            Class348_Sub40_Sub8.connection.method1700((byte) 36);
+            Class348_Sub40_Sub8.connection = null;
         }
         anInt9437++;
-        Class225.anInt2955 = 0;
+        Class225.loginStage = 0;
         Class348_Sub18.method2938((byte) 87);
         Class318_Sub1_Sub3_Sub3.method2433();
         if (i != 11) anIntArray9436 = null;

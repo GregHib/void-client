@@ -70,7 +70,7 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
     static final boolean method3100(int i, boolean bool, int i_4_) {
         anInt9253++;
         if (bool != false) anIntArray9259 = null;
-        return Class230.method1637(i, 32768, i_4_) | (0x800 & i_4_) != 0 || Class273.method2056(i_4_, 86, i);
+        return Game.method1637(i, 32768, i_4_) | (0x800 & i_4_) != 0 || Class273.method2056(i_4_, 86, i);
     }
 
     static {

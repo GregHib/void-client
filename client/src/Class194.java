@@ -71,7 +71,7 @@ final class Class194 {
         return class146;
     }
 
-    Class194(Class230 class230, int i, Class45 class45) {
+    Class194(Game game, int i, Class45 class45) {
         do {
             try {
                 aClass45_2597 = class45;
@@ -79,7 +79,7 @@ final class Class194 {
                 int i_5_ = aClass45_2597.method414(-1) + -1;
                 aClass45_2597.method407(0, i_5_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qs.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("qs.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

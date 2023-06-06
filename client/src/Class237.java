@@ -736,13 +736,13 @@ class Class237 {
         }
     }
 
-    static final Class231 method1677(int i, int i_164_) {
+    static final WhatMode getWhatMode(int i, int i_164_) {
         anInt3116++;
-        Class231[] class231s = Class239.method1709(-126);
+        WhatMode[] whatModes = Class239.method1709(-126);
         if (i >= -111) return null;
-        for (int i_165_ = 0; i_165_ < class231s.length; i_165_++) {
-            Class231 class231 = class231s[i_165_];
-            if (class231.anInt2995 == i_164_) return class231;
+        for (int i_165_ = 0; i_165_ < whatModes.length; i_165_++) {
+            WhatMode whatMode = whatModes[i_165_];
+            if (whatMode.anInt2995 == i_164_) return whatMode;
         }
         return null;
     }

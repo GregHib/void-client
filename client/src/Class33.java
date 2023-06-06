@@ -77,7 +77,7 @@ final class Class33 {
         return 1 + i;
     }
 
-    Class33(Class230 class230, int i, Class45 class45) {
+    Class33(Game game, int i, Class45 class45) {
         do {
             try {
                 aClass45_458 = class45;
@@ -85,7 +85,7 @@ final class Class33 {
                 int i_6_ = -1 + aClass45_458.method414(-1);
                 aClass45_458.method407(0, i_6_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (game != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

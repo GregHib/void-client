@@ -19,7 +19,7 @@ final class Class239_Sub13 extends Class239 {
     }
 
     final void method1716(boolean bool) {
-        if (this.aClass348_Sub51_3136.method3422(674) == Class14_Sub4.aClass230_8638) this.anInt3138 = 2;
+        if (this.aClass348_Sub51_3136.method3422(674) == Class14_Sub4.aGame_8638) this.anInt3138 = 2;
         if (bool == false) {
             anInt5974++;
             if (this.anInt3138 < 0 || this.anInt3138 > 2) this.anInt3138 = method1710(20014);

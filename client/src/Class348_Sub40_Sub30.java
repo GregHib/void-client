@@ -59,7 +59,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
             try {
                 anInt9391++;
                 if (string != null) {
-                    if (anInt9383 >= 200 && !Class206.aBoolean4888 || anInt9383 >= 200) {
+                    if (anInt9383 >= 200 && !Class206.isMember || anInt9383 >= 200) {
                         Class59.method544((Class274.aClass274_3493.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
                         String string_0_ = Class274.aClass274_3494.method2063(Class348_Sub33.anInt6967, 544);
                         if (string_0_ != null) Class59.method544(string_0_, false, 4);
@@ -94,13 +94,13 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                                     }
                                 }
                             }
-                            if (Class285_Sub1.method2127(2, (Class132.aPlayer_1907.aString10544)).equals(string_1_)) Class59.method544((Class274.aClass274_3524.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
+                            if (Class285_Sub1.method2127(2, (Class132.aPlayer_1907.username)).equals(string_1_)) Class59.method544((Class274.aClass274_3524.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
                             else {
                                 Class146.anInt2012++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
-                                Class348_Sub42_Sub14.method3243(123, class348_sub47);
+                                Class348_Sub42_Sub14.writePacket(123, class348_sub47);
                                 if (i <= -31) break;
                                 method3127(-4);
                             }
