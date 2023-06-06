@@ -81,7 +81,7 @@ final class Class88 {
                     Class11.anInt197 = 0;
                 }
                 if (Class225.anInt2955 == 1) {
-                    if (Class239_Sub12.anInt5969 == 2 && !Loader.skipLobby) Class130_Sub1.aClass144_5800 = (Class3.aClass161_125.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
+                    if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) Class130_Sub1.aClass144_5800 = (Class3.aClass161_125.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
                     else Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
                     Class225.anInt2955 = 2;
                 }
@@ -129,7 +129,7 @@ final class Class88 {
                     Class348_Sub3.method2739(0);
                     Class348_Sub47 class348_sub47 = Class203.method1478(true);
                     Class348_Sub49_Sub2 class348_sub49_sub2 = (class348_sub47.aClass348_Sub49_Sub2_7116);
-                    if (Class239_Sub12.anInt5969 == 2 || Loader.skipLobby) {
+                    if (Class239_Sub12.anInt5969 == 2) {
                         if (Class240.anInt4674 != 13) class348_sub49_sub2.writeByte(false, Class178.aClass29_2342.anInt400);
                         else class348_sub49_sub2.writeByte(false, Class178.aClass29_2344.anInt400);
                         class348_sub49_sub2.writeShort((byte) 107, 0);
@@ -261,7 +261,7 @@ final class Class88 {
                 } else {
                     if (Class225.anInt2955 == 9) {
                         Class348_Sub49_Sub2 class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813;
-                        if (Class239_Sub12.anInt5969 == 2 || Loader.skipLobby) {
+                        if (Class239_Sub12.anInt5969 == 2) {
                             if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 93)) return;
                             Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 60, (class348_sub49_sub2.aByteArray7154));
                             class348_sub49_sub2.anInt7197 = 0;
@@ -337,7 +337,7 @@ final class Class88 {
                                 /* empty */
                             }
                         }
-                        if (Class239_Sub12.anInt5969 == 2 || Loader.skipLobby) Class225.anInt2955 = 11;
+                        if (Class239_Sub12.anInt5969 == 2) Class225.anInt2955 = 11;
                         else {
                             Class225.anInt2955 = 0;
                             Class14_Sub4.method254(2, (byte) -92);
