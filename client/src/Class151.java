@@ -72,11 +72,8 @@ final class Class151 {
             if (i > -48) aClass114_2068 = null;
             anInt2063++;
             RuntimeException_Sub1.anInt4596 = -1;
-            Class239_Sub12.anInt5969 = 1;
+            Class239_Sub12.anInt5969 = Loader.skipLobby ? 2 : 1;
             Class132.method1138(string, false, string_16_, (byte) -95);
-            if (Loader.skipLobby) {
-                Class239_Sub12.anInt5969 = 2;
-            }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ok.E(" + (string != null ? "{...}" : "null") + ',' + (string_16_ != null ? "{...}" : "null") + ',' + i + ')'));
         }
