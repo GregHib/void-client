@@ -199,31 +199,33 @@ final class Class239_Sub8 extends Class239 {
         if (i != 1) method1749(null, null, false, -43, (byte) 102);
     }
 
-    static final int calculateKerning(byte[] is, int i, int i_22_, int i_23_, byte[][] is_24_, byte[][] is_25_, int[] is_26_, int[] is_27_) {
+    static final int calculateKerning(byte[] fontData, int i, int rightGlyphIndex, int leftGlyphIndex, byte[][] rightGlyphData, byte[][] leftGlyphData, int[] leftOffsets, int[] rightOffsets) {
         try {
             anInt5918++;
             int i_28_ = -19 % ((i - 64) / 39);
-            int i_29_ = is_26_[i_23_];
-            int i_30_ = is_27_[i_23_] + i_29_;
-            int i_31_ = is_26_[i_22_];
-            int i_32_ = is_27_[i_22_] + i_31_;
-            int i_33_ = i_29_;
-            if (i_29_ < i_31_) i_33_ = i_31_;
-            int i_34_ = i_30_;
-            if (i_32_ < i_30_) i_34_ = i_32_;
-            int i_35_ = 0xff & is[i_23_];
-            if (i_35_ > (is[i_22_] & 0xff)) i_35_ = 0xff & is[i_22_];
-            byte[] is_36_ = is_25_[i_23_];
-            byte[] is_37_ = is_24_[i_22_];
-            int i_38_ = i_33_ + -i_29_;
-            int i_39_ = -i_31_ + i_33_;
-            for (int i_40_ = i_33_; i_34_ > i_40_; i_40_++) {
-                int i_41_ = is_37_[i_39_++] + is_36_[i_38_++];
-                if (i_41_ < i_35_) i_35_ = i_41_;
+            int leftOffset = leftOffsets[leftGlyphIndex];
+            int leftLimit = rightOffsets[leftGlyphIndex] + leftOffset;
+
+            int rightOffset = leftOffsets[rightGlyphIndex];
+            int rightLimit = rightOffsets[rightGlyphIndex] + rightOffset;
+
+            int minOffset = Math.max(leftOffset, rightOffset);
+            int maxLimit = Math.min(rightLimit, leftLimit);
+
+            int minDelta = 0xff & fontData[leftGlyphIndex];
+            if (minDelta > (fontData[rightGlyphIndex] & 0xff)) minDelta = 0xff & fontData[rightGlyphIndex];
+
+            byte[] leftGlyph = leftGlyphData[leftGlyphIndex];
+            byte[] rightGlyph = rightGlyphData[rightGlyphIndex];
+            int leftIndex = leftOffset - minOffset;
+            int rightIndex = rightOffset - minOffset;
+            for (int index = minOffset; maxLimit > index; index++) {
+                int delta = rightGlyph[rightIndex++] + leftGlyph[leftIndex++];
+                if (delta < minDelta) minDelta = delta;
             }
-            return -i_35_;
+            return -minDelta;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mfa.K(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_22_ + ',' + i_23_ + ',' + (is_24_ != null ? "{...}" : "null") + ',' + (is_25_ != null ? "{...}" : "null") + ',' + (is_26_ != null ? "{...}" : "null") + ',' + (is_27_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("mfa.K(" + (fontData != null ? "{...}" : "null") + ',' + i + ',' + rightGlyphIndex + ',' + leftGlyphIndex + ',' + (rightGlyphData != null ? "{...}" : "null") + ',' + (leftGlyphData != null ? "{...}" : "null") + ',' + (leftOffsets != null ? "{...}" : "null") + ',' + (rightOffsets != null ? "{...}" : "null") + ')'));
         }
     }
 }

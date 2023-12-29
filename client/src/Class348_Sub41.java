@@ -66,7 +66,7 @@ final class Class348_Sub41 extends Class348 {
     static final int parseInt(boolean bool, String string) {
         anInt7055++;
         if (bool != true) aClass114_7052 = null;
-        return Class239_Sub26.method1836(-123, 10, true, string);
+        return Class239_Sub26.parseInt(-123, 10, true, string);
     }
 
     static final void method3157(int i, byte i_15_, int i_16_, int i_17_, boolean bool) {

@@ -55,7 +55,7 @@ final class Class67 implements Interface1 {
 
     public final void method7(int i) {
         anInt4647++;
-        FontMetrics fontMetrics = Class239_Sub10.method1766((byte) -45, aClass158_4646.anInt4944, aClass45_4651);
+        FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -45, aClass158_4646.anInt4944, aClass45_4651);
         if (i == 10286) aFontRenderer_4649 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(aClass45_4650, aClass158_4646.anInt4944), true));
     }
 

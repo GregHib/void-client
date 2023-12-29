@@ -22,48 +22,48 @@ final class Class354 {
 
     static final byte charToByte(char c, boolean bool) {
         anInt4354++;
-        if (bool != false) charToByte('\uffe1', false);
+        if (bool) charToByte('\uffe1', false);
         byte i;
         if ((c <= 0 || c >= 128) && (c < 160 || c > 255)) {
-            if (c != 8364) {
-                if (c != 8218) {
-                    if (c == 402) i = (byte) -125;
-                    else if (c == 8222) i = (byte) -124;
-                    else if (c == 8230) i = (byte) -123;
-                    else if (c == 8224) i = (byte) -122;
-                    else if (c == 8225) i = (byte) -121;
-                    else if (c != 710) {
-                        if (c == 8240) i = (byte) -119;
-                        else if (c == 352) i = (byte) -118;
-                        else if (c == 8249) i = (byte) -117;
-                        else if (c == 338) i = (byte) -116;
-                        else if (c != 381) {
-                            if (c != 8216) {
-                                if (c == 8217) i = (byte) -110;
-                                else if (c != 8220) {
-                                    if (c != 8221) {
-                                        if (c == 8226) i = (byte) -107;
-                                        else if (c != 8211) {
-                                            if (c != 8212) {
-                                                if (c == 732) i = (byte) -104;
-                                                else if (c == 8482) i = (byte) -103;
-                                                else if (c == 353) i = (byte) -102;
-                                                else if (c != 8250) {
-                                                    if (c != 339) {
-                                                        if (c == 382) i = (byte) -98;
-                                                        else if (c == 376) i = (byte) -97;
-                                                        else i = (byte) 63;
-                                                    } else i = (byte) -100;
-                                                } else i = (byte) -101;
-                                            } else i = (byte) -105;
-                                        } else i = (byte) -106;
-                                    } else i = (byte) -108;
-                                } else i = (byte) -109;
-                            } else i = (byte) -111;
-                        } else i = (byte) -114;
-                    } else i = (byte) -120;
-                } else i = (byte) -126;
-            } else i = (byte) -128;
+            if (c == 8364) {
+                i = (byte) -128;
+            } else if (c == 8218) {
+                i = (byte) -126;
+            } else if (c == 402) i = (byte) -125;
+            else if (c == 8222) i = (byte) -124;
+            else if (c == 8230) i = (byte) -123;
+            else if (c == 8224) i = (byte) -122;
+            else if (c == 8225) i = (byte) -121;
+            else if (c == 710) {
+                i = (byte) -120;
+            } else if (c == 8240) i = (byte) -119;
+            else if (c == 352) i = (byte) -118;
+            else if (c == 8249) i = (byte) -117;
+            else if (c == 338) i = (byte) -116;
+            else if (c == 381) {
+                i = (byte) -114;
+            } else if (c == 8216) {
+                i = (byte) -111;
+            } else if (c == 8217) i = (byte) -110;
+            else if (c == 8220) {
+                i = (byte) -109;
+            } else if (c == 8221) {
+                i = (byte) -108;
+            } else if (c == 8226) i = (byte) -107;
+            else if (c == 8211) {
+                i = (byte) -106;
+            } else if (c == 8212) {
+                i = (byte) -105;
+            } else if (c == 732) i = (byte) -104;
+            else if (c == 8482) i = (byte) -103;
+            else if (c == 353) i = (byte) -102;
+            else if (c == 8250) {
+                i = (byte) -101;
+            } else if (c == 339) {
+                i = (byte) -100;
+            } else if (c == 382) i = (byte) -98;
+            else if (c == 376) i = (byte) -97;
+            else i = (byte) 63;
         } else i = (byte) c;
         return i;
     }

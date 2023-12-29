@@ -101,7 +101,7 @@ final class Class170 implements Interface17 {
         if (i != 5139) anInt5065 = 62;
         for (int i_21_ = 0; (i_21_ < Class348_Sub1.anIntArray6547.length); i_21_++) {
             int i_22_ = Class348_Sub1.anIntArray6547[i_21_];
-            FontMetrics fontMetrics = Class239_Sub10.method1766((byte) -86, i_22_, s.aClass45_4585);
+            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -86, i_22_, s.aClass45_4585);
             FontRenderer fontRenderer = var_ha.method3686(fontMetrics, Class207.method1523(Class39.aClass45_518, i_22_), true);
             Class199.aClass352Array2636[i_21_] = new Class352(fontRenderer, fontMetrics);
         }

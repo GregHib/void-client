@@ -68,7 +68,7 @@ final class Class48 {
     static final int method450(int i, String string, int i_6_) {
         if (i != -20188) return 88;
         anInt850++;
-        return Class239_Sub26.method1836(-123, i_6_, true, string);
+        return Class239_Sub26.parseInt(-123, i_6_, true, string);
     }
 
     final void method451(Class48 class48_7_, byte i) {

@@ -67,36 +67,36 @@ final class Class239_Sub26 extends Class239 {
         super(i, class348_sub51);
     }
 
-    static final int method1836(int i, int i_6_, boolean bool, String string) {
+    static final int parseInt(int i, int radix, boolean positive, String string) {
         anInt6118++;
-        if (i_6_ < 2 || i_6_ > 36) throw new IllegalArgumentException("Invalid radix:" + i_6_);
-        boolean bool_7_ = false;
-        boolean bool_8_ = false;
-        int i_9_ = 0;
+        if (radix < 2 || radix > 36) throw new IllegalArgumentException("Invalid radix:" + radix);
+        boolean negative = false;
+        boolean valid = false;
+        int result = 0;
         if (i != -123) method1837(-93, 121, 38);
-        int i_10_ = string.length();
-        for (int i_11_ = 0; i_11_ < i_10_; i_11_++) {
-            int i_12_ = string.charAt(i_11_);
-            if (i_11_ == 0) {
-                if (i_12_ == 45) {
-                    bool_7_ = true;
+        int length = string.length();
+        for (int index = 0; index < length; index++) {
+            int digit = string.charAt(index);
+            if (index == 0) {
+                if (digit == 45) {
+                    negative = true;
                     continue;
                 }
-                if (i_12_ == 43 && bool) continue;
+                if (digit == 43 && positive) continue;
             }
-            if (i_12_ >= 48 && i_12_ <= 57) i_12_ -= 48;
-            else if (i_12_ >= 65 && i_12_ <= 90) i_12_ -= 55;
-            else if (i_12_ >= 97 && i_12_ <= 122) i_12_ -= 87;
+            if (digit >= 48 && digit <= 57) digit -= 48;
+            else if (digit >= 65 && digit <= 90) digit -= 55;
+            else if (digit >= 97 && digit <= 122) digit -= 87;
             else throw new NumberFormatException();
-            if (i_12_ >= i_6_) throw new NumberFormatException();
-            if (bool_7_) i_12_ = -i_12_;
-            int i_13_ = i_6_ * i_9_ - -i_12_;
-            if (i_9_ != i_13_ / i_6_) throw new NumberFormatException();
-            bool_8_ = true;
-            i_9_ = i_13_;
+            if (digit >= radix) throw new NumberFormatException();
+            if (negative) digit = -digit;
+            int temp = radix * result - -digit;
+            if (result != temp / radix) throw new NumberFormatException();
+            valid = true;
+            result = temp;
         }
-        if (!bool_8_) throw new NumberFormatException();
-        return i_9_;
+        if (!valid) throw new NumberFormatException();
+        return result;
     }
 
     static final boolean method1837(int i, int i_14_, int i_15_) {
@@ -116,7 +116,7 @@ final class Class239_Sub26 extends Class239 {
     }
 
     final int method1838(int i) {
-        if (i != -32350) method1836(89, 103, false, null);
+        if (i != -32350) parseInt(89, 103, false, null);
         anInt6123++;
         return this.anInt3138;
     }

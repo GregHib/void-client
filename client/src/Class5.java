@@ -33,7 +33,7 @@ abstract class Class5 implements Interface1 {
     public void method7(int i) {
         anInt4639++;
         if (i == 10286) {
-            FontMetrics fontMetrics = Class239_Sub10.method1766((byte) -85, (this.aClass369_4635.anInt4965), aClass45_4631);
+            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -85, (this.aClass369_4635.anInt4965), aClass45_4631);
             aFontRenderer_4637 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(this.aClass45_4632, (this.aClass369_4635.anInt4965)), true));
         }
     }

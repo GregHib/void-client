@@ -116,10 +116,10 @@ final class Class239_Sub10 extends Class239 {
         return c;
     }
 
-    static final FontMetrics method1766(byte i, int i_16_, Class45 class45) {
+    static final FontMetrics getFontMetrics(byte i, int archiveId, Class45 index) {
         anInt5944++;
         if (i >= -24) return null;
-        byte[] is = class45.method415((byte) 73, i_16_);
+        byte[] is = index.method415((byte) 73, archiveId);
         if (is == null) return null;
         return new FontMetrics(is);
     }

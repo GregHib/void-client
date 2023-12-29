@@ -4,7 +4,7 @@
 
 final class FontMetrics {
     static int anInt1978;
-    private byte[][] kerning;
+    private byte[][] kerningAdjustments;
     static int anInt1980;
     static int anInt1981;
     static int anInt1982;
@@ -43,40 +43,41 @@ final class FontMetrics {
                     if (c == 62 && escapeStart != -1) {
                         String tag = string.substring(escapeStart - -1, i_6_);
                         escapeStart = -1;
-                        if (!tag.equals("lt")) {
-                            if (!tag.equals("gt")) {
-                                if (tag.equals("nbsp")) c = '\u00a0';
-                                else if (!tag.equals("shy")) {
-                                    if (tag.equals("times")) c = '\u00d7';
-                                    else if (!tag.equals("euro")) {
-                                        if (!tag.equals("copy")) {
-                                            if (!tag.equals("reg")) {
-                                                if (tag.startsWith("img=") && icons != null) {
-                                                    try {
-                                                        int id = (Class348_Sub41.parseInt(true, (tag.substring(4))));
-                                                        previous = -1;
-                                                        width += (icons[id].scaleWidth());
-                                                        if (width > maximumWidth) return (prefix + "...");
-                                                        prefix = (string.substring(0, i_6_ - -1));
-                                                    } catch (Exception exception) {
-                                                        /* empty */
-                                                    }
-                                                }
-                                                continue;
-                                            }
-                                            c = '\u00ae';
-                                        } else c = '\u00a9';
-                                    } else c = '\u20ac';
-                                } else c = '\u00ad';
-                            } else c = '>';
-                        } else c = '<';
+                        if (tag.equals("lt")) {
+                            c = '<';
+                        } else if (tag.equals("gt")) {
+                            c = '>';
+                        } else if (tag.equals("nbsp")) c = '\u00a0';
+                        else if (tag.equals("shy")) {
+                            c = '\u00ad';
+                        } else if (tag.equals("times")) c = '\u00d7';
+                        else if (tag.equals("euro")) {
+                            c = '\u20ac';
+                        } else if (tag.equals("copy")) {
+                            c = '\u00a9';
+                        } else if (tag.equals("reg")) {
+                            c = '\u00ae';
+                        } else {
+                            if (tag.startsWith("img=") && icons != null) {
+                                try {
+                                    int id = (Class348_Sub41.parseInt(true, (tag.substring(4))));
+                                    previous = -1;
+                                    width += (icons[id].scaleWidth());
+                                    if (width > maximumWidth) return (prefix + "...");
+                                    prefix = (string.substring(0, i_6_ - -1));
+                                } catch (Exception exception) {
+                                    /* empty */
+                                }
+                            }
+                            continue;
+                        }
                     }
                     if (escapeStart == -1) {
                         width += 0xff & (glyphWidths[Class354.charToByte(c, false) & 0xff]);
-                        if (kerning != null && previous != -1) width += kerning[previous][c];
+                        if (kerningAdjustments != null && previous != -1) width += kerningAdjustments[previous][c];
                         previous = c;
                         int total = width;
-                        if (kerning != null) total += kerning[c][46];
+                        if (kerningAdjustments != null) total += kerningAdjustments[c][46];
                         if (total > maximumWidth) return prefix + "...";
                         prefix = string.substring(0, i_6_ + 1);
                     }
@@ -91,7 +92,7 @@ final class FontMetrics {
     final int kerning(int first, byte i_10_, char second) {
         if (i_10_ > -47) aClass351_1987 = null;
         anInt1985++;
-        if (kerning != null) return kerning[first][second];
+        if (kerningAdjustments != null) return kerningAdjustments[first][second];
         return 0;
     }
 
@@ -103,7 +104,7 @@ final class FontMetrics {
 
     final int glyphWidth(byte i, int glyph) {
         anInt1982++;
-        if (i != -48) kerning = null;
+        if (i != -48) kerningAdjustments = null;
         return 0xff & glyphWidths[glyph];
     }
 
@@ -121,54 +122,60 @@ final class FontMetrics {
 
     final int textWidth(String string, Sprite[] icons, boolean bool) {
         try {
-            if (bool != false) this.bottomPadding = 95;
+            if (bool) this.bottomPadding = 95;
             anInt1980++;
             if (string == null) return 0;
-            int i = -1;
-            int i_16_ = -1;
-            int width = 0;
-            int i_18_ = string.length();
-            for (int i_19_ = 0; i_19_ < i_18_; i_19_++) {
-                char c = string.charAt(i_19_);
-                if (c == 60) i = i_19_;
-                else {
-                    if (c == 62 && i != -1) {
-                        String tag = string.substring(1 + i, i_19_);
-                        i = -1;
-                        if (tag.equals("lt")) c = '<';
-                        else if (!tag.equals("gt")) {
-                            if (!tag.equals("nbsp")) {
-                                if (tag.equals("shy")) c = '\u00ad';
-                                else if (!tag.equals("times")) {
-                                    if (!tag.equals("euro")) {
-                                        if (!tag.equals("copy")) {
-                                            if (tag.equals("reg")) c = '\u00ae';
-                                            else {
-                                                if (tag.startsWith("img=") && icons != null) {
-                                                    try {
-                                                        int id = (Class348_Sub41.parseInt(true, (tag.substring(4))));
-                                                        i_16_ = -1;
-                                                        width += (icons[id].scaleWidth());
-                                                    } catch (Exception exception) {
-                                                        /* empty */
-                                                    }
-                                                }
-                                                continue;
-                                            }
-                                        } else c = '\u00a9';
-                                    } else c = '\u20ac';
-                                } else c = '\u00d7';
-                            } else c = '\u00a0';
-                        } else c = '>';
+            int tagStart = -1;
+            int lastChar = -1;
+            int totalWidth = 0;
+            int length = string.length();
+            for (int index = 0; index < length; index++) {
+                char current = string.charAt(index);
+                if (current == 60) {
+                    tagStart = index;
+                } else {
+                    if (current == 62 && tagStart != -1) {
+                        String tag = string.substring(1 + tagStart, index);
+                        tagStart = -1;
+                        if (tag.equals("lt")) {
+                            current = '<';
+                        } else if (tag.equals("gt")) {
+                            current = '>';
+                        } else if (tag.equals("nbsp")) {
+                            current = '\u00a0';
+                        } else if (tag.equals("shy")) {
+                            current = '\u00ad';
+                        } else if (tag.equals("times")) {
+                            current = '\u00d7';
+                        } else if (tag.equals("euro")) {
+                            current = '\u20ac';
+                        } else if (tag.equals("copy")) {
+                            current = '\u00a9';
+                        } else if (tag.equals("reg")) {
+                            current = '\u00ae';
+                        } else {
+                            if (tag.startsWith("img=") && icons != null) {
+                                try {
+                                    int id = (Class348_Sub41.parseInt(true, (tag.substring(4))));
+                                    lastChar = -1;
+                                    totalWidth += (icons[id].scaleWidth());
+                                } catch (Exception exception) {
+                                    /* empty */
+                                }
+                            }
+                            continue;
+                        }
                     }
-                    if (i == -1) {
-                        width += 0xff & (glyphWidths[Class354.charToByte(c, false) & 0xff]);
-                        if (kerning != null && i_16_ != -1) width += kerning[i_16_][c];
-                        i_16_ = c;
+                    if (tagStart == -1) {
+                        totalWidth += (glyphWidths[Class354.charToByte(current, false) & 0xff]) & 0xff;
+                        if (kerningAdjustments != null && lastChar != -1) {
+                            totalWidth += kerningAdjustments[lastChar][current];
+                        }
+                        lastChar = current;
                     }
                 }
             }
-            return width;
+            return totalWidth;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("oea.F(" + (string != null ? "{...}" : "null") + ',' + (icons != null ? "{...}" : "null") + ',' + bool + ')'));
         }
@@ -195,9 +202,9 @@ final class FontMetrics {
             anInt1978++;
             if (i != 87) splitLines(null, 80, null, 55);
             if (string == null) return 0;
-            int i_26_ = 0;
-            int i_27_ = 0;
-            int i_28_ = -1;
+            int total = 0;
+            int start = 0;
+            int end = -1;
             int i_29_ = 0;
             int i_30_ = 0;
             int i_31_ = -1;
@@ -213,7 +220,7 @@ final class FontMetrics {
                     if (i_31_ == -1) {
                         width += glyphWidth((byte) -48, current);
                         i_38_ = index;
-                        if (kerning != null && previous != -1) width += kerning[previous][current];
+                        if (kerningAdjustments != null && previous != -1) width += kerningAdjustments[previous][current];
                         previous = current;
                     } else {
                         if (current != 62) continue;
@@ -221,46 +228,46 @@ final class FontMetrics {
                         String tag = string.substring(1 + i_31_, index);
                         i_31_ = -1;
                         if (tag.equals("br")) {
-                            strings[stringIndex] = string.substring(i_27_, index - -1);
+                            strings[stringIndex] = string.substring(start, index - -1);
                             stringIndex++;
                             if (strings.length <= stringIndex) return 0;
-                            i_27_ = 1 + index;
+                            start = 1 + index;
                             previous = -1;
-                            i_26_ = 0;
-                            i_28_ = -1;
+                            total = 0;
+                            end = -1;
                             continue;
                         }
                         if (tag.equals("lt")) {
                             width += glyphWidth((byte) -48, 60);
-                            if (kerning != null && previous != -1) width += kerning[previous][60];
+                            if (kerningAdjustments != null && previous != -1) width += kerningAdjustments[previous][60];
                             previous = 60;
                         } else if (tag.equals("gt")) {
                             width += glyphWidth((byte) -48, 62);
-                            if (kerning != null && previous != -1) width += kerning[previous][62];
+                            if (kerningAdjustments != null && previous != -1) width += kerningAdjustments[previous][62];
                             previous = 62;
                         } else if (tag.equals("nbsp")) {
                             width += glyphWidth((byte) -48, 160);
-                            if (kerning != null && previous != -1) width += kerning[previous][160];
+                            if (kerningAdjustments != null && previous != -1) width += kerningAdjustments[previous][160];
                             previous = 160;
                         } else if (tag.equals("shy")) {
                             width += glyphWidth((byte) -48, 173);
-                            if (kerning != null && previous != -1) width += kerning[previous][173];
+                            if (kerningAdjustments != null && previous != -1) width += kerningAdjustments[previous][173];
                             previous = 173;
                         } else if (tag.equals("times")) {
                             width += glyphWidth((byte) -48, 215);
-                            if (kerning != null && previous != -1) width += kerning[previous][215];
+                            if (kerningAdjustments != null && previous != -1) width += kerningAdjustments[previous][215];
                             previous = 215;
                         } else if (tag.equals("euro")) {
                             width += glyphWidth((byte) -48, 8364);
-                            if (kerning != null && previous != -1) width += (kerning[previous][8364]);
+                            if (kerningAdjustments != null && previous != -1) width += (kerningAdjustments[previous][8364]);
                             previous = 8364;
                         } else if (tag.equals("copy")) {
                             width += glyphWidth((byte) -48, 169);
-                            if (kerning != null && previous != -1) width += (kerning[previous][169]);
+                            if (kerningAdjustments != null && previous != -1) width += (kerningAdjustments[previous][169]);
                             previous = 169;
                         } else if (tag.equals("reg")) {
                             width += glyphWidth((byte) -48, 174);
-                            if (kerning != null && previous != -1) width += (kerning[previous][174]);
+                            if (kerningAdjustments != null && previous != -1) width += (kerningAdjustments[previous][174]);
                             previous = 174;
                         } else if (tag.startsWith("img=") && icons != null) {
                             try {
@@ -274,42 +281,42 @@ final class FontMetrics {
                         current = -1;
                     }
                     if (width > 0) {
-                        i_26_ += width;
+                        total += width;
                         if (widths != null) {
                             if (current == 32) {
                                 i_30_ = 1;
-                                i_29_ = i_26_;
-                                i_28_ = index;
+                                i_29_ = total;
+                                end = index;
                             }
-                            if (i_26_ > widths[widths.length > stringIndex ? stringIndex : widths.length + -1]) {
-                                if (i_28_ >= 0) {
-                                    strings[stringIndex] = string.substring(i_27_, -i_30_ + 1 + i_28_);
+                            if (total > widths[widths.length > stringIndex ? stringIndex : widths.length + -1]) {
+                                if (end >= 0) {
+                                    strings[stringIndex] = string.substring(start, -i_30_ + 1 + end);
                                     if (strings.length <= ++stringIndex) return 0;
-                                    i_27_ = 1 + i_28_;
+                                    start = 1 + end;
                                     previous = -1;
-                                    i_28_ = -1;
-                                    i_26_ -= i_29_;
+                                    end = -1;
+                                    total -= i_29_;
                                 } else {
-                                    strings[stringIndex] = string.substring(i_27_, i_38_);
+                                    strings[stringIndex] = string.substring(start, i_38_);
                                     stringIndex++;
                                     if (stringIndex >= strings.length) return 0;
-                                    i_27_ = i_38_;
+                                    start = i_38_;
                                     previous = -1;
-                                    i_28_ = -1;
-                                    i_26_ = width;
+                                    end = -1;
+                                    total = width;
                                 }
                             }
                             if (current == 45) {
-                                i_29_ = i_26_;
-                                i_28_ = index;
+                                i_29_ = total;
+                                end = index;
                                 i_30_ = 0;
                             }
                         }
                     }
                 }
             }
-            if (i_27_ < string.length()) {
-                strings[stringIndex] = string.substring(i_27_);
+            if (start < string.length()) {
+                strings[stringIndex] = string.substring(start);
                 stringIndex++;
             }
             return stringIndex;
@@ -342,43 +349,43 @@ final class FontMetrics {
         Class348_Sub49 buffer = new Class348_Sub49(data);
         int end = buffer.readUnsignedByte(255);
         if (end != 0) throw new RuntimeException("");
-        boolean variableWidth = buffer.readUnsignedByte(255) == 1;
+        boolean kerning = buffer.readUnsignedByte(255) == 1;
         glyphWidths = new byte[256];
         buffer.method3389(2147483647, 0, 256, glyphWidths);
-        if (variableWidth) {
-            int[] is_43_ = new int[256];
-            int[] is_44_ = new int[256];
-            for (int i_45_ = 0; i_45_ < 256; i_45_++)
-                is_43_[i_45_] = buffer.readUnsignedByte(255);
-            for (int i_46_ = 0; i_46_ < 256; i_46_++)
-                is_44_[i_46_] = buffer.readUnsignedByte(255);
-            byte[][] is_47_ = new byte[256][];
-            for (int i_48_ = 0; i_48_ < 256; i_48_++) {
-                is_47_[i_48_] = new byte[is_43_[i_48_]];
-                byte i_49_ = 0;
-                for (int i_50_ = 0; (is_47_[i_48_].length > i_50_); i_50_++) {
-                    i_49_ += buffer.readByte(-83);
-                    is_47_[i_48_][i_50_] = i_49_;
+        if (kerning) {
+            int[] rightOffsets = new int[256];
+            int[] leftOffsets = new int[256];
+            for (int index = 0; index < 256; index++)
+                rightOffsets[index] = buffer.readUnsignedByte(255);
+            for (int index = 0; index < 256; index++)
+                leftOffsets[index] = buffer.readUnsignedByte(255);
+            byte[][] rightGlyphData = new byte[256][];
+            for (int i = 0; i < 256; i++) {
+                rightGlyphData[i] = new byte[rightOffsets[i]];
+                byte total = 0;
+                for (int j = 0; (rightGlyphData[i].length > j); j++) {
+                    total += buffer.readByte(-83);
+                    rightGlyphData[i][j] = total;
                 }
             }
-            byte[][] is_51_ = new byte[256][];
-            for (int i_52_ = 0; i_52_ < 256; i_52_++) {
-                is_51_[i_52_] = new byte[is_43_[i_52_]];
-                byte i_53_ = 0;
-                for (int i_54_ = 0; (is_51_[i_52_].length > i_54_); i_54_++) {
-                    i_53_ += buffer.readByte(-115);
-                    is_51_[i_52_][i_54_] = i_53_;
+            byte[][] leftGlyphData = new byte[256][];
+            for (int i = 0; i < 256; i++) {
+                leftGlyphData[i] = new byte[rightOffsets[i]];
+                byte total = 0;
+                for (int j = 0; (leftGlyphData[i].length > j); j++) {
+                    total += buffer.readByte(-115);
+                    leftGlyphData[i][j] = total;
                 }
             }
-            kerning = new byte[256][256];
-            for (int i_55_ = 0; i_55_ < 256; i_55_++) {
-                if (i_55_ != 32 && i_55_ != 160) {
-                    for (int i_56_ = 0; i_56_ < 256; i_56_++) {
-                        if (i_56_ != 32 && i_56_ != 160) kerning[i_55_][i_56_] = (byte) (Class239_Sub8.calculateKerning(glyphWidths, -34, i_56_, i_55_, is_47_, is_51_, is_44_, is_43_));
+            this.kerningAdjustments = new byte[256][256];
+            for (int left = 0; left < 256; left++) {
+                if (left != 32 && left != 160) {
+                    for (int right = 0; right < 256; right++) {
+                        if (right != 32 && right != 160) this.kerningAdjustments[left][right] = (byte) (Class239_Sub8.calculateKerning(this.glyphWidths, -34, right, left, rightGlyphData, leftGlyphData, leftOffsets, rightOffsets));
                     }
                 }
             }
-            this.verticalSpacing = is_44_[32] - -is_43_[32];
+            this.verticalSpacing = leftOffsets[32] + rightOffsets[32];
         } else this.verticalSpacing = buffer.readUnsignedByte(255);
         buffer.readUnsignedByte(255);
         buffer.readUnsignedByte(255);
