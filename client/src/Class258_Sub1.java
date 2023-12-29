@@ -62,9 +62,9 @@ final class Class258_Sub1 extends Class258 {
         Class232.anInt3006 = i_13_;
         Class37.anInt492 = Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084;
         if (Class37.anInt492 < 0) {
-            Class105_Sub1.anInt8412 = -Class37.anInt492;
+            Sprite_Sub1.anInt8412 = -Class37.anInt492;
             Class37.anInt492 = 0;
-        } else Class105_Sub1.anInt8412 = 0;
+        } else Sprite_Sub1.anInt8412 = 0;
         Class348_Sub34.anInt6974 = Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084;
         if (Class348_Sub34.anInt6974 < 0) {
             Class240.anInt4686 = -Class348_Sub34.anInt6974;

@@ -77,12 +77,12 @@ final class Class218 {
         }
     }
 
-    final Class105 method1596(int i, boolean bool, int i_18_, ha var_ha) {
+    final Sprite method1596(int i, boolean bool, int i_18_, ha var_ha) {
         anInt2857++;
         if (i_18_ < 51) aClass114_2860 = null;
         long l = var_ha.anInt4567 << 19 | (this.anInt2853 | i << 16 | (!bool ? 0 : 262144));
-        Class105 class105 = (Class105) this.aClass141_2851.aClass60_1976.method583(l, -87);
-        if (class105 != null) return class105;
+        Sprite sprite = (Sprite) this.aClass141_2851.aClass60_1976.method583(l, -87);
+        if (sprite != null) return sprite;
         if (!this.aClass141_2851.aClass45_1965.method421(false, this.anInt2853)) return null;
         Class207 class207 = Class207.method1521(this.aClass141_2851.aClass45_1965, this.anInt2853, 0);
         if (class207 != null) {
@@ -91,9 +91,9 @@ final class Class218 {
             for (int i_19_ = 0; i_19_ < i; i_19_++)
                 class207.method1520();
         }
-        class105 = var_ha.method3691(class207, true);
-        if (class105 != null) this.aClass141_2851.aClass60_1976.method582(class105, l, (byte) -101);
-        return class105;
+        sprite = var_ha.method3691(class207, true);
+        if (sprite != null) this.aClass141_2851.aClass60_1976.method582(sprite, l, (byte) -101);
+        return sprite;
     }
 
     final void method1597(byte i, Class348_Sub49 class348_sub49) {

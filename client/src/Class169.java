@@ -10,7 +10,7 @@ final class Class169 implements Runnable {
     static int anInt2257;
     private Class262 aClass262_2258 = new Class262();
     private Thread aThread2259 = new Thread(this);
-    static Class105[] aClass105Array2260;
+    static Sprite[] aSpriteArray2260;
     static Class19[] aClass19Array2261;
     static int anInt2262;
     static int anInt2263;
@@ -47,7 +47,7 @@ final class Class169 implements Runnable {
 
     public static void method1300(byte i) {
         if (i < -127) {
-            aClass105Array2260 = null;
+            aSpriteArray2260 = null;
             aClass19Array2261 = null;
         }
     }

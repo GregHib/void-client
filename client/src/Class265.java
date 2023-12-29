@@ -4,7 +4,7 @@
 
 final class Class265 implements Interface1 {
     private final Class120 aClass120_4687;
-    private Class105 aClass105_4688;
+    private Sprite aSprite_4688;
     static Class74 aClass74_4689 = new Class74(2, 4);
     static int anInt4690;
     static int anInt4691;
@@ -15,7 +15,7 @@ final class Class265 implements Interface1 {
     static int anInt4696;
 
     public final void method7(int i) {
-        aClass105_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687.anInt4912), (byte) 116, aClass45_4694);
+        aSprite_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687.anInt4912), (byte) 116, aClass45_4694);
         if (i != 10286) aBooleanArrayArray4693 = null;
         anInt4695++;
     }
@@ -32,8 +32,8 @@ final class Class265 implements Interface1 {
         if (bool) {
             int i_0_ = (Math.max(Class321.anInt4017, Class92.anInt1524));
             int i_1_ = (Math.max(Class348_Sub42_Sub8_Sub2.anInt10432, ha_Sub2.anInt7666));
-            int i_2_ = aClass105_4688.scaleWidth();
-            int i_3_ = aClass105_4688.method980();
+            int i_2_ = aSprite_4688.scaleWidth();
+            int i_3_ = aSprite_4688.method980();
             int i_4_ = 0;
             int i_5_ = i_0_;
             int i_6_ = i_0_ * i_3_ / i_2_;
@@ -44,7 +44,7 @@ final class Class265 implements Interface1 {
                 i_7_ = 0;
                 i_4_ = (i_0_ - i_5_) / 2;
             }
-            aClass105_4688.method973(i_4_, i_7_, i_5_, i_6_);
+            aSprite_4688.method973(i_4_, i_7_, i_5_, i_6_);
         }
     }
 

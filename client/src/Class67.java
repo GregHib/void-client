@@ -4,7 +4,7 @@
 
 final class Class67 implements Interface1 {
     static int anInt4642;
-    static Class105 aClass105_4643;
+    static Sprite aSprite_4643;
     static int anInt4644;
     static int anInt4645;
     private final Class158 aClass158_4646;
@@ -16,7 +16,7 @@ final class Class67 implements Interface1 {
 
     public static void method716(int i) {
         if (i == 1) {
-            aClass105_4643 = null;
+            aSprite_4643 = null;
             anIntArray4648 = null;
         }
     }

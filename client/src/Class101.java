@@ -88,20 +88,20 @@ abstract class Class101 {
 
     abstract void method900(int i);
 
-    static final void method901(Class105[] class105s, int i) {
+    static final void method901(Sprite[] sprites, int i) {
         try {
             anInt1599++;
-            Class239_Sub1.anInt5850 = class105s.length;
+            Class239_Sub1.anInt5850 = sprites.length;
             Class175.anIntArray2330 = new int[Class239_Sub1.anInt5850 + 10];
-            Class341.aClass105Array4234 = new Class105[Class239_Sub1.anInt5850 + 10];
-            Class214.method1575(class105s, 0, Class341.aClass105Array4234, 0, Class239_Sub1.anInt5850);
+            Class341.aSpriteArray4234 = new Sprite[Class239_Sub1.anInt5850 + 10];
+            Class214.method1575(sprites, 0, Class341.aSpriteArray4234, 0, Class239_Sub1.anInt5850);
             for (int i_17_ = 0; Class239_Sub1.anInt5850 > i_17_; i_17_++)
-                Class175.anIntArray2330[i_17_] = Class341.aClass105Array4234[i_17_].method980();
+                Class175.anIntArray2330[i_17_] = Class341.aSpriteArray4234[i_17_].method980();
             if (i != 515880227) anInt1597 = 49;
-            for (int i_18_ = Class239_Sub1.anInt5850; (i_18_ < Class341.aClass105Array4234.length); i_18_++)
+            for (int i_18_ = Class239_Sub1.anInt5850; (i_18_ < Class341.aSpriteArray4234.length); i_18_++)
                 Class175.anIntArray2330[i_18_] = 12;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bca.RA(" + (class105s != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bca.RA(" + (sprites != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 

@@ -43,7 +43,7 @@ final class Class79 {
     boolean aBoolean1362;
     int anInt1363;
     int anInt1364;
-    static Class105 aClass105_1365;
+    static Sprite aSprite_1365;
     int anInt1366;
     static client aClient1367;
     private int anInt1368;
@@ -678,7 +678,7 @@ final class Class79 {
     }
 
     public static void method804(int i) {
-        aClass105_1365 = null;
+        aSprite_1365 = null;
         aClient1367 = null;
         if (i != -3752) anInt1387 = 14;
     }

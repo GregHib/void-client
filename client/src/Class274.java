@@ -169,17 +169,17 @@ final class Class274 {
     }
 
     static final void method2061(int i) {
-        Class348_Sub42_Sub15.aClass105_9658 = null;
-        Class348_Sub42_Sub15.aClass105_9659 = null;
-        Class174.aClass105_2309 = null;
-        Class341.aClass105Array4234 = null;
-        Class121.aClass105_1800 = null;
+        Class348_Sub42_Sub15.aSprite_9658 = null;
+        Class348_Sub42_Sub15.aSprite_9659 = null;
+        Class174.aSprite_2309 = null;
+        Class341.aSpriteArray4234 = null;
+        Class121.aSprite_1800 = null;
         anInt3477++;
         int i_2_ = 89 / ((-74 - i) / 42);
-        Class348_Sub5.aClass105_6627 = null;
-        OutputStream_Sub2.aClass105_106 = null;
-        Class309.aClass105_4808 = null;
-        Class110.aClass105_1706 = null;
+        Class348_Sub5.aSprite_6627 = null;
+        OutputStream_Sub2.aSprite_106 = null;
+        Class309.aSprite_4808 = null;
+        Class110.aSprite_1706 = null;
     }
 
     static final void method2062(byte i) {

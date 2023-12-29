@@ -122,14 +122,14 @@ abstract class Class318_Sub1 extends Class318 {
                             var_ha.method3636(is[is.length + -2], is[-1 + is.length], is[0], is[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).length + -1)]) & 0xff]), 1, var_aa, i_6_, i);
                         }
                     }
-                    Class105 class105 = null;
+                    Sprite sprite = null;
                     if (class42.anInt578 != -1) {
-                        class105 = class42.method374(false, var_ha, (byte) 127);
-                        if (class105 != null) Class151.method1211(i, class105, i_6_, class46, var_aa, i_8_, 2, i_5_);
+                        sprite = class42.method374(false, var_ha, (byte) 127);
+                        if (sprite != null) Class151.method1211(i, sprite, i_6_, class46, var_aa, i_8_, 2, i_5_);
                     }
                     if (class42.aString597 == null) break;
                     int i_29_ = 0;
-                    if (class105 != null) i_29_ = class105.method969();
+                    if (sprite != null) i_29_ = sprite.method969();
                     FontRenderer fontRenderer = Class240.aFontRenderer_4684;
                     FontMetrics fontMetrics = Class258_Sub1.aFontMetrics_8527;
                     if (class42.anInt576 == 1) {

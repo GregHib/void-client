@@ -11,7 +11,7 @@ final class OutputStream_Sub2 extends OutputStream {
     static int anInt103;
     static int anInt104;
     static int anInt105;
-    static Class105 aClass105_106;
+    static Sprite aSprite_106;
     static int anInt107;
     static long aLong108 = (long) (Math.random() * 9.999999999E9);
 
@@ -74,8 +74,8 @@ final class OutputStream_Sub2 extends OutputStream {
             } else is = (Exception_Sub1.aClass255_112.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772);
         } else is = (Exception_Sub1.aClass255_112.method1940(-115, (int) class348_sub42_sub12.aLong9605).anIntArray2772);
         if (is != null) string += Class163.method1273(is, true);
-        int i = Class369.aFontMetrics_4962.textWidth(string, Class341.aClass105Array4234, bool);
-        if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24.aClass105_6097.method971() + 4;
+        int i = Class369.aFontMetrics_4962.textWidth(string, Class341.aSpriteArray4234, bool);
+        if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24.aSprite_6097.method971() + 4;
         return i;
     }
 
@@ -85,7 +85,7 @@ final class OutputStream_Sub2 extends OutputStream {
     }
 
     public static void method139(int i) {
-        if (i > 53) aClass105_106 = null;
+        if (i > 53) aSprite_106 = null;
     }
 
     static {

@@ -87,8 +87,8 @@ final class Class239_Sub21 extends Class239 {
                         c_26_ = c_24_;
                         boolean bool = false;
                     } else c_26_ = string.charAt(i_23_++);
-                    c = Class105_Sub2.method990(c_25_, (byte) -39);
-                    c_24_ = Class105_Sub2.method990(c_26_, (byte) -127);
+                    c = Sprite_Sub2.method990(c_25_, (byte) -39);
+                    c_24_ = Sprite_Sub2.method990(c_26_, (byte) -127);
                     c_25_ = Class239_Sub10.method1765(c_25_, i_18_, 105);
                     c_26_ = Class239_Sub10.method1765(c_26_, i_18_, 105);
                     if (c_25_ != c_26_ && (Character.toUpperCase(c_26_) != Character.toUpperCase(c_25_))) {

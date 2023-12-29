@@ -20,7 +20,7 @@ final class Class305 {
     static int anInt3864;
     private final Class72[] aClass72Array3865;
     private final int anInt3866;
-    private Class105 aClass105_3867;
+    private Sprite aSprite_3867;
     static int anInt3868;
     static Canvas aCanvas3869;
     static boolean aBoolean3870 = false;
@@ -33,7 +33,7 @@ final class Class305 {
             if (i_1_ > 512) i_1_ = 512;
             if (i_1_ <= 0) i_1_ = 1;
             if (i_1_ != anInt3863) {
-                aClass105_3867 = null;
+                aSprite_3867 = null;
                 anInt3863 = i_1_;
             }
             if (aClass72Array3862 != null) {
@@ -70,12 +70,12 @@ final class Class305 {
         anInt3860++;
         if (anInt3858 != -1 && anInt3863 != 0) {
             Class12 class12 = Class101_Sub1.aD5684.method3(anInt3858, -6662);
-            if (aClass105_3867 == null && Class101_Sub1.aD5684.method4(-7953, anInt3858)) {
+            if (aSprite_3867 == null && Class101_Sub1.aD5684.method4(-7953, anInt3858)) {
                 int[] is = (class12.anInt200 == 2 ? Class101_Sub1.aD5684.method6(-21540, anInt3863, 0.7F, anInt3858, false, anInt3863) : Class101_Sub1.aD5684.method5(false, anInt3858, 0.7F, anInt3863, anInt3863, -119));
-                aClass105_3867 = var_ha.method3662(anInt3863, is, (byte) 94, 0, anInt3863, anInt3863);
+                aSprite_3867 = var_ha.method3662(anInt3863, is, (byte) 94, 0, anInt3863, anInt3863);
             }
             if (class12.anInt200 == 2) var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
-            if (aClass105_3867 != null) {
+            if (aSprite_3867 != null) {
                 int i_14_ = class12.anInt200 == 2 ? 1 : 0;
                 int i_15_ = i_13_ * i_11_ / -4096;
                 int i_16_;
@@ -93,7 +93,7 @@ final class Class305 {
                 }
                 for (int i_17_ = -i_13_ + i_16_; i_8_ > i_17_; i_17_ += i_13_) {
                     for (int i_18_ = i_15_ + -i_13_; i_18_ < i_13_; i_18_ += i_13_)
-                        aClass105_3867.method970(i_7_ + i_17_, i_18_ + i_9_, i_13_, i_13_, 1, 0, i_14_);
+                        aSprite_3867.method970(i_7_ + i_17_, i_18_ + i_9_, i_13_, i_13_, 1, 0, i_14_);
                 }
             }
         } else var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
@@ -113,7 +113,7 @@ final class Class305 {
             for (int i_21_ = 0; aClass72Array3862.length > i_21_; i_21_++)
                 aClass72Array3862[i_21_].method734();
         }
-        aClass105_3867 = null;
+        aSprite_3867 = null;
         if (i != 96) method2292(-84, null, 73);
     }
 

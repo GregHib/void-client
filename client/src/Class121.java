@@ -9,11 +9,11 @@ final class Class121 {
     static int anInt1797;
     static int anInt1798;
     static int anInt1799;
-    static Class105 aClass105_1800;
+    static Sprite aSprite_1800;
 
     public static void method1081(byte i) {
         int i_0_ = -38 % ((i - 57) / 62);
-        aClass105_1800 = null;
+        aSprite_1800 = null;
     }
 
     static final int method1082(int i, boolean bool) {

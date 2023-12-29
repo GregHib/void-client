@@ -82,7 +82,7 @@ final class oa extends ha implements Interface19 {
         /* empty */
     }
 
-    final Class105 method3691(Class207 class207, boolean bool) {
+    final Sprite method3691(Class207 class207, boolean bool) {
         j var_j = new j(this, class207.anIntArray2697, class207.aByteArray2699, class207.aByteArray2695, 0, class207.anInt2702, class207.anInt2702, class207.anInt2696);
         var_j.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
         return var_j;
@@ -294,7 +294,7 @@ final class oa extends ha implements Interface19 {
 
     final native void Q(int i, int i_109_, int i_110_, int i_111_, int i_112_, int i_113_, byte[] is, int i_114_, int i_115_);
 
-    final Class105 method3629(int i, int i_116_, boolean bool) {
+    final Sprite method3629(int i, int i_116_, boolean bool) {
         return new j(this, i, i_116_);
     }
 
@@ -349,7 +349,7 @@ final class oa extends ha implements Interface19 {
 
     final native void F(int i, int i_142_);
 
-    final Class105 method3683(int i, int i_143_, int i_144_, int i_145_, boolean bool) {
+    final Sprite method3683(int i, int i_143_, int i_144_, int i_145_, boolean bool) {
         return new j(this, i, i_143_, i_144_, i_145_, !bool);
     }
 
@@ -536,7 +536,7 @@ final class oa extends ha implements Interface19 {
 
     final native void L(int i, int i_207_, int i_208_);
 
-    final Class105 method3711(int[] is, int i, int i_209_, int i_210_, int i_211_, boolean bool) {
+    final Sprite method3711(int[] is, int i, int i_209_, int i_210_, int i_211_, boolean bool) {
         return new j(this, is, i, i_209_, i_210_, i_211_, false);
     }
 

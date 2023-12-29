@@ -90,7 +90,7 @@ final class Class164 {
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1029) {
             for (int i_7_ = 0; i_7_ < 4; i_7_++)
-                Class348_Sub45.aClass361Array7108[i_7_] = Class105_Sub1.method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319);
+                Class348_Sub45.aClass361Array7108[i_7_] = Sprite_Sub1.method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319);
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1030) {
             Class21.aClass45_322 = Class369_Sub2.method3571(false, 8, (byte) -23, 1);
@@ -272,7 +272,7 @@ final class Class164 {
             Class170.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, i ^ ~0x6ff7);
             Class255.method1933(Class21.aClass45_322, Class348_Sub8.aHa6654, true);
-            Class101.method901(Class113.aClass105Array1744, 515880227);
+            Class101.method901(Class113.aSpriteArray1744, 515880227);
         }
         return Class348_Sub40_Sub6.method3063(false);
     }

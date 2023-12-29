@@ -56,18 +56,18 @@ final class Class49 implements Interface4 {
         Class213.method1568(this.anIntArray4731, i_9_, i, i_13_, bool_14_ ? this.aFloatArray4719 : null, !bool ? null : (aHa_Sub1_4729.aClass348_Sub31_7469.anIntArray6916), i_10_, 113, i_11_, this.anInt4725, (aHa_Sub1_4729.aClass348_Sub31_7469.anInt6917), i_12_, bool_14_ ? aHa_Sub1_4729.aFloatArray7502 : null);
     }
 
-    Class49(ha_Sub1 var_ha_Sub1, Class105 class105, Class216 class216) {
+    Class49(ha_Sub1 var_ha_Sub1, Sprite sprite, Class216 class216) {
         do {
             try {
                 aHa_Sub1_4729 = var_ha_Sub1;
-                if (class105 instanceof Class105_Sub3_Sub1) {
-                    Class105_Sub3_Sub1 class105_sub3_sub1 = (Class105_Sub3_Sub1) class105;
+                if (sprite instanceof Sprite_Sub3_Sub1) {
+                    Sprite_Sub3_Sub1 class105_sub3_sub1 = (Sprite_Sub3_Sub1) sprite;
                     this.anIntArray4731 = (class105_sub3_sub1.anIntArray9933);
                     this.anInt4722 = class105_sub3_sub1.anInt8470;
                     this.anInt4725 = class105_sub3_sub1.anInt8471;
                 } else {
-                    if (!(class105 instanceof Class105_Sub3_Sub3)) throw new RuntimeException();
-                    Class105_Sub3_Sub3 class105_sub3_sub3 = (Class105_Sub3_Sub3) class105;
+                    if (!(sprite instanceof Sprite_Sub3_Sub3)) throw new RuntimeException();
+                    Sprite_Sub3_Sub3 class105_sub3_sub3 = (Sprite_Sub3_Sub3) sprite;
                     this.anInt4725 = class105_sub3_sub3.anInt8471;
                     this.anInt4722 = class105_sub3_sub3.anInt8470;
                     this.anIntArray4731 = (class105_sub3_sub3.anIntArray9936);
@@ -77,7 +77,7 @@ final class Class49 implements Interface4 {
                 if ((aClass216_4724.anInt4974 != this.anInt4725) || (this.anInt4722 != aClass216_4724.anInt4978)) throw new RuntimeException();
                 this.aFloatArray4719 = aClass216_4724.aFloatArray4980;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + (class105 != null ? "{...}" : "null") + ',' + (class216 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + (sprite != null ? "{...}" : "null") + ',' + (class216 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

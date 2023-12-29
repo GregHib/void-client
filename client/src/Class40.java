@@ -58,25 +58,25 @@ final class Class40 {
     }
 
     static final void method369(int i) {
-        Class348_Sub45.aClass105Array7107 = null;
-        Class239_Sub2.aClass105Array5857 = null;
-        Class348_Sub12.aClass105Array6742 = null;
-        Class240.aClass105Array4679 = null;
+        Class348_Sub45.aSpriteArray7107 = null;
+        Class239_Sub2.aSpriteArray5857 = null;
+        Class348_Sub12.aSpriteArray6742 = null;
+        Class240.aSpriteArray4679 = null;
         if (i != -29776) method370(true);
-        Class79.aClass105_1365 = null;
-        Class25.aClass105Array367 = null;
-        Class239_Sub9.aClass105Array5933 = null;
-        Class200.aClass105Array2640 = null;
-        Class348_Sub40_Sub37.aClass105Array9467 = null;
+        Class79.aSprite_1365 = null;
+        Class25.aSpriteArray367 = null;
+        Class239_Sub9.aSpriteArray5933 = null;
+        Class200.aSpriteArray2640 = null;
+        Class348_Sub40_Sub37.aSpriteArray9467 = null;
         Class262.aFontRenderer_3326 = null;
-        Class239_Sub24.aClass105_6097 = null;
+        Class239_Sub24.aSprite_6097 = null;
         Applet_Sub1.aFontRenderer_20 = null;
         Class240.aFontRenderer_4684 = null;
-        Class169.aClass105Array2260 = null;
-        Class113.aClass105Array1744 = null;
-        Class264.aClass105Array3378 = null;
-        Class59_Sub1.aClass105Array5294 = null;
-        Class318_Sub1_Sub1_Sub1.aClass105Array9959 = null;
+        Class169.aSpriteArray2260 = null;
+        Class113.aSpriteArray1744 = null;
+        Class264.aSpriteArray3378 = null;
+        Class59_Sub1.aSpriteArray5294 = null;
+        Class318_Sub1_Sub1_Sub1.aSpriteArray9959 = null;
         anInt542++;
     }
 

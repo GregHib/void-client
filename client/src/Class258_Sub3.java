@@ -181,7 +181,7 @@ class Class258_Sub3 extends Class258 {
         anInt8549 = -1;
     }
 
-    static final Class105 method1969(byte[] is, int i) {
+    static final Sprite method1969(byte[] is, int i) {
         anInt8546++;
         if (i != -5901) anInt8550 = 83;
         if (is == null) throw new RuntimeException("");

@@ -595,7 +595,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class302 class302 = new Class302();
             class302.anInt3840 = i_77_;
             class302.anInt3831 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
-            if (class302.anInt3831 >= 0 && (class302.anInt3831 < Class239_Sub9.aClass105Array5933.length)) {
+            if (class302.anInt3831 >= 0 && (class302.anInt3831 < Class239_Sub9.aSpriteArray5933.length)) {
                 if (class302.anInt3840 == 1 || class302.anInt3840 == 10) {
                     class302.anInt3833 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
                     Class299.aClass348_Sub49_Sub2_3813.anInt7197 += 6;

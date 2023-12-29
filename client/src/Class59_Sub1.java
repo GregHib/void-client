@@ -22,7 +22,7 @@ class Class59_Sub1 extends Class59 {
     static int anInt5291;
     static int anInt5292;
     static int anInt5293;
-    static Class105[] aClass105Array5294;
+    static Sprite[] aSpriteArray5294;
     static int anInt5295;
     private byte[] aByteArray5296;
     static Class297 aClass297_5297;
@@ -141,7 +141,7 @@ class Class59_Sub1 extends Class59 {
     }
 
     public static void method553(int i) {
-        aClass105Array5294 = null;
+        aSpriteArray5294 = null;
         aClass351_5288 = null;
         if (i != 0) aClass297_5297 = null;
         aClass297_5297 = null;

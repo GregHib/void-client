@@ -5,7 +5,7 @@
 final class h extends FontRenderer implements Interface19 {
     long nativeid;
 
-    h(oa var_oa, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Class105[] class105s) {
+    h(oa var_oa, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
         super(var_oa, fontMetrics);
         byte[][] is = new byte[class207s.length][];
         int[] is_0_ = new int[class207s.length];

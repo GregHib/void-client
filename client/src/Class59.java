@@ -199,10 +199,10 @@ abstract class Class59 {
     static final void method549(byte i, Class348_Sub21 class348_sub21, ha var_ha, Class42 class42) {
         try {
             anInt1080++;
-            Class105 class105 = class42.method375(var_ha, false);
-            if (class105 != null) {
-                int i_56_ = class105.method971();
-                if (i_56_ < class105.method969()) i_56_ = class105.method969();
+            Sprite sprite = class42.method375(var_ha, false);
+            if (sprite != null) {
+                int i_56_ = sprite.method971();
+                if (i_56_ < sprite.method969()) i_56_ = sprite.method969();
                 int i_57_ = 10;
                 int i_58_ = class348_sub21.anInt6853;
                 int i_59_ = class348_sub21.anInt6855;
@@ -238,7 +238,7 @@ abstract class Class59 {
                     i_66_ = -(i_56_ / 2) + Class75.anInt1268 - (i_57_ - -i_62_);
                 }
                 int i_67_ = (int) (32767.0 * (Math.atan2(i_58_ - (class348_sub21.anInt6853), -(class348_sub21.anInt6855) + i_59_) / 3.141592653589793)) & 0xffff;
-                class105.method981((float) i_56_ / 2.0F + (float) i_58_, (float) i_56_ / 2.0F + (float) i_59_, 4096, i_67_);
+                sprite.method981((float) i_56_ / 2.0F + (float) i_58_, (float) i_56_ / 2.0F + (float) i_59_, 4096, i_67_);
                 int i_68_ = -2;
                 int i_69_ = -2;
                 int i_70_ = -2;

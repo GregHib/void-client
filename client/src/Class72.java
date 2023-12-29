@@ -3,47 +3,47 @@
  */
 
 final class Class72 {
-    private static Class105 aClass105_1215;
+    private static Sprite aSprite_1215;
     private final int anInt1216;
     private int anInt1217;
     private final int anInt1218;
     private int anInt1219;
     private int anInt1220;
-    private Class105 aClass105_1221;
+    private Sprite aSprite_1221;
     private final int anInt1222;
     private final boolean aBoolean1223;
     private final int anInt1224;
     private final int anInt1225;
     private static int[] anIntArray1226 = new int[4];
     private static Class64 aClass64_1227;
-    private static Class105 aClass105_1228;
+    private static Sprite aSprite_1228;
     private final int anInt1229;
     private final int anInt1230;
     private int anInt1231;
     int anInt1232;
 
     private final boolean method730(ha var_ha, Class72 class72_0_) {
-        if (aClass105_1221 == null) {
+        if (aSprite_1221 == null) {
             if (anInt1230 == 0) {
                 if (Class101_Sub1.aD5684.method4(-7953, anInt1224)) {
                     int[] is = Class101_Sub1.aD5684.method6(-21540, anInt1220, 0.7F, anInt1224, false, anInt1220);
-                    aClass105_1221 = var_ha.method3662(anInt1220, is, (byte) 94, 0, anInt1220, anInt1220);
+                    aSprite_1221 = var_ha.method3662(anInt1220, is, (byte) 94, 0, anInt1220, anInt1220);
                 }
             } else if (anInt1230 == 2) method740(var_ha, class72_0_);
             else if (anInt1230 == 1) method735(var_ha, class72_0_);
         }
-        return aClass105_1221 != null;
+        return aSprite_1221 != null;
     }
 
     public static void method731() {
         aClass64_1227 = null;
-        aClass105_1215 = null;
-        aClass105_1228 = null;
+        aSprite_1215 = null;
+        aSprite_1228 = null;
         anIntArray1226 = null;
     }
 
     private static final void method732(ha var_ha) {
-        if (aClass105_1228 == null) {
+        if (aSprite_1228 == null) {
             int[] is = new int[16384];
             int[] is_1_ = new int[16384];
             for (int i = 0; i < 64; i++) {
@@ -65,8 +65,8 @@ final class Class72 {
                     is[i_4_ + i_6_] = is[i_4_ + i_8_] = is[i_5_ + i_6_] = is[i_5_ + i_8_] = 127 - i_10_ << 24 | 0xffffff;
                 }
             }
-            aClass105_1228 = var_ha.method3662(128, is_1_, (byte) 94, 0, 128, 128);
-            aClass105_1215 = var_ha.method3662(128, is, (byte) 94, 0, 128, 128);
+            aSprite_1228 = var_ha.method3662(128, is_1_, (byte) 94, 0, 128, 128);
+            aSprite_1215 = var_ha.method3662(128, is, (byte) 94, 0, 128, 128);
         }
     }
 
@@ -97,7 +97,7 @@ final class Class72 {
             anInt1217 = anInt1218 * i_13_ / (aBoolean1223 ? 1024 : this.anInt1232);
         } else anInt1217 = 0;
         if (anInt1217 < 8) {
-            aClass105_1221 = null;
+            aSprite_1221 = null;
             return false;
         }
         int i_18_ = Class33.method340(anInt1217, (byte) 108);
@@ -106,12 +106,12 @@ final class Class72 {
         if (i_18_ != anInt1220) anInt1220 = i_18_;
         anInt1231 = (int) (Math.asin((float) i_15_ / 256.0F) * 2607.5945876176133) & 0x3fff;
         anInt1219 = (int) (Math.atan2(i_14_, -i_16_) * 2607.5945876176133) & 0x3fff;
-        aClass105_1221 = null;
+        aSprite_1221 = null;
         return true;
     }
 
     final void method734() {
-        aClass105_1221 = null;
+        aSprite_1221 = null;
     }
 
     private final void method735(ha var_ha, Class72 class72_19_) {
@@ -162,28 +162,28 @@ final class Class72 {
         class64.method608(class101, null, 1024, 1);
         int i_29_ = anInt1220 * 13 / 16;
         int i_30_ = (anInt1220 - i_29_) / 2;
-        aClass105_1215.method970(i_30_, i_30_, i_29_, i_29_, 0, ~0xffffff | anInt1222, 1);
-        aClass105_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
+        aSprite_1215.method970(i_30_, i_30_, i_29_, i_29_, 0, ~0xffffff | anInt1222, 1);
+        aSprite_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
         var_ha.ya();
         var_ha.aa(0, 0, anInt1220, anInt1220, 0, 0);
-        aClass105_1228.method970(0, 0, anInt1220, anInt1220, 1, 0, 0);
-        aClass105_1221.method968(0, 0, 0);
+        aSprite_1228.method970(0, 0, anInt1220, anInt1220, 1, 0, 0);
+        aSprite_1221.method968(0, 0, 0);
         var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
     }
 
     final boolean method736(ha var_ha, Class72 class72_31_) {
-        return aClass105_1221 != null || method730(var_ha, class72_31_);
+        return aSprite_1221 != null || method730(var_ha, class72_31_);
     }
 
     final void method737(ha var_ha, int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_) {
-        if (aClass105_1221 != null) {
+        if (aSprite_1221 != null) {
             int i_37_ = anInt1231 - i_35_ & 0x3fff;
             int i_38_ = anInt1219 - i_36_ & 0x3fff;
             if (i_38_ > 8192) i_38_ -= 16384;
             if (i_37_ > 8192) i_37_ -= 16384;
             int i_39_ = i_37_ * i_34_ / 4096 + (i_34_ - anInt1217) / 2;
             int i_40_ = i_38_ * i_34_ / -4096 + (i_33_ - anInt1217) / 2;
-            if (i_39_ < i_34_ && i_39_ + anInt1217 > 0 && i_40_ < i_33_ && i_40_ + anInt1217 > 0) aClass105_1221.method973(i_40_ + i, i_39_ + i_32_, anInt1217, anInt1217);
+            if (i_39_ < i_34_ && i_39_ + anInt1217 > 0 && i_40_ < i_33_ && i_40_ + anInt1217 > 0) aSprite_1221.method973(i_40_ + i, i_39_ + i_32_, anInt1217, anInt1217);
         }
     }
 
@@ -229,7 +229,7 @@ final class Class72 {
 
     static final void method739() {
         aClass64_1227 = null;
-        aClass105_1228 = null;
+        aSprite_1228 = null;
     }
 
     Class72(int i, int i_54_, int i_55_, int i_56_, int i_57_, int i_58_, int i_59_, boolean bool) {
@@ -292,8 +292,8 @@ final class Class72 {
             Class101 class101 = var_ha.method3705();
             class101.method894(0, 0, var_ha.i() - class64.HA());
             class64.method608(class101, null, var_ha.i(), 1);
-            aClass105_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
-            aClass105_1221.method968(0, 0, 3);
+            aSprite_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
+            aSprite_1221.method968(0, 0, 3);
             var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
         }
     }

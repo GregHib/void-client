@@ -17,7 +17,7 @@ final class Class264 {
     static int anInt3375;
     static int anInt3376;
     static int anInt3377;
-    static Class105[] aClass105Array3378;
+    static Sprite[] aSpriteArray3378;
 
     static final boolean method2015(int i, int i_0_, int i_1_) {
         anInt3375++;
@@ -52,7 +52,7 @@ final class Class264 {
     }
 
     public static void method2018(int i) {
-        aClass105Array3378 = null;
+        aSpriteArray3378 = null;
         aClass114_3371 = null;
         aClass114_3368 = null;
         if (i != 0) method2015(30, 1, -62);

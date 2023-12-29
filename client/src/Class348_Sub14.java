@@ -92,7 +92,7 @@ final class Class348_Sub14 extends Class348 {
             int[] is = new int[262144];
             for (int i_12_ = 0; is.length > i_12_; i_12_++)
                 is[i_12_] = -16777216;
-            Class108.aClass105_1664 = var_ha.method3662(512, is, (byte) 94, 0, 512, 512);
+            Class108.aSprite_1664 = var_ha.method3662(512, is, (byte) 94, 0, 512, 512);
             Class358.method3489(-3);
             int i_13_ = (((-10 + (238 + (int) (20.0 * Math.random())) << 8) + (-10 + (int) (Math.random() * 20.0) + 238 << 16) - (-(int) (Math.random() * 20.0) + -228)) | ~0xffffff);
             int i_14_ = (228 - -(int) (20.0 * Math.random()) << 16 | ~0xffffff);
@@ -156,7 +156,7 @@ final class Class348_Sub14 extends Class348 {
                         }
                     }
                     var_ha.aa(i_18_, i_19_, 4 * RuntimeException_Sub1.anInt4600, RuntimeException_Sub1.anInt4600 * 4, i_15_, 2);
-                    Class108.aClass105_1664.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(RuntimeException_Sub1.anInt4600 * 4)), RuntimeException_Sub1.anInt4600 * 4, 4 * RuntimeException_Sub1.anInt4600, i_18_, i_19_);
+                    Class108.aSprite_1664.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(RuntimeException_Sub1.anInt4600 * 4)), RuntimeException_Sub1.anInt4600 * 4, 4 * RuntimeException_Sub1.anInt4600, i_18_, i_19_);
                 }
             }
             var_ha.la();

@@ -53,7 +53,7 @@ final class ha_Sub1 extends ha {
     int anInt7510;
     float[] aFloatArray7511;
     private int anInt7512;
-    private Class105 aClass105_7513;
+    private Sprite aSprite_7513;
 
     final boolean method3695() {
         return true;
@@ -334,20 +334,20 @@ final class ha_Sub1 extends ha {
         if (i_94_ == -1) method3723(i, i_91_, i_92_, i_95_, class318_sub9_sub2.anInt8790, 1);
         else {
             if (anInt7512 != i_94_) {
-                Class105 class105 = (Class105) aClass60_7499.method583(i_94_, 117);
-                if (class105 == null) {
+                Sprite sprite = (Sprite) aClass60_7499.method583(i_94_, 117);
+                if (sprite == null) {
                     int[] is = method3719(i_94_);
                     if (is != null) {
                         int i_96_ = (method3727(i_94_) ? 64 : this.anInt7501);
-                        class105 = this.method3662(i_96_, is, (byte) 94, 0, i_96_, i_96_);
-                        aClass60_7499.method582(class105, i_94_, (byte) -121);
+                        sprite = this.method3662(i_96_, is, (byte) 94, 0, i_96_, i_96_);
+                        aClass60_7499.method582(sprite, i_94_, (byte) -121);
                     } else return;
                 }
                 anInt7512 = i_94_;
-                aClass105_7513 = class105;
+                aSprite_7513 = sprite;
             }
             i_93_++;
-            ((Class105_Sub3) aClass105_7513).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1);
+            ((Sprite_Sub3) aSprite_7513).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1);
         }
     }
 
@@ -712,7 +712,7 @@ final class ha_Sub1 extends ha {
         /* empty */
     }
 
-    final Class105 method3683(int i, int i_215_, int i_216_, int i_217_, boolean bool) {
+    final Sprite method3683(int i, int i_215_, int i_216_, int i_217_, boolean bool) {
         int[] is = new int[i_216_ * i_217_];
         int i_218_ = i_215_ * this.anInt7477 + i;
         int i_219_ = this.anInt7477 - i_216_;
@@ -722,8 +722,8 @@ final class ha_Sub1 extends ha {
                 is[i_221_ + i_222_] = this.anIntArray7483[i_218_++];
             i_218_ += i_219_;
         }
-        if (bool) return new Class105_Sub3_Sub3(this, is, i_216_, i_217_);
-        return new Class105_Sub3_Sub1(this, is, i_216_, i_217_);
+        if (bool) return new Sprite_Sub3_Sub3(this, is, i_216_, i_217_);
+        return new Sprite_Sub3_Sub1(this, is, i_216_, i_217_);
     }
 
     private final void method3717() {
@@ -971,7 +971,7 @@ final class ha_Sub1 extends ha {
     }
 
     final Interface4 method3634(Interface3 interface3, Interface13 interface13) {
-        return new Class49(this, (Class105) interface3, (Class216) interface13);
+        return new Class49(this, (Sprite) interface3, (Class216) interface13);
     }
 
     final void C(boolean bool) {
@@ -1327,18 +1327,18 @@ final class ha_Sub1 extends ha {
         if (i_379_ != 0 && i_380_ != 0) {
             if (i_382_ != 65535 && !(this.aD4579.method3(i_382_, -6662).aBoolean209)) {
                 if (anInt7512 != i_382_) {
-                    Class105 class105 = ((Class105) aClass60_7499.method583(i_382_, 97));
-                    if (class105 == null) {
+                    Sprite sprite = ((Sprite) aClass60_7499.method583(i_382_, 97));
+                    if (sprite == null) {
                         int[] is = method3719(i_382_);
                         if (is == null) return;
                         int i_386_ = (method3727(i_382_) ? 64 : this.anInt7501);
-                        class105 = this.method3662(i_386_, is, (byte) 94, 0, i_386_, i_386_);
-                        aClass60_7499.method582(class105, i_382_, (byte) -100);
+                        sprite = this.method3662(i_386_, is, (byte) 94, 0, i_386_, i_386_);
+                        aClass60_7499.method582(sprite, i_382_, (byte) -100);
                     }
                     anInt7512 = i_382_;
-                    aClass105_7513 = class105;
+                    aSprite_7513 = sprite;
                 }
-                ((Class105_Sub3) aClass105_7513).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ << 1, i_380_ << 1, i_384_, i_383_, i_385_, 1);
+                ((Sprite_Sub3) aSprite_7513).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ << 1, i_380_ << 1, i_384_, i_383_, i_385_, 1);
             } else method3723(i, i_377_, i_378_, i_379_, i_383_, i_385_);
         }
     }
@@ -1487,7 +1487,7 @@ final class ha_Sub1 extends ha {
         return false;
     }
 
-    final Class105 method3711(int[] is, int i, int i_422_, int i_423_, int i_424_, boolean bool) {
+    final Sprite method3711(int[] is, int i, int i_422_, int i_423_, int i_424_, boolean bool) {
         boolean bool_425_ = false;
         int i_426_ = i;
         while_229_:
@@ -1500,16 +1500,16 @@ final class ha_Sub1 extends ha {
                 }
             }
         }
-        if (bool_425_) return new Class105_Sub3_Sub3(this, is, i, i_422_, i_423_, i_424_, bool);
-        return new Class105_Sub3_Sub1(this, is, i, i_422_, i_423_, i_424_, bool);
+        if (bool_425_) return new Sprite_Sub3_Sub3(this, is, i, i_422_, i_423_, i_424_, bool);
+        return new Sprite_Sub3_Sub1(this, is, i, i_422_, i_423_, i_424_, bool);
     }
 
-    final Class105 method3691(Class207 class207, boolean bool) {
+    final Sprite method3691(Class207 class207, boolean bool) {
         int[] is = class207.anIntArray2697;
         byte[] is_430_ = class207.aByteArray2699;
         int i = class207.anInt2702;
         int i_431_ = class207.anInt2696;
-        Class105_Sub3 class105_sub3;
+        Sprite_Sub3 class105_sub3;
         if (bool && class207.aByteArray2695 == null) {
             int[] is_432_ = new int[is.length];
             byte[] is_433_ = new byte[i * i_431_];
@@ -1520,7 +1520,7 @@ final class ha_Sub1 extends ha {
             }
             for (int i_437_ = 0; i_437_ < is.length; i_437_++)
                 is_432_[i_437_] = is[i_437_];
-            class105_sub3 = new Class105_Sub3_Sub2(this, is_433_, is_432_, i, i_431_);
+            class105_sub3 = new Sprite_Sub3_Sub2(this, is_433_, is_432_, i, i_431_);
         } else {
             int[] is_438_ = new int[i * i_431_];
             byte[] is_439_ = class207.aByteArray2695;
@@ -1532,14 +1532,14 @@ final class ha_Sub1 extends ha {
                         is_438_[i_444_ + i_445_] = i_446_ != 0 ? ~0xffffff | i_446_ : 0;
                     }
                 }
-                class105_sub3 = new Class105_Sub3_Sub1(this, is_438_, i, i_431_);
+                class105_sub3 = new Sprite_Sub3_Sub1(this, is_438_, i, i_431_);
             } else {
                 for (int i_440_ = 0; i_440_ < i_431_; i_440_++) {
                     int i_441_ = i_440_ * i;
                     for (int i_442_ = 0; i_442_ < i; i_442_++)
                         is_438_[i_441_ + i_442_] = (is[is_430_[i_441_ + i_442_] & 0xff] | is_439_[i_441_ + i_442_] << 24);
                 }
-                class105_sub3 = new Class105_Sub3_Sub3(this, is_438_, i, i_431_);
+                class105_sub3 = new Sprite_Sub3_Sub3(this, is_438_, i, i_431_);
             }
         }
         class105_sub3.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
@@ -1741,9 +1741,9 @@ final class ha_Sub1 extends ha {
         }
     }
 
-    final Class105 method3629(int i, int i_519_, boolean bool) {
-        if (bool) return new Class105_Sub3_Sub3(this, i, i_519_);
-        return new Class105_Sub3_Sub1(this, i, i_519_);
+    final Sprite method3629(int i, int i_519_, boolean bool) {
+        if (bool) return new Sprite_Sub3_Sub3(this, i, i_519_);
+        return new Sprite_Sub3_Sub1(this, i, i_519_);
     }
 
     final void method3630(boolean bool) {

@@ -26,7 +26,7 @@ final class Class50_Sub2 extends Class50 {
     static final void method464(int i) {
         anInt5229++;
         Class334.anInt4155 = i;
-        Class108.aClass105_1664 = null;
+        Class108.aSprite_1664 = null;
     }
 
     Class50_Sub2(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {

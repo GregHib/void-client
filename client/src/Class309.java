@@ -5,7 +5,7 @@
 final class Class309 implements Interface7 {
     static int[] anIntArray4806;
     private final String aString4807;
-    static Class105 aClass105_4808;
+    static Sprite aSprite_4808;
     static int anInt4809;
     static int anInt4810;
     static int anInt4811;
@@ -89,7 +89,7 @@ final class Class309 implements Interface7 {
         anIntArray4822 = null;
         anIntArray4813 = null;
         anIntArray4817 = null;
-        aClass105_4808 = null;
+        aSprite_4808 = null;
         anIntArray4806 = null;
         anIntArray4812 = null;
     }

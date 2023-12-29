@@ -194,7 +194,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
             Class348_Sub42_Sub17.anIntArrayArray9678 = (new int[Class367_Sub4.anInt7319]
                     [Class348_Sub40_Sub3.anInt9109]);
             for (int i_24_ = 0; i_24_ < 4; i_24_++)
-                Class348_Sub45.aClass361Array7108[i_24_] = Class105_Sub1.method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319);
+                Class348_Sub45.aClass361Array7108[i_24_] = Sprite_Sub1.method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319);
             Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.anInt7319]
                     [Class348_Sub40_Sub3.anInt9109]);
             Class239.method1717(19278, Class348_Sub40_Sub3.anInt9109, Class367_Sub4.anInt7319, 4);

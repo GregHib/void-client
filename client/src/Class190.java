@@ -65,23 +65,23 @@ final class Class190 {
                 i_10_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class348_sub21.anInt6851 + (class42.anInt607 + -Class75.anInt1257)) / (Class75.anInt1277 - Class75.anInt1257)) + Class75.anInt1268);
                 i_7_ = (((-Class75.anInt1272 + Class75.anInt1276) * (-Class75.anInt1274 + class348_sub21.anInt6852 + class42.anInt603) / (-Class75.anInt1274 + Class75.anInt1265)) + Class75.anInt1272);
             }
-            Class105 class105 = null;
+            Sprite sprite = null;
             int i_11_ = 0;
             if (i > -29) aRectangleArray2554 = null;
             int i_12_ = 0;
             int i_13_ = 0;
             int i_14_ = 0;
             if (class42.anInt578 != -1) {
-                if (class348_sub21.aBoolean6848 && class42.anInt605 != -1) class105 = class42.method374(true, var_ha, (byte) 127);
-                else class105 = class42.method374(false, var_ha, (byte) 127);
-                if (class105 != null) {
-                    i_11_ = (class348_sub21.anInt6853 + -(class105.scaleWidth() - -1 >> 1));
-                    i_12_ = (class348_sub21.anInt6853 + (1 + class105.scaleWidth() >> 1));
+                if (class348_sub21.aBoolean6848 && class42.anInt605 != -1) sprite = class42.method374(true, var_ha, (byte) 127);
+                else sprite = class42.method374(false, var_ha, (byte) 127);
+                if (sprite != null) {
+                    i_11_ = (class348_sub21.anInt6853 + -(sprite.scaleWidth() - -1 >> 1));
+                    i_12_ = (class348_sub21.anInt6853 + (1 + sprite.scaleWidth() >> 1));
                     if (i_11_ < i_7_) i_7_ = i_11_;
                     if (i_12_ > i_8_) i_8_ = i_12_;
-                    i_13_ = (class348_sub21.anInt6855 - (class105.method980() - -1 >> 1));
+                    i_13_ = (class348_sub21.anInt6855 - (sprite.method980() - -1 >> 1));
                     if (i_13_ < i_9_) i_9_ = i_13_;
-                    i_14_ = (class348_sub21.anInt6855 + (1 + class105.method980() >> 1));
+                    i_14_ = (class348_sub21.anInt6855 + (1 + sprite.method980() >> 1));
                     if (i_14_ > i_10_) i_10_ = i_14_;
                 }
             }
@@ -100,8 +100,8 @@ final class Class190 {
                     i_15_ = (Class258_Sub1.aFontMetrics_8527.splitLines(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
                     i_17_ = (class348_sub21.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)));
                     i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)));
-                    if (class105 == null) i_17_ -= i_15_ * class323.method2560() / 2;
-                    else i_17_ -= ((class105.method980() >> 1) - -(i_15_ * class323.method2565()));
+                    if (sprite == null) i_17_ -= i_15_ * class323.method2560() / 2;
+                    else i_17_ -= ((sprite.method980() >> 1) - -(i_15_ * class323.method2565()));
                     for (int i_23_ = 0; i_15_ > i_23_; i_23_++) {
                         String string = ha_Sub3.aStringArray8019[i_23_];
                         if (i_23_ < -1 + i_15_) string = string.substring(0, -4 + string.length());
@@ -120,19 +120,19 @@ final class Class190 {
             }
             if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true;
             Class75.method745(var_ha, class348_sub21, class42);
-            if (class105 != null) {
+            if (sprite != null) {
                 if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)))) {
                     int i_25_;
                     if (Class164.anInt2173 <= 50) i_25_ = 2 * Class164.anInt2173;
                     else i_25_ = -(Class164.anInt2173 * 2) + 200;
                     int i_26_ = 0xffff00 | i_25_ << 24;
-                    var_ha.method3656((byte) -105, i_26_, class105.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -120, i_26_, class105.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -126, i_26_, 3 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -112, i_26_, 1 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -123, i_26_, class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_ha.method3656((byte) -105, i_26_, sprite.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_ha.method3656((byte) -120, i_26_, sprite.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_ha.method3656((byte) -126, i_26_, 3 + sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_ha.method3656((byte) -112, i_26_, 1 + sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_ha.method3656((byte) -123, i_26_, sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
                 }
-                class105.method974((class348_sub21.anInt6853 + -(class105.scaleWidth() >> 1)), (class348_sub21.anInt6855 + -(class105.method980() >> 1)));
+                sprite.method974((class348_sub21.anInt6853 + -(sprite.scaleWidth() >> 1)), (class348_sub21.anInt6855 + -(sprite.method980() >> 1)));
             }
             if (class42.aString597 != null && class323 != null) Class342.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_ha, i_17_, i_18_, class42);
             if (class42.anInt578 != -1 || class42.aString597 != null) {

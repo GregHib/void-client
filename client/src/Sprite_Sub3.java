@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class105_Sub3 extends Class105 {
+abstract class Sprite_Sub3 extends Sprite {
     static int anInt8450;
     static int anInt8451;
     static int anInt8452;
@@ -137,7 +137,7 @@ abstract class Class105_Sub3 extends Class105 {
         return (this.anInt8464 + this.anInt8470 + this.anInt8456);
     }
 
-    Class105_Sub3(ha_Sub1 var_ha_Sub1, int i, int i_55_) {
+    Sprite_Sub3(ha_Sub1 var_ha_Sub1, int i, int i_55_) {
         this.aHa_Sub1_8460 = var_ha_Sub1;
         this.anInt8471 = i;
         this.anInt8470 = i_55_;

@@ -76,8 +76,8 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
                     boolean[][] bools = Class348_Sub8.aBooleanArrayArray6656;
                     if (Class348_Sub40_Sub17.aBoolean9242) {
                         if (Class348_Sub40_Sub5.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751[i_7_];
-                        for (int i_10_ = Class105_Sub1.anInt8412; i_10_ < i_8_; i_10_++) {
-                            int i_11_ = (i_10_ + Class37.anInt492 - Class105_Sub1.anInt8412);
+                        for (int i_10_ = Sprite_Sub1.anInt8412; i_10_ < i_8_; i_10_++) {
+                            int i_11_ = (i_10_ + Class37.anInt492 - Sprite_Sub1.anInt8412);
                             for (int i_12_ = Class240.anInt4686; i_12_ < i_9_; i_12_++) {
                                 bools[i_10_][i_12_] = false;
                                 if (Class99.aBooleanArrayArray1572[i_10_][i_12_]) {
@@ -107,8 +107,8 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
                     boolean[][] bools = Class348_Sub8.aBooleanArrayArray6656;
                     if (Class348_Sub40_Sub17.aBoolean9242) {
                         if (Class348_Sub40_Sub5.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751[i_7_];
-                        for (int i_18_ = Class105_Sub1.anInt8412; i_18_ < i_16_; i_18_++) {
-                            int i_19_ = (i_18_ + Class37.anInt492 - Class105_Sub1.anInt8412);
+                        for (int i_18_ = Sprite_Sub1.anInt8412; i_18_ < i_16_; i_18_++) {
+                            int i_19_ = (i_18_ + Class37.anInt492 - Sprite_Sub1.anInt8412);
                             for (int i_20_ = Class240.anInt4686; i_20_ < i_17_; i_20_++) {
                                 bools[i_18_][i_20_] = (Class99.aBooleanArrayArray1572[i_18_][i_20_]) && !aa_Sub2.method164(i_7_, i_19_, (byte) -97, (i_20_ + (Class348_Sub34.anInt6974) - (Class240.anInt4686)));
                             }

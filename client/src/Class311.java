@@ -70,16 +70,16 @@ final class Class311 implements Runnable {
                             i = 0xffffff | i << 24;
                             Class140.method1170((byte) -121);
                             Class348_Sub8.aHa6654.GA(0);
-                            Class105 class105 = (Class348_Sub8.aHa6654.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true));
-                            Class348_Sub8.aHa6654.method3681(class105, 0);
+                            Sprite sprite = (Class348_Sub8.aHa6654.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true));
+                            Class348_Sub8.aHa6654.method3681(sprite, 0);
                             anInterface16_3919.method58(true, -126);
                             Class348_Sub8.aHa6654.method3672();
-                            class105.method964(0, 0, 0, i_2_, 1);
-                            Class348_Sub8.aHa6654.method3681(class105, 0);
+                            sprite.method964(0, 0, 0, i_2_, 1);
+                            Class348_Sub8.aHa6654.method3681(sprite, 0);
                             Class348_Sub8.aHa6654.GA(0);
                             anInterface16_3907.method58(true, -114);
                             Class348_Sub8.aHa6654.method3672();
-                            class105.method964(0, 0, 0, i, 1);
+                            sprite.method964(0, 0, 0, i, 1);
                         } else {
                             if (anInterface16_3919 != null) {
                                 aBoolean3908 = true;

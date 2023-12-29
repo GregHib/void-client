@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class105_Sub1 extends Class105 {
+final class Sprite_Sub1 extends Sprite {
     static int anInt8390;
     private final boolean aBoolean8391;
     static int anInt8392;
@@ -455,7 +455,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3879(-8629);
     }
 
-    Class105_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_118_, boolean bool) {
+    Sprite_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_118_, boolean bool) {
         aBoolean8418 = false;
         anInt8400 = 0;
         anInt8417 = i_118_;
@@ -469,7 +469,7 @@ final class Class105_Sub1 extends Class105 {
         aBoolean8391 = !aBoolean8408 && anInterface18_Impl3_8403.method73(119);
     }
 
-    Class105_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_119_, int[] is, int i_120_, int i_121_) {
+    Sprite_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_119_, int[] is, int i_120_, int i_121_) {
         aBoolean8418 = false;
         anInt8400 = 0;
         try {

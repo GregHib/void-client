@@ -44,7 +44,7 @@ abstract class ha {
 
     abstract void method3628(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_);
 
-    abstract Class105 method3629(int i, int i_14_, boolean bool);
+    abstract Sprite method3629(int i, int i_14_, boolean bool);
 
     abstract int[] Y();
 
@@ -172,7 +172,7 @@ abstract class ha {
 
     abstract aa method3661(int i, int i_82_, int[] is, int[] is_83_);
 
-    final Class105 method3662(int i, int[] is, byte i_84_, int i_85_, int i_86_, int i_87_) {
+    final Sprite method3662(int i, int[] is, byte i_84_, int i_85_, int i_86_, int i_87_) {
         anInt4565++;
         if (i_84_ != 94) return null;
         return method3711(is, i_85_, i_86_, i, i_87_, true);
@@ -256,15 +256,15 @@ abstract class ha {
         aClass351_4571 = null;
     }
 
-    final void method3681(Class105 class105, int i) {
-        method3687(method3634(class105, method3624(class105.method971(), class105.method969())));
+    final void method3681(Sprite sprite, int i) {
+        method3687(method3634(sprite, method3624(sprite.method971(), sprite.method969())));
         anInt4561++;
         if (i != 0) DA(-75, -67, 18, -116);
     }
 
     abstract boolean method3682();
 
-    abstract Class105 method3683(int i, int i_143_, int i_144_, int i_145_, boolean bool);
+    abstract Sprite method3683(int i, int i_143_, int i_144_, int i_145_, boolean bool);
 
     abstract void method3684(Class98 class98);
 
@@ -297,7 +297,7 @@ abstract class ha {
 
     abstract Class348_Sub1 method3690(int i, int i_164_, int i_165_, int i_166_, int i_167_, float f);
 
-    abstract Class105 method3691(Class207 class207, boolean bool);
+    abstract Sprite method3691(Class207 class207, boolean bool);
 
     static final synchronized ha method3692(int i, int i_168_, int i_169_, Class45 class45, int i_170_, d var_d, Canvas canvas, int i_171_) {
         try {
@@ -366,7 +366,7 @@ abstract class ha {
 
     abstract void method3710();
 
-    abstract Class105 method3711(int[] is, int i, int i_212_, int i_213_, int i_214_, boolean bool);
+    abstract Sprite method3711(int[] is, int i, int i_212_, int i_213_, int i_214_, boolean bool);
 
     ha(d var_d) {
         this.aD4579 = var_d;

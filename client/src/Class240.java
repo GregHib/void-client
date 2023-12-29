@@ -10,7 +10,7 @@ final class Class240 implements Interface1 {
     static int anInt4676;
     static int anInt4677;
     static int anInt4678;
-    static Class105[] aClass105Array4679;
+    static Sprite[] aSpriteArray4679;
     static int anInt4680;
     static int anInt4681;
     private final Class339 aClass339_4682;
@@ -42,7 +42,7 @@ final class Class240 implements Interface1 {
     }
 
     public static void method1853(byte i) {
-        aClass105Array4679 = null;
+        aSpriteArray4679 = null;
         if (i != 48) anInt4674 = -62;
         aClass323_4672 = null;
         aFontRenderer_4684 = null;

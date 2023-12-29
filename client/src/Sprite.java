@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class105 implements Interface3 {
+abstract class Sprite implements Interface3 {
     private final void method961(float f, float f_0_, float f_1_, float f_2_, int i, int i_3_, int i_4_, int i_5_, int i_6_) {
         if (i != 0) {
             double d = (double) (i_3_ & 0xffff) * 9.587379924285257E-5;
@@ -95,7 +95,7 @@ abstract class Class105 implements Interface3 {
 
     abstract void method984(int[] is);
 
-    public Class105() {
+    public Sprite() {
         /* empty */
     }
 

@@ -18,7 +18,7 @@ final class Class239_Sub24 extends Class239 {
     static int anInt6094;
     static int anInt6095;
     static Class60 aClass60_6096 = new Class60(8);
-    static Class105 aClass105_6097;
+    static Sprite aSprite_6097;
     static Class299 aClass299_6098;
 
     final void method1712(int i, int i_0_) {
@@ -46,7 +46,7 @@ final class Class239_Sub24 extends Class239 {
     public static void method1822(byte i) {
         aClass114_6089 = null;
         aClass60_6096 = null;
-        aClass105_6097 = null;
+        aSprite_6097 = null;
         aStringArrayArray6093 = null;
         aClass299_6098 = null;
         if (i != 110) aClass299_6098 = null;

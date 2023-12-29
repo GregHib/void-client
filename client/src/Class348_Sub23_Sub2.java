@@ -20,7 +20,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     static int anInt9017;
     private long aLong9018;
     private GranulePos aGranulePos9019;
-    private Class105 aClass105_9020;
+    private Sprite aSprite_9020;
     static int anInt9021;
     static int anInt9022;
     static double aDouble9023;
@@ -51,13 +51,13 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
         aClass187_9036 = null;
     }
 
-    final Class105 method2975(ha var_ha, int i) {
+    final Sprite method2975(ha var_ha, int i) {
         anInt9026++;
         if (aFrame9024 == null) return null;
-        if (!aBoolean9014 && aClass105_9020 != null) return aClass105_9020;
-        aClass105_9020 = var_ha.method3711(aFrame9024.pixels, i, aFrame9024.a, aFrame9024.a, aFrame9024.b, false);
+        if (!aBoolean9014 && aSprite_9020 != null) return aSprite_9020;
+        aSprite_9020 = var_ha.method3711(aFrame9024.pixels, i, aFrame9024.a, aFrame9024.a, aFrame9024.b, false);
         aBoolean9014 = false;
-        return aClass105_9020;
+        return aSprite_9020;
     }
 
     Class348_Sub23_Sub2(OggStreamState oggstreamstate) {
@@ -104,7 +104,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
             if (anInt9009 < 0) anInt9009 = 0;
             aDecoderContext9032.setPostProcessingLevel(anInt9009);
         }
-        if (i_0_ > -127) aClass105_9020 = null;
+        if (i_0_ > -127) aSprite_9020 = null;
     }
 
     final long method2979(int i) {

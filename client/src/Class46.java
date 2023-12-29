@@ -738,13 +738,13 @@ final class Class46 {
         }
     }
 
-    final Class105 method443(ha var_ha, byte i) {
+    final Sprite method443(ha var_ha, byte i) {
         anInt819++;
         Class348_Sub42_Sub13.aBoolean9616 = false;
         long l = (((long) this.anInt809 << 40) + (((this.aBoolean790 ? 1L : 0L) << 38) + (((long) this.anInt672 << 36) + ((this.aBoolean745 ? 1L : 0L) << 35))) + ((long) this.anInt756 + ((!this.aBoolean735 ? 0L : 1L) << 39)));
-        Class105 class105 = (Class105) Class351.aClass60_4327.method583(l, -71);
+        Sprite sprite = (Sprite) Class351.aClass60_4327.method583(l, -71);
         if (i > -27) method434(true);
-        if (class105 != null) return class105;
+        if (sprite != null) return sprite;
         Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755, this.anInt756, 0);
         if (class207 == null) {
             Class348_Sub42_Sub13.aBoolean9616 = true;
@@ -757,9 +757,9 @@ final class Class46 {
         if (this.anInt672 >= 1) class207.method1515(1);
         if (this.anInt672 >= 2) class207.method1515(16777215);
         if (this.anInt809 != 0) class207.method1511(~0xffffff | this.anInt809);
-        class105 = var_ha.method3691(class207, true);
-        Class351.aClass60_4327.method580(31902, class105, l, (class105.method971() * class105.method969() * 4));
-        return class105;
+        sprite = var_ha.method3691(class207, true);
+        Class351.aClass60_4327.method580(31902, sprite, l, (sprite.method971() * sprite.method969() * 4));
+        return sprite;
     }
 
     final Class305 method444(boolean bool, Class25 class25, Class84 class84) {

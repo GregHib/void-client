@@ -1732,7 +1732,7 @@ final class Class64_Sub3 extends Class64 {
                 aShortArray5649 = null;
                 anIntArray5528 = null;
             }
-            if (aByteArray5594 != null && !Class105_Sub1.method989(anInt5648, -385, anInt5556)) {
+            if (aByteArray5594 != null && !Sprite_Sub1.method989(anInt5648, -385, anInt5556)) {
                 if (aClass123_5563 == null) {
                     if (aClass123_5610 == null || (aClass123_5610.anInterface2_1811 != null)) {
                         aByteArray5594 = null;

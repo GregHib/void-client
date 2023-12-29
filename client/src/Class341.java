@@ -11,7 +11,7 @@ final class Class341 {
     static int anInt4231;
     static int anInt4232;
     static int[][] anIntArrayArray4233 = new int[6][];
-    static Class105[] aClass105Array4234;
+    static Sprite[] aSpriteArray4234;
     static int anInt4235;
     static Class124[] aClass124Array4236 = new Class124[4];
     static int anInt4237;
@@ -42,7 +42,7 @@ final class Class341 {
         anIntArrayArray4233 = null;
         aClass348_Sub24_4226 = null;
         if (i >= 93) {
-            aClass105Array4234 = null;
+            aSpriteArray4234 = null;
             aClass124Array4236 = null;
         }
     }
