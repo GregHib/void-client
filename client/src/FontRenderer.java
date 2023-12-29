@@ -138,7 +138,7 @@ abstract class FontRenderer {
                 if (i_31_ <= 0) i_31_ = 1;
             }
             if (i_31_ > 0 && i_31_ <= i_34_) {
-                Class156.aStringArray2113[i_31_ - 1] = aFontMetrics_4063.fitText(sprites, i_25_, (Class156.aStringArray2113[i_31_ - 1]), (byte) 55);
+                Class156.aStringArray2113[i_31_ - 1] = aFontMetrics_4063.truncateString(sprites, i_25_, (Class156.aStringArray2113[i_31_ - 1]), (byte) 55);
                 i_34_ = i_31_;
             }
             if (i_26_ == 3 && i_34_ == 1) i_26_ = 1;
