@@ -109,8 +109,8 @@ final class Class267 {
                     i_1_ += class51.anInt923;
                     i_1_ &= 0x3;
                 } else i_1_ = 0;
-                Class105 class105 = class218.method1596(i_1_, class51.aBoolean925, 82, var_ha);
-                if (class105 != null) {
+                Sprite sprite = class218.method1596(i_1_, class51.aBoolean925, 82, var_ha);
+                if (sprite != null) {
                     int i_3_ = class51.anInt961;
                     int i_4_ = class51.anInt926;
                     int i_5_ = 60 % ((52 - i_2_) / 56);
@@ -118,14 +118,14 @@ final class Class267 {
                         i_3_ = class51.anInt926;
                         i_4_ = class51.anInt961;
                     }
-                    int i_6_ = class105.scaleWidth();
-                    int i_7_ = class105.method980();
+                    int i_6_ = sprite.scaleWidth();
+                    int i_7_ = sprite.method980();
                     if (class218.aBoolean2854) {
                         i_7_ = i_4_ * 4;
                         i_6_ = i_3_ * 4;
                     }
-                    if (class218.anInt2856 == 0) class105.method973(i, -((i_4_ + -1) * 4) + i_0_, i_6_, i_7_);
-                    else class105.method970(i, i_0_ - 4 * (-1 + i_4_), i_6_, i_7_, 0, (class218.anInt2856 | ~0xffffff), 1);
+                    if (class218.anInt2856 == 0) sprite.method973(i, -((i_4_ + -1) * 4) + i_0_, i_6_, i_7_);
+                    else sprite.method970(i, i_0_ - 4 * (-1 + i_4_), i_6_, i_7_, 0, (class218.anInt2856 | ~0xffffff), 1);
                 }
             }
         } catch (RuntimeException runtimeexception) {

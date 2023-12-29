@@ -29,7 +29,7 @@ abstract class FontRenderer {
     static int anInt4064;
     static int anInt4065;
 
-    private final void method2566(Class105[] icons, int[] heights, int x, int[] is_0_, int[] widths, int y, String string, int i_3_) {
+    private final void method2566(Sprite[] icons, int[] heights, int x, int[] is_0_, int[] widths, int y, String string, int i_3_) {
         try {
             y -= aFontMetrics_4063.verticalSpacing;
             anInt4058++;
@@ -65,7 +65,7 @@ abstract class FontRenderer {
                                                     else height = 0;
                                                     line++;
                                                     int id = (Class348_Sub41.parseInt(true, (tag.substring(4))));
-                                                    Class105 icon = icons[id];
+                                                    Sprite icon = icons[id];
                                                     int i_13_ = (is_0_ == null ? icon.method980() : is_0_[id]);
                                                     icon.method964(x + width, (-i_13_ + (aFontMetrics_4063.verticalSpacing) + (y - -height)), 1, 0, 1);
                                                     x += icons[id].scaleWidth();
@@ -111,19 +111,19 @@ abstract class FontRenderer {
         }
     }
 
-    final void method2567(int i, String string, byte i_17_, int i_18_, int i_19_, int i_20_, Class105[] class105s, int[] is) {
+    final void method2567(int i, String string, byte i_17_, int i_18_, int i_19_, int i_20_, Sprite[] sprites, int[] is) {
         try {
             anInt4056++;
             if (i_17_ > 114 && string != null) {
                 method2579(i_19_, -78, i_18_);
-                method2583(0, i, 0, class105s, null, string, is, 25625, i_20_);
+                method2583(0, i, 0, sprites, null, string, is, 25625, i_20_);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.R(" + i + ',' + (string != null ? "{...}" : "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (class105s != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.R(" + i + ',' + (string != null ? "{...}" : "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (sprites != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 
-    final int method2568(int[] is, int i, byte i_21_, aa var_aa, int i_22_, Class105[] class105s, int i_23_, int i_24_, int i_25_, int i_26_, String string, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_, int i_32_) {
+    final int method2568(int[] is, int i, byte i_21_, aa var_aa, int i_22_, Sprite[] sprites, int i_23_, int i_24_, int i_25_, int i_26_, String string, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_, int i_32_) {
         try {
             anInt4054++;
             if (string == null) return 0;
@@ -132,13 +132,13 @@ abstract class FontRenderer {
             int[] is_33_;
             if ((aFontMetrics_4063.bottomPadding + aFontMetrics_4063.topPadding - -i_32_) <= i || i_32_ + i_32_ <= i) is_33_ = new int[]{i_25_};
             else is_33_ = null;
-            int i_34_ = aFontMetrics_4063.splitLines(string, is_33_, Class156.aStringArray2113, (byte) 87, class105s);
+            int i_34_ = aFontMetrics_4063.splitLines(string, is_33_, Class156.aStringArray2113, (byte) 87, sprites);
             if (i_31_ == -1) {
                 i_31_ = i / i_32_;
                 if (i_31_ <= 0) i_31_ = 1;
             }
             if (i_31_ > 0 && i_31_ <= i_34_) {
-                Class156.aStringArray2113[i_31_ - 1] = aFontMetrics_4063.fitText(class105s, i_25_, (Class156.aStringArray2113[i_31_ - 1]), (byte) 55);
+                Class156.aStringArray2113[i_31_ - 1] = aFontMetrics_4063.fitText(sprites, i_25_, (Class156.aStringArray2113[i_31_ - 1]), (byte) 55);
                 i_34_ = i_31_;
             }
             if (i_26_ == 3 && i_34_ == 1) i_26_ = 1;
@@ -154,19 +154,19 @@ abstract class FontRenderer {
                 } else i_36_ = (-aFontMetrics_4063.bottomPadding + i + (i_24_ - (i_34_ + -1) * i_32_));
             } else i_36_ = ((-aFontMetrics_4063.bottomPadding + (-aFontMetrics_4063.topPadding + i + -(i_32_ * (-1 + i_34_)))) / 2 + (aFontMetrics_4063.topPadding + i_24_));
             for (int i_38_ = 0; i_38_ < i_34_; i_38_++) {
-                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113[i_38_], is, 25625, i_28_);
-                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113[i_38_], is, 25625, (-aFontMetrics_4063.width(true, (Class156.aStringArray2113[i_38_])) + i_25_) / 2 + i_28_);
-                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113[i_38_], is, 25625, (-aFontMetrics_4063.width(true, (Class156.aStringArray2113[i_38_])) + (i_25_ + i_28_)));
+                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, sprites, var_aa, Class156.aStringArray2113[i_38_], is, 25625, i_28_);
+                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, sprites, var_aa, Class156.aStringArray2113[i_38_], is, 25625, (-aFontMetrics_4063.width(true, (Class156.aStringArray2113[i_38_])) + i_25_) / 2 + i_28_);
+                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, sprites, var_aa, Class156.aStringArray2113[i_38_], is, 25625, (-aFontMetrics_4063.width(true, (Class156.aStringArray2113[i_38_])) + (i_25_ + i_28_)));
                 else if (i_38_ != i_34_ - 1) {
                     method2580(Class156.aStringArray2113[i_38_], 0, i_25_);
-                    method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113[i_38_], is, 25625, i_28_);
+                    method2583(i_27_, i_36_, i_22_, sprites, var_aa, Class156.aStringArray2113[i_38_], is, 25625, i_28_);
                     Class131.anInt1902 = 0;
-                } else method2583(i_27_, i_36_, i_22_, class105s, var_aa, Class156.aStringArray2113[i_38_], is, 25625, i_28_);
+                } else method2583(i_27_, i_36_, i_22_, sprites, var_aa, Class156.aStringArray2113[i_38_], is, 25625, i_28_);
                 i_36_ += i_32_;
             }
             return i_34_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.W(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_21_ + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_22_ + ',' + (class105s != null ? "{...}" : "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (string != null ? "{...}" : "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.W(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_21_ + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_22_ + ',' + (sprites != null ? "{...}" : "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (string != null ? "{...}" : "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
         }
     }
 
@@ -193,7 +193,7 @@ abstract class FontRenderer {
         return Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_][i_47_];
     }
 
-    final int method2571(int i, int i_48_, int[] is, String string, int i_49_, int i_50_, Class105[] class105s, int i_51_, int i_52_, Random random) {
+    final int method2571(int i, int i_48_, int[] is, String string, int i_49_, int i_50_, Sprite[] sprites, int i_51_, int i_52_, Random random) {
         try {
             anInt4047++;
             if (string == null) return 0;
@@ -208,10 +208,10 @@ abstract class FontRenderer {
                 is_55_[i_57_] = i_56_;
                 if ((0x3 & random.nextInt()) == 0) i_56_++;
             }
-            method2566(class105s, null, i_52_, is, is_55_, i_51_, string, 174);
+            method2566(sprites, null, i_52_, is, is_55_, i_51_, string, 174);
             return i_56_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (is != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + i_49_ + ',' + i_50_ + ',' + (class105s != null ? "{...}" : "null") + ',' + i_51_ + ',' + i_52_ + ',' + (random != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (is != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + i_49_ + ',' + i_50_ + ',' + (sprites != null ? "{...}" : "null") + ',' + i_51_ + ',' + i_52_ + ',' + (random != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -377,7 +377,7 @@ abstract class FontRenderer {
         }
     }
 
-    private final void method2583(int i, int i_103_, int i_104_, Class105[] class105s, aa var_aa, String string, int[] is, int i_105_, int i_106_) {
+    private final void method2583(int i, int i_103_, int i_104_, Sprite[] sprites, aa var_aa, String string, int[] is, int i_105_, int i_106_) {
         try {
             i_103_ -= aFontMetrics_4063.verticalSpacing;
             anInt4061++;
@@ -405,12 +405,12 @@ abstract class FontRenderer {
                                             if (tag.startsWith("img=")) {
                                                 try {
                                                     int i_112_ = (Class348_Sub41.parseInt(true, (tag.substring(4))));
-                                                    Class105 class105 = class105s[i_112_];
-                                                    int i_113_ = (is == null ? class105.method980() : is[i_112_]);
-                                                    if (((Class348_Sub42_Sub1.anInt9492) & ~0xffffff) != -16777216) class105.method964(i_106_, (-i_113_ + (aFontMetrics_4063.verticalSpacing) + i_103_), 0, (0xffffff | (~0xffffff & (Class348_Sub42_Sub1.anInt9492))), 1);
-                                                    else class105.method964(i_106_, ((aFontMetrics_4063.verticalSpacing) + (i_103_ - i_113_)), 1, 0, 1);
+                                                    Sprite sprite = sprites[i_112_];
+                                                    int i_113_ = (is == null ? sprite.method980() : is[i_112_]);
+                                                    if (((Class348_Sub42_Sub1.anInt9492) & ~0xffffff) != -16777216) sprite.method964(i_106_, (-i_113_ + (aFontMetrics_4063.verticalSpacing) + i_103_), 0, (0xffffff | (~0xffffff & (Class348_Sub42_Sub1.anInt9492))), 1);
+                                                    else sprite.method964(i_106_, ((aFontMetrics_4063.verticalSpacing) + (i_103_ - i_113_)), 1, 0, 1);
                                                     i_108_ = -1;
-                                                    i_106_ += class105s[i_112_].scaleWidth();
+                                                    i_106_ += sprites[i_112_].scaleWidth();
                                                 } catch (Exception exception) {
                                                     /* empty */
                                                 }
@@ -446,7 +446,7 @@ abstract class FontRenderer {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (class105s != null ? "{...}" : "null") + ',' + (var_aa != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + i_105_ + ',' + i_106_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (sprites != null ? "{...}" : "null") + ',' + (var_aa != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + i_105_ + ',' + i_106_ + ')'));
         }
     }
 
@@ -459,17 +459,17 @@ abstract class FontRenderer {
         }
     }
 
-    final int method2584(int[] is, int i, int i_115_, Class105[] class105s, int i_116_, int i_117_, int i_118_, aa var_aa, int i_119_, int i_120_, int i_121_, int i_122_, int i_123_, boolean bool, int i_124_, String string) {
+    final int method2584(int[] is, int i, int i_115_, Sprite[] sprites, int i_116_, int i_117_, int i_118_, aa var_aa, int i_119_, int i_120_, int i_121_, int i_122_, int i_123_, boolean bool, int i_124_, String string) {
         try {
             if (bool != false) method2570(-23, 41);
             anInt4057++;
-            return method2568(is, i_118_, (byte) 97, var_aa, i_120_, class105s, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i);
+            return method2568(is, i_118_, (byte) 97, var_aa, i_120_, sprites, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.J(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_115_ + ',' + (class105s != null ? "{...}" : "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (string != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.J(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_115_ + ',' + (sprites != null ? "{...}" : "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (string != null ? "{...}" : "null") + ')'));
         }
     }
 
-    final int method2585(int[] is, int i, Class105[] class105s, int i_125_, int i_126_, int i_127_, int i_128_, Random random, int i_129_, int i_130_, int i_131_, int i_132_, int i_133_, String string, int[] is_134_) {
+    final int method2585(int[] is, int i, Sprite[] sprites, int i_125_, int i_126_, int i_127_, int i_128_, Random random, int i_129_, int i_130_, int i_131_, int i_132_, int i_133_, String string, int[] is_134_) {
         try {
             anInt4050++;
             if (string == null) return 0;
@@ -496,7 +496,7 @@ abstract class FontRenderer {
                 i_142_ = aFontMetrics_4063.width(true, string) - -i_138_;
                 i_140_ += -i_142_ + i;
             }
-            method2566(class105s, null, i_140_, is, is_137_, i_141_, string, 174);
+            method2566(sprites, null, i_140_, is, is_137_, i_141_, string, 174);
             if (is_134_ != null) {
                 if (i_142_ == -1) i_142_ = aFontMetrics_4063.width(true, string) - -i_138_;
                 is_134_[2] = i_142_;
@@ -506,7 +506,7 @@ abstract class FontRenderer {
             }
             return i_138_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.P(" + (is != null ? "{...}" : "null") + ',' + i + ',' + (class105s != null ? "{...}" : "null") + ',' + i_125_ + ',' + i_126_ + ',' + i_127_ + ',' + i_128_ + ',' + (random != null ? "{...}" : "null") + ',' + i_129_ + ',' + i_130_ + ',' + i_131_ + ',' + i_132_ + ',' + i_133_ + ',' + (string != null ? "{...}" : "null") + ',' + (is_134_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.P(" + (is != null ? "{...}" : "null") + ',' + i + ',' + (sprites != null ? "{...}" : "null") + ',' + i_125_ + ',' + i_126_ + ',' + i_127_ + ',' + i_128_ + ',' + (random != null ? "{...}" : "null") + ',' + i_129_ + ',' + i_130_ + ',' + i_131_ + ',' + i_132_ + ',' + i_133_ + ',' + (string != null ? "{...}" : "null") + ',' + (is_134_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

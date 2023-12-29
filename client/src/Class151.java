@@ -28,10 +28,10 @@ final class Class151 {
         return i_1_ == 0 || i_1_ == 2;
     }
 
-    static final void method1211(int i, Class105 class105, int i_2_, Class46 class46, aa var_aa, int i_3_, int i_4_, int i_5_) {
+    static final void method1211(int i, Sprite sprite, int i_2_, Class46 class46, aa var_aa, int i_3_, int i_4_, int i_5_) {
         try {
             anInt2064++;
-            if (class105 != null) {
+            if (sprite != null) {
                 int i_6_;
                 if (Class348_Sub40_Sub21.anInt9282 != 4)
                     i_6_ = (0x3fff & (int) Class314.aFloat3938 - -r_Sub2.anInt10483);
@@ -47,11 +47,11 @@ final class Class151 {
                     }
                     int i_11_ = i_5_ * i_10_ + i_3_ * i_9_ >> 14;
                     int i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) >> 14;
-                    class105.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(class105.scaleWidth() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(class105.method980() / 2))), var_aa, i_2_, i);
+                    sprite.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(sprite.scaleWidth() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(sprite.method980() / 2))), var_aa, i_2_, i);
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ok.C(" + i + ',' + (class105 != null ? "{...}" : "null") + ',' + i_2_ + ',' + (class46 != null ? "{...}" : "null") + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ok.C(" + i + ',' + (sprite != null ? "{...}" : "null") + ',' + i_2_ + ',' + (class46 != null ? "{...}" : "null") + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'));
         }
     }
 

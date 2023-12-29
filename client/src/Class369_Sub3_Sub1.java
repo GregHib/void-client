@@ -66,16 +66,16 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
         return Class187.aClass223_2507;
     }
 
-    static final Class105 method3577(int i, byte i_10_, Class45 class45) {
+    static final Sprite method3577(int i, byte i_10_, Class45 class45) {
         anInt10176++;
-        Class105 class105 = (Class105) Class345.aClass60_4273.method583(i, -68);
+        Sprite sprite = (Sprite) Class345.aClass60_4273.method583(i, -68);
         int i_11_ = -86 / ((55 - i_10_) / 51);
-        if (class105 == null) {
-            if (Class286_Sub7.aBoolean6289) class105 = Class348_Sub8.aHa6654.method3691(Class207.method1512(class45, i), true);
-            else class105 = Class258_Sub3.method1969(class45.method415((byte) 73, i), -5901);
-            Class345.aClass60_4273.method582(class105, i, (byte) -108);
+        if (sprite == null) {
+            if (Class286_Sub7.aBoolean6289) sprite = Class348_Sub8.aHa6654.method3691(Class207.method1512(class45, i), true);
+            else sprite = Class258_Sub3.method1969(class45.method415((byte) 73, i), -5901);
+            Class345.aClass60_4273.method582(sprite, i, (byte) -108);
         }
-        return class105;
+        return sprite;
     }
 
     static final void method3578(byte i, Object object, Class297 class297) {

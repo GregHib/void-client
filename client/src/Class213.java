@@ -347,15 +347,15 @@ final class Class213 {
             Class64 class64 = var_ha_38_.method3625(class124, i_46_, 64, anInt2791 + 64, 768 + anInt2824);
             if (!class64.method618()) return null;
             if (bool_47_) class64.O(anInt2786, anInt2794, anInt2765);
-            Class105 class105 = null;
+            Sprite sprite = null;
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    class105 = (this.aClass255_2761.method1932(var_ha_38_, i_37_, i, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2778, false, i_41_));
-                    if (class105 == null) return null;
+                    sprite = (this.aClass255_2761.method1932(var_ha_38_, i_37_, i, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2778, false, i_41_));
+                    if (sprite == null) return null;
                 }
             } else {
-                class105 = (this.aClass255_2761.method1932(var_ha_38_, 0, 10, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2758, true, 1));
-                if (class105 == null) return null;
+                sprite = (this.aClass255_2761.method1932(var_ha_38_, 0, 10, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2758, true, 1));
+                if (sprite == null) return null;
             }
             int i_48_;
             if (!bool) {
@@ -390,8 +390,8 @@ final class Class213 {
             if (i_37_ != 0) method1571(i_37_, is, (byte) 119);
             var_ha_38_.method3662(36, is, (byte) 94, 0, 36, 32).method974(0, 0);
             if (this.anInt2833 == -1) {
-                if (this.anInt2812 != -1) class105.method974(0, 0);
-            } else class105.method974(0, 0);
+                if (this.anInt2812 != -1) sprite.method974(0, 0);
+            } else sprite.method974(0, 0);
             if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) fontRenderer.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15);
             is = var_ha_38_.na(0, 0, 36, 32);
             for (int i_52_ = 0; i_52_ < is.length; i_52_++) {

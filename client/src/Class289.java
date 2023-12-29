@@ -58,7 +58,7 @@ final class Class289 {
         anInt3696++;
         if (i != -1) return -42;
         String string = Class348_Sub15.method2812(i + -43, class348_sub42_sub13);
-        return Class369.aFontMetrics_4962.textWidth(string, Class341.aClass105Array4234, false);
+        return Class369.aFontMetrics_4962.textWidth(string, Class341.aSpriteArray4234, false);
     }
 
     static {

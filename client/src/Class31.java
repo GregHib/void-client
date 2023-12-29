@@ -31,28 +31,28 @@ final class Class31 {
     static int anInt445;
     static int anInt446;
 
-    final Class105 method324(ha var_ha, boolean bool) {
+    final Sprite method324(ha var_ha, boolean bool) {
         anInt440++;
         if (bool != true) return null;
         if (anInt429 < 0) return null;
-        Class105 class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt429, -62);
-        if (class105 == null) {
+        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt429, -62);
+        if (sprite == null) {
             method330(var_ha, -41);
-            class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt429, 53);
+            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt429, 53);
         }
-        return class105;
+        return sprite;
     }
 
-    final Class105 method325(ha var_ha, int i) {
+    final Sprite method325(ha var_ha, int i) {
         anInt428++;
         if (anInt439 < 0) return null;
-        Class105 class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt439, -59);
+        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt439, -59);
         if (i < 23) return null;
-        if (class105 == null) {
+        if (sprite == null) {
             method330(var_ha, -118);
-            class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt439, 123);
+            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt439, 123);
         }
-        return class105;
+        return sprite;
     }
 
     static final void method326(byte i) {
@@ -65,16 +65,16 @@ final class Class31 {
         }
     }
 
-    final Class105 method327(ha var_ha, byte i) {
+    final Sprite method327(ha var_ha, byte i) {
         anInt432++;
         if (anInt421 < 0) return null;
-        Class105 class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt421, 118);
-        if (class105 == null) {
+        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt421, 118);
+        if (sprite == null) {
             method330(var_ha, -66);
-            class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt421, 119);
+            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt421, 119);
         }
         int i_0_ = 20 % ((i - 19) / 51);
-        return class105;
+        return sprite;
     }
 
     public static void method328(int i) {
@@ -130,16 +130,16 @@ final class Class31 {
         }
     }
 
-    final Class105 method331(ha var_ha, byte i) {
+    final Sprite method331(ha var_ha, byte i) {
         anInt441++;
         if (anInt433 < 0) return null;
         int i_2_ = -84 % ((i - 32) / 35);
-        Class105 class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt433, -50);
-        if (class105 == null) {
+        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt433, -50);
+        if (sprite == null) {
             method330(var_ha, -89);
-            class105 = (Class105) this.aClass219_438.aClass60_2862.method583(anInt433, -117);
+            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt433, -117);
         }
-        return class105;
+        return sprite;
     }
 
     final void method332(int i, Class348_Sub49 class348_sub49) {

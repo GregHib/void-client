@@ -11,7 +11,7 @@ final class Class108 {
     static boolean aBoolean1661 = true;
     static Class304 aClass304_1662 = new Class304(4);
     static int anInt1663;
-    static Class105 aClass105_1664;
+    static Sprite aSprite_1664;
 
     static final float method1012(float f, float f_0_, float f_1_, float f_2_, int i, float f_3_, byte i_4_, float f_5_) {
         anInt1659++;
@@ -50,7 +50,7 @@ final class Class108 {
         aClass364_1657 = null;
         if (i < 111) method1013((byte) 17);
         aClass304_1662 = null;
-        aClass105_1664 = null;
+        aSprite_1664 = null;
     }
 
     static final void method1014(int i) {

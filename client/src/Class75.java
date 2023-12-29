@@ -536,10 +536,10 @@ class Class75 {
                 int i_123_ = class51.anInt875;
                 if (i_123_ != -1) {
                     Class218 class218 = aClass141_1242.method1173((byte) 31, i_123_);
-                    Class105 class105 = class218.method1596((class51.aBoolean912 ? is_121_[i_122_] >> 6 & 0x3 : 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha);
-                    if (class105 != null) {
-                        int i_124_ = i_119_ * class105.scaleWidth() >> 2;
-                        int i_125_ = i_120_ * class105.method980() >> 2;
+                    Sprite sprite = class218.method1596((class51.aBoolean912 ? is_121_[i_122_] >> 6 & 0x3 : 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha);
+                    if (sprite != null) {
+                        int i_124_ = i_119_ * sprite.scaleWidth() >> 2;
+                        int i_125_ = i_120_ * sprite.method980() >> 2;
                         if (class218.aBoolean2854) {
                             int i_126_ = class51.anInt961;
                             int i_127_ = class51.anInt926;
@@ -552,8 +552,8 @@ class Class75 {
                             i_125_ = i_127_ * i_120_;
                         }
                         if (i_124_ != 0 && i_125_ != 0) {
-                            if (class218.anInt2856 != 0) class105.method970(i, i_118_ - i_125_ + i_120_, i_124_, i_125_, 0, (~0xffffff | (class218.anInt2856)), 1);
-                            else class105.method973(i, i_118_ - i_125_ + i_120_, i_124_, i_125_);
+                            if (class218.anInt2856 != 0) sprite.method970(i, i_118_ - i_125_ + i_120_, i_124_, i_125_, 0, (~0xffffff | (class218.anInt2856)), 1);
+                            else sprite.method973(i, i_118_ - i_125_ + i_120_, i_124_, i_125_);
                         }
                     }
                 }

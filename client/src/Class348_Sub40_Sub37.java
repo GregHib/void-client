@@ -13,7 +13,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
     static int anInt9464;
     static long[] aLongArray9465;
     private int anInt9466 = 1;
-    static Class105[] aClass105Array9467;
+    static Sprite[] aSpriteArray9467;
 
     static final void method3146(int i, int i_0_, byte i_1_, int i_2_, int i_3_, int i_4_, byte[] is, byte[] is_5_, int i_6_) {
         try {
@@ -176,7 +176,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
         anIntArray9458 = null;
         aLongArray9465 = null;
         if (bool != true) method3146(79, -54, (byte) -128, -109, 85, -107, null, null, 58);
-        aClass105Array9467 = null;
+        aSpriteArray9467 = null;
     }
 
     static {

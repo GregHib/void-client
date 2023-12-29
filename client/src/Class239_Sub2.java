@@ -9,7 +9,7 @@ final class Class239_Sub2 extends Class239 {
     static int anInt5854;
     static int anInt5855;
     static int anInt5856;
-    static Class105[] aClass105Array5857;
+    static Sprite[] aSpriteArray5857;
 
     final int method1714(int i, int i_0_) {
         anInt5851++;
@@ -20,7 +20,7 @@ final class Class239_Sub2 extends Class239 {
     final void method1716(boolean bool) {
         anInt5854++;
         this.anInt3138 = method1710(20014);
-        if (bool != false) aClass105Array5857 = null;
+        if (bool != false) aSpriteArray5857 = null;
     }
 
     final int method1710(int i) {
@@ -35,8 +35,8 @@ final class Class239_Sub2 extends Class239 {
     }
 
     public static void method1724(int i) {
-        aClass105Array5857 = null;
-        if (i != -4) aClass105Array5857 = null;
+        aSpriteArray5857 = null;
+        if (i != -4) aSpriteArray5857 = null;
     }
 
     static final void method1725(int i) {
@@ -88,7 +88,7 @@ final class Class239_Sub2 extends Class239 {
 
     final int method1726(int i) {
         anInt5856++;
-        if (i != -32350) aClass105Array5857 = null;
+        if (i != -32350) aSpriteArray5857 = null;
         return this.anInt3138;
     }
 

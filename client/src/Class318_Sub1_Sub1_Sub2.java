@@ -172,11 +172,11 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
             if (class302 != null && class302.anInt3840 == 2) {
                 Class318_Sub5.method2505(i_9_ >> 1, 2 * class302.anInt3839, 0, i_12_, i_11_ >> 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835);
                 if (Class239_Sub21.anIntArray6062[0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
-                    Class105 class105 = (Class239_Sub9.aClass105Array5933[class302.anInt3831]);
+                    Sprite sprite = (Class239_Sub9.aSpriteArray5933[class302.anInt3831]);
                     int i_14_ = -12 + (i - -Class239_Sub21.anIntArray6062[0]);
                     int i_15_ = i_8_ - -Class239_Sub21.anIntArray6062[1] - 28;
-                    class105.method974(i_14_, i_15_);
-                    Class338.method2663(-5590, i_14_, i_14_ - -class105.scaleWidth(), i_15_, class105.method980() + i_15_);
+                    sprite.method974(i_14_, i_15_);
+                    Class338.method2663(-5590, i_14_, i_14_ - -sprite.scaleWidth(), i_15_, sprite.method980() + i_15_);
                 }
             }
         }

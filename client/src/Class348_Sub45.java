@@ -8,7 +8,7 @@ abstract class Class348_Sub45 extends Class348 {
     static int anInt7104;
     static Class114 aClass114_7105 = new Class114(101, 20);
     static Class114 aClass114_7106 = new Class114(36, -2);
-    static Class105[] aClass105Array7107;
+    static Sprite[] aSpriteArray7107;
     static Class361[] aClass361Array7108 = new Class361[4];
 
     abstract int method3308(byte i);
@@ -51,7 +51,7 @@ abstract class Class348_Sub45 extends Class348 {
         if (i != 5) method3313(-103, null);
         aClass114_7105 = null;
         aClass361Array7108 = null;
-        aClass105Array7107 = null;
+        aSpriteArray7107 = null;
         aClass304_7103 = null;
     }
 

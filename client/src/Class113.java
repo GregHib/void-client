@@ -8,7 +8,7 @@ final class Class113 {
     static int anInt1741;
     static int anInt1742;
     static Class45 aClass45_1743;
-    static Class105[] aClass105Array1744;
+    static Sprite[] aSpriteArray1744;
     static int anInt1745 = 100;
 
     public Class113() {
@@ -33,7 +33,7 @@ final class Class113 {
 
     public static void method1057(boolean bool) {
         aClass45_1743 = null;
-        aClass105Array1744 = null;
+        aSpriteArray1744 = null;
         if (bool != true) method1056(110, -57, '\uffd1');
     }
 }

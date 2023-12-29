@@ -46,22 +46,22 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
 
     static final void method2270(int i, int i_4_, ha var_ha, String string, boolean bool, int i_5_, int i_6_, int i_7_) {
         try {
-            if (OutputStream_Sub2.aClass105_106 == null || Class121.aClass105_1800 == null) {
+            if (OutputStream_Sub2.aSprite_106 == null || Class121.aSprite_1800 == null) {
                 if (Class21.aClass45_322.method421(false, Class231.anInt2996) && Class21.aClass45_322.method421(false, Class348_Sub40_Sub16.anInt9231)) {
-                    OutputStream_Sub2.aClass105_106 = (var_ha.method3691(Class207.method1521(Class21.aClass45_322, Class231.anInt2996, 0), true));
+                    OutputStream_Sub2.aSprite_106 = (var_ha.method3691(Class207.method1521(Class21.aClass45_322, Class231.anInt2996, 0), true));
                     Class207 class207 = Class207.method1521(Class21.aClass45_322, Class348_Sub40_Sub16.anInt9231, 0);
-                    Class121.aClass105_1800 = var_ha.method3691(class207, true);
+                    Class121.aSprite_1800 = var_ha.method3691(class207, true);
                     class207.method1518();
-                    Class348_Sub5.aClass105_6627 = var_ha.method3691(class207, true);
+                    Class348_Sub5.aSprite_6627 = var_ha.method3691(class207, true);
                 } else var_ha.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 << 24 | Class264.anInt3376), 1);
             }
             anInt8709++;
-            if (OutputStream_Sub2.aClass105_106 != null && Class121.aClass105_1800 != null) {
-                int i_8_ = ((i - 2 * Class121.aClass105_1800.method971()) / OutputStream_Sub2.aClass105_106.method971());
+            if (OutputStream_Sub2.aSprite_106 != null && Class121.aSprite_1800 != null) {
+                int i_8_ = ((i - 2 * Class121.aSprite_1800.method971()) / OutputStream_Sub2.aSprite_106.method971());
                 for (int i_9_ = 0; i_9_ < i_8_; i_9_++)
-                    OutputStream_Sub2.aClass105_106.method974((Class121.aClass105_1800.method971() + i_4_ + (OutputStream_Sub2.aClass105_106.method971() * i_9_)), i_5_);
-                Class121.aClass105_1800.method974(i_4_, i_5_);
-                Class348_Sub5.aClass105_6627.method974((-Class348_Sub5.aClass105_6627.method971() + i_4_ - -i), i_5_);
+                    OutputStream_Sub2.aSprite_106.method974((Class121.aSprite_1800.method971() + i_4_ + (OutputStream_Sub2.aSprite_106.method971() * i_9_)), i_5_);
+                Class121.aSprite_1800.method974(i_4_, i_5_);
+                Class348_Sub5.aSprite_6627.method974((-Class348_Sub5.aSprite_6627.method971() + i_4_ - -i), i_5_);
             }
             if (bool == false) {
                 Class262.aFontRenderer_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);

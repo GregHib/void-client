@@ -985,9 +985,9 @@ final class Class66 {
                 Class21.aClass45_322.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257);
                 Class21.aClass45_322.method421(false, Class313.anInt3937);
                 Class21.aClass45_322.method421(false, Class79.anInt1387);
-                Class348_Sub42_Sub15.aClass105_9659 = Class110.aClass105_1706 = Class174.aClass105_2309 = null;
-                OutputStream_Sub2.aClass105_106 = Class121.aClass105_1800 = Class348_Sub5.aClass105_6627 = null;
-                Class348_Sub42_Sub15.aClass105_9658 = Class309.aClass105_4808 = null;
+                Class348_Sub42_Sub15.aSprite_9659 = Class110.aSprite_1706 = Class174.aSprite_2309 = null;
+                OutputStream_Sub2.aSprite_106 = Class121.aSprite_1800 = Class348_Sub5.aSprite_6627 = null;
+                Class348_Sub42_Sub15.aSprite_9658 = Class309.aSprite_4808 = null;
                 Class71.aBoolean1211 = true;
                 return;
             }
@@ -4585,7 +4585,7 @@ final class Class66 {
                     int i_433_ = anIntArray1149[anInt1173];
                     int i_434_ = anIntArray1149[anInt1173 + 1];
                     FontMetrics fontMetrics = Class239_Sub23.method1819(i_434_, 0, -123, Class104.aClass45_1627);
-                    anIntArray1149[anInt1173++] = fontMetrics.splitLines(Class113.aClass105Array1744, 1, string, i_433_);
+                    anIntArray1149[anInt1173++] = fontMetrics.splitLines(Class113.aSpriteArray1744, 1, string, i_433_);
                     return;
                 }
                 if (i == 4109) {
@@ -4594,7 +4594,7 @@ final class Class66 {
                     int i_435_ = anIntArray1149[anInt1173];
                     int i_436_ = anIntArray1149[anInt1173 + 1];
                     FontMetrics fontMetrics = Class239_Sub23.method1819(i_436_, 0, -79, Class104.aClass45_1627);
-                    anIntArray1149[anInt1173++] = fontMetrics.lineWidth(string, false, i_435_, Class113.aClass105Array1744);
+                    anIntArray1149[anInt1173++] = fontMetrics.lineWidth(string, false, i_435_, Class113.aSpriteArray1744);
                     return;
                 }
                 if (i == 4110) {
@@ -4705,7 +4705,7 @@ final class Class66 {
                     String string = aStringArray1152[--anInt1170];
                     int i_455_ = anIntArray1149[--anInt1173];
                     FontMetrics fontMetrics = Class239_Sub23.method1819(i_455_, 0, -114, Class104.aClass45_1627);
-                    anIntArray1149[anInt1173++] = fontMetrics.textWidth(string, Class113.aClass105Array1744, false);
+                    anIntArray1149[anInt1173++] = fontMetrics.textWidth(string, Class113.aSpriteArray1744, false);
                     return;
                 }
             } else if (i < 4300) {

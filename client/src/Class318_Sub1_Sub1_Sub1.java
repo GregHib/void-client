@@ -19,7 +19,7 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
     static int anInt9956;
     static int anInt9957;
     static int anInt9958;
-    static Class105[] aClass105Array9959;
+    static Sprite[] aSpriteArray9959;
     static int anInt9960;
     static int anInt9961;
     static int anInt9962;
@@ -76,7 +76,7 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
 
     public static void method2398(byte i) {
         if (i != -83) anIntArray9949 = null;
-        aClass105Array9959 = null;
+        aSpriteArray9959 = null;
         anIntArray9949 = null;
     }
 
@@ -130,7 +130,7 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
     }
 
     final int method2379(int i) {
-        if (i != -25675) aClass105Array9959 = null;
+        if (i != -25675) aSpriteArray9959 = null;
         anInt9965++;
         return this.aClass235_9955.method1664(i ^ 0x647d);
     }

@@ -11,7 +11,7 @@ final class Class323 {
     private final int[] anIntArray4039;
     private int anInt4040;
     private int anInt4041;
-    private final Class105[] aClass105Array4042;
+    private final Sprite[] aSpriteArray4042;
     private static int[] anIntArray4043 = new int[256];
     private final int[] anIntArray4044 = new int[4];
 
@@ -63,7 +63,7 @@ final class Class323 {
         anInt4041 = i_2_ - i_5_;
         anInt4040 = i_4_;
         anIntArray4039[i] = i_1_;
-        aClass105Array4042[i] = var_ha.method3662(i_0_, is, (byte) 94, 0, i_0_, i_3_);
+        aSpriteArray4042[i] = var_ha.method3662(i_0_, is, (byte) 94, 0, i_0_, i_3_);
     }
 
     final int method2560() {
@@ -75,8 +75,8 @@ final class Class323 {
         i_11_ |= ~0xffffff;
         for (int i_12_ = 0; i_12_ < string.length(); i_12_++) {
             int i_13_ = anIntArray4043[string.charAt(i_12_)];
-            if (bool) aClass105Array4042[i_13_].method964(i + 1, i_10_ + 1, 0, -16777216, 1);
-            aClass105Array4042[i_13_].method964(i, i_10_, 0, i_11_, 1);
+            if (bool) aSpriteArray4042[i_13_].method964(i + 1, i_10_ + 1, 0, -16777216, 1);
+            aSpriteArray4042[i_13_].method964(i, i_10_, 0, i_11_, 1);
             i += anIntArray4039[i_13_];
         }
     }
@@ -106,7 +106,7 @@ final class Class323 {
 
     Class323(ha var_ha, int i, boolean bool, Component component) {
         aBoolean4037 = false;
-        aClass105Array4042 = new Class105[256];
+        aSpriteArray4042 = new Sprite[256];
         anIntArray4039 = new int[256];
         Font font = new Font("Helvetica", bool ? 1 : 0, i);
         FontMetrics fontmetrics = component.getFontMetrics(font);

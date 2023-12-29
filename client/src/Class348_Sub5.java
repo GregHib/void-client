@@ -16,7 +16,7 @@ abstract class Class348_Sub5 extends Class348 {
     static byte[] aByteArray6624 = new byte[2048];
     static int anInt6625;
     static int anInt6626;
-    static Class105 aClass105_6627;
+    static Sprite aSprite_6627;
     static int anInt6628;
     static int anInt6629;
 
@@ -69,7 +69,7 @@ abstract class Class348_Sub5 extends Class348 {
                             Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
                             Class348_Sub40_Sub8.aClass238_9165 = null;
                         }
-                        if (Class105_Sub1.anInt8398 >= 2) {
+                        if (Sprite_Sub1.anInt8398 >= 2) {
                             Class367_Sub2.anInt7297 = 0;
                             Class352.anInt4337 = -5;
                             return;
@@ -77,7 +77,7 @@ abstract class Class348_Sub5 extends Class348 {
                         Class255.aClass161_3285.method1259(0);
                         Class367_Sub2.anInt7297 = 1;
                         Class169.anInt2264 = 0;
-                        Class105_Sub1.anInt8398++;
+                        Sprite_Sub1.anInt8398++;
                     }
                     if (Class367_Sub2.anInt7297 == 1) {
                         Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
@@ -107,10 +107,10 @@ abstract class Class348_Sub5 extends Class348 {
                     Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
                     Class348_Sub40_Sub8.aClass238_9165 = null;
                 }
-                if (Class105_Sub1.anInt8398 < 2) {
+                if (Sprite_Sub1.anInt8398 < 2) {
                     Class255.aClass161_3285.method1259(0);
                     Class169.anInt2264 = 0;
-                    Class105_Sub1.anInt8398++;
+                    Sprite_Sub1.anInt8398++;
                     Class367_Sub2.anInt7297 = 1;
                 } else {
                     Class352.anInt4337 = -4;
@@ -142,7 +142,7 @@ abstract class Class348_Sub5 extends Class348 {
 
     public static void method2762(int i) {
         aByteArray6624 = null;
-        aClass105_6627 = null;
+        aSprite_6627 = null;
         int i_12_ = -23 % ((i - -24) / 47);
     }
 

@@ -10,7 +10,7 @@ final class Class25 {
     static Class351 aClass351_364 = new Class351(12, 3);
     static int anInt365;
     private Class45 aClass45_366;
-    static Class105[] aClass105Array367;
+    static Sprite[] aSpriteArray367;
     static boolean aBoolean368 = false;
     static int[] anIntArray369;
     static int anInt370;
@@ -55,7 +55,7 @@ final class Class25 {
 
     final void method302(int i) {
         synchronized (aClass60_360) {
-            if (i != -797644856) aClass105Array367 = null;
+            if (i != -797644856) aSpriteArray367 = null;
             aClass60_360.method587(i ^ 0x2f8b186f);
         }
         anInt372++;
@@ -88,7 +88,7 @@ final class Class25 {
         anIntArray369 = null;
         if (i != 79) method303(-22, -13);
         aClass351_364 = null;
-        aClass105Array367 = null;
+        aSpriteArray367 = null;
     }
 
     Class25(Class230 class230, int i, Class45 class45) {

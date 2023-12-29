@@ -25,7 +25,7 @@ final class FontMetrics {
         aClass351_1987 = null;
     }
 
-    final String fitText(Class105[] icons, int maximumWidth, String string, byte i_0_) {
+    final String fitText(Sprite[] icons, int maximumWidth, String string, byte i_0_) {
         try {
             anInt1989++;
             if (maximumWidth >= textWidth(string, icons, false)) return string;
@@ -107,7 +107,7 @@ final class FontMetrics {
         return 0xff & glyphWidths[glyph];
     }
 
-    final int method1185(Class105[] icons, int i, int spacing, int lineWidth, String string) {
+    final int method1185(Sprite[] icons, int i, int spacing, int lineWidth, String string) {
         try {
             anInt1990++;
             if (spacing == i) spacing = this.verticalSpacing;
@@ -119,7 +119,7 @@ final class FontMetrics {
         }
     }
 
-    final int textWidth(String string, Class105[] icons, boolean bool) {
+    final int textWidth(String string, Sprite[] icons, boolean bool) {
         try {
             if (bool != false) this.bottomPadding = 95;
             anInt1980++;
@@ -174,7 +174,7 @@ final class FontMetrics {
         }
     }
 
-    final int lineWidth(String string, boolean removePadding, int width, Class105[] icons) {
+    final int lineWidth(String string, boolean removePadding, int width, Sprite[] icons) {
         try {
             anInt1984++;
             int count = splitLines(string, new int[]{width}, Class186.aStringArray2494, (byte) 87, icons);
@@ -190,7 +190,7 @@ final class FontMetrics {
         }
     }
 
-    final int splitLines(String string, int[] widths, String[] strings, byte i, Class105[] icons) {
+    final int splitLines(String string, int[] widths, String[] strings, byte i, Sprite[] icons) {
         try {
             anInt1978++;
             if (i != 87) splitLines(null, 80, null, 55);
@@ -328,7 +328,7 @@ final class FontMetrics {
         }
     }
 
-    final int splitLines(Class105[] icons, int i, String string, int width) {
+    final int splitLines(Sprite[] icons, int i, String string, int width) {
         try {
             anInt1983++;
             if (i != 1) this.verticalSpacing = -13;

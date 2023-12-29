@@ -47,12 +47,12 @@ final class Class191 {
             int i_9_ = class318_sub1_sub3_sub3.method2425(-1);
             if (i_9_ != -1) {
                 Object object = null;
-                Class105 class105 = ((Class105) Class348_Sub1_Sub1.aClass60_8807.method583(i_9_, 118));
-                if (class105 == null) {
+                Sprite sprite = ((Sprite) Class348_Sub1_Sub1.aClass60_8807.method583(i_9_, 118));
+                if (sprite == null) {
                     Class207[] class207s = Class207.method1519(Class21.aClass45_322, i_9_, 0);
                     if (class207s == null) return;
-                    class105 = Class348_Sub8.aHa6654.method3691(class207s[0], true);
-                    Class348_Sub1_Sub1.aClass60_8807.method582(class105, i_9_, (byte) -115);
+                    sprite = Class348_Sub8.aHa6654.method3691(class207s[0], true);
+                    Class348_Sub1_Sub1.aClass60_8807.method582(sprite, i_9_, (byte) -115);
                 }
                 aa_Sub2.method165(class318_sub1_sub3_sub3_8_.plane, i_5_, 0, i_3_ >> 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436((byte) 126) * 256, class318_sub1_sub3_sub3_8_.y, (byte) 92, i_6_ >> 1, i_2_);
                 int i_10_ = i_7_ + (Class239_Sub21.anIntArray6062[0] + -18);
@@ -60,7 +60,7 @@ final class Class191 {
                 i_10_ += i / 4 * 18;
                 i_11_ += 18 * (i % 4);
                 int i_12_ = -76 / ((i_1_ - 3) / 38);
-                class105.method974(i_10_, i_11_);
+                sprite.method974(i_10_, i_11_);
                 if (class318_sub1_sub3_sub3 == class318_sub1_sub3_sub3_8_) Class348_Sub8.aHa6654.method3668(18, -1 + i_11_, -256, i_10_ - 1, 18, 57);
                 Class338.method2663(-5590, i_10_ + -1, 18 + i_10_, i_11_ + -1, i_11_ - -18);
                 Class318_Sub6 class318_sub6 = Class367.method3529(32564);

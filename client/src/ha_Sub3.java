@@ -1173,9 +1173,9 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    final Class105 method3629(int i, int i_97_, boolean bool) {
+    final Sprite method3629(int i, int i_97_, boolean bool) {
         anInt8040++;
-        return new Class105_Sub1(this, i, i_97_, bool);
+        return new Sprite_Sub1(this, i, i_97_, bool);
     }
 
     abstract float method3858(boolean bool);
@@ -1933,9 +1933,9 @@ abstract class ha_Sub3 extends ha {
         anInt7942++;
     }
 
-    final Class105 method3683(int i, int i_206_, int i_207_, int i_208_, boolean bool) {
+    final Sprite method3683(int i, int i_206_, int i_207_, int i_208_, boolean bool) {
         anInt7993++;
-        Class105_Sub1 class105_sub1 = new Class105_Sub1(this, i_207_, i_208_, bool);
+        Sprite_Sub1 class105_sub1 = new Sprite_Sub1(this, i_207_, i_208_, bool);
         class105_sub1.method979(0, 0, i_207_, i_208_, i, i_206_);
         return class105_sub1;
     }
@@ -1957,11 +1957,11 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    final Class105 method3691(Class207 class207, boolean bool) {
+    final Sprite method3691(Class207 class207, boolean bool) {
         try {
             anInt7978++;
-            Class105 class105;
-            if (class207.anInt2702 == 0 || class207.anInt2696 == 0) class105 = this.method3662(1, new int[1], (byte) 94, 0, 1, 1);
+            Sprite sprite;
+            if (class207.anInt2702 == 0 || class207.anInt2696 == 0) sprite = this.method3662(1, new int[1], (byte) 94, 0, 1, 1);
             else {
                 int[] is = new int[(class207.anInt2702 * class207.anInt2696)];
                 int i = 0;
@@ -1981,10 +1981,10 @@ abstract class ha_Sub3 extends ha {
                         }
                     }
                 }
-                class105 = this.method3662(class207.anInt2702, is, (byte) 94, 0, class207.anInt2702, class207.anInt2696);
+                sprite = this.method3662(class207.anInt2702, is, (byte) 94, 0, class207.anInt2702, class207.anInt2696);
             }
-            class105.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
-            return class105;
+            sprite.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+            return sprite;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.GF(" + (class207 != null ? "{...}" : "null") + ',' + bool + ')'));
         }
@@ -2350,10 +2350,10 @@ abstract class ha_Sub3 extends ha {
         } while (false);
     }
 
-    final Class105 method3711(int[] is, int i, int i_260_, int i_261_, int i_262_, boolean bool) {
+    final Sprite method3711(int[] is, int i, int i_260_, int i_261_, int i_262_, boolean bool) {
         try {
             anInt7944++;
-            return new Class105_Sub1(this, i_261_, i_262_, is, i, i_260_);
+            return new Sprite_Sub1(this, i_261_, i_262_, is, i, i_260_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.BE(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_260_ + ',' + i_261_ + ',' + i_262_ + ',' + bool + ')'));
         }

@@ -7,7 +7,7 @@ final class n extends FontRenderer implements Interface19 {
 
     private final native void S(oa var_oa, ya var_ya, byte[][] is, int[] is_0_, int[] is_1_, int[] is_2_, int[] is_3_, int[] is_4_);
 
-    n(oa var_oa, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Class105[] class105s) {
+    n(oa var_oa, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
         super(var_oa, fontMetrics);
         byte[][] is = new byte[class207s.length][];
         int[] is_5_ = new int[class207s.length];

@@ -25,30 +25,30 @@ final class Class85 {
         int i_0_ = 0;
         int i_1_ = i;
         for (/**/; i_0_ < 8; i_0_++) {
-            aLongArray1473[i_0_] = (Class105_Sub2.method993((Class105_Sub2.method993((Class348_Sub8.method2777(255L, aByteArray1475[i_1_ + 6]) << 8), (Class105_Sub2.method993(Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ - -5]) << 16), 255L << 16), (Class105_Sub2.method993((Class105_Sub2.method993(Class348_Sub8.method2777(255L << 32, ((long) (aByteArray1475[i_1_ + 3]) << 32)), (Class105_Sub2.method993(Class105_Sub2.method993((Class348_Sub8.method2777(255L << 48, ((long) (aByteArray1475[1 + i_1_]) << 48))), ((long) (aByteArray1475[i_1_]) << 56)), Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ + 2]) << 40), 255L << 40))))), Class348_Sub8.method2777(aByteArray1475[4 + i_1_], 255L) << 24)))))), Class348_Sub8.method2777(255L, aByteArray1475[i_1_ - -7])));
+            aLongArray1473[i_0_] = (Sprite_Sub2.method993((Sprite_Sub2.method993((Class348_Sub8.method2777(255L, aByteArray1475[i_1_ + 6]) << 8), (Sprite_Sub2.method993(Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ - -5]) << 16), 255L << 16), (Sprite_Sub2.method993((Sprite_Sub2.method993(Class348_Sub8.method2777(255L << 32, ((long) (aByteArray1475[i_1_ + 3]) << 32)), (Sprite_Sub2.method993(Sprite_Sub2.method993((Class348_Sub8.method2777(255L << 48, ((long) (aByteArray1475[1 + i_1_]) << 48))), ((long) (aByteArray1475[i_1_]) << 56)), Class348_Sub8.method2777(((long) (aByteArray1475[i_1_ + 2]) << 40), 255L << 40))))), Class348_Sub8.method2777(aByteArray1475[4 + i_1_], 255L) << 24)))))), Class348_Sub8.method2777(255L, aByteArray1475[i_1_ - -7])));
             i_1_ += 8;
         }
         for (int i_2_ = 0; i_2_ < 8; i_2_++)
-            aLongArray1469[i_2_] = Class105_Sub2.method993(aLongArray1473[i_2_], (aLongArray1472[i_2_] = aLongArray1474[i_2_]));
+            aLongArray1469[i_2_] = Sprite_Sub2.method993(aLongArray1473[i_2_], (aLongArray1472[i_2_] = aLongArray1474[i_2_]));
         for (int i_3_ = 1; i_3_ <= 10; i_3_++) {
             for (int i_4_ = 0; i_4_ < 8; i_4_++) {
                 aLongArray1471[i_4_] = 0L;
                 int i_5_ = 0;
                 int i_6_ = 56;
                 for (/**/; i_5_ < 8; i_5_++) {
-                    aLongArray1471[i_4_] = (Class105_Sub2.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75[i_5_][(Class139.method1166(255, (int) ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) >>> i_6_)))])));
+                    aLongArray1471[i_4_] = (Sprite_Sub2.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75[i_5_][(Class139.method1166(255, (int) ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) >>> i_6_)))])));
                     i_6_ -= 8;
                 }
             }
             for (int i_7_ = 0; i_7_ < 8; i_7_++)
                 aLongArray1472[i_7_] = aLongArray1471[i_7_];
-            aLongArray1472[0] = Class105_Sub2.method993(aLongArray1472[0], InputStream_Sub1.aLongArray76[i_3_]);
+            aLongArray1472[0] = Sprite_Sub2.method993(aLongArray1472[0], InputStream_Sub1.aLongArray76[i_3_]);
             for (int i_8_ = 0; i_8_ < 8; i_8_++) {
                 aLongArray1471[i_8_] = aLongArray1472[i_8_];
                 int i_9_ = 0;
                 int i_10_ = 56;
                 for (/**/; i_9_ < 8; i_9_++) {
-                    aLongArray1471[i_8_] = (Class105_Sub2.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75[i_9_][(Class139.method1166(255, (int) ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) >>> i_10_)))])));
+                    aLongArray1471[i_8_] = (Sprite_Sub2.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75[i_9_][(Class139.method1166(255, (int) ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) >>> i_10_)))])));
                     i_10_ -= 8;
                 }
             }
@@ -56,7 +56,7 @@ final class Class85 {
                 aLongArray1469[i_11_] = aLongArray1471[i_11_];
         }
         for (int i_12_ = 0; i_12_ < 8; i_12_++)
-            aLongArray1474[i_12_] = (Class105_Sub2.method993(aLongArray1474[i_12_], Class105_Sub2.method993(aLongArray1473[i_12_], aLongArray1469[i_12_])));
+            aLongArray1474[i_12_] = (Sprite_Sub2.method993(aLongArray1474[i_12_], Sprite_Sub2.method993(aLongArray1473[i_12_], aLongArray1469[i_12_])));
     }
 
     static final void method828(byte i, int i_13_, int i_14_) {

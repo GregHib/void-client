@@ -23,8 +23,8 @@ final class Class5_Sub1_Sub1 extends Class5_Sub1 {
     final void method186(int i, int i_1_, byte i_2_, int i_3_, int i_4_) {
         if (i_2_ <= 21) aClass207Array9929 = null;
         anInt9928++;
-        int i_5_ = this.aClass105_8350.scaleWidth();
+        int i_5_ = this.aSprite_8350.scaleWidth();
         int i_6_ = (((Class369_Sub3_Sub1) this.aClass369_4635).anInt10177 * aa_Sub2.method163(512) / 10 % i_5_);
-        this.aClass105_8350.method972(i_3_ - (i_5_ - i_6_), i, -i_6_ + (i_4_ - -i_5_), i_1_);
+        this.aSprite_8350.method972(i_3_ - (i_5_ - i_6_), i, -i_6_ + (i_4_ - -i_5_), i_1_);
     }
 }

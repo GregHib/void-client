@@ -7,19 +7,19 @@ class Class5_Sub1 extends Class5 {
     static boolean aBoolean8335 = false;
     static int anInt8336;
     static int anInt8337;
-    private Class105 aClass105_8338;
-    private Class105 aClass105_8339;
+    private Sprite aSprite_8338;
+    private Sprite aSprite_8339;
     static int anInt8340;
     static int anInt8341;
-    private Class105 aClass105_8342;
-    private Class105 aClass105_8343;
+    private Sprite aSprite_8342;
+    private Sprite aSprite_8343;
     static Class221 aClass221_8344;
     static int anInt8345;
     static int anInt8346;
-    private Class105 aClass105_8347;
+    private Sprite aSprite_8347;
     static int anInt8348;
     static int anInt8349;
-    Class105 aClass105_8350;
+    Sprite aSprite_8350;
     static int anInt8351;
     static int anInt8352 = 0;
 
@@ -53,7 +53,7 @@ class Class5_Sub1 extends Class5 {
     }
 
     void method186(int i, int i_3_, byte i_4_, int i_5_, int i_6_) {
-        this.aClass105_8350.method972(i_5_, i, i_6_, i_3_);
+        this.aSprite_8350.method972(i_5_, i, i_6_, i_3_);
         anInt8341++;
         if (i_4_ <= 21) method8((byte) 68);
     }
@@ -210,21 +210,21 @@ class Class5_Sub1 extends Class5 {
             int[] is = new int[4];
             Class348_Sub8.aHa6654.K(is);
             Class348_Sub8.aHa6654.KA(i, i_28_, i - -this.aClass369_4635.anInt4971, (i_28_ + this.aClass369_4635.anInt4963));
-            int i_29_ = aClass105_8342.scaleWidth();
-            int i_30_ = aClass105_8342.method980();
-            int i_31_ = aClass105_8339.scaleWidth();
-            int i_32_ = aClass105_8339.method980();
-            aClass105_8342.method974(i, i_28_ - -(((this.aClass369_4635.anInt4963) + -i_30_) / 2));
-            aClass105_8339.method974((this.aClass369_4635.anInt4971 + (i + -i_31_)), i_28_ + (this.aClass369_4635.anInt4963 + -i_32_) / 2);
-            Class348_Sub8.aHa6654.KA(i, i_28_, (this.aClass369_4635.anInt4971 + i), i_28_ - -aClass105_8343.method980());
-            aClass105_8343.method972(i + i_29_, i_28_, -i_29_ + (this.aClass369_4635.anInt4971) - i_31_, this.aClass369_4635.anInt4963);
-            int i_33_ = aClass105_8338.method980();
+            int i_29_ = aSprite_8342.scaleWidth();
+            int i_30_ = aSprite_8342.method980();
+            int i_31_ = aSprite_8339.scaleWidth();
+            int i_32_ = aSprite_8339.method980();
+            aSprite_8342.method974(i, i_28_ - -(((this.aClass369_4635.anInt4963) + -i_30_) / 2));
+            aSprite_8339.method974((this.aClass369_4635.anInt4971 + (i + -i_31_)), i_28_ + (this.aClass369_4635.anInt4963 + -i_32_) / 2);
+            Class348_Sub8.aHa6654.KA(i, i_28_, (this.aClass369_4635.anInt4971 + i), i_28_ - -aSprite_8343.method980());
+            aSprite_8343.method972(i + i_29_, i_28_, -i_29_ + (this.aClass369_4635.anInt4971) - i_31_, this.aClass369_4635.anInt4963);
+            int i_33_ = aSprite_8338.method980();
             Class348_Sub8.aHa6654.KA(i, (-i_33_ + i_28_ - -this.aClass369_4635.anInt4963), this.aClass369_4635.anInt4971 + i, (i_28_ + this.aClass369_4635.anInt4963));
-            aClass105_8338.method972(i_29_ + i, (-i_33_ + i_28_ + this.aClass369_4635.anInt4963), (-i_29_ + this.aClass369_4635.anInt4971 + -i_31_), this.aClass369_4635.anInt4963);
+            aSprite_8338.method972(i_29_ + i, (-i_33_ + i_28_ + this.aClass369_4635.anInt4963), (-i_29_ + this.aClass369_4635.anInt4971 + -i_31_), this.aClass369_4635.anInt4963);
             Class348_Sub8.aHa6654.KA(is[0], is[1], is[2], is[3]);
         }
         anInt8334++;
-        if (i_27_ > -6) aClass105_8347 = null;
+        if (i_27_ > -6) aSprite_8347 = null;
     }
 
     static final Class29[] method188(byte i) {
@@ -241,10 +241,10 @@ class Class5_Sub1 extends Class5 {
     final void method182(int i, int i_35_, int i_36_, boolean bool) {
         int i_37_ = -45 / ((-20 - i) / 57);
         anInt8336++;
-        int i_38_ = aClass105_8342.scaleWidth() + i_36_;
-        int i_39_ = (this.aClass369_4635.anInt4971 + (i_36_ + -aClass105_8339.scaleWidth()));
-        int i_40_ = i_35_ - -aClass105_8343.method980();
-        int i_41_ = (i_35_ + this.aClass369_4635.anInt4963 - aClass105_8338.method980());
+        int i_38_ = aSprite_8342.scaleWidth() + i_36_;
+        int i_39_ = (this.aClass369_4635.anInt4971 + (i_36_ + -aSprite_8339.scaleWidth()));
+        int i_40_ = i_35_ - -aSprite_8343.method980();
+        int i_41_ = (i_35_ + this.aClass369_4635.anInt4963 - aSprite_8338.method980());
         int i_42_ = -i_38_ + i_39_;
         int i_43_ = -i_40_ + i_41_;
         int i_44_ = this.method183(124) * i_42_ / 10000;
@@ -253,7 +253,7 @@ class Class5_Sub1 extends Class5 {
         Class348_Sub8.aHa6654.KA(i_38_, i_40_, i_44_ + i_38_, i_41_);
         method186(i_40_, i_43_, (byte) 33, i_38_, i_42_);
         Class348_Sub8.aHa6654.KA(i_44_ + i_38_, i_40_, i_39_, i_41_);
-        aClass105_8347.method972(i_38_, i_40_, i_42_, i_43_);
+        aSprite_8347.method972(i_38_, i_40_, i_42_, i_43_);
         Class348_Sub8.aHa6654.KA(is[0], is[1], is[2], is[3]);
     }
 
@@ -261,12 +261,12 @@ class Class5_Sub1 extends Class5 {
         super.method7(i);
         anInt8337++;
         Class369_Sub3 class369_sub3 = (Class369_Sub3) this.aClass369_4635;
-        this.aClass105_8350 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8599), (byte) -19, this.aClass45_4632);
-        aClass105_8347 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8595), (byte) 106, this.aClass45_4632);
-        aClass105_8342 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8603), (byte) -19, this.aClass45_4632);
-        aClass105_8339 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8602), (byte) -121, this.aClass45_4632);
-        aClass105_8343 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8600), (byte) 124, this.aClass45_4632);
-        aClass105_8338 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8597), (byte) 115, this.aClass45_4632);
+        this.aSprite_8350 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8599), (byte) -19, this.aClass45_4632);
+        aSprite_8347 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8595), (byte) 106, this.aClass45_4632);
+        aSprite_8342 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8603), (byte) -19, this.aClass45_4632);
+        aSprite_8339 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8602), (byte) -121, this.aClass45_4632);
+        aSprite_8343 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8600), (byte) 124, this.aClass45_4632);
+        aSprite_8338 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8597), (byte) 115, this.aClass45_4632);
     }
 
     static {

@@ -88,8 +88,8 @@ final class Class287 {
                     double d = Math.atan2(i_23_, i_24_);
                     int i_25_ = (int) ((double) i_19_ * Math.sin(d));
                     int i_26_ = (int) (Math.cos(d) * (double) i_19_);
-                    Class200.aClass105Array2640[i_17_].method981(((float) class46.anInt709 / 2.0F + (float) i_15_ + (float) i_25_), ((float) i + (float) class46.anInt789 / 2.0F - (float) i_26_), 4096, (int) (65535.0 * (-d / 6.283185307179586)));
-                } else Class151.method1211(i, Class59_Sub1.aClass105Array5294[i_17_], i_15_, class46, var_aa, i_14_, 2, i_16_);
+                    Class200.aSpriteArray2640[i_17_].method981(((float) class46.anInt709 / 2.0F + (float) i_15_ + (float) i_25_), ((float) i + (float) class46.anInt789 / 2.0F - (float) i_26_), 4096, (int) (65535.0 * (-d / 6.283185307179586)));
+                } else Class151.method1211(i, Class59_Sub1.aSpriteArray5294[i_17_], i_15_, class46, var_aa, i_14_, 2, i_16_);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (class46 != null ? "{...}" : "null") + ',' + i_16_ + ',' + i_17_ + ',' + (var_aa != null ? "{...}" : "null") + ')'));
@@ -104,7 +104,7 @@ final class Class287 {
         try {
             anInt3692++;
             if (Class219.aClass223_2868 == class223) return Class170.method1312((byte) 64, class348_sub49);
-            if (Class348_Sub49.aClass223_7175 == class223) return Class105_Sub1.method987(743571200, class348_sub49);
+            if (Class348_Sub49.aClass223_7175 == class223) return Sprite_Sub1.method987(743571200, class348_sub49);
             if (Class101_Sub1.aClass223_5689 == class223) return Class303.method2287(class348_sub49, (byte) -112);
             if (class223 == Class28.aClass223_4997) return Class337.method2660((byte) 26, class348_sub49);
             if (bool != true) method2180((byte) -104);

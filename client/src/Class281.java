@@ -30,7 +30,7 @@ final class Class281 {
         Class367_Sub2.anInt7297 = 1;
         Class352.anInt4337 = -3;
         Class169.anInt2264 = 0;
-        Class105_Sub1.anInt8398 = 0;
+        Sprite_Sub1.anInt8398 = 0;
     }
 
     public static void method2107(byte i) {

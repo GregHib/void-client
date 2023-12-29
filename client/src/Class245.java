@@ -66,8 +66,8 @@ final class Class245 {
                     int i_6_ = (int) f;
                     Class14.anIntArray5091[i_5_] = i_6_ | i_6_ << 8 | i_6_ << 16 | ~0xffffff;
                 }
-                Class105 class105 = Class9.aHa171.method3662(Class306.anInt3872, Class14.anIntArray5091, (byte) 94, 0, Class306.anInt3872, Class86.anInt1480);
-                class105.method964(i, 170, 1, 0, 0);
+                Sprite sprite = Class9.aHa171.method3662(Class306.anInt3872, Class14.anIntArray5091, (byte) 94, 0, Class306.anInt3872, Class86.anInt1480);
+                sprite.method964(i, 170, 1, 0, 0);
             }
         }
     }

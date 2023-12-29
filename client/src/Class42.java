@@ -86,34 +86,34 @@ final class Class42 {
         return i_2_ >= anInt587 && i_2_ <= anInt586;
     }
 
-    final Class105 method374(boolean bool, ha var_ha, byte i) {
+    final Sprite method374(boolean bool, ha var_ha, byte i) {
         anInt579++;
         int i_3_ = bool ? this.anInt605 : this.anInt578;
         if (i != 127) return null;
         int i_4_ = i_3_ | var_ha.anInt4567 << 29;
-        Class105 class105 = (Class105) this.aClass153_593.aClass60_2089.method583(i_4_, 64);
-        if (class105 != null) return class105;
+        Sprite sprite = (Sprite) this.aClass153_593.aClass60_2089.method583(i_4_, 64);
+        if (sprite != null) return sprite;
         if (!this.aClass153_593.aClass45_2087.method421(false, i_3_)) return null;
         Class207 class207 = Class207.method1521((this.aClass153_593.aClass45_2087), i_3_, 0);
         if (class207 != null) {
-            class105 = var_ha.method3691(class207, true);
-            this.aClass153_593.aClass60_2089.method582(class105, i_4_, (byte) -111);
+            sprite = var_ha.method3691(class207, true);
+            this.aClass153_593.aClass60_2089.method582(sprite, i_4_, (byte) -111);
         }
-        return class105;
+        return sprite;
     }
 
-    final Class105 method375(ha var_ha, boolean bool) {
+    final Sprite method375(ha var_ha, boolean bool) {
         anInt563++;
         if (bool != false) method375(null, true);
-        Class105 class105 = (Class105) (this.aClass153_593.aClass60_2089.method583(anInt598 | 0x20000 | var_ha.anInt4567 << 29, -75));
-        if (class105 != null) return class105;
+        Sprite sprite = (Sprite) (this.aClass153_593.aClass60_2089.method583(anInt598 | 0x20000 | var_ha.anInt4567 << 29, -75));
+        if (sprite != null) return sprite;
         this.aClass153_593.aClass45_2087.method421(bool, anInt598);
         Class207 class207 = Class207.method1521((this.aClass153_593.aClass45_2087), anInt598, 0);
         if (class207 != null) {
-            class105 = var_ha.method3691(class207, true);
-            this.aClass153_593.aClass60_2089.method582(class105, var_ha.anInt4567 << 29 | (anInt598 | 0x20000), (byte) -121);
+            sprite = var_ha.method3691(class207, true);
+            this.aClass153_593.aClass60_2089.method582(sprite, var_ha.anInt4567 << 29 | (anInt598 | 0x20000), (byte) -121);
         }
-        return class105;
+        return sprite;
     }
 
     final String method376(String string, int i, byte i_5_) {

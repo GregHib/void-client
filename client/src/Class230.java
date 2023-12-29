@@ -30,7 +30,7 @@ final class Class230 {
                     }
                     if (!Class348_Sub16_Sub2.aBoolean8870) {
                         if (Class348_Sub49.anInt7207 == 1) Class43.method383(0);
-                        int i_22_ = -Class105_Sub1.anInt8422 + i_4_;
+                        int i_22_ = -Sprite_Sub1.anInt8422 + i_4_;
                         int i_23_ = i_6_ + -Class29.anInt403;
                         int i_24_ = -Class348_Sub21.anInt6849 + i_5_;
                         int i_25_ = (int) ((Class247.aDouble3182 * (double) i_22_ + (double) i_23_ * Class319.aDouble3980 + (double) i_24_ * Class357.aDouble4404) * (double) i_20_ / (double) i_14_);
@@ -222,14 +222,14 @@ final class Class230 {
                         Class348_Sub40_Sub8.anInt9157 = Class348_Sub42_Sub9_Sub1.anInt10444;
                         Class328.anInt4100 = 0;
                         Class339.anInt4211 = Class211.anInt2747;
-                        Class105_Sub1.anInt8422 = i_4_;
+                        Sprite_Sub1.anInt8422 = i_4_;
                         Class348_Sub3.anInt6568 = 0;
                         Class348_Sub42_Sub4.aDouble9517 = 0.0;
                         if (Class348_Sub49.anInt7207 == 0) Class21.aHa326.method3687(Class17.anInterface4_252);
                         Class21.aHa326.la();
                         Class21.aHa326.ya();
                         Class21.aHa326.GA(Class77.anInt1290);
-                        Class51.aClass101_905.method903(Class105_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
+                        Class51.aClass101_905.method903(Sprite_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
                         Class21.aHa326.method3638(Class51.aClass101_905);
                         if (Class348_Sub49.anInt7207 == 1) {
                             Class328_Sub1_Sub1.anInt8799 = i_17_;

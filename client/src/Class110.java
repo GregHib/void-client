@@ -13,7 +13,7 @@ abstract class Class110 {
     static int anInt1703;
     int anInt1704;
     static int anInt1705;
-    static Class105 aClass105_1706;
+    static Sprite aSprite_1706;
     static int anInt1707;
     int anInt1708;
     static int anInt1709;
@@ -31,7 +31,7 @@ abstract class Class110 {
 
     public static void method1030(int i) {
         aClass114_1702 = null;
-        aClass105_1706 = null;
+        aSprite_1706 = null;
         if (i > -19) method1034(-89, null, null, -72);
     }
 

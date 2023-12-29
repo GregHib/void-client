@@ -106,7 +106,7 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         Class75.aClass262_1254.method1996(127);
         Class285.aClass323_4754 = null;
         Class168.aClass323_2252 = null;
-        Class67.aClass105_4643 = null;
+        Class67.aSprite_4643 = null;
         Class125.aClass323_4921 = null;
         Class176.aClass323_2333 = null;
         Class348_Sub3.aClass323_6581 = null;

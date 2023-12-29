@@ -6,7 +6,7 @@ class Class127 implements Interface1 {
     static int anInt4652;
     static int anInt4653;
     static int[] anIntArray4654;
-    Class105 aClass105_4655;
+    Sprite aSprite_4655;
     static int anInt4656 = 0;
     static int anInt4657;
     static int anInt4658;
@@ -24,9 +24,9 @@ class Class127 implements Interface1 {
     public void method9(byte i, boolean bool) {
         anInt4653++;
         if (bool) {
-            int i_1_ = ((this.aClass288_4659.aClass221_4955.method1607(Class92.anInt1524, this.aClass105_4655.scaleWidth(), (byte) -117)) + this.aClass288_4659.anInt4950);
-            int i_2_ = ((this.aClass288_4659.aClass341_4952.method2679(ha_Sub2.anInt7666, this.aClass105_4655.method980(), 1595)) - -this.aClass288_4659.anInt4951);
-            this.aClass105_4655.method974(i_1_, i_2_);
+            int i_1_ = ((this.aClass288_4659.aClass221_4955.method1607(Class92.anInt1524, this.aSprite_4655.scaleWidth(), (byte) -117)) + this.aClass288_4659.anInt4950);
+            int i_2_ = ((this.aClass288_4659.aClass341_4952.method2679(ha_Sub2.anInt7666, this.aSprite_4655.method980(), 1595)) - -this.aClass288_4659.anInt4951);
+            this.aSprite_4655.method974(i_1_, i_2_);
         }
         if (i != -49) anInt4656 = 26;
     }
@@ -54,7 +54,7 @@ class Class127 implements Interface1 {
 
     public final void method7(int i) {
         if (i != 10286) anInt4656 = -123;
-        this.aClass105_4655 = Class369_Sub3_Sub1.method3577((this.aClass288_4659.anInt4958), (byte) -60, aClass45_4661);
+        this.aSprite_4655 = Class369_Sub3_Sub1.method3577((this.aClass288_4659.anInt4958), (byte) -60, aClass45_4661);
         anInt4660++;
     }
 

@@ -25,7 +25,7 @@ final class Class174 {
     static Class45 aClass45_2306;
     static Class223 aClass223_2307 = new Class223(7, 2);
     private boolean aBoolean2308;
-    static Class105 aClass105_2309;
+    static Sprite aSprite_2309;
 
     static final boolean method1332(boolean bool, boolean bool_0_, int i, String string) {
         anInt2293++;
@@ -62,7 +62,7 @@ final class Class174 {
 
     static final void method1333(short[] is, int i, String[] strings) {
         try {
-            if (i != 26073) aClass105_2309 = null;
+            if (i != 26073) aSprite_2309 = null;
             anInt2295++;
             Class64.method607(strings.length + -1, strings, is, 0, false);
         } catch (RuntimeException runtimeexception) {
@@ -74,7 +74,7 @@ final class Class174 {
         aClass223_2307 = null;
         if (i != -110) method1333(null, -51, null);
         aClass114_2305 = null;
-        aClass105_2309 = null;
+        aSprite_2309 = null;
         aClass45_2306 = null;
     }
 

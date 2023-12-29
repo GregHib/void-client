@@ -3,7 +3,7 @@
  */
 
 final class Class5_Sub3 extends Class5 {
-    private Class105 aClass105_8366;
+    private Sprite aSprite_8366;
     static int anInt8367;
     static int anInt8368;
     static int anInt8369;
@@ -112,7 +112,7 @@ final class Class5_Sub3 extends Class5 {
         anInt8371++;
         if (i == 10286) {
             super.method7(i);
-            aClass105_8366 = Class369_Sub3_Sub1.method3577(((Class369_Sub1) this.aClass369_4635).anInt8582, (byte) -96, this.aClass45_4632);
+            aSprite_8366 = Class369_Sub3_Sub1.method3577(((Class369_Sub1) this.aClass369_4635).anInt8582, (byte) -96, this.aClass45_4632);
         }
     }
 
@@ -123,7 +123,7 @@ final class Class5_Sub3 extends Class5 {
         int i_11_ = -50 % ((-20 - i) / 57);
         Class348_Sub8.aHa6654.K(is);
         Class348_Sub8.aHa6654.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aClass369_4635.anInt4963));
-        aClass105_8366.method972(i_9_, 2 + i_8_, (this.aClass369_4635.anInt4971), (this.aClass369_4635.anInt4963));
+        aSprite_8366.method972(i_9_, 2 + i_8_, (this.aClass369_4635.anInt4971), (this.aClass369_4635.anInt4963));
         Class348_Sub8.aHa6654.KA(is[0], is[1], is[2], is[3]);
     }
 

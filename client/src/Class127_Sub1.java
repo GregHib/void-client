@@ -18,9 +18,9 @@ final class Class127_Sub1 extends Class127 {
 
     public final void method9(byte i, boolean bool) {
         anInt8379++;
-        int i_0_ = ((this.aClass288_4659.aClass221_4955.method1607(Class92.anInt1524, this.aClass105_4655.scaleWidth(), (byte) -117)) - -this.aClass288_4659.anInt4950);
-        int i_1_ = ((this.aClass288_4659.aClass341_4952.method2679(ha_Sub2.anInt7666, this.aClass105_4655.method980(), 1595)) + this.aClass288_4659.anInt4951);
-        this.aClass105_4655.method981((float) (this.aClass105_4655.scaleWidth() / 2 + i_0_), (float) (this.aClass105_4655.method980() / 2 + i_1_), 4096, anInt8383);
+        int i_0_ = ((this.aClass288_4659.aClass221_4955.method1607(Class92.anInt1524, this.aSprite_4655.scaleWidth(), (byte) -117)) - -this.aClass288_4659.anInt4950);
+        int i_1_ = ((this.aClass288_4659.aClass341_4952.method2679(ha_Sub2.anInt7666, this.aSprite_4655.method980(), 1595)) + this.aClass288_4659.anInt4951);
+        this.aSprite_4655.method981((float) (this.aSprite_4655.scaleWidth() / 2 + i_0_), (float) (this.aSprite_4655.method980() / 2 + i_1_), 4096, anInt8383);
         anInt8383 += ((Class288_Sub1) this.aClass288_4659).anInt8577;
         if (i != -49) method9((byte) -26, true);
     }

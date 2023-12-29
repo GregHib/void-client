@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class j extends Class105 implements Interface19 {
+final class j extends Sprite implements Interface19 {
     long nativeid;
 
     private final native void R(long l, boolean bool);

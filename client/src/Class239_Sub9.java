@@ -11,7 +11,7 @@ final class Class239_Sub9 extends Class239 {
     static int anInt5930;
     static int anInt5931;
     static Class230 aClass230_5932 = new Class230("game4", 3);
-    static Class105[] aClass105Array5933;
+    static Sprite[] aSpriteArray5933;
     static Class351 aClass351_5934 = new Class351(78, 16);
 
     Class239_Sub9(int i, Class348_Sub51 class348_sub51) {
@@ -35,7 +35,7 @@ final class Class239_Sub9 extends Class239 {
         if (i != -16211) aClass351_5934 = null;
         aClass230_5932 = null;
         aClass351_5929 = null;
-        aClass105Array5933 = null;
+        aSpriteArray5933 = null;
         aClass351_5934 = null;
     }
 

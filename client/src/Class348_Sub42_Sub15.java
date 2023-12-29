@@ -19,8 +19,8 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
     static int anInt9655;
     static int anInt9656;
     static BigInteger aBigInteger9657 = Loader.FILE_SERVER_RSA_MODULUS;
-    static Class105 aClass105_9658;
-    static Class105 aClass105_9659;
+    static Sprite aSprite_9658;
+    static Sprite aSprite_9659;
     static Class56 aClass56_9660;
 
     final int method3245(boolean bool) {
@@ -33,14 +33,14 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
         this.aLong7057 |= ~0x7fffffffffffffffL;
         anInt9653++;
         if (method3250((byte) -89) == 0L) Class367_Sub4.aClass107_7325.method1005(true, this);
-        if (i != -25490) aClass105_9659 = null;
+        if (i != -25490) aSprite_9659 = null;
     }
 
     public static void method3247(int i) {
         if (i > -49) method3247(49);
         aClass56_9660 = null;
-        aClass105_9658 = null;
-        aClass105_9659 = null;
+        aSprite_9658 = null;
+        aSprite_9659 = null;
         aBigInteger9657 = null;
     }
 
@@ -91,6 +91,6 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
         anInt9648++;
         this.aLong7057 = (~0x7fffffffffffffffL & this.aLong7057 | Class62.method599(-120) + 500L);
         s_Sub2.aClass107_8241.method1005(true, this);
-        if (i != -16058) aClass105_9658 = null;
+        if (i != -16058) aSprite_9658 = null;
     }
 }
