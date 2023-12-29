@@ -10,7 +10,7 @@ final class Class258_Sub1 extends Class258 {
     static int anInt8524;
     private int anInt8525 = -1;
     static int anInt8526;
-    static Class143 aClass143_8527;
+    static FontMetrics aFontMetrics_8527;
     private int anInt8528 = -1;
     int anInt8529;
 
@@ -19,7 +19,7 @@ final class Class258_Sub1 extends Class258 {
         anInt8526++;
         OpenGL.glCopyTexSubImage3D(this.anInt4849, 0, i_2_, i_6_, i_4_, i_3_, i_0_, i_1_, i_5_);
         OpenGL.glFlush();
-        if (i != -26823) aClass143_8527 = null;
+        if (i != -26823) aFontMetrics_8527 = null;
     }
 
     public final void method37(int i) {
@@ -48,7 +48,7 @@ final class Class258_Sub1 extends Class258 {
 
     public static void method1959(int i) {
         int i_11_ = -121 / ((-52 - i) / 60);
-        aClass143_8527 = null;
+        aFontMetrics_8527 = null;
     }
 
     static final void method1960(int i, int i_12_, int i_13_, int i_14_, byte[][][] is, int[] is_15_, int[] is_16_, int[] is_17_, int[] is_18_, int[] is_19_, int i_20_, byte i_21_, int i_22_, int i_23_, boolean bool, boolean bool_24_, int i_25_, int i_26_, boolean bool_27_) {

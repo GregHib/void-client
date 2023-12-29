@@ -2,11 +2,11 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class h extends Class324 implements Interface19 {
+final class h extends FontRenderer implements Interface19 {
     long nativeid;
 
-    h(oa var_oa, ya var_ya, Class143 class143, Class207[] class207s, Class105[] class105s) {
-        super(var_oa, class143);
+    h(oa var_oa, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Class105[] class105s) {
+        super(var_oa, fontMetrics);
         byte[][] is = new byte[class207s.length][];
         int[] is_0_ = new int[class207s.length];
         int[] is_1_ = new int[class207s.length];

@@ -538,7 +538,7 @@ class Class75 {
                     Class218 class218 = aClass141_1242.method1173((byte) 31, i_123_);
                     Class105 class105 = class218.method1596((class51.aBoolean912 ? is_121_[i_122_] >> 6 & 0x3 : 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha);
                     if (class105 != null) {
-                        int i_124_ = i_119_ * class105.method966() >> 2;
+                        int i_124_ = i_119_ * class105.scaleWidth() >> 2;
                         int i_125_ = i_120_ * class105.method980() >> 2;
                         if (class218.aBoolean2854) {
                             int i_126_ = class51.anInt961;

@@ -199,7 +199,7 @@ final class Canvas_Sub1 extends Canvas {
                 }
             }
             if (bool) {
-                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654);
+                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654);
                 Class369_Sub1.method3570(false);
                 Class348_Sub18.method2938((byte) 102);
                 Class239_Sub12.method1772(i ^ 0x41);
@@ -218,7 +218,7 @@ final class Canvas_Sub1 extends Canvas {
                 if (Class348_Sub8.aHa6654.method3670()) i_27_++;
                 Class348_Sub42_Sub2.method3171(Class348_Sub8.aHa6654, Class239_Sub16.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aHa6654.method3704() > 0);
                 Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096);
-                if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aClass324_4684);
+                if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aFontRenderer_4684);
                 else Class348_Sub48.method3328(null);
                 for (int i_28_ = 0; i_28_ < 4; i_28_++)
                     Class348_Sub45.aClass361Array7108[i_28_].method3500(i ^ 0x2bc);

@@ -159,7 +159,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     var_ha.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
                     var_ha.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
                     var_ha.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
-                    Class262.aClass324_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_);
+                    Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_);
                 } else {
                     int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
                     int i_19_ = ((int) ((float) i_13_ / Class75.aFloat1247) + Class245.anInt3170);
@@ -184,13 +184,13 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     if (!Class298.aBoolean3811) break;
                     int i_22_ = -5 + i_11_ + i_12_;
                     int i_23_ = -8 + i_13_ + i_14_;
-                    Applet_Sub1.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
+                    Applet_Sub1.aFontRenderer_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
                     i_23_ -= 15;
                     Runtime runtime = Runtime.getRuntime();
                     int i_24_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
                     int i_25_ = 16776960;
                     if (i_24_ > 65536) i_25_ = 16711680;
-                    Applet_Sub1.aClass324_20.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1);
+                    Applet_Sub1.aFontRenderer_20.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1);
                     i_23_ -= 15;
                 }
             } catch (RuntimeException runtimeexception) {

@@ -4,14 +4,14 @@
 
 import jaggl.OpenGL;
 
-final class Class324_Sub5 extends Class324 {
+final class FontRenderer_Sub5 extends FontRenderer {
     private final ha_Sub2 aHa_Sub2_6509;
     private final Class61 aClass61_6510;
     private final Class258_Sub3_Sub1 aClass258_Sub3_Sub1_6511;
     private final boolean aBoolean6512;
 
-    Class324_Sub5(ha_Sub2 var_ha_Sub2, Class143 class143, Class207[] class207s, boolean bool) {
-        super(var_ha_Sub2, class143);
+    FontRenderer_Sub5(ha_Sub2 var_ha_Sub2, FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
+        super(var_ha_Sub2, fontMetrics);
         aHa_Sub2_6509 = var_ha_Sub2;
         int i = 0;
         for (int i_0_ = 0; i_0_ < 256; i_0_++) {

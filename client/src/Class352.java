@@ -5,8 +5,8 @@
 final class Class352 {
     static int anInt4330;
     static Class114 aClass114_4331 = new Class114(31, -1);
-    Class324 aClass324_4332;
-    Class143 aClass143_4333 = null;
+    FontRenderer aFontRenderer_4332;
+    FontMetrics aFontMetrics_4333 = null;
     static int anInt4334;
     static int anInt4335;
     static int anInt4336;
@@ -42,18 +42,18 @@ final class Class352 {
         }
     }
 
-    Class352(Class324 class324) {
-        this.aClass324_4332 = null;
-        this.aClass324_4332 = class324;
+    Class352(FontRenderer fontRenderer) {
+        this.aFontRenderer_4332 = null;
+        this.aFontRenderer_4332 = fontRenderer;
     }
 
-    Class352(Class324 class324, Class143 class143) {
-        this.aClass324_4332 = null;
+    Class352(FontRenderer fontRenderer, FontMetrics fontMetrics) {
+        this.aFontRenderer_4332 = null;
         try {
-            this.aClass143_4333 = class143;
-            this.aClass324_4332 = class324;
+            this.aFontMetrics_4333 = fontMetrics;
+            this.aFontRenderer_4332 = fontRenderer;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("el.<init>(" + (class324 != null ? "{...}" : "null") + ',' + (class143 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("el.<init>(" + (fontRenderer != null ? "{...}" : "null") + ',' + (fontMetrics != null ? "{...}" : "null") + ')'));
         }
     }
 }

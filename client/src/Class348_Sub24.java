@@ -197,13 +197,13 @@ final class Class348_Sub24 extends Class348 {
                                 Class258_Sub2.aStringArray8532[i_17_] = class348_sub42_sub15.aString9654;
                                 Class239_Sub21.anIntArray6061[Class139.method1166(Class348_Sub40_Sub30.anInt9385++, 31)] = i_17_;
                             } else if (i_16_ == 3) {
-                                Class46 class46 = Class324.method2570(1512932720, i_17_);
+                                Class46 class46 = FontRenderer.method2570(1512932720, i_17_);
                                 if (!class348_sub42_sub15.aString9654.equals(class46.aString792)) {
                                     class46.aString792 = class348_sub42_sub15.aString9654;
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 4) {
-                                Class46 class46 = Class324.method2570(1512932720, i_17_);
+                                Class46 class46 = FontRenderer.method2570(1512932720, i_17_);
                                 int i_18_ = (class348_sub42_sub15.anInt9652);
                                 int i_19_ = (class348_sub42_sub15.anInt9651);
                                 int i_20_ = (class348_sub42_sub15.anInt9650);
@@ -214,7 +214,7 @@ final class Class348_Sub24 extends Class348 {
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 5) {
-                                Class46 class46 = Class324.method2570(i ^ 0x5a2da9d8, i_17_);
+                                Class46 class46 = FontRenderer.method2570(i ^ 0x5a2da9d8, i_17_);
                                 if ((class46.anInt699 != class348_sub42_sub15.anInt9652) || (class348_sub42_sub15.anInt9652 == -1)) {
                                     class46.anInt699 = class348_sub42_sub15.anInt9652;
                                     class46.anInt795 = 0;
@@ -230,20 +230,20 @@ final class Class348_Sub24 extends Class348 {
                                 int i_23_ = 0x1f & i_21_ >> 5;
                                 int i_24_ = 0x1f & i_21_;
                                 int i_25_ = ((i_24_ << 3) + ((i_22_ << 19) - -(i_23_ << 11)));
-                                Class46 class46 = Class324.method2570(1512932720, i_17_);
+                                Class46 class46 = FontRenderer.method2570(1512932720, i_17_);
                                 if (class46.anInt749 != i_25_) {
                                     class46.anInt749 = i_25_;
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 7) {
-                                Class46 class46 = Class324.method2570(1512932720, i_17_);
+                                Class46 class46 = FontRenderer.method2570(1512932720, i_17_);
                                 boolean bool = (class348_sub42_sub15.anInt9652 == 1);
                                 if (!class46.aBoolean813 == bool) {
                                     class46.aBoolean813 = bool;
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 8) {
-                                Class46 class46 = Class324.method2570(1512932720, i_17_);
+                                Class46 class46 = FontRenderer.method2570(1512932720, i_17_);
                                 if ((class46.anInt757 != class348_sub42_sub15.anInt9652) || (class46.anInt675 != class348_sub42_sub15.anInt9651) || (class46.anInt716 != class348_sub42_sub15.anInt9650)) {
                                     class46.anInt716 = class348_sub42_sub15.anInt9650;
                                     class46.anInt675 = class348_sub42_sub15.anInt9651;
@@ -256,14 +256,14 @@ final class Class348_Sub24 extends Class348 {
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 9) {
-                                Class46 class46 = Class324.method2570(1512932720, i_17_);
+                                Class46 class46 = FontRenderer.method2570(1512932720, i_17_);
                                 if ((class348_sub42_sub15.anInt9652 != class46.anInt812) || (class348_sub42_sub15.anInt9651 != class46.anInt781)) {
                                     class46.anInt781 = class348_sub42_sub15.anInt9651;
                                     class46.anInt812 = class348_sub42_sub15.anInt9652;
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 10) {
-                                Class46 class46 = Class324.method2570(1512932720, i_17_);
+                                Class46 class46 = FontRenderer.method2570(1512932720, i_17_);
                                 if ((class46.anInt808 != (class348_sub42_sub15.anInt9652)) || ((class46.anInt786) != (class348_sub42_sub15.anInt9651)) || ((class348_sub42_sub15.anInt9650) != class46.anInt717)) {
                                     class46.anInt786 = (class348_sub42_sub15.anInt9651);
                                     class46.anInt808 = (class348_sub42_sub15.anInt9652);
@@ -271,14 +271,14 @@ final class Class348_Sub24 extends Class348 {
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 11) {
-                                Class46 class46 = (Class324.method2570(1512932720, i_17_));
+                                Class46 class46 = (FontRenderer.method2570(1512932720, i_17_));
                                 class46.aByte817 = (byte) 0;
                                 class46.anInt750 = class46.anInt739 = (class348_sub42_sub15.anInt9651);
                                 class46.aByte681 = (byte) 0;
                                 class46.anInt800 = class46.anInt788 = (class348_sub42_sub15.anInt9652);
                                 Class251.method1916(-9343, class46);
                             } else if (i_16_ == 12) {
-                                Class46 class46 = (Class324.method2570(1512932720, i_17_));
+                                Class46 class46 = (FontRenderer.method2570(1512932720, i_17_));
                                 int i_26_ = (class348_sub42_sub15.anInt9652);
                                 if (class46 != null && (class46.anInt774) == 0) {
                                     if ((-(class46.anInt789) + (class46.anInt791)) < i_26_) i_26_ = ((class46.anInt791) - (class46.anInt789));
@@ -289,17 +289,17 @@ final class Class348_Sub24 extends Class348 {
                                     }
                                 }
                             } else if (i_16_ == 14) {
-                                Class46 class46 = (Class324.method2570(1512932720, i_17_));
+                                Class46 class46 = (FontRenderer.method2570(1512932720, i_17_));
                                 class46.anInt756 = (class348_sub42_sub15.anInt9652);
                             } else if (i_16_ == 15) {
                                 Class97.anInt1548 = (class348_sub42_sub15.anInt9651);
                                 Class248.anInt3203 = (class348_sub42_sub15.anInt9652);
                                 Class348_Sub13.aBoolean6759 = true;
                             } else if (i_16_ == 16) {
-                                Class46 class46 = (Class324.method2570(1512932720, i_17_));
+                                Class46 class46 = (FontRenderer.method2570(1512932720, i_17_));
                                 class46.anInt702 = (class348_sub42_sub15.anInt9652);
                             } else if (i_16_ == 17) {
-                                Class46 class46 = (Class324.method2570(1512932720, i_17_));
+                                Class46 class46 = (FontRenderer.method2570(1512932720, i_17_));
                                 class46.anInt806 = (class348_sub42_sub15.anInt9652);
                             }
                         }
@@ -336,7 +336,7 @@ final class Class348_Sub24 extends Class348 {
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {
-                                Class46 class46_27_ = Class324.method2570(1512932720, (class46.anInt834));
+                                Class46 class46_27_ = FontRenderer.method2570(1512932720, (class46.anInt834));
                                 if (class46_27_ == null || (class46_27_.aClass46Array798) == null || ((class46_27_.aClass46Array798).length <= class46.anInt704) || (class46 != (class46_27_.aClass46Array798[class46.anInt704]))) continue;
                             }
                             Class66.method705(class348_sub36);
@@ -346,7 +346,7 @@ final class Class348_Sub24 extends Class348 {
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {
-                                Class46 class46_28_ = Class324.method2570(1512932720, (class46.anInt834));
+                                Class46 class46_28_ = FontRenderer.method2570(1512932720, (class46.anInt834));
                                 if (class46_28_ == null || (class46_28_.aClass46Array798) == null || (class46.anInt704 >= (class46_28_.aClass46Array798).length) || ((class46_28_.aClass46Array798[class46.anInt704]) != class46)) continue;
                             }
                             Class66.method705(class348_sub36);
@@ -356,7 +356,7 @@ final class Class348_Sub24 extends Class348 {
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {
-                                Class46 class46_29_ = Class324.method2570(1512932720, (class46.anInt834));
+                                Class46 class46_29_ = FontRenderer.method2570(1512932720, (class46.anInt834));
                                 if (class46_29_ == null || (class46_29_.aClass46Array798) == null || (class46.anInt704 >= (class46_29_.aClass46Array798).length) || ((class46_29_.aClass46Array798[class46.anInt704]) != class46)) continue;
                             }
                             Class66.method705(class348_sub36);

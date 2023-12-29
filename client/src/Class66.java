@@ -60,7 +60,7 @@ final class Class66 {
     }
 
     private static final void method702(int i) {
-        Class46 class46 = Class324.method2570(1512932720, i);
+        Class46 class46 = FontRenderer.method2570(1512932720, i);
         if (class46 != null) {
             int i_3_ = i >>> 16;
             Class46[] class46s = Class369_Sub2.aClass46ArrayArray8584[i_3_];
@@ -126,7 +126,7 @@ final class Class66 {
                 if (string_8_ == null) string_8_ = "";
                 if (string_8_.length() > 80) string_8_ = string_8_.substring(0, 80);
                 anInt1157++;
-                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class143.aClass351_1987, (Class348_Sub23_Sub2.aClass77_9029), -117);
+                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(FontMetrics.aClass351_1987, (Class348_Sub23_Sub2.aClass77_9029), -117);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (Class239_Sub6.method1745(string, -65) + 2 + Class239_Sub6.method1745(string_8_, -65)));
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, i_9_ - 1);
@@ -2300,7 +2300,7 @@ final class Class66 {
                 }
                 if (i == 7102) {
                     int i_225_ = anIntArray1149[--anInt1173];
-                    if (i_225_ != -1) Class143.method1189(-1, i_225_);
+                    if (i_225_ != -1) FontMetrics.method1189(-1, i_225_);
                     return;
                 }
                 if (i == 7103) {
@@ -2602,7 +2602,7 @@ final class Class66 {
                 int i_248_ = anIntArray1149[anInt1173 + 1];
                 int i_249_ = anIntArray1149[anInt1173 + 2];
                 if (i_248_ == 0) throw new RuntimeException();
-                Class46 class46 = Class324.method2570(1512932720, i_247_);
+                Class46 class46 = FontRenderer.method2570(1512932720, i_247_);
                 if (class46.aClass46Array798 == null) class46.aClass46Array798 = new Class46[i_249_ + 1];
                 if (class46.aClass46Array798.length <= i_249_) {
                     Class46[] class46s = new Class46[i_249_ + 1];
@@ -2627,13 +2627,13 @@ final class Class66 {
                     if (bool) throw new RuntimeException("Tried to .cc_delete static .active-component!");
                     throw new RuntimeException("Tried to cc_delete static active-component!");
                 }
-                Class46 class46_252_ = Class324.method2570(1512932720, class46.anInt830);
+                Class46 class46_252_ = FontRenderer.method2570(1512932720, class46.anInt830);
                 class46_252_.aClass46Array798[(class46.anInt704)] = null;
                 Class251.method1916(-9343, class46_252_);
                 return;
             }
             if (i == 102) {
-                Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                Class46 class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                 class46.aClass46Array798 = null;
                 Class251.method1916(-9343, class46);
                 return;
@@ -2655,7 +2655,7 @@ final class Class66 {
             }
             if (i == 201) {
                 int i_255_ = anIntArray1149[--anInt1173];
-                Class46 class46 = Class324.method2570(1512932720, i_255_);
+                Class46 class46 = FontRenderer.method2570(1512932720, i_255_);
                 if (class46 == null) {
                     anIntArray1149[anInt1173++] = 0;
                     return;
@@ -2730,7 +2730,7 @@ final class Class66 {
             Class46 class46;
             if (i >= 2000) {
                 i -= 1000;
-                class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
             } else class46 = bool ? aClass46_1169 : aClass46_1150;
             if (i == 1000) {
                 anInt1173 -= 4;
@@ -2794,7 +2794,7 @@ final class Class66 {
             Class46 class46;
             if (i >= 2000) {
                 i -= 1000;
-                class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
             } else class46 = bool ? aClass46_1169 : aClass46_1150;
             if (i == 1100) {
                 anInt1173 -= 2;
@@ -3011,7 +3011,7 @@ final class Class66 {
             Class46 class46;
             if (i >= 2000) {
                 i -= 1000;
-                class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
             } else class46 = bool ? aClass46_1169 : aClass46_1150;
             Class251.method1916(-9343, class46);
             if (i == 1200 || i == 1205 || i == 1208 || i == 1209 || i == 1212 || i == 1213) {
@@ -3111,7 +3111,7 @@ final class Class66 {
             Class46 class46;
             if (i >= 2000) {
                 i -= 1000;
-                class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
             } else class46 = bool ? aClass46_1169 : aClass46_1150;
             if (i == 1300) {
                 int i_281_ = anIntArray1149[--anInt1173] - 1;
@@ -3224,7 +3224,7 @@ final class Class66 {
                 Class46 class46;
                 if (i >= 2000) {
                     i -= 1000;
-                    class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                    class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                 } else class46 = bool ? aClass46_1169 : aClass46_1150;
                 if (i == 1499) class46.method434(false);
                 else {
@@ -3438,7 +3438,7 @@ final class Class66 {
             } else if (i < 2000 || i >= 2900 && i < 3000) {
                 Class46 class46;
                 if (i >= 2000) {
-                    class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                    class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                     i -= 1000;
                 } else class46 = bool ? aClass46_1169 : aClass46_1150;
                 if (anInt1177 >= 10) throw new RuntimeException("C29xx-1");
@@ -3454,7 +3454,7 @@ final class Class66 {
                     return;
                 }
             } else if (i < 2600) {
-                Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                Class46 class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                 if (i == 2500) {
                     anIntArray1149[anInt1173++] = class46.anInt800;
                     return;
@@ -3485,7 +3485,7 @@ final class Class66 {
                     return;
                 }
             } else if (i < 2700) {
-                Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                Class46 class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                 if (i == 2600) {
                     anIntArray1149[anInt1173++] = class46.anInt747;
                     return;
@@ -3548,12 +3548,12 @@ final class Class66 {
                 }
             } else if (i < 2800) {
                 if (i == 2700) {
-                    Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                    Class46 class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                     anIntArray1149[anInt1173++] = class46.anInt812;
                     return;
                 }
                 if (i == 2701) {
-                    Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                    Class46 class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                     if (class46.anInt812 == -1) {
                         anIntArray1149[anInt1173++] = 0;
                         return;
@@ -3570,7 +3570,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 2703) {
-                    Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                    Class46 class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                     if (class46.aClass46Array798 == null) anIntArray1149[anInt1173++] = 0;
                     else {
                         int i_299_ = class46.aClass46Array798.length;
@@ -3598,7 +3598,7 @@ final class Class66 {
                     return;
                 }
             } else if (i < 2900) {
-                Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
+                Class46 class46 = FontRenderer.method2570(1512932720, anIntArray1149[--anInt1173]);
                 if (i == 2800) {
                     anIntArray1149[anInt1173++] = client.method105(class46).method3307(11);
                     return;
@@ -3639,7 +3639,7 @@ final class Class66 {
                 if (i == 3104) {
                     String string = aStringArray1152[--anInt1170];
                     int i_304_ = 0;
-                    if (Class50_Sub3.method468(string, 73)) i_304_ = Class348_Sub41.method3156(true, string);
+                    if (Class50_Sub3.method468(string, 73)) i_304_ = Class348_Sub41.parseInt(true, string);
                     anInt1163++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub14.aClass351_6764), (Class348_Sub23_Sub2.aClass77_9029), -112);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 102, i_304_);
@@ -3675,7 +3675,7 @@ final class Class66 {
                     int i_306_ = anIntArray1149[anInt1173];
                     int i_307_ = anIntArray1149[anInt1173 + 1];
                     int i_308_ = anIntArray1149[anInt1173 + 2];
-                    Class46 class46 = Class324.method2570(1512932720, i_308_);
+                    Class46 class46 = FontRenderer.method2570(1512932720, i_308_);
                     Class100.method887(class46, i_306_, i_307_, 2147483647);
                     return;
                 }
@@ -4584,8 +4584,8 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_433_ = anIntArray1149[anInt1173];
                     int i_434_ = anIntArray1149[anInt1173 + 1];
-                    Class143 class143 = Class239_Sub23.method1819(i_434_, 0, -123, Class104.aClass45_1627);
-                    anIntArray1149[anInt1173++] = class143.method1190(Class113.aClass105Array1744, 1, string, i_433_);
+                    FontMetrics fontMetrics = Class239_Sub23.method1819(i_434_, 0, -123, Class104.aClass45_1627);
+                    anIntArray1149[anInt1173++] = fontMetrics.splitLines(Class113.aClass105Array1744, 1, string, i_433_);
                     return;
                 }
                 if (i == 4109) {
@@ -4593,8 +4593,8 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_435_ = anIntArray1149[anInt1173];
                     int i_436_ = anIntArray1149[anInt1173 + 1];
-                    Class143 class143 = Class239_Sub23.method1819(i_436_, 0, -79, Class104.aClass45_1627);
-                    anIntArray1149[anInt1173++] = class143.method1187(string, false, i_435_, Class113.aClass105Array1744);
+                    FontMetrics fontMetrics = Class239_Sub23.method1819(i_436_, 0, -79, Class104.aClass45_1627);
+                    anIntArray1149[anInt1173++] = fontMetrics.lineWidth(string, false, i_435_, Class113.aClass105Array1744);
                     return;
                 }
                 if (i == 4110) {
@@ -4704,8 +4704,8 @@ final class Class66 {
                 if (i == 4125) {
                     String string = aStringArray1152[--anInt1170];
                     int i_455_ = anIntArray1149[--anInt1173];
-                    Class143 class143 = Class239_Sub23.method1819(i_455_, 0, -114, Class104.aClass45_1627);
-                    anIntArray1149[anInt1173++] = class143.method1186(string, Class113.aClass105Array1744, false);
+                    FontMetrics fontMetrics = Class239_Sub23.method1819(i_455_, 0, -114, Class104.aClass45_1627);
+                    anIntArray1149[anInt1173++] = fontMetrics.textWidth(string, Class113.aClass105Array1744, false);
                     return;
                 }
             } else if (i < 4300) {
@@ -5132,7 +5132,7 @@ final class Class66 {
     }
 
     private static final void method714(int i) {
-        Class46 class46 = Class324.method2570(1512932720, i);
+        Class46 class46 = FontRenderer.method2570(1512932720, i);
         if (class46 != null) {
             int i_520_ = i >>> 16;
             Class46[] class46s = Class369_Sub2.aClass46ArrayArray8584[i_520_];

@@ -37,7 +37,7 @@ final class Class348_Sub27 extends Class348 {
     static final Class138[] method3002(byte i) {
         if (i != -97) aClass302Array6897 = null;
         anInt6901++;
-        return (new Class138[]{Class234.aClass138_3044, Class299_Sub1.aClass138_6321, Class324.aClass138_4062, Class222.aClass138_2885, Class348_Sub42_Sub5.aClass138_9530, Class348_Sub49_Sub1.aClass138_9748, Class325.aClass138_4082, Class258_Sub4.aClass138_8553, za.aClass138_7274, Class71.aClass138_1213, Class52.aClass138_4901, Class318_Sub1_Sub2_Sub1.aClass138_10194, za_Sub2.aClass138_9781, Class377.aClass138_9860});
+        return (new Class138[]{Class234.aClass138_3044, Class299_Sub1.aClass138_6321, FontRenderer.aClass138_4062, Class222.aClass138_2885, Class348_Sub42_Sub5.aClass138_9530, Class348_Sub49_Sub1.aClass138_9748, Class325.aClass138_4082, Class258_Sub4.aClass138_8553, za.aClass138_7274, Class71.aClass138_1213, Class52.aClass138_4901, Class318_Sub1_Sub2_Sub1.aClass138_10194, za_Sub2.aClass138_9781, Class377.aClass138_9860});
     }
 
     public Class348_Sub27() {

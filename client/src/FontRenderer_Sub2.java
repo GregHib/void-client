@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class324_Sub2 extends Class324 {
+final class FontRenderer_Sub2 extends FontRenderer {
     private final Interface18_Impl3 anInterface18_Impl3_6492;
     private final boolean aBoolean6493;
     private final ha_Sub3 aHa_Sub3_6494;
@@ -15,8 +15,8 @@ final class Class324_Sub2 extends Class324 {
         /* empty */
     }
 
-    Class324_Sub2(ha_Sub3 var_ha_Sub3, Class143 class143, Class207[] class207s, boolean bool) {
-        super(var_ha_Sub3, class143);
+    FontRenderer_Sub2(ha_Sub3 var_ha_Sub3, FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
+        super(var_ha_Sub3, fontMetrics);
         aHa_Sub3_6494 = var_ha_Sub3;
         int i = 0;
         for (int i_4_ = 0; i_4_ < 256; i_4_++) {

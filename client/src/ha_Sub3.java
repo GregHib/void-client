@@ -9,7 +9,6 @@ import jaclib.memory.heap.NativeHeapBuffer;
 import jagex3.graphics2.hw.NativeInterface;
 
 import java.awt.*;
-import java.lang.reflect.Method;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
@@ -2518,12 +2517,12 @@ abstract class ha_Sub3 extends ha {
 
     abstract void method3939(byte i);
 
-    final Class324 method3686(Class143 class143, Class207[] class207s, boolean bool) {
+    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
         try {
             anInt7952++;
-            return new Class324_Sub2(this, class143, class207s, bool);
+            return new FontRenderer_Sub2(this, fontMetrics, class207s, bool);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (class143 != null ? "{...}" : "null") + ',' + (class207s != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (fontMetrics != null ? "{...}" : "null") + ',' + (class207s != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 

@@ -210,9 +210,9 @@ class Class5_Sub1 extends Class5 {
             int[] is = new int[4];
             Class348_Sub8.aHa6654.K(is);
             Class348_Sub8.aHa6654.KA(i, i_28_, i - -this.aClass369_4635.anInt4971, (i_28_ + this.aClass369_4635.anInt4963));
-            int i_29_ = aClass105_8342.method966();
+            int i_29_ = aClass105_8342.scaleWidth();
             int i_30_ = aClass105_8342.method980();
-            int i_31_ = aClass105_8339.method966();
+            int i_31_ = aClass105_8339.scaleWidth();
             int i_32_ = aClass105_8339.method980();
             aClass105_8342.method974(i, i_28_ - -(((this.aClass369_4635.anInt4963) + -i_30_) / 2));
             aClass105_8339.method974((this.aClass369_4635.anInt4971 + (i + -i_31_)), i_28_ + (this.aClass369_4635.anInt4963 + -i_32_) / 2);
@@ -241,8 +241,8 @@ class Class5_Sub1 extends Class5 {
     final void method182(int i, int i_35_, int i_36_, boolean bool) {
         int i_37_ = -45 / ((-20 - i) / 57);
         anInt8336++;
-        int i_38_ = aClass105_8342.method966() + i_36_;
-        int i_39_ = (this.aClass369_4635.anInt4971 + (i_36_ + -aClass105_8339.method966()));
+        int i_38_ = aClass105_8342.scaleWidth() + i_36_;
+        int i_39_ = (this.aClass369_4635.anInt4971 + (i_36_ + -aClass105_8339.scaleWidth()));
         int i_40_ = i_35_ - -aClass105_8343.method980();
         int i_41_ = (i_35_ + this.aClass369_4635.anInt4963 - aClass105_8338.method980());
         int i_42_ = -i_38_ + i_39_;

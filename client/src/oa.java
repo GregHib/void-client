@@ -3,7 +3,6 @@
  */
 
 import java.awt.*;
-import java.lang.reflect.Method;
 
 final class oa extends ha implements Interface19 {
     private ya aYa5121;
@@ -115,7 +114,7 @@ final class oa extends ha implements Interface19 {
         /* empty */
     }
 
-    final Class324 method3686(Class143 class143, Class207[] class207s, boolean bool) {
+    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
         int[] is = new int[class207s.length];
         int[] is_60_ = new int[class207s.length];
         boolean bool_61_ = false;
@@ -126,10 +125,10 @@ final class oa extends ha implements Interface19 {
         }
         if (bool) {
             if (bool_61_) throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
-            return new h(this, aYa5121, class143, class207s, null);
+            return new h(this, aYa5121, fontMetrics, class207s, null);
         }
         if (bool_61_) throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
-        return new n(this, aYa5121, class143, class207s, null);
+        return new n(this, aYa5121, fontMetrics, class207s, null);
     }
 
     private final native void wa(int i, int i_62_, int i_63_, int i_64_, int i_65_, int i_66_);

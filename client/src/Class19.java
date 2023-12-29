@@ -21,7 +21,7 @@ final class Class19 {
             if (class318_sub5.anInt6421 <= Class367_Sub11.anInt7396) class318_sub5.method2373(false);
             else {
                 Class318_Sub5.method2505(i_0_ >> 1, class318_sub5.anInt6420 * 2, 0, i_5_, i_2_ >> 1, class318_sub5.anInt6418, 256 + (class318_sub5.anInt6422 << 9), i_1_, (class318_sub5.anInt6419 << 9) + 256);
-                Class262.aClass324_3326.method2575((byte) 122, i_3_ - -Class239_Sub21.anIntArray6062[0], ~0xffffff | class318_sub5.anInt6415, class318_sub5.aString6416, 0, i_4_ - -Class239_Sub21.anIntArray6062[1]);
+                Class262.aFontRenderer_3326.method2575((byte) 122, i_3_ - -Class239_Sub21.anIntArray6062[0], ~0xffffff | class318_sub5.anInt6415, class318_sub5.aString6416, 0, i_4_ - -Class239_Sub21.anIntArray6062[1]);
             }
         }
         anInt305++;

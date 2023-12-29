@@ -303,7 +303,7 @@ public final class client extends Applet_Sub1 {
         s.method3988(i + -182);
         Class79.method804(-3752);
         Class213.method1564(104);
-        Class324.method2572((byte) 23);
+        FontRenderer.method2572((byte) 23);
         Class234.method1659((byte) -71);
         Class199.method1461((byte) 112);
         Class239_Sub20.method1807((byte) -121);
@@ -332,7 +332,7 @@ public final class client extends Applet_Sub1 {
         Exception_Sub1.method140((byte) -126);
         aa.method158((byte) -67);
         za.method3438((byte) 59);
-        Class143.method1180((byte) -76);
+        FontMetrics.method1180((byte) -76);
         Class98.method879(96);
         Class348_Sub1.method2719(11339);
         Class318_Sub1_Sub3.method2412(true);
@@ -1528,7 +1528,7 @@ public final class client extends Applet_Sub1 {
         int i = method105(class46).method3304((byte) 125);
         if (i == 0) return null;
         for (int i_90_ = 0; i_90_ < i; i_90_++) {
-            class46 = Class324.method2570(1512932720, class46.anInt834);
+            class46 = FontRenderer.method2570(1512932720, class46.anInt834);
             if (class46 == null) return null;
         }
         return class46;
@@ -1654,7 +1654,7 @@ public final class client extends Applet_Sub1 {
             if (class348_sub36 == null) break;
             Class46 class46 = class348_sub36.aClass46_6989;
             if (class46.anInt704 >= 0) {
-                Class46 class46_106_ = Class324.method2570(i ^ 0x5a2d8500, class46.anInt834);
+                Class46 class46_106_ = FontRenderer.method2570(i ^ 0x5a2d8500, class46.anInt834);
                 if (class46_106_ == null || class46_106_.aClass46Array798 == null || (class46_106_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_106_.aClass46Array798[class46.anInt704])) continue;
             }
             Class66.method705(class348_sub36);
@@ -1664,7 +1664,7 @@ public final class client extends Applet_Sub1 {
             if (class348_sub36 == null) break;
             Class46 class46 = class348_sub36.aClass46_6989;
             if (class46.anInt704 >= 0) {
-                Class46 class46_107_ = Class324.method2570(1512932720, class46.anInt834);
+                Class46 class46_107_ = FontRenderer.method2570(1512932720, class46.anInt834);
                 if (class46_107_ == null || class46_107_.aClass46Array798 == null || (class46_107_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_107_.aClass46Array798[class46.anInt704])) continue;
             }
             Class66.method705(class348_sub36);
@@ -1674,7 +1674,7 @@ public final class client extends Applet_Sub1 {
             if (class348_sub36 == null) break;
             Class46 class46 = class348_sub36.aClass46_6989;
             if (class46.anInt704 >= 0) {
-                Class46 class46_108_ = Class324.method2570(1512932720, class46.anInt834);
+                Class46 class46_108_ = FontRenderer.method2570(1512932720, class46.anInt834);
                 if (class46_108_ == null || class46_108_.aClass46Array798 == null || (class46_108_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_108_.aClass46Array798[class46.anInt704])) continue;
             }
             Class66.method705(class348_sub36);
@@ -1935,15 +1935,15 @@ public final class client extends Applet_Sub1 {
                         if (Class36.anInt489 == 1) {
                             if (Class268.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = Class268.anInt3441;
                             int i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115);
-                            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
+                            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
                         } else if (Class36.anInt489 == 2) {
                             if (Class31.anInt443 < Class154.anInt2101) Class31.anInt443 = Class154.anInt2101;
                             int i = (((Class31.anInt443 - Class154.anInt2101) * 50 / Class31.anInt443) + 50);
-                            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
-                        } else Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
+                            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
+                        } else Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
                     } else if (Class240.anInt4674 != 10) {
                         if (Class240.anInt4674 == 13)
-                            Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3497.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aHa6654);
+                            Class362.method3511(false, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3497.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aHa6654);
                     } else Class302.method2284((byte) -43, l);
                 } else Class239_Sub10.method1761(85);
             } else Class239_Sub10.method1761(85);

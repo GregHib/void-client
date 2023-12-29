@@ -955,12 +955,12 @@ final class ha_Sub2 extends ha {
         anInt7726++;
     }
 
-    final Class324 method3686(Class143 class143, Class207[] class207s, boolean bool) {
+    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
         try {
             anInt7574++;
-            return new Class324_Sub5(this, class143, class207s, bool);
+            return new FontRenderer_Sub5(this, fontMetrics, class207s, bool);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (class143 != null ? "{...}" : "null") + ',' + (class207s != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (fontMetrics != null ? "{...}" : "null") + ',' + (class207s != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 
@@ -1140,7 +1140,7 @@ final class ha_Sub2 extends ha {
                                         string = string.substring(2);
                                     }
                                     if (string.length() >= 4 && (Class50_Sub3.method468(string.substring(0, 4), 47))) {
-                                        i_100_ = (Class348_Sub41.method3156(true, string.substring(0, 4)));
+                                        i_100_ = (Class348_Sub41.parseInt(true, string.substring(0, 4)));
                                         break;
                                     }
                                 }
@@ -1882,8 +1882,8 @@ final class ha_Sub2 extends ha {
         String[] strings = Class348_Sub40_Sub23.method3113(' ', true, string.replace('.', ' '));
         if (strings.length >= 2) {
             try {
-                int i_184_ = Class348_Sub41.method3156(true, strings[0]);
-                int i_185_ = Class348_Sub41.method3156(true, strings[1]);
+                int i_184_ = Class348_Sub41.parseInt(true, strings[0]);
+                int i_185_ = Class348_Sub41.parseInt(true, strings[1]);
                 anInt7789 = i_184_ * 10 - -i_185_;
             } catch (NumberFormatException numberformatexception) {
                 i_183_ |= 0x4;
@@ -2933,7 +2933,7 @@ final class ha_Sub2 extends ha {
                 Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ >> 1, i_320_, i_319_, i_315_ >> 1, class318_sub1_sub3_sub3, (byte) 100);
                 if (Class239_Sub21.anIntArray6062[0] >= 0) {
                     if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || za.anInt7276 == 0 || za.anInt7276 == 3 || (za.anInt7276 == 1 && (Class348_Sub11.method2797(((Player) class318_sub1_sub3_sub3).aString10544, (byte) -63)))) && Class88.anInt1497 < Class309.anInt4814) {
-                        Class309.anIntArray4819[Class88.anInt1497] = ((Class369.aClass143_4962.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2);
+                        Class309.anIntArray4819[Class88.anInt1497] = ((Class369.aFontMetrics_4962.width(true, class318_sub1_sub3_sub3.aString10292)) / 2);
                         Class309.anIntArray4822[Class88.anInt1497] = Class239_Sub21.anIntArray6062[0];
                         Class309.anIntArray4813[Class88.anInt1497] = Class239_Sub21.anIntArray6062[1];
                         Class309.anIntArray4817[Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10201;
@@ -2971,7 +2971,7 @@ final class ha_Sub2 extends ha {
                         if (class105s.length <= i_325_) i_325_ = 1;
                         Class105 class105 = class105s[0];
                         Class105 class105_328_ = class105s[i_325_];
-                        i_323_ -= Math.max((Class369.aClass143_4962.anInt1988), class105.method969());
+                        i_323_ -= Math.max((Class369.aFontMetrics_4962.topPadding), class105.method969());
                         int i_329_ = (Class239_Sub21.anIntArray6062[0] + (i_317_ + -(class105.method971() >> 1)));
                         int i_330_ = (class105.method971() * class318_sub1_sub3_sub3.anInt10295 / 255);
                         int i_331_ = class105.method969();
@@ -2980,8 +2980,8 @@ final class ha_Sub2 extends ha {
                         Class348_Sub8.aHa6654.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_);
                         class105_328_.method974(i_329_, i_323_);
                         Class348_Sub8.aHa6654.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i);
-                        Class338.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_);
-                    } else i_323_ -= Math.max((Class369.aClass143_4962.anInt1988), Class348_Sub45.aClass105Array7107[0].method969());
+                        Class338.method2663(-5590, i_329_, i_329_ + class105.scaleWidth(), i_323_, i_323_ + i_331_);
+                    } else i_323_ -= Math.max((Class369.aFontMetrics_4962.topPadding), Class348_Sub45.aClass105Array7107[0].method969());
                     i_323_ -= 2;
                     if (!class318_sub1_sub3_sub3.aBoolean10309) {
                         if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
@@ -3022,7 +3022,7 @@ final class ha_Sub2 extends ha {
                             Class348_Sub8.aHa6654.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_);
                             class105_332_.method974(i_339_, i_323_);
                             Class348_Sub8.aHa6654.KA(i_317_, i, i_318_ + i_317_, i - -i_315_);
-                            Class338.method2663(-5590, i_339_, class105.method966() + i_339_, i_323_, i_338_ + i_323_);
+                            Class338.method2663(-5590, i_339_, class105.scaleWidth() + i_339_, i_323_, i_338_ + i_323_);
                             i_323_ -= 2;
                         }
                         if (i_322_ < i_321_) {
@@ -3031,21 +3031,21 @@ final class ha_Sub2 extends ha {
                                 i_323_ -= 25;
                                 Class105 class105 = (Class318_Sub1_Sub1_Sub1.aClass105Array9959[(player.anInt10540)]);
                                 class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062[0])), i_323_);
-                                Class338.method2663(-5590, i_317_ + (Class239_Sub21.anIntArray6062[0] + -12), (i_317_ - -Class239_Sub21.anIntArray6062[0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980());
+                                Class338.method2663(-5590, i_317_ + (Class239_Sub21.anIntArray6062[0] + -12), (i_317_ - -Class239_Sub21.anIntArray6062[0] + (-12 + class105.scaleWidth())), i_323_, i_323_ + class105.method980());
                                 i_323_ -= 2;
                             }
                             if (player.anInt10522 != -1) {
                                 i_323_ -= 25;
                                 Class105 class105 = (Class264.aClass105Array3378[(player.anInt10522)]);
                                 class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062[0])), i_323_);
-                                Class338.method2663(-5590, (-12 + Class239_Sub21.anIntArray6062[0] + i_317_), (Class239_Sub21.anIntArray6062[0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980());
+                                Class338.method2663(-5590, (-12 + Class239_Sub21.anIntArray6062[0] + i_317_), (Class239_Sub21.anIntArray6062[0] + i_317_ - (12 + -class105.scaleWidth())), i_323_, i_323_ - -class105.method980());
                                 i_323_ -= 2;
                             }
                         } else if (class79.anInt1375 >= 0 && (class79.anInt1375 < Class264.aClass105Array3378.length)) {
                             Class105 class105 = (Class264.aClass105Array3378[class79.anInt1375]);
                             i_323_ -= 25;
                             class105.method974((i_317_ + (Class239_Sub21.anIntArray6062[0]) + -(class105.method971() >> 1)), i_323_);
-                            Class338.method2663(-5590, (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> 1))), (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> 1)) + class105.method966()), i_323_, class105.method980() + i_323_);
+                            Class338.method2663(-5590, (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> 1))), (Class239_Sub21.anIntArray6062[0] + (i_317_ - (class105.method971() >> 1)) + class105.scaleWidth()), i_323_, class105.method980() + i_323_);
                             i_323_ -= 2;
                         }
                     }
@@ -3059,7 +3059,7 @@ final class ha_Sub2 extends ha {
                                     Class105 class105 = (Class239_Sub9.aClass105Array5933[class302.anInt3831]);
                                     if (i_340_ < class105.method969()) i_340_ = class105.method969();
                                     class105.method974(-12 + ((Class239_Sub21.anIntArray6062[0]) + i_317_), (i_323_ + -class105.method969()));
-                                    Class338.method2663(-5590, -12 + (i_317_ - -(Class239_Sub21.anIntArray6062[0])), (i_317_ + (Class239_Sub21.anIntArray6062[0] + -12 - -class105.method966())), -class105.method969() + i_323_, (i_323_ + -class105.method969() - -class105.method980()));
+                                    Class338.method2663(-5590, -12 + (i_317_ - -(Class239_Sub21.anIntArray6062[0])), (i_317_ + (Class239_Sub21.anIntArray6062[0] + -12 - -class105.scaleWidth())), -class105.method969() + i_323_, (i_323_ + -class105.method969() - -class105.method980()));
                                 }
                             }
                             if (i_340_ > 0) i_323_ -= 2 + i_340_;
@@ -3074,7 +3074,7 @@ final class ha_Sub2 extends ha {
                                 if (class105.method969() > i_342_) i_342_ = class105.method969();
                                 if (Class367_Sub11.anInt7396 % 20 < 10) {
                                     class105.method974((-12 + i_317_ + Class239_Sub21.anIntArray6062[0]), i_323_ + -class105.method969());
-                                    Class338.method2663(-5590, (-12 + i_317_ - -Class239_Sub21.anIntArray6062[0]), (Class239_Sub21.anIntArray6062[0] + (i_317_ + -12) - -class105.method966()), -class105.method969() + i_323_, (-class105.method969() + (i_323_ - -class105.method980())));
+                                    Class338.method2663(-5590, (-12 + i_317_ - -Class239_Sub21.anIntArray6062[0]), (Class239_Sub21.anIntArray6062[0] + (i_317_ + -12) - -class105.scaleWidth()), -class105.method969() + i_323_, (-class105.method969() + (i_323_ - -class105.method980())));
                                 }
                             }
                         }
@@ -3199,27 +3199,27 @@ final class ha_Sub2 extends ha {
                                             i_373_ = Class151.anIntArray2062[0];
                                         }
                                     }
-                                    Class324 class324 = Class240.aClass324_4684;
-                                    Class324 class324_387_ = Class240.aClass324_4684;
-                                    Class143 class143 = Class258_Sub1.aClass143_8527;
+                                    FontRenderer fontRenderer = Class240.aFontRenderer_4684;
+                                    FontRenderer fontRenderer_387_ = Class240.aFontRenderer_4684;
+                                    FontMetrics fontMetrics = Class258_Sub1.aFontMetrics_8527;
                                     int i_388_ = class31.anInt435;
-                                    Class143 class143_389_ = Class258_Sub1.aClass143_8527;
+                                    FontMetrics fontMetrics_389_ = Class258_Sub1.aFontMetrics_8527;
                                     if (i_388_ >= 0) {
-                                        Class324 class324_390_ = Class14.method232((Class348_Sub8.aHa6654), (byte) -53, true, i_388_);
-                                        Class143 class143_391_ = (Class135.method1151(-25411, Class348_Sub8.aHa6654, i_388_));
-                                        if (class324_390_ != null && class143_391_ != null) {
-                                            class324 = class324_390_;
-                                            class143 = class143_391_;
+                                        FontRenderer fontRenderer_390_ = Class14.method232((Class348_Sub8.aHa6654), (byte) -53, true, i_388_);
+                                        FontMetrics fontMetrics_391_ = (Class135.method1151(-25411, Class348_Sub8.aHa6654, i_388_));
+                                        if (fontRenderer_390_ != null && fontMetrics_391_ != null) {
+                                            fontRenderer = fontRenderer_390_;
+                                            fontMetrics = fontMetrics_391_;
                                         }
                                     }
                                     if (class31_349_ != null) {
                                         i_388_ = (class31_349_.anInt435);
                                         if (i_388_ >= 0) {
-                                            Class324 class324_392_ = (Class14.method232(Class348_Sub8.aHa6654, (byte) -53, true, i_388_));
-                                            Class143 class143_393_ = (Class135.method1151(-25411, Class348_Sub8.aHa6654, i_388_));
-                                            if (class324_392_ != null && class143_393_ != null) {
-                                                class143_389_ = class143_393_;
-                                                class324_387_ = class324_392_;
+                                            FontRenderer fontRenderer_392_ = (Class14.method232(Class348_Sub8.aHa6654, (byte) -53, true, i_388_));
+                                            FontMetrics fontMetrics_393_ = (Class135.method1151(-25411, Class348_Sub8.aHa6654, i_388_));
+                                            if (fontRenderer_392_ != null && fontMetrics_393_ != null) {
+                                                fontMetrics_389_ = fontMetrics_393_;
+                                                fontRenderer_387_ = fontRenderer_392_;
                                             }
                                         }
                                     }
@@ -3228,10 +3228,10 @@ final class ha_Sub2 extends ha {
                                     boolean bool = false;
                                     int i_395_ = 0;
                                     String string_396_ = (class31.method333((class318_sub1_sub3_sub3.anIntArray10229[i_344_]), 0));
-                                    int i_397_ = class143.method1183(true, string_396_);
+                                    int i_397_ = fontMetrics.width(true, string_396_);
                                     if (class31_349_ != null) {
                                         string = (class31_349_.method333((class318_sub1_sub3_sub3.anIntArray10284[i_344_]), 0));
-                                        i_395_ = class143_389_.method1183(true, string);
+                                        i_395_ = fontMetrics_389_.width(true, string);
                                     }
                                     int i_398_ = 0;
                                     if (i_356_ > 0) i_398_ = i_397_ / i_356_ + 1;
@@ -3283,16 +3283,16 @@ final class ha_Sub2 extends ha {
                                     int i_418_ = i_417_;
                                     int i_419_ = i_417_ + i_374_;
                                     int i_420_ = 15 + (i_417_ - -(class31.anInt420));
-                                    int i_421_ = (i_420_ + -class143.anInt1988);
-                                    int i_422_ = (i_420_ - -class143.anInt1993);
+                                    int i_421_ = (i_420_ + -fontMetrics.topPadding);
+                                    int i_422_ = (i_420_ - -fontMetrics.bottomPadding);
                                     if (i_418_ > i_421_) i_418_ = i_421_;
                                     if (i_419_ < i_422_) i_419_ = i_422_;
                                     int i_423_ = 0;
                                     if (class31_349_ != null) {
                                         i_423_ = 15 + (i_417_ - -(class31_349_.anInt420));
-                                        int i_424_ = (-(class143_389_.anInt1988) + i_423_);
+                                        int i_424_ = (-(fontMetrics_389_.topPadding) + i_423_);
                                         if (i_424_ < i_418_) i_418_ = i_424_;
-                                        int i_425_ = ((class143_389_.anInt1993) + i_423_);
+                                        int i_425_ = ((fontMetrics_389_.bottomPadding) + i_423_);
                                         if (i_419_ < i_425_) i_419_ = i_425_;
                                     }
                                     int i_426_ = 255;
@@ -3307,7 +3307,7 @@ final class ha_Sub2 extends ha {
                                                 class105_377_.method964((i_403_ + (i_416_ + (-i_360_ - -(i_356_ * i_429_)))), i_417_, 0, i_428_, 1);
                                         }
                                         if (class105_381_ != null) class105_381_.method964(i_406_ + i_416_ + -i_362_, i_417_, 0, i_428_, 1);
-                                        class324.method2576(string_396_, (class31.anInt444 | i_427_), i_420_, i_404_ + i_416_, 0, -124);
+                                        fontRenderer.method2576(string_396_, (class31.anInt444 | i_427_), i_420_, i_404_ + i_416_, 0, -124);
                                         if (class31_349_ != null) {
                                             if (class105 != null) class105.method964((i_416_ + i_407_ - i_370_), i_417_, 0, i_428_, 1);
                                             if (class105_364_ != null) class105_364_.method964(-i_372_ + (i_408_ + i_416_), i_417_, 0, i_428_, 1);
@@ -3316,7 +3316,7 @@ final class ha_Sub2 extends ha {
                                                     class105_363_.method964((i_430_ * i_367_ + i_416_ + (i_409_ + -i_371_)), i_417_, 0, i_428_, 1);
                                             }
                                             if (class105_365_ != null) class105_365_.method964((i_416_ - -i_410_ + -i_373_), i_417_, 0, i_428_, 1);
-                                            class324_387_.method2576(string, (i_427_ | (class31_349_.anInt444)), i_423_, i_416_ + i_411_, 0, -125);
+                                            fontRenderer_387_.method2576(string, (i_427_ | (class31_349_.anInt444)), i_423_, i_416_ + i_411_, 0, -125);
                                         }
                                     } else {
                                         if (class105_375_ != null) class105_375_.method974(i_416_ - (-i_401_ + i_359_), i_417_);
@@ -3326,7 +3326,7 @@ final class ha_Sub2 extends ha {
                                                 class105_377_.method974((i_403_ + i_416_ - (i_360_ - i_431_ * i_356_)), i_417_);
                                         }
                                         if (class105_381_ != null) class105_381_.method974(i_406_ + (i_416_ + -i_362_), i_417_);
-                                        class324.method2576(string_396_, (class31.anInt444 | ~0xffffff), i_420_, i_416_ + i_404_, 0, i_316_ ^ ~0x74);
+                                        fontRenderer.method2576(string_396_, (class31.anInt444 | ~0xffffff), i_420_, i_416_ + i_404_, 0, i_316_ ^ ~0x74);
                                         if (class31_349_ != null) {
                                             if (class105 != null) class105.method974((-i_370_ + i_416_ + i_407_), i_417_);
                                             if (class105_364_ != null) class105_364_.method974(i_408_ + (i_416_ + -i_372_), i_417_);
@@ -3335,7 +3335,7 @@ final class ha_Sub2 extends ha {
                                                     class105_363_.method974((i_432_ * i_367_ + (-i_371_ + i_416_ + i_409_)), i_417_);
                                             }
                                             if (class105_365_ != null) class105_365_.method974(i_410_ + i_416_ - i_373_, i_417_);
-                                            class324_387_.method2576(string, (class31_349_.anInt444) | ~0xffffff, i_423_, i_411_ + i_416_, 0, -119);
+                                            fontRenderer_387_.method2576(string, (class31_349_.anInt444) | ~0xffffff, i_423_, i_411_ + i_416_, 0, -119);
                                         }
                                     }
                                     Class338.method2663(-5590, i_416_, i_416_ + i_400_, i_418_, 1 + i_419_);
@@ -3357,7 +3357,7 @@ final class ha_Sub2 extends ha {
             else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_];
             Class191.method1430(--class318_sub1_sub3_sub3.anInt10261, (byte) 119, i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3);
         }
-        int i_437_ = i_316_ + (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988);
+        int i_437_ = i_316_ + (Class369.aFontMetrics_4962.bottomPadding + Class369.aFontMetrics_4962.topPadding);
         for (int i_438_ = 0; i_438_ < Class88.anInt1497; i_438_++) {
             int i_439_ = Class309.anIntArray4822[i_438_];
             int i_440_ = Class309.anIntArray4813[i_438_];
@@ -3374,11 +3374,11 @@ final class ha_Sub2 extends ha {
             }
             Class309.anIntArray4813[i_438_] = i_440_;
             String string = Class309.aStringArray4818[i_438_];
-            int i_443_ = Class369.aClass143_4962.method1183(true, string);
+            int i_443_ = Class369.aFontMetrics_4962.width(true, string);
             int i_444_ = i_439_ + i_317_;
-            int i_445_ = -Class369.aClass143_4962.anInt1988 + i_440_ + i;
+            int i_445_ = -Class369.aFontMetrics_4962.topPadding + i_440_ + i;
             int i_446_ = i_444_ - -i_443_;
-            int i_447_ = i_440_ + i - -Class369.aClass143_4962.anInt1993;
+            int i_447_ = i_440_ + i - -Class369.aFontMetrics_4962.bottomPadding;
             if (Class348_Sub40_Sub31.anInt9408 == 0) {
                 int i_448_ = 16776960;
                 if (Class309.anIntArray4817[i_438_] < 6) i_448_ = (Class115.anIntArray1757[Class309.anIntArray4817[i_438_]]);
@@ -3408,21 +3408,21 @@ final class ha_Sub2 extends ha {
                 }
                 int i_452_ = ~0xffffff | i_448_;
                 if (Class309.anIntArray4806[i_438_] == 0) {
-                    Class262.aClass324_3326.method2575((byte) 115, i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i);
+                    Class262.aFontRenderer_3326.method2575((byte) 115, i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i);
                     i_444_ -= i_443_ >> 1;
                     i_446_ -= i_443_ >> 1;
                 }
                 if (Class309.anIntArray4806[i_438_] == 1) {
                     i_446_ -= i_443_ >> 1;
                     i_444_ -= i_443_ >> 1;
-                    Class262.aClass324_3326.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Class239_Sub15.anInt6006, false);
+                    Class262.aFontRenderer_3326.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Class239_Sub15.anInt6006, false);
                     i_447_ += 5;
                     i_445_ -= 5;
                 }
                 if (Class309.anIntArray4806[i_438_] == 2) {
                     i_447_ += 5;
                     i_446_ -= -5 + (i_443_ >> 1);
-                    Class262.aClass324_3326.method2581(string, i_452_, (Class239_Sub15.anInt6006), i_440_ + i, (byte) -112, -16777216, i_317_ - -i_439_);
+                    Class262.aFontRenderer_3326.method2581(string, i_452_, (Class239_Sub15.anInt6006), i_440_ + i, (byte) -112, -16777216, i_317_ - -i_439_);
                     i_445_ -= 5;
                     i_444_ -= (i_443_ >> 1) - -5;
                 }
@@ -3430,15 +3430,15 @@ final class ha_Sub2 extends ha {
                     i_446_ -= i_443_ >> 1;
                     i_444_ -= i_443_ >> 1;
                     i_447_ += 7;
-                    Class262.aClass324_3326.method2577(Class239_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812[i_438_], i_439_ + i_317_, -20509);
+                    Class262.aFontRenderer_3326.method2577(Class239_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812[i_438_], i_439_ + i_317_, -20509);
                     i_445_ -= 7;
                 }
                 if (Class309.anIntArray4806[i_438_] == 4) {
-                    int i_453_ = ((150 + -Class309.anIntArray4812[i_438_]) * (Class369.aClass143_4962.method1183(true, string) + 100) / 150);
+                    int i_453_ = ((150 + -Class309.anIntArray4812[i_438_]) * (Class369.aFontMetrics_4962.width(true, string) + 100) / 150);
                     Class348_Sub8.aHa6654.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_);
                     i_444_ += 50 - i_453_;
                     i_446_ += -i_453_ + 50;
-                    Class262.aClass324_3326.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125);
+                    Class262.aFontRenderer_3326.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125);
                     Class348_Sub8.aHa6654.KA(i_317_, i, i_318_ + i_317_, i + i_315_);
                 }
                 if (Class309.anIntArray4806[i_438_] == 5) {
@@ -3447,11 +3447,11 @@ final class ha_Sub2 extends ha {
                     if (i_454_ >= 25) {
                         if (i_454_ > 125) i_455_ = i_454_ + -125;
                     } else i_455_ = i_454_ - 25;
-                    int i_456_ = (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988);
+                    int i_456_ = (Class369.aFontMetrics_4962.bottomPadding + Class369.aFontMetrics_4962.topPadding);
                     Class348_Sub8.aHa6654.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i);
                     i_444_ -= i_443_ >> 1;
                     i_447_ += i_455_;
-                    Class262.aClass324_3326.method2575((byte) -105, i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_));
+                    Class262.aFontRenderer_3326.method2575((byte) -105, i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_));
                     i_445_ += i_455_;
                     i_446_ -= i_443_ >> 1;
                     Class348_Sub8.aHa6654.KA(i_317_, i, i_318_ + i_317_, i_315_ + i);
@@ -3459,7 +3459,7 @@ final class ha_Sub2 extends ha {
             } else {
                 i_444_ -= i_443_ >> 1;
                 i_446_ -= i_443_ >> 1;
-                Class262.aClass324_3326.method2575((byte) 118, i_439_ + i_317_, -256, string, -16777216, i_440_ + i);
+                Class262.aFontRenderer_3326.method2575((byte) 118, i_439_ + i_317_, -256, string, -16777216, i_440_ + i);
             }
             Class338.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_);
         }

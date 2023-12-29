@@ -13,7 +13,7 @@ abstract class Class5 implements Interface1 {
     static int anInt4634;
     Class369 aClass369_4635;
     static Class60 aClass60_4636 = new Class60(64);
-    private Class324 aClass324_4637;
+    private FontRenderer aFontRenderer_4637;
     static int anInt4638;
     static int anInt4639;
     private long aLong4640;
@@ -33,8 +33,8 @@ abstract class Class5 implements Interface1 {
     public void method7(int i) {
         anInt4639++;
         if (i == 10286) {
-            Class143 class143 = Class239_Sub10.method1766((byte) -85, (this.aClass369_4635.anInt4965), aClass45_4631);
-            aClass324_4637 = (Class348_Sub8.aHa6654.method3686(class143, Class207.method1523(this.aClass45_4632, (this.aClass369_4635.anInt4965)), true));
+            FontMetrics fontMetrics = Class239_Sub10.method1766((byte) -85, (this.aClass369_4635.anInt4965), aClass45_4631);
+            aFontRenderer_4637 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(this.aClass45_4632, (this.aClass369_4635.anInt4965)), true));
         }
     }
 
@@ -102,7 +102,7 @@ abstract class Class5 implements Interface1 {
             method182(63, i_14_, i_13_, bool);
             String string = Class51.aClass311_897.method2318(i ^ 0x245b);
             if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aClass311_897.method2324(i + 149).method525(-117) + ")";
-            aClass324_4637.method2575((byte) 115, (i_13_ + this.aClass369_4635.anInt4971 / 2), this.aClass369_4635.anInt4961, string, -1, (this.aClass369_4635.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635.anInt4963 / 2))));
+            aFontRenderer_4637.method2575((byte) 115, (i_13_ + this.aClass369_4635.anInt4971 / 2), this.aClass369_4635.anInt4961, string, -1, (this.aClass369_4635.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635.anInt4963 / 2))));
         }
     }
 

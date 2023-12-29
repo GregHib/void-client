@@ -113,7 +113,7 @@ final class j extends Class105 implements Interface19 {
         P(this.nativeid, i, i_102_, i_103_, i_104_, i_105_, i_106_, i_107_);
     }
 
-    final int method966() {
+    final int scaleWidth() {
         return wa(this.nativeid);
     }
 

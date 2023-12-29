@@ -48,12 +48,12 @@ abstract class Class135 {
         super.finalize();
     }
 
-    static final Class143 method1151(int i, ha var_ha, int i_3_) {
+    static final FontMetrics method1151(int i, ha var_ha, int i_3_) {
         anInt1924++;
         if (i != -25411) return null;
         Class352 class352 = Class239_Sub3.method1734(i_3_, var_ha, (byte) -81, true);
         if (class352 == null) return null;
-        return class352.aClass143_4333;
+        return class352.aFontMetrics_4333;
     }
 
     abstract void method1152(int i);

@@ -272,7 +272,7 @@ abstract class ha {
 
     abstract void K(int[] is);
 
-    abstract Class324 method3686(Class143 class143, Class207[] class207s, boolean bool);
+    abstract FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool);
 
     abstract void H(int i, int i_146_, int i_147_, int[] is);
 

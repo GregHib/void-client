@@ -953,7 +953,7 @@ final class ha_Sub1 extends ha {
         class109.aBoolean1669 = true;
     }
 
-    final Class324 method3686(Class143 class143, Class207[] class207s, boolean bool) {
+    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
         int[] is = new int[class207s.length];
         int[] is_283_ = new int[class207s.length];
         boolean bool_284_ = false;
@@ -963,11 +963,11 @@ final class ha_Sub1 extends ha {
             if (class207s[i].aByteArray2695 != null) bool_284_ = true;
         }
         if (bool) {
-            if (bool_284_) return new Class324_Sub4(this, class143, class207s, is, is_283_);
-            return new Class324_Sub1(this, class143, class207s, is, is_283_);
+            if (bool_284_) return new FontRenderer_Sub4(this, fontMetrics, class207s, is, is_283_);
+            return new FontRenderer_Sub1(this, fontMetrics, class207s, is, is_283_);
         }
         if (bool_284_) throw new IllegalArgumentException("");
-        return new Class324_Sub3(this, class143, class207s, is, is_283_);
+        return new FontRenderer_Sub3(this, fontMetrics, class207s, is, is_283_);
     }
 
     final Interface4 method3634(Interface3 interface3, Interface13 interface13) {

@@ -42,7 +42,7 @@ final class Class130_Sub1 extends Class130 {
         Class101_Sub2.anInt5740 = 0;
         Class225.anInt2933 = 0;
         ha_Sub2.anInt7661 = 0;
-        Class143.anInt1991 = 0;
+        FontMetrics.anInt1991 = 0;
         Class246.anInt3175 = 0;
         Class348_Sub51.anInt7266 = 0;
         Applet_Sub1.anInt6 = 0;
@@ -131,7 +131,7 @@ final class Class130_Sub1 extends Class130 {
         Class243.anInt3162 = 0;
         Class348_Sub23_Sub1.anInt8999 = 0;
         Class243.anInt3160 = 0;
-        Class324.anInt4054 = 0;
+        FontRenderer.anInt4054 = 0;
         Class367_Sub10.anInt7389 = 0;
         Npc.anInt10496 = 0;
         Class377.anInt9842 = 0;
@@ -203,7 +203,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub1_Sub1.anInt9962 = 0;
         Class194.anInt2598 = 0;
         Class377.anInt9824 = 0;
-        Class324.anInt4051 = 0;
+        FontRenderer.anInt4051 = 0;
         Class348_Sub42_Sub7.anInt9540 = 0;
         Class348_Sub16_Sub3.anInt8951 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10007 = 0;
@@ -591,7 +591,7 @@ final class Class130_Sub1 extends Class130 {
         Class377.anInt9864 = 0;
         Class114.anInt1746 = 0;
         Class263.anInt3348 = 0;
-        Class324.anInt4050 = 0;
+        FontRenderer.anInt4050 = 0;
         ha_Sub3.anInt8006 = 0;
         Class318_Sub1_Sub1.anInt8722 = 0;
         Class367_Sub3.anInt7302 = 0;
@@ -661,7 +661,7 @@ final class Class130_Sub1 extends Class130 {
         Class226.anInt2963 = 0;
         ha_Sub2.anInt7534 = 0;
         Class348_Sub44.anInt7091 = 0;
-        Class324.anInt4052 = 0;
+        FontRenderer.anInt4052 = 0;
         Class348_Sub18.anInt6808 = 0;
         Class190.anInt2543 = 0;
         Class229.anInt2977 = 0;
@@ -899,7 +899,7 @@ final class Class130_Sub1 extends Class130 {
         Class101_Sub1.anInt5656 = 0;
         Class348_Sub27.anInt6906 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10070 = 0;
-        Class324.anInt4060 = 0;
+        FontRenderer.anInt4060 = 0;
         Class183.anInt2465 = 0;
         Class43.anInt616 = 0;
         Class213.anInt2806 = 0;
@@ -953,7 +953,7 @@ final class Class130_Sub1 extends Class130 {
         Class373_Sub2.anInt7428 = 0;
         Class239_Sub22.anInt6071 = 0;
         Player.anInt10523 = 0;
-        Class324.anInt4064 = 0;
+        FontRenderer.anInt4064 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10077 = 0;
         Class369_Sub1.anInt8581 = 0;
         Class170.anInt5076 = 0;
@@ -1406,7 +1406,7 @@ final class Class130_Sub1 extends Class130 {
         Class367_Sub4.anInt7316 = 0;
         ha_Sub2.anInt7615 = 0;
         Class287.anInt3692 = 0;
-        Class324.anInt4045 = 0;
+        FontRenderer.anInt4045 = 0;
         Class348_Sub49.anInt7178 = 0;
         Class333.anInt4149 = 0;
         client.anInt5173 = 0;
@@ -1685,7 +1685,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40.anInt7038 = 0;
         Class314_Sub1.anInt6367 = 0;
         Class348_Sub49.anInt7181 = 0;
-        Class324.anInt4058 = 0;
+        FontRenderer.anInt4058 = 0;
         Class101_Sub2.anInt5721 = 0;
         Class348_Sub40_Sub33.anInt9428 = 0;
         Class342.anInt4243 = 0;
@@ -1712,7 +1712,7 @@ final class Class130_Sub1 extends Class130 {
         Class377.anInt9890 = 0;
         Class348_Sub16_Sub3.anInt8905 = 0;
         Class286_Sub7.anInt6291 = 0;
-        Class324.anInt4059 = 0;
+        FontRenderer.anInt4059 = 0;
         Player.anInt10533 = 0;
         Class348_Sub40_Sub8.anInt9161 = 0;
         Class239_Sub17.anInt6026 = 0;
@@ -1766,7 +1766,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub1_Sub2.anInt9984 = 0;
         Class377.anInt9896 = 0;
         Class314_Sub1.anInt6362 = 0;
-        Class143.anInt1989 = 0;
+        FontMetrics.anInt1989 = 0;
         Class175.anInt2325 = 0;
         Class327.anInt4093 = 0;
         Class186_Sub1.anInt5805 = 0;
@@ -1909,7 +1909,7 @@ final class Class130_Sub1 extends Class130 {
         Npc.anInt10502 = 0;
         Class348_Sub46.anInt7109 = 0;
         Class284.anInt3665 = 0;
-        Class143.anInt1984 = 0;
+        FontMetrics.anInt1984 = 0;
         Class239_Sub6.anInt5896 = 0;
         ha_Sub3.anInt8015 = 0;
         r_Sub2.anInt10481 = 0;
@@ -2166,7 +2166,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub2.anInt5513 = 0;
         Class348_Sub17.anInt6803 = 0;
         Class78.anInt1310 = 0;
-        Class324.anInt4055 = 0;
+        FontRenderer.anInt4055 = 0;
         Class148.anInt2043 = 0;
         Class315.anInt3947 = 0;
         ha_Sub3.anInt8024 = 0;
@@ -2281,7 +2281,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7699 = 0;
         Class64.anInt1125 = 0;
         Class73.anInt4775 = 0;
-        Class324.anInt4065 = 0;
+        FontRenderer.anInt4065 = 0;
         Class239_Sub15.anInt6004 = 0;
         Class64.anInt1134 = 0;
         Class314_Sub1.anInt6349 = 0;
@@ -2318,7 +2318,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt8033 = 0;
         Class348_Sub11.anInt4769 = 0;
         Class286_Sub5.anInt6256 = 0;
-        Class324.anInt4061 = 0;
+        FontRenderer.anInt4061 = 0;
         Class98.anInt1568 = 0;
         Class50_Sub4.anInt5261 = 0;
         Class348_Sub11.anInt4768 = 0;
@@ -2359,7 +2359,7 @@ final class Class130_Sub1 extends Class130 {
         Class55.anInt992 = 0;
         Npc.anInt10509 = 0;
         ha_Sub3.anInt7913 = 0;
-        Class143.anInt1990 = 0;
+        FontMetrics.anInt1990 = 0;
         Class64_Sub3.anInt5633 = 0;
         ha_Sub2.anInt7563 = 0;
         ha_Sub2.anInt7520 = 0;
@@ -2460,7 +2460,7 @@ final class Class130_Sub1 extends Class130 {
         Class308.anInt3880 = 0;
         Class43.anInt613 = 0;
         s.anInt4593 = 0;
-        Class324.anInt4049 = 0;
+        FontRenderer.anInt4049 = 0;
         Class59_Sub2_Sub2.anInt8676 = 0;
         Class59_Sub1.anInt5295 = 0;
         r_Sub1.anInt10470 = 0;
@@ -2513,7 +2513,7 @@ final class Class130_Sub1 extends Class130 {
         Class101_Sub2.anInt5690 = 0;
         Canvas_Sub1.anInt65 = 0;
         Class318_Sub1_Sub5.anInt8768 = 0;
-        Class143.anInt1983 = 0;
+        FontMetrics.anInt1983 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10039 = 0;
         Class348_Sub40_Sub16.anInt9224 = 0;
         Class64_Sub3.anInt5589 = 0;
@@ -2542,7 +2542,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub31_Sub2.anInt9068 = 0;
         Class239_Sub21.anInt6069 = 0;
         Class377.anInt9846 = 0;
-        Class324.anInt4057 = 0;
+        FontRenderer.anInt4057 = 0;
         Canvas_Sub1.anInt69 = 0;
         Class377.anInt9892 = 0;
         Class54.anInt972 = 0;
@@ -2746,7 +2746,7 @@ final class Class130_Sub1 extends Class130 {
         Class367.anInt4482 = 0;
         Class76.anInt1278 = 0;
         Class377.anInt9863 = 0;
-        Class324.anInt4053 = 0;
+        FontRenderer.anInt4053 = 0;
         Class239_Sub3.anInt5861 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10011 = 0;
         Class367_Sub11.anInt7400 = 0;
@@ -2797,7 +2797,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub16_Sub3.anInt8946 = 0;
         ha_Sub3.anInt7897 = 0;
         ha_Sub2.anInt7689 = 0;
-        Class143.anInt1982 = 0;
+        FontMetrics.anInt1982 = 0;
         Class101_Sub2.anInt5718 = 0;
         Class101_Sub1.anInt5659 = 0;
         Class51.anInt866 = 0;
@@ -3045,7 +3045,7 @@ final class Class130_Sub1 extends Class130 {
         Class255.anInt3272 = 0;
         anInt5802 = 0;
         Class348_Sub47.anInt7117 = 0;
-        Class324.anInt4047 = 0;
+        FontRenderer.anInt4047 = 0;
         Class377.anInt9891 = 0;
         OutputStream_Sub2.anInt104 = 0;
         Class261.anInt3317 = 0;
@@ -3172,7 +3172,7 @@ final class Class130_Sub1 extends Class130 {
         Class373.anInt4535 = 0;
         Class239_Sub18.anInt6029 = 0;
         Class318_Sub1_Sub4_Sub2.anInt10107 = 0;
-        Class324.anInt4046 = 0;
+        FontRenderer.anInt4046 = 0;
         ha_Sub2.anInt7610 = 0;
         Class348_Sub23_Sub1.anInt8989 = 0;
         Class67.anInt4645 = 0;
@@ -3420,7 +3420,7 @@ final class Class130_Sub1 extends Class130 {
         Class369.anInt4967 = 0;
         Class179.anInt2359 = 0;
         Class351.anInt4322 = 0;
-        Class143.anInt1981 = 0;
+        FontMetrics.anInt1981 = 0;
         Class348_Sub42_Sub18.anInt9683 = 0;
         Class377.anInt9849 = 0;
         Class348_Sub42_Sub15.anInt9656 = 0;
@@ -3436,7 +3436,7 @@ final class Class130_Sub1 extends Class130 {
         Class277.anInt3565 = 0;
         Class48.anInt850 = 0;
         Class348_Sub4.anInt6615 = 0;
-        Class143.anInt1978 = 0;
+        FontMetrics.anInt1978 = 0;
         Class364.anInt4468 = 0;
         Class348_Sub42_Sub3.anInt9508 = 0;
         ha_Sub3.anInt7912 = 0;
@@ -3505,7 +3505,7 @@ final class Class130_Sub1 extends Class130 {
         Class319.anInt3986 = 0;
         Class141.anInt1972 = 0;
         Class314_Sub1.anInt6358 = 0;
-        Class143.anInt1980 = 0;
+        FontMetrics.anInt1980 = 0;
         Applet_Sub1.anInt40 = 0;
         ha.anInt4563 = 0;
         Class119_Sub2.anInt4828 = 0;
@@ -3533,7 +3533,7 @@ final class Class130_Sub1 extends Class130 {
         Class280.anInt3640 = 0;
         Class258_Sub3.anInt8548 = 0;
         Class10.anInt182 = 0;
-        Class324.anInt4056 = 0;
+        FontRenderer.anInt4056 = 0;
         Class348_Sub40_Sub36.anInt9454 = 0;
         Class311.anInt3905 = 0;
         Class348_Sub1_Sub1.anInt8804 = 0;
@@ -4006,7 +4006,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7948 = 0;
         Class104.anInt1614 = 0;
         Class318_Sub9.anInt6467 = 0;
-        Class143.anInt1985 = 0;
+        FontMetrics.anInt1985 = 0;
         Class54.anInt968 = 0;
         Class239_Sub5.anInt5884 = 0;
         Class187.anInt2499 = 0;

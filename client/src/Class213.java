@@ -315,7 +315,7 @@ final class Class213 {
         }
     }
 
-    final int[] method1562(int i, boolean bool, int i_37_, ha var_ha, ha var_ha_38_, Class324 class324, Class154 class154, int i_39_, byte i_40_, int i_41_) {
+    final int[] method1562(int i, boolean bool, int i_37_, ha var_ha, ha var_ha_38_, FontRenderer fontRenderer, Class154 class154, int i_39_, byte i_40_, int i_41_) {
         try {
             anInt2806++;
             Class124 class124 = Class300.method2277(0, (this.aClass255_2761.aClass45_3268), anInt2756, i_40_ ^ 0x65);
@@ -350,11 +350,11 @@ final class Class213 {
             Class105 class105 = null;
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    class105 = (this.aClass255_2761.method1932(var_ha_38_, i_37_, i, class324, class154, 0, true, (byte) 83, var_ha, this.anInt2778, false, i_41_));
+                    class105 = (this.aClass255_2761.method1932(var_ha_38_, i_37_, i, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2778, false, i_41_));
                     if (class105 == null) return null;
                 }
             } else {
-                class105 = (this.aClass255_2761.method1932(var_ha_38_, 0, 10, class324, class154, 0, true, (byte) 83, var_ha, this.anInt2758, true, 1));
+                class105 = (this.aClass255_2761.method1932(var_ha_38_, 0, 10, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2758, true, 1));
                 if (class105 == null) return null;
             }
             int i_48_;
@@ -392,7 +392,7 @@ final class Class213 {
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) class105.method974(0, 0);
             } else class105.method974(0, 0);
-            if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) class324.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15);
+            if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) fontRenderer.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15);
             is = var_ha_38_.na(0, 0, 36, 32);
             for (int i_52_ = 0; i_52_ < is.length; i_52_++) {
                 if ((0xffffff & is[i_52_]) != 0) is[i_52_] = Class273.method2057(is[i_52_], -16777216);
@@ -400,7 +400,7 @@ final class Class213 {
             }
             return is;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (var_ha_38_ != null ? "{...}" : "null") + ',' + (class324 != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (var_ha_38_ != null ? "{...}" : "null") + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
         }
     }
 

@@ -30,7 +30,7 @@ final class Class348_Sub40_Sub19 extends Class348_Sub40 {
                     }
                     if (i == 1 && class46.anObjectArray701 != null) {
                         if (class46.anInt704 >= 0) {
-                            Class46 class46_2_ = Class324.method2570(1512932720, (class46.anInt830));
+                            Class46 class46_2_ = FontRenderer.method2570(1512932720, (class46.anInt830));
                             if (class46_2_ == null || (class46_2_.aClass46Array798 == null) || (class46.anInt704 >= (class46_2_.aClass46Array798).length) || class46 != (class46_2_.aClass46Array798[class46.anInt704])) continue;
                         }
                         Class348_Sub36 class348_sub36 = new Class348_Sub36();

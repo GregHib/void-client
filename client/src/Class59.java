@@ -210,7 +210,7 @@ abstract class Class59 {
                 int i_61_ = 0;
                 int i_62_ = 0;
                 if (class42.aString597 != null) {
-                    i_60_ = (Class258_Sub1.aClass143_8527.method1188(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
+                    i_60_ = (Class258_Sub1.aFontMetrics_8527.splitLines(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
                     for (int i_63_ = 0; i_60_ > i_63_; i_63_++) {
                         String string = ha_Sub3.aStringArray8019[i_63_];
                         if (i_60_ + -1 > i_63_) string = string.substring(0, string.length() - 4);

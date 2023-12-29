@@ -130,17 +130,17 @@ abstract class Class318_Sub1 extends Class318 {
                     if (class42.aString597 == null) break;
                     int i_29_ = 0;
                     if (class105 != null) i_29_ = class105.method969();
-                    Class324 class324 = Class240.aClass324_4684;
-                    Class143 class143 = Class258_Sub1.aClass143_8527;
+                    FontRenderer fontRenderer = Class240.aFontRenderer_4684;
+                    FontMetrics fontMetrics = Class258_Sub1.aFontMetrics_8527;
                     if (class42.anInt576 == 1) {
-                        class324 = Applet_Sub1.aClass324_20;
-                        class143 = Class246.aClass143_3179;
+                        fontRenderer = Applet_Sub1.aFontRenderer_20;
+                        fontMetrics = Class246.aFontMetrics_3179;
                     }
                     if (class42.anInt576 == 2) {
-                        class143 = Class369.aClass143_4962;
-                        class324 = Class262.aClass324_3326;
+                        fontMetrics = Class369.aFontMetrics_4962;
+                        fontRenderer = Class262.aFontRenderer_3326;
                     }
-                    Class334.method2650(class143, class42.anInt580, var_aa, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100);
+                    Class334.method2650(fontMetrics, class42.anInt580, var_aa, i_8_, i_6_, class42.aString597, i, fontRenderer, i_29_, class46, i_5_, 100);
                 }
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ga.KA(" + (class46 != null ? "{...}" : "null") + ',' + i + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (var_ha != null ? "{...}" : "null") + ')'));

@@ -15,8 +15,8 @@ final class Class348_Sub48 extends Class348 {
     Class144[] aClass144Array7135;
     int[] anIntArray7136;
 
-    static final void method3328(Class324 class324) {
-        Class362.aClass324_4456 = class324;
+    static final void method3328(FontRenderer fontRenderer) {
+        Class362.aFontRenderer_4456 = fontRenderer;
     }
 
     public Class348_Sub48() {

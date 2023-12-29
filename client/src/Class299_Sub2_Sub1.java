@@ -64,7 +64,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
                 Class348_Sub5.aClass105_6627.method974((-Class348_Sub5.aClass105_6627.method971() + i_4_ - -i), i_5_);
             }
             if (bool == false) {
-                Class262.aClass324_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);
+                Class262.aFontRenderer_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);
                 var_ha.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 | 255 + -Class51.anInt948 << 24), 1);
             }
         } catch (RuntimeException runtimeexception) {

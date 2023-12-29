@@ -35,7 +35,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     private boolean aBoolean17 = false;
     static int anInt18;
     static int anInt19;
-    static Class324 aClass324_20;
+    static FontRenderer aFontRenderer_20;
     static int anInt21;
     static int anInt22;
     static int anInt23;
@@ -520,7 +520,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public static void method98(int i) {
         anIntArray38 = null;
-        aClass324_20 = null;
+        aFontRenderer_20 = null;
         if (i != 32717) method86(null, 65);
     }
 

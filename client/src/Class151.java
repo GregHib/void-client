@@ -47,7 +47,7 @@ final class Class151 {
                     }
                     int i_11_ = i_5_ * i_10_ + i_3_ * i_9_ >> 14;
                     int i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) >> 14;
-                    class105.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(class105.method966() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(class105.method980() / 2))), var_aa, i_2_, i);
+                    class105.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(class105.scaleWidth() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(class105.method980() / 2))), var_aa, i_2_, i);
                 }
             }
         } catch (RuntimeException runtimeexception) {

@@ -15,7 +15,7 @@ final class Class240 implements Interface1 {
     static int anInt4681;
     private final Class339 aClass339_4682;
     static long aLong4683;
-    static Class324 aClass324_4684;
+    static FontRenderer aFontRenderer_4684;
     private final Class125 aClass125_4685;
     static int anInt4686;
 
@@ -45,7 +45,7 @@ final class Class240 implements Interface1 {
         aClass105Array4679 = null;
         if (i != 48) anInt4674 = -62;
         aClass323_4672 = null;
-        aClass324_4684 = null;
+        aFontRenderer_4684 = null;
     }
 
     static final int method1854(int i, int i_5_, boolean bool, int i_6_) {
@@ -68,23 +68,23 @@ final class Class240 implements Interface1 {
             int i_7_ = ((aClass125_4685.aClass221_4922.method1607(Class92.anInt1524, aClass125_4685.anInt4929, (byte) -118)) - -aClass125_4685.anInt4924);
             int i_8_ = ((aClass125_4685.aClass341_4925.method2679(ha_Sub2.anInt7666, aClass125_4685.anInt4923, i ^ ~0x60b)) - -aClass125_4685.anInt4920);
             if (aClass125_4685.aBoolean4914) Class348_Sub8.aHa6654.method3628(i_7_, i_8_, aClass125_4685.anInt4929, aClass125_4685.anInt4923, aClass125_4685.anInt4917, 0);
-            i_8_ += method1855(5, class295.aString3756, true, Class262.aClass324_3326, i_7_, i_8_) * 12;
+            i_8_ += method1855(5, class295.aString3756, true, Class262.aFontRenderer_3326, i_7_, i_8_) * 12;
             i_8_ += 8;
             if (aClass125_4685.aBoolean4914) Class348_Sub8.aHa6654.method3709(i_7_, i_8_, i_7_ + aClass125_4685.anInt4929 + -1, i_8_, aClass125_4685.anInt4917, 0);
-            i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, Class262.aClass324_3326, i_7_, i_8_) * 12;
+            i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, Class262.aFontRenderer_3326, i_7_, i_8_) * 12;
             i_8_ += 5;
-            i_8_ += method1855(5, class295.aString3758, true, Class262.aClass324_3326, i_7_, i_8_) * 12;
+            i_8_ += method1855(5, class295.aString3758, true, Class262.aFontRenderer_3326, i_7_, i_8_) * 12;
         }
         if (i != -49) method8((byte) 12);
     }
 
-    private final int method1855(int i, String string, boolean bool, Class324 class324, int i_9_, int i_10_) {
+    private final int method1855(int i, String string, boolean bool, FontRenderer fontRenderer, int i_9_, int i_10_) {
         try {
             if (bool != true) return -62;
             anInt4677++;
-            return (class324.method2584(null, 0, aClass125_4685.anInt4928, null, aClass125_4685.anInt4913, 0, -(i * 2) + aClass125_4685.anInt4923, null, i + i_10_, 0, 0, -(i * 2) + aClass125_4685.anInt4929, i_9_ + i, false, 0, string));
+            return (fontRenderer.method2584(null, 0, aClass125_4685.anInt4928, null, aClass125_4685.anInt4913, 0, -(i * 2) + aClass125_4685.anInt4923, null, i + i_10_, 0, 0, -(i * 2) + aClass125_4685.anInt4929, i_9_ + i, false, 0, string));
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ta.A(" + i + ',' + (string != null ? "{...}" : "null") + ',' + bool + ',' + (class324 != null ? "{...}" : "null") + ',' + i_9_ + ',' + i_10_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ta.A(" + i + ',' + (string != null ? "{...}" : "null") + ',' + bool + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + i_9_ + ',' + i_10_ + ')'));
         }
     }
 
