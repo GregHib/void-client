@@ -90,7 +90,7 @@ final class Class304 {
 
     static final void method2291(byte i, int i_4_, int i_5_) {
         anInt3849++;
-        int i_6_ = (Class369.aClass143_4962.method1183(true, Class274.aClass274_3507.method2063(Class348_Sub33.anInt6967, 544)));
+        int i_6_ = (Class369.aFontMetrics_4962.width(true, Class274.aClass274_3507.method2063(Class348_Sub33.anInt6967, 544)));
         int i_7_;
         if (Class348_Sub42_Sub6.aBoolean9535) {
             for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-87)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 126))) {

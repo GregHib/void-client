@@ -265,7 +265,7 @@ final class Class82 {
                         if (string.startsWith("setba")) {
                             if (string.length() < 6) Applet_Sub1.method94("Invalid buildarea value", i + -36);
                             else {
-                                int i_6_ = (Class348_Sub41.method3156(true, string.substring(6)));
+                                int i_6_ = (Class348_Sub41.parseInt(true, string.substring(6)));
                                 if (i_6_ < 0 || (Class348.method2710(-126, Class226.anInt2964) < i_6_)) Applet_Sub1.method94("Invalid buildarea value", 53);
                                 else {
                                     Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub6_7226), i_6_);
@@ -281,7 +281,7 @@ final class Class82 {
                         if (string.startsWith("rect_debug")) {
                             if (string.length() < 10) Applet_Sub1.method94("Invalid rect_debug value", -94);
                             else {
-                                ha_Sub3.anInt8045 = Class348_Sub41.method3156(true, string.substring(10).trim());
+                                ha_Sub3.anInt8045 = Class348_Sub41.parseInt(true, string.substring(10).trim());
                                 Applet_Sub1.method94(("rect_debug=" + ha_Sub3.anInt8045), -124);
                                 break;
                             }
@@ -545,7 +545,7 @@ final class Class82 {
                             int i_20_ = string.indexOf(' ');
                             if (i_20_ < 0) Applet_Sub1.method94("Syntax: ortho <n>", 66);
                             else {
-                                int i_21_ = (Class348_Sub41.method3156(true, string.substring(1 + i_20_)));
+                                int i_21_ = (Class348_Sub41.parseInt(true, string.substring(1 + i_20_)));
                                 Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub3_7222), i_21_);
                                 Class14_Sub2.method243(37);
                                 r.aBoolean9719 = false;
@@ -561,7 +561,7 @@ final class Class82 {
                         if (string.startsWith("orthozoom ")) {
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.method1727(i + -32271) == 0) Applet_Sub1.method94("enable ortho mode first (use 'ortho <n>')", i + 182);
                             else {
-                                int i_22_ = (Class348_Sub41.method3156(true, string.substring(string.indexOf(' ') - -1)));
+                                int i_22_ = (Class348_Sub41.parseInt(true, string.substring(string.indexOf(' ') - -1)));
                                 Class132.anInt1911 = i_22_;
                                 Applet_Sub1.method94(("orthozoom=" + Class132.anInt1911), 68);
                                 break;
@@ -569,7 +569,7 @@ final class Class82 {
                             break;
                         }
                         if (string.startsWith("orthotilesize ")) {
-                            int i_23_ = (Class348_Sub41.method3156(true, string.substring(1 + string.indexOf(' '))));
+                            int i_23_ = (Class348_Sub41.parseInt(true, string.substring(1 + string.indexOf(' '))));
                             Class186_Sub1.anInt5812 = Class45.anInt666 = i_23_;
                             Applet_Sub1.method94("ortho tile size=" + i_23_, -70);
                             Class348_Sub42_Sub3.method3179(0);
@@ -622,7 +622,7 @@ final class Class82 {
                             Class348_Sub42_Sub6.method3189(0, strings);
                         }
                         if (string.startsWith("zoom ")) {
-                            short i_24_ = (short) (Class348_Sub41.method3156(true, string.substring(5)));
+                            short i_24_ = (short) (Class348_Sub41.parseInt(true, string.substring(5)));
                             if (i_24_ > 0) Class320.aShort3992 = i_24_;
                             break;
                         }
@@ -636,7 +636,7 @@ final class Class82 {
                             Class348_Sub42_Sub14.method3243(120, class348_sub47);
                         }
                         if (string.startsWith("fps ") && (Class8.aClass364_165 != Class55_Sub1.aClass364_5271)) {
-                            Class295.method2222((Class348_Sub41.method3156(true, string.substring(4))), (byte) -124);
+                            Class295.method2222((Class348_Sub41.parseInt(true, string.substring(4))), (byte) -124);
                             break;
                         }
                     } catch (Exception exception) {

@@ -174,7 +174,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             if (Class298.aBoolean3811) {
                                                 int i_39_ = -256;
                                                 if (Class239_Sub5.anInt5891 < 20) i_39_ = -65536;
-                                                Applet_Sub1.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1);
+                                                Applet_Sub1.aFontRenderer_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1);
                                                 i_38_ += 15;
                                                 Runtime runtime = Runtime.getRuntime();
                                                 int i_40_ = (int) (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L);
@@ -189,12 +189,12 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                         if (i_40_ > 65536) Class59.method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4);
                                                     }
                                                 }
-                                                Applet_Sub1.aClass324_20.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1);
+                                                Applet_Sub1.aFontRenderer_20.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1);
                                                 i_38_ += 15;
-                                                Applet_Sub1.aClass324_20.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1);
+                                                Applet_Sub1.aFontRenderer_20.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1);
                                                 i_38_ += 15;
                                                 int i_43_ = (Class348_Sub8.aHa6654.E() / 1024);
-                                                Applet_Sub1.aClass324_20.method2569("Offheap:" + i_43_ + "k", i_38_, (i_43_ <= 65536 ? -256 : -65536), i_37_, -125, -1);
+                                                Applet_Sub1.aFontRenderer_20.method2569("Offheap:" + i_43_ + "k", i_38_, (i_43_ <= 65536 ? -256 : -65536), i_37_, -125, -1);
                                                 i_38_ += 15;
                                                 int i_44_ = 0;
                                                 int i_45_ = 0;
@@ -209,25 +209,25 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                 int i_48_ = i_46_ * 100 / i_44_;
                                                 int i_49_ = 10000 * i_45_ / i_44_;
                                                 String string = ("Cache:" + (Class357.method3486(2, true, 0, i_49_, 16980)) + "% (" + i_48_ + "%)");
-                                                Class240.aClass324_4684.method2569(string, i_38_, -256, i_37_, -127, -1);
+                                                Class240.aFontRenderer_4684.method2569(string, i_38_, -256, i_37_, -127, -1);
                                                 i_38_ += 12;
                                                 if (Loader.showCoordinates) {
                                                     int playerX = (Class132.aPlayer_1907.x >> 9) + za_Sub2.regionTileX;
                                                     int playerY = (Class132.aPlayer_1907.y >> 9) + Class90.regionTileY;
-                                                    Class240.aClass324_4684.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aPlayer_1907.plane, i_38_, -256, i_37_, -127, -1);
+                                                    Class240.aFontRenderer_4684.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aPlayer_1907.plane, i_38_, -256, i_37_, -127, -1);
                                                     i_38_ += 12;
-                                                    Class240.aClass324_4684.method2569("Region id: " + (((playerX >> 6) << 8) + (playerY >> 6)) + " (" + (playerX >> 6) + ", " + (playerY >> 6) + ")", i_38_, -256, i_37_, -127, -1);
+                                                    Class240.aFontRenderer_4684.method2569("Region id: " + (((playerX >> 6) << 8) + (playerY >> 6)) + " (" + (playerX >> 6) + ", " + (playerY >> 6) + ")", i_38_, -256, i_37_, -127, -1);
                                                     i_38_ += 12;
-                                                    Class240.aClass324_4684.method2569("Chunk: " + (playerX >> 3) + ", " + (playerY >> 3), i_38_, -256, i_37_, -127, -1);
+                                                    Class240.aFontRenderer_4684.method2569("Chunk: " + (playerX >> 3) + ", " + (playerY >> 3), i_38_, -256, i_37_, -127, -1);
                                                     i_38_ += 12;
                                                 }
                                             }
-                                            if (Class313.anInt3936 > 0) Class240.aClass324_4684.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1);
+                                            if (Class313.anInt3936 > 0) Class240.aFontRenderer_4684.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1);
                                             i_38_ += 12;
                                             if (Class188.aBoolean2514) {
-                                                Class240.aClass324_4684.method2569(("Polys: " + Class348_Sub8.aHa6654.I() + " Models: " + Class348_Sub8.aHa6654.M()), i_38_, -256, i_37_, -127, -1);
+                                                Class240.aFontRenderer_4684.method2569(("Polys: " + Class348_Sub8.aHa6654.I() + " Models: " + Class348_Sub8.aHa6654.M()), i_38_, -256, i_37_, -127, -1);
                                                 i_38_ += 12;
-                                                Class240.aClass324_4684.method2569(("Ls: " + Class177.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + za_Sub1.anInt9776), i_38_, -256, i_37_, -122, -1);
+                                                Class240.aFontRenderer_4684.method2569(("Ls: " + Class177.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + za_Sub1.anInt9776), i_38_, -256, i_37_, -122, -1);
                                                 Class110_Sub1.method1042((byte) -123);
                                                 i_38_ += 12;
                                             }
@@ -257,8 +257,8 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             else Class54.method503(i_22_, i_19_, (byte) -74, i_21_, i_20_);
                                         }
                                     } else if (class46.anInt774 == 4) {
-                                        Class324 class324 = class46.method426((Class348_Sub8.aHa6654), (byte) 68);
-                                        if (class324 == null) {
+                                        FontRenderer fontRenderer = class46.method426((Class348_Sub8.aHa6654), (byte) 68);
+                                        if (fontRenderer == null) {
                                             if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46);
                                         } else {
                                             int i_50_ = class46.anInt749;
@@ -278,7 +278,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                 i_50_ = (class46.anInt749);
                                             }
                                             if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aHa6654.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_);
-                                            class324.method2568(null, class46.anInt789, (byte) -77, null, 0, Class113.aClass105Array1744, (-(i_28_ & 0xff) + 255 << 24) | i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (!(class46.aBoolean769) ? -1 : (-(0xff & i_28_) + 255 << 24)), class46.anInt773, class46.anInt673);
+                                            fontRenderer.method2568(null, class46.anInt789, (byte) -77, null, 0, Class113.aClass105Array1744, (-(i_28_ & 0xff) + 255 << 24) | i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (!(class46.aBoolean769) ? -1 : (-(0xff & i_28_) + 255 << 24)), class46.anInt773, class46.anInt673);
                                             if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aHa6654.KA(i, i_12_, i_14_, i_17_);
                                             if (string.trim().length() > 0) {
                                                 if (Class318_Sub1_Sub3_Sub2.aBoolean10046) {
@@ -287,9 +287,9 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                         else Class338.method2663(-5590, i_19_, i_21_, i_20_, i_22_);
                                                     }
                                                 } else {
-                                                    Class143 class143 = (Class135.method1151(-25411, (Class348_Sub8.aHa6654), (class46.anInt702)));
-                                                    int i_51_ = (class143.method1187(string, bool_15_, class46.anInt709, (Class113.aClass105Array1744)));
-                                                    int i_52_ = (class143.method1185((Class113.aClass105Array1744), 0, class46.anInt673, class46.anInt709, string));
+                                                    FontMetrics fontMetrics = (Class135.method1151(-25411, (Class348_Sub8.aHa6654), (class46.anInt702)));
+                                                    int i_51_ = (fontMetrics.lineWidth(string, bool_15_, class46.anInt709, (Class113.aClass105Array1744)));
+                                                    int i_52_ = (fontMetrics.method1185((Class113.aClass105Array1744), 0, class46.anInt673, class46.anInt709, string));
                                                     if (Class59_Sub1.aBoolean5300) {
                                                         if (!bool) Class54.method503(i_25_ + i_52_, i_24_, (byte) -74, (i_24_ - -i_51_), i_25_);
                                                         else Class338.method2663(-5590, i_24_, i_51_ + i_24_, i_25_, (i_25_ + i_52_));
@@ -310,7 +310,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             if (class105 == null) {
                                                 if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46);
                                             } else {
-                                                int i_53_ = class105.method966();
+                                                int i_53_ = class105.scaleWidth();
                                                 int i_54_ = class105.method980();
                                                 int i_55_ = ((-(i_28_ & 0xff) + 255 << 24) | ((class46.anInt749) != 0 ? (class46.anInt749 & 0xffffff) : 16777215));
                                                 if (class46.aBoolean697) {

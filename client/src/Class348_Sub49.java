@@ -291,7 +291,7 @@ class Class348_Sub49 extends Class348 {
     static final void method3354(int i) {
         if (Class348_Sub34.aHa6968 != null) {
             Class348_Sub34.aHa6968.method3635((byte) -44);
-            Class348_Sub40_Sub9.aClass324_9173 = null;
+            Class348_Sub40_Sub9.aFontRenderer_9173 = null;
             Class348_Sub34.aHa6968 = null;
         }
         int i_37_ = -97 % ((i - -14) / 37);

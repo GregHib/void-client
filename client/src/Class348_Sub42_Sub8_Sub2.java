@@ -148,9 +148,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 class348_sub41.method2715((byte) 32);
                 Class125.aClass356_4915.method3483((byte) 102, i, class348_sub41);
             }
-            Class46 class46 = Class324.method2570(1512932720, i_9_);
+            Class46 class46 = FontRenderer.method2570(1512932720, i_9_);
             if (class46 != null) Class251.method1916(-9343, class46);
-            class46 = Class324.method2570(1512932720, i);
+            class46 = FontRenderer.method2570(1512932720, i);
             if (class46 != null) {
                 Class251.method1916(-9343, class46);
                 Class251.method1913(true, -123, class46);
@@ -1156,7 +1156,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 Class348_Sub44 class348_sub44 = ((Class348_Sub44) Class226.aClass356_2959.method3480(l, -6008));
                 Class348_Sub44 class348_sub44_148_;
                 if (class348_sub44 == null) {
-                    if (i_147_ == -1) class348_sub44_148_ = (new Class348_Sub44(Class324.method2570(1512932720, i).aClass348_Sub44_748.anInt7098, i_144_));
+                    if (i_147_ == -1) class348_sub44_148_ = (new Class348_Sub44(FontRenderer.method2570(1512932720, i).aClass348_Sub44_748.anInt7098, i_144_));
                     else class348_sub44_148_ = new Class348_Sub44(0, i_144_);
                 } else {
                     class348_sub44_148_ = new Class348_Sub44((class348_sub44.anInt7098), i_144_);
@@ -1558,7 +1558,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 if (class348_sub44 != null) {
                     class348_sub44_212_ = new Class348_Sub44(i_210_, (class348_sub44.anInt7093));
                     class348_sub44.method2715((byte) 80);
-                } else if (i_211_ == -1) class348_sub44_212_ = (new Class348_Sub44(i_210_, Class324.method2570(1512932720, i_209_).aClass348_Sub44_748.anInt7093));
+                } else if (i_211_ == -1) class348_sub44_212_ = (new Class348_Sub44(i_210_, FontRenderer.method2570(1512932720, i_209_).aClass348_Sub44_748.anInt7093));
                 else class348_sub44_212_ = new Class348_Sub44(i_210_, -1);
                 Class226.aClass356_2959.method3483((byte) 114, l, class348_sub44_212_);
             }

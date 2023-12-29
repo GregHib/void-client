@@ -55,7 +55,7 @@ abstract class Class105_Sub3 extends Class105 {
         if (anIntArray8462 == null) anIntArray8462 = new int[4];
         this.aHa_Sub1_8460.K(anIntArray8462);
         this.aHa_Sub1_8460.T(this.aHa_Sub1_8460.anInt7496, this.aHa_Sub1_8460.anInt7476, i + i_5_, i_4_ + i_6_);
-        int i_10_ = method966();
+        int i_10_ = scaleWidth();
         int i_11_ = method980();
         int i_12_ = (i_5_ + i_10_ - 1) / i_10_;
         int i_13_ = (i_6_ + i_11_ - 1) / i_11_;
@@ -143,7 +143,7 @@ abstract class Class105_Sub3 extends Class105 {
         this.anInt8470 = i_55_;
     }
 
-    final int method966() {
+    final int scaleWidth() {
         return (this.anInt8461 + this.anInt8471 + this.anInt8454);
     }
 

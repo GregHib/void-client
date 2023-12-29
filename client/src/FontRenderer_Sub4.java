@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class324_Sub4 extends Class324 {
+final class FontRenderer_Sub4 extends FontRenderer {
     private final int[] anIntArray6503;
     private final byte[][] aByteArrayArray6504;
     private final int[] anIntArray6505;
@@ -10,8 +10,8 @@ final class Class324_Sub4 extends Class324 {
     private final int[] anIntArray6507;
     private final int[] anIntArray6508;
 
-    Class324_Sub4(ha_Sub1 var_ha_Sub1, Class143 class143, Class207[] class207s, int[] is, int[] is_0_) {
-        super(var_ha_Sub1, class143);
+    FontRenderer_Sub4(ha_Sub1 var_ha_Sub1, FontMetrics fontMetrics, Class207[] class207s, int[] is, int[] is_0_) {
+        super(var_ha_Sub1, fontMetrics);
         aHa_Sub1_6506 = var_ha_Sub1;
         aHa_Sub1_6506 = var_ha_Sub1;
         anIntArray6503 = is;

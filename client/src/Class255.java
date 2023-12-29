@@ -54,7 +54,7 @@ final class Class255 {
         aClass161_3285 = null;
     }
 
-    final Class105 method1932(ha var_ha, int i, int i_0_, Class324 class324, Class154 class154, int i_1_, boolean bool, byte i_2_, ha var_ha_3_, int i_4_, boolean bool_5_, int i_6_) {
+    final Class105 method1932(ha var_ha, int i, int i_0_, FontRenderer fontRenderer, Class154 class154, int i_1_, boolean bool, byte i_2_, ha var_ha_3_, int i_4_, boolean bool_5_, int i_6_) {
         try {
             anInt3266++;
             Class105 class105 = method1941(i_6_, (byte) -74, i_4_, i_0_, i, i_1_, var_ha_3_, class154);
@@ -68,7 +68,7 @@ final class Class255 {
                 if (i_7_ != -1) class213 = method1940(127, i_7_);
             }
             if (i_2_ != 83) method1935(-83, -37, null, null, false, -49);
-            int[] is = class213.method1562(i_0_, bool_5_, i, var_ha_3_, var_ha, class324, class154, i_1_, (byte) -102, i_6_);
+            int[] is = class213.method1562(i_0_, bool_5_, i, var_ha_3_, var_ha, fontRenderer, class154, i_1_, (byte) -102, i_6_);
             if (is == null) return null;
             Class105 class105_9_;
             if (bool) class105_9_ = var_ha.method3662(36, is, (byte) 94, 0, 36, 32);
@@ -86,7 +86,7 @@ final class Class255 {
             }
             return class105_9_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (class324 != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (var_ha_3_ != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (var_ha_3_ != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'));
         }
     }
 

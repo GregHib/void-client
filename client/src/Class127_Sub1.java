@@ -2,8 +2,6 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import java.lang.reflect.Method;
-
 final class Class127_Sub1 extends Class127 {
     static Class271 aClass271_8378;
     static int anInt8379;
@@ -20,9 +18,9 @@ final class Class127_Sub1 extends Class127 {
 
     public final void method9(byte i, boolean bool) {
         anInt8379++;
-        int i_0_ = ((this.aClass288_4659.aClass221_4955.method1607(Class92.anInt1524, this.aClass105_4655.method966(), (byte) -117)) - -this.aClass288_4659.anInt4950);
+        int i_0_ = ((this.aClass288_4659.aClass221_4955.method1607(Class92.anInt1524, this.aClass105_4655.scaleWidth(), (byte) -117)) - -this.aClass288_4659.anInt4950);
         int i_1_ = ((this.aClass288_4659.aClass341_4952.method2679(ha_Sub2.anInt7666, this.aClass105_4655.method980(), 1595)) + this.aClass288_4659.anInt4951);
-        this.aClass105_4655.method981((float) (this.aClass105_4655.method966() / 2 + i_0_), (float) (this.aClass105_4655.method980() / 2 + i_1_), 4096, anInt8383);
+        this.aClass105_4655.method981((float) (this.aClass105_4655.scaleWidth() / 2 + i_0_), (float) (this.aClass105_4655.method980() / 2 + i_1_), 4096, anInt8383);
         anInt8383 += ((Class288_Sub1) this.aClass288_4659).anInt8577;
         if (i != -49) method9((byte) -26, true);
     }
@@ -35,7 +33,7 @@ final class Class127_Sub1 extends Class127 {
             class348_sub41.method2715((byte) 35);
             if (bool) Class14.method235(i_3_, (byte) -116);
             Class166.method1288(i ^ ~0x9e2, i_3_);
-            Class46 class46 = Class324.method2570(1512932720, i_4_);
+            Class46 class46 = FontRenderer.method2570(1512932720, i_4_);
             if (class46 != null) Class251.method1916(-9343, class46);
             Class348_Sub42_Sub17.method3270((byte) 119);
             if (!bool_2_ && r.anInt9721 != -1) Class239_Sub12.method1775((byte) -8, r.anInt9721, 1);

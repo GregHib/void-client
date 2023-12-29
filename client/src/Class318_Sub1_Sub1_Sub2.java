@@ -176,7 +176,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
                     int i_14_ = -12 + (i - -Class239_Sub21.anIntArray6062[0]);
                     int i_15_ = i_8_ - -Class239_Sub21.anIntArray6062[1] - 28;
                     class105.method974(i_14_, i_15_);
-                    Class338.method2663(-5590, i_14_, i_14_ - -class105.method966(), i_15_, class105.method980() + i_15_);
+                    Class338.method2663(-5590, i_14_, i_14_ - -class105.scaleWidth(), i_15_, class105.method980() + i_15_);
                 }
             }
         }

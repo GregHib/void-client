@@ -75,8 +75,8 @@ final class Class190 {
                 if (class348_sub21.aBoolean6848 && class42.anInt605 != -1) class105 = class42.method374(true, var_ha, (byte) 127);
                 else class105 = class42.method374(false, var_ha, (byte) 127);
                 if (class105 != null) {
-                    i_11_ = (class348_sub21.anInt6853 + -(class105.method966() - -1 >> 1));
-                    i_12_ = (class348_sub21.anInt6853 + (1 + class105.method966() >> 1));
+                    i_11_ = (class348_sub21.anInt6853 + -(class105.scaleWidth() - -1 >> 1));
+                    i_12_ = (class348_sub21.anInt6853 + (1 + class105.scaleWidth() >> 1));
                     if (i_11_ < i_7_) i_7_ = i_11_;
                     if (i_12_ > i_8_) i_8_ = i_12_;
                     i_13_ = (class348_sub21.anInt6855 - (class105.method980() - -1 >> 1));
@@ -97,7 +97,7 @@ final class Class190 {
             if (class42.aString597 != null) {
                 class323 = Class239_Sub15.method1782(class42.anInt576, 10144);
                 if (class323 != null) {
-                    i_15_ = (Class258_Sub1.aClass143_8527.method1188(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
+                    i_15_ = (Class258_Sub1.aFontMetrics_8527.splitLines(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
                     i_17_ = (class348_sub21.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)));
                     i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)));
                     if (class105 == null) i_17_ -= i_15_ * class323.method2560() / 2;
@@ -132,7 +132,7 @@ final class Class190 {
                     var_ha.method3656((byte) -112, i_26_, 1 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
                     var_ha.method3656((byte) -123, i_26_, class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
                 }
-                class105.method974((class348_sub21.anInt6853 + -(class105.method966() >> 1)), (class348_sub21.anInt6855 + -(class105.method980() >> 1)));
+                class105.method974((class348_sub21.anInt6853 + -(class105.scaleWidth() >> 1)), (class348_sub21.anInt6855 + -(class105.method980() >> 1)));
             }
             if (class42.aString597 != null && class323 != null) Class342.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_ha, i_17_, i_18_, class42);
             if (class42.anInt578 != -1 || class42.aString597 != null) {

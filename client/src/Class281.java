@@ -8,7 +8,7 @@ final class Class281 {
     static int anInt3646;
     static int anInt3647;
     static Class351 aClass351_3648 = new Class351(55, 4);
-    static Class143 aClass143_3649;
+    static FontMetrics aFontMetrics_3649;
     static int anInt3650;
 
     static final void method2106(String string, int i) {
@@ -35,7 +35,7 @@ final class Class281 {
 
     public static void method2107(byte i) {
         aClass351_3648 = null;
-        aClass143_3649 = null;
+        aFontMetrics_3649 = null;
         aClass351_3644 = null;
         if (i != 77) method2107((byte) -107);
     }
@@ -45,7 +45,7 @@ final class Class281 {
         int i_2_ = string.length();
         int i_3_ = 0;
         for (int i_4_ = 0; i_2_ > i_4_; i_4_++)
-            i_3_ = (Class354.method3464(string.charAt(i_4_), false) + ((i_3_ << 5) - i_3_));
+            i_3_ = (Class354.charToByte(string.charAt(i_4_), false) + ((i_3_ << 5) - i_3_));
         if (i != -29286) return 0;
         return i_3_;
     }

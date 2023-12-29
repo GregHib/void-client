@@ -9,7 +9,7 @@ abstract class Class246 {
     static int anInt3176;
     static float aFloat3177;
     static int anInt3178;
-    static Class143 aClass143_3179;
+    static FontMetrics aFontMetrics_3179;
 
     static final void method1885(int i, int i_0_, int i_1_, int i_2_, int i_3_, float[] fs, int i_4_, float f, int i_5_, int i_6_, float f_7_, float[] fs_8_) {
         try {
@@ -45,7 +45,7 @@ abstract class Class246 {
     public static void method1886(int i) {
         if (i != 4908) method1885(-84, 89, 50, 37, 107, null, -109, 0.5058839F, -21, -30, 0.003914575F, null);
         anIntArray3173 = null;
-        aClass143_3179 = null;
+        aFontMetrics_3179 = null;
     }
 
     static final boolean method1887(int i, int i_16_, int i_17_) {

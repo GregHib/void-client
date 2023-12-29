@@ -118,7 +118,7 @@ final class Class267 {
                         i_3_ = class51.anInt926;
                         i_4_ = class51.anInt961;
                     }
-                    int i_6_ = class105.method966();
+                    int i_6_ = class105.scaleWidth();
                     int i_7_ = class105.method980();
                     if (class218.aBoolean2854) {
                         i_7_ = i_4_ * 4;

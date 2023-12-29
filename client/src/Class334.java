@@ -42,7 +42,7 @@ final class Class334 {
         return new Class334(this.anInt4156, this.anInt4165, this.anInt4162, this.anInt4158, this.anInt4154, this.anInt4151);
     }
 
-    static final void method2650(Class143 class143, int i, aa var_aa, int i_1_, int i_2_, String string, int i_3_, Class324 class324, int i_4_, Class46 class46, int i_5_, int i_6_) {
+    static final void method2650(FontMetrics fontMetrics, int i, aa var_aa, int i_1_, int i_2_, String string, int i_3_, FontRenderer fontRenderer, int i_4_, Class46 class46, int i_5_, int i_6_) {
         try {
             anInt4153++;
             int i_7_;
@@ -59,14 +59,14 @@ final class Class334 {
                 }
                 int i_12_ = i_10_ * i_1_ + i_5_ * i_11_ >> 14;
                 int i_13_ = -(i_5_ * i_10_) + i_11_ * i_1_ >> 14;
-                int i_14_ = class143.method1187(string, false, 100, null);
-                int i_15_ = class143.method1185(null, 0, 0, i_6_, string);
+                int i_14_ = fontMetrics.lineWidth(string, false, 100, null);
+                int i_15_ = fontMetrics.method1185(null, 0, 0, i_6_, string);
                 i_12_ -= i_14_ / 2;
                 if (-class46.anInt709 <= i_12_ && class46.anInt709 >= i_12_ && (i_13_ >= -class46.anInt789) && class46.anInt789 >= i_13_)
-                    class324.method2584(null, 0, 0, null, i, 0, 50, var_aa, (-i_4_ + (i_3_ + (class46.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (class46.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string);
+                    fontRenderer.method2584(null, 0, 0, null, i, 0, 50, var_aa, (-i_4_ + (i_3_ + (class46.anInt789 / 2 + (-i_13_ - i_15_)))), i_2_, i_3_, i_14_, (class46.anInt709 / 2 + (i_2_ + i_12_)), false, 1, string);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dk.H(" + (class143 != null ? "{...}" : "null") + ',' + i + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (string != null ? "{...}" : "null") + ',' + i_3_ + ',' + (class324 != null ? "{...}" : "null") + ',' + i_4_ + ',' + (class46 != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("dk.H(" + (fontMetrics != null ? "{...}" : "null") + ',' + i + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (string != null ? "{...}" : "null") + ',' + i_3_ + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + i_4_ + ',' + (class46 != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ')'));
         }
     }
 

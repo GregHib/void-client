@@ -70,8 +70,8 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
     static final void method249(int i) {
         anInt8627++;
         Class286_Sub1.aStringArray6200 = new String[500];
-        Class348_Sub31_Sub2.anInt9077 = 2 + (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988);
-        Class68.anInt1188 = (Class246.aClass143_3179.anInt1988 - (-Class246.aClass143_3179.anInt1993 - i));
+        Class348_Sub31_Sub2.anInt9077 = 2 + (Class369.aFontMetrics_4962.bottomPadding + Class369.aFontMetrics_4962.topPadding);
+        Class68.anInt1188 = (Class246.aFontMetrics_3179.topPadding - (-Class246.aFontMetrics_3179.bottomPadding - i));
         for (int i_4_ = 0; (i_4_ < Class286_Sub1.aStringArray6200.length); i_4_++)
             Class286_Sub1.aStringArray6200[i_4_] = "";
         Applet_Sub1.method94(Class274.aClass274_3483.method2063(Class348_Sub33.anInt6967, 544), 67);

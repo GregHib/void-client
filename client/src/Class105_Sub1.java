@@ -66,7 +66,7 @@ final class Class105_Sub1 extends Class105 {
         return new Class369_Sub2(class369.aClass221_4968, class369.aClass341_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_8_, i_9_);
     }
 
-    final int method966() {
+    final int scaleWidth() {
         anInt8399++;
         return anInt8416 + anInt8400 + anInt8411;
     }
@@ -103,7 +103,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
         aHa_Sub3_8407.method3894(-28186, i_17_);
         if (aBoolean8418) {
-            float f_21_ = (float) method966();
+            float f_21_ = (float) scaleWidth();
             float f_22_ = (float) method980();
             float f_23_ = (-f + f_13_) / f_21_;
             float f_24_ = (-f_12_ + f_14_) / f_21_;
@@ -182,7 +182,7 @@ final class Class105_Sub1 extends Class105 {
             }
         } else if (bool) {
             int i_61_ = i - -i_36_;
-            int i_62_ = method966();
+            int i_62_ = scaleWidth();
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -121, (float) i_37_), anInterface18_Impl3_8403.method67((float) anInt8411, 77), (byte) -27);
             aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
             int i_63_ = i - -anInt8400;
@@ -205,7 +205,7 @@ final class Class105_Sub1 extends Class105 {
         } else {
             int i_48_ = i_37_ + i_35_;
             int i_49_ = i + i_36_;
-            int i_50_ = method966();
+            int i_50_ = scaleWidth();
             int i_51_ = method980();
             int i_52_ = anInt8419 + i_35_;
             int i_53_ = i_52_ + anInt8417;
@@ -274,7 +274,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3817(86, 1);
         aHa_Sub3_8407.method3923(true, 1);
         if (aBoolean8418) {
-            float f_74_ = (float) anInt8411 / (float) method966();
+            float f_74_ = (float) anInt8411 / (float) scaleWidth();
             float f_75_ = (float) anInt8417 / (float) method980();
             class101_sub2.method935(1.0F, f_74_ * (-f_66_ + f_68_), f_75_ * (-f + f_69_), 0.0F, 0.0F, f_75_ * (f_70_ - f_66_), 0.0F, 0.0F, (f_67_ - f) * f_74_, 0);
             class101_sub2.method920(((float) anInt8419 + f_66_) * f_75_, false, 0.0F, ((float) anInt8400 + f) * f_74_);
@@ -357,7 +357,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3894(-28186, i_98_);
         class101_sub2_101_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -44, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 101), (byte) -30);
         if (aBoolean8418) {
-            i_95_ = i_95_ * anInt8411 / method966();
+            i_95_ = i_95_ * anInt8411 / scaleWidth();
             i_96_ = anInt8417 * i_96_ / method980();
             i += anInt8400 * i_95_ / anInt8411;
             i_94_ += anInt8419 * i_96_ / anInt8417;

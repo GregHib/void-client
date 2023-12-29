@@ -649,8 +649,8 @@ final class Class377 extends ha_Sub3 {
                 String[] strings = Class348_Sub40_Sub23.method3113(' ', true, string.replace('.', ' '));
                 if (strings.length < 2) throw new RuntimeException("");
                 try {
-                    int i_32_ = Class348_Sub41.method3156(true, strings[0]);
-                    int i_33_ = Class348_Sub41.method3156(true, strings[1]);
+                    int i_32_ = Class348_Sub41.parseInt(true, strings[0]);
+                    int i_33_ = Class348_Sub41.parseInt(true, strings[1]);
                     anInt9924 = i_32_ * 10 - -i_33_;
                 } catch (NumberFormatException numberformatexception) {
                     throw new RuntimeException("");
@@ -695,7 +695,7 @@ final class Class377 extends ha_Sub3 {
                                         string_38_ = string_38_.substring(2);
                                     }
                                     if (string_38_.length() >= 4 && (Class50_Sub3.method468(string_38_.substring(0, 4), 92))) {
-                                        i_34_ = (Class348_Sub41.method3156(true, string_38_.substring(0, 4)));
+                                        i_34_ = (Class348_Sub41.parseInt(true, string_38_.substring(0, 4)));
                                         break;
                                     }
                                 }

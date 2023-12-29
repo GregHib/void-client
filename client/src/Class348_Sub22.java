@@ -14,7 +14,7 @@ final class Class348_Sub22 extends Class348 {
 
     static final Class46 method2957(int i, byte i_0_, int i_1_) {
         anInt6858++;
-        Class46 class46 = Class324.method2570(i_0_ + 1512932774, i_1_);
+        Class46 class46 = FontRenderer.method2570(i_0_ + 1512932774, i_1_);
         if (i_0_ != -54) method2958(-23, null);
         if (i == -1) return class46;
         if (class46 == null || class46.aClass46Array798 == null || (i >= class46.aClass46Array798.length)) return null;

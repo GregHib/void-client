@@ -199,7 +199,7 @@ final class Class239_Sub8 extends Class239 {
         if (i != 1) method1749(null, null, false, -43, (byte) 102);
     }
 
-    static final int method1756(byte[] is, int i, int i_22_, int i_23_, byte[][] is_24_, byte[][] is_25_, int[] is_26_, int[] is_27_) {
+    static final int calculateKerning(byte[] is, int i, int i_22_, int i_23_, byte[][] is_24_, byte[][] is_25_, int[] is_26_, int[] is_27_) {
         try {
             anInt5918++;
             int i_28_ = -19 % ((i - 64) / 39);

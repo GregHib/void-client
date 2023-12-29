@@ -46,7 +46,7 @@ final class Class105_Sub2 extends Class105 {
     final void method962(float f, float f_0_, float f_1_, float f_2_, float f_3_, float f_4_, int i, int i_5_, int i_6_, int i_7_) {
         anInt8435++;
         if (aBoolean8427) {
-            float f_8_ = (float) method966();
+            float f_8_ = (float) scaleWidth();
             float f_9_ = (float) method980();
             float f_10_ = (f_1_ - f) / f_8_;
             float f_11_ = (f_2_ - f_0_) / f_8_;
@@ -198,7 +198,7 @@ final class Class105_Sub2 extends Class105 {
         anInt8448++;
         Class258_Sub3_Sub1 class258_sub3_sub1 = ((aa_Sub1) var_aa).aClass258_Sub3_Sub1_5193;
         if (aBoolean8427) {
-            float f_51_ = (float) method966();
+            float f_51_ = (float) scaleWidth();
             float f_52_ = (float) method980();
             float f_53_ = (-f + f_45_) / f_51_;
             float f_54_ = (-f_44_ + f_46_) / f_51_;
@@ -253,7 +253,7 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3738(-15039, 0);
     }
 
-    final int method966() {
+    final int scaleWidth() {
         anInt8440++;
         return (anInt8447 + aClass258_Sub3_Sub1_8434.anInt9940 - -anInt8449);
     }
@@ -346,7 +346,7 @@ final class Class105_Sub2 extends Class105 {
         } else {
             OpenGL.glPushMatrix();
             OpenGL.glTranslatef((float) anInt8447, (float) anInt8446, 0.0F);
-            int i_83_ = method966();
+            int i_83_ = scaleWidth();
             int i_84_ = method980();
             int i_85_ = i_74_ - -(aClass258_Sub3_Sub1_8434.anInt9939);
             OpenGL.glBegin(7);
@@ -423,7 +423,7 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3753(i_97_, 1);
         OpenGL.glColor4ub((byte) (i_96_ >> 16), (byte) (i_96_ >> 8), (byte) i_96_, (byte) (i_96_ >> 24));
         if (aBoolean8427) {
-            float f = (float) i_93_ / (float) method966();
+            float f = (float) i_93_ / (float) scaleWidth();
             float f_99_ = (float) i_94_ / (float) method980();
             float f_100_ = (float) i + f * (float) anInt8447;
             float f_101_ = (float) anInt8446 * f_99_ + (float) i_92_;

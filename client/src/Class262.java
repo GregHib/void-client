@@ -8,7 +8,7 @@ final class Class262 {
     static Class45 aClass45_3323;
     static int anInt3324;
     static int anInt3325;
-    static Class324 aClass324_3326;
+    static FontRenderer aFontRenderer_3326;
     static int anInt3327;
     static int anInt3328;
     static int anInt3329;
@@ -156,7 +156,7 @@ final class Class262 {
         anObject3331 = null;
         if (i != -13722) method2000(-104, 106, null, null);
         aClass45_3323 = null;
-        aClass324_3326 = null;
+        aFontRenderer_3326 = null;
     }
 
     final Class348 method1995(int i) {
@@ -228,7 +228,7 @@ final class Class262 {
         if (class348.aClass348_4295 != null) class348.method2715((byte) 63);
         class348.aClass348_4295 = this.aClass348_3334;
         class348.aClass348_4294 = this.aClass348_3334.aClass348_4294;
-        if (i > -89) aClass324_3326 = null;
+        if (i > -89) aFontRenderer_3326 = null;
         class348.aClass348_4295.aClass348_4294 = class348;
         class348.aClass348_4294.aClass348_4295 = class348;
     }

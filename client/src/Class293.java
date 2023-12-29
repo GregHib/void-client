@@ -56,7 +56,7 @@ final class Class293 implements Runnable {
                     if (class318_sub1.aBoolean6387) class318_sub1.method2387(Class9.aHa171, -127);
                     else {
                         Class38.method365(class318_sub1, aClass348_Sub1Array3748);
-                        if (Class362.aClass324_4456 != null) Class362.aClass324_4456.method2576(aClass315_3743.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114);
+                        if (Class362.aFontRenderer_4456 != null) Class362.aFontRenderer_4456.method2576(aClass315_3743.aString3953, -256, class318_sub1.anInt6380, class318_sub1.anInt6386, -16777216, -114);
                     }
                 } else {
                     int i = ((Class318_Sub2) class318).anInt6394;

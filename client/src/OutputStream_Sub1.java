@@ -118,7 +118,7 @@ final class OutputStream_Sub1 extends OutputStream {
                 if (Class238_Sub1.aBoolean5840 && Class348_Sub4.aClass248_6601.method1902(4) == 0) Class238_Sub1.aBoolean5840 = false;
                 if (Class238_Sub1.aBoolean5840) {
                     Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
-                    Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
+                    Class362.method3511(false, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
                 }
                 Class226.method1626(1, false);
             }

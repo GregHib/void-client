@@ -152,12 +152,12 @@ abstract class Class14 implements Interface18 {
         return i_21_;
     }
 
-    static final Class324 method232(ha var_ha, byte i, boolean bool, int i_22_) {
+    static final FontRenderer method232(ha var_ha, byte i, boolean bool, int i_22_) {
         if (i != -53) method237(true);
         anInt5094++;
         Class352 class352 = Class239_Sub3.method1734(i_22_, var_ha, (byte) 55, bool);
         if (class352 == null) return null;
-        return class352.aClass324_4332;
+        return class352.aFontRenderer_4332;
     }
 
     final void method233(int i, int i_23_, int[] is, int i_24_, int i_25_) {

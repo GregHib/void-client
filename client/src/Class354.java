@@ -20,9 +20,9 @@ final class Class354 {
         if (i != -110) aClass60_4361 = null;
     }
 
-    static final byte method3464(char c, boolean bool) {
+    static final byte charToByte(char c, boolean bool) {
         anInt4354++;
-        if (bool != false) method3464('\uffe1', false);
+        if (bool != false) charToByte('\uffe1', false);
         byte i;
         if ((c <= 0 || c >= 128) && (c < 160 || c > 255)) {
             if (c != 8364) {

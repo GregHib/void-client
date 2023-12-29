@@ -41,9 +41,9 @@ final class Class318_Sub2 extends Class318 {
                 } else is = (Exception_Sub1.aClass255_112.method1940(-67, (int) (class348_sub42_sub12.aLong9605)).anIntArray2772);
                 String string = Class316.method2367((byte) 125, class348_sub42_sub12);
                 if (is != null) string += Class163.method1273(is, true);
-                Class262.aClass324_3326.method2567(i_1_, string, (byte) 116, i_4_, 0, i_7_ - -3, Class341.aClass105Array4234, Class175.anIntArray2330);
+                Class262.aFontRenderer_3326.method2567(i_1_, string, (byte) 116, i_4_, 0, i_7_ - -3, Class341.aClass105Array4234, Class175.anIntArray2330);
                 if (!class348_sub42_sub12.aBoolean9597) break;
-                Class239_Sub24.aClass105_6097.method974(Class369.aClass143_4962.method1183(true, string) + (i_7_ - -5), -12 + i_1_);
+                Class239_Sub24.aClass105_6097.method974(Class369.aFontMetrics_4962.width(true, string) + (i_7_ - -5), -12 + i_1_);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (class348_sub42_sub12 != null ? "{...}" : "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'));
             }

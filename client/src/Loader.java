@@ -20,6 +20,7 @@ public class Loader extends Applet {
     public static final BigInteger FILE_SERVER_RSA_MODULUS = new BigInteger("d6808be939bbfd2ec4e96b1581ce3e1144b526e7643a72e3c64fbb902724fbfcf14ab601da6d6f8dbb57d1c369d080d9fc392abeb7886e0076d07f2aea5810e540d2817fd1967e35b39cc95cf7c9170b5fb55f5bf95524b60e938f0d64614bc365b87d66963a8cc8664e32875366099ef297180d01c7c3842162865e11d92299", 16);
 
     public static void main(String[] arg0) {
+        System.out.println(Arrays.toString(arg0));
         debug = Arrays.stream(arg0).anyMatch(it -> it.equals("--debug") || it.equals("-d"));
         trace = Arrays.stream(arg0).anyMatch(it -> it.equals("--trace") || it.equals("-t"));
         Loader l = new Loader();

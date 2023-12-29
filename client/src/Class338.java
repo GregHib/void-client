@@ -29,7 +29,7 @@ final class Class338 {
         class348_sub41.anInt7053 = i_1_;
         Class125.aClass356_4915.method3483((byte) 109, i_0_, class348_sub41);
         Class348_Sub7.method2772(i, (byte) 110);
-        Class46 class46 = Class324.method2570(i_2_ + 1512932718, i_0_);
+        Class46 class46 = FontRenderer.method2570(i_2_ + 1512932718, i_0_);
         if (class46 != null) Class251.method1916(-9343, class46);
         if (Class49.aClass46_4730 != null) {
             Class251.method1916(-9343, Class49.aClass46_4730);

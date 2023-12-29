@@ -3,23 +3,23 @@
  */
 
 final class Class362 {
-    static Class324 aClass324_4456;
+    static FontRenderer aFontRenderer_4456;
     static int anInt4457;
     static int anInt4458 = -1;
     static int anInt4459;
     static Class183 aClass183_4460;
 
-    static final void method3511(boolean bool, Class324 class324, Class143 class143, String string, int i, ha var_ha) {
+    static final void method3511(boolean bool, FontRenderer fontRenderer, FontMetrics fontMetrics, String string, int i, ha var_ha) {
         try {
-            if (i != 2) aClass324_4456 = null;
+            if (i != 2) aFontRenderer_4456 = null;
             anInt4457++;
             boolean bool_0_ = !Class295.aBoolean3763 || Class359.method3490(true);
             if (bool_0_) {
                 if (Class295.aBoolean3763 && bool_0_) {
-                    class143 = Class281.aClass143_3649;
-                    class324 = var_ha.method3686(class143, (Class5_Sub1_Sub1.aClass207Array9929), true);
-                    int i_1_ = class143.method1187(string, false, 250, null);
-                    int i_2_ = class143.method1185(null, i ^ 0x2, class143.anInt1992, 250, string);
+                    fontMetrics = Class281.aFontMetrics_3649;
+                    fontRenderer = var_ha.method3686(fontMetrics, (Class5_Sub1_Sub1.aClass207Array9929), true);
+                    int i_1_ = fontMetrics.lineWidth(string, false, 250, null);
+                    int i_2_ = fontMetrics.method1185(null, i ^ 0x2, fontMetrics.verticalSpacing, 250, string);
                     int i_3_ = Class348_Sub7.aClass207_6643.anInt2702;
                     int i_4_ = i_3_ + 4;
                     i_2_ += 2 * i_4_;
@@ -49,17 +49,17 @@ final class Class362 {
                     Class348_Sub7.aClass207_6643.method1520();
                     var_ha.method3691(Class348_Sub7.aClass207_6643, true).method972((Class348_Sub40_Sub1.aClass207_9090.anInt2702) + i_5_, -i_3_ + i_6_ - -i_2_, -(2 * (Class348_Sub40_Sub1.aClass207_9090.anInt2702)) + i_1_, i_3_);
                     Class348_Sub7.aClass207_6643.method1520();
-                    class324.method2584(null, 0, -1, null, ~0xffffff | Class86.anInt1479, 1, i_2_ + -(i_4_ * 2), null, i_6_ + i_4_, 0, 0, -(2 * i_4_) + i_1_, i_5_ + i_4_, false, 1, string);
+                    fontRenderer.method2584(null, 0, -1, null, ~0xffffff | Class86.anInt1479, 1, i_2_ + -(i_4_ * 2), null, i_6_ + i_4_, 0, 0, -(2 * i_4_) + i_1_, i_5_ + i_4_, false, 1, string);
                     Class13.method226(i_5_, i_1_, i_6_, i ^ 0x2, i_2_);
                 } else {
-                    int i_7_ = class143.method1187(string, false, 250, null);
-                    int i_8_ = class143.method1190(null, 1, string, 250) * 13;
+                    int i_7_ = fontMetrics.lineWidth(string, false, 250, null);
+                    int i_8_ = fontMetrics.splitLines(null, 1, string, 250) * 13;
                     int i_9_ = 4;
                     int i_10_ = 6 - -i_9_;
                     int i_11_ = i_9_ + 6;
                     var_ha.aa(i_10_ + -i_9_, i_11_ + -i_9_, i_9_ + i_7_ + i_9_, i_8_ + (i_9_ - -i_9_), -16777216, 0);
                     var_ha.method3628(i_10_ - i_9_, -i_9_ + i_11_, i_9_ + (i_7_ + i_9_), i_9_ + i_9_ + i_8_, -1, 0);
-                    class324.method2584(null, 0, -1, null, -1, 1, i_8_, null, i_11_, 0, 0, i_7_, i_10_, false, 1, string);
+                    fontRenderer.method2584(null, 0, -1, null, -1, 1, i_8_, null, i_11_, 0, 0, i_7_, i_10_, false, 1, string);
                     Class13.method226(i_10_ - i_9_, i_9_ + i_7_ - -i_9_, i_11_ + -i_9_, i + -2, i_9_ + i_8_ - -i_9_);
                 }
                 if (bool) {
@@ -72,13 +72,13 @@ final class Class362 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fg.A(" + bool + ',' + (class324 != null ? "{...}" : "null") + ',' + (class143 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + i + ',' + (var_ha != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fg.A(" + bool + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + (fontMetrics != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + i + ',' + (var_ha != null ? "{...}" : "null") + ')'));
         }
     }
 
     public static void method3512(int i) {
         aClass183_4460 = null;
         if (i != 4) anInt4458 = 96;
-        aClass324_4456 = null;
+        aFontRenderer_4456 = null;
     }
 }
