@@ -7,7 +7,7 @@ import java.io.IOException;
 final class Class55_Sub1 extends Class55 {
     static boolean aBoolean5265 = false;
     static int anInt5266;
-    private final Class45 aClass45_5267;
+    private final Index aIndex_5267;
     static int anInt5268;
     private int[] anIntArray5269;
     private int anInt5270;
@@ -22,7 +22,7 @@ final class Class55_Sub1 extends Class55 {
         anInt5266++;
         if (anIntArray5269 != null && i < -27) {
             for (int i_0_ = 0; i_0_ < 10 && anIntArray5269.length > anInt5270 + i_0_; i_0_++) {
-                if (aByteArrayArray5275[i_0_] == null && aClass45_5267.method420(-10499, (anIntArray5269[i_0_ + anInt5270]), 0)) aByteArrayArray5275[i_0_] = aClass45_5267.method410(-1860, (anIntArray5269[anInt5270 + i_0_]), 0);
+                if (aByteArrayArray5275[i_0_] == null && aIndex_5267.method420(-10499, (anIntArray5269[i_0_ + anInt5270]), 0)) aByteArrayArray5275[i_0_] = aIndex_5267.method410(-1860, (anIntArray5269[anInt5270 + i_0_]), 0);
             }
         }
     }
@@ -32,11 +32,11 @@ final class Class55_Sub1 extends Class55 {
         aClass364_5271 = null;
     }
 
-    private Class55_Sub1(int i, Class45 class45, int i_1_) {
+    private Class55_Sub1(int i, Index index, int i_1_) {
         super(i);
         aClass348_Sub49_5274 = new Class348_Sub49(null);
         aClass348_Sub49_5276 = new Class348_Sub49(null);
-        aClass45_5267 = class45;
+        aIndex_5267 = index;
         anInt5272 = i_1_;
     }
 
@@ -44,7 +44,7 @@ final class Class55_Sub1 extends Class55 {
         if (i_3_ > -108) aBoolean5265 = false;
         if (Class27.aClass356_389.method3480(i_2_, -6008) == null) {
             if (Class38.aBoolean510) {
-                Class348_Sub15 class348_sub15 = new Class348_Sub15(i_2_, new Class55_Sub1(4096, (Class146.aClass45_2015), i_2_), i, bool);
+                Class348_Sub15 class348_sub15 = new Class348_Sub15(i_2_, new Class55_Sub1(4096, (Class146.aIndex_2015), i_2_), i, bool);
                 class348_sub15.aClass55_Sub1_6768.method509(-92, Class59_Sub2.aStringArray5305[Class348_Sub33.anInt6967]);
                 Class27.aClass356_389.method3483((byte) 35, i_2_, class348_sub15);
             } else Class303.method2285(bool, (byte) -90, i_2_);
@@ -55,8 +55,8 @@ final class Class55_Sub1 extends Class55 {
     final int method516(byte i, byte[] is) throws IOException {
         anInt5273++;
         if (anIntArray5269 == null) {
-            if (!aClass45_5267.method420(-10499, anInt5272, 0)) return 0;
-            byte[] is_4_ = aClass45_5267.method410(-1860, anInt5272, 0);
+            if (!aIndex_5267.method420(-10499, anInt5272, 0)) return 0;
+            byte[] is_4_ = aIndex_5267.method410(-1860, anInt5272, 0);
             if (is_4_ == null) throw new IllegalStateException("");
             aClass348_Sub49_5276.aByteArray7154 = is_4_;
             aClass348_Sub49_5276.anInt7197 = 0;

@@ -7,7 +7,7 @@ final class Class113 {
     static int anInt1740;
     static int anInt1741;
     static int anInt1742;
-    static Class45 aClass45_1743;
+    static Index CLIENT_SCRIPTS;
     static Sprite[] aSpriteArray1744;
     static int anInt1745 = 100;
 
@@ -32,7 +32,7 @@ final class Class113 {
     }
 
     public static void method1057(boolean bool) {
-        aClass45_1743 = null;
+        CLIENT_SCRIPTS = null;
         aSpriteArray1744 = null;
         if (bool != true) method1056(110, -57, '\uffd1');
     }

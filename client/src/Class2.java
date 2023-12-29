@@ -23,10 +23,10 @@ final class Class2 {
         if (i != 72) method173(39, null, null);
     }
 
-    static final void method172(int i, Class45 class45) {
+    static final void method172(int i, Index index) {
         if (i != 30284) method170(true);
         anInt116++;
-        Class59_Sub2_Sub1.aClass45_8670 = class45;
+        Class59_Sub2_Sub1.aIndex_8670 = index;
     }
 
     static final void method173(int i, Class46 class46, Class46 class46_0_) {

@@ -71,7 +71,7 @@ final class Class239_Sub14 extends Class239 {
         try {
             Dimension dimension = Class305.aCanvas3869.getSize();
             Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
-            Class124 class124 = Class300.method2277(0, aa_Sub3.aClass45_5207, Class348_Sub31.anInt6923, -1);
+            Class124 class124 = Class300.method2277(0, aa_Sub3.MODELS, Class348_Sub31.anInt6923, -1);
             long l = Class62.method599(-88);
             Class348_Sub8.aHa6654.la();
             Class157.aClass101_2123.method894(0, Class348_Sub23_Sub2.anInt9037, 0);

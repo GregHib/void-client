@@ -9,8 +9,8 @@ final class Class355 {
     int anInt4365 = 0;
     static Object anObject4366;
     static long aLong4367 = -1L;
-    private Class45 aClass45_4368;
-    private final Class45 aClass45_4369;
+    private Index aIndex_4368;
+    private final Index aIndex_4369;
     static int anInt4370;
     static int anInt4371;
     static int anInt4372;
@@ -32,8 +32,8 @@ final class Class355 {
         Class348_Sub42_Sub10 class348_sub42_sub10 = (Class348_Sub42_Sub10) aClass60_4362.method583(i, 70);
         if (class348_sub42_sub10 != null) return class348_sub42_sub10;
         byte[] is;
-        if (i >= 32768) is = aClass45_4369.method410(-1860, 1, 0x7fff & i);
-        else is = aClass45_4368.method410(-1860, 1, i);
+        if (i >= 32768) is = aIndex_4369.method410(-1860, 1, 0x7fff & i);
+        else is = aIndex_4368.method410(-1860, 1, i);
         class348_sub42_sub10 = new Class348_Sub42_Sub10();
         class348_sub42_sub10.aClass355_9567 = this;
         if (is != null) class348_sub42_sub10.method3218(new Class348_Sub49(is), 0);
@@ -45,7 +45,7 @@ final class Class355 {
 
     final String method3472(long l, int[] is, int i, Class138 class138) {
         try {
-            if (i != -1) aClass45_4368 = null;
+            if (i != -1) aIndex_4368 = null;
             anInt4370++;
             if (anInterface15_4373 != null) {
                 String string = anInterface15_4373.method54(1, l, class138, is);
@@ -62,20 +62,20 @@ final class Class355 {
         anObject4366 = null;
     }
 
-    Class355(int i, Class45 class45, Class45 class45_1_, Interface15 interface15) {
+    Class355(int i, Index index, Index index_1_, Interface15 interface15) {
         this.anInt4364 = 0;
         aClass60_4362 = new Class60(64);
         anInterface15_4373 = null;
         do {
             try {
                 anInterface15_4373 = interface15;
-                aClass45_4368 = class45;
-                aClass45_4369 = class45_1_;
-                if (aClass45_4368 != null) this.anInt4365 = aClass45_4368.method407(0, 1);
-                if (aClass45_4369 == null) break;
-                this.anInt4364 = aClass45_4369.method407(0, 1);
+                aIndex_4368 = index;
+                aIndex_4369 = index_1_;
+                if (aIndex_4368 != null) this.anInt4365 = aIndex_4368.method407(0, 1);
+                if (aIndex_4369 == null) break;
+                this.anInt4364 = aIndex_4369.method407(0, 1);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("aha.<init>(" + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_1_ != null ? "{...}" : "null") + ',' + (interface15 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("aha.<init>(" + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_1_ != null ? "{...}" : "null") + ',' + (interface15 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

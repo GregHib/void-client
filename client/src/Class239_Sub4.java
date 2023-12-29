@@ -9,7 +9,7 @@ final class Class239_Sub4 extends Class239 {
     static int anInt5875;
     static float[] aFloatArray5876 = new float[16384];
     static int anInt5877;
-    static Class45 aClass45_5878;
+    static Index MIDI_INSTRUMENTS;
     static int anInt5879;
     static int anInt5880;
     static Class348_Sub26 aClass348_Sub26_5881;
@@ -62,7 +62,7 @@ final class Class239_Sub4 extends Class239 {
     }
 
     public static void method1738(int i) {
-        aClass45_5878 = null;
+        MIDI_INSTRUMENTS = null;
         aFloatArray5874 = null;
         aString5882 = null;
         if (i != 21921) method1738(11);

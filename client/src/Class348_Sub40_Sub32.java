@@ -50,7 +50,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
                 float f_6_ = 1.0F - f;
                 Class119_Sub1.anInt4703 = (((i_5_ * ((Class239_Sub14.aClass190_5990.anInt2540) & 0xff00ff) + (Class318_Sub1_Sub3.anInt8739 & 0xff00ff) * i_4_) & ~0xff00ff) - -(0xff0000 & (i_4_ * (0xff00 & Class318_Sub1_Sub3.anInt8739) + (0xff00 & (Class239_Sub14.aClass190_5990.anInt2540)) * i_5_))) >>> 8;
                 Class239_Sub10.aFloat5945 = (Class258_Sub4.aFloat8560 + f_6_ * ((Class239_Sub14.aClass190_5990.aFloat2551) - Class258_Sub4.aFloat8560));
-                Class348_Sub3.aFloat6586 = (Class239_Sub14.aClass190_5990.aFloat2545 - Class45.aFloat670) * f_6_ + Class45.aFloat670;
+                Class348_Sub3.aFloat6586 = (Class239_Sub14.aClass190_5990.aFloat2545 - Index.aFloat670) * f_6_ + Index.aFloat670;
                 Class36.anInt486 = (i_4_ * Class239_Sub19.anInt6042 + (Class239_Sub14.aClass190_5990.anInt2546 * i_5_)) >> 8;
                 Class160.aFloat2137 = (Class318_Sub1_Sub1.aFloat8725 + (-Class318_Sub1_Sub1.aFloat8725 + (Class239_Sub14.aClass190_5990.aFloat2547)) * f_6_);
                 Class244.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((Class239_Sub14.aClass190_5990.aFloat2544) - Class64.aFloat1136));

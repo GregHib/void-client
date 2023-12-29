@@ -21,7 +21,7 @@ final class Class93 {
         anApplet1530 = null;
     }
 
-    static final ha method862(Canvas canvas, d var_d, Class45 class45, int i, int i_1_) {
+    static final ha method862(Canvas canvas, d var_d, Index index, int i, int i_1_) {
         try {
             anInt1532++;
             if (!Class9.method215(27165)) throw new RuntimeException("");
@@ -30,11 +30,11 @@ final class Class93 {
             long l = opengl.init(canvas, 8, 8, 8, 24, 0, i_1_);
             if (l == 0L) throw new RuntimeException("");
             if (i != 25542) return null;
-            Class377 class377 = new Class377(opengl, canvas, l, var_d, class45, i_1_);
+            Class377 class377 = new Class377(opengl, canvas, l, var_d, index, i_1_);
             class377.method3930((byte) 26);
             return class377;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lt.D(" + (canvas != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lt.D(" + (canvas != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ')'));
         }
     }
 

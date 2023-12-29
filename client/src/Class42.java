@@ -93,8 +93,8 @@ final class Class42 {
         int i_4_ = i_3_ | var_ha.anInt4567 << 29;
         Sprite sprite = (Sprite) this.aClass153_593.aClass60_2089.method583(i_4_, 64);
         if (sprite != null) return sprite;
-        if (!this.aClass153_593.aClass45_2087.method421(false, i_3_)) return null;
-        Class207 class207 = Class207.method1521((this.aClass153_593.aClass45_2087), i_3_, 0);
+        if (!this.aClass153_593.aIndex_2087.method421(false, i_3_)) return null;
+        Class207 class207 = Class207.method1521((this.aClass153_593.aIndex_2087), i_3_, 0);
         if (class207 != null) {
             sprite = var_ha.method3691(class207, true);
             this.aClass153_593.aClass60_2089.method582(sprite, i_4_, (byte) -111);
@@ -107,8 +107,8 @@ final class Class42 {
         if (bool != false) method375(null, true);
         Sprite sprite = (Sprite) (this.aClass153_593.aClass60_2089.method583(anInt598 | 0x20000 | var_ha.anInt4567 << 29, -75));
         if (sprite != null) return sprite;
-        this.aClass153_593.aClass45_2087.method421(bool, anInt598);
-        Class207 class207 = Class207.method1521((this.aClass153_593.aClass45_2087), anInt598, 0);
+        this.aClass153_593.aIndex_2087.method421(bool, anInt598);
+        Class207 class207 = Class207.method1521((this.aClass153_593.aIndex_2087), anInt598, 0);
         if (class207 != null) {
             sprite = var_ha.method3691(class207, true);
             this.aClass153_593.aClass60_2089.method582(sprite, var_ha.anInt4567 << 29 | (anInt598 | 0x20000), (byte) -121);

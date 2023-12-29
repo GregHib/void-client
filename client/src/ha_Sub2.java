@@ -2958,7 +2958,7 @@ final class ha_Sub2 extends ha {
                         if (i_324_ != -1) {
                             Sprite[] spriteS_326_ = ((Sprite[]) (Class353.aClass60_4346.method583(i_324_, i_316_ ^ ~0x79)));
                             if (spriteS_326_ == null) {
-                                Class207[] class207s = Class207.method1519(Class21.aClass45_322, i_324_, 0);
+                                Class207[] class207s = Class207.method1519(Class21.SPRITES, i_324_, 0);
                                 if (class207s != null) {
                                     spriteS_326_ = new Sprite[class207s.length];
                                     for (int i_327_ = 0; class207s.length > i_327_; i_327_++)
@@ -2995,7 +2995,7 @@ final class ha_Sub2 extends ha {
                             if (i_333_ != -1) {
                                 Sprite[] sprites = ((Sprite[]) Class328_Sub2.aClass60_6517.method583(i_333_, -45));
                                 if (sprites == null) {
-                                    Class207[] class207s = Class207.method1519((Class21.aClass45_322), i_333_, 0);
+                                    Class207[] class207s = Class207.method1519((Class21.SPRITES), i_333_, 0);
                                     if (class207s != null) {
                                         sprites = new Sprite[class207s.length];
                                         for (int i_334_ = 0; (class207s.length > i_334_); i_334_++)
@@ -3346,7 +3346,7 @@ final class ha_Sub2 extends ha {
                 }
             }
         }
-        for (int i_433_ = 0; i_433_ < Class45.anInt669; i_433_++) {
+        for (int i_433_ = 0; i_433_ < Index.anInt669; i_433_++) {
             int i_434_ = Class258_Sub4.anIntArray8557[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_434_ >= 2048) class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_434_, -6008)).aNpc_6859);

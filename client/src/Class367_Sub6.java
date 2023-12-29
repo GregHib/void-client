@@ -34,12 +34,12 @@ final class Class367_Sub6 extends Class367 {
         if (i != 10756) aClass269_7339 = null;
     }
 
-    Class367_Sub6(Class378 class378, Class45 class45, Class269 class269) {
+    Class367_Sub6(Class378 class378, Index index, Class269 class269) {
         super(class378);
         aClass269_7339 = class269;
         aClass378_7340 = class378;
-        if (null == class45 || !aClass269_7339.method2039(123) || (257 > (aClass378_7340.aD3DCAPS9791.VertexShaderVersion & 0xffff))) anIDirect3DVertexShader7341 = null;
-        else anIDirect3DVertexShader7341 = aClass378_7340.anIDirect3DDevice9810.b(class45.method391("dx", "transparent_water", -29832));
+        if (null == index || !aClass269_7339.method2039(123) || (257 > (aClass378_7340.aD3DCAPS9791.VertexShaderVersion & 0xffff))) anIDirect3DVertexShader7341 = null;
+        else anIDirect3DVertexShader7341 = aClass378_7340.anIDirect3DDevice9810.b(index.method391("dx", "transparent_water", -29832));
     }
 
     final void method3523(byte i) {

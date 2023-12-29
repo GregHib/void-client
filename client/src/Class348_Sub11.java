@@ -13,7 +13,7 @@ final class Class348_Sub11 extends Class348 implements Interface6 {
     int anInt4767;
     static int anInt4768;
     static int anInt4769;
-    static Class45 aClass45_4770;
+    static Index TEXTURE_DEFINITIONS;
     int anInt4771;
 
     public final int method27(int i) {
@@ -41,7 +41,7 @@ final class Class348_Sub11 extends Class348 implements Interface6 {
     }
 
     public static void method2796(byte i) {
-        aClass45_4770 = null;
+        TEXTURE_DEFINITIONS = null;
         if (i != 104) method2796((byte) -6);
     }
 

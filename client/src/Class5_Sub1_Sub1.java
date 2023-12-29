@@ -16,8 +16,8 @@ final class Class5_Sub1_Sub1 extends Class5_Sub1 {
         anIntArray9932 = null;
     }
 
-    Class5_Sub1_Sub1(Class45 class45, Class45 class45_0_, Class369_Sub3_Sub1 class369_sub3_sub1) {
-        super(class45, class45_0_, class369_sub3_sub1);
+    Class5_Sub1_Sub1(Index index, Index index_0_, Class369_Sub3_Sub1 class369_sub3_sub1) {
+        super(index, index_0_, class369_sub3_sub1);
     }
 
     final void method186(int i, int i_1_, byte i_2_, int i_3_, int i_4_) {

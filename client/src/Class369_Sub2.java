@@ -8,7 +8,7 @@ final class Class369_Sub2 extends Class369 {
     static int anInt8586;
     static int anInt8587 = 0;
     static int anInt8588;
-    static Class45 aClass45_8589;
+    static Index TEXTURES;
     static Class114 aClass114_8590 = new Class114(58, 2);
     int anInt8591;
     static Object anObject8592;
@@ -20,14 +20,14 @@ final class Class369_Sub2 extends Class369 {
         return Class348_Sub49.aClass223_7175;
     }
 
-    static final Class45 method3571(boolean bool, int i, byte i_0_, int i_1_) {
+    static final Index index(boolean bool, int index, byte i_0_, int i_1_) {
         anInt8593++;
         if (i_0_ != -23) return null;
         Class137 class137 = null;
-        if (Class299_Sub2.aClass78_6328 != null) class137 = new Class137(i, Class299_Sub2.aClass78_6328, Class100.aClass78Array1579[i], 1000000);
-        Class13.aClass314_Sub1Array223[i] = Class175.aClass340_2327.method2673(class137, i, Class277.aClass137_3568, 255);
-        Class13.aClass314_Sub1Array223[i].method2346(27872);
-        return new Class45(Class13.aClass314_Sub1Array223[i], bool, i_1_);
+        if (Class299_Sub2.aClass78_6328 != null) class137 = new Class137(index, Class299_Sub2.aClass78_6328, Class100.aClass78Array1579[index], 1000000);
+        Class13.aClass314_Sub1Array223[index] = Class175.aClass340_2327.method2673(class137, index, Class277.aClass137_3568, 255);
+        Class13.aClass314_Sub1Array223[index].method2346(27872);
+        return new Index(Class13.aClass314_Sub1Array223[index], bool, i_1_);
     }
 
     Class369_Sub2(Class221 class221, Class341 class341, int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
@@ -42,8 +42,8 @@ final class Class369_Sub2 extends Class369 {
 
     public static void method3572(int i) {
         aClass114_8590 = null;
-        aClass45_8589 = null;
-        if (i != 1000000) method3571(false, -66, (byte) 13, 13);
+        TEXTURES = null;
+        if (i != 1000000) index(false, -66, (byte) 13, 13);
         aClass46ArrayArray8584 = null;
         anObject8592 = null;
     }

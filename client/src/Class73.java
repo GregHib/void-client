@@ -16,7 +16,7 @@ final class Class73 implements Interface7 {
     static Class219 aClass219_4782;
     static long aLong4783 = 20000000L;
     static int anInt4784;
-    private final Class45 aClass45_4785;
+    private final Index aIndex_4785;
     static int anInt4786;
 
     public static void method741(byte i) {
@@ -31,7 +31,7 @@ final class Class73 implements Interface7 {
         anInt4777++;
         Class189 class189 = (Class189) Class217.aClass60_2844.method583(i_0_, -104);
         if (class189 != null) return class189;
-        byte[] is = Class369_Sub3.aClass45_8601.method410(-1860, 0, i_0_);
+        byte[] is = Class369_Sub3.aIndex_8601.method410(-1860, 0, i_0_);
         if (i != 104) method741((byte) 98);
         class189 = new Class189();
         if (is != null) class189.method1419(i_0_, new Class348_Sub49(is), (byte) 64);
@@ -42,7 +42,7 @@ final class Class73 implements Interface7 {
     public final int method31(int i) {
         int i_1_ = -62 / ((i - -43) / 62);
         anInt4774++;
-        if (aClass45_4785.method416((byte) -74, aString4778)) return 100;
+        if (aIndex_4785.method416((byte) -74, aString4778)) return 100;
         return 0;
     }
 
@@ -58,12 +58,12 @@ final class Class73 implements Interface7 {
         return Class69.aClass69_1197;
     }
 
-    Class73(Class45 class45, String string) {
+    Class73(Index index, String string) {
         try {
-            aClass45_4785 = class45;
+            aIndex_4785 = index;
             aString4778 = string;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kk.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kk.<init>(" + (index != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
         }
     }
 

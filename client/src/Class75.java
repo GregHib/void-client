@@ -3,7 +3,7 @@
  */
 
 class Class75 {
-    static Class45 aClass45_1237;
+    static Index aIndex_1237;
     static Class153 aClass153_1238;
     private static Class268 aClass268_1239;
     private static Class183 aClass183_1240;
@@ -108,7 +108,7 @@ class Class75 {
         aClass141_1242 = null;
         anInterface17_1244 = null;
         aClass348_Sub42_Sub14_1243 = null;
-        aClass45_1237 = null;
+        aIndex_1237 = null;
         aClass356_1241 = null;
         aByteArrayArrayArray1251 = null;
         aShortArray1252 = null;
@@ -232,8 +232,8 @@ class Class75 {
         anInt1268 = i_46_;
     }
 
-    static final void method752(Class45 class45, Class268 class268, Class183 class183, Class263 class263, Class153 class153, Class141 class141, Interface17 interface17) {
-        aClass45_1237 = class45;
+    static final void method752(Index index, Class268 class268, Class183 class183, Class263 class263, Class153 class153, Class141 class141, Interface17 interface17) {
+        aIndex_1237 = index;
         aClass268_1239 = class268;
         aClass183_1240 = class183;
         aClass263_1245 = class263;
@@ -241,11 +241,11 @@ class Class75 {
         aClass141_1242 = class141;
         anInterface17_1244 = interface17;
         aClass356_1241.method3481(0);
-        int i = aClass45_1237.method417("details", 0);
-        int[] is = aClass45_1237.method396(i, 0);
+        int i = aIndex_1237.method417("details", 0);
+        int[] is = aIndex_1237.method396(i, 0);
         if (is != null) {
             for (int i_47_ = 0; i_47_ < is.length; i_47_++) {
-                Class348_Sub42_Sub14 class348_sub42_sub14 = Class150.method1205(is[i_47_], true, aClass45_1237, i);
+                Class348_Sub42_Sub14 class348_sub42_sub14 = Class150.method1205(is[i_47_], true, aIndex_1237, i);
                 aClass356_1241.method3483((byte) 25, class348_sub42_sub14.anInt9628, class348_sub42_sub14);
             }
         }
@@ -394,7 +394,7 @@ class Class75 {
     }
 
     static final void method756(ha var_ha, int i, int i_75_) {
-        Class348_Sub49 class348_sub49 = (new Class348_Sub49(aClass45_1237.method391((aClass348_Sub42_Sub14_1243.aString9625), "area", -29832)));
+        Class348_Sub49 class348_sub49 = (new Class348_Sub49(aIndex_1237.method391((aClass348_Sub42_Sub14_1243.aString9625), "area", -29832)));
         int i_76_ = class348_sub49.readUnsignedByte(255);
         int[] is = new int[i_76_];
         for (int i_77_ = 0; i_77_ < i_76_; i_77_++)

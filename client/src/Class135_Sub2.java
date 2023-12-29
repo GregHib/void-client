@@ -13,7 +13,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
     static int anInt4840;
     static int anInt4841;
     static int anInt4842;
-    static Class45 aClass45_4843;
+    static Index aIndex_4843;
     static int anInt4844;
     private static char[] aCharArray4845 = new char[64];
     static Class348_Sub42_Sub12 aClass348_Sub42_Sub12_4846;
@@ -42,7 +42,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
         aClass251_4835 = null;
         aClass161_4839 = null;
         int i_2_ = -29 / ((i - -49) / 43);
-        aClass45_4843 = null;
+        aIndex_4843 = null;
         aCharArray4845 = null;
         aClass348_Sub42_Sub12_4846 = null;
     }

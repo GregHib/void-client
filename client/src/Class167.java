@@ -20,7 +20,7 @@ final class Class167 {
     int anInt2205;
     static int anInt2206;
     static Class229 aClass229_2207 = new Class229();
-    static Class45 aClass45_2208;
+    static Index aIndex_2208;
     Class101_Sub1 aClass101_Sub1_2209;
     int anInt2210;
     int anInt2211;
@@ -77,7 +77,7 @@ final class Class167 {
 
     public static void method1293(int i) {
         aClass114_2196 = null;
-        aClass45_2208 = null;
+        aIndex_2208 = null;
         aClass229_2207 = null;
         if (i != 1) method1295(null, -117, -102);
     }

@@ -39,7 +39,7 @@ final class Class5_Sub3 extends Class5 {
         int i_2_ = 2 % ((25 - i) / 52);
         anInt8373++;
         if (!super.method8((byte) 82)) return false;
-        return this.aClass45_4632.method421(false, (((Class369_Sub1) this.aClass369_4635).anInt8582));
+        return this.aIndex_4632.method421(false, (((Class369_Sub1) this.aClass369_4635).anInt8582));
     }
 
     static final int method200(int i, int i_3_) {
@@ -48,8 +48,8 @@ final class Class5_Sub3 extends Class5 {
         return i_3_ >>> 8;
     }
 
-    Class5_Sub3(Class45 class45, Class45 class45_4_, Class369_Sub1 class369_sub1) {
-        super(class45, class45_4_, class369_sub1);
+    Class5_Sub3(Index index, Index index_4_, Class369_Sub1 class369_sub1) {
+        super(index, index_4_, class369_sub1);
     }
 
     static final void method201(int i, int i_5_, String string) {
@@ -112,7 +112,7 @@ final class Class5_Sub3 extends Class5 {
         anInt8371++;
         if (i == 10286) {
             super.method7(i);
-            aSprite_8366 = Class369_Sub3_Sub1.method3577(((Class369_Sub1) this.aClass369_4635).anInt8582, (byte) -96, this.aClass45_4632);
+            aSprite_8366 = Class369_Sub3_Sub1.method3577(((Class369_Sub1) this.aClass369_4635).anInt8582, (byte) -96, this.aIndex_4632);
         }
     }
 

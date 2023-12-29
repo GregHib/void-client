@@ -346,7 +346,7 @@ final class Class66 {
             }
             if (i == 5059) {
                 anInt1165++;
-                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class45.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -93);
+                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Index.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -93);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
                 int i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
@@ -371,7 +371,7 @@ final class Class66 {
             }
             if (i == 5061) {
                 anInt1165++;
-                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class45.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -104);
+                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Index.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -104);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
                 int i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 1);
@@ -980,11 +980,11 @@ final class Class66 {
                 Class79.anInt1387 = anIntArray1149[anInt1173 + 8];
                 Class348_Sub42_Sub11.anInt9586 = anIntArray1149[anInt1173 + 9];
                 Class5_Sub2.anInt8363 = anIntArray1149[anInt1173 + 10];
-                Class21.aClass45_322.method421(false, Class231.anInt2996);
-                Class21.aClass45_322.method421(false, Class348_Sub40_Sub16.anInt9231);
-                Class21.aClass45_322.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257);
-                Class21.aClass45_322.method421(false, Class313.anInt3937);
-                Class21.aClass45_322.method421(false, Class79.anInt1387);
+                Class21.SPRITES.method421(false, Class231.anInt2996);
+                Class21.SPRITES.method421(false, Class348_Sub40_Sub16.anInt9231);
+                Class21.SPRITES.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257);
+                Class21.SPRITES.method421(false, Class313.anInt3937);
+                Class21.SPRITES.method421(false, Class79.anInt1387);
                 Class348_Sub42_Sub15.aSprite_9659 = Class110.aSprite_1706 = Class174.aSprite_2309 = null;
                 OutputStream_Sub2.aSprite_106 = Class121.aSprite_1800 = Class348_Sub5.aSprite_6627 = null;
                 Class348_Sub42_Sub15.aSprite_9658 = Class309.aSprite_4808 = null;
@@ -1429,7 +1429,7 @@ final class Class66 {
                 if (i_149_ != i_150_) {
                     if (Class334.method2653(true, Class240.anInt4674)) {
                         if (i_150_ == 0 && Class267.anInt3428 != -1) {
-                            Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 94, (Class59_Sub2_Sub1.aClass45_8667), i_149_);
+                            Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 94, (Class59_Sub2_Sub1.MUSIC), i_149_);
                             Class348_Sub40_Sub17_Sub1.method3093(87);
                             Class74.aBoolean1236 = false;
                         } else if (i_149_ == 0) {
@@ -1548,7 +1548,7 @@ final class Class66 {
                 if (i_158_ != i_159_ && Class267.anInt3428 == Class345.anInt4270) {
                     if (!Class334.method2653(true, Class240.anInt4674)) {
                         if (i_159_ == 0) {
-                            Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 127, (Class59_Sub2_Sub1.aClass45_8667), i_158_);
+                            Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 127, (Class59_Sub2_Sub1.MUSIC), i_158_);
                             Class348_Sub40_Sub17_Sub1.method3093(118);
                             Class74.aBoolean1236 = false;
                         } else if (i_158_ == 0) {
@@ -4584,7 +4584,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_433_ = anIntArray1149[anInt1173];
                     int i_434_ = anIntArray1149[anInt1173 + 1];
-                    FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(i_434_, 0, -123, Class104.aClass45_1627);
+                    FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(i_434_, 0, -123, Class104.FONT_INDEX);
                     anIntArray1149[anInt1173++] = fontMetrics.splitLines(Class113.aSpriteArray1744, 1, string, i_433_);
                     return;
                 }
@@ -4593,7 +4593,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_435_ = anIntArray1149[anInt1173];
                     int i_436_ = anIntArray1149[anInt1173 + 1];
-                    FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(i_436_, 0, -79, Class104.aClass45_1627);
+                    FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(i_436_, 0, -79, Class104.FONT_INDEX);
                     anIntArray1149[anInt1173++] = fontMetrics.lineWidth(string, false, i_435_, Class113.aSpriteArray1744);
                     return;
                 }
@@ -4704,7 +4704,7 @@ final class Class66 {
                 if (i == 4125) {
                     String string = aStringArray1152[--anInt1170];
                     int i_455_ = anIntArray1149[--anInt1173];
-                    FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(i_455_, 0, -114, Class104.aClass45_1627);
+                    FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(i_455_, 0, -114, Class104.FONT_INDEX);
                     anIntArray1149[anInt1173++] = fontMetrics.textWidth(string, Class113.aSpriteArray1744, false);
                     return;
                 }

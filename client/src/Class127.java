@@ -12,13 +12,13 @@ class Class127 implements Interface1 {
     static int anInt4658;
     Class288 aClass288_4659;
     static int anInt4660;
-    private final Class45 aClass45_4661;
+    private final Index aIndex_4661;
     static int anInt4662;
 
     public final boolean method8(byte i) {
         int i_0_ = -79 / ((i - 25) / 52);
         anInt4658++;
-        return aClass45_4661.method421(false, (this.aClass288_4659.anInt4958));
+        return aIndex_4661.method421(false, (this.aClass288_4659.anInt4958));
     }
 
     public void method9(byte i, boolean bool) {
@@ -54,16 +54,16 @@ class Class127 implements Interface1 {
 
     public final void method7(int i) {
         if (i != 10286) anInt4656 = -123;
-        this.aSprite_4655 = Class369_Sub3_Sub1.method3577((this.aClass288_4659.anInt4958), (byte) -60, aClass45_4661);
+        this.aSprite_4655 = Class369_Sub3_Sub1.method3577((this.aClass288_4659.anInt4958), (byte) -60, aIndex_4661);
         anInt4660++;
     }
 
-    Class127(Class45 class45, Class288 class288) {
+    Class127(Index index, Class288 class288) {
         try {
-            aClass45_4661 = class45;
+            aIndex_4661 = index;
             this.aClass288_4659 = class288;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nl.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class288 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nl.<init>(" + (index != null ? "{...}" : "null") + ',' + (class288 != null ? "{...}" : "null") + ')'));
         }
     }
 }

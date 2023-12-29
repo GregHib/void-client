@@ -636,8 +636,8 @@ final class Class377 extends ha_Sub3 {
         anInt9833++;
     }
 
-    Class377(OpenGL opengl, Canvas canvas, long l, d var_d, Class45 class45, int i) {
-        super(canvas, new Long(l), var_d, class45, i, 1);
+    Class377(OpenGL opengl, Canvas canvas, long l, d var_d, Index index, int i) {
+        super(canvas, new Long(l), var_d, index, i, 1);
         try {
             try {
                 anOpenGL9856 = opengl;
@@ -725,7 +725,7 @@ final class Class377 extends ha_Sub3 {
                 throw new RuntimeException("");
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.<init>(" + (opengl != null ? "{...}" : "null") + ',' + (canvas != null ? "{...}" : "null") + ',' + l + ',' + (var_d != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.<init>(" + (opengl != null ? "{...}" : "null") + ',' + (canvas != null ? "{...}" : "null") + ',' + l + ',' + (var_d != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
@@ -891,10 +891,10 @@ final class Class377 extends ha_Sub3 {
                         if (i_59_ == 8) break;
                         break while_237_;
                     }
-                } else return new Class367_Sub11(this, this.aClass45_8039);
-                return new Class367_Sub2(this, this.aClass45_8039, this.aClass269_7937);
+                } else return new Class367_Sub11(this, this.aIndex_8039);
+                return new Class367_Sub2(this, this.aIndex_8039, this.aClass269_7937);
             } while (false);
-            return new Class367_Sub9(this, this.aClass45_8039, this.aClass269_7937);
+            return new Class367_Sub9(this, this.aIndex_8039, this.aClass269_7937);
         } while (false);
         return super.method3832(i, (byte) -73);
     }

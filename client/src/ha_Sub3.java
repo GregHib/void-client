@@ -168,7 +168,7 @@ abstract class ha_Sub3 extends ha {
     static int anInt8036;
     static int anInt8037;
     static int anInt8038;
-    Class45 aClass45_8039;
+    Index aIndex_8039;
     static int anInt8040;
     static int anInt8041;
     static int anInt8042;
@@ -2606,7 +2606,7 @@ abstract class ha_Sub3 extends ha {
         return true;
     }
 
-    ha_Sub3(Canvas canvas, Object object, d var_d, Class45 class45, int i, int i_289_) {
+    ha_Sub3(Canvas canvas, Object object, d var_d, Index index, int i, int i_289_) {
         super(var_d);
         this.aFloat8089 = 3584.0F;
         this.anInt8095 = 50;
@@ -2675,7 +2675,7 @@ abstract class ha_Sub3 extends ha {
         try {
             try {
                 this.anInt8117 = i;
-                this.aClass45_8039 = class45;
+                this.aIndex_8039 = index;
                 aCanvas7910 = this.aCanvas7925 = canvas;
                 anObject8020 = this.anObject7919 = object;
                 Dimension dimension = canvas.getSize();
@@ -2700,7 +2700,7 @@ abstract class ha_Sub3 extends ha {
                 throw new RuntimeException("");
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.<init>(" + (canvas != null ? "{...}" : "null") + ',' + (object != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + i + ',' + i_289_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.<init>(" + (canvas != null ? "{...}" : "null") + ',' + (object != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + i + ',' + i_289_ + ')'));
         }
     }
 

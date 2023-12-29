@@ -219,7 +219,7 @@ public final class Class378 extends ha_Sub3 {
         this.anIDirect3DDevice9810.SetTextureStageState(this.anInt8175, 11, i_18_);
     }
 
-    static final ha createToolkit(Canvas canvas, d var_d, Class45 class45, Integer integer) {
+    static final ha createToolkit(Canvas canvas, d var_d, Index index, Integer integer) {
         Class378 class378 = null;
         Class378 class378_19_;
         try {
@@ -255,7 +255,7 @@ public final class Class378 extends ha_Sub3 {
                 idirect3ddevice = idirect3d.a(i, i_20_, canvas, i_21_ | 0x20, d3dpresent_parameters);
             }
             Class53 class53 = new Class53(idirect3ddevice.b(0), idirect3ddevice.c());
-            class378 = new Class378(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_d, class45, integer.intValue());
+            class378 = new Class378(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_d, index, integer.intValue());
             class378.method3930((byte) 26);
             class378_19_ = class378;
         } catch (RuntimeException runtimeexception) {
@@ -432,8 +432,8 @@ public final class Class378 extends ha_Sub3 {
         if (i >= -19) method3855(null, -78, 86, null, false, 82, 55, -34);
     }
 
-    private Class378(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, d var_d, Class45 class45, int i_39_) {
-        super(canvas, class53, var_d, class45, i_39_, 0);
+    private Class378(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, d var_d, Index index, int i_39_) {
+        super(canvas, class53, var_d, index, i_39_, 0);
         try {
             this.aHb9788 = var_hb;
             aD3DPRESENT_PARAMETERS9800 = d3dpresent_parameters;
@@ -707,10 +707,10 @@ public final class Class378 extends ha_Sub3 {
                         if (8 == i_65_) break;
                         break while_234_;
                     }
-                } else return new Class367_Sub5(this, this.aClass45_8039);
-                return new Class367_Sub6(this, this.aClass45_8039, this.aClass269_7937);
+                } else return new Class367_Sub5(this, this.aIndex_8039);
+                return new Class367_Sub6(this, this.aIndex_8039, this.aClass269_7937);
             } while (false);
-            return new Class367_Sub7(this, this.aClass45_8039, this.aClass269_7937);
+            return new Class367_Sub7(this, this.aIndex_8039, this.aClass269_7937);
         } while (false);
         return super.method3832(i, (byte) -74);
     }

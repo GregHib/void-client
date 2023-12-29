@@ -117,13 +117,13 @@ final class Class367_Sub11 extends Class367 {
         anInt7412++;
     }
 
-    static final void method3555(Class45 class45, int i, boolean bool, long l, int i_7_, int i_8_, int i_9_) {
+    static final void method3555(Index index, int i, boolean bool, long l, int i_7_, int i_8_, int i_9_) {
         try {
             anInt7410++;
-            Class299_Sub1_Sub1.method2260(i_9_, i_8_, l, 0, bool, class45, (byte) 126, i_7_);
+            Class299_Sub1_Sub1.method2260(i_9_, i_8_, l, 0, bool, index, (byte) 126, i_7_);
             int i_10_ = -35 / ((-41 - i) / 38);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("or.Q(" + (class45 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("or.Q(" + (index != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + l + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'));
         }
     }
 
@@ -172,14 +172,14 @@ final class Class367_Sub11 extends Class367 {
         }
     }
 
-    Class367_Sub11(Class377 class377, Class45 class45) {
+    Class367_Sub11(Class377 class377, Index index) {
         super(class377);
         try {
-            if (class45 != null && class377.aBoolean9923) {
-                aClass193_7395 = za_Sub2.method3442(34336, class45.method391("gl", "uw_ground_unlit", -29832), class377, 4);
-                aClass193_7392 = za_Sub2.method3442(34336, class45.method391("gl", "uw_ground_lit", -29832), class377, 4);
-                aClass193_7404 = za_Sub2.method3442(34336, class45.method391("gl", "uw_model_unlit", -29832), class377, 4);
-                aClass193_7407 = za_Sub2.method3442(34336, class45.method391("gl", "uw_model_lit", -29832), class377, 4);
+            if (index != null && class377.aBoolean9923) {
+                aClass193_7395 = za_Sub2.method3442(34336, index.method391("gl", "uw_ground_unlit", -29832), class377, 4);
+                aClass193_7392 = za_Sub2.method3442(34336, index.method391("gl", "uw_ground_lit", -29832), class377, 4);
+                aClass193_7404 = za_Sub2.method3442(34336, index.method391("gl", "uw_model_unlit", -29832), class377, 4);
+                aClass193_7407 = za_Sub2.method3442(34336, index.method391("gl", "uw_model_lit", -29832), class377, 4);
                 if (aClass193_7395 != null & aClass193_7392 != null & aClass193_7404 != null & aClass193_7407 != null) {
                     anInterface18_Impl3_7390 = this.aHa_Sub3_4479.method3839(1, 2, -15137, false, (new int[]{0, -1}));
                     anInterface18_Impl3_7390.method66(false, false, 25688);
@@ -187,7 +187,7 @@ final class Class367_Sub11 extends Class367 {
                 } else aBoolean7391 = false;
             } else aBoolean7391 = false;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("or.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("or.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 

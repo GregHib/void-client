@@ -8,10 +8,10 @@ final class Class153 {
     static int anInt2081;
     static int anInt2082;
     private Class60 aClass60_2083 = new Class60(128);
-    private final Class45 aClass45_2084;
+    private final Index aIndex_2084;
     static int anInt2085;
     static int anInt2086;
-    Class45 aClass45_2087;
+    Index aIndex_2087;
     static int anInt2088;
     Class60 aClass60_2089 = new Class60(64);
 
@@ -56,7 +56,7 @@ final class Class153 {
         int i_7_ = class273.anInt5167 | i << 10;
         Class348_Sub42_Sub19 class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -91));
         if (class348_sub42_sub19 != null) return class348_sub42_sub19;
-        byte[] is = (Class113.aClass45_1743.method415((byte) 73, Class113.aClass45_1743.method423(i_7_, (byte) -90)));
+        byte[] is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -90)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
@@ -71,7 +71,7 @@ final class Class153 {
         i_7_ = class273.anInt5167 | 65536 + i_5_ << 10;
         class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -31));
         if (class348_sub42_sub19 != null) return class348_sub42_sub19;
-        is = (Class113.aClass45_1743.method415((byte) 73, Class113.aClass45_1743.method423(i_7_, (byte) -107)));
+        is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -107)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
@@ -86,7 +86,7 @@ final class Class153 {
         i_7_ = class273.anInt5167 | 0x3fffc00;
         class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -107));
         if (class348_sub42_sub19 != null) return class348_sub42_sub19;
-        is = (Class113.aClass45_1743.method415((byte) 73, Class113.aClass45_1743.method423(i_7_, (byte) 104)));
+        is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) 104)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
@@ -122,8 +122,8 @@ final class Class153 {
         if (class42 != null) return class42;
         if (i_9_ < 36) return null;
         byte[] is;
-        synchronized (aClass45_2084) {
-            is = aClass45_2084.method410(-1860, 36, i);
+        synchronized (aIndex_2084) {
+            is = aIndex_2084.method410(-1860, 36, i);
         }
         class42 = new Class42();
         class42.aClass153_593 = this;
@@ -136,13 +136,13 @@ final class Class153 {
         return class42;
     }
 
-    Class153(Class230 class230, int i, Class45 class45, Class45 class45_10_) {
+    Class153(Class230 class230, int i, Index index, Index index_10_) {
         try {
-            aClass45_2084 = class45;
-            this.aClass45_2087 = class45_10_;
-            aClass45_2084.method407(0, 36);
+            aIndex_2084 = index;
+            this.aIndex_2087 = index_10_;
+            aIndex_2084.method407(0, 36);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_10_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_10_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

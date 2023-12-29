@@ -10,7 +10,7 @@ final class Class367_Sub9 extends Class367 {
     static int anInt7368;
     private Class89 aClass89_7369;
     static int anInt7370;
-    static Class45 aClass45_7371;
+    static Index aIndex_7371;
     static int anInt7372;
     private boolean aBoolean7373;
     static int anInt7374;
@@ -94,23 +94,23 @@ final class Class367_Sub9 extends Class367 {
         if (i != -103) anInt7379 = -84;
     }
 
-    Class367_Sub9(Class377 class377, Class45 class45, Class269 class269) {
+    Class367_Sub9(Class377 class377, Index index, Class269 class269) {
         super(class377);
         try {
             aClass269_7375 = class269;
-            if (class45 != null && class377.aBoolean9921 && class377.aBoolean9922) {
-                Class39 class39 = (Class328.method2608(class377, class45.method391("gl", "environment_mapped_water_v", -29832), -108, 35633));
-                Class39 class39_13_ = (Class328.method2608(class377, class45.method391("gl", "environment_mapped_water_f", -29832), -122, 35632));
+            if (index != null && class377.aBoolean9921 && class377.aBoolean9922) {
+                Class39 class39 = (Class328.method2608(class377, index.method391("gl", "environment_mapped_water_v", -29832), -108, 35633));
+                Class39 class39_13_ = (Class328.method2608(class377, index.method391("gl", "environment_mapped_water_f", -29832), -122, 35632));
                 aClass89_7369 = FontRenderer.method2582(class377, new Class39[]{class39, class39_13_}, -2113);
                 aBoolean7376 = (aClass89_7369 != null && aClass269_7375.method2041((byte) 120));
             } else aBoolean7376 = false;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ko.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ko.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
         }
     }
 
     public static void method3552(int i) {
-        aClass45_7371 = null;
+        aIndex_7371 = null;
         aClass114_7367 = null;
         aStringArray7378 = null;
         if (i != 87) anInt7379 = 80;

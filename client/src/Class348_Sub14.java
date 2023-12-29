@@ -217,7 +217,7 @@ final class Class348_Sub14 extends Class348 {
                     }
                 }
                 if (r_Sub2.aClass252_10488 != null) {
-                    Class95.aClass45_1541.anInt634 = 1;
+                    Class95.CONFIGS.anInt634 = 1;
                     Class348_Sub23_Sub2.aClass153_9031.method1220((byte) 116, 64, 1024);
                     for (int i_51_ = 0; i_51_ < r_Sub2.aClass252_10488.anInt3241; i_51_++) {
                         int i_52_ = (r_Sub2.aClass252_10488.anIntArray3238[i_51_]);
@@ -233,8 +233,8 @@ final class Class348_Sub14 extends Class348 {
                         }
                     }
                     Class348_Sub23_Sub2.aClass153_9031.method1220((byte) 13, 64, 128);
-                    Class95.aClass45_1541.anInt634 = 2;
-                    Class95.aClass45_1541.method412((byte) -126);
+                    Class95.CONFIGS.anInt634 = 2;
+                    Class95.CONFIGS.method412((byte) -126);
                 }
             }
             return true;

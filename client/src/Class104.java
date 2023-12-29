@@ -24,7 +24,7 @@ final class Class104 {
     int anInt1624;
     private final int anInt1625;
     static int[] anIntArray1626 = new int[1];
-    static Class45 aClass45_1627;
+    static Index FONT_INDEX;
     static int anInt1628;
     static int anInt1629;
     static int anInt1630;
@@ -90,7 +90,7 @@ final class Class104 {
 
     public static void method953(byte i) {
         anIntArray1626 = null;
-        aClass45_1627 = null;
+        FONT_INDEX = null;
         aClass221_1620 = null;
         if (i != 9) aClass221_1620 = null;
     }
@@ -232,7 +232,7 @@ final class Class104 {
         }
     }
 
-    static final ha method958(boolean bool, int i, d var_d, int i_61_, Canvas canvas, Class45 class45) {
+    static final ha method958(boolean bool, int i, d var_d, int i_61_, Canvas canvas, Index index) {
         try {
             if (bool != true) aClass221_1620 = null;
             anInt1610++;
@@ -243,9 +243,9 @@ final class Class104 {
                 i_63_ = dimension.height;
                 i_62_ = dimension.width;
             }
-            return ha.method3692(i_61_, i_63_, i_62_, class45, 0, var_d, canvas, i);
+            return ha.method3692(i_61_, i_63_, i_62_, index, 0, var_d, canvas, i);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (var_d != null ? "{...}" : "null") + ',' + i_61_ + ',' + (canvas != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (var_d != null ? "{...}" : "null") + ',' + i_61_ + ',' + (canvas != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -298,7 +298,7 @@ final class Class104 {
         anInt1611++;
         Class285.aClass348_Sub16_Sub3_4743 = null;
         Class348_Sub43.anInt7068 = i;
-        Class124.aClass45_1848 = null;
+        Class124.aIndex_1848 = null;
     }
 
     Class104(ha_Sub2 var_ha_Sub2, s_Sub2 var_s_Sub2) {

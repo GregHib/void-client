@@ -23,8 +23,8 @@ class Class5_Sub1 extends Class5 {
     static int anInt8351;
     static int anInt8352 = 0;
 
-    Class5_Sub1(Class45 class45, Class45 class45_0_, Class369_Sub3 class369_sub3) {
-        super(class45, class45_0_, class369_sub3);
+    Class5_Sub1(Index index, Index index_0_, Class369_Sub3 class369_sub3) {
+        super(index, index_0_, class369_sub3);
     }
 
     static final int[] method184(int i) {
@@ -37,13 +37,13 @@ class Class5_Sub1 extends Class5 {
         anInt8351++;
         if (!super.method8((byte) -125)) return false;
         Class369_Sub3 class369_sub3 = (Class369_Sub3) this.aClass369_4635;
-        if (!this.aClass45_4632.method421(false, class369_sub3.anInt8599)) return false;
-        if (!this.aClass45_4632.method421(false, class369_sub3.anInt8595)) return false;
-        if (!this.aClass45_4632.method421(false, class369_sub3.anInt8603)) return false;
-        if (!this.aClass45_4632.method421(false, class369_sub3.anInt8602)) return false;
+        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8599)) return false;
+        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8595)) return false;
+        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8603)) return false;
+        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8602)) return false;
         int i_1_ = 47 / ((25 - i) / 52);
-        if (!this.aClass45_4632.method421(false, class369_sub3.anInt8600)) return false;
-        return this.aClass45_4632.method421(false, class369_sub3.anInt8597);
+        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8600)) return false;
+        return this.aIndex_4632.method421(false, class369_sub3.anInt8597);
     }
 
     static final int method185(int i, byte i_2_) {
@@ -261,12 +261,12 @@ class Class5_Sub1 extends Class5 {
         super.method7(i);
         anInt8337++;
         Class369_Sub3 class369_sub3 = (Class369_Sub3) this.aClass369_4635;
-        this.aSprite_8350 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8599), (byte) -19, this.aClass45_4632);
-        aSprite_8347 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8595), (byte) 106, this.aClass45_4632);
-        aSprite_8342 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8603), (byte) -19, this.aClass45_4632);
-        aSprite_8339 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8602), (byte) -121, this.aClass45_4632);
-        aSprite_8343 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8600), (byte) 124, this.aClass45_4632);
-        aSprite_8338 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8597), (byte) 115, this.aClass45_4632);
+        this.aSprite_8350 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8599), (byte) -19, this.aIndex_4632);
+        aSprite_8347 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8595), (byte) 106, this.aIndex_4632);
+        aSprite_8342 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8603), (byte) -19, this.aIndex_4632);
+        aSprite_8339 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8602), (byte) -121, this.aIndex_4632);
+        aSprite_8343 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8600), (byte) 124, this.aIndex_4632);
+        aSprite_8338 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8597), (byte) 115, this.aIndex_4632);
     }
 
     static {

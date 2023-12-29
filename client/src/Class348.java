@@ -4,7 +4,7 @@
 
 class Class348 {
     static int anInt4285;
-    static Class45 aClass45_4286;
+    static Index aIndex_4286;
     static int anInt4287;
     static int[] anIntArray4288;
     static int anInt4289;
@@ -126,7 +126,7 @@ class Class348 {
     }
 
     public static void method2713(int i) {
-        aClass45_4286 = null;
+        aIndex_4286 = null;
         aClass318_Sub1Array4293 = null;
         if (i != 0) method2711(-47, 87, null, 85, false, -126, -116, -51, -44, null, 75, -69, 87, null);
         anIntArray4288 = null;

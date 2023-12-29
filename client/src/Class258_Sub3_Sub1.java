@@ -57,7 +57,7 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         Class348_Sub24.method2994(2);
         Class170.method1311(5139, Class348_Sub8.aHa6654);
         Class369.method3568(Class348_Sub8.aHa6654, 4);
-        Class255.method1933(Class21.aClass45_322, Class348_Sub8.aHa6654, true);
+        Class255.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);
         Class274.method2061(-128);
         Class101.method901(Class113.aSpriteArray1744, 515880227);
         Class354.method3466(i ^ ~0x4f);

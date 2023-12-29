@@ -60,13 +60,13 @@ final class Class286_Sub6 extends Class286 {
         try {
             if (Class348_Sub43.anInt7068 == 2) {
                 if (Class286.aClass348_Sub2_3683 == null) {
-                    Class286.aClass348_Sub2_3683 = Class348_Sub2.method2734(Class124.aClass45_1848, (Class318_Sub1_Sub4_Sub1.anInt10074), Class318.anInt3971);
+                    Class286.aClass348_Sub2_3683 = Class348_Sub2.method2734(Class124.aIndex_1848, (Class318_Sub1_Sub4_Sub1.anInt10074), Class318.anInt3971);
                     if (Class286.aClass348_Sub2_3683 == null) return false;
                 }
-                if (Class141.aClass26_1977 == null) Class141.aClass26_1977 = new Class26(Class43.aClass45_611, Class333.aClass45_4147);
+                if (Class141.aClass26_1977 == null) Class141.aClass26_1977 = new Class26(Class43.aIndex_611, Class333.aIndex_4147);
                 Class348_Sub16_Sub3 class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564;
                 if (Class285.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = Class285.aClass348_Sub16_Sub3_4743;
-                if (class348_sub16_sub3.method2866((Class286.aClass348_Sub2_3683), 22050, Class141.aClass26_1977, Class367_Sub9.aClass45_7371, -35)) {
+                if (class348_sub16_sub3.method2866((Class286.aClass348_Sub2_3683), 22050, Class141.aClass26_1977, Class367_Sub9.aIndex_7371, -35)) {
                     Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3;
                     Class98.aClass348_Sub16_Sub3_1564.method2864((byte) 52);
                     if (Class348_Sub40_Sub35.anInt9444 <= 0) {
@@ -89,7 +89,7 @@ final class Class286_Sub6 extends Class286 {
                         else Class98.aClass348_Sub16_Sub3_1564.method2870(Class286.aClass348_Sub2_3683, Class239_Sub12.aLong5971, Class346.aBoolean4275, true, (byte) 24);
                     }
                     if (Class318_Sub1_Sub4.aClass279_8764 != null) Class318_Sub1_Sub4.aClass279_8764.method2088(bool, Class98.aClass348_Sub16_Sub3_1564);
-                    Class124.aClass45_1848 = null;
+                    Class124.aIndex_1848 = null;
                     Class286.aClass348_Sub2_3683 = null;
                     Class239_Sub12.aLong5971 = 0L;
                     Class141.aClass26_1977 = null;
@@ -104,7 +104,7 @@ final class Class286_Sub6 extends Class286 {
             Class285.aClass348_Sub16_Sub3_4743 = null;
             Class141.aClass26_1977 = null;
             Class286.aClass348_Sub2_3683 = null;
-            Class124.aClass45_1848 = null;
+            Class124.aIndex_1848 = null;
             Class348_Sub43.anInt7068 = 0;
         }
         return false;

@@ -6,7 +6,7 @@ final class Class146 {
     static int anInt2012;
     static long[] aLongArray2013 = new long[10];
     static int anInt2014;
-    static Class45 aClass45_2015;
+    static Index aIndex_2015;
     int anInt2016;
     static int anInt2017;
     static int anInt2018;
@@ -43,7 +43,7 @@ final class Class146 {
     public static void method1194(int i) {
         if (i != 10) method1193(91, -68, true);
         aLongArray2013 = null;
-        aClass45_2015 = null;
+        aIndex_2015 = null;
     }
 
     public Class146() {

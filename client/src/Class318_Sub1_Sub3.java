@@ -19,7 +19,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     static int anInt8752;
     static int anInt8753;
     static int anInt8754;
-    static Class45 aClass45_8755;
+    static Index aIndex_8755;
     static Class114 aClass114_8756 = new Class114(107, 6);
 
     final boolean method2378(int i) {
@@ -102,7 +102,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     }
 
     public static void method2412(boolean bool) {
-        aClass45_8755 = null;
+        aIndex_8755 = null;
         aClass114_8756 = null;
         aClass262_8744 = null;
         if (bool != true) method2408((byte) -121);

@@ -102,9 +102,9 @@ final class Class117 {
         }
     }
 
-    static final void method1072(Class45 class45, byte i) {
+    static final void method1072(Index index, byte i) {
         if (i >= -91) method1070((byte) -93, 92);
-        Class239_Sub12.aClass45_5964 = class45;
+        Class239_Sub12.aIndex_5964 = index;
         anInt1771++;
     }
 

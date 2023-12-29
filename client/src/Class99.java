@@ -61,10 +61,10 @@ final class Class99 {
 
     static final void method882(byte i) {
         if (i != 11) method882((byte) -62);
-        Class348_Sub40_Sub33.aClass46ArrayArray9427 = new Class46[Class229.aClass45_2978.method414(-1)][];
+        Class348_Sub40_Sub33.aClass46ArrayArray9427 = new Class46[Class229.aIndex_2978.method414(-1)][];
         anInt1573++;
-        Class369_Sub2.aClass46ArrayArray8584 = new Class46[Class229.aClass45_2978.method414(-1)][];
-        Class163.aBooleanArray2162 = new boolean[Class229.aClass45_2978.method414(-1)];
+        Class369_Sub2.aClass46ArrayArray8584 = new Class46[Class229.aIndex_2978.method414(-1)][];
+        Class163.aBooleanArray2162 = new boolean[Class229.aIndex_2978.method414(-1)];
     }
 
     public static void method883(byte i) {

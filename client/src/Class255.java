@@ -5,8 +5,8 @@
 final class Class255 {
     static Class114 aClass114_3265;
     static int anInt3266;
-    private final Class45 aClass45_3267;
-    Class45 aClass45_3268;
+    private final Index aIndex_3267;
+    Index aIndex_3268;
     private boolean aBoolean3269;
     static int anInt3270;
     int anInt3271;
@@ -90,65 +90,65 @@ final class Class255 {
         }
     }
 
-    static final void method1933(Class45 class45, ha var_ha, boolean bool) {
+    static final void method1933(Index index, ha var_ha, boolean bool) {
         try {
             anInt3279++;
-            Class207[] class207s = Class207.method1519(class45, Class348_Sub22.anInt6862, 0);
+            Class207[] class207s = Class207.method1519(index, Class348_Sub22.anInt6862, 0);
             Class169.aSpriteArray2260 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class169.aSpriteArray2260[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class106.anInt1639, 0);
+            class207s = Class207.method1519(index, Class106.anInt1639, 0);
             Class348_Sub45.aSpriteArray7107 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class348_Sub45.aSpriteArray7107[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class373_Sub2.anInt7429, 0);
+            class207s = Class207.method1519(index, Class373_Sub2.anInt7429, 0);
             Class239_Sub2.aSpriteArray5857 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class239_Sub2.aSpriteArray5857[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, ha.anInt4562, 0);
+            class207s = Class207.method1519(index, ha.anInt4562, 0);
             Class318_Sub1_Sub1_Sub1.aSpriteArray9959 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class318_Sub1_Sub1_Sub1.aSpriteArray9959[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class82.anInt1435, 0);
+            class207s = Class207.method1519(index, Class82.anInt1435, 0);
             Class264.aSpriteArray3378 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class264.aSpriteArray3378[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class115.anInt1756, 0);
+            class207s = Class207.method1519(index, Class115.anInt1756, 0);
             Class239_Sub9.aSpriteArray5933 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class239_Sub9.aSpriteArray5933[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class291.anInt3739, 0);
+            class207s = Class207.method1519(index, Class291.anInt3739, 0);
             Class59_Sub1.aSpriteArray5294 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class59_Sub1.aSpriteArray5294[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class86.anInt1481, 0);
+            class207s = Class207.method1519(index, Class86.anInt1481, 0);
             Class25.aSpriteArray367 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class25.aSpriteArray367[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class239_Sub10.anInt5948, 0);
+            class207s = Class207.method1519(index, Class239_Sub10.anInt5948, 0);
             Class348_Sub40_Sub37.aSpriteArray9467 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class348_Sub40_Sub37.aSpriteArray9467[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class113.anInt1742, 0);
+            class207s = Class207.method1519(index, Class113.anInt1742, 0);
             Class348_Sub12.aSpriteArray6742 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class348_Sub12.aSpriteArray6742[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class364.anInt4469, 0);
+            class207s = Class207.method1519(index, Class364.anInt4469, 0);
             Class240.aSpriteArray4679 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class240.aSpriteArray4679[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class348_Sub40_Sub38.anInt9473, 0);
+            class207s = Class207.method1519(index, Class348_Sub40_Sub38.anInt9473, 0);
             Class113.aSpriteArray1744 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class113.aSpriteArray1744[i] = var_ha.method3691(class207s[i], true);
-            Class79.aSprite_1365 = var_ha.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool);
-            Class239_Sub24.aSprite_6097 = var_ha.method3691(Class207.method1521(class45, (Class186_Sub1.anInt5814), 0), true);
-            class207s = Class207.method1519(class45, Class5_Sub3.anInt8370, 0);
+            Class79.aSprite_1365 = var_ha.method3691(Class207.method1521(index, Class52.anInt4895, 0), bool);
+            Class239_Sub24.aSprite_6097 = var_ha.method3691(Class207.method1521(index, (Class186_Sub1.anInt5814), 0), true);
+            class207s = Class207.method1519(index, Class5_Sub3.anInt8370, 0);
             Class200.aSpriteArray2640 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class200.aSpriteArray2640[i] = var_ha.method3691(class207s[i], true);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (class45 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (index != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 
@@ -206,7 +206,7 @@ final class Class255 {
         synchronized (this.aClass175_3288) {
             this.aClass175_3288.method1344((byte) -124);
         }
-        if (i < 105) this.aClass45_3268 = null;
+        if (i < 105) this.aIndex_3268 = null;
     }
 
     final void method1939(int i) {
@@ -231,8 +231,8 @@ final class Class255 {
         }
         if (class213 != null) return class213;
         byte[] is;
-        synchronized (aClass45_3267) {
-            is = aClass45_3267.method410(-1860, Class54.method500(7, i_13_), Class251.method1914(-23590, i_13_));
+        synchronized (aIndex_3267) {
+            is = aIndex_3267.method410(-1860, Class54.method500(7, i_13_), Class251.method1914(-23590, i_13_));
         }
         class213 = new Class213();
         class213.aClass255_2761 = this;
@@ -293,21 +293,21 @@ final class Class255 {
         }
     }
 
-    Class255(Class230 class230, int i, boolean bool, Class326 class326, Class45 class45, Class45 class45_22_) {
+    Class255(Class230 class230, int i, boolean bool, Class326 class326, Index index, Index index_22_) {
         try {
             aBoolean3269 = bool;
             aClass326_3292 = class326;
-            this.aClass45_3268 = class45_22_;
+            this.aIndex_3268 = index_22_;
             this.anInt3286 = i;
-            aClass45_3267 = class45;
-            if (aClass45_3267 != null) {
-                int i_23_ = -1 + aClass45_3267.method414(-1);
-                this.anInt3271 = aClass45_3267.method407(0, i_23_) + i_23_ * 256;
+            aIndex_3267 = index;
+            if (aIndex_3267 != null) {
+                int i_23_ = -1 + aIndex_3267.method414(-1);
+                this.anInt3271 = aIndex_3267.method407(0, i_23_) + i_23_ * 256;
             } else this.anInt3271 = 0;
             aStringArray3290 = (new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null});
             aStringArray3293 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class326 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_22_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class326 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (index_22_ != null ? "{...}" : "null") + ')'));
         }
     }
 

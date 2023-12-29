@@ -66,8 +66,8 @@ final class Class348_Sub2 extends Class348 {
         }
     }
 
-    static final Class348_Sub2 method2734(Class45 class45, int i, int i_15_) {
-        byte[] is = class45.method410(-1860, i, i_15_);
+    static final Class348_Sub2 method2734(Index index, int i, int i_15_) {
+        byte[] is = index.method410(-1860, i, i_15_);
         if (is == null) return null;
         return new Class348_Sub2(new Class348_Sub49(is));
     }

@@ -38,7 +38,7 @@ final class Class124 {
     static int anInt1845;
     Class129[] aClass129Array1846;
     int[] anIntArray1847;
-    static Class45 aClass45_1848;
+    static Index aIndex_1848;
     short[] aShortArray1849;
     static int anInt1850;
     byte aByte1851;
@@ -136,7 +136,7 @@ final class Class124 {
     }
 
     public static void method1096(int i) {
-        if (i >= 88) aClass45_1848 = null;
+        if (i >= 88) aIndex_1848 = null;
     }
 
     static final int method1097(byte i, int i_20_, Random random) {
@@ -144,7 +144,7 @@ final class Class124 {
         if (i_20_ <= 0) throw new IllegalArgumentException();
         if (Class192.method1436(-19, i_20_)) return (int) ((long) i_20_ * (0xffffffffL & (long) random.nextInt()) >> 32);
         int i_21_ = -2147483648 + -(int) (4294967296L % (long) i_20_);
-        if (i < 78) aClass45_1848 = null;
+        if (i < 78) aIndex_1848 = null;
         int i_22_;
         do i_22_ = random.nextInt(); while (i_22_ >= i_21_);
         return Class350.method3452(i_22_, (byte) -15, i_20_);

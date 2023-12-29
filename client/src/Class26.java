@@ -7,9 +7,9 @@ final class Class26 {
     private final Class356 aClass356_374 = new Class356(256);
     static int anInt375;
     static int anInt376;
-    private final Class45 aClass45_377;
+    private final Index aIndex_377;
     static int anInt378;
-    private final Class45 aClass45_379;
+    private final Index aIndex_379;
     static int anInt380;
     private final Class356 aClass356_381 = new Class356(256);
     static Class364 aClass364_382 = new Class364("WTQA", 2);
@@ -31,7 +31,7 @@ final class Class26 {
         Class348_Sub19_Sub1 class348_sub19_sub1 = (Class348_Sub19_Sub1) aClass356_381.method3480(l, -6008);
         if (class348_sub19_sub1 != null) return class348_sub19_sub1;
         if (is != null && is[0] <= 0) return null;
-        Class317 class317 = Class317.method2372(aClass45_379, i_1_, i);
+        Class317 class317 = Class317.method2372(aIndex_379, i_1_, i);
         if (i_0_ < 50) method311((byte) -60, 'n');
         if (class317 == null) return null;
         class348_sub19_sub1 = class317.method2369();
@@ -42,15 +42,15 @@ final class Class26 {
 
     final Class348_Sub19_Sub1 method308(int i, int[] is, int i_3_) {
         anInt373++;
-        if ((~aClass45_379.method414(-1)) == i_3_) return method307(i, is, 122, 0);
-        if (aClass45_379.method407(0, i) == 1) return method307(0, is, 69, i);
+        if ((~aIndex_379.method414(-1)) == i_3_) return method307(i, is, 122, 0);
+        if (aIndex_379.method407(0, i) == 1) return method307(0, is, 69, i);
         throw new RuntimeException();
     }
 
     final Class348_Sub19_Sub1 method309(int[] is, int i, int i_4_) {
         anInt376++;
-        if (aClass45_377.method414(i_4_) == 1) return method310(i, 0, (byte) 92, is);
-        if (aClass45_377.method407(0, i) == 1) return method310(0, i, (byte) 78, is);
+        if (aIndex_377.method414(i_4_) == 1) return method310(i, 0, (byte) 92, is);
+        if (aIndex_377.method407(0, i) == 1) return method310(0, i, (byte) 78, is);
         if (i_4_ != -1) method307(44, null, -124, -47);
         throw new RuntimeException();
     }
@@ -66,7 +66,7 @@ final class Class26 {
         if (is != null && is[0] <= 0) return null;
         Class348_Sub10 class348_sub10 = (Class348_Sub10) aClass356_374.method3480(l, -6008);
         if (class348_sub10 == null) {
-            class348_sub10 = Class348_Sub10.method2795(aClass45_377, i_5_, i);
+            class348_sub10 = Class348_Sub10.method2795(aIndex_377, i_5_, i);
             if (class348_sub10 == null) return null;
             aClass356_374.method3483((byte) 108, l, class348_sub10);
         }
@@ -83,12 +83,12 @@ final class Class26 {
         return c == 160 || c == 32 || c == 95 || c == 45;
     }
 
-    Class26(Class45 class45, Class45 class45_9_) {
+    Class26(Index index, Index index_9_) {
         try {
-            aClass45_377 = class45_9_;
-            aClass45_379 = class45;
+            aIndex_377 = index_9_;
+            aIndex_379 = index;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hs.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class45_9_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("hs.<init>(" + (index != null ? "{...}" : "null") + ',' + (index_9_ != null ? "{...}" : "null") + ')'));
         }
     }
 

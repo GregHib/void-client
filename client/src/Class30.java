@@ -61,12 +61,12 @@ final class Class30 {
         if (i != 1) method322(-112);
     }
 
-    static final void method323(Class45 class45, Class297 class297, byte i) {
+    static final void method323(Index index, Class297 class297, byte i) {
         try {
             Class348_Sub41.aString7048 = "";
             Class59_Sub1.aClass297_5297 = class297;
             anInt410++;
-            Class167.aClass45_2208 = class45;
+            Class167.aIndex_2208 = index;
             if (!Class348_Sub24.aString6877.startsWith("win")) {
                 if (!Class348_Sub24.aString6877.startsWith("linux")) {
                     if (Class348_Sub24.aString6877.startsWith("mac")) Class348_Sub41.aString7048 += "macos/";
@@ -82,7 +82,7 @@ final class Class30 {
                 } else Class348_Sub41.aString7048 += "x86_64/";
             } else Class348_Sub41.aString7048 += "msjava/";
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hw.A(" + (class45 != null ? "{...}" : "null") + ',' + (class297 != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("hw.A(" + (index != null ? "{...}" : "null") + ',' + (class297 != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 

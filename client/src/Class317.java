@@ -70,8 +70,8 @@ final class Class317 {
         aClass80Array3969 = new Class80[10];
     }
 
-    static final Class317 method2372(Class45 class45, int i, int i_11_) {
-        byte[] is = class45.method410(-1860, i, i_11_);
+    static final Class317 method2372(Index index, int i, int i_11_) {
+        byte[] is = index.method410(-1860, i, i_11_);
         if (is == null) return null;
         return new Class317(new Class348_Sub49(is));
     }

@@ -44,7 +44,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
         this.aThrowable4595 = throwable;
     }
 
-    static final void method4011(int i, Class45 class45) {
+    static final void method4011(int i, Index index) {
         anInt4598++;
         if (i != 1024) method4012(null, (byte) 68);
         client.anInt5171 = 0;
@@ -54,8 +54,8 @@ final class RuntimeException_Sub1 extends RuntimeException {
         Class348_Sub51.aClass318_Sub10Array7249 = new Class318_Sub10[(Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637]) + 1];
         Class258_Sub3.anInt8550 = 0;
         Class376.anInt4559 = 0;
-        Class117.method1072(class45, (byte) -107);
-        Class2.method172(30284, class45);
+        Class117.method1072(index, (byte) -107);
+        Class2.method172(30284, index);
     }
 
     static final void method4012(byte[] is, byte i) {

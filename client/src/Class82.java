@@ -8,16 +8,16 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 final class Class82 {
-    static Class45 aClass45_1434;
+    static Index QUICK_CHAT_MENUS;
     static int anInt1435;
-    private final Class45 aClass45_1436;
+    private final Index aIndex_1436;
     static int anInt1437;
     static int anInt1438;
     int anInt1439;
 
     public static void method811(byte i) {
         if (i > -109) anInt1435 = 69;
-        aClass45_1434 = null;
+        QUICK_CHAT_MENUS = null;
     }
 
     static final void method812(String string, boolean bool, boolean bool_0_, byte i) {
@@ -339,8 +339,8 @@ final class Class82 {
                             break;
                         }
                         if (string.equalsIgnoreCase("resetminimap")) {
-                            Class21.aClass45_322.method405(i ^ ~0x4e);
-                            Class21.aClass45_322.method412((byte) 127);
+                            Class21.SPRITES.method405(i ^ ~0x4e);
+                            Class21.SPRITES.method412((byte) 127);
                             Class2.aClass141_117.method1175((byte) 125);
                             Class348_Sub23_Sub2.aClass153_9031.method1219(7851);
                             Class50_Sub2.method464(-1);
@@ -570,7 +570,7 @@ final class Class82 {
                         }
                         if (string.startsWith("orthotilesize ")) {
                             int i_23_ = (Class348_Sub41.parseInt(true, string.substring(1 + string.indexOf(' '))));
-                            Class186_Sub1.anInt5812 = Class45.anInt666 = i_23_;
+                            Class186_Sub1.anInt5812 = Index.anInt666 = i_23_;
                             Applet_Sub1.method94("ortho tile size=" + i_23_, -70);
                             Class348_Sub42_Sub3.method3179(0);
                             break;
@@ -696,13 +696,13 @@ final class Class82 {
         }
     }
 
-    Class82(Class230 class230, int i, Class45 class45) {
+    Class82(Class230 class230, int i, Index index) {
         new Class60(64);
         try {
-            aClass45_1436 = class45;
-            this.anInt1439 = aClass45_1436.method407(0, 15);
+            aIndex_1436 = index;
+            this.anInt1439 = aIndex_1436.method407(0, 15);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 }

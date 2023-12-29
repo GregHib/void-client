@@ -65,7 +65,7 @@ final class Class362 {
                 if (bool) {
                     try {
                         if (!Class59_Sub1.aBoolean5300) var_ha.method3689((byte) 118);
-                        else Class45.method395(i + 79);
+                        else Index.method395(i + 79);
                     } catch (Exception_Sub1 exception_sub1) {
                         /* empty */
                     }

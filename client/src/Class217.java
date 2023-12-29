@@ -5,7 +5,7 @@
 final class Class217 {
     static int anInt2840;
     static int anInt2841;
-    private final Class45 aClass45_2842;
+    private final Index aIndex_2842;
     static int anInt2843;
     static Class60 aClass60_2844 = new Class60(64);
     int anInt2845;
@@ -40,8 +40,8 @@ final class Class217 {
         }
         if (class159 != null) return class159;
         byte[] is;
-        synchronized (aClass45_2842) {
-            is = aClass45_2842.method410(-1860, 16, i_1_);
+        synchronized (aIndex_2842) {
+            is = aIndex_2842.method410(-1860, 16, i_1_);
             if (i >= -17) aClass60_2848 = null;
         }
         class159 = new Class159();
@@ -68,13 +68,13 @@ final class Class217 {
         }
     }
 
-    Class217(Class230 class230, int i, Class45 class45) {
+    Class217(Class230 class230, int i, Index index) {
         try {
-            aClass45_2842 = class45;
-            if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16);
+            aIndex_2842 = index;
+            if (aIndex_2842 != null) this.anInt2845 = aIndex_2842.method407(0, 16);
             else this.anInt2845 = 0;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 }

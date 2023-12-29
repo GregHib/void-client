@@ -19,15 +19,15 @@ final class Class367_Sub5 extends Class367 {
     private boolean aBoolean7336;
     private static final float[] aFloatArray7337 = new float[16];
 
-    Class367_Sub5(Class378 class378, Class45 class45) {
+    Class367_Sub5(Class378 class378, Index index) {
         super(class378);
         aClass378_7328 = class378;
-        if (null == class45 || ((aClass378_7328.aD3DCAPS9791.VertexShaderVersion) & 0xffff) < 257) aBoolean7329 = false;
+        if (null == index || ((aClass378_7328.aD3DCAPS9791.VertexShaderVersion) & 0xffff) < 257) aBoolean7329 = false;
         else {
-            anIDirect3DVertexShader7332 = aClass378_7328.anIDirect3DDevice9810.b(class45.method391("dx", "uw_ground_unlit", -29832));
-            anIDirect3DVertexShader7330 = aClass378_7328.anIDirect3DDevice9810.b(class45.method391("dx", "uw_ground_lit", -29832));
-            anIDirect3DVertexShader7334 = aClass378_7328.anIDirect3DDevice9810.b(class45.method391("dx", "uw_model_unlit", -29832));
-            anIDirect3DVertexShader7335 = aClass378_7328.anIDirect3DDevice9810.b(class45.method391("dx", "uw_model_lit", -29832));
+            anIDirect3DVertexShader7332 = aClass378_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_ground_unlit", -29832));
+            anIDirect3DVertexShader7330 = aClass378_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_ground_lit", -29832));
+            anIDirect3DVertexShader7334 = aClass378_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_model_unlit", -29832));
+            anIDirect3DVertexShader7335 = aClass378_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_model_lit", -29832));
             if (null != anIDirect3DVertexShader7332 & anIDirect3DVertexShader7330 != null & anIDirect3DVertexShader7334 != null & null != anIDirect3DVertexShader7335) {
                 anInterface18_Impl3_7331 = (this.aHa_Sub3_4479.method3839(1, 2, -15137, false, new int[]{0, -1}));
                 anInterface18_Impl3_7331.method66(false, false, 25688);

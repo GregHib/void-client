@@ -5,13 +5,13 @@
 final class Class141 {
     private Class60 aClass60_1963 = new Class60(64);
     static int anInt1964;
-    Class45 aClass45_1965;
+    Index aIndex_1965;
     static Class273 aClass273_1966;
     static int anInt1967;
     static int anInt1968;
     static int anInt1969;
     static int anInt1970;
-    private final Class45 aClass45_1971;
+    private final Index aIndex_1971;
     static int anInt1972;
     static int[] anIntArray1973 = {0, 1, 2, 3, 4, 5, 6, 14};
     static int anInt1974;
@@ -27,8 +27,8 @@ final class Class141 {
         }
         if (class218 != null) return class218;
         byte[] is;
-        synchronized (aClass45_1971) {
-            is = aClass45_1971.method410(i + -1891, 34, i_0_);
+        synchronized (aIndex_1971) {
+            is = aIndex_1971.method410(i + -1891, 34, i_0_);
         }
         class218 = new Class218();
         if (i != 31) return null;
@@ -95,13 +95,13 @@ final class Class141 {
         if (i >= -111) method1177((byte) 47);
     }
 
-    Class141(Class230 class230, int i, Class45 class45, Class45 class45_4_) {
+    Class141(Class230 class230, int i, Index index, Index index_4_) {
         try {
-            this.aClass45_1965 = class45_4_;
-            aClass45_1971 = class45;
-            aClass45_1971.method407(0, 34);
+            this.aIndex_1965 = index_4_;
+            aIndex_1971 = index;
+            aIndex_1971.method407(0, 34);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_4_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_4_ != null ? "{...}" : "null") + ')'));
         }
     }
 

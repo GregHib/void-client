@@ -104,8 +104,8 @@ final class Class22 {
                 if (Class348_Sub34.aHa6968 == null) {
                     Canvas canvas = new Canvas();
                     canvas.setSize(36, 32);
-                    Class348_Sub34.aHa6968 = Class104.method958(true, 0, Class348_Sub40_Sub4.aD9113, 0, canvas, Class136.aClass45_4796);
-                    Class348_Sub40_Sub9.aFontRenderer_9173 = (Class348_Sub34.aHa6968.method3686(Class239_Sub23.getFontMetrics(Class56.anInt1044, 0, -44, Class104.aClass45_1627), Class207.method1519(Class21.aClass45_322, Class56.anInt1044, 0), true));
+                    Class348_Sub34.aHa6968 = Class104.method958(true, 0, Class348_Sub40_Sub4.aD9113, 0, canvas, Class136.SHADERS);
+                    Class348_Sub40_Sub9.aFontRenderer_9173 = (Class348_Sub34.aHa6968.method3686(Class239_Sub23.getFontMetrics(Class56.anInt1044, 0, -44, Class104.FONT_INDEX), Class207.method1519(Class21.SPRITES, Class56.anInt1044, 0), true));
                 }
                 for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1995(i + 4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1990((byte) 118)) {
                     Exception_Sub1.aClass255_112.method1932(Class348_Sub34.aHa6968, class348_sub7.anInt6647, class348_sub7.anInt6648, Class348_Sub40_Sub9.aFontRenderer_9173, (class348_sub7.aBoolean6650 ? (Class132.aPlayer_1907.aClass154_10536) : null), class348_sub7.anInt6642, false, (byte) 83, var_ha, class348_sub7.anInt6649, false, class348_sub7.anInt6645);

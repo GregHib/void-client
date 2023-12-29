@@ -3,7 +3,7 @@
  */
 
 final class Class278 {
-    Class45 aClass45_3576;
+    Index aIndex_3576;
     private Class60 aClass60_3577 = new Class60(64);
     Class230 aClass230_3578;
     static int anInt3579;
@@ -12,7 +12,7 @@ final class Class278 {
     static int anInt3582;
     boolean aBoolean3583;
     static int anInt3584;
-    private final Class45 aClass45_3585;
+    private final Index aIndex_3585;
     static int anInt3586;
     static int anInt3587;
     static int anInt3588;
@@ -104,8 +104,8 @@ final class Class278 {
         }
         if (class79 != null) return class79;
         byte[] is;
-        synchronized (aClass45_3585) {
-            is = aClass45_3585.method410(i_6_ + -1859, Class115.method1060(i, (byte) 69), Class253.method1920(127, i));
+        synchronized (aIndex_3585) {
+            is = aIndex_3585.method410(i_6_ + -1859, Class115.method1060(i, (byte) 69), Class253.method1920(127, i));
         }
         class79 = new Class79();
         class79.anInt1344 = i;
@@ -133,18 +133,18 @@ final class Class278 {
         if (i <= 122) method2075(-125, -46, 9);
     }
 
-    Class278(Class230 class230, int i, boolean bool, Class45 class45, Class45 class45_7_) {
+    Class278(Class230 class230, int i, boolean bool, Index index, Index index_7_) {
         do {
             try {
                 this.aBoolean3583 = bool;
-                aClass45_3585 = class45;
-                this.aClass45_3576 = class45_7_;
+                aIndex_3585 = index;
+                this.aIndex_3576 = index_7_;
                 this.aClass230_3578 = class230;
-                if (aClass45_3585 == null) break;
-                int i_8_ = aClass45_3585.method414(-1) + -1;
-                aClass45_3585.method407(0, i_8_);
+                if (aIndex_3585 == null) break;
+                int i_8_ = aIndex_3585.method414(-1) + -1;
+                aIndex_3585.method407(0, i_8_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_7_ != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (index != null ? "{...}" : "null") + ',' + (index_7_ != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

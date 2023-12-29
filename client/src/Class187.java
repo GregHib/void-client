@@ -3,7 +3,7 @@
  */
 
 final class Class187 {
-    private Class45 aClass45_2498;
+    private Index aIndex_2498;
     static int anInt2499;
     static int anInt2500;
     private Class60 aClass60_2501 = new Class60(64);
@@ -58,8 +58,8 @@ final class Class187 {
         }
         if (class321 != null) return class321;
         byte[] is;
-        synchronized (aClass45_2498) {
-            is = aClass45_2498.method410(-1860, 35, i_3_);
+        synchronized (aIndex_2498) {
+            is = aIndex_2498.method410(-1860, 35, i_3_);
         }
         class321 = new Class321();
         if (is != null) class321.method2551(-125, new Class348_Sub49(is));
@@ -73,7 +73,7 @@ final class Class187 {
 
     final void method1409(int i, int i_4_) {
         synchronized (aClass60_2501) {
-            if (i_4_ != -20721) aClass45_2498 = null;
+            if (i_4_ != -20721) aIndex_2498 = null;
             aClass60_2501.method578(i_4_ + 20723, i);
         }
         anInt2503++;
@@ -87,14 +87,14 @@ final class Class187 {
         anInt2502++;
     }
 
-    Class187(Class230 class230, int i, Class45 class45) {
+    Class187(Class230 class230, int i, Index index) {
         do {
             try {
-                aClass45_2498 = class45;
-                if (aClass45_2498 == null) break;
-                aClass45_2498.method407(0, 35);
+                aIndex_2498 = index;
+                if (aIndex_2498 == null) break;
+                aIndex_2498.method407(0, 35);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("qga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

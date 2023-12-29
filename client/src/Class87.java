@@ -8,7 +8,7 @@ final class Class87 {
     static int anInt1485;
     static int anInt1486;
     private Class60 aClass60_1487 = new Class60(64);
-    private final Class45 aClass45_1488;
+    private final Index aIndex_1488;
     static int anInt1489;
     static int anInt1490;
     private Class60 aClass60_1491 = new Class60(100);
@@ -33,8 +33,8 @@ final class Class87 {
         if (i_0_ != 7) aClass60_1491 = null;
         if (class17 != null) return class17;
         byte[] is;
-        synchronized (aClass45_1488) {
-            is = aClass45_1488.method410(-1860, Class15.method256(i, (byte) 125), Class52.method494(i_0_ ^ 0x55, i));
+        synchronized (aIndex_1488) {
+            is = aIndex_1488.method410(-1860, Class15.method256(i, (byte) 125), Class52.method494(i_0_ ^ 0x55, i));
         }
         class17 = new Class17();
         class17.anInt269 = i;
@@ -94,16 +94,16 @@ final class Class87 {
         return class348_sub42_sub17;
     }
 
-    Class87(Class230 class230, int i, Class45 class45, Class45 class45_6_, Class45 class45_7_) {
+    Class87(Class230 class230, int i, Index index, Index index_6_, Index index_7_) {
         try {
-            aClass45_1488 = class45;
-            if (aClass45_1488 != null) {
-                int i_8_ = aClass45_1488.method414(-1) + -1;
-                aClass45_1488.method407(0, i_8_);
+            aIndex_1488 = index;
+            if (aIndex_1488 != null) {
+                int i_8_ = aIndex_1488.method414(-1) + -1;
+                aIndex_1488.method407(0, i_8_);
             }
-            Class239.method1711(7, class45_6_, 2, class45_7_);
+            Class239.method1711(7, index_6_, 2, index_7_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_6_ != null ? "{...}" : "null") + ',' + (class45_7_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_6_ != null ? "{...}" : "null") + ',' + (index_7_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

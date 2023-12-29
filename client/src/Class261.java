@@ -9,7 +9,7 @@ final class Class261 {
     static int anInt3316;
     static int anInt3317;
     static int anInt3318;
-    private final Class45 aClass45_3319;
+    private final Index aIndex_3319;
     static int anInt3320;
     private final Class60 aClass60_3321 = new Class60(64);
     static int anInt3322;
@@ -71,8 +71,8 @@ final class Class261 {
         }
         if (class225 != null) return class225;
         byte[] is;
-        synchronized (aClass45_3319) {
-            is = aClass45_3319.method410(-1860, i_9_, i);
+        synchronized (aIndex_3319) {
+            is = aIndex_3319.method410(-1860, i_9_, i);
         }
         class225 = new Class225();
         if (is != null) class225.method1620(new Class348_Sub49(is), -108);
@@ -277,12 +277,12 @@ final class Class261 {
         }
     }
 
-    Class261(Class230 class230, int i, Class45 class45) {
+    Class261(Class230 class230, int i, Index index) {
         try {
-            aClass45_3319 = class45;
-            aClass45_3319.method407(0, 32);
+            aIndex_3319 = index;
+            aIndex_3319.method407(0, 32);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("uga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 }

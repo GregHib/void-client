@@ -477,17 +477,17 @@ final class Class79 {
                 if (class64 != null) i_43_ |= class64.ua();
                 int i_69_ = i_43_;
                 boolean bool_70_ = false;
-                synchronized (this.aClass278_1348.aClass45_3576) {
+                synchronized (this.aClass278_1348.aIndex_3576) {
                     for (int i_71_ = 0; (anIntArray1402.length > i_71_); i_71_++) {
-                        if (anIntArray1402[i_71_] != -1 && !(this.aClass278_1348.aClass45_3576.method420(-10499, anIntArray1402[i_71_], 0))) bool_70_ = true;
+                        if (anIntArray1402[i_71_] != -1 && !(this.aClass278_1348.aIndex_3576.method420(-10499, anIntArray1402[i_71_], 0))) bool_70_ = true;
                     }
                 }
                 if (bool_70_) return null;
                 Class124[] class124s = new Class124[anIntArray1402.length];
                 for (int i_72_ = 0; i_72_ < anIntArray1402.length; i_72_++) {
                     if (anIntArray1402[i_72_] != -1) {
-                        synchronized (this.aClass278_1348.aClass45_3576) {
-                            class124s[i_72_] = Class300.method2277(0, (this.aClass278_1348.aClass45_3576), anIntArray1402[i_72_], -1);
+                        synchronized (this.aClass278_1348.aIndex_3576) {
+                            class124s[i_72_] = Class300.method2277(0, (this.aClass278_1348.aIndex_3576), anIntArray1402[i_72_], -1);
                         }
                         if (class124s[i_72_] != null) {
                             if (class124s[i_72_].anInt1830 < 13) class124s[i_72_].method1092(2, 115);
@@ -632,16 +632,16 @@ final class Class79 {
                 if (class64 != null) i_99_ |= class64.ua();
                 int i_100_ = i_99_;
                 boolean bool = false;
-                synchronized (this.aClass278_1348.aClass45_3576) {
+                synchronized (this.aClass278_1348.aIndex_3576) {
                     for (int i_101_ = 0; (anIntArray1380.length > i_101_); i_101_++) {
-                        if (!this.aClass278_1348.aClass45_3576.method420(-10499, anIntArray1380[i_101_], 0)) bool = true;
+                        if (!this.aClass278_1348.aIndex_3576.method420(-10499, anIntArray1380[i_101_], 0)) bool = true;
                     }
                 }
                 if (bool) return null;
                 Class124[] class124s = new Class124[anIntArray1380.length];
-                synchronized (this.aClass278_1348.aClass45_3576) {
+                synchronized (this.aClass278_1348.aIndex_3576) {
                     for (int i_102_ = 0; (anIntArray1380.length > i_102_); i_102_++)
-                        class124s[i_102_] = Class300.method2277(0, (this.aClass278_1348.aClass45_3576), anIntArray1380[i_102_], -1);
+                        class124s[i_102_] = Class300.method2277(0, (this.aClass278_1348.aIndex_3576), anIntArray1380[i_102_], -1);
                 }
                 for (int i_103_ = 0; (i_103_ < anIntArray1380.length); i_103_++) {
                     if (class124s[i_103_] != null && class124s[i_103_].anInt1830 < 13) class124s[i_103_].method1092(2, 66);

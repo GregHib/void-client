@@ -71,32 +71,32 @@ final class Class239_Sub11 extends Class239 {
         }
         if (Class367_Sub8.anInt7365 == 1) {
             Class126.aClass267Array4987 = Class267.method2029(110);
-            Class267.aClass267_3396.method2025(new Class292(Class367_Sub8.aClass45_7362), false);
+            Class267.aClass267_3396.method2025(new Class292(Class367_Sub8.DEFAULTS), false);
             Class267.aClass267_3402.method2025(new Class309("jaggl"), false);
             Class267.aClass267_3403.method2025(new Class309("jagdx"), false);
             Class267.aClass267_3404.method2025(new Class309("jagmisc"), false);
             Class267.aClass267_3405.method2025(new Class309("sw3d"), false);
             Class267.aClass267_3406.method2025(new Class309("hw3d"), false);
             Class267.aClass267_3407.method2025(new Class309("jagtheora"), false);
-            Class267.aClass267_3408.method2025(new Class292(Class136.aClass45_4796), false);
-            Class267.aClass267_3409.method2025(new Class292(Class348_Sub11.aClass45_4770), false);
-            Class267.aClass267_3410.method2025(new Class292(Class95.aClass45_1541), false);
-            Class267.aClass267_3411.method2025(new Class292(Class94.aClass45_1538), false);
-            Class267.aClass267_3412.method2025(new Class292(Class247.aClass45_3183), false);
-            Class267.aClass267_3413.method2025(new Class292(Class216.aClass45_4975), false);
-            Class267.aClass267_3414.method2025(new Class292(Class174.aClass45_2306), false);
-            Class267.aClass267_3415.method2025(new Class292(r_Sub2.aClass45_10480), false);
-            Class267.aClass267_3416.method2025(new Class292(Class78.aClass45_1322), false);
-            Class267.aClass267_3417.method2025(new Class292(Class348_Sub16_Sub3.aClass45_8926), false);
-            Class267.aClass267_3418.method2025(new Class292(Class130.aClass45_1897), false);
-            Class267.aClass267_3419.method2025(new Class292(Class82.aClass45_1434), false);
-            Class267.aClass267_3420.method2025(new Class292(Class239.aClass45_3146), false);
-            Class267.aClass267_3421.method2025(new Class292(Class262.aClass45_3323), false);
-            Class267.aClass267_3422.method2025(new Class73((Class16.aClass45_233), "huffman"), false);
-            Class267.aClass267_3423.method2025(new Class292(Class348_Sub35.aClass45_6980), false);
-            Class267.aClass267_3424.method2025(new Class292(Class113.aClass45_1743), false);
-            Class267.aClass267_3425.method2025(new Class292(Class104.aClass45_1627), false);
-            Class267.aClass267_3426.method2025(new Class136((Class348_Sub32.aClass45_6950), "details"), false);
+            Class267.aClass267_3408.method2025(new Class292(Class136.SHADERS), false);
+            Class267.aClass267_3409.method2025(new Class292(Class348_Sub11.TEXTURE_DEFINITIONS), false);
+            Class267.aClass267_3410.method2025(new Class292(Class95.CONFIGS), false);
+            Class267.aClass267_3411.method2025(new Class292(Class94.OBJECTS), false);
+            Class267.aClass267_3412.method2025(new Class292(Class247.ENUMS), false);
+            Class267.aClass267_3413.method2025(new Class292(Class216.NPCS), false);
+            Class267.aClass267_3414.method2025(new Class292(Class174.ITEMS), false);
+            Class267.aClass267_3415.method2025(new Class292(r_Sub2.ANIMATIONS), false);
+            Class267.aClass267_3416.method2025(new Class292(Class78.GRAPHICS), false);
+            Class267.aClass267_3417.method2025(new Class292(Class348_Sub16_Sub3.VARBITS), false);
+            Class267.aClass267_3418.method2025(new Class292(Class130.QUICK_CHAT_MESSAGES), false);
+            Class267.aClass267_3419.method2025(new Class292(Class82.QUICK_CHAT_MENUS), false);
+            Class267.aClass267_3420.method2025(new Class292(Class239.PARTICLES), false);
+            Class267.aClass267_3421.method2025(new Class292(Class262.BILLBOARDS), false);
+            Class267.aClass267_3422.method2025(new Class73((Class16.HUFFMAN), "huffman"), false);
+            Class267.aClass267_3423.method2025(new Class292(Class348_Sub35.INTERFACES), false);
+            Class267.aClass267_3424.method2025(new Class292(Class113.CLIENT_SCRIPTS), false);
+            Class267.aClass267_3425.method2025(new Class292(Class104.FONT_INDEX), false);
+            Class267.aClass267_3426.method2025(new Class136((Class348_Sub32.WORLD_MAP), "details"), false);
             for (int i_4_ = 0; i_4_ < Class126.aClass267Array4987.length; i_4_++) {
                 if (Class126.aClass267Array4987[i_4_].method2027(78) == null) throw new RuntimeException();
             }

@@ -43,11 +43,11 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
         return aClass258_Sub2_8688;
     }
 
-    static final void method2260(int i, int i_4_, long l, int i_5_, boolean bool, Class45 class45, byte i_6_, int i_7_) {
+    static final void method2260(int i, int i_4_, long l, int i_5_, boolean bool, Index index, byte i_6_, int i_7_) {
         do {
             try {
                 Class239_Sub14.anInt5994 = 10000;
-                Class124.aClass45_1848 = class45;
+                Class124.aIndex_1848 = index;
                 Class58.anInt1059 = i_7_;
                 Class318_Sub1_Sub4_Sub1.anInt10074 = i;
                 Class346.aBoolean4275 = bool;
@@ -60,7 +60,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
                 if (i_6_ >= 54) break;
                 method2260(36, 99, 61L, 90, false, null, (byte) 126, -67);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dq.E(" + i + ',' + i_4_ + ',' + l + ',' + i_5_ + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("dq.E(" + i + ',' + i_4_ + ',' + l + ',' + i_5_ + ',' + bool + ',' + (index != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ')'));
             }
             break;
         } while (false);

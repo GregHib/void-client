@@ -33,7 +33,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     static int anInt9030;
     static Class153 aClass153_9031;
     private DecoderContext aDecoderContext9032;
-    static Class45 aClass45_9033;
+    static Index MUSIC_EFFECTS;
     static Class351 aClass351_9034 = new Class351(30, 4);
     private final SetupInfo aSetupInfo9035 = new SetupInfo();
     static Class187 aClass187_9036;
@@ -44,7 +44,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     public static void method2974(int i) {
         aClass351_9034 = null;
         if (i != 1) aClass229_9011 = null;
-        aClass45_9033 = null;
+        MUSIC_EFFECTS = null;
         aClass229_9011 = null;
         aClass77_9029 = null;
         aClass153_9031 = null;

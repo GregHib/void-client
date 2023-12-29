@@ -61,17 +61,17 @@ final class Class367_Sub7 extends Class367 {
         if (i != -16252) aClass378_7346 = null;
     }
 
-    Class367_Sub7(Class378 class378, Class45 class45, Class269 class269) {
+    Class367_Sub7(Class378 class378, Index index, Class269 class269) {
         super(class378);
         aClass269_7348 = class269;
         aClass378_7346 = class378;
-        if (null == class45 || !this.aHa_Sub3_4479.aBoolean8101 || !this.aHa_Sub3_4479.aBoolean8159 || (aClass378_7346.aD3DCAPS9791.VertexShaderVersion & 0xffff) < 257) {
+        if (null == index || !this.aHa_Sub3_4479.aBoolean8101 || !this.aHa_Sub3_4479.aBoolean8159 || (aClass378_7346.aD3DCAPS9791.VertexShaderVersion & 0xffff) < 257) {
             anIDirect3DVertexShader7345 = null;
             aBoolean7347 = false;
             anIDirect3DPixelShader7343 = null;
         } else {
-            anIDirect3DVertexShader7345 = (aClass378_7346.anIDirect3DDevice9810.b(class45.method391("dx", "environment_mapped_water_v", -29832)));
-            anIDirect3DPixelShader7343 = (aClass378_7346.anIDirect3DDevice9810.a(class45.method391("dx", "environment_mapped_water_f", -29832)));
+            anIDirect3DVertexShader7345 = (aClass378_7346.anIDirect3DDevice9810.b(index.method391("dx", "environment_mapped_water_v", -29832)));
+            anIDirect3DPixelShader7343 = (aClass378_7346.anIDirect3DDevice9810.a(index.method391("dx", "environment_mapped_water_f", -29832)));
             aBoolean7347 = (anIDirect3DVertexShader7345 != null && null != anIDirect3DPixelShader7343 && aClass269_7348.method2041((byte) 49));
         }
     }

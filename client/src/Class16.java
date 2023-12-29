@@ -6,7 +6,7 @@ final class Class16 {
     static int anInt230;
     static Class148 aClass148_231;
     static int anInt232;
-    static Class45 aClass45_233;
+    static Index HUFFMAN;
     static int anInt234;
 
     static final void method258(int i, int i_0_) {
@@ -40,14 +40,14 @@ final class Class16 {
     }
 
     static final int method260(boolean bool) {
-        if (bool != false) aClass45_233 = null;
+        if (bool != false) HUFFMAN = null;
         anInt232++;
         if (Class348_Sub49.anInt7207 == 1) return Class348_Sub40_Sub8.anInt9157;
         return 0;
     }
 
     public static void method261(byte i) {
-        aClass45_233 = null;
+        HUFFMAN = null;
         aClass148_231 = null;
         if (i != -120) method262(-23);
     }

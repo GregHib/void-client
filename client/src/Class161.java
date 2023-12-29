@@ -51,7 +51,7 @@ final class Class161 {
                 Class239_Sub24.aClass299_6098 = Class158.aClass299_4938;
                 Class64.aFloat1136 = Class244.aFloat4626;
                 Class245.aFloat3172 = Class269.aFloat3462;
-                Class45.aFloat670 = Class348_Sub3.aFloat6586;
+                Index.aFloat670 = Class348_Sub3.aFloat6586;
                 Class258_Sub4.aFloat8560 = Class239_Sub10.aFloat5945;
                 Class246.aFloat3177 = Class361.aFloat4455;
                 Class318_Sub1_Sub3.anInt8739 = Class119_Sub1.anInt4703;

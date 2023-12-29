@@ -16,7 +16,7 @@ final class Class268 {
     static int anInt3439 = 16777215;
     static int anInt3440;
     static int anInt3441 = 0;
-    private final Class45 aClass45_3442;
+    private final Index aIndex_3442;
     static short[][] aShortArrayArray3443;
     static int anInt3444;
     static int anInt3445;
@@ -70,8 +70,8 @@ final class Class268 {
         }
         if (class277 != null) return class277;
         byte[] is;
-        synchronized (aClass45_3442) {
-            is = aClass45_3442.method410(-1860, 4, i);
+        synchronized (aIndex_3442) {
+            is = aIndex_3442.method410(-1860, 4, i);
         }
         class277 = new Class277();
         class277.anInt3573 = i;
@@ -141,12 +141,12 @@ final class Class268 {
         }
     }
 
-    Class268(Class230 class230, int i, Class45 class45) {
+    Class268(Class230 class230, int i, Index index) {
         try {
-            aClass45_3442 = class45;
-            this.anInt3429 = aClass45_3442.method407(0, 4);
+            aIndex_3442 = index;
+            this.anInt3429 = aIndex_3442.method407(0, 4);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cb.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cb.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 

@@ -64,8 +64,8 @@ final class Class207 {
         }
     }
 
-    static final Class207 method1512(Class45 class45, int i) {
-        byte[] is = class45.method415((byte) 73, i);
+    static final Class207 method1512(Index index, int i) {
+        byte[] is = index.method415((byte) 73, i);
         if (is == null) return null;
         return method1517(is)[0];
     }
@@ -341,8 +341,8 @@ final class Class207 {
         this.anInt2698 = i;
     }
 
-    static final Class207[] method1519(Class45 class45, int i, int i_105_) {
-        byte[] is = class45.method410(-1860, i, i_105_);
+    static final Class207[] method1519(Index index, int i, int i_105_) {
+        byte[] is = index.method410(-1860, i, i_105_);
         if (is == null) return null;
         return method1517(is);
     }
@@ -382,8 +382,8 @@ final class Class207 {
         /* empty */
     }
 
-    static final Class207 method1521(Class45 class45, int i, int i_112_) {
-        byte[] is = class45.method410(-1860, i, i_112_);
+    static final Class207 method1521(Index index, int i, int i_112_) {
+        byte[] is = index.method410(-1860, i, i_112_);
         if (is == null) return null;
         return method1517(is)[0];
     }
@@ -392,8 +392,8 @@ final class Class207 {
         return (this.anInt2696 + this.anInt2700 + this.anInt2701);
     }
 
-    static final Class207[] method1523(Class45 class45, int i) {
-        byte[] is = class45.method415((byte) 73, i);
+    static final Class207[] method1523(Index index, int i) {
+        byte[] is = index.method415((byte) 73, i);
         if (is == null) return null;
         return method1517(is);
     }

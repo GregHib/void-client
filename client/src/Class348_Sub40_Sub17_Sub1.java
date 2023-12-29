@@ -4,7 +4,7 @@
 
 final class Class348_Sub40_Sub17_Sub1 extends Class348_Sub40_Sub17 {
     static int anInt10425;
-    static Class45 aClass45_10426;
+    static Index aIndex_10426;
     static int anInt10427;
 
     public Class348_Sub40_Sub17_Sub1() {
@@ -31,8 +31,8 @@ final class Class348_Sub40_Sub17_Sub1 extends Class348_Sub40_Sub17 {
     }
 
     public static void method3092(int i) {
-        if (i != -1) aClass45_10426 = null;
-        aClass45_10426 = null;
+        if (i != -1) aIndex_10426 = null;
+        aIndex_10426 = null;
     }
 
     static final void method3093(int i) {

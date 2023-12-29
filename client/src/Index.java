@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class45 {
+final class Index {
     static int anInt626;
     static int anInt627;
     static int anInt628;
@@ -521,7 +521,7 @@ final class Class45 {
         return i_82_;
     }
 
-    Class45(Class314 class314, boolean bool, int i) {
+    Index(Class314 class314, boolean bool, int i) {
         if (i < 0 || i > 2) throw new IllegalArgumentException("js5: Invalid value " + i + " supplied for discardunpacked");
         aClass314_659 = class314;
         aBoolean655 = bool;

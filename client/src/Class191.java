@@ -49,7 +49,7 @@ final class Class191 {
                 Object object = null;
                 Sprite sprite = ((Sprite) Class348_Sub1_Sub1.aClass60_8807.method583(i_9_, 118));
                 if (sprite == null) {
-                    Class207[] class207s = Class207.method1519(Class21.aClass45_322, i_9_, 0);
+                    Class207[] class207s = Class207.method1519(Class21.SPRITES, i_9_, 0);
                     if (class207s == null) return;
                     sprite = Class348_Sub8.aHa6654.method3691(class207s[0], true);
                     Class348_Sub1_Sub1.aClass60_8807.method582(sprite, i_9_, (byte) -115);

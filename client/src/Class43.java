@@ -3,7 +3,7 @@
  */
 
 final class Class43 {
-    static Class45 aClass45_611;
+    static Index aIndex_611;
     static int anInt612;
     static int anInt613;
     Class348_Sub42_Sub10 aClass348_Sub42_Sub10_614;
@@ -17,7 +17,7 @@ final class Class43 {
     public static void method380(int i) {
         aClass351_618 = null;
         anIntArray619 = null;
-        if (i == 0) aClass45_611 = null;
+        if (i == 0) aIndex_611 = null;
     }
 
     static final Class179 method381(byte i) {

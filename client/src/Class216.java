@@ -4,7 +4,7 @@
 
 final class Class216 implements Interface13 {
     int anInt4974;
-    static Class45 aClass45_4975;
+    static Index NPCS;
     static int anInt4976;
     static int anInt4977;
     int anInt4978;
@@ -35,7 +35,7 @@ final class Class216 implements Interface13 {
 
     public static void method1584(byte i) {
         if (i != -64) method1584((byte) -48);
-        aClass45_4975 = null;
+        NPCS = null;
     }
 
     Class216(int i, int i_4_) {

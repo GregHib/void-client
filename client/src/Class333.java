@@ -6,7 +6,7 @@ final class Class333 {
     static int anInt4144 = -1;
     static int anInt4145;
     private Class356 aClass356_4146;
-    static Class45 aClass45_4147;
+    static Index aIndex_4147;
     private int anInt4148 = 0;
     static int anInt4149;
     private Class348 aClass348_4150;
@@ -26,7 +26,7 @@ final class Class333 {
 
     public static void method2645(int i) {
         if (i != -16777216) method2643(-59, 61, -83, 34, -32);
-        aClass45_4147 = null;
+        aIndex_4147 = null;
     }
 
     final Class348 method2646(byte i) {

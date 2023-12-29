@@ -132,10 +132,10 @@ final class Class188 {
         Class66.aClass60_1174.method578(2, 5);
     }
 
-    static final Class348_Sub17 method1417(int i, Class45 class45, int i_7_) {
+    static final Class348_Sub17 method1417(int i, Index index, int i_7_) {
         anInt2516++;
         if (i != 0) aBoolean2514 = true;
-        byte[] is = class45.method415((byte) 73, i_7_);
+        byte[] is = index.method415((byte) 73, i_7_);
         if (is == null) return null;
         return new Class348_Sub17(is);
     }

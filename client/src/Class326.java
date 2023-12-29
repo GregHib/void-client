@@ -5,7 +5,7 @@
 final class Class326 {
     static int anInt4083;
     static int anInt4084;
-    private final Class45 aClass45_4085;
+    private final Index aIndex_4085;
     static int anInt4086 = 0;
     private Class60 aClass60_4087 = new Class60(64);
     static int anInt4088;
@@ -20,8 +20,8 @@ final class Class326 {
         if (class254 != null) return class254;
         if (i_0_ != 28364) anInt4086 = 117;
         byte[] is;
-        synchronized (aClass45_4085) {
-            is = aClass45_4085.method410(-1860, 11, i);
+        synchronized (aIndex_4085) {
+            is = aIndex_4085.method410(-1860, 11, i);
         }
         class254 = new Class254();
         if (is != null) class254.method1924(new Class348_Sub49(is), (byte) -127);
@@ -55,14 +55,14 @@ final class Class326 {
         anInt4083++;
     }
 
-    Class326(Class230 class230, int i, Class45 class45) {
+    Class326(Class230 class230, int i, Index index) {
         do {
             try {
-                aClass45_4085 = class45;
-                if (aClass45_4085 == null) break;
-                aClass45_4085.method407(0, 11);
+                aIndex_4085 = index;
+                if (aIndex_4085 == null) break;
+                aIndex_4085.method407(0, 11);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

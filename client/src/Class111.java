@@ -8,7 +8,7 @@ final class Class111 {
     private final int anInt1715;
     static int anInt1716;
     static int anInt1717;
-    private final Class45 aClass45_1718;
+    private final Index aIndex_1718;
     static int anInt1719;
     static int anInt1720 = -1;
     static int anInt1721;
@@ -19,7 +19,7 @@ final class Class111 {
 
     final Class287 method1043(int i, byte i_0_) {
         anInt1721++;
-        byte[] is = aClass45_1718.method410(-1860, 1, i);
+        byte[] is = aIndex_1718.method410(-1860, 1, i);
         if (i_0_ < 12) return null;
         Class287 class287 = new Class287();
         class287.method2183(new Class348_Sub49(is), 21890);
@@ -89,11 +89,11 @@ final class Class111 {
         Class14_Sub1.method239((byte) -114, i_16_, i_15_, class46);
     }
 
-    Class111(Class230 class230, int i, Class45 class45) {
+    Class111(Class230 class230, int i, Index index) {
         try {
-            aClass45_1718 = class45;
-            aClass45_1718.method407(0, 1);
-            Class348_Sub49 class348_sub49 = new Class348_Sub49(aClass45_1718.method410(-1860, 0, 0));
+            aIndex_1718 = index;
+            aIndex_1718.method407(0, 1);
+            Class348_Sub49 class348_sub49 = new Class348_Sub49(aIndex_1718.method410(-1860, 0, 0));
             int i_17_ = class348_sub49.readUnsignedByte(255);
             if (i_17_ > 3) {
                 anIntArrayArray1724 = new int[0][];
@@ -147,7 +147,7 @@ final class Class111 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mt.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("mt.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 }

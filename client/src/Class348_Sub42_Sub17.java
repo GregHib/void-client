@@ -42,12 +42,12 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
         anInt9675++;
         if (this.aClass4Array9673 != null) return true;
         if (aByteArrayArray9671 == null) {
-            synchronized (Class138.aClass45_1940) {
-                if (!Class138.aClass45_1940.method408((byte) -116, anInt9669)) return false;
-                int[] is = Class138.aClass45_1940.method396(anInt9669, 0);
+            synchronized (Class138.aIndex_1940) {
+                if (!Class138.aIndex_1940.method408((byte) -116, anInt9669)) return false;
+                int[] is = Class138.aIndex_1940.method396(anInt9669, 0);
                 aByteArrayArray9671 = new byte[is.length][];
                 for (int i_1_ = 0; i_1_ < is.length; i_1_++)
-                    aByteArrayArray9671[i_1_] = Class138.aClass45_1940.method410(-1860, anInt9669, is[i_1_]);
+                    aByteArrayArray9671[i_1_] = Class138.aIndex_1940.method410(-1860, anInt9669, is[i_1_]);
             }
         }
         boolean bool = true;
@@ -56,17 +56,17 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
             Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
             class348_sub49.anInt7197 = 1;
             int i_3_ = class348_sub49.readUnsignedShort(842397944);
-            synchronized (Class135_Sub2.aClass45_4843) {
-                bool &= Class135_Sub2.aClass45_4843.method421(false, i_3_);
+            synchronized (Class135_Sub2.aIndex_4843) {
+                bool &= Class135_Sub2.aIndex_4843.method421(false, i_3_);
             }
         }
         if (!bool) return false;
         Class262 class262 = new Class262();
         int[] is;
-        synchronized (Class138.aClass45_1940) {
-            int i_4_ = Class138.aClass45_1940.method407(0, anInt9669);
+        synchronized (Class138.aIndex_1940) {
+            int i_4_ = Class138.aIndex_1940.method407(0, anInt9669);
             this.aClass4Array9673 = new Class4[i_4_];
-            is = Class138.aClass45_1940.method396(anInt9669, 0);
+            is = Class138.aIndex_1940.method396(anInt9669, 0);
             if (i > -115) method3266(null, 123, null);
         }
         for (int i_5_ = 0; i_5_ < is.length; i_5_++) {
@@ -82,8 +82,8 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
                 }
             }
             if (class348_sub33 == null) {
-                synchronized (Class135_Sub2.aClass45_4843) {
-                    class348_sub33 = new Class348_Sub33(i_7_, Class135_Sub2.aClass45_4843.method415((byte) 73, i_7_));
+                synchronized (Class135_Sub2.aIndex_4843) {
+                    class348_sub33 = new Class348_Sub33(i_7_, Class135_Sub2.aIndex_4843.method415((byte) 73, i_7_));
                 }
                 class262.method1999(class348_sub33, -20180);
             }

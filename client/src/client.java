@@ -80,7 +80,7 @@ public final class client extends Applet_Sub1 {
                     class348_sub49.writeInt((byte) 103, 634);
                     Class193.aClass202_2589.method1470((class348_sub49.aByteArray7154), 5, 0, -1);
                     Class47.anInt846++;
-                    Class45.aLong667 = Class62.method599(-70);
+                    Index.aLong667 = Class62.method599(-70);
                 }
                 if (Class47.anInt846 == 3) {
                     if (Class139.method1167(Class240.anInt4674, (byte) -100) || Class193.aClass202_2589.method1467((byte) 83) > 0) {
@@ -90,7 +90,7 @@ public final class client extends Applet_Sub1 {
                             return;
                         }
                         Class47.anInt846++;
-                    } else if (Class62.method599(-63) - Class45.aLong667 > 30000) {
+                    } else if (Class62.method599(-63) - Index.aLong667 > 30000) {
                         method103(1001, (byte) 85);
                         return;
                     }
@@ -223,7 +223,7 @@ public final class client extends Applet_Sub1 {
         Class112.method1052((byte) -124);
         Class340.method2671(0);
         Class314_Sub1.method2344(i + -108);
-        Class45.method390((byte) 10);
+        Index.method390((byte) 10);
         Class78.method786((byte) 0);
         Class60.method584((byte) 116);
         Class261.method1980(i ^ 0xe);
@@ -839,7 +839,7 @@ public final class client extends Applet_Sub1 {
     }
 
     static final void method106() {
-        Class45.anInt669 = 0;
+        Index.anInt669 = 0;
         for (int i = 0; i < Class150.anInt2057; i++) {
             Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i], -6008)).aNpc_6859);
             if ((npc.aBoolean10309) && npc.method2425(-1) != -1) {
@@ -851,19 +851,19 @@ public final class client extends Applet_Sub1 {
                     int i_23_ = (class318_sub1_sub3_sub3.anInt10290);
                     if (class318_sub1_sub3_sub3 instanceof Npc) i_23_ += 2048;
                     if ((class318_sub1_sub3_sub3.anInt10261) == 0 && class318_sub1_sub3_sub3.method2425(-1) != -1) {
-                        Class258_Sub4.anIntArray8557[Class45.anInt669] = i_23_;
-                        Class268.anIntArray3432[Class45.anInt669] = i_23_;
-                        Class45.anInt669++;
+                        Class258_Sub4.anIntArray8557[Index.anInt669] = i_23_;
+                        Class268.anIntArray3432[Index.anInt669] = i_23_;
+                        Index.anInt669++;
                         class318_sub1_sub3_sub3.anInt10261++;
                     }
-                    Class258_Sub4.anIntArray8557[Class45.anInt669] = i_23_;
-                    Class268.anIntArray3432[Class45.anInt669] = npc.anInt10290 + 2048;
-                    Class45.anInt669++;
+                    Class258_Sub4.anIntArray8557[Index.anInt669] = i_23_;
+                    Class268.anIntArray3432[Index.anInt669] = npc.anInt10290 + 2048;
+                    Index.anInt669++;
                     class318_sub1_sub3_sub3.anInt10261++;
                 }
             }
         }
-        Class34.method347(Class268.anIntArray3432, Class258_Sub4.anIntArray8557, 0, -22222, Class45.anInt669 - 1);
+        Class34.method347(Class268.anIntArray3432, Class258_Sub4.anIntArray8557, 0, -22222, Index.anInt669 - 1);
     }
 
     public static final void main(String[] strings) {
@@ -1974,7 +1974,7 @@ public final class client extends Applet_Sub1 {
                 for (int i = 0; Class348_Sub38.anInt7008 > i; i++)
                     Class268.aBooleanArray3438[i] = false;
                 try {
-                    if (Class59_Sub1.aBoolean5300) Class45.method395(107);
+                    if (Class59_Sub1.aBoolean5300) Index.method395(107);
                     else Class348_Sub8.aHa6654.method3689((byte) 104);
                 } catch (Exception_Sub1 exception_sub1) {
                     Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + method81((byte) 79)), exception_sub1, 15004);

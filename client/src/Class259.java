@@ -3,7 +3,7 @@
  */
 
 final class Class259 {
-    private final Class45 aClass45_3299;
+    private final Index aIndex_3299;
     static byte[] aByteArray3300 = new byte[2048];
     static Class60 aClass60_3301 = new Class60(30);
     static int anInt3302;
@@ -28,8 +28,8 @@ final class Class259 {
         if (class160 != null) return class160;
         int i_2_ = 44 % ((-41 - i_1_) / 33);
         byte[] is;
-        synchronized (aClass45_3299) {
-            is = aClass45_3299.method410(-1860, 19, i);
+        synchronized (aIndex_3299) {
+            is = aIndex_3299.method410(-1860, 19, i);
         }
         class160 = new Class160();
         if (is != null) class160.method1255(new Class348_Sub49(is), -1);
@@ -39,12 +39,12 @@ final class Class259 {
         return class160;
     }
 
-    Class259(Class230 class230, int i, Class45 class45) {
+    Class259(Class230 class230, int i, Index index) {
         try {
-            aClass45_3299 = class45;
-            this.anInt3305 = aClass45_3299.method407(0, 19);
+            aIndex_3299 = index;
+            this.anInt3305 = aIndex_3299.method407(0, 19);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 }

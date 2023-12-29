@@ -4,7 +4,7 @@
 
 final class Class367_Sub10 extends Class367 {
     static int anInt7381;
-    static Class45 aClass45_7382;
+    static Index MAPS;
     static int anInt7383;
     static int anInt7384;
     private boolean aBoolean7385 = false;
@@ -47,12 +47,12 @@ final class Class367_Sub10 extends Class367 {
     }
 
     public static void method3554(int i) {
-        if (i != 1) aClass45_7382 = null;
-        aClass45_7382 = null;
+        if (i != 1) MAPS = null;
+        MAPS = null;
     }
 
     final void method3520(byte i) {
-        if (i != 87) aClass45_7382 = null;
+        if (i != 87) MAPS = null;
         anInt7386++;
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382);
@@ -75,7 +75,7 @@ final class Class367_Sub10 extends Class367 {
 
     final boolean method3530(int i) {
         anInt7387++;
-        if (i > -57) aClass45_7382 = null;
+        if (i > -57) MAPS = null;
         return true;
     }
 

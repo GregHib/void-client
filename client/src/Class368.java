@@ -177,7 +177,7 @@ final class Class368 {
                 int i_34_ = i_33_;
                 if (aShortArray4490 != null) i_34_ |= 0x4000;
                 if (aShortArray4499 != null) i_34_ |= 0x8000;
-                Class124 class124 = Class300.method2277(0, (this.aClass319_4513.aClass45_3981), anInt4506, -1);
+                Class124 class124 = Class300.method2277(0, (this.aClass319_4513.aIndex_3981), anInt4506, -1);
                 if (class124 == null) return null;
                 if (class124.anInt1830 < 13) class124.method1092(2, 114);
                 class64 = var_ha.method3625(class124, i_34_, (this.aClass319_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);

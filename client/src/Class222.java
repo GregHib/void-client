@@ -35,7 +35,7 @@ final class Class222 {
         anInt2888++;
         Class207 class207 = (Class207) this.aClass166_2886.aClass60_2190.method583(anInt2891, -70);
         if (class207 != null) return class207;
-        class207 = Class207.method1521(this.aClass166_2886.aClass45_2180, anInt2891, 0);
+        class207 = Class207.method1521(this.aClass166_2886.aIndex_2180, anInt2891, 0);
         if (i < 49) method1609((byte) 93);
         if (class207 != null) this.aClass166_2886.aClass60_2190.method582(class207, anInt2891, (byte) -120);
         return class207;

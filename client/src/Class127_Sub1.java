@@ -51,8 +51,8 @@ final class Class127_Sub1 extends Class127 {
         }
     }
 
-    Class127_Sub1(Class45 class45, Class288_Sub1 class288_sub1) {
-        super(class45, class288_sub1);
+    Class127_Sub1(Index index, Class288_Sub1 class288_sub1) {
+        super(index, class288_sub1);
     }
 
     static final void method1119(boolean bool) {

@@ -7,7 +7,7 @@ import java.io.File;
 final class Class166 {
     static int anInt2178;
     static int anInt2179;
-    Class45 aClass45_2180;
+    Index aIndex_2180;
     static int anInt2181;
     static int anInt2182;
     static Class114 aClass114_2183 = new Class114(0, -1);
@@ -15,7 +15,7 @@ final class Class166 {
     private final Class60 aClass60_2185 = new Class60(64);
     static int anInt2186;
     static Class262 aClass262_2187 = new Class262();
-    private final Class45 aClass45_2188;
+    private final Index aIndex_2188;
     static int anInt2189;
     Class60 aClass60_2190 = new Class60(2);
 
@@ -41,7 +41,7 @@ final class Class166 {
             aClass60_2185.method578(2, i);
         }
         synchronized (this.aClass60_2190) {
-            if (i_0_ != 8) this.aClass45_2180 = null;
+            if (i_0_ != 8) this.aIndex_2180 = null;
             this.aClass60_2190.method578(i_0_ + -6, i);
         }
     }
@@ -69,8 +69,8 @@ final class Class166 {
         if (class222 != null) return class222;
         if (i != -104) this.aClass60_2190 = null;
         byte[] is;
-        synchronized (aClass45_2188) {
-            is = aClass45_2188.method410(-1860, 33, i_1_);
+        synchronized (aIndex_2188) {
+            is = aIndex_2188.method410(-1860, 33, i_1_);
         }
         class222 = new Class222();
         class222.aClass166_2886 = this;
@@ -121,13 +121,13 @@ final class Class166 {
         }
     }
 
-    Class166(Class230 class230, int i, Class45 class45, Class45 class45_9_) {
+    Class166(Class230 class230, int i, Index index, Index index_9_) {
         try {
-            aClass45_2188 = class45;
-            this.aClass45_2180 = class45_9_;
-            aClass45_2188.method407(0, 33);
+            aIndex_2188 = index;
+            this.aIndex_2180 = index_9_;
+            aIndex_2188.method407(0, 33);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_9_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_9_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

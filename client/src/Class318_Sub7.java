@@ -73,13 +73,13 @@ final class Class318_Sub7 extends Class318 {
         var_ha.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115);
     }
 
-    static final boolean method2510(Class45 class45, Class348_Sub16_Sub3 class348_sub16_sub3, Class45 class45_5_, boolean bool, Class279 class279, Class45 class45_6_) {
+    static final boolean method2510(Index index, Class348_Sub16_Sub3 class348_sub16_sub3, Index index_5_, boolean bool, Class279 class279, Index index_6_) {
         try {
             Class318_Sub1_Sub4.aClass279_8764 = class279;
             Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3;
-            Class43.aClass45_611 = class45;
-            Class367_Sub9.aClass45_7371 = class45_6_;
-            Class333.aClass45_4147 = class45_5_;
+            Class43.aIndex_611 = index;
+            Class367_Sub9.aIndex_7371 = index_6_;
+            Class333.aIndex_4147 = index_5_;
             Class367_Sub3.anIntArray7299 = new int[16];
             if (bool != false) anInt6451 = 71;
             anInt6442++;
@@ -87,7 +87,7 @@ final class Class318_Sub7 extends Class318 {
                 Class367_Sub3.anIntArray7299[i] = 255;
             return true;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.G(" + (class45 != null ? "{...}" : "null") + ',' + (class348_sub16_sub3 != null ? "{...}" : "null") + ',' + (class45_5_ != null ? "{...}" : "null") + ',' + bool + ',' + (class279 != null ? "{...}" : "null") + ',' + (class45_6_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.G(" + (index != null ? "{...}" : "null") + ',' + (class348_sub16_sub3 != null ? "{...}" : "null") + ',' + (index_5_ != null ? "{...}" : "null") + ',' + bool + ',' + (class279 != null ? "{...}" : "null") + ',' + (index_6_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -107,8 +107,8 @@ final class Class318_Sub7 extends Class318 {
             anInt6440++;
             if (Class75.aClass348_Sub42_Sub14_1243 != null) {
                 if (Class348.anInt4290 < 10) {
-                    if (!Class75.aClass45_1237.method413(100, Class75.aClass348_Sub42_Sub14_1243.aString9625)) {
-                        Class348.anInt4290 = (Class348_Sub32.aClass45_6950.method397((Class75.aClass348_Sub42_Sub14_1243.aString9625), 0)) / 10;
+                    if (!Class75.aIndex_1237.method413(100, Class75.aClass348_Sub42_Sub14_1243.aString9625)) {
+                        Class348.anInt4290 = (Class348_Sub32.WORLD_MAP.method397((Class75.aClass348_Sub42_Sub14_1243.aString9625), 0)) / 10;
                         return;
                     }
                     InputStream_Sub1.method126(-16203);
@@ -180,9 +180,9 @@ final class Class318_Sub7 extends Class318 {
                     Class94.method867(true);
                 } else if (i <= -43) {
                     if (Class348.anInt4290 == 60) {
-                        if (Class75.aClass45_1237.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) {
-                            if (!Class75.aClass45_1237.method413(100, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) return;
-                            Class75.aClass252_1246 = (Class307.method2300(Class75.aClass45_1237, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements", Class130.aBoolean1900, (byte) -91));
+                        if (Class75.aIndex_1237.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) {
+                            if (!Class75.aIndex_1237.method413(100, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) return;
+                            Class75.aClass252_1246 = (Class307.method2300(Class75.aIndex_1237, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements", Class130.aBoolean1900, (byte) -91));
                         } else Class75.aClass252_1246 = new Class252(0);
                         Class75.method761();
                         Class348.anInt4290 = 70;

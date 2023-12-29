@@ -27,7 +27,7 @@ abstract class Class348_Sub31 extends Class348 {
         if (i_0_ != 22684) anInt6913 = -117;
         anInt6922++;
         Class346.aBoolean4275 = false;
-        Class124.aClass45_1848 = null;
+        Class124.aIndex_1848 = null;
         Class318.anInt3971 = -1;
         Class239_Sub14.anInt5994 = i;
         Class348_Sub43.anInt7068 = 1;

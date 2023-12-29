@@ -31,9 +31,9 @@ final class Class34 {
         anInt468++;
         if (anIntArray472 == null) return null;
         Class124[] class124s = new Class124[anIntArray472.length];
-        synchronized (this.aClass150_475.aClass45_2054) {
+        synchronized (this.aClass150_475.aIndex_2054) {
             for (int i_0_ = 0; i_0_ < anIntArray472.length; i_0_++)
-                class124s[i_0_] = Class300.method2277(0, (this.aClass150_475.aClass45_2054), anIntArray472[i_0_], -1);
+                class124s[i_0_] = Class300.method2277(0, (this.aClass150_475.aIndex_2054), anIntArray472[i_0_], -1);
         }
         for (int i_1_ = 0; anIntArray472.length > i_1_; i_1_++) {
             if (class124s[i_1_].anInt1830 < 13) class124s[i_1_].method1092(2, 113);
@@ -57,9 +57,9 @@ final class Class34 {
     final boolean method342(byte i) {
         anInt470++;
         boolean bool = true;
-        synchronized (this.aClass150_475.aClass45_2054) {
+        synchronized (this.aClass150_475.aIndex_2054) {
             for (int i_4_ = 0; i_4_ < 5; i_4_++) {
-                if (anIntArray464[i_4_] != -1 && !this.aClass150_475.aClass45_2054.method420(-10499, anIntArray464[i_4_], 0)) bool = false;
+                if (anIntArray464[i_4_] != -1 && !this.aClass150_475.aIndex_2054.method420(-10499, anIntArray464[i_4_], 0)) bool = false;
             }
             if (i <= 87) method351(96);
         }
@@ -70,9 +70,9 @@ final class Class34 {
         anInt471++;
         Class124[] class124s = new Class124[5];
         int i_5_ = 0;
-        synchronized (this.aClass150_475.aClass45_2054) {
+        synchronized (this.aClass150_475.aIndex_2054) {
             for (int i_6_ = 0; i_6_ < 5; i_6_++) {
-                if (anIntArray464[i_6_] != -1) class124s[i_5_++] = Class300.method2277(0, (this.aClass150_475.aClass45_2054), anIntArray464[i_6_], -1);
+                if (anIntArray464[i_6_] != -1) class124s[i_5_++] = Class300.method2277(0, (this.aClass150_475.aIndex_2054), anIntArray464[i_6_], -1);
             }
         }
         for (int i_7_ = 0; i_7_ < 5; i_7_++) {
@@ -182,9 +182,9 @@ final class Class34 {
         if (i != 34) method348((byte) -15);
         if (anIntArray472 == null) return true;
         boolean bool = true;
-        synchronized (this.aClass150_475.aClass45_2054) {
+        synchronized (this.aClass150_475.aIndex_2054) {
             for (int i_31_ = 0; anIntArray472.length > i_31_; i_31_++) {
-                if (!this.aClass150_475.aClass45_2054.method420(-10499, anIntArray472[i_31_], 0)) bool = false;
+                if (!this.aClass150_475.aIndex_2054.method420(-10499, anIntArray472[i_31_], 0)) bool = false;
             }
         }
         return bool;

@@ -5,7 +5,7 @@
 import java.awt.*;
 
 final class Class262 {
-    static Class45 aClass45_3323;
+    static Index BILLBOARDS;
     static int anInt3324;
     static int anInt3325;
     static FontRenderer aFontRenderer_3326;
@@ -46,7 +46,7 @@ final class Class262 {
                     class348_2_.aClass348_4294 = class262_1_.aClass348_3334;
                 }
                 if (bool == false) break;
-                aClass45_3323 = null;
+                BILLBOARDS = null;
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("uh.K(" + (class348 != null ? "{...}" : "null") + ',' + bool + ',' + (class262_1_ != null ? "{...}" : "null") + ')'));
             }
@@ -155,7 +155,7 @@ final class Class262 {
         aClass190ArrayArray3335 = null;
         anObject3331 = null;
         if (i != -13722) method2000(-104, 106, null, null);
-        aClass45_3323 = null;
+        BILLBOARDS = null;
         aFontRenderer_3326 = null;
     }
 

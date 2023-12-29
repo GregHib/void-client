@@ -15,7 +15,7 @@ abstract class Class239 {
     static Class114 aClass114_3143;
     static byte[] aByteArray3144 = new byte[520];
     static Class114 aClass114_3145;
-    static Class45 aClass45_3146;
+    static Index PARTICLES;
     static Class166 aClass166_3147;
 
     static final Class231[] method1709(int i) {
@@ -26,14 +26,14 @@ abstract class Class239 {
 
     abstract int method1710(int i);
 
-    static final void method1711(int i, Class45 class45, int i_0_, Class45 class45_1_) {
+    static final void method1711(int i, Index index, int i_0_, Index index_1_) {
         try {
-            Class135_Sub2.aClass45_4843 = class45_1_;
+            Class135_Sub2.aIndex_4843 = index_1_;
             anInt3140++;
-            if (i != 7) aClass45_3146 = null;
-            Class138.aClass45_1940 = class45;
+            if (i != 7) PARTICLES = null;
+            Class138.aIndex_1940 = index;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("su.Q(" + i + ',' + (class45 != null ? "{...}" : "null") + ',' + i_0_ + ',' + (class45_1_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("su.Q(" + i + ',' + (index != null ? "{...}" : "null") + ',' + i_0_ + ',' + (index_1_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -49,7 +49,7 @@ abstract class Class239 {
     public static void method1715(int i) {
         aClass114_3145 = null;
         aClass114_3143 = null;
-        aClass45_3146 = null;
+        PARTICLES = null;
         aClass114_3135 = null;
         aByteArray3144 = null;
         aClass166_3147 = null;

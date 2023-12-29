@@ -96,10 +96,10 @@ final class Class213 {
             i_0_ = anInt2822;
         }
         if (i_0_ == -1) return null;
-        Class124 class124 = Class300.method2277(0, this.aClass255_2761.aClass45_3268, i_0_, -1);
+        Class124 class124 = Class300.method2277(0, this.aClass255_2761.aIndex_3268, i_0_, -1);
         if ((~class124.anInt1830) > i) class124.method1092(2, 54);
         if (i_1_ != -1) {
-            Class124 class124_2_ = Class300.method2277(0, (this.aClass255_2761.aClass45_3268), i_1_, -1);
+            Class124 class124_2_ = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), i_1_, -1);
             if (class124_2_.anInt1830 < 13) class124_2_.method1092(2, i ^ ~0x78);
             Class124[] class124s = {class124, class124_2_};
             class124 = new Class124(class124s, 2);
@@ -126,8 +126,8 @@ final class Class213 {
         }
         if (i_5_ == -1) return true;
         boolean bool_8_ = true;
-        if (!this.aClass255_2761.aClass45_3268.method420(-10499, i_5_, 0)) bool_8_ = false;
-        if (i_7_ != -1 && !this.aClass255_2761.aClass45_3268.method420(-10499, i_7_, 0)) bool_8_ = false;
+        if (!this.aClass255_2761.aIndex_3268.method420(-10499, i_5_, 0)) bool_8_ = false;
+        if (i_7_ != -1 && !this.aClass255_2761.aIndex_3268.method420(-10499, i_7_, 0)) bool_8_ = false;
         return bool_8_;
     }
 
@@ -200,16 +200,16 @@ final class Class213 {
             i_14_ = anInt2760;
         }
         if (i == -1) return null;
-        Class124 class124 = Class300.method2277(0, this.aClass255_2761.aClass45_3268, i, -1);
+        Class124 class124 = Class300.method2277(0, this.aClass255_2761.aIndex_3268, i, -1);
         if (class124.anInt1830 < 13) class124.method1092(2, 64);
         if (i_14_ != -1) {
-            Class124 class124_16_ = Class300.method2277(0, (this.aClass255_2761.aClass45_3268), i_14_, -1);
+            Class124 class124_16_ = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), i_14_, -1);
             if (class124_16_.anInt1830 < 13) class124_16_.method1092(2, 89);
             if (i_15_ == -1) {
                 Class124[] class124s = {class124, class124_16_};
                 class124 = new Class124(class124s, 2);
             } else {
-                Class124 class124_17_ = Class300.method2277(0, (this.aClass255_2761.aClass45_3268), i_15_, -1);
+                Class124 class124_17_ = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), i_15_, -1);
                 if (class124_17_.anInt1830 < 13) class124_17_.method1092(2, 109);
                 Class124[] class124s = {class124, class124_16_, class124_17_};
                 class124 = new Class124(class124s, 3);
@@ -254,7 +254,7 @@ final class Class213 {
                 if (anInt2786 != 128) i_28_ |= 0x1;
                 if (anInt2786 != 128) i_28_ |= 0x2;
                 if (anInt2786 != 128) i_28_ |= 0x4;
-                Class124 class124 = Class300.method2277(0, (this.aClass255_2761.aClass45_3268), anInt2756, -1);
+                Class124 class124 = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), anInt2756, -1);
                 if (class124 == null) return null;
                 if (class124.anInt1830 < 13) class124.method1092(2, 97);
                 class64 = var_ha.method3625(class124, i_28_, (this.aClass255_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
@@ -318,7 +318,7 @@ final class Class213 {
     final int[] method1562(int i, boolean bool, int i_37_, ha var_ha, ha var_ha_38_, FontRenderer fontRenderer, Class154 class154, int i_39_, byte i_40_, int i_41_) {
         try {
             anInt2806++;
-            Class124 class124 = Class300.method2277(0, (this.aClass255_2761.aClass45_3268), anInt2756, i_40_ ^ 0x65);
+            Class124 class124 = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), anInt2756, i_40_ ^ 0x65);
             if (class124 == null) return null;
             if (class124.anInt1830 < 13) class124.method1092(2, i_40_ ^ ~0xb);
             if (aShortArray2777 != null) {
@@ -426,9 +426,9 @@ final class Class213 {
         }
         if (i_53_ == -1) return true;
         boolean bool_56_ = true;
-        if (!this.aClass255_2761.aClass45_3268.method420(-10499, i_53_, 0)) bool_56_ = false;
-        if (i_54_ != -1 && !this.aClass255_2761.aClass45_3268.method420(i ^ 0x2902, i_54_, 0)) bool_56_ = false;
-        if (i != i_55_ && !this.aClass255_2761.aClass45_3268.method420(-10499, i_55_, 0)) bool_56_ = false;
+        if (!this.aClass255_2761.aIndex_3268.method420(-10499, i_53_, 0)) bool_56_ = false;
+        if (i_54_ != -1 && !this.aClass255_2761.aIndex_3268.method420(i ^ 0x2902, i_54_, 0)) bool_56_ = false;
+        if (i != i_55_ && !this.aClass255_2761.aIndex_3268.method420(-10499, i_55_, 0)) bool_56_ = false;
         return bool_56_;
     }
 

@@ -6,7 +6,7 @@ final class Class126 implements Interface14 {
     int anInt4981;
     int anInt4982;
     static int[] anIntArray4983;
-    static Class45 aClass45_4984;
+    static Index NATIVE_LIBRARIES;
     static int anInt4985 = 0;
     static int anInt4986;
     static Class267[] aClass267Array4987;
@@ -21,14 +21,14 @@ final class Class126 implements Interface14 {
 
     public static void method1112(int i) {
         if (i != 1) aClass267Array4987 = null;
-        aClass45_4984 = null;
+        NATIVE_LIBRARIES = null;
         anIntArray4983 = null;
         aClass267Array4987 = null;
     }
 
     static final boolean method1113(int i, int i_0_, int i_1_) {
         anInt4995++;
-        if (i_1_ >= -3) aClass45_4984 = null;
+        if (i_1_ >= -3) NATIVE_LIBRARIES = null;
         return (Class188.method1412((byte) -35, i_0_, i) & (Class274.method2058(i, i_0_, 72) | (i & 0x2000) != 0 | Class348_Sub42_Sub9.method3203(i_0_, (byte) 114, i)));
     }
 

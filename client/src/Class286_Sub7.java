@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class286_Sub7 extends Class286 {
-    static Class45 aClass45_6277;
+    static Index aIndex_6277;
     private final Class83 aClass83_6278;
     static int anInt6279;
     static int anInt6280;
@@ -108,7 +108,7 @@ final class Class286_Sub7 extends Class286 {
 
     public static void method2166(int i) {
         if (i == 6336) {
-            aClass45_6277 = null;
+            aIndex_6277 = null;
             anIntArray6290 = null;
         }
     }

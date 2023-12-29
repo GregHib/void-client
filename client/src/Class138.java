@@ -3,7 +3,7 @@
  */
 
 final class Class138 {
-    static Class45 aClass45_1940;
+    static Index aIndex_1940;
     int anInt1941;
     static Class46[] aClass46Array1942;
     int anInt1943;
@@ -14,7 +14,7 @@ final class Class138 {
 
     public static void method1164(byte i) {
         if (i <= -42) {
-            aClass45_1940 = null;
+            aIndex_1940 = null;
             aClass348_Sub42_Sub12_1946 = null;
             aClass46Array1942 = null;
         }

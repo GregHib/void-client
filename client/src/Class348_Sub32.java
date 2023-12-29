@@ -26,7 +26,7 @@ final class Class348_Sub32 extends Class348 {
     private float[][] aFloatArrayArray6947;
     private final int anInt6948;
     private float[][] aFloatArrayArray6949;
-    static Class45 aClass45_6950;
+    static Index WORLD_MAP;
     private final ha_Sub2 aHa_Sub2_6951;
     private final Interface2 anInterface2_6952;
     private Class348_Sub49_Sub1 aClass348_Sub49_Sub1_6953;
@@ -134,7 +134,7 @@ final class Class348_Sub32 extends Class348 {
 
     public static void method3020(byte i) {
         if (i == -64) {
-            aClass45_6950 = null;
+            WORLD_MAP = null;
             aThread6946 = null;
         }
     }

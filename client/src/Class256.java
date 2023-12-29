@@ -10,7 +10,7 @@ final class Class256 {
         anInt3294++;
         Class174 class174 = ((Class174) Class318_Sub1_Sub2.aClass60_8732.method583(i, -78));
         if (class174 != null) return class174;
-        byte[] is = Class59_Sub2_Sub1.aClass45_8670.method410(-1860, 1, i);
+        byte[] is = Class59_Sub2_Sub1.aIndex_8670.method410(-1860, 1, i);
         class174 = new Class174();
         if (bool != false) method1944(64);
         class174.anInt2303 = i;

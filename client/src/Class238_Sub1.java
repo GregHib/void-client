@@ -87,7 +87,7 @@ final class Class238_Sub1 extends Class238 {
                     } else if (class348_sub9.anInt6685 >= 0) {
                         int i_15_ = ((class348_sub9.anInt6681 == 256 && (class348_sub9.anInt6696 == 256)) ? 256 : (Class299_Sub1.method2257(class348_sub9.anInt6681, class348_sub9.anInt6696, (byte) -120)));
                         if (class348_sub9.aBoolean6674) {
-                            if ((class348_sub9.aClass348_Sub10_6688) == null) class348_sub9.aClass348_Sub10_6688 = (Class348_Sub10.method2793(Class239_Sub4.aClass45_5878, (class348_sub9.anInt6685)));
+                            if ((class348_sub9.aClass348_Sub10_6688) == null) class348_sub9.aClass348_Sub10_6688 = (Class348_Sub10.method2793(Class239_Sub4.MIDI_INSTRUMENTS, (class348_sub9.anInt6685)));
                             if ((class348_sub9.aClass348_Sub10_6688) != null) {
                                 if ((class348_sub9.aClass348_Sub19_Sub1_6686) == null) class348_sub9.aClass348_Sub19_Sub1_6686 = class348_sub9.aClass348_Sub10_6688.method2791(new int[]{22050});
                                 if ((class348_sub9.aClass348_Sub19_Sub1_6686) != null) {
@@ -98,7 +98,7 @@ final class Class238_Sub1 extends Class238 {
                                 }
                             }
                         } else {
-                            Class317 class317 = Class317.method2372(Class129.aClass45_1878, (class348_sub9.anInt6685), 0);
+                            Class317 class317 = Class317.method2372(Class129.SOUND_EFFECTS, (class348_sub9.anInt6685), 0);
                             if (class317 != null) {
                                 Class348_Sub19_Sub1 class348_sub19_sub1 = class317.method2369().method2944(Class57.aClass163_1050);
                                 Class348_Sub16_Sub5 class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1, i_15_, i_9_ << 6, i_10_));
@@ -115,7 +115,7 @@ final class Class238_Sub1 extends Class238 {
                                 if (class348_sub9.aBoolean6699) {
                                     if ((class348_sub9.aClass348_Sub10_6683) == null) {
                                         int i_17_ = (int) ((double) (class348_sub9.anIntArray6697).length * Math.random());
-                                        class348_sub9.aClass348_Sub10_6683 = (Class348_Sub10.method2793(Class239_Sub4.aClass45_5878, (class348_sub9.anIntArray6697[i_17_])));
+                                        class348_sub9.aClass348_Sub10_6683 = (Class348_Sub10.method2793(Class239_Sub4.MIDI_INSTRUMENTS, (class348_sub9.anIntArray6697[i_17_])));
                                     }
                                     if ((class348_sub9.aClass348_Sub10_6683) != null) {
                                         if ((class348_sub9.aClass348_Sub19_Sub1_6692) == null) class348_sub9.aClass348_Sub19_Sub1_6692 = (class348_sub9.aClass348_Sub10_6683.method2791(new int[]{22050}));
@@ -129,7 +129,7 @@ final class Class238_Sub1 extends Class238 {
                                     }
                                 } else {
                                     int i_18_ = (int) (Math.random() * (double) (class348_sub9.anIntArray6697).length);
-                                    Class317 class317 = Class317.method2372((Class129.aClass45_1878), (class348_sub9.anIntArray6697[i_18_]), 0);
+                                    Class317 class317 = Class317.method2372((Class129.SOUND_EFFECTS), (class348_sub9.anIntArray6697[i_18_]), 0);
                                     if (class317 == null) break;
                                     Class348_Sub19_Sub1 class348_sub19_sub1 = (class317.method2369().method2944(Class57.aClass163_1050));
                                     Class348_Sub16_Sub5 class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1, i_16_, i_9_ << 6, i_10_));

@@ -4,7 +4,7 @@
 
 final class Class185 {
     private final Class60 aClass60_2479 = new Class60(64);
-    private final Class45 aClass45_2480;
+    private final Index aIndex_2480;
     static int anInt2481;
     static int anInt2482;
     static Class114 aClass114_2483;
@@ -31,8 +31,8 @@ final class Class185 {
         }
         if (class253 != null) return class253;
         byte[] is;
-        synchronized (aClass45_2480) {
-            is = aClass45_2480.method410(-1860, 31, i_1_);
+        synchronized (aIndex_2480) {
+            is = aIndex_2480.method410(-1860, 31, i_1_);
         }
         class253 = new Class253();
         int i_2_ = 50 / ((i - -63) / 56);
@@ -68,12 +68,12 @@ final class Class185 {
         }
     }
 
-    Class185(Class230 class230, int i, Class45 class45) {
+    Class185(Class230 class230, int i, Index index) {
         try {
-            aClass45_2480 = class45;
-            aClass45_2480.method407(0, 31);
+            aIndex_2480 = index;
+            aIndex_2480.method407(0, 31);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qf.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qf.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 

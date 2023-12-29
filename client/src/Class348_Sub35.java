@@ -8,7 +8,7 @@ final class Class348_Sub35 extends Class348 {
     static Class74 aClass74_6977 = new Class74(8, 3);
     static Class262 aClass262_6978;
     static int anInt6979 = 0;
-    static Class45 aClass45_6980;
+    static Index INTERFACES;
     static int anInt6981;
 
     static final void method3027(byte i) {
@@ -24,7 +24,7 @@ final class Class348_Sub35 extends Class348 {
     public static void method3028(int i) {
         if (i != -11677) method3027((byte) -80);
         aClass74_6977 = null;
-        aClass45_6980 = null;
+        INTERFACES = null;
         aClass262_6978 = null;
     }
 

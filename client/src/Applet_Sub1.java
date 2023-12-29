@@ -151,9 +151,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         paint(graphics);
     }
 
-    static final void method85(int i, Class45 class45) {
+    static final void method85(int i, Index index) {
         anInt32++;
-        Class369_Sub3.aClass45_8601 = class45;
+        Class369_Sub3.aIndex_8601 = index;
         if (i != 0) anInt37 = 101;
     }
 

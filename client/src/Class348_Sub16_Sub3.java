@@ -42,7 +42,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     static int anInt8923;
     static int anInt8924;
     private final int[] anIntArray8925;
-    static Class45 aClass45_8926;
+    static Index VARBITS;
     static int anInt8927;
     private final Class348_Sub43[][] aClass348_Sub43ArrayArray8928;
     static int anInt8929;
@@ -454,7 +454,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     private final void method2854(int i, int i_54_, int i_55_) {
         anInt8943++;
         anIntArray8945[i_54_] = i;
-        if (i_55_ < 39) aClass45_8926 = null;
+        if (i_55_ < 39) VARBITS = null;
         anIntArray8947[i_54_] = Class139.method1166(i, -128);
         method2873((byte) -21, i, i_54_);
     }
@@ -687,7 +687,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
         }
     }
 
-    final synchronized boolean method2866(Class348_Sub2 class348_sub2, int i, Class26 class26, Class45 class45, int i_77_) {
+    final synchronized boolean method2866(Class348_Sub2 class348_sub2, int i, Class26 class26, Index index, int i_77_) {
         try {
             class348_sub2.method2733();
             anInt8954++;
@@ -698,7 +698,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
                 int i_78_ = (int) class348_sub8.aLong4291;
                 Class348_Sub17 class348_sub17 = ((Class348_Sub17) aClass356_8891.method3480(i_78_, -6008));
                 if (class348_sub17 == null) {
-                    class348_sub17 = Class188.method1417(0, class45, i_78_);
+                    class348_sub17 = Class188.method1417(0, index, i_78_);
                     if (class348_sub17 == null) {
                         bool = false;
                         continue;
@@ -711,7 +711,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
             if (bool) class348_sub2.method2735();
             return bool;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ma.CA(" + (class348_sub2 != null ? "{...}" : "null") + ',' + i + ',' + (class26 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + i_77_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ma.CA(" + (class348_sub2 != null ? "{...}" : "null") + ',' + i + ',' + (class26 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + i_77_ + ')'));
         }
     }
 
@@ -790,7 +790,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     public static void method2871(int i) {
         anIntArrayArray8910 = null;
         if (i != -65) method2862(null, null, 96, -71);
-        aClass45_8926 = null;
+        VARBITS = null;
     }
 
     private final void method2872(int i, int i_90_) {

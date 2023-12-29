@@ -10,7 +10,7 @@ class Class369_Sub3 extends Class369 {
     static int anInt8598;
     int anInt8599;
     int anInt8600;
-    static Class45 aClass45_8601;
+    static Index aIndex_8601;
     int anInt8602;
     int anInt8603;
 
@@ -48,7 +48,7 @@ class Class369_Sub3 extends Class369 {
     public static void method3574(int i) {
         if (i == 19499) {
             aBooleanArrayArray8596 = null;
-            aClass45_8601 = null;
+            aIndex_8601 = null;
         }
     }
 }

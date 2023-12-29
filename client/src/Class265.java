@@ -10,12 +10,12 @@ final class Class265 implements Interface1 {
     static int anInt4691;
     static int[] anIntArray4692;
     static boolean[][] aBooleanArrayArray4693 = {new boolean[4], new boolean[4], {false, false, true, false}, {false, false, true, false}, {false, false, true, false}, {false, false, true, false}, {true, false, true, false}, {true, false, false, true}, {true, false, false, true}, new boolean[4], new boolean[4], new boolean[4], new boolean[4]};
-    private final Class45 aClass45_4694;
+    private final Index aIndex_4694;
     static int anInt4695;
     static int anInt4696;
 
     public final void method7(int i) {
-        aSprite_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687.anInt4912), (byte) 116, aClass45_4694);
+        aSprite_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687.anInt4912), (byte) 116, aIndex_4694);
         if (i != 10286) aBooleanArrayArray4693 = null;
         anInt4695++;
     }
@@ -55,18 +55,18 @@ final class Class265 implements Interface1 {
         aBooleanArrayArray4693 = null;
     }
 
-    Class265(Class45 class45, Class120 class120) {
+    Class265(Index index, Class120 class120) {
         try {
-            aClass45_4694 = class45;
+            aIndex_4694 = index;
             aClass120_4687 = class120;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("uk.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class120 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("uk.<init>(" + (index != null ? "{...}" : "null") + ',' + (class120 != null ? "{...}" : "null") + ')'));
         }
     }
 
     public final boolean method8(byte i) {
         int i_8_ = -105 % ((25 - i) / 52);
         anInt4690++;
-        return aClass45_4694.method421(false, aClass120_4687.anInt4912);
+        return aIndex_4694.method421(false, aClass120_4687.anInt4912);
     }
 }

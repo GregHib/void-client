@@ -226,8 +226,8 @@ final class Class51 {
                 Class124 class124 = null;
                 synchronized (Class341.aClass124Array4236) {
                     for (int i_26_ = 0; i_26_ < i_23_; i_26_++) {
-                        synchronized (this.aClass263_933.aClass45_3345) {
-                            class124 = Class300.method2277(0, (this.aClass263_933.aClass45_3345), (0xffff & (anIntArrayArray907[i_21_][i_26_])), -1);
+                        synchronized (this.aClass263_933.aIndex_3345) {
+                            class124 = Class300.method2277(0, (this.aClass263_933.aIndex_3345), (0xffff & (anIntArrayArray907[i_21_][i_26_])), -1);
                         }
                         if (class124 == null) return null;
                         if (class124.anInt1830 < 13) class124.method1092(2, 96);
@@ -275,11 +275,11 @@ final class Class51 {
         if (i_30_ != -31076) return false;
         anInt901++;
         if (anIntArrayArray907 == null) return true;
-        synchronized (this.aClass263_933.aClass45_3345) {
+        synchronized (this.aClass263_933.aIndex_3345) {
             for (int i_31_ = 0; aByteArray885.length > i_31_; i_31_++) {
                 if (aByteArray885[i_31_] == i) {
                     for (int i_32_ = 0; (anIntArrayArray907[i_31_].length > i_32_); i_32_++) {
-                        if (!this.aClass263_933.aClass45_3345.method420(i_30_ ^ 0x5061, anIntArrayArray907[i_31_][i_32_], 0)) return false;
+                        if (!this.aClass263_933.aIndex_3345.method420(i_30_ ^ 0x5061, anIntArrayArray907[i_31_][i_32_], 0)) return false;
                     }
                     return true;
                 }
@@ -607,10 +607,10 @@ final class Class51 {
         if (i != 9773) method485(-109);
         if (anIntArrayArray907 == null) return true;
         boolean bool = true;
-        synchronized (this.aClass263_933.aClass45_3345) {
+        synchronized (this.aClass263_933.aIndex_3345) {
             for (int i_77_ = 0; i_77_ < anIntArrayArray907.length; i_77_++) {
                 for (int i_78_ = 0; (anIntArrayArray907[i_77_].length > i_78_); i_78_++)
-                    bool &= (this.aClass263_933.aClass45_3345.method420(-10499, anIntArrayArray907[i_77_][i_78_], 0));
+                    bool &= (this.aClass263_933.aIndex_3345.method420(-10499, anIntArrayArray907[i_77_][i_78_], 0));
             }
         }
         return bool;

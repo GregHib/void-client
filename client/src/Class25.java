@@ -9,7 +9,7 @@ final class Class25 {
     static int anInt363;
     static Class351 aClass351_364 = new Class351(12, 3);
     static int anInt365;
-    private Class45 aClass45_366;
+    private Index aIndex_366;
     static Sprite[] aSpriteArray367;
     static boolean aBoolean368 = false;
     static int[] anIntArray369;
@@ -18,7 +18,7 @@ final class Class25 {
     static int anInt372;
 
     final void method299(int i, int i_0_) {
-        if (i_0_ != 16) aClass45_366 = null;
+        if (i_0_ != 16) aIndex_366 = null;
         synchronized (aClass60_360) {
             aClass60_360.method578(2, i);
         }
@@ -41,8 +41,8 @@ final class Class25 {
         }
         if (class38 != null) return class38;
         byte[] is;
-        synchronized (aClass45_366) {
-            is = aClass45_366.method410(-1860, 30, i);
+        synchronized (aIndex_366) {
+            is = aIndex_366.method410(-1860, 30, i);
         }
         if (i_2_ < 6) aClass60_360 = null;
         class38 = new Class38();
@@ -91,12 +91,12 @@ final class Class25 {
         aSpriteArray367 = null;
     }
 
-    Class25(Class230 class230, int i, Class45 class45) {
+    Class25(Class230 class230, int i, Index index) {
         try {
-            aClass45_366 = class45;
-            aClass45_366.method407(0, 30);
+            aIndex_366 = index;
+            aIndex_366.method407(0, 30);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hq.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("hq.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 }

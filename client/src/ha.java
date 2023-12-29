@@ -299,17 +299,17 @@ abstract class ha {
 
     abstract Sprite method3691(Class207 class207, boolean bool);
 
-    static final synchronized ha method3692(int i, int i_168_, int i_169_, Class45 class45, int i_170_, d var_d, Canvas canvas, int i_171_) {
+    static final synchronized ha method3692(int i, int i_168_, int i_169_, Index index, int i_170_, d var_d, Canvas canvas, int i_171_) {
         try {
             anInt4576++;
             if (i_170_ == i_171_) return Class348_Sub5.method2753(true, i_168_, i_169_, canvas, var_d);
             if (i_171_ == 2) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_);
             if (i_171_ == 1) return Class262.method2000(3, i, canvas, var_d);
-            if (i_171_ == 5) return Class93.method862(canvas, var_d, class45, 25542, i);
-            if (i_171_ == 3) return Class96.method870(i, i_170_ ^ 0x4a31, var_d, class45, canvas);
+            if (i_171_ == 5) return Class93.method862(canvas, var_d, index, 25542, i);
+            if (i_171_ == 3) return Class96.method870(i, i_170_ ^ 0x4a31, var_d, index, canvas);
             throw new IllegalArgumentException("UM");
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (class45 != null ? "{...}" : "null") + ',' + i_170_ + ',' + (var_d != null ? "{...}" : "null") + ',' + (canvas != null ? "{...}" : "null") + ',' + i_171_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (index != null ? "{...}" : "null") + ',' + i_170_ + ',' + (var_d != null ? "{...}" : "null") + ',' + (canvas != null ? "{...}" : "null") + ',' + i_171_ + ')'));
         }
     }
 

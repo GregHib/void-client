@@ -8,7 +8,7 @@ final class Class129 {
     byte aByte1875;
     int anInt1876;
     int anInt1877;
-    static Class45 aClass45_1878;
+    static Index SOUND_EFFECTS;
     static int anInt1879;
     int anInt1880;
     int anInt1881;
@@ -39,7 +39,7 @@ final class Class129 {
 
     public static void method1126(int i) {
         if (i == 32) {
-            aClass45_1878 = null;
+            SOUND_EFFECTS = null;
             aByteArrayArray1887 = null;
             anIntArray1885 = null;
         }

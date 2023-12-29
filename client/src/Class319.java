@@ -4,9 +4,9 @@
 
 final class Class319 {
     static int anInt3978;
-    private final Class45 aClass45_3979;
+    private final Index aIndex_3979;
     static double aDouble3980;
-    Class45 aClass45_3981;
+    Index aIndex_3981;
     static Class315[] aClass315Array3982;
     static int anInt3983;
     static int anInt3984;
@@ -47,8 +47,8 @@ final class Class319 {
         }
         if (class368 != null) return class368;
         byte[] is;
-        synchronized (aClass45_3979) {
-            is = aClass45_3979.method410(-1860, Class318_Sub1_Sub3_Sub1.method2419((byte) 127, i_1_), Class348_Sub1_Sub2.method2729(i_1_, 16));
+        synchronized (aIndex_3979) {
+            is = aIndex_3979.method410(-1860, Class318_Sub1_Sub3_Sub1.method2419((byte) 127, i_1_), Class348_Sub1_Sub2.method2729(i_1_, 16));
         }
         class368 = new Class368();
         class368.aClass319_4513 = this;
@@ -63,7 +63,7 @@ final class Class319 {
     final void method2544(int i, byte i_2_) {
         synchronized (aClass60_3989) {
             aClass60_3989.method578(2, i);
-            if (i_2_ >= -11) this.aClass45_3981 = null;
+            if (i_2_ >= -11) this.aIndex_3981 = null;
         }
         anInt3987++;
         synchronized (this.aClass60_3990) {
@@ -88,14 +88,14 @@ final class Class319 {
         }
     }
 
-    Class319(Class230 class230, int i, Class45 class45, Class45 class45_3_) {
+    Class319(Class230 class230, int i, Index index, Index index_3_) {
         try {
-            this.aClass45_3981 = class45_3_;
-            aClass45_3979 = class45;
-            int i_4_ = -1 + aClass45_3979.method414(-1);
-            aClass45_3979.method407(0, i_4_);
+            this.aIndex_3981 = index_3_;
+            aIndex_3979 = index;
+            int i_4_ = -1 + aIndex_3979.method414(-1);
+            aIndex_3979.method407(0, i_4_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cn.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_3_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cn.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_3_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

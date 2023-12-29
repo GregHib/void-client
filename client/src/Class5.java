@@ -7,8 +7,8 @@ abstract class Class5 implements Interface1 {
     static int anInt4628;
     static int anInt4629;
     private int anInt4630;
-    private final Class45 aClass45_4631;
-    Class45 aClass45_4632;
+    private final Index aIndex_4631;
+    Index aIndex_4632;
     static int anInt4633;
     static int anInt4634;
     Class369 aClass369_4635;
@@ -25,16 +25,16 @@ abstract class Class5 implements Interface1 {
         int i_2_ = -94 % ((i - 25) / 52);
         anInt4641++;
         boolean bool = true;
-        if (!this.aClass45_4632.method421(false, this.aClass369_4635.anInt4965)) bool = false;
-        if (!aClass45_4631.method421(false, this.aClass369_4635.anInt4965)) bool = false;
+        if (!this.aIndex_4632.method421(false, this.aClass369_4635.anInt4965)) bool = false;
+        if (!aIndex_4631.method421(false, this.aClass369_4635.anInt4965)) bool = false;
         return bool;
     }
 
     public void method7(int i) {
         anInt4639++;
         if (i == 10286) {
-            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -85, (this.aClass369_4635.anInt4965), aClass45_4631);
-            aFontRenderer_4637 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(this.aClass45_4632, (this.aClass369_4635.anInt4965)), true));
+            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -85, (this.aClass369_4635.anInt4965), aIndex_4631);
+            aFontRenderer_4637 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(this.aIndex_4632, (this.aClass369_4635.anInt4965)), true));
         }
     }
 
@@ -106,13 +106,13 @@ abstract class Class5 implements Interface1 {
         }
     }
 
-    Class5(Class45 class45, Class45 class45_15_, Class369 class369) {
+    Class5(Index index, Index index_15_, Class369 class369) {
         try {
-            aClass45_4631 = class45_15_;
-            this.aClass45_4632 = class45;
+            aIndex_4631 = index_15_;
+            this.aIndex_4632 = index;
             this.aClass369_4635 = class369;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("gl.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class45_15_ != null ? "{...}" : "null") + ',' + (class369 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("gl.<init>(" + (index != null ? "{...}" : "null") + ',' + (index_15_ != null ? "{...}" : "null") + ',' + (class369 != null ? "{...}" : "null") + ')'));
         }
     }
 }

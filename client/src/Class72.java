@@ -244,7 +244,7 @@ final class Class72 {
     }
 
     private final void method740(ha var_ha, Class72 class72_60_) {
-        Class124 class124 = Class300.method2277(0, Class260.aClass45_3309, anInt1224, -1);
+        Class124 class124 = Class300.method2277(0, Class260.aIndex_3309, anInt1224, -1);
         if (class124 != null) {
             var_ha.K(anIntArray1226);
             var_ha.KA(0, 0, anInt1220, anInt1220);

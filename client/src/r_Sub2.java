@@ -3,7 +3,7 @@
  */
 
 final class r_Sub2 extends r {
-    static Class45 aClass45_10480;
+    static Index ANIMATIONS;
     static int anInt10481;
     int anInt10482;
     static int anInt10483 = 0;
@@ -331,7 +331,7 @@ final class r_Sub2 extends r {
     }
 
     public static void method3295(int i) {
-        aClass45_10480 = null;
+        ANIMATIONS = null;
         aClass252_10488 = null;
         aClass262_10492 = null;
         if (i != -1) method3295(109);

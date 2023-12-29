@@ -61,8 +61,8 @@ final class Class5_Sub2 extends Class5 {
         return class51.method478(i, -31076);
     }
 
-    Class5_Sub2(Class45 class45, Class45 class45_12_, Class369_Sub2 class369_sub2) {
-        super(class45, class45_12_, class369_sub2);
+    Class5_Sub2(Index index, Index index_12_, Class369_Sub2 class369_sub2) {
+        super(index, index_12_, class369_sub2);
     }
 
     static final void method196(boolean bool, int i, int i_13_, int i_14_, int i_15_) {

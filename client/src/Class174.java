@@ -22,7 +22,7 @@ final class Class174 {
     int anInt2303;
     int anInt2304;
     static Class114 aClass114_2305 = new Class114(57, 10);
-    static Class45 aClass45_2306;
+    static Index ITEMS;
     static Class223 aClass223_2307 = new Class223(7, 2);
     private boolean aBoolean2308;
     static Sprite aSprite_2309;
@@ -33,7 +33,7 @@ final class Class174 {
         boolean bool_1_ = false;
         boolean bool_2_ = false;
         int i_3_ = 0;
-        if (bool != true) aClass45_2306 = null;
+        if (bool != true) ITEMS = null;
         int i_4_ = string.length();
         for (int i_5_ = 0; i_5_ < i_4_; i_5_++) {
             int i_6_ = string.charAt(i_5_);
@@ -75,7 +75,7 @@ final class Class174 {
         if (i != -110) method1333(null, -51, null);
         aClass114_2305 = null;
         aSprite_2309 = null;
-        aClass45_2306 = null;
+        ITEMS = null;
     }
 
     private final void method1335(Class348_Sub49 class348_sub49, int i, byte i_8_) {

@@ -203,7 +203,7 @@ final class Class46 {
         anInt767++;
         aa var_aa = (aa) Class239_Sub24.aClass60_6096.method583(this.anInt830, 119);
         if (var_aa != null) return var_aa;
-        Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755, this.anInt756, 0);
+        Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aIndex_8755, this.anInt756, 0);
         if (class207 == null) return null;
         int i_10_ = (class207.anInt2703 + (class207.anInt2702 + class207.anInt2698));
         int i_11_ = (class207.anInt2700 + (class207.anInt2696 + class207.anInt2701));
@@ -308,7 +308,7 @@ final class Class46 {
                 Class64 class64 = (Class64) Class358.aClass60_4417.method583(l, -90);
                 if (class64 == null || var_ha.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_ha.method3679(i, class64.ua());
-                    Class124 class124 = Class300.method2277(0, (Class348_Sub40_Sub28.aClass45_9365), this.anInt753, -1);
+                    Class124 class124 = Class300.method2277(0, (Class348_Sub40_Sub28.aIndex_9365), this.anInt753, -1);
                     if (class124 == null) {
                         Class348_Sub42_Sub13.aBoolean9616 = true;
                         return null;
@@ -745,7 +745,7 @@ final class Class46 {
         Sprite sprite = (Sprite) Class351.aClass60_4327.method583(l, -71);
         if (i > -27) method434(true);
         if (sprite != null) return sprite;
-        Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755, this.anInt756, 0);
+        Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aIndex_8755, this.anInt756, 0);
         if (class207 == null) {
             Class348_Sub42_Sub13.aBoolean9616 = true;
             return null;

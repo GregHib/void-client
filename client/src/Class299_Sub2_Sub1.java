@@ -47,9 +47,9 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
     static final void method2270(int i, int i_4_, ha var_ha, String string, boolean bool, int i_5_, int i_6_, int i_7_) {
         try {
             if (OutputStream_Sub2.aSprite_106 == null || Class121.aSprite_1800 == null) {
-                if (Class21.aClass45_322.method421(false, Class231.anInt2996) && Class21.aClass45_322.method421(false, Class348_Sub40_Sub16.anInt9231)) {
-                    OutputStream_Sub2.aSprite_106 = (var_ha.method3691(Class207.method1521(Class21.aClass45_322, Class231.anInt2996, 0), true));
-                    Class207 class207 = Class207.method1521(Class21.aClass45_322, Class348_Sub40_Sub16.anInt9231, 0);
+                if (Class21.SPRITES.method421(false, Class231.anInt2996) && Class21.SPRITES.method421(false, Class348_Sub40_Sub16.anInt9231)) {
+                    OutputStream_Sub2.aSprite_106 = (var_ha.method3691(Class207.method1521(Class21.SPRITES, Class231.anInt2996, 0), true));
+                    Class207 class207 = Class207.method1521(Class21.SPRITES, Class348_Sub40_Sub16.anInt9231, 0);
                     Class121.aSprite_1800 = var_ha.method3691(class207, true);
                     class207.method1518();
                     Class348_Sub5.aSprite_6627 = var_ha.method3691(class207, true);

@@ -47,11 +47,11 @@ abstract class Class101 {
             for (int i_8_ = (-(Class348_Sub40_Sub3.anInt9109 >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8 >= i_8_); i_8_++) {
                 int i_9_ = i_8_ + (i_7_ << 8);
                 Class348_Sub23_Sub3.anIntArray9042[i_6_] = i_9_;
-                aa_Sub1.anIntArray5192[i_6_] = Class367_Sub10.aClass45_7382.method417("m" + i_7_ + "_" + i_8_, i + 49);
-                Applet_Sub1.anIntArray38[i_6_] = Class367_Sub10.aClass45_7382.method417("l" + i_7_ + "_" + i_8_, 0);
-                Class322.anIntArray4031[i_6_] = Class367_Sub10.aClass45_7382.method417("n" + i_7_ + "_" + i_8_, 0);
-                Class295.anIntArray3759[i_6_] = Class367_Sub10.aClass45_7382.method417("um" + i_7_ + "_" + i_8_, 0);
-                r.anIntArray9724[i_6_] = (Class367_Sub10.aClass45_7382.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i, -49)));
+                aa_Sub1.anIntArray5192[i_6_] = Class367_Sub10.MAPS.method417("m" + i_7_ + "_" + i_8_, i + 49);
+                Applet_Sub1.anIntArray38[i_6_] = Class367_Sub10.MAPS.method417("l" + i_7_ + "_" + i_8_, 0);
+                Class322.anIntArray4031[i_6_] = Class367_Sub10.MAPS.method417("n" + i_7_ + "_" + i_8_, 0);
+                Class295.anIntArray3759[i_6_] = Class367_Sub10.MAPS.method417("um" + i_7_ + "_" + i_8_, 0);
+                r.anIntArray9724[i_6_] = (Class367_Sub10.MAPS.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i, -49)));
                 if (Class322.anIntArray4031[i_6_] == -1) {
                     aa_Sub1.anIntArray5192[i_6_] = -1;
                     Applet_Sub1.anIntArray38[i_6_] = -1;

@@ -227,21 +227,21 @@ final class Class348_Sub10 extends Class348 {
         return new Class348_Sub19_Sub1(anInt6702, is_37_, anInt6723, anInt6717, aBoolean6728);
     }
 
-    private static final boolean method2792(Class45 class45) {
+    private static final boolean method2792(Index index) {
         if (!aBoolean6724) {
-            byte[] is = class45.method410(-1860, 0, 0);
+            byte[] is = index.method410(-1860, 0, 0);
             if (is == null) return false;
             method2790(is);
         }
         return true;
     }
 
-    static final Class348_Sub10 method2793(Class45 class45, int i) {
-        if (!method2792(class45)) {
-            class45.method421(false, i);
+    static final Class348_Sub10 method2793(Index index, int i) {
+        if (!method2792(index)) {
+            index.method421(false, i);
             return null;
         }
-        byte[] is = class45.method415((byte) 73, i);
+        byte[] is = index.method415((byte) 73, i);
         if (is == null) return null;
         return new Class348_Sub10(is);
     }
@@ -448,12 +448,12 @@ final class Class348_Sub10 extends Class348 {
         method2787(is);
     }
 
-    static final Class348_Sub10 method2795(Class45 class45, int i, int i_115_) {
-        if (!method2792(class45)) {
-            class45.method420(-10499, i, i_115_);
+    static final Class348_Sub10 method2795(Index index, int i, int i_115_) {
+        if (!method2792(index)) {
+            index.method420(-10499, i, i_115_);
             return null;
         }
-        byte[] is = class45.method410(-1860, i, i_115_);
+        byte[] is = index.method410(-1860, i, i_115_);
         if (is == null) return null;
         return new Class348_Sub10(is);
     }

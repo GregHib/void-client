@@ -4,13 +4,13 @@
 
 final class Class150 {
     static Class113 aClass113_2047;
-    private Class45 aClass45_2048;
+    private Index aIndex_2048;
     static int anInt2049;
     private final Class60 aClass60_2050 = new Class60(64);
     static int anInt2051;
     static int anInt2052;
     static int anInt2053;
-    Class45 aClass45_2054;
+    Index aIndex_2054;
     static int anInt2055;
     static int anInt2056;
     static int anInt2057 = 0;
@@ -30,15 +30,15 @@ final class Class150 {
 
     final Class34 method1203(byte i, int i_3_) {
         anInt2056++;
-        if (i != 33) aClass45_2048 = null;
+        if (i != 33) aIndex_2048 = null;
         Class34 class34;
         synchronized (aClass60_2050) {
             class34 = (Class34) aClass60_2050.method583(i_3_, -58);
         }
         if (class34 != null) return class34;
         byte[] is;
-        synchronized (aClass45_2048) {
-            is = aClass45_2048.method410(i + -1893, 3, i_3_);
+        synchronized (aIndex_2048) {
+            is = aIndex_2048.method410(i + -1893, 3, i_3_);
         }
         class34 = new Class34();
         class34.aClass150_475 = this;
@@ -54,12 +54,12 @@ final class Class150 {
             aClass60_2050.method587(-93);
         }
         anInt2049++;
-        if (i != 0) aClass45_2048 = null;
+        if (i != 0) aIndex_2048 = null;
     }
 
-    static final Class348_Sub42_Sub14 method1205(int i, boolean bool, Class45 class45, int i_4_) {
+    static final Class348_Sub42_Sub14 method1205(int i, boolean bool, Index index, int i_4_) {
         anInt2053++;
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(class45.method410(-1860, i_4_, i));
+        Class348_Sub49 class348_sub49 = new Class348_Sub49(index.method410(-1860, i_4_, i));
         if (bool != true) method1208(102);
         Class348_Sub42_Sub14 class348_sub42_sub14 = new Class348_Sub42_Sub14(i, class348_sub49.readString((byte) 88), class348_sub49.readString((byte) 120), class348_sub49.readInt((byte) -126), class348_sub49.readInt((byte) -126), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255));
         int i_5_ = class348_sub49.readUnsignedByte(255);
@@ -70,7 +70,7 @@ final class Class150 {
     }
 
     final void method1206(byte i) {
-        if (i != -37) aClass45_2048 = null;
+        if (i != -37) aIndex_2048 = null;
         anInt2051++;
         synchronized (aClass60_2050) {
             aClass60_2050.method590(0);
@@ -91,13 +91,13 @@ final class Class150 {
         int i_8_ = -65 / ((i - -58) / 57);
     }
 
-    Class150(Class230 class230, int i, Class45 class45, Class45 class45_9_) {
+    Class150(Class230 class230, int i, Index index, Index index_9_) {
         try {
-            this.aClass45_2054 = class45_9_;
-            aClass45_2048 = class45;
-            aClass45_2048.method407(0, 3);
+            this.aIndex_2054 = index_9_;
+            aIndex_2048 = index;
+            aIndex_2048.method407(0, 3);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_9_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_9_ != null ? "{...}" : "null") + ')'));
         }
     }
 

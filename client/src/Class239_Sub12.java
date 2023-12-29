@@ -7,7 +7,7 @@ final class Class239_Sub12 extends Class239 {
     static int anInt5961;
     static int anInt5962;
     static int anInt5963;
-    static Class45 aClass45_5964;
+    static Index aIndex_5964;
     static int anInt5965;
     static String aString5966 = null;
     static int anInt5967;
@@ -48,7 +48,7 @@ final class Class239_Sub12 extends Class239 {
     public static void method1773(byte i) {
         int i_3_ = -86 / ((i - 13) / 45);
         aString5966 = null;
-        aClass45_5964 = null;
+        aIndex_5964 = null;
     }
 
     Class239_Sub12(Class348_Sub51 class348_sub51) {

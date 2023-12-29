@@ -29,7 +29,7 @@ final class Class177 implements Interface1 {
                 Class348_Sub16_Sub3 class348_sub16_sub3 = Class172.method1326(Class209.aClass348_Sub16_Sub3_2718, i_2_ ^ ~0x68);
                 Class348_Sub42_Sub18.method3273(true, -95, class348_sub16_sub3);
             }
-            Class348_Sub1_Sub3.method2732(0, i, false, 102, Class348_Sub23_Sub2.aClass45_9033, i_0_);
+            Class348_Sub1_Sub3.method2732(0, i, false, 102, Class348_Sub23_Sub2.MUSIC_EFFECTS, i_0_);
             Class348_Sub5.method2755(-1, 255, -1);
             Class74.aBoolean1236 = true;
         }

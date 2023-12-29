@@ -11,8 +11,8 @@ final class Class67 implements Interface1 {
     static int anInt4647;
     static int[] anIntArray4648 = new int[14];
     private FontRenderer aFontRenderer_4649;
-    private final Class45 aClass45_4650;
-    private final Class45 aClass45_4651;
+    private final Index aIndex_4650;
+    private final Index aIndex_4651;
 
     public static void method716(int i) {
         if (i == 1) {
@@ -33,8 +33,8 @@ final class Class67 implements Interface1 {
     public final boolean method8(byte i) {
         anInt4644++;
         boolean bool = true;
-        if (!aClass45_4650.method421(false, aClass158_4646.anInt4944)) bool = false;
-        if (!aClass45_4651.method421(false, aClass158_4646.anInt4944)) bool = false;
+        if (!aIndex_4650.method421(false, aClass158_4646.anInt4944)) bool = false;
+        if (!aIndex_4651.method421(false, aClass158_4646.anInt4944)) bool = false;
         int i_2_ = -53 % ((i - 25) / 52);
         return bool;
     }
@@ -55,17 +55,17 @@ final class Class67 implements Interface1 {
 
     public final void method7(int i) {
         anInt4647++;
-        FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -45, aClass158_4646.anInt4944, aClass45_4651);
-        if (i == 10286) aFontRenderer_4649 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(aClass45_4650, aClass158_4646.anInt4944), true));
+        FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -45, aClass158_4646.anInt4944, aIndex_4651);
+        if (i == 10286) aFontRenderer_4649 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(aIndex_4650, aClass158_4646.anInt4944), true));
     }
 
-    Class67(Class45 class45, Class45 class45_3_, Class158 class158) {
+    Class67(Index index, Index index_3_, Class158 class158) {
         try {
-            aClass45_4651 = class45_3_;
+            aIndex_4651 = index_3_;
             aClass158_4646 = class158;
-            aClass45_4650 = class45;
+            aIndex_4650 = index;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kd.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class45_3_ != null ? "{...}" : "null") + ',' + (class158 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kd.<init>(" + (index != null ? "{...}" : "null") + ',' + (index_3_ != null ? "{...}" : "null") + ',' + (class158 != null ? "{...}" : "null") + ')'));
         }
     }
 

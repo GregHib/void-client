@@ -52,7 +52,7 @@ final class Class239_Sub23 extends Class239 {
         return 1;
     }
 
-    static final FontMetrics getFontMetrics(int archiveId, int fileId, int i_2_, Class45 index) {
+    static final FontMetrics getFontMetrics(int archiveId, int fileId, int i_2_, Index index) {
         anInt6081++;
         byte[] is = index.method410(-1860, archiveId, fileId);
         if (i_2_ >= -31) getFontMetrics(65, -4, -97, null);

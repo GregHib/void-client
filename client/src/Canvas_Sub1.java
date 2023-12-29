@@ -107,7 +107,7 @@ final class Canvas_Sub1 extends Canvas {
         Class64 class64 = (Class64) Class15.aClass60_225.method583(l, 81);
         int i_18_ = 2055;
         if (class64 == null) {
-            Class124 class124 = Class300.method2277(0, aa_Sub3.aClass45_5207, i_16_, -1);
+            Class124 class124 = Class300.method2277(0, aa_Sub3.MODELS, i_16_, -1);
             if (class124 == null) return null;
             if (class124.anInt1830 < 13) class124.method1092(2, 105);
             class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275, 64, 768);
@@ -128,35 +128,35 @@ final class Canvas_Sub1 extends Canvas {
         boolean bool = true;
         for (int i_19_ = 0; Class347.aByteArrayArray4281.length > i_19_; i_19_++) {
             if (aa_Sub1.anIntArray5192[i_19_] != -1 && Class347.aByteArrayArray4281[i_19_] == null) {
-                Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.aClass45_7382.method410(-1860, aa_Sub1.anIntArray5192[i_19_], 0);
+                Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.MAPS.method410(-1860, aa_Sub1.anIntArray5192[i_19_], 0);
                 if (Class347.aByteArrayArray4281[i_19_] == null) {
                     bool = false;
                     Class268.anInt3441++;
                 }
             }
             if (Applet_Sub1.anIntArray38[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
-                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.aClass45_7382.method393(Applet_Sub1.anIntArray38[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.method393(Applet_Sub1.anIntArray38[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
                     Class268.anInt3441++;
                     bool = false;
                 }
             }
             if (Class295.anIntArray3759[i_19_] != -1 && Class129.aByteArrayArray1887[i_19_] == null) {
-                Class129.aByteArrayArray1887[i_19_] = Class367_Sub10.aClass45_7382.method410(-1860, Class295.anIntArray3759[i_19_], 0);
+                Class129.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.method410(-1860, Class295.anIntArray3759[i_19_], 0);
                 if (Class129.aByteArrayArray1887[i_19_] == null) {
                     Class268.anInt3441++;
                     bool = false;
                 }
             }
             if (r.anIntArray9724[i_19_] != -1 && Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
-                Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] = Class367_Sub10.aClass45_7382.method410(-1860, r.anIntArray9724[i_19_], 0);
+                Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] = Class367_Sub10.MAPS.method410(-1860, r.anIntArray9724[i_19_], 0);
                 if (Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
                     bool = false;
                     Class268.anInt3441++;
                 }
             }
             if (Class322.anIntArray4031 != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && Class322.anIntArray4031[i_19_] != -1) {
-                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.aClass45_7382.method393(Class322.anIntArray4031[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(Class322.anIntArray4031[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class348_Sub50.aByteArrayArray7212[i_19_] == null) {
                     bool = false;
                     Class268.anInt3441++;
@@ -164,9 +164,9 @@ final class Canvas_Sub1 extends Canvas {
             }
         }
         if (r_Sub2.aClass252_10488 == null) {
-            if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.aClass45_6950.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))) {
-                if (Class348_Sub32.aClass45_6950.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))
-                    r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.aBoolean1900, (byte) -91);
+            if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.WORLD_MAP.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))) {
+                if (Class348_Sub32.WORLD_MAP.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))
+                    r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.WORLD_MAP, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.aBoolean1900, (byte) -91);
                 else {
                     bool = false;
                     Class268.anInt3441++;
@@ -315,8 +315,8 @@ final class Canvas_Sub1 extends Canvas {
                     for (int i_37_ = i_33_ - 1; i_37_ <= i_34_ - -1; i_37_++) {
                         for (int i_38_ = i_35_ + -1; i_38_ <= i_36_ - -1; i_38_++) {
                             if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
-                                Class367_Sub10.aClass45_7382.method409("m" + i_37_ + "_" + i_38_, true);
-                                Class367_Sub10.aClass45_7382.method409("l" + i_37_ + "_" + i_38_, true);
+                                Class367_Sub10.MAPS.method409("m" + i_37_ + "_" + i_38_, true);
+                                Class367_Sub10.MAPS.method409("l" + i_37_ + "_" + i_38_, true);
                             }
                         }
                     }

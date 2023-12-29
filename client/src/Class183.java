@@ -7,7 +7,7 @@ final class Class183 {
     private final Class60 aClass60_2458 = new Class60(128);
     static int anInt2459;
     static int anInt2460;
-    private final Class45 aClass45_2461;
+    private final Index aIndex_2461;
     static Class250 aClass250_2462;
     static int anInt2463;
     static int anInt2464;
@@ -81,8 +81,8 @@ final class Class183 {
         }
         if (class22 != null) return class22;
         byte[] is;
-        synchronized (aClass45_2461) {
-            is = aClass45_2461.method410(-1860, 1, i);
+        synchronized (aIndex_2461) {
+            is = aIndex_2461.method410(-1860, 1, i);
         }
         class22 = new Class22();
         if (is != null) class22.method290(new Class348_Sub49(is), -1);
@@ -123,12 +123,12 @@ final class Class183 {
         if (i != 32841) anInt2464 = 86;
     }
 
-    Class183(Class230 class230, int i, Class45 class45) {
+    Class183(Class230 class230, int i, Index index) {
         try {
-            aClass45_2461 = class45;
-            aClass45_2461.method407(0, 1);
+            aIndex_2461 = index;
+            aIndex_2461.method407(0, 1);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qe.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qe.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 }

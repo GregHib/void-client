@@ -14,7 +14,7 @@ final class Class348_Sub42_Sub18 extends Class348_Sub42 {
         if (i > -55) method3275(117, -54, 56);
         Class348_Sub40.aClass279_7042.method2088(false, class348_sub16_sub3);
         anInt9681++;
-        if (bool) Class318_Sub7.method2510(Class129.aClass45_1878, class348_sub16_sub3, Class239_Sub4.aClass45_5878, false, Class348_Sub40.aClass279_7042, Class123.aClass45_1815);
+        if (bool) Class318_Sub7.method2510(Class129.SOUND_EFFECTS, class348_sub16_sub3, Class239_Sub4.MIDI_INSTRUMENTS, false, Class348_Sub40.aClass279_7042, Class123.aIndex_1815);
     }
 
     public static void method3274(boolean bool) {

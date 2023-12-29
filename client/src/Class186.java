@@ -3,7 +3,7 @@
  */
 
 abstract class Class186 {
-    static Class45 aClass45_2490;
+    static Index ANIMATION_SKINS;
     static Class74 aClass74_2491;
     static boolean aBoolean2492 = false;
     static int anInt2493;
@@ -13,7 +13,7 @@ abstract class Class186 {
     static int[] anIntArray2497;
 
     public static void method1396(int i) {
-        aClass45_2490 = null;
+        ANIMATION_SKINS = null;
         aClass74_2491 = null;
         aStringArray2494 = null;
         anIntArray2497 = null;

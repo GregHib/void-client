@@ -25,7 +25,7 @@ final class Class78 {
     private long aLong1319 = -1L;
     private int anInt1320;
     private long aLong1321 = -1L;
-    static Class45 aClass45_1322;
+    static Index GRAPHICS;
     private long aLong1323;
     private long aLong1324;
 
@@ -91,8 +91,8 @@ final class Class78 {
     }
 
     public static void method786(byte i) {
-        if (i != 0) aClass45_1322 = null;
-        aClass45_1322 = null;
+        if (i != 0) GRAPHICS = null;
+        GRAPHICS = null;
     }
 
     final long method787(int i) {

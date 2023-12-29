@@ -10,7 +10,7 @@ final class Class292 implements Interface7 {
     static int anInt4801;
     static int anInt4802;
     static int anInt4803 = -1;
-    private final Class45 aClass45_4804;
+    private final Index aIndex_4804;
     static int anInt4805;
 
     static final int method2201(int i) {
@@ -24,8 +24,8 @@ final class Class292 implements Interface7 {
     public final int method31(int i) {
         anInt4801++;
         int i_0_ = 16 / ((i - -43) / 62);
-        if (aClass45_4804.method401(125)) return 100;
-        return aClass45_4804.method398((byte) -31);
+        if (aIndex_4804.method401(125)) return 100;
+        return aIndex_4804.method398((byte) -31);
     }
 
     public static void method2202(int i) {
@@ -57,8 +57,8 @@ final class Class292 implements Interface7 {
         }
     }
 
-    Class292(Class45 class45) {
-        aClass45_4804 = class45;
+    Class292(Index index) {
+        aIndex_4804 = index;
     }
 
     static {

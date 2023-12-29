@@ -46,7 +46,7 @@ final class Class178 {
     static final void method1356(boolean bool, String string, int i, int i_0_, boolean bool_1_, String string_2_, boolean bool_3_) {
         try {
             anInt2337++;
-            Class174.aClass45_2306.anInt634 = 1;
+            Class174.ITEMS.anInt634 = 1;
             string_2_ = string_2_.toLowerCase();
             short[] is = new short[16];
             int i_4_ = -1;
@@ -89,8 +89,8 @@ final class Class178 {
             for (int i_10_ = 0; Class76.anInt1285 > i_10_; i_10_++)
                 strings[i_10_] = Exception_Sub1.aClass255_112.method1940(123, is[i_10_]).aString2795;
             Class174.method1333(Class192.aShortArray2579, 26073, strings);
-            Class174.aClass45_2306.method412((byte) 116);
-            Class174.aClass45_2306.anInt634 = 2;
+            Class174.ITEMS.method412((byte) 116);
+            Class174.ITEMS.anInt634 = 2;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qa.A(" + bool + ',' + (string != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (string_2_ != null ? "{...}" : "null") + ',' + bool_3_ + ')'));
         }

@@ -56,15 +56,15 @@ final class Class367_Sub2 extends Class367 {
         }
     }
 
-    Class367_Sub2(Class377 class377, Class45 class45, Class269 class269) {
+    Class367_Sub2(Class377 class377, Index index, Class269 class269) {
         super(class377);
         try {
             aClass377_7296 = class377;
             aClass269_7294 = class269;
-            if (class45 == null || !aClass269_7294.method2039(100) || !aClass377_7296.aBoolean9923) aClass193_7293 = null;
-            else aClass193_7293 = za_Sub2.method3442(34336, class45.method391("gl", "transparent_water", -29832), aClass377_7296, 4);
+            if (index == null || !aClass269_7294.method2039(100) || !aClass377_7296.aBoolean9923) aClass193_7293 = null;
+            else aClass193_7293 = za_Sub2.method3442(34336, index.method391("gl", "transparent_water", -29832), aClass377_7296, 4);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
         }
     }
 

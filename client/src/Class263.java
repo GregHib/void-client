@@ -3,9 +3,9 @@
  */
 
 final class Class263 {
-    private final Class45 aClass45_3343;
+    private final Index aIndex_3343;
     static int anInt3344;
-    Class45 aClass45_3345;
+    Index aIndex_3345;
     static int anInt3346;
     static int[] anIntArray3347 = new int[1000];
     static int anInt3348;
@@ -42,8 +42,8 @@ final class Class263 {
         }
         if (class51 != null) return class51;
         byte[] is;
-        synchronized (aClass45_3343) {
-            is = aClass45_3343.method410(i + -1860, Class239_Sub29.method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (byte) -90));
+        synchronized (aIndex_3343) {
+            is = aIndex_3343.method410(i + -1860, Class239_Sub29.method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (byte) -90));
         }
         class51 = new Class51();
         class51.anInt941 = i_0_;
@@ -332,7 +332,7 @@ final class Class263 {
         if (bool != true) this.aClass60_3362 = null;
     }
 
-    Class263(Class230 class230, int i, boolean bool, Class45 class45, Class45 class45_29_) {
+    Class263(Class230 class230, int i, boolean bool, Index index, Index index_29_) {
         aClass60_3350 = new Class60(64);
         this.aClass60_3360 = new Class60(500);
         this.aClass60_3361 = new Class60(30);
@@ -340,13 +340,13 @@ final class Class263 {
         do {
             try {
                 this.aBoolean3359 = bool;
-                this.aClass45_3345 = class45_29_;
-                aClass45_3343 = class45;
-                if (aClass45_3343 == null) break;
-                int i_30_ = aClass45_3343.method414(-1) + -1;
-                aClass45_3343.method407(0, i_30_);
+                this.aIndex_3345 = index_29_;
+                aIndex_3343 = index;
+                if (aIndex_3343 == null) break;
+                int i_30_ = aIndex_3343.method414(-1) + -1;
+                aIndex_3343.method407(0, i_30_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_29_ != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (index != null ? "{...}" : "null") + ',' + (index_29_ != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

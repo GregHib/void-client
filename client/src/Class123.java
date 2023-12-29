@@ -8,11 +8,11 @@ final class Class123 {
     byte aByte1812;
     static Class25 aClass25_1813;
     byte aByte1814;
-    static Class45 aClass45_1815;
+    static Index aIndex_1815;
 
     public static void method1091(int i) {
         if (i != -9341) method1091(-16);
-        aClass45_1815 = null;
+        aIndex_1815 = null;
         aClass25_1813 = null;
     }
 

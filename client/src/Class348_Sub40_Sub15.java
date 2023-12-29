@@ -34,14 +34,14 @@ final class Class348_Sub40_Sub15 extends Class348_Sub40 {
         anInt9220 = i;
     }
 
-    static final void method3086(int i, Class348_Sub16_Sub3 class348_sub16_sub3, int i_5_, Class45 class45, boolean bool, int i_6_, int i_7_) {
+    static final void method3086(int i, Class348_Sub16_Sub3 class348_sub16_sub3, int i_5_, Index index, boolean bool, int i_6_, int i_7_) {
         try {
             anInt9219++;
             if (i != 2) aClass114_9216 = null;
-            Class348_Sub1_Sub3.method2732(i_6_, i_7_, bool, 96, class45, i_5_);
+            Class348_Sub1_Sub3.method2732(i_6_, i_7_, bool, 96, index, i_5_);
             Class285.aClass348_Sub16_Sub3_4743 = class348_sub16_sub3;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pba.D(" + i + ',' + (class348_sub16_sub3 != null ? "{...}" : "null") + ',' + i_5_ + ',' + (class45 != null ? "{...}" : "null") + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("pba.D(" + i + ',' + (class348_sub16_sub3 != null ? "{...}" : "null") + ',' + i_5_ + ',' + (index != null ? "{...}" : "null") + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'));
         }
     }
 

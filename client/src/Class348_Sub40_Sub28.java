@@ -9,7 +9,7 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
     private int anInt9362;
     static int anInt9363;
     private int anInt9364 = 4096;
-    static Class45 aClass45_9365;
+    static Index aIndex_9365;
     static int anInt9366;
     private int anInt9367;
     private int anInt9368 = 16;
@@ -23,13 +23,13 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
     }
 
     static final Class364[] method3122(byte i) {
-        if (i < 86) aClass45_9365 = null;
+        if (i < 86) aIndex_9365 = null;
         anInt9361++;
         return (new Class364[]{Class55_Sub1.aClass364_5271, Class367_Sub8.aClass364_7361, Class26.aClass364_382, Class108.aClass364_1657, Class76.aClass364_1279, Class342.aClass364_4246});
     }
 
     public static void method3123(int i) {
-        aClass45_9365 = null;
+        aIndex_9365 = null;
         if (i != 0) method3122((byte) -98);
     }
 

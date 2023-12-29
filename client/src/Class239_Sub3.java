@@ -134,16 +134,16 @@ final class Class239_Sub3 extends Class239 {
             Class352 class352 = (Class352) Class332.aClass60_4139.method583(i, -92);
             if (class352 != null) {
                 if (bool && class352.aFontMetrics_4333 == null) {
-                    FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -76, i, s.aClass45_4585);
+                    FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -76, i, s.aIndex_4585);
                     if (fontMetrics == null) return null;
                     class352.aFontMetrics_4333 = fontMetrics;
                 }
                 return class352;
             }
             int i_27_ = -118 / ((-33 - i_25_) / 44);
-            Class207[] class207s = Class207.method1523(Class39.aClass45_518, i);
+            Class207[] class207s = Class207.method1523(Class39.aIndex_518, i);
             if (class207s == null) return null;
-            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -39, i, s.aClass45_4585);
+            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -39, i, s.aIndex_4585);
             if (fontMetrics == null) return null;
             if (!bool) class352 = new Class352(var_ha.method3686(fontMetrics, class207s, true));
             else class352 = new Class352(var_ha.method3686(fontMetrics, class207s, true), fontMetrics);

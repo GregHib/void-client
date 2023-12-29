@@ -41,7 +41,7 @@ class Class328 {
         anInt4101++;
         Class348_Sub42_Sub19 class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302(i_2_, (byte) -68));
         if (class348_sub42_sub19 != null) return class348_sub42_sub19;
-        byte[] is = Class113.aClass45_1743.method410(-1860, i_2_, 0);
+        byte[] is = Class113.CLIENT_SCRIPTS.method410(-1860, i_2_, 0);
         if (is == null || is.length <= 1) return null;
         try {
             class348_sub42_sub19 = Class318_Sub4.method2502(is, -104);

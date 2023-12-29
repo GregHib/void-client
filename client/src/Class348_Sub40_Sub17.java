@@ -21,7 +21,7 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
         if (bool != true) return true;
         if (this.anIntArray9232 != null) return true;
         if (anInt9243 >= 0) {
-            Class207 class207 = (Class101_Sub2.anInt5713 >= 0 ? Class207.method1521(Class348.aClass45_4286, Class101_Sub2.anInt5713, anInt9243) : Class207.method1512(Class348.aClass45_4286, anInt9243));
+            Class207 class207 = (Class101_Sub2.anInt5713 >= 0 ? Class207.method1521(Class348.aIndex_4286, Class101_Sub2.anInt5713, anInt9243) : Class207.method1512(Class348.aIndex_4286, anInt9243));
             class207.method1524();
             this.anIntArray9232 = class207.method1516();
             this.anInt9237 = class207.anInt2702;

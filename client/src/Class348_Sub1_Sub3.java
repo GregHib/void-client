@@ -27,9 +27,9 @@ final class Class348_Sub1_Sub3 extends Class348_Sub1 {
         super(i, i_3_, i_4_, i_5_, i_6_, f);
     }
 
-    static final void method2732(int i, int i_7_, boolean bool, int i_8_, Class45 class45, int i_9_) {
+    static final void method2732(int i, int i_7_, boolean bool, int i_8_, Index index, int i_9_) {
         anInt8820++;
         if (i_8_ < 90) anInt8818 = -21;
-        Class367_Sub11.method3555(class45, -89, bool, 0L, i_9_, i, i_7_);
+        Class367_Sub11.method3555(index, -89, bool, 0L, i_9_, i, i_7_);
     }
 }

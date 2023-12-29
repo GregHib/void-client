@@ -5,7 +5,7 @@
 final class Class229 {
     static int anInt2976;
     static int anInt2977;
-    static Class45 aClass45_2978;
+    static Index aIndex_2978;
     static Class268 aClass268_2979;
     static int anInt2980;
     static Class194 aClass194_2981;
@@ -25,7 +25,7 @@ final class Class229 {
     }
 
     public static void method1632(int i) {
-        aClass45_2978 = null;
+        aIndex_2978 = null;
         int i_1_ = -20 / ((-87 - i) / 34);
         aClass194_2981 = null;
         aClass268_2979 = null;

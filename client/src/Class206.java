@@ -79,11 +79,11 @@ final class Class206 implements Interface11 {
                 class10.anInt188--;
                 if (class10.anInt188 >= (!class10.method220((byte) -66) ? -10 : -1500)) {
                     if (class10.aByte180 == 1 && class10.aClass317_183 == null) {
-                        class10.aClass317_183 = Class317.method2372(Class129.aClass45_1878, class10.anInt185, 0);
+                        class10.aClass317_183 = Class317.method2372(Class129.SOUND_EFFECTS, class10.anInt185, 0);
                         if (class10.aClass317_183 == null) continue;
                         class10.anInt188 += class10.aClass317_183.method2370();
                     } else if (class10.method220((byte) -39) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
-                        if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((Class239_Sub4.aClass45_5878), (class10.anInt185));
+                        if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((Class239_Sub4.MIDI_INSTRUMENTS), (class10.anInt185));
                         if (class10.aClass348_Sub10_192 == null) continue;
                         if (class10.aClass348_Sub19_Sub1_189 == null) {
                             class10.aClass348_Sub19_Sub1_189 = class10.aClass348_Sub10_192.method2791(new int[]{22050});
@@ -148,8 +148,8 @@ final class Class206 implements Interface11 {
         anInt4890++;
         if (Class74.aBoolean1236 && !Class167.method1296(true)) {
             if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1) {
-                if (Class209.aClass348_Sub16_Sub3_2718 != null) Class348_Sub40_Sub15.method3086(2, Class209.aClass348_Sub16_Sub3_2718, Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350), Class59_Sub2_Sub1.aClass45_8667, false, 0, Class267.anInt3428);
-                else Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 124, Class59_Sub2_Sub1.aClass45_8667, Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350));
+                if (Class209.aClass348_Sub16_Sub3_2718 != null) Class348_Sub40_Sub15.method3086(2, Class209.aClass348_Sub16_Sub3_2718, Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350), Class59_Sub2_Sub1.MUSIC, false, 0, Class267.anInt3428);
+                else Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 124, Class59_Sub2_Sub1.MUSIC, Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350));
             }
             Class74.aBoolean1236 = false;
             Class209.aClass348_Sub16_Sub3_2718 = null;

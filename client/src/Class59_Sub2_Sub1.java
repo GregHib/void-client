@@ -3,10 +3,10 @@
  */
 
 final class Class59_Sub2_Sub1 extends Class59_Sub2 {
-    static Class45 aClass45_8667;
+    static Index MUSIC;
     static int anInt8668;
     static int anInt8669;
-    static Class45 aClass45_8670;
+    static Index aIndex_8670;
     static int anInt8671;
     static int anInt8672;
     static int anInt8673;
@@ -16,7 +16,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
         try {
             anInt8673++;
             int[] is_1_ = null;
-            if (i != 255) aClass45_8670 = null;
+            if (i != 255) aIndex_8670 = null;
             int[] is_2_ = null;
             int[] is_3_ = null;
             float[][] fs = null;
@@ -139,8 +139,8 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
     }
 
     public static void method568(boolean bool) {
-        aClass45_8670 = null;
-        aClass45_8667 = null;
-        if (bool != true) aClass45_8670 = null;
+        aIndex_8670 = null;
+        MUSIC = null;
+        if (bool != true) aIndex_8670 = null;
     }
 }

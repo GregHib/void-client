@@ -7,7 +7,7 @@ import java.awt.*;
 final class Class33 {
     static int anInt456;
     static int anInt457;
-    private final Class45 aClass45_458;
+    private final Index aIndex_458;
     static int anInt459;
     private final Class60 aClass60_460 = new Class60(128);
     static int anInt461;
@@ -19,7 +19,7 @@ final class Class33 {
             class117 = (Class117) aClass60_460.method583(i, 111);
         }
         if (class117 != null) return class117;
-        byte[] is = aClass45_458.method410(-1860, Class5_Sub3.method200(-107, i), Class348_Sub31.method3013(i, bool));
+        byte[] is = aIndex_458.method410(-1860, Class5_Sub3.method200(-107, i), Class348_Sub31.method3013(i, bool));
         class117 = new Class117();
         if (is != null) class117.method1069(0, new Class348_Sub49(is));
         synchronized (aClass60_460) {
@@ -77,15 +77,15 @@ final class Class33 {
         return 1 + i;
     }
 
-    Class33(Class230 class230, int i, Class45 class45) {
+    Class33(Class230 class230, int i, Index index) {
         do {
             try {
-                aClass45_458 = class45;
-                if (aClass45_458 == null) break;
-                int i_6_ = -1 + aClass45_458.method414(-1);
-                aClass45_458.method407(0, i_6_);
+                aIndex_458 = index;
+                if (aIndex_458 == null) break;
+                int i_6_ = -1 + aIndex_458.method414(-1);
+                aIndex_458.method407(0, i_6_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

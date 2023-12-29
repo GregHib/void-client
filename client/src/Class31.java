@@ -110,22 +110,22 @@ final class Class31 {
 
     private final void method330(ha var_ha, int i) {
         anInt446++;
-        Class45 class45 = this.aClass219_438.aClass45_2873;
-        if (anInt421 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt421, 121) == null && class45.method421(false, anInt421)) {
-            Class207 class207 = Class207.method1512(class45, anInt421);
+        Index index = this.aClass219_438.aIndex_2873;
+        if (anInt421 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt421, 121) == null && index.method421(false, anInt421)) {
+            Class207 class207 = Class207.method1512(index, anInt421);
             this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt421, (byte) -112);
         }
-        if (anInt433 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt433, -99) == null && class45.method421(false, anInt433)) {
-            Class207 class207 = Class207.method1512(class45, anInt433);
+        if (anInt433 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt433, -99) == null && index.method421(false, anInt433)) {
+            Class207 class207 = Class207.method1512(index, anInt433);
             this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt433, (byte) -128);
         }
-        if (anInt429 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt429, 86) == null && class45.method421(false, anInt429)) {
-            Class207 class207 = Class207.method1512(class45, anInt429);
+        if (anInt429 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt429, 86) == null && index.method421(false, anInt429)) {
+            Class207 class207 = Class207.method1512(index, anInt429);
             this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt429, (byte) -108);
         }
         if (i > -7) this.anInt434 = -14;
-        if (anInt439 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt439, -83) == null && class45.method421(false, anInt439)) {
-            Class207 class207 = Class207.method1512(class45, anInt439);
+        if (anInt439 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt439, -83) == null && index.method421(false, anInt439)) {
+            Class207 class207 = Class207.method1512(index, anInt439);
             this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt439, (byte) -101);
         }
     }

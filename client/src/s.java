@@ -6,7 +6,7 @@ import java.awt.*;
 
 abstract class s {
     int[][] anIntArrayArray4584;
-    static Class45 aClass45_4585;
+    static Index aIndex_4585;
     static int anInt4586;
     int anInt4587;
     int anInt4588;
@@ -72,7 +72,7 @@ abstract class s {
 
     public static void method3988(int i) {
         int i_56_ = 49 / ((15 - i) / 40);
-        aClass45_4585 = null;
+        aIndex_4585 = null;
     }
 
     abstract void CA(r var_r, int i, int i_57_, int i_58_, int i_59_, boolean bool);

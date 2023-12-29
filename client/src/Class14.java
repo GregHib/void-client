@@ -230,7 +230,7 @@ abstract class Class14 implements Interface18 {
     static final void method235(int i, byte i_46_) {
         anInt5087++;
         if (i != -1 && Class163.aBooleanArray2162[i]) {
-            Class229.aClass45_2978.method411(i, -120);
+            Class229.aIndex_2978.method411(i, -120);
             Class348_Sub40_Sub33.aClass46ArrayArray9427[i] = null;
             Class369_Sub2.aClass46ArrayArray8584[i] = null;
             if (i_46_ <= -94) Class163.aBooleanArray2162[i] = false;
