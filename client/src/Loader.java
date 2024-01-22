@@ -14,6 +14,7 @@ public class Loader extends Applet {
     public static boolean loadRunescape = false;
     public static boolean showCoordinates = true;
     public static boolean skipLobby = true;
+    public static boolean splitPorts = false;
     public static boolean debug = false;
     public static boolean trace = false;
     public static int port = 43594;

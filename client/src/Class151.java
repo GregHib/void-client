@@ -33,7 +33,8 @@ final class Class151 {
             anInt2064++;
             if (class105 != null) {
                 int i_6_;
-                if (Class348_Sub40_Sub21.anInt9282 != 4) i_6_ = (0x3fff & (int) Class314.aFloat3938 - -r_Sub2.anInt10483);
+                if (Class348_Sub40_Sub21.anInt9282 != 4)
+                    i_6_ = (0x3fff & (int) Class314.aFloat3938 - -r_Sub2.anInt10483);
                 else i_6_ = 0x3fff & (int) Class314.aFloat3938;
                 int i_7_ = 10 + Math.max(class46.anInt709 / 2, class46.anInt789 / i_4_);
                 int i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_);
@@ -71,7 +72,7 @@ final class Class151 {
             if (i > -48) aClass114_2068 = null;
             anInt2063++;
             RuntimeException_Sub1.anInt4596 = -1;
-            Class239_Sub12.anInt5969 = 1;
+            Class239_Sub12.anInt5969 = Loader.skipLobby ? 2 : 1;
             Class132.method1138(string, false, string_16_, (byte) -95);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ok.E(" + (string != null ? "{...}" : "null") + ',' + (string_16_ != null ? "{...}" : "null") + ',' + i + ')'));
