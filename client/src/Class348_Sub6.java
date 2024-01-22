@@ -54,7 +54,6 @@ final class Class348_Sub6 extends Class348 {
                     if (Loader.trace) {
                         throwable.printStackTrace();
                     }
-                    /* empty */
                 }
             }
             return false;

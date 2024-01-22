@@ -1881,7 +1881,6 @@ public final class client extends Applet_Sub1 {
                 if (Loader.trace) {
                     exception.printStackTrace();
                 }
-                /* empty */
             }
         }
         super.method87((byte) -28);

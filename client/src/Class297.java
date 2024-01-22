@@ -97,6 +97,9 @@ final class Class297 implements Runnable {
                 int i = class144.anInt1994;
                 if (i == 1) {
                     if (aLong3781 > Class62.method599(-53)) throw new IOException();
+                    if (Loader.debug) {
+                        System.out.println("Connect: " + class144.anObject1996 + " " + class144.anInt2000);
+                    }
                     class144.anObject1998 = new Socket(InetAddress.getByName((String) (class144.anObject1996)), class144.anInt2000);
                 } else if (i == 22) {
                     if (aLong3781 > Class62.method599(-92)) throw new IOException();
