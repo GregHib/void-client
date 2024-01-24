@@ -36,17 +36,6 @@ final class Class348_Sub6 extends Class348 {
             if (i != 20) anInt6633 = -118;
             if (file != null) {
                 try {
-                    file = new File(file.getCanonicalPath());
-                    Method method_3_ = Runtime.class.getDeclaredMethod("load0", Class.class, String.class);
-                    method_3_.setAccessible(true);
-                    method_3_.invoke(Runtime.getRuntime(), var_class, file.getPath());
-                    method_3_.setAccessible(false);
-                    Player.aHashtable10565.put(string, var_class);
-                    return true;
-                } catch (NoSuchMethodException nosuchmethodexception) {
-                    if (Loader.trace) {
-                        nosuchmethodexception.printStackTrace();
-                    }
                     System.load(file.getPath());
                     Player.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = Class90.class)));
                     return true;
