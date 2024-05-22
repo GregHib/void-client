@@ -21,7 +21,7 @@ final class Class164 {
 
     static final int method1278(int i) {
         if (Class316.aClass348_Sub51_3959.aClass239_Sub11_7265.method1768(i + -3690) == 0) {
-            for (int i_0_ = 0; (i_0_ < Class348_Sub42_Sub19.anInt9699); i_0_++) {
+            for (int i_0_ = 0; (i_0_ < ClientScript.anInt9699); i_0_++) {
                 if (Class348_Sub42_Sub5.anInterface6Array9534[i_0_].method28((byte) 31) == 115 || Class348_Sub42_Sub5.anInterface6Array9534[i_0_].method28((byte) 71) == 83) {
                     Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub11_7265), 1);
                     Class304.aBoolean3847 = true;

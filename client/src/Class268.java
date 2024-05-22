@@ -100,7 +100,7 @@ final class Class268 {
             float f = (-((float) ((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)) / 1000000.0F) + 1.0F);
             Class286_Sub4.anInt6246 = (int) ((float) Class318_Sub1_Sub3_Sub2.anInt10047 + f * (float) (-Class318_Sub1_Sub3_Sub2.anInt10047 + Class286_Sub4.anInt6246));
             Class305.anInt3855 = (int) ((float) (-Class5_Sub3.anInt8368 + Class305.anInt3855) * f + (float) Class5_Sub3.anInt8368);
-            Class348_Sub42_Sub19.anInt9701 = (int) ((float) Class283.anInt3662 + (float) (Class348_Sub42_Sub19.anInt9701 - Class283.anInt3662) * f);
+            ClientScript.anInt9701 = (int) ((float) Class283.anInt3662 + (float) (ClientScript.anInt9701 - Class283.anInt3662) * f);
             Class59_Sub2_Sub2.anInt8685 = (int) ((float) Class359.anInt4424 + f * (float) (-Class359.anInt4424 + Class59_Sub2_Sub2.anInt8685));
             int i_8_ = Class5.anInt4638 - Class253.anInt3253;
             if (i_8_ <= 8192) {

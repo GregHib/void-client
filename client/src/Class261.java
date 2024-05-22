@@ -138,7 +138,7 @@ final class Class261 {
                 int i_16_ = Class258_Sub4.aClass373_8552.method3594((byte) 116);
                 boolean bool = false;
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
-                    if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (Class177.anInt4669 + Class373.anInt4534 + 10 < i_16_)) Class348_Sub42_Sub19.method3277((byte) -48);
+                    if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (Class177.anInt4669 + Class373.anInt4534 + 10 < i_16_)) ClientScript.method3277((byte) -48);
                     else bool = true;
                 }
                 if (!bool) {

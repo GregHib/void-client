@@ -51,52 +51,52 @@ final class Class153 {
         }
     }
 
-    static final Class348_Sub42_Sub19 method1223(int i, int i_5_, int i_6_, Class273 class273) {
+    static final ClientScript method1223(int i, int i_5_, int i_6_, Class273 class273) {
         anInt2086++;
         int i_7_ = class273.anInt5167 | i << 10;
-        Class348_Sub42_Sub19 class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -91));
-        if (class348_sub42_sub19 != null) return class348_sub42_sub19;
+        ClientScript clientScript = ((ClientScript) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -91));
+        if (clientScript != null) return clientScript;
         byte[] is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -90)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
-                class348_sub42_sub19 = Class318_Sub4.method2502(is, -85);
+                clientScript = Class318_Sub4.method2502(is, -85);
             } catch (Exception exception) {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
-            class348_sub42_sub19.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << 16, class348_sub42_sub19, -1);
-            return class348_sub42_sub19;
+            clientScript.aClass273_9691 = class273;
+            Class322.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
+            return clientScript;
         }
         i_7_ = class273.anInt5167 | 65536 + i_5_ << 10;
-        class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -31));
-        if (class348_sub42_sub19 != null) return class348_sub42_sub19;
+        clientScript = ((ClientScript) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -31));
+        if (clientScript != null) return clientScript;
         is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -107)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
-                class348_sub42_sub19 = Class318_Sub4.method2502(is, -101);
+                clientScript = Class318_Sub4.method2502(is, -101);
             } catch (Exception exception) {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
-            class348_sub42_sub19.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << 16, class348_sub42_sub19, -1);
-            return class348_sub42_sub19;
+            clientScript.aClass273_9691 = class273;
+            Class322.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
+            return clientScript;
         }
         i_7_ = class273.anInt5167 | 0x3fffc00;
-        class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -107));
-        if (class348_sub42_sub19 != null) return class348_sub42_sub19;
+        clientScript = ((ClientScript) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -107));
+        if (clientScript != null) return clientScript;
         is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) 104)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
-                class348_sub42_sub19 = Class318_Sub4.method2502(is, -110);
+                clientScript = Class318_Sub4.method2502(is, -110);
             } catch (Exception exception) {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
-            class348_sub42_sub19.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << 16, class348_sub42_sub19, -1);
-            return class348_sub42_sub19;
+            clientScript.aClass273_9691 = class273;
+            Class322.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
+            return clientScript;
         }
         if (i_6_ != 96837648) return null;
         return null;

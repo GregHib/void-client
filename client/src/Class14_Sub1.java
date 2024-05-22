@@ -157,13 +157,13 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         if (i_23_ < 1024) i_23_ = 1024;
         int i_24_ = 0x3fff & (int) (-2607.5945876176133 * Math.atan2(i_19_, i_21_));
         if (i_23_ > 3072) i_23_ = 3072;
-        if (i_23_ > Class348_Sub42_Sub19.anInt9701) {
-            Class348_Sub42_Sub19.anInt9701 += (Class239_Sub12.anInt5973 * (i_23_ - Class348_Sub42_Sub19.anInt9701 >> 3) / 1000) + Class367_Sub11.anInt7403 << 3;
-            if (i_23_ < Class348_Sub42_Sub19.anInt9701) Class348_Sub42_Sub19.anInt9701 = i_23_;
+        if (i_23_ > ClientScript.anInt9701) {
+            ClientScript.anInt9701 += (Class239_Sub12.anInt5973 * (i_23_ - ClientScript.anInt9701 >> 3) / 1000) + Class367_Sub11.anInt7403 << 3;
+            if (i_23_ < ClientScript.anInt9701) ClientScript.anInt9701 = i_23_;
         }
-        if (Class348_Sub42_Sub19.anInt9701 > i_23_) {
-            Class348_Sub42_Sub19.anInt9701 -= (((-i_23_ + Class348_Sub42_Sub19.anInt9701 >> 3) * Class239_Sub12.anInt5973 / 1000) + Class367_Sub11.anInt7403) << 3;
-            if (Class348_Sub42_Sub19.anInt9701 < i_23_) Class348_Sub42_Sub19.anInt9701 = i_23_;
+        if (ClientScript.anInt9701 > i_23_) {
+            ClientScript.anInt9701 -= (((-i_23_ + ClientScript.anInt9701 >> 3) * Class239_Sub12.anInt5973 / 1000) + Class367_Sub11.anInt7403) << 3;
+            if (ClientScript.anInt9701 < i_23_) ClientScript.anInt9701 = i_23_;
         }
         int i_25_ = -Class5.anInt4638 + i_24_;
         if (i_25_ > 8192) i_25_ -= 16384;

@@ -37,19 +37,19 @@ class Class328 {
         }
     }
 
-    static final Class348_Sub42_Sub19 method2609(int i, int i_2_) {
+    static final ClientScript method2609(int i, int i_2_) {
         anInt4101++;
-        Class348_Sub42_Sub19 class348_sub42_sub19 = ((Class348_Sub42_Sub19) Class322.aClass308_4036.method2302(i_2_, (byte) -68));
-        if (class348_sub42_sub19 != null) return class348_sub42_sub19;
+        ClientScript clientScript = ((ClientScript) Class322.aClass308_4036.method2302(i_2_, (byte) -68));
+        if (clientScript != null) return clientScript;
         byte[] is = Class113.CLIENT_SCRIPTS.method410(-1860, i_2_, 0);
         if (is == null || is.length <= 1) return null;
         try {
-            class348_sub42_sub19 = Class318_Sub4.method2502(is, -104);
+            clientScript = Class318_Sub4.method2502(is, -104);
         } catch (Exception exception) {
             throw new RuntimeException(exception.getMessage() + " S: " + i_2_);
         }
         if (i > -103) return null;
-        Class322.aClass308_4036.method2305(i_2_, class348_sub42_sub19, -1);
-        return class348_sub42_sub19;
+        Class322.aClass308_4036.method2305(i_2_, clientScript, -1);
+        return clientScript;
     }
 }

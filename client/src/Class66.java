@@ -4,6 +4,7 @@
 
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -39,13 +40,13 @@ final class Class66 {
     private static int anInt1177;
 
     static final void method701(Class273 class273, int i, int i_0_) {
-        Class348_Sub42_Sub19 class348_sub42_sub19 = Class153.method1223(i, i_0_, 96837648, class273);
-        if (class348_sub42_sub19 != null) {
+        ClientScript clientScript = Class153.method1223(i, i_0_, 96837648, class273);
+        if (clientScript != null) {
             anIntArray1164 = (new int
-                    [class348_sub42_sub19.anInt9688]);
+                    [clientScript.intVariableCount]);
             aStringArray1155 = (new String
-                    [class348_sub42_sub19.anInt9689]);
-            if ((class348_sub42_sub19.aClass273_9691 == Class90.aClass273_1512) || (class348_sub42_sub19.aClass273_9691) == Class59_Sub1_Sub2.aClass273_8664 || (class348_sub42_sub19.aClass273_9691) == Class77.aClass273_1298) {
+                    [clientScript.stringVariableCount]);
+            if ((clientScript.aClass273_9691 == Class90.aClass273_1512) || (clientScript.aClass273_9691) == Class59_Sub1_Sub2.aClass273_8664 || (clientScript.aClass273_9691) == Class77.aClass273_1298) {
                 int i_1_ = 0;
                 int i_2_ = 0;
                 if (Class168.aClass46_2249 != null) {
@@ -55,7 +56,7 @@ final class Class66 {
                 anIntArray1164[0] = Class258_Sub4.aClass373_8552.method3597(true) - i_1_;
                 anIntArray1164[1] = (Class258_Sub4.aClass373_8552.method3594((byte) 80) - i_2_);
             }
-            method711(class348_sub42_sub19, 200000);
+            method711(clientScript, 200000, -1);
         }
     }
 
@@ -2610,7 +2611,8 @@ final class Class66 {
                         class46s[i_250_] = class46.aClass46Array798[i_250_];
                     class46.aClass46Array798 = class46s;
                 }
-                if (i_249_ > 0 && (class46.aClass46Array798[i_249_ - 1] == null)) throw new RuntimeException("Gap at:" + (i_249_ - 1));
+                if (i_249_ > 0 && (class46.aClass46Array798[i_249_ - 1] == null))
+                    throw new RuntimeException("Gap at:" + (i_249_ - 1));
                 Class46 class46_251_ = new Class46();
                 class46_251_.anInt774 = i_248_;
                 class46_251_.anInt834 = class46_251_.anInt830 = class46.anInt830;
@@ -3606,7 +3608,8 @@ final class Class66 {
                 if (i == 2801) {
                     int i_303_ = anIntArray1149[--anInt1173];
                     i_303_--;
-                    if (class46.aStringArray833 == null || i_303_ >= class46.aStringArray833.length || class46.aStringArray833[i_303_] == null) aStringArray1152[anInt1170++] = "";
+                    if (class46.aStringArray833 == null || i_303_ >= class46.aStringArray833.length || class46.aStringArray833[i_303_] == null)
+                        aStringArray1152[anInt1170++] = "";
                     else {
                         aStringArray1152[anInt1170++] = class46.aStringArray833[i_303_];
                         return;
@@ -4038,11 +4041,14 @@ final class Class66 {
                     int i_352_ = anIntArray1149[anInt1173 + 2];
                     int i_353_ = anIntArray1149[anInt1173 + 3];
                     Class117 class117 = Class348_Sub7.aClass33_6653.method337(true, i_352_);
-                    if (class117.aChar1778 != i_350_ || class117.aChar1779 != i_351_) throw new RuntimeException("C3408-1 " + i_352_ + "-" + i_353_);
-                    if (i_351_ == 115) aStringArray1152[anInt1170++] = class117.method1074(i_353_, 119);
-                    else {
+                    if (class117.aChar1778 != i_350_ || class117.aChar1779 != i_351_)
+                        throw new RuntimeException("C3408-1 " + i_352_ + "-" + i_353_);
+                    if (i_351_ == 115) {
+                        aStringArray1152[anInt1170++] = class117.method1074(i_353_, 119);
+                        System.out.println("DataMap:" + ((char) i_350_) + ", " + ((char) i_351_) + ", " + i_352_ + ", " + i_353_ + " = " + aStringArray1152[anInt1170 - 1]);
+                    } else {
                         anIntArray1149[anInt1173++] = class117.method1073(false, i_353_);
-                        return;
+                        System.out.println("DataMap:" + ((char) i_350_) + ", " + ((char) i_351_) + ", " + i_352_ + ", " + i_353_ + " = " + anIntArray1149[anInt1173 - 1]);
                     }
                     return;
                 }
@@ -4878,9 +4884,12 @@ final class Class66 {
                     int i_482_ = anIntArray1149[anInt1173];
                     int i_483_ = anIntArray1149[anInt1173 + 1];
                     Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_483_, 28364);
-                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class136.aClass65_4787.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_));
-                    else {
+                    if (class254.method1925(false)) {
+                        aStringArray1152[anInt1170++] = (Class136.aClass65_4787.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_));
+                        System.out.println("AttributeMap: " + i_482_ + ", " + i_483_ + " = " + aStringArray1152[anInt1170 - 1]);
+                    } else {
                         anIntArray1149[anInt1173++] = (Class136.aClass65_4787.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, (byte) 124));
+                        System.out.println("AttributeMap: " + i_482_ + ", " + i_483_ + " = " + anIntArray1149[anInt1173 - 1]);
                         return;
                     }
                     return;
@@ -4908,12 +4917,12 @@ final class Class66 {
         throw new IllegalStateException(String.valueOf(i));
     }
 
-    private static final void method711(Class348_Sub42_Sub19 class348_sub42_sub19, int i) {
+    private static final void method711(ClientScript clientScript, int i, int script) {
         anInt1173 = 0;
         anInt1170 = 0;
         int i_488_ = -1;
-        int[] is = class348_sub42_sub19.anIntArray9696;
-        int[] is_489_ = class348_sub42_sub19.anIntArray9694;
+        int[] is = clientScript.instructions;
+        int[] is_489_ = clientScript.intOperands;
         int i_490_ = -1;
         anInt1154 = 0;
         try {
@@ -4929,7 +4938,7 @@ final class Class66 {
                     } else if (i_490_ == 2) {
                         int i_493_ = is_489_[i_488_];
                         Class318_Sub1_Sub3_Sub3.aClass170_10209.method1306((byte) -78, anIntArray1149[--anInt1173], i_493_);
-                    } else if (i_490_ == 3) aStringArray1152[anInt1170++] = (class348_sub42_sub19.aStringArray9692[i_488_]);
+                    } else if (i_490_ == 3) aStringArray1152[anInt1170++] = (clientScript.stringOperands[i_488_]);
                     else if (i_490_ == 6) i_488_ += is_489_[i_488_];
                     else if (i_490_ == 7) {
                         anInt1173 -= 2;
@@ -4946,9 +4955,9 @@ final class Class66 {
                     } else if (i_490_ == 21) {
                         if (anInt1154 == 0) return;
                         Class184 class184 = aClass184Array1168[--anInt1154];
-                        class348_sub42_sub19 = class184.aClass348_Sub42_Sub19_2474;
-                        is = (class348_sub42_sub19.anIntArray9696);
-                        is_489_ = (class348_sub42_sub19.anIntArray9694);
+                        clientScript = class184.aClientScript_2474;
+                        is = (clientScript.instructions);
+                        is_489_ = (clientScript.intOperands);
                         i_488_ = class184.anInt2477;
                         anIntArray1164 = class184.anIntArray2468;
                         aStringArray1155 = class184.aStringArray2473;
@@ -4977,27 +4986,27 @@ final class Class66 {
                     else if (i_490_ == 39) anInt1170--;
                     else if (i_490_ == 40) {
                         int i_497_ = is_489_[i_488_];
-                        Class348_Sub42_Sub19 class348_sub42_sub19_498_ = Class328.method2609(-114, i_497_);
-                        if (class348_sub42_sub19_498_ == null) throw new RuntimeException();
-                        int[] is_499_ = new int[class348_sub42_sub19_498_.anInt9688];
+                        ClientScript clientScript_498_ = Class328.method2609(-114, i_497_);
+                        if (clientScript_498_ == null) throw new RuntimeException();
+                        int[] is_499_ = new int[clientScript_498_.intVariableCount];
                         String[] strings = (new String
-                                [class348_sub42_sub19_498_.anInt9689]);
-                        for (int i_500_ = 0; i_500_ < class348_sub42_sub19_498_.anInt9697; i_500_++)
-                            is_499_[i_500_] = (anIntArray1149[anInt1173 - (class348_sub42_sub19_498_.anInt9697) + i_500_]);
-                        for (int i_501_ = 0; i_501_ < class348_sub42_sub19_498_.anInt9695; i_501_++)
-                            strings[i_501_] = (aStringArray1152[anInt1170 - (class348_sub42_sub19_498_.anInt9695) + i_501_]);
-                        anInt1173 -= class348_sub42_sub19_498_.anInt9697;
-                        anInt1170 -= class348_sub42_sub19_498_.anInt9695;
+                                [clientScript_498_.stringVariableCount]);
+                        for (int i_500_ = 0; i_500_ < clientScript_498_.intArgumentCount; i_500_++)
+                            is_499_[i_500_] = (anIntArray1149[anInt1173 - (clientScript_498_.intArgumentCount) + i_500_]);
+                        for (int i_501_ = 0; i_501_ < clientScript_498_.stringArgumentCount; i_501_++)
+                            strings[i_501_] = (aStringArray1152[anInt1170 - (clientScript_498_.stringArgumentCount) + i_501_]);
+                        anInt1173 -= clientScript_498_.intArgumentCount;
+                        anInt1170 -= clientScript_498_.stringArgumentCount;
                         Class184 class184 = new Class184();
-                        class184.aClass348_Sub42_Sub19_2474 = class348_sub42_sub19;
+                        class184.aClientScript_2474 = clientScript;
                         class184.anInt2477 = i_488_;
                         class184.anIntArray2468 = anIntArray1164;
                         class184.aStringArray2473 = aStringArray1155;
                         if (anInt1154 >= aClass184Array1168.length) throw new RuntimeException();
                         aClass184Array1168[anInt1154++] = class184;
-                        class348_sub42_sub19 = class348_sub42_sub19_498_;
-                        is = (class348_sub42_sub19.anIntArray9696);
-                        is_489_ = (class348_sub42_sub19.anIntArray9694);
+                        clientScript = clientScript_498_;
+                        is = (clientScript.instructions);
+                        is_489_ = (clientScript.intOperands);
                         i_488_ = -1;
                         anIntArray1164 = is_499_;
                         aStringArray1155 = strings;
@@ -5037,7 +5046,7 @@ final class Class66 {
                         Class258_Sub2.aStringArray8532[i_512_] = aStringArray1152[--anInt1170];
                         Class57.method529(i_512_, true);
                     } else if (i_490_ == 51) {
-                        Class356 class356 = (class348_sub42_sub19.aClass356Array9693[is_489_[i_488_]]);
+                        Class356 class356 = (clientScript.aClass356Array9693[is_489_[i_488_]]);
                         Class348_Sub35 class348_sub35 = ((Class348_Sub35) class356.method3480(anIntArray1149[--anInt1173], -6008));
                         if (class348_sub35 != null) i_488_ += class348_sub35.anInt6976;
                     } else if (i_490_ == 86) {
@@ -5057,19 +5066,19 @@ final class Class66 {
             }
             throw new IllegalStateException("Command: " + i_490_);
         } catch (Exception exception) {
-            if (class348_sub42_sub19.aString9690 == null) {
+            if (clientScript.name == null) {
                 StringBuffer stringbuffer = new StringBuffer(30);
-                stringbuffer.append("CS2: ").append(class348_sub42_sub19.aLong4291).append(" ");
+                stringbuffer.append("CS2: ").append(clientScript.aLong4291).append(" ");
                 for (int i_514_ = anInt1154 - 1; i_514_ >= 0; i_514_--)
-                    stringbuffer.append("v: ").append(aClass184Array1168[i_514_].aClass348_Sub42_Sub19_2474.aLong4291).append(" ");
+                    stringbuffer.append("v: ").append(aClass184Array1168[i_514_].aClientScript_2474.aLong4291).append(" ");
                 stringbuffer.append("op: ").append(i_490_);
                 Class156.method1242(stringbuffer.toString(), exception, 15004);
             } else {
-                Class59.method544(("Clientscript error in: " + class348_sub42_sub19.aString9690), false, 4);
+                Class59.method544(("Clientscript error in: " + clientScript.name), false, 4);
                 StringBuffer stringbuffer = new StringBuffer(30);
-                stringbuffer.append("Clientscript error in: ").append(class348_sub42_sub19.aString9690).append("\n");
+                stringbuffer.append("Clientscript error in: ").append(clientScript.name).append("\n");
                 for (int i_513_ = anInt1154 - 1; i_513_ >= 0; i_513_--)
-                    stringbuffer.append("via: ").append(aClass184Array1168[i_513_].aClass348_Sub42_Sub19_2474.aString9690).append("\n");
+                    stringbuffer.append("via: ").append(aClass184Array1168[i_513_].aClientScript_2474.name).append("\n");
                 stringbuffer.append("Op: ").append(i_490_).append("\n");
                 String string = exception.getMessage();
                 if (string != null && string.length() > 0) stringbuffer.append("Message: ").append(string).append("\n");
@@ -5082,24 +5091,27 @@ final class Class66 {
     private static final void method712(Class348_Sub36 class348_sub36, int i) {
         Object[] objects = class348_sub36.anObjectArray6987;
         int i_515_ = ((Integer) objects[0]).intValue();
-        Class348_Sub42_Sub19 class348_sub42_sub19 = Class328.method2609(-122, i_515_);
-        if (class348_sub42_sub19 != null) {
-            anIntArray1164 = (new int
-                    [class348_sub42_sub19.anInt9688]);
+        ClientScript clientScript = Class328.method2609(-122, i_515_);
+        boolean print = false;
+        if (clientScript != null) {
+            anIntArray1164 = (new int[clientScript.intVariableCount]);
             int i_516_ = 0;
-            aStringArray1155 = (new String
-                    [class348_sub42_sub19.anInt9689]);
+            aStringArray1155 = (new String[clientScript.stringVariableCount]);
             int i_517_ = 0;
             for (int i_518_ = 1; i_518_ < objects.length; i_518_++) {
                 if (objects[i_518_] instanceof Integer) {
                     int i_519_ = ((Integer) objects[i_518_]).intValue();
                     if (i_519_ == -2147483647) i_519_ = class348_sub36.anInt6984;
                     if (i_519_ == -2147483646) i_519_ = class348_sub36.anInt6995;
-                    if (i_519_ == -2147483645) i_519_ = ((class348_sub36.aClass46_6989 != null) ? class348_sub36.aClass46_6989.anInt830 : -1);
+                    if (i_519_ == -2147483645)
+                        i_519_ = ((class348_sub36.aClass46_6989 != null) ? class348_sub36.aClass46_6989.anInt830 : -1);
                     if (i_519_ == -2147483644) i_519_ = class348_sub36.anInt6986;
-                    if (i_519_ == -2147483643) i_519_ = ((class348_sub36.aClass46_6989 != null) ? class348_sub36.aClass46_6989.anInt704 : -1);
-                    if (i_519_ == -2147483642) i_519_ = ((class348_sub36.aClass46_6983 != null) ? class348_sub36.aClass46_6983.anInt830 : -1);
-                    if (i_519_ == -2147483641) i_519_ = ((class348_sub36.aClass46_6983 != null) ? class348_sub36.aClass46_6983.anInt704 : -1);
+                    if (i_519_ == -2147483643)
+                        i_519_ = ((class348_sub36.aClass46_6989 != null) ? class348_sub36.aClass46_6989.anInt704 : -1);
+                    if (i_519_ == -2147483642)
+                        i_519_ = ((class348_sub36.aClass46_6983 != null) ? class348_sub36.aClass46_6983.anInt830 : -1);
+                    if (i_519_ == -2147483641)
+                        i_519_ = ((class348_sub36.aClass46_6983 != null) ? class348_sub36.aClass46_6983.anInt704 : -1);
                     if (i_519_ == -2147483640) i_519_ = class348_sub36.anInt6991;
                     if (i_519_ == -2147483639) i_519_ = class348_sub36.anInt6982;
                     anIntArray1164[i_516_++] = i_519_;
@@ -5110,7 +5122,7 @@ final class Class66 {
                 }
             }
             anInt1177 = class348_sub36.anInt6988;
-            method711(class348_sub42_sub19, i);
+            method711(clientScript, i, i_515_);
         }
     }
 

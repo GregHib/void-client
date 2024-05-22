@@ -60,7 +60,7 @@ final class Class348_Sub21 extends Class348 {
             float f_22_ = -1.0F * (-fs[1] + fs_10_[1]);
             float f_23_ = -fs[2] + fs_10_[2];
             double d = Math.sqrt(f_21_ * f_21_ + f_23_ * f_23_);
-            Class348_Sub42_Sub19.anInt9701 = 0x3fff & (int) (2607.5945876176133 * Math.atan2(f_22_, d));
+            ClientScript.anInt9701 = 0x3fff & (int) (2607.5945876176133 * Math.atan2(f_22_, d));
             Class5.anInt4638 = 0x3fff & (int) (2607.5945876176133 * -Math.atan2(f_21_, f_23_));
             Class338.anInt4186 = ((Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][i_1_][3]) + (((-(Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][i_1_][3]) + (Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775][2 + i_1_][3])) * Class117.anInt1780) >> 16));
         }

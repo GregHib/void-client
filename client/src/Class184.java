@@ -9,7 +9,7 @@ final class Class184 {
     static int[] anIntArray2471 = new int[14];
     static int anInt2472;
     String[] aStringArray2473;
-    Class348_Sub42_Sub19 aClass348_Sub42_Sub19_2474;
+    ClientScript aClientScript_2474;
     static int anInt2475;
     static int anInt2476;
     int anInt2477 = -1;

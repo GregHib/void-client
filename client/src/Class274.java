@@ -202,7 +202,7 @@ final class Class274 {
         Class354.anIntArrayArrayArray4356 = null;
         int i_6_ = 36 % ((-81 - i) / 38);
         Class14.anIntArray5091 = null;
-        Class348_Sub42_Sub19.aClass338Array9700 = null;
+        ClientScript.aClass338Array9700 = null;
         Class306.anInt3872 = Class86.anInt1480 = -1;
     }
 

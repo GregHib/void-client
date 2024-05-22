@@ -245,7 +245,7 @@ final class Class17 {
         Class59_Sub2_Sub2.anInt8685 = i_38_ - i_49_;
         Class305.anInt3855 = -i_48_ + i_36_;
         Class286_Sub4.anInt6246 = -i_47_ + i_41_;
-        Class348_Sub42_Sub19.anInt9701 = i;
+        ClientScript.anInt9701 = i;
     }
 
     final Class64 method269(int i, Class64 class64, int i_50_, int i_51_, int i_52_, int i_53_) {

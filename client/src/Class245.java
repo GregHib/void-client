@@ -35,7 +35,7 @@ final class Class245 {
             for (int i_2_ = 0; i_2_ < Class17.anIntArray256.length; i_2_++)
                 Class9.aHa171.method3660((Class17.anIntArray256[i_2_] + Class345.anIntArray4271[i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183[3] - Class348_Sub40_Sub10.anIntArray9183[1]), Class348_Sub40_Sub10.anIntArray9183[1], true);
             for (int i_3_ = 0; i_3_ < Class348_Sub42_Sub10.anInt9577; i_3_++) {
-                Class338 class338 = Class348_Sub42_Sub19.aClass338Array9700[i_3_];
+                Class338 class338 = ClientScript.aClass338Array9700[i_3_];
                 Class9.aHa171.H(class338.anIntArray4187[0], class338.anIntArray4191[0], class338.anIntArray4184[0], Class177.anIntArray4670);
                 Class9.aHa171.H(class338.anIntArray4187[1], class338.anIntArray4191[1], class338.anIntArray4184[1], Class13.anIntArray222);
                 Class9.aHa171.H(class338.anIntArray4187[2], class338.anIntArray4191[2], class338.anIntArray4184[2], anIntArray3169);

@@ -102,7 +102,7 @@ final class Class38 {
             if (Class284.anInt3676 < 0) Class284.anInt3676 = 0;
         }
         if (i >= 124) {
-            for (int i_6_ = 0; (Class348_Sub42_Sub19.anInt9699 > i_6_); i_6_++) {
+            for (int i_6_ = 0; (ClientScript.anInt9699 > i_6_); i_6_++) {
                 Interface6 interface6 = Class348_Sub42_Sub5.anInterface6Array9534[i_6_];
                 int i_7_ = interface6.method30(false);
                 char c = interface6.method28((byte) 46);
@@ -159,7 +159,7 @@ final class Class38 {
                     }
                 } else Class59_Sub1.method555(true, 0);
             }
-            Class348_Sub42_Sub19.anInt9699 = 0;
+            ClientScript.anInt9699 = 0;
             Class253.anInt3246 = 0;
             Class354.method3466(89);
         }

@@ -2977,7 +2977,7 @@ final class Class130_Sub1 extends Class130 {
         Class300.anInt3816 = 0;
         Class311.anInt3904 = 0;
         Class251.anInt3231 = 0;
-        Class348_Sub42_Sub19.anInt9698 = 0;
+        ClientScript.anInt9698 = 0;
         Class318_Sub1_Sub2.anInt8733 = 0;
         Class167.anInt2193 = 0;
         Class367.anInt4485 = 0;

@@ -54,16 +54,16 @@ final class OutputStream_Sub1 extends OutputStream {
             int i_8_ = Class286_Sub4.anInt6246;
             int i_9_ = Class305.anInt3855;
             int i_10_ = Class59_Sub2_Sub2.anInt8685;
-            int i_11_ = Class348_Sub42_Sub19.anInt9701;
+            int i_11_ = ClientScript.anInt9701;
             int i_12_ = Class5.anInt4638;
             for (int i_13_ = 0; i_13_ < 5; i_13_++) {
                 if (Class181.aBooleanArray2374[i_13_]) {
                     int i_14_ = (int) ((Math.random() * (double) ((Class275.anIntArray3552[i_13_] * 2) - -1)) - (double) Class275.anIntArray3552[i_13_] + (Math.sin((double) (Class318_Sub1_Sub1_Sub2.anIntArray9981[i_13_]) * ((double) (Class338.anIntArray4196[i_13_]) / 100.0)) * (double) (Class255.anIntArray3273[i_13_])));
                     if (i_13_ == 4) {
-                        Class348_Sub42_Sub19.anInt9701 += i_14_;
-                        if (Class348_Sub42_Sub19.anInt9701 >= 1024) {
-                            if (Class348_Sub42_Sub19.anInt9701 > 3072) Class348_Sub42_Sub19.anInt9701 = 3072;
-                        } else Class348_Sub42_Sub19.anInt9701 = 1024;
+                        ClientScript.anInt9701 += i_14_;
+                        if (ClientScript.anInt9701 >= 1024) {
+                            if (ClientScript.anInt9701 > 3072) ClientScript.anInt9701 = 3072;
+                        } else ClientScript.anInt9701 = 1024;
                     }
                     if (i_13_ == 0) Class286_Sub4.anInt6246 += i_14_ << 2;
                     if (i_13_ == 3) Class5.anInt4638 = 0x3fff & i_14_ + Class5.anInt4638;
@@ -86,19 +86,19 @@ final class OutputStream_Sub1 extends OutputStream {
             } else {
                 Class348_Sub8.aHa6654.ya();
                 int i_15_ = Class187.anInt2500;
-                if (Class259.aClass305_3304 != null) Class259.aClass305_3304.method2293(Class185.anInt2481 << 3, Class348_Sub8.aHa6654, (byte) -72, i_1_, i_0_, i_3_, Class5.anInt4638, Class348_Sub42_Sub19.anInt9701, i_15_, i_2_);
+                if (Class259.aClass305_3304 != null) Class259.aClass305_3304.method2293(Class185.anInt2481 << 3, Class348_Sub8.aHa6654, (byte) -72, i_1_, i_0_, i_3_, Class5.anInt4638, ClientScript.anInt9701, i_15_, i_2_);
                 else Class348_Sub8.aHa6654.GA(i_15_);
             }
             Class369_Sub1.method3570(false);
             if (i >= 80) {
-                Class157.aClass101_2123.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -Class348_Sub42_Sub19.anInt9701 & 0x3fff, -Class5.anInt4638 & 0x3fff, 0x3fff & -Class338.anInt4186);
+                Class157.aClass101_2123.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -ClientScript.anInt9701 & 0x3fff, -Class5.anInt4638 & 0x3fff, 0x3fff & -Class338.anInt4186);
                 Class348_Sub8.aHa6654.method3638(Class157.aClass101_2123);
                 Class348_Sub8.aHa6654.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 << 1, Class97.anInt1550 << 1);
                 Class30.method319(Class97.anInt1550 << 1, Class97.anInt1550 << 1, (byte) -18, i_1_ + i_0_ / 2, i_3_ + i_2_ / 2);
-                Class348_Sub42_Sub20.method3282(0x3fff & -(Class348_Sub42_Sub19.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 & 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 & 0x3fff);
+                Class348_Sub42_Sub20.method3282(0x3fff & -(ClientScript.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 & 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 & 0x3fff);
                 byte i_16_ = (Class316.aClass348_Sub51_3959.aClass239_Sub14_7264.method1778(-32350) != 2 ? (byte) 1 : (byte) Class239_Sub15.anInt6006);
                 if (Class59_Sub1.aBoolean5300) {
-                    Class21.method289(-15902, 0x3fff & -Class5.anInt4638, -Class338.anInt4186 & 0x3fff, (-Class348_Sub42_Sub19.anInt9701 & 0x3fff));
+                    Class21.method289(-15902, 0x3fff & -Class5.anInt4638, -Class338.anInt4186 & 0x3fff, (-ClientScript.anInt9701 & 0x3fff));
                     Class230.method1634(Class64.anIntArray1127, -2, Class289.aByteArrayArrayArray3700, (Class132.aPlayer_1907.y) >> 9, (Class132.aPlayer_1907.plane) - -1, Class327.anIntArray4097, Class286_Sub4.anInt6246, Class59_Sub2_Sub2.anInt8685, Class316.aClass348_Sub51_3959.aClass239_Sub1_7246.method1720(-32350) == 0, Class305.anInt3855, (Class132.aPlayer_1907.x) >> 9, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, i_16_, Class56.anIntArray1045, Class367_Sub11.anInt7396, true, Class132.anInt1906);
                 } else
                     Class258_Sub1.method1960(Class367_Sub11.anInt7396, Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, Class289.aByteArrayArrayArray3700, Class327.anIntArray4097, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, Class56.anIntArray1045, Class64.anIntArray1127, (Class132.aPlayer_1907.plane) - -1, i_16_, (Class132.aPlayer_1907.x) >> 9, (Class132.aPlayer_1907.y) >> 9, Class316.aClass348_Sub51_3959.aClass239_Sub1_7246.method1720(-32350) == 0, true, !Class305.aBoolean3870 ? -1 : Class132.anInt1906, 0, false);
@@ -111,7 +111,7 @@ final class OutputStream_Sub1 extends OutputStream {
                 }
                 Class348_Sub42_Sub11.method3223();
                 Class286_Sub4.anInt6246 = i_8_;
-                Class348_Sub42_Sub19.anInt9701 = i_11_;
+                ClientScript.anInt9701 = i_11_;
                 Class5.anInt4638 = i_12_;
                 Class305.anInt3855 = i_9_;
                 Class59_Sub2_Sub2.anInt8685 = i_10_;

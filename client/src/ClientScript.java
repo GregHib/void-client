@@ -2,18 +2,18 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub19 extends Class348_Sub42 {
+final class ClientScript extends Class348_Sub42 {
     static Class351 aClass351_9687 = new Class351(14, -1);
-    int anInt9688;
-    int anInt9689;
-    String aString9690;
+    int intVariableCount;
+    int stringVariableCount;
+    String name;
     Class273 aClass273_9691;
-    String[] aStringArray9692;
+    String[] stringOperands;
     Class356[] aClass356Array9693;
-    int[] anIntArray9694;
-    int anInt9695;
-    int[] anIntArray9696;
-    int anInt9697;
+    int[] intOperands;
+    int stringArgumentCount;
+    int[] instructions;
+    int intArgumentCount;
     static int anInt9698;
     static int anInt9699 = 0;
     static Class338[] aClass338Array9700;
@@ -71,7 +71,7 @@ final class Class348_Sub42_Sub19 extends Class348_Sub42 {
         aClass338Array9700 = null;
     }
 
-    public Class348_Sub42_Sub19() {
+    public ClientScript() {
         /* empty */
     }
 }

@@ -62,7 +62,7 @@ final class Class286_Sub2 extends Class286 {
     static final void method2146(byte i) {
         int i_6_ = 34 % ((i - 32) / 38);
         anInt6213++;
-        Class348_Sub42_Sub19.method3277((byte) -48);
+        ClientScript.method3277((byte) -48);
         Class5_Sub1.aBoolean8335 = false;
         Class13.method226(Class135_Sub1.anInt4717, Class63.anInt1117, Class348_Sub42_Sub5.anInt9532, 0, Class237_Sub1.anInt5819);
     }

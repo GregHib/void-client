@@ -37,7 +37,7 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1 {
         if (Class348_Sub40_Sub21.anInt9282 == 2) {
             Class5.anInt4638 = i_1_;
             Class338.anInt4186 = i_2_;
-            Class348_Sub42_Sub19.anInt9701 = i;
+            ClientScript.anInt9701 = i;
         }
         Class314.aFloat3938 = (float) i_1_;
         Class76.aFloat1287 = (float) i;

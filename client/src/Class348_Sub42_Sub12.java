@@ -73,11 +73,11 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
             int i_12_ = -Class305.anInt3855 + i_10_;
             int i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685;
             int i_14_ = (int) Math.sqrt(i_11_ * i_11_ + i_13_ * i_13_);
-            Class348_Sub42_Sub19.anInt9701 = (int) (Math.atan2(i_12_, i_14_) * 2607.5945876176133) & 0x3fff;
+            ClientScript.anInt9701 = (int) (Math.atan2(i_12_, i_14_) * 2607.5945876176133) & 0x3fff;
             Class5.anInt4638 = (int) (-2607.5945876176133 * Math.atan2(i_11_, i_13_)) & 0x3fff;
-            if (Class348_Sub42_Sub19.anInt9701 < 1024) Class348_Sub42_Sub19.anInt9701 = 1024;
+            if (ClientScript.anInt9701 < 1024) ClientScript.anInt9701 = 1024;
             Class338.anInt4186 = 0;
-            if (Class348_Sub42_Sub19.anInt9701 > 3072) Class348_Sub42_Sub19.anInt9701 = 3072;
+            if (ClientScript.anInt9701 > 3072) ClientScript.anInt9701 = 3072;
         }
         Class348_Sub40_Sub21.anInt9282 = 2;
         Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;

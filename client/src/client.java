@@ -390,7 +390,7 @@ public final class client extends Applet_Sub1 {
         Class184.method1386(true);
         Class43.method380(0);
         Class348_Sub36.method3029(126);
-        Class348_Sub42_Sub19.method3278(1);
+        ClientScript.method3278(1);
         Class168.method1298(-1);
         Class348_Sub42_Sub16.method3252(353);
         Class47.method445(i ^ 0x6e);
@@ -1491,7 +1491,7 @@ public final class client extends Applet_Sub1 {
                             }
                             class46.anInt726 = Class311.anInt3918;
                             if (class46.anObjectArray822 != null) {
-                                for (int i_89_ = 0; i_89_ < Class348_Sub42_Sub19.anInt9699; i_89_++) {
+                                for (int i_89_ = 0; i_89_ < ClientScript.anInt9699; i_89_++) {
                                     Class348_Sub36 class348_sub36 = new Class348_Sub36();
                                     class348_sub36.aClass46_6989 = class46;
                                     class348_sub36.anInt6991 = Class348_Sub42_Sub5.anInterface6Array9534[i_89_].method30(false);
@@ -1738,15 +1738,15 @@ public final class client extends Applet_Sub1 {
             if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654.method3646((int) Class62.method599(-74));
             Class170.method1315(93);
             Class253.anInt3246 = 0;
-            Class348_Sub42_Sub19.anInt9699 = 0;
+            ClientScript.anInt9699 = 0;
             for (Interface6 interface6 = Class182.aClass346_2449.method2697(0); interface6 != null; interface6 = Class182.aClass346_2449.method2697(0)) {
                 int i_109_ = interface6.method27(26276);
                 if (i_109_ == 2 || i_109_ == 3) {
                     int i_110_ = interface6.method28((byte) 96);
                     if (!Class275.method2066((byte) 116) || (i_110_ != 96 && i_110_ != 167 && i_110_ != 178)) {
-                        if (Class348_Sub42_Sub19.anInt9699 < 128) {
-                            Class348_Sub42_Sub5.anInterface6Array9534[Class348_Sub42_Sub19.anInt9699] = interface6;
-                            Class348_Sub42_Sub19.anInt9699++;
+                        if (ClientScript.anInt9699 < 128) {
+                            Class348_Sub42_Sub5.anInterface6Array9534[ClientScript.anInt9699] = interface6;
+                            ClientScript.anInt9699++;
                         }
                     } else if (!Class348_Sub42_Sub16_Sub2.method3263(true)) Class316.method2363(-84);
                     else Class367_Sub4.method3543((byte) -89);

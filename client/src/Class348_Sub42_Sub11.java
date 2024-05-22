@@ -92,7 +92,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                             i_10_ = Class9.anInt167;
                         }
                         if ((0x4 & (Class348_Sub33.aByteArrayArrayArray6962[Class355.anInt4372][i_10_ >> 9][i_11_ >> 9])) != 0) Class367_Sub4.method3542(i_11_ >> 9, Class147.aClass357ArrayArrayArray2029, i_10_ >> 9, 0, 0, false);
-                        if (Class348_Sub42_Sub19.anInt9701 < 2560) {
+                        if (ClientScript.anInt9701 < 2560) {
                             int i_12_ = Class286_Sub4.anInt6246 >> 9;
                             int i_13_ = Class59_Sub2_Sub2.anInt8685 >> 9;
                             int i_14_ = i_10_ >> 9;

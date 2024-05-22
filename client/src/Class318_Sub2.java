@@ -126,7 +126,7 @@ final class Class318_Sub2 extends Class318 {
                         float f = (float) (Class141.anInt1974 - (class338.anIntArray4187[0]));
                         if (f < 0.0F) f *= -1.0F;
                         if (!(f < (float) Class11.anInt194) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338))
-                            Class348_Sub42_Sub19.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
+                            ClientScript.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
                     }
                 }
             } else if (class338.aByte4192 == 2) {
@@ -151,7 +151,7 @@ final class Class318_Sub2 extends Class318 {
                         float f = (float) (Class348_Sub40_Sub27.anInt9360 - (class338.anIntArray4184[0]));
                         if (f < 0.0F) f *= -1.0F;
                         if (!(f < (float) Class11.anInt194) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338))
-                            Class348_Sub42_Sub19.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
+                            ClientScript.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
                     }
                 }
             } else if (class338.aByte4192 == 16 || class338.aByte4192 == 8) {
@@ -164,7 +164,7 @@ final class Class318_Sub2 extends Class318 {
                         float f_28_ = (float) (Class348_Sub40_Sub27.anInt9360 + -(class338.anIntArray4184[0]));
                         if (f_28_ < 0.0F) f_28_ *= -1.0F;
                         if ((!(f < (float) Class11.anInt194) || !((float) Class11.anInt194 > f_28_)) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338))
-                            Class348_Sub42_Sub19.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
+                            ClientScript.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
                     }
                 }
             } else if (class338.aByte4192 == 4) {
@@ -194,7 +194,7 @@ final class Class318_Sub2 extends Class318 {
                             }
                         }
                     }
-                    if (bool && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
+                    if (bool && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) ClientScript.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
                 }
             }
         } catch (RuntimeException runtimeexception) {
