@@ -4,6 +4,7 @@
 
 import java.awt.*;
 import java.lang.reflect.Field;
+import java.awt.FontMetrics;
 
 final class Class294 implements Interface16 {
     private boolean aBoolean5020;

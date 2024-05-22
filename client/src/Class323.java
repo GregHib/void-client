@@ -4,6 +4,7 @@
 
 import java.awt.*;
 import java.awt.image.PixelGrabber;
+import java.awt.FontMetrics;
 
 final class Class323 {
     private boolean aBoolean4037 = false;
