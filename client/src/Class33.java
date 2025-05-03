@@ -12,7 +12,7 @@ final class Class33 {
     private final Class60 aClass60_460 = new Class60(128);
     static int anInt461;
 
-    final Class117 method337(boolean bool, int i) {
+    final Class117 findEnum(boolean bool, int i) {
         anInt457++;
         Class117 class117;
         synchronized (aClass60_460) {

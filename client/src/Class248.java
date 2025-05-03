@@ -133,16 +133,16 @@ final class Class248 {
                     if (aClass348_Sub49_3211.anInt7197 >= i_3_) {
                         if (aClass348_Sub42_Sub16_Sub1_3215 == null) {
                             aClass348_Sub49_3211.anInt7197 = 0;
-                            int i_9_ = aClass348_Sub49_3211.readUnsignedByte(255);
-                            int i_10_ = aClass348_Sub49_3211.readUnsignedShort(842397944);
-                            int i_11_ = aClass348_Sub49_3211.readUnsignedByte(255);
-                            int i_12_ = aClass348_Sub49_3211.readInt((byte) -126);
-                            int i_13_ = 0x7f & i_11_;
-                            boolean bool = (0x80 & i_11_) != 0;
-                            long l = (i_9_ << 16) + i_10_;
+                            int index = aClass348_Sub49_3211.readUnsignedByte(255);
+                            int archive = aClass348_Sub49_3211.readUnsignedShort(842397944);
+                            int mask = aClass348_Sub49_3211.readUnsignedByte(255);
+                            int size = aClass348_Sub49_3211.readInt((byte) -126);
+                            int compression = 0x7f & mask;
+                            boolean prefetch = (0x80 & mask) != 0;
+                            long l = (index << 16) + archive;
                             Object object = null;
                             Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1_14_;
-                            if (bool) {
+                            if (prefetch) {
                                 for (class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3206.method1011(-89)); class348_sub42_sub16_sub1_14_ != null; class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3206.method1003((byte) 98))) {
                                     if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break;
                                 }
@@ -152,11 +152,11 @@ final class Class248 {
                                 }
                             }
                             if (class348_sub42_sub16_sub1_14_ == null) throw new IOException();
-                            int i_15_ = i_13_ == 0 ? 5 : 9;
+                            int i_15_ = compression == 0 ? 5 : 9;
                             aClass348_Sub42_Sub16_Sub1_3215 = class348_sub42_sub16_sub1_14_;
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453 = (new Class348_Sub49((aClass348_Sub42_Sub16_Sub1_3215.aByte10449) + i_15_ + i_12_));
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeByte(false, i_13_);
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeInt((byte) 97, i_12_);
+                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453 = (new Class348_Sub49((aClass348_Sub42_Sub16_Sub1_3215.aByte10449) + i_15_ + size));
+                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeByte(false, compression);
+                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeInt((byte) 97, size);
                             aClass348_Sub49_3211.anInt7197 = 0;
                             aClass348_Sub42_Sub16_Sub1_3215.anInt10456 = 8;
                         } else if ((aClass348_Sub42_Sub16_Sub1_3215.anInt10456) == 0) {

@@ -135,7 +135,10 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
         if (anIntArray9574 != null) {
             for (int i_13_ = 0; i_13_ < anIntArray9574.length; i_13_++) {
                 stringbuffer.append(aStringArray9564[i_13_]);
-                stringbuffer.append(this.aClass355_9567.method3472((class348_sub49.method3368((Class348_Sub5.method2752(anIntArray9574[i_13_], 0).anInt1943), 3060)), anIntArrayArray9565[i_13_], -1, method3212(0, i_13_)));
+                int type = anIntArray9574[i_13_];
+                int size = Class348_Sub5.method2752(type, 0).anInt1943;
+                long l = class348_sub49.method3368(size, 3060);
+                stringbuffer.append(this.aClass355_9567.method3472(l, anIntArrayArray9565[i_13_], -1, method3212(0, i_13_)));
             }
         }
         stringbuffer.append(aStringArray9564[aStringArray9564.length + -1]);

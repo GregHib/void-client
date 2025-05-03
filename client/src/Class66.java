@@ -4,7 +4,6 @@
 
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -4030,8 +4029,8 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_348_ = anIntArray1149[anInt1173];
                     int i_349_ = anIntArray1149[anInt1173 + 1];
-                    Class117 class117 = Class348_Sub7.aClass33_6653.method337(true, i_348_);
-                    aStringArray1152[anInt1170++] = class117.method1074(i_349_, 124);
+                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_348_);
+                    aStringArray1152[anInt1170++] = class117.lookup(i_349_, 124);
                     return;
                 }
                 if (i == 3408) {
@@ -4040,11 +4039,11 @@ final class Class66 {
                     int i_351_ = anIntArray1149[anInt1173 + 1];
                     int i_352_ = anIntArray1149[anInt1173 + 2];
                     int i_353_ = anIntArray1149[anInt1173 + 3];
-                    Class117 class117 = Class348_Sub7.aClass33_6653.method337(true, i_352_);
+                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_352_);
                     if (class117.aChar1778 != i_350_ || class117.aChar1779 != i_351_)
                         throw new RuntimeException("C3408-1 " + i_352_ + "-" + i_353_);
                     if (i_351_ == 115) {
-                        aStringArray1152[anInt1170++] = class117.method1074(i_353_, 119);
+                        aStringArray1152[anInt1170++] = class117.lookup(i_353_, 119);
                         System.out.println("DataMap:" + ((char) i_350_) + ", " + ((char) i_351_) + ", " + i_352_ + ", " + i_353_ + " = " + aStringArray1152[anInt1170 - 1]);
                     } else {
                         anIntArray1149[anInt1173++] = class117.method1073(false, i_353_);
@@ -4058,7 +4057,7 @@ final class Class66 {
                     int i_355_ = anIntArray1149[anInt1173 + 1];
                     int i_356_ = anIntArray1149[anInt1173 + 2];
                     if (i_355_ == -1) throw new RuntimeException("C3409-2");
-                    Class117 class117 = Class348_Sub7.aClass33_6653.method337(true, i_355_);
+                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_355_);
                     if (class117.aChar1779 != i_354_) throw new RuntimeException("C3409-1");
                     anIntArray1149[anInt1173++] = class117.method1067(true, i_356_) ? 1 : 0;
                     return;
@@ -4067,14 +4066,14 @@ final class Class66 {
                     int i_357_ = anIntArray1149[--anInt1173];
                     String string = aStringArray1152[--anInt1170];
                     if (i_357_ == -1) throw new RuntimeException("C3410-2");
-                    Class117 class117 = Class348_Sub7.aClass33_6653.method337(true, i_357_);
+                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_357_);
                     if (class117.aChar1779 != 's') throw new RuntimeException("C3410-1");
                     anIntArray1149[anInt1173++] = class117.method1066(false, string) ? 1 : 0;
                     return;
                 }
                 if (i == 3411) {
                     int i_358_ = anIntArray1149[--anInt1173];
-                    Class117 class117 = Class348_Sub7.aClass33_6653.method337(true, i_358_);
+                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_358_);
                     anIntArray1149[anInt1173++] = class117.aClass356_1767.method3474(1);
                     return;
                 }

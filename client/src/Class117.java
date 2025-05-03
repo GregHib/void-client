@@ -121,7 +121,7 @@ final class Class117 {
         /* empty */
     }
 
-    final String method1074(int i, int i_7_) {
+    final String lookup(int i, int i_7_) {
         anInt1777++;
         if (i_7_ <= 60) return null;
         if (this.aClass356_1767 == null) return aString1774;

@@ -429,11 +429,11 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         else is = Class239_Sub17.anIntArray6021;
         if (i != 255) anInt10567 = 81;
         if (is != null && is[aByte10552] != -1) {
-            Class117 class117 = Class348_Sub7.aClass33_6653.method337(true, is[aByte10552]);
+            Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, is[aByte10552]);
             if (class117.aChar1779 != 115) {
                 Class156.method1242("gdn1", new Throwable(), 15004);
                 is[aByte10552] = -1;
-            } else string += class117.method1074(0xff & aByte10556, i + -145);
+            } else string += class117.lookup(0xff & aByte10556, i + -145);
         }
         if (!bool) string += this.aString10544;
         else string += this.aString10537;
