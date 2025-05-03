@@ -2,8 +2,6 @@
  * Visit http://jode.sourceforge.net/
  */
 
-import sun.awt.Win32GraphicsDevice;
-
 import java.awt.*;
 import java.lang.reflect.Field;
 
@@ -77,7 +75,7 @@ public final class Class7 {
         boolean bool = false;
         if (i <= 47) method212(null, (byte) -25);
         try {
-            Field field = Win32GraphicsDevice.class.getDeclaredField("valid");
+            Field field = GraphicsDevice.class.getDeclaredField("valid");
             field.setAccessible(true);
             boolean bool_7_ = ((Boolean) field.get(aGraphicsDevice157)).booleanValue();
             if (bool_7_) {
@@ -95,7 +93,7 @@ public final class Class7 {
         } catch (Throwable object) {
             if (bool) {
                 try {
-                    Field field = Win32GraphicsDevice.class.getDeclaredField("valid");
+                    Field field = GraphicsDevice.class.getDeclaredField("valid");
                     field.set(aGraphicsDevice157, Boolean.TRUE);
                 } catch (Exception e) {
                     if (Loader.trace) {
@@ -106,7 +104,7 @@ public final class Class7 {
         }
         if (bool) {
             try {
-                Field field = Win32GraphicsDevice.class.getDeclaredField("valid");
+                Field field = GraphicsDevice.class.getDeclaredField("valid");
                 field.set(aGraphicsDevice157, Boolean.TRUE);
             } catch (Throwable throwable) {
                 if (Loader.trace) {
