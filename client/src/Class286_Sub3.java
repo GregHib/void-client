@@ -68,7 +68,7 @@ final class Class286_Sub3 extends Class286 {
         }
     }
 
-    static final Class348_Sub47 method2148(Class351 class351, Class77 class77, int i) {
+    static final Class348_Sub47 method2148(Class351 class351, Isaac class77, int i) {
         try {
             anInt6230++;
             Class348_Sub47 class348_sub47 = Class300.method2273((byte) -103);

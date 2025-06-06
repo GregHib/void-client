@@ -518,7 +518,6 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7946 = 0;
         Class51.anInt958 = 0;
         Class239.anInt3140 = 0;
-        Class77.anInt1302 = 0;
         ha_Sub2.anInt7697 = 0;
         Class348_Sub40_Sub30.anInt9393 = 0;
         Class348_Sub49.anInt7203 = 0;
@@ -691,7 +690,6 @@ final class Class130_Sub1 extends Class130 {
         Class286_Sub1.anInt6184 = 0;
         Class237.anInt3105 = 0;
         Class124.anInt1840 = 0;
-        Class77.anInt1295 = 0;
         Class18.anInt278 = 0;
         ha_Sub2.anInt7545 = 0;
         Class348_Sub40_Sub37.anInt9464 = 0;
@@ -990,7 +988,6 @@ final class Class130_Sub1 extends Class130 {
         Class377.anInt9813 = 0;
         Class348_Sub50.anInt7214 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10042 = 0;
-        Class77.anInt1300 = 0;
         Class348_Sub3.anInt6576 = 0;
         Class26.anInt378 = 0;
         Class377.anInt9827 = 0;
@@ -2376,7 +2373,6 @@ final class Class130_Sub1 extends Class130 {
         Class237.anInt3106 = 0;
         Class181.anInt2396 = 0;
         Class318_Sub1_Sub3.anInt8742 = 0;
-        Class77.anInt1297 = 0;
         ha_Sub3.anInt7961 = 0;
         Class348_Sub40_Sub35.anInt9441 = 0;
         Class64_Sub3.anInt5643 = 0;
@@ -3152,7 +3148,6 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub23_Sub2.anInt9030 = 0;
         Class294.anInt5025 = 0;
         Class348_Sub3.anInt6570 = 0;
-        Class77.anInt1299 = 0;
         Class318_Sub1_Sub1_Sub2.anInt9986 = 0;
         Class117.anInt1763 = 0;
         Class64_Sub3.anInt5549 = 0;
@@ -3562,7 +3557,6 @@ final class Class130_Sub1 extends Class130 {
         Class59_Sub1_Sub1.anInt8656 = 0;
         Applet_Sub1.anInt29 = 0;
         ha_Sub3.anInt8038 = 0;
-        Class77.anInt1301 = 0;
         Class160.anInt2129 = 0;
         ha_Sub3.anInt7967 = 0;
         Class46.anInt718 = 0;
@@ -4132,8 +4126,8 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub31.anInt9406 = 0;
         Class348_Sub35.anInt6981 = 0;
         Class367_Sub11.anInt7403 = 0;
-        for (int l = 0; l < Class77.anIntArray1303.length; l++)
-            if (!Class286_Sub6.aBooleanArray6270[l]) Class77.anIntArray1303[l] = -1;
+        for (int l = 0; l < Isaac.anIntArray1303.length; l++)
+            if (!Class286_Sub6.aBooleanArray6270[l]) Isaac.anIntArray1303[l] = -1;
 
         if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (byte) -105);
         for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3482(0)) {

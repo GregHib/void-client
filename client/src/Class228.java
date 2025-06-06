@@ -161,7 +161,7 @@ final class Class228 {
                     if (class348_sub12.aClass348_Sub21_6751.aBoolean6848) Class66.method701(Class59_Sub1_Sub2.aClass273_8664, class348_sub12.aClass348_Sub21_6751.anInt6847, class42.anInt596);
                 } else if (class348_sub12.aClass348_Sub21_6751.aBoolean6848) {
                     class348_sub12.aClass348_Sub21_6751.aBoolean6848 = false;
-                    Class66.method701(Class77.aClass273_1298, class348_sub12.aClass348_Sub21_6751.anInt6847, class42.anInt596);
+                    Class66.method701(Isaac.aClass273_1298, class348_sub12.aClass348_Sub21_6751.anInt6847, class42.anInt596);
                 }
             }
         }

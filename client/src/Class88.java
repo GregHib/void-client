@@ -180,7 +180,7 @@ final class Class88 {
                     }
                     Class348_Sub42_Sub14.method3243(-48, class348_sub47);
                     Class239_Sub18.method1802(0);
-                    Class348_Sub23_Sub2.aClass77_9029 = new Class77(is);
+                    Class348_Sub23_Sub2.aClass77_9029 = new Isaac(is);
                     for (int i_10_ = 0; i_10_ < 4; i_10_++)
                         is[i_10_] += 50;
                     Class299.aClass348_Sub49_Sub2_3813.method3406(-111, is);

@@ -238,7 +238,7 @@ final class Class101_Sub3 extends Class101 {
     }
 
     static final void method941(int i, int i_48_) {
-        Class77.anInt1290 = i_48_;
+        Isaac.anInt1290 = i_48_;
         anInt5755++;
         if (i <= 113) aClass326_5764 = null;
     }

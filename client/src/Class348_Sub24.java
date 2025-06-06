@@ -190,7 +190,7 @@ final class Class348_Sub24 extends Class348 {
                             int i_16_ = class348_sub42_sub15.method3245(true);
                             int i_17_ = class348_sub42_sub15.method3248(1);
                             if (i_16_ == 1) {
-                                Class77.anIntArray1303[i_17_] = class348_sub42_sub15.anInt9652;
+                                Isaac.anIntArray1303[i_17_] = class348_sub42_sub15.anInt9652;
                                 Class184.aBoolean2469 |= Class286_Sub6.aBooleanArray6270[i_17_];
                                 Class348_Sub26.anIntArray6890[Class139.method1166(31, Class5_Sub1.anInt8352++)] = i_17_;
                             } else if (i_16_ == 2) {

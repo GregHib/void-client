@@ -180,13 +180,13 @@ final class Class230 {
                                 if (i_51_ > 0) {
                                     Class21.aHa326.KA(0, i_49_, (Class348_Sub16_Sub1.anInt8854), i_51_ + i_49_);
                                     Class21.aHa326.ya();
-                                    Class21.aHa326.GA(Class77.anInt1290);
+                                    Class21.aHa326.GA(Isaac.anInt1290);
                                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false);
                                 }
                                 if (i_46_ > 0) {
                                     Class21.aHa326.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_);
                                     Class21.aHa326.ya();
-                                    Class21.aHa326.GA(Class77.anInt1290);
+                                    Class21.aHa326.GA(Isaac.anInt1290);
                                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false);
                                 }
                                 Class21.aHa326.la();
@@ -228,7 +228,7 @@ final class Class230 {
                         if (Class348_Sub49.anInt7207 == 0) Class21.aHa326.method3687(Class17.anInterface4_252);
                         Class21.aHa326.la();
                         Class21.aHa326.ya();
-                        Class21.aHa326.GA(Class77.anInt1290);
+                        Class21.aHa326.GA(Isaac.anInt1290);
                         Class51.aClass101_905.method903(Class105_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
                         Class21.aHa326.method3638(Class51.aClass101_905);
                         if (Class348_Sub49.anInt7207 == 1) {
@@ -259,7 +259,7 @@ final class Class230 {
                     Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517;
                     if (Class348_Sub49.anInt7207 == 0 || Class348_Sub49.anInt7207 == 2) {
                         if (Class348_Sub49.anInt7207 == 2) {
-                            Class21.aHa326.GA(Class77.anInt1290);
+                            Class21.aHa326.GA(Isaac.anInt1290);
                             Class21.aHa326.ya();
                         }
                         Class193.anInt2590 = i_20_;

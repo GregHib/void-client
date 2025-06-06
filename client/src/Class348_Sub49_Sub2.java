@@ -7,7 +7,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
     static int anInt9753;
     private int anInt9754;
     static int anInt9755;
-    private Class77 aClass77_9756;
+    private Isaac aClass77_9756;
     static int[] anIntArray9757;
     static int anInt9758;
     static int anInt9759;
@@ -25,7 +25,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
     final boolean method3404(int i) {
         anInt9758++;
         if (i != -1510) return true;
-        int i_0_ = (((this.aByteArray7154[this.anInt7197]) - aClass77_9756.method778((byte) 19)) & 0xff);
+        int i_0_ = (((this.aByteArray7154[this.anInt7197]) - aClass77_9756.next()) & 0xff);
         return i_0_ >= 128;
     }
 
@@ -45,27 +45,27 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
 
     final void method3406(int i, int[] is) {
         anInt9755++;
-        aClass77_9756 = new Class77(is);
+        aClass77_9756 = new Isaac(is);
         if (i > -41) anIntArray9757 = null;
     }
 
     final int method3407(int i) {
         anInt9752++;
-        int i_4_ = (((this.aByteArray7154[this.anInt7197++]) - aClass77_9756.method781((byte) -67)) & 0xff);
+        int i_4_ = (((this.aByteArray7154[this.anInt7197++]) - aClass77_9756.peek()) & 0xff);
         if (i_4_ < 128) return i_4_;
         if (i != 15295) anIntArray9757 = null;
-        return ((((this.aByteArray7154[this.anInt7197++]) - aClass77_9756.method781((byte) -62)) & 0xff) + (i_4_ + -128 << 8));
+        return ((((this.aByteArray7154[this.anInt7197++]) - aClass77_9756.peek()) & 0xff) + (i_4_ + -128 << 8));
     }
 
     final void method3408(int i, int i_5_) {
-        this.aByteArray7154[this.anInt7197++] = (byte) (i + aClass77_9756.method781((byte) -85));
+        this.aByteArray7154[this.anInt7197++] = (byte) (i + aClass77_9756.peek());
         if (i_5_ == 18676) anInt9760++;
     }
 
     final void method3409(int i, byte[] is, int i_6_, int i_7_) {
         if (i_7_ == -32769) {
             for (int i_8_ = 0; i_8_ < i; i_8_++)
-                is[i_6_ + i_8_] = (byte) ((this.aByteArray7154[this.anInt7197++]) + -aClass77_9756.method781((byte) -99));
+                is[i_6_ + i_8_] = (byte) ((this.aByteArray7154[this.anInt7197++]) + -aClass77_9756.peek());
             anInt9762++;
         }
     }
@@ -127,7 +127,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
         return -anInt9754 + i_22_ * 8;
     }
 
-    final void method3416(int i, Class77 class77) {
+    final void method3416(int i, Isaac class77) {
         int i_23_ = -103 / ((i - 57) / 40);
         aClass77_9756 = class77;
         anInt9766++;

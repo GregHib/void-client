@@ -443,10 +443,10 @@ final class Class82 {
                             break;
                         }
                         if (string.equals("scramblevarcs")) {
-                            for (int i_14_ = 0; (i_14_ < Class77.anIntArray1303.length); i_14_++) {
+                            for (int i_14_ = 0; (i_14_ < Isaac.anIntArray1303.length); i_14_++) {
                                 if (Class286_Sub6.aBooleanArray6270[i_14_]) {
-                                    Class77.anIntArray1303[i_14_] = (int) (Math.random() * 99999.0);
-                                    if (Math.random() > 0.5) Class77.anIntArray1303[i_14_] *= -1;
+                                    Isaac.anIntArray1303[i_14_] = (int) (Math.random() * 99999.0);
+                                    if (Math.random() > 0.5) Isaac.anIntArray1303[i_14_] *= -1;
                                 }
                             }
                             Class318_Sub1_Sub2.method2405(-61);

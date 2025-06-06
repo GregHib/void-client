@@ -23,10 +23,10 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1 {
             class348_sub49.writeByte(false, 1);
             class348_sub49.writeShort((byte) 107, Class335.anInt4168);
             int i_0_ = -4 % ((-12 - i) / 38);
-            for (int i_1_ = 0; (i_1_ < Class77.anIntArray1303.length); i_1_++) {
+            for (int i_1_ = 0; (i_1_ < Isaac.anIntArray1303.length); i_1_++) {
                 if (Class286_Sub6.aBooleanArray6270[i_1_]) {
                     class348_sub49.writeShort((byte) 107, i_1_);
-                    class348_sub49.writeInt((byte) 124, Class77.anIntArray1303[i_1_]);
+                    class348_sub49.writeInt((byte) 124, Isaac.anIntArray1303[i_1_]);
                 }
             }
             class234.method1658((byte) 117, 0, class348_sub49.anInt7197, (class348_sub49.aByteArray7154));

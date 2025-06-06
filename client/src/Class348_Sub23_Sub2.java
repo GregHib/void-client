@@ -29,7 +29,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     static int anInt9026;
     private int anInt9027;
     private boolean aBoolean9028;
-    static Class77 aClass77_9029;
+    static Isaac aClass77_9029;
     static int anInt9030;
     static Class153 aClass153_9031;
     private DecoderContext aDecoderContext9032;

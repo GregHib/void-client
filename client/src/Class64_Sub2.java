@@ -554,7 +554,7 @@ final class Class64_Sub2 extends Class64 {
                 anIntArray5455 = null;
                 aShortArray5439 = null;
             }
-            if (aByteArray5499 != null && !Class77.method776(anInt5472, anInt5463, i + -196608)) {
+            if (aByteArray5499 != null && !Isaac.method776(anInt5472, anInt5463, i + -196608)) {
                 if ((0x37 & anInt5472) != 0 ? (aClass290_5424 == null || aClass290_5424.method2197((byte) -10)) : (aClass290_5482 == null || aClass290_5482.method2197((byte) -73))) {
                     aShortArray5493 = aShortArray5438 = aShortArray5436 = null;
                     aByteArray5499 = null;
@@ -597,7 +597,7 @@ final class Class64_Sub2 extends Class64 {
                 anIntArrayArray5413 = null;
                 aShortArray5494 = null;
             }
-            if (anIntArrayArray5412 != null && !Class77.method780(anInt5472, 0, anInt5463)) anIntArrayArray5412 = null;
+            if (anIntArrayArray5412 != null && !Isaac.method780(anInt5472, 0, anInt5463)) anIntArrayArray5412 = null;
             if (anIntArray5404 != null && (0x800 & anInt5463) == 0 && (anInt5463 & 0x40000) == 0) {
                 anIntArray5404 = null;
                 anIntArray5473 = null;
@@ -2265,7 +2265,7 @@ final class Class64_Sub2 extends Class64 {
                 aFloatArray5476 = Class348_Sub42_Sub16.method3258(0, anInt5475, aFloatArray5476);
                 aFloatArray5506 = Class348_Sub42_Sub16.method3258(0, anInt5475, aFloatArray5506);
                 if (class124.anIntArray1868 != null && Class160.method1257(-58, anInt5472, i)) anIntArrayArray5413 = class124.method1100(false, -20);
-                if (class124.aClass162Array1832 != null && Class77.method780(anInt5472, 0, i)) anIntArrayArray5412 = class124.method1093((byte) -120);
+                if (class124.aClass162Array1832 != null && Isaac.method780(anInt5472, 0, i)) anIntArrayArray5412 = class124.method1093((byte) -120);
                 if (class124.anIntArray1824 == null || !Class135_Sub2.method1158(anInt5472, -1, i)) break;
                 int i_459_ = 0;
                 int[] is_460_ = new int[256];

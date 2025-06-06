@@ -208,7 +208,7 @@ final class Class164 {
             Class75.method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aClass153_9031, Class2.aClass141_117, Class318_Sub1_Sub3_Sub3.aClass170_10209);
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
-            Class77.anIntArray1303 = (new int[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
+            Isaac.anIntArray1303 = (new int[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
             Class286_Sub6.aBooleanArray6270 = (new boolean[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
             Class258_Sub2.aStringArray8532 = new String[Class91.aClass82_1523.anInt1439];
             for (int i_13_ = 0; Class239_Sub14.aClass259_5995.anInt3305 + 1000 > i_13_; i_13_++) {
@@ -216,7 +216,7 @@ final class Class164 {
                     Class286_Sub6.aBooleanArray6270[i_13_] = true;
                     Class335.anInt4168++;
                 }
-                Class77.anIntArray1303[i_13_] = -1;
+                Isaac.anIntArray1303[i_13_] = -1;
             }
             Class116.method1063(1);
             Class285.anInt4737 = Class348_Sub35.aClass45_6980.method417("loginscreen", i ^ ~0x6ff3);

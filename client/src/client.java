@@ -248,7 +248,7 @@ public final class client extends Applet_Sub1 {
         Class226.method1624(28962);
         Class355.method3473(12949);
         Class238.method1704((byte) -95);
-        Class77.method782(1);
+        Isaac.method782(1);
         Class348_Sub49_Sub2.method3414(21515);
         Class169.method1300((byte) -128);
         Class348_Sub26.method2998((byte) -35);
