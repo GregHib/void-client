@@ -104,13 +104,13 @@ final class Class163 {
         int i = Class239_Sub1.anInt5850;
         for (int i_24_ = 0; is.length > i_24_; i_24_++) {
             Class321 class321 = Class348_Sub23_Sub2.aClass187_9036.method1408(-12637, is[i_24_]);
-            if (class321.anInt4000 != -1) {
-                Sprite sprite = ((Sprite) Class34.aClass60_463.method583(class321.anInt4000, -74));
+            if (class321.itemSprite != -1) {
+                Sprite sprite = ((Sprite) Class34.aClass60_463.method583(class321.itemSprite, -74));
                 if (sprite == null) {
-                    Class207 class207 = Class207.method1521(Class21.SPRITES, class321.anInt4000, 0);
+                    Class207 class207 = Class207.method1521(Class21.SPRITES, class321.itemSprite, 0);
                     if (class207 != null) {
                         sprite = Class348_Sub8.aHa6654.method3691(class207, true);
-                        Class34.aClass60_463.method582(sprite, class321.anInt4000, (byte) -127);
+                        Class34.aClass60_463.method582(sprite, class321.itemSprite, (byte) -127);
                     }
                 }
                 if (sprite != null) {

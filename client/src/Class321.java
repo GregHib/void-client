@@ -4,23 +4,23 @@
 
 final class Class321 {
     static int anInt3995;
-    private int[][] anIntArrayArray3996;
-    private int[][] anIntArrayArray3997;
+    private int[][] varbits;
+    private int[][] varps;
     private int[] anIntArray3998;
     static int anInt3999;
-    int anInt4000 = -1;
+    int itemSprite = -1;
     private int[] anIntArray4001;
-    private int[][] anIntArrayArray4002;
+    private int[][] skillRequirements;
     private int[] anIntArray4003;
-    private int[] anIntArray4004;
+    private int[] questRequirements;
     static int anInt4005 = -1;
-    private Class356 aClass356_4006;
+    private Class356 parameters;
     private int[] anIntArray4007;
-    private int[] anIntArray4008;
+    private int[] pathStart;
     private int[] anIntArray4009;
-    private String aString4010;
+    private String listName;
     private String[] aStringArray4011;
-    private String aString4012;
+    private String name;
     static int anInt4013;
     private int[] anIntArray4014;
     static Class114 aClass114_4015 = new Class114(116, 6);
@@ -30,7 +30,7 @@ final class Class321 {
     final void method2548(byte i) {
         if (i <= 117) method2550(null, -119, (byte) 18);
         anInt3999++;
-        if (aString4010 == null) aString4010 = aString4012;
+        if (listName == null) listName = name;
     }
 
     public static void method2549(byte i) {
@@ -42,22 +42,23 @@ final class Class321 {
         if (i_0_ != 52) anIntArray4014 = null;
         anInt4013++;
         if (i != 1) {
-            if (i == 2) aString4010 = class348_sub49.method3371(i_0_ ^ ~0x349a);
+            if (i == 2)
+                listName = class348_sub49.method3371(i_0_ ^ ~0x349a);
             else if (i == 3) {
                 int i_1_ = class348_sub49.readUnsignedByte(i_0_ ^ 0xcb);
-                anIntArrayArray3997 = new int[i_1_][3];
+                varps = new int[i_1_][3];
                 for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
-                    anIntArrayArray3997[i_2_][0] = class348_sub49.readUnsignedShort(842397944);
-                    anIntArrayArray3997[i_2_][1] = class348_sub49.readInt((byte) -126);
-                    anIntArrayArray3997[i_2_][2] = class348_sub49.readInt((byte) -126);
+                    varps[i_2_][0] = class348_sub49.readUnsignedShort(842397944);
+                    varps[i_2_][1] = class348_sub49.readInt((byte) -126);
+                    varps[i_2_][2] = class348_sub49.readInt((byte) -126);
                 }
             } else if (i == 4) {
                 int i_17_ = class348_sub49.readUnsignedByte(255);
-                anIntArrayArray3996 = new int[i_17_][3];
+                varbits = new int[i_17_][3];
                 for (int i_18_ = 0; i_17_ > i_18_; i_18_++) {
-                    anIntArrayArray3996[i_18_][0] = class348_sub49.readUnsignedShort(842397944);
-                    anIntArrayArray3996[i_18_][1] = class348_sub49.readInt((byte) -126);
-                    anIntArrayArray3996[i_18_][2] = class348_sub49.readInt((byte) -126);
+                    varbits[i_18_][0] = class348_sub49.readUnsignedShort(842397944);
+                    varbits[i_18_][1] = class348_sub49.readInt((byte) -126);
+                    varbits[i_18_][2] = class348_sub49.readInt((byte) -126);
                 }
             } else if (i != 5) {
                 if (i == 6) class348_sub49.readUnsignedByte(255);
@@ -66,24 +67,24 @@ final class Class321 {
                     if (i != 9) {
                         if (i == 10) {
                             int i_3_ = class348_sub49.readUnsignedByte(i_0_ + 203);
-                            anIntArray4008 = new int[i_3_];
+                            pathStart = new int[i_3_];
                             for (int i_4_ = 0; i_3_ > i_4_; i_4_++)
-                                anIntArray4008[i_4_] = class348_sub49.readInt((byte) -126);
+                                pathStart[i_4_] = class348_sub49.readInt((byte) -126);
                         } else if (i != 12) {
                             if (i == 13) {
                                 int i_15_ = class348_sub49.readUnsignedByte(255);
-                                anIntArray4004 = new int[i_15_];
+                                questRequirements = new int[i_15_];
                                 for (int i_16_ = 0; i_16_ < i_15_; i_16_++)
-                                    anIntArray4004[i_16_] = class348_sub49.readUnsignedShort(842397944);
+                                    questRequirements[i_16_] = class348_sub49.readUnsignedShort(842397944);
                             } else if (i == 14) {
                                 int i_13_ = class348_sub49.readUnsignedByte(i_0_ ^ 0xcb);
-                                anIntArrayArray4002 = new int[i_13_][2];
+                                skillRequirements = new int[i_13_][2];
                                 for (int i_14_ = 0; i_14_ < i_13_; i_14_++) {
-                                    anIntArrayArray4002[i_14_][0] = class348_sub49.readUnsignedByte(255);
-                                    anIntArrayArray4002[i_14_][1] = (class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i_0_, 203)));
+                                    skillRequirements[i_14_][0] = class348_sub49.readUnsignedByte(255);
+                                    skillRequirements[i_14_][1] = (class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i_0_, 203)));
                                 }
                             } else if (i == 15) class348_sub49.readUnsignedShort(842397944);
-                            else if (i == 17) this.anInt4000 = class348_sub49.readUnsignedShort(842397944);
+                            else if (i == 17) this.itemSprite = class348_sub49.readUnsignedShort(842397944);
                             else if (i == 18) {
                                 int i_5_ = class348_sub49.readUnsignedByte(255);
                                 anIntArray4014 = new int[i_5_];
@@ -110,9 +111,9 @@ final class Class321 {
                                 }
                             } else if (i == 249) {
                                 int i_9_ = class348_sub49.readUnsignedByte(255);
-                                if (aClass356_4006 == null) {
+                                if (parameters == null) {
                                     int i_10_ = (Class33.method340(i_9_, (byte) 108));
-                                    aClass356_4006 = new Class356(i_10_);
+                                    parameters = new Class356(i_10_);
                                 }
                                 for (int i_11_ = 0; i_9_ > i_11_; i_11_++) {
                                     boolean bool = (class348_sub49.readUnsignedByte(255) == 1);
@@ -120,14 +121,14 @@ final class Class321 {
                                     Class348 class348;
                                     if (!bool) class348 = (new Class348_Sub35(class348_sub49.readInt((byte) -126)));
                                     else class348 = (new Class348_Sub50(class348_sub49.readString((byte) -98)));
-                                    aClass356_4006.method3483((byte) 123, i_12_, class348);
+                                    parameters.method3483((byte) 123, i_12_, class348);
                                 }
                             }
                         } else class348_sub49.readInt((byte) -126);
                     } else class348_sub49.readUnsignedByte(255);
                 }
             } else class348_sub49.readUnsignedShort(842397944);
-        } else aString4012 = class348_sub49.method3371(-13487);
+        } else name = class348_sub49.method3371(-13487);
     }
 
     final void method2551(int i, Class348_Sub49 class348_sub49) {
