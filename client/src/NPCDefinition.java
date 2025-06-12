@@ -2,8 +2,11 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class79 {
-    byte aByte1325;
+/*
+    Class79
+ */
+final class NPCDefinition {
+    byte walkMask;
     static int anInt1326;
     int anInt1327;
     private short[] aShortArray1328;
@@ -77,7 +80,7 @@ final class Class79 {
     boolean aBoolean1396;
     boolean aBoolean1397;
     private int anInt1398;
-    int anInt1399;
+    int size;
     static int anInt1400;
     int anInt1401;
     private int[] anIntArray1402;
@@ -93,14 +96,14 @@ final class Class79 {
         }
         for (int i_0_ = i; this.anIntArray1377.length > i_0_; i_0_++) {
             if (this.anIntArray1377[i_0_] != -1) {
-                Class79 class79_1_ = (this.aClass278_1348.method2079(this.anIntArray1377[i_0_], -1));
-                if (class79_1_.anInt1343 != -1 || class79_1_.anInt1364 != -1 || class79_1_.anInt1327 != -1) return true;
+                NPCDefinition NPCDefinition_1_ = (this.aClass278_1348.method2079(this.anIntArray1377[i_0_], -1));
+                if (NPCDefinition_1_.anInt1343 != -1 || NPCDefinition_1_.anInt1364 != -1 || NPCDefinition_1_.anInt1327 != -1) return true;
             }
         }
         return false;
     }
 
-    final Class79 method794(Interface17 interface17, int i) {
+    final NPCDefinition method794(Interface17 interface17, int i) {
         anInt1394++;
         int i_2_ = i;
         if (anInt1368 == -1) {
@@ -123,7 +126,9 @@ final class Class79 {
                 anIntArray1402[i_6_] = class348_sub49.readUnsignedShort(842397944);
                 if (anIntArray1402[i_6_] == 65535) anIntArray1402[i_6_] = -1;
             }
-        } else if (i != 2) {
+        } else if (i == 2) {
+            this.aString1372 = class348_sub49.readString((byte) 122);
+        } else {
             if (i != 12) {
                 if (i < 30 || i >= 35) {
                     if (i == 40) {
@@ -274,7 +279,7 @@ final class Class79 {
                                                         } else this.anInt1401 = class348_sub49.readUnsignedShort(842397944);
                                                     } else class348_sub49.readUnsignedByte(255);
                                                 } else this.anInt1390 = (class348_sub49.readUnsignedShort(i_4_ ^ 0x3235f887));
-                                            } else this.aByte1325 = (class348_sub49.readByte(i_4_ + -245));
+                                            } else this.walkMask = (class348_sub49.readByte(i_4_ + -245));
                                         } else this.aBoolean1331 = false;
                                     } else anInt1398 = class348_sub49.readByte(-123);
                                 } else anInt1358 = (class348_sub49.readUnsignedShort(i_4_ + 842397817));
@@ -282,8 +287,8 @@ final class Class79 {
                         } else this.anInt1361 = class348_sub49.readUnsignedShort(842397944);
                     } else this.aBoolean1397 = false;
                 } else this.aStringArray1349[-30 + i] = class348_sub49.readString((byte) 124);
-            } else this.anInt1399 = class348_sub49.readUnsignedByte(i_4_ + 128);
-        } else this.aString1372 = class348_sub49.readString((byte) 122);
+            } else this.size = class348_sub49.readUnsignedByte(i_4_ + 128);
+        }
         anInt1357++;
     }
 
@@ -346,9 +351,9 @@ final class Class79 {
         try {
             anInt1341++;
             if (this.anIntArray1377 != null) {
-                Class79 class79_42_ = method794(interface17, -1);
-                if (class79_42_ == null) return null;
-                return class79_42_.method800(i, class182s, class87, false, class17, i_34_, class261, i_35_, class17_36_, interface17, var_ha, i_37_, is, i_38_, i_39_, i_40_, i_41_);
+                NPCDefinition NPCDefinition_42_ = method794(interface17, -1);
+                if (NPCDefinition_42_ == null) return null;
+                return NPCDefinition_42_.method800(i, class182s, class87, false, class17, i_34_, class261, i_35_, class17_36_, interface17, var_ha, i_37_, is, i_38_, i_39_, i_40_, i_41_);
             }
             int i_43_ = i_40_;
             if (anInt1358 != 128) i_43_ |= 0x2;
@@ -605,20 +610,20 @@ final class Class79 {
         return class348_sub50.aString7211;
     }
 
-    static final boolean method802(int i, int i_93_, boolean bool) {
+    static final boolean method802(int y, int x, boolean bool) {
         if (bool != true) return false;
         anInt1332++;
-        if (i_93_ < 0 || i < 0 || i_93_ >= Class348_Sub33.aByteArrayArrayArray6962[1].length || i >= Class348_Sub33.aByteArrayArrayArray6962[1][i_93_].length) return false;
-        return (Class348_Sub33.aByteArrayArrayArray6962[1][i_93_][i] & 0x2) != 0;
+        if (x < 0 || y < 0 || x >= Class348_Sub33.aByteArrayArrayArray6962[1].length || y >= Class348_Sub33.aByteArrayArrayArray6962[1][x].length) return false;
+        return (Class348_Sub33.aByteArrayArrayArray6962[1][x][y] & 0x2) != 0;
     }
 
     final Class64 method803(Interface17 interface17, ha var_ha, int i, int i_94_, Class17 class17, Class87 class87, int i_95_, int i_96_, int i_97_) {
         try {
             anInt1389++;
             if (this.anIntArray1377 != null) {
-                Class79 class79_98_ = method794(interface17, -1);
-                if (class79_98_ == null) return null;
-                return class79_98_.method803(interface17, var_ha, i, i_94_, class17, class87, i_95_, 104, i_97_);
+                NPCDefinition NPCDefinition_98_ = method794(interface17, -1);
+                if (NPCDefinition_98_ == null) return null;
+                return NPCDefinition_98_.method803(interface17, var_ha, i, i_94_, class17, class87, i_95_, 104, i_97_);
             }
             if (i_96_ <= 98) method796(null, -10);
             if (anIntArray1380 == null) return null;
@@ -692,7 +697,7 @@ final class Class79 {
         return class348_sub35.anInt6976;
     }
 
-    public Class79() {
+    public NPCDefinition() {
         anInt1346 = 128;
         this.anInt1335 = -1;
         this.anInt1337 = 0;
@@ -718,7 +723,7 @@ final class Class79 {
         this.aString1372 = "null";
         this.anInt1382 = -1;
         this.anInt1371 = -1;
-        this.aByte1325 = (byte) 0;
+        this.walkMask = (byte) 0;
         anInt1368 = -1;
         this.anInt1390 = -1;
         this.aBoolean1331 = true;
@@ -734,7 +739,7 @@ final class Class79 {
         this.anInt1385 = -1;
         this.anInt1395 = -1;
         this.aBoolean1369 = true;
-        this.anInt1399 = 1;
+        this.size = 1;
         this.anInt1401 = -1;
         this.aBoolean1396 = true;
         this.aBoolean1397 = true;

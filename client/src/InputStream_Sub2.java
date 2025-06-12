@@ -44,7 +44,7 @@ final class InputStream_Sub2 extends InputStream {
                     int i_15_ = 512 * i_9_ - -256;
                     int i_16_ = 256 + 512 * i_10_;
                     int i_17_ = Class348_Sub40_Sub12.anInt9200;
-                    if (i_17_ < 3 && Class79.method802(i_10_, i_9_, true)) i_17_++;
+                    if (i_17_ < 3 && NPCDefinition.method802(i_10_, i_9_, true)) i_17_++;
                     Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4 = (new Class318_Sub1_Sub3_Sub4(i_11_, i_13_, Class367_Sub11.anInt7396, Class348_Sub40_Sub12.anInt9200, i_17_, i_15_, Class275.method2064(i_15_, Class348_Sub40_Sub12.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_));
                     r_Sub2.aClass262_10492.method1999(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
                 }

@@ -31,7 +31,7 @@ final class Class91 {
             Npc npc = (class348_sub22.aNpc_6859);
             if (Class5_Sub1.aBoolean8335 && Class348_Sub42_Sub1.method3169(i_3_, 0)) Class286_Sub2.method2146((byte) 84);
             if (Class348_Sub23_Sub3.anInt9041 != (npc.anInt10306)) {
-                if (npc.aClass79_10505.method793(0)) Class5.method181(true, npc);
+                if (npc.aNPCDefinition_10505.method793(0)) Class5.method181(true, npc);
                 npc.method2448(null, -2);
                 class348_sub22.method2715((byte) 52);
                 bool = true;

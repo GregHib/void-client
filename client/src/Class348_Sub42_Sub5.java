@@ -27,7 +27,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
             for (int i_2_ = 0; aClass348_Sub40Array9520.length > i_2_; i_2_++)
                 aClass348_Sub40Array9520[i_2_].method3045(i, i_0_, -256);
             Class348_Sub42_Sub13.method3232(d, (byte) -122);
-            Class79.method797(i_0_, i, (byte) 114);
+            NPCDefinition.method797(i_0_, i, (byte) 114);
             int[] is = new int[i * i_0_];
             int i_3_ = 0;
             for (int i_4_ = 0; i_0_ > i_4_; i_4_++) {
@@ -113,7 +113,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
             for (int i_24_ = 0; aClass348_Sub40Array9520.length > i_24_; i_24_++)
                 aClass348_Sub40Array9520[i_24_].method3045(i, i_23_, i_21_ + -256);
             Class348_Sub42_Sub13.method3232(d, (byte) -89);
-            Class79.method797(i_23_, i, (byte) 122);
+            NPCDefinition.method797(i_23_, i, (byte) 122);
             int[] is = new int[i_23_ * i];
             int i_25_;
             int i_26_;
@@ -179,7 +179,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (byte) -72);
             for (int i_43_ = 0; aClass348_Sub40Array9520.length > i_43_; i_43_++)
                 aClass348_Sub40Array9520[i_43_].method3045(i, i_41_, -256);
-            Class79.method797(i_41_, i, (byte) 115);
+            NPCDefinition.method797(i_41_, i, (byte) 115);
             float[] fs = new float[4 * i * i_41_];
             int i_44_ = 0;
             for (int i_45_ = 0; i_41_ > i_45_; i_45_++) {

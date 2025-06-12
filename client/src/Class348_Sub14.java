@@ -82,7 +82,7 @@ final class Class348_Sub14 extends Class348 {
                     for (int i_10_ = i; i_10_ <= 3; i_10_++) {
                         if (Class58.method536(i_9_, false, i_8_, i, i_10_)) {
                             int i_11_ = i_10_;
-                            if (Class79.method802(i_9_, i_8_, true)) i_11_--;
+                            if (NPCDefinition.method802(i_9_, i_8_, true)) i_11_--;
                             if (i_11_ >= 0) bool_7_ &= Class14_Sub2.method245(i_11_, i_8_, i_9_, (byte) 75);
                         }
                     }
@@ -132,7 +132,7 @@ final class Class348_Sub14 extends Class348 {
                                     int i_30_ = i_28_ + i_17_;
                                     if (i_5_ <= i_29_ && i_6_ <= i_30_ && Class58.method536(i_30_, false, i_29_, i, i_24_)) {
                                         int i_31_ = i_24_;
-                                        if (Class79.method802(i_30_, i_29_, true)) i_31_--;
+                                        if (NPCDefinition.method802(i_30_, i_29_, true)) i_31_--;
                                         if (i_31_ >= 0) Class348_Sub41.method3159(i_14_, ((-i_28_ + (RuntimeException_Sub1.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_ha, 4 * i_27_ + i_18_, i_13_);
                                     }
                                 }

@@ -11,7 +11,7 @@ final class Class295 {
     String aString3756;
     static int anInt3757;
     String aString3758;
-    static int[] anIntArray3759;
+    static int[] mapUndergroundTiles;
     static int anInt3760;
     static double aDouble3761;
     static int anInt3762;
@@ -49,7 +49,7 @@ final class Class295 {
 
     public static void method2223(int i) {
         aClass348_Sub42_Sub17Array3753 = null;
-        anIntArray3759 = null;
+        mapUndergroundTiles = null;
         aClass114_3751 = null;
         if (i < 100) aBoolean3763 = false;
     }

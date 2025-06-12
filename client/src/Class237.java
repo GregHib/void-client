@@ -708,7 +708,7 @@ class Class237 {
                                 int i_156_ = var_s_64_.method3982((byte) -86, i_73_, i_72_);
                                 int i_157_ = var_s_64_.method3982((byte) -86, i_74_, i_72_);
                                 int i_158_ = var_s_64_.method3982((byte) -86, i_74_, i_71_);
-                                boolean bool_159_ = Class79.method802(i_73_, i_71_, true);
+                                boolean bool_159_ = NPCDefinition.method802(i_73_, i_71_, true);
                                 if (bool_159_ && i_66_ > 1 || (!bool_159_ && i_66_ > 0)) {
                                     boolean bool_160_ = true;
                                     if (class22 != null && !class22.aBoolean334) bool_160_ = false;
@@ -1077,7 +1077,7 @@ class Class237 {
                                 int i_264_ = var_s_224_.method3982((byte) -86, i_227_, 1 + i_226_);
                                 int i_265_ = var_s_224_.method3982((byte) -86, 1 + i_227_, i_226_ - -1);
                                 int i_266_ = var_s_224_.method3982((byte) -86, i_227_ + 1, i_226_);
-                                boolean bool_267_ = Class79.method802(i_227_, i_226_, true);
+                                boolean bool_267_ = NPCDefinition.method802(i_227_, i_226_, true);
                                 if (bool_267_ && i > 1 || !bool_267_ && i > 0) {
                                     boolean bool_268_ = true;
                                     if (class22 != null && !class22.aBoolean334) bool_268_ = false;

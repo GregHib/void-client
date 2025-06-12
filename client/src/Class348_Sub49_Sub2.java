@@ -109,7 +109,7 @@ final class Class348_Sub49_Sub2 extends Class348_Sub49 {
         class348_sub40_sub8.anInt9164 = i;
         class348_sub40_sub8.aBoolean9160 = bool_20_;
         class348_sub40_sub8.method3044(109);
-        Class79.method797(i_18_, i_16_, (byte) 120);
+        NPCDefinition.method797(i_18_, i_16_, (byte) 120);
         if (bool != true) anIntArray9757 = null;
         for (int i_21_ = 0; i_21_ < i_18_; i_21_++)
             class348_sub40_sub8.method3069(i_21_, is[i_21_], (byte) 99);

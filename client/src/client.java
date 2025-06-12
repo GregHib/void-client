@@ -163,7 +163,7 @@ public final class client extends Applet_Sub1 {
         }
         Class3.aClass161_125 = Class135_Sub2.aClass161_4839;
         try {
-            Class348_Sub40_Sub27.aClipboard9357 = Class79.aClient1367.getToolkit().getSystemClipboard();
+            Class348_Sub40_Sub27.aClipboard9357 = NPCDefinition.aClient1367.getToolkit().getSystemClipboard();
         } catch (Exception exception) {
             /* empty */
         }
@@ -301,7 +301,7 @@ public final class client extends Applet_Sub1 {
         Class124.method1096(i ^ 0x11);
         Class2.method171((byte) 72);
         s.method3988(i + -182);
-        Class79.method804(-3752);
+        NPCDefinition.method804(-3752);
         Class213.method1564(104);
         FontRenderer.method2572((byte) 23);
         Class234.method1659((byte) -71);
@@ -911,7 +911,7 @@ public final class client extends Applet_Sub1 {
                 ha.anInt4583 = 0;
                 Class14_Sub1.aString8605 = null;
                 client var_client = new client();
-                Class79.aClient1367 = var_client;
+                NPCDefinition.aClient1367 = var_client;
                 var_client.method96(Class11.aClass231_196.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985), 23499, 768);
                 Class52.aFrame4904.setLocation(40, 40);
             } catch (Exception exception) {
@@ -1027,7 +1027,7 @@ public final class client extends Applet_Sub1 {
                 Class92.anInt1524 = 640;
                 ha_Sub2.anInt7666 = 480;
             }
-            Class79.aClient1367 = this;
+            NPCDefinition.aClient1367 = this;
             this.method95(Class92.anInt1524, 634, ha_Sub2.anInt7666, Class11.aClass231_196.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985, 50);
         }
     }
@@ -1227,7 +1227,7 @@ public final class client extends Applet_Sub1 {
                                                 Class237.aBoolean3103 = true;
                                                 Class348_Sub40_Sub26.anInt9349 = is[0];
                                                 InputStream_Sub2.anInt85 = is[1];
-                                                Class79.anInt1404 = is[2];
+                                                NPCDefinition.anInt1404 = is[2];
                                             }
                                             Class348_Sub42.anInt7059 = 1;
                                             Class348_Sub17.aBoolean6788 = false;
@@ -1608,7 +1608,7 @@ public final class client extends Applet_Sub1 {
         for (int i_96_ = 0; Class348_Sub32.anInt6930 > i_96_; i_96_++) {
             Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_96_].aNpc_6859);
             if (npc != null) {
-                byte i_97_ = (npc.aClass79_10505.aByte1325);
+                byte i_97_ = (npc.aNPCDefinition_10505.walkMask);
                 if ((i_97_ & 0x1) != 0) {
                     int i_98_ = npc.method2436((byte) 117);
                     if ((0x2 & i_97_) != 0 && npc.anInt10319 == 0 && Math.random() * 1000.0 < 10.0) {
@@ -1827,7 +1827,7 @@ public final class client extends Applet_Sub1 {
         }
         for (int i_115_ = 0; i_115_ < Class150.anInt2057; i_115_++) {
             Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_115_], -6008)).aNpc_6859);
-            if (!npc.method2445((byte) -4) || !(npc.aClass79_10505.method796(Class318_Sub1_Sub3_Sub3.aClass170_10209, 18627))) npc.anInt10285 = -1;
+            if (!npc.method2445((byte) -4) || !(npc.aNPCDefinition_10505.method796(Class318_Sub1_Sub3_Sub3.aClass170_10209, 18627))) npc.anInt10285 = -1;
             else {
                 npc.method2409((byte) -118);
                 if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= Class367_Sub4.anInt7319 || (npc.aShort8747) >= Class348_Sub40_Sub3.anInt9109)
@@ -1838,14 +1838,14 @@ public final class client extends Applet_Sub1 {
                     if (npc.anInt10223 > Class367_Sub11.anInt7396) i_116_ += 2;
                     i_116_ += 5 - npc.method2436((byte) 82) << 2;
                     if (Class37.anInt495 == 0) {
-                        if (npc.aClass79_10505.aBoolean1362) i_116_ += 64;
+                        if (npc.aNPCDefinition_10505.aBoolean1362) i_116_ += 64;
                         else i_116_ += 128;
                     } else if (Class37.anInt495 == 1) {
-                        if (npc.aClass79_10505.aBoolean1362) i_116_ += 32;
+                        if (npc.aNPCDefinition_10505.aBoolean1362) i_116_ += 32;
                         else i_116_ += 64;
                     }
-                    if (npc.aClass79_10505.aBoolean1345) i_116_ += 1024;
-                    else if (!npc.aClass79_10505.aBoolean1381) i_116_ += 256;
+                    if (npc.aNPCDefinition_10505.aBoolean1345) i_116_ += 1024;
+                    else if (!npc.aNPCDefinition_10505.aBoolean1381) i_116_ += 256;
                     npc.anInt10285 = i_116_ + 1;
                 }
             }

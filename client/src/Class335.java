@@ -22,14 +22,14 @@ final class Class335 {
                 i_4_ = 3;
             if (class348_sub9.anInt6675 != i_4_) {
                 int i_5_ = Class8.method214((class348_sub9.aNpc_6691), -1);
-                Class79 class79 = (class348_sub9.aNpc_6691.aClass79_10505);
-                if (class79.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
-                if (class79 == null || i_5_ == -1) {
+                NPCDefinition NPCDefinition = (class348_sub9.aNpc_6691.aNPCDefinition_10505);
+                if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
+                if (NPCDefinition == null || i_5_ == -1) {
                     class348_sub9.anInt6675 = i_4_;
                     class348_sub9.aBoolean6674 = false;
                     class348_sub9.anInt6685 = -1;
-                } else if ((class348_sub9.anInt6685 == i_5_) && (!class79.aBoolean1370 != class348_sub9.aBoolean6674)) {
-                    class348_sub9.anInt6677 = class79.anInt1356;
+                } else if ((class348_sub9.anInt6685 == i_5_) && (!NPCDefinition.aBoolean1370 != class348_sub9.aBoolean6674)) {
+                    class348_sub9.anInt6677 = NPCDefinition.anInt1356;
                     class348_sub9.anInt6675 = i_4_;
                 } else {
                     boolean bool = false;
@@ -43,12 +43,12 @@ final class Class335 {
                         }
                     }
                     if (bool) {
-                        class348_sub9.aBoolean6674 = class79.aBoolean1370;
+                        class348_sub9.aBoolean6674 = NPCDefinition.aBoolean1370;
                         class348_sub9.anInt6685 = i_5_;
                         class348_sub9.aClass348_Sub19_Sub1_6686 = null;
                         class348_sub9.aClass348_Sub10_6688 = null;
                         class348_sub9.anInt6675 = i_4_;
-                        class348_sub9.anInt6677 = class79.anInt1356;
+                        class348_sub9.anInt6677 = NPCDefinition.anInt1356;
                     }
                 }
             }

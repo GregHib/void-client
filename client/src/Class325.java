@@ -441,12 +441,12 @@ final class Class325 {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
-                            Class79 class79 = (npc.aClass79_10505);
-                            if (class79.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
-                            if (class79 != null) {
+                            NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
+                            if (NPCDefinition.anIntArray1377 != null) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
+                            if (NPCDefinition != null) {
                                 Class306.anInt3874++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class318_Sub7.aClass351_6443, Class348_Sub23_Sub2.aClass77_9029, -111));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, class79.anInt1344);
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, NPCDefinition.anInt1344);
                                 Class348_Sub42_Sub14.method3243(-99, class348_sub47);
                             }
                         }

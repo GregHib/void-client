@@ -52,8 +52,8 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                 byte[] is_15_ = is[i_14_];
                 if (is_15_ != null) {
                     Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
-                    int i_16_ = (Class348_Sub23_Sub3.anIntArray9042[i_14_] >> 8);
-                    int i_17_ = 0xff & Class348_Sub23_Sub3.anIntArray9042[i_14_];
+                    int i_16_ = (Class348_Sub23_Sub3.mapRegionIds[i_14_] >> 8);
+                    int i_17_ = 0xff & Class348_Sub23_Sub3.mapRegionIds[i_14_];
                     int i_18_ = -za_Sub2.regionTileX + i_16_ * 64;
                     int i_19_ = -Class90.regionTileY + i_17_ * 64;
                     Class369_Sub1.method3570(false);
@@ -66,8 +66,8 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                 }
             }
             for (int i_20_ = 0; i_20_ < i_13_; i_20_++) {
-                int i_21_ = ((Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) * 64 - za_Sub2.regionTileX);
-                int i_22_ = (-Class90.regionTileY + ((0xff & Class348_Sub23_Sub3.anIntArray9042[i_20_]) * 64));
+                int i_21_ = ((Class348_Sub23_Sub3.mapRegionIds[i_20_] >> 8) * 64 - za_Sub2.regionTileX);
+                int i_22_ = (-Class90.regionTileY + ((0xff & Class348_Sub23_Sub3.mapRegionIds[i_20_]) * 64));
                 byte[] is_23_ = is[i_20_];
                 if (is_23_ == null && Class327.anInt4095 < 800) {
                     Class369_Sub1.method3570(false);

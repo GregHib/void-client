@@ -88,7 +88,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
         if (Class239_Sub12.aString5966 != null) string_5_ = "/p=" + Class239_Sub12.aString5966;
         String string_6_ = ("http://" + string + string_4_ + "/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (!Class289.aBoolean3697 ? "0" : "1") + ",o" + (Class348_Sub37.aBoolean6997 ? "1" : "0") + ",a2");
         try {
-            Class79.aClient1367.getAppletContext().showDocument(new URL(string_6_), "_self");
+            NPCDefinition.aClient1367.getAppletContext().showDocument(new URL(string_6_), "_self");
             if (i_3_ >= -17) aClass297_8992 = null;
         } catch (Exception exception) {
             return false;

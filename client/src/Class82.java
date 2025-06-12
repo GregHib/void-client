@@ -519,7 +519,7 @@ final class Class82 {
                             break;
                         }
                         if (string.equals("errormessage")) {
-                            Applet_Sub1.method94(Class79.aClient1367.method81((byte) 102), 102);
+                            Applet_Sub1.method94(NPCDefinition.aClient1367.method81((byte) 102), 102);
                             break;
                         }
                         if (string.equals("heapdump")) {

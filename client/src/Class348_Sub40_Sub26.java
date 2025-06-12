@@ -75,24 +75,24 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         }
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_18_][];
         Class129.aByteArrayArray1887 = new byte[i_18_][];
-        aa_Sub1.anIntArray5192 = new int[i_18_];
+        aa_Sub1.mapTiles = new int[i_18_];
         Class14_Sub4.aByteArrayArray8642 = new byte[i_18_][];
-        Applet_Sub1.anIntArray38 = new int[i_18_];
+        Applet_Sub1.mapLocations = new int[i_18_];
         Class348_Sub50.aByteArrayArray7212 = null;
-        r.anIntArray9724 = new int[i_18_];
-        Class322.anIntArray4031 = null;
+        r.mapUndergroundLocations = new int[i_18_];
+        Class322.mapNpcs = null;
         Class347.aByteArrayArray4281 = new byte[i_18_][];
         if (i >= -47) anInt9349 = -54;
-        Class295.anIntArray3759 = new int[i_18_];
-        Class348_Sub23_Sub3.anIntArray9042 = new int[i_18_];
+        Class295.mapUndergroundTiles = new int[i_18_];
+        Class348_Sub23_Sub3.mapRegionIds = new int[i_18_];
         i_18_ = 0;
         for (int i_21_ = (-(Class367_Sub4.anInt7319 >> 4) + i_17_) / 8; i_21_ <= (i_17_ + (Class367_Sub4.anInt7319 >> 4)) / 8; i_21_++) {
             for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8; (i_22_ <= ((Class348_Sub40_Sub3.anInt9109 >> 4) + i_16_) / 8); i_22_++) {
-                Class348_Sub23_Sub3.anIntArray9042[i_18_] = i_22_ + (i_21_ << 8);
-                aa_Sub1.anIntArray5192[i_18_] = Class367_Sub10.MAPS.method417("m" + i_21_ + "_" + i_22_, 0);
-                Applet_Sub1.anIntArray38[i_18_] = Class367_Sub10.MAPS.method417("l" + i_21_ + "_" + i_22_, 0);
-                Class295.anIntArray3759[i_18_] = Class367_Sub10.MAPS.method417("um" + i_21_ + "_" + i_22_, 0);
-                r.anIntArray9724[i_18_] = Class367_Sub10.MAPS.method417("ul" + i_21_ + "_" + i_22_, 0);
+                Class348_Sub23_Sub3.mapRegionIds[i_18_] = i_22_ + (i_21_ << 8);
+                aa_Sub1.mapTiles[i_18_] = Class367_Sub10.MAPS.method417("m" + i_21_ + "_" + i_22_, 0);
+                Applet_Sub1.mapLocations[i_18_] = Class367_Sub10.MAPS.method417("l" + i_21_ + "_" + i_22_, 0);
+                Class295.mapUndergroundTiles[i_18_] = Class367_Sub10.MAPS.method417("um" + i_21_ + "_" + i_22_, 0);
+                r.mapUndergroundLocations[i_18_] = Class367_Sub10.MAPS.method417("ul" + i_21_ + "_" + i_22_, 0);
                 i_18_++;
             }
         }

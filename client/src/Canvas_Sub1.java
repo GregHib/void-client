@@ -127,36 +127,36 @@ final class Canvas_Sub1 extends Canvas {
         Class268.anInt3441 = 0;
         boolean bool = true;
         for (int i_19_ = 0; Class347.aByteArrayArray4281.length > i_19_; i_19_++) {
-            if (aa_Sub1.anIntArray5192[i_19_] != -1 && Class347.aByteArrayArray4281[i_19_] == null) {
-                Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.MAPS.method410(-1860, aa_Sub1.anIntArray5192[i_19_], 0);
+            if (aa_Sub1.mapTiles[i_19_] != -1 && Class347.aByteArrayArray4281[i_19_] == null) {
+                Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.MAPS.method410(-1860, aa_Sub1.mapTiles[i_19_], 0);
                 if (Class347.aByteArrayArray4281[i_19_] == null) {
                     bool = false;
                     Class268.anInt3441++;
                 }
             }
-            if (Applet_Sub1.anIntArray38[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
-                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.method393(Applet_Sub1.anIntArray38[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+            if (Applet_Sub1.mapLocations[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
+                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.method393(Applet_Sub1.mapLocations[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
                     Class268.anInt3441++;
                     bool = false;
                 }
             }
-            if (Class295.anIntArray3759[i_19_] != -1 && Class129.aByteArrayArray1887[i_19_] == null) {
-                Class129.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.method410(-1860, Class295.anIntArray3759[i_19_], 0);
+            if (Class295.mapUndergroundTiles[i_19_] != -1 && Class129.aByteArrayArray1887[i_19_] == null) {
+                Class129.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.method410(-1860, Class295.mapUndergroundTiles[i_19_], 0);
                 if (Class129.aByteArrayArray1887[i_19_] == null) {
                     Class268.anInt3441++;
                     bool = false;
                 }
             }
-            if (r.anIntArray9724[i_19_] != -1 && Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
-                Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] = Class367_Sub10.MAPS.method410(-1860, r.anIntArray9724[i_19_], 0);
+            if (r.mapUndergroundLocations[i_19_] != -1 && Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
+                Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] = Class367_Sub10.MAPS.method410(-1860, r.mapUndergroundLocations[i_19_], 0);
                 if (Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
                     bool = false;
                     Class268.anInt3441++;
                 }
             }
-            if (Class322.anIntArray4031 != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && Class322.anIntArray4031[i_19_] != -1) {
-                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(Class322.anIntArray4031[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+            if (Class322.mapNpcs != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && Class322.mapNpcs[i_19_] != -1) {
+                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(Class322.mapNpcs[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class348_Sub50.aByteArrayArray7212[i_19_] == null) {
                     bool = false;
                     Class268.anInt3441++;
@@ -179,8 +179,8 @@ final class Canvas_Sub1 extends Canvas {
             for (int i_20_ = 0; i_20_ < Class347.aByteArrayArray4281.length; i_20_++) {
                 byte[] is = Class14_Sub4.aByteArrayArray8642[i_20_];
                 if (is != null) {
-                    int i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) - za_Sub2.regionTileX;
-                    int i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] & 0xff) - Class90.regionTileY;
+                    int i_21_ = 64 * (Class348_Sub23_Sub3.mapRegionIds[i_20_] >> 8) - za_Sub2.regionTileX;
+                    int i_22_ = 64 * (Class348_Sub23_Sub3.mapRegionIds[i_20_] & 0xff) - Class90.regionTileY;
                     if (Class312.anInt3931 != 0) {
                         i_22_ = 10;
                         i_21_ = 10;
@@ -189,8 +189,8 @@ final class Canvas_Sub1 extends Canvas {
                 }
                 is = Class348_Sub23_Sub1.aByteArrayArray8996[i_20_];
                 if (is != null) {
-                    int i_23_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] >> 8) - za_Sub2.regionTileX;
-                    int i_24_ = 64 * (Class348_Sub23_Sub3.anIntArray9042[i_20_] & 0xff) + -Class90.regionTileY;
+                    int i_23_ = 64 * (Class348_Sub23_Sub3.mapRegionIds[i_20_] >> 8) - za_Sub2.regionTileX;
+                    int i_24_ = 64 * (Class348_Sub23_Sub3.mapRegionIds[i_20_] & 0xff) + -Class90.regionTileY;
                     if (Class312.anInt3931 != 0) {
                         i_24_ = 10;
                         i_23_ = 10;

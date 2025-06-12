@@ -53,7 +53,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     static int anInt35;
     static int anInt36;
     static int anInt37;
-    static int[] anIntArray38;
+    static int[] mapLocations;
     static int anInt39;
     static int anInt40;
     public static boolean aBoolean41;
@@ -519,7 +519,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     }
 
     public static void method98(int i) {
-        anIntArray38 = null;
+        mapLocations = null;
         aFontRenderer_20 = null;
         if (i != 32717) method86(null, 65);
     }

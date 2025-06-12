@@ -49,7 +49,7 @@ final class Class211 {
             int i_9_ = -Class90.regionTileY + i_3_ + (i_7_ << 6);
             player.aByteArray10321[0] = Class259.aByteArray3300[i];
             player.plane = player.aByte6376 = (byte) i_5_;
-            if (Class79.method802(i_9_, i_8_, true)) player.aByte6376++;
+            if (NPCDefinition.method802(i_9_, i_8_, true)) player.aByte6376++;
             player.method2449(i_9_, i_8_, (byte) 102);
             player.aBoolean10539 = false;
             Class348_Sub17.aClass359Array6802[i] = null;

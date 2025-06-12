@@ -63,7 +63,7 @@ final class Class239_Sub2 extends Class239 {
             for (int i_7_ = i_3_ - 4; i_3_ - -4 >= i_7_; i_7_++) {
                 for (int i_8_ = -4 + i_4_; i_8_ <= 4 + i_4_; i_8_++) {
                     int i_9_ = Class355.anInt4372;
-                    if (i_9_ < 3 && Class79.method802(i_8_, i_7_, true)) i_9_++;
+                    if (i_9_ < 3 && NPCDefinition.method802(i_8_, i_7_, true)) i_9_++;
                     int i_10_ = 0;
                     if ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104) != null && (Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_]) != null) i_10_ = 8 * ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_][i_7_][i_8_]) & 0xff) << 2;
                     if (aa_Sub1.aSArray5191 != null && aa_Sub1.aSArray5191[i_9_] != null) {

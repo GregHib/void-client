@@ -66,7 +66,7 @@ final class Class239_Sub11 extends Class239 {
         if (Class367_Sub8.anInt7365 == 0) {
             Class267.aClass267_3401.method2025(new Class309("jaclib"), false);
             if (Class267.aClass267_3401.method2027(119).method31(28) != 100) return 1;
-            if (!((Class309) Class267.aClass267_3401.method2027(71)).method2313(124)) Class79.aClient1367.method97(i + 24);
+            if (!((Class309) Class267.aClass267_3401.method2027(71)).method2313(124)) NPCDefinition.aClient1367.method97(i + 24);
             Class367_Sub8.anInt7365 = 1;
         }
         if (Class367_Sub8.anInt7365 == 1) {
@@ -126,8 +126,8 @@ final class Class239_Sub11 extends Class239 {
             if (i_13_ < 100) bool = false;
         }
         if (bool) {
-            if (!((Class309) Class267.aClass267_3404.method2027(92)).method2313(102)) Class79.aClient1367.method83(true);
-            if (!((Class309) Class267.aClass267_3407.method2027(i ^ ~0x64)).method2313(103)) Class38.aBoolean510 = Class79.aClient1367.method100(i ^ ~0x12);
+            if (!((Class309) Class267.aClass267_3404.method2027(92)).method2313(102)) NPCDefinition.aClient1367.method83(true);
+            if (!((Class309) Class267.aClass267_3407.method2027(i ^ ~0x64)).method2313(103)) Class38.aBoolean510 = NPCDefinition.aClient1367.method100(i ^ ~0x12);
             Class126.aClass267Array4987 = null;
         }
         i_9_ -= Class348_Sub40_Sub24.anInt9327;

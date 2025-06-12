@@ -977,14 +977,14 @@ final class Class66 {
                 Class348_Sub40_Sub16.anInt9231 = anIntArray1149[anInt1173 + 5];
                 Class318_Sub1_Sub3_Sub3.anInt10257 = anIntArray1149[anInt1173 + 6];
                 Class313.anInt3937 = anIntArray1149[anInt1173 + 7];
-                Class79.anInt1387 = anIntArray1149[anInt1173 + 8];
+                NPCDefinition.anInt1387 = anIntArray1149[anInt1173 + 8];
                 Class348_Sub42_Sub11.anInt9586 = anIntArray1149[anInt1173 + 9];
                 Class5_Sub2.anInt8363 = anIntArray1149[anInt1173 + 10];
                 Class21.SPRITES.method421(false, Class231.anInt2996);
                 Class21.SPRITES.method421(false, Class348_Sub40_Sub16.anInt9231);
                 Class21.SPRITES.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257);
                 Class21.SPRITES.method421(false, Class313.anInt3937);
-                Class21.SPRITES.method421(false, Class79.anInt1387);
+                Class21.SPRITES.method421(false, NPCDefinition.anInt1387);
                 Class348_Sub42_Sub15.aSprite_9659 = Class110.aSprite_1706 = Class174.aSprite_2309 = null;
                 OutputStream_Sub2.aSprite_106 = Class121.aSprite_1800 = Class348_Sub5.aSprite_6627 = null;
                 Class348_Sub42_Sub15.aSprite_9658 = Class309.aSprite_4808 = null;

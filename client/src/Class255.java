@@ -141,7 +141,7 @@ final class Class255 {
             Class113.aSpriteArray1744 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class113.aSpriteArray1744[i] = var_ha.method3691(class207s[i], true);
-            Class79.aSprite_1365 = var_ha.method3691(Class207.method1521(index, Class52.anInt4895, 0), bool);
+            NPCDefinition.aSprite_1365 = var_ha.method3691(Class207.method1521(index, Class52.anInt4895, 0), bool);
             Class239_Sub24.aSprite_6097 = var_ha.method3691(Class207.method1521(index, (Class186_Sub1.anInt5814), 0), true);
             class207s = Class207.method1519(index, Class5_Sub3.anInt8370, 0);
             Class200.aSpriteArray2640 = new Sprite[class207s.length];

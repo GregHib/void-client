@@ -187,9 +187,9 @@ final class Class239_Sub24 extends Class239 {
                                     if (class348_sub22 != null) {
                                         Npc npc = (class348_sub22.aNpc_6859);
                                         if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
-                                            int i_38_ = ((npc.x) - ((npc.aClass79_10505.anInt1399) + -1 << 8));
-                                            int i_39_ = (-((-1 + (npc.aClass79_10505.anInt1399)) << 8) + (npc.y));
-                                            if (i_35_ <= i_38_ && ((-(i_38_ + -i_35_ >> 9) + (player.method2436((byte) 68))) >= (npc.aClass79_10505.anInt1399)) && i_36_ <= i_39_ && ((-(-i_36_ + i_39_ >> 9) + (player.method2436((byte) 97))) >= (npc.aClass79_10505.anInt1399))) {
+                                            int i_38_ = ((npc.x) - ((npc.aNPCDefinition_10505.size) + -1 << 8));
+                                            int i_39_ = (-((-1 + (npc.aNPCDefinition_10505.size)) << 8) + (npc.y));
+                                            if (i_35_ <= i_38_ && ((-(i_38_ + -i_35_ >> 9) + (player.method2436((byte) 68))) >= (npc.aNPCDefinition_10505.size)) && i_36_ <= i_39_ && ((-(-i_36_ + i_39_ >> 9) + (player.method2436((byte) 97))) >= (npc.aNPCDefinition_10505.size))) {
                                                 Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410.plane) != (Class132.aPlayer_1907.plane)), false, npc);
                                                 npc.anInt10215 = Class367_Sub11.anInt7396;
                                             }
@@ -216,18 +216,18 @@ final class Class239_Sub24 extends Class239 {
                         }
                         if (class318_sub4.aClass318_Sub1_6410 instanceof Npc) {
                             Npc npc = ((Npc) (class318_sub4.aClass318_Sub1_6410));
-                            if (npc.aClass79_10505 != null) {
-                                if (((npc.aClass79_10505.anInt1399 & 0x1) == 0 && (0x1ff & (npc.x)) == 0 && (0x1ff & (npc.y)) == 0) || ((0x1 & npc.aClass79_10505.anInt1399) == 1 && (0x1ff & (npc.x)) == 256 && ((npc.y) & 0x1ff) == 256)) {
-                                    int i_45_ = ((npc.x) - ((-1 + npc.aClass79_10505.anInt1399) << 8));
-                                    int i_46_ = ((npc.y) - (npc.aClass79_10505.anInt1399 - 1 << 8));
+                            if (npc.aNPCDefinition_10505 != null) {
+                                if (((npc.aNPCDefinition_10505.size & 0x1) == 0 && (0x1ff & (npc.x)) == 0 && (0x1ff & (npc.y)) == 0) || ((0x1 & npc.aNPCDefinition_10505.size) == 1 && (0x1ff & (npc.x)) == 256 && ((npc.y) & 0x1ff) == 256)) {
+                                    int i_45_ = ((npc.x) - ((-1 + npc.aNPCDefinition_10505.size) << 8));
+                                    int i_46_ = ((npc.y) - (npc.aNPCDefinition_10505.size - 1 << 8));
                                     for (int i_47_ = 0; i_47_ < Class150.anInt2057; i_47_++) {
                                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_47_], -6008)));
                                         if (class348_sub22 != null) {
                                             Npc npc_48_ = (class348_sub22.aNpc_6859);
                                             if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
-                                                int i_49_ = (-((npc_48_.aClass79_10505.anInt1399) - 1 << 8) + (npc_48_.x));
-                                                int i_50_ = ((npc_48_.y) + -((npc_48_.aClass79_10505.anInt1399) - 1 << 8));
-                                                if (i_49_ >= i_45_ && ((npc_48_.aClass79_10505.anInt1399) <= ((npc.aClass79_10505.anInt1399) - (-i_45_ + i_49_ >> 9))) && (i_46_ <= i_50_) && ((npc_48_.aClass79_10505.anInt1399) <= ((npc.aClass79_10505.anInt1399) + -(i_50_ + -i_46_ >> 9)))) {
+                                                int i_49_ = (-((npc_48_.aNPCDefinition_10505.size) - 1 << 8) + (npc_48_.x));
+                                                int i_50_ = ((npc_48_.y) + -((npc_48_.aNPCDefinition_10505.size) - 1 << 8));
+                                                if (i_49_ >= i_45_ && ((npc_48_.aNPCDefinition_10505.size) <= ((npc.aNPCDefinition_10505.size) - (-i_45_ + i_49_ >> 9))) && (i_46_ <= i_50_) && ((npc_48_.aNPCDefinition_10505.size) <= ((npc.aNPCDefinition_10505.size) + -(i_50_ + -i_46_ >> 9)))) {
                                                     Class286_Sub3.method2150(((class318_sub4.aClass318_Sub1_6410.plane) != (Class132.aPlayer_1907.plane)), false, npc_48_);
                                                     npc_48_.anInt10215 = (Class367_Sub11.anInt7396);
                                                 }
@@ -241,7 +241,7 @@ final class Class239_Sub24 extends Class239 {
                                         if ((player != null) && (Class367_Sub11.anInt7396 != (player.anInt10215)) && (player.aBoolean10309)) {
                                             int i_53_ = ((player.x) - ((-1 + (player.method2436((byte) 116))) << 8));
                                             int i_54_ = ((player.y) + -((player.method2436((byte) 121)) + -1 << 8));
-                                            if ((i_53_ >= i_45_) && ((-(-i_45_ + i_53_ >> 9) + (npc.aClass79_10505.anInt1399)) >= player.method2436((byte) 114)) && (i_54_ >= i_46_) && (player.method2436((byte) 58) <= ((npc.aClass79_10505.anInt1399) - (i_54_ + -i_46_ >> 9)))) {
+                                            if ((i_53_ >= i_45_) && ((-(-i_45_ + i_53_ >> 9) + (npc.aNPCDefinition_10505.size)) >= player.method2436((byte) 114)) && (i_54_ >= i_46_) && (player.method2436((byte) 58) <= ((npc.aNPCDefinition_10505.size) - (i_54_ + -i_46_ >> 9)))) {
                                                 Class348_Sub43.method3298((byte) 125, ((class318_sub4.aClass318_Sub1_6410.plane) != (Class132.aPlayer_1907.plane)), player);
                                                 player.anInt10215 = Class367_Sub11.anInt7396;
                                             }

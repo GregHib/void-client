@@ -29,44 +29,44 @@ abstract class Class101 {
         Class355.anInt4372 = Class132.aPlayer_1907.plane = (byte) 0;
         Class132.aPlayer_1907.method2449(8, 8, (byte) 118);
         if (i != -49) anInt1597 = 115;
-        int i_6_ = 18;
-        Class322.anIntArray4031 = new int[i_6_];
-        Class348_Sub50.aByteArrayArray7212 = new byte[i_6_][];
-        Class239_Sub6.anIntArrayArray5894 = new int[i_6_][4];
-        aa_Sub1.anIntArray5192 = new int[i_6_];
-        Class14_Sub4.aByteArrayArray8642 = new byte[i_6_][];
-        Class348_Sub23_Sub3.anIntArray9042 = new int[i_6_];
-        r.anIntArray9724 = new int[i_6_];
-        Class295.anIntArray3759 = new int[i_6_];
-        Class347.aByteArrayArray4281 = new byte[i_6_][];
-        Applet_Sub1.anIntArray38 = new int[i_6_];
-        Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_6_][];
-        Class129.aByteArrayArray1887 = new byte[i_6_][];
-        i_6_ = 0;
-        for (int i_7_ = (i_4_ + -(Class367_Sub4.anInt7319 >> 4)) / 8; (i_4_ - -(Class367_Sub4.anInt7319 >> 4)) / 8 >= i_7_; i_7_++) {
-            for (int i_8_ = (-(Class348_Sub40_Sub3.anInt9109 >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8 >= i_8_); i_8_++) {
-                int i_9_ = i_8_ + (i_7_ << 8);
-                Class348_Sub23_Sub3.anIntArray9042[i_6_] = i_9_;
-                aa_Sub1.anIntArray5192[i_6_] = Class367_Sub10.MAPS.method417("m" + i_7_ + "_" + i_8_, i + 49);
-                Applet_Sub1.anIntArray38[i_6_] = Class367_Sub10.MAPS.method417("l" + i_7_ + "_" + i_8_, 0);
-                Class322.anIntArray4031[i_6_] = Class367_Sub10.MAPS.method417("n" + i_7_ + "_" + i_8_, 0);
-                Class295.anIntArray3759[i_6_] = Class367_Sub10.MAPS.method417("um" + i_7_ + "_" + i_8_, 0);
-                r.anIntArray9724[i_6_] = (Class367_Sub10.MAPS.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i, -49)));
-                if (Class322.anIntArray4031[i_6_] == -1) {
-                    aa_Sub1.anIntArray5192[i_6_] = -1;
-                    Applet_Sub1.anIntArray38[i_6_] = -1;
-                    Class295.anIntArray3759[i_6_] = -1;
-                    r.anIntArray9724[i_6_] = -1;
+        int index = 18;
+        Class322.mapNpcs = new int[index];
+        Class348_Sub50.aByteArrayArray7212 = new byte[index][];
+        Class239_Sub6.anIntArrayArray5894 = new int[index][4];
+        aa_Sub1.mapTiles = new int[index];
+        Class14_Sub4.aByteArrayArray8642 = new byte[index][];
+        Class348_Sub23_Sub3.mapRegionIds = new int[index];
+        r.mapUndergroundLocations = new int[index];
+        Class295.mapUndergroundTiles = new int[index];
+        Class347.aByteArrayArray4281 = new byte[index][];
+        Applet_Sub1.mapLocations = new int[index];
+        Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[index][];
+        Class129.aByteArrayArray1887 = new byte[index][];
+        index = 0;
+        for (int regionX = (i_4_ + -(Class367_Sub4.anInt7319 >> 4)) / 8; (i_4_ - -(Class367_Sub4.anInt7319 >> 4)) / 8 >= regionX; regionX++) {
+            for (int regionY = (-(Class348_Sub40_Sub3.anInt9109 >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8 >= regionY); regionY++) {
+                int regionId = regionY + (regionX << 8);
+                Class348_Sub23_Sub3.mapRegionIds[index] = regionId;
+                aa_Sub1.mapTiles[index] = Class367_Sub10.MAPS.method417("m" + regionX + "_" + regionY, i + 49);
+                Applet_Sub1.mapLocations[index] = Class367_Sub10.MAPS.method417("l" + regionX + "_" + regionY, 0);
+                Class322.mapNpcs[index] = Class367_Sub10.MAPS.method417("n" + regionX + "_" + regionY, 0);
+                Class295.mapUndergroundTiles[index] = Class367_Sub10.MAPS.method417("um" + regionX + "_" + regionY, 0);
+                r.mapUndergroundLocations[index] = (Class367_Sub10.MAPS.method417("ul" + regionX + "_" + regionY, Class348_Sub21.method2955(i, -49)));
+                if (Class322.mapNpcs[index] == -1) {
+                    aa_Sub1.mapTiles[index] = -1;
+                    Applet_Sub1.mapLocations[index] = -1;
+                    Class295.mapUndergroundTiles[index] = -1;
+                    r.mapUndergroundLocations[index] = -1;
                 }
-                i_6_++;
+                index++;
             }
         }
-        for (int i_10_ = i_6_; Class322.anIntArray4031.length > i_10_; i_10_++) {
-            Class322.anIntArray4031[i_10_] = -1;
-            aa_Sub1.anIntArray5192[i_10_] = -1;
-            Applet_Sub1.anIntArray38[i_10_] = -1;
-            Class295.anIntArray3759[i_10_] = -1;
-            r.anIntArray9724[i_10_] = -1;
+        for (int i_10_ = index; Class322.mapNpcs.length > i_10_; i_10_++) {
+            Class322.mapNpcs[i_10_] = -1;
+            aa_Sub1.mapTiles[i_10_] = -1;
+            Applet_Sub1.mapLocations[i_10_] = -1;
+            Class295.mapUndergroundTiles[i_10_] = -1;
+            r.mapUndergroundLocations[i_10_] = -1;
         }
         int i_11_;
         if (Class240.anInt4674 != 3) i_11_ = 8;

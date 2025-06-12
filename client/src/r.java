@@ -11,7 +11,7 @@ abstract class r extends Class348_Sub42 {
     static volatile int anInt9721;
     static boolean aBoolean9722 = false;
     static int[][] anIntArrayArray9723;
-    static int[] anIntArray9724;
+    static int[] mapUndergroundLocations;
 
     public r() {
         /* empty */
@@ -28,7 +28,7 @@ abstract class r extends Class348_Sub42 {
     public static void method3285(int i) {
         int i_0_ = -61 % ((i - -73) / 32);
         aClass101_9720 = null;
-        anIntArray9724 = null;
+        mapUndergroundLocations = null;
         aBooleanArray9718 = null;
         aClass312_9716 = null;
         anIntArrayArray9723 = null;

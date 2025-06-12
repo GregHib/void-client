@@ -58,7 +58,7 @@ final class Class239_Sub5 extends Class239 {
         player.anIntArray10317[0] = i_7_ + -Class90.regionTileY;
         player.y = (((player.anIntArray10317[0]) << 9) - -(player.method2436((byte) 85) << 8));
         Class355.anInt4372 = player.plane = player.aByte6376 = i_5_;
-        if (Class79.method802((player.anIntArray10317[0]), (player.anIntArray10320[0]), true)) player.aByte6376++;
+        if (NPCDefinition.method802((player.anIntArray10317[0]), (player.anIntArray10320[0]), true)) player.aByte6376++;
         if (Class154.aClass348_Sub49Array2105[i_3_] != null) player.method2452((byte) 84, (Class154.aClass348_Sub49Array2105[i_3_]));
         Class328_Sub1.anInt6513 = 0;
         Class286_Sub7.anIntArray6290[Class328_Sub1.anInt6513++] = i_3_;

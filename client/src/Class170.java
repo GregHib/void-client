@@ -188,11 +188,11 @@ final class Class170 implements Interface17 {
             int i_40_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             if ((0x10 & i_40_) != 0) i_40_ += Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(i ^ ~0xff00) << 8;
             if ((0x2 & i_40_) != 0) {
-                if (npc.aClass79_10505.method793(i ^ ~0xffff)) Class5.method181(true, npc);
+                if (npc.aNPCDefinition_10505.method793(i ^ ~0xffff)) Class5.method181(true, npc);
                 npc.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.readShortAdd(-1), -1)), -2);
-                npc.method2434((byte) 95, npc.aClass79_10505.anInt1399);
-                npc.anInt10310 = npc.aClass79_10505.anInt1329 << 3;
-                if (npc.aClass79_10505.method793(0)) Class223.method1614(979190089, npc, (npc.plane), (npc.anIntArray10317[0]), (npc.anIntArray10320[0]), null, null, 0);
+                npc.method2434((byte) 95, npc.aNPCDefinition_10505.size);
+                npc.anInt10310 = npc.aNPCDefinition_10505.anInt1329 << 3;
+                if (npc.aNPCDefinition_10505.method793(0)) Class223.method1614(979190089, npc, (npc.plane), (npc.anIntArray10317[0]), (npc.anIntArray10320[0]), null, null, 0);
             }
             if ((0x8 & i_40_) != 0) {
                 int[] is = new int[4];

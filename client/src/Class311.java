@@ -95,7 +95,7 @@ final class Class311 implements Runnable {
                         try {
                             if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294)) Class348_Sub8.aHa6654.method3689((byte) 57);
                         } catch (Exception_Sub1 exception_sub1) {
-                            Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + Class79.aClient1367.method81((byte) 80)), exception_sub1, 15004);
+                            Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + NPCDefinition.aClient1367.method81((byte) 80)), exception_sub1, 15004);
                             Class367_Sub10.method3553(true, (byte) 114, 0);
                         }
                     }

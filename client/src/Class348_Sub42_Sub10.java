@@ -56,7 +56,7 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
     }
 
     static final void method3211(byte i) {
-        Class79.aClient1367.method83(true);
+        NPCDefinition.aClient1367.method83(true);
         anInt9569++;
         Class348_Sub3.method2739(0);
         Class289.anInt3699 = 0;

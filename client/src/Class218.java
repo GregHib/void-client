@@ -21,7 +21,7 @@ final class Class218 {
         anInt2855++;
         if (i >= 1 && i_5_ >= 1 && -2 + Class367_Sub4.anInt7319 >= i && i_5_ <= -2 + Class348_Sub40_Sub3.anInt9109) {
             int i_8_ = i_7_;
-            if (i_8_ < 3 && Class79.method802(i_5_, i, true)) i_8_++;
+            if (i_8_ < 3 && NPCDefinition.method802(i_5_, i, true)) i_8_++;
             if ((Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 0 && !Class58.method536(i_5_, false, i, Class167.anInt2204, i_8_)) || Class147.aClass357ArrayArrayArray2029 == null) return;
             Class338.aClass237_Sub1_4197.method1694((Class348_Sub45.aClass361Array7108[i_7_]), i_1_, i_7_, Class348_Sub8.aHa6654, i, i_5_, (byte) 106);
             if (i_3_ >= 0) {

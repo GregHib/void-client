@@ -63,7 +63,7 @@ final class Class40 {
         Class348_Sub12.aSpriteArray6742 = null;
         Class240.aSpriteArray4679 = null;
         if (i != -29776) method370(true);
-        Class79.aSprite_1365 = null;
+        NPCDefinition.aSprite_1365 = null;
         Class25.aSpriteArray367 = null;
         Class239_Sub9.aSpriteArray5933 = null;
         Class200.aSpriteArray2640 = null;

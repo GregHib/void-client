@@ -462,7 +462,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     final int method2436(byte i) {
         if (i <= 39) method2455(-97, -62, (byte) 0, 103);
         anInt10546++;
-        if (this.aClass154_10536 != null && this.aClass154_10536.anInt2093 != -1) return (Class189.aClass278_2529.method2079(this.aClass154_10536.anInt2093, -1).anInt1399);
+        if (this.aClass154_10536 != null && this.aClass154_10536.anInt2093 != -1) return (Class189.aClass278_2529.method2079(this.aClass154_10536.anInt2093, -1).size);
         return super.method2436((byte) 72);
     }
 

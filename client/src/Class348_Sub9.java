@@ -180,19 +180,19 @@ final class Class348_Sub9 extends Class348 {
                     int i_12_ = (Class8.method214((this.aNpc_6691), -1));
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_;
-                        Class79 class79 = (this.aNpc_6691.aClass79_10505);
-                        if (class79.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
-                        if (class79 == null) {
+                        NPCDefinition NPCDefinition = (this.aNpc_6691.aNPCDefinition_10505);
+                        if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
+                        if (NPCDefinition == null) {
                             this.anInt6677 = this.anInt6694 = 0;
                             this.anInt6681 = 256;
                             this.anInt6696 = 256;
-                            this.aBoolean6674 = this.aNpc_6691.aClass79_10505.aBoolean1370;
+                            this.aBoolean6674 = this.aNpc_6691.aNPCDefinition_10505.aBoolean1370;
                         } else {
-                            this.anInt6694 = class79.anInt1392 << 9;
-                            this.anInt6681 = class79.anInt1363;
-                            this.anInt6677 = class79.anInt1356;
-                            this.aBoolean6674 = class79.aBoolean1370;
-                            this.anInt6696 = class79.anInt1340;
+                            this.anInt6694 = NPCDefinition.anInt1392 << 9;
+                            this.anInt6681 = NPCDefinition.anInt1363;
+                            this.anInt6677 = NPCDefinition.anInt1356;
+                            this.aBoolean6674 = NPCDefinition.aBoolean1370;
+                            this.anInt6696 = NPCDefinition.anInt1340;
                         }
                     }
                 }

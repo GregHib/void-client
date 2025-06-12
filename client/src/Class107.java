@@ -136,12 +136,12 @@ final class Class107 {
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
                             if (npc.method2445((byte) -126) && ((npc.plane) == (Class132.aPlayer_1907.plane))) {
-                                Class79 class79 = (npc.aClass79_10505);
-                                if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
-                                if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
+                                NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
+                                if (NPCDefinition != null && (NPCDefinition.anIntArray1377 != null)) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
+                                if (NPCDefinition != null && NPCDefinition.aBoolean1397 && NPCDefinition.aBoolean1396) {
                                     int i_23_ = (-(i_4_ / 128) + (npc.x) / 128);
                                     int i_24_ = ((npc.y) / 128 + -(i_3_ / 128));
-                                    if (class79.anInt1383 != -1) Class318_Sub1.method2385(class46, i_1_, var_aa, class79.anInt1383, i_23_, i, (byte) -73, i_24_, var_ha);
+                                    if (NPCDefinition.anInt1383 != -1) Class318_Sub1.method2385(class46, i_1_, var_aa, NPCDefinition.anInt1383, i_23_, i, (byte) -73, i_24_, var_ha);
                                     else Class151.method1211(i_1_, (Class348_Sub12.aSpriteArray6742[1]), i, class46, var_aa, i_24_, 2, i_23_);
                                 }
                             }

@@ -72,7 +72,7 @@ final class Class6 {
             Npc npc = (class348_sub22.aNpc_6859);
             Class74.anIntArray1233[Class150.anInt2057++] = i_18_;
             npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
-            if ((npc.aClass79_10505) != null && npc.aClass79_10505.method793(0)) Class5.method181(true, npc);
+            if ((npc.aNPCDefinition_10505) != null && npc.aNPCDefinition_10505.method793(0)) Class5.method181(true, npc);
             int i_19_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 2);
             int i_20_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
             int i_21_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 5);
@@ -83,11 +83,11 @@ final class Class6 {
             int i_24_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
             if (i_24_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_18_;
             npc.method2448((Class189.aClass278_2529.method2079(Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 14), -1)), i ^ 0x2b297815);
-            npc.method2434((byte) 111, npc.aClass79_10505.anInt1399);
-            npc.anInt10310 = (npc.aClass79_10505.anInt1329) << 3;
+            npc.method2434((byte) 111, npc.aNPCDefinition_10505.size);
+            npc.anInt10310 = (npc.aNPCDefinition_10505.anInt1329) << 3;
             if (bool) npc.method2435((byte) -108, i_23_, true);
             npc.method2444((Class132.aPlayer_1907.anIntArray10317[0]) - -i_21_, i_20_ == 1, (Class132.aPlayer_1907.anIntArray10320[0]) + i_22_, i + 724138125, npc.method2436((byte) 50), i_19_);
-            if (npc.aClass79_10505.method793(0)) Class223.method1614(979190089, npc, npc.plane, (npc.anIntArray10317[0]), (npc.anIntArray10320[0]), null, null, 0);
+            if (npc.aNPCDefinition_10505.method793(0)) Class223.method1614(979190089, npc, npc.plane, (npc.anIntArray10317[0]), (npc.anIntArray10320[0]), null, null, 0);
         }
         if (i == -724138005) Class299.aClass348_Sub49_Sub2_3813.stopBitAccess(false);
     }

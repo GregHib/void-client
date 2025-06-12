@@ -2918,15 +2918,15 @@ final class ha_Sub2 extends ha {
         Class88.anInt1497 = 0;
         int[] is = Class286_Sub7.anIntArray6290;
         for (int i_322_ = 0; (i_322_ < Class150.anInt2057 + i_321_); i_322_++) {
-            Class79 class79 = null;
+            NPCDefinition NPCDefinition = null;
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_322_]]);
             else {
                 class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_322_ + -i_321_], i_316_ ^ ~0x1775)).aNpc_6859);
-                class79 = ((Npc) class318_sub1_sub3_sub3).aClass79_10505;
-                if (class79.anIntArray1377 != null) {
-                    class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i_316_ + -3);
-                    if (class79 == null) continue;
+                NPCDefinition = ((Npc) class318_sub1_sub3_sub3).aNPCDefinition_10505;
+                if (NPCDefinition.anIntArray1377 != null) {
+                    NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i_316_ + -3);
+                    if (NPCDefinition == null) continue;
                 }
             }
             if ((class318_sub1_sub3_sub3.anInt10285 >= 0) && (((class318_sub1_sub3_sub3.anInt10301) == Class239_Sub15.anInt6006) || ((Class132.aPlayer_1907.plane) == class318_sub1_sub3_sub3.plane))) {
@@ -2947,7 +2947,7 @@ final class ha_Sub2 extends ha {
                         int i_324_ = -1;
                         int i_325_ = 1;
                         if (i_321_ <= i_322_) {
-                            i_324_ = class79.anInt1373;
+                            i_324_ = NPCDefinition.anInt1373;
                             if (i_324_ == -1) i_324_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2909);
                         } else {
                             Player player = (Class294.aPlayerArray5058[is[i_322_]]);
@@ -2989,7 +2989,7 @@ final class ha_Sub2 extends ha {
                             Sprite sprite_332_ = (Class239_Sub2.aSpriteArray5857[(!class318_sub1_sub3_sub3.aBoolean10226 ? 1 : 3)]);
                             int i_333_ = -1;
                             if (class318_sub1_sub3_sub3 instanceof Npc) {
-                                i_333_ = class79.anInt1382;
+                                i_333_ = NPCDefinition.anInt1382;
                                 if (i_333_ == -1) i_333_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2923);
                             } else i_333_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2923);
                             if (i_333_ != -1) {
@@ -3041,8 +3041,8 @@ final class ha_Sub2 extends ha {
                                 Class338.method2663(-5590, (-12 + Class239_Sub21.anIntArray6062[0] + i_317_), (Class239_Sub21.anIntArray6062[0] + i_317_ - (12 + -sprite.scaleWidth())), i_323_, i_323_ - -sprite.method980());
                                 i_323_ -= 2;
                             }
-                        } else if (class79.anInt1375 >= 0 && (class79.anInt1375 < Class264.aSpriteArray3378.length)) {
-                            Sprite sprite = (Class264.aSpriteArray3378[class79.anInt1375]);
+                        } else if (NPCDefinition.anInt1375 >= 0 && (NPCDefinition.anInt1375 < Class264.aSpriteArray3378.length)) {
+                            Sprite sprite = (Class264.aSpriteArray3378[NPCDefinition.anInt1375]);
                             i_323_ -= 25;
                             sprite.method974((i_317_ + (Class239_Sub21.anIntArray6062[0]) + -(sprite.method971() >> 1)), i_323_);
                             Class338.method2663(-5590, (Class239_Sub21.anIntArray6062[0] + (i_317_ - (sprite.method971() >> 1))), (Class239_Sub21.anIntArray6062[0] + (i_317_ - (sprite.method971() >> 1)) + sprite.scaleWidth()), i_323_, sprite.method980() + i_323_);

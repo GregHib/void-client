@@ -88,7 +88,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
             Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_14_, -6008));
             if (class348_sub22 != null) {
                 Npc npc = (class348_sub22.aNpc_6859);
-                Class322.method2556(false, npc.aClass79_10505.anInt1399, npc);
+                Class322.method2556(false, npc.aNPCDefinition_10505.size, npc);
             }
         }
     }

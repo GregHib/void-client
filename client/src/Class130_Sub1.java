@@ -147,7 +147,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub23_Sub1.anInt8998 = 0;
         Class22.anInt329 = 0;
         ha_Sub2.anInt7596 = 0;
-        Class79.anInt1341 = 0;
+        NPCDefinition.anInt1341 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10311 = 0;
         ha_Sub3.anInt8026 = 0;
         Class268.anInt3431 = 0;
@@ -197,7 +197,7 @@ final class Class130_Sub1 extends Class130 {
         Class254.anInt3260 = 0;
         Class14_Sub1.anInt8609 = 0;
         Class318_Sub4.anInt6413 = 0;
-        Class79.anInt1351 = 0;
+        NPCDefinition.anInt1351 = 0;
         Class348_Sub40_Sub29.anInt9371 = 0;
         Class205.anInt2689 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9962 = 0;
@@ -886,7 +886,7 @@ final class Class130_Sub1 extends Class130 {
         Class264.anInt3366 = 0;
         Class348_Sub49.anInt7204 = 0;
         Class348_Sub40.anInt7044 = 0;
-        Class79.anInt1357 = 0;
+        NPCDefinition.anInt1357 = 0;
         Class211.anInt2733 = 0;
         Class348_Sub42_Sub14.anInt9633 = 0;
         Class64_Sub2.anInt5422 = 0;
@@ -2203,7 +2203,7 @@ final class Class130_Sub1 extends Class130 {
         Index.anInt641 = 0;
         Class348_Sub42_Sub3.anInt9509 = 0;
         Class348_Sub14.anInt6763 = 0;
-        Class79.anInt1389 = 0;
+        NPCDefinition.anInt1389 = 0;
         Class58.anInt1063 = 0;
         Class348_Sub40_Sub15.anInt9218 = 0;
         Class22.anInt340 = 0;
@@ -2213,7 +2213,7 @@ final class Class130_Sub1 extends Class130 {
         Class61.anInt1108 = 0;
         Class348_Sub23_Sub2.anInt9025 = 0;
         Class119_Sub2.anInt4829 = 0;
-        Class79.anInt1379 = 0;
+        NPCDefinition.anInt1379 = 0;
         Class286_Sub8.anInt6305 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10083 = 0;
         Class318_Sub1_Sub3.anInt8740 = 0;
@@ -2575,7 +2575,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub2.anInt5448 = 0;
         Class58.anInt1061 = 0;
         Class373_Sub2.anInt7443 = 0;
-        Class79.anInt1378 = 0;
+        NPCDefinition.anInt1378 = 0;
         Class239_Sub21.anInt6067 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10298 = 0;
         Class318.anInt3973 = 0;
@@ -2876,7 +2876,7 @@ final class Class130_Sub1 extends Class130 {
         Class265.anInt4696 = 0;
         Class318_Sub2.anInt6399 = 0;
         ha.anInt4573 = 0;
-        Class79.anInt1334 = 0;
+        NPCDefinition.anInt1334 = 0;
         Class101_Sub2.anInt5725 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10068 = 0;
         Class60.anInt1094 = 0;
@@ -3068,7 +3068,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7941 = 0;
         Class348_Sub23_Sub1.anInt8991 = 0;
         Class164.anInt2174 = 0;
-        Class79.anInt1332 = 0;
+        NPCDefinition.anInt1332 = 0;
         Class239_Sub7.anInt5908 = 0;
         ha_Sub3.anInt7936 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10041 = 0;
@@ -3277,7 +3277,7 @@ final class Class130_Sub1 extends Class130 {
         Class289.anInt3696 = 0;
         Class206.anInt4868 = 0;
         Class101_Sub2.anInt5730 = 0;
-        Class79.anInt1326 = 0;
+        NPCDefinition.anInt1326 = 0;
         Class235.anInt3087 = 0;
         Class251.anInt3229 = 0;
         ha_Sub3.anInt8030 = 0;
@@ -3338,7 +3338,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7957 = 0;
         Class78.anInt1304 = 0;
         ha_Sub2.anInt7542 = 0;
-        Class79.anInt1400 = 0;
+        NPCDefinition.anInt1400 = 0;
         Class252.anInt3243 = 0;
         Class237_Sub1.anInt5825 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9953 = 0;
@@ -3805,11 +3805,11 @@ final class Class130_Sub1 extends Class130 {
         Class304.anInt3851 = 0;
         Class272.anInt3471 = 0;
         Class348_Sub5_Sub1.anInt8843 = 0;
-        Class79.anInt1403 = 0;
+        NPCDefinition.anInt1403 = 0;
         Class239_Sub24.anInt6087 = 0;
         Class18.anInt270 = 0;
         Class255.anInt3266 = 0;
-        Class79.anInt1394 = 0;
+        NPCDefinition.anInt1394 = 0;
         ha_Sub3.anInt8032 = 0;
         Class125.anInt4916 = 0;
         Class42.anInt571 = 0;

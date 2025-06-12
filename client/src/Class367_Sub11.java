@@ -130,7 +130,7 @@ final class Class367_Sub11 extends Class367 {
     static final void method3556(boolean bool) {
         anInt7405++;
         if (bool == false) {
-            synchronized (Class79.aClient1367) {
+            synchronized (NPCDefinition.aClient1367) {
                 if (Class34.aFrame476 == null) {
                     Container container;
                     if (Class52.aFrame4904 != null) container = Class52.aFrame4904;

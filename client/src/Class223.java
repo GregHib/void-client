@@ -45,20 +45,20 @@ final class Class223 {
             if (class51 == null) {
                 if (npc != null) {
                     class348_sub9.aNpc_6691 = npc;
-                    Class79 class79 = (npc.aClass79_10505);
-                    if (class79.anIntArray1377 != null) {
+                    NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
+                    if (NPCDefinition.anIntArray1377 != null) {
                         class348_sub9.aBoolean6684 = true;
-                        class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i ^ ~0x3a5d4149);
+                        NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i ^ ~0x3a5d4149);
                     }
-                    if (class79 != null) {
-                        class348_sub9.anInt6698 = (i_4_ + class79.anInt1399 << 9);
-                        class348_sub9.anInt6687 = (i_3_ - -class79.anInt1399 << 9);
+                    if (NPCDefinition != null) {
+                        class348_sub9.anInt6698 = (i_4_ + NPCDefinition.size << 9);
+                        class348_sub9.anInt6687 = (i_3_ - -NPCDefinition.size << 9);
                         class348_sub9.anInt6685 = Class8.method214(npc, -1);
-                        class348_sub9.anInt6696 = class79.anInt1340;
-                        class348_sub9.anInt6694 = class79.anInt1392 << 9;
-                        class348_sub9.anInt6677 = class79.anInt1356;
-                        class348_sub9.anInt6681 = class79.anInt1363;
-                        class348_sub9.aBoolean6674 = class79.aBoolean1370;
+                        class348_sub9.anInt6696 = NPCDefinition.anInt1340;
+                        class348_sub9.anInt6694 = NPCDefinition.anInt1392 << 9;
+                        class348_sub9.anInt6677 = NPCDefinition.anInt1356;
+                        class348_sub9.anInt6681 = NPCDefinition.anInt1363;
+                        class348_sub9.aBoolean6674 = NPCDefinition.aBoolean1370;
                     }
                     client.aClass262_5185.method1999(class348_sub9, i + -979210269);
                 } else if (player != null) {

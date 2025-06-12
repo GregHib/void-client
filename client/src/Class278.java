@@ -96,27 +96,27 @@ final class Class278 {
         }
     }
 
-    final Class79 method2079(int i, int i_6_) {
+    final NPCDefinition method2079(int i, int i_6_) {
         anInt3586++;
-        Class79 class79;
+        NPCDefinition NPCDefinition;
         synchronized (aClass60_3577) {
-            class79 = (Class79) aClass60_3577.method583(i, -104);
+            NPCDefinition = (NPCDefinition) aClass60_3577.method583(i, -104);
         }
-        if (class79 != null) return class79;
+        if (NPCDefinition != null) return NPCDefinition;
         byte[] is;
         synchronized (aIndex_3585) {
             is = aIndex_3585.method410(i_6_ + -1859, Class115.method1060(i, (byte) 69), Class253.method1920(127, i));
         }
-        class79 = new Class79();
-        class79.anInt1344 = i;
-        class79.aClass278_1348 = this;
-        if (is != null) class79.method798(111, new Class348_Sub49(is));
-        class79.method799(-117);
+        NPCDefinition = new NPCDefinition();
+        NPCDefinition.anInt1344 = i;
+        NPCDefinition.aClass278_1348 = this;
+        if (is != null) NPCDefinition.method798(111, new Class348_Sub49(is));
+        NPCDefinition.method799(-117);
         synchronized (aClass60_3577) {
-            aClass60_3577.method582(class79, i, (byte) -102);
+            aClass60_3577.method582(NPCDefinition, i, (byte) -102);
             if (i_6_ != -1) aClass60_3577 = null;
         }
-        return class79;
+        return NPCDefinition;
     }
 
     final void method2080(int i) {

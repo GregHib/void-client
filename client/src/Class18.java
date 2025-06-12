@@ -46,7 +46,7 @@ final class Class18 {
         if (var_aa != null) {
             Class348_Sub8.aHa6654.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789);
             if (Class259.anInt3306 >= 3) Class348_Sub8.aHa6654.A(-16777216, var_aa, i_1_, i);
-            else Class79.aSprite_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -Class314.aFloat3938) << 2, var_aa, i_1_, i);
+            else NPCDefinition.aSprite_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -Class314.aFloat3938) << 2, var_aa, i_1_, i);
             if (i_0_ != -98) method271(88, null, (byte) 15, 71);
         }
     }
