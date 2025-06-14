@@ -256,8 +256,8 @@ final class Class286_Sub3 extends Class286 {
                     }
                 }
                 Class205.anInt2690++;
-                int npcX = (npc.x >> 9) + za_Sub2.regionTileX;
-                int npcY = (npc.y >> 9) + Class90.regionTileY;
+                int npcX = (npc.x >> 9) + za_Sub2.regionTileX - npc.aClass79_10505.anInt1399 + 1;
+                int npcY = (npc.y >> 9) + Class90.regionTileY - npc.aClass79_10505.anInt1399 + 1;
                 Class50_Sub3.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, npc.plane), 0, (byte) -105, bool_14_, 0, -1, true, 1008, npc.anInt10290, Class274.aClass274_3505.method2063(Class348_Sub33.anInt6967, 544), npc.anInt10290, Class286_Sub8.anInt6299);
             }
         }
