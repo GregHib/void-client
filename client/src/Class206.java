@@ -29,7 +29,7 @@ final class Class206 implements Interface11 {
     static int anInt4885;
     private int anInt4886;
     static int anInt4887;
-    static boolean aBoolean4888 = false;
+    static boolean isMember = false;
     static int anInt4889;
     static int anInt4890;
     private int anInt4891;
@@ -166,7 +166,7 @@ final class Class206 implements Interface11 {
         anInt4876++;
         if (anInt4873 == -1) throw new RuntimeException();
         int i_23_ = 1 << i_21_;
-        if (i_20_ > -16) aBoolean4888 = false;
+        if (i_20_ > -16) isMember = false;
         if ((anInt4884 & (~i_23_)) == 0) {
             anInt4882 = class258_sub2.anInt8538;
             anInt4886 = class258_sub2.anInt8538;
@@ -266,7 +266,7 @@ final class Class206 implements Interface11 {
         OpenGL.glBindFramebufferEXT(36008, anInt4891);
         anInt4872 |= 0x1;
         anInt4873 = method1504(i ^ 0x6a7c);
-        if (i != -27141) aBoolean4888 = false;
+        if (i != -27141) isMember = false;
     }
 
     protected final void finalize() throws Throwable {

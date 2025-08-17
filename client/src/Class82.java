@@ -65,7 +65,7 @@ final class Class82 {
                     Applet_Sub1.method94((Class274.aClass274_3485.method2063(Class348_Sub33.anInt6967, 544)), -99);
                     break;
                 }
-                if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || Class192.anInt2581 >= 2) {
+                if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || Class192.rights >= 2) {
                     if (string.equalsIgnoreCase("errortest")) throw new RuntimeException();
                     if (string.equals("nativememerror")) throw new OutOfMemoryError("native(MPR");
                     try {

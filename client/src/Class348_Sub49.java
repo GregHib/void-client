@@ -519,9 +519,9 @@ class Class348_Sub49 extends Class348 {
                 if (Class348_Sub23_Sub3.aString9043 != null) Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596, (byte) -81);
                 else Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
             }
-            if (i_71_ != 13 && Class213.aClass238_2773 != null) {
-                Class213.aClass238_2773.method1700((byte) 36);
-                Class213.aClass238_2773 = null;
+            if (i_71_ != 13 && ItemDefinition.aClass238_2773 != null) {
+                ItemDefinition.aClass238_2773.method1700((byte) 36);
+                ItemDefinition.aClass238_2773 = null;
             }
             if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != r.anInt9721), (byte) -45);
             if (i_71_ == 7) Class107.method1006((r.anInt9721 != Class54.anInt970), (byte) 102);

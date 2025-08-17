@@ -340,8 +340,8 @@ final class Class46 {
                 return class64;
             }
             if (this.anInt770 == 4) {
-                Class213 class213 = class255.method1940(i_23_ + -365, this.anInt753);
-                Class64 class64 = class213.method1559(class154, class17, var_ha, i, i_22_, 10, i_21_, (byte) 88, i_24_);
+                ItemDefinition itemDefinition = class255.method1940(i_23_ + -365, this.anInt753);
+                Class64 class64 = itemDefinition.method1559(class154, class17, var_ha, i, i_22_, 10, i_21_, (byte) 88, i_24_);
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;

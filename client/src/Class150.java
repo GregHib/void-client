@@ -20,8 +20,8 @@ final class Class150 {
         int[] is = new int[Exception_Sub1.aClass255_112.anInt3271];
         int i_0_ = i;
         for (int i_1_ = 0; Exception_Sub1.aClass255_112.anInt3271 > i_1_; i_1_++) {
-            Class213 class213 = Exception_Sub1.aClass255_112.method1940(-104, i_1_);
-            if (class213.anInt2815 >= 0 || class213.anInt2788 >= 0) is[i_0_++] = i_1_;
+            ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(-104, i_1_);
+            if (itemDefinition.anInt2815 >= 0 || itemDefinition.anInt2788 >= 0) is[i_0_++] = i_1_;
         }
         Class25.anIntArray369 = new int[i_0_];
         for (int i_2_ = 0; i_2_ < i_0_; i_2_++)

@@ -48,12 +48,12 @@ final class Class49 implements Interface4 {
 
     public final void method14(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, boolean bool, boolean bool_8_) {
         anInt4723++;
-        Class213.method1568((aHa_Sub1_4729.aClass348_Sub31_7469.anIntArray6916), i_3_, i, i_7_, bool_8_ ? aHa_Sub1_4729.aFloatArray7502 : null, bool ? this.anIntArray4731 : null, i_4_, 115, i_5_, (aHa_Sub1_4729.aClass348_Sub31_7469.anInt6917), this.anInt4725, i_6_, !bool_8_ ? null : this.aFloatArray4719);
+        ItemDefinition.method1568((aHa_Sub1_4729.aClass348_Sub31_7469.anIntArray6916), i_3_, i, i_7_, bool_8_ ? aHa_Sub1_4729.aFloatArray7502 : null, bool ? this.anIntArray4731 : null, i_4_, 115, i_5_, (aHa_Sub1_4729.aClass348_Sub31_7469.anInt6917), this.anInt4725, i_6_, !bool_8_ ? null : this.aFloatArray4719);
     }
 
     public final void method15(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, boolean bool, boolean bool_14_) {
         anInt4721++;
-        Class213.method1568(this.anIntArray4731, i_9_, i, i_13_, bool_14_ ? this.aFloatArray4719 : null, !bool ? null : (aHa_Sub1_4729.aClass348_Sub31_7469.anIntArray6916), i_10_, 113, i_11_, this.anInt4725, (aHa_Sub1_4729.aClass348_Sub31_7469.anInt6917), i_12_, bool_14_ ? aHa_Sub1_4729.aFloatArray7502 : null);
+        ItemDefinition.method1568(this.anIntArray4731, i_9_, i, i_13_, bool_14_ ? this.aFloatArray4719 : null, !bool ? null : (aHa_Sub1_4729.aClass348_Sub31_7469.anIntArray6916), i_10_, 113, i_11_, this.anInt4725, (aHa_Sub1_4729.aClass348_Sub31_7469.anInt6917), i_12_, bool_14_ ? aHa_Sub1_4729.aFloatArray7502 : null);
     }
 
     Class49(ha_Sub1 var_ha_Sub1, Sprite sprite, Class216 class216) {

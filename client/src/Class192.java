@@ -12,7 +12,7 @@ final class Class192 {
     static int anInt2578;
     static short[] aShortArray2579;
     static int anInt2580;
-    static int anInt2581 = 0;
+    static int rights = 0;
     static int anInt2582;
 
     static final void method1434(int i) {

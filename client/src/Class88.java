@@ -265,30 +265,30 @@ final class Class88 {
                             if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 93)) return;
                             Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 60, (class348_sub49_sub2.aByteArray7154));
                             class348_sub49_sub2.anInt7197 = 0;
-                            Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class192.rights = class348_sub49_sub2.readUnsignedByte(255);
                             Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255);
                             Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class50_Sub2.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1;
-                            Class348_Sub42_Sub11.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944);
-                            Class206.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class348_Sub42_Sub11.index = class348_sub49_sub2.readUnsignedShort(842397944);
+                            Class206.isMember = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class24.anInt359 = class348_sub49_sub2.method3369((byte) 125);
-                            Class130.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1;
-                            Class348_Sub40_Sub12.aClass263_9195.method2004(Class130.aBoolean1900, (byte) 25);
-                            Exception_Sub1.aClass255_112.method1934((byte) 11, Class130.aBoolean1900);
-                            Class189.aClass278_2529.method2072((byte) 88, Class130.aBoolean1900);
+                            Class130.membersWorld = class348_sub49_sub2.readUnsignedByte(255) == 1;
+                            Class348_Sub40_Sub12.aClass263_9195.method2004(Class130.membersWorld, (byte) 25);
+                            Exception_Sub1.aClass255_112.method1934((byte) 11, Class130.membersWorld);
+                            Class189.aClass278_2529.method2072((byte) 88, Class130.membersWorld);
                         } else {
                             if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 107)) return;
                             Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 85, (class348_sub49_sub2.aByteArray7154));
                             class348_sub49_sub2.anInt7197 = 0;
-                            Class192.anInt2581 = class348_sub49_sub2.readUnsignedByte(255);
+                            Class192.rights = class348_sub49_sub2.readUnsignedByte(255);
                             Class125.anInt4919 = class348_sub49_sub2.readUnsignedByte(255);
                             Class348_Sub40_Sub3.aBoolean9103 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class133.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class52.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class116.anInt1758 = class348_sub49_sub2.readShort(13638);
-                            Class206.aBoolean4888 = Class116.anInt1758 > 0;
+                            Class206.isMember = Class116.anInt1758 > 0;
                             Class135_Sub1.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944);
@@ -311,7 +311,7 @@ final class Class88 {
                             }
                             if (Class8.aClass364_165 != Class76.aClass364_1279 && ((Class3.aClass161_125.method1264((byte) 94, Class135_Sub2.aClass161_4839)) || (Class3.aClass161_125.method1264((byte) 112, (Class348_Sub40_Sub35.aClass161_9443))))) Class348_Sub42_Sub20.method3283(114);
                         }
-                        if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !Class206.aBoolean4888) {
+                        if ((!Class348_Sub40_Sub3.aBoolean9103 || Class52.aBoolean4903) && !Class206.isMember) {
                             try {
                                 Class224.method1617((byte) 125, Class93.anApplet1530, "unzap");
                             } catch (Throwable throwable) {

@@ -207,7 +207,7 @@ final class Class286_Sub9 extends Class286 {
         if (i_23_ == 0) {
             if (bool) player.aBoolean10539 = false;
             else {
-                if (Class348_Sub42_Sub11.anInt9591 == i_22_) throw new RuntimeException("s:lr");
+                if (Class348_Sub42_Sub11.index == i_22_) throw new RuntimeException("s:lr");
                 Class359 class359 = (Class348_Sub17.aClass359Array6802[i_22_] = new Class359());
                 class359.anInt4420 = ((Class90.regionTileY - -(player.anIntArray10317[0]) >> 6) + ((player.anIntArray10320[0] + za_Sub2.regionTileX) >> 6 << 14) + ((player.plane) << 28));
                 if (player.anInt10524 != -1) class359.anInt4423 = player.anInt10524;
@@ -317,7 +317,7 @@ final class Class286_Sub9 extends Class286 {
                 } else player.method2455(i_36_, -26443, (Class259.aByteArray3300[i_22_]), i_35_);
                 player.plane = player.aByte6376 = (byte) (0x3 & (player.plane) + i_32_);
                 if (NPCDefinition.method802(i_36_, i_35_, true)) player.aByte6376++;
-                if (Class348_Sub42_Sub11.anInt9591 == i_22_) {
+                if (Class348_Sub42_Sub11.index == i_22_) {
                     if ((player.plane) != Class355.anInt4372) Class348_Sub16_Sub2.aBoolean8870 = true;
                     Class355.anInt4372 = (player.plane);
                 }
@@ -335,7 +335,7 @@ final class Class286_Sub9 extends Class286 {
                 } else player.method2455(i_42_, -26443, (Class259.aByteArray3300[i_22_]), i_41_);
                 player.plane = player.aByte6376 = (byte) ((player.plane) + i_38_ & 0x3);
                 if (NPCDefinition.method802(i_42_, i_41_, true)) player.aByte6376++;
-                if (Class348_Sub42_Sub11.anInt9591 == i_22_) Class355.anInt4372 = (player.plane);
+                if (Class348_Sub42_Sub11.index == i_22_) Class355.anInt4372 = (player.plane);
             }
         }
     }

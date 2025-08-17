@@ -166,7 +166,7 @@ final class Canvas_Sub1 extends Canvas {
         if (r_Sub2.aClass252_10488 == null) {
             if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.WORLD_MAP.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))) {
                 if (Class348_Sub32.WORLD_MAP.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))
-                    r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.WORLD_MAP, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.aBoolean1900, (byte) -91);
+                    r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.WORLD_MAP, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.membersWorld, (byte) -91);
                 else {
                     bool = false;
                     Class268.anInt3441++;

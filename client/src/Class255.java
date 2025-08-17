@@ -59,16 +59,16 @@ final class Class255 {
             anInt3266++;
             Sprite sprite = method1941(i_6_, (byte) -74, i_4_, i_0_, i, i_1_, var_ha_3_, class154);
             if (sprite != null) return sprite;
-            Class213 class213 = method1940(90, i_4_);
-            if (i_0_ > 1 && class213.anIntArray2762 != null) {
+            ItemDefinition itemDefinition = method1940(90, i_4_);
+            if (i_0_ > 1 && itemDefinition.anIntArray2762 != null) {
                 int i_7_ = -1;
                 for (int i_8_ = 0; i_8_ < 10; i_8_++) {
-                    if ((class213.anIntArray2831[i_8_] <= i_0_) && class213.anIntArray2831[i_8_] != 0) i_7_ = class213.anIntArray2762[i_8_];
+                    if ((itemDefinition.anIntArray2831[i_8_] <= i_0_) && itemDefinition.anIntArray2831[i_8_] != 0) i_7_ = itemDefinition.anIntArray2762[i_8_];
                 }
-                if (i_7_ != -1) class213 = method1940(127, i_7_);
+                if (i_7_ != -1) itemDefinition = method1940(127, i_7_);
             }
             if (i_2_ != 83) method1935(-83, -37, null, null, false, -49);
-            int[] is = class213.method1562(i_0_, bool_5_, i, var_ha_3_, var_ha, fontRenderer, class154, i_1_, (byte) -102, i_6_);
+            int[] is = itemDefinition.method1562(i_0_, bool_5_, i, var_ha_3_, var_ha, fontRenderer, class154, i_1_, (byte) -102, i_6_);
             if (is == null) return null;
             Sprite sprite_9_;
             if (bool) sprite_9_ = var_ha.method3662(36, is, (byte) 94, 0, 36, 32);
@@ -223,48 +223,48 @@ final class Class255 {
         }
     }
 
-    final Class213 method1940(int i, int i_13_) {
+    final ItemDefinition method1940(int i, int i_13_) {
         anInt3283++;
-        Class213 class213;
+        ItemDefinition itemDefinition;
         synchronized (aClass60_3278) {
-            class213 = (Class213) aClass60_3278.method583(i_13_, 90);
+            itemDefinition = (ItemDefinition) aClass60_3278.method583(i_13_, 90);
         }
-        if (class213 != null) return class213;
+        if (itemDefinition != null) return itemDefinition;
         byte[] is;
         synchronized (aIndex_3267) {
             is = aIndex_3267.method410(-1860, Class54.method500(7, i_13_), Class251.method1914(-23590, i_13_));
         }
-        class213 = new Class213();
-        class213.aClass255_2761 = this;
-        class213.anInt2769 = i_13_;
-        class213.aStringArray2811 = new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null};
-        class213.aStringArray2763 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
-        if (is != null) class213.method1569(768, new Class348_Sub49(is));
-        class213.method1563((byte) 92);
+        itemDefinition = new ItemDefinition();
+        itemDefinition.aClass255_2761 = this;
+        itemDefinition.anInt2769 = i_13_;
+        itemDefinition.aStringArray2811 = new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null};
+        itemDefinition.aStringArray2763 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
+        if (is != null) itemDefinition.method1569(768, new Class348_Sub49(is));
+        itemDefinition.method1563((byte) 92);
         int i_14_ = 4 / ((i - 13) / 59);
-        if (class213.anInt2833 != -1) class213.method1570(1, method1940(90, class213.anInt2758), method1940(101, class213.anInt2833));
-        if (class213.anInt2812 != -1) class213.method1556(method1940(-58, class213.anInt2778), (byte) -29, method1940(-82, class213.anInt2812));
-        if (!aBoolean3269 && class213.aBoolean2783) {
-            class213.aString2795 = Class274.aClass274_3488.method2063(this.anInt3286, 544);
-            class213.anInt2827 = 0;
-            class213.aStringArray2811 = aStringArray3290;
-            class213.aStringArray2763 = aStringArray3293;
-            class213.aBoolean2755 = false;
-            class213.anIntArray2772 = null;
-            if (class213.aClass356_2757 != null) {
+        if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833));
+        if (itemDefinition.anInt2812 != -1) itemDefinition.method1556(method1940(-58, itemDefinition.anInt2778), (byte) -29, method1940(-82, itemDefinition.anInt2812));
+        if (!aBoolean3269 && itemDefinition.aBoolean2783) {
+            itemDefinition.aString2795 = Class274.aClass274_3488.method2063(this.anInt3286, 544);
+            itemDefinition.anInt2827 = 0;
+            itemDefinition.aStringArray2811 = aStringArray3290;
+            itemDefinition.aStringArray2763 = aStringArray3293;
+            itemDefinition.aBoolean2755 = false;
+            itemDefinition.anIntArray2772 = null;
+            if (itemDefinition.aClass356_2757 != null) {
                 boolean bool = false;
-                for (Class348 class348 = class213.aClass356_2757.method3484(0); class348 != null; class348 = class213.aClass356_2757.method3482(0)) {
+                for (Class348 class348 = itemDefinition.aClass356_2757.method3484(0); class348 != null; class348 = itemDefinition.aClass356_2757.method3482(0)) {
                     Class254 class254 = aClass326_3292.method2600((int) class348.aLong4291, 28364);
                     if (class254.aBoolean3261) class348.method2715((byte) 60);
                     else bool = true;
                 }
-                if (!bool) class213.aClass356_2757 = null;
+                if (!bool) itemDefinition.aClass356_2757 = null;
             }
         }
         synchronized (aClass60_3278) {
-            aClass60_3278.method582(class213, i_13_, (byte) -118);
+            aClass60_3278.method582(itemDefinition, i_13_, (byte) -118);
         }
-        return class213;
+        return itemDefinition;
     }
 
     final Sprite method1941(int i, byte i_15_, int i_16_, int i_17_, int i_18_, int i_19_, ha var_ha, Class154 class154) {

@@ -61,7 +61,7 @@ final class Class133 {
             try {
                 anInt1912++;
                 if (i_1_ >= 41) {
-                    byte i_2_ = -1;
+                    byte tempSpeed = -1;
                     if ((i_0_ & 0x1) != 0) {
                         int i_3_ = class348_sub49_sub2.readUnsignedShort(842397944);
                         if (i_3_ == 65535) i_3_ = -1;
@@ -216,15 +216,17 @@ final class Class133 {
                         Class154.aClass348_Sub49Array2105[i] = class348_sub49;
                         player.method2452((byte) 84, class348_sub49);
                     }
-                    if ((0x800 & i_0_) != 0) i_2_ = class348_sub49_sub2.readByteInverse(-622951480);
+                    if ((0x800 & i_0_) != 0) tempSpeed = class348_sub49_sub2.readByteInverse(-622951480);
                     if (!player.aBoolean10539) break;
-                    if (i_2_ != 127) {
+                    if (tempSpeed != 127) {
                         byte i_36_;
-                        if (i_2_ != -1) i_36_ = i_2_;
+                        if (tempSpeed != -1) i_36_ = tempSpeed;
                         else i_36_ = Class259.aByteArray3300[i];
                         Class348_Sub42_Sub9_Sub1.method3208(player, i_36_, -21);
                         player.method2455(player.anInt10531, -26443, i_36_, player.anInt10549);
-                    } else player.method2449(player.anInt10531, player.anInt10549, (byte) 84);
+                    } else {
+                        player.method2449(player.anInt10531, player.anInt10549, (byte) 84);
+                    }
                 }
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ns.A(" + (class348_sub49_sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (player != null ? "{...}" : "null") + ')'));

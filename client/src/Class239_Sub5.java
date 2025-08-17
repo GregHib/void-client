@@ -45,7 +45,7 @@ final class Class239_Sub5 extends Class239 {
     static final void method1741(Class348_Sub49_Sub2 class348_sub49_sub2, byte i) {
         anInt5893++;
         class348_sub49_sub2.startBitAccess(122);
-        int i_3_ = Class348_Sub42_Sub11.anInt9591;
+        int i_3_ = Class348_Sub42_Sub11.index;
         Player player = (Class132.aPlayer_1907 = Class294.aPlayerArray5058[i_3_] = new Player());
         player.anInt10290 = i_3_;
         int i_4_ = class348_sub49_sub2.readBits((byte) -24, 30);

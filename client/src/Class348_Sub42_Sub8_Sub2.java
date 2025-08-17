@@ -304,9 +304,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i_29_ = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -128);
             Class70.method727((byte) -63, i_29_, i, i_28_);
-            Class213 class213 = Exception_Sub1.aClass255_112.method1940(-126, i);
-            Class122.method1085(class213.anInt2825, class213.anInt2787, (byte) -59, class213.anInt2781, i_28_);
-            Class34.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810);
+            ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(-126, i);
+            Class122.method1085(itemDefinition.anInt2825, itemDefinition.anInt2787, (byte) -59, itemDefinition.anInt2781, i_28_);
+            Class34.method350(itemDefinition.anInt2779, itemDefinition.anInt2826, 125, i_28_, itemDefinition.anInt2810);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -422,7 +422,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 } else if (i_40_ >> 28 != 0) {
                     int i_52_ = i_40_ & 0xffff;
                     Player player;
-                    if (Class348_Sub42_Sub11.anInt9591 != i_52_) player = (Class294.aPlayerArray5058[i_52_]);
+                    if (Class348_Sub42_Sub11.index != i_52_) player = (Class294.aPlayerArray5058[i_52_]);
                     else player = Class132.aPlayer_1907;
                     if (player != null) {
                         if (i_38_ == 65535) i_38_ = -1;
@@ -676,7 +676,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         if (Class348_Sub3.aClass114_6584 == Class303.aClass114_3842) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readIntInverseMiddle(255);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -128);
-            Class238.method1703(5, i, Class348_Sub42_Sub11.anInt9591, 4, 0);
+            Class238.method1703(5, i, Class348_Sub42_Sub11.index, 4, 0);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -787,7 +787,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         if (Class348_Sub3.aClass114_6584 == Class131.aClass114_1901) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             Player player;
-            if (i != Class348_Sub42_Sub11.anInt9591) player = Class294.aPlayerArray5058[i];
+            if (i != Class348_Sub42_Sub11.index) player = Class294.aPlayerArray5058[i];
             else player = Class132.aPlayer_1907;
             if (player == null) {
                 Class348_Sub3.aClass114_6584 = null;

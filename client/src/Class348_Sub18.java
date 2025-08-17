@@ -168,7 +168,7 @@ final class Class348_Sub18 extends Class348 {
                 class46.anInt757 = 150;
                 class46.anInt675 = 0x7ff & (int) (256.0 * Math.sin((double) (Class367_Sub11.anInt7396) / 40.0));
                 class46.anInt770 = 5;
-                class46.anInt753 = Class348_Sub42_Sub11.anInt9591;
+                class46.anInt753 = Class348_Sub42_Sub11.index;
                 class46.anInt779 = (Class318_Sub1_Sub3_Sub1.method2418((Class132.aPlayer_1907.aString10544), (byte) -41));
                 class46.anInt699 = Class132.aPlayer_1907.anInt10268;
                 class46.anInt841 = 0;

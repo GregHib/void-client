@@ -147,7 +147,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         this.anInt10522 = class348_sub49.readByte(i ^ ~0x1);
         System.out.println("Icon " + anInt10522);
         this.aBoolean10551 = class348_sub49.readByte(i + -199) == 1;
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && Class192.anInt2581 >= 2) this.aBoolean10551 = false;
+        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && Class192.rights >= 2) this.aBoolean10551 = false;
         this.anInt10542 = 0;
         int i_14_ = -1;
         int[] is = new int[12];
@@ -219,7 +219,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             this.x = (this.anIntArray10320[0] << 9) - -(method2436((byte) 89) << 8);
             this.y = (this.anIntArray10317[0] << 9) - -(method2436((byte) 98) << 8);
         }
-        if ((Class348_Sub42_Sub11.anInt9591 == this.anInt10290) && is_30_ != null) {
+        if ((Class348_Sub42_Sub11.index == this.anInt10290) && is_30_ != null) {
             for (int i_31_ = 0; i_31_ < is_20_.length; i_31_++) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
                     Exception_Sub1.aClass255_112.method1936(72);

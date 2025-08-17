@@ -61,12 +61,12 @@ final class Class178 {
             int i_7_ = 0;
             if (bool_3_ != true) aClass29_2352 = null;
             for (/**/; i_7_ < Exception_Sub1.aClass255_112.anInt3271; i_7_++) {
-                Class213 class213 = Exception_Sub1.aClass255_112.method1940(-74, i_7_);
-                if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795.toLowerCase().indexOf(string_2_) != -1) {
+                ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(-74, i_7_);
+                if ((!bool_1_ || itemDefinition.aBoolean2755) && itemDefinition.anInt2833 == -1 && itemDefinition.anInt2812 == -1 && itemDefinition.anInt2799 == 0 && itemDefinition.aString2795.toLowerCase().indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
-                            if (!string.equals(class213.method1561(string_5_, i_0_, -1511086397))) continue;
-                        } else if (class213.method1567(i_4_, -116, i_0_) != i) continue;
+                            if (!string.equals(itemDefinition.method1561(string_5_, i_0_, -1511086397))) continue;
+                        } else if (itemDefinition.method1567(i_4_, -116, i_0_) != i) continue;
                     }
                     if (i_6_ >= 250) {
                         Class192.aShortArray2579 = null;

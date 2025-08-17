@@ -544,7 +544,7 @@ final class Class130_Sub1 extends Class130 {
         Class39.anInt514 = 0;
         Index.anInt647 = 0;
         Class348_Sub44.anInt7094 = 0;
-        Class213.anInt2796 = 0;
+        ItemDefinition.anInt2796 = 0;
         Class93.anInt1533 = 0;
         Class348_Sub42_Sub1.anInt9490 = 0;
         Class318_Sub1_Sub3_Sub4.anInt10351 = 0;
@@ -636,12 +636,12 @@ final class Class130_Sub1 extends Class130 {
         Class85.anInt1476 = 0;
         Class14_Sub1.anInt8618 = 0;
         Class278.anInt3589 = 0;
-        Class213.anInt2829 = 0;
+        ItemDefinition.anInt2829 = 0;
         Class5_Sub1.anInt8345 = 0;
         Class101.anInt1594 = 0;
         Class348_Sub42_Sub3.anInt9500 = 0;
         Class348_Sub49.anInt7170 = 0;
-        Class213.anInt2832 = 0;
+        ItemDefinition.anInt2832 = 0;
         Class348_Sub40_Sub19.anInt9258 = 0;
         Class348_Sub12.anInt6734 = 0;
         Class250.anInt3222 = 0;
@@ -783,7 +783,7 @@ final class Class130_Sub1 extends Class130 {
         Class249.anInt3216 = 0;
         ha_Sub2.anInt7675 = 0;
         Class239.anInt3141 = 0;
-        Class213.anInt2814 = 0;
+        ItemDefinition.anInt2814 = 0;
         Index.anInt639 = 0;
         Class78.anInt1313 = 0;
         Class309.anInt4810 = 0;
@@ -902,7 +902,7 @@ final class Class130_Sub1 extends Class130 {
         FontRenderer.anInt4060 = 0;
         Class183.anInt2465 = 0;
         Class43.anInt616 = 0;
-        Class213.anInt2806 = 0;
+        ItemDefinition.anInt2806 = 0;
         Class97.anInt1545 = 0;
         Class59_Sub1_Sub1.anInt8654 = 0;
         Class305.anInt3856 = 0;
@@ -1024,7 +1024,7 @@ final class Class130_Sub1 extends Class130 {
         Index.anInt635 = 0;
         Class348_Sub9.anInt6671 = 0;
         Class172.anInt2277 = 0;
-        Class213.anInt2768 = 0;
+        ItemDefinition.anInt2768 = 0;
         Class350.anInt4321 = 0;
         ha_Sub2.anInt7621 = 0;
         Class101_Sub1.anInt5687 = 0;
@@ -1074,7 +1074,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub36.anInt9450 = 0;
         ha_Sub3.anInt8042 = 0;
         Class285_Sub1.anInt8493 = 0;
-        Class213.anInt2776 = 0;
+        ItemDefinition.anInt2776 = 0;
         Class348_Sub40_Sub23.anInt9309 = 0;
         Class286_Sub6.anInt6269 = 0;
         Class371.anInt4521 = 0;
@@ -1748,7 +1748,7 @@ final class Class130_Sub1 extends Class130 {
         Class220.anInt2876 = 0;
         ha_Sub2.anInt7519 = 0;
         Class64_Sub3.anInt5530 = 0;
-        Class213.anInt2809 = 0;
+        ItemDefinition.anInt2809 = 0;
         Class318_Sub1_Sub3_Sub4.anInt10359 = 0;
         ha_Sub2.anInt7561 = 0;
         Class348_Sub5.anInt6620 = 0;
@@ -1889,7 +1889,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub49.anInt7165 = 0;
         Class318_Sub9_Sub1.anInt8782 = 0;
         Class348_Sub16_Sub2.anInt8864 = 0;
-        Class213.anInt2790 = 0;
+        ItemDefinition.anInt2790 = 0;
         Class367_Sub1.anInt7279 = 0;
         Class2.anInt116 = 0;
         Class88.anInt1496 = 0;
@@ -2002,7 +2002,7 @@ final class Class130_Sub1 extends Class130 {
         Class286.anInt3681 = 0;
         Class64_Sub3.anInt5628 = 0;
         Class348_Sub49.anInt7167 = 0;
-        Class213.anInt2780 = 0;
+        ItemDefinition.anInt2780 = 0;
         Class312.anInt3927 = 0;
         Class348_Sub40_Sub16.anInt9223 = 0;
         Class117.anInt1772 = 0;
@@ -2295,7 +2295,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40.anInt7034 = 0;
         Class14_Sub4.anInt8647 = 0;
         Class348_Sub42_Sub16_Sub1.anInt10452 = 0;
-        Class213.anInt2816 = 0;
+        ItemDefinition.anInt2816 = 0;
         Class367.anInt4481 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10040 = 0;
         Class64_Sub2.anInt5414 = 0;
@@ -2388,7 +2388,7 @@ final class Class130_Sub1 extends Class130 {
         Class32.anInt455 = 0;
         Class74.anInt1235 = 0;
         ha_Sub2.anInt7530 = 0;
-        Class213.anInt2813 = 0;
+        ItemDefinition.anInt2813 = 0;
         Class255.anInt3270 = 0;
         ha_Sub2.anInt7623 = 0;
         ha_Sub3.anInt7893 = 0;
@@ -2560,7 +2560,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub2_Sub1.anInt10179 = 0;
         ha_Sub2.anInt7622 = 0;
         Class373_Sub2.anInt7436 = 0;
-        Class213.anInt2782 = 0;
+        ItemDefinition.anInt2782 = 0;
         Npc.anInt10500 = 0;
         Class239_Sub14.anInt5984 = 0;
         Class348_Sub42_Sub8_Sub2.anInt10438 = 0;
@@ -2705,7 +2705,7 @@ final class Class130_Sub1 extends Class130 {
         Class363.anInt4464 = 0;
         Class38.anInt505 = 0;
         Class287.anInt3694 = 0;
-        Class213.anInt2754 = 0;
+        ItemDefinition.anInt2754 = 0;
         Class110_Sub1.anInt5792 = 0;
         ha_Sub2.anInt7591 = 0;
         s_Sub2.anInt8247 = 0;
@@ -2717,7 +2717,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub16_Sub3.anInt8892 = 0;
         Class348_Sub42_Sub15.anInt9648 = 0;
         Class377.anInt9837 = 0;
-        Class213.anInt2793 = 0;
+        ItemDefinition.anInt2793 = 0;
         Class291.anInt3731 = 0;
         Class158.anInt4933 = 0;
         Class286_Sub9.anInt6314 = 0;
@@ -2815,7 +2815,7 @@ final class Class130_Sub1 extends Class130 {
         Class262.anInt3328 = 0;
         Class335.anInt4166 = 0;
         Class239_Sub1.anInt5844 = 0;
-        Class213.anInt2828 = 0;
+        ItemDefinition.anInt2828 = 0;
         Class64_Sub2.anInt5437 = 0;
         Class348_Sub1_Sub2.anInt8813 = 0;
         Class318_Sub1_Sub5_Sub1.anInt10143 = 0;
@@ -3360,7 +3360,7 @@ final class Class130_Sub1 extends Class130 {
         Class239.anInt3134 = 0;
         Class318_Sub1_Sub3.anInt8749 = 0;
         s_Sub3.anInt8310 = 0;
-        Class213.anInt2800 = 0;
+        ItemDefinition.anInt2800 = 0;
         Class348_Sub40_Sub32.anInt9418 = 0;
         Class239_Sub14.anInt5988 = 0;
         Class170.anInt5068 = 0;
@@ -3547,7 +3547,7 @@ final class Class130_Sub1 extends Class130 {
         Applet_Sub1.anInt3 = 0;
         Class375.anInt4541 = 0;
         Class64.anInt1128 = 0;
-        Class213.anInt2751 = 0;
+        ItemDefinition.anInt2751 = 0;
         Class239_Sub16.anInt6011 = 0;
         Class239_Sub25.anInt6100 = 0;
         Class46.anInt768 = 0;

@@ -302,7 +302,7 @@ public final class client extends Applet_Sub1 {
         Class2.method171((byte) 72);
         s.method3988(i + -182);
         NPCDefinition.method804(-3752);
-        Class213.method1564(104);
+        ItemDefinition.method1564(104);
         FontRenderer.method2572((byte) 23);
         Class234.method1659((byte) -71);
         Class199.method1461((byte) 112);
@@ -904,7 +904,7 @@ public final class client extends Applet_Sub1 {
                 Class244.aLong4615 = 0L;
                 Class348_Sub23_Sub3.aString9043 = null;
                 Class202.anInt2670 = 0;
-                Class206.aBoolean4888 = Class155.aBoolean2110 = true;
+                Class206.isMember = Class155.aBoolean2110 = true;
                 Class375.aBoolean4540 = false;
                 Class251.anInt3234 = 0;
                 Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987);
@@ -995,7 +995,7 @@ public final class client extends Applet_Sub1 {
             }
             Class222.anInt2884 = Integer.parseInt(this.getParameter("colourid"));
             if (Class222.anInt2884 < 0 || Class135.aColorArray1928.length <= Class222.anInt2884) Class222.anInt2884 = 0;
-            if (Integer.parseInt(this.getParameter("sitesettings_member")) == 1) Class206.aBoolean4888 = Class155.aBoolean2110 = true;
+            if (Integer.parseInt(this.getParameter("sitesettings_member")) == 1) Class206.isMember = Class155.aBoolean2110 = true;
             String string_28_ = this.getParameter("frombilling");
             if (string_28_ != null && string_28_.equals("true")) Class375.aBoolean4540 = true;
             Class348_Sub23_Sub3.aString9043 = this.getParameter("sskey");
@@ -1220,7 +1220,7 @@ public final class client extends Applet_Sub1 {
                                             int[] is = new int[3];
                                             class348_sub42_sub14.method3239(true, i_73_, i_72_, is);
                                             if (is != null) {
-                                                if (Class182.aClass346_2449.method2696(82, -128) && (Class192.anInt2581 > 0)) {
+                                                if (Class182.aClass346_2449.method2696(82, -128) && (Class192.rights > 0)) {
                                                     Class361.method3502(is[2], 2, is[0], is[1]);
                                                     continue;
                                                 }

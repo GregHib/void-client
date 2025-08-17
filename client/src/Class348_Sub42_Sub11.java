@@ -15,11 +15,11 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
     char[] aCharArray9588;
     static int anInt9589;
     static Class351 aClass351_9590 = new Class351(83, -1);
-    static int anInt9591 = -1;
+    static int index = -1;
     int[] anIntArray9592;
 
     public static void method3220(byte i) {
-        if (i < 96) anInt9591 = 45;
+        if (i < 96) index = 45;
         aClass351_9590 = null;
     }
 

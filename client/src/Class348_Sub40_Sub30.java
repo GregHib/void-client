@@ -59,7 +59,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
             try {
                 anInt9391++;
                 if (string != null) {
-                    if (anInt9383 >= 200 && !Class206.aBoolean4888 || anInt9383 >= 200) {
+                    if (anInt9383 >= 200 && !Class206.isMember || anInt9383 >= 200) {
                         Class59.method544((Class274.aClass274_3493.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
                         String string_0_ = Class274.aClass274_3494.method2063(Class348_Sub33.anInt6967, 544);
                         if (string_0_ != null) Class59.method544(string_0_, false, 4);
