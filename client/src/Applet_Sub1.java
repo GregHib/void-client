@@ -267,20 +267,21 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     final boolean method89(int i) {
         anInt40++;
-        if (i <= 19) return true;
+        return true;
+        /*if (i <= 19) return true;
         String string = getDocumentBase().getHost().toLowerCase();
         if (string.equals("jagex.com") || string.endsWith(".jagex.com")) return true;
         if (string.equals("runescape.com") || string.endsWith(".runescape.com")) return true;
         if (string.equals("stellardawn.com") || string.endsWith(".stellardawn.com")) return true;
         if (string.endsWith("127.0.0.1")) return true;
-        for (/**/; string.length() > 0 && string.charAt(-1 + string.length()) >= 48; string = string.substring(0, string.length() - 1)) {
+        for (*//**//*; string.length() > 0 && string.charAt(-1 + string.length()) >= 48; string = string.substring(0, string.length() - 1)) {
             if (string.charAt(string.length() - 1) > 57) {
                 break;
             }
         }
         if (string.endsWith("192.168.1.")) return true;
         method82(53, "invalidhost");
-        return false;
+        return false;*/
     }
 
     private final void method90(boolean bool, boolean bool_4_) {
