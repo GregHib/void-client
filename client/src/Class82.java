@@ -32,7 +32,7 @@ final class Class82 {
                         Applet_Sub1.method94("displayfps - Toggle FPS and other information", -89);
                         Applet_Sub1.method94("renderer - Print graphics renderer information", 122);
                         Applet_Sub1.method94("heap - Print java memory information", -88);
-                        break;
+//                        break;
                     }
                     if (string.equalsIgnoreCase("cls")) {
                         Class284.anInt3676 = 0;
