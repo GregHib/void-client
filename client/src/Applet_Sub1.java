@@ -427,6 +427,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     abstract void method93(int i);
 
+    static final void set(String string) {
+        Class363.aString4461 = string;
+        Class348_Sub38.anInt7006 = string.length();
+    }
+
     static final void method94(String string, int i) {
         anInt6++;
         if (Class286_Sub1.aStringArray6200 == null) Class14_Sub3.method249(2);
