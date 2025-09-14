@@ -5,6 +5,7 @@
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
+import java.util.Arrays;
 
 final class Class38 {
     static int anInt497;
@@ -72,6 +73,8 @@ final class Class38 {
         }
     }
 
+    private static int HISTORY_INDEX = -1;
+
     static final void method363(int i) {
         if (Class168.anInt2254 < 102) Class168.anInt2254 += 6;
         anInt512++;
@@ -107,8 +110,49 @@ final class Class38 {
                 int i_7_ = interface6.method30(false);
                 char c = interface6.method28((byte) 46);
                 int i_8_ = interface6.method26(-7616);
-                if (i_7_ == 84) Class59_Sub1.method555(false, 0);
-                if (i_7_ != 80) {
+                if (i_7_ == 98) {
+                    for (int index = HISTORY_INDEX; index < Class286_Sub1.aStringArray6200.length; index++) {
+                        if (index == -1) {
+                            continue;
+                        }
+                        String line = Class286_Sub1.aStringArray6200[index];
+                        if (line.isEmpty()) {
+                            continue;
+                        }
+                        String[] parts = line.split(": ");
+                        if (parts.length == 2 && parts[1].startsWith("-->")) {
+                            if (index > HISTORY_INDEX) {
+                                HISTORY_INDEX = index;
+                                Class363.aString4461 = parts[1].substring(4);
+                                Class348_Sub38.anInt7006 = Class363.aString4461.length();
+                                break;
+                            }
+                        }
+                    }
+                } else if (i_7_ == 99) {
+                    boolean found = false;
+                    for (int index = HISTORY_INDEX - 1; index >= 0; index--) {
+                        String line = Class286_Sub1.aStringArray6200[index];
+                        if (line.isEmpty()) {
+                            continue;
+                        }
+                        String[] parts = line.split(": ");
+                        if (parts.length == 2 && parts[1].startsWith("-->")) {
+                            HISTORY_INDEX = index;
+                            Class363.aString4461 = parts[1].substring(4);
+                            Class348_Sub38.anInt7006 = Class363.aString4461.length();
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) {
+                        Class363.aString4461 = "";
+                        Class348_Sub38.anInt7006 = 0;
+                    }
+                } else if (i_7_ == 84) {
+                    Class59_Sub1.method555(false, 0);
+                    HISTORY_INDEX = -1;
+                } else if (i_7_ != 80) {
                     if (i_7_ == 66 && (0x4 & i_8_) != 0) {
                         if (Class348_Sub40_Sub27.aClipboard9357 != null) {
                             String string = "";
