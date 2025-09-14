@@ -127,10 +127,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
 
     final void method2452(byte i, Class348_Sub49 class348_sub49) {
         anInt10547++;
-        System.out.println(Arrays.toString(class348_sub49.aByteArray7154));
         class348_sub49.anInt7197 = 0;
         int i_11_ = class348_sub49.readUnsignedByte(255);
-        System.out.println("Flag " + i_11_);
         aByte10538 = (byte) (i_11_ & 0x1);
         boolean bool = this.aBoolean10517;
         this.aBoolean10517 = (0x2 & i_11_) != 0;
@@ -141,11 +139,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         this.x += -i_13_ + method2436((byte) 47) << 8;
         this.y += method2436((byte) 96) + -i_13_ << 8;
         aByte10556 = class348_sub49.readByte(-114);
-        System.out.println("Title " + aByte10556);
         this.anInt10540 = class348_sub49.readByte(-89);
-        System.out.println("Skull " + anInt10540);
         this.anInt10522 = class348_sub49.readByte(i ^ ~0x1);
-        System.out.println("Icon " + anInt10522);
         this.aBoolean10551 = class348_sub49.readByte(i + -199) == 1;
         if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 && Class192.anInt2581 >= 2) this.aBoolean10551 = false;
         this.anInt10542 = 0;
@@ -153,12 +148,10 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         int[] is = new int[12];
         for (int i_15_ = 0; i_15_ < 12; i_15_++) {
             int i_16_ = class348_sub49.readUnsignedByte(255);
-            System.out.println("Read " + i_15_ + " " + i_16_);
             if (i_16_ == 0) is[i_15_] = 0;
             else {
                 int i_17_ = class348_sub49.readUnsignedByte(255);
                 int i_18_ = i_17_ + (i_16_ << 8);
-                System.out.println("Combined " + i_18_);
                 if (i_15_ == 0 && i_18_ == 65535) {
                     i_14_ = class348_sub49.readUnsignedShort(842397944);
                     this.anInt10542 = class348_sub49.readUnsignedByte(255);

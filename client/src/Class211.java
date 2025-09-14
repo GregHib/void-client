@@ -26,7 +26,6 @@ final class Class211 {
     static final boolean method1538(int i, byte i_0_, Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt2732++;
         int i_1_ = class348_sub49_sub2.readBits((byte) -24, 2);
-        System.out.println("Another type: " + i_1_);
         if (i_1_ == 0) {
             if (class348_sub49_sub2.readBits((byte) -24, 1) != 0) method1538(i, (byte) 105, class348_sub49_sub2);
             int i_2_ = class348_sub49_sub2.readBits((byte) -24, 6);

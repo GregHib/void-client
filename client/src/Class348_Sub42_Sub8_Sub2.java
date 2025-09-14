@@ -1114,6 +1114,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             }
             String string_142_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -95);
             if (i == 99) Applet_Sub1.method94(string_142_, -93);
+            else if (i == 98) Applet_Sub1.set(string_142_);
             else {
                 if (!string_141_.equals("") && Class351.method3455(string_141_, 28280)) {
                     Class348_Sub3.aClass114_6584 = null;
