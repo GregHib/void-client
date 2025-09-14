@@ -279,7 +279,6 @@ final class Class361 {
     static final void method3502(int i, int i_61_, int i_62_, int i_63_) {
         anInt4439++;
         String string = ("tele " + i_62_ + "," + (i_63_ >> 6) + "," + (i >> 6) + "," + (0x3f & i_63_) + "," + (0x3f & i));
-        System.out.println(string);
         if (i_61_ != 2) method3502(-25, -23, 24, 63);
         Class82.method812(string, true, false, (byte) -79);
     }

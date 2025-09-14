@@ -76,7 +76,6 @@ final class Class348_Sub43 extends Class348 {
                                     else i_7_ = (short) 2000;
                                 }
                             }
-                            System.out.println("Option " + Class318_Sub1_Sub2_Sub1.aStringArray10195[i_6_] + " op:" + Class348_Sub49_Sub2.aShortArray9768[i_6_]);
                             short i_8_ = (short) (i_7_ + (Class348_Sub49_Sub2.aShortArray9768[i_6_]));
                             int i_9_ = (Canvas_Sub1.anIntArray60[i_6_] == -1 ? Class38.anInt506 : Canvas_Sub1.anIntArray60[i_6_]);
                             Class50_Sub3.method466(false, "<col=ffffff>" + string, 0, (byte) -105, false, 0, -1, true, i_8_, player.anInt10290, (Class318_Sub1_Sub2_Sub1.aStringArray10195[i_6_]), player.anInt10290, i_9_);
