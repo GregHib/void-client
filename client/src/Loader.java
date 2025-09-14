@@ -3,6 +3,8 @@ import java.applet.Applet;
 import java.awt.*;
 import java.math.BigInteger;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Properties;
 
 public class Loader extends Applet {
@@ -106,6 +108,14 @@ public class Loader extends Applet {
         aJFrame2.pack();
         aJFrame2.setVisible(true);
         aJFrame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ArrayList<Image> icons = new ArrayList<>();
+        for (String name : Arrays.asList("icon-16.png", "icon-32.png", "icon-64.png", "icon-128.png", "icon-256.png")) {
+            URL resource = Loader.class.getResource(name);
+            if (resource != null) {
+                icons.add(new ImageIcon(resource).getImage());
+            }
+        }
+        aJFrame2.setIconImages(icons);
     }
 
     void startClient() {
