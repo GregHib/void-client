@@ -110,6 +110,7 @@ final class Class38 {
                 int i_7_ = interface6.method30(false);
                 char c = interface6.method28((byte) 46);
                 int i_8_ = interface6.method26(-7616);
+                System.out.println("Key: " + i_7_);
                 if (i_7_ == 98) {
                     for (int index = HISTORY_INDEX; index < Class286_Sub1.aStringArray6200.length; index++) {
                         if (index == -1) {
@@ -130,6 +131,7 @@ final class Class38 {
                         }
                     }
                 } else if (i_7_ == 99) {
+                    // TODO Control back editting
                     boolean found = false;
                     for (int index = HISTORY_INDEX - 1; index >= 0; index--) {
                         String line = Class286_Sub1.aStringArray6200[index];
@@ -163,7 +165,17 @@ final class Class38 {
                         }
                     } else if (i_7_ != 67 || (0x4 & i_8_) == 0) {
                         if (i_7_ != 85 || Class348_Sub38.anInt7006 <= 0) {
-                            if (i_7_ == 101 && (Class348_Sub38.anInt7006 < Class363.aString4461.length())) Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + (Class363.aString4461.substring(Class348_Sub38.anInt7006 - -1)));
+                            if (i_7_ == 101 && (Class348_Sub38.anInt7006 < Class363.aString4461.length())){
+                                if ((0x4 & i_8_) == 0) {
+                                    Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + (Class363.aString4461.substring(Class348_Sub38.anInt7006 - -1)));
+                                } else {
+                                    int index = Class363.aString4461.indexOf(' ', Class348_Sub38.anInt7006 + 1);
+                                    if (index == -1) {
+                                        index = Class363.aString4461.length();
+                                    }
+                                    Class363.aString4461 = Class363.aString4461.substring(0, Class348_Sub38.anInt7006) + Class363.aString4461.substring(index);
+                                }
+                            }
                             else if (i_7_ != 96 || Class348_Sub38.anInt7006 <= 0) {
                                 if (i_7_ == 97 && (Class363.aString4461.length() > Class348_Sub38.anInt7006)){
                                     if ((0x4 & i_8_) == 0) {
