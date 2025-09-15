@@ -184,8 +184,15 @@ final class Class38 {
                                 }
                             } else Class348_Sub38.anInt7006--;
                         } else {
-                            Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006 - 1)) + Class363.aString4461.substring(Class348_Sub38.anInt7006));
-                            Class348_Sub38.anInt7006--;
+                            if ((0x4 & i_8_) == 0) {
+                                Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006 - 1)) + Class363.aString4461.substring(Class348_Sub38.anInt7006));
+                                Class348_Sub38.anInt7006--;
+                            } else {
+                                int index = Class363.aString4461.trim().lastIndexOf(' ', Class348_Sub38.anInt7006);
+                                index++;
+                                Class363.aString4461 = Class363.aString4461.substring(0, index);
+                                Class348_Sub38.anInt7006 = index;
+                            }
                         }
                     } else if (Class348_Sub40_Sub27.aClipboard9357 != null) {
                         Transferable transferable = Class348_Sub40_Sub27.aClipboard9357.getContents(null);
