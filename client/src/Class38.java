@@ -165,7 +165,14 @@ final class Class38 {
                         if (i_7_ != 85 || Class348_Sub38.anInt7006 <= 0) {
                             if (i_7_ == 101 && (Class348_Sub38.anInt7006 < Class363.aString4461.length())) Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + (Class363.aString4461.substring(Class348_Sub38.anInt7006 - -1)));
                             else if (i_7_ != 96 || Class348_Sub38.anInt7006 <= 0) {
-                                if (i_7_ == 97 && (Class363.aString4461.length() > Class348_Sub38.anInt7006)) Class348_Sub38.anInt7006++;
+                                if (i_7_ == 97 && (Class363.aString4461.length() > Class348_Sub38.anInt7006)){
+                                    if ((0x4 & i_8_) == 0) {
+                                        Class348_Sub38.anInt7006++;
+                                    } else {
+                                        int result = Class363.aString4461.indexOf(' ', Math.min(Class348_Sub38.anInt7006 + 1, Class363.aString4461.length() - 1));
+                                        Class348_Sub38.anInt7006 = result == -1 ? Class363.aString4461.length() : result + 1;
+                                    }
+                                }
                                 else if (i_7_ == 102) Class348_Sub38.anInt7006 = 0;
                                 else if (i_7_ == 103) Class348_Sub38.anInt7006 = Class363.aString4461.length();
                                 else if (i_7_ != 104 || (Class260.anInt3312 >= (Class286_Sub1.aStringArray6200).length)) {
@@ -182,7 +189,13 @@ final class Class38 {
                                     aa.method159(-615751774);
                                     Class348_Sub38.anInt7006 = Class363.aString4461.length();
                                 }
-                            } else Class348_Sub38.anInt7006--;
+                            } else {
+                                if ((0x4 & i_8_) == 0) {
+                                    Class348_Sub38.anInt7006--;
+                                } else {
+                                    Class348_Sub38.anInt7006 = Math.max(Class363.aString4461.lastIndexOf(' ', Class348_Sub38.anInt7006 - 2) + 1, 0);
+                                }
+                            }
                         } else {
                             if ((0x4 & i_8_) == 0) {
                                 Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006 - 1)) + Class363.aString4461.substring(Class348_Sub38.anInt7006));
