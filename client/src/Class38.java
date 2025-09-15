@@ -110,7 +110,6 @@ final class Class38 {
                 int i_7_ = interface6.method30(false);
                 char c = interface6.method28((byte) 46);
                 int i_8_ = interface6.method26(-7616);
-                System.out.println("Key: " + i_7_);
                 if (i_7_ == 98) {
                     for (int index = HISTORY_INDEX; index < Class286_Sub1.aStringArray6200.length; index++) {
                         if (index == -1) {
@@ -131,7 +130,6 @@ final class Class38 {
                         }
                     }
                 } else if (i_7_ == 99) {
-                    // TODO Control back editting
                     boolean found = false;
                     for (int index = HISTORY_INDEX - 1; index >= 0; index--) {
                         String line = Class286_Sub1.aStringArray6200[index];
