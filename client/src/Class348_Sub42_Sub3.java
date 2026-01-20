@@ -24,6 +24,19 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         if (i_4_ < 0) i_4_ = 0;
         else if (i_4_ > 100) i_4_ = 100;
         int i_5_ = ((-Class110.aShort1700 + Class168.aShort2250) * i_4_ / 100 + Class110.aShort1700);
+        int i_5_base = i_5_;
+        if (Class320.anInt3995 != 0) i_5_ += Class320.anInt3995;
+        int i_5_min = Class110.aShort1700 * Constant.FOV_MIN_FACTOR_NUM / Constant.FOV_MIN_FACTOR_DEN;
+        int i_5_max = Class168.aShort2250 * Constant.FOV_MAX_FACTOR_NUM / Constant.FOV_MAX_FACTOR_DEN;
+        if (i_5_min < Constant.FOV_MIN_ABS) i_5_min = Constant.FOV_MIN_ABS;
+        if (i_5_min > i_5_max) {
+            int i_5_tmp = i_5_min;
+            i_5_min = i_5_max;
+            i_5_max = i_5_tmp;
+        }
+        if (i_5_ < i_5_min) i_5_ = i_5_min;
+        else if (i_5_ > i_5_max) i_5_ = i_5_max;
+        if (Class320.anInt3995 != 0) Class320.anInt3995 = i_5_ - i_5_base;
         if (i_5_ < Class348_Sub42_Sub8.aShort9555) i_5_ = Class348_Sub42_Sub8.aShort9555;
         else if (Class48.aShort851 < i_5_) i_5_ = Class48.aShort851;
         int i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334);

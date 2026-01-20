@@ -1764,7 +1764,11 @@ public final class client extends Applet_Sub1 {
                             Class318_Sub1_Sub3.aClass262_8744.method1999(class348_sub45, -20180);
                             if (Class318_Sub1_Sub3.aClass262_8744.method1998(0) > 10) Class318_Sub1_Sub3.aClass262_8744.method1997(8);
                         }
-                    } else Class98.anInt1565 += class348_sub45.method3315(0);
+                    } else {
+                        int i_112_ = class348_sub45.method3315(0);
+                        Class98.anInt1565 += i_112_;
+                        Class320.anInt3995 += -i_112_ * Constant.ZOOM_OFFSET_STEP;
+                    }
                 } else r_Sub1.aClass262_10479.method1999(class348_sub45, -20180);
             }
             if (Class348_Sub42_Sub16_Sub2.method3263(true)) Class38.method363(125);

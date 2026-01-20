@@ -5,6 +5,7 @@
 final class Class320 {
     static short aShort3992 = 320;
     static int anInt3993;
+    static int anInt3995 = Constant.ZOOM_OFFSET_DEFAULT;
     static float aFloat3994;
 
     static final boolean method2547(int i, byte i_0_) {
