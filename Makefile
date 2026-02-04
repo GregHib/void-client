@@ -9,6 +9,39 @@ LIBS ?= libs/clientlibs.jar
 MAIN_CLASS ?= Loader
 OUT_JAR ?= $(BUILD_DIR)/void-client.jar
 
+# Requested JDK major version. Used to validate JAVA_HOME and auto-select a bootstrapped JDK under ./.jdk/.
+JDK ?= 8
+BOOTSTRAP_JAVA_HOME ?= $(CURDIR)/.jdk/temurin$(JDK)
+
+# If JAVA_HOME isn't set (or doesn't match JDK), fall back to a repo-local bootstrapped JDK if present.
+JAVA_HOME_BIN_JAVA := $(JAVA_HOME)/bin/java
+JAVA_HOME_BIN_JAVAC := $(JAVA_HOME)/bin/javac
+
+ifdef JAVA_HOME
+  ifeq ($(wildcard $(JAVA_HOME_BIN_JAVA)),)
+    ifneq ($(wildcard $(BOOTSTRAP_JAVA_HOME)/bin/java),)
+      $(warning JAVA_HOME is set but invalid ($(JAVA_HOME_BIN_JAVA) missing); using $(BOOTSTRAP_JAVA_HOME))
+      JAVA_HOME := $(BOOTSTRAP_JAVA_HOME)
+    else
+      $(warning JAVA_HOME is set but invalid ($(JAVA_HOME_BIN_JAVA) missing); falling back to PATH)
+    endif
+  else
+    JAVA_HOME_MAJOR := $(shell "$(JAVA_HOME_BIN_JAVA)" -version 2>&1 | sed -n '1{s/.*version \"1\.\([0-9][0-9]*\).*/\1/p; s/.*version \"\([0-9][0-9]*\).*/\1/p;}')
+    ifneq ($(JAVA_HOME_MAJOR),$(JDK))
+      ifneq ($(wildcard $(BOOTSTRAP_JAVA_HOME)/bin/java),)
+        $(warning JAVA_HOME is Java $(JAVA_HOME_MAJOR) but JDK=$(JDK); using $(BOOTSTRAP_JAVA_HOME))
+        JAVA_HOME := $(BOOTSTRAP_JAVA_HOME)
+      else
+        $(warning JAVA_HOME is Java $(JAVA_HOME_MAJOR) but JDK=$(JDK); continuing with JAVA_HOME)
+      endif
+    endif
+  endif
+else
+  ifneq ($(wildcard $(BOOTSTRAP_JAVA_HOME)/bin/java),)
+    JAVA_HOME := $(BOOTSTRAP_JAVA_HOME)
+  endif
+endif
+
 ifdef JAVA_HOME
 JAVA := $(JAVA_HOME)/bin/java
 JAVAC := $(JAVA_HOME)/bin/javac
@@ -30,11 +63,12 @@ help:
 	@echo "  make clean     - remove $(BUILD_DIR)"
 	@echo ""
 	@echo "Vars:"
-	@echo "  JAVA_HOME=/path/to/jdk   (use a specific JDK)"
+	@echo "  JDK=8                    (requested major version; default 8)"
+	@echo "  JAVA_HOME=/path/to/jdk   (used if compatible with JDK; otherwise ./.jdk/temurin\$$JDK is preferred)"
 	@echo "  LIBS=libs/clientlibs.jar (classpath deps)"
 	@echo ""
 	@echo "Tip:"
-	@echo "  tools/bootstrap-jdk.sh 8  (downloads a repo-local JDK into .jdk/)"
+	@echo "  tools/bootstrap-jdk.sh \$$JDK  (downloads a repo-local JDK into .jdk/)"
 
 sources:
 	@mkdir -p "$(BUILD_DIR)"
