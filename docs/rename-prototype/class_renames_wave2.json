@@ -2,6 +2,7 @@
   "version": 1,
   "description": "Wave 2 curated class renames (selected from 634→667 mapping TSV; excludes low-value placeholder dst names).",
   "base_commit": "b3c2919",
+  "applied_commit": "7becfff",
   "src_dir": "client/src",
   "min_score": 0.8,
   "source_tsv": "docs/rename-prototype/mapping_634_to_667_refactored.tsv",
