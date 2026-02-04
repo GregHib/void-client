@@ -32,6 +32,9 @@ help:
 	@echo "Vars:"
 	@echo "  JAVA_HOME=/path/to/jdk   (use a specific JDK)"
 	@echo "  LIBS=libs/clientlibs.jar (classpath deps)"
+	@echo ""
+	@echo "Tip:"
+	@echo "  tools/bootstrap-jdk.sh 8  (downloads a repo-local JDK into .jdk/)"
 
 sources:
 	@mkdir -p "$(BUILD_DIR)"
@@ -53,4 +56,3 @@ run: jar
 
 clean:
 	rm -rf "$(BUILD_DIR)"
-
