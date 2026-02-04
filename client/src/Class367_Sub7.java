@@ -11,7 +11,7 @@ final class Class367_Sub7 extends Class367 {
     private IDirect3DPixelShader anIDirect3DPixelShader7343;
     private boolean aBoolean7344;
     private IDirect3DVertexShader anIDirect3DVertexShader7345;
-    private Class378 aClass378_7346;
+    private D3DToolkit aClass378_7346;
     private final boolean aBoolean7347;
     private final Class269 aClass269_7348;
 
@@ -61,7 +61,7 @@ final class Class367_Sub7 extends Class367 {
         if (i != -16252) aClass378_7346 = null;
     }
 
-    Class367_Sub7(Class378 class378, Class45 class45, Class269 class269) {
+    Class367_Sub7(D3DToolkit class378, Class45 class45, Class269 class269) {
         super(class378);
         aClass269_7348 = class269;
         aClass378_7346 = class378;

@@ -15,7 +15,7 @@ final class Class238_Sub1 extends Class238 {
     private Class376 aClass376_5834;
     static int anInt5835;
     private final Socket aSocket5836;
-    private final Class208 aClass208_5837;
+    private final ClientStreamWriter aClass208_5837;
     static int anInt5838;
     static int anInt5839;
     static boolean aBoolean5840 = true;
@@ -183,7 +183,7 @@ final class Class238_Sub1 extends Class238 {
         aSocket5836.setSoTimeout(30000);
         aSocket5836.setTcpNoDelay(true);
         aClass376_5834 = new Class376(aSocket5836.getInputStream(), i);
-        aClass208_5837 = new Class208(aSocket5836.getOutputStream(), i);
+        aClass208_5837 = new ClientStreamWriter(aSocket5836.getOutputStream(), i);
     }
 
     protected final void finalize() {

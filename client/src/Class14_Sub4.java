@@ -16,7 +16,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
     static int anInt8641;
     static byte[][] aByteArrayArray8642;
     static int anInt8643;
-    static Class323 aClass323_8644;
+    static WorldMapFont aClass323_8644;
     static int anInt8645;
     static int anInt8646;
     static int anInt8647;

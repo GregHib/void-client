@@ -15,7 +15,7 @@ final class Class239_Sub15 extends Class239 {
     static int anInt6005;
     static int anInt6006 = 0;
 
-    static final Class323 method1782(int i, int i_0_) {
+    static final WorldMapFont method1782(int i, int i_0_) {
         if (i_0_ != 10144) return null;
         anInt6004++;
         if (i == 0) {

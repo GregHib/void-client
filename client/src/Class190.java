@@ -85,7 +85,7 @@ final class Class190 {
                     if (i_14_ > i_10_) i_10_ = i_14_;
                 }
             }
-            Class323 class323 = null;
+            WorldMapFont class323 = null;
             int i_15_ = 0;
             int i_16_ = 0;
             int i_17_ = 0;

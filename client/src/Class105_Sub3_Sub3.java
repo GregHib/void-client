@@ -5,12 +5,12 @@
 final class Class105_Sub3_Sub3 extends Class105_Sub3 {
     int[] anIntArray9936;
 
-    Class105_Sub3_Sub3(ha_Sub1 var_ha_Sub1, int[] is, int i, int i_0_) {
+    Class105_Sub3_Sub3(JavaToolkit var_ha_Sub1, int[] is, int i, int i_0_) {
         super(var_ha_Sub1, i, i_0_);
         this.anIntArray9936 = is;
     }
 
-    Class105_Sub3_Sub3(ha_Sub1 var_ha_Sub1, int[] is, int i, int i_1_, int i_2_, int i_3_, boolean bool) {
+    Class105_Sub3_Sub3(JavaToolkit var_ha_Sub1, int[] is, int i, int i_1_, int i_2_, int i_3_, boolean bool) {
         super(var_ha_Sub1, i_2_, i_3_);
         if (bool) this.anIntArray9936 = new int[i_2_ * i_3_];
         else this.anIntArray9936 = is;
@@ -1194,7 +1194,7 @@ final class Class105_Sub3_Sub3 extends Class105_Sub3 {
         }
     }
 
-    Class105_Sub3_Sub3(ha_Sub1 var_ha_Sub1, int i, int i_443_) {
+    Class105_Sub3_Sub3(JavaToolkit var_ha_Sub1, int i, int i_443_) {
         super(var_ha_Sub1, i, i_443_);
         this.anIntArray9936 = new int[i * i_443_];
     }

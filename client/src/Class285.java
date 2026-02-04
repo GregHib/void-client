@@ -28,7 +28,7 @@ abstract class Class285 implements Interface5 {
     static int anInt4751;
     static int anInt4752;
     static int anInt4753 = 0;
-    static Class323 aClass323_4754;
+    static WorldMapFont aClass323_4754;
     private final int anInt4755;
     static int anInt4756;
     static int anInt4757;

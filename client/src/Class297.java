@@ -148,10 +148,10 @@ final class Class297 implements Runnable {
                             frame.setResizable(false);
                             if (this.aBoolean3794) aClass134_3802.method1146((class144.anInt2000 & 0xffff), (class144.anInt1999 >> 16), (class144.anInt2000 >>> 16), -43, 0xffff & (class144.anInt1999), frame);
                             else
-                                ((Class7) anObject3793).method209(frame, (new Integer((class144.anInt2000) >>> 16)), (new Integer(0xffff & (class144.anInt2000))), (new Integer((class144.anInt1999) >> 16)), (new Integer((class144.anInt1999) & 0xffff)));
+                                ((AwtFullscreenAdapter) anObject3793).method209(frame, (new Integer((class144.anInt2000) >>> 16)), (new Integer(0xffff & (class144.anInt2000))), (new Integer((class144.anInt1999) >> 16)), (new Integer((class144.anInt1999) & 0xffff)));
                         } else if (i == 7) {
                             if (this.aBoolean3794) aClass134_3802.method1147(((Frame) (class144.anObject1996)), 8);
-                            else ((Class7) anObject3793).method211();
+                            else ((AwtFullscreenAdapter) anObject3793).method211();
                         } else if (i == 12) {
                             Class234 class234 = (method2241(((String) (class144.anObject1996)), 12606, aString3789, anInt3792));
                             class144.anObject1998 = class234;
@@ -187,7 +187,7 @@ final class Class297 implements Runnable {
                                 throw exception;
                             }
                         } else throw new Exception("");
-                    } else if (!this.aBoolean3794) class144.anObject1998 = ((Class7) anObject3793).method210();
+                    } else if (!this.aBoolean3794) class144.anObject1998 = ((AwtFullscreenAdapter) anObject3793).method210();
                     else class144.anObject1998 = aClass134_3802.method1145(true);
                 } else throw new Exception("");
                 class144.anInt1997 = 1;
@@ -420,14 +420,14 @@ final class Class297 implements Runnable {
                 /* empty */
             }
         }
-        Class201.method1465((byte) -121, aString3789, anInt3792);
+        FileCache.method1465((byte) -121, aString3789, anInt3792);
         if (this.aBoolean3777) {
-            this.aClass234_3788 = new Class234(Class201.method1464(0, anInt3792, "random.dat", null), "rw", 25L);
-            this.aClass234_3785 = new Class234(Class201.method1466(-2, "main_file_cache.dat2"), "rw", 209715200L);
-            this.aClass234_3779 = new Class234(Class201.method1466(-2, "main_file_cache.idx255"), "rw", 1048576L);
+            this.aClass234_3788 = new Class234(FileCache.method1464(0, anInt3792, "random.dat", null), "rw", 25L);
+            this.aClass234_3785 = new Class234(FileCache.method1466(-2, "main_file_cache.dat2"), "rw", 209715200L);
+            this.aClass234_3779 = new Class234(FileCache.method1466(-2, "main_file_cache.idx255"), "rw", 1048576L);
             this.aClass234Array3795 = new Class234[i_22_];
             for (int i_23_ = 0; i_22_ > i_23_; i_23_++)
-                this.aClass234Array3795[i_23_] = new Class234(Class201.method1466(-2, ("main_file_cache.idx" + i_23_)), "rw", 1048576L);
+                this.aClass234Array3795[i_23_] = new Class234(FileCache.method1466(-2, ("main_file_cache.idx" + i_23_)), "rw", 1048576L);
             if (this.aBoolean3794) {
                 try {
                     anObject3787 = new Class1();
@@ -436,7 +436,7 @@ final class Class297 implements Runnable {
                 }
             }
             try {
-                if (!this.aBoolean3794) anObject3793 = new Class7();
+                if (!this.aBoolean3794) anObject3793 = new AwtFullscreenAdapter();
                 else aClass134_3802 = new Class134();
             } catch (Throwable throwable) {
                 /* empty */

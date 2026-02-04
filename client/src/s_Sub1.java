@@ -8,7 +8,7 @@ final class s_Sub1 extends s {
     private float aFloat8214;
     private Class102[][] aClass102ArrayArray8215;
     private float aFloat8216;
-    private final ha_Sub1 aHa_Sub1_8217;
+    private final JavaToolkit aHa_Sub1_8217;
     private float aFloat8218;
     private Class198[][] aClass198ArrayArray8219;
     private byte[][] aByteArrayArray8220;
@@ -1569,7 +1569,7 @@ final class s_Sub1 extends s {
         return i == 9;
     }
 
-    s_Sub1(ha_Sub1 var_ha_Sub1, int i, int i_485_, int i_486_, int i_487_, int[][] is, int[][] is_488_, int i_489_) {
+    s_Sub1(JavaToolkit var_ha_Sub1, int i, int i_485_, int i_486_, int i_487_, int[][] is, int[][] is_488_, int i_489_) {
         super(i_486_, i_487_, i_489_, is);
         aHa_Sub1_8217 = var_ha_Sub1;
         anInt8223 = i_485_;

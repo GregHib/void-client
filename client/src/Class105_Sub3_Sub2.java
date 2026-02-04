@@ -1196,7 +1196,7 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
         }
     }
 
-    Class105_Sub3_Sub2(ha_Sub1 var_ha_Sub1, byte[] is, int[] is_416_, int i, int i_417_) {
+    Class105_Sub3_Sub2(JavaToolkit var_ha_Sub1, byte[] is, int[] is_416_, int i, int i_417_) {
         super(var_ha_Sub1, i, i_417_);
         aByteArray9934 = is;
         anIntArray9935 = is_416_;

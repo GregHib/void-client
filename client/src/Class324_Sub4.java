@@ -6,11 +6,11 @@ final class Class324_Sub4 extends Class324 {
     private final int[] anIntArray6503;
     private final byte[][] aByteArrayArray6504;
     private final int[] anIntArray6505;
-    private ha_Sub1 aHa_Sub1_6506;
+    private JavaToolkit aHa_Sub1_6506;
     private final int[] anIntArray6507;
     private final int[] anIntArray6508;
 
-    Class324_Sub4(ha_Sub1 var_ha_Sub1, Class143 class143, Class207[] class207s, int[] is, int[] is_0_) {
+    Class324_Sub4(JavaToolkit var_ha_Sub1, Class143 class143, Class207[] class207s, int[] is, int[] is_0_) {
         super(var_ha_Sub1, class143);
         aHa_Sub1_6506 = var_ha_Sub1;
         aHa_Sub1_6506 = var_ha_Sub1;

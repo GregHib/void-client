@@ -8,7 +8,7 @@ import jagdx.IDirect3DVertexShader;
 final class Class367_Sub5 extends Class367 {
     private boolean aBoolean7326 = false;
     private static float[] aFloatArray7327 = new float[4];
-    private Class378 aClass378_7328;
+    private D3DToolkit aClass378_7328;
     private final boolean aBoolean7329;
     private IDirect3DVertexShader anIDirect3DVertexShader7330;
     private Interface18_Impl3 anInterface18_Impl3_7331;
@@ -19,7 +19,7 @@ final class Class367_Sub5 extends Class367 {
     private boolean aBoolean7336;
     private static final float[] aFloatArray7337 = new float[16];
 
-    Class367_Sub5(Class378 class378, Class45 class45) {
+    Class367_Sub5(D3DToolkit class378, Class45 class45) {
         super(class378);
         aClass378_7328 = class378;
         if (null == class45 || ((aClass378_7328.aD3DCAPS9791.VertexShaderVersion) & 0xffff) < 257) aBoolean7329 = false;

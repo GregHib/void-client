@@ -158,7 +158,7 @@ abstract class Class59 {
         Object object = null;
         File file;
         try {
-            file = Class201.method1466(i + -7470, string_52_);
+            file = FileCache.method1466(i + -7470, string_52_);
         } catch (RuntimeException runtimeexception) {
             if (Loader.trace) {
                 runtimeexception.printStackTrace();

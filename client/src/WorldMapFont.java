@@ -1,11 +1,11 @@
-/* Class323 - Decompiled by JODE
+/* WorldMapFont - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
 import java.awt.*;
 import java.awt.image.PixelGrabber;
 
-final class Class323 {
+final class WorldMapFont {
     private boolean aBoolean4037 = false;
     private static final int anInt4038 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".length();
     private final int[] anIntArray4039;
@@ -104,7 +104,7 @@ final class Class323 {
         return anInt4040 - 1;
     }
 
-    Class323(ha var_ha, int i, boolean bool, Component component) {
+    WorldMapFont(ha var_ha, int i, boolean bool, Component component) {
         aBoolean4037 = false;
         aClass105Array4042 = new Class105[256];
         anIntArray4039 = new int[256];

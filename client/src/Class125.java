@@ -11,7 +11,7 @@ final class Class125 implements Interface12 {
     int anInt4918;
     static int anInt4919 = 0;
     int anInt4920;
-    static Class323 aClass323_4921;
+    static WorldMapFont aClass323_4921;
     Class221 aClass221_4922;
     int anInt4923;
     int anInt4924;

@@ -12,7 +12,7 @@ final class Class96 {
         try {
             if (!Class9.method215(27165)) throw new RuntimeException("");
             if (!Class348_Sub40_Sub19.method3098(-30282, "jagdx")) throw new RuntimeException("");
-            Method method = (Class378.class.getDeclaredMethod("createToolkit", Canvas.class, d.class, Class45.class, Integer.class));
+            Method method = (D3DToolkit.class.getDeclaredMethod("createToolkit", Canvas.class, d.class, Class45.class, Integer.class));
             var_ha = (ha) method.invoke(null, new Object[]{canvas, var_d, class45, new Integer(i)});
         } catch (Throwable throwable) {
             throw new RuntimeException("");

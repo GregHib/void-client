@@ -37,7 +37,7 @@ abstract class Class348_Sub5 extends Class348 {
         try {
             anInt6628++;
             if (bool != true) aByteArray6624 = null;
-            return new ha_Sub1(canvas, var_d, i_4_, i);
+            return new JavaToolkit(canvas, var_d, i_4_, i);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (canvas != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ')'));
         }

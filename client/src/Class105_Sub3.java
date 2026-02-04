@@ -13,7 +13,7 @@ abstract class Class105_Sub3 extends Class105 {
     static int anInt8457;
     static int anInt8458;
     private static int anInt8459;
-    ha_Sub1 aHa_Sub1_8460;
+    JavaToolkit aHa_Sub1_8460;
     int anInt8461;
     private int[] anIntArray8462;
     static int anInt8463;
@@ -137,7 +137,7 @@ abstract class Class105_Sub3 extends Class105 {
         return (this.anInt8464 + this.anInt8470 + this.anInt8456);
     }
 
-    Class105_Sub3(ha_Sub1 var_ha_Sub1, int i, int i_55_) {
+    Class105_Sub3(JavaToolkit var_ha_Sub1, int i, int i_55_) {
         this.aHa_Sub1_8460 = var_ha_Sub1;
         this.anInt8471 = i;
         this.anInt8470 = i_55_;

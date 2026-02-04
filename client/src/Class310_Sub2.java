@@ -14,7 +14,7 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
     boolean aBoolean6334;
     boolean aBoolean6335;
 
-    Class310_Sub2(Class378 class378, int i, int i_0_, boolean bool, int[] is, int i_1_, int i_2_) {
+    Class310_Sub2(D3DToolkit class378, int i, int i_0_, boolean bool, int[] is, int i_1_, int i_2_) {
         super(class378, Class108.aClass304_1662, Class68.aClass68_1183, bool && class378.aBoolean9798, i_0_ * i);
         if (this.aClass378_3893.aBoolean9792) {
             anInt6331 = i_0_;
@@ -39,7 +39,7 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
         }
     }
 
-    Class310_Sub2(Class378 class378, Class304 class304, Class68 class68, int i, int i_6_) {
+    Class310_Sub2(D3DToolkit class378, Class304 class304, Class68 class68, int i, int i_6_) {
         super(class378, class304, class68, false, i_6_ * i);
         if (this.aClass378_3893.aBoolean9792) {
             anInt6333 = i;
@@ -48,7 +48,7 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
             anInt6333 = Class33.method340(i, (byte) 108);
             anInt6331 = Class33.method340(i_6_, (byte) 108);
         }
-        anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810.a(i, i_6_, 1, 0, Class378.method3958(22, this.aClass68_3895, this.aClass304_3896), 1));
+        anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810.a(i, i_6_, 1, 0, D3DToolkit.method3958(22, this.aClass68_3895, this.aClass304_3896), 1));
     }
 
     public final void method64(Class209 class209, int i) {
@@ -85,7 +85,7 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
         }
     }
 
-    Class310_Sub2(Class378 class378, Class304 class304, int i, int i_16_, boolean bool, byte[] is, int i_17_, int i_18_) {
+    Class310_Sub2(D3DToolkit class378, Class304 class304, int i, int i_16_, boolean bool, byte[] is, int i_17_, int i_18_) {
         super(class378, class304, Class68.aClass68_1183, bool && class378.aBoolean9798, i * i_16_);
         if (this.aClass378_3893.aBoolean9792) {
             anInt6333 = i;
@@ -94,8 +94,8 @@ final class Class310_Sub2 extends Class310 implements Interface18_Impl3 {
             anInt6333 = Class33.method340(i, (byte) 108);
             anInt6331 = Class33.method340(i_16_, (byte) 108);
         }
-        if (bool) anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810.a(anInt6333, anInt6331, 0, 1024, Class378.method3958(22, Class68.aClass68_1183, this.aClass304_3896), 1));
-        else anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810.a(anInt6333, anInt6331, 1, 0, Class378.method3958(22, Class68.aClass68_1183, this.aClass304_3896), 1));
+        if (bool) anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810.a(anInt6333, anInt6331, 0, 1024, D3DToolkit.method3958(22, Class68.aClass68_1183, this.aClass304_3896), 1));
+        else anIDirect3DTexture6332 = (this.aClass378_3893.anIDirect3DDevice9810.a(anInt6333, anInt6331, 1, 0, D3DToolkit.method3958(22, Class68.aClass68_1183, this.aClass304_3896), 1));
         PixelBuffer pixelbuffer = (this.aClass378_3893.aPixelBuffer9803);
         int i_19_ = anIDirect3DTexture6332.LockRect(0, 0, 0, i, i_16_, 0, pixelbuffer);
         if (ue.a(i_19_, false)) {

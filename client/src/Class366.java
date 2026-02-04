@@ -12,7 +12,7 @@ final class Class366 implements Interface5_Impl1 {
     private final boolean aBoolean8509;
     private boolean aBoolean8510 = false;
     IDirect3DVertexBuffer anIDirect3DVertexBuffer8511;
-    private final Class378 aClass378_8512;
+    private final D3DToolkit aClass378_8512;
     private byte aByte8513;
     private int anInt8514;
 
@@ -80,7 +80,7 @@ final class Class366 implements Interface5_Impl1 {
         return aByte8513;
     }
 
-    Class366(Class378 class378, boolean bool) {
+    Class366(D3DToolkit class378, boolean bool) {
         aClass378_8512 = class378;
         aBoolean8509 = bool;
     }

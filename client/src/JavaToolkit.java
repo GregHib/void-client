@@ -1,10 +1,10 @@
-/* ha_Sub1 - Decompiled by JODE
+/* JavaToolkit - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
 import java.awt.*;
 
-final class ha_Sub1 extends ha {
+final class JavaToolkit extends ha {
     private int anInt7465;
     private int anInt7466;
     private Class356 aClass356_7467;
@@ -723,7 +723,7 @@ final class ha_Sub1 extends ha {
             i_218_ += i_219_;
         }
         if (bool) return new Class105_Sub3_Sub3(this, is, i_216_, i_217_);
-        return new Class105_Sub3_Sub1(this, is, i_216_, i_217_);
+        return new JavaRgbSprite(this, is, i_216_, i_217_);
     }
 
     private final void method3717() {
@@ -1219,7 +1219,7 @@ final class ha_Sub1 extends ha {
         return this.aClass101_Sub1_7492;
     }
 
-    ha_Sub1(Canvas canvas, d var_d, int i, int i_355_) {
+    JavaToolkit(Canvas canvas, d var_d, int i, int i_355_) {
         this(var_d);
         try {
             method3643(canvas, i, i_355_);
@@ -1276,7 +1276,7 @@ final class ha_Sub1 extends ha {
     }
 
     final Class64 method3625(Class124 class124, int i, int i_366_, int i_367_, int i_368_) {
-        return new Class64_Sub1(this, class124, i, i_367_, i_368_, i_366_);
+        return new JavaModel(this, class124, i, i_367_, i_368_, i_366_);
     }
 
     final Interface13 method3624(int i, int i_369_) {
@@ -1501,7 +1501,7 @@ final class ha_Sub1 extends ha {
             }
         }
         if (bool_425_) return new Class105_Sub3_Sub3(this, is, i, i_422_, i_423_, i_424_, bool);
-        return new Class105_Sub3_Sub1(this, is, i, i_422_, i_423_, i_424_, bool);
+        return new JavaRgbSprite(this, is, i, i_422_, i_423_, i_424_, bool);
     }
 
     final Class105 method3691(Class207 class207, boolean bool) {
@@ -1532,7 +1532,7 @@ final class ha_Sub1 extends ha {
                         is_438_[i_444_ + i_445_] = i_446_ != 0 ? ~0xffffff | i_446_ : 0;
                     }
                 }
-                class105_sub3 = new Class105_Sub3_Sub1(this, is_438_, i, i_431_);
+                class105_sub3 = new JavaRgbSprite(this, is_438_, i, i_431_);
             } else {
                 for (int i_440_ = 0; i_440_ < i_431_; i_440_++) {
                     int i_441_ = i_440_ * i;
@@ -1743,7 +1743,7 @@ final class ha_Sub1 extends ha {
 
     final Class105 method3629(int i, int i_519_, boolean bool) {
         if (bool) return new Class105_Sub3_Sub3(this, i, i_519_);
-        return new Class105_Sub3_Sub1(this, i, i_519_);
+        return new JavaRgbSprite(this, i, i_519_);
     }
 
     final void method3630(boolean bool) {
@@ -1752,7 +1752,7 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3650(int i) {
-        Class64_Sub1.anInt5346 = Class64_Sub1.anInt5350 = i;
+        JavaModel.anInt5346 = JavaModel.anInt5350 = i;
         if (this.anInt7485 > 1) throw new IllegalStateException("No MT");
         method3631(this.anInt7485);
         method3659(0);
@@ -1987,7 +1987,7 @@ final class ha_Sub1 extends ha {
         return this.aD4579.method4(-7953, i);
     }
 
-    private ha_Sub1(d var_d) {
+    private JavaToolkit(d var_d) {
         super(var_d);
         aClass356_7467 = new Class356(4);
         this.anInt7474 = 45823;

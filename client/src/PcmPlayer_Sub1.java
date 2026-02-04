@@ -1,11 +1,11 @@
-/* Class279_Sub1 - Decompiled by JODE
+/* PcmPlayer_Sub1 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
 import javax.sound.sampled.*;
 import java.awt.*;
 
-final class Class279_Sub1 extends Class279 {
+final class PcmPlayer_Sub1 extends Class279 {
     private int anInt6175;
     private byte[] aByteArray6176;
     private SourceDataLine aSourceDataLine6177;

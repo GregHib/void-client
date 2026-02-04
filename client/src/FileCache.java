@@ -1,4 +1,4 @@
-/* Class201 - Decompiled by JODE
+/* FileCache - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.Hashtable;
 
-public class Class201 {
+public class FileCache {
     private static int anInt2641;
     private static final Hashtable aHashtable2642;
     private static String aString2643;

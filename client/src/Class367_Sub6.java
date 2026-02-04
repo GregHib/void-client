@@ -8,7 +8,7 @@ import jagdx.IDirect3DVertexShader;
 final class Class367_Sub6 extends Class367 {
     private static final float[] aFloatArray7338 = new float[16];
     private Class269 aClass269_7339;
-    private Class378 aClass378_7340;
+    private D3DToolkit aClass378_7340;
     private final IDirect3DVertexShader anIDirect3DVertexShader7341;
 
     final void method3527(int i, Interface18 interface18, int i_0_) {
@@ -34,7 +34,7 @@ final class Class367_Sub6 extends Class367 {
         if (i != 10756) aClass269_7339 = null;
     }
 
-    Class367_Sub6(Class378 class378, Class45 class45, Class269 class269) {
+    Class367_Sub6(D3DToolkit class378, Class45 class45, Class269 class269) {
         super(class378);
         aClass269_7339 = class269;
         aClass378_7340 = class378;

@@ -7,7 +7,7 @@ import jagdx.IDirect3DIndexBuffer;
 import jagdx.ue;
 
 final class Class142 implements Interface5_Impl2 {
-    private final Class378 aClass378_8515;
+    private final D3DToolkit aClass378_8515;
     private int anInt8516;
     IDirect3DIndexBuffer anIDirect3DIndexBuffer8517;
     private Class68 aClass68_8518;
@@ -71,7 +71,7 @@ final class Class142 implements Interface5_Impl2 {
         anInt8516 = 0;
     }
 
-    Class142(Class378 class378, Class68 class68, boolean bool) {
+    Class142(D3DToolkit class378, Class68 class68, boolean bool) {
         aClass378_8515 = class378;
         aBoolean8519 = bool;
         aClass68_8518 = class68;

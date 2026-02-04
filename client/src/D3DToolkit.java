@@ -1,4 +1,4 @@
-/* Class378 - Decompiled by JODE
+/* D3DToolkit - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
@@ -7,7 +7,7 @@ import jagdx.*;
 
 import java.awt.*;
 
-public final class Class378 extends ha_Sub3 {
+public final class D3DToolkit extends ha_Sub3 {
     private final boolean[] aBooleanArray9784;
     private int anInt9785 = 0;
     private boolean[] aBooleanArray9786;
@@ -220,8 +220,8 @@ public final class Class378 extends ha_Sub3 {
     }
 
     static final ha createToolkit(Canvas canvas, d var_d, Class45 class45, Integer integer) {
-        Class378 class378 = null;
-        Class378 class378_19_;
+        D3DToolkit class378 = null;
+        D3DToolkit class378_19_;
         try {
             int i = 0;
             int i_20_ = 1;
@@ -255,7 +255,7 @@ public final class Class378 extends ha_Sub3 {
                 idirect3ddevice = idirect3d.a(i, i_20_, canvas, i_21_ | 0x20, d3dpresent_parameters);
             }
             Class53 class53 = new Class53(idirect3ddevice.b(0), idirect3ddevice.c());
-            class378 = new Class378(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_d, class45, integer.intValue());
+            class378 = new D3DToolkit(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_d, class45, integer.intValue());
             class378.method3930((byte) 26);
             class378_19_ = class378;
         } catch (RuntimeException runtimeexception) {
@@ -432,7 +432,7 @@ public final class Class378 extends ha_Sub3 {
         if (i >= -19) method3855(null, -78, 86, null, false, 82, 55, -34);
     }
 
-    private Class378(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, d var_d, Class45 class45, int i_39_) {
+    private D3DToolkit(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, d var_d, Class45 class45, int i_39_) {
         super(canvas, class53, var_d, class45, i_39_, 0);
         try {
             this.aHb9788 = var_hb;

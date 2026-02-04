@@ -332,7 +332,7 @@ final class Class348_Sub24 extends Class348 {
                             Class237.aBoolean3103 = false;
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class208.aClass262_2707.method1997(8));
+                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) ClientStreamWriter.aClass262_2707.method1997(8));
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {

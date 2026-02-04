@@ -8,7 +8,7 @@ import jagdx.VertexElementCollection;
 public class dxVertexLayout extends Class130 {
     IDirect3DVertexDeclaration anIDirect3DVertexDeclaration5803;
 
-    dxVertexLayout(Class378 class378, Class58[] class58s) {
+    dxVertexLayout(D3DToolkit class378, Class58[] class58s) {
         VertexElementCollection vertexelementcollection = new VertexElementCollection(class378.aHb9788);
         int i = 0;
         for (int i_0_ = 0; i_0_ < class58s.length; i_0_++) {

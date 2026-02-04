@@ -16,7 +16,7 @@ final class Class310_Sub1 extends Class310 implements Interface18_Impl2 {
         if (i > -21) method2314(88);
     }
 
-    Class310_Sub1(Class378 class378, int i, boolean bool, int[][] is) {
+    Class310_Sub1(D3DToolkit class378, int i, boolean bool, int[][] is) {
         super(class378, Class108.aClass304_1662, Class68.aClass68_1183, bool && class378.aBoolean9802, 6 * i * i);
         anInt6329 = i;
         if (this.aBoolean3892) anIDirect3DCubeTexture6330 = this.aClass378_3893.anIDirect3DDevice9810.a(anInt6329, 0, 1024, 21, 1);

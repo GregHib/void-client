@@ -4,7 +4,7 @@
 
 final class Class109 {
     int anInt1665;
-    private final ha_Sub1 aHa_Sub1_1666;
+    private final JavaToolkit aHa_Sub1_1666;
     boolean aBoolean1667 = false;
     int anInt1668;
     boolean aBoolean1669;
@@ -4437,7 +4437,7 @@ final class Class109 {
         return this.anIntArray1676[0] % anInt1678;
     }
 
-    Class109(ha_Sub1 var_ha_Sub1, Class167 class167) {
+    Class109(JavaToolkit var_ha_Sub1, Class167 class167) {
         this.aBoolean1669 = true;
         this.aBoolean1671 = false;
         aBoolean1680 = false;

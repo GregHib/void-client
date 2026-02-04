@@ -10,7 +10,7 @@ final class Class39 {
     static Class45 aClass45_518;
     private final Class377 aClass377_519;
     static Class112 aClass112_520;
-    static Class323 aClass323_521;
+    static WorldMapFont aClass323_521;
 
     static final void method366(Object[] objects, byte i, int[] is) {
         do {

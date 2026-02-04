@@ -1,10 +1,10 @@
-/* Class7 - Decompiled by JODE
+/* AwtFullscreenAdapter - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 import java.awt.*;
 import java.lang.reflect.Field;
 
-public final class Class7 {
+public final class AwtFullscreenAdapter {
     private GraphicsDevice aGraphicsDevice157;
     private DisplayMode aDisplayMode158;
 
@@ -53,7 +53,7 @@ public final class Class7 {
         method212(null, (byte) 104);
     }
 
-    public Class7() throws Exception {
+    public AwtFullscreenAdapter() throws Exception {
         GraphicsEnvironment graphicsenvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         aGraphicsDevice157 = graphicsenvironment.getDefaultScreenDevice();
         if (!aGraphicsDevice157.isFullScreenSupported()) {

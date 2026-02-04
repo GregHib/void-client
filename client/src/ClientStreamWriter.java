@@ -1,11 +1,11 @@
-/* Class208 - Decompiled by JODE
+/* ClientStreamWriter - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-final class Class208 implements Runnable {
+final class ClientStreamWriter implements Runnable {
     private IOException anIOException2704;
     private int anInt2705 = 0;
     private final byte[] aByteArray2706;
@@ -100,7 +100,7 @@ final class Class208 implements Runnable {
         }
     }
 
-    Class208(OutputStream outputstream, int i) {
+    ClientStreamWriter(OutputStream outputstream, int i) {
         anOutputStream2712 = outputstream;
         anInt2715 = 1 + i;
         aByteArray2706 = new byte[anInt2715];

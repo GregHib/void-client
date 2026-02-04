@@ -189,42 +189,42 @@ final class Class318_Sub7 extends Class318 {
                         Class289.method2193(true, (byte) -127);
                         Class94.method867(true);
                     } else if (Class348.anInt4290 == 70) {
-                        Class125.aClass323_4921 = new Class323(var_ha, 11, true, Class305.aCanvas3869);
+                        Class125.aClass323_4921 = new WorldMapFont(var_ha, 11, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 73;
                         Class289.method2193(true, (byte) -123);
                         Class94.method867(true);
                     } else if (Class348.anInt4290 == 73) {
-                        Class14_Sub4.aClass323_8644 = new Class323(var_ha, 12, true, Class305.aCanvas3869);
+                        Class14_Sub4.aClass323_8644 = new WorldMapFont(var_ha, 12, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 76;
                         Class289.method2193(true, (byte) -125);
                         Class94.method867(true);
                     } else if (Class348.anInt4290 == 76) {
-                        Class39.aClass323_521 = new Class323(var_ha, 14, true, Class305.aCanvas3869);
+                        Class39.aClass323_521 = new WorldMapFont(var_ha, 14, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 79;
                         Class289.method2193(true, (byte) -123);
                         Class94.method867(true);
                     } else if (Class348.anInt4290 == 79) {
-                        Class168.aClass323_2252 = new Class323(var_ha, 17, true, Class305.aCanvas3869);
+                        Class168.aClass323_2252 = new WorldMapFont(var_ha, 17, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 82;
                         Class289.method2193(true, (byte) -124);
                         Class94.method867(true);
                     } else if (Class348.anInt4290 == 82) {
-                        Class176.aClass323_2333 = new Class323(var_ha, 19, true, Class305.aCanvas3869);
+                        Class176.aClass323_2333 = new WorldMapFont(var_ha, 19, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 85;
                         Class289.method2193(true, (byte) -128);
                         Class94.method867(true);
                     } else if (Class348.anInt4290 == 85) {
-                        Class285.aClass323_4754 = new Class323(var_ha, 22, true, Class305.aCanvas3869);
+                        Class285.aClass323_4754 = new WorldMapFont(var_ha, 22, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 88;
                         Class289.method2193(true, (byte) -124);
                         Class94.method867(true);
                     } else if (Class348.anInt4290 == 88) {
-                        Class348_Sub3.aClass323_6581 = new Class323(var_ha, 26, true, Class305.aCanvas3869);
+                        Class348_Sub3.aClass323_6581 = new WorldMapFont(var_ha, 26, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 91;
                         Class289.method2193(true, (byte) -125);
                         Class94.method867(true);
                     } else {
-                        Class240.aClass323_4672 = new Class323(var_ha, 30, true, Class305.aCanvas3869);
+                        Class240.aClass323_4672 = new WorldMapFont(var_ha, 30, true, Class305.aCanvas3869);
                         Class348.anInt4290 = 100;
                         Class289.method2193(true, (byte) -119);
                         Class94.method867(true);

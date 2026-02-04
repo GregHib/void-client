@@ -385,7 +385,7 @@ public final class client extends Applet_Sub1 {
         Class333.method2645(i + -16777324);
         Class312.method2331(true);
         Class348_Sub21.method2956((byte) 53);
-        Class323.method2562();
+        WorldMapFont.method2562();
         Class69.method722(13569);
         Class184.method1386(true);
         Class43.method380(0);
@@ -701,7 +701,7 @@ public final class client extends Applet_Sub1 {
         Class348_Sub12.method2798(122);
         Class348_Sub42_Sub12.method3228(75);
         Class348_Sub11.method2796((byte) 104);
-        Class208.method1525((byte) 4);
+        ClientStreamWriter.method1525((byte) 4);
         OutputStream_Sub1.method133((byte) -41);
         InputStream_Sub1.method124(i ^ 0x6e);
         Class284.method2117(0);
@@ -1342,7 +1342,7 @@ public final class client extends Applet_Sub1 {
                                 Class348_Sub36 class348_sub36 = new Class348_Sub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray764;
-                                Class208.aClass262_2707.method1999(class348_sub36, -20180);
+                                ClientStreamWriter.aClass262_2707.method1999(class348_sub36, -20180);
                             }
                             if (class46.anObjectArray685 != null && (Class5_Sub1.anInt8352 > class46.anInt738)) {
                                 if (class46.anIntArray818 == null || (Class5_Sub1.anInt8352 - class46.anInt738) > 32) {
@@ -1650,7 +1650,7 @@ public final class client extends Applet_Sub1 {
         }
         if (i != 112) anInt5171 = 22;
         for (; ; ) {
-            Class348_Sub36 class348_sub36 = (Class348_Sub36) Class208.aClass262_2707.method1997(8);
+            Class348_Sub36 class348_sub36 = (Class348_Sub36) ClientStreamWriter.aClass262_2707.method1997(8);
             if (class348_sub36 == null) break;
             Class46 class46 = class348_sub36.aClass46_6989;
             if (class46.anInt704 >= 0) {

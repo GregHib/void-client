@@ -34,7 +34,7 @@ final class Class342 {
         }
     }
 
-    static final void method2683(Class323 class323, Class348_Sub21 class348_sub21, int i, int i_0_, int i_1_, ha var_ha, int i_2_, int i_3_, Class42 class42) {
+    static final void method2683(WorldMapFont class323, Class348_Sub21 class348_sub21, int i, int i_0_, int i_1_, ha var_ha, int i_2_, int i_3_, Class42 class42) {
         try {
             if (i_0_ == 64) {
                 anInt4242++;

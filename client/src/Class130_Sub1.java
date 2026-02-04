@@ -703,7 +703,7 @@ final class Class130_Sub1 extends Class130 {
         Class135_Sub2.anInt4844 = 0;
         Class263.anInt3349 = 0;
         Class239_Sub17.anInt6027 = 0;
-        Class208.anInt2709 = 0;
+        ClientStreamWriter.anInt2709 = 0;
         Class348_Sub40_Sub38.anInt9469 = 0;
         Class178.anInt2340 = 0;
         ha_Sub3.anInt8057 = 0;
@@ -1671,7 +1671,7 @@ final class Class130_Sub1 extends Class130 {
         Class237.anInt3127 = 0;
         Class318_Sub1.anInt6385 = 0;
         Class331.anInt4134 = 0;
-        Class208.anInt2711 = 0;
+        ClientStreamWriter.anInt2711 = 0;
         ha_Sub2.anInt7568 = 0;
         Class59_Sub1.anInt5277 = 0;
         Class267.anInt3400 = 0;
@@ -2965,7 +2965,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3_Sub3.anInt10233 = 0;
         ha_Sub2.anInt7528 = 0;
         ha_Sub3.anInt8067 = 0;
-        Class208.anInt2714 = 0;
+        ClientStreamWriter.anInt2714 = 0;
         Class356.anInt4380 = 0;
         Class255.anInt3277 = 0;
         Class235.anInt3080 = 0;
@@ -3206,7 +3206,7 @@ final class Class130_Sub1 extends Class130 {
         Class54.anInt971 = 0;
         Class64_Sub2.anInt5479 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10020 = 0;
-        Class208.anInt2710 = 0;
+        ClientStreamWriter.anInt2710 = 0;
         Class115.anInt1755 = 0;
         Class348_Sub6.anInt6639 = 0;
         Class181.anInt2409 = 0;

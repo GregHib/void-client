@@ -24,7 +24,7 @@ final class Class348_Sub3 extends Class348 {
     static int anInt6578;
     static int anInt6579;
     static int anInt6580;
-    static Class323 aClass323_6581;
+    static WorldMapFont aClass323_6581;
     float aFloat6582;
     static int anInt6583;
     static Class114 aClass114_6584 = null;

@@ -1,8 +1,8 @@
-/* Class64_Sub1 - Decompiled by JODE
+/* JavaModel - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class64_Sub1 extends Class64 {
+final class JavaModel extends Class64 {
     private short[] aShortArray5311;
     private int[] anIntArray5312;
     private Class360[] aClass360Array5313;
@@ -11,7 +11,7 @@ final class Class64_Sub1 extends Class64 {
     private int anInt5316;
     private short[] aShortArray5317;
     private int[] anIntArray5318;
-    private Class64_Sub1 aClass64_Sub1_5319;
+    private JavaModel aClass64_Sub1_5319;
     private Class101_Sub1 aClass101_Sub1_5320;
     private int[] anIntArray5321;
     private Class129[] aClass129Array5322;
@@ -20,7 +20,7 @@ final class Class64_Sub1 extends Class64 {
     private byte[] aByteArray5325;
     private int[] anIntArray5326;
     private short[] aShortArray5327;
-    private Class64_Sub1 aClass64_Sub1_5328;
+    private JavaModel aClass64_Sub1_5328;
     private short aShort5329;
     private int[][] anIntArrayArray5330;
     private short aShort5331;
@@ -31,7 +31,7 @@ final class Class64_Sub1 extends Class64 {
     private Class167 aClass167_5336;
     private int[] anIntArray5337;
     private int anInt5338;
-    private Class64_Sub1 aClass64_Sub1_5339;
+    private JavaModel aClass64_Sub1_5339;
     private int anInt5340 = 0;
     private static int anInt5341;
     private int anInt5342;
@@ -39,13 +39,13 @@ final class Class64_Sub1 extends Class64 {
     private int anInt5344;
     private float[][] aFloatArrayArray5345;
     static int anInt5346 = 4096;
-    private Class64_Sub1 aClass64_Sub1_5347;
+    private JavaModel aClass64_Sub1_5347;
     private short aShort5348;
     private int anInt5349;
     static int anInt5350;
     private int anInt5351;
     private short aShort5352;
-    private final ha_Sub1 aHa_Sub1_5353;
+    private final JavaToolkit aHa_Sub1_5353;
     private int anInt5354;
     private int[] anIntArray5355;
     private int[] anIntArray5356;
@@ -66,11 +66,11 @@ final class Class64_Sub1 extends Class64 {
     private int[] anIntArray5371;
     private boolean aBoolean5372;
     private int[] anIntArray5373;
-    private Class64_Sub1 aClass64_Sub1_5374;
+    private JavaModel aClass64_Sub1_5374;
     private int anInt5375;
-    private Class64_Sub1 aClass64_Sub1_5376;
+    private JavaModel aClass64_Sub1_5376;
     private int[] anIntArray5377;
-    private Class64_Sub1 aClass64_Sub1_5378;
+    private JavaModel aClass64_Sub1_5378;
     private int[][] anIntArrayArray5379;
     private boolean aBoolean5380;
     private int[] anIntArray5381;
@@ -82,14 +82,14 @@ final class Class64_Sub1 extends Class64 {
     private int anInt5387;
     private short[] aShortArray5388;
     private int anInt5389;
-    private Class64_Sub1 aClass64_Sub1_5390;
+    private JavaModel aClass64_Sub1_5390;
     private boolean aBoolean5391;
     private int[] anIntArray5392;
     private short aShort5393;
     private short[] aShortArray5394;
     private short aShort5395;
-    private Class64_Sub1 aClass64_Sub1_5396;
-    private Class64_Sub1 aClass64_Sub1_5397;
+    private JavaModel aClass64_Sub1_5396;
+    private JavaModel aClass64_Sub1_5397;
     private int[] anIntArray5398;
     private int[] anIntArray5399;
     private int[] anIntArray5400;
@@ -143,7 +143,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    private final Class64 method633(Class64_Sub1 class64_sub1_7_, Class64_Sub1 class64_sub1_8_, int i, boolean bool, boolean bool_9_) {
+    private final Class64 method633(JavaModel class64_sub1_7_, JavaModel class64_sub1_8_, int i, boolean bool, boolean bool_9_) {
         class64_sub1_7_.aBoolean5323 = aBoolean5323;
         if (aBoolean5323) {
             class64_sub1_7_.aShort5393 = aShort5393;
@@ -2106,7 +2106,7 @@ final class Class64_Sub1 extends Class64 {
     }
 
     final void method613(Class64 class64, int i, int i_584_, int i_585_, boolean bool) {
-        Class64_Sub1 class64_sub1_586_ = (Class64_Sub1) class64;
+        JavaModel class64_sub1_586_ = (JavaModel) class64;
         if ((anInt5316 & 0x10000) != 65536) throw new IllegalStateException("");
         if ((class64_sub1_586_.anInt5316 & 0x10000) != 65536) throw new IllegalStateException("");
         method632(Thread.currentThread());
@@ -2822,8 +2822,8 @@ final class Class64_Sub1 extends Class64 {
 
     final Class64 method614(byte i, int i_762_, boolean bool) {
         method648(Thread.currentThread());
-        Class64_Sub1 class64_sub1_763_;
-        Class64_Sub1 class64_sub1_764_;
+        JavaModel class64_sub1_763_;
+        JavaModel class64_sub1_764_;
         if (i == 1) {
             class64_sub1_763_ = aClass64_Sub1_5374;
             class64_sub1_764_ = aClass64_Sub1_5378;
@@ -2839,7 +2839,7 @@ final class Class64_Sub1 extends Class64 {
         } else if (i == 5) {
             class64_sub1_763_ = aClass64_Sub1_5319;
             class64_sub1_764_ = aClass64_Sub1_5390;
-        } else class64_sub1_764_ = class64_sub1_763_ = new Class64_Sub1(aHa_Sub1_5353);
+        } else class64_sub1_764_ = class64_sub1_763_ = new JavaModel(aHa_Sub1_5353);
         return method633(class64_sub1_764_, class64_sub1_763_, i_762_, i != 0, bool);
     }
 
@@ -2929,7 +2929,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    Class64_Sub1(ha_Sub1 var_ha_Sub1) {
+    JavaModel(JavaToolkit var_ha_Sub1) {
         anInt5354 = 0;
         aBoolean5369 = false;
         anInt5351 = 0;
@@ -2940,7 +2940,7 @@ final class Class64_Sub1 extends Class64 {
         aHa_Sub1_5353 = var_ha_Sub1;
     }
 
-    Class64_Sub1(ha_Sub1 var_ha_Sub1, Class124 class124, int i, int i_785_, int i_786_, int i_787_) {
+    JavaModel(JavaToolkit var_ha_Sub1, Class124 class124, int i, int i_785_, int i_786_, int i_787_) {
         anInt5354 = 0;
         aBoolean5369 = false;
         anInt5351 = 0;
