@@ -40,3 +40,17 @@ python3 tools/rs_rename_mapper.py \
 1. Lock in class-level renames (only) into a mapping file.
 2. Apply the mapping to a jar (remap), then re-decompile for a clean renamed source dump.
 3. Repeat with better matching once some names/types stabilize (graph propagation becomes stronger).
+
+## Replayable renames (manifest)
+
+The applied “wave 1” class renames are captured in `docs/rename-prototype/class_renames.json`.
+
+To re-apply them from a clean state, checkout the manifest’s `base_commit` and run:
+
+```bash
+git checkout 3fe2efb
+python3 tools/apply_class_renames.py \
+  --manifest docs/rename-prototype/class_renames.json \
+  --src-dir client/src \
+  --report docs/rename-prototype/rename_report.md
+```

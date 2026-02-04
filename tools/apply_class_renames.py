@@ -3,10 +3,9 @@ from __future__ import annotations
 
 import argparse
 import dataclasses
-import keyword
+import json
 import re
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 
@@ -120,6 +119,37 @@ def _load_tsv(tsv: Path) -> list[RenameCandidate]:
     return rows
 
 
+def _load_manifest(manifest: Path) -> list[RenameCandidate]:
+    data = json.loads(manifest.read_text(encoding="utf-8"))
+    if isinstance(data, list):
+        renames = data
+    elif isinstance(data, dict) and "renames" in data and isinstance(data["renames"], list):
+        renames = data["renames"]
+    else:
+        raise RuntimeError(f"Unrecognized manifest format: {manifest}")
+
+    out: list[RenameCandidate] = []
+    for r in renames:
+        if not isinstance(r, dict):
+            continue
+        src = str(r.get("src") or r.get("src_internal") or "").strip()
+        dst = str(r.get("dst") or r.get("dst_internal") or "").strip()
+        if not src or not dst:
+            continue
+        score = r.get("score")
+        try:
+            score_f = float(score) if score is not None else 1.0
+        except Exception:
+            score_f = 1.0
+        anchors = r.get("anchors") or r.get("anchor_strings") or ""
+        if isinstance(anchors, list):
+            anchors_s = ",".join(str(x) for x in anchors)
+        else:
+            anchors_s = str(anchors)
+        out.append(RenameCandidate(src_internal=src, dst_internal=dst, score=score_f, anchors=anchors_s))
+    return out
+
+
 def _collect_java_files(src_dir: Path) -> dict[str, Path]:
     out: dict[str, Path] = {}
     for p in src_dir.glob("*.java"):
@@ -170,21 +200,27 @@ class ApplyReport:
 
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description="Apply high-confidence class renames to flat client/src/*.java")
-    ap.add_argument("--tsv", required=True, type=Path, help="TSV from rs_rename_mapper.py (best matches)")
+    src_group = ap.add_mutually_exclusive_group(required=True)
+    src_group.add_argument("--tsv", type=Path, help="TSV from rs_rename_mapper.py (best matches)")
+    src_group.add_argument("--manifest", type=Path, help="JSON manifest of class renames to apply")
     ap.add_argument("--src-dir", required=True, type=Path, help="Directory containing *.java (flat/default package)")
     ap.add_argument("--min-score", type=float, default=0.90, help="Minimum score for renames")
     ap.add_argument("--dry-run", action="store_true", help="Compute mapping and report, but don't modify files")
     ap.add_argument("--report", required=True, type=Path, help="Markdown report output path")
+    ap.add_argument("--write-manifest", type=Path, help="Write selected renames as JSON for replay")
     args = ap.parse_args(argv)
 
-    tsv = args.tsv
     src_dir = args.src_dir
-    if not tsv.exists():
-        ap.error(f"--tsv not found: {tsv}")
+    if args.tsv:
+        if not args.tsv.exists():
+            ap.error(f"--tsv not found: {args.tsv}")
+    if args.manifest:
+        if not args.manifest.exists():
+            ap.error(f"--manifest not found: {args.manifest}")
     if not src_dir.exists():
         ap.error(f"--src-dir not found: {src_dir}")
 
-    rows = _load_tsv(tsv)
+    rows = _load_manifest(args.manifest) if args.manifest else _load_tsv(args.tsv)
     java_files = _collect_java_files(src_dir)
     existing_names = set(java_files.keys())
 
@@ -223,6 +259,26 @@ def main(argv: list[str]) -> int:
 
     # Apply replacements in a stable order: longest names first (reduces boundary surprises, though we use \\b)
     chosen.sort(key=lambda r: (len(r.src_simple), r.score), reverse=True)
+
+    if args.write_manifest:
+        payload = {
+            "version": 1,
+            "src_dir": str(src_dir),
+            "min_score": args.min_score,
+            "source_tsv": str(args.tsv) if args.tsv else None,
+            "source_manifest": str(args.manifest) if args.manifest else None,
+            "renames": [
+                {
+                    "src": r.src_simple,
+                    "dst": r.dst_simple,
+                    "score": r.score,
+                    "anchors": [a for a in (r.anchors.split(",") if r.anchors else []) if a],
+                }
+                for r in chosen
+            ],
+        }
+        args.write_manifest.parent.mkdir(parents=True, exist_ok=True)
+        args.write_manifest.write_text(json.dumps(payload, indent=2, sort_keys=False) + "\n", encoding="utf-8")
 
     if args.dry_run:
         for r in chosen:

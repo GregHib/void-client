@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "description": "High-confidence class renames applied to 2011-634 void-client (flat default-package sources).",
+  "source_tsv": "docs/rename-prototype/mapping_634_to_667_refactored.tsv",
+  "min_score": 0.85,
+  "base_commit": "3fe2efb",
+  "applied_commit": "55d13be",
+  "renames": [
+    {
+      "src": "ha_Sub1",
+      "dst": "JavaToolkit",
+      "score": 0.965506,
+      "anchors": ["Pure Java", "No MT", "CPU", "off"]
+    },
+    {
+      "src": "Class7",
+      "dst": "AwtFullscreenAdapter",
+      "score": 0.952037,
+      "anchors": ["valid", "Did not return to correct resolution!"]
+    },
+    {
+      "src": "Class64_Sub1",
+      "dst": "JavaModel",
+      "score": 0.954551,
+      "anchors": ["FMT"]
+    },
+    {
+      "src": "Class105_Sub3_Sub1",
+      "dst": "JavaRgbSprite",
+      "score": 0.932002,
+      "anchors": ["Can't capture alpha into a java_sprite_24"]
+    },
+    {
+      "src": "Class323",
+      "dst": "WorldMapFont",
+      "score": 0.945221,
+      "anchors": ["Helvetica"]
+    },
+    {
+      "src": "Class279_Sub1",
+      "dst": "PcmPlayer_Sub1",
+      "score": 0.94451,
+      "anchors": ["soundmax"]
+    },
+    {
+      "src": "Class201",
+      "dst": "FileCache",
+      "score": 0.89708,
+      "anchors": ["rw", "c:/windows/", "c:/rscache/", "/tmp/"]
+    },
+    {
+      "src": "Class378",
+      "dst": "D3DToolkit",
+      "score": 0.866337,
+      "anchors": ["Direct3D"]
+    },
+    {
+      "src": "Class208",
+      "dst": "ClientStreamWriter",
+      "score": 0.855,
+      "anchors": []
+    }
+  ]
+}
