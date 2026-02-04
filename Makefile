@@ -52,10 +52,11 @@ JAVAC ?= javac
 JAR ?= jar
 endif
 
-.PHONY: help sources compile jar run clean
+.PHONY: help bootstrap sources compile jar run clean
 
 help:
 	@echo "Targets:"
+	@echo "  make bootstrap - download repo-local JDK (./.jdk/temurin\$$JDK)"
 	@echo "  make sources   - write $(SOURCES_FILE)"
 	@echo "  make compile   - compile $(SRC_DIR) into $(CLASSES_DIR)"
 	@echo "  make jar       - build runnable jar at $(OUT_JAR) (Main-Class: $(MAIN_CLASS))"
@@ -69,6 +70,10 @@ help:
 	@echo ""
 	@echo "Tip:"
 	@echo "  tools/bootstrap-jdk.sh \$$JDK  (downloads a repo-local JDK into .jdk/)"
+
+bootstrap:
+	@echo "Bootstrapping Temurin JDK $(JDK) into $(BOOTSTRAP_JAVA_HOME)"
+	@bash tools/bootstrap-jdk.sh "$(JDK)"
 
 sources:
 	@mkdir -p "$(BUILD_DIR)"
