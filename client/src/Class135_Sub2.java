@@ -96,7 +96,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
         return 0L;
     }
 
-    Class135_Sub2(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_8_, boolean bool) {
+    Class135_Sub2(GlToolkit var_ha_Sub2, int i, byte[] is, int i_8_, boolean bool) {
         super(var_ha_Sub2, 34963, is, i_8_, bool);
         try {
             anInt4837 = i;

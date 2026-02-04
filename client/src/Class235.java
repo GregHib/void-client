@@ -66,8 +66,8 @@ final class Class235 {
         int i_1_ = i_0_;
         boolean bool = false;
         if (i_1_ == -1) {
-            Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(i ^ 0x45, this.anInt3063);
-            Class51 class51_2_ = class51;
+            LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(i ^ 0x45, this.anInt3063);
+            LocType class51_2_ = class51;
             if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47);
             if (class51 == null) return;
             if (class51_2_ == class51) class51_2_ = null;
@@ -121,7 +121,7 @@ final class Class235 {
 
     final Class64 method1668(boolean bool, boolean bool_3_, int i, int i_4_, ha var_ha) {
         anInt3082++;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, this.anInt3063);
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, this.anInt3063);
         if (class51.anIntArray945 != null) class51 = class51.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209, (byte) 47);
         if (class51 == null) {
             method1674(-1, var_ha);
@@ -216,7 +216,7 @@ final class Class235 {
                 Class129[] class129s = class64.method619();
                 Class342[] class342s = class64.method604();
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081.aBoolean6470) && (class129s != null || class342s != null)) {
-                    Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, this.anInt3063);
+                    LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, this.anInt3063);
                     if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47);
                     if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                 }
@@ -301,7 +301,7 @@ final class Class235 {
         if (i >= -19) method1669(-110, -13);
     }
 
-    Class235(ha var_ha, Class51 class51, int i, int i_15_, int i_16_, int i_17_, Class318_Sub1 class318_sub1, boolean bool, int i_18_) {
+    Class235(ha var_ha, LocType class51, int i, int i_15_, int i_16_, int i_17_, Class318_Sub1 class318_sub1, boolean bool, int i_18_) {
         anInt3055 = 0;
         aBoolean3064 = false;
         anInt3053 = -1;

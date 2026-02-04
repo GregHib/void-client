@@ -10,7 +10,7 @@ final class Class371 {
     int anInt4524;
     int anInt4525;
 
-    static final Class258_Sub3_Sub1 method3583(boolean bool, byte[] is, int i, int i_0_, ha_Sub2 var_ha_Sub2, int i_1_, int i_2_, int i_3_) {
+    static final Class258_Sub3_Sub1 method3583(boolean bool, byte[] is, int i, int i_0_, GlToolkit var_ha_Sub2, int i_1_, int i_2_, int i_3_) {
         try {
             anInt4521++;
             if (i_1_ > -17) return null;

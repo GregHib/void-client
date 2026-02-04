@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 abstract class Class348_Sub5 extends Class348 {
-    ha_Sub2 aHa_Sub2_6618;
+    GlToolkit aHa_Sub2_6618;
     static int anInt6619;
     static int anInt6620;
     boolean aBoolean6621;
@@ -148,7 +148,7 @@ abstract class Class348_Sub5 extends Class348 {
 
     abstract void method2763(byte i);
 
-    Class348_Sub5(ha_Sub2 var_ha_Sub2) {
+    Class348_Sub5(GlToolkit var_ha_Sub2) {
         this.aHa_Sub2_6618 = var_ha_Sub2;
     }
 

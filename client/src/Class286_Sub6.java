@@ -152,7 +152,7 @@ final class Class286_Sub6 extends Class286 {
         }
     }
 
-    Class286_Sub6(ha_Sub2 var_ha_Sub2, Class83 class83) {
+    Class286_Sub6(GlToolkit var_ha_Sub2, Class83 class83) {
         super(var_ha_Sub2);
         aBoolean6266 = false;
         do {

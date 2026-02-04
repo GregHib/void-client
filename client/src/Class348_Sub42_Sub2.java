@@ -8,7 +8,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     static int anInt8561;
     private int anInt8562 = -1;
     private int anInt8563 = -1;
-    private final ha_Sub2 aHa_Sub2_8564;
+    private final GlToolkit aHa_Sub2_8564;
     int anInt8565;
     static int anInt8566;
     private final int anInt8567;
@@ -141,7 +141,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         anInt8563 = -1;
     }
 
-    Class348_Sub42_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_11_, int i_12_) {
+    Class348_Sub42_Sub2(GlToolkit var_ha_Sub2, int i, int i_11_, int i_12_) {
         try {
             this.anInt8572 = i_11_;
             aHa_Sub2_8564 = var_ha_Sub2;
@@ -157,7 +157,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         }
     }
 
-    Class348_Sub42_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_13_, int i_14_, int i_15_) {
+    Class348_Sub42_Sub2(GlToolkit var_ha_Sub2, int i, int i_13_, int i_14_, int i_15_) {
         try {
             this.anInt8572 = i_13_;
             anInt8567 = i;

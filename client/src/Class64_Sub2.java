@@ -318,7 +318,7 @@ final class Class64_Sub2 extends Class64 {
         Class348_Sub40_Sub4.aClass262_9111.method1996(115);
         Class348_Sub42_Sub12.aClass356_9603.method3481(0);
         Class233.aClass107_3022.method1009(2110355138);
-        ha_Sub2.method3743((byte) 6, Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144);
+        GlToolkit.method3743((byte) 6, Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144);
     }
 
     final void VA(int i) {
@@ -999,7 +999,7 @@ final class Class64_Sub2 extends Class64 {
                 class64_sub2_154_.aClass290_5482.anInterface5_Impl1_3711 = aClass290_5482.anInterface5_Impl1_3711;
             } else if (Class296.method2224(i, (byte) 117, anInt5472)) class64_sub2_154_.aClass290_5482 = aClass290_5482;
             else class64_sub2_154_.aClass290_5482 = null;
-            if (Class274.method2058(i, anInt5472, 116)) {
+            if (LocalisedText.method2058(i, anInt5472, 116)) {
                 if (class64_sub2_153_.aShortArray5493 == null || (anInt5475 > class64_sub2_153_.aShortArray5493.length)) {
                     int i_164_ = anInt5475;
                     class64_sub2_154_.aShortArray5436 = class64_sub2_153_.aShortArray5436 = new short[i_164_];

@@ -870,7 +870,7 @@ public final class D3DToolkit extends ha_Sub3 {
 
     final void method3950(int i) {
         if (i != 0) anIntArray9809 = null;
-        if (Class348_Sub4.aClass173_6602 == this.aClass173_8163) {
+        if (SystemInfo.aClass173_6602 == this.aClass173_8163) {
             this.anIDirect3DDevice9810.SetRenderState(19, 5);
             this.anIDirect3DDevice9810.SetRenderState(20, 6);
         } else if (this.aClass173_8163 == Class69.aClass173_1201) {

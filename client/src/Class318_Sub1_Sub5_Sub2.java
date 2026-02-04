@@ -135,7 +135,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
         anIntArray10172 = null;
     }
 
-    Class318_Sub1_Sub5_Sub2(ha var_ha, Class51 class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
+    Class318_Sub1_Sub5_Sub2(ha var_ha, LocType class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
         super(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_);
         try {
             this.aClass235_10155 = new Class235(var_ha, class51, i_11_, i_12_, this.plane, i_5_, this, bool, i_13_);
@@ -156,7 +156,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
         return class64.method628(i_14_, i, class101, false, 0);
     }
 
-    static final Class337 method2493(ha_Sub2 var_ha_Sub2, int i, Class242[] class242s) {
+    static final Class337 method2493(GlToolkit var_ha_Sub2, int i, Class242[] class242s) {
         try {
             anInt10167++;
             for (int i_16_ = 0; i_16_ < class242s.length; i_16_++) {

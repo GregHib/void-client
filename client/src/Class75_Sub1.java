@@ -2,14 +2,14 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class75_Sub1 extends Class75 {
+final class Class75_Sub1 extends WorldMap {
     static int anInt5652 = 1;
     static int anInt5653;
     static float aFloat5654 = 1.0F;
 
     static final void method769(int i, byte i_0_) {
         anInt5653++;
-        if (i_0_ > 109 && Class320.method2547(i, (byte) 84)) Class348_Sub42_Sub4.method3180(-1, (Class348_Sub40_Sub33.aClass46ArrayArray9427[i]), 24235);
+        if (i_0_ > 109 && InterfaceList.method2547(i, (byte) 84)) Class348_Sub42_Sub4.method3180(-1, (Class348_Sub40_Sub33.aClass46ArrayArray9427[i]), 24235);
     }
 
     static final void method770(int i, int i_1_, int i_2_, Class318_Sub1_Sub1 class318_sub1_sub1) {

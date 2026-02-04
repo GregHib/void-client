@@ -1,8 +1,8 @@
-/* Class79 - Decompiled by JODE
+/* NPCType - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class79 {
+final class NPCType {
     byte aByte1325;
     static int anInt1326;
     int anInt1327;
@@ -93,14 +93,14 @@ final class Class79 {
         }
         for (int i_0_ = i; this.anIntArray1377.length > i_0_; i_0_++) {
             if (this.anIntArray1377[i_0_] != -1) {
-                Class79 class79_1_ = (this.aClass278_1348.method2079(this.anIntArray1377[i_0_], -1));
+                NPCType class79_1_ = (this.aClass278_1348.method2079(this.anIntArray1377[i_0_], -1));
                 if (class79_1_.anInt1343 != -1 || class79_1_.anInt1364 != -1 || class79_1_.anInt1327 != -1) return true;
             }
         }
         return false;
     }
 
-    final Class79 method794(Interface17 interface17, int i) {
+    final NPCType method794(Interface17 interface17, int i) {
         anInt1394++;
         int i_2_ = i;
         if (anInt1368 == -1) {
@@ -346,7 +346,7 @@ final class Class79 {
         try {
             anInt1341++;
             if (this.anIntArray1377 != null) {
-                Class79 class79_42_ = method794(interface17, -1);
+                NPCType class79_42_ = method794(interface17, -1);
                 if (class79_42_ == null) return null;
                 return class79_42_.method800(i, class182s, class87, false, class17, i_34_, class261, i_35_, class17_36_, interface17, var_ha, i_37_, is, i_38_, i_39_, i_40_, i_41_);
             }
@@ -616,7 +616,7 @@ final class Class79 {
         try {
             anInt1389++;
             if (this.anIntArray1377 != null) {
-                Class79 class79_98_ = method794(interface17, -1);
+                NPCType class79_98_ = method794(interface17, -1);
                 if (class79_98_ == null) return null;
                 return class79_98_.method803(interface17, var_ha, i, i_94_, class17, class87, i_95_, 104, i_97_);
             }
@@ -692,7 +692,7 @@ final class Class79 {
         return class348_sub35.anInt6976;
     }
 
-    public Class79() {
+    public NPCType() {
         anInt1346 = 128;
         this.anInt1335 = -1;
         this.anInt1337 = 0;

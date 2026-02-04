@@ -1,8 +1,8 @@
-/* Class320 - Decompiled by JODE
+/* InterfaceList - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class320 {
+final class InterfaceList {
     static short aShort3992 = 320;
     static int anInt3993;
     static float aFloat3994;

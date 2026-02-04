@@ -223,7 +223,7 @@ final class Class17 {
         int i_43_ = -334 + i_39_;
         if (i_43_ < 0) i_43_ = 0;
         else if (i_43_ > 100) i_43_ = 100;
-        int i_44_ = (i_43_ * (-Class348_Sub23_Sub3.aShort9044 + Class320.aShort3992) / 100 + Class348_Sub23_Sub3.aShort9044);
+        int i_44_ = (i_43_ * (-Class348_Sub23_Sub3.aShort9044 + InterfaceList.aShort3992) / 100 + Class348_Sub23_Sub3.aShort9044);
         i_42_ = i_42_ * i_44_ >> 8;
         Class132.anInt1906 = Class132.anInt1911 * i_44_ >> 8;
         int i_45_ = 16384 - i & 0x3fff;

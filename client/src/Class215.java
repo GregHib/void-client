@@ -47,7 +47,7 @@ final class Class215 {
             }
             if (i_2_ == 1) {
                 Class321.anInt4017 = Class92.anInt1524;
-                Class348_Sub42_Sub8_Sub2.anInt10432 = ha_Sub2.anInt7666;
+                Class348_Sub42_Sub8_Sub2.anInt10432 = GlToolkit.anInt7666;
                 Class348_Sub48.anInt7129 = (Class272.anInt3473 + -Class92.anInt1524) / 2;
                 Class335.anInt4167 = 0;
             } else Class286_Sub5.method2158((byte) 56);

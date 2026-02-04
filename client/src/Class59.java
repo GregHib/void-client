@@ -221,21 +221,21 @@ abstract class Class59 {
                 }
                 int i_65_ = i_56_ / 2 + class348_sub21.anInt6853;
                 int i_66_ = class348_sub21.anInt6855;
-                if (Class75.anInt1272 - -i_56_ <= i_58_) {
-                    if (i_58_ > -i_56_ + Class75.anInt1276) {
-                        i_58_ = -i_56_ + Class75.anInt1276;
-                        i_65_ = (-(i_56_ / 2) + Class75.anInt1276 + (-i_57_ + -(i_61_ / 2) - 5));
+                if (WorldMap.anInt1272 - -i_56_ <= i_58_) {
+                    if (i_58_ > -i_56_ + WorldMap.anInt1276) {
+                        i_58_ = -i_56_ + WorldMap.anInt1276;
+                        i_65_ = (-(i_56_ / 2) + WorldMap.anInt1276 + (-i_57_ + -(i_61_ / 2) - 5));
                     }
                 } else {
-                    i_58_ = Class75.anInt1272;
-                    i_65_ = i_61_ / 2 + i_57_ + i_56_ / 2 + (Class75.anInt1272 + 5);
+                    i_58_ = WorldMap.anInt1272;
+                    i_65_ = i_61_ / 2 + i_57_ + i_56_ / 2 + (WorldMap.anInt1272 + 5);
                 }
-                if (i_59_ < i_56_ + Class75.anInt1262) {
-                    i_59_ = Class75.anInt1262;
-                    i_66_ = i_56_ / 2 + i_57_ + Class75.anInt1262;
-                } else if (i_59_ > Class75.anInt1268 + -i_56_) {
-                    i_59_ = -i_56_ + Class75.anInt1268;
-                    i_66_ = -(i_56_ / 2) + Class75.anInt1268 - (i_57_ - -i_62_);
+                if (i_59_ < i_56_ + WorldMap.anInt1262) {
+                    i_59_ = WorldMap.anInt1262;
+                    i_66_ = i_56_ / 2 + i_57_ + WorldMap.anInt1262;
+                } else if (i_59_ > WorldMap.anInt1268 + -i_56_) {
+                    i_59_ = -i_56_ + WorldMap.anInt1268;
+                    i_66_ = -(i_56_ / 2) + WorldMap.anInt1268 - (i_57_ - -i_62_);
                 }
                 int i_67_ = (int) (32767.0 * (Math.atan2(i_58_ - (class348_sub21.anInt6853), -(class348_sub21.anInt6855) + i_59_) / 3.141592653589793)) & 0xffff;
                 class105.method981((float) i_56_ / 2.0F + (float) i_58_, (float) i_56_ / 2.0F + (float) i_59_, 4096, i_67_);

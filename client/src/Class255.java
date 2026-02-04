@@ -141,7 +141,7 @@ final class Class255 {
             Class113.aClass105Array1744 = new Class105[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class113.aClass105Array1744[i] = var_ha.method3691(class207s[i], true);
-            Class79.aClass105_1365 = var_ha.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool);
+            NPCType.aClass105_1365 = var_ha.method3691(Class207.method1521(class45, Class52.anInt4895, 0), bool);
             Class239_Sub24.aClass105_6097 = var_ha.method3691(Class207.method1521(class45, (Class186_Sub1.anInt5814), 0), true);
             class207s = Class207.method1519(class45, Class5_Sub3.anInt8370, 0);
             Class200.aClass105Array2640 = new Class105[class207s.length];
@@ -237,15 +237,15 @@ final class Class255 {
         class213 = new Class213();
         class213.aClass255_2761 = this;
         class213.anInt2769 = i_13_;
-        class213.aStringArray2811 = new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null};
-        class213.aStringArray2763 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
+        class213.aStringArray2811 = new String[]{null, null, LocalisedText.aClass274_3490.method2063(this.anInt3286, 544), null, null};
+        class213.aStringArray2763 = (new String[]{null, null, null, null, LocalisedText.aClass274_3491.method2063(this.anInt3286, 544)});
         if (is != null) class213.method1569(768, new Class348_Sub49(is));
         class213.method1563((byte) 92);
         int i_14_ = 4 / ((i - 13) / 59);
         if (class213.anInt2833 != -1) class213.method1570(1, method1940(90, class213.anInt2758), method1940(101, class213.anInt2833));
         if (class213.anInt2812 != -1) class213.method1556(method1940(-58, class213.anInt2778), (byte) -29, method1940(-82, class213.anInt2812));
         if (!aBoolean3269 && class213.aBoolean2783) {
-            class213.aString2795 = Class274.aClass274_3488.method2063(this.anInt3286, 544);
+            class213.aString2795 = LocalisedText.aClass274_3488.method2063(this.anInt3286, 544);
             class213.anInt2827 = 0;
             class213.aStringArray2811 = aStringArray3290;
             class213.aStringArray2763 = aStringArray3293;
@@ -304,8 +304,8 @@ final class Class255 {
                 int i_23_ = -1 + aClass45_3267.method414(-1);
                 this.anInt3271 = aClass45_3267.method407(0, i_23_) + i_23_ * 256;
             } else this.anInt3271 = 0;
-            aStringArray3290 = (new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null});
-            aStringArray3293 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
+            aStringArray3290 = (new String[]{null, null, LocalisedText.aClass274_3490.method2063(this.anInt3286, 544), null, null});
+            aStringArray3293 = (new String[]{null, null, null, null, LocalisedText.aClass274_3491.method2063(this.anInt3286, 544)});
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class326 != null ? "{...}" : "null") + ',' + (class45 != null ? "{...}" : "null") + ',' + (class45_22_ != null ? "{...}" : "null") + ')'));
         }

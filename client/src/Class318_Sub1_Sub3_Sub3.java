@@ -560,7 +560,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         Class171.anIntArray2272 = null;
         Class115.aBooleanArrayArrayArray1751 = null;
         Class5_Sub2.aBooleanArrayArrayArray8361 = null;
-        Class274.method2062((byte) 89);
+        LocalisedText.method2062((byte) 89);
         if (Class24.aClass318_Sub1_Sub3Array357 != null) {
             for (int i = 0; i < Class86.anInt1477; i++)
                 Class24.aClass318_Sub1_Sub3Array357[i] = null;

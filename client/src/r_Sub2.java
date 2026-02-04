@@ -343,7 +343,7 @@ final class r_Sub2 extends r {
         return i_16_ * i_17_ <= this.aByteArray10486.length;
     }
 
-    r_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_19_) {
+    r_Sub2(GlToolkit var_ha_Sub2, int i, int i_19_) {
         this.aByteArray10486 = new byte[i * i_19_];
     }
 

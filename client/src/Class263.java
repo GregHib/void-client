@@ -34,18 +34,18 @@ final class Class263 {
         }
     }
 
-    final Class51 method2005(int i, int i_0_) {
+    final LocType method2005(int i, int i_0_) {
         anInt3351++;
-        Class51 class51;
+        LocType class51;
         synchronized (aClass60_3350) {
-            class51 = (Class51) aClass60_3350.method583(i_0_, i ^ 0x32);
+            class51 = (LocType) aClass60_3350.method583(i_0_, i ^ 0x32);
         }
         if (class51 != null) return class51;
         byte[] is;
         synchronized (aClass45_3343) {
             is = aClass45_3343.method410(i + -1860, Class239_Sub29.method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (byte) -90));
         }
-        class51 = new Class51();
+        class51 = new LocType();
         class51.anInt941 = i_0_;
         class51.aClass263_933 = this;
         if (is != null) class51.method479((byte) 0, new Class348_Sub49(is));

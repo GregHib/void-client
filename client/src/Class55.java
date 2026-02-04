@@ -293,7 +293,7 @@ abstract class Class55 {
 
     static final boolean method520(Interface10 interface10, int i) {
         anInt1000++;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-94));
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-94));
         if (class51.anInt875 == -1) return true;
         Class218 class218 = Class2.aClass141_117.method1173((byte) 31, class51.anInt875);
         if (i == class218.anInt2853) return true;

@@ -17,8 +17,8 @@ final class Class37 {
         if (i >= -109) return null;
         for (int i_1_ = -3 + string.length(); i_1_ > 0; i_1_ -= 3)
             string = string.substring(0, i_1_) + "," + string.substring(i_1_);
-        if (string.length() > 9) return (" <col=00ff80>" + string.substring(0, string.length() + -8) + Class274.aClass274_3516.method2063(Class348_Sub33.anInt6967, 544) + " (" + string + ")</col>");
-        if (string.length() > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length()) + Class274.aClass274_3518.method2063(Class348_Sub33.anInt6967, 544) + " (" + string + ")</col>");
+        if (string.length() > 9) return (" <col=00ff80>" + string.substring(0, string.length() + -8) + LocalisedText.aClass274_3516.method2063(Class348_Sub33.anInt6967, 544) + " (" + string + ")</col>");
+        if (string.length() > 6) return (" <col=ffffff>" + string.substring(0, -4 + string.length()) + LocalisedText.aClass274_3518.method2063(Class348_Sub33.anInt6967, 544) + " (" + string + ")</col>");
         return " <col=ffff00>" + string + "</col>";
     }
 

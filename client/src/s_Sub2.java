@@ -46,7 +46,7 @@ final class s_Sub2 extends s {
     static int[] anIntArray8269;
     static int anInt8270 = -1;
     static int anInt8271;
-    ha_Sub2 aHa_Sub2_8272;
+    GlToolkit aHa_Sub2_8272;
     private byte[][] aByteArrayArray8273;
     private Class123 aClass123_8274;
     Class123 aClass123_8275;
@@ -444,7 +444,7 @@ final class s_Sub2 extends s {
         }
     }
 
-    s_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_133_, int i_134_, int i_135_, int[][] is, int[][] is_136_, int i_137_) {
+    s_Sub2(GlToolkit var_ha_Sub2, int i, int i_133_, int i_134_, int i_135_, int[][] is, int[][] is_136_, int i_137_) {
         super(i_134_, i_135_, i_137_, is);
         do {
             try {

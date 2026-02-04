@@ -14,7 +14,7 @@ abstract class Class135 {
     static int anInt1924;
     static int anInt1925;
     static int anInt1926;
-    ha_Sub2 aHa_Sub2_1927;
+    GlToolkit aHa_Sub2_1927;
     static Color[] aColorArray1928 = {new Color(9179409), new Color(3289650), new Color(3289650), new Color(3289650)};
     int anInt1929;
     private final int anInt1930;
@@ -58,7 +58,7 @@ abstract class Class135 {
 
     abstract void method1152(int i);
 
-    Class135(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_4_, boolean bool) {
+    Class135(GlToolkit var_ha_Sub2, int i, byte[] is, int i_4_, boolean bool) {
         try {
             aBoolean1923 = bool;
             this.aHa_Sub2_1927 = var_ha_Sub2;
@@ -74,7 +74,7 @@ abstract class Class135 {
         }
     }
 
-    Class135(ha_Sub2 var_ha_Sub2, int i, Buffer buffer, int i_5_, boolean bool) {
+    Class135(GlToolkit var_ha_Sub2, int i, Buffer buffer, int i_5_, boolean bool) {
         try {
             anInt1930 = i;
             anInt1921 = i_5_;

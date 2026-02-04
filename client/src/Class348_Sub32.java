@@ -27,7 +27,7 @@ final class Class348_Sub32 extends Class348 {
     private final int anInt6948;
     private float[][] aFloatArrayArray6949;
     static Class45 aClass45_6950;
-    private final ha_Sub2 aHa_Sub2_6951;
+    private final GlToolkit aHa_Sub2_6951;
     private final Interface2 anInterface2_6952;
     private Class348_Sub49_Sub1 aClass348_Sub49_Sub1_6953;
 
@@ -178,7 +178,7 @@ final class Class348_Sub32 extends Class348 {
         }
     }
 
-    Class348_Sub32(ha_Sub2 var_ha_Sub2, s_Sub2 var_s_Sub2, Class348_Sub1 class348_sub1, int[] is) {
+    Class348_Sub32(GlToolkit var_ha_Sub2, s_Sub2 var_s_Sub2, Class348_Sub1 class348_sub1, int[] is) {
         try {
             aS_Sub2_6929 = var_s_Sub2;
             aHa_Sub2_6951 = var_ha_Sub2;

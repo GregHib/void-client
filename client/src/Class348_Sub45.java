@@ -20,7 +20,7 @@ abstract class Class348_Sub45 extends Class348 {
         Class348_Sub44.anInt7101 = 0;
         Class11.anInt194 = Class270.anInt3465;
         Class318_Sub1_Sub3_Sub4.aClass338Array10330 = new Class338[2000];
-        ha_Sub2.anInt7714 = Class270.anInt3465;
+        GlToolkit.anInt7714 = Class270.anInt3465;
         Class50_Sub1.aBoolean5226 = false;
         Class147.aClass338Array2034 = new Class338[500];
         Class69.anInt1200 = 0;

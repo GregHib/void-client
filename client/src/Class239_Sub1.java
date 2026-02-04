@@ -52,7 +52,7 @@ final class Class239_Sub1 extends Class239 {
                     break;
                 }
             }
-            if (!bool) Class59.method544((Class274.aClass274_3504.method2063(Class348_Sub33.anInt6967, 544)) + string, false, 4);
+            if (!bool) Class59.method544((LocalisedText.aClass274_3504.method2063(Class348_Sub33.anInt6967, 544)) + string, false, 4);
             if (r.aBoolean9722) Class341.method2678(-2049);
         }
     }

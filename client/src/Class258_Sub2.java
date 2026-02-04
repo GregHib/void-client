@@ -23,7 +23,7 @@ final class Class258_Sub2 extends Class258 {
         anInt8535 = i_1_;
     }
 
-    Class258_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_4_) {
+    Class258_Sub2(GlToolkit var_ha_Sub2, int i, int i_4_) {
         super(var_ha_Sub2, 34067, i, i_4_ * (i_4_ * 6), false);
         this.anInt8538 = i_4_;
         this.aHa_Sub2_4851.method3771((byte) -81, this);
@@ -40,7 +40,7 @@ final class Class258_Sub2 extends Class258 {
         anInt8536 = -1;
     }
 
-    Class258_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_6_, boolean bool, byte[][] is, int i_7_) {
+    Class258_Sub2(GlToolkit var_ha_Sub2, int i, int i_6_, boolean bool, byte[][] is, int i_7_) {
         super(var_ha_Sub2, 34067, i, i_6_ * (i_6_ * 6), bool);
         try {
             this.anInt8538 = i_6_;
@@ -53,7 +53,7 @@ final class Class258_Sub2 extends Class258 {
         }
     }
 
-    Class258_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_9_, boolean bool, int[][] is) {
+    Class258_Sub2(GlToolkit var_ha_Sub2, int i, int i_9_, boolean bool, int[][] is) {
         super(var_ha_Sub2, 34067, i, 6 * i_9_ * i_9_, bool);
         try {
             this.anInt8538 = i_9_;

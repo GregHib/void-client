@@ -25,7 +25,7 @@ class Class59_Sub1 extends Class59 {
     static Class105[] aClass105Array5294;
     static int anInt5295;
     private byte[] aByteArray5296;
-    static Class297 aClass297_5297;
+    static SignLink aClass297_5297;
     private final int anInt5298;
     static float aFloat5299;
     static boolean aBoolean5300 = false;
@@ -156,7 +156,7 @@ class Class59_Sub1 extends Class59 {
     static final void method555(boolean bool, int i) {
         anInt5286++;
         if (i != Class363.aString4461.length()) {
-            Applet_Sub1.method94("--> " + Class363.aString4461, 110);
+            GameShell.method94("--> " + Class363.aString4461, 110);
             Class82.method812(Class363.aString4461, false, bool, (byte) -79);
             Class348_Sub38.anInt7006 = 0;
             Class363.aString4461 = "";

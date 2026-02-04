@@ -25,7 +25,7 @@ final class Class18 {
     private int anInt287 = 0;
     static int anInt288;
     private boolean aBoolean289;
-    private final ha_Sub2 aHa_Sub2_290;
+    private final GlToolkit aHa_Sub2_290;
     static int anInt291;
     private final Class262 aClass262_292;
     private boolean aBoolean293;
@@ -46,7 +46,7 @@ final class Class18 {
         if (var_aa != null) {
             Class348_Sub8.aHa6654.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789);
             if (Class259.anInt3306 >= 3) Class348_Sub8.aHa6654.A(-16777216, var_aa, i_1_, i);
-            else Class79.aClass105_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -Class314.aFloat3938) << 2, var_aa, i_1_, i);
+            else NPCType.aClass105_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -Class314.aFloat3938) << 2, var_aa, i_1_, i);
             if (i_0_ != -98) method271(88, null, (byte) 15, 71);
         }
     }
@@ -317,7 +317,7 @@ final class Class18 {
     static final void method282(int i, ha var_ha, int i_21_, byte i_22_, int i_23_, int i_24_, int i_25_, int i_26_) {
         anInt274++;
         Class21.aHa326 = var_ha;
-        Class51.aClass101_905 = Class21.aHa326.method3654();
+        LocType.aClass101_905 = Class21.aHa326.method3654();
         Class44.aClass101_624 = Class21.aHa326.method3654();
         r.aClass101_9720 = Class21.aHa326.method3654();
         Class73.anInt4784 = i_26_;
@@ -332,7 +332,7 @@ final class Class18 {
         Class85.method828((byte) 38, i_25_, i_21_);
     }
 
-    Class18(ha_Sub2 var_ha_Sub2) {
+    Class18(GlToolkit var_ha_Sub2) {
         anInt286 = 1;
         aClass262_292 = new Class262();
         aBoolean293 = true;

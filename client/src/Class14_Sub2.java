@@ -55,11 +55,11 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
 
     static final int method244(int i) {
         anInt8622++;
-        if ((double) Class75.aFloat1249 == 3.0) return 37;
+        if ((double) WorldMap.aFloat1249 == 3.0) return 37;
         if (i != 37) return 11;
-        if ((double) Class75.aFloat1249 == 4.0) return 50;
-        if ((double) Class75.aFloat1249 == 6.0) return 75;
-        if ((double) Class75.aFloat1249 == 8.0) return 100;
+        if ((double) WorldMap.aFloat1249 == 4.0) return 50;
+        if ((double) WorldMap.aFloat1249 == 6.0) return 75;
+        if ((double) WorldMap.aFloat1249 == 8.0) return 100;
         return 200;
     }
 

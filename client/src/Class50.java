@@ -22,7 +22,7 @@ abstract class Class50 {
         aString863 = null;
     }
 
-    static final Class171 method459(int i, ha_Sub2 var_ha_Sub2, String string, boolean bool) {
+    static final Class171 method459(int i, GlToolkit var_ha_Sub2, String string, boolean bool) {
         try {
             anInt861++;
             int i_6_ = OpenGL.glGenProgramARB();

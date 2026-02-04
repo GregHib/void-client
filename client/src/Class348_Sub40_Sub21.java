@@ -127,7 +127,7 @@ final class Class348_Sub40_Sub21 extends Class348_Sub40 {
         anInt9270++;
         long l = 4194304L;
         long l_17_ = -9223372036854775808L;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-107));
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-107));
         long l_18_ = interface10.method39(-14) << 14 | (i_16_ | i_15_ << 7) | interface10.method41(-32228) << 20 | 0x40000000;
         if (class51.anInt874 == 0) l_18_ |= l_17_;
         if (class51.anInt895 == 1) l_18_ |= l;

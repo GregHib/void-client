@@ -32,7 +32,7 @@ final class Class239_Sub3 extends Class239 {
 
     static final void method1728(int i, int i_2_, int i_3_, boolean bool, int i_4_) {
         anInt5860++;
-        if (Class320.method2547(i_3_, (byte) 84)) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_3_]));
+        if (InterfaceList.method2547(i_3_, (byte) 84)) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_3_]));
     }
 
     Class239_Sub3(Class348_Sub51 class348_sub51) {

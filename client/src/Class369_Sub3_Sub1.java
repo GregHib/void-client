@@ -78,7 +78,7 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
         return class105;
     }
 
-    static final void method3578(byte i, Object object, Class297 class297) {
+    static final void method3578(byte i, Object object, SignLink class297) {
         do {
             try {
                 anInt10178++;

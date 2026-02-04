@@ -40,7 +40,7 @@ final class Class19 {
         return (new Class223[]{Class219.aClass223_2868, Class348_Sub49.aClass223_7175, Class313.aClass223_3934, Class185.aClass223_2489, Class101_Sub1.aClass223_5689, Class348_Sub40_Sub21.aClass223_9274, Class28.aClass223_4997, Class174.aClass223_2307, Class149.aClass223_2045, Class187.aClass223_2507});
     }
 
-    static final Class57[] method286(byte i, Class297 class297) {
+    static final Class57[] method286(byte i, SignLink class297) {
         anInt307++;
         if (!class297.method2247(-4)) return new Class57[0];
         int i_6_ = 52 / ((39 - i) / 61);

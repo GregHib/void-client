@@ -66,7 +66,7 @@ final class Class240 implements Interface1 {
         Class295 class295 = aClass339_4682.method2667(false, aClass125_4685.anInt4918);
         if (class295 != null) {
             int i_7_ = ((aClass125_4685.aClass221_4922.method1607(Class92.anInt1524, aClass125_4685.anInt4929, (byte) -118)) - -aClass125_4685.anInt4924);
-            int i_8_ = ((aClass125_4685.aClass341_4925.method2679(ha_Sub2.anInt7666, aClass125_4685.anInt4923, i ^ ~0x60b)) - -aClass125_4685.anInt4920);
+            int i_8_ = ((aClass125_4685.aClass341_4925.method2679(GlToolkit.anInt7666, aClass125_4685.anInt4923, i ^ ~0x60b)) - -aClass125_4685.anInt4920);
             if (aClass125_4685.aBoolean4914) Class348_Sub8.aHa6654.method3628(i_7_, i_8_, aClass125_4685.anInt4929, aClass125_4685.anInt4923, aClass125_4685.anInt4917, 0);
             i_8_ += method1855(5, class295.aString3756, true, Class262.aClass324_3326, i_7_, i_8_) * 12;
             i_8_ += 8;

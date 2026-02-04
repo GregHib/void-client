@@ -130,7 +130,7 @@ final class Class367_Sub11 extends Class367 {
     static final void method3556(boolean bool) {
         anInt7405++;
         if (bool == false) {
-            synchronized (Class79.aClient1367) {
+            synchronized (NPCType.aClient1367) {
                 if (Class34.aFrame476 == null) {
                     Container container;
                     if (Class52.aFrame4904 != null) container = Class52.aFrame4904;
@@ -147,7 +147,7 @@ final class Class367_Sub11 extends Class367 {
                         Class321.anInt4017 = Class92.anInt1524;
                         Class335.anInt4167 = 0;
                         Class348_Sub48.anInt7129 = (Class272.anInt3473 - Class92.anInt1524) / 2;
-                        Class348_Sub42_Sub8_Sub2.anInt10432 = ha_Sub2.anInt7666;
+                        Class348_Sub42_Sub8_Sub2.anInt10432 = GlToolkit.anInt7666;
                     } else Class286_Sub5.method2158((byte) 56);
                     if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                         if (Class321.anInt4017 < 1024 && Class348_Sub42_Sub8_Sub2.anInt10432 < 768) {

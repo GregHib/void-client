@@ -441,7 +441,7 @@ final class Class325 {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
-                            Class79 class79 = (npc.aClass79_10505);
+                            NPCType class79 = (npc.aClass79_10505);
                             if (class79.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
                             if (class79 != null) {
                                 Class306.anInt3874++;

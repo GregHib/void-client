@@ -84,7 +84,7 @@ final class Class38 {
                     } catch (Exception exception) {
                         /* empty */
                     }
-                    Applet_Sub1.method94("Pausing for " + i_5_ + " seconds...", 58);
+                    GameShell.method94("Pausing for " + i_5_ + " seconds...", 58);
                     Class121.anInt1794 = 1 + i_4_;
                     Class299_Sub1_Sub1.aLong8694 = (long) (1000 * i_5_) + Class62.method599(-97);
                     return;

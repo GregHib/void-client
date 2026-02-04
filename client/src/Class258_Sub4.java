@@ -19,7 +19,7 @@ final class Class258_Sub4 extends Class258 {
         if (i == -3022) anInt8554++;
     }
 
-    Class258_Sub4(ha_Sub2 var_ha_Sub2, int i, int i_0_, byte[] is, int i_1_) {
+    Class258_Sub4(GlToolkit var_ha_Sub2, int i, int i_0_, byte[] is, int i_1_) {
         super(var_ha_Sub2, 3552, i, i_0_, false);
         try {
             anInt8556 = i_0_;

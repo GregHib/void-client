@@ -26,7 +26,7 @@ class Class258_Sub3 extends Class258 {
     static int anInt8550 = 0;
     int anInt8551;
 
-    Class258_Sub3(ha_Sub2 var_ha_Sub2, int i, int i_0_, int i_1_, int i_2_) {
+    Class258_Sub3(GlToolkit var_ha_Sub2, int i, int i_0_, int i_1_, int i_2_) {
         super(var_ha_Sub2, i, i_0_, i_1_ * i_2_, false);
         anInt8545 = -1;
         this.anInt8547 = i_1_;
@@ -44,7 +44,7 @@ class Class258_Sub3 extends Class258 {
         anInt8545 = i_5_;
     }
 
-    Class258_Sub3(ha_Sub2 var_ha_Sub2, int i, int i_6_, int i_7_, int i_8_, boolean bool, float[] fs, int i_9_) {
+    Class258_Sub3(GlToolkit var_ha_Sub2, int i, int i_6_, int i_7_, int i_8_, boolean bool, float[] fs, int i_9_) {
         super(var_ha_Sub2, i, i_6_, i_8_ * i_7_, bool);
         anInt8545 = -1;
         try {
@@ -84,7 +84,7 @@ class Class258_Sub3 extends Class258 {
         if (i_12_ > -65) this.anInt8547 = 101;
     }
 
-    Class258_Sub3(ha_Sub2 var_ha_Sub2, int i, int i_21_, int i_22_, int i_23_, boolean bool, int[] is, int i_24_, int i_25_, boolean bool_26_) {
+    Class258_Sub3(GlToolkit var_ha_Sub2, int i, int i_21_, int i_22_, int i_23_, boolean bool, int[] is, int i_24_, int i_25_, boolean bool_26_) {
         super(var_ha_Sub2, i, i_21_, i_23_ * i_22_, bool);
         anInt8545 = -1;
         try {
@@ -116,7 +116,7 @@ class Class258_Sub3 extends Class258 {
         }
     }
 
-    Class258_Sub3(ha_Sub2 var_ha_Sub2, int i, int i_32_, int i_33_, int i_34_, boolean bool, byte[] is, int i_35_, boolean bool_36_) {
+    Class258_Sub3(GlToolkit var_ha_Sub2, int i, int i_32_, int i_33_, int i_34_, boolean bool, byte[] is, int i_35_, boolean bool_36_) {
         super(var_ha_Sub2, i, i_32_, i_33_ * i_34_, bool);
         anInt8545 = -1;
         try {
@@ -208,11 +208,11 @@ class Class258_Sub3 extends Class258 {
             for (; ; ) {
                 try {
                     Image image = Toolkit.getDefaultToolkit().createImage(is);
-                    MediaTracker mediatracker = new MediaTracker(Class79.aClient1367);
+                    MediaTracker mediatracker = new MediaTracker(NPCType.aClient1367);
                     mediatracker.addImage(image, 0);
                     mediatracker.waitForAll();
-                    int i_58_ = image.getWidth(Class79.aClient1367);
-                    int i_59_ = image.getHeight(Class79.aClient1367);
+                    int i_58_ = image.getWidth(NPCType.aClient1367);
+                    int i_59_ = image.getHeight(NPCType.aClient1367);
                     if (mediatracker.isErrorAny() || i_58_ < 0 || i_59_ < 0) throw new RuntimeException("");
                     int[] is_60_ = new int[i_59_ * i_58_];
                     PixelGrabber pixelgrabber = new PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_);
@@ -259,7 +259,7 @@ class Class258_Sub3 extends Class258 {
         int i_76_ = -17 % ((46 - i_66_) / 59);
     }
 
-    Class258_Sub3(ha_Sub2 var_ha_Sub2, int i, int i_77_, int i_78_, int i_79_, int i_80_) {
+    Class258_Sub3(GlToolkit var_ha_Sub2, int i, int i_77_, int i_78_, int i_79_, int i_80_) {
         super(var_ha_Sub2, i, 6407, i_80_ * i_79_, false);
         anInt8545 = -1;
         this.anInt8547 = i_79_;

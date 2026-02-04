@@ -15,7 +15,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
     static int anInt4704;
     static int anInt4705;
 
-    Class119_Sub1(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_0_) {
+    Class119_Sub1(GlToolkit var_ha_Sub2, int i, byte[] is, int i_0_) {
         super(var_ha_Sub2, is, i_0_);
         try {
             anInt4697 = i;
@@ -24,7 +24,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
         }
     }
 
-    Class119_Sub1(ha_Sub2 var_ha_Sub2, int i, Buffer buffer) {
+    Class119_Sub1(GlToolkit var_ha_Sub2, int i, Buffer buffer) {
         super(var_ha_Sub2, buffer);
         try {
             anInt4697 = i;
@@ -44,7 +44,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
         if ((Class73.anInt4776 >= 2 || r.aBoolean9722) && Class289.aClass46_3701 == null) {
             if (i >= -71) method1077(null, (byte) -41);
             String string;
-            if (r.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + Class274.aClass274_3515.method2063(Class348_Sub33.anInt6967, 544) + Class28.aString5000 + " ->");
+            if (r.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + LocalisedText.aClass274_3515.method2063(Class348_Sub33.anInt6967, 544) + Class28.aString5000 + " ->");
             else if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -121) || Class73.anInt4776 <= 2) {
                 Class348_Sub42_Sub12 class348_sub42_sub12 = Class316.aClass348_Sub42_Sub12_3963;
                 if (class348_sub42_sub12 == null) return;
@@ -56,13 +56,13 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480((int) class348_sub42_sub12.aLong9605, -6008)));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
-                            Class79 class79 = (npc.aClass79_10505);
+                            NPCType class79 = (npc.aClass79_10505);
                             if (class79.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
                             if (class79 != null) is = class79.anIntArray1342;
                         }
                     } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                         Object object = null;
-                        Class51 class51;
+                        LocType class51;
                         if ((class348_sub42_sub12.anInt9608) != 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) ((class348_sub42_sub12.aLong9605) >>> 32 & 0x7fffffffL)));
                         else class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
                         if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47);
@@ -71,7 +71,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                 } else is = (Exception_Sub1.aClass255_112.method1940(-73, (int) (class348_sub42_sub12.aLong9605)).anIntArray2772);
                 if (is != null) string += Class163.method1273(is, true);
             } else string = Class316.method2367((byte) 125, Class316.aClass348_Sub42_Sub12_3963);
-            if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508.method2063(Class348_Sub33.anInt6967, 544));
+            if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + LocalisedText.aClass274_3508.method2063(Class348_Sub33.anInt6967, 544));
             if (Class348_Sub36.aClass46_6990 != null) {
                 Class324 class324 = Class348_Sub36.aClass46_6990.method426(var_ha, (byte) 68);
                 if (class324 == null) class324 = Class262.aClass324_3326;

@@ -189,7 +189,7 @@ final class Class112 implements Runnable {
         return class348_sub42_sub16_sub2;
     }
 
-    Class112(Class297 class297) {
+    Class112(SignLink class297) {
         this.anInt1734 = 0;
         Class144 class144 = class297.method2236(this, -10240, 5);
         while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) 43, 10L);

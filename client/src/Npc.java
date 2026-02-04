@@ -15,7 +15,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
     static int anInt10502;
     static int anInt10503;
     static int anInt10504;
-    Class79 aClass79_10505;
+    NPCType aClass79_10505;
     static int anInt10506;
     static int anInt10507;
     static int anInt10508;
@@ -140,7 +140,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         } else this.anInt10274 -= (float) this.anInt10274 / 10.0F;
         class101.method891(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y);
         Class225 class225 = this.method2422((byte) 72);
-        Class79 class79 = (this.aClass79_10505.anIntArray1377 != null ? this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1) : this.aClass79_10505);
+        NPCType class79 = (this.aClass79_10505.anIntArray1377 != null ? this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1) : this.aClass79_10505);
         this.aBoolean10324 = false;
         Class318_Sub4 class318_sub4 = null;
         if (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270.method1812(-32350) == i && class79.aBoolean1369 && class225.aBoolean2913) {
@@ -185,7 +185,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
     final int method2421(byte i) {
         anInt10495++;
         if ((this.aClass79_10505.anIntArray1377) != null) {
-            Class79 class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
+            NPCType class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
             if (class79 != null && class79.anInt1366 != -1) return class79.anInt1366;
         }
         if (i < 113) method2448(null, 88);
@@ -202,7 +202,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
     final void method2444(int i, boolean bool, int i_26_, int i_27_, int i_28_, int i_29_) {
         this.plane = this.aByte6376 = (byte) i_29_;
         anInt10515++;
-        if (Class79.method802(i, i_26_, true)) this.aByte6376++;
+        if (NPCType.method802(i, i_26_, true)) this.aByte6376++;
         if (this.anInt10286 != -1 && Class10.aClass87_191.method835(this.anInt10286, 7).anInt245 == 1) {
             this.anIntArray10236 = null;
             this.anInt10286 = -1;
@@ -259,7 +259,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
     final int method2425(int i) {
         anInt10496++;
         if ((this.aClass79_10505.anIntArray1377) != null) {
-            Class79 class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
+            NPCType class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
             if (class79 != null && class79.anInt1336 != -1) return class79.anInt1336;
         }
         if (i != -1) this.anInt10499 = -69;
@@ -275,7 +275,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         anInt10504++;
         if (i != 200) return 115;
         if ((this.aClass79_10505.anIntArray1377) != null) {
-            Class79 class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
+            NPCType class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
             if (class79 != null && class79.anInt1390 != -1) return class79.anInt1390;
         }
         if ((this.aClass79_10505.anInt1390) == -1) return super.method2426(200);
@@ -428,7 +428,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return true;
     }
 
-    final void method2448(Class79 class79, int i) {
+    final void method2448(NPCType class79, int i) {
         anInt10511++;
         this.aClass79_10505 = class79;
         if (i != -2) this.anInt10512 = 69;

@@ -106,18 +106,18 @@ final class Class228 {
     }
 
     static final void method1630(int i, int i_6_, int i_7_) {
-        if (Class75.aFloat1249 > Class75.aFloat1247) {
-            Class75.aFloat1247 += (double) Class75.aFloat1247 / 30.0;
-            if (Class75.aFloat1249 < Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249;
+        if (WorldMap.aFloat1249 > WorldMap.aFloat1247) {
+            WorldMap.aFloat1247 += (double) WorldMap.aFloat1247 / 30.0;
+            if (WorldMap.aFloat1249 < WorldMap.aFloat1247) WorldMap.aFloat1247 = WorldMap.aFloat1249;
             Class348_Sub15.method2811(false);
-            Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
-            Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871);
-        } else if (Class75.aFloat1247 > Class75.aFloat1249) {
-            Class75.aFloat1247 -= (double) Class75.aFloat1247 / 30.0;
-            if (Class75.aFloat1249 > Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249;
+            WorldMap.anInt1255 = (int) WorldMap.aFloat1247 >> 1;
+            WorldMap.aByteArrayArrayArray1251 = Class325.method2596(WorldMap.anInt1255, 12871);
+        } else if (WorldMap.aFloat1247 > WorldMap.aFloat1249) {
+            WorldMap.aFloat1247 -= (double) WorldMap.aFloat1247 / 30.0;
+            if (WorldMap.aFloat1249 > WorldMap.aFloat1247) WorldMap.aFloat1247 = WorldMap.aFloat1249;
             Class348_Sub15.method2811(false);
-            Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
-            Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, i + 12871);
+            WorldMap.anInt1255 = (int) WorldMap.aFloat1247 >> 1;
+            WorldMap.aByteArrayArrayArray1251 = Class325.method2596(WorldMap.anInt1255, i + 12871);
         }
         anInt2971++;
         if (i != (~Class244.anInt4609) && Class48.anInt859 != -1) {
@@ -145,7 +145,7 @@ final class Class228 {
         }
         if (Class246.aBoolean3174 && Class289.aClass262_3705 != null) {
             for (Class348_Sub12 class348_sub12 = (Class348_Sub12) Class289.aClass262_3705.method1995(4); class348_sub12 != null; class348_sub12 = ((Class348_Sub12) Class289.aClass262_3705.method1990((byte) 116))) {
-                Class42 class42 = (Class75.aClass153_1238.method1225(class348_sub12.aClass348_Sub21_6751.anInt6847, (byte) 125));
+                Class42 class42 = (WorldMap.aClass153_1238.method1225(class348_sub12.aClass348_Sub21_6751.anInt6847, (byte) 125));
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
                     if (class42.aStringArray577 != null) {
                         if (class42.aStringArray577[4] != null) Class50_Sub3.method466(false, class42.aString565, 0, (byte) -100, false, class42.anInt596, -1, true, 1006, class348_sub12.aClass348_Sub21_6751.anInt6847, class42.aStringArray577[4], class348_sub12.aClass348_Sub21_6751.anInt6847, -1);

@@ -63,14 +63,14 @@ final class Class40 {
         Class348_Sub12.aClass105Array6742 = null;
         Class240.aClass105Array4679 = null;
         if (i != -29776) method370(true);
-        Class79.aClass105_1365 = null;
+        NPCType.aClass105_1365 = null;
         Class25.aClass105Array367 = null;
         Class239_Sub9.aClass105Array5933 = null;
         Class200.aClass105Array2640 = null;
         Class348_Sub40_Sub37.aClass105Array9467 = null;
         Class262.aClass324_3326 = null;
         Class239_Sub24.aClass105_6097 = null;
-        Applet_Sub1.aClass324_20 = null;
+        GameShell.aClass324_20 = null;
         Class240.aClass324_4684 = null;
         Class169.aClass105Array2260 = null;
         Class113.aClass105Array1744 = null;

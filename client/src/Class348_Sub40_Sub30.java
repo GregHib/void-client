@@ -60,8 +60,8 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                 anInt9391++;
                 if (string != null) {
                     if (anInt9383 >= 200 && !Class206.aBoolean4888 || anInt9383 >= 200) {
-                        Class59.method544((Class274.aClass274_3493.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
-                        String string_0_ = Class274.aClass274_3494.method2063(Class348_Sub33.anInt6967, 544);
+                        Class59.method544((LocalisedText.aClass274_3493.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
+                        String string_0_ = LocalisedText.aClass274_3494.method2063(Class348_Sub33.anInt6967, 544);
                         if (string_0_ != null) Class59.method544(string_0_, false, 4);
                     } else {
                         String string_1_ = Class285_Sub1.method2127(2, string);
@@ -69,32 +69,32 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                             for (int i_2_ = 0; (anInt9383 > i_2_); i_2_++) {
                                 String string_3_ = (Class285_Sub1.method2127(2, Class83.aStringArray1441[i_2_]));
                                 if (string_3_ != null && string_3_.equals(string_1_)) {
-                                    Class59.method544((string + (Class274.aClass274_3521.method2063((Class348_Sub33.anInt6967), 544))), false, 4);
+                                    Class59.method544((string + (LocalisedText.aClass274_3521.method2063((Class348_Sub33.anInt6967), 544))), false, 4);
                                     return;
                                 }
                                 if (Class286_Sub2.aStringArray6205[i_2_] != null) {
                                     String string_4_ = (Class285_Sub1.method2127(2, (Class286_Sub2.aStringArray6205[i_2_])));
                                     if (string_4_ != null && string_4_.equals(string_1_)) {
-                                        Class59.method544((string + (Class274.aClass274_3521.method2063(Class348_Sub33.anInt6967, 544))), false, 4);
+                                        Class59.method544((string + (LocalisedText.aClass274_3521.method2063(Class348_Sub33.anInt6967, 544))), false, 4);
                                         return;
                                     }
                                 }
                             }
                             for (int i_5_ = 0; i_5_ < Class348_Sub42_Sub12.anInt9604; i_5_++) {
-                                String string_6_ = (Class285_Sub1.method2127(2, Class51.aStringArray932[i_5_]));
+                                String string_6_ = (Class285_Sub1.method2127(2, LocType.aStringArray932[i_5_]));
                                 if (string_6_ != null && string_6_.equals(string_1_)) {
-                                    Class59.method544(((Class274.aClass274_3526.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3527.method2063(Class348_Sub33.anInt6967, 544))), false, 4);
+                                    Class59.method544(((LocalisedText.aClass274_3526.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalisedText.aClass274_3527.method2063(Class348_Sub33.anInt6967, 544))), false, 4);
                                     return;
                                 }
                                 if (Class348_Sub40_Sub21.aStringArray9275[i_5_] != null) {
                                     String string_7_ = (Class285_Sub1.method2127(2, (Class348_Sub40_Sub21.aStringArray9275[i_5_])));
                                     if (string_7_ != null && string_7_.equals(string_1_)) {
-                                        Class59.method544(((Class274.aClass274_3526.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3527.method2063(Class348_Sub33.anInt6967, 544))), false, 4);
+                                        Class59.method544(((LocalisedText.aClass274_3526.method2063(Class348_Sub33.anInt6967, 544)) + string + (LocalisedText.aClass274_3527.method2063(Class348_Sub33.anInt6967, 544))), false, 4);
                                         return;
                                     }
                                 }
                             }
-                            if (Class285_Sub1.method2127(2, (Class132.aPlayer_1907.aString10544)).equals(string_1_)) Class59.method544((Class274.aClass274_3524.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
+                            if (Class285_Sub1.method2127(2, (Class132.aPlayer_1907.aString10544)).equals(string_1_)) Class59.method544((LocalisedText.aClass274_3524.method2063(Class348_Sub33.anInt6967, 544)), false, 4);
                             else {
                                 Class146.anInt2012++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85));

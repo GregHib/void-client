@@ -185,8 +185,8 @@ final class Class294 implements Interface16 {
             Graphics graphics = Class305.aCanvas3869.getGraphics();
             if (graphics != null) {
                 try {
-                    int i_5_ = Class51.aClass311_897.method2320((byte) 103);
-                    String string = Class51.aClass311_897.method2318(-9324);
+                    int i_5_ = LocType.aClass311_897.method2320((byte) 103);
+                    String string = LocType.aClass311_897.method2318(-9324);
                     if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432));
                     Graphics graphics_6_ = Class342.anImage4249.getGraphics();
                     graphics_6_.clearRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
@@ -263,7 +263,7 @@ final class Class294 implements Interface16 {
 
     private final void method2219(int i) {
         anInt5031++;
-        Class199.method1455(Class51.aClass311_897.method2320((byte) 78), Class135.aColorArray1928[Class222.anInt2884], Class51.aClass311_897.method2318(-9324), (Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884]), (byte) -100, Class50_Sub3.aColorArray5242[Class222.anInt2884]);
+        Class199.method1455(LocType.aClass311_897.method2320((byte) 78), Class135.aColorArray1928[Class222.anInt2884], LocType.aClass311_897.method2318(-9324), (Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884]), (byte) -100, Class50_Sub3.aColorArray5242[Class222.anInt2884]);
         if (i != 33) method55((byte) 1);
     }
 

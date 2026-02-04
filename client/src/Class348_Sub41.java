@@ -42,7 +42,7 @@ final class Class348_Sub41 extends Class348 {
                     int i_13_ = i_11_ - -i_0_;
                     int i_14_ = i_2_ + i_10_;
                     if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
-                        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_4_);
+                        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_4_);
                         if (i_12_ != 22 || Class316.aClass348_Sub51_3959.aClass239_Sub4_7220.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                             bool_7_ = true;
                             if (!class51.method485(9773)) {
@@ -77,12 +77,12 @@ final class Class348_Sub41 extends Class348 {
             Class167.anInt2204 = Class355.anInt4372;
             if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 1) Class167.anInt2204 = 0;
             Class348_Sub49.method3379(2, i_17_);
-            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
+            Class362.method3511(true, GameShell.aClass324_20, Class246.aClass143_3179, LocalisedText.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
             int i_18_ = za_Sub2.regionTileX;
             int i_19_ = Class90.regionTileY;
             za_Sub2.regionTileX = (-(Class367_Sub4.anInt7319 >> 4) + ha.anInt4581) * 8;
             Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 >> 4));
-            Class348_Sub26.aClass348_Sub42_Sub14_6885 = Class75.method766(ha.anInt4581 * 8, Class327.anInt4095 * 8);
+            Class348_Sub26.aClass348_Sub42_Sub14_6885 = WorldMap.method766(ha.anInt4581 * 8, Class327.anInt4095 * 8);
             r_Sub2.aClass252_10488 = null;
             int i_20_ = za_Sub2.regionTileX - i_18_;
             int i_21_ = -i_19_ + Class90.regionTileY;
@@ -233,7 +233,7 @@ final class Class348_Sub41 extends Class348 {
         anInt7051++;
         Interface10 interface10 = (Interface10) r_Sub2.method3297(i_43_, i_45_, i_44_);
         if (interface10 != null) {
-            Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-124));
+            LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-124));
             int i_48_ = 0x3 & interface10.method41(-32228);
             int i_49_ = interface10.method39(35);
             if (class51.anInt875 == -1) {
@@ -267,7 +267,7 @@ final class Class348_Sub41 extends Class348 {
         if (bool != false) anInt7054 = 122;
         interface10 = ((Interface10) Class177.method1353(i_43_, i_45_, i_44_, (aClass7056 != null ? aClass7056 : (aClass7056 = Interface10.class))));
         if (interface10 != null) {
-            Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-88));
+            LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-88));
             int i_51_ = interface10.method41(-32228) & 0x3;
             int i_52_ = interface10.method39(-126);
             if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_ha, i_51_, -86);
@@ -280,7 +280,7 @@ final class Class348_Sub41 extends Class348 {
         }
         interface10 = (Interface10) Class348_Sub16_Sub3.method2878(i_43_, i_45_, i_44_);
         if (interface10 != null) {
-            Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-118));
+            LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-118));
             int i_54_ = interface10.method41(-32228) & 0x3;
             if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_ha, i_54_, -5);
         }

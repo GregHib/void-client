@@ -54,11 +54,11 @@ final class Class179 {
         return i >>> 10;
     }
 
-    static final void method1360(String string, Class297 class297, boolean bool, boolean bool_3_, int i) {
+    static final void method1360(String string, SignLink class297, boolean bool, boolean bool_3_, int i) {
         try {
             anInt2369++;
             if (bool_3_) {
-                if (Class297.aString3803.startsWith("win") && class297.aBoolean3777) {
+                if (SignLink.aString3803.startsWith("win") && class297.aBoolean3777) {
                     String string_4_ = null;
                     if (Class93.anApplet1530 != null) string_4_ = Class93.anApplet1530.getParameter("haveie6");
                     if (string_4_ == null || !string_4_.equals("1")) {
@@ -69,7 +69,7 @@ final class Class179 {
                         return;
                     }
                 }
-                if (Class297.aString3803.startsWith("mac")) {
+                if (SignLink.aString3803.startsWith("mac")) {
                     String string_5_ = null;
                     if (Class93.anApplet1530 != null) string_5_ = Class93.anApplet1530.getParameter("havefirefox");
                     if (string_5_ != null && string_5_.equals("1") && bool) {

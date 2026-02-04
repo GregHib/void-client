@@ -145,7 +145,7 @@ final class Class6 {
                         for (int i_43_ = 0; i_43_ < strings.length; i_43_++) {
                             int i_44_ = i_42_ * i_43_ + 8;
                             var_ha.KA(i_35_ + i_44_, i_36_, i_42_ + i_35_ - (-i_44_ - -8), i_36_ + 350);
-                            Applet_Sub1.aClass324_20.method2576(Class250.method1909((byte) 31, strings[i_43_]), -1, (-((-Class284.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(Class246.aClass143_3179.anInt1993))))), i_35_ + i_44_, -16777216, -110);
+                            GameShell.aClass324_20.method2576(Class250.method1909((byte) 31, strings[i_43_]), -1, (-((-Class284.anInt3676 + i_41_) * Class68.anInt1188) + (-Class348_Sub31_Sub2.anInt9077 + i_36_ - (-350 - (-2 + -(Class246.aClass143_3179.anInt1993))))), i_35_ + i_44_, -16777216, -110);
                         }
                     }
                 }

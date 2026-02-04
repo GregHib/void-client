@@ -61,7 +61,7 @@ final class Class30 {
         if (i != 1) method322(-112);
     }
 
-    static final void method323(Class45 class45, Class297 class297, byte i) {
+    static final void method323(Class45 class45, SignLink class297, byte i) {
         try {
             Class348_Sub41.aString7048 = "";
             Class59_Sub1.aClass297_5297 = class297;

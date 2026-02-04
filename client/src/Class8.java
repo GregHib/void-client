@@ -20,7 +20,7 @@ final class Class8 {
 
     static final int method214(Npc npc, int i) {
         anInt163++;
-        Class79 class79 = (npc.aClass79_10505);
+        NPCType class79 = (npc.aClass79_10505);
         if (class79.anIntArray1377 != null) {
             class79 = class79.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, i);
             if (class79 == null) return -1;

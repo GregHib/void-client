@@ -50,7 +50,7 @@ final class Class163 {
     static final Class348_Sub42_Sub14 method1269(int i) {
         if (i != -17096) return null;
         anInt2168++;
-        return Class75.aClass348_Sub42_Sub14_1243;
+        return WorldMap.aClass348_Sub42_Sub14_1243;
     }
 
     final int method1270(int i, byte i_12_) {

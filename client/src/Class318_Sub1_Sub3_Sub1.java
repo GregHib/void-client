@@ -68,7 +68,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements Interf
         if (var_r != null) Class130.method1130(var_r, this.aByte6376, this.x, this.y, null);
     }
 
-    Class318_Sub1_Sub3_Sub1(ha var_ha, Class51 class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, boolean bool_10_) {
+    Class318_Sub1_Sub3_Sub1(ha var_ha, LocType class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, boolean bool_10_) {
         super(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, class51.anInt895 == 1, Class348_Sub9.method2782(i_9_, i_8_, 0));
         do {
             try {
@@ -201,7 +201,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements Interf
 
     private final Class2 method2417(int i, ha var_ha, int i_20_, boolean bool) {
         anInt10007++;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(i, 0xffff & aShort10032);
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(i, 0xffff & aShort10032);
         s var_s;
         s var_s_21_;
         if (aBoolean10017) {

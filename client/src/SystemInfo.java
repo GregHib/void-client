@@ -1,10 +1,10 @@
-/* Class348_Sub4 - Decompiled by JODE
+/* SystemInfo - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
 import jaclib.hardware_info.HardwareInfo;
 
-final class Class348_Sub4 extends Class348 {
+final class SystemInfo extends Class348 {
     private int anInt6591;
     private int anInt6592;
     static int anInt6593;
@@ -92,46 +92,46 @@ final class Class348_Sub4 extends Class348 {
         return za_Sub1.anInt9774;
     }
 
-    public Class348_Sub4() {
+    public SystemInfo() {
         /* empty */
     }
 
-    Class348_Sub4(boolean bool, Class297 class297) {
+    SystemInfo(boolean bool, SignLink class297) {
         if (bool) {
-            if (Class297.aString3803.startsWith("win")) anInt6613 = 1;
-            else if (Class297.aString3803.startsWith("mac")) anInt6613 = 2;
-            else if (Class297.aString3803.startsWith("linux")) anInt6613 = 3;
+            if (SignLink.aString3803.startsWith("win")) anInt6613 = 1;
+            else if (SignLink.aString3803.startsWith("mac")) anInt6613 = 2;
+            else if (SignLink.aString3803.startsWith("linux")) anInt6613 = 3;
             else anInt6613 = 4;
-            aBoolean6608 = Class297.aString3780.startsWith("amd64") || Class297.aString3780.startsWith("x86_64");
+            aBoolean6608 = SignLink.aString3780.startsWith("amd64") || SignLink.aString3780.startsWith("x86_64");
             if (anInt6613 != 1) {
                 if (anInt6613 == 2) {
-                    if (Class297.aString3778.indexOf("10.4") == -1) {
-                        if (Class297.aString3778.indexOf("10.5") == -1) {
-                            if (Class297.aString3778.indexOf("10.6") != -1) anInt6595 = 22;
+                    if (SignLink.aString3778.indexOf("10.4") == -1) {
+                        if (SignLink.aString3778.indexOf("10.5") == -1) {
+                            if (SignLink.aString3778.indexOf("10.6") != -1) anInt6595 = 22;
                         } else anInt6595 = 21;
                     } else anInt6595 = 20;
                 }
-            } else if (Class297.aString3778.indexOf("4.0") != -1) anInt6595 = 1;
-            else if (Class297.aString3778.indexOf("4.1") == -1) {
-                if (Class297.aString3778.indexOf("4.9") == -1) {
-                    if (Class297.aString3778.indexOf("5.0") != -1) anInt6595 = 4;
-                    else if (Class297.aString3778.indexOf("5.1") == -1) {
-                        if (Class297.aString3778.indexOf("6.0") != -1) anInt6595 = 6;
-                        else if (Class297.aString3778.indexOf("6.1") != -1) anInt6595 = 7;
+            } else if (SignLink.aString3778.indexOf("4.0") != -1) anInt6595 = 1;
+            else if (SignLink.aString3778.indexOf("4.1") == -1) {
+                if (SignLink.aString3778.indexOf("4.9") == -1) {
+                    if (SignLink.aString3778.indexOf("5.0") != -1) anInt6595 = 4;
+                    else if (SignLink.aString3778.indexOf("5.1") == -1) {
+                        if (SignLink.aString3778.indexOf("6.0") != -1) anInt6595 = 6;
+                        else if (SignLink.aString3778.indexOf("6.1") != -1) anInt6595 = 7;
                     } else anInt6595 = 5;
                 } else anInt6595 = 3;
             } else anInt6595 = 2;
-            if (Class297.aString3782.toLowerCase().indexOf("sun") != -1) anInt6594 = 1;
-            else if (Class297.aString3782.toLowerCase().indexOf("microsoft") == -1) {
-                if (Class297.aString3782.toLowerCase().indexOf("apple") != -1) anInt6594 = 3;
+            if (SignLink.aString3782.toLowerCase().indexOf("sun") != -1) anInt6594 = 1;
+            else if (SignLink.aString3782.toLowerCase().indexOf("microsoft") == -1) {
+                if (SignLink.aString3782.toLowerCase().indexOf("apple") != -1) anInt6594 = 3;
                 else anInt6594 = 4;
             } else anInt6594 = 2;
-            boolean oldJava = Class297.aString3796.startsWith("1.");
+            boolean oldJava = SignLink.aString3796.startsWith("1.");
             int i = oldJava ? 2 : 0;
             int i_3_ = 0;
             try {
-                while (Class297.aString3796.length() > i) {
-                    int i_4_ = Class297.aString3796.charAt(i);
+                while (SignLink.aString3796.length() > i) {
+                    int i_4_ = SignLink.aString3796.charAt(i);
                     if (i_4_ < 48 || i_4_ > 57) break;
                     i++;
                     i_3_ = i_3_ * 10 - -i_4_ + -48;
@@ -140,11 +140,11 @@ final class Class348_Sub4 extends Class348 {
                 /* empty */
             }
             anInt6616 = i_3_;
-            i = Class297.aString3796.indexOf('.', 2) - -1;
+            i = SignLink.aString3796.indexOf('.', 2) - -1;
             i_3_ = 0;
             try {
-                for (/**/; (i < Class297.aString3796.length()); i++) {
-                    int i_5_ = Class297.aString3796.charAt(i);
+                for (/**/; (i < SignLink.aString3796.length()); i++) {
+                    int i_5_ = SignLink.aString3796.charAt(i);
                     if (i_5_ < 48 || i_5_ > 57) break;
                     i_3_ = i_3_ * 10 + i_5_ + -48;
                 }
@@ -153,10 +153,10 @@ final class Class348_Sub4 extends Class348 {
             }
             anInt6605 = i_3_;
             i_3_ = 0;
-            i = 1 + Class297.aString3796.indexOf(oldJava ? '_' : '.', 4);
+            i = 1 + SignLink.aString3796.indexOf(oldJava ? '_' : '.', 4);
             try {
-                for (/**/; Class297.aString3796.length() > i; i++) {
-                    int i_6_ = Class297.aString3796.charAt(i);
+                for (/**/; SignLink.aString3796.length() > i; i++) {
+                    int i_6_ = SignLink.aString3796.charAt(i);
                     if (i_6_ < 48 || i_6_ > 57) break;
                     i_3_ = i_6_ + -48 + i_3_ * 10;
                 }

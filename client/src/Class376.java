@@ -142,7 +142,7 @@ final class Class376 implements Runnable {
             class148 = Class16.aClass148_231;
             Class16.aClass148_231 = Class16.aClass148_231.aClass148_2038;
             class148.aClass148_2038 = null;
-            ha_Sub2.anInt7722--;
+            GlToolkit.anInt7722--;
         } else class148 = new Class148();
         class148.aClass318_Sub1_Sub3_2040 = class318_sub1_sub3;
         return class148;

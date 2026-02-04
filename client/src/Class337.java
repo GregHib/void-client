@@ -3,7 +3,7 @@
  */
 
 final class Class337 {
-    private final ha_Sub2 aHa_Sub2_4173;
+    private final GlToolkit aHa_Sub2_4173;
     static float[][] aFloatArrayArray4174 = {{-0.333333F, -0.333333F, -0.333333F}, {0.333333F, -0.333333F, -0.333333F}, {-0.333333F, 0.333333F, -0.333333F}, {0.333333F, 0.333333F, -0.333333F}, {-0.333333F, -0.333333F, 0.333333F}, {0.333333F, -0.333333F, 0.333333F}, {-0.333333F, 0.333333F, 0.333333F}, {0.333333F, 0.333333F, 0.333333F}};
     static int anInt4175;
     static int anInt4176;
@@ -24,7 +24,7 @@ final class Class337 {
         super.finalize();
     }
 
-    Class337(ha_Sub2 var_ha_Sub2, long l, Class242[] class242s) {
+    Class337(GlToolkit var_ha_Sub2, long l, Class242[] class242s) {
         try {
             aHa_Sub2_4173 = var_ha_Sub2;
             this.aLong4178 = l;

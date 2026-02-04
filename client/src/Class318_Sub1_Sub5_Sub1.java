@@ -170,7 +170,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     private final Class2 method2491(byte i, boolean bool, int i_5_, ha var_ha) {
         if (i != -51) aClass262_10125 = null;
         anInt10142++;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, 0xffff & aShort10129);
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, 0xffff & aShort10129);
         s var_s;
         s var_s_6_;
         if (aBoolean10138) {
@@ -191,7 +191,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
         return 0;
     }
 
-    Class318_Sub1_Sub5_Sub1(ha var_ha, Class51 class51, int i, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, int i_11_, int i_12_, int i_13_, int i_14_) {
+    Class318_Sub1_Sub5_Sub1(ha var_ha, LocType class51, int i, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, int i_11_, int i_12_, int i_13_, int i_14_) {
         super(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_);
         do {
             try {

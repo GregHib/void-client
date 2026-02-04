@@ -82,7 +82,7 @@ final class Class66 {
     }
 
     static final void method703(int i) {
-        if (i != -1 && Class320.method2547(i, (byte) 84)) {
+        if (i != -1 && InterfaceList.method2547(i, (byte) 84)) {
             Class46[] class46s = Class348_Sub40_Sub33.aClass46ArrayArray9427[i];
             for (int i_7_ = 0; i_7_ < class46s.length; i_7_++) {
                 Class46 class46 = class46s[i_7_];
@@ -224,7 +224,7 @@ final class Class66 {
                 return;
             }
             if (i == 5017) {
-                anIntArray1149[anInt1173++] = Class348_Sub4.method2749(-1);
+                anIntArray1149[anInt1173++] = SystemInfo.method2749(-1);
                 return;
             }
             if (i == 5018) {
@@ -513,7 +513,7 @@ final class Class66 {
             }
             if (i == 5206) {
                 int i_64_ = anIntArray1149[--anInt1173];
-                Class348_Sub42_Sub14 class348_sub42_sub14 = Class75.method766(i_64_ >> 14 & 0x3fff, i_64_ & 0x3fff);
+                Class348_Sub42_Sub14 class348_sub42_sub14 = WorldMap.method766(i_64_ >> 14 & 0x3fff, i_64_ & 0x3fff);
                 if (class348_sub42_sub14 == null) anIntArray1149[anInt1173++] = -1;
                 else {
                     anIntArray1149[anInt1173++] = (class348_sub42_sub14.anInt9628);
@@ -522,7 +522,7 @@ final class Class66 {
                 return;
             }
             if (i == 5207) {
-                Class348_Sub42_Sub14 class348_sub42_sub14 = Class75.method757(anIntArray1149[--anInt1173]);
+                Class348_Sub42_Sub14 class348_sub42_sub14 = WorldMap.method757(anIntArray1149[--anInt1173]);
                 if (class348_sub42_sub14 == null || (class348_sub42_sub14.aString9632) == null) aStringArray1152[anInt1170++] = "";
                 else {
                     aStringArray1152[anInt1170++] = (class348_sub42_sub14.aString9632);
@@ -536,13 +536,13 @@ final class Class66 {
                 return;
             }
             if (i == 5209) {
-                anIntArray1149[anInt1173++] = Class348_Sub36.anInt6992 + Class75.anInt1266;
-                anIntArray1149[anInt1173++] = Class245.anInt3170 + Class75.anInt1263;
+                anIntArray1149[anInt1173++] = Class348_Sub36.anInt6992 + WorldMap.anInt1266;
+                anIntArray1149[anInt1173++] = Class245.anInt3170 + WorldMap.anInt1263;
                 return;
             }
             if (i == 5210) {
                 int i_65_ = anIntArray1149[--anInt1173];
-                Class348_Sub42_Sub14 class348_sub42_sub14 = Class75.method757(i_65_);
+                Class348_Sub42_Sub14 class348_sub42_sub14 = WorldMap.method757(i_65_);
                 if (class348_sub42_sub14 == null) {
                     anIntArray1149[anInt1173++] = 0;
                     anIntArray1149[anInt1173++] = 0;
@@ -555,7 +555,7 @@ final class Class66 {
             }
             if (i == 5211) {
                 int i_66_ = anIntArray1149[--anInt1173];
-                Class348_Sub42_Sub14 class348_sub42_sub14 = Class75.method757(i_66_);
+                Class348_Sub42_Sub14 class348_sub42_sub14 = WorldMap.method757(i_66_);
                 if (class348_sub42_sub14 == null) {
                     anIntArray1149[anInt1173++] = 0;
                     anIntArray1149[anInt1173++] = 0;
@@ -573,7 +573,7 @@ final class Class66 {
                     anIntArray1149[anInt1173++] = -1;
                 } else {
                     anIntArray1149[anInt1173++] = class348_sub21.anInt6847;
-                    int i_67_ = (class348_sub21.anInt6850 << 28 | (class348_sub21.anInt6852 + Class75.anInt1266) << 14 | (class348_sub21.anInt6851 + Class75.anInt1263));
+                    int i_67_ = (class348_sub21.anInt6850 << 28 | (class348_sub21.anInt6852 + WorldMap.anInt1266) << 14 | (class348_sub21.anInt6851 + WorldMap.anInt1263));
                     anIntArray1149[anInt1173++] = i_67_;
                     return;
                 }
@@ -586,7 +586,7 @@ final class Class66 {
                     anIntArray1149[anInt1173++] = -1;
                 } else {
                     anIntArray1149[anInt1173++] = class348_sub21.anInt6847;
-                    int i_68_ = (class348_sub21.anInt6850 << 28 | (class348_sub21.anInt6852 + Class75.anInt1266) << 14 | (class348_sub21.anInt6851 + Class75.anInt1263));
+                    int i_68_ = (class348_sub21.anInt6850 << 28 | (class348_sub21.anInt6852 + WorldMap.anInt1266) << 14 | (class348_sub21.anInt6851 + WorldMap.anInt1263));
                     anIntArray1149[anInt1173++] = i_68_;
                     return;
                 }
@@ -605,7 +605,7 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_71_ = anIntArray1149[anInt1173];
                 int i_72_ = anIntArray1149[anInt1173 + 1];
-                Class107 class107 = Class75.method767(i_71_ >> 14 & 0x3fff, i_71_ & 0x3fff);
+                Class107 class107 = WorldMap.method767(i_71_ >> 14 & 0x3fff, i_71_ & 0x3fff);
                 boolean bool_73_ = false;
                 for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) class107.method1011(-48); class348_sub42_sub14 != null; class348_sub42_sub14 = ((Class348_Sub42_Sub14) class107.method1003((byte) 113))) {
                     if (class348_sub42_sub14.anInt9628 == i_72_) {
@@ -622,7 +622,7 @@ final class Class66 {
             }
             if (i == 5218) {
                 int i_74_ = anIntArray1149[--anInt1173];
-                Class348_Sub42_Sub14 class348_sub42_sub14 = Class75.method757(i_74_);
+                Class348_Sub42_Sub14 class348_sub42_sub14 = WorldMap.method757(i_74_);
                 if (class348_sub42_sub14 == null) anIntArray1149[anInt1173++] = -1;
                 else {
                     anIntArray1149[anInt1173++] = (class348_sub42_sub14.anInt9631);
@@ -646,7 +646,7 @@ final class Class66 {
                     anIntArray1149[anInt1173++] = -1;
                     return;
                 } else {
-                    boolean bool_76_ = (class348_sub42_sub14.method3239(true, Class245.anInt3170 + Class75.anInt1263, Class348_Sub36.anInt6992 + Class75.anInt1266, anIntArray1175));
+                    boolean bool_76_ = (class348_sub42_sub14.method3239(true, Class245.anInt3170 + WorldMap.anInt1263, Class348_Sub36.anInt6992 + WorldMap.anInt1266, anIntArray1175));
                     if (bool_76_) {
                         anIntArray1149[anInt1173++] = anIntArray1175[1];
                         anIntArray1149[anInt1173++] = anIntArray1175[2];
@@ -777,7 +777,7 @@ final class Class66 {
                 return;
             }
             if (i == 5235) {
-                anIntArray1149[anInt1173++] = (Class75.aClass348_Sub42_Sub14_1243 != null ? Class75.aClass348_Sub42_Sub14_1243.anInt9628 : -1);
+                anIntArray1149[anInt1173++] = (WorldMap.aClass348_Sub42_Sub14_1243 != null ? WorldMap.aClass348_Sub42_Sub14_1243.anInt9628 : -1);
                 return;
             }
             if (i == 5236) {
@@ -970,21 +970,21 @@ final class Class66 {
             if (i == 5424) {
                 anInt1173 -= 11;
                 Class264.anInt3376 = anIntArray1149[anInt1173];
-                Class51.anInt948 = anIntArray1149[anInt1173 + 1];
+                LocType.anInt948 = anIntArray1149[anInt1173 + 1];
                 Class264.anInt3374 = anIntArray1149[anInt1173 + 2];
                 Class348_Sub42_Sub4.anInt9511 = anIntArray1149[anInt1173 + 3];
                 Class231.anInt2996 = anIntArray1149[anInt1173 + 4];
                 Class348_Sub40_Sub16.anInt9231 = anIntArray1149[anInt1173 + 5];
                 Class318_Sub1_Sub3_Sub3.anInt10257 = anIntArray1149[anInt1173 + 6];
                 Class313.anInt3937 = anIntArray1149[anInt1173 + 7];
-                Class79.anInt1387 = anIntArray1149[anInt1173 + 8];
+                NPCType.anInt1387 = anIntArray1149[anInt1173 + 8];
                 Class348_Sub42_Sub11.anInt9586 = anIntArray1149[anInt1173 + 9];
                 Class5_Sub2.anInt8363 = anIntArray1149[anInt1173 + 10];
                 Class21.aClass45_322.method421(false, Class231.anInt2996);
                 Class21.aClass45_322.method421(false, Class348_Sub40_Sub16.anInt9231);
                 Class21.aClass45_322.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257);
                 Class21.aClass45_322.method421(false, Class313.anInt3937);
-                Class21.aClass45_322.method421(false, Class79.anInt1387);
+                Class21.aClass45_322.method421(false, NPCType.anInt1387);
                 Class348_Sub42_Sub15.aClass105_9659 = Class110.aClass105_1706 = Class174.aClass105_2309 = null;
                 OutputStream_Sub2.aClass105_106 = Class121.aClass105_1800 = Class348_Sub5.aClass105_6627 = null;
                 Class348_Sub42_Sub15.aClass105_9658 = Class309.aClass105_4808 = null;
@@ -992,7 +992,7 @@ final class Class66 {
                 return;
             }
             if (i == 5425) {
-                Class274.method2061(12);
+                LocalisedText.method2061(12);
                 Class71.aBoolean1211 = false;
                 return;
             }
@@ -1744,8 +1744,8 @@ final class Class66 {
                 anInt1173 -= 2;
                 Class348_Sub23_Sub3.aShort9044 = (short) anIntArray1149[anInt1173];
                 if (Class348_Sub23_Sub3.aShort9044 <= 0) Class348_Sub23_Sub3.aShort9044 = (short) 256;
-                Class320.aShort3992 = (short) anIntArray1149[anInt1173 + 1];
-                if (Class320.aShort3992 <= 0) Class320.aShort3992 = (short) 320;
+                InterfaceList.aShort3992 = (short) anIntArray1149[anInt1173 + 1];
+                if (InterfaceList.aShort3992 <= 0) InterfaceList.aShort3992 = (short) 320;
                 return;
             }
             if (i == 6202) {
@@ -1773,7 +1773,7 @@ final class Class66 {
             }
             if (i == 6204) {
                 anIntArray1149[anInt1173++] = Class348_Sub23_Sub3.aShort9044;
-                anIntArray1149[anInt1173++] = Class320.aShort3992;
+                anIntArray1149[anInt1173++] = InterfaceList.aShort3992;
                 return;
             }
             if (i == 6205) {
@@ -2214,7 +2214,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 6911) {
-                    anIntArray1149[anInt1173++] = Applet_Sub1.anInt37;
+                    anIntArray1149[anInt1173++] = GameShell.anInt37;
                     return;
                 }
                 if (i == 6912) {
@@ -2458,114 +2458,114 @@ final class Class66 {
         if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
             String string_240_ = string.toLowerCase();
             int i_241_ = 0;
-            if (string_240_.startsWith(Class274.aClass274_3530.method2063(0, 544))) {
+            if (string_240_.startsWith(LocalisedText.aClass274_3530.method2063(0, 544))) {
                 i_241_ = 0;
-                string = string.substring(Class274.aClass274_3530.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3531.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3530.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3531.method2063(0, 544))) {
                 i_241_ = 1;
-                string = string.substring(Class274.aClass274_3531.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3532.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3531.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3532.method2063(0, 544))) {
                 i_241_ = 2;
-                string = string.substring(Class274.aClass274_3532.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3533.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3532.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3533.method2063(0, 544))) {
                 i_241_ = 3;
-                string = string.substring(Class274.aClass274_3533.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3534.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3533.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3534.method2063(0, 544))) {
                 i_241_ = 4;
-                string = string.substring(Class274.aClass274_3534.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3535.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3534.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3535.method2063(0, 544))) {
                 i_241_ = 5;
-                string = string.substring(Class274.aClass274_3535.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3536.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3535.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3536.method2063(0, 544))) {
                 i_241_ = 6;
-                string = string.substring(Class274.aClass274_3536.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3537.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3536.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3537.method2063(0, 544))) {
                 i_241_ = 7;
-                string = string.substring(Class274.aClass274_3537.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3538.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3537.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3538.method2063(0, 544))) {
                 i_241_ = 8;
-                string = string.substring(Class274.aClass274_3538.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3539.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3538.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3539.method2063(0, 544))) {
                 i_241_ = 9;
-                string = string.substring(Class274.aClass274_3539.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3540.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3539.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3540.method2063(0, 544))) {
                 i_241_ = 10;
-                string = string.substring(Class274.aClass274_3540.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3540.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3541.method2063(0, 544))) {
                 i_241_ = 11;
-                string = string.substring(Class274.aClass274_3541.method2063(0, 544).length());
+                string = string.substring(LocalisedText.aClass274_3541.method2063(0, 544).length());
             } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3530.method2063(Class348_Sub33.anInt6967, 544))) {
+                if (string_240_.startsWith(LocalisedText.aClass274_3530.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 0;
-                    string = string.substring(Class274.aClass274_3530.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3531.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3530.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3531.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 1;
-                    string = string.substring(Class274.aClass274_3531.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3532.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3531.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3532.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 2;
-                    string = string.substring(Class274.aClass274_3532.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3533.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3532.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3533.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 3;
-                    string = string.substring(Class274.aClass274_3533.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3534.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3533.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3534.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 4;
-                    string = string.substring(Class274.aClass274_3534.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3535.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3534.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3535.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 5;
-                    string = string.substring(Class274.aClass274_3535.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3536.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3535.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3536.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 6;
-                    string = string.substring(Class274.aClass274_3536.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3537.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3536.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3537.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 7;
-                    string = string.substring(Class274.aClass274_3537.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3538.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3537.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3538.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 8;
-                    string = string.substring(Class274.aClass274_3538.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3539.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3538.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3539.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 9;
-                    string = string.substring(Class274.aClass274_3539.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3540.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3539.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3540.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 10;
-                    string = string.substring(Class274.aClass274_3540.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3540.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3541.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_241_ = 11;
-                    string = string.substring(Class274.aClass274_3541.method2063(Class348_Sub33.anInt6967, 544).length());
+                    string = string.substring(LocalisedText.aClass274_3541.method2063(Class348_Sub33.anInt6967, 544).length());
                 }
             }
             string_240_ = string.toLowerCase();
             int i_242_ = 0;
-            if (string_240_.startsWith(Class274.aClass274_3542.method2063(0, 544))) {
+            if (string_240_.startsWith(LocalisedText.aClass274_3542.method2063(0, 544))) {
                 i_242_ = 1;
-                string = string.substring(Class274.aClass274_3542.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3543.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3542.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3543.method2063(0, 544))) {
                 i_242_ = 2;
-                string = string.substring(Class274.aClass274_3543.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3544.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3543.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3544.method2063(0, 544))) {
                 i_242_ = 3;
-                string = string.substring(Class274.aClass274_3544.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3545.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3544.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3545.method2063(0, 544))) {
                 i_242_ = 4;
-                string = string.substring(Class274.aClass274_3545.method2063(0, 544).length());
-            } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(0, 544))) {
+                string = string.substring(LocalisedText.aClass274_3545.method2063(0, 544).length());
+            } else if (string_240_.startsWith(LocalisedText.aClass274_3546.method2063(0, 544))) {
                 i_242_ = 5;
-                string = string.substring(Class274.aClass274_3546.method2063(0, 544).length());
+                string = string.substring(LocalisedText.aClass274_3546.method2063(0, 544).length());
             } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3542.method2063(Class348_Sub33.anInt6967, 544))) {
+                if (string_240_.startsWith(LocalisedText.aClass274_3542.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_242_ = 1;
-                    string = string.substring(Class274.aClass274_3542.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3543.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3542.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3543.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_242_ = 2;
-                    string = string.substring(Class274.aClass274_3543.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3544.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3543.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3544.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_242_ = 3;
-                    string = string.substring(Class274.aClass274_3544.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3545.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3544.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3545.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_242_ = 4;
-                    string = string.substring(Class274.aClass274_3545.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(LocalisedText.aClass274_3545.method2063(Class348_Sub33.anInt6967, 544).length());
+                } else if (string_240_.startsWith(LocalisedText.aClass274_3546.method2063(Class348_Sub33.anInt6967, 544))) {
                     i_242_ = 5;
-                    string = string.substring(Class274.aClass274_3546.method2063(Class348_Sub33.anInt6967, 544).length());
+                    string = string.substring(LocalisedText.aClass274_3546.method2063(Class348_Sub33.anInt6967, 544).length());
                 }
             }
             anInt1158++;
@@ -3633,7 +3633,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 3103) {
-                    Class274.method2060((byte) -101, true);
+                    LocalisedText.method2060((byte) -101, true);
                     return;
                 }
                 if (i == 3104) {
@@ -4231,7 +4231,7 @@ final class Class66 {
                 if (i == 3622) {
                     int i_367_ = anIntArray1149[--anInt1173];
                     if (Class125.anInt4930 != 0 && i_367_ < Class348_Sub42_Sub12.anInt9604) {
-                        aStringArray1152[anInt1170++] = Class51.aStringArray932[i_367_];
+                        aStringArray1152[anInt1170++] = LocType.aStringArray932[i_367_];
                         if (Class348_Sub40_Sub21.aStringArray9275[i_367_] != null) aStringArray1152[anInt1170++] = (Class348_Sub40_Sub21.aStringArray9275[i_367_]);
                         else aStringArray1152[anInt1170++] = "";
                     } else {
@@ -5074,7 +5074,7 @@ final class Class66 {
                 String string = exception.getMessage();
                 if (string != null && string.length() > 0) stringbuffer.append("Message: ").append(string).append("\n");
                 Class156.method1242(stringbuffer.toString(), exception, 15004);
-                Applet_Sub1.method94(stringbuffer.toString(), 90);
+                GameShell.method94(stringbuffer.toString(), 90);
             }
         }
     }

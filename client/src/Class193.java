@@ -14,7 +14,7 @@ final class Class193 {
     static Class202 aClass202_2589;
     static int anInt2590;
 
-    static final Class279 method1439(int i, Class297 class297, Component component, int i_0_, int i_1_) {
+    static final Class279 method1439(int i, SignLink class297, Component component, int i_0_, int i_1_) {
         try {
             anInt2583++;
             if (Class22.anInt339 == 0) throw new IllegalStateException();

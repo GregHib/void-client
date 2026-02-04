@@ -36,7 +36,7 @@ final class Class286_Sub2 extends Class286 {
         } while (false);
     }
 
-    Class286_Sub2(ha_Sub2 var_ha_Sub2) {
+    Class286_Sub2(GlToolkit var_ha_Sub2) {
         super(var_ha_Sub2);
     }
 

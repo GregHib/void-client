@@ -65,12 +65,12 @@ final class Class239_Sub14 extends Class239 {
         anInt5983++;
         if (Class348_Sub31.anInt6923 == -1) return 1;
         if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) {
-            Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), true, i);
+            Class258_Sub3_Sub1.method1971(-2, LocalisedText.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), true, i);
             if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) return -1;
         }
         try {
             Dimension dimension = Class305.aCanvas3869.getSize();
-            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
+            Class362.method3511(true, GameShell.aClass324_20, Class246.aClass143_3179, LocalisedText.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
             Class124 class124 = Class300.method2277(0, aa_Sub3.aClass45_5207, Class348_Sub31.anInt6923, -1);
             long l = Class62.method599(-88);
             Class348_Sub8.aHa6654.la();

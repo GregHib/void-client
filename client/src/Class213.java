@@ -174,7 +174,7 @@ final class Class213 {
                 for (int i_11_ = 0; i_11_ < 4; i_11_++)
                     this.aStringArray2763[i_11_] = class213_9_.aStringArray2763[i_11_];
             }
-            this.aStringArray2763[4] = Class274.aClass274_3489.method2063((this.aClass255_2761.anInt3286), 544);
+            this.aStringArray2763[4] = LocalisedText.aClass274_3489.method2063((this.aClass255_2761.anInt3286), 544);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("rq.G(" + (class213_9_ != null ? "{...}" : "null") + ',' + i + ',' + (class213_10_ != null ? "{...}" : "null") + ')'));
         }
@@ -184,8 +184,8 @@ final class Class213 {
         anInt2816++;
         if (i_12_ != -11619) this.anInt2788 = -113;
         if (i < 100000) return "<col=ffff00>" + i + "</col>";
-        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + Class274.aClass274_3519.method2063((this.aClass255_2761.anInt3286), 544) + "</col>");
-        return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517.method2063((this.aClass255_2761.anInt3286), 544) + "</col>");
+        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + LocalisedText.aClass274_3519.method2063((this.aClass255_2761.anInt3286), 544) + "</col>");
+        return ("<col=00ff80>" + i / 1000000 + LocalisedText.aClass274_3517.method2063((this.aClass255_2761.anInt3286), 544) + "</col>");
     }
 
     final Class124 method1558(boolean bool, boolean bool_13_) {

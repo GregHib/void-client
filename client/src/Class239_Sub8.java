@@ -177,13 +177,13 @@ final class Class239_Sub8 extends Class239 {
         if (bool != true) method1754(false, 115, 112, -104);
         int i_14_ = -2;
         int i_15_ = 2147483647;
-        int i_16_ = i_12_ - Class75.anInt1266;
-        int i_17_ = i_13_ - Class75.anInt1263;
-        for (Class348_Sub21 class348_sub21 = (Class348_Sub21) Class75.aClass262_1254.method1995(4); class348_sub21 != null; class348_sub21 = (Class348_Sub21) Class75.aClass262_1254.method1990((byte) 113)) {
+        int i_16_ = i_12_ - WorldMap.anInt1266;
+        int i_17_ = i_13_ - WorldMap.anInt1263;
+        for (Class348_Sub21 class348_sub21 = (Class348_Sub21) WorldMap.aClass262_1254.method1995(4); class348_sub21 != null; class348_sub21 = (Class348_Sub21) WorldMap.aClass262_1254.method1990((byte) 113)) {
             if (class348_sub21.anInt6847 == i) {
                 int i_18_ = class348_sub21.anInt6852;
                 int i_19_ = class348_sub21.anInt6851;
-                int i_20_ = (i_19_ - -Class75.anInt1263 | Class75.anInt1266 + i_18_ << 14);
+                int i_20_ = (i_19_ - -WorldMap.anInt1263 | WorldMap.anInt1266 + i_18_ << 14);
                 int i_21_ = ((-i_19_ + i_17_) * (-i_19_ + i_17_) + (i_16_ - i_18_) * (-i_18_ + i_16_));
                 if (i_14_ < 0 || i_15_ > i_21_) {
                     i_15_ = i_21_;

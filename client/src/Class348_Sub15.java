@@ -34,8 +34,8 @@ final class Class348_Sub15 extends Class348 {
             Class244.anInt4609 = -1;
             Class48.anInt859 = -1;
         }
-        if (Class348_Sub36.anInt6992 > Class75.anInt1259) {
-            Class348_Sub36.anInt6992 = Class75.anInt1259;
+        if (Class348_Sub36.anInt6992 > WorldMap.anInt1259) {
+            Class348_Sub36.anInt6992 = WorldMap.anInt1259;
             Class48.anInt859 = -1;
             Class244.anInt4609 = -1;
         }
@@ -44,8 +44,8 @@ final class Class348_Sub15 extends Class348 {
             Class245.anInt3170 = 0;
             Class244.anInt4609 = -1;
         }
-        if (Class75.anInt1267 < Class245.anInt3170) {
-            Class245.anInt3170 = Class75.anInt1267;
+        if (WorldMap.anInt1267 < Class245.anInt3170) {
+            Class245.anInt3170 = WorldMap.anInt1267;
             Class244.anInt4609 = -1;
             Class48.anInt859 = -1;
         }

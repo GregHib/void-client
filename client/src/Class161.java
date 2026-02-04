@@ -65,7 +65,7 @@ final class Class161 {
         if (i > 46) anIntArray2145 = null;
     }
 
-    final Class144 method1262(Class297 class297, byte i) {
+    final Class144 method1262(SignLink class297, byte i) {
         if (i != 36) method1258(-105, -70, -80);
         anInt2144++;
         return class297.method2235(aBoolean2139, (aBoolean2146 ? this.anInt2138 : this.anInt2148), this.aString2147, i ^ 0x6e65);

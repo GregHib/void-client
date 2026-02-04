@@ -134,13 +134,13 @@ final class Class84 {
     }
 
     static final void method826(int i, int i_24_, int i_25_, int i_26_, int i_27_, int i_28_, ha var_ha) {
-        if ((Class174.aClass105_2309 == null || Class348_Sub42_Sub15.aClass105_9658 == null || Class348_Sub42_Sub15.aClass105_9659 == null) && Class21.aClass45_322.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.aClass45_322.method421(false, Class313.anInt3937) && Class21.aClass45_322.method421(false, Class79.anInt1387)) {
+        if ((Class174.aClass105_2309 == null || Class348_Sub42_Sub15.aClass105_9658 == null || Class348_Sub42_Sub15.aClass105_9659 == null) && Class21.aClass45_322.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.aClass45_322.method421(false, Class313.anInt3937) && Class21.aClass45_322.method421(false, NPCType.anInt1387)) {
             Class207 class207 = Class207.method1521(Class21.aClass45_322, Class313.anInt3937, 0);
             Class348_Sub42_Sub15.aClass105_9658 = var_ha.method3691(class207, true);
             class207.method1518();
             Class309.aClass105_4808 = var_ha.method3691(class207, true);
             Class174.aClass105_2309 = (var_ha.method3691(Class207.method1521(Class21.aClass45_322, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true));
-            Class207 class207_29_ = Class207.method1521(Class21.aClass45_322, Class79.anInt1387, 0);
+            Class207 class207_29_ = Class207.method1521(Class21.aClass45_322, NPCType.anInt1387, 0);
             Class348_Sub42_Sub15.aClass105_9659 = var_ha.method3691(class207_29_, true);
             class207_29_.method1518();
             Class110.aClass105_1706 = var_ha.method3691(class207_29_, true);

@@ -18,7 +18,7 @@ final class Class83 {
         aStringArray1441 = null;
     }
 
-    Class83(ha_Sub2 var_ha_Sub2) {
+    Class83(GlToolkit var_ha_Sub2) {
         this.aClass258_Sub1_1440 = null;
         this.aClass258_Sub3Array1448 = null;
         this.aBoolean1442 = var_ha_Sub2.aBoolean7831;

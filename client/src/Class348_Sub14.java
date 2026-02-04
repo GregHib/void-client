@@ -82,7 +82,7 @@ final class Class348_Sub14 extends Class348 {
                     for (int i_10_ = i; i_10_ <= 3; i_10_++) {
                         if (Class58.method536(i_9_, false, i_8_, i, i_10_)) {
                             int i_11_ = i_10_;
-                            if (Class79.method802(i_9_, i_8_, true)) i_11_--;
+                            if (NPCType.method802(i_9_, i_8_, true)) i_11_--;
                             if (i_11_ >= 0) bool_7_ &= Class14_Sub2.method245(i_11_, i_8_, i_9_, (byte) 75);
                         }
                     }
@@ -132,7 +132,7 @@ final class Class348_Sub14 extends Class348 {
                                     int i_30_ = i_28_ + i_17_;
                                     if (i_5_ <= i_29_ && i_6_ <= i_30_ && Class58.method536(i_30_, false, i_29_, i, i_24_)) {
                                         int i_31_ = i_24_;
-                                        if (Class79.method802(i_30_, i_29_, true)) i_31_--;
+                                        if (NPCType.method802(i_30_, i_29_, true)) i_31_--;
                                         if (i_31_ >= 0) Class348_Sub41.method3159(i_14_, ((-i_28_ + (RuntimeException_Sub1.anInt4600)) * 4 + i_19_ + -4), false, i_31_, i_30_, i_29_, var_ha, 4 * i_27_ + i_18_, i_13_);
                                     }
                                 }
@@ -174,13 +174,13 @@ final class Class348_Sub14 extends Class348 {
                                 if (interface10 == null) interface10 = ((Interface10) r_Sub2.method3297(i_39_, i_37_, i_38_));
                                 if (interface10 == null) interface10 = ((Interface10) (Class348_Sub40_Sub32.method3135(i_39_, i_37_, i_38_)));
                                 if (interface10 != null) {
-                                    Class51 class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-99)));
+                                    LocType class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-99)));
                                     if (!class51.aBoolean942 || Class130.aBoolean1900) {
                                         int i_40_ = class51.anInt921;
                                         if (class51.anIntArray945 != null) {
                                             for (int i_41_ = 0; ((class51.anIntArray945).length > i_41_); i_41_++) {
                                                 if ((class51.anIntArray945[i_41_]) != -1) {
-                                                    Class51 class51_42_ = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (class51.anIntArray945[i_41_])));
+                                                    LocType class51_42_ = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (class51.anIntArray945[i_41_])));
                                                     if (class51_42_.anInt921 >= 0) i_40_ = (class51_42_.anInt921);
                                                 }
                                             }

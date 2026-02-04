@@ -14,7 +14,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
     static int anInt8704;
     static int anInt8705;
     static Class351 aClass351_8706 = new Class351(79, 3);
-    private ha_Sub2 aHa_Sub2_8707;
+    private GlToolkit aHa_Sub2_8707;
 
     final boolean method2261(Class258_Sub2 class258_sub2, float f, int i, Class258_Sub2 class258_sub2_0_) {
         try {
@@ -214,7 +214,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
         aClass351_8706 = null;
     }
 
-    Class299_Sub1_Sub2(ha_Sub2 var_ha_Sub2, int i) {
+    Class299_Sub1_Sub2(GlToolkit var_ha_Sub2, int i) {
         aHa_Sub2_8707 = var_ha_Sub2;
         aClass258_Sub2_8701 = new Class258_Sub2(var_ha_Sub2, 6408, i);
     }

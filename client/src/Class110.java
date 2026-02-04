@@ -60,7 +60,7 @@ abstract class Class110 {
         return (0x8 & this.anInt1708) != 0;
     }
 
-    static final void method1034(int i, Class348_Sub49 class348_sub49, Class297 class297, int i_5_) {
+    static final void method1034(int i, Class348_Sub49 class348_sub49, SignLink class297, int i_5_) {
         try {
             anInt1710++;
             Class348_Sub48 class348_sub48 = new Class348_Sub48();

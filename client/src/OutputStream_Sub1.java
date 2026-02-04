@@ -105,7 +105,7 @@ final class OutputStream_Sub1 extends OutputStream {
                 Class369_Sub1.method3570(false);
                 if (Class240.anInt4674 == 10) {
                     Class19.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256);
-                    ha_Sub2.method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256);
+                    GlToolkit.method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256);
                     Class318_Sub1_Sub1_Sub2.method2403(i_1_, 256, i_3_, i_0_, 19206, i_2_, 256);
                     Class166.method1289(i_2_, i_0_, i_3_, 8, i_1_);
                 }
@@ -115,10 +115,10 @@ final class OutputStream_Sub1 extends OutputStream {
                 Class5.anInt4638 = i_12_;
                 Class305.anInt3855 = i_9_;
                 Class59_Sub2_Sub2.anInt8685 = i_10_;
-                if (Class238_Sub1.aBoolean5840 && Class348_Sub4.aClass248_6601.method1902(4) == 0) Class238_Sub1.aBoolean5840 = false;
+                if (Class238_Sub1.aBoolean5840 && SystemInfo.aClass248_6601.method1902(4) == 0) Class238_Sub1.aBoolean5840 = false;
                 if (Class238_Sub1.aBoolean5840) {
                     Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
-                    Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
+                    Class362.method3511(false, GameShell.aClass324_20, Class246.aClass143_3179, (LocalisedText.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
                 }
                 Class226.method1626(1, false);
             }

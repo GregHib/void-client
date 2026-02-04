@@ -118,13 +118,13 @@ final class Class367_Sub2 extends Class367 {
             if (string_8_ != null) {
                 if (bool != true) method3536(9, 65, -72, 107, null);
                 for (int i = 0; (Class348_Sub42_Sub12.anInt9604 > i); i++) {
-                    String string_9_ = Class51.aStringArray932[i];
+                    String string_9_ = LocType.aStringArray932[i];
                     if (string_9_.startsWith("*")) string_9_ = string_9_.substring(1);
                     string_9_ = Class285_Sub1.method2127(2, string_9_);
                     if (string_9_ != null && string_9_.equals(string_8_)) {
                         Class348_Sub42_Sub12.anInt9604--;
                         for (int i_10_ = i; Class348_Sub42_Sub12.anInt9604 > i_10_; i_10_++) {
-                            Class51.aStringArray932[i_10_] = Class51.aStringArray932[i_10_ + 1];
+                            LocType.aStringArray932[i_10_] = LocType.aStringArray932[i_10_ + 1];
                             Class122.aStringArray1808[i_10_] = Class122.aStringArray1808[1 + i_10_];
                             Class348_Sub40_Sub21.aStringArray9275[i_10_] = (Class348_Sub40_Sub21.aStringArray9275[1 + i_10_]);
                             aa_Sub2.aStringArray5197[i_10_] = aa_Sub2.aStringArray5197[1 + i_10_];

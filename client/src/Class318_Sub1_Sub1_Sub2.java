@@ -84,7 +84,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
     private final Class2 method2401(ha var_ha, int i, boolean bool, int i_4_) {
         anInt9985++;
         if (i_4_ != 22) method2404(null, -21, -25);
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, aShort9991 & 0xffff);
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, aShort9991 & 0xffff);
         s var_s;
         s var_s_5_;
         if (aBoolean9983) {
@@ -233,7 +233,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
         return null;
     }
 
-    Class318_Sub1_Sub1_Sub2(ha var_ha, Class51 class51, int i, int i_20_, int i_21_, int i_22_, int i_23_, boolean bool, int i_24_, boolean bool_25_) {
+    Class318_Sub1_Sub1_Sub2(ha var_ha, LocType class51, int i, int i_20_, int i_21_, int i_22_, int i_23_, boolean bool, int i_24_, boolean bool_25_) {
         super(i_21_, i_22_, i_23_, i, i_20_, class51.anInt930);
         do {
             try {

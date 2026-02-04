@@ -16,7 +16,7 @@ abstract class Class314 {
 
     abstract int method2335(int i, int i_0_);
 
-    static final void method2336(Class51 class51, int i, int i_1_, int i_2_, int i_3_) {
+    static final void method2336(LocType class51, int i, int i_1_, int i_2_, int i_3_) {
         anInt3940++;
         if (i_3_ > -126) anInt3941 = 15;
         for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1995(4); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1990((byte) 123)) {

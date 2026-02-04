@@ -18,7 +18,7 @@ final class Class341 {
 
     static final void method2676(int i, int i_0_, int i_1_, byte i_2_, int i_3_) {
         anInt4231++;
-        float f = (float) Class75.anInt1267 / (float) Class75.anInt1259;
+        float f = (float) WorldMap.anInt1267 / (float) WorldMap.anInt1259;
         int i_4_ = i;
         int i_5_ = i_0_;
         if (f < 1.0F) i_5_ = (int) (f * (float) i);
@@ -26,8 +26,8 @@ final class Class341 {
         i_1_ -= (i + -i_4_) / 2;
         i_3_ -= (i_0_ + -i_5_) / 2;
         Class48.anInt859 = -1;
-        Class245.anInt3170 = -(Class75.anInt1267 * i_3_ / i_5_) + Class75.anInt1267;
-        Class348_Sub36.anInt6992 = Class75.anInt1259 * i_1_ / i_4_;
+        Class245.anInt3170 = -(WorldMap.anInt1267 * i_3_ / i_5_) + WorldMap.anInt1267;
+        Class348_Sub36.anInt6992 = WorldMap.anInt1259 * i_1_ / i_4_;
         Class244.anInt4609 = -1;
         int i_6_ = 50 / ((-12 - i_2_) / 40);
         Class348_Sub15.method2811(false);
@@ -95,7 +95,7 @@ final class Class341 {
                 Class71.aClass76_1208.method775((byte) 69);
                 Class318_Sub1_Sub3_Sub3.method2433();
                 Class50_Sub2.method464(i + -9865);
-                Class274.method2061(-127);
+                LocalisedText.method2061(-127);
                 Class363.method3513(-113);
                 Class239_Sub14.method1779((byte) 124);
                 if (Class259.aClass305_3304 != null) Class259.aClass305_3304.method2295((byte) 96);

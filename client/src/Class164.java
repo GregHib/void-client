@@ -44,7 +44,7 @@ final class Class164 {
             }
         }
         if (Class56.aClass56_1023 == Class348_Sub42_Sub15.aClass56_9660) {
-            if (Class175.aClass340_2327 == null) Class175.aClass340_2327 = new Class340(Class348_Sub4.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657);
+            if (Class175.aClass340_2327 == null) Class175.aClass340_2327 = new Class340(SystemInfo.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657);
             if (!Class175.aClass340_2327.method2674(7)) return 0;
             Class348_Sub23.method2965(null, 0, true, 0);
             Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((byte) -63);
@@ -180,7 +180,7 @@ final class Class164 {
             Class229.aClass194_2981 = new Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926);
             Class269.aClass217_3453 = new Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class65.method699(Class104.aClass45_1627, (byte) -100, Class348_Sub35.aClass45_6980, Class21.aClass45_322, aa_Sub3.aClass45_5207);
-            Applet_Sub1.method85(0, Class262.aClass45_3323);
+            GameShell.method85(0, Class262.aClass45_3323);
             Class200.aClass226_2639 = new Class226(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434);
             Class239_Sub6.aClass355_5900 = new Class355(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434, new Class28());
             Class150.method1202(0);
@@ -197,7 +197,7 @@ final class Class164 {
                 /* empty */
             }
             Class348_Sub8.aClass241_6660 = Class229.method1631(false);
-            Class348_Sub40_Sub20.aClass348_Sub4_9264 = new Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992);
+            Class348_Sub40_Sub20.aClass348_Sub4_9264 = new SystemInfo(true, Class348_Sub23_Sub1.aClass297_8992);
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
             int i_11_ = (Class348_Sub22.method2958(22388, Class21.aClass45_322) + Class348_Sub49_Sub2.method3405(2012104999, true));
@@ -205,7 +205,7 @@ final class Class164 {
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_;
         }
         if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660)
-            Class75.method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aClass153_9031, Class2.aClass141_117, Class318_Sub1_Sub3_Sub3.aClass170_10209);
+            WorldMap.method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aClass153_9031, Class2.aClass141_117, Class318_Sub1_Sub3_Sub3.aClass170_10209);
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (new int[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
@@ -237,7 +237,7 @@ final class Class164 {
             Class78.aClass45_1322.anInt634 = 2;
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1040) {
-            if (!Class320.method2547(Class285.anInt4737, (byte) 84)) return 0;
+            if (!InterfaceList.method2547(Class285.anInt4737, (byte) 84)) return 0;
             boolean bool = true;
             for (int i_14_ = 0; i_14_ < (Class348_Sub40_Sub33.aClass46ArrayArray9427[Class285.anInt4737]).length; i_14_++) {
                 Class46 class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427[Class285.anInt4737][i_14_]);
@@ -247,7 +247,7 @@ final class Class164 {
         }
         if (Class56.aClass56_1041 == Class348_Sub42_Sub15.aClass56_9660) Class348_Sub42_Sub8.method3198(true, (byte) -45);
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1042) {
-            Class51.aClass311_897.method2319((byte) -56);
+            LocType.aClass311_897.method2319((byte) -56);
             try {
                 Class348_Sub32.aThread6946.join();
             } catch (InterruptedException interruptedexception) {
@@ -255,7 +255,7 @@ final class Class164 {
             }
             Class186_Sub1.aClass111_5813 = null;
             Class348_Sub40_Sub17_Sub1.aClass45_10426 = null;
-            Class51.aClass311_897 = null;
+            LocType.aClass311_897 = null;
             Class182.anInterface16Array2447 = null;
             Class348_Sub32.aThread6946 = null;
             Class286_Sub7.aClass45_6277 = null;

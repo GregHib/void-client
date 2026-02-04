@@ -166,13 +166,13 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
     }
 
     static final void method3402(byte i) {
-        if (Class297.aString3782.toLowerCase().indexOf("microsoft") == -1) {
+        if (SignLink.aString3782.toLowerCase().indexOf("microsoft") == -1) {
             Class285_Sub2.anIntArray8507[46] = 72;
             Class285_Sub2.anIntArray8507[92] = 74;
             Class285_Sub2.anIntArray8507[44] = 71;
             Class285_Sub2.anIntArray8507[61] = 27;
             Class285_Sub2.anIntArray8507[91] = 42;
-            if (Class297.aMethod3783 == null) {
+            if (SignLink.aMethod3783 == null) {
                 Class285_Sub2.anIntArray8507[192] = 58;
                 Class285_Sub2.anIntArray8507[222] = 59;
             } else {

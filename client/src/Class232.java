@@ -5,7 +5,7 @@
 final class Class232 {
     private Class258_Sub3 aClass258_Sub3_2998;
     private final Class104 aClass104_2999;
-    private final ha_Sub2 aHa_Sub2_3000;
+    private final GlToolkit aHa_Sub2_3000;
     private Interface8 anInterface8_3001;
     private final int anInt3002;
     private final int anInt3003;
@@ -55,7 +55,7 @@ final class Class232 {
         class348_sub42_sub15.method3251(-16058);
     }
 
-    Class232(ha_Sub2 var_ha_Sub2, Class104 class104, s_Sub2 var_s_Sub2, int i, int i_4_, int i_5_, int i_6_, int i_7_) {
+    Class232(GlToolkit var_ha_Sub2, Class104 class104, s_Sub2 var_s_Sub2, int i, int i_4_, int i_5_, int i_6_, int i_7_) {
         try {
             aHa_Sub2_3000 = var_ha_Sub2;
             aClass104_2999 = class104;

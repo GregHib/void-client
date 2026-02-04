@@ -119,7 +119,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return false;
     }
 
-    static final Frame method2463(int i, int i_6_, Class297 class297, int i_7_, int i_8_, int i_9_) {
+    static final Frame method2463(int i, int i_6_, SignLink class297, int i_7_, int i_8_, int i_9_) {
         anInt10344++;
         if (!class297.method2247(-4)) return null;
         if (i_7_ == 0) {
@@ -159,20 +159,20 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     var_ha.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
                     var_ha.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
                     var_ha.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
-                    Class262.aClass324_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_);
+                    Class262.aClass324_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), LocalisedText.aClass274_3501.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_);
                 } else {
-                    int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
-                    int i_19_ = ((int) ((float) i_13_ / Class75.aFloat1247) + Class245.anInt3170);
-                    int i_20_ = ((int) ((float) i_12_ / Class75.aFloat1247) + Class348_Sub36.anInt6992);
-                    Class59_Sub1_Sub2.anInt8665 = Class245.anInt3170 + -(int) ((float) i_13_ / Class75.aFloat1247);
-                    Class368.anInt4509 = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
-                    int i_21_ = (Class245.anInt3170 + -(int) ((float) i_13_ / Class75.aFloat1247));
-                    Class182.anInt2446 = (int) ((float) (2 * i_13_) / Class75.aFloat1247);
-                    Class25.anInt370 = (int) ((float) (i_12_ * 2) / Class75.aFloat1247);
-                    Class75.method751(i_18_ + Class75.anInt1266, i_19_ + Class75.anInt1263, i_20_ - -Class75.anInt1266, Class75.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1);
-                    Class75.method748(var_ha);
+                    int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / WorldMap.aFloat1247));
+                    int i_19_ = ((int) ((float) i_13_ / WorldMap.aFloat1247) + Class245.anInt3170);
+                    int i_20_ = ((int) ((float) i_12_ / WorldMap.aFloat1247) + Class348_Sub36.anInt6992);
+                    Class59_Sub1_Sub2.anInt8665 = Class245.anInt3170 + -(int) ((float) i_13_ / WorldMap.aFloat1247);
+                    Class368.anInt4509 = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / WorldMap.aFloat1247));
+                    int i_21_ = (Class245.anInt3170 + -(int) ((float) i_13_ / WorldMap.aFloat1247));
+                    Class182.anInt2446 = (int) ((float) (2 * i_13_) / WorldMap.aFloat1247);
+                    Class25.anInt370 = (int) ((float) (i_12_ * 2) / WorldMap.aFloat1247);
+                    WorldMap.method751(i_18_ + WorldMap.anInt1266, i_19_ + WorldMap.anInt1263, i_20_ - -WorldMap.anInt1266, WorldMap.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1);
+                    WorldMap.method748(var_ha);
                     if (i != -7) method2462(63, -7, -14);
-                    Class262 class262 = Class75.method758(var_ha);
+                    Class262 class262 = WorldMap.method758(var_ha);
                     Class309.method2312(-13084, 0, class262, 0, var_ha);
                     if (Class367_Sub9.anInt7379 > 0) {
                         Class164.anInt2173--;
@@ -184,13 +184,13 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     if (!Class298.aBoolean3811) break;
                     int i_22_ = -5 + i_11_ + i_12_;
                     int i_23_ = -8 + i_13_ + i_14_;
-                    Applet_Sub1.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
+                    GameShell.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
                     i_23_ -= 15;
                     Runtime runtime = Runtime.getRuntime();
                     int i_24_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
                     int i_25_ = 16776960;
                     if (i_24_ > 65536) i_25_ = 16711680;
-                    Applet_Sub1.aClass324_20.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1);
+                    GameShell.aClass324_20.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1);
                     i_23_ -= 15;
                 }
             } catch (RuntimeException runtimeexception) {

@@ -7,7 +7,7 @@ final class Class100 {
     private int anInt1578;
     static Class78[] aClass78Array1579 = new Class78[37];
     static int anInt1580;
-    private final ha_Sub2 aHa_Sub2_1581;
+    private final GlToolkit aHa_Sub2_1581;
     private Class83 aClass83_1582;
     static int[] anIntArray1583 = new int[14];
     private int anInt1584 = 0;
@@ -93,7 +93,7 @@ final class Class100 {
         return aClass286Array1588[i_8_].method2137(-112);
     }
 
-    Class100(ha_Sub2 var_ha_Sub2) {
+    Class100(GlToolkit var_ha_Sub2) {
         anInt1578 = 0;
         anInt1592 = 0;
         aHa_Sub2_1581 = var_ha_Sub2;

@@ -22,7 +22,7 @@ final class Class237_Sub1 extends Class237 {
             anInt5823++;
             if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i_3_ ^ ~0x7e6f) != 0 || Class58.method536(i_5_, false, i, Class167.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_;
-                Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_1_);
+                LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_1_);
                 if (Class316.aClass348_Sub51_3959.aClass239_Sub24_7235.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     int i_8_;
                     int i_9_;
@@ -468,7 +468,7 @@ final class Class237_Sub1 extends Class237 {
                     int i_88_ = i_87_ >> 2;
                     int i_89_ = i_87_ & 0x3;
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
-                        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_80_);
+                        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_80_);
                         int i_90_ = Class249.method1908(0x7 & i_84_, i_85_ & 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_;
                         int i_91_ = i_76_ + Class111.method1045(0x7 & i_85_, (class51.anInt926), i_89_, (class51.anInt961), i_84_ & 0x7, i_73_, (byte) 16);
                         if (i_90_ > 0 && i_91_ > 0 && i_90_ < -1 + this.anInt3117 && -1 + this.anInt3114 > i_91_) {
@@ -505,7 +505,7 @@ final class Class237_Sub1 extends Class237 {
                     Interface10 interface10 = method1690(i, i_95_, i_94_, i_93_, 30987);
                     if (i_96_ <= 66) anInt5819 = -107;
                     if (interface10 == null) break while_77_;
-                    Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-89));
+                    LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-89));
                     int i_97_ = interface10.method39(-128);
                     int i_98_ = interface10.method41(-32228);
                     if (class51.method474((byte) -50)) Class314.method2336(class51, i_94_, i_95_, i_93_, -128);

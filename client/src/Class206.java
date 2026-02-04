@@ -24,7 +24,7 @@ final class Class206 implements Interface11 {
     static int anInt4880;
     static int anInt4881;
     private int anInt4882;
-    private final ha_Sub2 aHa_Sub2_4883;
+    private final GlToolkit aHa_Sub2_4883;
     private int anInt4884;
     static int anInt4885;
     private int anInt4886;
@@ -155,7 +155,7 @@ final class Class206 implements Interface11 {
             Class209.aClass348_Sub16_Sub3_2718 = null;
         } else if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !Class167.method1296(true)) {
             Class318.anInt3973++;
-            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(ha_Sub2.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107);
+            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(GlToolkit.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 118, Class267.anInt3428);
             Class348_Sub42_Sub14.method3243(-54, class348_sub47);
             Class267.anInt3428 = -1;
@@ -275,7 +275,7 @@ final class Class206 implements Interface11 {
         super.finalize();
     }
 
-    Class206(ha_Sub2 var_ha_Sub2) {
+    Class206(GlToolkit var_ha_Sub2) {
         anInt4872 = 0;
         anInt4873 = -1;
         if (!var_ha_Sub2.aBoolean7820) throw new IllegalStateException("");

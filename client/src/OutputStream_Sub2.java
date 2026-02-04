@@ -59,13 +59,13 @@ final class OutputStream_Sub2 extends OutputStream {
                     Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480((int) class348_sub42_sub12.aLong9605, -6008)));
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
-                        Class79 class79 = (npc.aClass79_10505);
+                        NPCType class79 = (npc.aClass79_10505);
                         if (class79.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
                         if (class79 != null) is = class79.anIntArray1342;
                     }
                 } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                     Object object = null;
-                    Class51 class51;
+                    LocType class51;
                     if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
                     else class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (0x7fffffffL & (class348_sub42_sub12.aLong9605) >>> 32)));
                     if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47);

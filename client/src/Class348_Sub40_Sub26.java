@@ -77,7 +77,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         Class129.aByteArrayArray1887 = new byte[i_18_][];
         aa_Sub1.anIntArray5192 = new int[i_18_];
         Class14_Sub4.aByteArrayArray8642 = new byte[i_18_][];
-        Applet_Sub1.anIntArray38 = new int[i_18_];
+        GameShell.anIntArray38 = new int[i_18_];
         Class348_Sub50.aByteArrayArray7212 = null;
         r.anIntArray9724 = new int[i_18_];
         Class322.anIntArray4031 = null;
@@ -90,7 +90,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
             for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8; (i_22_ <= ((Class348_Sub40_Sub3.anInt9109 >> 4) + i_16_) / 8); i_22_++) {
                 Class348_Sub23_Sub3.anIntArray9042[i_18_] = i_22_ + (i_21_ << 8);
                 aa_Sub1.anIntArray5192[i_18_] = Class367_Sub10.aClass45_7382.method417("m" + i_21_ + "_" + i_22_, 0);
-                Applet_Sub1.anIntArray38[i_18_] = Class367_Sub10.aClass45_7382.method417("l" + i_21_ + "_" + i_22_, 0);
+                GameShell.anIntArray38[i_18_] = Class367_Sub10.aClass45_7382.method417("l" + i_21_ + "_" + i_22_, 0);
                 Class295.anIntArray3759[i_18_] = Class367_Sub10.aClass45_7382.method417("um" + i_21_ + "_" + i_22_, 0);
                 r.anIntArray9724[i_18_] = Class367_Sub10.aClass45_7382.method417("ul" + i_21_ + "_" + i_22_, 0);
                 i_18_++;

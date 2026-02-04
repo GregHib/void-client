@@ -217,7 +217,7 @@ final class Class262 {
         try {
             anInt3324++;
             if (i != 3) method1992(null, -40, 69, -1);
-            return new ha_Sub2(canvas, var_d, i_23_);
+            return new GlToolkit(canvas, var_d, i_23_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("uh.D(" + i + ',' + i_23_ + ',' + (canvas != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ')'));
         }

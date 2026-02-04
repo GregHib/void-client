@@ -23,7 +23,7 @@ final class Class77 {
         anInt1297++;
         if (i_1_ != 65536) method780(-106, -24, 57);
         boolean bool = ((i & 0x37) != 0 ? Class126.method1113(i_0_, i, -7) : Class348_Sub42_Sub8_Sub2.method3200(i_0_, i, (byte) 111));
-        return bool | (Class274.method2058(i_0_, i, i_1_ ^ 0x1003d) | (0x10000 & i_0_) != 0);
+        return bool | (LocalisedText.method2058(i_0_, i, i_1_ ^ 0x1003d) | (0x10000 & i_0_) != 0);
     }
 
     private Class77() {

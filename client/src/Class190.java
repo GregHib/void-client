@@ -60,10 +60,10 @@ final class Class190 {
             int i_9_ = 2147483647;
             int i_10_ = -2147483648;
             if (class42.anIntArray591 != null) {
-                i_8_ = (Class75.anInt1272 + ((-Class75.anInt1274 + (class348_sub21.anInt6852 + class42.anInt595)) * (Class75.anInt1276 - Class75.anInt1272) / (-Class75.anInt1274 + Class75.anInt1265)));
-                i_9_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class42.anInt570 + (class348_sub21.anInt6851 - Class75.anInt1257)) / (Class75.anInt1277 + -Class75.anInt1257)) + Class75.anInt1268);
-                i_10_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class348_sub21.anInt6851 + (class42.anInt607 + -Class75.anInt1257)) / (Class75.anInt1277 - Class75.anInt1257)) + Class75.anInt1268);
-                i_7_ = (((-Class75.anInt1272 + Class75.anInt1276) * (-Class75.anInt1274 + class348_sub21.anInt6852 + class42.anInt603) / (-Class75.anInt1274 + Class75.anInt1265)) + Class75.anInt1272);
+                i_8_ = (WorldMap.anInt1272 + ((-WorldMap.anInt1274 + (class348_sub21.anInt6852 + class42.anInt595)) * (WorldMap.anInt1276 - WorldMap.anInt1272) / (-WorldMap.anInt1274 + WorldMap.anInt1265)));
+                i_9_ = (-((-WorldMap.anInt1262 + WorldMap.anInt1268) * (class42.anInt570 + (class348_sub21.anInt6851 - WorldMap.anInt1257)) / (WorldMap.anInt1277 + -WorldMap.anInt1257)) + WorldMap.anInt1268);
+                i_10_ = (-((-WorldMap.anInt1262 + WorldMap.anInt1268) * (class348_sub21.anInt6851 + (class42.anInt607 + -WorldMap.anInt1257)) / (WorldMap.anInt1277 - WorldMap.anInt1257)) + WorldMap.anInt1268);
+                i_7_ = (((-WorldMap.anInt1272 + WorldMap.anInt1276) * (-WorldMap.anInt1274 + class348_sub21.anInt6852 + class42.anInt603) / (-WorldMap.anInt1274 + WorldMap.anInt1265)) + WorldMap.anInt1272);
             }
             Class105 class105 = null;
             int i_11_ = 0;
@@ -98,8 +98,8 @@ final class Class190 {
                 class323 = Class239_Sub15.method1782(class42.anInt576, 10144);
                 if (class323 != null) {
                     i_15_ = (Class258_Sub1.aClass143_8527.method1188(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
-                    i_17_ = (class348_sub21.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)));
-                    i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)));
+                    i_17_ = (class348_sub21.anInt6855 - (class42.anInt568 * (WorldMap.anInt1268 + -WorldMap.anInt1262) / (WorldMap.anInt1277 - WorldMap.anInt1257)));
+                    i_16_ = (class348_sub21.anInt6853 + ((-WorldMap.anInt1272 + WorldMap.anInt1276) * class42.anInt566 / (WorldMap.anInt1265 + -WorldMap.anInt1274)));
                     if (class105 == null) i_17_ -= i_15_ * class323.method2560() / 2;
                     else i_17_ -= ((class105.method980() >> 1) - -(i_15_ * class323.method2565()));
                     for (int i_23_ = 0; i_15_ > i_23_; i_23_++) {
@@ -118,8 +118,8 @@ final class Class190 {
                     if (i_10_ < i_22_) i_10_ = i_22_;
                 }
             }
-            if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true;
-            Class75.method745(var_ha, class348_sub21, class42);
+            if (WorldMap.anInt1272 > i_8_ || i_7_ > WorldMap.anInt1276 || i_10_ < WorldMap.anInt1262 || i_9_ > WorldMap.anInt1268) return true;
+            WorldMap.method745(var_ha, class348_sub21, class42);
             if (class105 != null) {
                 if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)))) {
                     int i_25_;

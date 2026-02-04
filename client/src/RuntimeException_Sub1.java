@@ -16,7 +16,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
     static boolean aBoolean4604;
     static int anInt4605;
 
-    static final aa_Sub1 method4009(int i, int[] is, int[] is_0_, int i_1_, ha_Sub2 var_ha_Sub2, int i_2_) {
+    static final aa_Sub1 method4009(int i, int[] is, int[] is_0_, int i_1_, GlToolkit var_ha_Sub2, int i_2_) {
         try {
             anInt4597++;
             byte[] is_3_ = new byte[i * i_2_];

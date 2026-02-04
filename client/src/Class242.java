@@ -5,7 +5,7 @@
 final class Class242 {
     static int anInt3151;
     static Class348_Sub42_Sub13 aClass348_Sub42_Sub13_3152 = null;
-    private final ha_Sub2 aHa_Sub2_3153;
+    private final GlToolkit aHa_Sub2_3153;
     static int anInt3154;
     static int anInt3155;
     long aLong3156;
@@ -45,7 +45,7 @@ final class Class242 {
         if (!bool) Class233.aClass107_3022.method1005(true, class348_sub42_sub13);
     }
 
-    Class242(ha_Sub2 var_ha_Sub2, long l, int i) {
+    Class242(GlToolkit var_ha_Sub2, long l, int i) {
         try {
             aHa_Sub2_3153 = var_ha_Sub2;
             this.aLong3156 = l;

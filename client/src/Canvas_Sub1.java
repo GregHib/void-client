@@ -134,8 +134,8 @@ final class Canvas_Sub1 extends Canvas {
                     Class268.anInt3441++;
                 }
             }
-            if (Applet_Sub1.anIntArray38[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
-                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.aClass45_7382.method393(Applet_Sub1.anIntArray38[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+            if (GameShell.anIntArray38[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
+                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.aClass45_7382.method393(GameShell.anIntArray38[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
                     Class268.anInt3441++;
                     bool = false;
@@ -199,7 +199,7 @@ final class Canvas_Sub1 extends Canvas {
                 }
             }
             if (bool) {
-                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654);
+                if (Class36.anInt489 != 0) Class362.method3511(true, GameShell.aClass324_20, Class246.aClass143_3179, ((LocalisedText.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654);
                 Class369_Sub1.method3570(false);
                 Class348_Sub18.method2938((byte) 102);
                 Class239_Sub12.method1772(i ^ 0x41);
@@ -335,7 +335,7 @@ final class Canvas_Sub1 extends Canvas {
                 Class94.method867(true);
                 Class348_Sub16_Sub2.aBoolean8870 = true;
                 if (Class258_Sub4.aBoolean8558) {
-                    Applet_Sub1.method94(("Took: " + (Class62.method599(-117) + -Class90.aLong1516) + "ms"), i + 52);
+                    GameShell.method94(("Took: " + (Class62.method599(-117) + -Class90.aLong1516) + "ms"), i + 52);
                     Class258_Sub4.aBoolean8558 = false;
                 }
             } else Class36.anInt489 = 2;

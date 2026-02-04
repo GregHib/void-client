@@ -6,7 +6,7 @@ abstract class Class286 {
     static int anInt3681;
     static int anInt3682;
     static Class348_Sub2 aClass348_Sub2_3683;
-    ha_Sub2 aHa_Sub2_3684;
+    GlToolkit aHa_Sub2_3684;
 
     abstract void method2133(int i);
 
@@ -36,7 +36,7 @@ abstract class Class286 {
 
     abstract void method2140(Class258 class258, byte i, int i_5_);
 
-    Class286(ha_Sub2 var_ha_Sub2) {
+    Class286(GlToolkit var_ha_Sub2) {
         this.aHa_Sub2_3684 = var_ha_Sub2;
     }
 }

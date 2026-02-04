@@ -77,7 +77,7 @@ final class Class64_Sub3 extends Class64 {
     private boolean aBoolean5595 = false;
     private Class48[] aClass48Array5596;
     static int anInt5597;
-    private final ha_Sub2 aHa_Sub2_5598;
+    private final GlToolkit aHa_Sub2_5598;
     static int anInt5599;
     static String aString5600 = "";
     private short[] aShortArray5601;
@@ -468,7 +468,7 @@ final class Class64_Sub3 extends Class64 {
                     float f_91_ = ((float) ((anIntArray5644[class118.anInt1788]) + (anIntArray5644[class118.anInt1781]) + (anIntArray5644[class118.anInt1782])) * 0.3333333F);
                     float f_92_ = (Class190.aFloat2555 + (f_91_ * Class313.aFloat3935 + (f_90_ * Class299_Sub1_Sub1.aFloat8696 + Class167.aFloat2203 * f)));
                     float f_93_ = (Class156.aFloat2111 + (Class215.aFloat2836 * f_91_ + (f_90_ * Class252.aFloat3242 + Class314.aFloat3943 * f)));
-                    float f_94_ = (f * Class318_Sub9_Sub1.aFloat8784 + f_90_ * Class320.aFloat3994 + f_91_ * Class286_Sub8.aFloat6304 + Class49.aFloat4720);
+                    float f_94_ = (f * Class318_Sub9_Sub1.aFloat8784 + f_90_ * InterfaceList.aFloat3994 + f_91_ * Class286_Sub8.aFloat6304 + Class49.aFloat4720);
                     float f_95_ = ((float) (1.0 / Math.sqrt(f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_)))) * (float) class118.anInt1784);
                     class101_sub3.method939(-f_94_ + f_94_ * f_95_, (class118.aShort1785 * class48.anInt856) >> 7, (-(f_92_ * f_95_) + (f_92_ + (float) class48.anInt854)), (class118.aShort1790 * class48.anInt857) >> 7, class48.anInt853, 90, (f_95_ * f_93_ + (-f_93_ + (float) class48.anInt847)));
                     aHa_Sub2_5598.method3766((byte) 55, class101_sub3);
@@ -536,7 +536,7 @@ final class Class64_Sub3 extends Class64 {
             Class314.aFloat3943 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5769) + (class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5770)));
             Class313.aFloat3935 = ((class101_sub3_112_.aFloat5750 * class101_sub3.aFloat5762) + (class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5781) + (class101_sub3.aFloat5784 * class101_sub3_112_.aFloat5781));
             Class167.aFloat2203 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5781) + ((class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5770) + (class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5750)));
-            Class320.aFloat3994 = ((class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5754) + (class101_sub3.aFloat5750 * class101_sub3_112_.aFloat5756)));
+            InterfaceList.aFloat3994 = ((class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5754) + (class101_sub3.aFloat5750 * class101_sub3_112_.aFloat5756)));
             boolean bool_115_ = false;
             float f_116_ = 3.4028235E38F;
             float f_117_ = -3.4028235E38F;
@@ -586,7 +586,7 @@ final class Class64_Sub3 extends Class64 {
                 float f_135_ = (float) Class244.anIntArray4623[i_134_];
                 float f_136_ = (float) IOException_Sub1.anIntArray91[i_134_];
                 float f_137_ = (float) Class318_Sub2.anIntArray6393[i_134_];
-                float f_138_ = (Class286_Sub8.aFloat6304 * f_135_ + (f_137_ * Class318_Sub9_Sub1.aFloat8784 + Class320.aFloat3994 * f_136_) + f_114_);
+                float f_138_ = (Class286_Sub8.aFloat6304 * f_135_ + (f_137_ * Class318_Sub9_Sub1.aFloat8784 + InterfaceList.aFloat3994 * f_136_) + f_114_);
                 float f_139_ = f_113_ + (Class314.aFloat3943 * f_137_ + Class252.aFloat3242 * f_136_ + Class215.aFloat2836 * f_135_);
                 float f_140_ = f + (Class299_Sub1_Sub1.aFloat8696 * f_136_ + f_137_ * Class167.aFloat2203 + Class313.aFloat3935 * f_135_);
                 if ((float) aHa_Sub2_5598.anInt7826 <= f_138_) {
@@ -612,7 +612,7 @@ final class Class64_Sub3 extends Class64 {
                     float f_145_ = (float) anIntArray5543[i_144_];
                     float f_146_ = (float) anIntArray5644[i_144_];
                     float f_147_ = (float) anIntArray5593[i_144_];
-                    float f_148_ = f_114_ + (f_146_ * Class286_Sub8.aFloat6304 + (Class318_Sub9_Sub1.aFloat8784 * f_145_ + f_147_ * Class320.aFloat3994));
+                    float f_148_ = f_114_ + (f_146_ * Class286_Sub8.aFloat6304 + (Class318_Sub9_Sub1.aFloat8784 * f_145_ + f_147_ * InterfaceList.aFloat3994));
                     float f_149_ = f + (f_147_ * Class299_Sub1_Sub1.aFloat8696 + f_145_ * Class167.aFloat2203 + Class313.aFloat3935 * f_146_);
                     float f_150_ = f_113_ + (Class252.aFloat3242 * f_147_ + f_145_ * Class314.aFloat3943 + f_146_ * Class215.aFloat2836);
                     if (f_148_ >= (float) aHa_Sub2_5598.anInt7826) {
@@ -1075,10 +1075,10 @@ final class Class64_Sub3 extends Class64 {
                 Class101_Sub3 class101_sub3 = aHa_Sub2_5598.aClass101_Sub3_7760;
                 Class101_Sub3 class101_sub3_236_ = (Class101_Sub3) class101;
                 if (!aBoolean5527) method692((byte) -123);
-                Class320.aFloat3994 = ((class101_sub3_236_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3.aFloat5754 * class101_sub3_236_.aFloat5769) + (class101_sub3.aFloat5784 * class101_sub3_236_.aFloat5754));
+                InterfaceList.aFloat3994 = ((class101_sub3_236_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3.aFloat5754 * class101_sub3_236_.aFloat5769) + (class101_sub3.aFloat5784 * class101_sub3_236_.aFloat5754));
                 Class49.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751);
-                float f = (Class49.aFloat4720 + Class320.aFloat3994 * (float) aShort5591);
-                float f_237_ = (Class320.aFloat3994 * (float) aShort5629 + Class49.aFloat4720);
+                float f = (Class49.aFloat4720 + InterfaceList.aFloat3994 * (float) aShort5591);
+                float f_237_ = (InterfaceList.aFloat3994 * (float) aShort5629 + Class49.aFloat4720);
                 float f_238_;
                 float f_239_;
                 if (f > f_237_) {
@@ -1130,13 +1130,13 @@ final class Class64_Sub3 extends Class64 {
                                 int i_249_ = aShort5617 + aShort5646 >> 1;
                                 int i_250_ = (int) (((float) aShort5591 * Class299_Sub1_Sub1.aFloat8696) + (((float) i_248_ * Class167.aFloat2203) + Class190.aFloat2555) + (Class313.aFloat3935 * (float) i_249_));
                                 int i_251_ = (int) (Class156.aFloat2111 + ((float) i_248_ * Class314.aFloat3943) + (Class252.aFloat3242 * (float) aShort5591) + (Class215.aFloat2836 * (float) i_249_));
-                                int i_252_ = (int) (Class49.aFloat4720 + ((float) i_248_ * (Class318_Sub9_Sub1.aFloat8784)) + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_249_));
+                                int i_252_ = (int) (Class49.aFloat4720 + ((float) i_248_ * (Class318_Sub9_Sub1.aFloat8784)) + (InterfaceList.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_249_));
                                 int i_253_ = (int) ((Class313.aFloat3935 * (float) i_249_) + ((Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class190.aFloat2555 + (Class167.aFloat2203 * (float) i_248_))));
                                 int i_254_ = (int) (Class156.aFloat2111 + (Class314.aFloat3943 * (float) i_248_) + (Class252.aFloat3242 * (float) aShort5629) + ((float) i_249_ * Class215.aFloat2836));
                                 class318_sub3.anInt6405 = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i));
                                 class318_sub3.anInt6402 = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810);
                                 class318_sub3.anInt6404 = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i));
-                                int i_255_ = (int) (((float) i_249_ * Class286_Sub8.aFloat6304) + ((Class320.aFloat3994 * (float) aShort5629) + (((Class318_Sub9_Sub1.aFloat8784) * (float) i_248_) + Class49.aFloat4720)));
+                                int i_255_ = (int) (((float) i_249_ * Class286_Sub8.aFloat6304) + ((InterfaceList.aFloat3994 * (float) aShort5629) + (((Class318_Sub9_Sub1.aFloat8784) * (float) i_248_) + Class49.aFloat4720)));
                                 class318_sub3.anInt6406 = (aHa_Sub2_5598.anInt7853 + (i_253_ * aHa_Sub2_5598.anInt7771 / i));
                                 if (i_252_ >= aHa_Sub2_5598.anInt7826 || i_255_ >= (aHa_Sub2_5598.anInt7826)) {
                                     class318_sub3.aBoolean6401 = true;
@@ -1572,10 +1572,10 @@ final class Class64_Sub3 extends Class64 {
                 Class101_Sub3 class101_sub3 = aHa_Sub2_5598.aClass101_Sub3_7760;
                 if (!aBoolean5527) method692((byte) -123);
                 Class101_Sub3 class101_sub3_350_ = (Class101_Sub3) class101;
-                Class320.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)));
+                InterfaceList.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)));
                 Class49.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)));
-                float f = (Class49.aFloat4720 + Class320.aFloat3994 * (float) aShort5591);
-                float f_351_ = (Class320.aFloat3994 * (float) aShort5629 + Class49.aFloat4720);
+                float f = (Class49.aFloat4720 + InterfaceList.aFloat3994 * (float) aShort5591);
+                float f_351_ = (InterfaceList.aFloat3994 * (float) aShort5629 + Class49.aFloat4720);
                 float f_352_;
                 float f_353_;
                 if (f > f_351_) {
@@ -1629,14 +1629,14 @@ final class Class64_Sub3 extends Class64 {
                                 int i_364_ = aShort5617 - -aShort5646 >> 1;
                                 int i_365_ = (int) (((float) i_364_ * Class313.aFloat3935) + ((Class167.aFloat2203 * (float) i_363_) + Class190.aFloat2555 + ((float) aShort5591 * (Class299_Sub1_Sub1.aFloat8696))));
                                 int i_366_ = (int) (Class156.aFloat2111 + ((float) i_363_ * Class314.aFloat3943) + ((float) aShort5591 * Class252.aFloat3242) + ((float) i_364_ * Class215.aFloat2836));
-                                int i_367_ = (int) ((Class318_Sub9_Sub1.aFloat8784 * (float) i_363_) + Class49.aFloat4720 + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_364_));
+                                int i_367_ = (int) ((Class318_Sub9_Sub1.aFloat8784 * (float) i_363_) + Class49.aFloat4720 + (InterfaceList.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_364_));
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
                                     class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853));
                                     class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810));
                                 } else bool = true;
                                 int i_368_ = (int) (Class190.aFloat2555 + (Class167.aFloat2203 * (float) i_363_) + (Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class313.aFloat3935 * (float) i_364_));
                                 int i_369_ = (int) (((float) i_364_ * Class215.aFloat2836) + ((Class252.aFloat3242 * (float) aShort5629) + (Class156.aFloat2111 + (Class314.aFloat3943 * (float) i_363_))));
-                                int i_370_ = (int) ((Class286_Sub8.aFloat6304 * (float) i_364_) + (((float) i_363_ * (Class318_Sub9_Sub1.aFloat8784)) + Class49.aFloat4720 + ((float) aShort5629 * Class320.aFloat3994)));
+                                int i_370_ = (int) ((Class286_Sub8.aFloat6304 * (float) i_364_) + (((float) i_363_ * (Class318_Sub9_Sub1.aFloat8784)) + Class49.aFloat4720 + ((float) aShort5629 * InterfaceList.aFloat3994)));
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {
                                     class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853));
                                     class318_sub3.anInt6404 = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810));
@@ -2837,7 +2837,7 @@ final class Class64_Sub3 extends Class64 {
         return aShort5591;
     }
 
-    Class64_Sub3(ha_Sub2 var_ha_Sub2) {
+    Class64_Sub3(GlToolkit var_ha_Sub2) {
         aBoolean5527 = false;
         anInt5529 = 0;
         anInt5632 = 0;
@@ -2856,7 +2856,7 @@ final class Class64_Sub3 extends Class64 {
         }
     }
 
-    Class64_Sub3(ha_Sub2 var_ha_Sub2, Class124 class124, int i, int i_695_, int i_696_, int i_697_) {
+    Class64_Sub3(GlToolkit var_ha_Sub2, Class124 class124, int i, int i_695_, int i_696_, int i_697_) {
         aBoolean5527 = false;
         anInt5529 = 0;
         anInt5632 = 0;

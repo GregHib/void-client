@@ -8,7 +8,7 @@ final class Class348_Sub37 extends Class348 {
     Class262 aClass262_6998 = new Class262();
     static int anInt6999;
 
-    static final void method3030(int i, ha_Sub2 var_ha_Sub2) {
+    static final void method3030(int i, GlToolkit var_ha_Sub2) {
         anInt6999++;
         if (Class337.anObject4177 == null) {
             Class59_Sub1_Sub2 class59_sub1_sub2 = new Class59_Sub1_Sub2();

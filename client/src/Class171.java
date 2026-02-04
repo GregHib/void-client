@@ -4,7 +4,7 @@
 
 final class Class171 {
     static int anInt2267;
-    private final ha_Sub2 aHa_Sub2_2268;
+    private final GlToolkit aHa_Sub2_2268;
     static short aShort2269 = 32767;
     int anInt2270;
     static int anInt2271;
@@ -145,7 +145,7 @@ final class Class171 {
         if (i_44_ == 26603) anInt2271++;
     }
 
-    Class171(ha_Sub2 var_ha_Sub2, int i, int i_45_) {
+    Class171(GlToolkit var_ha_Sub2, int i, int i_45_) {
         aHa_Sub2_2268 = var_ha_Sub2;
         this.anInt2270 = i_45_;
     }

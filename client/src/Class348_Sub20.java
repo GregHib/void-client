@@ -13,7 +13,7 @@ final class Class348_Sub20 extends Class348 {
     static int anInt6828;
     static int anInt6829;
     static int[] anIntArray6830 = {16, 32, 64, 128};
-    private ha_Sub2 aHa_Sub2_6831;
+    private GlToolkit aHa_Sub2_6831;
     float aFloat6832;
     int anInt6833;
     static int anInt6834;

@@ -33,7 +33,7 @@ final class Class24 {
         Class88.aBoolean1500 = bool;
         Class339.anInt4202 = i;
         Class239_Sub7.anInt5909 = i_0_;
-        Class75.method754(i_1_);
+        WorldMap.method754(i_1_);
         if (i_2_ > -41) method297(true);
     }
 }

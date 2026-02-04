@@ -505,7 +505,7 @@ abstract class ha_Sub3 extends ha {
             boolean bool_30_;
             if (i_29_ == 1) {
                 bool = true;
-                class173 = Class348_Sub4.aClass173_6602;
+                class173 = SystemInfo.aClass173_6602;
                 bool_30_ = true;
             } else if (i_29_ == 2) {
                 class173 = Class69.aClass173_1201;
@@ -2501,7 +2501,7 @@ abstract class ha_Sub3 extends ha {
         if (Class262.aClass190ArrayArray3335 != null) {
             for (int i_274_ = 0; (i_274_ < Class262.aClass190ArrayArray3335.length); i_274_++) {
                 for (int i_275_ = 0; (Class262.aClass190ArrayArray3335[i_274_].length > i_275_); i_275_++)
-                    Class262.aClass190ArrayArray3335[i_274_][i_275_] = Class274.aClass190_3547;
+                    Class262.aClass190ArrayArray3335[i_274_][i_275_] = LocalisedText.aClass190_3547;
             }
         }
         if (i != 0) method3870(-90);
@@ -2646,7 +2646,7 @@ abstract class ha_Sub3 extends ha {
         aFloatArray8140 = new float[]{0.0F, 0.0F, 1.0F, 0.0F};
         this.aFloat8169 = 3584.0F;
         this.aBoolean8141 = true;
-        this.aClass173_8163 = Class348_Sub4.aClass173_6602;
+        this.aClass173_8163 = SystemInfo.aClass173_6602;
         this.aBoolean8148 = true;
         aBoolean8097 = false;
         this.anInt8165 = 0;

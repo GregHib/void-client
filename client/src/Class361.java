@@ -201,7 +201,7 @@ final class Class361 {
                 var_ha.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i);
                 var_ha.method3675(i_40_, (byte) -125, i_39_, i_41_, i, -16777216);
                 if (Class348.anInt4290 >= 100) {
-                    float f = ((float) Class75.anInt1267 / (float) Class75.anInt1259);
+                    float f = ((float) WorldMap.anInt1267 / (float) WorldMap.anInt1259);
                     int i_42_ = i_40_;
                     int i_43_ = i;
                     if (!(f < 1.0F)) i_42_ = (int) ((float) i / f);
@@ -209,16 +209,16 @@ final class Class361 {
                     i_41_ += (-i_43_ + i) / 2;
                     i_39_ += (i_40_ + -i_42_) / 2;
                     if (Class67.aClass105_4643 == null || i_40_ != Class67.aClass105_4643.method971() || (Class67.aClass105_4643.method969() != i)) {
-                        Class75.method751(Class75.anInt1266, (Class75.anInt1267 + Class75.anInt1263), (Class75.anInt1266 - -Class75.anInt1259), Class75.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_);
-                        Class75.method748(var_ha);
+                        WorldMap.method751(WorldMap.anInt1266, (WorldMap.anInt1267 + WorldMap.anInt1263), (WorldMap.anInt1266 - -WorldMap.anInt1259), WorldMap.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_);
+                        WorldMap.method748(var_ha);
                         Class67.aClass105_4643 = var_ha.method3683(i_39_, i_41_, i_42_, i_43_, false);
                     }
                     Class67.aClass105_4643.method974(i_39_, i_41_);
-                    int i_44_ = Class25.anInt370 * i_42_ / Class75.anInt1259;
-                    int i_45_ = i_43_ * Class182.anInt2446 / Class75.anInt1267;
-                    int i_46_ = i_39_ - -(i_42_ * Class368.anInt4509 / Class75.anInt1259);
+                    int i_44_ = Class25.anInt370 * i_42_ / WorldMap.anInt1259;
+                    int i_45_ = i_43_ * Class182.anInt2446 / WorldMap.anInt1267;
+                    int i_46_ = i_39_ - -(i_42_ * Class368.anInt4509 / WorldMap.anInt1259);
                     if (bool != true) method3498(44, null, -27, -91, true, -26);
-                    int i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * Class59_Sub1_Sub2.anInt8665 / Class75.anInt1267)));
+                    int i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * Class59_Sub1_Sub2.anInt8665 / WorldMap.anInt1267)));
                     int i_48_ = -1996554240;
                     if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) i_48_ = -1996488705;
                     var_ha.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1);
@@ -227,16 +227,16 @@ final class Class361 {
                     int i_49_;
                     if (Class164.anInt2173 <= 50) i_49_ = Class164.anInt2173 * 5;
                     else i_49_ = -(5 * Class164.anInt2173) + 500;
-                    for (Class348_Sub21 class348_sub21 = ((Class348_Sub21) Class75.aClass262_1254.method1995(4)); class348_sub21 != null; class348_sub21 = (Class348_Sub21) Class75.aClass262_1254.method1990((byte) 126)) {
-                        Class42 class42 = (Class75.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 71));
+                    for (Class348_Sub21 class348_sub21 = ((Class348_Sub21) WorldMap.aClass262_1254.method1995(4)); class348_sub21 != null; class348_sub21 = (Class348_Sub21) WorldMap.aClass262_1254.method1990((byte) 126)) {
+                        Class42 class42 = (WorldMap.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 71));
                         if (Class60.method589(class42, -4)) {
                             if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
-                                int i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259));
-                                int i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_);
+                                int i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / WorldMap.anInt1259));
+                                int i_51_ = (((WorldMap.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / WorldMap.anInt1267) + i_41_);
                                 var_ha.method3675(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << 24 | 0xffff00));
                             } else if (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)) {
-                                int i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / Class75.anInt1259));
-                                int i_53_ = i_41_ - -(i_43_ * (Class75.anInt1267 + -(class348_sub21.anInt6851)) / Class75.anInt1267);
+                                int i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / WorldMap.anInt1259));
+                                int i_53_ = i_41_ - -(i_43_ * (WorldMap.anInt1267 + -(class348_sub21.anInt6851)) / WorldMap.anInt1267);
                                 var_ha.method3675(4, (byte) -125, i_52_ + -2, -2 + i_53_, 4, (i_49_ << 24 | 0xffff00));
                             }
                         }

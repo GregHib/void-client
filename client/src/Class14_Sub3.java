@@ -74,6 +74,6 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
         Class68.anInt1188 = (Class246.aClass143_3179.anInt1988 - (-Class246.aClass143_3179.anInt1993 - i));
         for (int i_4_ = 0; (i_4_ < Class286_Sub1.aStringArray6200.length); i_4_++)
             Class286_Sub1.aStringArray6200[i_4_] = "";
-        Applet_Sub1.method94(Class274.aClass274_3483.method2063(Class348_Sub33.anInt6967, 544), 67);
+        GameShell.method94(LocalisedText.aClass274_3483.method2063(Class348_Sub33.anInt6967, 544), 67);
     }
 }

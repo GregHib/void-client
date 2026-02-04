@@ -214,7 +214,7 @@ final class Class60 {
         if (class42 == null) return false;
         if (i != -4) return false;
         if (!class42.aBoolean574) return false;
-        if (!class42.method373(Class75.anInterface17_1244, i ^ ~0x2d)) return false;
+        if (!class42.method373(WorldMap.anInterface17_1244, i ^ ~0x2d)) return false;
         if (Class158.aClass356_4934.method3480(class42.anInt581, i ^ 0x1774) != null) return false;
         return Class348_Sub42_Sub9_Sub1.aClass356_10442.method3480(class42.anInt596, i + -6004) == null;
     }

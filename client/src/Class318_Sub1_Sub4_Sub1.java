@@ -37,7 +37,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
     static int anInt10093;
     private r aR10094;
 
-    Class318_Sub1_Sub4_Sub1(ha var_ha, Class51 class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, boolean bool_6_) {
+    Class318_Sub1_Sub4_Sub1(ha var_ha, LocType class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, boolean bool_6_) {
         super(i_1_, i_2_, i_3_, i, i_0_, Class286_Sub9.method2175(i_5_, (byte) -34, i_4_));
         do {
             try {
@@ -168,7 +168,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
     private final Class2 method2481(boolean bool, int i, int i_15_, ha var_ha) {
         if (i_15_ != -4) aClass30_10082 = null;
         anInt10086++;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, aShort10081 & 0xffff);
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, aShort10081 & 0xffff);
         s var_s;
         s var_s_16_;
         if (aBoolean10066) {

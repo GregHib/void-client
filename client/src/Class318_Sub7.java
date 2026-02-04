@@ -105,38 +105,38 @@ final class Class318_Sub7 extends Class318 {
     static final void method2512(d var_d, ha var_ha, int i) {
         try {
             anInt6440++;
-            if (Class75.aClass348_Sub42_Sub14_1243 != null) {
+            if (WorldMap.aClass348_Sub42_Sub14_1243 != null) {
                 if (Class348.anInt4290 < 10) {
-                    if (!Class75.aClass45_1237.method413(100, Class75.aClass348_Sub42_Sub14_1243.aString9625)) {
-                        Class348.anInt4290 = (Class348_Sub32.aClass45_6950.method397((Class75.aClass348_Sub42_Sub14_1243.aString9625), 0)) / 10;
+                    if (!WorldMap.aClass45_1237.method413(100, WorldMap.aClass348_Sub42_Sub14_1243.aString9625)) {
+                        Class348.anInt4290 = (Class348_Sub32.aClass45_6950.method397((WorldMap.aClass348_Sub42_Sub14_1243.aString9625), 0)) / 10;
                         return;
                     }
                     InputStream_Sub1.method126(-16203);
                     Class348.anInt4290 = 10;
                 }
                 if (Class348.anInt4290 == 10) {
-                    Class75.anInt1266 = (Class75.aClass348_Sub42_Sub14_1243.anInt9644 >> 6 << 6);
-                    Class75.anInt1263 = (Class75.aClass348_Sub42_Sub14_1243.anInt9643 >> 6 << 6);
-                    Class75.anInt1259 = 64 + ((Class75.aClass348_Sub42_Sub14_1243.anInt9635 >> 6 << 6) - Class75.anInt1266);
-                    Class75.anInt1267 = 64 + ((Class75.aClass348_Sub42_Sub14_1243.anInt9627 >> 6 << 6) - Class75.anInt1263);
+                    WorldMap.anInt1266 = (WorldMap.aClass348_Sub42_Sub14_1243.anInt9644 >> 6 << 6);
+                    WorldMap.anInt1263 = (WorldMap.aClass348_Sub42_Sub14_1243.anInt9643 >> 6 << 6);
+                    WorldMap.anInt1259 = 64 + ((WorldMap.aClass348_Sub42_Sub14_1243.anInt9635 >> 6 << 6) - WorldMap.anInt1266);
+                    WorldMap.anInt1267 = 64 + ((WorldMap.aClass348_Sub42_Sub14_1243.anInt9627 >> 6 << 6) - WorldMap.anInt1263);
                     int[] is = new int[3];
                     int i_7_ = -1;
                     int i_8_ = -1;
-                    if (Class75.aClass348_Sub42_Sub14_1243.method3236(is, (za_Sub2.regionTileX - -((Class132.aPlayer_1907.x) >> 9)), ((Class132.aPlayer_1907.y) >> 9) + Class90.regionTileY, (Class132.aPlayer_1907.plane), (byte) -28)) {
-                        i_7_ = -Class75.anInt1266 + is[1];
-                        i_8_ = -Class75.anInt1263 + is[2];
+                    if (WorldMap.aClass348_Sub42_Sub14_1243.method3236(is, (za_Sub2.regionTileX - -((Class132.aPlayer_1907.x) >> 9)), ((Class132.aPlayer_1907.y) >> 9) + Class90.regionTileY, (Class132.aPlayer_1907.plane), (byte) -28)) {
+                        i_7_ = -WorldMap.anInt1266 + is[1];
+                        i_8_ = -WorldMap.anInt1263 + is[2];
                     }
-                    if (Class88.aBoolean1500 || i_7_ < 0 || Class75.anInt1259 <= i_7_ || i_8_ < 0 || Class75.anInt1267 <= i_8_) {
+                    if (Class88.aBoolean1500 || i_7_ < 0 || WorldMap.anInt1259 <= i_7_ || i_8_ < 0 || WorldMap.anInt1267 <= i_8_) {
                         if (Class239_Sub7.anInt5909 == -1 || Class339.anInt4202 == -1) {
-                            Class75.aClass348_Sub42_Sub14_1243.method3242(is, 123, 0x3fff & (Class75.aClass348_Sub42_Sub14_1243.anInt9640), (Class75.aClass348_Sub42_Sub14_1243.anInt9640) >> 14 & 0x3fff);
-                            Class245.anInt3170 = is[2] - Class75.anInt1263;
-                            Class348_Sub36.anInt6992 = is[1] - Class75.anInt1266;
+                            WorldMap.aClass348_Sub42_Sub14_1243.method3242(is, 123, 0x3fff & (WorldMap.aClass348_Sub42_Sub14_1243.anInt9640), (WorldMap.aClass348_Sub42_Sub14_1243.anInt9640) >> 14 & 0x3fff);
+                            Class245.anInt3170 = is[2] - WorldMap.anInt1263;
+                            Class348_Sub36.anInt6992 = is[1] - WorldMap.anInt1266;
                         } else {
-                            Class75.aClass348_Sub42_Sub14_1243.method3242(is, 88, Class339.anInt4202, Class239_Sub7.anInt5909);
+                            WorldMap.aClass348_Sub42_Sub14_1243.method3242(is, 88, Class339.anInt4202, Class239_Sub7.anInt5909);
                             Class239_Sub7.anInt5909 = Class339.anInt4202 = -1;
                             if (is != null) {
-                                Class348_Sub36.anInt6992 = -Class75.anInt1266 + is[1];
-                                Class245.anInt3170 = -Class75.anInt1263 + is[2];
+                                Class348_Sub36.anInt6992 = -WorldMap.anInt1266 + is[1];
+                                Class245.anInt3170 = -WorldMap.anInt1263 + is[2];
                             }
                             Class88.aBoolean1500 = false;
                         }
@@ -146,45 +146,45 @@ final class Class318_Sub7 extends Class318 {
                         Class348_Sub36.anInt6992 = i_7_;
                         Class245.anInt3170 = i_8_;
                     }
-                    if (Class75.aClass348_Sub42_Sub14_1243.anInt9631 != 37) {
-                        if (Class75.aClass348_Sub42_Sub14_1243.anInt9631 != 50) {
-                            if (Class75.aClass348_Sub42_Sub14_1243.anInt9631 != 75) {
-                                if ((Class75.aClass348_Sub42_Sub14_1243.anInt9631) == 100) Class75.aFloat1249 = Class75.aFloat1247 = 8.0F;
-                                else if ((Class75.aClass348_Sub42_Sub14_1243.anInt9631) != 200) Class75.aFloat1249 = Class75.aFloat1247 = 8.0F;
-                                else Class75.aFloat1249 = Class75.aFloat1247 = 16.0F;
-                            } else Class75.aFloat1249 = Class75.aFloat1247 = 6.0F;
-                        } else Class75.aFloat1249 = Class75.aFloat1247 = 4.0F;
-                    } else Class75.aFloat1249 = Class75.aFloat1247 = 3.0F;
-                    Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
-                    Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871);
+                    if (WorldMap.aClass348_Sub42_Sub14_1243.anInt9631 != 37) {
+                        if (WorldMap.aClass348_Sub42_Sub14_1243.anInt9631 != 50) {
+                            if (WorldMap.aClass348_Sub42_Sub14_1243.anInt9631 != 75) {
+                                if ((WorldMap.aClass348_Sub42_Sub14_1243.anInt9631) == 100) WorldMap.aFloat1249 = WorldMap.aFloat1247 = 8.0F;
+                                else if ((WorldMap.aClass348_Sub42_Sub14_1243.anInt9631) != 200) WorldMap.aFloat1249 = WorldMap.aFloat1247 = 8.0F;
+                                else WorldMap.aFloat1249 = WorldMap.aFloat1247 = 16.0F;
+                            } else WorldMap.aFloat1249 = WorldMap.aFloat1247 = 6.0F;
+                        } else WorldMap.aFloat1249 = WorldMap.aFloat1247 = 4.0F;
+                    } else WorldMap.aFloat1249 = WorldMap.aFloat1247 = 3.0F;
+                    WorldMap.anInt1255 = (int) WorldMap.aFloat1247 >> 1;
+                    WorldMap.aByteArrayArrayArray1251 = Class325.method2596(WorldMap.anInt1255, 12871);
                     Class348_Sub15.method2811(false);
-                    Class75.method760();
+                    WorldMap.method760();
                     Class289.aClass262_3705 = new Class262();
-                    Class75.anInt1250 += (int) (Math.random() * 5.0) + -2;
-                    if (Class75.anInt1250 < -8) Class75.anInt1250 = -8;
-                    if (Class75.anInt1250 > 8) Class75.anInt1250 = 8;
-                    Class75.anInt1253 += -2 + (int) (5.0 * Math.random());
-                    if (Class75.anInt1253 < -16) Class75.anInt1253 = -16;
-                    if (Class75.anInt1253 > 16) Class75.anInt1253 = 16;
-                    Class75.method764(var_d, (Class75.anInt1250 >> 2 << 10), Class75.anInt1253 >> 1);
-                    Class75.aClass153_1238.method1220((byte) 73, 256, 1024);
-                    Class75.aClass141_1242.method1178(256, 1, 256);
-                    Class75.aClass263_1245.method2014(4096, true);
+                    WorldMap.anInt1250 += (int) (Math.random() * 5.0) + -2;
+                    if (WorldMap.anInt1250 < -8) WorldMap.anInt1250 = -8;
+                    if (WorldMap.anInt1250 > 8) WorldMap.anInt1250 = 8;
+                    WorldMap.anInt1253 += -2 + (int) (5.0 * Math.random());
+                    if (WorldMap.anInt1253 < -16) WorldMap.anInt1253 = -16;
+                    if (WorldMap.anInt1253 > 16) WorldMap.anInt1253 = 16;
+                    WorldMap.method764(var_d, (WorldMap.anInt1250 >> 2 << 10), WorldMap.anInt1253 >> 1);
+                    WorldMap.aClass153_1238.method1220((byte) 73, 256, 1024);
+                    WorldMap.aClass141_1242.method1178(256, 1, 256);
+                    WorldMap.aClass263_1245.method2014(4096, true);
                     Class229.aClass194_2981.method1444(256, 123);
                     Class348.anInt4290 = 20;
                 } else if (Class348.anInt4290 == 20) {
                     Class289.method2193(true, (byte) -123);
-                    Class75.method756(var_ha, Class75.anInt1250, Class75.anInt1253);
+                    WorldMap.method756(var_ha, WorldMap.anInt1250, WorldMap.anInt1253);
                     Class348.anInt4290 = 60;
                     Class289.method2193(true, (byte) -122);
                     Class94.method867(true);
                 } else if (i <= -43) {
                     if (Class348.anInt4290 == 60) {
-                        if (Class75.aClass45_1237.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) {
-                            if (!Class75.aClass45_1237.method413(100, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) return;
-                            Class75.aClass252_1246 = (Class307.method2300(Class75.aClass45_1237, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements", Class130.aBoolean1900, (byte) -91));
-                        } else Class75.aClass252_1246 = new Class252(0);
-                        Class75.method761();
+                        if (WorldMap.aClass45_1237.method400(-18308, (WorldMap.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) {
+                            if (!WorldMap.aClass45_1237.method413(100, (WorldMap.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) return;
+                            WorldMap.aClass252_1246 = (Class307.method2300(WorldMap.aClass45_1237, (WorldMap.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements", Class130.aBoolean1900, (byte) -91));
+                        } else WorldMap.aClass252_1246 = new Class252(0);
+                        WorldMap.method761();
                         Class348.anInt4290 = 70;
                         Class289.method2193(true, (byte) -127);
                         Class94.method867(true);

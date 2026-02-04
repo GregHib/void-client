@@ -29,7 +29,7 @@ class Class369 implements Interface12 {
         Class240.aClass324_4684 = Class14.method232(var_ha, (byte) -53, true, Class56.anInt1044);
         Class258_Sub1.aClass143_8527 = Class135.method1151(-25411, var_ha, Class56.anInt1044);
         if (i != 4) aClass143_4962 = null;
-        Applet_Sub1.aClass324_20 = Class14.method232(var_ha, (byte) -53, true, Class17.anInt235);
+        GameShell.aClass324_20 = Class14.method232(var_ha, (byte) -53, true, Class17.anInt235);
         Class246.aClass143_3179 = Class135.method1151(-25411, var_ha, Class17.anInt235);
         Class262.aClass324_3326 = Class14.method232(var_ha, (byte) -53, true, Class291.anInt3736);
         aClass143_4962 = Class135.method1151(-25411, var_ha, Class291.anInt3736);

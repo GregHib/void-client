@@ -39,7 +39,7 @@ abstract class Class101 {
         r.anIntArray9724 = new int[i_6_];
         Class295.anIntArray3759 = new int[i_6_];
         Class347.aByteArrayArray4281 = new byte[i_6_][];
-        Applet_Sub1.anIntArray38 = new int[i_6_];
+        GameShell.anIntArray38 = new int[i_6_];
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_6_][];
         Class129.aByteArrayArray1887 = new byte[i_6_][];
         i_6_ = 0;
@@ -48,13 +48,13 @@ abstract class Class101 {
                 int i_9_ = i_8_ + (i_7_ << 8);
                 Class348_Sub23_Sub3.anIntArray9042[i_6_] = i_9_;
                 aa_Sub1.anIntArray5192[i_6_] = Class367_Sub10.aClass45_7382.method417("m" + i_7_ + "_" + i_8_, i + 49);
-                Applet_Sub1.anIntArray38[i_6_] = Class367_Sub10.aClass45_7382.method417("l" + i_7_ + "_" + i_8_, 0);
+                GameShell.anIntArray38[i_6_] = Class367_Sub10.aClass45_7382.method417("l" + i_7_ + "_" + i_8_, 0);
                 Class322.anIntArray4031[i_6_] = Class367_Sub10.aClass45_7382.method417("n" + i_7_ + "_" + i_8_, 0);
                 Class295.anIntArray3759[i_6_] = Class367_Sub10.aClass45_7382.method417("um" + i_7_ + "_" + i_8_, 0);
                 r.anIntArray9724[i_6_] = (Class367_Sub10.aClass45_7382.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i, -49)));
                 if (Class322.anIntArray4031[i_6_] == -1) {
                     aa_Sub1.anIntArray5192[i_6_] = -1;
-                    Applet_Sub1.anIntArray38[i_6_] = -1;
+                    GameShell.anIntArray38[i_6_] = -1;
                     Class295.anIntArray3759[i_6_] = -1;
                     r.anIntArray9724[i_6_] = -1;
                 }
@@ -64,7 +64,7 @@ abstract class Class101 {
         for (int i_10_ = i_6_; Class322.anIntArray4031.length > i_10_; i_10_++) {
             Class322.anIntArray4031[i_10_] = -1;
             aa_Sub1.anIntArray5192[i_10_] = -1;
-            Applet_Sub1.anIntArray38[i_10_] = -1;
+            GameShell.anIntArray38[i_10_] = -1;
             Class295.anIntArray3759[i_10_] = -1;
             r.anIntArray9724[i_10_] = -1;
         }
@@ -109,7 +109,7 @@ abstract class Class101 {
 
     abstract void method903(int i, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_);
 
-    static final Class258_Sub3_Sub1 method904(int i, ha_Sub2 var_ha_Sub2, int i_24_, int i_25_, int i_26_) {
+    static final Class258_Sub3_Sub1 method904(int i, GlToolkit var_ha_Sub2, int i_24_, int i_25_, int i_26_) {
         try {
             anInt1594++;
             if (i <= 42) method906(123);

@@ -149,7 +149,7 @@ final class Class286_Sub9 extends Class286 {
         int i_9_ = 96 / ((i - -60) / 38);
     }
 
-    Class286_Sub9(ha_Sub2 var_ha_Sub2) {
+    Class286_Sub9(GlToolkit var_ha_Sub2) {
         super(var_ha_Sub2);
         if (var_ha_Sub2.aBoolean7863) {
             aBoolean6308 = var_ha_Sub2.anInt7795 < 3;
@@ -316,7 +316,7 @@ final class Class286_Sub9 extends Class286 {
                     player.aBoolean10539 = true;
                 } else player.method2455(i_36_, -26443, (Class259.aByteArray3300[i_22_]), i_35_);
                 player.plane = player.aByte6376 = (byte) (0x3 & (player.plane) + i_32_);
-                if (Class79.method802(i_36_, i_35_, true)) player.aByte6376++;
+                if (NPCType.method802(i_36_, i_35_, true)) player.aByte6376++;
                 if (Class348_Sub42_Sub11.anInt9591 == i_22_) {
                     if ((player.plane) != Class355.anInt4372) Class348_Sub16_Sub2.aBoolean8870 = true;
                     Class355.anInt4372 = (player.plane);
@@ -334,7 +334,7 @@ final class Class286_Sub9 extends Class286 {
                     player.anInt10549 = i_41_;
                 } else player.method2455(i_42_, -26443, (Class259.aByteArray3300[i_22_]), i_41_);
                 player.plane = player.aByte6376 = (byte) ((player.plane) + i_38_ & 0x3);
-                if (Class79.method802(i_42_, i_41_, true)) player.aByte6376++;
+                if (NPCType.method802(i_42_, i_41_, true)) player.aByte6376++;
                 if (Class348_Sub42_Sub11.anInt9591 == i_22_) Class355.anInt4372 = (player.plane);
             }
         }

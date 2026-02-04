@@ -100,7 +100,7 @@ final class Class267 {
         return anInterface7_3398;
     }
 
-    static final void method2028(int i, Class51 class51, int i_0_, ha var_ha, int i_1_, int i_2_) {
+    static final void method2028(int i, LocType class51, int i_0_, ha var_ha, int i_1_, int i_2_) {
         try {
             anInt3395++;
             Class218 class218 = Class2.aClass141_117.method1173((byte) 31, class51.anInt875);

@@ -313,7 +313,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
         return false;
     }
 
-    Class348_Sub5_Sub1(ha_Sub2 var_ha_Sub2) {
+    Class348_Sub5_Sub1(GlToolkit var_ha_Sub2) {
         super(var_ha_Sub2);
     }
 }

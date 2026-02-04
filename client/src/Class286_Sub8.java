@@ -70,7 +70,7 @@ final class Class286_Sub8 extends Class286 {
         }
     }
 
-    Class286_Sub8(ha_Sub2 var_ha_Sub2) {
+    Class286_Sub8(GlToolkit var_ha_Sub2) {
         super(var_ha_Sub2);
         if (var_ha_Sub2.aBoolean7863) {
             aClass61_6302 = new Class61(var_ha_Sub2, 2);

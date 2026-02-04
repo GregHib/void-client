@@ -29,7 +29,7 @@ final class Class126 implements Interface14 {
     static final boolean method1113(int i, int i_0_, int i_1_) {
         anInt4995++;
         if (i_1_ >= -3) aClass45_4984 = null;
-        return (Class188.method1412((byte) -35, i_0_, i) & (Class274.method2058(i, i_0_, 72) | (i & 0x2000) != 0 | Class348_Sub42_Sub9.method3203(i_0_, (byte) 114, i)));
+        return (Class188.method1412((byte) -35, i_0_, i) & (LocalisedText.method2058(i, i_0_, 72) | (i & 0x2000) != 0 | Class348_Sub42_Sub9.method3203(i_0_, (byte) 114, i)));
     }
 
     public final long method52(byte i) {

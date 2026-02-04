@@ -1,4 +1,4 @@
-/* Class297 - Decompiled by JODE
+/* SignLink - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
@@ -14,7 +14,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
 
-final class Class297 implements Runnable {
+final class SignLink implements Runnable {
     private Callback_Sub1 aCallback_Sub1_3776;
     boolean aBoolean3777;
     static String aString3778;
@@ -361,7 +361,7 @@ final class Class297 implements Runnable {
         return method2246(i ^ 0x51, 0, 7, 0, frame);
     }
 
-    Class297(int i, String string, int i_22_, boolean bool) throws Exception {
+    SignLink(int i, String string, int i_22_, boolean bool) throws Exception {
         this.aBoolean3777 = false;
         aClass144_3798 = null;
         aBoolean3801 = false;

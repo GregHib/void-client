@@ -54,7 +54,7 @@ final class Class5_Sub2 extends Class5 {
 
     static final boolean method195(int i, boolean bool, int i_11_) {
         anInt8364++;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_11_);
+        LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_11_);
         if (i == 11) i = 10;
         if (bool != false) return false;
         if (i >= 5 && i <= 8) i = 4;

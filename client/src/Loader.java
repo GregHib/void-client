@@ -91,7 +91,7 @@ public class Loader extends Applet {
 
     void startClient() {
         try {
-            Applet_Sub1.provideLoaderApplet(this);
+            GameShell.provideLoaderApplet(this);
             client var_client = new client();
             var_client.init();
             var_client.start();

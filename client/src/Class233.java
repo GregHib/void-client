@@ -27,7 +27,7 @@ final class Class233 {
     private int anInt3034;
     private final int[] anIntArray3035;
 
-    private final void method1649(ha_Sub2 var_ha_Sub2, int i, int i_0_) {
+    private final void method1649(GlToolkit var_ha_Sub2, int i, int i_0_) {
         anInt3019++;
         Class86.aFloat1478 = var_ha_Sub2.aFloat7768;
         if (i_0_ != 24484) method1655(null, -66, 67);
@@ -39,7 +39,7 @@ final class Class233 {
         OpenGL.glNormal3f(0.0F, -1.0F, 0.0F);
     }
 
-    private final void method1650(ha_Sub2 var_ha_Sub2, byte i) {
+    private final void method1650(GlToolkit var_ha_Sub2, byte i) {
         var_ha_Sub2.method3748(0, true);
         anInt3016++;
         OpenGL.glEnable(16384);
@@ -48,7 +48,7 @@ final class Class233 {
         if (Class86.aFloat1478 != var_ha_Sub2.aFloat7768) var_ha_Sub2.xa(Class86.aFloat1478);
     }
 
-    final void method1651(ha_Sub2 var_ha_Sub2, byte i, int i_1_, Class98 class98) {
+    final void method1651(GlToolkit var_ha_Sub2, byte i, int i_1_, Class98 class98) {
         try {
             anInt3017++;
             if (var_ha_Sub2.aClass101_Sub3_7760 != null) {
@@ -131,7 +131,7 @@ final class Class233 {
         }
     }
 
-    private final void method1652(boolean bool, ha_Sub2 var_ha_Sub2) {
+    private final void method1652(boolean bool, GlToolkit var_ha_Sub2) {
         Class86.aFloat1478 = var_ha_Sub2.aFloat7768;
         anInt3021++;
         var_ha_Sub2.method3784((byte) -62);
@@ -147,7 +147,7 @@ final class Class233 {
         if (i != 1489574736) aClass107_3022 = null;
     }
 
-    final void method1654(int i, ha_Sub2 var_ha_Sub2) {
+    final void method1654(int i, GlToolkit var_ha_Sub2) {
         if (i == 643267468) {
             anInt3023++;
             anInterface2_3027 = var_ha_Sub2.method3731(2, true, 24, null, 196584);
@@ -157,7 +157,7 @@ final class Class233 {
         }
     }
 
-    private final void method1655(ha_Sub2 var_ha_Sub2, int i, int i_18_) {
+    private final void method1655(GlToolkit var_ha_Sub2, int i, int i_18_) {
         anInt3018++;
         if (i_18_ == 785980556) {
             OpenGL.glGetFloatv(2982, aFloatArray3024, 0);

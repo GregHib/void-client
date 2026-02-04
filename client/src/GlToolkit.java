@@ -1,4 +1,4 @@
-/* ha_Sub2 - Decompiled by JODE
+/* GlToolkit - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
@@ -11,7 +11,7 @@ import java.awt.*;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-final class ha_Sub2 extends ha {
+final class GlToolkit extends ha {
     static int anInt7514;
     static int anInt7515;
     static int anInt7516;
@@ -1034,7 +1034,7 @@ final class ha_Sub2 extends ha {
         anInt7646++;
     }
 
-    ha_Sub2(Canvas canvas, d var_d, int i) {
+    GlToolkit(Canvas canvas, d var_d, int i) {
         super(var_d);
         aClass233_7711 = new Class233();
         aClass101_Sub3_7725 = new Class101_Sub3();
@@ -2918,7 +2918,7 @@ final class ha_Sub2 extends ha {
         Class88.anInt1497 = 0;
         int[] is = Class286_Sub7.anIntArray6290;
         for (int i_322_ = 0; (i_322_ < Class150.anInt2057 + i_321_); i_322_++) {
-            Class79 class79 = null;
+            NPCType class79 = null;
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_322_]]);
             else {

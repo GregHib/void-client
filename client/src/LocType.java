@@ -1,8 +1,8 @@
-/* Class51 - Decompiled by JODE
+/* LocType - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class51 {
+final class LocType {
     static int anInt866;
     static int anInt867;
     int anInt868 = -1;
@@ -108,7 +108,7 @@ final class Class51 {
         }
         for (int i_0_ = 0; i_0_ < this.anIntArray945.length; i_0_++) {
             if (this.anIntArray945[i_0_] != -1) {
-                Class51 class51_1_ = this.aClass263_933.method2005(0, this.anIntArray945[i_0_]);
+                LocType class51_1_ = this.aClass263_933.method2005(0, this.anIntArray945[i_0_]);
                 if (class51_1_.anInt887 != -1 || class51_1_.anIntArray904 != null) return true;
             }
         }
@@ -298,7 +298,7 @@ final class Class51 {
         if (i != 0) method486(-77);
     }
 
-    final Class51 method480(Interface17 interface17, byte i) {
+    final LocType method480(Interface17 interface17, byte i) {
         anInt870++;
         int i_34_ = -1;
         if (anInt934 == -1) {
@@ -661,7 +661,7 @@ final class Class51 {
         return -1;
     }
 
-    public Class51() {
+    public LocType() {
         this.anInt869 = -1;
         anInt890 = 0;
         this.aBoolean896 = true;

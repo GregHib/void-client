@@ -38,7 +38,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
         if (i_1_ != -9894) method12((byte) -37);
     }
 
-    Class135_Sub1(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_2_, boolean bool) {
+    Class135_Sub1(GlToolkit var_ha_Sub2, int i, byte[] is, int i_2_, boolean bool) {
         super(var_ha_Sub2, 34962, is, i_2_, bool);
         try {
             anInt4708 = i;
@@ -47,7 +47,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
         }
     }
 
-    Class135_Sub1(ha_Sub2 var_ha_Sub2, int i, Buffer buffer, int i_3_, boolean bool) {
+    Class135_Sub1(GlToolkit var_ha_Sub2, int i, Buffer buffer, int i_3_, boolean bool) {
         super(var_ha_Sub2, 34962, buffer, i_3_, bool);
         try {
             anInt4708 = i;
@@ -69,7 +69,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
         int i_8_ = Class63.anInt1117;
         int i_9_ = -3 + Class237_Sub1.anInt5819;
         int i_10_ = 20;
-        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_ha, Class274.aClass274_3507.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_);
+        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_ha, LocalisedText.aClass274_3507.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_);
         int i_11_ = i_4_ + Class258_Sub4.aClass373_8552.method3597(true);
         if (i != 16) method1154((byte) 9);
         int i_12_ = i_5_ + Class258_Sub4.aClass373_8552.method3594((byte) 95);

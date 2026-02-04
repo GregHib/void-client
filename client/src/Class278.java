@@ -96,18 +96,18 @@ final class Class278 {
         }
     }
 
-    final Class79 method2079(int i, int i_6_) {
+    final NPCType method2079(int i, int i_6_) {
         anInt3586++;
-        Class79 class79;
+        NPCType class79;
         synchronized (aClass60_3577) {
-            class79 = (Class79) aClass60_3577.method583(i, -104);
+            class79 = (NPCType) aClass60_3577.method583(i, -104);
         }
         if (class79 != null) return class79;
         byte[] is;
         synchronized (aClass45_3585) {
             is = aClass45_3585.method410(i_6_ + -1859, Class115.method1060(i, (byte) 69), Class253.method1920(127, i));
         }
-        class79 = new Class79();
+        class79 = new NPCType();
         class79.anInt1344 = i;
         class79.aClass278_1348 = this;
         if (is != null) class79.method798(111, new Class348_Sub49(is));

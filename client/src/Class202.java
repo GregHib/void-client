@@ -12,7 +12,7 @@ final class Class202 implements Runnable {
     static int anInt2646;
     static int anInt2647;
     private int anInt2648 = 0;
-    private final Class297 aClass297_2649;
+    private final SignLink aClass297_2649;
     static int anInt2650;
     static int anInt2651;
     private InputStream anInputStream2652;
@@ -207,7 +207,7 @@ final class Class202 implements Runnable {
         }
     }
 
-    Class202(Socket socket, Class297 class297, int i) throws IOException {
+    Class202(Socket socket, SignLink class297, int i) throws IOException {
         try {
             aSocket2668 = socket;
             aClass297_2649 = class297;

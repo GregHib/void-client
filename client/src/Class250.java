@@ -13,7 +13,7 @@ final class Class250 implements Runnable {
     static int anInt3225;
     static Class318_Sub1[] aClass318_Sub1Array3226;
     static int anInt3227 = 0;
-    Class297 aClass297_3228;
+    SignLink aClass297_3228;
 
     static final String method1909(byte i, String string) {
         if (i != 31) method1911((byte) 87);

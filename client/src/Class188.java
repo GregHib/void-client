@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class188 {
-    private final ha_Sub2 aHa_Sub2_2511;
+    private final GlToolkit aHa_Sub2_2511;
     static Class351 aClass351_2512;
     private Class337 aClass337_2513;
     static boolean aBoolean2514 = false;
@@ -140,7 +140,7 @@ final class Class188 {
         return new Class348_Sub17(is);
     }
 
-    Class188(ha_Sub2 var_ha_Sub2) {
+    Class188(GlToolkit var_ha_Sub2) {
         aHa_Sub2_2511 = var_ha_Sub2;
     }
 

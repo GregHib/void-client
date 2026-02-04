@@ -30,7 +30,7 @@ final class Class348_Sub9 extends Class348 {
     Class348_Sub19_Sub1 aClass348_Sub19_Sub1_6692;
     int anInt6693;
     int anInt6694;
-    Class51 aClass51_6695;
+    LocType aClass51_6695;
     int anInt6696;
     int[] anIntArray6697;
     int anInt6698;
@@ -180,7 +180,7 @@ final class Class348_Sub9 extends Class348 {
                     int i_12_ = (Class8.method214((this.aNpc_6691), -1));
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_;
-                        Class79 class79 = (this.aNpc_6691.aClass79_10505);
+                        NPCType class79 = (this.aNpc_6691.aClass79_10505);
                         if (class79.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
                         if (class79 == null) {
                             this.anInt6677 = this.anInt6694 = 0;
@@ -197,7 +197,7 @@ final class Class348_Sub9 extends Class348 {
                     }
                 }
             } else {
-                Class51 class51 = (this.aClass51_6695.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209, (byte) 47));
+                LocType class51 = (this.aClass51_6695.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209, (byte) 47));
                 if (class51 == null) {
                     this.anInt6681 = 256;
                     this.aBoolean6674 = false;

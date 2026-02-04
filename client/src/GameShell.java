@@ -1,4 +1,4 @@
-/* Applet_Sub1 - Decompiled by JODE
+/* GameShell - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.Date;
 
-public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListener, WindowListener {
+public abstract class GameShell extends Applet implements Runnable, FocusListener, WindowListener {
     static int anInt1;
     static int anInt2;
     static int anInt3;
@@ -368,24 +368,24 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         anInt28++;
         do {
             try {
-                if (Class297.aString3782 != null) {
-                    String string = Class297.aString3782.toLowerCase();
+                if (SignLink.aString3782 != null) {
+                    String string = SignLink.aString3782.toLowerCase();
                     if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
-                        String string_5_ = Class297.aString3796;
+                        String string_5_ = SignLink.aString3796;
                         if (string_5_.equals("1.1") || string_5_.startsWith("1.1.") || string_5_.equals("1.2") || string_5_.startsWith("1.2.")) {
                             method82(-119, "wrongjava");
                             break;
                         }
-                    } else if (string.indexOf("ibm") != -1 && (Class297.aString3796 == null || Class297.aString3796.equals("1.4.2"))) {
+                    } else if (string.indexOf("ibm") != -1 && (SignLink.aString3796 == null || SignLink.aString3796.equals("1.4.2"))) {
                         method82(81, "wrongjava");
                         break;
                     }
                 }
-                if (Class297.aString3796 != null && Class297.aString3796.startsWith("1.")) {
+                if (SignLink.aString3796 != null && SignLink.aString3796.startsWith("1.")) {
                     int i = 2;
                     int i_6_ = 0;
-                    while (Class297.aString3796.length() > i) {
-                        int i_7_ = Class297.aString3796.charAt(i);
+                    while (SignLink.aString3796.length() > i) {
+                        int i_7_ = SignLink.aString3796.charAt(i);
                         if (i_7_ < 48 || i_7_ > 57) break;
                         i++;
                         i_6_ = 10 * i_6_ - (-i_7_ + 48);
@@ -394,7 +394,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                 }
                 Applet applet = Class348_Sub40_Sub9.anApplet_Sub1_9169;
                 if (Class93.anApplet1530 != null) applet = Class93.anApplet1530;
-                Method method = Class297.aMethod3786;
+                Method method = SignLink.aMethod3786;
                 if (method != null) {
                     try {
                         method.invoke(applet, Boolean.TRUE);
@@ -466,7 +466,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                 Class348_Sub1_Sub3.anInt8818 = i_15_;
                 Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530;
-                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i_17_, string, i_18_, Class93.anApplet1530 != null);
+                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new SignLink(i_17_, string, i_18_, Class93.anApplet1530 != null);
                 Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, -10240, 1);
                 if (i_19_ != 50) anInt37 = -13;
                 while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) -126, 10L);
@@ -499,7 +499,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             Class52.aFrame4904.toFront();
             Insets insets = Class52.aFrame4904.getInsets();
             Class52.aFrame4904.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)));
-            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i, string, i_22_, true);
+            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new SignLink(i, string, i_22_, true);
             Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, i_23_ + -33739, 1);
             while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) 21, 10L);
         } catch (Exception exception) {

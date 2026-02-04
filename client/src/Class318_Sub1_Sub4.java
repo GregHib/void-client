@@ -46,7 +46,7 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         boolean bool_6_ = false;
         if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3777 && !Class348_Sub23_Sub1.aClass297_8992.aBoolean3794) {
             bool = (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609) >= 512 || (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609) == 0;
-            if (Class297.aString3803.startsWith("win")) {
+            if (SignLink.aString3803.startsWith("win")) {
                 bool_6_ = true;
                 bool_5_ = true;
             } else bool_5_ = true;

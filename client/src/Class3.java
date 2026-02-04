@@ -18,7 +18,7 @@ final class Class3 {
         anInt124++;
         int i_0_ = 9 / ((62 - i) / 47);
         Class27.anInt396 = -1;
-        Class51.aClass101_905 = null;
+        LocType.aClass101_905 = null;
         Class348_Sub49.anInt7207 = -1;
         Class369_Sub1.anInt8583 = -1;
         Class348_Sub42_Sub8_Sub2.aClass76_10436.method775((byte) 69);

@@ -19,20 +19,20 @@ final class Class239_Sub15 extends Class239 {
         if (i_0_ != 10144) return null;
         anInt6004++;
         if (i == 0) {
-            if ((double) Class75.aFloat1247 == 3.0) return Class125.aClass323_4921;
-            if ((double) Class75.aFloat1247 == 4.0) return Class14_Sub4.aClass323_8644;
-            if ((double) Class75.aFloat1247 == 6.0) return Class39.aClass323_521;
-            if ((double) Class75.aFloat1247 >= 8.0) return Class168.aClass323_2252;
+            if ((double) WorldMap.aFloat1247 == 3.0) return Class125.aClass323_4921;
+            if ((double) WorldMap.aFloat1247 == 4.0) return Class14_Sub4.aClass323_8644;
+            if ((double) WorldMap.aFloat1247 == 6.0) return Class39.aClass323_521;
+            if ((double) WorldMap.aFloat1247 >= 8.0) return Class168.aClass323_2252;
         } else if (i == 1) {
-            if ((double) Class75.aFloat1247 == 3.0) return Class39.aClass323_521;
-            if ((double) Class75.aFloat1247 == 4.0) return Class168.aClass323_2252;
-            if ((double) Class75.aFloat1247 == 6.0) return Class176.aClass323_2333;
-            if ((double) Class75.aFloat1247 >= 8.0) return Class285.aClass323_4754;
+            if ((double) WorldMap.aFloat1247 == 3.0) return Class39.aClass323_521;
+            if ((double) WorldMap.aFloat1247 == 4.0) return Class168.aClass323_2252;
+            if ((double) WorldMap.aFloat1247 == 6.0) return Class176.aClass323_2333;
+            if ((double) WorldMap.aFloat1247 >= 8.0) return Class285.aClass323_4754;
         } else if (i == 2) {
-            if ((double) Class75.aFloat1247 == 3.0) return Class176.aClass323_2333;
-            if ((double) Class75.aFloat1247 == 4.0) return Class285.aClass323_4754;
-            if ((double) Class75.aFloat1247 == 6.0) return Class348_Sub3.aClass323_6581;
-            if ((double) Class75.aFloat1247 >= 8.0) return Class240.aClass323_4672;
+            if ((double) WorldMap.aFloat1247 == 3.0) return Class176.aClass323_2333;
+            if ((double) WorldMap.aFloat1247 == 4.0) return Class285.aClass323_4754;
+            if ((double) WorldMap.aFloat1247 == 6.0) return Class348_Sub3.aClass323_6581;
+            if ((double) WorldMap.aFloat1247 >= 8.0) return Class240.aClass323_4672;
         }
         return null;
     }

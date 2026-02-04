@@ -326,8 +326,8 @@ final class Class348_Sub24 extends Class348 {
                         Class311.anInt3918++;
                         if (Class237.aBoolean3103) {
                             Class98.anInt1568++;
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((ha_Sub2.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 117, (InputStream_Sub2.anInt85 << 14 | (Class348_Sub40_Sub26.anInt9349 << 28) | Class79.anInt1404));
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((GlToolkit.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 117, (InputStream_Sub2.anInt85 << 14 | (Class348_Sub40_Sub26.anInt9349 << 28) | NPCType.anInt1404));
                             Class348_Sub42_Sub14.method3243(30, class348_sub47);
                             Class237.aBoolean3103 = false;
                         }
@@ -378,8 +378,8 @@ final class Class348_Sub24 extends Class348 {
                             if (Class184.aBoolean2469 && (-60000L + Class62.method599(-84) > Class34.aLong482)) Class318_Sub1_Sub2.method2405(i + -11313);
                             for (Class318_Sub9_Sub1 class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1872(i + -11424)); class318_sub9_sub1 != null; class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1878((byte) -105))) {
                                 if ((Class62.method599(i ^ ~0x2ce9) / 1000L + -5L) > (long) class318_sub9_sub1.anInt8787) {
-                                    if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -128, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3502.method2063(Class348_Sub33.anInt6967, 544))), "", "");
-                                    if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3503.method2063(Class348_Sub33.anInt6967, 544))), "", "");
+                                    if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -128, 0, (class318_sub9_sub1.aString8783 + (LocalisedText.aClass274_3502.method2063(Class348_Sub33.anInt6967, 544))), "", "");
+                                    if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + (LocalisedText.aClass274_3503.method2063(Class348_Sub33.anInt6967, 544))), "", "");
                                     class318_sub9_sub1.method2373(false);
                                 }
                             }

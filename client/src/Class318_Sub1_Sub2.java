@@ -18,7 +18,7 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1 {
         anInt8729++;
         Class234 class234 = null;
         try {
-            class234 = Class297.method2231("2", -1141472112);
+            class234 = SignLink.method2231("2", -1141472112);
             Class348_Sub49 class348_sub49 = new Class348_Sub49(3 + 6 * Class335.anInt4168);
             class348_sub49.writeByte(false, 1);
             class348_sub49.writeShort((byte) 107, Class335.anInt4168);

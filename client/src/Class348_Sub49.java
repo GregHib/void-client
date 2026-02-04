@@ -572,10 +572,10 @@ class Class348_Sub49 extends Class348 {
                         Class315.method2355(Class316.aClass348_Sub51_3959.aClass239_Sub26_7245.method1838(-32350), (byte) 50, false, Class59_Sub2_Sub1.aClass45_8667, Class345.anInt4270, 0, 2);
                         Class348_Sub40_Sub17_Sub1.method3093(i ^ 0x66);
                     } else Class348_Sub31.method3007(2, 22684);
-                    Class348_Sub4.aClass248_6601.method1892(-117, false);
+                    SystemInfo.aClass248_6601.method1892(-117, false);
                 } else {
                     Class348_Sub31.method3007(2, 22684);
-                    Class348_Sub4.aClass248_6601.method1892(i ^ ~0x4b, true);
+                    SystemInfo.aClass248_6601.method1892(i ^ ~0x4b, true);
                 }
             }
             if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (byte) -64) || i_71_ == 13) Class348_Sub8.aHa6654.method3673();

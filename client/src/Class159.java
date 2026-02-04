@@ -17,7 +17,7 @@ final class Class159 {
 
     static final void method1252(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, byte i_8_, int i_9_) {
         anInt2124++;
-        if (Class320.method2547(i_2_, (byte) 84)) {
+        if (InterfaceList.method2547(i_2_, (byte) 84)) {
             int i_11_ = 0;
             int i_12_ = 0;
             int i_13_ = 0;

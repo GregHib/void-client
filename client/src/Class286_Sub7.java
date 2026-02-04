@@ -147,7 +147,7 @@ final class Class286_Sub7 extends Class286 {
         aClass61_6284.method591(i + 21404);
     }
 
-    Class286_Sub7(ha_Sub2 var_ha_Sub2, Class83 class83) {
+    Class286_Sub7(GlToolkit var_ha_Sub2, Class83 class83) {
         super(var_ha_Sub2);
         try {
             aClass83_6278 = class83;

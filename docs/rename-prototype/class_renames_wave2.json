@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "description": "Wave 2 curated class renames (selected from 634→667 mapping TSV; excludes low-value placeholder dst names).",
+  "base_commit": "b3c2919",
+  "src_dir": "client/src",
+  "min_score": 0.8,
+  "source_tsv": "docs/rename-prototype/mapping_634_to_667_refactored.tsv",
+  "source_manifest": null,
+  "renames": [
+    {
+      "src": "Class348_Sub4",
+      "dst": "SystemInfo",
+      "score": 0.819954,
+      "anchors": [
+        "6.1",
+        "6.0",
+        "5.1",
+        "5.0",
+        "4.9",
+        "4.1"
+      ]
+    },
+    {
+      "src": "Applet_Sub1",
+      "dst": "GameShell",
+      "score": 0.808558,
+      "anchors": [
+        "wrongjava",
+        "stellardawn.com",
+        "runescape.com",
+        "jagex.com",
+        "invalidhost",
+        "ibm"
+      ]
+    },
+    {
+      "src": "Class297",
+      "dst": "SignLink",
+      "score": 0.835704,
+      "anchors": [
+        "setFocusTraversalKeysEnabled",
+        "setFocusCycleRoot",
+        "random.dat",
+        "main_file_cache.idx255",
+        "main_file_cache.idx",
+        "main_file_cache.dat2"
+      ]
+    },
+    {
+      "src": "Class320",
+      "dst": "InterfaceList",
+      "score": 0.826627,
+      "anchors": [
+        "if1"
+      ]
+    },
+    {
+      "src": "Class274",
+      "dst": "LocalisedText",
+      "score": 0.802172,
+      "anchors": [
+        "\u00c9changez ce re\u00e7u contre l'objet correspondant dans la banque de votre choix.",
+        "yellow:",
+        "white:",
+        "welle:",
+        "welle2:",
+        "weiss:"
+      ]
+    },
+    {
+      "src": "Class75",
+      "dst": "WorldMap",
+      "score": 0.847781,
+      "anchors": [
+        "area",
+        "details"
+      ]
+    },
+    {
+      "src": "Class51",
+      "dst": "LocType",
+      "score": 0.839217,
+      "anchors": [
+        "null"
+      ]
+    },
+    {
+      "src": "ha_Sub2",
+      "dst": "GlToolkit",
+      "score": 0.831417,
+      "anchors": [
+        "s3 graphics",
+        "GL_EXT_framebuffer_object",
+        "GL_EXT_framebuffer_multisample",
+        "GL_EXT_framebuffer_blit",
+        "GL_ARB_texture_float",
+        "radeon"
+      ]
+    },
+    {
+      "src": "Class79",
+      "dst": "NPCType",
+      "score": 0.818396,
+      "anchors": [
+        "null"
+      ]
+    }
+  ]
+}

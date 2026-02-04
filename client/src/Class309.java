@@ -33,7 +33,7 @@ final class Class309 implements Interface7 {
             int i_4_ = 0x7fffffff & (int) (l >>> 32);
             if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) Class298.method2252(true, i_0_, i, (byte) -119, 0, 0, 0, i_2_, i_3_);
             else {
-                Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_4_);
+                LocType class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_4_);
                 int i_5_;
                 int i_6_;
                 if (i_3_ == 0 || i_3_ == 2) {
@@ -108,7 +108,7 @@ final class Class309 implements Interface7 {
                 Class289.aClass262_3705.method1996(125);
                 if (!Class348_Sub1_Sub1.aBoolean8805) {
                     for (Class348_Sub21 class348_sub21 = (Class348_Sub21) class262.method1995(4); class348_sub21 != null; class348_sub21 = ((Class348_Sub21) class262.method1990((byte) 104))) {
-                        Class42 class42 = (Class75.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 82));
+                        Class42 class42 = (WorldMap.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 82));
                         if (Class60.method589(class42, -4)) {
                             boolean bool = Class190.method1425((byte) -31, class42, class348_sub21, i_14_, var_ha, i_15_);
                             if (bool) Class59.method549((byte) -43, class348_sub21, var_ha, class42);

@@ -9,7 +9,7 @@ abstract class Class258 implements Interface9 {
     static int anInt4848 = 0;
     int anInt4849;
     static int anInt4850;
-    ha_Sub2 aHa_Sub2_4851;
+    GlToolkit aHa_Sub2_4851;
     static int anInt4852;
     static int anInt4853;
     static int anInt4854;
@@ -107,7 +107,7 @@ abstract class Class258 implements Interface9 {
         super.finalize();
     }
 
-    Class258(ha_Sub2 var_ha_Sub2, int i, int i_5_, int i_6_, boolean bool) {
+    Class258(GlToolkit var_ha_Sub2, int i, int i_5_, int i_6_, boolean bool) {
         aBoolean4860 = bool;
         this.anInt4849 = i;
         anInt4847 = i_6_;

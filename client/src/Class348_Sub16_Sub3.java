@@ -84,8 +84,8 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
 
     static final void method2839(int i, int i_0_, int i_1_) {
         anInt8890++;
-        Class244.anInt4609 = i - Class75.anInt1266;
-        Class48.anInt859 = i_1_ + -Class75.anInt1263;
+        Class244.anInt4609 = i - WorldMap.anInt1266;
+        Class48.anInt859 = i_1_ + -WorldMap.anInt1263;
         if (i_0_ != -17) method2839(-112, -58, -95);
     }
 
@@ -601,7 +601,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
         anInt8938++;
     }
 
-    static final Class144 method2862(Class297 class297, String string, int i, int i_71_) {
+    static final Class144 method2862(SignLink class297, String string, int i, int i_71_) {
         try {
             int i_72_ = 16 % ((-37 - i) / 51);
             anInt8911++;

@@ -25,13 +25,13 @@ final class Class5_Sub3 extends Class5 {
 
     static final Class348_Sub21 method199(int i) {
         anInt8369++;
-        if (Class75.aClass262_1254 == null || r.aClass312_9716 == null) return null;
-        r.aClass312_9716.method2328(Class75.aClass262_1254, 75);
+        if (WorldMap.aClass262_1254 == null || r.aClass312_9716 == null) return null;
+        r.aClass312_9716.method2328(WorldMap.aClass262_1254, 75);
         Class348_Sub21 class348_sub21 = (Class348_Sub21) r.aClass312_9716.method2327((byte) -53);
         if (class348_sub21 == null) return null;
-        Class42 class42 = Class75.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 50);
+        Class42 class42 = WorldMap.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 50);
         if (i != 1) anInt8370 = -75;
-        if (class42 != null && class42.aBoolean609 && class42.method373(Class75.anInterface17_1244, 98)) return class348_sub21;
+        if (class42 != null && class42.aBoolean609 && class42.method373(WorldMap.anInterface17_1244, 98)) return class348_sub21;
         return Class356.method3479(-1);
     }
 
@@ -99,7 +99,7 @@ final class Class5_Sub3 extends Class5 {
                         }
                     }
                     if (bool) break;
-                    Class59.method544(((Class274.aClass274_3504.method2063(Class348_Sub33.anInt6967, 544)) + string), false, 4);
+                    Class59.method544(((LocalisedText.aClass274_3504.method2063(Class348_Sub33.anInt6967, 544)) + string), false, 4);
                 }
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("tq.A(" + i + ',' + i_5_ + ',' + (string != null ? "{...}" : "null") + ')'));

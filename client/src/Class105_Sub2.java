@@ -11,7 +11,7 @@ final class Class105_Sub2 extends Class105 {
     private boolean aBoolean8427;
     static int anInt8428;
     private int anInt8429 = 0;
-    private final ha_Sub2 aHa_Sub2_8430;
+    private final GlToolkit aHa_Sub2_8430;
     private Class258_Sub3_Sub1 aClass258_Sub3_Sub1_8431;
     private int anInt8432 = 0;
     static int anInt8433;
@@ -503,7 +503,7 @@ final class Class105_Sub2 extends Class105 {
         }
     }
 
-    Class105_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_105_, boolean bool) {
+    Class105_Sub2(GlToolkit var_ha_Sub2, int i, int i_105_, boolean bool) {
         aBoolean8427 = false;
         anInt8446 = 0;
         anInt8447 = 0;
@@ -512,7 +512,7 @@ final class Class105_Sub2 extends Class105 {
         aClass258_Sub3_Sub1_8434 = Class101.method904(81, var_ha_Sub2, bool ? 6408 : 6407, i, i_105_);
     }
 
-    Class105_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_106_, int i_107_, int i_108_) {
+    Class105_Sub2(GlToolkit var_ha_Sub2, int i, int i_106_, int i_107_, int i_108_) {
         aBoolean8427 = false;
         anInt8446 = 0;
         anInt8447 = 0;
@@ -521,7 +521,7 @@ final class Class105_Sub2 extends Class105 {
         aClass258_Sub3_Sub1_8434 = Class186_Sub1.method1401(var_ha_Sub2, i, 34037, i_107_, i_106_, i_108_);
     }
 
-    Class105_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_109_, int[] is, int i_110_, int i_111_) {
+    Class105_Sub2(GlToolkit var_ha_Sub2, int i, int i_109_, int[] is, int i_110_, int i_111_) {
         aBoolean8427 = false;
         anInt8446 = 0;
         anInt8447 = 0;

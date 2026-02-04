@@ -32,7 +32,7 @@ final class Class348_Sub42_Sub6 extends Class348_Sub42 {
                         } catch (Exception exception) {
                             /* empty */
                         }
-                        Applet_Sub1.method94(("Pausing for " + i_5_ + " seconds..."), -109);
+                        GameShell.method94(("Pausing for " + i_5_ + " seconds..."), -109);
                         Class50_Sub1.aStringArray5223 = strings;
                         Class121.anInt1794 = i_4_ - -1;
                         Class299_Sub1_Sub1.aLong8694 = (long) (i_5_ * 1000) + Class62.method599(-104);

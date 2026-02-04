@@ -118,7 +118,7 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
     static final void method2703(int i, int i_6_, int i_7_, byte i_8_) {
         anInt6536++;
         Class190 class190 = Class262.aClass190ArrayArray3335[i_6_][i_7_];
-        if (i_8_ == -13) Class161.method1260(false, i, (class190 == null ? Class274.aClass190_3547 : class190));
+        if (i_8_ == -13) Class161.method1260(false, i, (class190 == null ? LocalisedText.aClass190_3547 : class190));
     }
 
     private final int method2704(byte i) {
@@ -188,7 +188,7 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
         if (i != 2) method2705(-19);
         anInt6535++;
         aComponent6544 = component;
-        Method method = Class297.aMethod3783;
+        Method method = SignLink.aMethod3783;
         if (method != null) {
             try {
                 method.invoke(aComponent6544, Boolean.FALSE);

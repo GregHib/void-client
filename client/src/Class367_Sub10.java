@@ -22,7 +22,7 @@ final class Class367_Sub10 extends Class367 {
 
     static final void method3553(boolean bool, byte i, int i_1_) {
         if (i <= 98) method3553(true, (byte) 34, 120);
-        Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), bool, i_1_);
+        Class258_Sub3_Sub1.method1971(-2, LocalisedText.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), bool, i_1_);
         anInt7388++;
     }
 

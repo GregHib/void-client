@@ -34,7 +34,7 @@ final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3 implements Interf
         return false;
     }
 
-    Class318_Sub1_Sub3_Sub2(ha var_ha, Class51 class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
+    Class318_Sub1_Sub3_Sub2(ha var_ha, LocType class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
         super(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, class51.anInt895 == 1, Class220.method1606(i_9_, -27939, i_8_));
         try {
             this.aClass235_10045 = new Class235(var_ha, class51, i_8_, i_9_, this.plane, i_0_, this, bool, i_10_);

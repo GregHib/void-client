@@ -13,7 +13,7 @@ final class Class104 {
     private final int anInt1613;
     static int anInt1614;
     static int anInt1615;
-    private final ha_Sub2 aHa_Sub2_1616;
+    private final GlToolkit aHa_Sub2_1616;
     byte[] aByteArray1617;
     private final int anInt1618;
     static int anInt1619;
@@ -301,7 +301,7 @@ final class Class104 {
         Class124.aClass45_1848 = null;
     }
 
-    Class104(ha_Sub2 var_ha_Sub2, s_Sub2 var_s_Sub2) {
+    Class104(GlToolkit var_ha_Sub2, s_Sub2 var_s_Sub2) {
         try {
             aHa_Sub2_1616 = var_ha_Sub2;
             aS_Sub2_1622 = var_s_Sub2;

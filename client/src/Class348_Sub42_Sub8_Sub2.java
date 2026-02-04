@@ -21,7 +21,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         int i_2_ = 18 / ((i_1_ - 30) / 42);
         if (!Class296.method2224(i, (byte) -118, i_0_)) return false;
         if (Class239_Sub26.method1833((byte) -118, i, i_0_) | (0x9000 & i) != 0 | Class348_Sub23_Sub4.method2985(-31735, i_0_, i)) return true;
-        return ((0x37 & i_0_) == 0 & ((0x2000 & i) != 0 | Class274.method2058(i, i_0_, 88) | Class348_Sub42_Sub9.method3203(i_0_, (byte) 127, i)));
+        return ((0x37 & i_0_) == 0 & ((0x2000 & i) != 0 | LocalisedText.method2058(i, i_0_, 88) | Class348_Sub42_Sub9.method3203(i_0_, (byte) 127, i)));
     }
 
     Class348_Sub42_Sub8_Sub2(Object object, int i) {
@@ -105,7 +105,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             if (bool_3_) {
                 for (int i_7_ = 0; (i_7_ < Class348_Sub42_Sub12.anInt9604); i_7_++) {
                     if (Class122.aStringArray1808[i_7_].equals(string_6_)) {
-                        Class51.aStringArray932[i_7_] = string;
+                        LocType.aStringArray932[i_7_] = string;
                         Class122.aStringArray1808[i_7_] = string_4_;
                         Class348_Sub40_Sub21.aStringArray9275[i_7_] = string_5_;
                         aa_Sub2.aStringArray5197[i_7_] = string_6_;
@@ -113,7 +113,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     }
                 }
             } else {
-                Class51.aStringArray932[Class348_Sub42_Sub12.anInt9604] = string;
+                LocType.aStringArray932[Class348_Sub42_Sub12.anInt9604] = string;
                 Class122.aStringArray1808[Class348_Sub42_Sub12.anInt9604] = string_4_;
                 Class348_Sub40_Sub21.aStringArray9275[(Class348_Sub42_Sub12.anInt9604)] = string_5_;
                 aa_Sub2.aStringArray5197[Class348_Sub42_Sub12.anInt9604] = string_6_;
@@ -161,7 +161,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (bool != true) aClass230_10434 = null;
         if (Class348_Sub3.aClass114_6584 == Class116.aClass114_1762) {
-            Class239_Sub4.aString5882 = (Class348_Sub40_Sub25.anInt9341 > 2 ? Class299.aClass348_Sub49_Sub2_3813.readString((byte) -119) : Class274.aClass274_3509.method2063(Class348_Sub33.anInt6967, 544));
+            Class239_Sub4.aString5882 = (Class348_Sub40_Sub25.anInt9341 > 2 ? Class299.aClass348_Sub49_Sub2_3813.readString((byte) -119) : LocalisedText.aClass274_3509.method2063(Class348_Sub33.anInt6967, 544));
             Class333.anInt4144 = (Class348_Sub40_Sub25.anInt9341 <= 0 ? -1 : Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944));
             if (Class333.anInt4144 == 65535) Class333.anInt4144 = -1;
             Class348_Sub3.aClass114_6584 = null;
@@ -228,8 +228,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 }
             } while (false);
             if (!bool_20_ && Class250.anInt3227 == 0) {
-                Class357.aLongArray4410[Class79.anInt1359] = l_19_;
-                Class79.anInt1359 = (1 + Class79.anInt1359) % 100;
+                Class357.aLongArray4410[NPCType.anInt1359] = l_19_;
+                NPCType.anInt1359 = (1 + NPCType.anInt1359) % 100;
                 String string_22_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
                 if (i == 2 || i == 3) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_16_, string_22_, (byte) -126, -1, "<img=1>" + string, Class239_Sub16.method1788((byte) -76, l), 9, 0, string);
                 else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_16_, string_22_, (byte) -125, -1, string, Class239_Sub16.method1788((byte) -83, l), 9, 0, string);
@@ -497,7 +497,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     int i_63_ = 256 + 512 * i_61_;
                     int i_64_ = 512 * i_62_ + 256;
                     int i_65_ = i_60_;
-                    if (i_65_ < 3 && Class79.method802(i_62_, i_61_, true)) i_65_++;
+                    if (i_65_ < 3 && NPCType.method802(i_62_, i_61_, true)) i_65_++;
                     Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4 = (new Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + Class275.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_));
                     r_Sub2.aClass262_10492.method1999(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
                 }
@@ -851,8 +851,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 }
             } while (false);
             if (!bool_101_ && Class250.anInt3227 == 0) {
-                Class357.aLongArray4410[Class79.anInt1359] = l_100_;
-                Class79.anInt1359 = (1 + Class79.anInt1359) % 100;
+                Class357.aLongArray4410[NPCType.anInt1359] = l_100_;
+                NPCType.anInt1359 = (1 + NPCType.anInt1359) % 100;
                 String string_103_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
                 if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_98_, string_103_, (byte) -127, -1, "<img=1>" + string, null, 7, 0, string);
                 else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_98_, string_103_, (byte) -115, -1, "<img=0>" + string, null, 7, 0, string);
@@ -962,8 +962,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 if (i <= 1 && Class351.method3455(string_114_, 28280)) bool_119_ = true;
             } while (false);
             if (!bool_119_ && Class250.anInt3227 == 0) {
-                Class357.aLongArray4410[Class79.anInt1359] = l_118_;
-                Class79.anInt1359 = (Class79.anInt1359 + 1) % 100;
+                Class357.aLongArray4410[NPCType.anInt1359] = l_118_;
+                NPCType.anInt1359 = (NPCType.anInt1359 + 1) % 100;
                 String string_121_ = (Class239_Sub6.aClass355_5900.method3471(i_117_, (byte) -106).method3216(Class299.aClass348_Sub49_Sub2_3813, (byte) 42));
                 if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_114_, string_121_, (byte) -120, i_117_, "<img=1>" + string, Class239_Sub16.method1788((byte) 87, l), 20, 0, string);
                 else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_114_, string_121_, (byte) -111, i_117_, string, Class239_Sub16.method1788((byte) 80, l), 20, 0, string);
@@ -1074,9 +1074,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         if (Class176.aClass114_2331 == Class348_Sub3.aClass114_6584) {
             Class348_Sub42_Sub12.anInt9604 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             for (int i = 0; Class348_Sub42_Sub12.anInt9604 > i; i++) {
-                Class51.aStringArray932[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -36);
+                LocType.aStringArray932[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -36);
                 Class122.aStringArray1808[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 112);
-                if (Class122.aStringArray1808[i].equals("")) Class122.aStringArray1808[i] = Class51.aStringArray932[i];
+                if (Class122.aStringArray1808[i].equals("")) Class122.aStringArray1808[i] = LocType.aStringArray932[i];
                 Class348_Sub40_Sub21.aStringArray9275[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 84);
                 aa_Sub2.aStringArray5197[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -111);
                 if (aa_Sub2.aStringArray5197[i].equals("")) aa_Sub2.aStringArray5197[i] = Class348_Sub40_Sub21.aStringArray9275[i];
@@ -1113,7 +1113,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 else string_141_ = string;
             }
             String string_142_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -95);
-            if (i == 99) Applet_Sub1.method94(string_142_, -93);
+            if (i == 99) GameShell.method94(string_142_, -93);
             else {
                 if (!string_141_.equals("") && Class351.method3455(string_141_, 28280)) {
                     Class348_Sub3.aClass114_6584 = null;
@@ -1348,8 +1348,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 if (i <= 1 && Class351.method3455(string_175_, 28280)) bool_179_ = true;
             } while (false);
             if (!bool_179_ && Class250.anInt3227 == 0) {
-                Class357.aLongArray4410[Class79.anInt1359] = l_178_;
-                Class79.anInt1359 = (Class79.anInt1359 - -1) % 100;
+                Class357.aLongArray4410[NPCType.anInt1359] = l_178_;
+                NPCType.anInt1359 = (NPCType.anInt1359 - -1) % 100;
                 String string_181_ = (Class239_Sub6.aClass355_5900.method3471(i_177_, (byte) -93).method3216(Class299.aClass348_Sub49_Sub2_3813, (byte) 62));
                 if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_175_, string_181_, (byte) -110, i_177_, "<img=1>" + string, null, 18, 0, string);
                 else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_175_, string_181_, (byte) -112, i_177_, "<img=0>" + string, null, 18, 0, string);

@@ -61,7 +61,7 @@ final class Class61 {
         if (i <= 101) method594('\ufff3', -3);
     }
 
-    Class61(ha_Sub2 var_ha_Sub2, int i) {
+    Class61(GlToolkit var_ha_Sub2, int i) {
         anInt1109 = OpenGL.glGenLists(i);
     }
 }

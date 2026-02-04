@@ -1184,7 +1184,7 @@ final class Class377 extends ha_Sub3 {
 
     final void method3950(int i) {
         anInt9886++;
-        if (Class348_Sub4.aClass173_6602 == this.aClass173_8163) OpenGL.glBlendFunc(770, 771);
+        if (SystemInfo.aClass173_6602 == this.aClass173_8163) OpenGL.glBlendFunc(770, 771);
         else if (Class69.aClass173_1201 == this.aClass173_8163) OpenGL.glBlendFunc(1, 1);
         else if (Class273.aClass173_5169 == this.aClass173_8163) OpenGL.glBlendFunc(774, 1);
         if (i != 0) this.anInt9918 = 74;

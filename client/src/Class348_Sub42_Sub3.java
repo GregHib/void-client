@@ -95,15 +95,15 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
     }
 
     static final void method3177(int i, boolean bool) {
-        if (!bool || Class75.aClass348_Sub42_Sub14_1243 == null) Class239_Sub13.anInt5976 = -1;
-        else Class239_Sub13.anInt5976 = (Class75.aClass348_Sub42_Sub14_1243.anInt9628);
+        if (!bool || WorldMap.aClass348_Sub42_Sub14_1243 == null) Class239_Sub13.anInt5976 = -1;
+        else Class239_Sub13.anInt5976 = (WorldMap.aClass348_Sub42_Sub14_1243.anInt9628);
         anInt9500++;
-        Class75.aClass348_Sub42_Sub14_1243 = null;
+        WorldMap.aClass348_Sub42_Sub14_1243 = null;
         Class168.aClass46_2249 = null;
         Class348.anInt4290 = 0;
         Class289.aClass262_3705 = null;
-        Class75.method749();
-        Class75.aClass262_1254.method1996(127);
+        WorldMap.method749();
+        WorldMap.aClass262_1254.method1996(127);
         Class285.aClass323_4754 = null;
         Class168.aClass323_2252 = null;
         Class67.aClass105_4643 = null;
@@ -111,18 +111,18 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         Class176.aClass323_2333 = null;
         Class348_Sub3.aClass323_6581 = null;
         Class39.aClass323_521 = null;
-        Class75.aClass252_1246 = null;
+        WorldMap.aClass252_1246 = null;
         Class14_Sub4.aClass323_8644 = null;
         Class48.anInt859 = -1;
         if (i <= -44) {
             Class244.anInt4609 = -1;
             Class240.aClass323_4672 = null;
-            if (Class75.aClass153_1238 != null) {
-                Class75.aClass153_1238.method1219(7851);
-                Class75.aClass153_1238.method1220((byte) -100, 64, 128);
+            if (WorldMap.aClass153_1238 != null) {
+                WorldMap.aClass153_1238.method1219(7851);
+                WorldMap.aClass153_1238.method1220((byte) -100, 64, 128);
             }
-            if (Class75.aClass141_1242 != null) Class75.aClass141_1242.method1178(64, 1, 64);
-            if (Class75.aClass263_1245 != null) Class75.aClass263_1245.method2014(64, true);
+            if (WorldMap.aClass141_1242 != null) WorldMap.aClass141_1242.method1178(64, 1, 64);
+            if (WorldMap.aClass263_1245 != null) WorldMap.aClass263_1245.method2014(64, true);
             Class229.aClass194_2981.method1444(64, -124);
         }
     }

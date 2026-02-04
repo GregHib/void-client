@@ -32,7 +32,7 @@ final class Class279_Sub2 extends Class279 {
         anInterface20_6182.method76(anInt6181, this.anIntArray3603);
     }
 
-    Class279_Sub2(Class297 class297, int i) {
+    Class279_Sub2(SignLink class297, int i) {
         anInterface20_6182 = (Interface20) class297.method2244(21);
         anInt6181 = i;
     }

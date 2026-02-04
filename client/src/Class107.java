@@ -114,7 +114,7 @@ final class Class107 {
                     for (int i_14_ = 0; (Class348_Sub40_Sub38.anInt9479 > i_14_); i_14_++) {
                         int i_15_ = (Class348_Sub15.anIntArray6770[i_14_] * 4 - -2 - i_4_ / 128);
                         int i_16_ = (-(i_3_ / 128) + Class348_Sub40_Sub37.anIntArray9458[i_14_] * 4 - -2);
-                        Class51 class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, Class263.anIntArray3347[i_14_]));
+                        LocType class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, Class263.anIntArray3347[i_14_]));
                         if (class51.anIntArray945 != null) {
                             class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47);
                             if (class51 == null || (class51.anInt921 == -1)) continue;
@@ -136,7 +136,7 @@ final class Class107 {
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
                             if (npc.method2445((byte) -126) && ((npc.plane) == (Class132.aPlayer_1907.plane))) {
-                                Class79 class79 = (npc.aClass79_10505);
+                                NPCType class79 = (npc.aClass79_10505);
                                 if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
                                 if (class79 != null && class79.aBoolean1397 && class79.aBoolean1396) {
                                     int i_23_ = (-(i_4_ / 128) + (npc.x) / 128);
