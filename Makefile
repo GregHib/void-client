@@ -8,6 +8,7 @@ SOURCES_FILE ?= $(BUILD_DIR)/sources.txt
 LIBS ?= libs/clientlibs.jar
 MAIN_CLASS ?= Loader
 OUT_JAR ?= $(BUILD_DIR)/void-client.jar
+CLASSES_STAMP ?= $(CLASSES_DIR)/.compiled.stamp
 
 # Requested JDK major version. Used to validate JAVA_HOME and auto-select a bootstrapped JDK under ./.jdk/.
 JDK ?= 8
@@ -75,22 +76,34 @@ bootstrap:
 	@echo "Bootstrapping Temurin JDK $(JDK) into $(BOOTSTRAP_JAVA_HOME)"
 	@bash tools/bootstrap-jdk.sh "$(JDK)"
 
-sources:
-	@mkdir -p "$(BUILD_DIR)"
+JAVA_SOURCES := $(wildcard $(SRC_DIR)/*.java)
+LIB_JARS := $(subst :, ,$(LIBS))
+
+$(BUILD_DIR):
+	@mkdir -p "$@"
+
+$(CLASSES_DIR):
+	@mkdir -p "$@"
+
+sources: $(BUILD_DIR)
 	@find "$(SRC_DIR)" -maxdepth 1 -name '*.java' -print | sort > "$(SOURCES_FILE)"
 	@echo "Wrote $(SOURCES_FILE) ($$(wc -l < "$(SOURCES_FILE)") files)"
 
-compile: sources
-	@mkdir -p "$(CLASSES_DIR)"
+$(CLASSES_STAMP): $(JAVA_SOURCES) $(LIB_JARS) | $(CLASSES_DIR) $(BUILD_DIR)
 	@echo "Compiling with: $(JAVAC)"
+	@find "$(SRC_DIR)" -maxdepth 1 -name '*.java' -print | sort > "$(SOURCES_FILE)"
 	@"$(JAVAC)" -Xlint:none -cp "$(LIBS)" -d "$(CLASSES_DIR)" @"$(SOURCES_FILE)"
+	@touch "$(CLASSES_STAMP)"
 
-jar: compile
-	@mkdir -p "$(BUILD_DIR)"
+compile: $(CLASSES_STAMP)
+
+$(OUT_JAR): $(CLASSES_STAMP) | $(BUILD_DIR)
 	@echo "Jarring to: $(OUT_JAR)"
 	@"$(JAR)" cfe "$(OUT_JAR)" "$(MAIN_CLASS)" -C "$(CLASSES_DIR)" .
 
-run: jar
+jar: $(OUT_JAR)
+
+run: $(OUT_JAR)
 	@"$(JAVA)" -cp "$(OUT_JAR):$(LIBS)" "$(MAIN_CLASS)"
 
 clean:
