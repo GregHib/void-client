@@ -1,0 +1,883 @@
+src	dst	score	anchor_strings
+ha_Sub1	JavaToolkit	0.965506	Pure Java,No MT,CPU,off,
+Class64_Sub1	JavaModel	0.954551	FMT,
+Class7	com/jagex/graphics/awt/AwtFullscreenAdapter	0.952037	valid,Did not return to correct resolution!
+Class323	WorldMapFont	0.945221	ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"£$%^&*()-_=+[{]};:'@#~,<.>/?\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ,Helvetica
+Class279_Sub1	PcmPlayer_Sub1	0.944510	soundmax
+jagdx/IDirect3DVertexBuffer	jagdx/IDirect3DVertexBuffer	0.942068	
+Class105_Sub3_Sub1	JavaRgbSprite	0.932002	Can't capture alpha into a java_sprite_24
+oa	oa	0.924969	SSE,Cannot specify alpha with non-mono font unless someone writes it,sw3d,No MT,CPU,off
+jagtheora/theora/DecoderContext	jagtheora/theora/DecoderContext	0.913848	
+Class201	com/jagex/core/io/FileCache	0.897080	rw,c:/winnt/,c:/windows/,c:/rscache/,c:/,/tmp/
+Class378	D3DToolkit	0.866337	Direct3D,
+Class208	com/jagex/core/io/connection/ClientStreamWriter	0.855000	
+jaclib/peer/Peer	jaclib/peer/Peer	0.854058	jaclib.peer.PeerReference
+Class75	WorldMap	0.847781	area,details
+Class51	com/jagex/game/runetek6/config/loctype/LocType	0.839217	null
+Class297	com/jagex/sign/SignLink	0.835704	setFocusTraversalKeysEnabled,setFocusCycleRoot,random.dat,main_file_cache.idx255,main_file_cache.idx,main_file_cache.dat2
+Class367_Sub7	Class26_Sub10	0.834328	environment_mapped_water_v,environment_mapped_water_f,dx
+ha_Sub2	GlToolkit	0.831417	s3 graphics,GL_EXT_framebuffer_object,GL_EXT_framebuffer_multisample,GL_EXT_framebuffer_blit,GL_ARB_texture_float,radeon
+Class367_Sub5	Class26_Sub8	0.829204	uw_model_unlit,uw_model_lit,uw_ground_unlit,uw_ground_lit,dx
+Class320	InterfaceList	0.826627	if1
+Class348_Sub40_Sub14	Node_Sub1_Sub37	0.820736	Curve operation requires at least two markers
+Class348_Sub4	SystemInfo	0.819954	6.1,6.0,5.1,5.0,4.9,4.1
+Class367_Sub6	Class26_Sub9	0.819410	transparent_water,dx
+Class79	com/jagex/game/runetek6/config/npctype/NPCType	0.818396	null
+Applet_Sub1	com/jagex/game/runetek6/client/GameShell	0.808558	wrongjava,stellardawn.com,runescape.com,jagex.com,invalidhost,ibm
+Class274	com/jagex/game/LocalisedText	0.802172	Échangez ce reçu contre l'objet correspondant dans la banque de votre choix.,yellow:,white:,welle:,welle2:,weiss:
+Class294	AwtLoadingScreen	0.799728	yOffset,yMiddle,xOffset,xMiddle,width,top
+Class286_Sub1	Class101_Sub6	0.795095	!!ARBvp1.0
+ATTRIB  iPos         = vertex.position;
+ATTRIB  iNormal      = vertex.normal;
+ATTRIB  iColour      = vertex.color;
+ATTRIB  iTexCoord    = vertex.texcoord[0];
+OUTPUT  oPos         = result.position;
+OUTPUT  oColour      = result.color;
+OUTPUT  oTexCoord0   = result.texcoord[0];
+OUTPUT  oTexCoord1   = result.texcoord[1];
+OUTPUT  oFogCoord    = result.fogcoord;
+PARAM   fogParams    = program.local[0];
+PARAM   waterPlane   = program.local[1];
+PARAM   tMatrix[4]   = { state.matrix.texture[0] };
+PARAM   pMatrix[4]   = { state.matrix.projection };
+PARAM   mvMatrix[4]  = { state.matrix.modelview };
+TEMP    viewPos, viewNormal, fogFactor, colour, ndotl;
+DP4   viewPos.x, mvMatrix[0], iPos;
+DP4   viewPos.y, mvMatrix[1], iPos;
+DP4   viewPos.z, mvMatrix[2], iPos;
+DP4   viewPos.w, mvMatrix[3], iPos;
+SUB   fogFactor.x, -viewPos.z, fogParams.x;
+MUL   fogFactor.x, fogFactor.x, 0.001953125;
+MAD   fogFactor.y, iTexCoord.z, fogParams.z, fogParams.w;
+SUB   fogFactor.z, -viewPos.z, fogParams.y;
+MUL   fogFactor.z, fogFactor.z, 0.00390625;
+MUL   fogFactor.x, fogFactor.x, fogFactor.y;
+MIN   fogFactor, fogFactor, 1;
+MAX   fogFactor, fogFactor, 0;
+MUL   fogFactor.z, fogFactor.z, iTexCoord.z;
+MAD   viewPos.xyz, waterPlane.xyzw, fogFactor.zzzz, viewPos.xyzw;
+MAX   oTexCoord1.xyz, fogFactor.xxxx, fogFactor.yyyy;
+MOV   oTexCoord1.w, 1;
+DP3   viewNormal.x, mvMatrix[0], iNormal;
+DP3   viewNormal.y, mvMatrix[1], iNormal;
+DP3   viewNormal.z, mvMatrix[2], iNormal;
+DP3   ndotl.x, viewNormal, state.light[0].position;
+DP3   ndotl.y, viewNormal, state.light[1].position;
+MAX   ndotl, ndotl, 0;
+MOV   colour, state.lightmodel.ambient;
+MAD   colour, state.light[0].diffuse, ndotl.xxxx, colour;
+MAD   colour, state.light[1].diffuse, ndotl.yyyy, colour;
+MUL   oColour, iColour, colour;
+DP4   oPos.x, pMatrix[0], viewPos;
+DP4   oPos.y, pMatrix[1], viewPos;
+DP4   oPos.z, pMatrix[2], viewPos;
+DP4   oPos.w, pMatrix[3], viewPos;
+MOV   oFogCoord.x, viewPos.z;
+DP3   oTexCoord0.x, tMatrix[0], iTexCoord;
+DP3   oTexCoord0.y, tMatrix[1], iTexCoord;
+MOV   oTexCoord0.zw, iTexCoord;
+END
+,!!ARBvp1.0
+ATTRIB  iPos         = vertex.position;
+ATTRIB  iNormal      = vertex.normal;
+ATTRIB  iColour      = vertex.color;
+ATTRIB  iTexCoord    = vertex.texcoord[0];
+OUTPUT  oPos         = result.position;
+OUTPUT  oColour      = result.color;
+OUTPUT  oTexCoord0   = result.texcoord[0];
+OUTPUT  oTexCoord1   = result.texcoord[1];
+OUTPUT  oFogCoord    = result.fogcoord;
+PARAM   fogParams    = program.local[0];
+PARAM   waterPlane   = program.local[1];
+PARAM   pMatrix[4]   = { state.matrix.projection };
+PARAM   mvMatrix[4]  = { state.matrix.modelview };
+PARAM   texMatrix[4] = { state.matrix.texture[0] };
+TEMP    viewPos, viewNormal, fogFactor, depth, colour, ndotl;
+DP4   viewPos.x, mvMatrix[0], iPos;
+DP4   viewPos.y, mvMatrix[1], iPos;
+DP4   viewPos.z, mvMatrix[2], iPos;
+DP4   viewPos.w, mvMatrix[3], iPos;
+SUB   fogFactor.x, -viewPos.z, fogParams.x;
+MUL   fogFactor.x, fogFactor.x, 0.001953125;
+DP4   depth, waterPlane, viewPos;
+MAD   fogFactor.y, -depth, fogParams.z, fogParams.w;
+SUB   fogFactor.z, -viewPos.z, fogParams.y;
+MUL   fogFactor.z, fogFactor.z, 0.00390625;
+MIN   fogFactor, fogFactor, 1;
+MAX   fogFactor, fogFactor, 0;
+MUL   fogFactor.z, fogFactor.z, -depth;
+MAD   viewPos.xyz, waterPlane.xyzw, fogFactor.zzzz, viewPos.xyzw;
+MAX   oTexCoord1.xyz, fogFactor.xxxx, fogFactor.yyyy;
+MOV   oTexCoord1.w, 1;
+DP3   viewNormal.x, mvMatrix[0], iNormal;
+DP3   viewNormal.y, mvMatrix[1], iNormal;
+DP3   viewNormal.z, mvMatrix[2], iNormal;
+DP3   ndotl.x, viewNormal, state.light[0].position;
+DP3   ndotl.y, viewNormal, state.light[1].position;
+MAX   ndotl, ndotl, 0;
+MOV   colour, state.lightmodel.ambient;
+MAD   colour, state.light[0].diffuse, ndotl.xxxx, colour;
+MAD   colour, state.light[1].diffuse, ndotl.yyyy, colour;
+MUL   oColour, iColour, colour;
+DP4   oPos.x, pMatrix[0], viewPos;
+DP4   oPos.y, pMatrix[1], viewPos;
+DP4   oPos.z, pMatrix[2], viewPos;
+DP4   oPos.w, pMatrix[3], viewPos;
+MOV   oFogCoord.x, viewPos.z;
+DP4   oTexCoord0.x, texMatrix[0], iTexCoord;
+DP4   oTexCoord0.y, texMatrix[1], iTexCoord;
+DP4   oTexCoord0.z, texMatrix[2], iTexCoord;
+MOV   oTexCoord0.w, 1;
+END
+,!!ARBvp1.0
+ATTRIB  iPos         = vertex.position;
+ATTRIB  iColour      = vertex.color;
+ATTRIB  iTexCoord    = vertex.texcoord[0];
+OUTPUT  oPos         = result.position;
+OUTPUT  oColour      = result.color;
+OUTPUT  oTexCoord0   = result.texcoord[0];
+OUTPUT  oTexCoord1   = result.texcoord[1];
+OUTPUT  oFogCoord    = result.fogcoord;
+PARAM   fogParams    = program.local[0];
+PARAM   waterPlane   = program.local[1];
+PARAM   tMatrix[4]   = { state.matrix.texture[0] };
+PARAM   pMatrix[4]   = { state.matrix.projection };
+PARAM   mvMatrix[4]  = { state.matrix.modelview };
+TEMP    viewPos, fogFactor;
+DP4   viewPos.x, mvMatrix[0], iPos;
+DP4   viewPos.y, mvMatrix[1], iPos;
+DP4   viewPos.z, mvMatrix[2], iPos;
+DP4   viewPos.w, mvMatrix[3], iPos;
+SUB   fogFactor.x, -viewPos.z, fogParams.x;
+MUL   fogFactor.x, fogFactor.x, 0.001953125;
+MAD   fogFactor.y, iTexCoord.z, fogParams.z, fogParams.w;
+SUB   fogFactor.z, -viewPos.z, fogParams.y;
+MUL   fogFactor.z, fogFactor.z, 0.00390625;
+MUL   fogFactor.x, fogFactor.x, fogFactor.y;
+MIN   fogFactor, fogFactor, 1;
+MAX   fogFactor, fogFactor, 0;
+MUL   fogFactor.z, fogFactor.z, iTexCoord.z;
+MAD   viewPos.xyz, waterPlane.xyzw, fogFactor.zzzz, viewPos.xyzw;
+MAX   oTexCoord1.xyz, fogFactor.xxxx, fogFactor.yyyy;
+MOV   oTexCoord1.w, 1;
+MOV   oColour, iColour;
+DP4   oPos.x, pMatrix[0], viewPos;
+DP4   oPos.y, pMatrix[1], viewPos;
+DP4   oPos.z, pMatrix[2], viewPos;
+DP4   oPos.w, pMatrix[3], viewPos;
+MOV   oFogCoord.x, viewPos.z;
+DP3   oTexCoord0.x, tMatrix[0], iTexCoord;
+DP3   oTexCoord0.y, tMatrix[1], iTexCoord;
+MOV   oTexCoord0.zw, iTexCoord;
+END
+,!!ARBvp1.0
+ATTRIB  iPos         = vertex.position;
+ATTRIB  iColour      = vertex.color;
+ATTRIB  iTexCoord    = vertex.texcoord[0];
+OUTPUT  oPos         = result.position;
+OUTPUT  oColour      = result.color;
+OUTPUT  oTexCoord0   = result.texcoord[0];
+OUTPUT  oTexCoord1   = result.texcoord[1];
+OUTPUT  oFogCoord    = result.fogcoord;
+PARAM   fogParams    = program.local[0];
+PARAM   waterPlane   = program.local[1];
+PARAM   pMatrix[4]   = { state.matrix.projection };
+PARAM   mvMatrix[4]  = { state.matrix.modelview };
+PARAM   texMatrix[4] = { state.matrix.texture[0] };
+TEMP    viewPos, fogFactor, depth;
+DP4   viewPos.x, mvMatrix[0], iPos;
+DP4   viewPos.y, mvMatrix[1], iPos;
+DP4   viewPos.z, mvMatrix[2], iPos;
+DP4   viewPos.w, mvMatrix[3], iPos;
+SUB   fogFactor.x, -viewPos.z, fogParams.x;
+MUL   fogFactor.x, fogFactor.x, 0.001953125;
+DP4   depth, waterPlane, viewPos;
+MAD   fogFactor.y, -depth, fogParams.z, fogParams.w;
+SUB   fogFactor.z, -viewPos.z, fogParams.y;
+MUL   fogFactor.z, fogFactor.z, 0.00390625;
+MIN   fogFactor, fogFactor, 1;
+MAX   fogFactor, fogFactor, 0;
+MUL   fogFactor.z, fogFactor.z, -depth;
+MAD   viewPos.xyz, waterPlane.xyzw, fogFactor.zzzz, viewPos.xyzw;
+MAX   oTexCoord1.xyz, fogFactor.xxxx, fogFactor.yyyy;
+MOV   oTexCoord1.w, 1;
+MOV   oColour, iColour;
+DP4   oPos.x, pMatrix[0], viewPos;
+DP4   oPos.y, pMatrix[1], viewPos;
+DP4   oPos.z, pMatrix[2], viewPos;
+DP4   oPos.w, pMatrix[3], viewPos;
+MOV   oFogCoord.x, viewPos.z;
+DP4   oTexCoord0.x, texMatrix[0], iTexCoord;
+DP4   oTexCoord0.y, texMatrix[1], iTexCoord;
+DP4   oTexCoord0.z, texMatrix[2], iTexCoord;
+MOV   oTexCoord0.w, 1;
+END
+
+Class206	PlayerEntity	0.794771	
+Class272_Sub2	com/jagex/core/io/socket/ProxySocketFactory	0.794122	supportsPreemptiveAuthorization,proxy-authenticate: ,java.net.useSystemProxies,https,http,getProxyAuth
+Class181	com/jagex/game/runetek6/config/npctype/NPCType	0.793783	null
+Class248	rs2/client/clan/settings/ClanSettings	0.792577	null
+Class376	com/jagex/game/runetek6/config/hitmarktype/HitmarkType	0.791793	
+Class202	rs2/client/clan/settings/ClanSettings	0.790094	null
+Class285	Class72	0.789706	ARGH!
+Class318_Sub1_Sub3_Sub5	com/jagex/game/runetek6/config/objtype/ObjType	0.789660	null
+Class348_Sub13	ServerConnectionReader	0.787217	null
+Class31	com/jagex/game/runetek6/config/hitmarktype/HitmarkType	0.785055	%1,
+Class368	com/jagex/game/runetek6/config/npctype/NPCType	0.781216	null
+Class169	Class406	0.780544	
+Class235	com/jagex/game/runetek6/config/npctype/NPCType	0.780382	null
+Class314_Sub1	rs2/client/clan/settings/ClanSettings	0.778923	null,
+Class307	ServerConnectionReader	0.777352	null
+Class363	MainLogicManager	0.776148	
+Class186	MainLogicManager	0.774341	
+Class286_Sub9	PlayerList	0.774303	s:lr
+Class377	GlxToolkit	0.773478	GL_ARB_texture_non_power_of_two,radeon,nvidia,mesa,intel,hd
+Class318_Sub1_Sub5_Sub1	rs2/client/clan/settings/ClanSettings	0.773307	null
+Class279	com/jagex/game/runetek6/config/npctype/NPCType	0.772676	null
+Class167	com/jagex/game/runetek6/config/npctype/NPCType	0.771507	null
+Class90	NPCList	0.770881	
+Class348_Sub40_Sub12	Node_Sub1_Sub14	0.770808	Invalid gradient preset
+Class318_Sub1_Sub3_Sub1	rs2/client/clan/settings/ClanSettings	0.770756	null
+Class311	rs2/client/clan/settings/ClanSettings	0.770544	null
+Class324	com/jagex/graphics/Font	0.769270	u=,u,str=,str,shad=-1,shad=
+Class34	com/jagex/game/runetek6/config/npctype/NPCType	0.766372	null
+Class356	rs2/client/clan/settings/ClanSettings	0.765861	null
+Class77	NPCList	0.765282	
+Class348_Sub40_Sub18	PlayerList	0.764898	nsn3,nsn2,nsn1,nsn0
+Class52	LoginManager	0.764708	10001
+Class318_Sub1_Sub4_Sub1	rs2/client/clan/settings/ClanSettings	0.764650	null
+Class348_Sub16_Sub2	rs2/client/clan/settings/ClanSettings	0.764240	null
+Class70	MainLogicManager	0.763119	
+s_Sub3	InterfaceManager	0.762431	null
+s_Sub2	InterfaceManager	0.762375	null
+Npc	com/jagex/game/runetek6/config/objtype/ObjType	0.761455	null
+Class55	Video	0.761369	kate,Failed to load jagtheora library,jagtheora,
+Class49	rs2/client/clan/settings/ClanSettings	0.760964	null
+Class318_Sub1_Sub1_Sub2	rs2/client/clan/settings/ClanSettings	0.760100	null
+Class318_Sub7	rs2/client/clan/settings/ClanSettings	0.759274	null
+Class186_Sub1	Class51	0.759109	
+Class244	rs2/client/clan/settings/ClanSettings	0.758998	null
+Class105_Sub1	com/jagex/game/runetek6/config/objtype/ObjType	0.758945	null
+Class239_Sub16	com/jagex/game/runetek6/config/enumtype/EnumType	0.757949	null
+Class348_Sub5	ScriptRunner	0.757934	null
+Class32	rs2/client/clan/settings/ClanSettings	0.757144	null
+Class174	com/jagex/game/runetek6/config/npctype/NPCType	0.757059	null
+Class372	com/jagex/game/runetek6/config/enumtype/EnumType	0.757058	null
+Class190	com/jagex/game/runetek6/config/npctype/NPCType	0.756452	null
+Class89	ServerConnectionReader	0.755379	null
+Class143	com/jagex/graphics/FontMetrics	0.755360	times,shy,reg,nbsp,lt,img=
+Class117	com/jagex/game/runetek6/config/enumtype/EnumType	0.754559	null
+Class182	NPCList	0.754313	
+Class352	com/jagex/game/runetek6/config/enumtype/EnumType	0.753830	null
+Class318_Sub1_Sub3_Sub3	com/jagex/game/runetek6/config/loctype/LocType	0.752950	null
+Class318_Sub1_Sub3_Sub4	InterfaceManager	0.752907	null
+Class101_Sub3	rs2/client/clan/settings/ClanSettings	0.752207	null
+Class340	com/jagex/game/runetek6/config/enumtype/EnumType	0.751984	null
+Class64_Sub3	InterfaceManager	0.751432	null,
+Class101_Sub2	com/jagex/game/runetek6/config/objtype/ObjType	0.751065	null
+Class362	ServerConnectionReader	0.750379	null
+Class45	InterfaceManager	0.749888	null,
+Class112	com/jagex/game/runetek6/config/enumtype/EnumType	0.749882	null
+Class105_Sub2	rs2/client/clan/settings/ClanSettings	0.749502	null
+Class322	com/jagex/graphics/MonochromeImageCache	0.748266	Can only retrieve a full image cache
+Class291	rs2/client/clan/settings/ClanSettings	0.748194	null
+Class193	ScriptRunner	0.747728	null
+Class326	com/jagex/game/runetek6/config/enumtype/EnumType	0.746859	null
+Class233	com/jagex/game/runetek6/config/npctype/NPCType	0.746675	null
+Class318_Sub1_Sub1_Sub1	rs2/client/clan/settings/ClanSettings	0.746353	null,
+Class239_Sub17	debugconsole	0.746241	
+Class348_Sub42_Sub17	com/jagex/game/runetek6/config/enumtype/EnumType	0.746186	null
+Class46	rs2/client/clan/settings/ClanSettings	0.745593	null,
+Class318_Sub1_Sub4_Sub2	com/jagex/game/runetek6/config/loctype/LocType	0.745591	null
+Class245	ServerConnectionReader	0.744966	null
+Class107	com/jagex/game/runetek6/config/enumtype/EnumType	0.744799	null
+Class64_Sub2	com/jagex/game/runetek6/config/loctype/LocType	0.744602	null
+Class5	com/jagex/game/runetek6/config/enumtype/EnumType	0.744159	null
+Class111	com/jagex/game/runetek6/config/enumtype/EnumType	0.743917	null
+Class318_Sub1_Sub3_Sub2	rs2/client/clan/settings/ClanSettings	0.743626	null
+Class348_Sub42_Sub5	ServerConnectionReader	0.743432	null
+Class64	InterfaceManager	0.742832	null
+Class262	com/jagex/game/runetek6/config/objtype/ObjType	0.742815	null
+Class331	com/jagex/core/util/TimeUtils	0.742606	Sep,Oct,Nov,May,Mar,Jun
+Class101	ScriptRunner	0.740899	null
+Class268	ScriptRunner	0.739756	null
+Class110	com/jagex/game/runetek6/config/enumtype/EnumType	0.739305	null
+InputStream_Sub2	ServerConnectionReader	0.739183	null
+Class135	com/jagex/game/runetek6/config/enumtype/EnumType	0.739097	null
+Class217	com/jagex/game/runetek6/config/enumtype/EnumType	0.738758	null
+Class255	rs2/client/clan/settings/ClanSettings	0.737877	null
+Class99	ServerConnectionReader	0.737866	null
+Class150	com/jagex/game/runetek6/config/enumtype/EnumType	0.737593	null
+Class194	com/jagex/game/runetek6/config/enumtype/EnumType	0.736624	null
+Class348_Sub40_Sub32	ScriptRunner	0.736247	null,
+Class68	com/jagex/core/constants/ModeWhere	0.735921	LIVE
+Class280	com/jagex/game/runetek6/config/npctype/NPCType	0.735827	null
+Class139	NPCList	0.735480	gnpov1
+Class195	rs2/client/clan/settings/ClanSettings	0.735468	null,
+Class237	InterfaceManager	0.735085	null
+Class226	com/jagex/game/runetek6/config/enumtype/EnumType	0.734284	null
+Class348_Sub32	rs2/client/clan/settings/ClanSettings	0.734273	null
+Class319	com/jagex/game/runetek6/config/enumtype/EnumType	0.733686	null
+Class267	ScriptRunner	0.733020	null
+Class97	InterfaceManager	0.732479	null
+Class87	com/jagex/game/runetek6/config/enumtype/EnumType	0.732456	null
+Class136	com/jagex/game/runetek6/config/enumtype/EnumType	0.732157	null
+Class59	InterfaceManager	0.731397	null,
+Class232	com/jagex/game/runetek6/config/npctype/NPCType	0.731059	null
+Class348_Sub9	InterfaceManager	0.730766	null,
+Class348_Sub42_Sub20	rs2/client/clan/settings/ClanSettings	0.730458	null
+Class278	rs2/client/clan/settings/ClanSettings	0.730113	null
+Class130	rs2/client/loading/library/LibraryManager	0.729716	
+Class154	com/jagex/game/runetek6/config/npctype/NPCType	0.729599	null
+Class14	InterfaceManager	0.729118	null,
+Class299_Sub2_Sub1	ServerConnectionReader	0.729091	null
+Class348_Sub40_Sub30	com/jagex/game/runetek6/config/npctype/NPCType	0.729064	null
+Class318_Sub1	InterfaceManager	0.729049	null
+Class116	Static218	0.728040	EOF,2
+Class240	rs2/client/clan/settings/ClanSettings	0.727565	null
+Class348_Sub42_Sub2	ScriptRunner	0.727510	null
+Class84	InterfaceManager	0.727122	null
+Class348_Sub42_Sub3	ScriptRunner	0.726832	null
+Class348_Sub38	rs2/client/clan/settings/ClanSettings	0.726588	null
+Class355	com/jagex/game/runetek6/config/enumtype/EnumType	0.726572	null
+Class187	com/jagex/game/runetek6/config/enumtype/EnumType	0.726519	null
+Class166	com/jagex/game/runetek6/config/enumtype/EnumType	0.726234	null
+Class239	ScriptRunner	0.726023	null
+Class153	com/jagex/game/runetek6/config/enumtype/EnumType	0.725964	null
+Class271	com/jagex/game/runetek6/config/enumtype/EnumType	0.725404	null
+Class230	com/jagex/game/runetek6/config/enumtype/EnumType	0.725129	null
+Class5_Sub3	com/jagex/game/runetek6/config/enumtype/EnumType	0.725103	null
+Class318_Sub2	ServerConnectionReader	0.725038	null
+Class82	debugconsole	0.724977	zoom ,wm3 succeeded,wm3 failed,wm3,wm2 succeeded,wm2 failed
+Class318_Sub4	ServerConnectionReader	0.724369	null
+Class367_Sub4	ScriptRunner	0.724347	null
+Class348_Sub42_Sub8	debugconsole	0.724331	
+Class5_Sub2	debugconsole	0.723925	
+Class286_Sub7	ScriptRunner	0.723886	null
+Class104	com/jagex/game/runetek6/config/npctype/NPCType	0.723445	null
+Class348_Sub47	ScriptRunner	0.723156	null
+Class348_Sub42_Sub11	debugconsole	0.723141	 
+Class308	com/jagex/game/runetek6/config/enumtype/EnumType	0.722844	null
+Class178	ScriptRunner	0.722798	null
+Class259	com/jagex/game/runetek6/config/enumtype/EnumType	0.722667	null
+Class219	com/jagex/game/runetek6/config/enumtype/EnumType	0.721850	null
+Class237_Sub1	InterfaceManager	0.721359	null,
+Class263	ScriptRunner	0.721062	null
+Class239_Sub11	LoadingManager	0.721015	sw3d,jagmisc,hw3d,huffman,details,jaggl
+Class65	com/jagex/game/runetek6/config/enumtype/EnumType	0.721002	null
+Class348_Sub40_Sub26	ServerConnectionReader	0.718882	null
+Class157	MainLogicManager	0.718378	
+Class239_Sub1	com/jagex/game/runetek6/config/enumtype/EnumType	0.717994	null
+Class66	ScriptRunner	0.717732	v: ,slow,op: ,null char,event_opbase,bad command
+Class56	ScriptRunner	0.717522	null
+Class286_Sub4	Class101_Sub7	0.716166	waveIntensity,waveExponent,varying vec3 wvVertex;
+varying float waterDepth;
+uniform vec3 sunDir;
+uniform vec4 sunColour;
+uniform float sunExponent;
+uniform vec2 waveIntensity;
+uniform float waveExponent;
+uniform float breakWaterDepth;
+uniform float breakWaterOffset;
+uniform sampler3D normalSampler;
+uniform samplerCube envMapSampler;
+void main() {
+vec4 wnNormal = texture3D(normalSampler, gl_TexCoord[0].xyz).rbga;
+wnNormal.xyz = 2.0*wnNormal.xyz-1.0;
+vec3 wnVector = normalize(wvVertex);
+vec3 wnReflection = reflect(wnVector, wnNormal.xyz);
+vec3 envColour = textureCube(envMapSampler, wnReflection).rgb;
+vec4 specularColour = sunColour*pow(clamp(-dot(sunDir, wnReflection), 0.0, 1.0), sunExponent);
+float shoreFactor = clamp(waterDepth/breakWaterDepth-breakWaterOffset*wnNormal.w, 0.0, 1.0);
+float waveFactor = pow(1.0-shoreFactor, waveExponent)-0.5;
+waveFactor = -4.0*waveFactor*waveFactor+1.0;
+float ndote = dot(wnVector, wnNormal.xyz);
+float fresnel = pow(1.0-abs(ndote), 1.0);
+vec4 surfaceColour = mix(vec4(envColour, fresnel*shoreFactor), (waveIntensity.x*wnNormal.wwww)+waveIntensity.y, waveFactor)+specularColour*shoreFactor;
+gl_FragColor = vec4(mix(surfaceColour.rgb, gl_Fog.color.rgb, gl_FogFragCoord), surfaceColour.a);
+}
+,uniform float time;
+uniform float scale;
+varying vec3 wvVertex;
+varying float waterDepth;
+void main() {
+waterDepth = gl_MultiTexCoord0.z;
+vec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;
+wvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);
+wvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);
+wvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);
+gl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;
+gl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;
+gl_TexCoord[0].z = time;
+gl_TexCoord[0].w = 1.0;
+gl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);
+gl_Position = ftransform();
+}
+,time,sunExponent
+Class59_Sub2_Sub1	InterfaceManager	0.716055	null
+Class348_Sub43	MiniMenu	0.715827	<col=ffffff>,
+Class348_Sub23_Sub4	com/jagex/game/runetek6/sound/OggKateStream	0.715325	SUB
+IOException_Sub1	ServerConnectionReader	0.715241	null
+Class367_Sub9	Class26_Sub3	0.713867	environment_mapped_water_v,environment_mapped_water_f,time,sunExponent,sunDir,sunColour
+Class348_Sub42_Sub9_Sub1	com/jagex/game/runetek6/config/enumtype/EnumType	0.713584	null
+Class151	ServerConnectionReader	0.713506	null
+Class132	ScriptRunner	0.713438	null,
+Class135_Sub1	ScriptRunner	0.713426	null
+Class318_Sub1_Sub5	ScriptRunner	0.713373	null
+Class330	com/jagex/game/runetek6/config/npctype/NPCType	0.713366	null
+Class348_Sub42_Sub6	Static363	0.713310	pause
+Class348_Sub40_Sub37	ServerConnectionReader	0.713274	null
+za_Sub2	com/jagex/game/runetek6/config/enumtype/EnumType	0.712780	null
+Class39	com/jagex/game/runetek6/config/enumtype/EnumType	0.712136	null
+Class348_Sub40_Sub23	InterfaceManager	0.712114	null
+Class348	ServerConnectionReader	0.711755	null
+Class242	com/jagex/game/runetek6/config/enumtype/EnumType	0.711646	null
+Class2	com/jagex/game/runetek6/config/enumtype/EnumType	0.711259	null
+Class28	ScriptRunner	0.711140	null
+Class59_Sub1_Sub2	NPCList	0.710981	
+InputStream_Sub1	com/jagex/core/crypto/Whirlpool	0.710620	ᠣ웨螸ŏ㚦틵祯酒悼鮎ꌌ笵ᷠퟂ⹋﹗ᕷ㟥鿰䫚壉⤊놠殅뵝ჴ쬾է䆋Ᵹ闘ﯮ籦���䞞쨭뼇굚茳挂ꩱ젙䧙守騦㊰햀뻍㑈ｺ遟⁨᪮둔錢擱猒䀈쏬���贽需켫皂혛떯橐䗳ワ㽕ꋪ斺⿀���﵍鉵ڊ닦ฟ拔ꢖ暈╙葲㥌幸㢌톥댡鰞䏇ﰄ写洍﫟縤㮫츑轎럫㲁铷뤓ⳓ쐃噄義⪻셓���鵬ㅴ겉ᓡᘺ椉炶탭챂颤⡜
+Class239_Sub3	ScriptRunner	0.710027	null
+Class327	com/jagex/trigger/ClientTriggerType	0.709824	
+Class33	com/jagex/game/runetek6/config/enumtype/EnumType	0.709663	null
+Class69	ScriptRunner	0.708116	null
+Class348_Sub42_Sub16_Sub2	com/jagex/game/runetek6/config/enumtype/EnumType	0.708052	null
+Class25	com/jagex/game/runetek6/config/enumtype/EnumType	0.707968	null
+Class348_Sub40_Sub15	com/jagex/game/runetek6/config/enumtype/EnumType	0.707706	null
+Class348_Sub12	Loading	0.707673	
+Class125	ServerConnectionReader	0.707398	null
+Class258_Sub1	ServerConnectionReader	0.707344	null
+Class309	ScriptRunner	0.707096	null
+Class361	rs2/client/clan/settings/ClanSettings	0.707062	null
+Class346	com/jagex/game/runetek6/config/enumtype/EnumType	0.706926	null
+Class261	ServerConnectionReader	0.706471	null
+Class38	Static668	0.706282	pause,
+Class272	ServerConnectionReader	0.706256	null
+Class348_Sub14	ServerConnectionReader	0.706109	null
+Class348_Sub17	com/jagex/game/runetek6/config/npctype/NPCType	0.705876	null
+Class296	ServerConnectionReader	0.705189	null
+Class137	ServerConnectionReader	0.704968	null
+Class183	rs2/client/clan/settings/ClanSettings	0.704438	null,
+Class353	ServerConnectionReader	0.704369	null,
+Class306	ServerConnectionReader	0.704099	null
+Class258_Sub3	rs2/client/clan/settings/ClanSettings	0.703496	null,
+Class223	com/jagex/game/runetek6/config/enumtype/EnumType	0.703446	null
+Class295	ScriptRunner	0.703438	null
+Class258_Sub2	com/jagex/game/runetek6/config/enumtype/EnumType	0.703014	null
+Class22	com/jagex/game/runetek6/config/npctype/NPCType	0.702648	null
+Class127	rs2/client/clan/settings/ClanSettings	0.702181	null
+aa_Sub2	ScriptRunner	0.701310	null
+Class14_Sub1	com/jagex/game/runetek6/config/loctype/LocType	0.700847	null
+Class367_Sub11	Class26_Sub11	0.700690	uw_model_unlit,uw_model_lit,uw_ground_unlit,uw_ground_lit,gl
+Class365	com/jagex/game/runetek6/config/enumtype/EnumType	0.700555	null
+Class122	ServerConnectionReader	0.700329	null
+Class239_Sub21	com/jagex/core/stringtools/general/StringTools	0.699805	null
+Class59_Sub2_Sub2	com/jagex/core/stringtools/general/StringTools	0.698851	<lt>,<gt>,null
+Class371	ServerConnectionReader	0.698851	null
+Class258_Sub3_Sub1	com/jagex/game/runetek6/config/enumtype/EnumType	0.698135	null
+RuntimeException_Sub1	ServerConnectionReader	0.698000	null
+Class50_Sub3	rs2/client/clan/settings/ClanSettings	0.697998	null
+Class44	ServerConnectionReader	0.697591	null
+Class369_Sub2	ServerConnectionReader	0.696981	null
+Class348_Sub1_Sub1	ServerConnectionReader	0.696729	null
+Class348_Sub42_Sub12	ServerConnectionReader	0.696671	null
+Class253	com/jagex/game/runetek6/config/npctype/NPCType	0.696457	null
+Class135_Sub2	ScriptRunner	0.696232	null,
+Class369	ServerConnectionReader	0.696164	null
+Class348_Sub42_Sub16	com/jagex/game/runetek6/config/enumtype/EnumType	0.695703	null
+Class348_Sub5_Sub1	Node_Sub31_Sub1	0.695072	uniform vec3 step;
+uniform sampler2D baseTex;
+void main() {
+	vec4 fragCol = texture2D(baseTex, gl_TexCoord[0].xy)*0.091396265;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-1.0*step.xy))*0.088584304;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 1.0*step.xy))*0.088584304;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-2.0*step.xy))*0.08065692;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 2.0*step.xy))*0.08065692;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-3.0*step.xy))*0.068989515;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 3.0*step.xy))*0.068989515;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-4.0*step.xy))*0.055434637;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 4.0*step.xy))*0.055434637;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-5.0*step.xy))*0.04184426;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 5.0*step.xy))*0.04184426;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-6.0*step.xy))*0.029672023;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 6.0*step.xy))*0.029672023;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-7.0*step.xy))*0.019765828;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 7.0*step.xy))*0.019765828;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-8.0*step.xy))*0.012369139;
+	fragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 8.0*step.xy))*0.012369139;
+	gl_FragColor = fragCol;
+}
+,uniform vec3 params;
+uniform sampler2D sceneTex;
+const vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);
+void main() {
+    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);
+    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));
+}
+,step,sceneTex,params,bloomTex
+Class141	rs2/client/clan/settings/ClanSettings	0.693941	null,
+Class50	ScriptRunner	0.693559	null
+Class73	ScriptRunner	0.693527	null
+Class9	LoadingManager	0.692929	hw3d,jaclib
+Class286_Sub2	com/jagex/game/runetek6/config/enumtype/EnumType	0.692624	null
+Class299_Sub1_Sub1	ServerConnectionReader	0.691616	null
+client	client	0.691495	worldid,worldflags,wip,userFlow,under,sw3d.dll
+Class250	Static386	0.691308	directlogin ,--> , 
+Class239_Sub25	ToolkitOption	0.690861	jagdx
+Class258_Sub4	com/jagex/game/runetek6/config/enumtype/EnumType	0.689765	null
+Class374	com/jagex/game/runetek6/config/enumtype/EnumType	0.689651	null
+Class369_Sub1	ServerConnectionReader	0.689606	null
+Class119_Sub2	com/jagex/game/runetek6/config/enumtype/EnumType	0.688918	null
+Class108	com/jagex/core/constants/ModeWhere	0.688884	WTWIP
+Class14_Sub2	ServerConnectionReader	0.688876	null,
+Class287	ServerConnectionReader	0.686967	null
+Class286_Sub5	Sprites	0.686866	timerbar_default,scrollbar,otherlevel,name_icons,mapflag,mapdots
+ha_Sub3	rs2/client/clan/settings/ClanSettings	0.684015	null,
+Class50_Sub4	ServerConnectionReader	0.683137	null
+Class246	ServerConnectionReader	0.683116	null
+Class147	com/jagex/game/runetek6/config/enumtype/EnumType	0.682916	null
+r_Sub1	com/jagex/core/stringtools/general/StringTools	0.680031	null,
+Class43	Static708	0.677187	cookieprefix,cookiehost
+Class358	com/jagex/game/runetek6/config/enumtype/EnumType	0.675732	null
+Class156	com/jagex/core/util/JagException	0.675195	@,:,&,%40,%3a,%26
+Class369_Sub3	ServerConnectionReader	0.674488	null
+Class247	Static385	0.674451	showingVideoAd
+Class337	com/jagex/game/runetek6/config/enumtype/EnumType	0.673247	null
+Class354	com/jagex/game/runetek6/config/enumtype/EnumType	0.673224	null
+Class288_Sub1	com/jagex/game/runetek6/config/enumtype/EnumType	0.670825	null
+Class265	com/jagex/game/runetek6/config/enumtype/EnumType	0.669824	null
+Class228	com/jagex/game/runetek6/client/GameShell	0.667788	finalize,nativeLibraries,name,handle
+Class48	com/jagex/game/runetek6/config/enumtype/EnumType	0.666117	null
+aa_Sub3	ServerConnectionReader	0.665384	null
+Class348_Sub29	com/jagex/game/runetek6/config/enumtype/EnumType	0.664032	null
+Class30	rs2/client/loading/library/LibraryManager	0.663468	x86,ppc,i586,i486,i386,x86_64
+Class55_Sub1	com/jagex/core/constants/ModeWhere	0.663412	LIVE,
+Class185	ScriptRunner	0.661867	null
+Class76	com/jagex/core/constants/ModeWhere	0.661650	LOCAL
+Class119_Sub1	InterfaceManager	0.658842	 ->,null
+Class163	MiniMenu	0.657851	 <img=,>
+Class59_Sub1_Sub1	com/jagex/game/runetek6/config/enumtype/EnumType	0.657162	null
+Class348_Sub49_Sub1	SystemInfo	0.656075	microsoft
+Class59_Sub2	com/jagex/Client	0.654640	pt,nl,fr,en,de
+Class373_Sub2	com/jagex/game/compression/huffman/WordPack	0.652204	Cabbage
+Class292	rs2/client/clan/settings/ClanSettings	0.651330	 - 
+Class348_Sub40_Sub1	Static488	0.651271	Z,S,J,I,D,C
+Class348_Sub40	com/jagex/graphics/texture/TextureOp	0.650440	This operation does not have a monochrome output,This operation does not have a colour output
+Class299_Sub1_Sub2	com/jagex/game/runetek6/config/enumtype/EnumType	0.649817	null
+aa	Static344	0.647618	>,--> ,
+aa_Sub1	ServerConnectionReader	0.642572	null
+Class348_Sub42_Sub14	ScriptRunner	0.641446	null
+Class348_Sub40_Sub16	Static314	0.637657	tbrefresh
+Class239_Sub9	com/jagex/core/constants/ModeGame	0.636533	game4
+Class286_Sub8	Static708	0.628820	cookiehost
+Class285_Sub2	ScriptRunner	0.625809	null
+Class348_Sub6	ScriptRunner	0.620307	null
+Class348_Sub24	com/jagex/sign/SignLink	0.613063	os.version,os.name,os.arch,java.version,java.vendor,Unknown
+Class106	com/jagex/graphics/Fonts	0.612049	p12_full,p11_full,b12_full
+Class188	Class202	0.611644	uniform float rcpRelief;
+uniform vec2 sampleSize;
+uniform sampler3D heightMap;
+void main() {
+float dx = texture3D(heightMap, vec3(-sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r;
+float dy = texture3D(heightMap, vec3(0.0, -sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(0.0, sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r;
+gl_FragColor = vec4(0.5+normalize(vec3(dx, dy, rcpRelief))*0.5, texture3D(heightMap, gl_TexCoord[0].xyz).r);
+}
+,sampleSize,rcpRelief,heightMap
+Class14_Sub4	MiniMenu	0.610855	<col=ffff00>,<col=ffb000>,<col=ff7000>,<col=ff3000>,<col=ff0000>,<col=c0ff00>
+Class88	LoginManager	0.604932	zap,unzap,tbi,loggedin,blank.ws,jagtheora
+Class96	D3DToolkit	0.602547	createToolkit,jagdx,
+Class93	Static146	0.598818	Wed,Tue,Thu,Sun,Sat,Mon
+Class348_Sub42_Sub8_Sub2	ScriptRunner	0.597647	<img=1>,<img=0>,null,
+Class334	SystemInfo	0.595381	linux,mac,win
+Class152	com/jagex/core/compress/GzipDecompressor	0.592930	Invalid GZIP header!,Invalid GZIP compressed data!
+Class59_Sub1	Static344	0.592801	--> ,
+Class348_Sub40_Sub7	InterfaceManager	0.586280	WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.,null,
+Class213	MiniMenu	0.582676	<col=ffffff>,<col=ffff00>
+Class325	MiniMenu	0.582334	<col=ffffff>,Null
+Class348_Sub49	com/jagex/core/io/Packet	0.581436	Bad version number in gjstr2,
+Class85	com/jagex/core/crypto/Whirlpool	0.577238	LOGIC ERROR
+Class348_Sub42_Sub10	QuickChatPhraseType	0.575534	...,
+Loader	client	0.570512	worldid,worldflags,sskey,sitesettings_member,settings,objecttag
+Class211	PlayerList	0.567637	hr:lr
+Class234	com/jagex/core/io/FileOnDisk	0.558378	r
+Player	PlayerEntity	0.558236	gdn1,
+Class367_Sub2	Class26_Sub1	0.548347	transparent_water,gl
+Class239_Sub28	com/jagex/game/LocalisedText	0.540006	: 
+Class348_Sub40_Sub20	com/jagex/core/constants/ModeWhat	0.537276	RC
+Class133	Static716	0.534348	com.sun.management:type=HotSpotDiagnostic,HeapDump setup error:
+Class348_Sub16_Sub1	PlayerList	0.530316	---endgpp---
+Class239_Sub8	InterfaceManager	0.527562	Hidden-use,null
+Class191	rs2/client/clan/settings/ClanSettings	0.527330	null,
+Class164	ScriptRunner	0.524861	null,
+Class348_Sub16_Sub3	rs2/client/web/ClientURLTools	0.520054	_blank,openjs,_top,loggedout
+Class158	Static21	0.519959	dumpHeap,HeapDump error:
+Class286_Sub6	Class101_Sub4	0.518912	varying vec3 wvVertex;
+varying float waterDepth;
+uniform vec3 sunDir;
+uniform vec4 sunColour;
+uniform float sunExponent;
+uniform float breakWaterDepth;
+uniform float breakWaterOffset;
+uniform sampler3D normalSampler;
+uniform samplerCube envMapSampler;
+void main() {
+vec4 wnNormal = texture3D(normalSampler, gl_TexCoord[0].xyz).rbga;
+wnNormal.xyz = 2.0*wnNormal.xyz-1.0;
+vec3 wnVector = normalize(wvVertex);
+vec3 wnReflection = reflect(wnVector, wnNormal.xyz);
+vec3 envColour = textureCube(envMapSampler, wnReflection).rgb;
+vec4 specularColour = sunColour*pow(clamp(-dot(sunDir, wnReflection), 0.0, 1.0), sunExponent);
+float shoreFactor = clamp(waterDepth/breakWaterDepth-breakWaterOffset*wnNormal.w, 0.0, 1.0);
+float ndote = dot(wnVector, wnNormal.xyz);
+float fresnel = pow(1.0-abs(ndote), 2.0);
+vec4 surfaceColour = vec4(envColour, fresnel*shoreFactor)+specularColour*shoreFactor;
+gl_FragColor = vec4(mix(surfaceColour.rgb, gl_Fog.color.rgb, gl_FogFragCoord), surfaceColour.a);
+}
+,uniform float time;
+uniform float scale;
+varying vec3 wvVertex;
+varying float waterDepth;
+void main() {
+waterDepth = gl_MultiTexCoord0.z;
+vec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;
+wvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);
+wvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);
+wvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);
+gl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;
+gl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;
+gl_TexCoord[0].z = time;
+gl_TexCoord[0].w = 1.0;
+gl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);
+gl_Position = ftransform();
+}
+,time,sunExponent,sunDir,sunColour
+Class60	com/jagex/core/datastruct/ref/ReferenceCache	0.516853	s>cs
+Class199	AwtLoadingScreen	0.514428	Helvetica
+ha	com/jagex/graphics/Toolkit	0.510895	NFTI
+Class318_Sub1_Sub4	LoginManager	0.503579	10001,
+Class293	Class46	0.499362	
+Class239_Sub24	Static515	0.490746	S3,S2,S1,M4,M3,M2
+Class119	Class134	0.490000	
+Class145	JavaComplexBlendedTile	0.490000	
+Class198	JavaGenericBlendedTile	0.490000	
+Class236	Class107	0.490000	
+Class360	Class378	0.490000	
+jagdx/D3DADAPTER_IDENTIFIER	jagdx/D3DADAPTER_IDENTIFIER	0.490000	
+jagdx/D3DCAPS	jagdx/D3DCAPS	0.490000	
+jagdx/D3DDISPLAYMODE	jagdx/D3DVSHADERCAPS2_0	0.490000	
+jagdx/D3DPSHADERCAPS2_0	jagdx/D3DPSHADERCAPS2_0	0.490000	
+jagdx/D3DVSHADERCAPS2_0	jagdx/D3DVSHADERCAPS2_0	0.490000	
+com/ms/directX/DDSurfaceDesc	jagdx/D3DVSHADERCAPS2_0	0.490000	
+com/ms/directX/DSBufferDesc	com/jagex/core/constants/FileStore	0.490000	
+com/ms/directX/DSCursors	Static521	0.490000	
+com/ms/directX/WaveFormatEx	com/jagex/core/constants/TileFlag	0.490000	
+Class41	Class301	0.490000	
+Class102	Class127	0.490000	
+Class144	com/jagex/sign/SignedResource	0.490000	
+Class266	JavaSimpleBlendedTile	0.490000	
+Class343	com/jagex/sound/vorbis/VorbisResidue	0.489806	
+Class207	com/jagex/IndexedImage	0.489767	
+Class197	com/jagex/sound/Envelope	0.489719	
+Class276	com/jagex/sound/vorbis/VorbisMapping	0.489445	
+jagdx/D3DPRESENT_PARAMETERS	jagdx/D3DPRESENT_PARAMETERS	0.488630	
+Class165	com/jagex/graphics/awt/AwtMouseAdapter	0.486699	
+jaclib/memory/Stream	jaclib/memory/Stream	0.484662	
+Class204	com/jagex/sound/midi/MidiSequence	0.482501	
+Class328	Static245	0.481377	Shader compile failed:
+Class318_Sub8	WorldMapTile	0.480000	
+Class348_Sub16	com/jagex/sound/AudioBuss	0.480000	
+Class348_Sub19	Static521	0.480000	
+Class348_Sub28	Static66	0.480000	
+Class348_Sub30	com/jagex/sound/Node_Sub3	0.480000	
+Class348_Sub39	Node_Sub23	0.480000	
+com/ms/com/ComFailException	Static666	0.480000	
+Class324_Sub4	JavaMonoAlphaFont	0.479965	
+Class318_Sub3	com/jagex/graphics/PickingCylinder	0.479903	
+Class324_Sub1	JavaMonoFont	0.479846	
+Class324_Sub3	JavaFont	0.479713	
+Class318_Sub9_Sub2_Sub1	MovingParticle	0.479543	
+Class324_Sub2	Font_Sub1	0.479413	
+dxVertexLayout	dxVertexLayout	0.479131	
+n	n	0.479101	
+h	h	0.479029	
+Class348_Sub19_Sub1	com/jagex/sound/VariableRateSoundPacket	0.478633	
+Class324_Sub5	Font_Sub2	0.478546	
+Class342	InterfaceManager	0.478174	null
+Class318_Sub1_Sub5_Sub2	rs2/client/clan/settings/ClanSettings	0.476628	null
+Class348_Sub23_Sub1	client	0.476238	0,_self,1,
+Class210	com/jagex/sound/vorbis/VorbisFloor	0.475941	
+i	i	0.474936	
+ba	ba	0.474936	
+Class348_Sub16_Sub4	com/jagex/sound/Node_Sub6_Sub3	0.474811	
+Class67	rs2/client/clan/settings/ClanSettings	0.474799	null
+jaclib/memory/heap/NativeHeap	jaclib/memory/heap/NativeHeap	0.473739	
+jaclib/memory/heap/NativeHeapBuffer	jaclib/memory/heap/NativeHeapBuffer	0.473549	
+na	na	0.471943	
+Class349	com/jagex/sound/Filter	0.471796	
+ya	ya	0.470394	
+Class14_Sub3	Static720	0.470380	EOF,
+jaggl/MapBuffer	jaggl/MapBuffer	0.469006	
+Class288	com/jagex/core/constants/ModeWhat	0.468983	WIP
+Class318_Sub1_Sub2	client	0.468664	2
+Class317	com/jagex/sound/SynthSound	0.467169	
+Class80	com/jagex/sound/Instrument	0.466338	
+Class370	com/jagex/sound/vorbis/VorbisCodebook	0.465948	
+Class10	com/jagex/core/constants/ModeGame	0.465890	runescape
+jagdx/IDirect3DDevice	jagdx/IDirect3DDevice	0.465256	
+jagdx/IDirect3D	jagdx/IDirect3D	0.464480	
+jagtheora/theora/TheoraInfo	jagtheora/theora/TheoraInfo	0.464353	
+jagtheora/vorbis/VorbisInfo	jagtheora/vorbis/VorbisInfo	0.464353	
+xa	xa	0.463544	
+Class26	com/jagex/core/constants/ModeWhere	0.462824	WTQA
+Class175	com/jagex/core/datastruct/ref/key/KeyedReferenceCache	0.461036	s>cs
+Class348_Sub51	ClientOptions	0.459458	arm
+jagdx/IDirect3DSwapChain	jagdx/IDirect3DSwapChain	0.459149	
+jaclib/memory/NativeBuffer	jaclib/memory/NativeBuffer	0.458221	
+ja	ja	0.458126	
+Class348_Sub42_Sub15	ScriptRunner	0.457421	null
+Class367_Sub8	com/jagex/game/runetek6/config/objtype/ObjType	0.453619	null
+t	t	0.452272	
+Class348_Sub40_Sub34	LoginManager	0.451251	loggedout
+jagex3/graphics2/hw/NativeInterface	jagex3/graphics2/hw/NativeInterface	0.450357	
+Class348_Sub10	com/jagex/sound/vorbis/VorbisSound	0.449163	
+j	j	0.445482	
+jagtheora/misc/SimplePeer	jagtheora/misc/SimplePeer	0.444675	
+Class179	rs2/client/web/ClientURLTools	0.443224	haveie6,havefirefox,1,mac,win
+Class4	com/jagex/AnimFrame	0.442054	
+Class318_Sub10	ParticleSystem	0.440080	
+netscape/security/ForbiddenTargetException	jagdx/sja	0.440000	
+jaclib/hardware_info/HardwareInfo	jaclib/hardware_info/HardwareInfo	0.440000	
+jagdx/fda	jagdx/sja	0.440000	
+com/ms/com/IUnknown	Static221	0.440000	
+com/ms/dll/Callback	Static221	0.440000	
+Class6	ServerConnectionReader	0.437916	null
+Class369_Sub3_Sub1	com/jagex/game/runetek6/client/GameShell	0.437820	dummy
+jagtheora/theora/Frame	jagtheora/theora/Frame	0.436797	
+s_Sub1	Ground_Sub3	0.434428	
+p	p	0.433280	
+Class105_Sub3_Sub3	JavaArgbSprite	0.432151	
+jagdx/IDirect3DBaseTexture	jagdx/IDirect3DVertexDeclaration	0.430000	
+jagdx/IDirect3DCubeTexture	jagdx/IDirect3DCubeTexture	0.430000	
+jagdx/IDirect3DEventQuery	jagdx/IDirect3DEventQuery	0.430000	
+jagdx/IDirect3DPixelShader	jagdx/IDirect3DVertexDeclaration	0.430000	
+jagdx/IDirect3DSurface	jagdx/IDirect3DSurface	0.430000	
+jagdx/IDirect3DTexture	jagdx/IDirect3DTexture	0.430000	
+jagdx/IDirect3DVertexDeclaration	jagdx/IDirect3DVertexDeclaration	0.430000	
+jagdx/IDirect3DVertexShader	jagdx/IDirect3DVertexDeclaration	0.430000	
+jagdx/IDirect3DVolumeTexture	jagdx/IDirect3DVolumeTexture	0.430000	
+jagtheora/ogg/OggPacket	jagtheora/ogg/OggPacket	0.430000	
+jagtheora/ogg/OggPage	jagtheora/ogg/OggPage	0.430000	
+jagtheora/theora/SetupInfo	jagtheora/theora/SetupInfo	0.430000	
+jaclib/peer/IUnknownReference	jaclib/peer/IUnknownReference	0.430000	
+jaclib/peer/NativeHeapPeerReference	jaclib/peer/IUnknownReference	0.430000	
+Class348_Sub25	JavaAnimatedTexture	0.426665	
+Class86	Static439	0.425522	
+Class105_Sub3_Sub2	JavaIndexedSprite	0.423473	
+Class348_Sub16_Sub5	com/jagex/sound/SoundStream	0.421707	
+jagtheora/theora/GranulePos	jagtheora/theora/GranulePos	0.419574	
+Class109	Rasterizer	0.419229	
+Class329	Static141	0.416042	
+wa	wa	0.413272	
+Class348_Sub2	com/jagex/sound/midi/MidiSong	0.412996	
+jagtheora/vorbis/DSPState	jagtheora/vorbis/DSPState	0.412733	
+jagtheora/vorbis/VorbisBlock	jagtheora/vorbis/VorbisBlock	0.412733	
+Class23	Static18	0.412545	
+jagtheora/ogg/OggSyncState	jagtheora/ogg/OggSyncState	0.412116	
+jagtheora/theora/TheoraComment	jagtheora/theora/TheoraComment	0.412116	
+jagtheora/vorbis/VorbisComment	jagtheora/theora/TheoraComment	0.412116	
+jagex3/jagmisc/jagmisc	jagex3/jagmisc/jagmisc	0.411894	
+jaclib/peer/uda	jaclib/peer/os	0.410907	
+jagdx/IDirect3DIndexBuffer	jagdx/IDirect3DIndexBuffer	0.410907	
+jagtheora/ogg/OggStreamState	jagtheora/ogg/OggStreamState	0.409196	
+Class279_Sub2	PcmPlayer_Sub2	0.407721	
+Class134	com/jagex/graphics/ms/MicrosoftFullscreenAdapter	0.405083	
+a	a	0.404527	
+jagdx/PixelBuffer	jagdx/PixelBuffer	0.401912	
+Class72	com/jagex/graphics/skybox/SkyBoxSphere	0.400839	
+Class348_Sub31_Sub1	JavaDefaultSurface	0.396235	
+jaggl/OpenGL	jaggl/OpenGL	0.396122	
+jaclib/peer/PeerReference	jaclib/peer/PeerReference	0.394987	
+jaclib/peer/IUnknown	jaclib/peer/IUnknown	0.393678	
+Class105	com/jagex/graphics/Sprite	0.392386	
+jagdx/GeometryBuffer	jagdx/GeometryBuffer	0.390620	
+Class214	com/jagex/core/util/Arrays	0.385658	
+Callback_Sub1	com/jagex/graphics/ms/MicrosoftJavaMouseCallback	0.385591	
+Class339	com/jagex/sign/SignLink	0.383523	http://
+Class270	Static523	0.383366	
+jagdx/D3DLIGHT	jagdx/D3DLIGHT	0.381186	
+jagdx/VertexElementCollection	jagdx/VertexElementCollection	0.381186	
+Class318_Sub9	Tile	0.379629	
+Class101_Sub1	JavaMatrix	0.378894	
+Class310	Class61	0.378688	
+Class142	Class11	0.373223	
+Class212	com/jagex/core/compress/BzipDecompressor	0.371574	
+Class328_Sub1_Sub1	Static432	0.371212	
+Class373_Sub1	rs2/client/event/mouse/CompleteMouseMonitor	0.371149	
+Class36	Static115	0.368185	
+Class348_Sub40_Sub2	Node_Sub1_Sub11	0.367331	
+Class328_Sub1	Static699	0.367092	
+Class1	Class183	0.366812	
+Class348_Sub40_Sub25	Node_Sub1_Sub11	0.363882	
+Class348_Sub48	Static440	0.362039	
+com/ms/dll/Root	Class59	0.361895	
+Class128	Static126	0.359914	
+Class310_Sub2	Class61_Sub3	0.359828	
+Class310_Sub3	Class61_Sub1	0.359338	
+Class310_Sub1	Class61_Sub2	0.359255	
+Class348_Sub40_Sub13	Node_Sub1_Sub32	0.358213	
+Class286_Sub3	Class101_Sub9	0.357883	!!ARBvp1.0
+OPTION  ARB_position_invariant;
+ATTRIB  iPos         = vertex.position;
+ATTRIB  iColour      = vertex.color;
+ATTRIB  iTexCoord    = vertex.texcoord[0];
+OUTPUT  oColour      = result.color;
+OUTPUT  oTexCoord0   = result.texcoord[0];
+OUTPUT  oTexCoord1   = result.texcoord[1];
+OUTPUT  oFogCoord    = result.fogcoord;
+PARAM   time         = program.local[65];
+PARAM   turbulence   = program.local[64];
+PARAM   lightAmbient = program.local[66]; 
+PARAM   pMatrix[4]   = { state.matrix.projection };
+PARAM   mvMatrix[4]  = { state.matrix.modelview };
+PARAM   ivMatrix[4]  = { state.matrix.texture[1] };
+PARAM   texMatrix[4]  = { state.matrix.texture[0] };
+PARAM   fNoise[64]   = { program.local[0..63] };
+TEMP    noise, viewPos, worldPos, texCoord;
+ADDRESS noiseAddr;
+DP4   viewPos.x, mvMatrix[0], iPos;
+DP4   viewPos.y, mvMatrix[1], iPos;
+DP4   viewPos.z, mvMatrix[2], iPos;
+DP4   viewPos.w, mvMatrix[3], iPos;
+MOV   oFogCoord.x, -viewPos.z;
+DP4   worldPos.x, ivMatrix[0], viewPos;
+DP4   worldPos.y, ivMatrix[1], viewPos;
+DP4   worldPos.z, ivMatrix[2], viewPos;
+DP4   worldPos.w, ivMatrix[3], viewPos;
+ADD   noise.x, worldPos.x, worldPos.z;SUB   noise.y, worldPos.z, worldPos.x;MUL   noise, noise, 0.0001220703125;
+FRC   noise, noise;
+MUL   noise, noise, 64;
+ARL   noiseAddr.x, noise.x;
+MOV   noise.x, fNoise[noiseAddr.x].x;
+ARL   noiseAddr.x, noise.y;
+MOV   noise.y, fNoise[noiseAddr.x].y;
+MUL   noise, noise, turbulence.x;
+DP4   texCoord.x, texMatrix[0], iTexCoord;
+DP4   texCoord.y, texMatrix[1], iTexCoord;
+ADD   oTexCoord0.xy, texCoord, noise;
+MOV   oTexCoord0.z, 0;
+MOV   oTexCoord0.w, 1;
+MUL   oTexCoord1.xy, texCoord, 0.125;
+MOV   oTexCoord1.zw, time.xxxw;
+MUL   oColour.xyz, iColour, lightAmbient;
+MOV   oColour.w, iColour.w;
+END
+Class105_Sub3	JavaSprite	0.357382	
+s	com/jagex/graphics/Ground	0.356638	
+Class98	Static115	0.354897	
+jaclib/peer/hb	jaclib/peer/ti	0.354755	
+Class118	Class298	0.354613	
+Class348_Sub40_Sub11	Node_Sub1_Sub32	0.353007	
+Class123	Class94	0.351977	
+Class348_Sub40_Sub24	Node_Sub1_Sub11	0.351358	
+Class366	Class106	0.350900	
+Class348_Sub42_Sub16_Sub1	debugconsole	0.350685	 
+Class103	Static517	0.350670	
