@@ -201,24 +201,36 @@ class Class258_Sub3 extends Class258 {
                 }
             }
         } catch (Throwable throwable) {
-            /* fall back to AWT toolkit image decoding below */
+            /* fall through */
         }
-        for (; ; ) {
-            try {
-                Image image = Toolkit.getDefaultToolkit().createImage(is);
-                MediaTracker mediatracker = new MediaTracker(Class79.aClient1367);
-                mediatracker.addImage(image, 0);
-                mediatracker.waitForAll();
-                int i_58_ = image.getWidth(Class79.aClient1367);
-                int i_59_ = image.getHeight(Class79.aClient1367);
-                if (mediatracker.isErrorAny() || i_58_ < 0 || i_59_ < 0) throw new RuntimeException("");
-                int[] is_60_ = new int[i_59_ * i_58_];
-                PixelGrabber pixelgrabber = new PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_);
-                pixelgrabber.grabPixels();
-                return Class348_Sub8.aHa6654.method3662(i_58_, is_60_, (byte) 94, 0, i_58_, i_59_);
-            } catch (InterruptedException interruptedexception) {
-                /* empty */
+
+        if (Boolean.getBoolean("voidclient.image.awt_fallback")) {
+            for (; ; ) {
+                try {
+                    Image image = Toolkit.getDefaultToolkit().createImage(is);
+                    MediaTracker mediatracker = new MediaTracker(Class79.aClient1367);
+                    mediatracker.addImage(image, 0);
+                    mediatracker.waitForAll();
+                    int i_58_ = image.getWidth(Class79.aClient1367);
+                    int i_59_ = image.getHeight(Class79.aClient1367);
+                    if (mediatracker.isErrorAny() || i_58_ < 0 || i_59_ < 0) throw new RuntimeException("");
+                    int[] is_60_ = new int[i_59_ * i_58_];
+                    PixelGrabber pixelgrabber = new PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_);
+                    pixelgrabber.grabPixels();
+                    return Class348_Sub8.aHa6654.method3662(i_58_, is_60_, (byte) 94, 0, i_58_, i_59_);
+                } catch (InterruptedException interruptedexception) {
+                    /* empty */
+                }
             }
+        }
+
+        try {
+            if (Loader.trace) {
+                System.err.println("Image decode failed; returning placeholder sprite. Set -Dvoidclient.image.awt_fallback=true to use Toolkit decoding.");
+            }
+            return Class348_Sub8.aHa6654.method3662(1, new int[]{0}, (byte) 94, 0, 1, 1);
+        } catch (Throwable throwable) {
+            throw new RuntimeException(throwable);
         }
     }
 
