@@ -3,8 +3,8 @@
   "description": "High-confidence class renames applied to 2011-634 void-client (flat default-package sources).",
   "source_tsv": "docs/rename-prototype/mapping_634_to_667_refactored.tsv",
   "min_score": 0.85,
-  "base_commit": "3fe2efb",
-  "applied_commit": "55d13be",
+  "base_commit": "01d46f0",
+  "applied_commit": "78b0ee8",
   "renames": [
     {
       "src": "ha_Sub1",

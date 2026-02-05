@@ -48,7 +48,7 @@ The applied “wave 1” class renames are captured in `docs/rename-prototype/cl
 To re-apply them from a clean state, checkout the manifest’s `base_commit` and run:
 
 ```bash
-git checkout 3fe2efb
+git checkout 01d46f0
 python3 tools/apply_class_renames.py \
   --manifest docs/rename-prototype/class_renames.json \
   --src-dir client/src \
