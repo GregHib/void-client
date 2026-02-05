@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class217 {
+final class VarpTypeList {
     static int anInt2840;
     static int anInt2841;
     private final Class45 aClass45_2842;
@@ -32,11 +32,11 @@ final class Class217 {
         anInt2841++;
     }
 
-    final Class159 method1588(int i, int i_1_) {
+    final VarpType method1588(int i, int i_1_) {
         anInt2847++;
-        Class159 class159;
+        VarpType class159;
         synchronized (aClass60_2848) {
-            class159 = (Class159) aClass60_2848.method583(i_1_, -126);
+            class159 = (VarpType) aClass60_2848.method583(i_1_, -126);
         }
         if (class159 != null) return class159;
         byte[] is;
@@ -44,7 +44,7 @@ final class Class217 {
             is = aClass45_2842.method410(-1860, 16, i_1_);
             if (i >= -17) aClass60_2848 = null;
         }
-        class159 = new Class159();
+        class159 = new VarpType();
         if (is != null) class159.method1253(new Class348_Sub49(is), true);
         synchronized (aClass60_2848) {
             aClass60_2848.method582(class159, i_1_, (byte) -124);
@@ -68,7 +68,7 @@ final class Class217 {
         }
     }
 
-    Class217(Class230 class230, int i, Class45 class45) {
+    VarpTypeList(Class230 class230, int i, Class45 class45) {
         try {
             aClass45_2842 = class45;
             if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16);

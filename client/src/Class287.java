@@ -103,7 +103,7 @@ final class Class287 {
     private final Interface12 method2182(boolean bool, Class223 class223, Class348_Sub49 class348_sub49) {
         try {
             anInt3692++;
-            if (Class219.aClass223_2868 == class223) return Class170.method1312((byte) 64, class348_sub49);
+            if (Class219.aClass223_2868 == class223) return VarpDomain.method1312((byte) 64, class348_sub49);
             if (Class348_Sub49.aClass223_7175 == class223) return Class105_Sub1.method987(743571200, class348_sub49);
             if (Class101_Sub1.aClass223_5689 == class223) return Class303.method2287(class348_sub49, (byte) -112);
             if (class223 == Class28.aClass223_4997) return Class337.method2660((byte) 26, class348_sub49);

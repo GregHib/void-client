@@ -4804,7 +4804,7 @@ final class Class66 {
                 if (i == 4210) {
                     String string = aStringArray1152[--anInt1170];
                     int i_470_ = anIntArray1149[--anInt1173];
-                    Class217.method1586(i_470_ == 1, (byte) -108, string);
+                    VarpTypeList.method1586(i_470_ == 1, (byte) -108, string);
                     anIntArray1149[anInt1173++] = Class76.anInt1285;
                     return;
                 }

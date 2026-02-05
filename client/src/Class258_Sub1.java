@@ -172,9 +172,9 @@ final class Class258_Sub1 extends Class258 {
             for (int i_48_ = 0; i_48_ < Class189.anInt2524; i_48_++)
                 Class115.aBooleanArrayArrayArray1751[i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361[i_48_];
             if (Npc.anInt10503 == 2) {
-                if (Class146.aLongArray2013[0] < Class146.aLongArray2013[1]) {
+                if (VarBitType.aLongArray2013[0] < VarBitType.aLongArray2013[1]) {
                     if (Class17.anIntArray256[0] + Class345.anIntArray4271[0] > Class348_Sub40_Sub10.anIntArray9183[0]) Class345.anIntArray4271[0]++;
-                } else if ((Class146.aLongArray2013[0] > Class146.aLongArray2013[1]) && ((Class17.anIntArray256[0] + Class345.anIntArray4271[0]) < Class348_Sub40_Sub10.anIntArray9183[2])) Class345.anIntArray4271[0]--;
+                } else if ((VarBitType.aLongArray2013[0] > VarBitType.aLongArray2013[1]) && ((Class17.anIntArray256[0] + Class345.anIntArray4271[0]) < Class348_Sub40_Sub10.anIntArray9183[2])) Class345.anIntArray4271[0]--;
             }
         }
         if (!Class348_Sub40_Sub17.aBoolean9242) {

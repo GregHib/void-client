@@ -51,18 +51,18 @@ final class Class194 {
         }
     }
 
-    final Class146 method1446(int i, int i_4_) {
+    final VarBitType method1446(int i, int i_4_) {
         anInt2593++;
-        Class146 class146;
+        VarBitType class146;
         synchronized (aClass60_2594) {
-            class146 = (Class146) aClass60_2594.method583(i, 76);
+            class146 = (VarBitType) aClass60_2594.method583(i, 76);
         }
         if (class146 != null) return class146;
         byte[] is;
         synchronized (aClass45_2597) {
             is = aClass45_2597.method410(i_4_ ^ 0x743, Class179.method1359(true, i), Class348_Sub14.method2806(false, i));
         }
-        class146 = new Class146();
+        class146 = new VarBitType();
         if (i_4_ != -1) return null;
         if (is != null) class146.method1191(i_4_ ^ ~0x800, new Class348_Sub49(is));
         synchronized (aClass60_2594) {

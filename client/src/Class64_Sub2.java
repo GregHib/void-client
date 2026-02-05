@@ -531,7 +531,7 @@ final class Class64_Sub2 extends Class64 {
         if (aBoolean5402) {
             aBoolean5402 = false;
             if (aClass129Array5457 == null && aClass342Array5474 == null && aClass353Array5524 == null) {
-                if (anIntArray5511 != null && !Class170.method1317(anInt5472, (byte) -91, anInt5463)) {
+                if (anIntArray5511 != null && !VarpDomain.method1317(anInt5472, (byte) -91, anInt5463)) {
                     if (aClass290_5520 == null || aClass290_5520.method2197((byte) -62)) {
                         if (!aBoolean5477) method675(0);
                         anIntArray5511 = null;

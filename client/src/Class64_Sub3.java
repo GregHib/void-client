@@ -897,7 +897,7 @@ final class Class64_Sub3 extends Class64 {
                 if (bool_214_) class64_sub3_211_.aByte5581 |= 0x2;
                 class64_sub3_211_.aClass123_5610.anInterface2_1811 = aClass123_5610.anInterface2_1811;
                 class64_sub3_211_.aClass123_5610.aByte1812 = aClass123_5610.aByte1812;
-            } else if (Class146.method1193(anInt5556, i, true)) class64_sub3_211_.aClass123_5610 = aClass123_5610;
+            } else if (VarBitType.method1193(anInt5556, i, true)) class64_sub3_211_.aClass123_5610 = aClass123_5610;
             else class64_sub3_211_.aClass123_5610 = null;
             if (Class156.method1241(anInt5556, i, -119)) {
                 if (class64_sub3_213_.aShortArray5564 != null && class64_sub3_213_.aShortArray5564.length >= anInt5529) {
@@ -2871,7 +2871,7 @@ final class Class64_Sub3 extends Class64 {
                 if (Class64.method616(2, i, i_697_)) aClass123_5605 = new Class123(null, 5126, 3, 0);
                 if (Class137.method1163(i_697_, (byte) 78, i)) aClass123_5620 = new Class123(null, 5126, 2, 0);
                 if (aa_Sub3.method166((byte) 69, i_697_, i)) aClass123_5563 = new Class123(null, 5126, 3, 0);
-                if (Class146.method1193(i_697_, i, true)) aClass123_5610 = new Class123(null, 5121, 4, 0);
+                if (VarBitType.method1193(i_697_, i, true)) aClass123_5610 = new Class123(null, 5121, 4, 0);
                 if (Class156.method1238(i, i_697_, -31)) aClass270_5575 = new Class270();
                 d var_d = var_ha_Sub2.aD4579;
                 anIntArray5528 = new int[class124.anInt1821 + 1];

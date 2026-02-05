@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class170 implements Interface17 {
+final class VarpDomain implements Interface17 {
     static int anInt5062;
     int[] anIntArray5063;
     static int anInt5064;
@@ -56,7 +56,7 @@ final class Class170 implements Interface17 {
 
     public final int method62(int i, int i_3_) {
         anInt5068++;
-        Class146 class146 = Class229.aClass194_2981.method1446(i, -1);
+        VarBitType class146 = Class229.aClass194_2981.method1446(i, -1);
         int i_4_ = class146.anInt2019;
         if (i_3_ != -65536) return -52;
         int i_5_ = class146.anInt2016;
@@ -67,7 +67,7 @@ final class Class170 implements Interface17 {
 
     final void method1307(int i, int i_8_, int i_9_) {
         anInt5074++;
-        Class146 class146 = Class229.aClass194_2981.method1446(i, -1);
+        VarBitType class146 = Class229.aClass194_2981.method1446(i, -1);
         int i_10_ = class146.anInt2019;
         int i_11_ = class146.anInt2016;
         int i_12_ = class146.anInt2020;
@@ -127,7 +127,7 @@ final class Class170 implements Interface17 {
 
     final void method1314(byte i) {
         for (int i_26_ = 0; (i_26_ < Class269.aClass217_3453.anInt2845); i_26_++) {
-            Class159 class159 = Class269.aClass217_3453.method1588(-105, i_26_);
+            VarpType class159 = Class269.aClass217_3453.method1588(-105, i_26_);
             if (class159 != null && class159.anInt2125 == 0) {
                 anIntArray5078[i_26_] = 0;
                 this.anIntArray5063[i_26_] = 0;
@@ -162,7 +162,7 @@ final class Class170 implements Interface17 {
 
     final void method1316(byte i, int i_30_, int i_31_) {
         anInt5069++;
-        Class146 class146 = Class229.aClass194_2981.method1446(i_30_, -1);
+        VarBitType class146 = Class229.aClass194_2981.method1446(i_30_, -1);
         int i_32_ = class146.anInt2019;
         int i_33_ = class146.anInt2016;
         if (i < -56) {
@@ -319,7 +319,7 @@ final class Class170 implements Interface17 {
         anInt5080++;
     }
 
-    public Class170() {
+    public VarpDomain() {
         this.anIntArray5063 = new int[Class269.aClass217_3453.anInt2845];
         System.out.println("Varp size " + Class269.aClass217_3453.anInt2845);
         anIntArray5078 = new int[Class269.aClass217_3453.anInt2845];

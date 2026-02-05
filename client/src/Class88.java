@@ -50,7 +50,7 @@ final class Class88 {
             i = s_Sub3.method4008((byte) -124);
             i_1_ = Class16.method260(false);
         }
-        Class159.method1252(i_1_, r.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, (byte) 116, i);
+        VarpType.method1252(i_1_, r.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, (byte) 116, i);
         if (Class138.aClass46Array1942 != null) {
             Class348_Sub40_Sub7.method3064(i, Class136.anInt4792, true, Class348_Sub1.anInt6555, i_1_, TimeUtils.aClass46_4130.anInt760, i + Class321.anInt4017, false, Class138.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432);
             Class138.aClass46Array1942 = null;
@@ -292,8 +292,8 @@ final class Class88 {
                             Class135_Sub1.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944);
                             MonochromeImageCache.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944);
-                            Class170.anInt5065 = class348_sub49_sub2.readInt((byte) -126);
-                            Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992.method2232(116, Class170.anInt5065);
+                            VarpDomain.anInt5065 = class348_sub49_sub2.readInt((byte) -126);
+                            Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992.method2232(116, VarpDomain.anInt5065);
                             Class216.anInt4976 = class348_sub49_sub2.readUnsignedByte(255);
                             Class130_Sub1.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944);

@@ -6,7 +6,7 @@ final class Class269 {
     static int anInt3450;
     static int anInt3451;
     Interface18_Impl1 anInterface18_Impl1_3452 = null;
-    static Class217 aClass217_3453;
+    static VarpTypeList aClass217_3453;
     private Interface18_Impl3[] anInterface18_Impl3Array3454;
     Interface18_Impl1 anInterface18_Impl1_3455 = null;
     static int anInt3456;

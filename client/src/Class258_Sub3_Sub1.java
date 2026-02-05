@@ -55,7 +55,7 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         Class348_Sub22.method2959(-1);
         Class348_Sub23.method2965(string, i_11_, bool, 0);
         Class348_Sub24.method2994(2);
-        Class170.method1311(5139, Class348_Sub8.aHa6654);
+        VarpDomain.method1311(5139, Class348_Sub8.aHa6654);
         Class369.method3568(Class348_Sub8.aHa6654, 4);
         Class255.method1933(Class21.aClass45_322, Class348_Sub8.aHa6654, true);
         LocalisedText.method2061(-128);

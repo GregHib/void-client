@@ -23,7 +23,7 @@ final class Class91 {
         Class348_Sub23_Sub3.anInt9041++;
         Class139.method1165(1);
         Class6.method204(-724138005);
-        Class170.method1318(-65536);
+        VarpDomain.method1318(-65536);
         boolean bool = false;
         for (int i_2_ = 0; i_2_ < Class358.anInt4411; i_2_++) {
             int i_3_ = Class5_Sub1_Sub1.anIntArray9932[i_2_];

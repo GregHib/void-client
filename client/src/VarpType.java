@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class159 {
+final class VarpType {
     static int anInt2124;
     int anInt2125 = 0;
     static int anInt2126;
@@ -58,7 +58,7 @@ final class Class159 {
         if (bool != true) this.anInt2125 = 58;
     }
 
-    public Class159() {
+    public VarpType() {
         /* empty */
     }
 }

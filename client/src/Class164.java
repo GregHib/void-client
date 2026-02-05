@@ -84,7 +84,7 @@ final class Class164 {
                 if (Class182.anInterface16Array2447[0].method60(-19079) < 100) return 0;
                 if (Class182.anInterface16Array2447.length > 1 && Class186_Sub1.aClass111_5813.method1044(86) && (Class182.anInterface16Array2447[1].method60(i + 9581) < 100)) return 0;
             }
-            Class170.method1311(5139, Class348_Sub8.aHa6654);
+            VarpDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, 4);
             Class348_Sub49.method3379(2, 1);
         }
@@ -124,7 +124,7 @@ final class Class164 {
             Class262.aClass45_3323 = Class369_Sub2.method3571(false, 29, (byte) -23, 1);
             Class126.aClass45_4984 = Class369_Sub2.method3571(true, 30, (byte) -23, 1);
             Class136.aClass45_4796 = Class369_Sub2.method3571(true, 31, (byte) -23, 1);
-            Class146.aClass45_2015 = Class369_Sub2.method3571(true, 36, (byte) -23, 2);
+            VarBitType.aClass45_2015 = Class369_Sub2.method3571(true, 36, (byte) -23, 2);
         }
         if (Class56.aClass56_1031 == Class348_Sub42_Sub15.aClass56_9660) {
             int i_8_ = 0;
@@ -178,14 +178,14 @@ final class Class164 {
             Class91.aClass82_1523 = new Class82(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class239_Sub14.aClass259_5995 = new Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class229.aClass194_2981 = new Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926);
-            Class269.aClass217_3453 = new Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
+            Class269.aClass217_3453 = new VarpTypeList(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class65.method699(Class104.aClass45_1627, (byte) -100, Class348_Sub35.aClass45_6980, Class21.aClass45_322, aa_Sub3.aClass45_5207);
             GameShell.method85(0, Class262.aClass45_3323);
             Class200.aClass226_2639 = new Class226(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434);
             Class239_Sub6.aClass355_5900 = new Class355(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434, new Class28());
             Class150.method1202(0);
             Class348_Sub40_Sub12.aClass263_9195.method2008(i + 28539, Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i + -3690) == 0);
-            Class318_Sub1_Sub3_Sub3.aClass170_10209 = new Class170();
+            Class318_Sub1_Sub3_Sub3.aClass170_10209 = new VarpDomain();
             Class348_Sub40.method3038(-1);
             RuntimeException_Sub1.method4011(i + 29684, Class239.aClass45_3146);
             Class348_Sub29.method3004(aa_Sub3.aClass45_5207, false, Class348_Sub40_Sub4.aD9113);
@@ -269,7 +269,7 @@ final class Class164 {
             if (Class348_Sub23_Sub2.aBoolean9038) Class367_Sub10.method3553(false, (byte) 108, 0);
             else Class367_Sub10.method3553(false, (byte) 102, Class316.aClass348_Sub51_3959.aClass239_Sub25_7251.method1829(-32350));
             Class85.method830(Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
-            Class170.method1311(5139, Class348_Sub8.aHa6654);
+            VarpDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, i ^ ~0x6ff7);
             Class255.method1933(Class21.aClass45_322, Class348_Sub8.aHa6654, true);
             Class101.method901(Class113.aClass105Array1744, 515880227);

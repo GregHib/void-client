@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class146 {
+final class VarBitType {
     static int anInt2012;
     static long[] aLongArray2013 = new long[10];
     static int anInt2014;
@@ -46,7 +46,7 @@ final class Class146 {
         aClass45_2015 = null;
     }
 
-    public Class146() {
+    public VarBitType() {
         /* empty */
     }
 }

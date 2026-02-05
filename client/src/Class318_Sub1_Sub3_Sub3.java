@@ -12,7 +12,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
     byte aByte10206;
     int anInt10207;
     int anInt10208;
-    static Class170 aClass170_10209;
+    static VarpDomain aClass170_10209;
     int anInt10210;
     int anInt10211;
     static int anInt10212;

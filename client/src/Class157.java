@@ -44,7 +44,7 @@ final class Class157 {
         class348_sub49_sub2.writeInt((byte) 125, Class136.aClass45_4796.method389(-118));
         class348_sub49_sub2.writeInt((byte) 90, Class172.method1327(31));
         class348_sub49_sub2.writeInt((byte) 120, Class101_Sub1.method912(0));
-        class348_sub49_sub2.writeInt((byte) 87, Class146.aClass45_2015.method389(-94));
+        class348_sub49_sub2.writeInt((byte) 87, VarBitType.aClass45_2015.method389(-94));
     }
 
     static final String method1245(String string, boolean bool) {

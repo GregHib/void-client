@@ -44,7 +44,7 @@ final class Class304 {
                         Class348_Sub40_Sub34.aClass293Array9432[i].notify();
                     }
                     bool = false;
-                } else Class146.aLongArray2013[i] = Class348_Sub40_Sub34.aClass293Array9432[i].method2204();
+                } else VarBitType.aLongArray2013[i] = Class348_Sub40_Sub34.aClass293Array9432[i].method2204();
             }
             if (bool) break;
             try {

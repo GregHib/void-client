@@ -125,7 +125,7 @@ final class Class348_Sub18 extends Class348 {
             Class262.aClass45_3323.method412((byte) 112);
             Class126.aClass45_4984.method412((byte) 85);
             Class136.aClass45_4796.method412((byte) 93);
-            Class146.aClass45_2015.method412((byte) -122);
+            VarBitType.aClass45_2015.method412((byte) -122);
             Class353.aClass60_4346.method590(0);
             Class328_Sub2.aClass60_6517.method590(0);
             Class348_Sub1_Sub1.aClass60_8807.method590(0);

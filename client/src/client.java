@@ -216,7 +216,7 @@ public final class client extends GameShell {
         ha.method3680(-24016);
         Class348_Sub51.method3430(false);
         SystemInfo.method2748(-86);
-        Class170.method1310(true);
+        VarpDomain.method1310(true);
         Class262.method1994(-13722);
         Class202.method1471((byte) 124);
         Class248.method1897((byte) 119);
@@ -244,7 +244,7 @@ public final class client extends GameShell {
         Class82.method811((byte) -123);
         Class259.method1975((byte) -15);
         Class194.method1441((byte) 18);
-        Class217.method1585(-1);
+        VarpTypeList.method1585(-1);
         Class226.method1624(28962);
         Class355.method3473(12949);
         Class238.method1704((byte) -95);
@@ -419,7 +419,7 @@ public final class client extends GameShell {
         Class277.method2071(-128);
         Class22.method293((byte) -83);
         Class34.method351(80);
-        Class146.method1194(10);
+        VarBitType.method1194(10);
         Class218.method1594(-1966608624);
         Class254.method1926(-127);
         Class321.method2549((byte) -85);
@@ -1736,7 +1736,7 @@ public final class client extends GameShell {
             Class182.aClass346_2449.method2695(67);
             Class258_Sub4.aClass373_8552.method3589(0);
             if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654.method3646((int) Class62.method599(-74));
-            Class170.method1315(93);
+            VarpDomain.method1315(93);
             Class253.anInt3246 = 0;
             Class348_Sub42_Sub19.anInt9699 = 0;
             for (Interface6 interface6 = Class182.aClass346_2449.method2697(0); interface6 != null; interface6 = Class182.aClass346_2449.method2697(0)) {
@@ -1928,7 +1928,7 @@ public final class client extends GameShell {
             }
             if (bool_120_) Class140.method1170((byte) -116);
             if ((Class348_Sub8.aHa6654 != null && Class348_Sub8.aHa6654.method3655()) || Class348_Sub42_Sub12.method3229(-91) != 1) Class354.method3466(-77);
-            if (Class139.method1167(Class240.anInt4674, (byte) -113)) Class170.method1309(bool_120_, 117);
+            if (Class139.method1167(Class240.anInt4674, (byte) -113)) VarpDomain.method1309(bool_120_, 117);
             else if (!Class283.method2114(Class240.anInt4674, bool)) {
                 if (!Class348_Sub42_Sub8.method3197(Class240.anInt4674, (byte) 56)) {
                     if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -78)) {

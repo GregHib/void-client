@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "description": "Wave 4 curated class renames (varp/varbit domain + type list).",
+  "base_commit": "f68c075",
+  "applied_commit": "",
+  "src_dir": "client/src",
+  "renames": [
+    {
+      "src": "Class146",
+      "dst": "VarBitType",
+      "score": 1.0,
+      "anchors": ["varbit", "bit range"]
+    },
+    {
+      "src": "Class159",
+      "dst": "VarpType",
+      "score": 1.0,
+      "anchors": ["opcode 5", "readUnsignedShort"]
+    },
+    {
+      "src": "Class217",
+      "dst": "VarpTypeList",
+      "score": 1.0,
+      "anchors": ["group 16", "cache list"]
+    },
+    {
+      "src": "Class170",
+      "dst": "VarpDomain",
+      "score": 1.0,
+      "anchors": ["Varp size", "getVarBit"]
+    }
+  ]
+}

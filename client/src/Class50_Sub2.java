@@ -20,7 +20,7 @@ final class Class50_Sub2 extends Class50 {
         int i_4_ = i_0_ * anInt5227 >> 12;
         if (i_1_ > -98) aBoolean5233 = false;
         int i_5_ = i_0_ * anInt5230 >> 12;
-        Class170.method1308(this.anInt864, i_4_, i_2_, this.anInt865, (byte) -123, this.anInt862, i_3_, i_5_);
+        VarpDomain.method1308(this.anInt864, i_4_, i_2_, this.anInt865, (byte) -123, this.anInt862, i_3_, i_5_);
     }
 
     static final void method464(int i) {

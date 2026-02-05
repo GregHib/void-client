@@ -241,7 +241,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                     method3064(i_31_, -class46.anInt755 + i_25_, bool, i_24_ - class46.anInt747, i_32_, i_23_, i_34_, false, class46s, class46.anInt830, i_33_);
                                     if (class46.aClass46Array798 != null) method3064(i_31_, -(class46.anInt755) + i_25_, bool, i_24_ - (class46.anInt747), i_32_, i_23_, i_34_, false, (class46.aClass46Array798), (class46.anInt830), i_33_);
                                     Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aClass356_4915.method3480(class46.anInt830, -6008)));
-                                    if (class348_sub41 != null) Class159.method1252(i_25_, (class348_sub41.anInt7050), i_32_, i_23_, i_24_, i_34_, i_33_, (byte) 60, i_31_);
+                                    if (class348_sub41 != null) VarpType.method1252(i_25_, (class348_sub41.anInt7050), i_32_, i_23_, i_24_, i_34_, i_33_, (byte) 60, i_31_);
                                     if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.aHa6654.method3666()) Class348_Sub8.aHa6654.method3698();
                                     Class348_Sub8.aHa6654.KA(i, i_12_, i_14_, i_17_);
                                 }
