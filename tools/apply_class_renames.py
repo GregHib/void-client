@@ -165,11 +165,117 @@ def _write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
-def _replace_ident_in_text(text: str, old: str, new: str) -> str:
-    # Best-effort identifier replacement. This will also affect comments/strings.
-    # For this deob work that's acceptable; it's mechanical + reviewable.
-    pat = re.compile(rf"\b{re.escape(old)}\b")
-    return pat.sub(new, text)
+def _is_ident_start(ch: str) -> bool:
+    return ("A" <= ch <= "Z") or ("a" <= ch <= "z") or ch in ("_", "$")
+
+
+def _is_ident_part(ch: str) -> bool:
+    return _is_ident_start(ch) or ("0" <= ch <= "9")
+
+
+def _apply_rename_map_java(text: str, rename_map: dict[str, str]) -> str:
+    """
+    Apply identifier renames, but only in Java code tokens.
+
+    Skips:
+    - // line comments
+    - /* block comments */
+    - "string literals"
+    - 'char literals'
+
+    This avoids renaming reflection strings, protocol keys, and decompiler comments.
+    """
+    if not rename_map:
+        return text
+
+    out: list[str] = []
+    i = 0
+    n = len(text)
+    state = "NORMAL"
+
+    while i < n:
+        ch = text[i]
+
+        if state == "NORMAL":
+            if ch == "/" and i + 1 < n:
+                nxt = text[i + 1]
+                if nxt == "/":
+                    out.append("//")
+                    i += 2
+                    state = "SL_COMMENT"
+                    continue
+                if nxt == "*":
+                    out.append("/*")
+                    i += 2
+                    state = "ML_COMMENT"
+                    continue
+            if ch == '"':
+                out.append(ch)
+                i += 1
+                state = "STRING"
+                continue
+            if ch == "'":
+                out.append(ch)
+                i += 1
+                state = "CHAR"
+                continue
+            if _is_ident_start(ch):
+                j = i + 1
+                while j < n and _is_ident_part(text[j]):
+                    j += 1
+                ident = text[i:j]
+                out.append(rename_map.get(ident, ident))
+                i = j
+                continue
+
+            out.append(ch)
+            i += 1
+            continue
+
+        if state == "SL_COMMENT":
+            out.append(ch)
+            i += 1
+            if ch == "\n":
+                state = "NORMAL"
+            continue
+
+        if state == "ML_COMMENT":
+            if ch == "*" and i + 1 < n and text[i + 1] == "/":
+                out.append("*/")
+                i += 2
+                state = "NORMAL"
+                continue
+            out.append(ch)
+            i += 1
+            continue
+
+        if state == "STRING":
+            out.append(ch)
+            i += 1
+            if ch == "\\" and i < n:
+                out.append(text[i])
+                i += 1
+                continue
+            if ch == '"':
+                state = "NORMAL"
+            continue
+
+        if state == "CHAR":
+            out.append(ch)
+            i += 1
+            if ch == "\\" and i < n:
+                out.append(text[i])
+                i += 1
+                continue
+            if ch == "'":
+                state = "NORMAL"
+            continue
+
+        # Shouldn't happen, but keep safe
+        out.append(ch)
+        i += 1
+
+    return "".join(out)
 
 
 @dataclasses.dataclass
@@ -291,12 +397,11 @@ def main(argv: list[str]) -> int:
     # Load all texts once
     texts: dict[Path, str] = {p: _read_text(p) for p in java_files.values()}
 
-    # Replace identifiers globally
-    for r in chosen:
-        old = r.src_simple
-        new = r.dst_simple
-        for p in list(texts.keys()):
-            texts[p] = _replace_ident_in_text(texts[p], old, new)
+    rename_map = {r.src_simple: r.dst_simple for r in chosen}
+
+    # Replace identifiers token-aware (skip comments/strings)
+    for p in list(texts.keys()):
+        texts[p] = _apply_rename_map_java(texts[p], rename_map)
 
     # Write updates
     for p, txt in texts.items():
