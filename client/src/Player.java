@@ -380,8 +380,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                         if (Class305.aBoolean3870) method2454(6253, i_59_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_ha, i_60_);
                         else method2453(i_59_, var_ha, i_61_, (this.aClass64Array10323[0]), 0, i_60_, class101, class302.anInt3834);
                     }
-                    if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (Class294.aPlayerArray5058).length)) {
-                        Player player_62_ = (Class294.aPlayerArray5058[class302.anInt3833]);
+                    if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (AwtLoadingScreen.aPlayerArray5058).length)) {
+                        Player player_62_ = (AwtLoadingScreen.aPlayerArray5058[class302.anInt3833]);
                         if (player_62_ != null) {
                             int i_63_ = (-(Class132.aPlayer_1907.x) + (player_62_.x));
                             int i_64_ = (-(Class132.aPlayer_1907.y) + (player_62_.y));

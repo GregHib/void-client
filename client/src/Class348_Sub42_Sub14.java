@@ -111,7 +111,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
             for (int i_9_ = 0; i_9_ < Class69.anInt1200; i_9_++)
                 Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330[i_9_]), var_ha, (byte) -127, i);
             for (int i_10_ = 0; i_10_ < Class348_Sub44.anInt7101; i_10_++)
-                Class318_Sub2.method2498(Class294.aClass338Array5060[i_10_], var_ha, (byte) -128, i);
+                Class318_Sub2.method2498(AwtLoadingScreen.aClass338Array5060[i_10_], var_ha, (byte) -128, i);
             Class225.anInt2946 = 0;
             if (Class348_Sub42_Sub10.anInt9577 > 0) {
                 int i_11_ = Class14.anIntArray5091.length;

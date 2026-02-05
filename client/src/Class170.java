@@ -177,7 +177,7 @@ final class Class170 implements Interface17 {
     static final boolean method1317(int i, byte i_36_, int i_37_) {
         anInt5079++;
         if (i_36_ >= -67) method1317(43, (byte) 36, 20);
-        return Class294.method2217(i, i_37_, 0) | (i_37_ & 0x70000) != 0 || Class264.method2015(i_37_, i, 7);
+        return AwtLoadingScreen.method2217(i, i_37_, 0) | (i_37_ & 0x70000) != 0 || Class264.method2015(i_37_, i, 7);
     }
 
     static final void method1318(int i) {

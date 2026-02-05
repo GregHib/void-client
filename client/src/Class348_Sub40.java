@@ -10,7 +10,7 @@ abstract class Class348_Sub40 extends Class348 {
     static int anInt7030;
     Class348_Sub40[] aClass348_Sub40Array7031;
     Class191 aClass191_7032;
-    Class322 aClass322_7033;
+    MonochromeImageCache aClass322_7033;
     static int anInt7034;
     static int anInt7035;
     int anInt7036;
@@ -216,7 +216,7 @@ abstract class Class348_Sub40 extends Class348 {
         anInt7043++;
         int i_56_ = (i_55_ != (~this.anInt7036) ? this.anInt7036 : i_54_);
         if (this.aBoolean7045) this.aClass191_7032 = new Class191(i_56_, i_54_, i);
-        else this.aClass322_7033 = new Class322(i_56_, i_54_, i);
+        else this.aClass322_7033 = new MonochromeImageCache(i_56_, i_54_, i);
     }
 
     void method3046(byte i) {

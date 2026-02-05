@@ -17,7 +17,7 @@ final class Class348_Sub21 extends Class348 {
     static final void method2954(byte i) {
         anInt6856++;
         if (za_Sub1.anInt9775 != -1 && Class292.anInt4803 != -1) {
-            int i_0_ = ((Class117.anInt1780 * (Class331.anInt4133 + -Class195.anInt5019) >> 16) + Class195.anInt5019);
+            int i_0_ = ((Class117.anInt1780 * (TimeUtils.anInt4133 + -Class195.anInt5019) >> 16) + Class195.anInt5019);
             Class117.anInt1780 += i_0_;
             if (Class117.anInt1780 < 65535) {
                 Class347.aBoolean4284 = false;

@@ -70,7 +70,7 @@ final class Class100 {
             anInt1589++;
             if (Class289.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (Exception_Sub1.method141(class46, (byte) -79) != null))) {
                 Class289.aClass46_3701 = class46;
-                Class331.aClass46_4130 = Exception_Sub1.method141(class46, (byte) -117);
+                TimeUtils.aClass46_4130 = Exception_Sub1.method141(class46, (byte) -117);
                 Class318_Sub1.anInt6392 = 0;
                 Class219.anInt2872 = i_5_;
                 Class318_Sub4.anInt6411 = i;

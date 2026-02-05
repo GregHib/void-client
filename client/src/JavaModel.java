@@ -3156,7 +3156,7 @@ final class JavaModel extends Class64 {
                             float f_865_ = (((float) i_859_ * fs_847_[0] + (float) i_860_ * fs_847_[1] + (float) i_861_ * fs_847_[2]) / f_862_);
                             float f_866_ = (((float) i_859_ * fs_847_[3] + (float) i_860_ * fs_847_[4] + (float) i_861_ * fs_847_[5]) / f_863_);
                             float f_867_ = (((float) i_859_ * fs_847_[6] + (float) i_860_ * fs_847_[7] + (float) i_861_ * fs_847_[8]) / f_864_);
-                            int i_868_ = Class331.method2635(f_866_, false, f_867_, f_865_);
+                            int i_868_ = TimeUtils.method2635(f_866_, false, f_867_, f_865_);
                             Class262.method1991(f_852_, f, fs_847_, anIntArray5312[i_841_], i_846_, false, i_848_, i_844_, anIntArray5356[i_841_], anIntArray5332[i_841_], f_851_, fs, i_845_, i_868_);
                             fs_807_[0] = fs[0];
                             fs_808_[0] = fs[1];

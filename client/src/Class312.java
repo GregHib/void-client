@@ -60,7 +60,7 @@ final class Class312 {
             Class348_Sub40_Sub39.method3153(0);
             Class348_Sub40_Sub37.method3147((byte) 27);
             for (int i_0_ = 0; i_0_ < 2048; i_0_++)
-                Class294.aPlayerArray5058[i_0_] = null;
+                AwtLoadingScreen.aPlayerArray5058[i_0_] = null;
             Class132.aPlayer_1907 = null;
             for (int i_1_ = 0; Class348_Sub32.anInt6930 > i_1_; i_1_++) {
                 Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_1_].aNpc_6859);

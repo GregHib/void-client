@@ -63,7 +63,7 @@ final class Class348_Sub42_Sub16_Sub1 extends Class348_Sub42_Sub16 {
             int i_5_ = Class286_Sub3.aCalendar6221.get(11);
             int i_6_ = Class286_Sub3.aCalendar6221.get(12);
             int i_7_ = Class286_Sub3.aCalendar6221.get(13);
-            return (Class93.aStringArray1531[i_1_ - 1] + ", " + i_2_ / 10 + i_2_ % 10 + "-" + Class331.aStringArray4129[i_3_] + "-" + i_4_ + " " + i_5_ / 10 + i_5_ % 10 + ":" + i_6_ / 10 + i_6_ % 10 + ":" + i_7_ / 10 + i_7_ % 10 + " GMT");
+            return (Class93.aStringArray1531[i_1_ - 1] + ", " + i_2_ / 10 + i_2_ % 10 + "-" + TimeUtils.aStringArray4129[i_3_] + "-" + i_4_ + " " + i_5_ / 10 + i_5_ % 10 + ":" + i_6_ / 10 + i_6_ % 10 + ":" + i_7_ / 10 + i_7_ % 10 + " GMT");
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "mba.I(" + l + ',' + i + ')');
         }

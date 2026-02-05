@@ -105,7 +105,7 @@ final class Class341 {
                 Class376.method3616(12639);
                 Class348_Sub42_Sub3.method3177(-78, false);
                 for (int i_12_ = 0; i_12_ < 2048; i_12_++) {
-                    Player player = (Class294.aPlayerArray5058[i_12_]);
+                    Player player = (AwtLoadingScreen.aPlayerArray5058[i_12_]);
                     if (player != null) {
                         for (int i_13_ = 0; ((player.aClass64Array10323).length > i_13_); i_13_++)
                             player.aClass64Array10323[i_13_] = null;

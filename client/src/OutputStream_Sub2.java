@@ -30,7 +30,7 @@ final class OutputStream_Sub2 extends OutputStream {
             if (Class318.aClass243Array3974.length > i && !Class318.aClass243Array3974[i].method1871((byte) 111)) {
                 class318_sub4 = (Class318_Sub4) Class318.aClass243Array3974[i].method1870(-104);
                 class318_sub4.method2373(false);
-                Class331.anIntArray4128[i]--;
+                TimeUtils.anIntArray4128[i]--;
             } else {
                 class318_sub4 = new Class318_Sub4();
                 class318_sub4.aClass318_Sub3Array6414 = new Class318_Sub3[i];

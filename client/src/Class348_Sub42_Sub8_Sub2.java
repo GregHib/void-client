@@ -297,7 +297,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class322.aClass114_4027 == Class348_Sub3.aClass114_6584) {
+        if (MonochromeImageCache.aClass114_4027 == Class348_Sub3.aClass114_6584) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
             if (i == 65535) i = -1;
             int i_28_ = Class299.aClass348_Sub49_Sub2_3813.readIntInverseMiddle(255);
@@ -422,7 +422,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 } else if (i_40_ >> 28 != 0) {
                     int i_52_ = i_40_ & 0xffff;
                     Player player;
-                    if (Class348_Sub42_Sub11.anInt9591 != i_52_) player = (Class294.aPlayerArray5058[i_52_]);
+                    if (Class348_Sub42_Sub11.anInt9591 != i_52_) player = (AwtLoadingScreen.aPlayerArray5058[i_52_]);
                     else player = Class132.aPlayer_1907;
                     if (player != null) {
                         if (i_38_ == 65535) i_38_ = -1;
@@ -787,7 +787,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         if (Class348_Sub3.aClass114_6584 == Class131.aClass114_1901) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             Player player;
-            if (i != Class348_Sub42_Sub11.anInt9591) player = Class294.aPlayerArray5058[i];
+            if (i != Class348_Sub42_Sub11.anInt9591) player = AwtLoadingScreen.aPlayerArray5058[i];
             else player = Class132.aPlayer_1907;
             if (player == null) {
                 Class348_Sub3.aClass114_6584 = null;
@@ -1038,10 +1038,10 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class202.aClass114_2665 == Class348_Sub3.aClass114_6584) {
-            for (int i = 0; i < Class294.aPlayerArray5058.length; i++) {
-                if (Class294.aPlayerArray5058[i] != null) {
-                    Class294.aPlayerArray5058[i].anIntArray10236 = null;
-                    Class294.aPlayerArray5058[i].anInt10286 = -1;
+            for (int i = 0; i < AwtLoadingScreen.aPlayerArray5058.length; i++) {
+                if (AwtLoadingScreen.aPlayerArray5058[i] != null) {
+                    AwtLoadingScreen.aPlayerArray5058[i].anIntArray10236 = null;
+                    AwtLoadingScreen.aPlayerArray5058[i].anInt10286 = -1;
                 }
             }
             for (int i = 0; Class348_Sub32.anInt6930 > i; i++) {

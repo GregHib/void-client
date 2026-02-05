@@ -68,11 +68,11 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
         anInt8619++;
         Interface10 interface10 = (Interface10) r_Sub2.method3297(i, i_2_, i_3_);
         boolean bool = true;
-        if (interface10 != null) bool &= Class55.method520(interface10, -1);
+        if (interface10 != null) bool &= Video.method520(interface10, -1);
         interface10 = ((Interface10) Class177.method1353(i, i_2_, i_3_, (aClass8623 != null ? aClass8623 : (aClass8623 = Interface10.class))));
-        if (interface10 != null) bool &= Class55.method520(interface10, -1);
+        if (interface10 != null) bool &= Video.method520(interface10, -1);
         interface10 = (Interface10) Class348_Sub16_Sub3.method2878(i, i_2_, i_3_);
-        if (interface10 != null) bool &= Class55.method520(interface10, -1);
+        if (interface10 != null) bool &= Video.method520(interface10, -1);
         return bool;
     }
 }

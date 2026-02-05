@@ -98,9 +98,9 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
         anInt9047++;
         if (i_7_ == 8 || i_7_ == 16) {
             for (int i_11_ = 0; (Class348_Sub44.anInt7101 > i_11_); i_11_++) {
-                Class338 class338 = Class294.aClass338Array5060[i_11_];
+                Class338 class338 = AwtLoadingScreen.aClass338Array5060[i_11_];
                 if ((class338.aByte4192 == i_7_ && i_10_ == class338.aShort4185 && i_8_ == class338.aShort4193) || ((class338.aShort4182 == i_10_) && (class338.aShort4193 == i_8_))) {
-                    if (i_11_ != Class348_Sub44.anInt7101) Class214.method1575(Class294.aClass338Array5060, 1 + i_11_, Class294.aClass338Array5060, i_11_, (Class294.aClass338Array5060.length + -i_11_ - 1));
+                    if (i_11_ != Class348_Sub44.anInt7101) Class214.method1575(AwtLoadingScreen.aClass338Array5060, 1 + i_11_, AwtLoadingScreen.aClass338Array5060, i_11_, (AwtLoadingScreen.aClass338Array5060.length + -i_11_ - 1));
                     Class348_Sub44.anInt7101--;
                     return;
                 }

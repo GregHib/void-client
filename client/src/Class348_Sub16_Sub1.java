@@ -52,11 +52,11 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
     static final void method2822(int i, Class348_Sub49_Sub2 class348_sub49_sub2, int i_3_) {
         Class101_Sub3.anInt5768 = 0;
         anInt8846++;
-        Class55.aBoolean979 = false;
+        Video.aBoolean979 = false;
         if (i < -17) {
             Class348_Sub40_Sub18.method3094(-21478, class348_sub49_sub2);
             Class375.method3612(75, class348_sub49_sub2);
-            if (Class55.aBoolean979) System.out.println("---endgpp---");
+            if (Video.aBoolean979) System.out.println("---endgpp---");
             if (class348_sub49_sub2.anInt7197 != i_3_) throw new RuntimeException("gpi1 pos:" + class348_sub49_sub2.anInt7197 + " psize:" + i_3_);
         }
     }

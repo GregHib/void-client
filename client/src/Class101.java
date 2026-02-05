@@ -30,7 +30,7 @@ abstract class Class101 {
         Class132.aPlayer_1907.method2449(8, 8, (byte) 118);
         if (i != -49) anInt1597 = 115;
         int i_6_ = 18;
-        Class322.anIntArray4031 = new int[i_6_];
+        MonochromeImageCache.anIntArray4031 = new int[i_6_];
         Class348_Sub50.aByteArrayArray7212 = new byte[i_6_][];
         Class239_Sub6.anIntArrayArray5894 = new int[i_6_][4];
         aa_Sub1.anIntArray5192 = new int[i_6_];
@@ -49,10 +49,10 @@ abstract class Class101 {
                 Class348_Sub23_Sub3.anIntArray9042[i_6_] = i_9_;
                 aa_Sub1.anIntArray5192[i_6_] = Class367_Sub10.aClass45_7382.method417("m" + i_7_ + "_" + i_8_, i + 49);
                 GameShell.anIntArray38[i_6_] = Class367_Sub10.aClass45_7382.method417("l" + i_7_ + "_" + i_8_, 0);
-                Class322.anIntArray4031[i_6_] = Class367_Sub10.aClass45_7382.method417("n" + i_7_ + "_" + i_8_, 0);
+                MonochromeImageCache.anIntArray4031[i_6_] = Class367_Sub10.aClass45_7382.method417("n" + i_7_ + "_" + i_8_, 0);
                 Class295.anIntArray3759[i_6_] = Class367_Sub10.aClass45_7382.method417("um" + i_7_ + "_" + i_8_, 0);
                 r.anIntArray9724[i_6_] = (Class367_Sub10.aClass45_7382.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i, -49)));
-                if (Class322.anIntArray4031[i_6_] == -1) {
+                if (MonochromeImageCache.anIntArray4031[i_6_] == -1) {
                     aa_Sub1.anIntArray5192[i_6_] = -1;
                     GameShell.anIntArray38[i_6_] = -1;
                     Class295.anIntArray3759[i_6_] = -1;
@@ -61,8 +61,8 @@ abstract class Class101 {
                 i_6_++;
             }
         }
-        for (int i_10_ = i_6_; Class322.anIntArray4031.length > i_10_; i_10_++) {
-            Class322.anIntArray4031[i_10_] = -1;
+        for (int i_10_ = i_6_; MonochromeImageCache.anIntArray4031.length > i_10_; i_10_++) {
+            MonochromeImageCache.anIntArray4031[i_10_] = -1;
             aa_Sub1.anIntArray5192[i_10_] = -1;
             GameShell.anIntArray38[i_10_] = -1;
             Class295.anIntArray3759[i_10_] = -1;

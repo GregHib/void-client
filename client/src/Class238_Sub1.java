@@ -22,7 +22,7 @@ final class Class238_Sub1 extends Class238 {
 
     static final void method1707(int i) {
         if (i != 26469) method1708(20, 93, 118, 24, (byte) -1, null);
-        Class322.aClass308_4036.method2303(true);
+        MonochromeImageCache.aClass308_4036.method2303(true);
         anInt5829++;
     }
 

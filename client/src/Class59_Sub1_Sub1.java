@@ -335,9 +335,9 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
             for (int i_13_ = 0; i_13_ < i_11_; i_13_++)
                 class318_sub4.aClass318_Sub3Array6414[i_13_].aBoolean6401 = false;
             synchronized (Class318.aClass243Array3974) {
-                if (Class318.aClass243Array3974.length > i_11_ && Class331.anIntArray4128[i_11_] < 200) {
+                if (Class318.aClass243Array3974.length > i_11_ && TimeUtils.anIntArray4128[i_11_] < 200) {
                     Class318.aClass243Array3974[i_11_].method1869(-126, class318_sub4);
-                    Class331.anIntArray4128[i_11_]++;
+                    TimeUtils.anIntArray4128[i_11_]++;
                 }
             }
         } catch (RuntimeException runtimeexception) {

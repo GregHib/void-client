@@ -138,7 +138,7 @@ final class Class258_Sub1 extends Class258 {
             }
         }
         if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
-            for (int i_42_ = 0; i_42_ < Class331.anInt4135; i_42_++)
+            for (int i_42_ = 0; i_42_ < TimeUtils.anInt4135; i_42_++)
                 Class239_Sub14.aClass211Array5993[i_42_].method1544(8688, bool, i);
         }
         if (Class348_Sub40_Sub5.aBoolean9121) {

@@ -33,9 +33,9 @@ final class Class211 {
             int i_3_ = class348_sub49_sub2.readBits((byte) -24, 6);
             boolean bool = (class348_sub49_sub2.readBits((byte) -24, 1) == 1);
             if (bool) Class18.anIntArray279[Class101_Sub3.anInt5768++] = i;
-            if (Class294.aPlayerArray5058[i] != null) throw new RuntimeException("hr:lr");
+            if (AwtLoadingScreen.aPlayerArray5058[i] != null) throw new RuntimeException("hr:lr");
             Class359 class359 = Class348_Sub17.aClass359Array6802[i];
-            Player player = (Class294.aPlayerArray5058[i] = new Player());
+            Player player = (AwtLoadingScreen.aPlayerArray5058[i] = new Player());
             player.anInt10290 = i;
             if (Class154.aClass348_Sub49Array2105[i] != null) player.method2452((byte) 84, Class154.aClass348_Sub49Array2105[i]);
             player.method2435((byte) -108, (class359.anInt4423), true);

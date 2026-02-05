@@ -130,7 +130,7 @@ final class Class348_Sub9 extends Class348 {
                             Class348_Sub42_Sub14.method3243(-4, class348_sub47);
                         }
                         if (i_8_ == 7) {
-                            Class331.anInt4134++;
+                            TimeUtils.anInt4134++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class358.aClass351_4418), (Class348_Sub23_Sub2.aClass77_9029), -84);
                             Class375.method3614(i_9_, i, class46.anInt812, class348_sub47, -19692);
                             Class348_Sub42_Sub14.method3243(118, class348_sub47);

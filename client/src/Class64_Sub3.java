@@ -3198,7 +3198,7 @@ final class Class64_Sub3 extends Class64 {
                                     float f_802_ = ((fs[2] * (float) i_798_ + ((float) i_797_ * fs[1] + (float) i_796_ * fs[0])) / f_799_);
                                     float f_803_ = ((fs[5] * (float) i_798_ + ((float) i_797_ * fs[4] + fs[3] * (float) i_796_)) / f_800_);
                                     float f_804_ = (((float) i_798_ * fs[8] + (fs[7] * (float) i_797_ + (float) i_796_ * fs[6])) / f_801_);
-                                    i_747_ = Class331.method2635(f_803_, false, f_804_, f_802_);
+                                    i_747_ = TimeUtils.method2635(f_803_, false, f_804_, f_802_);
                                     Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_780_]), i_785_, false, i_786_, i_783_, (class124.anIntArray1841[i_780_]), (class124.anIntArray1847[i_780_]), f_788_, Class152.aFloatArray2075, i_784_, i_747_);
                                     f_740_ = Class152.aFloatArray2075[1];
                                     f = Class152.aFloatArray2075[0];

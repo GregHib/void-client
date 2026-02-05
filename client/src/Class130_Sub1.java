@@ -68,7 +68,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub5_Sub1.anInt8828 = 0;
         s_Sub2.anInt8262 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10004 = 0;
-        Class322.anInt4018 = 0;
+        MonochromeImageCache.anInt4018 = 0;
         Class253.anInt3247 = 0;
         InputStream_Sub1.anInt73 = 0;
         Class101_Sub2.anInt5719 = 0;
@@ -236,14 +236,14 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub18.anInt6822 = 0;
         Class219.anInt2865 = 0;
         Class13.anInt219 = 0;
-        Class55.anInt994 = 0;
+        Video.anInt994 = 0;
         s_Sub3.anInt8290 = 0;
         Class64_Sub3.anInt5577 = 0;
         GlToolkit.anInt7647 = 0;
         Class286_Sub2.anInt6209 = 0;
         Class161.anInt2149 = 0;
         Class318_Sub1_Sub2.anInt8734 = 0;
-        Class294.anInt5027 = 0;
+        AwtLoadingScreen.anInt5027 = 0;
         Class34.anInt471 = 0;
         Class46.anInt766 = 0;
         Class29.anInt402 = 0;
@@ -263,7 +263,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub2.anInt5417 = 0;
         Class98.anInt1570 = 0;
         Class296.anInt3775 = 0;
-        Class294.anInt5049 = 0;
+        AwtLoadingScreen.anInt5049 = 0;
         Class239_Sub19.anInt6045 = 0;
         Class377.anInt9854 = 0;
         Class163.anInt2160 = 0;
@@ -300,7 +300,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub28.anInt6139 = 0;
         Class348_Sub49.anInt7150 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9944 = 0;
-        Class322.anInt4034 = 0;
+        MonochromeImageCache.anInt4034 = 0;
         Npc.anInt10495 = 0;
         Class348_Sub40_Sub8.anInt9155 = 0;
         Class60.anInt1091 = 0;
@@ -397,7 +397,7 @@ final class Class130_Sub1 extends Class130 {
         LocType.anInt867 = 0;
         Class318_Sub1_Sub5_Sub1.anInt10121 = 0;
         r_Sub1.anInt10469 = 0;
-        Class294.anInt5038 = 0;
+        AwtLoadingScreen.anInt5038 = 0;
         Class88.anInt1494 = 0;
         Class62.anInt1111 = 0;
         Class377.anInt9898 = 0;
@@ -448,7 +448,7 @@ final class Class130_Sub1 extends Class130 {
         Class8.anInt163 = 0;
         Class10.anInt175 = 0;
         ha_Sub3.anInt8066 = 0;
-        Class55.anInt978 = 0;
+        Video.anInt978 = 0;
         Class318_Sub1_Sub3_Sub5.anInt10406 = 0;
         Class243.anInt3158 = 0;
         Class88.anInt1492 = 0;
@@ -511,7 +511,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub35.anInt6975 = 0;
         Class258_Sub3.anInt8544 = 0;
         Class377.anInt9873 = 0;
-        Class55.anInt989 = 0;
+        Video.anInt989 = 0;
         GlToolkit.anInt7727 = 0;
         Class85.anInt1461 = 0;
         Class318_Sub1_Sub1_Sub2.anInt9970 = 0;
@@ -556,7 +556,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub18.anInt6038 = 0;
         Class367_Sub11.anInt7402 = 0;
         LocType.anInt938 = 0;
-        Class55.anInt1005 = 0;
+        Video.anInt1005 = 0;
         ha.anInt4561 = 0;
         Class27.anInt393 = 0;
         Class318_Sub1_Sub4.anInt8761 = 0;
@@ -601,7 +601,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub5_Sub1.anInt10146 = 0;
         Class66.anInt1162 = 0;
         Class195.anInt5009 = 0;
-        Class294.anInt5048 = 0;
+        AwtLoadingScreen.anInt5048 = 0;
         Class66.anInt1165 = 0;
         Class273.anInt5166 = 0;
         Class101_Sub2.anInt5728 = 0;
@@ -1044,7 +1044,7 @@ final class Class130_Sub1 extends Class130 {
         ha.anInt4568 = 0;
         Class377.anInt9875 = 0;
         Class87.anInt1483 = 0;
-        Class322.anInt4028 = 0;
+        MonochromeImageCache.anInt4028 = 0;
         Class84.anInt1456 = 0;
         Class217.anInt2846 = 0;
         Class348_Sub40_Sub39.anInt9482 = 0;
@@ -1143,7 +1143,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub4_Sub2.anInt10113 = 0;
         Class348_Sub49.anInt7149 = 0;
         Class372.anInt4530 = 0;
-        Class55.anInt1000 = 0;
+        Video.anInt1000 = 0;
         Class159.anInt2126 = 0;
         Class45.anInt654 = 0;
         Class5_Sub3.anInt8374 = 0;
@@ -1444,7 +1444,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub51.anInt7225 = 0;
         Class14.anInt5083 = 0;
         Class173.anInt2282 = 0;
-        Class55.anInt980 = 0;
+        Video.anInt980 = 0;
         Class101_Sub2.anInt5698 = 0;
         Class315.anInt3952 = 0;
         Class14.anInt5095 = 0;
@@ -1628,7 +1628,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7885 = 0;
         Class26.anInt380 = 0;
         InputStream_Sub2.anInt81 = 0;
-        Class294.anInt5043 = 0;
+        AwtLoadingScreen.anInt5043 = 0;
         Class348_Sub5.anInt6629 = 0;
         Class367_Sub8.anInt7359 = 0;
         Class367_Sub1.anInt7282 = 0;
@@ -1664,13 +1664,13 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub3.anInt5613 = 0;
         Class348_Sub49_Sub2.anInt9752 = 0;
         Class258_Sub2.anInt8534 = 0;
-        Class55.anInt1003 = 0;
+        Video.anInt1003 = 0;
         Class318_Sub9_Sub1.anInt8788 = 0;
         Class101_Sub3.anInt5782 = 0;
         Class285_Sub1.anInt8485 = 0;
         Class237.anInt3127 = 0;
         Class318_Sub1.anInt6385 = 0;
-        Class331.anInt4134 = 0;
+        TimeUtils.anInt4134 = 0;
         ClientStreamWriter.anInt2711 = 0;
         GlToolkit.anInt7568 = 0;
         Class59_Sub1.anInt5277 = 0;
@@ -1838,7 +1838,7 @@ final class Class130_Sub1 extends Class130 {
         Class24.anInt354 = 0;
         Class309.anInt4811 = 0;
         Class78.anInt1306 = 0;
-        Class331.anInt4132 = 0;
+        TimeUtils.anInt4132 = 0;
         Class348_Sub22.anInt6861 = 0;
         Class318_Sub1.anInt6384 = 0;
         Class239_Sub7.anInt5904 = 0;
@@ -1966,7 +1966,7 @@ final class Class130_Sub1 extends Class130 {
         Class107.anInt1649 = 0;
         Class5_Sub3.anInt8373 = 0;
         Class348_Sub40_Sub12.anInt9192 = 0;
-        Class55.anInt996 = 0;
+        Video.anInt996 = 0;
         Class348_Sub31_Sub2.anInt9079 = 0;
         Class64_Sub3.anInt5570 = 0;
         Class239_Sub13.anInt5975 = 0;
@@ -2071,7 +2071,7 @@ final class Class130_Sub1 extends Class130 {
         Class268.anInt3445 = 0;
         Class66.anInt1171 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10235 = 0;
-        Class294.anInt5052 = 0;
+        AwtLoadingScreen.anInt5052 = 0;
         Class239_Sub9.anInt5926 = 0;
         GameShell.anInt15 = 0;
         Class46.anInt829 = 0;
@@ -2356,7 +2356,7 @@ final class Class130_Sub1 extends Class130 {
         Class232.anInt3007 = 0;
         Class25.anInt372 = 0;
         Class218.anInt2852 = 0;
-        Class55.anInt992 = 0;
+        Video.anInt992 = 0;
         Npc.anInt10509 = 0;
         ha_Sub3.anInt7913 = 0;
         Class143.anInt1990 = 0;
@@ -2690,7 +2690,7 @@ final class Class130_Sub1 extends Class130 {
         Class127_Sub1.anInt8379 = 0;
         Class10.anInt181 = 0;
         Class348_Sub40_Sub6.anInt9136 = 0;
-        Class294.anInt5039 = 0;
+        AwtLoadingScreen.anInt5039 = 0;
         Class377.anInt9894 = 0;
         Class93.anInt1532 = 0;
         Class64_Sub2.anInt5487 = 0;
@@ -2757,7 +2757,7 @@ final class Class130_Sub1 extends Class130 {
         Class151.anInt2066 = 0;
         Class14_Sub3.anInt8627 = 0;
         Class377.anInt9886 = 0;
-        Class55.anInt1002 = 0;
+        Video.anInt1002 = 0;
         Class286_Sub6.anInt6273 = 0;
         Class190.anInt2550 = 0;
         Class101_Sub1.anInt5658 = 0;
@@ -2768,7 +2768,7 @@ final class Class130_Sub1 extends Class130 {
         Class368.anInt4494 = 0;
         ha_Sub3.anInt8051 = 0;
         Class286_Sub5.anInt6253 = 0;
-        Class294.anInt5031 = 0;
+        AwtLoadingScreen.anInt5031 = 0;
         Class318_Sub1_Sub1_Sub2.anInt9973 = 0;
         Class286_Sub3.anInt6216 = 0;
         Class309.anInt4823 = 0;
@@ -2780,11 +2780,11 @@ final class Class130_Sub1 extends Class130 {
         Class289.anInt3698 = 0;
         Class59_Sub1_Sub2.anInt8661 = 0;
         Class162.anInt2152 = 0;
-        Class294.anInt5033 = 0;
+        AwtLoadingScreen.anInt5033 = 0;
         Class148.anInt2041 = 0;
         Class348_Sub23_Sub1.anInt8997 = 0;
         Class348_Sub40.anInt7027 = 0;
-        Class55.anInt988 = 0;
+        Video.anInt988 = 0;
         Class348_Sub49.anInt7208 = 0;
         Class318_Sub1_Sub1_Sub2.anInt9972 = 0;
         GlToolkit.anInt7703 = 0;
@@ -2837,7 +2837,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub9.anInt5927 = 0;
         Class239_Sub2.anInt5852 = 0;
         ha_Sub3.anInt7902 = 0;
-        Class294.anInt5055 = 0;
+        AwtLoadingScreen.anInt5055 = 0;
         Class348_Sub16_Sub3.anInt8952 = 0;
         Class348_Sub40_Sub22.anInt9296 = 0;
         Class239_Sub25.anInt6102 = 0;
@@ -2892,7 +2892,7 @@ final class Class130_Sub1 extends Class130 {
         s_Sub3.anInt8298 = 0;
         Class162.anInt2154 = 0;
         Class348.anInt4298 = 0;
-        Class322.anInt4019 = 0;
+        MonochromeImageCache.anInt4019 = 0;
         GlToolkit.anInt7543 = 0;
         Class348_Sub40_Sub33.anInt9430 = 0;
         Class64_Sub2.anInt5459 = 0;
@@ -3105,7 +3105,7 @@ final class Class130_Sub1 extends Class130 {
         Class151.anInt2064 = 0;
         Class170.anInt5062 = 0;
         Class348_Sub49.anInt7196 = 0;
-        Class331.anInt4137 = 0;
+        TimeUtils.anInt4137 = 0;
         Class237.anInt3110 = 0;
         Class348_Sub40_Sub31.anInt9409 = 0;
         Class279.anInt3612 = 0;
@@ -3150,7 +3150,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub19.anInt9255 = 0;
         Class348_Sub42_Sub7.anInt9544 = 0;
         Class348_Sub23_Sub2.anInt9030 = 0;
-        Class294.anInt5025 = 0;
+        AwtLoadingScreen.anInt5025 = 0;
         Class348_Sub3.anInt6570 = 0;
         Class77.anInt1299 = 0;
         Class318_Sub1_Sub1_Sub2.anInt9986 = 0;
@@ -3253,7 +3253,7 @@ final class Class130_Sub1 extends Class130 {
         Class377.anInt9868 = 0;
         ha_Sub3.anInt8059 = 0;
         Class62.anInt1110 = 0;
-        Class55.anInt998 = 0;
+        Video.anInt998 = 0;
         Class101_Sub3.anInt5775 = 0;
         Class367_Sub10.anInt7386 = 0;
         Class17.anInt243 = 0;
@@ -3479,7 +3479,7 @@ final class Class130_Sub1 extends Class130 {
         Class31.anInt437 = 0;
         Class318_Sub1_Sub2.anInt8736 = 0;
         ha_Sub3.anInt7901 = 0;
-        Class55.anInt982 = 0;
+        Video.anInt982 = 0;
         Class348_Sub40_Sub39.anInt9487 = 0;
         Class369_Sub2.anInt8586 = 0;
         Class286_Sub6.anInt6275 = 0;
@@ -3487,7 +3487,7 @@ final class Class130_Sub1 extends Class130 {
         Class239_Sub8.anInt5920 = 0;
         Class73.anInt4774 = 0;
         Class237.anInt3121 = 0;
-        Class55.anInt997 = 0;
+        Video.anInt997 = 0;
         Class105_Sub1.anInt8395 = 0;
         Class369_Sub1.anInt8579 = 0;
         Class239_Sub8.anInt5922 = 0;
@@ -3558,7 +3558,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub49_Sub1.anInt9745 = 0;
         Class135_Sub1.anInt4710 = 0;
         Class225.anInt2902 = 0;
-        Class55.anInt985 = 0;
+        Video.anInt985 = 0;
         Class59_Sub1_Sub1.anInt8656 = 0;
         GameShell.anInt29 = 0;
         ha_Sub3.anInt8038 = 0;
@@ -3697,7 +3697,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub9.anInt9168 = 0;
         Class27.anInt397 = 0;
         Class64_Sub2.anInt5489 = 0;
-        Class294.anInt5028 = 0;
+        AwtLoadingScreen.anInt5028 = 0;
         Class367_Sub4.anInt7321 = 0;
         Class348_Sub40_Sub26.anInt9345 = 0;
         Class101_Sub2.anInt5695 = 0;
@@ -3736,12 +3736,12 @@ final class Class130_Sub1 extends Class130 {
         Class286_Sub7.anInt6288 = 0;
         Class64_Sub3.anInt5561 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9952 = 0;
-        Class55.anInt990 = 0;
+        Video.anInt990 = 0;
         Class239_Sub29.anInt6148 = 0;
         Class286_Sub3.anInt6214 = 0;
         Class64_Sub2.anInt5435 = 0;
         Class348_Sub40_Sub38.anInt9476 = 0;
-        Class331.anInt4131 = 0;
+        TimeUtils.anInt4131 = 0;
         Class65.anInt1138 = 0;
         Class348_Sub40_Sub3.anInt9105 = 0;
         Class73.anInt4777 = 0;
@@ -3780,7 +3780,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub31_Sub2.anInt9071 = 0;
         Class272.anInt3472 = 0;
         Class187.anInt2504 = 0;
-        Class322.anInt4023 = 0;
+        MonochromeImageCache.anInt4023 = 0;
         Class377.anInt9867 = 0;
         Class163.anInt2168 = 0;
         Class108.anInt1659 = 0;
@@ -3826,7 +3826,7 @@ final class Class130_Sub1 extends Class130 {
         Class14_Sub2.anInt8619 = 0;
         Class346_Sub1.anInt6526 = 0;
         ha_Sub3.anInt7895 = 0;
-        Class294.anInt5061 = 0;
+        AwtLoadingScreen.anInt5061 = 0;
         Class101_Sub1.anInt5679 = 0;
         Class348_Sub42_Sub11.anInt9585 = 0;
         Class286_Sub4.anInt6235 = 0;
@@ -3871,7 +3871,7 @@ final class Class130_Sub1 extends Class130 {
         Class356.anInt4376 = 0;
         Class285_Sub1.anInt8484 = 0;
         Class107.anInt1646 = 0;
-        Class322.anInt4030 = 0;
+        MonochromeImageCache.anInt4030 = 0;
         Class348_Sub40_Sub21.anInt9273 = 0;
         ha_Sub3.anInt8060 = 0;
         Class64_Sub3.anInt5650 = 0;
@@ -3886,7 +3886,7 @@ final class Class130_Sub1 extends Class130 {
         Class326.anInt4089 = 0;
         Class5_Sub1.anInt8348 = 0;
         Class261.anInt3318 = 0;
-        Class331.anInt4136 = 0;
+        TimeUtils.anInt4136 = 0;
         Class348_Sub49.anInt7138 = 0;
         Class318_Sub1_Sub5_Sub2.anInt10151 = 0;
         Class367.anInt4480 = 0;
@@ -3934,7 +3934,7 @@ final class Class130_Sub1 extends Class130 {
         Class278.anInt3588 = 0;
         Class59.anInt1070 = 0;
         Class348_Sub49.anInt7183 = 0;
-        Class55.anInt1004 = 0;
+        Video.anInt1004 = 0;
         Class152.anInt2073 = 0;
         Class64_Sub3.anInt5568 = 0;
         Class42.anInt563 = 0;
@@ -3991,11 +3991,11 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub5.anInt9127 = 0;
         Class369_Sub3_Sub1.anInt10176 = 0;
         s_Sub3.anInt8316 = 0;
-        Class294.anInt5044 = 0;
+        AwtLoadingScreen.anInt5044 = 0;
         Class196.anInt2599 = 0;
         Class154.anInt2107 = 0;
         Class348_Sub16_Sub3.anInt8890 = 0;
-        Class55.anInt986 = 0;
+        Video.anInt986 = 0;
         Class239_Sub16.anInt6015 = 0;
         Class206.anInt4881 = 0;
         Class272.anInt3474 = 0;
@@ -4110,7 +4110,7 @@ final class Class130_Sub1 extends Class130 {
         Class20.anInt319 = (int) (Math.random() * 100D) - 50;
         Class348_Sub40_Sub16.method3089(-126);
         for (int k = 0; k < 2048; k++)
-            Class294.aPlayerArray5058[k] = null;
+            AwtLoadingScreen.aPlayerArray5058[k] = null;
 
         Class150.anInt2057 = 0;
         Class348_Sub32.anInt6930 = 0;
@@ -4121,7 +4121,7 @@ final class Class130_Sub1 extends Class130 {
         Class130.aClass356_1895.method3481(0);
         Class348_Sub42_Sub20.aClass262_9711 = new Class262();
         Class318_Sub1_Sub3_Sub3.aClass170_10209.method1314((byte) 74);
-        Class331.method2636(i + 69);
+        TimeUtils.method2636(i + 69);
         Class239_Sub12.anInt5973 = 0;
         Class275.anInt3550 = 0;
         Class281.anInt3647 = 0;

@@ -27,7 +27,7 @@ final class Class348_Sub8 extends Class348 {
         if (class318_sub1_sub3_sub3.anInt10275 != -1) {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_0_ = null;
             if (class318_sub1_sub3_sub3.anInt10275 >= 32768) {
-                if ((class318_sub1_sub3_sub3.anInt10275) >= 32768) class318_sub1_sub3_sub3_0_ = (Class294.aPlayerArray5058[class318_sub1_sub3_sub3.anInt10275 + -32768]);
+                if ((class318_sub1_sub3_sub3.anInt10275) >= 32768) class318_sub1_sub3_sub3_0_ = (AwtLoadingScreen.aPlayerArray5058[class318_sub1_sub3_sub3.anInt10275 + -32768]);
             } else {
                 Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(class318_sub1_sub3_sub3.anInt10275, -6008)));
                 if (class348_sub22 != null) class318_sub1_sub3_sub3_0_ = (class348_sub22.aNpc_6859);

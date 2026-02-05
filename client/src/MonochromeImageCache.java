@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class322 {
+final class MonochromeImageCache {
     static int anInt4018;
     static int anInt4019;
     private final int anInt4020;
@@ -149,7 +149,7 @@ final class Class322 {
         aClass262_4021 = null;
     }
 
-    Class322(int i, int i_9_, int i_10_) {
+    MonochromeImageCache(int i, int i_9_, int i_10_) {
         anInt4022 = -1;
         aClass262_4021 = new Class262();
         this.aBoolean4035 = false;

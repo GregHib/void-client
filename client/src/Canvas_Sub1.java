@@ -155,8 +155,8 @@ final class Canvas_Sub1 extends Canvas {
                     Class268.anInt3441++;
                 }
             }
-            if (Class322.anIntArray4031 != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && Class322.anIntArray4031[i_19_] != -1) {
-                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.aClass45_7382.method393(Class322.anIntArray4031[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+            if (MonochromeImageCache.anIntArray4031 != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && MonochromeImageCache.anIntArray4031[i_19_] != -1) {
+                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.aClass45_7382.method393(MonochromeImageCache.anIntArray4031[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class348_Sub50.aByteArrayArray7212[i_19_] == null) {
                     bool = false;
                     Class268.anInt3441++;

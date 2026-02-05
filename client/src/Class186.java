@@ -27,7 +27,7 @@ abstract class Class186 {
         int i_0_ = Class328_Sub1.anInt6513;
         int[] is = Class286_Sub7.anIntArray6290;
         for (int i_1_ = 0; i_1_ < i_0_; i_1_++) {
-            Player player = Class294.aPlayerArray5058[is[i_1_]];
+            Player player = AwtLoadingScreen.aPlayerArray5058[is[i_1_]];
             if (player != null && (player.anInt10264) > 0) {
                 player.anInt10264--;
                 if ((player.anInt10264) == 0) player.aString10292 = null;

@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.lang.reflect.Field;
 
-final class Class294 implements Interface16 {
+final class AwtLoadingScreen implements Interface16 {
     private boolean aBoolean5020;
     private int anInt5021;
     private boolean aBoolean5022;
@@ -267,7 +267,7 @@ final class Class294 implements Interface16 {
         if (i != 33) method55((byte) 1);
     }
 
-    public Class294() {
+    public AwtLoadingScreen() {
         /* empty */
     }
 }

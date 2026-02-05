@@ -4,7 +4,7 @@
 
 import java.io.IOException;
 
-final class Class55_Sub1 extends Class55 {
+final class Class55_Sub1 extends Video {
     static boolean aBoolean5265 = false;
     static int anInt5266;
     private final Class45 aClass45_5267;

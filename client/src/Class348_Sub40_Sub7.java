@@ -87,8 +87,8 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                     i_30_ -= Class219.anInt2872;
                                     if (Class348_Sub40_Sub37.anInt9461 > i_29_) i_29_ = Class348_Sub40_Sub37.anInt9461;
                                     if (i_30_ < Class40.anInt558) i_30_ = Class40.anInt558;
-                                    if (class46.anInt709 + i_29_ > ((Class331.aClass46_4130.anInt709) + Class348_Sub40_Sub37.anInt9461)) i_29_ = (-class46.anInt709 + ((Class348_Sub40_Sub37.anInt9461) + (Class331.aClass46_4130.anInt709)));
-                                    if (i_30_ + class46.anInt789 > (Class331.aClass46_4130.anInt789) + Class40.anInt558) i_30_ = (-class46.anInt789 + (Class40.anInt558 - -(Class331.aClass46_4130.anInt789)));
+                                    if (class46.anInt709 + i_29_ > ((TimeUtils.aClass46_4130.anInt709) + Class348_Sub40_Sub37.anInt9461)) i_29_ = (-class46.anInt709 + ((Class348_Sub40_Sub37.anInt9461) + (TimeUtils.aClass46_4130.anInt709)));
+                                    if (i_30_ + class46.anInt789 > (TimeUtils.aClass46_4130.anInt789) + Class40.anInt558) i_30_ = (-class46.anInt789 + (Class40.anInt558 - -(TimeUtils.aClass46_4130.anInt789)));
                                     i_24_ = i_29_;
                                     i_25_ = i_30_;
                                 }
@@ -357,7 +357,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                         } else if ((class46.anInt770) == 5) {
                                             int i_61_ = class46.anInt753;
                                             if (i_61_ >= 0 && (i_61_ < 2048)) {
-                                                Player player = (Class294.aPlayerArray5058[i_61_]);
+                                                Player player = (AwtLoadingScreen.aPlayerArray5058[i_61_]);
                                                 Class17 class17 = ((class46.anInt699) == -1 ? null : (Class10.aClass87_191.method835((class46.anInt699), 7)));
                                                 if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.anInt9591)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.aString10544), (byte) -50)))))
                                                     class64 = (player.aClass154_10536.method1226((Class318_Sub1_Sub3_Sub3.aClass170_10209), null, null, true, (Exception_Sub1.aClass255_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.aClass150_9342), class46.anInt841, (Class348_Sub8.aHa6654), (Class189.aClass278_2529), (Class10.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aClass261_5558)));

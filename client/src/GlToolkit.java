@@ -1094,7 +1094,7 @@ final class GlToolkit extends ha {
         aFloatArray7779 = new float[16];
         aBoolean7870 = true;
         this.aFloat7871 = -1.0F;
-        aClass348_Sub1Array7858 = new Class348_Sub1[Class55.anInt984];
+        aClass348_Sub1Array7858 = new Class348_Sub1[Video.anInt984];
         this.anInt7853 = 0;
         anInt7867 = 0;
         this.aFloat7875 = 3584.0F;
@@ -2920,7 +2920,7 @@ final class GlToolkit extends ha {
         for (int i_322_ = 0; (i_322_ < Class150.anInt2057 + i_321_); i_322_++) {
             NPCType class79 = null;
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
-            if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_322_]]);
+            if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (AwtLoadingScreen.aPlayerArray5058[is[i_322_]]);
             else {
                 class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_322_ + -i_321_], i_316_ ^ ~0x1775)).aNpc_6859);
                 class79 = ((Npc) class318_sub1_sub3_sub3).aClass79_10505;
@@ -2950,7 +2950,7 @@ final class GlToolkit extends ha {
                             i_324_ = class79.anInt1373;
                             if (i_324_ == -1) i_324_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2909);
                         } else {
-                            Player player = (Class294.aPlayerArray5058[is[i_322_]]);
+                            Player player = (AwtLoadingScreen.aPlayerArray5058[is[i_322_]]);
                             i_324_ = (class318_sub1_sub3_sub3.method2422((byte) 72).anInt2909);
                             if (player.aBoolean10554) i_325_ = 2;
                         }
@@ -3350,11 +3350,11 @@ final class GlToolkit extends ha {
             int i_434_ = Class258_Sub4.anIntArray8557[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_434_ >= 2048) class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_434_, -6008)).aNpc_6859);
-            else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058[i_434_];
+            else class318_sub1_sub3_sub3 = AwtLoadingScreen.aPlayerArray5058[i_434_];
             int i_435_ = Class268.anIntArray3432[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_436_;
             if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_435_, -6008)).aNpc_6859);
-            else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_];
+            else class318_sub1_sub3_sub3_436_ = AwtLoadingScreen.aPlayerArray5058[i_435_];
             Class191.method1430(--class318_sub1_sub3_sub3.anInt10261, (byte) 119, i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3);
         }
         int i_437_ = i_316_ + (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988);

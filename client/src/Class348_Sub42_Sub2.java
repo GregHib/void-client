@@ -60,12 +60,12 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = new long[i_1_][i_2_][i_3_];
             Class239_Sub14.aClass211Array5993 = new Class211[65535];
             r.aBooleanArray9718 = new boolean[65535];
-            Class331.anInt4135 = 0;
+            TimeUtils.anInt4135 = 0;
         } else {
             Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = null;
             Class239_Sub14.aClass211Array5993 = null;
             r.aBooleanArray9718 = null;
-            Class331.anInt4135 = 0;
+            TimeUtils.anInt4135 = 0;
         }
         Class243.method1879(false);
         Class348.aClass318_Sub1Array4293 = new Class318_Sub1[2];

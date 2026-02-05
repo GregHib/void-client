@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "description": "Wave 3 curated class renames (anchor-string driven; avoids placeholder dst names and java.awt name collisions).",
+  "base_branch": "pr/3-renames-634",
+  "src_dir": "client/src",
+  "renames": [
+    {
+      "src": "Class272_Sub2",
+      "dst": "ProxySocketFactory",
+      "score": 0.794122,
+      "anchors": ["proxy-authenticate:", "java.net.useSystemProxies", "supportsPreemptiveAuthorization", "getProxyAuth"]
+    },
+    {
+      "src": "Class294",
+      "dst": "AwtLoadingScreen",
+      "score": 0.799728,
+      "anchors": ["yOffset", "yMiddle", "xOffset", "xMiddle", "width", "top"]
+    },
+    {
+      "src": "Class322",
+      "dst": "MonochromeImageCache",
+      "score": 0.748266,
+      "anchors": ["Can only retrieve a full image cache"]
+    },
+    {
+      "src": "Class331",
+      "dst": "TimeUtils",
+      "score": 0.742606,
+      "anchors": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+    },
+    {
+      "src": "Class55",
+      "dst": "Video",
+      "score": 0.761369,
+      "anchors": ["Failed to load jagtheora library", "jagtheora", "kate"]
+    }
+  ]
+}
+

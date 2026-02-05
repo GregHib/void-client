@@ -39,11 +39,11 @@ final class Class347 {
             i_2_ -= Class318_Sub4.anInt6411;
             if (i_2_ < Class348_Sub40_Sub37.anInt9461) i_2_ = Class348_Sub40_Sub37.anInt9461;
             if (i == -30206) {
-                if (i_2_ - -Class289.aClass46_3701.anInt709 > (Class348_Sub40_Sub37.anInt9461 - -Class331.aClass46_4130.anInt709)) i_2_ = (Class331.aClass46_4130.anInt709 + (Class348_Sub40_Sub37.anInt9461 + -Class289.aClass46_3701.anInt709));
+                if (i_2_ - -Class289.aClass46_3701.anInt709 > (Class348_Sub40_Sub37.anInt9461 - -TimeUtils.aClass46_4130.anInt709)) i_2_ = (TimeUtils.aClass46_4130.anInt709 + (Class348_Sub40_Sub37.anInt9461 + -Class289.aClass46_3701.anInt709));
                 if (i_3_ < Class40.anInt558) i_3_ = Class40.anInt558;
-                if (Class289.aClass46_3701.anInt789 + i_3_ > (Class40.anInt558 - -Class331.aClass46_4130.anInt789)) i_3_ = (-Class289.aClass46_3701.anInt789 + (Class40.anInt558 - -Class331.aClass46_4130.anInt789));
-                int i_4_ = (-Class348_Sub40_Sub37.anInt9461 + (i_2_ - -Class331.aClass46_4130.anInt747));
-                int i_5_ = (-Class40.anInt558 + (i_3_ + Class331.aClass46_4130.anInt755));
+                if (Class289.aClass46_3701.anInt789 + i_3_ > (Class40.anInt558 - -TimeUtils.aClass46_4130.anInt789)) i_3_ = (-Class289.aClass46_3701.anInt789 + (Class40.anInt558 - -TimeUtils.aClass46_4130.anInt789));
+                int i_4_ = (-Class348_Sub40_Sub37.anInt9461 + (i_2_ - -TimeUtils.aClass46_4130.anInt747));
+                int i_5_ = (-Class40.anInt558 + (i_3_ + TimeUtils.aClass46_4130.anInt755));
                 if (Class258_Sub4.aClass373_8552.method3593(94)) {
                     if (Class289.aClass46_3701.anInt703 < Class318_Sub1.anInt6392) {
                         int i_6_ = i_2_ + -ha_Sub3.anInt8001;

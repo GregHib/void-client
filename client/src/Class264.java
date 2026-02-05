@@ -22,7 +22,7 @@ final class Class264 {
     static final boolean method2015(int i, int i_0_, int i_1_) {
         anInt3375++;
         if (i_1_ != 7) return false;
-        return ((Class294.method2217(i_0_, i, i_1_ ^ 0x7) | Class348_Sub40_Sub3.method3056(115, i, i_0_) | Class348_Sub40_Sub9.method3073(i_0_, i, (byte) 50)) & Class161.method1258(i, -9301, i_0_));
+        return ((AwtLoadingScreen.method2217(i_0_, i, i_1_ ^ 0x7) | Class348_Sub40_Sub3.method3056(115, i, i_0_) | Class348_Sub40_Sub9.method3073(i_0_, i, (byte) 50)) & Class161.method1258(i, -9301, i_0_));
     }
 
     final void method2016(int i, int i_2_) {

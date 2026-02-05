@@ -39,7 +39,7 @@ final class Class61 {
         anInt1104++;
         Class272 class272;
         try {
-            class272 = new Class272_Sub2();
+            class272 = new ProxySocketFactory();
         } catch (Throwable throwable) {
             class272 = new Class272_Sub1();
         }

@@ -66,7 +66,7 @@ final class za_Sub2 extends za {
                         i_7_ = (-(npc.x) + (class318_sub1_sub3_sub3.x));
                     } else {
                         int i_11_ = i_3_ & 0x7fff;
-                        Player player = (Class294.aPlayerArray5058[i_11_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_11_]);
                         if (player == null) {
                             class318_sub1_sub3_sub3.method2423(67, i, -1);
                             continue;

@@ -37,7 +37,7 @@ final class Class239_Sub1 extends Class239 {
             int i_3_ = Class328_Sub1.anInt6513;
             int[] is = Class286_Sub7.anIntArray6290;
             for (int i_4_ = 0; i_3_ > i_4_; i_4_++) {
-                Player player = (Class294.aPlayerArray5058[is[i_4_]]);
+                Player player = (AwtLoadingScreen.aPlayerArray5058[is[i_4_]]);
                 if (player.aString10544 != null && player.aString10544.equalsIgnoreCase(string) && (((player == Class132.aPlayer_1907) && (0x10 & Class38.anInt500) != 0) || (player != null && (Class38.anInt500 & 0x8) != 0))) {
                     Class228.anInt2975++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102);

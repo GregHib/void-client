@@ -65,7 +65,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         int i_17_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
         boolean bool = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21) == 1);
 
-        Class322.method2554((byte) -45);
+        MonochromeImageCache.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(111, i_15_);
         int i_18_ = (-Class299.aClass348_Sub49_Sub2_3813.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16;
         Class239_Sub6.anIntArrayArray5894 = new int[i_18_][4];
@@ -80,7 +80,7 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         GameShell.anIntArray38 = new int[i_18_];
         Class348_Sub50.aByteArrayArray7212 = null;
         r.anIntArray9724 = new int[i_18_];
-        Class322.anIntArray4031 = null;
+        MonochromeImageCache.anIntArray4031 = null;
         Class347.aByteArrayArray4281 = new byte[i_18_][];
         if (i >= -47) anInt9349 = -54;
         Class295.anIntArray3759 = new int[i_18_];

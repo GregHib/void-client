@@ -24,7 +24,7 @@ final class Class90 {
         boolean bool = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(i + 156) == 1;
         int i_2_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(i + -172);
         Class312.anInt3931 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -112);
-        Class322.method2554((byte) -45);
+        MonochromeImageCache.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(125, i_0_);
         Class299.aClass348_Sub49_Sub2_3813.startBitAccess(-122);
         for (int i_3_ = 0; i_3_ < 4; i_3_++) {
@@ -45,7 +45,7 @@ final class Class90 {
             for (int i_9_ = 0; i_9_ < 4; i_9_++)
                 Class239_Sub6.anIntArrayArray5894[i_8_][i_9_] = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
         }
-        Class322.anIntArray4031 = null;
+        MonochromeImageCache.anIntArray4031 = null;
         GameShell.anIntArray38 = new int[i_7_];
         r.anIntArray9724 = new int[i_7_];
         aa_Sub1.anIntArray5192 = new int[i_7_];

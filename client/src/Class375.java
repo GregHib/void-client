@@ -15,7 +15,7 @@ final class Class375 {
         if (i < 59) method3614(-51, 64, -115, null, -96);
         for (int i_0_ = 0; i_0_ < Class101_Sub3.anInt5768; i_0_++) {
             int i_1_ = Class18.anIntArray279[i_0_];
-            Player player = Class294.aPlayerArray5058[i_1_];
+            Player player = AwtLoadingScreen.aPlayerArray5058[i_1_];
             int i_2_ = class348_sub49_sub2.readUnsignedByte(255);
             if ((i_2_ & 0x40) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) << 8;
             if ((i_2_ & 0x4000) != 0) i_2_ += class348_sub49_sub2.readUnsignedByte(255) << 16;

@@ -580,7 +580,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             Class348_Sub42_Sub3.anInt9504 = 0;
         }
         if (Class239_Sub14.aClass211Array5993 != null) {
-            for (int i = 0; i < Class331.anInt4135; i++)
+            for (int i = 0; i < TimeUtils.anInt4135; i++)
                 Class239_Sub14.aClass211Array5993[i] = null;
             for (int i = 0; i < Class189.anInt2524; i++) {
                 for (int i_84_ = 0; i_84_ < Class318_Sub7.anInt6451; i_84_++) {
@@ -588,7 +588,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                         Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i][i_84_][i_85_] = 0L;
                 }
             }
-            Class331.anInt4135 = 0;
+            TimeUtils.anInt4135 = 0;
         }
         Class363.method3513(-120);
         Class71.aClass76_1208 = Class71.aClass76_1210;

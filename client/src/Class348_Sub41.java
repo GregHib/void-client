@@ -137,7 +137,7 @@ final class Class348_Sub41 extends Class348 {
             }
             if (i_15_ > 122) {
                 for (int i_30_ = 0; i_30_ < 2048; i_30_++) {
-                    Player player = (Class294.aPlayerArray5058[i_30_]);
+                    Player player = (AwtLoadingScreen.aPlayerArray5058[i_30_]);
                     if (player != null) {
                         for (int i_31_ = 0; i_31_ < 10; i_31_++) {
                             player.anIntArray10320[i_31_] -= i_20_;

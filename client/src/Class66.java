@@ -1083,7 +1083,7 @@ final class Class66 {
                 Class213.anInt2798 = i_133_;
                 Class117.anInt1780 = 0;
                 Class195.anInt5019 = anIntArray1149[anInt1173 + 2];
-                Class331.anInt4133 = anIntArray1149[anInt1173 + 3];
+                TimeUtils.anInt4133 = anIntArray1149[anInt1173 + 3];
                 int i_134_ = anIntArray1149[anInt1173 + 4];
                 if (i_134_ >= 2) throw new RuntimeException();
                 Class292.anInt4803 = i_134_;
@@ -2177,7 +2177,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 6903) {
-                    anIntArray1149[anInt1173++] = Class322.anInt4026;
+                    anIntArray1149[anInt1173++] = MonochromeImageCache.anInt4026;
                     return;
                 }
                 if (i == 6904) {
@@ -3789,7 +3789,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_317_ = anIntArray1149[anInt1173];
                     int i_318_ = anIntArray1149[anInt1173 + 1];
-                    anIntArray1149[anInt1173++] = Class322.method2552(false, i_317_, i_318_, -24667);
+                    anIntArray1149[anInt1173++] = MonochromeImageCache.method2552(false, i_317_, i_318_, -24667);
                     return;
                 }
                 if (i == 3302) {
@@ -3856,7 +3856,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_333_ = anIntArray1149[anInt1173];
                     int i_334_ = anIntArray1149[anInt1173 + 1];
-                    anIntArray1149[anInt1173++] = Class322.method2552(true, i_333_, i_334_, -24667);
+                    anIntArray1149[anInt1173++] = MonochromeImageCache.method2552(true, i_333_, i_334_, -24667);
                     return;
                 }
                 if (i == 3314) {

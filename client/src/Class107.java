@@ -150,7 +150,7 @@ final class Class107 {
                     int i_25_ = Class328_Sub1.anInt6513;
                     int[] is = Class286_Sub7.anIntArray6290;
                     for (int i_26_ = 0; i_26_ < i_25_; i_26_++) {
-                        Player player = (Class294.aPlayerArray5058[is[i_26_]]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[is[i_26_]]);
                         if (player != null && player.method2457((byte) 37) && !player.aBoolean10551 && (Class132.aPlayer_1907 != player) && (player.plane == (Class132.aPlayer_1907.plane))) {
                             int i_27_ = (-(i_4_ / 128) + (player.x) / 128);
                             int i_28_ = (-(i_3_ / 128) + (player.y) / 128);
@@ -199,8 +199,8 @@ final class Class107 {
                                 l *= l;
                                 Class287.method2181(l, i_1_, -112, i_37_, i, class46, i_36_, (class302.anInt3831), var_aa);
                             }
-                            if ((class302.anInt3840 == 10) && class302.anInt3833 >= 0 && (class302.anInt3833 < (Class294.aPlayerArray5058).length)) {
-                                Player player = (Class294.aPlayerArray5058[class302.anInt3833]);
+                            if ((class302.anInt3840 == 10) && class302.anInt3833 >= 0 && (class302.anInt3833 < (AwtLoadingScreen.aPlayerArray5058).length)) {
+                                Player player = (AwtLoadingScreen.aPlayerArray5058[class302.anInt3833]);
                                 if (player != null) {
                                     int i_38_ = (-(i_4_ / 128) + (player.x) / 128);
                                     int i_39_ = (-(i_3_ / 128) + (player.y) / 128);

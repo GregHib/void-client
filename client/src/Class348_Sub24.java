@@ -61,7 +61,7 @@ final class Class348_Sub24 extends Class348 {
                         if (i_5_ >= -1) {
                             if (i_5_ > 65534) i_5_ = 65534;
                         } else i_5_ = -1;
-                        if (s_Sub2.anInt8270 != i_5_ || i_4_ != Class322.anInt4032) {
+                        if (s_Sub2.anInt8270 != i_5_ || i_4_ != MonochromeImageCache.anInt4032) {
                             if (class348_sub47 == null) {
                                 Class361.anInt4450++;
                                 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub42_Sub11.aClass351_9590, Class348_Sub23_Sub2.aClass77_9029, -94));
@@ -70,8 +70,8 @@ final class Class348_Sub24 extends Class348 {
                             }
                             int i_6_ = -s_Sub2.anInt8270 + i_5_;
                             s_Sub2.anInt8270 = i_5_;
-                            int i_7_ = i_4_ - Class322.anInt4032;
-                            Class322.anInt4032 = i_4_;
+                            int i_7_ = i_4_ - MonochromeImageCache.anInt4032;
+                            MonochromeImageCache.anInt4032 = i_4_;
                             int i_8_ = (int) ((class348_sub45_3_.method3312((byte) -107) + -Class355.aLong4367) / 20L);
                             if (i_8_ >= 8 || i_6_ < -32 || i_6_ > 31 || i_7_ < -32 || i_7_ > 31) {
                                 if (i_8_ < 32 && i_6_ >= -128 && i_6_ <= 127 && i_7_ >= -128 && i_7_ <= 127) {

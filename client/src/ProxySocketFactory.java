@@ -14,7 +14,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-public final class Class272_Sub2 extends Class272 {
+public final class ProxySocketFactory extends Class272 {
     private final ProxySelector aProxySelector6172 = ProxySelector.getDefault();
     static Class aClass6173;
     static Class aClass6174;

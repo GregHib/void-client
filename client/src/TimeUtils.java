@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class331 {
+final class TimeUtils {
     static int[] anIntArray4128 = new int[5];
     static String[] aStringArray4129 = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
     static Class46 aClass46_4130;

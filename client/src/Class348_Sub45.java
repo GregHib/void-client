@@ -25,7 +25,7 @@ abstract class Class348_Sub45 extends Class348 {
         Class147.aClass338Array2034 = new Class338[500];
         Class69.anInt1200 = 0;
         Class239_Sub26.anInt6115 = 0;
-        Class294.aClass338Array5060 = new Class338[1000];
+        AwtLoadingScreen.aClass338Array5060 = new Class338[1000];
         if (i > -113) aClass304_7103 = null;
         Class348_Sub42_Sub10.anInt9577 = 0;
         Class348_Sub42_Sub19.aClass338Array9700 = new Class338[500];

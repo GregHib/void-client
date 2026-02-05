@@ -13,7 +13,7 @@ final class Class311 implements Runnable {
     static int anInt3904;
     static int anInt3905;
     static int anInt3906;
-    private Interface16 anInterface16_3907 = new Class294();
+    private Interface16 anInterface16_3907 = new AwtLoadingScreen();
     private boolean aBoolean3908;
     static int anInt3909;
     private volatile boolean aBoolean3910;
@@ -60,7 +60,7 @@ final class Class311 implements Runnable {
             synchronized (this) {
                 try {
                     anInt3920++;
-                    if (anInterface16_3907 instanceof Class294) anInterface16_3907.method58(aBoolean3908, -104);
+                    if (anInterface16_3907 instanceof AwtLoadingScreen) anInterface16_3907.method58(aBoolean3908, -104);
                     else {
                         long l_1_ = Class62.method599(-104);
                         if (Class348_Sub8.aHa6654 != null && anInterface16_3919 != null && anInterface16_3919.method55((byte) -58) != 0 && (aLong3914 >= l_1_ - (long) anInterface16_3919.method55((byte) -58))) {
@@ -93,7 +93,7 @@ final class Class311 implements Runnable {
                             anInterface16_3907.method58((aBoolean3908 || (Class348_Sub8.aHa6654 != null && Class348_Sub8.aHa6654.method3655())), -90);
                         }
                         try {
-                            if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294)) Class348_Sub8.aHa6654.method3689((byte) 57);
+                            if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof AwtLoadingScreen)) Class348_Sub8.aHa6654.method3689((byte) 57);
                         } catch (Exception_Sub1 exception_sub1) {
                             Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + NPCType.aClient1367.method81((byte) 80)), exception_sub1, 15004);
                             Class367_Sub10.method3553(true, (byte) 114, 0);
@@ -107,7 +107,7 @@ final class Class311 implements Runnable {
                     container.getSize();
                     if (Class52.aFrame4904 == container) Class52.aFrame4904.getInsets();
                     aBoolean3908 = false;
-                    if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294) && (aClass56_3916.method525(-112) < Class56.aClass56_1041.method525(-127))) Class367_Sub11.method3556(false);
+                    if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof AwtLoadingScreen) && (aClass56_3916.method525(-112) < Class56.aClass56_1041.method525(-127))) Class367_Sub11.method3556(false);
                 } catch (Exception exception) {
                     continue;
                 }

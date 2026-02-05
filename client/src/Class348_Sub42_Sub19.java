@@ -20,11 +20,11 @@ final class Class348_Sub42_Sub19 extends Class348_Sub42 {
     static int anInt9701;
 
     static final void method3276(Class211 class211) {
-        if (Class331.anInt4135 < 65535) {
+        if (TimeUtils.anInt4135 < 65535) {
             Class348_Sub1 class348_sub1 = class211.aClass348_Sub1_2745;
-            Class239_Sub14.aClass211Array5993[Class331.anInt4135] = class211;
-            r.aBooleanArray9718[Class331.anInt4135] = false;
-            Class331.anInt4135++;
+            Class239_Sub14.aClass211Array5993[TimeUtils.anInt4135] = class211;
+            r.aBooleanArray9718[TimeUtils.anInt4135] = false;
+            TimeUtils.anInt4135++;
             int i = class211.anInt2731;
             if (class211.aBoolean2749) i = 0;
             int i_0_ = class211.anInt2731;
@@ -46,10 +46,10 @@ final class Class348_Sub42_Sub19 extends Class348_Sub42 {
                     if (i_8_ >= Class318_Sub7.anInt6451) i_8_ = Class318_Sub7.anInt6451 - 1;
                     for (int i_9_ = i_7_; i_9_ <= i_8_; i_9_++) {
                         long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_]);
-                        if ((l & 0xffffL) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) Class331.anInt4135;
-                        else if ((l & 0xffff0000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) Class331.anInt4135 << 16;
-                        else if ((l & 0xffff00000000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) Class331.anInt4135 << 32;
-                        else if ((l & ~0xffffffffffffL) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) Class331.anInt4135 << 48;
+                        if ((l & 0xffffL) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) TimeUtils.anInt4135;
+                        else if ((l & 0xffff0000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) TimeUtils.anInt4135 << 16;
+                        else if ((l & 0xffff00000000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) TimeUtils.anInt4135 << 32;
+                        else if ((l & ~0xffffffffffffL) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i_1_][i_9_][i_5_] = l | (long) TimeUtils.anInt4135 << 48;
                     }
                 }
             }

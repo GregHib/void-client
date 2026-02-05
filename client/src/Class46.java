@@ -264,7 +264,7 @@ final class Class46 {
         Class239.aClass166_3147.method1283(1);
         Class136.aClass65_4787.method694(-1007);
         Class73.aClass219_4782.method1598(111);
-        Class331.method2638(-4631);
+        TimeUtils.method2638(-4631);
         Class172.method1328(-26162);
         Class348_Sub40_Sub20.method3102(22385);
         Class44.method386((byte) -106);

@@ -199,7 +199,7 @@ final class Class239_Sub24 extends Class239 {
                                 int i_40_ = Class328_Sub1.anInt6513;
                                 int[] is = Class286_Sub7.anIntArray6290;
                                 for (int i_41_ = 0; (i_40_ > i_41_); i_41_++) {
-                                    Player player_42_ = (Class294.aPlayerArray5058[is[i_41_]]);
+                                    Player player_42_ = (AwtLoadingScreen.aPlayerArray5058[is[i_41_]]);
                                     if ((player_42_ != null) && (Class367_Sub11.anInt7396 != (player_42_.anInt10215)) && (player != player_42_) && (player_42_.aBoolean10309)) {
                                         int i_43_ = ((player_42_.x) + -((player_42_.method2436((byte) 94) - 1) << 8));
                                         int i_44_ = ((player_42_.y) + -((-1 + (player_42_.method2436((byte) 82))) << 8));
@@ -237,7 +237,7 @@ final class Class239_Sub24 extends Class239 {
                                     int i_51_ = Class328_Sub1.anInt6513;
                                     int[] is = Class286_Sub7.anIntArray6290;
                                     for (int i_52_ = 0; (i_51_ > i_52_); i_52_++) {
-                                        Player player = (Class294.aPlayerArray5058[is[i_52_]]);
+                                        Player player = (AwtLoadingScreen.aPlayerArray5058[is[i_52_]]);
                                         if ((player != null) && (Class367_Sub11.anInt7396 != (player.anInt10215)) && (player.aBoolean10309)) {
                                             int i_53_ = ((player.x) - ((-1 + (player.method2436((byte) 116))) << 8));
                                             int i_54_ = ((player.y) + -((player.method2436((byte) 121)) + -1 << 8));

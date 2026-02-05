@@ -13,7 +13,7 @@ final class Class363 {
         synchronized (Class318.aClass243Array3974) {
             for (int i_0_ = 0; (i_0_ < Class318.aClass243Array3974.length); i_0_++) {
                 Class318.aClass243Array3974[i_0_] = new Class243();
-                Class331.anIntArray4128[i_0_] = 0;
+                TimeUtils.anIntArray4128[i_0_] = 0;
             }
         }
         anInt4462++;

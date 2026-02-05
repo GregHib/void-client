@@ -25,7 +25,7 @@ final class Class171 {
     }
 
     static final void method1320() {
-        for (int i = 0; i < Class331.anInt4135; i++) {
+        for (int i = 0; i < TimeUtils.anInt4135; i++) {
             if (!r.aBooleanArray9718[i]) {
                 Class211 class211 = Class239_Sub14.aClass211Array5993[i];
                 Class348_Sub1 class348_sub1 = class211.aClass348_Sub1_2745;

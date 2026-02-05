@@ -452,7 +452,7 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 48) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class348.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
@@ -518,7 +518,7 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 11) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class348.anInt4292 = 0;
                             Class127.anInt4657++;
@@ -570,7 +570,7 @@ final class Class325 {
                         else {
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
-                            Class55.anInt994++;
+                            Video.anInt994++;
                             Class348.anInt4292 = 0;
                             Class239_Sub20.anInt6048 = 1;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class195.aClass351_5015), (Class348_Sub23_Sub2.aClass77_9029), -123);
@@ -590,7 +590,7 @@ final class Class325 {
                         Class348_Sub42_Sub14.method3243(-60, class348_sub47);
                     }
                     if (i_76_ == 51) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class26.anInt385 = i_73_;
                             Class239_Sub20.anInt6048 = 2;
@@ -608,7 +608,7 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 45) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class348.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
@@ -637,7 +637,7 @@ final class Class325 {
                         Class309.method2307(i_75_, l, i_74_, 25);
                     }
                     if (i_76_ == 23) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class239_Sub20.anInt6048 = 2;
                             Class318_Sub1_Sub4_Sub1.anInt10073++;
@@ -657,7 +657,7 @@ final class Class325 {
                         Class251.method1916(-9343, Class49.aClass46_4730);
                     }
                     if (i_76_ == 8) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
@@ -734,7 +734,7 @@ final class Class325 {
                         Class309.method2307(i_75_, l, i_74_, 4);
                     }
                     if (i_76_ == 58) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class348.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
@@ -749,7 +749,7 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 17) {
-                        Player player = (Class294.aPlayerArray5058[i_77_]);
+                        Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class239_Sub20.anInt6048 = 2;
                             Class93.anInt1534 = i_72_;
@@ -876,7 +876,7 @@ final class Class325 {
                                 }
                             }
                             if (i_76_ == 57) {
-                                Player player = (Class294.aPlayerArray5058[i_77_]);
+                                Player player = (AwtLoadingScreen.aPlayerArray5058[i_77_]);
                                 if (player != null) {
                                     Class239_Sub20.anInt6048 = 2;
                                     Class93.anInt1534 = i_72_;

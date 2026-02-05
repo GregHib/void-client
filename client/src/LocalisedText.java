@@ -194,10 +194,10 @@ final class LocalisedText {
                 Class318_Sub1_Sub3_Sub4.aClass338Array10330[i_4_] = null;
             Class318_Sub1_Sub3_Sub4.aClass338Array10330 = null;
         }
-        if (Class294.aClass338Array5060 != null) {
+        if (AwtLoadingScreen.aClass338Array5060 != null) {
             for (int i_5_ = 0; i_5_ < Class348_Sub44.anInt7101; i_5_++)
-                Class294.aClass338Array5060[i_5_] = null;
-            Class294.aClass338Array5060 = null;
+                AwtLoadingScreen.aClass338Array5060[i_5_] = null;
+            AwtLoadingScreen.aClass338Array5060 = null;
         }
         Class354.anIntArrayArrayArray4356 = null;
         int i_6_ = 36 % ((-81 - i) / 38);

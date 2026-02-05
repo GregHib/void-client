@@ -9,7 +9,7 @@ import jagtheora.ogg.OggSyncState;
 
 import java.io.IOException;
 
-abstract class Class55 {
+abstract class Video {
     static int anInt978;
     static boolean aBoolean979;
     static int anInt980;
@@ -345,7 +345,7 @@ abstract class Class55 {
         return class348_sub23;
     }
 
-    Class55(int i) {
+    Video(int i) {
         if (!Class348_Sub40_Sub19.method3098(-30282, "jagtheora")) throw new RuntimeException("Failed to load jagtheora library");
         aByteArray995 = new byte[i];
         anOggSyncState987 = new OggSyncState();
