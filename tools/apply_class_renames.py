@@ -115,6 +115,8 @@ def _load_tsv(tsv: Path) -> list[RenameCandidate]:
             except ValueError:
                 continue
             anchors = parts[3].strip() if len(parts) > 3 else ""
+            if anchors.lower() == "null":
+                anchors = ""
             rows.append(RenameCandidate(src_internal=src, dst_internal=dst, score=score, anchors=anchors))
     return rows
 
@@ -311,6 +313,11 @@ def main(argv: list[str]) -> int:
     src_group.add_argument("--manifest", type=Path, help="JSON manifest of class renames to apply")
     ap.add_argument("--src-dir", required=True, type=Path, help="Directory containing *.java (flat/default package)")
     ap.add_argument("--min-score", type=float, default=0.90, help="Minimum score for renames")
+    ap.add_argument(
+        "--require-anchors",
+        action="store_true",
+        help="Only accept TSV rows that have at least one anchor string (skips 'null'/'')",
+    )
     ap.add_argument("--dry-run", action="store_true", help="Compute mapping and report, but don't modify files")
     ap.add_argument("--report", required=True, type=Path, help="Markdown report output path")
     ap.add_argument("--write-manifest", type=Path, help="Write selected renames as JSON for replay")
@@ -331,7 +338,7 @@ def main(argv: list[str]) -> int:
     existing_names = set(java_files.keys())
 
     # Greedy one-to-one assignment by score
-    candidates = [r for r in rows if r.score >= args.min_score]
+    candidates = [r for r in rows if r.score >= args.min_score and (not args.require_anchors or bool(r.anchors))]
     candidates.sort(key=lambda r: r.score, reverse=True)
 
     chosen: list[RenameCandidate] = []
