@@ -115,8 +115,6 @@ def _load_tsv(tsv: Path) -> list[RenameCandidate]:
             except ValueError:
                 continue
             anchors = parts[3].strip() if len(parts) > 3 else ""
-            if anchors.lower() == "null":
-                anchors = ""
             rows.append(RenameCandidate(src_internal=src, dst_internal=dst, score=score, anchors=anchors))
     return rows
 
@@ -173,6 +171,22 @@ def _is_ident_start(ch: str) -> bool:
 
 def _is_ident_part(ch: str) -> bool:
     return _is_ident_start(ch) or ("0" <= ch <= "9")
+
+
+def _parse_anchors(raw: str) -> list[str]:
+    # TSVs sometimes contain "null" or "null," junk; normalize it away so
+    # --require-anchors can be meaningful.
+    if not raw:
+        return []
+    out: list[str] = []
+    for part in raw.split(","):
+        p = part.strip()
+        if not p:
+            continue
+        if p.lower() == "null":
+            continue
+        out.append(p)
+    return out
 
 
 def _apply_rename_map_java(text: str, rename_map: dict[str, str]) -> str:
@@ -280,6 +294,27 @@ def _apply_rename_map_java(text: str, rename_map: dict[str, str]) -> str:
     return "".join(out)
 
 
+def _self_test() -> None:
+    sample = (
+        "/* Class170 in block comment */\n"
+        "// Class170 in line comment\n"
+        "final class Class170 {\n"
+        "  void f() {\n"
+        "    String s = \"Class170 in string\";\n"
+        "    char c = '\\'';\n"
+        "    Class170 x = new Class170();\n"
+        "  }\n"
+        "}\n"
+    )
+    out = _apply_rename_map_java(sample, {"Class170": "VarpDomain"})
+    if "/* VarpDomain in block comment */" in out or "// VarpDomain in line comment" in out:
+        raise RuntimeError("self-test failed: renamed inside comment")
+    if "\"VarpDomain in string\"" in out:
+        raise RuntimeError("self-test failed: renamed inside string literal")
+    if "final class VarpDomain" not in out or "VarpDomain x = new VarpDomain()" not in out:
+        raise RuntimeError("self-test failed: did not rename code identifiers")
+
+
 @dataclasses.dataclass
 class ApplyReport:
     renamed: list[tuple[str, str, float, str]]
@@ -316,12 +351,18 @@ def main(argv: list[str]) -> int:
     ap.add_argument(
         "--require-anchors",
         action="store_true",
-        help="Only accept TSV rows that have at least one anchor string (skips 'null'/'')",
+        help="Only accept TSV rows that have at least one useful anchor string (skips empty/'null')",
     )
+    ap.add_argument("--self-test", action="store_true", help="Run a quick internal sanity test and exit")
     ap.add_argument("--dry-run", action="store_true", help="Compute mapping and report, but don't modify files")
     ap.add_argument("--report", required=True, type=Path, help="Markdown report output path")
     ap.add_argument("--write-manifest", type=Path, help="Write selected renames as JSON for replay")
     args = ap.parse_args(argv)
+
+    if args.self_test:
+        _self_test()
+        print("apply_class_renames.py: self-test OK")
+        return 0
 
     src_dir = args.src_dir
     if args.tsv:
@@ -338,7 +379,22 @@ def main(argv: list[str]) -> int:
     existing_names = set(java_files.keys())
 
     # Greedy one-to-one assignment by score
-    candidates = [r for r in rows if r.score >= args.min_score and (not args.require_anchors or bool(r.anchors))]
+    candidates: list[RenameCandidate] = []
+    for r in rows:
+        if r.score < args.min_score:
+            continue
+        anchors = _parse_anchors(r.anchors)
+        if args.require_anchors and not anchors:
+            continue
+        # Normalize anchors (helps reports/manifests and avoids "null," junk)
+        candidates.append(
+            RenameCandidate(
+                src_internal=r.src_internal,
+                dst_internal=r.dst_internal,
+                score=r.score,
+                anchors=",".join(anchors),
+            )
+        )
     candidates.sort(key=lambda r: r.score, reverse=True)
 
     chosen: list[RenameCandidate] = []
@@ -385,7 +441,7 @@ def main(argv: list[str]) -> int:
                     "src": r.src_simple,
                     "dst": r.dst_simple,
                     "score": r.score,
-                    "anchors": [a for a in (r.anchors.split(",") if r.anchors else []) if a],
+                    "anchors": _parse_anchors(r.anchors),
                 }
                 for r in chosen
             ],
