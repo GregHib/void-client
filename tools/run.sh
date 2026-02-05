@@ -9,6 +9,9 @@ MAIN_CLASS="${MAIN_CLASS:-Loader}"
 OUT_JAR="${OUT_JAR:-"$BUILD_DIR/void-client.jar"}"
 
 JAVA_BIN="${JAVA_HOME:+$JAVA_HOME/bin/}java"
+JAVA_ARGS="${JAVA_ARGS:-}"
+
+read -r -a JAVA_ARGS_ARR <<<"$JAVA_ARGS"
 
 if [[ ! -f "$OUT_JAR" ]]; then
   echo "Missing $OUT_JAR. Build first with:"
@@ -18,5 +21,4 @@ if [[ ! -f "$OUT_JAR" ]]; then
   exit 1
 fi
 
-exec "$JAVA_BIN" -cp "$OUT_JAR:$LIBS" "$MAIN_CLASS" "$@"
-
+exec "$JAVA_BIN" "${JAVA_ARGS_ARR[@]}" -cp "$OUT_JAR:$LIBS" "$MAIN_CLASS" "$@"

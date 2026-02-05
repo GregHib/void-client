@@ -9,6 +9,7 @@ LIBS ?= libs/clientlibs.jar
 MAIN_CLASS ?= Loader
 OUT_JAR ?= $(BUILD_DIR)/void-client.jar
 CLASSES_STAMP ?= $(CLASSES_DIR)/.compiled.stamp
+JAVA_ARGS ?=
 
 # Requested JDK major version. Used to validate JAVA_HOME and auto-select a bootstrapped JDK under ./.jdk/.
 JDK ?= 8
@@ -104,7 +105,7 @@ $(OUT_JAR): $(CLASSES_STAMP) | $(BUILD_DIR)
 jar: $(OUT_JAR)
 
 run: $(OUT_JAR)
-	@"$(JAVA)" -cp "$(OUT_JAR):$(LIBS)" "$(MAIN_CLASS)"
+	@"$(JAVA)" $(JAVA_ARGS) -cp "$(OUT_JAR):$(LIBS)" "$(MAIN_CLASS)"
 
 clean:
 	rm -rf "$(BUILD_DIR)"
