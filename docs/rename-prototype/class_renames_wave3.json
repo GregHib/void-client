@@ -1,7 +1,8 @@
 {
   "version": 1,
   "description": "Wave 3 curated class renames (anchor-string driven; avoids placeholder dst names and java.awt name collisions).",
-  "base_branch": "pr/3-renames-634",
+  "base_commit": "794a4b4",
+  "applied_commit": "994aa66",
   "src_dir": "client/src",
   "renames": [
     {
@@ -36,4 +37,3 @@
     }
   ]
 }
-
