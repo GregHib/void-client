@@ -5,7 +5,11 @@
 import jaggl.OpenGL;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.awt.image.PixelGrabber;
+import java.io.ByteArrayInputStream;
+
+import javax.imageio.ImageIO;
 
 class Class258_Sub3 extends Class258 {
     static int anInt8539;
@@ -185,6 +189,20 @@ class Class258_Sub3 extends Class258 {
         anInt8546++;
         if (i != -5901) anInt8550 = 83;
         if (is == null) throw new RuntimeException("");
+        try {
+            BufferedImage bufferedimage = ImageIO.read(new ByteArrayInputStream(is));
+            if (bufferedimage != null) {
+                int i_58_ = bufferedimage.getWidth();
+                int i_59_ = bufferedimage.getHeight();
+                if (i_58_ > 0 && i_59_ > 0) {
+                    int[] is_60_ = new int[i_59_ * i_58_];
+                    bufferedimage.getRGB(0, 0, i_58_, i_59_, is_60_, 0, i_58_);
+                    return Class348_Sub8.aHa6654.method3662(i_58_, is_60_, (byte) 94, 0, i_58_, i_59_);
+                }
+            }
+        } catch (Throwable throwable) {
+            /* fall back to AWT toolkit image decoding below */
+        }
         for (; ; ) {
             try {
                 Image image = Toolkit.getDefaultToolkit().createImage(is);
