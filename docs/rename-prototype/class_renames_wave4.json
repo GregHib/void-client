@@ -2,7 +2,7 @@
   "version": 1,
   "description": "Wave 4 curated class renames (varp/varbit domain + type list).",
   "base_commit": "f68c075",
-  "applied_commit": "",
+  "applied_commit": "56d9209",
   "src_dir": "client/src",
   "renames": [
     {
