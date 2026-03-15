@@ -32,6 +32,9 @@ public class Loader extends Applet {
     static final int FOV_MAX_FACTOR_DEN = 1; // FOV maximum as a fraction of the base max (denominator).
     static final int FOV_MIN_ABS = 100; // Absolute minimum FOV clamp regardless of base settings.
 
+    static final double RENDER_DISTANCE_MULTIPLIER = 2.0; // Adjust how many tiles off in the distance are rendered
+    static final double CULLING_DISTANCE_MULTIPLIER = 1.8; // Adjust distance before objects go into fog
+
     public static void main(String[] args) {
         for (int i = 0; i < args.length; i++) {
             String arg = args[i];
