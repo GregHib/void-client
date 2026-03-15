@@ -23,30 +23,30 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         int i_4_ = i_3_ - 334;
         if (i_4_ < 0) i_4_ = 0;
         else if (i_4_ > 100) i_4_ = 100;
-        int i_5_ = ((-Class110.aShort1700 + Class168.aShort2250) * i_4_ / 100 + Class110.aShort1700);
-        int i_5_base = i_5_;
-        if (Class320.anInt3995 != 0) i_5_ += Class320.anInt3995;
-        int i_5_min = Class110.aShort1700 * Constant.FOV_MIN_FACTOR_NUM / Constant.FOV_MIN_FACTOR_DEN;
-        int i_5_max = Class168.aShort2250 * Constant.FOV_MAX_FACTOR_NUM / Constant.FOV_MAX_FACTOR_DEN;
-        if (i_5_min < Constant.FOV_MIN_ABS) i_5_min = Constant.FOV_MIN_ABS;
-        if (i_5_min > i_5_max) {
-            int i_5_tmp = i_5_min;
-            i_5_min = i_5_max;
-            i_5_max = i_5_tmp;
+        int adjustedZoom = ((-Class110.aShort1700 + Class168.aShort2250) * i_4_ / 100 + Class110.aShort1700);
+        int base = adjustedZoom;
+        if (Class320.anInt3995 != 0) adjustedZoom += Class320.anInt3995;
+        int min = Class110.aShort1700 * Loader.FOV_MIN_FACTOR_NUM / Loader.FOV_MIN_FACTOR_DEN;
+        int max = Class168.aShort2250 * Loader.FOV_MAX_FACTOR_NUM / Loader.FOV_MAX_FACTOR_DEN;
+        if (min < Loader.FOV_MIN_ABS) min = Loader.FOV_MIN_ABS;
+        if (min > max) {
+            int tmp = min;
+            min = max;
+            max = tmp;
         }
-        if (i_5_ < i_5_min) i_5_ = i_5_min;
-        else if (i_5_ > i_5_max) i_5_ = i_5_max;
-        if (Class320.anInt3995 != 0) Class320.anInt3995 = i_5_ - i_5_base;
-        if (i_5_ < Class348_Sub42_Sub8.aShort9555) i_5_ = Class348_Sub42_Sub8.aShort9555;
-        else if (Class48.aShort851 < i_5_) i_5_ = Class48.aShort851;
-        int i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334);
+        if (adjustedZoom < min) adjustedZoom = min;
+        else if (adjustedZoom > max) adjustedZoom = max;
+        if (Class320.anInt3995 != 0) Class320.anInt3995 = adjustedZoom - base;
+        if (adjustedZoom < Class348_Sub42_Sub8.aShort9555) adjustedZoom = Class348_Sub42_Sub8.aShort9555;
+        else if (Class48.aShort851 < adjustedZoom) adjustedZoom = Class48.aShort851;
+        int i_6_ = 512 * adjustedZoom * i_3_ / (i_1_ * 334);
         if (i_6_ >= Class367_Sub8.aShort7355) {
             if (i_6_ > Class171.aShort2269) {
                 i_6_ = Class171.aShort2269;
-                i_5_ = i_1_ * i_6_ * 334 / (i_3_ * 512);
-                if (i_5_ < Class348_Sub42_Sub8.aShort9555) {
-                    i_5_ = Class348_Sub42_Sub8.aShort9555;
-                    int i_7_ = i_6_ * (i_1_ * 334) / (i_5_ * 512);
+                adjustedZoom = i_1_ * i_6_ * 334 / (i_3_ * 512);
+                if (adjustedZoom < Class348_Sub42_Sub8.aShort9555) {
+                    adjustedZoom = Class348_Sub42_Sub8.aShort9555;
+                    int i_7_ = i_6_ * (i_1_ * 334) / (adjustedZoom * 512);
                     int i_8_ = (-i_7_ + i_3_) / 2;
                     if (bool) {
                         Class348_Sub8.aHa6654.la();
@@ -59,10 +59,10 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
             }
         } else {
             i_6_ = Class367_Sub8.aShort7355;
-            i_5_ = i_6_ * (i_1_ * 334) / (i_3_ * 512);
-            if (Class48.aShort851 < i_5_) {
-                i_5_ = Class48.aShort851;
-                int i_9_ = i_5_ * i_3_ * 512 / (334 * i_6_);
+            adjustedZoom = i_6_ * (i_1_ * 334) / (i_3_ * 512);
+            if (Class48.aShort851 < adjustedZoom) {
+                adjustedZoom = Class48.aShort851;
+                int i_9_ = adjustedZoom * i_3_ * 512 / (334 * i_6_);
                 int i_10_ = (i_1_ + -i_9_) / 2;
                 if (bool) {
                     Class348_Sub8.aHa6654.la();
@@ -73,7 +73,7 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
                 i_1_ -= i_10_ * 2;
             }
         }
-        Class97.anInt1550 = i_3_ * i_5_ / 334;
+        Class97.anInt1550 = i_3_ * adjustedZoom / 334;
         Class234.anInt3047 = i_0_;
         Class280.anInt3643 = (short) i_3_;
         Class127.anInt4656 = (short) i_1_;

@@ -1767,7 +1767,7 @@ public final class client extends Applet_Sub1 {
                     } else {
                         int i_112_ = class348_sub45.method3315(0);
                         Class98.anInt1565 += i_112_;
-                        Class320.anInt3995 += -i_112_ * Constant.ZOOM_OFFSET_STEP;
+                        Class320.anInt3995 += -i_112_ * Loader.ZOOM_OFFSET_STEP;
                     }
                 } else r_Sub1.aClass262_10479.method1999(class348_sub45, -20180);
             }
