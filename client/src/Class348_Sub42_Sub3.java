@@ -25,7 +25,7 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         else if (i_4_ > 100) i_4_ = 100;
         int adjustedZoom = ((-Class110.aShort1700 + Class168.aShort2250) * i_4_ / 100 + Class110.aShort1700);
         int base = adjustedZoom;
-        if (Class320.anInt3995 != 0) adjustedZoom += Class320.anInt3995;
+        if (Class320.zoomStep != 0) adjustedZoom += Class320.zoomStep;
         int min = Class110.aShort1700 * Loader.FOV_MIN_FACTOR_NUM / Loader.FOV_MIN_FACTOR_DEN;
         int max = Class168.aShort2250 * Loader.FOV_MAX_FACTOR_NUM / Loader.FOV_MAX_FACTOR_DEN;
         if (min < Loader.FOV_MIN_ABS) min = Loader.FOV_MIN_ABS;
@@ -36,7 +36,7 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         }
         if (adjustedZoom < min) adjustedZoom = min;
         else if (adjustedZoom > max) adjustedZoom = max;
-        if (Class320.anInt3995 != 0) Class320.anInt3995 = adjustedZoom - base;
+        if (Class320.zoomStep != 0) Class320.zoomStep = adjustedZoom - base;
         if (adjustedZoom < Class348_Sub42_Sub8.aShort9555) adjustedZoom = Class348_Sub42_Sub8.aShort9555;
         else if (Class48.aShort851 < adjustedZoom) adjustedZoom = Class48.aShort851;
         int i_6_ = 512 * adjustedZoom * i_3_ / (i_1_ * 334);

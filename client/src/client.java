@@ -1096,6 +1096,9 @@ public final class client extends Applet_Sub1 {
                             if (class46.anInt719 >= 0) Class362.anInt4458 = class46.anInt719;
                             else if (class46.aBoolean776) Class362.anInt4458 = -1;
                         }
+                        if (class46.aBoolean737 && (i == 48889856 || i == 35913731)) {
+                            Class320.overGameScreen = true;
+                        }
                         if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) Class239_Sub17.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (byte) -95);
                         boolean bool_53_ = false;
                         if (Class258_Sub4.aClass373_8552.method3595(-91) && bool) bool_53_ = true;
@@ -1143,6 +1146,7 @@ public final class client extends Applet_Sub1 {
                                 class348_sub36.anInt6995 = Class98.anInt1565;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray803;
                                 Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                Class320.overGameScreen = false;
                             }
                             if (Class289.aClass46_3701 != null || Class5_Sub1.aBoolean8335 || ((class46.anInt765 != Class348_Sub45.anInt7102) && Class348_Sub42.anInt7059 > 0)) {
                                 bool_54_ = false;
@@ -1756,6 +1760,7 @@ public final class client extends Applet_Sub1 {
                 }
             }
             Class98.anInt1565 = 0;
+            Class320.scrollWheelDiff = 0;
             for (Class348_Sub45 class348_sub45 = Class258_Sub4.aClass373_8552.method3596(0); class348_sub45 != null; class348_sub45 = Class258_Sub4.aClass373_8552.method3596(0)) {
                 int i_111_ = class348_sub45.method3310(86);
                 if (i_111_ != -1) {
@@ -1765,9 +1770,9 @@ public final class client extends Applet_Sub1 {
                             if (Class318_Sub1_Sub3.aClass262_8744.method1998(0) > 10) Class318_Sub1_Sub3.aClass262_8744.method1997(8);
                         }
                     } else {
-                        int i_112_ = class348_sub45.method3315(0);
-                        Class98.anInt1565 += i_112_;
-                        Class320.anInt3995 += -i_112_ * Loader.ZOOM_OFFSET_STEP;
+                        int anInt1565 = class348_sub45.method3315(0);
+                        Class320.scrollWheelDiff = anInt1565;
+                        Class98.anInt1565 += anInt1565;
                     }
                 } else r_Sub1.aClass262_10479.method1999(class348_sub45, -20180);
             }

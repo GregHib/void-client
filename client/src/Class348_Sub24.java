@@ -322,8 +322,12 @@ final class Class348_Sub24 extends Class348 {
                         Class5_Sub2.method198(null, false, -1, -1);
                         Class175.method1343(-1, null, 1, -1);
                         if (!r.aBoolean9722) Class362.anInt4458 = -1;
+                        Class320.overGameScreen = false;
                         Class216.method1583((byte) -73);
                         Class311.anInt3918++;
+                        if (Class320.overGameScreen && Class320.scrollWheelDiff != 0) {
+                            Class320.zoomStep += -Class320.scrollWheelDiff * Loader.ZOOM_OFFSET_STEP;
+                        }
                         if (Class237.aBoolean3103) {
                             Class98.anInt1568++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((ha_Sub2.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
