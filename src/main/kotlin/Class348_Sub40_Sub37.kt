@@ -169,12 +169,12 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
                 if (i_1_ >= -12) method3148(true)
                 for (i_8_ in -i_3_..-1) {
                     for (i_9_ in i_7_..-1) {
-                        `is`!![i_4_++] = (`is`[i_4_++] + -is_5_!![i_6_++]).toByte()
-                        `is`[i_4_++] = (`is`[i_4_++] + -is_5_[i_6_++]).toByte()
-                        `is`[i_4_++] = (`is`[i_4_++] + -is_5_[i_6_++]).toByte()
-                        `is`[i_4_++] = (`is`[i_4_++] + -is_5_[i_6_++]).toByte()
+                        `is`!![i_4_] = (`is`[i_4_++] + -is_5_!![i_6_++]).toByte()
+                        `is`[i_4_] = (`is`[i_4_++] + -is_5_[i_6_++]).toByte()
+                        `is`[i_4_] = (`is`[i_4_++] + -is_5_[i_6_++]).toByte()
+                        `is`[i_4_] = (`is`[i_4_++] + -is_5_[i_6_++]).toByte()
                     }
-                    for (i_10_ in i_0_..-1) `is`!![i_4_++] = (`is`[i_4_++] + -is_5_!![i_6_++]).toByte()
+                    for (i_10_ in i_0_..-1) `is`!![i_4_] = (`is`[i_4_++] + -is_5_!![i_6_++]).toByte()
                     i_4_ += i
                     i_6_ += i_2_
                 }
