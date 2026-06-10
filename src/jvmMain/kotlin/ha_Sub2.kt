@@ -75,7 +75,6 @@ import jaggl.OpenGL.Companion.glVertex3f
 import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import java.awt.Canvas
-import java.awt.Rectangle
 import java.util.*
 import kotlin.math.max
 import kotlin.math.sqrt
@@ -2698,7 +2697,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
     }
 
     @Throws(Exception_Sub1::class)
-    override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_313_: Int, i_314_: Int) {
+    override fun method3707(rectangles: Array<Rect?>?, i: Int, i_313_: Int, i_314_: Int) {
         try {
             method3626(i_313_, i_314_)
             anInt7584++

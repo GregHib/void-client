@@ -62,7 +62,6 @@ import jaggl.OpenGL.Companion.glTexGeni
 import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import java.awt.Canvas
-import java.awt.Rectangle
 import java.util.*
 
 class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Class45?, i: Int) : ha_Sub3(canvas, l, var_d, class45, i, 1) {
@@ -964,7 +963,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
     }
 
     @Throws(Exception_Sub1::class)
-    override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_72_: Int, i_73_: Int) {
+    override fun method3707(rectangles: Array<Rect?>?, i: Int, i_72_: Int, i_73_: Int) {
         try {
             anInt9823++
             method3626(i_72_, i_73_)

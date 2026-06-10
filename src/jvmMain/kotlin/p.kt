@@ -1,5 +1,4 @@
 import java.awt.Canvas
-import java.awt.Rectangle
 
 class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145: Int, @JvmField var anInt5148: Int) : Class348(), Interface19 {
     var nativeid: Long = 0
@@ -42,7 +41,7 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
         sa(var_oa, this.aCanvas5147, anInt5145, anInt5148)
     }
 
-    fun method3434(rectangles: Array<Rectangle?>, i: Int, i_12_: Int, i_13_: Int) {
+    fun method3434(rectangles: Array<Rect?>, i: Int, i_12_: Int, i_13_: Int) {
         try {
             synchronized(this.aCanvas5147!!.getTreeLock()) {
                 for (i_14_ in 0..<i) {

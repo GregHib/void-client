@@ -1,5 +1,4 @@
 import java.awt.Canvas
-import java.awt.Rectangle
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min
@@ -2339,7 +2338,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     @Throws(Exception_Sub1::class)
-    override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_631_: Int, i_632_: Int) {
+    override fun method3707(rectangles: Array<Rect?>?, i: Int, i_631_: Int, i_632_: Int) {
         check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
         try {
             val graphics = aCanvas7468!!.getGraphics()

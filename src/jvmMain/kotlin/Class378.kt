@@ -3,7 +3,6 @@ import jagdx.*
 import jagdx.IDirect3D.Companion.a
 import jagdx.ue.a
 import java.awt.Canvas
-import java.awt.Rectangle
 
 class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_d: d?, class45: Class45?, i_39_: Int) : ha_Sub3(canvas, class53, var_d, class45, i_39_, 0) {
     private val aBooleanArray9784: BooleanArray
@@ -259,7 +258,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
     }
 
     @Throws(Exception_Sub1::class)
-    override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_28_: Int, i_29_: Int) {
+    override fun method3707(rectangles: Array<Rect?>?, i: Int, i_28_: Int, i_29_: Int) {
         method3626(i_28_, i_29_)
     }
 

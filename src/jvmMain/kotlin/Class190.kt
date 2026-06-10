@@ -1,5 +1,4 @@
 import Class239_Sub15.Companion.method1782
-import java.awt.Rectangle
 
 class Class190 {
     var anInt2535: Int = 0
@@ -96,7 +95,7 @@ class Class190 {
         var anIntArray2552: IntArray? = null
         var anInt2553: Int = 0
         @JvmField
-        var aRectangleArray2554: Array<Rectangle?>? = arrayOfNulls<Rectangle>(100)
+        var aRectangleArray2554: Array<Rect?>? = arrayOfNulls<Rect>(100)
         var aFloat2555: Float = 0f
 
         fun method1422(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Boolean {

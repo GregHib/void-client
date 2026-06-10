@@ -1,10 +1,8 @@
-import java.awt.Rectangle
-
 object Class180 {
     @JvmField
     var anIntArray2370: IntArray? = IntArray(13)
     @JvmField
-    var aRectangleArray2371: Array<Rectangle?>? = arrayOfNulls<Rectangle>(100)
+    var aRectangleArray2371: Array<Rect?>? = arrayOfNulls<Rect>(100)
     @JvmField
     var aClass196_2372: Class196?
 
@@ -17,7 +15,7 @@ object Class180 {
     }
 
     init {
-        for (i in 0..99) aRectangleArray2371!![i] = Rectangle()
+        for (i in 0..99) aRectangleArray2371!![i] = Rect()
         aClass196_2372 = Class196()
     }
 }

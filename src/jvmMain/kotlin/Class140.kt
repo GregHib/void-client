@@ -1,7 +1,6 @@
 import Class367_Sub9.Companion.method3551
 import java.awt.Color
 import java.awt.Container
-import java.awt.Rectangle
 
 object Class140 {
     var anInt1956: Int = 0
@@ -16,7 +15,7 @@ object Class140 {
 
     @Throws(Exception_Sub1::class)
     @JvmStatic
-    fun method1168(i: Int, i_0_: Int, rectangles: Array<Rectangle?>?) {
+    fun method1168(i: Int, i_0_: Int, rectangles: Array<Rect?>?) {
         anInt1957++
         if (Class348_Sub49.anInt7207 != 1) Class21.aHa326!!.method3707(rectangles, i, 0, 0)
         else Class21.aHa326!!.method3707(rectangles, i, Class339.anInt4211, Class348_Sub40_Sub8.anInt9157)

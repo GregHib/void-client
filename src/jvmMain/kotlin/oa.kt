@@ -1,5 +1,4 @@
 import java.awt.Canvas
-import java.awt.Rectangle
 import kotlin.math.max
 
 class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface19 {
@@ -48,7 +47,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     }
 
     @Throws(Exception_Sub1::class)
-    override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_18_: Int, i_19_: Int) {
+    override fun method3707(rectangles: Array<Rect?>?, i: Int, i_18_: Int, i_19_: Int) {
         checkNotNull(aP5137) { "off" }
         aP5137!!.method3434(rectangles!!, i, i_18_, i_19_)
     }

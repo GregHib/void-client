@@ -2,7 +2,6 @@ import Class239_Sub27.Companion.method1839
 import Class348_Sub5.Companion.method2753
 import Class55.Companion.method515
 import java.awt.Canvas
-import java.awt.Rectangle
 
 abstract class ha internal constructor(@JvmField var aD4579: d?) {
     @JvmField
@@ -121,7 +120,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
     abstract fun L(i: Int, i_72_: Int, i_73_: Int)
 
     @Throws(Exception_Sub1::class)
-    fun method3657(rectangles: Array<Rectangle?>?, i: Int, i_74_: Int) {
+    fun method3657(rectangles: Array<Rect?>?, i: Int, i_74_: Int) {
         method3707(rectangles, i, 0, 0)
         anInt4568++
         if (i_74_ <= 41) this.anInt4567 = 54
@@ -288,7 +287,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
     abstract fun method3706(class299: Class299?, class299_203_: Class299?, f: Float, class299_204_: Class299?): Class299?
 
     @Throws(Exception_Sub1::class)
-    abstract fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_205_: Int, i_206_: Int)
+    abstract fun method3707(rectangles: Array<Rect?>?, i: Int, i_205_: Int, i_206_: Int)
 
     abstract fun method3708(): Boolean
 
