@@ -1,6 +1,5 @@
 import Class151.Companion.method1211
 import Class19.Companion.method285
-import java.util.zip.CRC32
 import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.min
@@ -48,7 +47,7 @@ class Class287 {
         var anInt3685: Int = 0
         var anInt3686: Int = 0
         var anInt3689: Int = 0
-        var aCRC32_3691: CRC32? = CRC32()
+        var aCRC32_3691: Crc32? = Crc32()
         var anInt3692: Int = 0
         var anInt3693: Int = 0
         var anInt3694: Int = 0
