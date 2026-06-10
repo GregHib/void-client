@@ -1,7 +1,5 @@
-import java.util.zip.Inflater
-
 class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
-    private var anInflater2072: Inflater? = null
+    private var anInflater2072: Inflate? = null
     fun method1214(i: Int, `is`: ByteArray): ByteArray {
         anInt2074++
         val class348_sub49 = Class348_Sub49(`is`)
@@ -20,10 +18,10 @@ class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
         try {
             anInt2073++
             if ((class348_sub49!!.aByteArray7154!![class348_sub49.anInt7197]).toInt() != 31 || (class348_sub49.aByteArray7154!![1 + class348_sub49.anInt7197]).toInt() != -117) throw RuntimeException("Invalid GZIP header!")
-            if (anInflater2072 == null) anInflater2072 = Inflater(true)
+            if (anInflater2072 == null) anInflater2072 = Inflate(true)
             try {
-                anInflater2072!!.setInput(class348_sub49.aByteArray7154, class348_sub49.anInt7197 - -10, -8 - (10 + class348_sub49.anInt7197 - (class348_sub49.aByteArray7154)!!.size))
-                anInflater2072!!.inflate(`is`)
+                anInflater2072!!.setInput(class348_sub49.aByteArray7154!!, class348_sub49.anInt7197 - -10, -8 - (10 + class348_sub49.anInt7197 - (class348_sub49.aByteArray7154)!!.size))
+                anInflater2072!!.inflate(`is`!!)
             } catch (exception: Exception) {
                 anInflater2072!!.reset()
                 throw RuntimeException("Invalid GZIP compressed data!")
