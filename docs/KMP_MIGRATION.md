@@ -137,15 +137,12 @@ Each phase keeps the JVM desktop build green and shippable. Do not branch long-l
 2. Pin a regression harness: deterministic boot to login screen + screenshot diff of the software renderer; cache-decode unit tests against known archives; record/replay of a JS5 handshake.
 3. CI for all future targets.
 
-### Phase 1 — Name & isolate (3–6 weeks, parallelizable)
-1. Deobfuscate *strategically*, not exhaustively: rename the ~150 classes the seams touch (toolkits, signlink, cache store, packet buffers `Class348_Sub49`/`OutputStream_Sub2`, audio, fonts). IntelliJ rename refactorings keep this safe.
-2. Introduce packages (`cache`, `render`, `net`, `audio`, `input`, `world`, `js5`, …) and move files. No behaviour change.
-3. Kill dead weight now: `com.ms.*`, `WComponentPeer.java`, applet-era plumbing in `Loader`, `jagtheora` call sites behind a no-op flag.
+### Phase 1 — Completed
 
 ### Phase 2 — Common-ready core (4–8 weeks)
 1. Bottom-up extraction to `commonMain`: byte buffers/packets, cache container codec (inflate + CRC32 via MP library), JS5 protocol state machine, config/definition decoders, collision map, pathfinding, model/animation math, the audio synth.
 2. Replace `java.util.*` (37 files), `BigInteger` (10 files), `Inflater` (2 files) in extracted code.
-3. Each extraction lands with unit tests (cache fixtures make this cheap) and must not break the JVM run.
+3. Each extraction must not break the JVM run.
 
 ### Phase 3 — Service seams (3–5 weeks)
 1. Define the §4 interfaces; implement JVM versions by *wrapping existing code* (signlink `Class297` becomes the JVM impl of `CacheStorage` + `SystemServices` + `GameConnection` factory).
