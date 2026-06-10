@@ -1,4 +1,3 @@
-import java.util.*
 import kotlin.math.atan2
 import kotlin.math.min
 
@@ -462,14 +461,14 @@ public abstract class Class64 {
         fun method606(i: Int, bool: Boolean, string: String) {
             var string = string
             anInt1128++
-            string = string.lowercase(Locale.getDefault())
+            string = string.lowercase()
             var `is` = ShortArray(16)
             var i_52_ = i
             val i_53_ = if (bool) 32768 else 0
             val i_54_ = ((if (!bool) Class239_Sub6.aClass355_5900!!.anInt4365 else Class239_Sub6.aClass355_5900!!.anInt4364) + i_53_)
             for (i_55_ in i_53_..<i_54_) {
                 val class348_sub42_sub10 = Class239_Sub6.aClass355_5900!!.method3471(i_55_, (-102).toByte())
-                if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
+                if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase().indexOf(string) != -1) {
                     if (i_52_ >= 50) {
                         Class192.aShortArray2579 = null
                         Class76.anInt1285 = -1

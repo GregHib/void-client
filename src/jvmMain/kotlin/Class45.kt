@@ -1,5 +1,3 @@
-import java.util.*
-
 /* Class45 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -24,8 +22,8 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         try {
             anInt647++
             if (!method399(false)) return null
-            string = string!!.lowercase(Locale.getDefault())
-            string_1_ = string_1_!!.lowercase(Locale.getDefault())
+            string = string!!.lowercase()
+            string_1_ = string_1_!!.lowercase()
             val i_2_ = aClass291_629!!.aClass316_3723!!.method2365(1, Class281.method2108(string, -29286))
             if (!method392(i_2_, (-40).toByte())) return null
             if (i != -29832) method392(22, 12.toByte())
@@ -214,7 +212,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         var string = string
         anInt633++
         if (!method399(false)) return 0
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_47_ = aClass291_629!!.aClass316_3723!!.method2365(1, Class281.method2108(string, i xor 0x7265.inv()))
         return method419(i, i_47_)
     }
@@ -254,7 +252,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         anInt635++
         if (!method399(false)) return false
         if (i != -18308) return false
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_52_ = aClass291_629!!.aClass316_3723!!.method2365(1, Class281.method2108(string, -29286))
         return i_52_ >= 0
     }
@@ -287,8 +285,8 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         try {
             anInt626++
             if (!method399(false)) return false
-            string = string!!.lowercase(Locale.getDefault())
-            string_56_ = string_56_!!.lowercase(Locale.getDefault())
+            string = string!!.lowercase()
+            string_56_ = string_56_!!.lowercase()
             val i_57_ = (aClass291_629!!.aClass316_3723!!.method2365(i xor 0x1c1a, Class281.method2108(string, -29286)))
             if (i != 7195) method403(null, -20, null)
             if (!method392(i_57_, (-40).toByte())) return false
@@ -350,7 +348,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         var string = string
         anInt663++
         if (bool == true && method399(false)) {
-            string = string.lowercase(Locale.getDefault())
+            string = string.lowercase()
             val i = aClass291_629!!.aClass316_3723!!.method2365(1, Class281.method2108(string, -29286))
             method402((-86).toByte(), i)
         }
@@ -386,7 +384,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         var string = string
         anInt636++
         if (!method399(false)) return false
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_69_ = aClass291_629!!.aClass316_3723!!.method2365(i + -99, Class281.method2108(string, -29286))
         if (i != 100) aFloat670 = 0.37849286f
         return method408((-120).toByte(), i_69_)
@@ -422,7 +420,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         if (i != 0) return 113
         anInt654++
         if (!method399(false)) return -1
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         val i_72_ = aClass291_629!!.aClass316_3723!!.method2365(1, Class281.method2108(string, -29286))
         if (!method392(i_72_, (-40).toByte())) return -1
         return i_72_
@@ -472,9 +470,9 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         try {
             anInt668++
             if (!method399(false)) return false
-            string_78_ = string_78_!!.lowercase(Locale.getDefault())
+            string_78_ = string_78_!!.lowercase()
             if (i > -18) anInt669 = 40
-            string = string!!.lowercase(Locale.getDefault())
+            string = string!!.lowercase()
             val i_79_ = aClass291_629!!.aClass316_3723!!.method2365(1, Class281.method2108(string_78_, -29286))
             if (i_79_ < 0) return false
             val i_80_ = aClass291_629!!.aClass316Array3728!![i_79_]!!.method2365(1, Class281.method2108(string, -29286))
