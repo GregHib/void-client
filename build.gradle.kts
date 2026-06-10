@@ -1,6 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.2.20"
-    application
+    kotlin("multiplatform") version "2.2.20"
 }
 
 group = "world.gregs.void"
@@ -10,34 +9,36 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
+kotlin {
+    jvmToolchain(24)
 
-application {
-    mainClass.set("Loader")
+    jvm()
+
+    sourceSets {
+        jvmTest {
+            dependencies {
+                implementation(kotlin("test"))
+            }
+        }
+    }
 }
 
 tasks {
     val fatJar = register<Jar>("fatJar") {
-        dependsOn.addAll(listOf("compileJava", "compileKotlin", "processResources")) // We need this for Gradle optimization to work
-        archiveClassifier.set("standalone") // Naming the jar
+        dependsOn("jvmJar")
+        archiveClassifier.set("standalone")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-        manifest { attributes(mapOf("Main-Class" to application.mainClass)) } // Provided we set it up in the application plugin configuration
-        val sourcesMain = sourceSets.main.get()
-        val contents = configurations.runtimeClasspath.get()
-            .map { if (it.isDirectory) it else zipTree(it) } +
-                sourcesMain.output
-        from(contents)
+        manifest { attributes(mapOf("Main-Class" to "Loader")) }
+        val runtimeClasspath = configurations.getByName("jvmRuntimeClasspath")
+        val jvmJar = named<Jar>("jvmJar")
+        from(jvmJar.map { zipTree(it.archiveFile) })
+        from(runtimeClasspath.map { if (it.isDirectory) it else zipTree(it) })
     }
     build {
-        dependsOn(fatJar) // Trigger fat jar creation during build
+        dependsOn(fatJar)
     }
 }
 
-tasks.test {
+tasks.withType<Test> {
     useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(24)
 }
