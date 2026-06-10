@@ -1,7 +1,5 @@
-import java.util.*
-
 object Class275 {
-    var aHashtable3548: Hashtable<Any?, Any?>? = Hashtable<Any?, Any?>()
+    var aHashtable3548: HashMap<Any?, Any?>? = HashMap<Any?, Any?>()
     var anInt3549: Int = 0
     @JvmField
     var anInt3550: Int = 0
