@@ -1,4 +1,3 @@
-import com.ms.awt.WComponentPeer
 import com.ms.dll.Callback
 import com.ms.dll.Root.alloc
 import com.ms.win32.User32
