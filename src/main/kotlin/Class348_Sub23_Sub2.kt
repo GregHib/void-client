@@ -120,7 +120,7 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
 
     companion object {
         @JvmField
-        var aClass229_9011: Class229? = Class229
+        var aClass229_9011: Class229? = Class229()
         @JvmField
         var anInt9012: Int = 0
         @JvmField

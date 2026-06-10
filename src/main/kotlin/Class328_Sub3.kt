@@ -6,7 +6,7 @@ import Class318_Sub9_Sub1.Companion.method2516
 */
 object Class328_Sub3 : Class328() {
     @JvmField
-    var aClass229_6519: Class229? = Class229
+    var aClass229_6519: Class229? = Class229()
     var anInt6520: Int = 0
     var anInt6521: Int = 0
     var anIntArray6522: IntArray? = IntArray(1000)

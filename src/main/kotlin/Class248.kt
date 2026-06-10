@@ -355,7 +355,7 @@ class Class248 {
         var anInt3194: Int = 0
         var anInt3195: Int = 0
         @JvmField
-        var aClass229_3196: Class229? = Class229
+        var aClass229_3196: Class229? = Class229()
         var anInt3198: Int = 0
         var anInt3199: Int = 0
         var anInt3200: Int = 0

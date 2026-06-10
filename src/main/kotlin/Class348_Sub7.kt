@@ -8,7 +8,7 @@ class Class348_Sub7 internal constructor(@JvmField var anInt6649: Int, @JvmField
         @JvmField
         var aClass207_6643: Class207? = null
         @JvmField
-        var aClass229_6644: Class229? = Class229
+        var aClass229_6644: Class229? = Class229()
         @JvmField
         var anInt6646: Int = 0
         @JvmField
