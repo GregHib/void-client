@@ -1,7 +1,6 @@
 import Class239_Sub15.Companion.method1783
 import java.awt.Canvas
 import java.awt.Graphics
-import java.math.BigInteger
 
 abstract class Class348_Sub31 : Class348() {
     @JvmField
@@ -25,7 +24,7 @@ abstract class Class348_Sub31 : Class348() {
         @JvmField
         var anInt6919: Int = 0
         @JvmField
-        var aBigInteger6921: BigInteger?
+        var aBigInteger6921: BigInt?
         @JvmField
         var anInt6922: Int = 0
         @JvmField

@@ -6,7 +6,6 @@ import jaggl.OpenGL.Companion.glDeleteObjectARB
 import jaggl.OpenGL.Companion.glGetInfoLogARB
 import jaggl.OpenGL.Companion.glGetObjectParameterivARB
 import jaggl.OpenGL.Companion.glShaderSourceARB
-import java.math.BigInteger
 
 class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Sub42() {
     var anInt9650: Int = 0
@@ -58,7 +57,7 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
         var anInt9653: Int = 0
         var anInt9655: Int = 0
         var anInt9656: Int = 0
-        var aBigInteger9657: BigInteger? = Loader.FILE_SERVER_RSA_MODULUS
+        var aBigInteger9657: BigInt? = Loader.FILE_SERVER_RSA_MODULUS
         var aClass105_9658: Class105? = null
         var aClass105_9659: Class105? = null
         var aClass56_9660: Class56? = null

@@ -1,5 +1,4 @@
 import java.awt.Frame
-import java.math.BigInteger
 
 class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
     override fun method51(i: Byte): Class223? {
@@ -14,7 +13,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         @JvmField
         var anInt4895: Int = 0
         @JvmField
-        var aBigInteger4896: BigInteger? = BigInteger("10001", 16)
+        var aBigInteger4896: BigInt? = BigInt("10001", 16)
         @JvmField
         var anInt4897: Int = 0
         @JvmField

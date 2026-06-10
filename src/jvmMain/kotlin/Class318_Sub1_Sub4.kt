@@ -1,7 +1,6 @@
 import Class239_Sub14.Companion.method1781
 import Class314_Sub1.Companion.method2348
 import InputStream_Sub1.Companion.method125
-import java.math.BigInteger
 
 abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : Class318_Sub1() {
     var aShort8759: Short
@@ -59,7 +58,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         @JvmField
         var anInt8761: Int = 0
         @JvmField
-        var aBigInteger8762: BigInteger? = BigInteger("10001", 16)
+        var aBigInteger8762: BigInt? = BigInt("10001", 16)
         @JvmField
         var anInt8763: Int = 0
         @JvmField

@@ -12,7 +12,6 @@ import Class348_Sub42_Sub16.Companion.method3255
 import Class348_Sub42_Sub3.Companion.method3177
 import Class348_Sub42_Sub8.Companion.method3196
 import Class37.method359
-import java.math.BigInteger
 
 open class Class348_Sub49 : Class348 {
     @JvmField
@@ -516,7 +515,7 @@ open class Class348_Sub49 : Class348 {
         if (i != 2147483647) anInt7207 = -47
     }
 
-    fun method3390(biginteger: BigInteger?, i: Byte, biginteger_85_: BigInteger?) {
+    fun method3390(biginteger: BigInt?, i: Byte, biginteger_85_: BigInt?) {
         try {
             anInt7147++
             val i_86_ = this.anInt7197
@@ -524,8 +523,8 @@ open class Class348_Sub49 : Class348 {
             val `is` = ByteArray(i_86_)
             method3389(2147483647, 0, i_86_, `is`)
             if (i >= -33) method3354(-73)
-            val biginteger_87_ = BigInteger(`is`)
-            val biginteger_88_ = biginteger_87_.modPow(biginteger_85_, biginteger)
+            val biginteger_87_ = BigInt(`is`)
+            val biginteger_88_ = biginteger_87_.modPow(biginteger_85_!!, biginteger!!)
             val is_89_ = biginteger_88_.toByteArray()
             this.anInt7197 = 0
             writeShort(107.toByte(), is_89_.size)
