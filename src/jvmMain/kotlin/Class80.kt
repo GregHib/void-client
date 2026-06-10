@@ -1,4 +1,3 @@
-import java.util.*
 import kotlin.math.pow
 import kotlin.math.sin
 
@@ -237,7 +236,7 @@ class Class80 {
         }
 
         init {
-            val random = Random(0L)
+            val random = JavaRandom(0L)
             for (i in 0..32767) anIntArray1416!![i] = (random.nextInt() and 0x2) - 1
             anIntArray1412 = IntArray(32768)
             for (i in 0..32767) anIntArray1412!![i] = (sin(i.toDouble() / 5215.1903) * 16384.0).toInt()

@@ -1,4 +1,3 @@
-import java.util.*
 import kotlin.math.max
 import kotlin.math.min
 
@@ -77,7 +76,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
         if (i >= 108) anInt9316++
     }
 
-    private fun method3112(i: Int, i_2_: Int, `is`: Array<IntArray?>?, random: Random, i_3_: Int, i_4_: Int, i_5_: Int) {
+    private fun method3112(i: Int, i_2_: Int, `is`: Array<IntArray?>?, random: JavaRandom, i_3_: Int, i_4_: Int, i_5_: Int) {
         var i_3_ = i_3_
         try {
             anInt9309++
@@ -204,7 +203,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
             val i_55_: Int = 1 + Class348_Sub40_Sub6.Companion.anInt9139 / i_51_
             var is_56_: Array<IntArray> = Array<IntArray>(i_55_) { IntArray(3) }
             var is_57_: Array<IntArray> = Array<IntArray>(i_55_) { IntArray(3) }
-            val random = Random(anInt9318.toLong())
+            val random = JavaRandom(anInt9318.toLong())
             while (true) {
                 var i_58_ = i_51_ + Class124.method1097(106.toByte(), i_52_ - i_51_, random)
                 var i_59_ = (Class124.method1097(117.toByte(), -i_53_ + i_54_, random) + i_53_)

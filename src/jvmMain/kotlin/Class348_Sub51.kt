@@ -1,6 +1,5 @@
 import Class110.Companion.method1032
 import Class348_Sub17.Companion.method2929
-import java.util.*
 import kotlin.math.max
 
 class Class348_Sub51 : Class348 {
@@ -329,7 +328,7 @@ class Class348_Sub51 : Class348 {
     internal constructor(class230: Class230?, i: Int) {
         try {
             aClass230_7269 = class230
-            aClass199_7221 = Class199((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
+            aClass199_7221 = Class199((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), Class226.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase().indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = Class239_Sub25(i, this)
             method3423(true, 31286)
         } catch (runtimeexception: RuntimeException) {

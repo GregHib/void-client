@@ -1,7 +1,6 @@
 import ha_Sub2.Companion.method3802
 import java.io.IOException
 import java.io.OutputStream
-import java.util.*
 import kotlin.math.sin
 
 class OutputStream_Sub1 : OutputStream() {
@@ -15,7 +14,7 @@ class OutputStream_Sub1 : OutputStream() {
         @JvmField
         var anInt92: Int = 0
         @JvmField
-        var aRandom93: Random? = Random()
+        var aRandom93: JavaRandom? = JavaRandom()
         @JvmField
         var anInt94: Int = 0
         @JvmField

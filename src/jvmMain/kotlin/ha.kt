@@ -3,7 +3,6 @@ import Class348_Sub5.Companion.method2753
 import Class55.Companion.method515
 import java.awt.Canvas
 import java.awt.Rectangle
-import java.util.*
 
 abstract class ha internal constructor(@JvmField var aD4579: d?) {
     @JvmField
@@ -370,7 +369,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
             var class348_sub42_sub3 = (Class348_Sub1_Sub2.aClass308_8815!!.method2302(i.toLong(), (-120).toByte()) as Class348_Sub42_Sub3?)
             if (class348_sub42_sub3 == null) {
                 val `is` = ByteArray(512)
-                val random = Random(i.toLong())
+                val random = JavaRandom(i.toLong())
                 for (i_89_ in 0..254) `is`[i_89_] = i_89_.toByte()
                 for (i_90_ in 0..254) {
                     val i_91_ = -i_90_ + 255

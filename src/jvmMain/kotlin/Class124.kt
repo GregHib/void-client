@@ -1,6 +1,5 @@
 import Class85.Companion.method828
 import java.awt.Canvas
-import java.util.*
 
 class Class124 {
     var anIntArray1816: IntArray = intArrayOf()
@@ -1090,7 +1089,7 @@ class Class124 {
             if (i >= 88) aClass45_1848 = null
         }
 
-        fun method1097(i: Byte, i_20_: Int, random: Random): Int {
+        fun method1097(i: Byte, i_20_: Int, random: JavaRandom): Int {
             anInt1861++
             require(i_20_ > 0)
             if (Class192.method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()

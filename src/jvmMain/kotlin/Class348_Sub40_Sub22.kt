@@ -1,5 +1,4 @@
 import Class239.Companion.method1717
-import java.util.*
 
 class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
     private var anInt9284 = 1024
@@ -19,7 +18,7 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
 
     private fun method3109(i: Byte) {
         anInt9289++
-        val random = Random(anInt9301.toLong())
+        val random = JavaRandom(anInt9301.toLong())
         anInt9298 = anInt9294 / 2
         anInt9291 = 4096 / anInt9299
         anInt9300 = 4096 / anInt9301

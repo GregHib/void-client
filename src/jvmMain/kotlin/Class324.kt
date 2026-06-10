@@ -173,7 +173,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2571(i: Int, i_48_: Int, `is`: IntArray?, string: String?, i_49_: Int, i_50_: Int, class105s: Array<Class105?>?, i_51_: Int, i_52_: Int, random: Random?): Int {
+    fun method2571(i: Int, i_48_: Int, `is`: IntArray?, string: String?, i_49_: Int, i_50_: Int, class105s: Array<Class105?>?, i_51_: Int, i_52_: Int, random: JavaRandom?): Int {
         try {
             anInt4047++
             if (string == null) return 0
@@ -424,7 +424,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2585(`is`: IntArray?, i: Int, class105s: Array<Class105?>?, i_125_: Int, i_126_: Int, i_127_: Int, i_128_: Int, random: Random?, i_129_: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, string: String?, is_134_: IntArray?): Int {
+    fun method2585(`is`: IntArray?, i: Int, class105s: Array<Class105?>?, i_125_: Int, i_126_: Int, i_127_: Int, i_128_: Int, random: JavaRandom?, i_129_: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, string: String?, is_134_: IntArray?): Int {
         try {
             anInt4050++
             if (string == null) return 0

@@ -1,5 +1,3 @@
-import java.util.*
-
 class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
     private var anInt9362 = 2000
     private var anInt9364 = 4096
@@ -52,7 +50,7 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
         if (this.aClass191_7032!!.aBoolean2570) {
             val i_3_ = anInt9364 shr 1
             val is_4_ = this.aClass191_7032!!.method1427(16.toByte())!!
-            val random = Random(anInt9367.toLong())
+            val random = JavaRandom(anInt9367.toLong())
             var i_5_ = 0
             while (anInt9362 > i_5_) {
                 var i_6_ = (if (anInt9364 > 0) anInt9369 + Class124.method1097(92.toByte(), anInt9364, random) + -i_3_ else anInt9369)

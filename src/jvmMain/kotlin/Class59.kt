@@ -1,5 +1,4 @@
 import java.io.File
-import java.util.*
 import kotlin.math.atan2
 import kotlin.math.pow
 
@@ -14,7 +13,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
     private val aShortArray1082: ShortArray
     private fun method539(i: Int) {
         anInt1070++
-        val random = Random(anInt1081.toLong())
+        val random = JavaRandom(anInt1081.toLong())
         for (i_0_ in 0..254) aShortArray1082[i_0_] = i_0_.toShort()
         for (i_1_ in 0..254) {
             val i_2_ = -i_1_ + 255

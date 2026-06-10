@@ -1,7 +1,6 @@
 import Class14_Sub1.Companion.method239
 import Class19.Companion.method285
 import Class239_Sub28.Companion.method1843
-import java.util.*
 
 class Class111 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private val anInt1715: Int
@@ -32,7 +31,7 @@ class Class111 internal constructor(class230: Class230?, i: Int, class45: Class4
         }
         if (!aBooleanArray1725[i] || anIntArrayArray1724!![i]!!.size <= 1) return anIntArrayArray1724!![i]
         val i_9_ = if (i_8_ == (anInt1715.inv())) 0 else 1
-        val random = Random()
+        val random = JavaRandom()
         val `is` = IntArray(anIntArrayArray1724!![i]!!.size)
         Class214.method1578(anIntArrayArray1724!![i]!!, 0, `is`, 0, `is`.size)
         var i_10_ = i_9_

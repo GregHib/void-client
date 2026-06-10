@@ -1,5 +1,4 @@
 import jaggl.OpenGL.Companion.glTexImage2Dub
-import java.util.*
 import kotlin.math.min
 
 class Class186_Sub1 internal constructor(i: Int) : Class186() {
@@ -68,7 +67,7 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
     }
 
     init {
-        val random = Random(i.toLong())
+        val random = JavaRandom(i.toLong())
         for (i_41_ in 0..255) {
             anIntArray5804[256 + i_41_] = i_41_
             anIntArray5804[i_41_] = anIntArray5804[256 + i_41_]

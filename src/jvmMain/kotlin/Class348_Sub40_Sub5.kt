@@ -1,4 +1,3 @@
-import java.util.*
 import kotlin.math.max
 import kotlin.math.sqrt
 
@@ -14,7 +13,7 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
     private fun method3061(bool: Boolean) {
         anInt9120++
         if (bool == true) {
-            val random = Random(anInt9122.toLong())
+            val random = JavaRandom(anInt9122.toLong())
             aShortArray9116 = ShortArray(512)
             if (anInt9125 > 0) {
                 for (i in 0..511) aShortArray9116[i] = Class124.method1097(81.toByte(), anInt9125, random).toShort()
