@@ -1,8 +1,6 @@
 import Class191.Companion.method1428
 import aa_Sub2.Companion.method163
 import java.awt.Color
-import java.awt.Font
-import java.awt.FontMetrics
 import java.awt.Image
 
 class Class294 : Interface16 {
@@ -10,7 +8,7 @@ class Class294 : Interface16 {
     private var anInt5021 = 0
     private var aBoolean5022 = false
     private var anInt5023 = 0
-    private var aFontMetrics5024: FontMetrics? = null
+    private var aRasterFont5053: RasterFont? = null
     private var anImage5026: Image? = null
     private var anInt5029 = 0
     private var anImage5030: Image? = null
@@ -27,7 +25,6 @@ class Class294 : Interface16 {
     private var anImage5047: Image? = null
     private var anInt5050 = 0
     private var anInt5051 = 0
-    private var aFont5053: Font? = null
     private var anImage5054: Image? = null
     private var anImage5056: Image? = null
     private var anImage5059: Image? = null
@@ -45,8 +42,9 @@ class Class294 : Interface16 {
         anImage5030 = method2213(var_class, 2, "bodyLeft") as Image?
         anImage5026 = method2213(var_class, 2, "bodyRight") as Image?
         anImage5056 = method2213(var_class, 2, "bodyFill") as Image?
-        aFont5053 = method2213(var_class, 2, "bf") as Font?
-        aFontMetrics5024 = method2213(var_class, 2, "bfm") as FontMetrics?
+        val bf = method2213(var_class, 2, "bf") as java.awt.Font?
+        method2213(var_class, 2, "bfm") // consume+clear the bfm field; metrics derived from RasterFont
+        if (bf != null) aRasterFont5053 = AwtGlyphRasterizer(Class305.aCanvas3869!!).wrap(bf)
         aColor5034 = method2213(var_class, 2, "colourtext") as Color?
         val `object` = method2213(var_class, 2, "lb")
         val var_class_0_: Class<*> = `object`!!.javaClass
@@ -146,7 +144,7 @@ class Class294 : Interface16 {
         if (i > -69) method2215((-61).toByte(), -24)
         if (!aBoolean5022) {
             if (Class93.anApplet1530 == null) aBoolean5022 = true
-            else if (aFont5053 == null) {
+            else if (aRasterFont5053 == null) {
                 try {
                     method2211(true)
                 } catch (exception: Exception) {
@@ -232,9 +230,9 @@ class Class294 : Interface16 {
                         graphics_28_.drawImage(image, i_36_, i_22_, null)
                     }
                     graphics_6_.drawImage(anImage5059, i_16_ + i_26_, i_27_, null)
-                    graphics_6_.setFont(aFont5053)
+                    graphics_6_.setFont(aRasterFont5053!!.toAwtFont())
                     graphics_6_.setColor(aColor5034)
-                    graphics_6_.drawString(string, i_26_ + (anInt5023 + -aFontMetrics5024!!.stringWidth(string)) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_))
+                    graphics_6_.drawString(string, i_26_ + (anInt5023 - string!!.sumOf { aRasterFont5053!!.charWidth(it) }) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_))
                     graphics.drawImage(Class342.anImage4249, 0, 0, null)
                 } catch (exception: Exception) {
                     aBoolean5022 = true

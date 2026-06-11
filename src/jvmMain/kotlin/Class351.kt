@@ -1,5 +1,3 @@
-import java.awt.Font
-
 class Class351 internal constructor(private var anInt4326: Int, var anInt4323: Int) {
     override fun toString(): String {
         anInt4325++
@@ -18,7 +16,7 @@ class Class351 internal constructor(private var anInt4326: Int, var anInt4323: I
         var anInt4325: Int = 0
         var aClass60_4327: Class60? = Class60(3000000, 200)
         var aBoolean4328: Boolean = false
-        var aFont4329: Font? = null
+        var aRasterFont4329: RasterFont? = null
 
         fun method3455(string: String?, i: Int): Boolean {
             anInt4324++
@@ -35,7 +33,7 @@ class Class351 internal constructor(private var anInt4326: Int, var anInt4323: I
 
         @JvmStatic
         fun method3457(bool: Boolean) {
-            aFont4329 = null
+            aRasterFont4329 = null
             aClass60_4327 = null
             if (bool != true) method3455(null, -16)
         }

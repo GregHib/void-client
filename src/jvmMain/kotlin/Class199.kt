@@ -1,5 +1,4 @@
 import java.awt.Color
-import java.awt.Font
 
 class Class199 internal constructor(private val aBoolean2629: Boolean, private val anInt2635: Int, private var anInt2626: Int, private val aBoolean2625: Boolean) {
     fun method1456(i: Byte): Boolean {
@@ -50,7 +49,7 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                 anInt2627++
                 try {
                     val graphics = Class305.aCanvas3869!!.getGraphics()
-                    if (Class351.aFont4329 == null) Class351.aFont4329 = Font("Helvetica", 1, 13)
+                    if (Class351.aRasterFont4329 == null) Class351.aRasterFont4329 = AwtGlyphRasterizer(Class305.aCanvas3869!!).open(13, true)
                     try {
                         if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                         val graphics_3_ = Class342.anImage4249!!.getGraphics()
@@ -65,12 +64,12 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                         graphics_3_.setColor(Color.black)
                         graphics_3_.drawRect(i_4_ + 1, 1 + i_5_, 301, 31)
                         graphics_3_.fillRect(3 * i + (i_4_ - -2), 2 + i_5_, 300 - i * 3, 30)
-                        graphics_3_.setFont(Class351.aFont4329)
+                        graphics_3_.setFont(Class351.aRasterFont4329!!.toAwtFont())
                         graphics_3_.setColor(color_2_)
                         if (i_1_ > -42) anIntArray2631 = null
                         graphics_3_.drawString(string, (i_4_ + (304 - string!!.length * 6) / 2), i_5_ + 22)
                         if (Class348_Sub42_Sub16.aString9665 != null) {
-                            graphics_3_.setFont(Class351.aFont4329)
+                            graphics_3_.setFont(Class351.aRasterFont4329!!.toAwtFont())
                             graphics_3_.setColor(color_2_)
                             graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665!!.length * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2)
                         }
@@ -87,10 +86,10 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                         graphics.setColor(Color.black)
                         graphics.drawRect(1 + i_6_, 1 + i_7_, 301, 31)
                         graphics.fillRect(3 * i + 2 + i_6_, 2 + i_7_, -(i * 3) + 300, 30)
-                        graphics.setFont(Class351.aFont4329)
+                        graphics.setFont(Class351.aRasterFont4329!!.toAwtFont())
                         graphics.setColor(color_2_)
                         if (Class348_Sub42_Sub16.aString9665 != null) {
-                            graphics.setFont(Class351.aFont4329)
+                            graphics.setFont(Class351.aRasterFont4329!!.toAwtFont())
                             graphics.setColor(color_2_)
                             graphics.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 + -(6 * Class348_Sub42_Sub16.aString9665!!.length / 2)), Class348_Sub42_Sub8_Sub2.anInt10432 / 2 - 26)
                         }

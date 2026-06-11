@@ -14,11 +14,21 @@ class AwtGlyphRasterizer(private val component: Component) : GlyphRasterizer {
         val font = Font("Helvetica", if (bold) 1 else 0, size)
         return AwtRasterFont(component, font, component.getFontMetrics(font))
     }
+
+    /**
+     * Wrap an existing AWT [Font] (e.g. one obtained via reflection) as a
+     * [RasterFont] so call sites don't need to import [java.awt.Font] directly.
+     */
+    fun wrap(font: Font): RasterFont =
+        AwtRasterFont(component, font, component.getFontMetrics(font))
 }
 
-private class AwtRasterFont(
+/** Returns the underlying AWT [Font]; only valid on the JVM implementation. */
+fun RasterFont.toAwtFont(): Font = (this as AwtRasterFont).awtFont
+
+internal class AwtRasterFont(
     private val component: Component,
-    private val font: Font,
+    val awtFont: Font,
     private val metrics: FontMetrics,
 ) : RasterFont {
     override val maxAscent: Int get() = metrics.getMaxAscent()
@@ -32,7 +42,7 @@ private class AwtRasterFont(
         graphics.setColor(Color.black)
         graphics.fillRect(0, 0, width, glyphHeight)
         graphics.setColor(Color.white)
-        graphics.setFont(font)
+        graphics.setFont(awtFont)
         graphics.drawString(c.toString(), 0, ascent)
         if (emboldened) graphics.drawString(c.toString(), 1, ascent)
         val pixels = IntArray(width * glyphHeight)

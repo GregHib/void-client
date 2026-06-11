@@ -1,6 +1,6 @@
 # Phase 3 — Remaining Seam Backlog
 
-Snapshot of platform dependencies still in `jvmMain`, ranked as candidate seams. Counts are *files importing the type*. Done so far this phase: `Rect` (java.awt.Rectangle), loading-bar `Color[]`→`IntArray`, `GlyphRasterizer` (NativeFontRasterizer over Class323), `IOException` (expect/actual typealias).
+Snapshot of platform dependencies still in `jvmMain`, ranked as candidate seams. Counts are *files importing the type*. Done so far this phase: `Rect` (java.awt.Rectangle), loading-bar `Color[]`→`IntArray`, `GlyphRasterizer` (NativeFontRasterizer over Class323), `IOException` (expect/actual typealias), `java.awt.Font`/`FontMetrics` holdouts (Class199/Class294/Class351 routed through `GlyphRasterizer`/`RasterFont` — `AwtGlyphRasterizer.wrap()` + `RasterFont.toAwtFont()` extension for `setFont` call sites, `charWidth` summation replaces `FontMetrics.stringWidth`).
 
 The two proven seam shapes:
 - **Value seam** — replace a small platform value type with a plain commonMain class/primitive (Rect, packed-int colors).
