@@ -115,7 +115,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             try {
                 for (i_27_ in 0..127) {
                     for (i_28_ in 0..127) {
-                        r.anIntArrayArray9723!![i_27_]!![i_28_] = 0
+                        rStatics.anIntArrayArray9723!![i_27_]!![i_28_] = 0
                         Class223.anIntArrayArray2900!![i_27_]!![i_28_] = 99999999
                     }
                 }
@@ -167,7 +167,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 Class367_Sub11.anIntArray7397!![i_44_] = i_32_
                 Class205.anIntArray2694!![i_44_++] = i_33_
                 var i_46_: Int
-                var i_45_ = (r.anIntArrayArray9723!![i_32_ + -i_30_]!![-i_31_ + i_33_].also { i_46_ = it })
+                var i_45_ = (rStatics.anIntArrayArray9723!![i_32_ + -i_30_]!![-i_31_ + i_33_].also { i_46_ = it })
                 while (i_32_ != i_20_ || i_33_ != i_21_) {
                     if (i_46_ != i_45_) {
                         Class367_Sub11.anIntArray7397!![i_44_] = i_32_
@@ -180,7 +180,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                     if ((0x1 and i_45_) == 0) {
                         if ((0x4 and i_45_) != 0) i_33_--
                     } else i_33_++
-                    i_45_ = r.anIntArrayArray9723!![-i_30_ + i_32_]!![i_33_ + -i_31_]
+                    i_45_ = rStatics.anIntArrayArray9723!![-i_30_ + i_32_]!![i_33_ + -i_31_]
                 }
                 var i_47_ = 0
                 while (i_44_-- > 0) {

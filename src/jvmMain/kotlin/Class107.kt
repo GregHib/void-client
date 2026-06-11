@@ -3,7 +3,7 @@ import Class239.Companion.method1713
 import Class318_Sub1.Companion.method2385
 import Class66.method703
 import Class99.method882
-import r.Companion.method3284
+import rStatics.method3284
 
 /* Class107 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -294,7 +294,7 @@ class Class107 {
         }
 
         fun method1010(bool: Boolean, bool_42_: Boolean) {
-            r.aClass101_9720!!.method898(Class21.aHa326!!.method3640())
+            rStatics.aClass101_9720!!.method898(Class21.aHa326!!.method3640())
             anInt1642++
             val `is` = Class21.aHa326!!.Y()
             Class14_Sub3.anInt8630 = `is`[2]

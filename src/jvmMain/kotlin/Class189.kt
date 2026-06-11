@@ -59,7 +59,7 @@ class Class189 {
             var i_17_ = 64
             var i_18_ = 64
             val i_19_ = i_10_ - i_17_
-            r.anIntArrayArray9723!![i_17_]!![i_18_] = 99
+            rStatics.anIntArrayArray9723!![i_17_]!![i_18_] = 99
             val i_20_ = i_7_ + -i_18_
             Class223.anIntArrayArray2900!![i_17_]!![i_18_] = 0
             var i_21_ = 0
@@ -133,7 +133,7 @@ class Class189 {
                 } while (false)
                 i_25_ = Class223.anIntArrayArray2900!![i_17_]!![i_18_] + 1
                 while_49_@ do {
-                    if (i_17_ > 0 && r.anIntArrayArray9723!![-1 + i_17_]!![i_18_] == 0 && (`is`[-1 + i_23_]!![i_24_] and 0x43a40000) == 0 && ((`is`[-1 + i_23_]!![-1 + i_12_ + i_24_] and 0x4e240000) == 0)) {
+                    if (i_17_ > 0 && rStatics.anIntArrayArray9723!![-1 + i_17_]!![i_18_] == 0 && (`is`[-1 + i_23_]!![i_24_] and 0x43a40000) == 0 && ((`is`[-1 + i_23_]!![-1 + i_12_ + i_24_] and 0x4e240000) == 0)) {
                         var i_26_ = 1
                         while (-1 + i_12_ > i_26_) {
                             if ((`is`[i_23_ - 1]!![i_26_ + i_24_] and 0x4fa40000) != 0) break@while_49_
@@ -142,12 +142,12 @@ class Class189 {
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
                         Class205.anIntArray2694!![i_21_] = i_16_
                         i_21_ = i_21_ - -1 and 0xfff
-                        r.anIntArrayArray9723!![i_17_ - 1]!![i_18_] = 2
+                        rStatics.anIntArrayArray9723!![i_17_ - 1]!![i_18_] = 2
                         Class223.anIntArrayArray2900!![-1 + i_17_]!![i_18_] = i_25_
                     }
                 } while (false)
                 while_50_@ do {
-                    if (i_17_ < -i_12_ + 128 && r.anIntArrayArray9723!![i_17_ + 1]!![i_18_] == 0 && (`is`[i_23_ + i_12_]!![i_24_] and 0x60e40000) == 0 && ((`is`[i_12_ + i_23_]!![-1 + (i_24_ - -i_12_)] and 0x78240000) == 0)) {
+                    if (i_17_ < -i_12_ + 128 && rStatics.anIntArrayArray9723!![i_17_ + 1]!![i_18_] == 0 && (`is`[i_23_ + i_12_]!![i_24_] and 0x60e40000) == 0 && ((`is`[i_12_ + i_23_]!![-1 + (i_24_ - -i_12_)] and 0x78240000) == 0)) {
                         var i_27_ = 1
                         while (i_12_ - 1 > i_27_) {
                             if ((`is`[i_12_ + i_23_]!![i_24_ - -i_27_] and 0x78e40000) != 0) break@while_50_
@@ -155,13 +155,13 @@ class Class189 {
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = 1 + i_15_
                         Class205.anIntArray2694!![i_21_] = i_16_
-                        r.anIntArrayArray9723!![1 + i_17_]!![i_18_] = 8
+                        rStatics.anIntArrayArray9723!![1 + i_17_]!![i_18_] = 8
                         i_21_ = 0xfff and i_21_ - -1
                         Class223.anIntArrayArray2900!![i_17_ + 1]!![i_18_] = i_25_
                     }
                 } while (false)
                 while_51_@ do {
-                    if (i_18_ > 0 && r.anIntArrayArray9723!![i_17_]!![-1 + i_18_] == 0 && (0x43a40000 and `is`[i_23_]!![i_24_ - 1]) == 0 && (0x60e40000 and `is`[-1 + (i_23_ + i_12_)]!![i_24_ - 1]) == 0) {
+                    if (i_18_ > 0 && rStatics.anIntArrayArray9723!![i_17_]!![-1 + i_18_] == 0 && (0x43a40000 and `is`[i_23_]!![i_24_ - 1]) == 0 && (0x60e40000 and `is`[-1 + (i_23_ + i_12_)]!![i_24_ - 1]) == 0) {
                         var i_28_ = 1
                         while (i_12_ - 1 > i_28_) {
                             if ((0x63e40000 and `is`[i_23_ - -i_28_]!![-1 + i_24_]) != 0) break@while_51_
@@ -169,13 +169,13 @@ class Class189 {
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_
                         Class205.anIntArray2694!![i_21_] = -1 + i_16_
-                        r.anIntArrayArray9723!![i_17_]!![-1 + i_18_] = 1
+                        rStatics.anIntArrayArray9723!![i_17_]!![-1 + i_18_] = 1
                         i_21_ = 0xfff and 1 + i_21_
                         Class223.anIntArrayArray2900!![i_17_]!![-1 + i_18_] = i_25_
                     }
                 } while (false)
                 while_52_@ do {
-                    if (i_18_ < -i_12_ + 128 && (r.anIntArrayArray9723!![i_17_]!![1 + i_18_] == 0) && ((0x4e240000 and `is`[i_23_]!![i_24_ - -i_12_]) == 0) && ((0x78240000 and `is`[-1 + i_12_ + i_23_]!![i_24_ + i_12_]) == 0)) {
+                    if (i_18_ < -i_12_ + 128 && (rStatics.anIntArrayArray9723!![i_17_]!![1 + i_18_] == 0) && ((0x4e240000 and `is`[i_23_]!![i_24_ - -i_12_]) == 0) && ((0x78240000 and `is`[-1 + i_12_ + i_23_]!![i_24_ + i_12_]) == 0)) {
                         var i_29_ = 1
                         while (-1 + i_12_ > i_29_) {
                             if ((0x7e240000 and `is`[i_23_ + i_29_]!![i_12_ + i_24_]) != 0) break@while_52_
@@ -183,13 +183,13 @@ class Class189 {
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_
                         Class205.anIntArray2694!![i_21_] = i_16_ - -1
-                        r.anIntArrayArray9723!![i_17_]!![1 + i_18_] = 4
+                        rStatics.anIntArrayArray9723!![i_17_]!![1 + i_18_] = 4
                         i_21_ = i_21_ - -1 and 0xfff
                         Class223.anIntArrayArray2900!![i_17_]!![i_18_ + 1] = i_25_
                     }
                 } while (false)
                 while_53_@ do {
-                    if (i_17_ > 0 && i_18_ > 0 && r.anIntArrayArray9723!![i_17_ - 1]!![-1 + i_18_] == 0 && ((`is`[i_23_ + -1]!![-1 + i_24_] and 0x43a40000) == 0)) {
+                    if (i_17_ > 0 && i_18_ > 0 && rStatics.anIntArrayArray9723!![i_17_ - 1]!![-1 + i_18_] == 0 && ((`is`[i_23_ + -1]!![-1 + i_24_] and 0x43a40000) == 0)) {
                         var i_30_ = 1
                         while (i_12_ > i_30_) {
                             if ((0x4fa40000 and `is`[-1 + i_23_]!![i_24_ + (-1 + i_30_)]) != 0 || (0x63e40000 and `is`[i_23_ - (1 + -i_30_)]!![i_24_ - 1]) != 0) break@while_53_
@@ -198,12 +198,12 @@ class Class189 {
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
                         Class205.anIntArray2694!![i_21_] = -1 + i_16_
                         i_21_ = 1 + i_21_ and 0xfff
-                        r.anIntArrayArray9723!![i_17_ - 1]!![-1 + i_18_] = 3
+                        rStatics.anIntArrayArray9723!![i_17_ - 1]!![-1 + i_18_] = 3
                         Class223.anIntArrayArray2900!![i_17_ + -1]!![-1 + i_18_] = i_25_
                     }
                 } while (false)
                 while_54_@ do {
-                    if (128 - i_12_ > i_17_ && i_18_ > 0 && r.anIntArrayArray9723!![1 + i_17_]!![i_18_ + -1] == 0 && (0x60e40000 and `is`[i_23_ + i_12_]!![-1 + i_24_]) == 0) {
+                    if (128 - i_12_ > i_17_ && i_18_ > 0 && rStatics.anIntArrayArray9723!![1 + i_17_]!![i_18_ + -1] == 0 && (0x60e40000 and `is`[i_23_ + i_12_]!![-1 + i_24_]) == 0) {
                         var i_31_ = 1
                         while (i_12_ > i_31_) {
                             if ((0x78e40000 and `is`[i_23_ - -i_12_]!![i_31_ + (i_24_ - 1)]) != 0 || ((`is`[i_23_ + i_31_]!![-1 + i_24_] and 0x63e40000) != 0)) break@while_54_
@@ -211,24 +211,24 @@ class Class189 {
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - -1
                         Class205.anIntArray2694!![i_21_] = -1 + i_16_
-                        r.anIntArrayArray9723!![1 + i_17_]!![-1 + i_18_] = 9
+                        rStatics.anIntArrayArray9723!![1 + i_17_]!![-1 + i_18_] = 9
                         i_21_ = 0xfff and i_21_ - -1
                         Class223.anIntArrayArray2900!![1 + i_17_]!![-1 + i_18_] = i_25_
                     }
                 } while (false)
                 while_55_@ do {
-                    if (i_17_ > 0 && i_18_ < -i_12_ + 128 && r.anIntArrayArray9723!![-1 + i_17_]!![1 + i_18_] == 0 && (`is`[i_23_ - 1]!![i_12_ + i_24_] and 0x4e240000) == 0) {
+                    if (i_17_ > 0 && i_18_ < -i_12_ + 128 && rStatics.anIntArrayArray9723!![-1 + i_17_]!![1 + i_18_] == 0 && (`is`[i_23_ - 1]!![i_12_ + i_24_] and 0x4e240000) == 0) {
                         for (i_32_ in 1..<i_12_) {
                             if ((`is`[-1 + i_23_]!![i_32_ + i_24_] and 0x4fa40000) != 0 || (`is`[i_32_ + (i_23_ + -1)]!![i_24_ - -i_12_] and 0x7e240000) != 0) break@while_55_
                         }
                         Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - 1
                         Class205.anIntArray2694!![i_21_] = i_16_ - -1
-                        r.anIntArrayArray9723!![i_17_ - 1]!![i_18_ - -1] = 6
+                        rStatics.anIntArrayArray9723!![i_17_ - 1]!![i_18_ - -1] = 6
                         i_21_ = i_21_ - -1 and 0xfff
                         Class223.anIntArrayArray2900!![-1 + i_17_]!![i_18_ - -1] = i_25_
                     }
                 } while (false)
-                if (i_17_ < 128 + -i_12_ && i_18_ < 128 + -i_12_ && (r.anIntArrayArray9723!![i_17_ + 1]!![1 + i_18_] == 0) && (0x78240000 and `is`[i_12_ + i_23_]!![i_24_ + i_12_]) == 0) {
+                if (i_17_ < 128 + -i_12_ && i_18_ < 128 + -i_12_ && (rStatics.anIntArrayArray9723!![i_17_ + 1]!![1 + i_18_] == 0) && (0x78240000 and `is`[i_12_ + i_23_]!![i_24_ + i_12_]) == 0) {
                     var i_33_ = 1
                     while (i_12_ > i_33_) {
                         if ((0x7e240000 and `is`[i_23_ + i_33_]!![i_24_ - -i_12_]) != 0 || ((`is`[i_12_ + i_23_]!![i_24_ - -i_33_] and 0x78e40000) != 0)) continue@while_56_
@@ -237,7 +237,7 @@ class Class189 {
                     Class367_Sub11.anIntArray7397!![i_21_] = i_15_ - -1
                     Class205.anIntArray2694!![i_21_] = i_16_ - -1
                     i_21_ = 0xfff and 1 + i_21_
-                    r.anIntArrayArray9723!![i_17_ - -1]!![1 + i_18_] = 12
+                    rStatics.anIntArrayArray9723!![i_17_ - -1]!![1 + i_18_] = 12
                     Class223.anIntArrayArray2900!![i_17_ + 1]!![i_18_ - -1] = i_25_
                 }
             }

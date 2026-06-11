@@ -120,7 +120,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
                 Class348_Sub27.aClass302Array6897!![i_3_] = null
                 i_3_++
             }
-            Class348_Sub42.method3163((-114).toByte())
+            Class348_Sub42Statics.method3163((-114).toByte())
             for (i_4_ in 0..2047) Class294.aPlayerArray5058!![i_4_] = null
             Class150.anInt2057 = 0
             Class282.aClass356_3654!!.method3481(i.toInt() xor 0xb)

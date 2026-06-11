@@ -360,7 +360,7 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
             Class21.aHa326 = var_ha
             Class51.aClass101_905 = Class21.aHa326!!.method3654()
             Class44.aClass101_624 = Class21.aHa326!!.method3654()
-            r.aClass101_9720 = Class21.aHa326!!.method3654()
+            rStatics.aClass101_9720 = Class21.aHa326!!.method3654()
             Class73.anInt4784 = i_26_
             Class239_Sub24.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null

@@ -363,7 +363,7 @@ import Class348_Sub40_Sub7.Companion.method3066
 import Class348_Sub40_Sub8.Companion.method3068
 import Class348_Sub40_Sub9.Companion.method3071
 import Class348_Sub41.Companion.method3155
-import Class348_Sub42.Companion.method3161
+import Class348_Sub42Statics.method3161
 import Class348_Sub42_Sub1.Companion.method3165
 import Class348_Sub42_Sub10.Companion.method3217
 import Class348_Sub42_Sub11.Companion.method3220
@@ -526,7 +526,7 @@ import aa_Sub3.Companion.method167
 import haStatics.method3680
 import ha_Sub2.Companion.method3736
 import ha_Sub3.Companion.method3870
-import r.Companion.method3285
+import rStatics.method3285
 import r_Sub1.Companion.method3288
 import r_Sub2.Companion.method3295
 import s.Companion.method3988
