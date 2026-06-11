@@ -79,7 +79,11 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
             try {
                 anInt6628++
                 if (bool != true) aByteArray6624 = null
-                return ha_Sub1(canvas!!, var_d, i_4_, i)
+                val var_ha_sub1 = ha_Sub1(var_d, AwtGameSurfaceFactory)
+                val displayTarget = AwtDisplayTarget(canvas!!)
+                var_ha_sub1.method3643(displayTarget, i_4_, i)
+                var_ha_sub1.method3677(displayTarget)
+                return var_ha_sub1
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ')'))
             }

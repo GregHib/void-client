@@ -1,14 +1,13 @@
-import java.awt.Canvas
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
+class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory) : ha(var_d) {
     private var anInt7465 = 0
     private var anInt7466 = 0
     private var aClass356_7467: Class356?
-    private var aCanvas7468: AwtDisplayTarget? = null
+    private var aCanvas7468: DisplayTarget? = null
     @JvmField
     var aClass348_Sub31_7469: GameSurface? = null
     private var aBoolean7470 = false
@@ -807,8 +806,8 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
 
     override fun method3701(displayTarget: DisplayTarget?) {
         if (aCanvas7468 === displayTarget) method3677(null)
-        val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
-        if (class348_sub31 != null) class348_sub31.method2715(100.toByte())
+        val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
+        if (class348_sub31 != null) class348_sub31.dispose()
     }
 
     override fun L(i: Int, i_226_: Int, i_227_: Int) {
@@ -831,11 +830,11 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     override fun method3643(displayTarget: DisplayTarget?, i: Int, i_232_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
+        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
         if (class348_sub31 == null) {
-            class348_sub31 = Class110.method1035(9029, i_232_, (displayTarget as AwtDisplayTarget?)?.canvas, i)
-            aClass356_7467!!.method3483(21.toByte(), displayTarget.hashCode().toLong(), class348_sub31)
-        } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_232_) method3669(displayTarget, i, i_232_)
+            class348_sub31 = gameSurfaceFactory.create(displayTarget!!, i, i_232_)
+            aClass356_7467!!.method3483(21.toByte(), displayTarget.hashCode().toLong(), class348_sub31 as Class348?)
+        } else if (class348_sub31.width != i || class348_sub31.height != i_232_) method3669(displayTarget, i, i_232_)
     }
 
     override fun b(i: Int, i_233_: Int, i_234_: Int, i_235_: Int, d: Double) {
@@ -1308,18 +1307,6 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return this.aClass101_Sub1_7492!!
     }
 
-    constructor(canvas: Canvas, var_d: d?, i: Int, i_355_: Int) : this(var_d) {
-        try {
-            val displayTarget = AwtDisplayTarget(canvas)
-            method3643(displayTarget, i, i_355_)
-            method3677(displayTarget)
-        } catch (throwable: Throwable) {
-            throwable.printStackTrace()
-            this.method3635((-115).toByte())
-            throw RuntimeException("")
-        }
-    }
-
     fun method3719(i: Int): IntArray? {
         var class348_sub25: Class348_Sub25?
         synchronized(aClass60_7498) {
@@ -1505,16 +1492,16 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
                 method3717()
             }
         } else {
-            val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
+            val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
             if (class348_sub31 != null) {
-                aCanvas7468 = displayTarget as AwtDisplayTarget
+                aCanvas7468 = displayTarget
                 anInt7465 = aCanvas7468!!.width
                 anInt7472 = aCanvas7468!!.height
                 this.aClass348_Sub31_7469 = class348_sub31
                 if (aClass49_7475 == null) {
-                    this.anIntArray7483 = class348_sub31.anIntArray6916
-                    this.anInt7477 = class348_sub31.anInt6917
-                    anInt7486 = class348_sub31.anInt6920
+                    this.anIntArray7483 = class348_sub31.pixels
+                    this.anInt7477 = class348_sub31.width
+                    anInt7486 = class348_sub31.height
                     if (this.anInt7477 != anInt7495 || anInt7486 != anInt7488) {
                         anInt7495 = this.anInt7477
                         anInt7481 = anInt7495
@@ -2068,18 +2055,18 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     override fun method3669(displayTarget: DisplayTarget?, i: Int, i_578_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
+        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
         if (class348_sub31 != null) {
-            class348_sub31.method2715(95.toByte())
-            class348_sub31 = Class110.method1035(9029, i_578_, (displayTarget as AwtDisplayTarget?)?.canvas, i)!!
-            aClass356_7467!!.method3483(112.toByte(), displayTarget.hashCode().toLong(), class348_sub31)
+            class348_sub31.dispose()
+            class348_sub31 = gameSurfaceFactory.create(displayTarget!!, i, i_578_)
+            aClass356_7467!!.method3483(112.toByte(), displayTarget.hashCode().toLong(), class348_sub31 as Class348?)
             if (aCanvas7468 === displayTarget && aClass49_7475 == null) {
                 anInt7465 = aCanvas7468!!.width
                 anInt7472 = aCanvas7468!!.height
                 this.aClass348_Sub31_7469 = class348_sub31
-                this.anIntArray7483 = class348_sub31.anIntArray6916
-                this.anInt7477 = class348_sub31.anInt6917
-                anInt7486 = class348_sub31.anInt6920
+                this.anIntArray7483 = class348_sub31!!.pixels
+                this.anInt7477 = class348_sub31.width
+                anInt7486 = class348_sub31.height
                 if (this.anInt7477 != anInt7495 || anInt7486 != anInt7488) {
                     anInt7495 = this.anInt7477
                     anInt7481 = anInt7495
