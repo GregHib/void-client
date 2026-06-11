@@ -1,6 +1,4 @@
-import java.io.File
-
-class Class78 internal constructor(private val aClass234_1312: Class234, i: Int, i_22_: Int) {
+class Class78 internal constructor(private val aClass234_1312: CacheStore, i: Int, i_22_: Int) {
     private val aByteArray1305: ByteArray
     private val aByteArray1311: ByteArray
     private var anInt1314 = 0
@@ -71,7 +69,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
         anInt1313++
     }
 
-    private fun method785(i: Int): File? {
+    private fun method785(i: Int): Any? {
         anInt1316++
         if (i != -8659) method785(-88)
         return aClass234_1312.method1660(i xor 0x2198.inv())

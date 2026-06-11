@@ -39,13 +39,13 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
         @JvmStatic
         fun method247(i: Int): Class348_Sub51? {
             anInt8632++
-            var class234: Class234? = null
+            var class234: CacheStore? = null
             var class348_sub51 = Class348_Sub51(Class348_Sub42_Sub8_Sub2.aClass230_10434, 0)
             try {
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-85).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
-                    class234 = class144.anObject1998 as Class234?
+                    class234 = class144.anObject1998 as CacheStore?
                     val `is` = ByteArray(class234!!.method1662((-46).toByte()).toInt())
                     var i_2_: Int
                     var i_3_ = 0

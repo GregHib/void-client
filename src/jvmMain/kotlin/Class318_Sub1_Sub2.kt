@@ -77,7 +77,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
         @JvmStatic
         fun method2405(i: Int) {
             anInt8729++
-            var class234: Class234? = null
+            var class234: CacheStore? = null
             try {
                 class234 = Class297.method2231("2", -1141472112)!!
                 val class348_sub49 = Class348_Sub49(3 + 6 * Class335.anInt4168)

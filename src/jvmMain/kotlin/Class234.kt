@@ -1,14 +1,14 @@
 import java.io.File
 import java.io.RandomAccessFile
 
-class Class234 internal constructor(file: File?, string: String?, l: Long) {
+class Class234 internal constructor(file: File?, string: String?, l: Long) : CacheStore {
     private var aRandomAccessFile3036: RandomAccessFile? = null
     private val aLong3037: Long
     private var aLong3039: Long = 0
     private val aFile3046: File?
 
     @Throws(IOException::class)
-    fun method1656(`is`: ByteArray?, i: Int, i_0_: Byte, i_1_: Int): Int {
+    override fun method1656(`is`: ByteArray?, i: Int, i_0_: Byte, i_1_: Int): Int {
         anInt3040++
         val i_2_ = aRandomAccessFile3036!!.read(`is`, i, i_1_)
         val i_3_ = 39 % ((75 - i_0_) / 39)
@@ -17,7 +17,7 @@ class Class234 internal constructor(file: File?, string: String?, l: Long) {
     }
 
     @Throws(IOException::class)
-    fun method1657(bool: Boolean) {
+    override fun method1657(bool: Boolean) {
         anInt3045++
         if (bool != false) method1660(-27)
         if (aRandomAccessFile3036 != null) {
@@ -27,7 +27,7 @@ class Class234 internal constructor(file: File?, string: String?, l: Long) {
     }
 
     @Throws(IOException::class)
-    fun method1658(i: Byte, i_4_: Int, i_5_: Int, `is`: ByteArray?) {
+    override fun method1658(i: Byte, i_4_: Int, i_5_: Int, `is`: ByteArray?) {
         anInt3043++
         if (aLong3037 < i_5_.toLong() - -aLong3039) {
             aRandomAccessFile3036!!.seek(aLong3037)
@@ -39,14 +39,14 @@ class Class234 internal constructor(file: File?, string: String?, l: Long) {
         aLong3039 += i_5_.toLong()
     }
 
-    fun method1660(i: Int): File {
+    override fun method1660(i: Int): Any? {
         anInt3042++
         if (i <= 64) Companion.method1659((-48).toByte())
-        return aFile3046!!
+        return aFile3046
     }
 
     @Throws(IOException::class)
-    fun method1661(i: Int, l: Long) {
+    override fun method1661(i: Int, l: Long) {
         try {
             anInt3048++
             if (i != -18968) aRandomAccessFile3036 = null
@@ -58,7 +58,7 @@ class Class234 internal constructor(file: File?, string: String?, l: Long) {
     }
 
     @Throws(IOException::class)
-    fun method1662(i: Byte): Long {
+    override fun method1662(i: Byte): Long {
         anInt3038++
         if (i.toInt() != -46) return 97L
         return aRandomAccessFile3036!!.length()

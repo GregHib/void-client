@@ -23,12 +23,12 @@ object Class116 {
     fun method1063(i: Int) {
         if (i != 1) aString1761 = null
         anInt1760++
-        var class234: Class234? = null
+        var class234: CacheStore? = null
         try {
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233(((-46).toByte()).toByte(), "2", true)
             while (class144!!.anInt1997 == 0) method2161(63.toByte(), 1L)
             if (class144.anInt1997 == 1) {
-                class234 = class144.anObject1998 as Class234
+                class234 = class144.anObject1998 as CacheStore
                 val `is` = ByteArray(class234!!.method1662(((-46).toByte()).toByte()).toInt())
                 var i_0_: Int
                 var i_1_ = 0
