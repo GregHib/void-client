@@ -15,6 +15,9 @@ object Class327 {
     var anIntArray4097: IntArray? = IntArray(2)
     var aClass74_4098: Class74? = Class74(4, 7)
 
+    /** Platform sleep seam; defaults to the JVM Thread.sleep wrapper. */
+    var sleeper: Sleeper = ThreadSleeper
+
     @JvmStatic
     fun method2604(i: Byte) {
         aClass273_4091 = null
@@ -34,12 +37,8 @@ object Class327 {
     fun method2606(i: Int, l: Long) {
         try {
             anInt4090++
-            try {
-                Thread.sleep(l)
-                val i_0_ = 107 % ((-80 - i) / 35)
-            } catch (interruptedexception: InterruptedException) {
-                /* empty */
-            }
+            sleeper.sleep(l)
+            val i_0_ = 107 % ((-80 - i) / 35)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, "de.A(" + i + ',' + l + ')')
         }
