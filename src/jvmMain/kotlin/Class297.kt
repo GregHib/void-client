@@ -1,6 +1,7 @@
 import Class62.method599
 import java.awt.*
 import java.awt.datatransfer.Transferable
+import java.io.ByteArrayInputStream
 import java.io.DataInputStream
 import java.lang.reflect.Method
 import java.net.InetAddress
@@ -10,6 +11,7 @@ import java.util.*
 import kotlin.concurrent.Volatile
 
 class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) : Runnable {
+    var httpFetcher: HttpFetch = JvmHttpFetch
     private var aCallback_Sub1_3776: Callback_Sub1? = null
     @JvmField
     var aBoolean3777: Boolean = false
@@ -98,7 +100,8 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                     class144.anObject1998 = thread
                 } else if (i == 4) {
                     if (method599(-73) < aLong3781) throw IOException()
-                    class144.anObject1998 = DataInputStream(((class144.anObject1996) as URL).openStream())
+                    val bytes = httpFetcher.fetch((class144.anObject1996) as String)
+                    class144.anObject1998 = DataInputStream(ByteArrayInputStream(bytes))
                 } else if (i == 8) {
                     val objects = (class144.anObject1996 as Array<Any?>?)
                     if (this.aBoolean3777 && ((objects!![0] as Class<*>).getClassLoader() == null)) throw SecurityException()
@@ -244,7 +247,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
 
     fun method2237(url: URL?, i: Int): Class144? {
         if (i != 8362) return null
-        return method2246(8, 0, 4, 0, url)
+        return method2246(8, 0, 4, 0, url?.toString())
     }
 
     fun method2238(i: Int, `is`: IntArray?, i_12_: Int, point: Point?, component: Component?, i_13_: Int): Class144 {
