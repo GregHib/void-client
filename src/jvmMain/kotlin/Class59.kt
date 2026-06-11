@@ -211,7 +211,11 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                     }
                 }
                 try {
-                    if (!bool) Class59_Sub1.aClass297_5297!!.method2242(`is`, (-104).toByte(), file)
+                    if (!bool) {
+                        val fos = java.io.FileOutputStream(file)
+                        fos.write(`is`, 0, `is`.size)
+                        fos.close()
+                    }
                 } catch (throwable: Throwable) {
                     if (Loader.trace) {
                         throwable.printStackTrace()

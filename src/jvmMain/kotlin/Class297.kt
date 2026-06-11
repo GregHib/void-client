@@ -2,8 +2,6 @@ import Class62.method599
 import java.awt.*
 import java.awt.datatransfer.Transferable
 import java.io.DataInputStream
-import java.io.File
-import java.io.FileOutputStream
 import java.lang.reflect.Method
 import java.net.InetAddress
 import java.net.Socket
@@ -262,18 +260,6 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     fun method2240(i: Int): Class144? {
         if (i != 972476528) return null
         return method2246(8, 0, 5, 0, null)
-    }
-
-    fun method2242(`is`: ByteArray, i: Byte, file: File): Boolean {
-        try {
-            val fileoutputstream = FileOutputStream(file)
-            fileoutputstream.write(`is`, 0, `is`.size)
-            if (i.toInt() != -104) return false
-            fileoutputstream.close()
-            return true
-        } catch (ioexception: IOException) {
-            throw RuntimeException()
-        }
     }
 
     fun method2243(i: Int, string: String?, var_class: Class<*>?): Class144 {
