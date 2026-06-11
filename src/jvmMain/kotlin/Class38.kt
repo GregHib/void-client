@@ -3,7 +3,7 @@ import Class318_Sub1_Sub5.Companion.method2483
 import Class348_Sub40_Sub23.Companion.method3113
 import Class367_Sub8.Companion.method3547
 import Class5_Sub2.Companion.method195
-import aa.Companion.method159
+import aaStatics.method159
 import kotlin.math.max
 import kotlin.math.min
 

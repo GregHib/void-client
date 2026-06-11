@@ -1,6 +1,6 @@
 import Class318_Sub1_Sub3_Sub3.Companion.method2433
 import Class348_Sub31.Companion.method3007
-import aa.Companion.method160
+import aaStatics.method160
 import kotlin.math.sqrt
 
 /* Class348_Sub40_Sub34 - Decompiled by JODE

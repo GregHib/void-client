@@ -845,7 +845,7 @@ class Client : Applet_Sub1() {
         method852(6)
         method3518(i.toInt() xor 0x34)
         Exception_Sub1.method140((-126).toByte())
-        aa.method158((-67).toByte())
+        aaStatics.method158((-67).toByte())
         method3438(59.toByte())
         Class143.method1180((-76).toByte())
         method879(96)
