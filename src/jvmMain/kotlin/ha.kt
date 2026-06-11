@@ -9,7 +9,6 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun F(i: Int, i_7_: Int)
 
-    @Throws(Exception_Sub1::class)
     abstract fun method3626(i: Int, i_8_: Int)
 
     abstract fun method3627(): Boolean
@@ -43,7 +42,7 @@ abstract class ha internal constructor(var aD4579: d?) {
     fun method3635(i: Byte) {
         val i_15_ = -90 % ((i - 8) / 33)
         anInt4573++
-        Class348_Sub40_Sub26.aBooleanArray9351!![this.anInt4567] = false
+        haStatics.rendererSlots[this.anInt4567] = false
         method3652()
     }
 
@@ -114,7 +113,6 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun L(i: Int, i_72_: Int, i_73_: Int)
 
-    @Throws(Exception_Sub1::class)
     fun method3657(rectangles: Array<Rect?>?, i: Int, i_74_: Int) {
         method3707(rectangles, i, 0, 0)
         anInt4568++
@@ -226,7 +224,6 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun method3688(i: Int, i_158_: Int, i_159_: Int, i_160_: Int, i_161_: Int, i_162_: Int, i_163_: Int)
 
-    @Throws(Exception_Sub1::class)
     fun method3689(i: Byte) {
         method3626(0, 0)
         if (i >= 53) anInt4572++
@@ -281,7 +278,6 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun method3706(class299: Class299?, class299_203_: Class299?, f: Float, class299_204_: Class299?): Class299?
 
-    @Throws(Exception_Sub1::class)
     abstract fun method3707(rectangles: Array<Rect?>?, i: Int, i_205_: Int, i_206_: Int)
 
     abstract fun method3708(): Boolean
@@ -295,8 +291,8 @@ abstract class ha internal constructor(var aD4579: d?) {
     init {
         var i = -1
         for (i_215_ in 0..7) {
-            if (!Class348_Sub40_Sub26.aBooleanArray9351!![i_215_]) {
-                Class348_Sub40_Sub26.aBooleanArray9351!![i_215_] = true
+            if (!haStatics.rendererSlots[i_215_]) {
+                haStatics.rendererSlots[i_215_] = true
                 i = i_215_
                 break
             }
