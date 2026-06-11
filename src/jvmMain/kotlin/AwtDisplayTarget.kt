@@ -18,4 +18,8 @@ class AwtDisplayTarget(@JvmField val canvas: Canvas) : DisplayTarget {
 
     /** Ask the platform to repaint (mirrors `aCanvas7468.repaint()`, the renderer's blit-failure path). */
     override fun requestRepaint() = canvas.repaint()
+
+    /** Delegate identity to the underlying Canvas so wrappers created from the same Canvas compare equal. */
+    override fun equals(other: Any?): Boolean = other is AwtDisplayTarget && canvas === other.canvas
+    override fun hashCode(): Int = System.identityHashCode(canvas)
 }

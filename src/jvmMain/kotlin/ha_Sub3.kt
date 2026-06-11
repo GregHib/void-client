@@ -912,11 +912,11 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
             try {
                 anInt8025++
                 var `object`: Any? = null
-                if (displayTarget == null || displayTarget === this.aCanvas7925) `object` = anObject8020
+                if (displayTarget == null || displayTarget == this.aCanvas7925) `object` = anObject8020
                 else if (aHashtable8014!!.containsKey(displayTarget)) `object` = aHashtable8014!!.get(displayTarget)
                 if (`object` == null) throw RuntimeException()
                 method3844(12727, displayTarget, `object`)
-                if (displayTarget !== aCanvas7910) break
+                if (displayTarget != aCanvas7910) break
                 method3917(false)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("wga.HF(" + (if (displayTarget != null) "{...}" else "null") + ',' + i + ',' + i_90_ + ')'))
@@ -1620,7 +1620,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         do {
             try {
                 anInt7955++
-                if (displayTarget === this.aCanvas7925) throw RuntimeException()
+                if (displayTarget == this.aCanvas7925) throw RuntimeException()
                 if (aHashtable8014!!.containsKey(displayTarget)) break
                 val canvas = (displayTarget as AwtDisplayTarget?)?.canvas
                 if (!canvas!!.isShowing()) throw RuntimeException()
@@ -1969,7 +1969,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
             anObject8020 = null
             anInt7936++
             aCanvas7910 = null
-            if (displayTarget == null || displayTarget === this.aCanvas7925) {
+            if (displayTarget == null || displayTarget == this.aCanvas7925) {
                 anObject8020 = this.anObject7919
                 aCanvas7910 = this.aCanvas7925
             } else if (aHashtable8014!!.containsKey(displayTarget)) {
@@ -2125,7 +2125,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         do {
             try {
                 anInt7906++
-                if (this.aCanvas7925 === displayTarget) throw RuntimeException()
+                if (this.aCanvas7925 == displayTarget) throw RuntimeException()
                 if (!aHashtable8014!!.containsKey(displayTarget)) break
                 method3911(displayTarget, 1, aHashtable8014!!.get(displayTarget))
                 aHashtable8014!!.remove(displayTarget)

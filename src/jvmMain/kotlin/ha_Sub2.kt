@@ -1292,7 +1292,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         do {
             try {
                 anInt7674++
-                if (displayTarget === aCanvas7626) throw RuntimeException()
+                if (displayTarget == aCanvas7626) throw RuntimeException()
                 if (!aHashtable7577.containsKey(displayTarget)) break
                 val var_long = aHashtable7577.get(displayTarget) as Long
                 anOpenGL7664!!.releaseSurface((displayTarget as AwtDisplayTarget?)?.canvas, var_long)
@@ -1576,7 +1576,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         do {
             try {
                 anInt7544++
-                if (aCanvas7626 === displayTarget) throw RuntimeException()
+                if (aCanvas7626 == displayTarget) throw RuntimeException()
                 if (aHashtable7577.containsKey(displayTarget)) break
                 val canvas = (displayTarget as AwtDisplayTarget?)?.canvas
                 if (!canvas!!.isShowing()) throw RuntimeException()
@@ -1953,7 +1953,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             try {
                 anInt7701++
                 var l = 0L
-                if (displayTarget != null && aCanvas7626 !== displayTarget) {
+                if (displayTarget != null && aCanvas7626 != displayTarget) {
                     if (aHashtable7577.containsKey(displayTarget)) {
                         val var_long = aHashtable7577.get(displayTarget) as Long
                         l = var_long
@@ -1961,7 +1961,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 } else l = aLong7553
                 if (l == 0L) throw RuntimeException()
                 anOpenGL7664!!.surfaceResized(l)
-                if (aCanvas7575 !== displayTarget) break
+                if (aCanvas7575 != displayTarget) break
                 method3745(117.toByte())
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("qo.HF(" + (if (displayTarget != null) "{...}" else "null") + ',' + i + ',' + i_231_ + ')'))
@@ -2669,7 +2669,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             aCanvas7575 = null
             anInt7621++
             aLong7636 = 0L
-            if (displayTarget == null || displayTarget === aCanvas7626) {
+            if (displayTarget == null || displayTarget == aCanvas7626) {
                 aCanvas7575 = aCanvas7626
                 aLong7636 = aLong7553
             } else if (aHashtable7577.containsKey(displayTarget)) {
