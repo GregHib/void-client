@@ -749,4 +749,17 @@ class Class213 {
                     while (i_78_ > i_89_) {
                         val i_90_ = i_83_ - -i_76_
                         while (i_83_ < i_90_) {
-                
+                            `is`!![i_84_] = is_75_[i_83_]
+                            fs!![i_84_++] = fs_82_[i_83_++]
+                        }
+                        i_83_ += i_85_
+                        i_84_ += i_86_
+                        i_89_++
+                    }
+                }
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("rq.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_73_ + ',' + i_74_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (is_75_ != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + i_79_ + ',' + i_80_ + ',' + i_81_ + ',' + (if (fs_82_ != null) "{...}" else "null") + ')'))
+            }
+        }
+    }
+}

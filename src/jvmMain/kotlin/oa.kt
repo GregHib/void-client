@@ -603,4 +603,12 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         private val aFloatArray5129 = FloatArray(20)
         private val anIntArray5130: IntArray = anIntArray5122
         var anIntArray5132: IntArray = IntArray(6)
-        private val aShortArray5133: ShortArray =
+        private val aShortArray5133: ShortArray = ShortArray(8191)
+        private val aByteArray5134: ByteArray = ByteArray(8191)
+        private val anIntArray5135: IntArray = IntArray(8191)
+        private val anIntArray5136: IntArray = anIntArray5122
+        private val aFloatArray5138: FloatArray = aFloatArray5129
+        private val anIntArray5139: IntArray = IntArray(8191)
+        var anIntArray5140: IntArray = anIntArray5122
+    }
+}

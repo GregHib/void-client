@@ -143,4 +143,6 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
             } else return 1
             if (i_6_ != -6409) anIntArray2466 = null
             throw IllegalArgumentException("")
-       
+        }
+    }
+}

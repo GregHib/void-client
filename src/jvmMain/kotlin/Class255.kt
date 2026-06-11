@@ -362,4 +362,6 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
 
         init {
             aClass114_3265 = Class114(48, -2)
-       
+        }
+    }
+}

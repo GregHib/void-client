@@ -240,4 +240,5 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                 aByteArray7394 = null
             }
         }
-   
+    }
+}

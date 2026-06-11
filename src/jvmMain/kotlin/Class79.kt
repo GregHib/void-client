@@ -790,4 +790,25 @@ class Class79 {
                 if (Class348_Sub40_Sub6.anInt9139 != i) {
                     Class239_Sub18.anIntArray6035 = IntArray(i)
                     for (i_32_ in 0..<i) Class239_Sub18.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
-             
+                } else Class239_Sub18.anIntArray6035 = Class318_Sub6.anIntArray6432
+                Class286_Sub2.anInt6212 = i
+                Class299_Sub2.anInt6325 = -1 + i
+            }
+        }
+
+        @JvmStatic
+        fun method802(i: Int, i_93_: Int, bool: Boolean): Boolean {
+            if (bool != true) return false
+            anInt1332++
+            if (i_93_ < 0 || i < 0 || i_93_ >= Class348_Sub33.aByteArrayArrayArray6962!![1]!!.size || i >= Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
+            return (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
+        }
+
+        @JvmStatic
+        fun method804(i: Int) {
+            aClass105_1365 = null
+            aClient1367 = null
+            if (i != -3752) anInt1387 = 14
+        }
+    }
+}

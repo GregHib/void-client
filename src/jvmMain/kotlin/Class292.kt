@@ -70,4 +70,7 @@ class Class292 internal constructor(private val aClass45_4804: Class45) : Interf
         }
 
         init {
-            aClass114_4798 = Class11
+            aClass114_4798 = Class114(29, 7)
+        }
+    }
+}

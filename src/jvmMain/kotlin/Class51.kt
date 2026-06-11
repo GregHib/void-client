@@ -753,3 +753,33 @@ class Class51 {
         @JvmField
         var anInt899: Int = 0
         @JvmField
+        var anInt901: Int = 0
+        @JvmField
+        var aClass101_905: Class101? = null
+        @JvmField
+        var anInt910: Int = 0
+        @JvmField
+        var anInt927: Int = 0
+        @JvmField
+        var aStringArray932: Array<String?>? = arrayOfNulls<String>(100)
+        @JvmField
+        var anInt938: Int = 0
+        @JvmField
+        var anInt948: Int = 0
+        @JvmField
+        var anInt956: Int = 0
+        @JvmField
+        var anInt957: Int = 0
+        @JvmField
+        var anInt958: Int = 0
+        @JvmField
+        var anInt960: Int = 0
+        @JvmStatic
+        fun method486(i: Int) {
+            aStringArray932 = null
+            if (i > -19) method486(-34)
+            aClass101_905 = null
+            aClass311_897 = null
+        }
+    }
+}

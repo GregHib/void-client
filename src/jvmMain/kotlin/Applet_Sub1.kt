@@ -571,4 +571,17 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                     }
                 }
                 if (-1 + Class286_Sub1.aStringArray6200!!.size > Class369_Sub2.anInt8587) {
-                    Class369_Sub2.anInt
+                    Class369_Sub2.anInt8587++
+                    if (Class284.anInt3676 > 0) Class284.anInt3676++
+                }
+            }
+        }
+
+        @JvmStatic
+        fun method98(i: Int) {
+            anIntArray38 = null
+            aClass324_20 = null
+            if (i != 32717) method86(null, 65)
+        }
+    }
+}

@@ -468,4 +468,21 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         @JvmField
         var aMethod3783: Method? = null
         private var aString3784: String? = null
-        var aMethod3786: Metho
+        var aMethod3786: Method? = null
+        var anInt3792: Int = -1
+        var aString3796: String? = null
+        private var aString3800: String? = null
+        lateinit var aString3803: String
+        private var aString3789: String? = null
+
+        fun method2231(string: String?, i: Int): CacheStore? {
+            if (i != -1141472112) return null
+            return method2241(string, 12606, aString3789, anInt3792)
+        }
+
+        private fun method2241(string: String?, i: Int, string_14_: String?, i_15_: Int): CacheStore? {
+            if (i != 12606) return null
+            return Class348_Sub23_Sub1.aClass297_8992!!.aCacheStorage.openPreferences(string, i_15_)
+        }
+    }
+}

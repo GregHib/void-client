@@ -227,3 +227,5 @@ class Class112 internal constructor(class297: Class297) : Runnable {
             }
             return -1
         }
+    }
+}

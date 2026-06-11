@@ -141,4 +141,18 @@ object Class348Statics {
     fun method2713(i: Int) {
         aClass45_4286 = null
         aClass318_Sub1Array4293 = null
-        if (i != 0) method2711(-47, 87, null, 85, false, -126, -116, -51, -44, null, 75, -69, 
+        if (i != 0) method2711(-47, 87, null, 85, false, -126, -116, -51, -44, null, 75, -69, 87, null)
+        anIntArray4288 = null
+    }
+
+    fun method2714(i: Int, i_35_: Int): Boolean {
+        if (i != 7351) method2709(-15, 59, 58)
+        anInt4296++
+        return i_35_ == 1 || i_35_ == 3 || i_35_ == 5
+    }
+
+    init {
+        anIntArray4288 = IntArray(6)
+        anInt4290 = 0
+    }
+}

@@ -102,4 +102,7 @@ class OutputStream_Sub2 : OutputStream() {
         }
 
         init {
-            anInt
+            anInt101 = -1
+        }
+    }
+}
