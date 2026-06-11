@@ -23,7 +23,7 @@ class Class241_Sub3 internal constructor() : Class241() {
     }
 
     private fun method1865(i: Int): Long {
-        val l = System.nanoTime()
+        val l = clockNanos()
         val l_0_ = -aLong6169 + l
         if (i != 10) return -56L
         aLong6169 = l
@@ -61,7 +61,7 @@ class Class241_Sub3 internal constructor() : Class241() {
 
     init {
         aLongArray6171 = LongArray(10)
-        aLong6166 = System.nanoTime()
-        aLong6167 = System.nanoTime()
+        aLong6166 = clockNanos()
+        aLong6167 = clockNanos()
     }
 }

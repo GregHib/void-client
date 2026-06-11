@@ -1,5 +1,3 @@
-import jagex3.jagmisc.jagmisc.nanoTime
-
 class Class241_Sub2 internal constructor() : Class241() {
     private var aLong6160 = 0L
     private var aLong6161 = 0L
@@ -9,7 +7,7 @@ class Class241_Sub2 internal constructor() : Class241() {
     private var anInt6165 = 1
 
     private fun method1864(i: Int): Long {
-        val l = nanoTime()
+        val l = clockNanos()
         val l_0_ = l + -aLong6162
         aLong6162 = l
         if (l_0_ > -5000000000L && l_0_ < 5000000000L) {
@@ -43,7 +41,7 @@ class Class241_Sub2 internal constructor() : Class241() {
 
     init {
         aLongArray6164 = LongArray(10)
-        aLong6161 = nanoTime()
+        aLong6161 = clockNanos()
         aLong6160 = aLong6161
         if (aLong6161 == 0L) throw RuntimeException()
     }
