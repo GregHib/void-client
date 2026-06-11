@@ -242,9 +242,13 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         return method2246(8, 0, 2, i_11_, runnable)
     }
 
-    fun method2237(url: URL?, i: Int): Class144? {
+    /**
+     * Enqueues an HTTP-fetch task. Originally took [java.net.URL]; now takes a
+     * plain string so call sites don't need to construct a URL object.
+     */
+    fun method2237(urlString: String?, i: Int): Class144? {
         if (i != 8362) return null
-        return method2246(8, 0, 4, 0, url?.toString())
+        return method2246(8, 0, 4, 0, urlString)
     }
 
     fun method2238(i: Int, `is`: IntArray?, i_12_: Int, point: Point?, component: Component?, i_13_: Int): Class144 {

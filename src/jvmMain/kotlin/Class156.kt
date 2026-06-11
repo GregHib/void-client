@@ -1,6 +1,5 @@
 import Class348_Sub5_Sub1.Companion.method2766
 import Class88.Companion.method847
-import java.net.URL
 
 class Class156 {
     private var aClass348_Sub42_2115: Class348_Sub42? = null
@@ -85,7 +84,7 @@ class Class156 {
                     string_4_ = Class341.method2680("%23", true, "#", string_4_)
                     if (Class348_Sub8.anApplet6662 != null) {
                         if (i != 15004) method1238(-69, 63, 124)
-                        val class144 = (Class231.aClass297_2993!!.method2237(URL(Class348_Sub8.anApplet6662!!.getCodeBase(), ("clienterror.ws?c=" + Class348_Sub1_Sub3.anInt8818 + "&u=" + (if (s_Sub2.aString8265 != null) s_Sub2.aString8265 else Class89.aLong1507.toString()) + "&v1=" + Class297.aString3782 + "&v2=" + Class297.aString3796 + "&e=" + string_4_)), 8362))
+                        val class144 = (Class231.aClass297_2993!!.method2237(Class348_Sub8.anApplet6662!!.getCodeBase().toString() + "clienterror.ws?c=" + Class348_Sub1_Sub3.anInt8818 + "&u=" + (if (s_Sub2.aString8265 != null) s_Sub2.aString8265 else Class89.aLong1507.toString()) + "&v1=" + Class297.aString3782 + "&v2=" + Class297.aString3796 + "&e=" + string_4_, 8362))
                         while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-123).toByte(), 1L)
                         if (class144.anInt1997 != 1) break
                         // response body is a ByteArray; just confirming the fetch completed

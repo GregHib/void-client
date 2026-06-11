@@ -3,8 +3,6 @@ import Class251.Companion.method1916
 import Class43.Companion.method381
 import Class5_Sub2.Companion.method196
 import Class66.method705
-import java.net.MalformedURLException
-import java.net.URL
 import kotlin.concurrent.Volatile
 
 class Class339 : Runnable {
@@ -47,12 +45,8 @@ class Class339 : Runnable {
         anInt4208++
         if (aBoolean4205) return true
         if (aClass144_4201 == null) {
-            try {
-                val i_15_ = (if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) 80 else 7000 - -(Class135_Sub2.aClass161_4839!!.anInt2143))
-                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992!!.method2237(URL("http://" + (Class135_Sub2.aClass161_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987), 8362))
-            } catch (malformedurlexception: MalformedURLException) {
-                return true
-            }
+            val i_15_ = (if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) 80 else 7000 - -(Class135_Sub2.aClass161_4839!!.anInt2143))
+            aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992!!.method2237("http://" + (Class135_Sub2.aClass161_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987, 8362))
         }
         if (aClass144_4201 == null || aClass144_4201!!.anInt1997 == 2) return true
         if (i != -21913) return false

@@ -41,7 +41,7 @@ These are the heavy structural seams from the migration plan. Not leaf swaps; ea
 - **GameSurface** ← `java.awt.Canvas` (27) / `Frame` (9) / `Container` (6) / `Graphics` (4) / `Image` (3) / `image.*` (BufferedImage, PixelGrabber, DirectColorModel…). The largest cluster. Unblocks moving `ha_Sub1` (software renderer) to common.
 - **InputSource** ← `java.awt.event.*` (Key/Mouse/Focus/Window listeners+events) + `Component` (20). The client already queues events — adapt, don't redesign.
 - **GameConnection** ← `java.net.Socket` (9) / `InetAddress` (2). JVM keeps NIO; web needs WebSocket→TCP proxy.
-- **HttpFetch** ← `java.net.URL` (9) / `MalformedURLException`. JS5-over-HTTP, world list.
+- **HttpFetch** ← `java.net.URL` remaining in `GameApplet`/`Applet_Sub1`/`Loader`/`Client`/`Class297`/`Class348_Sub16_Sub3`/`Class88` for `showDocument(URL, target)` calls. These are `SystemServices` territory — deferred to that seam. `Class297.method2237` now takes `String?` (URL object dropped); `Class339`/`Class156` call sites updated.
 - **CacheStorage** ← `java.io.File` (13) / `RandomAccessFile` (2) — Class201/Class234/Class297.
 - **AudioSink** ← `javax.sound.sampled` (1, Class279_Sub1). The synth itself is already portable.
 - **SystemServices** ← `java.awt.datatransfer.*` (clipboard, 5), `Toolkit/Robot/GraphicsEnvironment/DisplayMode` (browser/AWT integration). Mostly stubs off-JVM.
