@@ -330,16 +330,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                 method87((-97).toByte())
                 method92(28740)
                 Class348_Sub8.aClass241_6660 = Class229.method1631(false)
-                while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
-                    Class101_Sub2.anInt5744 = Class348_Sub8.aClass241_6660!!.method1861(0, Class73.aLong4783)
-                    var i = 0
-                    while (Class101_Sub2.anInt5744 > i) {
-                        method84(-1)
-                        i++
-                    }
-                    method88(-119)
-                    Class369_Sub3_Sub1.method3578((-42).toByte(), Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992))
-                }
+                GameLoops.run(::runFrame)
             } catch (throwable: Throwable) {
                 Class156.method1242(method81(109.toByte()), throwable, 15004)
                 method82(123, "crash")
@@ -347,6 +338,24 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                 method90(true, false)
             }
         } while (false)
+    }
+
+    /**
+     * One iteration of the client frame loop, extracted from run() behind the
+     * GameLoop seam. Returns false when the shutdown deadline has passed (the
+     * original `while` guard), true to continue.
+     */
+    private fun runFrame(): Boolean {
+        if (!(Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739))) return false
+        Class101_Sub2.anInt5744 = Class348_Sub8.aClass241_6660!!.method1861(0, Class73.aLong4783)
+        var i = 0
+        while (Class101_Sub2.anInt5744 > i) {
+            method84(-1)
+            i++
+        }
+        method88(-119)
+        Class369_Sub3_Sub1.method3578((-42).toByte(), Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992))
+        return true
     }
 
     abstract fun method92(i: Int)
