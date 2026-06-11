@@ -97,10 +97,16 @@ no pixel-format conversion is needed.
    restoreClip)` mirrors `Class348_Sub31.method3011(i, i_0_, i_1_, graphics, i_2_, i_3_, i_4_, i_5_)`:
    clipX=i_3_, clipY=i, width=i_4_, height=i_1_, srcX=i_0_, srcY=i_5_, restoreClip=(i_2_==-1). The two
    call sites in ha_Sub1 (lines ~2050, ~2347) always pass the restore flag (-1).
-2. **JVM actuals wrapping the existing classes** — `AwtGameSurface`/`Factory`/`DisplayTarget`
-   delegating to the unchanged `Class348_Sub31*` + `Class110.method1035`. Wire them at the few
-   factory call sites behind the existing `Canvas` (adapter: `Canvas` → `DisplayTarget`). JVM still
-   uses the exact same blit code; build stays green.
+2. ✅ **DONE (commit 91a0a4c) — JVM actuals.** Decision: rather than a separate wrapper class,
+   made the existing `Class348_Sub31` *implement* `GameSurface` directly (it already IS the
+   buffer+blit) — least indirection, byte-identical. `width`→anInt6917, `height`→anInt6920,
+   `pixels`→anIntArray6916!!, `dispose()`→method2715(0). `present(...)` sources `Graphics` from a
+   new `displayTarget: AwtDisplayTarget?` field (set in both subclasses' `method3008` from their
+   canvas) and delegates to `method3011`, mapping clipY→i, srcX→i_0_, height→i_1_, restoreClip→
+   (i_2_==-1 ? -1 : 0), clipX→i_3_, width→i_4_, srcY→i_5_. Added `AwtDisplayTarget` (wraps Canvas;
+   width/height via canvas.size; graphics() accessor) and `AwtGameSurfaceFactory` object delegating
+   to `Class110.method1035(9029, height, canvas, width)` (preserves the Sub1/Sub2 try-fallback).
+   Nothing consumes these yet — ha_Sub1 still calls method3011 directly (that's step 3).
 3. **Re-point `ha_Sub1`** from `Canvas`/`Class348_Sub31` to `GameSurface`/`GameSurfaceFactory`
    (replace the 4 Canvas methods + the 2 `getSize`/`hashCode` leaks). Still in jvmMain, still green.
 4. **Move `ha_Sub1` to commonMain.** At this point it should have no `java.awt` import left. The
