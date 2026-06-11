@@ -91,7 +91,12 @@ no pixel-format conversion is needed.
 
 ## Move plan (suggested order, each step keeps JVM green)
 
-1. **Introduce the interfaces in commonMain** (no behaviour change; nothing implements them yet).
+1. ✅ **DONE (commit 8a95962) — interfaces in commonMain.** `GameSurface` (width/height/pixels/
+   present/dispose), `GameSurfaceFactory.create(target,w,h)`, `DisplayTarget` (width/height). Purely
+   additive; nothing implements or consumes them. `present(clipX, clipY, width, height, srcX, srcY,
+   restoreClip)` mirrors `Class348_Sub31.method3011(i, i_0_, i_1_, graphics, i_2_, i_3_, i_4_, i_5_)`:
+   clipX=i_3_, clipY=i, width=i_4_, height=i_1_, srcX=i_0_, srcY=i_5_, restoreClip=(i_2_==-1). The two
+   call sites in ha_Sub1 (lines ~2050, ~2347) always pass the restore flag (-1).
 2. **JVM actuals wrapping the existing classes** — `AwtGameSurface`/`Factory`/`DisplayTarget`
    delegating to the unchanged `Class348_Sub31*` + `Class110.method1035`. Wire them at the few
    factory call sites behind the existing `Canvas` (adapter: `Canvas` → `DisplayTarget`). JVM still
