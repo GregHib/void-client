@@ -99,9 +99,9 @@ class Class348_Sub4 : Class348 {
                     } else anInt6595 = 5
                 } else anInt6595 = 3
             } else anInt6595 = 2
-            if (Class297.aString3782!!.lowercase(Locale.getDefault()).indexOf("sun") != -1) anInt6594 = 1
-            else if (Class297.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
-                if (Class297.aString3782!!.lowercase(Locale.getDefault()).indexOf("apple") != -1) anInt6594 = 3
+            if (Class297.aString3782!!.lowercase().indexOf("sun") != -1) anInt6594 = 1
+            else if (Class297.aString3782!!.lowercase().indexOf("microsoft") == -1) {
+                if (Class297.aString3782!!.lowercase().indexOf("apple") != -1) anInt6594 = 3
                 else anInt6594 = 4
             } else anInt6594 = 2
             val oldJava = Class297.aString3796!!.startsWith("1.")

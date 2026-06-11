@@ -2550,7 +2550,7 @@ object Class66 {
     private fun method707(string: String, i: Int) {
         var string = string
         if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
-            var string_240_ = string.lowercase(Locale.getDefault())
+            var string_240_ = string.lowercase()
             var i_241_ = 0
             if (string_240_.startsWith(Class274.aClass274_3530!!.method2063(0, 544)!!)) {
                 i_241_ = 0
@@ -2627,7 +2627,7 @@ object Class66 {
                     string = string.substring(Class274.aClass274_3541!!.method2063(Class348_Sub33.anInt6967, 544)!!.length)
                 }
             }
-            string_240_ = string.lowercase(Locale.getDefault())
+            string_240_ = string.lowercase()
             var i_242_ = 0
             if (string_240_.startsWith(Class274.aClass274_3542!!.method2063(0, 544)!!)) {
                 i_242_ = 1
@@ -4648,7 +4648,7 @@ object Class66 {
                 }
                 if (i == 4103) {
                     val string = aStringArray1152!![--anInt1170]!!
-                    aStringArray1152!![anInt1170++] = string.lowercase(Locale.getDefault())
+                    aStringArray1152!![anInt1170++] = string.lowercase()
                     return
                 }
                 if (i == 4104) {

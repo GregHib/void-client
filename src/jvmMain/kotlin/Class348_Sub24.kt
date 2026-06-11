@@ -547,42 +547,42 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
         init {
             var string = "Unknown"
             try {
-                string = System.getProperty("java.vendor").lowercase(Locale.getDefault())
+                string = System.getProperty("java.vendor").lowercase()
             } catch (exception: Exception) {
                 /* empty */
             }
-            string.lowercase(Locale.getDefault())
+            string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("java.version").lowercase(Locale.getDefault())
+                string = System.getProperty("java.version").lowercase()
             } catch (exception: Exception) {
                 /* empty */
             }
-            string.lowercase(Locale.getDefault())
+            string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("os.name").lowercase(Locale.getDefault())
+                string = System.getProperty("os.name").lowercase()
             } catch (exception: Exception) {
                 /* empty */
             }
-            aString6877 = string.lowercase(Locale.getDefault())
+            aString6877 = string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("os.arch").lowercase(Locale.getDefault())
+                string = System.getProperty("os.arch").lowercase()
             } catch (exception: Exception) {
                 /* empty */
             }
-            aString6876 = string.lowercase(Locale.getDefault())
+            aString6876 = string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("os.version").lowercase(Locale.getDefault())
+                string = System.getProperty("os.version").lowercase()
             } catch (exception: Exception) {
                 /* empty */
             }
-            string.lowercase(Locale.getDefault())
+            string.lowercase()
             string = "~/"
             try {
-                string = System.getProperty("user.home").lowercase(Locale.getDefault())
+                string = System.getProperty("user.home").lowercase()
             } catch (exception: Exception) {
                 /* empty */
             }

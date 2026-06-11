@@ -169,7 +169,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
         }
 
         fun method3402(i: Byte) {
-            if (Class297.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
+            if (Class297.aString3782!!.lowercase().indexOf("microsoft") == -1) {
                 Class285_Sub2.anIntArray8507!![46] = 72
                 Class285_Sub2.anIntArray8507!![92] = 74
                 Class285_Sub2.anIntArray8507!![44] = 71

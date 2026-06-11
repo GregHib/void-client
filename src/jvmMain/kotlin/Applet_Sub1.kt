@@ -287,7 +287,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         do {
             try {
                 if (Class297.aString3782 != null) {
-                    val string = Class297.aString3782!!.lowercase(Locale.getDefault())
+                    val string = Class297.aString3782!!.lowercase()
                     if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
                         val string_5_ = Class297.aString3796!!
                         if (string_5_ == "1.1" || string_5_.startsWith("1.1.") || string_5_ == "1.2" || string_5_.startsWith("1.2.")) {

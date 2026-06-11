@@ -338,20 +338,20 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         } catch (exception: Exception) {
             /* empty */
         }
-        if (aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") != -1) this.aBoolean3794 = true
+        if (aString3782!!.lowercase().indexOf("microsoft") != -1) this.aBoolean3794 = true
         try {
             aString3784 = System.getProperty("os.name")
         } catch (exception: Exception) {
             aString3784 = "Unknown"
         }
-        aString3803 = aString3784!!.lowercase(Locale.getDefault())
+        aString3803 = aString3784!!.lowercase()
         try {
-            aString3780 = System.getProperty("os.arch").lowercase(Locale.getDefault())
+            aString3780 = System.getProperty("os.arch").lowercase()
         } catch (exception: Exception) {
             aString3780 = ""
         }
         try {
-            aString3778 = System.getProperty("os.version").lowercase(Locale.getDefault())
+            aString3778 = System.getProperty("os.version").lowercase()
         } catch (exception: Exception) {
             aString3778 = ""
         }

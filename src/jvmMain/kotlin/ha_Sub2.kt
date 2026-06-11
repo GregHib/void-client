@@ -1644,8 +1644,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
     private fun method3774(i: Byte): Int {
         anInt7518++
         var i_183_ = 0
-        aString7845 = glGetString(7936).lowercase(Locale.getDefault())
-        aString7790 = glGetString(7937).lowercase(Locale.getDefault())
+        aString7845 = glGetString(7936).lowercase()
+        aString7790 = glGetString(7937).lowercase()
         if (aString7845!!.indexOf("microsoft") != -1) i_183_ = i_183_ or 0x1
         if (aString7845!!.indexOf("brian paul") != -1 || aString7845!!.indexOf("mesa") != -1) i_183_ = i_183_ or 0x1
         val string = glGetString(7938)
