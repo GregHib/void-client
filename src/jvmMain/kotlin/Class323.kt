@@ -1,10 +1,4 @@
-import java.awt.Color
-import java.awt.Component
-import java.awt.Font
-import java.awt.FontMetrics
-import java.awt.image.PixelGrabber
-
-class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component: Component) {
+class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, rasterizer: GlyphRasterizer) {
     private var aBoolean4037 = false
     private val anIntArray4039: IntArray
     private var anInt4040 = 0
@@ -12,9 +6,9 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
     private val aClass105Array4042: Array<Class105?>
     private val anIntArray4044 = IntArray(4)
 
-    private fun method2559(var_ha: ha, font: Font?, fontmetrics: FontMetrics, c: Char, i: Int, bool: Boolean) {
+    private fun method2559(var_ha: ha, font: RasterFont, c: Char, i: Int, bool: Boolean) {
         var bool = bool
-        var i_0_ = fontmetrics.charWidth(c)
+        var i_0_ = font.charWidth(c)
         val i_1_ = i_0_
         if (bool) {
             try {
@@ -24,25 +18,10 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
                 /* empty */
             }
         }
-        val i_2_ = fontmetrics.getMaxAscent()
-        val i_3_ = fontmetrics.getMaxAscent() + fontmetrics.getMaxDescent()
-        val i_4_ = fontmetrics.getHeight()
-        val image = Class305.aCanvas3869!!.createImage(i_0_, i_3_)
-        val graphics = image.getGraphics()
-        graphics.setColor(Color.black)
-        graphics.fillRect(0, 0, i_0_, i_3_)
-        graphics.setColor(Color.white)
-        graphics.setFont(font)
-        graphics.drawString(c.toString(), 0, i_2_)
-        if (bool) graphics.drawString(c.toString(), 1, i_2_)
-        val `is` = IntArray(i_0_ * i_3_)
-        val pixelgrabber = PixelGrabber(image, 0, 0, i_0_, i_3_, `is`, 0, i_0_)
-        try {
-            pixelgrabber.grabPixels()
-        } catch (exception: Exception) {
-            /* empty */
-        }
-        image.flush()
+        val i_2_ = font.maxAscent
+        val i_3_ = font.maxAscent + font.maxDescent
+        val i_4_ = font.height
+        val `is` = font.rasterize(c, i_0_, i_3_, i_2_, bool)
         val `object`: Any? = null
         var i_5_ = 0
         while_113_@ for (i_6_ in 0..<i_3_) {
@@ -104,24 +83,20 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
         aBoolean4037 = false
         aClass105Array4042 = arrayOfNulls<Class105>(256)
         anIntArray4039 = IntArray(256)
-        var font = Font("Helvetica", if (bool) 1 else 0, i)
-        var fontmetrics = component.getFontMetrics(font)
+        var font = rasterizer.open(i, bool)
         for (i_19_ in 0..<anInt4038) method2559(
             var_ha,
             font,
-            fontmetrics,
             "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".get(i_19_),
             i_19_,
             false
         )
         if (bool && aBoolean4037) {
             aBoolean4037 = false
-            font = Font("Helvetica", 0, i)
-            fontmetrics = component.getFontMetrics(font)
+            font = rasterizer.open(i, false)
             for (i_20_ in 0..<anInt4038) method2559(
                 var_ha,
                 font,
-                fontmetrics,
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".get(i_20_),
                 i_20_,
                 false
@@ -131,7 +106,6 @@ class Class323 internal constructor(var_ha: ha, i: Int, bool: Boolean, component
                 for (i_21_ in 0..<anInt4038) method2559(
                     var_ha,
                     font,
-                    fontmetrics,
                     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".get(i_21_),
                     i_21_,
                     true
