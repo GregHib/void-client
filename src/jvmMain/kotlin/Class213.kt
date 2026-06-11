@@ -245,7 +245,7 @@ class Class213 {
             var i_27_ = i
             if (class17 != null) i_27_ = i_27_ or class17.method263(i_24_, 105, i_22_, true)
             var class64: Class64?
-            synchronized(this.aClass255_2761!!.aClass60_3287) {
+            withLock(this.aClass255_2761!!.aClass60_3287) {
                 class64 = (this.aClass255_2761!!.aClass60_3287.method583((var_ha!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as Class64?
             }
             if (class64 == null || var_ha!!.method3667(class64.ua(), i_27_) != 0) {
@@ -286,7 +286,7 @@ class Class213 {
                     }
                 }
                 class64.s(i_27_)
-                synchronized(this.aClass255_2761!!.aClass60_3287) {
+                withLock(this.aClass255_2761!!.aClass60_3287) {
                     this.aClass255_2761!!.aClass60_3287.method582(class64, (var_ha.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
@@ -749,17 +749,4 @@ class Class213 {
                     while (i_78_ > i_89_) {
                         val i_90_ = i_83_ - -i_76_
                         while (i_83_ < i_90_) {
-                            `is`!![i_84_] = is_75_[i_83_]
-                            fs!![i_84_++] = fs_82_[i_83_++]
-                        }
-                        i_83_ += i_85_
-                        i_84_ += i_86_
-                        i_89_++
-                    }
-                }
-            } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rq.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_73_ + ',' + i_74_ + ',' + (if (fs != null) "{...}" else "null") + ',' + (if (is_75_ != null) "{...}" else "null") + ',' + i_76_ + ',' + i_77_ + ',' + i_78_ + ',' + i_79_ + ',' + i_80_ + ',' + i_81_ + ',' + (if (fs_82_ != null) "{...}" else "null") + ')'))
-            }
-        }
-    }
-}
+                

@@ -76,7 +76,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         if (l_1_ != 0L && l > l_1_) {
             /* empty */
         }
-        synchronized(this) {
+        withLock(this) {
             Class175.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229
         }
         method99(93.toByte())
@@ -215,7 +215,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
 
     private fun method90(bool: Boolean, bool_4_: Boolean) {
         anInt26++
-        synchronized(this) {
+        withLock(this) {
             if (Class26.aBoolean384) return
             Class26.aBoolean384 = true
         }
@@ -571,17 +571,4 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                     }
                 }
                 if (-1 + Class286_Sub1.aStringArray6200!!.size > Class369_Sub2.anInt8587) {
-                    Class369_Sub2.anInt8587++
-                    if (Class284.anInt3676 > 0) Class284.anInt3676++
-                }
-            }
-        }
-
-        @JvmStatic
-        fun method98(i: Int) {
-            anIntArray38 = null
-            aClass324_20 = null
-            if (i != 32717) method86(null, 65)
-        }
-    }
-}
+                    Class369_Sub2.anInt

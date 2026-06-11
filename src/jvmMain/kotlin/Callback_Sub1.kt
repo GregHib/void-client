@@ -52,11 +52,11 @@ class Callback_Sub1 : Callback() {
                 if (anInt7461 != 0) {
                     aBoolean7460 = true
                     SendMessage(i_2_, 101024, 0, 0)
-                    synchronized(this) {
+                    withLock(this) {
                         User32.SetWindowLong(anInt7461, -4, anInt7463)
                     }
                 }
-                synchronized(this) {
+                withLock(this) {
                     anInt7461 = i_2_
                     anInt7463 = SetWindowLong(anInt7461, -4, this as Any)
                 }

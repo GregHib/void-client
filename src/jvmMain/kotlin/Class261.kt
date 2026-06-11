@@ -14,24 +14,24 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method1983(i: Int, i_9_: Int): Class225 {
         anInt3320++
         var class225: Class225?
-        synchronized(aClass60_3321) {
+        withLock(aClass60_3321) {
             class225 = aClass60_3321.method583(i.toLong(), 69) as Class225?
         }
         if (class225 != null) return class225
         val `is`: ByteArray?
-        synchronized(aClass45_3319!!) {
+        withLock(aClass45_3319!!) {
             `is` = aClass45_3319.method410(-1860, i_9_, i)
         }
         class225 = Class225()
         if (`is` != null) class225.method1620(Class348_Sub49(`is`), -108)
-        synchronized(aClass60_3321) {
+        withLock(aClass60_3321) {
             aClass60_3321.method582(class225, i.toLong(), (-109).toByte())
         }
         return class225
     }
 
     fun method1984(i: Byte, i_10_: Int) {
-        synchronized(aClass60_3321) {
+        withLock(aClass60_3321) {
             aClass60_3321.method578(2, i_10_)
         }
         anInt3315++
@@ -40,13 +40,13 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     fun method1985(i: Int) {
         anInt3317++
-        synchronized(aClass60_3321) {
+        withLock(aClass60_3321) {
             aClass60_3321.method590(i)
         }
     }
 
     fun method1986(i: Byte) {
-        synchronized(aClass60_3321) {
+        withLock(aClass60_3321) {
             aClass60_3321.method587(-112)
         }
         val i_11_ = 119 / ((i - 47) / 55)

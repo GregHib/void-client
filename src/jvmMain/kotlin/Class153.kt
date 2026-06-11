@@ -11,10 +11,10 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     fun method1219(i: Int) {
         anInt2080++
-        synchronized(aClass60_2083) {
+        withLock(aClass60_2083) {
             aClass60_2083.method590(0)
         }
-        synchronized(this.aClass60_2089) {
+        withLock(this.aClass60_2089) {
             if (i != 7851) {
                 /* empty */
             } else this.aClass60_2089.method590(i + -7851)
@@ -30,22 +30,22 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     fun method1222(bool: Boolean) {
         if (bool != true) method1222(false)
-        synchronized(aClass60_2083) {
+        withLock(aClass60_2083) {
             aClass60_2083.method587(-99)
         }
         anInt2082++
-        synchronized(this.aClass60_2089) {
+        withLock(this.aClass60_2089) {
             this.aClass60_2089.method587(-78)
         }
     }
 
     fun method1224(i: Int, i_8_: Byte) {
-        synchronized(aClass60_2083) {
+        withLock(aClass60_2083) {
             if (i_8_ > -95) method1225(-75, (-61).toByte())
             aClass60_2083.method578(2, i)
         }
         anInt2079++
-        synchronized(this.aClass60_2089) {
+        withLock(this.aClass60_2089) {
             this.aClass60_2089.method578(2, i)
         }
     }
@@ -53,13 +53,13 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method1225(i: Int, i_9_: Byte): Class42? {
         anInt2085++
         var class42: Class42?
-        synchronized(aClass60_2083) {
+        withLock(aClass60_2083) {
             class42 = aClass60_2083.method583(i.toLong(), 91) as Class42?
         }
         if (class42 != null) return class42
         if (i_9_ < 36) return null
         val `is`: ByteArray?
-        synchronized(aClass45_2084!!) {
+        withLock(aClass45_2084!!) {
             `is` = aClass45_2084.method410(-1860, 36, i)
         }
         class42 = Class42()
@@ -67,7 +67,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
         class42.anInt581 = i
         if (`is` != null) class42.method379(Class348_Sub49(`is`), 109)
         class42.method372(-25359)
-        synchronized(aClass60_2083) {
+        withLock(aClass60_2083) {
             aClass60_2083.method582(class42, i.toLong(), (-106).toByte())
         }
         return class42

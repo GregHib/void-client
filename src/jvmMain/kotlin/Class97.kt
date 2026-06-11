@@ -228,10 +228,10 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
         @JvmStatic
         fun method876(i: Int, i_23_: Int) {
             anInt1557++
-            synchronized(Class24.aClass60_355!!) {
+            withLock(Class24.aClass60_355!!) {
                 Class24.aClass60_355!!.method578(2, i)
             }
-            synchronized(Class130.aClass60_1894!!) {
+            withLock(Class130.aClass60_1894!!) {
                 Class130.aClass60_1894!!.method578(2, i)
                 if (i_23_ != 0) method876(51, 108)
             }

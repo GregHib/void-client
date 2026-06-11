@@ -294,7 +294,7 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
                 val i_11_ = (class318_sub4.aClass318_Sub3Array6414)!!.size
                 val i_12_ = 127 / ((i - 82) / 32)
                 for (i_13_ in 0..<i_11_) class318_sub4.aClass318_Sub3Array6414!![i_13_]!!.aBoolean6401 = false
-                synchronized(Class318.aClass243Array3974!!) {
+                withLock(Class318.aClass243Array3974!!) {
                     if (Class318.aClass243Array3974!!.size > i_11_ && Class331.anIntArray4128!![i_11_] < 200) {
                         Class318.aClass243Array3974!![i_11_]!!.method1869(-126, class318_sub4)
                         Class331.anIntArray4128!![i_11_]++

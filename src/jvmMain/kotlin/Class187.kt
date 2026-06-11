@@ -7,7 +7,7 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
     private var aClass45_2498: Class45? = null
     private var aClass60_2501: Class60? = Class60(64)
     fun method1404(i: Byte) {
-        synchronized(aClass60_2501!!) {
+        withLock(aClass60_2501!!) {
             aClass60_2501!!.method590(0)
             if (i >= -20) Companion.method1407((-33).toByte())
         }
@@ -17,26 +17,26 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method1408(i: Int, i_3_: Int): Class321 {
         anInt2504++
         var class321: Class321?
-        synchronized(aClass60_2501!!) {
+        withLock(aClass60_2501!!) {
             class321 = aClass60_2501!!.method583(i_3_.toLong(), 76) as Class321?
         }
         if (class321 != null) return class321
         val `is`: ByteArray?
-        synchronized(aClass45_2498!!) {
+        withLock(aClass45_2498!!) {
             `is` = aClass45_2498!!.method410(-1860, 35, i_3_)
         }
         class321 = Class321()
         if (`is` != null) class321.method2551(-125, Class348_Sub49(`is`))
         if (i != -12637) aClass60_2501 = null
         class321.method2548(127.toByte())
-        synchronized(aClass60_2501!!) {
+        withLock(aClass60_2501!!) {
             aClass60_2501!!.method582(class321, i_3_.toLong(), (-99).toByte())
         }
         return class321
     }
 
     fun method1409(i: Int, i_4_: Int) {
-        synchronized(aClass60_2501!!) {
+        withLock(aClass60_2501!!) {
             if (i_4_ != -20721) aClass45_2498 = null
             aClass60_2501!!.method578(i_4_ + 20723, i)
         }
@@ -44,7 +44,7 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
     }
 
     fun method1410(i: Int) {
-        synchronized(aClass60_2501!!) {
+        withLock(aClass60_2501!!) {
             if (i != -27995) method1409(-42, 23)
             aClass60_2501!!.method587(-85)
         }

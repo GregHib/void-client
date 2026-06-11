@@ -189,7 +189,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         fun method3556(bool: Boolean) {
             anInt7405++
             if (bool == false) {
-                synchronized(Class79.aClient1367!!) {
+                withLock(Class79.aClient1367!!) {
                     if (Class34.aFrame476 == null) {
                         val container: Container
                         if (Class52.aFrame4904 != null) container = Class52.aFrame4904!!
@@ -240,5 +240,4 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                 aByteArray7394 = null
             }
         }
-    }
-}
+   

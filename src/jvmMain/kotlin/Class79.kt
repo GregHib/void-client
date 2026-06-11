@@ -466,7 +466,7 @@ class Class79 {
             }
             val l = (var_ha!!.anInt4567 shl 16 or this.anInt1344).toLong()
             var class64: Class64?
-            synchronized(this.aClass278_1348!!.aClass60_3590!!) {
+            withLock(this.aClass278_1348!!.aClass60_3590!!) {
                 class64 = this.aClass278_1348!!.aClass60_3590!!.method583(l, 80) as Class64?
             }
             var class225: Class225? = null
@@ -475,7 +475,7 @@ class Class79 {
                 if (class64 != null) i_43_ = i_43_ or class64.ua()
                 var i_69_ = i_43_
                 var bool_70_ = false
-                synchronized(this.aClass278_1348!!.aClass45_3576!!) {
+                withLock(this.aClass278_1348!!.aClass45_3576!!) {
                     var i_71_ = 0
                     while ((anIntArray1402!!.size > i_71_)) {
                         if (anIntArray1402!![i_71_] != -1 && !(this.aClass278_1348!!.aClass45_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
@@ -486,7 +486,7 @@ class Class79 {
                 val class124s = arrayOfNulls<Class124>(anIntArray1402!!.size)
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
-                        synchronized(this.aClass278_1348!!.aClass45_3576!!) {
+                        withLock(this.aClass278_1348!!.aClass45_3576!!) {
                             class124s[i_72_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (class124s[i_72_] != null) {
@@ -543,7 +543,7 @@ class Class79 {
                 }
                 if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 class64.s(i_43_)
-                synchronized(this.aClass278_1348!!.aClass60_3590!!) {
+                withLock(this.aClass278_1348!!.aClass60_3590!!) {
                     this.aClass278_1348!!.aClass60_3590!!.method582(class64, (this.anInt1344 or (var_ha.anInt4567 shl 16)).toLong(), (-125).toByte())
                 }
             }
@@ -639,14 +639,14 @@ class Class79 {
             var i_99_ = i_97_
             if (class17 != null && i_95_ != -1) i_99_ = i_99_ or class17.method263(i_94_, 97, i_95_, true)
             var class64: Class64?
-            synchronized(this.aClass278_1348!!.aClass60_3592) {
+            withLock(this.aClass278_1348!!.aClass60_3592) {
                 class64 = ((this.aClass278_1348!!.aClass60_3592.method583((var_ha!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as Class64?)
             }
             if (class64 == null || i_99_ != (class64.ua() and i_99_)) {
                 if (class64 != null) i_99_ = i_99_ or class64.ua()
                 var i_100_ = i_99_
                 var bool = false
-                synchronized(this.aClass278_1348!!.aClass45_3576!!) {
+                withLock(this.aClass278_1348!!.aClass45_3576!!) {
                     var i_101_ = 0
                     while ((anIntArray1380!!.size > i_101_)) {
                         if (!this.aClass278_1348!!.aClass45_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
@@ -655,7 +655,7 @@ class Class79 {
                 }
                 if (bool) return null
                 val class124s = arrayOfNulls<Class124>(anIntArray1380!!.size)
-                synchronized(this.aClass278_1348!!.aClass45_3576!!) {
+                withLock(this.aClass278_1348!!.aClass45_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
                         class124s[i_102_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
@@ -691,7 +691,7 @@ class Class79 {
                 }
                 if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 class64.s(i_99_)
-                synchronized(this.aClass278_1348!!.aClass60_3592) {
+                withLock(this.aClass278_1348!!.aClass60_3592) {
                     this.aClass278_1348!!.aClass60_3592.method582(class64, (var_ha.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }
@@ -790,25 +790,4 @@ class Class79 {
                 if (Class348_Sub40_Sub6.anInt9139 != i) {
                     Class239_Sub18.anIntArray6035 = IntArray(i)
                     for (i_32_ in 0..<i) Class239_Sub18.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
-                } else Class239_Sub18.anIntArray6035 = Class318_Sub6.anIntArray6432
-                Class286_Sub2.anInt6212 = i
-                Class299_Sub2.anInt6325 = -1 + i
-            }
-        }
-
-        @JvmStatic
-        fun method802(i: Int, i_93_: Int, bool: Boolean): Boolean {
-            if (bool != true) return false
-            anInt1332++
-            if (i_93_ < 0 || i < 0 || i_93_ >= Class348_Sub33.aByteArrayArrayArray6962!![1]!!.size || i >= Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
-            return (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
-        }
-
-        @JvmStatic
-        fun method804(i: Int) {
-            aClass105_1365 = null
-            aClient1367 = null
-            if (i != -3752) anInt1387 = 14
-        }
-    }
-}
+             

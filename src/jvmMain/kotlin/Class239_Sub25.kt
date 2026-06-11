@@ -169,7 +169,7 @@ class Class239_Sub25 : Class239 {
         fun method1828(i: Int) {
             if (i < 20) method1832(47)
             anInt6104++
-            synchronized(Class342.aClass60_4254!!) {
+            withLock(Class342.aClass60_4254!!) {
                 Class342.aClass60_4254!!.method590(0)
             }
         }

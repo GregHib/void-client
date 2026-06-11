@@ -7,14 +7,14 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
     fun method694(i: Int) {
         anInt1140++
         if (i != -1007) method700(14, 98)
-        synchronized(aClass60_1145) {
+        withLock(aClass60_1145) {
             aClass60_1145.method587(i + 883)
         }
     }
 
     fun method695(bool: Boolean) {
         if (bool != true) aClass351_1144 = null
-        synchronized(aClass60_1145) {
+        withLock(aClass60_1145) {
             aClass60_1145.method590(0)
         }
         anInt1139++
@@ -23,7 +23,7 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
     fun method697(i: Int, i_3_: Int) {
         if (i_3_ == 26) {
             anInt1142++
-            synchronized(aClass60_1145) {
+            withLock(aClass60_1145) {
                 aClass60_1145.method578(i_3_ xor 0x18, i)
             }
         }
@@ -33,17 +33,17 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
         anInt1143++
         val i_9_ = -128 / ((-3 - i_8_) / 49)
         var class348_sub42_sub1: Class348_Sub42_Sub1?
-        synchronized(aClass60_1145) {
+        withLock(aClass60_1145) {
             class348_sub42_sub1 = aClass60_1145.method583(i.toLong(), -101) as Class348_Sub42_Sub1?
         }
         if (class348_sub42_sub1 != null) return class348_sub42_sub1
         val `is`: ByteArray?
-        synchronized(aClass45_1141!!) {
+        withLock(aClass45_1141!!) {
             `is` = aClass45_1141.method410(-1860, 26, i)
         }
         class348_sub42_sub1 = Class348_Sub42_Sub1()
         if (`is` != null) class348_sub42_sub1.method3168(Class348_Sub49(`is`), (-101).toByte())
-        synchronized(aClass60_1145) {
+        withLock(aClass60_1145) {
             aClass60_1145.method582(class348_sub42_sub1, i.toLong(), (-114).toByte())
         }
         return class348_sub42_sub1

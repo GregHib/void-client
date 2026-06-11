@@ -138,7 +138,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     }
 
     private fun WA(i: Short): Boolean { //
-        synchronized(this.aD4579!!) {
+        withLock(this.aD4579!!) {
             if (!this.aD4579!!.method4(-7953, i.toInt())) return false
             val class12 = this.aD4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
@@ -276,7 +276,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     }
 
     private fun c(i: Short): Boolean { //
-        synchronized(this) {
+        withLock(this) {
             val class12 = this.aD4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
             AA(i, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203)
@@ -603,12 +603,4 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         private val aFloatArray5129 = FloatArray(20)
         private val anIntArray5130: IntArray = anIntArray5122
         var anIntArray5132: IntArray = IntArray(6)
-        private val aShortArray5133: ShortArray = ShortArray(8191)
-        private val aByteArray5134: ByteArray = ByteArray(8191)
-        private val anIntArray5135: IntArray = IntArray(8191)
-        private val anIntArray5136: IntArray = anIntArray5122
-        private val aFloatArray5138: FloatArray = aFloatArray5129
-        private val anIntArray5139: IntArray = IntArray(8191)
-        var anIntArray5140: IntArray = anIntArray5122
-    }
-}
+        private val aShortArray5133: ShortArray =

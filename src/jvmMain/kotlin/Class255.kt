@@ -19,7 +19,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     private val aStringArray3293: Array<String?>
 
     fun method1930(i: Int) {
-        synchronized(this.aClass60_3287) {
+        withLock(this.aClass60_3287) {
             this.aClass60_3287.method590(0)
             if (i != -21804) method1930(-35)
         }
@@ -73,7 +73,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
 
     fun method1936(i: Int) {
         anInt3281++
-        synchronized(this.aClass175_3288) {
+        withLock(this.aClass175_3288) {
             this.aClass175_3288.method1345((-126).toByte())
             val i_12_ = -63 / ((21 - i) / 50)
         }
@@ -81,42 +81,42 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
 
     fun method1937(i: Int, bool: Boolean) {
         anInt3274++
-        synchronized(aClass60_3278) {
+        withLock(aClass60_3278) {
             aClass60_3278.method578(2, i)
         }
-        synchronized(this.aClass60_3287) {
+        withLock(this.aClass60_3287) {
             if (bool != false) method1939(-11)
             this.aClass60_3287.method578(2, i)
         }
-        synchronized(this.aClass175_3288) {
+        withLock(this.aClass175_3288) {
             this.aClass175_3288.method1346(-1491, i)
         }
     }
 
     fun method1938(i: Int) {
         anInt3272++
-        synchronized(aClass60_3278) {
+        withLock(aClass60_3278) {
             aClass60_3278.method587(-88)
         }
-        synchronized(this.aClass60_3287) {
+        withLock(this.aClass60_3287) {
             this.aClass60_3287.method587(-85)
         }
-        synchronized(this.aClass175_3288) {
+        withLock(this.aClass175_3288) {
             this.aClass175_3288.method1344((-124).toByte())
         }
         if (i < 105) this.aClass45_3268 = null
     }
 
     fun method1939(i: Int) {
-        synchronized(aClass60_3278) {
+        withLock(aClass60_3278) {
             if (i > -28) aClass326_3292 = null
             aClass60_3278.method590(0)
         }
         anInt3277++
-        synchronized(this.aClass60_3287) {
+        withLock(this.aClass60_3287) {
             this.aClass60_3287.method590(0)
         }
-        synchronized(this.aClass175_3288) {
+        withLock(this.aClass175_3288) {
             this.aClass175_3288.method1345(47.toByte())
         }
     }
@@ -124,12 +124,12 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     fun method1940(i: Int, i_13_: Int): Class213 {
         anInt3283++
         var class213: Class213?
-        synchronized(aClass60_3278) {
+        withLock(aClass60_3278) {
             class213 = aClass60_3278.method583(i_13_.toLong(), 90) as Class213?
         }
         if (class213 != null) return class213
         val `is`: ByteArray?
-        synchronized(aClass45_3267!!) {
+        withLock(aClass45_3267!!) {
             `is` = aClass45_3267.method410(-1860, method500(7, i_13_), Class251.Companion.method1914(-23590, i_13_))
         }
         class213 = Class213()
@@ -161,7 +161,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 if (!bool) class213.aClass356_2757 = null
             }
         }
-        synchronized(aClass60_3278) {
+        withLock(aClass60_3278) {
             aClass60_3278.method582(class213, i_13_.toLong(), (-118).toByte())
         }
         return class213
@@ -187,7 +187,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     fun method1942(i: Int, i_20_: Byte) {
         this.anInt3291 = i
         anInt3284++
-        synchronized(this.aClass60_3287) {
+        withLock(this.aClass60_3287) {
             this.aClass60_3287.method590(0)
             val i_21_ = 89 % ((-65 - i_20_) / 60)
         }
@@ -362,6 +362,4 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
 
         init {
             aClass114_3265 = Class114(48, -2)
-        }
-    }
-}
+       

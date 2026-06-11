@@ -58,7 +58,7 @@ object Class348Statics {
             }
             val l = ((i_10_.toLong() shl 48) + (i_7_ + ((i_9_ shl 16) + (i_11_ shl 24))).toLong() - -(i_6_.toLong() shl 32))
             var class64_13_: Class64?
-            synchronized(Class342.aClass60_4254!!) {
+            withLock(Class342.aClass60_4254!!) {
                 class64_13_ = Class342.aClass60_4254!!.method583(l, -64) as Class64?
             }
             if (class64_13_ == null || (var_ha!!.method3667(class64_13_.ua(), i_12_) != 0)) {
@@ -104,7 +104,7 @@ object Class348Statics {
                     i_25_++
                 }
                 class64_13_ = var_ha!!.method3625(class124, i_12_, Class185.anInt2482, 64, 768)
-                synchronized(Class342.aClass60_4254!!) {
+                withLock(Class342.aClass60_4254!!) {
                     Class342.aClass60_4254!!.method582(class64_13_, l, (-103).toByte())
                 }
             }
@@ -141,18 +141,4 @@ object Class348Statics {
     fun method2713(i: Int) {
         aClass45_4286 = null
         aClass318_Sub1Array4293 = null
-        if (i != 0) method2711(-47, 87, null, 85, false, -126, -116, -51, -44, null, 75, -69, 87, null)
-        anIntArray4288 = null
-    }
-
-    fun method2714(i: Int, i_35_: Int): Boolean {
-        if (i != 7351) method2709(-15, 59, 58)
-        anInt4296++
-        return i_35_ == 1 || i_35_ == 3 || i_35_ == 5
-    }
-
-    init {
-        anIntArray4288 = IntArray(6)
-        anInt4290 = 0
-    }
-}
+        if (i != 0) method2711(-47, 87, null, 85, false, -126, -116, -51, -44, null, 75, -69, 

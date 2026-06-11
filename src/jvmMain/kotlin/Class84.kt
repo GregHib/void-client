@@ -7,14 +7,14 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
 
     fun method816(bool: Boolean) {
         anInt1455++
-        synchronized(aClass60_1449) {
+        withLock(aClass60_1449) {
             if (bool != false) method819(107.toByte(), 46)
             aClass60_1449.method587(-119)
         }
     }
 
     fun method819(i: Byte, i_14_: Int) {
-        synchronized(aClass60_1449) {
+        withLock(aClass60_1449) {
             aClass60_1449.method578(2, i_14_)
         }
         anInt1457++
@@ -23,24 +23,24 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
     private fun method820(i: Int, i_15_: Int): Class300 {
         anInt1458++
         var class300: Class300?
-        synchronized(aClass60_1449) {
+        withLock(aClass60_1449) {
             class300 = aClass60_1449.method583(i.toLong(), 116) as Class300?
         }
         if (class300 != null) return class300!!
         val `is`: ByteArray?
-        synchronized(aClass45_1460!!) {
+        withLock(aClass45_1460!!) {
             `is` = aClass45_1460.method410(-1860, i_15_, i)
         }
         class300 = Class300()
         if (`is` != null) class300!!.method2275(Class348_Sub49(`is`), (-123).toByte())
-        synchronized(aClass60_1449) {
+        withLock(aClass60_1449) {
             aClass60_1449.method582(class300, i.toLong(), (-106).toByte())
         }
         return class300!!
     }
 
     fun method822(i: Byte) {
-        synchronized(aClass60_1449) {
+        withLock(aClass60_1449) {
             aClass60_1449.method590(0)
         }
         if (i >= -13) method825(14)

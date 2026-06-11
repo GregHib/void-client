@@ -44,7 +44,7 @@ object Class212 {
     @JvmStatic
     fun method1547(`is`: ByteArray?, i: Int, is_16_: ByteArray?, i_17_: Int, i_18_: Int): Int {
         var i = i
-        synchronized(aClass40_2750!!) {
+        withLock(aClass40_2750!!) {
             aClass40_2750!!.aByteArray534 = is_16_
             aClass40_2750!!.anInt522 = i_18_
             aClass40_2750!!.aByteArray527 = `is`

@@ -8,18 +8,18 @@ class Class259 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method1976(i: Int, i_1_: Int): Class160 {
         anInt3302++
         var class160: Class160?
-        synchronized(aClass60_3303) {
+        withLock(aClass60_3303) {
             class160 = aClass60_3303.method583(i.toLong(), -51) as Class160?
         }
         if (class160 != null) return class160
         val i_2_ = 44 % ((-41 - i_1_) / 33)
         val `is`: ByteArray?
-        synchronized(aClass45_3299!!) {
+        withLock(aClass45_3299!!) {
             `is` = aClass45_3299.method410(-1860, 19, i)
         }
         class160 = Class160()
         if (`is` != null) class160.method1255(Class348_Sub49(`is`), -1)
-        synchronized(aClass60_3303) {
+        withLock(aClass60_3303) {
             aClass60_3303.method582(class160, i.toLong(), (-120).toByte())
         }
         return class160

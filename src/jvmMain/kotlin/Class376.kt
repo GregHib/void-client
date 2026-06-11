@@ -9,7 +9,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
     private var anIOException4560: IOException? = null
 
     fun method3615(i: Int) {
-        synchronized(this) {
+        withLock(this) {
             if (i != 15984) run()
             if (anIOException4560 == null) anIOException4560 = IOException("")
             (this as Object).notifyAll()
@@ -26,7 +26,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
         anInt4553++
         loop@ while (true) {
             var i: Int
-            synchronized(this) {
+            withLock(this) {
                 while (true) {
                     if (anIOException4560 != null) return
                     if (anInt4556 != 0) {
@@ -46,12 +46,12 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
                 i_1_ = anInputStream4548.read(aByteArray4554, anInt4558, i)
                 if (i_1_ == -1) throw EOFException()
             } catch (ioexception: IOException) {
-                synchronized(this) {
+                withLock(this) {
                     anIOException4560 = ioexception
                 }
                 break@loop
             }
-            synchronized(this) {
+            withLock(this) {
                 anInt4558 = (i_1_ + anInt4558) % anInt4546
             }
         }
@@ -62,7 +62,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
         var i = i
         anInt4555++
         if (i < 0 || i_2_ < 0 || `is`.size < i_2_ + i) throw IOException()
-        synchronized(this) {
+        withLock(this) {
             val i_4_: Int
             if (anInt4556 <= anInt4558) i_4_ = anInt4558 + -anInt4556
             else i_4_ = anInt4546 + (-anInt4556 - -anInt4558)
@@ -89,7 +89,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
     fun method3619(i: Int, bool: Boolean): Boolean {
         anInt4551++
         if (i <= 0 || i >= anInt4546) throw IOException()
-        synchronized(this) {
+        withLock(this) {
             val i_6_: Int
             if (anInt4556 > anInt4558) i_6_ = -anInt4556 + anInt4546 - -anInt4558
             else i_6_ = anInt4558 - anInt4556
@@ -104,7 +104,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
     /** Number of bytes currently readable from the buffer (the value method3619 compares against). */
     @Throws(IOException::class)
     fun availableCount(): Int {
-        synchronized(this) {
+        withLock(this) {
             if (anIOException4560 != null) throw IOException(anIOException4560.toString())
             return if (anInt4556 > anInt4558) -anInt4556 + anInt4546 - -anInt4558 else anInt4558 - anInt4556
         }
@@ -151,14 +151,4 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
             if (i < 9) anInt4559 = -27
             anInt4547++
             val class148: Class148
-            if (Class16.aClass148_231 != null) {
-                class148 = Class16.aClass148_231!!
-                Class16.aClass148_231 = Class16.aClass148_231!!.aClass148_2038
-                class148.aClass148_2038 = null
-                ha_Sub2.anInt7722--
-            } else class148 = Class148()
-            class148.aClass318_Sub1_Sub3_2040 = class318_sub1_sub3
-            return class148
-        }
-    }
-}
+            if (Class16.aClass148_23

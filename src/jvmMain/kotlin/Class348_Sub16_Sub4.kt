@@ -33,7 +33,7 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
             anInt8968 += i_0_
             method2885()
             val class348_sub30 = aClass262_8966.method1995(4) as Class348_Sub30?
-            synchronized(class348_sub30!!) {
+            withLock(class348_sub30!!) {
                 val i_1_ = class348_sub30.method3005(this)
                 if (i_1_ < 0) {
                     class348_sub30.anInt6912 = 0
@@ -134,7 +134,7 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
             anInt8968 += i_4_
             method2885()
             val class348_sub30 = aClass262_8966.method1995(4) as Class348_Sub30?
-            synchronized(class348_sub30!!) {
+            withLock(class348_sub30!!) {
                 val i_5_ = class348_sub30.method3005(this)
                 if (i_5_ < 0) {
                     class348_sub30.anInt6912 = 0

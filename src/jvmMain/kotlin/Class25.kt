@@ -6,7 +6,7 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
     private var aClass45_366: Class45? = null
     fun method299(i: Int, i_0_: Int) {
         if (i_0_ != 16) aClass45_366 = null
-        synchronized(aClass60_360!!) {
+        withLock(aClass60_360!!) {
             aClass60_360!!.method578(2, i)
         }
         anInt365++
@@ -15,7 +15,7 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
     fun method300(i: Byte) {
         anInt371++
         val i_1_ = 111 % ((i - -40) / 57)
-        synchronized(aClass60_360!!) {
+        withLock(aClass60_360!!) {
             aClass60_360!!.method590(0)
         }
     }
@@ -23,25 +23,25 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
     fun method301(i: Int, i_2_: Int): Class38 {
         anInt361++
         var class38: Class38?
-        synchronized(aClass60_360!!) {
+        withLock(aClass60_360!!) {
             class38 = aClass60_360!!.method583(i.toLong(), -91) as Class38?
         }
         if (class38 != null) return class38
         val `is`: ByteArray?
-        synchronized(aClass45_366!!) {
+        withLock(aClass45_366!!) {
             `is` = aClass45_366!!.method410(-1860, 30, i)
         }
         if (i_2_ < 6) aClass60_360 = null
         class38 = Class38()
         if (`is` != null) class38.method364(Class348_Sub49(`is`), 54.toByte())
-        synchronized(aClass60_360!!) {
+        withLock(aClass60_360!!) {
             aClass60_360!!.method582(class38, i.toLong(), (-109).toByte())
         }
         return class38
     }
 
     fun method302(i: Int) {
-        synchronized(aClass60_360!!) {
+        withLock(aClass60_360!!) {
             if (i != -797644856) aClass105Array367 = null
             aClass60_360!!.method587(i xor 0x2f8b186f)
         }

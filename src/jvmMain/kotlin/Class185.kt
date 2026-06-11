@@ -5,7 +5,7 @@ class Class185 internal constructor(class230: Class230?, i: Int, class45: Class4
     private val aClass60_2479 = Class60(64)
     private val aClass45_2480: Class45?
     fun method1390(i: Int) {
-        synchronized(aClass60_2479) {
+        withLock(aClass60_2479) {
             val i_0_ = 25 / ((i - 69) / 33)
             aClass60_2479.method587(-98)
         }
@@ -15,32 +15,32 @@ class Class185 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method1391(i: Byte, i_1_: Int): Class253 {
         anInt2485++
         var class253: Class253?
-        synchronized(aClass60_2479) {
+        withLock(aClass60_2479) {
             class253 = aClass60_2479.method583(i_1_.toLong(), 96) as Class253?
         }
         if (class253 != null) return class253
         val `is`: ByteArray?
-        synchronized(aClass45_2480!!) {
+        withLock(aClass45_2480!!) {
             `is` = aClass45_2480.method410(-1860, 31, i_1_)
         }
         class253 = Class253()
         val i_2_ = 50 / ((i - -63) / 56)
         if (`is` != null) class253.method1921((-69).toByte(), Class348_Sub49(`is`))
-        synchronized(aClass60_2479) {
+        withLock(aClass60_2479) {
             aClass60_2479.method582(class253, i_1_.toLong(), (-108).toByte())
         }
         return class253
     }
 
     fun method1392(i: Int, i_3_: Int) {
-        synchronized(aClass60_2479) {
+        withLock(aClass60_2479) {
             aClass60_2479.method578(2, i_3_)
         }
         if (i >= 12) anInt2484++
     }
 
     fun method1393(i: Byte) {
-        synchronized(aClass60_2479) {
+        withLock(aClass60_2479) {
             aClass60_2479.method590(0)
             val i_4_ = -89 % ((42 - i) / 50)
         }

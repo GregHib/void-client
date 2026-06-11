@@ -14,19 +14,19 @@ class Class319 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method2541(i: Int, i_0_: Int) {
         anInt3978++
         this.anInt3991 = i_0_
-        synchronized(this.aClass60_3990) {
+        withLock(this.aClass60_3990) {
             this.aClass60_3990.method590(0)
         }
         if (i < 72) aClass315Array3982 = null
     }
 
     fun method2542(i: Int) {
-        synchronized(aClass60_3989) {
+        withLock(aClass60_3989) {
             aClass60_3989.method587(-126)
         }
         if (i >= -99) aDouble3980 = 0.5896741197263589
         anInt3986++
-        synchronized(this.aClass60_3990) {
+        withLock(this.aClass60_3990) {
             this.aClass60_3990.method587(-106)
         }
     }
@@ -35,41 +35,41 @@ class Class319 internal constructor(class230: Class230?, i: Int, class45: Class4
         if (i <= 38) method2542(-73)
         anInt3983++
         var class368: Class368?
-        synchronized(aClass60_3989) {
+        withLock(aClass60_3989) {
             class368 = aClass60_3989.method583(i_1_.toLong(), 101) as Class368?
         }
         if (class368 != null) return class368
         val `is`: ByteArray?
-        synchronized(aClass45_3979!!) {
+        withLock(aClass45_3979!!) {
             `is` = aClass45_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
         class368 = Class368()
         class368.aClass319_4513 = this
         class368.anInt4501 = i_1_
         if (`is` != null) class368.method3559(28105, Class348_Sub49(`is`))
-        synchronized(aClass60_3989) {
+        withLock(aClass60_3989) {
             aClass60_3989.method582(class368, i_1_.toLong(), (-127).toByte())
         }
         return class368
     }
 
     fun method2544(i: Int, i_2_: Byte) {
-        synchronized(aClass60_3989) {
+        withLock(aClass60_3989) {
             aClass60_3989.method578(2, i)
             if (i_2_ >= -11) this.aClass45_3981 = null
         }
         anInt3987++
-        synchronized(this.aClass60_3990) {
+        withLock(this.aClass60_3990) {
             this.aClass60_3990.method578(2, i)
         }
     }
 
     fun method2546(i: Int) {
         anInt3984++
-        synchronized(aClass60_3989) {
+        withLock(aClass60_3989) {
             aClass60_3989.method590(0)
         }
-        synchronized(this.aClass60_3990) {
+        withLock(this.aClass60_3990) {
             this.aClass60_3990.method590(0)
         }
     }

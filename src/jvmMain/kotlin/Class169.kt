@@ -22,7 +22,7 @@ class Class169 : Runnable {
 
     fun runClass348(): Class348_Sub26? {
         val class348_sub26: Class348_Sub26?
-        synchronized(aClass262_2258!!) {
+        withLock(aClass262_2258!!) {
             var class348: Class348?
             class348 = aClass262_2258!!.method1997(8)
             while (class348 == null) {
@@ -69,7 +69,7 @@ class Class169 : Runnable {
 
     private fun method1304(i: Int, class348: Class348) {
         if (i != 1000) method1303(95.toByte())
-        synchronized(aClass262_2258!!) {
+        withLock(aClass262_2258!!) {
             aClass262_2258!!.method1999(class348, -20180)
             (aClass262_2258 as Object).notify()
         }

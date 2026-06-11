@@ -146,7 +146,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
 
         @JvmStatic
         fun method1323(i: Int, i_44_: Int) {
-            synchronized(Class342.aClass60_4254!!) {
+            withLock(Class342.aClass60_4254!!) {
                 Class342.aClass60_4254!!.method578(2, i)
             }
             if (i_44_ == 26603) anInt2271++

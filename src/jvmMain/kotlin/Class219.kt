@@ -11,10 +11,10 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     fun method1598(i: Int) {
         anInt2863++
-        synchronized(aClass60_2875) {
+        withLock(aClass60_2875) {
             aClass60_2875.method587(-103)
         }
-        synchronized(this.aClass60_2862) {
+        withLock(this.aClass60_2862) {
             if (i <= 42) method1598(36)
             this.aClass60_2862.method587(-126)
         }
@@ -23,40 +23,40 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method1601(i: Int, i_15_: Int): Class31 {
         anInt2874++
         var class31: Class31?
-        synchronized(aClass60_2875) {
+        withLock(aClass60_2875) {
             class31 = aClass60_2875.method583(i_15_.toLong(), i + -148) as Class31?
         }
         if (class31 != null) return class31
         val `is`: ByteArray?
-        synchronized(aClass45_2866!!) {
+        withLock(aClass45_2866!!) {
             `is` = aClass45_2866.method410(-1860, i, i_15_)
         }
         class31 = Class31()
         class31.aClass219_438 = this
         if (`is` != null) class31.method332(i xor 0x55.inv(), Class348_Sub49(`is`))
-        synchronized(aClass60_2875) {
+        withLock(aClass60_2875) {
             aClass60_2875.method582(class31, i_15_.toLong(), (-109).toByte())
         }
         return class31
     }
 
     fun method1602(i: Int) {
-        synchronized(aClass60_2875) {
+        withLock(aClass60_2875) {
             aClass60_2875.method590(i)
         }
         anInt2865++
-        synchronized(this.aClass60_2862) {
+        withLock(this.aClass60_2862) {
             this.aClass60_2862.method590(0)
         }
     }
 
     fun method1603(i: Int, i_16_: Int) {
         anInt2870++
-        synchronized(aClass60_2875) {
+        withLock(aClass60_2875) {
             aClass60_2875.method578(2, i)
             if (i_16_ >= -22) this.aClass45_2873 = null
         }
-        synchronized(this.aClass60_2862) {
+        withLock(this.aClass60_2862) {
             this.aClass60_2862.method578(2, i)
         }
     }

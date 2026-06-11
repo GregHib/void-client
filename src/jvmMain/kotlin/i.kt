@@ -75,7 +75,7 @@ class i : Class64, Interface19 {
 
     public override fun method621() {
         if (anOa5117.anInt5141 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 this.aBoolean1124 = false
                 (this as Object).notifyAll()
             }
@@ -180,7 +180,7 @@ class i : Class64, Interface19 {
 
     public override fun method622() {
         if (anOa5117.anInt5141 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 while (this.aBoolean1124) {
                     try {
                         (this as Object).wait()

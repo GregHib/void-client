@@ -61,7 +61,7 @@ class Class311 : Runnable {
     }
 
     private fun skip(): Boolean {
-        synchronized(this) {
+        withLock(this) {
             try {
                 anInt3920++
                 if (anInterface16_3907 is Class294) anInterface16_3907.method58(aBoolean3908, -104)

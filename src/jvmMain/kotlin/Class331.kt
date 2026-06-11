@@ -54,11 +54,11 @@ object Class331 {
     }
 
     fun method2638(i: Int) {
-        synchronized(Class24.aClass60_355!!) {
+        withLock(Class24.aClass60_355!!) {
             Class24.aClass60_355!!.method587(-98)
         }
         anInt4136++
-        synchronized(Class130.aClass60_1894!!) {
+        withLock(Class130.aClass60_1894!!) {
             Class130.aClass60_1894!!.method587(i + 4530)
         }
         if (i != -4631) anInt4135 = 37

@@ -140,7 +140,7 @@ class Class163 internal constructor(i: Int, i_27_: Int) {
 
         fun method1271(i: Int) {
             anInt2166++
-            synchronized(Class342.aClass60_4254!!) {
+            withLock(Class342.aClass60_4254!!) {
                 Class342.aClass60_4254!!.method587(-86)
                 if (i != 0) method1276(25)
             }

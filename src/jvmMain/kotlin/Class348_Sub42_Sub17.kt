@@ -18,7 +18,7 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
         anInt9675++
         if (this.aClass4Array9673 != null) return true
         if (aByteArrayArray9671 == null) {
-            synchronized(Class138.aClass45_1940!!) {
+            withLock(Class138.aClass45_1940!!) {
                 if (!Class138.aClass45_1940!!.method408((-116).toByte(), anInt9669)) return false
                 val `is` = Class138.aClass45_1940!!.method396(anInt9669, 0)
                 aByteArrayArray9671 = arrayOfNulls<ByteArray>(`is`!!.size)
@@ -31,14 +31,14 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
             val class348_sub49 = Class348_Sub49(`is`)
             class348_sub49.anInt7197 = 1
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
-            synchronized(Class135_Sub2.aClass45_4843!!) {
+            withLock(Class135_Sub2.aClass45_4843!!) {
                 bool = bool and Class135_Sub2.aClass45_4843!!.method421(false, i_3_)
             }
         }
         if (!bool) return false
         val class262 = Class262()
         val `is`: IntArray?
-        synchronized(Class138.aClass45_1940!!) {
+        withLock(Class138.aClass45_1940!!) {
             val i_4_ = Class138.aClass45_1940!!.method407(0, anInt9669)
             this.aClass4Array9673 = arrayOfNulls<Class4>(i_4_)
             `is` = Class138.aClass45_1940!!.method396(anInt9669, 0)
@@ -59,7 +59,7 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
                 class348_sub33_8_ = class262.method1990(78.toByte()) as Class348_Sub33?
             }
             if (class348_sub33 == null) {
-                synchronized(Class135_Sub2.aClass45_4843!!) {
+                withLock(Class135_Sub2.aClass45_4843!!) {
                     class348_sub33 = Class348_Sub33(i_7_, Class135_Sub2.aClass45_4843!!.method415(73.toByte(), i_7_))
                 }
                 class262.method1999(class348_sub33!!, -20180)

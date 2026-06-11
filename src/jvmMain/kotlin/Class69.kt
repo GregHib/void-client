@@ -37,11 +37,11 @@ class Class69 {
         fun method720(i: Int, i_0_: Int) {
             anInt1193++
             Class168.anInt2251 = i
-            synchronized(Class130.aClass60_1894!!) {
+            withLock(Class130.aClass60_1894!!) {
                 if (i_0_ != 1226) aClass173_1201 = null
                 Class130.aClass60_1894!!.method590(0)
             }
-            synchronized(Class24.aClass60_355!!) {
+            withLock(Class24.aClass60_355!!) {
                 Class24.aClass60_355!!.method590(0)
             }
         }

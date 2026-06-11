@@ -356,7 +356,7 @@ class Class64_Sub1 : Class64 {
 
     private fun method634(bool: Boolean) {
         if (aHa_Sub1_5353.anInt7485 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 method657(bool)
             }
         } else method657(bool)
@@ -728,7 +728,7 @@ class Class64_Sub1 : Class64 {
         check((anInt5316 and 0x6) == 6)
         val i_121_ = Class70.anIntArray1207!![i]
         val i_122_ = Class70.anIntArray1204!![i]
-        synchronized(this) {
+        withLock(this) {
             for (i_123_ in 0..<anInt5340) {
                 val i_124_ = ((anIntArray5332!![i_123_] * i_122_ - anIntArray5312!![i_123_] * i_121_) shr 14)
                 anIntArray5312!![i_123_] = (anIntArray5332!![i_123_] * i_121_ + anIntArray5312!![i_123_] * i_122_) shr 14
@@ -740,7 +740,7 @@ class Class64_Sub1 : Class64 {
 
     public override fun method622() {
         if (aHa_Sub1_5353.anInt7485 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 while (this.aBoolean1124) {
                     try {
                         (this as Object).wait()
@@ -1191,7 +1191,7 @@ class Class64_Sub1 : Class64 {
     private fun method636() {
         if (anInt5354 == 0 && aClass360Array5360 == null) {
             if (aHa_Sub1_5353.anInt7485 > 1) {
-                synchronized(this) {
+                withLock(this) {
                     method649()
                 }
             } else method649()
@@ -1237,7 +1237,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method639() {
-        synchronized(this) {
+        withLock(this) {
             for (i in 0..<anInt5340) {
                 val i_284_ = anIntArray5312!![i]
                 anIntArray5312!![i] = anIntArray5356!![i]
@@ -1319,7 +1319,7 @@ class Class64_Sub1 : Class64 {
             else {
                 val i_293_ = Class70.anIntArray1207!![i]
                 val i_294_ = Class70.anIntArray1204!![i]
-                synchronized(this) {
+                withLock(this) {
                     for (i_295_ in 0..<anInt5387) {
                         var i_296_ = ((anIntArray5312!![i_295_] * i_293_ + anIntArray5356!![i_295_] * i_294_) shr 14)
                         anIntArray5312!![i_295_] = (anIntArray5312!![i_295_] * i_294_ - anIntArray5356!![i_295_] * i_293_) shr 14
@@ -1371,7 +1371,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method641() {
-        synchronized(this) {
+        withLock(this) {
             for (i in 0..<anInt5387) {
                 var i_302_ = anIntArray5312!![i]
                 anIntArray5312!![i] = anIntArray5356!![i]
@@ -1647,7 +1647,7 @@ class Class64_Sub1 : Class64 {
                 i_375_ = (i_375_ + (var_s.anInt4592 - 1) shr var_s.anInt4588)
                 if (`is`[i_372_]!![i_374_] == i_370_ && `is`[i_373_]!![i_374_] == i_370_ && `is`[i_372_]!![i_375_] == i_370_ && `is`[i_373_]!![i_375_] == i_370_) return
             }
-            synchronized(this) {
+            withLock(this) {
                 if (i == 1) {
                     val i_377_ = var_s.anInt4592 - 1
                     for (i_378_ in 0..<anInt5387) {
@@ -1796,7 +1796,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method644() {
-        synchronized(this) {
+        withLock(this) {
             for (i in 0..<anInt5340) {
                 val i_473_ = anIntArray5356!![i]
                 anIntArray5356!![i] = anIntArray5312!![i]
@@ -1825,7 +1825,7 @@ class Class64_Sub1 : Class64 {
 
     public override fun s(i: Int) {
         if (aHa_Sub1_5353.anInt7485 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 if ((anInt5316 and 0x10000) == 65536 && (i and 0x10000) == 0) method634(true)
                 anInt5316 = i
             }
@@ -1837,7 +1837,7 @@ class Class64_Sub1 : Class64 {
 
     public override fun method621() {
         if (aHa_Sub1_5353.anInt7485 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 this.aBoolean1124 = false
                 (this as Object).notifyAll()
             }
@@ -2266,7 +2266,7 @@ class Class64_Sub1 : Class64 {
     private fun method647() {
         if (anInt5354 == 0) method634(false)
         else if (aHa_Sub1_5353.anInt7485 > 1) {
-            synchronized(this) {
+            withLock(this) {
                 method640()
             }
         } else method640()
@@ -2299,7 +2299,7 @@ class Class64_Sub1 : Class64 {
         check((anInt5316 and 0x3) == 3)
         val i_574_ = Class70.anIntArray1207!![i]
         val i_575_ = Class70.anIntArray1204!![i]
-        synchronized(this) {
+        withLock(this) {
             for (i_576_ in 0..<anInt5340) {
                 val i_577_ = ((anIntArray5332!![i_576_] * i_574_ + anIntArray5356!![i_576_] * i_575_) shr 14)
                 anIntArray5332!![i_576_] = (anIntArray5332!![i_576_] * i_575_ - anIntArray5356!![i_576_] * i_574_) shr 14
@@ -2317,7 +2317,7 @@ class Class64_Sub1 : Class64 {
         else {
             val i_578_ = Class70.anIntArray1207!![i]
             val i_579_ = Class70.anIntArray1204!![i]
-            synchronized(this) {
+            withLock(this) {
                 for (i_580_ in 0..<anInt5340) {
                     val i_581_ = ((anIntArray5312!![i_580_] * i_578_ + anIntArray5356!![i_580_] * i_579_) shr 14)
                     anIntArray5312!![i_580_] = (anIntArray5312!![i_580_] * i_579_ - anIntArray5356!![i_580_] * i_578_) shr 14
@@ -2472,7 +2472,7 @@ class Class64_Sub1 : Class64 {
         check(!(i != 0 && (anInt5316 and 0x1) != 1))
         check(!(i_613_ != 0 && (anInt5316 and 0x2) != 2))
         check(!(i_614_ != 0 && (anInt5316 and 0x4) != 4))
-        synchronized(this) {
+        withLock(this) {
             for (i_615_ in 0..<anInt5340) {
                 anIntArray5356!![i_615_] += i
                 anIntArray5332!![i_615_] += i_613_
@@ -2483,7 +2483,7 @@ class Class64_Sub1 : Class64 {
 
     public override fun v() {
         check((anInt5316 and 0x10) == 16)
-        synchronized(this) {
+        withLock(this) {
             for (i in 0..<anInt5340) anIntArray5312!![i] = -anIntArray5312!![i]
             if (aClass360Array5360 != null) {
                 for (i in 0..<anInt5387) {
@@ -2557,7 +2557,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method651() {
-        synchronized(this) {
+        withLock(this) {
             for (i in 0..<anInt5340) {
                 anIntArray5356!![i] = -anIntArray5356!![i]
                 anIntArray5312!![i] = -anIntArray5312!![i]
@@ -2581,7 +2581,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method652() {
-        synchronized(this) {
+        withLock(this) {
             for (i in 0..<anInt5387) {
                 anIntArray5356!![i] = -anIntArray5356!![i]
                 anIntArray5312!![i] = -anIntArray5312!![i]
@@ -2608,7 +2608,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method653() {
-        synchronized(this) {
+        withLock(this) {
             for (i in 0..<anInt5387) {
                 var i_629_ = anIntArray5356!![i]
                 anIntArray5356!![i] = anIntArray5312!![i]
@@ -2713,7 +2713,7 @@ class Class64_Sub1 : Class64 {
                     f_655_ = ((class101_sub1.aFloat5662 * aClass101_Sub1_5320!!.aFloat5669) + (class101_sub1.aFloat5680 * (aClass101_Sub1_5320!!.aFloat5666)) + (class101_sub1.aFloat5664 * (aClass101_Sub1_5320!!.aFloat5664)))
                 }
                 if (aHa_Sub1_5353.anInt7485 > 1) {
-                    synchronized(this) {
+                    withLock(this) {
                         while (aBoolean5357) {
                             try {
                                 (this as Object).wait()
@@ -2897,7 +2897,7 @@ class Class64_Sub1 : Class64 {
                 }
                 aClass109_5383 = null
                 if (aHa_Sub1_5353.anInt7485 > 1) {
-                    synchronized(this) {
+                    withLock(this) {
                         aBoolean5357 = false
                         (this as Object).notifyAll()
                     }
@@ -3093,7 +3093,7 @@ class Class64_Sub1 : Class64 {
         check(!(i != 128 && (anInt5316 and 0x1) != 1))
         check(!(i_765_ != 128 && (anInt5316 and 0x2) != 2))
         check(!(i_766_ != 128 && (anInt5316 and 0x4) != 4))
-        synchronized(this) {
+        withLock(this) {
             for (i_767_ in 0..<anInt5340) {
                 anIntArray5356!![i_767_] = anIntArray5356!![i_767_] * i shr 7
                 anIntArray5332!![i_767_] = anIntArray5332!![i_767_] * i_765_ shr 7
@@ -3624,3 +3624,4 @@ class Class64_Sub1 : Class64 {
         }
     }
 }
+       

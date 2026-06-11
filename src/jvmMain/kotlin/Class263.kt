@@ -27,12 +27,12 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     fun method2005(i: Int, i_0_: Int): Class51 {
         anInt3351++
         var class51: Class51?
-        synchronized(aClass60_3350!!) {
+        withLock(aClass60_3350!!) {
             class51 = aClass60_3350!!.method583(i_0_.toLong(), i xor 0x32) as Class51?
         }
         if (class51 != null) return class51
         val `is`: ByteArray?
-        synchronized(aClass45_3343!!) {
+        withLock(aClass45_3343!!) {
             `is` = aClass45_3343.method410(i + -1860, method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (-90).toByte()))
         }
         class51 = Class51()
@@ -49,7 +49,7 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             class51.anInt920 = 0
             class51.aBoolean896 = false
         }
-        synchronized(aClass60_3350!!) {
+        withLock(aClass60_3350!!) {
             aClass60_3350!!.method582(class51, i_0_.toLong(), (-109).toByte())
         }
         return class51
@@ -58,16 +58,16 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     fun method2006(i: Int) {
         if (i >= 68) {
             anInt3353++
-            synchronized(aClass60_3350!!) {
+            withLock(aClass60_3350!!) {
                 aClass60_3350!!.method587(-106)
             }
-            synchronized(this.aClass60_3360) {
+            withLock(this.aClass60_3360) {
                 this.aClass60_3360.method587(-125)
             }
-            synchronized(this.aClass60_3361!!) {
+            withLock(this.aClass60_3361!!) {
                 this.aClass60_3361!!.method587(-122)
             }
-            synchronized(this.aClass60_3362!!) {
+            withLock(this.aClass60_3362!!) {
                 this.aClass60_3362!!.method587(-101)
             }
         }
@@ -85,47 +85,47 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     fun method2009(i: Int, i_21_: Byte) {
         this.anInt3363 = i
         anInt3348++
-        synchronized(this.aClass60_3360) {
+        withLock(this.aClass60_3360) {
             this.aClass60_3360.method590(0)
         }
-        synchronized(this.aClass60_3361!!) {
+        withLock(this.aClass60_3361!!) {
             this.aClass60_3361!!.method590(0)
         }
         if (i_21_ < 94) anIntArray3347 = null
-        synchronized(this.aClass60_3362!!) {
+        withLock(this.aClass60_3362!!) {
             this.aClass60_3362!!.method590(0)
         }
     }
 
     fun method2010(i: Int, i_22_: Int) {
         anInt3349++
-        synchronized(aClass60_3350!!) {
+        withLock(aClass60_3350!!) {
             aClass60_3350!!.method578(2, i)
         }
-        synchronized(this.aClass60_3360) {
+        withLock(this.aClass60_3360) {
             this.aClass60_3360.method578(i_22_ xor 0x2.inv(), i)
         }
-        synchronized(this.aClass60_3361!!) {
+        withLock(this.aClass60_3361!!) {
             this.aClass60_3361!!.method578(i_22_ xor 0x2.inv(), i)
         }
-        synchronized(this.aClass60_3362!!) {
+        withLock(this.aClass60_3362!!) {
             this.aClass60_3362!!.method578(2, i)
             if (i_22_ != -1) method2013(null, 96.toByte())
         }
     }
 
     fun method2012(i: Int) {
-        synchronized(aClass60_3350!!) {
+        withLock(aClass60_3350!!) {
             aClass60_3350!!.method590(0)
         }
         anInt3356++
-        synchronized(this.aClass60_3360) {
+        withLock(this.aClass60_3360) {
             this.aClass60_3360.method590(0)
         }
-        synchronized(this.aClass60_3361!!) {
+        withLock(this.aClass60_3361!!) {
             this.aClass60_3361!!.method590(0)
         }
-        synchronized(this.aClass60_3362!!) {
+        withLock(this.aClass60_3362!!) {
             this.aClass60_3362!!.method590(0)
         }
     }

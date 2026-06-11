@@ -148,7 +148,7 @@ class Class154 {
                 if (bool_14_) i_9_ = i_9_ or 0x400
             }
             var class64: Class64?
-            synchronized(Class24.aClass60_355!!) {
+            withLock(Class24.aClass60_355!!) {
                 class64 = Class24.aClass60_355!!.method583(l, -47) as Class64?
             }
             var class225: Class225? = null
@@ -165,7 +165,7 @@ class Class154 {
                 }
                 if (bool_37_) {
                     if (aLong2094 != -1L) {
-                        synchronized(Class24.aClass60_355!!) {
+                        withLock(Class24.aClass60_355!!) {
                             class64 = Class24.aClass60_355!!.method583(aLong2094, -92) as Class64?
                         }
                     }
@@ -220,7 +220,7 @@ class Class154 {
                     }
                     if (bool) {
                         class64.s(i_9_)
-                        synchronized(Class24.aClass60_355!!) {
+                        withLock(Class24.aClass60_355!!) {
                             Class24.aClass60_355!!.method582(class64, l, (-98).toByte())
                         }
                         aLong2094 = l
@@ -364,7 +364,7 @@ class Class154 {
             }
             if (i != -402058072) aLong2094 = -101L
             var class64: Class64?
-            synchronized(Class130.aClass60_1894!!) {
+            withLock(Class130.aClass60_1894!!) {
                 class64 = Class130.aClass60_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as Class64?
             }
             if (class64 == null || var_ha!!.method3667(class64.ua(), i_70_) != 0) {
@@ -403,7 +403,7 @@ class Class154 {
                     }
                 }
                 class64.s(i_70_)
-                synchronized(Class130.aClass60_1894!!) {
+                withLock(Class130.aClass60_1894!!) {
                     Class130.aClass60_1894!!.method582(class64, aLong2102, (-97).toByte())
                 }
             }
@@ -471,7 +471,7 @@ class Class154 {
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
             var class64: Class64?
-            synchronized(Class130.aClass60_1894!!) {
+            withLock(Class130.aClass60_1894!!) {
                 class64 = Class130.aClass60_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as Class64?
             }
             if (class64 == null || var_ha!!.method3667(class64.ua(), i_98_) != 0) {
@@ -497,7 +497,7 @@ class Class154 {
                     }
                 }
                 class64.s(i_98_)
-                synchronized(Class130.aClass60_1894!!) {
+                withLock(Class130.aClass60_1894!!) {
                     Class130.aClass60_1894!!.method582(class64, l, (-109).toByte())
                 }
             }
@@ -543,24 +543,4 @@ class Class154 {
     }
 
     companion object {
-        var anInt2090: Int = 0
-        var anInt2091: Int = 0
-        var anInt2096: Int = 0
-        var anInt2097: Int = 0
-        var anInt2098: Int = 0
-        var anInt2099: Int = 0
-        @JvmField
-        var anInt2101: Int = 0
-        var anInt2104: Int = 0
-        @JvmField
-        var aClass348_Sub49Array2105: Array<Class348_Sub49?>? = arrayOfNulls<Class348_Sub49>(2048)
-        var anInt2106: Int = 0
-        var anInt2107: Int = 0
-
-        @JvmStatic
-        fun method1235(i: Byte) {
-            if (i.toInt() != 7) anInt2101 = -42
-            aClass348_Sub49Array2105 = null
-        }
-    }
-}
+        var anInt209

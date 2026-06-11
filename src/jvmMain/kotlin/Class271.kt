@@ -7,18 +7,18 @@ class Class271 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method2044(i: Int, i_0_: Int): Class348_Sub42_Sub7 {
         anInt3469++
         var class348_sub42_sub7: Class348_Sub42_Sub7?
-        synchronized(aClass60_3466) {
+        withLock(aClass60_3466) {
             class348_sub42_sub7 = aClass60_3466.method583(i_0_.toLong(), -85) as Class348_Sub42_Sub7?
         }
         if (class348_sub42_sub7 != null) return class348_sub42_sub7
         val `is`: ByteArray?
-        synchronized(aClass45_3468!!) {
+        withLock(aClass45_3468!!) {
             `is` = aClass45_3468.method410(-1860, 5, i_0_)
         }
         class348_sub42_sub7 = Class348_Sub42_Sub7()
         if (i < 78) method2046()
         if (`is` != null) class348_sub42_sub7.method3192(16.toByte(), Class348_Sub49(`is`))
-        synchronized(aClass60_3466) {
+        withLock(aClass60_3466) {
             aClass60_3466.method582(class348_sub42_sub7, i_0_.toLong(), (-93).toByte())
         }
         return class348_sub42_sub7

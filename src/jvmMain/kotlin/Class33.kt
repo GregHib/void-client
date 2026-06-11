@@ -8,14 +8,14 @@ class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45
     fun method337(bool: Boolean, i: Int): Class117 {
         anInt457++
         var class117: Class117?
-        synchronized(aClass60_460) {
+        withLock(aClass60_460) {
             class117 = aClass60_460.method583(i.toLong(), 111) as Class117?
         }
         if (class117 != null) return class117
         val `is` = aClass45_458!!.method410(-1860, method200(-107, i), method3013(i, bool))
         class117 = Class117()
         if (`is` != null) class117.method1069(0, Class348_Sub49(`is`))
-        synchronized(aClass60_460) {
+        withLock(aClass60_460) {
             aClass60_460.method582(class117, i.toLong(), (-102).toByte())
         }
         return class117

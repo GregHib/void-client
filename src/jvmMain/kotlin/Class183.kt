@@ -10,7 +10,7 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
     fun method1377(i: Int) {
         anInt2457++
         if (i != 2) method1376(null)
-        synchronized(aClass60_2458) {
+        withLock(aClass60_2458) {
             aClass60_2458.method587(-125)
         }
     }
@@ -19,24 +19,24 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
         anInt2460++
         if (bool != true) return null
         var class22: Class22?
-        synchronized(aClass60_2458) {
+        withLock(aClass60_2458) {
             class22 = aClass60_2458.method583(i.toLong(), 77) as Class22?
         }
         if (class22 != null) return class22
         val `is`: ByteArray?
-        synchronized(aClass45_2461!!) {
+        withLock(aClass45_2461!!) {
             `is` = aClass45_2461.method410(-1860, 1, i)
         }
         class22 = Class22()
         if (`is` != null) class22.method290(Class348_Sub49(`is`), -1)
-        synchronized(aClass60_2458) {
+        withLock(aClass60_2458) {
             aClass60_2458.method582(class22, i.toLong(), (-124).toByte())
         }
         return class22
     }
 
     fun method1381(bool: Boolean) {
-        synchronized(aClass60_2458) {
+        withLock(aClass60_2458) {
             if (bool != true) method1382(-96, 76)
             aClass60_2458.method590(0)
         }
@@ -45,7 +45,7 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     fun method1383(i: Int, i_7_: Int) {
         anInt2467++
-        synchronized(aClass60_2458) {
+        withLock(aClass60_2458) {
             aClass60_2458.method578(2, i_7_)
         }
         if (i != 32841) anInt2464 = 86
@@ -143,6 +143,4 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
             } else return 1
             if (i_6_ != -6409) anIntArray2466 = null
             throw IllegalArgumentException("")
-        }
-    }
-}
+       

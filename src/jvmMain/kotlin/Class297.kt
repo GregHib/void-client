@@ -57,7 +57,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     override fun run() {
         while (true) {
             val class144: Class144?
-            synchronized(this) {
+            withLock(this) {
                 while (true) {
                     if (aBoolean3801) return
                     if (aClass144_3797 != null) {
@@ -198,14 +198,14 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                 }
                 class144!!.anInt1997 = 2
             }
-            synchronized(class144) {
+            withLock(class144) {
                 (class144 as Object).notify()
             }
         }
     }
 
     fun method2234(i: Byte) {
-        synchronized(this) {
+        withLock(this) {
             aBoolean3801 = true
             (this as Object).notifyAll()
         }
@@ -319,7 +319,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         class144.anInt1999 = i_19_
         class144.anInt1994 = i_20_
         class144.anInt2000 = i_21_
-        synchronized(this) {
+        withLock(this) {
             if (aClass144_3798 == null) {
                 aClass144_3797 = class144
                 aClass144_3798 = aClass144_3797
@@ -468,33 +468,4 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         @JvmField
         var aMethod3783: Method? = null
         private var aString3784: String? = null
-        var aMethod3786: Method? = null
-        var anInt3792: Int = -1
-        var aString3796: String? = null
-        private var aString3800: String? = null
-        lateinit var aString3803: String
-        private var aString3789: String? = null
-
-        /*synthetic*/
-        var aClass3804: Class<*>? = null
-
-        /*synthetic*/
-        var aClass3805: Class<*>? = null
-
-        /*synthetic*/
-        var aClass3806: Class<*>? = null
-
-        /*synthetic*/
-        var aClass3807: Class<*>? = null
-
-        fun method2231(string: String?, i: Int): CacheStore? {
-            if (i != -1141472112) return null
-            return method2241(string, 12606, Companion.aString3789, anInt3792)
-        }
-
-        private fun method2241(string: String?, i: Int, string_14_: String?, i_15_: Int): CacheStore? {
-            if (i != 12606) return null
-            return Class348_Sub23_Sub1.aClass297_8992!!.aCacheStorage.openPreferences(string, i_15_)
-        }
-    }
-}
+        var aMethod3786: Metho

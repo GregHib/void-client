@@ -10,7 +10,7 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
     @JvmField
     var anInt3447: Int = 0
     fun method2032(i: Int, i_3_: Int) {
-        synchronized(aClass60_3433) {
+        withLock(aClass60_3433) {
             aClass60_3433.method578(2, i)
             if (i_3_ > -10) method2035(116, 38)
         }
@@ -19,7 +19,7 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     fun method2033(i: Byte) {
         anInt3434++
-        synchronized(aClass60_3433) {
+        withLock(aClass60_3433) {
             if (i.toInt() != 46) method2037(-66)
             aClass60_3433.method587(-94)
         }
@@ -29,12 +29,12 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
         if (bool != false) aShortArray3437 = null
         anInt3431++
         var class277: Class277?
-        synchronized(aClass60_3433) {
+        withLock(aClass60_3433) {
             class277 = aClass60_3433.method583(i.toLong(), 64) as Class277?
         }
         if (class277 != null) return class277
         val `is`: ByteArray?
-        synchronized(aClass45_3442!!) {
+        withLock(aClass45_3442!!) {
             `is` = aClass45_3442.method410(-1860, 4, i)
         }
         class277 = Class277()
@@ -42,14 +42,14 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
         class277.aClass268_3562 = this
         if (`is` != null) class277.method2070(true, Class348_Sub49(`is`))
         class277.method2067(-4860)
-        synchronized(aClass60_3433) {
+        withLock(aClass60_3433) {
             aClass60_3433.method582(class277, i.toLong(), (-111).toByte())
         }
         return class277
     }
 
     fun method2037(i: Int) {
-        synchronized(aClass60_3433) {
+        withLock(aClass60_3433) {
             aClass60_3433.method590(0)
         }
         anInt3440++

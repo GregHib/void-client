@@ -14,7 +14,7 @@ class Class34 {
         anInt468++
         if (anIntArray472 == null) return null
         val class124s = arrayOfNulls<Class124>(anIntArray472!!.size)
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
+        withLock(this.aClass150_475!!.aClass45_2054!!) {
             for (i_0_ in anIntArray472!!.indices) class124s[i_0_] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray472!![i_0_], -1)
         }
         var i_1_ = 0
@@ -39,7 +39,7 @@ class Class34 {
     fun method342(i: Byte): Boolean {
         anInt470++
         var bool = true
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
+        withLock(this.aClass150_475!!.aClass45_2054!!) {
             for (i_4_ in 0..4) {
                 if (anIntArray464[i_4_] != -1 && !this.aClass150_475!!.aClass45_2054!!.method420(-10499, anIntArray464[i_4_], 0)) bool = false
             }
@@ -52,7 +52,7 @@ class Class34 {
         anInt471++
         val class124s = arrayOfNulls<Class124>(5)
         var i_5_ = 0
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
+        withLock(this.aClass150_475!!.aClass45_2054!!) {
             for (i_6_ in 0..4) {
                 if (anIntArray464[i_6_] != -1) class124s[i_5_++] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray464[i_6_], -1)
             }
@@ -126,7 +126,7 @@ class Class34 {
         if (i.toInt() != 34) method348((-15).toByte())
         if (anIntArray472 == null) return true
         var bool = true
-        synchronized(this.aClass150_475!!.aClass45_2054!!) {
+        withLock(this.aClass150_475!!.aClass45_2054!!) {
             var i_31_ = 0
             while (anIntArray472!!.size > i_31_) {
                 if (!this.aClass150_475!!.aClass45_2054!!.method420(-10499, anIntArray472!![i_31_], 0)) bool = false

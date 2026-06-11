@@ -34,7 +34,7 @@ class Class292 internal constructor(private val aClass45_4804: Class45) : Interf
 
         fun method2201(i: Int): Int {
             anInt4805++
-            synchronized(Class24.aClass60_355!!) {
+            withLock(Class24.aClass60_355!!) {
                 if (i != 2121) method2202(-113)
                 return Class24.aClass60_355!!.method575(0)
             }
@@ -70,7 +70,4 @@ class Class292 internal constructor(private val aClass45_4804: Class45) : Interf
         }
 
         init {
-            aClass114_4798 = Class114(29, 7)
-        }
-    }
-}
+            aClass114_4798 = Class11
