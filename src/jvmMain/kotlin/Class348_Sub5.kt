@@ -1,6 +1,5 @@
 import Class239_Sub18.Companion.method1802
 import java.awt.Canvas
-import java.io.IOException
 import java.net.Socket
 
 abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : Class348() {

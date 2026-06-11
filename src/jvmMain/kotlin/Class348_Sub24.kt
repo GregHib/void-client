@@ -24,7 +24,6 @@ import Class62.method599
 import Class64_Sub2.Companion.method661
 import Class66.method705
 import java.io.File
-import java.io.IOException
 import java.util.*
 
 class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int) : Class348() {

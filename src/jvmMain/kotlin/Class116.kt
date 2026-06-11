@@ -1,6 +1,5 @@
 import Class286_Sub5.Companion.method2161
 import Class348_Sub31.Companion.method3014
-import java.io.IOException
 
 object Class116 {
     var anInt1758: Int = 0

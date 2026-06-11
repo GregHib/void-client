@@ -2,7 +2,6 @@ import Applet_Sub1.Companion.method94
 import Class348_Sub40_Sub3.Companion.method3055
 import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub
-import java.io.IOException
 
 class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?, i: Int, i_0_: Int, i_1_: Int, `is`: ByteArray?) : Class14(class377, 32879, class304, Class68.aClass68_1183, i_0_ * (i * i_1_), false), Interface18_Impl1 {
     private val anInt8626: Int

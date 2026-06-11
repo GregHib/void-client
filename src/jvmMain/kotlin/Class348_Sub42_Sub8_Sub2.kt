@@ -15,7 +15,6 @@ import Class348_Sub42_Sub9.Companion.method3203
 import Class367_Sub8.Companion.method3546
 import Class377.Companion.method3965
 import InputStream_Sub2.Companion.method128
-import java.io.IOException
 
 class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: Any?, i: Int) : Class348_Sub42_Sub8(i) {
     override fun method3195(i: Int): Boolean {

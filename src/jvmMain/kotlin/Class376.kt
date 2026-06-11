@@ -1,5 +1,4 @@
 import java.io.EOFException
-import java.io.IOException
 import java.io.InputStream
 
 class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {

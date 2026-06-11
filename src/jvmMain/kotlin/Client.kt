@@ -540,7 +540,6 @@ import java.awt.Canvas
 import java.awt.Component
 import java.awt.Container
 import java.awt.Frame
-import java.io.IOException
 import java.net.Socket
 import java.net.URL
 import java.util.*

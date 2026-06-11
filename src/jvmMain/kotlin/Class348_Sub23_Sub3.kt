@@ -1,6 +1,5 @@
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
-import java.io.IOException
 import java.net.Socket
 
 class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState) : Class348_Sub23(oggstreamstate) {

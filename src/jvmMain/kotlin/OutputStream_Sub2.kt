@@ -1,4 +1,3 @@
-import java.io.IOException
 import java.io.OutputStream
 
 class OutputStream_Sub2 : OutputStream() {

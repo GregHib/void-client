@@ -1,4 +1,3 @@
-import java.io.IOException
 
 class Class239_Sub18 : Class239 {
     internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)

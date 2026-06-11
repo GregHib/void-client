@@ -1,4 +1,3 @@
-import java.io.IOException
 import java.io.OutputStream
 
 class Class208 internal constructor(private var anOutputStream2712: OutputStream, i: Int) : Runnable {

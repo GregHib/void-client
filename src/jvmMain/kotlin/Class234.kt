@@ -1,6 +1,5 @@
 import java.io.EOFException
 import java.io.File
-import java.io.IOException
 import java.io.RandomAccessFile
 
 class Class234 internal constructor(file: File?, string: String?, l: Long) {

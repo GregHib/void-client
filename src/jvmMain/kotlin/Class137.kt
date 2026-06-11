@@ -1,5 +1,4 @@
 import java.io.EOFException
-import java.io.IOException
 
 /* Class137 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

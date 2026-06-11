@@ -1,4 +1,3 @@
-import java.io.IOException
 import java.net.Socket
 
 abstract class Class272 {

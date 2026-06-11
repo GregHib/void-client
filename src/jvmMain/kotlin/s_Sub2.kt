@@ -4,7 +4,6 @@ import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glPopMatrix
 import jaggl.OpenGL.Companion.glPushMatrix
 import jaggl.OpenGL.Companion.glTranslatef
-import java.io.IOException
 import kotlin.math.sqrt
 
 class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : s(i_134_, i_135_, i_137_, `is`) {

@@ -1,4 +1,3 @@
-import java.io.IOException
 
 abstract class Class238 {
     abstract fun method1700(i: Byte)

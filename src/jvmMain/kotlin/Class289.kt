@@ -1,7 +1,6 @@
 import Class239_Sub18.Companion.method1802
 import Class286_Sub3.Companion.method2148
 import Class369_Sub1.Companion.method3570
-import java.io.IOException
 
 /* Class289 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

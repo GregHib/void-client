@@ -1,4 +1,3 @@
-import java.io.IOException
 
 class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Class55(i) {
     private val aClass45_5267: Class45

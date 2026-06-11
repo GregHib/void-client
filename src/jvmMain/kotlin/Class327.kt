@@ -1,6 +1,5 @@
 import Class374.method3610
 import java.io.File
-import java.io.IOException
 
 object Class327 {
     var anInt4090: Int = 0
