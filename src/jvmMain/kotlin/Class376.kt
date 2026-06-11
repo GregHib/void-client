@@ -4,7 +4,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
     private var anInt4546: Int
     private val aByteArray4554: ByteArray
     private var anInt4556 = 0
-    private val aThread4557: Thread
+    private val aThread4557: WorkerHandle
     private var anInt4558 = 0
     private var anIOException4560: IOException? = null
 
@@ -104,9 +104,7 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
     init {
         anInt4546 = i - -1
         aByteArray4554 = ByteArray(anInt4546)
-        aThread4557 = Thread(this)
-        aThread4557.setDaemon(true)
-        aThread4557.start()
+        aThread4557 = Workers.start({ run() }, daemon = true)
     }
 
     companion object {

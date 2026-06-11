@@ -91,11 +91,12 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                         throw ioexception_sub1
                     }
                 } else if (i == 2) {
-                    val thread = Thread((class144.anObject1996) as Runnable?)
-                    thread.setDaemon(true)
-                    thread.start()
-                    thread.setPriority(class144.anInt2000)
-                    class144.anObject1998 = thread
+                    val runnable = (class144.anObject1996) as Runnable?
+                    class144.anObject1998 = Workers.start(
+                        { runnable?.run() },
+                        daemon = true,
+                        priority = class144.anInt2000
+                    )
                 } else if (i == 4) {
                     if (method599(-73) < aLong3781) throw IOException()
                     class144.anObject1998 = httpFetcher.fetch((class144.anObject1996) as String)

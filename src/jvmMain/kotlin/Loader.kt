@@ -83,6 +83,7 @@ class Loader : Panel(), GameApplet {
 
     fun startClient() {
         try {
+            Workers.install(ThreadWorkerFactory)
             provideLoaderApplet(this)
             val var_client = Client()
             var_client.init()

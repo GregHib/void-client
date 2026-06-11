@@ -4,7 +4,7 @@ class Class208 internal constructor(private var anOutputStream2712: OutputStream
     private var anIOException2704: IOException? = null
     private var anInt2705 = 0
     private val aByteArray2706: ByteArray
-    private val aThread2708: Thread
+    private val aThread2708: WorkerHandle
     private var anInt2713 = 0
     private val anInt2715: Int
 
@@ -88,9 +88,7 @@ class Class208 internal constructor(private var anOutputStream2712: OutputStream
     init {
         anInt2715 = 1 + i
         aByteArray2706 = ByteArray(anInt2715)
-        aThread2708 = Thread(this)
-        aThread2708.setDaemon(true)
-        aThread2708.start()
+        aThread2708 = Workers.start({ run() }, daemon = true)
     }
 
     companion object {

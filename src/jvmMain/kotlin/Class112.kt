@@ -5,7 +5,7 @@ import Class286_Sub5.Companion.method2161
 */
 class Class112 internal constructor(class297: Class297) : Runnable {
     private val aClass107_1730 = Class107()
-    private var aThread1733: Thread?
+    private var aThread1733: WorkerHandle?
     var anInt1734: Int = 0
     private var aBoolean1738 = false
 
@@ -119,7 +119,7 @@ class Class112 internal constructor(class297: Class297) : Runnable {
         val class144 = class297.method2236(this, -10240, 5)
         while (class144.anInt1997 == 0) method2161(43.toByte(), 10L)
         if (class144.anInt1997 == 2) throw RuntimeException()
-        aThread1733 = class144.anObject1998 as Thread
+        aThread1733 = class144.anObject1998 as WorkerHandle
     }
 
     companion object {

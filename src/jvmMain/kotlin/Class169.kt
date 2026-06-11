@@ -4,7 +4,7 @@ import java.net.InetAddress
 
 class Class169 : Runnable {
     private var aClass262_2258: Class262? = Class262()
-    private var aThread2259: Thread? = Thread(this)
+    private var aThread2259: WorkerHandle? = null
     override fun run() {
         anInt2263++
         while (true) {
@@ -40,8 +40,7 @@ class Class169 : Runnable {
     }
 
     init {
-        aThread2259!!.setDaemon(true)
-        aThread2259!!.start()
+        aThread2259 = Workers.start({ run() }, daemon = true)
     }
 
     fun method1302(i: Int, string: String): Class348_Sub26 {

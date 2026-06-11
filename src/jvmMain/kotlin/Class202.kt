@@ -160,7 +160,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
                 while (aClass144_2658!!.anInt1997 == 0) method2161(105.toByte(), 1L)
                 if (aClass144_2658!!.anInt1997 == 1) {
                     try {
-                        (aClass144_2658!!.anObject1998 as Thread).join()
+                        (aClass144_2658!!.anObject1998 as WorkerHandle).join()
                     } catch (interruptedexception: InterruptedException) {
                         /* empty */
                     }
