@@ -19,8 +19,8 @@ Rule of thumb: a type is a *clean leaf seam* only if its values don't flow strai
 ### java.lang.ref.SoftReference — 2 files ✅ DONE (commit af03a2b)
 `Class348_Sub42_Sub8_Sub1, Class348_Sub42_Sub9_Sub2`. Trivial wrapper: holds an object, `.get()` may return null. Define `expect class SoftRef<T>(value: T) { fun get(): T? }`; JVM actual wraps `java.lang.ref.SoftReference`; native/web can degrade to a strong ref initially. **Effort: ~20 min. Risk: low.** Both files just store/get one reference.
 
-### Locale.getDefault() — but already mostly handled
-29 hits are all `Locale.getDefault()` feeding `.lowercase()/.uppercase()`. Phase 2 already converted the locale-invariant cases to bare `.lowercase()`. Audit the remaining `Locale.getDefault()` call sites; any that are locale-invariant string-casing → drop the Locale arg (multiplatform). **Effort: ~30 min. Risk: low** (verify none are genuinely locale-sensitive, e.g. user-facing formatting).
+### Locale.getDefault() — ✅ DONE (commit 98dcd3e)
+All 29 `.lowercase(Locale.getDefault())` sites across 10 files (Applet_Sub1, Class272_Sub2, Class279_Sub1, Class297, Class348_Sub24, Class348_Sub4, Class348_Sub49_Sub1, Class377, Class66, ha_Sub2) → bare `.lowercase()` (Locale.ROOT). All were technical-token normalization (OS/GL vendor strings, system properties, host/extension matching, chat-token filtering) — none user-facing. Bonus: removes the Turkish-I hazard where `Locale.getDefault()` could break the "microsoft"/"sun"/etc. substring checks. `import java.util.*` wildcards stay (still used for Vector/Hashtable). No `Locale` reference remains anywhere in src/.
 
 ---
 
