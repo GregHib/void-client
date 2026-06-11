@@ -9,9 +9,6 @@
  * JVM impl: FileCacheStorage (RandomAccessFile + the original path search). Web/native impls open
  * over OPFS / a native filesystem.
  *
- * NOTE: the per-user preferences stores (jagex_*_preferences*.dat) are still opened inside the
- * signlink (Class297.method2241) because that path-search reads Class297's private locator state;
- * folding it in here is a later slice. Those still flow as [CacheStore] handles.
  */
 interface CacheStorageFactory {
     /** Initialise the locator (reads user.home etc.) with the cache id and base name. */
@@ -27,4 +24,12 @@ interface CacheStorageFactory {
      * Open the random-seed store ("random.dat") under the cache directory, capacity [maxLen].
      */
     fun openRandomStore(maxLen: Long): CacheStore
+
+    /**
+     * Open a per-user preferences store.  Mirrors Class297.method2241:
+     *  - filename = "jagex_{baseName}_preferences{suffix}{ext}"
+     *  - [variant] 33 → "_rc.dat", 34 → "_wip.dat", else → ".dat"
+     * Returns null if no writable location is found.
+     */
+    fun openPreferences(suffix: String?, variant: Int): CacheStore?
 }

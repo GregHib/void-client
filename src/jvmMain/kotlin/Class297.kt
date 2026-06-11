@@ -15,7 +15,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     private var aCallback_Sub1_3776: Callback_Sub1? = null
     @JvmField
     var aBoolean3777: Boolean = false
-    private val aCacheStorage: CacheStorageFactory = FileCacheStorage()
+    internal val aCacheStorage: CacheStorageFactory = FileCacheStorage()
     @JvmField
     var aClass234_3779: CacheStore? = null
     @JvmField
@@ -468,26 +468,8 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         }
 
         private fun method2241(string: String?, i: Int, string_14_: String?, i_15_: Int): CacheStore? {
-            val string_16_: String?
-            if (i_15_ == 33) string_16_ = "jagex_" + string_14_ + "_preferences" + string + "_rc.dat"
-            else if (i_15_ != 34) string_16_ = "jagex_" + string_14_ + "_preferences" + string + ".dat"
-            else string_16_ = "jagex_" + string_14_ + "_preferences" + string + "_wip.dat"
             if (i != 12606) return null
-            val strings = arrayOf<String>("c:/rscache/", "/rscache/", aString3800!!, "c:/windows/", "c:/winnt/", "c:/", "/tmp/", "")
-            var i_17_ = 0
-            while (strings.size > i_17_) {
-                val string_18_ = strings[i_17_]
-                if (string_18_.length <= 0 || File(string_18_).exists()) {
-                    try {
-                        val class234 = Class234(File(string_18_, string_16_), "rw", 10000L)
-                        return class234
-                    } catch (exception: Exception) {
-                        /* empty */
-                    }
-                }
-                i_17_++
-            }
-            return null
+            return Class348_Sub23_Sub1.aClass297_8992!!.aCacheStorage.openPreferences(string, i_15_)
         }
     }
 }
