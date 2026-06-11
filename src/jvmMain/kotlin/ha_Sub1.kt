@@ -8,7 +8,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     private var anInt7465 = 0
     private var anInt7466 = 0
     private var aClass356_7467: Class356?
-    private var aCanvas7468: Canvas? = null
+    private var aCanvas7468: AwtDisplayTarget? = null
     @JvmField
     var aClass348_Sub31_7469: GameSurface? = null
     private var aBoolean7470 = false
@@ -806,7 +806,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     override fun method3701(canvas: Canvas?) {
-        if (aCanvas7468 === canvas) method3677(null)
+        if (aCanvas7468?.canvas === canvas) method3677(null)
         val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 != null) class348_sub31.method2715(100.toByte())
     }
@@ -1506,10 +1506,9 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         } else {
             val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
             if (class348_sub31 != null) {
-                aCanvas7468 = canvas
-                val dimension = canvas.getSize()
-                anInt7465 = dimension.width
-                anInt7472 = dimension.height
+                aCanvas7468 = AwtDisplayTarget(canvas)
+                anInt7465 = aCanvas7468!!.width
+                anInt7472 = aCanvas7468!!.height
                 this.aClass348_Sub31_7469 = class348_sub31
                 if (aClass49_7475 == null) {
                     this.anIntArray7483 = class348_sub31.anIntArray6916
@@ -2049,7 +2048,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
             // present(clipX=0, clipY=i, width=anInt7465, height=anInt7472, srcX=0, srcY=i_572_, restoreClip=true)
             this.aClass348_Sub31_7469!!.present(0, i, anInt7465, anInt7472, 0, i_572_, true)
         } catch (exception: Exception) {
-            aCanvas7468!!.repaint()
+            aCanvas7468!!.requestRepaint()
         }
     }
 
@@ -2073,10 +2072,9 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
             class348_sub31.method2715(95.toByte())
             class348_sub31 = Class110.method1035(9029, i_578_, canvas, i)!!
             aClass356_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
-            if (aCanvas7468 === canvas && aClass49_7475 == null) {
-                val dimension = canvas!!.getSize()
-                anInt7465 = dimension.width
-                anInt7472 = dimension.height
+            if (aCanvas7468?.canvas === canvas && aClass49_7475 == null) {
+                anInt7465 = aCanvas7468!!.width
+                anInt7472 = aCanvas7468!!.height
                 this.aClass348_Sub31_7469 = class348_sub31
                 this.anIntArray7483 = class348_sub31.anIntArray6916
                 this.anInt7477 = class348_sub31.anInt6917
@@ -2347,7 +2345,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
                 if (rectangle.x + i_631_ <= this.anInt7477 && rectangle.y + i_632_ <= anInt7486 && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0) this.aClass348_Sub31_7469!!.present(rectangle.x, rectangle.y, rectangle.width, rectangle.height, rectangle.x + i_631_, rectangle.y + i_632_, true)
             }
         } catch (exception: Exception) {
-            aCanvas7468!!.repaint()
+            aCanvas7468!!.requestRepaint()
         }
     }
 

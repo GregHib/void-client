@@ -80,4 +80,7 @@ interface GameSurfaceFactory {
 interface DisplayTarget {
     val width: Int
     val height: Int
+
+    /** Ask the platform to repaint the display (renderer's blit-failure recovery path). */
+    fun requestRepaint()
 }

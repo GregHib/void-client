@@ -15,4 +15,7 @@ class AwtDisplayTarget(@JvmField val canvas: Canvas) : DisplayTarget {
 
     /** The current paint surface; sourced fresh per present, mirroring `aCanvas7468.getGraphics()`. */
     fun graphics(): Graphics? = canvas.getGraphics()
+
+    /** Ask the platform to repaint (mirrors `aCanvas7468.repaint()`, the renderer's blit-failure path). */
+    override fun requestRepaint() = canvas.repaint()
 }
