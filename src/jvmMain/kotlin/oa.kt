@@ -126,7 +126,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     fun method3973(): a? {
         for (i in 0..<this.anInt5141) {
-            if (anAArray5143!![i]!!.aRunnable5112 === Thread.currentThread()) return anAArray5143!![i]
+            if (anAArray5143!![i]!!.aRunnable5112 === currentThread()) return anAArray5143!![i]
         }
         return null
     }

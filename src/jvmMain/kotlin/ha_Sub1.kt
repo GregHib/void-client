@@ -274,7 +274,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3685(class98: Class98, i: Int) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_65_ !== class318_sub9) {
@@ -414,7 +414,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3705(): Class101 {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         return class167!!.aClass101_Sub1_2209!!
     }
 
@@ -576,7 +576,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun f(i: Int, i_156_: Int) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         this.anInt7482 = i
         this.anInt7494 = i_156_
         class167!!.anInt2210 = this.anInt7494 - 255
@@ -745,7 +745,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3684(class98: Class98) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_208_ !== class318_sub9) {
@@ -998,7 +998,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         var i_273_ = i_273_
         var i_275_ = i_275_
         var i_276_ = i_276_
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class109 = class167!!.aClass109_2220!!
         class109.aBoolean1669 = false
         i -= this.anInt7509
@@ -1047,7 +1047,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     public override fun C(bool: Boolean) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         class167!!.aBoolean2202 = bool
     }
 
@@ -1426,7 +1426,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun EA(i: Int, i_387_: Int, i_388_: Int, i_389_: Int) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         class167!!.anInt2211 = i
         class167.anInt2192 = i_387_
         class167.anInt2197 = i_388_
@@ -1796,7 +1796,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     override fun method3688(i: Int, i_494_: Int, i_495_: Int, i_496_: Int, i_497_: Int, i_498_: Int, i_499_: Int) {
         var i = i
         var i_494_ = i_494_
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class109 = class167!!.aClass109_2220!!
         var i_500_ = i_495_ - i
         var i_501_ = i_496_ - i_494_
@@ -2318,7 +2318,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3659(i: Int) {
-        aClass167Array7480!![i]!!.method1291(10000, Thread.currentThread())
+        aClass167Array7480!![i]!!.method1291(10000, currentThread())
     }
 
     @Throws(Exception_Sub1::class)

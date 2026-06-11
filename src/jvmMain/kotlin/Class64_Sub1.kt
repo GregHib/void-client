@@ -3422,7 +3422,7 @@ class Class64_Sub1 : Class64 {
         aFloatArrayArray5314 = arrayOfNulls<FloatArray>(anInt5351)
         aFloatArrayArray5345 = arrayOfNulls<FloatArray>(anInt5351)
         val class358 = method565(255, anInt5351, class124, `is`)!!
-        val class167: Class167 = aHa_Sub1_5353.method3724(Thread.currentThread())!!
+        val class167: Class167 = aHa_Sub1_5353.method3724(currentThread())!!
         val fs = class167.aFloatArray2226!!
         var bool_802_ = false
         for (i_803_ in 0..<anInt5351) {
