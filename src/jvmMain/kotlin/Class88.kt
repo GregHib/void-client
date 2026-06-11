@@ -9,7 +9,6 @@ import Class348_Sub40_Sub7.Companion.method3064
 import OutputStream_Sub1.Companion.method132
 import s_Sub2.Companion.method4002
 import za_Sub1.Companion.method3439
-import java.net.Socket
 import java.net.URL
 
 class Class88 {
@@ -161,7 +160,7 @@ class Class88 {
                     if (Class225.anInt2955 == 2) {
                         if (Class130_Sub1.aClass144_5800!!.anInt1997 == 2) throw IOException()
                         if (Class130_Sub1.aClass144_5800!!.anInt1997 != 1) return
-                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((Class130_Sub1.aClass144_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
+                        Class348_Sub40_Sub8.aClass238_9165 = (Class130_Sub1.aClass144_5800!!.anObject1998) as Class238
                         Class130_Sub1.aClass144_5800 = null
                         method2739(0)
                         val class348_sub47 = Class203.method1478(true)

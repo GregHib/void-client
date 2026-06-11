@@ -1,7 +1,5 @@
 import Class239_Sub18.Companion.method1802
 import java.awt.Canvas
-import java.net.Socket
-
 abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : Class348() {
     @JvmField
     var aBoolean6621: Boolean = false
@@ -126,7 +124,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
                         if (Class367_Sub2.anInt7297 == 2) {
                             if (Class130_Sub1.aClass144_5800!!.anInt1997 == 2) throw IOException()
                             if (Class130_Sub1.aClass144_5800!!.anInt1997 != 1) return
-                            Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982(((Class130_Sub1.aClass144_5800!!.anObject1998) as Socket), 24.toByte(), 7500)
+                            Class348_Sub40_Sub8.aClass238_9165 = (Class130_Sub1.aClass144_5800!!.anObject1998) as Class238
                             Class130_Sub1.aClass144_5800 = null
                             method1802(0)
                             Class367_Sub2.anInt7297 = 4
