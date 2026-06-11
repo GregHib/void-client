@@ -1,7 +1,6 @@
 import Class239_Sub27.Companion.method1839
 import Class348_Sub5.Companion.method2753
 import Class55.Companion.method515
-import java.awt.Canvas
 
 abstract class ha internal constructor(@JvmField var aD4579: d?) {
     @JvmField
@@ -70,7 +69,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
 
     abstract fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?)
 
-    abstract fun method3643(canvas: Canvas?, i: Int, i_40_: Int)
+    abstract fun method3643(displayTarget: DisplayTarget?, i: Int, i_40_: Int)
 
     abstract fun method3644(): Boolean
 
@@ -168,7 +167,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
 
     abstract fun HA(i: Int, i_110_: Int, i_111_: Int, i_112_: Int, `is`: IntArray?)
 
-    abstract fun method3669(canvas: Canvas?, i: Int, i_113_: Int)
+    abstract fun method3669(displayTarget: DisplayTarget?, i: Int, i_113_: Int)
 
     abstract fun method3670(): Boolean
 
@@ -191,7 +190,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
 
     abstract fun method3676(i: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, i_134_: Int, i_135_: Int, i_136_: Int, i_137_: Int, i_138_: Int, i_139_: Int, i_140_: Int, i_141_: Int)
 
-    abstract fun method3677(canvas: Canvas?)
+    abstract fun method3677(displayTarget: DisplayTarget?)
 
     abstract fun method3678(i: Int)
 
@@ -266,7 +265,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
 
     abstract fun A(i: Int, var_aa: aa?, i_182_: Int, i_183_: Int)
 
-    abstract fun method3701(canvas: Canvas?)
+    abstract fun method3701(displayTarget: DisplayTarget?)
 
     abstract fun method3702(i: Int): za?
 

@@ -82,9 +82,9 @@ import kotlin.math.sqrt
 public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
     private var anInt7523 = 0
     private val aLong7553: Long
-    private var aCanvas7575: Canvas? = null
+    private var aCanvas7575: DisplayTarget? = null
     private val aHashtable7577: Hashtable<Any?, Any?> = Hashtable<Any?, Any?>()
-    private var aCanvas7626: Canvas? = null
+    private var aCanvas7626: DisplayTarget? = null
     private var aLong7636: Long = 0
     @JvmField
     var anInt7641: Int = 0
@@ -621,9 +621,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
     private fun method3745(i: Byte) {
         anInt7680++
         if (aCanvas7575 != null) {
-            val dimension = aCanvas7575!!.getSize()
-            anInt7645 = dimension.width
-            anInt7523 = dimension.height
+            anInt7645 = aCanvas7575!!.width
+            anInt7523 = aCanvas7575!!.height
         } else {
             anInt7523 = 0
             anInt7645 = anInt7523
@@ -1289,17 +1288,17 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         Class239_Sub26.aFloat6120 = f_138_
     }
 
-    override fun method3701(canvas: Canvas?) {
+    override fun method3701(displayTarget: DisplayTarget?) {
         do {
             try {
                 anInt7674++
-                if (canvas === aCanvas7626) throw RuntimeException()
-                if (!aHashtable7577.containsKey(canvas)) break
-                val var_long = aHashtable7577.get(canvas) as Long
-                anOpenGL7664!!.releaseSurface(canvas, var_long)
-                aHashtable7577.remove(canvas)
+                if (displayTarget === aCanvas7626) throw RuntimeException()
+                if (!aHashtable7577.containsKey(displayTarget)) break
+                val var_long = aHashtable7577.get(displayTarget) as Long
+                anOpenGL7664!!.releaseSurface((displayTarget as AwtDisplayTarget?)?.canvas, var_long)
+                aHashtable7577.remove(displayTarget)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "qo.AG(" + (if (canvas != null) "{...}" else "null") + ')')
+                throw Class348_Sub17.method2929(runtimeexception, "qo.AG(" + (if (displayTarget != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -1390,9 +1389,9 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             method3797(0)
             val enumeration = aHashtable7577.keys()
             while (enumeration.hasMoreElements()) {
-                val canvas = enumeration.nextElement() as Canvas?
-                val var_long = aHashtable7577.get(canvas) as Long
-                anOpenGL7664!!.releaseSurface(canvas, var_long)
+                val displayTarget = enumeration.nextElement() as DisplayTarget?
+                val var_long = aHashtable7577.get(displayTarget) as Long
+                anOpenGL7664!!.releaseSurface((displayTarget as AwtDisplayTarget?)?.canvas, var_long)
             }
             anOpenGL7664!!.release()
             anOpenGL7664 = null
@@ -1573,19 +1572,20 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         }
     }
 
-    override fun method3643(canvas: Canvas?, i: Int, i_177_: Int) {
+    override fun method3643(displayTarget: DisplayTarget?, i: Int, i_177_: Int) {
         do {
             try {
                 anInt7544++
-                if (aCanvas7626 === canvas) throw RuntimeException()
-                if (aHashtable7577.containsKey(canvas)) break
+                if (aCanvas7626 === displayTarget) throw RuntimeException()
+                if (aHashtable7577.containsKey(displayTarget)) break
+                val canvas = (displayTarget as AwtDisplayTarget?)?.canvas
                 if (!canvas!!.isShowing()) throw RuntimeException()
                 canvas.setIgnoreRepaint(true)
                 val l = anOpenGL7664!!.prepareSurface(canvas)
                 if (l == -1L) throw RuntimeException()
-                aHashtable7577.put(canvas, l)
+                aHashtable7577.put(displayTarget, l)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_177_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("qo.VF(" + (if (displayTarget != null) "{...}" else "null") + ',' + i + ',' + i_177_ + ')'))
             }
             break
         } while (false)
@@ -1948,23 +1948,23 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         method3811(11.toByte())
     }
 
-    override fun method3669(canvas: Canvas?, i: Int, i_231_: Int) {
+    override fun method3669(displayTarget: DisplayTarget?, i: Int, i_231_: Int) {
         do {
             try {
                 anInt7701++
                 var l = 0L
-                if (canvas != null && aCanvas7626 !== canvas) {
-                    if (aHashtable7577.containsKey(canvas)) {
-                        val var_long = aHashtable7577.get(canvas) as Long
+                if (displayTarget != null && aCanvas7626 !== displayTarget) {
+                    if (aHashtable7577.containsKey(displayTarget)) {
+                        val var_long = aHashtable7577.get(displayTarget) as Long
                         l = var_long
                     }
                 } else l = aLong7553
                 if (l == 0L) throw RuntimeException()
                 anOpenGL7664!!.surfaceResized(l)
-                if (aCanvas7575 !== canvas) break
+                if (aCanvas7575 !== displayTarget) break
                 method3745(117.toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qo.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_231_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("qo.HF(" + (if (displayTarget != null) "{...}" else "null") + ',' + i + ',' + i_231_ + ')'))
             }
             break
         } while (false)
@@ -2664,24 +2664,24 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         }
     }
 
-    override fun method3677(canvas: Canvas?) {
+    override fun method3677(displayTarget: DisplayTarget?) {
         try {
             aCanvas7575 = null
             anInt7621++
             aLong7636 = 0L
-            if (canvas == null || canvas === aCanvas7626) {
+            if (displayTarget == null || displayTarget === aCanvas7626) {
                 aCanvas7575 = aCanvas7626
                 aLong7636 = aLong7553
-            } else if (aHashtable7577.containsKey(canvas)) {
-                val var_long = aHashtable7577.get(canvas) as Long
+            } else if (aHashtable7577.containsKey(displayTarget)) {
+                val var_long = aHashtable7577.get(displayTarget) as Long
                 aLong7636 = var_long
-                aCanvas7575 = canvas
+                aCanvas7575 = displayTarget
             }
             if (aCanvas7575 == null || aLong7636 == 0L) throw RuntimeException()
             anOpenGL7664!!.setSurface(aLong7636)
             method3745(92.toByte())
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "qo.MF(" + (if (canvas != null) "{...}" else "null") + ')')
+            throw Class348_Sub17.method2929(runtimeexception, "qo.MF(" + (if (displayTarget != null) "{...}" else "null") + ')')
         }
     }
 
@@ -3011,7 +3011,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         this.anIntArray7883 = IntArray(1)
         this.anIntArray7882 = IntArray(1)
         try {
-            aCanvas7626 = canvas
+            aCanvas7626 = if (canvas != null) AwtDisplayTarget(canvas) else null
             aCanvas7575 = aCanvas7626
             this.anInt7713 = i
             if (!Class348_Sub40_Sub19.method3098(-30282, "jaclib")) throw RuntimeException("")

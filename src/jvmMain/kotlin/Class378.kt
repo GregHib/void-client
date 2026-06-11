@@ -4,7 +4,7 @@ import jagdx.IDirect3D.Companion.a
 import jagdx.ue.a
 import java.awt.Canvas
 
-class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_d: d?, class45: Class45?, i_39_: Int) : ha_Sub3(canvas, class53, var_d, class45, i_39_, 0) {
+class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: hb, idirect3d: IDirect3D?, idirect3ddevice: IDirect3DDevice, class53: Class53?, d3dpresent_parameters: D3DPRESENT_PARAMETERS?, d3dcaps: D3DCAPS?, var_d: d?, class45: Class45?, i_39_: Int) : ha_Sub3(if (canvas != null) AwtDisplayTarget(canvas) else null, class53, var_d, class45, i_39_, 0) {
     private val aBooleanArray9784: BooleanArray
     private var anInt9785 = 0
     private var aBooleanArray9786: BooleanArray?
@@ -191,7 +191,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 11, i_18_)
     }
 
-    override fun method3911(canvas: Canvas?, i: Int, `object`: Any?) {
+    override fun method3911(displayTarget: DisplayTarget?, i: Int, `object`: Any?) {
         if (i != 1) anIDirect3D9793 = null
     }
 
@@ -268,7 +268,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         return (a(anIDirect3D9793!!.a(anInt9799, d3ddisplaymode), !bool) && a((anIDirect3D9793!!.CheckDeviceFormat(anInt9799, anInt9807, d3ddisplaymode.Format, 0, 4, method3958(22, class68, class304))), false))
     }
 
-    override fun method3881(`object`: Any?, i: Byte, canvas: Canvas?) {
+    override fun method3881(`object`: Any?, i: Byte, displayTarget: DisplayTarget?) {
         if (i.toInt() == 99) aClass53_9787 = `object` as Class53?
     }
 
@@ -523,7 +523,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         return -0.5f
     }
 
-    override fun method3876(i: Int, canvas: Canvas?): Any? {
+    override fun method3876(i: Int, displayTarget: DisplayTarget?): Any? {
         if (i != -1) return null
         return null
     }
@@ -700,10 +700,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         return Class310_Sub2(this, class304!!, class68!!, i_74_, i)
     }
 
-    override fun method3844(i: Int, canvas: Canvas?, `object`: Any?) {
-        if (canvas === this.aCanvas7925) {
-            val dimension = canvas!!.getSize()
-            if (dimension.width > 0 && 0 < dimension.height) {
+    override fun method3844(i: Int, displayTarget: DisplayTarget?, `object`: Any?) {
+        if (displayTarget === this.aCanvas7925) {
+            if (displayTarget!!.width > 0 && 0 < displayTarget.height) {
                 this.anIDirect3DDevice9810!!.EndScene()
                 method3960(false)
                 this.anIDirect3DDevice9810!!.BeginScene()

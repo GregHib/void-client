@@ -7,21 +7,20 @@ import jaclib.memory.heap.NativeHeap
 import jaclib.memory.heap.NativeHeapBuffer
 import jagex3.graphics2.hw.NativeInterface
 import r_Sub2.Companion.method3297
-import java.awt.Canvas
 import java.util.*
 import kotlin.math.cos
 import kotlin.math.max
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Class45?, i: Int, i_289_: Int) : ha(var_d) {
+abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class45: Class45?, i: Int, i_289_: Int) : ha(var_d) {
     var aNativeHeap7891: NativeHeap? = null
     var aLong7905: Long = 0
-    private var aCanvas7910: Canvas? = null
+    private var aCanvas7910: DisplayTarget? = null
     var anObject7919: Any? = null
     @JvmField
     var aNativeInterface7924: NativeInterface? = null
-    var aCanvas7925: Canvas? = null
+    var aCanvas7925: DisplayTarget? = null
     private var aClass262_7927: Class262? = Class262()
     var anInt7931: Int = 0
     var aClass269_7937: Class269? = null
@@ -467,7 +466,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
             }
             val enumeration = aHashtable8014!!.keys()
             while (enumeration.hasMoreElements()) {
-                val canvas = enumeration.nextElement() as Canvas?
+                val canvas = enumeration.nextElement() as DisplayTarget?
                 method3911(canvas, 1, aHashtable8014!!.get(canvas))
             }
             method2173(true, -125, false)
@@ -760,7 +759,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         this.anInt8125 = 1 shl this.anInt8107
     }
 
-    abstract fun method3844(i: Int, canvas: Canvas?, `object`: Any?)
+    abstract fun method3844(i: Int, displayTarget: DisplayTarget?, `object`: Any?)
 
     override fun aa(i: Int, i_70_: Int, i_71_: Int, i_72_: Int, i_73_: Int, i_74_: Int) {
         method3903(false)
@@ -908,19 +907,19 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         }
     }
 
-    override fun method3669(canvas: Canvas?, i: Int, i_90_: Int) {
+    override fun method3669(displayTarget: DisplayTarget?, i: Int, i_90_: Int) {
         do {
             try {
                 anInt8025++
                 var `object`: Any? = null
-                if (canvas == null || canvas === this.aCanvas7925) `object` = anObject8020
-                else if (aHashtable8014!!.containsKey(canvas)) `object` = aHashtable8014!!.get(canvas)
+                if (displayTarget == null || displayTarget === this.aCanvas7925) `object` = anObject8020
+                else if (aHashtable8014!!.containsKey(displayTarget)) `object` = aHashtable8014!!.get(displayTarget)
                 if (`object` == null) throw RuntimeException()
-                method3844(12727, canvas, `object`)
-                if (canvas !== aCanvas7910) break
+                method3844(12727, displayTarget, `object`)
+                if (displayTarget !== aCanvas7910) break
                 method3917(false)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("wga.HF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_90_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("wga.HF(" + (if (displayTarget != null) "{...}" else "null") + ',' + i + ',' + i_90_ + ')'))
             }
             break
         } while (false)
@@ -1235,7 +1234,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         return this.anInt8095
     }
 
-    abstract fun method3876(i: Int, canvas: Canvas?): Any?
+    abstract fun method3876(i: Int, displayTarget: DisplayTarget?): Any?
 
     override fun la() {
         this.anInt8183 = this.anInt7931
@@ -1317,7 +1316,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
 
     abstract fun method3880(class68: Class68?, class304: Class304?, i: Byte): Boolean
 
-    abstract fun method3881(`object`: Any?, i: Byte, canvas: Canvas?)
+    abstract fun method3881(`object`: Any?, i: Byte, displayTarget: DisplayTarget?)
 
     open fun method3882(i: Byte) {
         if (i < 45) this.aFloat8174 = -0.73899394f
@@ -1554,7 +1553,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         if (aHashtable8014 != null && !aHashtable8014!!.isEmpty()) {
             val enumeration = aHashtable8014!!.keys()
             while (enumeration.hasMoreElements()) {
-                val canvas = enumeration.nextElement() as Canvas?
+                val canvas = enumeration.nextElement() as DisplayTarget?
                 hashtable.put(canvas, method3876(-1, canvas))
             }
         }
@@ -1617,19 +1616,20 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         if (aClass367_8143 != null) aClass367_8143!!.method3532(10425)
     }
 
-    override fun method3643(canvas: Canvas?, i: Int, i_195_: Int) {
+    override fun method3643(displayTarget: DisplayTarget?, i: Int, i_195_: Int) {
         do {
             try {
                 anInt7955++
-                if (canvas === this.aCanvas7925) throw RuntimeException()
-                if (aHashtable8014!!.containsKey(canvas)) break
+                if (displayTarget === this.aCanvas7925) throw RuntimeException()
+                if (aHashtable8014!!.containsKey(displayTarget)) break
+                val canvas = (displayTarget as AwtDisplayTarget?)?.canvas
                 if (!canvas!!.isShowing()) throw RuntimeException()
                 canvas.setIgnoreRepaint(true)
-                val `object` = method3876(-1, canvas)
+                val `object` = method3876(-1, displayTarget)
                 if (`object` == null) throw RuntimeException()
-                aHashtable8014!!.put(canvas, `object`)
+                aHashtable8014!!.put(displayTarget, `object`)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("wga.VF(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + i_195_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("wga.VF(" + (if (displayTarget != null) "{...}" else "null") + ',' + i + ',' + i_195_ + ')'))
             }
             break
         } while (false)
@@ -1788,7 +1788,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         if (aClass372_8137 != null) aClass372_8137.method3585(7271)
     }
 
-    abstract fun method3911(canvas: Canvas?, i: Int, `object`: Any?)
+    abstract fun method3911(displayTarget: DisplayTarget?, i: Int, `object`: Any?)
 
     override fun method3654(): Class101 {
         anInt8060++
@@ -1888,9 +1888,8 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
             anInt7987 = 1
             anInt7958 = anInt7987
         } else {
-            val dimension = aCanvas7910!!.getSize()
-            anInt7987 = dimension.height
-            anInt7958 = dimension.width
+            anInt7987 = aCanvas7910!!.height
+            anInt7958 = aCanvas7910!!.width
         }
         if (bool != false) aHashtable8014 = null
         anInt8033++
@@ -1965,23 +1964,23 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         }
     }
 
-    override fun method3677(canvas: Canvas?) {
+    override fun method3677(displayTarget: DisplayTarget?) {
         try {
             anObject8020 = null
             anInt7936++
             aCanvas7910 = null
-            if (canvas == null || canvas === this.aCanvas7925) {
+            if (displayTarget == null || displayTarget === this.aCanvas7925) {
                 anObject8020 = this.anObject7919
                 aCanvas7910 = this.aCanvas7925
-            } else if (aHashtable8014!!.containsKey(canvas)) {
-                anObject8020 = aHashtable8014!!.get(canvas)
-                aCanvas7910 = canvas
+            } else if (aHashtable8014!!.containsKey(displayTarget)) {
+                anObject8020 = aHashtable8014!!.get(displayTarget)
+                aCanvas7910 = displayTarget
             }
             if (aCanvas7910 == null || anObject8020 == null) throw RuntimeException()
             method3881(anObject8020, 99.toByte(), aCanvas7910)
             method3917(false)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, "wga.MF(" + (if (canvas != null) "{...}" else "null") + ')')
+            throw Class348_Sub17.method2929(runtimeexception, "wga.MF(" + (if (displayTarget != null) "{...}" else "null") + ')')
         }
     }
 
@@ -2067,7 +2066,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         anInt7911++
         val enumeration = aHashtable8014!!.keys()
         while (enumeration.hasMoreElements()) {
-            val canvas = enumeration.nextElement() as Canvas?
+            val canvas = enumeration.nextElement() as DisplayTarget?
             method3911(canvas, 1, aHashtable8014!!.get(canvas))
         }
         anInterface5_Impl1_8193!!.method21(23315)
@@ -2122,16 +2121,16 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
 
     abstract fun method3928(i: Int)
 
-    override fun method3701(canvas: Canvas?) {
+    override fun method3701(displayTarget: DisplayTarget?) {
         do {
             try {
                 anInt7906++
-                if (this.aCanvas7925 === canvas) throw RuntimeException()
-                if (!aHashtable8014!!.containsKey(canvas)) break
-                method3911(canvas, 1, aHashtable8014!!.get(canvas))
-                aHashtable8014!!.remove(canvas)
+                if (this.aCanvas7925 === displayTarget) throw RuntimeException()
+                if (!aHashtable8014!!.containsKey(displayTarget)) break
+                method3911(displayTarget, 1, aHashtable8014!!.get(displayTarget))
+                aHashtable8014!!.remove(displayTarget)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, "wga.AG(" + (if (canvas != null) "{...}" else "null") + ')')
+                throw Class348_Sub17.method2929(runtimeexception, "wga.AG(" + (if (displayTarget != null) "{...}" else "null") + ')')
             }
             break
         } while (false)
@@ -2501,10 +2500,9 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
                 aCanvas7910 = this.aCanvas7925
                 this.anObject7919 = `object`
                 anObject8020 = this.anObject7919
-                val dimension = canvas!!.getSize()
-                anInt7987 = dimension.height
+                anInt7987 = canvas!!.height
                 this.anInt7962 = anInt7987
-                anInt7958 = dimension.width
+                anInt7958 = canvas.width
                 this.anInt7931 = anInt7958
                 this.anInt8178 = i_289_
                 Class59_Sub2_Sub1.method566(false, true, (-127).toByte())

@@ -64,7 +64,7 @@ import jaggl.OpenGL.Companion.glViewport
 import java.awt.Canvas
 import java.util.*
 
-class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Class45?, i: Int) : ha_Sub3(canvas, l, var_d, class45, i, 1) {
+class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Class45?, i: Int) : ha_Sub3(if (canvas != null) AwtDisplayTarget(canvas) else null, l, var_d, class45, i, 1) {
     private var anOpenGL9856: OpenGL? = null
     private val aClass262_9869 = Class262()
     private var aClass262_9899: Class262? = Class262()
@@ -211,7 +211,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         }
     }
 
-    override fun method3881(`object`: Any?, i: Byte, canvas: Canvas?) {
+    override fun method3881(`object`: Any?, i: Byte, displayTarget: DisplayTarget?) {
         try {
             anInt9880++
             if (i.toInt() == 99) {
@@ -219,7 +219,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
                 if (!anOpenGL9856!!.setSurface(var_long)) throw RuntimeException()
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.UB(" + (if (`object` != null) "{...}" else "null") + ',' + i + ',' + (if (displayTarget != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -467,15 +467,15 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         }
     }
 
-    override fun method3876(i: Int, canvas: Canvas?): Any {
+    override fun method3876(i: Int, displayTarget: DisplayTarget?): Any {
         try {
             anInt9894++
             if (i != -1) GA(-118)
-            val l = anOpenGL9856!!.prepareSurface(canvas)
+            val l = anOpenGL9856!!.prepareSurface((displayTarget as AwtDisplayTarget?)?.canvas)
             if (l == -1L) throw RuntimeException()
             return l
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.MC(" + i + ',' + (if (displayTarget != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -762,14 +762,14 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         super.method3823(107.toByte())
     }
 
-    override fun method3844(i: Int, canvas: Canvas?, `object`: Any?) {
+    override fun method3844(i: Int, displayTarget: DisplayTarget?, `object`: Any?) {
         try {
             if (i != 12727) anInt9925 = 5
             anInt9821++
             val var_long = `object` as Long
             anOpenGL9856!!.surfaceResized(var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (canvas != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.FC(" + i + ',' + (if (displayTarget != null) "{...}" else "null") + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -1085,14 +1085,14 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         anInt9895++
     }
 
-    override fun method3911(canvas: Canvas?, i: Int, `object`: Any?) {
+    override fun method3911(displayTarget: DisplayTarget?, i: Int, `object`: Any?) {
         try {
             anInt9822++
             val var_long = `object` as Long
             if (i != 1) this.anInt9918 = -120
-            anOpenGL9856!!.releaseSurface(canvas, var_long)
+            anOpenGL9856!!.releaseSurface((displayTarget as AwtDisplayTarget?)?.canvas, var_long)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bga.QD(" + (if (canvas != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("bga.QD(" + (if (displayTarget != null) "{...}" else "null") + ',' + i + ',' + (if (`object` != null) "{...}" else "null") + ')'))
         }
     }
 

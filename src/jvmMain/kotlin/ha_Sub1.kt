@@ -1,4 +1,3 @@
-import java.awt.Canvas
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min
@@ -805,9 +804,9 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         method3713()
     }
 
-    override fun method3701(canvas: Canvas?) {
-        if (aCanvas7468?.canvas === canvas) method3677(null)
-        val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+    override fun method3701(displayTarget: DisplayTarget?) {
+        if (aCanvas7468 === displayTarget) method3677(null)
+        val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 != null) class348_sub31.method2715(100.toByte())
     }
 
@@ -830,12 +829,12 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return false
     }
 
-    override fun method3643(canvas: Canvas?, i: Int, i_232_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+    override fun method3643(displayTarget: DisplayTarget?, i: Int, i_232_: Int) {
+        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 == null) {
-            class348_sub31 = Class110.method1035(9029, i_232_, canvas, i)
-            aClass356_7467!!.method3483(21.toByte(), canvas.hashCode().toLong(), class348_sub31)
-        } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_232_) method3669(canvas, i, i_232_)
+            class348_sub31 = Class110.method1035(9029, i_232_, (displayTarget as AwtDisplayTarget?)?.canvas, i)
+            aClass356_7467!!.method3483(21.toByte(), displayTarget.hashCode().toLong(), class348_sub31)
+        } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_232_) method3669(displayTarget, i, i_232_)
     }
 
     override fun b(i: Int, i_233_: Int, i_234_: Int, i_235_: Int, d: Double) {
@@ -1491,8 +1490,8 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         }
     }
 
-    override fun method3677(canvas: Canvas?) {
-        if (canvas == null) {
+    override fun method3677(displayTarget: DisplayTarget?) {
+        if (displayTarget == null) {
             aCanvas7468 = null
             this.aClass348_Sub31_7469 = null
             if (aClass49_7475 == null) {
@@ -1504,9 +1503,9 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
                 method3717()
             }
         } else {
-            val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+            val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
             if (class348_sub31 != null) {
-                aCanvas7468 = AwtDisplayTarget(canvas)
+                aCanvas7468 = displayTarget as AwtDisplayTarget
                 anInt7465 = aCanvas7468!!.width
                 anInt7472 = aCanvas7468!!.height
                 this.aClass348_Sub31_7469 = class348_sub31
@@ -2066,13 +2065,13 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         aClass60_7498.method590(0)
     }
 
-    override fun method3669(canvas: Canvas?, i: Int, i_578_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
+    override fun method3669(displayTarget: DisplayTarget?, i: Int, i_578_: Int) {
+        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 != null) {
             class348_sub31.method2715(95.toByte())
-            class348_sub31 = Class110.method1035(9029, i_578_, canvas, i)!!
-            aClass356_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
-            if (aCanvas7468?.canvas === canvas && aClass49_7475 == null) {
+            class348_sub31 = Class110.method1035(9029, i_578_, (displayTarget as AwtDisplayTarget?)?.canvas, i)!!
+            aClass356_7467!!.method3483(112.toByte(), displayTarget.hashCode().toLong(), class348_sub31)
+            if (aCanvas7468 === displayTarget && aClass49_7475 == null) {
                 anInt7465 = aCanvas7468!!.width
                 anInt7472 = aCanvas7468!!.height
                 this.aClass348_Sub31_7469 = class348_sub31
