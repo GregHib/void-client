@@ -130,10 +130,26 @@ no pixel-format conversion is needed.
    move to commonMain.
 5. (Later phases) add web/native `GameSurface` impls; HW toolkits untouched.
 
-## Status: steps 1–3 complete; renderer logic decoupled from AWT
+## Status: steps 1–3 + windowing-internals done; renderer logic decoupled from AWT
 The software renderer's pixel + blit path is fully behind `GameSurface` and JVM stays byte-identical.
-What remains before the commonMain move is purely the `ha`-base windowing boundary (Canvas params,
-getSize/repaint, hashCode cache key) — deferred as step 4's prerequisite above.
+
+### Windowing-internals pass — DONE (commit d6cee8b), under the "overload, don't touch HW" decision
+`DisplayTarget` gained `requestRepaint()`; `AwtDisplayTarget` implements it. In `ha_Sub1`, the
+`aCanvas7468` field is now `AwtDisplayTarget?` — size reads (`width`/`height`) and the blit-failure
+`repaint()` go through the portable interface; identity checks use `aCanvas7468?.canvas === canvas`.
+
+**Why ha_Sub1 still isn't commonMain-movable:** the user chose the *overload* approach (leave the
+`ha` base + GL/D3D toolkits on `Canvas`). So `ha_Sub1` retains `import java.awt.Canvas` for exactly
+5 sites — the `Canvas?` params on the 4 `ha`-override methods (`method3643/3669/3677/3701`) plus the
+constructor — all dictated by the shared `ha` base signatures. The `aClass356_7467` cache also still
+keys on `canvas.hashCode()`. These are the irreducible residue of NOT touching the HW toolkits.
+
+**To actually move ha_Sub1 to commonMain** (a future decision) requires the *full-convert* path that
+was declined here: change the 4 `ha`-base abstract methods to take `DisplayTarget` across
+`ha`/`ha_Sub2`/`ha_Sub3`/`oa` + the ~6 external call sites, with HW toolkits downcasting
+`DisplayTarget`→`AwtDisplayTarget` to recover the `Canvas` for their JNI/GL paths. Until then the
+GameSurface seam is "as decoupled as possible without touching HW" and the renderer logic (buffer,
+blit, size, repaint) is portable; only the windowing boundary type remains AWT.
 
 ## Scope boundaries / non-goals
 
