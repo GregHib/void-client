@@ -33,7 +33,6 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
         var anInt6874: Int = 0
         var aString6876: String?
         var aString6877: String?
-        @JvmField
         var anIntArray6878: IntArray? = null
 
         @JvmStatic

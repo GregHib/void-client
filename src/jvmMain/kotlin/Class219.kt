@@ -76,12 +76,10 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
         var aClass196_2864: Class196? = Class196()
         var anInt2865: Int = 0
         var anInt2867: Int = 0
-        @JvmField
         var aClass223_2868: Class223? = Class223(0, 1)
         var anInt2869: Int = 0
         var anInt2870: Int = 0
         var aByte2871: Byte = 0
-        @JvmField
         var anInt2872: Int = 0
         var anInt2874: Int = 0
         fun method1599(i: Byte, i_0_: Int, i_1_: Int): Boolean {

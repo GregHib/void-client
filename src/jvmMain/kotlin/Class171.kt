@@ -11,10 +11,8 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
 
     companion object {
         var anInt2267: Int = 0
-        @JvmField
         var aShort2269: Short = 32767
         var anInt2271: Int = 0
-        @JvmField
         var anIntArray2272: IntArray? = null
         var anInt2273: Int = 0
         var anInt2274: Int = 0

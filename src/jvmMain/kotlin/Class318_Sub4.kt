@@ -6,7 +6,6 @@ import Class33.Companion.method340
 class Class318_Sub4 : Class318() {
     var aBoolean6409: Boolean = false
     var aClass318_Sub1_6410: Class318_Sub1? = null
-    @JvmField
     var aClass318_Sub3Array6414: Array<Class318_Sub3?>? = null
 
     fun method2504(i: Int, i_32_: Int, var_ha: ha?, i_33_: Int): Boolean {
@@ -31,7 +30,6 @@ class Class318_Sub4 : Class318() {
     companion object {
         var anInt6407: Int = 0
         var anInt6408: Int = 0
-        @JvmField
         var anInt6411: Int = 0
         var anInt6412: Int = 0
         var anInt6413: Int = 0

@@ -67,32 +67,20 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
     }
 
     companion object {
-        @JvmField
         var anInt5277: Int = 0
-        @JvmField
         var anInt5281: Int = 0
-        @JvmField
         var anInt5282: Int = 0
-        @JvmField
         var anInt5283: Int = 0
-        @JvmField
         var anInt5284: Int = 0
-        @JvmField
         var anInt5286: Int = 0
         var aClass351_5288: Class351? = Class351(7, 6)
-        @JvmField
         var anInt5291: Int = 0
-        @JvmField
         var anInt5292: Int = 0
         var anInt5293: Int = 0
-        @JvmField
         var aClass105Array5294: Array<Class105?>? = null
-        @JvmField
         var anInt5295: Int = 0
         var aClass297_5297: Class297? = null
-        @JvmField
         var aFloat5299: Float = 0f
-        @JvmField
         var aBoolean5300: Boolean = false
 
         fun method551(i: Int, i_2_: Int, i_3_: Int, fs: FloatArray, i_4_: Int, i_5_: Int, i_6_: Int) {

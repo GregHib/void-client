@@ -14,15 +14,11 @@ import Class75.Companion.method749
 */
 class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) : Class348_Sub42() {
     companion object {
-        @JvmField
         var aBoolean9498: Boolean = false
         var anInt9500: Int = 0
-        @JvmField
         var anInt9501: Int
-        @JvmField
         var aShortArray9502: ShortArray?
         var aClass114_9503: Class114?
-        @JvmField
         var anInt9504: Int = 0
         var anIntArray9505: IntArray? = IntArray(3)
         var anInt9506: Int = 0

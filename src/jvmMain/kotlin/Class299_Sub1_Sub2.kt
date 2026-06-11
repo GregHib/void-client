@@ -188,21 +188,13 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Cl
     }
 
     companion object {
-        @JvmField
         var aClass348_Sub49_8698: Class348_Sub49? = null
-        @JvmField
         var anInt8699: Int = 0
-        @JvmField
         var anInt8700: Int = 0
-        @JvmField
         var anInt8702: Int = 0
-        @JvmField
         var anInt8703: Int = 0
-        @JvmField
         var anInt8704: Int = 0
-        @JvmField
         var anInt8705: Int = 0
-        @JvmField
         var aClass351_8706: Class351? = Class351(79, 3)
         @JvmStatic
         fun method2263(var_ha: ha?, i: Int, i_4_: Int): Class105? {

@@ -44,23 +44,14 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
     }
 
     companion object {
-        @JvmField
         var anInt7277: Int = 0
-        @JvmField
         var anInt7278: Int = 0
-        @JvmField
         var anInt7279: Int = 0
-        @JvmField
         var anInt7280: Int = 0
-        @JvmField
         var anInt7281: Int = 0
-        @JvmField
         var anInt7282: Int = 0
-        @JvmField
         var anInt7283: Int = 0
-        @JvmField
         var anInt7284: Int = 0
-        @JvmField
         var anInt7285: Int = 0
 
         @JvmStatic

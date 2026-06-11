@@ -15,21 +15,13 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
     }
 
     companion object {
-        @JvmField
         var aClass262_8810: Class262? = Class262()
-        @JvmField
         var anInt8811: Int = 0
-        @JvmField
         var anInt8812: Int = 0
-        @JvmField
         var anInt8813: Int = 0
-        @JvmField
         var anInt8814: Int = 0
-        @JvmField
         var aClass308_8815: Class308? = Class308(16)
-        @JvmField
         var aByteArrayArray8816: Array<ByteArray?>? = null
-        @JvmField
         var aClass114_8817: Class114? = Class114(83, 2)
 
         @JvmStatic

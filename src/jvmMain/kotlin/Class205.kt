@@ -8,17 +8,13 @@ import Class85.Companion.method831
 object Class205 {
     var anInt2685: Int = 0
     var aClass351_2686: Class351?
-    @JvmField
     var aFloat2687: Float = 0.0f
     var anInt2688: Int = 0
-    @JvmField
     var anInt2689: Int = 0
     var anInt2690: Int = 0
-    @JvmField
     var aClass351_2691: Class351?
     var aClass348_Sub44_2692: Class348_Sub44?
     var aClass114_2693: Class114?
-    @JvmField
     var anIntArray2694: IntArray?
 
     @JvmStatic

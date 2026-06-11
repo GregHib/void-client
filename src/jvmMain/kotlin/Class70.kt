@@ -11,15 +11,10 @@ class Class70 {
     }
 
     companion object {
-        @JvmField
         var anInt1203: Int = 0
-        @JvmField
         var anIntArray1204: IntArray?
-        @JvmField
         var anInt1205: Int = 0
-        @JvmField
         var anInt1206: Int = 0
-        @JvmField
         var anIntArray1207: IntArray? = IntArray(16384)
 
         @JvmStatic

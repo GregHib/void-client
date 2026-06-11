@@ -1,28 +1,19 @@
 import kotlin.math.atan2
 
-class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray?) : Class348() {
+class Class348_Sub8 internal constructor(var aByteArray6657: ByteArray?) : Class348() {
     companion object {
-        @JvmField
         var aHa6654: ha? = null
-        @JvmField
         var anIntArray6655: IntArray? = null
-        @JvmField
         var aBooleanArrayArray6656: Array<BooleanArray?>? = null
         private var aShortArray6658: ShortArray?
-        @JvmField
         var anInt6659: Int = 0
-        @JvmField
         var aClass241_6660: Class241? = null
         private var aShortArray6661: ShortArray? = shortArrayOf(967, 20428, -21577, 11219, -10290)
-        @JvmField
         var anApplet6662: GameApplet? = null
         private var aShortArray6663: ShortArray? = shortArrayOf(957, 20418, -21587, 11209, -10300)
-        @JvmField
         var aShortArrayArray6664: Array<ShortArray?>?
         private var aShortArray6665: ShortArray?
-        @JvmField
         var anIntArray6666: IntArray?
-        @JvmField
         var anInt6667: Int = 0
 
         @JvmStatic

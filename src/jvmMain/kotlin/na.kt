@@ -2,7 +2,6 @@
  * Visit http://jode.sourceforge.net/
  */
 class na(var_oa: oa?, var_ya: ya?, i: Int, i_2_: Int, `is`: IntArray?, is_3_: IntArray?) : aa(), Interface19 {
-    @JvmField
     var nativeid: Long = 0
 
     external override fun w(bool: Boolean)

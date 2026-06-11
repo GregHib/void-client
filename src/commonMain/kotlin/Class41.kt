@@ -2,11 +2,8 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class41 {
-    @JvmField
     var anInt559: Int = 0
-    @JvmField
     var anInt560: Int = 0
-    @JvmField
     var anInt561: Int = 0
 
     constructor()

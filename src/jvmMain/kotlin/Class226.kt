@@ -37,11 +37,9 @@ class Class226 internal constructor(i: Int, class45: Class45?, class45_3_: Class
     }
 
     companion object {
-        @JvmField
         var aClass356_2959: Class356? = Class356(512)
         var anInt2962: Int = 0
         var anInt2963: Int = 0
-        @JvmField
         var anInt2964: Int = 64
         @JvmStatic
         fun method1624(i: Int) {

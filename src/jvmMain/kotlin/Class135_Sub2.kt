@@ -52,16 +52,13 @@ class Class135_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
         var aClass251_4835: Class251? = Class251()
         var anInt4836: Int = 0
         var anInt4838: Int = 0
-        @JvmField
         var aClass161_4839: Class161? = null
         var anInt4840: Int = 0
         var anInt4841: Int = 0
         var anInt4842: Int = 0
-        @JvmField
         var aClass45_4843: Class45? = null
         var anInt4844: Int = 0
         private var aCharArray4845: CharArray? = CharArray(64)
-        @JvmField
         var aClass348_Sub42_Sub12_4846: Class348_Sub42_Sub12? = null
 
         @JvmStatic

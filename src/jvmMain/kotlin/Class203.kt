@@ -9,7 +9,6 @@ object Class203 {
     var anInt2672: Int = 0
     var anInt2673: Int = 0
 
-    @JvmField
     @Volatile
     var aBoolean2674: Boolean = false
     var anInt2675: Int = 0

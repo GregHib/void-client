@@ -37,25 +37,15 @@ class Class239_Sub29 : Class239 {
     }
 
     companion object {
-        @JvmField
         var anInt6144: Int = 0
-        @JvmField
         var anInt6145: Int = 0
-        @JvmField
         var anInt6146: Int = 0
-        @JvmField
         var aBoolean6147: Boolean = false
-        @JvmField
         var anInt6148: Int = 0
-        @JvmField
         var anInt6149: Int = 0
-        @JvmField
         var anInt6150: Int = 0
-        @JvmField
         var anInt6151: Int = 0
-        @JvmField
         var anInt6152: Int = 0
-        @JvmField
         var anInt6153: Int = 0
 
         @JvmStatic

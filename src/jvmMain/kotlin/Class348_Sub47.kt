@@ -22,7 +22,6 @@ class Class348_Sub47 : Class348() {
         var anInt7121: Int = 0
         var anInt7123: Int = 0
         var aClass114_7124: Class114? = Class114(62, 4)
-        @JvmField
         var anInt7125: Int = 1406
 
         @JvmStatic

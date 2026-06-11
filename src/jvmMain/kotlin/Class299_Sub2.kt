@@ -5,15 +5,10 @@ abstract class Class299_Sub2 : Class299() {
     abstract fun method2266(bool: Boolean): Interface18_Impl2?
 
     companion object {
-        @JvmField
         var anInt6324: Int = 0
-        @JvmField
         var anInt6325: Int = 0
-        @JvmField
         var anInt6326: Int = 0
-        @JvmField
         var aBoolean6327: Boolean = false
-        @JvmField
         var aClass78_6328: Class78? = null
 
         @JvmStatic

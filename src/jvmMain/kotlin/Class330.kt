@@ -301,7 +301,6 @@ class Class330 internal constructor(var_ha_Sub3: ha_Sub3?, var_s_Sub3: s_Sub3?) 
         var anInt4120: Int = 0
         var anInt4125: Int = 0
         var aClass114_4126: Class114? = Class114(5, 8)
-        @JvmField
         var aBoolean4127: Boolean = false
 
         @JvmStatic

@@ -4,14 +4,10 @@ import Class318_Sub9_Sub2.Companion.method2519
 import java.awt.Image
 
 class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
-    @JvmField
     var anInt4238: Int = 0
-    @JvmField
     var anInt4239: Int = 0
-    @JvmField
     var anInt4240: Int = 0
     var aClass342_4248: Class342? = null
-    @JvmField
     var aClass101_4252: Class101? = null
     fun method2685(i: Byte): Class174 {
         if (i.toInt() != -13) method2683(null, null, -120, 35, -33, null, 90, 71, null)
@@ -34,7 +30,6 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
         var anImage4249: Image? = null
         var anIntArray4250: IntArray? = IntArray(64)
         var anInt4251: Int = 0
-        @JvmField
         var anIntArrayArray4253: Array<IntArray?>? = null
         var aClass60_4254: Class60?
 

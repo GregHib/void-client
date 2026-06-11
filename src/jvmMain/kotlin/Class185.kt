@@ -58,7 +58,6 @@ class Class185 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     companion object {
         var anInt2481: Int = 0
-        @JvmField
         var anInt2482: Int = 0
         var aClass114_2483: Class114?
         var anInt2484: Int = 0
@@ -120,7 +119,6 @@ class Class185 internal constructor(class230: Class230?, i: Int, class45: Class4
             '\u00d1',
             '\u00df'
         )
-        @JvmField
         var aClass223_2489: Class223?
 
         @JvmStatic

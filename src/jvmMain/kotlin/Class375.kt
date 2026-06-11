@@ -2,17 +2,11 @@
 * Visit http://jode.sourceforge.net/
 */
 internal object Class375 {
-    @JvmField
     var anInt4539: Int = 0
-    @JvmField
     var aBoolean4540: Boolean = false
-    @JvmField
     var anInt4541: Int = 0
-    @JvmField
     var aBoolean4542: Boolean = false
-    @JvmField
     var aClass60_4543: Class60? = Class60(8)
-    @JvmField
     var anInt4544: Int = -1
     var anInt4545: Int = -1
 

@@ -81,10 +81,8 @@ class Class308 internal constructor(private var anInt3891: Int) {
         var anInt3879: Int = 0
         var anInt3880: Int = 0
         var anInt3881: Int = 0
-        @JvmField
         var aByteArrayArray3882: Array<ByteArray?>? = null
         var anIntArray3883: IntArray?
-        @JvmField
         var anInterface6Array3884: Array<Interface6?>? = arrayOfNulls<Interface6>(75)
         var anInt3885: Int = 0
         var anInt3886: Int = 0

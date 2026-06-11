@@ -235,7 +235,6 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_ha: ha?, class51: Class51
         var anInt10069: Int = 0
         var anInt10070: Int = 0
         var anInt10072: Int = 0
-        @JvmField
         var anInt10073: Int = 0
         var anInt10074: Int = 0
         var anInt10075: Int = 0
@@ -243,7 +242,6 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_ha: ha?, class51: Class51
         var anInt10078: Int = 0
         var anInt10080: Int = 0
         var anInt10083: Int = 0
-        @JvmField
         var anInt10084: Int = 0
         var anInt10085: Int = 0
         var anInt10086: Int = 0

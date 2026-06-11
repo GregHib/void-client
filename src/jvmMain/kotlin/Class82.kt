@@ -27,7 +27,6 @@ import java.io.FileOutputStream
 
 class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private val aClass45_1436: Class45?
-    @JvmField
     var anInt1439: Int = 0
 
     init {
@@ -41,13 +40,9 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
     }
 
     companion object {
-        @JvmField
         var aClass45_1434: Class45? = null
-        @JvmField
         var anInt1435: Int = 0
-        @JvmField
         var anInt1437: Int = 0
-        @JvmField
         var anInt1438: Int = 0
         @JvmStatic
         fun method811(i: Byte) {

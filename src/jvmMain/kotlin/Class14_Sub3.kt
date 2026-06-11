@@ -23,17 +23,11 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
     }
 
     companion object {
-        @JvmField
         var anInt8624: Int = 0
-        @JvmField
         var anInt8625: Int = 0
-        @JvmField
         var anInt8627: Int = 0
-        @JvmField
         var anInt8628: Int = 0
-        @JvmField
         var anInt8630: Int = 0
-        @JvmField
         var anInt8632: Int = 0
 
         @JvmStatic

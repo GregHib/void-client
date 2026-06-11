@@ -4,9 +4,7 @@
 abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class369?) : Interface1 {
     private var anInt4630 = 0
     private val aClass45_4631: Class45 = class45_15_
-    @JvmField
     var aClass45_4632: Class45? = null
-    @JvmField
     var aClass369_4635: Class369? = null
     private var aClass324_4637: Class324? = null
     private var aLong4640: Long = 0
@@ -78,23 +76,14 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
     }
 
     companion object {
-        @JvmField
         var anInt4627: Int = 0
-        @JvmField
         var anInt4628: Int = 0
-        @JvmField
         var anInt4629: Int = 0
-        @JvmField
         var anInt4633: Int = 0
-        @JvmField
         var anInt4634: Int = 0
-        @JvmField
         var aClass60_4636: Class60? = Class60(64)
-        @JvmField
         var anInt4638: Int = 0
-        @JvmField
         var anInt4639: Int = 0
-        @JvmField
         var anInt4641: Int = 0
 
         @JvmStatic

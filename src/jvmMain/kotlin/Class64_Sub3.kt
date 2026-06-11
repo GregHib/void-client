@@ -3457,136 +3457,71 @@ class Class64_Sub3 : Class64 {
     }
 
     companion object {
-        @JvmField
         var anInt5530: Int = 0
-        @JvmField
         var anInt5531: Int = 0
-        @JvmField
         var anInt5532: Int = 0
-        @JvmField
         var anInt5533: Int = 0
-        @JvmField
         var anInt5534: Int = 0
-        @JvmField
         var anInt5535: Int = 0
-        @JvmField
         var anInt5538: Int = 0
-        @JvmField
         var anInt5545: Int = 0
-        @JvmField
         var anInt5546: Int = 0
-        @JvmField
         var anInt5547: Int = 0
-        @JvmField
         var anInt5548: Int = 0
-        @JvmField
         var anInt5549: Int = 0
-        @JvmField
         var anInt5550: Int = 0
-        @JvmField
         var anInt5551: Int = 0
-        @JvmField
         var aClass261_5558: Class261? = null
-        @JvmField
         var anInt5560: Int = 0
-        @JvmField
         var anInt5561: Int = 0
-        @JvmField
         var anInt5562: Int = 0
-        @JvmField
         var anInt5565: Int = 0
-        @JvmField
         var anInt5567: Int = 0
-        @JvmField
         var anInt5568: Int = 0
-        @JvmField
         var anInt5569: Int = 0
-        @JvmField
         var anInt5570: Int = 0
-        @JvmField
         var anInt5574: Int = 0
-        @JvmField
         var anInt5577: Int = 0
-        @JvmField
         var anInt5578: Int = 0
-        @JvmField
         var anInt5582: Int = 0
-        @JvmField
         var anInt5584: Int = 0
-        @JvmField
         var anInt5585: Int = 0
-        @JvmField
         var anInt5587: Int = 0
-        @JvmField
         var anInt5588: Int = 0
-        @JvmField
         var anInt5589: Int = 0
-        @JvmField
         var anInt5590: Int = 0
-        @JvmField
         var anInt5597: Int = 0
-        @JvmField
         var anInt5599: Int = 0
-        @JvmField
         var aString5600: String? = ""
-        @JvmField
         var anInt5602: Int = 0
-        @JvmField
         var anInt5603: Int = 0
-        @JvmField
         var anInt5604: Int = 0
-        @JvmField
         var anInt5606: Int = 0
-        @JvmField
         var anInt5607: Int = 0
         var aBoolean5609: Boolean = false
-        @JvmField
         var anInt5611: Int = 0
-        @JvmField
         var anInt5612: Int = 0
-        @JvmField
         var anInt5613: Int = 0
-        @JvmField
         var anInt5614: Int = 0
-        @JvmField
         var anInt5615: Int = 0
-        @JvmField
         var anInt5616: Int = 0
-        @JvmField
         var anInt5618: Int = 0
-        @JvmField
         var anInt5619: Int = 0
-        @JvmField
         var anInt5622: Int = 0
-        @JvmField
         var anInt5623: Int = 0
-        @JvmField
         var anInt5624: Int = 0
-        @JvmField
         var anInt5625: Int = 0
-        @JvmField
         var anInt5628: Int = 0
-        @JvmField
         var anInt5630: Int = 0
-        @JvmField
         var anInt5631: Int = 0
-        @JvmField
         var anInt5633: Int = 0
-        @JvmField
         var anInt5635: Int = 0
-        @JvmField
         var anInt5636: Int = 0
-        @JvmField
         var anInt5637: Int = 0
-        @JvmField
         var anInt5639: Int = 0
-        @JvmField
         var anInt5641: Int = 0
-        @JvmField
         var anInt5643: Int = 0
-        @JvmField
         var anInt5650: Int = 0
-        @JvmField
         var anInt5651: Int = 0
 
         @JvmStatic

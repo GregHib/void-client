@@ -6,7 +6,6 @@ import Class169.Companion.method1301
 */
 class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: Class318_Sub1?, bool: Boolean, i_18_: Int) {
     private val aClass318_Sub1_3051: Class318_Sub1?
-    @JvmField
     var anInt3052: Int = 0
     private var anInt3053: Int
     private var anInt3054 = 0
@@ -15,7 +14,6 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
     private var aClass17_3057: Class17? = null
     private var aClass64_3059: Class64? = null
     private var anInt3060 = 0
-    @JvmField
     var anInt3063: Int = 0
     private var aBoolean3064 = false
     private val aBoolean3065: Boolean
@@ -25,9 +23,7 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
     private var aBooleanArray3072: BooleanArray? = null
     private var anInt3073: Int
     private var anInt3074 = 0
-    @JvmField
     var anInt3079: Int = 0
-    @JvmField
     var aClass318_Sub10_3081: Class318_Sub10? = null
     private var anInt3083 = 0
     private var anInt3084 = 0
@@ -321,12 +317,10 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
         var anInt3050: Int = 0
         var anInt3058: Int = 0
         var anInt3061: Int = 0
-        @JvmField
         var anInt3062: Int = 0
         var anInt3066: Int = 0
         var anIntArray3068: IntArray? = null
         var anInt3070: Int = 0
-        @JvmField
         var aClass78_3075: Class78? = null
         var anInt3076: Int = 0
         var anInt3077: Int = 0

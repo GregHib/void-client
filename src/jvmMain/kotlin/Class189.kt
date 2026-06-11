@@ -46,13 +46,10 @@ class Class189 {
 
     companion object {
         var anInt2521: Int = 0
-        @JvmField
         var anInt2523: Int = 0
-        @JvmField
         var anInt2524: Int = 0
         var aClass114_2527: Class114? = Class114(98, -2)
         var anInt2528: Int = 0
-        @JvmField
         var aClass278_2529: Class278? = null
         var anInt2532: Int = 0
         fun method1420(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, class361: Class361, i_13_: Int, i_14_: Int): Boolean {

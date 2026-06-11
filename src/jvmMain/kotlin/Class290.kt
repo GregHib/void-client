@@ -21,15 +21,12 @@ class Class290 internal constructor(var aBoolean3709: Boolean) {
 
     companion object {
         var aBoolean3706: Boolean = false
-        @JvmField
         var anInt3707: Int = 0
         var aFloat3710: Float = 0f
-        @JvmField
         var anInt3712: Int = 0
         var anInt3713: Int = 0
         var anInt3715: Int = 0
         var anInt3716: Int = 0
-        @JvmField
         var anInt3717: Int = 1338
         var anInt3718: Int = 0
 

@@ -49,13 +49,9 @@ class Class372(var_ha_Sub3: ha_Sub3?, var_d: d?) {
     }
 
     companion object {
-        @JvmField
         var anInt4527: Int = 0
-        @JvmField
         var anInt4529: Int = 0
-        @JvmField
         var anInt4530: Int = 0
-        @JvmField
         var anInt4532: Int = 1407
     }
 }

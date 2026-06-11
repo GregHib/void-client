@@ -67,15 +67,10 @@ class Class348_Sub40_Sub27 : Class348_Sub40(3, false) {
     }
 
     companion object {
-        @JvmField
         var anInt9356: Int = 0
-        @JvmField
         var aClipboard9357: SystemClipboard? = null
-        @JvmField
         var anInt9358: Int = 0
-        @JvmField
         var anInt9359: Int = 0
-        @JvmField
         var anInt9360: Int = 0
 
         @JvmStatic

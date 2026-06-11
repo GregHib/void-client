@@ -29,21 +29,13 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int
     }
 
     companion object {
-        @JvmField
         var aClass373_8552: Class373? = null
-        @JvmField
         var aClass138_8553: Class138?
-        @JvmField
         var anInt8554: Int = 0
-        @JvmField
         var anInt8555: Int = 0
-        @JvmField
         var anIntArray8557: IntArray? = IntArray(500)
-        @JvmField
         var aBoolean8558: Boolean = false
-        @JvmField
         var anInt8559: Int = 0
-        @JvmField
         var aFloat8560: Float = 0f
 
         @JvmStatic

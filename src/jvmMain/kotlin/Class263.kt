@@ -159,7 +159,6 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
     companion object {
         var anInt3344: Int = 0
         var anInt3346: Int = 0
-        @JvmField
         var anIntArray3347: IntArray? = IntArray(1000)
         var anInt3348: Int = 0
         var anInt3349: Int = 0

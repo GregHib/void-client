@@ -40,20 +40,13 @@ class Class106 internal constructor(class45: Class45?, class45_0_: Class45?) {
     }
 
     companion object {
-        @JvmField
         var anInt1631: Int = 0
-        @JvmField
         var anInt1632: Int = 0
-        @JvmField
         var anInt1634: Int = 0
-        @JvmField
         var anIntArray1635: IntArray? = IntArray(16)
         var anIntArray1636: IntArray? = null
-        @JvmField
         var anIntArrayArray1638: Array<IntArray>? = arrayOf(intArrayOf(0, 1, 2, 3), intArrayOf(1, -1, -1, 0), intArrayOf(-1, 2, -1, 0), intArrayOf(-1, 0, -1, 2), intArrayOf(0, 1, -1, 2), intArrayOf(1, 2, -1, 0), intArrayOf(-1, 4, -1, 1), intArrayOf(-1, 3, 4, -1), intArrayOf(-1, 0, 2, -1), intArrayOf(-1, -1, 2, 0), intArrayOf(0, 2, 5, 3), intArrayOf(0, -1, 6, -1), intArrayOf(0, 1, 2, 3))
-        @JvmField
         var anInt1639: Int = 0
-        @JvmField
         var anInt1640: Int = 0
         @JvmStatic
         fun method999(i: Int) {

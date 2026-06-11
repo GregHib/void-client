@@ -1,19 +1,14 @@
 import kotlin.math.pow
 
 class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
-    @JvmField
     var anInt9149: Int = 1638
-    @JvmField
     var anInt9150: Int = 4
     private var aByteArray9152 = ByteArray(512)
     var anInt9156: Int = 0
-    @JvmField
     var anInt9158: Int = 4
     private var aShortArray9159: ShortArray? = null
-    @JvmField
     var aBoolean9160: Boolean = true
     private lateinit var aShortArray9162: ShortArray
-    @JvmField
     var anInt9164: Int = 4
     override fun method3049(class348_sub49: Class348_Sub49, i: Int, i_0_: Int) {
         var i_1_ = i
@@ -242,23 +237,14 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
     }
 
     companion object {
-        @JvmField
         var anInt9148: Int = 0
-        @JvmField
         var anInt9151: Int = 0
-        @JvmField
         var anInt9153: Int = 0
-        @JvmField
         var anInt9154: Int = 0
-        @JvmField
         var anInt9155: Int = 0
-        @JvmField
         var anInt9157: Int = 0
-        @JvmField
         var anInt9161: Int = 0
-        @JvmField
         var aColorArray9163: IntArray? = intArrayOf(-0x1000000 or 9179409, -0x1000000 or 16777215, -0x1000000 or 16726277, -0x1000000 or 16726277)
-        @JvmField
         var aClass238_9165: Class238? = null
 
         @JvmStatic

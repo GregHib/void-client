@@ -2,27 +2,16 @@
 * Visit http://jode.sourceforge.net/
 */
 abstract class Class318_Sub1 : Class318() {
-    @JvmField
     var aByte6376: Byte = 0
-    @JvmField
     var x: Int = 0
-    @JvmField
     var aClass318_Sub1_6379: Class318_Sub1? = null
-    @JvmField
     var anInt6380: Int = 0
-    @JvmField
     var plane: Byte = 0
-    @JvmField
     var anInt6382: Int = 0
-    @JvmField
     var anInt6386: Int = 0
-    @JvmField
     var aBoolean6387: Boolean = false
-    @JvmField
     var y: Int = 0
-    @JvmField
     var anInt6389: Int = 0
-    @JvmField
     var aBoolean6391: Boolean = false
     abstract fun method2376(i: Int): Boolean
 
@@ -75,17 +64,11 @@ abstract class Class318_Sub1 : Class318() {
     abstract fun method2394(bool: Boolean): Int
 
     companion object {
-        @JvmField
         var anInt6378: Int = 0
-        @JvmField
         var aClass114_6383: Class114? = Class114(11, 6)
-        @JvmField
         var anInt6384: Int = 0
-        @JvmField
         var anInt6385: Int = 0
-        @JvmField
         var anInt6390: Int = 0
-        @JvmField
         var anInt6392: Int = 0
 
         @JvmStatic

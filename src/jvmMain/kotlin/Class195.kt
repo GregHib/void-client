@@ -98,13 +98,10 @@ class Class195 internal constructor(class287: Class287?, class106: Class106?) : 
         var anInt5009: Int = 0
         var aBoolean5013: Boolean = false
         var anInt5014: Int = 0
-        @JvmField
         var aClass351_5015: Class351?
-        @JvmField
         var anInt5016: Int = 0
         var aClass297_5017: Class297? = null
         var anInt5018: Int = 0
-        @JvmField
         var anInt5019: Int
 
         @JvmStatic

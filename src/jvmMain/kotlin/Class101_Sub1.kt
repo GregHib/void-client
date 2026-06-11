@@ -256,49 +256,28 @@ class Class101_Sub1 : Class101() {
     }
 
     companion object {
-        @JvmField
         var anInt5656: Int = 0
-        @JvmField
         var anInt5657: Int = 0
-        @JvmField
         var anInt5658: Int = 0
-        @JvmField
         var anInt5659: Int = 0
-        @JvmField
         var anInt5660: Int = 0
-        @JvmField
         var anInt5661: Int = 0
         var aLong5663: Long = 0
-        @JvmField
         var anInt5665: Int = 0
-        @JvmField
         var anInt5667: Int = 0
-        @JvmField
         var anInt5668: Int = 0
-        @JvmField
         var anInt5670: Int = 0
-        @JvmField
         var anInt5671: Int = 0
-        @JvmField
         var anInt5674: Int = 0
         var aClass246_5675: Class246? = Class284.method2118(((-42).toByte()).toByte())
-        @JvmField
         var anInt5676: Int = 0
-        @JvmField
         var aClass351_5677: Class351? = Class351(56, 7)
-        @JvmField
         var anInt5679: Int = 0
-        @JvmField
         var anInt5682: Int = 0
-        @JvmField
         var anInt5683: Int = 0
-        @JvmField
         var aD5684: d? = null
-        @JvmField
         var anInt5687: Int = 0
-        @JvmField
         var anInt5688: Int = 0
-        @JvmField
         var aClass223_5689: Class223? = Class223(4, 1)
 
         @JvmStatic

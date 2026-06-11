@@ -303,9 +303,7 @@ class Class348_Sub38 internal constructor(var_ha_Sub3: ha_Sub3?, var_s_Sub3: s_S
     companion object {
         var anInt7000: Int = 0
         var anInt7003: Int = 0
-        @JvmField
         var anInt7006: Int = 0
-        @JvmField
         var anInt7008: Int = 0
         var anInt7009: Int = 0
         var anInt7012: Int = 0

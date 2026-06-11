@@ -16,7 +16,6 @@ class Class184 {
     var anInt2477: Int = -1
 
     companion object {
-        @JvmField
         var aBoolean2469: Boolean
         var anInt2470: Int = 0
         var anIntArray2471: IntArray? = IntArray(14)

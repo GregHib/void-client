@@ -26,15 +26,10 @@ class Class348_Sub40_Sub15 internal constructor(i: Int) : Class348_Sub40(0, true
     constructor() : this(4096)
 
     companion object {
-        @JvmField
         var aClass114_9216: Class114? = Class114(91, 2)
-        @JvmField
         var anInt9217: Int = 0
-        @JvmField
         var anInt9218: Int = 0
-        @JvmField
         var anInt9219: Int = 0
-        @JvmField
         var anInt9221: Int = 0
 
         fun method3084(i: Int, i_2_: Byte, i_3_: Int) {

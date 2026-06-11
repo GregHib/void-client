@@ -7,16 +7,13 @@ import jaggl.OpenGL.Companion.glTranslatef
 import kotlin.math.sqrt
 
 class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : s(i_134_, i_135_, i_137_, `is`) {
-    @JvmField
     var anIntArrayArrayArray8234: Array<Array<IntArray?>?>?
-    @JvmField
     var anInt8235: Int = 0
     private val aByteArrayArray8240: Array<ByteArray?>
     private var aClass348_Sub20ArrayArrayArray8243: Array<Array<Array<Class348_Sub20?>?>?>?
     private var anIntArrayArrayArray8245: Array<Array<IntArray?>?>?
     private var anInt8246 = 0
     private var anIntArrayArrayArray8252: Array<Array<IntArray?>?>? = null
-    @JvmField
     var anIntArrayArrayArray8253: Array<Array<IntArray?>?>?
     private val aClass262_8256 = Class262()
     private var anInt8257 = 0
@@ -24,19 +21,13 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
     private val anInt8260: Int
     private val anInt8264: Int
     private var aClass104_8266: Class104? = null
-    @JvmField
     var aShortArrayArray8267: Array<ShortArray?>
-    @JvmField
     var anIntArrayArrayArray8268: Array<Array<IntArray?>?>?
-    @JvmField
     var aHa_Sub2_8272: ha_Sub2? = null
     private var aByteArrayArray8273: Array<ByteArray?>?
     private var aClass123_8274: Class123? = null
-    @JvmField
     var aClass123_8275: Class123? = null
-    @JvmField
     var aClass123_8276: Class123? = null
-    @JvmField
     var aClass123_8277: Class123? = null
     private var aClass356_8278: Class356? = null
     private var anInterface2_8279: Interface2? = null
@@ -759,49 +750,27 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
     }
 
     companion object {
-        @JvmField
         var anInt8236: Int = 0
-        @JvmField
         var anInt8237: Int = 0
-        @JvmField
         var anInt8238: Int = 0
-        @JvmField
         var anInt8239: Int = 0
-        @JvmField
         var aClass107_8241: Class107? = Class107()
-        @JvmField
         var anInt8242: Int = 0
-        @JvmField
         var anInt8244: Int = 0
-        @JvmField
         var anInt8247: Int = 0
-        @JvmField
         var anInt8248: Int = 0
-        @JvmField
         var anInt8249: Int = 0
-        @JvmField
         var anInt8250: Int = 0
-        @JvmField
         var anInt8251: Int = 0
-        @JvmField
         var anInt8254: Int = 0
-        @JvmField
         var anInt8255: Int = 0
-        @JvmField
         var anInt8259: Int = 0
-        @JvmField
         var anInt8261: Int = 0
-        @JvmField
         var anInt8262: Int = 0
-        @JvmField
         var anInt8263: Int = 0
-        @JvmField
         var aString8265: String? = null
-        @JvmField
         var anIntArray8269: IntArray?
-        @JvmField
         var anInt8270: Int = -1
-        @JvmField
         var anInt8271: Int = 0
         @JvmStatic
         fun method3999(i: Int, i_147_: Int, i_148_: Int): Boolean {

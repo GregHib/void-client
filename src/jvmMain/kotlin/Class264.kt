@@ -80,9 +80,7 @@ class Class264 {
         var aClass114_3368: Class114? = Class114(112, 4)
         var anInt3369: Int = 0
         var aClass114_3371: Class114? = Class114(63, 5)
-        @JvmField
         var anInt3372: Int = 0
-        @JvmField
         var anInt3373: Int = 0
         var anInt3374: Int = 0
         var anInt3375: Int = 0

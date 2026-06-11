@@ -83,7 +83,6 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         var anInt2567: Int = 0
         var aClass227_2568: Class227? = Class227(0)
         var anInt2569: Int = 0
-        @JvmField
         var aClass304_2571: Class304? = Class304(2)
 
         @JvmStatic

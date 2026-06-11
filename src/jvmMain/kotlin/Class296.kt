@@ -194,7 +194,6 @@ class Class296 internal constructor(`is`: ByteArray) {
     companion object {
         var anInt3765: Int = 0
         var aBoolean3767: Boolean = false
-        @JvmField
         var anInt3768: Int = 0
         var anInt3770: Int = 0
         var anInt3771: Int = 0

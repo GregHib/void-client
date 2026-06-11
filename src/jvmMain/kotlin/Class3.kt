@@ -2,11 +2,8 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class3 {
-    @JvmField
     var aClass114_123: Class114? = Class114(110, 10)
-    @JvmField
     var anInt124: Int = 0
-    @JvmField
     var aClass161_125: Class161? = null
 
     @JvmStatic

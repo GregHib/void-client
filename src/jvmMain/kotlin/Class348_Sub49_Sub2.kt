@@ -88,7 +88,6 @@ class Class348_Sub49_Sub2 internal constructor(i: Int) : Class348_Sub49(i) {
         var anInt9755: Int = 0
         var anIntArray9757: IntArray? = null
         var anInt9758: Int = 0
-        @JvmField
         var anInt9759: Int = 0
         var anInt9760: Int = 0
         var anInt9761: Int = 0

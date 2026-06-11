@@ -5,12 +5,10 @@ import Class367_Sub1.Companion.method3535
 /* Class348_Sub40 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolean7045: Boolean) : Class348() {
-    @JvmField
+abstract class Class348_Sub40 internal constructor(i: Int, var aBoolean7045: Boolean) : Class348() {
     var aClass348_Sub40Array7031: Array<Class348_Sub40?>
     var aClass191_7032: Class191? = null
     var aClass322_7033: Class322? = null
-    @JvmField
     var anInt7036: Int = 0
 
     open fun method3037(i: Int): Int {
@@ -92,35 +90,20 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
     }
 
     companion object {
-        @JvmField
         var anInt7026: Int = 0
-        @JvmField
         var anInt7027: Int = 0
-        @JvmField
         var anInt7028: Int = 0
-        @JvmField
         var anInt7029: Int = 0
-        @JvmField
         var anInt7030: Int = 0
-        @JvmField
         var anInt7034: Int = 0
-        @JvmField
         var anInt7035: Int = 0
-        @JvmField
         var anInt7037: Int = 0
-        @JvmField
         var anInt7038: Int = 0
-        @JvmField
         var anInt7039: Int = 0
-        @JvmField
         var anInt7040: Int = 0
-        @JvmField
         var aClass356_7041: Class356? = Class356(32)
-        @JvmField
         var aClass279_7042: Class279? = null
-        @JvmField
         var anInt7043: Int = 0
-        @JvmField
         var anInt7044: Int = 0
         fun method3036(class348_sub49: Class348_Sub49, i: Int): Class50_Sub2? {
             anInt7026++

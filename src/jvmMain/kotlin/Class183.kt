@@ -64,10 +64,8 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2457: Int = 0
         var anInt2459: Int = 0
         var anInt2460: Int = 0
-        @JvmField
         var aClass250_2462: Class250? = null
         var anInt2463: Int = 0
-        @JvmField
         var anInt2464: Int = 0
         var anInt2465: Int = 0
         var anIntArray2466: IntArray? = IntArray(14)

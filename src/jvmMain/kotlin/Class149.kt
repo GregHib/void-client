@@ -3,9 +3,7 @@
 */
 object Class149 {
     var anInt2044: Int = 0
-    @JvmField
     var aClass223_2045: Class223? = Class223(8, 1)
-    @JvmField
     var anInt2046: Int = 0
 
     @JvmStatic

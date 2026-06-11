@@ -216,7 +216,6 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         var anInt3266: Int = 0
         var anInt3270: Int = 0
         var anInt3272: Int = 0
-        @JvmField
         var anIntArray3273: IntArray? = IntArray(5)
         var anInt3274: Int = 0
         var anInt3275: Int = 0
@@ -228,7 +227,6 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         var anInt3282: Int = 0
         var anInt3283: Int = 0
         var anInt3284: Int = 0
-        @JvmField
         var aClass161_3285: Class161? = null
         fun method1929(i: Byte): Array<Class74?> {
             if (i.toInt() != -19) method1933(null, null, false)

@@ -2,9 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class348() {
-    @JvmField
     var aByteArray6564: ByteArray?
-    @JvmField
     var aClass356_6565: Class356? = null
 
     fun method2733() {

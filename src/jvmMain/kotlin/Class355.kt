@@ -65,7 +65,6 @@ class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class
         var aLong4367: Long = -1L
         var anInt4370: Int = 0
         var anInt4371: Int = 0
-        @JvmField
         var anInt4372: Int = 0
         fun method3470(i: Int) {
             if (i == 1) {

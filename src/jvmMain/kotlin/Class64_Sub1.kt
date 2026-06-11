@@ -3613,9 +3613,7 @@ class Class64_Sub1 : Class64 {
 
     companion object {
         private var anInt5341: Int
-        @JvmField
         var anInt5346: Int = 4096
-        @JvmField
         var anInt5350: Int
 
         init {

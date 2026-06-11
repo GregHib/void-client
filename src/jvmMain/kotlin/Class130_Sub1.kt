@@ -4195,7 +4195,6 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
         var anInt5796: Int = 0
         var anInt5797: Int = 0
         var anInt5798: Int = 0
-        @JvmField
         var anInt5799: Int = 0
         var aClass144_5800: Class144? = null
         var anInt5802: Int = 0

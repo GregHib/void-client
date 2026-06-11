@@ -23,7 +23,6 @@ class Class365 internal constructor(i: Int, string: String?, i_0_: Int, string_1
     }
 
     companion object {
-        @JvmField
         var aClass262_4473: Class262?
         var anInt4474: Int = 0
         var aClass114_4477: Class114?

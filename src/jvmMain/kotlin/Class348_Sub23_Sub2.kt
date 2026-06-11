@@ -119,41 +119,23 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
     }
 
     companion object {
-        @JvmField
         var aClass229_9011: Class229? = Class229()
-        @JvmField
         var anInt9012: Int = 0
-        @JvmField
         var anInt9013: Int = 0
-        @JvmField
         var anInt9017: Int = 0
-        @JvmField
         var anInt9021: Int = 0
-        @JvmField
         var anInt9022: Int = 0
-        @JvmField
         var aDouble9023: Double = 0.0
-        @JvmField
         var anInt9025: Int = 0
-        @JvmField
         var anInt9026: Int = 0
-        @JvmField
         var aClass77_9029: Class77? = null
-        @JvmField
         var anInt9030: Int = 0
-        @JvmField
         var aClass153_9031: Class153? = null
-        @JvmField
         var aClass45_9033: Class45? = null
-        @JvmField
         var aClass351_9034: Class351? = Class351(30, 4)
-        @JvmField
         var aClass187_9036: Class187? = null
-        @JvmField
         var anInt9037: Int = 0
-        @JvmField
         var aBoolean9038: Boolean = false
-        @JvmField
         var anInt9039: Int = 0
 
         @JvmStatic

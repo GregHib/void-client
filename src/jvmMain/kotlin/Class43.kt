@@ -4,27 +4,17 @@ import Class348_Sub42_Sub16_Sub1.Companion.method3261
 * Visit http://jode.sourceforge.net/
 */
 class Class43 {
-    @JvmField
     var aClass348_Sub42_Sub10_614: Class348_Sub42_Sub10? = null
-    @JvmField
     var anInt615: Int = 0
-    @JvmField
     var anIntArray617: IntArray? = null
 
     companion object {
-        @JvmField
         var aClass45_611: Class45? = null
-        @JvmField
         var anInt612: Int = 0
-        @JvmField
         var anInt613: Int = 0
-        @JvmField
         var anInt616: Int = 0
-        @JvmField
         var aClass351_618: Class351? = Class351(5, 3)
-        @JvmField
         var anIntArray619: IntArray? = intArrayOf(0, 1, 2, 2, 1, 1, 2, 3, 1, 3, 3, 4, 2, 0, 4)
-        @JvmField
         var anInt620: Int = 0
 
         @JvmStatic

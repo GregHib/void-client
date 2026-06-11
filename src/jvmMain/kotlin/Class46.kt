@@ -6,300 +6,155 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class Class46 {
-    @JvmField
     var anObjectArray671: Array<Any?>? = null
-    @JvmField
     var anInt672: Int = 0
-    @JvmField
     var anInt673: Int = 0
-    @JvmField
     var anInt674: Int = 0
-    @JvmField
     var anInt675: Int = 0
-    @JvmField
     var aBoolean676: Boolean = false
-    @JvmField
     var anIntArray677: IntArray? = null
-    @JvmField
     var anInt678: Int = 2
-    @JvmField
     var anObjectArray679: Array<Any?>? = null
-    @JvmField
     var anObjectArray680: Array<Any?>? = null
-    @JvmField
     var aByte681: Byte
-    @JvmField
     var aBoolean682: Boolean = false
-    @JvmField
     var anObjectArray683: Array<Any?>? = null
-    @JvmField
     var anObjectArray685: Array<Any?>? = null
-    @JvmField
     var anIntArray686: IntArray? = null
-    @JvmField
     var anObjectArray687: Array<Any?>? = null
-    @JvmField
     var anInt688: Int = 0
-    @JvmField
     var aBoolean689: Boolean = false
-    @JvmField
     var anInt690: Int = 1
-    @JvmField
     var anObjectArray692: Array<Any?>? = null
-    @JvmField
     var anInt693: Int = 0
-    @JvmField
     var anInt695: Int
-    @JvmField
     var anInt696: Int = 0
-    @JvmField
     var aBoolean697: Boolean = false
-    @JvmField
     var anInt698: Int = 0
-    @JvmField
     var anInt699: Int
-    @JvmField
     var anInt700: Int = 0
-    @JvmField
     var anObjectArray701: Array<Any?>? = null
-    @JvmField
     var anInt702: Int = -1
-    @JvmField
     var anInt703: Int = 0
-    @JvmField
     var anInt704: Int
-    @JvmField
     var anInt705: Int
-    @JvmField
     var anIntArray706: IntArray? = null
-    @JvmField
     var anIntArray707: IntArray = intArrayOf()
-    @JvmField
     var anObjectArray708: Array<Any?>? = null
-    @JvmField
     var anInt709: Int = 0
-    @JvmField
     var anInt710: Int = 1
     private var aClass356_711: Class356? = null
-    @JvmField
     var anInt713: Int
-    @JvmField
     var anObjectArray714: Array<Any?>? = null
-    @JvmField
     var anInt715: Int = 0
-    @JvmField
     var anInt716: Int = 100
-    @JvmField
     var anInt717: Int = 0
-    @JvmField
     var anInt719: Int
-    @JvmField
     var aBoolean720: Boolean = false
-    @JvmField
     var aString721: String? = null
-    @JvmField
     var anInt723: Int = 0
-    @JvmField
     var aByte724: Byte
-    @JvmField
     var anInt725: Int = 0
-    @JvmField
     var anInt726: Int
-    @JvmField
     var anObjectArray727: Array<Any?>? = null
-    @JvmField
     var anInt728: Int = 0
-    @JvmField
     var anInt729: Int = 0
-    @JvmField
     var anInt730: Int = 1
-    @JvmField
     var anIntArray731: IntArray? = null
-    @JvmField
     var anInt732: Int = 0
-    @JvmField
     var anInt733: Int = 0
-    @JvmField
     var anObjectArray734: Array<Any?>? = null
-    @JvmField
     var aBoolean735: Boolean = false
-    @JvmField
     var aBoolean737: Boolean = false
-    @JvmField
     var anInt738: Int = 0
-    @JvmField
     var anInt739: Int = 0
     var aClass318_Sub10_740: Class318_Sub10? = null
-    @JvmField
     var anObjectArray741: Array<Any?>? = null
-    @JvmField
     var anObjectArray742: Array<Any?>? = null
-    @JvmField
     var aBoolean744: Boolean = false
-    @JvmField
     var aBoolean745: Boolean = false
-    @JvmField
     var aByteArray746: ByteArray = byteArrayOf()
-    @JvmField
     var anInt747: Int = 0
-    @JvmField
     var aClass348_Sub44_748: Class348_Sub44?
-    @JvmField
     var anInt749: Int = 0
-    @JvmField
     var anInt750: Int = 0
-    @JvmField
     var anObjectArray751: Array<Any?>? = null
-    @JvmField
     var aString752: String? = ""
-    @JvmField
     var anInt753: Int = 0
     var aBoolean754: Boolean = false
-    @JvmField
     var anInt755: Int = 0
-    @JvmField
     var anInt756: Int
-    @JvmField
     var anInt757: Int = 0
-    @JvmField
     var anInt759: Int = 0
-    @JvmField
     var anInt760: Int
-    @JvmField
     var anObjectArray761: Array<Any?>? = null
-    @JvmField
     var anInt762: Int = 0
-    @JvmField
     var anObjectArray763: Array<Any?>? = null
-    @JvmField
     var anObjectArray764: Array<Any?>? = null
-    @JvmField
     var anInt765: Int = 0
-    @JvmField
     var aBoolean769: Boolean = false
-    @JvmField
     var anInt770: Int = 1
-    @JvmField
     var anIntArray771: IntArray? = null
-    @JvmField
     var anIntArray772: IntArray? = null
-    @JvmField
     var anInt773: Int = 0
-    @JvmField
     var anInt774: Int = 0
-    @JvmField
     var anInt775: Int = 1
-    @JvmField
     var aBoolean776: Boolean = false
-    @JvmField
     var anObjectArray777: Array<Any?>? = null
-    @JvmField
     var aByte778: Byte
-    @JvmField
     var anInt779: Int
-    @JvmField
     var aString780: String? = ""
-    @JvmField
     var anInt781: Int = 0
-    @JvmField
     var aClass46_782: Class46? = null
     var aBoolean784: Boolean = false
-    @JvmField
     var anObjectArray785: Array<Any?>? = null
-    @JvmField
     var anInt786: Int = 0
     var anInt787: Int = 0
-    @JvmField
     var anInt788: Int = 0
-    @JvmField
     var anInt789: Int = 0
-    @JvmField
     var aBoolean790: Boolean = false
-    @JvmField
     var anInt791: Int = 0
-    @JvmField
     var aString792: String? = ""
-    @JvmField
     var aBoolean793: Boolean = false
-    @JvmField
     var anInt794: Int
-    @JvmField
     var anInt795: Int = 0
-    @JvmField
     var anInt796: Int = 0
-    @JvmField
     var anInt797: Int
-    @JvmField
     var aClass46Array798: Array<Class46?>? = null
-    @JvmField
     var anInt799: Int = 0
-    @JvmField
     var anInt800: Int = 0
-    @JvmField
     var anIntArray801: IntArray? = null
-    @JvmField
     var anObjectArray803: Array<Any?>? = null
-    @JvmField
     var anObjectArray805: Array<Any?>? = null
-    @JvmField
     var anInt806: Int
-    @JvmField
     var anObjectArray807: Array<Any?>? = null
-    @JvmField
     var anInt808: Int = 0
-    @JvmField
     var anInt809: Int = 0
-    @JvmField
     var aBoolean810: Boolean = false
-    @JvmField
     var anObjectArray811: Array<Any?>? = null
-    @JvmField
     var anInt812: Int
-    @JvmField
     var aBoolean813: Boolean = false
-    @JvmField
     var anInt814: Int = 0
-    @JvmField
     var anObjectArray815: Array<Any?>? = null
-    @JvmField
     var aString816: String? = null
-    @JvmField
     var aByte817: Byte
-    @JvmField
     var anIntArray818: IntArray? = null
-    @JvmField
     var anObjectArray820: Array<Any?>? = null
-    @JvmField
     var anObjectArray822: Array<Any?>? = null
-    @JvmField
     var anObjectArray823: Array<Any?>? = null
-    @JvmField
     var anInt824: Int
-    @JvmField
     var anInt826: Int = 0
-    @JvmField
     var anInt828: Int = 0
-    @JvmField
     var anInt830: Int
-    @JvmField
     var anIntArray831: IntArray? = null
-    @JvmField
     var aByteArray832: ByteArray = byteArrayOf()
-    @JvmField
     var aStringArray833: Array<String?>? = null
-    @JvmField
     var anInt834: Int
-    @JvmField
     var anInt835: Int = 0
-    @JvmField
     var anObjectArray836: Array<Any?>? = null
-    @JvmField
     var anObjectArray839: Array<Any?>? = null
-    @JvmField
     var anObjectArray840: Array<Any?>? = null
-    @JvmField
     var anInt841: Int = 0
-    @JvmField
     var anInt842: Int = 0
 
     fun method425(var_ha: ha, i: Byte): aa? {
@@ -870,48 +725,27 @@ class Class46 {
     }
 
     companion object {
-        @JvmField
         var anInt684: Int = 0
-        @JvmField
         var anInt691: Int = 0
-        @JvmField
         var anInt694: Int = 0
-        @JvmField
         var anInt712: Int = 0
-        @JvmField
         var anInt718: Int = 0
-        @JvmField
         var anInt722: Int = 0
-        @JvmField
         var anInt736: Int = 0
-        @JvmField
         var anInt743: Int = 0
-        @JvmField
         var anInt758: Int = 0
-        @JvmField
         var anInt766: Int = 0
-        @JvmField
         var anInt767: Int = 0
-        @JvmField
         var anInt768: Int = 0
-        @JvmField
         var anInt783: Int = 0
-        @JvmField
         var anInt802: Int = 0
-        @JvmField
         var anInt804: Int = 0
-        @JvmField
         var anInt819: Int = 0
         var aByteArray821: ByteArray? = ByteArray(32896)
-        @JvmField
         var anInt825: Int = 0
-        @JvmField
         var anInt827: Int = 0
-        @JvmField
         var anInt829: Int = 0
-        @JvmField
         var anInt837: Int = 0
-        @JvmField
         var aClass196_838: Class196?
 
         @JvmStatic

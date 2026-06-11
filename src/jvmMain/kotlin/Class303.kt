@@ -10,7 +10,6 @@ import Class62.method596
 object Class303 {
     var aClass114_3842: Class114?
     var anInt3843: Int = 0
-    @JvmField
     var anInt3844: Int = 1
     var anInt3845: Int = 0
     var anInt3846: Int = 0

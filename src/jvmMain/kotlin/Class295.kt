@@ -25,11 +25,8 @@ class Class295 internal constructor(string: String?, string_4_: String?, string_
         var anIntArray3759: IntArray? = null
         var anInt3760: Int
         var aDouble3761: Double = 0.0
-        @JvmField
         var anInt3762: Int = 0
-        @JvmField
         var aBoolean3763: Boolean = false
-        @JvmField
         var anInt3764: Int
 
         fun method2220(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte): Int {

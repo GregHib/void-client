@@ -8,72 +8,46 @@ import Class59_Sub2_Sub1.Companion.method566
 */
 open class Class75 {
     companion object {
-        @JvmField
         var aClass45_1237: Class45? = null
-        @JvmField
         var aClass153_1238: Class153? = null
         private var aClass268_1239: Class268? = null
         private var aClass183_1240: Class183? = null
         private var aClass356_1241: Class356? = Class356(16)
-        @JvmField
         var aClass141_1242: Class141? = null
-        @JvmField
         var aClass348_Sub42_Sub14_1243: Class348_Sub42_Sub14? = null
-        @JvmField
         var anInterface17_1244: Interface17? = null
-        @JvmField
         var aClass263_1245: Class263? = null
-        @JvmField
         var aClass252_1246: Class252? = null
-        @JvmField
         var aFloat1247: Float = 0f
         private var aByteArray1248: ByteArray?
-        @JvmField
         var aFloat1249: Float = 0f
-        @JvmField
         var anInt1250: Int
-        @JvmField
         var aByteArrayArrayArray1251: Array<Array<ByteArray?>?>? = null
         private var aShortArray1252: ShortArray?
-        @JvmField
         var anInt1253: Int = (Math.random() * 17.0).toInt() - 8
-        @JvmField
         var aClass262_1254: Class262?
-        @JvmField
         var anInt1255: Int = 0
         private var aByteArray1256: ByteArray? = null
-        @JvmField
         var anInt1257: Int = 0
         private var aByteArray1258: ByteArray? = null
-        @JvmField
         var anInt1259: Int = 0
         private var anIntArray1260: IntArray? = null
         private var aShortArray1261: ShortArray? = null
-        @JvmField
         var anInt1262: Int = 0
-        @JvmField
         var anInt1263: Int = 0
         private var aByteArray1264: ByteArray? = null
-        @JvmField
         var anInt1265: Int = 0
-        @JvmField
         var anInt1266: Int = 0
-        @JvmField
         var anInt1267: Int = 0
-        @JvmField
         var anInt1268: Int = 0
         private var aClass243ArrayArrayArray1269: Array<Array<Array<Class243?>?>?>? = null
         private var aShortArray1270: ShortArray? = null
         private var aClass356_1271: Class356? = null
-        @JvmField
         var anInt1272: Int = 0
         private var aByteArray1273: ByteArray? = null
-        @JvmField
         var anInt1274: Int = 0
         private var aByteArray1275: ByteArray? = null
-        @JvmField
         var anInt1276: Int = 0
-        @JvmField
         var anInt1277: Int = 0
 
         @JvmStatic

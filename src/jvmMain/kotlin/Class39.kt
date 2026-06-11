@@ -22,17 +22,11 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
     }
 
     companion object {
-        @JvmField
         var anInt514: Int = 0
-        @JvmField
         var aClass74_515: Class74? = Class74(7, 7)
-        @JvmField
         var anInt516: Int = 0
-        @JvmField
         var aClass45_518: Class45? = null
-        @JvmField
         var aClass112_520: Class112? = null
-        @JvmField
         var aClass323_521: Class323? = null
 
         @JvmStatic

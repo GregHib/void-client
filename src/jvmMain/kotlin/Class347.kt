@@ -14,11 +14,9 @@ class Class347 {
     var anInt4283: Int = 0
 
     companion object {
-        @JvmField
         var aBoolean4278: Boolean = true
         var anInt4280: Int = 0
         var aByteArrayArray4281: Array<ByteArray?>? = null
-        @JvmField
         var aBoolean4284: Boolean = false
 
         @JvmStatic

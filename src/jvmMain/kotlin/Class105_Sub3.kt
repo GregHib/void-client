@@ -1,15 +1,11 @@
 /* Class105_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class105_Sub3(@JvmField var aHa_Sub1_8460: ha_Sub1, @JvmField var anInt8471: Int, @JvmField var anInt8470: Int) : Class105() {
-    @JvmField
+abstract class Class105_Sub3(var aHa_Sub1_8460: ha_Sub1, var anInt8471: Int, var anInt8470: Int) : Class105() {
     var anInt8454: Int = 0
-    @JvmField
     var anInt8456: Int = 0
-    @JvmField
     var anInt8461: Int = 0
     private var anIntArray8462: IntArray? = null
-    @JvmField
     var anInt8464: Int = 0
     abstract override fun method964(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int)
 
@@ -203,48 +199,29 @@ abstract class Class105_Sub3(@JvmField var aHa_Sub1_8460: ha_Sub1, @JvmField var
     }
 
     companion object {
-        @JvmField
         var anInt8450: Int = 0
-        @JvmField
         var anInt8451: Int = 0
-        @JvmField
         var anInt8452: Int = 0
-        @JvmField
         var anInt8453: Int = 0
         private var anInt8455: Int
-        @JvmField
         var anInt8457: Int = 0
-        @JvmField
         var anInt8458: Int = 0
         private var anInt8459: Int
-        @JvmField
         var anInt8463: Int
-        @JvmField
         var anInt8465: Int = 0
         private var anInt8466 = 0
-        @JvmField
         var anInt8467: Int = 0
-        @JvmField
         var anInt8468: Int = 0
-        @JvmField
         var anInt8469: Int
-        @JvmField
         var anInt8472: Int
         private var anInt8473 = 0
-        @JvmField
         var anInt8474: Int = 0
-        @JvmField
         var anInt8475: Int = 0
         private var anInt8476 = 0
-        @JvmField
         var anInt8477: Int
-        @JvmField
         var anInt8478: Int = 0
-        @JvmField
         var anInt8479: Int = 0
-        @JvmField
         var anInt8480: Int = 0
-        @JvmField
         var anInt8481: Int = 0
         private var anInt8482 = 0
 

@@ -64,7 +64,6 @@ class Class326 internal constructor(class230: Class230?, i: Int, class45: Class4
     companion object {
         var anInt4083: Int = 0
         var anInt4084: Int = 0
-        @JvmField
         var anInt4086: Int = 0
         var anInt4088: Int = 0
         var anInt4089: Int = 0

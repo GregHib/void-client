@@ -36,15 +36,10 @@ class Class50_Sub2 internal constructor(private var anInt5231: Int, private val 
     }
 
     companion object {
-        @JvmField
         var anInt5228: Int = 0
-        @JvmField
         var anInt5229: Int = 0
-        @JvmField
         var aBoolean5233: Boolean = false
-        @JvmField
         var anInt5234: Int = 0
-        @JvmField
         var anInt5235: Int = 0
 
         @JvmStatic

@@ -37,17 +37,11 @@ class Class119_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
     }
 
     companion object {
-        @JvmField
         var anInt4826: Int = 0
-        @JvmField
         var anInt4828: Int = 0
-        @JvmField
         var anInt4829: Int = 0
-        @JvmField
         var anInt4830: Int = 0
-        @JvmField
         var anInt4831: Int = 0
-        @JvmField
         var anInt4832: Int = 0
 
         fun method1078(`is`: ShortArray?, i: Int, i_0_: Int): ShortArray {

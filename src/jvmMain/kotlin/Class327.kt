@@ -7,11 +7,8 @@ object Class327 {
     var anInt4092: Int = 0
     var anInt4093: Int = 0
     var aClass351_4094: Class351? = Class351(47, 4)
-    @JvmField
     var anInt4095: Int = 0
-    @JvmField
     var anIntArray4096: IntArray? = IntArray(32)
-    @JvmField
     var anIntArray4097: IntArray? = IntArray(2)
     var aClass74_4098: Class74? = Class74(4, 7)
 

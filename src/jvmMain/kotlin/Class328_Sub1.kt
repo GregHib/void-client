@@ -3,7 +3,6 @@
 */
 open class Class328_Sub1 : Class328() {
     companion object {
-        @JvmField
         var anInt6513: Int = 0
         var aFloatArray6514: FloatArray? = FloatArray(4)
 

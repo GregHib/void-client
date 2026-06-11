@@ -70,7 +70,6 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
         var aClass267_3425: Class267? = Class267(Class69.aClass69_1195)
         var aClass267_3426: Class267? = Class267(Class69.aClass69_1198)
         var aClass114_3427: Class114? = Class114(93, -2)
-        @JvmField
         var anInt3428: Int = -1
 
         @JvmStatic

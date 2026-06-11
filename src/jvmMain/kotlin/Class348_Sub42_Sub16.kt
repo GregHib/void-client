@@ -4,10 +4,8 @@ import kotlin.concurrent.Volatile
 * Visit http://jode.sourceforge.net/
 */
 abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
-    @JvmField
     var aBoolean9663: Boolean = false
 
-    @JvmField
     @Volatile
     var aBoolean9664: Boolean = true
     var aBoolean9667: Boolean = false
@@ -16,15 +14,10 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
     abstract fun method3259(i: Int): ByteArray?
 
     companion object {
-        @JvmField
         var aClass21_9661: Class21?
-        @JvmField
         var anInt9662: Int = 0
-        @JvmField
         var aString9665: String? = null
-        @JvmField
         var anInt9666: Int = 0
-        @JvmField
         var anInt9668: Int = 0
 
         @JvmStatic

@@ -11,7 +11,6 @@ class Class227 internal constructor(var anInt2970: Int) {
         var anInt2966: Int = 0
         var anIntArray2967: IntArray?
         var anInt2968: Int = 0
-        @JvmField
         var anObject2969: Any? = null
         @JvmStatic
         fun method1627(i: Byte) {

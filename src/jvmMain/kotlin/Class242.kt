@@ -6,7 +6,6 @@ import Class69.Companion.method721
 */
 class Class242 internal constructor(var_ha_Sub2: ha_Sub2?, l: Long, i: Int) {
     private val aHa_Sub2_3153: ha_Sub2?
-    @JvmField
     var aLong3156: Long = 0
 
     @Throws(Throwable::class)
@@ -27,7 +26,6 @@ class Class242 internal constructor(var_ha_Sub2: ha_Sub2?, l: Long, i: Int) {
 
     companion object {
         var anInt3151: Int = 0
-        @JvmField
         var aClass348_Sub42_Sub13_3152: Class348_Sub42_Sub13? = null
         var anInt3154: Int = 0
         var anInt3155: Int = 0

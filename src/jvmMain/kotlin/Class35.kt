@@ -4,11 +4,8 @@ import IOException_Sub1.Companion.method131
 * Visit http://jode.sourceforge.net/
 */
 object Class35 {
-    @JvmField
     var anInt483: Int = 0
-    @JvmField
     var anInt484: Int = 0
-    @JvmField
     var anInt485: Int = 0
 
     @JvmStatic

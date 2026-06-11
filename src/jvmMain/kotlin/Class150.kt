@@ -69,7 +69,6 @@ class Class150 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2053: Int = 0
         var anInt2055: Int = 0
         var anInt2056: Int = 0
-        @JvmField
         var anInt2057: Int = 0
 
         @JvmStatic

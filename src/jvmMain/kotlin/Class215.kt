@@ -7,7 +7,6 @@ import s.Companion.method3980
 import java.awt.Container
 
 object Class215 {
-    @JvmField
     var anInt2834: Int = 0
     var anInt2835: Int = 0
     var aFloat2836: Float = 0f

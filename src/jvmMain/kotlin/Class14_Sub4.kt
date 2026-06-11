@@ -140,39 +140,22 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
     }
 
     companion object {
-        @JvmField
         var anInt8633: Int = 0
-        @JvmField
         var anInt8635: Int = 0
-        @JvmField
         var anInt8636: Int = 0
-        @JvmField
         var anInt8637: Int = 0
-        @JvmField
         var aClass230_8638: Class230? = Class230("stellardawn", 1)
-        @JvmField
         var anInt8639: Int = 0
-        @JvmField
         var anInt8641: Int = 0
-        @JvmField
         var aByteArrayArray8642: Array<ByteArray?>? = null
-        @JvmField
         var anInt8643: Int = 0
-        @JvmField
         var aClass323_8644: Class323? = null
-        @JvmField
         var anInt8645: Int = 0
-        @JvmField
         var anInt8646: Int = 0
-        @JvmField
         var anInt8647: Int = 0
-        @JvmField
         var anInt8648: Int = 0
-        @JvmField
         var anInt8649: Int = 0
-        @JvmField
         var anInt8650: Int = 0
-        @JvmField
         var anInt8651: Int = 0
 
         @JvmStatic

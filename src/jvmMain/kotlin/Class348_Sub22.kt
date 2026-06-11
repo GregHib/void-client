@@ -2,9 +2,8 @@ import Class324.Companion.method2570
 import Class348_Sub3.Companion.method2743
 import java.awt.Color
 
-class Class348_Sub22 internal constructor(@JvmField var aNpc_6859: Npc?) : Class348() {
+class Class348_Sub22 internal constructor(var aNpc_6859: Npc?) : Class348() {
     companion object {
-        @JvmField
         var anInt6857: Int = 0
         var anInt6858: Int = 0
         var anInt6860: Int = 0

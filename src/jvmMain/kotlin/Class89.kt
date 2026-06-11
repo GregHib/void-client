@@ -24,13 +24,9 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
     }
 
     companion object {
-        @JvmField
         var aLong1507: Long = 0
-        @JvmField
         var anIntArray1508: IntArray? = IntArray(256)
-        @JvmField
         var anInt1509: Int = 0
-        @JvmField
         var anInt1511: Int = 0
 
         @JvmStatic

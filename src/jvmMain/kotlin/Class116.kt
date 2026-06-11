@@ -3,11 +3,8 @@ import Class348_Sub31.Companion.method3014
 
 object Class116 {
     var anInt1758: Int = 0
-    @JvmField
     var shiftClick: Boolean = true
-    @JvmField
     var anInt1760: Int = 0
-    @JvmField
     var aString1761: String? = null
     var aClass114_1762: Class114? = null
 

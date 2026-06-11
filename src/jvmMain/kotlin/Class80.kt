@@ -2,7 +2,6 @@ import kotlin.math.pow
 import kotlin.math.sin
 
 class Class80 {
-    @JvmField
     var anInt1407: Int = 0
     private var aClass197_1408: Class197? = null
     private val anIntArray1410 = IntArray(5)
@@ -14,7 +13,6 @@ class Class80 {
     private var aClass197_1418: Class197? = null
     private var aClass349_1419: Class349? = null
     private var aClass197_1420: Class197? = null
-    @JvmField
     var anInt1421: Int = 500
     private var anInt1422 = 100
     private var aClass197_1423: Class197? = null

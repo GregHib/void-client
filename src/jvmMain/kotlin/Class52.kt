@@ -1,6 +1,6 @@
 import java.awt.Frame
 
-class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
+class Class52 internal constructor(var anInt4899: Int) : Interface12 {
     override fun method51(i: Byte): Class223? {
         anInt4894++
         if (i < 116) return null
@@ -8,30 +8,18 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
     }
 
     companion object {
-        @JvmField
         var anInt4894: Int = 0
-        @JvmField
         var anInt4895: Int = 0
-        @JvmField
         var aBigInteger4896: BigInt? = BigInt("10001", 16)
-        @JvmField
         var anInt4897: Int = 0
-        @JvmField
         var anInt4898: Int = 0
-        @JvmField
         var anInt4900: Int = 0
-        @JvmField
         var aClass138_4901: Class138?
-        @JvmField
         var anInt4902: Int = 0
-        @JvmField
         var aBoolean4903: Boolean = false
-        @JvmField
         var aFrame4904: Frame? = null
-        @JvmField
         var aClass351_4905: Class351?
         var anIntArray4906: IntArray?
-        @JvmField
         var aClass351_4907: Class351?
 
         fun method490(i: Byte, class348_sub49: Class348_Sub49): Class43 {

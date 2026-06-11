@@ -117,10 +117,8 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) {
         var anInt2199: Int = 0
         var anInt2200: Int = 0
         var aFloat2203: Float = 0f
-        @JvmField
         var anInt2204: Int = 0
         var anInt2206: Int = 0
-        @JvmField
         var aClass229_2207: Class229? = Class229()
         var aClass45_2208: Class45? = null
         @JvmStatic

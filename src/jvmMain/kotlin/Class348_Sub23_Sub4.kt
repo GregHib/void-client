@@ -78,25 +78,15 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
     }
 
     companion object {
-        @JvmField
         var anInt9047: Int = 0
-        @JvmField
         var anInt9049: Int = 0
-        @JvmField
         var anIntArray9050: IntArray? = IntArray(14)
-        @JvmField
         var anInt9052: Int = 0
-        @JvmField
         var anInt9053: Int = 0
-        @JvmField
         var anInt9056: Int = 0
-        @JvmField
         var anInt9059: Int = 0
-        @JvmField
         var anInt9060: Int = 0
-        @JvmField
         var anInt9061: Int = 0
-        @JvmField
         var anInt9063: Int = 0
 
         @JvmStatic

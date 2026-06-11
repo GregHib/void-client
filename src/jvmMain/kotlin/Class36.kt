@@ -2,12 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class36 {
-    @JvmField
     var anInt486: Int = 0
     var anIntArray487: IntArray? = intArrayOf(0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3)
-    @JvmField
     var anInt488: Int = 0
-    @JvmField
     var anInt489: Int = 0
 
     fun method354(i: Int) {

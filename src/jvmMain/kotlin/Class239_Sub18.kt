@@ -45,25 +45,15 @@ class Class239_Sub18 : Class239 {
     internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     companion object {
-        @JvmField
         var anInt6029: Int = 0
-        @JvmField
         var aClass251_6030: Class251? = Class251()
-        @JvmField
         var anInt6031: Int = 0
-        @JvmField
         var anInt6032: Int = 0
-        @JvmField
         var anInt6033: Int = 0
-        @JvmField
         var anInt6034: Int = 0
-        @JvmField
         var anIntArray6035: IntArray? = null
-        @JvmField
         var anInt6036: Int = 0
-        @JvmField
         var anInt6037: Int = 0
-        @JvmField
         var anInt6038: Int = 0
 
         @JvmStatic

@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub35 : Class348 {
-    @JvmField
     var anInt6976: Int = 0
 
     constructor()

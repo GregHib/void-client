@@ -47,27 +47,16 @@ class Class285_Sub2 internal constructor(class377: Class377, class68: Class68?, 
     }
 
     companion object {
-        @JvmField
         var anInt8496: Int = 0
-        @JvmField
         var anInt8497: Int = 0
-        @JvmField
         var anInt8498: Int = 0
-        @JvmField
         var anInt8499: Int = 0
-        @JvmField
         var anInt8500: Int = 0
-        @JvmField
         var anInt8501: Int = 0
-        @JvmField
         var anInt8502: Int = 0
-        @JvmField
         var aClass70_8503: Class70? = Class70()
-        @JvmField
         var aByteArrayArray8505: Array<ByteArray?>? = arrayOfNulls<ByteArray>(50)
-        @JvmField
         var anInt8506: Int = 0
-        @JvmField
         var anIntArray8507: IntArray? = intArrayOf(
             0,
             0,

@@ -181,9 +181,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         var anInt10188: Int = 0
         var anInt10192: Int = 0
         var anInt10193: Int = 0
-        @JvmField
         var aClass138_10194: Class138?
-        @JvmField
         var aStringArray10195: Array<String?>? = arrayOfNulls<String>(8)
         var anInt10197: Int = 0
         var anInt10198: Int = 0

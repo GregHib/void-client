@@ -24,11 +24,8 @@ class Class348_Sub40_Sub17_Sub1 : Class348_Sub40_Sub17() {
     }
 
     companion object {
-        @JvmField
         var anInt10425: Int = 0
-        @JvmField
         var aClass45_10426: Class45? = null
-        @JvmField
         var anInt10427: Int = 0
 
         @JvmStatic

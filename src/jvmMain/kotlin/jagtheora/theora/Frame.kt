@@ -2,8 +2,7 @@ package jagtheora.theora
 
 import jagtheora.misc.SimplePeer
 
-class Frame(@JvmField val a: Int, @JvmField val b: Int) : SimplePeer() {
-    @JvmField
+class Frame(val a: Int, val b: Int) : SimplePeer() {
     val pixels: IntArray
 
     init {

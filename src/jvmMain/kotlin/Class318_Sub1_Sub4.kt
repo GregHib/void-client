@@ -49,21 +49,13 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
     }
 
     companion object {
-        @JvmField
         var anInt8757: Int = 0
-        @JvmField
         var anInt8758: Int = 0
-        @JvmField
         var anInt8760: Int = 0
-        @JvmField
         var anInt8761: Int = 0
-        @JvmField
         var aBigInteger8762: BigInt? = BigInt("10001", 16)
-        @JvmField
         var anInt8763: Int = 0
-        @JvmField
         var aClass279_8764: Class279? = null
-        @JvmField
         var anInt8765: Int = 0
 
         @JvmStatic

@@ -18,7 +18,6 @@ open class Class318 {
         var anInt3971: Int = 0
         var anInt3972: Int = 0
         var anInt3973: Int = 0
-        @JvmField
         var aClass243Array3974: Array<Class243?>? = arrayOfNulls<Class243>(5)
         var anInt3975: Int = 0
         var aClass304_3977: Class304?

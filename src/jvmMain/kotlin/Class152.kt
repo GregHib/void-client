@@ -38,9 +38,7 @@ class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
         var anInt2073: Int = 0
         var anInt2074: Int = 0
         var aFloatArray2075: FloatArray? = FloatArray(2)
-        @JvmField
         var aBooleanArray2076: BooleanArray? = BooleanArray(100)
-        @JvmField
         var aClass243_2077: Class243? = null
         var anInt2078: Int = 0
 

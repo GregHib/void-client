@@ -443,7 +443,6 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
         var anInt3639: Int = 0
         var anInt3640: Int = 0
         var aClass114_3641: Class114? = Class114(79, 3)
-        @JvmField
         var anInt3643: Int = 0
 
         @JvmStatic

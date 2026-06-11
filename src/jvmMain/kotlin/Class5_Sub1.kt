@@ -83,31 +83,18 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
     }
 
     companion object {
-        @JvmField
         var anInt8334: Int = 0
-        @JvmField
         var aBoolean8335: Boolean = false
-        @JvmField
         var anInt8336: Int = 0
-        @JvmField
         var anInt8337: Int = 0
-        @JvmField
         var anInt8340: Int = 0
-        @JvmField
         var anInt8341: Int = 0
-        @JvmField
         var aClass221_8344: Class221?
-        @JvmField
         var anInt8345: Int = 0
-        @JvmField
         var anInt8346: Int = 0
-        @JvmField
         var anInt8348: Int = 0
-        @JvmField
         var anInt8349: Int = 0
-        @JvmField
         var anInt8351: Int = 0
-        @JvmField
         var anInt8352: Int = 0
 
         @JvmStatic

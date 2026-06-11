@@ -57,21 +57,14 @@ class Class49 internal constructor(var_ha_Sub1: ha_Sub1?, class105: Class105?, c
     }
 
     companion object {
-        @JvmField
         var aFloat4720: Float = 0f
-        @JvmField
         var anInt4721: Int = 0
-        @JvmField
         var anInt4723: Int = 0
 
-        @JvmField
         @Volatile
         var aBoolean4726: Boolean = true
-        @JvmField
         var anInt4727: Int = 0
-        @JvmField
         var aBoolean4728: Boolean = false
-        @JvmField
         var aClass46_4730: Class46? = null
         @JvmStatic
         fun method453(i: Int) {

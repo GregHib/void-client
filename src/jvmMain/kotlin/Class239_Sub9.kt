@@ -55,25 +55,15 @@ class Class239_Sub9 : Class239 {
     }
 
     companion object {
-        @JvmField
         var anInt5925: Int = 0
-        @JvmField
         var anInt5926: Int = 0
-        @JvmField
         var anInt5927: Int = 0
-        @JvmField
         var anInt5928: Int = 0
-        @JvmField
         var aClass351_5929: Class351? = Class351(25, 3)
-        @JvmField
         var anInt5930: Int = 0
-        @JvmField
         var anInt5931: Int = 0
-        @JvmField
         var aClass230_5932: Class230? = Class230("game4", 3)
-        @JvmField
         var aClass105Array5933: Array<Class105?>? = null
-        @JvmField
         var aClass351_5934: Class351? = Class351(78, 16)
 
         @JvmStatic

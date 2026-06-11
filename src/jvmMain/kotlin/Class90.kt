@@ -4,16 +4,11 @@ import Class348_Sub40_Sub22.Companion.method3111
 * Visit http://jode.sourceforge.net/
 */
 object Class90 {
-    @JvmField
     var aClass273_1512: Class273? = Class273("", 15)
-    @JvmField
     var anInt1513: Int = 0
-    @JvmField
     var anInt1514: Int = 0
-    @JvmField
     var anInt1515: Int = 0
     var aLong1516: Long = 0
-    @JvmField
     var regionTileY: Int = 0
     var anIntArray1518: IntArray? = IntArray(14)
 

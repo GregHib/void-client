@@ -5,9 +5,7 @@ object Class228 {
     var anInt2971: Int = 0
     var aClass114_2972: Class114? = Class114(49, 4)
     var anInt2973: Int = 0
-    @JvmField
     var aClass57Array2974: Array<Class57?>? = null
-    @JvmField
     var anInt2975: Int = 0
 
     @JvmStatic

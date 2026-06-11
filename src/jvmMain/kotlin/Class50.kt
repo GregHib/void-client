@@ -3,7 +3,7 @@ import jaggl.OpenGL.Companion.glGenProgramARB
 import jaggl.OpenGL.Companion.glGetIntegerv
 import jaggl.OpenGL.Companion.glProgramStringARB
 
-abstract class Class50(@JvmField var anInt864: Int, @JvmField var anInt865: Int, @JvmField var anInt862: Int) {
+abstract class Class50(var anInt864: Int, var anInt865: Int, var anInt862: Int) {
     abstract fun method455(i: Int, i_0_: Int, i_1_: Int)
 
     abstract fun method456(i: Int, i_2_: Int, i_3_: Int)
@@ -11,9 +11,7 @@ abstract class Class50(@JvmField var anInt864: Int, @JvmField var anInt865: Int,
     abstract fun method457(i: Int, i_4_: Int, i_5_: Int)
 
     companion object {
-        @JvmField
         var anInt861: Int = 0
-        @JvmField
         var aString863: String? = null
         @JvmStatic
         fun method458(i: Int) {

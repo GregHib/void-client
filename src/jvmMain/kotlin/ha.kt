@@ -1,6 +1,5 @@
 
-abstract class ha internal constructor(@JvmField var aD4579: d?) {
-    @JvmField
+abstract class ha internal constructor(var aD4579: d?) {
     var anInt4567: Int
     abstract fun method3624(i: Int, i_0_: Int): Interface13?
 
@@ -307,45 +306,25 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
     }
 
     companion object {
-        @JvmField
         var anInt4561: Int = 0
-        @JvmField
         var anInt4562: Int = 0
-        @JvmField
         var anInt4563: Int = 0
-        @JvmField
         var anInt4564: Int = 0
-        @JvmField
         var anInt4565: Int = 0
-        @JvmField
         var anInt4566: Int = 0
-        @JvmField
         var anInt4568: Int = 0
-        @JvmField
         var anInt4569: Int = 0
-        @JvmField
         var anInt4570: Int = 0
-        @JvmField
         var anInt4572: Int = 0
-        @JvmField
         var anInt4573: Int = 0
-        @JvmField
         var anInt4574: Int = 0
-        @JvmField
         var anInt4575: Int = 0
-        @JvmField
         var anInt4576: Int = 0
-        @JvmField
         var anInt4577: Int = 0
-        @JvmField
         var anIntArray4578: IntArray? = IntArray(200)
-        @JvmField
         var anInt4580: Int = 0
-        @JvmField
         var anInt4581: Int = 0
-        @JvmField
         var aFloat4582: Float = 0f
-        @JvmField
         var anInt4583: Int = 0
 
     }

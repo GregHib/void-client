@@ -11,9 +11,7 @@ import kotlin.math.min
 * Visit http://jode.sourceforge.net/
 */
 class Class230 internal constructor(string: String?, i: Int) {
-    @JvmField
     var aString2985: String? = null
-    @JvmField
     var anInt2987: Int = 0
     override fun toString(): String {
         anInt2989++
@@ -33,7 +31,6 @@ class Class230 internal constructor(string: String?, i: Int) {
         var anInt2982: Int = 0
         var anInt2983: Int = 0
         var anInt2984: Int = 0
-        @JvmField
         var anInt2986: Int = 0
         var anInt2988: Int = 0
         var anInt2989: Int = 0

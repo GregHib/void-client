@@ -31,12 +31,9 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
         var anInt2628: Int = 0
         var anInt2630: Int = 0
         var anIntArray2631: IntArray? = IntArray(4096)
-        @JvmField
         var anIntArray2632: IntArray?
-        @JvmField
         var anIntArray2633: IntArray?
         var anInt2634: Int = 0
-        @JvmField
         var aClass352Array2636: Array<Class352?>?
         var anInt2637: Int = 0
 

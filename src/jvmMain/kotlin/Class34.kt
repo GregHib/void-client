@@ -5,7 +5,6 @@ class Class34 {
     private var aShortArray465: ShortArray? = null
     private var anIntArray472: IntArray? = null
     private var aShortArray474: ShortArray? = null
-    @JvmField
     var aClass150_475: Class150? = null
     private lateinit var aShortArray477: ShortArray
     private lateinit var aShortArray480: ShortArray
@@ -137,33 +136,19 @@ class Class34 {
     }
 
     companion object {
-        @JvmField
         var anInt462: Int = 0
-        @JvmField
         var aClass60_463: Class60? = Class60(8)
-        @JvmField
         var anInt466: Int = 0
-        @JvmField
         var anInt467: Int = 0
-        @JvmField
         var anInt468: Int = 0
-        @JvmField
         var anInt469: Int = 0
-        @JvmField
         var anInt470: Int = 0
-        @JvmField
         var anInt471: Int = 0
-        @JvmField
         var anInt473: Int = 0
-        @JvmField
         var aFrame476: Frame? = null
-        @JvmField
         var anInt478: Int = 0
-        @JvmField
         var anInt479: Int = 0
-        @JvmField
         var anInt481: Int
-        @JvmField
         var aLong482: Long = -1L
 
         @JvmStatic

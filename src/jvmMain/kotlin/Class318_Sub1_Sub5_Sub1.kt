@@ -198,13 +198,11 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_ha: ha?, class51: Class51
         var anInt10121: Int = 0
         var anInt10122: Int = 0
         var anInt10123: Int = 0
-        @JvmField
         var aClass262_10125: Class262? = Class262()
         var anInt10126: Int = 0
         var anInt10131: Int = 0
         var anInt10132: Int = 0
         var anInt10133: Int = 0
-        @JvmField
         var aClass351_10134: Class351? = Class351(62, 3)
         var anInt10135: Int = 0
         var anInt10136: Int = 0

@@ -2,9 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class75_Sub1 : Class75() {
-    @JvmField
     var anInt5652: Int = 1
-    @JvmField
     var anInt5653: Int = 0
     var aFloat5654: Float = 1.0f
 

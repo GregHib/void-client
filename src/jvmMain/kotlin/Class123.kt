@@ -13,9 +13,7 @@ class Class123 internal constructor(var anInterface2_1811: Interface2?, i: Int, 
     }
 
     companion object {
-        @JvmField
         var aClass25_1813: Class25? = null
-        @JvmField
         var aClass45_1815: Class45? = null
 
         @JvmStatic

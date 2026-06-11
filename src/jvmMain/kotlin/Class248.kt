@@ -13,11 +13,9 @@ class Class248 {
     private val aClass348_Sub49_3211: Class348_Sub49
     private var aByte3212: Byte = 0
 
-    @JvmField
     @Volatile
     var anInt3213: Int = 0
 
-    @JvmField
     @Volatile
     var anInt3214: Int = 0
     private var aClass348_Sub42_Sub16_Sub1_3215: Class348_Sub42_Sub16_Sub1? = null
@@ -353,14 +351,12 @@ class Class248 {
         var anInt3193: Int = 0
         var anInt3194: Int = 0
         var anInt3195: Int = 0
-        @JvmField
         var aClass229_3196: Class229? = Class229()
         var anInt3198: Int = 0
         var anInt3199: Int = 0
         var anInt3200: Int = 0
         var anInt3201: Int = 0
         var anInt3202: Int = 0
-        @JvmField
         var anInt3203: Int = -1
         fun method1895(i: Int, `is`: ByteArray?, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, is_20_: ByteArray?, i_21_: Int, i_22_: Byte) {
             var i = i

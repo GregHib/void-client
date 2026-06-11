@@ -15,10 +15,8 @@ import java.awt.image.PixelGrabber
 
 open class Class258_Sub3 : Class258 {
     private var anInt8545: Int
-    @JvmField
     var anInt8547: Int = 0
     private var anInt8549 = -1
-    @JvmField
     var anInt8551: Int = 0
 
     internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) : super(var_ha_Sub2, i, i_0_, i_1_ * i_2_, false) {
@@ -214,23 +212,14 @@ open class Class258_Sub3 : Class258 {
     }
 
     companion object {
-        @JvmField
         var anInt8539: Int = 0
-        @JvmField
         var anInt8540: Int = 0
-        @JvmField
         var anInt8541: Int = 0
-        @JvmField
         var anInt8542: Int = 0
-        @JvmField
         var anInt8543: Int = 0
-        @JvmField
         var anInt8544: Int = 0
-        @JvmField
         var anInt8546: Int = 0
-        @JvmField
         var anInt8548: Int = 0
-        @JvmField
         var anInt8550: Int = 0
 
         @JvmStatic

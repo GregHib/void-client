@@ -2,19 +2,12 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class37 {
-    @JvmField
     var anInt490: Int = 0
-    @JvmField
     var anInt491: Int = 0
-    @JvmField
     var anInt492: Int = 0
-    @JvmField
     var anInt493: Int = 0
-    @JvmField
     var anInt494: Int = 0
-    @JvmField
     var anInt495: Int = 0
-    @JvmField
     var anInt496: Int = 0
 
     fun method356(i: Int, i_0_: Int): String? {

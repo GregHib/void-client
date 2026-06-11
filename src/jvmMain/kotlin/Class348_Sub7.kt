@@ -1,21 +1,14 @@
 /* Class348_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class348_Sub7 internal constructor(@JvmField var anInt6649: Int, @JvmField var anInt6648: Int, @JvmField var anInt6645: Int, @JvmField var anInt6647: Int, @JvmField var anInt6642: Int, @JvmField var aBoolean6650: Boolean) : Class348() {
+class Class348_Sub7 internal constructor(var anInt6649: Int, var anInt6648: Int, var anInt6645: Int, var anInt6647: Int, var anInt6642: Int, var aBoolean6650: Boolean) : Class348() {
     companion object {
-        @JvmField
         var anInt6641: Int = 0
-        @JvmField
         var aClass207_6643: Class207? = null
-        @JvmField
         var aClass229_6644: Class229? = Class229()
-        @JvmField
         var anInt6646: Int = 0
-        @JvmField
         var aLong6651: Long = -1L
-        @JvmField
         var anInt6652: Int = 0
-        @JvmField
         var aClass33_6653: Class33? = null
 
         @JvmStatic

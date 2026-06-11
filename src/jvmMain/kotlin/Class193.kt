@@ -11,12 +11,9 @@ class Class193 internal constructor(private val aClass377_2585: Class377, i: Int
     companion object {
         var anInt2583: Int = 0
         var anInt2586: Int = 0
-        @JvmField
         var aClass351_2587: Class351? = Class351(38, 7)
         var anInt2588: Int = 0
-        @JvmField
         var aClass202_2589: Class202? = null
-        @JvmField
         var anInt2590: Int = 0
 
         fun method1439(i: Int, class297: Class297?, component: Component?, i_0_: Int, i_1_: Int): Class279 {

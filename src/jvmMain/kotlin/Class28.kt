@@ -22,18 +22,12 @@ class Class28 : Interface15 {
     }
 
     companion object {
-        @JvmField
         var anInt4996: Int = 0
-        @JvmField
         var aClass223_4997: Class223? = Class223(6, 1)
         var aClass114_4998: Class114?
-        @JvmField
         var anInt4999: Int = 0
-        @JvmField
         var aString5000: String? = null
-        @JvmField
         var aString5001: String? = null
-        @JvmField
         var aBoolean5002: Boolean = false
 
         @JvmStatic

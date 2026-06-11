@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 class xa(i: Int, i_1_: Int) : Interface13, Interface19 {
-    @JvmField
     var nativeid: Long = 0L
 
     private external fun r(i: Int, i_0_: Int)

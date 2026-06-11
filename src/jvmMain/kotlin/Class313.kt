@@ -7,7 +7,6 @@ object Class313 {
     var anInt3933: Int = 0
     var aClass223_3934: Class223? = Class223(2, 2)
     var aFloat3935: Float = 0f
-    @JvmField
     var anInt3936: Int = 0
     var anInt3937: Int = 0
 

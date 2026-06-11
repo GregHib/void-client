@@ -101,29 +101,17 @@ class Class117 {
     }
 
     companion object {
-        @JvmField
         var anInt1763: Int = 0
-        @JvmField
         var anInt1765: Int = 0
-        @JvmField
         var aClass351_1766: Class351? = Class351(74, -1)
-        @JvmField
         var anInt1768: Int = 0
-        @JvmField
         var anInt1769: Int = 0
-        @JvmField
         var anInt1771: Int = 0
-        @JvmField
         var anInt1772: Int = 0
-        @JvmField
         var anInt1773: Int = 0
-        @JvmField
         var anInt1775: Int = 0
-        @JvmField
         var anInt1776: Int = 0
-        @JvmField
         var anInt1777: Int = 0
-        @JvmField
         var anInt1780: Int = 0
 
         @JvmStatic

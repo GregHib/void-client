@@ -4,19 +4,12 @@ import Class348_Sub42_Sub9.Companion.method3203
 * Visit http://jode.sourceforge.net/
 */
 class Class126 : Interface14 {
-    @JvmField
     var anInt4981: Int = 0
-    @JvmField
     var anInt4982: Int = 0
-    @JvmField
     var anInt4989: Int = 0
-    @JvmField
     var aBoolean4990: Boolean = false
-    @JvmField
     var anInt4991: Int = 0
-    @JvmField
     var anInt4992: Int = 0
-    @JvmField
     var anInt4993: Int = 0
     override fun method52(i: Byte): Long {
         anInt4988++
@@ -55,20 +48,13 @@ class Class126 : Interface14 {
     }
 
     companion object {
-        @JvmField
         var anIntArray4983: IntArray? = null
-        @JvmField
         var aClass45_4984: Class45? = null
-        @JvmField
         var anInt4985: Int = 0
-        @JvmField
         var anInt4986: Int = 0
         var aClass267Array4987: Array<Class267?>? = null
-        @JvmField
         var anInt4988: Int = 0
-        @JvmField
         var anInt4994: Int = 0
-        @JvmField
         var anInt4995: Int = 0
 
         @JvmStatic

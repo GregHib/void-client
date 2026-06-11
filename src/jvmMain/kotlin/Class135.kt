@@ -7,9 +7,7 @@ import jaggl.OpenGL.Companion.glGenBuffersARB
 abstract class Class135 {
     private var anInt1921 = 0
     private val aBoolean1923: Boolean
-    @JvmField
     var aHa_Sub2_1927: ha_Sub2? = null
-    @JvmField
     var anInt1929: Int = 0
     private val anInt1930: Int
 
@@ -67,15 +65,10 @@ abstract class Class135 {
     }
 
     companion object {
-        @JvmField
         var anInt1922: Int = 0
-        @JvmField
         var anInt1924: Int = 0
-        @JvmField
         var anInt1925: Int = 0
-        @JvmField
         var anInt1926: Int = 0
-        @JvmField
         var aColorArray1928: IntArray? = intArrayOf(-0x1000000 or 9179409, -0x1000000 or 3289650, -0x1000000 or 3289650, -0x1000000 or 3289650)
         @JvmStatic
         fun method1148(i: Int, i_0_: Int) {

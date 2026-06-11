@@ -11,17 +11,11 @@ abstract class Class314 {
     abstract fun method2340(i: Byte): Class291?
 
     companion object {
-        @JvmField
         var aFloat3938: Float = 0.0f
-        @JvmField
         var anInt3939: Int = 0
-        @JvmField
         var anInt3940: Int = 0
-        @JvmField
         var anInt3941: Int = 0
-        @JvmField
         var anInt3942: Int = 0
-        @JvmField
         var aFloat3943: Float = 0f
 
         @JvmStatic

@@ -1,15 +1,13 @@
 /* Class348_Sub42_Sub9 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-abstract class Class348_Sub42_Sub9 internal constructor(@JvmField var anInterface14_9559: Interface14?, @JvmField var anInt9556: Int) : Class348_Sub42() {
+abstract class Class348_Sub42_Sub9 internal constructor(var anInterface14_9559: Interface14?, var anInt9556: Int) : Class348_Sub42() {
     abstract fun method3205(i: Int): Any?
 
     abstract fun method3206(i: Byte): Boolean
 
     companion object {
-        @JvmField
         var anInt9557: Int = 0
-        @JvmField
         var anIntArray9558: IntArray? = intArrayOf(3, 7, 15)
         @JvmStatic
         fun method3203(i: Int, i_0_: Byte, i_1_: Int): Boolean {

@@ -8,21 +8,13 @@ import kotlin.math.max
 import kotlin.math.min
 
 class Class38 {
-    @JvmField
     var anInt498: Int = 0
-    @JvmField
     var anInt499: Int = 0
-    @JvmField
     var anInt501: Int = 8
-    @JvmField
     var anInt502: Int = 0
-    @JvmField
     var anInt503: Int = 16777215
-    @JvmField
     var anInt504: Int = 0
-    @JvmField
     var aBoolean507: Boolean = false
-    @JvmField
     var anInt508: Int = 0
     private fun method361(i: Int, class348_sub49: Class348_Sub49, i_2_: Int) {
         if (i != -6617) method363(95)
@@ -50,23 +42,14 @@ class Class38 {
     }
 
     companion object {
-        @JvmField
         var anInt497: Int = 0
-        @JvmField
         var anInt500: Int = 0
-        @JvmField
         var anInt505: Int = 0
-        @JvmField
         var anInt506: Int = -1
-        @JvmField
         var anInt509: Int = 0
-        @JvmField
         var aBoolean510: Boolean = false
-        @JvmField
         var anInt511: Int = 0
-        @JvmField
         var anInt512: Int = 0
-        @JvmField
         var anInt513: Int = 100
 
         @JvmStatic

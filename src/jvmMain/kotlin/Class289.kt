@@ -7,20 +7,14 @@ import Class369_Sub1.Companion.method3570
 */
 object Class289 {
     var anInt3696: Int = 0
-    @JvmField
     var aBoolean3697: Boolean = false
     var anInt3698: Int = 0
-    @JvmField
     var anInt3699: Int
-    @JvmField
     var aByteArrayArrayArray3700: Array<Array<ByteArray?>?>? = null
-    @JvmField
     var aClass46_3701: Class46? = null
     var anInt3702: Int = 0
     var anInt3703: Int = 0
-    @JvmField
     var anInt3704: Int = 0
-    @JvmField
     var aClass262_3705: Class262? = null
 
     @JvmStatic

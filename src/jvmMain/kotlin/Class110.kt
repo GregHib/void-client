@@ -1,11 +1,8 @@
 import java.awt.Canvas
 
 abstract class Class110 {
-    @JvmField
     var anInt1704: Int = 0
-    @JvmField
     var anInt1708: Int = 0
-    @JvmField
     var anInt1711: Int = 0
     fun method1029(bool: Boolean): Boolean {
         anInt1707++
@@ -32,27 +29,16 @@ abstract class Class110 {
     }
 
     companion object {
-        @JvmField
         var anInt1699: Int = 0
-        @JvmField
         var aShort1700: Short = 256
-        @JvmField
         var anInt1701: Int = 0
-        @JvmField
         var aClass114_1702: Class114?
-        @JvmField
         var anInt1703: Int = 0
-        @JvmField
         var anInt1705: Int = 0
-        @JvmField
         var aClass105_1706: Class105? = null
-        @JvmField
         var anInt1707: Int = 0
-        @JvmField
         var anInt1709: Int = 0
-        @JvmField
         var anInt1710: Int = 0
-        @JvmField
         var aBoolean1712: Boolean = false
 
         /*synthetic*/

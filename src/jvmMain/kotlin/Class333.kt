@@ -38,7 +38,6 @@ class Class333 {
     }
 
     companion object {
-        @JvmField
         var anInt4144: Int = -1
         var anInt4145: Int = 0
         var aClass45_4147: Class45? = null

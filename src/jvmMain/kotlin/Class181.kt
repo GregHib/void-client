@@ -6,126 +6,70 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class Class181 {
-    @JvmField
     var anInt2373: Int = 0
     private var anInt2375 = 100
-    @JvmField
     var aBoolean2376: Boolean = true
-    @JvmField
     var anInt2377: Int = 0
-    @JvmField
     var anInt2379: Int = 0
-    @JvmField
     var anIntArray2380: IntArray = intArrayOf()
-    @JvmField
     var anInt2381: Int = 0
-    @JvmField
     var aBoolean2382: Boolean = false
-    @JvmField
     var anInt2383: Int = 0
-    @JvmField
     var anInt2384: Int
-    @JvmField
     var anIntArray2385: IntArray? = null
-    @JvmField
     var anInt2386: Int = 0
-    @JvmField
     var anInt2387: Int = -1
-    @JvmField
     var anInt2388: Int = 0
-    @JvmField
     var anInt2389: Int = 0
-    @JvmField
     var anInt2390: Int = 0
-    @JvmField
     var anInt2391: Int = 0
-    @JvmField
     var anInt2392: Int = 0
-    @JvmField
     var anInt2393: Int
-    @JvmField
     var anInt2394: Int = 0
-    @JvmField
     var anIntArray2395: IntArray = intArrayOf()
-    @JvmField
     var aBoolean2397: Boolean = false
-    @JvmField
     var anInt2399: Int = 0
     private var anInt2401 = 100
-    @JvmField
     var anIntArray2402: IntArray = intArrayOf()
-    @JvmField
     var anInt2403: Int = 0
-    @JvmField
     var anInt2404: Int = -1
-    @JvmField
     var anInt2405: Int = 0
-    @JvmField
     var aBoolean2406: Boolean = true
-    @JvmField
     var anInt2407: Int = 0
-    @JvmField
     var anInt2408: Int = 0
-    @JvmField
     var anInt2410: Int = 0
-    @JvmField
     var aBoolean2411: Boolean = true
     private var anInt2412 = 0
-    @JvmField
     var anInt2413: Int = 0
-    @JvmField
     var anInt2414: Int
-    @JvmField
     var aShort2415: Short = 0
-    @JvmField
     var anInt2416: Int = 0
-    @JvmField
     var anInt2417: Int = 0
-    @JvmField
     var aShort2418: Short = 0
     private var anInt2419 = 0
     private var anInt2420 = 0
-    @JvmField
     var anInt2421: Int = 0
-    @JvmField
     var anInt2422: Int = 0
-    @JvmField
     var anInt2423: Int
-    @JvmField
     var aBoolean2424: Boolean = false
-    @JvmField
     var anInt2425: Int
-    @JvmField
     var anInt2426: Int = 0
-    @JvmField
     var anInt2427: Int
     private var anInt2428 = 0
-    @JvmField
     var anInt2429: Int = 0
-    @JvmField
     var aBoolean2430: Boolean = true
-    @JvmField
     var aShort2431: Short = 0
     private var anInt2432 = 100
-    @JvmField
     var anInt2433: Int = 0
     private var anInt2434 = 0
-    @JvmField
     var aBoolean2435: Boolean = true
-    @JvmField
     var anInt2436: Int = 0
-    @JvmField
     var anInt2437: Int = 0
-    @JvmField
     var anInt2438: Int = 0
-    @JvmField
     var anInt2439: Int = 0
     private var anInt2440 = 100
-    @JvmField
     var aShort2441: Short = 0
-    @JvmField
     var anInt2442: Int = 0
-    @JvmField
     var aBoolean2443: Boolean = true
     private var anInt2444 = 0
 
@@ -290,7 +234,6 @@ class Class181 {
     }
 
     companion object {
-        @JvmField
         var aBooleanArray2374: BooleanArray? = BooleanArray(5)
         var anInt2378: Int = 0
         var anInt2396: Int = 0

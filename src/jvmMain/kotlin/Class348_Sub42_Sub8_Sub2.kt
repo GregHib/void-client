@@ -30,23 +30,14 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
     }
 
     companion object {
-        @JvmField
         var anInt10430: Int = 0
-        @JvmField
         var aLongArrayArrayArray10431: Array<Array<LongArray?>?>? = null
-        @JvmField
         var anInt10432: Int = 0
-        @JvmField
         var anInt10433: Int = 0
-        @JvmField
         var aClass230_10434: Class230? = null
-        @JvmField
         var anInt10435: Int = 0
-        @JvmField
         var aClass76_10436: Class76? = Class76(true)
-        @JvmField
         var aClass74_10437: Class74? = Class74(0, 3)
-        @JvmField
         var anInt10438: Int = 0
 
         @JvmStatic

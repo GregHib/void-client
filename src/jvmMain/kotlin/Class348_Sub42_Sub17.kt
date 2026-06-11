@@ -89,7 +89,6 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
         var anInt9675: Int = 0
         var anInt9676: Int = 0
         var anInt9677: Int = 0
-        @JvmField
         var anIntArrayArray9678: Array<IntArray?>? = null
         var aClass351_9679: Class351? = Class351(27, 7)
         var anInt9680: Int = 0

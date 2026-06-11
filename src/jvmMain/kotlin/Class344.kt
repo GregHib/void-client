@@ -9,17 +9,11 @@ abstract class Class344 {
     abstract fun method2692(i: Int): ByteArray?
 
     companion object {
-        @JvmField
         var aClass351_4262: Class351? = Class351(34, 15)
-        @JvmField
         var anInt4263: Int = 2
-        @JvmField
         var aClass351_4264: Class351? = Class351(40, 12)
-        @JvmField
         var anInt4265: Int = 0
-        @JvmField
         var aClass351_4266: Class351? = Class351(72, 16)
-        @JvmField
         var anInt4267: Int = 0
 
         @JvmStatic

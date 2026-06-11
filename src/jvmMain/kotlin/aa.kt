@@ -3,11 +3,8 @@
  */
 abstract class aa {
     companion object {
-        @JvmField
         var anInt113: Int = 0
-        @JvmField
         var aClass144_114: Class144? = null
-        @JvmField
         var anInt115: Int = 0
 
         @JvmStatic

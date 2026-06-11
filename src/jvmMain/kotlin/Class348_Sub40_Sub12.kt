@@ -324,23 +324,14 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
     }
 
     companion object {
-        @JvmField
         var aClass351_9189: Class351? = Class351(28, 2)
-        @JvmField
         var anInt9190: Int = 0
-        @JvmField
         var anInt9191: Int = 0
-        @JvmField
         var anInt9192: Int = 0
-        @JvmField
         var anInt9193: Int = 0
-        @JvmField
         var aClass263_9195: Class263? = null
-        @JvmField
         var anInt9196: Int = 0
-        @JvmField
         var aClass114_9197: Class114? = Class114(61, -1)
-        @JvmField
         var anInt9198: Int = 0
         var anInt9200: Int = 0
 

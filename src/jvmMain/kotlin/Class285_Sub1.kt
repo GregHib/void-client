@@ -50,29 +50,17 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
     }
 
     companion object {
-        @JvmField
         var anInt8483: Int = 0
-        @JvmField
         var anInt8484: Int = 0
-        @JvmField
         var anInt8485: Int = 0
-        @JvmField
         var anInt8486: Int = 0
-        @JvmField
         var anInt8487: Int = 0
-        @JvmField
         var anInt8488: Int = 0
-        @JvmField
         var anInt8489: Int = 0
-        @JvmField
         var anInt8490: Int = 0
-        @JvmField
         var anInt8492: Int = 0
-        @JvmField
         var anInt8493: Int = 0
-        @JvmField
         var anInt8494: Int = 0
-        @JvmField
         var anInt8495: Int = 0
 
         @JvmStatic

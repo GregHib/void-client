@@ -5,24 +5,16 @@ import Class98.Companion.method878
 * Visit http://jode.sourceforge.net/
 */
 class Class182 {
-    @JvmField
     var anInt2445: Int = 0
-    @JvmField
     var anInt2448: Int = 0
-    @JvmField
     var anInt2451: Int = 0
-    @JvmField
     var anInt2454: Int = 0
-    @JvmField
     var anInt2455: Int = 0
-    @JvmField
     var anInt2456: Int = 0
 
     companion object {
-        @JvmField
         var anInt2446: Int = 0
         var anInterface16Array2447: Array<Interface16?>? = null
-        @JvmField
         var aClass346_2449: Class346? = null
         var anInt2450: Int = 0
         var anInt2452: Int = 0

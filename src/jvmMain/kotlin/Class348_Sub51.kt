@@ -4,31 +4,23 @@ import kotlin.math.max
 
 class Class348_Sub51 : Class348 {
     var aClass239_Sub26_7215: Class239_Sub26? = null
-    @JvmField
     var aClass239_Sub20_7216: Class239_Sub20? = null
     var aClass239_Sub4_7220: Class239_Sub4? = null
     private var aClass199_7221: Class199? = null
     var aClass239_Sub3_7222: Class239_Sub3? = null
     var aClass239_Sub15_7224: Class239_Sub15? = null
     var aClass239_Sub6_7226: Class239_Sub6? = null
-    @JvmField
     var aClass239_Sub8_7227: Class239_Sub8? = null
     var aClass239_Sub2_7228: Class239_Sub2? = null
     var aClass239_Sub29_7229: Class239_Sub29? = null
-    @JvmField
     var aClass239_Sub28_7230: Class239_Sub28? = null
     var aClass239_Sub23_7231: Class239_Sub23? = null
-    @JvmField
     var aClass239_Sub10_7232: Class239_Sub10? = null
     var aClass239_Sub26_7234: Class239_Sub26? = null
-    @JvmField
     var aClass239_Sub24_7235: Class239_Sub24? = null
-    @JvmField
     var aClass239_Sub13_7236: Class239_Sub13? = null
-    @JvmField
     var aClass239_Sub7_7238: Class239_Sub7? = null
     var aClass239_Sub5_7240: Class239_Sub5? = null
-    @JvmField
     var aClass239_Sub12_7243: Class239_Sub12? = null
     var aClass239_Sub26_7245: Class239_Sub26? = null
     var aClass239_Sub1_7246: Class239_Sub1? = null
@@ -41,20 +33,14 @@ class Class348_Sub51 : Class348 {
     var aClass239_Sub27_7255: Class239_Sub27? = null
     var aClass239_Sub9_7256: Class239_Sub9? = null
     var aClass239_Sub19_7257: Class239_Sub19? = null
-    @JvmField
     var aClass239_Sub18_7259: Class239_Sub18? = null
     var aClass239_Sub26_7260: Class239_Sub26? = null
-    @JvmField
     var aClass239_Sub27_7261: Class239_Sub27? = null
-    @JvmField
     var aClass239_Sub17_7263: Class239_Sub17? = null
     var aClass239_Sub14_7264: Class239_Sub14? = null
-    @JvmField
     var aClass239_Sub11_7265: Class239_Sub11? = null
     private val aClass230_7269: Class230?
-    @JvmField
     var aClass239_Sub21_7270: Class239_Sub21? = null
-    @JvmField
     var aClass239_Sub25_7271: Class239_Sub25? = null
     var aClass239_Sub26_7272: Class239_Sub26? = null
     private fun method3421(i: Int, class348_sub49: Class348_Sub49?, i_0_: Int) {
@@ -2936,10 +2922,8 @@ class Class348_Sub51 : Class348 {
         var aClass318_Sub10Array7249: Array<Class318_Sub10?>? = null
         var anInt7252: Int
         var anInt7258: Int = 0
-        @JvmField
         var aShortArrayArrayArray7262: Array<Array<ShortArray?>?>?
         var anInt7266: Int = 0
-        @JvmField
         var anInt7267: Int
         private var aShortArrayArray7268: Array<ShortArray?>?
 

@@ -8,23 +8,14 @@ class InputStream_Sub1 : InputStream() {
     }
 
     companion object {
-        @JvmField
         var anInt71: Int = 0
-        @JvmField
         var anInt72: Int = 0
-        @JvmField
         var anInt73: Int = 0
-        @JvmField
         var anInt74: Int = 0
-        @JvmField
         var aLongArrayArray75: Array<LongArray?>?
-        @JvmField
         var aLongArray76: LongArray? = LongArray(11)
-        @JvmField
         var aClass351_77: Class351?
-        @JvmField
         var anInt78: Int
-        @JvmField
         var aClass114_79: Class114?
 
         @JvmStatic

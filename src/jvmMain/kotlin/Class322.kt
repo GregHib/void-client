@@ -93,10 +93,8 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
         var anInt4028: Int = 0
         var anInt4030: Int = 0
         var anIntArray4031: IntArray? = null
-        @JvmField
         var anInt4032: Int = -1
         var anInt4034: Int = 0
-        @JvmField
         var aClass308_4036: Class308?
 
         fun method2552(bool: Boolean, i: Int, i_0_: Int, i_1_: Int): Int {

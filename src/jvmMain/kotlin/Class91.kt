@@ -6,14 +6,10 @@ import Class6.Companion.method204
 * Visit http://jode.sourceforge.net/
 */
 object Class91 {
-    @JvmField
     var aClass74_1519: Class74?
-    @JvmField
     var anInt1520: Int = 0
     var anIntArray1521: IntArray? = intArrayOf(7, 8, 9, 10, 11, 12, 13, 15)
-    @JvmField
     var anInt1522: Int = 0
-    @JvmField
     var aClass82_1523: Class82? = null
 
     fun method855(i: Int, i_0_: Int, i_1_: Int) {

@@ -30,13 +30,11 @@ class Class253 {
     }
 
     companion object {
-        @JvmField
         var anInt3246: Int = 0
         var anInt3247: Int = 0
         var anInt3248: Int = 0
         var anInt3250: Int = 0
         var anInt3252: Int = 0
-        @JvmField
         var anInt3253: Int = 0
         var anInt3254: Int = 0
         var anInt3255: Int = 0

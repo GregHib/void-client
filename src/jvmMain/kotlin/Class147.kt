@@ -52,14 +52,10 @@ class Class147 internal constructor(i: Int, i_0_: Int, string: String?, string_1
     }
 
     companion object {
-        @JvmField
         var anInt2021: Int = 0
         var anInt2023: Int = 0
-        @JvmField
         var aClass357ArrayArrayArray2029: Array<Array<Array<Class357?>?>?>? = null
-        @JvmField
         var aClass338Array2034: Array<Class338?>? = null
-        @JvmField
         var anInt2035: Int = 0
         var anInt2036: Int = 0
 

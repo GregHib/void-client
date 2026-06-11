@@ -43,15 +43,12 @@ class Class316 internal constructor(`is`: IntArray) {
 
     companion object {
         var anInt3958: Int = 0
-        @JvmField
         var aClass348_Sub51_3959: Class348_Sub51? = null
         var anInt3960: Int = 0
         var anInt3962: Int = 0
-        @JvmField
         var aClass348_Sub42_Sub12_3963: Class348_Sub42_Sub12? = null
         var anInt3964: Int = 0
         var anInt3965: Int = 0
-        @JvmField
         var anInt3966: Int = 0
 
         @JvmStatic

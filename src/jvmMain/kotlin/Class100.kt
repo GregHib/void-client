@@ -75,21 +75,13 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
     }
 
     companion object {
-        @JvmField
         var anInt1577: Int = 0
-        @JvmField
         var aClass78Array1579: Array<Class78?>? = arrayOfNulls(37)
-        @JvmField
         var anInt1580: Int = 0
-        @JvmField
         var anIntArray1583: IntArray? = IntArray(14)
-        @JvmField
         var aClass356_1585: Class356? = Class356(16)
-        @JvmField
         var anInt1587: Int = 0
-        @JvmField
         var anInt1589: Int = 0
-        @JvmField
         var anInt1590: Int = 0
         var aClass227_1591: Class227? = Class227(1)
         @JvmStatic

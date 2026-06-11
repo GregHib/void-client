@@ -53,22 +53,18 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
     }
 
     companion object {
-        @JvmField
         var aClass323_4672: Class323? = null
         var aFloat4673: Float = 0f
-        @JvmField
         var anInt4674: Int = 0
         var anInt4675: Int = 0
         var anInt4676: Int = 0
         var anInt4677: Int = 0
         var anInt4678: Int = 0
-        @JvmField
         var aClass105Array4679: Array<Class105?>? = null
         var anInt4680: Int = 0
         var anInt4681: Int = 0
         var aLong4683: Long = 0
         var aClass324_4684: Class324? = null
-        @JvmField
         var anInt4686: Int = 0
 
         fun method1852(i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {

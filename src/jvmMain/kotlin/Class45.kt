@@ -3,7 +3,6 @@
 */
 class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
     private var aClass291_629: Class291? = null
-    @JvmField
     var anInt634: Int
     private val aBoolean655: Boolean
     private var anObjectArray656: Array<Any?>? = null
@@ -498,83 +497,44 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
     }
 
     companion object {
-        @JvmField
         var anInt626: Int = 0
-        @JvmField
         var anInt627: Int = 0
-        @JvmField
         var anInt628: Int = 0
-        @JvmField
         var anInt630: Int = 0
-        @JvmField
         var anInt631: Int = 0
-        @JvmField
         var anInt632: Int = 0
-        @JvmField
         var anInt633: Int = 0
-        @JvmField
         var anInt635: Int = 0
-        @JvmField
         var anInt636: Int = 0
-        @JvmField
         var anInt637: Int = 0
-        @JvmField
         var anInt638: Int = 0
-        @JvmField
         var anInt639: Int = 0
-        @JvmField
         var anInt640: Int = 0
-        @JvmField
         var anInt641: Int = 0
-        @JvmField
         var anInt642: Int = 0
-        @JvmField
         var aClass351_643: Class351? = Class351(3, -1)
-        @JvmField
         var anInt644: Int = 0
-        @JvmField
         var anInt645: Int = 0
-        @JvmField
         var anInt646: Int = 0
-        @JvmField
         var anInt647: Int = 0
-        @JvmField
         var anInt648: Int = 0
-        @JvmField
         var anInt649: Int = 0
-        @JvmField
         var anInt650: Int = 0
-        @JvmField
         var anInt651: Int = 0
-        @JvmField
         var anInt652: Int = 0
-        @JvmField
         var anInt653: Int = 0
-        @JvmField
         var anInt654: Int = 0
-        @JvmField
         var anInt657: Int = 0
-        @JvmField
         var anInt658: Int = 0
-        @JvmField
         var anInt660: Int = 0
-        @JvmField
         var anInt661: Int = 0
-        @JvmField
         var anInt662: Int = 0
-        @JvmField
         var anInt663: Int = 0
-        @JvmField
         var anInt665: Int = 0
-        @JvmField
         var anInt666: Int
-        @JvmField
         var aLong667: Long = 0
-        @JvmField
         var anInt668: Int = 0
-        @JvmField
         var anInt669: Int = 0
-        @JvmField
         var aFloat670: Float = 0f
 
         @JvmStatic

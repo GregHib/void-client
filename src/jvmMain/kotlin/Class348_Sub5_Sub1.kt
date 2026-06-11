@@ -298,25 +298,15 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: ha_Sub2) : Class348_S
     }
 
     companion object {
-        @JvmField
         var anInt8823: Int = 0
-        @JvmField
         var anInt8827: Int = 0
-        @JvmField
         var anInt8828: Int = 0
-        @JvmField
         var anInt8829: Int = 0
-        @JvmField
         var anInt8831: Int = 0
-        @JvmField
         var aClass21_8832: Class21? = Class21()
-        @JvmField
         var anInt8834: Int = 0
-        @JvmField
         var anInt8839: Int = 0
-        @JvmField
         var anInt8840: Int = 0
-        @JvmField
         var anInt8843: Int = 0
         @JvmStatic
         fun method2765(i: Int) {

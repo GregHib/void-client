@@ -117,18 +117,14 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
     }
 
     companion object {
-        @JvmField
         var anInt3855: Int = 0
         var anInt3856: Int = 0
         var anInt3860: Int = 0
         var anInt3861: Int = 0
         var anInt3864: Int = 0
         var anInt3868: Int = 0
-        @JvmField
         var aCanvas3869: Canvas? = null
-        @JvmField
         var aDisplayTarget3869: AwtDisplayTarget? = null
-        @JvmField
         var aBoolean3870: Boolean = false
         @JvmStatic
         fun method2294(i: Int) {

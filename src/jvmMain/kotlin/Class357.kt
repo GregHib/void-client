@@ -11,7 +11,6 @@ class Class357 internal constructor(i: Int) {
     var aByte4399: Byte
     var aClass357_4400: Class357? = null
     var aShort4401: Short = 0
-    @JvmField
     var aClass318_Sub1_Sub1_4402: Class318_Sub1_Sub1? = null
     var aClass318_Sub1_Sub4_4403: Class318_Sub1_Sub4? = null
     var aClass318_Sub1_Sub4_4406: Class318_Sub1_Sub4? = null

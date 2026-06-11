@@ -152,7 +152,6 @@ class Class232 internal constructor(var_ha_Sub2: ha_Sub2?, class104: Class104?, 
     companion object {
         var anInt3004: Int = 0
         var anInt3005: Int = 0
-        @JvmField
         var anInt3006: Int = 0
         var anInt3007: Int = 0
         var anInt3012: Int = 0

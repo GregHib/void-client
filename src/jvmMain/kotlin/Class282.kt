@@ -9,7 +9,6 @@ object Class282 {
     var anInt3651: Int = 0
     var aBoolean3652: Boolean = false
     var anInt3653: Int = 0
-    @JvmField
     var aClass356_3654: Class356?
     var anInt3655: Int = 0
 

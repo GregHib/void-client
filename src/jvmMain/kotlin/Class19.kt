@@ -2,28 +2,18 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class19 {
-    @JvmField
     var aString306: String? = null
-    @JvmField
     var anInt308: Int = 0
-    @JvmField
     var aByte310: Byte = 0
     var aString312: String? = null
-    @JvmField
     var aString313: String? = null
-    @JvmField
     var aString314: String? = null
 
     companion object {
-        @JvmField
         var aClass114_304: Class114?
-        @JvmField
         var anInt305: Int = 0
-        @JvmField
         var anInt307: Int = 0
-        @JvmField
         var anInt309: Int = 0
-        @JvmField
         var aClass174Array311: Array<Class174?>? = arrayOfNulls<Class174>(16)
         var aClass114_315: Class114?
 

@@ -2,14 +2,10 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class95 {
-    @JvmField
     var anInt1539: Int = 0
     var aClass114_1540: Class114? = Class114(113, 1)
-    @JvmField
     var aClass45_1541: Class45? = null
-    @JvmField
     var aClass221_1542: Class221? = null
-    @JvmField
     var aClass348_Sub42_Sub17Array1543: Array<Class348_Sub42_Sub17?>? = arrayOfNulls(14)
 
     @JvmStatic

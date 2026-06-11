@@ -3,14 +3,10 @@
 */
 object Class132 {
     var anInt1905: Int = 4
-    @JvmField
     var anInt1906: Int
-    @JvmField
     var aPlayer_1907: Player? = null
     var anInt1908: Int = 0
-    @JvmField
     var anIntArray1909: IntArray? = null
-    @JvmField
     var anInt1910: Int = 0
     var anInt1911: Int = 7000
 

@@ -5,11 +5,8 @@ import Class59_Sub1_Sub1.Companion.method558
 * Visit http://jode.sourceforge.net/
 */
 object Class103 {
-    @JvmField
     var aClass345_1607: Class345? = method558(96)
-    @JvmField
     var anInt1608: Int = 0
-    @JvmField
     var anInt1609: Int = 0
 
     @JvmStatic

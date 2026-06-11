@@ -7,19 +7,12 @@ abstract class Class246 {
     abstract fun method1888(i: Int, class348_sub42_sub8: Class348_Sub42_Sub8): Class348_Sub42_Sub8
 
     companion object {
-        @JvmField
         var anIntArray3173: IntArray? = intArrayOf(0, 2, 2, 2, 1, 1, 3, 3, 1, 3, 3, 4, 4)
-        @JvmField
         var aBoolean3174: Boolean = false
-        @JvmField
         var anInt3175: Int = 0
-        @JvmField
         var anInt3176: Int = 0
-        @JvmField
         var aFloat3177: Float = 0f
-        @JvmField
         var anInt3178: Int = 0
-        @JvmField
         var aClass143_3179: Class143? = null
 
         @JvmStatic

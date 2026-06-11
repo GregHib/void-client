@@ -5,184 +5,101 @@ import kotlin.math.min
 * Visit http://jode.sourceforge.net/
 */
 abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0, 0, 0, false, 0.toByte()) {
-    @JvmField
     var anInt10201: Int = 0
-    @JvmField
     var anInt10202: Int = 0
-    @JvmField
     var anInt10203: Int = 0
-    @JvmField
     var aByte10206: Byte = 0
-    @JvmField
     var anInt10207: Int
-    @JvmField
     var anInt10208: Int = 0
-    @JvmField
     var anInt10210: Int = 0
-    @JvmField
     var anInt10211: Int = 0
-    @JvmField
     var aBoolean10213: Boolean = false
     var anInt10215: Int
-    @JvmField
     var aClass264_10217: Class264
-    @JvmField
     var anInt10218: Int = 0
     var anIntArray10219: IntArray
-    @JvmField
     var anInt10220: Int = 0
     private var aByte10222: Byte
-    @JvmField
     var anInt10223: Int
-    @JvmField
     var anInt10224: Int = 0
-    @JvmField
     var anInt10225: Int = 0
-    @JvmField
     var aBoolean10226: Boolean = false
-    @JvmField
     var anInt10227: Int = 0
     var anIntArray10229: IntArray
-    @JvmField
     var anInt10230: Int = 0
-    @JvmField
     var anInt10231: Int = 0
-    @JvmField
     var anInt10232: Int = 0
-    @JvmField
     var anInt10234: Int = 0
-    @JvmField
     var anIntArray10236: IntArray? = null
-    @JvmField
     var anInt10237: Int = 0
-    @JvmField
     var anInt10239: Int = 0
-    @JvmField
     var anInt10240: Int = 0
-    @JvmField
     var anInt10241: Int = 0
     var anIntArray10242: IntArray? = null
-    @JvmField
     var anInt10243: Int = 0
-    @JvmField
     var anInt10244: Int
-    @JvmField
     var anInt10245: Int = 0
-    @JvmField
     var anInt10247: Int = 0
-    @JvmField
     var anInt10248: Int
-    @JvmField
     var anInt10250: Int
-    @JvmField
     var anInt10252: Int = 0
-    @JvmField
     var aByte10255: Byte = 0
     var anIntArray10259: IntArray
-    @JvmField
     var anInt10260: Int = 0
-    @JvmField
     var anInt10261: Int = 0
-    @JvmField
     var anInt10264: Int = 100
-    @JvmField
     var anInt10265: Int = 0
-    @JvmField
     var anInt10267: Int = 0
-    @JvmField
     var anInt10268: Int
-    @JvmField
     var anInt10269: Int
-    @JvmField
     var aByte10270: Byte = 0
-    @JvmField
     var anInt10271: Int = 0
-    @JvmField
     var anInt10273: Int = 0
-    @JvmField
     var anInt10274: Int = 0
-    @JvmField
     var anInt10275: Int
-    @JvmField
     var anInt10276: Int
-    @JvmField
     var anInt10278: Int
-    @JvmField
     var aByte10279: Byte
     private var anInt10280 = 1
-    @JvmField
     var anInt10282: Int = 0
-    @JvmField
     var anInt10283: Int
     var anIntArray10284: IntArray
-    @JvmField
     var anInt10285: Int = 0
-    @JvmField
     var anInt10286: Int
-    @JvmField
     var anInt10287: Int
-    @JvmField
     var anInt10288: Int = 0
-    @JvmField
     var anInt10289: Int
-    @JvmField
     var anInt10290: Int = 0
-    @JvmField
     var anInt10291: Int
-    @JvmField
     var aString10292: String? = null
-    @JvmField
     var anInt10293: Int = 0
-    @JvmField
     var anInt10294: Int = 0
     var anInt10295: Int = 0
-    @JvmField
     var anIntArray10296: IntArray? = null
-    @JvmField
     var anInt10300: Int = 0
-    @JvmField
     var anInt10301: Int = 0
-    @JvmField
     var anInt10302: Int = 0
     var anIntArray10303: IntArray
     var anIntArray10304: IntArray
-    @JvmField
     var anInt10305: Int = 0
-    @JvmField
     var anInt10306: Int = 0
-    @JvmField
     var aClass182Array10308: Array<Class182?>?
-    @JvmField
     var aBoolean10309: Boolean = true
-    @JvmField
     var anInt10310: Int = 256
-    @JvmField
     var anInt10312: Int
-    @JvmField
     var anInt10314: Int = 0
     private val aClass264_10315: Class264
     private val aClass264_10316: Class264
-    @JvmField
     var anIntArray10317: IntArray?
-    @JvmField
     var aBoolean10318: Boolean
-    @JvmField
     var anInt10319: Int
-    @JvmField
     var anIntArray10320: IntArray?
-    @JvmField
     var aByteArray10321: ByteArray?
-    @JvmField
     var anInt10322: Int
-    @JvmField
     var aClass64Array10323: Array<Class64?>
-    @JvmField
     var aBoolean10324: Boolean
-    @JvmField
     var anInt10325: Int
-    @JvmField
     var anInt10326: Int
-    @JvmField
     var aClass318_Sub10_10327: Class318_Sub10? = null
 
     abstract fun method2421(i: Byte): Int
@@ -727,66 +644,37 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
     }
 
     companion object {
-        @JvmField
         var anInt10200: Int = 0
         private var aShortArrayArray10204: Array<ShortArray?>?
-        @JvmField
         var anInt10205: Int = 0
-        @JvmField
         var aClass170_10209: Class170? = null
-        @JvmField
         var anInt10212: Int = 0
-        @JvmField
         var anInt10214: Int = 0
-        @JvmField
         var anInt10216: Int = 0
-        @JvmField
         var aBoolean10221: Boolean = false
-        @JvmField
         var anInt10228: Int = 0
-        @JvmField
         var anInt10233: Int = 0
-        @JvmField
         var anInt10235: Int = 0
-        @JvmField
         var aBoolean10238: Boolean
         private var aShortArrayArray10246: Array<ShortArray?>? = arrayOf<ShortArray?>(ShortArray(0), ShortArray(0), ShortArray(0), ShortArray(0), ShortArray(0))
-        @JvmField
         var anInt10249: Int = 0
-        @JvmField
         var anInt10251: Int = 0
-        @JvmField
         var aShortArrayArrayArray10253: Array<Array<ShortArray?>?>?
-        @JvmField
         var anInt10254: Int = 0
-        @JvmField
         var anInt10256: Int = 0
-        @JvmField
         var anInt10257: Int = 0
         private var aShortArrayArray10258: Array<ShortArray?>?
-        @JvmField
         var anInt10262: Int = 0
-        @JvmField
         var anInt10263: Int = 0
-        @JvmField
         var anIntArray10266: IntArray? = IntArray(256)
-        @JvmField
         var anInt10272: Int = 0
-        @JvmField
         var anInt10277: Int = 0
-        @JvmField
         var anInt10281: Int = 0
-        @JvmField
         var anInt10297: Int = 0
-        @JvmField
         var anInt10298: Int = 0
-        @JvmField
         var anInt10299: Int = 0
-        @JvmField
         var anInt10307: Int = 0
-        @JvmField
         var anInt10311: Int = 0
-        @JvmField
         var anInt10313: Int = 0
         @JvmStatic
         fun method2420(i: Int, i_0_: Int) {

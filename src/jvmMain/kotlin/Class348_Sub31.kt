@@ -3,9 +3,7 @@ import java.awt.Canvas
 import java.awt.Graphics
 
 abstract class Class348_Sub31 : Class348(), GameSurface {
-    @JvmField
     var anIntArray6916: IntArray? = null
-    @JvmField
     var anInt6917: Int = 0
     var anInt6920: Int = 0
 
@@ -14,7 +12,6 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
      * available. [present] sources its `Graphics` from here. Nullable because the existing
      * creation path can build the buffer before a target/canvas is bound.
      */
-    @JvmField
     var displayTarget: AwtDisplayTarget? = null
 
     abstract fun method3008(canvas: Canvas?, i: Int, i_1_: Int, i_2_: Int)
@@ -46,27 +43,16 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
     }
 
     companion object {
-        @JvmField
         var anInt6913: Int = 0
-        @JvmField
         var anInt6914: Int = 0
-        @JvmField
         var anInt6915: Int = 0
-        @JvmField
         var anInt6918: Int = 0
-        @JvmField
         var anInt6919: Int = 0
-        @JvmField
         var aBigInteger6921: BigInt?
-        @JvmField
         var anInt6922: Int = 0
-        @JvmField
         var anInt6923: Int = -1
-        @JvmField
         var anInt6924: Int = 0
-        @JvmField
         var aClass351_6925: Class351?
-        @JvmField
         var aString6926: String?
 
         @JvmStatic

@@ -92,7 +92,6 @@ class Class208 internal constructor(private var anOutputStream2712: OutputStream
     }
 
     companion object {
-        @JvmField
         var aClass262_2707: Class262? = Class262()
         var anInt2709: Int = 0
         var anInt2710: Int = 0

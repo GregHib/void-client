@@ -34,32 +34,19 @@ class Class239_Sub14 : Class239 {
     }
 
     companion object {
-        @JvmField
         var anInt5982: Int = 0
-        @JvmField
         var anInt5983: Int = 0
-        @JvmField
         var anInt5984: Int = 0
-        @JvmField
         var anInt5985: Int = 0
-        @JvmField
         var anInt5986: Int = 0
-        @JvmField
         var anInt5987: Int = 0
-        @JvmField
         var anInt5988: Int = 0
         var aClass251_5989: Class251? = Class251()
-        @JvmField
         var aClass190_5990: Class190? = null
-        @JvmField
         var anIntArrayArray5991: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
-        @JvmField
         var aClass114_5992: Class114? = Class114(17, 4)
-        @JvmField
         var aClass211Array5993: Array<Class211?>? = null
-        @JvmField
         var anInt5994: Int = 0
-        @JvmField
         var aClass259_5995: Class259? = null
 
         @JvmStatic

@@ -6,19 +6,12 @@ import Class367_Sub10.Companion.method3553
 * Visit http://jode.sourceforge.net/
 */
 object Class62 {
-    @JvmField
     var anInt1110: Int = 0
-    @JvmField
     var anInt1111: Int = 0
-    @JvmField
     var anInt1112: Int = 0
-    @JvmField
     var anInt1113: Int = 0
-    @JvmField
     var aClass243_1114: Class243? = Class243()
-    @JvmField
     var anInt1115: Int = 0
-    @JvmField
     var anIntArrayArrayArray1116: Array<Array<IntArray?>?>? = null
 
     @JvmStatic

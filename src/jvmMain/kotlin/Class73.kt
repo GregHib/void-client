@@ -28,23 +28,15 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
 
     companion object {
         var aFloatArray4772: FloatArray?
-        @JvmField
         var anInt4773: Int = 0
-        @JvmField
         var anInt4774: Int = 0
-        @JvmField
         var anInt4775: Int = 0
-        @JvmField
         var anInt4776: Int
-        @JvmField
         var anInt4777: Int = 0
         var aClass114_4779: Class114?
         var anIntArray4780: IntArray?
-        @JvmField
         var anInt4781: Int = 0
-        @JvmField
         var aClass219_4782: Class219? = null
-        @JvmField
         var aLong4783: Long = 20000000L
         var anInt4784: Int = 0
         var anInt4786: Int = 0

@@ -8,28 +8,17 @@ import Class59.Companion.method544
 */
 object Class27 {
     var anInt387: Int = 0
-    @JvmField
     var anInt388: Int = 0
-    @JvmField
     var aClass356_389: Class356? = Class356(4)
-    @JvmField
     var anInt390: Int = 0
-    @JvmField
     var anInt391: Int = 0
-    @JvmField
     var anInt392: Int = 0
-    @JvmField
     var anInt393: Int = 0
-    @JvmField
     var anInt394: Int = 0
-    @JvmField
     var aClass351_395: Class351? = Class351(49, 6)
-    @JvmField
     var anInt396: Int = -1
-    @JvmField
     var anInt397: Int = 0
     var aClass351_398: Class351? = Class351(23, 8)
-    @JvmField
     var aClass341_399: Class341? = Class341()
 
     @JvmStatic

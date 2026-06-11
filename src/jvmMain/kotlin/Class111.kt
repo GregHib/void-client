@@ -120,18 +120,12 @@ class Class111 internal constructor(class230: Class230?, i: Int, class45: Class4
     }
 
     companion object {
-        @JvmField
         var anInt1716: Int = 0
-        @JvmField
         var anInt1717: Int = 0
-        @JvmField
         var anInt1719: Int = 0
-        @JvmField
         var anInt1720: Int = -1
-        @JvmField
         var anInt1721: Int = 0
         var aClass114_1722: Class114? = Class114(8, -2)
-        @JvmField
         var anInt1723: Int = 0
         @JvmStatic
         fun method1045(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Byte): Int {

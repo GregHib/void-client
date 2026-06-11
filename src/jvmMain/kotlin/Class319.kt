@@ -88,15 +88,12 @@ class Class319 internal constructor(class230: Class230?, i: Int, class45: Class4
     companion object {
         var anInt3978: Int = 0
         var aDouble3980: Double = 0.0
-        @JvmField
         var aClass315Array3982: Array<Class315?>? = null
         var anInt3983: Int = 0
         var anInt3984: Int = 0
-        @JvmField
         var anObject3985: Any? = null
         var anInt3986: Int = 0
         var anInt3987: Int = 0
-        @JvmField
         var aBoolean3988: Boolean = false
         @JvmStatic
         fun method2545(bool: Boolean) {

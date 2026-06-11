@@ -21,11 +21,8 @@ class Class348_Sub40_Sub13 : Class348_Sub40(1, true) {
     }
 
     companion object {
-        @JvmField
         var aClass262_9201: Class262?
-        @JvmField
         var anInt9202: Int = 0
-        @JvmField
         var anInt9203: Int = -1
         var aFloat9204: Float
 

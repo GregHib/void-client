@@ -8,9 +8,7 @@ object Class140 {
     var anInt1958: Int = 0
     var aClass114_1959: Class114? = Class114(81, 6)
     var anInt1960: Int = 0
-    @JvmField
     var aClass351_1961: Class351? = Class351(77, -1)
-    @JvmField
     var anInt1962: Int = 0
 
     @Throws(Exception_Sub1::class)

@@ -2,15 +2,10 @@
 * Visit http://jode.sourceforge.net/
 */
 class r_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_19_: Int) : r() {
-    @JvmField
     var anInt10482: Int = 0
-    @JvmField
     var anInt10484: Int = 0
-    @JvmField
     var aByteArray10486: ByteArray
-    @JvmField
     var anInt10487: Int = 0
-    @JvmField
     var anInt10489: Int = 0
     fun method3292(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         this.anInt10484 = i_1_
@@ -348,21 +343,13 @@ class r_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_19_: Int) : r() {
     }
 
     companion object {
-        @JvmField
         var aClass45_10480: Class45? = null
-        @JvmField
         var anInt10481: Int = 0
-        @JvmField
         var anInt10483: Int = 0
-        @JvmField
         var anInt10485: Int = 0
-        @JvmField
         var aClass252_10488: Class252? = null
-        @JvmField
         var anInt10490: Int = 0
-        @JvmField
         var anInt10491: Int = 0
-        @JvmField
         var aClass262_10492: Class262? = Class262()
 
         @JvmStatic

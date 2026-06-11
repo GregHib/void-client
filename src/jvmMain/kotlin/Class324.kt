@@ -471,43 +471,24 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
     }
 
     companion object {
-        @JvmField
         var anInt4045: Int = 0
-        @JvmField
         var anInt4046: Int = 0
-        @JvmField
         var anInt4047: Int = 0
-        @JvmField
         var anInt4049: Int = 0
-        @JvmField
         var anInt4050: Int = 0
-        @JvmField
         var anInt4051: Int = 0
-        @JvmField
         var anInt4052: Int = 0
-        @JvmField
         var anInt4053: Int = 0
-        @JvmField
         var anInt4054: Int = 0
-        @JvmField
         var anInt4055: Int = 0
-        @JvmField
         var anInt4056: Int = 0
-        @JvmField
         var anInt4057: Int = 0
-        @JvmField
         var anInt4058: Int = 0
-        @JvmField
         var anInt4059: Int = 0
-        @JvmField
         var anInt4060: Int = 0
-        @JvmField
         var anInt4061: Int = 0
-        @JvmField
         var aClass138_4062: Class138? = Class138(2, 4, 4, 0)
-        @JvmField
         var anInt4064: Int = 0
-        @JvmField
         var anInt4065: Int = 0
 
         @JvmStatic

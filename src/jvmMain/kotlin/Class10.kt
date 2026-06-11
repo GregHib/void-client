@@ -3,14 +3,10 @@ import Class348_Sub42_Sub8_Sub2.Companion.method3200
 /* Class10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class10 internal constructor(@JvmField var aByte180: Byte, @JvmField var anInt185: Int, @JvmField var anInt177: Int, @JvmField var anInt188: Int, @JvmField var anInt184: Int, @JvmField var anInt178: Int, @JvmField var anInt173: Int, @JvmField var aClass318_Sub1_172: Class318_Sub1?) {
-    @JvmField
+class Class10 internal constructor(var aByte180: Byte, var anInt185: Int, var anInt177: Int, var anInt188: Int, var anInt184: Int, var anInt178: Int, var anInt173: Int, var aClass318_Sub1_172: Class318_Sub1?) {
     var aClass348_Sub16_Sub5_176: Class348_Sub16_Sub5? = null
-    @JvmField
     var aClass317_183: Class317? = null
-    @JvmField
     var aClass348_Sub19_Sub1_189: Class348_Sub19_Sub1? = null
-    @JvmField
     var aClass348_Sub10_192: Class348_Sub10? = null
 
     fun method220(i: Byte): Boolean {
@@ -20,23 +16,14 @@ class Class10 internal constructor(@JvmField var aByte180: Byte, @JvmField var a
     }
 
     companion object {
-        @JvmField
         var anIntArrayArray174: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(0, 2), intArrayOf(0, 2), intArrayOf(0, 0, 2), intArrayOf(2, 0, 0), intArrayOf(0, 2, 0), intArrayOf(0, 0, 2), intArrayOf(0, 5, 1, 4), intArrayOf(0, 4, 4, 4), intArrayOf(4, 4, 4, 0), intArrayOf(6, 6, 6, 2, 2, 2), intArrayOf(2, 2, 2, 6, 6, 6), intArrayOf(0, 11, 6, 6, 6, 4), intArrayOf(0, 2), intArrayOf(0, 4, 4, 4), intArrayOf(0, 4, 4, 4))
-        @JvmField
         var anInt175: Int = 0
-        @JvmField
         var anIntArray179: IntArray? = null
-        @JvmField
         var anInt181: Int = 0
-        @JvmField
         var anInt182: Int = 0
-        @JvmField
         var aClass230_186: Class230?
-        @JvmField
         var anIntArray187: IntArray? = intArrayOf(-1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048)
-        @JvmField
         var anInt190: Int = 0
-        @JvmField
         var aClass87_191: Class87? = null
         @JvmStatic
         fun method217(i: Byte): String? {

@@ -10,9 +10,7 @@ import Class45.Companion.method395
 object Class362 {
     var aClass324_4456: Class324? = null
     var anInt4457: Int = 0
-    @JvmField
     var anInt4458: Int = -1
-    @JvmField
     var anInt4459: Int = 0
     var aClass183_4460: Class183? = null
 

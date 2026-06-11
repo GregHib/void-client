@@ -3,10 +3,8 @@
 */
 object Class20 {
     var aClass114_316: Class114? = Class114(95, 10)
-    @JvmField
     var anInt317: Int = 0
     var aClass114_318: Class114? = Class114(19, -2)
-    @JvmField
     var anInt319: Int = 0
     var anInt320: Int = 0
 

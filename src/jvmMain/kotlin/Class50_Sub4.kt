@@ -22,17 +22,11 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
     }
 
     companion object {
-        @JvmField
         var anInt5256: Int = 0
-        @JvmField
         var anInt5257: Int = 0
-        @JvmField
         var anInt5260: Int = 0
-        @JvmField
         var anInt5261: Int = 0
-        @JvmField
         var aClass47_5262: Class47? = null
-        @JvmField
         var anInt5263: Int = 0
         @JvmStatic
         fun method471(i: Int) {

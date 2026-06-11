@@ -51,29 +51,17 @@ class Class239_Sub4 : Class239 {
     internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     companion object {
-        @JvmField
         var anInt5872: Int = 0
-        @JvmField
         var anInt5873: Int = 0
-        @JvmField
         var aFloatArray5874: FloatArray? = FloatArray(16384)
-        @JvmField
         var anInt5875: Int = 0
-        @JvmField
         var aFloatArray5876: FloatArray? = FloatArray(16384)
-        @JvmField
         var anInt5877: Int = 0
-        @JvmField
         var aClass45_5878: Class45? = null
-        @JvmField
         var anInt5879: Int = 0
-        @JvmField
         var anInt5880: Int = 0
-        @JvmField
         var aClass348_Sub26_5881: Class348_Sub26? = null
-        @JvmField
         var aString5882: String? = null
-        @JvmField
         var aClass114_5883: Class114? = Class114(34, 12)
 
         @JvmStatic

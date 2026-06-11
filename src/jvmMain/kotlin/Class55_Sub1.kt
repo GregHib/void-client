@@ -77,13 +77,9 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
 
     companion object {
         var aBoolean5265: Boolean = false
-        @JvmField
         var anInt5266: Int = 0
-        @JvmField
         var anInt5268: Int = 0
-        @JvmField
         var aClass364_5271: Class364? = Class364("LIVE", 0)
-        @JvmField
         var anInt5273: Int = 0
         @JvmStatic
         fun method523(i: Int) {

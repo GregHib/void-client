@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 class aa_Sub2 : aa {
-    @JvmField
     var anInterface18_Impl3_5196: Interface18_Impl3? = null
 
     constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_16_: Int, `is`: ByteArray?) {
@@ -24,15 +23,10 @@ class aa_Sub2 : aa {
     }
 
     companion object {
-        @JvmField
         var anInt5194: Int = 0
-        @JvmField
         var anInt5195: Int = 0
-        @JvmField
         var aStringArray5197: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
         var anInt5198: Int = 0
-        @JvmField
         var aClass161_5199: Class161? = null
 
         @JvmStatic

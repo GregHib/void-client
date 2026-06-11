@@ -4,17 +4,11 @@ import Class367_Sub10.Companion.method3553
 * Visit http://jode.sourceforge.net/
 */
 object Class24 {
-    @JvmField
     var anInt354: Int = 0
-    @JvmField
     var aClass60_355: Class60? = Class60(260)
-    @JvmField
     var anInt356: Int = 0
-    @JvmField
     var aClass318_Sub1_Sub3Array357: Array<Class318_Sub1_Sub3?>? = null
-    @JvmField
     var aByteArrayArray358: Array<ByteArray?>? = arrayOfNulls<ByteArray>(1000)
-    @JvmField
     var anInt359: Int = 0
 
     @JvmStatic

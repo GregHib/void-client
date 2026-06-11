@@ -110,27 +110,16 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
     }
 
     companion object {
-        @JvmField
         var aClass230_6262: Class230? = Class230("game3", 2)
-        @JvmField
         var anInt6263: Int = 0
-        @JvmField
         var anInt6264: Int = 0
-        @JvmField
         var anInt6265: Int = 0
-        @JvmField
         var anInt6267: Int = 0
-        @JvmField
         var anInt6269: Int = 0
-        @JvmField
         var aBooleanArray6270: BooleanArray? = null
-        @JvmField
         var anInt6271: Int = 0
-        @JvmField
         var anInt6273: Int = 0
-        @JvmField
         var anInt6275: Int = 0
-        @JvmField
         var aLong6276: Long = 0
 
         @JvmStatic

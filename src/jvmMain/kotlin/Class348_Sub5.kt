@@ -2,7 +2,6 @@ import Class239_Sub18.Companion.method1802
 import java.awt.Canvas
 
 abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : Class348() {
-    @JvmField
     var aBoolean6621: Boolean = false
     abstract fun method2750(class258_sub3: Class258_Sub3?, class258_sub3_0_: Class258_Sub3?, i: Int, i_1_: Byte)
 
@@ -41,25 +40,15 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
     }
 
     companion object {
-        @JvmField
         var anInt6619: Int = 0
-        @JvmField
         var anInt6620: Int = 0
-        @JvmField
         var anInt6622: Int = 0
-        @JvmField
         var anInt6623: Int = 0
-        @JvmField
         var aByteArray6624: ByteArray? = ByteArray(2048)
-        @JvmField
         var anInt6625: Int = 0
-        @JvmField
         var anInt6626: Int = 0
-        @JvmField
         var aClass105_6627: Class105? = null
-        @JvmField
         var anInt6628: Int = 0
-        @JvmField
         var anInt6629: Int = 0
 
         @JvmStatic

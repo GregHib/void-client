@@ -192,53 +192,29 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
     }
 
     companion object {
-        @JvmField
         var anInt7426: Int = 0
-        @JvmField
         var anInt7427: Int = 0
-        @JvmField
         var anInt7428: Int = 0
-        @JvmField
         var anInt7429: Int = 0
-        @JvmField
         var anInt7430: Int = 0
-        @JvmField
         var anInt7431: Int = 0
-        @JvmField
         var anInt7433: Int = 0
-        @JvmField
         var anInt7434: Int = 0
-        @JvmField
         var anInt7435: Int = 0
-        @JvmField
         var anInt7436: Int = 0
-        @JvmField
         var anInt7437: Int = 0
-        @JvmField
         var anInt7438: Int = 0
-        @JvmField
         var anInt7439: Int = 0
-        @JvmField
         var anInt7440: Int = 0
-        @JvmField
         var anInt7443: Int = 0
-        @JvmField
         var aBoolean7444: Boolean = false
-        @JvmField
         var anInt7445: Int = 0
-        @JvmField
         var aClass283Array7446: Array<Class283?>? = null
-        @JvmField
         var anInt7447: Int = 0
-        @JvmField
         var anInt7449: Int = 0
-        @JvmField
         var anInt7451: Int = 0
-        @JvmField
         var anInt7452: Int = 0
-        @JvmField
         var anInt7455: Int = 0
-        @JvmField
         var anInt7457: Int = 0
         @JvmStatic
         fun method3607(i: Int, class348_sub49: Class348_Sub49?, i_10_: Int): String {

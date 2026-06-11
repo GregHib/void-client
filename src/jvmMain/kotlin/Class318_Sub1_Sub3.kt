@@ -4,17 +4,11 @@ import Class324.Companion.method2570
 * Visit http://jode.sourceforge.net/
 */
 abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean, i_18_: Byte) : Class318_Sub1() {
-    @JvmField
     var aBoolean8741: Boolean
-    @JvmField
     var aShort8743: Short
-    @JvmField
     var aByte8745: Byte
-    @JvmField
     var aShort8747: Short
-    @JvmField
     var aShort8750: Short
-    @JvmField
     var aShort8751: Short
     override fun method2378(i: Int): Boolean {
         anInt8740++
@@ -147,29 +141,17 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
     }
 
     companion object {
-        @JvmField
         var anInt8739: Int = 0
-        @JvmField
         var anInt8740: Int = 0
-        @JvmField
         var anInt8742: Int = 0
-        @JvmField
         var aClass262_8744: Class262? = Class262()
-        @JvmField
         var anInt8746: Int = 0
-        @JvmField
         var anInt8748: Int = 0
-        @JvmField
         var anInt8749: Int = 0
-        @JvmField
         var anInt8752: Int = 0
-        @JvmField
         var anInt8753: Int = 0
-        @JvmField
         var anInt8754: Int = 0
-        @JvmField
         var aClass45_8755: Class45? = null
-        @JvmField
         var aClass114_8756: Class114? = Class114(107, 6)
 
         @JvmStatic

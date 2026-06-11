@@ -14,7 +14,6 @@ import Class348_Sub42_Sub8.Companion.method3196
 import Class37.method359
 
 open class Class348_Sub49 : Class348 {
-    @JvmField
     var aByteArray7154: ByteArray?
     var anInt7197: Int
     fun readByteInverse(i: Byte): Int {

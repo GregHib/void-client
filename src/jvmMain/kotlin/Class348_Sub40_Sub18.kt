@@ -48,17 +48,11 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
     constructor() : this(0)
 
     companion object {
-        @JvmField
         var aClass319_9245: Class319? = null
-        @JvmField
         var anInt9246: Int = 0
-        @JvmField
         var anInt9247: Int = 0
-        @JvmField
         var anInt9248: Int = 0
-        @JvmField
         var anIntArray9249: IntArray? = intArrayOf(2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0)
-        @JvmField
         var anInt9251: Int = 0
         fun method3094(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2) {
             anInt9247++

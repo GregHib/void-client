@@ -48,15 +48,10 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
 
     companion object {
         var anIntArray407: IntArray? = IntArray(1)
-        @JvmField
         var anInt410: Int = 0
-        @JvmField
         var anInt411: Int = 0
-        @JvmField
         var aClass84_413: Class84? = null
-        @JvmField
         var anInt414: Int = 0
-        @JvmField
         var anInt415: Int = 0
         fun method319(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int) {
             if (i_1_.toInt() != -18) method322(73)

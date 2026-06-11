@@ -77,21 +77,13 @@ open class Class348_Sub40_Sub17 : Class348_Sub40(0, false) {
     }
 
     companion object {
-        @JvmField
         var anInt9233: Int = 0
-        @JvmField
         var aClass351_9234: Class351? = Class351(67, -1)
-        @JvmField
         var anInt9235: Int = 0
-        @JvmField
         var anInt9236: Int = 0
-        @JvmField
         var anInt9238: Int = 0
-        @JvmField
         var anInt9239: Int = 0
-        @JvmField
         var aClass262_9240: Class262? = Class262()
-        @JvmField
         var aBoolean9242: Boolean = false
         @JvmStatic
         fun method3091(bool: Boolean) {

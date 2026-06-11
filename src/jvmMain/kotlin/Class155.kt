@@ -7,7 +7,6 @@ import Class66.method705
 object Class155 {
     var anInt2108: Int = 0
     var aClass351_2109: Class351? = Class351(19, -1)
-    @JvmField
     var aBoolean2110: Boolean = false
 
     @JvmStatic

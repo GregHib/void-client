@@ -11,9 +11,7 @@ class Class348_Sub26 internal constructor(@field:Volatile var aString6888: Strin
     companion object {
         var aClass348_Sub42_Sub14_6885: Class348_Sub42_Sub14? = null
         var anInt6886: Int = 0
-        @JvmField
         var aShortArray6889: ShortArray?
-        @JvmField
         var anIntArray6890: IntArray? = IntArray(32)
         var aClass74_6891: Class74?
 

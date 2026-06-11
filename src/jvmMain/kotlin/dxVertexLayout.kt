@@ -2,7 +2,6 @@ import jagdx.IDirect3DVertexDeclaration
 import jagdx.VertexElementCollection
 
 class dxVertexLayout internal constructor(class378: Class378, class58s: Array<Class58>) : Class130() {
-    @JvmField
     var anIDirect3DVertexDeclaration5803: IDirect3DVertexDeclaration?
 
     init {

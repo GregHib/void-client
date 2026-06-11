@@ -53,25 +53,15 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
     }
 
     companion object {
-        @JvmField
         var anInt8729: Int = 0
-        @JvmField
         var anInt8730: Int = 0
-        @JvmField
         var anInt8731: Int = 0
-        @JvmField
         var aClass60_8732: Class60? = Class60(64)
-        @JvmField
         var anInt8733: Int = 0
-        @JvmField
         var anInt8734: Int = 0
-        @JvmField
         var anInt8735: Int = 0
-        @JvmField
         var anInt8736: Int = 0
-        @JvmField
         var aClass70_8737: Class70? = Class70()
-        @JvmField
         var anInt8738: Int = 0
 
         @JvmStatic

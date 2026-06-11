@@ -1,10 +1,7 @@
 
 class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
-    @JvmField
     var aByte10449: Byte = 0
-    @JvmField
     var aClass348_Sub49_10453: Class348_Sub49? = null
-    @JvmField
     var anInt10456: Int = 0
 
     override fun method3259(i: Int): ByteArray? {
@@ -22,19 +19,12 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
     }
 
     companion object {
-        @JvmField
         var anInt10447: Int = -1
-        @JvmField
         var anInt10448: Int = 0
-        @JvmField
         var aBoolean10450: Boolean = false
-        @JvmField
         var anInt10451: Int = 0
-        @JvmField
         var anInt10452: Int = 0
-        @JvmField
         var anInt10454: Int = 0
-        @JvmField
         var anInt10455: Int = 0
         @JvmStatic
         fun method3260(i: Int) {

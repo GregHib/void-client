@@ -408,7 +408,6 @@ class Class233 internal constructor() {
         var anInt3018: Int = 0
         var anInt3019: Int = 0
         var anInt3021: Int = 0
-        @JvmField
         var aClass107_3022: Class107? = Class107()
         var anInt3023: Int = 0
         @JvmStatic

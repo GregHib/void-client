@@ -40,7 +40,6 @@ class Class156 {
         var aStringArray2113: Array<String?>? = arrayOfNulls<String>(100)
         var anInt2114: Int = 0
         var anInt2116: Int = 0
-        @JvmField
         var anIntArray2117: IntArray? = IntArray(2)
         var anInt2119: Int = 0
         var anInt2120: Int = 0

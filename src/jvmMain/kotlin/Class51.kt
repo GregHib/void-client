@@ -4,127 +4,83 @@ import Class33.Companion.method340
 * Visit http://jode.sourceforge.net/
 */
 class Class51 {
-    @JvmField
     var anInt868: Int = -1
     var anInt869: Int
     private var aByteArray872: ByteArray? = null
     private var anInt873 = 0
-    @JvmField
     var anInt874: Int
-    @JvmField
     var anInt875: Int
-    @JvmField
     var aBoolean876: Boolean = false
     var anInt877: Int
-    @JvmField
     var anInt878: Int = 256
     private var aByte879: Byte = 0
     private var anInt880 = 0
     private var aClass356_881: Class356? = null
     private var anInt882 = 128
-    @JvmField
     var anInt883: Int = 64
     var aString884: String? = "null"
     private var aByteArray885: ByteArray? = null
     private var aByte886: Byte
-    @JvmField
     var anInt887: Int
-    @JvmField
     var aBoolean888: Boolean = false
-    @JvmField
     var anInt889: Int = 0
     private var anInt890 = 0
     private lateinit var aShortArray892: ShortArray
     private var anInt893 = 0
-    @JvmField
     var aBoolean894: Boolean = true
-    @JvmField
     var anInt895: Int
-    @JvmField
     var aBoolean896: Boolean = true
     private var anInt900 = 0
-    @JvmField
     var aBoolean902: Boolean = false
-    @JvmField
     var aBoolean903: Boolean = false
-    @JvmField
     var anIntArray904: IntArray? = null
-    @JvmField
     var aBoolean906: Boolean = false
     private var anIntArrayArray907: Array<IntArray?>? = null
     private lateinit var aShortArray908: ShortArray
-    @JvmField
     var anInt909: Int = 960
     private var anInt911 = 0
-    @JvmField
     var aBoolean912: Boolean = false
-    @JvmField
     var aStringArray913: Array<String?>? = null
-    @JvmField
     var anInt914: Int = 0
     private var anInt915: Int
-    @JvmField
     var anInt916: Int = 256
-    @JvmField
     var anIntArray917: IntArray? = null
-    @JvmField
     var aBoolean918: Boolean = true
     private var aShortArray919: ShortArray? = null
-    @JvmField
     var anInt920: Int = 2
-    @JvmField
     var anInt921: Int
     private var aByte922: Byte
-    @JvmField
     var anInt923: Int = 0
-    @JvmField
     var aBoolean924: Boolean = true
-    @JvmField
     var aBoolean925: Boolean = false
-    @JvmField
     var anInt926: Int = 1
     private var anInt928 = 128
-    @JvmField
     var aBoolean929: Boolean = false
-    @JvmField
     var anInt930: Int = 0
-    @JvmField
     var aBoolean931: Boolean = false
-    @JvmField
     var aClass263_933: Class263? = null
     private var anInt934: Int
     private var anInt935 = 128
-    @JvmField
     var anInt936: Int = 255
-    @JvmField
     var anInt937: Int = 0
     private var anInt939: Int
     private var aShortArray940: ShortArray? = null
-    @JvmField
     var anInt941: Int = 0
-    @JvmField
     var aBoolean942: Boolean = false
-    @JvmField
     var anIntArray943: IntArray? = null
     private var aByte944: Byte = 0
-    @JvmField
     var anIntArray945: IntArray? = null
     private var anInt946 = 0
-    @JvmField
     var aBoolean947: Boolean = false
     private var anInt949 = 0
     var anInt950: Int
     var anInt951: Int
     private var aByte952: Byte = 0
-    @JvmField
     var anInt953: Int = 0
     private var anInt954 = 0
-    @JvmField
     var anInt955: Int
     private var anIntArray959: IntArray? = null
-    @JvmField
     var anInt961: Int = 1
-    @JvmField
     var anInt962: Int = 0
 
     fun method474(i: Byte): Boolean {
@@ -736,43 +692,24 @@ class Class51 {
     }
 
     companion object {
-        @JvmField
         var anInt866: Int = 0
-        @JvmField
         var anInt867: Int = 0
-        @JvmField
         var anInt870: Int = 0
-        @JvmField
         var anInt871: Int = 0
-        @JvmField
         var anInt891: Int = 0
-        @JvmField
         var aClass311_897: Class311? = null
-        @JvmField
         var anInt898: Int = 0
-        @JvmField
         var anInt899: Int = 0
-        @JvmField
         var anInt901: Int = 0
-        @JvmField
         var aClass101_905: Class101? = null
-        @JvmField
         var anInt910: Int = 0
-        @JvmField
         var anInt927: Int = 0
-        @JvmField
         var aStringArray932: Array<String?>? = arrayOfNulls<String>(100)
-        @JvmField
         var anInt938: Int = 0
-        @JvmField
         var anInt948: Int = 0
-        @JvmField
         var anInt956: Int = 0
-        @JvmField
         var anInt957: Int = 0
-        @JvmField
         var anInt958: Int = 0
-        @JvmField
         var anInt960: Int = 0
         @JvmStatic
         fun method486(i: Int) {

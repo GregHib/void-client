@@ -3,11 +3,8 @@
 */
 class i : Class64, Interface19 {
     private val anOa5117: oa
-    @JvmField
     var aClass342Array5118: Array<Class342?>? = null
-    @JvmField
     var nativeid: Long = 0
-    @JvmField
     var aClass129Array5119: Array<Class129?>? = null
     private val aYa5120: ya?
 

@@ -20,23 +20,14 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
     }
 
     companion object {
-        @JvmField
         var aSArray8801: Array<s?>? = null
-        @JvmField
         var anInt8802: Int = 0
-        @JvmField
         var anInt8803: Int = 0
-        @JvmField
         var anInt8804: Int = 0
-        @JvmField
         var aBoolean8805: Boolean = false
-        @JvmField
         var anInt8806: Int = 0
-        @JvmField
         var aClass60_8807: Class60?
-        @JvmField
         var anInt8808: Int = 0
-        @JvmField
         var anInt8809: Int = 0
 
         @JvmStatic

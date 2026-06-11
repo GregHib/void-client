@@ -12,23 +12,15 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
     }
 
     companion object {
-        @JvmField
         var aClass271_8378: Class271? = null
-        @JvmField
         var anInt8379: Int = 0
-        @JvmField
         var anInt8380: Int = 0
-        @JvmField
         var anInt8381: Int = 0
-        @JvmField
         var anInt8382: Int = 0
         var aClass114_8384: Class114? = Class114(18, 0)
         var aClass114_8385: Class114?
-        @JvmField
         var aBoolean8386: Boolean = false
-        @JvmField
         var anInt8387: Int = 0
-        @JvmField
         var anInt8388: Int
 
         /*synthetic*/

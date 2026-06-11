@@ -92,7 +92,6 @@ class Class188 internal constructor(private val aHa_Sub2_2511: ha_Sub2) {
     }
 
     companion object {
-        @JvmField
         var aClass351_2512: Class351?
         var aBoolean2514: Boolean = false
         var anInt2515: Int = 0

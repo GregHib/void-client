@@ -199,19 +199,12 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
     }
 
     companion object {
-        @JvmField
         var anInt9120: Int = 0
-        @JvmField
         var aBoolean9121: Boolean = false
-        @JvmField
         var anInt9123: Int = 0
-        @JvmField
         var anInt9126: Int = 0
-        @JvmField
         var anInt9127: Int = 0
-        @JvmField
         var anInt9128: Int = 0
-        @JvmField
         var aClass351_9130: Class351? = Class351(1, -1)
 
         @JvmStatic

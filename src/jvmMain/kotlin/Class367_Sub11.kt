@@ -141,37 +141,21 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
     }
 
     companion object {
-        @JvmField
         var anInt7393: Int = 0
-        @JvmField
         var aByteArray7394: ByteArray? = null
-        @JvmField
         var anInt7396: Int = 0
-        @JvmField
         var anIntArray7397: IntArray? = IntArray(4096)
-        @JvmField
         var aClass114_7398: Class114? = Class114(16, 6)
-        @JvmField
         var anInt7400: Int = 0
-        @JvmField
         var anInt7401: Int = 0
-        @JvmField
         var anInt7402: Int = 0
-        @JvmField
         var anInt7403: Int = 0
-        @JvmField
         var anInt7405: Int = 0
-        @JvmField
         var anInt7408: Int = 0
-        @JvmField
         var anInt7409: Int = 0
-        @JvmField
         var anInt7410: Int = 0
-        @JvmField
         var anInt7412: Int = 0
-        @JvmField
         var anInt7414: Int = 0
-        @JvmField
         var aClass32_7415: Class32? = Class32(8)
 
         @JvmStatic

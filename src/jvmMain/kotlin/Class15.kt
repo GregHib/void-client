@@ -2,13 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class15 {
-    @JvmField
     var aClass60_225: Class60? = Class60(4)
-    @JvmField
     var anInt226: Int = 0
-    @JvmField
     var anInt227: Int = 0
-    @JvmField
     var anInt228: Int = 0
     var aClass114_229: Class114? = Class114(51, 17)
 

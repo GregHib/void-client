@@ -394,14 +394,12 @@ class Class348_Sub17 : Class348 {
     }
 
     companion object {
-        @JvmField
         var aBoolean6788: Boolean = false
         var anInt6789: Int = 0
         var anInt6790: Int = 0
         var aLong6791: Long = 0L
         var anInt6794: Int = 0
         var anInt6801: Int = 0
-        @JvmField
         var aClass359Array6802: Array<Class359?>? = arrayOfNulls<Class359>(2048)
         var anInt6803: Int = 0
 

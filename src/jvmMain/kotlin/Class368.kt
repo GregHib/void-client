@@ -2,26 +2,21 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class368 {
-    @JvmField
     var aBoolean4487: Boolean = false
-    @JvmField
     var aByte4488: Byte = 0
     private var anInt4489 = 0
     private var aShortArray4490: ShortArray? = null
     private var anInt4492 = 128
     private var anInt4498 = 128
     private var aShortArray4499: ShortArray? = null
-    @JvmField
     var anInt4501: Int = 0
     private var aShortArray4502: ShortArray? = null
-    @JvmField
     var anInt4503: Int
     private var aShortArray4504: ShortArray? = null
     private var anInt4506 = 0
     private var anInt4507: Int
     private var anInt4508 = 0
     private var anInt4512 = 0
-    @JvmField
     var aClass319_4513: Class319? = null
 
     fun method3558(i: Int, i_0_: Int, var_ha: ha?, i_1_: Int, i_2_: Int, class87: Class87?, i_3_: Int): Class64? {
@@ -188,29 +183,17 @@ class Class368 {
     }
 
     companion object {
-        @JvmField
         var anInt4486: Int = 0
-        @JvmField
         var anInt4491: Int = 0
-        @JvmField
         var anInt4493: Int = 0
-        @JvmField
         var anInt4494: Int = 0
-        @JvmField
         var anInt4495: Int = 0
-        @JvmField
         var anInt4496: Int = 0
-        @JvmField
         var anInt4497: Int = 0
-        @JvmField
         var aClass114_4500: Class114? = Class114(117, 1)
-        @JvmField
         var anInt4505: Int = 0
-        @JvmField
         var anInt4509: Int = 0
-        @JvmField
         var anInt4510: Int = 0
-        @JvmField
         var anInt4511: Int = 0
         @JvmStatic
         fun method3560(i: Int) {

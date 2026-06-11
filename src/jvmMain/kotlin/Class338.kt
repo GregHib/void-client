@@ -10,21 +10,15 @@ import Class66.method703
 class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
     var aByte4181: Byte
     var aShort4182: Short
-    @JvmField
     var aShortArray4183: ShortArray?
-    @JvmField
     var anIntArray4184: IntArray = IntArray(4)
     var aShort4185: Short
-    @JvmField
     var anIntArray4187: IntArray?
-    @JvmField
     var aShortArray4188: ShortArray?
     var aShort4190: Short
-    @JvmField
     var anIntArray4191: IntArray = IntArray(4)
     var aByte4192: Byte
     var aShort4193: Short
-    @JvmField
     var aShortArray4194: ShortArray?
 
     init {
@@ -53,7 +47,6 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
     }
 
     companion object {
-        @JvmField
         var anInt4186: Int = 0
         var anInt4189: Int = 0
         var anInt4195: Int = 0

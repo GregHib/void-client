@@ -3,29 +3,17 @@ import Class62.method599
 import java.awt.Canvas
 
 class Class284 {
-    @JvmField
     var anInt3666: Int = 0
-    @JvmField
     var anInt3667: Int = 0
-    @JvmField
     var anInt3668: Int = 0
-    @JvmField
     var anInt3669: Int = 0
-    @JvmField
     var anInt3670: Int = 0
-    @JvmField
     var anInt3671: Int = 0
-    @JvmField
     var anInt3672: Int = 0
-    @JvmField
     var anInt3673: Int = 0
-    @JvmField
     var anInt3675: Int = 0
-    @JvmField
     var anInt3678: Int = 0
-    @JvmField
     var anInt3679: Int = 0
-    @JvmField
     var anInt3680: Int = 0
 
     fun method2115(class284_0_: Class284, bool: Boolean): Boolean {

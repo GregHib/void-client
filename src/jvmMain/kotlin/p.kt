@@ -1,6 +1,6 @@
 import java.awt.Canvas
 
-class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145: Int, @JvmField var anInt5148: Int) : Class348(), Interface19 {
+class p(var_oa: oa?, var aCanvas5147: Canvas?, var anInt5145: Int, var anInt5148: Int) : Class348(), Interface19 {
     var nativeid: Long = 0
 
     private external fun sa(var_oa: oa?, canvas: Canvas?, i: Int, i_0_: Int)

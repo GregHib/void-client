@@ -1,17 +1,11 @@
 import Class286_Sub4.Companion.method2154
 
 object Class13 {
-    @JvmField
     var anInt219: Int = 0
-    @JvmField
     var aClass114_220: Class114? = Class114(40, -1)
-    @JvmField
     var anInt221: Int = 0
-    @JvmField
     var anIntArray222: IntArray?
-    @JvmField
     var aClass314_Sub1Array223: Array<Class314_Sub1?>? = arrayOfNulls<Class314_Sub1>(37)
-    @JvmField
     var anIntArray224: IntArray?
 
     @JvmStatic

@@ -5,7 +5,6 @@ class Class154 {
     private var anIntArray2092: IntArray? = null
     var anInt2093: Int = -1
     private var aLong2094: Long = 0
-    @JvmField
     var anIntArray2095: IntArray? = null
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
@@ -549,10 +548,8 @@ class Class154 {
         var anInt2097: Int = 0
         var anInt2098: Int = 0
         var anInt2099: Int = 0
-        @JvmField
         var anInt2101: Int = 0
         var anInt2104: Int = 0
-        @JvmField
         var aClass348_Sub49Array2105: Array<Class348_Sub49?>? = arrayOfNulls<Class348_Sub49>(2048)
         var anInt2106: Int = 0
         var anInt2107: Int = 0

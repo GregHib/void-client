@@ -9,14 +9,10 @@ import jaggl.OpenGL.Companion.glTexParameteri
 import kotlin.math.min
 
 abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68: Class68?, i_66_: Int, bool: Boolean) : Interface18 {
-    @JvmField
     var aClass377_5082: Class377? = null
-    @JvmField
     var aClass304_5084: Class304? = null
-    @JvmField
     var aClass68_5088: Class68? = null
     private val anInt5090: Int
-    @JvmField
     var anInt5093: Int = 0
     private var anInt5096 = 0
     private var aBoolean5099 = false
@@ -319,35 +315,20 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
     }
 
     companion object {
-        @JvmField
         var anInt5083: Int = 0
-        @JvmField
         var anInt5085: Int = 0
-        @JvmField
         var anInt5086: Int = 0
-        @JvmField
         var anInt5087: Int = 0
-        @JvmField
         var aLong5089: Long = -1L
-        @JvmField
         var anIntArray5091: IntArray? = null
-        @JvmField
         var anInt5092: Int = 0
-        @JvmField
         var anInt5094: Int = 0
-        @JvmField
         var anInt5095: Int = 0
-        @JvmField
         var anInt5097: Int = 0
-        @JvmField
         var anInt5098: Int = 0
-        @JvmField
         var anInt5100: Int = 0
-        @JvmField
         var anInt5102: Int = 0
-        @JvmField
         var anInt5103: Int = 0
-        @JvmField
         var anInt5104: Int = 0
 
         @JvmStatic

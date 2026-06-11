@@ -4,17 +4,13 @@ import Class214.method1576
 * Visit http://jode.sourceforge.net/
 */
 object Class331 {
-    @JvmField
     var anIntArray4128: IntArray? = IntArray(5)
     var aStringArray4129: Array<String?>? = arrayOf<String?>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
-    @JvmField
     var aClass46_4130: Class46?
     var anInt4131: Int = 0
     var anInt4132: Int = 0
-    @JvmField
     var anInt4133: Int = 0
     var anInt4134: Int = 0
-    @JvmField
     var anInt4135: Int = 0
     var anInt4136: Int = 0
     var anInt4137: Int = 0

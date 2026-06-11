@@ -98,25 +98,15 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             }
         }
 
-        @JvmField
         var anInt8989: Int = 0
-        @JvmField
         var anInt8990: Int = 0
-        @JvmField
         var anInt8991: Int = 0
-        @JvmField
         var aClass297_8992: Class297? = null
-        @JvmField
         var aByteArrayArray8996: Array<ByteArray?>? = null
-        @JvmField
         var anInt8997: Int = 0
-        @JvmField
         var anInt8998: Int = 0
-        @JvmField
         var anInt8999: Int = 0
-        @JvmField
         var anInt9003: Int = 0
-        @JvmField
         var anInt9004: Int = 0
         @JvmStatic
         fun method2967(i: Int, class64: Class64?, i_0_: Int, i_1_: Int, i_2_: Int): Class30? {

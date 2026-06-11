@@ -7,11 +7,8 @@ import Class79.Companion.method802
 */
 class Class218 {
     var aClass141_2851: Class141? = null
-    @JvmField
     var anInt2853: Int = 0
-    @JvmField
     var aBoolean2854: Boolean = false
-    @JvmField
     var anInt2856: Int = 0
     fun method1593(i: Int): Boolean {
         if (i != 106) this.aClass141_2851 = null
@@ -68,10 +65,8 @@ class Class218 {
         var anInt2855: Int = 0
         var anInt2857: Int = 0
         var anInt2858: Int = 0
-        @JvmField
         var aClass262_2859: Class262? = Class262()
         var aClass114_2860: Class114?
-        @JvmField
         var anInt2861: Int = 1401
 
         fun method1591(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {

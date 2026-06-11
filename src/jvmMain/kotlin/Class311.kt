@@ -194,9 +194,7 @@ class Class311 : Runnable {
         var anInt3909: Int = 0
         var anInt3911: Int = 0
         var anInt3912: Int = 0
-        @JvmField
         var aClass46_3913: Class46? = null
-        @JvmField
         var anInt3918: Int = 1
         @JvmStatic
         fun method2317(i: Byte) {

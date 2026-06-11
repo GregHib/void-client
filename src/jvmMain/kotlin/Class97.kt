@@ -14,9 +14,7 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
     private val anInt1559: Int
     private val aClass330_1560: Class330?
     private val aHa_Sub3_1561: ha_Sub3?
-    @JvmField
     var aBoolean1562: Boolean = true
-    @JvmField
     var anInt1563: Int = 0
 
     fun method871(i: Byte) {
@@ -186,23 +184,14 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
     }
 
     companion object {
-        @JvmField
         var anInt1545: Int = 0
-        @JvmField
         var anInt1548: Int = -1
-        @JvmField
         var anInt1549: Int = 0
-        @JvmField
         var anInt1550: Int = 0
-        @JvmField
         var anInt1552: Int = 0
-        @JvmField
         var anInt1553: Int = 0
-        @JvmField
         var anInt1554: Int = 0
-        @JvmField
         var anInt1555: Int = 0
-        @JvmField
         var anInt1557: Int = 0
         fun method872(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             anInt1554++

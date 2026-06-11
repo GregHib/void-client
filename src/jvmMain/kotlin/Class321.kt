@@ -143,11 +143,9 @@ class Class321 {
     companion object {
         var anInt3995: Int = 0
         var anInt3999: Int = 0
-        @JvmField
         var anInt4005: Int = -1
         var anInt4013: Int = 0
         var aClass114_4015: Class114? = Class114(116, 6)
-        @JvmField
         var anInt4017: Int = 0
 
         @JvmStatic

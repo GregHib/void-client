@@ -3,7 +3,6 @@ object Class332 {
     var aClass60_4139: Class60?
     var anInt4140: Int = 0
     var anInt4141: Int = -1
-    @JvmField
     var aSArray4142: Array<s?>? = null
     var anInt4143: Int
 

@@ -41,19 +41,12 @@ abstract class Class367 internal constructor(var aHa_Sub3_4479: ha_Sub3) {
     }
 
     companion object {
-        @JvmField
         var anInt4478: Int = 0
-        @JvmField
         var anInt4480: Int = 0
-        @JvmField
         var anInt4481: Int = 0
-        @JvmField
         var anInt4482: Int = 0
-        @JvmField
         var anInt4483: Int = 0
-        @JvmField
         var anInt4484: Int = 0
-        @JvmField
         var anInt4485: Int = 0
 
         @JvmStatic

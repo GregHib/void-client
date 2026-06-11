@@ -53,9 +53,7 @@ class Class312 {
         var anInt3928: Int = 0
         var anInt3929: Int = 0
         var anInt3930: Int = 2
-        @JvmField
         var anInt3931: Int
-        @JvmField
         var anInt3932: Int
 
         fun method2330(i: Byte) {

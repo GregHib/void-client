@@ -87,14 +87,11 @@ class Class190 {
 
     companion object {
         var anInt2537: Int = 0
-        @JvmField
         var aClass351_2539: Class351? = Class351(26, 7)
         var anInt2543: Int = 0
         var anInt2550: Int = 0
-        @JvmField
         var anIntArray2552: IntArray? = null
         var anInt2553: Int = 0
-        @JvmField
         var aRectangleArray2554: Array<Rect?>? = arrayOfNulls<Rect>(100)
         var aFloat2555: Float = 0f
 

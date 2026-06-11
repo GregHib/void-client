@@ -65,7 +65,6 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
     }
 
     companion object {
-        @JvmField
         var anInt2499: Int = 0
         var anInt2500: Int = 0
         var anInt2502: Int = 0
@@ -73,12 +72,9 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2504: Int = 0
         var anInt2505: Int = 0
         var anInt2506: Int = 0
-        @JvmField
         var aClass223_2507: Class223? = Class223(9, 2)
         var anInt2508: Int = 0
-        @JvmField
         var anIntArray2509: IntArray? = IntArray(2)
-        @JvmField
         var anInt2510: Int = 0
 
         fun method1405(i: Int, bool: Boolean, bool_0_: Boolean) {

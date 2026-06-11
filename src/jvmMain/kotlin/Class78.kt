@@ -236,25 +236,15 @@ class Class78 internal constructor(private val aClass234_1312: CacheStore, i: In
     }
 
     companion object {
-        @JvmField
         var anInt1304: Int = 0
-        @JvmField
         var anInt1306: Int = 0
-        @JvmField
         var anInt1307: Int = 0
-        @JvmField
         var anInt1308: Int = 0
-        @JvmField
         var anInt1309: Int = 0
-        @JvmField
         var anInt1310: Int = 0
-        @JvmField
         var anInt1313: Int = 0
-        @JvmField
         var anInt1316: Int = 0
-        @JvmField
         var anInt1318: Int = 0
-        @JvmField
         var aClass45_1322: Class45? = null
         @JvmStatic
         fun method786(i: Byte) {

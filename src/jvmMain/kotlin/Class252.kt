@@ -1,15 +1,12 @@
 /* Class252 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class252 internal constructor(@JvmField var anInt3241: Int) {
-    @JvmField
+class Class252 internal constructor(var anInt3241: Int) {
     var anIntArray3238: IntArray? = IntArray(this.anInt3241)
 
-    @JvmField
     var anIntArray3239: IntArray? = IntArray(this.anInt3241)
 
     companion object {
-        @JvmField
         var aClass351_3237: Class351? = Class351(80, 7)
         var aClass114_3240: Class114? = Class114(43, 4)
         var aFloat3242: Float = 0f

@@ -146,16 +146,13 @@ class Class202 internal constructor(connection: Class238?, class297: Class297?, 
         var anInt2653: Int = 0
         var anInt2655: Int = 0
         var anInt2660: Int = 0
-        @JvmField
         var aClass351_2661: Class351? = Class351(24, 7)
         var anInt2662: Int = 0
         var anInt2664: Int = 0
         var aClass114_2665: Class114? = Class114(12, 0)
         var anInt2666: Int = 0
         var anInt2667: Int = 0
-        @JvmField
         var anInt2670: Int = 0
-        @JvmField
         var aClass60_2671: Class60? = Class60(10)
 
         @JvmStatic

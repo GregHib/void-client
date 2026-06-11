@@ -5,21 +5,13 @@ abstract class Class186 {
     abstract fun method1398(i: Int, i_3_: Int, f: Float, f_4_: Float, i_5_: Int, f_6_: Float, i_7_: Int, f_8_: Float, i_9_: Int, i_10_: Int, fs: FloatArray)
 
     companion object {
-        @JvmField
         var aClass45_2490: Class45? = null
-        @JvmField
         var aClass74_2491: Class74?
-        @JvmField
         var aBoolean2492: Boolean = false
-        @JvmField
         var anInt2493: Int = 0
-        @JvmField
         var aStringArray2494: Array<String?>?
-        @JvmField
         var aClass351_2495: Class351?
-        @JvmField
         var aString2496: String?
-        @JvmField
         var anIntArray2497: IntArray?
 
         @JvmStatic

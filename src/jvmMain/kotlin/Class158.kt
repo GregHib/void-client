@@ -44,7 +44,6 @@ class Class158 internal constructor(string: String?, class221: Class221?, class3
     companion object {
         var anInt4933: Int = 0
         var aClass356_4934: Class356? = Class356(8)
-        @JvmField
         var aClass299_4938: Class299? = null
         var anInt4939: Int = 0
         var anInt4941: Int = 0

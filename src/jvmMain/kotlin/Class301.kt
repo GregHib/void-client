@@ -6,12 +6,10 @@ import Class44.method384
 * Visit http://jode.sourceforge.net/
 */
 object Class301 {
-    @JvmField
     var aClass351_3825: Class351?
     var anInt3826: Int = 0
     var anInt3827: Int = 0
     var anInt3828: Int = 0
-    @JvmField
     var anInt3829: Int = -1
     var anInt3830: Int = 0
 

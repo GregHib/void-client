@@ -83,12 +83,9 @@ class Class269 internal constructor(private val aHa_Sub3_3457: ha_Sub3) {
 
     companion object {
         var anInt3450: Int = 0
-        @JvmField
         var anInt3451: Int = 0
-        @JvmField
         var aClass217_3453: Class217? = null
         var anInt3456: Int = 0
-        @JvmField
         var anInt3460: Int = 0
         var anInt3461: Int = 0
         var aFloat3462: Float = 0f

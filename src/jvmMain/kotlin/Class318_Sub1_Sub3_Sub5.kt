@@ -311,7 +311,6 @@ class Class318_Sub1_Sub3_Sub5 internal constructor(i: Int, i_22_: Int, i_23_: In
         var anInt10389: Int = 0
         var anInt10390: Int = 0
         var anInt10394: Int = 0
-        @JvmField
         var anInt10395: Int = -1
         var anInt10397: Int = 0
         var anInt10402: Int = 0

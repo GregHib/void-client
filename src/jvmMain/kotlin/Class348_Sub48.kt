@@ -14,7 +14,6 @@ class Class348_Sub48 : Class348() {
     companion object {
         var anInt7129: Int = 0
         var anInt7133: Int = 0
-        @JvmField
         var anInt7134: Int = 0
         fun method3328(class324: Class324?) {
             Class362.aClass324_4456 = class324

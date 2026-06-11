@@ -15,9 +15,7 @@ class Class223 internal constructor(i: Int, var anInt2896: Int) {
         var aBoolean2895: Boolean = false
         var anInt2897: Int = 0
         var anInt2898: Int = 0
-        @JvmField
         var anIntArray2899: IntArray?
-        @JvmField
         var anIntArrayArray2900: Array<IntArray?>?
 
         @JvmStatic

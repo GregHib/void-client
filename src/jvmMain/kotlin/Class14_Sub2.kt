@@ -19,13 +19,9 @@ class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boole
     }
 
     companion object {
-        @JvmField
         var anInt8619: Int = 0
-        @JvmField
         var anInt8620: Int = 0
-        @JvmField
         var aDouble8621: Double = 0.0
-        @JvmField
         var anInt8622: Int = 0
 
         /*synthetic*/

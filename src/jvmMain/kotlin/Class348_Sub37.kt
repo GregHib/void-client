@@ -5,12 +5,10 @@ import Class5_Sub2.Companion.method194
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub37 : Class348() {
-    @JvmField
     var aClass262_6998: Class262 = Class262()
 
     companion object {
         var anInt6996: Int = 0
-        @JvmField
         var aBoolean6997: Boolean = false
         var anInt6999: Int = 0
 

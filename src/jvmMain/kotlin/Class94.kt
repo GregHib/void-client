@@ -2,13 +2,9 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class94 {
-    @JvmField
     var anInt1535: Int = 0
-    @JvmField
     var anInt1536: Int = 0
-    @JvmField
     var anInt1537: Int = 0
-    @JvmField
     var aClass45_1538: Class45? = null
 
     @JvmStatic

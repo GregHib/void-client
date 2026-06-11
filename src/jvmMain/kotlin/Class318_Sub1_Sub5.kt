@@ -2,9 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int) : Class318_Sub1() {
-    @JvmField
     var aShort8769: Short
-    @JvmField
     var aShort8781: Short
 
     override fun method2378(i: Int): Boolean {
@@ -59,33 +57,19 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
     }
 
     companion object {
-        @JvmField
         var aClass144_8766: Class144? = null
-        @JvmField
         var anInt8767: Int = 0
-        @JvmField
         var anInt8768: Int = 0
-        @JvmField
         var anInt8770: Int = 0
-        @JvmField
         var anInt8771: Int = 0
-        @JvmField
         var anInt8772: Int = 0
-        @JvmField
         var aBoolean8773: Boolean = false
-        @JvmField
         var anInt8774: Int = 0
-        @JvmField
         var anInt8775: Int = 2
-        @JvmField
         var anInt8776: Int = 0
-        @JvmField
         var anInt8777: Int = 0
-        @JvmField
         var anInt8778: Int = 0
-        @JvmField
         var anInt8779: Int = 0
-        @JvmField
         var anInt8780: Int = 0
         @JvmStatic
         fun method2483(i: Int, i_0_: Int): Int {

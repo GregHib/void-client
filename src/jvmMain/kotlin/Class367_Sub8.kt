@@ -92,33 +92,19 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class26
     }
 
     companion object {
-        @JvmField
         var anInt7349: Int = 0
-        @JvmField
         var anInt7351: Int = 0
-        @JvmField
         var anInt7352: Int = 0
-        @JvmField
         var anInt7354: Int = 0
-        @JvmField
         var aShort7355: Short = 1
-        @JvmField
         var anInt7356: Int = 0
-        @JvmField
         var anInt7357: Int = 0
-        @JvmField
         var anInt7358: Int = 0
-        @JvmField
         var anInt7359: Int = 0
-        @JvmField
         var anInt7360: Int = 0
-        @JvmField
         var aClass364_7361: Class364? = Class364("WTRC", 1)
-        @JvmField
         var aClass45_7362: Class45? = null
-        @JvmField
         var aClass114_7363: Class114?
-        @JvmField
         var anInt7364: Int = 0
         var anInt7365: Int = 0
 

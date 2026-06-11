@@ -5,16 +5,16 @@
  * referenced by jvmMain call-sites that have nothing to do with file I/O.
  */
 object Class234Statics {
-    @JvmField var anInt3038: Int = 0
-    @JvmField var anInt3040: Int = 0
-    @JvmField var anInt3041: Int = 0
-    @JvmField var anInt3042: Int = 0
-    @JvmField var anInt3043: Int = 0
-    @JvmField var aClass138_3044: Class138? = Class138(0, 2, 2, 1)
-    @JvmField var anInt3045: Int = 0
-    @JvmField var anInt3047: Int = 0
-    @JvmField var anInt3048: Int = 0
-    @JvmField var anInt3049: Int = 0
+    var anInt3038: Int = 0
+    var anInt3040: Int = 0
+    var anInt3041: Int = 0
+    var anInt3042: Int = 0
+    var anInt3043: Int = 0
+    var aClass138_3044: Class138? = Class138(0, 2, 2, 1)
+    var anInt3045: Int = 0
+    var anInt3047: Int = 0
+    var anInt3048: Int = 0
+    var anInt3049: Int = 0
 
     @JvmStatic
     fun method1659(i: Byte) {

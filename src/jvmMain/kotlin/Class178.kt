@@ -4,13 +4,11 @@ import Class5_Sub1.Companion.method188
 * Visit http://jode.sourceforge.net/
 */
 object Class178 {
-    @JvmField
     var anInt2336: Int = 0
     var anInt2337: Int = 0
     var aClass114_2338: Class114? = Class114(92, -1)
     var aClass29_2339: Class29? = Class29(14, 0)
     var anInt2340: Int = 0
-    @JvmField
     var aClass29_2341: Class29? = Class29(15, 4)
     var aClass29_2342: Class29? = Class29(16, -2)
     var aClass29_2343: Class29? = Class29(17, 0)
@@ -23,7 +21,6 @@ object Class178 {
     var aClass29_2350: Class29? = Class29(24, -1)
     var aClass29_2351: Class29? = Class29(26, 0)
     var aClass29_2352: Class29? = Class29(27, 0)
-    @JvmField
     var aClass29_2353: Class29? = Class29(28, -2)
     private var aClass29Array2354: Array<Class29?>? = arrayOfNulls<Class29>(32)
 

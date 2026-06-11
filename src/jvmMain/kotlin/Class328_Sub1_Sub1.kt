@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class328_Sub1_Sub1 : Class328_Sub1() {
-    @JvmField
     var aClass351_8798: Class351? = Class351(69, -1)
     var anInt8799: Int = 0
 

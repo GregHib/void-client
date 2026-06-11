@@ -70,24 +70,15 @@ class Class26 internal constructor(class45: Class45?, class45_9_: Class45?) {
     }
 
     companion object {
-        @JvmField
         var anInt373: Int = 0
-        @JvmField
         var anInt375: Int = 0
-        @JvmField
         var anInt376: Int = 0
-        @JvmField
         var anInt378: Int = 0
-        @JvmField
         var anInt380: Int = 0
-        @JvmField
         var aClass364_382: Class364? = Class364("WTQA", 2)
-        @JvmField
         var anInt383: Int
         var aBoolean384: Boolean = false
-        @JvmField
         var anInt385: Int = 0
-        @JvmField
         var anInt386: Int = 0
 
         @JvmStatic

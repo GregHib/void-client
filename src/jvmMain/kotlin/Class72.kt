@@ -14,7 +14,6 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
     private var anInt1220 = 0
     private var aClass105_1221: Class105? = null
     private var anInt1231 = 0
-    @JvmField
     var anInt1232: Int = 0
 
     private fun method730(var_ha: ha, class72_0_: Class72?): Boolean {

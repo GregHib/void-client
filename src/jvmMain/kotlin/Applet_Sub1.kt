@@ -445,83 +445,44 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
     }
 
     companion object {
-        @JvmField
         var anInt1: Int = 0
-        @JvmField
         var anInt2: Int = 0
-        @JvmField
         var anInt3: Int = 0
-        @JvmField
         var anInt4: Int = 0
-        @JvmField
         var anInt5: Int = 0
-        @JvmField
         var anInt6: Int = 0
-        @JvmField
         var anInt7: Int = 0
-        @JvmField
         var anInt8: Int = 0
-        @JvmField
         var anInt9: Int = 0
-        @JvmField
         var anInt10: Int = 0
-        @JvmField
         var anInt11: Int = 0
-        @JvmField
         var anInt12: Int = 0
-        @JvmField
         var anInt13: Int = 0
-        @JvmField
         var anInt14: Int = 0
-        @JvmField
         var anInt15: Int = 0
-        @JvmField
         var anInt16: Int = 0
-        @JvmField
         var anInt18: Int = 0
-        @JvmField
         var anInt19: Int = 0
-        @JvmField
         var aClass324_20: Class324? = null
-        @JvmField
         var anInt21: Int = 0
-        @JvmField
         var anInt22: Int = 0
-        @JvmField
         var anInt23: Int = 0
-        @JvmField
         var anInt24: Int = 0
-        @JvmField
         var anInt25: Int = 0
-        @JvmField
         var anInt26: Int = 0
-        @JvmField
         var anInt28: Int = 0
-        @JvmField
         var anInt29: Int = 0
-        @JvmField
         var anInt30: Int = 0
-        @JvmField
         var anInt31: Int = 0
-        @JvmField
         var anInt32: Int = 0
-        @JvmField
         var anInt33: Int = 0
-        @JvmField
         var anInt34: Int = 0
-        @JvmField
         var anInt35: Int = 0
-        @JvmField
         var anInt36: Int = 0
-        @JvmField
         var anInt37: Int = 0
-        @JvmField
         var anIntArray38: IntArray? = null
-        @JvmField
         var anInt39: Int = 0
-        @JvmField
         var anInt40: Int = 0
-        @JvmField
         var aBoolean41: Boolean = false
 
         @JvmStatic

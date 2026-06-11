@@ -8,12 +8,9 @@ class Class74 internal constructor(i: Int, i_0_: Int) {
     }
 
     companion object {
-        @JvmField
         var anIntArray1233: IntArray? = IntArray(1024)
         var aClass114_1234: Class114? = Class114(54, 4)
-        @JvmField
         var anInt1235: Int = 0
-        @JvmField
         var aBoolean1236: Boolean = false
 
         @JvmStatic

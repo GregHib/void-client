@@ -8,16 +8,11 @@ class InputStream_Sub2 : InputStream() {
     }
 
     companion object {
-        @JvmField
         var anInt80: Int = 0
-        @JvmField
         var anInt81: Int = 0
-        @JvmField
         var aClass114_82: Class114? = Class114(71, 7)
-        @JvmField
         var aClass243_83: Class243? = Class243()
         var aFloatArray84: FloatArray? = FloatArray(4)
-        @JvmField
         var anInt85: Int = 0
 
         @JvmStatic

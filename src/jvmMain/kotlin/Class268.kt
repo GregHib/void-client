@@ -7,7 +7,6 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
     var anInt3429: Int = 0
     private val aClass60_3433 = Class60(64)
     private val aClass45_3442: Class45?
-    @JvmField
     var anInt3447: Int = 0
     fun method2032(i: Int, i_3_: Int) {
         withLock(aClass60_3433) {
@@ -67,22 +66,16 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
     companion object {
         private var aShortArray3430: ShortArray? = shortArrayOf(-1, -1, -1, -1, -1)
         var anInt3431: Int = 0
-        @JvmField
         var anIntArray3432: IntArray? = IntArray(500)
         var anInt3434: Int = 0
         var anInt3435: Int
         var anInt3436: Int = 0
         private var aShortArray3437: ShortArray?
-        @JvmField
         var aBooleanArray3438: BooleanArray?
-        @JvmField
         var anInt3439: Int = 16777215
         var anInt3440: Int = 0
-        @JvmField
         var anInt3441: Int = 0
-        @JvmField
         var aShortArrayArray3443: Array<ShortArray?>?
-        @JvmField
         var anInt3444: Int
         var anInt3445: Int = 0
         var anInt3446: Int = 0

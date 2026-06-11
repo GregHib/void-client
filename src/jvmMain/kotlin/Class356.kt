@@ -161,7 +161,6 @@ class Class356 internal constructor(var anInt4377: Int) {
         var anInt4380: Int = 0
         var anInt4381: Int = 0
         var anInt4382: Int = 0
-        @JvmField
         var anInt4383: Int = 0
         var anInt4384: Int = 0
         var anInt4386: Int = 0

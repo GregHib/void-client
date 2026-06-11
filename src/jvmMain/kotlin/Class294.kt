@@ -269,9 +269,7 @@ class Class294 : Interface16 {
         var anInt5052: Int = 0
         var anInt5055: Int = 0
         var aClass351_5057: Class351? = Class351(10, -1)
-        @JvmField
         var aPlayerArray5058: Array<Player?>? = arrayOfNulls<Player>(2048)
-        @JvmField
         var aClass338Array5060: Array<Class338?>? = null
         var anInt5061: Int = 0
 

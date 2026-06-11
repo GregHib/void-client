@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 class aa_Sub1(var_ha_Sub2: ha_Sub2?, i: Int, i_1_: Int, `is`: ByteArray?) : aa() {
-    @JvmField
     var aClass258_Sub3_Sub1_5193: Class258_Sub3_Sub1? = null
 
     init {
@@ -15,9 +14,7 @@ class aa_Sub1(var_ha_Sub2: ha_Sub2?, i: Int, i_1_: Int, `is`: ByteArray?) : aa()
     }
 
     companion object {
-        @JvmField
         var aSArray5191: Array<s?>? = null
-        @JvmField
         var anIntArray5192: IntArray? = null
         @JvmStatic
         fun method161(i: Int) {

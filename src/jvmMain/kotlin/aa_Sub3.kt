@@ -1,7 +1,5 @@
 class aa_Sub3(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : aa() {
-    @JvmField
     var anIntArray5201: IntArray?
-    @JvmField
     var anIntArray5202: IntArray?
 
     init {
@@ -14,17 +12,11 @@ class aa_Sub3(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : aa() {
     }
 
     companion object {
-        @JvmField
         var aClass351_5200: Class351? = Class351(13, 2)
-        @JvmField
         var anInt5203: Int = 0
-        @JvmField
         var aClass351_5204: Class351? = Class351(15, 8)
-        @JvmField
         var anInt5205: Int = 0
-        @JvmField
         var aClass348_Sub6_5206: Class348_Sub6? = Class348_Sub6(0, 0)
-        @JvmField
         var aClass45_5207: Class45? = null
 
         /*synthetic*/

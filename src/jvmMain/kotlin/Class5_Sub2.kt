@@ -18,31 +18,18 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
     }
 
     companion object {
-        @JvmField
         var anInt8353: Int = 0
-        @JvmField
         var anInt8354: Int = 0
-        @JvmField
         var anInt8355: Int = 0
-        @JvmField
         var aClass273_8356: Class273? = Class273("", 11)
-        @JvmField
         var anInt8357: Int = 0
-        @JvmField
         var anInt8358: Int = 0
-        @JvmField
         var anInt8359: Int = 0
-        @JvmField
         var anInt8360: Int = 0
-        @JvmField
         var aBooleanArrayArrayArray8361: Array<Array<BooleanArray?>?>? = null
-        @JvmField
         var anInt8362: Int = 0
-        @JvmField
         var anInt8363: Int = 0
-        @JvmField
         var anInt8364: Int = 0
-        @JvmField
         var aClass114_8365: Class114? = Class114(30, -1)
 
         @JvmStatic

@@ -36,13 +36,9 @@ class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45
     }
 
     companion object {
-        @JvmField
         var anInt456: Int = 0
-        @JvmField
         var anInt457: Int = 0
-        @JvmField
         var anInt459: Int = 0
-        @JvmField
         var anInt461: Int = 0
 
         @JvmStatic

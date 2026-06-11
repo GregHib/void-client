@@ -4,9 +4,7 @@
  * All call-sites in jvmMain reference these directly; none exist in commonMain.
  */
 object Class238Statics {
-    @JvmField
     var anInt3132: Int = 0
-    @JvmField
     var aClass114_3133: Class114? = null
 
     fun method1703(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {

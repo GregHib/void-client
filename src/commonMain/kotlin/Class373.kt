@@ -25,11 +25,8 @@ abstract class Class373 {
     abstract fun method3597(bool: Boolean): Int
 
     companion object {
-        @JvmField
         var anInt4533: Int = 0
-        @JvmField
         var anInt4534: Int = 0
-        @JvmField
         var anInt4535: Int = 0
     }
 }

@@ -285,7 +285,6 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         private var aBooleanArray6713: BooleanArray? = null
         private var aByteArray6714: ByteArray? = null
         private var aClass210Array6715: Array<Class210?>? = null
-        @JvmField
         var aClass370Array6718: Array<Class370?>? = null
         private var anIntArray6719: IntArray? = null
         private var aFloatArray6720: FloatArray? = null

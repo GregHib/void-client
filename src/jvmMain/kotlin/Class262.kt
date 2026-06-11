@@ -1,7 +1,6 @@
 import java.awt.Canvas
 
 class Class262 {
-    @JvmField
     var aClass348_3334: Class348 = Class348()
     private var aClass348_3342: Class348? = null
 
@@ -143,11 +142,9 @@ class Class262 {
     }
 
     companion object {
-        @JvmField
         var aClass45_3323: Class45? = null
         var anInt3324: Int = 0
         var anInt3325: Int = 0
-        @JvmField
         var aClass324_3326: Class324? = null
         var anInt3327: Int = 0
         var anInt3328: Int = 0

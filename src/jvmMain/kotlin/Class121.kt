@@ -5,18 +5,12 @@ import Class85.Companion.method828
 * Visit http://jode.sourceforge.net/
 */
 object Class121 {
-    @JvmField
     var anInt1794: Int
-    @JvmField
     var anInt1795: Int = 0
     var anInt1796: Int = 0
-    @JvmField
     var anInt1797: Int = 0
-    @JvmField
     var anInt1798: Int = 0
-    @JvmField
     var anInt1799: Int = 0
-    @JvmField
     var aClass105_1800: Class105? = null
 
     @JvmStatic

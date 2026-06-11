@@ -18,17 +18,11 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
     abstract fun method2964(i: Byte, oggpacket: OggPacket)
 
     companion object {
-        @JvmField
         var anInt6863: Int = 0
-        @JvmField
         var anInt6864: Int = 0
-        @JvmField
         var aFloatArray6865: FloatArray? = FloatArray(16384)
-        @JvmField
         var anInt6866: Int = 0
-        @JvmField
         var aFloatArray6867: FloatArray? = FloatArray(16384)
-        @JvmField
         var anInt6870: Int = 0
 
         fun method2960(bool: Boolean, i: Int): Int {

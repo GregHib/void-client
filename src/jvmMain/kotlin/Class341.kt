@@ -32,7 +32,6 @@ class Class341 {
     companion object {
         var aClass348_Sub24_4226: Class348_Sub24? = Class348_Sub24(0, 0)
         var anInt4227: Int = 0
-        @JvmField
         var anInt4228: Int = 0
         var anInt4229: Int = 0
         var anInt4230: Int = 0
@@ -40,7 +39,6 @@ class Class341 {
         var anInt4232: Int = 0
         var anIntArrayArray4233: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
         var aClass105Array4234: Array<Class105?>? = null
-        @JvmField
         var anInt4235: Int
         var aClass124Array4236: Array<Class124?>? = arrayOfNulls<Class124>(4)
         var anInt4237: Int = 0

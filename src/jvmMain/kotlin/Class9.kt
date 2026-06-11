@@ -4,14 +4,10 @@ import Class348_Sub40_Sub19.Companion.method3098
 * Visit http://jode.sourceforge.net/
 */
 object Class9 {
-    @JvmField
     var anInt167: Int = 0
     var anIntArray168: IntArray? = intArrayOf(28, 35, 40, 44)
-    @JvmField
     var anInt169: Int = -1
-    @JvmField
     var anInt170: Int = 0
-    @JvmField
     var aHa171: ha? = null
 
     @JvmStatic

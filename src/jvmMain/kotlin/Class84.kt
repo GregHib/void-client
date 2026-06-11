@@ -75,23 +75,14 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
 
     companion object {
         var anIntArray1450: IntArray? = intArrayOf(1, 2, 4, 8)
-        @JvmField
         var anInt1451: Int = 0
-        @JvmField
         var anInt1452: Int = 0
-        @JvmField
         var anInt1453: Int = 0
-        @JvmField
         var anInt1454: Int = 0
-        @JvmField
         var anInt1455: Int = 0
-        @JvmField
         var anInt1456: Int = 0
-        @JvmField
         var anInt1457: Int = 0
-        @JvmField
         var anInt1458: Int = 0
-        @JvmField
         var anInt1459: Int = 0
         @JvmStatic
         fun method817(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Class318_Sub1_Sub3_Sub3? {

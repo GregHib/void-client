@@ -8,21 +8,13 @@ class OutputStream_Sub2 : OutputStream() {
     }
 
     companion object {
-        @JvmField
         var anInt101: Int
-        @JvmField
         var anInt102: Int = 0
-        @JvmField
         var anInt103: Int = 0
-        @JvmField
         var anInt104: Int = 0
-        @JvmField
         var anInt105: Int = 0
-        @JvmField
         var aClass105_106: Class105? = null
-        @JvmField
         var anInt107: Int = 0
-        @JvmField
         var aLong108: Long = (Math.random() * 9.999999999E9).toLong()
 
         @JvmStatic

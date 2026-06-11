@@ -137,39 +137,22 @@ abstract class Class285 internal constructor(var aClass377_4759: Class377, priva
     }
 
     companion object {
-        @JvmField
         var anInt4735: Int = 0
-        @JvmField
         var anInt4737: Int = 0
-        @JvmField
         var anInt4738: Int = 0
-        @JvmField
         var anInt4740: Int = 0
-        @JvmField
         var aBoolean4741: Boolean = false
-        @JvmField
         var anInt4742: Int = 0
-        @JvmField
         var aClass348_Sub16_Sub3_4743: Class348_Sub16_Sub3? = null
-        @JvmField
         var aStringArray4744: Array<String?>? = arrayOfNulls<String>(200)
-        @JvmField
         var anInt4745: Int = 0
-        @JvmField
         var anInt4749: Int = 0
-        @JvmField
         var anInt4751: Int = 0
-        @JvmField
         var anInt4752: Int = 0
-        @JvmField
         var anInt4753: Int = 0
-        @JvmField
         var aClass323_4754: Class323? = null
-        @JvmField
         var anInt4756: Int = 0
-        @JvmField
         var anInt4757: Int = 0
-        @JvmField
         var anInt4758: Int = 0
         fun method2119(f: Float, i: Int, f_0_: Float, i_1_: Int, f_2_: Float): Float {
             anInt4738++

@@ -21,14 +21,12 @@ class Class292 internal constructor(private val aClass45_4804: Class45) : Interf
     }
 
     companion object {
-        @JvmField
         var anInt4797: Int = 0
         var aClass114_4798: Class114?
         var anInt4799: Int = 0
         var anInt4800: Int = 0
         var anInt4801: Int = 0
         var anInt4802: Int = 0
-        @JvmField
         var anInt4803: Int = -1
         var anInt4805: Int = 0
 

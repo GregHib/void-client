@@ -20,7 +20,6 @@ class Class348_Sub46 : Class348 {
         var anInt7112: Int = 0
         var aClass114_7113: Class114? = Class114(97, 0)
         var anInt7114: Int = 0
-        @JvmField
         var anInt7115: Int = 1
 
         @JvmStatic

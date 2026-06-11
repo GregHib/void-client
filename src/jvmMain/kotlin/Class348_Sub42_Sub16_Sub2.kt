@@ -2,11 +2,8 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub42_Sub16_Sub2 : Class348_Sub42_Sub16() {
-    @JvmField
     var anInt10457: Int = 0
-    @JvmField
     var aClass137_10458: Class137? = null
-    @JvmField
     var aByteArray10461: ByteArray? = null
 
     override fun method3257(i: Int): Int {
@@ -24,17 +21,11 @@ class Class348_Sub42_Sub16_Sub2 : Class348_Sub42_Sub16() {
     }
 
     companion object {
-        @JvmField
         var anInt10459: Int = 0
-        @JvmField
         var anInt10460: Int = 0
-        @JvmField
         var anInt10462: Int = 0
-        @JvmField
         var anInt10463: Int = 0
-        @JvmField
         var anInt10464: Int = 0
-        @JvmField
         var aClass356_10465: Class356? = Class356(16)
 
         @JvmStatic

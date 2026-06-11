@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 class ja : Class101(), Interface19 {
-    @JvmField
     var nativeid: Long = 0
 
     private external fun la()

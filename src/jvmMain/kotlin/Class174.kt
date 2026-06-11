@@ -5,30 +5,18 @@ import kotlin.math.sqrt
 * Visit http://jode.sourceforge.net/
 */
 class Class174 {
-    @JvmField
     var anInt2289: Int = 0
-    @JvmField
     var anInt2290: Int = 0
-    @JvmField
     var anInt2291: Int = 0
-    @JvmField
     var anInt2292: Int = 0
-    @JvmField
     var anInt2294: Int = 0
-    @JvmField
     var anInt2296: Int = 0
-    @JvmField
     var anInt2297: Int = 0
-    @JvmField
     var anInt2298: Int = 0
-    @JvmField
     var anInt2299: Int = 0
-    @JvmField
     var aLong2301: Long = 0
     private var anInt2302 = 0
-    @JvmField
     var anInt2303: Int = 0
-    @JvmField
     var anInt2304: Int = 0
     private var aBoolean2308 = false
     private fun method1335(class348_sub49: Class348_Sub49, i: Int, i_8_: Byte) {
@@ -84,11 +72,8 @@ class Class174 {
         var anInt2295: Int = 0
         var anInt2300: Int = 0
         var aClass114_2305: Class114? = Class114(57, 10)
-        @JvmField
         var aClass45_2306: Class45? = null
-        @JvmField
         var aClass223_2307: Class223? = Class223(7, 2)
-        @JvmField
         var aClass105_2309: Class105? = null
 
         fun method1332(bool: Boolean, bool_0_: Boolean, i: Int, string: String): Boolean {

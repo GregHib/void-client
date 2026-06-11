@@ -1,11 +1,8 @@
 import java.io.*
 
 internal object Class374 {
-    @JvmField
     var anInt4536: Int = 0
-    @JvmField
     var aClass74_4537: Class74? = Class74(3, 2)
-    @JvmField
     var aClass78_4538: Class78? = null
 
     @JvmStatic

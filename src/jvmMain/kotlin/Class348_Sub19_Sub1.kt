@@ -2,7 +2,6 @@
  * Visit http://jode.sourceforge.net/
  */
 class Class348_Sub19_Sub1 : Class348_Sub19 {
-    @JvmField
     var aByteArray8984: ByteArray?
     var anInt8985: Int
     var anInt8986: Int

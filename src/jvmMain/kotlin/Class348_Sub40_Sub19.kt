@@ -12,19 +12,12 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
     }
 
     companion object {
-        @JvmField
         var anInt9253: Int = 0
-        @JvmField
         var aClass114_9254: Class114? = Class114(73, 3)
-        @JvmField
         var anInt9255: Int = 0
-        @JvmField
         var anInt9256: Int = 0
-        @JvmField
         var aClass114_9257: Class114?
-        @JvmField
         var anInt9258: Int = 0
-        @JvmField
         var anIntArray9259: IntArray? = IntArray(2)
 
         /*synthetic*/

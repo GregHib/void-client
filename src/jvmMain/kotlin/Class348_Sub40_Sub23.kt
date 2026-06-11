@@ -307,21 +307,13 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
     }
 
     companion object {
-        @JvmField
         var aBoolean9307: Boolean = true
-        @JvmField
         var anInt9308: Int = 0
-        @JvmField
         var anInt9309: Int = 0
-        @JvmField
         var anInt9313: Int
-        @JvmField
         var anInt9315: Int = 0
-        @JvmField
         var anInt9316: Int = 0
-        @JvmField
         var aClass348_Sub22Array9319: Array<Class348_Sub22?>? = arrayOfNulls<Class348_Sub22>(1024)
-        @JvmField
         var anInt9321: Int = 0
         @JvmStatic
         fun method3113(c: Char, bool: Boolean, string: String): Array<String?> {

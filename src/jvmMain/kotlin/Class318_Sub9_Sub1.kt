@@ -3,10 +3,8 @@ import Class62.method599
 /* Class318_Sub9_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class318_Sub9_Sub1 internal constructor(@JvmField var aString8783: String?, i: Int) : Class318_Sub9() {
-    @JvmField
+class Class318_Sub9_Sub1 internal constructor(var aString8783: String?, i: Int) : Class318_Sub9() {
     var aShort8786: Short
-    @JvmField
     var anInt8787: Int = (method599(-92) / 1000L).toInt()
 
     init {
@@ -16,7 +14,6 @@ class Class318_Sub9_Sub1 internal constructor(@JvmField var aString8783: String?
     companion object {
         var anInt8782: Int = 0
         var aFloat8784: Float = 0f
-        @JvmField
         var anIntArray8785: IntArray? = null
         var anInt8788: Int = 0
 

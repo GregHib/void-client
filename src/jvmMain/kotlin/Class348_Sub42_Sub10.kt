@@ -13,7 +13,6 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
     private var aStringArray9564: Array<String?>? = null
     private lateinit var anIntArrayArray9565: Array<IntArray?>
     var anIntArray9566: IntArray? = null
-    @JvmField
     var aClass355_9567: Class355? = null
     private var anIntArray9574: IntArray? = null
     fun method3209(bool: Boolean) {
@@ -148,7 +147,6 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
         var anInt9568: Int = 0
         var anInt9569: Int = 0
         var anInt9570: Int = 0
-        @JvmField
         var aClass299_9571: Class299? = null
         var anIntArray9572: IntArray?
         var anInt9573: Int = 0

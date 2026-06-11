@@ -2,26 +2,17 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class57 {
-    @JvmField
     var anInt1046: Int = 0
-    @JvmField
     var anInt1047: Int = 0
-    @JvmField
     var anInt1052: Int = 0
-    @JvmField
     var anInt1054: Int = 0
 
     companion object {
-        @JvmField
         var aClass17Array1048: Array<Class17?>? = arrayOfNulls<Class17>(14)
-        @JvmField
         var anInt1049: Int = 0
-        @JvmField
         var aClass163_1050: Class163? = null
         var aClass251_1051: Class251? = Class251()
-        @JvmField
         var anInt1053: Int = 0
-        @JvmField
         var aClass227_1055: Class227? = null
 
         @JvmStatic

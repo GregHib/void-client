@@ -4,7 +4,6 @@ import kotlin.math.pow
 * Visit http://jode.sourceforge.net/
 */
 class Class370 {
-    @JvmField
     var anInt4514: Int
     private lateinit var aFloatArrayArray4515: Array<FloatArray?>
     private val anIntArray4516: IntArray

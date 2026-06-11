@@ -78,15 +78,11 @@ class Class169 : Runnable {
 
     companion object {
         var anInt2257: Int = 0
-        @JvmField
         var aClass105Array2260: Array<Class105?>? = null
-        @JvmField
         var aClass19Array2261: Array<Class19?>? = null
         var anInt2262: Int = 0
         var anInt2263: Int = 0
-        @JvmField
         var anInt2264: Int = 0
-        @JvmField
         var anInt2265: Int = method2253(1600, 124)
         var anInt2266: Int = 0
 

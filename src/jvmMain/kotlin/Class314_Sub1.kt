@@ -375,37 +375,21 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
     }
 
     companion object {
-        @JvmField
         var aClass114_6340: Class114? = Class114(74, 28)
-        @JvmField
         var anInt6341: Int = 0
-        @JvmField
         var anInt6343: Int = 0
-        @JvmField
         var anInt6345: Int = 0
-        @JvmField
         var anInt6348: Int = 0
-        @JvmField
         var anInt6349: Int = 0
-        @JvmField
         var anInt6353: Int = 0
-        @JvmField
         var anInt6356: Int = 0
-        @JvmField
         var anInt6357: Int = 0
-        @JvmField
         var anInt6358: Int = 0
-        @JvmField
         var anInt6359: Int = 0
-        @JvmField
         var anInt6362: Int = 0
-        @JvmField
         var anInt6363: Int = 0
-        @JvmField
         var anInt6366: Int = 0
-        @JvmField
         var anInt6367: Int = 0
-        @JvmField
         var anInt6370: Int = 0
         @JvmStatic
         fun method2344(i: Int) {

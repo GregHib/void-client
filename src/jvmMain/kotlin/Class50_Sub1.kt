@@ -31,30 +31,18 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
     }
 
     companion object {
-        @JvmField
         var aClass101_5209: Class101? = null
-        @JvmField
         var anInt5210: Int = 0
-        @JvmField
         var anInt5211: Int = 0
-        @JvmField
         var anInt5215: Int = 0
-        @JvmField
         var anInt5216: Int = 0
         var aClass351_5217: Class351?
-        @JvmField
         var anInt5218: Int = 0
-        @JvmField
         var aBoolean5219: Boolean = true
-        @JvmField
         var anInt5220: Int = 0
-        @JvmField
         var aBoolean5221: Boolean = false
-        @JvmField
         var aStringArray5223: Array<String?>? = null
-        @JvmField
         var aBoolean5224: Boolean
-        @JvmField
         var aBooleanArrayArray5225: Array<BooleanArray?>?
         var aBoolean5226: Boolean
 

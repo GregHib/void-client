@@ -67,13 +67,9 @@ class Class348_Sub40_Sub36 : Class348_Sub40(0, true) {
     }
 
     companion object {
-        @JvmField
         var anInt9450: Int = 0
-        @JvmField
         var anInt9452: Int = 0
-        @JvmField
         var anInt9454: Int = 0
-        @JvmField
         var aClass114_9456: Class114? = null
 
         @JvmStatic

@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class128 {
-    @JvmField
     var anInt1870: Int = 0
     var aClass114_1871: Class114? = Class114(52, -1)
     var anInt1872: Int = 0

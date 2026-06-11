@@ -25,7 +25,6 @@ open class Class348_Sub42 : Class348() {
 
     companion object {
         var aClass2_7058: Class2?
-        @JvmField
         var anInt7059: Int = 0
         var anInt7061: Int = 0
         var anInt7062: Int = 0

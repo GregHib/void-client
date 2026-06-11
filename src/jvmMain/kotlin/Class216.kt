@@ -12,11 +12,9 @@ class Class216 internal constructor(var anInt4974: Int, var anInt4978: Int) : In
     }
 
     companion object {
-        @JvmField
         var aClass45_4975: Class45? = null
         var anInt4976: Int = 0
         var anInt4977: Int = 0
-        @JvmField
         var anInt4979: Int = 0
         @JvmStatic
         fun method1583(i: Byte) {

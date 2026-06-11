@@ -6,22 +6,16 @@ import Class79.Companion.method802
 * Visit http://jode.sourceforge.net/
 */
 class Class211 {
-    @JvmField
     var anInt2731: Int = 0
-    @JvmField
     var anInt2734: Int = 0
     private var anInt2735 = 0
-    @JvmField
     var aBoolean2737: Boolean = false
     private var anInt2738 = 0
     private var anInt2739 = 0
     private var anInt2740 = 0
-    @JvmField
     var aShortArray2742: ShortArray? = null
     private var anInt2743 = 0
-    @JvmField
     var aClass348_Sub1_2745: Class348_Sub1? = null
-    @JvmField
     var aBoolean2749: Boolean = false
 
     fun method1539(i: Int, i_27_: Byte, i_28_: Int, i_29_: Int, i_30_: Int) {
@@ -276,7 +270,6 @@ class Class211 {
         var anInt2741: Int = 0
         var anIntArray2744: IntArray? = IntArray(2)
         var anInt2746: Int = 0
-        @JvmField
         var anInt2747: Int = 0
         var anInt2748: Int = 0
         fun method1538(i: Int, i_0_: Byte, class348_sub49_sub2: Class348_Sub49_Sub2): Boolean {

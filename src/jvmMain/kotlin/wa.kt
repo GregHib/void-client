@@ -2,9 +2,7 @@
 * Visit http://jode.sourceforge.net/
 */
 class wa(var_oa: oa, var_j: j, var_xa: xa) : Interface4 {
-    @JvmField
     var aJ4732: j
-    @JvmField
     var aXa4733: xa
     private var aLong4734 = 0L
 

@@ -44,45 +44,31 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
         var aClass274_3492: Class274?
         var aClass274_3493: Class274?
         var aClass274_3494: Class274?
-        @JvmField
         var aClass274_3495: Class274?
         var aClass274_3496: Class274?
-        @JvmField
         var aClass274_3497: Class274?
-        @JvmField
         var aClass274_3498: Class274?
         var aClass274_3499: Class274?
         var aClass274_3500: Class274?
-        @JvmField
         var aClass274_3501: Class274?
-        @JvmField
         var aClass274_3502: Class274?
-        @JvmField
         var aClass274_3503: Class274?
         var aClass274_3504: Class274?
         var aClass274_3505: Class274?
-        @JvmField
         var aClass274_3506: Class274?
-        @JvmField
         var aClass274_3507: Class274?
         var aClass274_3508: Class274?
         var aClass274_3509: Class274?
-        @JvmField
         var aClass274_3510: Class274?
-        @JvmField
         var aClass274_3511: Class274?
-        @JvmField
         var aClass274_3512: Class274?
-        @JvmField
         var aClass274_3513: Class274?
         var aClass274_3514: Class274?
-        @JvmField
         var aClass274_3515: Class274?
         var aClass274_3516: Class274?
         var aClass274_3517: Class274?
         var aClass274_3518: Class274?
         var aClass274_3519: Class274?
-        @JvmField
         var aClass274_3520: Class274?
         var aClass274_3521: Class274?
         var aClass274_3522: Class274?

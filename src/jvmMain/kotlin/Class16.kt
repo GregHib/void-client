@@ -2,15 +2,10 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class16 {
-    @JvmField
     var anInt230: Int = 0
-    @JvmField
     var aClass148_231: Class148? = null
-    @JvmField
     var anInt232: Int = 0
-    @JvmField
     var aClass45_233: Class45? = null
-    @JvmField
     var anInt234: Int = 0
 
     @JvmStatic

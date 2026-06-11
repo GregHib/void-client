@@ -13,15 +13,10 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
     }
 
     companion object {
-        @JvmField
         var anInt9928: Int = 0
-        @JvmField
         var aClass207Array9929: Array<Class207>? = null
-        @JvmField
         var anInt9930: Int = 0
-        @JvmField
         var aClass262_9931: Class262? = Class262()
-        @JvmField
         var anIntArray9932: IntArray? = IntArray(1000)
 
         @JvmStatic

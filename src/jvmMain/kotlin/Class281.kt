@@ -7,13 +7,9 @@ object Class281 {
     var aClass351_3644: Class351? = Class351(42, 8)
     var anInt3645: Int = 0
     var anInt3646: Int = 0
-    @JvmField
     var anInt3647: Int = 0
-    @JvmField
     var aClass351_3648: Class351? = Class351(55, 4)
-    @JvmField
     var aClass143_3649: Class143? = null
-    @JvmField
     var anInt3650: Int = 0
 
     fun method2106(string: String?, i: Int) {

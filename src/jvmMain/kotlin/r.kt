@@ -5,24 +5,15 @@ import kotlin.concurrent.Volatile
 */
 abstract class r : Class348_Sub42() {
     companion object {
-        @JvmField
         var aClass312_9716: Class312? = Class312()
-        @JvmField
         var anInt9717: Int = 0
-        @JvmField
         var aBooleanArray9718: BooleanArray? = null
-        @JvmField
         var aBoolean9719: Boolean = true
-        @JvmField
         var aClass101_9720: Class101? = null
-        @JvmField
         @Volatile
         var anInt9721: Int = -1
-        @JvmField
         var aBoolean9722: Boolean = false
-        @JvmField
         var anIntArrayArray9723: Array<IntArray?>?
-        @JvmField
         var anIntArray9724: IntArray? = null
 
         @JvmStatic

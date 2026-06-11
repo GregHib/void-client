@@ -117,21 +117,13 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
     }
 
     companion object {
-        @JvmField
         var anInt4547: Int = 0
-        @JvmField
         var anInt4549: Int = 0
-        @JvmField
         var anInt4550: Int = 0
-        @JvmField
         var anInt4551: Int = 0
-        @JvmField
         var anInt4552: Int = 0
-        @JvmField
         var anInt4553: Int = 0
-        @JvmField
         var anInt4555: Int = 0
-        @JvmField
         var anInt4559: Int = 0
         @JvmStatic
         fun method3616(i: Int) {

@@ -22,18 +22,12 @@ class Class59_Sub1_Sub2 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
     }
 
     companion object {
-        @JvmField
         var anInt8659: Int = 0
-        @JvmField
         var anInt8661: Int = 0
-        @JvmField
         var aClass74_8662: Class74? = Class74(6, 5)
         var anIntArray8663: IntArray? = IntArray(120)
-        @JvmField
         var aClass273_8664: Class273?
-        @JvmField
         var anInt8665: Int = 0
-        @JvmField
         var anIntArray8666: IntArray? = null
 
         @JvmStatic

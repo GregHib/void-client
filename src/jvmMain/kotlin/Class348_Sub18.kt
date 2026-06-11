@@ -12,7 +12,7 @@ import java.awt.Component
 import java.lang.reflect.Constructor
 import kotlin.math.sin
 
-class Class348_Sub18 internal constructor(private val anInt6815: Int, private val anInt6820: Int, private var anInt6811: Int, private val anInt6806: Int, private var anInt6810: Int, @JvmField var anInt6809: Int, @JvmField var anInt6812: Int, @JvmField var anInt6819: Int, @JvmField var anInt6813: Int) : Class348() {
+class Class348_Sub18 internal constructor(private val anInt6815: Int, private val anInt6820: Int, private var anInt6811: Int, private val anInt6806: Int, private var anInt6810: Int, var anInt6809: Int, var anInt6812: Int, var anInt6819: Int, var anInt6813: Int) : Class348() {
     fun method2934(i: Int, i_0_: Int, i_1_: Int): Boolean {
         anInt6822++
         if (i != 3589) method2941(null, 70, false)

@@ -14,11 +14,8 @@ class Class114 internal constructor(private var anInt1747: Int, var anInt1749: I
     }
 
     companion object {
-        @JvmField
         var anInt1746: Int = 0
-        @JvmField
         var anInt1748: Int = 0
-        @JvmField
         var anInt1750: Int = 0
 
         fun method1059(i: Byte, i_1_: Int): Class179 {

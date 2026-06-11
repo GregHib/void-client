@@ -31,11 +31,9 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
         var anInt9744: Int = 0
         var anInt9745: Int = 0
         var aBoolean9746: Boolean = true
-        @JvmField
         var anInt9747: Int = 0
         var aClass138_9748: Class138? = Class138(7, 0, 1, 1)
         var aClass351_9749: Class351?
-        @JvmField
         var anInt9750: Int
         var anInt9751: Int = 0
 

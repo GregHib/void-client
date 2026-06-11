@@ -11,19 +11,12 @@ class Class21 {
     }
 
     companion object {
-        @JvmField
         var anInt321: Int = 0
-        @JvmField
         var aClass45_322: Class45? = null
-        @JvmField
         var aClass46_323: Class46? = null
-        @JvmField
         var anInt324: Int = 0
-        @JvmField
         var anInt325: Int = -50
-        @JvmField
         var aHa326: ha? = null
-        @JvmField
         var anInt327: Int = 0
 
         @JvmStatic

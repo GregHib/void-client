@@ -1,27 +1,17 @@
 /* RuntimeException_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField var aString4594: String?) : RuntimeException() {
+class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: String?) : RuntimeException() {
     companion object {
-        @JvmField
         var anInt4596: Int
-        @JvmField
         var anInt4597: Int = 0
-        @JvmField
         var anInt4598: Int = 0
-        @JvmField
         var aBoolean4599: Boolean
-        @JvmField
         var anInt4600: Int = 52
-        @JvmField
         var aClass351_4601: Class351?
-        @JvmField
         var aFloatArray4602: FloatArray?
-        @JvmField
         var anIntArray4603: IntArray? = null
-        @JvmField
         var aBoolean4604: Boolean
-        @JvmField
         var anInt4605: Int = 0
 
         @JvmStatic

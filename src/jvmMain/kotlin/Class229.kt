@@ -5,12 +5,9 @@ class Class229 {
     companion object {
         var anInt2976: Int = 0
         var anInt2977: Int = 0
-        @JvmField
         var aClass45_2978: Class45? = null
-        @JvmField
         var aClass268_2979: Class268? = null
         var anInt2980: Int = 0
-        @JvmField
         var aClass194_2981: Class194? = null
 
         fun method1631(bool: Boolean): Class241 {

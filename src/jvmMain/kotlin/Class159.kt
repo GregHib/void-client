@@ -4,7 +4,6 @@ import Class348_Sub40_Sub7.Companion.method3064
 * Visit http://jode.sourceforge.net/
 */
 class Class159 {
-    @JvmField
     var anInt2125: Int = 0
     private fun method1251(class348_sub49: Class348_Sub49, i: Int, i_0_: Int) {
         if (i == 5) this.anInt2125 = class348_sub49.readUnsignedShort(842397944)

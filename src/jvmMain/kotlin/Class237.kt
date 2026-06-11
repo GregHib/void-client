@@ -1316,7 +1316,6 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
 
     companion object {
         var anInt3102: Int = 0
-        @JvmField
         var aBoolean3103: Boolean = false
         var anInt3105: Int = 0
         var anInt3106: Int = 0

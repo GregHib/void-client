@@ -5,7 +5,6 @@ open class Class328_Sub2 : Class328() {
     companion object {
         var aClass56Array6515: Array<Class56?>? = null
         var anInt6516: Int = 0
-        @JvmField
         var aClass60_6517: Class60? = Class60(4)
         var anInt6518: Int = 0
 

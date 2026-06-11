@@ -9,23 +9,14 @@
  * @JvmStatic so call sites read `Class348Statics.methodNNNN(...)`.
  */
 object Class348Statics {
-    @JvmField
     var aClass45_4286: Class45? = null
-    @JvmField
     var anInt4287: Int = 0
-    @JvmField
     var anIntArray4288: IntArray?
-    @JvmField
     var anInt4289: Int = 0
-    @JvmField
     var anInt4290: Int
-    @JvmField
     var anInt4292: Int = 0
-    @JvmField
     var aClass318_Sub1Array4293: Array<Class318_Sub1?>? = null
-    @JvmField
     var anInt4296: Int = 0
-    @JvmField
     var anInt4298: Int = 0
 
     @JvmStatic

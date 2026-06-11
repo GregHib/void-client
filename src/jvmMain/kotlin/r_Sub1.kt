@@ -4,15 +4,10 @@ import IOException_Sub1.Companion.method131
 * Visit http://jode.sourceforge.net/
 */
 class r_Sub1(var_ha_Sub3: ha_Sub3?, i: Int, i_19_: Int) : r() {
-    @JvmField
     var anInt10466: Int = 0
-    @JvmField
     var anInt10467: Int = 0
-    @JvmField
     var anInt10468: Int = 0
-    @JvmField
     var aByteArray10471: ByteArray
-    @JvmField
     var anInt10474: Int = 0
     fun method3286(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         this.anInt10466 = i - i_3_
@@ -354,23 +349,14 @@ class r_Sub1(var_ha_Sub3: ha_Sub3?, i: Int, i_19_: Int) : r() {
     }
 
     companion object {
-        @JvmField
         var anInt10469: Int = 0
-        @JvmField
         var anInt10470: Int = 0
-        @JvmField
         var anInt10472: Int = 0
-        @JvmField
         var anInt10473: Int = 0
-        @JvmField
         var anInt10475: Int = 0
-        @JvmField
         var anInt10476: Int = 0
-        @JvmField
         var aClass351_10477: Class351? = Class351(22, 7)
-        @JvmField
         var anIntArray10478: IntArray? = IntArray(1)
-        @JvmField
         var aClass262_10479: Class262?
 
         @JvmStatic

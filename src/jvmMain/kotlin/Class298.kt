@@ -8,7 +8,6 @@ object Class298 {
     var anInt3808: Int = 0
     var aClass114_3809: Class114? = Class114(44, 6)
     var anInt3810: Int = 0
-    @JvmField
     var aBoolean3811: Boolean = false
 
     fun method2250(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Int {

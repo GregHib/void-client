@@ -2,11 +2,9 @@ import Class16.method260
 import java.io.File
 
 class Class166 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
-    @JvmField
     var aClass45_2180: Class45? = null
     private val aClass60_2185 = Class60(64)
     private val aClass45_2188: Class45?
-    @JvmField
     var aClass60_2190: Class60? = Class60(2)
 
     fun method1283(i: Int) {
@@ -81,7 +79,6 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
         var aClass114_2183: Class114? = Class114(0, -1)
         var anInt2184: Int = 0
         var anInt2186: Int = 0
-        @JvmField
         var aClass262_2187: Class262? = Class262()
         var anInt2189: Int = 0
         @JvmStatic

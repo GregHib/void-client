@@ -320,31 +320,18 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
     }
 
     companion object {
-        @JvmField
         var anInt270: Int = 0
-        @JvmField
         var anInt271: Int = 0
-        @JvmField
         var anInt272: Int = 0
-        @JvmField
         var anInt273: Int = 0
-        @JvmField
         var anInt274: Int = 0
-        @JvmField
         var anInt277: Int = 0
-        @JvmField
         var anInt278: Int = 0
-        @JvmField
         var anIntArray279: IntArray? = IntArray(2048)
-        @JvmField
         var anInt280: Int = 0
-        @JvmField
         var anInt282: Int = 0
-        @JvmField
         var anInt283: Int = 0
-        @JvmField
         var anInt288: Int = 0
-        @JvmField
         var anInt291: Int = 0
         fun method271(i: Int, class46: Class46, i_0_: Byte, i_1_: Int) {
             anInt278++

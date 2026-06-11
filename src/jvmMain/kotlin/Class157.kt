@@ -7,7 +7,6 @@ import Class239_Sub16.Companion.method1788
 object Class157 {
     var anInt2121: Int = 0
     var anInt2122: Int = 0
-    @JvmField
     var aClass101_2123: Class101? = null
 
     fun method1244(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2) {

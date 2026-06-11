@@ -30,9 +30,7 @@ class Class337 internal constructor(var_ha_Sub2: ha_Sub2?, l: Long, class242s: A
             arrayOf<FloatArray?>(floatArrayOf(-0.333333f, -0.333333f, -0.333333f), floatArrayOf(0.333333f, -0.333333f, -0.333333f), floatArrayOf(-0.333333f, 0.333333f, -0.333333f), floatArrayOf(0.333333f, 0.333333f, -0.333333f), floatArrayOf(-0.333333f, -0.333333f, 0.333333f), floatArrayOf(0.333333f, -0.333333f, 0.333333f), floatArrayOf(-0.333333f, 0.333333f, 0.333333f), floatArrayOf(0.333333f, 0.333333f, 0.333333f))
         var anInt4175: Int = 0
         var anInt4176: Int = 0
-        @JvmField
         var anObject4177: Any? = null
-        @JvmField
         var anInt4179: Int = -1
         var anInt4180: Int = 0
 

@@ -3,7 +3,7 @@ import java.lang.reflect.Field
 import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.Method
 
-class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: ByteArray?) : Class348() {
+class Class348_Sub33 internal constructor(var anInt6958: Int, `is`: ByteArray?) : Class348() {
     var aBooleanArray6954: BooleanArray?
     var anIntArray6957: IntArray?
     var anIntArrayArray6959: Array<IntArray?>?
@@ -51,12 +51,10 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
         var aClass152_6955: Class152? = Class152()
         var anInt6956: Int = 0
         var anInt6961: Int = 0
-        @JvmField
         var aByteArrayArrayArray6962: Array<Array<ByteArray?>?>? = null
         var aLong6963: Long = 0L
         var anInt6964: Int = 0
         var aLong6966: Long
-        @JvmField
         var anInt6967: Int = 0
 
         @JvmStatic

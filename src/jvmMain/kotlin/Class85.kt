@@ -166,19 +166,12 @@ class Class85 {
     }
 
     companion object {
-        @JvmField
         var anInt1461: Int = 0
-        @JvmField
         var anInt1462: Int = 0
-        @JvmField
         var anInt1464: Int = 0
-        @JvmField
         var anInt1466: Int = 0
-        @JvmField
         var anInt1467: Int = 0
-        @JvmField
         var anInt1470: Int = 0
-        @JvmField
         var anInt1476: Int = 0
 
         @JvmStatic

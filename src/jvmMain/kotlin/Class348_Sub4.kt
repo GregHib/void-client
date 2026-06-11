@@ -16,7 +16,6 @@ class Class348_Sub4 : Class348 {
     private val anInt6606 = 0
     private var aBoolean6607 = false
     private var aBoolean6608 = false
-    @JvmField
     var anInt6609: Int = 0
     private var aString6610: String? = null
     private var anInt6612 = 0
@@ -169,17 +168,11 @@ class Class348_Sub4 : Class348 {
     }
 
     companion object {
-        @JvmField
         var anInt6593: Int = 0
-        @JvmField
         var anInt6600: Int = 0
-        @JvmField
         var aClass248_6601: Class248? = null
-        @JvmField
         var aClass173_6602: Class173? = Class173()
-        @JvmField
         var anInt6611: Int = 0
-        @JvmField
         var anInt6615: Int = 0
         @JvmStatic
         fun method2748(i: Int) {

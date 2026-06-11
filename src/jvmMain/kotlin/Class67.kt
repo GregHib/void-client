@@ -42,17 +42,11 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
     }
 
     companion object {
-        @JvmField
         var anInt4642: Int = 0
-        @JvmField
         var aClass105_4643: Class105? = null
-        @JvmField
         var anInt4644: Int = 0
-        @JvmField
         var anInt4645: Int = 0
-        @JvmField
         var anInt4647: Int = 0
-        @JvmField
         var anIntArray4648: IntArray? = IntArray(14)
         @JvmStatic
         fun method716(i: Int) {

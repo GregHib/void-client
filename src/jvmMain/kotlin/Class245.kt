@@ -3,7 +3,6 @@
 */
 object Class245 {
     private var anIntArray3169: IntArray? = IntArray(3)
-    @JvmField
     var anInt3170: Int = 0
     var anInt3171: Int = 0
     var aFloat3172: Float = 0f

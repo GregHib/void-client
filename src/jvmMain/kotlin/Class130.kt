@@ -3,19 +3,12 @@
  */
 abstract class Class130 {
     companion object {
-        @JvmField
         var aClass60_1894: Class60? = Class60(5)
-        @JvmField
         var aClass356_1895: Class356? = Class356(64)
-        @JvmField
         var anInt1896: Int = 0
-        @JvmField
         var aClass45_1897: Class45? = null
-        @JvmField
         var anInt1898: Int = 0
-        @JvmField
         var aBoolean1899: Boolean = false
-        @JvmField
         var aBoolean1900: Boolean = false
 
         @JvmStatic

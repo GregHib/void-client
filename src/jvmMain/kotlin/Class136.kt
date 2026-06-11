@@ -28,16 +28,13 @@ class Class136 internal constructor(class45: Class45?, string: String?) : Interf
     }
 
     companion object {
-        @JvmField
         var aClass65_4787: Class65? = null
         var anInt4790: Int = 0
-        @JvmField
         var aShortArrayArray4791: Array<ShortArray?>? = null
         var anInt4792: Int = 0
         var anInt4793: Int = 1405
         var anInt4794: Int = 0
         var anInt4795: Int = 0
-        @JvmField
         var aClass45_4796: Class45? = null
 
         @JvmStatic

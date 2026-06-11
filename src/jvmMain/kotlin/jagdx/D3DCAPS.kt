@@ -42,7 +42,6 @@ class D3DCAPS {
 
     private val MaxVertexBlendMatrixIndex = 0
 
-    @JvmField
     var MaxSimultaneousTextures: Int = 0
 
     private val GuardBandLeft = 0f
@@ -55,34 +54,28 @@ class D3DCAPS {
 
     private val MaxTextureWidth = 0
 
-    @JvmField
     var DevCaps: Int = 0
 
     private val MaxPrimitiveCount = 0
 
     private val Caps2 = 0
 
-    @JvmField
     var SrcBlendCaps: Int = 0
 
     private val Caps = 0
 
-    @JvmField
     var RasterCaps: Int = 0
 
     private val MaxVertexIndex = 0
 
     private val MaxVertexShaderConst = 0
 
-    @JvmField
     var MaxStreams: Int = 0
 
-    @JvmField
     var VertexShaderVersion: Int = 0
 
     private val DeviceType = 0
 
-    @JvmField
     var TextureCaps: Int = 0
 
     private val MaxVolumeExtent = 0
@@ -91,7 +84,6 @@ class D3DCAPS {
 
     private val AdapterOrdinal = 0
 
-    @JvmField
     var TextureOpCaps: Int = 0
 
     private val TextureFilterCaps = 0
@@ -100,12 +92,10 @@ class D3DCAPS {
 
     private val GuardBandRight = 0f
 
-    @JvmField
     var DestBlendCaps: Int = 0
 
     private val FVFCaps = 0
 
-    @JvmField
     var MaxActiveLights: Int = 0
 
     private val MaxTextureBlendStages = 0

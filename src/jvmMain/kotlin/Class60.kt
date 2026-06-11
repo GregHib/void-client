@@ -201,37 +201,21 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
     }
 
     companion object {
-        @JvmField
         var anInt1085: Int = 0
-        @JvmField
         var anInt1087: Int = 0
-        @JvmField
         var anInt1088: Int = 0
-        @JvmField
         var anInt1090: Int = 0
-        @JvmField
         var anInt1091: Int = 0
-        @JvmField
         var anInt1092: Int = 0
-        @JvmField
         var anInt1093: Int = 0
-        @JvmField
         var anInt1094: Int = 0
-        @JvmField
         var anInt1095: Int = 0
-        @JvmField
         var anInt1096: Int = 0
-        @JvmField
         var anInt1097: Int = 0
-        @JvmField
         var aHa1098: ha? = null
-        @JvmField
         var anInt1099: Int = 0
-        @JvmField
         var anInt1101: Int = 0
-        @JvmField
         var anInt1102: Int = 0
-        @JvmField
         var anInt1103: Int = 0
 
         fun method576(i: Int, i_1_: Int): Boolean {

@@ -144,29 +144,17 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
     }
 
     companion object {
-        @JvmField
         var aClass45_6277: Class45? = null
-        @JvmField
         var anInt6279: Int = 0
-        @JvmField
         var anInt6280: Int = 0
-        @JvmField
         var anInt6281: Int = 0
-        @JvmField
         var anInt6282: Int = 0
-        @JvmField
         var anInt6283: Int = 0
-        @JvmField
         var anInt6286: Int = 0
-        @JvmField
         var anInt6287: Int = 0
-        @JvmField
         var anInt6288: Int = 0
-        @JvmField
         var aBoolean6289: Boolean = false
-        @JvmField
         var anIntArray6290: IntArray? = IntArray(2048)
-        @JvmField
         var anInt6291: Int = 0
 
         @JvmStatic

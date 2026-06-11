@@ -4,27 +4,16 @@ import Class121.method1084
 * Visit http://jode.sourceforge.net/
 */
 class Class125 internal constructor(i: Int, class221: Class221?, class341: Class341?, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) : Interface12 {
-    @JvmField
     var anInt4913: Int = 0
-    @JvmField
     var aBoolean4914: Boolean = false
-    @JvmField
     var anInt4917: Int = 0
-    @JvmField
     var anInt4918: Int = 0
-    @JvmField
     var anInt4920: Int = 0
-    @JvmField
     var aClass221_4922: Class221? = null
-    @JvmField
     var anInt4923: Int = 0
-    @JvmField
     var anInt4924: Int = 0
-    @JvmField
     var aClass341_4925: Class341? = null
-    @JvmField
     var anInt4928: Int = 0
-    @JvmField
     var anInt4929: Int = 0
     override fun method51(i: Byte): Class223? {
         if (i <= 116) return null
@@ -51,18 +40,12 @@ class Class125 internal constructor(i: Int, class221: Class221?, class341: Class
     }
 
     companion object {
-        @JvmField
         var aClass356_4915: Class356?
-        @JvmField
         var anInt4916: Int = 0
         var anInt4919: Int = 0
-        @JvmField
         var aClass323_4921: Class323? = null
-        @JvmField
         var anInt4926: Int = 0
-        @JvmField
         var anInt4927: Int = 0
-        @JvmField
         var anInt4930: Int = 0
 
         @JvmStatic

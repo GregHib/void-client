@@ -181,25 +181,15 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
     }
 
     companion object {
-        @JvmField
         var anInt6306: Int = 0
-        @JvmField
         var anInt6307: Int = 0
-        @JvmField
         var anInt6309: Int = 0
-        @JvmField
         var anInt6311: Int = 0
-        @JvmField
         var anInt6312: Int = 0
-        @JvmField
         var anInt6313: Int = 0
-        @JvmField
         var anInt6314: Int = 0
-        @JvmField
         var anInt6315: Int = 0
-        @JvmField
         var anInt6318: Int = 0
-        @JvmField
         var anInt6319: Int = 0
 
         @JvmStatic

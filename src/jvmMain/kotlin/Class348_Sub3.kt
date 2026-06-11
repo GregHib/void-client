@@ -180,31 +180,18 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: s_Sub3, var a
     }
 
     companion object {
-        @JvmField
         var anInt6568: Int = 0
-        @JvmField
         var anInt6570: Int = 0
-        @JvmField
         var anInt6576: Int = 0
-        @JvmField
         var anInt6578: Int = 0
-        @JvmField
         var anInt6579: Int = 0
-        @JvmField
         var anInt6580: Int = 0
-        @JvmField
         var aClass323_6581: Class323? = null
-        @JvmField
         var anInt6583: Int = 0
-        @JvmField
         var aClass114_6584: Class114? = null
-        @JvmField
         var anInt6585: Int = 0
-        @JvmField
         var aFloat6586: Float = 0f
-        @JvmField
         var anInt6587: Int = 0
-        @JvmField
         var anInt6588: Int = 0
         @JvmStatic
         fun method2738(i: Byte) {

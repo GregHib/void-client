@@ -2,19 +2,12 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class71 {
-    @JvmField
     var aClass76_1208: Class76?
-    @JvmField
     var anInt1209: Int = 0
-    @JvmField
     var aClass76_1210: Class76?
-    @JvmField
     var aBoolean1211: Boolean = false
-    @JvmField
     var aClass209_1212: Class209?
-    @JvmField
     var aClass138_1213: Class138?
-    @JvmField
     var aBooleanArray1214: BooleanArray?
 
     @JvmStatic

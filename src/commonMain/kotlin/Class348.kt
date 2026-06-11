@@ -2,11 +2,8 @@
 * Visit http://jode.sourceforge.net/
 */
 open class Class348 {
-    @JvmField
     var aLong4291: Long = 0
-    @JvmField
     var aClass348_4294: Class348? = null
-    @JvmField
     var aClass348_4295: Class348? = null
     fun method2712(i: Byte): Boolean {
         if (i.toInt() != 4) return true
@@ -26,9 +23,7 @@ open class Class348 {
     }
 
     companion object {
-        @JvmField
         var anInt4285: Int = 0
-        @JvmField
         var anInt4297: Int = 0
     }
 }

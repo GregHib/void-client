@@ -1,7 +1,7 @@
 /* Class120 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class120 internal constructor(@JvmField var anInt4912: Int) : Interface12 {
+class Class120 internal constructor(var anInt4912: Int) : Interface12 {
     override fun method51(i: Byte): Class223? {
         if (i < 116) method1080(81, 13, -51, -26)
         anInt4909++
@@ -9,11 +9,8 @@ class Class120 internal constructor(@JvmField var anInt4912: Int) : Interface12 
     }
 
     companion object {
-        @JvmField
         var anInt4908: Int = 0
-        @JvmField
         var anInt4909: Int = 0
-        @JvmField
         var anInt4910: Int = 0
         var anInt4911: Int = -1
         fun method1080(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {

@@ -3,7 +3,7 @@ import Class348_Sub40_Sub5.Companion.method3060
 /* Class348_Sub44 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class348_Sub44 internal constructor(@JvmField var anInt7098: Int, @JvmField var anInt7093: Int) : Class348() {
+class Class348_Sub44 internal constructor(var anInt7098: Int, var anInt7093: Int) : Class348() {
     fun method3301(i: Int, bool: Boolean): Boolean {
         anInt7091++
         if (bool != false) anInt7092 = 29

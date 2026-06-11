@@ -11,12 +11,10 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
     private val anInt1612: Int
     private val anInt1613: Int
     private val aHa_Sub2_1616: ha_Sub2?
-    @JvmField
     var aByteArray1617: ByteArray
     private val anInt1618: Int
     private val aS_Sub2_1622: s_Sub2?
     private var aClass232ArrayArray1623: Array<Array<Class232?>>? = null
-    @JvmField
     var anInt1624: Int = 0
     private val anInt1625: Int
     fun method951(var_r: r, i: Int, i_0_: Int, i_1_: Int) {
@@ -294,28 +292,17 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
     }
 
     companion object {
-        @JvmField
         var anInt1610: Int = 0
-        @JvmField
         var anInt1611: Int = 0
-        @JvmField
         var anInt1614: Int = 0
-        @JvmField
         var anInt1615: Int = 0
-        @JvmField
         var anInt1619: Int = 0
-        @JvmField
         var aClass221_1620: Class221? = Class221()
-        @JvmField
         var anInt1621: Int = 0
         var anIntArray1626: IntArray? = IntArray(1)
-        @JvmField
         var aClass45_1627: Class45? = null
-        @JvmField
         var anInt1628: Int = 0
-        @JvmField
         var anInt1629: Int = 0
-        @JvmField
         var anInt1630: Int = 0
 
         @JvmStatic

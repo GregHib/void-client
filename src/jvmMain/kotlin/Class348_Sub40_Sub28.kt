@@ -109,15 +109,10 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
     }
 
     companion object {
-        @JvmField
         var anInt9361: Int = 0
-        @JvmField
         var anInt9363: Int = 0
-        @JvmField
         var aClass45_9365: Class45? = null
-        @JvmField
         var anInt9366: Int = 0
-        @JvmField
         var anInt9370: Int = 0
 
         fun method3122(i: Byte): Array<Class364?> {

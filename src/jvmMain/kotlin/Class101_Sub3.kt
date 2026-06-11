@@ -6,11 +6,8 @@ import Class369_Sub1.Companion.method3570
 class Class101_Sub3 : Class101() {
     var aFloat5747: Float = 0f
     var aFloat5750: Float = 0f
-    @JvmField
     var aFloat5751: Float = 0f
-    @JvmField
     var aFloat5754: Float = 0f
-    @JvmField
     var aFloat5756: Float = 0f
     var aFloat5761: Float = 0f
     var aFloat5762: Float = 0f
@@ -18,7 +15,6 @@ class Class101_Sub3 : Class101() {
     var aFloat5770: Float = 0f
     var aFloat5772: Float = 0f
     var aFloat5781: Float = 0f
-    @JvmField
     var aFloat5784: Float = 0f
     override fun method902(i: Int) {
         anInt5779++
@@ -388,61 +384,33 @@ class Class101_Sub3 : Class101() {
     }
 
     companion object {
-        @JvmField
         var anInt5746: Int = 0
-        @JvmField
         var anInt5748: Int = 0
-        @JvmField
         var anInt5749: Int = 0
-        @JvmField
         var anInt5752: Int = 0
-        @JvmField
         var anInt5753: Int = 0
-        @JvmField
         var anInt5755: Int = 0
-        @JvmField
         var anInt5757: Int = 0
-        @JvmField
         var anInt5758: Int = 0
-        @JvmField
         var anInt5759: Int = 0
-        @JvmField
         var anInt5760: Int = 0
-        @JvmField
         var anInt5763: Int = 0
-        @JvmField
         var aClass326_5764: Class326? = null
-        @JvmField
         var anInt5765: Int = 0
-        @JvmField
         var anInt5766: Int = 0
-        @JvmField
         var anInt5767: Int = 0
-        @JvmField
         var anInt5768: Int = 0
-        @JvmField
         var anInt5771: Int = 0
-        @JvmField
         var anInt5773: Int = 0
-        @JvmField
         var anInt5774: Int = 0
-        @JvmField
         var anInt5775: Int = 0
-        @JvmField
         var anInt5776: Int = 0
-        @JvmField
         var anInt5777: Int = 0
-        @JvmField
         var anInt5778: Int = 0
-        @JvmField
         var anInt5779: Int = 0
-        @JvmField
         var anInt5780: Int = 0
-        @JvmField
         var anInt5782: Int = 0
-        @JvmField
         var anInt5783: Int = 0
-        @JvmField
         var anInt5785: Int = 0
 
         @JvmStatic

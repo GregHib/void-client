@@ -821,10 +821,8 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
         var anInt5816: Int = 0
         var anInt5817: Int = 0
         var anInt5818: Int = 0
-        @JvmField
         var anInt5819: Int = 0
         var anInt5820: Int = 0
-        @JvmField
         var aClass341_5821: Class341? = Class341()
         var anInt5822: Int = 0
         var anInt5823: Int = 0

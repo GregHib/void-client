@@ -311,7 +311,6 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
         var aDouble9531: Double = 0.0
         var anInt9532: Int = 0
         var aClass351_9533: Class351?
-        @JvmField
         var anInterface6Array9534: Array<Interface6?>? = arrayOfNulls<Interface6>(128)
 
         @JvmStatic

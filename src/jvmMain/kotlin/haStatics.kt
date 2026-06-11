@@ -8,7 +8,6 @@ import java.awt.Canvas
  * Extracted so ha itself can live in commonMain.
  */
 object haStatics {
-    @JvmField
     var aClass351_4571: Class351? = Class351(73, -1)
 
     @JvmStatic

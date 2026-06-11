@@ -22,11 +22,8 @@ abstract class Class241 {
     abstract fun method1862(i: Int): Long
 
     companion object {
-        @JvmField
         var anInt3148: Int = 0
-        @JvmField
         var anInt3149: Int = 0
-        @JvmField
         var aClass351_3150: Class351? = Class351(71, 2)
 
         @JvmStatic

@@ -1,15 +1,10 @@
 import java.awt.Canvas
 
 abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Array<IntArray?>) {
-    @JvmField
     var anIntArrayArray4584: Array<IntArray?>
-    @JvmField
     var anInt4587: Int
-    @JvmField
     var anInt4588: Int
-    @JvmField
     var anInt4590: Int
-    @JvmField
     var anInt4592: Int
     abstract fun method3978(i: Int, i_0_: Int, `is`: IntArray, is_1_: IntArray, is_2_: IntArray, is_3_: IntArray, is_4_: IntArray, is_5_: IntArray, is_6_: IntArray, is_7_: IntArray, is_8_: IntArray, is_9_: IntArray, is_10_: IntArray, i_11_: Int, i_12_: Int, i_13_: Int, bool: Boolean)
 
@@ -71,15 +66,10 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
     abstract fun fa(i: Int, i_66_: Int, var_r: r?): r?
 
     companion object {
-        @JvmField
         var aClass45_4585: Class45? = null
-        @JvmField
         var anInt4586: Int = 0
-        @JvmField
         var anInt4589: Int = 0
-        @JvmField
         var anInt4591: Int = 0
-        @JvmField
         var anInt4593: Int = 0
 
         @JvmStatic

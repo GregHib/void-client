@@ -4,15 +4,10 @@ import Class239_Sub16.Companion.method1791
 * Visit http://jode.sourceforge.net/
 */
 object Class11 {
-    @JvmField
     var anInt193: Int = 0
-    @JvmField
     var anInt194: Int = 0
-    @JvmField
     var anInt195: Int = 0
-    @JvmField
     var aClass231_196: Class231? = null
-    @JvmField
     var anInt197: Int = 0
 
     @JvmStatic

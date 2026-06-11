@@ -58,27 +58,16 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
     }
 
     companion object {
-        @JvmField
         var anInt361: Int = 0
-        @JvmField
         var anInt362: Int = 0
-        @JvmField
         var anInt363: Int = 0
-        @JvmField
         var aClass351_364: Class351? = Class351(12, 3)
-        @JvmField
         var anInt365: Int = 0
-        @JvmField
         var aClass105Array367: Array<Class105?>? = null
-        @JvmField
         var aBoolean368: Boolean = false
-        @JvmField
         var anIntArray369: IntArray? = null
-        @JvmField
         var anInt370: Int = 0
-        @JvmField
         var anInt371: Int = 0
-        @JvmField
         var anInt372: Int = 0
 
         @JvmStatic

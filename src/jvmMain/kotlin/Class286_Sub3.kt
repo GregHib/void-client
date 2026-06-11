@@ -163,31 +163,18 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
     }
 
     companion object {
-        @JvmField
         var anInt6214: Int = 0
-        @JvmField
         var anInt6215: Int = 0
-        @JvmField
         var anInt6216: Int = 0
-        @JvmField
         var anInt6217: Int = 0
-        @JvmField
         var aCalendar6221: CalendarShim? = CalendarShim.gmt()
-        @JvmField
         var anInt6223: Int = 0
-        @JvmField
         var anInt6224: Int = 0
-        @JvmField
         var anInt6226: Int = 0
-        @JvmField
         var anIntArray6228: IntArray? = null
-        @JvmField
         var anInt6229: Int = 0
-        @JvmField
         var anInt6230: Int = 0
-        @JvmField
         var anInt6231: Int = 0
-        @JvmField
         var anInt6232: Int = 0
 
         @JvmStatic

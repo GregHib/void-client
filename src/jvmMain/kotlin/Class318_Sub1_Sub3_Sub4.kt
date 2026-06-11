@@ -188,10 +188,8 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
     companion object {
         var anInt10328: Int = 0
         var anInt10329: Int = 0
-        @JvmField
         var aClass338Array10330: Array<Class338?>? = null
         var anInt10333: Int = 0
-        @JvmField
         var aClass46_10336: Class46? = null
         var anInt10337: Int = 0
         var anInt10340: Int = 0
@@ -212,7 +210,6 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
         var anInt10361: Int = 0
         var anInt10362: Int = 0
         var anInt10363: Int = 0
-        @JvmField
         var anInt10364: Int = 0
 
         fun method2461(class318_sub6: Class318_Sub6, bool: Boolean) {

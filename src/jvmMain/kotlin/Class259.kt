@@ -35,14 +35,10 @@ class Class259 internal constructor(class230: Class230?, i: Int, class45: Class4
     }
 
     companion object {
-        @JvmField
         var aByteArray3300: ByteArray? = ByteArray(2048)
-        @JvmField
         var aClass60_3301: Class60? = Class60(30)
         var anInt3302: Int = 0
-        @JvmField
         var aClass305_3304: Class305? = null
-        @JvmField
         var anInt3306: Int = 0
 
         @JvmStatic

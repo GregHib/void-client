@@ -284,11 +284,9 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_S
     }
 
     companion object {
-        @JvmField
         var anInt6930: Int = 0
         var anInt6931: Int = 0
         var anInt6933: Int = 0
-        @JvmField
         var anInt6938: Int = 0
         var anInt6939: Int = 0
         var anInt6941: Int = 0

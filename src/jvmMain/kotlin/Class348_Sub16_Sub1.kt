@@ -133,29 +133,17 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
     }
 
     companion object {
-        @JvmField
         var anInt8845: Int = 0
-        @JvmField
         var anInt8846: Int = 0
-        @JvmField
         var anInt8847: Int = 0
-        @JvmField
         var anInt8849: Int = 0
-        @JvmField
         var anInt8850: Int = 0
-        @JvmField
         var anInt8851: Int = 0
-        @JvmField
         var aClass74_8853: Class74? = Class74(11, 8)
-        @JvmField
         var anInt8854: Int = 0
-        @JvmField
         var anInt8856: Int = 0
-        @JvmField
         var aClass351_8857: Class351? = Class351(54, 15)
-        @JvmField
         var anInt8858: Int = 0
-        @JvmField
         var anInt8859: Int = 0
 
         fun method2822(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2, i_3_: Int) {

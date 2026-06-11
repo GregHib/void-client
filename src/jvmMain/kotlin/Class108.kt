@@ -5,22 +5,14 @@ import Class89.Companion.method850
 * Visit http://jode.sourceforge.net/
 */
 object Class108 {
-    @JvmField
     var anInt1656: Int = 0
-    @JvmField
     var aClass364_1657: Class364? = Class364("WTWIP", 3)
-    @JvmField
     var anInt1658: Int = 0
-    @JvmField
     var anInt1659: Int = 0
-    @JvmField
     var anInt1660: Int = 0
     var aBoolean1661: Boolean = true
-    @JvmField
     var aClass304_1662: Class304? = Class304(4)
-    @JvmField
     var anInt1663: Int = 0
-    @JvmField
     var aClass105_1664: Class105? = null
 
     fun method1012(f: Float, f_0_: Float, f_1_: Float, f_2_: Float, i: Int, f_3_: Float, i_4_: Byte, f_5_: Float): Float {

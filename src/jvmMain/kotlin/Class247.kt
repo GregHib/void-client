@@ -5,10 +5,8 @@ import Class224.method1617
 */
 object Class247 {
     var anInt3180: Int = 0
-    @JvmField
     var aClass21_3181: Class21? = Class21()
     var aDouble3182: Double = 0.0
-    @JvmField
     var aClass45_3183: Class45? = null
     var anInt3184: Int = 0
 

@@ -2,11 +2,8 @@
 * Visit http://jode.sourceforge.net/
 */
 class Class146 {
-    @JvmField
     var anInt2016: Int = 0
-    @JvmField
     var anInt2019: Int = 0
-    @JvmField
     var anInt2020: Int = 0
 
     fun method1191(i: Int, class348_sub49: Class348_Sub49) {
@@ -32,10 +29,8 @@ class Class146 {
 
     companion object {
         var anInt2012: Int = 0
-        @JvmField
         var aLongArray2013: LongArray? = LongArray(10)
         var anInt2014: Int = 0
-        @JvmField
         var aClass45_2015: Class45? = null
         var anInt2017: Int = 0
         var anInt2018: Int = 0

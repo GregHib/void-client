@@ -1,7 +1,6 @@
 import jaclib.memory.heap.NativeHeap
 
 class za_Sub1(i: Int) : za() {
-    @JvmField
     var aNativeHeap9770: NativeHeap
 
     init {
@@ -15,17 +14,11 @@ class za_Sub1(i: Int) : za() {
     }
 
     companion object {
-        @JvmField
         var anInt9771: Int = 0
-        @JvmField
         var anInt9772: Int = 0
-        @JvmField
         var aClass113_9773: Class113? = Class113()
-        @JvmField
         var anInt9774: Int = 0
-        @JvmField
         var anInt9775: Int = -1
-        @JvmField
         var anInt9776: Int = 0
 
         @JvmStatic

@@ -4,7 +4,6 @@ import Class239_Sub2.Companion.method1725
 * Visit http://jode.sourceforge.net/
 */
 abstract class Class318_Sub1_Sub1 internal constructor(i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : Class318_Sub1() {
-    @JvmField
     var aShort8727: Short
     override fun method2382(i: Byte): Boolean {
         if (i > -51) aClass351_8724 = null
@@ -34,19 +33,12 @@ abstract class Class318_Sub1_Sub1 internal constructor(i: Int, i_4_: Int, i_5_: 
     }
 
     companion object {
-        @JvmField
         var anInt8721: Int = 0
-        @JvmField
         var anInt8722: Int = 0
-        @JvmField
         var anInt8723: Int = 0
-        @JvmField
         var aClass351_8724: Class351? = Class351(50, -1)
-        @JvmField
         var aFloat8725: Float = 0f
-        @JvmField
         var anInt8726: Int = 0
-        @JvmField
         var aLong8728: Long = 0
 
         @JvmStatic

@@ -8,19 +8,12 @@
  * names and @JvmStatic so call sites read `Class348_Sub45Statics.xxx`.
  */
 object Class348_Sub45Statics {
-    @JvmField
     var anInt7102: Int = 1400
-    @JvmField
     var aClass304_7103: Class304? = Class304(3)
-    @JvmField
     var anInt7104: Int = 0
-    @JvmField
     var aClass114_7105: Class114? = Class114(101, 20)
-    @JvmField
     var aClass114_7106: Class114? = Class114(36, -2)
-    @JvmField
     var aClass105Array7107: Array<Class105?>? = null
-    @JvmField
     var aClass361Array7108: Array<Class361?>? = arrayOfNulls<Class361>(4)
 
     @JvmStatic

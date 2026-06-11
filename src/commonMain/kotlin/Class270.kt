@@ -6,7 +6,6 @@ class Class270 {
 
     companion object {
         var anIntArray3464: IntArray? = IntArray(6)
-        @JvmField
         var anInt3465: Int = 0
 
         @JvmStatic

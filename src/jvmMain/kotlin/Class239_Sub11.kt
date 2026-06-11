@@ -37,27 +37,16 @@ class Class239_Sub11 : Class239 {
     }
 
     companion object {
-        @JvmField
         var aClass114_5949: Class114? = Class114(69, 12)
-        @JvmField
         var aClass114_5950: Class114?
-        @JvmField
         var anInt5951: Int = 1339
-        @JvmField
         var anInt5952: Int = 0
-        @JvmField
         var anInt5953: Int = 0
-        @JvmField
         var anInt5954: Int = 0
-        @JvmField
         var anInt5955: Int = 0
-        @JvmField
         var anInt5956: Int = 0
-        @JvmField
         var anInt5957: Int = 0
-        @JvmField
         var anInt5958: Int = 0
-        @JvmField
         var anInt5959: Int
 
         @JvmStatic

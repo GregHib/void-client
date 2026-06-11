@@ -1,9 +1,7 @@
 object Class275 {
     var aHashtable3548: HashMap<Any?, Any?>? = HashMap<Any?, Any?>()
     var anInt3549: Int = 0
-    @JvmField
     var anInt3550: Int = 0
-    @JvmField
     var anIntArray3551: IntArray?
     var anIntArray3552: IntArray? = IntArray(5)
     var anInt3553: Int = 0

@@ -9,7 +9,6 @@ import r.Companion.method3284
 * Visit http://jode.sourceforge.net/
 */
 class Class107 {
-    @JvmField
     var aClass348_Sub42_1647: Class348_Sub42 = Class348_Sub42()
     private var aClass348_Sub42_1652: Class348_Sub42? = null
     fun method1002(i: Int): Int {
@@ -85,27 +84,17 @@ class Class107 {
     }
 
     companion object {
-        @JvmField
         var anInt1642: Int = 0
-        @JvmField
         var anInt1643: Int = 0
-        @JvmField
         var anInt1644: Int = 0
         var anInt1645: Int = -2
-        @JvmField
         var anInt1646: Int = 0
-        @JvmField
         var anInt1648: Int = 0
-        @JvmField
         var anInt1649: Int = 0
         var anIntArray1650: IntArray? = IntArray(1000)
-        @JvmField
         var anInt1651: Int = 0
-        @JvmField
         var anInt1653: Int = 0
-        @JvmField
         var anInt1654: Int = 0
-        @JvmField
         var anInt1655: Int = 0
 
         @JvmStatic

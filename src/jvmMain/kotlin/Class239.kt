@@ -31,29 +31,17 @@ abstract class Class239 {
     }
 
     companion object {
-        @JvmField
         var anInt3134: Int = 0
-        @JvmField
         var aClass114_3135: Class114? = Class114(108, 5)
-        @JvmField
         var anInt3137: Int = 0
-        @JvmField
         var anInt3139: Int = 0
-        @JvmField
         var anInt3140: Int = 0
-        @JvmField
         var anInt3141: Int = 0
-        @JvmField
         var anInt3142: Int = 0
-        @JvmField
         var aClass114_3143: Class114?
-        @JvmField
         var aByteArray3144: ByteArray? = ByteArray(520)
-        @JvmField
         var aClass114_3145: Class114? = null
-        @JvmField
         var aClass45_3146: Class45? = null
-        @JvmField
         var aClass166_3147: Class166? = null
 
         @JvmStatic

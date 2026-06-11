@@ -10,28 +10,17 @@ class Class69 {
     }
 
     companion object {
-        @JvmField
         var anInt1191: Int = 0
-        @JvmField
         var anInt1192: Int = 0
-        @JvmField
         var anInt1193: Int = 0
-        @JvmField
         var anInt1194: Int = 0
-        @JvmField
         var aClass69_1195: Class69? = Class69()
-        @JvmField
         var anInt1196: Int = 0
-        @JvmField
         var aClass69_1197: Class69? = Class69()
-        @JvmField
         var aClass69_1198: Class69? = Class69()
-        @JvmField
         var aClass69_1199: Class69? = Class69()
-        @JvmField
         var anInt1200: Int = 0
         var aClass173_1201: Class173? = Class173()
-        @JvmField
         var anInt1202: Int = 0
 
         fun method720(i: Int, i_0_: Int) {

@@ -262,12 +262,10 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
         var anInt6438: Int = 0
         var anInt6440: Int = 0
         var anInt6442: Int = 0
-        @JvmField
         var aClass351_6443: Class351? = Class351(68, 2)
         var anInt6445: Int = 0
         var anInt6448: Int = 0
         var anInt6450: Int = 0
-        @JvmField
         var anInt6451: Int = 0
         @JvmStatic
         fun method2508(i: Int) {

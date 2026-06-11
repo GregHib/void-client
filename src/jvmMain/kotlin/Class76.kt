@@ -4,7 +4,6 @@ import Class59_Sub1_Sub1.Companion.method560
 * Visit http://jode.sourceforge.net/
 */
 class Class76 internal constructor(bool: Boolean) {
-    @JvmField
     var aClass243_1282: Class243 = Class243()
     var aBoolean1283: Boolean = false
     fun method774(class318_sub4: Class318_Sub4, i: Int) {
@@ -60,21 +59,13 @@ class Class76 internal constructor(bool: Boolean) {
     }
 
     companion object {
-        @JvmField
         var anInt1278: Int = 0
-        @JvmField
         var aClass364_1279: Class364? = Class364("LOCAL", 4)
-        @JvmField
         var anInt1280: Int = 0
-        @JvmField
         var anInt1281: Int = 0
-        @JvmField
         var anInt1284: Int = 0
-        @JvmField
         var anInt1285: Int = 0
-        @JvmField
         var aClass169_1286: Class169?
-        @JvmField
         var aFloat1287: Float = 1024.0f
         var anInt1288: Int = 0
 

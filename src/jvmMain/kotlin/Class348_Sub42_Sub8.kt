@@ -3,31 +3,21 @@ import Class239.Companion.method1713
 /* Class348_Sub42_Sub8 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class348_Sub42_Sub8 internal constructor(@JvmField var anInt9545: Int) : Class348_Sub42() {
+abstract class Class348_Sub42_Sub8 internal constructor(var anInt9545: Int) : Class348_Sub42() {
     abstract fun method3193(i: Int): Any?
 
     abstract fun method3195(i: Int): Boolean
 
     companion object {
-        @JvmField
         var anInt9546: Int = 0
-        @JvmField
         var anInt9547: Int = 0
-        @JvmField
         var anInt9548: Int = 0
-        @JvmField
         var anInt9549: Int = 0
-        @JvmField
         var aClass114_9550: Class114? = Class114(109, 7)
-        @JvmField
         var anInt9551: Int = 0
-        @JvmField
         var aClass114_9552: Class114? = Class114(72, 0)
-        @JvmField
         var aClass351_9553: Class351? = Class351(36, 7)
-        @JvmField
         var aString9554: String? = null
-        @JvmField
         var aShort9555: Short = 1
 
         @JvmStatic

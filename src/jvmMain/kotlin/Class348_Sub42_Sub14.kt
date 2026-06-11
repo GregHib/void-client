@@ -563,7 +563,6 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
         )
         var anInt9623: Int = 0
         var anInt9624: Int = 0
-        @JvmField
         var anIntArray9626: IntArray? = IntArray(50)
         var anInt9630: Int = 0
         var anInt9633: Int = 0
@@ -571,7 +570,6 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
         var anInt9637: Int = 0
         var anInt9638: Int = 0
         var anInt9641: Int = 0
-        @JvmField
         var aClass243_9642: Class243? = Class243()
         var anInt9645: Int = 1
 

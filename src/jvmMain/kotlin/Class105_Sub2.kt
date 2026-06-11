@@ -527,39 +527,22 @@ class Class105_Sub2 : Class105 {
     }
 
     companion object {
-        @JvmField
         var anInt8424: Int = 0
-        @JvmField
         var anInt8425: Int = 0
-        @JvmField
         var anInt8426: Int = 0
-        @JvmField
         var anInt8428: Int = 0
-        @JvmField
         var anInt8433: Int = 0
-        @JvmField
         var anInt8435: Int = 0
-        @JvmField
         var anInt8436: Int = 0
-        @JvmField
         var anInt8437: Int = 0
-        @JvmField
         var anInt8438: Int = 0
-        @JvmField
         var anInt8439: Int = 0
-        @JvmField
         var anInt8440: Int = 0
-        @JvmField
         var anInt8441: Int = 0
-        @JvmField
         var anInt8442: Int = 0
-        @JvmField
         var anInt8443: Int = 0
-        @JvmField
         var anInt8444: Int = 0
-        @JvmField
         var anInt8445: Int = 0
-        @JvmField
         var anInt8448: Int = 0
         fun method990(c: Char, i: Byte): Char {
             anInt8444++

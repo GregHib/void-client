@@ -59,23 +59,14 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
     }
 
     companion object {
-        @JvmField
         var anInt1138: Int = 0
-        @JvmField
         var anInt1139: Int = 0
-        @JvmField
         var anInt1140: Int = 0
-        @JvmField
         var anInt1142: Int = 0
-        @JvmField
         var anInt1143: Int = 0
-        @JvmField
         var aClass351_1144: Class351?
-        @JvmField
         var aClass110_Sub1Array1146: Array<Class110_Sub1?>? = arrayOfNulls<Class110_Sub1>(0)
-        @JvmField
         var anInt1147: Int = 0
-        @JvmField
         var aClass357ArrayArrayArray1148: Array<Array<Array<Class357?>?>?>? = null
 
         @JvmStatic

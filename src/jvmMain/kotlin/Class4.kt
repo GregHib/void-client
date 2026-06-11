@@ -4,16 +4,13 @@
 class Class4 internal constructor(`is`: ByteArray, class348_sub33: Class348_Sub33?) {
     var anInt126: Int = 0
     var aShortArray128: ShortArray? = null
-    @JvmField
     var aBoolean129: Boolean = false
     var aShortArray130: ShortArray? = null
-    @JvmField
     var aBoolean131: Boolean = false
     var aByteArray132: ByteArray? = null
     var aClass348_Sub33_134: Class348_Sub33? = null
     var aShortArray135: ShortArray? = null
     var aShortArray137: ShortArray? = null
-    @JvmField
     var aBoolean139: Boolean = false
     var aShortArray140: ShortArray? = null
 

@@ -6,15 +6,10 @@ import Class376.Companion.method3616
 * Visit http://jode.sourceforge.net/
 */
 class Class258_Sub3_Sub1 : Class258_Sub3 {
-    @JvmField
     var aFloat9937: Float = 0f
-    @JvmField
     var aFloat9938: Float = 0f
-    @JvmField
     var anInt9939: Int = 0
-    @JvmField
     var anInt9940: Int = 0
-    @JvmField
     var aBoolean9941: Boolean = false
 
     internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int, i_1_: Int, i_2_: Int) : super(var_ha_Sub2, i, i_0_, i_1_, i_2_) {
@@ -128,7 +123,6 @@ class Class258_Sub3_Sub1 : Class258_Sub3 {
     }
 
     companion object {
-        @JvmField
         var anInt9942: Int = 0
 
         @JvmStatic

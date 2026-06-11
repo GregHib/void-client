@@ -2,17 +2,11 @@
 * Visit http://jode.sourceforge.net/
 */
 public open class Class369_Sub3(class221: Class221?, class341: Class341?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) : Class369(class221, class341, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_) {
-    @JvmField
     var anInt8595: Int = 0
-    @JvmField
     var anInt8597: Int = 0
-    @JvmField
     var anInt8599: Int = 0
-    @JvmField
     var anInt8600: Int = 0
-    @JvmField
     var anInt8602: Int = 0
-    @JvmField
     var anInt8603: Int = 0
 
     override fun method51(i: Byte): Class223? {
@@ -35,13 +29,9 @@ public open class Class369_Sub3(class221: Class221?, class341: Class341?, i: Int
     }
 
     companion object {
-        @JvmField
         var anInt8594: Int = 0
-        @JvmField
         var aBooleanArrayArray8596: Array<BooleanArray?>? = null
-        @JvmField
         var anInt8598: Int = 0
-        @JvmField
         var aClass45_8601: Class45? = null
         @JvmStatic
         fun method3573(i: Int) {

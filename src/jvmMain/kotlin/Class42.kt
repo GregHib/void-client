@@ -4,74 +4,45 @@ import Class33.Companion.method340
 * Visit http://jode.sourceforge.net/
 */
 class Class42 {
-    @JvmField
     var aByteArray564: ByteArray = byteArrayOf()
-    @JvmField
     var aString565: String? = null
-    @JvmField
     var anInt566: Int = 0
-    @JvmField
     var anInt567: Int
-    @JvmField
     var anInt568: Int = 0
     var aBoolean569: Boolean = false
-    @JvmField
     var anInt570: Int = -2147483648
-    @JvmField
     var anIntArray572: IntArray = intArrayOf()
     private var anInt573 = -1
-    @JvmField
     var aBoolean574: Boolean = true
-    @JvmField
     var anInt575: Int = -1
-    @JvmField
     var anInt576: Int = 0
-    @JvmField
     var aStringArray577: Array<String?>
-    @JvmField
     var anInt578: Int
-    @JvmField
     var anInt580: Int = 0
-    @JvmField
     var anInt581: Int = 0
-    @JvmField
     var anInt582: Int = 0
     private var anInt583: Int
-    @JvmField
     var anInt584: Int
     private var anInt585 = 0
     private var anInt586 = 0
     private var anInt587 = 0
     private var aClass356_588: Class356? = null
     private var anInt590: Int
-    @JvmField
     var anIntArray591: IntArray? = null
     private var anInt592 = 0
-    @JvmField
     var aClass153_593: Class153? = null
-    @JvmField
     var anInt595: Int
-    @JvmField
     var anInt596: Int
-    @JvmField
     var aString597: String? = null
     private var anInt598: Int
-    @JvmField
     var aBoolean599: Boolean = true
-    @JvmField
     var anInt601: Int
-    @JvmField
     var anInt602: Int = 0
-    @JvmField
     var anInt603: Int = 2147483647
-    @JvmField
     var anInt604: Int = 0
-    @JvmField
     var anInt605: Int
     private var anInt606: Int
-    @JvmField
     var anInt607: Int = 2147483647
-    @JvmField
     var aBoolean609: Boolean = true
     fun method372(i: Int) {
         anInt608++
@@ -263,23 +234,14 @@ class Class42 {
     }
 
     companion object {
-        @JvmField
         var anInt562: Int = 0
-        @JvmField
         var anInt563: Int = 0
-        @JvmField
         var anInt571: Int = 0
-        @JvmField
         var anInt579: Int = 0
-        @JvmField
         var anInt589: Int = 0
-        @JvmField
         var anInt594: Int = 0
-        @JvmField
         var anInt600: Int = 0
-        @JvmField
         var anInt608: Int = 0
-        @JvmField
         var anInt610: Int = 0
     }
 }

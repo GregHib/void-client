@@ -3,19 +3,13 @@
 */
 class Class207 {
     var aByteArray2695: ByteArray? = null
-    @JvmField
     var anInt2696: Int = 0
     lateinit var anIntArray2697: IntArray
-    @JvmField
     var anInt2698: Int = 0
     lateinit var aByteArray2699: ByteArray
-    @JvmField
     var anInt2700: Int = 0
-    @JvmField
     var anInt2701: Int = 0
-    @JvmField
     var anInt2702: Int = 0
-    @JvmField
     var anInt2703: Int = 0
 
     fun method1510(): Int {

@@ -5,10 +5,8 @@ import Class367_Sub1.Companion.method3533
 */
 class Class141 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_4_: Class45?) {
     private var aClass60_1963 = Class60(64)
-    @JvmField
     var aClass45_1965: Class45? = null
     private val aClass45_1971: Class45?
-    @JvmField
     var aClass60_1976: Class60 = Class60(64)
     fun method1173(i: Byte, i_0_: Int): Class218? {
         anInt1964++
@@ -85,7 +83,6 @@ class Class141 internal constructor(class230: Class230?, i: Int, class45: Class4
 
     companion object {
         var anInt1964: Int = 0
-        @JvmField
         var aClass273_1966: Class273?
         var anInt1967: Int = 0
         var anInt1968: Int = 0
@@ -93,10 +90,8 @@ class Class141 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt1970: Int = 0
         var anInt1972: Int = 0
         var anIntArray1973: IntArray? = intArrayOf(0, 1, 2, 3, 4, 5, 6, 14)
-        @JvmField
         var anInt1974: Int = 0
         var anIntArray1975: IntArray?
-        @JvmField
         var aClass26_1977: Class26? = null
 
         @JvmStatic

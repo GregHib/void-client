@@ -10,22 +10,16 @@ import kotlin.concurrent.Volatile
 class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) : Runnable {
     var httpFetcher: HttpFetch = JvmHttpFetch
     private var aCallback_Sub1_3776: Callback_Sub1? = null
-    @JvmField
     var aBoolean3777: Boolean = false
     internal val aCacheStorage: CacheStorageFactory = FileCacheStorage()
-    @JvmField
     var aClass234_3779: CacheStore? = null
-    @JvmField
     var aClass234_3785: CacheStore? = null
     private var anObject3787: Any? = null
-    @JvmField
     var aClass234_3788: CacheStore? = null
     private val aThread3790: Thread
     private var anObject3791: Any? = null
     private var anObject3793: Any? = null
-    @JvmField
     var aBoolean3794: Boolean = false
-    @JvmField
     var aClass234Array3795: Array<CacheStore?>? = null
     private var aClass144_3797: Class144? = null
     private var aClass144_3798: Class144? = null
@@ -458,14 +452,11 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         private const val GAME_CONNECTION_KEY = 7500
 
         var aString3778: String? = null
-        @JvmField
         var aString3780: String? = null
 
         @Volatile
         private var aLong3781 = 0L
-        @JvmField
         var aString3782: String? = null
-        @JvmField
         var aMethod3783: Method? = null
         private var aString3784: String? = null
         var aMethod3786: Method? = null

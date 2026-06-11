@@ -6,15 +6,11 @@ import kotlin.concurrent.Volatile
 */
 object Class168 {
     var aClass114_2248: Class114?
-    @JvmField
     var aClass46_2249: Class46? = null
-    @JvmField
     var aShort2250: Short = 205
     var anInt2251: Int = 0
-    @JvmField
     var aClass323_2252: Class323? = null
     var anInt2253: Int = 0
-    @JvmField
     var anInt2254: Int = 0
     var aClass114_2255: Class114?
 

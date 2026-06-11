@@ -12,7 +12,6 @@ class Class124 {
     var anIntArray1824: IntArray? = null
     var aShortArray1825: ShortArray = shortArrayOf()
     var aShortArray1829: ShortArray = shortArrayOf()
-    @JvmField
     var anInt1830: Int = 12
     var aClass162Array1832: Array<Class162?>? = null
     var aByteArray1833: ByteArray = byteArrayOf()
@@ -1049,39 +1048,22 @@ class Class124 {
     }
 
     companion object {
-        @JvmField
         var anInt1819: Int = 0
-        @JvmField
         var anInt1826: Int = 0
-        @JvmField
         var anInt1827: Int = 0
-        @JvmField
         var anInt1828: Int = 0
-        @JvmField
         var anInt1831: Int = 0
-        @JvmField
         var anInt1837: Int = 0
-        @JvmField
         var anInt1838: Int = 0
-        @JvmField
         var anInt1840: Int = 0
-        @JvmField
         var anInt1845: Int = 0
-        @JvmField
         var aClass45_1848: Class45? = null
-        @JvmField
         var anInt1850: Int = 0
-        @JvmField
         var anInt1854: Int = 0
-        @JvmField
         var anInt1858: Int = 0
-        @JvmField
         var anInt1860: Int = 0
-        @JvmField
         var anInt1861: Int = 0
-        @JvmField
         var anInt1864: Int = 0
-        @JvmField
         var anInt1869: Int = 0
 
         @JvmStatic

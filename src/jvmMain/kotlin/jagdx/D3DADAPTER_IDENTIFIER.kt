@@ -8,13 +8,10 @@ class D3DADAPTER_IDENTIFIER {
 
     private val DeviceID = 0
 
-    @JvmField
     var VendorID: Int = 0
 
-    @JvmField
     var Description: String? = null
 
-    @JvmField
     var DriverVersion: Long = 0
 
     private val Driver: String? = null

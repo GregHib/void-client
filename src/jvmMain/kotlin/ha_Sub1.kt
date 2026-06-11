@@ -8,76 +8,48 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     private var anInt7466 = 0
     private val aClass356_7467: HashMap<Long, GameSurface> = HashMap()
     private var aCanvas7468: DisplayTarget? = null
-    @JvmField
     var aClass348_Sub31_7469: GameSurface? = null
     private var aBoolean7470 = false
     private var aBoolean7471 = false
     private var anInt7472 = 0
-    @JvmField
     var anInt7473: Int = 0
-    @JvmField
     var anInt7474: Int
     private var aClass49_7475: Interface4? = null
-    @JvmField
     var anInt7476: Int
-    @JvmField
     var anInt7477: Int = 0
-    @JvmField
     var anInt7478: Int
-    @JvmField
     var anInt7479: Int = 0
     private var aClass167Array7480: Array<Class167?>? = null
     private var anInt7481 = 0
-    @JvmField
     var anInt7482: Int
-    @JvmField
     var anIntArray7483: IntArray? = null
-    @JvmField
     var anInt7484: Int = 0
-    @JvmField
     var anInt7485: Int = 0
     private var anInt7486 = 0
     private var anInt7487: Int
     private var anInt7488 = 0
     private var aBoolean7489: Boolean
-    @JvmField
     var anInt7490: Int = 0
-    @JvmField
     var anInt7491: Int
-    @JvmField
     var aClass101_Sub1_7492: Class101_Sub1? = null
     private var anInt7493 = 0
-    @JvmField
     var anInt7494: Int
     private var anInt7495 = 0
-    @JvmField
     var anInt7496: Int
-    @JvmField
     var anInt7497: Int
     private val aClass60_7498: Class60
     private val aClass60_7499: Class60
-    @JvmField
     var anInt7500: Int
-    @JvmField
     var anInt7501: Int
-    @JvmField
     var aFloatArray7502: FloatArray? = null
-    @JvmField
     var anInt7503: Int
-    @JvmField
     var anInt7504: Int = 0
     private var anInt7505: Int
-    @JvmField
     var anInt7506: Int = 0
-    @JvmField
     var anInt7507: Int
-    @JvmField
     var anInt7508: Int = 0
-    @JvmField
     var anInt7509: Int = 0
-    @JvmField
     var anInt7510: Int = 0
-    @JvmField
     var aFloatArray7511: FloatArray? = null
     private var anInt7512: Int
     private var aClass105_7513: Class105? = null

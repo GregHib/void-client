@@ -37,7 +37,6 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
         var anInt9703: Int = 0
         var anInt9708: Int = 0
         var anInt9709: Int = 0
-        @JvmField
         var aClass262_9711: Class262? = Class262()
         var anInt9713: Int = 0
         var anIntArray9714: IntArray? = intArrayOf(1, 2, 4, 8)

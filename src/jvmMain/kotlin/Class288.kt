@@ -7,15 +7,10 @@ import Class64.Companion.method616
 * Visit http://jode.sourceforge.net/
 */
 open class Class288 internal constructor(i: Int, class221: Class221?, class341: Class341?, i_2_: Int, i_3_: Int) : Interface12 {
-    @JvmField
     var anInt4950: Int = 0
-    @JvmField
     var anInt4951: Int = 0
-    @JvmField
     var aClass341_4952: Class341? = null
-    @JvmField
     var aClass221_4955: Class221? = null
-    @JvmField
     var anInt4958: Int = 0
 
     override fun method51(i: Byte): Class223? {
@@ -36,7 +31,6 @@ open class Class288 internal constructor(i: Int, class221: Class221?, class341: 
     }
 
     companion object {
-        @JvmField
         var aClass231_4953: Class231? = Class231("WIP", 2)
         var anInt4954: Int = 0
         var anInt4956: Int = 0

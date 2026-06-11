@@ -6,13 +6,9 @@ abstract class Class299_Sub1 : Class299() {
     abstract fun method2256(i: Byte): Class258_Sub2?
 
     companion object {
-        @JvmField
         var anInt6320: Int = 0
-        @JvmField
         var aClass138_6321: Class138? = Class138(1, 2, 2, 0)
-        @JvmField
         var anInt6322: Int = 0
-        @JvmField
         var aFileOutputStream6323: FileOutputStream? = null
 
         @JvmStatic

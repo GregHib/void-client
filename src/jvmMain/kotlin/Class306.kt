@@ -3,10 +3,8 @@ import Class286_Sub3.Companion.method2148
 import java.awt.Canvas
 
 object Class306 {
-    @JvmField
     var anInt3872: Int = -1
     var anIntArray3873: IntArray? = IntArray(13)
-    @JvmField
     var anInt3874: Int = 0
     var anInt3875: Int = 0
     var anInt3876: Int = 0

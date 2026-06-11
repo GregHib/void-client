@@ -1,9 +1,6 @@
 object Class180 {
-    @JvmField
     var anIntArray2370: IntArray? = IntArray(13)
-    @JvmField
     var aRectangleArray2371: Array<Rect?>? = arrayOfNulls<Rect>(100)
-    @JvmField
     var aClass196_2372: Class196?
 
     @JvmStatic

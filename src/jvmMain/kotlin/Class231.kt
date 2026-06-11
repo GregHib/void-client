@@ -5,7 +5,7 @@ import Class318_Sub1_Sub3_Sub3.Companion.method2431
 /* Class231 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class231 internal constructor(string: String?, @JvmField var anInt2995: Int) {
+class Class231 internal constructor(string: String?, var anInt2995: Int) {
     override fun toString(): String {
         anInt2992++
         throw IllegalStateException()

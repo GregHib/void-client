@@ -1,28 +1,21 @@
 import java.io.File
 import kotlin.math.pow
 
-class Class348_Sub6 internal constructor(@JvmField var anInt6630: Int, @JvmField var anInt6636: Int) : Class348() {
+class Class348_Sub6 internal constructor(var anInt6630: Int, var anInt6636: Int) : Class348() {
     companion object {
-        @JvmField
         var anIntArray6631: IntArray? = IntArray(13)
 
-        @JvmField
         var anInt6632: Int = 0
 
-        @JvmField
         var anInt6633: Int
 
-        @JvmField
         var anInt6634: Int = -2
         var anIntArray6635: IntArray? = IntArray(4)
 
-        @JvmField
         var anInt6637: Int = 2
 
-        @JvmField
         var anInt6638: Int = 0
 
-        @JvmField
         var anInt6639: Int = 0
 
         /*synthetic*/

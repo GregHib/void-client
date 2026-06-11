@@ -96,27 +96,16 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
     }
 
     companion object {
-        @JvmField
         var anInt7366: Int = 0
-        @JvmField
         var aClass114_7367: Class114? = Class114(37, 7)
-        @JvmField
         var anInt7368: Int = 0
-        @JvmField
         var anInt7370: Int = 0
-        @JvmField
         var aClass45_7371: Class45? = null
-        @JvmField
         var anInt7372: Int = 0
-        @JvmField
         var anInt7374: Int = 0
-        @JvmField
         var anInt7377: Int = 0
-        @JvmField
         var aStringArray7378: Array<String?>? = null
-        @JvmField
         var anInt7379: Int = 0
-        @JvmField
         var anInt7380: Int = 0
 
         @JvmStatic

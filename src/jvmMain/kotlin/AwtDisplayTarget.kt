@@ -9,7 +9,7 @@ import java.awt.Graphics
  * JVM [GameSurface] blit (`Class348_Sub31.present` → `method3011`). Identity ([canvas]) is also
  * what the renderer's per-canvas cache keys on today via `canvas.hashCode()`.
  */
-class AwtDisplayTarget(@JvmField val canvas: Canvas) : DisplayTarget {
+class AwtDisplayTarget(val canvas: Canvas) : DisplayTarget {
     override val width: Int get() = canvas.size.width
     override val height: Int get() = canvas.size.height
 

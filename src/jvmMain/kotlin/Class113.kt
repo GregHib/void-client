@@ -9,17 +9,11 @@ class Class113 {
 
     companion object {
         var aLong1739: Long = 0L
-        @JvmField
         var anInt1740: Int = 0
-        @JvmField
         var anInt1741: Int = 0
-        @JvmField
         var anInt1742: Int = 0
-        @JvmField
         var aClass45_1743: Class45? = null
-        @JvmField
         var aClass105Array1744: Array<Class105?>? = null
-        @JvmField
         var anInt1745: Int = 100
 
         fun method1056(i: Int, i_0_: Int, c: Char): Int {

@@ -24,17 +24,11 @@ class Class348_Sub42_Sub9_Sub1 internal constructor(interface14: Interface14?, `
     }
 
     companion object {
-        @JvmField
         var anInt10439: Int = 0
-        @JvmField
         var anInt10441: Int = 0
-        @JvmField
         var aClass356_10442: Class356?
-        @JvmField
         var anInt10443: Int = 2
-        @JvmField
         var anInt10444: Int = 0
-        @JvmField
         var anInt10445: Int = 0
 
         @JvmStatic

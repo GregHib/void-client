@@ -9,10 +9,10 @@
  * GL/D3D renderers still need the real AWT Canvas.)
  */
 class Rect(
-    @JvmField var x: Int = 0,
-    @JvmField var y: Int = 0,
-    @JvmField var width: Int = 0,
-    @JvmField var height: Int = 0,
+    var x: Int = 0,
+    var y: Int = 0,
+    var width: Int = 0,
+    var height: Int = 0,
 ) {
     fun setBounds(x: Int, y: Int, width: Int, height: Int) {
         this.x = x

@@ -83,25 +83,15 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
     }
 
     companion object {
-        @JvmField
         var anInt5805: Int = 0
-        @JvmField
         var anInt5806: Int = 0
-        @JvmField
         var anInt5807: Int = 0
-        @JvmField
         var aClass341_5808: Class341? = Class341()
-        @JvmField
         var anInt5809: Int = 0
-        @JvmField
         var anInt5810: Int = 0
-        @JvmField
         var anInt5811: Int = 0
-        @JvmField
         var anInt5812: Int = 100
-        @JvmField
         var aClass111_5813: Class111? = null
-        @JvmField
         var anInt5814: Int = 0
 
         @JvmStatic

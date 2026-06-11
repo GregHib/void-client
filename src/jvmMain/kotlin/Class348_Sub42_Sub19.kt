@@ -18,7 +18,6 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
     companion object {
         var aClass351_9687: Class351? = Class351(14, -1)
         var anInt9698: Int = 0
-        @JvmField
         var anInt9699: Int = 0
         var aClass338Array9700: Array<Class338?>? = null
         var anInt9701: Int = 0
