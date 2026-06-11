@@ -139,8 +139,9 @@ class Class368 {
             if (anInt4492 != 128) i_33_ = i_33_ or 0x2
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ = i_33_ or 0x5
             var class64: Class64?
+            this.anInt4501 = this.anInt4501 or (var_ha!!.anInt4567 shl 29)
             synchronized(this.aClass319_4513!!.aClass60_3990) {
-                class64 = ((this.aClass319_4513!!.aClass60_3990.method583((var_ha!!.anInt4567 shl 29.let { this.anInt4501 = this.anInt4501 or it; this.anInt4501 }.toLong().toInt()).toLong(), -122)) as Class64?)
+                class64 = ((this.aClass319_4513!!.aClass60_3990.method583(this.anInt4501.toLong(), -122)) as Class64?)
             }
             if (class64 == null || var_ha!!.method3667(class64.ua(), i_33_) != 0) {
                 if (class64 != null) i_33_ = var_ha!!.method3679(i_33_, class64.ua())
@@ -167,7 +168,7 @@ class Class368 {
                 }
                 class64.s(i_33_)
                 synchronized(this.aClass319_4513!!.aClass60_3990) {
-                    this.aClass319_4513!!.aClass60_3990.method582(class64, (var_ha.anInt4567 shl 29.let { this.anInt4501 = this.anInt4501 or it; this.anInt4501 }.toLong().toInt()).toLong(), (-113).toByte())
+                    this.aClass319_4513!!.aClass60_3990.method582(class64, this.anInt4501.toLong(), (-113).toByte())
                 }
             }
             if (i_31_.toInt() != -68) return null
