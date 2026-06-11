@@ -26,6 +26,9 @@ class AwtGlyphRasterizer(private val component: Component) : GlyphRasterizer {
 /** Returns the underlying AWT [Font]; only valid on the JVM implementation. */
 fun RasterFont.toAwtFont(): Font = (this as AwtRasterFont).awtFont
 
+/** Applies this font to an AWT [Graphics] context (calls [Graphics.setFont]). */
+fun RasterFont.setFontOn(g: java.awt.Graphics) = g.setFont(toAwtFont())
+
 internal class AwtRasterFont(
     private val component: Component,
     val awtFont: Font,

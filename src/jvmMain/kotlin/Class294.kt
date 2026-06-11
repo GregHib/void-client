@@ -230,7 +230,7 @@ class Class294 : Interface16 {
                         graphics_28_.drawImage(image, i_36_, i_22_, null)
                     }
                     graphics_6_.drawImage(anImage5059, i_16_ + i_26_, i_27_, null)
-                    graphics_6_.setFont(aRasterFont5053!!.toAwtFont())
+                    aRasterFont5053!!.setFontOn(graphics_6_)
                     graphics_6_.setColor(aColor5034)
                     graphics_6_.drawString(string, i_26_ + (anInt5023 - string!!.sumOf { aRasterFont5053!!.charWidth(it) }) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_))
                     graphics.drawImage(Class342.anImage4249, 0, 0, null)

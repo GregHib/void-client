@@ -64,12 +64,12 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                         graphics_3_.setColor(Color.black)
                         graphics_3_.drawRect(i_4_ + 1, 1 + i_5_, 301, 31)
                         graphics_3_.fillRect(3 * i + (i_4_ - -2), 2 + i_5_, 300 - i * 3, 30)
-                        graphics_3_.setFont(Class351.aRasterFont4329!!.toAwtFont())
+                        Class351.aRasterFont4329!!.setFontOn(graphics_3_)
                         graphics_3_.setColor(color_2_)
                         if (i_1_ > -42) anIntArray2631 = null
                         graphics_3_.drawString(string, (i_4_ + (304 - string!!.length * 6) / 2), i_5_ + 22)
                         if (Class348_Sub42_Sub16.aString9665 != null) {
-                            graphics_3_.setFont(Class351.aRasterFont4329!!.toAwtFont())
+                            Class351.aRasterFont4329!!.setFontOn(graphics_3_)
                             graphics_3_.setColor(color_2_)
                             graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665!!.length * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2)
                         }
@@ -86,10 +86,10 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                         graphics.setColor(Color.black)
                         graphics.drawRect(1 + i_6_, 1 + i_7_, 301, 31)
                         graphics.fillRect(3 * i + 2 + i_6_, 2 + i_7_, -(i * 3) + 300, 30)
-                        graphics.setFont(Class351.aRasterFont4329!!.toAwtFont())
+                        Class351.aRasterFont4329!!.setFontOn(graphics)
                         graphics.setColor(color_2_)
                         if (Class348_Sub42_Sub16.aString9665 != null) {
-                            graphics.setFont(Class351.aRasterFont4329!!.toAwtFont())
+                            Class351.aRasterFont4329!!.setFontOn(graphics)
                             graphics.setColor(color_2_)
                             graphics.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 + -(6 * Class348_Sub42_Sub16.aString9665!!.length / 2)), Class348_Sub42_Sub8_Sub2.anInt10432 / 2 - 26)
                         }
