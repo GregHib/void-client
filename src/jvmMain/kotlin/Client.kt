@@ -540,7 +540,6 @@ import java.awt.Canvas
 import java.awt.Component
 import java.awt.Container
 import java.awt.Frame
-import java.net.URL
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min
@@ -640,9 +639,9 @@ class Client : Applet_Sub1() {
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         Class316.aClass348_Sub51_3959 = method247(24916)
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) Class135_Sub2.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) Class135_Sub2.aClass161_4839!!.aString2147 = this.getCodeBase()?.substringAfter("://")?.substringBefore("/")?.substringBefore(":")
         else if (method2354(Class8.aClass364_165, i xor 0x7044.inv())) {
-            Class135_Sub2.aClass161_4839!!.aString2147 = this.getCodeBase()!!.getHost()
+            Class135_Sub2.aClass161_4839!!.aString2147 = this.getCodeBase()?.substringAfter("://")?.substringBefore("/")?.substringBefore(":")
             Class135_Sub2.aClass161_4839!!.anInt2148 = 40000 - -Class135_Sub2.aClass161_4839!!.anInt2143
             Class255.aClass161_3285!!.anInt2148 = Class255.aClass161_3285!!.anInt2143 + 40000
             Class135_Sub2.aClass161_4839!!.anInt2138 = 50000 - -Class135_Sub2.aClass161_4839!!.anInt2143
@@ -1845,7 +1844,7 @@ class Client : Applet_Sub1() {
         return null
     }
 
-    override fun showDocument(url: URL?, target: String?) {
+    override fun showDocument(url: String?, target: String?) {
     }
 
     companion object {

@@ -9,7 +9,7 @@ import Class348_Sub40_Sub7.Companion.method3064
 import OutputStream_Sub1.Companion.method132
 import s_Sub2.Companion.method4002
 import za_Sub1.Companion.method3439
-import java.net.URL
+
 
 class Class88 {
     @JvmField
@@ -396,7 +396,7 @@ class Class88 {
                                 } catch (throwable: Throwable) {
                                     if (Class318_Sub1_Sub5.aBoolean8773) {
                                         try {
-                                            Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), "blank.ws"), "tbi")
+                                            Class93.anApplet1530!!.showDocument(Class93.anApplet1530!!.getCodeBase()?.let { it + "blank.ws" }, "tbi")
                                         } catch (exception: Exception) {
                                             /* empty */
                                         }

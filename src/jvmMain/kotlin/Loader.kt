@@ -4,7 +4,6 @@ import java.awt.Component
 import java.awt.Dimension
 import java.awt.Image
 import java.awt.Panel
-import java.net.URL
 import java.util.*
 import javax.swing.ImageIcon
 import javax.swing.JFrame
@@ -98,7 +97,7 @@ class Loader : Panel(), GameApplet {
         return aProperties1.get(arg0) as String?
     }
 
-    override fun getDocumentBase(): URL? {
+    override fun getDocumentBase(): String? {
         return getCodeBase()
     }
 
@@ -109,20 +108,12 @@ class Loader : Panel(), GameApplet {
         return this
     }
 
-    override fun showDocument(url: URL?, target: String?) {
+    override fun showDocument(url: String?, target: String?) {
         println("Show document: $url, target: $target")
     }
 
-    override fun getCodeBase(): URL? {
-        val url: URL?
-        try {
-            if (loadRunescape) url = URL("http://world16.runescape.com")
-            else url = URL("http://" + address)
-        } catch (exception: Exception) {
-            exception.printStackTrace()
-            return null
-        }
-        return url
+    override fun getCodeBase(): String? {
+        return if (loadRunescape) "http://world16.runescape.com/" else "http://$address/"
     }
 
     companion object {

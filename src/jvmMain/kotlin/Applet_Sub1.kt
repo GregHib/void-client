@@ -8,7 +8,6 @@ import java.awt.event.FocusEvent
 import java.awt.event.FocusListener
 import java.awt.event.WindowEvent
 import java.awt.event.WindowListener
-import java.net.URL
 import java.util.*
 
 abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, WindowListener {
@@ -46,7 +45,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                 /* empty */
             }
             try {
-                showDocument(URL(getCodeBase(), ("error_game_" + string + ".ws")), "_top")
+                showDocument(getCodeBase()?.let { it + "error_game_" + string + ".ws" }, "_top")
             } catch (exception: Exception) {
                 /* empty */
             }
@@ -94,7 +93,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         destroy()
     }
 
-    override fun getDocumentBase(): URL? {
+    override fun getDocumentBase(): String? {
         anInt30++
         if (Class52.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getDocumentBase()
@@ -264,7 +263,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
 
     abstract fun method91(i: Byte)
 
-    override fun getCodeBase(): URL? {
+    override fun getCodeBase(): String? {
         anInt29++
         if (Class52.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getCodeBase()

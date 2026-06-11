@@ -4,7 +4,7 @@ import jagtheora.vorbis.DSPState
 import jagtheora.vorbis.VorbisBlock
 import jagtheora.vorbis.VorbisComment
 import jagtheora.vorbis.VorbisInfo
-import java.net.URL
+
 
 class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) : Class348_Sub23(oggstreamstate) {
     private var aDSPState8993: DSPState? = null
@@ -161,7 +161,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             if (Class239_Sub12.aString5966 != null) string_5_ = "/p=" + Class239_Sub12.aString5966
             val string_6_ = ("http://" + string + string_4_ + "/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (if (!Class289.aBoolean3697) "0" else "1") + ",o" + (if (Class348_Sub37.aBoolean6997) "1" else "0") + ",a2")
             try {
-                Class79.aClient1367!!.showDocument(URL(string_6_), "_self")
+                Class79.aClient1367!!.showDocument(string_6_, "_self")
                 if (i_3_ >= -17) aClass297_8992 = null
             } catch (exception: Exception) {
                 return false
