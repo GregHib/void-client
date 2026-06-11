@@ -108,7 +108,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class348_Sub18.method2938(87.toByte())
             method2433()
             if (i.toInt() != 11) anIntArray9436 = null
-            for (i_2_ in 0..3) Class348_Sub45.aClass361Array7108!![i_2_]!!.method3500(700)
+            for (i_2_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_2_]!!.method3500(700)
             Class348_Sub42_Sub3.method3177(-50, false)
             System.gc()
             method3007(2, 22684)

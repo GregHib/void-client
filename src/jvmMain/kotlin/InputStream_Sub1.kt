@@ -99,7 +99,7 @@ class InputStream_Sub1 : InputStream() {
         fun method126(i: Int) {
             Class318_Sub1_Sub3_Sub3.method2433()
             anInt73++
-            for (i_7_ in 0..3) Class348_Sub45.aClass361Array7108!![i_7_]!!.method3500(700)
+            for (i_7_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_7_]!!.method3500(700)
             if (i != -16203) Companion.method125(125, -95, 109, null, (-52).toByte())
             Class50_Sub2.method464(-1)
             Class348_Sub18.method2938(98.toByte())

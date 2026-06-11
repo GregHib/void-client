@@ -390,7 +390,7 @@ import Class348_Sub42_Sub8_Sub2.Companion.method3202
 import Class348_Sub42_Sub9.Companion.method3204
 import Class348_Sub42_Sub9_Sub1.Companion.method3208
 import Class348_Sub43.Companion.method3300
-import Class348_Sub45.Companion.method3314
+import Class348_Sub45Statics.method3314
 import Class348_Sub47.Companion.method3323
 import Class348_Sub47.Companion.method3327
 import Class348_Sub49.Companion.method3376
@@ -1449,7 +1449,7 @@ class Client : Applet_Sub1() {
                             var i_102_ = i_100_ + (npc.anIntArray10317!![0])
                             if (i_102_ < 0) i_102_ = 0
                             else if ((-i_98_ + Class348_Sub40_Sub3.anInt9109 - 1) < i_102_) i_102_ = (-i_98_ + Class348_Sub40_Sub3.anInt9109 - 1)
-                            var i_103_ = (method574(i_101_, i_98_, i_98_, Class348_Sub40_Sub11.anIntArray9185, true, 120.toByte(), -1, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), Class348_Sub42_Sub14.anIntArray9626, i_102_, (Class348_Sub45.aClass361Array7108!![(npc.plane).toInt()]), i_98_, 0, 0))
+                            var i_103_ = (method574(i_101_, i_98_, i_98_, Class348_Sub40_Sub11.anIntArray9185, true, 120.toByte(), -1, (npc.anIntArray10320!![0]), (npc.anIntArray10317!![0]), Class348_Sub42_Sub14.anIntArray9626, i_102_, (Class348_Sub45Statics.aClass361Array7108!![(npc.plane).toInt()]), i_98_, 0, 0))
                             if (i_103_ > 0) {
                                 if (i_103_ > 9) i_103_ = 9
                                 var i_104_ = 0
@@ -2142,7 +2142,7 @@ class Client : Applet_Sub1() {
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray803
                                     Class348_Sub1_Sub2.aClass262_8810!!.method1999(class348_sub36, -20180)
                                 }
-                                if (Class289.aClass46_3701 != null || Class5_Sub1.aBoolean8335 || ((class46.anInt765 != Class348_Sub45.anInt7102) && Class348_Sub42.anInt7059 > 0)) {
+                                if (Class289.aClass46_3701 != null || Class5_Sub1.aBoolean8335 || ((class46.anInt765 != Class348_Sub45Statics.anInt7102) && Class348_Sub42.anInt7059 > 0)) {
                                     bool_54_ = false
                                     bool_53_ = false
                                     bool = false
@@ -2207,7 +2207,7 @@ class Client : Applet_Sub1() {
                                         }
                                         continue
                                     }
-                                    if (class46.anInt765 == Class348_Sub45.anInt7102) {
+                                    if (class46.anInt765 == Class348_Sub45Statics.anInt7102) {
                                         Class168.aClass46_2249 = class46
                                         if (bool) Class246.aBoolean3174 = true
                                         if (bool_54_) {

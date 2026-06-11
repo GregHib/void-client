@@ -115,7 +115,7 @@ class Class40 internal constructor() {
 
         @JvmStatic
         fun method369(i: Int) {
-            Class348_Sub45.aClass105Array7107 = null
+            Class348_Sub45Statics.aClass105Array7107 = null
             Class239_Sub2.aClass105Array5857 = null
             Class348_Sub12.aClass105Array6742 = null
             Class240.aClass105Array4679 = null

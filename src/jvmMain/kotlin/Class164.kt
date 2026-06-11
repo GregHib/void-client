@@ -113,7 +113,7 @@ object Class164 {
             Class348_Sub49.method3379(2, 1)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1029) {
-            for (i_7_ in 0..3) Class348_Sub45.aClass361Array7108!![i_7_] = method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319)
+            for (i_7_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_7_] = method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1030) {
             Class21.aClass45_322 = Class369_Sub2.method3571(false, 8, (-23).toByte(), 1)

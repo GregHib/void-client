@@ -6,7 +6,7 @@ import Class239.Companion.method1709
 import Class258_Sub3.Companion.method1968
 import Class318_Sub1_Sub5.Companion.method2483
 import Class324.Companion.method2570
-import Class348_Sub45.Companion.method3313
+import Class348_Sub45Statics.method3313
 import Class367_Sub8.Companion.method3547
 import Class369_Sub3_Sub1.Companion.method3576
 import Class58.Companion.method536

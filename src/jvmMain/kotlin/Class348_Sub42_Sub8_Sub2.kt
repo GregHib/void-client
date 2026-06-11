@@ -1158,7 +1158,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
-            if (Class348_Sub3.aClass114_6584 == Class348_Sub45.aClass114_7105) {
+            if (Class348_Sub3.aClass114_6584 == Class348_Sub45Statics.aClass114_7105) {
                 val i = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 if (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) Class239_Sub26.aClass54Array6114!![i] = Class54()
                 else {
@@ -1203,7 +1203,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
-            if (Class348_Sub3.aClass114_6584 == Class348_Sub45.aClass114_7106) {
+            if (Class348_Sub3.aClass114_6584 == Class348_Sub45Statics.aClass114_7106) {
                 while ((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) < Class348_Sub40_Sub25.anInt9341) {
                     val bool_149_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 1
                     var string: String? = Class299.aClass348_Sub49_Sub2_3813!!.readString((-95).toByte())

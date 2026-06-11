@@ -3588,7 +3588,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                 i_324_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2909)
                                 if (player.aBoolean10554) i_325_ = 2
                             }
-                            var class105s = Class348_Sub45.aClass105Array7107
+                            var class105s = Class348_Sub45Statics.aClass105Array7107
                             if (i_324_ != -1) {
                                 var class105s_326_ = ((Class353.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<Class105?>?)
                                 if (class105s_326_ == null) {
@@ -3618,7 +3618,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             class105_328_.method974(i_329_, i_323_)
                             Class348_Sub8.aHa6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
                             Class338.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
-                        } else i_323_ -= max((Class369.aClass143_4962!!.anInt1988), Class348_Sub45.aClass105Array7107!![0]!!.method969())
+                        } else i_323_ -= max((Class369.aClass143_4962!!.anInt1988), Class348_Sub45Statics.aClass105Array7107!![0]!!.method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {

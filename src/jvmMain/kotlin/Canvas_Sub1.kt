@@ -244,7 +244,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096)
                     if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aClass324_4684)
                     else Class348_Sub48.method3328(null)
-                    for (i_28_ in 0..3) Class348_Sub45.aClass361Array7108!![i_28_]!!.method3500(i xor 0x2bc)
+                    for (i_28_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_28_]!!.method3500(i xor 0x2bc)
                     Class52.method491((-86).toByte())
                     Class101_Sub2.method921(99.toByte(), false)
                     method3936(i + i)
@@ -280,7 +280,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         Class170.aClass237_Sub1_5067!!.method1685(Class348_Sub8.aHa6654, null, 21407, null)
                         Class243.method1879(false)
                     }
-                    Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aHa6654, (if (!bool_25_) null else (Class170.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108)
+                    Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aHa6654, (if (!bool_25_) null else (Class170.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45Statics.aClass361Array7108)
                     if (Class312.anInt3931 == 0) {
                         Class289.method2193(true, (-128).toByte())
                         Class122.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)

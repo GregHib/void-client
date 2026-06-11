@@ -61,7 +61,7 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
         fun method3055(i: Int, class304: Class304?): Int {
             anInt9106++
             if (i < 94) method3054(false, -98, -116)
-            if (class304 != Class348_Sub45.aClass304_7103) {
+            if (class304 != Class348_Sub45Statics.aClass304_7103) {
                 if (Class108.aClass304_1662 == class304) return 6408
                 if (class304 == Class348_Sub40_Sub38.Companion.aClass304_9471) return 6406
                 if (Class348_Sub40_Sub22.Companion.aClass304_9303 != class304) {

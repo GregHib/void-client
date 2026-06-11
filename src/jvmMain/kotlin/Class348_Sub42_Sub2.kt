@@ -2,7 +2,7 @@ import Class243.Companion.method1879
 import Class260.method1978
 import Class348_Sub16_Sub1.Companion.method2826
 import Class348_Sub17.Companion.method2929
-import Class348_Sub45.Companion.method3309
+import Class348_Sub45Statics.method3309
 import jaggl.OpenGL.Companion.glBindRenderbufferEXT
 import jaggl.OpenGL.Companion.glFramebufferRenderbufferEXT
 import jaggl.OpenGL.Companion.glGenRenderbuffersEXT

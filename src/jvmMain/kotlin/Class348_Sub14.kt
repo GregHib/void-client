@@ -163,7 +163,7 @@ class Class348_Sub14 : Class348 {
                             }
                         }
                         if (Class375.aBoolean4542) {
-                            val class361 = Class348_Sub45.aClass361Array7108!![i]
+                            val class361 = Class348_Sub45Statics.aClass361Array7108!![i]
                             for (i_32_ in 0..<RuntimeException_Sub1.anInt4600) {
                                 var i_33_ = 0
                                 while ((RuntimeException_Sub1.anInt4600 > i_33_)) {
@@ -226,9 +226,9 @@ class Class348_Sub14 : Class348 {
                                                 var i_44_ = i_37_
                                                 var i_45_ = i_38_
                                                 if (bool_43_) {
-                                                    val is_46_ = (Class348_Sub45.aClass361Array7108!![i_39_]!!.anIntArrayArray4438)!!
-                                                    val i_47_ = (Class348_Sub45.aClass361Array7108!![i_39_]!!.anInt4453)
-                                                    val i_48_ = (Class348_Sub45.aClass361Array7108!![i_39_]!!.anInt4441)
+                                                    val is_46_ = (Class348_Sub45Statics.aClass361Array7108!![i_39_]!!.anIntArrayArray4438)!!
+                                                    val i_47_ = (Class348_Sub45Statics.aClass361Array7108!![i_39_]!!.anInt4453)
+                                                    val i_48_ = (Class348_Sub45Statics.aClass361Array7108!![i_39_]!!.anInt4441)
                                                     for (i_49_ in 0..9) {
                                                         val i_50_ = (Math.random() * 4.0).toInt()
                                                         if ((i_50_ == 0) && (i_44_ > i_5_) && i_37_ + -3 < i_44_ && ((0x2c0108 and (is_46_[(-i_47_ + (i_44_ - 1))]!![(-i_48_ + i_45_)])) == 0)) i_44_--

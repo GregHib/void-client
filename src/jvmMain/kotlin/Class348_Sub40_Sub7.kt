@@ -219,7 +219,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             i_18_++
                                             continue
                                         }
-                                        if (class46.anInt765 == Class348_Sub45.anInt7102) {
+                                        if (class46.anInt765 == Class348_Sub45Statics.anInt7102) {
                                             Class318_Sub1_Sub3_Sub4.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, Class348_Sub8.aHa6654, i_25_, Class348_Sub40_Sub4.Companion.aD9113)
                                             Class152.aBooleanArray2076!![i_23_] = true
                                             Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)

@@ -257,11 +257,11 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                     }
                 }
                 class207s = Class207.method1519(class45, Class106.anInt1639, 0)
-                Class348_Sub45.aClass105Array7107 = arrayOfNulls<Class105>(class207s!!.size)
+                Class348_Sub45Statics.aClass105Array7107 = arrayOfNulls<Class105>(class207s!!.size)
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class348_Sub45.aClass105Array7107!![i] = var_ha!!.method3691(class207s[i], true)
+                        Class348_Sub45Statics.aClass105Array7107!![i] = var_ha!!.method3691(class207s[i], true)
                         i++
                     }
                 }
