@@ -1,7 +1,7 @@
 import Applet_Sub1.Companion.method94
 import Applet_Sub1.Companion.set
 import Class110.Companion.method1034
-import Class238.Companion.method1703
+import Class238Statics.method1703
 import Class239.Companion.method1713
 import Class239_Sub16.Companion.method1788
 import Class239_Sub19.Companion.method1803
@@ -111,8 +111,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub50.anInt7213 = 0
             }
             Class348_Sub40_Sub36.aClass114_9456 = Class239.aClass114_3145
-            Class239.aClass114_3145 = Class238.aClass114_3133
-            Class238.aClass114_3133 = Class348_Sub3.aClass114_6584
+            Class239.aClass114_3145 = Class238Statics.aClass114_3133
+            Class238Statics.aClass114_3133 = Class348_Sub3.aClass114_6584
             if (IOException_Sub1.aClass114_90 == Class348_Sub3.aClass114_6584) {
                 Class43.method382(Class299.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
                 Class348_Sub3.aClass114_6584 = null
