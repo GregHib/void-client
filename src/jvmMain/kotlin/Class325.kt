@@ -667,7 +667,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (player != null) {
                                 Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
-                                Class101.anInt1596++
+                                Class101Statics.anInt1596++
                                 Class239_Sub20.anInt6048 = 2
                                 Class26.anInt385 = i_73_
                                 val class348_sub47 = method2148((Class299_Sub1_Sub2.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84)

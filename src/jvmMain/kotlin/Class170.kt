@@ -207,7 +207,7 @@ class Class170 : Interface17 {
 
         fun method1318(i: Int) {
             if (i != -65536) method1310(false)
-            for (i_38_ in 0..<Class101.anInt1597) {
+            for (i_38_ in 0..<Class101Statics.anInt1597) {
                 val i_39_ = Class13.anIntArray224!![i_38_]
                 val npc = ((Class282.aClass356_3654!!.method3480(i_39_.toLong(), -6008) as Class348_Sub22).aNpc_6859)!!
                 var i_40_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)

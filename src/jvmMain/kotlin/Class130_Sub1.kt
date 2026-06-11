@@ -643,7 +643,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class278.anInt3589 = 0
             Class213.anInt2829 = 0
             Class5_Sub1.anInt8345 = 0
-            Class101.anInt1594 = 0
+            Class101Statics.anInt1594 = 0
             Class348_Sub42_Sub3.anInt9500 = 0
             Class348_Sub49.anInt7170 = 0
             Class213.anInt2832 = 0
@@ -870,7 +870,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ha_Sub2.anInt7592 = 0
             Class348_Sub23_Sub4.anInt9063 = 0
             Class356.anInt4382 = 0
-            Class101.anInt1595 = 0
+            Class101Statics.anInt1595 = 0
             ha_Sub3.anInt8076 = 0
             Class255.anInt3281 = 0
             Class66.anInt1163 = 0
@@ -1584,7 +1584,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub38.anInt7009 = 0
             ha_Sub3.anInt8010 = 0
             Class377.anInt9840 = 0
-            Class101.anInt1598 = 0
+            Class101Statics.anInt1598 = 0
             ha_Sub2.anInt7709 = 0
             Class348_Sub42_Sub8.anInt9548 = 0
             Class318_Sub1_Sub3_Sub1.anInt10030 = 0
@@ -2071,7 +2071,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class101_Sub3.anInt5749 = 0
             Class348_Sub40_Sub19.anInt9256 = 0
             ha_Sub3.anInt7944 = 0
-            Class101.anInt1596 = 0
+            Class101Statics.anInt1596 = 0
             Class40.anInt551 = 0
             Class268.anInt3445 = 0
             Class66.anInt1171 = 0
@@ -3135,7 +3135,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub14.anInt6760 = 0
             Class377.anInt9830 = 0
             Class262.anInt3327 = 0
-            Class101.anInt1599 = 0
+            Class101Statics.anInt1599 = 0
             Class239_Sub10.anInt5946 = 0
             Class84.anInt1457 = 0
             Class101_Sub2.anInt5703 = 0

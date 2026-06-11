@@ -3,8 +3,8 @@ import Canvas_Sub1.Companion.method123
 import Class10.Companion.method218
 import Class100.Companion.method886
 import Class100.Companion.method887
-import Class101.Companion.method906
-import Class101.Companion.method909
+import Class101Statics.method906
+import Class101Statics.method909
 import Class101_Sub1.Companion.method911
 import Class101_Sub1.Companion.method913
 import Class101_Sub2.Companion.method925
@@ -1474,7 +1474,7 @@ class Client : Applet_Sub1() {
         if (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
             if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
             else Class348_Sub21.method2954((-127).toByte())
-            if (Class286_Sub4.anInt6246 shr 9 < 14 || (Class286_Sub4.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) Class101.method893((-49).toByte())
+            if (Class286_Sub4.anInt6246 shr 9 < 14 || (Class286_Sub4.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) Class101Statics.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {

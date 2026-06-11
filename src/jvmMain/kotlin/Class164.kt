@@ -1,5 +1,5 @@
 import Applet_Sub1.Companion.method85
-import Class101.Companion.method901
+import Class101Statics.method901
 import Class105_Sub1.Companion.method988
 import Class116.method1063
 import Class14_Sub2.Companion.method243

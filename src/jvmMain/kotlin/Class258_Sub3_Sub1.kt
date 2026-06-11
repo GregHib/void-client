@@ -1,4 +1,4 @@
-import Class101.Companion.method901
+import Class101Statics.method901
 import Class369.Companion.method3568
 import Class376.Companion.method3616
 

@@ -423,7 +423,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
             if (bool_37_ && f_38_ < i.toFloat() && f_39_ > i.toFloat() && f_40_ < i_33_.toFloat() && f_41_ > i_33_.toFloat()) {
                 if (bool) return true
                 if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949!!.size) {
-                    Class101.anIntArray1593 = IntArray(anInt5475)
+                    Class101Statics.anIntArray1593 = IntArray(anInt5475)
                     Class318_Sub1_Sub1_Sub1.anIntArray9949 = IntArray(anInt5475)
                 }
                 for (i_65_ in 0..<anInt5433) {
@@ -443,7 +443,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                             val i_77_ = -1 + aShortArray5439!![i_76_]
                             if (i_77_ == -1) break
                             Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_77_] = i_72_
-                            Class101.anIntArray1593!![i_77_] = i_73_
+                            Class101Statics.anIntArray1593!![i_77_] = i_73_
                         }
                     } else {
                         val i_78_ = anIntArray5455!![i_65_]
@@ -463,12 +463,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                             i,
                             (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5512!![i_82_].toInt()]),
                             (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5495!![i_82_].toInt()]),
-                            (Class101.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
-                            (Class101.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
+                            (Class101Statics.anIntArray1593!![aShortArray5512!![i_82_].toInt()]),
+                            (Class101Statics.anIntArray1593!![aShortArray5508!![i_82_].toInt()]),
                             i_33_,
                             0,
                             (Class318_Sub1_Sub1_Sub1.anIntArray9949!![aShortArray5508!![i_82_].toInt()]),
-                            (Class101.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
+                            (Class101Statics.anIntArray1593!![aShortArray5495!![i_82_].toInt()])
                         )
                     ) return true
                     i_82_++
@@ -779,7 +779,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
     private fun method665(i: Int, var_r_Sub1: r_Sub1) {
         try {
             if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949!!.size) {
-                Class101.anIntArray1593 = IntArray(anInt5475)
+                Class101Statics.anIntArray1593 = IntArray(anInt5475)
                 Class318_Sub1_Sub1_Sub1.anIntArray9949 = IntArray(anInt5475)
             }
             anInt5453++
@@ -794,7 +794,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                         val i_129_ = aShortArray5439!![i_128_] - 1
                         if (i_129_ == -1) break
                         Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_129_] = i_124_
-                        Class101.anIntArray1593!![i_129_] = i_125_
+                        Class101Statics.anIntArray1593!![i_129_] = i_125_
                     }
                     i_123_++
                 }
@@ -807,9 +807,9 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                         val i_134_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_131_.toInt()]
                         val i_135_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_132_.toInt()]
                         val i_136_ = Class318_Sub1_Sub1_Sub1.anIntArray9949!![i_133_.toInt()]
-                        val i_137_ = Class101.anIntArray1593!![i_131_.toInt()]
-                        val i_138_ = Class101.anIntArray1593!![i_132_.toInt()]
-                        val i_139_ = Class101.anIntArray1593!![i_133_.toInt()]
+                        val i_137_ = Class101Statics.anIntArray1593!![i_131_.toInt()]
+                        val i_138_ = Class101Statics.anIntArray1593!![i_132_.toInt()]
+                        val i_139_ = Class101Statics.anIntArray1593!![i_133_.toInt()]
                         if ((-((i_136_ - i_135_) * (-i_137_ + i_138_)) + (i_138_ - i_139_) * (-i_135_ + i_134_)) > 0) var_r_Sub1.method3287(i_137_, 50, i_134_, i_135_, i_138_, i_139_, i_136_)
                     }
                     i_130_++
