@@ -16,12 +16,12 @@ class Class49 internal constructor(var_ha_Sub1: ha_Sub1?, class105: Class105?, c
 
     override fun method14(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, bool: Boolean, bool_8_: Boolean) {
         anInt4723++
-        Class213.method1568((aHa_Sub1_4729!!.aClass348_Sub31_7469!!.anIntArray6916), i_3_, i, i_7_, if (bool_8_) aHa_Sub1_4729.aFloatArray7502 else null, if (bool) this.anIntArray4731 else null, i_4_, 115, i_5_, (aHa_Sub1_4729.aClass348_Sub31_7469!!.anInt6917), this.anInt4725, i_6_, if (!bool_8_) null else this.aFloatArray4719)
+        Class213.method1568((aHa_Sub1_4729!!.aClass348_Sub31_7469!!.pixels), i_3_, i, i_7_, if (bool_8_) aHa_Sub1_4729.aFloatArray7502 else null, if (bool) this.anIntArray4731 else null, i_4_, 115, i_5_, (aHa_Sub1_4729.aClass348_Sub31_7469!!.width), this.anInt4725, i_6_, if (!bool_8_) null else this.aFloatArray4719)
     }
 
     override fun method15(i: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, bool: Boolean, bool_14_: Boolean) {
         anInt4721++
-        Class213.method1568(this.anIntArray4731, i_9_, i, i_13_, if (bool_14_) this.aFloatArray4719 else null, if (!bool) null else (aHa_Sub1_4729!!.aClass348_Sub31_7469!!.anIntArray6916), i_10_, 113, i_11_, this.anInt4725, (aHa_Sub1_4729!!.aClass348_Sub31_7469!!.anInt6917), i_12_, if (bool_14_) aHa_Sub1_4729.aFloatArray7502 else null)
+        Class213.method1568(this.anIntArray4731, i_9_, i, i_13_, if (bool_14_) this.aFloatArray4719 else null, if (!bool) null else (aHa_Sub1_4729!!.aClass348_Sub31_7469!!.pixels), i_10_, 113, i_11_, this.anInt4725, (aHa_Sub1_4729!!.aClass348_Sub31_7469!!.width), i_12_, if (bool_14_) aHa_Sub1_4729.aFloatArray7502 else null)
     }
 
     init {

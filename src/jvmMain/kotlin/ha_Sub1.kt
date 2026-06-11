@@ -10,7 +10,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     private var aClass356_7467: Class356?
     private var aCanvas7468: Canvas? = null
     @JvmField
-    var aClass348_Sub31_7469: Class348_Sub31? = null
+    var aClass348_Sub31_7469: GameSurface? = null
     private var aBoolean7470 = false
     private var aBoolean7471 = false
     private var anInt7472 = 0
@@ -1561,9 +1561,9 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
             anInt7488 = 1
             this.aFloatArray7511 = null
         } else {
-            this.anIntArray7483 = (this.aClass348_Sub31_7469!!.anIntArray6916)
-            this.anInt7477 = (this.aClass348_Sub31_7469!!.anInt6917)
-            anInt7486 = (this.aClass348_Sub31_7469!!.anInt6920)
+            this.anIntArray7483 = (this.aClass348_Sub31_7469!!.pixels)
+            this.anInt7477 = (this.aClass348_Sub31_7469!!.width)
+            anInt7486 = (this.aClass348_Sub31_7469!!.height)
             this.aFloatArray7511 = this.aFloatArray7502
             anInt7495 = anInt7481
             anInt7488 = anInt7493
@@ -2046,8 +2046,8 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     override fun method3626(i: Int, i_572_: Int) {
         check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
         try {
-            val graphics = aCanvas7468!!.getGraphics()
-            this.aClass348_Sub31_7469!!.method3011(0, i, anInt7472, graphics, -1, 0, anInt7465, i_572_)
+            // present(clipX=0, clipY=i, width=anInt7465, height=anInt7472, srcX=0, srcY=i_572_, restoreClip=true)
+            this.aClass348_Sub31_7469!!.present(0, i, anInt7465, anInt7472, 0, i_572_, true)
         } catch (exception: Exception) {
             aCanvas7468!!.repaint()
         }
@@ -2341,10 +2341,10 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     override fun method3707(rectangles: Array<Rect?>?, i: Int, i_631_: Int, i_632_: Int) {
         check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
         try {
-            val graphics = aCanvas7468!!.getGraphics()
             for (i_633_ in 0..<i) {
                 val rectangle = rectangles!![i_633_]!!
-                if (rectangle.x + i_631_ <= this.anInt7477 && rectangle.y + i_632_ <= anInt7486 && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0) this.aClass348_Sub31_7469!!.method3011(rectangle.y, rectangle.x + i_631_, rectangle.height, graphics, -1, rectangle.x, rectangle.width, rectangle.y + i_632_)
+                // present(clipX=rect.x, clipY=rect.y, width=rect.width, height=rect.height, srcX=rect.x+i_631_, srcY=rect.y+i_632_, restoreClip=true)
+                if (rectangle.x + i_631_ <= this.anInt7477 && rectangle.y + i_632_ <= anInt7486 && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0) this.aClass348_Sub31_7469!!.present(rectangle.x, rectangle.y, rectangle.width, rectangle.height, rectangle.x + i_631_, rectangle.y + i_632_, true)
             }
         } catch (exception: Exception) {
             aCanvas7468!!.repaint()
