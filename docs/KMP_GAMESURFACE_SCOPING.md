@@ -107,12 +107,33 @@ no pixel-format conversion is needed.
    width/height via canvas.size; graphics() accessor) and `AwtGameSurfaceFactory` object delegating
    to `Class110.method1035(9029, height, canvas, width)` (preserves the Sub1/Sub2 try-fallback).
    Nothing consumes these yet — ha_Sub1 still calls method3011 directly (that's step 3).
-3. **Re-point `ha_Sub1`** from `Canvas`/`Class348_Sub31` to `GameSurface`/`GameSurfaceFactory`
-   (replace the 4 Canvas methods + the 2 `getSize`/`hashCode` leaks). Still in jvmMain, still green.
-4. **Move `ha_Sub1` to commonMain.** At this point it should have no `java.awt` import left. The
-   blit lives behind `GameSurface`; the AWT impl stays in jvmMain. Confirm via `compileKotlinJvm`
-   and a no-`java.awt`-import grep on the moved file.
+3. ✅ **DONE (commit a8d6db9) — re-point `ha_Sub1` internals.** Field `aClass348_Sub31_7469`
+   retyped `Class348_Sub31?`→`GameSurface?`; its buffer access uses `pixels`/`width`/`height`; the
+   2 blit sites (`method3626` ~2050, `method3707` ~2347) call `surface.present(...)` instead of
+   sourcing `graphics` + `method3011`. `Class49` (off-screen target that reaches into the surface
+   buffer) updated to `.pixels`/`.width`. Build green, JVM byte-identical.
+   **CONSTRAINT discovered:** the 4 canvas methods (`method3643/3669/3677/3701`) are `abstract` on
+   the shared `ha` base, also implemented by `ha_Sub2` (GL) / `ha_Sub3` (D3D), which genuinely need
+   `Canvas`. So their `Canvas?` params CANNOT change without dragging the HW toolkits into scope.
+   Per user decision, step 3 is an **internal-only seam**: `ha_Sub1` keeps `Canvas?`-typed overrides
+   at the `ha` boundary but uses `GameSurface` for the buffer+blit. Residual AWT in `ha_Sub1` is now
+   ONLY the boundary plumbing: `aCanvas7468` (for `getSize()`/`repaint()`/identity), the `Canvas?`
+   override params, and the `canvas.hashCode()` cache key into `aClass356_7467`.
+4. **Move `ha_Sub1` to commonMain — BLOCKED on the `ha`-base boundary (re-scoped).** ha_Sub1 is NOT
+   yet java.awt-free (see step 3 constraint), so it can't move as-is. Prerequisite: abstract the
+   `ha` base presentation boundary so the 4 canvas methods take a `DisplayTarget` (or an adapter)
+   instead of `Canvas`, across `ha`/`ha_Sub2`/`ha_Sub3` and the ~6 external call sites
+   (`Class124`, `s`, `Class348_Sub47`, `Class215`, `Class367_Sub11`, `oa`). Replace
+   `aCanvas7468`→`DisplayTarget`, `canvas.getSize()`→`target.width/height`, `repaint()`→a
+   `DisplayTarget.requestRepaint()` method, and the `canvas.hashCode()` cache key→`DisplayTarget`
+   identity. That's a larger, HW-toolkit-touching change — its own task. Only after it does ha_Sub1
+   move to commonMain.
 5. (Later phases) add web/native `GameSurface` impls; HW toolkits untouched.
+
+## Status: steps 1–3 complete; renderer logic decoupled from AWT
+The software renderer's pixel + blit path is fully behind `GameSurface` and JVM stays byte-identical.
+What remains before the commonMain move is purely the `ha`-base windowing boundary (Canvas params,
+getSize/repaint, hashCode cache key) — deferred as step 4's prerequisite above.
 
 ## Scope boundaries / non-goals
 
