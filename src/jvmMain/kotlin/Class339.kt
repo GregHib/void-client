@@ -3,9 +3,6 @@ import Class251.Companion.method1916
 import Class43.Companion.method381
 import Class5_Sub2.Companion.method196
 import Class66.method705
-import java.io.BufferedReader
-import java.io.DataInputStream
-import java.io.InputStreamReader
 import java.net.MalformedURLException
 import java.net.URL
 import kotlin.concurrent.Volatile
@@ -20,12 +17,10 @@ class Class339 : Runnable {
     override fun run() {
         anInt4203++
         try {
-            val bufferedreader = BufferedReader(InputStreamReader((aClass144_4201!!.anObject1998) as DataInputStream?))
-            var string = bufferedreader.readLine()
+            val bytes = (aClass144_4201!!.anObject1998) as ByteArray
             val class179 = method381(68.toByte())
-            while ( /**/string != null) {
+            for (string in String(bytes).lines()) {
                 class179.method1364(-1, string)
-                string = bufferedreader.readLine()
             }
             val strings = class179.method1361(63)
             if (strings.size % 3 != 0) return
@@ -35,7 +30,7 @@ class Class339 : Runnable {
                 aClass295Array4204!![i / 3] = Class295(strings[i], strings[i + 1], strings[2 + i])
                 i += 3
             }
-        } catch (ioexception: IOException) {
+        } catch (exception: Exception) {
             /* empty */
         }
         aBoolean4205 = true

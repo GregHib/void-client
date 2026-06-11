@@ -1,6 +1,5 @@
 import Class348_Sub5_Sub1.Companion.method2766
 import Class88.Companion.method847
-import java.io.DataInputStream
 import java.net.URL
 
 class Class156 {
@@ -89,9 +88,8 @@ class Class156 {
                         val class144 = (Class231.aClass297_2993!!.method2237(URL(Class348_Sub8.anApplet6662!!.getCodeBase(), ("clienterror.ws?c=" + Class348_Sub1_Sub3.anInt8818 + "&u=" + (if (s_Sub2.aString8265 != null) s_Sub2.aString8265 else Class89.aLong1507.toString()) + "&v1=" + Class297.aString3782 + "&v2=" + Class297.aString3796 + "&e=" + string_4_)), 8362))
                         while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-123).toByte(), 1L)
                         if (class144.anInt1997 != 1) break
-                        val datainputstream = class144.anObject1998 as DataInputStream?
-                        datainputstream!!.read()
-                        datainputstream.close()
+                        // response body is a ByteArray; just confirming the fetch completed
+                        class144.anObject1998 as ByteArray?
                     }
                 } catch (exception: Exception) {
                     break

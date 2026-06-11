@@ -1,8 +1,6 @@
 import Class62.method599
 import java.awt.*
 import java.awt.datatransfer.Transferable
-import java.io.ByteArrayInputStream
-import java.io.DataInputStream
 import java.lang.reflect.Method
 import java.net.InetAddress
 import java.net.Socket
@@ -100,8 +98,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                     class144.anObject1998 = thread
                 } else if (i == 4) {
                     if (method599(-73) < aLong3781) throw IOException()
-                    val bytes = httpFetcher.fetch((class144.anObject1996) as String)
-                    class144.anObject1998 = DataInputStream(ByteArrayInputStream(bytes))
+                    class144.anObject1998 = httpFetcher.fetch((class144.anObject1996) as String)
                 } else if (i == 8) {
                     val objects = (class144.anObject1996 as Array<Any?>?)
                     if (this.aBoolean3777 && ((objects!![0] as Class<*>).getClassLoader() == null)) throw SecurityException()
