@@ -191,7 +191,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             val `object`: Any? = null
             val file: File?
             try {
-                file = (Class59_Sub1.aClass297_5297!!.aCacheStorage as FileCacheStorage).locate(string_52_)
+                file = (Class59_Sub1.aClass297_5297!!.aCacheStorage as FileCacheStorage).let { it.locate(string_52_, it.subDir) }
             } catch (runtimeexception: RuntimeException) {
                 if (Loader.trace) {
                     runtimeexception.printStackTrace()
