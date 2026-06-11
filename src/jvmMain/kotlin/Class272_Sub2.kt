@@ -46,8 +46,8 @@ class Class272_Sub2 : Class272() {
     @Throws(IOException::class)
     override fun method2050(i: Int): Socket? {
         val flag1: Boolean
-        val flag = System.getProperty("java.net.useSystemProxies").toBoolean()
-        if (!flag) System.setProperty("java.net.useSystemProxies", "true")
+        val flag = systemGetProperty("java.net.useSystemProxies").toBoolean()
+        if (!flag) systemSetProperty("java.net.useSystemProxies", "true")
         flag1 = anInt3470 == 443
         var ioexception_sub1: IOException_Sub1?
         val aobj1: Array<Any?>?

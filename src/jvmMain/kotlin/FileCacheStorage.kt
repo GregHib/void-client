@@ -22,7 +22,7 @@ class FileCacheStorage : CacheStorageFactory {
         this.baseName = baseName
         this.subDir = baseName
         userHome = try {
-            val h = System.getProperty("user.home")
+            val h = systemGetProperty("user.home")
             if (h != null) "$h/" else null
         } catch (e: Exception) { null } ?: "~/"
     }

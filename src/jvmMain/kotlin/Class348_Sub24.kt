@@ -547,42 +547,42 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
         init {
             var string = "Unknown"
             try {
-                string = System.getProperty("java.vendor").lowercase()
+                string = systemGetProperty("java.vendor")?.lowercase() ?: string
             } catch (exception: Exception) {
                 /* empty */
             }
             string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("java.version").lowercase()
+                string = systemGetProperty("java.version")?.lowercase() ?: string
             } catch (exception: Exception) {
                 /* empty */
             }
             string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("os.name").lowercase()
+                string = systemGetProperty("os.name")?.lowercase() ?: string
             } catch (exception: Exception) {
                 /* empty */
             }
             aString6877 = string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("os.arch").lowercase()
+                string = systemGetProperty("os.arch")?.lowercase() ?: string
             } catch (exception: Exception) {
                 /* empty */
             }
             aString6876 = string.lowercase()
             string = "Unknown"
             try {
-                string = System.getProperty("os.version").lowercase()
+                string = systemGetProperty("os.version")?.lowercase() ?: string
             } catch (exception: Exception) {
                 /* empty */
             }
             string.lowercase()
             string = "~/"
             try {
-                string = System.getProperty("user.home").lowercase()
+                string = systemGetProperty("user.home")?.lowercase() ?: string
             } catch (exception: Exception) {
                 /* empty */
             }
