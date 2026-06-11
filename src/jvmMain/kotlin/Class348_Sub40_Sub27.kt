@@ -1,5 +1,3 @@
-import java.awt.datatransfer.Clipboard
-
 class Class348_Sub40_Sub27 : Class348_Sub40(3, false) {
     override fun method3047(i: Int, i_0_: Int): Array<IntArray?>? {
         if (i_0_ != -1564599039) return null
@@ -72,7 +70,7 @@ class Class348_Sub40_Sub27 : Class348_Sub40(3, false) {
         @JvmField
         var anInt9356: Int = 0
         @JvmField
-        var aClipboard9357: Clipboard? = null
+        var aClipboard9357: SystemClipboard? = null
         @JvmField
         var anInt9358: Int = 0
         @JvmField

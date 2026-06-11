@@ -67,7 +67,6 @@ import Class64.Companion.method606
 import Class64_Sub3.Companion.method690
 import aa.Companion.method160
 import s.Companion.method3985
-import java.awt.datatransfer.DataFlavor
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min
@@ -1125,15 +1124,7 @@ object Class66 {
             if (i == 5432) {
                 var string = ""
                 if (Class348_Sub40_Sub27.aClipboard9357 != null) {
-                    val transferable = Class348_Sub40_Sub27.aClipboard9357!!.getContents(null)
-                    if (transferable != null) {
-                        try {
-                            string = (transferable.getTransferData(DataFlavor.stringFlavor)) as String
-                            if (string == null) string = ""
-                        } catch (exception: Exception) {
-                            /* empty */
-                        }
-                    }
+                    string = Class348_Sub40_Sub27.aClipboard9357!!.getText() ?: ""
                 }
                 aStringArray1152!![anInt1170++] = string
                 return

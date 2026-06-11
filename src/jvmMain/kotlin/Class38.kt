@@ -4,8 +4,6 @@ import Class348_Sub40_Sub23.Companion.method3113
 import Class367_Sub8.Companion.method3547
 import Class5_Sub2.Companion.method195
 import aa.Companion.method159
-import java.awt.datatransfer.DataFlavor
-import java.awt.datatransfer.StringSelection
 import kotlin.math.max
 import kotlin.math.min
 
@@ -197,7 +195,7 @@ class Class38 {
                                 for (i_9_ in -1 + (Class286_Sub1.aStringArray6200)!!.size downTo 0) {
                                     if ((Class286_Sub1.aStringArray6200!![i_9_] != null) && Class286_Sub1.aStringArray6200!![i_9_]!!.length > 0) string += (Class286_Sub1.aStringArray6200!![i_9_]) + '\n'
                                 }
-                                Class348_Sub40_Sub27.aClipboard9357!!.setContents(StringSelection(string), null)
+                                Class348_Sub40_Sub27.aClipboard9357!!.setText(string)
                             }
                         } else if (i_7_ != 67 || (0x4 and i_8_) == 0) {
                             if (i_7_ != 85 || Class348_Sub38.anInt7006 <= 0) {
@@ -254,17 +252,10 @@ class Class38 {
                                 }
                             }
                         } else if (Class348_Sub40_Sub27.aClipboard9357 != null) {
-                            val transferable = Class348_Sub40_Sub27.aClipboard9357!!.getContents(null)
-                            if (transferable != null) {
-                                try {
-                                    val string = (transferable.getTransferData(DataFlavor.stringFlavor)) as String
-                                    if (string != null) {
-                                        val strings = method3113('\n', true, string)
-                                        Class348_Sub42_Sub6.method3189(0, strings)
-                                    }
-                                } catch (exception: Exception) {
-                                    /* empty */
-                                }
+                            val string = Class348_Sub40_Sub27.aClipboard9357!!.getText()
+                            if (string != null) {
+                                val strings = method3113('\n', true, string)
+                                Class348_Sub42_Sub6.method3189(0, strings)
                             }
                         }
                     } else Class59_Sub1.method555(true, 0)
