@@ -2,15 +2,48 @@ import Class239_Sub15.Companion.method1783
 import java.awt.Canvas
 import java.awt.Graphics
 
-abstract class Class348_Sub31 : Class348() {
+abstract class Class348_Sub31 : Class348(), GameSurface {
     @JvmField
     var anIntArray6916: IntArray? = null
     @JvmField
     var anInt6917: Int = 0
     var anInt6920: Int = 0
+
+    /**
+     * The display target this surface presents into; set in [method3008] when a target is
+     * available. [present] sources its `Graphics` from here. Nullable because the existing
+     * creation path can build the buffer before a target/canvas is bound.
+     */
+    @JvmField
+    var displayTarget: AwtDisplayTarget? = null
+
     abstract fun method3008(canvas: Canvas?, i: Int, i_1_: Int, i_2_: Int)
 
     abstract fun method3011(i: Int, i_38_: Int, i_39_: Int, graphics: Graphics?, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int)
+
+    // --- GameSurface (presentation seam; delegates to the existing blit) ---
+
+    override val width: Int get() = anInt6917
+    override val height: Int get() = anInt6920
+    override val pixels: IntArray get() = anIntArray6916!!
+
+    override fun present(
+        clipX: Int,
+        clipY: Int,
+        width: Int,
+        height: Int,
+        srcX: Int,
+        srcY: Int,
+        restoreClip: Boolean,
+    ) {
+        val graphics = displayTarget?.graphics()
+        // method3011(i=clipY, i_0_=srcX, i_1_=height, graphics, i_2_=restoreFlag, i_3_=clipX, i_4_=width, i_5_=srcY)
+        method3011(clipY, srcX, height, graphics, if (restoreClip) -1 else 0, clipX, width, srcY)
+    }
+
+    override fun dispose() {
+        method2715(0.toByte())
+    }
 
     companion object {
         @JvmField

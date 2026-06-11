@@ -74,6 +74,7 @@ class Class348_Sub31_Sub2 : Class348_Sub31(), ImageProducer {
         anInt9079++
         this.anInt6917 = i
         aCanvas9073 = canvas
+        displayTarget = canvas?.let { AwtDisplayTarget(it) }
         this.anIntArray6916 = IntArray((this.anInt6917 * this.anInt6920))
         aColorModel9078 = DirectColorModel(32, 16711680, 65280, 255)
         if (i_11_ <= -42) {

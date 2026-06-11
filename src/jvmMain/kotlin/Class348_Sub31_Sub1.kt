@@ -24,6 +24,7 @@ class Class348_Sub31_Sub1 : Class348_Sub31() {
 
     override fun method3008(canvas: Canvas?, i: Int, i_6_: Int, i_7_: Int) {
         aCanvas9065 = canvas
+        displayTarget = canvas?.let { AwtDisplayTarget(it) }
         aRectangle9067 = Rectangle()
         this.anInt6917 = i
         this.anInt6920 = i_7_
