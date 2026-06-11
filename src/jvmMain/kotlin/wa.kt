@@ -8,6 +8,11 @@ class wa(var_oa: oa, var_j: j, var_xa: xa) : Interface4 {
     var aXa4733: xa
     private var aLong4734 = 0L
 
+    override val textureWidth: Int get() = 0
+    override val textureHeight: Int get() = 0
+    override val texturePixels: IntArray? get() = null
+    override val textureAlpha: FloatArray? get() = null
+
     override fun method14(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, bool: Boolean, bool_5_: Boolean) {
         Z(aLong4734, this.aJ4732.nativeid, this.aXa4733.nativeid, i, i_0_, i_1_, i_2_, i_3_, i_4_, bool, bool_5_)
     }

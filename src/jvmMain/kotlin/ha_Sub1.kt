@@ -6,7 +6,7 @@ import kotlin.math.sqrt
 class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory) : ha(var_d) {
     private var anInt7465 = 0
     private var anInt7466 = 0
-    private var aClass356_7467: Class356?
+    private val aClass356_7467: HashMap<Long, GameSurface> = HashMap()
     private var aCanvas7468: DisplayTarget? = null
     @JvmField
     var aClass348_Sub31_7469: GameSurface? = null
@@ -17,7 +17,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     var anInt7473: Int = 0
     @JvmField
     var anInt7474: Int
-    private var aClass49_7475: Class49? = null
+    private var aClass49_7475: Interface4? = null
     @JvmField
     var anInt7476: Int
     @JvmField
@@ -806,7 +806,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
 
     override fun method3701(displayTarget: DisplayTarget?) {
         if (aCanvas7468 === displayTarget) method3677(null)
-        val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
+        val class348_sub31 = aClass356_7467[displayTarget.hashCode().toLong()]
         if (class348_sub31 != null) class348_sub31.dispose()
     }
 
@@ -830,10 +830,10 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3643(displayTarget: DisplayTarget?, i: Int, i_232_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
+        var class348_sub31 = aClass356_7467[displayTarget.hashCode().toLong()]
         if (class348_sub31 == null) {
             class348_sub31 = gameSurfaceFactory.create(displayTarget!!, i, i_232_)
-            aClass356_7467!!.method3483(21.toByte(), displayTarget.hashCode().toLong(), class348_sub31 as Class348?)
+            aClass356_7467[displayTarget.hashCode().toLong()] = class348_sub31
         } else if (class348_sub31.width != i || class348_sub31.height != i_232_) method3669(displayTarget, i, i_232_)
     }
 
@@ -1299,7 +1299,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         aCanvas7468 = null
         anInt7465 = 0
         anInt7472 = 0
-        aClass356_7467 = null
+        aClass356_7467.clear()
         aBoolean7470 = true
     }
 
@@ -1391,14 +1391,13 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3687(interface4: Interface4?) {
-        val class49 = interface4 as Class49
-        this.anInt7477 = class49.anInt4725
-        anInt7486 = class49.anInt4722
-        this.anIntArray7483 = class49.anIntArray4731
-        aClass49_7475 = class49
-        anInt7495 = class49.anInt4725
-        anInt7488 = class49.anInt4722
-        this.aFloatArray7511 = class49.aFloatArray4719
+        this.anInt7477 = interface4!!.textureWidth
+        anInt7486 = interface4.textureHeight
+        this.anIntArray7483 = interface4.texturePixels
+        aClass49_7475 = interface4
+        anInt7495 = interface4.textureWidth
+        anInt7488 = interface4.textureHeight
+        this.aFloatArray7511 = interface4.textureAlpha
         method3717()
     }
 
@@ -1492,7 +1491,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                 method3717()
             }
         } else {
-            val class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
+            val class348_sub31 = aClass356_7467[displayTarget.hashCode().toLong()]
             if (class348_sub31 != null) {
                 aCanvas7468 = displayTarget
                 anInt7465 = aCanvas7468!!.width
@@ -2055,11 +2054,11 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3669(displayTarget: DisplayTarget?, i: Int, i_578_: Int) {
-        var class348_sub31 = (aClass356_7467!!.method3480(displayTarget.hashCode().toLong(), -6008) as GameSurface?)
+        var class348_sub31 = aClass356_7467[displayTarget.hashCode().toLong()]
         if (class348_sub31 != null) {
             class348_sub31.dispose()
             class348_sub31 = gameSurfaceFactory.create(displayTarget!!, i, i_578_)
-            aClass356_7467!!.method3483(112.toByte(), displayTarget.hashCode().toLong(), class348_sub31 as Class348?)
+            aClass356_7467[displayTarget.hashCode().toLong()] = class348_sub31
             if (aCanvas7468 === displayTarget && aClass49_7475 == null) {
                 anInt7465 = aCanvas7468!!.width
                 anInt7472 = aCanvas7468!!.height
@@ -2102,7 +2101,6 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     init {
-        aClass356_7467 = Class356(4)
         this.anInt7474 = 45823
         aBoolean7489 = false
         anInt7487 = 0

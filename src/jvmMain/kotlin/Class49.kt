@@ -14,6 +14,11 @@ class Class49 internal constructor(var_ha_Sub1: ha_Sub1?, class105: Class105?, c
     private val aHa_Sub1_4729: ha_Sub1?
     var anIntArray4731: IntArray?
 
+    override val textureWidth: Int get() = anInt4725
+    override val textureHeight: Int get() = anInt4722
+    override val texturePixels: IntArray? get() = anIntArray4731
+    override val textureAlpha: FloatArray? get() = aFloatArray4719
+
     override fun method14(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, bool: Boolean, bool_8_: Boolean) {
         anInt4723++
         Class213.method1568((aHa_Sub1_4729!!.aClass348_Sub31_7469!!.pixels), i_3_, i, i_7_, if (bool_8_) aHa_Sub1_4729.aFloatArray7502 else null, if (bool) this.anIntArray4731 else null, i_4_, 115, i_5_, (aHa_Sub1_4729.aClass348_Sub31_7469!!.width), this.anInt4725, i_6_, if (!bool_8_) null else this.aFloatArray4719)
