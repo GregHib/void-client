@@ -123,12 +123,12 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
                 i_8_ += method260(false)
             }
             if (Class239_Sub20.anInt6048 == 1) {
-                val class105 = (Class348_Sub40_Sub37.aClass105Array9467!![Class348.anInt4292 / 100])
+                val class105 = (Class348_Sub40_Sub37.aClass105Array9467!![Class348Statics.anInt4292 / 100])
                 class105!!.method974(i_7_ - 8, i_8_ + -8)
                 Class338.method2663(-5590, -8 + i_7_, -8 + (i_7_ - -class105.method966()), -8 + i_8_, class105.method980() + -8 + i_8_)
             }
             if (Class239_Sub20.anInt6048 == 2) {
-                val class105 = (Class348_Sub40_Sub37.aClass105Array9467!![Class348.anInt4292 / 100 + 4])
+                val class105 = (Class348_Sub40_Sub37.aClass105Array9467!![Class348Statics.anInt4292 / 100 + 4])
                 class105!!.method974(i_7_ + -8, -8 + i_8_)
                 Class338.method2663(-5590, i_7_ - 8, class105.method966() + i_7_ + -8, -8 + i_8_, class105.method980() + -8 + i_8_)
             }

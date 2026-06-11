@@ -116,7 +116,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             anInt9500++
             Class75.aClass348_Sub42_Sub14_1243 = null
             Class168.aClass46_2249 = null
-            anInt4290 = 0
+            Class348Statics.anInt4290 = 0
             Class289.aClass262_3705 = null
             method749()
             Class75.aClass262_1254!!.method1996(127)

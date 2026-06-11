@@ -45,7 +45,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
             Class348_Sub42_Sub3.anInt9504 = 0
             Class234.anInt3049++
             if ((i_2_ and 0x2) == 0) {
-                var class318_sub1 = aClass318_Sub1Array4293!![i_4_]
+                var class318_sub1 = Class348Statics.aClass318_Sub1Array4293!![i_4_]
                 while (class318_sub1 != null) {
                     if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                         method4001(class318_sub1)

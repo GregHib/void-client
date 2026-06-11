@@ -16,7 +16,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
         try {
             anInt9522++
             Class286_Sub5.aD6247 = var_d
-            aClass45_4286 = class45
+            Class348Statics.aClass45_4286 = class45
             var i_2_ = 0
             while (aClass348_Sub40Array9520.size > i_2_) {
                 aClass348_Sub40Array9520[i_2_]!!.method3045(i, i_0_, -256)
@@ -114,7 +114,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
     fun method3185(i: Int, var_d: d?, i_21_: Int, bool: Boolean, d: Double, bool_22_: Boolean, class45: Class45?, i_23_: Int): IntArray {
         try {
             Class286_Sub5.aD6247 = var_d
-            aClass45_4286 = class45
+            Class348Statics.aClass45_4286 = class45
             anInt9526++
             var i_24_ = 0
             while (aClass348_Sub40Array9520.size > i_24_) {
@@ -190,7 +190,7 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
     fun method3186(i: Int, var_d: d?, bool: Boolean, i_41_: Int, class45: Class45?, i_42_: Int): FloatArray {
         try {
             anInt9525++
-            aClass45_4286 = class45
+            Class348Statics.aClass45_4286 = class45
             Class286_Sub5.aD6247 = var_d
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (-72).toByte())
             var i_43_ = 0

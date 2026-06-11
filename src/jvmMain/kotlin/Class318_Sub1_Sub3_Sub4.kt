@@ -269,15 +269,15 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             do {
                 try {
                     anInt10357++
-                    if (Class348.anInt4290 < 100) Class318_Sub7.Companion.method2512(var_d, var_ha, i.toInt() xor 0x74)
+                    if (Class348Statics.anInt4290 < 100) Class318_Sub7.Companion.method2512(var_d, var_ha, i.toInt() xor 0x74)
                     var_ha!!.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_)
-                    if (Class348.anInt4290 < 100) {
+                    if (Class348Statics.anInt4290 < 100) {
                         val i_15_ = 20
                         val i_16_ = i_12_ / 2 + i_11_
                         val i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_
                         var_ha.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
                         var_ha.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163!![Class222.anInt2884], 0)
-                        var_ha.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, Class135.aColorArray1928!![Class222.anInt2884], 0)
+                        var_ha.aa(i_16_ - 150, 2 + i_17_, Class348Statics.anInt4290 * 3, 30, Class135.aColorArray1928!![Class222.anInt2884], 0)
                         Class262.aClass324_3326!!.method2575((-116).toByte(), i_16_, Class50_Sub3.aColorArray5242!![Class222.anInt2884], Class274.aClass274_3501!!.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_)
                     } else {
                         val i_18_ = (Class348_Sub36.anInt6992 + -(i_12_.toFloat() / Class75.aFloat1247).toInt())

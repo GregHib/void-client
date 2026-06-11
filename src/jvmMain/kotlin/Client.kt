@@ -297,7 +297,7 @@ import Class345.Companion.method2693
 import Class346_Sub1.Companion.method2705
 import Class347.Companion.method2707
 import Class347.Companion.method2708
-import Class348.Companion.method2713
+import Class348Statics.method2713
 import Class348_Sub1.Companion.method2719
 import Class348_Sub10.Companion.method2785
 import Class348_Sub11.Companion.method2796

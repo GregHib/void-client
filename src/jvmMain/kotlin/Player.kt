@@ -340,7 +340,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             if (class225.aBoolean2913 && (this.aClass154_10536!!.anInt2093 == -1 || Class189.aClass278_2529!!.method2079(this.aClass154_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (Class10.aClass87_191!!.method835(this.anInt10286, 7)) else null)
                 val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (Class10.aClass87_191!!.method835(this.anInt10268, 7)))
-                val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
+                val class64 = (Class348Statics.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
                     this.aBoolean10324 = true

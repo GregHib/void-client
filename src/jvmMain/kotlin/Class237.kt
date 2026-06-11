@@ -459,49 +459,49 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             if (!bools[-i_77_ + 2 and 0x3] || is_95_!![2] != i_102_) {
                                                 if (!bools[-i_77_ + 1 and 0x3] || (is_95_!![1] != i_102_)) {
                                                     if (!(bools[0x3 and -i_77_ + 3]) || (i_102_ != is_95_!![3])) {
-                                                        Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                        Class348.anIntArray4288!![1] = is_97_[i_102_]
-                                                        Class348.anIntArray4288!![2] = is_99_[i_102_]
+                                                        Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                        Class348Statics.anIntArray4288!![1] = is_97_[i_102_]
+                                                        Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
                                                         i_119_ = 3
                                                     } else {
-                                                        Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                        Class348.anIntArray4288!![1] = 7
-                                                        Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                                        Class348.anIntArray4288!![3] = 7
-                                                        Class348.anIntArray4288!![4] = is_97_[i_102_]
+                                                        Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                        Class348Statics.anIntArray4288!![1] = 7
+                                                        Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                                        Class348Statics.anIntArray4288!![3] = 7
+                                                        Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
                                                         i_119_ = 6
-                                                        Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                                        Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                                     }
                                                 } else {
-                                                    Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                    Class348.anIntArray4288!![1] = 3
-                                                    Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                                    Class348.anIntArray4288!![3] = 3
-                                                    Class348.anIntArray4288!![4] = is_97_[i_102_]
+                                                    Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    Class348Statics.anIntArray4288!![1] = 3
+                                                    Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                                    Class348Statics.anIntArray4288!![3] = 3
+                                                    Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
                                                     i_119_ = 6
-                                                    Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                                    Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                                 }
                                             } else {
-                                                Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                Class348.anIntArray4288!![1] = 5
-                                                Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                                Class348.anIntArray4288!![3] = 5
-                                                Class348.anIntArray4288!![4] = is_97_[i_102_]
+                                                Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                Class348Statics.anIntArray4288!![1] = 5
+                                                Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                                Class348Statics.anIntArray4288!![3] = 5
+                                                Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
                                                 i_119_ = 6
-                                                Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                                Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                             }
                                         } else {
-                                            Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                            Class348.anIntArray4288!![1] = 1
-                                            Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                            Class348.anIntArray4288!![3] = 1
-                                            Class348.anIntArray4288!![4] = is_97_[i_102_]
-                                            Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                            Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                            Class348Statics.anIntArray4288!![1] = 1
+                                            Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                            Class348Statics.anIntArray4288!![3] = 1
+                                            Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
+                                            Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                             i_119_ = 6
                                         }
                                         var i_120_ = 0
                                         while ((i_119_ > i_120_)) {
-                                            val i_121_ = (Class348.anIntArray4288!![i_120_])
+                                            val i_121_ = (Class348Statics.anIntArray4288!![i_120_])
                                             val i_122_ = -(2 * i_77_) + i_121_ and 0x7
                                             val i_123_ = anIntArray3124[i_121_]
                                             val i_124_ = anIntArray3128[i_121_]
@@ -576,49 +576,49 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                         if (!bools[-i_77_ and 0x3] || i_102_ != is_95_!![0]) {
                                             if (!bools[2 + -i_77_ and 0x3] || i_102_ != is_95_!![2]) {
                                                 if (bools[0x3 and -i_77_ + 1] && (is_95_!![1] == i_102_)) {
-                                                    Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                    Class348.anIntArray4288!![1] = 3
-                                                    Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                                    Class348.anIntArray4288!![3] = 3
-                                                    Class348.anIntArray4288!![4] = is_97_[i_102_]
-                                                    Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                                    Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    Class348Statics.anIntArray4288!![1] = 3
+                                                    Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                                    Class348Statics.anIntArray4288!![3] = 3
+                                                    Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
+                                                    Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                                     i_139_ = 6
                                                 } else if ((bools[-i_77_ + 3 and 0x3]) && (i_102_ == is_95_!![3])) {
-                                                    Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                    Class348.anIntArray4288!![1] = 7
-                                                    Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                                    Class348.anIntArray4288!![3] = 7
-                                                    Class348.anIntArray4288!![4] = is_97_[i_102_]
-                                                    Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                                    Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    Class348Statics.anIntArray4288!![1] = 7
+                                                    Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                                    Class348Statics.anIntArray4288!![3] = 7
+                                                    Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
+                                                    Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                                     i_139_ = 6
                                                 } else {
-                                                    Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                    Class348.anIntArray4288!![1] = is_97_[i_102_]
+                                                    Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                    Class348Statics.anIntArray4288!![1] = is_97_[i_102_]
                                                     i_139_ = 3
-                                                    Class348.anIntArray4288!![2] = is_99_[i_102_]
+                                                    Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
                                                 }
                                             } else {
-                                                Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                                Class348.anIntArray4288!![1] = 5
-                                                Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                                Class348.anIntArray4288!![3] = 5
-                                                Class348.anIntArray4288!![4] = is_97_[i_102_]
+                                                Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                                Class348Statics.anIntArray4288!![1] = 5
+                                                Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                                Class348Statics.anIntArray4288!![3] = 5
+                                                Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
                                                 i_139_ = 6
-                                                Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                                Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                             }
                                         } else {
-                                            Class348.anIntArray4288!![0] = is_96_[i_102_]
-                                            Class348.anIntArray4288!![1] = 1
-                                            Class348.anIntArray4288!![2] = is_99_[i_102_]
-                                            Class348.anIntArray4288!![3] = 1
-                                            Class348.anIntArray4288!![4] = is_97_[i_102_]
+                                            Class348Statics.anIntArray4288!![0] = is_96_[i_102_]
+                                            Class348Statics.anIntArray4288!![1] = 1
+                                            Class348Statics.anIntArray4288!![2] = is_99_[i_102_]
+                                            Class348Statics.anIntArray4288!![3] = 1
+                                            Class348Statics.anIntArray4288!![4] = is_97_[i_102_]
                                             i_139_ = 6
-                                            Class348.anIntArray4288!![5] = is_99_[i_102_]
+                                            Class348Statics.anIntArray4288!![5] = is_99_[i_102_]
                                         }
                                         i_102_++
                                         var i_140_ = 0
                                         while ((i_140_ < i_139_)) {
-                                            val i_141_ = (Class348.anIntArray4288!![i_140_])
+                                            val i_141_ = (Class348Statics.anIntArray4288!![i_140_])
                                             val i_142_ = -(2 * i_77_) + i_141_ and 0x7
                                             val i_143_ = anIntArray3124[i_141_]
                                             val i_144_ = anIntArray3128[i_141_]

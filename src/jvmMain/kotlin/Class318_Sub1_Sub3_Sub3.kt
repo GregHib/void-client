@@ -859,7 +859,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
                 for (i in 0..<Class86.anInt1477) Class24.aClass318_Sub1_Sub3Array357!![i] = null
                 Class86.anInt1477 = 0
             }
-            Class348.aClass318_Sub1Array4293 = null
+            Class348Statics.aClass318_Sub1Array4293 = null
             Class250.aClass318_Sub1Array3226 = null
             Class115.aClass318_Sub1Array1754 = null
             if (Class239_Sub21.aClass318_Sub1Array6066 != null) {

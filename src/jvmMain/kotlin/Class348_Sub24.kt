@@ -338,8 +338,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             }
                             Class348_Sub51.anInt7267++
                             if (Class239_Sub20.anInt6048 != 0) {
-                                anInt4292 += 20
-                                if (anInt4292 >= 400) Class239_Sub20.anInt6048 = 0
+                                Class348Statics.anInt4292 += 20
+                                if (Class348Statics.anInt4292 >= 400) Class239_Sub20.anInt6048 = 0
                             }
                             if (Class311.aClass46_3913 != null) {
                                 Class108.anInt1656++

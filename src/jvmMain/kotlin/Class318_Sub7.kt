@@ -305,15 +305,15 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
             try {
                 anInt6440++
                 if (Class75.aClass348_Sub42_Sub14_1243 != null) {
-                    if (Class348.anInt4290 < 10) {
+                    if (Class348Statics.anInt4290 < 10) {
                         if (!Class75.aClass45_1237!!.method413(100, Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
-                            Class348.anInt4290 = (Class348_Sub32.aClass45_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
+                            Class348Statics.anInt4290 = (Class348_Sub32.aClass45_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
                             return
                         }
                         method126(-16203)
-                        Class348.anInt4290 = 10
+                        Class348Statics.anInt4290 = 10
                     }
-                    if (Class348.anInt4290 == 10) {
+                    if (Class348Statics.anInt4290 == 10) {
                         Class75.anInt1266 = (Class75.aClass348_Sub42_Sub14_1243!!.anInt9644 shr 6 shl 6)
                         Class75.anInt1263 = (Class75.aClass348_Sub42_Sub14_1243!!.anInt9643 shr 6 shl 6)
                         Class75.anInt1259 = 64 + ((Class75.aClass348_Sub42_Sub14_1243!!.anInt9635 shr 6 shl 6) - Class75.anInt1266)
@@ -387,61 +387,61 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                         Class75.aClass141_1242!!.method1178(256, 1, 256)
                         Class75.aClass263_1245!!.method2014(4096, true)
                         Class229.aClass194_2981!!.method1444(256, 123)
-                        Class348.anInt4290 = 20
-                    } else if (Class348.anInt4290 == 20) {
+                        Class348Statics.anInt4290 = 20
+                    } else if (Class348Statics.anInt4290 == 20) {
                         Class289.method2193(true, (-123).toByte())
                         method756(var_ha, Class75.anInt1250, Class75.anInt1253)
-                        Class348.anInt4290 = 60
+                        Class348Statics.anInt4290 = 60
                         Class289.method2193(true, (-122).toByte())
                         method867(true)
                     } else if (i <= -43) {
-                        if (Class348.anInt4290 == 60) {
+                        if (Class348Statics.anInt4290 == 60) {
                             if (Class75.aClass45_1237!!.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) {
                                 if (!Class75.aClass45_1237!!.method413(100, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements")) return
                                 Class75.aClass252_1246 = (Class307.method2300(Class75.aClass45_1237, (Class75.aClass348_Sub42_Sub14_1243!!.aString9625) + "_staticelements", Class130.aBoolean1900, (-91).toByte()))
                             } else Class75.aClass252_1246 = Class252(0)
                             method761()
-                            Class348.anInt4290 = 70
+                            Class348Statics.anInt4290 = 70
                             Class289.method2193(true, (-127).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 70) {
+                        } else if (Class348Statics.anInt4290 == 70) {
                             Class125.aClass323_4921 = Class323(var_ha!!, 11, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 73
+                            Class348Statics.anInt4290 = 73
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 73) {
+                        } else if (Class348Statics.anInt4290 == 73) {
                             Class14_Sub4.aClass323_8644 = Class323(var_ha!!, 12, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 76
+                            Class348Statics.anInt4290 = 76
                             Class289.method2193(true, (-125).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 76) {
+                        } else if (Class348Statics.anInt4290 == 76) {
                             Class39.aClass323_521 = Class323(var_ha!!, 14, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 79
+                            Class348Statics.anInt4290 = 79
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 79) {
+                        } else if (Class348Statics.anInt4290 == 79) {
                             Class168.aClass323_2252 = Class323(var_ha!!, 17, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 82
+                            Class348Statics.anInt4290 = 82
                             Class289.method2193(true, (-124).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 82) {
+                        } else if (Class348Statics.anInt4290 == 82) {
                             Class176.aClass323_2333 = Class323(var_ha!!, 19, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 85
+                            Class348Statics.anInt4290 = 85
                             Class289.method2193(true, (-128).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 85) {
+                        } else if (Class348Statics.anInt4290 == 85) {
                             Class285.aClass323_4754 = Class323(var_ha!!, 22, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 88
+                            Class348Statics.anInt4290 = 88
                             Class289.method2193(true, (-124).toByte())
                             method867(true)
-                        } else if (Class348.anInt4290 == 88) {
+                        } else if (Class348Statics.anInt4290 == 88) {
                             Class348_Sub3.aClass323_6581 = Class323(var_ha!!, 26, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 91
+                            Class348Statics.anInt4290 = 91
                             Class289.method2193(true, (-125).toByte())
                             method867(true)
                         } else {
                             Class240.aClass323_4672 = Class323(var_ha!!, 30, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
-                            Class348.anInt4290 = 100
+                            Class348Statics.anInt4290 = 100
                             Class289.method2193(true, (-119).toByte())
                             method867(true)
                             System.gc()

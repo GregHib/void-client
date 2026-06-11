@@ -1,6 +1,6 @@
 import Class288.Companion.method2187
 import Class288_Sub1.Companion.method2189
-import Class348.Companion.method2709
+import Class348Statics.method2709
 
 /* Class337 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

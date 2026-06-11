@@ -5,7 +5,7 @@ class Class239_Sub12 : Class239 {
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt5972++
         if (i != 3) return 121
-        if (!Class348.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
+        if (!Class348Statics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
         return 1
     }
 
@@ -26,7 +26,7 @@ class Class239_Sub12 : Class239 {
     override fun method1716(bool: Boolean) {
         if (bool != false) method1716(false)
         anInt5962++
-        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-119).toByte()) && !Class348.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
+        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-119).toByte()) && !Class348Statics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
         if (this.anInt3138 < 0 || this.anInt3138 > 1) this.anInt3138 = method1710(20014)
     }
 
@@ -35,7 +35,7 @@ class Class239_Sub12 : Class239 {
     fun method1774(i: Int): Boolean {
         if (i < 85) method1773(116.toByte())
         anInt5961++
-        return Class348.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
+        return Class348Statics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
     }
 
     override fun method1710(i: Int): Int {

@@ -132,7 +132,7 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
                 Class331.anInt4135 = 0
             }
             method1879(false)
-            aClass318_Sub1Array4293 = arrayOfNulls<Class318_Sub1>(2)
+            Class348Statics.aClass318_Sub1Array4293 = arrayOfNulls<Class318_Sub1>(2)
             Class250.aClass318_Sub1Array3226 = arrayOfNulls<Class318_Sub1>(2)
             Class115.aClass318_Sub1Array1754 = arrayOfNulls<Class318_Sub1>(2)
             Class239_Sub21.aClass318_Sub1Array6066 = arrayOfNulls<Class318_Sub1>(10000)

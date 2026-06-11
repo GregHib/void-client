@@ -10,7 +10,7 @@ import Class286_Sub3.Companion.method2148
 import Class299_Sub2_Sub1.Companion.method2271
 import Class318_Sub1_Sub2.Companion.method2405
 import Class318_Sub1_Sub4.Companion.method2478
-import Class348.Companion.method2710
+import Class348Statics.method2710
 import Class348_Sub23_Sub1.Companion.method2972
 import Class348_Sub40_Sub23.Companion.method3113
 import Class367_Sub10.Companion.method3553

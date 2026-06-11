@@ -468,7 +468,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 } else {
                                     Class93.anInt1534 = i_72_
                                     Class26.anInt385 = i_73_
-                                    Class348.anInt4292 = 0
+                                    Class348Statics.anInt4292 = 0
                                     Class239_Sub20.anInt6048 = 1
                                 }
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47)
@@ -479,7 +479,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             Class239_Sub20.anInt6048 = 2
                             Class26.anInt385 = i_73_
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class21.anInt321++
                             val class348_sub47 = method2148((Class348_Sub42_Sub8.aClass351_9553), (Class348_Sub23_Sub2.aClass77_9029), -113)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class90.regionTileY + i_75_)
@@ -493,7 +493,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class239_Sub20.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             Class26.anInt385 = i_73_
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
@@ -510,7 +510,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 48) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 Class216.anInt4979++
@@ -524,7 +524,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         }
                         if (i_76_ == 49) {
                             Class26.anInt385 = i_73_
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             Class205.anInt2689++
@@ -544,7 +544,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (class46 != null) method1237(71.toByte(), class46)
                         }
                         if (i_76_ == 5) {
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class15.anInt226++
                             Class26.anInt385 = i_73_
                             Class239_Sub20.anInt6048 = 2
@@ -560,7 +560,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 46) {
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class187.anInt2499++
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
@@ -576,7 +576,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 11) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class127.anInt4657++
                                 Class93.anInt1534 = i_72_
                                 Class239_Sub20.anInt6048 = 2
@@ -591,7 +591,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 59) {
                             Class26.anInt385 = i_73_
                             Class93.anInt1534 = i_72_
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class178.anInt2336++
                             Class239_Sub20.anInt6048 = 2
                             val class348_sub47 = method2148((Class101_Sub1.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83)
@@ -605,7 +605,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 30) {
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 val npc = (class348_sub22.aNpc_6859)!!
@@ -627,7 +627,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 Class55.anInt994++
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class239_Sub20.anInt6048 = 1
                                 val class348_sub47 = method2148((Class195.aClass351_5015), (Class348_Sub23_Sub2.aClass77_9029), -123)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(101, za_Sub2.regionTileX + i_74_)
@@ -639,7 +639,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             Class35.anInt484++
                             Class239_Sub20.anInt6048 = 2
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class26.anInt385 = i_73_
                             val class348_sub47 = method2148(Class205.aClass351_2691, (Class348_Sub23_Sub2.aClass77_9029), -115)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
@@ -651,7 +651,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
                                 Class228.anInt2975++
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 val class348_sub47 = method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -93)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
@@ -666,7 +666,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 45) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class101.anInt1596++
                                 Class239_Sub20.anInt6048 = 2
@@ -682,7 +682,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class239_Sub20.anInt6048 = 2
                             Class318_Sub1_Sub5_Sub2.anInt10164++
                             Class26.anInt385 = i_73_
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148(Class193.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
@@ -697,7 +697,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (player != null) {
                                 Class239_Sub20.anInt6048 = 2
                                 Class318_Sub1_Sub4_Sub1.anInt10073++
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class26.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val class348_sub47 = method2148((Class52.aClass351_4905), (Class348_Sub23_Sub2.aClass77_9029), -113)
@@ -719,7 +719,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
                                 Class296.anInt3768++
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 val class348_sub47 = method2148((Class251.aClass351_3232), (Class348_Sub23_Sub2.aClass77_9029), -84)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!Class182.aClass346_2449!!.method2696(82, -128)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-99, i_77_)
@@ -730,7 +730,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 21) {
                             Class93.anInt1534 = i_72_
                             Class239_Sub8.anInt5919++
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2
                             Class26.anInt385 = i_73_
                             val class348_sub47 = method2148(r_Sub1.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107)
@@ -744,7 +744,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 15) {
                             Class239_Sub20.anInt6048 = 1
                             Class26.anInt385 = i_73_
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class93.anInt1534 = i_72_
                             Client.anInt5187++
                             val class348_sub47 = method2148(Class344.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127)
@@ -760,7 +760,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 Class290.anInt3707++
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class26.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
@@ -773,7 +773,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 2) {
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2
                             r_Sub1.anInt10476++
                             Class26.anInt385 = i_73_
@@ -792,7 +792,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 58) {
                             val player = (Class294.aPlayerArray5058!![i_77_])
                             if (player != null) {
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
@@ -811,7 +811,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class93.anInt1534 = i_72_
                                 Class14_Sub3.anInt8625++
                                 Class26.anInt385 = i_73_
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 val class348_sub47 = method2148((Class25.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!Class182.aClass346_2449!!.method2696(82, -126)) 0 else 1))
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
@@ -822,7 +822,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 47) {
                             Class26.anInt385 = i_73_
                             Class239_Sub20.anInt6048 = 2
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class316.anInt3966++
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub49_Sub1.aClass351_9749), (Class348_Sub23_Sub2.aClass77_9029), -81)
@@ -836,7 +836,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         if (i_76_ == 3) {
                             Class151.anInt2065++
                             Class26.anInt385 = i_73_
-                            Class348.anInt4292 = 0
+                            Class348Statics.anInt4292 = 0
                             Class239_Sub20.anInt6048 = 2
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub42_Sub17.aClass351_9679), (Class348_Sub23_Sub2.aClass77_9029), -98)
@@ -854,7 +854,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class26.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
                                 val npc = (class348_sub22.aNpc_6859)!!
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class328_Sub2.anInt6516++
                                 val class348_sub47 = method2148((Class339.aClass351_4207), (Class348_Sub23_Sub2.aClass77_9029), -81)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_77_)
@@ -869,14 +869,14 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348_Sub42_Sub18.anInt9686++
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 val class348_sub47 = method2148((Class65.aClass351_1144), (Class348_Sub23_Sub2.aClass77_9029), -96)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 Class348_Sub42_Sub14.method3243(125, class348_sub47)
                             }
                             if (i_76_ == 22) {
                                 Class239_Sub20.anInt6048 = 2
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
                                 Class348_Sub42_Sub13.anInt9620++
@@ -891,7 +891,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (i_76_ == 50) {
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
-                                Class348.anInt4292 = 0
+                                Class348Statics.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class228.anInt2975++
                                 val class348_sub47 = method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -127)
@@ -923,7 +923,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         Class299_Sub1_Sub2.anInt8702++
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         Class26.anInt385 = i_73_
-                                        Class348.anInt4292 = 0
+                                        Class348Statics.anInt4292 = 0
                                         val class348_sub47 = (method2148(Class348_Sub18.aClass351_6814, Class348_Sub23_Sub2.aClass77_9029, -125))
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!Class182.aClass346_2449!!.method2696(82, -125)) 0 else 1)
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
@@ -937,7 +937,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         Class239_Sub20.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
                                         Class369_Sub2.anInt8588++
-                                        Class348.anInt4292 = 0
+                                        Class348Statics.anInt4292 = 0
                                         Class26.anInt385 = i_73_
                                         val class348_sub47 = (method2148(Class348_Sub42_Sub5.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -115))
                                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-88, i_77_)
@@ -949,7 +949,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 if (i_76_ == 9) {
                                     Class318_Sub1_Sub3_Sub4.anInt10364++
                                     Class26.anInt385 = i_73_
-                                    Class348.anInt4292 = 0
+                                    Class348Statics.anInt4292 = 0
                                     Class239_Sub20.anInt6048 = 2
                                     Class93.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(Class252.aClass351_3237, Class348_Sub23_Sub2.aClass77_9029, -125))
@@ -965,7 +965,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     if (class348_sub22 != null) {
                                         val npc = (class348_sub22.aNpc_6859)!!
                                         Class93.anInt1534 = i_72_
-                                        Class348.anInt4292 = 0
+                                        Class348Statics.anInt4292 = 0
                                         Class26.anInt385 = i_73_
                                         Class239_Sub20.anInt6048 = 2
                                         Class73.anInt4773++
@@ -979,7 +979,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 if (i_76_ == 10) {
                                     Class239_Sub20.anInt6048 = 2
                                     Class26.anInt385 = i_73_
-                                    Class348.anInt4292 = 0
+                                    Class348Statics.anInt4292 = 0
                                     Class300.anInt3820++
                                     Class93.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(Class188.aClass351_2512, Class348_Sub23_Sub2.aClass77_9029, -91))

@@ -777,7 +777,7 @@ class Class361 {
                     anInt4442++
                     var_ha!!.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i)
                     var_ha.method3675(i_40_, (-125).toByte(), i_39_, i_41_, i, -16777216)
-                    if (Class348.anInt4290 >= 100) {
+                    if (Class348Statics.anInt4290 >= 100) {
                         val f = (Class75.anInt1267.toFloat() / Class75.anInt1259.toFloat())
                         var i_42_ = i_40_
                         var i_43_ = i

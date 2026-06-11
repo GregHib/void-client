@@ -1,5 +1,5 @@
 import Class205.method1496
-import Class348.Companion.method2711
+import Class348Statics.method2711
 import Class348_Sub17.Companion.method2929
 import Class79.Companion.method802
 import OutputStream_Sub2.Companion.method136
