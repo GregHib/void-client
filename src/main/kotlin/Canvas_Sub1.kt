@@ -302,6 +302,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         else Class122.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, Class170.aClass237_Sub1_5067)
                         Class348_Sub18.method2938(73.toByte())
                         Class289.method2193(true, (-121).toByte())
+                        Class170.aClass237_Sub1_5067!!.method1680((Class348_Sub1_Sub1.aSArray8801!![0]), (-127).toByte(), null, (Class348_Sub8.aHa6654))
                         Class170.aClass237_Sub1_5067!!.method1697(true, Class348_Sub8.aHa6654, i + -60)
                         Class289.method2193(true, (-126).toByte())
                         Class243.method1879(false)

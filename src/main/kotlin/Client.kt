@@ -124,7 +124,7 @@ import Class225.Companion.method1619
 import Class226.Companion.method1624
 import Class227.Companion.method1627
 import Class228.method1628
-import Class229.method1632
+import Class229.Companion.method1632
 import Class230.Companion.method1635
 import Class231.Companion.method1641
 import Class232.Companion.method1645
