@@ -74,7 +74,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
             }
             if (Class221.aBoolean2881) bool = false
             if (Class330.aBoolean4117) bool_5_ = false
-            if (Class348_Sub1.aBoolean6558) bool_6_ = false
+            if (Class348_Sub1Statics.aBoolean6558) bool_6_ = false
             if (!bool && !bool_5_ && !bool_6_) return method2348(-8454)
             var i_7_ = -1
             var i_8_ = -1

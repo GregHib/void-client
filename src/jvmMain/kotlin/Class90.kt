@@ -21,34 +21,34 @@ object Class90 {
 
     fun method853(i: Byte) {
         anInt1515++
-        val i_0_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-        val i_1_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
-        val bool = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 156) == 1
-        val i_2_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(i + -172)
-        Class312.anInt3931 = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
+        val i_0_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+        val i_1_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-121)
+        val bool = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 156) == 1
+        val i_2_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(i + -172)
+        Class312.anInt3931 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteAdd((-112).toByte())
         Class322.method2554((-45).toByte())
         method3111(125, i_0_)
-        Class299.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)
+        Class299Statics.aClass348_Sub49_Sub2_3813!!.startBitAccess(-122)
         for (i_3_ in 0..3) {
             var i_4_ = 0
             while ((Class367_Sub4.anInt7319 shr 3 > i_4_)) {
                 var i_5_ = 0
                 while ((i_5_ < Class348_Sub40_Sub3.anInt9109 shr 3)) {
-                    val i_6_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
+                    val i_6_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                     if (i_6_ != 1) Class62.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = -1
-                    else Class62.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 26)
+                    else Class62.anIntArrayArrayArray1116!![i_3_]!![i_4_]!![i_5_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 26)
                     i_5_++
                 }
                 i_4_++
             }
         }
-        Class299.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
-        var i_7_ = (-Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16
+        Class299Statics.aClass348_Sub49_Sub2_3813!!.stopBitAccess(false)
+        var i_7_ = (-Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16
         Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_7_) { IntArray(4) }
         var i_8_ = 0
         if (i.toInt() != 99) method852(-55)
         while ( /**/i_8_ < i_7_) {
-            for (i_9_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_8_]!![i_9_] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+            for (i_9_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_8_]!![i_9_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             i_8_++
         }
         Class322.anIntArray4031 = null

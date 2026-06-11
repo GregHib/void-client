@@ -1,4 +1,4 @@
-import Class299.Companion.method2253
+import Class299Statics.method2253
 import kotlin.math.cos
 import kotlin.math.pow
 import kotlin.math.sin

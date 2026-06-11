@@ -376,7 +376,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 method705(class348_sub36)
                             }
                             while (true) {
-                                val class348_sub36 = (Class365.aClass262_4473!!.method1997(8) as? Class348_Sub36?)
+                                val class348_sub36 = (Class365Statics.aClass262_4473!!.method1997(8) as? Class348_Sub36?)
                                 if (class348_sub36 == null) break
                                 val class46 = (class348_sub36.aClass46_6989)!!
                                 if (class46.anInt704 >= 0) {

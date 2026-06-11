@@ -1,4 +1,4 @@
-import Class299.Companion.method2253
+import Class299Statics.method2253
 import Class348_Sub10.Companion.method2788
 import Class348_Sub10.Companion.method2789
 import kotlin.math.min

@@ -111,7 +111,7 @@ class Class88 {
             }
             Class159.method1252(i_1_, r.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, 116.toByte(), i)
             if (Class138.aClass46Array1942 != null) {
-                method3064(i, Class136.anInt4792, true, Class348_Sub1.anInt6555, i_1_, Class331.aClass46_4130!!.anInt760, i + Class321.anInt4017, false, Class138.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432)
+                method3064(i, Class136.anInt4792, true, Class348_Sub1Statics.anInt6555, i_1_, Class331.aClass46_4130!!.anInt760, i + Class321.anInt4017, false, Class138.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432)
                 Class138.aClass46Array1942 = null
             }
         }
@@ -159,8 +159,8 @@ class Class88 {
                     }
                     if (Class225.anInt2955 == 3) {
                         if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 107)) return
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                        val i_3_ = ((Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
+                        Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-118).toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        val i_3_ = ((Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_3_ != 0) {
                             Class225.anInt2955 = 0
                             Class14_Sub4.method254(i_3_, (-113).toByte())
@@ -169,7 +169,7 @@ class Class88 {
                             Class152.method1215(3.toByte())
                             return
                         }
-                        Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                        Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                         val class348_sub49 = Class348_Sub49(518)
                         val `is` = IntArray(4)
                         `is`[0] = (Math.random() * 9.9999999E7).toInt()
@@ -242,13 +242,13 @@ class Class88 {
                         method1802(0)
                         Class348_Sub23_Sub2.aClass77_9029 = Class77(`is`)
                         for (i_10_ in 0..3) `is`[i_10_] += 50
-                        Class299.aClass348_Sub49_Sub2_3813!!.method3406(-111, `is`)
+                        Class299Statics.aClass348_Sub49_Sub2_3813!!.method3406(-111, `is`)
                         Class225.anInt2955 = 4
                     }
                     if (Class225.anInt2955 == 4) {
                         if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 94)) return
-                        Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-117).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                        val i_11_ = ((Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
+                        Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-117).toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                        val i_11_ = ((Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt() and 0xff)
                         if (i_11_ != 21) {
                             if (i_11_ == 29) Class225.anInt2955 = 13
                             else {
@@ -292,8 +292,8 @@ class Class88 {
                         Class225.anInt2955 = 4
                     } else if (Class225.anInt2955 == 7) {
                         if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 118)) {
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-109).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                            val i_12_ = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-109).toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            val i_12_ = 0xff and (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             Class225.anInt2955 = 0
                             Class63.anInt1121 = (3 + i_12_) * 60
                             Class14_Sub4.method254(21, (-95).toByte())
@@ -303,9 +303,9 @@ class Class88 {
                         }
                     } else if (Class225.anInt2955 == 13) {
                         if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 102)) {
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-128).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-128).toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             Class225.anInt2955 = 0
-                            Class348_Sub42_Sub7.anInt9541 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                            Class348_Sub42_Sub7.anInt9541 = 0xff and (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             Class14_Sub4.method254(29, (-97).toByte())
                             Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                             Class348_Sub40_Sub8.aClass238_9165 = null
@@ -313,13 +313,13 @@ class Class88 {
                         }
                     } else if (Class225.anInt2955 == 8) {
                         if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 107)) {
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-107).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                            Class76.Companion.anInt1288 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
+                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-107).toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            Class76.Companion.anInt1288 = 0xff and (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!![0]).toInt()
                             Class225.anInt2955 = 9
                         }
                     } else {
                         if (Class225.anInt2955 == 9) {
-                            val class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813
+                            val class348_sub49_sub2 = Class299Statics.aClass348_Sub49_Sub2_3813
                             if (Class239_Sub12.anInt5969 == 2) {
                                 if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class76.Companion.anInt1288, 93)) return
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class76.Companion.anInt1288, 0, 60.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
@@ -361,7 +361,7 @@ class Class88 {
                                 Class132.aPlayer_1907!!.aString10537 = s_Sub2.aString8265
                                 Class132.aPlayer_1907!!.aString10544 = Class132.aPlayer_1907!!.aString10537
                                 Applet_Sub1.anInt37 = class348_sub49_sub2.readUnsignedByte(255)
-                                Class348_Sub1.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())
+                                Class348_Sub1Statics.anInt6551 = class348_sub49_sub2.readInt((-126).toByte())
                                 aa_Sub2.aClass161_5199 = Class161()
                                 aa_Sub2.aClass161_5199!!.anInt2143 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 if (aa_Sub2.aClass161_5199!!.anInt2143 == 65535) aa_Sub2.aClass161_5199!!.anInt2143 = -1
@@ -410,11 +410,11 @@ class Class88 {
                         }
                         if (Class225.anInt2955 == 11) {
                             if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(3, 94)) return
-                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(3, 0, 11.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                            Class348_Sub40_Sub8.aClass238_9165!!.method1701(3, 0, 11.toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
                             Class225.anInt2955 = 12
                         }
                         if (Class225.anInt2955 == 12) {
-                            val class348_sub49_sub2 = Class299.aClass348_Sub49_Sub2_3813
+                            val class348_sub49_sub2 = Class299Statics.aClass348_Sub49_Sub2_3813
                             class348_sub49_sub2!!.anInt7197 = 0
                             if (class348_sub49_sub2.method3404(-1510)) {
                                 if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 110)) return
@@ -426,17 +426,17 @@ class Class88 {
                         }
                         if (Class225.anInt2955 == 10) {
                             if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 96)) {
-                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, 28.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, 28.toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                 Class225.anInt2955 = 0
                                 val i_13_ = Class348_Sub40_Sub25.anInt9341
                                 Class14_Sub4.method254(2, (-124).toByte())
                                 Class130_Sub1.method1135(0)
-                                Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                Class239_Sub5.method1741(Class299Statics.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 ha.anInt4581 = -1
                                 if (Class348_Sub3.aClass114_6584 != Class19.aClass114_304) method3120(-92)
                                 else Class90.method853(99.toByte())
-                                if (i_13_ != Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
+                                if (i_13_ != Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("lswp pos:" + (Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_13_)
                                 Class348_Sub3.aClass114_6584 = null
                             }
                         } else {
@@ -444,19 +444,19 @@ class Class88 {
                             if (Class225.anInt2955 == 14) {
                                 if (Class348_Sub40_Sub25.anInt9341 == -2) {
                                     if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(2, 106)) return
-                                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(2, 0, (-128).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                    Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                                    Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(2, 0, (-128).toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                    Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                                    Class348_Sub40_Sub25.anInt9341 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                                 }
                                 if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 117)) {
-                                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-104).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
-                                    Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+                                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-104).toByte(), (Class299Statics.aClass348_Sub49_Sub2_3813!!.aByteArray7154!!))
+                                    Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                                     val i_15_ = Class348_Sub40_Sub25.anInt9341
                                     Class225.anInt2955 = 0
                                     Class14_Sub4.method254(15, (-120).toByte())
                                     Class312.method2330(86.toByte())
-                                    Class239_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813!!, 118.toByte())
-                                    if (i_15_ != (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
+                                    Class239_Sub5.method1741(Class299Statics.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                    if (i_15_ != (Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
                                     Class348_Sub3.aClass114_6584 = null
                                 }
                             }

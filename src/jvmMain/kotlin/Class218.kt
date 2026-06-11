@@ -34,7 +34,7 @@ class Class218 {
         var class105 = this.aClass141_2851!!.aClass60_1976.method583(l, -87) as Class105?
         if (class105 != null) return class105
         if (!this.aClass141_2851!!.aClass45_1965!!.method421(false, this.anInt2853)) return null
-        val class207 = Class207.method1521(this.aClass141_2851!!.aClass45_1965!!, this.anInt2853, 0)
+        val class207 = Class207Statics.method1521(this.aClass141_2851!!.aClass45_1965!!, this.anInt2853, 0)
         if (class207 != null) {
             class207.anInt2700 = 0
             class207.anInt2698 = class207.anInt2700

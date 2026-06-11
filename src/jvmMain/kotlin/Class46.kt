@@ -161,7 +161,7 @@ class Class46 {
         anInt767++
         var var_aa = Class239_Sub24.aClass60_6096!!.method583(this.anInt830.toLong(), 119) as aa?
         if (var_aa != null) return var_aa
-        val class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
+        val class207 = Class207Statics.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
         if (class207 == null) return null
         val i_10_ = (class207.anInt2703 + (class207.anInt2702 + class207.anInt2698))
         val i_11_ = (class207.anInt2700 + (class207.anInt2696 + class207.anInt2701))
@@ -665,7 +665,7 @@ class Class46 {
         var class105 = Class351.aClass60_4327!!.method583(l, -71) as Class105?
         if (i > -27) method434(true)
         if (class105 != null) return class105
-        val class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
+        val class207 = Class207Statics.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
         if (class207 == null) {
             Class348_Sub42_Sub13.aBoolean9616 = true
             return null
@@ -794,7 +794,7 @@ class Class46 {
             Class101_Sub3.aClass326_5764!!.method2602(0)
             Class30.aClass84_413!!.method816(false)
             Class123.aClass25_1813!!.method302(-797644856)
-            Class348_Sub1.aClass185_6559!!.method1390(23)
+            Class348_Sub1Statics.aClass185_6559!!.method1390(23)
             Class239.aClass166_3147!!.method1283(1)
             Class136.aClass65_4787!!.method694(-1007)
             Class73.aClass219_4782!!.method1598(111)

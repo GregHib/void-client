@@ -139,7 +139,7 @@ class Class188 internal constructor(private val aHa_Sub2_2511: ha_Sub2) {
             Class348_Sub23_Sub2.aClass187_9036!!.method1409(5, -20721)
             Class30.aClass84_413!!.method819(74.toByte(), 5)
             Class123.aClass25_1813!!.method299(5, 16)
-            Class348_Sub1.aClass185_6559!!.method1392(88, 5)
+            Class348_Sub1Statics.aClass185_6559!!.method1392(88, 5)
             Class239.aClass166_3147!!.method1285(i, 8)
             Class136.aClass65_4787!!.method697(5, 26)
             Class73.aClass219_4782!!.method1603(5, -66)

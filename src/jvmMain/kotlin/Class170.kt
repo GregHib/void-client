@@ -161,14 +161,14 @@ class Class170 : Interface17 {
         }
 
         fun method1311(i: Int, var_ha: ha) {
-            Class199.aClass352Array2636 = arrayOfNulls<Class352>(Class348_Sub1.anIntArray6547!!.size)
+            Class199.aClass352Array2636 = arrayOfNulls<Class352>(Class348_Sub1Statics.anIntArray6547!!.size)
             anInt5064++
             if (i != 5139) anInt5065 = 62
             var i_21_ = 0
-            while ((i_21_ < Class348_Sub1.anIntArray6547!!.size)) {
-                val i_22_ = Class348_Sub1.anIntArray6547!![i_21_]
+            while ((i_21_ < Class348_Sub1Statics.anIntArray6547!!.size)) {
+                val i_22_ = Class348_Sub1Statics.anIntArray6547!![i_21_]
                 val class143 = Class239_Sub10.method1766((-86).toByte(), i_22_, s.aClass45_4585!!)
-                val class324 = var_ha.method3686(class143, Class207.method1523(Class39.aClass45_518!!, i_22_), true)
+                val class324 = var_ha.method3686(class143, Class207Statics.method1523(Class39.aClass45_518!!, i_22_), true)
                 Class199.aClass352Array2636!![i_21_] = Class352(class324, class143)
                 i_21_++
             }
@@ -210,11 +210,11 @@ class Class170 : Interface17 {
             for (i_38_ in 0..<Class101.anInt1597) {
                 val i_39_ = Class13.anIntArray224!![i_38_]
                 val npc = ((Class282.aClass356_3654!!.method3480(i_39_.toLong(), -6008) as Class348_Sub22).aNpc_6859)!!
-                var i_40_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if ((0x10 and i_40_) != 0) i_40_ += Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i xor 0xff00.inv()) shl 8
+                var i_40_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                if ((0x10 and i_40_) != 0) i_40_ += Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i xor 0xff00.inv()) shl 8
                 if ((0x2 and i_40_) != 0) {
                     if (npc.aClass79_10505!!.method793(i xor 0xffff.inv())) method181(true, npc)
-                    npc.method2448((Class189.aClass278_2529!!.method2079(Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(-1), -1)), -2)
+                    npc.method2448((Class189.aClass278_2529!!.method2079(Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(-1), -1)), -2)
                     npc.method2434(95.toByte(), npc.aClass79_10505!!.anInt1399)
                     npc.anInt10310 = npc.aClass79_10505!!.anInt1329 shl 3
                     if (npc.aClass79_10505!!.method793(0)) Class223.method1614(979190089, npc, (npc.plane).toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
@@ -222,66 +222,66 @@ class Class170 : Interface17 {
                 if ((0x8 and i_40_) != 0) {
                     val `is` = IntArray(4)
                     for (i_41_ in 0..3) {
-                        `is`[i_41_] = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        `is`[i_41_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         if (`is`[i_41_] == 65535) `is`[i_41_] = -1
                     }
-                    val i_42_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-121).toByte())
+                    val i_42_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-121).toByte())
                     Class348_Sub17.method2931(i_42_, 115.toByte(), `is`, npc)
                 }
                 if ((i_40_ and 0x20) != 0) {
-                    var i_43_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                    val i_44_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
+                    var i_43_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                    val i_44_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                     if (i_43_ == 65535) i_43_ = -1
-                    val i_45_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                    val i_45_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_46_ = 0x7 and i_45_
                     var i_47_ = (i_45_ and 0x79) shr 3
                     if (i_47_ == 15) i_47_ = -1
                     npc.method2437(i_46_, i_43_, i xor 0x3c569b2e, i_47_, false, i_44_)
                 }
                 if ((0x4000 and i_40_) != 0) {
-                    val i_48_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                    val i_48_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                     val `is` = IntArray(i_48_)
                     val is_49_ = IntArray(i_48_)
                     val is_50_ = IntArray(i_48_)
                     var i_51_ = 0
                     while (i_48_ > i_51_) {
-                        var i_52_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        var i_52_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         if (i_52_ == 65535) i_52_ = -1
                         `is`[i_51_] = i_52_
-                        is_49_[i_51_] = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
-                        is_50_[i_51_] = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-109)
+                        is_49_[i_51_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
+                        is_50_[i_51_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-109)
                         i_51_++
                     }
                     method3548(-7387, npc, is_50_, `is`, is_49_)
                 }
                 if ((i_40_ and 0x200) != 0) {
-                    val i_53_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-121).toByte())
+                    val i_53_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-121).toByte())
                     val `is` = IntArray(i_53_)
                     val is_54_ = IntArray(i_53_)
                     var i_55_ = 0
                     while (i_53_ > i_55_) {
-                        val i_56_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
+                        val i_56_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
                         if ((0xc000 and i_56_) == 49152) {
-                            val i_57_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842463480)
+                            val i_57_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842463480)
                             `is`[i_55_] = Class273.method2057(i_57_, i_56_ shl 16)
                         } else `is`[i_55_] = i_56_
-                        is_54_[i_55_] = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                        is_54_[i_55_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         i_55_++
                     }
                     npc.method2430(is_54_, `is`, -100)
                 }
                 if ((0x4 and i_40_) != 0) {
-                    npc.anInt10499 = Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
-                    npc.anInt10512 = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                    npc.anInt10499 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(124)
+                    npc.anInt10512 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
                 }
                 if ((0x1000 and i_40_) != 0) {
-                    npc.anInt10293 = Class299.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
-                    npc.anInt10314 = Class299.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
-                    npc.anInt10241 = Class299.aClass348_Sub49_Sub2_3813!!.readByte(-128).toInt()
-                    npc.anInt10288 = Class299.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
-                    npc.anInt10239 = (Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false) + Class367_Sub11.anInt7396)
-                    npc.anInt10300 = (Class299.aClass348_Sub49_Sub2_3813!!.readShortAdd(12) - -Class367_Sub11.anInt7396)
-                    npc.anInt10231 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(66.toByte())
+                    npc.anInt10293 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
+                    npc.anInt10314 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
+                    npc.anInt10241 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByte(-128).toInt()
+                    npc.anInt10288 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697).toInt()
+                    npc.anInt10239 = (Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortLittle(false) + Class367_Sub11.anInt7396)
+                    npc.anInt10300 = (Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(12) - -Class367_Sub11.anInt7396)
+                    npc.anInt10231 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract(66.toByte())
                     npc.anInt10314 += npc.anIntArray10317!![0]
                     npc.anInt10322 = 0
                     npc.anInt10288 += npc.anIntArray10317!![0]
@@ -290,57 +290,57 @@ class Class170 : Interface17 {
                     npc.anInt10319 = 1
                 }
                 if ((i_40_ and 0x2000) != 0) {
-                    npc.aByte10255 = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480)
-                    npc.aByte10206 = Class299.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697)
-                    npc.aByte10270 = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(i + -622885944)
-                    npc.aByte10279 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255).toByte()
-                    npc.anInt10248 = Class367_Sub11.anInt7396 + Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    npc.anInt10250 = Class367_Sub11.anInt7396 + Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    npc.aByte10255 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteInverse(-622951480)
+                    npc.aByte10206 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteSubtract(-27697)
+                    npc.aByte10270 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteInverse(i + -622885944)
+                    npc.aByte10279 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255).toByte()
+                    npc.anInt10248 = Class367_Sub11.anInt7396 + Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    npc.anInt10250 = Class367_Sub11.anInt7396 + Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 }
                 if ((i_40_ and 0x40) != 0) {
-                    val i_58_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-100).toByte())
+                    val i_58_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-100).toByte())
                     if (i_58_ > 0) {
                         var i_59_ = 0
                         while (i_58_ > i_59_) {
                             var i_60_ = -1
                             var i_61_ = -1
                             var i_62_ = -1
-                            var i_63_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-126)
+                            var i_63_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readSmart(-126)
                             if (i_63_ == 32767) {
-                                i_63_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-118)
-                                i_61_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-117)
-                                i_60_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-122)
-                                i_62_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-123)
-                            } else if (i_63_ != 32766) i_61_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-123)
+                                i_63_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readSmart(-118)
+                                i_61_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readSmart(-117)
+                                i_60_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readSmart(-122)
+                                i_62_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readSmart(-123)
+                            } else if (i_63_ != 32766) i_61_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readSmart(-123)
                             else i_63_ = -1
-                            val i_64_ = Class299.aClass348_Sub49_Sub2_3813!!.readSmart(-122)
-                            val i_65_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
+                            val i_64_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readSmart(-122)
+                            val i_65_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                             npc.method2438(i_61_, Class367_Sub11.anInt7396, i_63_, i_62_, i_60_, i_64_, i_65_, 124.toByte())
                             i_59_++
                         }
                     }
                 }
                 if ((i_40_ and 0x80) != 0) {
-                    npc.anInt10275 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    npc.anInt10275 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if ((npc.anInt10275) == 65535) npc.anInt10275 = -1
                 }
                 if ((0x1 and i_40_) != 0) {
-                    npc.aString10292 = Class299.aClass348_Sub49_Sub2_3813!!.readString(121.toByte())
+                    npc.aString10292 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readString(121.toByte())
                     npc.anInt10264 = 100
                 }
                 if ((i_40_ and 0x800) != 0) {
-                    val i_66_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    npc.anInt10227 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-84).toByte())
-                    npc.anInt10271 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-88).toByte())
+                    val i_66_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
+                    npc.anInt10227 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-84).toByte())
+                    npc.anInt10271 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-88).toByte())
                     npc.anInt10210 = 0x7fff and i_66_
                     npc.aBoolean10226 = (0x8000 and i_66_) != 0
                     npc.anInt10287 = (npc.anInt10227 + Class367_Sub11.anInt7396 + npc.anInt10210)
                 }
                 if ((i_40_ and 0x400) != 0) {
-                    var i_67_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-                    val i_68_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntLittle((-127).toByte())
+                    var i_67_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+                    val i_68_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readIntLittle((-127).toByte())
                     if (i_67_ == 65535) i_67_ = -1
-                    val i_69_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-116).toByte())
+                    val i_69_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-116).toByte())
                     val i_70_ = i_69_ and 0x7
                     var i_71_ = (i_69_ and 0x7e) shr 3
                     if (i_71_ == 15) i_71_ = -1

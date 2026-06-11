@@ -457,7 +457,7 @@ class Npc : Class318_Sub1_Sub3_Sub3() {
 
         fun method2441(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             if (i_2_ != -22728) anInt10503 = 121
-            if (i_5_ - i_0_ >= Class369.anInt4960 && Class113.anInt1745 >= i_0_ + i_5_ && -i_0_ + i_3_ >= Class132.anInt1910 && i_3_ + i_0_ <= Class38.anInt513) Class299.method2255(i_0_, i_5_, (-68).toByte(), i_1_, i_3_, i_4_, i)
+            if (i_5_ - i_0_ >= Class369.anInt4960 && Class113.anInt1745 >= i_0_ + i_5_ && -i_0_ + i_3_ >= Class132.anInt1910 && i_3_ + i_0_ <= Class38.anInt513) Class299Statics.method2255(i_0_, i_5_, (-68).toByte(), i_1_, i_3_, i_4_, i)
             else method1496(i, i_3_, i_4_, i_0_, 2, i_1_, i_5_)
             anInt10498++
         }

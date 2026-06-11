@@ -1,4 +1,4 @@
-import Class299.Companion.method2253
+import Class299Statics.method2253
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glGetFloatv

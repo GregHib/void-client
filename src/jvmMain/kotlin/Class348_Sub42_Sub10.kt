@@ -163,7 +163,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
             Class348_Sub40_Sub36.aClass114_9456 = null
             Class348_Sub50.anInt7213 = 0
             Class239.aClass114_3145 = null
-            Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
+            Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
             val i_3_ = -122 % ((i - 13) / 45)
             Class238Statics.aClass114_3133 = null
             method2296(-99)

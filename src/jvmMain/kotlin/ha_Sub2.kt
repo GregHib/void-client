@@ -3321,7 +3321,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             if (i_324_ != -1) {
                                 var class105s_326_ = ((Class353.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<Class105?>?)
                                 if (class105s_326_ == null) {
-                                    val class207s = Class207.method1519(Class21.aClass45_322!!, i_324_, 0)
+                                    val class207s = Class207Statics.method1519(Class21.aClass45_322!!, i_324_, 0)
                                     if (class207s != null) {
                                         class105s_326_ = arrayOfNulls<Class105>(class207s.size)
                                         var i_327_ = 0
@@ -3361,7 +3361,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                 if (i_333_ != -1) {
                                     var class105s = (Class328_Sub2.aClass60_6517!!.method583(i_333_.toLong(), -45) as? Array<Class105?>)
                                     if (class105s == null) {
-                                        val class207s = Class207.method1519((Class21.aClass45_322!!), i_333_, 0)
+                                        val class207s = Class207Statics.method1519((Class21.aClass45_322!!), i_333_, 0)
                                         if (class207s != null) {
                                             class105s = arrayOfNulls<Class105>(class207s.size)
                                             var i_334_ = 0

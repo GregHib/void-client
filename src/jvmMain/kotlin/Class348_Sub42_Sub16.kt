@@ -140,9 +140,9 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
         @JvmStatic
         fun method3256(i: Int): Int {
             anInt9662++
-            if (Class348_Sub1.anIntArray6547 == null) return 0
+            if (Class348_Sub1Statics.anIntArray6547 == null) return 0
             if (i != 2) aClass21_9661 = null
-            return 2 * Class348_Sub1.anIntArray6547!!.size
+            return 2 * Class348_Sub1Statics.anIntArray6547!!.size
         }
 
         @JvmStatic

@@ -155,7 +155,7 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
                 Class348_Sub40_Sub24.aClass114_9324,
                 Class348_Sub41.aClass114_7052,
                 Class345.aClass114_4269,
-                Class365.aClass114_4477,
+                Class365Statics.aClass114_4477,
                 Class239_Sub22.aClass114_6075,
                 Class322.aClass114_4027,
                 Class348_Sub40_Sub15.aClass114_9216,

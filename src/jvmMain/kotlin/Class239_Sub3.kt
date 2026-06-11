@@ -135,9 +135,9 @@ class Class239_Sub3 : Class239 {
             try {
                 anInt5859++
                 if (i == -1) return null
-                if (Class348_Sub1.anIntArray6547 != null) {
-                    for (i_26_ in Class348_Sub1.anIntArray6547!!.indices) {
-                        if (Class348_Sub1.anIntArray6547!![i_26_] == i) return Class199.aClass352Array2636!![i_26_]
+                if (Class348_Sub1Statics.anIntArray6547 != null) {
+                    for (i_26_ in Class348_Sub1Statics.anIntArray6547!!.indices) {
+                        if (Class348_Sub1Statics.anIntArray6547!![i_26_] == i) return Class199.aClass352Array2636!![i_26_]
                     }
                 }
                 var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
@@ -150,7 +150,7 @@ class Class239_Sub3 : Class239 {
                     return class352
                 }
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
-                val class207s = Class207.method1523(Class39.aClass45_518!!, i)
+                val class207s = Class207Statics.method1523(Class39.aClass45_518!!, i)
                 if (class207s == null) return null
                 val class143 = Class239_Sub10.method1766((-39).toByte(), i, s.aClass45_4585!!)
                 if (class143 == null) return null

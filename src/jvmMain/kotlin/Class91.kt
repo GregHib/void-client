@@ -44,7 +44,7 @@ object Class91 {
             Class348_Sub32.anInt6930 = Class282.aClass356_3654!!.method3474(1)
             Class282.aClass356_3654!!.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319!! as Array<Class348?>)
         }
-        if (Class348_Sub40_Sub25.anInt9341 != Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + Class348_Sub40_Sub25.anInt9341)
+        if (Class348_Sub40_Sub25.anInt9341 != Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + Class348_Sub40_Sub25.anInt9341)
         if (i <= 47) aClass74_1519 = null
         var i_4_ = 0
         while (Class150.anInt2057 > i_4_) {

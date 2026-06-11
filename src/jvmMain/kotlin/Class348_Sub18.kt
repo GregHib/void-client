@@ -86,7 +86,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Class101_Sub3.aClass326_5764!!.method2601((-44).toByte())
             Class30.aClass84_413!!.method822((-120).toByte())
             Class123.aClass25_1813!!.method300((-123).toByte())
-            Class348_Sub1.aClass185_6559!!.method1393((-13).toByte())
+            Class348_Sub1Statics.aClass185_6559!!.method1393((-13).toByte())
             Class239.aClass166_3147!!.method1290(-8)
             Class136.aClass65_4787!!.method695(true)
             Class73.aClass219_4782!!.method1602(0)

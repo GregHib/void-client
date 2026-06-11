@@ -55,7 +55,7 @@ abstract class Class367 internal constructor(var aHa_Sub3_4479: ha_Sub3) {
             val class318_sub6 = Class62.aClass243_1114!!.method1875(60) as Class318_Sub6?
             if (i != 32564) method3529(-38)
             if (class318_sub6 != null) {
-                Class365.anInt4474--
+                Class365Statics.anInt4474--
                 return class318_sub6
             }
             return Class318_Sub6()

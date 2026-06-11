@@ -1,4 +1,4 @@
-import Class299.Companion.method2253
+import Class299Statics.method2253
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.min
 

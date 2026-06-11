@@ -93,17 +93,17 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
         fun method3120(i: Int) {
             Class312.anInt3931 = 0
             anInt9345++
-            val i_15_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-118).toByte())
-            val i_16_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
-            val i_17_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
-            val bool = (Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
+            val i_15_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-118).toByte())
+            val i_16_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-117)
+            val i_17_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
+            val bool = (Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte()) == 1)
 
             Class322.method2554((-45).toByte())
             Class348_Sub40_Sub22.Companion.method3111(111, i_15_)
-            var i_18_: Int = (-Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 + Class348_Sub40_Sub25.Companion.anInt9341) / 16
+            var i_18_: Int = (-Class299Statics.aClass348_Sub49_Sub2_3813!!.anInt7197 + Class348_Sub40_Sub25.Companion.anInt9341) / 16
             Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_18_) { IntArray(4) }
             for (i_19_ in 0..<i_18_) {
-                for (i_20_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_19_]!![i_20_] = Class299.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
+                for (i_20_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_19_]!![i_20_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             }
             Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
             Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)

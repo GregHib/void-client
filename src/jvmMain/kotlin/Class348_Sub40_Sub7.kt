@@ -134,7 +134,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                 if (class46 == Class289.aClass46_3701) {
                                     if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         Class136.anInt4792 = i_10_
-                                        Class348_Sub1.anInt6555 = i_11_
+                                        Class348_Sub1Statics.anInt6555 = i_11_
                                         Class138.aClass46Array1942 = class46s
                                         i_18_++
                                         continue

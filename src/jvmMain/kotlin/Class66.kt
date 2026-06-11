@@ -1835,7 +1835,7 @@ object Class66 {
                 return
             }
             if (i == 6203) {
-                Class348_Sub42_Sub3.method3174(0, 0, Class348_Sub1.aClass46_6561!!.anInt709, false, 74.toByte(), Class348_Sub1.aClass46_6561!!.anInt789)
+                Class348_Sub42_Sub3.method3174(0, 0, Class348_Sub1Statics.aClass46_6561!!.anInt709, false, 74.toByte(), Class348_Sub1Statics.aClass46_6561!!.anInt789)
                 anIntArray1149!![anInt1173++] = Class127.anInt4656
                 anIntArray1149!![anInt1173++] = Class280.anInt3643
                 return
@@ -2287,7 +2287,7 @@ object Class66 {
                     return
                 }
                 if (i == 6912) {
-                    anIntArray1149!![anInt1173++] = Class348_Sub1.anInt6551
+                    anIntArray1149!![anInt1173++] = Class348_Sub1Statics.anInt6551
                     return
                 }
             } else if (i < 7100) {
@@ -2340,7 +2340,7 @@ object Class66 {
                     else {
                         if (Class64_Sub3.anInt5584 == 1) Class330.aBoolean4117 = true
                         else {
-                            if (Class64_Sub3.anInt5584 == 3) Class348_Sub1.aBoolean6558 = true
+                            if (Class64_Sub3.anInt5584 == 3) Class348_Sub1Statics.aBoolean6558 = true
                             return
                         }
                         return

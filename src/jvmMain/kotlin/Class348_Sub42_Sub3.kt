@@ -142,7 +142,7 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
         fun method3178(class45: Class45?, i: Int, `is`: IntArray?, class45_15_: Class45?) {
             try {
                 anInt9506++
-                if (`is` != null) Class348_Sub1.anIntArray6547 = `is`
+                if (`is` != null) Class348_Sub1Statics.anIntArray6547 = `is`
                 s.aClass45_4585 = class45
                 if (i >= -6) method3177(-36, true)
                 Class39.aClass45_518 = class45_15_

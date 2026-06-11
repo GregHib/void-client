@@ -102,13 +102,13 @@ class Class348_Sub49_Sub2 internal constructor(i: Int) : Class348_Sub49(i) {
 
         fun method3405(i: Int, bool: Boolean): Int {
             anInt9765++
-            if (Class348_Sub1.anIntArray6547 == null) return 0
-            if (!bool && Class199.aClass352Array2636 != null) return Class348_Sub1.anIntArray6547!!.size * 2
+            if (Class348_Sub1Statics.anIntArray6547 == null) return 0
+            if (!bool && Class199.aClass352Array2636 != null) return Class348_Sub1Statics.anIntArray6547!!.size * 2
             var i_1_ = 0
             if (i != 2012104999) method3405(118, false)
             var i_2_ = 0
-            while (Class348_Sub1.anIntArray6547!!.size > i_2_) {
-                val i_3_ = Class348_Sub1.anIntArray6547!![i_2_]
+            while (Class348_Sub1Statics.anIntArray6547!!.size > i_2_) {
+                val i_3_ = Class348_Sub1Statics.anIntArray6547!![i_2_]
                 if (Class39.aClass45_518!!.method421(false, i_3_)) i_1_++
                 if (s.aClass45_4585!!.method421(false, i_3_)) i_1_++
                 i_2_++

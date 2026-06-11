@@ -155,7 +155,7 @@ class Class163 internal constructor(i: Int, i_27_: Int) {
                 if (class321.anInt4000 != -1) {
                     var class105 = (Class34.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? Class105?)
                     if (class105 == null) {
-                        val class207 = Class207.method1521(Class21.aClass45_322!!, class321.anInt4000, 0)
+                        val class207 = Class207Statics.method1521(Class21.aClass45_322!!, class321.anInt4000, 0)
                         if (class207 != null) {
                             class105 = Class348_Sub8.aHa6654!!.method3691(class207, true)
                             Class34.aClass60_463!!.method582(class105, class321.anInt4000.toLong(), (-127).toByte())

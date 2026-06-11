@@ -18,22 +18,22 @@ class Class359 {
             var bool_0_ = bool
             if (Class348_Sub40_Sub1.aClass207_9090 == null) {
                 if (!Class21.aClass45_322!!.method421(false, OutputStream_Sub1.anInt98)) bool_0_ = false
-                else Class348_Sub40_Sub1.aClass207_9090 = Class207.method1512(Class21.aClass45_322!!, OutputStream_Sub1.anInt98)
+                else Class348_Sub40_Sub1.aClass207_9090 = Class207Statics.method1512(Class21.aClass45_322!!, OutputStream_Sub1.anInt98)
             }
             if (Class348_Sub7.aClass207_6643 == null) {
-                if (Class21.aClass45_322!!.method421(!bool, Class348_Sub32.anInt6938)) Class348_Sub7.aClass207_6643 = Class207.method1512(Class21.aClass45_322!!, Class348_Sub32.anInt6938)
+                if (Class21.aClass45_322!!.method421(!bool, Class348_Sub32.anInt6938)) Class348_Sub7.aClass207_6643 = Class207Statics.method1512(Class21.aClass45_322!!, Class348_Sub32.anInt6938)
                 else bool_0_ = false
             }
             if (Class112.aClass207_1727 == null) {
                 if (!Class21.aClass45_322!!.method421(false, Class295.anInt3762)) bool_0_ = false
-                else Class112.aClass207_1727 = Class207.method1512(Class21.aClass45_322!!, Class295.anInt3762)
+                else Class112.aClass207_1727 = Class207Statics.method1512(Class21.aClass45_322!!, Class295.anInt3762)
             }
             if (Class281.aClass143_3649 == null) {
                 if (Class104.aClass45_1627!!.method421(false, Class20.anInt317)) Class281.aClass143_3649 = Class239_Sub10.method1766((-89).toByte(), Class20.anInt317, Class104.aClass45_1627!!)
                 else bool_0_ = false
             }
             if (Class5_Sub1_Sub1.aClass207Array9929 == null) {
-                if (Class21.aClass45_322!!.method421(false, Class20.anInt317)) Class5_Sub1_Sub1.aClass207Array9929 = Class207.method1523(Class21.aClass45_322!!, Class20.anInt317)
+                if (Class21.aClass45_322!!.method421(false, Class20.anInt317)) Class5_Sub1_Sub1.aClass207Array9929 = Class207Statics.method1523(Class21.aClass45_322!!, Class20.anInt317)
                 else bool_0_ = false
             }
             return bool_0_

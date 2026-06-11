@@ -340,7 +340,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                 while (i_58_ > i_59_) {
                                     val class211 = Class211(var_ha, class348_sub49, 2)
                                     if (class211.anInt2734 == 31) {
-                                        val class253 = (Class348_Sub1.aClass185_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
+                                        val class253 = (Class348_Sub1Statics.aClass185_6559!!.method1391((-1).toByte(), class348_sub49.readUnsignedShort(842397944)))
                                         class211.method1539(class253.anInt3251, 115.toByte(), class253.anInt3249, class253.anInt3245, class253.anInt3244)
                                     }
                                     if (var_ha!!.method3704() > 0) {
@@ -628,7 +628,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                                     while ((i_126_ > i_127_)) {
                                         val class211 = Class211(var_ha, class348_sub49, 2)
                                         if (class211.anInt2734 == 31) {
-                                            val class253 = (Class348_Sub1.aClass185_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
+                                            val class253 = (Class348_Sub1Statics.aClass185_6559!!.method1391(111.toByte(), (class348_sub49.readUnsignedShort(842397944))))
                                             class211.method1539((class253.anInt3251), 124.toByte(), (class253.anInt3249), (class253.anInt3245), (class253.anInt3244))
                                         }
                                         if (var_ha!!.method3704() > 0) {
