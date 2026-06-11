@@ -1,36 +1,44 @@
 import Class156.Companion.method1242
 import Class286_Sub5.Companion.method2161
-import java.io.InputStream
-import java.io.OutputStream
-import java.net.Socket
 
-class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int) : Runnable {
-    private var anInt2648 = 0
+/**
+ * JS5 content-stream pump. Originally wrapped a raw java.net.Socket with its own
+ * InputStream/OutputStream + a writer-thread ring buffer. Now it delegates to a
+ * [Class238] connection, which already owns the socket and its reader/writer pumps
+ * (Class376 / Class208). This keeps JS5 platform-neutral: any Class238 impl (JVM
+ * socket today, WebSocket/native later) drives JS5 unchanged.
+ *
+ * Behaviour preserved:
+ *  - method1470: queue bytes to send (was a local ring + writer thread; now the
+ *    connection's own write buffer provides the same async send + overflow backpressure).
+ *  - method1467: available-byte count (was InputStream.available()).
+ *  - method1473 / method1474: blocking reads (the connection's reader pump fills the
+ *    buffer on its own thread; we block by polling read + sleeping, as the old
+ *    InputStream.read did against the socket).
+ *  - method1476: close.
+ */
+class Class202 internal constructor(connection: Class238?, class297: Class297?, i: Int) : Runnable {
     private val aClass297_2649: Class297?
-    private var anInputStream2652: InputStream? = null
+    private val aClass238_2668: Class238?
     private var aBoolean2654 = false
-    private var anInt2656 = 0
-    private var anOutputStream2657: OutputStream? = null
-    private var aClass144_2658: Class144? = null
-    private var aBoolean2659 = false
-    private var aByteArray2663: ByteArray? = null
-    private val aSocket2668: Socket?
     private val anInt2669: Int
+    private val aByteArray2672 = ByteArray(1)
 
     @Throws(IOException::class)
     fun method1467(i: Byte): Int {
         anInt2651++
         if (i.toInt() != 83) aClass114_2665 = null
         if (aBoolean2654) return 0
-        return anInputStream2652!!.available()
+        return aClass238_2668!!.availableCount()
     }
 
     fun method1468(i: Int) {
         anInt2667++
-        if (!aBoolean2654) {
-            if (i < 63) anOutputStream2657 = null
-            anInputStream2652 = InputStream_Sub2()
-            anOutputStream2657 = OutputStream_Sub2()
+        // No-op: closing the connection (method1476) already tears down its streams.
+        // The original installed dead InputStream_Sub2/OutputStream_Sub2 sentinels here;
+        // the Class238 contract has no exposed streams to swap.
+        if (i < 63) {
+            /* empty */
         }
     }
 
@@ -38,23 +46,12 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
     fun method1470(`is`: ByteArray, i: Int, i_5_: Int, i_6_: Int) {
         anInt2655++
         if (!aBoolean2654) {
-            if (aBoolean2659) {
-                aBoolean2659 = false
-                throw IOException()
-            }
-            if (aByteArray2663 == null) aByteArray2663 = ByteArray(anInt2669)
-            synchronized(this) {
-                if (i_6_ == -1) {
-                    for (i_7_ in 0..<i) {
-                        aByteArray2663!![anInt2648] = `is`[i_7_ + i_5_]
-                        anInt2648 = (anInt2648 - -1) % anInt2669
-                        if (anInt2648 == (anInt2656 - (-anInt2669 - -100)) % anInt2669) throw IOException()
-                    }
-                    if (aClass144_2658 == null) aClass144_2658 = aClass297_2649!!.method2236(this, -10240, 3)
-                    (this as Object).notifyAll()
-                } else {
-                    /* empty */
-                }
+            if (i_6_ == -1) {
+                // Hand the bytes to the connection's own buffered, async writer.
+                // Overflow throws IOException inside the connection, matching the old ring.
+                aClass238_2668!!.method1706(i_5_, 0, i, `is`)
+            } else {
+                /* empty */
             }
         }
     }
@@ -63,10 +60,7 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
     fun method1472(bool: Boolean) {
         anInt2650++
         if (bool == true && !aBoolean2654) {
-            if (aBoolean2659) {
-                aBoolean2659 = false
-                throw IOException()
-            }
+            /* error-state check; the connection surfaces IO errors via its read/write calls */
         }
     }
 
@@ -75,55 +69,22 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
         anInt2647++
         if (aBoolean2654) return 0
         if (i != 0) return 38
-        return anInputStream2652!!.read()
-    }
-    
-    override fun run() {
-        try {
-            while (true) {
-                val i: Int
-                val i_8_: Int
-                if (anInt2648 == anInt2656 && aBoolean2654) {
-                    break
-                }
-                synchronized(this) {
-                    if (anInt2648 == anInt2656) {
-//                        if (aBoolean2654) break
-                        try {
-                            (this as Object).wait()
-                        } catch (interruptedexception: InterruptedException) {
-                            /* empty */
-                        }
-                    }
-                    i = anInt2656
-                    if (anInt2656 > anInt2648) i_8_ = anInt2669 - anInt2656
-                    else i_8_ = -anInt2656 + anInt2648
-                }
-                if (i_8_ > 0) {
-                    try {
-                        anOutputStream2657!!.write(aByteArray2663, i, i_8_)
-                    } catch (ioexception: IOException) {
-                        aBoolean2659 = true
-                    }
-                    anInt2656 = (i_8_ + anInt2656) % anInt2669
-                    try {
-                        if (anInt2648 == anInt2656) anOutputStream2657!!.flush()
-                    } catch (ioexception: IOException) {
-                        aBoolean2659 = true
-                    }
-                }
-            }
-            try {
-                if (anInputStream2652 != null) anInputStream2652!!.close()
-                if (anOutputStream2657 != null) anOutputStream2657!!.close()
-                if (aSocket2668 != null) aSocket2668.close()
-            } catch (ioexception: IOException) {
-                /* empty */
-            }
-            aByteArray2663 = null
-        } catch (exception: Exception) {
-            method1242(null, exception, 15004)
+        // Blocking single-byte read (the JS5 status byte). On the happy path the byte
+        // is in the connection's read buffer and this returns its unsigned value, exactly
+        // as the old InputStream.read() did. NOTE: on a dropped connection the old code
+        // returned -1 here; the Class238 reader pump instead surfaces EOF as an
+        // IOException once its buffer is drained. Both outcomes abort the JS5 handshake
+        // (Client wraps this in catch(IOException)->method103), so the failure path still
+        // aborts+retries; only the internal error code differs.
+        while (true) {
+            val n = aClass238_2668!!.method1701(1, 0, (-118).toByte(), aByteArray2672)
+            if (n == 1) return aByteArray2672[0].toInt() and 0xff
+            method2161((-118).toByte(), 1L)
         }
+    }
+
+    override fun run() {
+        // The writer pump now lives in the Class238 connection (Class208). Nothing to do.
         anInt2664++
     }
 
@@ -134,10 +95,16 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
         anInt2666++
         if (!aBoolean2654) {
             while (i_10_ > 0) {
-                val i_11_ = anInputStream2652!!.read(`is`, i, i_10_)
-                if (i_11_ <= 0) throw EOFException()
-                i_10_ -= i_11_
-                i += i_11_
+                val i_11_ = aClass238_2668!!.method1701(i_10_, i, (-118).toByte(), `is`)
+                if (i_11_ < 0) throw EOFException()
+                if (i_11_ == 0) {
+                    // No bytes ready yet; the reader pump fills the buffer on its own
+                    // thread. Yield briefly and retry, reproducing the old blocking read.
+                    method2161((-118).toByte(), 1L)
+                } else {
+                    i_10_ -= i_11_
+                    i += i_11_
+                }
             }
             if (i_9_.toInt() != -72) run()
         }
@@ -151,36 +118,23 @@ class Class202 internal constructor(socket: Socket?, class297: Class297?, i: Int
     fun method1476(i: Byte) {
         anInt2660++
         if (!aBoolean2654) {
-            synchronized(this) {
-                aBoolean2654 = true
-                if (i > -120) method1476((-105).toByte())
-                (this as Object).notifyAll()
+            aBoolean2654 = true
+            if (i > -120) method1476((-105).toByte())
+            try {
+                aClass238_2668!!.method1700(36.toByte())
+            } catch (exception: Exception) {
+                /* empty */
             }
-            if (aClass144_2658 != null) {
-                while (aClass144_2658!!.anInt1997 == 0) method2161(105.toByte(), 1L)
-                if (aClass144_2658!!.anInt1997 == 1) {
-                    try {
-                        (aClass144_2658!!.anObject1998 as WorkerHandle).join()
-                    } catch (interruptedexception: InterruptedException) {
-                        /* empty */
-                    }
-                }
-            }
-            aClass144_2658 = null
         }
     }
 
     init {
         try {
-            aSocket2668 = socket
+            aClass238_2668 = connection
             aClass297_2649 = class297
-            aSocket2668!!.setSoTimeout(30000)
-            aSocket2668.setTcpNoDelay(true)
-            anInputStream2652 = aSocket2668.getInputStream()
-            anOutputStream2657 = aSocket2668.getOutputStream()
             anInt2669 = i
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("re.<init>(" + (if (socket != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("re.<init>(" + (if (connection != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

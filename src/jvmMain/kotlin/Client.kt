@@ -540,7 +540,6 @@ import java.awt.Canvas
 import java.awt.Component
 import java.awt.Container
 import java.awt.Frame
-import java.net.Socket
 import java.net.URL
 import java.util.*
 import kotlin.math.max
@@ -578,7 +577,7 @@ class Client : Applet_Sub1() {
         else {
             try {
                 if (Class47.anInt846 == 0) {
-                    aa.aClass144_114 = Class3.aClass161_125!!.method1262((Class348_Sub23_Sub1.aClass297_8992!!), 36.toByte())
+                    aa.aClass144_114 = Class3.aClass161_125!!.method1262Connection((Class348_Sub23_Sub1.aClass297_8992!!))
                     Class47.anInt846++
                 }
                 if (Class47.anInt846 == 1) {
@@ -590,7 +589,7 @@ class Client : Applet_Sub1() {
                     if (aa.aClass144_114!!.anInt1997 == 1) Class47.anInt846++
                 }
                 if (Class47.anInt846 == 2) {
-                    Class193.aClass202_2589 = Class202(aa.aClass144_114!!.anObject1998 as Socket?, Class348_Sub23_Sub1.aClass297_8992, 25000)
+                    Class193.aClass202_2589 = Class202(aa.aClass144_114!!.anObject1998 as Class238?, Class348_Sub23_Sub1.aClass297_8992, 25000)
                     val class348_sub49 = Class348_Sub49(5)
                     class348_sub49.writeByte(false, (Class178.aClass29_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)

@@ -12,4 +12,8 @@ abstract class Class238 {
 
     @Throws(IOException::class)
     abstract fun method1706(i: Int, i_7_: Int, i_8_: Int, `is`: ByteArray)
+
+    /** Number of bytes currently readable without blocking. Used by the JS5 pump. */
+    @Throws(IOException::class)
+    abstract fun availableCount(): Int
 }

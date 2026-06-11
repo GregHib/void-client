@@ -43,6 +43,11 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
         return aClass376_5834!!.method3619(i, false)
     }
 
+    @Throws(IOException::class)
+    override fun availableCount(): Int {
+        return aClass376_5834!!.availableCount()
+    }
+
     init {
         aSocket5836.setSoTimeout(30000)
         aSocket5836.setTcpNoDelay(true)

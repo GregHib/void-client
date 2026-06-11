@@ -101,6 +101,15 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
         }
     }
 
+    /** Number of bytes currently readable from the buffer (the value method3619 compares against). */
+    @Throws(IOException::class)
+    fun availableCount(): Int {
+        synchronized(this) {
+            if (anIOException4560 != null) throw IOException(anIOException4560.toString())
+            return if (anInt4556 > anInt4558) -anInt4556 + anInt4546 - -anInt4558 else anInt4558 - anInt4556
+        }
+    }
+
     init {
         anInt4546 = i - -1
         aByteArray4554 = ByteArray(anInt4546)

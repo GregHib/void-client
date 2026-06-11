@@ -260,9 +260,12 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
 
     /**
      * Like [method2235], but the resulting [Class144.anObject1998] is a fully-wrapped
-     * [Class238] connection rather than a raw java.net.Socket. Used by the game-connect
-     * path (request types 23 direct / 24 proxy) so consumers stay platform-neutral.
-     * JS5 keeps using [method2235] (raw socket) until it too is ported.
+     * [Class238] connection rather than a raw java.net.Socket. Used by BOTH the
+     * game-connect path (Class88/Class348_Sub5) and JS5 (Client/Class202) via request
+     * types 23 (direct) / 24 (proxy), so no consumer ever sees a raw Socket.
+     *
+     * The older [method2235] (types 1/22, raw Socket) now has no live callers and is
+     * kept only because method2246 references it as an internal guard.
      */
     fun method2235Connection(bool: Boolean, i: Int, string: String?): Class144 {
         return method2246(8, 0, if (bool) 24 else 23, i, string)
