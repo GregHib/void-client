@@ -5,7 +5,7 @@ class Class28 : Interface15 {
     override fun method54(i: Int, l: Long, class138: Class138?, `is`: IntArray?): String? {
         try {
             anInt4996++
-            if (Class234.aClass138_3044 == class138) {
+            if (Class234Statics.aClass138_3044 == class138) {
                 val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`!![0])
                 return class117.method1074(l.toInt(), 91)
             }

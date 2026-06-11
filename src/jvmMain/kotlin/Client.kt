@@ -820,7 +820,7 @@ class Client : Applet_Sub1() {
         method804(-3752)
         method1564(104)
         method2572(23.toByte())
-        Class234.method1659((-71).toByte())
+        Class234Statics.method1659((-71).toByte())
         method1461(112.toByte())
         Class239_Sub20.method1807((-121).toByte())
         method1773(120.toByte())

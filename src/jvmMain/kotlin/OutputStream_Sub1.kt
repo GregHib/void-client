@@ -49,7 +49,7 @@ class OutputStream_Sub1 : OutputStream() {
                 if (!bool) Class282.method2109(512)
                 Class108.method1014(-4)
                 Class348_Sub42_Sub3.method3174(i_1_, i_3_, i_0_, true, (-82).toByte(), i_2_)
-                i_3_ = Class234.anInt3047
+                i_3_ = Class234Statics.anInt3047
                 i_1_ = Class295.anInt3764
                 i_2_ = Class280.anInt3643
                 Class132.anInt1906 = Class132.anInt1911

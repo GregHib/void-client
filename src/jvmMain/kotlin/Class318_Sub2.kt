@@ -229,7 +229,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
             if (i_39_ <= 101) method2499(66, -39, -55, 105, 96, 114.toByte(), -44)
             for (i_43_ in i_38_..i_40_) {
                 for (i_44_ in i_36_..i_35_) {
-                    if (Class354.anIntArrayArrayArray4356!![i]!![i_43_]!![i_44_] == -Class234.anInt3049) return false
+                    if (Class354.anIntArrayArrayArray4356!![i]!![i_43_]!![i_44_] == -Class234Statics.anInt3049) return false
                 }
             }
             val i_45_ = (i_38_ shl Class362.anInt4459) + 1
