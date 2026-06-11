@@ -10,9 +10,9 @@ import java.awt.Canvas
 object haStatics {
     var aClass351_4571: Class351? = Class351(73, -1)
 
-    /** Renderer slot allocation table; lives in Class348_Sub40_Sub26 companion. */
+    /** Renderer slot allocation table; now lives in ha companion (commonMain). */
     val rendererSlots: BooleanArray
-        get() = Class348_Sub40_Sub26.aBooleanArray9351!!
+        get() = ha.rendererSlots
 
     @JvmStatic
     fun method3641(i: Int, i_35_: Int, i_36_: Byte, i_37_: Int, i_38_: Int, i_39_: Int) {

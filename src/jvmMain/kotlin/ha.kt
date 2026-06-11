@@ -42,7 +42,7 @@ abstract class ha internal constructor(var aD4579: d?) {
     fun method3635(i: Byte) {
         val i_15_ = -90 % ((i - 8) / 33)
         anInt4573++
-        haStatics.rendererSlots[this.anInt4567] = false
+        rendererSlots[this.anInt4567] = false
         method3652()
     }
 
@@ -291,8 +291,8 @@ abstract class ha internal constructor(var aD4579: d?) {
     init {
         var i = -1
         for (i_215_ in 0..7) {
-            if (!haStatics.rendererSlots[i_215_]) {
-                haStatics.rendererSlots[i_215_] = true
+            if (!rendererSlots[i_215_]) {
+                rendererSlots[i_215_] = true
                 i = i_215_
                 break
             }
@@ -302,6 +302,7 @@ abstract class ha internal constructor(var aD4579: d?) {
     }
 
     companion object {
+        val rendererSlots: BooleanArray = BooleanArray(8)
         var anInt4561: Int = 0
         var anInt4562: Int = 0
         var anInt4563: Int = 0

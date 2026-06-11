@@ -1,5 +1,3 @@
-import java.awt.Canvas
-
 abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Array<IntArray?>) {
     var anIntArrayArray4584: Array<IntArray?>
     var anInt4587: Int
@@ -71,18 +69,6 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
         var anInt4589: Int = 0
         var anInt4591: Int = 0
         var anInt4593: Int = 0
-
-        @JvmStatic
-        fun method3980(i: Int, canvas: Canvas) {
-            if (i > 85) {
-                anInt4586++
-                val dimension = canvas.getSize()
-                Class85.method828(38.toByte(), dimension.height, dimension.width)
-                val displayTarget = AwtDisplayTarget(canvas)
-                if (Class348_Sub49.anInt7207 != 1) Class21.aHa326!!.method3669(displayTarget, Class59_Sub1.anInt5283, Class107.anInt1651)
-                else Class21.aHa326!!.method3669(displayTarget, Class348_Sub16_Sub1.anInt8854, Class239_Sub16.anInt6008)
-            }
-        }
 
         @JvmStatic
         fun method3985(i: Int, i_29_: Int): Class147? {

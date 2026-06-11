@@ -3,7 +3,6 @@ import Class239.Companion.method1713
 import Class286_Sub2.Companion.method2145
 import Class286_Sub5.Companion.method2158
 import Class56.Companion.method527
-import s.Companion.method3980
 import java.awt.Container
 
 object Class215 {
@@ -62,7 +61,7 @@ object Class215 {
             else {
                 Class305.aCanvas3869!!.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
                 if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aHa6654!!.method3669(Class305.aDisplayTarget3869, Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
-                else method3980(86, Class305.aCanvas3869!!)
+                else sStatics.method3980(86, Class305.aCanvas3869!!)
                 if (Class52.aFrame4904 === container) {
                     val insets = Class52.aFrame4904!!.getInsets()
                     Class305.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129 + insets.left), (insets.top - -Class335.anInt4167))
