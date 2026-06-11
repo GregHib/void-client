@@ -113,17 +113,44 @@ no pixel-format conversion is needed.
 - **Windowing (Frame/Panel bootstrap in Loader/GameApplet) stays jvmMain** for now; the web/native
   app shells will provide their own `DisplayTarget`. Only the surface/blit boundary is in scope.
 
-## Open questions before implementing
+## Open questions — RESOLVED (investigation, this session)
 
-1. Can one `ha_Sub1` instance ever serve more than one live canvas at once? If not, the
-   hashCode→surface map collapses to a single field and the seam shrinks. (Check callers of
-   `method3643`/`method3669` and whether multiple canvases coexist — e.g. resizable vs fullscreen.)
-2. Is the `Class348_Sub31_Sub2` ImageProducer fallback ever actually hit on modern JVMs, or is
-   `Sub1` (BufferedImage) always taken? If `Sub2` is dead in practice, the JVM actual can keep it
-   for fidelity but we needn't design the seam around it.
-3. Does `aClass49_7475` (an alternate offscreen target seen in `method3677`/`method3669`) represent
-   a second presentation path that also needs `GameSurface`, or is it a pure in-memory buffer that's
-   already platform-free? Worth confirming before the move.
+### Q1 — one canvas per `ha_Sub1`? → YES, effectively 1:1. ✅
+The `ha_Sub1` constructor (ha_Sub1.kt:1311) binds the instance to a single canvas:
+`method3643(canvas)` + `method3677(canvas)`. Each toolkit is built fresh by
+`Class104.method958` → `ha.method3692` → `Class348_Sub5.method2753` → `ha_Sub1(canvas, …)`
+for one canvas. There are up to ~3 *separate* `ha` instances live at once — `Class21.aHa326`
+(main, on `Class305.aCanvas3869`), `Class348_Sub8.aHa6654` (also on `aCanvas3869`),
+`Class348_Sub34.aHa6968` (offscreen 36×32 throwaway `Canvas` from Class22; Class284 makes a
+transient 100×100 too) — but each instance only ever sees its OWN canvas. External callers
+(`Class124.method1108`, `s.method3980`, `Class348_Sub47`, `Class215`, `Class367_Sub11`) always
+pass that same canvas. **Conclusion:** the `aClass356_7467` hashCode→surface map holds one live
+entry per renderer; the multi-canvas generality is never exercised, so `GameSurface` can model a
+single active surface per `ha_Sub1` (map collapses to one field). Keeping the map is also safe and
+lower-diff — decide at implementation time.
+
+### Q2 — is the `Sub2` ImageProducer fallback ever hit? → NO on any modern JVM. ✅
+`Class348_Sub31_Sub2` is instantiated only in `Class110.method1035`'s `catch (throwable)`, i.e.
+only if `Class348_Sub31_Sub1()` / its `method3008` throws. `Sub1.method3008` uses only core
+java.desktop APIs (`DataBufferInt`, `DirectColorModel(32,…)`, `Raster.createWritableRaster`,
+`BufferedImage`) that don't throw on any standard desktop JVM ≥1.4. The fallback is 2010-applet-era
+defensive code for ancient/headless VMs. **Conclusion:** `Sub1` (BufferedImage) is always taken;
+keep `Sub2` in the JVM actual for fidelity but DON'T shape the common seam around it.
+
+### Q3 — is `aClass49_7475` a second presentation path? → NO, it's a portable in-memory target. ✅
+`aClass49_7475` is a `Class49` (`Interface4`) set via `method3687(Interface4)` (ha_Sub1.kt:1405).
+It's an OFF-SCREEN render target: when non-null, ha_Sub1 swaps its active pixel buffer
+(`anIntArray7483`) to `class49.anIntArray4731` and renders there instead of the canvas surface.
+`Class49` is pure `IntArray`/`FloatArray` memory with a back-ref to ha_Sub1 — **no AWT**. The
+`aClass49_7475 == null` checks in method3677/method3669 just mean "targeting the screen surface vs
+an off-screen buffer." **Conclusion:** `GameSurface` only needs to cover the canvas-backed path
+(`aClass49_7475 == null`); the off-screen path is already common-ready and needs no seam.
+
+### Net effect on the plan
+All three resolutions *shrink* the work: single surface per renderer (Q1), no need to design around
+the ImageProducer fallback (Q2), and the off-screen render path is already portable (Q3). The seam
+is purely: wrap `Class348_Sub31_Sub1`'s buffer+blit as the JVM `GameSurface`, and replace ha_Sub1's
+single canvas binding. Effort estimate holds at the low end (~3 days).
 
 ## Effort estimate
 
