@@ -3,7 +3,7 @@ import Class239_Sub12.Companion.method1772
 import Class239_Sub2.Companion.method1725
 import Class286_Sub3.Companion.method2148
 import Class299_Sub2_Sub1.Companion.method2271
-import Class348_Sub1.Companion.method2718
+import Class348_Sub1Statics.method2718
 import Class369_Sub1.Companion.method3570
 import ha_Sub3.Companion.method3936
 import java.awt.Canvas

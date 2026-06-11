@@ -223,7 +223,7 @@ import Class295.Companion.method2223
 import Class296.Companion.method2225
 import Class296.Companion.method2228
 import Class298.method2251
-import Class299.Companion.method2254
+import Class299Statics.method2254
 import Class299_Sub1_Sub2.Companion.method2265
 import Class299_Sub2.Companion.method2268
 import Class299_Sub2_Sub1.Companion.method2272
@@ -298,7 +298,7 @@ import Class346_Sub1.Companion.method2705
 import Class347.Companion.method2707
 import Class347.Companion.method2708
 import Class348Statics.method2713
-import Class348_Sub1.Companion.method2719
+import Class348_Sub1Statics.method2719
 import Class348_Sub10.Companion.method2785
 import Class348_Sub11.Companion.method2796
 import Class348_Sub12.Companion.method2798
@@ -422,7 +422,7 @@ import Class361.Companion.method3508
 import Class362.method3511
 import Class362.method3512
 import Class363.method3516
-import Class365.Companion.method3518
+import Class365Statics.method3518
 import Class367_Sub10.Companion.method3553
 import Class367_Sub10.Companion.method3554
 import Class367_Sub11.Companion.method3556
@@ -1490,7 +1490,7 @@ class Client : Applet_Sub1() {
             method705(class348_sub36)
         }
         while (true) {
-            val class348_sub36 = (Class365.aClass262_4473!!.method1997(i + -104) as Class348_Sub36?)
+            val class348_sub36 = (Class365Statics.aClass262_4473!!.method1997(i + -104) as Class348_Sub36?)
             if (class348_sub36 == null) break
             val class46 = class348_sub36.aClass46_6989
             if (class46!!.anInt704 >= 0) {
@@ -2148,7 +2148,7 @@ class Client : Applet_Sub1() {
                                 }
                                 if (class46.anInt765 != 0) {
                                     if ((class46.anInt765 == Class239_Sub10.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
-                                        Class348_Sub1.aClass46_6561 = class46
+                                        Class348_Sub1Statics.aClass46_6561 = class46
                                         if (Class259.aClass305_3304 != null) Class259.aClass305_3304!!.method2292(123, Class348_Sub8.aHa6654!!, class46.anInt789)
                                         if (class46.anInt765 == Class239_Sub10.anInt5943) {
                                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
@@ -2292,7 +2292,7 @@ class Client : Applet_Sub1() {
                                         class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.aClass373_8552!!.method3597(true) - i_43_)
                                         class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552!!.method3594(75.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray742
-                                        Class365.aClass262_4473!!.method1999(class348_sub36, -20180)
+                                        Class365Statics.aClass262_4473!!.method1999(class348_sub36, -20180)
                                     }
                                 }
                                 if (bool_53_ && (class46.anObjectArray805 != null)) {
@@ -2334,7 +2334,7 @@ class Client : Applet_Sub1() {
                                         class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.aClass373_8552!!.method3597(true) - i_43_)
                                         class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552!!.method3594(90.toByte()) - i_44_)
                                         class348_sub36.anObjectArray6987 = class46.anObjectArray683
-                                        Class365.aClass262_4473!!.method1999(class348_sub36, -20180)
+                                        Class365Statics.aClass262_4473!!.method1999(class348_sub36, -20180)
                                     }
                                 }
                                 if (class46.anObjectArray764 != null) {
