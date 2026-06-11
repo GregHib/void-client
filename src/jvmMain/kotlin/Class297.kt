@@ -4,6 +4,7 @@ import java.awt.datatransfer.Transferable
 import java.io.DataInputStream
 import java.lang.reflect.Method
 import java.net.InetAddress
+import java.net.Socket
 import java.net.URL
 import java.util.*
 import kotlin.concurrent.Volatile
@@ -32,7 +33,6 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     var anEventQueue3799: EventQueue? = null
     private var aBoolean3801 = false
     private var aClass134_3802: Class134? = null
-    var socketOpener: SocketOpener = JvmSocketOpener
 
     fun method2229(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte): Class144 {
         if (i_3_.toInt() != -11) aLong3781 = 34L
@@ -81,11 +81,11 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                     if (Loader.debug) {
                         println("Connect: " + class144.anObject1996 + " " + class144.anInt2000)
                     }
-                    class144.anObject1998 = socketOpener.openDirect((class144.anObject1996) as String, class144.anInt2000, 7500)
+                    class144.anObject1998 = Socket(InetAddress.getByName((class144.anObject1996) as String?), class144.anInt2000)
                 } else if (i == 22) {
                     if (aLong3781 > method599(-92)) throw IOException()
                     try {
-                        class144.anObject1998 = socketOpener.openViaProxy((class144.anObject1996 as String), class144.anInt2000, 7500)
+                        class144.anObject1998 = Class61.method593(class144.anInt2000, (-90).toByte(), (class144.anObject1996 as String?))!!.method2050(-112)
                     } catch (ioexception_sub1: IOException_Sub1) {
                         class144.anObject1998 = ioexception_sub1.message
                         throw ioexception_sub1
