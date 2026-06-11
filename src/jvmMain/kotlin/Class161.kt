@@ -33,6 +33,15 @@ class Class161 {
         return class297.method2235(aBoolean2139, (if (aBoolean2146) this.anInt2138 else this.anInt2148), this.aString2147, i.toInt() xor 0x6e65)
     }
 
+    /**
+     * Game-connect variant of [method1262]: the returned future yields a wrapped
+     * [Class238] connection (not a raw Socket). See [Class297.method2235Connection].
+     */
+    fun method1262Connection(class297: Class297): Class144 {
+        anInt2144++
+        return class297.method2235Connection(aBoolean2139, (if (aBoolean2146) this.anInt2138 else this.anInt2148), this.aString2147)
+    }
+
     fun method1264(i: Byte, class161_2_: Class161?): Boolean {
         if (i <= 69) return false
         anInt2141++

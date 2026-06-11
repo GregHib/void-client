@@ -90,6 +90,25 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                         class144.anObject1998 = ioexception_sub1.message
                         throw ioexception_sub1
                     }
+                } else if (i == 23) {
+                    // Direct game connection, wrapped as a Class238 (portable connection
+                    // contract) on the privileged thread so consumers never see a raw Socket.
+                    if (aLong3781 > method599(-53)) throw IOException()
+                    if (Loader.debug) {
+                        println("Connect: " + class144.anObject1996 + " " + class144.anInt2000)
+                    }
+                    val socket = Socket(InetAddress.getByName((class144.anObject1996) as String?), class144.anInt2000)
+                    class144.anObject1998 = Class348_Sub23_Sub3.method2982(socket, 24.toByte(), GAME_CONNECTION_KEY)
+                } else if (i == 24) {
+                    // Proxy game connection, wrapped as a Class238 (see type 23).
+                    if (aLong3781 > method599(-92)) throw IOException()
+                    try {
+                        val socket = Class61.method593(class144.anInt2000, (-90).toByte(), (class144.anObject1996 as String?))!!.method2050(-112)!!
+                        class144.anObject1998 = Class348_Sub23_Sub3.method2982(socket, 24.toByte(), GAME_CONNECTION_KEY)
+                    } catch (ioexception_sub1: IOException_Sub1) {
+                        class144.anObject1998 = ioexception_sub1.message
+                        throw ioexception_sub1
+                    }
                 } else if (i == 2) {
                     val runnable = (class144.anObject1996) as Runnable?
                     class144.anObject1998 = Workers.start(
@@ -237,6 +256,16 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     fun method2235(bool: Boolean, i: Int, string: String?, i_10_: Int): Class144? {
         if (i_10_ != 28225) return null
         return method2246(i_10_ xor 0x6e49, 0, if (bool) 22 else 1, i, string)
+    }
+
+    /**
+     * Like [method2235], but the resulting [Class144.anObject1998] is a fully-wrapped
+     * [Class238] connection rather than a raw java.net.Socket. Used by the game-connect
+     * path (request types 23 direct / 24 proxy) so consumers stay platform-neutral.
+     * JS5 keeps using [method2235] (raw socket) until it too is ported.
+     */
+    fun method2235Connection(bool: Boolean, i: Int, string: String?): Class144 {
+        return method2246(8, 0, if (bool) 24 else 23, i, string)
     }
 
     fun method2236(runnable: Runnable?, i: Int, i_11_: Int): Class144 {
@@ -423,6 +452,9 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     }
 
     companion object {
+        /** Buffer-size key passed to method2982 when wrapping a game socket as a Class238. */
+        private const val GAME_CONNECTION_KEY = 7500
+
         var aString3778: String? = null
         @JvmField
         var aString3780: String? = null
