@@ -1557,7 +1557,7 @@ class Client : Applet_Sub1() {
         if (Class240.anInt4674 != 14) {
             Class367_Sub11.anInt7396++
             if (Class367_Sub11.anInt7396 % 1000 == 1) {
-                val gregoriancalendar = GregorianCalendar()
+                val gregoriancalendar = CalendarShim.local()
                 Class356.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6)
                 OutputStream_Sub1.aRandom93!!.setSeed(Class356.anInt4383.toLong())
             }

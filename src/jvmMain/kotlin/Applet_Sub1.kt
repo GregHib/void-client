@@ -545,7 +545,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         fun method94(string: String, i: Int) {
             anInt6++
             if (Class286_Sub1.aStringArray6200 == null) Class14_Sub3.method249(2)
-            Class286_Sub3.aCalendar6221!!.setTime(Date(Class62.method599(-102)))
+            Class286_Sub3.aCalendar6221!!.setTimeMillis(Class62.method599(-102))
             val i_8_ = Class286_Sub3.aCalendar6221!!.get(11)
             val i_9_ = Class286_Sub3.aCalendar6221!!.get(12)
             val i_10_ = Class286_Sub3.aCalendar6221!!.get(13)

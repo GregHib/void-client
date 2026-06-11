@@ -8,7 +8,6 @@ import jaggl.OpenGL.Companion.glLoadMatrixf
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fvARB
-import java.util.*
 
 class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?) : Class286(var_ha_Sub2) {
     private var aFloatArray6218: FloatArray? = null
@@ -173,7 +172,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         @JvmField
         var anInt6217: Int = 0
         @JvmField
-        var aCalendar6221: Calendar? = Calendar.getInstance(TimeZone.getTimeZone("GMT"))
+        var aCalendar6221: CalendarShim? = CalendarShim.gmt()
         @JvmField
         var anInt6223: Int = 0
         @JvmField

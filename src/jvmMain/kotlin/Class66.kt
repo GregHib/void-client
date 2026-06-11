@@ -90,7 +90,7 @@ object Class66 {
     var anInt1158: Int = 0
     @JvmField
     var anInt1159: Int = 0
-    private var aCalendar1160: Calendar?
+    private var aCalendar1160: CalendarShim?
     private var anIntArrayArray1161: Array<IntArray?>? = Array<IntArray?>(5) { IntArray(5000) }
     @JvmField
     var anInt1162: Int = 0
@@ -1888,14 +1888,14 @@ object Class66 {
                 aCalendar1160!!.clear()
                 aCalendar1160!!.set(11, 12)
                 aCalendar1160!!.set(i_164_, i_163_, i_162_)
-                var i_165_ = ((aCalendar1160!!.getTime().getTime() / 86400000L).toInt() - 11745)
+                var i_165_ = ((aCalendar1160!!.getTimeMillis() / 86400000L).toInt() - 11745)
                 if (i_164_ < 1970) i_165_--
                 anIntArray1149!![anInt1173++] = i_165_
                 return
             }
             if (i == 6303) {
                 aCalendar1160!!.clear()
-                aCalendar1160!!.setTime(Date(method599(-59)))
+                aCalendar1160!!.setTimeMillis(method599(-59))
                 anIntArray1149!![anInt1173++] = aCalendar1160!!.get(1)
                 return
             }
@@ -2681,7 +2681,7 @@ object Class66 {
 
     private fun method709(i: Int): String {
         val l = (i.toLong() + 11745L) * 86400000L
-        aCalendar1160!!.setTime(Date(l))
+        aCalendar1160!!.setTimeMillis(l)
         val i_244_ = aCalendar1160!!.get(5)
         val i_245_ = aCalendar1160!!.get(2)
         val i_246_ = aCalendar1160!!.get(1)
@@ -5262,7 +5262,7 @@ object Class66 {
 
     init {
         aClass184Array1168 = arrayOfNulls<Class184>(50)
-        aCalendar1160 = Calendar.getInstance()
+        aCalendar1160 = CalendarShim.local()
         anIntArray1175 = IntArray(3)
         aStringArray1176 = arrayOf<String>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
         aClass60_1174 = Class60(4)

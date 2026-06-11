@@ -1,4 +1,3 @@
-import java.util.*
 
 class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
     @JvmField
@@ -71,7 +70,7 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
         @JvmStatic
         fun method3261(l: Long, i: Int): String {
             try {
-                Class286_Sub3.aCalendar6221!!.setTime(Date(l))
+                Class286_Sub3.aCalendar6221!!.setTimeMillis(l)
                 anInt10455++
                 val i_1_ = Class286_Sub3.aCalendar6221!!.get(7)
                 val i_2_ = Class286_Sub3.aCalendar6221!!.get(5)
