@@ -1,7 +1,5 @@
-import java.lang.ref.SoftReference
-
 class Class348_Sub42_Sub8_Sub1 internal constructor(`object`: Any?, i: Int) : Class348_Sub42_Sub8(i) {
-    private val aSoftReference10428: SoftReference<*>
+    private val aSoftReference10428: SoftRef<Any>
 
     override fun method3195(i: Int): Boolean {
         if (i != -4) method3193(-41)
@@ -14,6 +12,6 @@ class Class348_Sub42_Sub8_Sub1 internal constructor(`object`: Any?, i: Int) : Cl
     }
 
     init {
-        aSoftReference10428 = SoftReference<Any?>(`object`)
+        aSoftReference10428 = SoftRef(`object`)
     }
 }
