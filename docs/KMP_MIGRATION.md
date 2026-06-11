@@ -144,10 +144,48 @@ Each phase keeps the JVM desktop build green and shippable. Do not branch long-l
 2. Replace `java.util.*` (37 files), `BigInteger` (10 files), `Inflater` (2 files) in extracted code.
 3. Each extraction must not break the JVM run.
 
-### Phase 3 — Service seams (3–5 weeks)
+### Phase 3 — Service seams (3–5 weeks) — **~85% complete (as of 2026-06-12)**
+
+Original objectives:
 1. Define the §4 interfaces; implement JVM versions by *wrapping existing code* (signlink `Class297` becomes the JVM impl of `CacheStorage` + `SystemServices` + `GameConnection` factory).
 2. Restructure the main loop: replace `Thread.sleep` busy-wait with a `GameLoop` driven externally (JVM: timer thread; web: `requestAnimationFrame`). Convert the decoder/audio worker threads to coroutines with a JVM dispatcher; design so web can run them on the main loop.
 3. Move `ha_Sub1` software renderer to common behind `GameSurface`.
+
+#### Status — what is DONE
+
+All service seams are defined in `commonMain` and have JVM actuals that wrap the existing code, with the JVM build staying green throughout (`compileKotlinJvm` clean as of 2026-06-12):
+
+| Seam | commonMain | JVM actual | Notes |
+|---|---|---|---|
+| Clock | `Clock.kt` (`clockMillis`/`clockNanos`) | expect/actual | replaces `System.currentTimeMillis`/`nanoTime` |
+| Locking | `Locking.kt` (`withLock` inline) | expect/actual | replaced **all** `synchronized` blocks (0 left in jvmMain) |
+| Thread identity | `CurrentThread.kt` (`currentThread(): Any`) | expect/actual | — |
+| Sleep | `Sleeper.kt` (`Sleepers.sleep`) | `ThreadSleeper` | the single `Thread.sleep` site (Class327) routes here |
+| Workers | `WorkerFactory.kt` | `ThreadWorkerFactory` | daemon worker spawns funnel through `Workers.start` |
+| Frame loop | `GameLoop.kt` (`GameFrame.runFrame`) | blocking driver | `Applet_Sub1` frame body extracted to `runFrame()` |
+| Cache | `CacheStore.kt` + `CacheStorageFactory.kt` | `FileCacheStorage` (+ `Class234Statics`) | Class234/Class201 folded in; `RandomAccessFile` in 1 file |
+| Audio | `AudioSink.kt` | `JavaSoundAudioSink` (Class279_Sub1 adapter) | synth engine (Class279) stays jvm (too coupled) |
+| Clipboard | `SystemClipboard.kt` | `AwtClipboard` | — |
+| HTTP | `HttpFetch.kt` | `JvmHttpFetch` | wraps `URL.openStream`; `java.net.URL` in 2 files |
+| Connection | `Class238.kt` (abstract base) | Class238_Sub1/Class272/Class297 | **JS5 (Class202) ported off raw Socket** onto Class238; `java.net.Socket` now in 6 JVM plumbing files; commonMain net-clean |
+| System props | `SystemProperties.kt` | expect/actual | — |
+| Inflate / CRC32 / BigInt / Random / Calendar | `Inflate.kt`/`Crc32.kt`/`BigInt.kt`/`JavaRandom.kt`/`CalendarShim.kt` | pure / shim | `java.util.zip` = 0 files, `java.math.BigInteger` = 0 files |
+| **Surface** | `GameSurface.kt` (`GameSurface`/`DisplayTarget`/`GameSurfaceFactory`) | `AwtGameSurfaceFactory` + `AwtDisplayTarget` (wrap `Class348_Sub31`) | **interface complete and `ha_Sub1` already consumes it** |
+| Font raster | `GlyphRasterizer.kt` (`GlyphRasterizer`/`RasterFont`) | `AwtGlyphRasterizer` | Class323/351 bitmap-font path seamed |
+
+Decisive structural result: **`ha_Sub1` (software renderer, ~2,400 LOC) has been fully rewritten against the seams** — it takes a `GameSurfaceFactory`, holds `GameSurface`/`DisplayTarget`, reads `.pixels`/`.width`/`.height` through the interface, and now has **zero `java.awt`/`javax` imports**. The abstract base `ha.kt` (328 LOC, 110 abstract members) is likewise **import-clean** with no AWT/JNI references. The jvm-only companion has already been split out to `haStatics`.
+
+`commonMain` now holds **73 files**; `jvmMain` **813**. Remaining AWT footprint in jvmMain: 65 files (down from the §2 baseline of 74), concentrated in the genuinely platform-bound classes (Loader/GameApplet window shell, ha_Sub2/3 GL/D3D toolkits, the AWT input listeners, the legacy ImageProducer/Color font path).
+
+#### Status — what REMAINS in Phase 3
+
+1. **Move `ha` + `ha_Sub1` to `commonMain`** *(headline item, now unblocked)*. Both files are import-clean. The blocker was only that `ha_Sub1 extends ha`, and `ha`'s AWT/JNI-bound siblings (`ha_Sub2` jaggl, `ha_Sub3`/`Class377`/`Class378` D3D9) must stay in jvmMain. Resolution is the established **base-split pattern** (cf. the `Class348` node move): move the abstract `ha` base and `ha_Sub1` to commonMain, leave `ha_Sub2`/`ha_Sub3` in jvmMain extending the now-common base, sweep any bare companion references into `haStatics`. After this, the software renderer compiles for every future target. Do it in two commits (ha base first, then ha_Sub1) so each keeps the build green.
+
+2. **Finish the font path.** `Class323`/`Class351` (bitmap fonts) are seamed via `GlyphRasterizer`. The holdouts are `Class199` (25 AWT refs) and `Class294` (72 refs) — the legacy `Color`/`Image`/ImageProducer drawing path. Decision needed: either (a) extend the rasterizer seam to cover them, or (b) **formally scope them as JVM-only** alongside the deliberately-JVM `Class348_Sub31_Sub2` ImageProducer fallback (consistent with the GameSurface scoping note) and exclude them from the common renderer path. (b) is cheaper and likely correct; confirm no commonMain-bound code reaches them.
+
+3. **Runtime validation of the socket/JS5 port** *(carried-over risk, not yet retired)*. The Class202 JS5 + game-connect port onto `Class238` is byte-identical on the happy path but the failure path differs (EOF surfaces as `IOException` rather than `-1`). Needs a real login + cache-download smoke test against a live server before Phase 3 is signed off. This is the one item gated on something other than code.
+
+**Exit criteria for Phase 3:** `ha`+`ha_Sub1` in commonMain; font holdouts resolved (moved or scoped); login/JS5 runtime test passed; JVM build + run still byte-identical to the oracle.
 
 ### Phase 4 — Web target (4–8 weeks)
 1. Add `js()` + `wasmJs()` targets, `webMain` shared source set, `app-web` bootstrap (canvas, input bindings, OPFS `CacheStorage`, WebAudio `AudioSink`).
