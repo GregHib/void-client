@@ -27,7 +27,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
         val i_17_ = anInt5213 * i_14_ shr 12
         val i_18_ = anInt5212 * i_15_ shr 12
         val i_19_ = i_15_ * anInt5222 shr 12
-        ha.method3641(i_18_, i_19_, (-75).toByte(), this.anInt864, i_17_, i_16_)
+        haStatics.method3641(i_18_, i_19_, (-75).toByte(), this.anInt864, i_17_, i_16_)
     }
 
     companion object {

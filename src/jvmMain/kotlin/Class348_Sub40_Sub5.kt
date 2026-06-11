@@ -23,7 +23,7 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
 
     override fun method3044(i: Int) {
         if (i > 108) {
-            aByteArray9119 = ha.method3664(anInt9122, 124)
+            aByteArray9119 = haStatics.method3664(anInt9122, 124)
             anInt9126++
             method3061(true)
         }

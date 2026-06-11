@@ -1,6 +1,6 @@
 import Class22.Companion.method295
 import Class59_Sub1.Companion.method552
-import ha.Companion.method3692
+import haStatics.method3692
 import jaggl.OpenGL.Companion.glLoadIdentity
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glScalef
