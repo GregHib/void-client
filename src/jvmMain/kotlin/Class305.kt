@@ -127,10 +127,13 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
         @JvmField
         var aCanvas3869: Canvas? = null
         @JvmField
+        var aDisplayTarget3869: AwtDisplayTarget? = null
+        @JvmField
         var aBoolean3870: Boolean = false
         @JvmStatic
         fun method2294(i: Int) {
             aCanvas3869 = null
+            aDisplayTarget3869 = null
             if (i <= 94) method2296(-107)
         }
 

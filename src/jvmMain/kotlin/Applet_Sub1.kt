@@ -123,6 +123,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         } else container = Class34.aFrame476 as Container
         container.setLayout(null)
         Class305.aCanvas3869 = Canvas_Sub1(this)
+        Class305.aDisplayTarget3869 = AwtDisplayTarget(Class305.aCanvas3869!!)
         container.add(Class305.aCanvas3869)
         Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
         Class305.aCanvas3869!!.setVisible(true)

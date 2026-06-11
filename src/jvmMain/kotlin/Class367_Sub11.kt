@@ -216,7 +216,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                         Class305.aCanvas3869!!.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
                         if (Class348_Sub8.aHa6654 != null) {
                             if (Class59_Sub1.aBoolean5300) s.method3980(120, Class305.aCanvas3869!!)
-                            else Class348_Sub8.aHa6654!!.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+                            else Class348_Sub8.aHa6654!!.method3669(Class305.aDisplayTarget3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                         }
                         if (Class52.aFrame4904 === container) {
                             val insets = Class52.aFrame4904!!.getInsets()

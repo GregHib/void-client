@@ -1643,6 +1643,7 @@ class Client : Applet_Sub1() {
                 val var_class: Class<*> = Class93.anApplet1530!!.javaClass
                 val field = var_class.getDeclaredField("canvas")
                 Class305.aCanvas3869 = field.get(Class93.anApplet1530) as? Canvas
+                Class305.aDisplayTarget3869 = Class305.aCanvas3869?.let { AwtDisplayTarget(it) }
                 field.set(Class93.anApplet1530, null)
                 if (Class305.aCanvas3869 != null) return
             } catch (exception: Exception) {

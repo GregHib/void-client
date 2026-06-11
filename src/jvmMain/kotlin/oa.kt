@@ -205,9 +205,10 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     external override fun xa(f: Float)
 
-    override fun method3701(canvas: Canvas?) {
+    override fun method3701(displayTarget: DisplayTarget?) {
+        val canvas = (displayTarget as AwtDisplayTarget?)?.canvas
         if (aP5137!!.aCanvas5147 === canvas) method3677(null)
-        val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+        val var_p = aClass356_5126.method3480(displayTarget.hashCode().toLong(), -6008) as p?
         if (var_p != null) {
             var_p.method2715(110.toByte())
             var_p.method3436()
@@ -267,10 +268,11 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         }
     }
 
-    override fun method3669(canvas: Canvas?, i: Int, i_108_: Int) {
-        val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+    override fun method3669(displayTarget: DisplayTarget?, i: Int, i_108_: Int) {
+        val canvas = (displayTarget as AwtDisplayTarget?)?.canvas
+        val var_p = aClass356_5126.method3480(displayTarget.hashCode().toLong(), -6008) as p?
         var_p!!.method3435(canvas, i, i_108_)
-        if (canvas != null && canvas === aP5137!!.aCanvas5147) method3677(canvas)
+        if (canvas != null && canvas === aP5137!!.aCanvas5147) method3677(displayTarget)
     }
 
     private fun c(i: Short): Boolean { //
@@ -360,12 +362,13 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     private external fun va(var_za: za?)
 
-    override fun method3643(canvas: Canvas?, i: Int, i_153_: Int) {
-        var var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+    override fun method3643(displayTarget: DisplayTarget?, i: Int, i_153_: Int) {
+        val canvas = (displayTarget as AwtDisplayTarget?)?.canvas
+        var var_p = aClass356_5126.method3480(displayTarget.hashCode().toLong(), -6008) as p?
         if (var_p == null) {
             canvas!!.setIgnoreRepaint(true)
             var_p = p(this, canvas, i, i_153_)
-            aClass356_5126.method3483(36.toByte(), canvas.hashCode().toLong(), var_p)
+            aClass356_5126.method3483(36.toByte(), displayTarget.hashCode().toLong(), var_p)
         } else if (var_p.anInt5145 != i || var_p.anInt5148 != i_153_) var_p.method3435(canvas, i, i_153_)
     }
 
@@ -414,12 +417,12 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         return Class348_Sub1_Sub2(i, i_167_, i_168_, i_169_, i_170_, f)
     }
 
-    override fun method3677(canvas: Canvas?) {
-        if (canvas == null) {
+    override fun method3677(displayTarget: DisplayTarget?) {
+        if (displayTarget == null) {
             aP5137 = null
             t(null)
         } else {
-            val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
+            val var_p = aClass356_5126.method3480(displayTarget.hashCode().toLong(), -6008) as p?
             aP5137 = var_p
             t(var_p)
         }
@@ -536,7 +539,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     }
 
     override fun method3672() {
-        method3677(aP5137!!.aCanvas5147)
+        method3677(aP5137!!.aCanvas5147?.let { AwtDisplayTarget(it) })
     }
 
     override fun method3648(i: Int, i_222_: Int, `is`: Array<IntArray?>, is_223_: Array<IntArray?>?, i_224_: Int, i_225_: Int, i_226_: Int): s {
@@ -583,8 +586,9 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
                 method3631(1)
                 method3659(0)
                 if (canvas == null) break
-                method3643(canvas, i, i_177_)
-                method3677(canvas)
+                val displayTarget = AwtDisplayTarget(canvas)
+                method3643(displayTarget, i, i_177_)
+                method3677(displayTarget)
             } catch (throwable: Throwable) {
                 throwable.printStackTrace()
                 this.method3635(124.toByte())

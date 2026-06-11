@@ -1,3 +1,4 @@
+import java.awt.Canvas
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min
@@ -1309,8 +1310,9 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
 
     constructor(canvas: Canvas, var_d: d?, i: Int, i_355_: Int) : this(var_d) {
         try {
-            method3643(canvas, i, i_355_)
-            method3677(canvas)
+            val displayTarget = AwtDisplayTarget(canvas)
+            method3643(displayTarget, i, i_355_)
+            method3677(displayTarget)
         } catch (throwable: Throwable) {
             throwable.printStackTrace()
             this.method3635((-115).toByte())

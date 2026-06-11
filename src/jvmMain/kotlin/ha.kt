@@ -1,6 +1,7 @@
 import Class239_Sub27.Companion.method1839
 import Class348_Sub5.Companion.method2753
 import Class55.Companion.method515
+import java.awt.Canvas
 
 abstract class ha internal constructor(@JvmField var aD4579: d?) {
     @JvmField
