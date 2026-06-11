@@ -2017,7 +2017,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         } else throw IllegalArgumentException()
     }
 
-    fun method3724(runnable: Runnable?): Class167? {
+    fun method3724(runnable: Any?): Class167? {
         for (i in 0..<this.anInt7485) {
             if (aClass167Array7480!![i]!!.aRunnable2198 === runnable) return aClass167Array7480!![i]!!
         }

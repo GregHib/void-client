@@ -8,7 +8,7 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) {
     var anInt2192: Int = 0
     var aBoolean2195: Boolean = false
     var anInt2197: Int = 0
-    var aRunnable2198: Runnable? = null
+    var aRunnable2198: Any? = null
     var aBoolean2201: Boolean = false
     var aBoolean2202: Boolean = true
     var anInt2205: Int = 0
@@ -52,7 +52,7 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) {
     var aClass64_Sub1_2246: Class64_Sub1?
     var anIntArray2247: IntArray?
 
-    fun method1291(i: Int, runnable: Runnable?) {
+    fun method1291(i: Int, runnable: Any?) {
         if (i == 10000) {
             this.aRunnable2198 = runnable
             anInt2193++

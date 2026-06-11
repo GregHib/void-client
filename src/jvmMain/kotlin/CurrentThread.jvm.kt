@@ -1,1 +1,1 @@
-actual fun currentThread(): Runnable = Thread.currentThread()
+actual fun currentThread(): Any = Thread.currentThread()

@@ -10,7 +10,7 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Int
     private val anI5109: i
     private val anI5110: i
     private val anI5111: i
-    var aRunnable5112: Runnable? = null
+    var aRunnable5112: Any? = null
     private val anI5113: i
     private val anI5114: i
     private val anI5116: i
