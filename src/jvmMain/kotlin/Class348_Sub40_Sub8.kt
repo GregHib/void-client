@@ -1,4 +1,3 @@
-import java.awt.Color
 import kotlin.math.pow
 
 class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
@@ -258,7 +257,7 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
         @JvmField
         var anInt9161: Int = 0
         @JvmField
-        var aColorArray9163: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(16777215), Color(16726277), Color(16726277))
+        var aColorArray9163: IntArray? = intArrayOf(-0x1000000 or 9179409, -0x1000000 or 16777215, -0x1000000 or 16726277, -0x1000000 or 16726277)
         @JvmField
         var aClass238_9165: Class238? = null
 

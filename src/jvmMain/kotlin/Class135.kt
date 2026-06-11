@@ -3,7 +3,6 @@ import jaggl.OpenGL.Companion.glBufferDataARBa
 import jaggl.OpenGL.Companion.glBufferDataARBub
 import jaggl.OpenGL.Companion.glBufferSubDataARBub
 import jaggl.OpenGL.Companion.glGenBuffersARB
-import java.awt.Color
 
 abstract class Class135 {
     private var anInt1921 = 0
@@ -77,7 +76,7 @@ abstract class Class135 {
         @JvmField
         var anInt1926: Int = 0
         @JvmField
-        var aColorArray1928: Array<Color?>? = arrayOf<Color?>(Color(9179409), Color(3289650), Color(3289650), Color(3289650))
+        var aColorArray1928: IntArray? = intArrayOf(-0x1000000 or 9179409, -0x1000000 or 3289650, -0x1000000 or 3289650, -0x1000000 or 3289650)
         @JvmStatic
         fun method1148(i: Int, i_0_: Int) {
             anInt1925++

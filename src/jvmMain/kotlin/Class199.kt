@@ -42,18 +42,15 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
         var anInt2637: Int = 0
 
         @JvmStatic
-        fun method1455(i: Int, color: Color?, string: String?, color_0_: Color?, i_1_: Byte, color_2_: Color?) {
-            var color = color
-            var color_0_ = color_0_
-            var color_2_ = color_2_
+        fun method1455(i: Int, argb: Int, string: String?, argb_0_: Int, i_1_: Byte, argb_2_: Int) {
+            val color: Color = if (argb == 0) Color(140, 17, 17) else Color(argb)
+            val color_0_: Color = if (argb_0_ == 0) Color(140, 17, 17) else Color(argb_0_)
+            val color_2_: Color = if (argb_2_ == 0) Color(255, 255, 255) else Color(argb_2_)
             try {
                 anInt2627++
                 try {
                     val graphics = Class305.aCanvas3869!!.getGraphics()
                     if (Class351.aFont4329 == null) Class351.aFont4329 = Font("Helvetica", 1, 13)
-                    if (color == null) color = Color(140, 17, 17)
-                    if (color_0_ == null) color_0_ = Color(140, 17, 17)
-                    if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
                         if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                         val graphics_3_ = Class342.anImage4249!!.getGraphics()

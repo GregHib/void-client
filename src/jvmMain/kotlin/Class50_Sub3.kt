@@ -1,6 +1,5 @@
 import Class367_Sub3.Companion.method3540
 import ha_Sub2.Companion.method3743
-import java.awt.Color
 
 class Class50_Sub3 internal constructor(private val anInt5246: Int, private val anInt5250: Int, private val anInt5245: Int, private var anInt5247: Int, private val anInt5236: Int, private val anInt5237: Int, private val anInt5243: Int, private val anInt5249: Int, i_29_: Int, i_30_: Int) : Class50(-1, i_29_, i_30_) {
     public override fun method457(i: Int, i_12_: Int, i_13_: Int) {
@@ -37,7 +36,7 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
         @JvmField
         var anIntArray5241: IntArray? = IntArray(14)
         @JvmField
-        var aColorArray5242: Array<Color?>? = arrayOf<Color?>(Color(16777215), Color(16777215), Color(16741381), Color(16741381))
+        var aColorArray5242: IntArray? = intArrayOf(-0x1000000 or 16777215, -0x1000000 or 16777215, -0x1000000 or 16741381, -0x1000000 or 16741381)
         @JvmField
         var anInt5244: Int = 0
         @JvmField
