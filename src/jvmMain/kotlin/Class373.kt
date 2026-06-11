@@ -31,18 +31,5 @@ abstract class Class373 {
         var anInt4534: Int = 0
         @JvmField
         var anInt4535: Int = 0
-
-        @JvmStatic
-        fun method3591(i: Int, i_0_: Int): Class181 {
-            anInt4535++
-            var class181 = Class5.aClass60_4636!!.method583(i.toLong(), i_0_ + -128) as Class181?
-            if (class181 != null) return class181
-            val `is` = Class239_Sub12.aClass45_5964!!.method410(-1860, i_0_, i)
-            class181 = Class181()
-            if (`is` != null) class181.method1370(24, Class348_Sub49(`is`))
-            class181.method1371(4)
-            Class5.aClass60_4636!!.method582(class181, i.toLong(), (-103).toByte())
-            return class181
-        }
     }
 }

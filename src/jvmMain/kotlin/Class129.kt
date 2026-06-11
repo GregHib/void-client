@@ -1,5 +1,3 @@
-import Class373.Companion.method3591
-
 /* Class129 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -48,6 +46,19 @@ class Class129 internal constructor(private val anInt1886: Int, var anInt1881: I
         var aByteArrayArray1887: Array<ByteArray?>? = null
         @JvmField
         var anInt1893: Int = 0
+
+        @JvmStatic
+        fun method3591(i: Int, i_0_: Int): Class181 {
+            Class373.anInt4535++
+            var class181 = Class5.aClass60_4636!!.method583(i.toLong(), i_0_ + -128) as Class181?
+            if (class181 != null) return class181
+            val `is` = Class239_Sub12.aClass45_5964!!.method410(-1860, i_0_, i)
+            class181 = Class181()
+            if (`is` != null) class181.method1370(24, Class348_Sub49(`is`))
+            class181.method1371(4)
+            Class5.aClass60_4636!!.method582(class181, i.toLong(), (-103).toByte())
+            return class181
+        }
 
         @JvmStatic
         fun method1126(i: Int) {

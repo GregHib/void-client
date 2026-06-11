@@ -1,4 +1,3 @@
-import Class346.Companion.method2699
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
 import jagtheora.vorbis.DSPState
@@ -83,6 +82,22 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
     }
 
     companion object {
+        @JvmStatic
+        fun method2699(i: Int, `is`: Array<ShortArray?>?, fs: Array<FloatArray?>?): Array<ShortArray?>? {
+            try {
+                if (i != 16383) return null
+                var i_1_ = 0
+                while (fs!!.size > i_1_) {
+                    for (i_2_ in `is`!![i_1_]!!.indices) `is`[i_1_]!![i_2_] = (16383.0f * fs[i_1_]!![i_2_]).toInt().toShort()
+                    i_1_++
+                }
+                Class346.anInt4277++
+                return `is`
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("efa.L(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (fs != null) "{...}" else "null") + ')'))
+            }
+        }
+
         @JvmField
         var anInt8989: Int = 0
         @JvmField
