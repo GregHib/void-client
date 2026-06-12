@@ -522,7 +522,7 @@ import OutputStream_Sub2.Companion.method139
 import Player.Companion.method2458
 import RuntimeException_Sub1.Companion.method4010
 import aa_Sub1.Companion.method161
-import aa_Sub3.Companion.method167
+import aa_Sub3Statics.method167
 import haStatics.method3680
 import ha_Sub2.Companion.method3736
 import ha_Sub3.Companion.method3870

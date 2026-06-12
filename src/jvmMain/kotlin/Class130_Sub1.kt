@@ -104,7 +104,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ha_Sub2.anInt7690 = 0
             Class348_Sub42_Sub8.anInt9546 = 0
             Class239_Sub16.anInt6017 = 0
-            aa_Sub3.anInt5203 = 0
+            aa_Sub3Statics.anInt5203 = 0
             Class186_Sub1.anInt5810 = 0
             Class286_Sub5.anInt6251 = 0
             Class170.anInt5080 = 0
@@ -301,7 +301,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub44.anInt7096 = 0
             Class239_Sub11.anInt5958 = 0
             Class348_Sub16_Sub3.anInt8897 = 0
-            aa_Sub3.anInt5205 = 0
+            aa_Sub3Statics.anInt5205 = 0
             Class239_Sub28.anInt6139 = 0
             Class348_Sub49.anInt7150 = 0
             Class318_Sub1_Sub1_Sub1.anInt9944 = 0

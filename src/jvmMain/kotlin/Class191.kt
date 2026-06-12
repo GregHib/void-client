@@ -18,7 +18,7 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         if (anInt2559 != anInt2565) throw RuntimeException("Can only retrieve a full image cache")
         var i_0_ = 0
         while (anInt2559 > i_0_) {
-            aClass348_Sub6Array2563!![i_0_] = aa_Sub3.aClass348_Sub6_5206
+            aClass348_Sub6Array2563!![i_0_] = aa_Sub3Statics.aClass348_Sub6_5206
             i_0_++
         }
         if (i.toInt() != 16) method1427((-42).toByte())
@@ -40,7 +40,7 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         anInt2566++
         if (anInt2559 == anInt2565) {
             this.aBoolean2570 = aClass348_Sub6Array2563!![i_14_] == null
-            aClass348_Sub6Array2563!![i_14_] = aa_Sub3.aClass348_Sub6_5206
+            aClass348_Sub6Array2563!![i_14_] = aa_Sub3Statics.aClass348_Sub6_5206
             return anIntArrayArray2564!![i_14_]
         }
         if (anInt2559 != 1) {

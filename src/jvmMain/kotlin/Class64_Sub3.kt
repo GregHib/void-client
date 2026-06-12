@@ -8,7 +8,7 @@ import Class348_Sub16_Sub2.Companion.method2832
 import Class348_Sub40_Sub19.Companion.method3100
 import Class40.Companion.method371
 import Class59_Sub2_Sub1.Companion.method565
-import aa_Sub3.Companion.method166
+import aa_Sub3Statics.method166
 import jaclib.memory.Stream.Companion.floatToRawIntBits
 import jaggl.OpenGL.Companion.glColor4ub
 import s_Sub2.Companion.method3999

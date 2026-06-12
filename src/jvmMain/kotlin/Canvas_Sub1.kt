@@ -117,7 +117,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             var class64 = Class15.aClass60_225!!.method583(l, 81) as Class64?
             val i_18_ = 2055
             if (class64 == null) {
-                val class124 = Class300.method2277(0, aa_Sub3.aClass45_5207!!, i_16_, -1)
+                val class124 = Class300.method2277(0, aa_Sub3Statics.aClass45_5207!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
                 class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275, 64, 768) as Class64?

@@ -326,7 +326,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
                     }
                 }
                 RuntimeInfoProvider.instance = JvmRuntimeInfo()
-                aa_Sub3.method168(103.toByte())
+                aa_Sub3Statics.method168(103.toByte())
                 Class127_Sub1.method1119(false)
                 method87((-97).toByte())
                 method92(28740)

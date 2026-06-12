@@ -19,7 +19,7 @@ object Class157 {
         class348_sub49_sub2.writeInt(93.toByte(), Class129.aClass45_1878!!.method389(-104))
         class348_sub49_sub2.writeInt(90.toByte(), Class367_Sub10.aClass45_7382!!.method389(-122))
         class348_sub49_sub2.writeInt(92.toByte(), Class59_Sub2_Sub1.aClass45_8667!!.method389(9))
-        class348_sub49_sub2.writeInt(90.toByte(), aa_Sub3.aClass45_5207!!.method389(120))
+        class348_sub49_sub2.writeInt(90.toByte(), aa_Sub3Statics.aClass45_5207!!.method389(120))
         class348_sub49_sub2.writeInt(99.toByte(), Class21.aClass45_322!!.method389(64))
         class348_sub49_sub2.writeInt(90.toByte(), Class369_Sub2.aClass45_8589!!.method389(-123))
         class348_sub49_sub2.writeInt(115.toByte(), Class16.aClass45_233!!.method389(-113))
