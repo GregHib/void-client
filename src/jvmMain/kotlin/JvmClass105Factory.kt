@@ -14,4 +14,7 @@ class JvmClass105Factory(private val ha: ha_Sub1) : Class105Factory {
     override fun createEmpty(w: Int, h: Int, transparent: Boolean): Class105 =
         if (transparent) Class105_Sub3_Sub3(ha, w, h)
         else Class105_Sub3_Sub1(ha, w, h)
+
+    override fun createFromIndexedPixels(bytes: ByteArray, palette: IntArray, w: Int, h: Int): Class105 =
+        Class105_Sub3_Sub2(ha, bytes, palette, w, h)
 }

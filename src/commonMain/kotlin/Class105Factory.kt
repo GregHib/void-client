@@ -12,4 +12,7 @@ interface Class105Factory {
 
     /** Create an empty (solid-colour) sprite of size w×h. transparent=true → Sub3, false → Sub1. */
     fun createEmpty(w: Int, h: Int, transparent: Boolean): Class105
+
+    /** Create an indexed-colour sprite backed by a byte→palette lookup (Class105_Sub3_Sub2). */
+    fun createFromIndexedPixels(bytes: ByteArray, palette: IntArray, w: Int, h: Int): Class105
 }

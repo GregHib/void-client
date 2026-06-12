@@ -1563,7 +1563,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         val is_430_ = class207.aByteArray2699
         val i = class207.anInt2702
         val i_431_ = class207.anInt2696
-        val class105_sub3: Class105_Sub3
+        val class105_sub3: Class105
         if (bool && class207.aByteArray2695 == null) {
             val is_432_ = IntArray(`is`.size)
             val is_433_ = ByteArray(i * i_431_)
@@ -1572,7 +1572,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                 for (i_436_ in 0..<i) is_433_[i_435_ + i_436_] = is_430_[i_435_ + i_436_]
             }
             for (i_437_ in `is`.indices) is_432_[i_437_] = `is`[i_437_]
-            class105_sub3 = Class105_Sub3_Sub2(this, is_433_, is_432_, i, i_431_)
+            class105_sub3 = class105Factory.createFromIndexedPixels(is_433_, is_432_, i, i_431_)
         } else {
             val is_438_ = IntArray(i * i_431_)
             val is_439_ = class207.aByteArray2695
@@ -1584,13 +1584,13 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                         is_438_[i_444_ + i_445_] = if (i_446_ != 0) 0xffffff.inv() or i_446_ else 0
                     }
                 }
-                class105_sub3 = class105Factory.createFromPixels(is_438_, i, i_431_, false) as Class105_Sub3
+                class105_sub3 = class105Factory.createFromPixels(is_438_, i, i_431_, false)
             } else {
                 for (i_440_ in 0..<i_431_) {
                     val i_441_ = i_440_ * i
                     for (i_442_ in 0..<i) is_438_[i_441_ + i_442_] = (`is`[is_430_[i_441_ + i_442_].toInt() and 0xff] or (is_439_[i_441_ + i_442_].toInt() shl 24))
                 }
-                class105_sub3 = class105Factory.createFromPixels(is_438_, i, i_431_, true) as Class105_Sub3
+                class105_sub3 = class105Factory.createFromPixels(is_438_, i, i_431_, true)
             }
         }
         class105_sub3.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
