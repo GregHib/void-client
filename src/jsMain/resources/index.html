@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>void-client (web)</title>
+    <style>
+        html, body { margin: 0; height: 100%; background: #000; }
+        #game { display: block; margin: 0 auto; image-rendering: pixelated; }
+    </style>
+</head>
+<body>
+<!--
+  The game canvas. The software renderer blits here via the GameSurface seam (wired in a
+  later Phase-4 slice). Networking (this change) needs no DOM element of its own — the
+  WebSocket endpoint is derived from this page's URL by JsSocketOpener.
+
+  Point the client at a separate WebSocket->TCP proxy with ?ws=wss://host/path
+  (otherwise it connects to /socket on this same origin).
+-->
+<canvas id="game" width="765" height="503"></canvas>
+<script src="void-client.js"></script>
+</body>
+</html>
