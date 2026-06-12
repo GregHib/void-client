@@ -1,4 +1,4 @@
-import Class348_Sub5.Companion.method2755
+import Class348_Sub5Statics.method2755
 
 /* Class348_Sub40_Sub17_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

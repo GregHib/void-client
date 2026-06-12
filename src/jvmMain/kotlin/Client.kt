@@ -394,7 +394,7 @@ import Class348_Sub47.Companion.method3327
 import Class348_Sub49.Companion.method3376
 import Class348_Sub49_Sub1.Companion.method3403
 import Class348_Sub49_Sub2.Companion.method3414
-import Class348_Sub5.Companion.method2757
+import Class348_Sub5Statics.method2757
 import Class348_Sub5.Companion.method2762
 import Class348_Sub50.Companion.method3418
 import Class348_Sub51.Companion.method3430

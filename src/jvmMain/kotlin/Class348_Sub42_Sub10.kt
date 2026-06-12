@@ -3,7 +3,7 @@ import Class305.Companion.method2296
 import Class348_Sub17.Companion.method2929
 import Class348_Sub3.Companion.method2739
 import Class348_Sub40_Sub23.Companion.method3113
-import Class348_Sub5.Companion.method2752
+import Class348_Sub5Statics.method2752
 
 /* Class348_Sub42_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
