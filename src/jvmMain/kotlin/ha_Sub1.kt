@@ -999,7 +999,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324Base {
         val class143 = class143 as Class143?
         val `is` = IntArray(class207s!!.size)
         val is_283_ = IntArray(class207s.size)
@@ -1298,7 +1298,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         return class348_sub25!!.method2997()
     }
 
-    override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>, is_358_: Array<IntArray?>?, i_359_: Int, i_360_: Int, i_361_: Int): s {
+    override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>, is_358_: Array<IntArray?>?, i_359_: Int, i_360_: Int, i_361_: Int): SBase {
         return s_Sub1(this, i_360_, i_361_, i, i_357_, `is`, is_358_!!, i_359_)
     }
 
@@ -1329,7 +1329,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         method3713()
     }
 
-    override fun method3625(class124: Class124Base?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
+    override fun method3625(class124: Class124Base?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64Base {
         return Class64_Sub1(this, class124 as Class124, i, i_367_, i_368_, i_366_)
     }
 
