@@ -1,5 +1,3 @@
-import java.awt.event.ActionEvent
-
 class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int) : Class369_Sub3(class221, class341, i, i_13_, i_14_, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_) {
     var anInt10177: Int = 0
     override fun method51(i: Byte): Class223? {
@@ -21,7 +19,6 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
         var aBoolean10174: Boolean = true
         var anInt10175: Int = 0
         var anInt10176: Int = 0
-        var anInt10178: Int = 0
 
         @JvmStatic
         fun method3575(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {
@@ -69,7 +66,7 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
                     }
                 }
             }
-            if (i <= 57) Companion.method3578((-97).toByte(), null, null)
+            if (i <= 57) Class369_Sub3_Sub1Statics.method3578((-97).toByte(), null, null)
             anInt10173++
         }
 
@@ -89,33 +86,6 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
                 Class345.aClass60_4273!!.method582(class105, i.toLong(), (-108).toByte())
             }
             return class105
-        }
-
-        @JvmStatic
-        fun method3578(i: Byte, `object`: Any?, class297: Class297?) {
-            do {
-                try {
-                    anInt10178++
-                    if (class297!!.anEventQueue3799 != null) {
-                        var i_12_ = 0
-                        if (i.toInt() != -42) method3578(95.toByte(), null, null)
-                        while ( /**/i_12_ < 50 && class297.anEventQueue3799!!.peekEvent() != null) {
-                            Class286_Sub5.method2161(30.toByte(), 1L)
-                            i_12_++
-                        }
-                        try {
-                            if (`object` == null) break
-                            class297.anEventQueue3799!!.postEvent(ActionEvent(`object`, 1001, "dummy"))
-                        } catch (exception: Exception) {
-                            /* empty */
-                        }
-                        break
-                    }
-                    break
-                } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("fu.F(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ')'))
-                }
-            } while (false)
         }
     }
 }

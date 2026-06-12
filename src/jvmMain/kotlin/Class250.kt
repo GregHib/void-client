@@ -25,7 +25,7 @@ class Class250 : Runnable {
                     if (class279 != null) class279.method2084(-6858)
                 }
                 Class286_Sub5.method2161((-107).toByte(), 10L)
-                Class369_Sub3_Sub1.method3578((-42).toByte(), null, (this.aClass297_3228))
+                Class369_Sub3_Sub1Statics.method3578((-42).toByte(), null, (this.aClass297_3228))
             }
         } catch (exception: Exception) {
             method1242(null, exception, 15004)

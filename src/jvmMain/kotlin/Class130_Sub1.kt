@@ -1924,7 +1924,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class50_Sub3.anInt5239 = 0
             Class44.anInt621 = 0
             Class232.anInt3012 = 0
-            Class369_Sub3_Sub1.anInt10178 = 0
+            Class369_Sub3_Sub1Statics.anInt10178 = 0
             s_Sub3.anInt8300 = 0
             Class286_Sub8.anInt6298 = 0
             Class374.anInt4536 = 0
