@@ -5,7 +5,7 @@ import Class286_Sub9.Companion.method2174
 * Visit http://jode.sourceforge.net/
 */
 class Class98 : Class98Base {
-    var aClass88_1569: Class88 = Class88()
+    override var aClass88_1569: Class88 = Class88()
     override val entityList: EntityListNode get() = aClass88_1569.aClass318_Sub9_1503!!
 
     companion object {

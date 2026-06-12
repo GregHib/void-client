@@ -11,8 +11,8 @@ import s_Sub2.Companion.method4002
 import za_Sub1.Companion.method3439
 
 
-class Class88 {
-    var aClass318_Sub9_1503: Class318_Sub9? = Class318_Sub9()
+class Class88 : Class88Base {
+    override var aClass318_Sub9_1503: Class318_Sub9? = Class318_Sub9()
     private var aClass318_Sub9_1505: Class318_Sub9? = null
 
     fun method840(i: Int): Int {
