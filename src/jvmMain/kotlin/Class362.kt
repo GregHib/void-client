@@ -34,7 +34,7 @@ object Class362 {
                     i_1_ += 2 * i_4_
                     if (i_2_ < Class269.anInt3451) i_2_ = Class269.anInt3451
                     if (i_1_ < Class289.anInt3704) i_1_ = Class289.anInt3704
-                    var i_5_ = (Class95.aClass221_1542!!.method1607(Class92.anInt1524, i_1_, (-107).toByte()) - -Class290.anInt3712)
+                    var i_5_ = (Class221Statics.method1607(Class95.aClass221_1542!!, Class92.anInt1524, i_1_, (-107).toByte()) - -Class290.anInt3712)
                     var i_6_ = (Class239_Sub27.aClass341_6128!!.method2679(ha_Sub2.anInt7666, i_2_, 1595) + Class239_Sub3.anInt5871)
                     if (Class59_Sub1.aBoolean5300) {
                         i_5_ += s_Sub3.method4008((-124).toByte())

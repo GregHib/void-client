@@ -9,7 +9,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
 
     override fun method9(i: Byte, bool: Boolean) {
         if (bool) {
-            val i_0_ = ((aClass158_4646!!.aClass221_4948!!.method1607(Class92.anInt1524, aClass158_4646.anInt4931, (-119).toByte())) + aClass158_4646.anInt4947)
+            val i_0_ = ((Class221Statics.method1607(aClass158_4646!!.aClass221_4948!!, Class92.anInt1524, aClass158_4646.anInt4931, (-119).toByte())) + aClass158_4646.anInt4947)
             val i_1_ = ((aClass158_4646.aClass341_4945!!.method2679(ha_Sub2.anInt7666, aClass158_4646.anInt4936, i + 1644)) + aClass158_4646.anInt4932)
             aClass324_4649!!.method2584(null, aClass158_4646.anInt4937, aClass158_4646.anInt4940, null, aClass158_4646.anInt4935, aClass158_4646.anInt4946, aClass158_4646.anInt4936, null, i_1_, 0, 0, aClass158_4646.anInt4931, i_0_, false, aClass158_4646.anInt4943, aClass158_4646.aString4942)
         }
