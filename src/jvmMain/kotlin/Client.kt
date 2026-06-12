@@ -401,7 +401,7 @@ import Class348_Sub51.Companion.method3430
 import Class348_Sub5_Sub1.Companion.method2765
 import Class348_Sub6.Companion.method2768
 import Class348_Sub7.Companion.method2773
-import Class348_Sub8.Companion.method2774
+import Class348_Sub8Statics.method2774
 import Class348_Sub9.Companion.method2780
 import Class349.Companion.method3450
 import Class351.Companion.method3457
@@ -723,7 +723,7 @@ class Client : Applet_Sub1() {
         method1004(16.toByte())
         method3478(false)
         method98(i + 32609)
-        Class241.method1860((-89).toByte())
+        Class241Statics.method1860((-89).toByte())
         method1641(85.toByte())
         method906(-31777)
         method3680(-24016)
@@ -1013,7 +1013,7 @@ class Client : Applet_Sub1() {
         Class348_Sub17.method2930((-87).toByte())
         method808()
         method1536()
-        Class348_Sub8.method2775((-127).toByte())
+        Class348_Sub8Statics.method2775((-127).toByte())
         method2097()
         method1882(25365)
         method2981(false)
@@ -1311,7 +1311,7 @@ class Client : Applet_Sub1() {
             Class348_Sub40_Sub35.aClass161_9443 = Class161()
             Class348_Sub40_Sub35.aClass161_9443!!.anInt2143 = this.getParameter("demoid")!!.toInt()
             Class348_Sub40_Sub35.aClass161_9443!!.aString2147 = this.getParameter("demoaddress")
-            Class8.aClass364_165 = (Class348_Sub8.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
+            Class8.aClass364_165 = (Class348_Sub8Statics.method2776((-93).toByte(), this.getParameter("modewhere")!!.toInt()))
             if (Class76.aClass364_1279 == Class8.aClass364_165) {
                 Class8.aClass364_165 = Class108.aClass364_1657
             } else if (!method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {

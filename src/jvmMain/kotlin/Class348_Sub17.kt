@@ -414,7 +414,7 @@ class Class348_Sub17 : Class348 {
         @JvmStatic
         fun method2929(throwable: Throwable, string: String?): RuntimeException_Sub1 {
             anInt6789++
-            if (Loader.trace) {
+            if (DebugFlags.trace) {
                 throwable.printStackTrace()
             }
             val runtimeexception_sub1: RuntimeException_Sub1

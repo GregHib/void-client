@@ -3,7 +3,7 @@ import Class219.Companion.method1600
 import Class230.Companion.method1635
 import Class258_Sub4.Companion.method1974
 import Class348_Sub42_Sub9_Sub1.Companion.method3208
-import Class348_Sub8.Companion.method2774
+import Class348_Sub8Statics.method2774
 import Class71.method729
 import za_Sub2.Companion.method3443
 

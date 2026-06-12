@@ -5,10 +5,12 @@ class Class229 {
     companion object {
         var anInt2976: Int = 0
         var anInt2977: Int = 0
-        var aClass45_2978: Class45? = null
-        var aClass268_2979: Class268? = null
+        // Class45/Class268/Class194 are jvmMain-only types; held as Any? here and
+        // cast to their concrete types at jvmMain call-sites.
+        var aClass45_2978: Any? = null
+        var aClass268_2979: Any? = null
         var anInt2980: Int = 0
-        var aClass194_2981: Class194? = null
+        var aClass194_2981: Any? = null
 
         fun method1631(bool: Boolean): Class241 {
             anInt2980++
@@ -24,7 +26,6 @@ class Class229 {
             }
         }
 
-        @JvmStatic
         fun method1632(i: Int) {
             aClass45_2978 = null
             val i_1_ = -20 / ((-87 - i) / 34)

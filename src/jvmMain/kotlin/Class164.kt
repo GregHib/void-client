@@ -179,7 +179,7 @@ object Class164 {
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239.aClass166_3147 = Class166(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class247.aClass45_3183)
-            Class229.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            Class229.class268 = Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class362.aClass183_4460 = Class183(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class73.aClass219_4782 = Class219(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class348_Sub40_Sub25.aClass150_9342 = Class150(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, aa_Sub3Statics.aClass45_5207)
@@ -198,7 +198,7 @@ object Class164 {
             Class136.aClass65_4787 = Class65(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class91.aClass82_1523 = Class82(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239_Sub14.aClass259_5995 = Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class229.aClass194_2981 = Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
+            Class229.class194 = Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
             Class269.aClass217_3453 = Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class65.method699(Class104.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, Class21.aClass45_322, aa_Sub3Statics.aClass45_5207)
             method85(0, Class262Statics.aClass45_3323)
@@ -225,7 +225,7 @@ object Class164 {
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aClass153_9031, Class2.aClass141_117, Class318_Sub1_Sub3_Sub3.aClass170_10209)
+        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.class268, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aClass153_9031, Class2.aClass141_117, Class318_Sub1_Sub3_Sub3.aClass170_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(Class239_Sub14.aClass259_5995!!.anInt3305 + 1000))

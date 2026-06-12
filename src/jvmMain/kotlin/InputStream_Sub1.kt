@@ -123,17 +123,17 @@ class InputStream_Sub1 : InputStream() {
                 val i_15_ = -8 + i * 8
                 aLongArray76!![i] = (Class105_Sub2.method993(
                     (Class105_Sub2.method993(
-                        Class348_Sub8.method2777(aLongArrayArray75!![6]!![6 + i_15_], 65280L),
+                        Class348_Sub8Statics.method2777(aLongArrayArray75!![6]!![6 + i_15_], 65280L),
                         (Class105_Sub2.method993(
-                            Class348_Sub8.method2777((aLongArrayArray75!![5]!![5 + i_15_]), 16711680L),
+                            Class348_Sub8Statics.method2777((aLongArrayArray75!![5]!![5 + i_15_]), 16711680L),
                             (Class105_Sub2.method993(
                                 (Class105_Sub2.method993(
-                                    (Class105_Sub2.method993(Class348_Sub8.method2777((aLongArrayArray75!![2]!![i_15_ + 2]), 280375465082880L), (Class105_Sub2.method993(Class348_Sub8.method2777(71776119061217280L, (aLongArrayArray75!![1]!![1 + i_15_])), (Class348_Sub8.method2777(aLongArrayArray75!![0]!![i_15_], -72057594037927936L)))))),
-                                    Class348_Sub8.method2777(1095216660480L, (aLongArrayArray75!![3]!![3 + i_15_]))
-                                )), Class348_Sub8.method2777((aLongArrayArray75!![4]!![i_15_ - -4]), 4278190080L)
+                                    (Class105_Sub2.method993(Class348_Sub8Statics.method2777((aLongArrayArray75!![2]!![i_15_ + 2]), 280375465082880L), (Class105_Sub2.method993(Class348_Sub8Statics.method2777(71776119061217280L, (aLongArrayArray75!![1]!![1 + i_15_])), (Class348_Sub8Statics.method2777(aLongArrayArray75!![0]!![i_15_], -72057594037927936L)))))),
+                                    Class348_Sub8Statics.method2777(1095216660480L, (aLongArrayArray75!![3]!![3 + i_15_]))
+                                )), Class348_Sub8Statics.method2777((aLongArrayArray75!![4]!![i_15_ - -4]), 4278190080L)
                             ))
                         ))
-                    )), Class348_Sub8.method2777(aLongArrayArray75!![7]!![7 + i_15_], 255L)
+                    )), Class348_Sub8Statics.method2777(aLongArrayArray75!![7]!![7 + i_15_], 255L)
                 ))
             }
             aClass351_77 = Class351(8, 1)

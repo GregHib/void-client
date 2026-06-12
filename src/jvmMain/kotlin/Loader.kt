@@ -140,7 +140,7 @@ class Loader : Panel(), GameApplet {
                     "-ip", "--address" -> address = args[i + 1]
                     "-p", "--port" -> port = args[i + 1].toInt()
                     "-d", "--debug" -> debug = true
-                    "-t", "--trace" -> trace = true
+                    "-t", "--trace" -> { trace = true; DebugFlags.trace = true }
                 }
             }
             val l = Loader()

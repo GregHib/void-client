@@ -45,7 +45,7 @@ class Class241_Sub1 internal constructor() : Class241() {
     }
 
     private fun method1863(i: Int): Long {
-        val l = Class62.method599(-56) * 1000000L
+        val l = clockMillis() * 1000000L
         val l_1_ = l + -aLong6155
         aLong6155 = l
         if (l_1_ > -5000000000L && l_1_ < 5000000000L) {

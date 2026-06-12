@@ -384,7 +384,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                         Class75.aClass153_1238!!.method1220(73.toByte(), 256, 1024)
                         Class75.aClass141_1242!!.method1178(256, 1, 256)
                         Class75.aClass263_1245!!.method2014(4096, true)
-                        Class229.aClass194_2981!!.method1444(256, 123)
+                        Class229.class194!!.method1444(256, 123)
                         Class348Statics.anInt4290 = 20
                     } else if (Class348Statics.anInt4290 == 20) {
                         Class289.method2193(true, (-123).toByte())

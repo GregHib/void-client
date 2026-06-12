@@ -1,5 +1,5 @@
 import Class239_Sub8.Companion.method1752
-import Class348_Sub8.Companion.method2777
+import Class348_Sub8Statics.method2777
 import kotlin.math.min
 
 /* Class85 - Decompiled by JODE

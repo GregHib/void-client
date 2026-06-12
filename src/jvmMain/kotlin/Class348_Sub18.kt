@@ -68,7 +68,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
 
         fun method2938(i: Byte) {
             anInt6804++
-            Class229.aClass268_2979!!.method2037(10205)
+            Class229.class268!!.method2037(10205)
             Class362.aClass183_4460!!.method1381(true)
             Class348_Sub40_Sub25.aClass150_9342!!.method1206((-37).toByte())
             Class348_Sub40_Sub12.aClass263_9195!!.method2012(-23828)
@@ -76,7 +76,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Exception_Sub1Statics.aClass255_112!!.method1939(-110)
             Class10.aClass87_191!!.method834((-116).toByte())
             Class348_Sub40_Sub18.aClass319_9245!!.method2546(60)
-            Class229.aClass194_2981!!.method1445(64)
+            Class229.class194!!.method1445(64)
             Class269.aClass217_3453!!.method1589(127.toByte())
             Class64_Sub3.aClass261_5558!!.method1985(0)
             Class2.aClass141_117!!.method1175(125.toByte())

@@ -27,7 +27,7 @@ import r_Sub2.Companion.method3297
 /* Class237_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : Class237(i, i_114_, i_115_, bool, Class229.aClass268_2979, Class362.aClass183_4460) {
+class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : Class237(i, i_114_, i_115_, bool, Class229.class268, Class362.aClass183_4460) {
     var anInt5824: Int = 99
     fun method1689(i: Int, i_0_: Int, i_1_: Int, var_ha: ha?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, class361: Class361?) {
         try {
