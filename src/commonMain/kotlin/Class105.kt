@@ -98,4 +98,8 @@ abstract class Class105 : Interface3 {
     abstract fun method984(`is`: IntArray?)
 
     abstract fun method985(i: Int, i_108_: Int, i_109_: Int, i_110_: Int)
+
+    open fun method996(i: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Int, i_47_: Int) {
+        throw UnsupportedOperationException()
+    }
 }

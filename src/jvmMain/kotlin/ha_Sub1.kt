@@ -359,7 +359,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                 aClass105_7513 = class105
             }
             i_93_++
-            (aClass105_7513 as Class105_Sub3).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1)
+            aClass105_7513?.method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1)
         }
     }
 
@@ -1391,7 +1391,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                     anInt7512 = i_382_
                     aClass105_7513 = class105
                 }
-                (aClass105_7513 as Class105_Sub3).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ shl 1, i_380_ shl 1, i_384_, i_383_, i_385_, 1)
+                aClass105_7513?.method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ shl 1, i_380_ shl 1, i_384_, i_383_, i_385_, 1)
             } else method3723(i, i_377_, i_378_, i_379_, i_383_, i_385_)
         }
     }

@@ -94,7 +94,7 @@ abstract class Class105_Sub3(var aHa_Sub1_8460: ha_Sub1, var anInt8471: Int, var
         }
     }
 
-    abstract fun method996(i: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Int, i_47_: Int)
+    abstract override fun method996(i: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Int, i_47_: Int)
 
     abstract override fun method982(i: Int, i_48_: Int, i_49_: Int, i_50_: Int, i_51_: Int, i_52_: Int, i_53_: Int, i_54_: Int)
 
