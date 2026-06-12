@@ -3,7 +3,7 @@ import Class59_Sub2_Sub2.Companion.method573
 /* Class60 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_10_: Int = anInt1086) {
+class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_10_: Int = anInt1086) : Class60Base {
     private val anInt1084: Int
     private var aClass107_1089: Class107? = Class107()
     private val aClass356_1100: Class356
