@@ -3,7 +3,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val class64Factory: (ha_Sub1, Class124Base, Int, Int, Int, Int) -> Class64Base = { ha, c124, i, i1, i2, i3 -> Class64_Sub1(ha, c124 as Class124, i, i1, i2, i3) }, private val sFactory: (ha_Sub1, Int, Int, Int, Int, Array<IntArray?>, Array<IntArray?>, Int) -> SBase = { ha, a, b, c, d, e, f, g -> s_Sub1(ha, a, b, c, d, e, f, g) }, private val class167Factory: (ha_Sub1) -> Class167Base = { ha -> Class167(ha) }, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
+class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val class64Factory: (ha_Sub1, Class124Base, Int, Int, Int, Int) -> Class64Base = { ha, c124, i, i1, i2, i3 -> Class64_Sub1(ha, c124 as Class124, i, i1, i2, i3) }, private val sFactory: (ha_Sub1, Int, Int, Int, Int, Array<IntArray?>, Array<IntArray?>, Int) -> SBase = { ha, a, b, c, d, e, f, g -> s_Sub1(ha, a, b, c, d, e, f, g) }, private val class167Factory: (ha_Sub1) -> Class167Base = { ha -> Class167(ha) }, private val class60Factory: (Int) -> Class60Base = { Class60(it) }, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
     private val class105Factory: Class105Factory = JvmClass105Factory(this)
     private var anInt7465 = 0
     private var anInt7466 = 0
@@ -2087,10 +2087,10 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         this.anInt7494 = 3500
         this.anInt7507 = 0
         this.anInt7478 = 78642
-        aClass60_7499 = Class60(16)
+        aClass60_7499 = class60Factory(16)
         anInt7512 = -1
         try {
-            aClass60_7498 = Class60(256)
+            aClass60_7498 = class60Factory(256)
             this.aClass101_Sub1_7492 = Class101_Sub1()
             method3631(1)
             method3659(0)
