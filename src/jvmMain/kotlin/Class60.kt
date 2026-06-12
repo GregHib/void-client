@@ -24,7 +24,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         return anInt1084
     }
 
-    fun method578(i: Int, i_2_: Int) {
+    override fun method578(i: Int, i_2_: Int) {
         if (i == 2) {
             anInt1093++
             if (Class101_Sub1Statics.aClass246_5675 != null) {
@@ -49,7 +49,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         }
     }
 
-    fun method579(i: Int): Any? {
+    override fun method579(i: Int): Any? {
         anInt1094++
         var class348_sub42_sub8 = aClass356_1100.method3482(0) as Class348_Sub42_Sub8?
         while (class348_sub42_sub8 != null) {
@@ -91,7 +91,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         return anInt1086
     }
 
-    fun method582(`object`: Any?, l: Long, i: Byte) {
+    override fun method582(`object`: Any?, l: Long, i: Byte) {
         try {
             if (i >= -92) method589(null, -7)
             anInt1095++
@@ -101,7 +101,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         }
     }
 
-    fun method583(l: Long, i: Int): Any? {
+    override fun method583(l: Long, i: Int): Any? {
         try {
             val i_6_ = -59 % ((i - 2) / 47)
             anInt1085++
@@ -166,7 +166,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         if (i >= -75) method587(-97)
     }
 
-    fun method588(i: Int): Any? {
+    override fun method588(i: Int): Any? {
         anInt1087++
         var class348_sub42_sub8 = aClass356_1100.method3484(0) as Class348_Sub42_Sub8?
         if (i != -5052) method577(77)
@@ -183,7 +183,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
         return null
     }
 
-    fun method590(i: Int) {
+    override fun method590(i: Int) {
         anInt1091++
         aClass107_1089!!.method1009(i + 2110355138)
         aClass356_1100.method3481(i)

@@ -37,8 +37,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     private var anInt7495 = 0
     var anInt7496: Int
     var anInt7497: Int
-    private val aClass60_7498: Class60
-    private val aClass60_7499: Class60
+    private val aClass60_7498: Class60Base
+    private val aClass60_7499: Class60Base
     var anInt7500: Int
     var anInt7501: Int
     var aFloatArray7502: FloatArray? = null
