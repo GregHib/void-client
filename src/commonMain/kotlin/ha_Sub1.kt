@@ -3,25 +3,8 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val class64Factory: (ha_Sub1, Class124Base, Int, Int, Int, Int) -> Class64Base = { ha, c124, i, i1, i2, i3 -> Class64_Sub1(ha, c124 as Class124, i, i1, i2, i3) }, private val sFactory: (ha_Sub1, Int, Int, Int, Int, Array<IntArray?>, Array<IntArray?>, Int) -> SBase = { ha, a, b, c, d, e, f, g -> s_Sub1(ha, a, b, c, d, e, f, g) }, private val class167Factory: (ha_Sub1) -> Class167Base = { ha -> Class167(ha) }, private val class60Factory: (Int) -> Class60Base = { Class60(it) }, private val class324Factory: (ha_Sub1, Class143Base?, Array<Class207>?, Boolean) -> Class324Base = { ha, c143, c207s, bool ->
-        val class143 = c143 as Class143?
-        val `is` = IntArray(c207s!!.size)
-        val is_283_ = IntArray(c207s.size)
-        var bool_284_ = false
-        for (i in c207s.indices) {
-            `is`[i] = c207s[i]!!.anInt2702
-            is_283_[i] = c207s[i]!!.anInt2696
-            if (c207s[i]!!.aByteArray2695 != null) bool_284_ = true
-        }
-        if (bool) {
-            if (bool_284_) Class324_Sub4(ha, class143, c207s, `is`, is_283_)
-            else Class324_Sub1(ha, class143, c207s, `is`, is_283_)
-        } else {
-            require(!bool_284_) { "" }
-            Class324_Sub3(ha, class143, c207s, `is`, is_283_)
-        }
-    }, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
-    private val class105Factory: Class105Factory = JvmClass105Factory(this)
+class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val class64Factory: (ha_Sub1, Class124Base, Int, Int, Int, Int) -> Class64Base, private val sFactory: (ha_Sub1, Int, Int, Int, Int, Array<IntArray?>, Array<IntArray?>, Int) -> SBase, private val class167Factory: (ha_Sub1) -> Class167Base, private val class60Factory: (Int) -> Class60Base, private val class324Factory: (ha_Sub1, Class143Base?, Array<Class207>?, Boolean) -> Class324Base, private val class105FactoryProvider: (ha_Sub1) -> Class105Factory, private val audioInit: () -> Unit = {}, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
+    private val class105Factory: Class105Factory = class105FactoryProvider(this)
     private var anInt7465 = 0
     private var anInt7466 = 0
     private val aClass356_7467: HashMap<Long, GameSurface> = HashMap()
@@ -2096,7 +2079,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
             this.aClass101_Sub1_7492 = Class101_Sub1()
             method3631(1)
             method3659(0)
-            method3659Init()
+            audioInit()
             aBoolean7471 = true
             anInt7466 = clockMillis().toInt()
         } catch (throwable: Throwable) {
@@ -2117,7 +2100,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         `is`!![3] = this.anInt7503
     }
 
-    override fun method3702(i: Int): za? {
+    override fun method3702(i: Int): ZaBase? {
         return null
     }
 
@@ -2294,11 +2277,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         aClass167Array7480!![i]!!.method1291(10000, currentThread())
     }
 
-    override fun method3659Init() {
-        Class59_Sub2_Sub1.method566(true, true, (-126).toByte()) { Class239_Sub25.method1827(1415665776) }
-    }
-
-    @Throws(Exception_Sub1::class)
+@Throws(Exception_Sub1::class)
     override fun method3707(rectangles: Array<Rect?>?, i: Int, i_631_: Int, i_632_: Int) {
         check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
         try {
