@@ -19,7 +19,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     var anInt7477: Int = 0
     var anInt7478: Int
     var anInt7479: Int = 0
-    private var aClass167Array7480: Array<Class167?>? = null
+    private var aClass167Array7480: Array<Class167Base?>? = null
     private var anInt7481 = 0
     var anInt7482: Int
     var anIntArray7483: IntArray? = null
@@ -835,7 +835,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
 
     override fun method3631(i: Int) {
         this.anInt7485 = i
-        aClass167Array7480 = arrayOfNulls<Class167>(this.anInt7485)
+        aClass167Array7480 = arrayOfNulls<Class167Base>(this.anInt7485)
         for (i_240_ in 0..<this.anInt7485) aClass167Array7480!![i_240_] = Class167(this)
     }
 
@@ -1992,7 +1992,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         } else throw IllegalArgumentException()
     }
 
-    fun method3724(runnable: Any?): Class167? {
+    fun method3724(runnable: Any?): Class167Base? {
         for (i in 0..<this.anInt7485) {
             if (aClass167Array7480!![i]!!.aRunnable2198 === runnable) return aClass167Array7480!![i]!!
         }

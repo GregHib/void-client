@@ -1187,8 +1187,8 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
     }
 
     private fun method3992(i: Int, i_255_: Int, i_256_: Int) {
-        val class167 = aHa_Sub1_8217.method3724(currentThread())
-        class167!!.aClass109_2220!!.anInt1674 = 0
+        val class167 = aHa_Sub1_8217.method3724(currentThread()) as Class167
+        class167.aClass109_2220!!.anInt1674 = 0
         if (aClass266ArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
         else if (aClass102ArrayArray8215 != null) method3994(i, i_255_, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
         else if (aClass198ArrayArray8219 != null) method3995(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
@@ -1740,8 +1740,8 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
     }
 
     override fun method3987(i: Int, i_411_: Int, i_412_: Int, i_413_: Int, i_414_: Int, i_415_: Int, i_416_: Int, bools: Array<BooleanArray?>) {
-        val class167 = aHa_Sub1_8217.method3724(currentThread())
-        val class109 = class167!!.aClass109_2220!!
+        val class167 = aHa_Sub1_8217.method3724(currentThread()) as Class167
+        val class109 = class167.aClass109_2220!!
         class109.anInt1674 = 0
         class109.aBoolean1671 = true
         aHa_Sub1_8217.ya()

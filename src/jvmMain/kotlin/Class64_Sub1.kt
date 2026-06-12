@@ -122,7 +122,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method632(thread: Thread?) {
-        val class167: Class167 = aHa_Sub1_5353.method3724(thread)!!
+        val class167 = aHa_Sub1_5353.method3724(thread) as Class167
         aClass109_5383 = class167.aClass109_2220
         if (class167 != aClass167_5367) {
             aClass167_5367 = class167
@@ -2273,7 +2273,7 @@ class Class64_Sub1 : Class64 {
     }
 
     private fun method648(thread: Thread?) {
-        val class167: Class167 = aHa_Sub1_5353.method3724(thread)!!
+        val class167 = aHa_Sub1_5353.method3724(thread) as Class167
         if (class167 != aClass167_5336) {
             aClass167_5336 = class167
             aClass64_Sub1_5378 = aClass167_5336!!.aClass64_Sub1_2243
@@ -3422,7 +3422,7 @@ class Class64_Sub1 : Class64 {
         aFloatArrayArray5314 = arrayOfNulls<FloatArray>(anInt5351)
         aFloatArrayArray5345 = arrayOfNulls<FloatArray>(anInt5351)
         val class358 = method565(255, anInt5351, class124, `is`)!!
-        val class167: Class167 = aHa_Sub1_5353.method3724(currentThread())!!
+        val class167 = aHa_Sub1_5353.method3724(currentThread()) as Class167
         val fs = class167.aFloatArray2226!!
         var bool_802_ = false
         for (i_803_ in 0..<anInt5351) {
