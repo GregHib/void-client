@@ -4,6 +4,7 @@ import kotlin.math.min
 import kotlin.math.sqrt
 
 class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
+    private val class105Factory: Class105Factory = JvmClass105Factory(this)
     private var anInt7465 = 0
     private var anInt7466 = 0
     private val aClass356_7467: HashMap<Long, GameSurface> = HashMap()
@@ -753,8 +754,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
             for (i_222_ in 0..<i_216_) `is`[i_221_ + i_222_] = this.anIntArray7483!![i_218_++]
             i_218_ += i_219_
         }
-        if (bool) return Class105_Sub3_Sub3(this, `is`, i_216_, i_217_)
-        return Class105_Sub3_Sub1(this, `is`, i_216_, i_217_)
+        return class105Factory.createFromPixels(`is`, i_216_, i_217_, bool)
     }
 
     private fun method3717() {
@@ -1557,8 +1557,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                 }
             }
         }
-        if (bool_425_) return Class105_Sub3_Sub3(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
-        return Class105_Sub3_Sub1(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
+        return class105Factory.createFromPixelRegion(`is`!!, i, i_422_, i_423_, i_424_, bool, bool_425_)
     }
 
     override fun method3691(class207: Class207?, bool: Boolean): Class105 {
@@ -1587,13 +1586,13 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                         is_438_[i_444_ + i_445_] = if (i_446_ != 0) 0xffffff.inv() or i_446_ else 0
                     }
                 }
-                class105_sub3 = Class105_Sub3_Sub1(this, is_438_, i, i_431_)
+                class105_sub3 = class105Factory.createFromPixels(is_438_, i, i_431_, false) as Class105_Sub3
             } else {
                 for (i_440_ in 0..<i_431_) {
                     val i_441_ = i_440_ * i
                     for (i_442_ in 0..<i) is_438_[i_441_ + i_442_] = (`is`[is_430_[i_441_ + i_442_].toInt() and 0xff] or (is_439_[i_441_ + i_442_].toInt() shl 24))
                 }
-                class105_sub3 = Class105_Sub3_Sub3(this, is_438_, i, i_431_)
+                class105_sub3 = class105Factory.createFromPixels(is_438_, i, i_431_, true) as Class105_Sub3
             }
         }
         class105_sub3.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
@@ -1813,8 +1812,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3629(i: Int, i_519_: Int, bool: Boolean): Class105 {
-        if (bool) return Class105_Sub3_Sub3(this, i, i_519_)
-        return Class105_Sub3_Sub1(this, i, i_519_)
+        return class105Factory.createEmpty(i, i_519_, bool)
     }
 
     override fun method3630(bool: Boolean) {
