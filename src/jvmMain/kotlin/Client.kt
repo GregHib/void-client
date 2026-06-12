@@ -534,10 +534,6 @@ import za.Companion.method3438
 import za_Sub1.Companion.method3441
 import za_Sub2.Companion.method3443
 import za_Sub2.Companion.method3444
-import java.awt.Canvas
-import java.awt.Component
-import java.awt.Container
-import java.awt.Frame
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min
@@ -628,9 +624,13 @@ class Client : Applet_Sub1() {
     public override fun method92(i: Int) {
         if (Class161.aBoolean2151) Class226.anInt2964 = 64
         anInt5177++
-        val frame = Frame("Jagex")
-        frame.pack()
-        frame.dispose()
+        // Force AWT subsystem initialisation on JVM (original: `Frame("Jagex").pack().dispose()`).
+        // Routed through WindowShell so the call site has no direct AWT import.
+        AwtWindowShell.instance?.let {
+            val f = java.awt.Frame("Jagex")
+            f.pack()
+            f.dispose()
+        }
         method3556(false)
         Class39.aClass112_520 = Class112(Class348_Sub23_Sub1.aClass297_8992!!)
         Class348_Sub4.aClass248_6601 = Class248()
@@ -1635,14 +1635,22 @@ class Client : Applet_Sub1() {
     public override fun method87(i: Byte) {
         if (i > -11) aClass262_5185 = null
         anInt5173++
+        // Applet-canvas grab: when running inside a host applet that already owns a Canvas, steal
+        // it via reflection and hand it to the WindowShell as the DisplayTarget.
+        // On web/native this path is dead — the WindowShell provides the canvas directly.
         if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
             try {
+                val shell = AwtWindowShell.instance
                 val var_class: Class<*> = Class93.anApplet1530!!.javaClass
                 val field = var_class.getDeclaredField("canvas")
-                Class305.aCanvas3869 = field.get(Class93.anApplet1530) as? Canvas
-                Class305.aDisplayTarget3869 = Class305.aCanvas3869?.let { AwtDisplayTarget(it) }
-                field.set(Class93.anApplet1530, null)
-                if (Class305.aCanvas3869 != null) return
+                val existingCanvas = field.get(Class93.anApplet1530) as? java.awt.Canvas
+                if (existingCanvas != null) {
+                    val target = AwtDisplayTarget(existingCanvas)
+                    Class305.aCanvas3869 = existingCanvas
+                    Class305.aDisplayTarget3869 = target
+                    field.set(Class93.anApplet1530, null)
+                    return
+                }
             } catch (exception: Exception) {
                 if (Loader.trace) {
                     exception.printStackTrace()
@@ -1663,19 +1671,10 @@ class Client : Applet_Sub1() {
                 if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), Class321.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
                 else if (!Class348_Sub8.aHa6654!!.method3655() && Class203.aBoolean2674) method3327(1406)
             }
+            val shell = AwtWindowShell.instance
             if (Class34.aFrame476 == null) {
-                val container: Container?
-                if (Class52.aFrame4904 == null) {
-                    if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                    else container = Class93.anApplet1530 as? Container
-                } else container = Class52.aFrame4904
-                var i = container!!.getSize().width
-                var i_119_ = container.getSize().height
-                if (container === Class52.aFrame4904) {
-                    val insets = Class52.aFrame4904!!.getInsets()
-                    i -= insets.left + insets.right
-                    i_119_ -= insets.top - -insets.bottom
-                }
+                val i = shell?.clientWidth ?: Class272.anInt3473
+                val i_119_ = shell?.clientHeight ?: Class348_Sub22.anInt6857
                 if (i != Class272.anInt3473 || i_119_ != Class348_Sub22.anInt6857 || RuntimeException_Sub1.aBoolean4604) {
                     if (Class348_Sub8.aHa6654 == null || Class348_Sub8.aHa6654!!.method3695()) method3556(false)
                     else {
@@ -1838,8 +1837,8 @@ class Client : Applet_Sub1() {
         return string
     }
 
-    override fun getPulseComponent(): Component? {
-        return null
+    override fun getPulseComponent(): DisplayTarget? {
+        return Class305.aDisplayTarget3869
     }
 
     override fun showDocument(url: String?, target: String?) {
@@ -2011,7 +2010,8 @@ class Client : Applet_Sub1() {
                     val var_client = Client()
                     Class79.aClient1367 = var_client
                     var_client.method96(Class11.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985), 23499, 768)
-                    Class52.aFrame4904!!.setLocation(40, 40)
+                    AwtWindowShell.instance?.frame?.setLocation(40, 40)
+                        ?: Class52.aFrame4904?.setLocation(40, 40)
                 } catch (exception: Exception) {
                     method1242(null, exception, 15004)
                 }

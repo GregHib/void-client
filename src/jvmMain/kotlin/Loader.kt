@@ -1,6 +1,5 @@
 import Applet_Sub1.Companion.provideLoaderApplet
 import java.awt.BorderLayout
-import java.awt.Component
 import java.awt.Dimension
 import java.awt.Image
 import java.awt.Panel
@@ -104,8 +103,9 @@ class Loader : Panel(), GameApplet {
     override fun destroy() {
     }
 
-    override fun getPulseComponent(): Component {
-        return this
+    override fun getPulseComponent(): DisplayTarget? {
+        // Return the current canvas DisplayTarget so focus/repaint requests reach the AWT canvas.
+        return Class305.aDisplayTarget3869
     }
 
     override fun showDocument(url: String?, target: String?) {

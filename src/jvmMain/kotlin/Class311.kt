@@ -106,7 +106,9 @@ class Class311 : Runnable {
                 val container: Container?
                 if (Class52.aFrame4904 != null) container = Class52.aFrame4904
                 else if (Class93.anApplet1530 != null) {
-                    container = Class93.anApplet1530!!.getPulseComponent() as? Container
+                    // getPulseComponent() now returns DisplayTarget, not AWT Container;
+                    // fall back to the known applet root panel instead.
+                    container = Class348_Sub40_Sub9.anApplet_Sub1_9169
                 }
                 else container = Class348_Sub40_Sub9.anApplet_Sub1_9169
                 container!!.getSize()
