@@ -3,7 +3,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
+class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val class64Factory: (ha_Sub1, Class124Base, Int, Int, Int, Int) -> Class64Base = { ha, c124, i, i1, i2, i3 -> Class64_Sub1(ha, c124 as Class124, i, i1, i2, i3) }, private val sFactory: (ha_Sub1, Int, Int, Int, Int, Array<IntArray?>, Array<IntArray?>, Int) -> SBase = { ha, a, b, c, d, e, f, g -> s_Sub1(ha, a, b, c, d, e, f, g) }, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
     private val class105Factory: Class105Factory = JvmClass105Factory(this)
     private var anInt7465 = 0
     private var anInt7466 = 0
@@ -1297,7 +1297,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>, is_358_: Array<IntArray?>?, i_359_: Int, i_360_: Int, i_361_: Int): SBase {
-        return s_Sub1(this, i_360_, i_361_, i, i_357_, `is`, is_358_!!, i_359_)
+        return sFactory(this, i_360_, i_361_, i, i_357_, `is`, is_358_!!, i_359_)
     }
 
     override fun H(i: Int, i_362_: Int, i_363_: Int, `is`: IntArray?) {
@@ -1328,7 +1328,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3625(class124: Class124Base?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64Base {
-        return Class64_Sub1(this, class124 as Class124, i, i_367_, i_368_, i_366_)
+        return class64Factory(this, class124!!, i, i_367_, i_368_, i_366_)
     }
 
     override fun method3624(i: Int, i_369_: Int): Interface13 {
@@ -1819,8 +1819,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3650(i: Int) {
-        Class64_Sub1.anInt5350 = i
-        Class64_Sub1.anInt5346 = Class64_Sub1.anInt5350
+        Class64_Sub1Statics.anInt5350 = i
+        Class64_Sub1Statics.anInt5346 = Class64_Sub1Statics.anInt5350
         check(this.anInt7485 <= 1) { "No MT" }
         method3631(this.anInt7485)
         method3659(0)

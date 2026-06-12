@@ -68,17 +68,17 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
 
     init {
         this.aClass101_Sub1_2209 = Class101_Sub1()
-        this.anIntArray2213 = IntArray(Class64_Sub1.anInt5350)
-        this.anIntArray2214 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2213 = IntArray(Class64_Sub1Statics.anInt5350)
+        this.anIntArray2214 = IntArray(Class64_Sub1Statics.anInt5350)
         this.anIntArray2212 = IntArray(64)
         this.aFloatArray2226 = FloatArray(2)
         this.anIntArray2216 = IntArray(10000)
-        this.anIntArray2222 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2222 = IntArray(Class64_Sub1Statics.anInt5350)
         this.anIntArray2232 = IntArray(64)
         this.anIntArray2218 = IntArray(8)
-        this.anIntArray2237 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2237 = IntArray(Class64_Sub1Statics.anInt5350)
         this.anIntArray2236 = IntArray(10000)
-        this.anIntArray2230 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2230 = IntArray(Class64_Sub1Statics.anInt5350)
         this.anIntArray2240 = IntArray(10)
         this.anIntArray2228 = IntArray(64)
         this.anIntArray2238 = IntArray(10)
@@ -86,9 +86,9 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
         this.anIntArray2235 = IntArray(10)
         this.anIntArray2245 = IntArray(8)
         this.anIntArray2217 = IntArray(64)
-        this.anIntArray2244 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2244 = IntArray(Class64_Sub1Statics.anInt5350)
         this.anIntArray2247 = IntArray(10)
-        this.anIntArray2234 = IntArray(Class64_Sub1.anInt5350)
+        this.anIntArray2234 = IntArray(Class64_Sub1Statics.anInt5350)
         aHa_Sub1_2191 = var_ha_Sub1
         this.anInt2210 = aHa_Sub1_2191.anInt7494 + -255
         this.aClass109_2220 = Class109(var_ha_Sub1, this)
@@ -102,9 +102,9 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
         this.aClass64_Sub1_2227 = Class64_Sub1(aHa_Sub1_2191)
         this.aClass64_Sub1_2246 = Class64_Sub1(aHa_Sub1_2191)
         this.aClass64_Sub1_2225 = Class64_Sub1(aHa_Sub1_2191)
-        this.anIntArray2242 = IntArray(Class64_Sub1.anInt5346)
+        this.anIntArray2242 = IntArray(Class64_Sub1Statics.anInt5346)
         var i = 0
-        while (Class64_Sub1.anInt5346 > i) {
+        while (Class64_Sub1Statics.anInt5346 > i) {
             this.anIntArray2242!![i] = -1
             i++
         }

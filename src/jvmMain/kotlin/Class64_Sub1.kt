@@ -2349,7 +2349,7 @@ class Class64_Sub1 : Class64 {
         method636()
         class64_sub1_586_.method655()
         class64_sub1_586_.method636()
-        anInt5341++
+        Class64_Sub1Statics.anInt5341++
         var i_587_ = 0
         val `is` = class64_sub1_586_.anIntArray5356
         val i_588_ = class64_sub1_586_.anInt5387
@@ -2386,8 +2386,8 @@ class Class64_Sub1 : Class64 {
                                     class360_596_.anInt4427 += class360.anInt4427
                                     class360_596_.anInt4429 += class360.anInt4429
                                     i_587_++
-                                    anIntArray5326[i_589_] = anInt5341
-                                    anIntArray5318[i_593_] = anInt5341
+                                    anIntArray5326[i_589_] = Class64_Sub1Statics.anInt5341
+                                    anIntArray5318[i_593_] = Class64_Sub1Statics.anInt5341
                                 }
                             }
                         }
@@ -2397,13 +2397,13 @@ class Class64_Sub1 : Class64 {
         }
         if (i_587_ >= 3 && bool) {
             for (i_597_ in 0..<anInt5351) {
-                if (anIntArray5326[aShortArray5317[i_597_].toInt()] == anInt5341 && anIntArray5326[aShortArray5394[i_597_].toInt()] == anInt5341 && anIntArray5326[aShortArray5364[i_597_].toInt()] == anInt5341) {
+                if (anIntArray5326[aShortArray5317[i_597_].toInt()] == Class64_Sub1Statics.anInt5341 && anIntArray5326[aShortArray5394[i_597_].toInt()] == Class64_Sub1Statics.anInt5341 && anIntArray5326[aShortArray5364[i_597_].toInt()] == Class64_Sub1Statics.anInt5341) {
                     if (aByteArray5386 == null) aByteArray5386 = ByteArray(anInt5351)
                     aByteArray5386!![i_597_] = 2.toByte()
                 }
             }
             for (i_598_ in 0..<class64_sub1_586_.anInt5351) {
-                if ((anIntArray5318[class64_sub1_586_.aShortArray5317[i_598_].toInt()] == anInt5341) && anIntArray5318[(class64_sub1_586_.aShortArray5394[i_598_]).toInt()] == anInt5341 && anIntArray5318[(class64_sub1_586_.aShortArray5364[i_598_]).toInt()] == anInt5341) {
+                if ((anIntArray5318[class64_sub1_586_.aShortArray5317[i_598_].toInt()] == Class64_Sub1Statics.anInt5341) && anIntArray5318[(class64_sub1_586_.aShortArray5394[i_598_]).toInt()] == Class64_Sub1Statics.anInt5341 && anIntArray5318[(class64_sub1_586_.aShortArray5364[i_598_]).toInt()] == Class64_Sub1Statics.anInt5341) {
                     if (class64_sub1_586_.aByteArray5386 == null) class64_sub1_586_.aByteArray5386 = ByteArray(class64_sub1_586_.anInt5351)
                     class64_sub1_586_.aByteArray5386!![i_598_] = 2.toByte()
                 }
@@ -3611,14 +3611,5 @@ class Class64_Sub1 : Class64 {
         }
     }
 
-    companion object {
-        private var anInt5341: Int
-        var anInt5346: Int = 4096
-        var anInt5350: Int
 
-        init {
-            anInt5341 = 0
-            anInt5350 = 4096
-        }
-    }
 }
