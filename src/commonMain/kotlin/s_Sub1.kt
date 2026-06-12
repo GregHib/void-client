@@ -39,12 +39,12 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         if (`is` != null && `is`.size != 0) {
             for (i_12_ in is_4_.indices) {
                 if (is_4_[i_12_] == -1) is_4_[i_12_] = 0
-                else is_4_[i_12_] = ((Class126.anIntArray4983!![Class25.method303(is_4_[i_12_], 30).toInt() and 0xffff]) shl 8) or 0xff
+                else is_4_[i_12_] = ((Class126Statics.anIntArray4983!![Class25Statics.method303(is_4_[i_12_], 30).toInt() and 0xffff]) shl 8) or 0xff
             }
             if (is_5_ != null) {
                 for (i_13_ in is_5_.indices) {
                     if (is_5_[i_13_] == -1) is_5_[i_13_] = 0
-                    else is_5_[i_13_] = ((Class126.anIntArray4983!![Class25.method303(is_5_[i_13_], 30).toInt() and 0xffff]) shl 8) or 0xff
+                    else is_5_[i_13_] = ((Class126Statics.anIntArray4983!![Class25Statics.method303(is_5_[i_13_], 30).toInt() and 0xffff]) shl 8) or 0xff
                 }
             }
             if (bool_11_) {
@@ -94,7 +94,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         }
                         var i_25_ = -16777216
                         if (is_6_[i_14_] != -1 && method3997(aHa_Sub1_8217.aD4579!!.method3(is_6_[i_14_], -6662)!!.aByte213.toInt())) i_25_ = -1694498816
-                        class198.anIntArray2623!![i_14_] = (i_25_ or Class298.method2250(method3991((is_4_[i_14_] shr 8), i_18_), 118, i_23_, i_8_))
+                        class198.anIntArray2623!![i_14_] = (i_25_ or Class298Statics.method2250(method3991((is_4_[i_14_] shr 8), i_18_), 118, i_23_, i_8_))
                         if (is_5_ != null) class198.aByteArray2617!![i_14_] = i_18_.toByte()
                     }
                     class198.aShortArray2616!![i_14_] = is_6_[i_14_].toShort()
@@ -180,28 +180,28 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 88, i_38_, i_8_))
+                        class266.anInt3389 = (Class298Statics.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 88, i_38_, i_8_))
                         if (class266.anInt3388 != 0) class266.anInt3389 = class266.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_30_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 97, i_38_, i_8_))
+                        class266.anInt3387 = (Class298Statics.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 97, i_38_, i_8_))
                         if (class266.anInt3388 != 0) class266.anInt3387 = class266.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_31_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 103, i_38_, i_8_))
+                        class266.anInt3380 = (Class298Statics.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 103, i_38_, i_8_))
                         if (class266.anInt3388 != 0) class266.anInt3380 = class266.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_38_ = 255 * is_3_[i_32_] / i_9_
                             if (i_38_ < 0) i_38_ = 0
                             else if (i_38_ > 255) i_38_ = 255
                         } else i_38_ = 0
-                        class266.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 42, i_38_, i_8_))
+                        class266.anInt3381 = (Class298Statics.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 42, i_38_, i_8_))
                         class266.aShort3379 = i_37_.toShort()
                     } else {
                         var i_39_: Int
@@ -210,28 +210,28 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3389 = (Class298.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 68, i_39_, i_8_))
+                        class266.anInt3389 = (Class298Statics.method2250(method3991(is_4_[i_29_] shr 8, (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_])), 68, i_39_, i_8_))
                         if (class266.anInt3388 != 0) class266.anInt3389 = class266.anInt3389 or (255 - (aByteArrayArray8220!![i]!![i_0_] - aByteArrayArray8232!![i]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_30_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3387 = (Class298.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 112, i_39_, i_8_))
+                        class266.anInt3387 = (Class298Statics.method2250(method3991(is_4_[i_30_] shr 8, (aByteArrayArray8220!![i + 1]!![i_0_] - (aByteArrayArray8232!![i + 1]!![i_0_]))), 112, i_39_, i_8_))
                         if (class266.anInt3388 != 0) class266.anInt3387 = class266.anInt3387 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_] - aByteArrayArray8232!![i + 1]!![i_0_]) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_31_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3380 = (Class298.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 62, i_39_, i_8_))
+                        class266.anInt3380 = (Class298Statics.method2250(method3991(is_4_[i_31_] shr 8, ((aByteArrayArray8220!![i + 1]!![i_0_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_0_ + 1]))), 62, i_39_, i_8_))
                         if (class266.anInt3388 != 0) class266.anInt3380 = class266.anInt3380 or (255 - (aByteArrayArray8220!![i + 1]!![i_0_ + 1] - (aByteArrayArray8232!![i + 1]!![i_0_ + 1])) shl 25)
                         if (is_3_ != null && i_9_ != 0) {
                             i_39_ = 255 * is_3_[i_32_] / i_9_
                             if (i_39_ < 0) i_39_ = 0
                             else if (i_39_ > 255) i_39_ = 255
                         } else i_39_ = 0
-                        class266.anInt3381 = (Class298.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 84, i_39_, i_8_))
+                        class266.anInt3381 = (Class298Statics.method2250(method3991(is_4_[i_32_] shr 8, (aByteArrayArray8220!![i]!![i_0_ + 1] - (aByteArrayArray8232!![i]!![i_0_ + 1]))), 84, i_39_, i_8_))
                         if (class266.anInt3388 != 0) class266.anInt3381 = class266.anInt3381 or (255 - (aByteArrayArray8220!![i]!![i_0_ + 1] - aByteArrayArray8232!![i]!![i_0_ + 1]) shl 25)
                         class266.aShort3379 = (-1).toShort()
                     }
@@ -284,7 +284,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     else if (i_49_ > 255) i_49_ = 255
                                 }
                             }
-                            class145.anIntArray2001!![i_40_] = Class298.method2250(method3991((is_4_[i_40_] shr 8), i_44_), 40, i_49_, i_8_)
+                            class145.anIntArray2001!![i_40_] = Class298Statics.method2250(method3991((is_4_[i_40_] shr 8), i_44_), 40, i_49_, i_8_)
                             if (is_5_ != null) class145.anIntArray2001!![i_40_] = class145.anIntArray2001!![i_40_] or (i_44_ shl 25)
                         }
                     }
@@ -320,11 +320,11 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             } else {
                                 if (bool_57_) {
                                     i_59_ = is_6_[i_54_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_54_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_54_] = (Class126Statics.anIntArray4983!![(Class25Statics.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_55_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_55_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_55_] = (Class126Statics.anIntArray4983!![(Class25Statics.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                     i_59_ = is_6_[i_56_]
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_56_] = (Class126.anIntArray4983!![(Class25.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aBoolean209)) class145.anIntArray2001!![i_56_] = (Class126Statics.anIntArray4983!![(Class25Statics.method303((aHa_Sub1_8217.aD4579!!.method3(i_59_, -6662)!!.aShort208).toInt() and 0xffff, 30)).toInt() and 0xffff])
                                 }
                                 class145.aShortArray2008!![i_53_] = (-1).toShort()
                             }
@@ -405,10 +405,10 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
             }
             for (i_91_ in 0..<i_79_) {
                 if (is_67_[i_91_] >= 0 || is_68_ != null && is_68_[i_91_] >= 0) {
-                    if (is_67_[i_91_] >= 0) class236.anIntArray3093!![class236.aShort3099.toInt()] = Class25.method303(is_67_[i_91_], 30).toInt()
+                    if (is_67_[i_91_] >= 0) class236.anIntArray3093!![class236.aShort3099.toInt()] = Class25Statics.method303(is_67_[i_91_], 30).toInt()
                     else class236.anIntArray3093!![class236.aShort3099.toInt()] = -1
                     if (is_68_ != null) {
-                        if (is_68_[i_91_] != -1) class236.anIntArray3092!![class236.aShort3099.toInt()] = Class25.method303(is_68_[i_91_], 30).toInt()
+                        if (is_68_[i_91_] != -1) class236.anIntArray3092!![class236.aShort3099.toInt()] = Class25Statics.method303(is_68_[i_91_], 30).toInt()
                         else class236.anIntArray3092!![class236.aShort3099.toInt()] = -1
                     }
                     class236.aShortArray3091!![class236.aShort3099.toInt()] = is_64_[i_91_].toShort()
@@ -429,7 +429,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
             val i_92_ = is_67_[0]
             val i_93_ = is_69_[0]
             if (is_68_ != null) {
-                class102.anInt1600 = Class291.method2198(0, (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]), Class25.method303(is_68_[0], 30).toInt())
+                class102.anInt1600 = Class291Statics.method2198(0, (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]), Class25Statics.method303(is_68_[0], 30).toInt())
                 if (i_92_ == -1) class102.aByte1606 = (class102.aByte1606.toInt() or 0x2).toByte()
             }
             if ((this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_ + 1]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i]!![i_60_ + 1])) class102.aByte1606 = (class102.aByte1606.toInt() or 0x1).toByte()
@@ -443,11 +443,11 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                 class102.aShort1605 = i_93_.toShort()
                 if (method3997(class12.aByte213.toInt()) || class12.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) class102.aByte1606 = (class102.aByte1606.toInt() or 0x4).toByte()
             } else {
-                val i_94_ = Class25.method303(i_92_, 30)
-                class102.aShort1601 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_]) - (aByteArrayArray8232!![i]!![i_60_])), i_94_.toInt()).toShort()
-                class102.aShort1603 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_]) - (aByteArrayArray8232!![i + 1]!![i_60_])), i_94_.toInt()).toShort()
-                class102.aShort1602 = Class291.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_60_ + 1])), i_94_.toInt()).toShort()
-                class102.aShort1604 = Class291.method2198(0, ((aByteArrayArray8220!![i]!![i_60_ + 1]) - (aByteArrayArray8232!![i]!![i_60_ + 1])), i_94_.toInt()).toShort()
+                val i_94_ = Class25Statics.method303(i_92_, 30)
+                class102.aShort1601 = Class291Statics.method2198(0, ((aByteArrayArray8220!![i]!![i_60_]) - (aByteArrayArray8232!![i]!![i_60_])), i_94_.toInt()).toShort()
+                class102.aShort1603 = Class291Statics.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_]) - (aByteArrayArray8232!![i + 1]!![i_60_])), i_94_.toInt()).toShort()
+                class102.aShort1602 = Class291Statics.method2198(0, ((aByteArrayArray8220!![i + 1]!![i_60_ + 1]) - (aByteArrayArray8232!![i + 1]!![i_60_ + 1])), i_94_.toInt()).toShort()
+                class102.aShort1604 = Class291Statics.method2198(0, ((aByteArrayArray8220!![i]!![i_60_ + 1]) - (aByteArrayArray8232!![i]!![i_60_ + 1])), i_94_.toInt()).toShort()
                 class102.aShort1605 = (-1).toShort()
             }
             aClass102ArrayArray8215!![i]!![i_60_] = class102
@@ -484,7 +484,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         if (aByteArrayArray8232!![i]!![i_103_] < i_104_) aByteArrayArray8232!![i]!![i_103_] = i_104_.toByte()
     }
 
-    private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167, class109: Class109Base, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
+    private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167Base, class109: Class109Base, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
         val class266 = aClass266ArrayArray8230!![i]!![i_105_]
         if (class266 == null) {
             val class145 = aClass145ArrayArray8225!![i]!![i_105_]
@@ -578,9 +578,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                         is_107_[i_234_].toFloat(),
                                         is_107_[i_235_].toFloat(),
                                         is_107_[i_236_].toFloat(),
-                                        (Class298.method2250((class145.anIntArray2001!![i_234_]), 117, is_108_[i_234_], (class167.anInt2192))),
-                                        (Class298.method2250((class145.anIntArray2001!![i_235_]), 60, is_108_[i_235_], (class167.anInt2192))),
-                                        (Class298.method2250((class145.anIntArray2001!![i_236_]), 95, is_108_[i_236_], (class167.anInt2192)))
+                                        (Class298Statics.method2250((class145.anIntArray2001!![i_234_]), 117, is_108_[i_234_], (class167.anInt2192))),
+                                        (Class298Statics.method2250((class145.anIntArray2001!![i_235_]), 60, is_108_[i_235_], (class167.anInt2192))),
+                                        (Class298Statics.method2250((class145.anIntArray2001!![i_236_]), 95, is_108_[i_236_], (class167.anInt2192)))
                                     )
                                 } else if (((class145.anIntArray2001!![i_234_]) and 0xffffff) != 0) class109.method1027(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class145.anIntArray2001!![i_234_]), (class145.anIntArray2001!![i_235_]), (class145.anIntArray2001!![i_236_]))
                             } else class109.method1018(i_240_.toFloat(), i_241_.toFloat(), i_242_.toFloat(), i_237_.toFloat(), i_238_.toFloat(), i_239_.toFloat(), is_107_[i_234_].toFloat(), is_107_[i_235_].toFloat(), is_107_[i_236_].toFloat(), (class167.anInt2192))
@@ -643,9 +643,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                             is_107_[i_206_].toFloat(),
                                             is_107_[i_207_].toFloat(),
                                             is_107_[i_208_].toFloat(),
-                                            (Class6.method206((class145.anIntArray2001!![i_206_]), (is_108_[i_206_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_207_]), (is_108_[i_207_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_208_]), (is_108_[i_208_] shl 24 or (class167.anInt2192)), 255))
+                                            (Class6Statics.method206((class145.anIntArray2001!![i_206_]), (is_108_[i_206_] shl 24 or (class167.anInt2192)), 255)),
+                                            (Class6Statics.method206((class145.anIntArray2001!![i_207_]), (is_108_[i_207_] shl 24 or (class167.anInt2192)), 255)),
+                                            (Class6Statics.method206((class145.anIntArray2001!![i_208_]), (is_108_[i_208_] shl 24 or (class167.anInt2192)), 255))
                                         )
                                         class109.anInt1674 = 0
                                     }
@@ -743,9 +743,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                             is_107_[i_220_].toFloat(),
                                             is_107_[i_221_].toFloat(),
                                             is_107_[i_222_].toFloat(),
-                                            (Class6.method206((class145.anIntArray2001!![i_220_]), (is_108_[i_220_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_221_]), (is_108_[i_221_] shl 24 or (class167.anInt2192)), 255)),
-                                            (Class6.method206((class145.anIntArray2001!![i_222_]), (is_108_[i_222_] shl 24 or (class167.anInt2192)), 255))
+                                            (Class6Statics.method206((class145.anIntArray2001!![i_220_]), (is_108_[i_220_] shl 24 or (class167.anInt2192)), 255)),
+                                            (Class6Statics.method206((class145.anIntArray2001!![i_221_]), (is_108_[i_221_] shl 24 or (class167.anInt2192)), 255)),
+                                            (Class6Statics.method206((class145.anIntArray2001!![i_222_]), (is_108_[i_222_] shl 24 or (class167.anInt2192)), 255))
                                         )
                                         class109.anInt1674 = 0
                                     }
@@ -1021,9 +1021,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     f_119_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3380, (i_116_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
+                                    (Class6Statics.method206(class266.anInt3380, (i_116_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
                                 )
                                 class109.anInt1674 = 0
                             }
@@ -1060,9 +1060,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     f.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3389, (i_114_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
+                                    (Class6Statics.method206(class266.anInt3389, (i_114_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
                                 )
                                 class109.anInt1674 = 0
                             }
@@ -1100,9 +1100,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     f_119_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3380, (i_116_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
+                                    (Class6Statics.method206(class266.anInt3380, (i_116_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255))
                                 )
                                 class109.anInt1674 = 0
                             }
@@ -1139,9 +1139,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     f.toInt().toFloat(),
                                     f_118_.toInt().toFloat(),
                                     f_120_.toInt().toFloat(),
-                                    (Class6.method206(class266.anInt3389, (i_114_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
-                                    (Class6.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
+                                    (Class6Statics.method206(class266.anInt3389, (i_114_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3387, (i_115_ shl 24 or class167.anInt2192), 255)),
+                                    (Class6Statics.method206(class266.anInt3381, (i_117_ shl 24 or class167.anInt2192), 255))
                                 )
                                 class109.anInt1674 = 0
                             }
@@ -1187,7 +1187,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
     }
 
     private fun method3992(i: Int, i_255_: Int, i_256_: Int) {
-        val class167 = aHa_Sub1_8217.method3724(currentThread()) as Class167
+        val class167 = aHa_Sub1_8217.method3724(currentThread()) as Class167Base
         class167.aClass109_2220!!.anInt1674 = 0
         if (aClass266ArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
         else if (aClass102ArrayArray8215 != null) method3994(i, i_255_, class167.aClass109_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
@@ -1198,7 +1198,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         /* empty */
     }
 
-    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109Base, `is`: IntArray, is_266_: IntArray) {
+    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, class167: Class167Base, class109: Class109Base, `is`: IntArray, is_266_: IntArray) {
         val i_267_ = (i_265_ - i_263_) * i_261_ / 256
         val i_268_ = i_261_ shr 8
         val bool = class167.aBoolean2202
@@ -1215,15 +1215,15 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                             val class266 = aClass266ArrayArray8230!![i_271_]!![i_272_]!!
                             if (class266.aShort3379.toInt() != -1 && (class266.aByte3386.toInt() and 0x2) == 0 && class266.anInt3388 == 0) {
                                 val i_273_ = aHa_Sub1_8217.method3722(class266.aShort3379.toInt())
-                                class109.method1022((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class291.method2198(0, (class266.anInt3380), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3381), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3387), i_273_).toFloat())
-                                class109.method1022(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class291.method2198(0, (class266.anInt3389), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3387), i_273_).toFloat(), Class291.method2198(0, (class266.anInt3381), i_273_).toFloat())
+                                class109.method1022((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class291Statics.method2198(0, (class266.anInt3380), i_273_).toFloat(), Class291Statics.method2198(0, (class266.anInt3381), i_273_).toFloat(), Class291Statics.method2198(0, (class266.anInt3387), i_273_).toFloat())
+                                class109.method1022(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class291Statics.method2198(0, (class266.anInt3389), i_273_).toFloat(), Class291Statics.method2198(0, (class266.anInt3387), i_273_).toFloat(), Class291Statics.method2198(0, (class266.anInt3381), i_273_).toFloat())
                             } else if (class266.anInt3388 == 0) {
                                 class109.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, class266.anInt3380, class266.anInt3381, class266.anInt3387)
                                 class109.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, class266.anInt3389, class266.anInt3387, class266.anInt3381)
                             } else {
                                 val i_274_ = class266.anInt3388
-                                class109.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3380) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255))
-                                class109.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class6.method206(i_274_, (class266.anInt3389) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255), Class6.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255))
+                                class109.method1027((i_270_ - i_268_).toFloat(), (i_270_ - i_268_).toFloat(), i_270_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), 100.0f, 100.0f, 100.0f, Class6Statics.method206(i_274_, (class266.anInt3380) and 0xffffff.inv(), 255), Class6Statics.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255), Class6Statics.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255))
+                                class109.method1027(i_270_.toFloat(), i_270_.toFloat(), (i_270_ - i_268_).toFloat(), i_269_.toFloat(), (i_269_ + i_268_).toFloat(), i_269_.toFloat(), 100.0f, 100.0f, 100.0f, Class6Statics.method206(i_274_, (class266.anInt3389) and 0xffffff.inv(), 255), Class6Statics.method206(i_274_, (class266.anInt3387) and 0xffffff.inv(), 255), Class6Statics.method206(i_274_, (class266.anInt3381) and 0xffffff.inv(), 255))
                             }
                         } else if (aClass145ArrayArray8225!![i_271_]!![i_272_] != null) {
                             val class145 = aClass145ArrayArray8225!![i_271_]!![i_272_]!!
@@ -1253,9 +1253,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                         100.0f,
                                         100.0f,
                                         100.0f,
-                                        Class6.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_277_]) and 0xffffff.inv())), 255),
-                                        Class6.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_278_]) and 0xffffff.inv())), 255),
-                                        Class6.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_279_]) and 0xffffff.inv())), 255)
+                                        Class6Statics.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_277_]) and 0xffffff.inv())), 255),
+                                        Class6Statics.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_278_]) and 0xffffff.inv())), 255),
+                                        Class6Statics.method206(i_286_, (-16777216 - ((class145.anIntArray2001!![i_279_]) and 0xffffff.inv())), 255)
                                     )
                                 } else if ((class145.aShortArray2008) != null && ((class145.aShortArray2008!![i_276_]).toInt() != -1)) {
                                     val i_287_ = (aHa_Sub1_8217.method3722(class145.aShortArray2008!![i_276_].toInt()))
@@ -1356,9 +1356,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     is_302_[i_397_.toInt()].toFloat(),
                                     is_302_[i_398_.toInt()].toFloat(),
                                     is_302_[i_399_.toInt()].toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_397_.toInt()]).toInt(), i_406_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_398_.toInt()]).toInt(), i_406_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_399_.toInt()]).toInt(), i_406_)).toFloat()
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_397_.toInt()]).toInt(), i_406_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_398_.toInt()]).toInt(), i_406_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_399_.toInt()]).toInt(), i_406_)).toFloat()
                                 )
                             }
                         }
@@ -1389,9 +1389,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     is_302_[i_373_.toInt()].toFloat(),
                                     is_302_[i_374_.toInt()].toFloat(),
                                     is_302_[i_375_.toInt()].toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_373_.toInt()]).toInt(), i_383_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_374_.toInt()]).toInt(), i_383_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_375_.toInt()]).toInt(), i_383_)).toFloat()
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_373_.toInt()]).toInt(), i_383_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_374_.toInt()]).toInt(), i_383_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_375_.toInt()]).toInt(), i_383_)).toFloat()
                                 )
                             } else class109.method1024(
                                 i_379_.toFloat(),
@@ -1409,9 +1409,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                 ((class236.aShortArray3094!![i_373_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_374_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_375_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_373_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_374_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_375_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class236.aShortArray3088!![i_373_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class236.aShortArray3088!![i_374_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class236.aShortArray3088!![i_375_.toInt()]).toInt() and 0xffff]) and 0xffffff),
                                 0,
                                 0,
                                 0,
@@ -1446,9 +1446,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     is_302_[i_385_.toInt()].toFloat(),
                                     is_302_[i_386_.toInt()].toFloat(),
                                     is_302_[i_387_.toInt()].toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_385_.toInt()]).toInt(), i_395_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_386_.toInt()]).toInt(), i_395_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_387_.toInt()]).toInt(), i_395_)).toFloat()
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_385_.toInt()]).toInt(), i_395_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_386_.toInt()]).toInt(), i_395_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_387_.toInt()]).toInt(), i_395_)).toFloat()
                                 )
                             } else class109.method1024(
                                 i_391_.toFloat(),
@@ -1466,9 +1466,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                 ((class236.aShortArray3094!![i_385_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_386_.toInt()]).toFloat() / this.anInt4592.toFloat()),
                                 ((class236.aShortArray3094!![i_387_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_385_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_386_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_387_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class236.aShortArray3088!![i_385_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class236.aShortArray3088!![i_386_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class236.aShortArray3088!![i_387_.toInt()]).toInt() and 0xffff]) and 0xffffff),
                                 0,
                                 0,
                                 0,
@@ -1628,9 +1628,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         1.0f,
                         1.0f,
                         0.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,
@@ -1657,9 +1657,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         0.0f,
                         0.0f,
                         1.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,
@@ -1687,9 +1687,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         1.0f,
                         1.0f,
                         0.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1602.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,
@@ -1716,9 +1716,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         0.0f,
                         0.0f,
                         1.0f,
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
-                        (0xffffff.inv() or ((Class126.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1601.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1603.toInt() and 0xffff)]) and 0xffffff)),
+                        (0xffffff.inv() or ((Class126Statics.anIntArray4983!![(class102.aShort1604.toInt() and 0xffff)]) and 0xffffff)),
                         0,
                         0,
                         0,
@@ -1740,7 +1740,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
     }
 
     override fun method3987(i: Int, i_411_: Int, i_412_: Int, i_413_: Int, i_414_: Int, i_415_: Int, i_416_: Int, bools: Array<BooleanArray?>) {
-        val class167 = aHa_Sub1_8217.method3724(currentThread()) as Class167
+        val class167 = aHa_Sub1_8217.method3724(currentThread()) as Class167Base
         val class109 = class167.aClass109_2220!!
         class109.anInt1674 = 0
         class109.aBoolean1671 = true
@@ -1749,7 +1749,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         else if (aClass102ArrayArray8215 != null) method3996(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
     }
 
-    private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167, class109: Class109Base, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
+    private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167Base, class109: Class109Base, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
         val class198 = aClass198ArrayArray8219!![i]!![i_417_]
         if (i_421_ == 0 || (i_421_ and 0x2) == 0) {
             if (class198 != null) {
@@ -1895,7 +1895,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         method3992(i, i_452_, 0)
     }
 
-    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109Base, `is`: IntArray, is_459_: IntArray) {
+    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, class167: Class167Base, class109: Class109Base, `is`: IntArray, is_459_: IntArray) {
         val i_460_ = (i_458_ - i_456_) * i_454_ / 256
         val i_461_ = i_454_ shr 8
         val bool = class167.aBoolean2202
@@ -1921,9 +1921,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                 100.0f,
                                 100.0f,
                                 100.0f,
-                                Class291.method2198(0, ((class102.aShort1602).toInt() and 0xffff), i_466_).toFloat(),
-                                Class291.method2198(0, ((class102.aShort1604).toInt() and 0xffff), i_466_).toFloat(),
-                                Class291.method2198(0, ((class102.aShort1603).toInt() and 0xffff), i_466_).toFloat()
+                                Class291Statics.method2198(0, ((class102.aShort1602).toInt() and 0xffff), i_466_).toFloat(),
+                                Class291Statics.method2198(0, ((class102.aShort1604).toInt() and 0xffff), i_466_).toFloat(),
+                                Class291Statics.method2198(0, ((class102.aShort1603).toInt() and 0xffff), i_466_).toFloat()
                             )
                             class109.method1022(
                                 i_463_.toFloat(),
@@ -1935,9 +1935,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                 100.0f,
                                 100.0f,
                                 100.0f,
-                                Class291.method2198(0, ((class102.aShort1601).toInt() and 0xffff), i_466_).toFloat(),
-                                Class291.method2198(0, ((class102.aShort1603).toInt() and 0xffff), i_466_).toFloat(),
-                                Class291.method2198(0, ((class102.aShort1604).toInt() and 0xffff), i_466_).toFloat()
+                                Class291Statics.method2198(0, ((class102.aShort1601).toInt() and 0xffff), i_466_).toFloat(),
+                                Class291Statics.method2198(0, ((class102.aShort1603).toInt() and 0xffff), i_466_).toFloat(),
+                                Class291Statics.method2198(0, ((class102.aShort1604).toInt() and 0xffff), i_466_).toFloat()
                             )
                         } else if (class102.anInt1600 == -1) {
                             class109.method1022((i_463_ - i_461_).toFloat(), (i_463_ - i_461_).toFloat(), i_463_.toFloat(), (i_462_ + i_461_).toFloat(), i_462_.toFloat(), (i_462_ + i_461_).toFloat(), 100.0f, 100.0f, 100.0f, (class102.aShort1602.toInt() and 0xffff).toFloat(), (class102.aShort1604.toInt() and 0xffff).toFloat(), (class102.aShort1603.toInt() and 0xffff).toFloat())
@@ -1975,9 +1975,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     100.0f,
                                     100.0f,
                                     100.0f,
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_479_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_479_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_479_)).toFloat()
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_479_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_479_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_479_)).toFloat()
                                 )
                             } else if ((class236.aShortArray3095 != null) && (class236.aShortArray3095!![i_469_]).toInt() != -1) {
                                 val i_480_ = aHa_Sub1_8217.method3722(class236.aShortArray3095!![i_469_].toInt())
@@ -1991,9 +1991,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     100.0f,
                                     100.0f,
                                     100.0f,
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_480_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_480_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_480_)).toFloat()
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_480_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_480_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_480_)).toFloat()
                                 )
                             } else {
                                 val i_481_ = (class236.anIntArray3093!![i_469_])
@@ -2007,9 +2007,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     100.0f,
                                     100.0f,
                                     100.0f,
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_481_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_481_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_481_)).toFloat()
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_481_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_481_)).toFloat(),
+                                    (Class291Statics.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_481_)).toFloat()
                                 )
                             }
                         }

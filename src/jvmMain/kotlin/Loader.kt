@@ -84,6 +84,9 @@ class Loader : Panel(), GameApplet {
             Workers.install(ThreadWorkerFactory)
             GameLoops.install(BlockingGameLoop)
             provideLoaderApplet(this)
+            if (AwtWindowShell.instance == null) {
+                AwtWindowShell.instance = AwtWindowShell(this)
+            }
             val var_client = Client()
             var_client.init()
             var_client.start()

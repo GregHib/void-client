@@ -15,6 +15,10 @@ interface Class167Base {
     var aClass109_2220: Class109Base?
     var aClass101_Sub1_2209: Class101_Sub1?
     var aRunnable2198: Any?
+    var anIntArray2212: IntArray?
+    var anIntArray2217: IntArray?
+    var anIntArray2228: IntArray?
+    var anIntArray2232: IntArray?
 
     fun method1291(i: Int, runnable: Any?)
     fun method1292(i: Int)

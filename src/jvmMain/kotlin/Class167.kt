@@ -15,12 +15,12 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
     override var aClass101_Sub1_2209: Class101_Sub1?
     override var anInt2210: Int
     override var anInt2211: Int = 0
-    var anIntArray2212: IntArray?
+    override var anIntArray2212: IntArray?
     var anIntArray2213: IntArray?
     var anIntArray2214: IntArray?
     var anInt2215: Int = 0
     var anIntArray2216: IntArray?
-    var anIntArray2217: IntArray?
+    override var anIntArray2217: IntArray?
     var anIntArray2218: IntArray?
     var aClass64_Sub1_2219: Class64_Sub1?
     override var aClass109_2220: Class109Base?
@@ -31,11 +31,11 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
     var aClass64_Sub1_2225: Class64_Sub1?
     var aFloatArray2226: FloatArray?
     var aClass64_Sub1_2227: Class64_Sub1?
-    var anIntArray2228: IntArray?
+    override var anIntArray2228: IntArray?
     var anInt2229: Int = 0
     var anIntArray2230: IntArray?
     var aClass64_Sub1_2231: Class64_Sub1?
-    var anIntArray2232: IntArray?
+    override var anIntArray2232: IntArray?
     var aClass64_Sub1_2233: Class64_Sub1?
     var anIntArray2234: IntArray?
     var anIntArray2235: IntArray?

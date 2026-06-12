@@ -64,20 +64,18 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
     abstract fun fa(i: Int, i_66_: Int, var_r: r?): r?
 
     companion object {
-        var aClass45_4585: Class45? = null
+        var aClass45_4585: Any? = null
         var anInt4586: Int = 0
         var anInt4589: Int = 0
         var anInt4591: Int = 0
         var anInt4593: Int = 0
 
-        @JvmStatic
-        fun method3985(i: Int, i_29_: Int): Class147? {
+        fun method3985(i: Int, i_29_: Int): Any? {
             anInt4591++
             if (i_29_ < 0 || i_29_ >= 100) return null
-            return Class318_Sub2.aClass147Array6400!![i_29_]
+            return Class318_Sub2Statics.aClass147Array6400!![i_29_]
         }
 
-        @JvmStatic
         fun method3988(i: Int) {
             val i_56_ = 49 / ((15 - i) / 40)
             aClass45_4585 = null

@@ -143,7 +143,7 @@ class Class239_Sub3 : Class239 {
                 var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
                 if (class352 != null) {
                     if (bool && class352.aClass143_4333 == null) {
-                        val class143 = Class239_Sub10.method1766((-76).toByte(), i, s.aClass45_4585!!)
+                        val class143 = Class239_Sub10.method1766((-76).toByte(), i, s.aClass45_4585 as Class45)
                         if (class143 == null) return null
                         class352.aClass143_4333 = class143
                     }
@@ -152,7 +152,7 @@ class Class239_Sub3 : Class239 {
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
                 val class207s = Class207Statics.method1523(Class39.aClass45_518!!, i)
                 if (class207s == null) return null
-                val class143 = Class239_Sub10.method1766((-39).toByte(), i, s.aClass45_4585!!)
+                val class143 = Class239_Sub10.method1766((-39).toByte(), i, s.aClass45_4585 as Class45)
                 if (class143 == null) return null
                 if (!bool) class352 = Class352(var_ha!!.method3686(class143, class207s, true) as Class324?)
                 else class352 = Class352(var_ha!!.method3686(class143, class207s, true) as Class324?, class143)
