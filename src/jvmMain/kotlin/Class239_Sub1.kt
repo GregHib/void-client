@@ -86,7 +86,7 @@ class Class239_Sub1 : Class239 {
                     i_4_++
                 }
                 if (!bool) method544((Class274.aClass274_3504!!.method2063(Class348_Sub33.anInt6967, 544)) + string, false, 4)
-                if (r.aBoolean9722) Class341.method2678(-2049)
+                if (r.aBoolean9722) Class341Statics.method2678(-2049)
             }
         }
 

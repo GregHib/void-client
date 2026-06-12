@@ -66,7 +66,7 @@ class Class347 {
                         }
                     } else {
                         if (Class300.aBoolean3819) {
-                            Class341.Companion.method2678(-2049)
+                            Class341Statics.method2678(-2049)
                             if (Class289.aClass46_3701!!.anObjectArray692 != null) {
                                 val class348_sub36 = Class348_Sub36()
                                 class348_sub36.aClass46_6983 = Class318_Sub1_Sub3_Sub4.aClass46_10336

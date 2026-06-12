@@ -164,7 +164,7 @@ class Class239_Sub24 : Class239 {
                             Class50_Sub3.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), Class239_Sub4.aString5882, 0L, Class333.anInt4144)
                         } else {
                             val class46 = Class348_Sub22.method2957(Class9.anInt169, (-54).toByte(), Class149.anInt2046)
-                            if (class46 == null) Class341.method2678(-2049)
+                            if (class46 == null) Class341Statics.method2678(-2049)
                             else Class50_Sub3.method466(false, " ->", i_14_, (-101).toByte(), true, i_13_, -1, true, 15, (i_13_ shl 0 or i_14_).toLong(), Class28.aString5001, 0L, (Class348_Sub49_Sub1.anInt9747))
                         }
                     }

@@ -2186,7 +2186,7 @@ object Class66 {
                     val i_213_ = anIntArray1149!![anInt1173 + 1]
                     val i_214_ = anIntArray1149!![anInt1173 + 2]
                     val class46 = Class348_Sub22.method2957(i_214_, (-54).toByte(), i_212_ shl 16 or i_213_)
-                    Class341.method2678(-2049)
+                    Class341Statics.method2678(-2049)
                     val class348_sub44 = Client.method105(class46!!)!!
                     Class339.method2666((class348_sub44.anInt7093), class348_sub44.method3307(100), class46, 21.toByte())
                     return

@@ -217,16 +217,16 @@ class Class51 {
                 var i_25_ = i_17_ or 0x1f01f
                 if (class64 != null) i_25_ = var_ha.method3679(i_25_, class64.ua())
                 var class124: Class124? = null
-                withLock(Class341.aClass124Array4236!!) {
+                withLock(Class341Statics.aClass124Array4236!!) {
                     for (i_26_ in 0..<i_23_) {
                         withLock(this.aClass263_933!!.aClass45_3345!!) {
                             class124 = Class300.method2277(0, (this.aClass263_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (class124 == null) return null
                         if (class124.anInt1830 < 13) class124.method1092(2, 96)
-                        if (i_23_ > 1) Class341.aClass124Array4236!![i_26_] = class124
+                        if (i_23_ > 1) Class341Statics.aClass124Array4236!![i_26_] = class124
                     }
-                    if (i_23_ > 1) class124 = Class124(Class341.aClass124Array4236!!, i_23_)
+                    if (i_23_ > 1) class124 = Class124(Class341Statics.aClass124Array4236!!, i_23_)
                 }
                 class64 = var_ha.method3625(class124, i_25_, (this.aClass263_933!!.anInt3363), i_18_, i_19_) as Class64?
                 withLock(this.aClass263_933!!.aClass60_3360) {

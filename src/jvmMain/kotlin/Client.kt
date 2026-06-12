@@ -287,9 +287,9 @@ import Class34.Companion.method347
 import Class34.Companion.method351
 import Class340.Companion.method2671
 import Class340.Companion.method2672
-import Class341.Companion.method2676
-import Class341.Companion.method2677
-import Class341.Companion.method2678
+import Class341Statics.method2676
+import Class341Statics.method2677
+import Class341Statics.method2678
 import Class342.Companion.method2682
 import Class344.Companion.method2690
 import Class345.Companion.method2693

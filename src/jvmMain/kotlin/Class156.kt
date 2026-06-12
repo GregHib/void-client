@@ -77,10 +77,10 @@ class Class156 {
                     }
                     throwable?.printStackTrace()
                     method847(string_4_, -5192)
-                    string_4_ = Class341.method2680("%3a", true, ":", string_4_)
-                    string_4_ = Class341.method2680("%40", true, "@", string_4_)
-                    string_4_ = Class341.method2680("%26", true, "&", string_4_)
-                    string_4_ = Class341.method2680("%23", true, "#", string_4_)
+                    string_4_ = Class341Statics.method2680("%3a", true, ":", string_4_)
+                    string_4_ = Class341Statics.method2680("%40", true, "@", string_4_)
+                    string_4_ = Class341Statics.method2680("%26", true, "&", string_4_)
+                    string_4_ = Class341Statics.method2680("%23", true, "#", string_4_)
                     if (Class348_Sub8.anApplet6662 != null) {
                         if (i != 15004) method1238(-69, 63, 124)
                         val class144 = (Class231.aClass297_2993!!.method2237((Class348_Sub8.anApplet6662!!.getCodeBase() ?: "") + "clienterror.ws?c=" +Class348_Sub1_Sub3.anInt8818 + "&u=" + (if (s_Sub2.aString8265 != null) s_Sub2.aString8265 else Class89.aLong1507.toString()) + "&v1=" + Class297.aString3782 + "&v2=" + Class297.aString3796 + "&e=" + string_4_, 8362))

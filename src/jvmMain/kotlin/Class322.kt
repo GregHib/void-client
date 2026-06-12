@@ -22,7 +22,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
     fun method2553(i: Int): Array<Array<IntArray?>?>? {
         anInt4018++
         if (anInt4024 != anInt4020) throw RuntimeException("Can only retrieve a full image cache")
-        for (i_2_ in i..<anInt4020) aClass348_Sub24Array4033!![i_2_] = Class341.aClass348_Sub24_4226
+        for (i_2_ in i..<anInt4020) aClass348_Sub24Array4033!![i_2_] = Class341Statics.aClass348_Sub24_4226
         return anIntArrayArrayArray4029
     }
 
@@ -53,7 +53,7 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             return (anIntArrayArrayArray4029!![class348_sub24.anInt6875])
         }
         this.aBoolean4035 = aClass348_Sub24Array4033!![i_6_] == null
-        aClass348_Sub24Array4033!![i_6_] = Class341.aClass348_Sub24_4226
+        aClass348_Sub24Array4033!![i_6_] = Class341Statics.aClass348_Sub24_4226
         return anIntArrayArrayArray4029!![i_6_]
     }
 

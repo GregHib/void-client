@@ -129,7 +129,7 @@ class Class258_Sub3_Sub1 : Class258_Sub3 {
         fun method1971(i: Int, string: String?, bool: Boolean, i_11_: Int) {
             anInt9942++
             Class59_Sub1_Sub1.method556(false)
-            Class341.method2681(9864)
+            Class341Statics.method2681(9864)
             Class348_Sub22.method2959(-1)
             Class348_Sub23.method2965(string, i_11_, bool, 0)
             Class348_Sub24.method2994(2)

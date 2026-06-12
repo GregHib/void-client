@@ -905,7 +905,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             if (i_76_ == 13) {
                                 val class46 = Class348_Sub22.method2957(i_74_, (-54).toByte(), i_75_)
                                 if (class46 != null) {
-                                    Class341.method2678(-2049)
+                                    Class341Statics.method2678(-2049)
                                     val class348_sub44 = Client.method105(class46)!!
                                     Class339.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, 21.toByte())
                                     Class28.aString5001 = method1753(0, class46)
@@ -989,7 +989,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     Class348_Sub42_Sub14.method3243(-22, class348_sub47)
                                     Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)
                                 }
-                                if (r.aBoolean9722) Class341.method2678(-2049)
+                                if (r.aBoolean9722) Class341Statics.method2678(-2049)
                                 if (Class311.aClass46_3913 == null || Class108.anInt1656 != 0) break
                                 Class251.method1916(-9343, Class311.aClass46_3913!!)
                             }
