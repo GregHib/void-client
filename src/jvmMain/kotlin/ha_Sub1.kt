@@ -3,7 +3,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory) : ha(var_d) {
+class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
     private var anInt7465 = 0
     private var anInt7466 = 0
     private val aClass356_7467: HashMap<Long, GameSurface> = HashMap()
@@ -1267,7 +1267,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
 
     override fun method3652() {
         if (aBoolean7471) {
-            Class286_Sub8.method2173(false, -101, true)
+            screenReleaseCallback()
             aBoolean7471 = false
         }
         this.aClass348_Sub31_7469 = null
