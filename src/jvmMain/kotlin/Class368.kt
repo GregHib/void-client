@@ -146,28 +146,28 @@ class Class368 {
                 val class124 = Class300.method2277(0, (this.aClass319_4513!!.aClass45_3981!!), anInt4506, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                class64 = var_ha!!.method3625(class124, i_34_, (this.aClass319_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
+                class64 = var_ha!!.method3625(class124, i_34_, (this.aClass319_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850) as Class64?
                 if (aShortArray4490 != null) {
                     var i_35_ = 0
                     while ((i_35_ < aShortArray4490!!.size)) {
-                        class64.ia(aShortArray4490!![i_35_], aShortArray4502!![i_35_])
+                        class64!!.ia(aShortArray4490!![i_35_], aShortArray4502!![i_35_])
                         i_35_++
                     }
                 }
                 if (aShortArray4499 != null) {
                     var i_36_ = 0
                     while ((aShortArray4499!!.size > i_36_)) {
-                        class64.aa(aShortArray4499!![i_36_], aShortArray4504!![i_36_])
+                        class64!!.aa(aShortArray4499!![i_36_], aShortArray4504!![i_36_])
                         i_36_++
                     }
                 }
-                class64.s(i_33_)
+                class64!!.s(i_33_)
                 withLock(this.aClass319_4513!!.aClass60_3990) {
                     this.aClass319_4513!!.aClass60_3990.method582(class64, this.anInt4501.toLong(), (-113).toByte())
                 }
             }
             if (i_31_.toInt() != -68) return null
-            val class64_37_ = (if (class17 != null) class17.method266(class64, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) else class64.method614(i_27_, i_33_, true))
+            val class64_37_ = (if (class17 != null) class17.method266(class64!!, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) else class64!!.method614(i_27_, i_33_, true))
             if (anInt4498 != 128 || anInt4492 != 128) class64_37_!!.O(anInt4498, anInt4492, anInt4498)
             if (anInt4508 != 0) {
                 if (anInt4508 == 90) class64_37_!!.a(4096)

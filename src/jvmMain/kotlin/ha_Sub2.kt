@@ -275,8 +275,9 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         anInt7683++
     }
 
-    override fun method3625(class124: Class124?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int): Class64 {
+    override fun method3625(class124: Class124Base?, i: Int, i_2_: Int, i_3_: Int, i_4_: Int): Class64 {
         try {
+        val class124 = class124 as Class124?
             anInt7579++
             return Class64_Sub3(this, class124, i, i_3_, i_4_, i_2_)
         } catch (runtimeexception: RuntimeException) {
@@ -686,7 +687,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         }
     }
 
-    override fun method3684(class98: Class98) {
+    override fun method3684(class98: Class98Base) {
+        val class98 = class98 as Class98
         try {
             aClass233_7711.method1651(this, (-119).toByte(), -1, class98)
             anInt7569++
@@ -794,7 +796,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         anInt7726++
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+        val class143 = class143 as Class143?
         try {
             anInt7574++
             return Class324_Sub5(this, class143, class207s!!, bool)
@@ -1721,7 +1724,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         }
     }
 
-    override fun method3651(var_za: za?) {
+    override fun method3651(var_za: ZaBase?) {
         do {
             try {
                 this.aNativeHeap7730 = (var_za as za_Sub1).aNativeHeap9770
@@ -2086,7 +2089,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         throw IllegalArgumentException("")
     }
 
-    override fun method3685(class98: Class98, i: Int) {
+    override fun method3685(class98: Class98Base, i: Int) {
+        val class98 = class98 as Class98
         try {
             aClass233_7711.method1651(this, (-116).toByte(), i, class98)
             anInt7687++

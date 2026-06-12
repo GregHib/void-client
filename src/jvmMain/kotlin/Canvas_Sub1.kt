@@ -120,10 +120,10 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                 val class124 = Class300.method2277(0, aa_Sub3.aClass45_5207!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
-                class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275, 64, 768)
+                class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275, 64, 768) as Class64?
                 Class15.aClass60_225!!.method582(class64, l, (-122).toByte())
             }
-            class64 = class64.method614(2.toByte(), i_18_, true)
+            class64 = class64!!.method614(2.toByte(), i_18_, true)
             if (i_15_ != 0) class64!!.a(i_15_)
             if (i_13_ != 0) class64!!.FA(i_13_)
             if (i_14_ != 0) class64!!.VA(i_14_)

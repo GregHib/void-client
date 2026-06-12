@@ -228,7 +228,7 @@ class Class51 {
                     }
                     if (i_23_ > 1) class124 = Class124(Class341.aClass124Array4236!!, i_23_)
                 }
-                class64 = var_ha.method3625(class124, i_25_, (this.aClass263_933!!.anInt3363), i_18_, i_19_)
+                class64 = var_ha.method3625(class124, i_25_, (this.aClass263_933!!.anInt3363), i_18_, i_19_) as Class64?
                 withLock(this.aClass263_933!!.aClass60_3360) {
                     this.aClass263_933!!.aClass60_3360.method582(class64, l, (-95).toByte())
                 }

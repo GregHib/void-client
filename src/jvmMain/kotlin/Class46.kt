@@ -242,10 +242,10 @@ class Class46 {
                         return null
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                    class64 = var_ha.method3625(class124, i, Class14_Sub3.anInt8628, 64, 768)
+                    class64 = var_ha.method3625(class124, i, Class14_Sub3.anInt8628, 64, 768) as Class64?
                     Class358.aClass60_4417!!.method582(class64, l, (-125).toByte())
                 }
-                if (class17 != null) class64 = class17.method269(-101, class64, i_24_, i_22_, i, i_21_)
+                if (class17 != null) class64 = class17.method269(-101, class64!!, i_24_, i_22_, i, i_21_)
                 class64!!.s(i_25_)
                 return class64
             }

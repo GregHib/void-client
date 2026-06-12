@@ -184,17 +184,17 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
             }
             var_ha.xa(1.0f)
             var_ha.ZA(16777215, 1.0f, 1.0f, i.toFloat(), i_61_.toFloat(), i_62_.toFloat())
-            val class64 = var_ha.method3625(class124, 2048, 0, 64, 768)
-            val i_71_ = class64.RA() - class64.V()
-            val i_72_ = class64.EA() - class64.fa()
-            val i_73_ = class64.V() + i_71_ / 2
-            val i_74_ = class64.fa() + i_72_ / 2
+            val class64 = var_ha.method3625(class124, 2048, 0, 64, 768) as Class64?
+            val i_71_ = class64!!.RA() - class64!!.V()
+            val i_72_ = class64!!.EA() - class64!!.fa()
+            val i_73_ = class64!!.V() + i_71_ / 2
+            val i_74_ = class64!!.fa() + i_72_ / 2
             val i_75_ = max(i_71_, i_72_)
             var_ha.DA(i_73_, i_74_, i_75_, i_75_)
             var_ha.method3638(var_ha.method3654())
             val class101 = var_ha.method3705()
-            class101.method894(0, 0, var_ha.i() - class64.HA())
-            class64.method608(class101, null, var_ha.i(), 1)
+            class101.method894(0, 0, var_ha.i() - class64!!.HA())
+            class64!!.method608(class101, null, var_ha.i(), 1)
             aClass105_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true)
             aClass105_1221!!.method968(0, 0, 3)
             var_ha.KA(anIntArray1226!![0], anIntArray1226!![1], anIntArray1226!![2], anIntArray1226!![3])
@@ -284,7 +284,7 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
                 class124.anIntArray1824 = null
                 class124.anIntArray1868 = null
                 class124.aByteArray1839 = null
-                aClass64_1227 = var_ha.method3625(class124, 51200, 33, 64, 768)
+                aClass64_1227 = var_ha.method3625(class124, 51200, 33, 64, 768) as Class64?
             }
         }
 

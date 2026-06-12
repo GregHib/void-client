@@ -245,7 +245,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         return aa_Sub3(i, i_63_, `is`, is_64_)
     }
 
-    override fun method3685(class98: Class98, i: Int) {
+    override fun method3685(class98: Class98Base, i: Int) {
+        val class98 = class98 as Class98
         val class167 = method3724(currentThread())
         val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
@@ -333,7 +334,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         }
     }
 
-    override fun method3651(var_za: za?) {
+    override fun method3651(var_za: ZaBase?) {
         /* empty */
     }
 
@@ -716,7 +717,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         /* empty */
     }
 
-    override fun method3684(class98: Class98) {
+    override fun method3684(class98: Class98Base) {
+        val class98 = class98 as Class98
         val class167 = method3724(currentThread())
         val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469
@@ -997,7 +999,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+        val class143 = class143 as Class143?
         val `is` = IntArray(class207s!!.size)
         val is_283_ = IntArray(class207s.size)
         var bool_284_ = false
@@ -1326,8 +1329,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         method3713()
     }
 
-    override fun method3625(class124: Class124?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
-        return Class64_Sub1(this, class124!!, i, i_367_, i_368_, i_366_)
+    override fun method3625(class124: Class124Base?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
+        return Class64_Sub1(this, class124 as Class124, i, i_367_, i_368_, i_366_)
     }
 
     override fun method3624(i: Int, i_369_: Int): Interface13 {

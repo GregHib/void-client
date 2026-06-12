@@ -5,7 +5,7 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun b(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, d: Double)
 
-    abstract fun method3625(class124: Class124?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int): Class64
+    abstract fun method3625(class124: Class124Base?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int): Class64Base
 
     abstract fun F(i: Int, i_7_: Int)
 
@@ -78,7 +78,7 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun method3647(bool: Boolean)
 
-    abstract fun method3648(i: Int, i_46_: Int, `is`: Array<IntArray?>, is_47_: Array<IntArray?>?, i_48_: Int, i_49_: Int, i_50_: Int): s?
+    abstract fun method3648(i: Int, i_46_: Int, `is`: Array<IntArray?>, is_47_: Array<IntArray?>?, i_48_: Int, i_49_: Int, i_50_: Int): SBase?
 
     fun method3649(i: Byte, i_51_: Int, i_52_: Int, i_53_: Int, i_54_: Int) {
         anInt4569++
@@ -87,7 +87,7 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun method3650(i: Int)
 
-    abstract fun method3651(var_za: za?)
+    abstract fun method3651(var_za: ZaBase?)
 
     abstract fun P(i: Int, i_55_: Int, i_56_: Int, i_57_: Int, i_58_: Int)
 
@@ -200,13 +200,13 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): Class105?
 
-    abstract fun method3684(class98: Class98)
+    abstract fun method3684(class98: Class98Base)
 
-    abstract fun method3685(class98: Class98, i: Int)
+    abstract fun method3685(class98: Class98Base, i: Int)
 
     abstract fun K(`is`: IntArray?)
 
-    abstract fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324?
+    abstract fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324Base?
 
     abstract fun H(i: Int, i_146_: Int, i_147_: Int, `is`: IntArray?)
 
@@ -260,7 +260,7 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun method3701(displayTarget: DisplayTarget?)
 
-    abstract fun method3702(i: Int): za?
+    abstract fun method3702(i: Int): ZaBase?
 
     abstract fun method3703(i: Int, i_184_: Int, i_185_: Int, i_186_: Int, i_187_: Int, i_188_: Int, var_aa: aa?, i_189_: Int, i_190_: Int, i_191_: Int, i_192_: Int, i_193_: Int)
 

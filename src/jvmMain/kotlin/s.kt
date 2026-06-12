@@ -1,4 +1,4 @@
-abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Array<IntArray?>) {
+abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Array<IntArray?>) : SBase {
     var anIntArrayArray4584: Array<IntArray?>
     var anInt4587: Int
     var anInt4588: Int

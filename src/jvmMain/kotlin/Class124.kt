@@ -1,6 +1,6 @@
 import Class85.Companion.method828
 
-class Class124 {
+class Class124 : Class124Base {
     var anIntArray1816: IntArray = intArrayOf()
     var anInt1817: Int
     var anInt1818: Int

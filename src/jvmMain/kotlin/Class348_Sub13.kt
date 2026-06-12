@@ -123,21 +123,21 @@ class Class348_Sub13 : Class348() {
                 }
                 if (class154 != null) i_28_ = i_28_ or 0x4000
                 val class124 = Class124(class124s, class124s.size)
-                class64 = var_ha!!.method3625(class124, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850)
+                class64 = var_ha!!.method3625(class124, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850) as Class64?
                 if (class154 != null) {
                     for (i_39_ in 0..4) {
                         for (i_40_ in (Class367_Sub2.aShortArrayArrayArray7290)!!.indices) {
-                            if (class154.anIntArray2095!![i_39_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) class64.ia((Class136.aShortArrayArray4791!![i_40_]!![i_39_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(class154.anIntArray2095!![i_39_])]))
+                            if (class154.anIntArray2095!![i_39_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_])!!.size) class64!!.ia((Class136.aShortArrayArray4791!![i_40_]!![i_39_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_40_]!![i_39_]!![(class154.anIntArray2095!![i_39_])]))
                         }
                     }
                 }
                 if (Class202.aClass60_2671 != null) {
-                    class64.s(i_15_)
+                    class64!!.s(i_15_)
                     Class202.aClass60_2671!!.method582(class64, l, (-128).toByte())
                 }
             }
             if (class17 == null || class348_sub42_sub17 == null) return class64
-            val class64_41_ = class64.method614(1.toByte(), i_15_, true)
+            val class64_41_ = class64!!.method614(1.toByte(), i_15_, true)
             class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, class17.aBoolean242, i_23_, i_11_ + i_14_)
             return class64_41_
         } catch (runtimeexception: RuntimeException) {

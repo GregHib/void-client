@@ -92,7 +92,7 @@ class Class239_Sub14 : Class239 {
                 Class348_Sub8.aHa6654!!.xa(1.0f)
                 if (i_1_ >= -66) aClass190_5990 = null
                 Class348_Sub8.aHa6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)
-                val class64 = Class348_Sub8.aHa6654!!.method3625(class124, 2048, 64, 64, 768)
+                val class64 = Class348_Sub8.aHa6654!!.method3625(class124, 2048, 64, 64, 768) as Class64
                 var i_3_ = 0
                 while_80_@ for (i_4_ in 0..499) {
                     Class348_Sub8.aHa6654!!.GA(0)

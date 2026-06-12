@@ -154,8 +154,8 @@ class Class239_Sub3 : Class239 {
                 if (class207s == null) return null
                 val class143 = Class239_Sub10.method1766((-39).toByte(), i, s.aClass45_4585!!)
                 if (class143 == null) return null
-                if (!bool) class352 = Class352(var_ha!!.method3686(class143, class207s, true))
-                else class352 = Class352(var_ha!!.method3686(class143, class207s, true), class143)
+                if (!bool) class352 = Class352(var_ha!!.method3686(class143, class207s, true) as Class324?)
+                else class352 = Class352(var_ha!!.method3686(class143, class207s, true) as Class324?, class143)
                 Class332.aClass60_4139!!.method582(class352, i.toLong(), (-109).toByte())
                 return class352
             } catch (runtimeexception: RuntimeException) {

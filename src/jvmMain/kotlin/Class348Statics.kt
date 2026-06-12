@@ -94,7 +94,7 @@ object Class348Statics {
                     }
                     i_25_++
                 }
-                class64_13_ = var_ha!!.method3625(class124, i_12_, Class185.anInt2482, 64, 768)
+                class64_13_ = var_ha!!.method3625(class124, i_12_, Class185.anInt2482, 64, 768) as Class64?
                 withLock(Class342.aClass60_4254!!) {
                     Class342.aClass60_4254!!.method582(class64_13_, l, (-103).toByte())
                 }
@@ -110,11 +110,11 @@ object Class348Statics {
                 i_5_ = i_5_ and 0xffff
             }
             if (class348_sub42_sub17 == null) {
-                class64_13_ = class64_13_.method614(3.toByte(), i_12_, true)
+                class64_13_ = class64_13_!!.method614(3.toByte(), i_12_, true)
                 class64_13_!!.O(-i_31_ + i_32_ shr 1, 128, -i_33_ + i_34_ shr 1)
                 class64_13_.H(i_32_ + i_31_ shr 1, 0, i_34_ + i_33_ shr 1)
             } else {
-                class64_13_ = class64_13_.method614(3.toByte(), i_12_, true)
+                class64_13_ = class64_13_!!.method614(3.toByte(), i_12_, true)
                 class64_13_!!.O(-i_31_ + i_32_ shr 1, 128, i_34_ - i_33_ shr 1)
                 class64_13_.H(i_32_ + i_31_ shr 1, 0, i_34_ + i_33_ shr 1)
                 class64_13_.method611(i_5_, -8700, class348_sub42_sub17)

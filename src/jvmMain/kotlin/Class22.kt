@@ -105,7 +105,7 @@ class Class22 {
                         val canvas = Canvas()
                         canvas.setSize(36, 32)
                         Class348_Sub34.aHa6968 = Class104.method958(true, 0, Class348_Sub40_Sub4.aD9113, 0, canvas, Class136.aClass45_4796)
-                        Class348_Sub40_Sub9.aClass324_9173 = (Class348_Sub34.aHa6968!!.method3686(method1819(Class56.anInt1044, 0, -44, Class104.aClass45_1627!!), Class207Statics.method1519(Class21.Companion.aClass45_322!!, Class56.anInt1044, 0), true))
+                        Class348_Sub40_Sub9.aClass324_9173 = (Class348_Sub34.aHa6968!!.method3686(method1819(Class56.anInt1044, 0, -44, Class104.aClass45_1627!!), Class207Statics.method1519(Class21.Companion.aClass45_322!!, Class56.anInt1044, 0), true) as Class324?)
                     }
                     var class348_sub7 = (Class5_Sub1_Sub1.aClass262_9931!!.method1995(i + 4) as Class348_Sub7?)
                     while (class348_sub7 != null) {

@@ -4,7 +4,7 @@ import Class286_Sub9.Companion.method2174
 /* Class98 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class98 {
+class Class98 : Class98Base {
     var aClass88_1569: Class88 = Class88()
 
     companion object {

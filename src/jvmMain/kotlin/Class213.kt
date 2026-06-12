@@ -240,20 +240,20 @@ class Class213 {
                 val class124 = Class300.method2277(0, (this.aClass255_2761!!.aClass45_3268!!), anInt2756, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 97)
-                class64 = var_ha!!.method3625(class124, i_28_, (this.aClass255_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
-                if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) class64.O(anInt2786, anInt2794, anInt2765)
+                class64 = var_ha!!.method3625(class124, i_28_, (this.aClass255_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824) as Class64?
+                if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) class64!!.O(anInt2786, anInt2794, anInt2765)
                 if (aShortArray2777 != null) {
                     var i_29_ = 0
                     while ((i_29_ < aShortArray2777!!.size)) {
-                        if (aByteArray2821 == null || aByteArray2821!!.size <= i_29_) class64.ia(aShortArray2777!![i_29_], aShortArray2771[i_29_])
-                        else class64.ia(aShortArray2777!![i_29_], (Class336.aShortArray4172!![aByteArray2821!![i_29_].toInt() and 0xff]))
+                        if (aByteArray2821 == null || aByteArray2821!!.size <= i_29_) class64!!.ia(aShortArray2777!![i_29_], aShortArray2771[i_29_])
+                        else class64!!.ia(aShortArray2777!![i_29_], (Class336.aShortArray4172!![aByteArray2821!![i_29_].toInt() and 0xff]))
                         i_29_++
                     }
                 }
                 if (aShortArray2785 != null) {
                     var i_30_ = 0
                     while (aShortArray2785!!.size > i_30_) {
-                        class64.aa(aShortArray2785!![i_30_], aShortArray2801[i_30_])
+                        class64!!.aa(aShortArray2785!![i_30_], aShortArray2801[i_30_])
                         i_30_++
                     }
                 }
@@ -261,17 +261,17 @@ class Class213 {
                     for (i_31_ in 0..4) {
                         var i_32_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_32_)) {
-                            if (class154.anIntArray2095!![i_31_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) class64.ia((Class136.aShortArrayArray4791!![i_32_]!![i_31_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(class154.anIntArray2095!![i_31_])]))
+                            if (class154.anIntArray2095!![i_31_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_])!!.size) class64!!.ia((Class136.aShortArrayArray4791!![i_32_]!![i_31_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_32_]!![i_31_]!![(class154.anIntArray2095!![i_31_])]))
                             i_32_++
                         }
                     }
                 }
-                class64.s(i_27_)
+                class64!!.s(i_27_)
                 withLock(this.aClass255_2761!!.aClass60_3287) {
                     this.aClass255_2761!!.aClass60_3287.method582(class64, (var_ha.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
-            if (class17 != null) class64 = class17.method269(116, class64, i_24_, i_20_, i_27_, i_22_)
+            if (class17 != null) class64 = class17.method269(116, class64!!, i_24_, i_20_, i_27_, i_22_)
             class64!!.s(i)
             return class64
         } catch (runtimeexception: RuntimeException) {
@@ -341,9 +341,9 @@ class Class213 {
                 i_46_ = i_46_ or 0x7
                 bool_47_ = true
             }
-            val class64 = var_ha_38_!!.method3625(class124, i_46_, 64, anInt2791 + 64, 768 + anInt2824)
-            if (!class64.method618()) return null
-            if (bool_47_) class64.O(anInt2786, anInt2794, anInt2765)
+            val class64 = var_ha_38_!!.method3625(class124, i_46_, 64, anInt2791 + 64, 768 + anInt2824) as Class64?
+            if (!class64!!.method618()) return null
+            if (bool_47_) class64!!.O(anInt2786, anInt2794, anInt2765)
             var class105: Class105? = null
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
@@ -368,7 +368,7 @@ class Class213 {
             val class101_49_ = var_ha_38_.method3705()
             class101_49_.method902(-this.anInt2810 shl 3)
             class101_49_.method896(this.anInt2781 shl 3)
-            class101_49_.method891(this.anInt2779 shl 2, ((i_48_ * (Class70.anIntArray1207!![this.anInt2787 shl 3]) shr 14) - class64.fa() / 2 + (this.anInt2826 shl 2)), ((i_48_ * (Class70.anIntArray1204!![this.anInt2787 shl 3]) shr 14) - -(this.anInt2826 shl 2)))
+            class101_49_.method891(this.anInt2779 shl 2, ((i_48_ * (Class70.anIntArray1207!![this.anInt2787 shl 3]) shr 14) - class64!!.fa() / 2 + (this.anInt2826 shl 2)), ((i_48_ * (Class70.anIntArray1204!![this.anInt2787 shl 3]) shr 14) - -(this.anInt2826 shl 2)))
             class101_49_.method900(this.anInt2787 shl 3)
             val i_50_ = var_ha_38_.i()
             val i_51_ = var_ha_38_.XA()
@@ -376,7 +376,7 @@ class Class213 {
             var_ha_38_.ya()
             var_ha_38_.la()
             var_ha_38_.aa(0, 0, 36, 32, 0, 0)
-            class64.method615(class101_49_, null, 1)
+            class64!!.method615(class101_49_, null, 1)
             var_ha_38_.f(i_50_, i_51_)
             var `is` = var_ha_38_.na(0, 0, 36, 32)
             if (i_40_.toInt() != -102) method1554(false, 37)

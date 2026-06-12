@@ -1,6 +1,6 @@
 import kotlin.math.sin
 
-abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
+abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) : Class324Base {
     private var aHa4048: ha? = null
     private var aClass143_4063: Class143? = null
     private fun method2566(class105s: Array<Class105?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {

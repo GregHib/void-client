@@ -186,7 +186,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         }
     }
 
-    override fun method3651(var_za: za?) {
+    override fun method3651(var_za: ZaBase?) {
         try {
             anInt8005++
             this.aNativeHeap7891 = (var_za as za_Sub2).aNativeHeap9782
@@ -467,7 +467,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
     }
 
     fun method3826(i: Byte): Int {
-        if (i.toInt() != -70) method3702(-1)
+        if (i.toInt() != -70) method3702(-1) as za?
         anInt8050++
         return anInt8177
     }
@@ -864,8 +864,9 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         }
     }
 
-    override fun method3625(class124: Class124?, i: Int, i_87_: Int, i_88_: Int, i_89_: Int): Class64 {
+    override fun method3625(class124: Class124Base?, i: Int, i_87_: Int, i_88_: Int, i_89_: Int): Class64 {
         try {
+        val class124 = class124 as Class124?
             anInt8016++
             return Class64_Sub2(this, class124, i, i_88_, i_89_, i_87_)
         } catch (runtimeexception: RuntimeException) {
@@ -1695,7 +1696,8 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
 
     abstract fun method3910(i: Byte, i_210_: Int)
 
-    override fun method3685(class98: Class98, i: Int) {
+    override fun method3685(class98: Class98Base, i: Int) {
+        val class98 = class98 as Class98
         try {
             aClass280_8136!!.method2101(this, class98, i, 0)
             anInt7968++
@@ -2259,7 +2261,8 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
 
     abstract fun method3939(i: Byte)
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+        val class143 = class143 as Class143?
         try {
             anInt7952++
             return Class324_Sub2(this, class143, class207s as Array<Class207>, bool)
@@ -2357,7 +2360,8 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
 
     abstract fun method3947(i: Int)
 
-    override fun method3684(class98: Class98) {
+    override fun method3684(class98: Class98Base) {
+        val class98 = class98 as Class98
         try {
             aClass280_8136!!.method2101(this, class98, -1, 0)
             anInt7984++

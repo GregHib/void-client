@@ -495,29 +495,29 @@ class Class79 {
                 if (aShortArray1328 != null) i_69_ = i_69_ or 0x4000
                 if (aShortArray1393 != null) i_69_ = i_69_ or 0x8000
                 if (aByte1405.toInt() != 0) i_69_ = i_69_ or 0x80000
-                class64 = var_ha.method3625(class124, i_69_, (this.aClass278_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
+                class64 = var_ha.method3625(class124, i_69_, (this.aClass278_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406) as Class64?
                 if (aShortArray1328 != null) {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
-                        if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) class64.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
-                        else class64.ia(aShortArray1328!![i_80_], (Class348_Sub42_Sub3.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
+                        if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) class64!!.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
+                        else class64!!.ia(aShortArray1328!![i_80_], (Class348_Sub42_Sub3.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
                         i_80_++
                     }
                 }
                 if (aShortArray1393 != null) {
                     var i_81_ = 0
                     while (aShortArray1393!!.size > i_81_) {
-                        class64.aa(aShortArray1393!![i_81_], aShortArray1391[i_81_])
+                        class64!!.aa(aShortArray1393!![i_81_], aShortArray1391[i_81_])
                         i_81_++
                     }
                 }
-                if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
-                class64.s(i_43_)
+                if (aByte1405.toInt() != 0) class64!!.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
+                class64!!.s(i_43_)
                 withLock(this.aClass278_1348!!.aClass60_3590!!) {
                     this.aClass278_1348!!.aClass60_3590!!.method582(class64, (this.anInt1344 or (var_ha.anInt4567 shl 16)).toLong(), (-125).toByte())
                 }
             }
-            val class64_82_ = class64.method614(4.toByte(), i_43_, true)
+            val class64_82_ = class64!!.method614(4.toByte(), i_43_, true)
             var bool_83_ = false
             if (`is` != null) {
                 for (i_84_ in 0..11) {
@@ -643,29 +643,29 @@ class Class79 {
                 if (aShortArray1328 != null) i_100_ = i_100_ or 0x4000
                 if (aShortArray1393 != null) i_100_ = i_100_ or 0x8000
                 if (aByte1405.toInt() != 0) i_100_ = i_100_ or 0x80000
-                class64 = var_ha!!.method3625(class124, i_100_, (this.aClass278_1348!!.anInt3593), 64, 768)
+                class64 = var_ha!!.method3625(class124, i_100_, (this.aClass278_1348!!.anInt3593), 64, 768) as Class64?
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
-                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) class64.ia(aShortArray1328!![i_104_], (Class348_Sub42_Sub3.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
-                        else class64.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
+                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) class64!!.ia(aShortArray1328!![i_104_], (Class348_Sub42_Sub3.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
+                        else class64!!.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
                         i_104_++
                     }
                 }
                 if (aShortArray1393 != null) {
                     var i_105_ = 0
                     while (aShortArray1393!!.size > i_105_) {
-                        class64.aa(aShortArray1393!![i_105_], aShortArray1391[i_105_])
+                        class64!!.aa(aShortArray1393!![i_105_], aShortArray1391[i_105_])
                         i_105_++
                     }
                 }
-                if (aByte1405.toInt() != 0) class64.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
-                class64.s(i_99_)
+                if (aByte1405.toInt() != 0) class64!!.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
+                class64!!.s(i_99_)
                 withLock(this.aClass278_1348!!.aClass60_3592) {
                     this.aClass278_1348!!.aClass60_3592.method582(class64, (var_ha.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }
-            if (class17 != null && i_95_ != -1) class64 = class17.method269(-9, class64, i_94_, i, i_99_, i_95_)
+            if (class17 != null && i_95_ != -1) class64 = class17.method269(-9, class64!!, i_94_, i, i_99_, i_95_)
             class64!!.s(i_97_)
             return class64
         } catch (runtimeexception: RuntimeException) {

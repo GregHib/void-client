@@ -209,16 +209,16 @@ class Class154 {
                     }
                     val class124 = Class124(class124s, class124s.size)
                     i_36_ = i_36_ or 0x4000
-                    class64 = var_ha!!.method3625(class124, i_36_, Class168.anInt2251, 64, 850)
+                    class64 = var_ha!!.method3625(class124, i_36_, Class168.anInt2251, 64, 850) as Class64?
                     for (i_49_ in 0..4) {
                         var i_50_ = 0
                         while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_50_)) {
-                            if ((Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) class64.ia((Class136.aShortArrayArray4791!![i_50_]!![i_49_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
+                            if ((Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_])!!.size > this.anIntArray2095!![i_49_]) class64!!.ia((Class136.aShortArrayArray4791!![i_50_]!![i_49_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_50_]!![i_49_]!![(this.anIntArray2095!![i_49_])]))
                             i_50_++
                         }
                     }
                     if (bool) {
-                        class64.s(i_9_)
+                        class64!!.s(i_9_)
                         withLock(Class24.aClass60_355!!) {
                             Class24.aClass60_355!!.method582(class64, l, (-98).toByte())
                         }
@@ -226,7 +226,7 @@ class Class154 {
                     }
                 }
             }
-            val class64_51_ = class64.method614(4.toByte(), i_9_, bool_2_)
+            val class64_51_ = class64!!.method614(4.toByte(), i_9_, bool_2_)
             var bool_52_ = false
             if (`is` != null) {
                 for (i_53_ in 0..11) {
@@ -393,22 +393,22 @@ class Class154 {
                 }
                 i_80_ = i_80_ or 0x4000
                 val class124 = Class124(class124s, i_83_)
-                class64 = var_ha!!.method3625(class124, i_80_, Class168.anInt2251, 64, 768)
+                class64 = var_ha!!.method3625(class124, i_80_, Class168.anInt2251, 64, 768) as Class64?
                 for (i_86_ in 0..4) {
                     var i_87_ = 0
                     while ((Class367_Sub2.aShortArrayArrayArray7290!!.size > i_87_)) {
-                        if (this.anIntArray2095!![i_86_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) class64.ia((Class136.aShortArrayArray4791!![i_87_]!![i_86_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
+                        if (this.anIntArray2095!![i_86_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_])!!.size) class64!!.ia((Class136.aShortArrayArray4791!![i_87_]!![i_86_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_87_]!![i_86_]!![(this.anIntArray2095!![i_86_])]))
                         i_87_++
                     }
                 }
-                class64.s(i_70_)
+                class64!!.s(i_70_)
                 withLock(Class130.aClass60_1894!!) {
                     Class130.aClass60_1894!!.method582(class64, aLong2102, (-97).toByte())
                 }
             }
             if (class17 == null) return class64
-            var class64_88_ = class64.method614(4.toByte(), i_70_, true)
-            class64_88_ = class17.method269(123, class64, i_67_, i_69_, i_68_, i_66_)
+            var class64_88_ = class64!!.method614(4.toByte(), i_70_, true)
+            class64_88_ = class17.method269(123, class64!!, i_67_, i_69_, i_68_, i_66_)
             return class64_88_
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
@@ -487,22 +487,22 @@ class Class154 {
                 if (class124 != null) class124s[i_109_++] = class124
                 class124 = Class124(class124s, i_109_)
                 i_108_ = i_108_ or 0x4000
-                class64 = var_ha!!.method3625(class124, i_108_, Class168.anInt2251, 64, 768)
+                class64 = var_ha!!.method3625(class124, i_108_, Class168.anInt2251, 64, 768) as Class64?
                 for (i_110_ in 0..4) {
                     var i_111_ = 0
                     while ((i_111_ < Class367_Sub2.aShortArrayArrayArray7290!!.size)) {
-                        if (this.anIntArray2095!![i_110_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) class64.ia((Class136.aShortArrayArray4791!![i_111_]!![i_110_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
+                        if (this.anIntArray2095!![i_110_] < (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_])!!.size) class64!!.ia((Class136.aShortArrayArray4791!![i_111_]!![i_110_]), (Class367_Sub2.aShortArrayArrayArray7290!![i_111_]!![i_110_]!![(this.anIntArray2095!![i_110_])]))
                         i_111_++
                     }
                 }
-                class64.s(i_98_)
+                class64!!.s(i_98_)
                 withLock(Class130.aClass60_1894!!) {
                     Class130.aClass60_1894!!.method582(class64, l, (-109).toByte())
                 }
             }
             if (class17 == null) return class64
             if (i_94_ != -15331) return null
-            class64 = class64.method614(4.toByte(), i_98_, true)
+            class64 = class64!!.method614(4.toByte(), i_98_, true)
             class64 = class17.method269(-32, class64!!, i, i_96_, i_91_, i_97_)
             return class64
         } catch (runtimeexception: RuntimeException) {

@@ -31,9 +31,9 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         return null
     }
 
-    override fun method3651(var_za: za?) {
+    override fun method3651(var_za: ZaBase?) {
         aYa5121 = var_za as ya?
-        va(var_za)
+        va(var_za as za?)
     }
 
     external override fun w(bool: Boolean)
@@ -56,7 +56,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         return true
     }
 
-    override fun method3685(class98: Class98, i: Int) {
+    override fun method3685(class98: Class98Base, i: Int) {
+        val class98 = class98 as Class98
         method3975(class98!!, false)
         method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, class98.aClass88_1569.method840(0))
     }
@@ -101,7 +102,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         /* empty */
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324 {
+        val class143 = class143 as Class143?
         val `is` = IntArray(class207s!!.size)
         val is_60_ = IntArray(class207s.size)
         var bool_61_ = false
@@ -231,7 +233,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     private external fun n(l: Long, l_102_: Long)
 
-    override fun method3684(class98: Class98) {
+    override fun method3684(class98: Class98Base) {
+        val class98 = class98 as Class98
         if (class98!!.aClass88_1569.method840(0) != 0) {
             method3975(class98, false)
             method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, class98.aClass88_1569.method840(0))
@@ -334,8 +337,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     external override fun X(i: Int)
 
-    override fun method3625(class124: Class124?, i: Int, i_131_: Int, i_132_: Int, i_133_: Int): Class64 {
-        return i(this, aYa5121, class124!!, i, i_131_, i_132_, i_133_)
+    override fun method3625(class124: Class124Base?, i: Int, i_131_: Int, i_132_: Int, i_133_: Int): Class64 {
+        return i(this, aYa5121, class124 as Class124, i, i_131_, i_132_, i_133_)
     }
 
     override fun c(): Class365 { //

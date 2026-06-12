@@ -4,7 +4,7 @@ import kotlin.math.min
 /* Class64 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-public abstract class Class64 {
+public abstract class Class64 : Class64Base {
     var aBoolean1124: Boolean = false
     abstract fun FA(i: Int)
 
