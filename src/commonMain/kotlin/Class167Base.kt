@@ -12,7 +12,7 @@ interface Class167Base {
     var aBoolean2195: Boolean
     var aBoolean2201: Boolean
     var aBoolean2202: Boolean
-    var aClass109_2220: Class109?
+    var aClass109_2220: Class109Base?
     var aClass101_Sub1_2209: Class101_Sub1?
     var aRunnable2198: Any?
 

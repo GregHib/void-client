@@ -484,7 +484,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         if (aByteArrayArray8232!![i]!![i_103_] < i_104_) aByteArrayArray8232!![i]!![i_103_] = i_104_.toByte()
     }
 
-    private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167, class109: Class109, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
+    private fun method3990(i: Int, i_105_: Int, bool: Boolean, class167: Class167, class109: Class109Base, `is`: IntArray, is_106_: IntArray, is_107_: IntArray, is_108_: IntArray, i_109_: Int) {
         val class266 = aClass266ArrayArray8230!![i]!![i_105_]
         if (class266 == null) {
             val class145 = aClass145ArrayArray8225!![i]!![i_105_]
@@ -1198,7 +1198,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         /* empty */
     }
 
-    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109, `is`: IntArray, is_266_: IntArray) {
+    private fun method3993(i: Int, i_260_: Int, i_261_: Int, i_262_: Int, i_263_: Int, i_264_: Int, i_265_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109Base, `is`: IntArray, is_266_: IntArray) {
         val i_267_ = (i_265_ - i_263_) * i_261_ / 256
         val i_268_ = i_261_ shr 8
         val bool = class167.aBoolean2202
@@ -1295,7 +1295,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         aHa_Sub1_8217.C(bool)
     }
 
-    private fun method3994(i: Int, i_300_: Int, class109: Class109, `is`: IntArray, is_301_: IntArray, is_302_: IntArray, is_303_: IntArray?, i_304_: Int) {
+    private fun method3994(i: Int, i_300_: Int, class109: Class109Base, `is`: IntArray, is_301_: IntArray, is_302_: IntArray, is_303_: IntArray?, i_304_: Int) {
         val class102 = aClass102ArrayArray8215!![i]!![i_300_]
         if (class102 == null) {
             val class236 = aClass236ArrayArray8222!![i]!![i_300_]
@@ -1749,7 +1749,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         else if (aClass102ArrayArray8215 != null) method3996(i, i_411_, i_412_, i_413_, i_414_, i_415_, i_416_, bools, class167, class109, class167.anIntArray2212!!, class167.anIntArray2228!!)
     }
 
-    private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167, class109: Class109, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
+    private fun method3995(i: Int, i_417_: Int, bool: Boolean, class167: Class167, class109: Class109Base, `is`: IntArray, is_418_: IntArray, is_419_: IntArray, is_420_: IntArray, i_421_: Int) {
         val class198 = aClass198ArrayArray8219!![i]!![i_417_]
         if (i_421_ == 0 || (i_421_ and 0x2) == 0) {
             if (class198 != null) {
@@ -1895,7 +1895,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         method3992(i, i_452_, 0)
     }
 
-    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109, `is`: IntArray, is_459_: IntArray) {
+    private fun method3996(i: Int, i_453_: Int, i_454_: Int, i_455_: Int, i_456_: Int, i_457_: Int, i_458_: Int, bools: Array<BooleanArray?>, class167: Class167, class109: Class109Base, `is`: IntArray, is_459_: IntArray) {
         val i_460_ = (i_458_ - i_456_) * i_454_ / 256
         val i_461_ = i_454_ shr 8
         val bool = class167.aBoolean2202

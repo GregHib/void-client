@@ -23,7 +23,7 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
     var anIntArray2217: IntArray?
     var anIntArray2218: IntArray?
     var aClass64_Sub1_2219: Class64_Sub1?
-    override var aClass109_2220: Class109?
+    override var aClass109_2220: Class109Base?
     var anInt2221: Int = 0
     var anIntArray2222: IntArray?
     var aClass64_Sub1_2223: Class64_Sub1?

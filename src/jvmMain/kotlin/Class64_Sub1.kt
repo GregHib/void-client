@@ -78,7 +78,7 @@ class Class64_Sub1 : Class64 {
     private var aBoolean5380 = false
     private lateinit var anIntArray5381: IntArray
     private var aBoolean5382: Boolean
-    private var aClass109_5383: Class109? = null
+    private var aClass109_5383: Class109Base? = null
     private lateinit var anIntArray5384: IntArray
     private var aClass41Array5385: Array<Class41?>? = null
     private var aByteArray5386: ByteArray? = null
