@@ -10,6 +10,7 @@ open class Class318_Sub9_Sub2 : Class318_Sub9(), SceneEntity {
     var aBoolean8794: Boolean = false
     override var aByte8795: Byte = 5
     override var anInt8796: Int = 0
+    override val nextEntity: SceneEntity? get() = aClass318_Sub9_6469 as? SceneEntity
 
     companion object {
         var anIntArray8797: IntArray? = intArrayOf(19, 55, 38, 155, 255, 110, 137, 205, 76)

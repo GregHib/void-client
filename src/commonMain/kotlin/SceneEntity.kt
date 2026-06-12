@@ -19,4 +19,6 @@ interface SceneEntity {
     val anInt8792: Int
     /** Sprite type byte */
     val aByte8795: Byte
+    /** Next entity in the linked list (null when this is the sentinel/tail) */
+    val nextEntity: SceneEntity?
 }

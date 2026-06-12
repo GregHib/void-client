@@ -264,7 +264,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                     method3712(class318_sub9_sub2, i_69_, i_70_, f.toInt(), ((class318_sub9_sub2.anInt8793) * this.anInt7491 shr 12) / i)
                 }
             }
-            class318_sub9_65_ = class318_sub9_65_.aClass318_Sub9_6469
+            class318_sub9_65_ = class318_sub9_sub2.nextEntity as Class318_Sub9?
         }
     }
 
@@ -736,7 +736,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                     method3712(class318_sub9_sub2, i_211_, i_212_, f.toInt(), (((class318_sub9_sub2.anInt8793 * this.anInt7491) shr 12).toFloat() / f).toInt())
                 }
             }
-            class318_sub9_208_ = class318_sub9_208_.aClass318_Sub9_6469
+            class318_sub9_208_ = class318_sub9_sub2.nextEntity as Class318_Sub9?
         }
     }
 
