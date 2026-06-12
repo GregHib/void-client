@@ -196,7 +196,6 @@ class OPFSCacheStorage : CacheStorageFactory {
 
         // ── CacheStore ─────────────────────────────────────────────────────
 
-        @Throws(IOException::class)
         override fun method1656(`is`: ByteArray?, i: Int, i_0_: Byte, i_1_: Int): Int {
             if (`is` == null || i_1_ == 0) return 0
             val available = (length - position).toInt().coerceAtLeast(0)
@@ -209,13 +208,11 @@ class OPFSCacheStorage : CacheStorageFactory {
             return toRead
         }
 
-        @Throws(IOException::class)
         override fun method1657(bool: Boolean) {
             if (dirty) flushToOPFS()
             // No handle to close for an in-memory store
         }
 
-        @Throws(IOException::class)
         override fun method1658(i: Byte, i_4_: Int, i_5_: Int, `is`: ByteArray?) {
             if (`is` == null || i_5_ == 0) return
             val end = position + i_5_
@@ -239,12 +236,10 @@ class OPFSCacheStorage : CacheStorageFactory {
 
         override fun method1660(i: Int): Any? = opfsPath  // opaque identity for diagnostics
 
-        @Throws(IOException::class)
         override fun method1661(i: Int, l: Long) {
             position = l
         }
 
-        @Throws(IOException::class)
         override fun method1662(i: Byte): Long = length
     }
 }
