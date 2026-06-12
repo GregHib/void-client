@@ -1,3 +1,4 @@
+
 /* Class118 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -10,7 +11,6 @@ class Class118 internal constructor(var anInt1783: Int, var anInt1781: Int, var 
 
     companion object {
         var anIntArray1786: IntArray? = null
-        @JvmStatic
         fun method1075(i: Byte) {
             anIntArray1786 = null
             if (i.toInt() != 17) anIntArray1786 = null

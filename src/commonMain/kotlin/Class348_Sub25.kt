@@ -111,7 +111,6 @@ class Class348_Sub25 internal constructor(var anInt6883: Int, private val anInt6
 
     companion object {
         private var anIntArray6881: IntArray? = null
-        @JvmStatic
         fun method2996() {
             anIntArray6881 = null
         }

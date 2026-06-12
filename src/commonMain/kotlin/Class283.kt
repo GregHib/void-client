@@ -12,7 +12,6 @@ class Class283 {
         var aLong3660: Long = 0
         var anIntArray3661: IntArray? = intArrayOf(8, 11, 4, 6, 9, 7, 10, 0)
         var anInt3662: Int = 0
-        @JvmStatic
         fun method2113(i: Byte) {
             anIntArray3659 = null
             anIntArray3661 = null
@@ -20,7 +19,6 @@ class Class283 {
             aFloatArray3658 = null
         }
 
-        @JvmStatic
         fun method2114(i: Int, bool: Boolean): Boolean {
             anInt3656++
             if (bool != true) method2114(90, true)

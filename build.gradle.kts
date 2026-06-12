@@ -14,7 +14,17 @@ kotlin {
 
     jvm()
 
+    js(IR) {
+        browser()
+        binaries.executable()
+    }
+
+    @Suppress("OPT_IN_USAGE")
+    applyDefaultHierarchyTemplate()
+
     sourceSets {
+        jsMain {
+        }
         jvmTest {
             dependencies {
                 implementation(kotlin("test"))

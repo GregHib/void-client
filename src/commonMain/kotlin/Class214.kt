@@ -2,7 +2,6 @@
 * Visit http://jode.sourceforge.net/
 */
 object Class214 {
-    @JvmStatic
     fun method1573(`is`: IntArray, i: Int, i_0_: Int) {
         var i = i
         var i_0_ = i_0_
@@ -21,7 +20,6 @@ object Class214 {
         while (i < i_0_) `is`[i++] = 0
     }
 
-    @JvmStatic
     fun method1574(fs: FloatArray, i: Int, fs_1_: FloatArray, i_2_: Int, i_3_: Int) {
         var i = i
         var i_2_ = i_2_
@@ -65,7 +63,6 @@ object Class214 {
         while (i < i_3_) fs_1_[i_2_++] = fs[i++]
     }
 
-    @JvmStatic
     fun <T> method1575(objects: Array<T?>, i: Int, objects_4_: Array<T?>, i_5_: Int, i_6_: Int) {
         var i = i
         var i_5_ = i_5_
@@ -109,7 +106,6 @@ object Class214 {
         while (i < i_6_) objects_4_[i_5_++] = objects[i++]
     }
 
-    @JvmStatic
     fun method1576(`is`: ShortArray, i: Int, is_7_: ShortArray, i_8_: Int, i_9_: Int) {
         var i = i
         var i_8_ = i_8_
@@ -153,7 +149,6 @@ object Class214 {
         while (i < i_9_) is_7_[i_8_++] = `is`[i++]
     }
 
-    @JvmStatic
     fun method1577(`is`: ByteArray, i: Int, is_10_: ByteArray, i_11_: Int, i_12_: Int) {
         var i = i
         var i_11_ = i_11_

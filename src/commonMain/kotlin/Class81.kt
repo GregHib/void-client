@@ -5,7 +5,6 @@ object Class81 {
     var anIntArray1432: IntArray? = null
     var anInt1433: Int = 0
 
-    @JvmStatic
     fun method810(bool: Boolean) {
         if (bool == true) anIntArray1432 = null
     }
