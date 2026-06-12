@@ -180,7 +180,7 @@ abstract class Class318_Sub1 : Class318() {
                         }
                         if (class42.anInt576 == 2) {
                             class143 = Class369.aClass143_4962
-                            class324 = Class262.aClass324_3326
+                            class324 = Class262Statics.aClass324_3326
                         }
                         Class334.method2650(class143, class42.anInt580, var_aa, i_8_, i_6_, class42.aString597, i, class324, i_29_, class46, i_5_, 100)
                     }

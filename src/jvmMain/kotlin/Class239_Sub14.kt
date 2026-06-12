@@ -53,7 +53,7 @@ class Class239_Sub14 : Class239 {
         fun method1779(i: Byte) {
             anInt5985++
             Class364.method3517(73)
-            Class262.aClass190ArrayArray3335 = null
+            Class262Statics.aClass190ArrayArray3335 = null
             Class60.aHa1098 = null
             if (i <= 89) anInt5994 = -75
             Class239_Sub24.aClass299_6098 = null

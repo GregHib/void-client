@@ -48,7 +48,7 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
 
         @JvmStatic
         fun method192(class190: Class190?, i: Int, i_1_: Int, i_2_: Int) {
-            Class262.aClass190ArrayArray3335!![i_1_]!![i_2_] = class190
+            Class262Statics.aClass190ArrayArray3335!![i_1_]!![i_2_] = class190
             anInt8362++
             if (i != 10000) anInt8363 = 32
         }

@@ -23,12 +23,12 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
             val i_7_ = ((aClass125_4685.aClass221_4922!!.method1607(Class92.anInt1524, aClass125_4685.anInt4929, (-118).toByte())) - -aClass125_4685.anInt4924)
             var i_8_ = ((aClass125_4685.aClass341_4925!!.method2679(ha_Sub2.anInt7666, aClass125_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aClass125_4685.anInt4920)
             if (aClass125_4685.aBoolean4914) Class348_Sub8.aHa6654!!.method3628(i_7_, i_8_, aClass125_4685.anInt4929, aClass125_4685.anInt4923, aClass125_4685.anInt4917, 0)
-            i_8_ += method1855(5, class295.aString3756, true, Class262.aClass324_3326, i_7_, i_8_) * 12
+            i_8_ += method1855(5, class295.aString3756, true, Class262Statics.aClass324_3326, i_7_, i_8_) * 12
             i_8_ += 8
             if (aClass125_4685.aBoolean4914) Class348_Sub8.aHa6654!!.method3709(i_7_, i_8_, i_7_ + aClass125_4685.anInt4929 + -1, i_8_, aClass125_4685.anInt4917, 0)
-            i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, Class262.aClass324_3326, i_7_, i_8_) * 12
+            i_8_ = ++i_8_ + method1855(5, class295.aString3754, true, Class262Statics.aClass324_3326, i_7_, i_8_) * 12
             i_8_ += 5
-            i_8_ += method1855(5, class295.aString3758, true, Class262.aClass324_3326, i_7_, i_8_) * 12
+            i_8_ += method1855(5, class295.aString3758, true, Class262Statics.aClass324_3326, i_7_, i_8_) * 12
         }
         if (i.toInt() != -49) method8(12.toByte())
     }

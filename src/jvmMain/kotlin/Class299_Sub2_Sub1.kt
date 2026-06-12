@@ -56,7 +56,7 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
                     Class348_Sub5.aClass105_6627!!.method974((-Class348_Sub5.aClass105_6627!!.method971() + i_4_ - -i), i_5_)
                 }
                 if (bool == false) {
-                    Class262.aClass324_3326!!.method2576(string, (Class348_Sub42_Sub11.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
+                    Class262Statics.aClass324_3326!!.method2576(string, (Class348_Sub42_Sub11.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
                     var_ha!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 or (255 + -Class51.anInt948 shl 24)), 1)
                 }
             } catch (runtimeexception: RuntimeException) {

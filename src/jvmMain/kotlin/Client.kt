@@ -177,7 +177,6 @@ import Class26.Companion.method306
 import Class260.method1979
 import Class261.Companion.method1980
 import Class261.Companion.method1987
-import Class262.Companion.method1994
 import Class264.Companion.method2018
 import Class267.Companion.method2026
 import Class267.Companion.method2029
@@ -300,7 +299,6 @@ import Class347.Companion.method2708
 import Class348Statics.method2713
 import Class348_Sub1Statics.method2719
 import Class348_Sub10.Companion.method2785
-import Class348_Sub11.Companion.method2796
 import Class348_Sub12.Companion.method2798
 import Class348_Sub14.Companion.method2805
 import Class348_Sub15.Companion.method2810
@@ -732,7 +730,7 @@ class Client : Applet_Sub1() {
         method3430(false)
         method2748(-86)
         method1310(true)
-        method1994(-13722)
+        Class262Statics.method1994(-13722)
         method1471(124.toByte())
         method1897(119.toByte())
         Class112.method1052((-124).toByte())
@@ -1215,7 +1213,7 @@ class Client : Applet_Sub1() {
         method2773(0)
         method2798(122)
         method3228(75)
-        method2796(104.toByte())
+        Class348_Sub11Statics.method2796(104.toByte())
         method1525(4.toByte())
         OutputStream_Sub1.method133((-41).toByte())
         method124(i.toInt() xor 0x6e)

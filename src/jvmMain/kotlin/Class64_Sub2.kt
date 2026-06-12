@@ -2201,13 +2201,13 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                     val f_411_ = ((fs[5] * i_406_.toFloat() + (fs[3] * i_404_.toFloat() + i_405_.toFloat() * fs[4])) / f_408_)
                                     val f_412_ = ((i_405_.toFloat() * fs[7] + fs[6] * i_404_.toFloat() + fs[8] * i_406_.toFloat()) / f_409_)
                                     i_386_ = Class331.method2635(f_411_, false, f_412_, f_410_)
-                                    Class262.method1991(f_397_, f_395_, fs, (class124.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (class124.anIntArray1841[i_388_.toInt()]), (class124.anIntArray1847[i_388_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
+                                    Class262Statics.method1991(f_397_, f_395_, fs, (class124.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (class124.anIntArray1841[i_388_.toInt()]), (class124.anIntArray1847[i_388_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
                                     f_379_ = Class283.aFloatArray3658!![1]
                                     f = Class283.aFloatArray3658!![0]
-                                    Class262.method1991(f_397_, f_395_, fs, (class124.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (class124.anIntArray1841[i_389_.toInt()]), (class124.anIntArray1847[i_389_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
+                                    Class262Statics.method1991(f_397_, f_395_, fs, (class124.anIntArray1852[i_389_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (class124.anIntArray1841[i_389_.toInt()]), (class124.anIntArray1847[i_389_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
                                     f_381_ = Class283.aFloatArray3658!![1]
                                     f_380_ = Class283.aFloatArray3658!![0]
-                                    Class262.method1991(f_397_, f_395_, fs, (class124.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (class124.anIntArray1841[i_390_.toInt()]), (class124.anIntArray1847[i_390_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
+                                    Class262Statics.method1991(f_397_, f_395_, fs, (class124.anIntArray1852[i_390_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (class124.anIntArray1841[i_390_.toInt()]), (class124.anIntArray1847[i_390_.toInt()]), f_396_, Class283.aFloatArray3658, i_392_, i_386_)
                                     f_382_ = Class283.aFloatArray3658!![0]
                                     f_383_ = Class283.aFloatArray3658!![1]
                                 } else if (i_387_.toInt() == 3) {

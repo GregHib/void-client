@@ -3316,13 +3316,13 @@ class Class64_Sub3 : Class64 {
                                     val f_803_ = ((fs[5] * i_798_.toFloat() + (i_797_.toFloat() * fs[4] + fs[3] * i_796_.toFloat())) / f_800_)
                                     val f_804_ = ((i_798_.toFloat() * fs[8] + (fs[7] * i_797_.toFloat() + i_796_.toFloat() * fs[6])) / f_801_)
                                     i_747_ = Class331.method2635(f_803_, false, f_804_, f_802_)
-                                    Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_780_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_780_.toInt()]), (class124.anIntArray1847[i_780_.toInt()]), f_788_, Class152.aFloatArray2075, i_784_, i_747_)
+                                    Class262Statics.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_780_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_780_.toInt()]), (class124.anIntArray1847[i_780_.toInt()]), f_788_, Class152.aFloatArray2075, i_784_, i_747_)
                                     f_740_ = Class152.aFloatArray2075!![1]
                                     f = Class152.aFloatArray2075!![0]
-                                    Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_781_.toInt()]), (class124.anIntArray1847[i_781_.toInt()]), f_788_, Class152.aFloatArray2075!!, i_784_, i_747_)
+                                    Class262Statics.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_781_.toInt()]), (class124.anIntArray1847[i_781_.toInt()]), f_788_, Class152.aFloatArray2075!!, i_784_, i_747_)
                                     f_742_ = Class152.aFloatArray2075!![1]
                                     f_741_ = Class152.aFloatArray2075!![0]
-                                    Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_782_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_782_.toInt()]), (class124.anIntArray1847[i_782_.toInt()]), f_788_, Class152.aFloatArray2075, i_784_, i_747_)
+                                    Class262Statics.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_782_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_782_.toInt()]), (class124.anIntArray1847[i_782_.toInt()]), f_788_, Class152.aFloatArray2075, i_784_, i_747_)
                                     f_743_ = Class152.aFloatArray2075!![0]
                                     f_744_ = Class152.aFloatArray2075!![1]
                                 } else if (i_748_.toInt() == 3) {

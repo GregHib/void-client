@@ -199,7 +199,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
         @JvmStatic
         fun method2703(i: Int, i_6_: Int, i_7_: Int, i_8_: Byte) {
             anInt6536++
-            val class190 = Class262.aClass190ArrayArray3335!![i_6_]!![i_7_]
+            val class190 = Class262Statics.aClass190ArrayArray3335!![i_6_]!![i_7_]
             if (i_8_.toInt() == -13) Class161.method1260(false, i, (if (class190 == null) Class274.aClass190_3547 else class190))
         }
 

@@ -139,10 +139,10 @@ object Class164 {
             Class348_Sub32.aClass45_6950 = Class369_Sub2.method3571(true, 23, (-23).toByte(), 1)
             Class130.aClass45_1897 = Class369_Sub2.method3571(false, 24, (-23).toByte(), 1)
             Class82.aClass45_1434 = Class369_Sub2.method3571(false, 25, (-23).toByte(), 1)
-            Class348_Sub11.aClass45_4770 = Class369_Sub2.method3571(true, 26, (-23).toByte(), 1)
+            Class348_Sub11Statics.aClass45_4770 = Class369_Sub2.method3571(true, 26, (-23).toByte(), 1)
             Class239.aClass45_3146 = Class369_Sub2.method3571(false, 27, (-23).toByte(), 1)
             Class367_Sub8.aClass45_7362 = Class369_Sub2.method3571(true, 28, (-23).toByte(), 1)
-            Class262.aClass45_3323 = Class369_Sub2.method3571(false, 29, (-23).toByte(), 1)
+            Class262Statics.aClass45_3323 = Class369_Sub2.method3571(false, 29, (-23).toByte(), 1)
             Class126.aClass45_4984 = Class369_Sub2.method3571(true, 30, (-23).toByte(), 1)
             Class136.aClass45_4796 = Class369_Sub2.method3571(true, 31, (-23).toByte(), 1)
             Class146.aClass45_2015 = Class369_Sub2.method3571(true, 36, (-23).toByte(), 2)
@@ -174,7 +174,7 @@ object Class164 {
         if (i != -28660) return 2
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1035) {
             if (Class348_Sub31.anInt6923 != -1 && !aa_Sub3Statics.aClass45_5207!!.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99
-            Class348_Sub40_Sub4.aD9113 = Class244(Class348_Sub11.aClass45_4770, Class369_Sub2.aClass45_8589, Class21.aClass45_322)
+            Class348_Sub40_Sub4.aD9113 = Class244(Class348_Sub11Statics.aClass45_4770, Class369_Sub2.aClass45_8589, Class21.aClass45_322)
             Class101_Sub3.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class239.aClass166_3147 = Class166(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
@@ -201,7 +201,7 @@ object Class164 {
             Class229.aClass194_2981 = Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926)
             Class269.aClass217_3453 = Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class65.method699(Class104.aClass45_1627, (-100).toByte(), Class348_Sub35.aClass45_6980, Class21.aClass45_322, aa_Sub3Statics.aClass45_5207)
-            method85(0, Class262.aClass45_3323)
+            method85(0, Class262Statics.aClass45_3323)
             Class200.aClass226_2639 = Class226(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434)
             Class239_Sub6.aClass355_5900 = Class355(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434, Class28())
             method1202(0)

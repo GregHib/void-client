@@ -2775,12 +2775,12 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         @JvmStatic
         fun method3936(i: Int) {
             anInt7990++
-            if (Class262.aClass190ArrayArray3335 != null) {
+            if (Class262Statics.aClass190ArrayArray3335 != null) {
                 var i_274_ = 0
-                while ((i_274_ < Class262.aClass190ArrayArray3335!!.size)) {
+                while ((i_274_ < Class262Statics.aClass190ArrayArray3335!!.size)) {
                     var i_275_ = 0
-                    while ((Class262.aClass190ArrayArray3335!![i_274_]!!.size > i_275_)) {
-                        Class262.aClass190ArrayArray3335!![i_274_]!![i_275_] = Class274.aClass190_3547
+                    while ((Class262Statics.aClass190ArrayArray3335!![i_274_]!!.size > i_275_)) {
+                        Class262Statics.aClass190ArrayArray3335!![i_274_]!![i_275_] = Class274.aClass190_3547
                         i_275_++
                     }
                     i_274_++

@@ -55,7 +55,7 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
             if (i != 4) aClass143_4962 = null
             Applet_Sub1.aClass324_20 = Class14.method232(var_ha, (-53).toByte(), true, Class17.anInt235)
             Class246.aClass143_3179 = Class135.method1151(-25411, var_ha, Class17.anInt235)
-            Class262.aClass324_3326 = Class14.method232(var_ha, (-53).toByte(), true, Class291.anInt3736)
+            Class262Statics.aClass324_3326 = Class14.method232(var_ha, (-53).toByte(), true, Class291.anInt3736)
             aClass143_4962 = Class135.method1151(-25411, var_ha, Class291.anInt3736)
         }
 

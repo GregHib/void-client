@@ -1,5 +1,4 @@
 import Class256.method1943
-import Class262.Companion.method1992
 import Class318_Sub9_Sub2.Companion.method2519
 import java.awt.Image
 
@@ -104,7 +103,7 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
                             }
                             val class318_sub1_sub1 = class357.aClass318_Sub1_Sub1_4402
                             if (class318_sub1_sub1 != null && class318_sub1_sub1.method2388(-85)) {
-                                method1992(class318_sub1_sub1, i, i_8_, i_9_)
+                                Class262Statics.method1992(class318_sub1_sub1, i, i_8_, i_9_)
                                 class318_sub1_sub1.method2392(true)
                             }
                         }
