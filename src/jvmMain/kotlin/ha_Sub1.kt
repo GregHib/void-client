@@ -2094,9 +2094,9 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
             this.aClass101_Sub1_7492 = Class101_Sub1()
             method3631(1)
             method3659(0)
-            Class59_Sub2_Sub1.method566(true, true, (-126).toByte())
+            method3659Init()
             aBoolean7471 = true
-            anInt7466 = Class62.method599(-70).toInt()
+            anInt7466 = clockMillis().toInt()
         } catch (throwable: Throwable) {
             throwable.printStackTrace()
             this.method3635((-98).toByte())
@@ -2290,6 +2290,10 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
 
     override fun method3659(i: Int) {
         aClass167Array7480!![i]!!.method1291(10000, currentThread())
+    }
+
+    override fun method3659Init() {
+        Class59_Sub2_Sub1.method566(true, true, (-126).toByte())
     }
 
     @Throws(Exception_Sub1::class)

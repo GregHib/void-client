@@ -127,6 +127,9 @@ abstract class ha internal constructor(var aD4579: d?) {
 
     abstract fun method3659(i: Int)
 
+    /** Platform hook called from [ha_Sub1] init after [method3659]. Override in jvmMain to perform JVM-specific init (e.g. audio subsystem). */
+    open fun method3659Init() {}
+
     fun method3660(i: Int, i_79_: Int, i_80_: Int, i_81_: Int, bool: Boolean) {
         if (bool != true) H(-122, 91, -22, null)
         anInt4570++
