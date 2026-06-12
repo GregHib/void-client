@@ -335,7 +335,7 @@ class Class88 {
                                 Class24.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 Class130.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 Class348_Sub40_Sub12.aClass263_9195!!.method2004(Class130.aBoolean1900, 25.toByte())
-                                Exception_Sub1.aClass255_112!!.method1934(11.toByte(), Class130.aBoolean1900)
+                                Exception_Sub1Statics.aClass255_112!!.method1934(11.toByte(), Class130.aBoolean1900)
                                 Class189.aClass278_2529!!.method2072(88.toByte(), Class130.aBoolean1900)
                             } else {
                                 if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class76.Companion.anInt1288, 107)) return

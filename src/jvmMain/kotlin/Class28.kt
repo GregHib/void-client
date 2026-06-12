@@ -10,7 +10,7 @@ class Class28 : Interface15 {
                 return class117.method1074(l.toInt(), 91)
             }
             if (Class299_Sub1.aClass138_6321 == class138 || za.aClass138_7274 == class138) {
-                val class213 = Exception_Sub1.aClass255_112!!.method1940(i + -99, l.toInt())
+                val class213 = Exception_Sub1Statics.aClass255_112!!.method1940(i + -99, l.toInt())
                 return class213.aString2795
             }
             if (i != 1) method54(85, -41L, null, null)

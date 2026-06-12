@@ -390,7 +390,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         if (string.startsWith("cachespace")) {
                             method94(("I(s): " + Class351.aClass60_4327!!.method581(-18529) + "/" + Class351.aClass60_4327!!.method577(-4)), -101)
                             method94(("I(m): " + Class358.aClass60_4417!!.method581(-18529) + "/" + Class358.aClass60_4417!!.method577(i.toInt() xor 0x4d)), 127)
-                            method94(("O(s): " + Exception_Sub1.aClass255_112!!.aClass175_3288.method1350(126.toByte()) + "/" + Exception_Sub1.aClass255_112!!.aClass175_3288.method1339(100)), i + 203)
+                            method94(("O(s): " + Exception_Sub1Statics.aClass255_112!!.aClass175_3288.method1350(126.toByte()) + "/" + Exception_Sub1Statics.aClass255_112!!.aClass175_3288.method1339(100)), i + 203)
                             return
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {

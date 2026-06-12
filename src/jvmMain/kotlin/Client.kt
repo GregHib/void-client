@@ -844,7 +844,7 @@ class Client : Applet_Sub1() {
         method1715(103)
         method852(6)
         method3518(i.toInt() xor 0x34)
-        Exception_Sub1.method140((-126).toByte())
+        Exception_Sub1Statics.method140((-126).toByte())
         aaStatics.method158((-67).toByte())
         method3438(59.toByte())
         Class143.method1180((-76).toByte())
@@ -2059,7 +2059,7 @@ class Client : Applet_Sub1() {
                             i_51_ = s_Sub3.method4008((-128).toByte())
                             i_52_ = method260(false)
                         }
-                        if (class46 == Class289.aClass46_3701 && Exception_Sub1.method141(Class289.aClass46_3701!!, 125.toByte()) != null) {
+                        if (class46 == Class289.aClass46_3701 && Exception_Sub1Statics.method141(Class289.aClass46_3701!!, 125.toByte()) != null) {
                             Class50_Sub1.aBoolean5221 = true
                             ha_Sub3.anInt8001 = i_43_
                             Class348_Sub40_Sub13.anInt9203 = i_44_

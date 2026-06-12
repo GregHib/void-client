@@ -125,7 +125,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, var aBoolean7045: Boo
             if ((Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350).inv()) == i) i_0_ = i_0_ or 0x40
             method2420(i_0_, i)
             Class348_Sub40_Sub12.aClass263_9195!!.method2009(i_0_, 109.toByte())
-            Exception_Sub1.aClass255_112!!.method1942(i_0_, (-125).toByte())
+            Exception_Sub1Statics.aClass255_112!!.method1942(i_0_, (-125).toByte())
             Class189.aClass278_2529!!.method2073(-25032, i_0_)
             Class348_Sub40_Sub18.aClass319_9245!!.method2541(119, i_0_)
             method3535(i_0_, i.inv())

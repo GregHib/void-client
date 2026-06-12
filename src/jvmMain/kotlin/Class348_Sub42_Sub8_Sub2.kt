@@ -321,7 +321,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_29_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
                 Class318_Sub1_Sub1_Sub1.method2397((-128).toByte())
                 Class70.method727((-63).toByte(), i_29_, i, i_28_)
-                val class213 = Exception_Sub1.aClass255_112!!.method1940(-126, i)
+                val class213 = Exception_Sub1Statics.aClass255_112!!.method1940(-126, i)
                 Class122.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
                 Class34.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
                 Class348_Sub3.aClass114_6584 = null

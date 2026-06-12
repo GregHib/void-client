@@ -97,13 +97,13 @@ class Class348_Sub13 : Class348() {
                 var bool_29_ = false
                 var i_30_ = 0
                 while (`is`!!.size > i_30_) {
-                    if (`is`[i_30_] != -1 && !Exception_Sub1.aClass255_112!!.method1940(-91, `is`[i_30_]).method1565(bool, -1)) bool_29_ = true
+                    if (`is`[i_30_] != -1 && !Exception_Sub1Statics.aClass255_112!!.method1940(-91, `is`[i_30_]).method1565(bool, -1)) bool_29_ = true
                     i_30_++
                 }
                 if (bool_29_) return null
                 val class124s = arrayOfNulls<Class124>(`is`.size)
                 for (i_31_ in `is`.indices) {
-                    if (`is`[i_31_] != -1) class124s[i_31_] = Exception_Sub1.aClass255_112!!.method1940(Class348_Sub21.Companion.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
+                    if (`is`[i_31_] != -1) class124s[i_31_] = Exception_Sub1Statics.aClass255_112!!.method1940(Class348_Sub21.Companion.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
                 }
                 if (class225 != null && class225.anIntArrayArray2939 != null) {
                     var i_32_ = 0

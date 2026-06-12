@@ -329,7 +329,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 var i_50_ = class46.anInt749
                                                 var string = (class46.aString792)
                                                 if (class46.anInt812 != -1) {
-                                                    val class213 = (Exception_Sub1.aClass255_112!!.method1940(-67, (class46.anInt812)))
+                                                    val class213 = (Exception_Sub1Statics.aClass255_112!!.method1940(-67, (class46.anInt812)))
                                                     string = (class213.aString2795)
                                                     if (string == null) string = "null"
                                                     if (((class213.anInt2820) == 1 || (class46.anInt781) != 1) && (class46.anInt781) != -1) string = ("<col=ff9040>" + string + "</col> x" + (Class37.method356(-127, (class46.anInt781))))
@@ -368,7 +368,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 val class105: Class105?
                                                 if (class46.anInt812 != -1) {
                                                     val class154 = (if (class46.aBoolean720) (Class132.aPlayer_1907!!.aClass154_10536) else null)
-                                                    class105 = (Exception_Sub1.aClass255_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), Class348_Sub8.aHa6654, class154))
+                                                    class105 = (Exception_Sub1Statics.aClass255_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), Class348_Sub8.aHa6654, class154))
                                                 } else if ((class46.anInt806) == -1) class105 = (class46.method443(Class348_Sub8.aHa6654!!, (-57).toByte()))
                                                 else class105 = (method2263(Class348_Sub8.aHa6654, 0, (class46.anInt806)))
                                                 if (class105 == null) {
@@ -409,7 +409,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                             var class64: Class64? = null
                                             var i_60_ = 0
                                             if (class46.anInt812 != -1) {
-                                                var class213 = (Exception_Sub1.aClass255_112!!.method1940(103, (class46.anInt812)))
+                                                var class213 = (Exception_Sub1Statics.aClass255_112!!.method1940(103, (class46.anInt812)))
                                                 if (class213 != null) {
                                                     class213 = (class213.method1560((class46.anInt781), 97.toByte()))
                                                     val class17 = (if ((class46.anInt699) == -1) null else (Class10.aClass87_191!!.method835((class46.anInt699), 7)))
@@ -424,7 +424,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     val player = (Class294.aPlayerArray5058!![i_61_])
                                                     val class17 = (if ((class46.anInt699) == -1) null else (Class10.aClass87_191!!.method835((class46.anInt699), 7)))
                                                     if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.anInt9591)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.aString10544!!), (-50).toByte()))))) class64 =
-                                                        (player.aClass154_10536!!.method1226((Class318_Sub1_Sub3_Sub3.aClass170_10209), null, null, true, (Exception_Sub1.aClass255_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aClass150_9342), class46.anInt841, (Class348_Sub8.aHa6654), (Class189.aClass278_2529), (Class10.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aClass261_5558)))
+                                                        (player.aClass154_10536!!.method1226((Class318_Sub1_Sub3_Sub3.aClass170_10209), null, null, true, (Exception_Sub1Statics.aClass255_112), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.Companion.aClass150_9342), class46.anInt841, (Class348_Sub8.aHa6654), (Class189.aClass278_2529), (Class10.aClass87_191), 0, class46.anInt795, 0, (Class64_Sub3.aClass261_5558)))
                                                 }
                                             } else if ((class46.anInt770) == 8 || (class46.anInt770) == 9) {
                                                 val class348_sub13 = (Class258_Sub4.method1974((-123).toByte(), (class46.anInt753), false))
@@ -434,11 +434,11 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     class64 = (class348_sub13.method2803(class17, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, Class348_Sub8.aHa6654, (class46.anInt770) == 9, -1))
                                                 }
                                             } else if (class46.anInt699 == -1) {
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aHa6654, -1, 0, (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), null, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), -1))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aHa6654, -1, 0, (Exception_Sub1Statics.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), null, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), -1))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
                                             } else {
                                                 val class17 = (Class10.aClass87_191!!.method835((class46.anInt699), 7))
-                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aHa6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), class17, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), (class46.anInt730)))
+                                                class64 = (class46.method430((Class348_Sub40_Sub25.Companion.aClass150_9342), Class10.aClass87_191, 2048, Class348_Sub8.aHa6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1Statics.aClass255_112), (Class318_Sub1_Sub3_Sub3.aClass170_10209), 255, (Class132.aPlayer_1907!!.aClass154_10536), class17, (Class64_Sub3.aClass261_5558), (Class189.aClass278_2529), (class46.anInt730)))
                                                 if (class64 == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46)
                                             }
                                             if (class64 != null) {

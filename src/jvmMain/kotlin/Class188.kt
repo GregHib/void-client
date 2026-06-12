@@ -127,7 +127,7 @@ class Class188 internal constructor(private val aHa_Sub2_2511: ha_Sub2) {
             Class348_Sub40_Sub25.aClass150_9342!!.method1207(-17452, 5)
             Class348_Sub40_Sub12.aClass263_9195!!.method2010(5, i + -6)
             Class189.Companion.aClass278_2529!!.method2076(5, true)
-            Exception_Sub1.aClass255_112!!.method1937(5, false)
+            Exception_Sub1Statics.aClass255_112!!.method1937(5, false)
             Class10.aClass87_191!!.method836(5, 93)
             Class348_Sub40_Sub18.aClass319_9245!!.method2544(5, (-41).toByte())
             Class229.aClass194_2981!!.method1442(5, 1.toByte())

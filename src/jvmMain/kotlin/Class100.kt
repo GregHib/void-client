@@ -1,4 +1,4 @@
-import Exception_Sub1.Companion.method141
+import Exception_Sub1Statics
 
 /* Class100 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -97,9 +97,9 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
         fun method887(class46: Class46?, i: Int, i_5_: Int, i_6_: Int) {
             if (i_6_ == 2147483647) {
                 anInt1589++
-                if (Class289.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (method141(class46, ((-79).toByte()).toByte()) != null))) {
+                if (Class289.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (Exception_Sub1Statics.method141(class46, ((-79).toByte()).toByte()) != null))) {
                     Class289.aClass46_3701 = class46
-                    Class331.aClass46_4130 = method141(class46, ((-117).toByte()).toByte())
+                    Class331.aClass46_4130 = Exception_Sub1Statics.method141(class46, ((-117).toByte()).toByte())
                     Class318_Sub1.anInt6392 = 0
                     Class219.anInt2872 = i_5_
                     Class318_Sub4.anInt6411 = i

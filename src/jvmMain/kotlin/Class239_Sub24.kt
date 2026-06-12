@@ -293,7 +293,7 @@ class Class239_Sub24 : Class239 {
                                     var i_57_ = 0
                                     var class348_sub34 = (class348_sub37.aClass262_6998.method1993(-92) as Class348_Sub34?)
                                     while (class348_sub34 != null) {
-                                        val class213 = (Exception_Sub1.aClass255_112!!.method1940(79, (class348_sub34.anInt6973)))
+                                        val class213 = (Exception_Sub1Statics.aClass255_112!!.method1940(79, (class348_sub34.anInt6973)))
                                         if (r.aBoolean9722 && ((Class132.aPlayer_1907!!.plane) == class318_sub4.aClass318_Sub1_6410!!.plane)) {
                                             val class254 = (if (Class246.anInt3176 != -1) (Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                             if ((Class38.anInt500 and 0x1) != 0 && (class254 == null || ((class254.anInt3256) != (class213.method1567((class254.anInt3256), 29, Class246.anInt3176))))) {

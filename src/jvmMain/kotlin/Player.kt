@@ -137,7 +137,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 if (i_18_ >= 32768) {
                     i_18_ = Class25.anIntArray369!![-32768 + i_18_]
                     `is`[i_15_] = Class273.method2057(1073741824, i_18_)
-                    val i_19_ = (Exception_Sub1.aClass255_112!!.method1940(-111, i_18_).anInt2827)
+                    val i_19_ = (Exception_Sub1Statics.aClass255_112!!.method1940(-111, i_18_).anInt2827)
                     if (i_19_ != 0) this.anInt10542 = i_19_
                 } else `is`[i_15_] = Class273.method2057(-256 + i_18_, -2147483648)
             }
@@ -192,7 +192,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         if ((Class348_Sub42_Sub11.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (i_31_ in is_20_.indices) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
-                    Exception_Sub1.aClass255_112!!.method1936(72)
+                    Exception_Sub1Statics.aClass255_112!!.method1936(72)
                     break
                 }
             }
@@ -454,7 +454,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val bool = (this.aByte10279.toInt() != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250))
         if (bool) i = i or 0x80000
         val class64 =
-            (this.aClass154_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aClass150_9342, this.anInt10232, var_ha, Class189.aClass278_2529, Class10.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
+            (this.aClass154_10536!!.method1226(aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1Statics.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aClass150_9342, this.anInt10232, var_ha, Class189.aClass278_2529, Class10.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558).also { this.aClass64Array10323[0] = it })
         val i_75_ = Class292.method2201(2121)
         if (Class226.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268)
         val i_76_ = 3 % ((63 - i_69_) / 47)

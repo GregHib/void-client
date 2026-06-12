@@ -74,7 +74,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             Class348_Sub40_Sub25.aClass150_9342!!.method1206((-37).toByte())
             Class348_Sub40_Sub12.aClass263_9195!!.method2012(-23828)
             Class189.aClass278_2529!!.method2078(-6080)
-            Exception_Sub1.aClass255_112!!.method1939(-110)
+            Exception_Sub1Statics.aClass255_112!!.method1939(-110)
             Class10.aClass87_191!!.method834((-116).toByte())
             Class348_Sub40_Sub18.aClass319_9245!!.method2546(60)
             Class229.aClass194_2981!!.method1445(64)
