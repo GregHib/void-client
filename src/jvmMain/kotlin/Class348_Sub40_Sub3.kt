@@ -59,7 +59,7 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
                 if (class304 == Class348_Sub40_Sub38.Companion.aClass304_9471) return 6406
                 if (Class348_Sub40_Sub22.Companion.aClass304_9303 != class304) {
                     if (class304 == Class191.aClass304_2571) return 6410
-                    if (class304 == Class318.aClass304_3977) return 6145
+                    if (class304 == Class318Statics.aClass304_3977) return 6145
                 } else return 6409
             } else return 6407
             throw IllegalStateException()

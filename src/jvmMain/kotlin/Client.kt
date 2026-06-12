@@ -790,7 +790,7 @@ class Client : Applet_Sub1() {
         method3199(i.toInt() xor 0x70)
         method866(-14603)
         method861(-76)
-        Class318.method2374((-125).toByte())
+        Class318Statics.method2374((-125).toByte())
         method810(true)
         Class62.method597((-122).toByte())
         method1086(true)

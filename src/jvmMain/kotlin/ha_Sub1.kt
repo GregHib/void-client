@@ -247,9 +247,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3685(class98: Class98Base, i: Int) {
-        val class98 = class98 as Class98
         val class167 = method3724(currentThread())
-        val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
+        val class318_sub9 = class98.entityList
         var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_65_ !== class318_sub9) {
             val class318_sub9_sub2 = class318_sub9_65_ as SceneEntity
@@ -265,7 +264,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
                     method3712(class318_sub9_sub2, i_69_, i_70_, f.toInt(), ((class318_sub9_sub2.anInt8793) * this.anInt7491 shr 12) / i)
                 }
             }
-            class318_sub9_65_ = class318_sub9_sub2.nextEntity as Class318_Sub9?
+            class318_sub9_65_ = class318_sub9_sub2.nextEntity as EntityListNode?
         }
     }
 

@@ -6,6 +6,7 @@ import Class286_Sub9.Companion.method2174
 */
 class Class98 : Class98Base {
     var aClass88_1569: Class88 = Class88()
+    override val entityList: EntityListNode get() = aClass88_1569.aClass318_Sub9_1503!!
 
     companion object {
         var aClass348_Sub16_Sub3_1564: Class348_Sub16_Sub3? = null

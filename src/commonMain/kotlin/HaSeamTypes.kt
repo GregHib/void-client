@@ -13,7 +13,10 @@ interface Class60Base {
 interface Class64Base
 interface SBase
 interface ZaBase
-interface Class98Base
+interface Class98Base {
+    /** Sentinel node for the scene entity linked list (Class88.aClass318_Sub9_1503). */
+    val entityList: EntityListNode
+}
 interface Class124Base
 interface Class143Base
 interface Class324Base

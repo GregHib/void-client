@@ -1,9 +1,9 @@
 /* Class318_Sub9 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class318_Sub9 : Class318() {
+open class Class318_Sub9 : Class318(), EntityListNode {
     var aClass318_Sub9_6468: Class318_Sub9? = null
-    var aClass318_Sub9_6469: Class318_Sub9? = null
+    override var aClass318_Sub9_6469: Class318_Sub9? = null
 
     fun method2514(i: Int) {
         anInt6467++

@@ -42,7 +42,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
                 if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
                     if (this.aClass304_5084 != Class348_Sub40_Sub22.aClass304_9303) {
                         if (Class191.aClass304_2571 != this.aClass304_5084) {
-                            if (this.aClass304_5084 == Class318.aClass304_3977) return 6145
+                            if (this.aClass304_5084 == Class318Statics.aClass304_3977) return 6145
                         } else return 34847
                     } else return 34846
                 } else return 34844
@@ -52,7 +52,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
                     if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
                         if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 34840
                         if (Class191.aClass304_2571 != this.aClass304_5084) {
-                            if (Class318.aClass304_3977 == this.aClass304_5084) return 6145
+                            if (Class318Statics.aClass304_3977 == this.aClass304_5084) return 6145
                         } else return 34841
                     } else return 34838
                 } else return 34837
@@ -62,7 +62,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
                 if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
                     if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 6409
                     if (this.aClass304_5084 == Class191.aClass304_2571) return 6410
-                    if (this.aClass304_5084 == Class318.aClass304_3977) return 6145
+                    if (this.aClass304_5084 == Class318Statics.aClass304_3977) return 6145
                 } else return 6406
             } else return 6408
         } else return 6407

@@ -106,7 +106,7 @@ class Class315 internal constructor(var aString3953: String?) {
             Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_
             Class239_Sub14.anInt5994 = i_3_
             Class348_Sub43.anInt7068 = 1
-            Class318.anInt3971 = i_2_
+            Class318Statics.anInt3971 = i_2_
             Class124.aClass45_1848 = class45
         }
 

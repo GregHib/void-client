@@ -45,7 +45,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: ha_Sub2
                     Class318_Sub1_Sub4_Sub1.anInt10074 = i
                     Class346.aBoolean4275 = bool
                     Class285.aClass348_Sub16_Sub3_4743 = null
-                    Class318.anInt3971 = i_4_
+                    Class318Statics.anInt3971 = i_4_
                     anInt8687++
                     Class239_Sub12.aLong5971 = l
                     Class348_Sub43.anInt7068 = 1

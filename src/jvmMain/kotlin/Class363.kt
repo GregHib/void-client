@@ -11,10 +11,10 @@ object Class363 {
     var anInt4465: Int = 0
 
     fun method3513(i: Int) {
-        withLock(Class318.aClass243Array3974!!) {
+        withLock(Class318Statics.aClass243Array3974!!) {
             var i_0_ = 0
-            while ((i_0_ < Class318.aClass243Array3974!!.size)) {
-                Class318.aClass243Array3974!![i_0_] = Class243()
+            while ((i_0_ < Class318Statics.aClass243Array3974!!.size)) {
+                Class318Statics.aClass243Array3974!![i_0_] = Class243()
                 Class331.anIntArray4128!![i_0_] = 0
                 i_0_++
             }

@@ -63,7 +63,7 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
             anInt6922++
             Class346.aBoolean4275 = false
             Class124.aClass45_1848 = null
-            Class318.anInt3971 = -1
+            Class318Statics.anInt3971 = -1
             Class239_Sub14.anInt5994 = i
             Class348_Sub43.anInt7068 = 1
             Class58.anInt1059 = 0

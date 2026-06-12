@@ -29,10 +29,10 @@ class OutputStream_Sub2 : OutputStream() {
         @JvmStatic
         fun method136(i: Int, bool: Boolean, bool_2_: Boolean): Class318_Sub4 {
             anInt105++
-            withLock(Class318.aClass243Array3974!!) {
+            withLock(Class318Statics.aClass243Array3974!!) {
                 val class318_sub4: Class318_Sub4
-                if (Class318.aClass243Array3974!!.size > i && !Class318.aClass243Array3974!![i]!!.method1871(111.toByte())) {
-                    class318_sub4 = Class318.aClass243Array3974!![i]!!.method1870(-104) as Class318_Sub4
+                if (Class318Statics.aClass243Array3974!!.size > i && !Class318Statics.aClass243Array3974!![i]!!.method1871(111.toByte())) {
+                    class318_sub4 = Class318Statics.aClass243Array3974!![i]!!.method1870(-104) as Class318_Sub4
                     class318_sub4.method2373(false)
                     Class331.anIntArray4128!![i]--
                 } else {

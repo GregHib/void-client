@@ -1866,7 +1866,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub40_Sub34.anInt9437 = 0
             Class195.anInt5018 = 0
             Class318_Sub1_Sub1_Sub2.anInt9982 = 0
-            Class318.anInt3972 = 0
+            Class318Statics.anInt3972 = 0
             Class170.anInt5079 = 0
             Applet_Sub1.anInt34 = 0
             Class348_Sub42_Sub13.anInt9619 = 0
@@ -2583,7 +2583,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class79.anInt1378 = 0
             Class239_Sub21.anInt6067 = 0
             Class318_Sub1_Sub3_Sub3.anInt10298 = 0
-            Class318.anInt3973 = 0
+            Class318Statics.anInt3973 = 0
             Class284.anInt3664 = 0
             Client.anInt5179 = 0
             Class88.anInt1498 = 0

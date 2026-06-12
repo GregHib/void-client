@@ -5,7 +5,6 @@ import Class239_Sub25.Companion.method1828
 import Class24.method297
 import Class264.Companion.method2017
 import Class316.Companion.method2368
-import Class318.Companion.method2375
 import Class369_Sub3.Companion.method3573
 import Class84.Companion.method821
 import java.awt.Component
@@ -93,7 +92,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             method3573(-15326)
             method1277(62.toByte())
             method821(-126)
-            method2375(16127)
+            Class318Statics.method2375(16127)
             if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                 var i_6_ = 0
                 while (Class308.aByteArrayArray3882!!.size > i_6_) {
