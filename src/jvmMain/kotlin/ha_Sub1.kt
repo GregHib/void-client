@@ -1248,7 +1248,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     fun method3718(i: Int): IntArray? {
-        var class348_sub25: Class348_Sub25?
+        var class348_sub25: Class348_Sub25? = null
         withLock(aClass60_7498) {
             class348_sub25 = aClass60_7498.method583(i.toLong(), 77) as Class348_Sub25?
             if (class348_sub25 == null) {
@@ -1281,7 +1281,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     fun method3719(i: Int): IntArray? {
-        var class348_sub25: Class348_Sub25?
+        var class348_sub25: Class348_Sub25? = null
         withLock(aClass60_7498) {
             class348_sub25 = (aClass60_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as Class348_Sub25?)
             if (class348_sub25 == null) {
