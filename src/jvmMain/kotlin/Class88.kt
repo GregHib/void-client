@@ -353,7 +353,7 @@ class Class88 : Class88Base {
                                 Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class170.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
                                 Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(116, Class170.anInt5065)
-                                Class216.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
+                                Class216Statics.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
                                 Class130_Sub1.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class290.aBoolean3706 = class348_sub49_sub2.readUnsignedByte(255) == 1

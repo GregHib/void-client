@@ -1122,7 +1122,7 @@ class Client : Applet_Sub1() {
         method3106(97.toByte())
         method3123(i + -108)
         method2996()
-        Class216.method1584((-64).toByte())
+        Class216Statics.method1584((-64).toByte())
         method167(19612)
         method208(0.toByte())
         method3016(65280)
@@ -1426,7 +1426,7 @@ class Client : Applet_Sub1() {
         Class348_Sub51.anInt7267++
         method198(null, false, -1, -1)
         method1343(-1, null, 1, -1)
-        Class216.method1583((-73).toByte())
+        Class216Statics.method1583((-73).toByte())
         Class311.anInt3918++
         var i_96_ = 0
         while (Class348_Sub32.anInt6930 > i_96_) {

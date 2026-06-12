@@ -354,7 +354,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
                             if (!r.aBoolean9722) Class362.anInt4458 = -1
-                            Class216.method1583((-73).toByte())
+                            Class216Statics.method1583((-73).toByte())
                             Class311.anInt3918++
                             if (Class237.aBoolean3103) {
                                 Class98.anInt1568++

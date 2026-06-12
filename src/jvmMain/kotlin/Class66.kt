@@ -2263,7 +2263,7 @@ object Class66 {
                     return
                 }
                 if (i == 6906) {
-                    anIntArray1149!![anInt1173++] = Class216.anInt4976
+                    anIntArray1149!![anInt1173++] = Class216Statics.anInt4976
                     return
                 }
                 if (i == 6907) {

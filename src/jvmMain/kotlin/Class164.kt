@@ -131,7 +131,7 @@ object Class164 {
             Class123.aClass45_1815 = Class369_Sub2.method3571(false, 15, (-23).toByte(), 1)
             Class94.aClass45_1538 = Class369_Sub2.method3571(false, 16, (-23).toByte(), 1)
             Class247.aClass45_3183 = Class369_Sub2.method3571(false, 17, (-23).toByte(), 1)
-            Class216.aClass45_4975 = Class369_Sub2.method3571(false, 18, (-23).toByte(), 1)
+            Class216Statics.aClass45_4975 = Class369_Sub2.method3571(false, 18, (-23).toByte(), 1)
             Class174.aClass45_2306 = Class369_Sub2.method3571(false, 19, (-23).toByte(), 1)
             r_Sub2.aClass45_10480 = Class369_Sub2.method3571(false, 20, (-23).toByte(), 1)
             Class78.aClass45_1322 = Class369_Sub2.method3571(false, 21, (-23).toByte(), 1)
@@ -188,7 +188,7 @@ object Class164 {
             Class348_Sub40_Sub12.aClass263_9195 = Class263(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class94.aClass45_1538, aa_Sub3Statics.aClass45_5207)
             Class348_Sub23_Sub2.aClass153_9031 = Class153(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class2.aClass141_117 = Class141(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
-            Class189.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.aClass45_4975, aa_Sub3Statics.aClass45_5207)
+            Class189.aClass278_2529 = Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216Statics.aClass45_4975, aa_Sub3Statics.aClass45_5207)
             Exception_Sub1Statics.aClass255_112 = Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class101_Sub3.aClass326_5764, Class174.aClass45_2306, aa_Sub3Statics.aClass45_5207)
             Class348_Sub23_Sub2.aClass187_9036 = Class187(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class10.aClass87_191 = Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, r_Sub2.aClass45_10480, Class348_Sub29.aClass45_6909, Class186.aClass45_2490)
@@ -253,7 +253,7 @@ object Class164 {
             Class319.aBoolean3988 = true
             Class247.aClass45_3183!!.anInt634 = 2
             Class94.aClass45_1538!!.anInt634 = 2
-            Class216.aClass45_4975!!.anInt634 = 2
+            Class216Statics.aClass45_4975!!.anInt634 = 2
             Class174.aClass45_2306!!.anInt634 = 2
             r_Sub2.aClass45_10480!!.anInt634 = 2
             Class78.aClass45_1322!!.anInt634 = 2
