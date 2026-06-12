@@ -217,7 +217,7 @@ class Class170 : Interface17 {
                     npc.method2448((Class189.aClass278_2529!!.method2079(Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(-1), -1)), -2)
                     npc.method2434(95.toByte(), npc.aClass79_10505!!.anInt1399)
                     npc.anInt10310 = npc.aClass79_10505!!.anInt1329 shl 3
-                    if (npc.aClass79_10505!!.method793(0)) Class223.method1614(979190089, npc, (npc.plane).toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
+                    if (npc.aClass79_10505!!.method793(0)) Class223Statics.method1614(979190089, npc, (npc.plane).toInt(), (npc.anIntArray10317!![0]), (npc.anIntArray10320!![0]), null, null, 0)
                 }
                 if ((0x8 and i_40_) != 0) {
                     val `is` = IntArray(4)

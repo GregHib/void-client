@@ -963,7 +963,7 @@ class Client : Applet_Sub1() {
         method1889(255)
         method2705(i + 14537)
         method3609(48.toByte())
-        Class223.method1612((-9).toByte())
+        Class223Statics.method1612((-9).toByte())
         Class287.method2180((-72).toByte())
         method1447(i.toInt() xor 0x20)
         method492(i + -216)

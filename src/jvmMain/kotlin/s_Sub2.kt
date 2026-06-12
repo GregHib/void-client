@@ -776,7 +776,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         fun method3999(i: Int, i_147_: Int, i_148_: Int): Boolean {
             if (i_148_ != 458752) anInt8237 = -28
             anInt8238++
-            return ((0x70000 and i_147_) != 0) or Class223.method1613(false, i, i_147_) || Class288.method2187(i_147_, -121, i)
+            return ((0x70000 and i_147_) != 0) or Class223Statics.method1613(false, i, i_147_) || Class288.method2187(i_147_, -121, i)
         }
 
         @JvmStatic

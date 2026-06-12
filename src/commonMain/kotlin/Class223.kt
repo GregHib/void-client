@@ -1,0 +1,18 @@
+/* Class223 - Decompiled by JODE
+* Visit http://jode.sourceforge.net/
+*/
+class Class223 internal constructor(i: Int, var anInt2896: Int) {
+    override fun toString(): String {
+        anInt2894++
+        throw IllegalStateException()
+    }
+
+    companion object {
+        var anInt2894: Int = 0
+        var aBoolean2895: Boolean = false
+        var anInt2897: Int = 0
+        var anInt2898: Int = 0
+        var anIntArray2899: IntArray? = IntArray(13)
+        var anIntArrayArray2900: Array<IntArray?>? = Array<IntArray?>(128) { IntArray(128) }
+    }
+}

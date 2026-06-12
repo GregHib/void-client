@@ -835,7 +835,7 @@ class Class64_Sub3 : Class64 {
             if ((i and 0x100) == 0) class64_sub3_211_.aBoolean5595 = aBoolean5595
             else class64_sub3_211_.aBoolean5595 = true
             val bool_215_ = method2709(anInt5556, i, -1)
-            val bool_216_ = Class223.method1613(false, anInt5556, i)
+            val bool_216_ = Class223Statics.method1613(false, anInt5556, i)
             val bool_217_ = method2259(i_212_, anInt5556, i)
             val bool_218_ = bool_217_ or (bool_216_ or bool_215_)
             if (bool_218_) {
