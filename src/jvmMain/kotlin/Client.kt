@@ -5,8 +5,8 @@ import Class100.Companion.method886
 import Class100.Companion.method887
 import Class101Statics.method906
 import Class101Statics.method909
-import Class101_Sub1.Companion.method911
-import Class101_Sub1.Companion.method913
+import Class101_Sub1Statics.method911
+import Class101_Sub1Statics.method913
 import Class101_Sub2.Companion.method925
 import Class101_Sub3.Companion.method938
 import Class103.method948

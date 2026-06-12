@@ -1,4 +1,4 @@
-import Class101_Sub1.Companion.method912
+import Class101_Sub1Statics.method912
 import Class239_Sub16.Companion.method1788
 
 /* Class157 - Decompiled by JODE

@@ -18,7 +18,7 @@ class Class125 internal constructor(i: Int, class221: Class221?, class341: Class
     override fun method51(i: Byte): Class223? {
         if (i <= 116) return null
         anInt4927++
-        return Class101_Sub1.aClass223_5689
+        return Class101_Sub1Statics.aClass223_5689
     }
 
     init {

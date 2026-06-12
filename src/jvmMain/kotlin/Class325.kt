@@ -593,7 +593,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348Statics.anInt4292 = 0
                             Class178.anInt2336++
                             Class239_Sub20.anInt6048 = 2
-                            val class348_sub47 = method2148((Class101_Sub1.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83)
+                            val class348_sub47 = method2148((Class101_Sub1Statics.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(86.toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -121)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(31, (l ushr 32).toInt() and 0x7fffffff)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-104, za_Sub2.regionTileX + i_74_)
