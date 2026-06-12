@@ -137,21 +137,19 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         if (string.equals("gc", ignoreCase = true)) {
                             method427(i + 180)
                             for (i_1_ in 0..9) System.gc()
-                            val runtime = Runtime.getRuntime()
-                            val i_2_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+                            val i_2_ = RuntimeInfoProvider.instance.usedMemoryKb()
                             method94("mem=" + i_2_ + "k", 110)
                             return
                         }
                         if (string.equals("compact", ignoreCase = true)) {
                             method427(-41)
                             for (i_3_ in 0..9) System.gc()
-                            val runtime = Runtime.getRuntime()
-                            var i_4_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+                            var i_4_ = RuntimeInfoProvider.instance.usedMemoryKb()
                             method94(("Memory before cleanup=" + i_4_ + "k"), 115)
                             method2271(31268)
                             method427(96)
                             for (i_5_ in 0..9) System.gc()
-                            i_4_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+                            i_4_ = RuntimeInfoProvider.instance.usedMemoryKb()
                             method94(("Memory after cleanup=" + i_4_ + "k"), -110)
                             return
                         }

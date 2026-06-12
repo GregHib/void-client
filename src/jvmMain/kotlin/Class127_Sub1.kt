@@ -59,9 +59,7 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
             anInt8381++
             try {
                 try {
-                    val runtime = Runtime.getRuntime()
-                    val integer = runtime.availableProcessors()
-                    Class348_Sub40_Sub29.anInt9372 = integer
+                    Class348_Sub40_Sub29.anInt9372 = RuntimeInfoProvider.instance.availableProcessors()
                 } catch (throwable: Throwable) {
                     /* empty */
                 }

@@ -43,9 +43,7 @@ class aa_Sub3(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : aa() {
                 if (!Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
                     try {
                         try {
-                            val runtime = Runtime.getRuntime()
-                            val var_long = runtime.maxMemory()
-                            Class226.anInt2964 = 1 + (var_long / 1048576L).toInt()
+                            Class226.anInt2964 = RuntimeInfoProvider.instance.maxMemoryMb()
                         } catch (throwable: Throwable) {
                             /* empty */
                         }

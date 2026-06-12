@@ -302,8 +302,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                         var i_23_ = -8 + i_13_ + i_14_
                         Applet_Sub1.aClass324_20!!.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
                         i_23_ -= 15
-                        val runtime = Runtime.getRuntime()
-                        val i_24_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+                        val i_24_ = RuntimeInfoProvider.instance.usedMemoryKb()
                         var i_25_ = 16776960
                         if (i_24_ > 65536) i_25_ = 16711680
                         Applet_Sub1.aClass324_20!!.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1)

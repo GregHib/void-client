@@ -240,15 +240,14 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     if (Class239_Sub5.anInt5891 < 20) i_39_ = -65536
                                                     Applet_Sub1.aClass324_20!!.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1)
                                                     i_38_ += 15
-                                                    val runtime = Runtime.getRuntime()
-                                                    var i_40_ = (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L).toInt()
+                                                    var i_40_ = RuntimeInfoProvider.instance.usedMemoryKb()
                                                     var i_41_ = -256
                                                     if (i_40_ > 98304) {
                                                         i_41_ = -65536
                                                         if (Class161.aBoolean2151) {
                                                             Class46.method427(-35)
                                                             for (i_42_ in 0..9) System.gc()
-                                                            i_40_ = (((runtime.totalMemory()) - (runtime.freeMemory())) / 1024L).toInt()
+                                                            i_40_ = RuntimeInfoProvider.instance.usedMemoryKb()
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)
                                                         }
                                                     }

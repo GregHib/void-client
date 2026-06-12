@@ -175,7 +175,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                                     if ((string_7_.indexOf(string.get(i_8_))) == -1) throw Exception()
                                     i_8_++
                                 }
-                                Runtime.getRuntime().exec("cmd /c start \"j\" \"" + string + "\"")
+                                RuntimeInfoProvider.instance.exec("cmd /c start \"j\" \"" + string + "\"")
                                 class144.anObject1998 = null
                             } catch (exception: Exception) {
                                 class144.anObject1998 = exception

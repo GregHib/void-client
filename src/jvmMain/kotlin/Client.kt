@@ -683,6 +683,7 @@ class Client : Applet_Sub1() {
         } catch (exception: Exception) {
             /* empty */
         }
+        RuntimeInfoProvider.instance = JvmRuntimeInfo()
         Class182.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (-124).toByte())
         Class258_Sub4.aClass373_8552 = method2941(Class305.aCanvas3869, 0, true)
         //        try {

@@ -51,8 +51,7 @@ object Class164 {
         }
         anInt2174++
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1018) {
-            val runtime = Runtime.getRuntime()
-            val i_1_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+            val i_1_ = RuntimeInfoProvider.instance.usedMemoryKb()
             val l = method599(i + 28559)
             if (Class348_Sub17.aLong6791 == 0L) Class348_Sub17.aLong6791 = l
             if (i_1_ > 16384 && -Class348_Sub17.aLong6791 + l < 5000) {
