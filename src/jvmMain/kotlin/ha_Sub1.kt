@@ -3,7 +3,24 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val class64Factory: (ha_Sub1, Class124Base, Int, Int, Int, Int) -> Class64Base = { ha, c124, i, i1, i2, i3 -> Class64_Sub1(ha, c124 as Class124, i, i1, i2, i3) }, private val sFactory: (ha_Sub1, Int, Int, Int, Int, Array<IntArray?>, Array<IntArray?>, Int) -> SBase = { ha, a, b, c, d, e, f, g -> s_Sub1(ha, a, b, c, d, e, f, g) }, private val class167Factory: (ha_Sub1) -> Class167Base = { ha -> Class167(ha) }, private val class60Factory: (Int) -> Class60Base = { Class60(it) }, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
+class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val class64Factory: (ha_Sub1, Class124Base, Int, Int, Int, Int) -> Class64Base = { ha, c124, i, i1, i2, i3 -> Class64_Sub1(ha, c124 as Class124, i, i1, i2, i3) }, private val sFactory: (ha_Sub1, Int, Int, Int, Int, Array<IntArray?>, Array<IntArray?>, Int) -> SBase = { ha, a, b, c, d, e, f, g -> s_Sub1(ha, a, b, c, d, e, f, g) }, private val class167Factory: (ha_Sub1) -> Class167Base = { ha -> Class167(ha) }, private val class60Factory: (Int) -> Class60Base = { Class60(it) }, private val class324Factory: (ha_Sub1, Class143Base?, Array<Class207>?, Boolean) -> Class324Base = { ha, c143, c207s, bool ->
+        val class143 = c143 as Class143?
+        val `is` = IntArray(c207s!!.size)
+        val is_283_ = IntArray(c207s.size)
+        var bool_284_ = false
+        for (i in c207s.indices) {
+            `is`[i] = c207s[i]!!.anInt2702
+            is_283_[i] = c207s[i]!!.anInt2696
+            if (c207s[i]!!.aByteArray2695 != null) bool_284_ = true
+        }
+        if (bool) {
+            if (bool_284_) Class324_Sub4(ha, class143, c207s, `is`, is_283_)
+            else Class324_Sub1(ha, class143, c207s, `is`, is_283_)
+        } else {
+            require(!bool_284_) { "" }
+            Class324_Sub3(ha, class143, c207s, `is`, is_283_)
+        }
+    }, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
     private val class105Factory: Class105Factory = JvmClass105Factory(this)
     private var anInt7465 = 0
     private var anInt7466 = 0
@@ -997,23 +1014,8 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324Base {
-        val class143 = class143 as Class143?
-        val `is` = IntArray(class207s!!.size)
-        val is_283_ = IntArray(class207s.size)
-        var bool_284_ = false
-        for (i in class207s.indices) {
-            `is`[i] = class207s[i]!!.anInt2702
-            is_283_[i] = class207s[i]!!.anInt2696
-            if (class207s[i]!!.aByteArray2695 != null) bool_284_ = true
-        }
-        if (bool) {
-            if (bool_284_) return Class324_Sub4(this, class143, class207s, `is`, is_283_)
-            return Class324_Sub1(this, class143, class207s, `is`, is_283_)
-        }
-        require(!bool_284_) { "" }
-        return Class324_Sub3(this, class143, class207s, `is`, is_283_)
-    }
+    override fun method3686(class143: Class143Base?, class207s: Array<Class207>?, bool: Boolean): Class324Base =
+        class324Factory(this, class143, class207s, bool)
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
         return interface4Factory(this, interface3, interface13)

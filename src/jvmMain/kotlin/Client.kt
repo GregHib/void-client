@@ -594,7 +594,7 @@ class Client : Applet_Sub1() {
                     class348_sub49.writeInt(103.toByte(), 634)
                     Class193.aClass202_2589!!.method1470((class348_sub49.aByteArray7154!!), 5, 0, -1)
                     Class47.anInt846++
-                    Class45.aLong667 = method599(-70)
+                    Class45.aLong667 = clockMillis()
                 }
                 if (Class47.anInt846 == 3) {
                     if (Class139.method1167(Class240.anInt4674, (-100).toByte()) || Class193.aClass202_2589!!.method1467(83.toByte()) > 0) {
