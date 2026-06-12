@@ -259,7 +259,7 @@ open class Class75 {
                     aClass356_1241!!.method3483(25.toByte(), class348_sub42_sub14.anInt9628.toLong(), class348_sub42_sub14)
                 }
             }
-            method566(true, false, 11.toByte())
+            method566(true, false, 11.toByte()) { Class239_Sub25.method1827(1415665776) }
         }
 
         private fun method753() {

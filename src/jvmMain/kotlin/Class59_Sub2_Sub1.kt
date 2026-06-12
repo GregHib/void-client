@@ -1,4 +1,3 @@
-import Class239_Sub25.Companion.method1827
 import Class348_Sub6.Companion.method2770
 
 /* Class59_Sub2_Sub1 - Decompiled by JODE
@@ -129,12 +128,12 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         }
 
         @JvmStatic
-        fun method566(bool: Boolean, bool_25_: Boolean, i: Byte) {
+        fun method566(bool: Boolean, bool_25_: Boolean, i: Byte, audioInit: () -> Unit = {}) {
             anInt8671++
             val i_26_ = -94 / ((-67 - i) / 59)
             if (bool) {
                 Class348_Sub40_Sub26.anInt9346++
-                method1827(1415665776)
+                audioInit()
             }
             if (bool_25_) {
                 Class26.anInt383++

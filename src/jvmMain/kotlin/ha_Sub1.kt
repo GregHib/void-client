@@ -2293,7 +2293,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3659Init() {
-        Class59_Sub2_Sub1.method566(true, true, (-126).toByte())
+        Class59_Sub2_Sub1.method566(true, true, (-126).toByte()) { Class239_Sub25.method1827(1415665776) }
     }
 
     @Throws(Exception_Sub1::class)
