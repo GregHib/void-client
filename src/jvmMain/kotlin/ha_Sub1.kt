@@ -3,7 +3,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
+class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: GameSurfaceFactory, private val interface13Factory: (Int, Int) -> Interface13, private val interface4Factory: (ha_Sub1, Interface3?, Interface13?) -> Interface4, private val screenReleaseCallback: () -> Unit = {}) : ha(var_d) {
     private val class105Factory: Class105Factory = JvmClass105Factory(this)
     private var anInt7465 = 0
     private var anInt7466 = 0
@@ -1018,7 +1018,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
-        return Class49(this, interface3 as Class105?, interface13 as Class216?)
+        return interface4Factory(this, interface3, interface13)
     }
 
     public override fun C(bool: Boolean) {
@@ -1334,7 +1334,7 @@ class ha_Sub1 internal constructor(var_d: d?, private val gameSurfaceFactory: Ga
     }
 
     override fun method3624(i: Int, i_369_: Int): Interface13 {
-        return Class216(i, i_369_)
+        return interface13Factory(i, i_369_)
     }
 
     override fun method3632(`is`: IntArray?) {

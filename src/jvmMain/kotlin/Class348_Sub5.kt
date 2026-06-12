@@ -68,7 +68,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
             try {
                 anInt6628++
                 if (bool != true) aByteArray6624 = null
-                val var_ha_sub1 = ha_Sub1(var_d, AwtGameSurfaceFactory) { Class286_Sub8.method2173(false, -101, true) }
+                val var_ha_sub1 = ha_Sub1(var_d, AwtGameSurfaceFactory, { i, i2 -> Class216(i, i2) }, { ha, i3, i13 -> Class49(ha, i3 as Class105?, i13 as Class216?) }) { Class286_Sub8.method2173(false, -101, true) }
                 val displayTarget = AwtDisplayTarget(canvas!!)
                 var_ha_sub1.method3643(displayTarget, i_4_, i)
                 var_ha_sub1.method3677(displayTarget)
