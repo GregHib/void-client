@@ -52,7 +52,7 @@ interface WindowShell {
 
     /**
      * Create (or re-create) the platform canvas and return a [DisplayTarget] bound to it.
-     * Also wires focus listeners and makes the canvas visible at the given position/size.
+     * Also wires platform focus/window/repaint listeners and makes the canvas visible.
      *
      * Replaces the `Canvas_Sub1` + `AwtDisplayTarget` creation block in `Applet_Sub1.method87`,
      * plus the cleanup of the previous canvas at the top of the same method.
@@ -61,13 +61,12 @@ interface WindowShell {
      * @param y         canvas y offset within the container (was `Class335.anInt4167`).
      * @param width     canvas width in pixels (was `Class321.anInt4017`).
      * @param height    canvas height in pixels (was `Class348_Sub42_Sub8_Sub2.anInt10432`).
-     * @param focusListener  platform-specific focus notification sink; on JVM this is the
-     *                       `Applet_Sub1` instance itself (it implements `FocusListener`).
-     *                       Typed as [Any] so common code can pass `this` without an AWT import;
-     *                       the JVM actual casts it to `FocusListener`.
+     * @param callbacks  common callback sink for focus, window, and repaint events.
+     *                   [AwtWindowShell] wires real AWT listeners to the canvas and frame and
+     *                   forwards the relevant events to this interface — no AWT types in common code.
      * @return the new [DisplayTarget] wrapping the created canvas.
      */
-    fun provideDisplayTarget(x: Int, y: Int, width: Int, height: Int, focusListener: Any): DisplayTarget
+    fun provideDisplayTarget(x: Int, y: Int, width: Int, height: Int, callbacks: AppletWindowCallbacks): DisplayTarget
 
     /**
      * Move / resize the existing canvas to [x],[y] at [width]×[height] and ensure it is
@@ -80,10 +79,10 @@ interface WindowShell {
      * Mirrors the cleanup at the top of `Applet_Sub1.method87` and the canvas-removal in
      * `method90`.
      *
-     * @param focusListener  the same sink passed to [provideDisplayTarget]; removed from the
-     *                       canvas's focus-listener list before detaching.
+     * @param callbacks  the same sink passed to [provideDisplayTarget]; listeners are removed
+     *                   from the canvas before detaching.
      */
-    fun releaseDisplayTarget(focusListener: Any)
+    fun releaseDisplayTarget(callbacks: AppletWindowCallbacks)
 
     /**
      * Hide and dispose the platform window. Called from `Applet_Sub1.method90` (shutdown).

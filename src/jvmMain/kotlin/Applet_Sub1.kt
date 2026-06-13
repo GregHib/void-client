@@ -1,13 +1,9 @@
 import jagex3.jagmisc.jagmisc.quit
 import java.awt.Graphics
 import java.awt.Panel
-import java.awt.event.FocusEvent
-import java.awt.event.FocusListener
-import java.awt.event.WindowEvent
-import java.awt.event.WindowListener
 import java.util.*
 
-abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, WindowListener {
+abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, AppletWindowCallbacks {
     private var aBoolean17 = false
     private var aBoolean27 = false
     abstract fun method80(i: Int)
@@ -49,17 +45,13 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         }
     }
 
-    override fun windowActivated(windowevent: WindowEvent?) {
-        anInt16++
-    }
-
     fun method83(bool: Boolean): Boolean {
         if (bool != true) getDocumentBase()
         anInt5++
         return Class348_Sub40_Sub19.method3098(-30282, "jagmisc")
     }
 
-    override fun focusLost(focusevent: FocusEvent?) {
+    override fun onFocusLost() {
         anInt9++
         Class348_Sub40_Sub16.aBoolean9229 = false
     }
@@ -80,12 +72,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         if (i != -1) aBoolean27 = true
     }
 
-    override fun update(graphics: Graphics) {
-        anInt34++
-        paint(graphics)
-    }
-
-    override fun windowClosing(windowevent: WindowEvent?) {
+    override fun onWindowClosing() {
         anInt15++
         destroy()
     }
@@ -97,13 +84,9 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         return getCodeBase()
     }
 
-    override fun windowDeactivated(windowevent: WindowEvent?) {
-        anInt12++
-    }
-
     @Synchronized
     open fun method87(i: Byte) {
-        if (i > -11) paint(null)
+        if (i > -11) onRepaintRequested(true)
         anInt7++
         // Delegate canvas teardown + creation to WindowShell so this class has no direct AWT dep.
         AwtWindowShell.instance!!.provideDisplayTarget(
@@ -111,7 +94,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
             y = Class335.anInt4167,
             width = Class321.anInt4017,
             height = Class348_Sub42_Sub8_Sub2.anInt10432,
-            focusListener = this,
+            callbacks = this,
         )
         Class348_Sub40_Sub16.aBoolean9229 = true
         Class175.aBoolean2329 = true
@@ -120,18 +103,27 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         Class348_Sub12.aLong6748 = Class62.method599(-106)
     }
 
-    override fun windowOpened(windowevent: WindowEvent?) {
-        anInt39++
+    /**
+     * AWT paint callback — [Canvas_Sub1] delegates paint/update to [appletRoot] (this Panel).
+     * Bridge to [onRepaintRequested] so common logic never touches [Graphics] directly.
+     */
+    override fun paint(graphics: Graphics?) {
+        val fullSurface = graphics == null || run {
+            val clip = graphics.clipBounds
+            clip == null || (clip.width >= Class272.anInt3473 && Class348_Sub22.anInt6857 <= clip.height)
+        }
+        onRepaintRequested(fullSurface)
     }
 
+    override fun update(graphics: Graphics?) = paint(graphics)
+
     @Synchronized
-    override fun paint(graphics: Graphics?) {
+    override fun onRepaintRequested(fullSurface: Boolean) {
         anInt18++
         if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
             Class49.aBoolean4726 = true
-            if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
-                val rectangle = graphics?.getClipBounds()
-                if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) Class203.aBoolean2674 = true
+            if (fullSurface && Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
+                Class203.aBoolean2674 = true
             }
         }
     }
@@ -155,18 +147,10 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         if (i > -107) method90(true, true)
     }
 
-    override fun windowDeiconified(windowevent: WindowEvent?) {
-        anInt35++
-    }
-
-    override fun focusGained(focusevent: FocusEvent?) {
+    override fun onFocusGained() {
         anInt23++
         Class348_Sub40_Sub16.aBoolean9229 = true
         Class49.aBoolean4726 = true
-    }
-
-    override fun windowClosed(windowevent: WindowEvent?) {
-        anInt33++
     }
 
     fun method89(i: Int): Boolean {
@@ -378,10 +362,6 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
             Class156.method1242(null, exception, i_23_ + -8495)
         }
         anInt31++
-    }
-
-    override fun windowIconified(windowevent: WindowEvent?) {
-        anInt14++
     }
 
     fun method97(i: Int): Boolean {
