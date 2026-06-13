@@ -20,4 +20,8 @@ interface Class98Base {
 }
 interface Class124Base
 interface Class143Base
-interface Class324Base
+interface Class324Base {
+    fun method2569(string: String?, i: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int)
+    fun method2576(string: String?, i: Int, i_69_: Int, i_70_: Int, i_71_: Int, i_72_: Int)
+    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_aa: aa?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int
+}

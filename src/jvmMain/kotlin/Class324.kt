@@ -156,7 +156,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) :
 
     abstract fun fa(c: Char, i: Int, i_39_: Int, i_40_: Int, bool: Boolean)
 
-    fun method2569(string: String?, i: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int) {
+    override fun method2569(string: String?, i: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int) {
         anInt4052++
         if (i_43_ >= -119) method2571(-128, -30, null, null, -107, -80, null, -6, -122, null)
         if (string != null) {
@@ -243,7 +243,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) :
         }
     }
 
-    fun method2576(string: String?, i: Int, i_69_: Int, i_70_: Int, i_71_: Int, i_72_: Int) {
+    override fun method2576(string: String?, i: Int, i_69_: Int, i_70_: Int, i_71_: Int, i_72_: Int) {
         if (i_72_ <= -108) {
             anInt4045++
             if (string != null) {
@@ -406,7 +406,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) :
         }
     }
 
-    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_aa: aa?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
+    override fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_aa: aa?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
         try {
             if (bool != false) method2570(-23, 41)
             anInt4057++

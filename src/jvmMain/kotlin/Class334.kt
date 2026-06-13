@@ -56,7 +56,7 @@ class Class334 {
             return c >= '0' && c <= '9'
         }
 
-        fun method2650(class143: Class143?, i: Int, var_aa: aa?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, class324: Class324?, i_4_: Int, class46: Class46?, i_5_: Int, i_6_: Int) {
+        fun method2650(class143: Class143?, i: Int, var_aa: aa?, i_1_: Int, i_2_: Int, string: String?, i_3_: Int, class324: Class324Base?, i_4_: Int, class46: Class46?, i_5_: Int, i_6_: Int) {
             try {
                 anInt4153++
                 val i_7_: Int

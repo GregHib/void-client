@@ -172,7 +172,7 @@ abstract class Class318_Sub1 : Class318() {
                         if (class42.aString597 == null) break
                         var i_29_ = 0
                         if (class105 != null) i_29_ = class105.method969()
-                        var class324 = Class240.aClass324_4684
+                        var class324: Class324Base? = Class240.aClass324_4684
                         var class143 = Class258_Sub1.aClass143_8527
                         if (class42.anInt576 == 1) {
                             class324 = Applet_Sub1.aClass324_20

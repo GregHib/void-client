@@ -327,7 +327,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         var anInt16: Int = 0
         var anInt18: Int = 0
         var anInt19: Int = 0
-        var aClass324_20: Class324? = null
+        var aClass324_20: Class324Base? = null
         var anInt21: Int = 0
         var anInt22: Int = 0
         var anInt23: Int = 0
