@@ -12,7 +12,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     override fun getParameter(string: String?): String? {
         anInt3++
-        if (Class52.aFrame4904 != null) return null
+        if (WindowShells.instance?.isFullscreen == true) return null
         if (Class93.anApplet1530 != null && Class93.anApplet1530 !== this) return Class93.anApplet1530!!.getParameter(string)
         return null
     }
@@ -76,7 +76,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     override fun getDocumentBase(): String? {
         anInt30++
-        if (Class52.aFrame4904 != null) return null
+        if (WindowShells.instance?.isFullscreen == true) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getDocumentBase()
         return getCodeBase()
     }
@@ -201,7 +201,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     override fun getCodeBase(): String? {
         anInt29++
-        if (Class52.aFrame4904 != null) return null
+        if (WindowShells.instance?.isFullscreen == true) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getCodeBase()
         return null
     }
@@ -278,7 +278,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
             i++
         }
         method88(-119)
-        Class369_Sub3_Sub1Statics.method3578((-42).toByte(), Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992))
+        Class369_Sub3_Sub1Statics.method3578((-42).toByte(), WindowShells.instance?.currentDisplayTarget, (Class348_Sub23_Sub1.aClass297_8992))
         return true
     }
 
