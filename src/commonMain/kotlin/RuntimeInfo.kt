@@ -21,6 +21,12 @@ interface RuntimeInfo {
 
     /** Launch a shell command (e.g. open a URL via cmd /c start). Fire-and-forget. */
     fun exec(command: String)
+
+    /**
+     * Call Container.setFocusCycleRoot(true) on [target] via reflection if the platform
+     * supports it (JVM only). No-op on other platforms.
+     */
+    fun setFocusCycleRoot(target: Any?) {}
 }
 
 /** Singleton accessor — set once at startup by the JVM entry point. */

@@ -1,9 +1,7 @@
 import jagex3.jagmisc.jagmisc.quit
-import java.awt.Graphics
-import java.awt.Panel
 import java.util.*
 
-abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, AppletWindowCallbacks {
+abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
     private var aBoolean17 = false
     private var aBoolean27 = false
     abstract fun method80(i: Int)
@@ -102,20 +100,6 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, AppletWindowCallback
         Class203.aBoolean2674 = false
         Class348_Sub12.aLong6748 = Class62.method599(-106)
     }
-
-    /**
-     * AWT paint callback — [Canvas_Sub1] delegates paint/update to [appletRoot] (this Panel).
-     * Bridge to [onRepaintRequested] so common logic never touches [Graphics] directly.
-     */
-    override fun paint(graphics: Graphics?) {
-        val fullSurface = graphics == null || run {
-            val clip = graphics.clipBounds
-            clip == null || (clip.width >= Class272.anInt3473 && Class348_Sub22.anInt6857 <= clip.height)
-        }
-        onRepaintRequested(fullSurface)
-    }
-
-    override fun update(graphics: Graphics?) = paint(graphics)
 
     @Synchronized
     override fun onRepaintRequested(fullSurface: Boolean) {
@@ -235,7 +219,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, AppletWindowCallback
         }
     }
 
-    override fun run() {
+    fun run() {
         anInt28++
         do {
             try {
@@ -263,17 +247,8 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, AppletWindowCallback
                     }
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
                 }
-                // Use the known applet root panel; the legacy getPulseComponent host-panel path
-                // is no longer available (returns DisplayTarget now, not AWT Container).
-                var applet: Panel? = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                val method = Class297.aMethod3786
-                if (method != null) {
-                    try {
-                        method.invoke(applet, java.lang.Boolean.TRUE)
-                    } catch (throwable: Throwable) {
-                        /* empty */
-                    }
-                }
+                // Gate setFocusCycleRoot behind RuntimeInfo so this call site is AWT-free.
+                RuntimeInfoProvider.instance.setFocusCycleRoot(Class348_Sub40_Sub9.anApplet_Sub1_9169)
                 RuntimeInfoProvider.instance = JvmRuntimeInfo()
                 aa_Sub3Statics.method168(103.toByte())
                 Class127_Sub1.method1119(false)
@@ -327,7 +302,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, AppletWindowCallback
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
                 Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
                 Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-                val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, -10240, 1)
+                val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
                 while (class144.anInt1997 == 0) Class286_Sub5.method2161((-126).toByte(), 10L)
             } else {
@@ -356,7 +331,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, AppletWindowCallback
             AwtWindowShell.instance!!.createFrame(Class272.anInt3473, Class348_Sub22.anInt6857, this)
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
+            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) Class286_Sub5.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
             Class156.method1242(null, exception, i_23_ + -8495)

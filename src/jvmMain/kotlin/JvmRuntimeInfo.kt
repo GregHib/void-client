@@ -16,4 +16,13 @@ class JvmRuntimeInfo : RuntimeInfo {
     override fun exec(command: String) {
         rt.exec(command)
     }
+
+    override fun setFocusCycleRoot(target: Any?) {
+        val method = Class297.aMethod3786 ?: return
+        try {
+            method.invoke(target, java.lang.Boolean.TRUE)
+        } catch (_: Throwable) {
+            /* best-effort: older JVMs may not expose setFocusCycleRoot */
+        }
+    }
 }

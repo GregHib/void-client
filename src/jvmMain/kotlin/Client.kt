@@ -1,3 +1,4 @@
+import java.awt.Toolkit
 import Canvas_Sub1.Companion.method120
 import Canvas_Sub1.Companion.method123
 import Class10.Companion.method218
@@ -677,7 +678,7 @@ class Client : Applet_Sub1() {
         }
         Class3.aClass161_125 = Class135_Sub2.aClass161_4839
         try {
-            Class348_Sub40_Sub27.aClipboard9357 = AwtClipboard(Class79.aClient1367!!.getToolkit().getSystemClipboard())
+            Class348_Sub40_Sub27.aClipboard9357 = AwtClipboard(Toolkit.getDefaultToolkit().getSystemClipboard())
         } catch (exception: Exception) {
             /* empty */
         }
