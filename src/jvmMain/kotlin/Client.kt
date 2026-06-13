@@ -1257,6 +1257,20 @@ class Client : Applet_Sub1() {
         }
     }
 
+    override fun shutdownConnection() {
+        if (Class348_Sub23_Sub1.aClass297_8992 != null) {
+            try {
+                Class348_Sub23_Sub1.aClass297_8992!!.method2234(103.toByte())
+            } catch (exception: Exception) {
+                /* empty */
+            }
+        }
+    }
+
+    override fun pumpAwtEventQueue() {
+        Class369_Sub3_Sub1Statics.method3578((-42).toByte(), WindowShells.instance?.currentDisplayTarget, Class348_Sub23_Sub1.aClass297_8992)
+    }
+
     override fun method95(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, string: String?, i_19_: Int) {
         anInt25++
         try {

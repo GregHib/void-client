@@ -183,19 +183,19 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         } catch (exception: Exception) {
             /* empty */
         }
-        if (Class348_Sub23_Sub1.aClass297_8992 != null) {
-            try {
-                Class348_Sub23_Sub1.aClass297_8992!!.method2234(103.toByte())
-            } catch (exception: Exception) {
-                /* empty */
-            }
-        }
+        shutdownConnection()
         method91(108.toByte())
         WindowShells.instance!!.shutdown()
         println("Shutdown complete - clean:" + bool)
     }
 
     abstract fun method91(i: Byte)
+
+    /** Stop the active [Class297] connection on shutdown; overridden in jvmMain [Client]. */
+    protected abstract fun shutdownConnection()
+
+    /** Pump the AWT event queue each frame; overridden in jvmMain [Client]. */
+    protected abstract fun pumpAwtEventQueue()
 
     override fun getCodeBase(): String? {
         anInt29++
@@ -277,7 +277,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
             i++
         }
         method88(-119)
-        Class369_Sub3_Sub1Statics.method3578((-42).toByte(), WindowShells.instance?.currentDisplayTarget, (Class348_Sub23_Sub1.aClass297_8992))
+        pumpAwtEventQueue()
         return true
     }
 
