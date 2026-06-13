@@ -33,6 +33,20 @@ interface RuntimeInfo {
      * No-op on platforms without a native exit hook.
      */
     fun quit() {}
+
+    /**
+     * JVM vendor string (e.g. "Sun Microsystems", "IBM", "Apple").
+     * Used by Applet_Sub1 to gate wrong-JVM warnings.
+     * Default is empty string (no warning shown on non-JVM targets).
+     */
+    val javaVendor: String get() = ""
+
+    /**
+     * JVM version string (e.g. "1.4.2", "11.0.1").
+     * Used by Applet_Sub1 to detect old/unsupported JVM versions.
+     * Default is empty string (no version check on non-JVM targets).
+     */
+    val javaVersion: String get() = ""
 }
 
 /** Singleton accessor — set once at startup by the JVM entry point. */

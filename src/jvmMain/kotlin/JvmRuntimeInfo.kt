@@ -4,6 +4,9 @@
 class JvmRuntimeInfo : RuntimeInfo {
     private val rt = Runtime.getRuntime()
 
+    override val javaVendor: String = systemGetProperty("java.vendor") ?: "Unknown"
+    override val javaVersion: String = systemGetProperty("java.version") ?: "1.1"
+
     override fun usedMemoryKb(): Int =
         ((rt.totalMemory() - rt.freeMemory()) / 1024L).toInt()
 

@@ -220,24 +220,26 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         anInt28++
         do {
             try {
-                if (Class297.aString3782 != null) {
-                    val string = Class297.aString3782!!.lowercase()
+                val runtimeVendor = RuntimeInfoProvider.instance.javaVendor
+                val runtimeVersion = RuntimeInfoProvider.instance.javaVersion
+                if (runtimeVendor.isNotEmpty()) {
+                    val string = runtimeVendor.lowercase()
                     if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
-                        val string_5_ = Class297.aString3796!!
+                        val string_5_ = runtimeVersion
                         if (string_5_ == "1.1" || string_5_.startsWith("1.1.") || string_5_ == "1.2" || string_5_.startsWith("1.2.")) {
                             method82(-119, "wrongjava")
                             break
                         }
-                    } else if (string.indexOf("ibm") != -1 && (Class297.aString3796 == null || Class297.aString3796 == "1.4.2")) {
+                    } else if (string.indexOf("ibm") != -1 && (runtimeVersion.isEmpty() || runtimeVersion == "1.4.2")) {
                         method82(81, "wrongjava")
                         break
                     }
                 }
-                if (Class297.aString3796 != null && Class297.aString3796!!.startsWith("1.")) {
+                if (runtimeVersion.isNotEmpty() && runtimeVersion.startsWith("1.")) {
                     var i = 2
                     var i_6_ = 0
-                    while (Class297.aString3796!!.length > i) {
-                        val i_7_ = Class297.aString3796!!.get(i).code
+                    while (runtimeVersion.length > i) {
+                        val i_7_ = runtimeVersion[i].code
                         if (i_7_ < 48 || i_7_ > 57) break
                         i++
                         i_6_ = 10 * i_6_ - (-i_7_ + 48)
