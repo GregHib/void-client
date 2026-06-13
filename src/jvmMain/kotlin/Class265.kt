@@ -8,7 +8,7 @@ class Class265 internal constructor(class45: Class45?, class120: Class120?) : In
     private var aClass105_4688: Class105? = null
     private val aClass45_4694: Class45?
     override fun method7(i: Int) {
-        aClass105_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687!!.anInt4912), 116.toByte(), aClass45_4694!!)
+        aClass105_4688 = Class369_Sub3_Sub1Statics.method3577((aClass120_4687!!.anInt4912), 116.toByte(), aClass45_4694!!)
         if (i != 10286) aBooleanArrayArray4693 = null
         anInt4695++
     }

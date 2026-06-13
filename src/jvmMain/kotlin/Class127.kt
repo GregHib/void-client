@@ -26,7 +26,7 @@ open class Class127(class45: Class45?, class288: Class288?) : Interface1 {
 
     override fun method7(i: Int) {
         if (i != 10286) anInt4656 = -123
-        this.aClass105_4655 = Class369_Sub3_Sub1.method3577((this.aClass288_4659!!.anInt4958), (-60).toByte(), aClass45_4661!!)
+        this.aClass105_4655 = Class369_Sub3_Sub1Statics.method3577((this.aClass288_4659!!.anInt4958), (-60).toByte(), aClass45_4661!!)
         anInt4660++
     }
 

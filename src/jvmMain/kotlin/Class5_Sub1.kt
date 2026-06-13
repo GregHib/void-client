@@ -74,12 +74,12 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
         super.method7(i)
         anInt8337++
         val class369_sub3 = this.aClass369_4635 as Class369_Sub3?
-        this.aClass105_8350 = Class369_Sub3_Sub1.method3577((class369_sub3!!.anInt8599), (-19).toByte(), this.aClass45_4632!!)
-        aClass105_8347 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8595), 106.toByte(), this.aClass45_4632!!)
-        aClass105_8342 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8603), (-19).toByte(), this.aClass45_4632!!)
-        aClass105_8339 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8602), (-121).toByte(), this.aClass45_4632!!)
-        aClass105_8343 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8600), 124.toByte(), this.aClass45_4632!!)
-        aClass105_8338 = Class369_Sub3_Sub1.method3577((class369_sub3.anInt8597), 115.toByte(), this.aClass45_4632!!)
+        this.aClass105_8350 = Class369_Sub3_Sub1Statics.method3577((class369_sub3!!.anInt8599), (-19).toByte(), this.aClass45_4632!!)
+        aClass105_8347 = Class369_Sub3_Sub1Statics.method3577((class369_sub3.anInt8595), 106.toByte(), this.aClass45_4632!!)
+        aClass105_8342 = Class369_Sub3_Sub1Statics.method3577((class369_sub3.anInt8603), (-19).toByte(), this.aClass45_4632!!)
+        aClass105_8339 = Class369_Sub3_Sub1Statics.method3577((class369_sub3.anInt8602), (-121).toByte(), this.aClass45_4632!!)
+        aClass105_8343 = Class369_Sub3_Sub1Statics.method3577((class369_sub3.anInt8600), 124.toByte(), this.aClass45_4632!!)
+        aClass105_8338 = Class369_Sub3_Sub1Statics.method3577((class369_sub3.anInt8597), 115.toByte(), this.aClass45_4632!!)
     }
 
     companion object {

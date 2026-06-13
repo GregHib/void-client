@@ -161,7 +161,7 @@ class Class31 {
         fun method326(i: Byte) {
             anInt442++
             if (!Class50_Sub1.aBoolean5224) {
-                Class369_Sub3_Sub1.aBoolean10174 = true
+                Class369_Sub3_Sub1Statics.aBoolean10174 = true
                 Class348_Sub27.aFloat6898 += (12.0f - Class348_Sub27.aFloat6898) / 2.0f
                 Class50_Sub1.aBoolean5224 = true
                 if (i.toInt() != 68) aClass113_430 = null

@@ -64,7 +64,7 @@ object Class16 {
         if (!Class160.aBoolean2130) {
             Class160.aBoolean2130 = true
             Class205.aFloat2687 += (-Class205.aFloat2687 + -24.0f) / 2.0f
-            Class369_Sub3_Sub1.aBoolean10174 = true
+            Class369_Sub3_Sub1Statics.aBoolean10174 = true
         }
     }
 }

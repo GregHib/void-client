@@ -24,7 +24,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
         anInt8371++
         if (i == 10286) {
             super.method7(i)
-            aClass105_8366 = Class369_Sub3_Sub1.method3577((this.aClass369_4635 as Class369_Sub1).anInt8582, (-96).toByte(), this.aClass45_4632!!)
+            aClass105_8366 = Class369_Sub3_Sub1Statics.method3577((this.aClass369_4635 as Class369_Sub1).anInt8582, (-96).toByte(), this.aClass45_4632!!)
         }
     }
 

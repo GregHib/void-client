@@ -398,7 +398,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             if (!Class160.aBoolean2130 && i <= -37) {
                 Class160.aBoolean2130 = true
                 Class205.aFloat2687 += (-Class205.aFloat2687 + 24.0f) / 2.0f
-                Class369_Sub3_Sub1.aBoolean10174 = true
+                Class369_Sub3_Sub1Statics.aBoolean10174 = true
             }
         }
     }

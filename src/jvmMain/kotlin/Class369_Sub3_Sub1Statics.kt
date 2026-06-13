@@ -3,15 +3,84 @@ import java.awt.event.ActionEvent
 /**
  * JVM-only statics split out of [Class369_Sub3_Sub1].
  *
- * Holds [method3578], the sole AWT-coupled member: it pumps the platform
- * [java.awt.EventQueue] held by [Class297] and posts an [ActionEvent].
- * Kept in jvmMain because the EventQueue lives on Class297 (the platform
- * integration hub, which stays jvm). The remainder of Class369_Sub3_Sub1 is
- * now import-clean and move-ready once its base chain (Class369/Class369_Sub3)
- * moves to commonMain.
+ * Holds [method3578] (AWT EventQueue pump/post) and the companion statics
+ * ([method3575]/[method3576]/[method3577], counters, [aBoolean10174]).
+ * Kept in jvmMain because EventQueue + Class297 + Class45/Class105 chains are jvm.
  */
 object Class369_Sub3_Sub1Statics {
+    var anInt10173: Int = 0
+    var aBoolean10174: Boolean = true
+    var anInt10175: Int = 0
+    var anInt10176: Int = 0
     var anInt10178: Int = 0
+
+    @JvmStatic
+    fun method3575(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {
+        var i_0_ = i_0_
+        var i_2_ = i_2_
+        var i_3_ = i_3_
+        var i_4_ = i_4_
+        if (i_3_ <= Class38.anInt513 && i_2_ >= Class132.anInt1910) {
+            val bool: Boolean
+            if (Class369.Companion.anInt4960 <= i_4_) {
+                if (i_4_ <= Class113.anInt1745) bool = true
+                else {
+                    bool = false
+                    i_4_ = Class113.anInt1745
+                }
+            } else {
+                i_4_ = Class369.Companion.anInt4960
+                bool = false
+            }
+            val bool_5_: Boolean
+            if (Class369.Companion.anInt4960 > i_0_) {
+                i_0_ = Class369.Companion.anInt4960
+                bool_5_ = false
+            } else if (Class113.anInt1745 < i_0_) {
+                i_0_ = Class113.anInt1745
+                bool_5_ = false
+            } else bool_5_ = true
+            if (i_3_ < Class132.anInt1910) i_3_ = Class132.anInt1910
+            else Class135_Sub2.method1156(-27, i_0_, Class17.anIntArrayArray255!![i_3_++]!!, i_4_, i_1_)
+            if (Class38.anInt513 >= i_2_) Class135_Sub2.method1156(-27, i_0_, Class17.anIntArrayArray255!![i_2_--]!!, i_4_, i_1_)
+            else i_2_ = Class38.anInt513
+            if (!bool || !bool_5_) {
+                if (bool) {
+                    for (i_7_ in i_3_..i_2_) Class17.anIntArrayArray255!![i_7_]!![i_4_] = i_1_
+                } else if (bool_5_) {
+                    for (i_6_ in i_3_..i_2_) Class17.anIntArrayArray255!![i_6_]!![i_0_] = i_1_
+                }
+            } else {
+                var i_8_ = i_3_
+                while (i_2_ >= i_8_) {
+                    val `is` = Class17.anIntArrayArray255!![i_8_]!!
+                    `is`[i_0_] = i_1_
+                    `is`[i_4_] = `is`[i_0_]
+                    i_8_++
+                }
+            }
+        }
+        if (i <= 57) method3578((-97).toByte(), null, null)
+        anInt10173++
+    }
+
+    @JvmStatic
+    fun method3576(bool: Boolean, bool_9_: Boolean): Boolean {
+        return bool or bool_9_
+    }
+
+    @JvmStatic
+    fun method3577(i: Int, i_10_: Byte, class45: Class45): Class105? {
+        anInt10176++
+        var class105 = Class345.aClass60_4273!!.method583(i.toLong(), -68) as Class105?
+        val i_11_ = -86 / ((55 - i_10_) / 51)
+        if (class105 == null) {
+            if (Class286_Sub7.aBoolean6289) class105 = Class348_Sub8.aHa6654!!.method3691(Class207Statics.method1512(class45, i), true)
+            else class105 = Class258_Sub3.method1969(class45.method415(73.toByte(), i)!!, -5901)
+            Class345.aClass60_4273!!.method582(class105, i.toLong(), (-108).toByte())
+        }
+        return class105
+    }
 
     @JvmStatic
     fun method3578(i: Byte, `object`: Any?, class297: Class297?) {

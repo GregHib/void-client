@@ -71,7 +71,7 @@ class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class
                 anInt4371++
                 if (!Class50_Sub1.aBoolean5224) {
                     Class50_Sub1.aBoolean5224 = true
-                    Class369_Sub3_Sub1.aBoolean10174 = true
+                    Class369_Sub3_Sub1Statics.aBoolean10174 = true
                     Class348_Sub27.aFloat6898 += (-12.0f - Class348_Sub27.aFloat6898) / 2.0f
                 }
             }

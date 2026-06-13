@@ -1320,7 +1320,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             ha_Sub3.anInt8037 = 0
             Class348_Sub49.anInt7145 = 0
             Class286_Sub8.anInt6292 = 0
-            Class369_Sub3_Sub1.anInt10173 = 0
+            Class369_Sub3_Sub1Statics.anInt10173 = 0
             Class348_Sub40_Sub3.anInt9110 = 0
             Class101_Sub3.anInt5779 = 0
             Class51.anInt957 = 0
@@ -3930,7 +3930,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class243.anInt3161 = 0
             Class346_Sub1.anInt6540 = 0
             Class319.anInt3978 = 0
-            Class369_Sub3_Sub1.anInt10175 = 0
+            Class369_Sub3_Sub1Statics.anInt10175 = 0
             Class34.anInt468 = 0
             Class348_Sub20.anInt6834 = 0
             ha_Sub3.anInt8048 = 0
@@ -3994,7 +3994,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class56.anInt1020 = 0
             Class137.anInt1936 = 0
             Class348_Sub40_Sub5.anInt9127 = 0
-            Class369_Sub3_Sub1.anInt10176 = 0
+            Class369_Sub3_Sub1Statics.anInt10176 = 0
             s_Sub3.anInt8316 = 0
             Class294.anInt5044 = 0
             Class196.anInt2599 = 0
@@ -4175,7 +4175,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             }
 
             method773(true)
-            Class369_Sub3_Sub1.aBoolean10174 = true
+            Class369_Sub3_Sub1Statics.aBoolean10174 = true
             Class336.aShortArray4172 = ShortArray(256)
             Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
             Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502

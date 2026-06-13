@@ -162,9 +162,9 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         Class348_Sub42_Sub14.method3243(-49, class348_sub47)
                     }
                     if (Class147.anInt2035 > 0) Class147.anInt2035--
-                    if (Class369_Sub3_Sub1.aBoolean10174 && Class147.anInt2035 <= 0) {
+                    if (Class369_Sub3_Sub1Statics.aBoolean10174 && Class147.anInt2035 <= 0) {
                         Class239_Sub18.anInt6033++
-                        Class369_Sub3_Sub1.aBoolean10174 = false
+                        Class369_Sub3_Sub1Statics.aBoolean10174 = false
                         Class147.anInt2035 = 20
                         val class348_sub47 = method2148(Class281.aClass351_3648, (Class348_Sub23_Sub2.aClass77_9029), i + -11549)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, Class314.aFloat3938.toInt() shr 3)

@@ -1,4 +1,4 @@
-import Class369_Sub3_Sub1.Companion.method3575
+import Class369_Sub3_Sub1Statics.method3575
 import Class58.Companion.method535
 import Class89.Companion.method849
 import ha_Sub3.Companion.method3936
