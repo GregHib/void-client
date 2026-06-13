@@ -84,7 +84,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         if (i > -11) onRepaintRequested(true)
         anInt7++
         // Delegate canvas teardown + creation to WindowShell so this class has no direct AWT dep.
-        AwtWindowShell.instance!!.provideDisplayTarget(
+        WindowShells.instance!!.provideDisplayTarget(
             x = Class348_Sub48.anInt7129,
             y = Class335.anInt4167,
             width = Class321.anInt4017,
@@ -122,7 +122,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         if (Class159.anInt2127++ > 50) {
             Class159.anInt2127 -= 50
             Class49.aBoolean4726 = true
-            AwtWindowShell.instance!!.repositionCanvas(Class348_Sub48.anInt7129, Class335.anInt4167, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+            WindowShells.instance!!.repositionCanvas(Class348_Sub48.anInt7129, Class335.anInt4167, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
         }
         method93(-11018)
         if (i > -107) method90(true, true)
@@ -179,7 +179,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         Class257.method1945((-128).toByte(), true)
         Class228Statics.method1629(!bool_4_)
         try {
-            AwtWindowShell.instance!!.releaseDisplayTarget(this)
+            WindowShells.instance!!.releaseDisplayTarget(this)
         } catch (exception: Exception) {
             /* empty */
         }
@@ -191,7 +191,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
             }
         }
         method91(108.toByte())
-        AwtWindowShell.instance!!.shutdown()
+        WindowShells.instance!!.shutdown()
         println("Shutdown complete - clean:" + bool)
     }
 

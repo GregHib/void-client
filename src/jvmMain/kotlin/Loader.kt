@@ -89,6 +89,7 @@ class Loader : Panel(), GameApplet {
             if (AwtWindowShell.instance == null) {
                 AwtWindowShell.instance = AwtWindowShell(this)
             }
+            WindowShells.instance = AwtWindowShell.instance
             val var_client = Client()
             var_client.init()
             var_client.start()
