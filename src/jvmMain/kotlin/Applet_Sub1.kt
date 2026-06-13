@@ -211,7 +211,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         if (Class348_Sub40_Sub9.anApplet_Sub1_9169 === this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.method599(-108)
             Class286_Sub5Statics.method2161(77.toByte(), 5000L)
-            Class231.aClass297_2993 = null
+            shutdownConnection()
             method90(false, false)
         }
     }

@@ -1258,6 +1258,7 @@ class Client : Applet_Sub1() {
     }
 
     override fun shutdownConnection() {
+        Class231.aClass297_2993 = null
         if (Class348_Sub23_Sub1.aClass297_8992 != null) {
             try {
                 Class348_Sub23_Sub1.aClass297_8992!!.method2234(103.toByte())
