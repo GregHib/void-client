@@ -247,9 +247,9 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
                     }
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
                 }
+                RuntimeInfoProvider.instance = JvmRuntimeInfo()
                 // Gate setFocusCycleRoot behind RuntimeInfo so this call site is AWT-free.
                 RuntimeInfoProvider.instance.setFocusCycleRoot(Class348_Sub40_Sub9.anApplet_Sub1_9169)
-                RuntimeInfoProvider.instance = JvmRuntimeInfo()
                 aa_Sub3Statics.method168(103.toByte())
                 Class127_Sub1.method1119(false)
                 method87((-97).toByte())
