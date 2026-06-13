@@ -725,7 +725,7 @@ class Client : Applet_Sub1() {
         method1004(16.toByte())
         method3478(false)
         method98(i + 32609)
-        Class241Statics.method1860((-89).toByte())
+        Class241StaticsJvm.method1860((-89).toByte())
         method1641(85.toByte())
         method906(-31777)
         method3680(-24016)

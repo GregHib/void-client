@@ -3,7 +3,7 @@
  * method1861 uses Class348_Sub17.method2929 (jvmMain).
  * aClass351_3150/method1860 use Class351 (jvmMain).
  */
-object Class241Statics {
+object Class241StaticsJvm {
     var aClass351_3150: Class351? = Class351(71, 2)
 
     fun method1860(i: Byte) {
