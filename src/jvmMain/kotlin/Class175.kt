@@ -184,7 +184,7 @@ class Class175 internal constructor(private var anInt2311: Int) {
         var aBooleanArray2326: BooleanArray? = BooleanArray(100)
         var aClass340_2327: Class340? = null
         var anInt2328: Int = 0
-        var aBoolean2329: Boolean = false
+        var aBoolean2329: Boolean get() = Class175Statics.aBoolean2329; set(v) { Class175Statics.aBoolean2329 = v }
         var anIntArray2330: IntArray? = null
 
         @JvmStatic

@@ -373,8 +373,7 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
         var anInt9227: Int = 0
         var anInt9228: Int = 0
 
-        @Volatile
-        var aBoolean9229: Boolean = true
+        var aBoolean9229: Boolean get() = Class348Sub40Sub16Statics.aBoolean9229; set(v) { Class348Sub40Sub16Statics.aBoolean9229 = v }
         var anIntArray9230: IntArray? = intArrayOf(0, -1, 0, 1)
         var anInt9231: Int = 0
 

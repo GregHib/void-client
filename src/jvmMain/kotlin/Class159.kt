@@ -24,7 +24,7 @@ class Class159 {
     companion object {
         var anInt2124: Int = 0
         var anInt2126: Int = 0
-        var anInt2127: Int = 500
+        var anInt2127: Int get() = Class159Statics.anInt2127; set(v) { Class159Statics.anInt2127 = v }
         var anInt2128: Int = 0
 
         fun method1252(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Byte, i_9_: Int) {

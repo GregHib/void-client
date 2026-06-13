@@ -44,7 +44,7 @@ class Class239_Sub5 : Class239 {
         var anInt5888: Int = 0
         var anInt5889: Int = 0
         var anInt5890: Int = 0
-        var anInt5891: Int = 0
+        var anInt5891: Int get() = Class239Sub5Statics.anInt5891; set(v) { Class239Sub5Statics.anInt5891 = v }
         var anInt5892: Int = 0
         var anInt5893: Int = 0
 

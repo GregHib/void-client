@@ -12,7 +12,7 @@ class Class348_Sub48 : Class348() {
     var anIntArray7136: IntArray? = null
 
     companion object {
-        var anInt7129: Int = 0
+        var anInt7129: Int get() = Class348Sub48Statics.anInt7129; set(v) { Class348Sub48Statics.anInt7129 = v }
         var anInt7133: Int = 0
         var anInt7134: Int = 0
         fun method3328(class324: Class324?) {

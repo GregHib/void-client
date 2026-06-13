@@ -37,7 +37,7 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
         var anIntArray4780: IntArray?
         var anInt4781: Int = 0
         var aClass219_4782: Class219? = null
-        var aLong4783: Long = 20000000L
+        var aLong4783: Long get() = Class73Statics.aLong4783; set(v) { Class73Statics.aLong4783 = v }
         var anInt4784: Int = 0
         var anInt4786: Int = 0
 

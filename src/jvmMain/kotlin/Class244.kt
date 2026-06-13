@@ -170,7 +170,7 @@ class Class244 internal constructor(class45: Class45?, class45_12_: Class45?, cl
         var anInt4609: Int = -1
         var anInt4610: Int
         var anInt4612: Int = 0
-        var anInt4613: Int = 0
+        var anInt4613: Int get() = Class244Statics.anInt4613; set(v) { Class244Statics.anInt4613 = v }
         var anInt4614: Int = 0
         var aLong4615: Long
         var anInt4616: Int = 0

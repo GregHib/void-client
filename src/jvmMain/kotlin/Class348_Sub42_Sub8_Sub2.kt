@@ -32,7 +32,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
     companion object {
         var anInt10430: Int = 0
         var aLongArrayArrayArray10431: Array<Array<LongArray?>?>? = null
-        var anInt10432: Int = 0
+        var anInt10432: Int get() = Class348Sub42Sub8Sub2Statics.anInt10432; set(v) { Class348Sub42Sub8Sub2Statics.anInt10432 = v }
         var anInt10433: Int = 0
         var aClass230_10434: Class230? = null
         var anInt10435: Int = 0

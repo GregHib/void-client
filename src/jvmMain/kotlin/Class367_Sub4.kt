@@ -155,7 +155,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
         var anInt7316: Int = 0
         var aClass351_7318: Class351? = Class351(21, 2)
         var anInt7319: Int = 104
-        var aBoolean7320: Boolean = false
+        var aBoolean7320: Boolean get() = Class367Sub4Statics.aBoolean7320; set(v) { Class367Sub4Statics.aBoolean7320 = v }
         var anInt7321: Int = 0
         var anInt7322: Int = 0
         var aClass114_7323: Class114? = Class114(105, -2)

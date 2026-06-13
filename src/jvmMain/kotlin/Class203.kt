@@ -1,16 +1,12 @@
 import Class367_Sub2.Companion.method3536
 import Class79.Companion.method802
-import kotlin.concurrent.Volatile
-
 /* Class203 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
 object Class203 {
     var anInt2672: Int = 0
     var anInt2673: Int = 0
-
-    @Volatile
-    var aBoolean2674: Boolean = false
+    var aBoolean2674: Boolean get() = Class203Statics.aBoolean2674; set(v) { Class203Statics.aBoolean2674 = v }
     var anInt2675: Int = 0
 
     fun method1477(i: Int, i_0_: Int) {

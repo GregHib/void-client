@@ -61,8 +61,7 @@ class Class49 internal constructor(var_ha_Sub1: ha_Sub1?, class105: Class105?, c
         var anInt4721: Int = 0
         var anInt4723: Int = 0
 
-        @Volatile
-        var aBoolean4726: Boolean = true
+        var aBoolean4726: Boolean get() = Class49Statics.aBoolean4726; set(v) { Class49Statics.aBoolean4726 = v }
         var anInt4727: Int = 0
         var aBoolean4728: Boolean = false
         var aClass46_4730: Class46? = null

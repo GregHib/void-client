@@ -77,7 +77,7 @@ class Class26 internal constructor(class45: Class45?, class45_9_: Class45?) {
         var anInt380: Int = 0
         var aClass364_382: Class364? = Class364("WTQA", 2)
         var anInt383: Int
-        var aBoolean384: Boolean = false
+        var aBoolean384: Boolean get() = Class26Statics.aBoolean384; set(v) { Class26Statics.aBoolean384 = v }
         var anInt385: Int = 0
         var anInt386: Int = 0
 

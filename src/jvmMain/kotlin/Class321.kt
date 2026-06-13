@@ -146,7 +146,7 @@ class Class321 {
         var anInt4005: Int = -1
         var anInt4013: Int = 0
         var aClass114_4015: Class114? = Class114(116, 6)
-        var anInt4017: Int = 0
+        var anInt4017: Int get() = Class321Statics.anInt4017; set(v) { Class321Statics.anInt4017 = v }
 
         @JvmStatic
         fun method2549(i: Byte) {

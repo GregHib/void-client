@@ -3,7 +3,7 @@
 */
 object Class335 {
     var anInt4166: Int = 0
-    var anInt4167: Int = 0
+    var anInt4167: Int get() = Class335Statics.anInt4167; set(v) { Class335Statics.anInt4167 = v }
     var anInt4168: Int = 0
     var anInt4169: Int = 0
 

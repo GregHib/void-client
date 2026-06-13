@@ -655,7 +655,7 @@ class Class101_Sub2 : Class101() {
         var anInt5741: Int = 0
         var aClass114_5742: Class114?
         var anInt5743: Int = 0
-        var anInt5744: Int = 0
+        var anInt5744: Int get() = Class101Sub2Statics.anInt5744; set(v) { Class101Sub2Statics.anInt5744 = v }
         var aLong5745: Long = 0
 
         fun method921(i: Byte, bool: Boolean) {

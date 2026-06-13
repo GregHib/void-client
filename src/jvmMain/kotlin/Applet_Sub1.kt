@@ -5,7 +5,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     fun stop() {
         anInt24++
-        if (this === AppletRoot.instance && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L
+        if (this === AppletRoot.instance && !Class26Statics.aBoolean384) Class113Statics.aLong1739 = Class62.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -48,20 +48,20 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     override fun onFocusLost() {
         anInt9++
-        Class348_Sub40_Sub16.aBoolean9229 = false
+        Class348Sub40Sub16Statics.aBoolean9229 = false
     }
 
     private fun method84(i: Int) {
         anInt8++
         val l = Class62.method599(i + -88)
-        val l_1_ = Class328_Sub2_Sub1.aLongArray8800!![Class244.anInt4613]
-        Class328_Sub2_Sub1.aLongArray8800!![Class244.anInt4613] = l
-        Class244.anInt4613 = 0x1f and 1 + Class244.anInt4613
+        val l_1_ = Class328Sub2Sub1Statics.aLongArray8800!![Class244Statics.anInt4613]
+        Class328Sub2Sub1Statics.aLongArray8800!![Class244Statics.anInt4613] = l
+        Class244Statics.anInt4613 = 0x1f and 1 + Class244Statics.anInt4613
         if (l_1_ != 0L && l > l_1_) {
             /* empty */
         }
         withLock(this) {
-            Class175.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229
+            Class175Statics.aBoolean2329 = Class348Sub40Sub16Statics.aBoolean9229
         }
         method99(93.toByte())
         if (i != -1) aBoolean27 = true
@@ -85,26 +85,26 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         anInt7++
         // Delegate canvas teardown + creation to WindowShell so this class has no direct AWT dep.
         WindowShells.instance!!.provideDisplayTarget(
-            x = Class348_Sub48.anInt7129,
-            y = Class335.anInt4167,
-            width = Class321.anInt4017,
-            height = Class348_Sub42_Sub8_Sub2.anInt10432,
+            x = Class348Sub48Statics.anInt7129,
+            y = Class335Statics.anInt4167,
+            width = Class321Statics.anInt4017,
+            height = Class348Sub42Sub8Sub2Statics.anInt10432,
             callbacks = this,
         )
-        Class348_Sub40_Sub16.aBoolean9229 = true
-        Class175.aBoolean2329 = true
-        Class49.aBoolean4726 = true
-        Class203.aBoolean2674 = false
-        Class348_Sub12.aLong6748 = Class62.method599(-106)
+        Class348Sub40Sub16Statics.aBoolean9229 = true
+        Class175Statics.aBoolean2329 = true
+        Class49Statics.aBoolean4726 = true
+        Class203Statics.aBoolean2674 = false
+        Class348Sub12Statics.aLong6748 = Class62.method599(-106)
     }
 
     @Synchronized
     override fun onRepaintRequested(fullSurface: Boolean) {
         anInt18++
-        if (this === AppletRoot.instance && !Class26.aBoolean384) {
-            Class49.aBoolean4726 = true
-            if (fullSurface && Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
-                Class203.aBoolean2674 = true
+        if (this === AppletRoot.instance && !Class26Statics.aBoolean384) {
+            Class49Statics.aBoolean4726 = true
+            if (fullSurface && Class367Sub4Statics.aBoolean7320 && -Class348Sub12Statics.aLong6748 + Class62.method599(-57) > 1000) {
+                Class203Statics.aBoolean2674 = true
             }
         }
     }
@@ -112,17 +112,17 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
     private fun method88(i: Int) {
         anInt2++
         val l = Class62.method599(-119)
-        val l_2_ = Class348_Sub49.aLongArray7206!![Class152.anInt2071]
-        Class348_Sub49.aLongArray7206!![Class152.anInt2071] = l
+        val l_2_ = Class348Sub49Statics.aLongArray7206!![Class152Statics.anInt2071]
+        Class348Sub49Statics.aLongArray7206!![Class152Statics.anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
             val i_3_ = (l - l_2_).toInt()
-            Class239_Sub5.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
+            Class239Sub5Statics.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
         }
-        Class152.anInt2071 = Class152.anInt2071 - -1 and 0x1f
-        if (Class159.anInt2127++ > 50) {
-            Class159.anInt2127 -= 50
-            Class49.aBoolean4726 = true
-            WindowShells.instance!!.repositionCanvas(Class348_Sub48.anInt7129, Class335.anInt4167, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+        Class152Statics.anInt2071 = Class152Statics.anInt2071 - -1 and 0x1f
+        if (Class159Statics.anInt2127++ > 50) {
+            Class159Statics.anInt2127 -= 50
+            Class49Statics.aBoolean4726 = true
+            WindowShells.instance!!.repositionCanvas(Class348Sub48Statics.anInt7129, Class335Statics.anInt4167, Class321Statics.anInt4017, Class348Sub42Sub8Sub2Statics.anInt10432)
         }
         method93(-11018)
         if (i > -107) method90(true, true)
@@ -130,8 +130,8 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     override fun onFocusGained() {
         anInt23++
-        Class348_Sub40_Sub16.aBoolean9229 = true
-        Class49.aBoolean4726 = true
+        Class348Sub40Sub16Statics.aBoolean9229 = true
+        Class49Statics.aBoolean4726 = true
     }
 
     fun method89(i: Int): Boolean {
@@ -157,8 +157,8 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
     private fun method90(bool: Boolean, bool_4_: Boolean) {
         anInt26++
         withLock(this) {
-            if (Class26.aBoolean384) return
-            Class26.aBoolean384 = true
+            if (Class26Statics.aBoolean384) return
+            Class26Statics.aBoolean384 = true
         }
         println("Shutdown start - clean:" + bool)
         if (Class93.anApplet1530 != null) Class93.anApplet1530!!.destroy()
@@ -208,8 +208,8 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     override fun destroy() {
         anInt21++
-        if (AppletRoot.instance === this && !Class26.aBoolean384) {
-            Class113.aLong1739 = Class62.method599(-108)
+        if (AppletRoot.instance === this && !Class26Statics.aBoolean384) {
+            Class113Statics.aLong1739 = Class62.method599(-108)
             Class286_Sub5Statics.method2161(77.toByte(), 5000L)
             shutdownConnection()
             method90(false, false)
@@ -244,7 +244,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
                         i++
                         i_6_ = 10 * i_6_ - (-i_7_ + 48)
                     }
-                    if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
+                    if (i_6_ >= 5) Class367Sub4Statics.aBoolean7320 = true
                 }
                 // Gate setFocusCycleRoot behind RuntimeInfo so this call site is AWT-free.
                 RuntimeInfoProvider.instance.setFocusCycleRoot(AppletRoot.instance)
@@ -269,10 +269,10 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
      * original `while` guard), true to continue.
      */
     private fun runFrame(): Boolean {
-        if (!(Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739))) return false
-        Class101_Sub2.anInt5744 = Class241Statics.method1861(0, Class73.aLong4783)
+        if (!(Class113Statics.aLong1739 == 0L || (Class62.method599(-124) < Class113Statics.aLong1739))) return false
+        Class101Sub2Statics.anInt5744 = Class241Statics.method1861(0, Class73Statics.aLong4783)
         var i = 0
-        while (Class101_Sub2.anInt5744 > i) {
+        while (Class101Sub2Statics.anInt5744 > i) {
             method84(-1)
             i++
         }
@@ -297,7 +297,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     fun start() {
         anInt36++
-        if (this === AppletRoot.instance && !Class26.aBoolean384) Class113.aLong1739 = 0L
+        if (this === AppletRoot.instance && !Class26Statics.aBoolean384) Class113Statics.aLong1739 = 0L
     }
 
     abstract fun method99(i: Byte)

@@ -8,7 +8,7 @@ class Class113 {
     }
 
     companion object {
-        var aLong1739: Long = 0L
+        var aLong1739: Long get() = Class113Statics.aLong1739; set(v) { Class113Statics.aLong1739 = v }
         var anInt1740: Int = 0
         var anInt1741: Int = 0
         var anInt1742: Int = 0

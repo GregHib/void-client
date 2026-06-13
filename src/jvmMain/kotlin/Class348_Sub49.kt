@@ -682,7 +682,7 @@ open class Class348_Sub49 : Class348 {
         var anInt7203: Int = 0
         var anInt7204: Int = 0
         var anInt7205: Int = 0
-        var aLongArray7206: LongArray? = LongArray(32)
+        var aLongArray7206: LongArray? get() = Class348Sub49Statics.aLongArray7206; set(v) { Class348Sub49Statics.aLongArray7206 = v }
         var anInt7207: Int = 0
         var anInt7208: Int = 0
         var anInt7209: Int = 0

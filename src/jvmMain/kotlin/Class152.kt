@@ -34,7 +34,7 @@ class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
 
     companion object {
         var anInt2070: Int = 0
-        var anInt2071: Int = 0
+        var anInt2071: Int get() = Class152Statics.anInt2071; set(v) { Class152Statics.anInt2071 = v }
         var anInt2073: Int = 0
         var anInt2074: Int = 0
         var aFloatArray2075: FloatArray? = FloatArray(2)
