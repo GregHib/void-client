@@ -1,7 +1,4 @@
 import jagex3.jagmisc.jagmisc.quit
-import java.awt.Color
-import java.awt.Container
-import java.awt.Frame
 import java.awt.Graphics
 import java.awt.Panel
 import java.awt.event.FocusEvent
@@ -109,43 +106,13 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         if (i > -11) paint(null)
         anInt7++
         // Delegate canvas teardown + creation to WindowShell so this class has no direct AWT dep.
-        val shell = AwtWindowShell.instance
-        if (shell != null) {
-            shell.provideDisplayTarget(
-                x = Class348_Sub48.anInt7129,
-                y = Class335.anInt4167,
-                width = Class321.anInt4017,
-                height = Class348_Sub42_Sub8_Sub2.anInt10432,
-                focusListener = this,
-            )
-        } else {
-            // Fallback: legacy path when shell is not yet wired (should not occur in practice).
-            if (Class305.aCanvas3869 != null) {
-                Class305.aCanvas3869!!.removeFocusListener(this)
-                Class305.aCanvas3869!!.getParent().setBackground(Color.black)
-                Class305.aCanvas3869!!.getParent().remove(Class305.aCanvas3869)
-            }
-            val container: Container = when {
-                Class34.aFrame476 != null -> Class34.aFrame476 as Container
-                Class52.aFrame4904 != null -> Class52.aFrame4904 as Container
-                Class93.anApplet1530 != null -> this
-                else -> Class348_Sub40_Sub9.anApplet_Sub1_9169!!
-            }
-            container.layout = null
-            Class305.aCanvas3869 = Canvas_Sub1(this)
-            Class305.aDisplayTarget3869 = AwtDisplayTarget(Class305.aCanvas3869!!)
-            container.add(Class305.aCanvas3869)
-            Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-            Class305.aCanvas3869!!.isVisible = true
-            if (container === Class52.aFrame4904) {
-                val insets = (Class52.aFrame4904 as Container).insets
-                Class305.aCanvas3869!!.setLocation(insets.left + Class348_Sub48.anInt7129, insets.top + Class335.anInt4167)
-            } else {
-                Class305.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
-            }
-            Class305.aCanvas3869!!.addFocusListener(this)
-            Class305.aCanvas3869!!.requestFocus()
-        }
+        AwtWindowShell.instance!!.provideDisplayTarget(
+            x = Class348_Sub48.anInt7129,
+            y = Class335.anInt4167,
+            width = Class321.anInt4017,
+            height = Class348_Sub42_Sub8_Sub2.anInt10432,
+            focusListener = this,
+        )
         Class348_Sub40_Sub16.aBoolean9229 = true
         Class175.aBoolean2329 = true
         Class49.aBoolean4726 = true
@@ -182,19 +149,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         if (Class159.anInt2127++ > 50) {
             Class159.anInt2127 -= 50
             Class49.aBoolean4726 = true
-            val shell = AwtWindowShell.instance
-            if (shell != null) {
-                shell.repositionCanvas(Class348_Sub48.anInt7129, Class335.anInt4167, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-            } else {
-                Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-                Class305.aCanvas3869!!.isVisible = true
-                if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
-                    val insets = Class52.aFrame4904!!.insets
-                    Class305.aCanvas3869!!.setLocation(insets.left + Class348_Sub48.anInt7129, insets.top + Class335.anInt4167)
-                } else {
-                    Class305.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
-                }
-            }
+            AwtWindowShell.instance!!.repositionCanvas(Class348_Sub48.anInt7129, Class335.anInt4167, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
         }
         method93(-11018)
         if (i > -107) method90(true, true)
@@ -259,12 +214,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
         Class257.method1945((-128).toByte(), true)
         Class228.method1629(!bool_4_)
         try {
-            AwtWindowShell.instance?.releaseDisplayTarget(this)
-                ?: run {
-                    // Fallback when shell not wired.
-                    Class305.aCanvas3869?.removeFocusListener(this)
-                    Class305.aCanvas3869?.parent?.remove(Class305.aCanvas3869!!)
-                }
+            AwtWindowShell.instance!!.releaseDisplayTarget(this)
         } catch (exception: Exception) {
             /* empty */
         }
@@ -276,14 +226,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
             }
         }
         method91(108.toByte())
-        AwtWindowShell.instance?.shutdown()
-            ?: run {
-                if (Class52.aFrame4904 != null) {
-                    Class52.aFrame4904!!.isVisible = false
-                    Class52.aFrame4904!!.dispose()
-                    Class52.aFrame4904 = null
-                }
-            }
+        AwtWindowShell.instance!!.shutdown()
         println("Shutdown complete - clean:" + bool)
     }
 
@@ -426,20 +369,7 @@ abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, Windo
             Class348_Sub48.anInt7129 = 0
             Class348_Sub1_Sub3.anInt8818 = i_21_
             Class348_Sub8.anApplet6662 = null
-            val shell = AwtWindowShell.instance
-            if (shell != null) {
-                shell.createFrame(Class272.anInt3473, Class348_Sub22.anInt6857, this)
-            } else {
-                // Fallback when shell not yet wired.
-                Class52.aFrame4904 = Frame()
-                Class52.aFrame4904!!.title = "Jagex"
-                Class52.aFrame4904!!.isResizable = true
-                Class52.aFrame4904!!.addWindowListener(this)
-                Class52.aFrame4904!!.isVisible = true
-                Class52.aFrame4904!!.toFront()
-                val insets = Class52.aFrame4904!!.insets
-                Class52.aFrame4904!!.setSize(insets.left + insets.right + Class272.anInt3473, insets.top + insets.bottom + Class348_Sub22.anInt6857)
-            }
+            AwtWindowShell.instance!!.createFrame(Class272.anInt3473, Class348_Sub22.anInt6857, this)
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
