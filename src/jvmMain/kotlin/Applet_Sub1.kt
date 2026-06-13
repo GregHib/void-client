@@ -5,7 +5,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     fun stop() {
         anInt24++
-        if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L
+        if (this === AppletRoot.instance && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L
     }
 
     override fun getParameter(string: String?): String? {
@@ -101,7 +101,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
     @Synchronized
     override fun onRepaintRequested(fullSurface: Boolean) {
         anInt18++
-        if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
+        if (this === AppletRoot.instance && !Class26.aBoolean384) {
             Class49.aBoolean4726 = true
             if (fullSurface && Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 Class203.aBoolean2674 = true
@@ -208,7 +208,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     override fun destroy() {
         anInt21++
-        if (Class348_Sub40_Sub9.anApplet_Sub1_9169 === this && !Class26.aBoolean384) {
+        if (AppletRoot.instance === this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.method599(-108)
             Class286_Sub5Statics.method2161(77.toByte(), 5000L)
             shutdownConnection()
@@ -247,7 +247,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
                 }
                 // Gate setFocusCycleRoot behind RuntimeInfo so this call site is AWT-free.
-                RuntimeInfoProvider.instance.setFocusCycleRoot(Class348_Sub40_Sub9.anApplet_Sub1_9169)
+                RuntimeInfoProvider.instance.setFocusCycleRoot(AppletRoot.instance)
                 aa_Sub3Statics.method168(103.toByte())
                 Class127_Sub1.method1119(false)
                 method87((-97).toByte())
@@ -297,7 +297,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     fun start() {
         anInt36++
-        if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L
+        if (this === AppletRoot.instance && !Class26.aBoolean384) Class113.aLong1739 = 0L
     }
 
     abstract fun method99(i: Byte)

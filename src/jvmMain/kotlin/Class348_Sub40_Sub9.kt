@@ -38,7 +38,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
     companion object {
         var anInt9166: Int = 0
         var anInt9168: Int = 0
-        var anApplet_Sub1_9169: Applet_Sub1? = null
+
         var anInt9170: Int = 0
         var aClass60_9171: Class60? = Class60(4)
         var anInt9172: Int = 0
@@ -46,7 +46,7 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
 
         @JvmStatic
         fun method3071(i: Byte) {
-            if (i.toInt() != 59) anApplet_Sub1_9169 = null
+            if (i.toInt() != 59) AppletRoot.instance = null
             aClass60_9171 = null
             aClass324_9173 = null
         }

@@ -1275,7 +1275,7 @@ class Client : Applet_Sub1() {
     override fun method95(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, string: String?, i_19_: Int) {
         anInt25++
         try {
-            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
+            if (AppletRoot.instance == null) {
                 Class348_Sub48.anInt7129 = 0
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_
                 Class348_Sub22Statics.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
@@ -1283,7 +1283,7 @@ class Client : Applet_Sub1() {
                 Class272Statics.anInt3473 = Class321.anInt4017
                 Class335.anInt4167 = 0
                 Class348_Sub1_Sub3.anInt8818 = i_15_
-                Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
+                AppletRoot.instance = this
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
                 Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
                 Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
@@ -1308,7 +1308,7 @@ class Client : Applet_Sub1() {
             Class272Statics.anInt3473 = Class321.anInt4017
             Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
             Class348_Sub22Statics.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
-            Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
+            AppletRoot.instance = this
             Class335.anInt4167 = 0
             Class348_Sub48.anInt7129 = 0
             Class348_Sub1_Sub3.anInt8818 = i_21_

@@ -14,7 +14,7 @@ import java.awt.event.WindowEvent
  *
  *  - `Class52.aFrame4904`  — the standalone JFrame that hosts the canvas when launched via [Loader].
  *  - `Class34.aFrame476`   — set when in full-screen mode; non-null means fullscreen.
- *  - `Class348_Sub40_Sub9.anApplet_Sub1_9169` — the `Applet_Sub1` root panel, used as fallback
+ *  - `AppletRoot.instance` — the `Applet_Sub1` root panel, used as fallback
  *    container when no `Frame` is present (browser-applet legacy path).
  *  - `Canvas_Sub1` creation, sizing, focus wiring in `Applet_Sub1.method87`.
  *  - Inset-aware client-area size queries in `Client.method116` and `Applet_Sub1.method87`/`method88`.
