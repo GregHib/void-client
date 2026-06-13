@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.method86
+import Applet_Sub1Statics.method86
 import kotlin.math.pow
 
 /* Class239_Sub25 - Decompiled by JODE

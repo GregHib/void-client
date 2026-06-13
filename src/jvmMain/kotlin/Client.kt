@@ -1,4 +1,5 @@
 import java.awt.Toolkit
+import Applet_Sub1Statics.method98
 import Canvas_Sub1.Companion.method120
 import Canvas_Sub1.Companion.method123
 import Class10.Companion.method218

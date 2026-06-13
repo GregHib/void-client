@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.method94
+import Applet_Sub1Statics.method94
 import jaggl.OpenGL.Companion.glTexImage2Df
 import kotlin.math.min
 import kotlin.math.pow

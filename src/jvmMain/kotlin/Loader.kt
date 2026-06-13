@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.provideLoaderApplet
+import Applet_Sub1Statics.provideLoaderApplet
 import java.awt.BorderLayout
 import java.awt.Dimension
 import java.awt.Image

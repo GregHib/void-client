@@ -1,4 +1,4 @@
-import Applet_Sub1.Companion.method94
+import Applet_Sub1Statics.method94
 import Class10.Companion.method217
 import Class11.method222
 import Class130.Companion.method1129

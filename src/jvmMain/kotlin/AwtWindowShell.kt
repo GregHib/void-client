@@ -175,7 +175,7 @@ class AwtWindowShell(
      *
      * Window close events are forwarded to [callbacks.onWindowClosing].
      */
-    fun createFrame(width: Int, height: Int, callbacks: AppletWindowCallbacks) {
+    override fun createFrame(width: Int, height: Int, callbacks: AppletWindowCallbacks) {
         val f = Frame()
         f.title = "Jagex"
         f.isResizable = true

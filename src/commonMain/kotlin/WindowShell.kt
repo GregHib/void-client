@@ -97,4 +97,16 @@ interface WindowShell {
      * lands.
      */
     val currentDisplayTarget: DisplayTarget?
+
+    /**
+     * Create a standalone platform window (Frame on JVM) sized [width]×[height] and install
+     * [callbacks] for window-close events. Called from [Applet_Sub1.method96] (standalone
+     * launcher path). No-op on platforms that don't use a separate window.
+     */
+    fun createFrame(width: Int, height: Int, callbacks: AppletWindowCallbacks) {}
+}
+
+/** Singleton accessor — set once at startup by the platform entry point (e.g. Loader). */
+object WindowShells {
+    var instance: WindowShell? = null
 }
