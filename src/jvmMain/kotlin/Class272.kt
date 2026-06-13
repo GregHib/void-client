@@ -17,7 +17,7 @@ abstract class Class272 {
     companion object {
         var anInt3471: Int = 0
         var anInt3472: Int = 0
-        var anInt3473: Int = 0
+        var anInt3473: Int get() = Class272Statics.anInt3473; set(v) { Class272Statics.anInt3473 = v }
         var anInt3474: Int = 0
         var anIntArray3475: IntArray? = intArrayOf(1, 4, 1, 2)
         @JvmStatic

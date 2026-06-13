@@ -4,7 +4,7 @@ import java.awt.Color
 
 class Class348_Sub22 internal constructor(var aNpc_6859: Npc?) : Class348() {
     companion object {
-        var anInt6857: Int = 0
+        var anInt6857: Int get() = Class348_Sub22Statics.anInt6857; set(v) { Class348_Sub22Statics.anInt6857 = v }
         var anInt6858: Int = 0
         var anInt6860: Int = 0
         var anInt6861: Int = 0
