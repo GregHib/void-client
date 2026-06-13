@@ -84,6 +84,7 @@ class Loader : Panel(), GameApplet {
             Workers.install(ThreadWorkerFactory)
             GameLoops.install(BlockingGameLoop)
             Sleepers.install(ThreadSleeper)
+            GameLoggers.install(JvmGameLogger)
             provideLoaderApplet(this)
             if (AwtWindowShell.instance == null) {
                 AwtWindowShell.instance = AwtWindowShell(this)
