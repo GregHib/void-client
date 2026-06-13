@@ -27,6 +27,12 @@ interface RuntimeInfo {
      * supports it (JVM only). No-op on other platforms.
      */
     fun setFocusCycleRoot(target: Any?) {}
+
+    /**
+     * Terminate the native process via the platform JNI helper (jagmisc.quit on JVM).
+     * No-op on platforms without a native exit hook.
+     */
+    fun quit() {}
 }
 
 /** Singleton accessor — set once at startup by the JVM entry point. */

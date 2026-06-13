@@ -25,4 +25,8 @@ class JvmRuntimeInfo : RuntimeInfo {
             /* best-effort: older JVMs may not expose setFocusCycleRoot */
         }
     }
+
+    override fun quit() {
+        jagex3.jagmisc.jagmisc.quit()
+    }
 }

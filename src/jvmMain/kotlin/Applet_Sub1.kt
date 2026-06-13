@@ -1,5 +1,3 @@
-import jagex3.jagmisc.jagmisc.quit
-
 abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
     private var aBoolean17 = false
     private var aBoolean27 = false
@@ -172,7 +170,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         }
         if (aBoolean17) {
             try {
-                quit()
+                RuntimeInfoProvider.instance.quit()
             } catch (throwable: Throwable) {
                 /* empty */
             }
@@ -286,57 +284,9 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
 
     abstract fun method93(i: Int)
 
-    fun method95(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, string: String?, i_19_: Int) {
-        anInt25++
-        try {
-            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
-                Class348_Sub48.anInt7129 = 0
-                Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_
-                Class348_Sub22Statics.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
-                Class321.anInt4017 = i
-                Class272Statics.anInt3473 = Class321.anInt4017
-                Class335.anInt4167 = 0
-                Class348_Sub1_Sub3.anInt8818 = i_15_
-                Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
-                Class348_Sub8.anApplet6662 = Class93.anApplet1530
-                Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
-                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-                val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, -10240, 1)
-                if (i_19_ != 50) anInt37 = -13
-                while (class144.anInt1997 == 0) Class286_Sub5Statics.method2161((-126).toByte(), 10L)
-            } else {
-                Class348_Sub51.anInt7252++
-                if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded")
-                else showDocument(getDocumentBase(), "_self")
-            }
-        } catch (throwable: Throwable) {
-            Class156.method1242(null, throwable, 15004)
-            method82(52, "crash")
-        }
-    }
+    abstract fun method95(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, string: String?, i_19_: Int)
 
-    fun method96(i: Int, i_20_: Int, bool: Boolean, i_21_: Int, i_22_: Int, string: String?, i_23_: Int, i_24_: Int) {
-        try {
-            if (i_23_ != 23499) return
-            Class321.anInt4017 = i_20_
-            Class272Statics.anInt3473 = Class321.anInt4017
-            Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
-            Class348_Sub22Statics.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
-            Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
-            Class335.anInt4167 = 0
-            Class348_Sub48.anInt7129 = 0
-            Class348_Sub1_Sub3.anInt8818 = i_21_
-            Class348_Sub8.anApplet6662 = null
-            AwtWindowShell.instance!!.createFrame(Class272Statics.anInt3473, Class348_Sub22Statics.anInt6857, this)
-            Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
-            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, i_23_ + -33739, 1)
-            while (class144.anInt1997 == 0) Class286_Sub5Statics.method2161(21.toByte(), 10L)
-        } catch (exception: Exception) {
-            Class156.method1242(null, exception, i_23_ + -8495)
-        }
-        anInt31++
-    }
+    abstract fun method96(i: Int, i_20_: Int, bool: Boolean, i_21_: Int, i_22_: Int, string: String?, i_23_: Int, i_24_: Int)
 
     fun method97(i: Int): Boolean {
         if (i != -1) method88(-104)
