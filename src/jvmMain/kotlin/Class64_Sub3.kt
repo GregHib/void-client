@@ -3423,7 +3423,7 @@ class Class64_Sub3 : Class64 {
                 aShortArray5564 = Class119_Sub2.method1078(aShortArray5564, anInt5529, 114)
                 aShortArray5583 = Class119_Sub2.method1078(aShortArray5583, anInt5529, 126)
                 aShortArray5576 = Class119_Sub2.method1078(aShortArray5576, anInt5529, 100)
-                aByteArray5594 = Class93.method863(anInt5529, 113.toByte(), aByteArray5594)
+                aByteArray5594 = Class93Statics.method863(anInt5529, 113.toByte(), aByteArray5594)
                 aFloatArray5552 = Class231.method1638(anInt5529, aFloatArray5552!!, -1)
                 aFloatArray5571 = Class231.method1638(anInt5529, aFloatArray5571!!, -1)
                 if (class124.anIntArray1868 != null && Class312.method2332(anInt5556, 125.toByte(), i)) anIntArrayArray5539 = class124.method1100(false, -42)

@@ -179,7 +179,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
             aBoolean17 = false
         }
         Class257.method1945((-128).toByte(), true)
-        Class228.method1629(!bool_4_)
+        Class228Statics.method1629(!bool_4_)
         try {
             AwtWindowShell.instance!!.releaseDisplayTarget(this)
         } catch (exception: Exception) {
@@ -212,7 +212,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         anInt21++
         if (Class348_Sub40_Sub9.anApplet_Sub1_9169 === this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.method599(-108)
-            Class286_Sub5.method2161(77.toByte(), 5000L)
+            Class286_Sub5Statics.method2161(77.toByte(), 5000L)
             Class231.aClass297_2993 = null
             method90(false, false)
         }
@@ -303,7 +303,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
                 Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
                 val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
-                while (class144.anInt1997 == 0) Class286_Sub5.method2161((-126).toByte(), 10L)
+                while (class144.anInt1997 == 0) Class286_Sub5Statics.method2161((-126).toByte(), 10L)
             } else {
                 Class348_Sub51.anInt7252++
                 if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded")
@@ -331,7 +331,7 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, i_23_ + -33739, 1)
-            while (class144.anInt1997 == 0) Class286_Sub5.method2161(21.toByte(), 10L)
+            while (class144.anInt1997 == 0) Class286_Sub5Statics.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
             Class156.method1242(null, exception, i_23_ + -8495)
         }

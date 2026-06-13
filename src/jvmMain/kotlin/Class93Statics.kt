@@ -3,24 +3,24 @@ import Class9.method215
 import jaggl.OpenGL
 import java.awt.Canvas
 
-object Class93 {
-    var anInt1529: Int = 0
-    var anApplet1530: GameApplet? = null
-    var aStringArray1531: Array<String>? = arrayOf("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
-    var anInt1532: Int = 0
-    var anInt1533: Int = 0
-    var anInt1534: Int = 0
-
+/**
+ * JVM-only statics split out of [Class93].
+ *
+ * Holds methods that couple to JVM-only types (AWT Canvas, jaggl OpenGL)
+ * so that [Class93] itself (holding only [Class93.anApplet1530] and primitive
+ * counters) can live in commonMain.
+ */
+object Class93Statics {
     @JvmStatic
     fun method861(i: Int) {
-        aStringArray1531 = null
+        Class93.aStringArray1531 = null
         val i_0_ = 2 / ((i - 33) / 38)
-        anApplet1530 = null
+        Class93.anApplet1530 = null
     }
 
     fun method862(canvas: Canvas?, var_d: d?, class45: Class45?, i: Int, i_1_: Int): ha? {
         try {
-            anInt1532++
+            Class93.anInt1532++
             if (!method215(27165)) throw RuntimeException("")
             if (!method3098(i xor 0x158f.inv(), "jaggl")) throw RuntimeException("")
             val opengl = OpenGL()
@@ -37,7 +37,7 @@ object Class93 {
 
     fun method863(i: Int, i_2_: Byte, `is`: ByteArray?): ByteArray? {
         if (i_2_ < 64) return null
-        anInt1529++
+        Class93.anInt1529++
         val is_3_ = ByteArray(i)
         Class214.method1577(`is`!!, 0, is_3_, 0, i)
         return is_3_
@@ -45,8 +45,8 @@ object Class93 {
 
     @JvmStatic
     fun method864(i: Int, `is`: ByteArray?, i_4_: Int, i_5_: Int): ByteArray {
-        anInt1533++
-        if (i_5_ >= -30) aStringArray1531 = null
+        Class93.anInt1533++
+        if (i_5_ >= -30) Class93.aStringArray1531 = null
         val is_6_ = ByteArray(i_4_)
         Class214.method1577(`is`!!, i, is_6_, 0, i_4_)
         return is_6_

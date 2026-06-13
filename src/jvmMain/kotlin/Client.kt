@@ -509,7 +509,7 @@ import Class9.method216
 import Class90.method852
 import Class91.method857
 import Class92.method860
-import Class93.method861
+import Class93Statics.method861
 import Class94.method866
 import Class94.method867
 import Class95.method869
