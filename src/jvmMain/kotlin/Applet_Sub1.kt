@@ -292,9 +292,9 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
             if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
                 Class348_Sub48.anInt7129 = 0
                 Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_
-                Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
+                Class348_Sub22Statics.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
                 Class321.anInt4017 = i
-                Class272.anInt3473 = Class321.anInt4017
+                Class272Statics.anInt3473 = Class321.anInt4017
                 Class335.anInt4167 = 0
                 Class348_Sub1_Sub3.anInt8818 = i_15_
                 Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
@@ -319,15 +319,15 @@ abstract class Applet_Sub1 : GameApplet, AppletWindowCallbacks {
         try {
             if (i_23_ != 23499) return
             Class321.anInt4017 = i_20_
-            Class272.anInt3473 = Class321.anInt4017
+            Class272Statics.anInt3473 = Class321.anInt4017
             Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_
-            Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
+            Class348_Sub22Statics.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432
             Class348_Sub40_Sub9.anApplet_Sub1_9169 = this
             Class335.anInt4167 = 0
             Class348_Sub48.anInt7129 = 0
             Class348_Sub1_Sub3.anInt8818 = i_21_
             Class348_Sub8.anApplet6662 = null
-            AwtWindowShell.instance!!.createFrame(Class272.anInt3473, Class348_Sub22.anInt6857, this)
+            AwtWindowShell.instance!!.createFrame(Class272Statics.anInt3473, Class348_Sub22Statics.anInt6857, this)
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, i_23_ + -33739, 1)
