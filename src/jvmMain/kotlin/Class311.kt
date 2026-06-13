@@ -2,7 +2,6 @@ import Class156.Companion.method1242
 import Class367_Sub10.Companion.method3553
 import Class367_Sub11.Companion.method3556
 import Class62.method599
-import java.awt.Container
 import kotlin.concurrent.Volatile
 
 /* Class311 - Decompiled by JODE
@@ -103,17 +102,11 @@ class Class311 : Runnable {
                         method3553(true, 114.toByte(), 0)
                     }
                 }
-                val container: Container?
-                if (Class52.aFrame4904 != null) container = Class52.aFrame4904
-                else if (Class93.anApplet1530 != null) {
-                    // getPulseComponent() now returns DisplayTarget, not AWT Container;
-                    // fall back to the known applet root panel instead.
-                    container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                }
-                else container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                container!!.getSize()
-                container.getSize()
-                if (Class52.aFrame4904 === container) Class52.aFrame4904!!.getInsets()
+                // Size reads were no-ops (results discarded); route through shell seam.
+                val shell = AwtWindowShell.instance
+                shell?.clientWidth
+                shell?.clientHeight
+                if (Class52.aFrame4904 != null) Class52.aFrame4904!!.getInsets()
                 aBoolean3908 = false
                 if (Class348_Sub8.aHa6654 != null && (anInterface16_3907 !is Class294) && (aClass56_3916!!.method525(-112) < Class56.aClass56_1041!!.method525(-127))) method3556(false)
             } catch (exception: Exception) {

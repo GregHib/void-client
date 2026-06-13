@@ -3,7 +3,7 @@ import Class239.Companion.method1713
 import Class286_Sub2.Companion.method2145
 import Class286_Sub5.Companion.method2158
 import Class56.Companion.method527
-import java.awt.Container
+
 
 object Class215 {
     var anInt2834: Int = 0
@@ -30,21 +30,18 @@ object Class215 {
         }
         if (i_2_ == 3 && Class34.aFrame476 == null) Class215.method1580((-126).toByte(), true, -1, i_1_, Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
         else {
-            val container: Container?
             if (Class34.aFrame476 != null) {
                 Class348_Sub22.anInt6857 = i_3_
                 Class272.anInt3473 = i_0_
-                container = Class34.aFrame476
             } else if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                else container = Class93.anApplet1530 as? Container
-                Class272.anInt3473 = container!!.getSize().width
-                Class348_Sub22.anInt6857 = container.getSize().height
+                // Applet mode: read client area from the window shell seam.
+                val shell = AwtWindowShell.instance
+                Class272.anInt3473 = shell?.clientWidth ?: Class272.anInt3473
+                Class348_Sub22.anInt6857 = shell?.clientHeight ?: Class348_Sub22.anInt6857
             } else {
                 val insets = Class52.aFrame4904!!.getInsets()
                 Class272.anInt3473 = Class52.aFrame4904!!.getSize().width + (-insets.left + -insets.right)
                 Class348_Sub22.anInt6857 = Class52.aFrame4904!!.getSize().height - (insets.top - -insets.bottom)
-                container = Class52.aFrame4904
             }
             if (i_2_ == 1) {
                 Class321.anInt4017 = Class92.anInt1524
@@ -62,7 +59,7 @@ object Class215 {
                 Class305.aCanvas3869!!.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
                 if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aHa6654!!.method3669(Class305.aDisplayTarget3869, Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432))
                 else sStatics.method3980(86, Class305.aCanvas3869!!)
-                if (Class52.aFrame4904 === container) {
+                if (Class52.aFrame4904 != null) {
                     val insets = Class52.aFrame4904!!.getInsets()
                     Class305.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129 + insets.left), (insets.top - -Class335.anInt4167))
                 } else Class305.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)

@@ -1,6 +1,5 @@
 import Class367_Sub9.Companion.method3551
 import java.awt.Color
-import java.awt.Container
 
 object Class140 {
     var anInt1956: Int = 0
@@ -39,19 +38,16 @@ object Class140 {
             do {
                 if (i_1_ > 0 || i_3_ > 0 || i_2_ > 0 || i_4_ > 0) {
                     try {
-                        val container: Container?
-                        if (Class52.aFrame4904 == null) {
-                            if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                            else container = Class93.anApplet1530 as? Container
-                        } else container = Class52.aFrame4904
+                        // Shell is always wired from Loader; the applet panel is no longer a
+                        // Container we can getGraphics() from. Black-border painting is a no-op
+                        // when the canvas is correctly positioned by WindowShell.
+                        val frame = Class52.aFrame4904 ?: break
                         var i_5_ = 0
                         var i_6_ = 0
-                        if (container === Class52.aFrame4904) {
-                            val insets = Class52.aFrame4904!!.getInsets()
-                            i_5_ = insets.left
-                            i_6_ = insets.top
-                        }
-                        val graphics = container!!.getGraphics()
+                        val insets = frame.getInsets()
+                        i_5_ = insets.left
+                        i_6_ = insets.top
+                        val graphics = frame.getGraphics()
                         graphics.setColor(Color.black)
                         if (i_1_ > 0) graphics.fillRect(i_5_, i_6_, i_1_, Class348_Sub22.anInt6857)
                         if (i_2_ > 0) graphics.fillRect(i_5_, i_6_, Class272.anInt3473, i_2_)

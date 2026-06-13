@@ -6,7 +6,7 @@ import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import za_Sub2.Companion.method3442
-import java.awt.Container
+
 
 class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?) : Class367(class377) {
     private var anInterface18_Impl3_7390: Interface18_Impl3? = null
@@ -175,16 +175,15 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
             if (bool == false) {
                 withLock(Class79.aClient1367!!) {
                     if (Class34.aFrame476 == null) {
-                        val container: Container
-                        if (Class52.aFrame4904 != null) container = Class52.aFrame4904!!
-                        else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
-                        else container = Class93.anApplet1530!! as Container
-                        Class272.anInt3473 = container.getSize().width
-                        Class348_Sub22.anInt6857 = container.getSize().height
-                        if (Class52.aFrame4904 === container) {
+                        if (Class52.aFrame4904 != null) {
                             val insets = Class52.aFrame4904!!.getInsets()
-                            Class272.anInt3473 -= insets.left - -insets.right
-                            Class348_Sub22.anInt6857 -= insets.bottom + insets.top
+                            Class272.anInt3473 = Class52.aFrame4904!!.getSize().width - (insets.left - -insets.right)
+                            Class348_Sub22.anInt6857 = Class52.aFrame4904!!.getSize().height - (insets.bottom + insets.top)
+                        } else {
+                            // Applet mode: read client area from the window shell seam.
+                            val shell = AwtWindowShell.instance
+                            Class272.anInt3473 = shell?.clientWidth ?: Class272.anInt3473
+                            Class348_Sub22.anInt6857 = shell?.clientHeight ?: Class348_Sub22.anInt6857
                         }
                         if (Class348_Sub42_Sub12.method3229(-86) == 1) {
                             Class321.anInt4017 = Class92.anInt1524
@@ -202,7 +201,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                             if (Class59_Sub1.aBoolean5300) sStatics.method3980(120, Class305.aCanvas3869!!)
                             else Class348_Sub8.aHa6654!!.method3669(Class305.aDisplayTarget3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                         }
-                        if (Class52.aFrame4904 === container) {
+                        if (Class52.aFrame4904 != null) {
                             val insets = Class52.aFrame4904!!.getInsets()
                             Class305.aCanvas3869!!.setLocation(insets.left - -Class348_Sub48.anInt7129, Class335.anInt4167 + insets.top)
                         } else Class305.aCanvas3869!!.setLocation((Class348_Sub48.anInt7129), Class335.anInt4167)
