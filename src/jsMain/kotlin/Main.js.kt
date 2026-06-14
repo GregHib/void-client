@@ -1,20 +1,62 @@
 /**
  * Web bootstrap entry point.
  *
- * Kotlin/JS with `binaries.executable()` runs this `main` on page load. Its job is to
- * install the platform seams the common game code pulls from globals before anything
- * tries to use them. Right now that's the networking seam (Phase 4, this change):
+ * Kotlin/JS with `binaries.executable()` runs this `main` on page load.  All platform
+ * seams are installed via [ClientBootstrap.installCommon] so the ordering contract is
+ * shared with the JVM entry point ([Loader.startClient]) and the two cannot drift.
  *
- *   Connections.install(JsSocketOpener())
- *
- * After this runs, any common consumer that calls `Connections.open(...)` (the JS5 pump
- * via Class202, and the game-connect path) gets a [WebSocketConnection] instead of a
- * java.net.Socket — with no awareness that the transport changed.
- *
- * The remaining Phase-4 seams (GameSurface over <canvas>, InputSource over DOM events,
- * OPFS CacheStorage, WebAudio AudioSink) are installed by their own bootstrap slices;
- * this file only owns the networking wiring so the change stays focused.
+ * Seams with a real JS implementation are passed directly.  Seams whose JS
+ * implementation is not yet written are stubbed inline with a TODO comment — they will
+ * be replaced as the Phase-4 migration proceeds (see docs/KMP_MIGRATION.md steps 6–14).
  */
 fun main() {
-    Connections.install(JsSocketOpener())
+    // TODO(Phase-4): replace stubs below with real JS implementations as they land.
+
+    // Workers: JS is single-threaded; tasks run cooperatively driven by the frame loop.
+    val jsWorkerFactory = object : WorkerFactory {
+        override fun start(body: WorkerBody, daemon: Boolean, priority: Int?, name: String?): WorkerHandle {
+            // Synchronous cooperative stub — runs body immediately on the calling "thread".
+            // Replace with a coroutine-backed scheduler once GameLoop is wired to rAF.
+            body.run()
+            return object : WorkerHandle { override fun join() {} }
+        }
+    }
+
+    // RuntimeInfo: memory/CPU APIs are not meaningful in a browser sandbox.
+    val jsRuntimeInfo = object : RuntimeInfo {
+        override fun usedMemoryKb(): Int = 0
+        override fun maxMemoryMb(): Int = 256
+        override fun availableProcessors(): Int = 1
+        override fun exec(command: String) {}
+    }
+
+    // GlyphRasterizer: TODO — replace with a Canvas2D-backed rasterizer (Phase-4 step 9).
+    val jsGlyphFactory: (DisplayTarget) -> GlyphRasterizer = { _ ->
+        error("GlyphRasterizer not yet implemented for JS — Phase-4 step 9")
+    }
+
+    // WindowShell: TODO — replace with JsWindowShell backed by the <canvas> element (Phase-4 step 7).
+    val jsWindowShell: WindowShell = object : WindowShell {
+        override val isFullscreen: Boolean get() = false
+        override val clientWidth: Int get() = 765
+        override val clientHeight: Int get() = 503
+        override val currentDisplayTarget: DisplayTarget? get() = null
+        override fun provideDisplayTarget(x: Int, y: Int, width: Int, height: Int, callbacks: AppletWindowCallbacks): DisplayTarget =
+            error("WindowShell not yet implemented for JS — Phase-4 step 7")
+        override fun repositionCanvas(x: Int, y: Int, width: Int, height: Int) {}
+        override fun releaseDisplayTarget(callbacks: AppletWindowCallbacks) {}
+        override fun shutdown() {}
+    }
+
+    ClientBootstrap.installCommon(
+        workers = jsWorkerFactory,
+        gameLoop = object : GameLoop { override fun run(frame: GameFrame) { while (frame.runFrame()) {} } },
+        sleeper = object : Sleeper { override fun sleep(millis: Long) { /* JS cannot block; frame loop provides pacing */ } },
+        logger = object : GameLogger { override fun log(string: String, i: Int) { console.log("[$i] $string") } },
+        runtimeInfo = jsRuntimeInfo,
+        glyphRasterizerFactory = jsGlyphFactory,
+        clipboard = null, // TODO: navigator.clipboard wrapper
+        socketOpener = JsSocketOpener(),
+        windowShell = jsWindowShell,
+    )
 }

@@ -81,20 +81,32 @@ class Loader : Panel(), GameApplet {
 
     fun startClient() {
         try {
-            Workers.install(ThreadWorkerFactory)
-            GameLoops.install(BlockingGameLoop)
-            Sleepers.install(ThreadSleeper)
-            GameLoggers.install(JvmGameLogger)
-            RuntimeInfoProvider.instance = JvmRuntimeInfo()
-            GlyphRasterizers.install { target -> AwtGlyphRasterizer((target as AwtDisplayTarget).canvas) }
-            try {
-                Clipboards.install(AwtClipboard(java.awt.Toolkit.getDefaultToolkit().getSystemClipboard()))
-            } catch (_: Exception) { /* headless / security-denied */ }
+            // Resolve clipboard before installCommon — constructor can throw on headless/sandboxed JVMs.
+            val clipboard = try {
+                AwtClipboard(java.awt.Toolkit.getDefaultToolkit().getSystemClipboard())
+            } catch (_: Exception) { null /* headless / security-denied */ }
+
+            // JVM-specific bookkeeping: register this Loader as the GameApplet provider.
             provideLoaderApplet(this)
+
+            // Ensure the AwtWindowShell singleton exists before we hand it to installCommon.
             if (AwtWindowShell.instance == null) {
                 AwtWindowShell.instance = AwtWindowShell(this)
             }
-            WindowShells.instance = AwtWindowShell.instance
+
+            // Install all common seams in one ordered call — shared contract with the JS entry point.
+            ClientBootstrap.installCommon(
+                workers = ThreadWorkerFactory,
+                gameLoop = BlockingGameLoop,
+                sleeper = ThreadSleeper,
+                logger = JvmGameLogger,
+                runtimeInfo = JvmRuntimeInfo(),
+                glyphRasterizerFactory = { target -> AwtGlyphRasterizer((target as AwtDisplayTarget).canvas) },
+                clipboard = clipboard,
+                socketOpener = JvmSocketOpener(),
+                windowShell = AwtWindowShell.instance!!,
+            )
+
             val var_client = Client()
             var_client.init()
             var_client.start()
