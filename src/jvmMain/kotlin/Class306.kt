@@ -1,6 +1,5 @@
 import Class239_Sub6.Companion.method1745
 import Class286_Sub3.Companion.method2148
-import java.awt.Canvas
 
 object Class306 {
     var anInt3872: Int = -1
@@ -9,11 +8,11 @@ object Class306 {
     var anInt3875: Int = 0
     var anInt3876: Int = 0
 
-    fun method2297(i: Int, i_0_: Int, var_d: d?, canvas: Canvas?, i_1_: Int): ha {
+    fun method2297(i: Int, i_0_: Int, var_d: d?, canvas: Any?, i_1_: Int): ha {
         try {
             if (i != -6) method2297(23, -44, null, null, -57)
             anInt3875++
-            return oa(canvas, var_d, i_1_, i_0_)
+            return oa(canvas as? java.awt.Canvas, var_d, i_1_, i_0_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (if (var_d != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_1_ + ')'))
         }

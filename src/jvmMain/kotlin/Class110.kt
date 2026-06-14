@@ -1,5 +1,3 @@
-import java.awt.Canvas
-
 abstract class Class110 {
     var anInt1704: Int = 0
     var anInt1708: Int = 0
@@ -144,16 +142,17 @@ abstract class Class110 {
             }
         }
 
-        fun method1035(i: Int, i_16_: Int, canvas: Canvas?, i_17_: Int): Class348_Sub31? {
+        fun method1035(i: Int, i_16_: Int, canvas: Any?, i_17_: Int): Class348_Sub31? {
             anInt1705++
             if (i != 9029) return null
+            val awtCanvas = canvas as? java.awt.Canvas
             try {
                 val class348_sub31: Class348_Sub31 = Class348_Sub31_Sub1()
-                class348_sub31.method3008(canvas, i_17_, -90, i_16_)
+                class348_sub31.method3008(awtCanvas, i_17_, -90, i_16_)
                 return class348_sub31
             } catch (throwable: Throwable) {
                 val class348_sub31_sub2 = Class348_Sub31_Sub2()
-                class348_sub31_sub2.method3008(canvas, i_17_, -128, i_16_)
+                class348_sub31_sub2.method3008(awtCanvas, i_17_, -128, i_16_)
                 return class348_sub31_sub2
             }
         }
