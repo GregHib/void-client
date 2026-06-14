@@ -343,7 +343,7 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
             anInt1611++
             Class285.aClass348_Sub16_Sub3_4743 = null
             Class348_Sub43.anInt7068 = i
-            Class124.aClass45_1848 = null
+            Class124Statics.aClass45_1848 = null
         }
     }
 }

@@ -40,7 +40,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: ha_Sub2
             do {
                 try {
                     Class239_Sub14.anInt5994 = 10000
-                    Class124.aClass45_1848 = class45
+                    Class124Statics.aClass45_1848 = class45
                     Class58.anInt1059 = i_7_
                     Class318_Sub1_Sub4_Sub1.anInt10074 = i
                     Class346.aBoolean4275 = bool

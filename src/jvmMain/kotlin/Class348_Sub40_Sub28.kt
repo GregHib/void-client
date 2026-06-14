@@ -53,10 +53,10 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
             val random = JavaRandom(anInt9367.toLong())
             var i_5_ = 0
             while (anInt9362 > i_5_) {
-                var i_6_ = (if (anInt9364 > 0) anInt9369 + Class124.method1097(92.toByte(), anInt9364, random) + -i_3_ else anInt9369)
+                var i_6_ = (if (anInt9364 > 0) anInt9369 + Class124Statics.method1097(92.toByte(), anInt9364, random) + -i_3_ else anInt9369)
                 i_6_ = i_6_ shr 4 and 0xff
-                var i_7_ = Class124.method1097(81.toByte(), Class348_Sub40_Sub6.Companion.anInt9139, random)
-                var i_8_ = Class124.method1097(123.toByte(), Class286_Sub2.anInt6212, random)
+                var i_7_ = Class124Statics.method1097(81.toByte(), Class348_Sub40_Sub6.Companion.anInt9139, random)
+                var i_8_ = Class124Statics.method1097(123.toByte(), Class286_Sub2.anInt6212, random)
                 var i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654!![i_6_] shr 12)
                 var i_10_ = ((Class235.anIntArray3068!![i_6_] * anInt9368 shr 12) + i_8_)
                 var i_11_ = -i_8_ + i_10_
@@ -86,7 +86,7 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
                     var i_19_ = -i_8_ + i_10_
                     var i_20_ = -i_18_ / 2
                     val i_21_ = 2048 / i_18_
-                    val i_22_ = 1024 - (Class124.method1097(90.toByte(), 4096, random) shr 2)
+                    val i_22_ = 1024 - (Class124Statics.method1097(90.toByte(), 4096, random) shr 2)
                     if (i_19_ < 0) i_19_ = -i_19_
                     val i_23_ = if (i_10_ <= i_8_) -1 else 1
                     for (i_24_ in i_7_..<i_9_) {

@@ -107,7 +107,7 @@ class Class315 internal constructor(var aString3953: String?) {
             Class239_Sub14.anInt5994 = i_3_
             Class348_Sub43.anInt7068 = 1
             Class318Statics.anInt3971 = i_2_
-            Class124.aClass45_1848 = class45
+            Class124Statics.aClass45_1848 = class45
         }
 
         @JvmStatic

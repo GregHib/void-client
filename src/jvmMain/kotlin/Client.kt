@@ -28,7 +28,7 @@ import Class118.Companion.method1075
 import Class121.method1081
 import Class122.method1086
 import Class123.Companion.method1091
-import Class124.Companion.method1096
+import Class124Statics.method1096
 import Class126.Companion.method1112
 import Class127.Companion.method1117
 import Class127_Sub1.Companion.method1120
@@ -231,7 +231,7 @@ import Class3.method176
 import Class30.Companion.method322
 import Class301.method2281
 import Class303.method2286
-import Class305.Companion.method2294
+import Class305Statics.method2294
 import Class309.Companion.method2310
 import Class31.Companion.method328
 import Class311.Companion.method2317

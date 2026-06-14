@@ -125,20 +125,5 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
         var anInt3868: Int = 0
         var aDisplayTarget3869: DisplayTarget? = null
         var aBoolean3870: Boolean = false
-        @JvmStatic
-        fun method2294(i: Int) {
-            Class305Statics.aCanvas3869 = null
-            aDisplayTarget3869 = null
-            if (i <= 94) method2296(-107)
-        }
-
-        @JvmStatic
-        fun method2296(i: Int) {
-            anInt3868++
-            if (i < -46) {
-                for (i_22_ in 0..99) Class318_Sub2.aClass147Array6400!![i_22_] = null
-                za_Sub1.anInt9774 = 0
-            }
-        }
     }
 }

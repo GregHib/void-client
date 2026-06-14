@@ -16,7 +16,7 @@ class Class348_Sub40_Sub5 : Class348_Sub40(0, true) {
             val random = JavaRandom(anInt9122.toLong())
             aShortArray9116 = ShortArray(512)
             if (anInt9125 > 0) {
-                for (i in 0..511) aShortArray9116[i] = Class124.method1097(81.toByte(), anInt9125, random).toShort()
+                for (i in 0..511) aShortArray9116[i] = Class124Statics.method1097(81.toByte(), anInt9125, random).toShort()
             }
         }
     }

@@ -80,10 +80,10 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
         var i_3_ = i_3_
         try {
             anInt9309++
-            val i_6_ = (if (anInt9310 <= 0) 4096 else 4096 - Class124.method1097(117.toByte(), anInt9310, random))
+            val i_6_ = (if (anInt9310 <= 0) 4096 else 4096 - Class124Statics.method1097(117.toByte(), anInt9310, random))
             val i_7_ = 88 % ((i - 57) / 55)
             val i_8_ = anInt9306 * anInt9314 shr 12
-            val i_9_ = (anInt9306 - (if (i_8_ > 0) Class124.method1097(82.toByte(), i_8_, random) else 0))
+            val i_9_ = (anInt9306 - (if (i_8_ > 0) Class124Statics.method1097(82.toByte(), i_8_, random) else 0))
             if (Class348_Sub40_Sub6.Companion.anInt9139 <= i_3_) i_3_ -= Class348_Sub40_Sub6.Companion.anInt9139
             if (i_9_ <= 0) {
                 if (Class348_Sub40_Sub6.Companion.anInt9139 < i_3_ + i_5_) {
@@ -205,8 +205,8 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
             var is_57_: Array<IntArray> = Array<IntArray>(i_55_) { IntArray(3) }
             val random = JavaRandom(anInt9318.toLong())
             while (true) {
-                var i_58_ = i_51_ + Class124.method1097(106.toByte(), i_52_ - i_51_, random)
-                var i_59_ = (Class124.method1097(117.toByte(), -i_53_ + i_54_, random) + i_53_)
+                var i_58_ = i_51_ + Class124Statics.method1097(106.toByte(), i_52_ - i_51_, random)
+                var i_59_ = (Class124Statics.method1097(117.toByte(), -i_53_ + i_54_, random) + i_53_)
                 var i_60_ = i_46_ + i_58_
                 if (i_60_ > Class348_Sub40_Sub6.Companion.anInt9139) {
                     i_60_ = Class348_Sub40_Sub6.Companion.anInt9139
@@ -280,7 +280,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
                     i_49_ = i_50_
                     i_45_ = i_44_
                     i_50_ = 0
-                    i_44_ = Class124.method1097(113.toByte(), Class348_Sub40_Sub6.Companion.anInt9139, random)
+                    i_44_ = Class124Statics.method1097(113.toByte(), Class348_Sub40_Sub6.Companion.anInt9139, random)
                     i_43_ = -i_45_ + i_44_
                     i_46_ = 0
                     var i_80_ = i_43_

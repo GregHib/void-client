@@ -89,7 +89,7 @@ object haStatics {
             for (i_89_ in 0..254) `is`[i_89_] = i_89_.toByte()
             for (i_90_ in 0..254) {
                 val i_91_ = -i_90_ + 255
-                val i_92_ = Class124.method1097(95.toByte(), i_91_, random)
+                val i_92_ = Class124Statics.method1097(95.toByte(), i_91_, random)
                 val i_93_ = `is`[i_92_]
                 `is`[i_92_] = `is`[i_91_]
                 `is`[511 + -i_90_] = i_93_

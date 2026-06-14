@@ -1,18 +1,18 @@
 import java.awt.event.ActionEvent
 
 /**
- * JVM-only statics split out of [Class369_Sub3_Sub1].
+ * JVM actual for [Class369_Sub3_Sub1Statics].
  *
- * Holds [method3578] (AWT EventQueue pump/post) and the companion statics
- * ([method3575]/[method3576]/[method3577], counters, [aBoolean10174]).
- * Kept in jvmMain because EventQueue + Class297 + Class45/Class105 chains are jvm.
+ * Holds the primitive counters/flags declared in the commonMain expect, plus the
+ * JVM-only methods: [method3575]/[method3576]/[method3577] (touch Class45, Class17,
+ * etc.) and [method3578] (AWT EventQueue/ActionEvent pump).
  */
-object Class369_Sub3_Sub1Statics {
-    var anInt10173: Int = 0
-    var aBoolean10174: Boolean = true
-    var anInt10175: Int = 0
-    var anInt10176: Int = 0
-    var anInt10178: Int = 0
+actual object Class369_Sub3_Sub1Statics {
+    actual var anInt10173: Int = 0
+    actual var aBoolean10174: Boolean = true
+    actual var anInt10175: Int = 0
+    actual var anInt10176: Int = 0
+    actual var anInt10178: Int = 0
 
     @JvmStatic
     fun method3575(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {

@@ -1056,7 +1056,6 @@ class Class124 : Class124Base {
         var anInt1838: Int = 0
         var anInt1840: Int = 0
         var anInt1845: Int = 0
-        var aClass45_1848: Class45? = null
         var anInt1850: Int = 0
         var anInt1854: Int = 0
         var anInt1858: Int = 0
@@ -1064,22 +1063,6 @@ class Class124 : Class124Base {
         var anInt1861: Int = 0
         var anInt1864: Int = 0
         var anInt1869: Int = 0
-
-        @JvmStatic
-        fun method1096(i: Int) {
-            if (i >= 88) aClass45_1848 = null
-        }
-
-        fun method1097(i: Byte, i_20_: Int, random: JavaRandom): Int {
-            anInt1861++
-            require(i_20_ > 0)
-            if (Class192.method1436(-19, i_20_)) return (i_20_.toLong() * (0xffffffffL and random.nextInt().toLong()) shr 32).toInt()
-            val i_21_ = -2147483648 + -(4294967296L % i_20_.toLong()).toInt()
-            if (i < 78) aClass45_1848 = null
-            var i_22_: Int
-            do i_22_ = random.nextInt() while (i_22_ >= i_21_)
-            return Class350.method3452(i_22_, (-15).toByte(), i_20_)
-        }
 
     }
 }
