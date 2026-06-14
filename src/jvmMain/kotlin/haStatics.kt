@@ -1,5 +1,4 @@
 import Class239_Sub27.Companion.method1839
-import Class348_Sub5Statics.method2753
 import Class55.Companion.method515
 import java.awt.Canvas
 
@@ -58,7 +57,7 @@ object haStatics {
     fun method3692(i: Int, i_168_: Int, i_169_: Int, class45: Class45?, i_170_: Int, var_d: d?, canvas: Canvas?, i_171_: Int): ha? {
         try {
             ha.anInt4576++
-            if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas?.let { AwtDisplayTarget(it) }, var_d, AwtGameSurfaceFactory)
+            if (i_170_ == i_171_) return JvmSoftwareToolkitFactory.build(var_d, AwtGameSurfaceFactory, canvas?.let { AwtDisplayTarget(it) }!!, i_168_, i_169_, true)
             if (i_171_ == 2) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_)
             if (i_171_ == 1) return Class262Statics.method2000(3, i, canvas, var_d)
             if (i_171_ == 5) return Class93Statics.method862(canvas, var_d, class45, 25542, i)

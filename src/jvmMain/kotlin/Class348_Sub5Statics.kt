@@ -33,40 +33,7 @@ object Class348_Sub5Statics {
         try {
             Class348_Sub5.anInt6628++
             if (bool != true) Class348_Sub5.aByteArray6624 = null
-            val var_ha_sub1 = ha_Sub1(
-                var_d,
-                gameSurfaceFactory,
-                { i, i2 -> Class216(i, i2) },
-                { ha, i3, i13 -> Class49(ha, i3 as Class105?, i13 as Class216?) },
-                class64Factory = { ha, c124, i, i1, i2, i3 -> Class64_Sub1(ha, c124 as Class124, i, i1, i2, i3) },
-                sFactory = { ha, a, b, c, d, e, f, g -> s_Sub1(ha, a, b, c, d, e, f, g) },
-                class167Factory = { ha -> Class167(ha) },
-                class60Factory = { Class60(it) },
-                class324Factory = { ha, c143, c207s, bool ->
-                    val class143 = c143 as Class143?
-                    val `is` = IntArray(c207s!!.size)
-                    val is_283_ = IntArray(c207s.size)
-                    var bool_284_ = false
-                    for (i in c207s.indices) {
-                        `is`[i] = c207s[i]!!.anInt2702
-                        is_283_[i] = c207s[i]!!.anInt2696
-                        if (c207s[i]!!.aByteArray2695 != null) bool_284_ = true
-                    }
-                    if (bool) {
-                        if (bool_284_) Class324_Sub4(ha, class143, c207s, `is`, is_283_)
-                        else Class324_Sub1(ha, class143, c207s, `is`, is_283_)
-                    } else {
-                        require(!bool_284_) { "" }
-                        Class324_Sub3(ha, class143, c207s, `is`, is_283_)
-                    }
-                },
-                class105FactoryProvider = ::JvmClass105Factory,
-                audioInit = { Class59_Sub2_Sub1.method566(true, true, (-126).toByte()) { Class239_Sub25.method1827(1415665776) } },
-                screenReleaseCallback = { Class286_Sub8.method2173(false, -101, true) },
-            )
-            var_ha_sub1.method3643(displayTarget!!, i_4_, i)
-            var_ha_sub1.method3677(displayTarget)
-            return var_ha_sub1
+            return JvmSoftwareToolkitFactory.build(var_d, gameSurfaceFactory, displayTarget!!, i, i_4_, bool)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (if (displayTarget != null) "{...}" else "null") + ',' + (if (var_d != null) "{...}" else "null") + ')'))
         }
