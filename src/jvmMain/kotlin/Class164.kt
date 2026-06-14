@@ -5,7 +5,7 @@ import Class116.method1063
 import Class14_Sub2.Companion.method243
 import Class150.Companion.method1202
 import Class30.Companion.method323
-import Class348_Sub23.Companion.method2965
+
 import Class348_Sub40.Companion.method3038
 import Class348_Sub40_Sub6.Companion.method3063
 import Class348_Sub42_Sub16.Companion.method3256
@@ -65,7 +65,7 @@ object Class164 {
         if (Class56.aClass56_1023 == Class348_Sub42_Sub15.aClass56_9660) {
             if (Class175.aClass340_2327 == null) Class175.aClass340_2327 = Class340(Class348_Sub4.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657)
             if (!Class175.aClass340_2327!!.method2674(7)) return 0
-            method2965(null, 0, true, 0)
+            LoginVideos.instance.play(null, 0, true, 0)
             Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((-63).toByte())
             Class286_Sub7.aClass45_6277 = Class369_Sub2.method3571(false, (if (Class286_Sub7.aBoolean6289) 34 else 32), (-23).toByte(), 1)
             Class348_Sub40_Sub17_Sub1.aClass45_10426 = Class369_Sub2.method3571(false, 33, (-23).toByte(), 1)

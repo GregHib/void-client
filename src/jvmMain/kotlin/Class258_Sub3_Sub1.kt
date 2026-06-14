@@ -131,7 +131,7 @@ class Class258_Sub3_Sub1 : Class258_Sub3 {
             Class59_Sub1_Sub1.method556(false)
             Class341Statics.method2681(9864)
             Class348_Sub22.method2959(-1)
-            Class348_Sub23.method2965(string, i_11_, bool, 0)
+            LoginVideos.instance.play(string, i_11_, bool, 0)
             Class348_Sub24.method2994(2)
             Class170.method1311(5139, Class348_Sub8.aHa6654!!)
             method3568(Class348_Sub8.aHa6654, 4)

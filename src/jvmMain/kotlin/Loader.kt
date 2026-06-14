@@ -107,6 +107,7 @@ class Loader : Panel(), GameApplet {
                 cacheStorage = { FileCacheStorage() },
                 audioSink = { JavaSoundAudioSink() },
                 windowShell = AwtWindowShell.instance!!,
+                loginVideo = JvmLoginVideo,
                 nativeLibraryProbe = JvmNativeLibraryProbe(Client::class.java.classLoader),
             )
 

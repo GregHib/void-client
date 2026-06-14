@@ -25,7 +25,8 @@ object ClientBootstrap {
      *  8. [Connections] — needed before the JS5 / login socket opens.
      *  9. [CacheStorageFactories] — needed before [Class297] / the signlink opens cache stores.
      * 10. [AudioSinks] — needed before the synth engine ([Class279]) opens a line.
-     * 11. [WindowShells] — must be last so all rendering seams are ready before the
+     * 11. [LoginVideos] — optional; no-op default skips video on JS/native.
+     * 12. [WindowShells] — must be last so all rendering seams are ready before the
      *     shell vends a [DisplayTarget].
      *
      * @param workers            Platform [WorkerFactory] (JVM: [ThreadWorkerFactory]; JS: coroutine-backed).
@@ -39,6 +40,7 @@ object ClientBootstrap {
      * @param cacheStorage       Factory producing a fresh [CacheStorageFactory] per signlink (JVM: [FileCacheStorage]; JS: [OPFSCacheStorage]).
      * @param audioSink          Factory producing a fresh [AudioSink] per synth engine (JVM: [JavaSoundAudioSink]; JS: [WebAudioSink]).
      * @param windowShell        Platform [WindowShell] (JVM: [AwtWindowShell]; JS: [JsWindowShell]).
+     * @param loginVideo         Optional login-video player (JVM: [JvmLoginVideo]; JS: omit — no-op default).
      * @param nativeLibraryProbe Optional probe for native-library handles (JVM: [JvmNativeLibraryProbe];
      *                           JS: null — no native libraries exist in a browser).
      */
@@ -54,6 +56,7 @@ object ClientBootstrap {
         cacheStorage: () -> CacheStorageFactory,
         audioSink: () -> AudioSink,
         windowShell: WindowShell,
+        loginVideo: LoginVideo? = null,
         nativeLibraryProbe: NativeLibraryProbe? = null,
     ) {
         Workers.install(workers)
@@ -66,6 +69,7 @@ object ClientBootstrap {
         Connections.install(socketOpener)
         CacheStorageFactories.install(cacheStorage)
         AudioSinks.install(audioSink)
+        if (loginVideo != null) LoginVideos.instance = loginVideo
         WindowShells.instance = windowShell
         NativeLibraryProbes.instance = nativeLibraryProbe
     }
