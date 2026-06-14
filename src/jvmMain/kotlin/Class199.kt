@@ -46,7 +46,7 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                 anInt2627++
                 try {
                     val graphics = Class305.aCanvas3869!!.getGraphics()
-                    if (Class351.aRasterFont4329 == null) Class351.aRasterFont4329 = AwtGlyphRasterizer(Class305.aCanvas3869!!).open(13, true)
+                    if (Class351.aRasterFont4329 == null) Class351.aRasterFont4329 = GlyphRasterizers.factory(Class305.aDisplayTarget3869!!).open(13, true)
                     try {
                         if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                         val graphics_3_ = Class342.anImage4249!!.getGraphics()

@@ -403,42 +403,42 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                             Class289.method2193(true, (-127).toByte())
                             method867(true)
                         } else if (Class348Statics.anInt4290 == 70) {
-                            Class125.aClass323_4921 = Class323(var_ha!!, 11, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class125.aClass323_4921 = Class323(var_ha!!, 11, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 73
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348Statics.anInt4290 == 73) {
-                            Class14_Sub4.aClass323_8644 = Class323(var_ha!!, 12, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class14_Sub4.aClass323_8644 = Class323(var_ha!!, 12, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 76
                             Class289.method2193(true, (-125).toByte())
                             method867(true)
                         } else if (Class348Statics.anInt4290 == 76) {
-                            Class39.aClass323_521 = Class323(var_ha!!, 14, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class39.aClass323_521 = Class323(var_ha!!, 14, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 79
                             Class289.method2193(true, (-123).toByte())
                             method867(true)
                         } else if (Class348Statics.anInt4290 == 79) {
-                            Class168.aClass323_2252 = Class323(var_ha!!, 17, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class168.aClass323_2252 = Class323(var_ha!!, 17, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 82
                             Class289.method2193(true, (-124).toByte())
                             method867(true)
                         } else if (Class348Statics.anInt4290 == 82) {
-                            Class176.aClass323_2333 = Class323(var_ha!!, 19, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class176.aClass323_2333 = Class323(var_ha!!, 19, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 85
                             Class289.method2193(true, (-128).toByte())
                             method867(true)
                         } else if (Class348Statics.anInt4290 == 85) {
-                            Class285.aClass323_4754 = Class323(var_ha!!, 22, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class285.aClass323_4754 = Class323(var_ha!!, 22, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 88
                             Class289.method2193(true, (-124).toByte())
                             method867(true)
                         } else if (Class348Statics.anInt4290 == 88) {
-                            Class348_Sub3.aClass323_6581 = Class323(var_ha!!, 26, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class348_Sub3.aClass323_6581 = Class323(var_ha!!, 26, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 91
                             Class289.method2193(true, (-125).toByte())
                             method867(true)
                         } else {
-                            Class240.aClass323_4672 = Class323(var_ha!!, 30, true, AwtGlyphRasterizer(Class305.aCanvas3869!!))
+                            Class240.aClass323_4672 = Class323(var_ha!!, 30, true, GlyphRasterizers.factory(Class305.aDisplayTarget3869!!))
                             Class348Statics.anInt4290 = 100
                             Class289.method2193(true, (-119).toByte())
                             method867(true)

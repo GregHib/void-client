@@ -86,6 +86,7 @@ class Loader : Panel(), GameApplet {
             Sleepers.install(ThreadSleeper)
             GameLoggers.install(JvmGameLogger)
             RuntimeInfoProvider.instance = JvmRuntimeInfo()
+            GlyphRasterizers.install { target -> AwtGlyphRasterizer((target as AwtDisplayTarget).canvas) }
             try {
                 Clipboards.install(AwtClipboard(java.awt.Toolkit.getDefaultToolkit().getSystemClipboard()))
             } catch (_: Exception) { /* headless / security-denied */ }
