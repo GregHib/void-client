@@ -20,10 +20,7 @@ fun main() {
         override fun exec(command: String) {}
     }
 
-    // GlyphRasterizer: TODO — replace with a Canvas2D-backed rasterizer (Phase-4 step 9).
-    val jsGlyphFactory: (DisplayTarget) -> GlyphRasterizer = { _ ->
-        error("GlyphRasterizer not yet implemented for JS — Phase-4 step 9")
-    }
+    val jsGlyphFactory: (DisplayTarget) -> GlyphRasterizer = { _ -> JsGlyphRasterizer() }
 
     val jsWindowShell = JsWindowShell()
 
