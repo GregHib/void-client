@@ -314,7 +314,6 @@ import Class348_Sub21.Companion.method2956
 import Class348_Sub23.Companion.method2962
 import Class348_Sub23_Sub2.Companion.method2974
 import Class348_Sub23_Sub3.Companion.method2981
-import Class348_Sub23_Sub4.Companion.method2990
 import Class348_Sub24.Companion.method2991
 import Class348_Sub24.Companion.method2993
 import Class348_Sub25.Companion.method2996
@@ -571,7 +570,7 @@ class Client : Applet_Sub1() {
         else {
             try {
                 if (Class47.anInt846 == 0) {
-                    aa.aClass144_114 = Class3.aClass161_125!!.method1262Connection((Class348_Sub23_Sub1.aClass297_8992!!))
+                    aa.aClass144_114 = Class3.aClass161_125!!.method1262Connection((Class348_Sub23_Sub1Statics.aClass297_8992!!))
                     Class47.anInt846++
                 }
                 if (Class47.anInt846 == 1) {
@@ -583,7 +582,7 @@ class Client : Applet_Sub1() {
                     if (aa.aClass144_114!!.anInt1997 == 1) Class47.anInt846++
                 }
                 if (Class47.anInt846 == 2) {
-                    Class193.aClass202_2589 = Class202(aa.aClass144_114!!.anObject1998 as Class238?, Class348_Sub23_Sub1.aClass297_8992, 25000)
+                    Class193.aClass202_2589 = Class202(aa.aClass144_114!!.anObject1998 as Class238?, Class348_Sub23_Sub1Statics.aClass297_8992, 25000)
                     val class348_sub49 = Class348_Sub49(5)
                     class348_sub49.writeByte(false, (Class178.aClass29_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
@@ -627,7 +626,7 @@ class Client : Applet_Sub1() {
         anInt5177++
         WindowShells.instance?.forceToolkitInit()
         method3556(false)
-        Class39.aClass112_520 = Class112(Class348_Sub23_Sub1.aClass297_8992!!)
+        Class39.aClass112_520 = Class112(Class348_Sub23_Sub1Statics.aClass297_8992!!)
         Class348_Sub4.aClass248_6601 = Class248()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
@@ -675,16 +674,16 @@ class Client : Applet_Sub1() {
         Class182.aClass346_2449 = Class348_Sub3.method2743(Class305Statics.aCanvas3869, (-124).toByte())
         Class258_Sub4.aClass373_8552 = method2941(Class305Statics.aCanvas3869, 0, true)
         //        try {
-        if (Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785 != null) {
-            Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785!!), 5200, 0)
-            for (i_3_ in 0..36) Class100.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234Array3795!![i_3_]!!), 6000, 0)
-            Class235.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3779!!), 6000, 0)
+        if (Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3785 != null) {
+            Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3785!!), 5200, 0)
+            for (i_3_ in 0..36) Class100.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234Array3795!![i_3_]!!), 6000, 0)
+            Class235.aClass78_3075 = Class78((Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3779!!), 6000, 0)
             Class277.aClass137_3568 = Class137(255, Class299_Sub2.aClass78_6328, Class235.aClass78_3075, 500000)
-            Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3788!!), 24, 0)
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3779 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234Array3795 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3788 = null
+            Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3788!!), 24, 0)
+            Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3779 = null
+            Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3785 = null
+            Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234Array3795 = null
+            Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3788 = null
         }
         //        } catch (java.io.IOException ioexception) {
 //            Class299_Sub2.aClass78_6328 = null;
@@ -847,7 +846,7 @@ class Client : Applet_Sub1() {
         method713()
         method3457(true)
         method2055(1)
-        method2990(125.toByte())
+        Class348_Sub23_Sub4Statics.method2990(125.toByte())
         method523(119)
         method2974(1)
         Class348_Sub23_Sub1.method2968((-116).toByte())
@@ -1248,9 +1247,9 @@ class Client : Applet_Sub1() {
 
     override fun shutdownConnection() {
         Class231.aClass297_2993 = null
-        if (Class348_Sub23_Sub1.aClass297_8992 != null) {
+        if (Class348_Sub23_Sub1Statics.aClass297_8992 != null) {
             try {
-                Class348_Sub23_Sub1.aClass297_8992!!.method2234(103.toByte())
+                Class348_Sub23_Sub1Statics.aClass297_8992!!.method2234(103.toByte())
             } catch (exception: Exception) {
                 /* empty */
             }
@@ -1258,7 +1257,7 @@ class Client : Applet_Sub1() {
     }
 
     override fun pumpAwtEventQueue() {
-        Class369_Sub3_Sub1Statics.method3578((-42).toByte(), WindowShells.instance?.currentDisplayTarget, Class348_Sub23_Sub1.aClass297_8992)
+        Class369_Sub3_Sub1Statics.method3578((-42).toByte(), WindowShells.instance?.currentDisplayTarget, Class348_Sub23_Sub1Statics.aClass297_8992)
     }
 
     override fun method95(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, string: String?, i_19_: Int) {
@@ -1274,9 +1273,9 @@ class Client : Applet_Sub1() {
                 Class348_Sub1_Sub3.anInt8818 = i_15_
                 AppletRoot.instance = this
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
-                Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
-                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-                val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, -10240, 1)
+                Class348_Sub23_Sub1Statics.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
+                Class231.aClass297_2993 = Class348_Sub23_Sub1Statics.aClass297_8992
+                val class144 = Class348_Sub23_Sub1Statics.aClass297_8992!!.method2236(Runnable { run() }, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
                 while (class144.anInt1997 == 0) Class286_Sub5Statics.method2161((-126).toByte(), 10L)
             } else {
@@ -1303,9 +1302,9 @@ class Client : Applet_Sub1() {
             Class348_Sub1_Sub3.anInt8818 = i_21_
             Class348_Sub8.anApplet6662 = null
             WindowShells.instance!!.createFrame(Class272Statics.anInt3473, Class348_Sub22Statics.anInt6857, this)
-            Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
-            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, i_23_ + -33739, 1)
+            Class348_Sub23_Sub1Statics.aClass297_8992 = Class297(i, string, i_22_, true)
+            Class231.aClass297_2993 = Class348_Sub23_Sub1Statics.aClass297_8992
+            val class144 = Class348_Sub23_Sub1Statics.aClass297_8992!!.method2236(Runnable { run() }, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) Class286_Sub5Statics.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
             Class156.method1242(null, exception, i_23_ + -8495)
@@ -1319,7 +1318,7 @@ class Client : Applet_Sub1() {
         method556(false)
         if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654!!.method3635(89.toByte())
         if (Class34.aFrame476 != null) {
-            method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false)
+            method527(Class34.aFrame476, Class348_Sub23_Sub1Statics.aClass297_8992, false)
             Class34.aFrame476 = null
         }
         if (Class348_Sub40_Sub8.aClass238_9165 != null) {
@@ -1421,8 +1420,8 @@ class Client : Applet_Sub1() {
             }
             val string_28_ = this.getParameter("frombilling")
             if (string_28_ != null && string_28_ == "true") Class375.aBoolean4540 = true
-            Class348_Sub23_Sub3.aString9043 = this.getParameter("sskey")
-            if (Class348_Sub23_Sub3.aString9043 != null && Class348_Sub23_Sub3.aString9043!!.length < 2) Class348_Sub23_Sub3.aString9043 = null
+            Class348_Sub23_Sub3Statics.aString9043 = this.getParameter("sskey")
+            if (Class348_Sub23_Sub3Statics.aString9043 != null && Class348_Sub23_Sub3Statics.aString9043!!.length < 2) Class348_Sub23_Sub3Statics.aString9043 = null
             val string_29_ = this.getParameter("force64mb")
             if (string_29_ != null && string_29_ == "true") Class161.aBoolean2151 = true
             val string_30_ = this.getParameter("worldflags")
@@ -1590,7 +1589,7 @@ class Client : Applet_Sub1() {
                     Class11.anInt193++
                     if (Class11.anInt193 > 50) {
                         IOException_Sub1.anInt88++
-                        val class348_sub47 = method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -104)
+                        val class348_sub47 = method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2Statics.aClass77_9029), -104)
                         method3243(-49, class348_sub47)
                     }
                     try {
@@ -1696,7 +1695,7 @@ class Client : Applet_Sub1() {
         // Applet-canvas grab: when running inside a host applet that already owns a Canvas, steal
         // it via reflection and hand it to the WindowShell as the DisplayTarget.
         // On web/native this path is dead — the WindowShell provides the canvas directly.
-        if (Class93.anApplet1530 != null && WindowShells.instance?.currentDisplayTarget == null && !Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
+        if (Class93.anApplet1530 != null && WindowShells.instance?.currentDisplayTarget == null && !Class348_Sub23_Sub1Statics.aClass297_8992!!.aBoolean3794) {
             if (WindowShells.instance?.tryAdoptHostCanvas() == true) return
         }
         super.method87((-28).toByte())
@@ -1764,7 +1763,7 @@ class Client : Applet_Sub1() {
                 }
             }
             if (method3263(bool)) method207(Class348_Sub8.aHa6654, 124.toByte())
-            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && Class260.method1977((-79).toByte(), Class240.anInt4674) && haStatics.glDebugMode == 0 && method3229(-85) == 1 && !bool_120_) {
+            if (Class348_Sub23_Sub1Statics.aClass297_8992!!.aBoolean3794 && Class260.method1977((-79).toByte(), Class240.anInt4674) && haStatics.glDebugMode == 0 && method3229(-85) == 1 && !bool_120_) {
                 var i = 0
                 var i_121_ = 0
                 while ((Class348_Sub38.anInt7008 > i_121_)) {
@@ -1999,7 +1998,7 @@ class Client : Applet_Sub1() {
                     Class161.aBoolean2151 = false
                     Class239_Sub12.aString5966 = ""
                     Class244.aLong4615 = 0L
-                    Class348_Sub23_Sub3.aString9043 = null
+                    Class348_Sub23_Sub3Statics.aString9043 = null
                     Class202.anInt2670 = 0
                     Class155.aBoolean2110 = true
                     Class206.aBoolean4888 = Class155.aBoolean2110

@@ -17,7 +17,10 @@ class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState) :
         var anInt9040: Int = 0
         var anInt9041: Int = 0
         var anIntArray9042: IntArray? = null
-        var aString9043: String? = null
+        // Promoted to Class348_Sub23_Sub3Statics so non-jagtheora callers (Client, etc.) need not import this class.
+        var aString9043: String?
+            get() = Class348_Sub23_Sub3Statics.aString9043
+            set(v) { Class348_Sub23_Sub3Statics.aString9043 = v }
         var aShort9044: Short = 256
         var anInt9045: Int = 0
         var anInt9046: Int = 0

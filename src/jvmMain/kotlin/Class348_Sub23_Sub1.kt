@@ -101,7 +101,10 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
         var anInt8989: Int = 0
         var anInt8990: Int = 0
         var anInt8991: Int = 0
-        var aClass297_8992: Class297? = null
+        // Promoted to Class348_Sub23_Sub1Statics so non-jagtheora callers (Client, etc.) need not import this class.
+        var aClass297_8992: Class297?
+            get() = Class348_Sub23_Sub1Statics.aClass297_8992
+            set(v) { Class348_Sub23_Sub1Statics.aClass297_8992 = v }
         var aByteArrayArray8996: Array<ByteArray?>? = null
         var anInt8997: Int = 0
         var anInt8998: Int = 0
@@ -119,9 +122,8 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
 
         @JvmStatic
         fun method2968(i: Byte) {
-            aClass297_8992 = null
+            Class348_Sub23_Sub1Statics.method2968(i)
             aByteArrayArray8996 = null
-            if (i > -114) Companion.method2968((-12).toByte())
         }
 
         @JvmStatic
