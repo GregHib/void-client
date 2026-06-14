@@ -626,13 +626,7 @@ class Client : Applet_Sub1() {
     public override fun method92(i: Int) {
         if (Class161.aBoolean2151) Class226.anInt2964 = 64
         anInt5177++
-        // Force AWT subsystem initialisation on JVM (original: `Frame("Jagex").pack().dispose()`).
-        // Routed through WindowShell so the call site has no direct AWT import.
-        AwtWindowShell.instance?.let {
-            val f = java.awt.Frame("Jagex")
-            f.pack()
-            f.dispose()
-        }
+        WindowShells.instance?.forceToolkitInit()
         method3556(false)
         Class39.aClass112_520 = Class112(Class348_Sub23_Sub1.aClass297_8992!!)
         Class348_Sub4.aClass248_6601 = Class248()

@@ -194,6 +194,12 @@ class AwtWindowShell(
         Class52.aFrame4904 = f
     }
 
+    override fun forceToolkitInit() {
+        val f = Frame("Jagex")
+        f.pack()
+        f.dispose()
+    }
+
     /** Set / clear the full-screen frame. Mirrors writes to `Class34.aFrame476`. */
     fun setFullscreenFrame(f: Frame?) {
         fullscreenFrame = f

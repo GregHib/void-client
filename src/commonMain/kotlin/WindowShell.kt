@@ -104,6 +104,16 @@ interface WindowShell {
      * launcher path). No-op on platforms that don't use a separate window.
      */
     fun createFrame(width: Int, height: Int, callbacks: AppletWindowCallbacks) {}
+
+    /**
+     * Force the platform windowing toolkit to initialise if it has not already done so.
+     *
+     * On JVM this performs the `Frame("Jagex").pack().dispose()` dance required before any
+     * AWT rendering call. On other platforms this is a no-op.
+     *
+     * Called once from [Client.method92] before the first render pipeline setup.
+     */
+    fun forceToolkitInit() {}
 }
 
 /** Singleton accessor — set once at startup by the platform entry point (e.g. Loader). */
