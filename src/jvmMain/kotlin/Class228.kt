@@ -1,5 +1,5 @@
 import java.io.File
-import java.util.*
+import java.util.Vector
 
 object Class228 {
     var anInt2971: Int = 0
@@ -17,20 +17,14 @@ object Class228 {
 
     fun method1629(bool: Boolean): Boolean {
         anInt2973++
-        val hashtable: Hashtable<Any?, Any?> = Hashtable<Any?, Any?>()
-        var enumeration: Enumeration<*> = Player.aHashtable10565!!.keys()
-        while (enumeration.hasMoreElements()) {
-            val `object`: Any? = enumeration.nextElement()
-            hashtable.put(`object`, Player.aHashtable10565!!.get(`object`))
-        }
+        val hashtable: HashMap<Any?, Any?> = HashMap<Any?, Any?>(Player.aHashtable10565!!)
         try {
             val field = ClassLoader::class.java.getDeclaredField("nativeLibraries")
             if (bool != true) return false
             field.setAccessible(true)
             try {
-                enumeration = Player.aHashtable10565!!.keys()
-                while (enumeration.hasMoreElements()) {
-                    val string = enumeration.nextElement() as String?
+                for (key in Player.aHashtable10565!!.keys.toList()) {
+                    val string = key as String?
                     try {
                         val file = Class275.aHashtable3548!!.get(string) as File
                         val var_class_1_ = Player.aHashtable10565!!.get(string) as Class<*>?

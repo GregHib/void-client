@@ -1,4 +1,3 @@
-import java.util.*
 import kotlin.math.atan2
 
 class Player : Class318_Sub1_Sub3_Sub3() {
@@ -625,7 +624,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         var anInt10559: Int = 0
         var anInt10562: Int = 0
         var anInt10563: Int = 0
-        var aHashtable10565: Hashtable<Any?, Any?>? = Hashtable<Any?, Any?>()
+        var aHashtable10565: HashMap<Any?, Any?>? = HashMap<Any?, Any?>()
         var anIntArray10566: IntArray? = null
         var anInt10567: Int = -1
 
