@@ -35,18 +35,22 @@ interface CacheStorageFactory {
 }
 
 /**
- * Singleton holder for the platform [CacheStorageFactory].
+ * Platform factory for [CacheStorageFactory] instances.
  *
- * JVM: installed by [ClientBootstrap.installCommon] with [FileCacheStorage].
- * JS:  installed by [ClientBootstrap.installCommon] with [OPFSCacheStorage].
+ * Holds a constructor lambda so each signlink ([Class297] on JVM, or a future common
+ * equivalent) gets its own independent [CacheStorageFactory] — sharing one instance
+ * across multiple signlink lifetimes would cause store-reopen collisions.
  *
- * [Class297] (JVM signlink) uses [instance] so that common code that migrates to
- * commonMain can access the same factory without an AWT/JVM dependency.
+ * JVM: registered by [ClientBootstrap.installCommon] with `{ FileCacheStorage() }`.
+ * JS:  registered by [ClientBootstrap.installCommon] with `{ OPFSCacheStorage() }`.
  */
 object CacheStorageFactories {
-    lateinit var instance: CacheStorageFactory
+    private lateinit var ctor: () -> CacheStorageFactory
 
-    fun install(factory: CacheStorageFactory) {
-        instance = factory
+    fun install(factory: () -> CacheStorageFactory) {
+        ctor = factory
     }
+
+    /** Create a new [CacheStorageFactory] instance for one signlink lifetime. */
+    fun create(): CacheStorageFactory = ctor()
 }

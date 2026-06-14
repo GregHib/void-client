@@ -104,8 +104,8 @@ class Loader : Panel(), GameApplet {
                 glyphRasterizerFactory = { target -> AwtGlyphRasterizer((target as AwtDisplayTarget).canvas) },
                 clipboard = clipboard,
                 socketOpener = JvmSocketOpener(),
-                cacheStorage = FileCacheStorage(),
-                audioSink = JavaSoundAudioSink(),
+                cacheStorage = { FileCacheStorage() },
+                audioSink = { JavaSoundAudioSink() },
                 windowShell = AwtWindowShell.instance!!,
             )
 

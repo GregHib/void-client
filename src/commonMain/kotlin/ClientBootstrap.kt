@@ -36,8 +36,8 @@ object ClientBootstrap {
      * @param glyphRasterizerFactory  Factory producing a [GlyphRasterizer] from a [DisplayTarget].
      * @param clipboard          Optional platform clipboard; null when unavailable (headless JVM, sandboxed JS).
      * @param socketOpener       Platform [SocketOpener] (JVM: [JvmSocketOpener]; JS: [JsSocketOpener]).
-     * @param cacheStorage       Platform [CacheStorageFactory] (JVM: [FileCacheStorage]; JS: [OPFSCacheStorage]).
-     * @param audioSink          Platform [AudioSink] (JVM: [JavaSoundAudioSink]; JS: [WebAudioSink]).
+     * @param cacheStorage       Factory producing a fresh [CacheStorageFactory] per signlink (JVM: [FileCacheStorage]; JS: [OPFSCacheStorage]).
+     * @param audioSink          Factory producing a fresh [AudioSink] per synth engine (JVM: [JavaSoundAudioSink]; JS: [WebAudioSink]).
      * @param windowShell        Platform [WindowShell] (JVM: [AwtWindowShell]; JS: [JsWindowShell]).
      */
     fun installCommon(
@@ -49,8 +49,8 @@ object ClientBootstrap {
         glyphRasterizerFactory: (DisplayTarget) -> GlyphRasterizer,
         clipboard: SystemClipboard?,
         socketOpener: SocketOpener,
-        cacheStorage: CacheStorageFactory,
-        audioSink: AudioSink,
+        cacheStorage: () -> CacheStorageFactory,
+        audioSink: () -> AudioSink,
         windowShell: WindowShell,
     ) {
         Workers.install(workers)

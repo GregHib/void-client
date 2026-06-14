@@ -25,8 +25,8 @@ fun main() {
         glyphRasterizerFactory = jsGlyphFactory,
         clipboard = null, // TODO: navigator.clipboard wrapper
         socketOpener = JsSocketOpener(),
-        cacheStorage = OPFSCacheStorage(),
-        audioSink = WebAudioSink(),
+        cacheStorage = { OPFSCacheStorage() },
+        audioSink = { WebAudioSink() },
         windowShell = jsWindowShell,
     )
 }

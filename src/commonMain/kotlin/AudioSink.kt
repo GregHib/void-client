@@ -36,18 +36,22 @@ interface AudioSink {
 }
 
 /**
- * Singleton holder for the platform [AudioSink].
+ * Platform factory for [AudioSink] instances.
  *
- * JVM: installed by [ClientBootstrap.installCommon] with [JavaSoundAudioSink].
- * JS:  installed by [ClientBootstrap.installCommon] with [WebAudioSink].
+ * Holds a constructor lambda so each [Class279] subclass that drives a synth engine
+ * gets its own independent [AudioSink] — sharing one instance across multiple engine
+ * instances would cause SourceDataLine / WebAudio contention.
  *
- * [Class279_Sub1] (JVM adapter) obtains the sink via [instance] so that the
- * synth-engine wiring is the same across all targets.
+ * JVM: registered by [ClientBootstrap.installCommon] with `{ JavaSoundAudioSink() }`.
+ * JS:  registered by [ClientBootstrap.installCommon] with `{ WebAudioSink() }`.
  */
 object AudioSinks {
-    lateinit var instance: AudioSink
+    private lateinit var ctor: () -> AudioSink
 
-    fun install(sink: AudioSink) {
-        instance = sink
+    fun install(factory: () -> AudioSink) {
+        ctor = factory
     }
+
+    /** Create a new [AudioSink] instance for one synth-engine lifetime. */
+    fun create(): AudioSink = ctor()
 }
