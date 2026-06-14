@@ -1,5 +1,6 @@
 import kotlinx.browser.document
 import kotlinx.browser.window
+import org.w3c.dom.CanvasRenderingContext2D
 import org.w3c.dom.HTMLCanvasElement
 import org.w3c.dom.events.Event
 
@@ -32,6 +33,12 @@ class JsWindowShell : WindowShell, DisplayTarget {
             document.body?.appendChild(c)
                 ?: error("JsWindowShell: document.body is null — ensure JS runs after DOMContentLoaded")
         }
+
+    // ── 2D context (consumed by JsGameSurface) ───────────────────────────────
+
+    /** The 2D rendering context used by [JsGameSurface] to blit the framebuffer. */
+    val canvas2d: CanvasRenderingContext2D =
+        canvas.getContext("2d") as CanvasRenderingContext2D
 
     // ── DisplayTarget (self) ──────────────────────────────────────────────────
 
