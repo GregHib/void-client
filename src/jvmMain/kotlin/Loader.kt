@@ -107,6 +107,7 @@ class Loader : Panel(), GameApplet {
                 cacheStorage = { FileCacheStorage() },
                 audioSink = { JavaSoundAudioSink() },
                 windowShell = AwtWindowShell.instance!!,
+                nativeLibraryProbe = JvmNativeLibraryProbe(Client::class.java.classLoader),
             )
 
             val var_client = Client()

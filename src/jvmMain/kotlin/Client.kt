@@ -1827,47 +1827,8 @@ class Client : Applet_Sub1() {
             string += "13)" + Class226.anInt2964 + "|"
             string += "14)" + Class240.anInt4674
             if (Class348_Sub40_Sub20.aClass348_Sub4_9264 != null) string += "|15)" + (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609)
-            try {
-                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
-                    val field = ClassLoader::class.java.getDeclaredField("nativeLibraries")
-                    field.setAccessible(true)
-                    val vector = (field.get((if (aClass5189 != null) aClass5189 else (Client::class.java.also { aClass5189 = it }))!!.getClassLoader()) as Vector<*>)
-                    for (i_135_ in vector.indices) {
-                        try {
-                            val `object`: Any = vector.elementAt(i_135_)
-                            val field_136_ = `object`.javaClass.getDeclaredField("name")
-                            field_136_.setAccessible(true)
-                            try {
-                                val string_137_ = field_136_.get(`object`) as String?
-
-                                if (string_137_ != null && string_137_.indexOf("sw3d.dll") != -1) {
-                                    val field_138_ = `object`.javaClass.getDeclaredField("handle")
-
-
-                                    field_138_.setAccessible(true)
-                                    string += ("|16)" + (java.lang.Long.toHexString(field_138_.getLong(`object`))))
-                                    field_138_.setAccessible(false)
-                                }
-                            } catch (throwable: Throwable) {
-                                if (Loader.trace) {
-                                    throwable.printStackTrace()
-                                }
-                                /* empty */
-                            }
-                            field_136_.setAccessible(false)
-                        } catch (throwable: Throwable) {
-                            if (Loader.trace) {
-                                throwable.printStackTrace()
-                            }
-                            /* empty */
-                        }
-                    }
-                }
-            } catch (throwable: Throwable) {
-                if (Loader.trace) {
-                    throwable.printStackTrace()
-                }
-                /* empty */
+            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
+                NativeLibraryProbes.instance?.hexHandleFor("sw3d.dll")?.let { string += "|16)$it" }
             }
             string += "]"
         } catch (throwable: Throwable) {

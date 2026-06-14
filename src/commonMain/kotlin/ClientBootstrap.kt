@@ -39,6 +39,8 @@ object ClientBootstrap {
      * @param cacheStorage       Factory producing a fresh [CacheStorageFactory] per signlink (JVM: [FileCacheStorage]; JS: [OPFSCacheStorage]).
      * @param audioSink          Factory producing a fresh [AudioSink] per synth engine (JVM: [JavaSoundAudioSink]; JS: [WebAudioSink]).
      * @param windowShell        Platform [WindowShell] (JVM: [AwtWindowShell]; JS: [JsWindowShell]).
+     * @param nativeLibraryProbe Optional probe for native-library handles (JVM: [JvmNativeLibraryProbe];
+     *                           JS: null — no native libraries exist in a browser).
      */
     fun installCommon(
         workers: WorkerFactory,
@@ -52,6 +54,7 @@ object ClientBootstrap {
         cacheStorage: () -> CacheStorageFactory,
         audioSink: () -> AudioSink,
         windowShell: WindowShell,
+        nativeLibraryProbe: NativeLibraryProbe? = null,
     ) {
         Workers.install(workers)
         GameLoops.install(gameLoop)
@@ -64,5 +67,6 @@ object ClientBootstrap {
         CacheStorageFactories.install(cacheStorage)
         AudioSinks.install(audioSink)
         WindowShells.instance = windowShell
+        NativeLibraryProbes.instance = nativeLibraryProbe
     }
 }
