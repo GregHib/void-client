@@ -179,7 +179,134 @@ Decisive structural result: **`ha_Sub1` (software renderer, ~2,400 LOC) has been
 
 #### Status — Phase 3 completed
 
-### Phase 4 — Web target (4–8 weeks)
+### Phase 4 — Web target (4–8 weeks) — **IN PROGRESS (as of 2026-06-13)**
+
+The original Phase-4 outline (kept for reference below) has partly landed. What follows is the
+**current state** and a **precise step-by-step plan to the first milestone: a login screen rendered
+by the software renderer in the browser.**
+
+#### Phase 4 — current state
+
+The `js()` target exists and **`compileKotlinJs` is green.** `commonMain` holds the game core
+(73→ files); `Applet_Sub1`, `GameApplet`, `ha`, and `ha_Sub1` are all in `commonMain` and
+import-clean. The single largest remaining fact: **`Client.kt` (2,704 LOC) is still the only
+game-shell class in `jvmMain`, but it is ~99% common-ready** — its entire platform footprint is
+three guarded AWT sites (see step 1). Moving it is the keystone of this milestone.
+
+What already exists on the JS side (`src/jsMain/kotlin/`):
+
+| Concern | JS artifact | Wired in `Main.js.kt`? |
+|---|---|---|
+| All leaf `expect`/`actual` (Clock, Locking, CurrentThread, SystemProperties, SoftRef, TrigTables, IO/EOF exceptions, Calendar, ~12 `ClassNNNStatics`) | `*.js.kt` | n/a (compiler-resolved) |
+| Networking | `JsSocketOpener`, `WebSocketConnection : Class238` | **yes** — `Connections.install(JsSocketOpener())` |
+| Cache | `OPFSCacheStorage : CacheStorageFactory` | no (not installed) |
+| Audio | `WebAudioSink : AudioSink` | no (not installed) |
+| Keyboard | `JsKeyboardInput : Class346` | **defined, never instantiated** |
+| Mouse | `JsMouseInput : Class373` | **defined, never instantiated** |
+| Bootstrap | `Main.js.kt` | installs networking only |
+
+#### Phase 4 — what is MISSING for the login milestone (verified gap list)
+
+These JS implementations do **not** exist yet (`grep` of `src/jsMain` confirms zero matches):
+`JsWindowShell`, `JsGameSurface`, `JsGameSurfaceFactory`, `JsGlyphRasterizer`, `JsRuntimeInfo`,
+`JsGameLogger`, `JsWorkerFactory`, `JsSleeper`, `JsGameLoop`, and the JS-side renderer-construction
+path that mirrors `haStatics.method3692` / `method2753`.
+
+#### Phase 4 — precise step-by-step plan to a browser login screen
+
+Each step keeps `compileKotlinJvm` **and** `compileKotlinJs` green and ends with a gradle build +
+commit. Steps 1–4 are pure refactors validated on the JVM oracle *before* any JS code depends on
+them; steps 5–13 are net-new JS code; step 14 is the runtime bring-up.
+
+**Step 1 — Make `Client` common-ready, then move it to `commonMain`.**
+`Client.kt` has exactly three AWT touchpoints, all already guarded/dead-on-web:
+  - L632 `Frame("Jagex").pack().dispose()` — an AWT-init hack inside `method92`, guarded by
+    `AwtWindowShell.instance?.let`. Replace with a no-arg `WindowShells.instance?.forceToolkitInit()`
+    seam method (JVM actual does the Frame dance; JS is a no-op).
+  - L682 `Toolkit.getDefaultToolkit().getSystemClipboard()` — already wrapped in `AwtClipboard`.
+    Move the `Toolkit` acquisition into the JVM `SystemClipboard` install path so `Client` only
+    references the common `SystemClipboard` seam.
+  - L1715 applet-canvas-grab reflection (`java.awt.Canvas`) — dead on web (`Class93.anApplet1530`
+    is always null there). Extract the whole block into a `WindowShell.tryAdoptHostCanvas(): Boolean`
+    default-`false` method; JVM actual keeps the reflection.
+  Then delete `import java.awt.Toolkit`, replace `java.util.*` usages already covered by common
+  shims, and move `Client.kt` from `jvmMain` to `commonMain`. Rebuild **both** targets.
+
+**Step 2 — Add a renderer-construction seam for the software toolkit.**
+`ha_Sub1` is built only inside `haStatics.method3692`/`method2753` (jvmMain), which hardcodes
+`AwtDisplayTarget` + `AwtGameSurfaceFactory` and all the common factory lambdas. Extract the
+software-toolkit branch (`i_171_ == 0`) into a common `SoftwareToolkitFactory` that takes a
+`GameSurfaceFactory` + `DisplayTarget` and supplies the (already-common) `interface13/4`, `class64`,
+`s`, `class167`, `class60`, `class324`, `class105` factory lambdas. JVM keeps `method3692` as the
+GL/D3D dispatcher delegating its software branch to the common factory; JS calls the common factory
+directly. (The GL/D3D branches stay jvm-only.)
+
+**Step 3 — Add a `GlyphRasterizerFactory` seam.**
+`AwtGlyphRasterizer` is constructed inline at 8+ sites (`Class199`, `Class294`, `Class318_Sub7`)
+referencing `Class305.aCanvas3869`. Introduce `object GlyphRasterizers { var factory: (DisplayTarget) -> GlyphRasterizer }`
+in commonMain; replace the inline `AwtGlyphRasterizer(Class305.aCanvas3869!!)` calls with
+`GlyphRasterizers.factory(currentTarget)`. JVM installs the AWT factory; JS installs the canvas-2D one (step 9).
+
+**Step 4 — Add `RuntimeInfoProvider`/`WindowShells`/clipboard install hooks to a common bootstrap helper.**
+Factor the seam-install sequence in `Loader.startClient()` into a common
+`ClientBootstrap.installCommon(...)` so the JS entry point shares one ordering contract with JVM and
+the two can't drift. (Leave the JVM-specific Frame/Panel setup in `Loader`.)
+
+**Step 5 — `JsGameLoop : GameLoop`** — drive the frame via `requestAnimationFrame`, calling
+`GameFrame.runFrame()` once per rAF tick (the frame body was already extracted to `runFrame()` in
+Phase 3). This replaces the JVM blocking driver and is the single structural pivot for the
+single-threaded web runtime.
+
+**Step 6 — `JsSleeper : Sleeper`** — `sleep(ms)` becomes a no-op / `yield`; the rAF loop owns
+pacing. Verify no login-path code blocks on a real sleep (the one `Thread.sleep` site, Class327,
+routes through this seam).
+
+**Step 7 — `JsWorkerFactory : WorkerFactory`** — for the login screen the JS5/cache fetch and
+the connection pump must run cooperatively. Implement workers as coroutine jobs on the main
+dispatcher (or fold the decoder pump into the rAF loop). Confirm the JS5 pump (Class202, already
+net-clean and Class238-based) makes progress without a real thread.
+
+**Step 8 — `JsWindowShell : WindowShell`** — create/own the `<canvas>` element, implement
+`provideDisplayTarget` (returns a JS `DisplayTarget`), `clientWidth/Height`, `repositionCanvas`,
+`releaseDisplayTarget`, `shutdown`, `forceToolkitInit` (no-op), `tryAdoptHostCanvas` (false). Wire
+`AppletWindowCallbacks` (focus/resize) to DOM events. Set `WindowShells.instance`.
+
+**Step 9 — `JsGameSurface : GameSurface` + `JsGameSurfaceFactory : GameSurfaceFactory`** — back the
+surface with an `ImageData`/`Uint8ClampedArray`; `present()` does `ctx.putImageData` after converting
+the ARGB `IntArray` `pixels` to RGBA. This is the actual blit that puts the software renderer's
+framebuffer on screen.
+
+**Step 10 — `JsGlyphRasterizer : GlyphRasterizer` (+ `RasterFont`)** — measure with canvas-2D
+`measureText`, draw glyphs to an offscreen canvas, read back `getImageData` to an ARGB `IntArray`.
+Install via `GlyphRasterizers.factory` (step 3). Required because the login screen draws text.
+
+**Step 11 — `JsRuntimeInfo : RuntimeInfo`** — return sane stubs (memory via
+`performance.memory` if present else 0; `availableProcessors = navigator.hardwareConcurrency`;
+`exec` no-op). Install `RuntimeInfoProvider.instance`.
+
+**Step 12 — `JsGameLogger : GameLogger`** — forward to `console.log` (optional but cheap;
+default no-op also works).
+
+**Step 13 — Cache + audio install** — call `CacheStorageFactory` install with `OPFSCacheStorage`
+(the JVM path goes through `Class297`; JS needs an explicit install since there is no signlink),
+and `AudioSink` install with `WebAudioSink`. Audio is not strictly required to *see* the login
+screen but the init path may touch it.
+
+**Step 14 — Flesh out `Main.js.kt` bootstrap + `index.html` + serve.**
+Replicate `Loader.startClient()` ordering on JS: set the `Properties` params (port the
+`Loader.setParms()` map), `ClientBootstrap.installCommon(...)`, install all the Js* seams from
+steps 5–13, `WindowShells.instance = JsWindowShell(...)`, instantiate the (now-common) `Client`,
+`init()` + `start()`, then hand the rAF loop control. Add a `webpack`/`browserDistribution` gradle
+task; serve `index.html` + the JS bundle from a static host. **Stand up the `proxy/` WebSocket→TCP
+bridge (a ~100-line Ktor server)** so `JsSocketOpener`'s `WebSocketConnection` can reach the JS5
+content server — the login screen background/sprites/fonts are loaded from the cache *and* JS5, so
+JS5 connectivity is on the login critical path. (Point it at a local 634-compatible content server.)
+
+**Milestone check:** open the page → software-rendered login screen with title background, logo,
+buttons, and text. Then proceed to world login (full `GameConnection` + RSA login block — RSA is
+already common via `BigInt`), then a playability pass.
+
+#### Phase 4 — original outline (reference)
 1. Add `js()` + `wasmJs()` targets, `webMain` shared source set, `app-web` bootstrap (canvas, input bindings, OPFS `CacheStorage`, WebAudio `AudioSink`).
 2. Build the `proxy/` WebSocket→TCP bridge; `GameConnection` web impl over WebSocket.
 3. Milestone: **login screen via software renderer in browser**; then world login, then playability pass (perf: software renderer at 765×503 is fine even in Wasm; profile before optimizing).
