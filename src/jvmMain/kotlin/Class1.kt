@@ -1,6 +1,5 @@
 import com.ms.com.ComFailException
 import com.ms.directX.*
-import java.awt.Component
 
 class Class1 : Interface20 {
     private val aDSBufferDescArray5152: Array<DSBufferDesc?>
@@ -79,7 +78,7 @@ class Class1 : Interface20 {
     }
 
     @Throws(Exception::class)
-    override fun method78(i: Int, bool: Boolean, component: Component?, i_11_: Int) {
+    override fun method78(i: Int, bool: Boolean, component: Any?, i_11_: Int) {
         if (anInt5158 == 0) {
             require(!(i < 8000 || i > 48000))
             anInt5157 = if (!bool) 1 else 2
@@ -87,7 +86,7 @@ class Class1 : Interface20 {
             anInt5161 = if (bool) 4 else 2
             anIntArray5154 = IntArray(anInt5157 * 256)
             aDirectSound5162!!.initialize(null)
-            aDirectSound5162!!.setCooperativeLevel(component, 2)
+            aDirectSound5162!!.setCooperativeLevel(component as? java.awt.Component, 2)
             for (i_12_ in 0..1) aDSBufferDescArray5152[i_12_]!!.flags = 16384
             aWaveFormatEx5163.avgBytesPerSec = anInt5161 * i
             aWaveFormatEx5163.formatTag = 1

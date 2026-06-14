@@ -1,5 +1,3 @@
-import java.awt.Component
-
 /**
  * JVM software-mixed audio output. The javax.sound.sampled device handling now lives behind the
  * commonMain [AudioSink] interface (impl: [JavaSoundAudioSink]); this class is the thin adapter that
@@ -18,7 +16,7 @@ class Class279_Sub1 : Class279() {
         sink.open(i)
     }
 
-    override fun method2095(component: Component?) {
+    override fun method2095(component: Any?) {
         sink.init(Class22.anInt339, Class282.aBoolean3652)
     }
 

@@ -1,7 +1,6 @@
 import Class214.method1573
 import Class286_Sub5.Companion.method2161
 import Class62.method599
-import java.awt.Component
 import kotlin.math.min
 
 open class Class279 {
@@ -254,7 +253,7 @@ open class Class279 {
     }
 
     @Throws(Exception::class)
-    open fun method2095(component: Component?) {
+    open fun method2095(component: Any?) {
         anInt3596++
     }
 

@@ -1,5 +1,3 @@
-import java.awt.Component
-
 interface Interface20 {
     fun method74(i: Int, i_0_: Byte)
 
@@ -10,7 +8,7 @@ interface Interface20 {
     fun method77(i: Byte, i_2_: Int)
 
     @Throws(Exception::class)
-    fun method78(i: Int, bool: Boolean, component: Component?, i_3_: Int)
+    fun method78(i: Int, bool: Boolean, component: Any?, i_3_: Int)
 
     @Throws(Exception::class)
     fun method79(i: Int, i_4_: Int, i_5_: Byte)

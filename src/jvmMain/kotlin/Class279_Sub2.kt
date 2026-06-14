@@ -1,5 +1,3 @@
-import java.awt.Component
-
 class Class279_Sub2 internal constructor(class297: Class297, private val anInt6181: Int) : Class279() {
     override fun method2083() {
         anInterface20_6182!!.method77(98.toByte(), anInt6181)
@@ -14,7 +12,7 @@ class Class279_Sub2 internal constructor(class297: Class297, private val anInt61
     }
 
     @Throws(Exception::class)
-    override fun method2095(component: Component?) {
+    override fun method2095(component: Any?) {
         anInterface20_6182!!.method78(Class22.anInt339, Class282.aBoolean3652, component, 27929)
     }
 

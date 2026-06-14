@@ -1,5 +1,3 @@
-import java.awt.Component
-
 class Class193 internal constructor(private val aClass377_2585: Class377, i: Int, var anInt2584: Int) {
     @Throws(Throwable::class)
     protected fun finalize() {
@@ -16,7 +14,7 @@ class Class193 internal constructor(private val aClass377_2585: Class377, i: Int
         var aClass202_2589: Class202? = null
         var anInt2590: Int = 0
 
-        fun method1439(i: Int, class297: Class297?, component: Component?, i_0_: Int, i_1_: Int): Class279 {
+        fun method1439(i: Int, class297: Class297?, component: Any?, i_0_: Int, i_1_: Int): Class279 {
             var i = i
             try {
                 anInt2583++
