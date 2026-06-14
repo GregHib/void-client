@@ -6,13 +6,13 @@ object Class149 {
     var aClass223_2045: Class223? = Class223(8, 1)
     var anInt2046: Int = 0
 
-    @JvmStatic
+
     fun method1200(bool: Boolean) {
         aClass223_2045 = null
         if (bool != false) anInt2046 = 37
     }
 
-    @JvmStatic
+
     fun method1201(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Int {
         var i_2_ = i_2_
         i_2_ = i_2_ and 0x3

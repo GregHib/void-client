@@ -51,7 +51,7 @@ object Class329 {
         Class329.method2623(var_ha, `is`, 0, `is`.size, i, null, null)
     }
 
-    @JvmStatic
+
     fun method2621() {
         anIntArray4107 = null
     }

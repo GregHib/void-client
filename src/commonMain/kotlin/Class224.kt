@@ -13,7 +13,7 @@ object Class224 {
         return null//JSObject.getWindow(applet).call(string, *objects)
     }
 
-    @JvmStatic
+
     @Throws(Throwable::class)
     fun method1617(i: Byte, applet: GameApplet?, string: String?): Any? {
         if (i.toInt() != 125) return null
