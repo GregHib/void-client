@@ -7,7 +7,7 @@ import java.awt.Component
  * SourceDataLine implementation.
  */
 class Class279_Sub1 : Class279() {
-    private val sink: AudioSink = JavaSoundAudioSink()
+    private val sink: AudioSink = AudioSinks.instance
 
     override fun method2091() {
         sink.close()

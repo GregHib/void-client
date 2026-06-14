@@ -33,3 +33,20 @@ interface CacheStorageFactory {
      */
     fun openPreferences(suffix: String?, variant: Int): CacheStore?
 }
+
+/**
+ * Singleton holder for the platform [CacheStorageFactory].
+ *
+ * JVM: installed by [ClientBootstrap.installCommon] with [FileCacheStorage].
+ * JS:  installed by [ClientBootstrap.installCommon] with [OPFSCacheStorage].
+ *
+ * [Class297] (JVM signlink) uses [instance] so that common code that migrates to
+ * commonMain can access the same factory without an AWT/JVM dependency.
+ */
+object CacheStorageFactories {
+    lateinit var instance: CacheStorageFactory
+
+    fun install(factory: CacheStorageFactory) {
+        instance = factory
+    }
+}

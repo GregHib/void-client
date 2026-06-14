@@ -34,3 +34,20 @@ interface AudioSink {
      */
     fun write(samples: IntArray, count: Int, stereo: Boolean)
 }
+
+/**
+ * Singleton holder for the platform [AudioSink].
+ *
+ * JVM: installed by [ClientBootstrap.installCommon] with [JavaSoundAudioSink].
+ * JS:  installed by [ClientBootstrap.installCommon] with [WebAudioSink].
+ *
+ * [Class279_Sub1] (JVM adapter) obtains the sink via [instance] so that the
+ * synth-engine wiring is the same across all targets.
+ */
+object AudioSinks {
+    lateinit var instance: AudioSink
+
+    fun install(sink: AudioSink) {
+        instance = sink
+    }
+}

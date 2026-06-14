@@ -23,7 +23,9 @@ object ClientBootstrap {
      *  7. [Clipboards] — optional (null = no clipboard); installed after GlyphRasterizers
      *     since clipboard is only needed at login and later.
      *  8. [Connections] — needed before the JS5 / login socket opens.
-     *  9. [WindowShells] — must be last so all rendering seams are ready before the
+     *  9. [CacheStorageFactories] — needed before [Class297] / the signlink opens cache stores.
+     * 10. [AudioSinks] — needed before the synth engine ([Class279]) opens a line.
+     * 11. [WindowShells] — must be last so all rendering seams are ready before the
      *     shell vends a [DisplayTarget].
      *
      * @param workers            Platform [WorkerFactory] (JVM: [ThreadWorkerFactory]; JS: coroutine-backed).
@@ -34,6 +36,8 @@ object ClientBootstrap {
      * @param glyphRasterizerFactory  Factory producing a [GlyphRasterizer] from a [DisplayTarget].
      * @param clipboard          Optional platform clipboard; null when unavailable (headless JVM, sandboxed JS).
      * @param socketOpener       Platform [SocketOpener] (JVM: [JvmSocketOpener]; JS: [JsSocketOpener]).
+     * @param cacheStorage       Platform [CacheStorageFactory] (JVM: [FileCacheStorage]; JS: [OPFSCacheStorage]).
+     * @param audioSink          Platform [AudioSink] (JVM: [JavaSoundAudioSink]; JS: [WebAudioSink]).
      * @param windowShell        Platform [WindowShell] (JVM: [AwtWindowShell]; JS: [JsWindowShell]).
      */
     fun installCommon(
@@ -45,6 +49,8 @@ object ClientBootstrap {
         glyphRasterizerFactory: (DisplayTarget) -> GlyphRasterizer,
         clipboard: SystemClipboard?,
         socketOpener: SocketOpener,
+        cacheStorage: CacheStorageFactory,
+        audioSink: AudioSink,
         windowShell: WindowShell,
     ) {
         Workers.install(workers)
@@ -55,6 +61,8 @@ object ClientBootstrap {
         GlyphRasterizers.install(glyphRasterizerFactory)
         if (clipboard != null) Clipboards.install(clipboard)
         Connections.install(socketOpener)
+        CacheStorageFactories.install(cacheStorage)
+        AudioSinks.install(audioSink)
         WindowShells.instance = windowShell
     }
 }

@@ -11,7 +11,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     var httpFetcher: HttpFetch = JvmHttpFetch
     private var aCallback_Sub1_3776: Callback_Sub1? = null
     var aBoolean3777: Boolean = false
-    internal val aCacheStorage: CacheStorageFactory = FileCacheStorage()
+    internal val aCacheStorage: CacheStorageFactory = CacheStorageFactories.instance
     var aClass234_3779: CacheStore? = null
     var aClass234_3785: CacheStore? = null
     private var anObject3787: Any? = null
