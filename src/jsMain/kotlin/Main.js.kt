@@ -12,11 +12,10 @@
 fun main() {
     // TODO(Phase-4): replace stubs below with real JS implementations as they land.
 
-    // Workers: JS is single-threaded; tasks run cooperatively driven by the frame loop.
+    // Workers: JS is single-threaded; tasks run cooperatively driven by the rAF frame loop.
     val jsWorkerFactory = object : WorkerFactory {
         override fun start(body: WorkerBody, daemon: Boolean, priority: Int?, name: String?): WorkerHandle {
             // Synchronous cooperative stub — runs body immediately on the calling "thread".
-            // Replace with a coroutine-backed scheduler once GameLoop is wired to rAF.
             body.run()
             return object : WorkerHandle { override fun join() {} }
         }
@@ -50,7 +49,7 @@ fun main() {
 
     ClientBootstrap.installCommon(
         workers = jsWorkerFactory,
-        gameLoop = object : GameLoop { override fun run(frame: GameFrame) { while (frame.runFrame()) {} } },
+        gameLoop = JsGameLoop(),
         sleeper = object : Sleeper { override fun sleep(millis: Long) { /* JS cannot block; frame loop provides pacing */ } },
         logger = object : GameLogger { override fun log(string: String, i: Int) { console.log("[$i] $string") } },
         runtimeInfo = jsRuntimeInfo,
