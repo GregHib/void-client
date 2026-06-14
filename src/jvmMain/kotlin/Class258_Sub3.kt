@@ -242,11 +242,11 @@ open class Class258_Sub3 : Class258 {
             while (true) {
                 try {
                     val image = Toolkit.getDefaultToolkit().createImage(`is`)
-                    val mediatracker = MediaTracker(Class305.aCanvas3869)
+                    val mediatracker = MediaTracker(Class305Statics.aCanvas3869)
                     mediatracker.addImage(image, 0)
                     mediatracker.waitForAll()
-                    val i_58_ = image.getWidth(Class305.aCanvas3869)
-                    val i_59_ = image.getHeight(Class305.aCanvas3869)
+                    val i_58_ = image.getWidth(Class305Statics.aCanvas3869)
+                    val i_59_ = image.getHeight(Class305Statics.aCanvas3869)
                     if (mediatracker.isErrorAny() || i_58_ < 0 || i_59_ < 0) throw RuntimeException("")
                     val is_60_ = IntArray(i_59_ * i_58_)
                     val pixelgrabber = PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_)

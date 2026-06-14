@@ -81,7 +81,7 @@ class Class239_Sub14 : Class239 {
                 if (i != Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) return -1
             }
             try {
-                val dimension = Class305.aCanvas3869!!.getSize()
+                val dimension = Class305Statics.aCanvas3869!!.getSize()
                 Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3496!!.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654)
                 val class124 = Class300.method2277(0, aa_Sub3Statics.aClass45_5207!!, Class348_Sub31.anInt6923, -1)
                 val l = Class62.method599(-88)

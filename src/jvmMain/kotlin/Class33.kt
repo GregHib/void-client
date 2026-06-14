@@ -52,12 +52,12 @@ class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45
                     val class207 = class222.method1610(71.toByte())
                     if (class207 == null) i_0_ = -1
                     else {
-                        Class348_Sub23_Sub1.aClass297_8992!!.method2238(class207.method1522(), class207.method1516(), 17, Point(class222.anInt2883, class222.anInt2890), Class305.aCanvas3869, class207.method1510())
+                        Class348_Sub23_Sub1.aClass297_8992!!.method2238(class207.method1522(), class207.method1516(), 17, Point(class222.anInt2883, class222.anInt2890), Class305Statics.aCanvas3869, class207.method1510())
                         Class337.anInt4179 = i_0_
                     }
                 }
                 if (i_0_ == -1 && Class337.anInt4179 != -1) {
-                    Class348_Sub23_Sub1.aClass297_8992!!.method2238(-1, null, i + 17, Point(), (Class305.aCanvas3869), -1)
+                    Class348_Sub23_Sub1.aClass297_8992!!.method2238(-1, null, i + 17, Point(), (Class305Statics.aCanvas3869), -1)
                     Class337.anInt4179 = -1
                 }
             }

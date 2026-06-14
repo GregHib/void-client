@@ -45,10 +45,10 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
             try {
                 anInt2627++
                 try {
-                    val graphics = Class305.aCanvas3869!!.getGraphics()
+                    val graphics = Class305Statics.aCanvas3869!!.getGraphics()
                     if (Class351.aRasterFont4329 == null) Class351.aRasterFont4329 = GlyphRasterizers.factory(Class305.aDisplayTarget3869!!).open(13, true)
                     try {
-                        if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
+                        if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305Statics.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
                         val graphics_3_ = Class342.anImage4249!!.getGraphics()
                         graphics_3_.setColor(Color.black)
                         graphics_3_.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
@@ -93,7 +93,7 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                         graphics.drawString(string, i_6_ - -((304 + -(string!!.length * 6)) / 2), 22 + i_7_)
                     }
                 } catch (exception: Exception) {
-                    Class305.aCanvas3869!!.repaint()
+                    Class305Statics.aCanvas3869!!.repaint()
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("rc.A(" + i + ',' + (if (color != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (color_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (color_2_ != null) "{...}" else "null") + ')'))

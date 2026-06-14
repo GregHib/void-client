@@ -1,5 +1,5 @@
 import Class348_Sub40_Sub1.Companion.method3051
-import java.awt.Canvas
+
 
 class Class305 internal constructor(private val anInt3858: Int, private val aClass72Array3862: Array<Class72?>?, i_23_: Int, private val anInt3866: Int, private val anInt3854: Int, private var anInt3853: Int) {
     private var anInt3852 = 0
@@ -123,12 +123,11 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
         var anInt3861: Int = 0
         var anInt3864: Int = 0
         var anInt3868: Int = 0
-        var aCanvas3869: Canvas? = null
-        var aDisplayTarget3869: AwtDisplayTarget? = null
+        var aDisplayTarget3869: DisplayTarget? = null
         var aBoolean3870: Boolean = false
         @JvmStatic
         fun method2294(i: Int) {
-            aCanvas3869 = null
+            Class305Statics.aCanvas3869 = null
             aDisplayTarget3869 = null
             if (i <= 94) method2296(-107)
         }

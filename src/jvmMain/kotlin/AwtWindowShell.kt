@@ -56,6 +56,9 @@ class AwtWindowShell(
 
     override val currentDisplayTarget: DisplayTarget? get() = _displayTarget
 
+    /** The AWT canvas currently owned by this shell; null when no display target is active. */
+    val canvas: java.awt.Canvas? get() = _canvas
+
     // ── WindowShell contract ─────────────────────────────────────────────────
 
     override val isFullscreen: Boolean get() = fullscreenFrame != null
@@ -107,7 +110,7 @@ class AwtWindowShell(
         _displayTarget = target
 
         // mirror into Class305 for existing code that still reads the statics
-        Class305.aCanvas3869 = canvas
+        Class305Statics.aCanvas3869 = canvas
         Class305.aDisplayTarget3869 = target
 
         container.add(canvas)
@@ -152,7 +155,7 @@ class AwtWindowShell(
         }
         _canvas = null
         _displayTarget = null
-        Class305.aCanvas3869 = null
+        Class305Statics.aCanvas3869 = null
         Class305.aDisplayTarget3869 = null
     }
 
@@ -212,7 +215,7 @@ class AwtWindowShell(
             val field = varClass.getDeclaredField("canvas")
             val existingCanvas = field.get(applet) as? java.awt.Canvas ?: return false
             val target = AwtDisplayTarget(existingCanvas)
-            Class305.aCanvas3869 = existingCanvas
+            Class305Statics.aCanvas3869 = existingCanvas
             Class305.aDisplayTarget3869 = target
             field.set(applet, null)
             return true

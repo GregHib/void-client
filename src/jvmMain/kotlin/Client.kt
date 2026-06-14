@@ -672,8 +672,8 @@ class Client : Applet_Sub1() {
         }
         Class3.aClass161_125 = Class135_Sub2.aClass161_4839
         Class348_Sub40_Sub27.aClipboard9357 = Clipboards.instance
-        Class182.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (-124).toByte())
-        Class258_Sub4.aClass373_8552 = method2941(Class305.aCanvas3869, 0, true)
+        Class182.aClass346_2449 = Class348_Sub3.method2743(Class305Statics.aCanvas3869, (-124).toByte())
+        Class258_Sub4.aClass373_8552 = method2941(Class305Statics.aCanvas3869, 0, true)
         //        try {
         if (Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785 != null) {
             Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aClass234_3785!!), 5200, 0)
@@ -1696,7 +1696,7 @@ class Client : Applet_Sub1() {
         // Applet-canvas grab: when running inside a host applet that already owns a Canvas, steal
         // it via reflection and hand it to the WindowShell as the DisplayTarget.
         // On web/native this path is dead — the WindowShell provides the canvas directly.
-        if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
+        if (Class93.anApplet1530 != null && WindowShells.instance?.currentDisplayTarget == null && !Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
             if (WindowShells.instance?.tryAdoptHostCanvas() == true) return
         }
         super.method87((-28).toByte())
