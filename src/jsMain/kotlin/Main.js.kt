@@ -12,15 +12,6 @@
 fun main() {
     // TODO(Phase-4): replace stubs below with real JS implementations as they land.
 
-    // Workers: JS is single-threaded; tasks run cooperatively driven by the rAF frame loop.
-    val jsWorkerFactory = object : WorkerFactory {
-        override fun start(body: WorkerBody, daemon: Boolean, priority: Int?, name: String?): WorkerHandle {
-            // Synchronous cooperative stub — runs body immediately on the calling "thread".
-            body.run()
-            return object : WorkerHandle { override fun join() {} }
-        }
-    }
-
     // RuntimeInfo: memory/CPU APIs are not meaningful in a browser sandbox.
     val jsRuntimeInfo = object : RuntimeInfo {
         override fun usedMemoryKb(): Int = 0
@@ -48,7 +39,7 @@ fun main() {
     }
 
     ClientBootstrap.installCommon(
-        workers = jsWorkerFactory,
+        workers = JsWorkerFactory,
         gameLoop = JsGameLoop(),
         sleeper = JsSleeper,
         logger = object : GameLogger { override fun log(string: String, i: Int) { console.log("[$i] $string") } },
