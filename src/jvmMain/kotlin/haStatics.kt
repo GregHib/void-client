@@ -7,6 +7,62 @@ import java.awt.Canvas
  * Extracted so ha itself can live in commonMain.
  */
 object haStatics {
+
+    // ---------------------------------------------------------------------------
+    // GL hardware-renderer seam — exposes selected ha_Sub2/ha_Sub3/Class14_Sub*
+    // state that Client.kt needs, so Client never names those concrete GL classes.
+    // ---------------------------------------------------------------------------
+
+    /** Software-renderer canvas width (default 503, 480 for stellardawn). */
+    var rendererWidth: Int
+        get() = ha_Sub2.anInt7666
+        set(v) { ha_Sub2.anInt7666 = v }
+
+    /** GL debug/wireframe overlay mode flag (0 = off, 3 = overlay). Read by Client. */
+    val glDebugMode: Int
+        get() = ha_Sub3.anInt8045
+
+    /** GL frame-state slot written by Client during frame processing. */
+    var glFrameState: Int
+        get() = ha_Sub3.anInt8001
+        set(v) { ha_Sub3.anInt8001 = v }
+
+    /** World-sentinel Class230 value from the GL texture variant (Class14_Sub4). */
+    val glWorldSentinel: Class230?
+        get() = Class14_Sub4.aClass230_8638
+
+    /** Applet "additionalInfo" parameter forwarded into the GL texture pipeline (Class14_Sub1). */
+    var glAdditionalInfo: String?
+        get() = Class14_Sub1.aString8605
+        set(v) { Class14_Sub1.aString8605 = v }
+
+    /**
+     * Forwarding delegates for ha_Sub2/ha_Sub3/Class377 companion methods used
+     * in Client's init sequence. Client imports these from haStatics so it never
+     * names those concrete GL classes directly.
+     */
+    @JvmStatic fun method3736(i: Byte) = ha_Sub2.method3736(i)
+    @JvmStatic fun method3870(i: Int) = ha_Sub3.method3870(i)
+    @JvmStatic fun method3968(i: Int) = Class377.method3968(i)
+
+    // ---------------------------------------------------------------------------
+    // Forwarding delegates for Class14_Sub* companion methods used in Client.kt
+    // ---------------------------------------------------------------------------
+
+    /** Camera/view interpolation tick (Class14_Sub1.method241). */
+    @JvmStatic fun method241(i: Byte) = Class14_Sub1.method241(i)
+
+    /** Clear additionalInfo parameter (Class14_Sub1.method242). */
+    @JvmStatic fun method242(bool: Boolean) = Class14_Sub1.method242(bool)
+
+    /** Cache-open trigger (Class14_Sub2.method243). */
+    @JvmStatic fun method243(i: Int) = Class14_Sub2.method243(i)
+
+    /** JS5 load trigger returning Class348_Sub51 (Class14_Sub3.method247). */
+    @JvmStatic fun method247(i: Int): Class348_Sub51? = Class14_Sub3.method247(i)
+
+    /** Teardown GL texture variant resources (Class14_Sub4.method251). */
+    @JvmStatic fun method251(i: Byte) = Class14_Sub4.method251(i)
     var aClass351_4571: Class351? = Class351(73, -1)
 
     /** Renderer slot allocation table; now lives in ha companion (commonMain). */

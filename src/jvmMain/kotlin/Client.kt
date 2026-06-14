@@ -49,11 +49,11 @@ import Class146.Companion.method1194
 import Class147.Companion.method1195
 import Class148.Companion.method1198
 import Class149.method1200
-import Class14_Sub1.Companion.method241
-import Class14_Sub1.Companion.method242
-import Class14_Sub2.Companion.method243
-import Class14_Sub3.Companion.method247
-import Class14_Sub4.Companion.method251
+import haStatics.method241
+import haStatics.method242
+import haStatics.method243
+import haStatics.method247
+import haStatics.method251
 import Class15.method255
 import Class150.Companion.method1208
 import Class151.Companion.method1209
@@ -437,7 +437,9 @@ import Class371.Companion.method3584
 import Class373_Sub2.Companion.method3609
 import Class374.method3611
 import Class375.method3613
-import Class377.Companion.method3968
+import haStatics.method3736
+import haStatics.method3870
+import haStatics.method3968
 import Class38.Companion.method363
 import Class39.Companion.method367
 import Class4.Companion.method177
@@ -523,8 +525,7 @@ import RuntimeException_Sub1.Companion.method4010
 import aa_Sub1.Companion.method161
 import aa_Sub3Statics.method167
 import haStatics.method3680
-import ha_Sub2.Companion.method3736
-import ha_Sub3.Companion.method3870
+
 import rStatics.method3285
 import r_Sub1.Companion.method3288
 import r_Sub2.Companion.method3295
@@ -656,7 +657,7 @@ class Client : Applet_Sub1() {
         Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
         Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
         if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class10.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false
-        if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
+        if (haStatics.glWorldSentinel == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
             Class116.shiftClick = true
             Class136.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664
             Class268.anInt3439 = 16777215
@@ -1390,7 +1391,7 @@ class Client : Applet_Sub1() {
             val string_26_ = this.getParameter("game")
             if (string_26_ != null) {
                 if (string_26_ == "0") Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class10.aClass230_186
-                else if (string_26_ == "1") Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class14_Sub4.aClass230_8638
+                else if (string_26_ == "1") Class348_Sub42_Sub8_Sub2.aClass230_10434 = haStatics.glWorldSentinel
                 else if (string_26_ != "2") {
                     if (string_26_ == "3") Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932
                 } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262
@@ -1440,17 +1441,17 @@ class Client : Applet_Sub1() {
                     /* empty */
                 }
             }
-            Class14_Sub1.aString8605 = this.getParameter("additionalInfo")
-            if (Class14_Sub1.aString8605 != null && Class14_Sub1.aString8605!!.length > 50) Class14_Sub1.aString8605 = null
+            haStatics.glAdditionalInfo = this.getParameter("additionalInfo")
+            if (haStatics.glAdditionalInfo != null && haStatics.glAdditionalInfo!!.length > 50) haStatics.glAdditionalInfo = null
             if (Class10.aClass230_186 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
-                ha_Sub2.anInt7666 = 503
+                haStatics.rendererWidth = 503
                 Class92.anInt1524 = 765
-            } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class14_Sub4.aClass230_8638) {
+            } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == haStatics.glWorldSentinel) {
                 Class92.anInt1524 = 640
-                ha_Sub2.anInt7666 = 480
+                haStatics.rendererWidth = 480
             }
             Class79.aClient1367 = this
-            this.method95(Class92.anInt1524, 634, ha_Sub2.anInt7666, Class11.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985, 50)
+            this.method95(Class92.anInt1524, 634, haStatics.rendererWidth, Class11.aClass231_196!!.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985, 50)
         }
     }
 
@@ -1752,7 +1753,7 @@ class Client : Applet_Sub1() {
                     } else Class302.method2284((-43).toByte(), l)
                 } else method1761(85)
             } else method1761(85)
-            if (ha_Sub3.anInt8045 == 3) {
+            if (haStatics.glDebugMode == 3) {
                 var i = 0
                 while (Class348_Sub38.anInt7008 > i) {
                     val rectangle = Class180.aRectangleArray2371!![i]
@@ -1763,7 +1764,7 @@ class Client : Applet_Sub1() {
                 }
             }
             if (method3263(bool)) method207(Class348_Sub8.aHa6654, 124.toByte())
-            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && Class260.method1977((-79).toByte(), Class240.anInt4674) && ha_Sub3.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
+            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && Class260.method1977((-79).toByte(), Class240.anInt4674) && haStatics.glDebugMode == 0 && method3229(-85) == 1 && !bool_120_) {
                 var i = 0
                 var i_121_ = 0
                 while ((Class348_Sub38.anInt7008 > i_121_)) {
@@ -1993,7 +1994,7 @@ class Client : Applet_Sub1() {
                                 if (strings[5] != "game3") Class55.method518("game", (-124).toByte())
                                 else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932
                             } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262
-                        } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class14_Sub4.aClass230_8638
+                        } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = haStatics.glWorldSentinel
                     } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class10.aClass230_186
                     Class161.aBoolean2151 = false
                     Class239_Sub12.aString5966 = ""
@@ -2006,7 +2007,7 @@ class Client : Applet_Sub1() {
                     Class251.anInt3234 = 0
                     Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)
                     ha.anInt4583 = 0
-                    Class14_Sub1.aString8605 = null
+                    haStatics.glAdditionalInfo = null
                     val var_client = Client()
                     Class79.aClient1367 = var_client
                     var_client.method96(Class11.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985), 23499, 768)
@@ -2058,7 +2059,7 @@ class Client : Applet_Sub1() {
                         }
                         if (class46 == Class289.aClass46_3701 && Exception_Sub1Statics.method141(Class289.aClass46_3701!!, 125.toByte()) != null) {
                             Class50_Sub1.aBoolean5221 = true
-                            ha_Sub3.anInt8001 = i_43_
+                            haStatics.glFrameState = i_43_
                             Class348_Sub40_Sub13.anInt9203 = i_44_
                         }
                         if (class46.aBoolean676 || i_45_ < i_47_ && i_46_ < i_48_) {
@@ -2196,7 +2197,7 @@ class Client : Applet_Sub1() {
                                                     if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747))
                                                     else method2678(-2049)
                                                 } else {
-                                                    if ((Class348_Sub42_Sub8_Sub2.aClass230_10434) == (Class14_Sub4.aClass230_8638)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510!!.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1)
+                                                    if ((Class348_Sub42_Sub8_Sub2.aClass230_10434) == (haStatics.glWorldSentinel)) Class50_Sub3.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510!!.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1)
                                                     Class50_Sub3.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, Class239_Sub4.aString5882, 1L, Class333.anInt4144)
                                                 }
                                             }
