@@ -15,3 +15,13 @@ interface SystemClipboard {
     /** Replace the clipboard contents with [text]. */
     fun setText(text: String)
 }
+
+object Clipboards {
+    /** Null until a platform calls [install]; use-sites already guard for null via [aClipboard9357]. */
+    var instance: SystemClipboard? = null
+        private set
+
+    fun install(clipboard: SystemClipboard) {
+        instance = clipboard
+    }
+}

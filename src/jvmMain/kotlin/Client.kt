@@ -1,4 +1,3 @@
-import java.awt.Toolkit
 import Applet_Sub1Statics.method98
 import Canvas_Sub1.Companion.method120
 import Canvas_Sub1.Companion.method123
@@ -672,11 +671,7 @@ class Client : Applet_Sub1() {
             Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub12.aShortArrayArrayArray6736
         }
         Class3.aClass161_125 = Class135_Sub2.aClass161_4839
-        try {
-            Class348_Sub40_Sub27.aClipboard9357 = AwtClipboard(Toolkit.getDefaultToolkit().getSystemClipboard())
-        } catch (exception: Exception) {
-            /* empty */
-        }
+        Class348_Sub40_Sub27.aClipboard9357 = Clipboards.instance
         Class182.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (-124).toByte())
         Class258_Sub4.aClass373_8552 = method2941(Class305.aCanvas3869, 0, true)
         //        try {

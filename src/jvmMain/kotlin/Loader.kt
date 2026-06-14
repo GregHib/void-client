@@ -86,6 +86,9 @@ class Loader : Panel(), GameApplet {
             Sleepers.install(ThreadSleeper)
             GameLoggers.install(JvmGameLogger)
             RuntimeInfoProvider.instance = JvmRuntimeInfo()
+            try {
+                Clipboards.install(AwtClipboard(java.awt.Toolkit.getDefaultToolkit().getSystemClipboard()))
+            } catch (_: Exception) { /* headless / security-denied */ }
             provideLoaderApplet(this)
             if (AwtWindowShell.instance == null) {
                 AwtWindowShell.instance = AwtWindowShell(this)
