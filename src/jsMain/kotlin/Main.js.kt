@@ -50,7 +50,7 @@ fun main() {
     ClientBootstrap.installCommon(
         workers = jsWorkerFactory,
         gameLoop = JsGameLoop(),
-        sleeper = object : Sleeper { override fun sleep(millis: Long) { /* JS cannot block; frame loop provides pacing */ } },
+        sleeper = JsSleeper,
         logger = object : GameLogger { override fun log(string: String, i: Int) { console.log("[$i] $string") } },
         runtimeInfo = jsRuntimeInfo,
         glyphRasterizerFactory = jsGlyphFactory,
