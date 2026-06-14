@@ -1302,7 +1302,7 @@ class Client : Applet_Sub1() {
             Class348_Sub48.anInt7129 = 0
             Class348_Sub1_Sub3.anInt8818 = i_21_
             Class348_Sub8.anApplet6662 = null
-            AwtWindowShell.instance!!.createFrame(Class272Statics.anInt3473, Class348_Sub22Statics.anInt6857, this)
+            WindowShells.instance!!.createFrame(Class272Statics.anInt3473, Class348_Sub22Statics.anInt6857, this)
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(Runnable { run() }, i_23_ + -33739, 1)
@@ -1697,23 +1697,7 @@ class Client : Applet_Sub1() {
         // it via reflection and hand it to the WindowShell as the DisplayTarget.
         // On web/native this path is dead — the WindowShell provides the canvas directly.
         if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
-            try {
-                val shell = AwtWindowShell.instance
-                val var_class: Class<*> = Class93.anApplet1530!!.javaClass
-                val field = var_class.getDeclaredField("canvas")
-                val existingCanvas = field.get(Class93.anApplet1530) as? java.awt.Canvas
-                if (existingCanvas != null) {
-                    val target = AwtDisplayTarget(existingCanvas)
-                    Class305.aCanvas3869 = existingCanvas
-                    Class305.aDisplayTarget3869 = target
-                    field.set(Class93.anApplet1530, null)
-                    return
-                }
-            } catch (exception: Exception) {
-                if (Loader.trace) {
-                    exception.printStackTrace()
-                }
-            }
+            if (WindowShells.instance?.tryAdoptHostCanvas() == true) return
         }
         super.method87((-28).toByte())
     }
@@ -1729,7 +1713,7 @@ class Client : Applet_Sub1() {
                 if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), Class321.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
                 else if (!Class348_Sub8.aHa6654!!.method3655() && Class203.aBoolean2674) method3327(1406)
             }
-            val shell = AwtWindowShell.instance
+            val shell = WindowShells.instance
             if (Class34.aFrame476 == null) {
                 val i = shell?.clientWidth ?: Class272.anInt3473
                 val i_119_ = shell?.clientHeight ?: Class348_Sub22.anInt6857
@@ -2068,8 +2052,7 @@ class Client : Applet_Sub1() {
                     val var_client = Client()
                     Class79.aClient1367 = var_client
                     var_client.method96(Class11.aClass231_196!!.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.aString2985), 23499, 768)
-                    AwtWindowShell.instance?.frame?.setLocation(40, 40)
-                        ?: Class52.aFrame4904?.setLocation(40, 40)
+                    Class52.aFrame4904?.setLocation(40, 40)
                 } catch (exception: Exception) {
                     method1242(null, exception, 15004)
                 }

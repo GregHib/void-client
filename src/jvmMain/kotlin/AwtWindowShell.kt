@@ -200,6 +200,30 @@ class AwtWindowShell(
         f.dispose()
     }
 
+    /**
+     * Reflect a pre-existing `canvas` field off [Class93.anApplet1530], wrap it in an
+     * [AwtDisplayTarget], and store the result into [Class305]. Returns `true` on success so
+     * [Client.method87] can return early; returns `false` (or swallows the exception) on failure.
+     */
+    override fun tryAdoptHostCanvas(): Boolean {
+        try {
+            val applet = Class93.anApplet1530 ?: return false
+            val varClass: Class<*> = applet.javaClass
+            val field = varClass.getDeclaredField("canvas")
+            val existingCanvas = field.get(applet) as? java.awt.Canvas ?: return false
+            val target = AwtDisplayTarget(existingCanvas)
+            Class305.aCanvas3869 = existingCanvas
+            Class305.aDisplayTarget3869 = target
+            field.set(applet, null)
+            return true
+        } catch (exception: Exception) {
+            if (Loader.trace) {
+                exception.printStackTrace()
+            }
+            return false
+        }
+    }
+
     /** Set / clear the full-screen frame. Mirrors writes to `Class34.aFrame476`. */
     fun setFullscreenFrame(f: Frame?) {
         fullscreenFrame = f

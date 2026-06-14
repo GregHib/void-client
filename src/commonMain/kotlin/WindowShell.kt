@@ -114,6 +114,21 @@ interface WindowShell {
      * Called once from [Client.method92] before the first render pipeline setup.
      */
     fun forceToolkitInit() {}
+
+    /**
+     * Attempt to steal a pre-existing native canvas from the host applet via reflection and
+     * install it as the current [DisplayTarget].
+     *
+     * On JVM (`AwtWindowShell`): reflects `Class93.anApplet1530.canvas`, casts it to
+     * `java.awt.Canvas`, wraps it in an [AwtDisplayTarget], stores it into [Class305], and
+     * returns `true` if successful.
+     *
+     * On all other platforms (web, native) the host canvas concept does not exist; the default
+     * implementation returns `false` so the caller falls through to normal canvas setup.
+     *
+     * Called from [Client.method87] in the applet-canvas-grab path.
+     */
+    fun tryAdoptHostCanvas(): Boolean = false
 }
 
 /** Singleton accessor — set once at startup by the platform entry point (e.g. Loader). */
