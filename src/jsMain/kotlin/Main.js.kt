@@ -25,18 +25,7 @@ fun main() {
         error("GlyphRasterizer not yet implemented for JS — Phase-4 step 9")
     }
 
-    // WindowShell: TODO — replace with JsWindowShell backed by the <canvas> element (Phase-4 step 7).
-    val jsWindowShell: WindowShell = object : WindowShell {
-        override val isFullscreen: Boolean get() = false
-        override val clientWidth: Int get() = 765
-        override val clientHeight: Int get() = 503
-        override val currentDisplayTarget: DisplayTarget? get() = null
-        override fun provideDisplayTarget(x: Int, y: Int, width: Int, height: Int, callbacks: AppletWindowCallbacks): DisplayTarget =
-            error("WindowShell not yet implemented for JS — Phase-4 step 7")
-        override fun repositionCanvas(x: Int, y: Int, width: Int, height: Int) {}
-        override fun releaseDisplayTarget(callbacks: AppletWindowCallbacks) {}
-        override fun shutdown() {}
-    }
+    val jsWindowShell = JsWindowShell()
 
     ClientBootstrap.installCommon(
         workers = JsWorkerFactory,
