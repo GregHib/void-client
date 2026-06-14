@@ -1868,8 +1868,6 @@ class Client : Applet_Sub1() {
         var anInt5187: Int = 0
         var anInt5188: Int = 0
 
-        /*synthetic*/
-        var aClass5189: Class<*>? = null
         var anInt5190: Int = 0
 
         fun method104(i: Int) {
