@@ -12,14 +12,6 @@
 fun main() {
     // TODO(Phase-4): replace stubs below with real JS implementations as they land.
 
-    // RuntimeInfo: memory/CPU APIs are not meaningful in a browser sandbox.
-    val jsRuntimeInfo = object : RuntimeInfo {
-        override fun usedMemoryKb(): Int = 0
-        override fun maxMemoryMb(): Int = 256
-        override fun availableProcessors(): Int = 1
-        override fun exec(command: String) {}
-    }
-
     val jsGlyphFactory: (DisplayTarget) -> GlyphRasterizer = { _ -> JsGlyphRasterizer() }
 
     val jsWindowShell = JsWindowShell()
@@ -29,7 +21,7 @@ fun main() {
         gameLoop = JsGameLoop(),
         sleeper = JsSleeper,
         logger = object : GameLogger { override fun log(string: String, i: Int) { console.log("[$i] $string") } },
-        runtimeInfo = jsRuntimeInfo,
+        runtimeInfo = JsRuntimeInfo(),
         glyphRasterizerFactory = jsGlyphFactory,
         clipboard = null, // TODO: navigator.clipboard wrapper
         socketOpener = JsSocketOpener(),
