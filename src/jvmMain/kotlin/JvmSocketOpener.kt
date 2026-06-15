@@ -3,8 +3,7 @@ import java.net.Socket
 
 /**
  * JVM [SocketOpener]: opens a `java.net.Socket` (direct, or via the SOCKS proxy helper
- * [Class61]) and wraps it in the existing [Class238_Sub1] connection through the
- * [Class348_Sub23_Sub3.method2982] factory.
+ * [Class61]) and wraps it in a [Class238_Sub1] connection.
  *
  * This is the exact logic [Class297] runs for request types 23 (direct) / 24 (proxy);
  * pulling it behind the [SocketOpener] seam lets non-JVM targets (JS WebSocket) supply
@@ -15,12 +14,11 @@ import java.net.Socket
 class JvmSocketOpener : SocketOpener {
     @Throws(IOException::class)
     override fun open(proxy: Boolean, host: String?, port: Int): Class238 {
-        val socket: Socket = if (proxy) {
+        return if (proxy) {
             Class61.method593(port, (-90).toByte(), host)!!.method2050(-112)!!
         } else {
-            Socket(InetAddress.getByName(host), port)
+            Class348_Sub23_Sub3.method2982(Socket(InetAddress.getByName(host), port), 24.toByte(), GAME_CONNECTION_KEY)
         }
-        return Class348_Sub23_Sub3.method2982(socket, 24.toByte(), GAME_CONNECTION_KEY)
     }
 
     companion object {

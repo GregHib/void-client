@@ -1,28 +1,24 @@
-import sun.net.www.protocol.http.AuthenticationInfo
-import java.io.BufferedReader
-import java.io.InputStreamReader
 import java.net.*
-import java.nio.charset.StandardCharsets
 import java.util.*
 
 class Class272_Sub2 : Class272() {
     private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
 
     @Throws(IOException::class)
-    private fun method2052(string: String?, i: Int, string_0_: String?): Socket? {
+    private fun method2052(string: String?, i: Int, string_0_: String?): Class238? {
         val socket = Socket(string, i)
         socket.setSoTimeout(10000)
         val outputstream = socket.getOutputStream()
-        if (string_0_ != null) outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n" + string_0_ + "\n\n").toByteArray(StandardCharsets.ISO_8859_1))
-        else outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n\n").toByteArray(StandardCharsets.ISO_8859_1))
+        if (string_0_ != null) outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n" + string_0_ + "\n\n").toByteArray(Charsets.ISO_8859_1))
+        else outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n\n").toByteArray(Charsets.ISO_8859_1))
         outputstream.flush()
-        val bufferedreader = BufferedReader(InputStreamReader(socket.getInputStream()))
-        var string_1_ = bufferedreader.readLine()
+        val reader = socket.getInputStream().bufferedReader(Charsets.ISO_8859_1)
+        var string_1_ = reader.readLine()
         if (string_1_ != null) {
-            if (string_1_.startsWith("HTTP/1.0 200") || string_1_.startsWith("HTTP/1.1 200")) return socket
+            if (string_1_.startsWith("HTTP/1.0 200") || string_1_.startsWith("HTTP/1.1 200")) return Class238_Sub1(socket, anInt3470)
             if (string_1_.startsWith("HTTP/1.0 407") || string_1_.startsWith("HTTP/1.1 407")) {
                 var i_2_ = 0
-                string_1_ = bufferedreader.readLine()
+                string_1_ = reader.readLine()
                 val string_3_ = "proxy-authenticate: "
                 while ( /**/null != string_1_ && i_2_ < 50) {
                     if (string_1_.lowercase().startsWith(string_3_)) {
@@ -32,19 +28,19 @@ class Class272_Sub2 : Class272() {
                         throw IOException_Sub1(string_1_)
                     }
                     i_2_++
-                    string_1_ = bufferedreader.readLine()
+                    string_1_ = reader.readLine()
                 }
                 throw IOException_Sub1("")
             }
         }
         outputstream.close()
-        bufferedreader.close()
+        reader.close()
         socket.close()
         return null
     }
 
     @Throws(IOException::class)
-    override fun method2050(i: Int): Socket? {
+    override fun method2050(i: Int): Class238? {
         val flag1: Boolean
         val flag = systemGetProperty("java.net.useSystemProxies").toBoolean()
         if (!flag) systemSetProperty("java.net.useSystemProxies", "true")
@@ -87,7 +83,7 @@ class Class272_Sub2 : Class272() {
     }
 
     @Throws(IOException::class)
-    private fun method2053(proxy: Proxy, i: Byte): Socket? {
+    private fun method2053(proxy: Proxy, i: Byte): Class238? {
         if (proxy.type() == Proxy.Type.DIRECT) return method2047(126.toByte())
         val socketaddress = proxy.address()
         if (socketaddress !is InetSocketAddress) return null
@@ -119,7 +115,7 @@ class Class272_Sub2 : Class272() {
         } else if (proxy.type() == Proxy.Type.SOCKS) {
             val socket = Socket(proxy)
             socket.connect(InetSocketAddress((this.aString3476), (this.anInt3470)))
-            return socket
+            return Class238_Sub1(socket, anInt3470)
         }
         return null
     }

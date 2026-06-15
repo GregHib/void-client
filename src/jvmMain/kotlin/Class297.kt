@@ -74,7 +74,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                     if (Loader.debug) {
                         println("Connect: " + class144.anObject1996 + " " + class144.anInt2000)
                     }
-                    class144.anObject1998 = Socket(InetAddress.getByName((class144.anObject1996) as String?), class144.anInt2000)
+                    class144.anObject1998 = Class238_Sub1(Socket(InetAddress.getByName((class144.anObject1996) as String?), class144.anInt2000), class144.anInt2000)
                 } else if (i == 22) {
                     if (aLong3781 > method599(-92)) throw IOException()
                     try {
@@ -96,8 +96,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                     // Proxy game connection, wrapped as a Class238 (see type 23).
                     if (aLong3781 > method599(-92)) throw IOException()
                     try {
-                        val socket = Class61.method593(class144.anInt2000, (-90).toByte(), (class144.anObject1996 as String?))!!.method2050(-112)!!
-                        class144.anObject1998 = Class348_Sub23_Sub3.method2982(socket, 24.toByte(), GAME_CONNECTION_KEY)
+                        class144.anObject1998 = Class61.method593(class144.anInt2000, (-90).toByte(), (class144.anObject1996 as String?))!!.method2050(-112)!!
                     } catch (ioexception_sub1: IOException_Sub1) {
                         class144.anObject1998 = ioexception_sub1.message
                         throw ioexception_sub1

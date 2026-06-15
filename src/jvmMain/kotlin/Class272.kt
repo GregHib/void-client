@@ -5,14 +5,14 @@ abstract class Class272 {
     var aString3476: String? = null
 
     @Throws(IOException::class)
-    fun method2047(i: Byte): Socket {
+    fun method2047(i: Byte): Class238 {
         anInt3472++
         if (i <= 84) anIntArray3475 = null
-        return Socket(this.aString3476, this.anInt3470)
+        return Class238_Sub1(Socket(this.aString3476, this.anInt3470), anInt3470)
     }
 
     @Throws(IOException::class)
-    abstract fun method2050(i: Int): Socket?
+    abstract fun method2050(i: Int): Class238?
 
     companion object {
         var anInt3471: Int = 0
