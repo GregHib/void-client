@@ -14,7 +14,7 @@ import Class324.Companion.method2570
 import Class348_Sub42_Sub9.Companion.method3203
 import Class367_Sub8.Companion.method3546
 import Class377.Companion.method3965
-import InputStream_Sub2.Companion.method128
+import InputStream_Sub2Statics.method128
 
 class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: Any?, i: Int) : Class348_Sub42_Sub8(i) {
     override fun method3195(i: Int): Boolean {
@@ -262,7 +262,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
-            if (Class348_Sub3.aClass114_6584 == InputStream_Sub2.aClass114_82) {
+            if (Class348_Sub3.aClass114_6584 == InputStream_Sub2Statics.aClass114_82) {
                 method128(Class39.aClass74_515, 8.toByte())
                 Class348_Sub3.aClass114_6584 = null
                 return true
@@ -787,7 +787,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
-            if (InputStream_Sub1.aClass114_79 == Class348_Sub3.aClass114_6584) {
+            if (InputStream_Sub1Statics.aClass114_79 == Class348_Sub3.aClass114_6584) {
                 val i = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(-86)
                 val i_90_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 Class318_Sub1_Sub1_Sub1.method2397((-124).toByte())
@@ -1626,7 +1626,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class186.anIntArray2497!![i_214_] = i_215_
                 Class161.anIntArray2145!![i_214_] = i
                 Class256.anIntArray3295!![i_214_] = 1
-                val i_216_ = OutputStream_Sub1.anIntArray100!![i_214_] + -1
+                val i_216_ = OutputStream_Sub1Statics.anIntArray100!![i_214_] + -1
                 var i_217_ = 0
                 while (i_216_ > i_217_) {
                     if (Class59_Sub1_Sub2.anIntArray8663!![i_217_] <= i_215_) Class256.anIntArray3295!![i_214_] = i_217_ - -2

@@ -17,8 +17,8 @@ class Class359 {
             anInt4419++
             var bool_0_ = bool
             if (Class348_Sub40_Sub1.aClass207_9090 == null) {
-                if (!Class21.aClass45_322!!.method421(false, OutputStream_Sub1.anInt98)) bool_0_ = false
-                else Class348_Sub40_Sub1.aClass207_9090 = Class207Statics.method1512(Class21.aClass45_322!!, OutputStream_Sub1.anInt98)
+                if (!Class21.aClass45_322!!.method421(false, OutputStream_Sub1Statics.anInt98)) bool_0_ = false
+                else Class348_Sub40_Sub1.aClass207_9090 = Class207Statics.method1512(Class21.aClass45_322!!, OutputStream_Sub1Statics.anInt98)
             }
             if (Class348_Sub7.aClass207_6643 == null) {
                 if (Class21.aClass45_322!!.method421(!bool, Class348_Sub32.anInt6938)) Class348_Sub7.aClass207_6643 = Class207Statics.method1512(Class21.aClass45_322!!, Class348_Sub32.anInt6938)

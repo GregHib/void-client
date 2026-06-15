@@ -5,7 +5,7 @@ import Class309.Companion.method2312
 import Class56.Companion.method527
 import Class75.Companion.method751
 import Class75.Companion.method758
-import OutputStream_Sub2.Companion.method136
+import OutputStream_Sub2Statics.method136
 
 
 class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : Class318_Sub1_Sub3(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {

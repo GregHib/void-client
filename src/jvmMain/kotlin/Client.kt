@@ -517,9 +517,9 @@ import Class95.method869
 import Class98.Companion.method879
 import Class99.method883
 import IOException_Sub1.Companion.method130
-import InputStream_Sub1.Companion.method124
-import InputStream_Sub2.Companion.method127
-import OutputStream_Sub2.Companion.method139
+import InputStream_Sub1Statics.method124
+import InputStream_Sub2Statics.method127
+import OutputStream_Sub2Statics.method139
 import Player.Companion.method2458
 import RuntimeException_Sub1.Companion.method4010
 import aa_Sub1.Companion.method161
@@ -1206,7 +1206,7 @@ class Client : Applet_Sub1() {
         method3228(75)
         Class348_Sub11Statics.method2796(104.toByte())
         method1525(4.toByte())
-        OutputStream_Sub1.method133((-41).toByte())
+        OutputStream_Sub1Statics.method133((-41).toByte())
         method124(i.toInt() xor 0x6e)
         method2117(0)
         method2993(50.toByte())
@@ -1613,7 +1613,7 @@ class Client : Applet_Sub1() {
             if (Class367_Sub11.anInt7396 % 1000 == 1) {
                 val gregoriancalendar = CalendarShim.local()
                 Class356.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6)
-                OutputStream_Sub1.aRandom93!!.setSeed(Class356.anInt4383.toLong())
+                OutputStream_Sub1Statics.aRandom93!!.setSeed(Class356.anInt4383.toLong())
             }
             if (Class367_Sub11.anInt7396 % 50 == 0) {
                 Class348_Sub48.anInt7134 = Class81.anInt1433
@@ -2151,13 +2151,13 @@ class Client : Applet_Sub1() {
                                         if (class46.anInt765 == Class239_Sub10.anInt5943) {
                                             if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                                 Class239_Sub24.method1823(Class348_Sub8.aHa6654!!, i_38_, i_39_, (-50).toByte())
-                                                var class318_sub6 = (InputStream_Sub2.aClass243_83!!.method1872(8) as Class318_Sub6?)
+                                                var class318_sub6 = (InputStream_Sub2Statics.aClass243_83!!.method1872(8) as Class318_Sub6?)
                                                 while (class318_sub6 != null) {
                                                     if (i_40_ >= (class318_sub6.anInt6429) && (i_40_ < (class318_sub6.anInt6426)) && (i_41_ >= (class318_sub6.anInt6427)) && (i_41_ < (class318_sub6.anInt6425))) {
                                                         method661(107.toByte())
                                                         method1777(-3, (class318_sub6.aClass318_Sub1_Sub3_Sub3_6431))
                                                     }
-                                                    class318_sub6 = ((InputStream_Sub2.aClass243_83!!.method1878((-67).toByte())) as Class318_Sub6?)
+                                                    class318_sub6 = ((InputStream_Sub2Statics.aClass243_83!!.method1878((-67).toByte())) as Class318_Sub6?)
                                                 }
                                             }
                                             continue
@@ -2223,7 +2223,7 @@ class Client : Applet_Sub1() {
                                                     }
                                                     Class237.aBoolean3103 = true
                                                     Class348_Sub40_Sub26.anInt9349 = `is`[0]
-                                                    InputStream_Sub2.anInt85 = `is`[1]
+                                                    InputStream_Sub2Statics.anInt85 = `is`[1]
                                                     Class79.anInt1404 = `is`[2]
                                                 }
                                                 Class348_Sub42.anInt7059 = 1

@@ -204,7 +204,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             anInt3477++
             val i_2_ = 89 / ((-74 - i) / 42)
             Class348_Sub5.aClass105_6627 = null
-            OutputStream_Sub2.aClass105_106 = null
+            OutputStream_Sub2Statics.aClass105_106 = null
             Class309.aClass105_4808 = null
             Class110.aClass105_1706 = null
         }

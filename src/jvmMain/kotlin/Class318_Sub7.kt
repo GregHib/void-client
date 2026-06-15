@@ -3,7 +3,7 @@ import Class75.Companion.method756
 import Class75.Companion.method760
 import Class75.Companion.method761
 import Class94.method867
-import InputStream_Sub1.Companion.method126
+import InputStream_Sub1Statics.method126
 import kotlin.math.atan2
 import kotlin.math.sqrt
 

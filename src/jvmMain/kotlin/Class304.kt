@@ -1,7 +1,7 @@
 import Class285_Sub1.Companion.method2131
 import Class286_Sub5.Companion.method2161
 import Class289.method2194
-import OutputStream_Sub2.Companion.method138
+import OutputStream_Sub2Statics.method138
 
 /* Class304 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -98,7 +98,7 @@ class Class304 internal constructor(var anInt3850: Int) {
                 while (class348_sub42_sub13 != null) {
                     val i_9_: Int
                     if (class348_sub42_sub13.anInt9615 != 1) i_9_ = method2194(-1, class348_sub42_sub13)
-                    else i_9_ = (OutputStream_Sub2.method138((((class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?)!!), false))
+                    else i_9_ = (OutputStream_Sub2Statics.method138((((class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) as Class348_Sub42_Sub12?)!!), false))
                     if (i_6_ < i_9_) i_6_ = i_9_
                     class348_sub42_sub13 = (Class233.aClass107_3022!!.method1003(126.toByte()) as? Class348_Sub42_Sub13?)
                 }

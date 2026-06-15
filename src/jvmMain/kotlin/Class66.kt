@@ -1059,7 +1059,7 @@ object Class66 {
                 Class348_Sub42_Sub15.aClass105_9659 = Class110.aClass105_1706
                 Class348_Sub5.aClass105_6627 = null
                 Class121.aClass105_1800 = Class348_Sub5.aClass105_6627
-                OutputStream_Sub2.aClass105_106 = Class121.aClass105_1800
+                OutputStream_Sub2Statics.aClass105_106 = Class121.aClass105_1800
                 Class309.aClass105_4808 = null
                 Class348_Sub42_Sub15.aClass105_9658 = Class309.aClass105_4808
                 Class71.aBoolean1211 = true
@@ -3207,7 +3207,7 @@ object Class66 {
             }
             if (i == 1302) {
                 val i_284_ = anIntArray1149!![--anInt1173]
-                if (i_284_ == InputStream_Sub1.anInt78 || i_284_ == Class179.anInt2361 || i_284_ == Class312.anInt3930) {
+                if (i_284_ == InputStream_Sub1Statics.anInt78 || i_284_ == Class179.anInt2361 || i_284_ == Class312.anInt3930) {
                     class46!!.anInt797 = i_284_
                     return
                 }

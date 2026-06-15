@@ -60,7 +60,7 @@ class Class269 internal constructor(private val aHa_Sub3_3457: ha_Sub3) {
         this.aBoolean3458 = aHa_Sub3_3457.aBoolean8159
         if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, Class191.aClass304_2571, Class68.aClass68_1183)) this.aBoolean3458 = false
         if (this.aBoolean3458 || aHa_Sub3_3457.method3880(Class68.aClass68_1183, Class191.aClass304_2571, 123.toByte())) {
-            OutputStream_Sub1.method134((-126).toByte())
+            OutputStream_Sub1Statics.method134((-126).toByte())
             if (this.aBoolean3458) {
                 var `is` = method461(false, Class355.anObject4366, 53146732)
                 this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, `is`)

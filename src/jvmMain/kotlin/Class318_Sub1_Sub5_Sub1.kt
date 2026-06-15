@@ -5,7 +5,7 @@ import Class239_Sub17.Companion.method1796
 import Class239_Sub21.Companion.method1813
 import Class348_Sub23_Sub1.Companion.method2967
 import Class367_Sub8.Companion.method3549
-import OutputStream_Sub2.Companion.method136
+import OutputStream_Sub2Statics.method136
 
 /* Class318_Sub1_Sub5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

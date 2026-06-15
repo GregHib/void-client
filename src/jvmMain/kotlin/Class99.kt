@@ -1,4 +1,4 @@
-import OutputStream_Sub2.Companion.method138
+import OutputStream_Sub2Statics.method138
 
 /* Class99 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -29,10 +29,10 @@ class Class192 internal constructor(var aBoolean2574: Boolean) {
 
         fun method1434(i: Int) {
             anInt2573++
-            var class318_sub6 = InputStream_Sub2.aClass243_83!!.method1875(60) as Class318_Sub6?
+            var class318_sub6 = InputStream_Sub2Statics.aClass243_83!!.method1875(60) as Class318_Sub6?
             while (class318_sub6 != null) {
                 Class318_Sub1_Sub3_Sub4.method2461(class318_sub6, true)
-                class318_sub6 = (InputStream_Sub2.aClass243_83!!.method1875(60) as Class318_Sub6?)
+                class318_sub6 = (InputStream_Sub2Statics.aClass243_83!!.method1875(60) as Class318_Sub6?)
             }
             val i_0_: Int
             val i_1_: Int

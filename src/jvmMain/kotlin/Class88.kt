@@ -6,7 +6,7 @@ import Class348_Sub3Statics.method2739
 import Class348_Sub40_Sub26.Companion.method3120
 import Class348_Sub40_Sub31.Companion.method3131
 import Class348_Sub40_Sub7.Companion.method3064
-import OutputStream_Sub1.Companion.method132
+import OutputStream_Sub1Statics.method132
 import s_Sub2.Companion.method4002
 import za_Sub1.Companion.method3439
 
@@ -184,7 +184,7 @@ class Class88 : Class88Base {
                         class348_sub49.writeLong(0L, 70.toByte())
                         class348_sub49.writeString((-5).toByte(), Class186.aString2496!!)
                         class348_sub49.writeLong(Class348_Sub33.aLong6966, (-124).toByte())
-                        class348_sub49.writeLong(OutputStream_Sub2.aLong108, (-112).toByte())
+                        class348_sub49.writeLong(OutputStream_Sub2Statics.aLong108, (-112).toByte())
                         class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (-76).toByte(), (Class318_Sub1_Sub4.aBigInteger8762))
                         method2739(0)
                         val class348_sub47 = Class203.method1478(true)

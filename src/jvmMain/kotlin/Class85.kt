@@ -39,19 +39,19 @@ class Class85 {
                 var i_5_ = 0
                 var i_6_ = 56
                 while ( /**/i_5_ < 8) {
-                    aLongArray1471[i_4_] = (Class105_Sub2.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75!![i_5_]!![(Class139.method1166(255, ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) ushr i_6_).toInt()))])))
+                    aLongArray1471[i_4_] = (Class105_Sub2.method993(aLongArray1471[i_4_], (InputStream_Sub1Statics.aLongArrayArray75!![i_5_]!![(Class139.method1166(255, ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) ushr i_6_).toInt()))])))
                     i_6_ -= 8
                     i_5_++
                 }
             }
             for (i_7_ in 0..7) aLongArray1472[i_7_] = aLongArray1471[i_7_]
-            aLongArray1472[0] = Class105_Sub2.method993(aLongArray1472[0], InputStream_Sub1.aLongArray76!![i_3_])
+            aLongArray1472[0] = Class105_Sub2.method993(aLongArray1472[0], InputStream_Sub1Statics.aLongArray76!![i_3_])
             for (i_8_ in 0..7) {
                 aLongArray1471[i_8_] = aLongArray1472[i_8_]
                 var i_9_ = 0
                 var i_10_ = 56
                 while ( /**/i_9_ < 8) {
-                    aLongArray1471[i_8_] = (Class105_Sub2.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75!![i_9_]!![(Class139.method1166(255, ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) ushr i_10_).toInt()))])))
+                    aLongArray1471[i_8_] = (Class105_Sub2.method993(aLongArray1471[i_8_], (InputStream_Sub1Statics.aLongArrayArray75!![i_9_]!![(Class139.method1166(255, ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) ushr i_10_).toInt()))])))
                     i_10_ -= 8
                     i_9_++
                 }

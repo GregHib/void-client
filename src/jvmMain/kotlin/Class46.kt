@@ -706,7 +706,7 @@ class Class46 {
         this.anInt756 = -1
         this.anInt699 = -1
         this.anInt713 = -1
-        this.anInt797 = InputStream_Sub1.anInt78
+        this.anInt797 = InputStream_Sub1Statics.anInt78
         this.anInt779 = -1
         this.anInt719 = -1
         this.aClass348_Sub44_748 = Class205.aClass348_Sub44_2692

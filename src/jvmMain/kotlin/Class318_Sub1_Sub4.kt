@@ -1,6 +1,6 @@
 import Class239_Sub14.Companion.method1781
 import Class314_Sub1.Companion.method2348
-import InputStream_Sub1.Companion.method125
+import InputStream_Sub1Statics.method125
 
 abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : Class318_Sub1() {
     var aShort8759: Short

@@ -4,7 +4,7 @@ import Class286_Sub4.Companion.method2157
 import Class299_Sub1_Sub2.Companion.method2263
 import Class369_Sub1.Companion.method3570
 import Class59.Companion.method544
-import OutputStream_Sub1.Companion.method132
+import OutputStream_Sub1Statics.method132
 import kotlin.math.max
 import kotlin.math.min
 
@@ -132,7 +132,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                 var i_28_ = class46.anInt696
                                 if (Class299_Sub2.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
                                 if (class46 == Class289.aClass46_3701) {
-                                    if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
+                                    if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1Statics.anInt78 == (class46.anInt797)))) {
                                         Class136.anInt4792 = i_10_
                                         Class348_Sub1Statics.anInt6555 = i_11_
                                         Class138.aClass46Array1942 = class46s
@@ -151,7 +151,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         i_24_ = i_29_
                                         i_25_ = i_30_
                                     }
-                                    if (class46.anInt797 == InputStream_Sub1.anInt78) i_28_ = 128
+                                    if (class46.anInt797 == InputStream_Sub1Statics.anInt78) i_28_ = 128
                                 }
                                 val i_31_: Int
                                 val i_32_: Int

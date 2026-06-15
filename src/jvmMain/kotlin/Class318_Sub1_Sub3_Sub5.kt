@@ -1,5 +1,5 @@
 import Class275.method2064
-import OutputStream_Sub2.Companion.method136
+import OutputStream_Sub2Statics.method136
 import kotlin.math.atan2
 import kotlin.math.sqrt
 import kotlin.math.tan

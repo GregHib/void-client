@@ -104,7 +104,7 @@ class Class239_Sub5 : Class239 {
             if (bool != false) method1740(35, -126, false)
             anInt5885++
             if (!Class195.aBoolean5013 || Class318_Sub1_Sub2.anInt8731 > i || Class239_Sub29.anInt6151 < i) return null
-            return (OutputStream_Sub1.aClass110_Sub1Array97!![i + -Class318_Sub1_Sub2.anInt8731])
+            return (OutputStream_Sub1Statics.aClass110_Sub1Array97!![i + -Class318_Sub1_Sub2.anInt8731])
         }
     }
 }
