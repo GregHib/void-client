@@ -58,9 +58,6 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
         var anInt6821: Int = 0
         var anInt6822: Int = 0
 
-        /*synthetic*/
-        var aClass6823: Class<*>? = null
-
         @JvmStatic
         fun method2936(i: Byte) {
             if (i.toInt() == -25) aClass351_6814 = null
@@ -155,7 +152,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
         fun method2941(component: Component?, i: Int, bool: Boolean): Class373? {
             anInt6808++
             try {
-                val constructor: Constructor<*> = (Class373_Sub1::class.java.getDeclaredConstructor((if (aClass6823 != null) aClass6823 else (Component::class.java.also { aClass6823 = it })), java.lang.Boolean.TYPE))
+                val constructor: Constructor<*> = Class373_Sub1::class.java.getDeclaredConstructor(Component::class.java, java.lang.Boolean.TYPE)
                 return (constructor.newInstance(*arrayOf<Any?>(component, bool)) as Class373)
             } catch (throwable: Throwable) {
                 if (i != 0) return null

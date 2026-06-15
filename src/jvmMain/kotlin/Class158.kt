@@ -48,20 +48,11 @@ class Class158 internal constructor(string: String?, class221: Class221?, class3
         var anInt4939: Int = 0
         var anInt4941: Int = 0
 
-        /*synthetic*/
-        var aClass4949: Class<*>? = null
-
         fun method1247(file: File, bool: Boolean, bool_0_: Boolean) {
             if (Class168.anObject2256 == null) method1142(26.toByte())
             anInt4939++
             if (bool_0_ != false) aClass299_4938 = null
-            try {
-//                val method = (HotSpotDiagnosticMXBean::class.java.getDeclaredMethod("dumpHeap", (if (aClass4949 != null) aClass4949 else (String::class.java.also { aClass4949 = it })), java.lang.Boolean.TYPE))
-//                method.invoke(Class168.anObject2256, file.getAbsolutePath(), bool)
-            } catch (exception: Exception) {
-                println("HeapDump error:")
-                exception.printStackTrace()
-            }
+            // HotSpotDiagnosticMXBean heap-dump — dead/disabled
         }
 
         @JvmStatic

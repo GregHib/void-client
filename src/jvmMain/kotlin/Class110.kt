@@ -39,12 +39,6 @@ abstract class Class110 {
         var anInt1710: Int = 0
         var aBoolean1712: Boolean = false
 
-        /*synthetic*/
-        var aClass1713: Class<*>? = null
-
-        /*synthetic*/
-        var aClass1714: Class<*>? = null
-
         @JvmStatic
         fun method1030(i: Int) {
             aClass114_1702 = null
@@ -57,12 +51,11 @@ abstract class Class110 {
             anInt1701++
             var i_1_ = 0
             if (i != -1) method1034(117, null, null, 29)
-            val fields = (if (aClass1713 != null) aClass1713 else (Class348_Sub51::class.java.also { aClass1713 = it }))!!.getDeclaredFields()
-            val fields_2_ = fields
+            val fields = Class348_Sub51::class.java.getDeclaredFields()
             var i_3_ = 0
-            while (fields_2_.size > i_3_) {
-                val field = fields_2_[i_3_]
-                if ((if (aClass1714 != null) aClass1714 else (Class239::class.java.also { aClass1714 = it }))!!.isAssignableFrom(field.getType())) i_1_++
+            while (fields.size > i_3_) {
+                val field = fields[i_3_]
+                if (Class239::class.java.isAssignableFrom(field.getType())) i_1_++
                 i_3_++
             }
             return i_1_ - -1
