@@ -319,7 +319,7 @@ import Class348_Sub24.Companion.method2993
 import Class348_Sub25.Companion.method2996
 import Class348_Sub27.Companion.method3001
 import Class348_Sub29.Companion.method3003
-import Class348_Sub3.Companion.method2738
+import Class348_Sub3Statics.method2738
 import Class348_Sub31.Companion.method3010
 import Class348_Sub31_Sub2.Companion.method3016
 import Class348_Sub33.Companion.method3024
@@ -672,7 +672,7 @@ class Client : Applet_Sub1() {
         }
         Class3.aClass161_125 = Class135_Sub2.aClass161_4839
         Class348_Sub40_Sub27.aClipboard9357 = Clipboards.instance
-        Class182.aClass346_2449 = Class348_Sub3.method2743(Class305Statics.aCanvas3869, (-124).toByte())
+        Class182.aClass346_2449 = Class348_Sub3Statics.method2743(Class305Statics.aCanvas3869, (-124).toByte())
         Class258_Sub4.aClass373_8552 = method2941(Class305.aDisplayTarget3869, 0, true)
         //        try {
         if (Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3785 != null) {

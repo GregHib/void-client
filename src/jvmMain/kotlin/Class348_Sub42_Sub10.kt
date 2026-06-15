@@ -1,7 +1,7 @@
 import Class273.Companion.method2057
 import Class305Statics.method2296
 import Class348_Sub17.Companion.method2929
-import Class348_Sub3.Companion.method2739
+import Class348_Sub3Statics.method2739
 import Class348_Sub40_Sub23.Companion.method3113
 import Class348_Sub5Statics.method2752
 

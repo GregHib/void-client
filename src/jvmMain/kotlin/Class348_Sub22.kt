@@ -1,5 +1,5 @@
 import Class324.Companion.method2570
-import Class348_Sub3.Companion.method2743
+import Class348_Sub3Statics.method2743
 import java.awt.Color
 
 class Class348_Sub22 internal constructor(var aNpc_6859: Npc?) : Class348() {

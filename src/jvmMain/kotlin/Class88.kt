@@ -2,7 +2,7 @@ import Class14_Sub3.Companion.method248
 import Class16.method260
 import Class239_Sub18.Companion.method1802
 import Class239_Sub19.Companion.method1804
-import Class348_Sub3.Companion.method2739
+import Class348_Sub3Statics.method2739
 import Class348_Sub40_Sub26.Companion.method3120
 import Class348_Sub40_Sub31.Companion.method3131
 import Class348_Sub40_Sub7.Companion.method3064
