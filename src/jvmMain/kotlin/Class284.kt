@@ -1,6 +1,5 @@
 import Class104.Companion.method958
 import Class62.method599
-import java.awt.Canvas
 
 class Class284 {
     var anInt3666: Int = 0
@@ -33,9 +32,8 @@ class Class284 {
             var var_ha = Class348_Sub8.aHa6654
             var bool = false
             if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -5766) != 0) {
-                val canvas = Canvas()
-                canvas.setSize(100, 100)
-                var_ha = method958(true, 0, null, 0, canvas, null)
+                val target = Class305.aDisplayTarget3869 ?: AwtDisplayTarget(Class305Statics.aCanvas3869!!)
+                var_ha = method958(true, 0, null, 0, target, 100, 100, null)
                 bool = true
             }
             val l = method599(i + 26482)

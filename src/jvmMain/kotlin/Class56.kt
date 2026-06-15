@@ -1,5 +1,4 @@
 import Class286_Sub5.Companion.method2161
-import java.awt.Frame
 
 class Class56 private constructor(i: Int, class274: Class274?, class274_5_: Class274?, i_6_: Int, i_7_: Int, bool: Boolean, bool_8_: Boolean) {
     var aClass274_1012: Class274? = null
@@ -97,17 +96,18 @@ class Class56 private constructor(i: Int, class274: Class274?, class274_5_: Clas
         }
 
         @JvmStatic
-        fun method527(frame: Frame?, class297: Class297?, bool: Boolean) {
+        fun method527(shell: AwtWindowShell?, class297: Class297?, bool: Boolean) {
+            val frame = shell?.frame
             try {
                 anInt1020++
                 while (true) {
-                    val class144 = class297!!.method2248(89.toByte(), frame)
+                    val class144 = class297!!.method2248(89.toByte(), shell)
                     while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-124).toByte(), 10L)
                     if (class144.anInt1997 == 1) break
                     method2161(33.toByte(), 100L)
                 }
-                frame!!.setVisible(bool)
-                frame.dispose()
+                frame?.setVisible(bool)
+                frame?.dispose()
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + bool + ')'))
             }

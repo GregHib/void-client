@@ -51,7 +51,7 @@ class Class348_Sub22 internal constructor(var aNpc_6859: Npc?) : Class348() {
             Class305Statics.aCanvas3869!!.setBackground(Color.black)
             Class337.anInt4179 = i
             Class182.aClass346_2449 = method2743(Class305Statics.aCanvas3869, 84.toByte())
-            Class258_Sub4.aClass373_8552 = Class348_Sub18.Companion.method2941(Class305Statics.aCanvas3869, 0, true)
+            Class258_Sub4.aClass373_8552 = Class348_Sub18.Companion.method2941(Class305.aDisplayTarget3869, 0, true)
         }
     }
 }

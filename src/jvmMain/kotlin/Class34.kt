@@ -1,4 +1,4 @@
-import java.awt.Frame
+
 
 class Class34 {
     private val anIntArray464 = intArrayOf(-1, -1, -1, -1, -1)
@@ -145,7 +145,7 @@ class Class34 {
         var anInt470: Int = 0
         var anInt471: Int = 0
         var anInt473: Int = 0
-        var aFrame476: Frame? = null
+        var aFrame476: AwtWindowShell? = null
         var anInt478: Int = 0
         var anInt479: Int = 0
         var anInt481: Int

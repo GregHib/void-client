@@ -6,7 +6,7 @@ import Class56.Companion.method527
 import Class75.Companion.method751
 import Class75.Companion.method758
 import OutputStream_Sub2.Companion.method136
-import java.awt.Frame
+
 
 class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : Class318_Sub1_Sub3(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {
     private var anInt10331 = 0
@@ -232,7 +232,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             return i_5_
         }
 
-        fun method2463(i: Int, i_6_: Int, class297: Class297, i_7_: Int, i_8_: Int, i_9_: Int): Frame? {
+        fun method2463(i: Int, i_6_: Int, class297: Class297, i_7_: Int, i_8_: Int, i_9_: Int): AwtWindowShell? {
             var i_7_ = i_7_
             anInt10344++
             if (!class297.method2247(-4)) return null
@@ -252,14 +252,15 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             }
             val class144 = class297.method2229(i_9_, i, i_7_, i_6_, (-11).toByte())
             while (class144.anInt1997 == 0) method2161(19.toByte(), 10L)
-            val frame = class144.anObject1998 as Frame?
-            if (frame == null) return null
+            // anObject1998 holds the fullscreen Frame produced by Class297 task-6.
+            // Wrap it in a transient AwtWindowShell so callers never touch Frame directly.
+            val shell = class297.wrapFullscreenFrame(class144.anObject1998) ?: return null
             if (i_8_ != 14199) return null
             if (class144.anInt1997 == 2) {
-                method527(frame, class297, false)
+                method527(shell, class297, false)
                 return null
             }
-            return frame
+            return shell
         }
 
         fun method2464(i: Byte, i_11_: Int, i_12_: Int, i_13_: Int, var_ha: ha?, i_14_: Int, var_d: d?) {

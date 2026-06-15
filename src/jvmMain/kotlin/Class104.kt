@@ -337,6 +337,22 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
             }
         }
 
+        /**
+         * Overload that accepts a pre-built [DisplayTarget] with explicit [width]/[height],
+         * so callers (Class22, Class284) don't need to construct a raw [Canvas].
+         */
+        @JvmStatic
+        fun method958(bool: Boolean, i: Int, var_d: d?, i_61_: Int, target: DisplayTarget, width: Int, height: Int, class45: Class45?): ha? {
+            try {
+                if (bool != true) aClass221_1620 = null
+                anInt1610++
+                return method3692(i_61_, height, width, class45, 0, var_d,
+                    (target as? AwtDisplayTarget)?.canvas, i)
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("mha.E2(" + bool + ',' + i + ',' + i_61_ + ',' + width + ',' + height + ')'))
+            }
+        }
+
         @JvmStatic
         fun method960(i: Int) {
             Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)

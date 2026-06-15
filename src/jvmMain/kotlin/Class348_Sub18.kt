@@ -7,7 +7,6 @@ import Class264.Companion.method2017
 import Class316.Companion.method2368
 import Class369_Sub3.Companion.method3573
 import Class84.Companion.method821
-import java.awt.Component
 import java.lang.reflect.Constructor
 import kotlin.math.sin
 
@@ -149,10 +148,13 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
         }
 
         @JvmStatic
-        fun method2941(component: Component?, i: Int, bool: Boolean): Class373? {
+        fun method2941(target: DisplayTarget?, i: Int, bool: Boolean): Class373? {
+            // Extract the AWT Component from the DisplayTarget seam so Class373_Sub1/Sub2
+            // (which stay jvmMain and take Component) never appear in common code.
+            val component = (target as? AwtDisplayTarget)?.canvas
             anInt6808++
             try {
-                val constructor: Constructor<*> = Class373_Sub1::class.java.getDeclaredConstructor(Component::class.java, java.lang.Boolean.TYPE)
+                val constructor: Constructor<*> = Class373_Sub1::class.java.getDeclaredConstructor(java.awt.Component::class.java, java.lang.Boolean.TYPE)
                 return (constructor.newInstance(*arrayOf<Any?>(component, bool)) as Class373)
             } catch (throwable: Throwable) {
                 if (i != 0) return null

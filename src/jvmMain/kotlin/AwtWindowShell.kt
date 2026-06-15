@@ -227,10 +227,33 @@ class AwtWindowShell(
         }
     }
 
+    /**
+     * Paint black letterbox borders around the canvas using the Frame's Graphics.
+     * Only called from [Class140.method1170] when not in fullscreen and border widths > 0.
+     * This is the legacy applet-panel paint path; when [AwtWindowShell] positions the canvas
+     * correctly the border widths are always 0 and this is never called.
+     */
+    fun paintBorders(left: Int, top: Int, right: Int, bottom: Int) {
+        val f = frame ?: return
+        try {
+            val insets = f.insets
+            val ox = insets.left
+            val oy = insets.top
+            val g = f.graphics ?: return
+            g.color = Color.black
+            val gameW = Class272.anInt3473
+            val gameH = Class348_Sub22.anInt6857
+            if (left  > 0) g.fillRect(ox, oy, left, gameH)
+            if (top   > 0) g.fillRect(ox, oy, gameW, top)
+            if (right > 0) g.fillRect(gameW - right + ox, oy, right, gameH)
+            if (bottom > 0) g.fillRect(ox, gameH + oy - bottom, gameW, bottom)
+        } catch (_: Exception) { /* ignore */ }
+    }
+
     /** Set / clear the full-screen frame. Mirrors writes to `Class34.aFrame476`. */
     fun setFullscreenFrame(f: Frame?) {
         fullscreenFrame = f
-        Class34.aFrame476 = f
+        Class34.aFrame476 = if (f != null) this else null
     }
 
     // ── private helpers ──────────────────────────────────────────────────────

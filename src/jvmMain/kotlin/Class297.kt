@@ -142,7 +142,9 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
                             if (this.aBoolean3794) aClass134_3802!!.method1146((class144.anInt2000 and 0xffff), (class144.anInt1999 shr 16), (class144.anInt2000 ushr 16), -43, 0xffff and (class144.anInt1999), frame)
                             else (anObject3793 as Class7).method209(frame, ((class144.anInt2000) ushr 16), (0xffff and (class144.anInt2000)), ((class144.anInt1999) shr 16), ((class144.anInt1999) and 0xffff))
                         } else if (i == 7) {
-                            if (this.aBoolean3794) aClass134_3802!!.method1147(((class144.anObject1996) as Frame?), 8)
+                            // anObject1996 holds the raw Frame from task-6; Class7 only needs
+                            // the GraphicsDevice (stored at construction) so the Frame arg is unused.
+                            if (this.aBoolean3794) aClass134_3802!!.method1147(((class144.anObject1996) as? java.awt.Frame), 8)
                             else (anObject3793 as Class7).method211()
                         } else if (i == 12) {
                             val class234: CacheStore? = (method2241(((class144.anObject1996) as String?), 12606, Companion.aString3789, anInt3792))
@@ -281,6 +283,17 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         return method2246(i_12_ + -9, i, 17, i_13_, arrayOf<Any?>(component, `is`, point))
     }
 
+    /**
+     * Overload of [method2238] that takes a hot-spot as [hotX]/[hotY] int coordinates
+     * instead of a [Point], so callers in common code avoid importing [java.awt.Point].
+     * Also accepts [DisplayTarget] instead of [Component]; extracts the AWT component here.
+     */
+    fun method2238(i: Int, `is`: IntArray?, i_12_: Int, hotX: Int, hotY: Int, target: DisplayTarget?, i_13_: Int): Class144 {
+        val component = (target as? AwtDisplayTarget)?.canvas
+        val point = if (hotX == 0 && hotY == 0) Point() else Point(hotX, hotY)
+        return method2238(i, `is`, i_12_, point, component, i_13_)
+    }
+
     fun method2239(i: Int) {
         if (i > -90) this.aClass234_3779 = null
         aLong3781 = 5000L + method599(-107)
@@ -335,9 +348,29 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
         return anObject3793 != null
     }
 
-    fun method2248(i: Byte, frame: Frame?): Class144? {
+    fun method2248(i: Byte, shell: AwtWindowShell?): Class144? {
         if (i.toInt() != 89) return null
-        return method2246(i.toInt() xor 0x51, 0, 7, 0, frame)
+        return method2246(i.toInt() xor 0x51, 0, 7, 0, shell?.frame)
+    }
+
+    /**
+     * Wraps the raw [java.awt.Frame] stored in a task-6 result into a transient
+     * [AwtWindowShell] so that [Class318_Sub1_Sub3_Sub4.method2463] never imports Frame.
+     * Returns null if [obj] is not a Frame.
+     */
+    fun wrapFullscreenFrame(obj: Any?): AwtWindowShell? {
+        val frame = obj as? java.awt.Frame ?: return null
+        // Re-use the existing singleton shell if available; otherwise create a transient one.
+        val existing = AwtWindowShell.instance
+        if (existing != null) {
+            existing.setFullscreenFrame(frame)
+            return existing
+        }
+        // Fallback: transient shell wrapping only the fullscreen frame (no applet root needed
+        // since only frame.setVisible/dispose are called in the shutdown path).
+        val transient = AwtWindowShell(java.awt.Panel())
+        transient.setFullscreenFrame(frame)
+        return transient
     }
 
     init {

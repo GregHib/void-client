@@ -461,6 +461,7 @@ import Class55.Companion.method518
 import Class55_Sub1.Companion.method523
 import Class56.Companion.method526
 import Class56.Companion.method527
+import AwtWindowShell
 import Class57.Companion.method530
 import Class59.Companion.method548
 import Class59_Sub1.Companion.method553
@@ -672,7 +673,7 @@ class Client : Applet_Sub1() {
         Class3.aClass161_125 = Class135_Sub2.aClass161_4839
         Class348_Sub40_Sub27.aClipboard9357 = Clipboards.instance
         Class182.aClass346_2449 = Class348_Sub3.method2743(Class305Statics.aCanvas3869, (-124).toByte())
-        Class258_Sub4.aClass373_8552 = method2941(Class305Statics.aCanvas3869, 0, true)
+        Class258_Sub4.aClass373_8552 = method2941(Class305.aDisplayTarget3869, 0, true)
         //        try {
         if (Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3785 != null) {
             Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1Statics.aClass297_8992!!.aClass234_3785!!), 5200, 0)
@@ -1318,7 +1319,7 @@ class Client : Applet_Sub1() {
         method556(false)
         if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654!!.method3635(89.toByte())
         if (Class34.aFrame476 != null) {
-            method527(Class34.aFrame476, Class348_Sub23_Sub1Statics.aClass297_8992, false)
+            method527(AwtWindowShell.instance, Class348_Sub23_Sub1Statics.aClass297_8992, false)
             Class34.aFrame476 = null
         }
         if (Class348_Sub40_Sub8.aClass238_9165 != null) {

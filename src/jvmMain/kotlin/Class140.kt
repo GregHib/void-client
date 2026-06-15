@@ -1,5 +1,4 @@
 import Class367_Sub9.Companion.method3551
-import java.awt.Color
 
 object Class140 {
     var anInt1956: Int = 0
@@ -35,31 +34,13 @@ object Class140 {
             if (i > -25) Class140.method1172((-22).toByte(), -1)
             val i_3_ = -i_1_ + -Class321.anInt4017 + Class272.anInt3473
             val i_4_ = -i_2_ + (Class348_Sub22.anInt6857 + -Class348_Sub42_Sub8_Sub2.anInt10432)
-            do {
-                if (i_1_ > 0 || i_3_ > 0 || i_2_ > 0 || i_4_ > 0) {
-                    try {
-                        // Shell is always wired from Loader; the applet panel is no longer a
-                        // Container we can getGraphics() from. Black-border painting is a no-op
-                        // when the canvas is correctly positioned by WindowShell.
-                        val frame = Class52.aFrame4904 ?: break
-                        var i_5_ = 0
-                        var i_6_ = 0
-                        val insets = frame.getInsets()
-                        i_5_ = insets.left
-                        i_6_ = insets.top
-                        val graphics = frame.getGraphics()
-                        graphics.setColor(Color.black)
-                        if (i_1_ > 0) graphics.fillRect(i_5_, i_6_, i_1_, Class348_Sub22.anInt6857)
-                        if (i_2_ > 0) graphics.fillRect(i_5_, i_6_, Class272.anInt3473, i_2_)
-                        if (i_3_ > 0) graphics.fillRect((-i_3_ + Class272.anInt3473 + i_5_), i_6_, i_3_, Class348_Sub22.anInt6857)
-                        if (i_4_ <= 0) break
-                        graphics.fillRect(i_5_, Class348_Sub22.anInt6857 + (i_6_ - i_4_), Class272.anInt3473, i_4_)
-                    } catch (exception: Exception) {
-                        break
-                    }
-                    break
-                }
-            } while (false)
+            // Black-border letterbox painting: when WindowShell positions the canvas the
+            // borders are always zero; the AWT paint path is only needed in the legacy
+            // applet-panel mode where no WindowShell is installed.
+            if (i_1_ > 0 || i_3_ > 0 || i_2_ > 0 || i_4_ > 0) {
+                val shell = WindowShells.instance as? AwtWindowShell
+                shell?.paintBorders(i_1_, i_2_, i_3_, i_4_)
+            }
         }
     }
 
