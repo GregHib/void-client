@@ -1,7 +1,7 @@
 import java.net.*
 import java.util.*
 
-class Class272_Sub2 : Class272() {
+class Class272_Sub2 : Class272Jvm() {
     private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
 
     @Throws(IOException::class)

@@ -1,6 +1,3 @@
-import Class133.method1142
-import java.io.File
-
 class Class158 internal constructor(string: String?, class221: Class221?, class341: Class341?, i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : Interface12 {
     var anInt4931: Int = 0
     var anInt4932: Int = 0
@@ -47,13 +44,6 @@ class Class158 internal constructor(string: String?, class221: Class221?, class3
         var aClass299_4938: Class299? = null
         var anInt4939: Int = 0
         var anInt4941: Int = 0
-
-        fun method1247(file: File, bool: Boolean, bool_0_: Boolean) {
-            if (Class168.anObject2256 == null) method1142(26.toByte())
-            anInt4939++
-            if (bool_0_ != false) aClass299_4938 = null
-            // HotSpotDiagnosticMXBean heap-dump — dead/disabled
-        }
 
         @JvmStatic
         fun method1248(i: Int): Array<Class221?> {

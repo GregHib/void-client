@@ -1,15 +1,9 @@
-import java.net.Socket
-
 abstract class Class272 {
     var anInt3470: Int = 0
     var aString3476: String? = null
 
     @Throws(IOException::class)
-    fun method2047(i: Byte): Class238 {
-        anInt3472++
-        if (i <= 84) anIntArray3475 = null
-        return Class238_Sub1(Socket(this.aString3476, this.anInt3470), anInt3470)
-    }
+    abstract fun method2047(i: Byte): Class238
 
     @Throws(IOException::class)
     abstract fun method2050(i: Int): Class238?
