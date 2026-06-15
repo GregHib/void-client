@@ -137,6 +137,13 @@ class Class348_Sub40_Sub1 : Class348_Sub40(1, false) {
         fun method3052(i: Int, string: String?): Class<*> {
             if (i != 11012) aClass351_9089 = null
             anInt9088++
+            return resolveClassByName(string)
+        }
+
+        // JVM seam: primitive-type dispatch + Class.forName. Extract to expect/actual when parent
+        // classes (Class348_Sub40, Class348_Sub49, Class139, Class348_Sub40_Sub6, Class351) move to commonMain.
+        @Throws(ClassNotFoundException::class)
+        private fun resolveClassByName(string: String?): Class<*> {
             if (string == "B") return Byte.TYPE
             if (string == "I") return Integer.TYPE
             if (string == "S") return Short.TYPE
