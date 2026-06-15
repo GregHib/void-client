@@ -1,0 +1,1068 @@
+=== MOVE TO commonMain ===
+  Applet_Sub1Statics.kt
+  AwtGameSurfaceFactory.kt
+  BlockingGameLoop.kt
+  Class10.kt
+  Class100.kt
+  Class101Statics.kt
+  Class101_Sub1Statics.kt
+  Class101_Sub2.kt
+  Class101_Sub3.kt
+  Class103.kt
+  Class105_Sub1.kt
+  Class105_Sub3.kt
+  Class105_Sub3_Sub1.kt
+  Class105_Sub3_Sub2.kt
+  Class105_Sub3_Sub3.kt
+  Class106.kt
+  Class107.kt
+  Class108.kt
+  Class109.kt
+  Class11.kt
+  Class110.kt
+  Class110_Sub1.kt
+  Class111.kt
+  Class112.kt
+  Class113.kt
+  Class114.kt
+  Class115.kt
+  Class116.kt
+  Class117.kt
+  Class119_Sub2.kt
+  Class120.kt
+  Class121.kt
+  Class122.kt
+  Class123.kt
+  Class124.kt
+  Class125.kt
+  Class126.kt
+  Class127.kt
+  Class127_Sub1.kt
+  Class128.kt
+  Class129.kt
+  Class12Statics.kt
+  Class13.kt
+  Class130.kt
+  Class130_Sub1.kt
+  Class131.kt
+  Class132.kt
+  Class133.kt
+  Class135_Sub2.kt
+  Class136.kt
+  Class137.kt
+  Class138.kt
+  Class139.kt
+  Class140.kt
+  Class141.kt
+  Class143.kt
+  Class146.kt
+  Class147.kt
+  Class148.kt
+  Class15.kt
+  Class150.kt
+  Class151.kt
+  Class152.kt
+  Class153.kt
+  Class154.kt
+  Class155.kt
+  Class156.kt
+  Class157.kt
+  Class158.kt
+  Class159.kt
+  Class16.kt
+  Class160.kt
+  Class161.kt
+  Class162.kt
+  Class163.kt
+  Class166.kt
+  Class167.kt
+  Class168.kt
+  Class17.kt
+  Class170.kt
+  Class171.kt
+  Class172.kt
+  Class173.kt
+  Class174.kt
+  Class175.kt
+  Class176.kt
+  Class177.kt
+  Class178.kt
+  Class179.kt
+  Class180.kt
+  Class181.kt
+  Class182.kt
+  Class183.kt
+  Class184.kt
+  Class185.kt
+  Class186.kt
+  Class187.kt
+  Class189.kt
+  Class19.kt
+  Class190.kt
+  Class191.kt
+  Class192.kt
+  Class193.kt
+  Class194.kt
+  Class195.kt
+  Class196.kt
+  Class197.kt
+  Class2.kt
+  Class20.kt
+  Class200.kt
+  Class202.kt
+  Class203.kt
+  Class204.kt
+  Class205.kt
+  Class207Statics.kt
+  Class209.kt
+  Class21.kt
+  Class210.kt
+  Class211.kt
+  Class212.kt
+  Class213.kt
+  Class215.kt
+  Class216Statics.kt
+  Class217.kt
+  Class218.kt
+  Class219.kt
+  Class22.kt
+  Class220.kt
+  Class221Statics.kt
+  Class222.kt
+  Class223Statics.kt
+  Class225.kt
+  Class226.kt
+  Class229Statics.kt
+  Class230.kt
+  Class231.kt
+  Class232.kt
+  Class234Statics.kt
+  Class235.kt
+  Class237.kt
+  Class237_Sub1.kt
+  Class238Statics.kt
+  Class239.kt
+  Class239_Sub1.kt
+  Class239_Sub10.kt
+  Class239_Sub11.kt
+  Class239_Sub12.kt
+  Class239_Sub13.kt
+  Class239_Sub14.kt
+  Class239_Sub15.kt
+  Class239_Sub16.kt
+  Class239_Sub17.kt
+  Class239_Sub18.kt
+  Class239_Sub19.kt
+  Class239_Sub2.kt
+  Class239_Sub20.kt
+  Class239_Sub21.kt
+  Class239_Sub22.kt
+  Class239_Sub23.kt
+  Class239_Sub25.kt
+  Class239_Sub26.kt
+  Class239_Sub27.kt
+  Class239_Sub28.kt
+  Class239_Sub29.kt
+  Class239_Sub3.kt
+  Class239_Sub4.kt
+  Class239_Sub5.kt
+  Class239_Sub6.kt
+  Class239_Sub7.kt
+  Class239_Sub8.kt
+  Class239_Sub9.kt
+  Class24.kt
+  Class240.kt
+  Class241Statics.kt
+  Class242.kt
+  Class243.kt
+  Class244.kt
+  Class245.kt
+  Class246.kt
+  Class246_Sub1.kt
+  Class247.kt
+  Class248.kt
+  Class249.kt
+  Class25.kt
+  Class250.kt
+  Class251.kt
+  Class252.kt
+  Class253.kt
+  Class254.kt
+  Class255.kt
+  Class256.kt
+  Class257.kt
+  Class258_Sub3_Sub1.kt
+  Class259.kt
+  Class26.kt
+  Class260.kt
+  Class261.kt
+  Class263.kt
+  Class264.kt
+  Class265.kt
+  Class267.kt
+  Class268.kt
+  Class269.kt
+  Class27.kt
+  Class271.kt
+  Class272.kt
+  Class272_Sub1.kt
+  Class273.kt
+  Class274.kt
+  Class275.kt
+  Class276.kt
+  Class277.kt
+  Class278.kt
+  Class279.kt
+  Class279_Sub1.kt
+  Class279_Sub2.kt
+  Class28.kt
+  Class281.kt
+  Class282.kt
+  Class284.kt
+  Class286.kt
+  Class286_Sub2.kt
+  Class287.kt
+  Class288.kt
+  Class288_Sub1.kt
+  Class289.kt
+  Class290.kt
+  Class291.kt
+  Class292.kt
+  Class293.kt
+  Class295.kt
+  Class296.kt
+  Class298.kt
+  Class299Statics.kt
+  Class299_Sub1_Sub1.kt
+  Class299_Sub2.kt
+  Class299_Sub2_Sub1.kt
+  Class3.kt
+  Class30.kt
+  Class300.kt
+  Class301.kt
+  Class302.kt
+  Class303.kt
+  Class304.kt
+  Class305.kt
+  Class306.kt
+  Class307.kt
+  Class308.kt
+  Class309.kt
+  Class31.kt
+  Class311.kt
+  Class312.kt
+  Class313.kt
+  Class314.kt
+  Class314_Sub1.kt
+  Class315.kt
+  Class316.kt
+  Class317.kt
+  Class318Statics.kt
+  Class318_Sub1.kt
+  Class318_Sub10.kt
+  Class318_Sub1_Sub1.kt
+  Class318_Sub1_Sub1_Sub1.kt
+  Class318_Sub1_Sub1_Sub2.kt
+  Class318_Sub1_Sub2.kt
+  Class318_Sub1_Sub2_Sub1.kt
+  Class318_Sub1_Sub3.kt
+  Class318_Sub1_Sub3_Sub1.kt
+  Class318_Sub1_Sub3_Sub2.kt
+  Class318_Sub1_Sub3_Sub3.kt
+  Class318_Sub1_Sub3_Sub4.kt
+  Class318_Sub1_Sub3_Sub5.kt
+  Class318_Sub1_Sub4.kt
+  Class318_Sub1_Sub4_Sub1.kt
+  Class318_Sub1_Sub4_Sub2.kt
+  Class318_Sub1_Sub5.kt
+  Class318_Sub1_Sub5_Sub1.kt
+  Class318_Sub2.kt
+  Class318_Sub3.kt
+  Class318_Sub4.kt
+  Class318_Sub5.kt
+  Class318_Sub6.kt
+  Class318_Sub7.kt
+  Class318_Sub8.kt
+  Class318_Sub9_Sub1.kt
+  Class318_Sub9_Sub2.kt
+  Class318_Sub9_Sub2_Sub1.kt
+  Class319.kt
+  Class32.kt
+  Class320.kt
+  Class321.kt
+  Class322.kt
+  Class324.kt
+  Class324_Sub1.kt
+  Class324_Sub3.kt
+  Class324_Sub4.kt
+  Class325.kt
+  Class326.kt
+  Class328_Sub1.kt
+  Class328_Sub1_Sub1.kt
+  Class328_Sub2.kt
+  Class328_Sub2_Sub1.kt
+  Class328_Sub3.kt
+  Class33.kt
+  Class331.kt
+  Class332.kt
+  Class333.kt
+  Class334.kt
+  Class335.kt
+  Class336.kt
+  Class337.kt
+  Class338.kt
+  Class339.kt
+  Class34.kt
+  Class340.kt
+  Class341Statics.kt
+  Class343.kt
+  Class344.kt
+  Class344_Sub1.kt
+  Class345.kt
+  Class345_Sub1.kt
+  Class347.kt
+  Class348Statics.kt
+  Class348_Sub10.kt
+  Class348_Sub11Statics.kt
+  Class348_Sub12.kt
+  Class348_Sub13.kt
+  Class348_Sub14.kt
+  Class348_Sub15.kt
+  Class348_Sub16.kt
+  Class348_Sub16_Sub1.kt
+  Class348_Sub16_Sub2.kt
+  Class348_Sub16_Sub3.kt
+  Class348_Sub16_Sub4.kt
+  Class348_Sub16_Sub5.kt
+  Class348_Sub17.kt
+  Class348_Sub19.kt
+  Class348_Sub19_Sub1.kt
+  Class348_Sub1Statics.kt
+  Class348_Sub1_Sub1.kt
+  Class348_Sub1_Sub2.kt
+  Class348_Sub1_Sub3.kt
+  Class348_Sub2.kt
+  Class348_Sub21.kt
+  Class348_Sub23_Sub1Statics.kt
+  Class348_Sub23_Sub2Statics.kt
+  Class348_Sub23_Sub3Statics.kt
+  Class348_Sub23_Sub4Statics.kt
+  Class348_Sub26.kt
+  Class348_Sub27.kt
+  Class348_Sub28.kt
+  Class348_Sub29.kt
+  Class348_Sub30.kt
+  Class348_Sub32.kt
+  Class348_Sub34.kt
+  Class348_Sub35.kt
+  Class348_Sub36.kt
+  Class348_Sub37.kt
+  Class348_Sub39.kt
+  Class348_Sub40.kt
+  Class348_Sub40_Sub10.kt
+  Class348_Sub40_Sub11.kt
+  Class348_Sub40_Sub12.kt
+  Class348_Sub40_Sub13.kt
+  Class348_Sub40_Sub14.kt
+  Class348_Sub40_Sub15.kt
+  Class348_Sub40_Sub16.kt
+  Class348_Sub40_Sub17.kt
+  Class348_Sub40_Sub17_Sub1.kt
+  Class348_Sub40_Sub18.kt
+  Class348_Sub40_Sub19.kt
+  Class348_Sub40_Sub2.kt
+  Class348_Sub40_Sub20.kt
+  Class348_Sub40_Sub21.kt
+  Class348_Sub40_Sub22.kt
+  Class348_Sub40_Sub23.kt
+  Class348_Sub40_Sub24.kt
+  Class348_Sub40_Sub25.kt
+  Class348_Sub40_Sub26.kt
+  Class348_Sub40_Sub27.kt
+  Class348_Sub40_Sub28.kt
+  Class348_Sub40_Sub29.kt
+  Class348_Sub40_Sub3.kt
+  Class348_Sub40_Sub30.kt
+  Class348_Sub40_Sub31.kt
+  Class348_Sub40_Sub32.kt
+  Class348_Sub40_Sub33.kt
+  Class348_Sub40_Sub34.kt
+  Class348_Sub40_Sub35.kt
+  Class348_Sub40_Sub36.kt
+  Class348_Sub40_Sub37.kt
+  Class348_Sub40_Sub38.kt
+  Class348_Sub40_Sub39.kt
+  Class348_Sub40_Sub4.kt
+  Class348_Sub40_Sub5.kt
+  Class348_Sub40_Sub6.kt
+  Class348_Sub40_Sub7.kt
+  Class348_Sub40_Sub8.kt
+  Class348_Sub40_Sub9.kt
+  Class348_Sub41.kt
+  Class348_Sub42_Sub1.kt
+  Class348_Sub42_Sub10.kt
+  Class348_Sub42_Sub11.kt
+  Class348_Sub42_Sub12.kt
+  Class348_Sub42_Sub13.kt
+  Class348_Sub42_Sub14.kt
+  Class348_Sub42_Sub16.kt
+  Class348_Sub42_Sub16_Sub1.kt
+  Class348_Sub42_Sub16_Sub2.kt
+  Class348_Sub42_Sub17.kt
+  Class348_Sub42_Sub18.kt
+  Class348_Sub42_Sub19.kt
+  Class348_Sub42_Sub20.kt
+  Class348_Sub42_Sub3.kt
+  Class348_Sub42_Sub4.kt
+  Class348_Sub42_Sub5.kt
+  Class348_Sub42_Sub6.kt
+  Class348_Sub42_Sub7.kt
+  Class348_Sub42_Sub8.kt
+  Class348_Sub42_Sub8_Sub1.kt
+  Class348_Sub42_Sub8_Sub2.kt
+  Class348_Sub42_Sub9_Sub1.kt
+  Class348_Sub42_Sub9_Sub2.kt
+  Class348_Sub43.kt
+  Class348_Sub44.kt
+  Class348_Sub45Statics.kt
+  Class348_Sub45_Sub2.kt
+  Class348_Sub46.kt
+  Class348_Sub47.kt
+  Class348_Sub48.kt
+  Class348_Sub49.kt
+  Class348_Sub49_Sub2.kt
+  Class348_Sub5.kt
+  Class348_Sub50.kt
+  Class348_Sub51.kt
+  Class348_Sub7.kt
+  Class348_Sub8Statics.kt
+  Class348_Sub9.kt
+  Class349.kt
+  Class35.kt
+  Class351.kt
+  Class352.kt
+  Class354.kt
+  Class355.kt
+  Class356.kt
+  Class357.kt
+  Class358.kt
+  Class359.kt
+  Class36.kt
+  Class361.kt
+  Class362.kt
+  Class363.kt
+  Class364.kt
+  Class365Statics.kt
+  Class367.kt
+  Class367_Sub1.kt
+  Class367_Sub10.kt
+  Class367_Sub3.kt
+  Class367_Sub4.kt
+  Class367_Sub8.kt
+  Class368.kt
+  Class369.kt
+  Class369_Sub1.kt
+  Class369_Sub2.kt
+  Class369_Sub3.kt
+  Class369_Sub3_Sub1.kt
+  Class37.kt
+  Class370.kt
+  Class371.kt
+  Class372.kt
+  Class375.kt
+  Class376Statics.jvm.kt
+  Class38.kt
+  Class39.kt
+  Class4.kt
+  Class40.kt
+  Class42.kt
+  Class43.kt
+  Class44.kt
+  Class45.kt
+  Class46.kt
+  Class47.kt
+  Class47_Sub1.kt
+  Class47_Sub2.kt
+  Class48.kt
+  Class49.kt
+  Class5.kt
+  Class50_Sub1.kt
+  Class50_Sub2.kt
+  Class50_Sub3.kt
+  Class50_Sub4.kt
+  Class51.kt
+  Class54.kt
+  Class55_Sub1.kt
+  Class56.kt
+  Class57.kt
+  Class58.kt
+  Class59_Sub1_Sub1.kt
+  Class59_Sub1_Sub2.kt
+  Class59_Sub2.kt
+  Class59_Sub2_Sub1.kt
+  Class59_Sub2_Sub2.kt
+  Class5_Sub1.kt
+  Class5_Sub1_Sub1.kt
+  Class5_Sub2.kt
+  Class5_Sub3.kt
+  Class6.kt
+  Class60.kt
+  Class62.kt
+  Class63.kt
+  Class64.kt
+  Class64_Sub1.kt
+  Class65.kt
+  Class66.kt
+  Class67.kt
+  Class68.kt
+  Class69.kt
+  Class70.kt
+  Class71.kt
+  Class72.kt
+  Class73.kt
+  Class74.kt
+  Class75.kt
+  Class75_Sub1.kt
+  Class76.kt
+  Class77.kt
+  Class78.kt
+  Class79.kt
+  Class8.kt
+  Class80.kt
+  Class83.kt
+  Class84.kt
+  Class85.kt
+  Class87.kt
+  Class88.kt
+  Class89.kt
+  Class9.kt
+  Class90.kt
+  Class91.kt
+  Class92.kt
+  Class94.kt
+  Class95.kt
+  Class96.kt
+  Class98.kt
+  Class99.kt
+  Client.kt
+  Exception_Sub1.kt
+  Exception_Sub1Statics.kt
+  IOException_Sub1.kt
+  InputStream_Sub1Statics.kt
+  InputStream_Sub2Statics.kt
+  Interface10.kt
+  Interface15.kt
+  Interface18.kt
+  Interface18_Impl1.kt
+  Interface18_Impl2.kt
+  Interface18_Impl3.kt
+  Interface20.kt
+  Interface7.kt
+  JvmClass105Factory.kt
+  JvmLoginVideo.kt
+  JvmRuntimeInfo.kt
+  JvmSoftwareToolkitFactory.kt
+  Npc.kt
+  OutputStream_Sub1Statics.kt
+  OutputStream_Sub2Statics.kt
+  Player.kt
+  RuntimeException_Sub1.kt
+  ThreadSleeper.kt
+  ThreadWorkerFactory.kt
+  aaStatics.kt
+  aa_Sub1.kt
+  aa_Sub2.kt
+  aa_Sub3Statics.kt
+  com/ms/com/ComFailException.kt
+  com/ms/com/IUnknown.kt
+  com/ms/directX/DDSurfaceDesc.kt
+  com/ms/directX/DSBufferDesc.kt
+  com/ms/directX/DSCursors.kt
+  com/ms/directX/IEnumModesCallback.kt
+  com/ms/directX/WaveFormatEx.kt
+  com/ms/dll/Callback.kt
+  com/ms/dll/Root.kt
+  jaclib/memory/Buffer.kt
+  jaclib/memory/Source.kt
+  jaclib/peer/uda.kt
+  jagdx/D3DADAPTER_IDENTIFIER.kt
+  jagdx/D3DCAPS.kt
+  jagdx/D3DDISPLAYMODE.kt
+  jagdx/D3DPSHADERCAPS2_0.kt
+  jagdx/D3DVSHADERCAPS2_0.kt
+  jagdx/fda.kt
+  jagdx/ue.kt
+  rStatics.kt
+  r_Sub1.kt
+  r_Sub2.kt
+  za.kt
+
+=== STAY IN jvmMain ===
+  Class374.kt
+    BLOCKED BY: java.io.*
+  Class272_Sub2.kt
+    BLOCKED BY: java.net.*, java.util.*
+  JvmGameLogger.kt
+    BLOCKED BY: java.io.IOException
+  jaclib/peer/PeerReference.kt
+    BLOCKED BY: java.lang.ref.WeakReference
+  jaclib/peer/hb.kt
+    BLOCKED BY: java.lang.ref.ReferenceQueue
+  JvmNativeLibraryProbe.kt
+    BLOCKED BY: java.util.Vector
+  AwtClipboard.kt
+    REASON: AWT/Swing (java.awt.datatransfer.Clipboard)
+  AwtDisplayTarget.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  AwtGlyphRasterizer.kt
+    REASON: AWT/Swing (java.awt.Color)
+  AwtWindowShell.kt
+    REASON: AWT/Swing (java.awt.Color)
+  CalendarShim.jvm.kt
+    REASON: has actual declarations
+  Callback_Sub1.kt
+    REASON: com.ms Win32/DX interop; AWT/Swing (java.awt.Component)
+  Canvas_Sub1.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  Class1.kt
+    REASON: com.ms Win32/DX interop
+  Class104.kt
+    REASON: jaggl OpenGL JNI; AWT/Swing (java.awt.Canvas)
+  Class105_Sub2.kt
+    REASON: jaggl OpenGL JNI
+  Class119.kt
+    REASON: jaclib native peer
+  Class119_Sub1.kt
+    REASON: jaclib native peer
+  Class124Statics.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  Class126Statics.jvm.kt
+    REASON: has actual declarations
+  Class127Sub1Statics.kt
+    REASON: has actual declarations
+  Class134.kt
+    REASON: com.ms Win32/DX interop; AWT/Swing (java.awt.Component)
+  Class135.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer
+  Class135_Sub1.kt
+    REASON: jaclib native peer
+  Class14.kt
+    REASON: jaggl OpenGL JNI
+  Class142.kt
+    REASON: jagdx DirectX JNI; jaclib native peer
+  Class14_Sub1.kt
+    REASON: jaggl OpenGL JNI
+  Class14_Sub2.kt
+    REASON: jaggl OpenGL JNI
+  Class14_Sub3.kt
+    REASON: jaggl OpenGL JNI
+  Class14_Sub4.kt
+    REASON: jaggl OpenGL JNI
+  Class156Statics.kt
+    REASON: has actual declarations
+  Class158Jvm.kt
+    REASON: java.io (java.io.File)
+  Class164.kt
+    REASON: jagex3.jagmisc JNI
+  Class165.kt
+    REASON: AWT/Swing (java.awt.Component)
+  Class169.kt
+    REASON: jagex3.jagmisc JNI; java.net (java.net.InetAddress)
+  Class18.kt
+    REASON: jaggl OpenGL JNI
+  Class186_Sub1.kt
+    REASON: jaggl OpenGL JNI
+  Class188.kt
+    REASON: jaggl OpenGL JNI
+  Class199.kt
+    REASON: AWT/Swing (java.awt.Color)
+  Class206.kt
+    REASON: jaggl OpenGL JNI
+  Class224Statics.kt
+    REASON: has actual declarations
+  Class228.kt
+    REASON: java.io (java.io.File)
+  Class228Statics.jvm.kt
+    REASON: has actual declarations
+  Class233.kt
+    REASON: jaggl OpenGL JNI
+  Class238_Sub1.kt
+    REASON: java.net (java.net.Socket)
+  Class239_Sub24.kt
+    REASON: java.io (java.io.File)
+  Class257Statics.kt
+    REASON: has actual declarations
+  Class258.kt
+    REASON: jaggl OpenGL JNI
+  Class258_Sub1.kt
+    REASON: jaggl OpenGL JNI
+  Class258_Sub2.kt
+    REASON: jaggl OpenGL JNI
+  Class258_Sub3.kt
+    REASON: jaggl OpenGL JNI; AWT/Swing (java.awt.MediaTracker)
+  Class258_Sub4.kt
+    REASON: jaggl OpenGL JNI
+  Class25Statics.jvm.kt
+    REASON: has actual declarations
+  Class262Statics.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  Class272Jvm.kt
+    REASON: java.net (java.net.Socket)
+  Class280.kt
+    REASON: jaclib native peer
+  Class285.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer
+  Class285_Sub1.kt
+    REASON: jaclib native peer
+  Class285_Sub2.kt
+    REASON: jaclib native peer
+  Class286_Sub1.kt
+    REASON: jaggl OpenGL JNI
+  Class286_Sub3.kt
+    REASON: jaggl OpenGL JNI
+  Class286_Sub4.kt
+    REASON: jaggl OpenGL JNI
+  Class286_Sub5.kt
+    REASON: jaggl OpenGL JNI
+  Class286_Sub5Statics.jvm.kt
+    REASON: has actual declarations
+  Class286_Sub6.kt
+    REASON: jaggl OpenGL JNI
+  Class286_Sub7.kt
+    REASON: jaggl OpenGL JNI
+  Class286_Sub8.kt
+    REASON: jaggl OpenGL JNI
+  Class286_Sub9.kt
+    REASON: jaggl OpenGL JNI
+  Class291Statics.jvm.kt
+    REASON: has actual declarations
+  Class294.kt
+    REASON: AWT/Swing (java.awt.Color)
+  Class297.kt
+    REASON: AWT/Swing (java.awt.*); java.net (java.net.InetAddress); java.lang.reflect
+  Class298Statics.jvm.kt
+    REASON: has actual declarations
+  Class299_Sub1.kt
+    REASON: java.io (java.io.FileOutputStream)
+  Class299_Sub1_Sub2.kt
+    REASON: jaggl OpenGL JNI
+  Class305Statics.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  Class310.kt
+    REASON: jagdx DirectX JNI
+  Class310_Sub1.kt
+    REASON: jagdx DirectX JNI
+  Class310_Sub2.kt
+    REASON: jagdx DirectX JNI
+  Class310_Sub3.kt
+    REASON: jagdx DirectX JNI
+  Class318_Sub1_Sub5_Sub2.kt
+    REASON: jaggl OpenGL JNI
+  Class318_Sub2Statics.jvm.kt
+    REASON: has actual declarations
+  Class324Statics.kt
+    REASON: jaggl OpenGL JNI
+  Class324_Sub2.kt
+    REASON: jaclib native peer
+  Class324_Sub5.kt
+    REASON: jaggl OpenGL JNI
+  Class327.kt
+    REASON: java.io (java.io.File)
+  Class328.kt
+    REASON: jaggl OpenGL JNI
+  Class330.kt
+    REASON: jaclib native peer
+  Class342.kt
+    REASON: AWT/Swing (java.awt.Image)
+  Class346_Sub1.kt
+    REASON: AWT/Swing (java.awt.Component)
+  Class348Sub40Sub19Statics.kt
+    REASON: has actual declarations
+  Class348_Sub18.kt
+    REASON: java.lang.reflect
+  Class348_Sub20.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer
+  Class348_Sub22.kt
+    REASON: AWT/Swing (java.awt.Color)
+  Class348_Sub23.kt
+    REASON: jagtheora video JNI
+  Class348_Sub23_Sub1.kt
+    REASON: jagtheora video JNI
+  Class348_Sub23_Sub2.kt
+    REASON: jagtheora video JNI
+  Class348_Sub23_Sub3.kt
+    REASON: jagtheora video JNI; java.net (java.net.Socket)
+  Class348_Sub23_Sub4.kt
+    REASON: jagtheora video JNI
+  Class348_Sub24.kt
+    REASON: java.io (java.io.File)
+  Class348_Sub3.kt
+    REASON: jaclib native peer; AWT/Swing (java.awt.Component)
+  Class348_Sub31.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  Class348_Sub31_Sub1.kt
+    REASON: AWT/Swing (java.awt.*)
+  Class348_Sub31_Sub2.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  Class348_Sub33.kt
+    REASON: java.io (java.io.*); java.lang.reflect
+  Class348_Sub33Statics.kt
+    REASON: has actual declarations
+  Class348_Sub38.kt
+    REASON: jaclib native peer
+  Class348_Sub3Statics.kt
+    REASON: has actual declarations
+  Class348_Sub4.kt
+    REASON: jaclib native peer
+  Class348_Sub42Statics.kt
+    REASON: has actual declarations
+  Class348_Sub42_Sub15.kt
+    REASON: jaggl OpenGL JNI
+  Class348_Sub42_Sub2.kt
+    REASON: jaggl OpenGL JNI
+  Class348_Sub49_Sub1.kt
+    REASON: jaclib native peer
+  Class348_Sub5Statics.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  Class348_Sub5_Sub1.kt
+    REASON: jaggl OpenGL JNI; java.io (java.io.*)
+  Class348_Sub6.kt
+    REASON: java.io (java.io.File)
+  Class348_Sub6Statics.kt
+    REASON: has actual declarations
+  Class353.kt
+    REASON: jaggl OpenGL JNI
+  Class366.kt
+    REASON: jagdx DirectX JNI; jaclib native peer
+  Class367_Sub11.kt
+    REASON: jaggl OpenGL JNI
+  Class367_Sub2.kt
+    REASON: jaggl OpenGL JNI
+  Class367_Sub5.kt
+    REASON: jagdx DirectX JNI
+  Class367_Sub6.kt
+    REASON: jagdx DirectX JNI
+  Class367_Sub7.kt
+    REASON: jagdx DirectX JNI
+  Class367_Sub9.kt
+    REASON: jaggl OpenGL JNI
+  Class369_Sub3_Sub1Statics.kt
+    REASON: has actual declarations
+  Class373_Sub1.kt
+    REASON: AWT/Swing (java.awt.Component)
+  Class373_Sub2.kt
+    REASON: AWT/Swing (java.awt.Component)
+  Class377.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer; AWT/Swing (java.awt.Canvas)
+  Class378.kt
+    REASON: jagdx DirectX JNI; jaclib native peer; AWT/Swing (java.awt.Canvas)
+  Class50.kt
+    REASON: jaggl OpenGL JNI
+  Class52.kt
+    REASON: AWT/Swing (java.awt.Frame)
+  Class53.kt
+    REASON: jagdx DirectX JNI
+  Class55.kt
+    REASON: jagtheora video JNI
+  Class59.kt
+    REASON: java.io (java.io.File)
+  Class59_Sub1.kt
+    REASON: jaggl OpenGL JNI
+  Class61.kt
+    REASON: jaggl OpenGL JNI
+  Class64_Sub2.kt
+    REASON: jaclib native peer
+  Class64_Sub3.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer
+  Class6Statics.jvm.kt
+    REASON: has actual declarations
+  Class7.kt
+    REASON: AWT/Swing (java.awt.DisplayMode)
+  Class82.kt
+    REASON: jagex3.jagmisc JNI; java.io (java.io.File)
+  Class93Statics.kt
+    REASON: jaggl OpenGL JNI; AWT/Swing (java.awt.Canvas)
+  Class97.kt
+    REASON: jaclib native peer
+  Clock.jvm.kt
+    REASON: has actual declarations
+  CurrentThread.jvm.kt
+    REASON: has actual declarations
+  EOFException.jvm.kt
+    REASON: has actual declarations
+  FileCacheStorage.kt
+    REASON: java.io (java.io.File)
+  IOException.jvm.kt
+    REASON: has actual declarations
+  Interface5_Impl1.kt
+    REASON: jaclib native peer
+  Interface5_Impl2.kt
+    REASON: jaclib native peer
+  JavaSoundAudioSink.kt
+    REASON: javax.sound
+  JvmHttpFetch.kt
+    REASON: java.net (java.net.URL)
+  JvmSocketOpener.kt
+    REASON: java.net (java.net.InetAddress)
+  Loader.kt
+    REASON: AWT/Swing (java.awt.BorderLayout)
+  Locking.jvm.kt
+    REASON: has actual declarations
+  Monitor.jvm.kt
+    REASON: has actual declarations
+  SoftRef.jvm.kt
+    REASON: has actual declarations
+  SystemProperties.jvm.kt
+    REASON: has actual declarations
+  TrigTables.jvm.kt
+    REASON: has actual declarations
+  a.kt
+    REASON: has external (JNI) declarations
+  aa_Sub3StaticsCommon.kt
+    REASON: has actual declarations
+  ba.kt
+    REASON: has external (JNI) declarations
+  com/ms/directX/DirectDraw.kt
+    REASON: AWT/Swing (java.awt.Component)
+  com/ms/directX/DirectSound.kt
+    REASON: AWT/Swing (java.awt.Component)
+  com/ms/directX/DirectSoundBuffer.kt
+    REASON: com.ms Win32/DX interop
+  com/ms/win32/User32.kt
+    REASON: has external (JNI) declarations
+  dxVertexLayout.kt
+    REASON: jagdx DirectX JNI
+  h.kt
+    REASON: has external (JNI) declarations
+  haStatics.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  ha_Sub2.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer; AWT/Swing (java.awt.Canvas)
+  ha_Sub3.kt
+    REASON: jaclib native peer
+  i.kt
+    REASON: has external (JNI) declarations
+  j.kt
+    REASON: has external (JNI) declarations
+  ja.kt
+    REASON: has external (JNI) declarations
+  jaclib/hardware_info/HardwareInfo.kt
+    REASON: has external (JNI) declarations
+  jaclib/memory/NativeBuffer.kt
+    REASON: has external (JNI) declarations
+  jaclib/memory/Stream.kt
+    REASON: has external (JNI) declarations
+  jaclib/memory/heap/NativeHeap.kt
+    REASON: has external (JNI) declarations
+  jaclib/memory/heap/NativeHeapBuffer.kt
+    REASON: jaclib native peer
+  jaclib/peer/IUnknown.kt
+    REASON: has external (JNI) declarations
+  jaclib/peer/IUnknownReference.kt
+    REASON: has external (JNI) declarations
+  jaclib/peer/NativeHeapPeerReference.kt
+    REASON: has external (JNI) declarations
+  jaclib/peer/Peer.kt
+    REASON: has external (JNI) declarations
+  jagdx/D3DLIGHT.kt
+    REASON: has external (JNI) declarations
+  jagdx/D3DPRESENT_PARAMETERS.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  jagdx/GeometryBuffer.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3D.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DBaseTexture.kt
+    REASON: jaclib native peer
+  jagdx/IDirect3DCubeTexture.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DDevice.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DEventQuery.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DIndexBuffer.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DPixelShader.kt
+    REASON: jaclib native peer
+  jagdx/IDirect3DSurface.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DSwapChain.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DTexture.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DVertexBuffer.kt
+    REASON: has external (JNI) declarations
+  jagdx/IDirect3DVertexDeclaration.kt
+    REASON: jaclib native peer
+  jagdx/IDirect3DVertexShader.kt
+    REASON: jaclib native peer
+  jagdx/IDirect3DVolumeTexture.kt
+    REASON: has external (JNI) declarations
+  jagdx/PixelBuffer.kt
+    REASON: has external (JNI) declarations
+  jagdx/VertexElementCollection.kt
+    REASON: has external (JNI) declarations
+  jagex3/graphics2/hw/NativeInterface.kt
+    REASON: has external (JNI) declarations
+  jagex3/jagmisc/jagmisc.kt
+    REASON: has external (JNI) declarations
+  jaggl/MapBuffer.kt
+    REASON: jaclib native peer
+  jaggl/OpenGL.kt
+    REASON: has external (JNI) declarations
+  jagtheora/misc/SimplePeer.kt
+    REASON: has external (JNI) declarations
+  jagtheora/ogg/OggPacket.kt
+    REASON: has external (JNI) declarations
+  jagtheora/ogg/OggPage.kt
+    REASON: has external (JNI) declarations
+  jagtheora/ogg/OggStreamState.kt
+    REASON: has external (JNI) declarations
+  jagtheora/ogg/OggSyncState.kt
+    REASON: has external (JNI) declarations
+  jagtheora/theora/DecoderContext.kt
+    REASON: has external (JNI) declarations
+  jagtheora/theora/Frame.kt
+    REASON: has external (JNI) declarations
+  jagtheora/theora/GranulePos.kt
+    REASON: has external (JNI) declarations
+  jagtheora/theora/SetupInfo.kt
+    REASON: has external (JNI) declarations
+  jagtheora/theora/TheoraComment.kt
+    REASON: has external (JNI) declarations
+  jagtheora/theora/TheoraInfo.kt
+    REASON: has external (JNI) declarations
+  jagtheora/vorbis/DSPState.kt
+    REASON: has external (JNI) declarations
+  jagtheora/vorbis/VorbisBlock.kt
+    REASON: has external (JNI) declarations
+  jagtheora/vorbis/VorbisComment.kt
+    REASON: has external (JNI) declarations
+  jagtheora/vorbis/VorbisInfo.kt
+    REASON: has external (JNI) declarations
+  n.kt
+    REASON: has external (JNI) declarations
+  na.kt
+    REASON: has external (JNI) declarations
+  oa.kt
+    REASON: has external (JNI) declarations
+  p.kt
+    REASON: has external (JNI) declarations
+  sStatics.kt
+    REASON: AWT/Swing (java.awt.Canvas)
+  s_Sub2.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer
+  s_Sub3.kt
+    REASON: jaclib native peer
+  t.kt
+    REASON: has external (JNI) declarations
+  wa.kt
+    REASON: has external (JNI) declarations
+  xa.kt
+    REASON: has external (JNI) declarations
+  ya.kt
+    REASON: has external (JNI) declarations
+  za_Sub1.kt
+    REASON: jaclib native peer
+  za_Sub2.kt
+    REASON: jaggl OpenGL JNI; jaclib native peer
