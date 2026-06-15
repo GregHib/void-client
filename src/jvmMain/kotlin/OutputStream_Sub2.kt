@@ -85,7 +85,7 @@ class OutputStream_Sub2 : OutputStream(), CommonOutputStream {
             } else `is` = (Exception_Sub1Statics.aClass255_112!!.method1940(-115, class348_sub42_sub12.aLong9605.toInt()).anIntArray2772)
             if (`is` != null) string += Class163.method1273(`is`, true)
             var i = Class369.aClass143_4962!!.method1186(string, Class341.aClass105Array4234, bool)
-            if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24.aClass105_6097!!.method971() + 4
+            if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24Statics.aClass105_6097!!.method971() + 4
             return i
         }
 

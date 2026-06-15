@@ -57,7 +57,7 @@ class OutputStream_Sub1 : OutputStream(), CommonOutputStream {
                     if (i_6_ < Class348_Sub35.anInt6979 shr 8) i_6_ = Class348_Sub35.anInt6979 shr 8
                     if (Class181.aBooleanArray2374!![4] && (i_6_ < Class255.anIntArray3273!![4] + 128)) i_6_ = 128 + Class255.anIntArray3273!![4]
                     val i_7_ = Class314.aFloat3938.toInt() and 0x3fff
-                    Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
+                    Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6Statics.anInt6633, Class355.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
                 } else if (Class348_Sub40_Sub21.anInt9282 == 5) Class268.method2035(i_2_, 0)
                 val i_8_ = Class286_Sub4.anInt6246
                 val i_9_ = Class305.anInt3855
@@ -161,10 +161,10 @@ class OutputStream_Sub1 : OutputStream(), CommonOutputStream {
                     Class5.anInt4638 = i_12_
                     Class305.anInt3855 = i_9_
                     Class59_Sub2_Sub2.anInt8685 = i_10_
-                    if (Class238_Sub1.aBoolean5840 && Class348_Sub4.aClass248_6601!!.method1902(4) == 0) Class238_Sub1.aBoolean5840 = false
-                    if (Class238_Sub1.aBoolean5840) {
+                    if (Class238_Sub1Statics.aBoolean5840 && Class348_Sub4Statics.aClass248_6601!!.method1902(4) == 0) Class238_Sub1Statics.aBoolean5840 = false
+                    if (Class238_Sub1Statics.aBoolean5840) {
                         Class348_Sub8.aHa6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
-                        Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654)
+                        Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33Statics.anInt6967, 544)), 2, Class348_Sub8.aHa6654)
                     }
                     Class226.method1626(1, false)
                 }

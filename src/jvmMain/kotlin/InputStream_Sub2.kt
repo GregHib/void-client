@@ -109,7 +109,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_47_ = i_46_ shr 2
                     val i_48_ = i_46_ and 0x3
                     val i_49_ = Class36.anIntArray487!![i_47_]
-                    ha_Sub3.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, Class348_Sub40_Sub12.anInt9200, i_49_)
+                    ha_Sub3Statics.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, Class348_Sub40_Sub12.anInt9200, i_49_)
                 } else if (class74 == Class286_Sub1.aClass74_6201) {
                     val i_50_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_51_ = (i_50_ shr 4 and 0xf) + Class278.anInt3581 * 2
@@ -144,7 +144,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                             var class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3? = null
                             if (i_58_ < 0) {
                                 val i_67_ = -i_58_ + -1
-                                if (Class348_Sub42_Sub11.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![i_67_])
+                                if (Class348_Sub42_Sub11.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (Class294Statics.aPlayerArray5058!![i_67_])
                                 else class318_sub1_sub3_sub3 = (Class132.aPlayer_1907)
                             } else {
                                 val i_68_ = i_58_ + -1
@@ -194,7 +194,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                         Class352.method3459(Class348_Sub34(i_76_, i_75_), Class348_Sub40_Sub12.anInt9200, i_79_, i_81_, -2)
                         if (bool) Class203.method1479(i_78_, (-124).toByte(), i_80_, Class348_Sub40_Sub12.anInt9200)
                     }
-                } else if (class74 == Class374.aClass74_4537) {
+                } else if (class74 == Class374Statics.aClass74_4537) {
                     val i_82_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
                     val i_83_ = i_82_ shr 2
                     val i_84_ = 0x3 and i_82_
