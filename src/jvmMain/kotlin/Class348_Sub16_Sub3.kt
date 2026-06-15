@@ -35,26 +35,29 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     private var aClass348_Sub2_8963: Class348_Sub2? = null
     private val aBoolean8964 = false
 
-    @Synchronized
     override fun method2818(): Class348_Sub16? {
+        return withLock(this) {
         anInt8946++
-        return null
+        null
+        }
     }
 
-    @Synchronized
     private fun method2840(bool: Boolean, i: Byte) {
+        withLock(this) {
         aClass204_8944!!.method1487()
         anInt8950++
         aClass348_Sub2_8963 = null
         method2851(true, bool)
         if (i >= -74) method2879(-43, 88, -33)
+        }
     }
 
-    @Synchronized
     fun method2841(i: Int, i_2_: Int, i_3_: Int) {
+        withLock(this) {
         if (i_2_ < -34) {
             anInt8935++
             method2854(i_3_, i, 98)
+        }
         }
     }
 
@@ -151,13 +154,14 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
     }
 
-    @Synchronized
     fun method2843(i: Int, i_26_: Int, i_27_: Int) {
+        withLock(this) {
         if (i_26_ < 0) {
             for (i_28_ in 0..15) anIntArray8925[i_28_] = i
         } else anIntArray8925[i_26_] = i
         anInt8907++
         if (i_27_ != -7836) method2843(41, 73, 85)
+        }
     }
 
     fun method2844(i: Byte): Int {
@@ -188,8 +192,8 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
     }
 
-    @Synchronized
     private fun method2846(bool: Boolean, bool_34_: Boolean, class348_sub2: Class348_Sub2?, bool_35_: Boolean) {
+        withLock(this) {
         do {
             try {
                 method2840(bool_34_, (-127).toByte())
@@ -213,6 +217,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             }
             break
         } while (false)
+        }
     }
 
     fun method2847(i: Int, class348_sub43: Class348_Sub43?): Boolean {
@@ -497,8 +502,8 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
     }
 
-    @Synchronized
     override fun method2819(i: Int) {
+        withLock(this) {
         var i = i
         anInt8908++
         if (aClass204_8944!!.method1491()) {
@@ -517,6 +522,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             } while (aClass204_8944!!.method1491())
         }
         aClass348_Sub16_Sub1_8958!!.method2819(i)
+        }
     }
 
     private fun method2859(i: Int, i_65_: Int, i_66_: Int) {
@@ -524,15 +530,16 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         if (i_66_ != -32) anIntArray8916 = null
     }
 
-    @Synchronized
     fun method2860(i: Int): Boolean {
+        return withLock(this) {
         if (i <= 94) method2818()
         anInt8949++
-        return aClass204_8944!!.method1491()
+        aClass204_8944!!.method1491()
+        }
     }
 
-    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_67_: Int) {
+        withLock(this) {
         var i = i
         var i_67_ = i_67_
         try {
@@ -557,13 +564,15 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.C(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_67_ + ')'))
         }
+        }
     }
 
-    @Synchronized
     fun method2861(i: Int, i_70_: Int) {
+        withLock(this) {
         if (i != 0) method2878(56, 73, 54)
         anInt8933 = i_70_
         anInt8938++
+        }
     }
 
     private fun method2863(i: Int, i_73_: Int, i_74_: Int, i_75_: Int) {
@@ -571,14 +580,15 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         anInt8940++
     }
 
-    @Synchronized
     fun method2864(i: Byte) {
+        withLock(this) {
         anInt8924++
         if (i <= 46) aClass204_8944 = null
         var class348_sub17 = aClass356_8891.method3484(0) as Class348_Sub17?
         while (class348_sub17 != null) {
             class348_sub17.method2933((-103).toByte())
             class348_sub17 = aClass356_8891.method3482(0) as Class348_Sub17?
+        }
         }
     }
 
@@ -608,8 +618,8 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
     }
 
-    @Synchronized
     fun method2866(class348_sub2: Class348_Sub2?, i: Int, class26: Class26?, class45: Class45?, i_77_: Int): Boolean {
+        return withLock(this) {
         try {
             class348_sub2!!.method2733()
             anInt8954++
@@ -632,16 +642,17 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 if (!class348_sub17.method2932(class26, `is`, (class348_sub8.aByteArray6657), 0)) bool = false
                 class348_sub8 = class348_sub2.aClass356_6565!!.method3482(0) as Class348_Sub8?
             }
-            if (i_77_ >= -13) return true
+            if (i_77_ >= -13) return@withLock true
             if (bool) class348_sub2.method2735()
-            return bool
+            bool
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.CA(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + i + ',' + (if (class26 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_77_ + ')'))
         }
+        }
     }
 
-    @Synchronized
     fun method2867(i: Int) {
+        withLock(this) {
         anInt8903++
         if (i == 4) {
             var class348_sub17 = aClass356_8891.method3484(0) as Class348_Sub17?
@@ -649,6 +660,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 class348_sub17.method2715(53.toByte())
                 class348_sub17 = aClass356_8891.method3482(i xor 0x4) as Class348_Sub17?
             }
+        }
         }
     }
 
@@ -690,18 +702,19 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
     }
 
-    @Synchronized
     fun method2869(class348_sub2: Class348_Sub2?, bool: Boolean, bool_88_: Boolean) {
+        withLock(this) {
         try {
             anInt8932++
             method2846(bool_88_, true, class348_sub2, bool)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.L(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + bool + ',' + bool_88_ + ')'))
         }
+        }
     }
 
-    @Synchronized
     fun method2870(class348_sub2: Class348_Sub2?, l: Long, bool: Boolean, bool_89_: Boolean, i: Byte) {
+        withLock(this) {
         try {
             method2846(false, bool_89_, class348_sub2, bool)
             if (i > 17) {
@@ -711,12 +724,14 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.O(" + (if (class348_sub2 != null) "{...}" else "null") + ',' + l + ',' + bool + ',' + bool_89_ + ',' + i + ')'))
         }
+        }
     }
 
-    @Synchronized
     override fun method2816(): Class348_Sub16? {
+        return withLock(this) {
         anInt8912++
-        return aClass348_Sub16_Sub1_8958
+        aClass348_Sub16_Sub1_8958
+        }
     }
 
     private fun method2872(i: Int, i_90_: Int) {
@@ -817,17 +832,19 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
     }
 
-    @Synchronized
     fun method2877(i: Int) {
+        withLock(this) {
         method2840(true, (-95).toByte())
         if (i != -128) method2849(103, -71, (-108).toByte(), -63)
         anInt8913++
+        }
     }
 
-    @Synchronized
     override fun method2821(): Int {
+        return withLock(this) {
         anInt8901++
-        return 0
+        0
+        }
     }
 
     constructor() {

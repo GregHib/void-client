@@ -19,10 +19,11 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         anInt8880++
     }
 
-    @Synchronized
     private fun method2828(i: Int): Class348_Sub42_Sub4? {
+        return withLock(this) {
         anInt8872++
-        return aClass262_8861!!.method1995(i + 23080) as Class348_Sub42_Sub4?
+        aClass262_8861!!.method1995(i + 23080) as Class348_Sub42_Sub4?
+        }
     }
 
     override fun method2818(): Class348_Sub16? {
@@ -30,15 +31,16 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         return null
     }
 
-    @Synchronized
     fun method2829(i: Int): Int {
+        return withLock(this) {
         anInt8871++
         if (i >= -33) method2831(84.toByte())
-        return anInt8888
+        anInt8888
+        }
     }
 
-    @Synchronized
     private fun method2831(i: Byte) {
+        withLock(this) {
         anInt8875++
         val i_1_ = -13 / ((-66 - i) / 49)
         val class348_sub42_sub4 = method2828(-23076)
@@ -48,10 +50,11 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
             anInt8883 = 0
             Class348_Sub40_Sub10.aClass308_9180!!.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1)
         }
+        }
     }
 
-    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_2_: Int) {
+        withLock(this) {
         var i = i
         anInt8863++
         if (!aBoolean8886) {
@@ -82,17 +85,19 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
                 }
             }
         }
+        }
     }
 
-    @Synchronized
     fun method2833(i: Int, bool: Boolean) {
+        withLock(this) {
         if (i != 1) aDouble8869 = -2.8743710633758983
         aBoolean8886 = bool
         anInt8878++
+        }
     }
 
-    @Synchronized
     fun method2835(class348_sub42_sub4: Class348_Sub42_Sub4, i: Int) {
+        withLock(this) {
         while ( /**/anInt8888 >= 100) {
             aClass262_8861!!.method1997(8)
             anInt8888--
@@ -102,6 +107,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
             aClass262_8861!!.method1999(class348_sub42_sub4, -20180)
             anInt8888++
         }
+        }
     }
 
     override fun method2816(): Class348_Sub16? {
@@ -109,21 +115,23 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         return null
     }
 
-    @Synchronized
     fun method2836(i: Int) {
+        withLock(this) {
         aBoolean8884 = true
         if (i != -1) aClass262_8861 = null
         anInt8865++
+        }
     }
 
-    @Synchronized
     fun method2837(i: Int): Double {
+        return withLock(this) {
         anInt8868++
-        if (anInt8888 < 1) return -1.0
+        if (anInt8888 < 1) return@withLock -1.0
         if (i != -21987) method2818()
         val class348_sub42_sub4 = aClass262_8861!!.method1995(4) as Class348_Sub42_Sub4?
-        if (class348_sub42_sub4 == null) return -1.0
-        return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / Class22.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
+        if (class348_sub42_sub4 == null) return@withLock -1.0
+        (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / Class22.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
+        }
     }
 
     fun method2838(i: Int, d: Double, i_14_: Int): Class348_Sub42_Sub4? {
@@ -139,8 +147,8 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         return class348_sub42_sub4
     }
 
-    @Synchronized
     override fun method2819(i: Int) {
+        withLock(this) {
         var i = i
         anInt8864++
         if (!aBoolean8886) {
@@ -160,6 +168,7 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
                 i -= -anInt8883 + (class348_sub42_sub4.aShortArrayArray9518[0])!!.size
                 method2831(111.toByte())
             }
+        }
         }
     }
 

@@ -9,13 +9,14 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
     private var anInt8967 = -1
     private var anInt8968 = 0
 
-    @Synchronized
     fun method2880(class348_sub16: Class348_Sub16) {
+        withLock(this) {
         class348_sub16.method2715(94.toByte())
+        }
     }
 
-    @Synchronized
     override fun method2819(i: Int) {
+        withLock(this) {
         var i = i
         do {
             if (anInt8967 < 0) {
@@ -44,6 +45,7 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
                 }
             }
         } while (i != 0)
+        }
     }
 
     override fun method2816(): Class348_Sub16? {
@@ -67,9 +69,10 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
         else anInt8967 = (class348 as Class348_Sub30).anInt6912
     }
 
-    @Synchronized
     fun method2883(class348_sub16: Class348_Sub16) {
+        withLock(this) {
         aClass262_8965.method2001(class348_sub16, -109)
+        }
     }
 
     private fun method2884(i: Int) {
@@ -100,9 +103,10 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
         }
     }
 
-    @Synchronized
     fun method2887(): Int {
-        return aClass262_8965.method1998(0)
+        return withLock(this) {
+        aClass262_8965.method1998(0)
+        }
     }
 
     override fun method2818(): Class348_Sub16? {
@@ -113,8 +117,8 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
         return 0
     }
 
-    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_3_: Int) {
+        withLock(this) {
         var i = i
         var i_3_ = i_3_
         do {
@@ -145,5 +149,6 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
                 }
             }
         } while (i_3_ != 0)
+        }
     }
 }

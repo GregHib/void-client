@@ -38,8 +38,8 @@ open class Class279 {
         anInt3606++
     }
 
-    @Synchronized
     fun method2084(i: Int) {
+        withLock(this) {
         anInt3595++
         if (!aBoolean3610) {
             var l = method599(-107)
@@ -57,7 +57,7 @@ open class Class279 {
             if (this.anIntArray3603 != null) {
                 try {
                     if (aLong3614 != 0L) {
-                        if (aLong3614 > l) return
+                        if (aLong3614 > l) return@withLock
                         method2082(this.anInt3613)
                         aBoolean3623 = true
                         aLong3614 = 0L
@@ -88,7 +88,7 @@ open class Class279 {
                             if (anInt3624 == 0 && anInt3617 == 0) {
                                 method2091()
                                 aLong3614 = 2000L + l
-                                return
+                                return@withLock
                             }
                             anInt3616 = min(anInt3617, anInt3624)
                             anInt3617 = anInt3624
@@ -102,6 +102,7 @@ open class Class279 {
                     aLong3614 = 2000L + l
                 }
             }
+        }
         }
     }
 
@@ -196,8 +197,8 @@ open class Class279 {
         aLong3602 = method599(-102)
     }
 
-    @Synchronized
     fun method2087(i: Int) {
+        withLock(this) {
         aBoolean3623 = true
         anInt3599++
         try {
@@ -207,12 +208,14 @@ open class Class279 {
             method2091()
             aLong3614 = 2000L + method599(-96)
         }
+        }
     }
 
-    @Synchronized
     fun method2088(bool: Boolean, class348_sub16: Class348_Sub16?) {
+        withLock(this) {
         aClass348_Sub16_3604 = class348_sub16
         anInt3600++
+        }
     }
 
     private fun method2089(i: Int, i_19_: Byte) {
@@ -227,8 +230,8 @@ open class Class279 {
         anInt3598++
     }
 
-    @Synchronized
     fun method2093(bool: Boolean) {
+        withLock(this) {
         anInt3609++
         if (Class183.aClass250_2462 != null) {
             var bool_35_ = true
@@ -245,6 +248,7 @@ open class Class279 {
         method2091()
         this.anIntArray3603 = null
         aBoolean3610 = bool
+        }
     }
 
     @Throws(Exception::class)

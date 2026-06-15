@@ -32,8 +32,8 @@ class Class311 : Runnable {
         return aClass56_3916!!.anInt1025
     }
 
-    @Synchronized
     fun method2316(class56: Class56?, string: String?, i: Int, l: Long, bool: Boolean) {
+        withLock(this) {
         try {
             if (bool != false) method2318(9)
             aString3921 = string
@@ -43,6 +43,7 @@ class Class311 : Runnable {
             aClass56_3916 = class56
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ae.J(" + (if (class56 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + l + ',' + bool + ')'))
+        }
         }
     }
 
@@ -134,20 +135,22 @@ class Class311 : Runnable {
         return anInt3915
     }
 
-    @Synchronized
     fun method2321(i: Int, interface16: Interface16) {
+        withLock(this) {
         anInt3911++
         if (i != 10559) aClass46_3913 = null
         anInterface16_3919 = anInterface16_3907
         anInterface16_3907 = interface16
         aLong3914 = method599(-67)
+        }
     }
 
-    @Synchronized
     fun method2322(i: Int): Boolean {
+        return withLock(this) {
         anInt3900++
-        if (i != 0) return false
-        return anInterface16_3907.method56(125.toByte(), aLong3914)
+        if (i != 0) return@withLock false
+        anInterface16_3907.method56(125.toByte(), aLong3914)
+        }
     }
 
     fun method2323(i: Int): Long {
@@ -168,11 +171,12 @@ class Class311 : Runnable {
         return anInt3920
     }
 
-    @Synchronized
     fun method2326(i: Int) {
+        withLock(this) {
         if (i <= 39) method2315(28.toByte())
         anInt3905++
         aBoolean3908 = true
+        }
     }
 
     companion object {

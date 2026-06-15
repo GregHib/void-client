@@ -21,8 +21,8 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
     private val anInt8982: Int
     private var anInt8983: Int
 
-    @Synchronized
     fun method2888(i: Int, i_0_: Int, i_1_: Int) {
+        withLock(this) {
         var i = i
         if (i == 0) method2926(i_0_, i_1_)
         else {
@@ -45,22 +45,25 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                 anInt8978 = (i_3_ - anInt8974) / i
             }
         }
+        }
     }
 
     fun method2890(): Boolean {
         return anInt8983 < 0 || anInt8983 >= ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984)!!.size shl 8
     }
 
-    @Synchronized
     fun method2891(bool: Boolean) {
+        withLock(this) {
         anInt8979 = (anInt8979 xor (anInt8979 shr 31)) + (anInt8979 ushr 31)
         if (bool) anInt8979 = -anInt8979
+        }
     }
 
-    @Synchronized
     fun method2892(): Int {
-        if (anInt8977 < 0) return -1
-        return anInt8977
+        return withLock(this) {
+        if (anInt8977 < 0) return@withLock -1
+        anInt8977
+        }
     }
 
     override fun method2820(): Int {
@@ -131,14 +134,15 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
         return false
     }
 
-    @Synchronized
     fun method2901(i: Int) {
+        withLock(this) {
         if (anInt8979 < 0) anInt8979 = -i
         else anInt8979 = i
+        }
     }
 
-    @Synchronized
     fun method2902(i: Int) {
+        withLock(this) {
         var i = i
         if (i == 0) {
             method2923(0)
@@ -162,6 +166,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             anInt8971 = -anInt8970 / i
             anInt8978 = -anInt8974 / i
         }
+        }
     }
 
     override fun method2821(): Int {
@@ -169,40 +174,46 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
         return 1
     }
 
-    @Synchronized
     fun method2906(): Int {
-        if (anInt8969 == -2147483648) return 0
-        return anInt8969
+        return withLock(this) {
+        if (anInt8969 == -2147483648) return@withLock 0
+        anInt8969
+        }
     }
 
-    @Synchronized
     fun method2909(i: Int) {
+        withLock(this) {
         method2926(method2906(), i)
+        }
     }
 
-    @Synchronized
     fun method2914(): Int {
-        if (anInt8979 < 0) return -anInt8979
-        return anInt8979
+        return withLock(this) {
+        if (anInt8979 < 0) return@withLock -anInt8979
+        anInt8979
+        }
     }
 
-    @Synchronized
     fun method2915(i: Int) {
+        withLock(this) {
         method2926(i shl 6, method2892())
+        }
     }
 
     override fun method2818(): Class348_Sub16? {
         return null
     }
 
-    @Synchronized
     fun method2916(i: Int, i_124_: Int) {
+        withLock(this) {
         method2888(i, i_124_, method2892())
+        }
     }
 
-    @Synchronized
     fun method2917(i: Int) {
+        withLock(this) {
         anInt8980 = i
+        }
     }
 
     private fun method2918() {
@@ -234,13 +245,14 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
         return method2925(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this, anInt8979, i_127_)
     }
 
-    @Synchronized
     private fun method2923(i: Int) {
+        withLock(this) {
         method2926(i, method2892())
+        }
     }
 
-    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_159_: Int) {
+        withLock(this) {
         var i_159_ = i_159_
         if (anInt8969 == 0 && anInt8972 == 0) method2819(i_159_)
         else {
@@ -257,7 +269,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                 else {
                     method2896()
                     this.method2715(83.toByte())
-                    return
+                    return@withLock
                 }
             }
             if (anInt8983 >= i_162_) {
@@ -265,14 +277,14 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                 else {
                     method2896()
                     this.method2715(81.toByte())
-                    return
+                    return@withLock
                 }
             }
             if (anInt8980 < 0) {
                 if (aBoolean8981) {
                     if (anInt8979 < 0) {
                         i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
-                        if (anInt8983 >= i_160_) return
+                        if (anInt8983 >= i_160_) return@withLock
                         anInt8983 = i_160_ + i_160_ - 1 - anInt8983
                         anInt8979 = -anInt8979
                     }
@@ -305,26 +317,26 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                         if (aBoolean8981) {
                             if (anInt8979 < 0) {
                                 i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
-                                if (anInt8983 >= i_160_) return
+                                if (anInt8983 >= i_160_) return@withLock
                                 anInt8983 = i_160_ + i_160_ - 1 - anInt8983
                                 anInt8979 = -anInt8979
                                 if (--anInt8980 == 0) break
                             }
                             do {
                                 i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8982 - 1]).toInt())
-                                if (anInt8983 < i_161_) return
+                                if (anInt8983 < i_161_) return@withLock
                                 anInt8983 = i_161_ + i_161_ - 1 - anInt8983
                                 anInt8979 = -anInt8979
                                 if (--anInt8980 == 0) break
                                 i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
-                                if (anInt8983 >= i_160_) return
+                                if (anInt8983 >= i_160_) return@withLock
                                 anInt8983 = i_160_ + i_160_ - 1 - anInt8983
                                 anInt8979 = -anInt8979
                             } while (--anInt8980 != 0)
                         } else if (anInt8979 < 0) {
                             while (true) {
                                 i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8982 - 1]).toInt())
-                                if (anInt8983 >= i_160_) return
+                                if (anInt8983 >= i_160_) return@withLock
                                 val i_165_ = (i_161_ - 1 - anInt8983) / i_163_
                                 if (i_165_ >= anInt8980) {
                                     anInt8983 += i_163_ * anInt8980
@@ -337,7 +349,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                         } else {
                             while (true) {
                                 i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
-                                if (anInt8983 < i_161_) return
+                                if (anInt8983 < i_161_) return@withLock
                                 val i_166_ = (anInt8983 - i_160_) / i_163_
                                 if (i_166_ >= anInt8980) {
                                     anInt8983 -= i_163_ * anInt8980
@@ -367,31 +379,34 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                 }
             }
         }
+        }
     }
 
-    @Synchronized
     fun method2924(i: Int) {
+        withLock(this) {
         var i = i
         val i_167_ = (((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!).size shl 8)
         if (i < -1) i = -1
         if (i > i_167_) i = i_167_
         anInt8983 = i
+        }
     }
 
     override fun method2816(): Class348_Sub16? {
         return null
     }
 
-    @Synchronized
     private fun method2926(i: Int, i_178_: Int) {
+        withLock(this) {
         anInt8969 = i
         anInt8977 = i_178_
         anInt8972 = 0
         method2918()
+        }
     }
 
-    @Synchronized
     override fun method2819(i: Int) {
+        withLock(this) {
         var i = i
         if (anInt8972 > 0) {
             if (i >= anInt8972) {
@@ -423,7 +438,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             else {
                 method2896()
                 this.method2715(60.toByte())
-                return
+                return@withLock
             }
         }
         if (anInt8983 >= i_181_) {
@@ -431,14 +446,14 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             else {
                 method2896()
                 this.method2715(93.toByte())
-                return
+                return@withLock
             }
         }
         anInt8983 += anInt8979 * i
         if (anInt8980 < 0) {
             if (aBoolean8981) {
                 if (anInt8979 < 0) {
-                    if (anInt8983 >= i_179_) return
+                    if (anInt8983 >= i_179_) return@withLock
                     anInt8983 = i_179_ + i_179_ - 1 - anInt8983
                     anInt8979 = -anInt8979
                 }
@@ -457,22 +472,22 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                 if (anInt8980 > 0) {
                     if (aBoolean8981) {
                         if (anInt8979 < 0) {
-                            if (anInt8983 >= i_179_) return
+                            if (anInt8983 >= i_179_) return@withLock
                             anInt8983 = i_179_ + i_179_ - 1 - anInt8983
                             anInt8979 = -anInt8979
                             if (--anInt8980 == 0) break
                         }
                         do {
-                            if (anInt8983 < i_180_) return
+                            if (anInt8983 < i_180_) return@withLock
                             anInt8983 = i_180_ + i_180_ - 1 - anInt8983
                             anInt8979 = -anInt8979
                             if (--anInt8980 == 0) break
-                            if (anInt8983 >= i_179_) return
+                            if (anInt8983 >= i_179_) return@withLock
                             anInt8983 = i_179_ + i_179_ - 1 - anInt8983
                             anInt8979 = -anInt8979
                         } while (--anInt8980 != 0)
                     } else if (anInt8979 < 0) {
-                        if (anInt8983 >= i_179_) return
+                        if (anInt8983 >= i_179_) return@withLock
                         val i_183_ = (i_180_ - 1 - anInt8983) / i_182_
                         if (i_183_ >= anInt8980) {
                             anInt8983 += i_182_ * anInt8980
@@ -480,10 +495,10 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                         } else {
                             anInt8983 += i_182_ * i_183_
                             anInt8980 -= i_183_
-                            return
+                            return@withLock
                         }
                     } else {
-                        if (anInt8983 < i_180_) return
+                        if (anInt8983 < i_180_) return@withLock
                         val i_184_ = (anInt8983 - i_179_) / i_182_
                         if (i_184_ >= anInt8980) {
                             anInt8983 -= i_182_ * anInt8980
@@ -491,7 +506,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                         } else {
                             anInt8983 -= i_182_ * i_184_
                             anInt8980 -= i_184_
-                            return
+                            return@withLock
                         }
                     }
                 }
@@ -507,6 +522,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                 method2896()
                 this.method2715(55.toByte())
             }
+        }
         }
     }
 

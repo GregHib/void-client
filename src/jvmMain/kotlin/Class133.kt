@@ -236,8 +236,8 @@ object Class133 {
     }
 
     @JvmStatic
-    @Synchronized
     fun method1142(i: Byte) {
+        withLock(this) {
         anInt1913++
         if (Class168.anObject2256 == null) {
             try {
@@ -246,6 +246,7 @@ object Class133 {
                 println("HeapDump setup error:")
                 exception.printStackTrace()
             }
+        }
         }
     }
 }
