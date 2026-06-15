@@ -121,7 +121,7 @@ class Class64_Sub1 : Class64 {
         return aShort5365.toInt()
     }
 
-    private fun method632(thread: Thread?) {
+    private fun method632(thread: Any?) {
         val class167 = aHa_Sub1_5353.method3724(thread) as Class167
         aClass109_5383 = class167.aClass109_2220
         if (class167 != aClass167_5367) {
@@ -1899,7 +1899,7 @@ class Class64_Sub1 : Class64 {
         var i_508_ = -2147483648
         var i_509_ = 2147483647
         var i_510_ = -2147483648
-        method632(Thread.currentThread())
+        method632(currentThread())
         if (!aBoolean5323) method655()
         val i_511_ = aShort5393 - aShort5395 shr 1
         val i_512_ = aShort5365 - aShort5329 shr 1
@@ -2272,7 +2272,7 @@ class Class64_Sub1 : Class64 {
         } else method640()
     }
 
-    private fun method648(thread: Thread?) {
+    private fun method648(thread: Any?) {
         val class167 = aHa_Sub1_5353.method3724(thread) as Class167
         if (class167 != aClass167_5336) {
             aClass167_5336 = class167
@@ -2344,7 +2344,7 @@ class Class64_Sub1 : Class64 {
         val class64_sub1_586_ = class64 as Class64_Sub1
         check((anInt5316 and 0x10000) == 65536) { "" }
         check((class64_sub1_586_.anInt5316 and 0x10000) == 65536) { "" }
-        method632(Thread.currentThread())
+        method632(currentThread())
         method655()
         method636()
         class64_sub1_586_.method655()
@@ -2724,7 +2724,7 @@ class Class64_Sub1 : Class64 {
                         aBoolean5357 = true
                     }
                 }
-                method632(Thread.currentThread())
+                method632(currentThread())
                 aClass109_5383!!.method1023((i_632_ and 0x2) != 0)
                 var bool_656_ = false
                 val bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482
@@ -3064,7 +3064,7 @@ class Class64_Sub1 : Class64 {
     }
 
     public override fun method614(i: Byte, i_762_: Int, bool: Boolean): Class64 {
-        method648(Thread.currentThread())
+        method648(currentThread())
         val class64_sub1_763_: Class64_Sub1
         val class64_sub1_764_: Class64_Sub1
         if (i.toInt() == 1) {
