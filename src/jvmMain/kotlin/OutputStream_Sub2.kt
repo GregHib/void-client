@@ -1,6 +1,7 @@
 import java.io.OutputStream
 
-class OutputStream_Sub2 : OutputStream() {
+class OutputStream_Sub2 : OutputStream(), CommonOutputStream {
+    override fun write(buf: ByteArray, off: Int, len: Int) = super.write(buf, off, len)
     @Throws(IOException::class)
     override fun write(i: Int) {
         anInt104++

@@ -1,0 +1,119 @@
+class Class376(private var anInputStream4548: CommonInputStream, i: Int) {
+    private var anInt4546: Int
+    private val aByteArray4554: ByteArray
+    private var anInt4556 = 0
+    private val aThread4557: WorkerHandle
+    private var anInt4558 = 0
+    private var anIOException4560: IOException? = null
+
+    fun method3615(i: Int) {
+        withLock(this) {
+            if (i != 15984) run()
+            if (anIOException4560 == null) anIOException4560 = IOException("")
+            monitorNotifyAll(this)
+        }
+        anInt4552++
+        aThread4557.join()
+    }
+
+    fun run() {
+        anInt4553++
+        loop@ while (true) {
+            var i = 0
+            withLock(this) {
+                while (true) {
+                    if (anIOException4560 != null) return
+                    if (anInt4556 != 0) {
+                        if (anInt4556 < anInt4558) i = -anInt4558 + anInt4546
+                        else i = -1 + anInt4556 - anInt4558
+                    } else i = -1 + (anInt4546 + -anInt4558)
+                    if (i > 0) break
+                    monitorWait(this)
+                }
+            }
+            val i_1_: Int
+            try {
+                i_1_ = anInputStream4548.read(aByteArray4554, anInt4558, i)
+                if (i_1_ == -1) throw EOFException()
+            } catch (ioexception: IOException) {
+                withLock(this) {
+                    anIOException4560 = ioexception
+                }
+                break@loop
+            }
+            withLock(this) {
+                anInt4558 = (i_1_ + anInt4558) % anInt4546
+            }
+        }
+    }
+
+    @Throws(IOException::class)
+    fun method3617(i: Int, i_2_: Int, i_3_: Int, `is`: ByteArray): Int {
+        var i = i
+        anInt4555++
+        if (i < 0 || i_2_ < 0 || `is`.size < i_2_ + i) throw IOException()
+        withLock(this) {
+            val i_4_: Int
+            if (anInt4556 <= anInt4558) i_4_ = anInt4558 + -anInt4556
+            else i_4_ = anInt4546 + (-anInt4556 - -anInt4558)
+            if (i_4_ < i) i = i_4_
+            if (i_3_ == i && anIOException4560 != null) throw IOException(anIOException4560.toString())
+            if (anInt4546 < i + anInt4556) {
+                val i_5_ = anInt4546 - anInt4556
+                Class214.method1577(aByteArray4554, anInt4556, `is`, i_2_, i_5_)
+                Class214.method1577(aByteArray4554, 0, `is`, i_2_ - -i_5_, i - i_5_)
+            } else Class214.method1577(aByteArray4554, anInt4556, `is`, i_2_, i)
+            anInt4556 = (anInt4556 - -i) % anInt4546
+            monitorNotifyAll(this)
+            return i
+        }
+    }
+
+    fun method3618(i: Int) {
+        anInt4550++
+        if (i != 0) anInt4546 = 110
+        anInputStream4548 = CommonInputStreams.createNoop()
+    }
+
+    @Throws(IOException::class)
+    fun method3619(i: Int, bool: Boolean): Boolean {
+        anInt4551++
+        if (i <= 0 || i >= anInt4546) throw IOException()
+        withLock(this) {
+            val i_6_: Int
+            if (anInt4556 > anInt4558) i_6_ = -anInt4556 + anInt4546 - -anInt4558
+            else i_6_ = anInt4558 - anInt4556
+            if (i > i_6_) {
+                if (anIOException4560 != null) throw IOException(anIOException4560.toString())
+                return false
+            }
+            return bool == false
+        }
+    }
+
+    /** Number of bytes currently readable from the buffer (the value method3619 compares against). */
+    @Throws(IOException::class)
+    fun availableCount(): Int {
+        withLock(this) {
+            if (anIOException4560 != null) throw IOException(anIOException4560.toString())
+            return if (anInt4556 > anInt4558) -anInt4556 + anInt4546 - -anInt4558 else anInt4558 - anInt4556
+        }
+    }
+
+    init {
+        anInt4546 = i - -1
+        aByteArray4554 = ByteArray(anInt4546)
+        aThread4557 = Workers.start({ run() }, daemon = true)
+    }
+
+    companion object {
+        var anInt4547: Int = 0
+        var anInt4549: Int = 0
+        var anInt4550: Int = 0
+        var anInt4551: Int = 0
+        var anInt4552: Int = 0
+        var anInt4553: Int = 0
+        var anInt4555: Int = 0
+        var anInt4559: Int = 0
+    }
+}

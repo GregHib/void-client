@@ -2,7 +2,8 @@ import ha_Sub2.Companion.method3802
 import java.io.OutputStream
 import kotlin.math.sin
 
-class OutputStream_Sub1 : OutputStream() {
+class OutputStream_Sub1 : OutputStream(), CommonOutputStream {
+    override fun write(buf: ByteArray, off: Int, len: Int) = super.write(buf, off, len)
     @Throws(IOException::class)
     override fun write(i: Int) {
         anInt96++

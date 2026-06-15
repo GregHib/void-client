@@ -4,7 +4,7 @@ import Class251.Companion.method1916
 import Class274.Companion.method2061
 import Class299_Sub2.Companion.method2269
 import Class318_Sub1_Sub3_Sub3.Companion.method2433
-import Class376.Companion.method3616
+import Class376Statics.method3616
 import Class40.Companion.method369
 import Class50_Sub2.Companion.method464
 import Class66.method705

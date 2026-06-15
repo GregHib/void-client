@@ -51,8 +51,14 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
     init {
         aSocket5836.setSoTimeout(30000)
         aSocket5836.setTcpNoDelay(true)
-        aClass376_5834 = Class376(aSocket5836.getInputStream(), i)
-        aClass208_5837 = Class208(aSocket5836.getOutputStream(), i)
+        val rawIs = aSocket5836.getInputStream()
+        aClass376_5834 = Class376(object : CommonInputStream {
+            override fun read(buf: ByteArray, off: Int, len: Int): Int = rawIs.read(buf, off, len)
+        }, i)
+        val rawOs = aSocket5836.getOutputStream()
+        aClass208_5837 = Class208(object : CommonOutputStream {
+            override fun write(buf: ByteArray, off: Int, len: Int) = rawOs.write(buf, off, len)
+        }, i)
     }
 
     protected fun finalize() {

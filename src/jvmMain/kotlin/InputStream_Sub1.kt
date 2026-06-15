@@ -1,6 +1,7 @@
 import java.io.InputStream
 
-class InputStream_Sub1 : InputStream() {
+class InputStream_Sub1 : InputStream(), CommonInputStream {
+    override fun read(buf: ByteArray, off: Int, len: Int): Int = super.read(buf, off, len)
     override fun read(): Int {
         anInt74++
         Class286_Sub5.method2161(31.toByte(), 30000L)

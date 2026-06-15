@@ -1,5 +1,4 @@
 import Class16.method260
-import java.io.File
 
 class Class166 internal constructor(class230: Class230?, i: Int, class45: Class45?, class45_9_: Class45?) {
     var aClass45_2180: Class45? = null
@@ -87,7 +86,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
             if (i == -21165) aClass262_2187 = null
         }
 
-        fun method1286(file: File?, i: Int, string: String?) {
+        fun method1286(file: Any?, i: Int, string: String?) {
             do {
                 try {
                     anInt2181++
