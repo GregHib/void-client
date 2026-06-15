@@ -17,8 +17,7 @@ import Class286_Sub5.Companion.method2161
  *    InputStream.read did against the socket).
  *  - method1476: close.
  */
-class Class202 internal constructor(connection: Class238?, class297: Class297?, i: Int) : Runnable {
-    private val aClass297_2649: Class297?
+class Class202 internal constructor(connection: Class238?, i: Int) : Runnable {
     private val aClass238_2668: Class238?
     private var aBoolean2654 = false
     private val anInt2669: Int
@@ -131,10 +130,9 @@ class Class202 internal constructor(connection: Class238?, class297: Class297?, 
     init {
         try {
             aClass238_2668 = connection
-            aClass297_2649 = class297
             anInt2669 = i
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("re.<init>(" + (if (connection != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("re.<init>(" + (if (connection != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

@@ -583,7 +583,7 @@ class Client : Applet_Sub1() {
                     if (aa.aClass144_114!!.anInt1997 == 1) Class47.anInt846++
                 }
                 if (Class47.anInt846 == 2) {
-                    Class193.aClass202_2589 = Class202(aa.aClass144_114!!.anObject1998 as Class238?, Class348_Sub23_Sub1Statics.aClass297_8992, 25000)
+                    Class193.aClass202_2589 = Class202(aa.aClass144_114!!.anObject1998 as Class238?, 25000)
                     val class348_sub49 = Class348_Sub49(5)
                     class348_sub49.writeByte(false, (Class178.aClass29_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
