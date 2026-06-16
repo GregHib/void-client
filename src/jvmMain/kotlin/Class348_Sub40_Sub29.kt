@@ -1,4 +1,4 @@
-import Class348_Sub23_Sub4.Companion.method2985
+import Class348_Sub23_Sub4Statics.method2985
 
 /* Class348_Sub40_Sub29 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

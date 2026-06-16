@@ -4,4 +4,6 @@
  */
 object Class286_Sub4Statics {
     var anInt6246: Int = 0
+
+    fun method2154(i: Int): Int = Class286_Sub4.method2154(i)
 }

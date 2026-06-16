@@ -23,7 +23,9 @@ import r_Sub1.Companion.method3290
 
 object Class164 {
     var anInt2172: Int = 0
-    var anInt2173: Int = 0
+    var anInt2173: Int
+        get() = Class164Statics.anInt2173
+        set(v) { Class164Statics.anInt2173 = v }
     var anInt2174: Int = 0
     var anInt2175: Int = 0
 

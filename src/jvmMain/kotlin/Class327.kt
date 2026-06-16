@@ -7,7 +7,9 @@ object Class327 {
     var anInt4092: Int = 0
     var anInt4093: Int = 0
     var aClass351_4094: Class351? = Class351(47, 4)
-    var anInt4095: Int = 0
+    var anInt4095: Int
+        get() = Class327Statics.anInt4095
+        set(v) { Class327Statics.anInt4095 = v }
     var anIntArray4096: IntArray? = IntArray(32)
     var anIntArray4097: IntArray? = IntArray(2)
     var aClass74_4098: Class74? = Class74(4, 7)
