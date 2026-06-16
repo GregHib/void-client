@@ -1,12 +1,9 @@
 import Class286_Sub8.Companion.method2173
-import Class348_Sub16_Sub3.Companion.method2878
-import Class348_Sub40_Sub32.Companion.method3135
 import jaclib.memory.Buffer
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeap
 import jaclib.memory.heap.NativeHeapBuffer
 import jagex3.graphics2.hw.NativeInterface
-import r_Sub2.Companion.method3297
 import java.util.*
 import kotlin.math.cos
 import kotlin.math.max
@@ -363,7 +360,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
     override fun method3661(i: Int, i_31_: Int, `is`: IntArray?, is_32_: IntArray?): aa {
         try {
             anInt7957++
-            return Class318_Sub4.method2501(i_31_, this, `is`, (-42).toByte(), is_32_, i)
+            return Class318Sub4Statics.method2501(i_31_, this, `is`, (-42).toByte(), is_32_, i)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.RF(" + i + ',' + i_31_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (is_32_ != null) "{...}" else "null") + ')'))
         }
@@ -2677,59 +2674,8 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         var anInt8078: Int = 0
         var anInt8081: Int = 0
 
-        /*synthetic*/
-        var aClass8211: Class<*>? = null
-
-        fun method3824(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int) {
-            var i_36_ = i_36_
-            anInt7933++
-            if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.anInt7319 > i_37_ && (i < -1 + Class348_Sub40_Sub3.anInt9109)) {
-                if (Class147.aClass357ArrayArrayArray2029 == null) return
-                if (i_41_ == 0) {
-                    val interface10 = method3297(i_40_, i_37_, i) as Interface10?
-                    val interface10_42_ = Class82.method813(i_40_, i_37_, i) as Interface10?
-                    if (interface10 != null && i_36_ != 2) {
-                        if (interface10 is Class318_Sub1_Sub4_Sub2) interface10.aClass235_10115!!.method1671(262144, i_35_)
-                        else Class218.method1591(i_37_, 89, i_41_, i_35_, interface10.method42(-76), i_36_, i, i_38_, i_40_)
-                    }
-                    if (interface10_42_ != null) {
-                        if (interface10_42_ is Class318_Sub1_Sub4_Sub2) interface10_42_.aClass235_10115!!.method1671(262144, i_35_)
-                        else Class218.method1591(i_37_, 92, i_41_, i_35_, interface10_42_.method42(-71), i_36_, i, i_38_, i_40_)
-                    }
-                } else if (i_41_ == 1) {
-                    val interface10 = (method3135(i_40_, i_37_, i) as Interface10?)
-                    if (interface10 != null) {
-                        if (interface10 is Class318_Sub1_Sub5_Sub2) interface10.aClass235_10155!!.method1671(262144, i_35_)
-                        else {
-                            val i_43_ = interface10.method42(-83)
-                            if (i_36_ != 4 && i_36_ != 5) {
-                                if (i_36_ != 6) {
-                                    if (i_36_ == 7) Class218.method1591(i_37_, 50, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and 2 + i_38_), i_40_)
-                                    else if (i_36_ == 8) {
-                                        Class218.method1591(i_37_, 116, i_41_, i_35_, i_43_, 4, i, 4 + i_38_, i_40_)
-                                        Class218.method1591(i_37_, 91, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and i_38_ - -2), i_40_)
-                                    }
-                                } else Class218.method1591(i_37_, 22, i_41_, i_35_, i_43_, 4, i, i_38_ + 4, i_40_)
-                            } else Class218.method1591(i_37_, 86, i_41_, i_35_, i_43_, 4, i, i_38_, i_40_)
-                        }
-                    }
-                } else if (i_41_ == 2) {
-                    val interface10 = ((Class177.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (Interface10::class.java.also { aClass8211 = it })))) as Interface10?)
-                    if (interface10 != null) {
-                        if (i_36_ == 11) i_36_ = 10
-                        if (interface10 !is Class318_Sub1_Sub3_Sub2) Class218.method1591(i_37_, 43, i_41_, i_35_, interface10.method42(-107), i_36_, i, i_38_, i_40_)
-                        else interface10.aClass235_10045!!.method1671(262144, i_35_)
-                    }
-                } else if (i_41_ == 3) {
-                    val interface10 = (method2878(i_40_, i_37_, i) as Interface10?)
-                    if (interface10 != null) {
-                        if (interface10 is Class318_Sub1_Sub1_Sub1) interface10.aClass235_9955!!.method1671(262144, i_35_)
-                        else Class218.method1591(i_37_, 28, i_41_, i_35_, interface10.method42(-123), i_36_, i, i_38_, i_40_)
-                    }
-                }
-            }
-            if (i_39_ < 98) method3936(-100)
-        }
+        fun method3824(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int) =
+            ha_Sub3Statics.method3824(i, i_35_, i_36_, i_37_, i_38_, i_39_, i_40_, i_41_)
 
         fun method3870(i: Int) {
             aStringArray8019 = null

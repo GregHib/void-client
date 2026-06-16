@@ -33,37 +33,6 @@ class Class318_Sub4 : Class318() {
         var anInt6411: Int = 0
         var anInt6412: Int = 0
         var anInt6413: Int = 0
-        fun method2501(i: Int, var_ha_Sub3: ha_Sub3?, `is`: IntArray?, i_0_: Byte, is_1_: IntArray?, i_2_: Int): aa_Sub2 {
-            try {
-                if (i_0_ >= -32) method2502(null, -18)
-                anInt6412++
-                if (var_ha_Sub3!!.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, 125.toByte())) {
-                    val is_3_ = ByteArray(i * i_2_)
-                    var i_4_ = 0
-                    while (i > i_4_) {
-                        var i_5_ = `is`!![i_4_] + i_2_ * i_4_
-                        var i_6_ = 0
-                        while (is_1_!![i_4_] > i_6_) {
-                            is_3_[i_5_++] = (-1).toByte()
-                            i_6_++
-                        }
-                        i_4_++
-                    }
-                    return aa_Sub2(var_ha_Sub3, i_2_, i, is_3_)
-                }
-                val is_7_ = IntArray(i * i_2_)
-                var i_8_ = 0
-                while (i > i_8_) {
-                    var i_9_ = `is`!![i_8_] + i_8_ * i_2_
-                    for (i_10_ in 0..<is_1_!![i_8_]) is_7_[i_9_++] = -16777216
-                    i_8_++
-                }
-                return aa_Sub2(var_ha_Sub3, i_2_, i, is_7_)
-            } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jda.A(" + i + ',' + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ')'))
-            }
-        }
-
         fun method2502(`is`: ByteArray?, i: Int): Class348_Sub42_Sub19? {
             if (i >= -76) return null
             anInt6413++
@@ -117,7 +86,7 @@ class Class318_Sub4 : Class318() {
             if (i_26_ != 0) i_27_ = i_22_ - i_26_
             else i_27_ = 0
             val i_28_ = -((-1 + (i_22_ + i_25_)) / i_22_)
-            if (i_24_ != -16259) method2501(-113, null, null, 40.toByte(), null, -110)
+            if (i_24_ != -16259) Class318Sub4Statics.method2501(-113, null, null, 40.toByte(), null, -110)
             val i_29_ = -((i_22_ + i_23_ + -1) / i_22_)
             for (i_30_ in i_28_..-1) {
                 for (i_31_ in i_29_..-1) {

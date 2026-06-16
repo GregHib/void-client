@@ -1,5 +1,4 @@
 import Class348_Sub16_Sub3.Companion.method2862
-import ha_Sub3.Companion.method3873
 
 /* Class179 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -80,23 +79,6 @@ class Class179 internal constructor(private val anInt2365: Int, bool: Boolean) {
         var anInt2366: Int = 0
         var anInt2368: Int = 0
         var anInt2369: Int = 0
-
-        fun method1357(`is`: ByteArray?, bool: Boolean, i: Byte): Any? {
-            if (i < 73) anInt2361 = -51
-            anInt2363++
-            if (`is` == null) return null
-            if (`is`.size > 136 && !Class17.aBoolean247) {
-                try {
-                    val class344: Class344 = Class344_Sub1()
-                    class344.method2691(62.toByte(), `is`)
-                    return class344
-                } catch (throwable: Throwable) {
-                    Class17.aBoolean247 = true
-                }
-            }
-            if (bool) return method3873(`is`, 0)
-            return `is`
-        }
 
         fun method1359(bool: Boolean, i: Int): Int {
             anInt2368++

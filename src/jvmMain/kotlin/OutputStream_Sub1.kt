@@ -183,13 +183,13 @@ class OutputStream_Sub1 : OutputStream(), CommonOutputStream {
             if (Class355.anObject4366 == null) {
                 val class59_sub1_sub1 = Class59_Sub1_Sub1()
                 val `is` = class59_sub1_sub1.method559(128, 128, 106.toByte(), 16)
-                Class355.anObject4366 = Class179.method1357(`is`, false, 111.toByte())
+                Class355.anObject4366 = Class179Statics.method1357(`is`, false, 111.toByte())
             }
             anInt92++
             if (Class227.anObject2969 == null) {
                 val class59_sub2_sub2 = Class59_Sub2_Sub2()
                 val `is` = class59_sub2_sub2.method571(128, (-38).toByte(), 16, 128)
-                Class227.anObject2969 = Class179.method1357(`is`, false, 106.toByte())
+                Class227.anObject2969 = Class179Statics.method1357(`is`, false, 106.toByte())
             }
         }
 

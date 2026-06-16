@@ -181,7 +181,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
                     if (is_11_ == null) i_29_ = i_28_
                     else i_29_ = is_11_[i_28_]
                     if (this.anInt634 != 0) objects[i_29_] = is_22_[i_28_]
-                    else objects[i_29_] = Class179.method1357(is_22_[i_28_], false, 126.toByte())
+                    else objects[i_29_] = Class179Statics.method1357(is_22_[i_28_], false, 126.toByte())
                     i_28_++
                 }
             }
@@ -190,7 +190,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
             if (is_11_ != null) i_44_ = is_11_[0]
             else i_44_ = 0
             if (this.anInt634 != 0) objects[i_44_] = is_15_
-            else objects[i_44_] = Class179.method1357(is_15_, false, 104.toByte())
+            else objects[i_44_] = Class179Statics.method1357(is_15_, false, 104.toByte())
         }
         return true
     }
@@ -321,7 +321,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
 
     private fun method406(i: Int, i_61_: Int) {
         if (i_61_ > -105) anObjectArrayArray664 = null
-        if (!aBoolean655) anObjectArray656!![i] = Class179.method1357(aClass314_659!!.method2339(i, 73.toByte()), false, 123.toByte())
+        if (!aBoolean655) anObjectArray656!![i] = Class179Statics.method1357(aClass314_659!!.method2339(i, 73.toByte()), false, 123.toByte())
         else anObjectArray656!![i] = aClass314_659!!.method2339(i, 12.toByte())
         anInt665++
     }
