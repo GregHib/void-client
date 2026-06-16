@@ -5,10 +5,10 @@ import java.awt.Color
 class Class348_Sub22 internal constructor(var aNpc_6859: Npc?) : Class348() {
     companion object {
         var anInt6857: Int get() = Class348_Sub22Statics.anInt6857; set(v) { Class348_Sub22Statics.anInt6857 = v }
-        var anInt6858: Int = 0
-        var anInt6860: Int = 0
-        var anInt6861: Int = 0
-        var anInt6862: Int = 0
+        var anInt6858: Int get() = Class348_Sub22Statics.anInt6858; set(v) { Class348_Sub22Statics.anInt6858 = v }
+        var anInt6860: Int get() = Class348_Sub22Statics.anInt6860; set(v) { Class348_Sub22Statics.anInt6860 = v }
+        var anInt6861: Int get() = Class348_Sub22Statics.anInt6861; set(v) { Class348_Sub22Statics.anInt6861 = v }
+        var anInt6862: Int get() = Class348_Sub22Statics.anInt6862; set(v) { Class348_Sub22Statics.anInt6862 = v }
 
         fun method2957(i: Int, i_0_: Byte, i_1_: Int): Class46? {
             anInt6858++

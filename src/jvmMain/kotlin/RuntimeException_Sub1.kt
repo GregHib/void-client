@@ -3,16 +3,16 @@
 */
 class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: String?) : RuntimeException() {
     companion object {
-        var anInt4596: Int
-        var anInt4597: Int = 0
-        var anInt4598: Int = 0
-        var aBoolean4599: Boolean
-        var anInt4600: Int = 52
-        var aClass351_4601: Class351?
-        var aFloatArray4602: FloatArray?
-        var anIntArray4603: IntArray? = null
-        var aBoolean4604: Boolean
-        var anInt4605: Int = 0
+        var anInt4596: Int get() = RuntimeException_Sub1Statics.anInt4596; set(v) { RuntimeException_Sub1Statics.anInt4596 = v }
+        var anInt4597: Int get() = RuntimeException_Sub1Statics.anInt4597; set(v) { RuntimeException_Sub1Statics.anInt4597 = v }
+        var anInt4598: Int get() = RuntimeException_Sub1Statics.anInt4598; set(v) { RuntimeException_Sub1Statics.anInt4598 = v }
+        var aBoolean4599: Boolean get() = RuntimeException_Sub1Statics.aBoolean4599; set(v) { RuntimeException_Sub1Statics.aBoolean4599 = v }
+        var anInt4600: Int get() = RuntimeException_Sub1Statics.anInt4600; set(v) { RuntimeException_Sub1Statics.anInt4600 = v }
+        var aClass351_4601: Class351? = Class351(65, 3)
+        var aFloatArray4602: FloatArray? get() = RuntimeException_Sub1Statics.aFloatArray4602; set(v) { RuntimeException_Sub1Statics.aFloatArray4602 = v }
+        var anIntArray4603: IntArray? get() = RuntimeException_Sub1Statics.anIntArray4603; set(v) { RuntimeException_Sub1Statics.anIntArray4603 = v }
+        var aBoolean4604: Boolean get() = RuntimeException_Sub1Statics.aBoolean4604; set(v) { RuntimeException_Sub1Statics.aBoolean4604 = v }
+        var anInt4605: Int get() = RuntimeException_Sub1Statics.anInt4605; set(v) { RuntimeException_Sub1Statics.anInt4605 = v }
 
         fun method4009(i: Int, `is`: IntArray?, is_0_: IntArray?, i_1_: Int, var_ha_Sub2: ha_Sub2?, i_2_: Int): aa_Sub1 {
             try {
@@ -88,14 +88,6 @@ class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: Str
                     Class106.anIntArray1636!![i_10_] = i_10_ * 20
                 }
             }
-        }
-
-        init {
-            aBoolean4599 = true
-            anInt4596 = -1
-            aFloatArray4602 = FloatArray(4)
-            aBoolean4604 = false
-            aClass351_4601 = Class351(65, 3)
         }
     }
 }
