@@ -147,7 +147,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                             }
                             if ((0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_10_ shr 9]!![i_11_ shr 9]).toInt()) != 0) method3542(i_11_ shr 9, Class147.aClass357ArrayArrayArray2029, i_10_ shr 9, 0, 0, false)
                             if (Class348_Sub42_Sub19.Companion.anInt9701 < 2560) {
-                                var i_12_ = Class286_Sub4.anInt6246 shr 9
+                                var i_12_ = Class286_Sub4Statics.anInt6246 shr 9
                                 var i_13_ = Class59_Sub2_Sub2.anInt8685 shr 9
                                 val i_14_ = i_10_ shr 9
                                 val i_15_ = i_11_ shr 9
@@ -204,8 +204,8 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
                                 }
                             }
                         } else {
-                            val i_22_ = method2064(Class286_Sub4.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685)
-                            if (i_22_ - Class305.anInt3855 < 3200 && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![Class286_Sub4.anInt6246 shr 9]!![Class59_Sub2_Sub2.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(Class59_Sub2_Sub2.anInt8685 shr 9, Class147.aClass357ArrayArrayArray2029, Class286_Sub4.anInt6246 shr 9, 0, 1, false)
+                            val i_22_ = method2064(Class286_Sub4Statics.anInt6246, Class355.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685)
+                            if (i_22_ - Class305.anInt3855 < 3200 && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![Class286_Sub4Statics.anInt6246 shr 9]!![Class59_Sub2_Sub2.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(Class59_Sub2_Sub2.anInt8685 shr 9, Class147.aClass357ArrayArrayArray2029, Class286_Sub4Statics.anInt6246 shr 9, 0, 1, false)
                         }
                     }
                 }

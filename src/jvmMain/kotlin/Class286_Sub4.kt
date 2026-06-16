@@ -18,7 +18,7 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             this.aHa_Sub2_3684.method3761(0, i_0_)
         }
         anInt6240++
-        if (i > -89) anInt6246 = 45
+        if (i > -89) Class286_Sub4Statics.anInt6246 = 45
     }
 
     override fun method2133(i: Int) {
@@ -123,10 +123,6 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anInt6243: Int = 0
         var aClass351_6244: Class351? = Class351(9, 8)
         var anInt6245: Int = 0
-        // Promoted to Class286_Sub4Statics so non-shader callers need not import this class.
-        var anInt6246: Int
-            get() = Class286_Sub4Statics.anInt6246
-            set(v) { Class286_Sub4Statics.anInt6246 = v }
 
         fun method2154(i: Int): Int {
             var i_1_ = -1

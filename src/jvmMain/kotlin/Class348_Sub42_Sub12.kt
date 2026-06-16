@@ -93,7 +93,7 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
                 val i_8_ = Class352.anInt4336 * 512 - -256
                 val i_9_ = Class281.anInt3647 * 512 - -256
                 val i_10_ = (method2064(i_8_, Class355.anInt4372, 11219, i_9_) + -Class121.anInt1797)
-                val i_11_ = i_8_ - Class286_Sub4.anInt6246
+                val i_11_ = i_8_ - Class286_Sub4Statics.anInt6246
                 val i_12_ = -Class305.anInt3855 + i_10_
                 val i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685
                 val i_14_ = sqrt((i_11_ * i_11_ + i_13_ * i_13_).toDouble()).toInt()

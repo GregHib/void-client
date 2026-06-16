@@ -393,8 +393,8 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
                             method94(
-                                ("Pos: " + (Class132.aPlayer_1907!!.plane) + "," + (((Class286_Sub4.anInt6246 shr 9) - -za_Sub2Statics.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4.anInt6246 shr 9) - -za_Sub2Statics.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((Class275.method2064(
-                                    Class286_Sub4.anInt6246,
+                                ("Pos: " + (Class132.aPlayer_1907!!.plane) + "," + (((Class286_Sub4Statics.anInt6246 shr 9) - -za_Sub2Statics.regionTileX) shr 6) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) + Class90.regionTileY shr 6) + "," + (((Class286_Sub4Statics.anInt6246 shr 9) - -za_Sub2Statics.regionTileX) and 0x3f) + "," + ((Class59_Sub2_Sub2.anInt8685 shr 9) - -Class90.regionTileY and 0x3f) + " Height: " + ((Class275.method2064(
+                                    Class286_Sub4Statics.anInt6246,
                                     (Class132.aPlayer_1907!!.plane).toInt(),
                                     11219,
                                     Class59_Sub2_Sub2.anInt8685

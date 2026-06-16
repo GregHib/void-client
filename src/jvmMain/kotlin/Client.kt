@@ -1530,7 +1530,7 @@ class Client : Applet_Sub1() {
         if (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
             if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
             else Class348_Sub21.method2954((-127).toByte())
-            if (Class286_Sub4.anInt6246 shr 9 < 14 || (Class286_Sub4.anInt6246 shr 9 >= -14 + Class367Sub4Statics.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) Class101Statics.method893((-49).toByte())
+            if (Class286_Sub4Statics.anInt6246 shr 9 < 14 || (Class286_Sub4Statics.anInt6246 shr 9 >= -14 + Class367Sub4Statics.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) Class101Statics.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {

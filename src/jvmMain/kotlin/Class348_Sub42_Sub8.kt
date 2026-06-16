@@ -72,9 +72,9 @@ abstract class Class348_Sub42_Sub8 internal constructor(var anInt9545: Int) : Cl
             Class132.aPlayer_1907!!.y = 512 * Class348_Sub40_Sub3.anInt9109 / 2
             Class132.aPlayer_1907!!.anIntArray10317!![0] = Class348_Sub40_Sub3.anInt9109 / 2
             Class59_Sub2_Sub2.anInt8685 = 0
-            Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685
+            Class286_Sub4Statics.anInt6246 = Class59_Sub2_Sub2.anInt8685
             if (Class348_Sub40_Sub21.anInt9282 == 2) {
-                Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 shl 9
+                Class286_Sub4Statics.anInt6246 = Class348_Sub35.anInt6981 shl 9
                 Class59_Sub2_Sub2.anInt8685 = Class275.anInt3550 shl 9
             } else Class348_Sub21.method2954(62.toByte())
             Class76.method773(true)
