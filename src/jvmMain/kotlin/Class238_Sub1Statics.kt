@@ -4,7 +4,5 @@
  * so that the logic can be reasoned about without java.net deps.
  */
 object Class238_Sub1Statics {
-    var aBoolean5840: Boolean
-        get() = Class238_Sub1.aBoolean5840
-        set(v) { Class238_Sub1.aBoolean5840 = v }
+    var aBoolean5840: Boolean = true
 }

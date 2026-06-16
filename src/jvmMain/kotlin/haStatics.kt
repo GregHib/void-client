@@ -14,18 +14,14 @@ object haStatics {
     // ---------------------------------------------------------------------------
 
     /** Software-renderer canvas width (default 503, 480 for stellardawn). */
-    var rendererWidth: Int
-        get() = ha_Sub2.anInt7666
-        set(v) { ha_Sub2.anInt7666 = v }
+    var rendererWidth: Int = 503
 
     /** GL debug/wireframe overlay mode flag (0 = off, 3 = overlay). Read by Client. */
     val glDebugMode: Int
         get() = ha_Sub3.anInt8045
 
     /** GL frame-state slot written by Client during frame processing. */
-    var glFrameState: Int
-        get() = ha_Sub3.anInt8001
-        set(v) { ha_Sub3.anInt8001 = v }
+    var glFrameState: Int = -1
 
     /** World-sentinel Class230 value from the GL texture variant (Class14_Sub4). */
     val glWorldSentinel: Class230?

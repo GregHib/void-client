@@ -63,8 +63,7 @@ object ha_Sub3Statics {
     }
 
     var aStringArray8019: Array<String?>? = arrayOfNulls<String>(5)
-    var anInt8001: Int = -1
-    var anInt8045: Int = 0
+var anInt8045: Int = 0
 
     fun method3873(`is`: ByteArray?, i: Int): ByteArray {
         try {

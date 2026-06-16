@@ -37,7 +37,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
         glBindFramebufferEXT(36160, anInt4891)
         anInt4867++
         anInt4872 = anInt4872 or 0x4
-        if (i != -11762) anInt4889 = 110
+        if (i != -11762) Class206Statics.anInt4889 = 110
         anInt4873 = method1504(-115)
     }
 
@@ -53,7 +53,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
         anInt4876++
         if (anInt4873 == -1) throw RuntimeException()
         val i_23_ = 1 shl i_21_
-        if (i_20_ > -16) aBoolean4888 = false
+        if (i_20_ > -16) Class206Statics.aBoolean4888 = false
         if ((anInt4884 and (i_23_.inv())) == 0) {
             anInt4882 = class258_sub2.anInt8538
             anInt4886 = class258_sub2.anInt8538
@@ -150,7 +150,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
         glBindFramebufferEXT(36008, anInt4891)
         anInt4872 = anInt4872 or 0x1
         anInt4873 = method1504(i xor 0x6a7c)
-        if (i != -27141) aBoolean4888 = false
+        if (i != -27141) Class206Statics.aBoolean4888 = false
     }
 
     @Throws(Throwable::class)
@@ -186,8 +186,6 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
         var anInt4881: Int = 0
         var anInt4885: Int = 0
         var anInt4887: Int = 0
-        var aBoolean4888: Boolean = false
-        var anInt4889: Int
         var anInt4890: Int = 0
         var anInt4892: Int = 0
         var anInt4893: Int = 0
@@ -305,7 +303,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
 
         init {
             aClass209_4874 = Class209()
-            anInt4889 = 0
+            Class206Statics.anInt4889 = 0
         }
     }
 }

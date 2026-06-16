@@ -51,7 +51,7 @@ open class Class348_Sub40_Sub17 : Class348_Sub40(0, false) {
             val is_2_ = `is`[0]!!
             val is_3_ = `is`[1]!!
             val is_4_ = `is`[2]!!
-            var i_5_ = (this.anInt9237 * (if (this.anInt9241 != Class286_Sub2.anInt6212) (this.anInt9241 * i / Class286_Sub2.anInt6212) else i))
+            var i_5_ = (this.anInt9237 * (if (this.anInt9241 != Class286Sub2Statics.anInt6212) (this.anInt9241 * i / Class286Sub2Statics.anInt6212) else i))
             if (Class348_Sub40_Sub6.Companion.anInt9139 == this.anInt9237) {
                 var i_6_ = 0
                 while ((Class348_Sub40_Sub6.Companion.anInt9139 > i_6_)) {

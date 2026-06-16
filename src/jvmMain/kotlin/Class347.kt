@@ -50,7 +50,7 @@ class Class347 {
                     val i_5_ = (-Class40.anInt558 + (i_3_ + Class331.aClass46_4130!!.anInt755))
                     if (Class258_Sub4.aClass373_8552!!.method3593(94)) {
                         if (Class289.aClass46_3701!!.anInt703 < Class318_Sub1.anInt6392) {
-                            val i_6_ = i_2_ + -ha_Sub3.anInt8001
+                            val i_6_ = i_2_ + -haStatics.glFrameState
                             val i_7_ = -Class348_Sub40_Sub13.anInt9203 + i_3_
                             if (Class289.aClass46_3701!!.anInt729 < i_6_ || (-Class289.aClass46_3701!!.anInt729 > i_6_) || (i_7_ > Class289.aClass46_3701!!.anInt729) || i_7_ < -Class289.aClass46_3701!!.anInt729) Class300.aBoolean3819 = true
                         }
@@ -75,8 +75,8 @@ class Class347 {
                                 method705(class348_sub36)
                             }
                             if (Class318_Sub1_Sub3_Sub4.aClass46_10336 != null && (Client.method108(Class289.aClass46_3701) != null)) method173(-67, Class289.aClass46_3701, (Class318_Sub1_Sub3_Sub4.aClass46_10336))
-                        } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || method2485(-113)) && Class73.anInt4776 > 2) method191(true, (ha_Sub3.anInt8001 + Class318_Sub4.anInt6411), (Class219.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)))
-                        else if (method913(127.toByte())) method191(true, (ha_Sub3.anInt8001 + Class318_Sub4.anInt6411), (Class219.anInt2872 + (Class348_Sub40_Sub13.anInt9203)))
+                        } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || method2485(-113)) && Class73.anInt4776 > 2) method191(true, (haStatics.glFrameState + Class318_Sub4.anInt6411), (Class219.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)))
+                        else if (method913(127.toByte())) method191(true, (haStatics.glFrameState + Class318_Sub4.anInt6411), (Class219.anInt2872 + (Class348_Sub40_Sub13.anInt9203)))
                         Class289.aClass46_3701 = null
                     }
                 }

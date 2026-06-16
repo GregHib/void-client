@@ -56,7 +56,7 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
                 var i_6_ = (if (anInt9364 > 0) anInt9369 + Class124Statics.method1097(92.toByte(), anInt9364, random) + -i_3_ else anInt9369)
                 i_6_ = i_6_ shr 4 and 0xff
                 var i_7_ = Class124Statics.method1097(81.toByte(), Class348_Sub40_Sub6.Companion.anInt9139, random)
-                var i_8_ = Class124Statics.method1097(123.toByte(), Class286_Sub2.anInt6212, random)
+                var i_8_ = Class124Statics.method1097(123.toByte(), Class286Sub2Statics.anInt6212, random)
                 var i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654!![i_6_] shr 12)
                 var i_10_ = ((Class235.anIntArray3068!![i_6_] * anInt9368 shr 12) + i_8_)
                 var i_11_ = -i_8_ + i_10_

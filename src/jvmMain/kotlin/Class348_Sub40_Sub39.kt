@@ -9,7 +9,7 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
         anInt9487++
         if (i.toInt() != -27) method3152(86)
         val i_0_: Int = Class348_Sub40_Sub6.Companion.anInt9139
-        val i_1_ = Class286_Sub2.anInt6212
+        val i_1_ = Class286Sub2Statics.anInt6212
         Class12Statics.method224((-40).toByte(), `is`)
         Class348_Sub27.method3000(Class239_Sub22.anInt6076, 0, Class299_Sub2.anInt6325, 0, i.toInt() xor 0x28)
         if (aClass50Array9481 != null) {
@@ -78,12 +78,12 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
         if (i_10_ != -1564599039) aClass70_9485 = null
         if (this.aClass322_7033!!.aBoolean4035) {
             val i_11_: Int = Class348_Sub40_Sub6.Companion.anInt9139
-            val i_12_ = Class286_Sub2.anInt6212
+            val i_12_ = Class286Sub2Statics.anInt6212
             val is_13_: Array<IntArray> = Array<IntArray>(i_12_) { IntArray(i_11_) }
             val is_14_ = this.aClass322_7033!!.method2553(0)!!
             method3151(is_13_ as Array<IntArray?>?, (-27).toByte())
             var i_15_ = 0
-            while (Class286_Sub2.anInt6212 > i_15_) {
+            while (Class286Sub2Statics.anInt6212 > i_15_) {
                 val is_16_ = is_13_[i_15_]
                 val is_17_ = is_14_[i_15_]!!
                 val is_18_ = is_17_[0]!!

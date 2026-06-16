@@ -1285,7 +1285,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 glVertex2f(i_141_.toFloat() + f, f_144_)
                 var i_147_ = 16384 + -i_146_
                 while (i_147_ > 0) {
-                    glVertex2f(i_141_.toFloat() * (Class348_Sub23.aFloatArray6867!![i_147_]) + f, i_141_.toFloat() * (Class348_Sub23.aFloatArray6865!![i_147_]) + f_144_)
+                    glVertex2f(i_141_.toFloat() * (Class348_Sub23Statics.aFloatArray6867!![i_147_]) + f, i_141_.toFloat() * (Class348_Sub23Statics.aFloatArray6865!![i_147_]) + f_144_)
                     i_147_ -= i_146_
                 }
                 glVertex2f(f + i_141_.toFloat(), f_144_)
@@ -3174,7 +3174,6 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         var anInt7662: Int = 0
         var anInt7663: Int = 0
         var anInt7665: Int = 0
-        var anInt7666: Int = 503
         var anInt7667: Int = 0
         var anInt7668: Int = 0
         var anInt7669: Int = 0
@@ -3851,6 +3850,4 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 }
                 Class338.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
             }
-        }
-    }
-}
+    

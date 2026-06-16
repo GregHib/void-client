@@ -3181,7 +3181,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class67.anInt4645 = 0
             Class239_Sub4.anInt5877 = 0
             ha_Sub3.anInt7971 = 0
-            Class119_Sub1.anInt4698 = 0
+            Class119Sub1Statics.anInt4698 = 0
             Class135_Sub2.anInt4842 = 0
             Applet_Sub1.anInt32 = 0
             Class112.anInt1726 = 0
@@ -4161,7 +4161,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             }
 
             Class363.method3515(-45)
-            Class238_Sub1.aBoolean5840 = true
+            Class238_Sub1Statics.aBoolean5840 = true
             for (j1 in 0..99) Class152.aBooleanArray2076!![j1] = true
 
             for (k1 in 0..5) Class239_Sub26.aClass54Array6114!![k1] = Class54()
@@ -4198,3 +4198,4 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
         var anInt5802: Int = 0
     }
 }
+      

@@ -13,7 +13,7 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
         anInt9378++
         val `is` = this.aClass322_7033!!.method2557(-94, i)!!
         if (this.aClass322_7033!!.aBoolean4035) {
-            var i_1_ = (anInt9374 * (if (Class286_Sub2.anInt6212 == anInt9379) i else anInt9379 * i / Class286_Sub2.anInt6212))
+            var i_1_ = (anInt9374 * (if (Class286Sub2Statics.anInt6212 == anInt9379) i else anInt9379 * i / Class286Sub2Statics.anInt6212))
             val is_2_ = `is`[0]!!
             val is_3_ = `is`[1]!!
             val is_4_ = `is`[2]!!

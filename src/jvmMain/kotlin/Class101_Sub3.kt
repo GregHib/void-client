@@ -19,9 +19,9 @@ class Class101_Sub3 : Class101() {
     override fun method902(i: Int) {
         anInt5779++
         this.aFloat5784 = 1.0f
-        this.aFloat5769 = Class348_Sub23.aFloatArray6867!![0x3fff and i]
+        this.aFloat5769 = Class348_Sub23Statics.aFloatArray6867!![0x3fff and i]
         this.aFloat5770 = this.aFloat5769
-        this.aFloat5761 = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        this.aFloat5761 = Class348_Sub23Statics.aFloatArray6865!![0x3fff and i]
         this.aFloat5751 = 0.0f
         this.aFloat5754 = this.aFloat5751
         this.aFloat5756 = this.aFloat5754
@@ -69,8 +69,8 @@ class Class101_Sub3 : Class101() {
 
     override fun method900(i: Int) {
         anInt5763++
-        val f = Class348_Sub23.aFloatArray6867!![0x3fff and i]
-        val f_11_ = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        val f = Class348_Sub23Statics.aFloatArray6867!![0x3fff and i]
+        val f_11_ = Class348_Sub23Statics.aFloatArray6865!![0x3fff and i]
         val f_12_ = this.aFloat5761
         val f_13_ = this.aFloat5769
         val f_14_ = this.aFloat5762
@@ -97,8 +97,8 @@ class Class101_Sub3 : Class101() {
             this.aFloat5784 = 1.0f
             this.aFloat5769 = i_17_.toFloat()
         } else {
-            val f_21_ = Class348_Sub23.aFloatArray6867!![0x3fff and i_18_]
-            val f_22_ = Class348_Sub23.aFloatArray6865!![i_18_ and 0x3fff]
+            val f_21_ = Class348_Sub23Statics.aFloatArray6867!![0x3fff and i_18_]
+            val f_22_ = Class348_Sub23Statics.aFloatArray6865!![i_18_ and 0x3fff]
             this.aFloat5761 = i.toFloat() * f_22_
             this.aFloat5769 = i_17_.toFloat() * f_21_
             this.aFloat5762 = 0.0f
@@ -151,12 +151,12 @@ class Class101_Sub3 : Class101() {
 
     override fun method903(i: Int, i_30_: Int, i_31_: Int, i_32_: Int, i_33_: Int, i_34_: Int) {
         anInt5782++
-        val f = Class348_Sub23.aFloatArray6867!![i_32_ and 0x3fff]
-        val f_35_ = Class348_Sub23.aFloatArray6865!![i_32_ and 0x3fff]
-        val f_36_ = Class348_Sub23.aFloatArray6867!![0x3fff and i_33_]
-        val f_37_ = Class348_Sub23.aFloatArray6865!![0x3fff and i_33_]
-        val f_38_ = Class348_Sub23.aFloatArray6867!![0x3fff and i_34_]
-        val f_39_ = Class348_Sub23.aFloatArray6865!![0x3fff and i_34_]
+        val f = Class348_Sub23Statics.aFloatArray6867!![i_32_ and 0x3fff]
+        val f_35_ = Class348_Sub23Statics.aFloatArray6865!![i_32_ and 0x3fff]
+        val f_36_ = Class348_Sub23Statics.aFloatArray6867!![0x3fff and i_33_]
+        val f_37_ = Class348_Sub23Statics.aFloatArray6865!![0x3fff and i_33_]
+        val f_38_ = Class348_Sub23Statics.aFloatArray6867!![0x3fff and i_34_]
+        val f_39_ = Class348_Sub23Statics.aFloatArray6865!![0x3fff and i_34_]
         val f_40_ = f_35_ * f_38_
         val f_41_ = f_39_ * f_35_
         this.aFloat5762 = f_40_ * f_36_ + f_37_ * f_39_
@@ -175,8 +175,8 @@ class Class101_Sub3 : Class101() {
 
     override fun method908(i: Int) {
         anInt5774++
-        val f = Class348_Sub23.aFloatArray6867!![i and 0x3fff]
-        val f_42_ = Class348_Sub23.aFloatArray6865!![i and 0x3fff]
+        val f = Class348_Sub23Statics.aFloatArray6867!![i and 0x3fff]
+        val f_42_ = Class348_Sub23Statics.aFloatArray6865!![i and 0x3fff]
         val f_43_ = this.aFloat5770
         val f_44_ = this.aFloat5750
         val f_45_ = this.aFloat5781
@@ -273,9 +273,9 @@ class Class101_Sub3 : Class101() {
     override fun method895(i: Int) {
         anInt5780++
         this.aFloat5769 = 1.0f
-        this.aFloat5784 = Class348_Sub23.aFloatArray6867!![0x3fff and i]
+        this.aFloat5784 = Class348_Sub23Statics.aFloatArray6867!![0x3fff and i]
         this.aFloat5770 = this.aFloat5784
-        this.aFloat5781 = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        this.aFloat5781 = Class348_Sub23Statics.aFloatArray6865!![0x3fff and i]
         this.aFloat5756 = -this.aFloat5781
         this.aFloat5751 = 0.0f
         this.aFloat5754 = this.aFloat5751
@@ -289,9 +289,9 @@ class Class101_Sub3 : Class101() {
     override fun method899(i: Int) {
         anInt5757++
         this.aFloat5770 = 1.0f
-        this.aFloat5784 = Class348_Sub23.aFloatArray6867!![0x3fff and i]
+        this.aFloat5784 = Class348_Sub23Statics.aFloatArray6867!![0x3fff and i]
         this.aFloat5769 = this.aFloat5784
-        this.aFloat5754 = Class348_Sub23.aFloatArray6865!![0x3fff and i]
+        this.aFloat5754 = Class348_Sub23Statics.aFloatArray6865!![0x3fff and i]
         this.aFloat5762 = -this.aFloat5754
         this.aFloat5751 = 0.0f
         this.aFloat5756 = this.aFloat5751
@@ -320,8 +320,8 @@ class Class101_Sub3 : Class101() {
 
     override fun method896(i: Int) {
         anInt5766++
-        val f = Class348_Sub23.aFloatArray6867!![i and 0x3fff]
-        val f_62_ = Class348_Sub23.aFloatArray6865!![i and 0x3fff]
+        val f = Class348_Sub23Statics.aFloatArray6867!![i and 0x3fff]
+        val f_62_ = Class348_Sub23Statics.aFloatArray6865!![i and 0x3fff]
         val f_63_ = this.aFloat5770
         val f_64_ = this.aFloat5750
         val f_65_ = this.aFloat5781

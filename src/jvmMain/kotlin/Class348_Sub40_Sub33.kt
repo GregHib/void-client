@@ -62,7 +62,7 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
                     if (!(f >= 0.0f) || !(f.toDouble() <= 0.7853981633974483)) {
                         if (!(f.toDouble() >= 0.7853981633974483) || !(f.toDouble() <= 1.5707963267948966)) {
                             if (f.toDouble() >= 1.5707963267948966 && f.toDouble() <= 2.356194490192345) {
-                                Class344.anInt4265 = Class286_Sub2.anInt6212 + -i
+                                Class344.anInt4265 = Class286Sub2Statics.anInt6212 + -i
                                 Class121.anInt1796 = i_12_
                             } else if (f.toDouble() >= 2.356194490192345 && f.toDouble() <= 3.141592653589793) {
                                 Class344.anInt4265 = i_12_
@@ -70,15 +70,15 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
                             }
                         } else {
                             Class121.anInt1796 = -i_12_ + Class348_Sub40_Sub6.Companion.anInt9139
-                            Class344.anInt4265 = -i + Class286_Sub2.anInt6212
+                            Class344.anInt4265 = -i + Class286Sub2Statics.anInt6212
                         }
                     } else {
                         Class121.anInt1796 = -i + Class348_Sub40_Sub6.Companion.anInt9139
-                        Class344.anInt4265 = -i_12_ + Class286_Sub2.anInt6212
+                        Class344.anInt4265 = -i_12_ + Class286Sub2Statics.anInt6212
                     }
                 } else {
                     Class121.anInt1796 = i
-                    Class344.anInt4265 = Class286_Sub2.anInt6212 - i_12_
+                    Class344.anInt4265 = Class286Sub2Statics.anInt6212 - i_12_
                 }
             } else {
                 Class121.anInt1796 = Class348_Sub40_Sub6.Companion.anInt9139 - i_12_

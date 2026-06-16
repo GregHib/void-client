@@ -21,7 +21,7 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
         val class295 = aClass339_4682!!.method2667(false, aClass125_4685!!.anInt4918)
         if (class295 != null) {
             val i_7_ = ((Class221Statics.method1607(aClass125_4685.aClass221_4922!!, Class92.anInt1524, aClass125_4685.anInt4929, (-118).toByte())) - -aClass125_4685.anInt4924)
-            var i_8_ = ((Class341Statics.method2679(aClass125_4685.aClass341_4925!!, ha_Sub2.anInt7666, aClass125_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aClass125_4685.anInt4920)
+            var i_8_ = ((Class341Statics.method2679(aClass125_4685.aClass341_4925!!, haStatics.rendererWidth, aClass125_4685.anInt4923, i.toInt() xor 0x60b.inv())) - -aClass125_4685.anInt4920)
             if (aClass125_4685.aBoolean4914) Class348_Sub8.aHa6654!!.method3628(i_7_, i_8_, aClass125_4685.anInt4929, aClass125_4685.anInt4923, aClass125_4685.anInt4917, 0)
             i_8_ += method1855(5, class295.aString3756, true, Class262Statics.aClass324_3326, i_7_, i_8_) * 12
             i_8_ += 8

@@ -8,7 +8,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
 
     fun method2963(oggpacket: OggPacket, i: Int) {
         method2964((-120).toByte(), oggpacket)
-        if (i != 16384) aFloatArray6867 = null
+        if (i != 16384) Class348_Sub23Statics.aFloatArray6867 = null
         anInt6863++
         this.anInt6868++
     }
@@ -18,18 +18,11 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
     companion object {
         var anInt6863: Int = 0
         var anInt6864: Int = 0
-        // Promoted to Class348_Sub23Statics so callers need not import this class.
-        var aFloatArray6865: FloatArray?
-            get() = Class348_Sub23Statics.aFloatArray6865
-            set(v) { Class348_Sub23Statics.aFloatArray6865 = v }
         var anInt6866: Int = 0
-        var aFloatArray6867: FloatArray?
-            get() = Class348_Sub23Statics.aFloatArray6867
-            set(v) { Class348_Sub23Statics.aFloatArray6867 = v }
         var anInt6870: Int = 0
 
         fun method2960(bool: Boolean, i: Int): Int {
-            if (i >= -16) aFloatArray6865 = null
+            if (i >= -16) Class348_Sub23Statics.aFloatArray6865 = null
             anInt6870++
             val i_0_ = Class348_Sub49.anInt7207
             while_128_@ do {
@@ -49,8 +42,8 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
         }
 
         fun method2962(i: Int) {
-            aFloatArray6865 = null
-            aFloatArray6867 = null
+            Class348_Sub23Statics.aFloatArray6865 = null
+            Class348_Sub23Statics.aFloatArray6867 = null
             if (i != -31055) method2966(-119, -98, true)
         }
 
@@ -134,7 +127,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
         fun method2966(i: Int, i_4_: Int, bool: Boolean) {
             anInt6864++
             val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, 105.toByte(), 14)
-            if (bool != false) aFloatArray6865 = null
+            if (bool != false) Class348_Sub23Statics.aFloatArray6865 = null
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9652 = i_4_
         }

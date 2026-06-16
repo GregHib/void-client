@@ -76,7 +76,6 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
         var anInt5835: Int = 0
         var anInt5838: Int = 0
         var anInt5839: Int = 0
-        var aBoolean5840: Boolean = true
 
         fun method1707(i: Int) {
             Class322.aClass308_4036!!.method2303(true)

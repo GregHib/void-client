@@ -1417,7 +1417,7 @@ class Client : Applet_Sub1() {
             if (Class222.anInt2884 < 0 || Class135.aColorArray1928!!.size <= Class222.anInt2884) Class222.anInt2884 = 0
             if (this.getParameter("sitesettings_member")!!.toInt() == 1) {
                 Class155.aBoolean2110 = true
-                Class206.aBoolean4888 = Class155.aBoolean2110
+                Class206Statics.aBoolean4888 = Class155.aBoolean2110
             }
             val string_28_ = this.getParameter("frombilling")
             if (string_28_ != null && string_28_ == "true") Class375.aBoolean4540 = true
@@ -2001,7 +2001,7 @@ class Client : Applet_Sub1() {
                     Class348_Sub23_Sub3Statics.aString9043 = null
                     Class202.anInt2670 = 0
                     Class155.aBoolean2110 = true
-                    Class206.aBoolean4888 = Class155.aBoolean2110
+                    Class206Statics.aBoolean4888 = Class155.aBoolean2110
                     Class375.aBoolean4540 = false
                     Class251.anInt3234 = 0
                     Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434!!.anInt2987)

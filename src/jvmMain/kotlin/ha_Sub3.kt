@@ -2601,7 +2601,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         var anInt7998: Int = 0
         var anInt7999: Int = 0
         var anInt8000: Int = 0
-        var anInt8001: Int get() = ha_Sub3Statics.anInt8001; set(v) { ha_Sub3Statics.anInt8001 = v }
+        var anInt8001: Int get() = haStatics.glFrameState; set(v) { haStatics.glFrameState = v }
         var anInt8002: Int = 0
         var anInt8003: Int = 0
         var anInt8004: Int = 0

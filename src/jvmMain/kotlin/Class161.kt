@@ -78,8 +78,8 @@ class Class161 {
                 Class239_Sub14.aClass190_5990 = class190
                 Class348_Sub33.aLong6963 = method599(-78)
                 Class286_Sub5.anInt6248 = i
-                Class206.anInt4889 = Class286_Sub5.anInt6248
-                if (Class206.anInt4889 == 0) method3134(-1)
+                Class206Statics.anInt4889 = Class286_Sub5.anInt6248
+                if (Class206Statics.anInt4889 == 0) method3134(-1)
                 else {
                     Class318_Sub1_Sub1.aFloat8725 = Class160.Companion.aFloat2137
                     Canvas_Sub1.anInt70 = Class187.anInt2500
@@ -89,7 +89,7 @@ class Class161 {
                     Class45.aFloat670 = Class348_Sub3.aFloat6586
                     Class258_Sub4.aFloat8560 = Class239_Sub10.aFloat5945
                     Class246.aFloat3177 = Class361.aFloat4455
-                    Class318_Sub1_Sub3.anInt8739 = Class119_Sub1.anInt4703
+                    Class318_Sub1_Sub3.anInt8739 = Class119Sub1Statics.anInt4703
                     Class239_Sub19.anInt6042 = Class36.anInt486
                 }
             }

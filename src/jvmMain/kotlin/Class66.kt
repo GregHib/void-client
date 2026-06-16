@@ -3985,7 +3985,7 @@ object Class66 {
                     return
                 }
                 if (i == 3325) {
-                    anIntArray1149!![anInt1173++] = if (Class206.aBoolean4888) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class206Statics.aBoolean4888) 1 else 0
                     return
                 }
                 if (i == 3326) {

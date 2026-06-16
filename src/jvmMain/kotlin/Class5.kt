@@ -56,7 +56,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         if (i.toInt() == -49) {
             anInt4634++
             val i_13_ = ((Class221Statics.method1607(this.aClass369_4635!!.aClass221_4968!!, Class92.anInt1524, this.aClass369_4635!!.anInt4971, (-123).toByte())) + this.aClass369_4635!!.anInt4970)
-            val i_14_ = ((Class341Statics.method2679(this.aClass369_4635!!.aClass341_4973!!, ha_Sub2.anInt7666, this.aClass369_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aClass369_4635!!.anInt4959)
+            val i_14_ = ((Class341Statics.method2679(this.aClass369_4635!!.aClass341_4973!!, haStatics.rendererWidth, this.aClass369_4635!!.anInt4963, i.toInt() xor 0x60b.inv())) + this.aClass369_4635!!.anInt4959)
             method178(i_13_, bool, (-84).toByte(), i_14_)
             method182(63, i_14_, i_13_, bool)
             var string = Class51.aClass311_897!!.method2318(i.toInt() xor 0x245b)

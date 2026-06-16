@@ -196,8 +196,8 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
             var i_50_ = 0
             val i_51_: Int = anInt9317 * Class348_Sub40_Sub6.Companion.anInt9139 shr 12
             val i_52_: Int = Class348_Sub40_Sub6.Companion.anInt9139 * anInt9320 shr 12
-            val i_53_ = anInt9322 * Class286_Sub2.anInt6212 shr 12
-            val i_54_ = Class286_Sub2.anInt6212 * anInt9323 shr 12
+            val i_53_ = anInt9322 * Class286Sub2Statics.anInt6212 shr 12
+            val i_54_ = Class286Sub2Statics.anInt6212 * anInt9323 shr 12
             if (i_54_ <= 1) return is_42_[i]
             anInt9306 = Class348_Sub40_Sub6.Companion.anInt9139 / 8 * anInt9311 shr 12
             val i_55_: Int = 1 + Class348_Sub40_Sub6.Companion.anInt9139 / i_51_
@@ -264,8 +264,8 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
                     }
                     i_47_ = i_62_
                 }
-                if (Class286_Sub2.anInt6212 >= i_59_ + i_61_) bool = false
-                else i_59_ = -i_61_ + Class286_Sub2.anInt6212
+                if (Class286Sub2Statics.anInt6212 >= i_59_ + i_61_) bool = false
+                else i_59_ = -i_61_ + Class286Sub2Statics.anInt6212
                 if (i_60_ == Class348_Sub40_Sub6.Companion.anInt9139) {
                     method3112(-59, i_59_, is_42_, random, i_46_ + i_44_, i_61_, i_58_)
                     if (bool) break

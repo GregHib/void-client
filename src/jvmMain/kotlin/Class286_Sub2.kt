@@ -23,7 +23,7 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
 
     override fun method2137(i: Int): Boolean {
         anInt6208++
-        if (i > -5) anInt6212 = 1
+        if (i > -5) Class286Sub2Statics.anInt6212 = 1
         return true
     }
 
@@ -48,7 +48,6 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
         var anInt6209: Int = 0
         var anInt6210: Int = 0
         var anInt6211: Int = 0
-        var anInt6212: Int = 0
         var anInt6213: Int = 0
 
         fun method2144(string: String?, i: Int, i_0_: Byte, i_1_: Int, string_2_: String?, string_3_: String?, string_4_: String?) {
@@ -86,7 +85,7 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
         }
 
         fun method2147(i: Int) {
-            if (i != -1) anInt6212 = -79
+            if (i != -1) Class286Sub2Statics.anInt6212 = -79
             aStringArray6205 = null
         }
     }

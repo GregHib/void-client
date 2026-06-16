@@ -740,12 +740,12 @@ class Class79 {
                 Class248.anInt3201 = 32 * i_29_
             }
             if (i_30_ <= 108) aClient1367 = null
-            if (Class286_Sub2.anInt6212 != i) {
+            if (Class286Sub2Statics.anInt6212 != i) {
                 if (Class348_Sub40_Sub6.anInt9139 != i) {
                     Class239_Sub18.anIntArray6035 = IntArray(i)
                     for (i_32_ in 0..<i) Class239_Sub18.anIntArray6035!![i_32_] = (i_32_ shl 12) / i
                 } else Class239_Sub18.anIntArray6035 = Class318_Sub6.anIntArray6432
-                Class286_Sub2.anInt6212 = i
+                Class286Sub2Statics.anInt6212 = i
                 Class299_Sub2.anInt6325 = -1 + i
             }
         }
