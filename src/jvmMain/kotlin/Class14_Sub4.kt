@@ -193,7 +193,7 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
             var i_17_ = i_15_
             var i_18_ = -i_15_
             var i_19_ = -1
-            Class135_Sub2.method1156(i_13_ + 621, i_12_ + i_15_, Class17.anIntArrayArray255!![i]!!, i_12_ + -i_15_, i_14_)
+            Class135_Sub2Statics.method1156(i_13_ + 621, i_12_ + i_15_, Class17.anIntArrayArray255!![i]!!, i_12_ + -i_15_, i_14_)
             while (i_16_ < i_17_) {
                 i_19_ += 2
                 i_18_ += i_19_
@@ -205,15 +205,15 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
                     val is_20_ = Class17.anIntArrayArray255!![i + -i_17_]!!
                     val i_21_ = i_16_ + i_12_
                     val i_22_ = i_12_ + -i_16_
-                    Class135_Sub2.method1156(-27, i_21_, `is`, i_22_, i_14_)
-                    Class135_Sub2.method1156(-27, i_21_, is_20_, i_22_, i_14_)
+                    Class135_Sub2Statics.method1156(-27, i_21_, `is`, i_22_, i_14_)
+                    Class135_Sub2Statics.method1156(-27, i_21_, is_20_, i_22_, i_14_)
                 }
                 val i_23_ = i_17_ + i_12_
                 val i_24_ = i_12_ - i_17_
                 val `is` = Class17.anIntArrayArray255!![i_16_ + i]!!
                 val is_25_ = Class17.anIntArrayArray255!![-i_16_ + i]!!
-                Class135_Sub2.method1156(i_13_ + 621, i_23_, `is`, i_24_, i_14_)
-                Class135_Sub2.method1156(-27, i_23_, is_25_, i_24_, i_14_)
+                Class135_Sub2Statics.method1156(i_13_ + 621, i_23_, `is`, i_24_, i_14_)
+                Class135_Sub2Statics.method1156(-27, i_23_, is_25_, i_24_, i_14_)
             }
         }
 

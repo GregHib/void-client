@@ -779,15 +779,15 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
             val i_14_ = Class85.method831(Class38.anInt513, i_4_ + i_6_, Class132.anInt1910, -110)
             val i_15_ = Class85.method831(Class38.anInt513, i + -i_6_, Class132.anInt1910, 28)
             if (i_7_ < -33) {
-                for (i_16_ in i_10_..<i_14_) Class135_Sub2.method1156(-27, i_13_, Class17.anIntArrayArray255!![i_16_]!!, i_12_, i_9_)
-                for (i_17_ in i_11_ downTo i_15_ + 1) Class135_Sub2.method1156(-27, i_13_, Class17.anIntArrayArray255!![i_17_]!!, i_12_, i_9_)
+                for (i_16_ in i_10_..<i_14_) Class135_Sub2Statics.method1156(-27, i_13_, Class17.anIntArrayArray255!![i_16_]!!, i_12_, i_9_)
+                for (i_17_ in i_11_ downTo i_15_ + 1) Class135_Sub2Statics.method1156(-27, i_13_, Class17.anIntArrayArray255!![i_17_]!!, i_12_, i_9_)
                 val i_18_ = Class85.method831(Class113.anInt1745, i_8_ + i_6_, Class369.anInt4960, 114)
                 val i_19_ = Class85.method831(Class113.anInt1745, -i_6_ + i_3_, Class369.anInt4960, 34)
                 for (i_20_ in i_14_..i_15_) {
                     val `is` = Class17.anIntArrayArray255!![i_20_]!!
-                    Class135_Sub2.method1156(-27, i_18_, `is`, i_12_, i_9_)
-                    Class135_Sub2.method1156(-27, i_19_, `is`, i_18_, i_5_)
-                    Class135_Sub2.method1156(-27, i_13_, `is`, i_19_, i_9_)
+                    Class135_Sub2Statics.method1156(-27, i_18_, `is`, i_12_, i_9_)
+                    Class135_Sub2Statics.method1156(-27, i_19_, `is`, i_18_, i_5_)
+                    Class135_Sub2Statics.method1156(-27, i_13_, `is`, i_19_, i_9_)
                 }
             }
         }

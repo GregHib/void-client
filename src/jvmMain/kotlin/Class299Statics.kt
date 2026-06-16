@@ -52,9 +52,9 @@ object Class299Statics {
         val `is` = Class17.anIntArrayArray255!![i_6_]!!
         val i_17_ = i_3_ + -i_10_
         val i_18_ = i_10_ + i_3_
-        Class135_Sub2.method1156(-27, i_17_, `is`, -i + i_3_, i_8_)
-        Class135_Sub2.method1156(-27, i_18_, `is`, i_17_, i_7_)
-        Class135_Sub2.method1156(-27, i + i_3_, `is`, i_18_, i_8_)
+        Class135_Sub2Statics.method1156(-27, i_17_, `is`, -i + i_3_, i_8_)
+        Class135_Sub2Statics.method1156(-27, i_18_, `is`, i_17_, i_7_)
+        Class135_Sub2Statics.method1156(-27, i + i_3_, `is`, i_18_, i_8_)
         while (i_11_ > i_9_) {
             i_16_ += 2
             i_15_ += 2
@@ -74,8 +74,8 @@ object Class299Statics {
                     val is_20_ = Class17.anIntArrayArray255!![i_6_ + -i_11_]!!
                     val i_21_ = i_3_ - -i_9_
                     val i_22_ = -i_9_ + i_3_
-                    Class135_Sub2.method1156(-27, i_21_, is_19_, i_22_, i_8_)
-                    Class135_Sub2.method1156(-27, i_21_, is_20_, i_22_, i_8_)
+                    Class135_Sub2Statics.method1156(-27, i_21_, is_19_, i_22_, i_8_)
+                    Class135_Sub2Statics.method1156(-27, i_21_, is_20_, i_22_, i_8_)
                 } else {
                     val is_23_ = Class17.anIntArrayArray255!![i_6_ - -i_11_]!!
                     val is_24_ = Class17.anIntArrayArray255!![-i_11_ + i_6_]!!
@@ -84,12 +84,12 @@ object Class299Statics {
                     val i_27_ = i_3_ - i_9_
                     val i_28_ = i_3_ - -i_25_
                     val i_29_ = -i_25_ + i_3_
-                    Class135_Sub2.method1156(-27, i_29_, is_23_, i_27_, i_8_)
-                    Class135_Sub2.method1156(-27, i_28_, is_23_, i_29_, i_7_)
-                    Class135_Sub2.method1156(-27, i_26_, is_23_, i_28_, i_8_)
-                    Class135_Sub2.method1156(-27, i_29_, is_24_, i_27_, i_8_)
-                    Class135_Sub2.method1156(-27, i_28_, is_24_, i_29_, i_7_)
-                    Class135_Sub2.method1156(-27, i_26_, is_24_, i_28_, i_8_)
+                    Class135_Sub2Statics.method1156(-27, i_29_, is_23_, i_27_, i_8_)
+                    Class135_Sub2Statics.method1156(-27, i_28_, is_23_, i_29_, i_7_)
+                    Class135_Sub2Statics.method1156(-27, i_26_, is_23_, i_28_, i_8_)
+                    Class135_Sub2Statics.method1156(-27, i_29_, is_24_, i_27_, i_8_)
+                    Class135_Sub2Statics.method1156(-27, i_28_, is_24_, i_29_, i_7_)
+                    Class135_Sub2Statics.method1156(-27, i_26_, is_24_, i_28_, i_8_)
                 }
             }
             val is_30_ = Class17.anIntArrayArray255!![i_6_ + i_9_]!!
@@ -100,15 +100,15 @@ object Class299Statics {
                 val i_34_ = (if (i_9_ <= i_13_) i_13_ else Class348_Sub49_Sub2.anIntArray9757!![i_9_])
                 val i_35_ = i_34_ + i_3_
                 val i_36_ = i_3_ + -i_34_
-                Class135_Sub2.method1156(-27, i_36_, is_30_, i_33_, i_8_)
-                Class135_Sub2.method1156(-27, i_35_, is_30_, i_36_, i_7_)
-                Class135_Sub2.method1156(-27, i_32_, is_30_, i_35_, i_8_)
-                Class135_Sub2.method1156(-27, i_36_, is_31_, i_33_, i_8_)
-                Class135_Sub2.method1156(-27, i_35_, is_31_, i_36_, i_7_)
-                Class135_Sub2.method1156(-27, i_32_, is_31_, i_35_, i_8_)
+                Class135_Sub2Statics.method1156(-27, i_36_, is_30_, i_33_, i_8_)
+                Class135_Sub2Statics.method1156(-27, i_35_, is_30_, i_36_, i_7_)
+                Class135_Sub2Statics.method1156(-27, i_32_, is_30_, i_35_, i_8_)
+                Class135_Sub2Statics.method1156(-27, i_36_, is_31_, i_33_, i_8_)
+                Class135_Sub2Statics.method1156(-27, i_35_, is_31_, i_36_, i_7_)
+                Class135_Sub2Statics.method1156(-27, i_32_, is_31_, i_35_, i_8_)
             } else {
-                Class135_Sub2.method1156(-27, i_32_, is_30_, i_33_, i_8_)
-                Class135_Sub2.method1156(-27, i_32_, is_31_, i_33_, i_8_)
+                Class135_Sub2Statics.method1156(-27, i_32_, is_30_, i_33_, i_8_)
+                Class135_Sub2Statics.method1156(-27, i_32_, is_31_, i_33_, i_8_)
             }
         }
     }
