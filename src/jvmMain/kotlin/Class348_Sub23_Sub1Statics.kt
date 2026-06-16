@@ -7,6 +7,7 @@
  */
 object Class348_Sub23_Sub1Statics {
     var aClass297_8992: Class297? = null
+    var aByteArrayArray8996: Array<ByteArray?>? = null
 
     fun method2968(i: Byte) {
         aClass297_8992 = null

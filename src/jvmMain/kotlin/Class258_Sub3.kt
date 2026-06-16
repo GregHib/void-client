@@ -220,7 +220,10 @@ open class Class258_Sub3 : Class258 {
         var anInt8544: Int = 0
         var anInt8546: Int = 0
         var anInt8548: Int = 0
-        var anInt8550: Int = 0
+        // Promoted to Class258_Sub3Statics so callers need not import this class.
+        var anInt8550: Int
+            get() = Class258_Sub3Statics.anInt8550
+            set(v) { Class258_Sub3Statics.anInt8550 = v }
 
         fun method1966(i: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Byte, i_47_: Int, i_48_: Int, i_49_: Int, i_50_: Int) {
             Class147.aClass338Array2034!![Class239_Sub26.anInt6115++] = Class338(i_47_, i_49_, i_50_, i, i, i_50_, i_45_, i_43_, i_43_, i_45_, i_44_, i_44_, i_48_, i_48_)

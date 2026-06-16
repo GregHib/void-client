@@ -143,7 +143,10 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
     companion object {
         var anInt7393: Int = 0
         var aByteArray7394: ByteArray? = null
-        var anInt7396: Int = 0
+        // Promoted to Class367_Sub11Statics so callers need not import this class.
+        var anInt7396: Int
+            get() = Class367_Sub11Statics.anInt7396
+            set(v) { Class367_Sub11Statics.anInt7396 = v }
         var anIntArray7397: IntArray? = IntArray(4096)
         var aClass114_7398: Class114? = Class114(16, 6)
         var anInt7400: Int = 0
@@ -156,7 +159,9 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         var anInt7410: Int = 0
         var anInt7412: Int = 0
         var anInt7414: Int = 0
-        var aClass32_7415: Class32? = Class32(8)
+        var aClass32_7415: Class32?
+            get() = Class367_Sub11Statics.aClass32_7415
+            set(v) { Class367_Sub11Statics.aClass32_7415 = v }
 
         fun method3555(class45: Class45?, i: Int, bool: Boolean, l: Long, i_7_: Int, i_8_: Int, i_9_: Int) {
             try {

@@ -4,4 +4,5 @@
  */
 object Class348_Sub23_Sub3Statics {
     var aString9043: String? = null
+    var anIntArray9042: IntArray? = null
 }

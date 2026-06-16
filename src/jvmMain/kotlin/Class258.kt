@@ -99,7 +99,10 @@ abstract class Class258 internal constructor(var aHa_Sub2_4851: ha_Sub2, var anI
     abstract override fun method37(i: Int)
 
     companion object {
-        var anInt4848: Int = 0
+        // Promoted to Class258Statics so callers need not import this class.
+        var anInt4848: Int
+            get() = Class258Statics.anInt4848
+            set(v) { Class258Statics.anInt4848 = v }
         var anInt4850: Int = 0
         var anInt4852: Int = 0
         var anInt4853: Int = 0

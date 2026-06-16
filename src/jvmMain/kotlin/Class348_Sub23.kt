@@ -1,8 +1,6 @@
 import Class239_Sub23.Companion.method1819
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
-import kotlin.math.cos
-import kotlin.math.sin
 
 abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: OggStreamState) : Class348() {
     var anInt6868: Int = 0
@@ -20,9 +18,14 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
     companion object {
         var anInt6863: Int = 0
         var anInt6864: Int = 0
-        var aFloatArray6865: FloatArray? = FloatArray(16384)
+        // Promoted to Class348_Sub23Statics so callers need not import this class.
+        var aFloatArray6865: FloatArray?
+            get() = Class348_Sub23Statics.aFloatArray6865
+            set(v) { Class348_Sub23Statics.aFloatArray6865 = v }
         var anInt6866: Int = 0
-        var aFloatArray6867: FloatArray? = FloatArray(16384)
+        var aFloatArray6867: FloatArray?
+            get() = Class348_Sub23Statics.aFloatArray6867
+            set(v) { Class348_Sub23Statics.aFloatArray6867 = v }
         var anInt6870: Int = 0
 
         fun method2960(bool: Boolean, i: Int): Int {
@@ -136,12 +139,6 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
             class348_sub42_sub15.anInt9652 = i_4_
         }
 
-        init {
-            val d = 3.834951969714103E-4
-            for (i in 0..16383) {
-                aFloatArray6865!![i] = sin(d * i.toDouble()).toFloat()
-                aFloatArray6867!![i] = cos(i.toDouble() * d).toFloat()
-            }
-        }
+        // sin/cos table initialisation moved to Class348_Sub23Statics.init
     }
 }

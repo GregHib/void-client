@@ -303,8 +303,13 @@ class Class348_Sub38 internal constructor(var_ha_Sub3: ha_Sub3?, var_s_Sub3: s_S
     companion object {
         var anInt7000: Int = 0
         var anInt7003: Int = 0
-        var anInt7006: Int = 0
-        var anInt7008: Int = 0
+        // Promoted to Class348_Sub38Statics so chat/UI callers need not import this class.
+        var anInt7006: Int
+            get() = Class348_Sub38Statics.anInt7006
+            set(v) { Class348_Sub38Statics.anInt7006 = v }
+        var anInt7008: Int
+            get() = Class348_Sub38Statics.anInt7008
+            set(v) { Class348_Sub38Statics.anInt7008 = v }
         var anInt7009: Int = 0
         var anInt7012: Int = 0
         var aClass114_7015: Class114? = Class114(33, 3)

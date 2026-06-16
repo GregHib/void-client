@@ -104,7 +104,10 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
         var aClass297_8992: Class297?
             get() = Class348_Sub23_Sub1Statics.aClass297_8992
             set(v) { Class348_Sub23_Sub1Statics.aClass297_8992 = v }
-        var aByteArrayArray8996: Array<ByteArray?>? = null
+        // Promoted to Class348_Sub23_Sub1Statics so callers need not import this class.
+        var aByteArrayArray8996: Array<ByteArray?>?
+            get() = Class348_Sub23_Sub1Statics.aByteArrayArray8996
+            set(v) { Class348_Sub23_Sub1Statics.aByteArrayArray8996 = v }
         var anInt8997: Int = 0
         var anInt8998: Int = 0
         var anInt8999: Int = 0

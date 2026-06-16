@@ -119,7 +119,10 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
     }
 
     companion object {
-        var aClass229_9011: Class229? = Class229()
+        // Promoted to Class348_Sub23_Sub2Statics so callers need not import this class.
+        var aClass229_9011: Class229?
+            get() = Class348_Sub23_Sub2Statics.aClass229_9011
+            set(v) { Class348_Sub23_Sub2Statics.aClass229_9011 = v }
         var anInt9012: Int = 0
         var anInt9013: Int = 0
         var anInt9017: Int = 0
@@ -133,11 +136,15 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
             get() = Class348_Sub23_Sub2Statics.aClass77_9029
             set(v) { Class348_Sub23_Sub2Statics.aClass77_9029 = v }
         var anInt9030: Int = 0
-        var aClass153_9031: Class153? = null
+        var aClass153_9031: Class153?
+            get() = Class348_Sub23_Sub2Statics.aClass153_9031
+            set(v) { Class348_Sub23_Sub2Statics.aClass153_9031 = v }
         var aClass45_9033: Class45? = null
         var aClass351_9034: Class351? = Class351(30, 4)
         var aClass187_9036: Class187? = null
-        var anInt9037: Int = 0
+        var anInt9037: Int
+            get() = Class348_Sub23_Sub2Statics.anInt9037
+            set(v) { Class348_Sub23_Sub2Statics.anInt9037 = v }
         var aBoolean9038: Boolean = false
         var anInt9039: Int = 0
 
