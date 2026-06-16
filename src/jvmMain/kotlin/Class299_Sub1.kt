@@ -7,7 +7,7 @@ abstract class Class299_Sub1 : Class299() {
 
     companion object {
         var anInt6320: Int = 0
-        var aClass138_6321: Class138? = Class138(1, 2, 2, 0)
+        var aClass138_6321: Class138? get() = Class299Sub1Statics.aClass138_6321; set(v) { Class299Sub1Statics.aClass138_6321 = v }
         var anInt6322: Int = 0
         var aFileOutputStream6323: FileOutputStream? = null
 

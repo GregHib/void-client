@@ -31,8 +31,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
         var anInt6871: Int = 0
         var anInt6873: Int = 0
         var anInt6874: Int = 0
-        var aString6876: String?
-        var aString6877: String?
+        var aString6876: String? get() = Class348Sub24Statics.aString6876; set(v) { Class348Sub24Statics.aString6876 = v }
+        var aString6877: String? get() = Class348Sub24Statics.aString6877; set(v) { Class348Sub24Statics.aString6877 = v }
         var anIntArray6878: IntArray? = null
 
         fun method2991(i: Int) {
@@ -562,14 +562,14 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
             } catch (exception: Exception) {
                 /* empty */
             }
-            aString6877 = string.lowercase()
+            Class348Sub24Statics.aString6877 = string.lowercase()
             string = "Unknown"
             try {
                 string = systemGetProperty("os.arch")?.lowercase() ?: string
             } catch (exception: Exception) {
                 /* empty */
             }
-            aString6876 = string.lowercase()
+            Class348Sub24Statics.aString6876 = string.lowercase()
             string = "Unknown"
             try {
                 string = systemGetProperty("os.version")?.lowercase() ?: string

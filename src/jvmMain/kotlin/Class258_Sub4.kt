@@ -29,8 +29,8 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int
     }
 
     companion object {
-        var aClass373_8552: Class373? = null
-        var aClass138_8553: Class138?
+        var aClass373_8552: Class373? get() = Class258Sub4Statics.aClass373_8552; set(v) { Class258Sub4Statics.aClass373_8552 = v }
+        var aClass138_8553: Class138? get() = Class258Sub4Statics.aClass138_8553; set(v) { Class258Sub4Statics.aClass138_8553 = v }
         var anInt8554: Int = 0
         var anInt8555: Int = 0
         var anIntArray8557: IntArray? = IntArray(500)
@@ -44,15 +44,7 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int
             if (i == 24885) anIntArray8557 = null
         }
 
-        fun method1974(i: Byte, i_3_: Int, bool: Boolean): Class348_Sub13? {
-            anInt8559++
-            val i_4_ = -43 / ((-65 - i) / 55)
-            val l = (i_3_ or (if (bool) -2147483648 else 0)).toLong()
-            return (Class348_Sub40.aClass356_7041!!.method3480(l, -6008) as Class348_Sub13?)
-        }
+        fun method1974(i: Byte, i_3_: Int, bool: Boolean): Class348_Sub13? = Class258Sub4Statics.method1974(i, i_3_, bool)
 
-        init {
-            aClass138_8553 = Class138(9, 0, 4, 1)
-        }
     }
 }

@@ -99,12 +99,12 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
         var aClass114_7367: Class114? = Class114(37, 7)
         var anInt7368: Int = 0
         var anInt7370: Int = 0
-        var aClass45_7371: Class45? = null
+        var aClass45_7371: Class45? get() = Class367Sub9Statics.aClass45_7371; set(v) { Class367Sub9Statics.aClass45_7371 = v }
         var anInt7372: Int = 0
         var anInt7374: Int = 0
         var anInt7377: Int = 0
         var aStringArray7378: Array<String?>? = null
-        var anInt7379: Int = 0
+        var anInt7379: Int get() = Class367Sub9Statics.anInt7379; set(v) { Class367Sub9Statics.anInt7379 = v }
         var anInt7380: Int = 0
 
         fun method3551(i: Int, i_5_: Int, i_6_: Int, bool: Boolean): String? {

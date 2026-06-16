@@ -14,13 +14,13 @@ class Class52 internal constructor(var anInt4899: Int) : Interface12 {
         var anInt4897: Int = 0
         var anInt4898: Int = 0
         var anInt4900: Int = 0
-        var aClass138_4901: Class138?
+        var aClass138_4901: Class138? get() = Class52Statics.aClass138_4901; set(v) { Class52Statics.aClass138_4901 = v }
         var anInt4902: Int = 0
         var aBoolean4903: Boolean = false
-        var aFrame4904: Frame? = null
-        var aClass351_4905: Class351?
+        var aFrame4904: Frame? get() = Class52Statics.aFrame4904; set(v) { Class52Statics.aFrame4904 = v }
+        var aClass351_4905: Class351? get() = Class52Statics.aClass351_4905; set(v) { Class52Statics.aClass351_4905 = v }
         var anIntArray4906: IntArray?
-        var aClass351_4907: Class351?
+        var aClass351_4907: Class351? get() = Class52Statics.aClass351_4907; set(v) { Class52Statics.aClass351_4907 = v }
 
         fun method490(i: Byte, class348_sub49: Class348_Sub49): Class43 {
             anInt4897++
@@ -112,10 +112,7 @@ class Class52 internal constructor(var anInt4899: Int) : Interface12 {
         }
 
         init {
-            aClass138_4901 = Class138(12, 0, 1, 0)
             anIntArray4906 = IntArray(4)
-            aClass351_4905 = Class351(44, 3)
-            aClass351_4907 = Class351(48, 11)
         }
     }
 }

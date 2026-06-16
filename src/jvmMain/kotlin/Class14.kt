@@ -320,7 +320,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
         var anInt5086: Int = 0
         var anInt5087: Int = 0
         var aLong5089: Long = -1L
-        var anIntArray5091: IntArray? = null
+        var anIntArray5091: IntArray? get() = Class14Statics.anIntArray5091; set(v) { Class14Statics.anIntArray5091 = v }
         var anInt5092: Int = 0
         var anInt5094: Int = 0
         var anInt5095: Int = 0

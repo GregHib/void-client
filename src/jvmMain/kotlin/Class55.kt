@@ -284,7 +284,7 @@ abstract class Class55(i: Int) {
 
     companion object {
         var anInt978: Int = 0
-        var aBoolean979: Boolean
+        var aBoolean979: Boolean get() = Class55Statics.aBoolean979; set(v) { Class55Statics.aBoolean979 = v }
         var anInt980: Int = 0
         var anInt982: Int = 0
         var anInt984: Int = 4
@@ -294,7 +294,7 @@ abstract class Class55(i: Int) {
         var anInt989: Int = 0
         var anInt990: Int = 0
         var anInt992: Int = 0
-        var anInt994: Int = 0
+        var anInt994: Int get() = Class55Statics.anInt994; set(v) { Class55Statics.anInt994 = v }
         var anInt996: Int = 0
         var anInt997: Int = 0
         var anInt998: Int = 0
@@ -368,8 +368,5 @@ abstract class Class55(i: Int) {
             return class218.method1593(106)
         }
 
-        init {
-            aBoolean979 = false
-        }
     }
 }

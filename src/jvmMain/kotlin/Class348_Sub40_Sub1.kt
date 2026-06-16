@@ -119,17 +119,7 @@ class Class348_Sub40_Sub1 : Class348_Sub40(1, false) {
             if (bool != true) method3050(true)
         }
 
-        fun method3051(i: Int, i_3_: Int): Int {
-            if (i_3_ != 4096) return -68
-            anInt9085++
-            var i_4_ = i ushr 1
-            i_4_ = i_4_ or (i_4_ ushr 1)
-            i_4_ = i_4_ or (i_4_ ushr 2)
-            i_4_ = i_4_ or (i_4_ ushr 4)
-            i_4_ = i_4_ or (i_4_ ushr 8)
-            i_4_ = i_4_ or (i_4_ ushr 16)
-            return (i_4_.inv()) and i
-        }
+        fun method3051(i: Int, i_3_: Int): Int = Class348Sub40Sub1Statics.method3051(i, i_3_)
 
         @Throws(ClassNotFoundException::class)
         fun method3052(i: Int, string: String?): Class<*> {

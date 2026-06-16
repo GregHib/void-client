@@ -79,9 +79,9 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
         var anInt5293: Int = 0
         var aClass105Array5294: Array<Class105?>? = null
         var anInt5295: Int = 0
-        var aClass297_5297: Class297? = null
+        var aClass297_5297: Class297? get() = Class59Sub1Statics.aClass297_5297; set(v) { Class59Sub1Statics.aClass297_5297 = v }
         var aFloat5299: Float = 0f
-        var aBoolean5300: Boolean = false
+        var aBoolean5300: Boolean get() = Class59Sub1Statics.aBoolean5300; set(v) { Class59Sub1Statics.aBoolean5300 = v }
 
         fun method551(i: Int, i_2_: Int, i_3_: Int, fs: FloatArray, i_4_: Int, i_5_: Int, i_6_: Int) {
             var i = i
