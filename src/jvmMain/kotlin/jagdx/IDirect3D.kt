@@ -62,6 +62,7 @@ class IDirect3D private constructor(private val b: hb?) : IUnknown(b) {
             return local4
         }
 
+        @JvmStatic
         private external fun _Direct3DCreate(arg0: Int, arg1: IDirect3D?): Int
     }
 }
