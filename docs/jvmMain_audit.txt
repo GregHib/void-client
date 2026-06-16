@@ -17,7 +17,7 @@ Class101_Sub2.kt
 Class101_Sub3.kt
 Class103.kt
 #Class104.kt
-Class105_Sub1.kt
+#Class105_Sub1.kt Uses ha_Sub3
 #Class105_Sub2.kt
 Class105_Sub3.kt
 Class105_Sub3_Sub1.kt
@@ -259,7 +259,7 @@ Class264.kt
 Class265.kt
 Class267.kt
 Class268.kt
-Class269.kt
+#Class269.kt
 Class27.kt
 Class271.kt
 Class272.kt
@@ -323,7 +323,7 @@ Class299Sub1Statics.kt
 Class299_Sub1_Sub1.kt
 #Class299_Sub1_Sub2.kt
 Class299_Sub2.kt
-Class299_Sub2_Sub1.kt
+#Class299_Sub2_Sub1.kt uses ha_Sub3
 Class3.kt
 Class30.kt
 Class300.kt
@@ -598,19 +598,19 @@ Class363.kt
 Class364.kt
 Class365Statics.kt
 #Class366.kt
-Class367.kt
+#Class367.kt
 Class367Sub9Statics.kt
-Class367_Sub1.kt
-Class367_Sub10.kt
+#Class367_Sub1.kt
+#Class367_Sub10.kt
 #Class367_Sub11.kt
-Class367_Sub11Statics.kt
+#Class367_Sub11Statics.kt
 #Class367_Sub2.kt
-Class367_Sub3.kt
-Class367_Sub4.kt
+#Class367_Sub3.kt
+#Class367_Sub4.kt
 #Class367_Sub5.kt
 #Class367_Sub6.kt
 #Class367_Sub7.kt
-Class367_Sub8.kt
+#Class367_Sub8.kt
 #Class367_Sub9.kt
 Class368.kt
 Class369.kt
@@ -622,7 +622,7 @@ Class369_Sub3_Sub1.kt
 Class37.kt
 Class370.kt
 Class371.kt
-Class372.kt
+#Class372.kt uses ha_Sub3
 Class373Sub2Statics.kt
 #Class373_Sub1.kt
 #Class373_Sub2.kt
@@ -772,7 +772,7 @@ RuntimeException_Sub1.kt
 #a.kt
 aaStatics.kt
 aa_Sub1.kt
-aa_Sub2.kt
+#aa_Sub2.kt
 aa_Sub3Statics.kt
 #aa_Sub3StaticsCommon.kt
 #ba.kt
@@ -862,7 +862,7 @@ jagdx/ue.kt
 #oa.kt
 #p.kt
 rStatics.kt
-r_Sub1.kt
+#r_Sub1.kt
 r_Sub2.kt
 #sStatics.kt
 #s_Sub2.kt
