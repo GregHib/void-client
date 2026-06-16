@@ -54,24 +54,11 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
             }
         }
 
-        fun method1119(bool: Boolean) {
-            anInt8381++
-            try {
-                try {
-                    Class348_Sub40_Sub29.anInt9372 = RuntimeInfoProvider.instance.availableProcessors()
-                } catch (throwable: Throwable) {
-                    /* empty */
-                }
-            } catch (exception: Exception) {
-                /* empty */
-            }
-        }
-
         fun method1120(i: Int) {
             aClass114_8384 = null
             aClass271_8378 = null
             aClass114_8385 = null
-            if (i != 1) method1119(true)
+            if (i != 1) Class127Sub1Statics.method1119(true)
         }
 
         init {
