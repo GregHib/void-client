@@ -61,4 +61,20 @@ object ha_Sub3Statics {
         }
         if (i_39_ < 98) ha_Sub3.method3936(-100)
     }
+
+    var aStringArray8019: Array<String?>? = arrayOfNulls<String>(5)
+    var anInt8001: Int = -1
+    var anInt8045: Int = 0
+
+    fun method3873(`is`: ByteArray?, i: Int): ByteArray {
+        try {
+            ha_Sub3.anInt8015++
+            val i_127_ = `is`!!.size
+            val is_128_ = ByteArray(i_127_)
+            Class214.method1577(`is`, i, is_128_, 0, i_127_)
+            return is_128_
+        } catch (runtimeexception: RuntimeException) {
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
+        }
+    }
 }

@@ -2601,7 +2601,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         var anInt7998: Int = 0
         var anInt7999: Int = 0
         var anInt8000: Int = 0
-        var anInt8001: Int
+        var anInt8001: Int get() = ha_Sub3Statics.anInt8001; set(v) { ha_Sub3Statics.anInt8001 = v }
         var anInt8002: Int = 0
         var anInt8003: Int = 0
         var anInt8004: Int = 0
@@ -2618,7 +2618,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         var anInt8016: Int = 0
         var anInt8017: Int = 0
         var anInt8018: Int = 0
-        var aStringArray8019: Array<String?>? = arrayOfNulls<String>(5)
+        var aStringArray8019: Array<String?>? get() = ha_Sub3Statics.aStringArray8019; set(v) { ha_Sub3Statics.aStringArray8019 = v }
         var anInt8021: Int = 0
         var anInt8022: Int = 0
         var anInt8023: Int = 0
@@ -2642,7 +2642,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
         var anInt8042: Int = 0
         var anInt8043: Int = 0
         var anInt8044: Int = 0
-        var anInt8045: Int = 0
+        var anInt8045: Int get() = ha_Sub3Statics.anInt8045; set(v) { ha_Sub3Statics.anInt8045 = v }
         var anInt8046: Int = 0
         var anInt8047: Int = 0
         var anInt8048: Int = 0
@@ -2682,17 +2682,7 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
             if (i <= 99) anInt8045 = -72
         }
 
-        fun method3873(`is`: ByteArray?, i: Int): ByteArray {
-            try {
-                anInt8015++
-                val i_127_ = `is`!!.size
-                val is_128_ = ByteArray(i_127_)
-                Class214.method1577(`is`, i, is_128_, 0, i_127_)
-                return is_128_
-            } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("wga.GI(" + (if (`is` != null) "{...}" else "null") + ',' + i + ')'))
-            }
-        }
+        fun method3873(`is`: ByteArray?, i: Int): ByteArray = ha_Sub3Statics.method3873(`is`, i)
 
         fun method3886(i: Int) {
             Class345.aClass60_4273!!.method590(0)
@@ -2730,8 +2720,5 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
             if (i != 0) method3870(-90)
         }
 
-        init {
-            anInt8001 = -1
-        }
     }
 }
