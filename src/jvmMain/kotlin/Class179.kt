@@ -56,7 +56,7 @@ class Class179 internal constructor(private val anInt2365: Int, bool: Boolean) {
 
     override fun toString(): String {
         anInt2357++
-        val stringbuffer = StringBuffer()
+        val stringbuffer = StringBuilder()
         stringbuffer.append("[")
         var i = 0
         while (anInt2364 > i) {

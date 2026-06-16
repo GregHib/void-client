@@ -4729,7 +4729,7 @@ object Class66 {
                 }
                 if (i == 4119) {
                     val string = aStringArray1152!![--anInt1170]!!
-                    val stringbuffer = StringBuffer(string.length)
+                    val stringbuffer = StringBuilder(string.length)
                     var bool_445_ = false
                     for (i_446_ in 0..<string.length) {
                         val c = string.get(i_446_)
@@ -5126,7 +5126,7 @@ object Class66 {
             throw IllegalStateException("Command: " + i_490_)
         } catch (exception: Exception) {
             if (class348_sub42_sub19.aString9690 == null) {
-                val stringbuffer = StringBuffer(30)
+                val stringbuffer = StringBuilder(30)
                 stringbuffer.append("CS2: ").append(class348_sub42_sub19.aLong4291).append(" ")
                 var i_514_ = anInt1154 - 1
                 while (i_514_ >= 0) {
@@ -5137,7 +5137,7 @@ object Class66 {
                 Class156.method1242(stringbuffer.toString(), exception, 15004)
             } else {
                 method544(("Clientscript error in: " + class348_sub42_sub19.aString9690), false, 4)
-                val stringbuffer = StringBuffer(30)
+                val stringbuffer = StringBuilder(30)
                 stringbuffer.append("Clientscript error in: ").append(class348_sub42_sub19.aString9690).append("\n")
                 var i_513_ = anInt1154 - 1
                 while (i_513_ >= 0) {

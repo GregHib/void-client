@@ -106,7 +106,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
     fun method3216(class348_sub49: Class348_Sub49, i: Byte): String {
         anInt9578++
         if (i < 33) method3219(-91)
-        val stringbuffer = StringBuffer(80)
+        val stringbuffer = StringBuilder(80)
         if (anIntArray9574 != null) {
             for (i_13_ in anIntArray9574!!.indices) {
                 stringbuffer.append(aStringArray9564!![i_13_])
@@ -130,7 +130,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
     fun method3219(i: Int): String {
         anInt9573++
         if (i < 66) aStringArray9564 = null
-        val stringbuffer = StringBuffer(80)
+        val stringbuffer = StringBuilder(80)
         if (aStringArray9564 == null) return ""
         stringbuffer.append(aStringArray9564!![0])
         for (i_15_ in 1..<aStringArray9564!!.size) {

@@ -50,7 +50,7 @@ object Class27 {
                 l_2_ /= 37L
             }
             if (i >= -82) anInt396 = -58
-            val stringbuffer = StringBuffer(i_1_)
+            val stringbuffer = StringBuilder(i_1_)
             while (l != 0L) {
                 val l_3_ = l
                 l /= 37L

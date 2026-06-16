@@ -56,7 +56,7 @@ class Class357 internal constructor(i: Int) {
                     l = -l
                     bool_3_ = true
                 }
-                val stringbuffer = StringBuffer(26)
+                val stringbuffer = StringBuilder(26)
                 if (i > 0) {
                     var i_4_ = 0
                     while (i > i_4_) {

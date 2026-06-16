@@ -317,7 +317,7 @@ object Class164 {
                 else i_17_ += string.length
                 i_18_++
             }
-            val stringbuffer = StringBuffer(i_17_)
+            val stringbuffer = StringBuilder(i_17_)
             for (i_19_ in i_15_..<i_16_) {
                 val string = strings!![i_19_]
                 if (string == null) stringbuffer.append("null")

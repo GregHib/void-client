@@ -145,7 +145,7 @@ class Class163 internal constructor(i: Int, i_27_: Int) {
 
         fun method1273(`is`: IntArray, bool: Boolean): String {
             anInt2161++
-            val stringbuffer = StringBuffer()
+            val stringbuffer = StringBuilder()
             var i = Class239_Sub1.anInt5850
             var i_24_ = 0
             while (`is`.size > i_24_) {

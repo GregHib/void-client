@@ -258,7 +258,7 @@ abstract class Class55(i: Int) {
             class348_sub23 = aClass348_Sub23_Sub1_1008
         } else {
             val `is` = anOggPacket993.data
-            val stringbuffer = StringBuffer()
+            val stringbuffer = StringBuilder()
             var i_33_ = 1
             while (`is`!!.size > i_33_) {
                 if (!Character.isLetterOrDigit(Char(`is`[i_33_].toUShort()))) break

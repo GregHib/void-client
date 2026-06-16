@@ -92,7 +92,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                         i_3_ += i_4_
                     }
                 }
-                val stringbuffer = StringBuffer(i_3_)
+                val stringbuffer = StringBuilder(i_3_)
                 var i_6_ = 0
                 if (i > -77) return null
                 while (true) {

@@ -70,7 +70,7 @@ class Class239_Sub16 : Class239 {
                     i_0_++
                     l_1_ /= 37L
                 }
-                val stringbuffer = StringBuffer(i_0_)
+                val stringbuffer = StringBuilder(i_0_)
                 while (l != 0L) {
                     val l_3_ = l
                     l /= 37L

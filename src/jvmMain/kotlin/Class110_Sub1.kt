@@ -24,7 +24,7 @@ class Class110_Sub1 : Class110() {
         var anInt5793: Int = 0
         fun method1039(string: String, bool: Boolean): String {
             anInt5793++
-            val stringbuffer = StringBuffer()
+            val stringbuffer = StringBuilder()
             val i = string.length
             if (bool != true) aFloatArray5791 = null
             var i_0_ = 0

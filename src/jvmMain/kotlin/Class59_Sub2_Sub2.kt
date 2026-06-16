@@ -81,7 +81,7 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 if (c == '<' || c == '>') i_12_ += 3
                 i_13_++
             }
-            val stringbuffer = StringBuffer(i_12_ + i_11_)
+            val stringbuffer = StringBuilder(i_12_ + i_11_)
             for (i_14_ in 0..<i_11_) {
                 val c = string.get(i_14_)
                 if (c.code != 60) {

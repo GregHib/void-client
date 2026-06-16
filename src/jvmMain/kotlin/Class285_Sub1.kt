@@ -79,7 +79,7 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
             }
             val i_2_ = i_1_ + -i_0_
             if (i_2_ < 1 || i_2_ > 12) return null
-            val stringbuffer = StringBuffer(i_2_)
+            val stringbuffer = StringBuilder(i_2_)
             var i_3_ = i_0_
             while (i_1_ > i_3_) {
                 val c = string.get(i_3_)
