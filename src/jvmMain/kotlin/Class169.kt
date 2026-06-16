@@ -57,11 +57,7 @@ class Class169 : Runnable {
         anInt2257++
         if (aThread2259 != null) {
             method1304(1000, Class348())
-            try {
-                aThread2259!!.join()
-            } catch (interruptedexception: InterruptedException) {
-                /* empty */
-            }
+            aThread2259!!.join()
             aThread2259 = null
             if (i.toInt() != 16) anInt2264 = 87
         }

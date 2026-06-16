@@ -29,8 +29,7 @@ class Class70 {
             if (Class348_Sub42_Sub15.aClass56_9660 != null) {
                 Class51.aClass311_897 = Class311()
                 Class51.aClass311_897!!.method2316(Class348_Sub42_Sub15.aClass56_9660, Class348_Sub42_Sub15.aClass56_9660!!.aClass274_1012!!.method2063(Class348_Sub33.anInt6967, 544), Class348_Sub42_Sub15.aClass56_9660!!.anInt1025, Class283.aLong3660, false)
-                Class348_Sub32.aThread6946 = Thread(Class51.aClass311_897, "")
-                Class348_Sub32.aThread6946!!.start()
+                Class348_Sub32.aThread6946 = Workers.start({ Class51.aClass311_897!!.run() }, daemon = true)
             }
         }
 

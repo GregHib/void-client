@@ -290,7 +290,7 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_S
         var anInt6938: Int = 0
         var anInt6939: Int = 0
         var anInt6941: Int = 0
-        var aThread6946: Thread? = null
+        var aThread6946: WorkerHandle? = null
         var aClass45_6950: Class45? = null
         fun method3018(i: Int) {
             Class348_Sub18.Companion.anInt6818 = i

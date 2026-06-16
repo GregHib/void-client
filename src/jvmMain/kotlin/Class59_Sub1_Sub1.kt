@@ -34,14 +34,7 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
                 Class51.aClass311_897!!.method2319((-75).toByte())
             }
             if (Class348_Sub32.aThread6946 != null) {
-                while (true) {
-                    try {
-                        Class348_Sub32.aThread6946!!.join()
-                        break
-                    } catch (interruptedexception: InterruptedException) {
-                        /* empty */
-                    }
-                }
+                Class348_Sub32.aThread6946!!.join()
             }
         }
 

@@ -16,7 +16,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
     var aClass234_3785: CacheStore? = null
     private var anObject3787: Any? = null
     var aClass234_3788: CacheStore? = null
-    private val aThread3790: Thread
+    private lateinit var aThread3790: WorkerHandle
     private var anObject3791: Any? = null
     private var anObject3793: Any? = null
     var aBoolean3794: Boolean = false
@@ -204,12 +204,8 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
             aBoolean3801 = true
             (this as Object).notifyAll()
         }
-        try {
-            aThread3790.join()
-            if (i.toInt() != 103) this.aClass234_3788 = null
-        } catch (interruptedexception: InterruptedException) {
-            /* empty */
-        }
+        aThread3790.join()
+        if (i.toInt() != 103) this.aClass234_3788 = null
         if (this.aClass234_3785 != null) {
             try {
                 this.aClass234_3785!!.method1657(false)
@@ -473,10 +469,7 @@ class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bo
             }
         }
         aBoolean3801 = false
-        aThread3790 = Thread(this)
-        aThread3790.setPriority(10)
-        aThread3790.setDaemon(true)
-        aThread3790.start()
+        aThread3790 = Workers.start({ run() }, daemon = true, priority = 10)
     }
 
     companion object {

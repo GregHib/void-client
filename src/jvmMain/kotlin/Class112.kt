@@ -42,11 +42,7 @@ class Class112 internal constructor(class297: Class297) : Runnable {
         withLock(aClass107_1730) {
             (aClass107_1730 as Object).notifyAll()
         }
-        try {
-            aThread1733!!.join()
-        } catch (interruptedexception: InterruptedException) {
-            /* empty */
-        }
+        aThread1733!!.join()
         aThread1733 = null
     }
 
