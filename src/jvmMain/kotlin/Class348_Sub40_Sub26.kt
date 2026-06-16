@@ -102,7 +102,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             for (i_19_ in 0..<i_18_) {
                 for (i_20_ in 0..3) Class239_Sub6.anIntArrayArray5894!![i_19_]!![i_20_] = Class299Statics.aClass348_Sub49_Sub2_3813!!.readInt((-126).toByte())
             }
-            Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
+            Class348_Sub23_Sub1Statics.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
             Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
             aa_Sub1Statics.anIntArray5192 = IntArray(i_18_)
             Class14Sub4Statics.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)

@@ -1,5 +1,4 @@
 import Class117.Companion.method1070
-import Class135_Sub2.Companion.method1156
 import Class85.Companion.method831
 
 /* Class205 - Decompiled by JODE
@@ -34,9 +33,9 @@ object Class205 {
             val i_14_ = method831(Class113.anInt1745, i_5_ - -i_2_, Class369.anInt4960, i_3_ + -94)
             val i_15_ = method831(Class113.anInt1745, i_5_ - i_7_, Class369.anInt4960, -82)
             val i_16_ = method831(Class113.anInt1745, i_5_ - -i_7_, Class369.anInt4960, -96)
-            method1156(-27, i_15_, `is`, i_13_, i)
-            method1156(-27, i_16_, `is`, i_15_, i_1_)
-            method1156(-27, i_14_, `is`, i_16_, i)
+            Class135_Sub2Statics.method1156(-27, i_15_, `is`, i_13_, i)
+            Class135_Sub2Statics.method1156(-27, i_16_, `is`, i_15_, i_1_)
+            Class135_Sub2Statics.method1156(-27, i_14_, `is`, i_16_, i)
         }
         var i_17_ = -1
         while (i_6_ < i_8_) {
@@ -69,15 +68,15 @@ object Class205 {
                         val i_26_ = method831(Class113.anInt1745, i_5_ - i_22_, Class369.anInt4960, 84)
                         if (Class38.anInt513 >= i_19_) {
                             val `is`: IntArray = Class17.anIntArrayArray255!![i_19_]!!
-                            method1156(-27, i_26_, `is`, i_24_, i)
-                            method1156(-27, i_25_, `is`, i_26_, i_1_)
-                            method1156(-27, i_23_, `is`, i_25_, i)
+                            Class135_Sub2Statics.method1156(-27, i_26_, `is`, i_24_, i)
+                            Class135_Sub2Statics.method1156(-27, i_25_, `is`, i_26_, i_1_)
+                            Class135_Sub2Statics.method1156(-27, i_23_, `is`, i_25_, i)
                         }
                         if (Class132.anInt1910 <= i_18_) {
                             val `is`: IntArray = Class17.anIntArrayArray255!![i_18_]!!
-                            method1156(-27, i_26_, `is`, i_24_, i)
-                            method1156(-27, i_25_, `is`, i_26_, i_1_)
-                            method1156(-27, i_23_, `is`, i_25_, i)
+                            Class135_Sub2Statics.method1156(-27, i_26_, `is`, i_24_, i)
+                            Class135_Sub2Statics.method1156(-27, i_25_, `is`, i_26_, i_1_)
+                            Class135_Sub2Statics.method1156(-27, i_23_, `is`, i_25_, i)
                         }
                     }
                 }
@@ -99,15 +98,15 @@ object Class205 {
                         val i_33_ = method831(Class113.anInt1745, -i_31_ + i_5_, Class369.anInt4960, 65)
                         if (i_28_ <= Class38.anInt513) {
                             val `is`: IntArray = Class17.anIntArrayArray255!![i_28_]!!
-                            method1156(-27, i_33_, `is`, i_30_, i)
-                            method1156(-27, i_32_, `is`, i_33_, i_1_)
-                            method1156(-27, i_29_, `is`, i_32_, i)
+                            Class135_Sub2Statics.method1156(-27, i_33_, `is`, i_30_, i)
+                            Class135_Sub2Statics.method1156(-27, i_32_, `is`, i_33_, i_1_)
+                            Class135_Sub2Statics.method1156(-27, i_29_, `is`, i_32_, i)
                         }
                         if (Class132.anInt1910 <= i_27_) {
                             val `is`: IntArray = Class17.anIntArrayArray255!![i_27_]!!
-                            method1156(i_3_ + -29, i_33_, `is`, i_30_, i)
-                            method1156(-27, i_32_, `is`, i_33_, i_1_)
-                            method1156(-27, i_29_, `is`, i_32_, i)
+                            Class135_Sub2Statics.method1156(i_3_ + -29, i_33_, `is`, i_30_, i)
+                            Class135_Sub2Statics.method1156(-27, i_32_, `is`, i_33_, i_1_)
+                            Class135_Sub2Statics.method1156(-27, i_29_, `is`, i_32_, i)
                         }
                     }
                 }

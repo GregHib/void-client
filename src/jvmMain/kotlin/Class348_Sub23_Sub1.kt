@@ -105,9 +105,6 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             get() = Class348_Sub23_Sub1Statics.aClass297_8992
             set(v) { Class348_Sub23_Sub1Statics.aClass297_8992 = v }
         // Promoted to Class348_Sub23_Sub1Statics so callers need not import this class.
-        var aByteArrayArray8996: Array<ByteArray?>?
-            get() = Class348_Sub23_Sub1Statics.aByteArrayArray8996
-            set(v) { Class348_Sub23_Sub1Statics.aByteArrayArray8996 = v }
         var anInt8997: Int = 0
         var anInt8998: Int = 0
         var anInt8999: Int = 0
@@ -115,7 +112,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
         var anInt9004: Int = 0
         fun method2967(i: Int, class64: Class64?, i_0_: Int, i_1_: Int, i_2_: Int): Class30? {
             anInt8991++
-            if (i_2_ != 2) aByteArrayArray8996 = null
+            if (i_2_ != 2) Class348_Sub23_Sub1Statics.aByteArrayArray8996 = null
             if (class64 == null) return null
             val class30 = Class30(i, i_1_, i_0_, class64.na(), class64.V(), class64.RA(), class64.fa(), class64.EA(), class64.HA(), class64.G())
             return class30
@@ -123,7 +120,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
 
         fun method2968(i: Byte) {
             Class348_Sub23_Sub1Statics.method2968(i)
-            aByteArrayArray8996 = null
+            Class348_Sub23_Sub1Statics.aByteArrayArray8996 = null
         }
 
         fun method2970(i: Int, class348_sub49: Class348_Sub49): Class50_Sub3 {

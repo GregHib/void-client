@@ -1,4 +1,3 @@
-import Class135_Sub2.Companion.method1156
 import Class177.Companion.method1353
 import Class239_Sub5.Companion.method1742
 import Class348_Sub16_Sub3.Companion.method2878
@@ -87,9 +86,9 @@ class Class184 {
         fun method1388(i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
             var i = i
             var i_8_ = i_8_
-            method1156(-27, i_6_, Class17.anIntArrayArray255!![i++]!!, i_7_, i_4_)
+            Class135_Sub2Statics.method1156(-27, i_6_, Class17.anIntArrayArray255!![i++]!!, i_7_, i_4_)
             anInt2472++
-            method1156(-27, i_6_, Class17.anIntArrayArray255!![i_8_--]!!, i_7_, i_4_)
+            Class135_Sub2Statics.method1156(-27, i_6_, Class17.anIntArrayArray255!![i_8_--]!!, i_7_, i_4_)
             val i_9_ = -52 / ((i_5_ - -32) / 55)
             var i_10_ = i
             while (i_8_ >= i_10_) {

@@ -57,7 +57,7 @@ object Class90 {
         Class348_Sub23_Sub3Statics.anIntArray9042 = IntArray(i_7_)
         Class295.anIntArray3759 = IntArray(i_7_)
         Class348_Sub50.aByteArrayArray7212 = null
-        Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_7_)
+        Class348_Sub23_Sub1Statics.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_7_)
         Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
         Class14Sub4Statics.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_7_)
         Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_7_)

@@ -4198,4 +4198,3 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
         var anInt5802: Int = 0
     }
 }
-      

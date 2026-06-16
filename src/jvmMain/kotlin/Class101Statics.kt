@@ -32,7 +32,7 @@ object Class101Statics {
         Class295.anIntArray3759 = IntArray(i_6_)
         Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
         Applet_Sub1.anIntArray38 = IntArray(i_6_)
-        Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
+        Class348_Sub23_Sub1Statics.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
         Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_6_)
         i_6_ = 0
         var i_7_ = (i_4_ + -(Class367Sub4Statics.anInt7319 shr 4)) / 8
