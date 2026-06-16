@@ -109,3 +109,9 @@ hs_err_pid*
 !/client/client.iml
 build/
 .gradle/
+
+.idea/
+.jagex_cache_32/
+*.MF
+*.xml
+.kotlin/
