@@ -24,13 +24,13 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
         var anInt4241: Int = 0
         var anInt4242: Int = 0
         var anInt4243: Int = 0
-        var aClass364_4246: Class364? = Class364("WTI", 5)
+        var aClass364_4246: Class364? get() = Class342Statics.aClass364_4246; set(v) { Class342Statics.aClass364_4246 = v }
         var aClass70_4247: Class70?
         var anImage4249: Image? = null
         var anIntArray4250: IntArray? = IntArray(64)
         var anInt4251: Int = 0
-        var anIntArrayArray4253: Array<IntArray?>? = null
-        var aClass60_4254: Class60?
+        var anIntArrayArray4253: Array<IntArray?>? get() = Class342Statics.anIntArrayArray4253; set(v) { Class342Statics.anIntArrayArray4253 = v }
+        var aClass60_4254: Class60? get() = Class342Statics.aClass60_4254; set(v) { Class342Statics.aClass60_4254 = v }
 
         fun method2682(i: Int) {
             aClass364_4246 = null
@@ -113,7 +113,6 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
 
         init {
             aClass70_4247 = Class70()
-            aClass60_4254 = Class60(32)
         }
     }
 }

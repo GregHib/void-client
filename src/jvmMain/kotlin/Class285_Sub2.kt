@@ -53,7 +53,7 @@ class Class285_Sub2 internal constructor(class377: Class377, class68: Class68?, 
         var anInt8499: Int = 0
         var anInt8500: Int = 0
         var anInt8501: Int = 0
-        var anInt8502: Int = 0
+        var anInt8502: Int get() = Class285Sub2Statics.anInt8502; set(v) { Class285Sub2Statics.anInt8502 = v }
         var aClass70_8503: Class70? = Class70()
         var aByteArrayArray8505: Array<ByteArray?>? = arrayOfNulls<ByteArray>(50)
         var anInt8506: Int = 0

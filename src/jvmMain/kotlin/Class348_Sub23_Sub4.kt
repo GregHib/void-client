@@ -77,6 +77,8 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
         return aString9058
     }
 
+
+
     companion object {
         var anInt9047: Int = 0
         var anInt9049: Int = 0

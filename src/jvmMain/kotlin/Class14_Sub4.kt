@@ -147,9 +147,9 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
         var aClass230_8638: Class230? = Class230("stellardawn", 1)
         var anInt8639: Int = 0
         var anInt8641: Int = 0
-        var aByteArrayArray8642: Array<ByteArray?>? = null
+        var aByteArrayArray8642: Array<ByteArray?>? get() = Class14Sub4Statics.aByteArrayArray8642; set(v) { Class14Sub4Statics.aByteArrayArray8642 = v }
         var anInt8643: Int = 0
-        var aClass323_8644: Class323? = null
+        var aClass323_8644: Class323? get() = Class14Sub4Statics.aClass323_8644; set(v) { Class14Sub4Statics.aClass323_8644 = v }
         var anInt8645: Int = 0
         var anInt8646: Int = 0
         var anInt8647: Int = 0

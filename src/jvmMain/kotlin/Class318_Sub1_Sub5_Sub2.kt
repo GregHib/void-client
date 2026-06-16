@@ -153,8 +153,8 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
         var anInt10160: Int = 0
         var anInt10161: Int = 0
         var anInt10162: Int = 0
-        var anInt10163: Int = 0
-        var anInt10164: Int = 0
+        var anInt10163: Int get() = Class318Sub1Sub5Sub2Statics.anInt10163; set(v) { Class318Sub1Sub5Sub2Statics.anInt10163 = v }
+        var anInt10164: Int get() = Class318Sub1Sub5Sub2Statics.anInt10164; set(v) { Class318Sub1Sub5Sub2Statics.anInt10164 = v }
         var anInt10165: Int = 0
         var anInt10166: Int = 0
         var anInt10167: Int = 0

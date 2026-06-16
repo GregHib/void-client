@@ -31,10 +31,10 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
         var anInt9744: Int = 0
         var anInt9745: Int = 0
         var aBoolean9746: Boolean = true
-        var anInt9747: Int = 0
-        var aClass138_9748: Class138? = Class138(7, 0, 1, 1)
-        var aClass351_9749: Class351?
-        var anInt9750: Int
+        var anInt9747: Int get() = Class348Sub49Sub1Statics.anInt9747; set(v) { Class348Sub49Sub1Statics.anInt9747 = v }
+        var aClass138_9748: Class138? get() = Class348Sub49Sub1Statics.aClass138_9748; set(v) { Class348Sub49Sub1Statics.aClass138_9748 = v }
+        var aClass351_9749: Class351? get() = Class348Sub49Sub1Statics.aClass351_9749; set(v) { Class348Sub49Sub1Statics.aClass351_9749 = v }
+        var anInt9750: Int get() = Class348Sub49Sub1Statics.anInt9750; set(v) { Class348Sub49Sub1Statics.anInt9750 = v }
         var anInt9751: Int = 0
 
         fun method3398(bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte, i_1_: Int, i_2_: Int, bool_3_: Boolean) {
@@ -211,9 +211,6 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
             }
         }
 
-        init {
-            anInt9750 = 0
-            aClass351_9749 = Class351(45, 7)
-        }
+
     }
 }

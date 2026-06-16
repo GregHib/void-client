@@ -56,7 +56,7 @@ class Class135_Sub1 : Class135, Interface2 {
     companion object {
         var anInt4706: Int = 0
         var aClass114_4707: Class114?
-        var anIntArray4709: IntArray? = IntArray(2048)
+        var anIntArray4709: IntArray? get() = Class135Sub1Statics.anIntArray4709; set(v) { Class135Sub1Statics.anIntArray4709 = v }
         var anInt4710: Int = 0
         var anInt4711: Int = 0
         var anInt4712: Int = 0
@@ -64,8 +64,8 @@ class Class135_Sub1 : Class135, Interface2 {
         var anInt4714: Int = 0
         var anInt4715: Int = 0
         var anInt4716: Int = 0
-        var anInt4717: Int = 0
-        var anInt4718: Int
+        var anInt4717: Int get() = Class135Sub1Statics.anInt4717; set(v) { Class135Sub1Statics.anInt4717 = v }
+        var anInt4718: Int get() = Class135Sub1Statics.anInt4718; set(v) { Class135Sub1Statics.anInt4718 = v }
 
         fun method1153(var_ha: ha, i: Int) {
             anInt4713++
@@ -158,7 +158,7 @@ class Class135_Sub1 : Class135, Interface2 {
 
         init {
             aClass114_4707 = Class114(39, 8)
-            anInt4718 = 0
+            Class135Sub1Statics.anInt4718 = 0
         }
     }
 }

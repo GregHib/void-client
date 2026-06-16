@@ -268,8 +268,8 @@ class Class294 : Interface16 {
         var anInt5049: Int = 0
         var anInt5052: Int = 0
         var anInt5055: Int = 0
-        var aClass351_5057: Class351? = Class351(10, -1)
-        var aPlayerArray5058: Array<Player?>? = arrayOfNulls<Player>(2048)
+        var aClass351_5057: Class351? get() = Class294Statics.aClass351_5057; set(v) { Class294Statics.aClass351_5057 = v }
+        var aPlayerArray5058: Array<Player?>? get() = Class294Statics.aPlayerArray5058; set(v) { Class294Statics.aPlayerArray5058 = v }
         var aClass338Array5060: Array<Class338?>? = null
         var anInt5061: Int = 0
 

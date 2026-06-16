@@ -185,7 +185,7 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
 
     companion object {
         var anInt1545: Int = 0
-        var anInt1548: Int = -1
+        var anInt1548: Int get() = Class97Statics.anInt1548; set(v) { Class97Statics.anInt1548 = v }
         var anInt1549: Int = 0
         var anInt1550: Int = 0
         var anInt1552: Int = 0
