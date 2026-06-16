@@ -56,7 +56,6 @@ class Class348_Sub40_Sub11 : Class348_Sub40(0, true) {
         var anInt9186: Int = 0
         var anInt9188: Int = 0
 
-        @JvmStatic
         fun method3075(bool: Boolean) {
             anIntArray9185 = null
             if (bool != false) anIntArray9185 = null

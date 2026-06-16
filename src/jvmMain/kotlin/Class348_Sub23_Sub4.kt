@@ -89,14 +89,12 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
         var anInt9061: Int = 0
         var anInt9063: Int = 0
 
-        @JvmStatic
         fun method2985(i: Int, i_0_: Int, i_1_: Int): Boolean {
             if (i != -31735) Companion.method2990((-62).toByte())
             anInt9059++
             return (0x100 and i_1_) != 0
         }
 
-        @JvmStatic
         fun method2987(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) {
             anInt9047++
             if (i_7_ == 8 || i_7_ == 16) {
@@ -122,7 +120,6 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
             if (i_9_ != -3951) anIntArray9050 = null
         }
 
-        @JvmStatic
         fun method2988(bool: Boolean) {
             Class60.aHa1098!!.xa((Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * Class160.aFloat2137)
             anInt9049++
@@ -131,7 +128,6 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
             if (bool != true) anIntArray9050 = null
         }
 
-        @JvmStatic
         fun method2990(i: Byte) {
             anIntArray9050 = null
             if (i <= 101) anIntArray9050 = null

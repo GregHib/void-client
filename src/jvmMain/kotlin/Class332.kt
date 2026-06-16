@@ -6,7 +6,6 @@ object Class332 {
     var aSArray4142: Array<s?>? = null
     var anInt4143: Int
 
-    @JvmStatic
     fun method2640(bool: Boolean) {
         aClass60_4139 = null
         aSArray4142 = null

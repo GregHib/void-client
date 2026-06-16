@@ -104,14 +104,12 @@ class Class334 {
             return i_22_ and 0xfc00 or (0x380 and i_21_) or (i_20_ and 0x7f)
         }
 
-        @JvmStatic
         fun method2653(bool: Boolean, i: Int): Boolean {
             if (bool != true) anIntArray4152 = null
             anInt4164++
             return i == 10 || i == 11 || i == 12
         }
 
-        @JvmStatic
         fun method2654(i: Int) {
             if (i != -6896) anInt4155 = -7
             anIntArray4152 = null

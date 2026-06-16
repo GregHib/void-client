@@ -55,14 +55,12 @@ class Class253 {
             }
         }
 
-        @JvmStatic
         fun method1920(i: Int, i_10_: Int): Int {
             if (i != 127) return -32
             anInt3252++
             return 0x7f and i_10_
         }
 
-        @JvmStatic
         fun method1922(string: String?, i: Int, string_12_: String?, bool: Boolean) {
             try {
                 if (bool == true) {

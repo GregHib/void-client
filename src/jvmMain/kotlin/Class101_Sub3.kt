@@ -413,7 +413,6 @@ class Class101_Sub3 : Class101() {
         var anInt5783: Int = 0
         var anInt5785: Int = 0
 
-        @JvmStatic
         fun method938(i: Int) {
             aClass326_5764 = null
             if (i <= 8) aClass326_5764 = null
@@ -425,7 +424,6 @@ class Class101_Sub3 : Class101() {
             if (i <= 113) aClass326_5764 = null
         }
 
-        @JvmStatic
         fun method943(bool: Boolean): Class348_Sub16_Sub3? {
             anInt5776++
             if (bool != false) method943(true)

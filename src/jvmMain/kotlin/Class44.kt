@@ -10,7 +10,6 @@ object Class44 {
     var aClass101_624: Class101? = null
     var aCharArray625: CharArray? = charArrayOf('\u20ac', '\u0000', '\u201a', '\u0192', '\u201e', '\u2026', '\u2020', '\u2021', '\u02c6', '\u2030', '\u0160', '\u2039', '\u0152', '\u0000', '\u017d', '\u0000', '\u0000', '\u2018', '\u2019', '\u201c', '\u201d', '\u2022', '\u2013', '\u2014', '\u02dc', '\u2122', '\u0161', '\u203a', '\u0153', '\u0000', '\u017e', '\u0178')
 
-    @JvmStatic
     fun method384(i: Int, i_0_: Int, i_1_: Int): Int {
         anInt623++
         val i_2_ = (Class127.method1115(i - 1, i_1_ - 1, 91.toByte()) - (-Class127.method1115(i - -1, i_1_ + -1, (-53).toByte()) + -Class127.method1115(-1 + i, 1 + i_1_, (-90).toByte())) + Class127.method1115(i - -1, i_1_ - -1, (-82).toByte()))
@@ -79,21 +78,18 @@ object Class44 {
         } while (false)
     }
 
-    @JvmStatic
     fun method386(i: Byte) {
         anInt621++
         if (i.toInt() != -106) method386(21.toByte())
         Class15.aClass60_225!!.method587(i + 9)
     }
 
-    @JvmStatic
     fun method387(i: Int) {
         aClass101_624 = null
         aCharArray625 = null
         if (i < 33) aCharArray625 = null
     }
 
-    @JvmStatic
     fun method388(i: Int, i_18_: Int, i_19_: Int, class318_sub1_sub5: Class318_Sub1_Sub5, class318_sub1_sub5_20_: Class318_Sub1_Sub5?) {
         val class357 = Class348_Sub46.method3321(i, i_18_, i_19_)
         if (class357 != null) {

@@ -35,7 +35,6 @@ class Class69 {
             }
         }
 
-        @JvmStatic
         fun method721(class348_sub42: Class348_Sub42?, class348_sub42_1_: Class348_Sub42?, i: Int) {
             do {
                 try {
@@ -54,7 +53,6 @@ class Class69 {
             } while (false)
         }
 
-        @JvmStatic
         fun method722(i: Int) {
             aClass69_1198 = null
             if (i != 13569) aClass69_1199 = null

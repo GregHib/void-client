@@ -308,7 +308,6 @@ class Class348_Sub38 internal constructor(var_ha_Sub3: ha_Sub3?, var_s_Sub3: s_S
         var anInt7009: Int = 0
         var anInt7012: Int = 0
         var aClass114_7015: Class114? = Class114(33, 3)
-        @JvmStatic
         fun method3035(i: Int) {
             aClass114_7015 = null
             if (i != 1) method3035(-34)

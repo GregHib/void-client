@@ -21,7 +21,6 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
         /*synthetic*/
         var aClass2276: Class<*>? = null
 
-        @JvmStatic
         fun method1319(i: Int, bool: Boolean, `is`: ByteArray, i_0_: Int): Int {
             anInt2267++
             if (bool != true) return 63
@@ -31,7 +30,6 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
             return i_1_
         }
 
-        @JvmStatic
         fun method1320() {
             for (i in 0..<Class331.anInt4135) {
                 if (!rStatics.aBooleanArray9718!![i]) {
@@ -137,12 +135,10 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
             return aa_Sub1.aSArray5191!![i_35_]!!.method3986(i_32_, i_33_, 22.toByte())
         }
 
-        @JvmStatic
         fun method1322(i: Byte) {
             if (i.toInt() == -28) anIntArray2272 = null
         }
 
-        @JvmStatic
         fun method1323(i: Int, i_44_: Int) {
             withLock(Class342.aClass60_4254!!) {
                 Class342.aClass60_4254!!.method578(2, i)

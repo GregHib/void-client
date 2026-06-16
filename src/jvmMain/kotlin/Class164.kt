@@ -27,7 +27,6 @@ object Class164 {
     var anInt2174: Int = 0
     var anInt2175: Int = 0
 
-    @JvmStatic
     fun method1277(i: Byte) {
         anInt2175++
         Class351.aClass60_4327!!.method590(i + -62)

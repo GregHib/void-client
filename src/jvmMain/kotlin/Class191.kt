@@ -85,7 +85,6 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
         var anInt2569: Int = 0
         var aClass304_2571: Class304? = Class304(2)
 
-        @JvmStatic
         fun method1428(bool: Boolean) {
             Class342.anImage4249 = null
             anInt2569++
@@ -133,7 +132,6 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
             }
         }
 
-        @JvmStatic
         fun method1431(i: Int) {
             aClass304_2571 = null
             aClass227_2568 = null

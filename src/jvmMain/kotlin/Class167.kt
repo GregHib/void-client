@@ -121,14 +121,12 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
         var anInt2206: Int = 0
         var aClass229_2207: Class229? = Class229()
         var aClass45_2208: Class45? = null
-        @JvmStatic
         fun method1293(i: Int) {
             aClass114_2196 = null
             aClass45_2208 = null
             aClass229_2207 = null
         }
 
-        @JvmStatic
         fun method1294(i: Byte, `is`: ByteArray?): Boolean {
             anInt2199++
             val class348_sub49 = Class348_Sub49(`is`)
@@ -141,7 +139,6 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
             return true
         }
 
-        @JvmStatic
         fun method1295(class318_sub1s: Array<Class318_Sub1?>, i: Int, i_1_: Int) {
             if (i < i_1_) {
                 val i_2_ = (i + i_1_) / 2
@@ -164,7 +161,6 @@ class Class167 internal constructor(var_ha_Sub1: ha_Sub1) : Class167Base {
             }
         }
 
-        @JvmStatic
         fun method1296(bool: Boolean): Boolean {
             if (bool != true) method1297(88.toByte(), null, null, null, null)
             anInt2200++

@@ -11,7 +11,6 @@ import jaggl.OpenGL.Companion.glLinkProgramARB
  * Contains OpenGL shader-linking logic (jaggl) that cannot live in commonMain.
  */
 object Class324Statics {
-    @JvmStatic
     fun method2582(class377: Class377?, class39s: Array<Class39?>?, i: Int): Class89? {
         try {
             Class324.anInt4065++

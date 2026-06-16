@@ -58,13 +58,11 @@ class Class184 {
             if (i > -21) aBoolean2469 = true
         }
 
-        @JvmStatic
         fun method1386(bool: Boolean) {
             anIntArray2471 = null
             if (bool != true) aBoolean2469 = true
         }
 
-        @JvmStatic
         fun method1387(i: Int, class348_sub27: Class348_Sub27) {
             anInt2470++
             if (Class147.aClass357ArrayArrayArray2029 != null) {

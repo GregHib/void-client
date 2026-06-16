@@ -33,7 +33,6 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         var anIntArray8684: IntArray? = null
         var anInt8685: Int = 0
 
-        @JvmStatic
         fun method569(i: Byte, class348_sub49: Class348_Sub49) {
             anInt8675++
             val i_0_ = class348_sub49.readSmart(-128)
@@ -64,7 +63,6 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             Class195.aBoolean5013 = true
         }
 
-        @JvmStatic
         fun method570(i: Int) {
             if (i < 51) method570(-85)
             aClass114_8683 = null
@@ -72,7 +70,6 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             aClass356_8679 = null
         }
 
-        @JvmStatic
         fun method572(string: String, i: Int): String {
             anInt8677++
             if (i != 23034) aClass356_8679 = null
@@ -95,7 +92,6 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             return stringbuffer.toString()
         }
 
-        @JvmStatic
         fun method573(class348_sub42: Class348_Sub42?, class348_sub42_15_: Class348_Sub42?, i: Byte) {
             try {
                 if (class348_sub42!!.aClass348_Sub42_7060 != null) class348_sub42.method3162(true)
@@ -110,7 +106,6 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             }
         }
 
-        @JvmStatic
         fun method574(i: Int, i_16_: Int, i_17_: Int, `is`: IntArray?, bool: Boolean, i_18_: Byte, i_19_: Int, i_20_: Int, i_21_: Int, is_22_: IntArray?, i_23_: Int, class361: Class361?, i_24_: Int, i_25_: Int, i_26_: Int): Int {
             try {
                 for (i_27_ in 0..127) {

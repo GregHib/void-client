@@ -343,18 +343,15 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
             }
         }
 
-        @JvmStatic
         fun method273(class46: Class46, i: Int) {
             anInt288++
             if (class46.anInt774 == 5 && class46.anInt812 != -1) method2383(Class348_Sub8.aHa6654, -2, class46)
         }
 
-        @JvmStatic
         fun method277(i: Byte) {
             if (i >= 77) anIntArray279 = null
         }
 
-        @JvmStatic
         fun method282(i: Int, var_ha: ha?, i_21_: Int, i_22_: Byte, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int) {
             anInt274++
             Class21.aHa326 = var_ha

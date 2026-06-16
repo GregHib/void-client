@@ -101,7 +101,6 @@ class Class188 internal constructor(private val aHa_Sub2_2511: ha_Sub2) {
         var anInt2519: Int = 0
         var anInt2520: Int = 0
 
-        @JvmStatic
         fun method1411(bool: Boolean) {
             if (bool != true) method1416(121)
             aClass351_2512 = null
@@ -119,7 +118,6 @@ class Class188 internal constructor(private val aHa_Sub2_2511: ha_Sub2) {
             class348_sub42_sub15.method3251(-16058)
         }
 
-        @JvmStatic
         fun method1416(i: Int) {
             Class229.class268!!.method2032(5, -101)
             anInt2515++

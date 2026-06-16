@@ -28,7 +28,6 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
         var anInt8656: Int = 0
         var anInt8658: Int = 0
 
-        @JvmStatic
         fun method556(bool: Boolean) {
             anInt8656++
             if (Class51.aClass311_897 != null) Class51.aClass311_897!!.method2319((-75).toByte())
@@ -46,7 +45,6 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
             }
         }
 
-        @JvmStatic
         fun method557(i: Int, i_0_: Byte): Class348_Sub40? {
             val i_1_ = 22 / ((i_0_ - 37) / 63)
             anInt8653++
@@ -269,7 +267,6 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
             return null
         }
 
-        @JvmStatic
         fun method558(i: Int): Class345? {
             val i_7_ = -98 % ((i - -34) / 33)
             anInt8658++
@@ -280,7 +277,6 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
             }
         }
 
-        @JvmStatic
         fun method560(class318_sub4: Class318_Sub4?, i: Int) {
             try {
                 anInt8652++

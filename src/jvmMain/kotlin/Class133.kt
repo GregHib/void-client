@@ -17,7 +17,6 @@ object Class133 {
     /*synthetic*/
     var aClass1920: Class<*>? = null
 
-    @JvmStatic
     fun method1139(i: Int) {
         if (i == 2767) {
             aByteArrayArray1918 = null
@@ -235,7 +234,6 @@ object Class133 {
         } while (false)
     }
 
-    @JvmStatic
     fun method1142(i: Byte) {
         withLock(this) {
         anInt1913++

@@ -19,12 +19,10 @@ class Class251 {
         var anInt3235: Int = 0
         var anInt3236: Int = 0
 
-        @JvmStatic
         fun method1912(i: Int) {
             if (i == 8549) aClass351_3232 = null
         }
 
-        @JvmStatic
         fun method1913(bool: Boolean, i: Int, class46: Class46) {
             anInt3235++
             val i_0_ = -40 % ((-35 - i) / 51)
@@ -41,14 +39,12 @@ class Class251 {
             return i_3_ and 0xff
         }
 
-        @JvmStatic
         fun method1915(i: Byte, i_4_: Int): Boolean {
             if (i.toInt() != 4) return false
             anInt3233++
             return i_4_ != 1 && i_4_ != 7
         }
 
-        @JvmStatic
         fun method1916(i: Int, class46: Class46) {
             anInt3229++
             if (class46.anInt794 == Class58.anInt1064) Class152.aBooleanArray2076!![class46.anInt760] = true

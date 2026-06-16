@@ -153,7 +153,6 @@ class Class202 internal constructor(connection: Class238?, i: Int) : Runnable {
         var anInt2670: Int = 0
         var aClass60_2671: Class60? = Class60(10)
 
-        @JvmStatic
         fun method1469(i: Int) {
             anInt2662++
             Class286.anInt3682 = 0
@@ -170,7 +169,6 @@ class Class202 internal constructor(connection: Class238?, i: Int) : Runnable {
             }
         }
 
-        @JvmStatic
         fun method1471(i: Byte) {
             if (i >= 80) {
                 aClass60_2671 = null

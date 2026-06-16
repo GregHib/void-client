@@ -108,7 +108,6 @@ class Class348_Sub40_Sub24 : Class348_Sub40(0, true) {
         var anInt9328: Int = 0
         var anInt9330: Int = 0
         var anInt9331: Int = 0
-        @JvmStatic
         fun method3115(i: Int) {
             if (i <= -72) aClass114_9324 = null
         }

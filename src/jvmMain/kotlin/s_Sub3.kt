@@ -770,7 +770,6 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
         var anInt8318: Int = 0
         var anInt8319: Int = 0
         var aClass21_8320: Class21? = Class21()
-        @JvmStatic
         fun method4004(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
             anInt8292++
             val i_10_ = Class85.method831(Class38.anInt513, i_4_, Class132.anInt1910, -118)
@@ -793,13 +792,11 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
             }
         }
 
-        @JvmStatic
         fun method4006(i: Int) {
             aClass21_8320 = null
             if (i > -42) aClass21_8320 = null
         }
 
-        @JvmStatic
         fun method4008(i: Byte): Int {
             anInt8289++
             if (i >= -121) aClass21_8320 = null

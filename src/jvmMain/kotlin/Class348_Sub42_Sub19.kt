@@ -67,7 +67,6 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
             }
         }
 
-        @JvmStatic
         fun method3278(i: Int) {
             aClass351_9687 = null
             if (i != 1) anInt9699 = -66

@@ -49,7 +49,6 @@ open class Class59_Sub2(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, f: F
         var anInt5307: Int = 0
         var anInt5310: Int = 0
 
-        @JvmStatic
         fun method564(i: Byte) {
             aStringArray5305 = null
             anIntArray5306 = null

@@ -34,7 +34,6 @@ class Class61 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int) {
         var anInt1106: Int = 0
         var anInt1107: Int = 0
         var anInt1108: Int = 0
-        @JvmStatic
         fun method592(bool: Boolean, i: Byte, bool_0_: Boolean, i_1_: Int, i_2_: Int): Int {
             anInt1105++
             if (i.toInt() != -128) return -20
@@ -54,7 +53,6 @@ class Class61 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int) {
             return i_3_
         }
 
-        @JvmStatic
         fun method593(i: Int, i_6_: Byte, string: String?): Class272? {
             anInt1104++
             var class272: Class272?

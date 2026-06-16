@@ -107,7 +107,6 @@ class Class190 {
             return true
         }
 
-        @JvmStatic
         fun method1425(i: Byte, class42: Class42?, class348_sub21: Class348_Sub21?, i_5_: Int, var_ha: ha?, i_6_: Int): Boolean {
             try {
                 anInt2537++
@@ -211,7 +210,6 @@ class Class190 {
             }
         }
 
-        @JvmStatic
         fun method1426(i: Int) {
             aClass351_2539 = null
             aRectangleArray2554 = null

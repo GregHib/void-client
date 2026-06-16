@@ -10,7 +10,6 @@ object Class71 {
     var aClass138_1213: Class138?
     var aBooleanArray1214: BooleanArray?
 
-    @JvmStatic
     fun method728(bool: Boolean) {
         aClass209_1212 = null
         aClass76_1208 = null
@@ -20,7 +19,6 @@ object Class71 {
         aClass138_1213 = null
     }
 
-    @JvmStatic
     fun method729(i: Int, i_0_: Int, i_1_: Byte, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3, i_2_: Int) {
         if (i_1_ < 60) method728(true)
         anInt1209++

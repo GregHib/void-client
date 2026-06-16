@@ -50,21 +50,18 @@ class Class156 {
             return (0x800 and i) != 0
         }
 
-        @JvmStatic
         fun method1239(i: Int) {
             aStringArray2113 = null
             anIntArray2117 = null
             if (i != 30114) anIntArray2117 = null
         }
 
-        @JvmStatic
         fun method1241(i: Int, i_2_: Int, i_3_: Int): Boolean {
             if (i_3_ > -111) method1239(-81)
             anInt2119++
             return (((i_2_ and 0x18) != 0) or ((0x220 and i_2_) == 544))
         }
 
-        @JvmStatic
         fun method1242(string: String?, throwable: Throwable?, i: Int) {
             anInt2112++
             do {

@@ -10,13 +10,11 @@ object Class11 {
     var aClass231_196: Class231? = null
     var anInt197: Int = 0
 
-    @JvmStatic
     fun method221(i: Int) {
         if (i != 0) anInt197 = -100
         aClass231_196 = null
     }
 
-    @JvmStatic
     fun method222(player: Player?, i: Int, i_0_: Byte, i_1_: Int) {
         anInt195++
         if (i_0_.toInt() != 4) anInt194 = -100

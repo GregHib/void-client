@@ -31,20 +31,17 @@ class Class19 {
             if (i >= -108) aClass114_304 = null
         }
 
-        @JvmStatic
         fun method284(i: Byte) {
             aClass114_315 = null
             aClass114_304 = null
             if (i.toInt() == 51) aClass174Array311 = null
         }
 
-        @JvmStatic
         fun method285(i: Int): Array<Class223?> {
             anInt309++
             return (arrayOf<Class223?>(Class219.aClass223_2868, Class348_Sub49.aClass223_7175, Class313.aClass223_3934, Class185.aClass223_2489, Class101_Sub1Statics.aClass223_5689, Class348_Sub40_Sub21.aClass223_9274, Class28.aClass223_4997, Class174.aClass223_2307, Class149.aClass223_2045, Class187.aClass223_2507))
         }
 
-        @JvmStatic
         fun method286(i: Byte, class297: Class297): Array<Class57?> {
             anInt307++
             if (!class297.method2247(-4)) return arrayOfNulls<Class57>(0)

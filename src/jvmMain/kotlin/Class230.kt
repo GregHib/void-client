@@ -324,7 +324,6 @@ class Class230 internal constructor(string: String?, i: Int) {
             } while (false)
         }
 
-        @JvmStatic
         fun method1635(i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?) {
             try {
                 anInt2983++

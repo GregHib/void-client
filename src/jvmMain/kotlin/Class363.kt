@@ -42,7 +42,6 @@ object Class363 {
         anInt4464++
     }
 
-    @JvmStatic
     fun method3516(i: Int) {
         aString4461 = null
         if (i <= 123) anIntArray4463 = null

@@ -16,7 +16,6 @@ class Class348_Sub50 : Class348 {
         var anInt7213: Int = 0
         var anInt7214: Int = 0
 
-        @JvmStatic
         fun method3418(i: Int) {
             if (i >= 108) aByteArrayArray7212 = null
         }

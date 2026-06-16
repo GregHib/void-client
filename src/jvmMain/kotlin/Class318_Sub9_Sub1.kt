@@ -56,7 +56,6 @@ class Class318_Sub9_Sub1 internal constructor(var aString8783: String?, i: Int) 
             return Class228.aClass57Array2974
         }
 
-        @JvmStatic
         fun method2516(i: Int, i_7_: Byte, i_8_: Int): Class348_Sub42_Sub15 {
             anInt8788++
             var class348_sub42_sub15 = (Class100.aClass356_1585!!.method3480((i_8_.toLong() shl 32 or i.toLong()), i_7_.toInt() xor 0x171e.inv()) as Class348_Sub42_Sub15?)
@@ -68,7 +67,6 @@ class Class318_Sub9_Sub1 internal constructor(var aString8783: String?, i: Int) 
             return class348_sub42_sub15
         }
 
-        @JvmStatic
         fun method2517(i: Byte) {
             if (i.toInt() != 4) anIntArray8785 = null
             anIntArray8785 = null

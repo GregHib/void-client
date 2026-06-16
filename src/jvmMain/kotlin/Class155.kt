@@ -9,12 +9,10 @@ object Class155 {
     var aClass351_2109: Class351? = Class351(19, -1)
     var aBoolean2110: Boolean = false
 
-    @JvmStatic
     fun method1236(i: Byte) {
         aClass351_2109 = null
     }
 
-    @JvmStatic
     fun method1237(i: Byte, class46: Class46) {
         anInt2108++
         if (i < 69) Class155.method1236((-52).toByte())

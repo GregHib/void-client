@@ -62,13 +62,11 @@ class Class239_Sub6 : Class239 {
         var anIntArray5902: IntArray? = IntArray(128)
         var anInt5903: Int = 0
 
-        @JvmStatic
         fun method1745(string: String, i: Int): Int {
             anInt5895++
             return string.length + 1
         }
 
-        @JvmStatic
         fun method1746(i: Int) {
             anIntArray5902 = null
             if (i != -15628) aClass355_5900 = null

@@ -139,7 +139,6 @@ class Class348_Sub49_Sub2 internal constructor(i: Int) : Class348_Sub49(i) {
             return `is`
         }
 
-        @JvmStatic
         fun method3414(i: Int) {
             aShortArray9768 = null
             if (i == 21515) anIntArray9757 = null

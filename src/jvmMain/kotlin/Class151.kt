@@ -21,7 +21,6 @@ class Class151 {
         var anInt2065: Int = 0
         var anInt2066: Int = 0
         var aClass114_2068: Class114? = Class114(68, 6)
-        @JvmStatic
         fun method1209(i: Int) {
             val i_0_ = 95 / ((-21 - i) / 45)
             anIntArray2062 = null
@@ -34,7 +33,6 @@ class Class151 {
             return i_1_ == 0 || i_1_ == 2
         }
 
-        @JvmStatic
         fun method1211(i: Int, class105: Class105?, i_2_: Int, class46: Class46?, var_aa: aa?, i_3_: Int, i_4_: Int, i_5_: Int) {
             try {
                 anInt2064++
@@ -74,7 +72,6 @@ class Class151 {
             Class267.anInt3428 = i_13_
         }
 
-        @JvmStatic
         fun method1213(string: String?, string_16_: String?, i: Int) {
             try {
                 if (i > -48) aClass114_2068 = null

@@ -24,7 +24,6 @@ class Class369_Sub1(class221: Class221?, class341: Class341?, i: Int, i_0_: Int,
         var anInt8581: Int = 0
         var anInt8583: Int = -1
 
-        @JvmStatic
         fun method3570(bool: Boolean) {
             if (Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2084(-6858)
             anInt8579++

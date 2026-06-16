@@ -25,7 +25,6 @@ class za_Sub2(i: Int) : za() {
         var aClass138_9781: Class138?
         var aBoolean9783: Boolean = false
 
-        @JvmStatic
         fun method3442(i: Int, `is`: ByteArray?, class377: Class377?, i_0_: Int): Class193? {
             try {
                 anInt9779++
@@ -46,7 +45,6 @@ class za_Sub2(i: Int) : za() {
             }
         }
 
-        @JvmStatic
         fun method3443(bool: Boolean, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
             anInt9778++
             if ((class318_sub1_sub3_sub3.anIntArray10242) != null || (class318_sub1_sub3_sub3.anIntArray10296) != null) {
@@ -97,7 +95,6 @@ class za_Sub2(i: Int) : za() {
             }
         }
 
-        @JvmStatic
         fun method3444(i: Int) {
             if (i <= -85) aClass138_9781 = null
         }

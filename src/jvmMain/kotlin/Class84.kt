@@ -84,7 +84,6 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
         var anInt1457: Int = 0
         var anInt1458: Int = 0
         var anInt1459: Int = 0
-        @JvmStatic
         fun method817(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Class318_Sub1_Sub3_Sub3? {
             anInt1456++
             val class357 = Class147.aClass357ArrayArrayArray2029!![i_1_]!![i_0_]!![i_2_]
@@ -128,7 +127,6 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
             return i_13_
         }
 
-        @JvmStatic
         fun method821(i: Int) {
             Class332.aClass60_4139!!.method590(0)
             val i_16_ = -67 / ((i - 39) / 33)
@@ -144,13 +142,11 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
             }
         }
 
-        @JvmStatic
         fun method825(i: Int) {
             anIntArray1450 = null
             if (i > -73) anIntArray1450 = null
         }
 
-        @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_ha: ha) {
             if ((Class174.aClass105_2309 == null || Class348_Sub42_Sub15.aClass105_9658 == null || Class348_Sub42_Sub15.aClass105_9659 == null) && Class21.aClass45_322!!.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.aClass45_322!!.method421(false, Class313.anInt3937) && Class21.aClass45_322!!.method421(false, Class79.Companion.anInt1387)) {
                 val class207 = Class207Statics.method1521(Class21.aClass45_322!!, Class313.anInt3937, 0)

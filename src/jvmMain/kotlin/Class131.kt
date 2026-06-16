@@ -7,7 +7,6 @@ object Class131 {
     var aCharArray1903: CharArray? = charArrayOf('[', ']', '#')
     var aClass351_1904: Class351?
 
-    @JvmStatic
     fun method1136(i: Byte) {
         aCharArray1903 = null
         if (i.toInt() == -98) {

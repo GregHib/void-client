@@ -4,7 +4,6 @@ import java.awt.Canvas
  * JVM-only statics extracted from s's companion.
  */
 object sStatics {
-    @JvmStatic
     fun method3980(i: Int, canvas: Canvas) {
         if (i > 85) {
             s.anInt4586++

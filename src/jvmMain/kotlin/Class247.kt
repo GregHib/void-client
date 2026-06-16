@@ -10,7 +10,6 @@ object Class247 {
     var aClass45_3183: Class45? = null
     var anInt3184: Int = 0
 
-    @JvmStatic
     fun method1889(i: Int) {
         if (i != 255) method1889(-18)
         aClass21_3181 = null

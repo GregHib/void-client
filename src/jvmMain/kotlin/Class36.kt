@@ -13,7 +13,6 @@ object Class36 {
         anInt488++
     }
 
-    @JvmStatic
     fun method355(i: Int) {
         anIntArray487 = null
         if (i != 4297) anInt489 = -9

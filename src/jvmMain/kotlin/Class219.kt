@@ -88,7 +88,6 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
             return (i_0_ and 0xc580) != 0
         }
 
-        @JvmStatic
         fun method1600(bool: Boolean, i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
             anInt2867++
             val class225 = class318_sub1_sub3_sub3.method2422(72.toByte())
@@ -253,7 +252,6 @@ class Class219 internal constructor(class230: Class230?, i: Int, class45: Class4
             }
         }
 
-        @JvmStatic
         fun method1604(i: Int) {
             aClass196_2864 = null
             aClass223_2868 = null

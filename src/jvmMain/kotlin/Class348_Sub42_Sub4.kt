@@ -61,7 +61,6 @@ class Class348_Sub42_Sub4 internal constructor(var aShortArrayArray9518: Array<S
             }
         }
 
-        @JvmStatic
         fun method3181(i: Byte) {
             if (i.toInt() != 2) anInt9511 = 63
             anIntArray9519 = null

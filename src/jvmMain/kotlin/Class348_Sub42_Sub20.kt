@@ -42,7 +42,6 @@ class Class348_Sub42_Sub20 internal constructor(class342: Class342?, class318_su
         var anIntArray9714: IntArray? = intArrayOf(1, 2, 4, 8)
         var anInt9715: Int = 0
 
-        @JvmStatic
         fun method3280(i: Int) {
             aClass262_9711 = null
             anIntArray9714 = null

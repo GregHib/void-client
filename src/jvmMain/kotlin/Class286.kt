@@ -18,12 +18,10 @@ abstract class Class286 internal constructor(var aHa_Sub2_3684: ha_Sub2) {
         var anInt3681: Int = 0
         var anInt3682: Int = 0
         var aClass348_Sub2_3683: Class348_Sub2? = null
-        @JvmStatic
         fun method2135(i: Int) {
             if (i == 0) aClass348_Sub2_3683 = null
         }
 
-        @JvmStatic
         fun method2138(i: Int): Boolean {
             anInt3681++
             val class348_sub48 = Class348_Sub35.aClass262_6978!!.method1995(4) as Class348_Sub48?

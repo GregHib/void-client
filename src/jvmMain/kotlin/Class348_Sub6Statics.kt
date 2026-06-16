@@ -36,7 +36,6 @@ actual object Class348_Sub6Statics {
     actual fun method2770(i: Int) = Class348_Sub6.method2770(i)
 
     /** JVM-only: loads a native library from the File path stored in [Class275.aHashtable3548]. */
-    @JvmStatic
     fun method2769(varClass: Class<*>?, i: Byte, string: String?): Boolean =
         Class348_Sub6.method2769(varClass, i, string)
 }

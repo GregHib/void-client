@@ -8,7 +8,6 @@ object Class16 {
     var aClass45_233: Class45? = null
     var anInt234: Int = 0
 
-    @JvmStatic
     fun method258(i: Int, i_0_: Int) {
         val class357 = Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_]
         for (i_1_ in 0..2) {
@@ -35,14 +34,12 @@ object Class16 {
         Class147.aClass357ArrayArrayArray2029!![3]!![i]!![i_0_] = null
     }
 
-    @JvmStatic
     fun method259(i: Int, i_3_: Int, bool: Boolean, string: String?, i_4_: Int) {
         anInt230++
         Class178.method1356(false, null, i, i_4_, bool, string, true)
         val i_5_ = -1 / ((i_3_ - -33) / 63)
     }
 
-    @JvmStatic
     fun method260(bool: Boolean): Int {
         if (bool != false) aClass45_233 = null
         anInt232++
@@ -50,14 +47,12 @@ object Class16 {
         return 0
     }
 
-    @JvmStatic
     fun method261(i: Byte) {
         aClass45_233 = null
         aClass148_231 = null
         if (i.toInt() != -120) method262(-23)
     }
 
-    @JvmStatic
     fun method262(i: Int) {
         anInt234++
         if (i != 0) aClass148_231 = null

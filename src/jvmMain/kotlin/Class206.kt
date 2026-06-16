@@ -192,12 +192,10 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
         var anInt4892: Int = 0
         var anInt4893: Int = 0
 
-        @JvmStatic
         fun method1499(i: Int) {
             if (i < -124) aClass209_4874 = null
         }
 
-        @JvmStatic
         fun method1501(i: Int) {
             val i_3_ = 56 / ((i - -56) / 42)
             var i_4_ = 0

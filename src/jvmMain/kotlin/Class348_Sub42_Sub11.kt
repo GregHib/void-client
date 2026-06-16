@@ -103,7 +103,6 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
         var anInt9589: Int = 0
         var aClass351_9590: Class351? = Class351(83, -1)
         var anInt9591: Int = -1
-        @JvmStatic
         fun method3220(i: Byte) {
             if (i < 96) anInt9591 = 45
             aClass351_9590 = null

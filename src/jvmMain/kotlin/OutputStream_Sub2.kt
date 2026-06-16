@@ -18,7 +18,6 @@ class OutputStream_Sub2 : OutputStream(), CommonOutputStream {
         var anInt107: Int = 0
         var aLong108: Long = (Math.random() * 9.999999999E9).toLong()
 
-        @JvmStatic
         fun method135(i: Byte, `is`: ByteArray?, i_0_: Int): ByteArray {
             anInt103++
             if (i < 101) method139(34)
@@ -27,7 +26,6 @@ class OutputStream_Sub2 : OutputStream(), CommonOutputStream {
             return is_1_
         }
 
-        @JvmStatic
         fun method136(i: Int, bool: Boolean, bool_2_: Boolean): Class318_Sub4 {
             anInt105++
             withLock(Class318Statics.aClass243Array3974!!) {
@@ -51,14 +49,12 @@ class OutputStream_Sub2 : OutputStream(), CommonOutputStream {
             }
         }
 
-        @JvmStatic
         fun method137(i: Int, i_4_: Int, i_5_: Int): Boolean {
             anInt102++
             val i_6_ = -114 / ((i_4_ - 36) / 55)
             return ((0x70000 and i_5_) != 0) or Class348_Sub40_Sub9.method3073(i, i_5_, 50.toByte()) || Class264.method2015(i_5_, i, 7)
         }
 
-        @JvmStatic
         fun method138(class348_sub42_sub12: Class348_Sub42_Sub12, bool: Boolean): Int {
             anInt107++
             var string = Class316.method2367((-126).toByte(), class348_sub42_sub12)
@@ -89,7 +85,6 @@ class OutputStream_Sub2 : OutputStream(), CommonOutputStream {
             return i
         }
 
-        @JvmStatic
         fun method139(i: Int) {
             if (i > 53) aClass105_106 = null
         }

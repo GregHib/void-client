@@ -150,14 +150,12 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         var anInt1080: Int = 0
         var aDouble1083: Double = 0.0
 
-        @JvmStatic
         fun method544(string: String?, bool: Boolean, i: Int) {
             anInt1075++
             Class286_Sub2.method2144("", i, (-96).toByte(), 0, string, "", "")
             if (bool != false) method547(null, -103)
         }
 
-        @JvmStatic
         fun method545(i: Int, i_49_: Int) {
             Class351.aClass60_4327!!.method578(2, i)
             anInt1077++
@@ -167,7 +165,6 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             Class348_Sub40_Sub9.aClass60_9171!!.method578(i_49_ xor 0x2.inv(), i)
         }
 
-        @JvmStatic
         fun method547(string: String?, i: Int): Int {
             anInt1076++
             if (!Class59_Sub1.aClass297_5297!!.aBoolean3777) return -1
@@ -218,13 +215,11 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             return -1
         }
 
-        @JvmStatic
         fun method548(i: Int) {
             aClass114_1068 = null
             if (i != 10) aClass114_1068 = null
         }
 
-        @JvmStatic
         fun method549(i: Byte, class348_sub21: Class348_Sub21?, var_ha: ha, class42: Class42?) {
             try {
                 anInt1080++

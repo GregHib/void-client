@@ -14,7 +14,6 @@ class Class2 {
         var anInt121: Int = 0
         var anInt122: Int = 0
 
-        @JvmStatic
         fun method170(bool: Boolean): Class110_Sub1? {
             if (bool != true) method174(-106, -36)
             anInt122++
@@ -22,7 +21,6 @@ class Class2 {
             return null
         }
 
-        @JvmStatic
         fun method171(i: Byte) {
             aClass141_117 = null
             if (i.toInt() != 72) method173(39, null, null)
@@ -34,7 +32,6 @@ class Class2 {
             Class59_Sub2_Sub1.aClass45_8670 = class45
         }
 
-        @JvmStatic
         fun method173(i: Int, class46: Class46?, class46_0_: Class46?) {
             try {
                 anInt120++
@@ -53,7 +50,6 @@ class Class2 {
             }
         }
 
-        @JvmStatic
         fun method174(i: Int, i_1_: Int) {
             if (i_1_ != -30742) aClass141_117 = null
             anInt121++

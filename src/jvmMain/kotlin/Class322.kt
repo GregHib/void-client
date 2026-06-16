@@ -117,7 +117,6 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             Class83.anInt1447 = Class312.anInt3931
         }
 
-        @JvmStatic
         fun method2555(i: Byte) {
             if (i.toInt() != 28) method2554(21.toByte())
             anIntArray4031 = null

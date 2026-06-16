@@ -141,7 +141,6 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
         var aBoolean9038: Boolean = false
         var anInt9039: Int = 0
 
-        @JvmStatic
         fun method2974(i: Int) {
             aClass351_9034 = null
             if (i != 1) aClass229_9011 = null

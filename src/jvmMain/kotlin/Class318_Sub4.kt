@@ -64,7 +64,6 @@ class Class318_Sub4 : Class318() {
             }
         }
 
-        @JvmStatic
         fun method2502(`is`: ByteArray?, i: Int): Class348_Sub42_Sub19? {
             if (i >= -76) return null
             anInt6413++
@@ -110,7 +109,6 @@ class Class318_Sub4 : Class318() {
             return class348_sub42_sub19
         }
 
-        @JvmStatic
         fun method2503(i: Int, i_21_: Int, i_22_: Int, `is`: ByteArray, i_23_: Int, i_24_: Int, i_25_: Int): Boolean {
             var i_21_ = i_21_
             anInt6408++

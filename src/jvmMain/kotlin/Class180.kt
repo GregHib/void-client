@@ -3,7 +3,6 @@ object Class180 {
     var aRectangleArray2371: Array<Rect?>? = arrayOfNulls<Rect>(100)
     var aClass196_2372: Class196?
 
-    @JvmStatic
     fun method1366(i: Byte) {
         aClass196_2372 = null
         anIntArray2370 = null

@@ -77,7 +77,6 @@ class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class
             }
         }
 
-        @JvmStatic
         fun method3473(i: Int) {
             if (i != 12949) anInt4372 = -30
             anObject4366 = null

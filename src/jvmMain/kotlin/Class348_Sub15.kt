@@ -20,7 +20,6 @@ class Class348_Sub15 internal constructor(var anInt6773: Int, var aClass55_Sub1_
         var anIntArrayArray6780: Array<IntArray?>? =
             arrayOf<IntArray?>(intArrayOf(12, 12, 12, 12), intArrayOf(12, 12, 12, 12, 12, 5), intArrayOf(5, 5, 1, 1), intArrayOf(5, 1, 1, 5), intArrayOf(5, 5, 5), intArrayOf(5, 5, 5), intArrayOf(12, 12, 12, 12, 12, 12), intArrayOf(1, 12, 12, 12, 12, 12), intArrayOf(1, 1, 7, 1), intArrayOf(8, 9, 9, 8, 8, 3, 1, 9), intArrayOf(8, 8, 9, 8, 9, 9), intArrayOf(10, 10, 11, 11, 11, 7, 3, 7), intArrayOf(12, 12, 12, 12))
 
-        @JvmStatic
         fun method2810(i: Byte) {
             anIntArray6770 = null
             anIntArray6775 = null

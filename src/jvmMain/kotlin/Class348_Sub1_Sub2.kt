@@ -24,14 +24,12 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
         var aByteArrayArray8816: Array<ByteArray?>? = null
         var aClass114_8817: Class114? = Class114(83, 2)
 
-        @JvmStatic
         fun method2729(i: Int, i_3_: Int): Int {
             anInt8813++
             if (i_3_ != 16) return 23
             return 0xff and i
         }
 
-        @JvmStatic
         fun method2730(i: Int, i_4_: Int, `is`: ByteArray, i_5_: Int): ByteArray {
             anInt8811++
             val is_6_: ByteArray?
@@ -51,7 +49,6 @@ class Class348_Sub1_Sub2 internal constructor(i: Int, i_9_: Int, i_10_: Int, i_1
             return is_8_
         }
 
-        @JvmStatic
         fun method2731(i: Byte) {
             aByteArrayArray8816 = null
             aClass262_8810 = null

@@ -23,7 +23,6 @@ object Class220 {
         if (i != 26188) method1606(-76, 98, 86)
     }
 
-    @JvmStatic
     fun method1606(i: Int, i_1_: Int, i_2_: Int): Byte {
         anInt2876++
         if (i_2_ != 9) return 0.toByte()

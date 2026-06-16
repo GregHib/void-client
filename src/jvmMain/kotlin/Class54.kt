@@ -40,14 +40,12 @@ class Class54 {
         var anInt972: Int = 0
         var aStringArray974: Array<String?>? = null
         var anInt975: Int = 0
-        @JvmStatic
         fun method500(i: Int, i_0_: Int): Int {
             anInt975++
             if (i != 7) return -107
             return i_0_ ushr 8
         }
 
-        @JvmStatic
         fun method501(i: Int) {
             aStringArray974 = null
             if (i != 1) method501(-15)

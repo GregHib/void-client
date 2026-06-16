@@ -88,7 +88,6 @@ class Class348_Sub40_Sub31 : Class348_Sub40(1, false) {
         var anInt9412: Int = 0
         var anInt9413: Int = 0
 
-        @JvmStatic
         fun method3131(i: Byte, string: String?): Boolean {
             if (i.toInt() != 50) Companion.method3131((-33).toByte(), null)
             anInt9404++

@@ -25,7 +25,6 @@ class Class10 internal constructor(var aByte180: Byte, var anInt185: Int, var an
         var anIntArray187: IntArray? = intArrayOf(-1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048)
         var anInt190: Int = 0
         var aClass87_191: Class87? = null
-        @JvmStatic
         fun method217(i: Byte): String? {
             anInt175++
             if (Class5_Sub1.aBoolean8335 || Class316.aClass348_Sub42_Sub12_3963 == null) return ""
@@ -33,7 +32,6 @@ class Class10 internal constructor(var aByte180: Byte, var anInt185: Int, var an
             return (Class316.aClass348_Sub42_Sub12_3963!!.aString9593)
         }
 
-        @JvmStatic
         fun method218(i: Byte) {
             if (i < 101) Companion.method218((-85).toByte())
             anIntArray187 = null
@@ -43,7 +41,6 @@ class Class10 internal constructor(var aByte180: Byte, var anInt185: Int, var an
             anIntArrayArray174 = null
         }
 
-        @JvmStatic
         fun method219(i: Int, bool: Boolean, i_0_: Int): Boolean {
             if (bool != false) return false
             anInt190++

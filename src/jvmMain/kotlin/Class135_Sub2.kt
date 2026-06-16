@@ -61,7 +61,6 @@ class Class135_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
         private var aCharArray4845: CharArray? = CharArray(64)
         var aClass348_Sub42_Sub12_4846: Class348_Sub42_Sub12? = null
 
-        @JvmStatic
         fun method1155(i: Byte) {
             aClass251_4835 = null
             aClass161_4839 = null
@@ -71,7 +70,6 @@ class Class135_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
             aClass348_Sub42_Sub12_4846 = null
         }
 
-        @JvmStatic
         fun method1156(i: Int, i_3_: Int, `is`: IntArray, i_4_: Int, i_5_: Int) {
             var i_3_ = i_3_
             var i_4_ = i_4_
@@ -93,7 +91,6 @@ class Class135_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
             }
         }
 
-        @JvmStatic
         fun method1157(i: Int, i_7_: Byte) {
             if (i_7_ < -77) {
                 Class239_Sub12.anInt5969 = 2

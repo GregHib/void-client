@@ -13,7 +13,6 @@ class Class74 internal constructor(i: Int, i_0_: Int) {
         var anInt1235: Int = 0
         var aBoolean1236: Boolean = false
 
-        @JvmStatic
         fun method744(i: Byte) {
             aClass114_1234 = null
             anIntArray1233 = null

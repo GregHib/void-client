@@ -250,13 +250,11 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_ha: ha?, class51: Class51
         var anInt10001: Int = 0
         var anInt10002: Int = 0
 
-        @JvmStatic
         fun method2400(i: Byte) {
             if (i.toInt() != 3) anIntArray9981 = null
             anIntArray9981 = null
         }
 
-        @JvmStatic
         fun method2402(i: Int, i_6_: Byte): Boolean {
             anInt9994++
             if (i_6_ >= -52) return true

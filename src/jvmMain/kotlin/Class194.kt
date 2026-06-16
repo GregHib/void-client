@@ -82,7 +82,6 @@ class Class194 internal constructor(class230: Class230?, i: Int, class45: Class4
         var aClass279_2596: Class279? = null
         var anInt2598: Int = 0
 
-        @JvmStatic
         fun method1441(i: Byte) {
             aClass279_2596 = null
             if (i.toInt() != 18) aClass279_2596 = null

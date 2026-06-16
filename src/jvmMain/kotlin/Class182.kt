@@ -19,7 +19,6 @@ class Class182 {
         var anInt2450: Int = 0
         var anInt2452: Int = 0
         var anInt2453: Int = 0
-        @JvmStatic
         fun method1372(i: Int) {
             RuntimeException_Sub1.anInt4596 = i
             Class239_Sub12.anInt5969 = 1
@@ -36,7 +35,6 @@ class Class182 {
             Class132.method1138(method313(l, -100), true, "", (-115).toByte())
         }
 
-        @JvmStatic
         fun method1373(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) {
             anInt2450++
             if (Class320.method2547(i, 84.toByte()) && i_5_ == -1391) {
@@ -51,7 +49,6 @@ class Class182 {
             return Class50_Sub4(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
-        @JvmStatic
         fun method1375(i: Int) {
             if (i != 5616) aClass346_2449 = null
             aClass346_2449 = null

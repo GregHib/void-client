@@ -72,7 +72,6 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
         var aClass114_3427: Class114? = Class114(93, -2)
         var anInt3428: Int = -1
 
-        @JvmStatic
         fun method2026(i: Int) {
             aClass267_3421 = null
             aClass267_3413 = null
@@ -106,7 +105,6 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
             }
         }
 
-        @JvmStatic
         fun method2028(i: Int, class51: Class51?, i_0_: Int, var_ha: ha?, i_1_: Int, i_2_: Int) {
             var i_1_ = i_1_
             try {
@@ -141,7 +139,6 @@ class Class267 private constructor(private val aClass69_3392: Class69?) {
             }
         }
 
-        @JvmStatic
         fun method2029(i: Int): Array<Class267?>? {
             if (i <= 99) return null
             anInt3393++

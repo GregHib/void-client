@@ -57,7 +57,6 @@ class Class239_Sub16 : Class239 {
         var anInt6016: Int = 0
         var anInt6017: Int = 0
 
-        @JvmStatic
         fun method1788(i: Byte, l: Long): String? {
             var l = l
             try {
@@ -91,7 +90,6 @@ class Class239_Sub16 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1791(i: Int, `is`: IntArray?, i_8_: Int, player: Player?) {
             do {
                 try {
@@ -142,7 +140,6 @@ class Class239_Sub16 : Class239 {
             } while (false)
         }
 
-        @JvmStatic
         fun method1792(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Byte, i_16_: Int) {
             anInt6013++
             val i_17_ = Class85.method831(Class38.anInt513, i, Class132.anInt1910, -90)

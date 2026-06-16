@@ -8,14 +8,12 @@ import java.awt.Canvas
 object Class305Statics {
     var aCanvas3869: Canvas? = null
 
-    @JvmStatic
     fun method2294(i: Int) {
         aCanvas3869 = null
         Class305.aDisplayTarget3869 = null
         if (i <= 94) method2296(-107)
     }
 
-    @JvmStatic
     fun method2296(i: Int) {
         Class305.anInt3868++
         if (i < -46) {

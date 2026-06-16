@@ -29,7 +29,6 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
         var aClass112_520: Class112? = null
         var aClass323_521: Class323? = null
 
-        @JvmStatic
         fun method366(objects: Array<Any?>?, i: Byte, `is`: IntArray?) {
             do {
                 try {
@@ -44,7 +43,6 @@ class Class39 internal constructor(class377: Class377?, l: Long, i: Int) {
             } while (false)
         }
 
-        @JvmStatic
         fun method367(i: Int) {
             aClass45_518 = null
             aClass74_515 = null

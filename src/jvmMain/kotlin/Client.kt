@@ -1962,7 +1962,6 @@ class Client : Applet_Sub1() {
             method347(Class268.anIntArray3432, Class258_Sub4.anIntArray8557, 0, -22222, Class45.anInt669 - 1)
         }
 
-        @JvmStatic
         fun main(strings: Array<String>) {
             try {
                 try {

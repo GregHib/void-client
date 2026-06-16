@@ -164,7 +164,6 @@ class Class286_Sub1 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
         var aClass74_6201: Class74? = Class74(9, 19)
         var anInt6202: Int = 0
 
-        @JvmStatic
         fun method2142(i: Byte) {
             aStringArray6200 = null
             val i_1_ = 19 % ((i - -67) / 59)

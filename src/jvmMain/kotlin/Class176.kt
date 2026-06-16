@@ -8,7 +8,6 @@ object Class176 {
     var aClass348_Sub47Array2334: Array<Class348_Sub47?>? = arrayOfNulls<Class348_Sub47>(300)
     var aClass114_2335: Class114?
 
-    @JvmStatic
     fun method1351(i: Int) {
         aClass114_2331 = null
         aClass348_Sub26_2332 = null

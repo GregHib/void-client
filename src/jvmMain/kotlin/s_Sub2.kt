@@ -772,14 +772,12 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         var anIntArray8269: IntArray?
         var anInt8270: Int = -1
         var anInt8271: Int = 0
-        @JvmStatic
         fun method3999(i: Int, i_147_: Int, i_148_: Int): Boolean {
             if (i_148_ != 458752) anInt8237 = -28
             anInt8238++
             return ((0x70000 and i_147_) != 0) or Class223Statics.method1613(false, i, i_147_) || Class288.method2187(i_147_, -121, i)
         }
 
-        @JvmStatic
         fun method4000(i: Int) {
             if (i != 8448) aString8265 = null
             anIntArray8269 = null
@@ -787,7 +785,6 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
             aClass107_8241 = null
         }
 
-        @JvmStatic
         fun method4001(class318_sub1: Class318_Sub1) {
             Class9.aHa171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505)
             class318_sub1.anInt6386 = Class348_Sub42_Sub3.anIntArray9505!![0]
@@ -795,7 +792,6 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
             class318_sub1.anInt6389 = Class348_Sub42_Sub3.anIntArray9505!![2]
         }
 
-        @JvmStatic
         fun method4002(class348_sub49: Class348_Sub49, i: Byte) {
             anInt8248++
             val `is` = ByteArray(24)

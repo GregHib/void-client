@@ -61,7 +61,6 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
         private var aShortArray9423: ShortArray? = shortArrayOf(6798, 8741, 25238, 4626, 4550)
         var aShortArrayArray9424: Array<ShortArray?>? = arrayOf<ShortArray?>(aShortArray9423, aShortArray9421, aShortArray9422)
 
-        @JvmStatic
         fun method3132(`is`: IntArray?, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, var_ha_Sub2: ha_Sub2?, bool: Boolean, i_3_: Byte): Class258_Sub3_Sub1 {
             try {
                 if (i_3_.toInt() != 12) method3134(9)
@@ -76,7 +75,6 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
             }
         }
 
-        @JvmStatic
         fun method3133(i: Byte) {
             aClass273_9415 = null
             if (i.toInt() != -109) aClass273_9415 = null
@@ -86,7 +84,6 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
             aShortArray9422 = null
         }
 
-        @JvmStatic
         fun method3134(i: Int) {
             anInt9419++
             if ((Class286_Sub5.anInt6248.inv()) <= i) {
@@ -124,7 +121,6 @@ class Class348_Sub40_Sub32 : Class348_Sub40(1, false) {
             }
         }
 
-        @JvmStatic
         fun method3135(i: Int, i_7_: Int, i_8_: Int): Class318_Sub1_Sub5? {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_7_]!![i_8_]
             if (class357 == null) return null

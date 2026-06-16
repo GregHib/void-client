@@ -113,14 +113,12 @@ class Class348_Sub40_Sub1 : Class348_Sub40(1, false) {
         var aClass351_9089: Class351? = Class351(2, 6)
         var aClass207_9090: Class207? = null
         var anInt9093: Int = 0
-        @JvmStatic
         fun method3050(bool: Boolean) {
             aClass351_9089 = null
             aClass207_9090 = null
             if (bool != true) method3050(true)
         }
 
-        @JvmStatic
         fun method3051(i: Int, i_3_: Int): Int {
             if (i_3_ != 4096) return -68
             anInt9085++

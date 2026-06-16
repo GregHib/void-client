@@ -48,7 +48,6 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
         var anInt6628: Int = 0
         var anInt6629: Int = 0
 
-        @JvmStatic
         fun method2762(i: Int) {
             aByteArray6624 = null
             aClass105_6627 = null

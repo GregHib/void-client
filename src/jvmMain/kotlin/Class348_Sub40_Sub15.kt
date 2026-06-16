@@ -40,13 +40,11 @@ class Class348_Sub40_Sub15 internal constructor(i: Int) : Class348_Sub40(0, true
             val i_4_ = 59 / ((i_2_ - -7) / 49)
         }
 
-        @JvmStatic
         fun method3085(i: Int) {
             aClass114_9216 = null
             if (i != 0) aClass114_9216 = null
         }
 
-        @JvmStatic
         fun method3086(i: Int, class348_sub16_sub3: Class348_Sub16_Sub3?, i_5_: Int, class45: Class45?, bool: Boolean, i_6_: Int, i_7_: Int) {
             try {
                 anInt9219++

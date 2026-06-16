@@ -104,7 +104,6 @@ class Class195 internal constructor(class287: Class287?, class106: Class106?) : 
         var anInt5018: Int = 0
         var anInt5019: Int
 
-        @JvmStatic
         fun method1447(i: Int) {
             if (i == 76) {
                 anIntArray5007 = null
@@ -118,7 +117,6 @@ class Class195 internal constructor(class287: Class287?, class106: Class106?) : 
             if (i <= -55) Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144 = Class348_Sub42_Sub12((Class274.aClass274_3487!!.method2063(Class348_Sub33.anInt6967, 544)), "", Class362.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true)
         }
 
-        @JvmStatic
         fun method1449(i: Int, i_2_: Int, i_3_: Int): Class148? {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_2_]!![i_3_]
             if (class357 == null) return null

@@ -48,7 +48,6 @@ class Class239_Sub13 : Class239 {
         var anInt5980: Int = 0
         var anInt5981: Int = 0
 
-        @JvmStatic
         fun method1777(i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?) {
             if (i == -3) {
                 if (class318_sub1_sub3_sub3 is Npc) {

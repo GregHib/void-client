@@ -203,7 +203,6 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
             if (i > -20) aBoolean9746 = false
         }
 
-        @JvmStatic
         fun method3403(i: Int) {
             if (i >= 58) {
                 aClass138_9748 = null

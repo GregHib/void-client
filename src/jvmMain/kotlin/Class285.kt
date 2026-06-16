@@ -161,7 +161,6 @@ abstract class Class285 internal constructor(var aClass377_4759: Class377, priva
             return fs[1] * f + f_2_ * fs[0] + fs[2] * f_0_
         }
 
-        @JvmStatic
         fun method2124(i: Int) {
             aClass348_Sub16_Sub3_4743 = null
             aClass323_4754 = null

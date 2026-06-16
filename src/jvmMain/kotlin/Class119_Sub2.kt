@@ -52,7 +52,6 @@ class Class119_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
             return is_1_
         }
 
-        @JvmStatic
         fun method1079(i: Int, i_2_: Int, i_3_: Int, i_4_: Int): Int {
             var i_2_ = i_2_
             anInt4826++

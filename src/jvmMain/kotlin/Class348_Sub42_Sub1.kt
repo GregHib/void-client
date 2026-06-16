@@ -65,7 +65,6 @@ class Class348_Sub42_Sub1 : Class348_Sub42() {
         var anInt9496: Int = 0
         var anInt9497: Int = 0
 
-        @JvmStatic
         fun method3165(i: Byte) {
             if (i > 39) {
                 aFloatArray9491 = null

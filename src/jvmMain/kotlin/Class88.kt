@@ -98,7 +98,6 @@ class Class88 : Class88Base {
             return (arrayOf<Class227?>(Class191.aClass227_2568, Class100.aClass227_1591, Class6.aClass227_151))
         }
 
-        @JvmStatic
         fun method842(bool: Boolean) {
             anInt1501++
             Class138.aClass46Array1942 = null
@@ -116,7 +115,6 @@ class Class88 : Class88Base {
             }
         }
 
-        @JvmStatic
         fun method843(i: Byte) {
             anInt1499++
             if (Class225.anInt2955 != 0 && Class225.anInt2955 != 5) {
@@ -482,7 +480,6 @@ class Class88 : Class88Base {
             }
         }
 
-        @JvmStatic
         fun method847(string: String, i: Int) {
             println("Error: " + Class341Statics.method2680("\n", true, "%0a", string))
             anInt1492++

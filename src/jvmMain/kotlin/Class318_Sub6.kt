@@ -14,7 +14,6 @@ class Class318_Sub6 : Class318() {
         var aFloat6430: Float = 0f
         var anIntArray6432: IntArray? = null
 
-        @JvmStatic
         fun method2506(i: Byte) {
             aShortArray6428 = null
             anIntArray6432 = null

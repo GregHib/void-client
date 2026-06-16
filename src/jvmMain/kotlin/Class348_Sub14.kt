@@ -49,7 +49,6 @@ class Class348_Sub14 : Class348 {
             }
         }
 
-        @JvmStatic
         fun method2805(i: Byte) {
             aClass351_6766 = null
             val i_1_ = -14 % ((i - 72) / 32)
@@ -84,7 +83,6 @@ class Class348_Sub14 : Class348 {
             return class348_sub47
         }
 
-        @JvmStatic
         fun method2808(i: Int, var_ha: ha?, bool: Boolean): Boolean {
             try {
                 anInt6763++

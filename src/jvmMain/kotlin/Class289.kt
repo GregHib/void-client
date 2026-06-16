@@ -17,7 +17,6 @@ object Class289 {
     var anInt3704: Int = 0
     var aClass262_3705: Class262? = null
 
-    @JvmStatic
     fun method2191(i: Int) {
         if (i != 0) Class289.method2192((-74).toByte())
         aClass46_3701 = null
@@ -36,7 +35,6 @@ object Class289 {
         if (Class250.anInt3227 == 1 && i_0_ >= 3139 && i_0_ <= 3199 && i_1_ >= 3008 && i_1_ <= 3062) Class250.anInt3227 = 0
     }
 
-    @JvmStatic
     fun method2193(bool: Boolean, i: Byte) {
         anInt3698++
         method3570(false)
@@ -59,7 +57,6 @@ object Class289 {
         }
     }
 
-    @JvmStatic
     fun method2194(i: Int, class348_sub42_sub13: Class348_Sub42_Sub13?): Int {
         anInt3696++
         if (i != -1) return -42

@@ -177,7 +177,6 @@ class Class14_Sub1 : Class14, Interface18_Impl3 {
         var anInt8617: Int = 0
         var anInt8618: Int = 0
 
-        @JvmStatic
         fun method239(i: Byte, i_3_: Int, i_4_: Int, class46: Class46) {
             anInt8610++
             if (class46.aByte817.toInt() != 0) {
@@ -207,7 +206,6 @@ class Class14_Sub1 : Class14, Interface18_Impl3 {
             }
         }
 
-        @JvmStatic
         fun method241(i: Byte) {
             anInt8617++
             var i_16_ = Class348_Sub35.anInt6981 * 512 + 256
@@ -282,7 +280,6 @@ class Class14_Sub1 : Class14, Interface18_Impl3 {
             if (i_26_ < 0 && i_25_ > 0 || i_26_ > 0 && i_25_ < 0) Class5.anInt4638 = i_24_
         }
 
-        @JvmStatic
         fun method242(bool: Boolean) {
             if (bool == true) aString8605 = null
         }

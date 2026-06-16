@@ -445,7 +445,6 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
         var aClass114_3641: Class114? = Class114(79, 3)
         var anInt3643: Int = 0
 
-        @JvmStatic
         fun method2104(i: Int) {
             aClass114_3641 = null
             if (i < 66) method2104(127)

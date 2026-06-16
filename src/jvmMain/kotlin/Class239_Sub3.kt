@@ -74,13 +74,11 @@ class Class239_Sub3 : Class239 {
         var anInt5870: Int = 0
         var anInt5871: Int = 0
 
-        @JvmStatic
         fun method1728(i: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int) {
             anInt5860++
             if (Class320.method2547(i_3_, 84.toByte())) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_3_]!!))
         }
 
-        @JvmStatic
         fun method1730(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) {
             if (i_10_ != -128) method1730(-6, -95, 101, -81, 56, 14, -29, -19)
             anInt5868++
@@ -102,7 +100,6 @@ class Class239_Sub3 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1731(i: Int) {
             anInt5863++
             val class348_sub45 = (Class318_Sub1_Sub3.aClass262_8744!!.method1995(i xor 0x5) as Class348_Sub45?)
@@ -115,7 +112,6 @@ class Class239_Sub3 : Class239 {
             if (i != 1) Companion.method1734(-88, null, (-126).toByte(), false)
         }
 
-        @JvmStatic
         fun method1732(i: Byte, i_21_: Int): Boolean {
             anInt5865++
             val i_22_ = i.toInt() and 0xff
@@ -123,7 +119,6 @@ class Class239_Sub3 : Class239 {
             return i_21_ < (i_22_.inv()) || i_22_ >= 160 || Class44.aCharArray625!![i_22_ + -128].code != 0
         }
 
-        @JvmStatic
         fun method1733(i: Byte, i_23_: Int) {
             anInt5870++
             if (i.toInt() != -78) method1732(80.toByte(), -38)

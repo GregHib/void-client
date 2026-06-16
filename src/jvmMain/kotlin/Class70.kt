@@ -17,14 +17,12 @@ class Class70 {
         var anInt1206: Int = 0
         var anIntArray1207: IntArray? = IntArray(16384)
 
-        @JvmStatic
         fun method725(i: Int) {
             anIntArray1207 = null
             anIntArray1204 = null
             if (i != 16384) anIntArray1207 = null
         }
 
-        @JvmStatic
         fun method726(i: Int) {
             if (i <= 88) anIntArray1204 = null
             anInt1206++

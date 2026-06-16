@@ -11,7 +11,6 @@ abstract class Class299_Sub1 : Class299() {
         var anInt6322: Int = 0
         var aFileOutputStream6323: FileOutputStream? = null
 
-        @JvmStatic
         fun method2257(i: Int, i_0_: Int, i_1_: Byte): Int {
             anInt6322++
             val d = ln(i.toDouble()) / ln(2.0)
@@ -21,13 +20,11 @@ abstract class Class299_Sub1 : Class299() {
             return (0.5 + 2.0.pow(d_4_)).toInt()
         }
 
-        @JvmStatic
         fun method2258(i: Byte) {
             aClass138_6321 = null
             if (i < -119) aFileOutputStream6323 = null
         }
 
-        @JvmStatic
         fun method2259(i: Int, i_5_: Int, i_6_: Int): Boolean {
             anInt6320++
             if (i != 0) aClass138_6321 = null

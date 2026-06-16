@@ -158,7 +158,6 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
         var anInt8650: Int = 0
         var anInt8651: Int = 0
 
-        @JvmStatic
         fun method250(i: Int, bool: Boolean, i_0_: Int): String {
             if (bool != true) method251(96.toByte())
             anInt8641++
@@ -174,7 +173,6 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
             return "<col=ffff00>"
         }
 
-        @JvmStatic
         fun method251(i: Byte) {
             if (i.toInt() != 2) method250(-45, false, -102)
             aClass323_8644 = null
@@ -188,7 +186,6 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
             return i == 0 || i == 2
         }
 
-        @JvmStatic
         fun method253(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
             anInt8648++
             if (i_13_ != -648) aClass323_8644 = null
@@ -220,7 +217,6 @@ class Class14_Sub4 : Class14, Interface18_Impl3 {
             }
         }
 
-        @JvmStatic
         fun method254(i: Int, i_48_: Byte) {
             if (i_48_ > -79) method252(127, 53)
             if (Loader.skipLobby) {

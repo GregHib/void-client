@@ -22,7 +22,6 @@ class Class110_Sub1 : Class110() {
         var aFloatArray5791: FloatArray? = FloatArray(4)
         var anInt5792: Int = 0
         var anInt5793: Int = 0
-        @JvmStatic
         fun method1039(string: String, bool: Boolean): String {
             anInt5793++
             val stringbuffer = StringBuffer()
@@ -64,12 +63,10 @@ class Class110_Sub1 : Class110() {
             return stringbuffer.toString()
         }
 
-        @JvmStatic
         fun method1040(i: Int) {
             if (i == 512) aFloatArray5791 = null
         }
 
-        @JvmStatic
         fun method1041(i: Int, class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3) {
             anInt5790++
             var bool = false

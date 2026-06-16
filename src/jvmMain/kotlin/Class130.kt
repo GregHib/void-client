@@ -11,14 +11,12 @@ abstract class Class130 {
         var aBoolean1899: Boolean = false
         var aBoolean1900: Boolean = false
 
-        @JvmStatic
         fun method1127(i: Int) {
             aClass45_1897 = null
             aClass356_1895 = null
             if (i == 5125) aClass60_1894 = null
         }
 
-        @JvmStatic
         fun method1128(i: Int, class68: Class68?): Int {
             anInt1896++
             if (Class68.aClass68_1179 != class68) {
@@ -38,7 +36,6 @@ abstract class Class130 {
             throw IllegalArgumentException("")
         }
 
-        @JvmStatic
         fun method1129(i: Int, i_0_: Int) {
             Class367_Sub9.anInt7379 = 3
             Class164.anInt2173 = i_0_
@@ -47,7 +44,6 @@ abstract class Class130 {
             anInt1898++
         }
 
-        @JvmStatic
         fun method1130(var_r: r?, i: Int, i_1_: Int, i_2_: Int, bools: BooleanArray?): Boolean {
             var bool = false
             if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {

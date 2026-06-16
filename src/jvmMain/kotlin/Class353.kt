@@ -125,7 +125,6 @@ class Class353 internal constructor(var anInt4342: Int, var anInt4349: Int, var 
             } while (false)
         }
 
-        @JvmStatic
         fun method3462(i: Int) {
             aClass60_4346 = null
             if (i != -30094) method3461(-108, null, -26, null, 42)

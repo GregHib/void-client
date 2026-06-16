@@ -5,7 +5,6 @@ object Class249 {
     var anInt3216: Int = 0
     var aClass21_3217: Class21? = Class21()
 
-    @JvmStatic
     fun method1907(i: Byte) {
         aClass21_3217 = null
         val i_0_ = -55 / ((i - -39) / 60)

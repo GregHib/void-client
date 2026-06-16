@@ -12,7 +12,6 @@ class Class63 {
         var anInt1121: Int = 0
         var aClass114_1123: Class114? = Class114(78, -1)
 
-        @JvmStatic
         fun method601(i: Byte) {
             aClass114_1120 = null
             aClass114_1123 = null

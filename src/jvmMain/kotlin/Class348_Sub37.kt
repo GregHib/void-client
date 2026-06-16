@@ -31,7 +31,6 @@ class Class348_Sub37 : Class348() {
             }
         }
 
-        @JvmStatic
         fun method3031(i: Int, class348_sub49: Class348_Sub49): Class348_Sub40? {
             anInt6996++
             class348_sub49.readUnsignedByte(255)

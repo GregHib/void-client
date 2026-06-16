@@ -63,7 +63,6 @@ class Class239_Sub15 : Class239 {
         var anInt6005: Int = 0
         var anInt6006: Int = 0
 
-        @JvmStatic
         fun method1782(i: Int, i_0_: Int): Class323? {
             if (i_0_ != 10144) return null
             anInt6004++
@@ -86,7 +85,6 @@ class Class239_Sub15 : Class239 {
             return null
         }
 
-        @JvmStatic
         fun method1783(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             var i = i
             var i_3_ = i_3_
@@ -150,13 +148,11 @@ class Class239_Sub15 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1785(i: Int) {
             aClass114_5997 = null
             if (i != 8) aClass114_5997 = null
         }
 
-        @JvmStatic
         fun method1787(i: Int, i_22_: Int) {
             anInt6002++
             val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, 105.toByte(), i_22_) //8

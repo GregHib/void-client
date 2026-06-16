@@ -315,7 +315,6 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
         var anInt9316: Int = 0
         var aClass348_Sub22Array9319: Array<Class348_Sub22?>? = arrayOfNulls<Class348_Sub22>(1024)
         var anInt9321: Int = 0
-        @JvmStatic
         fun method3113(c: Char, bool: Boolean, string: String): Array<String?> {
             anInt9315++
             val i = Class15.method257(4, string, c)
@@ -336,7 +335,6 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
             return strings
         }
 
-        @JvmStatic
         fun method3114(i: Byte) {
             aClass348_Sub22Array9319 = null
             if (i > -63) Companion.method3114((-91).toByte())

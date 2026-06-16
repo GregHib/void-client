@@ -193,21 +193,18 @@ class Class348_Sub3 internal constructor(private val aS_Sub3_6566: s_Sub3, var a
         var aFloat6586: Float = 0f
         var anInt6587: Int = 0
         var anInt6588: Int = 0
-        @JvmStatic
         fun method2738(i: Byte) {
             aClass114_6584 = null
             aClass323_6581 = null
             val i_21_ = 89 / ((19 - i) / 43)
         }
 
-        @JvmStatic
         fun method2739(i: Int) {
             Class348_Sub40_Sub13.aClass262_9201!!.method1996(98)
             anInt6579++
             Class348_Sub34.anInt6969 = i
         }
 
-        @JvmStatic
         fun method2743(component: Component?, i: Byte): Class346 {
             anInt6587++
             val i_41_ = -16 % ((i - -58) / 63)

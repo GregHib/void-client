@@ -16,7 +16,6 @@ object Class348_Sub45Statics {
     var aClass105Array7107: Array<Class105?>? = null
     var aClass361Array7108: Array<Class361?>? = arrayOfNulls<Class361>(4)
 
-    @JvmStatic
     fun method3309(i: Int) {
         Class354.anIntArrayArrayArray4356 = (Array<Array<IntArray?>?>(Class189.anInt2524) { Array<IntArray?>(1 + Class318_Sub7.anInt6451) { IntArray(1 + Class348_Sub41.anInt7054) } })
         anInt7104++
@@ -35,12 +34,10 @@ object Class348_Sub45Statics {
         Class348_Sub40_Sub23.aBoolean9307 = Class9.aHa171 !is oa
     }
 
-    @JvmStatic
     fun method3313(i: Int, var_s: s?) {
         aa_Sub1.aSArray5191!![i] = var_s
     }
 
-    @JvmStatic
     fun method3314(i: Int) {
         aClass114_7106 = null
         if (i != 5) method3313(-103, null)

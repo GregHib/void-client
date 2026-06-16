@@ -461,7 +461,6 @@ class Class210 internal constructor() {
             return i_29_
         }
 
-        @JvmStatic
         fun method1536() {
             anIntArray2724 = null
             aFloatArray2719 = null

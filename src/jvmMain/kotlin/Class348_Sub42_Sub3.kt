@@ -97,7 +97,6 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             method1131(117)
         }
 
-        @JvmStatic
         fun method3176(bool: Boolean) {
             anIntArray9505 = null
             aShortArray9502 = null
@@ -105,7 +104,6 @@ class Class348_Sub42_Sub3 internal constructor(var aByteArray9499: ByteArray?) :
             aClass114_9503 = null
         }
 
-        @JvmStatic
         fun method3177(i: Int, bool: Boolean) {
             if (!bool || Class75.aClass348_Sub42_Sub14_1243 == null) Class239_Sub13.anInt5976 = -1
             else Class239_Sub13.anInt5976 = (Class75.aClass348_Sub42_Sub14_1243!!.anInt9628)

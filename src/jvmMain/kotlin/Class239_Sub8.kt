@@ -53,7 +53,6 @@ class Class239_Sub8 : Class239 {
         var anInt5923: Int = 0
         var anInt5924: Int = 0
 
-        @JvmStatic
         fun method1749(class110_sub1: Class110_Sub1?, class110_sub1_0_: Class110_Sub1?, bool: Boolean, i: Int, i_1_: Byte): Int {
             try {
                 anInt5916++
@@ -129,14 +128,12 @@ class Class239_Sub8 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1750(i: Int, i_6_: Int) {
             anInt5912++
             Class348_Sub42_Sub1.anInt9488 = i_6_
             Class202.aClass60_2671!!.method590(0)
         }
 
-        @JvmStatic
         fun method1752(i: Int, i_10_: Int, i_11_: Int) {
             Class59_Sub1.anInt5283 = i_11_
             anInt5922++
@@ -159,7 +156,6 @@ class Class239_Sub8 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1753(i: Int, class46: Class46): String? {
             anInt5924++
             if (Client.method105(class46)!!.method3307(116) == 0) return null
@@ -171,7 +167,6 @@ class Class239_Sub8 : Class239 {
             return class46.aString780
         }
 
-        @JvmStatic
         fun method1754(bool: Boolean, i: Int, i_12_: Int, i_13_: Int): Int {
             anInt5920++
             if (Class348Statics.anInt4290 < 100) return -2
@@ -197,13 +192,11 @@ class Class239_Sub8 : Class239 {
             return i_14_
         }
 
-        @JvmStatic
         fun method1755(i: Int) {
             anIntArrayArray5921 = null
             if (i != 1) method1749(null, null, false, -43, 102.toByte())
         }
 
-        @JvmStatic
         fun method1756(`is`: ByteArray?, i: Int, i_22_: Int, i_23_: Int, is_24_: Array<ByteArray>, is_25_: Array<ByteArray>, is_26_: IntArray?, is_27_: IntArray?): Int {
             try {
                 anInt5918++

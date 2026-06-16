@@ -34,19 +34,16 @@ class Class231 internal constructor(string: String?, var anInt2995: Int) {
             return fs_1_
         }
 
-        @JvmStatic
         fun method1639(i: Int, i_2_: Int): Boolean {
             anInt2994++
             return i >= 12 && i <= 17
         }
 
-        @JvmStatic
         fun method1641(i: Byte) {
             aClass297_2993 = null
             if (i.toInt() != 85) aClass297_2993 = null
         }
 
-        @JvmStatic
         fun method1642(i: Byte, var_ha: ha?) {
             anInt2997++
             var i_3_ = 0

@@ -17,7 +17,6 @@ object Class168 {
     @Volatile
     var anObject2256: Any?
 
-    @JvmStatic
     fun method1298(i: Int) {
         if (i != -1) aClass46_2249 = null
         anObject2256 = null

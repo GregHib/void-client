@@ -781,7 +781,6 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             throw IllegalArgumentException()
         }
 
-        @JvmStatic
         fun createToolkit(canvas: Canvas?, var_d: d?, class45: Class45?, integer: Int): ha {
             var class378: Class378? = null
             val class378_19_: Class378?
@@ -828,7 +827,6 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             return class378_19_
         }
 
-        @JvmStatic
         fun method3958(i: Int, class68: Class68?, class304: Class304?): Int {
             if (class68 == Class68.aClass68_1183) {
                 if (Class348_Sub45Statics.aClass304_7103 != class304) {

@@ -49,7 +49,6 @@ class Class239_Sub11 : Class239 {
         var anInt5958: Int = 0
         var anInt5959: Int
 
-        @JvmStatic
         fun method1767(bool: Boolean, i: Int) {
             anInt5953++
             Class101_Sub3.method947(41.toByte())
@@ -62,14 +61,12 @@ class Class239_Sub11 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1769(i: Int) {
             aClass114_5950 = null
             if (i != 100) method1769(-25)
             aClass114_5949 = null
         }
 
-        @JvmStatic
         fun method1770(i: Byte): Int {
             anInt5957++
             if (Class367_Sub8.anInt7365 == 0) {

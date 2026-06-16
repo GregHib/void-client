@@ -247,7 +247,6 @@ class Class348_Sub40_Sub8 : Class348_Sub40(0, true) {
         var aColorArray9163: IntArray? = intArrayOf(-0x1000000 or 9179409, -0x1000000 or 16777215, -0x1000000 or 16726277, -0x1000000 or 16726277)
         var aClass238_9165: Class238? = null
 
-        @JvmStatic
         fun method3068(i: Int) {
             aColorArray9163 = null
             if (i != 13715) aClass238_9165 = null

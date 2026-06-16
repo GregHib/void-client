@@ -189,14 +189,12 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
         var anInt9399: Int = -1
         var aBoolean9403: Boolean = false
 
-        @JvmStatic
         fun method3126(i: Byte) {
             if (i.toInt() != 98) anInt9388 = 46
             Class60.aHa1098!!.method3700(Class239_Sub10.aFloat5945, Class348_Sub3.aFloat6586, Class269.aFloat3462)
             anInt9387++
         }
 
-        @JvmStatic
         fun method3127(i: Int): Class348_Sub42_Sub15? {
             anInt9395++
             if (i != 2681) aBoolean9403 = true
@@ -216,7 +214,6 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
             return class348_sub42_sub15
         }
 
-        @JvmStatic
         fun method3128(i: Int, string: String?) {
             do {
                 try {

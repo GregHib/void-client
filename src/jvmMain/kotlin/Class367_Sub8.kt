@@ -108,7 +108,6 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class26
         var anInt7364: Int = 0
         var anInt7365: Int = 0
 
-        @JvmStatic
         fun method3546(`is`: ByteArray, i: Int, i_0_: Int, i_1_: Int): String {
             anInt7349++
             val cs = CharArray(i_0_)
@@ -127,13 +126,11 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class26
             return String(cs, 0, i_2_)
         }
 
-        @JvmStatic
         fun method3547(i: Int, i_6_: Int): Int {
             if (Class342.anIntArrayArray4253 != null) return Class342.anIntArrayArray4253!![i]!![i_6_] and 0xffffff
             return 0
         }
 
-        @JvmStatic
         fun method3548(i: Int, npc: Npc?, `is`: IntArray?, is_7_: IntArray?, is_8_: IntArray?) {
             try {
                 if (i != -7387) method3550(10.toByte())
@@ -191,7 +188,6 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class26
             }
         }
 
-        @JvmStatic
         fun method3549(i: Int, i_15_: Byte): Boolean {
             anInt7351++
             val i_16_ = -72 / ((37 - i_15_) / 48)
@@ -199,7 +195,6 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class26
             return i == 30 || i == 1008
         }
 
-        @JvmStatic
         fun method3550(i: Byte) {
             aClass114_7363 = null
             aClass45_7362 = null

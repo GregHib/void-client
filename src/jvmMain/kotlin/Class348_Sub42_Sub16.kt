@@ -20,14 +20,12 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
         var anInt9666: Int = 0
         var anInt9668: Int = 0
 
-        @JvmStatic
         fun method3252(i: Int) {
             aClass21_9661 = null
             aString9665 = null
             if (i != 353) aClass21_9661 = null
         }
 
-        @JvmStatic
         fun method3253(i: Int, i_0_: Int, i_1_: Int, var_class: Class<*>) {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_0_]!![i_1_]
             if (class357 != null) {
@@ -43,7 +41,6 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
             }
         }
 
-        @JvmStatic
         fun method3254(i: Int, i_2_: Int, i_3_: Int, class318_sub1_sub4: Class318_Sub1_Sub4, class318_sub1_sub4_4_: Class318_Sub1_Sub4?) {
             val class357 = Class348_Sub46.method3321(i, i_2_, i_3_)
             if (class357 != null) {
@@ -81,7 +78,6 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
             }
         }
 
-        @JvmStatic
         fun method3255(i: Int, `is`: ByteArray?, i_6_: Int, bool: Boolean, string: String?, i_7_: Int): Int {
             try {
                 anInt9666++
@@ -137,7 +133,6 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
             }
         }
 
-        @JvmStatic
         fun method3256(i: Int): Int {
             anInt9662++
             if (Class348_Sub1Statics.anIntArray6547 == null) return 0
@@ -145,7 +140,6 @@ abstract class Class348_Sub42_Sub16 : Class348_Sub42() {
             return 2 * Class348_Sub1Statics.anIntArray6547!!.size
         }
 
-        @JvmStatic
         fun method3258(i: Int, i_11_: Int, fs: FloatArray?): FloatArray {
             anInt9668++
             val fs_12_ = FloatArray(i_11_)

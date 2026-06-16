@@ -52,7 +52,6 @@ class Class38 {
         var anInt512: Int = 0
         var anInt513: Int = 100
 
-        @JvmStatic
         fun method360(i: Byte, i_0_: Int): Class227? {
             anInt505++
             if (i.toInt() != -57) method363(97)
@@ -66,7 +65,6 @@ class Class38 {
             return null
         }
 
-        @JvmStatic
         fun method362(i: Int) {
             anInt509++
             var class348_sub27 = (Class348_Sub42_Sub20.aClass262_9711!!.method1995(4) as? Class348_Sub27?)
@@ -92,7 +90,6 @@ class Class38 {
 
         private var HISTORY_INDEX = -1
 
-        @JvmStatic
         fun method363(i: Int) {
             if (Class168.anInt2254 < 102) Class168.anInt2254 += 6
             anInt512++
@@ -250,7 +247,6 @@ class Class38 {
             }
         }
 
-        @JvmStatic
         fun method365(class318_sub1: Class318_Sub1, class348_sub1s: Array<Class348_Sub1?>?) {
             if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
                 val i = class318_sub1.method2384(class348_sub1s, 49)

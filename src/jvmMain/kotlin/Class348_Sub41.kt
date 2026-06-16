@@ -73,7 +73,6 @@ class Class348_Sub41 : Class348() {
             return bool
         }
 
-        @JvmStatic
         fun method3155(i: Int) {
             aString7048 = null
             aClass114_7052 = null

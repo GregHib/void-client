@@ -13,7 +13,6 @@ import Class99.method882
 // Source File Name:   Class130_Sub1.java
 class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) : Class130() {
     companion object {
-        @JvmStatic
         fun method1131(i: Int) {
             val j = 64 / ((11 - i) / 54)
             anInt5795++
@@ -26,7 +25,6 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             return method3194(k, j, 124.toByte()) || Class183.method1379(4, j, k)
         }
 
-        @JvmStatic
         fun method1133(i: Int) {
             if (i <= 38) anInt5799 = 61
             aClass144_5800 = null

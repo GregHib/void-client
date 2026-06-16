@@ -483,7 +483,6 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) :
         var anInt4064: Int = 0
         var anInt4065: Int = 0
 
-        @JvmStatic
         fun method2570(i: Int, i_45_: Int): Class46? {
             anInt4055++
             if (i != 1512932720) return null
@@ -496,7 +495,6 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) :
             return Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_46_]!![i_47_]
         }
 
-        @JvmStatic
         fun method2572(i: Byte) {
             aClass138_4062 = null
             if (i.toInt() != 23) aClass138_4062 = null

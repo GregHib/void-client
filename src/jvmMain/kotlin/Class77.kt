@@ -224,7 +224,6 @@ class Class77 {
             return (0x400 and i_16_) != 0
         }
 
-        @JvmStatic
         fun method782(i: Int) {
             anIntArray1303 = null
             if (i != 1) anInt1290 = 114

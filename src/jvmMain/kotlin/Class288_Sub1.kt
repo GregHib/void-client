@@ -33,7 +33,6 @@ class Class288_Sub1 internal constructor(i: Int, class221: Class221?, class341: 
             return 16
         }
 
-        @JvmStatic
         fun method2189(class348_sub49: Class348_Sub49, i: Int): Class288 {
             anInt8576++
             val i_3_ = class348_sub49.readUnsignedShort(842397944)
@@ -44,7 +43,6 @@ class Class288_Sub1 internal constructor(i: Int, class221: Class221?, class341: 
             return Class288(i_3_, class221, class341, i_4_, i_5_)
         }
 
-        @JvmStatic
         fun method2190(bool: Boolean) {
             if (bool != true) aFloatArray8575 = null
             aFloatArray8575 = null

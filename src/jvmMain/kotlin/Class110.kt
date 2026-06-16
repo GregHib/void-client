@@ -39,14 +39,12 @@ abstract class Class110 {
         var anInt1710: Int = 0
         var aBoolean1712: Boolean = false
 
-        @JvmStatic
         fun method1030(i: Int) {
             aClass114_1702 = null
             aClass105_1706 = null
             if (i > -19) method1034(-89, null, null, -72)
         }
 
-        @JvmStatic
         fun method1032(i: Int): Int {
             anInt1701++
             var i_1_ = 0
@@ -61,7 +59,6 @@ abstract class Class110 {
             return i_1_ - -1
         }
 
-        @JvmStatic
         fun method1034(i: Int, class348_sub49: Class348_Sub49?, class297: Class297?, i_5_: Int) {
             try {
                 anInt1710++

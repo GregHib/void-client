@@ -377,14 +377,12 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
         var anIntArray9230: IntArray? = intArrayOf(0, -1, 0, 1)
         var anInt9231: Int = 0
 
-        @JvmStatic
         fun method3087(bool: Boolean) {
             anIntArray9230 = null
             aClass114_9225 = null
             if (bool != false) method3089(-42)
         }
 
-        @JvmStatic
         fun method3088(i: Int) {
             anInt9228++
             if (Class76.aClass364_1279 != Class8.aClass364_165 && i == 9) {
@@ -396,7 +394,6 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
             }
         }
 
-        @JvmStatic
         fun method3089(i: Int) {
             Class248.anInt3203 = -1
             Class97.anInt1548 = -1

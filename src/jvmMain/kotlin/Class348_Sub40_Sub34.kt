@@ -82,7 +82,6 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
         var anInt9435: Int = 0
         var anIntArray9436: IntArray? = IntArray(2)
         var anInt9437: Int = 0
-        @JvmStatic
         fun method3140(i: Int, i_0_: Int): Int {
             val i_1_ = 40 / ((i - 19) / 63)
             anInt9435++
@@ -90,7 +89,6 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             return method160(27076, i_0_)
         }
 
-        @JvmStatic
         fun method3141(bool: Boolean, i: Byte) {
             if (Class348_Sub40_Sub8.Companion.aClass238_9165 != null) {
                 Class348_Sub40_Sub8.Companion.aClass238_9165!!.method1700(36.toByte())
@@ -144,7 +142,6 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             }
         }
 
-        @JvmStatic
         fun method3142(i: Int) {
             anIntArray9431 = null
             anIntArray9436 = null

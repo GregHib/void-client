@@ -18,7 +18,6 @@ object Class128 {
         Class367_Sub11.anInt7403 = 0
     }
 
-    @JvmStatic
     fun method1123(i: Int) {
         aClass114_1871 = null
         if (i != -1) method1122(-78)

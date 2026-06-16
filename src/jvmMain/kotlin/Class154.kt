@@ -554,7 +554,6 @@ class Class154 {
         var anInt2106: Int = 0
         var anInt2107: Int = 0
 
-        @JvmStatic
         fun method1235(i: Byte) {
             if (i.toInt() != 7) anInt2101 = -42
             aClass348_Sub49Array2105 = null

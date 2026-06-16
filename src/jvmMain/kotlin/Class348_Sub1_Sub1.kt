@@ -30,7 +30,6 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
         var anInt8808: Int = 0
         var anInt8809: Int = 0
 
-        @JvmStatic
         fun method2726(i: Int, i_7_: Int, i_8_: Int): Int {
             var i_7_ = i_7_
             var i_8_ = i_8_
@@ -50,7 +49,6 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
             return i_7_
         }
 
-        @JvmStatic
         fun method2727(i: Byte, class237_sub1: Class237_Sub1?, `is`: Array<ByteArray?>?) {
             try {
                 anInt8802++
@@ -90,7 +88,6 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
             }
         }
 
-        @JvmStatic
         fun method2728(i: Byte) {
             if (i.toInt() != 9) aClass60_8807 = null
             aClass60_8807 = null

@@ -303,7 +303,6 @@ class Class330 internal constructor(var_ha_Sub3: ha_Sub3?, var_s_Sub3: s_Sub3?) 
         var aClass114_4126: Class114? = Class114(5, 8)
         var aBoolean4127: Boolean = false
 
-        @JvmStatic
         fun method2631(i: Int) {
             val i_47_ = -46 / ((65 - i) / 61)
             aClass114_4126 = null

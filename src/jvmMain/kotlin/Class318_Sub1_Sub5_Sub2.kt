@@ -164,7 +164,6 @@ class Class318_Sub1_Sub5_Sub2 internal constructor(var_ha: ha?, class51: Class51
         var anInt10171: Int = 0
         var anIntArray10172: IntArray? = IntArray(3)
 
-        @JvmStatic
         fun method2492(i: Int) {
             if (i != 1) anInt10163 = -36
             aClass114_10149 = null

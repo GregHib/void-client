@@ -29,7 +29,6 @@ class Class369_Sub2(class221: Class221?, class341: Class341?, i: Int, i_2_: Int,
         var anObject8592: Any? = null
         var anInt8593: Int = 0
 
-        @JvmStatic
         fun method3571(bool: Boolean, i: Int, i_0_: Byte, i_1_: Int): Class45? {
             anInt8593++
             if (i_0_.toInt() != -23) return null
@@ -40,7 +39,6 @@ class Class369_Sub2(class221: Class221?, class341: Class341?, i: Int, i_2_: Int,
             return Class45(Class13.aClass314_Sub1Array223!![i]!!, bool, i_1_)
         }
 
-        @JvmStatic
         fun method3572(i: Int) {
             aClass114_8590 = null
             aClass45_8589 = null

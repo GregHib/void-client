@@ -304,7 +304,6 @@ abstract class Class55(i: Int) {
         var anInt1004: Int = 0
         var anInt1005: Int = 0
         var aFloat1010: Float = 0f
-        @JvmStatic
         fun method515(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt990++
             var i_7_ = 0
@@ -354,14 +353,12 @@ abstract class Class55(i: Int) {
             }
         }
 
-        @JvmStatic
         fun method518(string: String?, i: Byte) {
             System.exit(1)
             anInt997++
             val i_29_ = 97 % ((-66 - i) / 54)
         }
 
-        @JvmStatic
         fun method520(interface10: Interface10, i: Int): Boolean {
             anInt1000++
             val class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, interface10.method42(-94))

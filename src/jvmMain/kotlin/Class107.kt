@@ -97,13 +97,11 @@ class Class107 {
         var anInt1654: Int = 0
         var anInt1655: Int = 0
 
-        @JvmStatic
         fun method1004(i: Byte) {
             anIntArray1650 = null
             if (i.toInt() != 16) method1006(false, ((-62).toByte()).toByte())
         }
 
-        @JvmStatic
         fun method1006(bool: Boolean, i: Byte) {
             anInt1655++
             if (bool) {

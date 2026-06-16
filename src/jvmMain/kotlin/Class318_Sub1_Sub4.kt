@@ -58,7 +58,6 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         var aClass279_8764: Class279? = null
         var anInt8765: Int = 0
 
-        @JvmStatic
         fun method2478(i: Int): Int {
             if (i != 1000) return -103
             anInt8763++
@@ -120,7 +119,6 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
             return Class62.method600((-80).toByte(), 3, i_9_)
         }
 
-        @JvmStatic
         fun method2479(i: Int) {
             if (i == 19424) {
                 aBigInteger8762 = null
@@ -128,7 +126,6 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
             }
         }
 
-        @JvmStatic
         fun method2480(i: Int) {
             if (i == -1) {
                 anInt8761++

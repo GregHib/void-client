@@ -121,13 +121,11 @@ class Class76 internal constructor(bool: Boolean) {
             return true
         }
 
-        @JvmStatic
         fun method772(i: Byte) {
             aClass169_1286 = null
             aClass364_1279 = null
         }
 
-        @JvmStatic
         fun method773(bool: Boolean) {
             Class348_Sub40_Sub10.aBoolean9181 = bool
             anInt1284++

@@ -3228,14 +3228,12 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         var anInt7726: Int = 0
         var anInt7727: Int = 0
         var anInt7728: Int = 0
-        @JvmStatic
         fun method3736(i: Byte) {
             aClass351_7554 = null
             aClass351_7715 = null
             if (i < 27) aClass351_7715 = null
         }
 
-        @JvmStatic
         fun method3743(i: Byte, class348_sub42_sub12: Class348_Sub42_Sub12?) {
             do {
                 try {
@@ -3274,7 +3272,6 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             } while (false)
         }
 
-        @JvmStatic
         fun method3802(i: Int, i_315_: Int, i_316_: Int, i_317_: Int, i_318_: Int, i_319_: Int, i_320_: Int) {
             anInt7572++
             val i_321_ = Class328_Sub1.anInt6513

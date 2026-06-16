@@ -313,7 +313,6 @@ class Class348_Sub42_Sub5 : Class348_Sub42 {
         var aClass351_9533: Class351?
         var anInterface6Array9534: Array<Interface6?>? = arrayOfNulls<Interface6>(128)
 
-        @JvmStatic
         fun method3187(i: Byte) {
             anInterface6Array9534 = null
             val i_55_ = 19 % ((76 - i) / 39)

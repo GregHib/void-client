@@ -8,7 +8,6 @@ object Class20 {
     var anInt319: Int = 0
     var anInt320: Int = 0
 
-    @JvmStatic
     fun method287(i: Int) {
         if (i == 51) {
             aClass114_316 = null

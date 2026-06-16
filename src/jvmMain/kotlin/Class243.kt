@@ -105,7 +105,6 @@ class Class243 {
         var aClass351_3165: Class351? = Class351(60, 8)
         var anInt3168: Int = 0
 
-        @JvmStatic
         fun method1873(i: Byte) {
             if (i > -111) aClass351_3165 = null
             aClass351_3165 = null
@@ -121,7 +120,6 @@ class Class243 {
             }
         }
 
-        @JvmStatic
         fun method1879(bool: Boolean) {
             if (bool) {
                 Class147.aClass357ArrayArrayArray2029 = Class348_Sub31_Sub2.aClass357ArrayArrayArray9082

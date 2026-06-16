@@ -13,13 +13,11 @@ abstract class Class50(var anInt864: Int, var anInt865: Int, var anInt862: Int) 
     companion object {
         var anInt861: Int = 0
         var aString863: String? = null
-        @JvmStatic
         fun method458(i: Int) {
             if (i != -14487) method459(-97, null, null, true)
             aString863 = null
         }
 
-        @JvmStatic
         fun method459(i: Int, var_ha_Sub2: ha_Sub2?, string: String?, bool: Boolean): Class171? {
             try {
                 anInt861++

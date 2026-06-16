@@ -158,7 +158,6 @@ class Class232 internal constructor(var_ha_Sub2: ha_Sub2?, class104: Class104?, 
         var anInt3013: Int = 0
         var anIntArray3014: IntArray? = IntArray(1)
 
-        @JvmStatic
         fun method1645(i: Int) {
             if (i >= 35) anIntArray3014 = null
         }

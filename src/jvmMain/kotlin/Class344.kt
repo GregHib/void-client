@@ -16,7 +16,6 @@ abstract class Class344 {
         var aClass351_4266: Class351? = Class351(72, 16)
         var anInt4267: Int = 0
 
-        @JvmStatic
         fun method2690(i: Int) {
             aClass351_4266 = null
             aClass351_4264 = null

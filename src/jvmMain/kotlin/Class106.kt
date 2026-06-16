@@ -48,14 +48,12 @@ class Class106 internal constructor(class45: Class45?, class45_0_: Class45?) {
         var anIntArrayArray1638: Array<IntArray>? = arrayOf(intArrayOf(0, 1, 2, 3), intArrayOf(1, -1, -1, 0), intArrayOf(-1, 2, -1, 0), intArrayOf(-1, 0, -1, 2), intArrayOf(0, 1, -1, 2), intArrayOf(1, 2, -1, 0), intArrayOf(-1, 4, -1, 1), intArrayOf(-1, 3, 4, -1), intArrayOf(-1, 0, 2, -1), intArrayOf(-1, -1, 2, 0), intArrayOf(0, 2, 5, 3), intArrayOf(0, -1, 6, -1), intArrayOf(0, 1, 2, 3))
         var anInt1639: Int = 0
         var anInt1640: Int = 0
-        @JvmStatic
         fun method999(i: Int) {
             anIntArray1636 = null
             anIntArray1635 = null
             anIntArrayArray1638 = null
         }
 
-        @JvmStatic
         fun method1001(class45: Class45, i: Int) {
             anInt1634++
             Class56.anInt1044 = class45.method417("p11_full", i)

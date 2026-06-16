@@ -65,7 +65,6 @@ class Class265 internal constructor(class45: Class45?, class120: Class120?) : In
             return Class50_Sub1(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
-        @JvmStatic
         fun method2023(i: Byte) {
             if (i > -13) aClass74_4689 = null
             aClass74_4689 = null

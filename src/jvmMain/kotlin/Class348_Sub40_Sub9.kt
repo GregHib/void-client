@@ -44,14 +44,12 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
         var anInt9172: Int = 0
         var aClass324_9173: Class324? = null
 
-        @JvmStatic
         fun method3071(i: Byte) {
             if (i.toInt() != 59) AppletRoot.instance = null
             aClass60_9171 = null
             aClass324_9173 = null
         }
 
-        @JvmStatic
         fun method3072(i: Byte) {
             anInt9168++
             val i_0_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350)
@@ -70,7 +68,6 @@ class Class348_Sub40_Sub9 : Class348_Sub40(1, true) {
             Class318_Sub1_Sub3_Sub5.anInt10395 = Class355.anInt4372
         }
 
-        @JvmStatic
         fun method3073(i: Int, i_3_: Int, i_4_: Byte): Boolean {
             anInt9172++
             if (i_4_.toInt() != 50) return false

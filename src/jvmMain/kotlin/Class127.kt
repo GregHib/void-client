@@ -65,7 +65,6 @@ open class Class127(class45: Class45?, class288: Class288?) : Interface1 {
             val i_12_ = -68 / ((40 - i_11_) / 36)
         }
 
-        @JvmStatic
         fun method1117(i: Int) {
             anIntArray4654 = null
             val i_13_ = -13 / ((i - 57) / 47)

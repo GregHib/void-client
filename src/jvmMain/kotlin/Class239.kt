@@ -44,14 +44,12 @@ abstract class Class239 {
         var aClass45_3146: Class45? = null
         var aClass166_3147: Class166? = null
 
-        @JvmStatic
         fun method1709(i: Int): Array<Class231?> {
             if (i > -110) method1715(97)
             anInt3141++
             return (arrayOf<Class231?>(Class68.aClass231_1189, Class348_Sub40_Sub20.aClass231_9263, Class288.aClass231_4953))
         }
 
-        @JvmStatic
         fun method1711(i: Int, class45: Class45?, i_0_: Int, class45_1_: Class45?) {
             try {
                 Class135_Sub2.aClass45_4843 = class45_1_
@@ -63,13 +61,11 @@ abstract class Class239 {
             }
         }
 
-        @JvmStatic
         fun method1713(bool: Boolean, i: Int) {
             method1728(Class348_Sub42_Sub8_Sub2.anInt10432, -1, r.anInt9721, bool, Class321.anInt4017)
             if (i == 520) anInt3137++
         }
 
-        @JvmStatic
         fun method1715(i: Int) {
             aClass114_3145 = null
             aClass114_3143 = null
@@ -80,7 +76,6 @@ abstract class Class239 {
             if (i < 13) method1709(-99)
         }
 
-        @JvmStatic
         fun method1717(i: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             Class348_Sub33.aByteArrayArrayArray6962 = Array<Array<ByteArray?>?>(i_6_) { Array<ByteArray?>(i_5_) { ByteArray(i_4_) } }
             if (i != 19278) method1717(35, 126, -83, 85)

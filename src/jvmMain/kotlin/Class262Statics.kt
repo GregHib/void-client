@@ -15,7 +15,6 @@ object Class262Statics {
     var anObject3331: Any? = null
     var aClass190ArrayArray3335: Array<Array<Class190?>?>? = null
 
-    @JvmStatic
     fun method1991(f: Float, f_3_: Float, fs: FloatArray?, i: Int, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, f_9_: Float, fs_10_: FloatArray?, i_11_: Int, i_12_: Int) {
         var i = i
         var i_7_ = i_7_
@@ -73,7 +72,6 @@ object Class262Statics {
         } while (false)
     }
 
-    @JvmStatic
     fun method1992(class318_sub1: Class318_Sub1, i: Int, i_20_: Int, i_21_: Int) {
         if (i_20_ < Class318_Sub7.anInt6451) {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_20_ + 1]!![i_21_]
@@ -93,7 +91,6 @@ object Class262Statics {
         }
     }
 
-    @JvmStatic
     fun method1994(i: Int) {
         aClass190ArrayArray3335 = null
         anObject3331 = null

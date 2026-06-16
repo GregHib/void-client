@@ -48,7 +48,6 @@ class Class239_Sub28 : Class239 {
         var anInt6142: Int = 0
         var anInt6143: Int = 0
 
-        @JvmStatic
         fun method1842(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int): Boolean {
             anInt6134++
             if (i_1_ != -1) return false
@@ -56,7 +55,6 @@ class Class239_Sub28 : Class239 {
             return i_0_ + i_7_ > i_4_ && i_0_ < i_2_ + i_4_
         }
 
-        @JvmStatic
         fun method1843(i: Int, i_8_: Int, class46: Class46, bool: Boolean, i_9_: Int) {
             anInt6135++
             if (i_8_ != -326) method1844(32, -33, false, 1, false, 64, -83)
@@ -91,7 +89,6 @@ class Class239_Sub28 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1844(i: Int, i_12_: Int, bool: Boolean, i_13_: Int, bool_14_: Boolean, i_15_: Int, i_16_: Int) {
             Class348_Sub42_Sub4.anInt9515 = i_13_
             Class275.anInt3550 = i_16_
@@ -111,14 +108,12 @@ class Class239_Sub28 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1846(i: Int, i_18_: Int, i_19_: Int): Boolean {
             if (i_19_ <= 42) return true
             anInt6143++
             return Class278.method2075(i_18_, -126, i) or ((0x40000 and i_18_) != 0) || Class273.method2056(i_18_, 122, i)
         }
 
-        @JvmStatic
         fun method1847(strings: Array<String?>?, i: Int): Array<String?> {
             anInt6140++
             val strings_20_ = arrayOfNulls<String>(5)

@@ -18,7 +18,6 @@ class Class348_Sub36 : Class348() {
         var anInt6985: Int
         var aClass46_6990: Class46? = null
         var anInt6992: Int = 0
-        @JvmStatic
         fun method3029(i: Int) {
             aClass46_6990 = null
             val i_0_ = 28 % ((i - -45) / 39)

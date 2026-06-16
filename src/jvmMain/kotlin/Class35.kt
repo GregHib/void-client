@@ -8,7 +8,6 @@ object Class35 {
     var anInt484: Int = 0
     var anInt485: Int = 0
 
-    @JvmStatic
     fun method352(i: Int) {
         anInt483++
         Class162.method1265(i + 15)
@@ -19,7 +18,6 @@ object Class35 {
         Class194.aClass279_2596!!.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065)
     }
 
-    @JvmStatic
     fun method353(i: Int, i_0_: Int, i_1_: Int): Int {
         var i = i
         anInt485++

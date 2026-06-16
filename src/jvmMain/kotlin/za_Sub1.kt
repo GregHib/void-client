@@ -21,7 +21,6 @@ class za_Sub1(i: Int) : za() {
         var anInt9775: Int = -1
         var anInt9776: Int = 0
 
-        @JvmStatic
         fun method3439(i: Int): Int {
             anInt9771++
             if (i <= 92) return 99
@@ -29,7 +28,6 @@ class za_Sub1(i: Int) : za() {
             return Class59_Sub1.anInt5283
         }
 
-        @JvmStatic
         fun method3441(i: Int) {
             aClass113_9773 = null
             if (i != 1) method3439(-118)

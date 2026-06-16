@@ -41,7 +41,6 @@ object Class331 {
         Class367_Sub4.aClass107_7325!!.method1009(2110355138)
     }
 
-    @JvmStatic
     fun method2637(i: Int) {
         aStringArray4129 = null
         aClass46_4130 = null

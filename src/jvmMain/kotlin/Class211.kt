@@ -362,7 +362,6 @@ class Class211 {
             if (i >= -84) anIntArray2744 = null
         }
 
-        @JvmStatic
         fun method1543(i: Int) {
             anIntArray2744 = null
             if (i != -4524) anInt2747 = 24

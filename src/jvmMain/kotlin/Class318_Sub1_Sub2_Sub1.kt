@@ -187,7 +187,6 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         var anInt10198: Int = 0
         var aFloat10199: Float = 0f
 
-        @JvmStatic
         fun method2407(bool: Boolean) {
             aStringArray10195 = null
             aClass138_10194 = null

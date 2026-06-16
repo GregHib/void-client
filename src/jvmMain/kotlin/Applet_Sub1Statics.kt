@@ -7,38 +7,32 @@
  */
 object Applet_Sub1Statics {
 
-    @JvmStatic
     fun method85(i: Int, class45: Class45?) {
         Applet_Sub1.anInt32++
         Class369_Sub3.aClass45_8601 = class45
         if (i != 0) Applet_Sub1.anInt37 = 101
     }
 
-    @JvmStatic
     fun method86(string: String?, i: Int): Boolean {
         Applet_Sub1.anInt13++
         if (i != 0) return true
         return Class275.aHashtable3548!!.containsKey(string)
     }
 
-    @JvmStatic
     fun provideLoaderApplet(applet: GameApplet) {
         Applet_Sub1.anInt11++
         Class93.anApplet1530 = applet
     }
 
-    @JvmStatic
     fun set(string: String) {
         Class363.aString4461 = string
         Class348_Sub38.anInt7006 = string.length
     }
 
-    @JvmStatic
     fun method94(string: String, i: Int) {
         GameLoggers.log(string, i)
     }
 
-    @JvmStatic
     fun method98(i: Int) {
         Applet_Sub1.anIntArray38 = null
         Applet_Sub1.aClass324_20 = null

@@ -14,7 +14,6 @@ abstract class Class186 {
         var aString2496: String?
         var anIntArray2497: IntArray?
 
-        @JvmStatic
         fun method1396(i: Int) {
             aClass45_2490 = null
             aClass74_2491 = null
@@ -25,7 +24,6 @@ abstract class Class186 {
             if (i != 25) aClass351_2495 = null
         }
 
-        @JvmStatic
         fun method1397(i: Int) {
             anInt2493++
             val i_0_ = Class328_Sub1.anInt6513

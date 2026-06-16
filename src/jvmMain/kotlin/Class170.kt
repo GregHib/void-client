@@ -147,7 +147,6 @@ class Class170 : Interface17 {
             if (i_17_ > -113) aClass237_Sub1_5067 = null
         }
 
-        @JvmStatic
         fun method1309(bool: Boolean, i: Int) {
             if (Class51.aClass311_897 == null) method726(92)
             if (i < 116) aClass237_Sub1_5067 = null
@@ -155,7 +154,6 @@ class Class170 : Interface17 {
             if (bool) Class51.aClass311_897!!.method2326(96)
         }
 
-        @JvmStatic
         fun method1310(bool: Boolean) {
             if (bool == true) aClass237_Sub1_5067 = null
         }
@@ -174,7 +172,6 @@ class Class170 : Interface17 {
             }
         }
 
-        @JvmStatic
         fun method1312(i: Byte, class348_sub49: Class348_Sub49): Class52 {
             anInt5075++
             val i_23_ = class348_sub49.readInt((-126).toByte())
@@ -182,7 +179,6 @@ class Class170 : Interface17 {
             return Class52(i_23_)
         }
 
-        @JvmStatic
         fun method1315(i: Int) {
             anInt5077++
             if (Class318_Sub1_Sub5.aClass144_8766 != null) {

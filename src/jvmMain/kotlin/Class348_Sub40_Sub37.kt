@@ -148,7 +148,6 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
         var aLongArray9465: LongArray? = null
         var aClass105Array9467: Array<Class105?>? = null
 
-        @JvmStatic
         fun method3146(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int, i_4_: Int, `is`: ByteArray?, is_5_: ByteArray?, i_6_: Int) {
             var i_0_ = i_0_
             var i_4_ = i_4_
@@ -174,7 +173,6 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
             }
         }
 
-        @JvmStatic
         fun method3147(i: Byte) {
             if (i.toInt() != 27) method3146(-85, 87, 91.toByte(), 46, -77, 54, null, null, -117)
             Class248.anInt3203 = -1
@@ -183,7 +181,6 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
             anInt9459++
         }
 
-        @JvmStatic
         fun method3148(bool: Boolean) {
             anIntArray9458 = null
             aLongArray9465 = null

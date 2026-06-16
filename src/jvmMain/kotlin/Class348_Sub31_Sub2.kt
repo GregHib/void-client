@@ -105,7 +105,6 @@ class Class348_Sub31_Sub2 : Class348_Sub31(), ImageProducer {
         var anInt9080: Int = 0
         var anInt9081: Int = 0
         var aClass357ArrayArrayArray9082: Array<Array<Array<Class357?>?>?>? = null
-        @JvmStatic
         fun method3016(i: Int) {
             if (i != 65280) method3016(-19)
             anIntArray9069 = null

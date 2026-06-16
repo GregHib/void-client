@@ -391,12 +391,10 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
         var anInt6366: Int = 0
         var anInt6367: Int = 0
         var anInt6370: Int = 0
-        @JvmStatic
         fun method2344(i: Int) {
             if (i == 0) aClass114_6340 = null
         }
 
-        @JvmStatic
         fun method2347(i: Byte): String? {
             if (i.toInt() != -119) return null
             anInt6343++
@@ -405,7 +403,6 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
             return (Class316.aClass348_Sub42_Sub12_3963!!.aString9601)
         }
 
-        @JvmStatic
         fun method2348(i: Int): Int {
             anInt6353++
             if (i != -8454) method2352(44, -11, 126)
@@ -439,7 +436,6 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
             return i_6_
         }
 
-        @JvmStatic
         fun method2352(i: Int, i_20_: Int, i_21_: Int): Boolean {
             anInt6358++
             val i_22_ = -38 / ((60 - i) / 40)

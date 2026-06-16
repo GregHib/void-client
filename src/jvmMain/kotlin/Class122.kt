@@ -25,21 +25,18 @@ object Class122 {
         }
     }
 
-    @JvmStatic
     fun method1086(bool: Boolean) {
         if (bool != true) anInt1803 = -25
         aStringArray1808 = null
         aBooleanArray1806 = null
     }
 
-    @JvmStatic
     fun method1087(i: Int, i_4_: Int, i_5_: Int): Boolean {
         if (i != 12644) Class122.method1085(55, -60, (-29).toByte(), -35, -112)
         anInt1809++
         return (0x84080 and i_5_) != 0
     }
 
-    @JvmStatic
     fun method1088(i: Int, i_6_: Byte, i_7_: Int, i_8_: Int, i_9_: Int): Int {
         anInt1804++
         val i_10_ = -Class70.anIntArray1204!![8192 * i_8_ / i_7_] + 65536 shr 1

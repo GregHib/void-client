@@ -13,7 +13,6 @@ object Class121 {
     var anInt1799: Int = 0
     var aClass105_1800: Class105? = null
 
-    @JvmStatic
     fun method1081(i: Byte) {
         val i_0_ = -38 % ((i - 57) / 62)
         aClass105_1800 = null
@@ -39,7 +38,6 @@ object Class121 {
         return 0
     }
 
-    @JvmStatic
     fun method1083(var_ha: ha?, i: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt1798++
         Class21.aHa326 = var_ha
@@ -58,7 +56,6 @@ object Class121 {
         val i_6_ = 90 % ((70 - i_2_) / 33)
     }
 
-    @JvmStatic
     fun method1084(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int): Boolean {
         anInt1799++
         val i_13_ = i_9_ - -i_7_

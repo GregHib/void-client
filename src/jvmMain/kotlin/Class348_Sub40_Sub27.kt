@@ -73,7 +73,6 @@ class Class348_Sub40_Sub27 : Class348_Sub40(3, false) {
         var anInt9359: Int = 0
         var anInt9360: Int = 0
 
-        @JvmStatic
         fun method3121(i: Byte) {
             aClipboard9357 = null
             if (i <= 21) aClipboard9357 = null

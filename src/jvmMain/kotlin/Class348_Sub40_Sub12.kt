@@ -335,7 +335,6 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
         var anInt9198: Int = 0
         var anInt9200: Int = 0
 
-        @JvmStatic
         fun method3076(i: Int, bool: Boolean) {
             anInt9198++
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255), 0)
@@ -365,7 +364,6 @@ class Class348_Sub40_Sub12 : Class348_Sub40(1, false) {
             RuntimeException_Sub1.aBoolean4604 = true
         }
 
-        @JvmStatic
         fun method3077(i: Byte) {
             aClass351_9189 = null
             aClass114_9197 = null

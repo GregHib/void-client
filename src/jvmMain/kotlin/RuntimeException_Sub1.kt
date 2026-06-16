@@ -14,7 +14,6 @@ class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: Str
         var aBoolean4604: Boolean
         var anInt4605: Int = 0
 
-        @JvmStatic
         fun method4009(i: Int, `is`: IntArray?, is_0_: IntArray?, i_1_: Int, var_ha_Sub2: ha_Sub2?, i_2_: Int): aa_Sub1 {
             try {
                 anInt4597++
@@ -29,7 +28,6 @@ class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: Str
             }
         }
 
-        @JvmStatic
         fun method4010(i: Int) {
             if (i == -3) {
                 anIntArray4603 = null
@@ -38,7 +36,6 @@ class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: Str
             }
         }
 
-        @JvmStatic
         fun method4011(i: Int, class45: Class45?) {
             anInt4598++
             if (i != 1024) method4012(null, 68.toByte())
@@ -53,7 +50,6 @@ class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: Str
             Class2.method172(30284, class45)
         }
 
-        @JvmStatic
         fun method4012(`is`: ByteArray?, i: Byte) {
             anInt4605++
             val class348_sub49 = Class348_Sub49(`is`)

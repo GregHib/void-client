@@ -81,7 +81,6 @@ class Class179 internal constructor(private val anInt2365: Int, bool: Boolean) {
         var anInt2368: Int = 0
         var anInt2369: Int = 0
 
-        @JvmStatic
         fun method1357(`is`: ByteArray?, bool: Boolean, i: Byte): Any? {
             if (i < 73) anInt2361 = -51
             anInt2363++
@@ -99,7 +98,6 @@ class Class179 internal constructor(private val anInt2365: Int, bool: Boolean) {
             return `is`
         }
 
-        @JvmStatic
         fun method1359(bool: Boolean, i: Int): Int {
             anInt2368++
             if (bool != true) anInt2361 = -32

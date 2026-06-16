@@ -80,7 +80,6 @@ class Class277 {
             }
         }
 
-        @JvmStatic
         fun method2071(i: Int) {
             aClass21_3572 = null
             aClass137_3568 = null

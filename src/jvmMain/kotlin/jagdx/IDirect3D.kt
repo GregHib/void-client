@@ -53,7 +53,6 @@ class IDirect3D private constructor(private val b: hb?) : IUnknown(b) {
     private external fun _GetDeviceCaps(arg0: Int, arg1: Int, arg2: D3DCAPS?): Int
 
     companion object {
-        @JvmStatic
         fun a(arg0: Int, arg1: hb?): IDirect3D {
             val local4 = IDirect3D(arg1)
             val local8: Int = _Direct3DCreate(arg0, local4)
@@ -63,7 +62,6 @@ class IDirect3D private constructor(private val b: hb?) : IUnknown(b) {
             return local4
         }
 
-        @JvmStatic
         private external fun _Direct3DCreate(arg0: Int, arg1: IDirect3D?): Int
     }
 }

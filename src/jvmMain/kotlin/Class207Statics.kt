@@ -1,5 +1,4 @@
 object Class207Statics {
-    @JvmStatic
     fun method1512(class45: Class45, i: Int): Class207? {
         val `is` = class45.method415(73.toByte(), i)
         if (`is` == null) return null
@@ -71,21 +70,18 @@ object Class207Statics {
         return class207s
     }
 
-    @JvmStatic
     fun method1519(class45: Class45, i: Int, i_105_: Int): Array<Class207>? {
         val `is` = class45.method410(-1860, i, i_105_)
         if (`is` == null) return null
         return method1517(`is`)
     }
 
-    @JvmStatic
     fun method1521(class45: Class45, i: Int, i_112_: Int): Class207? {
         val `is` = class45.method410(-1860, i, i_112_)
         if (`is` == null) return null
         return method1517(`is`)[0]
     }
 
-    @JvmStatic
     fun method1523(class45: Class45, i: Int): Array<Class207>? {
         val `is` = class45.method415(73.toByte(), i)
         if (`is` == null) return null

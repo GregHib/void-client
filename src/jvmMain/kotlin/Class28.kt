@@ -30,7 +30,6 @@ class Class28 : Interface15 {
         var aString5001: String? = null
         var aBoolean5002: Boolean = false
 
-        @JvmStatic
         fun method318(i: Int) {
             aString5001 = null
             aString5000 = null

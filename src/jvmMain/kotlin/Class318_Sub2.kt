@@ -60,14 +60,12 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
             } while (false)
         }
 
-        @JvmStatic
         fun method2495(i: Byte) {
             if (i <= 110) anIntArray6393 = null
             anIntArray6393 = null
             aClass147Array6400 = null
         }
 
-        @JvmStatic
         fun method2496(i: Int, i_9_: Int, bool: Boolean): Boolean {
             if (bool != true) Companion.method2497(null, (-29).toByte(), null, 73)
             anInt6396++
@@ -105,7 +103,6 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
             }
         }
 
-        @JvmStatic
         fun method2498(class338: Class338?, var_ha: ha?, i: Byte, i_18_: Int) {
             try {
                 anInt6395++

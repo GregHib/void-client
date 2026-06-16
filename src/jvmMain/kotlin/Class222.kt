@@ -45,7 +45,6 @@ class Class222 {
         var anInt2889: Int = 0
         var aClass351_2892: Class351? = Class351(39, 8)
 
-        @JvmStatic
         fun method1609(i: Byte) {
             if (i <= -71) {
                 aClass351_2892 = null

@@ -65,7 +65,6 @@ class Class49 internal constructor(var_ha_Sub1: ha_Sub1?, class105: Class105?, c
         var anInt4727: Int = 0
         var aBoolean4728: Boolean = false
         var aClass46_4730: Class46? = null
-        @JvmStatic
         fun method453(i: Int) {
             if (i == -2001) aClass46_4730 = null
         }

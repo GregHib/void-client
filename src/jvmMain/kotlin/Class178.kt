@@ -24,7 +24,6 @@ object Class178 {
     var aClass29_2353: Class29? = Class29(28, -2)
     private var aClass29Array2354: Array<Class29?>? = arrayOfNulls<Class29>(32)
 
-    @JvmStatic
     fun method1355(i: Int) {
         aClass29_2346 = null
         aClass29_2349 = null

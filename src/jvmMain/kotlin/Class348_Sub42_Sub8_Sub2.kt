@@ -40,7 +40,6 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
         var aClass74_10437: Class74? = Class74(0, 3)
         var anInt10438: Int = 0
 
-        @JvmStatic
         fun method3200(i: Int, i_0_: Int, i_1_: Byte): Boolean {
             anInt10433++
             val i_2_ = 18 / ((i_1_ - 30) / 42)
@@ -49,7 +48,6 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or Class274.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
         }
 
-        @JvmStatic
         @Throws(IOException::class)
         fun method3201(bool: Boolean): Boolean {
             anInt10430++
@@ -1781,7 +1779,6 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             return true
         }
 
-        @JvmStatic
         fun method3202(i: Byte) {
             aClass230_10434 = null
             if (i > 38) {

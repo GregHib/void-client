@@ -9,7 +9,6 @@ import java.awt.Canvas
 object Class124Statics {
     var aClass45_1848: Class45? = null
 
-    @JvmStatic
     fun method1096(i: Int) {
         if (i >= 88) aClass45_1848 = null
     }
@@ -25,7 +24,6 @@ object Class124Statics {
         return Class350.method3452(i_22_, (-15).toByte(), i_20_)
     }
 
-    @JvmStatic
     fun method1108(i: Byte, canvas: Canvas) {
         Class124.anInt1850++
         val dimension = canvas.getSize()

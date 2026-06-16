@@ -15,7 +15,6 @@ abstract class Class246 {
         var anInt3178: Int = 0
         var aClass143_3179: Class143? = null
 
-        @JvmStatic
         fun method1885(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, fs: FloatArray?, i_4_: Int, f: Float, i_5_: Int, i_6_: Int, f_7_: Float, fs_8_: FloatArray?) {
             var i_0_ = i_0_
             var i_3_ = i_3_
@@ -50,14 +49,12 @@ abstract class Class246 {
             }
         }
 
-        @JvmStatic
         fun method1886(i: Int) {
             if (i != 4908) method1885(-84, 89, 50, 37, 107, null, -109, 0.5058839f, -21, -30, 0.003914575f, null)
             anIntArray3173 = null
             aClass143_3179 = null
         }
 
-        @JvmStatic
         fun method1887(i: Int, i_16_: Int, i_17_: Int): Boolean {
             anInt3178++
             if (i != 0) return true

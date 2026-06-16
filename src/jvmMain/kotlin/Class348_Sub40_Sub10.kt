@@ -77,7 +77,6 @@ class Class348_Sub40_Sub10 : Class348_Sub40(1, false) {
         var anIntArray9183: IntArray?
         var aBoolean9184: Boolean
 
-        @JvmStatic
         fun method3074(i: Int) {
             anIntArray9183 = null
             aClass308_9180 = null

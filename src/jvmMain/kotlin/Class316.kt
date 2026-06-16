@@ -51,7 +51,6 @@ class Class316 internal constructor(`is`: IntArray) {
         var anInt3965: Int = 0
         var anInt3966: Int = 0
 
-        @JvmStatic
         fun method2363(i: Int) {
             if (i <= -39) {
                 anInt3958++
@@ -102,14 +101,12 @@ class Class316 internal constructor(`is`: IntArray) {
             }
         }
 
-        @JvmStatic
         fun method2366(bool: Boolean) {
             aClass348_Sub42_Sub12_3963 = null
             aClass348_Sub51_3959 = null
             if (bool != true) method2368(46)
         }
 
-        @JvmStatic
         fun method2367(i: Byte, class348_sub42_sub12: Class348_Sub42_Sub12): String? {
             anInt3962++
             val i_41_ = 9 / ((79 - i) / 46)
@@ -121,7 +118,6 @@ class Class316 internal constructor(`is`: IntArray) {
             return (class348_sub42_sub12.aString9593 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + class348_sub42_sub12.aString9601 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + class348_sub42_sub12.aString9595)
         }
 
-        @JvmStatic
         fun method2368(i: Int) {
             Class15.aClass60_225!!.method590(0)
             anInt3965++

@@ -97,7 +97,6 @@ class Class349 {
             return f_7_ * 3.1415927f / 11025.0f
         }
 
-        @JvmStatic
         fun method3450() {
             aFloatArrayArray4306 = null
             anIntArrayArray4301 = null

@@ -19,13 +19,11 @@ class Class347 {
         var aByteArrayArray4281: Array<ByteArray?>? = null
         var aBoolean4284: Boolean = false
 
-        @JvmStatic
         fun method2707(bool: Boolean) {
             aByteArrayArray4281 = null
             if (bool != false) method2708(57)
         }
 
-        @JvmStatic
         fun method2708(i: Int) {
             Class251.method1916(-9343, Class289.aClass46_3701!!)
             anInt4280++

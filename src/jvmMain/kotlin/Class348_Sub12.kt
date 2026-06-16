@@ -710,7 +710,6 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
         var aLong6748: Long get() = Class348Sub12Statics.aLong6748; set(v) { Class348Sub12Statics.aLong6748 = v }
         private var aShortArrayArray6749: Array<ShortArray?>?
         var aFloat6752: Float = 0f
-        @JvmStatic
         fun method2798(i: Int) {
             aShortArrayArray6741 = null
             aClass105Array6742 = null

@@ -206,7 +206,6 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
         private var anIntArray1226: IntArray? = IntArray(4)
         private var aClass64_1227: Class64? = null
         private var aClass105_1228: Class105? = null
-        @JvmStatic
         fun method731() {
             aClass64_1227 = null
             aClass105_1215 = null

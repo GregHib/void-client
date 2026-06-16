@@ -33,7 +33,6 @@ class Class302 {
             Class176.aClass348_Sub26_2332 = null
         }
 
-        @JvmStatic
         fun method2284(i: Byte, l: Long) {
             try {
                 anInt3841++

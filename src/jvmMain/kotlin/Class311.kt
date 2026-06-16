@@ -195,7 +195,6 @@ class Class311 : Runnable {
         var anInt3912: Int = 0
         var aClass46_3913: Class46? = null
         var anInt3918: Int = 1
-        @JvmStatic
         fun method2317(i: Byte) {
             if (i > 50) {
                 aClass351_3898 = null

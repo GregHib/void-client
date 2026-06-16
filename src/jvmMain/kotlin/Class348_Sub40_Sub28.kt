@@ -121,7 +121,6 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
             return (arrayOf<Class364?>(Class55_Sub1.aClass364_5271, Class367_Sub8.aClass364_7361, Class26.aClass364_382, Class108.aClass364_1657, Class76.aClass364_1279, Class342.aClass364_4246))
         }
 
-        @JvmStatic
         fun method3123(i: Int) {
             aClass45_9365 = null
             if (i != 0) Companion.method3122((-98).toByte())

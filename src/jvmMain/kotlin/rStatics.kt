@@ -14,7 +14,6 @@ object rStatics {
     var aClass101_9720: Class101? = null
     var anIntArrayArray9723: Array<IntArray?>?
 
-    @JvmStatic
     fun method3284(bool: Boolean, d: Double) {
         Class44.aClass101_624!!.method898(Class51.aClass101_905)
         r.anInt9717++
@@ -23,7 +22,6 @@ object rStatics {
         Class21.aHa326!!.method3638(Class44.aClass101_624)
     }
 
-    @JvmStatic
     fun method3285(i: Int) {
         val i_0_ = -61 % ((i - -73) / 32)
         aClass101_9720 = null

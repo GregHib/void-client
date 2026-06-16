@@ -162,7 +162,6 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
         var aClass114_7324: Class114? = Class114(96, 8)
         var aClass107_7325: Class107? = Class107()
 
-        @JvmStatic
         fun method3541(i: Byte) {
             aClass114_7323 = null
             aClass114_7324 = null
@@ -170,7 +169,6 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
             if (i.toInt() == 23) aClass351_7318 = null
         }
 
-        @JvmStatic
         fun method3542(i: Int, class357s: Array<Array<Array<Class357?>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
             anInt7310++
             val i_16_ = if (bool) 1.toByte() else (Class239_Sub15.anInt6006 and 0xff).toByte()
@@ -339,7 +337,6 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
             return true
         }
 
-        @JvmStatic
         fun method3543(i: Byte) {
             anInt7309++
             if (i.toInt() == -89) {
@@ -348,7 +345,6 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
             }
         }
 
-        @JvmStatic
         fun method3544(class348_sub49: Class348_Sub49?, i: Int, string: String?): Int {
             try {
                 anInt7321++

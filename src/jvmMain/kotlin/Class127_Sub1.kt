@@ -26,7 +26,6 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
         /*synthetic*/
         var aClass8389: Class<*>? = null
 
-        @JvmStatic
         fun method1118(bool: Boolean, bool_2_: Boolean, class348_sub41: Class348_Sub41, i: Int) {
             anInt8382++
             val i_3_ = class348_sub41.anInt7050
@@ -68,7 +67,6 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
             }
         }
 
-        @JvmStatic
         fun method1120(i: Int) {
             aClass114_8384 = null
             aClass271_8378 = null

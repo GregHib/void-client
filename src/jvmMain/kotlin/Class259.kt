@@ -41,7 +41,6 @@ class Class259 internal constructor(class230: Class230?, i: Int, class45: Class4
         var aClass305_3304: Class305? = null
         var anInt3306: Int = 0
 
-        @JvmStatic
         fun method1975(i: Byte) {
             aClass60_3301 = null
             val i_0_ = -54 / ((i - 77) / 37)

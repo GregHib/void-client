@@ -154,14 +154,12 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
         var aClass45_8755: Class45? = null
         var aClass114_8756: Class114? = Class114(107, 6)
 
-        @JvmStatic
         fun method2408(i: Byte): Int {
             anInt8754++
             val i_4_ = -71 % ((-2 - i) / 44)
             return Class348_Sub40_Sub31.anInt9411++
         }
 
-        @JvmStatic
         fun method2410(i: Byte, i_5_: Int, i_6_: Int): Boolean {
             anInt8752++
             if (i >= -21) return true
@@ -200,7 +198,6 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
             throw IllegalArgumentException()
         }
 
-        @JvmStatic
         fun method2412(bool: Boolean) {
             aClass45_8755 = null
             aClass114_8756 = null
@@ -208,7 +205,6 @@ abstract class Class318_Sub1_Sub3 internal constructor(i: Int, i_10_: Int, i_11_
             if (bool != true) Companion.method2408((-121).toByte())
         }
 
-        @JvmStatic
         fun method2413(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2): Int {
             anInt8749++
             val i_35_ = class348_sub49_sub2.readBits((-24).toByte(), 2)

@@ -275,7 +275,6 @@ class Class181 {
             }
         }
 
-        @JvmStatic
         fun method1369(i: Byte) {
             aBooleanArray2374 = null
             if (i.toInt() != 2) anInt2398 = 113

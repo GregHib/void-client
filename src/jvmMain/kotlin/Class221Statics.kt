@@ -11,7 +11,6 @@ import kotlin.math.max
  * a ctor-param type threaded through the Class369 hierarchy.
  */
 object Class221Statics {
-    @JvmStatic
     fun method1607(class221: Class221, i: Int, i_0_: Int, i_1_: Byte): Int {
         Class221.anInt2882++
         val i_2_ = (max(Class321.anInt4017, i))

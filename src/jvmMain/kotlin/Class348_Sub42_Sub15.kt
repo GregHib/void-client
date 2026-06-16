@@ -61,7 +61,6 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
         var aClass105_9659: Class105? = null
         var aClass56_9660: Class56? = null
 
-        @JvmStatic
         fun method3247(i: Int) {
             if (i > -49) method3247(49)
             aClass56_9660 = null

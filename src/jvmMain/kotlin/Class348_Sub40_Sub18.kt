@@ -147,7 +147,6 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
             }
         }
 
-        @JvmStatic
         fun method3096(i: Int) {
             anIntArray9249 = null
             aClass319_9245 = null

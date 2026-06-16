@@ -46,7 +46,6 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
             Class348_Sub42_Sub9_Sub1.aClass356_10442!!.method3481(0)
         }
 
-        @JvmStatic
         fun method466(bool: Boolean, string: String?, i: Int, i_0_: Byte, bool_1_: Boolean, i_2_: Int, i_3_: Int, bool_4_: Boolean, i_5_: Int, l: Long, string_6_: String?, l_7_: Long, i_8_: Int) {
             var i_8_ = i_8_
             try {
@@ -71,21 +70,18 @@ class Class50_Sub3 internal constructor(private val anInt5246: Int, private val 
             }
         }
 
-        @JvmStatic
         fun method468(string: String?, i: Int): Boolean {
             val i_11_ = -91 % ((-35 - i) / 52)
             anInt5239++
             return Class174.method1332(true, true, 10, string!!)
         }
 
-        @JvmStatic
         fun method469(i: Byte) {
             val i_33_ = -24 / ((i - -12) / 41)
             aColorArray5242 = null
             anIntArray5241 = null
         }
 
-        @JvmStatic
         fun method470(`is`: ShortArray?, i: Byte): ShortArray? {
             anInt5253++
             if (`is` == null) return null

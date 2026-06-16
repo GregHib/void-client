@@ -305,7 +305,6 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
         var anInt1629: Int = 0
         var anInt1630: Int = 0
 
-        @JvmStatic
         fun method953(i: Byte) {
             anIntArray1626 = null
             aClass45_1627 = null
@@ -319,7 +318,6 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
             return i_34_ >= 4 && i_34_ <= 8
         }
 
-        @JvmStatic
         fun method958(bool: Boolean, i: Int, var_d: d?, i_61_: Int, canvas: Canvas?, class45: Class45?): ha? {
             try {
                 if (bool != true) aClass221_1620 = null
@@ -341,7 +339,6 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
          * Overload that accepts a pre-built [DisplayTarget] with explicit [width]/[height],
          * so callers (Class22, Class284) don't need to construct a raw [Canvas].
          */
-        @JvmStatic
         fun method958(bool: Boolean, i: Int, var_d: d?, i_61_: Int, target: DisplayTarget, width: Int, height: Int, class45: Class45?): ha? {
             try {
                 if (bool != true) aClass221_1620 = null
@@ -353,7 +350,6 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
             }
         }
 
-        @JvmStatic
         fun method960(i: Int) {
             Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
             anInt1611++

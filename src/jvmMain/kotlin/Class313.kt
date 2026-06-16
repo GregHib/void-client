@@ -10,12 +10,10 @@ object Class313 {
     var anInt3936: Int = 0
     var anInt3937: Int = 0
 
-    @JvmStatic
     fun method2333(bool: Boolean) {
         if (bool == false) aClass223_3934 = null
     }
 
-    @JvmStatic
     fun method2334(i: Int) {
         Class318_Sub1_Sub3_Sub4.anInt10340++
         if (i != 0) method2333(true)

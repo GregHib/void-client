@@ -32,7 +32,6 @@ class Class342 internal constructor(var anInt4245: Int, var anInt4244: Int) {
         var anIntArrayArray4253: Array<IntArray?>? = null
         var aClass60_4254: Class60?
 
-        @JvmStatic
         fun method2682(i: Int) {
             aClass364_4246 = null
             anIntArrayArray4253 = null

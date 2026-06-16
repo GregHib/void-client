@@ -359,7 +359,6 @@ class r_Sub1(var_ha_Sub3: ha_Sub3?, i: Int, i_19_: Int) : r() {
         var anIntArray10478: IntArray? = IntArray(1)
         var aClass262_10479: Class262?
 
-        @JvmStatic
         fun method3288(i: Byte) {
             val i_14_ = 107 % ((i - 27) / 34)
             anIntArray10478 = null
@@ -367,7 +366,6 @@ class r_Sub1(var_ha_Sub3: ha_Sub3?, i: Int, i_19_: Int) : r() {
             aClass262_10479 = null
         }
 
-        @JvmStatic
         fun method3290(i: Int) {
             if (i < 30) aClass262_10479 = null
             method131(Class316.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)

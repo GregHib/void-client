@@ -15,12 +15,10 @@ open class Class318_Sub9_Sub2 : Class318_Sub9(), SceneEntity {
     companion object {
         var anIntArray8797: IntArray? = intArrayOf(19, 55, 38, 155, 255, 110, 137, 205, 76)
 
-        @JvmStatic
         fun method2518(i: Int) {
             if (i == 137) anIntArray8797 = null
         }
 
-        @JvmStatic
         fun method2519(class318_sub1: Class318_Sub1, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             var bool = true
             var i_4_ = i_0_

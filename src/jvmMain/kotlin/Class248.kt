@@ -383,7 +383,6 @@ class Class248 {
             }
         }
 
-        @JvmStatic
         fun method1897(i: Byte) {
             if (i.toInt() == 119) aClass229_3196 = null
         }

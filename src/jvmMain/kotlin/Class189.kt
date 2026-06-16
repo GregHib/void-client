@@ -246,7 +246,6 @@ class Class189 {
             return false
         }
 
-        @JvmStatic
         fun method1421(i: Byte) {
             aClass278_2529 = null
             if (i.toInt() != -85) method1421(39.toByte())

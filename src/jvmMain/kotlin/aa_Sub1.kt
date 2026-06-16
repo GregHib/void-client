@@ -16,7 +16,6 @@ class aa_Sub1(var_ha_Sub2: ha_Sub2?, i: Int, i_1_: Int, `is`: ByteArray?) : aa()
     companion object {
         var aSArray5191: Array<s?>? = null
         var anIntArray5192: IntArray? = null
-        @JvmStatic
         fun method161(i: Int) {
             val i_0_ = -70 / ((i - 42) / 48)
             aSArray5191 = null

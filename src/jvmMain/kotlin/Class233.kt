@@ -410,7 +410,6 @@ class Class233 internal constructor() {
         var anInt3021: Int = 0
         var aClass107_3022: Class107? = Class107()
         var anInt3023: Int = 0
-        @JvmStatic
         fun method1653(i: Int) {
             aClass107_3022 = null
             aFloatArray3015 = null

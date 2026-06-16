@@ -76,20 +76,17 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
         var anInt9353: Int = 0
         var anInt9355: Int = 0
 
-        @JvmStatic
         fun method3118(i: Byte) {
             aBooleanArray9351 = null
             val i_0_ = 37 / ((28 - i) / 61)
         }
 
-        @JvmStatic
         fun method3119(i: Int, i_1_: Int, i_2_: Int): Boolean {
             if (i_1_ <= 39) method3119(-106, 118, -21)
             anInt9355++
             return (i and 0xc580) != 0
         }
 
-        @JvmStatic
         fun method3120(i: Int) {
             Class312.anInt3931 = 0
             anInt9345++

@@ -126,7 +126,6 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anIntArray6260: IntArray? = IntArray(1)
         var anInt6261: Int = 0
 
-        @JvmStatic
         fun method2158(i: Byte) {
             anInt6256++
             var i_0_ = 0
@@ -155,7 +154,6 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
         }
 
-        @JvmStatic
         fun method2159(i: Byte, class45: Class45) {
             Class348_Sub22.anInt6862 = class45.method417("hitmarks", 0)
             anInt6258++
@@ -177,7 +175,6 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             Class5_Sub3.anInt8370 = class45.method417("hint_mapedge", 0)
         }
 
-        @JvmStatic
         fun method2160(i: Int) {
             if (i == 0) {
                 aD6247 = null
@@ -185,7 +182,6 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
         }
 
-        @JvmStatic
         fun method2161(i: Byte, l: Long) {
             try {
                 anInt6251++

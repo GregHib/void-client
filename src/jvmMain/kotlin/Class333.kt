@@ -48,7 +48,6 @@ class Class333 {
             if (Class348_Sub1_Sub2.aByteArrayArray8816 != null) Class348_Sub1_Sub2.aByteArrayArray8816!![i]!![i_0_] = i_3_.toByte()
         }
 
-        @JvmStatic
         fun method2645(i: Int) {
             if (i != -16777216) method2643(-59, 61, -83, 34, -32)
             aClass45_4147 = null

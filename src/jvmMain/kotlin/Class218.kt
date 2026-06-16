@@ -101,7 +101,6 @@ class Class218 {
             }
         }
 
-        @JvmStatic
         fun method1594(i: Int) {
             aClass262_2859 = null
             if (i != -1966608624) aClass262_2859 = null

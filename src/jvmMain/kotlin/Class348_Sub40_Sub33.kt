@@ -100,7 +100,6 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
         var anInt9429: Int = 0
         var anInt9430: Int = 0
 
-        @JvmStatic
         fun method3137(bool: Boolean, i: Byte): Boolean {
             var bool = bool
             anInt9426++
@@ -115,7 +114,6 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
             return true
         }
 
-        @JvmStatic
         fun method3138(i: Byte) {
             aClass46ArrayArray9427 = null
             val i_1_ = 93 % ((-58 - i) / 55)

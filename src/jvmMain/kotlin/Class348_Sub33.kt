@@ -57,7 +57,6 @@ class Class348_Sub33 internal constructor(var anInt6958: Int, `is`: ByteArray?) 
         var aLong6966: Long
         var anInt6967: Int = 0
 
-        @JvmStatic
         fun method3024(i: Int) {
             aClass152_6955 = null
             if (i >= -74) anInt6967 = 12

@@ -17,14 +17,12 @@ class Class43 {
         var anIntArray619: IntArray? = intArrayOf(0, 1, 2, 2, 1, 1, 2, 3, 1, 3, 3, 4, 2, 0, 4)
         var anInt620: Int = 0
 
-        @JvmStatic
         fun method380(i: Int) {
             aClass351_618 = null
             anIntArray619 = null
             if (i == 0) aClass45_611 = null
         }
 
-        @JvmStatic
         fun method381(i: Byte): Class179 {
             anInt616++
             if (i.toInt() != 68) Companion.method381((-42).toByte())
@@ -49,7 +47,6 @@ class Class43 {
             }
         }
 
-        @JvmStatic
         fun method383(i: Int) {
             var i_3_ = i
             while (Class250.anInt3225 > i_3_) {

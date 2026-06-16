@@ -40,36 +40,27 @@ object haStatics {
      * Forwarding delegates for ha_Sub2/ha_Sub3/Class377 companion methods used
      * in Client's init sequence. Client imports these from haStatics so it never
      * names those concrete GL classes directly.
-     */
-    @JvmStatic fun method3736(i: Byte) = ha_Sub2.method3736(i)
-    @JvmStatic fun method3870(i: Int) = ha_Sub3.method3870(i)
-    @JvmStatic fun method3968(i: Int) = Class377.method3968(i)
+     */ fun method3736(i: Byte) = ha_Sub2.method3736(i) fun method3870(i: Int) = ha_Sub3.method3870(i) fun method3968(i: Int) = Class377.method3968(i)
 
     // ---------------------------------------------------------------------------
     // Forwarding delegates for Class14_Sub* companion methods used in Client.kt
     // ---------------------------------------------------------------------------
 
-    /** Camera/view interpolation tick (Class14_Sub1.method241). */
-    @JvmStatic fun method241(i: Byte) = Class14_Sub1.method241(i)
+    /** Camera/view interpolation tick (Class14_Sub1.method241). */ fun method241(i: Byte) = Class14_Sub1.method241(i)
 
-    /** Clear additionalInfo parameter (Class14_Sub1.method242). */
-    @JvmStatic fun method242(bool: Boolean) = Class14_Sub1.method242(bool)
+    /** Clear additionalInfo parameter (Class14_Sub1.method242). */ fun method242(bool: Boolean) = Class14_Sub1.method242(bool)
 
-    /** Cache-open trigger (Class14_Sub2.method243). */
-    @JvmStatic fun method243(i: Int) = Class14_Sub2.method243(i)
+    /** Cache-open trigger (Class14_Sub2.method243). */ fun method243(i: Int) = Class14_Sub2.method243(i)
 
-    /** JS5 load trigger returning Class348_Sub51 (Class14_Sub3.method247). */
-    @JvmStatic fun method247(i: Int): Class348_Sub51? = Class14_Sub3.method247(i)
+    /** JS5 load trigger returning Class348_Sub51 (Class14_Sub3.method247). */ fun method247(i: Int): Class348_Sub51? = Class14_Sub3.method247(i)
 
-    /** Teardown GL texture variant resources (Class14_Sub4.method251). */
-    @JvmStatic fun method251(i: Byte) = Class14_Sub4.method251(i)
+    /** Teardown GL texture variant resources (Class14_Sub4.method251). */ fun method251(i: Byte) = Class14_Sub4.method251(i)
     var aClass351_4571: Class351? = Class351(73, -1)
 
     /** Renderer slot allocation table; now lives in ha companion (commonMain). */
     val rendererSlots: BooleanArray
         get() = ha.rendererSlots
 
-    @JvmStatic
     fun method3641(i: Int, i_35_: Int, i_36_: Byte, i_37_: Int, i_38_: Int, i_39_: Int) {
         ha.anInt4575++
         if (i_36_.toInt() != -75) ha.anInt4581 = 73
@@ -78,7 +69,6 @@ object haStatics {
         else method1839(i_39_, i_35_, i, i_36_.toInt() xor 0x4a, i_37_, i_38_)
     }
 
-    @JvmStatic
     fun method3664(i: Int, i_88_: Int): ByteArray {
         ha.anInt4564++
         if (i_88_ <= 21) ha.anInt4583 = 60
@@ -101,14 +91,12 @@ object haStatics {
         return class348_sub42_sub3.aByteArray9499!!
     }
 
-    @JvmStatic
     fun method3680(i: Int) {
         if (i != -24016) ha.anIntArray4578 = null
         ha.anIntArray4578 = null
         aClass351_4571 = null
     }
 
-    @JvmStatic
     @Synchronized
     fun method3692(i: Int, i_168_: Int, i_169_: Int, class45: Class45?, i_170_: Int, var_d: d?, canvas: Canvas?, i_171_: Int): ha? {
         try {

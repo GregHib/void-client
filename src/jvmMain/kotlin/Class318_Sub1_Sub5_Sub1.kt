@@ -228,7 +228,6 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_ha: ha?, class51: Class51
             return 5
         }
 
-        @JvmStatic
         fun method2490(i: Int) {
             aClass351_10134 = null
             if (i != 4) method2490(-26)

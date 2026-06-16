@@ -711,7 +711,6 @@ class Class51 {
         var anInt957: Int = 0
         var anInt958: Int = 0
         var anInt960: Int = 0
-        @JvmStatic
         fun method486(i: Int) {
             aStringArray932 = null
             if (i > -19) method486(-34)

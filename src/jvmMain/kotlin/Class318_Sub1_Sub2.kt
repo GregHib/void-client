@@ -64,7 +64,6 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
         var aClass70_8737: Class70? = Class70()
         var anInt8738: Int = 0
 
-        @JvmStatic
         fun method2405(i: Int) {
             anInt8729++
             var class234: CacheStore? = null
@@ -95,7 +94,6 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
             Class184.aBoolean2469 = false
         }
 
-        @JvmStatic
         fun method2406(i: Int) {
             if (i > -126) anInt8731 = 118
             aClass60_8732 = null

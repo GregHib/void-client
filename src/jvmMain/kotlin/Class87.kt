@@ -101,7 +101,6 @@ class Class87 internal constructor(class230: Class230?, i: Int, class45: Class45
         var anInt1486: Int = 0
         var anInt1489: Int = 0
         var anInt1490: Int = 0
-        @JvmStatic
         fun method837(i: Int, bool: Boolean, i_3_: Int, i_4_: Int): Int {
             var i_4_ = i_4_
             i_4_ = i_4_ and 0x3

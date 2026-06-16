@@ -30,7 +30,6 @@ object Class306 {
         }
     }
 
-    @JvmStatic
     fun method2299(i: Byte) {
         anIntArray3873 = null
         if (i.toInt() != -128) method2297(66, -48, null, null, 100)

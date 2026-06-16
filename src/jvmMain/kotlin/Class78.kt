@@ -246,7 +246,6 @@ class Class78 internal constructor(private val aClass234_1312: CacheStore, i: In
         var anInt1316: Int = 0
         var anInt1318: Int = 0
         var aClass45_1322: Class45? = null
-        @JvmStatic
         fun method786(i: Byte) {
             if (i.toInt() != 0) aClass45_1322 = null
             aClass45_1322 = null

@@ -12,7 +12,6 @@ abstract class Class345 {
         var aClass114_4272: Class114? = Class114(67, 3)
         var aClass60_4273: Class60? = Class60(128, 4)
 
-        @JvmStatic
         fun method2693(i: Int) {
             if (i != 3) aClass114_4269 = null
             aClass114_4272 = null

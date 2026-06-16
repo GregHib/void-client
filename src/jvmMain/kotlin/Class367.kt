@@ -49,7 +49,6 @@ abstract class Class367 internal constructor(var aHa_Sub3_4479: ha_Sub3) {
         var anInt4484: Int = 0
         var anInt4485: Int = 0
 
-        @JvmStatic
         fun method3529(i: Int): Class318_Sub6 {
             anInt4478++
             val class318_sub6 = Class62.aClass243_1114!!.method1875(60) as Class318_Sub6?

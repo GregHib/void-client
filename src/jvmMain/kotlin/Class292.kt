@@ -38,13 +38,11 @@ class Class292 internal constructor(private val aClass45_4804: Class45) : Interf
             }
         }
 
-        @JvmStatic
         fun method2202(i: Int) {
             aClass114_4798 = null
             if (i != -17902) anInt4803 = 78
         }
 
-        @JvmStatic
         fun method2203(i: Byte): Boolean {
             val i_1_ = 11 % ((12 - i) / 53)
             anInt4802++

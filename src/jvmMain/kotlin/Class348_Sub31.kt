@@ -55,7 +55,6 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
         var aClass351_6925: Class351?
         var aString6926: String?
 
-        @JvmStatic
         fun method3007(i: Int, i_0_: Int) {
             Class318_Sub1_Sub4_Sub1.anInt10074 = -1
             Class285.aClass348_Sub16_Sub3_4743 = null
@@ -107,7 +106,6 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
             val i_37_ = 64 % ((50 - i_7_) / 51)
         }
 
-        @JvmStatic
         fun method3010(i: Int) {
             aClass351_6925 = null
             aBigInteger6921 = null
@@ -218,14 +216,12 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
             }
         }
 
-        @JvmStatic
         fun method3013(i: Int, bool: Boolean): Int {
             if (bool != true) anInt6923 = -14
             anInt6915++
             return i and 0xff
         }
 
-        @JvmStatic
         fun method3014(class348_sub49: Class348_Sub49, i: Byte) {
             anInt6914++
             if ((class348_sub49.aByteArray7154!!.size - class348_sub49.anInt7197) >= 1) {

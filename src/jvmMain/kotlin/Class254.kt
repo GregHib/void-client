@@ -41,13 +41,11 @@ class Class254 {
         var anInt3263: Int = 0
         var aClass114_3264: Class114? = Class114(6, 2)
 
-        @JvmStatic
         fun method1926(i: Int) {
             if (i >= -125) aClass114_3264 = null
             aClass114_3264 = null
         }
 
-        @JvmStatic
         fun method1928(i: Int, i_2_: Int, i_3_: Int): Int {
             anInt3260++
             val i_4_ = i_3_ ushr 31

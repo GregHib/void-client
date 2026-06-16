@@ -29,7 +29,6 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
         var anInt1509: Int = 0
         var anInt1511: Int = 0
 
-        @JvmStatic
         fun method849(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             anInt1511++
             if (i_4_ <= 80) method851(-7)
@@ -48,7 +47,6 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
             }
         }
 
-        @JvmStatic
         fun method850(class318_sub1_sub3: Class318_Sub1_Sub3, bool: Boolean): Boolean {
             val bool_13_ = aa_Sub1.aSArray5191 == Class332.aSArray4142
             var i = 0
@@ -113,7 +111,6 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
             return true
         }
 
-        @JvmStatic
         fun method851(i: Int) {
             if (i == 1) anIntArray1508 = null
         }

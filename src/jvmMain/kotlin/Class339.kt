@@ -70,7 +70,6 @@ class Class339 : Runnable {
         var anInt4210: Int = 0
         var anInt4211: Int = 0
 
-        @JvmStatic
         fun method2664(i: Int) {
             if (i == 3) aClass351_4207 = null
         }
@@ -134,7 +133,6 @@ class Class339 : Runnable {
             method1783(i_10_, -1, i_9_, i_12_, i_11_, i_1_)
         }
 
-        @JvmStatic
         fun method2666(i: Int, i_13_: Int, class46: Class46?, i_14_: Byte) {
             anInt4199++
             if (class46 != null) {

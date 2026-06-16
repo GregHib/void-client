@@ -199,12 +199,10 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
         var anInt8880: Int = 0
         var anInt8881: Int = 0
         var anInt8882: Int = 0
-        @JvmStatic
         fun method2830(i: Int) {
             anIntArray8862 = null
         }
 
-        @JvmStatic
         fun method2832(`is`: IntArray?, ls: LongArray?, i: Int) {
             try {
                 method129(i, i + -107, ls, ls!!.size - 1, `is`)
@@ -214,7 +212,6 @@ class Class348_Sub16_Sub2 internal constructor(private val anInt8879: Int) : Cla
             }
         }
 
-        @JvmStatic
         fun method2834(i: Byte, class348_sub49: Class348_Sub49): Class369 {
             anInt8876++
             val class221 = Class158.method1248(15)[class348_sub49.readUnsignedByte(255)]

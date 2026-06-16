@@ -69,7 +69,6 @@ class Class217 internal constructor(class230: Class230?, i: Int, class45: Class4
         var aClass60_2844: Class60? = Class60(64)
         var anInt2846: Int = 0
         var anInt2847: Int = 0
-        @JvmStatic
         fun method1585(i: Int) {
             if (i != -1) method1585(-34)
             aClass60_2844 = null

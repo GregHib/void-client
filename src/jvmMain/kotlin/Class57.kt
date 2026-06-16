@@ -15,7 +15,6 @@ class Class57 {
         var anInt1053: Int = 0
         var aClass227_1055: Class227? = null
 
-        @JvmStatic
         fun method529(i: Int, bool: Boolean) {
             anInt1053++
             if (bool != true) method530(-105)
@@ -23,7 +22,6 @@ class Class57 {
             class348_sub42_sub15.method3251(-16058)
         }
 
-        @JvmStatic
         fun method530(i: Int) {
             aClass17Array1048 = null
             aClass227_1055 = null

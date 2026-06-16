@@ -8,7 +8,6 @@ object Class228 {
     var aClass57Array2974: Array<Class57?>? = null
     var anInt2975: Int = 0
 
-    @JvmStatic
     fun method1628(i: Byte) {
         aClass57Array2974 = null
         if (i <= 47) aClass57Array2974 = null

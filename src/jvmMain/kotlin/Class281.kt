@@ -33,7 +33,6 @@ object Class281 {
         Class105_Sub1.anInt8398 = 0
     }
 
-    @JvmStatic
     fun method2107(i: Byte) {
         aClass351_3648 = null
         aClass143_3649 = null

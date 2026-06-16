@@ -196,7 +196,6 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Cl
         var anInt8704: Int = 0
         var anInt8705: Int = 0
         var aClass351_8706: Class351? = Class351(79, 3)
-        @JvmStatic
         fun method2263(var_ha: ha?, i: Int, i_4_: Int): Class105? {
             anInt8705++
             val class348_sub15 = (Class27.aClass356_389!!.method3480(i_4_.toLong(), -6008) as Class348_Sub15?)
@@ -209,7 +208,6 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Cl
             return null
         }
 
-        @JvmStatic
         fun method2264(bool: Boolean) {
             if (bool != false) aClass348_Sub49_8698 = null
             anInt8704++
@@ -217,7 +215,6 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Cl
             class348_sub42_sub15.method3251(-16058)
         }
 
-        @JvmStatic
         fun method2265(i: Int) {
             aClass348_Sub49_8698 = null
             if (i != -10794) aClass351_8706 = null

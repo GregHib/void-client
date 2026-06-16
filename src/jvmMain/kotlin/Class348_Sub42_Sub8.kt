@@ -20,28 +20,24 @@ abstract class Class348_Sub42_Sub8 internal constructor(var anInt9545: Int) : Cl
         var aString9554: String? = null
         var aShort9555: Short = 1
 
-        @JvmStatic
         fun method3194(i: Int, i_0_: Int, i_1_: Byte): Boolean {
             anInt9551++
             if (i_1_ <= 118) method3196(122, -41)
             return false
         }
 
-        @JvmStatic
         fun method3196(i: Int, i_2_: Int): Boolean {
             if (i_2_ >= -39) return false
             anInt9546++
             return i == 3 || i == 4 || i == 5 || i == 6
         }
 
-        @JvmStatic
         fun method3197(i: Int, i_3_: Byte): Boolean {
             anInt9549++
             if (i_3_.toInt() != 56) aClass114_9552 = null
             return i == 7 || i == 9
         }
 
-        @JvmStatic
         fun method3198(bool: Boolean, i: Byte) {
             anInt9547++
             if (i.toInt() != -45) aShort9555 = (-74).toShort()
@@ -84,7 +80,6 @@ abstract class Class348_Sub42_Sub8 internal constructor(var anInt9545: Int) : Cl
             Class76.method773(true)
         }
 
-        @JvmStatic
         fun method3199(i: Int) {
             aClass114_9550 = null
             if (i < 17) method3196(60, -85)

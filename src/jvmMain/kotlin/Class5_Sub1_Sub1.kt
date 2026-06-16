@@ -19,7 +19,6 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
         var aClass262_9931: Class262? = Class262()
         var anIntArray9932: IntArray? = IntArray(1000)
 
-        @JvmStatic
         fun method190(i: Byte) {
             if (i < 23) anIntArray9932 = null
             aClass207Array9929 = null

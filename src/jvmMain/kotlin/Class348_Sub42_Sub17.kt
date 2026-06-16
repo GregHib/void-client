@@ -109,7 +109,6 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
             }
         }
 
-        @JvmStatic
         fun method3269(bool: Boolean) {
             aClass348_Sub42_Sub17Array9672 = null
             aClass351_9679 = null

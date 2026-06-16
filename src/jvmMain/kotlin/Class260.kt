@@ -9,20 +9,17 @@ object Class260 {
     var anIntArray3311: IntArray?
     var anInt3312: Int = 0
 
-    @JvmStatic
     fun method1977(i: Byte, i_0_: Int): Boolean {
         if (i.toInt() != -79) return false
         anInt3308++
         return i_0_ == 3 || i_0_ == 7 || i_0_ == 10
     }
 
-    @JvmStatic
     fun method1978() {
         for (i in Class348_Sub40_Sub34.aClass293Array9432!!.indices) Class348_Sub40_Sub34.aClass293Array9432!![i]!!.method2205()
         Class348_Sub40_Sub34.aClass293Array9432 = null
     }
 
-    @JvmStatic
     fun method1979(i: Byte) {
         aClass45_3309 = null
         anIntArray3311 = null

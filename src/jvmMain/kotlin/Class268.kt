@@ -129,7 +129,6 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
             }
         }
 
-        @JvmStatic
         fun method2036(i: Byte) {
             aShortArrayArray3443 = null
             aShortArray3437 = null

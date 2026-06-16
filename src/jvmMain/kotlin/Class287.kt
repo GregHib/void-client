@@ -53,7 +53,6 @@ class Class287 {
         var anInt3694: Int = 0
         var anInt3695: Int = 0
 
-        @JvmStatic
         fun method2178(class318_sub1: Class318_Sub1?, i: Int, class17: Class17?, i_0_: Int) {
             try {
                 anInt3694++
@@ -96,7 +95,6 @@ class Class287 {
             return l
         }
 
-        @JvmStatic
         fun method2180(i: Byte) {
             aCRC32_3691 = null
             if (i > -70) anInt3695 = 92

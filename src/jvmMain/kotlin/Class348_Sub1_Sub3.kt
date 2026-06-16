@@ -25,7 +25,6 @@ class Class348_Sub1_Sub3 internal constructor(i: Int, i_3_: Int, i_4_: Int, i_5_
         var anInt8820: Int = 0
         var anInt8821: Int = 0
 
-        @JvmStatic
         fun method2732(i: Int, i_7_: Int, bool: Boolean, i_8_: Int, class45: Class45?, i_9_: Int) {
             anInt8820++
             if (i_8_ < 90) anInt8818 = -21

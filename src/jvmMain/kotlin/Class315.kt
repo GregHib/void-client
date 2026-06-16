@@ -90,14 +90,12 @@ class Class315 internal constructor(var aString3953: String?) {
         var anInt3952: Int = 0
         var anInt3954: Int = 0
         var anInt3955: Int = 0
-        @JvmStatic
         fun method2354(class364: Class364?, i: Int): Boolean {
             anInt3954++
             if (i != -1) method2355(-93, 115.toByte(), true, null, -92, -67, 6)
             return Class367_Sub8.aClass364_7361 == class364 || Class26.aClass364_382 == class364 || Class108.aClass364_1657 == class364 || class364 == Class342.aClass364_4246
         }
 
-        @JvmStatic
         fun method2355(i: Int, i_0_: Byte, bool: Boolean, class45: Class45?, i_1_: Int, i_2_: Int, i_3_: Int) {
             Class58.anInt1059 = i
             anInt3948++
@@ -110,7 +108,6 @@ class Class315 internal constructor(var aString3953: String?) {
             Class124Statics.aClass45_1848 = class45
         }
 
-        @JvmStatic
         fun method2357(i: Int, player: Player): Int {
             anInt3951++
             var i_4_ = (player.anInt10560)

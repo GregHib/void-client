@@ -19,14 +19,12 @@ object Class348Statics {
     var anInt4296: Int = 0
     var anInt4298: Int = 0
 
-    @JvmStatic
     fun method2709(i: Int, i_0_: Int, i_1_: Int): Boolean {
         anInt4287++
         if (i_1_ != -1) method2711(-42, 89, null, -113, true, -22, -35, 27, -109, null, 74, -94, -119, null)
         return (0x21 and i_0_) != 0
     }
 
-    @JvmStatic
     fun method2710(i: Int, i_2_: Int): Int {
         anInt4289++
         if (i_2_ < 96) return 0
@@ -35,7 +33,6 @@ object Class348Statics {
         return 3
     }
 
-    @JvmStatic
     fun method2711(i: Int, i_3_: Int, class64: Class64?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_ha: ha?, i_9_: Int, i_10_: Int, i_11_: Int, class17: Class17?): Class64? {
         var i_5_ = i_5_
         try {
@@ -128,7 +125,6 @@ object Class348Statics {
         }
     }
 
-    @JvmStatic
     fun method2713(i: Int) {
         aClass45_4286 = null
         aClass318_Sub1Array4293 = null

@@ -99,7 +99,6 @@ class Class269 internal constructor(private val aHa_Sub3_3457: ha_Sub3) {
             }
         }
 
-        @JvmStatic
         fun method2042(i: Byte) {
             if (i.toInt() == -67) aClass217_3453 = null
         }

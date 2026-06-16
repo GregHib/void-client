@@ -7,7 +7,6 @@ object Class245 {
     var anInt3171: Int = 0
     var aFloat3172: Float = 0f
 
-    @JvmStatic
     fun method1882(i: Int) {
         if (i != 25365) anInt3170 = 100
         anIntArray3169 = null

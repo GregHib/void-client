@@ -53,14 +53,12 @@ class Class192 internal constructor(var aBoolean2574: Boolean) {
             if (i == -14988) Client.method112()
         }
 
-        @JvmStatic
         fun method1436(i: Int, i_3_: Int): Boolean {
             val i_4_ = 22 % ((i - 16) / 35)
             anInt2582++
             return i_3_ == (i_3_ and -i_3_)
         }
 
-        @JvmStatic
         fun method1438(i: Int) {
             val i_5_ = 85 % ((i - -28) / 60)
             aShortArray2579 = null

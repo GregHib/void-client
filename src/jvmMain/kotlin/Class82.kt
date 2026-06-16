@@ -44,13 +44,11 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
         var anInt1435: Int = 0
         var anInt1437: Int = 0
         var anInt1438: Int = 0
-        @JvmStatic
         fun method811(i: Byte) {
             if (i > -109) anInt1435 = 69
             aClass45_1434 = null
         }
 
-        @JvmStatic
         fun method812(string: String?, bool: Boolean, bool_0_: Boolean, i: Byte) {
             try {
                 if (i.toInt() != -79) Companion.method814((-79).toByte(), 126L)
@@ -701,7 +699,6 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
             return class357.aClass318_Sub1_Sub4_4403
         }
 
-        @JvmStatic
         fun method814(i: Byte, l: Long) {
             try {
                 anInt1438++

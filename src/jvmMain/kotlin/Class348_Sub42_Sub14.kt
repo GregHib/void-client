@@ -573,7 +573,6 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
         var aClass243_9642: Class243? = Class243()
         var anInt9645: Int = 1
 
-        @JvmStatic
         fun method3237(i: Byte) {
             aClass243_9642 = null
             anIntArray9626 = null
@@ -639,7 +638,6 @@ class Class348_Sub42_Sub14 internal constructor(i: Int, string: String?, string_
             }
         }
 
-        @JvmStatic
         fun method3243(i: Int, class348_sub47: Class348_Sub47) {
             anInt9630++
             Class348_Sub40_Sub13.aClass262_9201!!.method1999(class348_sub47, -20180)

@@ -31,7 +31,6 @@ class Class351 internal constructor(private var anInt4326: Int, var anInt4323: I
             return false
         }
 
-        @JvmStatic
         fun method3457(bool: Boolean) {
             aRasterFont4329 = null
             aClass60_4327 = null

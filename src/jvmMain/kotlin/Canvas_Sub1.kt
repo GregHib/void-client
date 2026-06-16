@@ -33,7 +33,6 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
         var anInt69: Int = 0
         var anInt70: Int = 0
 
-        @JvmStatic
         fun method119(i: Int, l: Long) {
             try {
                 anInt66++
@@ -75,7 +74,6 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             }
         }
 
-        @JvmStatic
         fun method120(bool: Boolean) {
             anIntArray60 = null
             if (bool != false) anIntArray60 = null
@@ -131,7 +129,6 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             return class64
         }
 
-        @JvmStatic
         fun method123(i: Int) {
             anInt63++
             Class289.method2193(false, (-125).toByte())

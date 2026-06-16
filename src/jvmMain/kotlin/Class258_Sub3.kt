@@ -222,19 +222,16 @@ open class Class258_Sub3 : Class258 {
         var anInt8548: Int = 0
         var anInt8550: Int = 0
 
-        @JvmStatic
         fun method1966(i: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Byte, i_47_: Int, i_48_: Int, i_49_: Int, i_50_: Int) {
             Class147.aClass338Array2034!![Class239_Sub26.anInt6115++] = Class338(i_47_, i_49_, i_50_, i, i, i_50_, i_45_, i_43_, i_43_, i_45_, i_44_, i_44_, i_48_, i_48_)
             anInt8548++
             if (i_46_.toInt() != 0) method1968()
         }
 
-        @JvmStatic
         fun method1968() {
             za.method3437(1, Class189.anInt2524)
         }
 
-        @JvmStatic
         fun method1969(`is`: ByteArray, i: Int): Class105? {
             anInt8546++
             if (i != -5901) anInt8550 = 83

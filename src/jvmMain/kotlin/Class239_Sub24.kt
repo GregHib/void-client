@@ -67,14 +67,12 @@ class Class239_Sub24 : Class239 {
         var aClass105_6097: Class105? = null
         var aClass299_6098: Class299? = null
 
-        @JvmStatic
         fun method1821(i: Int, file: File): ByteArray? {
             anInt6086++
             val i_2_ = 34 % ((i - 31) / 39)
             return Class327.method2607(file.length().toInt(), file, 121)
         }
 
-        @JvmStatic
         fun method1822(i: Byte) {
             aClass114_6089 = null
             aClass60_6096 = null
@@ -84,7 +82,6 @@ class Class239_Sub24 : Class239 {
             if (i.toInt() != 110) aClass299_6098 = null
         }
 
-        @JvmStatic
         fun method1823(var_ha: ha, i: Int, i_4_: Int, i_5_: Byte) {
             anInt6088++
             val i_6_ = 56 % ((68 - i_5_) / 58)

@@ -82,12 +82,10 @@ class Class22 {
         var anInt338: Int = 0
         var anInt339: Int = 0
         var anInt340: Int = 0
-        @JvmStatic
         fun method293(i: Byte) {
             aClass114_330 = null
         }
 
-        @JvmStatic
         fun method294(var_ha: ha?, i: Int) {
             anInt328++
             if (Class5_Sub1_Sub1.aClass262_9931!!.method1998(i) != 0) {
@@ -118,7 +116,6 @@ class Class22 {
             }
         }
 
-        @JvmStatic
         fun method295(i: Int, i_11_: Int, i_12_: Int, `is`: ByteArray, i_13_: Int, is_14_: ByteArray, i_15_: Int, i_16_: Int, i_17_: Int) {
             var i_11_ = i_11_
             var i_13_ = i_13_

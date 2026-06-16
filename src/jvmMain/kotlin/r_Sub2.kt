@@ -352,7 +352,6 @@ class r_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_19_: Int) : r() {
         var anInt10491: Int = 0
         var aClass262_10492: Class262? = Class262()
 
-        @JvmStatic
         fun method3295(i: Int) {
             aClass45_10480 = null
             aClass252_10488 = null
@@ -360,7 +359,6 @@ class r_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_19_: Int) : r() {
             if (i != -1) method3295(109)
         }
 
-        @JvmStatic
         fun method3297(i: Int, i_20_: Int, i_21_: Int): Class318_Sub1_Sub4? {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_20_]!![i_21_]
             if (class357 == null) return null

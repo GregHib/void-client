@@ -84,7 +84,6 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
         var anInt7295: Int = 0
         var anInt7297: Int = 0
 
-        @JvmStatic
         fun method3536(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, class318_sub1_sub2: Class318_Sub1_Sub2) {
             val class357 = Class348_Sub46.method3321(i, i_0_, i_1_)
             if (class357 != null) {
@@ -109,13 +108,11 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
             }
         }
 
-        @JvmStatic
         fun method3537(i: Int) {
             aShortArrayArrayArray7290 = null
             if (i != 34336) anInt7297 = 99
         }
 
-        @JvmStatic
         fun method3538(bool: Boolean, string: String?) {
             var string = string
             anInt7291++

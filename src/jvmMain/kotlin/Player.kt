@@ -628,14 +628,12 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         var anIntArray10566: IntArray? = null
         var anInt10567: Int = -1
 
-        @JvmStatic
         fun method2458(bool: Boolean) {
             anIntArray10566 = null
             if (bool != true) method2458(false)
             aHashtable10565 = null
         }
 
-        @JvmStatic
         fun method2460(f: Float, i: Int, f_100_: Float, i_101_: Int, i_102_: Int, f_103_: Float, class186: Class186?, i_104_: Int, i_105_: Byte, i_106_: Int, f_107_: Float, `is`: ByteArray?, i_108_: Int, f_109_: Float) {
             var f = f
             var f_100_ = f_100_

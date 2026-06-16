@@ -18,7 +18,6 @@ abstract class Class314 {
         var anInt3942: Int = 0
         var aFloat3943: Float = 0f
 
-        @JvmStatic
         fun method2336(class51: Class51, i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             anInt3940++
             if (i_3_ > -126) anInt3941 = 15

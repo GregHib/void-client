@@ -52,7 +52,6 @@ class Class239_Sub17 : Class239 {
         var anInt6027: Int = 0
         var anInt6028: Int = 0
 
-        @JvmStatic
         fun method1793(`is`: ByteArray, i: Int, i_0_: Int, i_1_: Int): String? {
             anInt6020++
             val cs = CharArray(i_1_)
@@ -91,27 +90,23 @@ class Class239_Sub17 : Class239 {
             return String(cs, 0, i_2_)
         }
 
-        @JvmStatic
         fun method1794(i: Int) {
             if (i != 63) anIntArray6021 = null
             aClass273_6018 = null
             anIntArray6021 = null
         }
 
-        @JvmStatic
         fun method1795(`is`: ByteArray, bool: Boolean): String {
             anInt6026++
             return Class367_Sub8.method3546(`is`, 0, `is`.size, 0)
         }
 
-        @JvmStatic
         fun method1796(i: Int, i_10_: Int): Boolean {
             if (i < 53) return true
             anInt6019++
             return i_10_ == 18 || i_10_ == 6 || i_10_ == 1011 || i_10_ == 13 || i_10_ == 16
         }
 
-        @JvmStatic
         fun method1797(i: Int, i_11_: Int, class46: Class46, i_12_: Byte) {
             if (r.aBoolean9722) {
                 val class254 = (if (Class246.anInt3176 != -1) Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364) else null)

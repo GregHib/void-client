@@ -33,7 +33,6 @@ class Class279_Sub2 internal constructor(class297: Class297, private val anInt61
     companion object {
         private var anInterface20_6182: Interface20? = null
 
-        @JvmStatic
         fun method2097() {
             anInterface20_6182 = null
         }

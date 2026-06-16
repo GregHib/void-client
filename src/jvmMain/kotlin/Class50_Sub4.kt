@@ -28,12 +28,10 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
         var anInt5261: Int = 0
         var aClass47_5262: Class47? = null
         var anInt5263: Int = 0
-        @JvmStatic
         fun method471(i: Int) {
             if (i == -30065) aClass47_5262 = null
         }
 
-        @JvmStatic
         fun method472(i: Int, class348_sub49: Class348_Sub49): Class158? {
             anInt5263++
             val string = class348_sub49.readString(90.toByte())
@@ -53,7 +51,6 @@ class Class50_Sub4 internal constructor(private val anInt5255: Int, private val 
             return Class158(string, class221, class341, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_)
         }
 
-        @JvmStatic
         fun method473(i: Byte, i_25_: Int, class110_sub1: Class110_Sub1?, i_26_: Int, bool: Boolean, bool_27_: Boolean, class110_sub1_28_: Class110_Sub1?): Int {
             try {
                 anInt5257++

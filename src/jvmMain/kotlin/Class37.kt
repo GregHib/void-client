@@ -24,7 +24,6 @@ object Class37 {
         return " <col=ffff00>" + string + "</col>"
     }
 
-    @JvmStatic
     fun method357(i: Int, `is`: ByteArray) {
         withLock(this) {
         anInt491++
@@ -53,7 +52,6 @@ object Class37 {
         anInt490++
     }
 
-    @JvmStatic
     fun method359(i: Int, i_9_: Int): ByteArray? {
         return withLock(this) {
         anInt493++

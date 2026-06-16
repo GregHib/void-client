@@ -221,7 +221,6 @@ class Class80 {
         private var anIntArray1430: IntArray?
         private var anIntArray1431: IntArray?
 
-        @JvmStatic
         fun method808() {
             anIntArray1409 = null
             anIntArray1416 = null

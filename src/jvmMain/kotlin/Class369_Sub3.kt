@@ -33,7 +33,6 @@ public open class Class369_Sub3(class221: Class221?, class341: Class341?, i: Int
         var aBooleanArrayArray8596: Array<BooleanArray?>? = null
         var anInt8598: Int = 0
         var aClass45_8601: Class45? = null
-        @JvmStatic
         fun method3573(i: Int) {
             withLock(Class24.aClass60_355!!) {
                 Class24.aClass60_355!!.method590(0)
@@ -45,7 +44,6 @@ public open class Class369_Sub3(class221: Class221?, class341: Class341?, i: Int
             if (i != -15326) method3573(-67)
         }
 
-        @JvmStatic
         fun method3574(i: Int) {
             if (i == 19499) {
                 aBooleanArrayArray8596 = null

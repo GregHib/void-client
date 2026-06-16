@@ -15,7 +15,6 @@ class Class348_Sub26 internal constructor(@field:Volatile var aString6888: Strin
         var anIntArray6890: IntArray? = IntArray(32)
         var aClass74_6891: Class74?
 
-        @JvmStatic
         fun method2998(i: Byte) {
             anIntArray6890 = null
             aClass348_Sub42_Sub14_6885 = null

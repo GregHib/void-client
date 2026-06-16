@@ -31,7 +31,6 @@ class Class352 {
         var anInt4336: Int = 0
         var anInt4337: Int = -2
 
-        @JvmStatic
         fun method3458(i: Int) {
             aClass114_4331 = null
         }

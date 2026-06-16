@@ -699,7 +699,6 @@ class Class101_Sub2 : Class101() {
             }
         }
 
-        @JvmStatic
         fun method925(i: Int) {
             if (i == -5997) {
                 aClass351_5699 = null

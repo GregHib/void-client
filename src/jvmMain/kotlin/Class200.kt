@@ -6,7 +6,6 @@ object Class200 {
     var aClass226_2639: Class226? = null
     var aClass105Array2640: Array<Class105?>? = null
 
-    @JvmStatic
     fun method1463(i: Byte) {
         aClass351_2638 = null
         aClass105Array2640 = null

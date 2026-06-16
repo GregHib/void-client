@@ -33,7 +33,6 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
         var anInt8671: Int = 0
         var anInt8672: Int = 0
         var anInt8673: Int = 0
-        @JvmStatic
         fun method565(i: Int, i_0_: Int, class124: Class124?, `is`: IntArray?): Class358 {
             try {
                 anInt8673++
@@ -127,7 +126,6 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             }
         }
 
-        @JvmStatic
         fun method566(bool: Boolean, bool_25_: Boolean, i: Byte, audioInit: () -> Unit = {}) {
             anInt8671++
             val i_26_ = -94 / ((-67 - i) / 59)
@@ -141,7 +139,6 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
             }
         }
 
-        @JvmStatic
         fun method568(bool: Boolean) {
             aClass45_8670 = null
             aClass45_8667 = null

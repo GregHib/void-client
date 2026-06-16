@@ -132,13 +132,11 @@ class Class112 internal constructor(class297: Class297) : Runnable {
         var anInt1735: Int = 0
         var anInt1736: Int = 0
         var anInt1737: Int = 0
-        @JvmStatic
         fun method1052(i: Byte) {
             aClass207_1727 = null
             val i_1_ = 107 % ((i - -20) / 50)
         }
 
-        @JvmStatic
         fun method1053(i: Int): Int {
             anInt1728++
             if (i != 3112) method1052(121.toByte())

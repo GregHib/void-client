@@ -191,7 +191,6 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_ha: ha?, class51: Class51
             return true
         }
 
-        @JvmStatic
         fun method2398(i: Byte) {
             if (i.toInt() != -83) anIntArray9949 = null
             aClass105Array9959 = null

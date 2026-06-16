@@ -11,7 +11,6 @@ class Class348_Sub7 internal constructor(var anInt6649: Int, var anInt6648: Int,
         var anInt6652: Int = 0
         var aClass33_6653: Class33? = null
 
-        @JvmStatic
         fun method2772(i: Int, i_0_: Byte) {
             anInt6641++
             if (Class320.method2547(i, 84.toByte()) && i_0_ > 105) {
@@ -27,7 +26,6 @@ class Class348_Sub7 internal constructor(var anInt6649: Int, var anInt6648: Int,
             }
         }
 
-        @JvmStatic
         fun method2773(i: Int) {
             aClass207_6643 = null
             aClass229_6644 = null

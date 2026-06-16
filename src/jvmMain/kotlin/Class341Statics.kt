@@ -32,7 +32,6 @@ object Class341Statics {
     var aClass348_Sub24_4226: Class348_Sub24? = Class348_Sub24(0, 0)
     var aClass124Array4236: Array<Class124?>? = arrayOfNulls<Class124>(4)
 
-    @JvmStatic
     fun method2679(class341: Class341, i: Int, i_7_: Int, i_8_: Int): Int {
         Class341.anInt4232++
         if (i_8_ != 1595) return 38
@@ -43,7 +42,6 @@ object Class341Statics {
         return 0
     }
 
-    @JvmStatic
     fun method2676(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte, i_3_: Int) {
         var i_1_ = i_1_
         var i_3_ = i_3_
@@ -63,7 +61,6 @@ object Class341Statics {
         Class348_Sub15.method2811(false)
     }
 
-    @JvmStatic
     fun method2677(i: Int) {
         Class341.anIntArrayArray4233 = null
         aClass348_Sub24_4226 = null
@@ -73,7 +70,6 @@ object Class341Statics {
         }
     }
 
-    @JvmStatic
     fun method2678(i: Int) {
         if (i != -2049) Class341.anIntArrayArray4233 = null
         Class341.anInt4229++

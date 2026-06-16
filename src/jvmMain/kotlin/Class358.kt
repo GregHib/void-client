@@ -26,7 +26,6 @@ class Class358 internal constructor(`is`: IntArray?, is_1_: IntArray?, is_2_: In
         var aClass60_4417: Class60? = Class60(50)
         var aClass351_4418: Class351? = Class351(33, 8)
 
-        @JvmStatic
         fun method3488(i: Int) {
             if (i < 25) method3489(30)
             aClass351_4418 = null

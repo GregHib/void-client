@@ -53,7 +53,6 @@ object Class282 {
         return class318_sub1_sub2
     }
 
-    @JvmStatic
     fun method2111(i: Byte) {
         aClass356_3654 = null
         if (i <= 56) Class282.method2111((-49).toByte())

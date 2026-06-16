@@ -109,13 +109,11 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
         var anInt9486: Int = 0
         var anInt9487: Int = 0
 
-        @JvmStatic
         fun method3152(i: Int) {
             aClass70_9485 = null
             if (i != 255) method3152(-42)
         }
 
-        @JvmStatic
         fun method3153(i: Int) {
             anInt9482++
             var class348_sub42_sub13 = (Class233.aClass107_3022!!.method1011(-49) as Class348_Sub42_Sub13?)

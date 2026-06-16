@@ -730,7 +730,6 @@ class Class79 {
         var anInt1400: Int = 0
         var anInt1403: Int = 0
         var anInt1404: Int = 0
-        @JvmStatic
         fun method797(i: Int, i_29_: Int, i_30_: Byte) {
             anInt1379++
             if (Class348_Sub40_Sub6.anInt9139 != i_29_) {
@@ -751,7 +750,6 @@ class Class79 {
             }
         }
 
-        @JvmStatic
         fun method802(i: Int, i_93_: Int, bool: Boolean): Boolean {
             if (bool != true) return false
             anInt1332++
@@ -759,7 +757,6 @@ class Class79 {
             return (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
         }
 
-        @JvmStatic
         fun method804(i: Int) {
             aClass105_1365 = null
             aClient1367 = null

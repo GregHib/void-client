@@ -58,7 +58,6 @@ class Class239_Sub10 : Class239 {
             if ((if (bool) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)) != 0 && i_3_ != 0 && Class147.anInt2021 < 50 && i != -1) Class258_Sub2.aClass10Array8531!![Class147.anInt2021++] = Class10(if (!bool) 2.toByte() else 3.toByte(), i, i_3_, i_5_, i_0_, i_1_, i_4_, null)
         }
 
-        @JvmStatic
         fun method1761(i: Int) {
             anInt5935++
             Class348_Sub47.method3324(Class348_Sub8.aHa6654, 105.toByte(), Class367_Sub11.anInt7396.toLong())
@@ -85,7 +84,6 @@ class Class239_Sub10 : Class239 {
             Class348_Sub51.anInt7267 = 0
         }
 
-        @JvmStatic
         fun method1762(i: Int, i_10_: Int, i_11_: Int, i_12_: Int): Int {
             val i_13_ = 56 / ((i - 74) / 43)
             anInt5947++
@@ -94,13 +92,11 @@ class Class239_Sub10 : Class239 {
             return i_10_
         }
 
-        @JvmStatic
         fun method1763(i: Int) {
             aClass351_5938 = null
             if (i != -15596) method1763(-92)
         }
 
-        @JvmStatic
         fun method1765(c: Char, i: Int, i_15_: Int): Char {
             anInt5946++
             if (c.code >= 192 && c.code <= 255) {
@@ -127,7 +123,6 @@ class Class239_Sub10 : Class239 {
             return c
         }
 
-        @JvmStatic
         fun method1766(i: Byte, i_16_: Int, class45: Class45): Class143? {
             anInt5944++
             if (i >= -24) return null

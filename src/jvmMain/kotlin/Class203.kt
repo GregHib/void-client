@@ -15,7 +15,6 @@ object Class203 {
         class348_sub42_sub15.method3251(-16058)
     }
 
-    @JvmStatic
     fun method1478(bool: Boolean): Class348_Sub47? {
         anInt2673++
         val class348_sub47 = Class300.method2273((-103).toByte())

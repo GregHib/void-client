@@ -953,7 +953,6 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         var anInt8952: Int = 0
         var anInt8954: Int = 0
         var anInt8955: Int = 0
-        @JvmStatic
         fun method2839(i: Int, i_0_: Int, i_1_: Int) {
             anInt8890++
             Class244.anInt4609 = i - Class75.anInt1266
@@ -961,7 +960,6 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (i_0_ != -17) method2839(-112, -58, -95)
         }
 
-        @JvmStatic
         fun method2862(class297: Class297?, string: String?, i: Int, i_71_: Int): Class144? {
             try {
                 val i_72_ = 16 % ((-37 - i) / 51)
@@ -1014,21 +1012,18 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             }
         }
 
-        @JvmStatic
         fun method2871(i: Int) {
             anIntArrayArray8910 = null
             if (i != -65) method2862(null, null, 96, -71)
             aClass45_8926 = null
         }
 
-        @JvmStatic
         fun method2878(i: Int, i_103_: Int, i_104_: Int): Class318_Sub1_Sub1? {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_103_]!![i_104_]
             if (class357 == null || class357.aClass318_Sub1_Sub1_4402 == null) return null
             return class357.aClass318_Sub1_Sub1_4402
         }
 
-        @JvmStatic
         fun method2879(i: Int, i_105_: Int, i_106_: Int) {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_105_]!![i_106_]
             if (class357 != null) {

@@ -40,7 +40,6 @@ class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45
         var anInt459: Int = 0
         var anInt461: Int = 0
 
-        @JvmStatic
         fun method338(i: Int, i_0_: Int) {
             var i_0_ = i_0_
             if (i == Class316.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350)) i_0_ = -1
@@ -82,7 +81,6 @@ class Class33 internal constructor(class230: Class230?, i: Int, class45: Class45
             }
         }
 
-        @JvmStatic
         fun method340(i: Int, i_5_: Byte): Int {
             var i = i
             anInt459++

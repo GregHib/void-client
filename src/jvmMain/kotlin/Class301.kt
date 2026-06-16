@@ -13,7 +13,6 @@ object Class301 {
     var anInt3829: Int = -1
     var anInt3830: Int = 0
 
-    @JvmStatic
     fun method2278(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int): Int {
         anInt3830++
         val i_3_ = -114 / ((i_1_ - 74) / 45)
@@ -56,7 +55,6 @@ object Class301 {
         }
     }
 
-    @JvmStatic
     fun method2281(i: Int) {
         aClass351_3825 = null
         if (i != 1) Class301.method2278(-115, 106, (-74).toByte(), -75)

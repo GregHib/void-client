@@ -174,14 +174,12 @@ class Class348_Sub4 : Class348 {
         var aClass173_6602: Class173? = Class173()
         var anInt6611: Int = 0
         var anInt6615: Int = 0
-        @JvmStatic
         fun method2748(i: Int) {
             val i_2_ = 80 / ((52 - i) / 57)
             aClass173_6602 = null
             aClass248_6601 = null
         }
 
-        @JvmStatic
         fun method2749(i: Int): Int {
             if (i != -1) method2749(20)
             anInt6593++

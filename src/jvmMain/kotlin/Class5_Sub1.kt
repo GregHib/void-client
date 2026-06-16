@@ -97,21 +97,18 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
         var anInt8351: Int = 0
         var anInt8352: Int = 0
 
-        @JvmStatic
         fun method184(i: Int): IntArray {
             anInt8346++
             if (i != 1084489728) method189(33.toByte())
             return (intArrayOf(Class56.anInt1044, Class17.anInt235, Class291.anInt3736))
         }
 
-        @JvmStatic
         fun method185(i: Int, i_2_: Byte): Int {
             if (i_2_ > 0) anInt8352 = 48
             anInt8340++
             return 0xff and i
         }
 
-        @JvmStatic
         fun method187(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, class361: Class361, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int): Boolean {
             anInt8348++
             var i_16_ = i_14_
@@ -255,14 +252,12 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
             return false
         }
 
-        @JvmStatic
         fun method188(i: Byte): Array<Class29?> {
             anInt8345++
             val i_34_ = -7 / ((-67 - i) / 44)
             return (arrayOf<Class29?>(Class178.aClass29_2339, Class178.aClass29_2341, Class178.aClass29_2342, Class178.aClass29_2343, Class178.aClass29_2344, Class178.aClass29_2345, Class178.aClass29_2346, Class178.aClass29_2347, Class178.aClass29_2348, Class178.aClass29_2349, Class178.aClass29_2350, Class178.aClass29_2351, Class178.aClass29_2352, Class178.aClass29_2353))
         }
 
-        @JvmStatic
         fun method189(i: Byte) {
             if (i < 112) anInt8352 = -87
             aClass221_8344 = null

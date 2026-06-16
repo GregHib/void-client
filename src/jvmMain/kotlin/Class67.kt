@@ -48,7 +48,6 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
         var anInt4645: Int = 0
         var anInt4647: Int = 0
         var anIntArray4648: IntArray? = IntArray(14)
-        @JvmStatic
         fun method716(i: Int) {
             if (i == 1) {
                 aClass105_4643 = null
@@ -70,7 +69,6 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
             return false
         }
 
-        @JvmStatic
         fun method718(class318_sub1s: Array<Class318_Sub1?>, i: Int, i_4_: Int) {
             if (i < i_4_) {
                 val i_5_ = (i + i_4_) / 2

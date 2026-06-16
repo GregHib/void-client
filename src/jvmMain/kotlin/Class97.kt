@@ -214,7 +214,6 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
             }
         }
 
-        @JvmStatic
         fun method876(i: Int, i_23_: Int) {
             anInt1557++
             withLock(Class24.aClass60_355!!) {

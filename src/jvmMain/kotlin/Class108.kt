@@ -48,7 +48,6 @@ object Class108 {
         return -1.0f
     }
 
-    @JvmStatic
     fun method1013(i: Byte) {
         aClass364_1657 = null
         if (i < 111) method1013(17.toByte())

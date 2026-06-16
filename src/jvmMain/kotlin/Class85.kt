@@ -174,7 +174,6 @@ class Class85 {
         var anInt1470: Int = 0
         var anInt1476: Int = 0
 
-        @JvmStatic
         fun method828(i: Byte, i_13_: Int, i_14_: Int) {
             if (i.toInt() != 38) method828(63.toByte(), 119, 33)
             anInt1467++
@@ -199,7 +198,6 @@ class Class85 {
             }
         }
 
-        @JvmStatic
         fun method830(i: Int, i_21_: Int, i_22_: Byte, bool: Boolean, i_23_: Int) {
             var bool = bool
             anInt1461++
@@ -213,7 +211,6 @@ class Class85 {
             }
         }
 
-        @JvmStatic
         fun method831(i: Int, i_25_: Int, i_26_: Int, i_27_: Int): Int {
             anInt1476++
             val i_28_ = 106 / ((-20 - i_27_) / 48)

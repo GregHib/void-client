@@ -828,7 +828,6 @@ class Class361 {
             } while (false)
         }
 
-        @JvmStatic
         fun method3502(i: Int, i_61_: Int, i_62_: Int, i_63_: Int) {
             anInt4439++
             val string = ("tele " + i_62_ + "," + (i_63_ shr 6) + "," + (i shr 6) + "," + (0x3f and i_63_) + "," + (0x3f and i))
@@ -836,7 +835,6 @@ class Class361 {
             Class82.method812(string, true, false, (-79).toByte())
         }
 
-        @JvmStatic
         fun method3508(i: Int) {
             aClass114_4433 = null
             if (i != 2) aFloat4455 = 0.7198636f

@@ -57,7 +57,6 @@ class Class126 : Interface14 {
         var anInt4994: Int = 0
         var anInt4995: Int = 0
 
-        @JvmStatic
         fun method1112(i: Int) {
             if (i != 1) aClass267Array4987 = null
             aClass45_4984 = null

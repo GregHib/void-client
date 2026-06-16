@@ -67,7 +67,6 @@ class Class135_Sub1 : Class135, Interface2 {
         var anInt4717: Int = 0
         var anInt4718: Int
 
-        @JvmStatic
         fun method1153(var_ha: ha, i: Int) {
             anInt4713++
             var i_4_ = 0
@@ -151,7 +150,6 @@ class Class135_Sub1 : Class135, Interface2 {
             Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_5_, true, i_4_ + anInt4717, Class237_Sub1.anInt5819)
         }
 
-        @JvmStatic
         fun method1154(i: Byte) {
             val i_23_ = -93 / ((i - -75) / 36)
             anIntArray4709 = null

@@ -11,7 +11,6 @@ import java.awt.Canvas
  * counters) can live in commonMain.
  */
 object Class93Statics {
-    @JvmStatic
     fun method861(i: Int) {
         Class93.aStringArray1531 = null
         val i_0_ = 2 / ((i - 33) / 38)
@@ -43,7 +42,6 @@ object Class93Statics {
         return is_3_
     }
 
-    @JvmStatic
     fun method864(i: Int, `is`: ByteArray?, i_4_: Int, i_5_: Int): ByteArray {
         Class93.anInt1533++
         if (i_5_ >= -30) Class93.aStringArray1531 = null

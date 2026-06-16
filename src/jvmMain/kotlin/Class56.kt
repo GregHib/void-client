@@ -67,7 +67,6 @@ class Class56 private constructor(i: Int, class274: Class274?, class274_5_: Clas
         var anInt1044: Int = 0
         var anIntArray1045: IntArray? = IntArray(2)
 
-        @JvmStatic
         fun method526(i: Int) {
             aClass56_1040 = null
             aClass56_1032 = null
@@ -95,7 +94,6 @@ class Class56 private constructor(i: Int, class274: Class274?, class274_5_: Clas
             }
         }
 
-        @JvmStatic
         fun method527(shell: AwtWindowShell?, class297: Class297?, bool: Boolean) {
             val frame = shell?.frame
             try {

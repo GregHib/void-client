@@ -16,7 +16,6 @@ class Class173 {
         var aClass114_2285: Class114? = Class114(77, 4)
         var aLong2286: Long = 0L
 
-        @JvmStatic
         fun method1329(i: Int) {
             if (i != 4) method1329(95)
             aClass114_2285 = null
@@ -30,7 +29,6 @@ class Class173 {
             class348_sub42_sub15.anInt9652 = i
         }
 
-        @JvmStatic
         fun method1331(i: Byte, `object`: Any?, i_2_: Int, i_3_: Int): ByteArray? {
             anInt2283++
             if (`object` == null) return null

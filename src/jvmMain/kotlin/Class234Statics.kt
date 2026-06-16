@@ -16,7 +16,6 @@ object Class234Statics {
     var anInt3048: Int = 0
     var anInt3049: Int = 0
 
-    @JvmStatic
     fun method1659(i: Byte) {
         if (i >= -2) method1659(126.toByte())
         aClass138_3044 = null

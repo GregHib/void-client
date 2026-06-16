@@ -70,20 +70,17 @@ abstract class Class135 {
         var anInt1925: Int = 0
         var anInt1926: Int = 0
         var aColorArray1928: IntArray? = intArrayOf(-0x1000000 or 9179409, -0x1000000 or 3289650, -0x1000000 or 3289650, -0x1000000 or 3289650)
-        @JvmStatic
         fun method1148(i: Int, i_0_: Int) {
             anInt1925++
             val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i, 105.toByte(), i_0_) //6
             class348_sub42_sub15.method3251(i_0_ xor 0x3ebf.inv())
         }
 
-        @JvmStatic
         fun method1149(i: Int) {
             val i_1_ = -90 / ((-50 - i) / 37)
             aColorArray1928 = null
         }
 
-        @JvmStatic
         fun method1151(i: Int, var_ha: ha?, i_3_: Int): Class143? {
             anInt1924++
             if (i != -25411) return null

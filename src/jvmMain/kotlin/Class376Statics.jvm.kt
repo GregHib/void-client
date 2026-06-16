@@ -1,6 +1,5 @@
 /** JVM-only companion members for Class376 (reference jvmMain classes). */
 object Class376Statics {
-    @JvmStatic
     fun method3616(i: Int) {
         Class376.anInt4549++
         if (Class182.anInterface16Array2447 != null) {
@@ -13,7 +12,6 @@ object Class376Statics {
         if (i != 12639) Class376.anInt4559 = 72
     }
 
-    @JvmStatic
     fun method3620(class318_sub1_sub3: Class318_Sub1_Sub3?, i: Int): Class148 {
         if (i < 9) Class376.anInt4559 = -27
         Class376.anInt4547++

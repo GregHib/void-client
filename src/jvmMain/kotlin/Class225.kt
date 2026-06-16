@@ -261,7 +261,6 @@ class Class225 {
         var anInt2955: Int
         var anInt2956: Int = 0
         var aClass243_2957: Class243?
-        @JvmStatic
         fun method1619(i: Byte) {
             aClass225_2931 = null
             aClass173_2944 = null

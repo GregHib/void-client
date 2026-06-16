@@ -8,7 +8,6 @@ object Class172 {
     var anIntArray2280: IntArray? = IntArray(200)
     var anInt2281: Int = 0
 
-    @JvmStatic
     fun method1325(i: Int) {
         anIntArray2280 = null
         if (i <= -123) aClass114_2279 = null

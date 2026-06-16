@@ -50,7 +50,6 @@ class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
             } else Class348_Sub49.method3379(2, 5)
         }
 
-        @JvmStatic
         fun method1216(i: Byte) {
             if (i.toInt() != -97) aFloatArray2075 = null
             aClass243_2077 = null

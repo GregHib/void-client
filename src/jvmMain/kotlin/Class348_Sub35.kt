@@ -28,7 +28,6 @@ class Class348_Sub35 : Class348 {
             }
         }
 
-        @JvmStatic
         fun method3028(i: Int) {
             if (i != -11677) Companion.method3027((-80).toByte())
             aClass74_6977 = null

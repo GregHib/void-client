@@ -66,7 +66,6 @@ class Class239_Sub9 : Class239 {
         var aClass105Array5933: Array<Class105?>? = null
         var aClass351_5934: Class351? = Class351(78, 16)
 
-        @JvmStatic
         fun method1758(i: Int) {
             if (i != -16211) aClass351_5934 = null
             aClass230_5932 = null

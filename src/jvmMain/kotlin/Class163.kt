@@ -129,7 +129,6 @@ class Class163 internal constructor(i: Int, i_27_: Int) {
         var anInt2170: Int = 0
         var anInt2171: Int = 0
 
-        @JvmStatic
         fun method1269(i: Int): Class348_Sub42_Sub14? {
             if (i != -17096) return null
             anInt2168++
@@ -144,7 +143,6 @@ class Class163 internal constructor(i: Int, i_27_: Int) {
             }
         }
 
-        @JvmStatic
         fun method1273(`is`: IntArray, bool: Boolean): String {
             anInt2161++
             val stringbuffer = StringBuffer()
@@ -173,12 +171,10 @@ class Class163 internal constructor(i: Int, i_27_: Int) {
             return stringbuffer.toString()
         }
 
-        @JvmStatic
         fun method1274(class76: Class76?) {
             Class71.aClass76_1208 = class76
         }
 
-        @JvmStatic
         fun method1276(i: Int) {
             val i_35_ = 101 % ((i - -20) / 49)
             aClass17Array2169 = null

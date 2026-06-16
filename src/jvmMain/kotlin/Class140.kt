@@ -10,7 +10,6 @@ object Class140 {
     var anInt1962: Int = 0
 
     @Throws(Exception_Sub1::class)
-    @JvmStatic
     fun method1168(i: Int, i_0_: Int, rectangles: Array<Rect?>?) {
         anInt1957++
         if (Class348_Sub49.anInt7207 != 1) Class21.aHa326!!.method3707(rectangles, i, 0, 0)
@@ -18,14 +17,12 @@ object Class140 {
         if (i_0_ != 0) aClass351_1961 = null
     }
 
-    @JvmStatic
     fun method1169(bool: Boolean) {
         aClass351_1961 = null
         aClass114_1959 = null
         if (bool != false) aClass351_1961 = null
     }
 
-    @JvmStatic
     fun method1170(i: Byte) {
         anInt1956++
         if (Class34.aFrame476 == null) {
@@ -51,7 +48,6 @@ object Class140 {
         return method3551(8320, 10, i, bool)
     }
 
-    @JvmStatic
     fun method1172(i: Byte, i_8_: Int): Boolean {
         anInt1960++
         val i_9_ = 35 / ((-45 - i) / 38)

@@ -17,7 +17,6 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
         var aClass101_9114: Class101? = null
         var anInt9115: Int = 0
 
-        @JvmStatic
         fun method3057(i: Byte) {
             if (i > -32) method3058(-76, 25, -12)
             aClass101_9114 = null
@@ -25,7 +24,6 @@ class Class348_Sub40_Sub4 : Class348_Sub40(0, true) {
             aD9113 = null
         }
 
-        @JvmStatic
         fun method3058(i: Int, i_1_: Int, i_2_: Int) {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_1_]!![i_2_]
             if (class357 != null) {

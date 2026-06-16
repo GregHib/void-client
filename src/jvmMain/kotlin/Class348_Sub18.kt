@@ -57,7 +57,6 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
         var anInt6821: Int = 0
         var anInt6822: Int = 0
 
-        @JvmStatic
         fun method2936(i: Byte) {
             if (i.toInt() == -25) aClass351_6814 = null
         }
@@ -147,7 +146,6 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
             }
         }
 
-        @JvmStatic
         fun method2941(target: DisplayTarget?, i: Int, bool: Boolean): Class373? {
             // Extract the AWT Component from the DisplayTarget seam so Class373_Sub1/Sub2
             // (which stay jvmMain and take Component) never appear in common code.

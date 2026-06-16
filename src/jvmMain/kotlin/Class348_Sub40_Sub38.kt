@@ -83,7 +83,6 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
         var anInt9479: Int = 0
         var anIntArray9480: IntArray? = IntArray(13)
 
-        @JvmStatic
         fun method3149(i: Int) {
             aClass74_9475 = null
             anIntArray9480 = null
@@ -93,7 +92,6 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
             if (i < 32) method3149(58)
         }
 
-        @JvmStatic
         fun method3150(bool: Boolean) {
             anInt9469++
             var i = 0

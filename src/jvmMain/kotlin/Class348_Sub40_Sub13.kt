@@ -26,7 +26,6 @@ class Class348_Sub40_Sub13 : Class348_Sub40(1, true) {
         var anInt9203: Int = -1
         var aFloat9204: Float
 
-        @JvmStatic
         fun method3080(i: Byte) {
             aClass262_9201 = null
             if (i < 39) method3080(100.toByte())

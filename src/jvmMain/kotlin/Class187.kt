@@ -90,7 +90,6 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
             }
         }
 
-        @JvmStatic
         fun method1406(bool: Boolean) {
             if (bool == true) {
                 Class3.method175((-6).toByte())
@@ -99,7 +98,6 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
             }
         }
 
-        @JvmStatic
         fun method1407(i: Byte) {
             val i_2_ = 92 / ((-3 - i) / 60)
             anIntArray2509 = null

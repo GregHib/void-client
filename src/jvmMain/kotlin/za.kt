@@ -35,7 +35,6 @@ abstract class za : Class348(), ZaBase {
             }
         }
 
-        @JvmStatic
         fun method3438(i: Byte) {
             if (i > 39) aClass138_7274 = null
         }

@@ -166,7 +166,6 @@ class Class356 internal constructor(var anInt4377: Int) {
         var anInt4386: Int = 0
         var anInt4387: Int = 0
         var aClass114_4388: Class114? = Class114(3, 3)
-        @JvmStatic
         fun method3478(bool: Boolean) {
             aClass114_4388 = null
             if (bool != false) anInt4383 = 67

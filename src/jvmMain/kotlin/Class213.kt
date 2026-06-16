@@ -692,7 +692,6 @@ class Class213 {
         var anInt2828: Int = 0
         var anInt2829: Int = 0
         var anInt2832: Int = 0
-        @JvmStatic
         fun method1564(i: Int) {
             aClass238_2773 = null
             if (i <= 54) aLong2789 = -74L

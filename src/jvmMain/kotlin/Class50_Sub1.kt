@@ -46,7 +46,6 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
         var aBooleanArrayArray5225: Array<BooleanArray?>?
         var aBoolean5226: Boolean
 
-        @JvmStatic
         fun method460(i: Int) {
             if (i != 2) method460(-52)
             aClass101_5209 = null
@@ -55,7 +54,6 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
             aClass351_5217 = null
         }
 
-        @JvmStatic
         fun method461(bool: Boolean, `object`: Any?, i: Int): ByteArray? {
             anInt5215++
             if (`object` == null) return null
@@ -72,7 +70,6 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
             throw IllegalArgumentException()
         }
 
-        @JvmStatic
         fun method462(i: Byte, i_20_: Int): Char {
             anInt5216++
             var i_21_ = 0xff and i.toInt()
@@ -85,7 +82,6 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
             return i_21_.toChar()
         }
 
-        @JvmStatic
         fun method463(class348_sub47: Class348_Sub47, bool: Boolean): IntArray {
             anInt5210++
             val class348_sub49 = Class348_Sub49(518)

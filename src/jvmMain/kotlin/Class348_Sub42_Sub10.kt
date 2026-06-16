@@ -174,7 +174,6 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
             Class125.anInt4930 = 0
         }
 
-        @JvmStatic
         fun method3217(i: Byte) {
             if (i.toInt() != 61) Companion.method3211((-95).toByte())
             aClass299_9571 = null

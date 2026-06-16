@@ -300,7 +300,6 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
             anInt6711 = 0
         }
 
-        @JvmStatic
         fun method2785() {
             aByteArray6714 = null
             aClass370Array6718 = null
@@ -328,7 +327,6 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
             return (i_0_.toDouble() * 2.0.pow((i_2_ - 788).toDouble())).toFloat()
         }
 
-        @JvmStatic
         fun method2788(): Int {
             val i: Int = aByteArray6714!![anInt6729].toInt() shr anInt6711 and 0x1
             anInt6711++
@@ -337,7 +335,6 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
             return i
         }
 
-        @JvmStatic
         fun method2789(i: Int): Int {
             var i = i
             var i_7_ = 0
@@ -435,7 +432,6 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
             return true
         }
 
-        @JvmStatic
         fun method2793(class45: Class45, i: Int): Class348_Sub10? {
             if (!method2792(class45)) {
                 class45.method421(false, i)
@@ -446,7 +442,6 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
             return Class348_Sub10(`is`)
         }
 
-        @JvmStatic
         fun method2795(class45: Class45, i: Int, i_115_: Int): Class348_Sub10? {
             if (!method2792(class45)) {
                 class45.method420(-10499, i, i_115_)

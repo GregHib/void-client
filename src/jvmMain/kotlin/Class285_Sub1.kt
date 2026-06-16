@@ -63,7 +63,6 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
         var anInt8494: Int = 0
         var anInt8495: Int = 0
 
-        @JvmStatic
         fun method2127(i: Int, string: String?): String? {
             if (i != 2) return null
             anInt8483++
@@ -94,7 +93,6 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
             return stringbuffer.toString()
         }
 
-        @JvmStatic
         fun method2128(i: Int, class348_sub49: Class348_Sub49): Class369_Sub3_Sub1 {
             anInt8495++
             val class369_sub3 = Class348_Sub46.method3322(0, class348_sub49)
@@ -109,7 +107,6 @@ class Class285_Sub1 internal constructor(class377: Class377, bool: Boolean) : Cl
             Class21.aHa326!!.DA(Class248.anInt3202, Class239_Sub5.anInt5886, Class14_Sub3.anInt8630, Class27.anInt394)
         }
 
-        @JvmStatic
         fun method2131(i: Int) {
             if (i == 0) {
                 if (Npc.anInt10503 == 2) {

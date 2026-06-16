@@ -21,14 +21,12 @@ class Class348_Sub6 internal constructor(var anInt6630: Int, var anInt6636: Int)
         /*synthetic*/
         var aClass6640: Class<*>? = null
 
-        @JvmStatic
         fun method2768(i: Int) {
             anIntArray6631 = null
             anIntArray6635 = null
             if (i != 3) anInt6634 = 101
         }
 
-        @JvmStatic
         fun method2769(var_class: Class<*>?, i: Byte, string: String?): Boolean {
             try {
                 anInt6639++
@@ -58,7 +56,6 @@ class Class348_Sub6 internal constructor(var anInt6630: Int, var anInt6636: Int)
             }
         }
 
-        @JvmStatic
         fun method2770(i: Int) {
             anInt6638++
             if (Class10.anIntArray179 == null) Class10.anIntArray179 = IntArray(65536)

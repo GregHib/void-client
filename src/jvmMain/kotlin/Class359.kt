@@ -12,7 +12,6 @@ class Class359 {
         var aClass114_4421: Class114? = Class114(13, -2)
         var anInt4422: Int = 0
         var anInt4424: Int = 0
-        @JvmStatic
         fun method3490(bool: Boolean): Boolean {
             anInt4419++
             var bool_0_ = bool
@@ -39,7 +38,6 @@ class Class359 {
             return bool_0_
         }
 
-        @JvmStatic
         fun method3491(i: Int) {
             aClass114_4421 = null
             if (i != 1) method3491(-30)

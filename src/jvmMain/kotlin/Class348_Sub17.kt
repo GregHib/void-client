@@ -411,7 +411,6 @@ class Class348_Sub17 : Class348 {
             }
         }
 
-        @JvmStatic
         fun method2929(throwable: Throwable, string: String?): RuntimeException_Sub1 {
             anInt6789++
             if (DebugFlags.trace) {
@@ -425,7 +424,6 @@ class Class348_Sub17 : Class348 {
             return runtimeexception_sub1
         }
 
-        @JvmStatic
         fun method2930(i: Byte) {
             aClass359Array6802 = null
             val i_0_ = -14 / ((i - 61) / 43)

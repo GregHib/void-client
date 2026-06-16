@@ -14,21 +14,18 @@ object Class62 {
     var anInt1115: Int = 0
     var anIntArrayArrayArray1116: Array<Array<IntArray?>?>? = null
 
-    @JvmStatic
     fun method596(i: Int): Array<Class341?> {
         if (i != 20000) anIntArrayArrayArray1116 = null
         anInt1112++
         return (arrayOf<Class341?>(Class186_Sub1.aClass341_5808, Class27.aClass341_399, Class237_Sub1.aClass341_5821))
     }
 
-    @JvmStatic
     fun method597(i: Byte) {
         aClass243_1114 = null
         anIntArrayArrayArray1116 = null
         val i_0_ = -116 / ((6 - i) / 60)
     }
 
-    @JvmStatic
     fun method598(i: Int) {
         anInt1111++
         if (i != 9013) method597(86.toByte())
@@ -40,7 +37,6 @@ object Class62 {
         }
     }
 
-    @JvmStatic
     fun method599(i: Int): Long {
         return withLock(this) {
         if (i > -52) return@withLock -121L

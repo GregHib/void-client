@@ -62,14 +62,12 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
             Class205.anInt2688 = i_3_
         }
 
-        @JvmStatic
         fun method322(i: Int) {
             anIntArray407 = null
             aClass84_413 = null
             if (i != 1) method322(-112)
         }
 
-        @JvmStatic
         fun method323(class45: Class45?, class297: Class297?, i: Byte) {
             try {
                 Class348_Sub41.aString7048 = ""

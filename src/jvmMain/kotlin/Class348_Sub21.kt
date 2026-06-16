@@ -23,7 +23,6 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
         var aString6854: String? = null
         var anInt6856: Int = 0
 
-        @JvmStatic
         fun method2954(i: Byte) {
             anInt6856++
             if (za_Sub1.anInt9775 != -1 && Class292.anInt4803 != -1) {
@@ -80,7 +79,6 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
             return i xor i_24_
         }
 
-        @JvmStatic
         fun method2956(i: Byte) {
             aString6854 = null
             if (i.toInt() != 53) Companion.method2954((-100).toByte())

@@ -63,7 +63,6 @@ class Class258_Sub2 : Class258 {
         var anInt8533: Int = 0
         var anInt8534: Int = 0
         var anInt8537: Int = 0
-        @JvmStatic
         fun method1962(i: Int) {
             aStringArray8532 = null
             aLongArray8530 = null

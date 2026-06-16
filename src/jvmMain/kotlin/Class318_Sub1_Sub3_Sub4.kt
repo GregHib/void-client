@@ -333,7 +333,6 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             }
         }
 
-        @JvmStatic
         fun method2469(bool: Boolean) {
             aClass46_10336 = null
             if (bool == true) aClass338Array10330 = null

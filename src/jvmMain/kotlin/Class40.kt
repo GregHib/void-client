@@ -59,7 +59,6 @@ class Class40 internal constructor() {
         var anInt551: Int = 0
         var anInt558: Int = -1
 
-        @JvmStatic
         fun method368(i: Int, i_0_: Int, bool: Boolean, i_1_: Int, class45: Class45?, i_2_: Int, i_3_: Int) {
             if (i_0_ != 18002) anInt558 = 41
             anInt551++
@@ -76,7 +75,6 @@ class Class40 internal constructor() {
             } else method2732(i_2_, i_1_, bool, 123, class45, i)
         }
 
-        @JvmStatic
         fun method369(i: Int) {
             Class348_Sub45Statics.aClass105Array7107 = null
             Class239_Sub2.aClass105Array5857 = null
@@ -100,13 +98,11 @@ class Class40 internal constructor() {
             anInt542++
         }
 
-        @JvmStatic
         fun method370(bool: Boolean) {
             if (bool != true) anIntArray543 = null
             anIntArray543 = null
         }
 
-        @JvmStatic
         fun method371(i: Int, i_4_: Int, i_5_: Int): Boolean {
             if (i_4_ != 256) return true
             anInt547++

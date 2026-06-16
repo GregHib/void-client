@@ -10,7 +10,6 @@ class Class371 {
     companion object {
         var anInt4521: Int = 0
         var anInt4523: Int = 0
-        @JvmStatic
         fun method3583(bool: Boolean, `is`: ByteArray?, i: Int, i_0_: Int, var_ha_Sub2: ha_Sub2?, i_1_: Int, i_2_: Int, i_3_: Int): Class258_Sub3_Sub1? {
             try {
                 anInt4521++
@@ -23,7 +22,6 @@ class Class371 {
             }
         }
 
-        @JvmStatic
         fun method3584(i: Int, i_4_: Int): Boolean {
             if (i_4_ != 1) return false
             anInt4523++

@@ -17,7 +17,6 @@ object Class205 {
     var aClass114_2693: Class114?
     var anIntArray2694: IntArray?
 
-    @JvmStatic
     fun method1496(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
         method1070(118.toByte(), i_2_)
         anInt2685++
@@ -117,7 +116,6 @@ object Class205 {
         if (i_3_ != 2) method1497(79)
     }
 
-    @JvmStatic
     fun method1497(i: Int) {
         anIntArray2694 = null
         aClass348_Sub44_2692 = null

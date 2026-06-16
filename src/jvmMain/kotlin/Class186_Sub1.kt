@@ -94,7 +94,6 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
         var aClass111_5813: Class111? = null
         var anInt5814: Int = 0
 
-        @JvmStatic
         fun method1399(i: Int, c: Char): Int {
             anInt5805++
             if (i != 7) method1400(-22)
@@ -102,13 +101,11 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
             return -1
         }
 
-        @JvmStatic
         fun method1400(i: Int) {
             aClass341_5808 = null
             aClass111_5813 = null
         }
 
-        @JvmStatic
         fun method1401(var_ha_Sub2: ha_Sub2, i: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int): Class258_Sub3_Sub1 {
             anInt5809++
             if (i_37_ != 34037) aClass341_5808 = null
@@ -117,7 +114,6 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
             return Class258_Sub3_Sub1(var_ha_Sub2, 34037, i, i_39_, i_38_, i_40_, true)
         }
 
-        @JvmStatic
         fun method1402(i: Int) {
             if (i == 1) {
                 Class318_Sub1_Sub2.aClass60_8732!!.method590(0)
@@ -125,7 +121,6 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
             }
         }
 
-        @JvmStatic
         fun method1403(i: Int, i_45_: Int, `is`: ByteArray, bool: Boolean, i_46_: Int, i_47_: Int, i_48_: Int) {
             var i = i
             var i_45_ = i_45_

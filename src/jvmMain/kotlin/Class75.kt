@@ -50,7 +50,6 @@ open class Class75 {
         var anInt1276: Int = 0
         var anInt1277: Int = 0
 
-        @JvmStatic
         fun method745(var_ha: ha, class348_sub21: Class348_Sub21, class42: Class42) {
             if (class42.anIntArray591 != null) {
                 val `is` = IntArray(class42.anIntArray591!!.size)
@@ -105,7 +104,6 @@ open class Class75 {
             }
         }
 
-        @JvmStatic
         fun method746() {
             aClass268_1239 = null
             aClass183_1240 = null
@@ -138,7 +136,6 @@ open class Class75 {
             class348_sub21.anInt6855 = (anInt1268 - (i_17_ + i_15_ * (class348_sub21.anInt6851 - anInt1257) shr 16))
         }
 
-        @JvmStatic
         fun method748(var_ha: ha) {
             val i: Int = anInt1265 - anInt1274
             val i_18_: Int = anInt1277 - anInt1257
@@ -147,7 +144,6 @@ open class Class75 {
             method765(var_ha, i_19_, i_20_, 0, 0)
         }
 
-        @JvmStatic
         fun method749() {
             aByteArray1273 = null
             aByteArray1264 = null
@@ -229,7 +225,6 @@ open class Class75 {
             }
         }
 
-        @JvmStatic
         fun method751(i: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int, i_46_: Int) {
             anInt1274 = i - anInt1266
             anInt1277 = i_40_ - anInt1263
@@ -241,7 +236,6 @@ open class Class75 {
             anInt1268 = i_46_
         }
 
-        @JvmStatic
         fun method752(class45: Class45?, class268: Class268?, class183: Class183?, class263: Class263?, class153: Class153?, class141: Class141?, interface17: Interface17?) {
             aClass45_1237 = class45
             aClass268_1239 = class268
@@ -403,7 +397,6 @@ open class Class75 {
             }
         }
 
-        @JvmStatic
         fun method756(var_ha: ha?, i: Int, i_75_: Int) {
             val class348_sub49: Class348_Sub49 = (Class348_Sub49(aClass45_1237!!.method391((aClass348_Sub42_Sub14_1243!!.aString9625), "area", -29832)))
             val i_76_ = class348_sub49.readUnsignedByte(255)
@@ -479,7 +472,6 @@ open class Class75 {
             return (aClass356_1241!!.method3480(i.toLong(), -6008) as Class348_Sub42_Sub14?)
         }
 
-        @JvmStatic
         fun method758(var_ha: ha?): Class262? {
             val i: Int = anInt1265 - anInt1274
             val i_102_: Int = anInt1277 - anInt1257
@@ -514,7 +506,6 @@ open class Class75 {
             return i_108_
         }
 
-        @JvmStatic
         fun method760() {
             aByteArray1273 = ByteArray(anInt1259 * anInt1267)
             aByteArray1256 = ByteArray(anInt1259 * anInt1267)
@@ -526,7 +517,6 @@ open class Class75 {
             anIntArray1260 = IntArray(aClass268_1239!!.anInt3429 + 1)
         }
 
-        @JvmStatic
         fun method761() {
             val `is` = IntArray(3)
             for (i in 0..<aClass252_1246!!.anInt3241) {
@@ -581,7 +571,6 @@ open class Class75 {
             }
         }
 
-        @JvmStatic
         fun method764(var_d: d, i: Int, i_129_: Int) {
             for (i_130_ in 0..<aClass268_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_d, i_130_, i, i_129_)
         }
@@ -730,7 +719,6 @@ open class Class75 {
             }
         }
 
-        @JvmStatic
         fun method766(i: Int, i_191_: Int): Class348_Sub42_Sub14? {
             var class348_sub42_sub14 = aClass356_1241!!.method3484(0) as Class348_Sub42_Sub14?
             while (class348_sub42_sub14 != null) {

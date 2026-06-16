@@ -13,13 +13,11 @@ class Class8 {
         var aClass364_165: Class364? = null
         var anInt166: Int = 0
 
-        @JvmStatic
         fun method213(i: Byte) {
             anIntArray164 = null
             aClass364_165 = null
         }
 
-        @JvmStatic
         fun method214(npc: Npc, i: Int): Int {
             anInt163++
             var class79 = (npc.aClass79_10505)

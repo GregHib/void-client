@@ -45,7 +45,6 @@ class Class348_Sub45_Sub2 : Class348_Sub45() {
         var anInt9738: Int = 0
         var anInt9740: Int = 0
 
-        @JvmStatic
         fun method3316(i: Int, i_0_: Int) {
             anInt9732++
             val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_0_, 105.toByte(), 3)

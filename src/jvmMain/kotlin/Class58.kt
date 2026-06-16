@@ -51,7 +51,6 @@ class Class58 {
         var anInt1066: Int = 0
         var anInt1067: Int = 0
 
-        @JvmStatic
         fun method532(i: Int, i_0_: Int, bool: Boolean, i_1_: Int): Int {
             anInt1061++
             val class348_sub13 = Class258_Sub4.method1974((-120).toByte(), i_0_, bool)
@@ -67,7 +66,6 @@ class Class58 {
             return i_2_
         }
 
-        @JvmStatic
         fun method535(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte) {
             anInt1062++
             val i_13_ = Class85.method831(Class38.anInt513, i_11_, Class132.anInt1910, 111)
@@ -96,7 +94,6 @@ class Class58 {
             }
         }
 
-        @JvmStatic
         fun method536(i: Int, bool: Boolean, i_24_: Int, i_25_: Int, i_26_: Int): Boolean {
             if (bool != false) method536(-65, true, 105, -126, 39)
             anInt1066++

@@ -83,7 +83,6 @@ class Class357 internal constructor(i: Int) {
             }
         }
 
-        @JvmStatic
         fun method3487(i: Int) {
             aLongArray4410 = null
             aClass351_4394 = null

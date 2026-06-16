@@ -122,7 +122,6 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anInt6275: Int = 0
         var aLong6276: Long = 0
 
-        @JvmStatic
         fun method2162(bool: Boolean): String {
             if (bool != false) aLong6276 = -88L
             anInt6271++
@@ -137,7 +136,6 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aClass230_10434?.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_2_ + "/")
         }
 
-        @JvmStatic
         fun method2163(bool: Boolean): Boolean {
             anInt6273++
             try {
@@ -195,7 +193,6 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             return false
         }
 
-        @JvmStatic
         fun method2164(bool: Boolean) {
             if (bool == true) {
                 aClass230_6262 = null

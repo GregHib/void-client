@@ -64,7 +64,6 @@ class Class239_Sub4 : Class239 {
         var aString5882: String? = null
         var aClass114_5883: Class114? = Class114(34, 12)
 
-        @JvmStatic
         fun method1738(i: Int) {
             aClass45_5878 = null
             aFloatArray5874 = null

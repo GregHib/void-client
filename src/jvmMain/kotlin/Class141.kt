@@ -94,13 +94,11 @@ class Class141 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anIntArray1975: IntArray?
         var aClass26_1977: Class26? = null
 
-        @JvmStatic
         fun method1177(i: Byte) {
             Class291.anIntArray3726 = method3533(127.toByte(), 2048, 4, 8, 0.4f, 35, true, 8)
             if (i.toInt() == 122) anInt1970++
         }
 
-        @JvmStatic
         fun method1179(i: Byte) {
             anIntArray1975 = null
             aClass26_1977 = null

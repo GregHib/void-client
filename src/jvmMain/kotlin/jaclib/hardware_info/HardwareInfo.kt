@@ -5,7 +5,6 @@ object HardwareInfo {
     private val dXDiagDisplayDevicesProps: Array<Array<String?>?>?
         external get
 
-    @JvmStatic
     val cPUInfo: IntArray?
         external get
 

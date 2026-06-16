@@ -62,7 +62,6 @@ class Class239_Sub21 : Class239 {
         var anInt6068: Int = 0
         var anInt6069: Int = 0
 
-        @JvmStatic
         fun method1810(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
             if (i_5_ != 8 && i_5_ != 16) {
                 var class357 = Class147.aClass357ArrayArrayArray2029!![i_4_]!![i]!![i_2_]
@@ -96,7 +95,6 @@ class Class239_Sub21 : Class239 {
             anInt6067++
         }
 
-        @JvmStatic
         fun method1811(i: Int, string: String?, i_18_: Int, string_19_: String?): Int {
             try {
                 anInt6060++
@@ -168,7 +166,6 @@ class Class239_Sub21 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1813(i: Int, i_38_: Int): Boolean {
             anInt6069++
             if (i != 8806) method1813(-86, 33)
@@ -176,7 +173,6 @@ class Class239_Sub21 : Class239 {
             return i_38_ == 2 || i_38_ == 1001
         }
 
-        @JvmStatic
         fun method1814(i: Byte) {
             aClass318_Sub1Array6066 = null
             anIntArray6062 = null

@@ -124,7 +124,6 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
         var anInt9282: Int = 0
         var aLongArray9283: LongArray?
 
-        @JvmStatic
         fun method3106(i: Byte) {
             aLongArray9283 = null
             aStringArray9275 = null

@@ -14,7 +14,6 @@ actual object Class369_Sub3_Sub1Statics {
     actual var anInt10176: Int = 0
     actual var anInt10178: Int = 0
 
-    @JvmStatic
     fun method3575(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {
         var i_0_ = i_0_
         var i_2_ = i_2_
@@ -64,12 +63,10 @@ actual object Class369_Sub3_Sub1Statics {
         anInt10173++
     }
 
-    @JvmStatic
     fun method3576(bool: Boolean, bool_9_: Boolean): Boolean {
         return bool or bool_9_
     }
 
-    @JvmStatic
     fun method3577(i: Int, i_10_: Byte, class45: Class45): Class105? {
         anInt10176++
         var class105 = Class345.aClass60_4273!!.method583(i.toLong(), -68) as Class105?
@@ -82,7 +79,6 @@ actual object Class369_Sub3_Sub1Statics {
         return class105
     }
 
-    @JvmStatic
     fun method3578(i: Byte, `object`: Any?, class297: Class297?) {
         do {
             try {

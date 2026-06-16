@@ -48,7 +48,6 @@ class Class160 {
         var anInt2136: Int = 0
         var aFloat2137: Float = 0f
 
-        @JvmStatic
         fun method1254(i: Byte) {
             aBooleanArrayArray2133 = null
             aFloatArray2131 = null

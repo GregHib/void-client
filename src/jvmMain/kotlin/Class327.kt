@@ -15,7 +15,6 @@ object Class327 {
     /** Platform sleep seam; defaults to the JVM Thread.sleep wrapper. */
     var sleeper: Sleeper = ThreadSleeper
 
-    @JvmStatic
     fun method2604(i: Byte) {
         aClass273_4091 = null
         if (i >= -49) method2606(31, -15L)

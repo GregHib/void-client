@@ -95,7 +95,6 @@ class Class348_Sub40_Sub35 : Class348_Sub40(1, true) {
         var aClass161_9443: Class161? = null
         var anInt9444: Int = 0
         var anInt9446: Int = 0
-        @JvmStatic
         fun method3144(i: Byte) {
             aClass161_9443 = null
             if (i < 34) method3144(127.toByte())

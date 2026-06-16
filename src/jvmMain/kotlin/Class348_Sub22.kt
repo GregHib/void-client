@@ -10,7 +10,6 @@ class Class348_Sub22 internal constructor(var aNpc_6859: Npc?) : Class348() {
         var anInt6861: Int = 0
         var anInt6862: Int = 0
 
-        @JvmStatic
         fun method2957(i: Int, i_0_: Byte, i_1_: Int): Class46? {
             anInt6858++
             val class46 = method2570(i_0_ + 1512932774, i_1_)
@@ -42,7 +41,6 @@ class Class348_Sub22 internal constructor(var aNpc_6859: Npc?) : Class348() {
             return i_2_
         }
 
-        @JvmStatic
         fun method2959(i: Int) {
             Class182.aClass346_2449!!.method2698(14174)
             anInt6860++

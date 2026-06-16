@@ -177,7 +177,6 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anInt6231: Int = 0
         var anInt6232: Int = 0
 
-        @JvmStatic
         fun method2148(class351: Class351?, class77: Class77?, i: Int): Class348_Sub47 {
             try {
                 anInt6230++
@@ -271,14 +270,12 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
         }
 
-        @JvmStatic
         fun method2151(i: Int) {
             anIntArray6228 = null
             if (i > -72) method2148(null, null, 77)
             aCalendar6221 = null
         }
 
-        @JvmStatic
         fun method2152(bool: Boolean) {
             for (i in 0..<Class69.anInt1200) Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i] = null
             anInt6223++
@@ -392,7 +389,6 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             Class50_Sub1.aBoolean5226 = true
         }
 
-        @JvmStatic
         fun method2153(i: Int) {
             anInt6214++
             if (!Class160.aBoolean2130 && i <= -37) {

@@ -21,7 +21,6 @@ class Class68 private constructor(var anInt1178: Int) {
         var aClass231_1189: Class231?
         var anIntArrayArray1190: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(2, 4), intArrayOf(2, 4), intArrayOf(5, 2, 4), intArrayOf(4, 5, 2), intArrayOf(2, 4, 5), intArrayOf(5, 2, 4), intArrayOf(1, 6, 2, 5), intArrayOf(1, 6, 7, 1), intArrayOf(6, 7, 1, 1), intArrayOf(0, 8, 9, 8, 9, 4), intArrayOf(8, 9, 4, 0, 8, 9), intArrayOf(2, 10, 0, 10, 11, 11), intArrayOf(2, 4), intArrayOf(1, 6, 7, 1), intArrayOf(1, 6, 7, 1))
 
-        @JvmStatic
         fun method719(i: Byte) {
             aClass68_1183 = null
             aClass68_1184 = null

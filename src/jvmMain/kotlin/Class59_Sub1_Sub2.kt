@@ -30,7 +30,6 @@ class Class59_Sub1_Sub2 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
         var anInt8665: Int = 0
         var anIntArray8666: IntArray? = null
 
-        @JvmStatic
         fun method561(i: Int) {
             aClass74_8662 = null
             if (i != 120) method561(-85)

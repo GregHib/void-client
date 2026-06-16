@@ -57,7 +57,6 @@ class Class119_Sub1 : Class119, Interface2 {
         var anInt4704: Int = 0
         var anInt4705: Int = 0
 
-        @JvmStatic
         fun method1077(var_ha: ha?, i: Byte) {
             anInt4700++
             if ((Class73.anInt4776 >= 2 || r.aBoolean9722) && Class289.aClass46_3701 == null) {

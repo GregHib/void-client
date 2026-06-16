@@ -49,14 +49,12 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
         var anInt9606: Int = 0
         var anIntArray9612: IntArray?
 
-        @JvmStatic
         fun method3228(i: Int) {
             anIntArray9612 = null
             val i_0_ = 29 / ((31 - i) / 43)
             aClass356_9603 = null
         }
 
-        @JvmStatic
         fun method3229(i: Int): Int {
             anInt9596++
             if (Class34.aFrame476 != null) return 3
@@ -65,7 +63,6 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
             return 2
         }
 
-        @JvmStatic
         fun method3230(`is`: IntArray?, is_1_: IntArray?, i: Int) {
             try {
                 anInt9606++

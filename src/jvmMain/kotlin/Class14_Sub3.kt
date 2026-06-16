@@ -30,7 +30,6 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
         var anInt8630: Int = 0
         var anInt8632: Int = 0
 
-        @JvmStatic
         fun method247(i: Int): Class348_Sub51? {
             anInt8632++
             var class234: CacheStore? = null
@@ -62,7 +61,6 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
             return class348_sub51
         }
 
-        @JvmStatic
         fun method248(i: Int): Array<Class114?> {
             anInt8624++
             if (i != -11271) method249(39)
@@ -191,7 +189,6 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
             ))
         }
 
-        @JvmStatic
         fun method249(i: Int) {
             anInt8627++
             Class286_Sub1.aStringArray6200 = arrayOfNulls<String>(500)

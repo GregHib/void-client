@@ -119,14 +119,12 @@ class Class340 internal constructor(class248: Class248?, class112: Class112?, bi
         var anInt4224: Int = 0
         var aClass351_4225: Class351? = Class351(43, -1)
 
-        @JvmStatic
         fun method2671(i: Int) {
             aClass351_4225 = null
             aClass351_4223 = null
             if (i != 0) method2672(92, 5)
         }
 
-        @JvmStatic
         fun method2672(i: Int, i_2_: Int): Boolean {
             anInt4224++
             if (i_2_ >= -89) return true

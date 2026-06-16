@@ -80,7 +80,6 @@ class Class239_Sub25 : Class239 {
         var anInt6109: Int = 0
         var anInt6111: Int = 0
         var anInt6112: Int = 0
-        @JvmStatic
         fun method1825(i: Int, i_3_: Int, i_4_: Int) {
             anInt6102++
             val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(0, 105.toByte(), 15)
@@ -90,7 +89,6 @@ class Class239_Sub25 : Class239 {
             if (i < 57) method1828(5)
         }
 
-        @JvmStatic
         fun method1827(i: Int) {
             anInt6112++
             if (Class126.anIntArray4983 == null) Class126.anIntArray4983 = IntArray(65536)
@@ -151,7 +149,6 @@ class Class239_Sub25 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1828(i: Int) {
             if (i < 20) method1832(47)
             anInt6104++
@@ -160,7 +157,6 @@ class Class239_Sub25 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1832(i: Int) {
             if (i != 1) method1828(33)
             aClass318_Sub9_Sub2_Sub1Array6103 = null

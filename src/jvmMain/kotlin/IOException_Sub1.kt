@@ -8,7 +8,6 @@ class IOException_Sub1(string: String?) : IOException(string) {
         var aClass114_90: Class114? = Class114(42, -1)
         var anIntArray91: IntArray? = IntArray(8)
 
-        @JvmStatic
         fun method129(i: Int, i_0_: Int, ls: LongArray?, i_1_: Int, `is`: IntArray?) {
             do {
                 try {
@@ -51,7 +50,6 @@ class IOException_Sub1(string: String?) : IOException(string) {
             } while (false)
         }
 
-        @JvmStatic
         fun method130(i: Int) {
             if (i == 8) {
                 anIntArray91 = null
@@ -59,7 +57,6 @@ class IOException_Sub1(string: String?) : IOException(string) {
             }
         }
 
-        @JvmStatic
         fun method131(bool: Boolean, i: Int, bool_9_: Boolean, i_10_: Int) {
             anInt87++
             require(!(i_10_ < 8000 || i_10_ > 48000))

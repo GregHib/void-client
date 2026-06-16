@@ -108,7 +108,6 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
         var aFloat6304: Float = 0f
         var anInt6305: Int = 0
 
-        @JvmStatic
         fun method2170(i: Int, i_0_: Byte) {
             Class48.anInt859 = -1
             anInt6300++
@@ -118,13 +117,11 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             Class348_Sub15.method2811(false)
         }
 
-        @JvmStatic
         fun method2171(i: Int) {
             if (i != 0) method2172(-6)
             anIntArray6296 = null
         }
 
-        @JvmStatic
         fun method2172(i: Int) {
             val i_2_ = 27 / ((i - -12) / 57)
             anInt6295++
@@ -140,7 +137,6 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             }
         }
 
-        @JvmStatic
         fun method2173(bool: Boolean, i: Int, bool_6_: Boolean) {
             val i_7_ = 111 % ((i - -62) / 38)
             anInt6292++

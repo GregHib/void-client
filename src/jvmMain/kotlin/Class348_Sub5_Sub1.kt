@@ -308,13 +308,11 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: ha_Sub2) : Class348_S
         var anInt8839: Int = 0
         var anInt8840: Int = 0
         var anInt8843: Int = 0
-        @JvmStatic
         fun method2765(i: Int) {
             aClass21_8832 = null
             if (i != 2048) method2765(52)
         }
 
-        @JvmStatic
         @Throws(IOException::class)
         fun method2766(bool: Boolean, throwable: Throwable): String {
             var throwable = throwable

@@ -13,7 +13,6 @@ object Class348_Sub1Statics {
     var aClass46_6561: Class46? = null
     var anInt6563: Int = 0
 
-    @JvmStatic
     fun method2718(i: Int) {
         if (i >= -95) method2719(90)
         anInt6560++
@@ -23,7 +22,6 @@ object Class348_Sub1Statics {
         }
     }
 
-    @JvmStatic
     fun method2719(i: Int) {
         if (i != 11339) method2719(87)
         aClass46_6561 = null

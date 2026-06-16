@@ -35,7 +35,6 @@ open class Class288 internal constructor(i: Int, class221: Class221?, class341: 
         var anInt4954: Int = 0
         var anInt4956: Int = 0
         var anInt4957: Int = 0
-        @JvmStatic
         fun method2185(i: Int) {
             aClass231_4953 = null
             if (i != 2) aClass231_4953 = null
@@ -47,7 +46,6 @@ open class Class288 internal constructor(i: Int, class221: Class221?, class341: 
             return string.length + 2
         }
 
-        @JvmStatic
         fun method2187(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt4956++
             if (i_0_ > -70) method2187(-57, -121, 54)

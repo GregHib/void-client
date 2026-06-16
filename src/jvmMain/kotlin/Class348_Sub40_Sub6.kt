@@ -80,14 +80,12 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
         var anInt9138: Int = 0
         var anInt9139: Int = 0
 
-        @JvmStatic
         fun method3062(bool: Boolean) {
             if (bool != true) aByteArrayArrayArray9134 = null
             anIntArray9135 = null
             aByteArrayArrayArray9134 = null
         }
 
-        @JvmStatic
         fun method3063(bool: Boolean): Int {
             anInt9132++
             val i = Class348_Sub42_Sub15.aClass56_9660!!.method525(-125)

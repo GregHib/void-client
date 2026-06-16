@@ -148,7 +148,6 @@ class Class321 {
         var aClass114_4015: Class114? = Class114(116, 6)
         var anInt4017: Int get() = Class321Statics.anInt4017; set(v) { Class321Statics.anInt4017 = v }
 
-        @JvmStatic
         fun method2549(i: Byte) {
             if (i > -74) method2549(75.toByte())
             aClass114_4015 = null

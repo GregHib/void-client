@@ -95,7 +95,6 @@ class Class319 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt3986: Int = 0
         var anInt3987: Int = 0
         var aBoolean3988: Boolean = false
-        @JvmStatic
         fun method2545(bool: Boolean) {
             if (bool == true) {
                 aClass315Array3982 = null

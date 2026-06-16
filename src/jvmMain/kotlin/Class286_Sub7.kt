@@ -157,7 +157,6 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anIntArray6290: IntArray? = IntArray(2048)
         var anInt6291: Int = 0
 
-        @JvmStatic
         fun method2165(bool: Boolean, string: String?) {
             var string = string
             anInt6287++
@@ -195,7 +194,6 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
         }
 
-        @JvmStatic
         fun method2166(i: Int) {
             if (i == 6336) {
                 aClass45_6277 = null
@@ -203,7 +201,6 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
         }
 
-        @JvmStatic
         fun method2168(i: Int, i_7_: Int, i_8_: Int) {
             val class357 = Class147.aClass357ArrayArrayArray2029!![i]!![i_7_]!![i_8_]
             if (class357 != null) {
@@ -214,7 +211,6 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
         }
 
-        @JvmStatic
         fun method2169(i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, bool: Boolean): Boolean {
             var i = i
             var i_10_ = i_10_

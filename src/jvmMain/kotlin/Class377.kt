@@ -1272,7 +1272,6 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         var anInt9897: Int = 0
         var anInt9898: Int = 0
         var anInt9900: Int = 0
-        @JvmStatic
         fun method3965(string: String?, i: Int, i_1_: Int) {
             try {
                 anInt9841++
@@ -1284,7 +1283,6 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
             }
         }
 
-        @JvmStatic
         fun method3968(i: Int) {
             val i_10_ = 69 % ((-67 - i) / 57)
             aClass138_9860 = null

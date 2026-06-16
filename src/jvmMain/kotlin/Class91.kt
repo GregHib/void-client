@@ -57,7 +57,6 @@ object Class91 {
         }
     }
 
-    @JvmStatic
     fun method857(i: Int) {
         anIntArray1521 = null
         aClass82_1523 = null

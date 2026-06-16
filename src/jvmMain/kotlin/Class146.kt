@@ -34,14 +34,12 @@ class Class146 {
         var aClass45_2015: Class45? = null
         var anInt2017: Int = 0
         var anInt2018: Int = 0
-        @JvmStatic
         fun method1193(i: Int, i_2_: Int, bool: Boolean): Boolean {
             if (!bool) return true
             anInt2017++
             return (i_2_ and 0x800) != 0
         }
 
-        @JvmStatic
         fun method1194(i: Int) {
             if (i != 10) method1193(91, -68, true)
             aLongArray2013 = null

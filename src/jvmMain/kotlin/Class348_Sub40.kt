@@ -111,7 +111,6 @@ abstract class Class348_Sub40 internal constructor(i: Int, var aBoolean7045: Boo
             return Class50_Sub2(class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
-        @JvmStatic
         fun method3038(i: Int) {
             anInt7044++
             var i_0_ = 0
@@ -135,7 +134,6 @@ abstract class Class348_Sub40 internal constructor(i: Int, var aBoolean7045: Boo
             Class348_Sub20.method2953((-106).toByte())
         }
 
-        @JvmStatic
         fun method3040(bool: Boolean) {
             aClass279_7042 = null
             aClass356_7041 = null

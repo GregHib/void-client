@@ -181,7 +181,6 @@ class Class244 internal constructor(class45: Class45?, class45_12_: Class45?, cl
         var anIntArray4623: IntArray? = IntArray(8)
         var aFloat4626: Float = 0f
 
-        @JvmStatic
         fun method1880(i: Int) {
             if (i >= -103) anInt4610 = -87
             anIntArray4623 = null

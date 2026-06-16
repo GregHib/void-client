@@ -207,13 +207,11 @@ class Class296 internal constructor(`is`: ByteArray) {
             return (i and 0x800) != 0
         }
 
-        @JvmStatic
         fun method2225(i: Int) {
             if (i != 32) aClass114_3773 = null
             aClass114_3773 = null
         }
 
-        @JvmStatic
         fun method2228(i: Int) {
             if (i == 0) {
                 method1582(7851)

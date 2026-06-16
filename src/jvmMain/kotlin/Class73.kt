@@ -41,7 +41,6 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
         var anInt4784: Int = 0
         var anInt4786: Int = 0
 
-        @JvmStatic
         fun method741(i: Byte) {
             aFloatArray4772 = null
             anIntArray4780 = null

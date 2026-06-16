@@ -31,13 +31,11 @@ class Class348_Sub42_Sub9_Sub1 internal constructor(interface14: Interface14?, `
         var anInt10444: Int = 0
         var anInt10445: Int = 0
 
-        @JvmStatic
         fun method3207(i: Byte) {
             val i_1_ = -126 % ((i - -27) / 61)
             aClass356_10442 = null
         }
 
-        @JvmStatic
         fun method3208(class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3, i: Int, i_2_: Int) {
             anInt10439++
             if (class318_sub1_sub3_sub3.anIntArray10236 != null) {

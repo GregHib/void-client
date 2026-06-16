@@ -12,7 +12,6 @@ class Class252 internal constructor(var anInt3241: Int) {
         var aFloat3242: Float = 0f
         var anInt3243: Int = 0
 
-        @JvmStatic
         fun method1917(i: Int) {
             if (i != 40960) aClass114_3240 = null
             aClass351_3237 = null

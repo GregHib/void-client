@@ -74,7 +74,6 @@ class Class338 internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: Int, 
             return class348_sub41
         }
 
-        @JvmStatic
         fun method2662(i: Int) {
             aClass237_Sub1_4197 = null
             anIntArray4196 = null

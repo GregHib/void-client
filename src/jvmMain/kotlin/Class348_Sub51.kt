@@ -2930,7 +2930,6 @@ class Class348_Sub51 : Class348 {
         /*synthetic*/
         var aClass7273: Class<*>? = null
 
-        @JvmStatic
         fun method3430(bool: Boolean) {
             if (bool != false) aShortArrayArray7223 = null
             aClass318_Sub10Array7249 = null

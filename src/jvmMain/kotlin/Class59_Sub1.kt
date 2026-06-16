@@ -137,7 +137,6 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
             }
         }
 
-        @JvmStatic
         fun method552(i: Int, i_28_: Int, i_29_: Byte, i_30_: Int, i_31_: Int, i_32_: Int, `is`: ByteArray): Boolean {
             var i_32_ = i_32_
             anInt5282++
@@ -160,7 +159,6 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
             return false
         }
 
-        @JvmStatic
         fun method553(i: Int) {
             aClass105Array5294 = null
             aClass351_5288 = null
@@ -168,14 +166,12 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
             aClass297_5297 = null
         }
 
-        @JvmStatic
         fun method554(i: Int, i_42_: Int, `is`: ByteArray?): Int {
             if (i != 5126) method553(52)
             anInt5284++
             return Class171.method1319(i_42_, true, `is`!!, 0)
         }
 
-        @JvmStatic
         fun method555(bool: Boolean, i: Int) {
             anInt5286++
             if (i != Class363.aString4461!!.length) {

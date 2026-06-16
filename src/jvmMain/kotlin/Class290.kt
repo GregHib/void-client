@@ -30,7 +30,6 @@ class Class290 internal constructor(var aBoolean3709: Boolean) {
         var anInt3717: Int = 1338
         var anInt3718: Int = 0
 
-        @JvmStatic
         fun method2196(i: Byte) {
             Class239_Sub19.anInt6043 = (Class367_Sub4.anInt7319.toDouble() * 34.46).toInt()
             Class348_Sub33.anInt6964 = 200

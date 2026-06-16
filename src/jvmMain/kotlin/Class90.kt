@@ -12,7 +12,6 @@ object Class90 {
     var regionTileY: Int = 0
     var anIntArray1518: IntArray? = IntArray(14)
 
-    @JvmStatic
     fun method852(i: Int) {
         aClass273_1512 = null
         if (i != 6) aLong1516 = 20L

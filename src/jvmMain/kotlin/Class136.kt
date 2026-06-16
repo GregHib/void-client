@@ -37,7 +37,6 @@ class Class136 internal constructor(class45: Class45?, string: String?) : Interf
         var anInt4795: Int = 0
         var aClass45_4796: Class45? = null
 
-        @JvmStatic
         fun method1159(i: Byte) {
             aShortArrayArray4791 = null
             aClass65_4787 = null

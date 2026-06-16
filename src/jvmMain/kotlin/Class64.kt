@@ -443,7 +443,6 @@ public abstract class Class64 : Class64Base {
         var aFloat1136: Float = 0f
         var anInt1137: Int = 0
 
-        @JvmStatic
         fun method606(i: Int, bool: Boolean, string: String) {
             var string = string
             anInt1128++
@@ -484,7 +483,6 @@ public abstract class Class64 : Class64Base {
             Class174.method1333(Class192.aShortArray2579, i + 26073, strings)
         }
 
-        @JvmStatic
         fun method607(i: Int, strings: Array<String?>?, `is`: ShortArray?, i_64_: Int, bool: Boolean) {
             try {
                 if (bool != false) aFloat1136 = 0.5791872f
@@ -520,7 +518,6 @@ public abstract class Class64 : Class64Base {
             }
         }
 
-        @JvmStatic
         fun method609(i: Byte) {
             if (i <= -7) {
                 aClass296_1131 = null
@@ -528,7 +525,6 @@ public abstract class Class64 : Class64Base {
             }
         }
 
-        @JvmStatic
         fun method616(i: Int, i_81_: Int, i_82_: Int): Boolean {
             anInt1129++
             if (i != 2) return false

@@ -226,7 +226,6 @@ class Class318_Sub10 private constructor(i: Int, bool: Boolean) : Class318() {
             return Class318_Sub10(i, bool)
         }
 
-        @JvmStatic
         fun method2527() {
             aBooleanArray6474 = null
             aBooleanArray6477 = null

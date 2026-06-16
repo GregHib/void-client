@@ -11,7 +11,6 @@ abstract class Class299_Sub2 : Class299() {
         var aBoolean6327: Boolean = false
         var aClass78_6328: Class78? = null
 
-        @JvmStatic
         fun method2267(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
             anInt6324++
             if (i != 10499) method2267(55, -44, 14, -122, 70, 0, 127, 112)
@@ -20,12 +19,10 @@ abstract class Class299_Sub2 : Class299() {
             else Class348_Sub31.method3012(i_0_, i_3_, i_6_, i_2_, i_1_, (-117).toByte(), i_5_, i_4_)
         }
 
-        @JvmStatic
         fun method2268(i: Int) {
             if (i == -24054) aClass78_6328 = null
         }
 
-        @JvmStatic
         fun method2269(bool: Boolean) {
             if (bool != true) anInt6325 = -78
             Class72.method739()

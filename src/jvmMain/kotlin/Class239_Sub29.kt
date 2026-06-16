@@ -48,7 +48,6 @@ class Class239_Sub29 : Class239 {
         var anInt6152: Int = 0
         var anInt6153: Int = 0
 
-        @JvmStatic
         fun method1849(c: Char, i: Int): Boolean {
             anInt6149++
             if (Character.isISOControl(c)) return false
@@ -71,14 +70,12 @@ class Class239_Sub29 : Class239 {
             return false
         }
 
-        @JvmStatic
         fun method1850(i: Int, i_8_: Int): Int {
             anInt6144++
             val i_9_ = 101 % ((-20 - i_8_) / 37)
             return i ushr 8
         }
 
-        @JvmStatic
         fun method1851(i: Byte) {
             anInt6152++
             for (i_11_ in 0..4) Class181.aBooleanArray2374!![i_11_] = false

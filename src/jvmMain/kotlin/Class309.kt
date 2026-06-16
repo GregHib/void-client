@@ -48,7 +48,6 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
         var anInt4823: Int = 0
         var anInt4825: Int = 0
 
-        @JvmStatic
         fun method2307(i: Int, l: Long, i_0_: Int, i_1_: Int) {
             try {
                 anInt4823++
@@ -77,7 +76,6 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
             }
         }
 
-        @JvmStatic
         fun method2308(i: Byte, i_8_: Int): Boolean {
             if (i.toInt() != 26) anIntArray4822 = null
             anInt4810++
@@ -93,7 +91,6 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
             return is_11_
         }
 
-        @JvmStatic
         fun method2310(i: Byte) {
             if (i < 65) anIntArray4819 = null
             aStringArray4818 = null
@@ -113,7 +110,6 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
             val i_13_ = 126 / ((i - -54) / 38)
         }
 
-        @JvmStatic
         fun method2312(i: Int, i_14_: Int, class262: Class262?, i_15_: Int, var_ha: ha?) {
             do {
                 try {

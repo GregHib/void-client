@@ -81,7 +81,6 @@ class Class26 internal constructor(class45: Class45?, class45_9_: Class45?) {
         var anInt385: Int = 0
         var anInt386: Int = 0
 
-        @JvmStatic
         fun method306(bool: Boolean) {
             aClass364_382 = null
             if (bool != true) Companion.method311((-5).toByte(), '\u0002')

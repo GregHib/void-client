@@ -9,7 +9,6 @@ import java.awt.Canvas
  */
 object Class348_Sub5Statics {
 
-    @JvmStatic
     fun method2752(i: Int, i_2_: Int): Class138? {
         Class348_Sub5.anInt6625++
         val class138s = Class348_Sub27.method3002((-97).toByte())
@@ -21,7 +20,6 @@ object Class348_Sub5Statics {
         return null
     }
 
-    @JvmStatic
     fun method2753(
         bool: Boolean,
         i: Int,
@@ -39,7 +37,6 @@ object Class348_Sub5Statics {
         }
     }
 
-    @JvmStatic
     fun method2755(i: Int, i_7_: Int, i_8_: Int) {
         Class348_Sub5.anInt6629++
         if ((Class348_Sub43.anInt7068.inv()) != i) {
@@ -51,7 +48,6 @@ object Class348_Sub5Statics {
         Class98.aClass348_Sub16_Sub3_1564!!.method2843(i_7_, i_8_, -7836)
     }
 
-    @JvmStatic
     fun method2757(i: Int) {
         Class348_Sub5.anInt6620++
         if (Class367_Sub2.anInt7297 != 0) {

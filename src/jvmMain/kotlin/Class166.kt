@@ -80,7 +80,6 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2186: Int = 0
         var aClass262_2187: Class262? = Class262()
         var anInt2189: Int = 0
-        @JvmStatic
         fun method1284(i: Int) {
             aClass114_2183 = null
             if (i == -21165) aClass262_2187 = null

@@ -52,7 +52,6 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
         var anInt8376: Int = 0
         var anInt8377: Int = 0
 
-        @JvmStatic
         fun method199(i: Int): Class348_Sub21? {
             anInt8369++
             if (Class75.aClass262_1254 == null || rStatics.aClass312_9716 == null) return null
@@ -65,14 +64,12 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
             return Class356.method3479(-1)
         }
 
-        @JvmStatic
         fun method200(i: Int, i_3_: Int): Int {
             if (i >= -75) return -109
             anInt8377++
             return i_3_ ushr 8
         }
 
-        @JvmStatic
         fun method201(i: Int, i_5_: Int, string: String?) {
             do {
                 try {
@@ -131,7 +128,6 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
             } while (false)
         }
 
-        @JvmStatic
         fun method202(i: Int, class348_sub42_sub12: Class348_Sub42_Sub12?) {
             do {
                 try {

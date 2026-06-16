@@ -10,12 +10,10 @@ abstract class Class47 {
         var aBoolean845: Boolean = false
         var anInt846: Int = 0
 
-        @JvmStatic
         fun method445(i: Int) {
             if (i == 2) aClass114_843 = null
         }
 
-        @JvmStatic
         fun method447(i: Byte) {
             Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255), 1)
             anInt844++

@@ -49,7 +49,6 @@ class Class239_Sub1 : Class239 {
         var anInt5849: Int = 0
         var anInt5850: Int = 0
 
-        @JvmStatic
         fun method1719(bool: Boolean, string: String?, string_0_: String?, i: Int, i_1_: Int) {
             try {
                 Class178.method1356(true, string_0_, i_1_, i, bool, string, true)
@@ -59,7 +58,6 @@ class Class239_Sub1 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1721(string: String?, i: Byte) {
             anInt5849++
             if (r.aBoolean9722 && (0x18 and Class38.anInt500) != 0) {
@@ -90,14 +88,12 @@ class Class239_Sub1 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1722(i: Int, i_5_: Int, i_6_: Byte): Boolean {
             val i_7_ = 92 % ((i_6_ - 48) / 32)
             anInt5848++
             return (0x10000 and i) != 0
         }
 
-        @JvmStatic
         fun method1723(i: Byte) {
             aShortArrayArray5847 = null
             if (i.toInt() != 119) anInt5850 = -51

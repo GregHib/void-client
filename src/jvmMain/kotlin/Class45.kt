@@ -537,13 +537,11 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         var anInt669: Int = 0
         var aFloat670: Float = 0f
 
-        @JvmStatic
         fun method390(i: Byte) {
             aClass351_643 = null
             if (i.toInt() != 10) Companion.method390((-3).toByte())
         }
 
-        @JvmStatic
         @Throws(Exception_Sub1::class)
         fun method395(i: Int) {
             if (Class348_Sub49.anInt7207 == 1) Class21.aHa326!!.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157)

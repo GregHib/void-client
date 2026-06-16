@@ -56,13 +56,11 @@ class Class258_Sub1 : Class258 {
         var anInt8524: Int = 0
         var anInt8526: Int = 0
         var aClass143_8527: Class143? = null
-        @JvmStatic
         fun method1959(i: Int) {
             val i_11_ = -121 / ((-52 - i) / 60)
             aClass143_8527 = null
         }
 
-        @JvmStatic
         fun method1960(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, `is`: Array<Array<ByteArray?>?>?, is_15_: IntArray?, is_16_: IntArray?, is_17_: IntArray?, is_18_: IntArray?, is_19_: IntArray?, i_20_: Int, i_21_: Byte, i_22_: Int, i_23_: Int, bool: Boolean, bool_24_: Boolean, i_25_: Int, i_26_: Int, bool_27_: Boolean) {
             Class23.aBoolean351 = true
             Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aHa171!!.method3704() > 0

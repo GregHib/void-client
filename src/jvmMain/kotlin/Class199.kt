@@ -37,7 +37,6 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
         var aClass352Array2636: Array<Class352?>?
         var anInt2637: Int = 0
 
-        @JvmStatic
         fun method1455(i: Int, argb: Int, string: String?, argb_0_: Int, i_1_: Byte, argb_2_: Int) {
             val color: Color = if (argb == 0) Color(140, 17, 17) else Color(argb)
             val color_0_: Color = if (argb_0_ == 0) Color(140, 17, 17) else Color(argb_0_)
@@ -100,7 +99,6 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
             }
         }
 
-        @JvmStatic
         fun method1457(i: Int, i_8_: Int): Int {
             if (Class348_Sub1_Sub2.aByteArrayArray8816 != null) return Class348_Sub1_Sub2.aByteArrayArray8816!![i]!![i_8_].toInt() and 0xff
             return 0
@@ -113,7 +111,6 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
             if (i_9_ != 2) aClass352Array2636 = null
         }
 
-        @JvmStatic
         fun method1461(i: Byte) {
             anIntArray2633 = null
             if (i <= 77) anIntArray2633 = null

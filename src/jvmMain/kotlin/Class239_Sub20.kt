@@ -55,7 +55,6 @@ class Class239_Sub20 : Class239 {
         var anInt6055: Int = 0
         var aClass114_6056: Class114? = Class114(26, 11)
 
-        @JvmStatic
         fun method1807(i: Byte) {
             anIntArrayArray6054 = null
             if (i.toInt() != -121) anIntArrayArray6054 = null

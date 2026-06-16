@@ -484,7 +484,6 @@ class Class105_Sub1 : Class105 {
         var anInt8422: Int = 0
         var anInt8423: Int = 0
 
-        @JvmStatic
         fun method987(i: Int, class348_sub49: Class348_Sub49): Class369_Sub2 {
             anInt8405++
             val class369 = method2834(((-118).toByte()).toByte(), class348_sub49)
@@ -494,7 +493,6 @@ class Class105_Sub1 : Class105 {
             return Class369_Sub2(class369.aClass221_4968, class369.aClass341_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_8_, i_9_)
         }
 
-        @JvmStatic
         fun method988(i: Int, i_10_: Int, i_11_: Int): Class361? {
             anInt8415++
             val class361 = Class361()

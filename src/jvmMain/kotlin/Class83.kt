@@ -48,7 +48,6 @@ class Class83 internal constructor(var_ha_Sub2: ha_Sub2) {
         var aStringArray1441: Array<String?>? = arrayOfNulls<String>(200)
         var anInt1445: Int = 0
         var anInt1447: Int = 0
-        @JvmStatic
         fun method815(bool: Boolean) {
             if (bool != false) method815(true)
             aStringArray1441 = null

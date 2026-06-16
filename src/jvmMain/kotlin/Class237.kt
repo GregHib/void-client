@@ -1331,7 +1331,6 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         var anInt3127: Int = 0
         var anInt3131: Int = 0
 
-        @JvmStatic
         fun method1677(i: Int, i_164_: Int): Class231? {
             anInt3116++
             val class231s: Array<Class231?> = method1709(-126)

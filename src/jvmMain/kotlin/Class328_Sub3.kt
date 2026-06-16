@@ -23,7 +23,6 @@ object Class328_Sub3 : Class328() {
         if (i == 12) method2152(false)
     }
 
-    @JvmStatic
     fun method2617(i: Byte) {
         anIntArray6522 = null
         val i_1_ = -3 / ((i - 3) / 54)

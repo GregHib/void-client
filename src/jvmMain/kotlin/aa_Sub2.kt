@@ -29,21 +29,18 @@ class aa_Sub2 : aa {
         var anInt5198: Int = 0
         var aClass161_5199: Class161? = null
 
-        @JvmStatic
         fun method162(i: Byte) {
             aStringArray5197 = null
             if (i >= -67) aClass161_5199 = null
             aClass161_5199 = null
         }
 
-        @JvmStatic
         fun method163(i: Int): Int {
             anInt5198++
             if (i != 512) method165(122, 62, -125, 72, -74, 116, 43, 104.toByte(), 62, -115)
             return Class51.aClass311_897!!.method2325((-98).toByte())
         }
 
-        @JvmStatic
         fun method164(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int): Boolean {
             anInt5195++
             if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
@@ -76,7 +73,6 @@ class aa_Sub2 : aa {
             return false
         }
 
-        @JvmStatic
         fun method165(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte, i_13_: Int, i_14_: Int) {
             anInt5194++
             if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_ || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_) {

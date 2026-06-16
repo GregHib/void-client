@@ -86,7 +86,6 @@ class Class308 internal constructor(private var anInt3891: Int) {
         var anInterface6Array3884: Array<Interface6?>? = arrayOfNulls<Interface6>(75)
         var anInt3885: Int = 0
         var anInt3886: Int = 0
-        @JvmStatic
         fun method2306(i: Byte) {
             if (i.toInt() != -90) Companion.method2306((-74).toByte())
             anIntArray3883 = null

@@ -336,7 +336,6 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
             return ((0xff and (i_6_ shr 24)).toString() + "." + ((i_6_ and 0xffb428) shr 16) + "." + (i_6_ shr 8 and 0xff) + "." + (i_6_ and 0xff))
         }
 
-        @JvmStatic
         fun method1673(i: Int) {
             aClass78_3075 = null
             anIntArray3068 = null

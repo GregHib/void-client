@@ -107,7 +107,6 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
         var anInt7379: Int = 0
         var anInt7380: Int = 0
 
-        @JvmStatic
         fun method3551(i: Int, i_5_: Int, i_6_: Int, bool: Boolean): String? {
             var i_6_ = i_6_
             anInt7374++
@@ -134,7 +133,6 @@ class Class367_Sub9 internal constructor(class377: Class377, class45: Class45?, 
             return String(cs)
         }
 
-        @JvmStatic
         fun method3552(i: Int) {
             aClass45_7371 = null
             aClass114_7367 = null

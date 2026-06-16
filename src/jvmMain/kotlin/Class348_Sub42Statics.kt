@@ -10,13 +10,11 @@
 object Class348_Sub42Statics {
     var aClass2_7058: Class2?
 
-    @JvmStatic
     fun method3161(i: Int) {
         if (i != 0) method3161(-27)
         aClass2_7058 = null
     }
 
-    @JvmStatic
     fun method3163(i: Byte) {
         Class328_Sub1.anInt6513 = 0
         Class348_Sub42.anInt7062++

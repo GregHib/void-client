@@ -748,7 +748,6 @@ class Class46 {
         var anInt837: Int = 0
         var aClass196_838: Class196?
 
-        @JvmStatic
         fun method424(i: Int, i_0_: Int, var_ha: ha?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, `is`: Array<Array<ByteArray?>?>?, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
             var i_4_ = i_4_
             var i_7_ = i_7_
@@ -774,7 +773,6 @@ class Class46 {
             }
         }
 
-        @JvmStatic
         fun method427(i: Int) {
             anInt837++
             Class229.class268!!.method2033(46.toByte())
@@ -822,7 +820,6 @@ class Class46 {
             }
         }
 
-        @JvmStatic
         fun method442(i: Byte) {
             if (i <= -8) {
                 aClass196_838 = null

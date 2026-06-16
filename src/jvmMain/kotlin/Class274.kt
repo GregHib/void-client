@@ -104,7 +104,6 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             return ((0x18 and i) != 0) or ((i and 0x220) == 544)
         }
 
-        @JvmStatic
         fun method2059(i: Int) {
             aClass274_3523 = null
             aClass274_3530 = null
@@ -194,7 +193,6 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             }
         }
 
-        @JvmStatic
         fun method2061(i: Int) {
             Class348_Sub42_Sub15.aClass105_9658 = null
             Class348_Sub42_Sub15.aClass105_9659 = null

@@ -98,7 +98,6 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
         var anInt9145: Int = 0
         var anInt9146: Int = 0
 
-        @JvmStatic
         fun method3064(i: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, bool_15_: Boolean, class46s: Array<Class46?>?, i_16_: Int, i_17_: Int) {
             try {
                 Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
@@ -527,7 +526,6 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
             }
         }
 
-        @JvmStatic
         fun method3065(i: Int, bool: Boolean, i_74_: Int) {
             Class318_Sub1_Sub4.anInt8765++
             anInt9142++
@@ -538,7 +536,6 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
             Class348_Sub42_Sub14.method3243(25, class348_sub47)
         }
 
-        @JvmStatic
         fun method3066(i: Int) {
             if (i != -1) aClass348_Sub42_Sub12_9144 = null
             aClass348_Sub42_Sub12_9144 = null

@@ -71,7 +71,6 @@ class Class150 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt2056: Int = 0
         var anInt2057: Int = 0
 
-        @JvmStatic
         fun method1202(i: Int) {
             anInt2052++
             val `is` = IntArray(Exception_Sub1Statics.aClass255_112!!.anInt3271)
@@ -109,7 +108,6 @@ class Class150 internal constructor(class230: Class230?, i: Int, class45: Class4
             return class348_sub42_sub14
         }
 
-        @JvmStatic
         fun method1208(i: Int) {
             aClass113_2047 = null
             val i_8_ = -65 / ((i - -58) / 57)

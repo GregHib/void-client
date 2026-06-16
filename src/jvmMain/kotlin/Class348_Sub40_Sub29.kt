@@ -80,14 +80,12 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
         var anInt9381: Int = 0
         var anInt9382: Int = 0
 
-        @JvmStatic
         fun method3124(i: Int, i_13_: Byte, i_14_: Int): Boolean {
             anInt9371++
             if (i_13_ > -55) Companion.method3124(-76, (-110).toByte(), -59)
             return ((i_14_ and 0x40000) != 0) or method2985(-31735, i, i_14_) || Class348_Sub42_Sub8_Sub2.method3200(i_14_, i, (-120).toByte())
         }
 
-        @JvmStatic
         fun method3125(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Byte, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int): Boolean {
             var i = i
             var i_16_ = i_16_

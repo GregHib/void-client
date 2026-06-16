@@ -32,7 +32,6 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
         var anInt8364: Int = 0
         var aClass114_8365: Class114? = Class114(30, -1)
 
-        @JvmStatic
         fun method191(bool: Boolean, i: Int, i_0_: Int) {
             if (Class282.anInt3655 != 1) {
                 if (Class282.anInt3655 == 2) {
@@ -46,14 +45,12 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             if (bool != true) method197(true)
         }
 
-        @JvmStatic
         fun method192(class190: Class190?, i: Int, i_1_: Int, i_2_: Int) {
             Class262Statics.aClass190ArrayArray3335!![i_1_]!![i_2_] = class190
             anInt8362++
             if (i != 10000) anInt8363 = 32
         }
 
-        @JvmStatic
         fun method193(i: Int) {
             if (i == 30) {
                 aClass273_8356 = null
@@ -62,7 +59,6 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             }
         }
 
-        @JvmStatic
         fun method194(i: Int, i_3_: Int, i_4_: Int, f: Float, i_5_: Int, f_6_: Float, f_7_: Float, f_8_: Float, f_9_: Float, class186: Class186?, i_10_: Int): ByteArray {
             anInt8353++
             if (i_3_ != -1922) aClass273_8356 = null
@@ -71,7 +67,6 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             return `is`
         }
 
-        @JvmStatic
         fun method195(i: Int, bool: Boolean, i_11_: Int): Boolean {
             var i = i
             anInt8364++
@@ -82,7 +77,6 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             return class51.method478(i, -31076)
         }
 
-        @JvmStatic
         fun method196(bool: Boolean, i: Int, i_13_: Int, i_14_: Int, i_15_: Int) {
             var i = i
             var i_14_ = i_14_
@@ -95,14 +89,12 @@ class Class5_Sub2 internal constructor(class45: Class45, class45_12_: Class45, c
             anInt8357++
         }
 
-        @JvmStatic
         fun method197(bool: Boolean): Int {
             anInt8358++
             if (bool != false) aClass273_8356 = null
             return Class348_Sub6.anInt6637
         }
 
-        @JvmStatic
         fun method198(class46: Class46?, bool: Boolean, i: Int, i_22_: Int) {
             Class238_Sub1.anInt5832 = i
             Class120.anInt4911 = i_22_

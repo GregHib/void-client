@@ -6,7 +6,6 @@ object Class3 {
     var anInt124: Int = 0
     var aClass161_125: Class161? = null
 
-    @JvmStatic
     fun method175(i: Byte) {
         Class295.anInt3760 = -1
         Class17.anInterface4_252 = null
@@ -24,7 +23,6 @@ object Class3 {
         Class348_Sub42_Sub8_Sub2.aClass76_10436!!.method775(69.toByte())
     }
 
-    @JvmStatic
     fun method176(i: Int) {
         aClass114_123 = null
         aClass161_125 = null

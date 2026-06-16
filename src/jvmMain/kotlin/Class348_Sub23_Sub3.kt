@@ -25,14 +25,12 @@ class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState) :
         var anInt9045: Int = 0
         var anInt9046: Int = 0
 
-        @JvmStatic
         fun method2981(bool: Boolean) {
             anIntArray9042 = null
             if (bool != false) anInt9041 = -95
             aString9043 = null
         }
 
-        @JvmStatic
         @Throws(IOException::class)
         fun method2982(socket: Socket, i: Byte, i_0_: Int): Class238 {
             val i_1_ = -41 / ((i - -40) / 42)

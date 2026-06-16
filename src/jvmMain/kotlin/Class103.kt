@@ -9,13 +9,11 @@ object Class103 {
     var anInt1608: Int = 0
     var anInt1609: Int = 0
 
-    @JvmStatic
     fun method948(bool: Boolean) {
         aClass345_1607 = null
         if (bool != false) aClass345_1607 = null
     }
 
-    @JvmStatic
     fun method949(i: Int, i_0_: Int, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int): Boolean {
         if (i_2_ < 117) aClass345_1607 = null
         anInt1609++
@@ -31,7 +29,6 @@ object Class103 {
         return false
     }
 
-    @JvmStatic
     fun method950(i: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Byte, i_10_: Int, bool_11_: Boolean) {
         val i_12_ = 73 % ((i_9_ - -31) / 40)
         if (i_8_ > i_7_) {

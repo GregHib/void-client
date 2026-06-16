@@ -51,7 +51,6 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
         var anInt6212: Int = 0
         var anInt6213: Int = 0
 
-        @JvmStatic
         fun method2144(string: String?, i: Int, i_0_: Byte, i_1_: Int, string_2_: String?, string_3_: String?, string_4_: String?) {
             do {
                 try {
@@ -66,7 +65,6 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             } while (false)
         }
 
-        @JvmStatic
         fun method2145(i: Int) {
             anInt6210++
             Class368.anInt4494++
@@ -79,7 +77,6 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             Class348_Sub42_Sub14.method3243(-101, class348_sub47)
         }
 
-        @JvmStatic
         fun method2146(i: Byte) {
             val i_6_ = 34 % ((i - 32) / 38)
             anInt6213++
@@ -88,7 +85,6 @@ class Class286_Sub2 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             Class13.method226(Class135_Sub1.anInt4717, Class63.anInt1117, Class348_Sub42_Sub5.anInt9532, 0, Class237_Sub1.anInt5819)
         }
 
-        @JvmStatic
         fun method2147(i: Int) {
             if (i != -1) anInt6212 = -79
             aStringArray6205 = null

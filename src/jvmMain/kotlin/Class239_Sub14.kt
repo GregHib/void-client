@@ -49,7 +49,6 @@ class Class239_Sub14 : Class239 {
         var anInt5994: Int = 0
         var aClass259_5995: Class259? = null
 
-        @JvmStatic
         fun method1779(i: Byte) {
             anInt5985++
             Class364.method3517(73)
@@ -61,7 +60,6 @@ class Class239_Sub14 : Class239 {
             Class348_Sub42_Sub10.aClass299_9571 = null
         }
 
-        @JvmStatic
         fun method1780(i: Int) {
             aClass114_5992 = null
             val i_0_ = 108 % ((-24 - i) / 54)
@@ -72,7 +70,6 @@ class Class239_Sub14 : Class239 {
             aClass190_5990 = null
         }
 
-        @JvmStatic
         fun method1781(i: Int, i_1_: Int, i_2_: Int): Int {
             anInt5983++
             if (Class348_Sub31.anInt6923 == -1) return 1

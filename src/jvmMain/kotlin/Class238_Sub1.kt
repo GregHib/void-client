@@ -78,13 +78,11 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
         var anInt5839: Int = 0
         var aBoolean5840: Boolean = true
 
-        @JvmStatic
         fun method1707(i: Int) {
             Class322.aClass308_4036!!.method2303(true)
             anInt5829++
         }
 
-        @JvmStatic
         fun method1708(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Byte, class348_sub9: Class348_Sub9) {
             anInt5830++
             if (class348_sub9.anInt6685 != -1 || class348_sub9.anIntArray6697 != null) {

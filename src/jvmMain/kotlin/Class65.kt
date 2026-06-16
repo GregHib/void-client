@@ -69,7 +69,6 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
         var anInt1147: Int = 0
         var aClass357ArrayArrayArray1148: Array<Array<Array<Class357?>?>?>? = null
 
-        @JvmStatic
         fun method696(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             if (i_2_ == -1007) {
                 if (i == 1009) Class66.method701(Class327.aClass273_4091!!, i_1_, i_0_)
@@ -82,7 +81,6 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
             }
         }
 
-        @JvmStatic
         fun method698(i: Int) {
             aClass351_1144 = null
             if (i != 2) aClass357ArrayArrayArray1148 = null
@@ -90,7 +88,6 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
             aClass110_Sub1Array1146 = null
         }
 
-        @JvmStatic
         fun method699(class45: Class45?, i: Byte, class45_4_: Class45?, class45_5_: Class45?, class45_6_: Class45?) {
             try {
                 Class348_Sub40_Sub28.aClass45_9365 = class45_6_

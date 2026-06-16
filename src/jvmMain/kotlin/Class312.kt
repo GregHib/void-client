@@ -90,7 +90,6 @@ class Class312 {
             }
         }
 
-        @JvmStatic
         fun method2331(bool: Boolean) {
             aClass114_3925 = null
             if (bool != true) anInt3930 = -53

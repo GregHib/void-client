@@ -13,14 +13,12 @@ object aa_Sub3Statics {
     /*synthetic*/
     var aClass5208: Class<*>? = null
 
-    @JvmStatic
     fun method166(i: Byte, i_0_: Int, i_1_: Int): Boolean {
         if (i < 5) method166((-119).toByte(), -93, 73)
         anInt5203++
         return (i_1_ and 0x800) != 0 && (i_0_ and 0x37) != 0
     }
 
-    @JvmStatic
     fun method167(i: Int) {
         if (i != 19612) method167(-70)
         aClass351_5200 = null

@@ -60,7 +60,6 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
             }
         }
 
-        @JvmStatic
         fun method3098(i: Int, string: String?): Boolean {
             if (i != -30282) return true
             anInt9255++
@@ -70,7 +69,6 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
             return method2769(aClass9260, 20.toByte(), string)
         }
 
-        @JvmStatic
         fun method3099(i: Byte) {
             aClass114_9254 = null
             aClass114_9257 = null
@@ -78,7 +76,6 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
             if (i >= -63) anIntArray9259 = null
         }
 
-        @JvmStatic
         fun method3100(i: Int, bool: Boolean, i_4_: Int): Boolean {
             anInt9253++
             if (bool != false) anIntArray9259 = null

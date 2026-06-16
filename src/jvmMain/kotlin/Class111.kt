@@ -127,7 +127,6 @@ class Class111 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt1721: Int = 0
         var aClass114_1722: Class114? = Class114(8, -2)
         var anInt1723: Int = 0
-        @JvmStatic
         fun method1045(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Byte): Int {
             var i_1_ = i_1_
             var i_3_ = i_3_
@@ -146,7 +145,6 @@ class Class111 internal constructor(class230: Class230?, i: Int, class45: Class4
             return i
         }
 
-        @JvmStatic
         fun method1047(i: Int) {
             if (i != 1) anInt1720 = 93
             aClass114_1722 = null

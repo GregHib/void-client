@@ -24,7 +24,6 @@ object Class303 {
         } else Class66.method701(Class141.aClass273_1966!!, i_0_, -1)
     }
 
-    @JvmStatic
     fun method2286(i: Int) {
         aClass114_3842 = null
         if (i != 114) anInt3844 = 87
@@ -47,7 +46,6 @@ object Class303 {
         return Class125(i_1_, class221, class341, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, bool)
     }
 
-    @JvmStatic
     fun method2288(bool: Boolean, var_ha: ha) {
         anInt3845++
         if (!Class71.aBoolean1211) method1642(108.toByte(), var_ha)

@@ -61,7 +61,6 @@ class Class161 {
         var anInt2150: Int = 0
         var aBoolean2151: Boolean = false
 
-        @JvmStatic
         fun method1258(i: Int, i_0_: Int, i_1_: Int): Boolean {
             if (i_0_ != -9301) method1263(true)
             anInt2150++
@@ -97,7 +96,6 @@ class Class161 {
             if (bool != false) aBoolean2151 = true
         }
 
-        @JvmStatic
         fun method1261(i: Byte) {
             if (i > 46) anIntArray2145 = null
         }

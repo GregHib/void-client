@@ -21,7 +21,6 @@ class OutputStream_Sub1 : OutputStream(), CommonOutputStream {
         var anIntArray99: IntArray?
         var anIntArray100: IntArray? = intArrayOf(99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 120)
 
-        @JvmStatic
         fun method132(i: Int, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             var i_0_ = i_0_
             var i_1_ = i_1_
@@ -171,7 +170,6 @@ class OutputStream_Sub1 : OutputStream(), CommonOutputStream {
             }
         }
 
-        @JvmStatic
         fun method133(i: Byte) {
             anIntArray100 = null
             anIntArray99 = null
@@ -180,7 +178,6 @@ class OutputStream_Sub1 : OutputStream(), CommonOutputStream {
             aRandom93 = null
         }
 
-        @JvmStatic
         fun method134(i: Byte) {
             if (i.toInt() != -126) method132(-95, true, 10, 28, 45, 100)
             if (Class355.anObject4366 == null) {

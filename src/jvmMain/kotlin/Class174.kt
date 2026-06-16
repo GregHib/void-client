@@ -119,7 +119,6 @@ class Class174 {
             }
         }
 
-        @JvmStatic
         fun method1334(i: Byte) {
             aClass223_2307 = null
             if (i.toInt() != -110) method1333(null, -51, null)

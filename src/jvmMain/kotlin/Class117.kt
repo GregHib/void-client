@@ -114,13 +114,11 @@ class Class117 {
         var anInt1777: Int = 0
         var anInt1780: Int = 0
 
-        @JvmStatic
         fun method1064(i: Int) {
             if (i != -3) aClass351_1766 = null
             aClass351_1766 = null
         }
 
-        @JvmStatic
         fun method1070(i: Byte, i_6_: Int) {
             if (i < 109) anInt1780 = 10
             anInt1769++

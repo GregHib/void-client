@@ -113,7 +113,6 @@ class Class348_Sub9 : Class348() {
         var anInt6682: Int = 0
         var anInt6690: Int = 0
 
-        @JvmStatic
         fun method2778(class318_sub1: Class318_Sub1, bool: Boolean, `is`: Array<Array<ByteArray?>?>?, i: Int, i_0_: Byte): Boolean {
             if (!Class348_Sub40_Sub17.aBoolean9242) return false
             var i_1_ = class318_sub1.x shr Class362.anInt4459
@@ -155,7 +154,6 @@ class Class348_Sub9 : Class348() {
             throw IllegalArgumentException("")
         }
 
-        @JvmStatic
         fun method2780(i: Int, string: String?, i_7_: Byte, i_8_: Int, i_9_: Int) {
             do {
                 try {
@@ -240,7 +238,6 @@ class Class348_Sub9 : Class348() {
             } while (false)
         }
 
-        @JvmStatic
         fun method2782(i: Int, i_13_: Int, i_14_: Int): Byte {
             if (i_14_ != 0) Companion.method2783(-96, (-65).toByte(), -96)
             anInt6690++
@@ -249,7 +246,6 @@ class Class348_Sub9 : Class348() {
             return 2.toByte()
         }
 
-        @JvmStatic
         fun method2783(i: Int, i_15_: Byte, i_16_: Int): Boolean {
             anInt6682++
             val i_17_ = 53 / ((15 - i_15_) / 55)

@@ -59,7 +59,6 @@ class Class147 internal constructor(i: Int, i_0_: Int, string: String?, string_1
         var anInt2035: Int = 0
         var anInt2036: Int = 0
 
-        @JvmStatic
         fun method1195(i: Byte) {
             if (i < 73) method1195(61.toByte())
             aClass357ArrayArrayArray2029 = null

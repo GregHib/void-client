@@ -67,7 +67,6 @@ class Class193 internal constructor(private val aClass377_2585: Class377, i: Int
             }
         }
 
-        @JvmStatic
         fun method1440(i: Int) {
             aClass202_2589 = null
             val i_4_ = -79 / ((i - -45) / 46)

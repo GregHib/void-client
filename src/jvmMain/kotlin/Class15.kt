@@ -8,14 +8,12 @@ object Class15 {
     var anInt228: Int = 0
     var aClass114_229: Class114? = Class114(51, 17)
 
-    @JvmStatic
     fun method255(i: Int) {
         aClass60_225 = null
         if (i != 6725) aClass60_225 = null
         aClass114_229 = null
     }
 
-    @JvmStatic
     fun method256(i: Int, i_0_: Byte): Int {
         anInt228++
         return i ushr 7

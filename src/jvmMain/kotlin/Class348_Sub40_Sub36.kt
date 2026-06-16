@@ -72,7 +72,6 @@ class Class348_Sub40_Sub36 : Class348_Sub40(0, true) {
         var anInt9454: Int = 0
         var aClass114_9456: Class114? = null
 
-        @JvmStatic
         fun method3145(i: Int) {
             if (i != 0) aClass114_9456 = null
             aClass114_9456 = null

@@ -72,7 +72,6 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anInt3320: Int = 0
         var anInt3322: Int = 0
 
-        @JvmStatic
         fun method1980(i: Int) {
             if (i > 92) aClass113_3314 = null
         }
@@ -122,7 +121,6 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
             }
         }
 
-        @JvmStatic
         fun method1987(i: Int) {
             val i_12_ = 81 % ((i - -70) / 35)
             anInt3313++

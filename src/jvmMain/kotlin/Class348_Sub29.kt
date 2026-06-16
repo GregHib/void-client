@@ -13,7 +13,6 @@ class Class348_Sub29 : Class348 {
     companion object {
         var aClass45_6909: Class45? = null
         var anInt6910: Int = 0
-        @JvmStatic
         fun method3003(i: Int) {
             aClass45_6909 = null
             if (i != -4587) method3003(-101)

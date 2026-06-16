@@ -69,7 +69,6 @@ object Class92 {
         }
     }
 
-    @JvmStatic
     fun method860(i: Byte) {
         anInterface4Array1525 = null
         if (i > 43) aFloatArray1528 = null

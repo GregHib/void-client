@@ -25,7 +25,6 @@ class Class6 internal constructor(var anInt144: Int, i_46_: Int, i_47_: Int, i_4
         var anInt152: Int = 0
         var anInt153: Int = 0
         var anInt155: Int = 0
-        @JvmStatic
         fun method203(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             anInt149++
             var i_4_ = 0
@@ -62,7 +61,6 @@ class Class6 internal constructor(var anInt144: Int, i_46_: Int, i_47_: Int, i_4
             }
         }
 
-        @JvmStatic
         fun method204(i: Int) {
             anInt155++
             while (Class299Statics.aClass348_Sub49_Sub2_3813!!.method3415(-62, Class348_Sub40_Sub25.anInt9341) >= 15) {
@@ -119,7 +117,6 @@ class Class6 internal constructor(var anInt144: Int, i_46_: Int, i_47_: Int, i_4
             }
         }
 
-        @JvmStatic
         fun method206(i: Int, i_31_: Int, i_32_: Int): Int {
             var i_31_ = i_31_
             anInt152++
@@ -129,7 +126,6 @@ class Class6 internal constructor(var anInt144: Int, i_46_: Int, i_47_: Int, i_4
             return i_31_ + (((i and 0xff00) * i_34_ and 0xff0000 or (0xff00ff.inv() and (0xff00ff and i) * i_34_)) ushr 8)
         }
 
-        @JvmStatic
         fun method207(var_ha: ha?, i: Byte) {
             do {
                 try {
@@ -178,7 +174,6 @@ class Class6 internal constructor(var anInt144: Int, i_46_: Int, i_47_: Int, i_4
             } while (false)
         }
 
-        @JvmStatic
         fun method208(i: Byte) {
             if (i.toInt() != 0) method204(29)
             aClass227_151 = null

@@ -51,7 +51,6 @@ class Class348_Sub42_Sub6 internal constructor(var aClass318_Sub1_Sub3_Sub4_9538
             }
         }
 
-        @JvmStatic
         fun method3190(bool: Boolean) {
             if (bool != false) aBoolean9535 = true
             aClass144_9536 = null

@@ -187,7 +187,6 @@ class Class175 internal constructor(private var anInt2311: Int) {
         var aBoolean2329: Boolean get() = Class175Statics.aBoolean2329; set(v) { Class175Statics.aBoolean2329 = v }
         var anIntArray2330: IntArray? = null
 
-        @JvmStatic
         fun method1343(i: Int, class46: Class46?, i_1_: Int, i_2_: Int) {
             Class32.anInt451 = i
             Class348_Sub36.aClass46_6990 = class46
@@ -257,7 +256,6 @@ class Class175 internal constructor(private var anInt2311: Int) {
             return fs_12_
         }
 
-        @JvmStatic
         fun method1349(i: Byte) {
             anIntArray2330 = null
             aClass340_2327 = null

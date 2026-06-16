@@ -47,7 +47,6 @@ class Class52 internal constructor(var anInt4899: Int) : Interface12 {
             anInt4902++
         }
 
-        @JvmStatic
         fun method492(i: Int) {
             aClass351_4905 = null
             aClass351_4907 = null
@@ -59,7 +58,6 @@ class Class52 internal constructor(var anInt4899: Int) : Interface12 {
             }
         }
 
-        @JvmStatic
         fun method493(bool: Boolean) {
             if (Class328_Sub2.aClass56Array6515 == null) {
                 Class328_Sub2.aClass56Array6515 = Class56.Companion.method528(-91)
@@ -107,7 +105,6 @@ class Class52 internal constructor(var anInt4899: Int) : Interface12 {
             }
         }
 
-        @JvmStatic
         fun method494(i: Int, i_6_: Int): Int {
             if (i <= 78) aBigInteger4896 = null
             anInt4898++

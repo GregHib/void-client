@@ -17,7 +17,6 @@ abstract class Peer protected constructor() {
             init(PeerReference::class.java)
         }
 
-        @JvmStatic
         private external fun init(arg0: Class<*>?)
     }
 }

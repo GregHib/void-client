@@ -125,7 +125,6 @@ class Class258_Sub3_Sub1 : Class258_Sub3 {
     companion object {
         var anInt9942: Int = 0
 
-        @JvmStatic
         fun method1971(i: Int, string: String?, bool: Boolean, i_11_: Int) {
             anInt9942++
             Class59_Sub1_Sub1.method556(false)

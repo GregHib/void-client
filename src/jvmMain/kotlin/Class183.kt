@@ -71,7 +71,6 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
         var anIntArray2466: IntArray? = IntArray(14)
         var anInt2467: Int = 0
 
-        @JvmStatic
         fun method1376(class318_sub1: Class318_Sub1?) {
             if (class318_sub1 != null) {
                 for (i in 0..1) {
@@ -115,7 +114,6 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
             }
         }
 
-        @JvmStatic
         fun method1378(i: Int) {
             aClass250_2462 = null
             anIntArray2466 = null

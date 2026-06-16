@@ -48,7 +48,6 @@ class Class125 internal constructor(i: Int, class221: Class221?, class341: Class
         var anInt4927: Int = 0
         var anInt4930: Int = 0
 
-        @JvmStatic
         fun method1109(i: Byte) {
             aClass323_4921 = null
             if (i.toInt() != -22) method1111(127, -73, -7, -77, -85, 79)

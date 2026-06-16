@@ -386,7 +386,6 @@ class Class143 internal constructor(`is`: ByteArray?) : Class143Base {
         var anInt1989: Int = 0
         var anInt1990: Int = 0
         var anInt1991: Int = 0
-        @JvmStatic
         fun method1180(i: Byte) {
             if (i.toInt() != -76) method1180(27.toByte())
             aClass351_1987 = null

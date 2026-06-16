@@ -19,13 +19,11 @@ object Class298 {
         return i_2_ + ((i_3_ * (i and 0xff00ff) and 0xff00ff.inv() or (i_3_ * (0xff00 and i) and 0xff0000)) ushr 8)
     }
 
-    @JvmStatic
     fun method2251(i: Int) {
         if (i != 16711680) aClass114_3809 = null
         aClass114_3809 = null
     }
 
-    @JvmStatic
     fun method2252(bool: Boolean, i: Int, i_4_: Int, i_5_: Byte, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): Boolean {
         anInt3808++
         val i_11_ = (Class132.aPlayer_1907!!.anIntArray10320!![0])

@@ -48,14 +48,12 @@ class Class239_Sub5 : Class239 {
         var anInt5892: Int = 0
         var anInt5893: Int = 0
 
-        @JvmStatic
         fun method1740(i: Int, i_2_: Int, bool: Boolean): Boolean {
             if (bool != false) return true
             anInt5890++
             return Class239_Sub26.method1833((-128).toByte(), i_2_, i) || Class348_Sub42_Sub8_Sub2.method3200(i_2_, i, 96.toByte())
         }
 
-        @JvmStatic
         fun method1741(class348_sub49_sub2: Class348_Sub49_Sub2, i: Byte) {
             anInt5893++
             class348_sub49_sub2.startBitAccess(122)
@@ -99,7 +97,6 @@ class Class239_Sub5 : Class239 {
             class348_sub49_sub2.stopBitAccess(false)
         }
 
-        @JvmStatic
         fun method1742(bool: Boolean, i: Int): Class110_Sub1? {
             if (bool != false) method1740(35, -126, false)
             anInt5885++

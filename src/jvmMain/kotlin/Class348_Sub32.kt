@@ -296,7 +296,6 @@ class Class348_Sub32 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_S
             Class348_Sub18.Companion.anInt6818 = i
         }
 
-        @JvmStatic
         fun method3020(i: Byte) {
             if (i.toInt() == -64) {
                 aClass45_6950 = null

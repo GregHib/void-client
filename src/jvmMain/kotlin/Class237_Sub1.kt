@@ -840,7 +840,6 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
             return c.code == 8364 || c.code == 338 || c.code == 8212 || c.code == 339 || c.code == 376
         }
 
-        @JvmStatic
         fun method1698(i: Int) {
             aClass341_5821 = null
             if (i != 1) method1698(-10)

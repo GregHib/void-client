@@ -71,7 +71,6 @@ abstract class Class318_Sub1 : Class318() {
         var anInt6390: Int = 0
         var anInt6392: Int = 0
 
-        @JvmStatic
         fun method2383(var_ha: ha?, i: Int, class46: Class46?) {
             do {
                 try {
@@ -88,7 +87,6 @@ abstract class Class318_Sub1 : Class318() {
             } while (false)
         }
 
-        @JvmStatic
         fun method2385(class46: Class46?, i: Int, var_aa: aa?, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Byte, i_8_: Int, var_ha: ha?) {
             do {
                 try {
@@ -191,7 +189,6 @@ abstract class Class318_Sub1 : Class318() {
             } while (false)
         }
 
-        @JvmStatic
         fun method2389(i: Int) {
             aClass114_6383 = null
             if (i != 1) aClass114_6383 = null

@@ -676,7 +676,6 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         var anInt10307: Int = 0
         var anInt10311: Int = 0
         var anInt10313: Int = 0
-        @JvmStatic
         fun method2420(i: Int, i_0_: Int) {
             if (i_0_ != -1) aBoolean10238 = false
             Class14_Sub3.anInt8628 = i
@@ -684,7 +683,6 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class358.aClass60_4417!!.method590(0)
         }
 
-        @JvmStatic
         fun method2429(i: Int) {
             aClass170_10209 = null
             aShortArrayArray10246 = null
@@ -695,7 +693,6 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             aShortArrayArray10258 = null
         }
 
-        @JvmStatic
         fun method2431(i: Int, i_56_: Int, class348_sub42_sub13: Class348_Sub42_Sub13?, i_57_: Int, i_58_: Int, i_59_: Int, i_60_: Int, var_ha: ha?, i_61_: Int, i_62_: Int, i_63_: Int, i_64_: Int) {
             var i = i
             try {
@@ -709,7 +706,6 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             }
         }
 
-        @JvmStatic
         fun method2433() {
             if (Class65.aClass357ArrayArrayArray1148 != null) {
                 for (i in Class65.aClass357ArrayArrayArray1148!!.indices) {

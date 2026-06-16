@@ -32,14 +32,12 @@ class Class348_Sub40_Sub20 : Class348_Sub40(0, true) {
         var aClass348_Sub4_9264: Class348_Sub4? = null
         var anInt9265: Int = 0
 
-        @JvmStatic
         fun method3102(i: Int) {
             if (i != 22385) aClass348_Sub4_9264 = null
             anInt9265++
             Class332.aClass60_4139!!.method587(-110)
         }
 
-        @JvmStatic
         fun method3104(bool: Boolean) {
             if (bool == false) {
                 aClass348_Sub4_9264 = null

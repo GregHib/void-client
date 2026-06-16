@@ -27,7 +27,6 @@ class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boole
         /*synthetic*/
         var aClass8623: Class<*>? = null
 
-        @JvmStatic
         fun method243(i: Int) {
             anInt8620++
             var class234: CacheStore? = null
@@ -54,7 +53,6 @@ class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boole
             } while (false)
         }
 
-        @JvmStatic
         fun method244(i: Int): Int {
             anInt8622++
             if (Class75.aFloat1249.toDouble() == 3.0) return 37
@@ -65,7 +63,6 @@ class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boole
             return 200
         }
 
-        @JvmStatic
         fun method245(i: Int, i_2_: Int, i_3_: Int, i_4_: Byte): Boolean {
             if (i_4_ < 38) return false
             anInt8619++

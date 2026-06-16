@@ -45,7 +45,6 @@ class Class239_Sub22 : Class239 {
         var aClass114_6075: Class114? = Class114(89, 0)
         var anInt6076: Int = 0
 
-        @JvmStatic
         fun method1816(i: Int) {
             aClass114_6075 = null
             if (i != 1) aClass114_6075 = null

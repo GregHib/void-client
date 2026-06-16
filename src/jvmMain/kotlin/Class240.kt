@@ -83,7 +83,6 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
             }
         }
 
-        @JvmStatic
         fun method1853(i: Byte) {
             aClass105Array4679 = null
             if (i.toInt() != 48) anInt4674 = -62

@@ -102,7 +102,6 @@ object Class66 {
     private var aStringArray1176: Array<String>?
     private var anInt1177: Int
 
-    @JvmStatic
     fun method701(class273: Class273, i: Int, i_0_: Int) {
         val class348_sub42_sub19 = Class153.method1223(i, i_0_, 96837648, class273)
         if (class348_sub42_sub19 != null) {
@@ -147,7 +146,6 @@ object Class66 {
         }
     }
 
-    @JvmStatic
     fun method703(i: Int) {
         if (i != -1 && Class320.method2547(i, 84.toByte())) {
             val class46s: Array<Class46?> = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!!
@@ -2515,12 +2513,10 @@ object Class66 {
         throw IllegalStateException(i.toString())
     }
 
-    @JvmStatic
     fun method705(class348_sub36: Class348_Sub36) {
         method712(class348_sub36, 200000)
     }
 
-    @JvmStatic
     fun method706() {
         /* empty */
     }
@@ -5190,7 +5186,6 @@ object Class66 {
         }
     }
 
-    @JvmStatic
     fun method713() {
         anIntArray1164 = null
         aStringArray1155 = null
@@ -5233,7 +5228,6 @@ object Class66 {
         }
     }
 
-    @JvmStatic
     fun method715(i: Int, bool: Boolean) {
         /* empty */
     }

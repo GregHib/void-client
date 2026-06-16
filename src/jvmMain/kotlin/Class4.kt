@@ -90,7 +90,6 @@ class Class4 internal constructor(`is`: ByteArray, class348_sub33: Class348_Sub3
         private var aShortArray141: ShortArray?
         private var aShortArray142: ShortArray? = ShortArray(500)
 
-        @JvmStatic
         fun method177() {
             aShortArray141 = null
             aShortArray127 = null

@@ -21,7 +21,6 @@ object Class27 {
     var aClass351_398: Class351? = Class351(23, 8)
     var aClass341_399: Class341? = Class341()
 
-    @JvmStatic
     fun method312(i: Int, i_0_: Byte) {
         Class48.anInt859 = -1
         if (i != 37) {
@@ -38,7 +37,6 @@ object Class27 {
         if (i_0_.toInt() != 56) anInt394 = 32
     }
 
-    @JvmStatic
     fun method313(l: Long, i: Int): String? {
         var l = l
         try {
@@ -64,7 +62,6 @@ object Class27 {
         }
     }
 
-    @JvmStatic
     fun method314(i: Byte, i_4_: Int) {
         if (i >= -31) anInt394 = -128
         Class34.anInt481 = i_4_
@@ -74,7 +71,6 @@ object Class27 {
         Class348_Sub40_Sub30.anInt9399 = -1
     }
 
-    @JvmStatic
     fun method315(i: Byte, string: String?): Int {
         anInt393++
         var i_5_ = 0
@@ -86,7 +82,6 @@ object Class27 {
         return -1
     }
 
-    @JvmStatic
     fun method316(i: Byte) {
         aClass356_389 = null
         aClass351_398 = null
@@ -95,7 +90,6 @@ object Class27 {
         aClass351_395 = null
     }
 
-    @JvmStatic
     fun method317(string: String?, i: Int, bool: Boolean) {
         anInt391++
         if (string != null) {

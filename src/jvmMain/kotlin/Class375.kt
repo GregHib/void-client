@@ -10,7 +10,6 @@ internal object Class375 {
     var anInt4544: Int = -1
     var anInt4545: Int = -1
 
-    @JvmStatic
     fun method3612(i: Int, class348_sub49_sub2: Class348_Sub49_Sub2?) {
         if (i < 59) Class375.method3614(-51, 64, -115, null, -96)
         for (i_0_ in 0..<Class101_Sub3.anInt5768) {
@@ -24,13 +23,11 @@ internal object Class375 {
         anInt4541++
     }
 
-    @JvmStatic
     fun method3613(i: Int) {
         if (i != 64) Class375.method3612(-7, null)
         aClass60_4543 = null
     }
 
-    @JvmStatic
     fun method3614(i: Int, i_3_: Int, i_4_: Int, class348_sub47: Class348_Sub47?, i_5_: Int) {
         anInt4539++
         if (i_5_ != -19692) method3613(10)

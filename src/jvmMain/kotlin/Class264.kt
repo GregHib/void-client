@@ -94,7 +94,6 @@ class Class264 {
             return ((Class294.method2217(i_0_, i, i_1_ xor 0x7) or method3056(115, i, i_0_) or method3073(i_0_, i, 50.toByte())) and method1258(i, -9301, i_0_))
         }
 
-        @JvmStatic
         fun method2017(i: Int, class17: Class17?, i_3_: Int) {
             anInt3367++
             if (Class147.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264!!.size > i) && class17.anIntArrayArray264!![i] != null)) {
@@ -114,7 +113,6 @@ class Class264 {
             }
         }
 
-        @JvmStatic
         fun method2018(i: Int) {
             aClass105Array3378 = null
             aClass114_3371 = null

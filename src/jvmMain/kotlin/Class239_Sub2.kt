@@ -46,13 +46,11 @@ class Class239_Sub2 : Class239 {
         var anInt5856: Int = 0
         var aClass105Array5857: Array<Class105?>? = null
 
-        @JvmStatic
         fun method1724(i: Int) {
             aClass105Array5857 = null
             if (i != -4) aClass105Array5857 = null
         }
 
-        @JvmStatic
         fun method1725(i: Int) {
             anInt5855++
             var i_1_ = 1024

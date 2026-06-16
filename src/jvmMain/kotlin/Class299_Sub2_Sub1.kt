@@ -36,7 +36,6 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
         var aDouble8713: Double = -1.0
         var anInt8720: Int = 0
 
-        @JvmStatic
         fun method2270(i: Int, i_4_: Int, var_ha: ha?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
                 if (OutputStream_Sub2Statics.aClass105_106 == null || Class121.aClass105_1800 == null) {
@@ -64,7 +63,6 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
             }
         }
 
-        @JvmStatic
         fun method2271(i: Int) {
             anInt8710++
             if (!Class55_Sub1.aBoolean5265) {
@@ -74,7 +72,6 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
             }
         }
 
-        @JvmStatic
         fun method2272(i: Int) {
             if (i < 85) method2271(-124)
             anIntArray8712 = null

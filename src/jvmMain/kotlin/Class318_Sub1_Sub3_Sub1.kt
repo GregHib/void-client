@@ -262,13 +262,11 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_ha: ha?, class51: Class51
         var anInt10035: Int = 0
         var anInt10037: Int = 0
 
-        @JvmStatic
         fun method2415(i: Int) {
             aClass348_Sub42_Sub17Array10010 = null
             val i_15_ = 93 / ((i - -62) / 35)
         }
 
-        @JvmStatic
         fun method2418(string: String, i: Byte): Int {
             anInt10011++
             val i_22_ = -51 / ((i - 3) / 42)
@@ -282,7 +280,6 @@ class Class318_Sub1_Sub3_Sub1 internal constructor(var_ha: ha?, class51: Class51
             return i_24_
         }
 
-        @JvmStatic
         fun method2419(i: Byte, i_26_: Int): Int {
             anInt10018++
             if (i < 122) return -49

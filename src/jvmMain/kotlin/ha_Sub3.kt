@@ -2731,13 +2731,11 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
             if (i_39_ < 98) method3936(-100)
         }
 
-        @JvmStatic
         fun method3870(i: Int) {
             aStringArray8019 = null
             if (i <= 99) anInt8045 = -72
         }
 
-        @JvmStatic
         fun method3873(`is`: ByteArray?, i: Int): ByteArray {
             try {
                 anInt8015++
@@ -2750,14 +2748,12 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
             }
         }
 
-        @JvmStatic
         fun method3886(i: Int) {
             Class345.aClass60_4273!!.method590(0)
             if (i >= -58) method3824(43, 63, -121, -1, 72, 77, -11, 22)
             anInt8018++
         }
 
-        @JvmStatic
         fun method3896(class296: Class296?, i: Byte) {
             do {
                 try {
@@ -2772,7 +2768,6 @@ abstract class ha_Sub3(canvas: DisplayTarget?, `object`: Any?, var_d: d?, class4
             } while (false)
         }
 
-        @JvmStatic
         fun method3936(i: Int) {
             anInt7990++
             if (Class262Statics.aClass190ArrayArray3335 != null) {

@@ -26,7 +26,6 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
         var anInt10452: Int = 0
         var anInt10454: Int = 0
         var anInt10455: Int = 0
-        @JvmStatic
         fun method3260(i: Int) {
             var class348_sub15 = Class27.aClass356_389!!.method3484(0) as? Class348_Sub15?
             while (class348_sub15 != null) {
@@ -57,7 +56,6 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
             anInt10448++
         }
 
-        @JvmStatic
         fun method3261(l: Long, i: Int): String {
             try {
                 Class286_Sub3.aCalendar6221!!.setTimeMillis(l)
@@ -76,7 +74,6 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
             }
         }
 
-        @JvmStatic
         fun method3262(i: Int, i_8_: Int, i_9_: Int): Boolean {
             if (i_9_ <= 75) aBoolean10450 = false
             anInt10451++

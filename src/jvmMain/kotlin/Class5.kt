@@ -86,7 +86,6 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
         var anInt4639: Int = 0
         var anInt4641: Int = 0
 
-        @JvmStatic
         fun method179(i: Int, class348_sub49: Class348_Sub49): Class369_Sub1 {
             anInt4629++
             val class369 = Class348_Sub16_Sub2.method2834((-127).toByte(), class348_sub49)
@@ -97,13 +96,11 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
             return Class369_Sub1(class369.aClass221_4968, class369.aClass341_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_3_, i_4_, i_5_)
         }
 
-        @JvmStatic
         fun method180(i: Int) {
             aClass60_4636 = null
             if (i != -19960) method180(-71)
         }
 
-        @JvmStatic
         fun method181(bool: Boolean, npc: Npc?) {
             if (bool != true) method180(54)
             anInt4627++

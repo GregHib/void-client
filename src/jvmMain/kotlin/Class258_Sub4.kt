@@ -38,14 +38,12 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int
         var anInt8559: Int = 0
         var aFloat8560: Float = 0f
 
-        @JvmStatic
         fun method1973(i: Int) {
             aClass138_8553 = null
             aClass373_8552 = null
             if (i == 24885) anIntArray8557 = null
         }
 
-        @JvmStatic
         fun method1974(i: Byte, i_3_: Int, bool: Boolean): Class348_Sub13? {
             anInt8559++
             val i_4_ = -43 / ((-65 - i) / 55)

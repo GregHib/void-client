@@ -5,7 +5,6 @@ object Class256 {
     var anInt3294: Int = 0
     var anIntArray3295: IntArray? = IntArray(25)
 
-    @JvmStatic
     fun method1943(bool: Boolean, i: Int): Class174 {
         anInt3294++
         var class174 = (Class318_Sub1_Sub2.aClass60_8732!!.method583(i.toLong(), -78) as Class174?)
@@ -24,7 +23,6 @@ object Class256 {
         return class174
     }
 
-    @JvmStatic
     fun method1944(i: Int) {
         anIntArray3295 = null
         if (i != 1) method1944(-45)

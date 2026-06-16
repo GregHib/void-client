@@ -216,7 +216,6 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
         var anInt7452: Int = 0
         var anInt7455: Int = 0
         var anInt7457: Int = 0
-        @JvmStatic
         fun method3607(i: Int, class348_sub49: Class348_Sub49?, i_10_: Int): String {
             val i_11_ = 17 % ((9 - i_10_) / 59)
             anInt7451++
@@ -232,7 +231,6 @@ class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseLis
             }
         }
 
-        @JvmStatic
         fun method3609(i: Byte) {
             val i_14_ = 49 % ((i - -35) / 41)
             aClass283Array7446 = null

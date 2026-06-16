@@ -67,12 +67,10 @@ class Class139 {
             }
         }
 
-        @JvmStatic
         fun method1166(i: Int, i_12_: Int): Int {
             return i and i_12_
         }
 
-        @JvmStatic
         fun method1167(i: Int, i_13_: Byte): Boolean {
             anInt1955++
             if (i_13_ >= -45) anInt1949 = 88

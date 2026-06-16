@@ -19,7 +19,6 @@ class InputStream_Sub1 : InputStream(), CommonInputStream {
         var anInt78: Int
         var aClass114_79: Class114?
 
-        @JvmStatic
         fun method124(i: Int) {
             aLongArrayArray75 = null
             if (i == 2) {
@@ -29,7 +28,6 @@ class InputStream_Sub1 : InputStream(), CommonInputStream {
             }
         }
 
-        @JvmStatic
         fun method125(i: Int, i_0_: Int, i_1_: Int, class318_sub1_sub4: Class318_Sub1_Sub4?, i_2_: Byte): Boolean {
             anInt72++
             if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
@@ -87,7 +85,6 @@ class InputStream_Sub1 : InputStream(), CommonInputStream {
             return true
         }
 
-        @JvmStatic
         fun method126(i: Int) {
             Class318_Sub1_Sub3_Sub3.method2433()
             anInt73++

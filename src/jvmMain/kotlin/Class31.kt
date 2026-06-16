@@ -157,7 +157,6 @@ class Class31 {
         var anInt445: Int = 0
         var anInt446: Int = 0
 
-        @JvmStatic
         fun method326(i: Byte) {
             anInt442++
             if (!Class50_Sub1.aBoolean5224) {
@@ -168,7 +167,6 @@ class Class31 {
             }
         }
 
-        @JvmStatic
         fun method328(i: Int) {
             if (i != 0) anInt425 = -128
             aClass113_430 = null

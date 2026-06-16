@@ -125,7 +125,6 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anInt6245: Int = 0
         var anInt6246: Int = 0
 
-        @JvmStatic
         fun method2154(i: Int): Int {
             var i_1_ = -1
             for (i_2_ in 0..<Class75_Sub1.anInt5652 - 1) {
@@ -138,7 +137,6 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             return i_1_
         }
 
-        @JvmStatic
         fun method2155(i: Int, i_3_: Byte): Int {
             var i = i
             if (i_3_.toInt() != 43) return -54
@@ -151,13 +149,11 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             return i and 0xff
         }
 
-        @JvmStatic
         fun method2156(i: Int) {
             aClass351_6244 = null
             if (i <= 57) aClass351_6244 = null
         }
 
-        @JvmStatic
         fun method2157(i: Int, i_15_: Int): String? {
             anInt6238++
             if (i_15_ != -1431655765) method2157(-27, 75)

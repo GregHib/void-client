@@ -29,7 +29,6 @@ class Class348_Sub27 : Class348() {
             anInt6906++
         }
 
-        @JvmStatic
         fun method3001(i: Int) {
             aClass302Array6897 = null
             if (i != 0) aClass302Array6897 = null

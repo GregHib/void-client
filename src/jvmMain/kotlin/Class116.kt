@@ -8,7 +8,6 @@ object Class116 {
     var aString1761: String? = null
     var aClass114_1762: Class114? = null
 
-    @JvmStatic
     fun method1062(i: Byte) {
         if (i.toInt() == 35) {
             aClass114_1762 = null
@@ -16,7 +15,6 @@ object Class116 {
         }
     }
 
-    @JvmStatic
     fun method1063(i: Int) {
         if (i != 1) aString1761 = null
         anInt1760++

@@ -29,7 +29,6 @@ class Class242 internal constructor(var_ha_Sub2: ha_Sub2?, l: Long, i: Int) {
         var aClass348_Sub42_Sub13_3152: Class348_Sub42_Sub13? = null
         var anInt3154: Int = 0
         var anInt3155: Int = 0
-        @JvmStatic
         fun method1866(i: Int) {
             if (i != 0) aClass348_Sub42_Sub13_3152 = null
             aClass348_Sub42_Sub13_3152 = null

@@ -50,7 +50,6 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
             }
         }
 
-        @JvmStatic
         fun method3055(i: Int, class304: Class304?): Int {
             anInt9106++
             if (i < 94) method3054(false, -98, -116)
@@ -65,7 +64,6 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
             throw IllegalStateException()
         }
 
-        @JvmStatic
         fun method3056(i: Int, i_7_: Int, i_8_: Int): Boolean {
             if (i < 0) anInt9109 = 114
             anInt9108++

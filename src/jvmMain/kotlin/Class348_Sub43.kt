@@ -108,7 +108,6 @@ class Class348_Sub43 : Class348() {
             }
         }
 
-        @JvmStatic
         fun method3300(i: Int) {
             anIntArrayArrayArray7079 = null
             aClass348_Sub16_Sub4_7065 = null

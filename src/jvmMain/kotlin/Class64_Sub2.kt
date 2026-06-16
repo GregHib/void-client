@@ -3422,7 +3422,6 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         var anInt5525: Int = 0
         var anInt5526: Int = 0
 
-        @JvmStatic
         fun method661(i: Byte) {
             anInt5466++
             var class348_sub42_sub13 = (Class233.aClass107_3022!!.method1011(-93) as Class348_Sub42_Sub13?)
@@ -3443,7 +3442,6 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
             method3743(6.toByte(), Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144)
         }
 
-        @JvmStatic
         fun method676(i: Int) {
             aString5420 = null
             if (i <= 11) Companion.method661((-43).toByte())

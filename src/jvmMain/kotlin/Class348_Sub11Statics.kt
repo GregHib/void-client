@@ -6,7 +6,6 @@
 object Class348_Sub11Statics {
     var aClass45_4770: Class45? = null
 
-    @JvmStatic
     fun method2796(i: Byte) {
         aClass45_4770 = null
         if (i.toInt() != 104) method2796((-6).toByte())

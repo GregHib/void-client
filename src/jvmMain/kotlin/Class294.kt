@@ -273,7 +273,6 @@ class Class294 : Interface16 {
         var aClass338Array5060: Array<Class338?>? = null
         var anInt5061: Int = 0
 
-        @JvmStatic
         fun method2214(i: Int) {
             aClass351_5057 = null
             if (i != 0) aPlayerArray5058 = null

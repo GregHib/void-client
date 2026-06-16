@@ -59,7 +59,6 @@ class Class295 internal constructor(string: String?, string_4_: String?, string_
             if (i_3_.toInt() != -124) method2223(-83)
         }
 
-        @JvmStatic
         fun method2223(i: Int) {
             aClass348_Sub42_Sub17Array3753 = null
             anIntArray3759 = null

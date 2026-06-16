@@ -312,7 +312,6 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             return false
         }
 
-        @JvmStatic
         fun method2011(i: Byte) {
             anIntArray3347 = null
             if (i > -19) aCharArray3352 = null

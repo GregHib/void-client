@@ -952,7 +952,6 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             return i_98_ shr 1
         }
 
-        @JvmStatic
         fun method2911(class348_sub19_sub1: Class348_Sub19_Sub1, i: Int, i_104_: Int, i_105_: Int): Class348_Sub16_Sub5? {
             if (class348_sub19_sub1.aByteArray8984 == null || (class348_sub19_sub1.aByteArray8984!!).size == 0) return null
             return Class348_Sub16_Sub5(class348_sub19_sub1, i, i_104_, i_105_)

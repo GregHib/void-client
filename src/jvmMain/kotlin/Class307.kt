@@ -5,7 +5,6 @@ object Class307 {
     var anInt3877: Int = 0
     var anInt3878: Int = 0
 
-    @JvmStatic
     fun method2300(class45: Class45?, string: String?, bool: Boolean, i: Byte): Class252? {
         try {
             anInt3877++

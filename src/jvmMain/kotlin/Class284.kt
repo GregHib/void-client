@@ -45,7 +45,6 @@ class Class284 {
             return i_2_
         }
 
-        @JvmStatic
         fun method2117(i: Int) {
             if (i == 0) anIntArrayArray3677 = null
         }

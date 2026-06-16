@@ -24,7 +24,6 @@ class Class348_Sub47 : Class348() {
         var aClass114_7124: Class114? = Class114(62, 4)
         var anInt7125: Int = 1406
 
-        @JvmStatic
         fun method3323(i: Int) {
             val i_0_ = -14 / ((73 - i) / 51)
             aClass114_7124 = null
@@ -62,7 +61,6 @@ class Class348_Sub47 : Class348() {
             return ((((0x2000 and i) != 0) or method1241(i_2_, i, -118) or method1722(i, i_2_, 94.toByte())) and method166(105.toByte(), i_2_, i))
         }
 
-        @JvmStatic
         fun method3327(i: Int) {
             if (i == 1406) {
                 if (Class348_Sub8.aHa6654!!.method3694()) {

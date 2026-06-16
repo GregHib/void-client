@@ -56,7 +56,6 @@ object Class157 {
         return string_0_
     }
 
-    @JvmStatic
     fun method1246(i: Int) {
         aClass101_2123 = null
     }

@@ -45,14 +45,12 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
             return 0
         }
 
-        @JvmStatic
         fun method2962(i: Int) {
             aFloatArray6865 = null
             aFloatArray6867 = null
             if (i != -31055) method2966(-119, -98, true)
         }
 
-        @JvmStatic
         fun method2965(string: String?, i: Int, bool: Boolean, i_1_: Int) {
             anInt6866++
             Class187.method1406(true)

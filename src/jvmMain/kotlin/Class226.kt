@@ -41,13 +41,11 @@ class Class226 internal constructor(i: Int, class45: Class45?, class45_3_: Class
         var anInt2962: Int = 0
         var anInt2963: Int = 0
         var anInt2964: Int = 64
-        @JvmStatic
         fun method1624(i: Int) {
             aClass356_2959 = null
             if (i != 28962) aClass356_2959 = null
         }
 
-        @JvmStatic
         fun method1626(i: Int, bool: Boolean) {
             anInt2962++
             var i_1_ = Class239_Sub19.anInt6043

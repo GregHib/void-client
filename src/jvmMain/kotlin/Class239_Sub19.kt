@@ -46,7 +46,6 @@ class Class239_Sub19 : Class239 {
         var anInt6046: Int = 0
         var anInt6047: Int = 0
 
-        @JvmStatic
         fun method1803(i: Int, string: String?, i_1_: Int) {
             anInt6047++
             if (i_1_ != -32394) method1803(93, null, 106)
@@ -55,7 +54,6 @@ class Class239_Sub19 : Class239 {
             class348_sub42_sub15.aString9654 = string
         }
 
-        @JvmStatic
         fun method1804(i: Int) {
             Class348_Sub42_Sub10.method3211(60.toByte())
             if (i != 8839) anInt6042 = 63

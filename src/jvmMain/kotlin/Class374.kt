@@ -5,7 +5,6 @@ internal object Class374 {
     var aClass74_4537: Class74? = Class74(3, 2)
     var aClass78_4538: Class78? = null
 
-    @JvmStatic
     @Throws(IOException::class)
     fun method3610(`is`: ByteArray?, i: Byte, i_0_: Int, file: File?) {
         try {
@@ -23,7 +22,6 @@ internal object Class374 {
         }
     }
 
-    @JvmStatic
     fun method3611(bool: Boolean) {
         if (bool != true) aClass74_4537 = null
         aClass74_4537 = null

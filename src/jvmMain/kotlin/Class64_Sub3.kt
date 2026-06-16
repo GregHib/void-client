@@ -3524,14 +3524,12 @@ class Class64_Sub3 : Class64 {
         var anInt5650: Int = 0
         var anInt5651: Int = 0
 
-        @JvmStatic
         fun method681(i: Int) {
             aClass261_5558 = null
             if (i <= 75) aString5600 = null
             aString5600 = null
         }
 
-        @JvmStatic
         fun method687(i: Byte, i_282_: Int) {
             val i_283_ = 113 / ((-63 - i) / 53)
             anInt5570++
@@ -3539,7 +3537,6 @@ class Class64_Sub3 : Class64 {
             class348_sub42_sub15.method3251(-16058)
         }
 
-        @JvmStatic
         fun method689(i: Byte, i_377_: Int) {
             Class48.anInt859 = -1
             Class244.anInt4609 = -1
@@ -3549,7 +3546,6 @@ class Class64_Sub3 : Class64 {
             Class348_Sub15.method2811(false)
         }
 
-        @JvmStatic
         fun method690(i: Byte, i_378_: Int) {
             anInt5565++
             val class348_sub15 = (Class27.aClass356_389!!.method3480(i_378_.toLong(), -6008) as Class348_Sub15?)

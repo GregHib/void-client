@@ -54,14 +54,12 @@ class Class48 {
         var anInt859: Int
         var anIntArray860: IntArray?
 
-        @JvmStatic
         fun method448(i: Byte) {
             aCharArray852 = null
             anIntArray860 = null
             val i_0_ = -50 % ((37 - i) / 40)
         }
 
-        @JvmStatic
         fun method449(string: String?, string_1_: String?, bool: Boolean, i: Int, bool_2_: Boolean) {
             do {
                 try {

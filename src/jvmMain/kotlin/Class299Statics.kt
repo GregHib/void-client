@@ -3,7 +3,6 @@ object Class299Statics {
     var aClass348_Sub49_Sub2_3813: Class348_Sub49_Sub2? = Class348_Sub49_Sub2(7500)
     var anInt3814: Int = 0
 
-    @JvmStatic
     fun method2253(i: Int, i_0_: Int): Int {
         var i = i
         anInt3814++
@@ -32,13 +31,11 @@ object Class299Statics {
         return i_2_ - -i
     }
 
-    @JvmStatic
     fun method2254(i: Int) {
         aClass348_Sub49_Sub2_3813 = null
         if (i != -14804) aClass348_Sub49_Sub2_3813 = null
     }
 
-    @JvmStatic
     fun method2255(i: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
         Class117.method1070(117.toByte(), i)
         anInt3812++

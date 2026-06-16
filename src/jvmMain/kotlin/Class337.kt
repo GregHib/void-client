@@ -34,7 +34,6 @@ class Class337 internal constructor(var_ha_Sub2: ha_Sub2?, l: Long, class242s: A
         var anInt4179: Int = -1
         var anInt4180: Int = 0
 
-        @JvmStatic
         fun method2658(bool: Boolean) {
             aFloatArrayArray4174 = null
             anObject4177 = null

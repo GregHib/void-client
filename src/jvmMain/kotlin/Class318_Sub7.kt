@@ -267,7 +267,6 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
         var anInt6448: Int = 0
         var anInt6450: Int = 0
         var anInt6451: Int = 0
-        @JvmStatic
         fun method2508(i: Int) {
             if (i != 32767) method2512(null, null, 5)
             aClass351_6443 = null
@@ -281,7 +280,6 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
             var_ha.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115)
         }
 
-        @JvmStatic
         fun method2510(class45: Class45?, class348_sub16_sub3: Class348_Sub16_Sub3?, class45_5_: Class45?, bool: Boolean, class279: Class279?, class45_6_: Class45?): Boolean {
             try {
                 Class318_Sub1_Sub4.aClass279_8764 = class279

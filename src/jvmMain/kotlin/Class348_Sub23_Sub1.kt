@@ -82,7 +82,6 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
     }
 
     companion object {
-        @JvmStatic
         fun method2699(i: Int, `is`: Array<ShortArray?>?, fs: Array<FloatArray?>?): Array<ShortArray?>? {
             try {
                 if (i != 16383) return null
@@ -111,7 +110,6 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
         var anInt8999: Int = 0
         var anInt9003: Int = 0
         var anInt9004: Int = 0
-        @JvmStatic
         fun method2967(i: Int, class64: Class64?, i_0_: Int, i_1_: Int, i_2_: Int): Class30? {
             anInt8991++
             if (i_2_ != 2) aByteArrayArray8996 = null
@@ -120,20 +118,17 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             return class30
         }
 
-        @JvmStatic
         fun method2968(i: Byte) {
             Class348_Sub23_Sub1Statics.method2968(i)
             aByteArrayArray8996 = null
         }
 
-        @JvmStatic
         fun method2970(i: Int, class348_sub49: Class348_Sub49): Class50_Sub3 {
             anInt8998++
             if (i != 2) Companion.method2972(null, -114, 15)
             return Class50_Sub3(class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(i xor 0x3544), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255))
         }
 
-        @JvmStatic
         fun method2972(string: String?, i: Int, i_3_: Int): Boolean {
             anInt9004++
             if (aClass297_8992!!.aBoolean3777) {

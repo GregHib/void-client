@@ -49,13 +49,11 @@ class Class239_Sub26 : Class239 {
         var anInt6125: Int = 0
         var anInt6126: Int = 0
 
-        @JvmStatic
         fun method1833(i: Byte, i_0_: Int, i_1_: Int): Boolean {
             anInt6126++
             return (i_0_ and 0x84080) != 0
         }
 
-        @JvmStatic
         fun method1834(class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3, i: Byte) {
             anInt6125++
             val i_2_ = (class318_sub1_sub3_sub3.anInt10239 - Class367_Sub11.anInt7396)
@@ -72,14 +70,12 @@ class Class239_Sub26 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1835(i: Int) {
             aClass54Array6114 = null
             aClass114_6121 = null
             if (i != -28594) anInt6115 = -7
         }
 
-        @JvmStatic
         fun method1836(i: Int, i_6_: Int, bool: Boolean, string: String): Int {
             anInt6118++
             require(!(i_6_ < 2 || i_6_ > 36)) { "Invalid radix:" + i_6_ }
@@ -112,7 +108,6 @@ class Class239_Sub26 : Class239 {
             return i_9_
         }
 
-        @JvmStatic
         fun method1837(i: Int, i_14_: Int, i_15_: Int): Boolean {
             if (i_14_ < 41) aClass114_6121 = null
             anInt6122++

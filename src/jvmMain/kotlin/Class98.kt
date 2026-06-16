@@ -23,7 +23,6 @@ class Class98 : Class98Base {
             return method2174(126.toByte(), i, i_0_) || Class202.method1475(((-107).toByte()).toByte(), i_0_, i)
         }
 
-        @JvmStatic
         fun method878(string: String, i: Int): ByteArray {
             anInt1571++
             val i_2_ = string.length
@@ -38,7 +37,6 @@ class Class98 : Class98Base {
             return `is`
         }
 
-        @JvmStatic
         fun method879(i: Int) {
             aClass348_Sub16_Sub3_1564 = null
             if (i > 67) anIntArrayArray1566 = null

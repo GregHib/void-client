@@ -56,14 +56,12 @@ class Class239_Sub18 : Class239 {
         var anInt6037: Int = 0
         var anInt6038: Int = 0
 
-        @JvmStatic
         fun method1799(i: Int) {
             val i_0_ = 51 / ((i - 33) / 40)
             anIntArray6035 = null
             aClass251_6030 = null
         }
 
-        @JvmStatic
         @Throws(IOException::class)
         fun method1802(i: Int) {
             if (Class348_Sub40_Sub8.aClass238_9165 != null && Class348_Sub34.anInt6969 > 0) {

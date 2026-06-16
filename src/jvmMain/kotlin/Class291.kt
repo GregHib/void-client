@@ -151,7 +151,6 @@ class Class291 internal constructor(`is`: ByteArray?, i: Int, is_27_: ByteArray?
             return (0xff80 and i_1_) - -i_0_
         }
 
-        @JvmStatic
         fun method2199(i: Byte) {
             anIntArray3726 = null
             if (i < 55) aClass318_Sub1Array3737 = null

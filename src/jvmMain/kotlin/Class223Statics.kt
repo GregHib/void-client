@@ -13,7 +13,6 @@ import Class8.Companion.method214
 object Class223Statics {
     var aClass221_2893: Class221? = Class221()
 
-    @JvmStatic
     fun method1612(i: Byte) {
         Class223.anIntArray2899 = null
         if (i.toInt() != -9) method1614(-47, null, -126, -99, 117, null, null, 90)
@@ -21,14 +20,12 @@ object Class223Statics {
         aClass221_2893 = null
     }
 
-    @JvmStatic
     fun method1613(bool: Boolean, i: Int, i_0_: Int): Boolean {
         if (bool != false) method1612((-104).toByte())
         Class223.anInt2897++
         return (i_0_ and 0x22) != 0
     }
 
-    @JvmStatic
     fun method1614(i: Int, npc: Npc?, i_2_: Int, i_3_: Int, i_4_: Int, player: Player?, class51: Class51?, i_5_: Int) {
         try {
             Class223.anInt2898++

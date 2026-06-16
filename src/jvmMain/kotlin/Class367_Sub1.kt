@@ -54,7 +54,6 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
         var anInt7284: Int = 0
         var anInt7285: Int = 0
 
-        @JvmStatic
         fun method3533(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int, f: Float, i_3_: Int, bool: Boolean, i_4_: Int): IntArray {
             anInt7281++
             val `is` = IntArray(i_0_)
@@ -72,7 +71,6 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
             return `is`
         }
 
-        @JvmStatic
         fun method3534(bool: Boolean, i: Int, i_5_: Int, bool_6_: Boolean, i_7_: Int, class46s: Array<Class46?>) {
             anInt7279++
             if (bool == false) {
@@ -91,7 +89,6 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
             }
         }
 
-        @JvmStatic
         fun method3535(i: Int, i_11_: Int) {
             Class171.anInt2275 = i
             anInt7282++

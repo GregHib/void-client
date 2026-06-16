@@ -8,7 +8,6 @@ object Class13 {
     var aClass314_Sub1Array223: Array<Class314_Sub1?>? = arrayOfNulls<Class314_Sub1>(37)
     var anIntArray224: IntArray?
 
-    @JvmStatic
     fun method225(i: Byte) {
         if (i > 54) {
             aClass114_220 = null
@@ -18,7 +17,6 @@ object Class13 {
         }
     }
 
-    @JvmStatic
     fun method226(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         var i_4_ = i_2_
         while (Class348_Sub38.anInt7008 > i_4_) {
@@ -30,7 +28,6 @@ object Class13 {
         Class338.method2663(i_2_ + -5590, i, i - -i_0_, i_1_, i_3_ + i_1_)
     }
 
-    @JvmStatic
     fun method227(class318_sub1: Class318_Sub1, bool: Boolean, bool_5_: Boolean) {
         class318_sub1.aBoolean6391 = bool_5_
         if (Class348_Sub40_Sub5.aBoolean9121) {

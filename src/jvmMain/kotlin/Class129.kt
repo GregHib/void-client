@@ -32,7 +32,6 @@ class Class129 internal constructor(private val anInt1886: Int, var anInt1881: I
         var aByteArrayArray1887: Array<ByteArray?>? = null
         var anInt1893: Int = 0
 
-        @JvmStatic
         fun method3591(i: Int, i_0_: Int): Class181 {
             Class373.anInt4535++
             var class181 = Class5.aClass60_4636!!.method583(i.toLong(), i_0_ + -128) as Class181?
@@ -45,7 +44,6 @@ class Class129 internal constructor(private val anInt1886: Int, var anInt1881: I
             return class181
         }
 
-        @JvmStatic
         fun method1126(i: Int) {
             if (i == 32) {
                 aClass45_1878 = null

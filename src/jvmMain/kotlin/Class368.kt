@@ -195,13 +195,11 @@ class Class368 {
         var anInt4509: Int = 0
         var anInt4510: Int = 0
         var anInt4511: Int = 0
-        @JvmStatic
         fun method3560(i: Int) {
             if (i != -13) method3563(-34, 21.toByte(), -111)
             aClass114_4500 = null
         }
 
-        @JvmStatic
         fun method3561(i: Int, class46: Class46, bool: Boolean): String? {
             anInt4495++
             if (bool != true) method3560(68)
@@ -213,7 +211,6 @@ class Class368 {
             return class46.aStringArray833!![i]
         }
 
-        @JvmStatic
         fun method3563(i: Int, i_9_: Byte, i_10_: Int): Boolean {
             anInt4493++
             if (i_9_.toInt() != 56) method3563(-107, 118.toByte(), 32)

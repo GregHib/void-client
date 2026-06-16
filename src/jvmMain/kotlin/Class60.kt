@@ -224,13 +224,11 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
             return i == 2 || i == 3
         }
 
-        @JvmStatic
         fun method584(i: Byte) {
             aHa1098 = null
             val i_7_ = -19 % ((i - 59) / 55)
         }
 
-        @JvmStatic
         fun method589(class42: Class42?, i: Int): Boolean {
             anInt1103++
             if (class42 == null) return false

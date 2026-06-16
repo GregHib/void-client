@@ -64,14 +64,12 @@ class Class250 : Runnable {
             return string_0_ + string
         }
 
-        @JvmStatic
         fun method1910(i: Int) {
             anIntArray3220 = null
             if (i != 0) method1910(-18)
             aClass318_Sub1Array3226 = null
         }
 
-        @JvmStatic
         fun method1911(i: Byte) {
             if (i.toInt() != 99) anIntArray3220 = null
             Class367_Sub11.aClass32_7415 = Class32(8)

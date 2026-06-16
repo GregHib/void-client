@@ -86,7 +86,6 @@ class Class169 : Runnable {
         var anInt2265: Int = method2253(1600, 124)
         var anInt2266: Int = 0
 
-        @JvmStatic
         fun method1300(i: Byte) {
             if (i < -127) {
                 aClass105Array2260 = null
@@ -94,7 +93,6 @@ class Class169 : Runnable {
             }
         }
 
-        @JvmStatic
         fun method1301(var_r: r?, i: Int, i_0_: Int, i_1_: Int, bools: BooleanArray?) {
             if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
                 val i_2_ = Class348_Sub1_Sub1.aSArray8801!![i]!!.method3986(i_0_, i_1_, (-93).toByte())

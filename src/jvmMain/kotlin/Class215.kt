@@ -78,7 +78,6 @@ object Class215 {
         return (c.code >= 65 && c.code <= 90) || (c.code >= 97 && c.code <= 122)
     }
 
-    @JvmStatic
     fun method1582(i: Int) {
         anInt2837++
         if (i == 7851) {

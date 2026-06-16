@@ -28,20 +28,17 @@ class Class348_Sub42_Sub16_Sub2 : Class348_Sub42_Sub16() {
         var anInt10464: Int = 0
         var aClass356_10465: Class356? = Class356(16)
 
-        @JvmStatic
         fun method3263(bool: Boolean): Boolean {
             if (bool != true) return false
             anInt10459++
             return Class351.aBoolean4328
         }
 
-        @JvmStatic
         fun method3264(i: Byte) {
             aClass356_10465 = null
             if (i.toInt() != -24) method3265(-70, null, null)
         }
 
-        @JvmStatic
         fun method3265(i: Int, class348: Class348?, class348_0_: Class348?) {
             try {
                 if (class348!!.aClass348_4295 != null) class348.method2715(27.toByte())

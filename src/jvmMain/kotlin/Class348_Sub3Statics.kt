@@ -53,7 +53,6 @@ actual object Class348_Sub3Statics {
     actual fun method2739(i: Int) = Class348_Sub3.method2739(i)
 
     /** AWT-only: creates a keyboard [Class346] listener attached to [component]. */
-    @JvmStatic
     fun method2743(component: Component?, i: Byte): Class346 =
         Class348_Sub3.method2743(component, i)
 }

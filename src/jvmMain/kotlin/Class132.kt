@@ -10,14 +10,12 @@ object Class132 {
     var anInt1910: Int = 0
     var anInt1911: Int = 7000
 
-    @JvmStatic
     fun method1137(i: Int) {
         if (i != 3) method1138(null, true, null, 70.toByte())
         anIntArray1909 = null
         aPlayer_1907 = null
     }
 
-    @JvmStatic
     fun method1138(string: String?, bool: Boolean, string_0_: String?, i: Byte) {
         try {
             anInt1908++

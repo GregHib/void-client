@@ -70,7 +70,6 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
         var anInt371: Int = 0
         var anInt372: Int = 0
 
-        @JvmStatic
         fun method303(i: Int, i_3_: Int): Short {
             anInt362++
             val i_4_ = (i and 0xfe66) shr 10
@@ -94,7 +93,6 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
             class348_sub42_sub15.anInt9652 = i
         }
 
-        @JvmStatic
         fun method305(i: Byte) {
             anIntArray369 = null
             if (i.toInt() != 79) method303(-22, -13)

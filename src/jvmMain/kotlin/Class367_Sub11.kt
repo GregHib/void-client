@@ -158,7 +158,6 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
         var anInt7414: Int = 0
         var aClass32_7415: Class32? = Class32(8)
 
-        @JvmStatic
         fun method3555(class45: Class45?, i: Int, bool: Boolean, l: Long, i_7_: Int, i_8_: Int, i_9_: Int) {
             try {
                 anInt7410++
@@ -169,7 +168,6 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
             }
         }
 
-        @JvmStatic
         fun method3556(bool: Boolean) {
             anInt7405++
             if (bool == false) {
@@ -214,7 +212,6 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
             }
         }
 
-        @JvmStatic
         fun method3557(bool: Boolean) {
             anIntArray7397 = null
             aClass32_7415 = null

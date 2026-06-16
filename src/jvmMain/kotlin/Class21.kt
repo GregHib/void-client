@@ -19,7 +19,6 @@ class Class21 {
         var aHa326: ha? = null
         var anInt327: Int = 0
 
-        @JvmStatic
         fun method288(i: Byte) {
             aClass45_322 = null
             if (i > 93) {

@@ -712,7 +712,6 @@ open class Class348_Sub49 : Class348 {
             anInt7173++
         }
 
-        @JvmStatic
         fun method3376(i: Int) {
             aLongArray7206 = null
             aClass223_7175 = null

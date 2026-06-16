@@ -21,7 +21,6 @@ class Class148 {
         var aClass196_2042: Class196? = Class196()
         var anInt2043: Int = 0
 
-        @JvmStatic
         fun method1197(i: Int, i_0_: Int): Boolean {
             if (i != -12081) return true
             anInt2041++
@@ -29,7 +28,6 @@ class Class148 {
             return i_0_ == 49 || i_0_ == 1010
         }
 
-        @JvmStatic
         fun method1198(i: Int) {
             if (i == 1010) {
                 anIntArray2039 = null

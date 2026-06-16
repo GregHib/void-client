@@ -27,7 +27,6 @@ class Class113 {
             return i_1_
         }
 
-        @JvmStatic
         fun method1057(bool: Boolean) {
             aClass45_1743 = null
             aClass105Array1744 = null

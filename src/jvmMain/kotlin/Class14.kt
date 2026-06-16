@@ -331,7 +331,6 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
         var anInt5103: Int = 0
         var anInt5104: Int = 0
 
-        @JvmStatic
         fun method232(var_ha: ha?, i: Byte, bool: Boolean, i_22_: Int): Class324? {
             if (i.toInt() != -53) method237(true)
             anInt5094++
@@ -340,7 +339,6 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
             return class352.aClass324_4332
         }
 
-        @JvmStatic
         fun method235(i: Int, i_46_: Byte) {
             anInt5087++
             if (i != -1 && Class163.aBooleanArray2162!![i]) {
@@ -351,7 +349,6 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
             }
         }
 
-        @JvmStatic
         fun method237(bool: Boolean) {
             if (bool != false) aLong5089 = -54L
             anIntArray5091 = null

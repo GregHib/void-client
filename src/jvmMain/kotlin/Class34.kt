@@ -151,7 +151,6 @@ class Class34 {
         var anInt481: Int
         var aLong482: Long = -1L
 
-        @JvmStatic
         fun method345(i: Int, i_17_: Byte) {
             anInt469++
             if (Class348_Sub43.anInt7068 == 0) Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, i)
@@ -159,7 +158,6 @@ class Class34 {
             if (i_17_ > -26) method349(-111)
         }
 
-        @JvmStatic
         fun method347(`is`: IntArray?, is_20_: IntArray?, i: Int, i_21_: Int, i_22_: Int) {
             do {
                 try {
@@ -198,7 +196,6 @@ class Class34 {
             } while (false)
         }
 
-        @JvmStatic
         fun method349(i: Int) {
             anInt462++
             val i_32_ = Class328_Sub1.anInt6513
@@ -220,7 +217,6 @@ class Class34 {
             class348_sub42_sub15.anInt9652 = i
         }
 
-        @JvmStatic
         fun method351(i: Int) {
             aClass60_463 = null
             val i_39_ = 90 / ((i - 19) / 43)

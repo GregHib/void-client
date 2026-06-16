@@ -41,13 +41,11 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
         var anInt4967: Int = 0
         var anInt4969: Int = 0
         var aBoolean4972: Boolean = false
-        @JvmStatic
         fun method3567(i: Int) {
             aClass143_4962 = null
             val i_0_ = 105 % ((-15 - i) / 36)
         }
 
-        @JvmStatic
         fun method3568(var_ha: ha?, i: Int) {
             anInt4964++
             Class240.aClass324_4684 = Class14.method232(var_ha, (-53).toByte(), true, Class56.anInt1044)
@@ -59,7 +57,6 @@ public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3
             aClass143_4962 = Class135.method1151(-25411, var_ha, Class291.anInt3736)
         }
 
-        @JvmStatic
         fun method3569(i: Int, i_1_: Int) {
             anInt4969++
             val i_2_ = 83 % ((i_1_ - -87) / 37)

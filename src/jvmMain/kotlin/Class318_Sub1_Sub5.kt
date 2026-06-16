@@ -71,19 +71,16 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
         var anInt8778: Int = 0
         var anInt8779: Int = 0
         var anInt8780: Int = 0
-        @JvmStatic
         fun method2483(i: Int, i_0_: Int): Int {
             if (Class239_Sub1.aShortArrayArray5847 != null) return Class239_Sub1.aShortArrayArray5847!![i]!![i_0_].toInt() and 0xffff
             return 0
         }
 
-        @JvmStatic
         fun method2484(i: Int) {
             if (i != 0) method2487(-24)
             aClass144_8766 = null
         }
 
-        @JvmStatic
         fun method2485(i: Int): Boolean {
             anInt8776++
             if (Class135_Sub2.aClass348_Sub42_Sub12_4846 == null) return false
@@ -92,7 +89,6 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
             return (Class135_Sub2.aClass348_Sub42_Sub12_4846!!.anInt9608) == 1011
         }
 
-        @JvmStatic
         fun method2486(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) {
             if (i_8_ >= Class369.anInt4960 && i_5_ <= Class113.anInt1745 && Class132.anInt1910 <= i_9_ && Class38.anInt513 >= i_7_) Class125.method1111(i_7_, i, i_5_, i_8_, i_9_, i_6_)
             else Class239_Sub16.method1792(i_9_, i_8_, i_7_, i_5_, (-114).toByte(), i_6_)
@@ -100,7 +96,6 @@ abstract class Class318_Sub1_Sub5 internal constructor(i: Int, i_11_: Int, i_12_
             anInt8777++
         }
 
-        @JvmStatic
         fun method2487(i: Int): Class110_Sub1? {
             anInt8778++
             Class348_Sub36.anInt6985 = 0

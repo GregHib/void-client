@@ -35,7 +35,6 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
         var aString6877: String?
         var anIntArray6878: IntArray? = null
 
-        @JvmStatic
         fun method2991(i: Int) {
             if (Class289.anInt3699 > 1) {
                 Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918
@@ -530,7 +529,6 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
             }
         }
 
-        @JvmStatic
         fun method2993(i: Byte) {
             anIntArray6878 = null
             aString6876 = null

@@ -384,7 +384,6 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
             return `is`
         }
 
-        @JvmStatic
         fun method2597(i: Int) {
             aClass325_4073 = null
             aClass325_4080 = null

@@ -81,13 +81,11 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
         var anInt5268: Int = 0
         var aClass364_5271: Class364? = Class364("LIVE", 0)
         var anInt5273: Int = 0
-        @JvmStatic
         fun method523(i: Int) {
             if (i <= 80) method524(-87, true, 104, 0)
             aClass364_5271 = null
         }
 
-        @JvmStatic
         fun method524(i: Int, bool: Boolean, i_2_: Int, i_3_: Int) {
             if (i_3_ > -108) aBoolean5265 = false
             if (Class27.aClass356_389!!.method3480(i_2_.toLong(), -6008) == null) {

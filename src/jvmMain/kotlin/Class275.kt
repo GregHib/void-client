@@ -6,7 +6,6 @@ object Class275 {
     var anIntArray3552: IntArray? = IntArray(5)
     var anInt3553: Int = 0
 
-    @JvmStatic
     fun method2064(i: Int, i_0_: Int, i_1_: Int, i_2_: Int): Int {
         anInt3549++
         if (aa_Sub1.aSArray5191 == null) return 0
@@ -19,7 +18,6 @@ object Class275 {
         return aa_Sub1.aSArray5191!![i_5_]!!.method3986(i, i_2_, (-113).toByte())
     }
 
-    @JvmStatic
     fun method2065(i: Int) {
         anIntArray3552 = null
         anIntArray3551 = null
@@ -27,7 +25,6 @@ object Class275 {
         if (i != 31913) anInt3550 = 52
     }
 
-    @JvmStatic
     fun method2066(i: Byte): Boolean {
         anInt3553++
         if (Class240.anInt4674 < 1) return false

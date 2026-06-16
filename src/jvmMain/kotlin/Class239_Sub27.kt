@@ -46,7 +46,6 @@ class Class239_Sub27 : Class239 {
         var anInt6132: Int = 0
         var anInt6133: Int = 0
 
-        @JvmStatic
         fun method1839(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int) {
             anInt6129++
             var i_5_ = 0
@@ -102,7 +101,6 @@ class Class239_Sub27 : Class239 {
             }
         }
 
-        @JvmStatic
         fun method1841(i: Int) {
             if (i != 16878) method1839(-83, -10, 27, 111, 41, 109)
             aClass341_6128 = null

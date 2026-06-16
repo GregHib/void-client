@@ -10,7 +10,6 @@ object Class99 {
     var anInt1575: Int = 0
     var anInt1576: Int = 0
 
-    @JvmStatic
     fun method880(i: Int, `is`: ByteArray?, is_0_: ByteArray?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int) {
         var i = i
         var i_1_ = i_1_
@@ -36,7 +35,6 @@ object Class99 {
         }
     }
 
-    @JvmStatic
     fun method881(class348_sub42_sub13: Class348_Sub42_Sub13, i: Int, bool: Boolean, i_11_: Int) {
         anInt1576++
         if (Class5_Sub1.aBoolean8335) {
@@ -66,7 +64,6 @@ object Class99 {
         }
     }
 
-    @JvmStatic
     fun method882(i: Byte) {
         if (i.toInt() != 11) method882(((-62).toByte()).toByte())
         Class348_Sub40_Sub33.aClass46ArrayArray9427 = arrayOfNulls(Class229.class45!!.method414(-1))
@@ -75,7 +72,6 @@ object Class99 {
         Class163.aBooleanArray2162 = BooleanArray(Class229.class45!!.method414(-1))
     }
 
-    @JvmStatic
     fun method883(i: Byte) {
         aBooleanArrayArray1572 = null
         anIntArray1574 = null

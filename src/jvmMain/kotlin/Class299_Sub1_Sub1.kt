@@ -35,7 +35,6 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: ha_Sub2
         var anInt8692: Int = 0
         var aLong8694: Long = 0
         var aFloat8696: Float = 0f
-        @JvmStatic
         fun method2260(i: Int, i_4_: Int, l: Long, i_5_: Int, bool: Boolean, class45: Class45?, i_6_: Byte, i_7_: Int) {
             do {
                 try {

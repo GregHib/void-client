@@ -192,14 +192,12 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
         var anInt6318: Int = 0
         var anInt6319: Int = 0
 
-        @JvmStatic
         fun method2174(i: Byte, i_0_: Int, i_1_: Int): Boolean {
             anInt6313++
             val i_2_ = 52 % ((i - 68) / 41)
             return false
         }
 
-        @JvmStatic
         fun method2175(i: Int, i_3_: Byte, i_4_: Int): Int {
             anInt6319++
             if (i_3_ >= -14) return 64
@@ -207,7 +205,6 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             return Class84.anIntArray1450!![0x3 and i]
         }
 
-        @JvmStatic
         fun method2177(i: Int, i_22_: Int, class348_sub49_sub2: Class348_Sub49_Sub2) {
             anInt6311++
             val bool = (class348_sub49_sub2.readBits((-24).toByte(), i) == 1)

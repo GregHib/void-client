@@ -14,13 +14,11 @@ abstract class Class272 {
         var anInt3473: Int get() = Class272Statics.anInt3473; set(v) { Class272Statics.anInt3473 = v }
         var anInt3474: Int = 0
         var anIntArray3475: IntArray? = intArrayOf(1, 4, 1, 2)
-        @JvmStatic
         fun method2048(i: Int) {
             anIntArray3475 = null
             if (i != 1) anInt3473 = -69
         }
 
-        @JvmStatic
         fun method2049(i: Int) {
             anInt3474++
             if (i > 49) {
@@ -33,7 +31,6 @@ abstract class Class272 {
             }
         }
 
-        @JvmStatic
         fun method2051(i: Int, i_0_: Int, class221: Class221?, class341: Class341?, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
             try {
                 Class95.aClass221_1542 = class221

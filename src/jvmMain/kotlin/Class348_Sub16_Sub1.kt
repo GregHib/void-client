@@ -158,14 +158,12 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
             }
         }
 
-        @JvmStatic
         fun method2823(i: Int) {
             if (i != 0) method2823(33)
             aClass351_8857 = null
             aClass74_8853 = null
         }
 
-        @JvmStatic
         fun method2826(i: Int): Class47? {
             anInt8845++
             try {

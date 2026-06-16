@@ -581,7 +581,6 @@ class Class285_Sub2 internal constructor(class377: Class377, class68: Class68?, 
             0
         )
 
-        @JvmStatic
         fun method2132(i: Int) {
             aClass70_8503 = null
             if (i >= -8) anInt8498 = -77

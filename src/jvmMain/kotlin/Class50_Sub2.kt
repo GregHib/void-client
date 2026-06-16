@@ -42,7 +42,6 @@ class Class50_Sub2 internal constructor(private var anInt5231: Int, private val 
         var anInt5234: Int = 0
         var anInt5235: Int = 0
 
-        @JvmStatic
         fun method464(i: Int) {
             anInt5229++
             Class334.anInt4155 = i

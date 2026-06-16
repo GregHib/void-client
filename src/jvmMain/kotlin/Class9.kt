@@ -10,7 +10,6 @@ object Class9 {
     var anInt170: Int = 0
     var aHa171: ha? = null
 
-    @JvmStatic
     fun method215(i: Int): Boolean {
         anInt170++
         if (i != 27165) return false
@@ -18,7 +17,6 @@ object Class9 {
         return method3098(-30282, "hw3d")
     }
 
-    @JvmStatic
     fun method216(bool: Boolean) {
         anIntArray168 = null
         if (bool != false) method216(true)

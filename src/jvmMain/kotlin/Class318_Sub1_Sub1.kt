@@ -41,13 +41,11 @@ abstract class Class318_Sub1_Sub1 internal constructor(i: Int, i_4_: Int, i_5_: 
         var anInt8726: Int = 0
         var aLong8728: Long = 0
 
-        @JvmStatic
         fun method2395(i: Byte) {
             aClass351_8724 = null
             if (i.toInt() != 50) method2395(65.toByte())
         }
 
-        @JvmStatic
         fun method2396(i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             var i = i
             var i_1_ = i_1_

@@ -12,7 +12,6 @@ class Class162 internal constructor(var anInt2153: Int, var anInt2155: Int, var 
         var anInt2152: Int = 0
         var anInt2154: Int = 0
         var aClass74_2157: Class74? = Class74(5, 16)
-        @JvmStatic
         fun method1265(i: Int) {
             anInt2152++
             if (i != 16) aClass74_2157 = null
@@ -20,7 +19,6 @@ class Class162 internal constructor(var anInt2153: Int, var anInt2155: Int, var 
             if (Class194.aClass279_2596 != null) Class194.aClass279_2596!!.method2093(true)
         }
 
-        @JvmStatic
         fun method1267(i: Byte) {
             aClass74_2157 = null
             if (i.toInt() != 85) method1267(121.toByte())

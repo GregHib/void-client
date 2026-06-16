@@ -15,7 +15,6 @@ open class Class328_Sub2 : Class328() {
             return Class120(i)
         }
 
-        @JvmStatic
         fun method2613(i: Int) {
             aClass56Array6515 = null
             aClass60_6517 = null

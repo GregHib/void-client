@@ -1,11 +1,9 @@
 object aaStatics {
-    @JvmStatic
     fun method158(i: Byte) {
         aa.aClass144_114 = null
         val i_0_ = -87 % ((-25 - i) / 41)
     }
 
-    @JvmStatic
     fun method159(i: Int) {
         if (Class260.anInt3312 > 0) {
             var i_1_ = 0
@@ -22,7 +20,6 @@ object aaStatics {
         aa.anInt115++
     }
 
-    @JvmStatic
     fun method160(i: Int, i_3_: Int): Int {
         aa.anInt113++
         val d = (i_3_ shr 16 and 0xff).toDouble() / 256.0

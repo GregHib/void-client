@@ -22,7 +22,6 @@ class Class348_Sub46 : Class348 {
         var anInt7114: Int = 0
         var anInt7115: Int = 1
 
-        @JvmStatic
         fun method3317(i: Byte) {
             if (Class299_Sub1.aFileOutputStream6323 != null) {
                 try {
@@ -36,7 +35,6 @@ class Class348_Sub46 : Class348 {
             Class299_Sub1.aFileOutputStream6323 = null
         }
 
-        @JvmStatic
         fun method3318(i: Byte) {
             aClass114_7113 = null
         }

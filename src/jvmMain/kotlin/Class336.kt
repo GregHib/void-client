@@ -20,7 +20,6 @@ object Class336 {
         }
     }
 
-    @JvmStatic
     fun method2657(i: Byte) {
         aShortArray4172 = null
         if (i < 118) aShortArray4172 = null

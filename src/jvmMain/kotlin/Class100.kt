@@ -84,7 +84,6 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
         var anInt1589: Int = 0
         var anInt1590: Int = 0
         var aClass227_1591: Class227? = Class227(1)
-        @JvmStatic
         fun method886(i: Int) {
             aClass356_1585 = null
             aClass78Array1579 = null
@@ -93,7 +92,6 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
             aClass227_1591 = null
         }
 
-        @JvmStatic
         fun method887(class46: Class46?, i: Int, i_5_: Int, i_6_: Int) {
             if (i_6_ == 2147483647) {
                 anInt1589++

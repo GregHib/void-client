@@ -45,14 +45,12 @@ class Class158 internal constructor(string: String?, class221: Class221?, class3
         var anInt4939: Int = 0
         var anInt4941: Int = 0
 
-        @JvmStatic
         fun method1248(i: Int): Array<Class221?> {
             anInt4933++
             if (i < 11) aClass299_4938 = null
             return (arrayOf<Class221?>(Class5_Sub1.aClass221_8344, Class104.aClass221_1620, Class223Statics.aClass221_2893))
         }
 
-        @JvmStatic
         fun method1249(bool: Boolean) {
             if (bool != true) method1248(-21)
             aClass356_4934 = null

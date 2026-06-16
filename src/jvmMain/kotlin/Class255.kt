@@ -234,7 +234,6 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             return (arrayOf<Class74?>(Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, Class265.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, Class162.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, Class186.aClass74_2491))
         }
 
-        @JvmStatic
         fun method1931(bool: Boolean) {
             anIntArray3273 = null
             if (bool != true) aClass114_3265 = null
@@ -345,7 +344,6 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             }
         }
 
-        @JvmStatic
         fun method1935(i: Int, i_10_: Int, class30: Class30?, class64: Class64?, bool: Boolean, i_11_: Int) {
             try {
                 anInt3270++

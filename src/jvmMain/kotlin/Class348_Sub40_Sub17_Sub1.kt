@@ -28,13 +28,11 @@ class Class348_Sub40_Sub17_Sub1 : Class348_Sub40_Sub17() {
         var aClass45_10426: Class45? = null
         var anInt10427: Int = 0
 
-        @JvmStatic
         fun method3092(i: Int) {
             if (i != -1) aClass45_10426 = null
             aClass45_10426 = null
         }
 
-        @JvmStatic
         fun method3093(i: Int) {
             if (i > 85) {
                 anInt10427++

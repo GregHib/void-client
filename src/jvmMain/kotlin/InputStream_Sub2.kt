@@ -16,7 +16,6 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
         var aFloatArray84: FloatArray? = FloatArray(4)
         var anInt85: Int = 0
 
-        @JvmStatic
         fun method127(i: Byte) {
             if (i.toInt() != 118) Companion.method128(null, (-48).toByte())
             aFloatArray84 = null
@@ -24,7 +23,6 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
             aClass114_82 = null
         }
 
-        @JvmStatic
         fun method128(class74: Class74?, i: Byte) {
             try {
                 anInt81++

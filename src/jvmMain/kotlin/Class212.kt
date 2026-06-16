@@ -41,7 +41,6 @@ object Class212 {
         for (i_15_ in i + 1..i_4_) is_1_[i_15_] = (`is`[i_15_ - 1] + 1 shl 1) - is_1_[i_15_]
     }
 
-    @JvmStatic
     fun method1547(`is`: ByteArray?, i: Int, is_16_: ByteArray?, i_17_: Int, i_18_: Int): Int {
         var i = i
         withLock(aClass40_2750!!) {
@@ -175,7 +174,6 @@ object Class212 {
         }
     }
 
-    @JvmStatic
     fun method1551() {
         aClass40_2750 = null
     }

@@ -171,7 +171,6 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
         var anInt9296: Int = 0
         var aClass304_9303: Class304? = Class304(1)
         var aClass351_9304: Class351? = Class351(20, -1)
-        @JvmStatic
         fun method3110(i: Int) {
             aClass351_9304 = null
             aClass304_9303 = null
@@ -179,7 +178,6 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
             aClass114_9285 = null
         }
 
-        @JvmStatic
         fun method3111(i: Int, i_23_: Int) {
             anInt9290++
             if (i_23_ != Class348_Sub15.anInt6769) {

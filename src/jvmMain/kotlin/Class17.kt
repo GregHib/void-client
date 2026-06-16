@@ -308,7 +308,6 @@ class Class17 {
         var anInt258: Int = 0
         var anInt259: Int = 0
         var anInt266: Int = 0
-        @JvmStatic
         fun method265(bool: Boolean) {
             anIntArray256 = null
             aClass114_250 = null
@@ -317,7 +316,6 @@ class Class17 {
             anInterface4_252 = null
         }
 
-        @JvmStatic
         fun method268(i: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int) {
             var i_42_ = i_42_
             anInt259++
