@@ -17,7 +17,7 @@ Class101_Sub2.kt
 Class101_Sub3.kt
 Class103.kt
 #Class104.kt
-#Class105_Sub1.kt Uses ha_Sub3
+#Class105_Sub1.kt
 #Class105_Sub2.kt
 Class105_Sub3.kt
 Class105_Sub3_Sub1.kt
@@ -323,7 +323,7 @@ Class299Sub1Statics.kt
 Class299_Sub1_Sub1.kt
 #Class299_Sub1_Sub2.kt
 Class299_Sub2.kt
-#Class299_Sub2_Sub1.kt uses ha_Sub3
+#Class299_Sub2_Sub1.kt
 Class3.kt
 Class30.kt
 Class300.kt
@@ -622,7 +622,7 @@ Class369_Sub3_Sub1.kt
 Class37.kt
 Class370.kt
 Class371.kt
-#Class372.kt uses ha_Sub3
+#Class372.kt
 Class373Sub2Statics.kt
 #Class373_Sub1.kt
 #Class373_Sub2.kt
