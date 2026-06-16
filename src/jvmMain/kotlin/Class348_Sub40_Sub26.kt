@@ -105,7 +105,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_18_)
             Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_18_)
             aa_Sub1Statics.anIntArray5192 = IntArray(i_18_)
-            Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
+            Class14Sub4Statics.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_18_)
             Applet_Sub1.anIntArray38 = IntArray(i_18_)
             Class348_Sub50.aByteArrayArray7212 = null
             r.anIntArray9724 = IntArray(i_18_)
@@ -113,12 +113,12 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
             Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_18_)
             if (i >= -47) anInt9349 = -54
             Class295.anIntArray3759 = IntArray(i_18_)
-            Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_18_)
+            Class348_Sub23_Sub3Statics.anIntArray9042 = IntArray(i_18_)
             i_18_ = 0
             for (i_21_ in (-(Class367Sub4Statics.anInt7319 shr 4) + i_17_) / 8..(i_17_ + (Class367Sub4Statics.anInt7319 shr 4)) / 8) {
                 var i_22_: Int = (i_16_ - (Class348_Sub40_Sub3.Companion.anInt9109 shr 4)) / 8
                 while ((i_22_ <= ((Class348_Sub40_Sub3.Companion.anInt9109 shr 4) + i_16_) / 8)) {
-                    Class348_Sub23_Sub3.anIntArray9042!![i_18_] = i_22_ + (i_21_ shl 8)
+                    Class348_Sub23_Sub3Statics.anIntArray9042!![i_18_] = i_22_ + (i_21_ shl 8)
                     aa_Sub1Statics.anIntArray5192!![i_18_] = Class367Sub10Statics.aClass45_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
                     Applet_Sub1.anIntArray38!![i_18_] = Class367Sub10Statics.aClass45_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
                     Class295.anIntArray3759!![i_18_] = Class367Sub10Statics.aClass45_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)

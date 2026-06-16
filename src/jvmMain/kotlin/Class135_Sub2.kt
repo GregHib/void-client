@@ -77,11 +77,11 @@ class Class135_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
                 anInt4834++
                 RuntimeException_Sub1.anInt4596 = i
                 var l = 0L
-                if (Class348_Sub23_Sub3.aString9043 == null) {
+                if (Class348_Sub23_Sub3Statics.aString9043 == null) {
                     Class14_Sub4.method254(35, (-87).toByte())
                     return
                 } else {
-                    val class348_sub49 = (Class348_Sub49(method878((Class110_Sub1.method1039(Class348_Sub23_Sub3.aString9043!!, true)), -126)))
+                    val class348_sub49 = (Class348_Sub49(method878((Class110_Sub1.method1039(Class348_Sub23_Sub3Statics.aString9043!!, true)), -126)))
                     l = class348_sub49.readLong(-456577760)
                     Class348_Sub33.aLong6966 = class348_sub49.readLong(-456577760)
                 }

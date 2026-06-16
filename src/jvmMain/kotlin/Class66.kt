@@ -1368,7 +1368,7 @@ object Class66 {
             }
             if (i == 5622) return
             if (i == 5623) {
-                if (Class348_Sub23_Sub3.aString9043 == null) {
+                if (Class348_Sub23_Sub3Statics.aString9043 == null) {
                     anIntArray1149!![anInt1173++] = 0
                     return
                 } else anIntArray1149!![anInt1173++] = 1

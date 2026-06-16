@@ -60,8 +60,8 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
                     val is_15_ = `is`[i_14_]
                     if (is_15_ != null) {
                         val class348_sub49 = Class348_Sub49(is_15_)
-                        val i_16_ = (Class348_Sub23_Sub3.anIntArray9042!![i_14_] shr 8)
-                        val i_17_ = 0xff and Class348_Sub23_Sub3.anIntArray9042!![i_14_]
+                        val i_16_ = (Class348_Sub23_Sub3Statics.anIntArray9042!![i_14_] shr 8)
+                        val i_17_ = 0xff and Class348_Sub23_Sub3Statics.anIntArray9042!![i_14_]
                         val i_18_ = -za_Sub2Statics.regionTileX + i_16_ * 64
                         val i_19_ = -Class90.regionTileY + i_17_ * 64
                         method3570(false)
@@ -75,8 +75,8 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
                     i_14_++
                 }
                 for (i_20_ in 0..<i_13_) {
-                    val i_21_ = ((Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) * 64 - za_Sub2Statics.regionTileX)
-                    val i_22_ = (-Class90.regionTileY + ((0xff and Class348_Sub23_Sub3.anIntArray9042!![i_20_]) * 64))
+                    val i_21_ = ((Class348_Sub23_Sub3Statics.anIntArray9042!![i_20_] shr 8) * 64 - za_Sub2Statics.regionTileX)
+                    val i_22_ = (-Class90.regionTileY + ((0xff and Class348_Sub23_Sub3Statics.anIntArray9042!![i_20_]) * 64))
                     val is_23_ = `is`[i_20_]
                     if (is_23_ == null && Class327.anInt4095 < 800) {
                         method3570(false)

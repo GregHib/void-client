@@ -26,8 +26,8 @@ object Class101Statics {
         Class348_Sub50.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
         Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
         aa_Sub1Statics.anIntArray5192 = IntArray(i_6_)
-        Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
-        Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_6_)
+        Class14Sub4Statics.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
+        Class348_Sub23_Sub3Statics.anIntArray9042 = IntArray(i_6_)
         r.anIntArray9724 = IntArray(i_6_)
         Class295.anIntArray3759 = IntArray(i_6_)
         Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_6_)
@@ -40,7 +40,7 @@ object Class101Statics {
             var i_8_ = (-(Class348_Sub40_Sub3.anInt9109 shr 4) + i_5_) / 8
             while (((i_5_ + (Class348_Sub40_Sub3.anInt9109 shr 4)) / 8 >= i_8_)) {
                 val i_9_ = i_8_ + (i_7_ shl 8)
-                Class348_Sub23_Sub3.anIntArray9042!![i_6_] = i_9_
+                Class348_Sub23_Sub3Statics.anIntArray9042!![i_6_] = i_9_
                 aa_Sub1Statics.anIntArray5192!![i_6_] = Class367Sub10Statics.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
                 Applet_Sub1.anIntArray38!![i_6_] = Class367Sub10Statics.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                 Class322.anIntArray4031!![i_6_] = Class367Sub10Statics.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)

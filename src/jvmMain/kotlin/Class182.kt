@@ -24,11 +24,11 @@ class Class182 {
             Class239_Sub12.anInt5969 = 1
             anInt2452++
             var l = 0L
-            if (Class348_Sub23_Sub3.aString9043 == null) {
+            if (Class348_Sub23_Sub3Statics.aString9043 == null) {
                 Class14_Sub4.method254(35, (-101).toByte())
                 return
             } else {
-                val class348_sub49 = Class348_Sub49(method878((Class110_Sub1.method1039((Class348_Sub23_Sub3.aString9043!!), true)), -125))
+                val class348_sub49 = Class348_Sub49(method878((Class110_Sub1.method1039((Class348_Sub23_Sub3Statics.aString9043!!), true)), -125))
                 l = class348_sub49.readLong(-456577760)
                 Class348_Sub33.aLong6966 = class348_sub49.readLong(-456577760)
             }

@@ -143,9 +143,9 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         Class268.anInt3441++
                     }
                 }
-                if (Applet_Sub1.anIntArray38!![i_19_] != -1 && Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
-                    Class14_Sub4.aByteArrayArray8642!![i_19_] = (Class367Sub10Statics.aClass45_7382!!.method393(Applet_Sub1.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
-                    if (Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
+                if (Applet_Sub1.anIntArray38!![i_19_] != -1 && Class14Sub4Statics.aByteArrayArray8642!![i_19_] == null) {
+                    Class14Sub4Statics.aByteArrayArray8642!![i_19_] = (Class367Sub10Statics.aClass45_7382!!.method393(Applet_Sub1.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
+                    if (Class14Sub4Statics.aByteArrayArray8642!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false
                     }
@@ -186,10 +186,10 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                 bool = true
                 Class154.anInt2101 = 0
                 for (i_20_ in Class347.aByteArrayArray4281!!.indices) {
-                    var `is` = Class14_Sub4.aByteArrayArray8642!![i_20_]
+                    var `is` = Class14Sub4Statics.aByteArrayArray8642!![i_20_]
                     if (`is` != null) {
-                        var i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - za_Sub2Statics.regionTileX
-                        var i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) - Class90.regionTileY
+                        var i_21_ = 64 * (Class348_Sub23_Sub3Statics.anIntArray9042!![i_20_] shr 8) - za_Sub2Statics.regionTileX
+                        var i_22_ = 64 * (Class348_Sub23_Sub3Statics.anIntArray9042!![i_20_] and 0xff) - Class90.regionTileY
                         if (Class312.anInt3931 != 0) {
                             i_22_ = 10
                             i_21_ = 10
@@ -198,8 +198,8 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     }
                     `is` = Class348_Sub23_Sub1.aByteArrayArray8996!![i_20_]
                     if (`is` != null) {
-                        var i_23_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - za_Sub2Statics.regionTileX
-                        var i_24_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) + -Class90.regionTileY
+                        var i_23_ = 64 * (Class348_Sub23_Sub3Statics.anIntArray9042!![i_20_] shr 8) - za_Sub2Statics.regionTileX
+                        var i_24_ = 64 * (Class348_Sub23_Sub3Statics.anIntArray9042!![i_20_] and 0xff) + -Class90.regionTileY
                         if (Class312.anInt3931 != 0) {
                             i_24_ = 10
                             i_23_ = 10
@@ -270,11 +270,11 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     Class338.aClass237_Sub1_4197!!.method1685(Class348_Sub8.aHa6654, (if (!bool_25_) null else (Class170.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, Class348_Sub45Statics.aClass361Array7108)
                     if (Class312.anInt3931 == 0) {
                         Class289.method2193(true, (-128).toByte())
-                        Class122.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
+                        Class122.method1090(Class14Sub4Statics.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197)
                         if (Class348_Sub50.aByteArrayArray7212 != null) Class92.method859(i xor 0x7e.inv())
                     } else {
                         Class289.method2193(true, (-121).toByte())
-                        Class101_Sub3.method944(i + -8212, Class14_Sub4.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
+                        Class101_Sub3.method944(i + -8212, Class14Sub4Statics.aByteArrayArray8642, Class338.aClass237_Sub1_4197)
                     }
                     Class348_Sub18.method2938(66.toByte())
                     if (Class226.anInt2964 < 96) method2271(31268)

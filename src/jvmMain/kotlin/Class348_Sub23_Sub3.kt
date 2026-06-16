@@ -16,22 +16,14 @@ class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState) :
     companion object {
         var anInt9040: Int = 0
         var anInt9041: Int = 0
-        // Promoted to Class348_Sub23_Sub3Statics so callers need not import this class.
-        var anIntArray9042: IntArray?
-            get() = Class348_Sub23_Sub3Statics.anIntArray9042
-            set(v) { Class348_Sub23_Sub3Statics.anIntArray9042 = v }
-        // Promoted to Class348_Sub23_Sub3Statics so non-jagtheora callers (Client, etc.) need not import this class.
-        var aString9043: String?
-            get() = Class348_Sub23_Sub3Statics.aString9043
-            set(v) { Class348_Sub23_Sub3Statics.aString9043 = v }
         var aShort9044: Short = 256
         var anInt9045: Int = 0
         var anInt9046: Int = 0
 
         fun method2981(bool: Boolean) {
-            anIntArray9042 = null
+            Class348_Sub23_Sub3Statics.anIntArray9042 = null
             if (bool != false) anInt9041 = -95
-            aString9043 = null
+            Class348_Sub23_Sub3Statics.aString9043 = null
         }
 
         @Throws(IOException::class)

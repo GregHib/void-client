@@ -26,13 +26,13 @@ object Class92 {
                 if (Class348_Sub50.aByteArrayArray7212!![i_1_] != null) {
                     var i_2_ = -1
                     for (i_3_ in 0..<Class27.anInt388) {
-                        if (Class342.anIntArray4250!![i_3_] == Class348_Sub23_Sub3.anIntArray9042!![i_1_]) {
+                        if (Class342.anIntArray4250!![i_3_] == Class348_Sub23_Sub3Statics.anIntArray9042!![i_1_]) {
                             i_2_ = i_3_
                             break
                         }
                     }
                     if (i_2_ == -1) {
-                        Class342.anIntArray4250!![Class27.anInt388] = Class348_Sub23_Sub3.anIntArray9042!![i_1_]
+                        Class342.anIntArray4250!![Class27.anInt388] = Class348_Sub23_Sub3Statics.anIntArray9042!![i_1_]
                         i_2_ = Class27.anInt388++
                     }
                     val class348_sub49 = Class348_Sub49(Class348_Sub50.aByteArrayArray7212!![i_1_])
@@ -44,8 +44,8 @@ object Class92 {
                         val i_7_ = i_6_ shr 14
                         val i_8_ = 0x3f and (i_6_ shr 7)
                         val i_9_ = i_6_ and 0x3f
-                        val i_10_ = (i_8_ + (-za_Sub2Statics.regionTileX + (Class348_Sub23_Sub3.anIntArray9042!![i_1_] shr 8) * 64))
-                        val i_11_ = (-Class90.regionTileY + (64 * (0xff and (Class348_Sub23_Sub3.anIntArray9042!![i_1_])) - -i_9_))
+                        val i_10_ = (i_8_ + (-za_Sub2Statics.regionTileX + (Class348_Sub23_Sub3Statics.anIntArray9042!![i_1_] shr 8) * 64))
+                        val i_11_ = (-Class90.regionTileY + (64 * (0xff and (Class348_Sub23_Sub3Statics.anIntArray9042!![i_1_])) - -i_9_))
                         val class79 = (Class189.aClass278_2529!!.method2079(class348_sub49.readUnsignedShort(842397944), -1))
                         val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_5_.toLong(), -6008) as? Class348_Sub22)
                         if (class348_sub22 == null && (class79.aByte1325.toInt() and 0x1) > 0 && i_7_ == Class167.anInt2204 && i_10_ >= 0 && (Class367Sub4Statics.anInt7319 > i_10_ - -class79.anInt1399) && i_11_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_11_ + class79.anInt1399)) {

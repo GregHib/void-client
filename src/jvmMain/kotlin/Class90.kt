@@ -54,12 +54,12 @@ object Class90 {
         Applet_Sub1.anIntArray38 = IntArray(i_7_)
         r.anIntArray9724 = IntArray(i_7_)
         aa_Sub1Statics.anIntArray5192 = IntArray(i_7_)
-        Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_7_)
+        Class348_Sub23_Sub3Statics.anIntArray9042 = IntArray(i_7_)
         Class295.anIntArray3759 = IntArray(i_7_)
         Class348_Sub50.aByteArrayArray7212 = null
         Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_7_)
         Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_7_)
-        Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_7_)
+        Class14Sub4Statics.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_7_)
         Class347.aByteArrayArray4281 = arrayOfNulls<ByteArray>(i_7_)
         i_7_ = 0
         for (i_10_ in 0..3) {
@@ -73,14 +73,14 @@ object Class90 {
                         var i_16_ = i_15_ / 8 + (i_14_ / 8 shl 8)
                         var i_17_ = 0
                         while (i_7_ > i_17_) {
-                            if (i_16_ == Class348_Sub23_Sub3.anIntArray9042!![i_17_]) {
+                            if (i_16_ == Class348_Sub23_Sub3Statics.anIntArray9042!![i_17_]) {
                                 i_16_ = -1
                                 break
                             }
                             i_17_++
                         }
                         if (i_16_ != -1) {
-                            Class348_Sub23_Sub3.anIntArray9042!![i_7_] = i_16_
+                            Class348_Sub23_Sub3Statics.anIntArray9042!![i_7_] = i_16_
                             val i_18_ = 0xff and (i_16_ shr 8)
                             val i_19_ = 0xff and i_16_
                             aa_Sub1Statics.anIntArray5192!![i_7_] = (Class367Sub10Statics.aClass45_7382!!.method417("m" + i_18_ + "_" + i_19_, Class348_Sub21.method2955(i.toInt(), 99)))
