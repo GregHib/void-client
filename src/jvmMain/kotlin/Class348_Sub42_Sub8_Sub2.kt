@@ -506,9 +506,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                 } else {
                     val i_60_ = (i_40_ and 0x33705717) shr 28
-                    val i_61_ = -za_Sub2.regionTileX + ((0xffff4fe and i_40_) shr 14)
+                    val i_61_ = -za_Sub2Statics.regionTileX + ((0xffff4fe and i_40_) shr 14)
                     val i_62_ = -Class90.regionTileY + (0x3fff and i_40_)
-                    if (i_61_ >= 0 && i_62_ >= 0 && Class367_Sub4.anInt7319 > i_61_ && Class348_Sub40_Sub3.anInt9109 > i_62_) {
+                    if (i_61_ >= 0 && i_62_ >= 0 && Class367Sub4Statics.anInt7319 > i_61_ && Class348_Sub40_Sub3.anInt9109 > i_62_) {
                         val i_63_ = 256 + 512 * i_61_
                         val i_64_ = 512 * i_62_ + 256
                         var i_65_ = i_60_
@@ -642,7 +642,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         }
                         class302.anInt3840 = 2
                         class302.anInt3838 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                        class302.anInt3835 += (Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) + -za_Sub2.regionTileX shl 9)
+                        class302.anInt3835 += (Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) + -za_Sub2Statics.regionTileX shl 9)
                         class302.anInt3832 += (Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944) - Class90.regionTileY shl 9)
                         class302.anInt3839 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) shl 2
                         class302.anInt3837 = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -998,11 +998,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class318_Sub1_Sub5_Sub2.anInt10163 = -1
                 } else {
                     var i_122_ = 0x3fff and (i shr 14)
-                    i_122_ -= za_Sub2.regionTileX
+                    i_122_ -= za_Sub2Statics.regionTileX
                     var i_123_ = 0x3fff and i
                     i_123_ -= Class90.regionTileY
                     if (i_122_ >= 0) {
-                        if (Class367_Sub4.anInt7319 <= i_122_) i_122_ = Class367_Sub4.anInt7319
+                        if (Class367Sub4Statics.anInt7319 <= i_122_) i_122_ = Class367Sub4Statics.anInt7319
                     } else i_122_ = 0
                     Class9.anInt167 = (i_122_ shl 9) - -256
                     if (i_123_ >= 0) {
@@ -1036,7 +1036,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_130_ = (0x36079814 and i_129_) shr 28
                 var i_131_ = i_129_ shr 14 and 0x3fff
                 var i_132_ = 0x3fff and i_129_
-                i_131_ -= za_Sub2.regionTileX
+                i_131_ -= za_Sub2Statics.regionTileX
                 i_132_ -= Class90.regionTileY
                 ha_Sub3.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_)
                 Class348_Sub3.aClass114_6584 = null
@@ -1440,12 +1440,12 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 while (class348_sub37 != null) {
                     val i = ((class348_sub37.aLong4291 shr 28) and 0x3L).toInt()
                     val i_188_ = (class348_sub37.aLong4291 and 0x3fffL).toInt()
-                    val i_189_ = i_188_ + -za_Sub2.regionTileX
+                    val i_189_ = i_188_ + -za_Sub2Statics.regionTileX
                     val i_190_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
                     val i_191_ = -Class90.regionTileY + i_190_
                     if (i == Class348_Sub40_Sub12.anInt9200 && Class278.anInt3581 <= i_189_ && 8 + Class278.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
                         class348_sub37.method2715(89.toByte())
-                        if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.anInt7319 && (i_191_ < Class348_Sub40_Sub3.anInt9109)) Class203.method1479(i_191_, (-118).toByte(), i_189_, Class348_Sub40_Sub12.anInt9200)
+                        if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367Sub4Statics.anInt7319 && (i_191_ < Class348_Sub40_Sub3.anInt9109)) Class203.method1479(i_191_, (-118).toByte(), i_189_, Class348_Sub40_Sub12.anInt9200)
                     }
                     class348_sub37 = (Class130.aClass356_1895!!.method3482(0) as? Class348_Sub37?)
                 }

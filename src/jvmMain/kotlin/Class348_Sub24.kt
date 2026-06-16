@@ -405,7 +405,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3
                                 } else i_30_ = 0
-                                Class361.method3502((Class132.aPlayer_1907!!.anIntArray10317!![0]) + Class90.regionTileY, i xor 0x2caa, i_30_, (Class132.aPlayer_1907!!.anIntArray10320!![0]) + za_Sub2.regionTileX)
+                                Class361.method3502((Class132.aPlayer_1907!!.anIntArray10317!![0]) + Class90.regionTileY, i xor 0x2caa, i_30_, (Class132.aPlayer_1907!!.anIntArray10320!![0]) + za_Sub2Statics.regionTileX)
                             }
                             method1987(-120)
                             var i_31_ = 0
@@ -443,11 +443,11 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     Class285.anInt4753 = 0
                                     val i_33_ = (Math.random() * 8.0).toInt()
                                     if ((i_33_ and 0x2) == 2) Class348_Sub49_Sub1.anInt9750 += Class348_Sub42_Sub14.anInt9645
-                                    if ((i_33_ and 0x1) == 1) r_Sub2.anInt10483 += Class348_Sub42_Sub9_Sub1.anInt10443
+                                    if ((i_33_ and 0x1) == 1) r_Sub2Statics.anInt10483 += Class348_Sub42_Sub9_Sub1.anInt10443
                                 }
-                                if (r_Sub2.anInt10483 < -60) Class348_Sub42_Sub9_Sub1.anInt10443 = 2
+                                if (r_Sub2Statics.anInt10483 < -60) Class348_Sub42_Sub9_Sub1.anInt10443 = 2
                                 if (Class348_Sub49_Sub1.anInt9750 < -20) Class348_Sub42_Sub14.anInt9645 = 1
-                                if (r_Sub2.anInt10483 > 60) Class348_Sub42_Sub9_Sub1.anInt10443 = -2
+                                if (r_Sub2Statics.anInt10483 > 60) Class348_Sub42_Sub9_Sub1.anInt10443 = -2
                                 if (Class348_Sub49_Sub1.anInt9750 > 10) Class348_Sub42_Sub14.anInt9645 = -1
                                 Class11.anInt193++
                                 if (Class11.anInt193 > 50) {

@@ -15,7 +15,7 @@ object Class101Statics {
     fun method893(i: Byte) {
         Class348_Sub40_Sub22.method3111(91, Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350))
         anInt1595++
-        val i_4_ = ((Class286_Sub4.anInt6246 shr 12) - -(za_Sub2.regionTileX shr 3))
+        val i_4_ = ((Class286_Sub4.anInt6246 shr 12) - -(za_Sub2Statics.regionTileX shr 3))
         val i_5_ = ((Class90.regionTileY shr 3) + (Class59_Sub2_Sub2.anInt8685 shr 12))
         Class132.aPlayer_1907!!.plane = 0.toByte()
         Class355.anInt4372 = Class132.aPlayer_1907!!.plane.toInt()
@@ -25,7 +25,7 @@ object Class101Statics {
         Class322.anIntArray4031 = IntArray(i_6_)
         Class348_Sub50.aByteArrayArray7212 = arrayOfNulls<ByteArray>(i_6_)
         Class239_Sub6.anIntArrayArray5894 = Array<IntArray?>(i_6_) { IntArray(4) }
-        aa_Sub1.anIntArray5192 = IntArray(i_6_)
+        aa_Sub1Statics.anIntArray5192 = IntArray(i_6_)
         Class14_Sub4.aByteArrayArray8642 = arrayOfNulls<ByteArray>(i_6_)
         Class348_Sub23_Sub3.anIntArray9042 = IntArray(i_6_)
         r.anIntArray9724 = IntArray(i_6_)
@@ -35,19 +35,19 @@ object Class101Statics {
         Class348_Sub23_Sub1.aByteArrayArray8996 = arrayOfNulls<ByteArray>(i_6_)
         Class129.aByteArrayArray1887 = arrayOfNulls<ByteArray>(i_6_)
         i_6_ = 0
-        var i_7_ = (i_4_ + -(Class367_Sub4.anInt7319 shr 4)) / 8
-        while ((i_4_ - -(Class367_Sub4.anInt7319 shr 4)) / 8 >= i_7_) {
+        var i_7_ = (i_4_ + -(Class367Sub4Statics.anInt7319 shr 4)) / 8
+        while ((i_4_ - -(Class367Sub4Statics.anInt7319 shr 4)) / 8 >= i_7_) {
             var i_8_ = (-(Class348_Sub40_Sub3.anInt9109 shr 4) + i_5_) / 8
             while (((i_5_ + (Class348_Sub40_Sub3.anInt9109 shr 4)) / 8 >= i_8_)) {
                 val i_9_ = i_8_ + (i_7_ shl 8)
                 Class348_Sub23_Sub3.anIntArray9042!![i_6_] = i_9_
-                aa_Sub1.anIntArray5192!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
-                Applet_Sub1.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
-                Class322.anIntArray4031!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
-                Class295.anIntArray3759!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
-                r.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
+                aa_Sub1Statics.anIntArray5192!![i_6_] = Class367Sub10Statics.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
+                Applet_Sub1.anIntArray38!![i_6_] = Class367Sub10Statics.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
+                Class322.anIntArray4031!![i_6_] = Class367Sub10Statics.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
+                Class295.anIntArray3759!![i_6_] = Class367Sub10Statics.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
+                r.anIntArray9724!![i_6_] = (Class367Sub10Statics.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
                 if (Class322.anIntArray4031!![i_6_] == -1) {
-                    aa_Sub1.anIntArray5192!![i_6_] = -1
+                    aa_Sub1Statics.anIntArray5192!![i_6_] = -1
                     Applet_Sub1.anIntArray38!![i_6_] = -1
                     Class295.anIntArray3759!![i_6_] = -1
                     r.anIntArray9724!![i_6_] = -1
@@ -60,7 +60,7 @@ object Class101Statics {
         var i_10_ = i_6_
         while (Class322.anIntArray4031!!.size > i_10_) {
             Class322.anIntArray4031!![i_10_] = -1
-            aa_Sub1.anIntArray5192!![i_10_] = -1
+            aa_Sub1Statics.anIntArray5192!![i_10_] = -1
             Applet_Sub1.anIntArray38!![i_10_] = -1
             Class295.anIntArray3759!![i_10_] = -1
             r.anIntArray9724!![i_10_] = -1

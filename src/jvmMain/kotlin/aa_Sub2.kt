@@ -23,6 +23,12 @@ class aa_Sub2 : aa {
     }
 
     companion object {
+        var anInt6423: Int = 0
+
+        fun method2505(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
+            anInt6423++
+            method165(i_4_, i_2_, i_0_, i_3_, i_7_, i_1_, i_5_, 61.toByte(), i, i_6_)
+        }
         var anInt5194: Int = 0
         var anInt5195: Int = 0
         var aStringArray5197: Array<String?>? = arrayOfNulls<String>(100)
@@ -75,7 +81,7 @@ class aa_Sub2 : aa {
 
         fun method165(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Byte, i_13_: Int, i_14_: Int) {
             anInt5194++
-            if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_ || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_) {
+            if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367Sub4Statics.anInt7319) * 512 < i_9_ || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_) {
                 Class239_Sub21.anIntArray6062!![1] = -1
                 Class239_Sub21.anIntArray6062!![0] = Class239_Sub21.anIntArray6062!![1]
             } else if (i_12_ >= 22) {

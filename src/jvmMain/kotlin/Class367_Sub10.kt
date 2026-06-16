@@ -33,7 +33,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_h
     }
 
     override fun method3520(i: Byte) {
-        if (i.toInt() != 87) aClass45_7382 = null
+        if (i.toInt() != 87) Class367Sub10Statics.aClass45_7382 = null
         anInt7386++
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382)
@@ -56,7 +56,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_h
 
     override fun method3530(i: Int): Boolean {
         anInt7387++
-        if (i > -57) aClass45_7382 = null
+        if (i > -57) Class367Sub10Statics.aClass45_7382 = null
         return true
     }
 
@@ -69,7 +69,6 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_h
 
     companion object {
         var anInt7381: Int = 0
-        var aClass45_7382: Class45? = null
         var anInt7383: Int = 0
         var anInt7384: Int = 0
         var anInt7386: Int = 0
@@ -84,8 +83,8 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_h
         }
 
         fun method3554(i: Int) {
-            if (i != 1) aClass45_7382 = null
-            aClass45_7382 = null
+            if (i != 1) Class367Sub10Statics.aClass45_7382 = null
+            Class367Sub10Statics.aClass45_7382 = null
         }
     }
 }

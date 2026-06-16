@@ -317,7 +317,7 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                         val `is` = IntArray(3)
                         var i_7_ = -1
                         var i_8_ = -1
-                        if (Class75.aClass348_Sub42_Sub14_1243!!.method3236(`is`, (za_Sub2.regionTileX - -((Class132.aPlayer_1907!!.x) shr 9)), ((Class132.aPlayer_1907!!.y) shr 9) + Class90.regionTileY, (Class132.aPlayer_1907!!.plane).toInt(), (-28).toByte())) {
+                        if (Class75.aClass348_Sub42_Sub14_1243!!.method3236(`is`, (za_Sub2Statics.regionTileX - -((Class132.aPlayer_1907!!.x) shr 9)), ((Class132.aPlayer_1907!!.y) shr 9) + Class90.regionTileY, (Class132.aPlayer_1907!!.plane).toInt(), (-28).toByte())) {
                             i_7_ = -Class75.anInt1266 + `is`[1]
                             i_8_ = -Class75.anInt1263 + `is`[2]
                         }

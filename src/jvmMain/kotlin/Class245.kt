@@ -54,17 +54,17 @@ object Class245 {
             Class362.aClass324_4456!!.method2576(("Occluders: " + (Class239_Sub26.anInt6115 + Class69.anInt1200) + " Active: " + (Class348_Sub42_Sub10.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
             Class362.aClass324_4456!!.method2576(("Occluded: Ground:" + Class348_Sub23_Sub2.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + Class348_Sub40_Sub4.anInt9112 + " Pixels: " + Class225.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
             Class362.aClass324_4456!!.method2576(("Occlude Calc Took: " + (Class286_Sub6.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
-            if (Class348_Sub18.anInt6818 == 2 && Class14.anIntArray5091 != null) {
-                for (i_5_ in Class14.anIntArray5091!!.indices) {
-                    var f = Class14.anIntArray5091!![i_5_].toFloat()
+            if (Class348_Sub18.anInt6818 == 2 && Class14Statics.anIntArray5091 != null) {
+                for (i_5_ in Class14Statics.anIntArray5091!!.indices) {
+                    var f = Class14Statics.anIntArray5091!![i_5_].toFloat()
                     f /= 4194304.0f
                     if (f > 1.0f) f = 1.0f
                     f *= 255.0f
                     f = 255.0f - f
                     val i_6_ = f.toInt()
-                    Class14.anIntArray5091!![i_5_] = i_6_ or (i_6_ shl 8) or (i_6_ shl 16) or 0xffffff.inv()
+                    Class14Statics.anIntArray5091!![i_5_] = i_6_ or (i_6_ shl 8) or (i_6_ shl 16) or 0xffffff.inv()
                 }
-                val class105 = Class9.aHa171!!.method3662(Class306.anInt3872, Class14.anIntArray5091, 94.toByte(), 0, Class306.anInt3872, Class86.anInt1480)
+                val class105 = Class9.aHa171!!.method3662(Class306.anInt3872, Class14Statics.anIntArray5091, 94.toByte(), 0, Class306.anInt3872, Class86.anInt1480)
                 class105.method964(i, 170, 1, 0, 0)
             }
         }

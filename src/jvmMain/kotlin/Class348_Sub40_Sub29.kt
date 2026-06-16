@@ -101,11 +101,11 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
             if (i_16_ < -2000 || i_21_ < -2000 || i_24_ < -2000 || i_23_ < -2000 || i_17_ < -2000 || i < -2000) return false
             if (Class350.anInt4319 == 2) {
                 var i_25_ = i_23_ + i_16_ * Class306.anInt3872
-                if (i_25_ >= 0 && Class14.anIntArray5091!!.size > i_25_ && Class14.anIntArray5091!![i_25_] > -38400 + (i_22_ shl 8)) return false
+                if (i_25_ >= 0 && Class14Statics.anIntArray5091!!.size > i_25_ && Class14Statics.anIntArray5091!![i_25_] > -38400 + (i_22_ shl 8)) return false
                 i_25_ = i_17_ + i_21_ * Class306.anInt3872
-                if (i_25_ >= 0 && Class14.anIntArray5091!!.size > i_25_ && ((i_19_ shl 8) + -38400 < Class14.anIntArray5091!![i_25_])) return false
+                if (i_25_ >= 0 && Class14Statics.anIntArray5091!!.size > i_25_ && ((i_19_ shl 8) + -38400 < Class14Statics.anIntArray5091!![i_25_])) return false
                 i_25_ = i + i_24_ * Class306.anInt3872
-                if (i_25_ >= 0 && Class14.anIntArray5091!!.size > i_25_ && (Class14.anIntArray5091!![i_25_] > (i_18_ shl 8) - 38400)) return false
+                if (i_25_ >= 0 && Class14Statics.anIntArray5091!!.size > i_25_ && (Class14Statics.anIntArray5091!![i_25_] > (i_18_ shl 8) - 38400)) return false
             }
             val i_26_ = -i_23_ + i_17_
             val i_27_ = i_21_ - i_16_
@@ -162,14 +162,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                             i_16_ -= i_24_
                             i_24_ *= Class306.anInt3872
                             while (--i_16_ >= 0) {
-                                if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, 1 + (i shr 12), (i_17_ shr 12) - 1, Class14.anIntArray5091, i_24_)) return false
+                                if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, 1 + (i shr 12), (i_17_ shr 12) - 1, Class14Statics.anIntArray5091, i_24_)) return false
                                 i_24_ += Class306.anInt3872
                                 i += i_34_
                                 i_17_ += i_33_
                                 i_18_ += i_37_
                             }
                             while (--i_21_ >= 0) {
-                                if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, 1 + (i_23_ shr 12), -1 + (i_17_ shr 12), Class14.anIntArray5091, i_24_)) return false
+                                if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, 1 + (i_23_ shr 12), -1 + (i_17_ shr 12), Class14Statics.anIntArray5091, i_24_)) return false
                                 i_24_ += Class306.anInt3872
                                 i_23_ += i_32_
                                 i_18_ += i_37_
@@ -181,14 +181,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                         i_16_ -= i_24_
                         i_24_ *= Class306.anInt3872
                         while (--i_16_ >= 0) {
-                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_17_ shr 12) + 1, -1 + (i shr 12), Class14.anIntArray5091, i_24_)) return false
+                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_17_ shr 12) + 1, -1 + (i shr 12), Class14Statics.anIntArray5091, i_24_)) return false
                             i_18_ += i_37_
                             i_17_ += i_33_
                             i_24_ += Class306.anInt3872
                             i += i_34_
                         }
                         while (--i_21_ >= 0) {
-                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_17_ shr 12) - -1, (i_23_ shr 12) - 1, Class14.anIntArray5091, i_24_)) return false
+                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_17_ shr 12) - -1, (i_23_ shr 12) - 1, Class14Statics.anIntArray5091, i_24_)) return false
                             i_18_ += i_37_
                             i_17_ += i_33_
                             i_24_ += Class306.anInt3872
@@ -214,14 +214,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                         i_21_ -= i_24_
                         i_24_ *= Class306.anInt3872
                         while (--i_21_ >= 0) {
-                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_23_ shr 12) - -1, (i shr 12) - 1, Class14.anIntArray5091, i_24_)) return false
+                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_23_ shr 12) - -1, (i shr 12) - 1, Class14Statics.anIntArray5091, i_24_)) return false
                             i_18_ += i_37_
                             i_24_ += Class306.anInt3872
                             i_23_ += i_33_
                             i += i_34_
                         }
                         while (--i_16_ >= 0) {
-                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_17_ shr 12) - -1, (i shr 12) + -1, Class14.anIntArray5091, i_24_)) return false
+                            if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i_17_ shr 12) - -1, (i shr 12) + -1, Class14Statics.anIntArray5091, i_24_)) return false
                             i += i_34_
                             i_17_ += i_32_
                             i_18_ += i_37_
@@ -233,14 +233,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                     i_21_ -= i_24_
                     i_24_ = Class306.anInt3872 * i_24_
                     while (--i_21_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, 1 + (i shr 12), -1 + (i_23_ shr 12), Class14.anIntArray5091, i_24_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, 1 + (i shr 12), -1 + (i_23_ shr 12), Class14Statics.anIntArray5091, i_24_)) return false
                         i += i_34_
                         i_24_ += Class306.anInt3872
                         i_23_ += i_33_
                         i_18_ += i_37_
                     }
                     while (--i_16_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i shr 12) - -1, -1 + (i_17_ shr 12), Class14.anIntArray5091, i_24_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_18_, 0, (i shr 12) - -1, -1 + (i_17_ shr 12), Class14Statics.anIntArray5091, i_24_)) return false
                         i_18_ += i_37_
                         i_17_ += i_32_
                         i_24_ += Class306.anInt3872
@@ -271,14 +271,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                         i_16_ -= i_21_
                         i_21_ = Class306.anInt3872 * i_21_
                         while (--i_16_ >= 0) {
-                            if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i shr 12) - -1, (i_17_ shr 12) - 1, Class14.anIntArray5091, i_21_)) return false
+                            if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i shr 12) - -1, (i_17_ shr 12) - 1, Class14Statics.anIntArray5091, i_21_)) return false
                             i_17_ += i_33_
                             i_19_ += i_37_
                             i_21_ += Class306.anInt3872
                             i += i_32_
                         }
                         while (--i_24_ >= 0) {
-                            if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_23_ shr 12) - -1, -1 + (i_17_ shr 12), Class14.anIntArray5091, i_21_)) return false
+                            if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_23_ shr 12) - -1, -1 + (i_17_ shr 12), Class14Statics.anIntArray5091, i_21_)) return false
                             i_19_ += i_37_
                             i_21_ += Class306.anInt3872
                             i_17_ += i_33_
@@ -290,14 +290,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                     i_16_ -= i_21_
                     i_21_ = Class306.anInt3872 * i_21_
                     while (--i_16_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, 1 + (i_17_ shr 12), (i shr 12) - 1, Class14.anIntArray5091, i_21_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, 1 + (i_17_ shr 12), (i shr 12) - 1, Class14Statics.anIntArray5091, i_21_)) return false
                         i_21_ += Class306.anInt3872
                         i_17_ += i_33_
                         i_19_ += i_37_
                         i += i_32_
                     }
                     while (--i_24_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, 1 + (i_17_ shr 12), (i_23_ shr 12) - 1, Class14.anIntArray5091, i_21_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, 1 + (i_17_ shr 12), (i_23_ shr 12) - 1, Class14Statics.anIntArray5091, i_21_)) return false
                         i_17_ += i_33_
                         i_23_ += i_34_
                         i_19_ += i_37_
@@ -323,14 +323,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                     i_24_ -= i_21_
                     i_21_ = Class306.anInt3872 * i_21_
                     while (--i_24_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_17_ shr 12) - -1, -1 + (i_23_ shr 12), Class14.anIntArray5091, i_21_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_17_ shr 12) - -1, -1 + (i_23_ shr 12), Class14Statics.anIntArray5091, i_21_)) return false
                         i_23_ += i_32_
                         i_19_ += i_37_
                         i_21_ += Class306.anInt3872
                         i_17_ += i_33_
                     }
                     while (--i_16_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i shr 12) - -1, -1 + (i_23_ shr 12), Class14.anIntArray5091, i_21_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i shr 12) - -1, -1 + (i_23_ shr 12), Class14Statics.anIntArray5091, i_21_)) return false
                         i_23_ += i_32_
                         i += i_34_
                         i_19_ += i_37_
@@ -342,14 +342,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                 i_24_ -= i_21_
                 i_21_ = Class306.anInt3872 * i_21_
                 while (--i_24_ >= 0) {
-                    if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_23_ shr 12) - -1, (i_17_ shr 12) - 1, Class14.anIntArray5091, i_21_)) return false
+                    if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_23_ shr 12) - -1, (i_17_ shr 12) - 1, Class14Statics.anIntArray5091, i_21_)) return false
                     i_17_ += i_33_
                     i_23_ += i_32_
                     i_21_ += Class306.anInt3872
                     i_19_ += i_37_
                 }
                 while (--i_16_ >= 0) {
-                    if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_23_ shr 12) - -1, -1 + (i shr 12), Class14.anIntArray5091, i_21_)) return false
+                    if (!Class76.method771(i_36_, (-25).toByte(), i_19_, 0, (i_23_ shr 12) - -1, -1 + (i shr 12), Class14Statics.anIntArray5091, i_21_)) return false
                     i_19_ += i_37_
                     i_21_ += Class306.anInt3872
                     i_23_ += i_32_
@@ -380,14 +380,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                     i_21_ -= i_16_
                     i_16_ *= Class306.anInt3872
                     while (--i_21_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_23_ shr 12), -1 + (i shr 12), Class14.anIntArray5091, i_16_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_23_ shr 12), -1 + (i shr 12), Class14Statics.anIntArray5091, i_16_)) return false
                         i_22_ += i_37_
                         i_16_ += Class306.anInt3872
                         i_23_ += i_32_
                         i += i_34_
                     }
                     while (--i_24_ >= 0) {
-                        if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_17_ shr 12), (i shr 12) + -1, Class14.anIntArray5091, i_16_)) return false
+                        if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_17_ shr 12), (i shr 12) + -1, Class14Statics.anIntArray5091, i_16_)) return false
                         i_17_ += i_33_
                         i += i_34_
                         i_22_ += i_37_
@@ -399,14 +399,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                 i_21_ -= i_16_
                 i_16_ *= Class306.anInt3872
                 while (--i_21_ >= 0) {
-                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i shr 12), (i_23_ shr 12) + -1, Class14.anIntArray5091, i_16_)) return false
+                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i shr 12), (i_23_ shr 12) + -1, Class14Statics.anIntArray5091, i_16_)) return false
                     i_16_ += Class306.anInt3872
                     i_22_ += i_37_
                     i += i_34_
                     i_23_ += i_32_
                 }
                 while (--i_24_ >= 0) {
-                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, (i shr 12) - -1, -1 + (i_17_ shr 12), Class14.anIntArray5091, i_16_)) return false
+                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, (i shr 12) - -1, -1 + (i_17_ shr 12), Class14Statics.anIntArray5091, i_16_)) return false
                     i_17_ += i_33_
                     i_16_ += Class306.anInt3872
                     i_22_ += i_37_
@@ -432,14 +432,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
                 i_24_ -= i_16_
                 i_16_ = Class306.anInt3872 * i_16_
                 while (--i_24_ >= 0) {
-                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_17_ shr 12), -1 + (i_23_ shr 12), Class14.anIntArray5091, i_16_)) return false
+                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_17_ shr 12), -1 + (i_23_ shr 12), Class14Statics.anIntArray5091, i_16_)) return false
                     i_17_ += i_34_
                     i_23_ += i_32_
                     i_22_ += i_37_
                     i_16_ += Class306.anInt3872
                 }
                 while (--i_21_ >= 0) {
-                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, (i shr 12) - -1, -1 + (i_23_ shr 12), Class14.anIntArray5091, i_16_)) return false
+                    if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, (i shr 12) - -1, -1 + (i_23_ shr 12), Class14Statics.anIntArray5091, i_16_)) return false
                     i_23_ += i_32_
                     i_22_ += i_37_
                     i += i_33_
@@ -451,14 +451,14 @@ class Class348_Sub40_Sub29 : Class348_Sub40(0, false) {
             i_24_ -= i_16_
             i_16_ *= Class306.anInt3872
             while (--i_24_ >= 0) {
-                if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_23_ shr 12), -1 + (i_17_ shr 12), Class14.anIntArray5091, i_16_)) return false
+                if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, 1 + (i_23_ shr 12), -1 + (i_17_ shr 12), Class14Statics.anIntArray5091, i_16_)) return false
                 i_16_ += Class306.anInt3872
                 i_23_ += i_32_
                 i_22_ += i_37_
                 i_17_ += i_34_
             }
             while (--i_21_ >= 0) {
-                if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, (i_23_ shr 12) - -1, (i shr 12) - 1, Class14.anIntArray5091, i_16_)) return false
+                if (!Class76.method771(i_36_, (-25).toByte(), i_22_, 0, (i_23_ shr 12) - -1, (i shr 12) - 1, Class14Statics.anIntArray5091, i_16_)) return false
                 i_16_ += Class306.anInt3872
                 i += i_33_
                 i_22_ += i_37_

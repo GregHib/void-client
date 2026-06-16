@@ -73,7 +73,7 @@ class Class38 {
                 if (class348_sub27.anInt6893 > 0) class348_sub27.anInt6893--
                 if (class348_sub27.anInt6893 != 0) {
                     if (class348_sub27.anInt6894 > 0) class348_sub27.anInt6894--
-                    if (class348_sub27.anInt6894 == 0 && class348_sub27.anInt6905 >= 1 && class348_sub27.anInt6896 >= 1 && (class348_sub27.anInt6905 <= -2 + Class367_Sub4.anInt7319) && (class348_sub27.anInt6896 <= -2 + Class348_Sub40_Sub3.anInt9109) && (class348_sub27.anInt6907 < 0 || (method195(class348_sub27.anInt6895, false, class348_sub27.anInt6907)))) {
+                    if (class348_sub27.anInt6894 == 0 && class348_sub27.anInt6905 >= 1 && class348_sub27.anInt6896 >= 1 && (class348_sub27.anInt6905 <= -2 + Class367Sub4Statics.anInt7319) && (class348_sub27.anInt6896 <= -2 + Class348_Sub40_Sub3.anInt9109) && (class348_sub27.anInt6907 < 0 || (method195(class348_sub27.anInt6895, false, class348_sub27.anInt6907)))) {
                         Class218.method1591(class348_sub27.anInt6905, 70, class348_sub27.anInt6904, -1, class348_sub27.anInt6907, class348_sub27.anInt6895, class348_sub27.anInt6896, class348_sub27.anInt6900, class348_sub27.anInt6899)
                         class348_sub27.anInt6894 = -1
                         if ((class348_sub27.anInt6907 != class348_sub27.anInt6902) || class348_sub27.anInt6902 != -1) {

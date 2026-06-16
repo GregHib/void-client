@@ -263,7 +263,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                         }
                     }
                     Class205.anInt2690++
-                    val npcX = (npc.x shr 9) + za_Sub2.regionTileX - npc.aClass79_10505!!.anInt1399 + 1
+                    val npcX = (npc.x shr 9) + za_Sub2Statics.regionTileX - npc.aClass79_10505!!.anInt1399 + 1
                     val npcY = (npc.y shr 9) + Class90.regionTileY - npc.aClass79_10505!!.anInt1399 + 1
                     Class50_Sub3.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), Class274.aClass274_3505!!.method2063(Class348_Sub33.anInt6967, 544), npc.anInt10290.toLong(), Class286_Sub8.Companion.anInt6299)
                 }

@@ -61,7 +61,7 @@ class Class334 {
                 anInt4153++
                 val i_7_: Int
                 if (Class348_Sub40_Sub21.anInt9282 == 4) i_7_ = Class314.aFloat3938.toInt() and 0x3fff
-                else i_7_ = 0x3fff and r_Sub2.anInt10483 + Class314.aFloat3938.toInt()
+                else i_7_ = 0x3fff and r_Sub2Statics.anInt10483 + Class314.aFloat3938.toInt()
                 val i_8_ = (max(class46!!.anInt709 / 2, class46.anInt789 / 2) + 10)
                 val i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_)
                 if (i_9_ <= i_8_ * i_8_) {

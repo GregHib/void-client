@@ -739,7 +739,7 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
                     class348_sub27.anInt6904 = i_7_
                     class348_sub27.anInt6896 = i_4_
                     class348_sub27.anInt6905 = i_11_
-                    if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.anInt7319 > i_11_ && Class348_Sub40_Sub3.anInt9109 > i_4_) method1387(-69, class348_sub27)
+                    if (i_11_ >= 0 && i_4_ >= 0 && Class367Sub4Statics.anInt7319 > i_11_ && Class348_Sub40_Sub3.anInt9109 > i_4_) method1387(-69, class348_sub27)
                     Class348_Sub42_Sub20.aClass262_9711!!.method1999(class348_sub27, -20180)
                 }
                 class348_sub27.anInt6893 = i_5_

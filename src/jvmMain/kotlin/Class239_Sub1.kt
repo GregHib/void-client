@@ -64,7 +64,7 @@ class Class239_Sub1 : Class239 {
                 val i_2_ = -88 / ((i - -33) / 37)
                 var bool = false
                 val i_3_ = Class328_Sub1.anInt6513
-                val `is` = Class286_Sub7.anIntArray6290!!
+                val `is` = Class286Sub7Statics.anIntArray6290!!
                 var i_4_ = 0
                 while (i_3_ > i_4_) {
                     val player = (Class294.aPlayerArray5058!![`is`[i_4_]])!!

@@ -183,15 +183,15 @@ class Class348_Sub40_Sub22 : Class348_Sub40(0, true) {
             if (i_23_ != Class348_Sub15.anInt6769) {
                 if (i < 18) aClass304_9303 = null
                 Class348_Sub40_Sub3.Companion.anInt9109 = Class73.anIntArray4780!![i_23_]
-                Class367_Sub4.anInt7319 = Class348_Sub40_Sub3.Companion.anInt9109
+                Class367Sub4Statics.anInt7319 = Class348_Sub40_Sub3.Companion.anInt9109
                 Class290.method2196((-9).toByte())
-                Class62.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(Class367_Sub4.anInt7319 shr 3) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109 shr 3) } })
-                Class239_Sub8.anIntArrayArray5921 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
-                Class348_Sub42_Sub17.anIntArrayArray9678 = (Array<IntArray?>(Class367_Sub4.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
-                for (i_24_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_24_] = Class105_Sub1.method988(Class348_Sub40_Sub3.Companion.anInt9109, 1, Class367_Sub4.anInt7319)
-                Class289.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367_Sub4.anInt7319) { ByteArray(Class348_Sub40_Sub3.Companion.anInt9109) } })
-                method1717(19278, Class348_Sub40_Sub3.Companion.anInt9109, Class367_Sub4.anInt7319, 4)
-                Class97.method873(Class367_Sub4.anInt7319 shr 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.Companion.anInt9109 shr 3)
+                Class62.anIntArrayArrayArray1116 = (Array<Array<IntArray?>?>(4) { Array<IntArray?>(Class367Sub4Statics.anInt7319 shr 3) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109 shr 3) } })
+                Class239_Sub8.anIntArrayArray5921 = (Array<IntArray?>(Class367Sub4Statics.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
+                Class348_Sub42_Sub17.anIntArrayArray9678 = (Array<IntArray?>(Class367Sub4Statics.anInt7319) { IntArray(Class348_Sub40_Sub3.Companion.anInt9109) })
+                for (i_24_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_24_] = Class105_Sub1.method988(Class348_Sub40_Sub3.Companion.anInt9109, 1, Class367Sub4Statics.anInt7319)
+                Class289.aByteArrayArrayArray3700 = (Array<Array<ByteArray?>?>(4) { Array<ByteArray?>(Class367Sub4Statics.anInt7319) { ByteArray(Class348_Sub40_Sub3.Companion.anInt9109) } })
+                method1717(19278, Class348_Sub40_Sub3.Companion.anInt9109, Class367Sub4Statics.anInt7319, 4)
+                Class97.method873(Class367Sub4Statics.anInt7319 shr 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.Companion.anInt9109 shr 3)
                 Class348_Sub15.anInt6769 = i_23_
             }
         }

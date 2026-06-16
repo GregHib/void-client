@@ -94,13 +94,13 @@ class Class348_Sub41 : Class348() {
                 if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) Class167.anInt2204 = 0
                 Class348_Sub49.method3379(2, i_17_)
                 Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495!!.method2063(Class348_Sub33.Companion.anInt6967, 544), 2, Class348_Sub8.aHa6654)
-                val i_18_ = za_Sub2.regionTileX
+                val i_18_ = za_Sub2Statics.regionTileX
                 val i_19_ = Class90.regionTileY
-                za_Sub2.regionTileX = (-(Class367_Sub4.anInt7319 shr 4) + ha.anInt4581) * 8
+                za_Sub2Statics.regionTileX = (-(Class367Sub4Statics.anInt7319 shr 4) + ha.anInt4581) * 8
                 Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.anInt9109 shr 4))
                 Class348_Sub26.Companion.aClass348_Sub42_Sub14_6885 = method766(ha.anInt4581 * 8, Class327.anInt4095 * 8)
                 r_Sub2.aClass252_10488 = null
-                val i_20_ = za_Sub2.regionTileX - i_18_
+                val i_20_ = za_Sub2Statics.regionTileX - i_18_
                 val i_21_ = -i_19_ + Class90.regionTileY
                 if (i_17_ == 11) {
                     var i_22_ = 0
@@ -120,7 +120,7 @@ class Class348_Sub41 : Class348() {
                 } else {
                     Class150.anInt2057 = 0
                     var bool_24_ = false
-                    val i_25_ = Class367_Sub4.anInt7319 * 512 - 512
+                    val i_25_ = Class367Sub4Statics.anInt7319 * 512 - 512
                     val i_26_ = 512 * (-1 + Class348_Sub40_Sub3.anInt9109)
                     var i_27_ = 0
                     while ((Class348_Sub32.Companion.anInt6930 > i_27_)) {
@@ -138,7 +138,7 @@ class Class348_Sub41 : Class348() {
                                 for (i_29_ in 0..9) {
                                     npc.anIntArray10320!![i_29_] -= i_20_
                                     npc.anIntArray10317!![i_29_] -= i_21_
-                                    if ((npc.anIntArray10320!![i_29_]) < 0 || ((npc.anIntArray10320!![i_29_]) >= Class367_Sub4.anInt7319) || (npc.anIntArray10317!![i_29_]) < 0 || (Class348_Sub40_Sub3.anInt9109 <= (npc.anIntArray10317!![i_29_]))) bool_28_ = false
+                                    if ((npc.anIntArray10320!![i_29_]) < 0 || ((npc.anIntArray10320!![i_29_]) >= Class367Sub4Statics.anInt7319) || (npc.anIntArray10317!![i_29_]) < 0 || (Class348_Sub40_Sub3.anInt9109 <= (npc.anIntArray10317!![i_29_]))) bool_28_ = false
                                 }
                                 if (!bool_28_) {
                                     npc.method2448(null, -2)
@@ -180,17 +180,17 @@ class Class348_Sub41 : Class348() {
                     while (class348_sub27 != null) {
                         class348_sub27.anInt6896 -= i_21_
                         class348_sub27.anInt6905 -= i_20_
-                        if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.anInt7319) || (Class348_Sub40_Sub3.anInt9109 <= (class348_sub27.anInt6896)))) class348_sub27.method2715(101.toByte())
+                        if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367Sub4Statics.anInt7319) || (Class348_Sub40_Sub3.anInt9109 <= (class348_sub27.anInt6896)))) class348_sub27.method2715(101.toByte())
                         class348_sub27 = Class348_Sub42_Sub20.aClass262_9711!!.method1990(68.toByte()) as? Class348_Sub27?
                     }
                     if (Class312.anInt3931 != 4) {
                         var class348_sub37 = (Class130.aClass356_1895!!.method3484(0) as? Class348_Sub37?)
                         while (class348_sub37 != null) {
                             val i_33_ = (0x3fffL and class348_sub37.aLong4291).toInt()
-                            val i_34_ = -za_Sub2.regionTileX + i_33_
+                            val i_34_ = -za_Sub2Statics.regionTileX + i_33_
                             val i_35_ = (0x3fffL and (class348_sub37.aLong4291 shr 14)).toInt()
                             val i_36_ = i_35_ + -Class90.regionTileY
-                            if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.anInt7319) || i_36_ >= Class348_Sub40_Sub3.anInt9109) class348_sub37.method2715(37.toByte())
+                            if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367Sub4Statics.anInt7319) || i_36_ >= Class348_Sub40_Sub3.anInt9109) class348_sub37.method2715(37.toByte())
                             class348_sub37 = (Class130.aClass356_1895!!.method3482(0) as? Class348_Sub37?)
                         }
                     }
@@ -206,7 +206,7 @@ class Class348_Sub41 : Class348() {
                         Class281.anInt3647 -= i_21_
                         Class348_Sub35.Companion.anInt6981 -= i_20_
                         Class59_Sub2_Sub2.anInt8685 -= 512 * i_21_
-                        if ((Class367_Sub4.anInt7319 < abs(i_20_)) || abs(i_21_) > Class348_Sub40_Sub3.anInt9109) method773(true)
+                        if ((Class367Sub4Statics.anInt7319 < abs(i_20_)) || abs(i_21_) > Class348_Sub40_Sub3.anInt9109) method773(true)
                     } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                         Class348_Sub7.anInt6652 -= i_21_ * 512
                         Class130_Sub1.anInt5799 -= i_20_ * 512

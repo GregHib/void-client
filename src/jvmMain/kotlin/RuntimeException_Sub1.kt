@@ -75,7 +75,7 @@ class RuntimeException_Sub1(var aThrowable4595: Throwable?, var aString4594: Str
                         Class118.anIntArray1786 = IntArray(Class132.anInt1905)
                         Class106.anIntArray1636 = IntArray(Class132.anInt1905)
                     }
-                } else Class348_Sub31.anInt6923 = class348_sub49.readUnsignedShort(842397944)
+                } else Class348_Sub31Statics.anInt6923 = class348_sub49.readUnsignedShort(842397944)
             }
             if (!bool) {
                 if (Class118.anIntArray1786 == null) {

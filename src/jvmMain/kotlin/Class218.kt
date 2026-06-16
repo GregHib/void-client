@@ -71,7 +71,7 @@ class Class218 {
 
         fun method1591(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int) {
             anInt2855++
-            if (i >= 1 && i_5_ >= 1 && -2 + Class367_Sub4.anInt7319 >= i && i_5_ <= -2 + Class348_Sub40_Sub3.anInt9109) {
+            if (i >= 1 && i_5_ >= 1 && -2 + Class367Sub4Statics.anInt7319 >= i && i_5_ <= -2 + Class348_Sub40_Sub3.anInt9109) {
                 var i_8_ = i_7_
                 if (i_8_ < 3 && method802(i_5_, i, true)) i_8_++
                 if ((Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0 && !method536(i_5_, false, i, Class167.anInt2204, i_8_)) || Class147.aClass357ArrayArrayArray2029 == null) return
@@ -90,7 +90,7 @@ class Class218 {
             anInt2849++
             val i_13_ = (player.anIntArray10320!![0])
             val i_14_ = (player.anIntArray10317!![0])
-            if (i_13_ >= 0 && Class367_Sub4.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < Class348_Sub40_Sub3.anInt9109 && (i_12_ >= 0 && i_12_ < Class367_Sub4.anInt7319 && i_10_ >= 0 && Class348_Sub40_Sub3.anInt9109 > i_10_)) {
+            if (i_13_ >= 0 && Class367Sub4Statics.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < Class348_Sub40_Sub3.anInt9109 && (i_12_ >= 0 && i_12_ < Class367Sub4Statics.anInt7319 && i_10_ >= 0 && Class348_Sub40_Sub3.anInt9109 > i_10_)) {
                 val i_15_ = (method574(i_12_, player.method2436(62.toByte()), 0, Class348_Sub40_Sub11.anIntArray9185, true, 120.toByte(), -4, i_13_, i_14_, Class348_Sub42_Sub14.anIntArray9626, i_10_, (Class348_Sub45Statics.aClass361Array7108!![(player.plane).toInt()]), 0, 0, 0))
                 if (i_15_ >= 1) {
                     if (i_11_ != 4) aClass262_2859 = null

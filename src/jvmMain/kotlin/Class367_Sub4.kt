@@ -154,7 +154,6 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
         var anInt7314: Int = 0
         var anInt7316: Int = 0
         var aClass351_7318: Class351? = Class351(21, 2)
-        var anInt7319: Int = 104
         var aBoolean7320: Boolean get() = Class367Sub4Statics.aBoolean7320; set(v) { Class367Sub4Statics.aBoolean7320 = v }
         var anInt7321: Int = 0
         var anInt7322: Int = 0
@@ -291,7 +290,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
                             Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = i_17_ + 1 and 0xfff
                         }
-                        if (1 + i_19_ < anInt7319 && ((Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
+                        if (1 + i_19_ < Class367Sub4Statics.anInt7319 && ((Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
                             Class348_Sub16_Sub2.anIntArray8862!![i_17_] = (Class273.method2057(-1845493760, Class273.method2057(1 + i_19_, 5373952)))
                             Exception_Sub1Statics.anIntArray110!![i_17_] = Class273.method2057(5439488, i_22_)
                             i_17_ = 1 + i_17_ and 0xfff
@@ -299,7 +298,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
                         }
                     }
                     i_22_--
-                    if (i_19_ - -1 < anInt7319 && (Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - -1]!![i_22_]) != i_16_) {
+                    if (i_19_ - -1 < Class367Sub4Statics.anInt7319 && (Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - -1]!![i_22_]) != i_16_) {
                         Class348_Sub16_Sub2.anIntArray8862!![i_17_] = Class273.method2057(1392508928, Class273.method2057(9568256, 1 + i_19_))
                         Exception_Sub1Statics.anIntArray110!![i_17_] = Class273.method2057(i_22_, 9633792)
                         i_17_ = 1 + i_17_ and 0xfff
@@ -318,7 +317,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
                             Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
                         }
-                        if (anInt7319 > 1 + i_19_ && (Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
+                        if (Class367Sub4Statics.anInt7319 > 1 + i_19_ && (Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((Class348_Sub33.aByteArrayArrayArray6962!![Class355.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
                             Class348_Sub16_Sub2.anIntArray8862!![i_17_] = (Class273.method2057(-771751936, Class273.method2057(i_19_ - -1, 9568256)))
                             Exception_Sub1Statics.anIntArray110!![i_17_] = Class273.method2057(i_22_, 9633792)
                             Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_

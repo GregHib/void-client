@@ -275,7 +275,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     Class240.aClass324_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {
-                                                        val playerX = (Class132.aPlayer_1907!!.x shr 9) + za_Sub2.regionTileX
+                                                        val playerX = (Class132.aPlayer_1907!!.x shr 9) + za_Sub2Statics.regionTileX
                                                         val playerY = (Class132.aPlayer_1907!!.y shr 9) + Class90.regionTileY
                                                         Class240.aClass324_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12

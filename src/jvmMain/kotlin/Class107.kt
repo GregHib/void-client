@@ -147,16 +147,16 @@ class Class107 {
                         } else {
                             i_5_ = 4096 - 16 * Class348_Sub49_Sub1.anInt9750
                             i_3_ = (Class132.aPlayer_1907!!.y)
-                            i_6_ = (-Class314.aFloat3938.toInt() - -r_Sub2.anInt10483 and 0x3fff)
+                            i_6_ = (-Class314.aFloat3938.toInt() - -r_Sub2Statics.anInt10483 and 0x3fff)
                             i_4_ = (Class132.aPlayer_1907!!.x)
                         }
-                        val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
+                        val i_7_ = 48 - (-(i_4_ / 128) - -(Class367Sub4Statics.anInt7319 * 2)) - -208
                         val i_8_ = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48) + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128)
                         Class108.aClass105_1664!!.method967((class46.anInt709.toFloat() / 2.0f + i.toFloat()), (class46.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
                         var class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
-                            val i_10_ = (-za_Sub2.regionTileX + ((0xfffe5b0 and (r_Sub2.aClass252_10488!!.anIntArray3238!![i_9_])) shr 14))
+                            val i_10_ = (-za_Sub2Statics.regionTileX + ((0xfffe5b0 and (r_Sub2.aClass252_10488!!.anIntArray3238!![i_9_])) shr 14))
                             val i_11_ = (-Class90.regionTileY + (0x3fff and (r_Sub2.aClass252_10488!!.anIntArray3238!![i_9_])))
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
@@ -182,7 +182,7 @@ class Class107 {
                         while (class348_sub37 != null) {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
                             if (Class334.anInt4155 == i_17_) {
-                                val i_18_ = (-za_Sub2.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
+                                val i_18_ = (-za_Sub2Statics.regionTileX + ((class348_sub37.aLong4291) and 0x3fffL).toInt())
                                 val i_19_ = (-Class90.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
@@ -209,7 +209,7 @@ class Class107 {
                             i_22_++
                         }
                         val i_25_ = Class328_Sub1.anInt6513
-                        val `is` = Class286_Sub7.anIntArray6290
+                        val `is` = Class286Sub7Statics.anIntArray6290
                         for (i_26_ in 0..<i_25_) {
                             val player = (Class294.aPlayerArray5058!![`is`!![i_26_]])
                             if (player != null && player.method2457(37.toByte()) && !player.aBoolean10551 && (Class132.aPlayer_1907 != player) && (player.plane == (Class132.aPlayer_1907!!.plane))) {
@@ -295,7 +295,7 @@ class Class107 {
             rStatics.aClass101_9720!!.method898(Class21.aHa326!!.method3640())
             anInt1642++
             val `is` = Class21.aHa326!!.Y()
-            Class14_Sub3.anInt8630 = `is`[2]
+            Class14Sub3Statics.anInt8630 = `is`[2]
             Class248.anInt3202 = `is`[0]
             Class27.anInt394 = `is`[3]
             Class239_Sub5.anInt5886 = `is`[1]
@@ -303,8 +303,8 @@ class Class107 {
                 Class21.aHa326!!.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879)
                 method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120)
             } else {
-                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1Statics.anInt95)
-                method3284(true, Class14_Sub2.aDouble8621)
+                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286Sub5Statics.anInt6255, OutputStream_Sub1Statics.anInt95)
+                method3284(true, Class14Sub2Statics.aDouble8621)
             }
             if (bool != false) method1010(true, true)
         }

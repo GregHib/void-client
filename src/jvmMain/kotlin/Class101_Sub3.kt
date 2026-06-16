@@ -437,7 +437,7 @@ class Class101_Sub3 : Class101() {
                 for (i_52_ in 0..<class237_sub1!!.anInt3130) {
                     method3570(false)
                     var i_53_ = 0
-                    while ((i_53_ < Class367_Sub4.anInt7319 shr 3)) {
+                    while ((i_53_ < Class367Sub4Statics.anInt7319 shr 3)) {
                         var i_54_ = 0
                         while ((Class348_Sub40_Sub3.anInt9109 shr 3 > i_54_)) {
                             val i_55_ = (Class62.anIntArrayArrayArray1116!![i_52_]!![i_53_]!![i_54_])

@@ -27,7 +27,7 @@ abstract class Class186 {
         fun method1397(i: Int) {
             anInt2493++
             val i_0_ = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290!!
+            val `is` = Class286Sub7Statics.anIntArray6290!!
             for (i_1_ in 0..<i_0_) {
                 val player = Class294.aPlayerArray5058!![`is`[i_1_]]
                 if (player != null && (player.anInt10264) > 0) {

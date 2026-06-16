@@ -38,7 +38,7 @@ class Class151 {
                 anInt2064++
                 if (class105 != null) {
                     val i_6_: Int
-                    if (Class348_Sub40_Sub21.anInt9282 != 4) i_6_ = (0x3fff and Class314.aFloat3938.toInt() - -r_Sub2.anInt10483)
+                    if (Class348_Sub40_Sub21.anInt9282 != 4) i_6_ = (0x3fff and Class314.aFloat3938.toInt() - -r_Sub2Statics.anInt10483)
                     else i_6_ = 0x3fff and Class314.aFloat3938.toInt()
                     val i_7_ = 10 + max(class46!!.anInt709 / 2, class46.anInt789 / i_4_)
                     val i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_)

@@ -345,7 +345,6 @@ class r_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_19_: Int) : r() {
     companion object {
         var aClass45_10480: Class45? = null
         var anInt10481: Int = 0
-        var anInt10483: Int = 0
         var anInt10485: Int = 0
         var aClass252_10488: Class252? = null
         var anInt10490: Int = 0

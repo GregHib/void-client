@@ -68,7 +68,7 @@ object Class122 {
                 for (i_14_ in 0..<i_13_) {
                     val is_15_ = `is`!![i_14_]
                     if (is_15_ != null) {
-                        val i_16_ = (64 * (Class348_Sub23_Sub3.anIntArray9042!![i_14_] shr 8) + -za_Sub2.regionTileX)
+                        val i_16_ = (64 * (Class348_Sub23_Sub3.anIntArray9042!![i_14_] shr 8) + -za_Sub2Statics.regionTileX)
                         val i_17_ = ((Class348_Sub23_Sub3.anIntArray9042!![i_14_] and 0xff) * 64 - Class90.regionTileY)
                         method3570(false)
                         class237_sub1!!.method1695(is_15_, (Class348_Sub45Statics.aClass361Array7108), i_17_, Class348_Sub8.aHa6654, i_16_, i xor 0x1054f)

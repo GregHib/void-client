@@ -62,10 +62,10 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
                         val class348_sub49 = Class348_Sub49(is_15_)
                         val i_16_ = (Class348_Sub23_Sub3.anIntArray9042!![i_14_] shr 8)
                         val i_17_ = 0xff and Class348_Sub23_Sub3.anIntArray9042!![i_14_]
-                        val i_18_ = -za_Sub2.regionTileX + i_16_ * 64
+                        val i_18_ = -za_Sub2Statics.regionTileX + i_16_ * 64
                         val i_19_ = -Class90.regionTileY + i_17_ * 64
                         method3570(false)
-                        class237_sub1!!.method1681(class348_sub49, i_18_, Class348_Sub45Statics.aClass361Array7108, Class90.regionTileY, za_Sub2.regionTileX, i_19_, 110.toByte())
+                        class237_sub1!!.method1681(class348_sub49, i_18_, Class348_Sub45Statics.aClass361Array7108, Class90.regionTileY, za_Sub2Statics.regionTileX, i_19_, 110.toByte())
                         class237_sub1.method1691(i_19_, Class348_Sub8.aHa6654, class348_sub49, is_11_, i_18_, (-126).toByte())
                         if (!class237_sub1.aBoolean3109 && i_16_ == ha.anInt4581 / 8 && (i_17_ == Class327.anInt4095 / 8) && is_11_[0] != -1) {
                             Class259.aClass305_3304 = Class30.aClass84_413!!.method823(is_11_[2], is_11_[3], is_11_[1], -66, (Class123.aClass25_1813!!), is_11_[0])
@@ -75,7 +75,7 @@ class Class348_Sub1_Sub1 internal constructor(i: Int, i_0_: Int, i_1_: Int, i_2_
                     i_14_++
                 }
                 for (i_20_ in 0..<i_13_) {
-                    val i_21_ = ((Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) * 64 - za_Sub2.regionTileX)
+                    val i_21_ = ((Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) * 64 - za_Sub2Statics.regionTileX)
                     val i_22_ = (-Class90.regionTileY + ((0xff and Class348_Sub23_Sub3.anIntArray9042!![i_20_]) * 64))
                     val is_23_ = `is`[i_20_]
                     if (is_23_ == null && Class327.anInt4095 < 800) {

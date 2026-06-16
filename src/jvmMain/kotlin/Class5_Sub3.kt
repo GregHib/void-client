@@ -75,7 +75,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                 try {
                     anInt8372++
                     val i_6_ = Class328_Sub1.anInt6513
-                    val `is` = Class286_Sub7.anIntArray6290
+                    val `is` = Class286Sub7Statics.anIntArray6290
                     if (i_5_ == -7257) {
                         var bool = false
                         var i_7_ = 0

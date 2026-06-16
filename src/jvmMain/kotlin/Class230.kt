@@ -193,19 +193,19 @@ class Class230 internal constructor(string: String?, i: Int) {
                                     Class21.aHa326!!.F(-i_33_, -i_34_)
                                     Class21.aHa326!!.b(i_45_, i_48_, i_43_, i_50_, d_37_)
                                     method3284(true, (Class348_Sub42_Sub4.aDouble9517 + d_37_))
-                                    Class14_Sub2.aDouble8621 = d_37_ + Class348_Sub42_Sub4.aDouble9517
+                                    Class14Sub2Statics.aDouble8621 = d_37_ + Class348_Sub42_Sub4.aDouble9517
                                     if (Class348_Sub49.anInt7207 == 1) {
                                         Class328_Sub1_Sub1.anInt8799 = (i_17_ + -Class348_Sub3.anInt6568 - i_34_)
                                         OutputStream_Sub1Statics.anInt95 = i_21_
                                         Class120.anInt4910 = -Class328.anInt4100 + (i_16_ - i_33_)
-                                        Class286_Sub5.anInt6255 = i_20_
-                                        Class21.aHa326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1Statics.anInt95))
+                                        Class286Sub5Statics.anInt6255 = i_20_
+                                        Class21.aHa326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286Sub5Statics.anInt6255, (OutputStream_Sub1Statics.anInt95))
                                     } else {
-                                        Class286_Sub5.anInt6255 = i_20_
+                                        Class286Sub5Statics.anInt6255 = i_20_
                                         Class328_Sub1_Sub1.anInt8799 = (-Class348_Sub3.anInt6568 + i_17_ - (-(Class348_Sub42_Sub9_Sub1.anInt10444) - -i_34_))
                                         Class120.anInt4910 = (-Class328.anInt4100 + i_16_ + (Class211.anInt2747 + -i_33_))
                                         OutputStream_Sub1Statics.anInt95 = i_21_
-                                        Class21.aHa326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1Statics.anInt95))
+                                        Class21.aHa326!!.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286Sub5Statics.anInt6255, (OutputStream_Sub1Statics.anInt95))
                                     }
                                     method1274(Class348_Sub42_Sub8_Sub2.aClass76_10436)
                                     if (i_51_ > 0) {
@@ -268,16 +268,16 @@ class Class230 internal constructor(string: String?, i: Int) {
                                 Class328_Sub1_Sub1.anInt8799 = i_17_
                                 Class120.anInt4910 = i_16_
                                 OutputStream_Sub1Statics.anInt95 = i_21_
-                                Class286_Sub5.anInt6255 = i_20_
-                                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1Statics.anInt95)
+                                Class286Sub5Statics.anInt6255 = i_20_
+                                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286Sub5Statics.anInt6255, OutputStream_Sub1Statics.anInt95)
                             } else {
                                 Class120.anInt4910 = i_16_ - -Class211.anInt2747
                                 Class328_Sub1_Sub1.anInt8799 = Class348_Sub42_Sub9_Sub1.anInt10444 + i_17_
-                                Class286_Sub5.anInt6255 = i_20_
+                                Class286Sub5Statics.anInt6255 = i_20_
                                 OutputStream_Sub1Statics.anInt95 = i_21_
-                                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1Statics.anInt95)
+                                Class21.aHa326!!.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286Sub5Statics.anInt6255, OutputStream_Sub1Statics.anInt95)
                             }
-                            Class14_Sub2.aDouble8621 = 0.0
+                            Class14Sub2Statics.aDouble8621 = 0.0
                             Class348_Sub42_Sub8_Sub2.aClass76_10436!!.method775(69.toByte())
                             method1274(Class348_Sub42_Sub8_Sub2.aClass76_10436)
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)

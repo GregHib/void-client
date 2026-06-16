@@ -59,7 +59,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
             var i_0_ = 0
             class348_sub49_sub2.startBitAccess(-87)
             for (i_1_ in 0..<Class328_Sub1.anInt6513) {
-                val i_2_ = Class286_Sub7.anIntArray6290!![i_1_]
+                val i_2_ = Class286Sub7Statics.anIntArray6290!![i_1_]
                 if ((0x1 and Class348_Sub5.aByteArray6624!![i_2_].toInt()) == 0) {
                     if (i_0_ > 0) {
                         Class348_Sub5.aByteArray6624!![i_2_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_2_]).toInt(), 2).toByte()
@@ -79,7 +79,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
             if (i_0_ != 0) throw RuntimeException("nsn0")
             class348_sub49_sub2.startBitAccess(-65)
             for (i_4_ in 0..<Class328_Sub1.anInt6513) {
-                val i_5_ = Class286_Sub7.anIntArray6290!![i_4_]
+                val i_5_ = Class286Sub7Statics.anIntArray6290!![i_4_]
                 if ((0x1 and Class348_Sub5.aByteArray6624!![i_5_].toInt()) != 0) {
                     if (i_0_ > 0) {
                         Class348_Sub5.aByteArray6624!![i_5_] = Class273.method2057((Class348_Sub5.aByteArray6624!![i_5_]).toInt(), 2).toByte()
@@ -142,7 +142,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                     Class348_Sub5.aByteArray6624!![i_13_] = (Class348_Sub5.aByteArray6624!![i_13_].toInt() shr 1).toByte()
                     val player = Class294.aPlayerArray5058!![i_13_]
                     if (player == null) Class135_Sub1.anIntArray4709!![Class348_Sub42_Sub4.anInt9513++] = i_13_
-                    else Class286_Sub7.anIntArray6290!![Class328_Sub1.anInt6513++] = i_13_
+                    else Class286Sub7Statics.anIntArray6290!![Class328_Sub1.anInt6513++] = i_13_
                 }
             }
         }

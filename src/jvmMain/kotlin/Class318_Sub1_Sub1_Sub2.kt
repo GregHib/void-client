@@ -268,7 +268,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_ha: ha?, class51: Class51
             for (i_13_ in class302s.indices) {
                 val class302 = class302s[i_13_]
                 if (class302 != null && class302.anInt3840 == 2) {
-                    Class318_Sub5.Companion.method2505(i_9_ shr 1, 2 * class302.anInt3839, 0, i_12_, i_11_ shr 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835)
+                    aa_Sub2.method2505(i_9_ shr 1, 2 * class302.anInt3839, 0, i_12_, i_11_ shr 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835)
                     if (Class239_Sub21.anIntArray6062!![0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
                         val class105 = (Class239_Sub9.aClass105Array5933!![class302.anInt3831])
                         val i_14_ = -12 + (i - -Class239_Sub21.anIntArray6062!![0])

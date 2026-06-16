@@ -1432,7 +1432,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class318_Sub1_Sub5.anInt8772 = 0
             Class348_Sub40_Sub8.anInt9151 = 0
             Class48.anInt855 = 0
-            Class318_Sub5.anInt6423 = 0
+            aa_Sub2.anInt6423 = 0
             Applet_Sub1.anInt11 = 0
             Class21.anInt327 = 0
             Class318_Sub7.anInt6448 = 0
@@ -4108,7 +4108,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
 
             r.aBoolean9722 = false
             Class348_Sub17.method2928(true)
-            r_Sub2.anInt10483 = -60 + (Math.random() * 120.0).toInt()
+            r_Sub2Statics.anInt10483 = -60 + (Math.random() * 120.0).toInt()
             Class260.anInt3310 = -55 + (Math.random() * 110.0).toInt()
             Class314.aFloat3938 = (0x3fff and -80 + (160.0 * Math.random()).toInt()).toFloat()
             Class348_Sub49_Sub1.anInt9750 = (30.0 * Math.random()).toInt() + -20

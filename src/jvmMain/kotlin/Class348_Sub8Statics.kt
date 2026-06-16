@@ -38,7 +38,7 @@ object Class348_Sub8Statics {
         } else if (class318_sub1_sub3_sub3 is Npc) {
             val npc = class318_sub1_sub3_sub3
             if ((npc.anInt10499) != -1 && ((npc.anInt10319) == 0 || npc.anInt10326 > 0)) {
-                val i_3_ = (-((-za_Sub2.regionTileX + npc.anInt10499 - za_Sub2.regionTileX) * 256) + (npc.x))
+                val i_3_ = (-((-za_Sub2Statics.regionTileX + npc.anInt10499 - za_Sub2Statics.regionTileX) * 256) + (npc.x))
                 val i_4_ = (npc.y - 256 * (npc.anInt10512 + (-Class90.regionTileY + -Class90.regionTileY)))
                 if (i_3_ != 0 || i_4_ != 0) npc.method2440(49.toByte(), 0x3fff and (atan2(i_3_.toDouble(), i_4_.toDouble()) * 2607.5945876176133).toInt())
                 npc.anInt10499 = -1

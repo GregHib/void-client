@@ -119,7 +119,6 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anInt6251: Int = 0
         var anInt6252: Int = 0
         var anInt6253: Int = 0
-        var anInt6255: Int = 0
         var anInt6256: Int = 0
         var anInt6257: Int = 0
         var anInt6258: Int = 0

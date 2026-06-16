@@ -287,8 +287,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         this.anInt10524 = -1
-        if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
-            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < Class367_Sub4.anInt7319) && this.anIntArray10317!![0] >= 0 && (Class348_Sub40_Sub3.anInt9109 > this.anIntArray10317!![0])) {
+        if (i_52_ >= 0 && Class367Sub4Statics.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
+            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < Class367Sub4Statics.anInt7319) && this.anIntArray10317!![0] >= 0 && (Class348_Sub40_Sub3.anInt9109 > this.anIntArray10317!![0])) {
                 if (i_51_.toInt() == 2) Class218.method1592(2.toByte(), i, 4, i_52_, this)
                 method2451(i_51_, i_52_, -29034, i)
             } else method2449(i, i_52_, 111.toByte())

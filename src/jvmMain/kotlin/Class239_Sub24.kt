@@ -216,7 +216,7 @@ class Class239_Sub24 : Class239 {
                                         i_37_++
                                     }
                                     val i_40_ = Class328_Sub1.anInt6513
-                                    val `is` = Class286_Sub7.anIntArray6290!!
+                                    val `is` = Class286Sub7Statics.anIntArray6290!!
                                     var i_41_ = 0
                                     while ((i_40_ > i_41_)) {
                                         val player_42_ = (Class294.aPlayerArray5058!![`is`[i_41_]])
@@ -259,7 +259,7 @@ class Class239_Sub24 : Class239 {
                                             }
                                         }
                                         val i_51_ = Class328_Sub1.anInt6513
-                                        val `is` = Class286_Sub7.anIntArray6290!!
+                                        val `is` = Class286Sub7Statics.anIntArray6290!!
                                         var i_52_ = 0
                                         while ((i_51_ > i_52_)) {
                                             val player = (Class294.aPlayerArray5058!![`is`[i_52_]])
@@ -283,7 +283,7 @@ class Class239_Sub24 : Class239 {
                                 }
                             }
                             if (class318_sub4.aClass318_Sub1_6410 is Class318_Sub1_Sub2_Sub1) {
-                                val i_55_ = za_Sub2.regionTileX + i_33_
+                                val i_55_ = za_Sub2Statics.regionTileX + i_33_
                                 val i_56_ = i_32_ - -Class90.regionTileY
                                 val class348_sub37 = ((Class130.aClass356_1895!!.method3480(((class318_sub4.aClass318_Sub1_6410!!.plane).toInt() shl 28 or (i_56_ shl 14) or i_55_).toLong(), -6008)) as Class348_Sub37?)
                                 if (class348_sub37 != null) {
@@ -354,7 +354,7 @@ class Class239_Sub24 : Class239 {
                                                 }
                                             }
                                         }
-                                        val x = i_33_ + za_Sub2.regionTileX
+                                        val x = i_33_ + za_Sub2Statics.regionTileX
                                         val y = i_32_ + Class90.regionTileY
                                         Class50_Sub3.method466(
                                             ((Class132.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane),

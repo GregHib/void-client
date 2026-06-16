@@ -64,7 +64,7 @@ class Class239_Sub5 : Class239 {
             if (i.toInt() != 118) anInt5886 = 111
             val i_5_ = (i_4_ shr 28).toByte()
             val i_6_ = i_4_ shr 14 and 0x3fff
-            player.anIntArray10320!![0] = -za_Sub2.regionTileX + i_6_
+            player.anIntArray10320!![0] = -za_Sub2Statics.regionTileX + i_6_
             val i_7_ = 0x3fff and i_4_
             player.x = (((player.anIntArray10320!![0]) shl 9) + (player.method2436(91.toByte()) shl 8))
             player.anIntArray10317!![0] = i_7_ + -Class90.regionTileY
@@ -75,7 +75,7 @@ class Class239_Sub5 : Class239 {
             if (Class79.method802((player.anIntArray10317!![0]), (player.anIntArray10320!![0]), true)) player.aByte6376++
             if (Class154.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (Class154.aClass348_Sub49Array2105!![i_3_]!!))
             Class328_Sub1.anInt6513 = 0
-            Class286_Sub7.anIntArray6290!![Class328_Sub1.anInt6513++] = i_3_
+            Class286Sub7Statics.anIntArray6290!![Class328_Sub1.anInt6513++] = i_3_
             Class348_Sub5.aByteArray6624!![i_3_] = 0.toByte()
             Class348_Sub42_Sub4.anInt9513 = 0
             for (i_8_ in 1..2047) {

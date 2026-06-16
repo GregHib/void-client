@@ -3276,7 +3276,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             anInt7572++
             val i_321_ = Class328_Sub1.anInt6513
             Class88.anInt1497 = 0
-            val `is` = Class286_Sub7.anIntArray6290!!
+            val `is` = Class286Sub7Statics.anIntArray6290!!
             var i_322_ = 0
             while ((i_322_ < Class150.anInt2057 + i_321_)) {
                 var class79: Class79? = null

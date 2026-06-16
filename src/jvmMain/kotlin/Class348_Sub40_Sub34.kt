@@ -108,7 +108,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
             Class348_Sub40_Sub17_Sub1.Companion.method3093(i + 79)
             Class101_Sub2.method921(99.toByte(), true)
             Class90.regionTileY = 0
-            za_Sub2.regionTileX = 0
+            za_Sub2Statics.regionTileX = 0
             ha.anInt4581 = 0
             Class327.anInt4095 = 0
             Class312.anInt3931 = 0

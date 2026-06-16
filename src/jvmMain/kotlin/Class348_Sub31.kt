@@ -50,7 +50,6 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
         var anInt6919: Int = 0
         var aBigInteger6921: BigInt?
         var anInt6922: Int = 0
-        var anInt6923: Int = -1
         var anInt6924: Int = 0
         var aClass351_6925: Class351?
         var aString6926: String?
@@ -217,7 +216,7 @@ abstract class Class348_Sub31 : Class348(), GameSurface {
         }
 
         fun method3013(i: Int, bool: Boolean): Int {
-            if (bool != true) anInt6923 = -14
+            if (bool != true) Class348_Sub31Statics.anInt6923 = -14
             anInt6915++
             return i and 0xff
         }

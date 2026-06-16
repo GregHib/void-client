@@ -111,7 +111,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class95.aClass45_1541!!.method412(37.toByte())
                 Class348_Sub35.Companion.aClass45_6980!!.method412((-113).toByte())
                 Class129.aClass45_1878!!.method412((-116).toByte())
-                Class367_Sub10.aClass45_7382!!.method412((-110).toByte())
+                Class367Sub10Statics.aClass45_7382!!.method412((-110).toByte())
                 Class59_Sub2_Sub1.aClass45_8667!!.method412(64.toByte())
                 aa_Sub3Statics.aClass45_5207!!.method412(120.toByte())
                 Class21.aClass45_322!!.method412(98.toByte())

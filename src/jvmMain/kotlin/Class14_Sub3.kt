@@ -27,7 +27,6 @@ class Class14_Sub3 internal constructor(class377: Class377?, class304: Class304?
         var anInt8625: Int = 0
         var anInt8627: Int = 0
         var anInt8628: Int = 0
-        var anInt8630: Int = 0
         var anInt8632: Int = 0
 
         fun method247(i: Int): Class348_Sub51? {

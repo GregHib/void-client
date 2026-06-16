@@ -9,7 +9,7 @@ class za_Sub2(i: Int) : za() {
     var aNativeHeap9782: NativeHeap
     fun method3445(i: Int) {
         this.aNativeHeap9782.b()
-        if (i != -9503) regionTileX = -29
+        if (i != -9503) za_Sub2Statics.regionTileX = -29
         anInt9777++
     }
 
@@ -21,7 +21,6 @@ class za_Sub2(i: Int) : za() {
         var anInt9777: Int = 0
         var anInt9778: Int = 0
         var anInt9779: Int = 0
-        var regionTileX: Int = 0
         var aClass138_9781: Class138?
         var aBoolean9783: Boolean = false
 
@@ -63,7 +62,7 @@ class za_Sub2(i: Int) : za() {
                         if ((i_3_ and 0x3fffffff.inv()) == -1073741824) {
                             val i_8_ = i_3_ and 0xfffffff
                             val i_9_ = i_8_ shr 14
-                            i_7_ = (class318_sub1_sub3_sub3.x) - 512 * (i_9_ - regionTileX) - 256
+                            i_7_ = (class318_sub1_sub3_sub3.x) - 512 * (i_9_ - za_Sub2Statics.regionTileX) - 256
                             val i_10_ = i_8_ and 0x3fff
                             i_6_ = (-256 - (i_10_ - Class90.regionTileY) * 512 + (class318_sub1_sub3_sub3.y))
                         } else if ((0x8000 and i_3_) == 0) {

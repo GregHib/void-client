@@ -112,7 +112,7 @@ object Class164 {
             Class348_Sub49.method3379(2, 1)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1029) {
-            for (i_7_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_7_] = method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319)
+            for (i_7_ in 0..3) Class348_Sub45Statics.aClass361Array7108!![i_7_] = method988(Class348_Sub40_Sub3.anInt9109, 1, Class367Sub4Statics.anInt7319)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1030) {
             Class21.aClass45_322 = Class369_Sub2.method3571(false, 8, (-23).toByte(), 1)
@@ -121,7 +121,7 @@ object Class164 {
             Class95.aClass45_1541 = Class369_Sub2.method3571(false, 2, (-23).toByte(), 1)
             Class348_Sub35.aClass45_6980 = Class369_Sub2.method3571(false, 3, (-23).toByte(), 1)
             Class129.aClass45_1878 = Class369_Sub2.method3571(false, 4, (-23).toByte(), 1)
-            Class367_Sub10.aClass45_7382 = Class369_Sub2.method3571(true, 5, (-23).toByte(), 1)
+            Class367Sub10Statics.aClass45_7382 = Class369_Sub2.method3571(true, 5, (-23).toByte(), 1)
             Class59_Sub2_Sub1.aClass45_8667 = Class369_Sub2.method3571(true, 6, (-23).toByte(), 1)
             aa_Sub3Statics.aClass45_5207 = Class369_Sub2.method3571(false, 7, (-23).toByte(), 1)
             Class369_Sub2.aClass45_8589 = Class369_Sub2.method3571(false, 9, (-23).toByte(), 1)
@@ -174,7 +174,7 @@ object Class164 {
         }
         if (i != -28660) return 2
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1035) {
-            if (Class348_Sub31.anInt6923 != -1 && !aa_Sub3Statics.aClass45_5207!!.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99
+            if (Class348_Sub31Statics.anInt6923 != -1 && !aa_Sub3Statics.aClass45_5207!!.method420(-10499, Class348_Sub31Statics.anInt6923, 0)) return 99
             Class348_Sub40_Sub4.aD9113 = Class244(Class348_Sub11Statics.aClass45_4770, Class369_Sub2.aClass45_8589, Class21.aClass45_322)
             Class101_Sub3.aClass326_5764 = Class326(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class64_Sub3.aClass261_5558 = Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
@@ -244,7 +244,7 @@ object Class164 {
             method1063(1)
             Class285.anInt4737 = Class348_Sub35.aClass45_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
             Class54.anInt970 = Class348_Sub35.aClass45_6980!!.method417("lobbyscreen", 0)
-            Class367_Sub10.aClass45_7382!!.method404(0, true, false)
+            Class367Sub10Statics.aClass45_7382!!.method404(0, true, false)
             Class59_Sub2_Sub1.aClass45_8667!!.method404(0, true, true)
             Class21.aClass45_322!!.method404(i + 28660, true, true)
             Class104.aClass45_1627!!.method404(0, true, true)

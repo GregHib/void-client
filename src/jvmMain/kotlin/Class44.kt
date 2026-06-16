@@ -26,7 +26,7 @@ object Class44 {
                 for (i in 0..<class237_sub1!!.anInt3130) {
                     method3570(false)
                     var i_6_ = 0
-                    while ((Class367_Sub4.anInt7319 shr 3 > i_6_)) {
+                    while ((Class367Sub4Statics.anInt7319 shr 3 > i_6_)) {
                         for (i_7_ in 0..<(Class348_Sub40_Sub3.anInt9109 shr 3)) {
                             val i_8_ = (Class62.anIntArrayArrayArray1116!![i]!![i_6_]!![i_7_])
                             if (i_8_ != -1) {
@@ -54,7 +54,7 @@ object Class44 {
                 while (class237_sub1.anInt3130 > i) {
                     method3570(false)
                     var i_15_ = 0
-                    while ((i_15_ < Class367_Sub4.anInt7319 shr 3)) {
+                    while ((i_15_ < Class367Sub4Statics.anInt7319 shr 3)) {
                         var i_16_ = 0
                         while ((i_16_ < Class348_Sub40_Sub3.anInt9109 shr 3)) {
                             val i_17_ = (Class62.anIntArrayArrayArray1116!![i]!![i_15_]!![i_16_])

@@ -321,7 +321,7 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             if (i == 3613) {
                 var i_31_ = 0
                 var i_32_ = 0
-                while (Class367_Sub4.anInt7319 > i_32_) {
+                while (Class367Sub4Statics.anInt7319 > i_32_) {
                     var i_33_ = 0
                     while (Class348_Sub40_Sub3.anInt9109 > i_33_) {
                         if (Class367_Sub4.method3542(i_33_, Class147.aClass357ArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++

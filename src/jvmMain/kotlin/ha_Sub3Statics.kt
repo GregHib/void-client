@@ -14,7 +14,7 @@ object ha_Sub3Statics {
     fun method3824(i: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int) {
         var i_36_ = i_36_
         ha_Sub3.anInt7933++
-        if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.anInt7319 > i_37_ && (i < -1 + Class348_Sub40_Sub3.anInt9109)) {
+        if (i_37_ >= 0 && i >= 0 && -1 + Class367Sub4Statics.anInt7319 > i_37_ && (i < -1 + Class348_Sub40_Sub3.anInt9109)) {
             if (Class147.aClass357ArrayArrayArray2029 == null) return
             if (i_41_ == 0) {
                 val interface10 = method3297(i_40_, i_37_, i) as Interface10?

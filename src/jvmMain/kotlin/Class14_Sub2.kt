@@ -21,7 +21,6 @@ class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boole
     companion object {
         var anInt8619: Int = 0
         var anInt8620: Int = 0
-        var aDouble8621: Double = 0.0
         var anInt8622: Int = 0
 
         /*synthetic*/
@@ -43,7 +42,7 @@ class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boole
             }
             do {
                 try {
-                    if (i != 37) aDouble8621 = -0.46512114956219314
+                    if (i != 37) Class14Sub2Statics.aDouble8621 = -0.46512114956219314
                     if (class234 == null) break
                     class234.method1657(false)
                 } catch (exception: Exception) {

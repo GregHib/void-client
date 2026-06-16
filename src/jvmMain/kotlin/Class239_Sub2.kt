@@ -71,7 +71,7 @@ class Class239_Sub2 : Class239 {
             val i_4_ = Class192.anInt2578 shr 9
             val i_5_ = Class275.method2064(Class130_Sub1.anInt5799, Class355.anInt4372, 11219, Class192.anInt2578)
             var i_6_ = 0
-            if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.anInt7319 > i_3_ && Class348_Sub40_Sub3.anInt9109 - 4 > i_4_) {
+            if (i_3_ > 3 && i_4_ > 3 && -4 + Class367Sub4Statics.anInt7319 > i_3_ && Class348_Sub40_Sub3.anInt9109 - 4 > i_4_) {
                 var i_7_ = i_3_ - 4
                 while (i_3_ - -4 >= i_7_) {
                     for (i_8_ in -4 + i_4_..4 + i_4_) {

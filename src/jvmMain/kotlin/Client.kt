@@ -1499,7 +1499,7 @@ class Client : Applet_Sub1() {
                         if (i_99_ != 0 || i_100_ != 0) {
                             var i_101_ = ((npc.anIntArray10320!![0]) - -i_99_)
                             if (i_101_ < 0) i_101_ = 0
-                            else if (i_101_ > Class367_Sub4.anInt7319 + -i_98_ + -1) i_101_ = -1 + (-i_98_ + Class367_Sub4.anInt7319)
+                            else if (i_101_ > Class367Sub4Statics.anInt7319 + -i_98_ + -1) i_101_ = -1 + (-i_98_ + Class367Sub4Statics.anInt7319)
                             var i_102_ = i_100_ + (npc.anIntArray10317!![0])
                             if (i_102_ < 0) i_102_ = 0
                             else if ((-i_98_ + Class348_Sub40_Sub3.anInt9109 - 1) < i_102_) i_102_ = (-i_98_ + Class348_Sub40_Sub3.anInt9109 - 1)
@@ -1530,7 +1530,7 @@ class Client : Applet_Sub1() {
         if (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
             if (Class348_Sub40_Sub21.anInt9282 == 2) method241(127.toByte())
             else Class348_Sub21.method2954((-127).toByte())
-            if (Class286_Sub4.anInt6246 shr 9 < 14 || (Class286_Sub4.anInt6246 shr 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) Class101Statics.method893((-49).toByte())
+            if (Class286_Sub4.anInt6246 shr 9 < 14 || (Class286_Sub4.anInt6246 shr 9 >= -14 + Class367Sub4Statics.anInt7319) || (Class59_Sub2_Sub2.anInt8685 shr 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 shr 9)) Class101Statics.method893((-49).toByte())
         }
         if (i.toInt() != 112) anInt5171 = 22
         while (true) {
@@ -1814,9 +1814,9 @@ class Client : Applet_Sub1() {
         anInt5175++
         var string: String? = null
         try {
-            string = ("[1)" + za_Sub2.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|")
+            string = ("[1)" + za_Sub2Statics.regionTileX + "," + Class90.regionTileY + "," + Class367Sub4Statics.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|")
             if (i < 40) aClass262_5185 = null
-            if (Class132.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (za_Sub2.regionTileX + (Class132.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (Class132.aPlayer_1907!!.anIntArray10317!![0])) + "|")
+            if (Class132.aPlayer_1907 != null) string += ("2)" + Class355.anInt4372 + "," + (za_Sub2Statics.regionTileX + (Class132.aPlayer_1907!!.anIntArray10320!![0])) + "," + (Class90.regionTileY + (Class132.aPlayer_1907!!.anIntArray10317!![0])) + "|")
             string += ("3)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + Class321.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|")
             string += "7)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
             string += "8)" + Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
@@ -1872,7 +1872,7 @@ class Client : Applet_Sub1() {
 
         fun method104(i: Int) {
             val i_7_ = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = Class286Sub7Statics.anIntArray6290
             val i_8_ = if (Class373_Sub2.aBoolean7444) i_7_ else i_7_ + Class150.anInt2057
             for (i_9_ in 0..<i_8_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
@@ -2172,7 +2172,7 @@ class Client : Applet_Sub1() {
                                                 i_59_ -= (class46.anInt789) / 2
                                                 val i_61_: Int
                                                 if (Class348_Sub40_Sub21.anInt9282 == 4) i_61_ = ((Class314.aFloat3938).toInt() and 0x3fff)
-                                                else i_61_ = (((Class314.aFloat3938).toInt() + r_Sub2.anInt10483) and 0x3fff)
+                                                else i_61_ = (((Class314.aFloat3938).toInt() + r_Sub2Statics.anInt10483) and 0x3fff)
                                                 var i_62_ = (Class70.anIntArray1207!![i_61_])
                                                 var i_63_ = (Class70.anIntArray1204!![i_61_])
                                                 if (Class348_Sub40_Sub21.anInt9282 != 4) {
@@ -2529,7 +2529,7 @@ class Client : Applet_Sub1() {
         }
 
         fun method109() {
-            for (i in 0..<Class367_Sub4.anInt7319) {
+            for (i in 0..<Class367Sub4Statics.anInt7319) {
                 val `is`: IntArray = Class348_Sub42_Sub17.anIntArrayArray9678!![i]!!
                 for (i_91_ in 0..<Class348_Sub40_Sub3.anInt9109) `is`[i_91_] = 0
             }
@@ -2550,7 +2550,7 @@ class Client : Applet_Sub1() {
 
         fun method112() {
             val i = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = Class286Sub7Statics.anIntArray6290
             val i_92_ = if (Class373_Sub2.aBoolean7444) i else i + Class150.anInt2057
             for (i_93_ in 0..<i_92_) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
@@ -2569,7 +2569,7 @@ class Client : Applet_Sub1() {
 
         fun method115() {
             val i = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = Class286Sub7Statics.anIntArray6290
             val i_112_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
             val bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50
             for (i_113_ in 0..<i) {
@@ -2578,7 +2578,7 @@ class Client : Applet_Sub1() {
                 else if (player.aBoolean10551) player.anInt10285 = -1
                 else {
                     player.method2409((-126).toByte())
-                    if ((player.aShort8743) < 0 || (player.aShort8750) < 0 || (player.aShort8751) >= Class367_Sub4.anInt7319 || (player.aShort8747) >= Class348_Sub40_Sub3.anInt9109) player.anInt10285 = -1
+                    if ((player.aShort8743) < 0 || (player.aShort8750) < 0 || (player.aShort8751) >= Class367Sub4Statics.anInt7319 || (player.aShort8747) >= Class348_Sub40_Sub3.anInt9109) player.anInt10285 = -1
                     else {
                         player.aBoolean10521 = (player.aBoolean10213 && bool)
                         if (player == Class132.aPlayer_1907) player.anInt10285 = 2147483647
@@ -2603,7 +2603,7 @@ class Client : Applet_Sub1() {
                 if (!npc!!.method2445((-4).toByte()) || !(npc.aClass79_10505!!.method796(Class318_Sub1_Sub3_Sub3.aClass170_10209!!, 18627))) npc.anInt10285 = -1
                 else {
                     npc.method2409((-118).toByte())
-                    if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= Class367_Sub4.anInt7319 || (npc.aShort8747) >= Class348_Sub40_Sub3.anInt9109) npc.anInt10285 = -1
+                    if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= Class367Sub4Statics.anInt7319 || (npc.aShort8747) >= Class348_Sub40_Sub3.anInt9109) npc.anInt10285 = -1
                     else {
                         var i_116_ = 0
                         if (!npc.aBoolean10309) i_116_++
@@ -2641,7 +2641,7 @@ class Client : Applet_Sub1() {
 
         fun method117(i: Int) {
             val i_122_ = Class328_Sub1.anInt6513
-            val `is` = Class286_Sub7.anIntArray6290
+            val `is` = Class286Sub7Statics.anIntArray6290
             for (i_123_ in 0..<i_122_ + Class150.anInt2057) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
                 if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`!![i_123_]])

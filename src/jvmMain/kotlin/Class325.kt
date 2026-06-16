@@ -457,7 +457,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, -1)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class314.aFloat3938.toInt())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 57)
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, r_Sub2.anInt10483)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, r_Sub2Statics.anInt10483)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, Class348_Sub49_Sub1.anInt9750)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 89)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (Class132.aPlayer_1907!!.x))
@@ -471,7 +471,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 }
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47)
                                 Class298.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
-                            } else Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907!!.plane).toInt(), i_74_ + za_Sub2.regionTileX)
+                            } else Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907!!.plane).toInt(), i_74_ + za_Sub2Statics.regionTileX)
                         }
                         if (i_76_ == 4) {
                             Class93.anInt1534 = i_72_
@@ -481,7 +481,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class21.anInt321++
                             val class348_sub47 = method2148((Class348_Sub42_Sub8.aClass351_9553), (Class348_Sub23_Sub2.aClass77_9029), -113)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class90.regionTileY + i_75_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(120, i_74_ + za_Sub2.regionTileX)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(120, i_74_ + za_Sub2Statics.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract(117.toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -122)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, 0x7fffffff and (l ushr 32).toInt())
                             Class348_Sub42_Sub14.method3243(117, class348_sub47)
@@ -527,7 +527,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             Class205.anInt2689++
                             val class348_sub47 = method2148(Class344.aClass351_4262, (Class348_Sub23_Sub2.aClass77_9029), -107)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + za_Sub2.regionTileX, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ + za_Sub2Statics.regionTileX, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-107, i_77_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY + i_75_)
@@ -549,7 +549,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148(Class190.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY + i_75_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-110, i_74_ + za_Sub2.regionTileX)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-110, i_74_ + za_Sub2Statics.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-44).toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -122)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(97, i_77_)
                             Class348_Sub42_Sub14.method3243(118, class348_sub47)
@@ -595,7 +595,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val class348_sub47 = method2148((Class101_Sub1Statics.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(86.toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -121)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(31, (l ushr 32).toInt() and 0x7fffffff)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-104, za_Sub2.regionTileX + i_74_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-104, za_Sub2Statics.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
                             Class348_Sub42_Sub14.method3243(119, class348_sub47)
                             method2307(i_75_, l, i_74_, 93)
@@ -620,7 +620,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             }
                         }
                         if (i_76_ == 12) {
-                            if (Class192.anInt2581 > 0 && Class182.aClass346_2449!!.method2696(82, -127) && Class182.aClass346_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907!!.plane).toInt(), za_Sub2.regionTileX - -i_74_)
+                            if (Class192.anInt2581 > 0 && Class182.aClass346_2449!!.method2696(82, -127) && Class182.aClass346_2449!!.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907!!.plane).toInt(), za_Sub2Statics.regionTileX - -i_74_)
                             else {
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
@@ -628,7 +628,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348Statics.anInt4292 = 0
                                 Class239_Sub20.anInt6048 = 1
                                 val class348_sub47 = method2148((Class195.aClass351_5015), (Class348_Sub23_Sub2.aClass77_9029), -123)
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(101, za_Sub2.regionTileX + i_74_)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(101, za_Sub2Statics.regionTileX + i_74_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class90.regionTileY - -i_75_)
                                 Class348_Sub42_Sub14.method3243(6, class348_sub47)
                             }
@@ -685,7 +685,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             val class348_sub47 = method2148(Class193.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-96).toByte(), (if (Class182.aClass346_2449!!.method2696(82, -125)) 1 else 0))
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, za_Sub2Statics.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(68, 0x7fffffff and (l ushr 32).toInt())
                             Class348_Sub42_Sub14.method3243(-68, class348_sub47)
                             method2307(i_75_, l, i_74_, 25)
@@ -733,7 +733,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class26.anInt385 = i_73_
                             val class348_sub47 = method2148(r_Sub1.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), za_Sub2.regionTileX + i_74_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), za_Sub2Statics.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_75_ + Class90.regionTileY)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract(120.toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -123)) 0 else 1))
                             Class348_Sub42_Sub14.method3243(120, class348_sub47)
@@ -746,7 +746,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             Client.anInt5187++
                             val class348_sub47 = method2148(Class344.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(za_Sub2.regionTileX - -i_74_, 3.toByte())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(za_Sub2Statics.regionTileX - -i_74_, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-85, Class301.anInt3829)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class9.anInt169, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(127.toByte(), Class149.anInt2046)
@@ -778,7 +778,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub16_Sub1.aClass351_8857), (Class348_Sub23_Sub2.aClass77_9029), -105)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class301.anInt3829)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, za_Sub2Statics.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntLittle(-128, Class149.anInt2046)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-82, Class90.regionTileY + i_75_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-74).toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -125)) 0 else 1))
@@ -825,7 +825,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub49_Sub1.aClass351_9749), (Class348_Sub23_Sub2.aClass77_9029), -81)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(106, i_74_ - -za_Sub2.regionTileX)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(106, i_74_ - -za_Sub2Statics.regionTileX)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!Class182.aClass346_2449!!.method2696(82, -128)) 0 else 1))
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, i_75_ - -Class90.regionTileY)
                             Class348_Sub42_Sub14.method3243(116, class348_sub47)
@@ -839,7 +839,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class93.anInt1534 = i_72_
                             val class348_sub47 = method2148((Class348_Sub42_Sub17.aClass351_9679), (Class348_Sub23_Sub2.aClass77_9029), -98)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-83).toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -128)) 0 else 1))
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, za_Sub2Statics.regionTileX + i_74_)
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_75_ + Class90.regionTileY, 3.toByte())
                             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 0x7fffffff and (l ushr 32).toInt())
                             Class348_Sub42_Sub14.method3243(127, class348_sub47)
@@ -880,7 +880,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348_Sub42_Sub13.anInt9620++
                                 val class348_sub47 = method2148((Class202.aClass351_2661), (Class348_Sub23_Sub2.aClass77_9029), -117)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-101).toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -125)) 0 else 1))
-                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-69, za_Sub2.regionTileX + i_74_)
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-69, za_Sub2Statics.regionTileX + i_74_)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class90.regionTileY + i_75_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 Class348_Sub42_Sub14.method3243(116, class348_sub47)
@@ -953,7 +953,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     val class348_sub47 = (method2148(Class252.aClass351_3237, Class348_Sub23_Sub2.aClass77_9029, -125))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-96, Class90.regionTileY + i_75_)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, 0x7fffffff and (l ushr 32).toInt())
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ - -za_Sub2.regionTileX, 3.toByte())
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_74_ - -za_Sub2Statics.regionTileX, 3.toByte())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-91).toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -127)) 0 else 1))
                                     Class348_Sub42_Sub14.method3243(118, class348_sub47)
                                     method2307(i_75_, l, i_74_, 24)
@@ -983,7 +983,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                     val class348_sub47 = (method2148(Class188.aClass351_2512, Class348_Sub23_Sub2.aClass77_9029, -91))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-108, i_75_ - -Class90.regionTileY)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-70, i_77_)
-                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(za_Sub2.regionTileX + i_74_, 3.toByte())
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(za_Sub2Statics.regionTileX + i_74_, 3.toByte())
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-70).toByte(), (if (!Class182.aClass346_2449!!.method2696(82, -128)) 0 else 1))
                                     Class348_Sub42_Sub14.method3243(-22, class348_sub47)
                                     Class348_Sub42_Sub18.method3275(1, i_75_, i_74_)

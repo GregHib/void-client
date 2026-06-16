@@ -49,7 +49,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
                     val i_9_ = -i_6_ + ((Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775]!![i_1_ - -2]!![i_2_]) + i_4_) + -i_5_
                     fs[i_2_] = i_6_.toFloat() + f * (i_7_.toFloat() + f * (f * i_9_.toFloat() + i_8_.toFloat()))
                 }
-                Class286_Sub4.anInt6246 = fs[0].toInt() - 512 * za_Sub2.regionTileX
+                Class286_Sub4.anInt6246 = fs[0].toInt() - 512 * za_Sub2Statics.regionTileX
                 Class305.anInt3855 = -1 * fs[1].toInt()
                 Class59_Sub2_Sub2.anInt8685 = fs[2].toInt() + -(Class90.regionTileY * 512)
                 val fs_10_ = FloatArray(3)

@@ -35,7 +35,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_5_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
                     val i_6_ = Class278.anInt3581 + (0x7 and (i_5_ shr 4))
                     val i_7_ = Class73.anInt4786 - -(i_5_ and 0x7)
-                    if (Class282.method2112(126, Class312.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367_Sub4.anInt7319 > i_6_ && (i_7_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
+                    if (Class282.method2112(126, Class312.anInt3931) || (i_6_ >= 0 && i_7_ >= 0 && Class367Sub4Statics.anInt7319 > i_6_ && (i_7_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_7_, -1, i_1_, i_3_, i_2_, i_4_, 121.toByte(), i_6_)
                 } else if (class74 == Class348_Sub40_Sub38.aClass74_9475) {
                     val i_8_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_9_ = Class278.anInt3581 + ((0x7a and i_8_) shr 4)
@@ -44,7 +44,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_12_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_13_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_14_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
-                    if (i_9_ >= 0 && i_10_ >= 0 && i_9_ < Class367_Sub4.anInt7319 && Class348_Sub40_Sub3.anInt9109 > i_10_) {
+                    if (i_9_ >= 0 && i_10_ >= 0 && i_9_ < Class367Sub4Statics.anInt7319 && Class348_Sub40_Sub3.anInt9109 > i_10_) {
                         val i_15_ = 512 * i_9_ - -256
                         val i_16_ = 256 + 512 * i_10_
                         var i_17_ = Class348_Sub40_Sub12.anInt9200
@@ -64,7 +64,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_25_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_26_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_27_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
-                    if (i_19_ >= 0 && i_20_ >= 0 && i_19_ < Class367_Sub4.anInt7319 && (i_20_ < Class348_Sub40_Sub3.anInt9109)) {
+                    if (i_19_ >= 0 && i_20_ >= 0 && i_19_ < Class367Sub4Statics.anInt7319 && (i_20_ < Class348_Sub40_Sub3.anInt9109)) {
                         val i_28_ = 1 + i_23_
                         if (((Class132.aPlayer_1907!!.anIntArray10320!![0]) >= i_19_ + -i_28_) && i_28_ + i_19_ >= (Class132.aPlayer_1907!!.anIntArray10320!![0]) && ((Class132.aPlayer_1907!!.anIntArray10317!![0]) >= -i_28_ + i_20_) && i_20_ + i_28_ >= (Class132.aPlayer_1907!!.anIntArray10317!![0])) Class239_Sub10.method1760(
                             i_21_,
@@ -93,7 +93,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_38_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     val i_39_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_40_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                    if (i_32_ >= 0 && i_33_ >= 0 && i_32_ < Class367_Sub4.anInt7319 && i_33_ < Class348_Sub40_Sub3.anInt9109) {
+                    if (i_32_ >= 0 && i_33_ >= 0 && i_32_ < Class367Sub4Statics.anInt7319 && i_33_ < Class348_Sub40_Sub3.anInt9109) {
                         val i_41_ = i_36_ + 1
                         if ((Class132.aPlayer_1907!!.anIntArray10320!![0]) >= i_32_ - i_41_ && (Class132.aPlayer_1907!!.anIntArray10320!![0]) <= i_41_ + i_32_ && ((Class132.aPlayer_1907!!.anIntArray10317!![0]) >= -i_41_ + i_33_) && (i_33_ - -i_41_ >= (Class132.aPlayer_1907!!.anIntArray10317!![0]))) Class37.method358(i_37_, (i_36_ + (i_33_ shl 8) + ((Class348_Sub40_Sub12.anInt9200 shl 24) + (i_32_ shl 16))), i_38_, i_39_, i_40_, i_34_, -29494)
                     }
@@ -130,7 +130,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     var i_65_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                     var i_66_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (i_65_ == 255) i_65_ = -1
-                    if (i_51_ >= 0 && i_52_ >= 0 && (i_51_ < 2 * Class367_Sub4.anInt7319) && (i_52_ < Class367_Sub4.anInt7319 * 2) && i_56_ >= 0 && i_57_ >= 0 && (i_56_ < Class348_Sub40_Sub3.anInt9109 * 2) && 2 * Class348_Sub40_Sub3.anInt9109 > i_57_ && i_60_ != 65535) {
+                    if (i_51_ >= 0 && i_52_ >= 0 && (i_51_ < 2 * Class367Sub4Statics.anInt7319) && (i_52_ < Class367Sub4Statics.anInt7319 * 2) && i_56_ >= 0 && i_57_ >= 0 && (i_56_ < Class348_Sub40_Sub3.anInt9109 * 2) && 2 * Class348_Sub40_Sub3.anInt9109 > i_57_ && i_60_ != 65535) {
                         i_57_ *= 256
                         i_56_ = 256 * i_56_
                         i_62_ = i_62_ shl 2
@@ -165,7 +165,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_71_ = Class73.anInt4786 + (i_70_ and 0x7)
                     val i_72_ = Class90.regionTileY + i_71_
                     val i_73_ = Class278.anInt3581 + (i_70_ shr 4 and 0x7)
-                    val i_74_ = za_Sub2.regionTileX + i_73_
+                    val i_74_ = za_Sub2Statics.regionTileX + i_73_
                     val class348_sub37 = ((Class130.aClass356_1895!!.method3480((i_72_ shl 14 or (Class348_Sub40_Sub12.anInt9200 shl 28) or i_74_).toLong(), -6008)) as Class348_Sub37?)
                     if (class348_sub37 != null) {
                         var class348_sub34 = (class348_sub37.aClass262_6998.method1995(4) as Class348_Sub34?)
@@ -177,7 +177,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                             class348_sub34 = (class348_sub37.aClass262_6998.method1990(49.toByte()) as Class348_Sub34?)
                         }
                         if (class348_sub37.aClass262_6998.method2002(18.toByte())) class348_sub37.method2715(62.toByte())
-                        if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.anInt7319 > i_73_ && Class348_Sub40_Sub3.anInt9109 > i_71_) Class203.method1479(i_71_, (-125).toByte(), i_73_, Class348_Sub40_Sub12.anInt9200)
+                        if (i_73_ >= 0 && i_71_ >= 0 && Class367Sub4Statics.anInt7319 > i_73_ && Class348_Sub40_Sub3.anInt9109 > i_71_) Class203.method1479(i_71_, (-125).toByte(), i_73_, Class348_Sub40_Sub12.anInt9200)
                     }
                 } else if (Class59_Sub1_Sub2.aClass74_8662 == class74) {
                     val i_75_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortLittle(false)
@@ -186,8 +186,8 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_78_ = Class73.anInt4786 - -(0x7 and i_77_)
                     val i_79_ = i_78_ + Class90.regionTileY
                     val i_80_ = Class278.anInt3581 - -((i_77_ and 0x79) shr 4)
-                    val i_81_ = za_Sub2.regionTileX - -i_80_
-                    val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367_Sub4.anInt7319 > i_80_ && Class348_Sub40_Sub3.anInt9109 > i_78_)
+                    val i_81_ = za_Sub2Statics.regionTileX - -i_80_
+                    val bool = (i_80_ >= 0 && i_78_ >= 0 && Class367Sub4Statics.anInt7319 > i_80_ && Class348_Sub40_Sub3.anInt9109 > i_78_)
                     if (bool || Class282.method2112(124, Class312.anInt3931)) {
                         Class352.method3459(Class348_Sub34(i_76_, i_75_), Class348_Sub40_Sub12.anInt9200, i_79_, i_81_, -2)
                         if (bool) Class203.method1479(i_78_, (-124).toByte(), i_80_, Class348_Sub40_Sub12.anInt9200)
@@ -200,7 +200,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                     val i_86_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_87_ = Class278.anInt3581 + (i_86_ shr 4 and 0x7)
                     val i_88_ = Class73.anInt4786 - -(0x7 and i_86_)
-                    if (Class282.method2112(i.toInt() xor 0x73, Class312.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367_Sub4.anInt7319 > i_87_ && (i_88_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
+                    if (Class282.method2112(i.toInt() xor 0x73, Class312.anInt3931) || (i_87_ >= 0 && i_88_ >= 0 && Class367Sub4Statics.anInt7319 > i_87_ && (i_88_ < Class348_Sub40_Sub3.anInt9109))) Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200, 0, i_88_, -1, i_83_, i_85_, i_84_, -1, 125.toByte(), i_87_)
                 } else {
                     if (i.toInt() != 8) aClass114_82 = null
                     if (Class39.aClass74_515 == class74) {
@@ -208,7 +208,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                         val i_90_ = Class73.anInt4786 + (0x7 and i_89_)
                         val i_91_ = i_90_ + Class90.regionTileY
                         val i_92_ = (Class278.anInt3581 - -((i_89_ and 0x7a) shr 4))
-                        val i_93_ = za_Sub2.regionTileX + i_92_
+                        val i_93_ = za_Sub2Statics.regionTileX + i_92_
                         val i_94_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         val i_95_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(i + 842397936)
                         val i_96_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
@@ -225,7 +225,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                                     }
                                     class348_sub34 = (class348_sub37.aClass262_6998.method1990(34.toByte()) as Class348_Sub34?)
                                 }
-                                if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367_Sub4.anInt7319) && (Class348_Sub40_Sub3.anInt9109 > i_90_)) Class203.method1479(i_90_, (-125).toByte(), i_92_, (Class348_Sub40_Sub12.anInt9200))
+                                if (i_92_ >= 0 && i_90_ >= 0 && (i_92_ < Class367Sub4Statics.anInt7319) && (Class348_Sub40_Sub3.anInt9109 > i_90_)) Class203.method1479(i_90_, (-125).toByte(), i_92_, (Class348_Sub40_Sub12.anInt9200))
                             }
                         }
                     } else if (class74 == Class327.aClass74_4098) {
@@ -234,11 +234,11 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                         val i_99_ = (0x7 and i_98_) + Class73.anInt4786
                         val i_100_ = Class90.regionTileY + i_99_
                         val i_101_ = Class278.anInt3581 - -((i_98_ and 0x7b) shr 4)
-                        val i_102_ = za_Sub2.regionTileX + i_101_
+                        val i_102_ = za_Sub2Statics.regionTileX + i_101_
                         val i_103_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(-25)
                         val i_104_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
                         if (i_104_ != Class348_Sub42_Sub11.anInt9591) {
-                            val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367_Sub4.anInt7319) && (i_99_ < Class348_Sub40_Sub3.anInt9109))
+                            val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < Class367Sub4Statics.anInt7319) && (i_99_ < Class348_Sub40_Sub3.anInt9109))
                             if (bool || Class282.method2112(122, Class312.anInt3931)) {
                                 Class352.method3459(Class348_Sub34(i_103_, i_97_), Class348_Sub40_Sub12.anInt9200, i_100_, i_102_, i + -10)
                                 if (bool) Class203.method1479(i_99_, (-120).toByte(), i_101_, (Class348_Sub40_Sub12.anInt9200))
@@ -260,7 +260,7 @@ class InputStream_Sub2 : InputStream(), CommonInputStream {
                         var i_116_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                         if (i_116_ == 255) i_116_ = -1
                         var i_117_ = Class299Statics.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
-                        if (i_106_ >= 0 && i_107_ >= 0 && (i_106_ < Class367_Sub4.anInt7319) && i_107_ < Class348_Sub40_Sub3.anInt9109 && i_108_ >= 0 && i_109_ >= 0 && Class367_Sub4.anInt7319 > i_108_ && (Class348_Sub40_Sub3.anInt9109 > i_109_) && i_111_ != 65535) {
+                        if (i_106_ >= 0 && i_107_ >= 0 && (i_106_ < Class367Sub4Statics.anInt7319) && i_107_ < Class348_Sub40_Sub3.anInt9109 && i_108_ >= 0 && i_109_ >= 0 && Class367Sub4Statics.anInt7319 > i_108_ && (Class348_Sub40_Sub3.anInt9109 > i_109_) && i_111_ != 65535) {
                             i_117_ = i_117_ shl 2
                             i_109_ = 256 + i_109_ * 512
                             i_113_ = i_113_ shl 2

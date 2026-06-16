@@ -154,7 +154,6 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         var anInt6287: Int = 0
         var anInt6288: Int = 0
         var aBoolean6289: Boolean = false
-        var anIntArray6290: IntArray? = IntArray(2048)
         var anInt6291: Int = 0
 
         fun method2165(bool: Boolean, string: String?) {
@@ -197,7 +196,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         fun method2166(i: Int) {
             if (i == 6336) {
                 aClass45_6277 = null
-                anIntArray6290 = null
+                Class286Sub7Statics.anIntArray6290 = null
             }
         }
 
