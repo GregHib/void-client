@@ -13,7 +13,7 @@ open class Class75 {
         @JvmField
         var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
         private var aClass268_1239: Class268? = null
-        private var aClass183_1240: Class183? = null
+        private var aParticleDefLoader_1240: ParticleDefLoader? = null
         private var aClass356_1241: Class356? = Class356(16)
         @JvmField
         var aTextureDefinitionLoader_1242: TextureDefinitionLoader? = null
@@ -134,7 +134,7 @@ open class Class75 {
         @JvmStatic
         fun method746() {
             aClass268_1239 = null
-            aClass183_1240 = null
+            aParticleDefLoader_1240 = null
             aClass263_1245 = null
             aConfigDefinitionLoader_1238 = null
             aTextureDefinitionLoader_1242 = null
@@ -268,10 +268,10 @@ open class Class75 {
         }
 
         @JvmStatic
-        fun method752(class45: Class45?, class268: Class268?, class183: Class183?, class263: Class263?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
+        fun method752(class45: Class45?, class268: Class268?, particleDefLoader: ParticleDefLoader?, class263: Class263?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, interface17: Interface17?) {
             aClass45_1237 = class45
             aClass268_1239 = class268
-            aClass183_1240 = class183
+            aParticleDefLoader_1240 = particleDefLoader
             aClass263_1245 = class263
             aConfigDefinitionLoader_1238 = configDefinitionLoader
             aTextureDefinitionLoader_1242 = textureDefinitionLoader
@@ -789,7 +789,7 @@ open class Class75 {
                     if (i_202_ < anInt1259) {
                         val i_205_ = `is`[i_202_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_205_ > 0) {
-                            val class22: Class22? = aClass183_1240!!.method1380(true, i_205_ - 1)
+                            val class22: Class22? = aParticleDefLoader_1240!!.method1380(true, i_205_ - 1)
                             is_196_[i_204_] += class22!!.anInt341
                             is_197_[i_204_] += class22.anInt332
                             is_198_[i_204_] += class22.anInt335
@@ -800,7 +800,7 @@ open class Class75 {
                     if (i_203_ >= 0) {
                         val i_206_ = `is`[i_203_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_206_ > 0) {
-                            val class22: Class22? = aClass183_1240!!.method1380(true, i_206_ - 1)
+                            val class22: Class22? = aParticleDefLoader_1240!!.method1380(true, i_206_ - 1)
                             is_196_[i_204_] -= class22!!.anInt341
                             is_197_[i_204_] -= class22.anInt332
                             is_198_[i_204_] -= class22.anInt335

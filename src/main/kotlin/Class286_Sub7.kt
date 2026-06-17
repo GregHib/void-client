@@ -219,8 +219,8 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: OpenGlRenderer, class83: C
         fun method2168(i: Int, i_7_: Int, i_8_: Int) {
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_7_]!![i_8_]
             if (class357 != null) {
-                Class183.method1376(class357.aClass318_Sub1_Sub5_4395)
-                Class183.method1376(class357.aClass318_Sub1_Sub5_4407)
+                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub5_4395)
+                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub5_4407)
                 if (class357.aClass318_Sub1_Sub5_4395 != null) class357.aClass318_Sub1_Sub5_4395 = null
                 if (class357.aClass318_Sub1_Sub5_4407 != null) class357.aClass318_Sub1_Sub5_4407 = null
             }

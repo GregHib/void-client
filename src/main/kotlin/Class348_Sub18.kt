@@ -70,7 +70,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
         fun method2938(i: Byte) {
             anInt6804++
             Class229.aClass268_2979!!.method2037(10205)
-            Class362.aClass183_4460!!.method1381(true)
+            Class362.aParticleDefLoader_4460!!.method1381(true)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342!!.method1206((-37).toByte())
             Class348_Sub40_Sub12.aClass263_9195!!.method2012(-23828)
             Class189.aClass278_2529!!.method2078(-6080)

@@ -1,4 +1,4 @@
-import Class183.Companion.method1376
+import ParticleDefLoader.Companion.method1376
 import Class275.method2064
 import Class89.Companion.method850
 

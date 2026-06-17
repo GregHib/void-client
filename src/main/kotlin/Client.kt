@@ -85,7 +85,7 @@ import Class18.Companion.method277
 import SpotAnimDefinition.Companion.method1369
 import LoadProgressCounters.Companion.method1373
 import LoadProgressCounters.Companion.method1375
-import Class183.Companion.method1378
+import ParticleDefLoader.Companion.method1378
 import Class184.Companion.method1386
 import Class185.Companion.method1395
 import Class186.Companion.method1396
@@ -2237,13 +2237,13 @@ class Client : GameAppletFrame() {
                                             }
                                         } else if (bool_53_ && (Class348_Sub42.anInt7059 > 0)) {
                                             if (Class348_Sub42.anInt7059 == 1 && ((Class318_Sub4.anInt6411 != Class258_Sub4.aClass373_8552!!.method3597(true)) || (Class219.anInt2872 != (Class258_Sub4.aClass373_8552!!.method3594(117.toByte()))))) {
-                                                Class183.anInt2464 = Class348_Sub36.anInt6992
+                                                ParticleDefLoader.anInt2464 = Class348_Sub36.anInt6992
                                                 OpenGlTerrainTile.anInt8237 = Class245.anInt3170
                                                 Class348_Sub42.anInt7059 = 2
                                             }
                                             if (Class348_Sub42.anInt7059 == 2) {
                                                 Class348_Sub17.aBoolean6788 = true
-                                                Class64_Sub3.method689((-59).toByte(), (Class183.anInt2464 + (((Class318_Sub4.anInt6411) - (Class258_Sub4.aClass373_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
+                                                Class64_Sub3.method689((-59).toByte(), (ParticleDefLoader.anInt2464 + (((Class318_Sub4.anInt6411) - (Class258_Sub4.aClass373_8552!!.method3597(true))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()))
                                                 method2170((OpenGlTerrainTile.anInt8237 - (((Class219.anInt2872) - (Class258_Sub4.aClass373_8552!!.method3594(83.toByte()))).toDouble() * 2.0 / (Class75.aFloat1249).toDouble()).toInt()), 3.toByte())
                                             }
                                         } else {

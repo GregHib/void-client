@@ -1,4 +1,4 @@
-import Class183.Companion.method1376
+import ParticleDefLoader.Companion.method1376
 import Class185.Companion.method1394
 import Class348_Sub14.Companion.method2808
 import java.io.IOException

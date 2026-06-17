@@ -101,7 +101,7 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
             anInt5277++
             require(!(i_4_ < i && !Class192.method1436(i_4_ + -23, i))) { "" }
             require(!(i_5_ > 0 && !Class192.method1436(56, i_5_))) { "" }
-            val i_7_ = Class183.method1382(i_2_, -6409)
+            val i_7_ = ParticleDefLoader.method1382(i_2_, -6409)
             var i_8_ = 0
             var i_9_ = min(i_5_, i)
             var i_10_ = i shr 1

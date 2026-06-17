@@ -16,7 +16,7 @@ import Class87.Companion.method837
 /* Class237 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: Class268?, class183: Class183?) {
+open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: Class268?, particleDefLoader: ParticleDefLoader?) {
     var aByteArrayArrayArray3104: Array<Array<ByteArray?>?>? = null
     var aByteArrayArrayArray3108: Array<Array<ByteArray?>?>?
     var aBoolean3109: Boolean = false
@@ -24,7 +24,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
     var anInt3114: Int = 0
     var anInt3117: Int = 0
     private val aClass268_3119: Class268?
-    private val aClass183_3120: Class183?
+    private val aParticleDefLoader_3120: ParticleDefLoader?
     var anIntArrayArrayArray3122: Array<Array<IntArray?>?>
     private val aByteArrayArrayArray3123: Array<Array<ByteArray?>?>
     private val anIntArray3124: IntArray
@@ -292,7 +292,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                         var i_82_ = is_69_[i_72_]!![i_73_].toInt() and 0xff
                         if (i_78_ != 0 || i_79_ != 0) {
                             var class277 = (if (i_78_ == 0) null else aClass268_3119!!.method2034(i_78_ - 1, false))
-                            val class22 = (if (i_79_ == 0) null else aClass183_3120!!.method1380(true, -1 + i_79_))
+                            val class22 = (if (i_79_ == 0) null else aParticleDefLoader_3120!!.method1380(true, -1 + i_79_))
                             if (i_76_.toInt() == 0 && class277 == null) i_76_ = 12.toByte()
                             var class277_83_ = class277
                             if (class277 != null) {
@@ -565,10 +565,10 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     if (i_82_ == 0) i_82_ = i_79_
                                     if (i_81_ == 0) i_81_ = i_79_
                                     if (i_80_ == 0) i_80_ = i_79_
-                                    val class22_133_ = aClass183_3120!!.method1380(true, -1 + i_79_)
-                                    val class22_134_ = aClass183_3120.method1380(true, i_80_ - 1)
-                                    val class22_135_ = aClass183_3120.method1380(true, i_81_ + -1)
-                                    val class22_136_ = aClass183_3120.method1380(true, -1 + i_82_)
+                                    val class22_133_ = aParticleDefLoader_3120!!.method1380(true, -1 + i_79_)
+                                    val class22_134_ = aParticleDefLoader_3120.method1380(true, i_80_ - 1)
+                                    val class22_135_ = aParticleDefLoader_3120.method1380(true, i_81_ + -1)
+                                    val class22_136_ = aParticleDefLoader_3120.method1380(true, -1 + i_82_)
                                     var i_137_ = 0
                                     while ((i_98_ > i_137_)) {
                                         val bool_138_ = false
@@ -829,7 +829,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (this.anInt3117 > i_184_) {
                                 val i_185_ = ((aByteArrayArrayArray3113[i_180_]!![i_184_]!![i_183_]).toInt() and 0xff)
                                 if (i_185_ > 0) {
-                                    val class22 = aClass183_3120!!.method1380(true, -1 + i_185_)
+                                    val class22 = aParticleDefLoader_3120!!.method1380(true, -1 + i_185_)
                                     Class348_Sub24.anIntArray6878!![i_183_] += class22!!.anInt341
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] += class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] += class22.anInt335
@@ -841,7 +841,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             if (i_186_ >= 0) {
                                 val i_187_ = 0xff and (aByteArrayArrayArray3113[i_180_]!![i_186_]!![i_183_]).toInt()
                                 if (i_187_ > 0) {
-                                    val class22 = aClass183_3120!!.method1380(true, -1 + i_187_)
+                                    val class22 = aParticleDefLoader_3120!!.method1380(true, -1 + i_187_)
                                     Class348_Sub24.anIntArray6878!![i_183_] -= class22!!.anInt341
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] -= class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] -= class22.anInt335
@@ -1002,7 +1002,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                             val i_231_ = 0xff and (aByteArrayArrayArray3113[i]!![i_226_]!![i_227_]).toInt()
                             val class277 = (if (i_230_ != 0) aClass268_3119!!.method2034(-1 + i_230_, false) else null)
                             if (i_228_.toInt() == 0 && class277 == null) i_228_ = 12.toByte()
-                            val class22 = (if (i_231_ == 0) null else aClass183_3120!!.method1380(true, i_231_ - 1))
+                            val class22 = (if (i_231_ == 0) null else aParticleDefLoader_3120!!.method1380(true, i_231_ - 1))
                             var i_232_ = 0
                             var i_233_ = 0
                             if (i_228_.toInt() != 0) {
@@ -1299,7 +1299,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
         try {
             this.aBoolean3109 = bool
             aClass268_3119 = class268
-            aClass183_3120 = class183
+            aParticleDefLoader_3120 = particleDefLoader
             this.anInt3117 = i_315_
             this.anInt3130 = i
             this.anInt3114 = i_316_
@@ -1310,7 +1310,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
             aByteArrayArrayArray3126 = (Array<Array<ByteArray?>?>(this.anInt3130) { Array<ByteArray?>(this.anInt3117) { ByteArray(this.anInt3114) } })
             aByteArrayArrayArray3123 = (Array<Array<ByteArray?>?>(this.anInt3130) { Array<ByteArray?>(this.anInt3117) { ByteArray(this.anInt3114) } })
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.<init>(" + i + ',' + i_315_ + ',' + i_316_ + ',' + bool + ',' + (if (class268 != null) "{...}" else "null") + ',' + (if (class183 != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.<init>(" + i + ',' + i_315_ + ',' + i_316_ + ',' + bool + ',' + (if (class268 != null) "{...}" else "null") + ',' + (if (particleDefLoader != null) "{...}" else "null") + ')'))
         }
     }
 

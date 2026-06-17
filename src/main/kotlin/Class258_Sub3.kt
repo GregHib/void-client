@@ -181,7 +181,7 @@ open class Class258_Sub3 : Class258 {
         if (i_63_ == 0) i_63_ = i_62_
         anInt8539++
         if (bool) {
-            val i_68_ = Class183.method1382(i_65_, -6409)
+            val i_68_ = ParticleDefLoader.method1382(i_65_, -6409)
             val i_69_ = i_68_ * i_62_
             val i_70_ = i_63_ * i_68_
             val is_71_ = ByteArray(i_64_ * i_69_)

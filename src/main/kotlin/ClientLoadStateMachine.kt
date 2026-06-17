@@ -185,7 +185,7 @@ object ClientLoadStateMachine {
             Class239.aItemDefinitionLoader_3147 = ItemDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class348_Sub7.aClass33_6653 = Class33(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class247.aClass45_3183)
             Class229.aClass268_2979 = Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
-            Class362.aClass183_4460 = Class183(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
+            Class362.aParticleDefLoader_4460 = ParticleDefLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
             Class73.aClass219_4782 = Class219(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, Class21.aClass45_322)
             Class348_Sub40_Sub25.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541, RasterSprite.aClass45_5207)
             ScrollingWidgetComponentNode.aClass271_8378 = Class271(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541)
@@ -230,7 +230,7 @@ object ClientLoadStateMachine {
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, Class2.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
+        if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660) method752(Class348_Sub32.aClass45_6950, Class229.aClass268_2979, Class362.aParticleDefLoader_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aConfigDefinitionLoader_9031, Class2.aTextureDefinitionLoader_117, Class318_Sub1_Sub3_Sub3.aVarpStore_10209)
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (IntArray(Class239_Sub14.aClass259_5995!!.anInt3305 + 1000))

@@ -34,14 +34,14 @@ class Class193 internal constructor(private val aClass377_2585: Class377, i: Int
                     class279.anInt3613 = (i and 0x3ff.inv()) + 1024
                     if (class279.anInt3613 > 16384) class279.anInt3613 = 16384
                     class279.method2082(class279.anInt3613)
-                    if (Class253.anInt3248 > 0 && Class183.aClass250_2462 == null) {
-                        Class183.aClass250_2462 = Class250()
-                        Class183.aClass250_2462!!.aClass297_3228 = class297
-                        class297!!.method2236(Class183.aClass250_2462, -10240, Class253.anInt3248)
+                    if (Class253.anInt3248 > 0 && ParticleDefLoader.aClass250_2462 == null) {
+                        ParticleDefLoader.aClass250_2462 = Class250()
+                        ParticleDefLoader.aClass250_2462!!.aClass297_3228 = class297
+                        class297!!.method2236(ParticleDefLoader.aClass250_2462, -10240, Class253.anInt3248)
                     }
-                    if (Class183.aClass250_2462 != null) {
-                        require((Class183.aClass250_2462!!.aClass279Array3218[i_0_]) == null)
-                        Class183.aClass250_2462!!.aClass279Array3218[i_0_] = class279
+                    if (ParticleDefLoader.aClass250_2462 != null) {
+                        require((ParticleDefLoader.aClass250_2462!!.aClass279Array3218[i_0_]) == null)
+                        ParticleDefLoader.aClass250_2462!!.aClass279Array3218[i_0_] = class279
                     }
                     if (i_1_ != 7) method1440(107)
                     return class279
@@ -53,14 +53,14 @@ class Class193 internal constructor(private val aClass377_2585: Class377, i: Int
                         class279_sub2.method2095(component)
                         class279_sub2.anInt3613 = 16384
                         class279_sub2.method2082(class279_sub2.anInt3613)
-                        if (Class253.anInt3248 > 0 && Class183.aClass250_2462 == null) {
-                            Class183.aClass250_2462 = Class250()
-                            Class183.aClass250_2462!!.aClass297_3228 = class297
-                            class297!!.method2236(Class183.aClass250_2462, -10240, Class253.anInt3248)
+                        if (Class253.anInt3248 > 0 && ParticleDefLoader.aClass250_2462 == null) {
+                            ParticleDefLoader.aClass250_2462 = Class250()
+                            ParticleDefLoader.aClass250_2462!!.aClass297_3228 = class297
+                            class297!!.method2236(ParticleDefLoader.aClass250_2462, -10240, Class253.anInt3248)
                         }
-                        if (Class183.aClass250_2462 != null) {
-                            require((Class183.aClass250_2462!!.aClass279Array3218[i_0_]) == null)
-                            Class183.aClass250_2462!!.aClass279Array3218[i_0_] = class279_sub2
+                        if (ParticleDefLoader.aClass250_2462 != null) {
+                            require((ParticleDefLoader.aClass250_2462!!.aClass279Array3218[i_0_]) == null)
+                            ParticleDefLoader.aClass250_2462!!.aClass279Array3218[i_0_] = class279_sub2
                         }
                         return class279_sub2
                     } catch (throwable_2_: Throwable) {

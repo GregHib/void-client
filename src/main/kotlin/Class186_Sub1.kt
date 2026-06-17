@@ -143,7 +143,7 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
             anInt5806++
             require(!(i_45_ > 0 && !Class192.method1436(69, i_45_))) { "" }
             require(!(i > 0 && !Class192.method1436(100, i))) { "" }
-            val i_49_ = Class183.method1382(i_46_, -6409)
+            val i_49_ = ParticleDefLoader.method1382(i_46_, -6409)
             var i_50_ = 0
             var i_51_ = min(i_45_, i)
             if (bool != false) anInt5807 = -127

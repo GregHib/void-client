@@ -14,7 +14,7 @@ object Class362 {
     var anInt4458: Int = -1
     @JvmField
     var anInt4459: Int = 0
-    var aClass183_4460: Class183? = null
+    var aParticleDefLoader_4460: ParticleDefLoader? = null
 
     @JvmStatic
     fun method3511(bool: Boolean, class324: Class324?, fontDefinition: FontDefinition?, string: String?, i: Int, var_renderer: Renderer?) {
@@ -88,7 +88,7 @@ object Class362 {
 
     @JvmStatic
     fun method3512(i: Int) {
-        aClass183_4460 = null
+        aParticleDefLoader_4460 = null
         if (i != 4) anInt4458 = 96
         aClass324_4456 = null
     }

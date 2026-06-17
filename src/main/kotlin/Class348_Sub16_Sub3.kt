@@ -1061,7 +1061,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         fun method2879(i: Int, i_105_: Int, i_106_: Int) {
             val class357 = HintArrowOrMessage.aClass357ArrayArrayArray2029!![i]!![i_105_]!![i_106_]
             if (class357 != null) {
-                Class183.method1376(class357.aClass318_Sub1_Sub1_4402)
+                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub1_4402)
                 if (class357.aClass318_Sub1_Sub1_4402 != null) class357.aClass318_Sub1_Sub1_4402 = null
             }
         }

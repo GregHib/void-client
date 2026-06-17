@@ -4,7 +4,7 @@ import Class348_Sub42_Sub8.Companion.method3194
 /* Class183 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class183 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+class ParticleDefLoader internal constructor(class230: Class230?, i: Int, class45: Class45?) {
     private val aClass60_2458 = Class60(128)
     private val aClass45_2461: Class45?
     fun method1377(i: Int) {

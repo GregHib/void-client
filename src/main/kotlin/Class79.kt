@@ -382,7 +382,7 @@ class Class79 {
                             var i_55_ = class17_51_.anIntArray237[i_53_]
                             Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_] = class87.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
-                            Class183.anIntArray2466!![i_50_] = i_55_
+                            ParticleDefLoader.anIntArray2466!![i_50_] = i_55_
                             if ((Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
                                 bool_46_ = bool_46_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
                                 bool_45_ = bool_45_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
@@ -392,7 +392,7 @@ class Class79 {
                             Class348_Sub23_Sub4.anIntArray9050!![i_50_] = 0
                             Class67.anIntArray4648!![i_50_] = 0
                             Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_] = null
-                            Class183.anIntArray2466!![i_50_] = -1
+                            ParticleDefLoader.anIntArray2466!![i_50_] = -1
                         }
                     }
                 }
@@ -571,7 +571,7 @@ class Class79 {
                     null,
                     i_87_,
                     Class90.anIntArray1518!![i_86_],
-                    Class183.anIntArray2466!![i_86_],
+                    ParticleDefLoader.anIntArray2466!![i_86_],
                     (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_86_]),
