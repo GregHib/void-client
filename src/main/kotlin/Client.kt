@@ -284,8 +284,8 @@ import GlShaderProgramHandle.Companion.method2658
 import MapTileShape.Companion.method2662
 import MapRegionLoaderThread.Companion.method2664
 import MapRegionLoaderThread.Companion.method2666
-import Class34.Companion.method347
-import Class34.Companion.method351
+import SkeletalAnimFrameLoader.Companion.method347
+import SkeletalAnimFrameLoader.Companion.method351
 import Class340.Companion.method2671
 import Class340.Companion.method2672
 import Class341.Companion.method2676
@@ -1265,9 +1265,9 @@ class Client : GameAppletFrame() {
         anInt5170++
         method556(false)
         if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.method3635(89.toByte())
-        if (Class34.aFrame476 != null) {
-            method527(Class34.aFrame476, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, false)
-            Class34.aFrame476 = null
+        if (SkeletalAnimFrameLoader.aFrame476 != null) {
+            method527(SkeletalAnimFrameLoader.aFrame476, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, false)
+            SkeletalAnimFrameLoader.aFrame476 = null
         }
         if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
             Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1700(36.toByte())
@@ -1520,7 +1520,7 @@ class Client : GameAppletFrame() {
         if (Class367_Sub11.anInt7396 % 1500 == 0) method3088(9)
         if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) method1987(-124)
         method909(3553)
-        if (ScanlineRasterFiller.aBoolean2469 && (Class34.aLong482 < method599(-107) + -60000L)) method2405(41)
+        if (ScanlineRasterFiller.aBoolean2469 && (SkeletalAnimFrameLoader.aLong482 < method599(-107) + -60000L)) method2405(41)
         var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(8) as NamedTimedNode?)
         while (class318_sub9_sub1 != null) {
             if (class318_sub9_sub1.anInt8787.toLong() < -5L + method599(-80) / 1000L) {
@@ -1667,7 +1667,7 @@ class Client : GameAppletFrame() {
                 if ((Class348_Sub16_Sub2.aLong8866 != 0L) && method599(-98) > Class348_Sub16_Sub2.aLong8866) method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, Class348_Sub40_Sub25.anInt9335)
                 else if (!Class348_Sub8.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
             }
-            if (Class34.aFrame476 == null) {
+            if (SkeletalAnimFrameLoader.aFrame476 == null) {
                 val container: Container?
                 if (Class52.aFrame4904 == null) {
                     if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
@@ -1690,7 +1690,7 @@ class Client : GameAppletFrame() {
                     RuntimeException_Sub1.aBoolean4604 = false
                 }
             }
-            if (Class34.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
             if (Class49.aBoolean4726) {
                 bool_120_ = true

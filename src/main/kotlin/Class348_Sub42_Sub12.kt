@@ -62,7 +62,7 @@ class Class348_Sub42_Sub12 internal constructor(string: String?, string_15_: Str
         @JvmStatic
         fun method3229(i: Int): Int {
             anInt9596++
-            if (Class34.aFrame476 != null) return 3
+            if (SkeletalAnimFrameLoader.aFrame476 != null) return 3
             if (i >= -59) anInt9604 = 79
             if (!Class50_Sub1.aBoolean5219) return 1
             return 2

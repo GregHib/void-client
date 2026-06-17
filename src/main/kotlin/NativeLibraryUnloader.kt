@@ -138,7 +138,7 @@ object NativeLibraryUnloader {
                 ClientLoadStateMachine.anInt2173 = 100
             }
         } else {
-            Class34.anInt481 = -1
+            SkeletalAnimFrameLoader.anInt481 = -1
             Class348_Sub40_Sub30.anInt9399 = -1
         }
         if (ParticleEmitterFactory.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {

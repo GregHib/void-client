@@ -119,12 +119,12 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         }
         anInt7++
         val container: Container
-        if (Class34.aFrame476 == null) {
+        if (SkeletalAnimFrameLoader.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169!!
                 else container = Class93.anApplet1530!!.getPulseComponent() as Container
             } else container = Class52.aFrame4904 as Container
-        } else container = Class34.aFrame476 as Container
+        } else container = SkeletalAnimFrameLoader.aFrame476 as Container
         container.setLayout(null)
         ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
         container.add(ParticleSystemRenderer.aCanvas3869)
@@ -174,7 +174,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class49.aBoolean4726 = true
             ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
-            if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
+            if (Class52.aFrame4904 != null && SkeletalAnimFrameLoader.aFrame476 == null) {
                 val insets = Class52.aFrame4904!!.getInsets()
                 ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + TimingCounters.anInt4167))
             } else ParticleSystemRenderer.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, TimingCounters.anInt4167)

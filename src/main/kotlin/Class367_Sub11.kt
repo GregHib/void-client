@@ -190,7 +190,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
             anInt7405++
             if (bool == false) {
                 synchronized(Class79.aClient1367!!) {
-                    if (Class34.aFrame476 == null) {
+                    if (SkeletalAnimFrameLoader.aFrame476 == null) {
                         val container: Container
                         if (Class52.aFrame4904 != null) container = Class52.aFrame4904!!
                         else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169!!

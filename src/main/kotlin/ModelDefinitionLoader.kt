@@ -5,25 +5,25 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
     private var aClass45_2048: Class45? = null
     private val aClass60_2050 = Class60(64)
     var aClass45_2054: Class45? = null
-    fun method1203(i: Byte, i_3_: Int): Class34 {
+    fun method1203(i: Byte, i_3_: Int): SkeletalAnimFrameLoader {
         anInt2056++
         if (i.toInt() != 33) aClass45_2048 = null
-        var class34: Class34?
+        var skeletalAnimFrameLoader: SkeletalAnimFrameLoader?
         synchronized(aClass60_2050) {
-            class34 = aClass60_2050.method583(i_3_.toLong(), -58) as Class34?
+            skeletalAnimFrameLoader = aClass60_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
         }
-        if (class34 != null) return class34
+        if (skeletalAnimFrameLoader != null) return skeletalAnimFrameLoader
         val `is`: ByteArray?
         synchronized(aClass45_2048!!) {
             `is` = aClass45_2048!!.method410(i + -1893, 3, i_3_)
         }
-        class34 = Class34()
-        class34.aModelDefinitionLoader_475 = this
-        if (`is` != null) class34.method346(i.toInt().inv(), Class348_Sub49(`is`))
+        skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
+        skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this
+        if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), Class348_Sub49(`is`))
         synchronized(aClass60_2050) {
-            aClass60_2050.method582(class34, i_3_.toLong(), (-109).toByte())
+            aClass60_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
         }
-        return class34
+        return skeletalAnimFrameLoader
     }
 
     fun method1204(i: Int) {

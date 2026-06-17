@@ -148,7 +148,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class353.aClass60_4346!!.method590(0)
                 MaterialTypeMarker.aClass60_6517!!.method590(0)
                 Class348_Sub1_Sub1.aClass60_8807!!.method590(0)
-                Class34.aClass60_463!!.method590(0)
+                SkeletalAnimFrameLoader.aClass60_463!!.method590(0)
             }
         }
 

@@ -19,27 +19,27 @@ object GameDisplayManager {
     var anInt2839: Int = 0
 
     fun method1580(i: Byte, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
-        if (Class34.aFrame476 != null && (i_2_ != 3 || i_0_ != Class346.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
-            method527(Class34.aFrame476, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, false)
-            Class34.aFrame476 = null
+        if (SkeletalAnimFrameLoader.aFrame476 != null && (i_2_ != 3 || i_0_ != Class346.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
+            method527(SkeletalAnimFrameLoader.aFrame476, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, false)
+            SkeletalAnimFrameLoader.aFrame476 = null
         }
         anInt2839++
         val i_4_ = -33 / ((-74 - i) / 51)
-        if (i_2_ == 3 && Class34.aFrame476 == null) {
-            Class34.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
-            if (Class34.aFrame476 != null) {
+        if (i_2_ == 3 && SkeletalAnimFrameLoader.aFrame476 == null) {
+            SkeletalAnimFrameLoader.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
+            if (SkeletalAnimFrameLoader.aFrame476 != null) {
                 Class346.anInt4276 = i_0_
                 FlickeringEffectsOptionState.anInt5911 = i_3_
                 method243(37)
             }
         }
-        if (i_2_ == 3 && Class34.aFrame476 == null) GameDisplayManager.method1580((-126).toByte(), true, -1, i_1_, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
+        if (i_2_ == 3 && SkeletalAnimFrameLoader.aFrame476 == null) GameDisplayManager.method1580((-126).toByte(), true, -1, i_1_, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
         else {
             val container: Container?
-            if (Class34.aFrame476 != null) {
+            if (SkeletalAnimFrameLoader.aFrame476 != null) {
                 Class348_Sub22.anInt6857 = i_3_
                 SocketFactory.anInt3473 = i_0_
-                container = Class34.aFrame476
+                container = SkeletalAnimFrameLoader.aFrame476
             } else if (Class52.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anGameApplet_Frame_9169
                 else container = Class93.anApplet1530 as? Container

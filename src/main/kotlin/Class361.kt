@@ -812,7 +812,7 @@ class Class361 {
                                     val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259))
                                     val i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_)
                                     var_renderer.method3675(4, (-125).toByte(), i_50_ - 2, -2 + i_51_, 4, (i_49_ shl 24 or 0xffff00))
-                                } else if (Class34.anInt481 != -1 && (class42!!.anInt596 == Class34.anInt481)) {
+                                } else if (SkeletalAnimFrameLoader.anInt481 != -1 && (class42!!.anInt596 == SkeletalAnimFrameLoader.anInt481)) {
                                     val i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / Class75.anInt1259))
                                     val i_53_ = i_41_ - -(i_43_ * (Class75.anInt1267 + -(class348_sub21.anInt6851)) / Class75.anInt1267)
                                     var_renderer.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))

@@ -14,7 +14,7 @@ import WaterMaterialPass.Companion.method2148
 import SkyboxGradient.method2334
 import SceneObjectEntity.Companion.method2405
 import Font.Companion.method2570
-import Class34.Companion.method349
+import SkeletalAnimFrameLoader.Companion.method349
 import Class347.Companion.method2708
 import Class348_Sub40_Sub30.Companion.method3127
 import Class348_Sub40_Sub38.Companion.method3150
@@ -417,7 +417,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     GroundDecorSceneEntity.anIntArray9981!![i_31_] = GroundDecorSceneEntity.anIntArray9981!![i_31_] + 1
                                     i_31_++
                                 }
-                                if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > Class34.aLong482)) method2405(i + -11313)
+                                if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > SkeletalAnimFrameLoader.aLong482)) method2405(i + -11313)
                                 var class318_sub9_sub1 = (Class348_Sub42_Sub14.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? NamedTimedNode?)
                                 while (class318_sub9_sub1 != null) {
                                     if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {

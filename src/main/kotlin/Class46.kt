@@ -972,7 +972,7 @@ class Class46 {
             Class353.aClass60_4346!!.method587(-108)
             MaterialTypeMarker.aClass60_6517!!.method587(-109)
             Class348_Sub1_Sub1.aClass60_8807!!.method587(-113)
-            Class34.aClass60_463!!.method587(-83)
+            SkeletalAnimFrameLoader.aClass60_463!!.method587(-83)
             Class66.aClass60_1174!!.method587(-91)
             val i_17_ = 54 / ((26 - i) / 53)
         }

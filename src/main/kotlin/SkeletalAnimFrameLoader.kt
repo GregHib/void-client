@@ -1,6 +1,9 @@
 import java.awt.Frame
 
-class Class34 {
+/*
+ * Class34
+ */
+class SkeletalAnimFrameLoader {
     private val anIntArray464 = intArrayOf(-1, -1, -1, -1, -1)
     private var aShortArray465: ShortArray? = null
     private var anIntArray472: IntArray? = null

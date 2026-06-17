@@ -333,7 +333,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class70.method727((-63).toByte(), i_29_, i, i_28_)
                 val class213 = Exception_Sub1.aModelHeaderCache_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
-                Class34.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
+                SkeletalAnimFrameLoader.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
                 Class348_Sub3.aIntRange_6584 = null
                 return true
             }
@@ -1304,7 +1304,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class59_Sub2_Sub2.aIntRange_8683 == Class348_Sub3.aIntRange_6584) {
-                if (Class34.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(Class348_Sub40_Sub25.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(Class348_Sub40_Sub25.anInt9341, `is`, 0, -32769)
                 val string = method3546(`is`, 0, Class348_Sub40_Sub25.anInt9341, 0)

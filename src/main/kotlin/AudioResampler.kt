@@ -155,12 +155,12 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
             while (`is`.size > i_24_) {
                 val class321 = Class348_Sub23_Sub2.aLocTypeDefLoader_9036!!.method1408(-12637, `is`[i_24_])
                 if (class321.anInt4000 != -1) {
-                    var abstractModelRenderer = (Class34.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
+                    var abstractModelRenderer = (SkeletalAnimFrameLoader.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
                         val spriteImage = SpriteImage.method1521(CameraRotationStub.aClass45_322!!, class321.anInt4000, 0)
                         if (spriteImage != null) {
                             abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(spriteImage, true)
-                            Class34.aClass60_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
+                            SkeletalAnimFrameLoader.aClass60_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
                         }
                     }
                     if (abstractModelRenderer != null) {

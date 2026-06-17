@@ -36,7 +36,7 @@ object ScreenBorderFiller {
     @JvmStatic
     fun method1170(i: Byte) {
         anInt1956++
-        if (Class34.aFrame476 == null) {
+        if (SkeletalAnimFrameLoader.aFrame476 == null) {
             val i_1_ = Class348_Sub48.anInt7129
             val i_2_ = TimingCounters.anInt4167
             if (i > -25) ScreenBorderFiller.method1172((-22).toByte(), -1)

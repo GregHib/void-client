@@ -186,7 +186,7 @@ class ModelLightingConfig {
                 if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true
                 Class75.method745(var_renderer!!, class348_sub21!!, class42)
                 if (abstractModelRenderer != null) {
-                    if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)))) {
+                    if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (class42.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
                         val i_25_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_25_ = 2 * ClientLoadStateMachine.anInt2173
                         else i_25_ = -(ClientLoadStateMachine.anInt2173 * 2) + 200

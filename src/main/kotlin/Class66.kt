@@ -887,11 +887,11 @@ object Class66 {
                 val i_97_ = anIntArray1149!![anInt1173]
                 val i_98_ = anIntArray1149!![anInt1173 + 1]
                 Class85.method830(3, i_97_, 102.toByte(), false, i_98_)
-                anIntArray1149!![anInt1173++] = if (Class34.aFrame476 != null) 1 else 0
+                anIntArray1149!![anInt1173++] = if (SkeletalAnimFrameLoader.aFrame476 != null) 1 else 0
                 return
             }
             if (i == 5301) {
-                if (Class34.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 return
             }
             if (i == 5302) {
@@ -999,7 +999,7 @@ object Class66 {
                 return
             }
             if (i == 5411) {
-                if (Class34.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (Class52.aFrame4904 == null) {
                     val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
                     GrowableStringList.method1360(string, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
@@ -1024,7 +1024,7 @@ object Class66 {
                 return
             }
             if (i == 5421) {
-                if (Class34.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (SkeletalAnimFrameLoader.aFrame476 != null) Class85.method830(IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string
@@ -1525,7 +1525,7 @@ object Class66 {
                         } else if (i_149_ == 0) {
                             SoftwareSpriteRaster.method960(1)
                             Class74.Companion.aBoolean1236 = false
-                        } else Class34.method345(i_149_, (-49).toByte())
+                        } else SkeletalAnimFrameLoader.method345(i_149_, (-49).toByte())
                     }
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7260), i_149_)
                     method243(37)
@@ -1644,7 +1644,7 @@ object Class66 {
                         } else if (i_158_ == 0) {
                             SoftwareSpriteRaster.method960(1)
                             Class74.Companion.aBoolean1236 = false
-                        } else Class34.method345(i_158_, (-52).toByte())
+                        } else SkeletalAnimFrameLoader.method345(i_158_, (-52).toByte())
                     }
                     IntHashSet.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSet.aClass348_Sub51_3959!!.aClass239_Sub26_7245), i_158_)
                     method243(37)

@@ -249,7 +249,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ServerConnectionInfo.anInt2149 = 0
             SceneObjectEntity.anInt8734 = 0
             LoadingBarRenderer.anInt5027 = 0
-            Class34.anInt471 = 0
+            SkeletalAnimFrameLoader.anInt471 = 0
             Class46.anInt766 = 0
             ConfigIdPair.anInt402 = 0
             Class348_Sub43.anInt7073 = 0
@@ -472,7 +472,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             BufferedMessageQueue.anInt3582 = 0
             Class55_Sub1.anInt5268 = 0
             DisplayModeOptionState.anInt6105 = 0
-            Class34.anInt470 = 0
+            SkeletalAnimFrameLoader.anInt470 = 0
             Class346.anInt4277 = 0
             GameAppletFrame.anInt39 = 0
             SpriteSheetCache.anInt2567 = 0
@@ -1091,7 +1091,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub32.anInt9420 = 0
             Class354.anInt4358 = 0
             OpenGlTerrainTile.anInt8259 = 0
-            Class34.anInt466 = 0
+            SkeletalAnimFrameLoader.anInt466 = 0
             Class348_Sub42_Sub14.anInt9624 = 0
             FileIoUtil.anInt4090 = 0
             ModelLightingConfig.anInt2553 = 0
@@ -1385,7 +1385,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlShaderProgramHandle.anInt4175 = 0
             SpotAnimVector.anInt2293 = 0
             GroundDecorOptionState.anInt5979 = 0
-            Class34.anInt479 = 0
+            SkeletalAnimFrameLoader.anInt479 = 0
             Class348_Sub45_Sub2.anInt9731 = 0
             Class348_Sub16_Sub3.anInt8931 = 0
             ResourceLoaderThread.anInt3909 = 0
@@ -1546,7 +1546,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class361.anInt4431 = 0
             SoftwareSpriteRaster.anInt1610 = 0
             NativeRenderer.anInt8075 = 0
-            Class34.anInt473 = 0
+            SkeletalAnimFrameLoader.anInt473 = 0
             Class377.anInt9857 = 0
             TrackedGroundDecor.anInt10415 = 0
             Class348_Sub49_Sub2.anInt9769 = 0
@@ -2062,7 +2062,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ParticleEmitterDefExt.anInt8574 = 0
             SoundEnvelope.anInt2746 = 0
             Class348_Sub40_Sub14.anInt9206 = 0
-            Class34.anInt469 = 0
+            SkeletalAnimFrameLoader.anInt469 = 0
             Class367_Sub1.anInt7278 = 0
             BooleanGraphicsOptionState.anInt5849 = 0
             BooleanGraphicsOptionState.anInt5841 = 0
@@ -2414,7 +2414,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7685 = 0
             Class348_Sub16_Sub2.anInt8875 = 0
             MinimapPositionState.anInt3841 = 0
-            Class34.anInt467 = 0
+            SkeletalAnimFrameLoader.anInt467 = 0
             Class348_Sub49.anInt7202 = 0
             OpenGlRenderer.anInt7547 = 0
             SettingsCrcWriter.anInt2121 = 0
@@ -2598,7 +2598,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             anInt5795 = 0
             Class64_Sub2.anInt5446 = 0
             CompositeNpcModelBuilder.anInt2097 = 0
-            Class34.anInt462 = 0
+            SkeletalAnimFrameLoader.anInt462 = 0
             TrackedGroundDecor.anInt10402 = 0
             MapRegionLoaderThread.anInt4209 = 0
             Class348_Sub49.anInt7164 = 0
@@ -2638,7 +2638,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             SequencedGroundDecor.anInt10061 = 0
             GlSpriteRenderer.anInt8437 = 0
             SimpleToggleOptionState.anInt5892 = 0
-            Class34.anInt478 = 0
+            SkeletalAnimFrameLoader.anInt478 = 0
             TerrainTile.anInt4586 = 0
             ArbFogMaterialPass.anInt6186 = 0
             Class361.anInt4451 = 0
@@ -3931,7 +3931,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class346_Sub1.anInt6540 = 0
             MapElementDefinitionCache.anInt3978 = 0
             Class369_Sub3_Sub1.anInt10175 = 0
-            Class34.anInt468 = 0
+            SkeletalAnimFrameLoader.anInt468 = 0
             Class348_Sub20.anInt6834 = 0
             NativeRenderer.anInt8048 = 0
             MapSceneDefLoader.anInt2484 = 0

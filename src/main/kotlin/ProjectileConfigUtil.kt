@@ -78,7 +78,7 @@ object ProjectileConfigUtil {
     @JvmStatic
     fun method314(i: Byte, i_4_: Int) {
         if (i >= -31) anInt394 = -128
-        Class34.anInt481 = i_4_
+        SkeletalAnimFrameLoader.anInt481 = i_4_
         Class367_Sub9.anInt7379 = 3
         anInt390++
         ClientLoadStateMachine.anInt2173 = 100
