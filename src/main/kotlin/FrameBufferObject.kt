@@ -211,13 +211,13 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                 if (class10!!.aClass348_Sub16_Sub5_176 == null) {
                     class10.anInt188--
                     if (class10.anInt188 >= (if (!class10.method220((-66).toByte())) -10 else -1500)) {
-                        if (class10.aByte180.toInt() == 1 && class10.aClass317_183 == null) {
-                            class10.aClass317_183 = Class317.method2372(ModelFacePriorityNode.aClass45_1878!!, class10.anInt185, 0)
-                            if (class10.aClass317_183 == null) {
+                        if (class10.aByte180.toInt() == 1 && class10.aAudioClipDefinition_183 == null) {
+                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ModelFacePriorityNode.aClass45_1878!!, class10.anInt185, 0)
+                            if (class10.aAudioClipDefinition_183 == null) {
                                 i_4_++
                                 continue
                             }
-                            class10.anInt188 += class10.aClass317_183!!.method2370()
+                            class10.anInt188 += class10.aAudioClipDefinition_183!!.method2370()
                         } else if (class10.method220((-39).toByte()) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
                             if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((LightingOptionState.aClass45_5878!!), (class10.anInt185))
                             if (class10.aClass348_Sub10_192 == null) {
@@ -273,7 +273,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Inte
                                 var class348_sub19_sub1: Class348_Sub19_Sub1? = null
                                 if (class10.aByte180.toInt() != 1) {
                                     if (class10.method220((-112).toByte())) class348_sub19_sub1 = (class10.aClass348_Sub19_Sub1_189)
-                                } else class348_sub19_sub1 = class10.aClass317_183!!.method2369().method2944(Class57.aAudioResampler_1050!!)
+                                } else class348_sub19_sub1 = class10.aAudioClipDefinition_183!!.method2369().method2944(Class57.aAudioResampler_1050!!)
                                 val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1!!, class10.anInt173, i_6_, i_5_).also { class10.aClass348_Sub16_Sub5_176 = it })
                                 class348_sub16_sub5!!.method2917(-1 + class10.anInt177)
                                 Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)

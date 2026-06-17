@@ -1,7 +1,7 @@
 /* Class317 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class317 {
+class AudioClipDefinition {
     private var anInt3967 = 0
     private var anInt3968 = 0
     private val aClass80Array3969: Array<Class80?>
@@ -70,10 +70,10 @@ class Class317 {
     }
 
     companion object {
-        fun method2372(class45: Class45, i: Int, i_11_: Int): Class317? {
+        fun method2372(class45: Class45, i: Int, i_11_: Int): AudioClipDefinition? {
             val `is` = class45.method410(-1860, i, i_11_)
             if (`is` == null) return null
-            return Class317(Class348_Sub49(`is`))
+            return AudioClipDefinition(Class348_Sub49(`is`))
         }
     }
 }

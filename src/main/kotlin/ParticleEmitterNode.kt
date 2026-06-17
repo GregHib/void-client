@@ -7,7 +7,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
     @JvmField
     var aClass348_Sub16_Sub5_176: Class348_Sub16_Sub5? = null
     @JvmField
-    var aClass317_183: Class317? = null
+    var aAudioClipDefinition_183: AudioClipDefinition? = null
     @JvmField
     var aClass348_Sub19_Sub1_189: Class348_Sub19_Sub1? = null
     @JvmField
