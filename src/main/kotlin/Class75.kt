@@ -86,7 +86,7 @@ open class Class75 {
                     `is`[i * 2] = anInt1272 + ((anInt1276 - anInt1272) * (i_0_ - anInt1274) / (anInt1265 - anInt1274))
                     `is`[i * 2 + 1] = anInt1268 - ((anInt1268 - anInt1262) * (i_1_ - anInt1257) / (anInt1277 - anInt1257))
                 }
-                Class329.method2620(var_renderer, `is`, class42.anInt582)
+                PolygonFiller.method2620(var_renderer, `is`, class42.anInt582)
                 if (class42.anInt584 > 0) {
                     for (i in 0..<`is`.size / 2 - 1) {
                         var i_2_ = `is`[i * 2]

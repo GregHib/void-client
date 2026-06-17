@@ -130,7 +130,7 @@ abstract class SceneEntity : SceneLinkedListNode() {
                                 `is`[i_9_ * 2 - -1] = (-((((class42.anIntArray591!![1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591!![i_9_ * 2]) * 4)) * i_11_) shr 14) + i + class46.anInt789 / 2)
                                 i_9_++
                             }
-                            Class329.method2619(var_renderer!!, `is`, class42.anInt582, class46!!.anIntArray677, class46.anIntArray772!!)
+                            PolygonFiller.method2619(var_renderer!!, `is`, class42.anInt582, class46!!.anIntArray677, class46.anIntArray772!!)
                             if (class42.anInt584 > 0) {
                                 var i_13_ = 0
                                 while ((i_13_ < -1 + `is`.size / 2)) {

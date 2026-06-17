@@ -1,7 +1,7 @@
 /* Class329 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class329 {
+object PolygonFiller {
     private var anInt4102 = 0
     private var anInt4103 = 0
     private var anInt4104 = 0
@@ -48,7 +48,7 @@ object Class329 {
     }
 
     fun method2620(var_renderer: Renderer, `is`: IntArray, i: Int) {
-        Class329.method2623(var_renderer, `is`, 0, `is`.size, i, null, null)
+        PolygonFiller.method2623(var_renderer, `is`, 0, `is`.size, i, null, null)
     }
 
     @JvmStatic
