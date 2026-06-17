@@ -8,7 +8,7 @@ import Class367_Sub1.Companion.method3535
 abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolean7045: Boolean) : Class348() {
     @JvmField
     var aClass348_Sub40Array7031: Array<Class348_Sub40?>
-    var aClass191_7032: Class191? = null
+    var aSpriteSheetCache_7032: SpriteSheetCache? = null
     var aClass322_7033: Class322? = null
     @JvmField
     var anInt7036: Int = 0
@@ -46,14 +46,14 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
     }
 
     open fun method3044(i: Int) {
-        if (i <= 108) this.aClass191_7032 = null
+        if (i <= 108) this.aSpriteSheetCache_7032 = null
         anInt7029++
     }
 
     open fun method3045(i: Int, i_54_: Int, i_55_: Int) {
         anInt7043++
         val i_56_ = (if (i_55_ != (this.anInt7036.inv())) this.anInt7036 else i_54_)
-        if (this.aBoolean7045) this.aClass191_7032 = Class191(i_56_, i_54_, i)
+        if (this.aBoolean7045) this.aSpriteSheetCache_7032 = SpriteSheetCache(i_56_, i_54_, i)
         else this.aClass322_7033 = Class322(i_56_, i_54_, i)
     }
 
@@ -61,8 +61,8 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
         anInt7038++
         if (i > -102) method3046((-112).toByte())
         if (this.aBoolean7045) {
-            this.aClass191_7032!!.method1432(124.toByte())
-            this.aClass191_7032 = null
+            this.aSpriteSheetCache_7032!!.method1432(124.toByte())
+            this.aSpriteSheetCache_7032 = null
         } else {
             this.aClass322_7033!!.method2558(6144)
             this.aClass322_7033 = null
@@ -77,7 +77,7 @@ abstract class Class348_Sub40 internal constructor(i: Int, @JvmField var aBoolea
 
     fun method3048(i: Int, i_58_: Int, i_59_: Int): IntArray? {
         anInt7034++
-        if (i_58_ != 633706337) this.aClass191_7032 = null
+        if (i_58_ != 633706337) this.aSpriteSheetCache_7032 = null
         if (!this.aClass348_Sub40Array7031[i_59_]!!.aBoolean7045) return (this.aClass348_Sub40Array7031[i_59_]!!.method3047(i, -1564599039)!![0])
         return this.aClass348_Sub40Array7031[i_59_]!!.method3042(i, i_58_ + -633706082)
     }

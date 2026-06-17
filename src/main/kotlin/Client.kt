@@ -95,7 +95,7 @@ import GlowPostProcessor.Companion.method1411
 import GlowPostProcessor.Companion.method1416
 import WorldListEntry.Companion.method284
 import ModelLightingConfig.Companion.method1426
-import Class191.Companion.method1431
+import SpriteSheetCache.Companion.method1431
 import Class192.Companion.method1438
 import Class193.Companion.method1440
 import Class194.Companion.method1441

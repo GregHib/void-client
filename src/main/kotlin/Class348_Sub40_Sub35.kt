@@ -31,8 +31,8 @@ class Class348_Sub40_Sub35 : Class348_Sub40(1, true) {
 
     override fun method3042(i: Int, i_4_: Int): IntArray? {
         anInt9446++
-        val `is` = this.aClass191_7032!!.method1433(0, i)!!
-        if (this.aClass191_7032!!.aBoolean2570) {
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val i_5_ = Class248.anInt3201 * anInt9448 shr 12
             val is_6_ = this.method3048(Class299_Sub2.anInt6325 and -1 + i, 633706337, 0)!!
             val is_7_ = this.method3048(i, 633706337, 0)!!

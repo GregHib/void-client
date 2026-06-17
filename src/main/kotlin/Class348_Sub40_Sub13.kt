@@ -4,9 +4,9 @@
 class Class348_Sub40_Sub13 : Class348_Sub40(1, true) {
     override fun method3042(i: Int, i_0_: Int): IntArray {
         anInt9202++
-        val `is` = this.aClass191_7032!!.method1433(i_0_ + -255, i)!!
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(i_0_ + -255, i)!!
         if (i_0_ != 255) method3042(19, -84)
-        if (this.aClass191_7032!!.aBoolean2570) {
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_1_ = this.method3039((-119).toByte(), i, 0)!!
             val is_2_ = is_1_[0]!!
             val is_3_ = is_1_[1]!!

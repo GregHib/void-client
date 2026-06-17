@@ -32,8 +32,8 @@ class Class348_Sub40_Sub10 : Class348_Sub40(1, false) {
 
     override fun method3042(i: Int, i_2_: Int): IntArray? {
         anInt9177++
-        val `is` = this.aClass191_7032!!.method1433(0, i)!!
-        if (this.aClass191_7032!!.aBoolean2570) {
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_3_ = this.method3048(i, 633706337, 0)!!
             var i_4_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_4_) {

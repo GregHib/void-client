@@ -20,8 +20,8 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
     override fun method3042(i: Int, i_3_: Int): IntArray {
         anInt9110++
         if (i_3_ != 255) anInt9107 = -121
-        val `is` = this.aClass191_7032!!.method1433(i_3_ + -255, i)!!
-        if (this.aClass191_7032!!.aBoolean2570) {
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(i_3_ + -255, i)!!
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_4_ = this.method3048(i, 633706337, 0)!!
             var i_5_ = 0
             while ((Class348_Sub40_Sub6.Companion.anInt9139 > i_5_)) {
@@ -65,7 +65,7 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
                 if (GroundItemRenderState.aClass304_1662 == class304) return 6408
                 if (class304 == Class348_Sub40_Sub38.Companion.aClass304_9471) return 6406
                 if (Class348_Sub40_Sub22.Companion.aClass304_9303 != class304) {
-                    if (class304 == Class191.aClass304_2571) return 6410
+                    if (class304 == SpriteSheetCache.aClass304_2571) return 6410
                     if (class304 == Class318.aClass304_3977) return 6145
                 } else return 6409
             } else return 6407

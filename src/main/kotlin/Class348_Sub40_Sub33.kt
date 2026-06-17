@@ -28,8 +28,8 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
     override fun method3042(i: Int, i_8_: Int): IntArray {
         anInt9428++
         if (i_8_ != 255) aClass46ArrayArray9427 = null
-        val `is` = this.aClass191_7032!!.method1433(0, i)!!
-        if (this.aClass191_7032!!.aBoolean2570) {
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             var i_9_ = 0
             while ((i_9_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
                 method3139(i_9_, i, (-31).toByte())

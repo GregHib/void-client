@@ -4,7 +4,7 @@ import IndexedSprite.Companion.method165
 /* Class191 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
+class SpriteSheetCache internal constructor(i: Int, i_16_: Int, i_17_: Int) {
     private var anInt2557 = 0
     private val anInt2559: Int
     private var aClass262_2561: Class262?

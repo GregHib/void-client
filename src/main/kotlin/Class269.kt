@@ -58,24 +58,24 @@ class Class269 internal constructor(private val aHa_Sub3_3457: NativeRenderer) {
 
     init {
         this.aBoolean3458 = aHa_Sub3_3457.aBoolean8159
-        if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, Class191.aClass304_2571, Class68.aClass68_1183)) this.aBoolean3458 = false
-        if (this.aBoolean3458 || aHa_Sub3_3457.method3880(Class68.aClass68_1183, Class191.aClass304_2571, 123.toByte())) {
+        if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, SpriteSheetCache.aClass304_2571, Class68.aClass68_1183)) this.aBoolean3458 = false
+        if (this.aBoolean3458 || aHa_Sub3_3457.method3880(Class68.aClass68_1183, SpriteSheetCache.aClass304_2571, 123.toByte())) {
             OutputStream_Sub1.method134((-126).toByte())
             if (this.aBoolean3458) {
                 var `is` = method461(false, Class355.anObject4366, 53146732)
-                this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, `is`)
+                this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aClass304_2571, true, 128, `is`)
                 `is` = method461(false, Class227.anObject2969, 53146732)
-                aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, `is`)
+                aHa_Sub3_3457.method3872(16, 128, SpriteSheetCache.aClass304_2571, true, 128, `is`)
             } else {
                 this.anInterface18_Impl3Array3459 = arrayOfNulls<Interface18_Impl3>(16)
                 for (i in 0..15) {
                     val `is` = method1331(100.toByte(), Class355.anObject4366, 128 * (i * 128 * 2), 32768)
-                    this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, Class191.aClass304_2571, 2, true, 128)
+                    this.anInterface18_Impl3Array3459!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aClass304_2571, 2, true, 128)
                 }
                 anInterface18_Impl3Array3454 = arrayOfNulls<Interface18_Impl3>(16)
                 for (i in 0..15) {
                     val `is` = method1331(120.toByte(), Class227.anObject2969, 128 * (128 * i) * 2, 32768)
-                    anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, Class191.aClass304_2571, 2, true, 128)
+                    anInterface18_Impl3Array3454!![i] = aHa_Sub3_3457.method3944(`is`, 128, SpriteSheetCache.aClass304_2571, 2, true, 128)
                 }
             }
         }

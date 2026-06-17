@@ -844,7 +844,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
                     if (GroundItemRenderState.aClass304_1662 == class304) return 21
                     if (Class348_Sub40_Sub38.aClass304_9471 == class304) return 28
                     if (Class348_Sub40_Sub22.aClass304_9303 == class304) return 50
-                    if (class304 == Class191.aClass304_2571) return 51
+                    if (class304 == SpriteSheetCache.aClass304_2571) return 51
                     if (class304 == Class318.aClass304_3977) return 77
                 } else return 22
             }

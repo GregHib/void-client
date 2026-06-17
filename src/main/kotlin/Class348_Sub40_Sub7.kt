@@ -76,8 +76,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
     override fun method3042(i: Int, i_75_: Int): IntArray {
         anInt9143++
         if (i_75_ != 255) aClass348_Sub42_Sub12_9144 = null
-        val `is` = this.aClass191_7032!!.method1433(0, i)!!
-        if (this.aClass191_7032!!.aBoolean2570) {
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_76_ = this.method3048((if (aBoolean9147) Class299_Sub2.anInt6325 - i else i), i_75_ + 633706082, 0)!!
             if (aBoolean9140) {
                 var i_77_ = 0

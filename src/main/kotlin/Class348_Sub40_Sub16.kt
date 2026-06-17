@@ -224,9 +224,9 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
     override fun method3042(i: Int, i_51_: Int): IntArray {
         if (i_51_ != 255) method3047(50, -18)
         anInt9224++
-        val `is` = this.aClass191_7032!!.method1433(0, i)!!
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         while_178_@ do {
-            if (this.aClass191_7032!!.aBoolean2570) {
+            if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
                 val is_52_ = this.method3048(i, 633706337, 0)!!
                 val is_53_ = this.method3048(i, 633706337, 1)!!
                 var i_54_ = anInt9226

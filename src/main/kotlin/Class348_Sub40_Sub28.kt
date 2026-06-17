@@ -48,10 +48,10 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
     override fun method3042(i: Int, i_2_: Int): IntArray? {
         anInt9366++
         if (i_2_ != 255) method3044(-48)
-        val `is` = this.aClass191_7032!!.method1433(0, i)
-        if (this.aClass191_7032!!.aBoolean2570) {
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val i_3_ = anInt9364 shr 1
-            val is_4_ = this.aClass191_7032!!.method1427(16.toByte())!!
+            val is_4_ = this.aSpriteSheetCache_7032!!.method1427(16.toByte())!!
             val random = Random(anInt9367.toLong())
             var i_5_ = 0
             while (anInt9362 > i_5_) {

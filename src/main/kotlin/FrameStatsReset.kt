@@ -475,7 +475,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class34.anInt470 = 0
             Class346.anInt4277 = 0
             GameAppletFrame.anInt39 = 0
-            Class191.anInt2567 = 0
+            SpriteSheetCache.anInt2567 = 0
             Class318_Sub1_Sub3_Sub4.anInt10362 = 0
             Class348.anInt4296 = 0
             Class38.anInt497 = 0
@@ -576,7 +576,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class42.anInt608 = 0
             NativeRenderer.anInt7997 = 0
             GlSpriteRenderer.anInt8448 = 0
-            Class191.anInt2558 = 0
+            SpriteSheetCache.anInt2558 = 0
             Class348_Sub49.anInt7163 = 0
             Exception_Sub1.anInt109 = 0
             anInt5798 = 0
@@ -1365,7 +1365,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class217.anInt2847 = 0
             Class239_Sub3.anInt5868 = 0
             Class18.anInt291 = 0
-            Class191.anInt2556 = 0
+            SpriteSheetCache.anInt2556 = 0
             Class367_Sub3.anInt7300 = 0
             VarpStore.anInt5069 = 0
             OpenGlRenderer.anInt7656 = 0
@@ -1739,7 +1739,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3.anInt8753 = 0
             OpenGlRenderer.anInt7515 = 0
             Class373_Sub2.anInt7431 = 0
-            Class191.anInt2560 = 0
+            SpriteSheetCache.anInt2560 = 0
             Class202.anInt2664 = 0
             Class290.anInt3707 = 0
             Class255.anInt3274 = 0
@@ -1838,7 +1838,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3_Sub4.anInt10353 = 0
             Class64_Sub3.anInt5590 = 0
             Class348_Sub40_Sub31.anInt9407 = 0
-            Class191.anInt2569 = 0
+            SpriteSheetCache.anInt2569 = 0
             NativeRenderer.anInt8004 = 0
             Class24.anInt354 = 0
             Class309.anInt4811 = 0
@@ -2658,7 +2658,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class301.anInt3827 = 0
             AudioResampler.anInt2166 = 0
             Class348_Sub42_Sub16_Sub1.anInt10448 = 0
-            Class191.anInt2566 = 0
+            SpriteSheetCache.anInt2566 = 0
             Class318_Sub2.anInt6397 = 0
             Class377.anInt9814 = 0
             Class18.anInt274 = 0

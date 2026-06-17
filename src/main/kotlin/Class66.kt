@@ -3721,7 +3721,7 @@ object Class66 {
             } else if (i < 3200) {
                 if (i == 3100) {
                     val string = aStringArray1152!![--anInt1170]
-                    Class191.method1429(string, 0)
+                    SpriteSheetCache.method1429(string, 0)
                     return
                 }
                 if (i == 3101) {

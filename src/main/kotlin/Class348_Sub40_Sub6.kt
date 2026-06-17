@@ -5,8 +5,8 @@ class Class348_Sub40_Sub6 : Class348_Sub40(3, false) {
     private var anInt9133 = 32768
     override fun method3042(i: Int, i_0_: Int): IntArray {
         anInt9137++
-        val `is` = this.aClass191_7032!!.method1433(0, i)!!
-        if (this.aClass191_7032!!.aBoolean2570) {
+        val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
+        if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
             val is_1_ = this.method3048(i, i_0_ + 633706082, 1)!!
             val is_2_ = this.method3048(i, i_0_ xor 0x25c5979e, 2)!!
             for (i_3_ in 0..<anInt9139) {
