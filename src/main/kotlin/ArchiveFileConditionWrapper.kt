@@ -1,7 +1,7 @@
 /* Class270 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class270 {
+class ArchiveFileConditionWrapper {
     var anInterface8_3463: Interface8? = null
 
     companion object {
