@@ -21,7 +21,7 @@ object Class108 {
     @JvmField
     var anInt1663: Int = 0
     @JvmField
-    var aClass105_1664: Class105? = null
+    var aAbstractModelRenderer_1664: AbstractModelRenderer? = null
 
     fun method1012(f: Float, f_0_: Float, f_1_: Float, f_2_: Float, i: Int, f_3_: Float, i_4_: Byte, f_5_: Float): Float {
         anInt1659++
@@ -61,7 +61,7 @@ object Class108 {
         aClass364_1657 = null
         if (i < 111) method1013(17.toByte())
         aClass304_1662 = null
-        aClass105_1664 = null
+        aAbstractModelRenderer_1664 = null
     }
 
     fun method1014(i: Int) {

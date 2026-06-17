@@ -17,12 +17,12 @@ object Class121 {
     @JvmField
     var anInt1799: Int = 0
     @JvmField
-    var aClass105_1800: Class105? = null
+    var aAbstractModelRenderer_1800: AbstractModelRenderer? = null
 
     @JvmStatic
     fun method1081(i: Byte) {
         val i_0_ = -38 % ((i - 57) / 62)
-        aClass105_1800 = null
+        aAbstractModelRenderer_1800 = null
     }
 
     fun method1082(i: Int, bool: Boolean): Int {

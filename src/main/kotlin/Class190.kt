@@ -125,23 +125,23 @@ class Class190 {
                     i_10_ = (-((-Class75.anInt1262 + Class75.anInt1268) * (class348_sub21.anInt6851 + (class42.anInt607 + -Class75.anInt1257)) / (Class75.anInt1277 - Class75.anInt1257)) + Class75.anInt1268)
                     i_7_ = (((-Class75.anInt1272 + Class75.anInt1276) * (-Class75.anInt1274 + class348_sub21.anInt6852 + class42.anInt603) / (-Class75.anInt1274 + Class75.anInt1265)) + Class75.anInt1272)
                 }
-                var class105: Class105? = null
+                var abstractModelRenderer: AbstractModelRenderer? = null
                 var i_11_ = 0
                 if (i > -29) aRectangleArray2554 = null
                 var i_12_ = 0
                 var i_13_ = 0
                 var i_14_ = 0
                 if (class42.anInt578 != -1) {
-                    if (class348_sub21!!.aBoolean6848 && class42.anInt605 != -1) class105 = class42.method374(true, var_renderer!!, 127.toByte())
-                    else class105 = class42.method374(false, var_renderer!!, 127.toByte())
-                    if (class105 != null) {
-                        i_11_ = (class348_sub21.anInt6853 + -(class105.method966() - -1 shr 1))
-                        i_12_ = (class348_sub21.anInt6853 + (1 + class105.method966() shr 1))
+                    if (class348_sub21!!.aBoolean6848 && class42.anInt605 != -1) abstractModelRenderer = class42.method374(true, var_renderer!!, 127.toByte())
+                    else abstractModelRenderer = class42.method374(false, var_renderer!!, 127.toByte())
+                    if (abstractModelRenderer != null) {
+                        i_11_ = (class348_sub21.anInt6853 + -(abstractModelRenderer.method966() - -1 shr 1))
+                        i_12_ = (class348_sub21.anInt6853 + (1 + abstractModelRenderer.method966() shr 1))
                         if (i_11_ < i_7_) i_7_ = i_11_
                         if (i_12_ > i_8_) i_8_ = i_12_
-                        i_13_ = (class348_sub21.anInt6855 - (class105.method980() - -1 shr 1))
+                        i_13_ = (class348_sub21.anInt6855 - (abstractModelRenderer.method980() - -1 shr 1))
                         if (i_13_ < i_9_) i_9_ = i_13_
-                        i_14_ = (class348_sub21.anInt6855 + (1 + class105.method980() shr 1))
+                        i_14_ = (class348_sub21.anInt6855 + (1 + abstractModelRenderer.method980() shr 1))
                         if (i_14_ > i_10_) i_10_ = i_14_
                     }
                 }
@@ -160,8 +160,8 @@ class Class190 {
                         i_15_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
                         i_17_ = (class348_sub21!!.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)))
                         i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)))
-                        if (class105 == null) i_17_ -= i_15_ * class323.method2560() / 2
-                        else i_17_ -= ((class105.method980() shr 1) - -(i_15_ * class323.method2565()))
+                        if (abstractModelRenderer == null) i_17_ -= i_15_ * class323.method2560() / 2
+                        else i_17_ -= ((abstractModelRenderer.method980() shr 1) - -(i_15_ * class323.method2565()))
                         var i_23_ = 0
                         while (i_15_ > i_23_) {
                             var string = NativeRenderer.aStringArray8019!![i_23_]!!
@@ -182,19 +182,19 @@ class Class190 {
                 }
                 if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true
                 Class75.method745(var_renderer!!, class348_sub21!!, class42)
-                if (class105 != null) {
+                if (abstractModelRenderer != null) {
                     if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)))) {
                         val i_25_: Int
                         if (Class164.anInt2173 <= 50) i_25_ = 2 * Class164.anInt2173
                         else i_25_ = -(Class164.anInt2173 * 2) + 200
                         val i_26_ = 0xffff00 or (i_25_ shl 24)
-                        var_renderer.method3656((-105).toByte(), i_26_, class105.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_renderer.method3656((-120).toByte(), i_26_, class105.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_renderer.method3656((-126).toByte(), i_26_, 3 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_renderer.method3656((-112).toByte(), i_26_, 1 + class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
-                        var_renderer.method3656((-123).toByte(), i_26_, class105.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-105).toByte(), i_26_, abstractModelRenderer.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-120).toByte(), i_26_, abstractModelRenderer.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-126).toByte(), i_26_, 3 + abstractModelRenderer.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-112).toByte(), i_26_, 1 + abstractModelRenderer.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
+                        var_renderer.method3656((-123).toByte(), i_26_, abstractModelRenderer.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855))
                     }
-                    class105.method974((class348_sub21.anInt6853 + -(class105.method966() shr 1)), (class348_sub21.anInt6855 + -(class105.method980() shr 1)))
+                    abstractModelRenderer.method974((class348_sub21.anInt6853 + -(abstractModelRenderer.method966() shr 1)), (class348_sub21.anInt6855 + -(abstractModelRenderer.method980() shr 1)))
                 }
                 if (class42.aString597 != null && class323 != null) Class342.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, class42)
                 if (class42.anInt578 != -1 || class42.aString597 != null) {

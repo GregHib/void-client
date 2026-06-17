@@ -45,7 +45,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
         @JvmField
         var anInt4642: Int = 0
         @JvmField
-        var aClass105_4643: Class105? = null
+        var aAbstractModelRenderer_4643: AbstractModelRenderer? = null
         @JvmField
         var anInt4644: Int = 0
         @JvmField
@@ -57,7 +57,7 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
         @JvmStatic
         fun method716(i: Int) {
             if (i == 1) {
-                aClass105_4643 = null
+                aAbstractModelRenderer_4643 = null
                 anIntArray4648 = null
             }
         }

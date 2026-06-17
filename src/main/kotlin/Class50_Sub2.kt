@@ -51,7 +51,7 @@ class Class50_Sub2 internal constructor(private var anInt5231: Int, private val 
         fun method464(i: Int) {
             anInt5229++
             Class334.anInt4155 = i
-            Class108.aClass105_1664 = null
+            Class108.aAbstractModelRenderer_1664 = null
         }
     }
 }

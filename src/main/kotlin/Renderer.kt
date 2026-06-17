@@ -23,7 +23,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3628(i: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int)
 
-    abstract fun method3629(i: Int, i_14_: Int, bool: Boolean): Class105?
+    abstract fun method3629(i: Int, i_14_: Int, bool: Boolean): AbstractModelRenderer?
 
     abstract fun Y(): IntArray
 
@@ -144,7 +144,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3661(i: Int, i_82_: Int, `is`: IntArray?, is_83_: IntArray?): Sprite?
 
-    fun method3662(i: Int, `is`: IntArray?, i_84_: Byte, i_85_: Int, i_86_: Int, i_87_: Int): Class105 {
+    fun method3662(i: Int, `is`: IntArray?, i_84_: Byte, i_85_: Int, i_86_: Int, i_87_: Int): AbstractModelRenderer {
         anInt4565++
         return method3711(`is`, i_85_, i_86_, i, i_87_, true)
     }
@@ -199,15 +199,15 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3679(i: Int, i_142_: Int): Int
 
-    fun method3681(class105: Class105, i: Int) {
-        method3687(method3634(class105, method3624(class105.method971(), class105.method969())))
+    fun method3681(abstractModelRenderer: AbstractModelRenderer, i: Int) {
+        method3687(method3634(abstractModelRenderer, method3624(abstractModelRenderer.method971(), abstractModelRenderer.method969())))
         anInt4561++
         if (i != 0) DA(-75, -67, 18, -116)
     }
 
     abstract fun method3682(): Boolean
 
-    abstract fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): Class105?
+    abstract fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): AbstractModelRenderer?
 
     abstract fun method3684(class98: Class98)
 
@@ -241,7 +241,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3690(i: Int, i_164_: Int, i_165_: Int, i_166_: Int, i_167_: Int, f: Float): Class348_Sub1?
 
-    abstract fun method3691(class207: Class207?, bool: Boolean): Class105?
+    abstract fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer?
 
     abstract fun method3693(): Boolean
 
@@ -297,7 +297,7 @@ abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: Re
 
     abstract fun method3710()
 
-    abstract fun method3711(`is`: IntArray?, i: Int, i_212_: Int, i_213_: Int, i_214_: Int, bool: Boolean): Class105
+    abstract fun method3711(`is`: IntArray?, i: Int, i_212_: Int, i_213_: Int, i_214_: Int, bool: Boolean): AbstractModelRenderer
 
     init {
         var i = -1

@@ -72,7 +72,7 @@ class Class239_Sub9 : Class239 {
         @JvmField
         var aClass230_5932: Class230? = Class230("game4", 3)
         @JvmField
-        var aClass105Array5933: Array<Class105?>? = null
+        var aAbstractModelRendererArray5933: Array<AbstractModelRenderer?>? = null
         @JvmField
         var aClass351_5934: Class351? = Class351(78, 16)
 
@@ -81,7 +81,7 @@ class Class239_Sub9 : Class239 {
             if (i != -16211) aClass351_5934 = null
             aClass230_5932 = null
             aClass351_5929 = null
-            aClass105Array5933 = null
+            aAbstractModelRendererArray5933 = null
             aClass351_5934 = null
         }
     }

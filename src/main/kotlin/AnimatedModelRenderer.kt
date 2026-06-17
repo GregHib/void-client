@@ -3,7 +3,7 @@ import Class348_Sub16_Sub2.Companion.method2834
 /* Class105_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class105_Sub1 : Class105 {
+class AnimatedModelRenderer : AbstractModelRenderer {
     private val aBoolean8391: Boolean
     private val aBoolean8396: Boolean
     private var anInt8397 = 0

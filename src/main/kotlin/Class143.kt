@@ -9,11 +9,11 @@ class Class143 internal constructor(`is`: ByteArray?) {
     var anInt1992: Int = 0
     var anInt1993: Int
 
-    fun method1181(class105s: Array<Class105?>?, i: Int, string: String?, i_0_: Byte): String? {
+    fun method1181(abstractModelRenderers: Array<AbstractModelRenderer?>?, i: Int, string: String?, i_0_: Byte): String? {
         var i = i
         try {
             anInt1989++
-            if (i >= method1186(string, class105s, false)) return string
+            if (i >= method1186(string, abstractModelRenderers, false)) return string
             i -= method1186("...", null, false)
             var i_1_ = -1
             if (i_0_ < 54) aClass351_1987 = null
@@ -37,11 +37,11 @@ class Class143 internal constructor(`is`: ByteArray?) {
                                     else if (string_7_ != "euro") {
                                         if (string_7_ != "copy") {
                                             if (string_7_ != "reg") {
-                                                if (string_7_.startsWith("img=") && class105s != null) {
+                                                if (string_7_.startsWith("img=") && abstractModelRenderers != null) {
                                                     try {
                                                         val i_8_ = (Class348_Sub41.method3156(true, (string_7_.substring(4))))
                                                         i_2_ = -1
-                                                        i_3_ += (class105s[i_8_]!!.method966())
+                                                        i_3_ += (abstractModelRenderers[i_8_]!!.method966())
                                                         if (i_3_ > i) return (string_5_ + "...")
                                                         string_5_ = (string.substring(0, i_6_ - -1))
                                                     } catch (exception: Exception) {
@@ -72,7 +72,7 @@ class Class143 internal constructor(`is`: ByteArray?) {
             }
             return string
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.I(" + (if (class105s != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oea.I(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_0_ + ')'))
         }
     }
 
@@ -95,20 +95,20 @@ class Class143 internal constructor(`is`: ByteArray?) {
         return 0xff and aByteArray1986[i_11_].toInt()
     }
 
-    fun method1185(class105s: Array<Class105?>?, i: Int, i_12_: Int, i_13_: Int, string: String?): Int {
+    fun method1185(abstractModelRenderers: Array<AbstractModelRenderer?>?, i: Int, i_12_: Int, i_13_: Int, string: String?): Int {
         var i_12_ = i_12_
         try {
             anInt1990++
             if (i_12_ == i) i_12_ = this.anInt1992
-            val i_14_ = method1188(string, intArrayOf(i_13_), Class186.aStringArray2494, 87.toByte(), class105s)
+            val i_14_ = method1188(string, intArrayOf(i_13_), Class186.aStringArray2494, 87.toByte(), abstractModelRenderers)
             val i_15_ = (-1 + i_14_) * i_12_
             return (this.anInt1988 + (i_15_ + this.anInt1993))
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.A(" + (if (class105s != null) "{...}" else "null") + ',' + i + ',' + i_12_ + ',' + i_13_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oea.A(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + i_12_ + ',' + i_13_ + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
-    fun method1186(string: String?, class105s: Array<Class105?>?, bool: Boolean): Int {
+    fun method1186(string: String?, abstractModelRenderers: Array<AbstractModelRenderer?>?, bool: Boolean): Int {
         try {
             if (bool != false) this.anInt1993 = 95
             anInt1980++
@@ -133,11 +133,11 @@ class Class143 internal constructor(`is`: ByteArray?) {
                                         if (string_20_ != "copy") {
                                             if (string_20_ == "reg") c = '\u00ae'
                                             else {
-                                                if (string_20_.startsWith("img=") && class105s != null) {
+                                                if (string_20_.startsWith("img=") && abstractModelRenderers != null) {
                                                     try {
                                                         val i_21_ = (Class348_Sub41.method3156(true, (string_20_.substring(4))))
                                                         i_16_ = -1
-                                                        i_17_ += (class105s[i_21_]!!.method966())
+                                                        i_17_ += (abstractModelRenderers[i_21_]!!.method966())
                                                     } catch (exception: Exception) {
                                                         /* empty */
                                                     }
@@ -159,29 +159,29 @@ class Class143 internal constructor(`is`: ByteArray?) {
             }
             return i_17_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.F(" + (if (string != null) "{...}" else "null") + ',' + (if (class105s != null) "{...}" else "null") + ',' + bool + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oea.F(" + (if (string != null) "{...}" else "null") + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + bool + ')'))
         }
     }
 
-    fun method1187(string: String?, bool: Boolean, i: Int, class105s: Array<Class105?>?): Int {
+    fun method1187(string: String?, bool: Boolean, i: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?): Int {
         try {
             anInt1984++
-            val i_22_ = method1188(string, intArrayOf(i), Class186.aStringArray2494, 87.toByte(), class105s)
+            val i_22_ = method1188(string, intArrayOf(i), Class186.aStringArray2494, 87.toByte(), abstractModelRenderers)
             var i_23_ = 0
             if (bool != false) this.anInt1988 = -58
             var i_24_ = 0
             while (i_22_ > i_24_) {
-                val i_25_ = method1186(Class186.aStringArray2494!![i_24_], class105s, false)
+                val i_25_ = method1186(Class186.aStringArray2494!![i_24_], abstractModelRenderers, false)
                 if (i_25_ > i_23_) i_23_ = i_25_
                 i_24_++
             }
             return i_23_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.K(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + (if (class105s != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oea.K(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
         }
     }
 
-    fun method1188(string: String?, `is`: IntArray?, strings: Array<String?>?, i: Byte, class105s: Array<Class105?>?): Int {
+    fun method1188(string: String?, `is`: IntArray?, strings: Array<String?>?, i: Byte, abstractModelRenderers: Array<AbstractModelRenderer?>?): Int {
         try {
             anInt1978++
             if (i.toInt() != 87) method1190(null, 80, null, 55)
@@ -258,11 +258,11 @@ class Class143 internal constructor(`is`: ByteArray?) {
                             i_37_ += method1184((-48).toByte(), 174)
                             if (aByteArrayArray1979 != null && i_32_ != -1) i_37_ += (aByteArrayArray1979!![i_32_]!![174]).toInt()
                             i_32_ = 174
-                        } else if (string_39_.startsWith("img=") && class105s != null) {
+                        } else if (string_39_.startsWith("img=") && abstractModelRenderers != null) {
                             try {
                                 val i_40_ = (Class348_Sub41.method3156(true, (string_39_.substring(4))))
                                 i_32_ = -1
-                                i_37_ += class105s[i_40_]!!.method966()
+                                i_37_ += abstractModelRenderers[i_40_]!!.method966()
                             } catch (exception: Exception) {
                                 /* empty */
                             }
@@ -311,17 +311,17 @@ class Class143 internal constructor(`is`: ByteArray?) {
             }
             return i_33_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.J(" + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (strings != null) "{...}" else "null") + ',' + i + ',' + (if (class105s != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oea.J(" + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (strings != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ')'))
         }
     }
 
-    fun method1190(class105s: Array<Class105?>?, i: Int, string: String?, i_42_: Int): Int {
+    fun method1190(abstractModelRenderers: Array<AbstractModelRenderer?>?, i: Int, string: String?, i_42_: Int): Int {
         try {
             anInt1983++
             if (i != 1) this.anInt1992 = -13
-            return method1188(string, intArrayOf(i_42_), Class186.aStringArray2494, 87.toByte(), class105s)
+            return method1188(string, intArrayOf(i_42_), Class186.aStringArray2494, 87.toByte(), abstractModelRenderers)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oea.B(" + (if (class105s != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_42_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("oea.B(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_42_ + ')'))
         }
     }
 

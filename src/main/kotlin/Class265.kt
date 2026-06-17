@@ -5,10 +5,10 @@ import kotlin.math.max
 */
 class Class265 internal constructor(class45: Class45?, class120: Class120?) : Interface1 {
     private val aClass120_4687: Class120?
-    private var aClass105_4688: Class105? = null
+    private var aAbstractModelRenderer_4688: AbstractModelRenderer? = null
     private val aClass45_4694: Class45?
     override fun method7(i: Int) {
-        aClass105_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687!!.anInt4912), 116.toByte(), aClass45_4694!!)
+        aAbstractModelRenderer_4688 = Class369_Sub3_Sub1.method3577((aClass120_4687!!.anInt4912), 116.toByte(), aClass45_4694!!)
         if (i != 10286) aBooleanArrayArray4693 = null
         anInt4695++
     }
@@ -18,8 +18,8 @@ class Class265 internal constructor(class45: Class45?, class120: Class120?) : In
         if (bool) {
             val i_0_ = (max(Class321.anInt4017, Class92.anInt1524))
             val i_1_ = (max(Class348_Sub42_Sub8_Sub2.anInt10432, OpenGlRenderer.anInt7666))
-            val i_2_ = aClass105_4688!!.method966()
-            val i_3_ = aClass105_4688!!.method980()
+            val i_2_ = aAbstractModelRenderer_4688!!.method966()
+            val i_3_ = aAbstractModelRenderer_4688!!.method980()
             var i_4_ = 0
             var i_5_ = i_0_
             var i_6_ = i_0_ * i_3_ / i_2_
@@ -30,7 +30,7 @@ class Class265 internal constructor(class45: Class45?, class120: Class120?) : In
                 i_7_ = 0
                 i_4_ = (i_0_ - i_5_) / 2
             }
-            aClass105_4688!!.method973(i_4_, i_7_, i_5_, i_6_)
+            aAbstractModelRenderer_4688!!.method973(i_4_, i_7_, i_5_, i_6_)
         }
     }
 

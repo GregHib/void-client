@@ -20,45 +20,45 @@ class Class85 {
         var i_0_ = 0
         var i_1_ = i
         while ( /**/i_0_ < 8) {
-            aLongArray1473[i_0_] = (Class105_Sub2.method993(
-                (Class105_Sub2.method993(
+            aLongArray1473[i_0_] = (GlSpriteRenderer.method993(
+                (GlSpriteRenderer.method993(
                     (method2777(255L, aByteArray1475[i_1_ + 6].toLong()) shl 8),
-                    (Class105_Sub2.method993(
+                    (GlSpriteRenderer.method993(
                         method2777(((aByteArray1475[i_1_ - -5]).toLong() shl 16), 255L shl 16),
-                        (Class105_Sub2.method993((Class105_Sub2.method993(method2777(255L shl 32, ((aByteArray1475[i_1_ + 3]).toLong() shl 32)), (Class105_Sub2.method993(Class105_Sub2.method993((method2777(255L shl 48, ((aByteArray1475[1 + i_1_]).toLong() shl 48))), ((aByteArray1475[i_1_]).toLong() shl 56)), method2777(((aByteArray1475[i_1_ + 2]).toLong() shl 40), 255L shl 40))))), method2777(aByteArray1475[4 + i_1_].toLong(), 255L) shl 24))
+                        (GlSpriteRenderer.method993((GlSpriteRenderer.method993(method2777(255L shl 32, ((aByteArray1475[i_1_ + 3]).toLong() shl 32)), (GlSpriteRenderer.method993(GlSpriteRenderer.method993((method2777(255L shl 48, ((aByteArray1475[1 + i_1_]).toLong() shl 48))), ((aByteArray1475[i_1_]).toLong() shl 56)), method2777(((aByteArray1475[i_1_ + 2]).toLong() shl 40), 255L shl 40))))), method2777(aByteArray1475[4 + i_1_].toLong(), 255L) shl 24))
                     ))
                 )), method2777(255L, aByteArray1475[i_1_ - -7].toLong())
             ))
             i_1_ += 8
             i_0_++
         }
-        for (i_2_ in 0..7) aLongArray1469[i_2_] = Class105_Sub2.method993(aLongArray1473[i_2_], (aLongArray1474[i_2_].also { aLongArray1472[i_2_] = it }))
+        for (i_2_ in 0..7) aLongArray1469[i_2_] = GlSpriteRenderer.method993(aLongArray1473[i_2_], (aLongArray1474[i_2_].also { aLongArray1472[i_2_] = it }))
         for (i_3_ in 1..10) {
             for (i_4_ in 0..7) {
                 aLongArray1471[i_4_] = 0L
                 var i_5_ = 0
                 var i_6_ = 56
                 while ( /**/i_5_ < 8) {
-                    aLongArray1471[i_4_] = (Class105_Sub2.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75!![i_5_]!![(Class139.method1166(255, ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) ushr i_6_).toInt()))])))
+                    aLongArray1471[i_4_] = (GlSpriteRenderer.method993(aLongArray1471[i_4_], (InputStream_Sub1.aLongArrayArray75!![i_5_]!![(Class139.method1166(255, ((aLongArray1472[Class139.method1166(7, i_4_ - i_5_)]) ushr i_6_).toInt()))])))
                     i_6_ -= 8
                     i_5_++
                 }
             }
             for (i_7_ in 0..7) aLongArray1472[i_7_] = aLongArray1471[i_7_]
-            aLongArray1472[0] = Class105_Sub2.method993(aLongArray1472[0], InputStream_Sub1.aLongArray76!![i_3_])
+            aLongArray1472[0] = GlSpriteRenderer.method993(aLongArray1472[0], InputStream_Sub1.aLongArray76!![i_3_])
             for (i_8_ in 0..7) {
                 aLongArray1471[i_8_] = aLongArray1472[i_8_]
                 var i_9_ = 0
                 var i_10_ = 56
                 while ( /**/i_9_ < 8) {
-                    aLongArray1471[i_8_] = (Class105_Sub2.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75!![i_9_]!![(Class139.method1166(255, ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) ushr i_10_).toInt()))])))
+                    aLongArray1471[i_8_] = (GlSpriteRenderer.method993(aLongArray1471[i_8_], (InputStream_Sub1.aLongArrayArray75!![i_9_]!![(Class139.method1166(255, ((aLongArray1469[Class139.method1166(-i_9_ + i_8_, 7)]) ushr i_10_).toInt()))])))
                     i_10_ -= 8
                     i_9_++
                 }
             }
             for (i_11_ in 0..7) aLongArray1469[i_11_] = aLongArray1471[i_11_]
         }
-        for (i_12_ in 0..7) aLongArray1474[i_12_] = (Class105_Sub2.method993(aLongArray1474[i_12_], Class105_Sub2.method993(aLongArray1473[i_12_], aLongArray1469[i_12_])))
+        for (i_12_ in 0..7) aLongArray1474[i_12_] = (GlSpriteRenderer.method993(aLongArray1474[i_12_], GlSpriteRenderer.method993(aLongArray1473[i_12_], aLongArray1469[i_12_])))
     }
 
     fun method829(i: Int) {

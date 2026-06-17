@@ -12,19 +12,19 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
     private var aBoolean9016 = false
     private var aLong9018: Long = 0
     private var aGranulePos9019: GranulePos? = null
-    private var aClass105_9020: Class105? = null
+    private var aAbstractModelRenderer_9020: AbstractModelRenderer? = null
     private var aFrame9024: Frame? = null
     private var anInt9027 = 0
     private val aBoolean9028 = false
     private var aDecoderContext9032: DecoderContext? = null
     private val aSetupInfo9035 = SetupInfo()
-    fun method2975(var_renderer: Renderer, i: Int): Class105? {
+    fun method2975(var_renderer: Renderer, i: Int): AbstractModelRenderer? {
         anInt9026++
         if (aFrame9024 == null) return null
-        if (!aBoolean9014 && aClass105_9020 != null) return aClass105_9020
-        aClass105_9020 = var_renderer.method3711(aFrame9024!!.pixels, i, aFrame9024!!.a, aFrame9024!!.a, aFrame9024!!.b, false)
+        if (!aBoolean9014 && aAbstractModelRenderer_9020 != null) return aAbstractModelRenderer_9020
+        aAbstractModelRenderer_9020 = var_renderer.method3711(aFrame9024!!.pixels, i, aFrame9024!!.a, aFrame9024!!.a, aFrame9024!!.b, false)
         aBoolean9014 = false
-        return aClass105_9020
+        return aAbstractModelRenderer_9020
     }
 
     init {
@@ -70,7 +70,7 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) :
             if (anInt9009 < 0) anInt9009 = 0
             aDecoderContext9032!!.setPostProcessingLevel(anInt9009)
         }
-        if (i_0_ > -127) aClass105_9020 = null
+        if (i_0_ > -127) aAbstractModelRenderer_9020 = null
     }
 
     fun method2979(i: Int): Long {

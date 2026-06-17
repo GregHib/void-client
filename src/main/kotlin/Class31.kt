@@ -17,40 +17,40 @@ class Class31 {
     var aClass219_438: Class219? = null
     private var anInt439: Int
     var anInt444: Int = 16777215
-    fun method324(var_renderer: Renderer, bool: Boolean): Class105? {
+    fun method324(var_renderer: Renderer, bool: Boolean): AbstractModelRenderer? {
         anInt440++
         if (bool != true) return null
         if (anInt429 < 0) return null
-        var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), -62) as Class105?
-        if (class105 == null) {
+        var abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), -62) as AbstractModelRenderer?
+        if (abstractModelRenderer == null) {
             method330(var_renderer, -41)
-            class105 = this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), 53) as Class105?
+            abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt429.toLong(), 53) as AbstractModelRenderer?
         }
-        return class105
+        return abstractModelRenderer
     }
 
-    fun method325(var_renderer: Renderer, i: Int): Class105? {
+    fun method325(var_renderer: Renderer, i: Int): AbstractModelRenderer? {
         anInt428++
         if (anInt439 < 0) return null
-        var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), -59) as Class105?
+        var abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), -59) as AbstractModelRenderer?
         if (i < 23) return null
-        if (class105 == null) {
+        if (abstractModelRenderer == null) {
             method330(var_renderer, -118)
-            class105 = this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), 123) as Class105?
+            abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt439.toLong(), 123) as AbstractModelRenderer?
         }
-        return class105
+        return abstractModelRenderer
     }
 
-    fun method327(var_renderer: Renderer, i: Byte): Class105? {
+    fun method327(var_renderer: Renderer, i: Byte): AbstractModelRenderer? {
         anInt432++
         if (anInt421 < 0) return null
-        var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 118) as Class105?
-        if (class105 == null) {
+        var abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 118) as AbstractModelRenderer?
+        if (abstractModelRenderer == null) {
             method330(var_renderer, -66)
-            class105 = this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 119) as Class105?
+            abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 119) as AbstractModelRenderer?
         }
         val i_0_ = 20 % ((i - 19) / 51)
-        return class105
+        return abstractModelRenderer
     }
 
     private fun method329(class348_sub49: Class348_Sub49, i: Int, i_1_: Int) {
@@ -101,16 +101,16 @@ class Class31 {
         }
     }
 
-    fun method331(var_renderer: Renderer, i: Byte): Class105? {
+    fun method331(var_renderer: Renderer, i: Byte): AbstractModelRenderer? {
         anInt441++
         if (anInt433 < 0) return null
         val i_2_ = -84 % ((i - 32) / 35)
-        var class105 = this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -50) as Class105?
-        if (class105 == null) {
+        var abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -50) as AbstractModelRenderer?
+        if (abstractModelRenderer == null) {
             method330(var_renderer, -89)
-            class105 = this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -117) as Class105?
+            abstractModelRenderer = this.aClass219_438!!.aClass60_2862.method583(anInt433.toLong(), -117) as AbstractModelRenderer?
         }
-        return class105
+        return abstractModelRenderer
     }
 
     fun method332(i: Int, class348_sub49: Class348_Sub49) {

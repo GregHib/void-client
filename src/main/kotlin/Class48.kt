@@ -105,7 +105,7 @@ class Class48 {
                     Class352.anInt4337 = -3
                     Class367_Sub2.anInt7297 = 1
                     Class169.anInt2264 = 0
-                    Class105_Sub1.anInt8398 = 0
+                    AnimatedModelRenderer.anInt8398 = 0
                     if (i >= 13) break
                     Class330.aBoolean4127 = true
                     method2172(60)

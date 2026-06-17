@@ -85,16 +85,16 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
         }
 
         @JvmStatic
-        fun method3577(i: Int, i_10_: Byte, class45: Class45): Class105? {
+        fun method3577(i: Int, i_10_: Byte, class45: Class45): AbstractModelRenderer? {
             anInt10176++
-            var class105 = Class345.aClass60_4273!!.method583(i.toLong(), -68) as Class105?
+            var abstractModelRenderer = Class345.aClass60_4273!!.method583(i.toLong(), -68) as AbstractModelRenderer?
             val i_11_ = -86 / ((55 - i_10_) / 51)
-            if (class105 == null) {
-                if (Class286_Sub7.aBoolean6289) class105 = Class348_Sub8.aRenderer6654!!.method3691(Class207.method1512(class45, i), true)
-                else class105 = Class258_Sub3.method1969(class45.method415(73.toByte(), i)!!, -5901)
-                Class345.aClass60_4273!!.method582(class105, i.toLong(), (-108).toByte())
+            if (abstractModelRenderer == null) {
+                if (Class286_Sub7.aBoolean6289) abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(Class207.method1512(class45, i), true)
+                else abstractModelRenderer = Class258_Sub3.method1969(class45.method415(73.toByte(), i)!!, -5901)
+                Class345.aClass60_4273!!.method582(abstractModelRenderer, i.toLong(), (-108).toByte())
             }
-            return class105
+            return abstractModelRenderer
         }
 
         @JvmStatic

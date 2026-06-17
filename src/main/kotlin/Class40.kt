@@ -115,25 +115,25 @@ class Class40 internal constructor() {
 
         @JvmStatic
         fun method369(i: Int) {
-            Class348_Sub45.aClass105Array7107 = null
-            Class239_Sub2.aClass105Array5857 = null
-            Class348_Sub12.aClass105Array6742 = null
-            Class240.aClass105Array4679 = null
+            Class348_Sub45.aAbstractModelRendererArray7107 = null
+            Class239_Sub2.aAbstractModelRendererArray5857 = null
+            Class348_Sub12.aAbstractModelRendererArray6742 = null
+            Class240.aAbstractModelRendererArray4679 = null
             if (i != -29776) method370(true)
-            Class79.aClass105_1365 = null
-            Class25.aClass105Array367 = null
-            Class239_Sub9.aClass105Array5933 = null
-            Class200.aClass105Array2640 = null
-            Class348_Sub40_Sub37.aClass105Array9467 = null
+            Class79.aAbstractModelRenderer_1365 = null
+            Class25.aAbstractModelRendererArray367 = null
+            Class239_Sub9.aAbstractModelRendererArray5933 = null
+            Class200.aAbstractModelRendererArray2640 = null
+            Class348_Sub40_Sub37.aAbstractModelRendererArray9467 = null
             Class262.aClass324_3326 = null
-            Class239_Sub24.aClass105_6097 = null
+            Class239_Sub24.aAbstractModelRenderer_6097 = null
             GameAppletFrame.aClass324_20 = null
             Class240.aClass324_4684 = null
-            Class169.aClass105Array2260 = null
-            Class113.aClass105Array1744 = null
-            Class264.aClass105Array3378 = null
-            Class59_Sub1.aClass105Array5294 = null
-            Class318_Sub1_Sub1_Sub1.aClass105Array9959 = null
+            Class169.aAbstractModelRendererArray2260 = null
+            Class113.aAbstractModelRendererArray1744 = null
+            Class264.aAbstractModelRendererArray3378 = null
+            Class59_Sub1.aAbstractModelRendererArray5294 = null
+            Class318_Sub1_Sub1_Sub1.aAbstractModelRendererArray9959 = null
             anInt542++
         }
 

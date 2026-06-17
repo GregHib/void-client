@@ -18,7 +18,7 @@ class Class113 {
         @JvmField
         var aClass45_1743: Class45? = null
         @JvmField
-        var aClass105Array1744: Array<Class105?>? = null
+        var aAbstractModelRendererArray1744: Array<AbstractModelRenderer?>? = null
         @JvmField
         var anInt1745: Int = 100
 
@@ -36,7 +36,7 @@ class Class113 {
         @JvmStatic
         fun method1057(bool: Boolean) {
             aClass45_1743 = null
-            aClass105Array1744 = null
+            aAbstractModelRendererArray1744 = null
             if (bool != true) method1056(110, -57, '\uffd1')
         }
     }

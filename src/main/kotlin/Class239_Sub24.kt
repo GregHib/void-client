@@ -78,7 +78,7 @@ class Class239_Sub24 : Class239 {
         @JvmField
         var aClass60_6096: Class60? = Class60(8)
         @JvmField
-        var aClass105_6097: Class105? = null
+        var aAbstractModelRenderer_6097: AbstractModelRenderer? = null
         @JvmField
         var aClass299_6098: Class299? = null
 
@@ -93,7 +93,7 @@ class Class239_Sub24 : Class239 {
         fun method1822(i: Byte) {
             aClass114_6089 = null
             aClass60_6096 = null
-            aClass105_6097 = null
+            aAbstractModelRenderer_6097 = null
             aStringArrayArray6093 = null
             aClass299_6098 = null
             if (i.toInt() != 110) aClass299_6098 = null

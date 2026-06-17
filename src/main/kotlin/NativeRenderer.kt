@@ -986,9 +986,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3629(i: Int, i_97_: Int, bool: Boolean): Class105 {
+    override fun method3629(i: Int, i_97_: Int, bool: Boolean): AbstractModelRenderer {
         anInt8040++
-        return Class105_Sub1(this, i, i_97_, bool)
+        return AnimatedModelRenderer(this, i, i_97_, bool)
     }
 
     abstract fun method3858(bool: Boolean): Float
@@ -1714,9 +1714,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         anInt7942++
     }
 
-    override fun method3683(i: Int, i_206_: Int, i_207_: Int, i_208_: Int, bool: Boolean): Class105 {
+    override fun method3683(i: Int, i_206_: Int, i_207_: Int, i_208_: Int, bool: Boolean): AbstractModelRenderer {
         anInt7993++
-        val class105_sub1 = Class105_Sub1(this, i_207_, i_208_, bool)
+        val class105_sub1 = AnimatedModelRenderer(this, i_207_, i_208_, bool)
         class105_sub1.method979(0, 0, i_207_, i_208_, i, i_206_)
         return class105_sub1
     }
@@ -1738,11 +1738,11 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         }
     }
 
-    override fun method3691(class207: Class207?, bool: Boolean): Class105 {
+    override fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer {
         try {
             anInt7978++
-            val class105: Class105
-            if (class207!!.anInt2702 == 0 || class207.anInt2696 == 0) class105 = this.method3662(1, IntArray(1), 94.toByte(), 0, 1, 1)!!
+            val abstractModelRenderer: AbstractModelRenderer
+            if (class207!!.anInt2702 == 0 || class207.anInt2696 == 0) abstractModelRenderer = this.method3662(1, IntArray(1), 94.toByte(), 0, 1, 1)!!
             else {
                 val `is` = IntArray((class207.anInt2702 * class207.anInt2696))
                 var i = 0
@@ -1766,10 +1766,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                         }
                     }
                 }
-                class105 = this.method3662(class207.anInt2702, `is`, 94.toByte(), 0, class207.anInt2702, class207.anInt2696)!!
+                abstractModelRenderer = this.method3662(class207.anInt2702, `is`, 94.toByte(), 0, class207.anInt2702, class207.anInt2696)!!
             }
-            class105.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
-            return class105
+            abstractModelRenderer.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
+            return abstractModelRenderer
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.GF(" + (if (class207 != null) "{...}" else "null") + ',' + bool + ')'))
         }
@@ -2137,10 +2137,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         } while (false)
     }
 
-    override fun method3711(`is`: IntArray?, i: Int, i_260_: Int, i_261_: Int, i_262_: Int, bool: Boolean): Class105 {
+    override fun method3711(`is`: IntArray?, i: Int, i_260_: Int, i_261_: Int, i_262_: Int, bool: Boolean): AbstractModelRenderer {
         try {
             anInt7944++
-            return Class105_Sub1(this, i_261_, i_262_, `is`, i, i_260_)
+            return AnimatedModelRenderer(this, i_261_, i_262_, `is`, i, i_260_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.BE(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_260_ + ',' + i_261_ + ',' + i_262_ + ',' + bool + ')'))
         }

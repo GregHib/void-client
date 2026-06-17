@@ -42,7 +42,7 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
 
     fun method302(i: Int) {
         synchronized(aClass60_360!!) {
-            if (i != -797644856) aClass105Array367 = null
+            if (i != -797644856) aAbstractModelRendererArray367 = null
             aClass60_360!!.method587(i xor 0x2f8b186f)
         }
         anInt372++
@@ -69,7 +69,7 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
         @JvmField
         var anInt365: Int = 0
         @JvmField
-        var aClass105Array367: Array<Class105?>? = null
+        var aAbstractModelRendererArray367: Array<AbstractModelRenderer?>? = null
         @JvmField
         var aBoolean368: Boolean = false
         @JvmField
@@ -110,7 +110,7 @@ class Class25 internal constructor(class230: Class230?, i: Int, class45: Class45
             anIntArray369 = null
             if (i.toInt() != 79) method303(-22, -13)
             aClass351_364 = null
-            aClass105Array367 = null
+            aAbstractModelRendererArray367 = null
         }
     }
 }

@@ -39,7 +39,7 @@ class Class341 {
         var anInt4231: Int = 0
         var anInt4232: Int = 0
         var anIntArrayArray4233: Array<IntArray?>? = arrayOfNulls<IntArray>(6)
-        var aClass105Array4234: Array<Class105?>? = null
+        var aAbstractModelRendererArray4234: Array<AbstractModelRenderer?>? = null
         @JvmField
         var anInt4235: Int
         var aClass124Array4236: Array<Class124?>? = arrayOfNulls<Class124>(4)
@@ -70,7 +70,7 @@ class Class341 {
             anIntArrayArray4233 = null
             aClass348_Sub24_4226 = null
             if (i >= 93) {
-                aClass105Array4234 = null
+                aAbstractModelRendererArray4234 = null
                 aClass124Array4236 = null
             }
         }

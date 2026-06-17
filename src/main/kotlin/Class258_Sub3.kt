@@ -246,7 +246,7 @@ open class Class258_Sub3 : Class258 {
         }
 
         @JvmStatic
-        fun method1969(`is`: ByteArray, i: Int): Class105? {
+        fun method1969(`is`: ByteArray, i: Int): AbstractModelRenderer? {
             anInt8546++
             if (i != -5901) anInt8550 = 83
             if (`is` == null) throw RuntimeException("")

@@ -63,7 +63,7 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
         var anInt4677: Int = 0
         var anInt4678: Int = 0
         @JvmField
-        var aClass105Array4679: Array<Class105?>? = null
+        var aAbstractModelRendererArray4679: Array<AbstractModelRenderer?>? = null
         var anInt4680: Int = 0
         var anInt4681: Int = 0
         var aLong4683: Long = 0
@@ -89,7 +89,7 @@ class Class240 internal constructor(class339: Class339?, class125: Class125?) : 
 
         @JvmStatic
         fun method1853(i: Byte) {
-            aClass105Array4679 = null
+            aAbstractModelRendererArray4679 = null
             if (i.toInt() != 48) anInt4674 = -62
             aClass323_4672 = null
             aClass324_4684 = null

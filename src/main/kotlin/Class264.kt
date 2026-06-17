@@ -88,7 +88,7 @@ class Class264 {
         var anInt3375: Int = 0
         var anInt3376: Int = 0
         var anInt3377: Int = 0
-        var aClass105Array3378: Array<Class105?>? = null
+        var aAbstractModelRendererArray3378: Array<AbstractModelRenderer?>? = null
 
         fun method2015(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt3375++
@@ -118,7 +118,7 @@ class Class264 {
 
         @JvmStatic
         fun method2018(i: Int) {
-            aClass105Array3378 = null
+            aAbstractModelRendererArray3378 = null
             aClass114_3371 = null
             aClass114_3368 = null
             if (i != 0) method2015(30, 1, -62)

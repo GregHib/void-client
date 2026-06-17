@@ -30,7 +30,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
 
     companion object {
         var anIntArray4806: IntArray?
-        var aClass105_4808: Class105? = null
+        var aAbstractModelRenderer_4808: AbstractModelRenderer? = null
         var anInt4809: Int = 0
         var anInt4810: Int = 0
         var anInt4811: Int = 0
@@ -101,7 +101,7 @@ class Class309 internal constructor(private val aString4807: String?) : Interfac
             anIntArray4822 = null
             anIntArray4813 = null
             anIntArray4817 = null
-            aClass105_4808 = null
+            aAbstractModelRenderer_4808 = null
             anIntArray4806 = null
             anIntArray4812 = null
         }

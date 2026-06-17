@@ -785,12 +785,12 @@ class Class361 {
                         else i_43_ = (i_40_.toFloat() * f).toInt()
                         i_41_ += (-i_43_ + i) / 2
                         i_39_ += (i_40_ + -i_42_) / 2
-                        if (Class67.aClass105_4643 == null || i_40_ != Class67.aClass105_4643!!.method971() || (Class67.aClass105_4643!!.method969() != i)) {
+                        if (Class67.aAbstractModelRenderer_4643 == null || i_40_ != Class67.aAbstractModelRenderer_4643!!.method971() || (Class67.aAbstractModelRenderer_4643!!.method969() != i)) {
                             method751(Class75.anInt1266, (Class75.anInt1267 + Class75.anInt1263), (Class75.anInt1266 - -Class75.anInt1259), Class75.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_)
                             Class75.method748(var_renderer)
-                            Class67.aClass105_4643 = var_renderer.method3683(i_39_, i_41_, i_42_, i_43_, false)
+                            Class67.aAbstractModelRenderer_4643 = var_renderer.method3683(i_39_, i_41_, i_42_, i_43_, false)
                         }
-                        Class67.aClass105_4643!!.method974(i_39_, i_41_)
+                        Class67.aAbstractModelRenderer_4643!!.method974(i_39_, i_41_)
                         val i_44_ = Class25.anInt370 * i_42_ / Class75.anInt1259
                         val i_45_ = i_43_ * Class182.anInt2446 / Class75.anInt1267
                         val i_46_ = i_39_ - -(i_42_ * Class368.anInt4509 / Class75.anInt1259)

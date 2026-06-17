@@ -86,7 +86,7 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
         var anInt5292: Int = 0
         var anInt5293: Int = 0
         @JvmField
-        var aClass105Array5294: Array<Class105?>? = null
+        var aAbstractModelRendererArray5294: Array<AbstractModelRenderer?>? = null
         @JvmField
         var anInt5295: Int = 0
         var aClass297_5297: Class297? = null
@@ -174,7 +174,7 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
 
         @JvmStatic
         fun method553(i: Int) {
-            aClass105Array5294 = null
+            aAbstractModelRendererArray5294 = null
             aClass351_5288 = null
             if (i != 0) aClass297_5297 = null
             aClass297_5297 = null

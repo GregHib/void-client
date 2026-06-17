@@ -14,7 +14,7 @@ class Class287 {
         try {
             anInt3692++
             if (Class219.aClass223_2868 == class223) return Class170.method1312(64.toByte(), class348_sub49!!)
-            if (Class348_Sub49.aClass223_7175 == class223) return Class105_Sub1.method987(743571200, class348_sub49!!)
+            if (Class348_Sub49.aClass223_7175 == class223) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
             if (MatrixCameraTransform.aClass223_5689 == class223) return Class303.method2287(class348_sub49!!, (-112).toByte())
             if (class223 == Class28.aClass223_4997) return Class337.method2660(26.toByte(), class348_sub49!!)
             if (bool != true) Companion.method2180((-104).toByte())
@@ -127,8 +127,8 @@ class Class287 {
                         val d = atan2(i_23_.toDouble(), i_24_.toDouble())
                         val i_25_ = (i_19_.toDouble() * sin(d)).toInt()
                         val i_26_ = (cos(d) * i_19_.toDouble()).toInt()
-                        Class200.aClass105Array2640!![i_17_]!!.method981((class46.anInt709.toFloat() / 2.0f + i_15_.toFloat() + i_25_.toFloat()), (i.toFloat() + class46.anInt789.toFloat() / 2.0f - i_26_.toFloat()), 4096, (65535.0 * (-d / 6.283185307179586)).toInt())
-                    } else method1211(i, Class59_Sub1.aClass105Array5294!![i_17_], i_15_, class46, var_sprite, i_14_, 2, i_16_)
+                        Class200.aAbstractModelRendererArray2640!![i_17_]!!.method981((class46.anInt709.toFloat() / 2.0f + i_15_.toFloat() + i_25_.toFloat()), (i.toFloat() + class46.anInt789.toFloat() / 2.0f - i_26_.toFloat()), 4096, (65535.0 * (-d / 6.283185307179586)).toInt())
+                    } else method1211(i, Class59_Sub1.aAbstractModelRendererArray5294!![i_17_], i_15_, class46, var_sprite, i_14_, 2, i_16_)
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("vp.D(" + l + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + (if (var_sprite != null) "{...}" else "null") + ')'))

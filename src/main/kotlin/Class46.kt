@@ -803,13 +803,13 @@ class Class46 {
         return `is`
     }
 
-    fun method443(var_renderer: Renderer, i: Byte): Class105? {
+    fun method443(var_renderer: Renderer, i: Byte): AbstractModelRenderer? {
         anInt819++
         Class348_Sub42_Sub13.aBoolean9616 = false
         val l = ((this.anInt809.toLong() shl 40) + (((if (this.aBoolean790) 1L else 0L) shl 38) + ((this.anInt672.toLong() shl 36) + ((if (this.aBoolean745) 1L else 0L) shl 35))) + (this.anInt756.toLong() + ((if (!this.aBoolean735) 0L else 1L) shl 39)))
-        var class105 = Class351.aClass60_4327!!.method583(l, -71) as Class105?
+        var abstractModelRenderer = Class351.aClass60_4327!!.method583(l, -71) as AbstractModelRenderer?
         if (i > -27) method434(true)
-        if (class105 != null) return class105
+        if (abstractModelRenderer != null) return abstractModelRenderer
         val class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
         if (class207 == null) {
             Class348_Sub42_Sub13.aBoolean9616 = true
@@ -822,9 +822,9 @@ class Class46 {
         if (this.anInt672 >= 1) class207.method1515(1)
         if (this.anInt672 >= 2) class207.method1515(16777215)
         if (this.anInt809 != 0) class207.method1511(0xffffff.inv() or this.anInt809)
-        class105 = var_renderer.method3691(class207, true)
-        Class351.aClass60_4327!!.method580(31902, class105, l, (class105!!.method971() * class105.method969() * 4))
-        return class105
+        abstractModelRenderer = var_renderer.method3691(class207, true)
+        Class351.aClass60_4327!!.method580(31902, abstractModelRenderer, l, (abstractModelRenderer!!.method971() * abstractModelRenderer.method969() * 4))
+        return abstractModelRenderer
     }
 
     fun method444(bool: Boolean, class25: Class25?, class84: Class84?): Class305? {

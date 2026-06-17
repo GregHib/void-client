@@ -36,10 +36,10 @@ class Class151 {
         }
 
         @JvmStatic
-        fun method1211(i: Int, class105: Class105?, i_2_: Int, class46: Class46?, var_sprite: Sprite?, i_3_: Int, i_4_: Int, i_5_: Int) {
+        fun method1211(i: Int, abstractModelRenderer: AbstractModelRenderer?, i_2_: Int, class46: Class46?, var_sprite: Sprite?, i_3_: Int, i_4_: Int, i_5_: Int) {
             try {
                 anInt2064++
-                if (class105 != null) {
+                if (abstractModelRenderer != null) {
                     val i_6_: Int
                     if (Class348_Sub40_Sub21.anInt9282 != 4) i_6_ = (0x3fff and Class314.aFloat3938.toInt() - -OpenGlRenderNode.anInt10483)
                     else i_6_ = 0x3fff and Class314.aFloat3938.toInt()
@@ -54,11 +54,11 @@ class Class151 {
                         }
                         val i_11_ = i_5_ * i_10_ + i_3_ * i_9_ shr 14
                         val i_12_ = i_3_ * i_10_ + -(i_9_ * i_5_) shr 14
-                        class105.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(class105.method966() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(class105.method980() / 2))), var_sprite, i_2_, i)
+                        abstractModelRenderer.method963((i_11_ + (class46.anInt709 / 2 + (i_2_ + -(abstractModelRenderer.method966() / 2)))), (i - -(class46.anInt789 / 2) + (-i_12_ + -(abstractModelRenderer.method980() / 2))), var_sprite, i_2_, i)
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (class105 != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ok.C(" + i + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (class46 != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'))
             }
         }
 

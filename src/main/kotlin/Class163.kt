@@ -155,16 +155,16 @@ class Class163 internal constructor(i: Int, i_27_: Int) {
             while (`is`.size > i_24_) {
                 val class321 = Class348_Sub23_Sub2.aClass187_9036!!.method1408(-12637, `is`[i_24_])
                 if (class321.anInt4000 != -1) {
-                    var class105 = (Class34.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? Class105?)
-                    if (class105 == null) {
+                    var abstractModelRenderer = (Class34.aClass60_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
+                    if (abstractModelRenderer == null) {
                         val class207 = Class207.method1521(Class21.aClass45_322!!, class321.anInt4000, 0)
                         if (class207 != null) {
-                            class105 = Class348_Sub8.aRenderer6654!!.method3691(class207, true)
-                            Class34.aClass60_463!!.method582(class105, class321.anInt4000.toLong(), (-127).toByte())
+                            abstractModelRenderer = Class348_Sub8.aRenderer6654!!.method3691(class207, true)
+                            Class34.aClass60_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
                         }
                     }
-                    if (class105 != null) {
-                        Class341.aClass105Array4234!![i] = class105
+                    if (abstractModelRenderer != null) {
+                        Class341.aAbstractModelRendererArray4234!![i] = abstractModelRenderer
                         stringbuffer.append(" <img=").append(i).append(">")
                         i++
                     }

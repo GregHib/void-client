@@ -20,7 +20,7 @@ class OutputStream_Sub2 : OutputStream() {
         @JvmField
         var anInt105: Int = 0
         @JvmField
-        var aClass105_106: Class105? = null
+        var aAbstractModelRenderer_106: AbstractModelRenderer? = null
         @JvmField
         var anInt107: Int = 0
         @JvmField
@@ -92,14 +92,14 @@ class OutputStream_Sub2 : OutputStream() {
                 } else `is` = (Exception_Sub1.aClass255_112!!.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772)
             } else `is` = (Exception_Sub1.aClass255_112!!.method1940(-115, class348_sub42_sub12.aLong9605.toInt()).anIntArray2772)
             if (`is` != null) string += Class163.method1273(`is`, true)
-            var i = Class369.aClass143_4962!!.method1186(string, Class341.aClass105Array4234, bool)
-            if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24.aClass105_6097!!.method971() + 4
+            var i = Class369.aClass143_4962!!.method1186(string, Class341.aAbstractModelRendererArray4234, bool)
+            if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24.aAbstractModelRenderer_6097!!.method971() + 4
             return i
         }
 
         @JvmStatic
         fun method139(i: Int) {
-            if (i > 53) aClass105_106 = null
+            if (i > 53) aAbstractModelRenderer_106 = null
         }
 
         init {

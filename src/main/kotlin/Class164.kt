@@ -1,6 +1,6 @@
 import GameAppletFrame.Companion.method85
 import AbstractCameraTransform.Companion.method901
-import Class105_Sub1.Companion.method988
+import AnimatedModelRenderer.Companion.method988
 import Class116.method1063
 import Class14_Sub2.Companion.method243
 import Class150.Companion.method1202
@@ -295,7 +295,7 @@ object Class164 {
             Class170.method1311(5139, Class348_Sub8.aRenderer6654!!)
             method3568(Class348_Sub8.aRenderer6654, i xor 0x6ff7.inv())
             Class255.method1933(Class21.aClass45_322, Class348_Sub8.aRenderer6654, true)
-            method901(Class113.aClass105Array1744, 515880227)
+            method901(Class113.aAbstractModelRendererArray1744, 515880227)
         }
         return method3063(false)
     }

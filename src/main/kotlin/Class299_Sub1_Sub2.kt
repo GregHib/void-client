@@ -205,7 +205,7 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: OpenGlRenderer, i: In
         @JvmField
         var aClass351_8706: Class351? = Class351(79, 3)
         @JvmStatic
-        fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): Class105? {
+        fun method2263(var_renderer: Renderer?, i: Int, i_4_: Int): AbstractModelRenderer? {
             anInt8705++
             val class348_sub15 = (Class27.aClass356_389!!.method3480(i_4_.toLong(), -6008) as Class348_Sub15?)
             if (class348_sub15 != null) {

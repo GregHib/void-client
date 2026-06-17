@@ -7,9 +7,9 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
     override fun method186(i: Int, i_1_: Int, i_2_: Byte, i_3_: Int, i_4_: Int) {
         if (i_2_ <= 21) aClass207Array9929 = null
         anInt9928++
-        val i_5_ = this.aClass105_8350!!.method966()
+        val i_5_ = this.aAbstractModelRenderer_8350!!.method966()
         val i_6_ = ((this.aClass369_4635 as Class369_Sub3_Sub1).anInt10177 * method163(512) / 10 % i_5_)
-        this.aClass105_8350!!.method972(i_3_ - (i_5_ - i_6_), i, -i_6_ + (i_4_ - -i_5_), i_1_)
+        this.aAbstractModelRenderer_8350!!.method972(i_3_ - (i_5_ - i_6_), i, -i_6_ + (i_4_ - -i_5_), i_1_)
     }
 
     companion object {

@@ -627,7 +627,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val class302 = Class302()
                 class302.anInt3840 = i_77_
                 class302.anInt3831 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (class302.anInt3831 >= 0 && (class302.anInt3831 < Class239_Sub9.aClass105Array5933!!.size)) {
+                if (class302.anInt3831 >= 0 && (class302.anInt3831 < Class239_Sub9.aAbstractModelRendererArray5933!!.size)) {
                     if (class302.anInt3840 == 1 || class302.anInt3840 == 10) {
                         class302.anInt3833 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 += 6

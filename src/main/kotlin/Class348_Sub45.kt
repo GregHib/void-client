@@ -24,7 +24,7 @@ abstract class Class348_Sub45 : Class348() {
         @JvmField
         var aClass114_7106: Class114? = Class114(36, -2)
         @JvmField
-        var aClass105Array7107: Array<Class105?>? = null
+        var aAbstractModelRendererArray7107: Array<AbstractModelRenderer?>? = null
         @JvmField
         var aClass361Array7108: Array<Class361?>? = arrayOfNulls<Class361>(4)
 
@@ -58,7 +58,7 @@ abstract class Class348_Sub45 : Class348() {
             if (i != 5) method3313(-103, null)
             aClass114_7105 = null
             aClass361Array7108 = null
-            aClass105Array7107 = null
+            aAbstractModelRendererArray7107 = null
             aClass304_7103 = null
         }
     }

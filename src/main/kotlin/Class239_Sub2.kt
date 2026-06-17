@@ -11,7 +11,7 @@ class Class239_Sub2 : Class239 {
     override fun method1716(bool: Boolean) {
         anInt5854++
         this.anInt3138 = method1710(20014)
-        if (bool != false) aClass105Array5857 = null
+        if (bool != false) aAbstractModelRendererArray5857 = null
     }
 
     override fun method1710(i: Int): Int {
@@ -31,7 +31,7 @@ class Class239_Sub2 : Class239 {
 
     fun method1726(i: Int): Int {
         anInt5856++
-        if (i != -32350) aClass105Array5857 = null
+        if (i != -32350) aAbstractModelRendererArray5857 = null
         return this.anInt3138
     }
 
@@ -51,12 +51,12 @@ class Class239_Sub2 : Class239 {
         @JvmField
         var anInt5856: Int = 0
         @JvmField
-        var aClass105Array5857: Array<Class105?>? = null
+        var aAbstractModelRendererArray5857: Array<AbstractModelRenderer?>? = null
 
         @JvmStatic
         fun method1724(i: Int) {
-            aClass105Array5857 = null
-            if (i != -4) aClass105Array5857 = null
+            aAbstractModelRendererArray5857 = null
+            if (i != -4) aAbstractModelRendererArray5857 = null
         }
 
         @JvmStatic

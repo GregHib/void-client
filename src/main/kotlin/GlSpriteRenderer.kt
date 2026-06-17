@@ -14,7 +14,7 @@ import jaggl.OpenGL.Companion.glTranslatef
 import jaggl.OpenGL.Companion.glVertex2f
 import jaggl.OpenGL.Companion.glVertex2i
 
-class Class105_Sub2 : Class105 {
+class GlSpriteRenderer : AbstractModelRenderer {
     private var aBoolean8427: Boolean
     private var anInt8429 = 0
     private val aHa_Sub2_8430: OpenGlRenderer?

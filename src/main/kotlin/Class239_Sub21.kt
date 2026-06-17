@@ -134,8 +134,8 @@ class Class239_Sub21 : Class239 {
                             c_26_ = c_24_
                             val bool = false
                         } else c_26_ = string.get(i_23_++)
-                        c = Class105_Sub2.method990(c_25_, (-39).toByte())
-                        c_24_ = Class105_Sub2.method990(c_26_, (-127).toByte())
+                        c = GlSpriteRenderer.method990(c_25_, (-39).toByte())
+                        c_24_ = GlSpriteRenderer.method990(c_26_, (-127).toByte())
                         c_25_ = method1765(c_25_, i_18_, 105)
                         c_26_ = method1765(c_26_, i_18_, 105)
                         if (c_25_ != c_26_ && (c_26_.uppercaseChar() != c_25_.uppercaseChar())) {

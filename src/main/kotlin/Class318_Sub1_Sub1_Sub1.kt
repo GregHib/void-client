@@ -95,7 +95,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
     }
 
     public override fun method2379(i: Int): Int {
-        if (i != -25675) aClass105Array9959 = null
+        if (i != -25675) aAbstractModelRendererArray9959 = null
         anInt9965++
         return this.aClass235_9955!!.method1664(i xor 0x647d)
     }
@@ -173,7 +173,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
         var anInt9956: Int = 0
         var anInt9957: Int = 0
         var anInt9958: Int = 0
-        var aClass105Array9959: Array<Class105?>? = null
+        var aAbstractModelRendererArray9959: Array<AbstractModelRenderer?>? = null
         var anInt9960: Int = 0
         var anInt9961: Int = 0
         var anInt9962: Int = 0
@@ -194,7 +194,7 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_renderer: Renderer?, clas
         @JvmStatic
         fun method2398(i: Byte) {
             if (i.toInt() != -83) anIntArray9949 = null
-            aClass105Array9959 = null
+            aAbstractModelRendererArray9959 = null
             anIntArray9949 = null
         }
 

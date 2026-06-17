@@ -181,14 +181,14 @@ abstract class Class318_Sub1 : Class318() {
                                 var_renderer!!.method3636(`is`[`is`.size + -2], `is`[-1 + `is`.size], `is`[0], `is`[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).size + -1)]).toInt() and 0xff]), 1, var_sprite, i_6_, i)
                             }
                         }
-                        var class105: Class105? = null
+                        var abstractModelRenderer: AbstractModelRenderer? = null
                         if (class42.anInt578 != -1) {
-                            class105 = class42.method374(false, var_renderer!!, 127.toByte())
-                            if (class105 != null) Class151.method1211(i, class105, i_6_, class46, var_sprite, i_8_, 2, i_5_)
+                            abstractModelRenderer = class42.method374(false, var_renderer!!, 127.toByte())
+                            if (abstractModelRenderer != null) Class151.method1211(i, abstractModelRenderer, i_6_, class46, var_sprite, i_8_, 2, i_5_)
                         }
                         if (class42.aString597 == null) break
                         var i_29_ = 0
-                        if (class105 != null) i_29_ = class105.method969()
+                        if (abstractModelRenderer != null) i_29_ = abstractModelRenderer.method969()
                         var class324 = Class240.aClass324_4684
                         var class143 = Class258_Sub1.aClass143_8527
                         if (class42.anInt576 == 1) {

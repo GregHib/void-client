@@ -6,7 +6,7 @@ import kotlin.concurrent.Volatile
 /* Class49 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, class105: Class105?, class216: Class216?) : Interface4 {
+class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModelRenderer: AbstractModelRenderer?, class216: Class216?) : Interface4 {
     var aFloatArray4719: FloatArray? = null
     var anInt4722: Int = 0
     private var aClass216_4724: Class216? = null
@@ -28,14 +28,14 @@ class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, class105: Cla
         do {
             try {
                 aHa_Sub1_4729 = var_ha_Sub1
-                if (class105 is Class105_Sub3_Sub1) {
-                    val class105_sub3_sub1 = class105
+                if (abstractModelRenderer is SoftwareRgbSpriteRenderer) {
+                    val class105_sub3_sub1 = abstractModelRenderer
                     this.anIntArray4731 = (class105_sub3_sub1.anIntArray9933)
                     this.anInt4722 = class105_sub3_sub1.anInt8470
                     this.anInt4725 = class105_sub3_sub1.anInt8471
                 } else {
-                    if (class105 !is Class105_Sub3_Sub3) throw RuntimeException()
-                    val class105_sub3_sub3 = class105
+                    if (abstractModelRenderer !is SoftwareAlphaSpriteRenderer) throw RuntimeException()
+                    val class105_sub3_sub3 = abstractModelRenderer
                     this.anInt4725 = class105_sub3_sub3.anInt8471
                     this.anInt4722 = class105_sub3_sub3.anInt8470
                     this.anIntArray4731 = (class105_sub3_sub3.anIntArray9936)
@@ -45,7 +45,7 @@ class Class49 internal constructor(var_ha_Sub1: SoftwareRenderer?, class105: Cla
                 if ((aClass216_4724!!.anInt4974 != this.anInt4725) || (this.anInt4722 != aClass216_4724!!.anInt4978)) throw RuntimeException()
                 this.aFloatArray4719 = aClass216_4724!!.aFloatArray4980
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (if (var_ha_Sub1 != null) "{...}" else "null") + ',' + (if (class105 != null) "{...}" else "null") + ',' + (if (class216 != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (if (var_ha_Sub1 != null) "{...}" else "null") + ',' + (if (abstractModelRenderer != null) "{...}" else "null") + ',' + (if (class216 != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

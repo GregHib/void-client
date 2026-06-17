@@ -58,7 +58,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
         @JvmField
         var anInt6626: Int = 0
         @JvmField
-        var aClass105_6627: Class105? = null
+        var aAbstractModelRenderer_6627: AbstractModelRenderer? = null
         @JvmField
         var anInt6628: Int = 0
         @JvmField
@@ -110,7 +110,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                                 Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                                 Class348_Sub40_Sub8.aClass238_9165 = null
                             }
-                            if (Class105_Sub1.anInt8398 >= 2) {
+                            if (AnimatedModelRenderer.anInt8398 >= 2) {
                                 Class367_Sub2.anInt7297 = 0
                                 Class352.anInt4337 = -5
                                 return
@@ -118,7 +118,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                             Class255.aClass161_3285!!.method1259(0)
                             Class367_Sub2.anInt7297 = 1
                             Class169.anInt2264 = 0
-                            Class105_Sub1.anInt8398++
+                            AnimatedModelRenderer.anInt8398++
                         }
                         if (Class367_Sub2.anInt7297 == 1) {
                             Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
@@ -148,10 +148,10 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
                         Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                         Class348_Sub40_Sub8.aClass238_9165 = null
                     }
-                    if (Class105_Sub1.anInt8398 < 2) {
+                    if (AnimatedModelRenderer.anInt8398 < 2) {
                         Class255.aClass161_3285!!.method1259(0)
                         Class169.anInt2264 = 0
-                        Class105_Sub1.anInt8398++
+                        AnimatedModelRenderer.anInt8398++
                         Class367_Sub2.anInt7297 = 1
                     } else {
                         Class352.anInt4337 = -4
@@ -164,7 +164,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
         @JvmStatic
         fun method2762(i: Int) {
             aByteArray6624 = null
-            aClass105_6627 = null
+            aAbstractModelRenderer_6627 = null
             val i_12_ = -23 % ((i - -24) / 47)
         }
     }

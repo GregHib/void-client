@@ -45,7 +45,7 @@ abstract class Class110 {
         @JvmField
         var anInt1705: Int = 0
         @JvmField
-        var aClass105_1706: Class105? = null
+        var aAbstractModelRenderer_1706: AbstractModelRenderer? = null
         @JvmField
         var anInt1707: Int = 0
         @JvmField
@@ -64,7 +64,7 @@ abstract class Class110 {
         @JvmStatic
         fun method1030(i: Int) {
             aClass114_1702 = null
-            aClass105_1706 = null
+            aAbstractModelRenderer_1706 = null
             if (i > -19) method1034(-89, null, null, -72)
         }
 

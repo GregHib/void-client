@@ -105,8 +105,8 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                         var bools = Class348_Sub8.aBooleanArrayArray6656
                         if (Class348_Sub40_Sub17.aBoolean9242) {
                             if (Class348_Sub40_Sub5.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751!![i_7_]
-                            for (i_10_ in Class105_Sub1.anInt8412..<i_8_) {
-                                val i_11_ = (i_10_ + Class37.anInt492 - Class105_Sub1.anInt8412)
+                            for (i_10_ in AnimatedModelRenderer.anInt8412..<i_8_) {
+                                val i_11_ = (i_10_ + Class37.anInt492 - AnimatedModelRenderer.anInt8412)
                                 for (i_12_ in Class240.anInt4686..<i_9_) {
                                     bools!![i_10_]!![i_12_] = false
                                     if (Class99.aBooleanArrayArray1572!![i_10_]!![i_12_]) {
@@ -135,8 +135,8 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
                         var bools = Class348_Sub8.aBooleanArrayArray6656
                         if (Class348_Sub40_Sub17.aBoolean9242) {
                             if (Class348_Sub40_Sub5.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751!![i_7_]
-                            for (i_18_ in Class105_Sub1.anInt8412..<i_16_) {
-                                val i_19_ = (i_18_ + Class37.anInt492 - Class105_Sub1.anInt8412)
+                            for (i_18_ in AnimatedModelRenderer.anInt8412..<i_16_) {
+                                val i_19_ = (i_18_ + Class37.anInt492 - AnimatedModelRenderer.anInt8412)
                                 for (i_20_ in Class240.anInt4686..<i_17_) {
                                     bools!![i_18_]!![i_20_] = (Class99.aBooleanArrayArray1572!![i_18_]!![i_20_]) && !IndexedSprite.method164(i_7_, i_19_, (-97).toByte(), (i_20_ + (Class348_Sub34.anInt6974) - (Class240.anInt4686)))
                                 }

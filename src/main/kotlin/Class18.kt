@@ -352,7 +352,7 @@ class Class18 internal constructor(var_ha_Sub2: OpenGlRenderer) {
             if (var_aa != null) {
                 Class348_Sub8.aRenderer6654!!.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789)
                 if (Class259.anInt3306 >= 3) Class348_Sub8.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
-                else Class79.aClass105_1365!!.method976((class46.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + class46.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -Class314.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
+                else Class79.aAbstractModelRenderer_1365!!.method976((class46.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + class46.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -Class314.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
             }
         }
 

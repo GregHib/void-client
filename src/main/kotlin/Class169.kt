@@ -80,7 +80,7 @@ class Class169 : Runnable {
     companion object {
         var anInt2257: Int = 0
         @JvmField
-        var aClass105Array2260: Array<Class105?>? = null
+        var aAbstractModelRendererArray2260: Array<AbstractModelRenderer?>? = null
         @JvmField
         var aClass19Array2261: Array<Class19?>? = null
         var anInt2262: Int = 0
@@ -94,7 +94,7 @@ class Class169 : Runnable {
         @JvmStatic
         fun method1300(i: Byte) {
             if (i < -127) {
-                aClass105Array2260 = null
+                aAbstractModelRendererArray2260 = null
                 aClass19Array2261 = null
             }
         }

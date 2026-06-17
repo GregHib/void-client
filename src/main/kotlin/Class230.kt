@@ -56,7 +56,7 @@ class Class230 internal constructor(string: String?, i: Int) {
                         }
                         if (!Class348_Sub16_Sub2.aBoolean8870) {
                             if (Class348_Sub49.anInt7207 == 1) method383(0)
-                            val i_22_ = -Class105_Sub1.anInt8422 + i_4_
+                            val i_22_ = -AnimatedModelRenderer.anInt8422 + i_4_
                             val i_23_ = i_6_ + -Class29.anInt403
                             val i_24_ = -Class348_Sub21.anInt6849 + i_5_
                             val i_25_ = ((Class247.aDouble3182 * i_22_.toDouble() + i_23_.toDouble() * Class319.aDouble3980 + i_24_.toDouble() * Class357.aDouble4404) * i_20_.toDouble() / i_14_.toDouble()).toInt()
@@ -258,14 +258,14 @@ class Class230 internal constructor(string: String?, i: Int) {
                             Class348_Sub40_Sub8.anInt9157 = Class348_Sub42_Sub9_Sub1.anInt10444
                             Class328.anInt4100 = 0
                             Class339.anInt4211 = Class211.anInt2747
-                            Class105_Sub1.anInt8422 = i_4_
+                            AnimatedModelRenderer.anInt8422 = i_4_
                             Class348_Sub3.anInt6568 = 0
                             Class348_Sub42_Sub4.aDouble9517 = 0.0
                             if (Class348_Sub49.anInt7207 == 0) Class21.aRenderer326!!.method3687(Class17.anInterface4_252)
                             Class21.aRenderer326!!.la()
                             Class21.aRenderer326!!.ya()
                             Class21.aRenderer326!!.GA(Class77.anInt1290)
-                            Class51.aAbstractCameraTransform_905!!.method903(Class105_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396)
+                            Class51.aAbstractCameraTransform_905!!.method903(AnimatedModelRenderer.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396)
                             Class21.aRenderer326!!.method3638(Class51.aAbstractCameraTransform_905)
                             if (Class348_Sub49.anInt7207 == 1) {
                                 Class328_Sub1_Sub1.anInt8799 = i_17_

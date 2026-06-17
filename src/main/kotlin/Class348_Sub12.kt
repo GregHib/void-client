@@ -704,7 +704,7 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
                 -25529
             ), shortArrayOf(4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574, 4444, 4328, 7052, 4490)
         )
-        var aClass105Array6742: Array<Class105?>? = null
+        var aAbstractModelRendererArray6742: Array<AbstractModelRenderer?>? = null
         var aClass273_6743: Class273?
         private var aShortArrayArray6744: Array<ShortArray?>?
 
@@ -715,7 +715,7 @@ class Class348_Sub12 internal constructor(var aClass348_Sub21_6751: Class348_Sub
         @JvmStatic
         fun method2798(i: Int) {
             aShortArrayArray6741 = null
-            aClass105Array6742 = null
+            aAbstractModelRendererArray6742 = null
             aShortArrayArray6744 = null
             aShortArrayArray6749 = null
             val i_0_ = -33 % ((-16 - i) / 53)

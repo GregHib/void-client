@@ -73,7 +73,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
         /* empty */
     }
 
-    override fun method3691(class207: Class207?, bool: Boolean): Class105 {
+    override fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer {
         val var_j = j(this, class207!!.anIntArray2697, class207.aByteArray2699, class207.aByteArray2695, 0, class207.anInt2702, class207.anInt2702, class207.anInt2696)
         var_j.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
         return var_j
@@ -292,7 +292,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun Q(i: Int, i_109_: Int, i_110_: Int, i_111_: Int, i_112_: Int, i_113_: Int, `is`: ByteArray?, i_114_: Int, i_115_: Int)
 
-    override fun method3629(i: Int, i_116_: Int, bool: Boolean): Class105 {
+    override fun method3629(i: Int, i_116_: Int, bool: Boolean): AbstractModelRenderer {
         return j(this, i, i_116_)
     }
 
@@ -350,7 +350,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun F(i: Int, i_142_: Int)
 
-    override fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): Class105 {
+    override fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): AbstractModelRenderer {
         return j(this, i, i_143_, i_144_, i_145_, !bool)
     }
 
@@ -506,7 +506,7 @@ class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) 
 
     external override fun L(i: Int, i_207_: Int, i_208_: Int)
 
-    override fun method3711(`is`: IntArray?, i: Int, i_209_: Int, i_210_: Int, i_211_: Int, bool: Boolean): Class105 {
+    override fun method3711(`is`: IntArray?, i: Int, i_209_: Int, i_210_: Int, i_211_: Int, bool: Boolean): AbstractModelRenderer {
         return j(this, `is`, i, i_209_, i_210_, i_211_, false)
     }
 

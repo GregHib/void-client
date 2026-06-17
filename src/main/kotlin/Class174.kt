@@ -89,7 +89,7 @@ class Class174 {
         @JvmField
         var aClass223_2307: Class223? = Class223(7, 2)
         @JvmField
-        var aClass105_2309: Class105? = null
+        var aAbstractModelRenderer_2309: AbstractModelRenderer? = null
 
         fun method1332(bool: Boolean, bool_0_: Boolean, i: Int, string: String): Boolean {
             anInt2293++
@@ -126,7 +126,7 @@ class Class174 {
 
         fun method1333(`is`: ShortArray?, i: Int, strings: Array<String?>?) {
             try {
-                if (i != 26073) aClass105_2309 = null
+                if (i != 26073) aAbstractModelRenderer_2309 = null
                 anInt2295++
                 method607(strings!!.size + -1, strings, `is`, 0, false)
             } catch (runtimeexception: RuntimeException) {
@@ -139,7 +139,7 @@ class Class174 {
             aClass223_2307 = null
             if (i.toInt() != -110) method1333(null, -51, null)
             aClass114_2305 = null
-            aClass105_2309 = null
+            aAbstractModelRenderer_2309 = null
             aClass45_2306 = null
         }
     }

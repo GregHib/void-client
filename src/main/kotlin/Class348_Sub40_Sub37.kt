@@ -155,7 +155,7 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
         @JvmField
         var aLongArray9465: LongArray? = null
         @JvmField
-        var aClass105Array9467: Array<Class105?>? = null
+        var aAbstractModelRendererArray9467: Array<AbstractModelRenderer?>? = null
 
         @JvmStatic
         fun method3146(i: Int, i_0_: Int, i_1_: Byte, i_2_: Int, i_3_: Int, i_4_: Int, `is`: ByteArray?, is_5_: ByteArray?, i_6_: Int) {
@@ -197,7 +197,7 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
             anIntArray9458 = null
             aLongArray9465 = null
             if (bool != true) Companion.method3146(79, -54, (-128).toByte(), -109, 85, -107, null, null, 58)
-            aClass105Array9467 = null
+            aAbstractModelRendererArray9467 = null
         }
 
         init {

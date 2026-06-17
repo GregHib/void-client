@@ -82,7 +82,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     @JvmField
     var aFloatArray7511: FloatArray? = null
     private var anInt7512: Int
-    private var aClass105_7513: Class105? = null
+    private var aAbstractModelRenderer_7513: AbstractModelRenderer? = null
 
     override fun method3695(): Boolean {
         return true
@@ -375,20 +375,20 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         if (i_94_ == -1) method3723(i, i_91_, i_92_, i_95_, class318_sub9_sub2.anInt8790, 1)
         else {
             if (anInt7512 != i_94_) {
-                var class105 = aClass60_7499.method583(i_94_.toLong(), 117) as Class105?
-                if (class105 == null) {
+                var abstractModelRenderer = aClass60_7499.method583(i_94_.toLong(), 117) as AbstractModelRenderer?
+                if (abstractModelRenderer == null) {
                     val `is` = method3719(i_94_)
                     if (`is` != null) {
                         val i_96_ = (if (method3727(i_94_)) 64 else this.anInt7501)
-                        class105 = this.method3662(i_96_, `is`, 94.toByte(), 0, i_96_, i_96_)
-                        aClass60_7499.method582(class105, i_94_.toLong(), (-121).toByte())
+                        abstractModelRenderer = this.method3662(i_96_, `is`, 94.toByte(), 0, i_96_, i_96_)
+                        aClass60_7499.method582(abstractModelRenderer, i_94_.toLong(), (-121).toByte())
                     } else return
                 }
                 anInt7512 = i_94_
-                aClass105_7513 = class105
+                aAbstractModelRenderer_7513 = abstractModelRenderer
             }
             i_93_++
-            (aClass105_7513 as Class105_Sub3).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1)
+            (aAbstractModelRenderer_7513 as SoftwareModelRenderer).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1)
         }
     }
 
@@ -772,7 +772,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         /* empty */
     }
 
-    override fun method3683(i: Int, i_215_: Int, i_216_: Int, i_217_: Int, bool: Boolean): Class105 {
+    override fun method3683(i: Int, i_215_: Int, i_216_: Int, i_217_: Int, bool: Boolean): AbstractModelRenderer {
         val `is` = IntArray(i_216_ * i_217_)
         var i_218_ = i_215_ * this.anInt7477 + i
         val i_219_ = this.anInt7477 - i_216_
@@ -781,8 +781,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             for (i_222_ in 0..<i_216_) `is`[i_221_ + i_222_] = this.anIntArray7483!![i_218_++]
             i_218_ += i_219_
         }
-        if (bool) return Class105_Sub3_Sub3(this, `is`, i_216_, i_217_)
-        return Class105_Sub3_Sub1(this, `is`, i_216_, i_217_)
+        if (bool) return SoftwareAlphaSpriteRenderer(this, `is`, i_216_, i_217_)
+        return SoftwareRgbSpriteRenderer(this, `is`, i_216_, i_217_)
     }
 
     private fun method3717() {
@@ -1045,7 +1045,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4 {
-        return Class49(this, interface3 as Class105?, interface13 as Class216?)
+        return Class49(this, interface3 as AbstractModelRenderer?, interface13 as Class216?)
     }
 
     public override fun C(bool: Boolean) {
@@ -1419,18 +1419,18 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         if (i_379_ != 0 && i_380_ != 0) {
             if (i_382_ != 65535 && !(this.aRenderConfig4579!!.method3(i_382_, -6662)!!.aBoolean209)) {
                 if (anInt7512 != i_382_) {
-                    var class105 = (aClass60_7499.method583(i_382_.toLong(), 97) as Class105?)
-                    if (class105 == null) {
+                    var abstractModelRenderer = (aClass60_7499.method583(i_382_.toLong(), 97) as AbstractModelRenderer?)
+                    if (abstractModelRenderer == null) {
                         val `is` = method3719(i_382_)
                         if (`is` == null) return
                         val i_386_ = (if (method3727(i_382_)) 64 else this.anInt7501)
-                        class105 = this.method3662(i_386_, `is`, 94.toByte(), 0, i_386_, i_386_)
-                        aClass60_7499.method582(class105, i_382_.toLong(), (-100).toByte())
+                        abstractModelRenderer = this.method3662(i_386_, `is`, 94.toByte(), 0, i_386_, i_386_)
+                        aClass60_7499.method582(abstractModelRenderer, i_382_.toLong(), (-100).toByte())
                     }
                     anInt7512 = i_382_
-                    aClass105_7513 = class105
+                    aAbstractModelRenderer_7513 = abstractModelRenderer
                 }
-                (aClass105_7513 as Class105_Sub3).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ shl 1, i_380_ shl 1, i_384_, i_383_, i_385_, 1)
+                (aAbstractModelRenderer_7513 as SoftwareModelRenderer).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ shl 1, i_380_ shl 1, i_384_, i_383_, i_385_, 1)
             } else method3723(i, i_377_, i_378_, i_379_, i_383_, i_385_)
         }
     }
@@ -1585,7 +1585,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return false
     }
 
-    override fun method3711(`is`: IntArray?, i: Int, i_422_: Int, i_423_: Int, i_424_: Int, bool: Boolean): Class105 {
+    override fun method3711(`is`: IntArray?, i: Int, i_422_: Int, i_423_: Int, i_424_: Int, bool: Boolean): AbstractModelRenderer {
         var bool_425_ = false
         var i_426_ = i
         while_229_@ for (i_427_ in 0..<i_424_) {
@@ -1597,16 +1597,16 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
                 }
             }
         }
-        if (bool_425_) return Class105_Sub3_Sub3(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
-        return Class105_Sub3_Sub1(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
+        if (bool_425_) return SoftwareAlphaSpriteRenderer(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
+        return SoftwareRgbSpriteRenderer(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
     }
 
-    override fun method3691(class207: Class207?, bool: Boolean): Class105 {
+    override fun method3691(class207: Class207?, bool: Boolean): AbstractModelRenderer {
         val `is` = class207!!.anIntArray2697
         val is_430_ = class207.aByteArray2699
         val i = class207.anInt2702
         val i_431_ = class207.anInt2696
-        val class105_sub3: Class105_Sub3
+        val class105_sub3: SoftwareModelRenderer
         if (bool && class207.aByteArray2695 == null) {
             val is_432_ = IntArray(`is`.size)
             val is_433_ = ByteArray(i * i_431_)
@@ -1615,7 +1615,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
                 for (i_436_ in 0..<i) is_433_[i_435_ + i_436_] = is_430_[i_435_ + i_436_]
             }
             for (i_437_ in `is`.indices) is_432_[i_437_] = `is`[i_437_]
-            class105_sub3 = Class105_Sub3_Sub2(this, is_433_, is_432_, i, i_431_)
+            class105_sub3 = SoftwarePalettedSpriteRenderer(this, is_433_, is_432_, i, i_431_)
         } else {
             val is_438_ = IntArray(i * i_431_)
             val is_439_ = class207.aByteArray2695
@@ -1627,13 +1627,13 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
                         is_438_[i_444_ + i_445_] = if (i_446_ != 0) 0xffffff.inv() or i_446_ else 0
                     }
                 }
-                class105_sub3 = Class105_Sub3_Sub1(this, is_438_, i, i_431_)
+                class105_sub3 = SoftwareRgbSpriteRenderer(this, is_438_, i, i_431_)
             } else {
                 for (i_440_ in 0..<i_431_) {
                     val i_441_ = i_440_ * i
                     for (i_442_ in 0..<i) is_438_[i_441_ + i_442_] = (`is`[is_430_[i_441_ + i_442_].toInt() and 0xff] or (is_439_[i_441_ + i_442_].toInt() shl 24))
                 }
-                class105_sub3 = Class105_Sub3_Sub3(this, is_438_, i, i_431_)
+                class105_sub3 = SoftwareAlphaSpriteRenderer(this, is_438_, i, i_431_)
             }
         }
         class105_sub3.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
@@ -1852,9 +1852,9 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    override fun method3629(i: Int, i_519_: Int, bool: Boolean): Class105 {
-        if (bool) return Class105_Sub3_Sub3(this, i, i_519_)
-        return Class105_Sub3_Sub1(this, i, i_519_)
+    override fun method3629(i: Int, i_519_: Int, bool: Boolean): AbstractModelRenderer {
+        if (bool) return SoftwareAlphaSpriteRenderer(this, i, i_519_)
+        return SoftwareRgbSpriteRenderer(this, i, i_519_)
     }
 
     override fun method3630(bool: Boolean) {

@@ -5,7 +5,7 @@ import Class59.Companion.method544
 * Visit http://jode.sourceforge.net/
 */
 class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, class369_sub1: Class369_Sub1?) : Class5(class45, class45_4_, class369_sub1) {
-    private var aClass105_8366: Class105? = null
+    private var aAbstractModelRenderer_8366: AbstractModelRenderer? = null
     public override fun method178(i: Int, bool: Boolean, i_0_: Byte, i_1_: Int) {
         if (i_0_ >= -6) method202(-4, null)
         anInt8376++
@@ -24,7 +24,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
         anInt8371++
         if (i == 10286) {
             super.method7(i)
-            aClass105_8366 = Class369_Sub3_Sub1.method3577((this.aClass369_4635 as Class369_Sub1).anInt8582, (-96).toByte(), this.aClass45_4632!!)
+            aAbstractModelRenderer_8366 = Class369_Sub3_Sub1.method3577((this.aClass369_4635 as Class369_Sub1).anInt8582, (-96).toByte(), this.aClass45_4632!!)
         }
     }
 
@@ -35,7 +35,7 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
         val i_11_ = -50 % ((-20 - i) / 57)
         Class348_Sub8.aRenderer6654!!.K(`is`)
         Class348_Sub8.aRenderer6654!!.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aClass369_4635!!.anInt4963))
-        aClass105_8366!!.method972(i_9_, 2 + i_8_, (this.aClass369_4635!!.anInt4971), (this.aClass369_4635!!.anInt4963))
+        aAbstractModelRenderer_8366!!.method972(i_9_, 2 + i_8_, (this.aClass369_4635!!.anInt4971), (this.aClass369_4635!!.anInt4963))
         Class348_Sub8.aRenderer6654!!.KA(`is`[0], `is`[1], `is`[2], `is`[3])
     }
 

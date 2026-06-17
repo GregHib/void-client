@@ -7,7 +7,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
     private var anInt3859 = -1
     private var anInt3863 = 0
     private val aClass72Array3865: Array<Class72?>?
-    private var aClass105_3867: Class105? = null
+    private var aAbstractModelRenderer_3867: AbstractModelRenderer? = null
     private val aClass72_3871: Class72?
 
     fun method2292(i: Int, var_renderer: Renderer, i_0_: Int): Boolean {
@@ -17,7 +17,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
             if (i_1_ > 512) i_1_ = 512
             if (i_1_ <= 0) i_1_ = 1
             if (i_1_ != anInt3863) {
-                aClass105_3867 = null
+                aAbstractModelRenderer_3867 = null
                 anInt3863 = i_1_
             }
             if (aClass72Array3862 != null) {
@@ -57,12 +57,12 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
         anInt3860++
         if (anInt3858 != -1 && anInt3863 != 0) {
             val class12 = MatrixCameraTransform.aRenderConfig5684!!.method3(anInt3858, -6662)
-            if (aClass105_3867 == null && MatrixCameraTransform.aRenderConfig5684!!.method4(-7953, anInt3858)) {
+            if (aAbstractModelRenderer_3867 == null && MatrixCameraTransform.aRenderConfig5684!!.method4(-7953, anInt3858)) {
                 val `is` = (if (class12!!.anInt200 == 2) MatrixCameraTransform.aRenderConfig5684!!.method6(-21540, anInt3863, 0.7f, anInt3858, false, anInt3863) else MatrixCameraTransform.aRenderConfig5684!!.method5(false, anInt3858, 0.7f, anInt3863, anInt3863, -119))
-                aClass105_3867 = var_renderer.method3662(anInt3863, `is`, 94.toByte(), 0, anInt3863, anInt3863)
+                aAbstractModelRenderer_3867 = var_renderer.method3662(anInt3863, `is`, 94.toByte(), 0, anInt3863, anInt3863)
             }
             if (class12!!.anInt200 == 2) var_renderer.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0)
-            if (aClass105_3867 != null) {
+            if (aAbstractModelRenderer_3867 != null) {
                 val i_14_ = if (class12.anInt200 == 2) 1 else 0
                 var i_15_ = i_13_ * i_11_ / -4096
                 var i_16_: Int
@@ -83,7 +83,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
                 while (i_8_ > i_17_) {
                     var i_18_ = i_15_ + -i_13_
                     while (i_18_ < i_13_) {
-                        aClass105_3867!!.method970(i_7_ + i_17_, i_18_ + i_9_, i_13_, i_13_, 1, 0, i_14_)
+                        aAbstractModelRenderer_3867!!.method970(i_7_ + i_17_, i_18_ + i_9_, i_13_, i_13_, 1, 0, i_14_)
                         i_18_ += i_13_
                     }
                     i_17_ += i_13_
@@ -103,7 +103,7 @@ class Class305 internal constructor(private val anInt3858: Int, private val aCla
                 i_21_++
             }
         }
-        aClass105_3867 = null
+        aAbstractModelRenderer_3867 = null
     }
 
     init {

@@ -350,7 +350,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     i_50_ = (class46.anInt749)
                                                 }
                                                 if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, (class46.anInt709) + i_24_, (class46.anInt789) + i_25_)
-                                                class324.method2568(null, class46.anInt789, (-77).toByte(), null, 0, Class113.aClass105Array1744, (-(i_28_ and 0xff) + 255 shl 24) or i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (if (!(class46.aBoolean769)) -1 else (-(0xff and i_28_) + 255 shl 24)), class46.anInt773, class46.anInt673)
+                                                class324.method2568(null, class46.anInt789, (-77).toByte(), null, 0, Class113.aAbstractModelRendererArray1744, (-(i_28_ and 0xff) + 255 shl 24) or i_50_, i_25_, class46.anInt709, class46.anInt700, string, 0, i_24_, class46.anInt762, (if (!(class46.aBoolean769)) -1 else (-(0xff and i_28_) + 255 shl 24)), class46.anInt773, class46.anInt673)
                                                 if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                 if (string!!.trim { it <= ' ' }.length > 0) {
                                                     if (Class318_Sub1_Sub3_Sub2.aBoolean10046) {
@@ -360,8 +360,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                         }
                                                     } else {
                                                         val class143 = (method1151(-25411, (Class348_Sub8.aRenderer6654), (class46.anInt702)))
-                                                        val i_51_ = (class143!!.method1187(string, bool_15_, class46.anInt709, (Class113.aClass105Array1744)))
-                                                        val i_52_ = (class143.method1185((Class113.aClass105Array1744), 0, class46.anInt673, class46.anInt709, string))
+                                                        val i_51_ = (class143!!.method1187(string, bool_15_, class46.anInt709, (Class113.aAbstractModelRendererArray1744)))
+                                                        val i_52_ = (class143.method1185((Class113.aAbstractModelRendererArray1744), 0, class46.anInt673, class46.anInt709, string))
                                                         if (Class59_Sub1.aBoolean5300) {
                                                             if (!bool) Class54.method503(i_25_ + i_52_, i_24_, (-74).toByte(), (i_24_ - -i_51_), i_25_)
                                                             else Class338.method2663(-5590, i_24_, i_51_ + i_24_, i_25_, (i_25_ + i_52_))
@@ -372,17 +372,17 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         } else if (class46.anInt774 == 5) {
                                             if (class46.anInt705 >= 0) class46.method444(bool_15_, Class123.aClass25_1813, Class30.aClass84_413)!!.method2293(0, Class348_Sub8.aRenderer6654!!, (-35).toByte(), i_24_, class46.anInt709, i_25_, (class46.anInt835 shl 3), (class46.anInt759 shl 3), 0, class46.anInt789)
                                             else {
-                                                val class105: Class105?
+                                                val abstractModelRenderer: AbstractModelRenderer?
                                                 if (class46.anInt812 != -1) {
                                                     val class154 = (if (class46.aBoolean720) (Class132.aPlayer_1907!!.aClass154_10536) else null)
-                                                    class105 = (Exception_Sub1.aClass255_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), Class348_Sub8.aRenderer6654, class154))
-                                                } else if ((class46.anInt806) == -1) class105 = (class46.method443(Class348_Sub8.aRenderer6654!!, (-57).toByte()))
-                                                else class105 = (method2263(Class348_Sub8.aRenderer6654, 0, (class46.anInt806)))
-                                                if (class105 == null) {
+                                                    abstractModelRenderer = (Exception_Sub1.aClass255_112!!.method1941((class46.anInt672), (-74).toByte(), (class46.anInt812), (class46.anInt781), (0xffffff.inv() or (class46.anInt809)), (class46.anInt678), Class348_Sub8.aRenderer6654, class154))
+                                                } else if ((class46.anInt806) == -1) abstractModelRenderer = (class46.method443(Class348_Sub8.aRenderer6654!!, (-57).toByte()))
+                                                else abstractModelRenderer = (method2263(Class348_Sub8.aRenderer6654, 0, (class46.anInt806)))
+                                                if (abstractModelRenderer == null) {
                                                     if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46)
                                                 } else {
-                                                    val i_53_ = class105.method966()
-                                                    val i_54_ = class105.method980()
+                                                    val i_53_ = abstractModelRenderer.method966()
+                                                    val i_54_ = abstractModelRenderer.method980()
                                                     val i_55_ = ((-(i_28_ and 0xff) + 255 shl 24) or (if ((class46.anInt749) != 0) (class46.anInt749 and 0xffffff) else 16777215))
                                                     if (class46.aBoolean697) {
                                                         Class348_Sub8.aRenderer6654!!.T(i_24_, i_25_, i_24_ - -(class46.anInt709), (class46.anInt789) + i_25_)
@@ -391,20 +391,20 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                             val i_57_ = ((i_54_ - 1 + (class46.anInt789)) / i_54_)
                                                             for (i_58_ in 0..<i_56_) {
                                                                 for (i_59_ in 0..<i_57_) {
-                                                                    if ((class46.anInt749) == 0) class105.method981(((i_53_.toFloat() / 2.0f) + (i_24_ - -(i_53_ * i_58_)).toFloat()), ((i_54_.toFloat() / 2.0f) + (i_59_ * i_54_ + i_25_).toFloat()), 4096, (class46.anInt828))
-                                                                    else class105.method977(((i_53_.toFloat() / 2.0f) + (i_53_ * i_58_ + i_24_).toFloat()), ((i_54_.toFloat() / 2.0f) + (i_25_ + i_59_ * i_54_).toFloat()), 4096, (class46.anInt828), 0, i_55_, 1)
+                                                                    if ((class46.anInt749) == 0) abstractModelRenderer.method981(((i_53_.toFloat() / 2.0f) + (i_24_ - -(i_53_ * i_58_)).toFloat()), ((i_54_.toFloat() / 2.0f) + (i_59_ * i_54_ + i_25_).toFloat()), 4096, (class46.anInt828))
+                                                                    else abstractModelRenderer.method977(((i_53_.toFloat() / 2.0f) + (i_53_ * i_58_ + i_24_).toFloat()), ((i_54_.toFloat() / 2.0f) + (i_25_ + i_59_ * i_54_).toFloat()), 4096, (class46.anInt828), 0, i_55_, 1)
                                                                 }
                                                             }
-                                                        } else if ((class46.anInt749) != 0 || (i_28_ != 0)) class105.method965(i_24_, i_25_, (class46.anInt709), (class46.anInt789), 0, i_55_, 1)
-                                                        else class105.method972(i_24_, i_25_, (class46.anInt709), (class46.anInt789))
+                                                        } else if ((class46.anInt749) != 0 || (i_28_ != 0)) abstractModelRenderer.method965(i_24_, i_25_, (class46.anInt709), (class46.anInt789), 0, i_55_, 1)
+                                                        else abstractModelRenderer.method972(i_24_, i_25_, (class46.anInt709), (class46.anInt789))
                                                         Class348_Sub8.aRenderer6654!!.KA(i, i_12_, i_14_, i_17_)
                                                     } else if ((class46.anInt749) == 0 && i_28_ == 0) {
-                                                        if ((class46.anInt828) != 0) class105.method981((i_24_.toFloat() + ((class46.anInt709).toFloat() / 2.0f)), (((class46.anInt789).toFloat() / 2.0f) + i_25_.toFloat()), (4096 * (class46.anInt709) / i_53_), (class46.anInt828))
-                                                        else if ((i_53_ == (class46.anInt709)) && ((class46.anInt789) == i_54_)) class105.method974(i_24_, i_25_)
-                                                        else class105.method973(i_24_, i_25_, (class46.anInt709), (class46.anInt789))
-                                                    } else if (class46.anInt828 != 0) class105.method977((i_24_.toFloat() + ((class46.anInt709).toFloat() / 2.0f)), (i_25_.toFloat() + ((class46.anInt789).toFloat() / 2.0f)), (4096 * class46.anInt709 / i_53_), (class46.anInt828), 0, i_55_, 1)
-                                                    else if (((class46.anInt709) == i_53_) && (class46.anInt789 == i_54_)) class105.method964(i_24_, i_25_, 0, i_55_, 1)
-                                                    else class105.method970(i_24_, i_25_, (class46.anInt709), (class46.anInt789), 0, i_55_, 1)
+                                                        if ((class46.anInt828) != 0) abstractModelRenderer.method981((i_24_.toFloat() + ((class46.anInt709).toFloat() / 2.0f)), (((class46.anInt789).toFloat() / 2.0f) + i_25_.toFloat()), (4096 * (class46.anInt709) / i_53_), (class46.anInt828))
+                                                        else if ((i_53_ == (class46.anInt709)) && ((class46.anInt789) == i_54_)) abstractModelRenderer.method974(i_24_, i_25_)
+                                                        else abstractModelRenderer.method973(i_24_, i_25_, (class46.anInt709), (class46.anInt789))
+                                                    } else if (class46.anInt828 != 0) abstractModelRenderer.method977((i_24_.toFloat() + ((class46.anInt709).toFloat() / 2.0f)), (i_25_.toFloat() + ((class46.anInt789).toFloat() / 2.0f)), (4096 * class46.anInt709 / i_53_), (class46.anInt828), 0, i_55_, 1)
+                                                    else if (((class46.anInt709) == i_53_) && (class46.anInt789 == i_54_)) abstractModelRenderer.method964(i_24_, i_25_, 0, i_55_, 1)
+                                                    else abstractModelRenderer.method970(i_24_, i_25_, (class46.anInt709), (class46.anInt789), 0, i_55_, 1)
                                                 }
                                             }
                                             if (Class59_Sub1.aBoolean5300) {

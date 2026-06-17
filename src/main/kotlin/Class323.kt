@@ -9,7 +9,7 @@ class Class323 internal constructor(var_renderer: Renderer, i: Int, bool: Boolea
     private val anIntArray4039: IntArray
     private var anInt4040 = 0
     private var anInt4041 = 0
-    private val aClass105Array4042: Array<Class105?>
+    private val aAbstractModelRendererArray4042: Array<AbstractModelRenderer?>
     private val anIntArray4044 = IntArray(4)
 
     private fun method2559(var_renderer: Renderer, font: Font?, fontmetrics: FontMetrics, c: Char, i: Int, bool: Boolean) {
@@ -60,7 +60,7 @@ class Class323 internal constructor(var_renderer: Renderer, i: Int, bool: Boolea
         anInt4041 = i_2_ - i_5_
         anInt4040 = i_4_
         anIntArray4039[i] = i_1_
-        aClass105Array4042[i] = var_renderer.method3662(i_0_, `is`, 94.toByte(), 0, i_0_, i_3_)
+        aAbstractModelRendererArray4042[i] = var_renderer.method3662(i_0_, `is`, 94.toByte(), 0, i_0_, i_3_)
     }
 
     fun method2560(): Int {
@@ -75,8 +75,8 @@ class Class323 internal constructor(var_renderer: Renderer, i: Int, bool: Boolea
         i_11_ = i_11_ or 0xffffff.inv()
         for (i_12_ in 0..<string.length) {
             val i_13_: Int = anIntArray4043!![string.get(i_12_).code]
-            if (bool) aClass105Array4042[i_13_]!!.method964(i + 1, i_10_ + 1, 0, -16777216, 1)
-            aClass105Array4042[i_13_]!!.method964(i, i_10_, 0, i_11_, 1)
+            if (bool) aAbstractModelRendererArray4042[i_13_]!!.method964(i + 1, i_10_ + 1, 0, -16777216, 1)
+            aAbstractModelRendererArray4042[i_13_]!!.method964(i, i_10_, 0, i_11_, 1)
             i += anIntArray4039[i_13_]
         }
     }
@@ -102,7 +102,7 @@ class Class323 internal constructor(var_renderer: Renderer, i: Int, bool: Boolea
 
     init {
         aBoolean4037 = false
-        aClass105Array4042 = arrayOfNulls<Class105>(256)
+        aAbstractModelRendererArray4042 = arrayOfNulls<AbstractModelRenderer>(256)
         anIntArray4039 = IntArray(256)
         var font = Font("Helvetica", if (bool) 1 else 0, i)
         var fontmetrics = component.getFontMetrics(font)

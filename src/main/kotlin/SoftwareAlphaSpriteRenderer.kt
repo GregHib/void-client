@@ -3,7 +3,7 @@ import kotlin.math.min
 /* Class105_Sub3_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class105_Sub3_Sub3 : Class105_Sub3 {
+class SoftwareAlphaSpriteRenderer : SoftwareModelRenderer {
     var anIntArray9936: IntArray
 
     internal constructor(var_ha_Sub1: SoftwareRenderer, `is`: IntArray, i: Int, i_0_: Int) : super(var_ha_Sub1, i, i_0_) {

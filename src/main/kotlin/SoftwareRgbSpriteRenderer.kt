@@ -3,7 +3,7 @@ import kotlin.math.min
 /* Class105_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class105_Sub3_Sub1 : Class105_Sub3 {
+class SoftwareRgbSpriteRenderer : SoftwareModelRenderer {
     var anIntArray9933: IntArray
 
     override fun method994(i: Int, i_0_: Int) {

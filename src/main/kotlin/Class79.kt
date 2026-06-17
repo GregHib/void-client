@@ -757,7 +757,7 @@ class Class79 {
         var anInt1357: Int = 0
         var anInt1359: Int = 0
         @JvmField
-        var aClass105_1365: Class105? = null
+        var aAbstractModelRenderer_1365: AbstractModelRenderer? = null
         @JvmField
         var aClient1367: Client? = null
         @JvmField
@@ -806,7 +806,7 @@ class Class79 {
 
         @JvmStatic
         fun method804(i: Int) {
-            aClass105_1365 = null
+            aAbstractModelRenderer_1365 = null
             aClient1367 = null
             if (i != -3752) anInt1387 = 14
         }

@@ -363,15 +363,15 @@ class Class213 {
             val class64 = var_renderer_38_!!.method3625(class124, i_46_, 64, anInt2791 + 64, 768 + anInt2824)
             if (!class64.method618()) return null
             if (bool_47_) class64.O(anInt2786, anInt2794, anInt2765)
-            var class105: Class105? = null
+            var abstractModelRenderer: AbstractModelRenderer? = null
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    class105 = (this.aClass255_2761!!.method1932(var_renderer_38_, i_37_, i, class324, class154, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
-                    if (class105 == null) return null
+                    abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, i_37_, i, class324, class154, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
+                    if (abstractModelRenderer == null) return null
                 }
             } else {
-                class105 = (this.aClass255_2761!!.method1932(var_renderer_38_, 0, 10, class324, class154, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
-                if (class105 == null) return null
+                abstractModelRenderer = (this.aClass255_2761!!.method1932(var_renderer_38_, 0, 10, class324, class154, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
+                if (abstractModelRenderer == null) return null
             }
             val i_48_: Int
             if (!bool) {
@@ -406,8 +406,8 @@ class Class213 {
             if (i_37_ != 0) method1571(i_37_, `is`, 119.toByte())
             var_renderer_38_.method3662(36, `is`, 94.toByte(), 0, 36, 32).method974(0, 0)
             if (this.anInt2833 == -1) {
-                if (this.anInt2812 != -1) class105!!.method974(0, 0)
-            } else class105!!.method974(0, 0)
+                if (this.anInt2812 != -1) abstractModelRenderer!!.method974(0, 0)
+            } else abstractModelRenderer!!.method974(0, 0)
             if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) class324!!.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15)
             `is` = var_renderer_38_.na(0, 0, 36, 32)
             for (i_52_ in `is`!!.indices) {

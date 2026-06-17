@@ -4,9 +4,9 @@ class Class127_Sub1 internal constructor(class45: Class45?, class288_sub1: Class
     private var anInt8383 = 0
     override fun method9(i: Byte, bool: Boolean) {
         anInt8379++
-        val i_0_ = ((this.aClass288_4659!!.aClass221_4955!!.method1607(Class92.anInt1524, this.aClass105_4655!!.method966(), (-117).toByte())) - -this.aClass288_4659!!.anInt4950)
-        val i_1_ = ((this.aClass288_4659!!.aClass341_4952!!.method2679(OpenGlRenderer.anInt7666, this.aClass105_4655!!.method980(), 1595)) + this.aClass288_4659!!.anInt4951)
-        this.aClass105_4655!!.method981((this.aClass105_4655!!.method966() / 2 + i_0_).toFloat(), (this.aClass105_4655!!.method980() / 2 + i_1_).toFloat(), 4096, anInt8383)
+        val i_0_ = ((this.aClass288_4659!!.aClass221_4955!!.method1607(Class92.anInt1524, this.aAbstractModelRenderer_4655!!.method966(), (-117).toByte())) - -this.aClass288_4659!!.anInt4950)
+        val i_1_ = ((this.aClass288_4659!!.aClass341_4952!!.method2679(OpenGlRenderer.anInt7666, this.aAbstractModelRenderer_4655!!.method980(), 1595)) + this.aClass288_4659!!.anInt4951)
+        this.aAbstractModelRenderer_4655!!.method981((this.aAbstractModelRenderer_4655!!.method966() / 2 + i_0_).toFloat(), (this.aAbstractModelRenderer_4655!!.method980() / 2 + i_1_).toFloat(), 4096, anInt8383)
         anInt8383 += (this.aClass288_4659 as Class288_Sub1).anInt8577
         if (i.toInt() != -49) method9((-26).toByte(), true)
     }

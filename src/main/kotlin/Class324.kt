@@ -11,7 +11,7 @@ import kotlin.math.sin
 abstract class Class324 internal constructor(var_renderer: Renderer?, class143: Class143?) {
     private var aRenderer4048: Renderer? = null
     private var aClass143_4063: Class143? = null
-    private fun method2566(class105s: Array<Class105?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {
+    private fun method2566(abstractModelRenderers: Array<AbstractModelRenderer?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {
         var i = i
         var i_2_ = i_2_
         try {
@@ -49,10 +49,10 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                                                     else i_11_ = 0
                                                     i_6_++
                                                     val i_12_ = (Class348_Sub41.method3156(true, (string_9_.substring(4))))
-                                                    val class105 = class105s!![i_12_]!!
+                                                    val class105 = abstractModelRenderers!![i_12_]!!
                                                     val i_13_ = (if (is_0_ == null) class105.method980() else is_0_[i_12_])
                                                     class105.method964(i + i_10_, (-i_13_ + (aClass143_4063!!.anInt1992) + (i_2_ - -i_11_)), 1, 0, 1)
-                                                    i += class105s[i_12_]!!.method966()
+                                                    i += abstractModelRenderers[i_12_]!!.method966()
                                                     i_5_ = -1
                                                 } catch (exception: Exception) {
                                                     /* empty */
@@ -93,23 +93,23 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.V(" + (if (class105s != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.V(" + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (is_0_ != null) "{...}" else "null") + ',' + (if (is_1_ != null) "{...}" else "null") + ',' + i_2_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
-    fun method2567(i: Int, string: String?, i_17_: Byte, i_18_: Int, i_19_: Int, i_20_: Int, class105s: Array<Class105?>?, `is`: IntArray?) {
+    fun method2567(i: Int, string: String?, i_17_: Byte, i_18_: Int, i_19_: Int, i_20_: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?, `is`: IntArray?) {
         try {
             anInt4056++
             if (i_17_ > 114 && string != null) {
                 method2579(i_19_, -78, i_18_)
-                method2583(0, i, 0, class105s, null, string, `is`, 25625, i_20_)
+                method2583(0, i, 0, abstractModelRenderers, null, string, `is`, 25625, i_20_)
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.R(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.R(" + i + ',' + (if (string != null) "{...}" else "null") + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ')'))
         }
     }
 
-    fun method2568(`is`: IntArray?, i: Int, i_21_: Byte, var_sprite: Sprite?, i_22_: Int, class105s: Array<Class105?>?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): Int {
+    fun method2568(`is`: IntArray?, i: Int, i_21_: Byte, var_sprite: Sprite?, i_22_: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): Int {
         var i_26_ = i_26_
         var i_31_ = i_31_
         var i_32_ = i_32_
@@ -121,13 +121,13 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
             val is_33_: IntArray?
             if ((aClass143_4063!!.anInt1993 + aClass143_4063!!.anInt1988 - -i_32_) <= i || i_32_ + i_32_ <= i) is_33_ = intArrayOf(i_25_)
             else is_33_ = null
-            var i_34_ = aClass143_4063!!.method1188(string, is_33_, Class156.aStringArray2113, 87.toByte(), class105s)
+            var i_34_ = aClass143_4063!!.method1188(string, is_33_, Class156.aStringArray2113, 87.toByte(), abstractModelRenderers)
             if (i_31_ == -1) {
                 i_31_ = i / i_32_
                 if (i_31_ <= 0) i_31_ = 1
             }
             if (i_31_ > 0 && i_31_ <= i_34_) {
-                Class156.aStringArray2113!![i_31_ - 1] = aClass143_4063!!.method1181(class105s, i_25_, (Class156.aStringArray2113!![i_31_ - 1]), 55.toByte())
+                Class156.aStringArray2113!![i_31_ - 1] = aClass143_4063!!.method1181(abstractModelRenderers, i_25_, (Class156.aStringArray2113!![i_31_ - 1]), 55.toByte())
                 i_34_ = i_31_
             }
             if (i_26_ == 3 && i_34_ == 1) i_26_ = 1
@@ -143,21 +143,21 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 } else i_36_ = (-aClass143_4063!!.anInt1993 + i + (i_24_ - (i_34_ + -1) * i_32_))
             } else i_36_ = ((-aClass143_4063!!.anInt1993 + (-aClass143_4063!!.anInt1988 + i + -(i_32_ * (-1 + i_34_)))) / 2 + (aClass143_4063!!.anInt1988 + i_24_))
             for (i_38_ in 0..<i_34_) {
-                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
-                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
-                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
+                if (i_29_ == 0) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                else if (i_29_ == 1) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + i_25_) / 2 + i_28_)
+                else if (i_29_ == 2) method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, (-aClass143_4063!!.method1183(true, (Class156.aStringArray2113!![i_38_])) + (i_25_ + i_28_)))
                 else if (i_38_ != i_34_ - 1) {
                     method2580(Class156.aStringArray2113!![i_38_]!!, 0, i_25_)
-                    method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                    method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                     Class131.anInt1902 = 0
-                } else method2583(i_27_, i_36_, i_22_, class105s, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
+                } else method2583(i_27_, i_36_, i_22_, abstractModelRenderers, var_sprite, Class156.aStringArray2113!![i_38_], `is`, 25625, i_28_)
                 i_36_ += i_32_
             }
             return i_34_
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("da.W(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')')
+                ("da.W(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_21_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')')
             )
         }
     }
@@ -173,7 +173,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         }
     }
 
-    fun method2571(i: Int, i_48_: Int, `is`: IntArray?, string: String?, i_49_: Int, i_50_: Int, class105s: Array<Class105?>?, i_51_: Int, i_52_: Int, random: Random?): Int {
+    fun method2571(i: Int, i_48_: Int, `is`: IntArray?, string: String?, i_49_: Int, i_50_: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?, i_51_: Int, i_52_: Int, random: Random?): Int {
         try {
             anInt4047++
             if (string == null) return 0
@@ -190,10 +190,10 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 if ((0x3 and random.nextInt()) == 0) i_56_++
                 i_57_++
             }
-            method2566(class105s, null, i_52_, `is`, is_55_, i_51_, string, 174)
+            method2566(abstractModelRenderers, null, i_52_, `is`, is_55_, i_51_, string, 174)
             return i_56_
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i_49_ + ',' + i_50_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_51_ + ',' + i_52_ + ',' + (if (random != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.BA(" + i + ',' + i_48_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i_49_ + ',' + i_50_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_51_ + ',' + i_52_ + ',' + (if (random != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -328,7 +328,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         }
     }
 
-    private fun method2583(i: Int, i_103_: Int, i_104_: Int, class105s: Array<Class105?>?, var_sprite: Sprite?, string: String?, `is`: IntArray?, i_105_: Int, i_106_: Int) {
+    private fun method2583(i: Int, i_103_: Int, i_104_: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?, var_sprite: Sprite?, string: String?, `is`: IntArray?, i_105_: Int, i_106_: Int) {
         var i_103_ = i_103_
         var i_106_ = i_106_
         try {
@@ -358,12 +358,12 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                                             if (string_111_.startsWith("img=")) {
                                                 try {
                                                     val i_112_ = (Class348_Sub41.method3156(true, (string_111_.substring(4))))
-                                                    val class105 = class105s!![i_112_]!!
+                                                    val class105 = abstractModelRenderers!![i_112_]!!
                                                     val i_113_ = (if (`is` == null) class105.method980() else `is`[i_112_])
                                                     if (((Class348_Sub42_Sub1.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aClass143_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))), 1)
                                                     else class105.method964(i_106_, ((aClass143_4063!!.anInt1992) + (i_103_ - i_113_)), 1, 0, 1)
                                                     i_108_ = -1
-                                                    i_106_ += class105s[i_112_]!!.method966()
+                                                    i_106_ += abstractModelRenderers[i_112_]!!.method966()
                                                 } catch (exception: Exception) {
                                                     /* empty */
                                                 }
@@ -401,7 +401,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.AA(" + i + ',' + i_103_ + ',' + i_104_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_105_ + ',' + i_106_ + ')'))
         }
     }
 
@@ -414,17 +414,17 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         }
     }
 
-    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_sprite: Sprite?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
+    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_sprite: Sprite?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
         try {
             if (bool != false) method2570(-23, 41)
             anInt4057++
-            return method2568(`is`, i_118_, 97.toByte(), var_sprite, i_120_, class105s, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i)
+            return method2568(`is`, i_118_, 97.toByte(), var_sprite, i_120_, abstractModelRenderers, i_116_, i_119_, i_122_, i_117_, string, i_121_, i_123_, i_124_, i_115_, 0, i)
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("da.J(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_115_ + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_116_ + ',' + i_117_ + ',' + i_118_ + ',' + (if (var_sprite != null) "{...}" else "null") + ',' + i_119_ + ',' + i_120_ + ',' + i_121_ + ',' + i_122_ + ',' + i_123_ + ',' + bool + ',' + i_124_ + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
-    fun method2585(`is`: IntArray?, i: Int, class105s: Array<Class105?>?, i_125_: Int, i_126_: Int, i_127_: Int, i_128_: Int, random: Random?, i_129_: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, string: String?, is_134_: IntArray?): Int {
+    fun method2585(`is`: IntArray?, i: Int, abstractModelRenderers: Array<AbstractModelRenderer?>?, i_125_: Int, i_126_: Int, i_127_: Int, i_128_: Int, random: Random?, i_129_: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, string: String?, is_134_: IntArray?): Int {
         try {
             anInt4050++
             if (string == null) return 0
@@ -453,7 +453,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
                 i_142_ = aClass143_4063!!.method1183(true, string) - -i_138_
                 i_140_ += -i_142_ + i
             }
-            method2566(class105s, null, i_140_, `is`, is_137_, i_141_, string, 174)
+            method2566(abstractModelRenderers, null, i_140_, `is`, is_137_, i_141_, string, 174)
             if (is_134_ != null) {
                 if (i_142_ == -1) i_142_ = aClass143_4063!!.method1183(true, string) - -i_138_
                 is_134_[2] = i_142_
@@ -465,7 +465,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
-                ("da.P(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class105s != null) "{...}" else "null") + ',' + i_125_ + ',' + i_126_ + ',' + i_127_ + ',' + i_128_ + ',' + (if (random != null) "{...}" else "null") + ',' + i_129_ + ',' + i_130_ + ',' + i_131_ + ',' + i_132_ + ',' + i_133_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (is_134_ != null) "{...}" else "null") + ')')
+                ("da.P(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (abstractModelRenderers != null) "{...}" else "null") + ',' + i_125_ + ',' + i_126_ + ',' + i_127_ + ',' + i_128_ + ',' + (if (random != null) "{...}" else "null") + ',' + i_129_ + ',' + i_130_ + ',' + i_131_ + ',' + i_132_ + ',' + i_133_ + ',' + (if (string != null) "{...}" else "null") + ',' + (if (is_134_ != null) "{...}" else "null") + ')')
             )
         }
     }

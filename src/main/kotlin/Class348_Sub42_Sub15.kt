@@ -24,7 +24,7 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
         this.aLong7057 = this.aLong7057 or 0x7fffffffffffffffL.inv()
         anInt9653++
         if (method3250((-89).toByte()) == 0L) Class367_Sub4.aClass107_7325!!.method1005(true, this)
-        if (i != -25490) aClass105_9659 = null
+        if (i != -25490) aAbstractModelRenderer_9659 = null
     }
 
     fun method3248(i: Int): Int {
@@ -47,7 +47,7 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
         anInt9648++
         this.aLong7057 = (0x7fffffffffffffffL.inv() and this.aLong7057 or method599(-120) + 500L)
         OpenGlTerrainTile.aClass107_8241!!.method1005(true, this)
-        if (i != -16058) aClass105_9658 = null
+        if (i != -16058) aAbstractModelRenderer_9658 = null
     }
 
     companion object {
@@ -59,16 +59,16 @@ class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Su
         var anInt9655: Int = 0
         var anInt9656: Int = 0
         var aBigInteger9657: BigInteger? = Loader.FILE_SERVER_RSA_MODULUS
-        var aClass105_9658: Class105? = null
-        var aClass105_9659: Class105? = null
+        var aAbstractModelRenderer_9658: AbstractModelRenderer? = null
+        var aAbstractModelRenderer_9659: AbstractModelRenderer? = null
         var aClass56_9660: Class56? = null
 
         @JvmStatic
         fun method3247(i: Int) {
             if (i > -49) method3247(49)
             aClass56_9660 = null
-            aClass105_9658 = null
-            aClass105_9659 = null
+            aAbstractModelRenderer_9658 = null
+            aAbstractModelRenderer_9659 = null
             aBigInteger9657 = null
         }
 
