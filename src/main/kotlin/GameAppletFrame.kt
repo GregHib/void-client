@@ -249,9 +249,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 /* empty */
             }
         }
-        if (Class348_Sub23_Sub1.aClass297_8992 != null) {
+        if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992 != null) {
             try {
-                Class348_Sub23_Sub1.aClass297_8992!!.method2234(103.toByte())
+                Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2234(103.toByte())
             } catch (exception: Exception) {
                 /* empty */
             }
@@ -281,7 +281,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (Class348_Sub40_Sub9.anGameApplet_Frame_9169 === this && !SpriteArchiveLoader.aBoolean384) {
             CameraNodeList.aLong1739 = Class62.method599(-108)
             TexGenMaterialPass.method2161(77.toByte(), 5000L)
-            HudTabPanel.aClass297_2993 = null
+            HudTabPanel.aPrivilegedOperationWorker_2993 = null
             method90(false, false)
         }
     }
@@ -290,24 +290,24 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         anInt28++
         do {
             try {
-                if (Class297.aString3782 != null) {
-                    val string = Class297.aString3782!!.lowercase(Locale.getDefault())
+                if (PrivilegedOperationWorker.aString3782 != null) {
+                    val string = PrivilegedOperationWorker.aString3782!!.lowercase(Locale.getDefault())
                     if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
-                        val string_5_ = Class297.aString3796!!
+                        val string_5_ = PrivilegedOperationWorker.aString3796!!
                         if (string_5_ == "1.1" || string_5_.startsWith("1.1.") || string_5_ == "1.2" || string_5_.startsWith("1.2.")) {
                             method82(-119, "wrongjava")
                             break
                         }
-                    } else if (string.indexOf("ibm") != -1 && (Class297.aString3796 == null || Class297.aString3796 == "1.4.2")) {
+                    } else if (string.indexOf("ibm") != -1 && (PrivilegedOperationWorker.aString3796 == null || PrivilegedOperationWorker.aString3796 == "1.4.2")) {
                         method82(81, "wrongjava")
                         break
                     }
                 }
-                if (Class297.aString3796 != null && Class297.aString3796!!.startsWith("1.")) {
+                if (PrivilegedOperationWorker.aString3796 != null && PrivilegedOperationWorker.aString3796!!.startsWith("1.")) {
                     var i = 2
                     var i_6_ = 0
-                    while (Class297.aString3796!!.length > i) {
-                        val i_7_ = Class297.aString3796!!.get(i).code
+                    while (PrivilegedOperationWorker.aString3796!!.length > i) {
+                        val i_7_ = PrivilegedOperationWorker.aString3796!!.get(i).code
                         if (i_7_ < 48 || i_7_ > 57) break
                         i++
                         i_6_ = 10 * i_6_ - (-i_7_ + 48)
@@ -321,7 +321,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                         applet = container as Panel
                     }
                 }
-                val method = Class297.aMethod3786
+                val method = PrivilegedOperationWorker.aMethod3786
                 if (method != null) {
                     try {
                         method.invoke(applet, java.lang.Boolean.TRUE)
@@ -342,7 +342,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                         i++
                     }
                     method88(-119)
-                    Class369_Sub3_Sub1.method3578((-42).toByte(), Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992))
+                    Class369_Sub3_Sub1.method3578((-42).toByte(), Class305.aCanvas3869, (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992))
                 }
             } catch (throwable: Throwable) {
                 LinkedListIterator.method1242(method81(109.toByte()), throwable, 15004)
@@ -370,9 +370,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 Class348_Sub1_Sub3.anInt8818 = i_15_
                 Class348_Sub40_Sub9.anGameApplet_Frame_9169 = this
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
-                Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
-                HudTabPanel.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-                val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, -10240, 1)
+                Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i_17_, string, i_18_, Class93.anApplet1530 != null)
+                HudTabPanel.aPrivilegedOperationWorker_2993 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992
+                val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2236(this, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
                 while (class144.anInt1997 == 0) TexGenMaterialPass.method2161((-126).toByte(), 10L)
             } else {
@@ -406,9 +406,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             Class52.aFrame4904!!.toFront()
             val insets = Class52.aFrame4904!!.getInsets()
             Class52.aFrame4904!!.setSize(insets.right + (insets.left + SocketFactory.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
-            Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
-            HudTabPanel.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
+            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992 = PrivilegedOperationWorker(i, string, i_22_, true)
+            HudTabPanel.aPrivilegedOperationWorker_2993 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992
+            val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2236(this, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) TexGenMaterialPass.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
             LinkedListIterator.method1242(null, exception, i_23_ + -8495)

@@ -90,7 +90,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
         @JvmField
         var anInt8991: Int = 0
         @JvmField
-        var aClass297_8992: Class297? = null
+        var aPrivilegedOperationWorker_8992: PrivilegedOperationWorker? = null
         @JvmField
         var aByteArrayArray8996: Array<ByteArray?>? = null
         @JvmField
@@ -114,7 +114,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
 
         @JvmStatic
         fun method2968(i: Byte) {
-            aClass297_8992 = null
+            aPrivilegedOperationWorker_8992 = null
             aByteArrayArray8996 = null
             if (i > -114) Companion.method2968((-12).toByte())
         }
@@ -129,7 +129,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
         @JvmStatic
         fun method2972(string: String?, i: Int, i_3_: Int): Boolean {
             anInt9004++
-            if (aClass297_8992!!.aBoolean3777) {
+            if (aPrivilegedOperationWorker_8992!!.aBoolean3777) {
                 Class3.aServerConnectionInfo_125 = ServerConnectionInfo()
                 Class3.aServerConnectionInfo_125!!.anInt2143 = i
                 Class3.aServerConnectionInfo_125!!.aString2147 = string
@@ -147,7 +147,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             val string_6_ = ("http://" + string + string_4_ + "/l=" + Class348_Sub33.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_5_ + "/j" + (if (!RegionSceneLoader.aBoolean3697) "0" else "1") + ",o" + (if (Class348_Sub37.aBoolean6997) "1" else "0") + ",a2")
             try {
                 Class79.aClient1367!!.showDocument(URL(string_6_), "_self")
-                if (i_3_ >= -17) aClass297_8992 = null
+                if (i_3_ >= -17) aPrivilegedOperationWorker_8992 = null
             } catch (exception: Exception) {
                 return false
             }

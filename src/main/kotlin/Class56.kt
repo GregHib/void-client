@@ -126,11 +126,11 @@ class Class56 private constructor(i: Int, localizedText: LocalizedText?, localiz
         }
 
         @JvmStatic
-        fun method527(frame: Frame?, class297: Class297?, bool: Boolean) {
+        fun method527(frame: Frame?, privilegedOperationWorker: PrivilegedOperationWorker?, bool: Boolean) {
             try {
                 anInt1020++
                 while (true) {
-                    val class144 = class297!!.method2248(89.toByte(), frame)
+                    val class144 = privilegedOperationWorker!!.method2248(89.toByte(), frame)
                     while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-124).toByte(), 10L)
                     if (class144.anInt1997 == 1) break
                     method2161(33.toByte(), 100L)
@@ -138,7 +138,7 @@ class Class56 private constructor(i: Int, localizedText: LocalizedText?, localiz
                 frame!!.setVisible(bool)
                 frame.dispose()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + bool + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("jj.D(" + (if (frame != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ')'))
             }
         }
 

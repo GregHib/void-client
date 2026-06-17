@@ -235,12 +235,12 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
             return i_5_
         }
 
-        fun method2463(i: Int, i_6_: Int, class297: Class297, i_7_: Int, i_8_: Int, i_9_: Int): Frame? {
+        fun method2463(i: Int, i_6_: Int, privilegedOperationWorker: PrivilegedOperationWorker, i_7_: Int, i_8_: Int, i_9_: Int): Frame? {
             var i_7_ = i_7_
             anInt10344++
-            if (!class297.method2247(-4)) return null
+            if (!privilegedOperationWorker.method2247(-4)) return null
             if (i_7_ == 0) {
-                val class57s = WorldListEntry.method286((-49).toByte(), class297)
+                val class57s = WorldListEntry.method286((-49).toByte(), privilegedOperationWorker)
                 if (class57s == null) return null
                 var bool = false
                 var i_10_ = 0
@@ -253,13 +253,13 @@ class Class318_Sub1_Sub3_Sub4 internal constructor(private val anInt10355: Int, 
                 }
                 if (!bool) return null
             }
-            val class144 = class297.method2229(i_9_, i, i_7_, i_6_, (-11).toByte())
+            val class144 = privilegedOperationWorker.method2229(i_9_, i, i_7_, i_6_, (-11).toByte())
             while (class144.anInt1997 == 0) method2161(19.toByte(), 10L)
             val frame = class144.anObject1998 as Frame?
             if (frame == null) return null
             if (i_8_ != 14199) return null
             if (class144.anInt1997 == 2) {
-                method527(frame, class297, false)
+                method527(frame, privilegedOperationWorker, false)
                 return null
             }
             return frame

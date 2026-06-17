@@ -191,7 +191,7 @@ class VarpStore : Interface17 {
                     return
                 }
                 if (Class318_Sub1_Sub5.aLinkedQueueNode_8766!!.anInt1997 == 2) {
-                    method2862(RenderableGroup.aClass297_5017, Class348_Sub42_Sub8.aString9554, -120, 2)
+                    method2862(RenderableGroup.aPrivilegedOperationWorker_5017, Class348_Sub42_Sub8.aString9554, -120, 2)
                     Class318_Sub1_Sub5.aLinkedQueueNode_8766 = null
                     return
                 }

@@ -189,7 +189,7 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("breakcon", ignoreCase = true)) {
-                            Class348_Sub23_Sub1.aClass297_8992!!.method2239(-95)
+                            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2239(-95)
                             Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1702(i + 123)
                             Class348_Sub4.aMediaStreamClient_6601!!.method1898(true)
                             method94("Breaking new connections for 5 seconds", i + -4)
@@ -571,15 +571,15 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string == "heapdump") {
-                            if (!Class297.aString3803.startsWith("win")) HeapInfoRecord.method1247(File("/tmp/heap.dump"), false, false)
+                            if (!PrivilegedOperationWorker.aString3803.startsWith("win")) HeapInfoRecord.method1247(File("/tmp/heap.dump"), false, false)
                             else HeapInfoRecord.method1247(File("C:\\Temp\\heap.dump"), false, false)
                             method94("Done", 74)
                             return
                         }
                         if (string == "os") {
-                            method94("Name: " + Class297.aString3803, 59)
-                            method94(("Arch: " + Class297.aString3780), i.toInt() xor 0x1.inv())
-                            method94("Ver: " + Class297.aString3778, 79)
+                            method94("Name: " + PrivilegedOperationWorker.aString3803, 59)
+                            method94(("Arch: " + PrivilegedOperationWorker.aString3780), i.toInt() xor 0x1.inv())
+                            method94("Ver: " + PrivilegedOperationWorker.aString3778, 79)
                             return
                         }
                         if (string.startsWith("w2debug")) {

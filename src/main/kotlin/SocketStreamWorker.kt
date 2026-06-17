@@ -9,9 +9,9 @@ import java.net.Socket
 /*
  * Class202
  */
-class SocketStreamWorker internal constructor(socket: Socket?, class297: Class297?, i: Int) : Runnable {
+class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Int) : Runnable {
     private var anInt2648 = 0
-    private val aClass297_2649: Class297?
+    private val aPrivilegedOperationWorker_2649: PrivilegedOperationWorker?
     private var anInputStream2652: InputStream? = null
     private var aBoolean2654 = false
     private var anInt2656 = 0
@@ -55,7 +55,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, class297: Class29
                         anInt2648 = (anInt2648 - -1) % anInt2669
                         if (anInt2648 == (anInt2656 - (-anInt2669 - -100)) % anInt2669) throw IOException()
                     }
-                    if (aLinkedQueueNode_2658 == null) aLinkedQueueNode_2658 = aClass297_2649!!.method2236(this, -10240, 3)
+                    if (aLinkedQueueNode_2658 == null) aLinkedQueueNode_2658 = aPrivilegedOperationWorker_2649!!.method2236(this, -10240, 3)
                     (this as Object).notifyAll()
                 } else {
                     /* empty */
@@ -178,14 +178,14 @@ class SocketStreamWorker internal constructor(socket: Socket?, class297: Class29
     init {
         try {
             aSocket2668 = socket
-            aClass297_2649 = class297
+            aPrivilegedOperationWorker_2649 = privilegedOperationWorker
             aSocket2668!!.setSoTimeout(30000)
             aSocket2668.setTcpNoDelay(true)
             anInputStream2652 = aSocket2668.getInputStream()
             anOutputStream2657 = aSocket2668.getOutputStream()
             anInt2669 = i
         } catch (runtimeexception: RuntimeException) {
-            throw Class348_Sub17.method2929(runtimeexception, ("re.<init>(" + (if (socket != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + i + ')'))
+            throw Class348_Sub17.method2929(runtimeexception, ("re.<init>(" + (if (socket != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
         }
     }
 

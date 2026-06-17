@@ -14,7 +14,10 @@ import java.net.URL
 import java.util.*
 import kotlin.concurrent.Volatile
 
-class Class297 internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) : Runnable {
+/*
+ * Class297
+ */
+class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) : Runnable {
     private var aNativeCursorCallback__3776: NativeCursorCallback? = null
     @JvmField
     var aBoolean3777: Boolean = false

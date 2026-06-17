@@ -79,7 +79,7 @@ abstract class Class318_Sub1_Sub2 internal constructor(i: Int, i_6_: Int, i_7_: 
             anInt8729++
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             try {
-                randomAccessFileOnDisk = Class297.method2231("2", -1141472112)!!
+                randomAccessFileOnDisk = PrivilegedOperationWorker.method2231("2", -1141472112)!!
                 val class348_sub49 = Class348_Sub49(3 + 6 * Class335.anInt4168)
                 class348_sub49.writeByte(false, 1)
                 class348_sub49.writeShort(107.toByte(), Class335.anInt4168)

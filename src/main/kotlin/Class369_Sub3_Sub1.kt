@@ -98,20 +98,20 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, class341
         }
 
         @JvmStatic
-        fun method3578(i: Byte, `object`: Any?, class297: Class297?) {
+        fun method3578(i: Byte, `object`: Any?, privilegedOperationWorker: PrivilegedOperationWorker?) {
             do {
                 try {
                     anInt10178++
-                    if (class297!!.anEventQueue3799 != null) {
+                    if (privilegedOperationWorker!!.anEventQueue3799 != null) {
                         var i_12_ = 0
                         if (i.toInt() != -42) method3578(95.toByte(), null, null)
-                        while ( /**/i_12_ < 50 && class297.anEventQueue3799!!.peekEvent() != null) {
+                        while ( /**/i_12_ < 50 && privilegedOperationWorker.anEventQueue3799!!.peekEvent() != null) {
                             TexGenMaterialPass.method2161(30.toByte(), 1L)
                             i_12_++
                         }
                         try {
                             if (`object` == null) break
-                            class297.anEventQueue3799!!.postEvent(ActionEvent(`object`, 1001, "dummy"))
+                            privilegedOperationWorker.anEventQueue3799!!.postEvent(ActionEvent(`object`, 1001, "dummy"))
                         } catch (exception: Exception) {
                             /* empty */
                         }
@@ -119,7 +119,7 @@ class Class369_Sub3_Sub1(screenAnchorAlignment: ScreenAnchorAlignment?, class341
                     }
                     break
                 } catch (runtimeexception: RuntimeException) {
-                    throw Class348_Sub17.method2929(runtimeexception, ("fu.F(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ')'))
+                    throw Class348_Sub17.method2929(runtimeexception, ("fu.F(" + i + ',' + (if (`object` != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ')'))
                 }
             } while (false)
         }

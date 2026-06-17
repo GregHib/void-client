@@ -386,9 +386,9 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
             if (i < 30) aNodeDeque_10479 = null
             method131(Class316.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1, 2, true, 22050)
             anInt10470++
-            Class348_Sub40.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 0, 7)
+            Class348_Sub40.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, Class305.aCanvas3869, 0, 7)
             Class348_Sub42_Sub18.method3273(true, -114, NpcCountAccessor.method1326(null, 9))
-            VarbitDefLoader.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 1, 7)
+            VarbitDefLoader.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, Class305.aCanvas3869, 1, 7)
             Class348_Sub43.aClass348_Sub16_Sub4_7065 = Class348_Sub16_Sub4()
             VarbitDefLoader.aSoundChannelMixer_2596!!.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065)
             Class57.aAudioResampler_1050 = AudioResampler(22050, HslColorConfig.anInt339)

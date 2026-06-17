@@ -3,7 +3,7 @@ import TexGenMaterialPass.Companion.method2161
 /* Class112 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
+class ScriptCompilerThread internal constructor(privilegedOperationWorker: PrivilegedOperationWorker) : Runnable {
     private val aLinkedNodeListIterator_1730 = LinkedNodeListIterator()
     private var aThread1733: Thread?
     var anInt1734: Int = 0
@@ -116,7 +116,7 @@ class ScriptCompilerThread internal constructor(class297: Class297) : Runnable {
     }
 
     init {
-        val class144 = class297.method2236(this, -10240, 5)
+        val class144 = privilegedOperationWorker.method2236(this, -10240, 5)
         while (class144.anInt1997 == 0) method2161(43.toByte(), 10L)
         if (class144.anInt1997 == 2) throw RuntimeException()
         aThread1733 = class144.anObject1998 as Thread

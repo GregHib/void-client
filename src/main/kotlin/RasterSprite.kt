@@ -48,7 +48,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
 
         fun method168(i: Byte) {
             do {
-                if (!Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
+                if (!Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
                     try {
                         try {
                             val runtime = Runtime.getRuntime()

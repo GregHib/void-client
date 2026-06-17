@@ -102,7 +102,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
         var aClass351_5015: Class351?
         @JvmField
         var anInt5016: Int = 0
-        var aClass297_5017: Class297? = null
+        var aPrivilegedOperationWorker_5017: PrivilegedOperationWorker? = null
         var anInt5018: Int = 0
         @JvmField
         var anInt5019: Int
@@ -111,7 +111,7 @@ class RenderableGroup internal constructor(typedRecordTable: TypedRecordTable?, 
         fun method1447(i: Int) {
             if (i == 76) {
                 anIntArray5007 = null
-                aClass297_5017 = null
+                aPrivilegedOperationWorker_5017 = null
                 aClass351_5015 = null
             }
         }

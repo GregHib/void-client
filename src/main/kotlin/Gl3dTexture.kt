@@ -43,7 +43,7 @@ class Gl3dTexture internal constructor(class377: Class377?, class304: Class304?,
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
             var class348_sub51 = Class348_Sub51(Class348_Sub42_Sub8_Sub2.aSceneProjector_10434, 0)
             try {
-                val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46).toByte(), "", true)
+                val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-85).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
                     randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk?

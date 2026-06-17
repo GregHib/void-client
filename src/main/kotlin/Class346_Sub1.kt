@@ -162,7 +162,7 @@ class Class346_Sub1 internal constructor(component: Component?) : Class346(), Ke
         if (i != 2) method2705(-19)
         anInt6535++
         aComponent6544 = component
-        val method = Class297.aMethod3783
+        val method = PrivilegedOperationWorker.aMethod3783
         if (method != null) {
             try {
                 method.invoke(aComponent6544, java.lang.Boolean.FALSE)

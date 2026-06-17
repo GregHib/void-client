@@ -169,7 +169,7 @@ object ClientLoadStateMachine {
             method3290(56)
             Class348_Sub49.method3379(2, 2)
         }
-        if (Class56.aClass56_1033 == Class348_Sub42_Sub15.aClass56_9660) method323(Crc64Hashable.aClass45_4984, Class348_Sub23_Sub1.aClass297_8992, 95.toByte())
+        if (Class56.aClass56_1033 == Class348_Sub42_Sub15.aClass56_9660) method323(Crc64Hashable.aClass45_4984, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, 95.toByte())
         if (Class56.aClass56_1034 == Class348_Sub42_Sub15.aClass56_9660) {
             val i_10_ = BinaryGraphicsOptionState.method1770((-25).toByte())
             if (i_10_ < 100) return i_10_
@@ -223,7 +223,7 @@ object ClientLoadStateMachine {
                 /* empty */
             }
             Class348_Sub8.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
-            Class348_Sub40_Sub20.aClass348_Sub4_9264 = Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992!!)
+            Class348_Sub40_Sub20.aClass348_Sub4_9264 = Class348_Sub4(true, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
             val i_11_ = (Class348_Sub22.method2958(22388, CameraRotationStub.aClass45_322!!) + Class348_Sub49_Sub2.method3405(2012104999, true))

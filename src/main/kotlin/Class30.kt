@@ -75,10 +75,10 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
         }
 
         @JvmStatic
-        fun method323(class45: Class45?, class297: Class297?, i: Byte) {
+        fun method323(class45: Class45?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Byte) {
             try {
                 Class348_Sub41.aString7048 = ""
-                Class59_Sub1.aClass297_5297 = class297
+                Class59_Sub1.aPrivilegedOperationWorker_5297 = privilegedOperationWorker
                 anInt410++
                 ParticleSystemState.aClass45_2208 = class45
                 if (!Class348_Sub24.aString6877!!.startsWith("win")) {
@@ -87,7 +87,7 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
                     } else Class348_Sub41.aString7048 += "linux/"
                 } else Class348_Sub41.aString7048 += "windows/"
                 if (i.toInt() != 95) anIntArray407 = null
-                if (!Class59_Sub1.aClass297_5297!!.aBoolean3794) {
+                if (!Class59_Sub1.aPrivilegedOperationWorker_5297!!.aBoolean3794) {
                     if (!Class348_Sub24.aString6876!!.startsWith("amd64") && !Class348_Sub24.aString6876!!.startsWith("x86_64")) {
                         if (!Class348_Sub24.aString6876!!.startsWith("i386") && !Class348_Sub24.aString6876!!.startsWith("i486") && !Class348_Sub24.aString6876!!.startsWith("i586") && !Class348_Sub24.aString6876!!.startsWith("x86")) {
                             if (!Class348_Sub24.aString6876!!.startsWith("ppc")) Class348_Sub41.aString7048 += "universal/"
@@ -96,7 +96,7 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
                     } else Class348_Sub41.aString7048 += "x86_64/"
                 } else Class348_Sub41.aString7048 += "msjava/"
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("hw.A(" + (if (class45 != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + i + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("hw.A(" + (if (class45 != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + i + ')'))
             }
         }
     }

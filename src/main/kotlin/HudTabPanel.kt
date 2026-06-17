@@ -21,14 +21,14 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
         var anInt2990: Int = 0
         var anInt2991: Int = 0
         var anInt2992: Int = 0
-        var aClass297_2993: Class297? = null
+        var aPrivilegedOperationWorker_2993: PrivilegedOperationWorker? = null
         var anInt2994: Int = 0
         var anInt2996: Int = 0
         var anInt2997: Int = 0
 
         fun method1638(i: Int, fs: FloatArray, i_0_: Int): FloatArray {
             anInt2990++
-            if (i_0_ != -1) aClass297_2993 = null
+            if (i_0_ != -1) aPrivilegedOperationWorker_2993 = null
             val fs_1_ = FloatArray(i)
             method1574(fs, 0, fs_1_, 0, i)
             return fs_1_
@@ -42,8 +42,8 @@ class HudTabPanel internal constructor(string: String?, @JvmField var anInt2995:
 
         @JvmStatic
         fun method1641(i: Byte) {
-            aClass297_2993 = null
-            if (i.toInt() != 85) aClass297_2993 = null
+            aPrivilegedOperationWorker_2993 = null
+            if (i.toInt() != 85) aPrivilegedOperationWorker_2993 = null
         }
 
         @JvmStatic

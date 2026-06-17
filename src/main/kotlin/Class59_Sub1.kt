@@ -89,7 +89,7 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
         var aAbstractModelRendererArray5294: Array<AbstractModelRenderer?>? = null
         @JvmField
         var anInt5295: Int = 0
-        var aClass297_5297: Class297? = null
+        var aPrivilegedOperationWorker_5297: PrivilegedOperationWorker? = null
         @JvmField
         var aFloat5299: Float = 0f
         @JvmField
@@ -176,8 +176,8 @@ open class Class59_Sub1(i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, 
         fun method553(i: Int) {
             aAbstractModelRendererArray5294 = null
             aClass351_5288 = null
-            if (i != 0) aClass297_5297 = null
-            aClass297_5297 = null
+            if (i != 0) aPrivilegedOperationWorker_5297 = null
+            aPrivilegedOperationWorker_5297 = null
         }
 
         @JvmStatic

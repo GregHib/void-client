@@ -16,7 +16,7 @@ class BackgroundWorkerThread : Runnable {
     @JvmField
     @Volatile
     var aBoolean3223: Boolean = false
-    var aClass297_3228: Class297? = null
+    var aPrivilegedOperationWorker_3228: PrivilegedOperationWorker? = null
 
     override fun run() {
         this.aBoolean3223 = true
@@ -28,7 +28,7 @@ class BackgroundWorkerThread : Runnable {
                     if (class279 != null) class279.method2084(-6858)
                 }
                 TexGenMaterialPass.method2161((-107).toByte(), 10L)
-                Class369_Sub3_Sub1.method3578((-42).toByte(), null, (this.aClass297_3228))
+                Class369_Sub3_Sub1.method3578((-42).toByte(), null, (this.aPrivilegedOperationWorker_3228))
             }
         } catch (exception: Exception) {
             method1242(null, exception, 15004)

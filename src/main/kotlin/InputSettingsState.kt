@@ -29,7 +29,7 @@ object InputSettingsState {
         anInt1760++
         var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
         try {
-            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233(((-46).toByte()).toByte(), "2", true)
+            val class144 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2233(((-46).toByte()).toByte(), "2", true)
             while (class144!!.anInt1997 == 0) method2161(63.toByte(), 1L)
             if (class144.anInt1997 == 1) {
                 randomAccessFileOnDisk = class144.anObject1998 as RandomAccessFileOnDisk

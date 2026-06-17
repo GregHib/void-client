@@ -55,11 +55,11 @@ class WorldListEntry {
         }
 
         @JvmStatic
-        fun method286(i: Byte, class297: Class297): Array<Class57?> {
+        fun method286(i: Byte, privilegedOperationWorker: PrivilegedOperationWorker): Array<Class57?> {
             anInt307++
-            if (!class297.method2247(-4)) return arrayOfNulls<Class57>(0)
+            if (!privilegedOperationWorker.method2247(-4)) return arrayOfNulls<Class57>(0)
             val i_6_ = 52 / ((39 - i) / 61)
-            val class144 = class297.method2240(972476528)
+            val class144 = privilegedOperationWorker.method2240(972476528)
             while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-97).toByte(), 10L)
             if (class144.anInt1997 == 2) return arrayOfNulls<Class57>(0)
             val `is` = class144.anObject1998 as IntArray

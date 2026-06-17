@@ -329,7 +329,7 @@ class Class348_Sub51 : Class348 {
     internal constructor(sceneProjector: SceneProjector?, i: Int) {
         try {
             aSceneProjector_7269 = sceneProjector
-            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, PrivilegedOperationWorker.aString3780!!.lowercase(Locale.getDefault()).indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = DisplayModeOptionState(i, this)
             method3423(true, 31286)
         } catch (runtimeexception: RuntimeException) {
@@ -340,7 +340,7 @@ class Class348_Sub51 : Class348 {
     internal constructor(class348_sub49: Class348_Sub49?, sceneProjector: SceneProjector?, i: Int) {
         try {
             aSceneProjector_7269 = sceneProjector
-            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780!!.indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, Class348_Sub40_Sub29.anInt9372, PrivilegedOperationWorker.aString3780!!.indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = DisplayModeOptionState(i, this)
             method3424(925, class348_sub49)
         } catch (runtimeexception: RuntimeException) {

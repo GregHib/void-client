@@ -106,34 +106,34 @@ class GrowableStringList internal constructor(private val anInt2365: Int, bool: 
             return i ushr 10
         }
 
-        fun method1360(string: String?, class297: Class297?, bool: Boolean, bool_3_: Boolean, i: Int) {
+        fun method1360(string: String?, privilegedOperationWorker: PrivilegedOperationWorker?, bool: Boolean, bool_3_: Boolean, i: Int) {
             try {
                 anInt2369++
                 if (bool_3_) {
-                    if (Class297.aString3803.startsWith("win") && class297!!.aBoolean3777) {
+                    if (PrivilegedOperationWorker.aString3803.startsWith("win") && privilegedOperationWorker!!.aBoolean3777) {
                         var string_4_: String? = null
                         if (Class93.anApplet1530 != null) string_4_ = Class93.anApplet1530!!.getParameter("haveie6")
                         if (string_4_ == null || string_4_ != "1") {
-                            val class144 = method2862(class297, string, -117, 0)
+                            val class144 = method2862(privilegedOperationWorker, string, -117, 0)
                             Class318_Sub1_Sub5.aLinkedQueueNode_8766 = class144
-                            RenderableGroup.aClass297_5017 = class297
+                            RenderableGroup.aPrivilegedOperationWorker_5017 = privilegedOperationWorker
                             Class348_Sub42_Sub8.aString9554 = string
                             return
                         }
                     }
-                    if (Class297.aString3803.startsWith("mac")) {
+                    if (PrivilegedOperationWorker.aString3803.startsWith("mac")) {
                         var string_5_: String? = null
                         if (Class93.anApplet1530 != null) string_5_ = Class93.anApplet1530!!.getParameter("havefirefox")
                         if (string_5_ != null && string_5_ == "1" && bool) {
-                            method2862(class297, string, 42, 1)
+                            method2862(privilegedOperationWorker, string, 42, 1)
                             return
                         }
                     }
-                    method2862(class297, string, 96, 2)
-                } else method2862(class297, string, -96, 3)
+                    method2862(privilegedOperationWorker, string, 96, 2)
+                } else method2862(privilegedOperationWorker, string, -96, 3)
                 val i_6_ = -6 / ((i - 20) / 44)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (class297 != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("bo.C(" + (if (string != null) "{...}" else "null") + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + bool + ',' + bool_3_ + ',' + i + ')'))
             }
         }
 

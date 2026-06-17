@@ -22,7 +22,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
         @JvmField
         var anInt2590: Int = 0
 
-        fun method1439(i: Int, class297: Class297?, component: Component?, i_0_: Int, i_1_: Int): SoundChannelMixer {
+        fun method1439(i: Int, privilegedOperationWorker: PrivilegedOperationWorker?, component: Component?, i_0_: Int, i_1_: Int): SoundChannelMixer {
             var i = i
             try {
                 anInt2583++
@@ -39,8 +39,8 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                     soundChannelMixer.method2082(soundChannelMixer.anInt3613)
                     if (CameraConfigDefinition.anInt3248 > 0 && ParticleDefLoader.aBackgroundWorkerThread_2462 == null) {
                         ParticleDefLoader.aBackgroundWorkerThread_2462 = BackgroundWorkerThread()
-                        ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass297_3228 = class297
-                        class297!!.method2236(ParticleDefLoader.aBackgroundWorkerThread_2462, -10240, CameraConfigDefinition.anInt3248)
+                        ParticleDefLoader.aBackgroundWorkerThread_2462!!.aPrivilegedOperationWorker_3228 = privilegedOperationWorker
+                        privilegedOperationWorker!!.method2236(ParticleDefLoader.aBackgroundWorkerThread_2462, -10240, CameraConfigDefinition.anInt3248)
                     }
                     if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
                         require((ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i_0_]) == null)
@@ -50,7 +50,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                     return soundChannelMixer
                 } catch (throwable: Throwable) {
                     try {
-                        val class279_sub2 = NativeSoundOutput(class297!!, i_0_)
+                        val class279_sub2 = NativeSoundOutput(privilegedOperationWorker!!, i_0_)
                         class279_sub2.anInt3620 = i
                         class279_sub2.anIntArray3603 = IntArray((if (!NpcEntityUpdater.aBoolean3652) 1 else 2) * 256)
                         class279_sub2.method2095(component)
@@ -58,8 +58,8 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                         class279_sub2.method2082(class279_sub2.anInt3613)
                         if (CameraConfigDefinition.anInt3248 > 0 && ParticleDefLoader.aBackgroundWorkerThread_2462 == null) {
                             ParticleDefLoader.aBackgroundWorkerThread_2462 = BackgroundWorkerThread()
-                            ParticleDefLoader.aBackgroundWorkerThread_2462!!.aClass297_3228 = class297
-                            class297!!.method2236(ParticleDefLoader.aBackgroundWorkerThread_2462, -10240, CameraConfigDefinition.anInt3248)
+                            ParticleDefLoader.aBackgroundWorkerThread_2462!!.aPrivilegedOperationWorker_3228 = privilegedOperationWorker
+                            privilegedOperationWorker!!.method2236(ParticleDefLoader.aBackgroundWorkerThread_2462, -10240, CameraConfigDefinition.anInt3248)
                         }
                         if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
                             require((ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i_0_]) == null)
@@ -71,7 +71,7 @@ class TextureHandle internal constructor(private val aClass377_2585: Class377, i
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qr.A(" + i + ',' + (if (class297 != null) "{...}" else "null") + ',' + (if (component != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("qr.A(" + i + ',' + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (component != null) "{...}" else "null") + ',' + i_0_ + ',' + i_1_ + ')'))
             }
         }
 

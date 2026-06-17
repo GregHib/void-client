@@ -55,7 +55,7 @@ class Class339 : Runnable {
         if (aLinkedQueueNode_4201 == null) {
             try {
                 val i_15_ = (if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) 80 else 7000 - -(GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143))
-                aLinkedQueueNode_4201 = (Class348_Sub23_Sub1.aClass297_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987), 8362))
+                aLinkedQueueNode_4201 = (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aSceneProjector_10434!!.anInt2987), 8362))
             } catch (malformedurlexception: MalformedURLException) {
                 return true
             }

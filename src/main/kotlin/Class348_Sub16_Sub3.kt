@@ -991,11 +991,11 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         }
 
         @JvmStatic
-        fun method2862(class297: Class297?, string: String?, i: Int, i_71_: Int): LinkedQueueNode? {
+        fun method2862(privilegedOperationWorker: PrivilegedOperationWorker?, string: String?, i: Int, i_71_: Int): LinkedQueueNode? {
             try {
                 val i_72_ = 16 % ((-37 - i) / 51)
                 anInt8911++
-                if (i_71_ == 0) return class297!!.method2245(string, 16)
+                if (i_71_ == 0) return privilegedOperationWorker!!.method2245(string, 16)
                 if (i_71_ == 1) {
                     try {
                         JavaScriptBridge.method1616("openjs", (arrayOf<Any?>(URL(Class93.anApplet1530!!.getCodeBase(), string).toString())), Class93.anApplet1530, 38.toByte())
@@ -1039,7 +1039,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 }
                 throw IllegalArgumentException()
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ma.EA(" + (if (class297 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("ma.EA(" + (if (privilegedOperationWorker != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_71_ + ')'))
             }
         }
 

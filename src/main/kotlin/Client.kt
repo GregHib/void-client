@@ -579,7 +579,7 @@ class Client : GameAppletFrame() {
         else {
             try {
                 if (Class47.anInt846 == 0) {
-                    Sprite.aLinkedQueueNode_114 = Class3.aServerConnectionInfo_125!!.method1262((Class348_Sub23_Sub1.aClass297_8992!!), 36.toByte())
+                    Sprite.aLinkedQueueNode_114 = Class3.aServerConnectionInfo_125!!.method1262((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!), 36.toByte())
                     Class47.anInt846++
                 }
                 if (Class47.anInt846 == 1) {
@@ -591,7 +591,7 @@ class Client : GameAppletFrame() {
                     if (Sprite.aLinkedQueueNode_114!!.anInt1997 == 1) Class47.anInt846++
                 }
                 if (Class47.anInt846 == 2) {
-                    TextureHandle.aSocketStreamWorker_2589 = SocketStreamWorker(Sprite.aLinkedQueueNode_114!!.anObject1998 as Socket?, Class348_Sub23_Sub1.aClass297_8992, 25000)
+                    TextureHandle.aSocketStreamWorker_2589 = SocketStreamWorker(Sprite.aLinkedQueueNode_114!!.anObject1998 as Socket?, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, 25000)
                     val class348_sub49 = Class348_Sub49(5)
                     class348_sub49.writeByte(false, (ScriptOpcodeHolder.aConfigIdPair_2341!!.anInt400))
                     class348_sub49.writeInt(103.toByte(), 634)
@@ -637,7 +637,7 @@ class Client : GameAppletFrame() {
         frame.pack()
         frame.dispose()
         method3556(false)
-        Class39.aScriptCompilerThread_520 = ScriptCompilerThread(Class348_Sub23_Sub1.aClass297_8992!!)
+        Class39.aScriptCompilerThread_520 = ScriptCompilerThread(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!)
         Class348_Sub4.aMediaStreamClient_6601 = MediaStreamClient()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
@@ -689,16 +689,16 @@ class Client : GameAppletFrame() {
         LoadProgressCounters.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (-124).toByte())
         GlTexture1D.aClass373_8552 = method2941(Class305.aCanvas3869, 0, true)
         //        try {
-        if (Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785 != null) {
-            Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
-            for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
-            SceneObjectAnimator.aClass78_3075 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
+        if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 != null) {
+            Class299_Sub2.aClass78_6328 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
+            for (i_3_ in 0..36) MinimapRenderer.aClass78Array1579!![i_3_] = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
+            SceneObjectAnimator.aClass78_3075 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
             LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, Class299_Sub2.aClass78_6328, SceneObjectAnimator.aClass78_3075, 500000)
-            Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
-            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3779 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3785 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDiskArray3795 = null
-            Class348_Sub23_Sub1.aClass297_8992!!.aRandomAccessFileOnDisk_3788 = null
+            Class374.aClass78_4538 = Class78((Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
+            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779 = null
+            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 = null
+            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795 = null
+            Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788 = null
         }
         //        } catch (java.io.IOException ioexception) {
 //            Class299_Sub2.aClass78_6328 = null;
@@ -1266,7 +1266,7 @@ class Client : GameAppletFrame() {
         method556(false)
         if (Class348_Sub8.aRenderer6654 != null) Class348_Sub8.aRenderer6654!!.method3635(89.toByte())
         if (Class34.aFrame476 != null) {
-            method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false)
+            method527(Class34.aFrame476, Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992, false)
             Class34.aFrame476 = null
         }
         if (Class348_Sub40_Sub8.aAbstractGameSocket_9165 != null) {
@@ -1640,7 +1640,7 @@ class Client : GameAppletFrame() {
     public override fun method87(i: Byte) {
         if (i > -11) aNodeDeque_5185 = null
         anInt5173++
-        if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
+        if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
             try {
                 val var_class: Class<*> = Class93.anApplet1530!!.javaClass
                 val field = var_class.getDeclaredField("canvas")
@@ -1727,7 +1727,7 @@ class Client : GameAppletFrame() {
                 }
             }
             if (method3263(bool)) method207(Class348_Sub8.aRenderer6654, 124.toByte())
-            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674) && NativeRenderer.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
+            if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674) && NativeRenderer.anInt8045 == 0 && method3229(-85) == 1 && !bool_120_) {
                 var i = 0
                 var i_121_ = 0
                 while ((Class348_Sub38.anInt7008 > i_121_)) {

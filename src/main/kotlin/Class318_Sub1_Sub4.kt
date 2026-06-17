@@ -74,9 +74,9 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
             var bool = false
             var bool_5_ = false
             var bool_6_ = false
-            if (Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3777 && !Class348_Sub23_Sub1.aClass297_8992!!.aBoolean3794) {
+            if (Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3777 && !Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
                 bool = (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609) >= 512 || (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609) == 0
-                if (Class297.aString3803.startsWith("win")) {
+                if (PrivilegedOperationWorker.aString3803.startsWith("win")) {
                     bool_6_ = true
                     bool_5_ = true
                 } else bool_5_ = true

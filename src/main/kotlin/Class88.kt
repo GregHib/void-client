@@ -155,8 +155,8 @@ class Class88 {
                         SceneRegionState.anInt197 = 0
                     }
                     if (NpcDefinition.anInt2955 == 1) {
-                        if (BloomGraphicsOptionState.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
-                        else FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        if (BloomGraphicsOptionState.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (Class3.aServerConnectionInfo_125!!.method1262(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!, 36.toByte()))
+                        else FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!, 36.toByte()))
                         NpcDefinition.anInt2955 = 2
                     }
                     if (NpcDefinition.anInt2955 == 2) {
@@ -366,7 +366,7 @@ class Class88 {
                                 Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 VarpStore.anInt5065 = class348_sub49_sub2.readInt((-126).toByte())
-                                Class348_Sub42_Sub6.aLinkedQueueNode_9536 = Class348_Sub23_Sub1.aClass297_8992!!.method2232(116, VarpStore.anInt5065)
+                                Class348_Sub42_Sub6.aLinkedQueueNode_9536 = Class348_Sub23_Sub1.aPrivilegedOperationWorker_8992!!.method2232(116, VarpStore.anInt5065)
                                 FloatGrid.anInt4976 = class348_sub49_sub2.readUnsignedByte(255)
                                 FrameStatsReset.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944)

@@ -169,13 +169,13 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
         }
 
         fun method3402(i: Byte) {
-            if (Class297.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
+            if (PrivilegedOperationWorker.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
                 GlIndexBufferArb.anIntArray8507!![46] = 72
                 GlIndexBufferArb.anIntArray8507!![92] = 74
                 GlIndexBufferArb.anIntArray8507!![44] = 71
                 GlIndexBufferArb.anIntArray8507!![61] = 27
                 GlIndexBufferArb.anIntArray8507!![91] = 42
-                if (Class297.aMethod3783 == null) {
+                if (PrivilegedOperationWorker.aMethod3783 == null) {
                     GlIndexBufferArb.anIntArray8507!![192] = 58
                     GlIndexBufferArb.anIntArray8507!![222] = 59
                 } else {
