@@ -69,7 +69,7 @@ abstract class Class239 {
                 GlElementArrayBuffer.aClass45_4843 = class45_1_
                 anInt3140++
                 if (i != 7) aClass45_3146 = null
-                Class138.aClass45_1940 = class45
+                RectangleRegion.aClass45_1940 = class45
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("su.Q(" + i + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (class45_1_ != null) "{...}" else "null") + ')'))
             }

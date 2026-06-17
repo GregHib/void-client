@@ -4,7 +4,7 @@
 abstract class ShaderProgram : Class348() {
     companion object {
         @JvmField
-        var aClass138_7274: Class138? = Class138(10, 2, 2, 0)
+        var aRectangleRegion_7274: RectangleRegion? = RectangleRegion(10, 2, 2, 0)
         @JvmField
         var anInt7275: Int = 0
         @JvmField
@@ -40,7 +40,7 @@ abstract class ShaderProgram : Class348() {
 
         @JvmStatic
         fun method3438(i: Byte) {
-            if (i > 39) aClass138_7274 = null
+            if (i > 39) aRectangleRegion_7274 = null
         }
     }
 }

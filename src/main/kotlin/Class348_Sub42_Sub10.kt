@@ -50,7 +50,7 @@ class Class348_Sub42_Sub10 : Class348_Sub42() {
         } while (false)
     }
 
-    fun method3212(i: Int, i_4_: Int): Class138? {
+    fun method3212(i: Int, i_4_: Int): RectangleRegion? {
         anInt9561++
         if (i != 0) anIntArray9572 = null
         if (anIntArray9574 == null || i_4_ < 0 || anIntArray9574!!.size < i_4_) return null

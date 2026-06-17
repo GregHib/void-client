@@ -22,7 +22,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         @JvmField
         var anInt4900: Int = 0
         @JvmField
-        var aClass138_4901: Class138?
+        var aRectangleRegion_4901: RectangleRegion?
         @JvmField
         var anInt4902: Int = 0
         @JvmField
@@ -68,7 +68,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
             if (i < -17) {
                 aBigInteger4896 = null
                 anIntArray4906 = null
-                aClass138_4901 = null
+                aRectangleRegion_4901 = null
             }
         }
 
@@ -128,7 +128,7 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
         }
 
         init {
-            aClass138_4901 = Class138(12, 0, 1, 0)
+            aRectangleRegion_4901 = RectangleRegion(12, 0, 1, 0)
             anIntArray4906 = IntArray(4)
             aClass351_4905 = Class351(44, 3)
             aClass351_4907 = Class351(48, 11)

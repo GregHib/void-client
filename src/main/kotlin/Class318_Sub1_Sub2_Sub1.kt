@@ -153,7 +153,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
 
     public override fun method2379(i: Int): Int {
         anInt10193++
-        if (i != -25675) aClass138_10194 = null
+        if (i != -25675) aRectangleRegion_10194 = null
         return anInt10184
     }
 
@@ -182,7 +182,7 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         var anInt10192: Int = 0
         var anInt10193: Int = 0
         @JvmField
-        var aClass138_10194: Class138?
+        var aRectangleRegion_10194: RectangleRegion?
         @JvmField
         var aStringArray10195: Array<String?>? = arrayOfNulls<String>(8)
         var anInt10197: Int = 0
@@ -192,12 +192,12 @@ class Class318_Sub1_Sub2_Sub1 internal constructor(i: Int, i_3_: Int, i_4_: Int,
         @JvmStatic
         fun method2407(bool: Boolean) {
             aStringArray10195 = null
-            aClass138_10194 = null
+            aRectangleRegion_10194 = null
             if (bool != false) method2407(true)
         }
 
         init {
-            aClass138_10194 = Class138(13, 0, 1, 0)
+            aRectangleRegion_10194 = RectangleRegion(13, 0, 1, 0)
         }
     }
 }

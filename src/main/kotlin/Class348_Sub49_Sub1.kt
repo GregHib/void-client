@@ -33,7 +33,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
         var aBoolean9746: Boolean = true
         @JvmField
         var anInt9747: Int = 0
-        var aClass138_9748: Class138? = Class138(7, 0, 1, 1)
+        var aRectangleRegion_9748: RectangleRegion? = RectangleRegion(7, 0, 1, 1)
         var aClass351_9749: Class351?
         @JvmField
         var anInt9750: Int
@@ -208,7 +208,7 @@ class Class348_Sub49_Sub1 internal constructor(i: Int) : Class348_Sub49(i) {
         @JvmStatic
         fun method3403(i: Int) {
             if (i >= 58) {
-                aClass138_9748 = null
+                aRectangleRegion_9748 = null
                 aClass351_9749 = null
                 aClass351_9743 = null
             }

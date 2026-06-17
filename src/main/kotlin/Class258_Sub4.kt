@@ -32,7 +32,7 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_
         @JvmField
         var aClass373_8552: Class373? = null
         @JvmField
-        var aClass138_8553: Class138?
+        var aRectangleRegion_8553: RectangleRegion?
         @JvmField
         var anInt8554: Int = 0
         @JvmField
@@ -48,7 +48,7 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_
 
         @JvmStatic
         fun method1973(i: Int) {
-            aClass138_8553 = null
+            aRectangleRegion_8553 = null
             aClass373_8552 = null
             if (i == 24885) anIntArray8557 = null
         }
@@ -62,7 +62,7 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_
         }
 
         init {
-            aClass138_8553 = Class138(9, 0, 4, 1)
+            aRectangleRegion_8553 = RectangleRegion(9, 0, 4, 1)
         }
     }
 }

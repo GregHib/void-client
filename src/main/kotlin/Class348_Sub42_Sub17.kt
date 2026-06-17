@@ -18,11 +18,11 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
         anInt9675++
         if (this.aClass4Array9673 != null) return true
         if (aByteArrayArray9671 == null) {
-            synchronized(Class138.aClass45_1940!!) {
-                if (!Class138.aClass45_1940!!.method408((-116).toByte(), anInt9669)) return false
-                val `is` = Class138.aClass45_1940!!.method396(anInt9669, 0)
+            synchronized(RectangleRegion.aClass45_1940!!) {
+                if (!RectangleRegion.aClass45_1940!!.method408((-116).toByte(), anInt9669)) return false
+                val `is` = RectangleRegion.aClass45_1940!!.method396(anInt9669, 0)
                 aByteArrayArray9671 = arrayOfNulls<ByteArray>(`is`!!.size)
-                for (i_1_ in `is`.indices) aByteArrayArray9671!![i_1_] = Class138.aClass45_1940!!.method410(-1860, anInt9669, `is`[i_1_])!!
+                for (i_1_ in `is`.indices) aByteArrayArray9671!![i_1_] = RectangleRegion.aClass45_1940!!.method410(-1860, anInt9669, `is`[i_1_])!!
             }
         }
         var bool = true
@@ -38,10 +38,10 @@ class Class348_Sub42_Sub17 internal constructor(private val anInt9669: Int) : Cl
         if (!bool) return false
         val class262 = Class262()
         val `is`: IntArray?
-        synchronized(Class138.aClass45_1940!!) {
-            val i_4_ = Class138.aClass45_1940!!.method407(0, anInt9669)
+        synchronized(RectangleRegion.aClass45_1940!!) {
+            val i_4_ = RectangleRegion.aClass45_1940!!.method407(0, anInt9669)
             this.aClass4Array9673 = arrayOfNulls<Class4>(i_4_)
-            `is` = Class138.aClass45_1940!!.method396(anInt9669, 0)
+            `is` = RectangleRegion.aClass45_1940!!.method396(anInt9669, 0)
             if (i > -115) method3266(null, 123, null)
         }
         for (i_5_ in `is`!!.indices) {

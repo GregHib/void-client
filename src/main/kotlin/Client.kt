@@ -960,7 +960,7 @@ class Client : GameAppletFrame() {
         method869(3)
         Class327.method2604((-102).toByte())
         method3217(61.toByte())
-        Class138.method1164((-52).toByte())
+        RectangleRegion.method1164((-52).toByte())
         method2407(false)
         method1673(i.toInt() xor 0x75.inv())
         method2492(1)

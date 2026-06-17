@@ -1,7 +1,7 @@
 /* Class138 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class138 internal constructor(var anInt1941: Int, @JvmField var anInt1945: Int, @JvmField var anInt1943: Int, @JvmField var anInt1944: Int) {
+class RectangleRegion internal constructor(var anInt1941: Int, @JvmField var anInt1945: Int, @JvmField var anInt1943: Int, @JvmField var anInt1944: Int) {
     override fun toString(): String {
         anInt1947++
         throw IllegalStateException()

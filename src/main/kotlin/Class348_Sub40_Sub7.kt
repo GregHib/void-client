@@ -141,7 +141,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                     if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         SpriteLoadValidator.anInt4792 = i_10_
                                         Class348_Sub1.anInt6555 = i_11_
-                                        Class138.aClass46Array1942 = class46s
+                                        RectangleRegion.aClass46Array1942 = class46s
                                         i_18_++
                                         continue
                                     }

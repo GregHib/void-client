@@ -102,7 +102,7 @@ class Class234 internal constructor(file: File?, string: String?, l: Long) {
         var anInt3042: Int = 0
         var anInt3043: Int = 0
         @JvmField
-        var aClass138_3044: Class138?
+        var aRectangleRegion_3044: RectangleRegion?
         var anInt3045: Int = 0
         @JvmField
         var anInt3047: Int = 0
@@ -113,11 +113,11 @@ class Class234 internal constructor(file: File?, string: String?, l: Long) {
         @JvmStatic
         fun method1659(i: Byte) {
             if (i >= -2) method1659(126.toByte())
-            aClass138_3044 = null
+            aRectangleRegion_3044 = null
         }
 
         init {
-            aClass138_3044 = Class138(0, 2, 2, 1)
+            aRectangleRegion_3044 = RectangleRegion(0, 2, 2, 1)
         }
     }
 }

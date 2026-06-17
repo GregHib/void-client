@@ -13,7 +13,7 @@ object Class71 {
     @JvmField
     var aClass209_1212: Class209?
     @JvmField
-    var aClass138_1213: Class138?
+    var aRectangleRegion_1213: RectangleRegion?
     @JvmField
     var aBooleanArray1214: BooleanArray?
 
@@ -24,7 +24,7 @@ object Class71 {
         aClass76_1210 = null
         aBooleanArray1214 = null
         if (bool != true) aClass209_1212 = null
-        aClass138_1213 = null
+        aRectangleRegion_1213 = null
     }
 
     @JvmStatic
@@ -94,7 +94,7 @@ object Class71 {
         aClass76_1210 = Class76(false)
         aClass76_1208 = aClass76_1210
         aClass209_1212 = Class209()
-        aClass138_1213 = Class138(11, 0, 1, 2)
+        aRectangleRegion_1213 = RectangleRegion(11, 0, 1, 2)
         aBooleanArray1214 = BooleanArray(8)
     }
 }

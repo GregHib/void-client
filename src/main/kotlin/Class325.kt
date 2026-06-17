@@ -46,7 +46,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
         var aClass325_4080: Class325? = Class325(6, 4, Class68.aClass68_1187)
         var anInt4081: Int = method2253(16, 119)
         @JvmField
-        var aClass138_4082: Class138? = Class138(8, 0, 4, 1)
+        var aRectangleRegion_4082: RectangleRegion? = RectangleRegion(8, 0, 4, 1)
 
         fun method2596(i: Int, i_0_: Int): Array<Array<ByteArray?>?> {
             anInt4068++
@@ -390,7 +390,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
             aClass325_4073 = null
             aClass325_4080 = null
             aClass325_4078 = null
-            aClass138_4082 = null
+            aRectangleRegion_4082 = null
             aClass325_4077 = null
             aClass325_4079 = null
             if (i == -27327) {

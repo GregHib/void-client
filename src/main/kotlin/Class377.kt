@@ -1289,7 +1289,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         @JvmField
         var anInt9859: Int = 0
         @JvmField
-        var aClass138_9860: Class138? = Class138(15, 0, 1, 0)
+        var aRectangleRegion_9860: RectangleRegion? = RectangleRegion(15, 0, 1, 0)
         @JvmField
         var anInt9861: Int = 0
         @JvmField
@@ -1381,7 +1381,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig: Rend
         @JvmStatic
         fun method3968(i: Int) {
             val i_10_ = 69 % ((-67 - i) / 57)
-            aClass138_9860 = null
+            aRectangleRegion_9860 = null
         }
     }
 }

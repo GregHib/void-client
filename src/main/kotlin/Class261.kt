@@ -303,7 +303,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                     else if (RenderNode.aBoolean9722) Class341.method2678(-2049)
                 }
                 if (Class289.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) {
-                    Class138.aClass348_Sub42_Sub12_1946 = null
+                    RectangleRegion.aClass348_Sub42_Sub12_1946 = null
                     Class282.anInt3655 = 0
                 }
             }

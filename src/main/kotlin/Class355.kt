@@ -27,17 +27,17 @@ class Class355 internal constructor(i: Int, class45: Class45?, class45_1_: Class
         return class348_sub42_sub10
     }
 
-    fun method3472(l: Long, `is`: IntArray?, i: Int, class138: Class138?): String {
+    fun method3472(l: Long, `is`: IntArray?, i: Int, rectangleRegion: RectangleRegion?): String {
         try {
             if (i != -1) aClass45_4368 = null
             anInt4370++
             if (anInterface15_4373 != null) {
-                val string = anInterface15_4373!!.method54(1, l, class138, `is`)
+                val string = anInterface15_4373!!.method54(1, l, rectangleRegion, `is`)
                 if (string != null) return string
             }
             return l.toString()
         } catch (runtimeexception: RuntimeException) {
-            throw method2929(runtimeexception, ("aha.D(" + l + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class138 != null) "{...}" else "null") + ')'))
+            throw method2929(runtimeexception, ("aha.D(" + l + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (rectangleRegion != null) "{...}" else "null") + ')'))
         }
     }
 

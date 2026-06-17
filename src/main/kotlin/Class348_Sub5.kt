@@ -65,7 +65,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: OpenGlRende
         var anInt6629: Int = 0
 
         @JvmStatic
-        fun method2752(i: Int, i_2_: Int): Class138? {
+        fun method2752(i: Int, i_2_: Int): RectangleRegion? {
             anInt6625++
             val class138s = Class348_Sub27.method3002((-97).toByte())
             var i_3_ = i_2_

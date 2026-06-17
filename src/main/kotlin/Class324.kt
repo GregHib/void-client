@@ -181,7 +181,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
             val i_53_ = (random.nextInt() and 0x1f) + 192
             method2579(i_53_ shl 24 or (0xffffff and i_50_), i xor 0x79.inv(), i_53_ shl 24 or (i_49_ and 0xffffff))
             val i_54_ = string.length
-            if (i != -1) aClass138_4062 = null
+            if (i != -1) aRectangleRegion_4062 = null
             val is_55_ = IntArray(i_54_)
             var i_56_ = 0
             var i_57_ = 0
@@ -504,7 +504,7 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
         @JvmField
         var anInt4061: Int = 0
         @JvmField
-        var aClass138_4062: Class138? = Class138(2, 4, 4, 0)
+        var aRectangleRegion_4062: RectangleRegion? = RectangleRegion(2, 4, 4, 0)
         @JvmField
         var anInt4064: Int = 0
         @JvmField
@@ -525,15 +525,15 @@ abstract class Class324 internal constructor(var_renderer: Renderer?, class143: 
 
         @JvmStatic
         fun method2572(i: Byte) {
-            aClass138_4062 = null
-            if (i.toInt() != 23) aClass138_4062 = null
+            aRectangleRegion_4062 = null
+            if (i.toInt() != 23) aRectangleRegion_4062 = null
         }
 
         @JvmStatic
         fun method2582(class377: Class377?, class39s: Array<Class39?>?, i: Int): Class89? {
             try {
                 anInt4065++
-                if (i != -2113) aClass138_4062 = null
+                if (i != -2113) aRectangleRegion_4062 = null
                 var i_100_ = 0
                 while (class39s!!.size > i_100_) {
                     if (class39s[i_100_] == null || class39s[i_100_]!!.aLong517 <= 0) return null

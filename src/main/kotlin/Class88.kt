@@ -115,7 +115,7 @@ class Class88 {
         @JvmStatic
         fun method842(bool: Boolean) {
             anInt1501++
-            Class138.aClass46Array1942 = null
+            RectangleRegion.aClass46Array1942 = null
             if (Class59_Sub1.aBoolean5300 && Class348_Sub42_Sub12.method3229(-82) != 1) method132(106, (Class240.anInt4674 == 3) || Class240.anInt4674 == 7, method3439(107), 0, Class348_Sub44.method3306((-111).toByte()), 0)
             var i = 0
             var i_1_ = 0
@@ -124,9 +124,9 @@ class Class88 {
                 i_1_ = method260(false)
             }
             Class159.method1252(i_1_, RenderNode.anInt9721, i_1_, -1, i, i + Class321.anInt4017, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432, 116.toByte(), i)
-            if (Class138.aClass46Array1942 != null) {
-                method3064(i, SpriteLoadValidator.anInt4792, true, Class348_Sub1.anInt6555, i_1_, Class331.aClass46_4130!!.anInt760, i + Class321.anInt4017, false, Class138.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432)
-                Class138.aClass46Array1942 = null
+            if (RectangleRegion.aClass46Array1942 != null) {
+                method3064(i, SpriteLoadValidator.anInt4792, true, Class348_Sub1.anInt6555, i_1_, Class331.aClass46_4130!!.anInt760, i + Class321.anInt4017, false, RectangleRegion.aClass46Array1942, -1412584499, i_1_ - -Class348_Sub42_Sub8_Sub2.anInt10432)
+                RectangleRegion.aClass46Array1942 = null
             }
         }
 
