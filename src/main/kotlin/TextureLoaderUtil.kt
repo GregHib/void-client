@@ -1,7 +1,7 @@
 /* Class320 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class320 {
+object TextureLoaderUtil {
     var aShort3992: Short = 320
     var anInt3993: Int = 0
     var aFloat3994: Float = 0f
