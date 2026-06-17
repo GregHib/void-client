@@ -42,9 +42,9 @@ class OutputStream_Sub1 : OutputStream() {
             else if (LocalPlayerState.aPlayer_1907!!.x < 0 || (LocalPlayerState.aPlayer_1907!!.x >= Class367_Sub4.anInt7319 * 512) || LocalPlayerState.aPlayer_1907!!.y < 0 || (512 * Class348_Sub40_Sub3.anInt9109 <= LocalPlayerState.aPlayer_1907!!.y)) Class348_Sub8.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
             else {
                 TextureQualityOptionState.anInt6006++
-                if (LocalPlayerState.aPlayer_1907 != null && Class248.anInt3203 == (LocalPlayerState.aPlayer_1907!!.x + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(90.toByte())) - -256) shr 9 && Class97.anInt1548 == (LocalPlayerState.aPlayer_1907!!.y + 256 + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(112.toByte()))) shr 9) {
+                if (LocalPlayerState.aPlayer_1907 != null && MediaStreamClient.anInt3203 == (LocalPlayerState.aPlayer_1907!!.x + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(90.toByte())) - -256) shr 9 && Class97.anInt1548 == (LocalPlayerState.aPlayer_1907!!.y + 256 + -(256 * LocalPlayerState.aPlayer_1907!!.method2436(112.toByte()))) shr 9) {
                     Class97.anInt1548 = -1
-                    Class248.anInt3203 = -1
+                    MediaStreamClient.anInt3203 = -1
                     Class299_Sub1_Sub2.method2264(false)
                 }
                 AsyncTaskHandle.method1434(-14988)
@@ -171,7 +171,7 @@ class OutputStream_Sub1 : OutputStream() {
                     Class5.anInt4638 = i_12_
                     Class305.anInt3855 = i_9_
                     Class59_Sub2_Sub2.anInt8685 = i_10_
-                    if (SocketGameConnection.aBoolean5840 && Class348_Sub4.aClass248_6601!!.method1902(4) == 0) SocketGameConnection.aBoolean5840 = false
+                    if (SocketGameConnection.aBoolean5840 && Class348_Sub4.aMediaStreamClient_6601!!.method1902(4) == 0) SocketGameConnection.aBoolean5840 = false
                     if (SocketGameConnection.aBoolean5840) {
                         Class348_Sub8.aRenderer6654!!.method3675(i_0_, (-125).toByte(), i_1_, i_3_, i_2_, -16777216)
                         Class362.method3511(false, GameAppletFrame.aClass324_20, ParticleEmitterFactory.aFontDefinition_3179, (Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aRenderer6654)

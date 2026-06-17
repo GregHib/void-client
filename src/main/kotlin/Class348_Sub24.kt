@@ -326,7 +326,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     class46!!.anInt756 = (class348_sub42_sub15.anInt9652)
                                 } else if (i_16_ == 15) {
                                     Class97.anInt1548 = (class348_sub42_sub15.anInt9651)
-                                    Class248.anInt3203 = (class348_sub42_sub15.anInt9652)
+                                    MediaStreamClient.anInt3203 = (class348_sub42_sub15.anInt9652)
                                     Class348_Sub13.Companion.aBoolean6759 = true
                                 } else if (i_16_ == 16) {
                                     val class46 = (method2570(1512932720, i_17_))

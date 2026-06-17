@@ -1197,7 +1197,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7571 = 0
             Class64_Sub3.anInt5619 = 0
             Class318_Sub1_Sub5_Sub2.anInt10165 = 0
-            Class248.anInt3192 = 0
+            MediaStreamClient.anInt3192 = 0
             InputStream_Sub2.anInt80 = 0
             Class332.anInt4138 = 0
             Class59_Sub2_Sub1.anInt8673 = 0
@@ -1426,7 +1426,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class318_Sub1_Sub3.anInt8746 = 0
             GroundDecorOptionState.anInt5981 = 0
             Class377.anInt9817 = 0
-            Class248.anInt3200 = 0
+            MediaStreamClient.anInt3200 = 0
             TextureMetadataProvider.anInt4617 = 0
             Class286_Sub9.anInt6312 = 0
             HitsplatDefinition.anInt2018 = 0
@@ -1503,7 +1503,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub40_Sub29.anInt9381 = 0
             Class262.anInt3324 = 0
             Class348_Sub42_Sub15.anInt9655 = 0
-            Class248.anInt3190 = 0
+            MediaStreamClient.anInt3190 = 0
             HudTabPanel.anInt2992 = 0
             Class286_Sub8.anInt6295 = 0
             Class3.anInt124 = 0
@@ -1642,7 +1642,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub9.anInt6672 = 0
             Class348_Sub15.anInt6779 = 0
             OpenGlRenderer.anInt7640 = 0
-            Class248.anInt3195 = 0
+            MediaStreamClient.anInt3195 = 0
             Class377.anInt9826 = 0
             Class64_Sub3.anInt5546 = 0
             LocTypeDefLoader.anInt2502 = 0
@@ -1701,7 +1701,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             AnimatedModelRenderer.anInt8406 = 0
             Class348_Sub9.anInt6682 = 0
             OpenGlRenderer.anInt7564 = 0
-            Class248.anInt3198 = 0
+            MediaStreamClient.anInt3198 = 0
             GrowableStringList.anInt2368 = 0
             WorldMapSceneSoftware.anInt5820 = 0
             GameAppletFrame.anInt28 = 0
@@ -2312,7 +2312,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             DisplayModeOptionState.anInt6099 = 0
             ProjectionCameraTransform.anInt5767 = 0
             Class348_Sub17.anInt6794 = 0
-            Class248.anInt3193 = 0
+            MediaStreamClient.anInt3193 = 0
             MultiLevelOptionState.anInt6153 = 0
             Class348_Sub49.anInt7198 = 0
             AbstractMenuEntry.anInt1705 = 0
@@ -2434,7 +2434,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class264.anInt3369 = 0
             Class59_Sub1.anInt5282 = 0
             Class292.anInt4805 = 0
-            Class248.anInt3189 = 0
+            MediaStreamClient.anInt3189 = 0
             LoadProgressCounters.anInt2452 = 0
             Class367_Sub3.anInt7307 = 0
             Class318_Sub1_Sub3_Sub2.anInt10043 = 0
@@ -2904,7 +2904,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class66.anInt1166 = 0
             Class348_Sub42_Sub10.anInt9568 = 0
             Class318_Sub1_Sub3_Sub4.anInt10343 = 0
-            Class248.anInt3187 = 0
+            MediaStreamClient.anInt3187 = 0
             DefaultGraphicsOptionState.anInt6131 = 0
             Class295.anInt3752 = 0
             NativeRenderer.anInt7903 = 0
@@ -2953,7 +2953,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class359.anInt4422 = 0
             OpenGlTerrainTile.anInt8254 = 0
             Class348_Sub23.anInt6863 = 0
-            Class248.anInt3188 = 0
+            MediaStreamClient.anInt3188 = 0
             OpenGlRenderer.anInt7704 = 0
             Class318_Sub1_Sub3_Sub5.anInt10397 = 0
             CollisionMapRegion.anInt1719 = 0
@@ -2977,7 +2977,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class263.anInt3356 = 0
             Class31.anInt446 = 0
             Class287.anInt3686 = 0
-            Class248.anInt3191 = 0
+            MediaStreamClient.anInt3191 = 0
             ChatEffectsOptionState.anInt5864 = 0
             Class300.anInt3816 = 0
             Class311.anInt3904 = 0
@@ -3039,7 +3039,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7539 = 0
             Class261.anInt3316 = 0
             Class376.anInt4552 = 0
-            Class248.anInt3194 = 0
+            MediaStreamClient.anInt3194 = 0
             Class367_Sub9.anInt7374 = 0
             Class289.anInt3703 = 0
             Class318_Sub1_Sub3_Sub3.anInt10205 = 0
@@ -3689,8 +3689,8 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class348_Sub21.anInt6856 = 0
             Renderer.anInt4569 = 0
             Class373_Sub2.anInt7451 = 0
-            Class248.anInt3185 = 0
-            Class248.anInt3199 = 0
+            MediaStreamClient.anInt3185 = 0
+            MediaStreamClient.anInt3199 = 0
             Class348_Sub49_Sub1.anInt9741 = 0
             Class368.anInt4496 = 0
             Class348_Sub40_Sub20.anInt9261 = 0
@@ -3795,7 +3795,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             NativeRenderer.anInt7994 = 0
             Class348_Sub31.anInt6918 = 0
             AsyncTaskHandle.anInt2580 = 0
-            Class248.anInt3186 = 0
+            MediaStreamClient.anInt3186 = 0
             Class373_Sub2.anInt7435 = 0
             NativeLibraryUnloader.anInt2973 = 0
             NativeRenderer.anInt7959 = 0

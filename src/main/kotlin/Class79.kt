@@ -783,7 +783,7 @@ class Class79 {
                 for (i_31_ in 0..<i_29_) Class318_Sub6.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
                 SimpleBinaryOptionState.anInt6076 = i_29_ + -1
                 Class348_Sub40_Sub6.anInt9139 = i_29_
-                Class248.anInt3201 = 32 * i_29_
+                MediaStreamClient.anInt3201 = 32 * i_29_
             }
             if (i_30_ <= 108) aClient1367 = null
             if (Class286_Sub2.anInt6212 != i) {

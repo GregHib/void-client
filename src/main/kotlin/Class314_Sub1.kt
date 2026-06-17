@@ -1,11 +1,11 @@
 /* Class314_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_23_: IndexedFileCache?, class248: Class248?, scriptCompilerThread: ScriptCompilerThread?, i_24_: Int, `is`: ByteArray?, i_25_: Int, bool: Boolean) : Class314() {
+class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCache?, indexedFileCache_23_: IndexedFileCache?, mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, i_24_: Int, `is`: ByteArray?, i_25_: Int, bool: Boolean) : Class314() {
     private var aClass291_6342: Class291? = null
     private val anInt6344: Int
     private val aByteArray6346: ByteArray?
-    private val aClass248_6347: Class248?
+    private val aMediaStreamClient_6347: MediaStreamClient?
     private val anInt6350: Int
     private var aByteArray6351: ByteArray? = null
     private var anInt6352 = 0
@@ -99,7 +99,7 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 while (aClass291_6342!!.anIntArray3725.size > anInt6373) {
                     if (aClass291_6342!!.anIntArray3725[anInt6373] == 0) anInt6373++
                     else {
-                        if (aClass248_6347!!.method1899(-124)) {
+                        if (aMediaStreamClient_6347!!.method1899(-124)) {
                             bool = false
                             break
                         }
@@ -209,8 +209,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         if (class348_sub42_sub16 == null) {
             if (i_10_ == 0) {
                 if (aIndexedFileCache_6365 == null || aByteArray6351!![i].toInt() == -1) {
-                    if (aClass248_6347!!.method1900(-9)) return null
-                    class348_sub42_sub16 = aClass248_6347.method1906((-125).toByte(), 2.toByte(), true, i, anInt6350)
+                    if (aMediaStreamClient_6347!!.method1900(-9)) return null
+                    class348_sub42_sub16 = aMediaStreamClient_6347.method1906((-125).toByte(), 2.toByte(), true, i, anInt6350)
                 } else class348_sub42_sub16 = aScriptCompilerThread_6354!!.method1055(aIndexedFileCache_6365, i, (-110).toByte())
             } else if (i_10_ == 1) {
                 if (aIndexedFileCache_6365 == null) throw RuntimeException()
@@ -219,8 +219,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 if (i_10_ != 2) throw RuntimeException()
                 if (aIndexedFileCache_6365 == null) throw RuntimeException()
                 if (aByteArray6351!![i].toInt() != -1) throw RuntimeException()
-                if (aClass248_6347!!.method1899(-120)) return null
-                class348_sub42_sub16 = aClass248_6347.method1906(97.toByte(), 2.toByte(), false, i, anInt6350)
+                if (aMediaStreamClient_6347!!.method1899(-120)) return null
+                class348_sub42_sub16 = aMediaStreamClient_6347.method1906(97.toByte(), 2.toByte(), false, i, anInt6350)
             }
             aClass356_6360.method3483(73.toByte(), i.toLong(), class348_sub42_sub16)
         }
@@ -240,13 +240,13 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                         if (is_12_[i_14_] != is_13_[i_14_]) throw RuntimeException()
                     }
                 }
-                aClass248_6347!!.anInt3213 = 0
-                aClass248_6347.anInt3214 = 0
+                aMediaStreamClient_6347!!.anInt3213 = 0
+                aMediaStreamClient_6347.anInt3214 = 0
             } catch (runtimeexception: RuntimeException) {
-                aClass248_6347!!.method1904(-1)
+                aMediaStreamClient_6347!!.method1904(-1)
                 class348_sub42_sub16.method2715(44.toByte())
-                if (class348_sub42_sub16.aBoolean9663 && !aClass248_6347.method1900(i_9_.toInt() xor 0x1f)) {
-                    val class348_sub42_sub16_sub1 = aClass248_6347.method1906(111.toByte(), 2.toByte(), true, i, anInt6350)
+                if (class348_sub42_sub16.aBoolean9663 && !aMediaStreamClient_6347.method1900(i_9_.toInt() xor 0x1f)) {
+                    val class348_sub42_sub16_sub1 = aMediaStreamClient_6347.method1906(111.toByte(), 2.toByte(), true, i, anInt6350)
                     aClass356_6360.method3483(84.toByte(), i.toLong(), class348_sub42_sub16_sub1)
                 }
                 return null
@@ -287,8 +287,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         } catch (exception: Exception) {
             aByteArray6351!![i] = (-1).toByte()
             class348_sub42_sub16.method2715(121.toByte())
-            if (class348_sub42_sub16.aBoolean9663 && !aClass248_6347!!.method1900(-30)) {
-                val class348_sub42_sub16_sub1 = aClass248_6347.method1906(99.toByte(), 2.toByte(), true, i, anInt6350)
+            if (class348_sub42_sub16.aBoolean9663 && !aMediaStreamClient_6347!!.method1900(-30)) {
+                val class348_sub42_sub16_sub1 = aMediaStreamClient_6347.method1906(99.toByte(), 2.toByte(), true, i, anInt6350)
                 aClass356_6360.method3483(66.toByte(), i.toLong(), class348_sub42_sub16_sub1)
             }
             return null
@@ -306,8 +306,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
         if (aClass291_6342 != null) return aClass291_6342
         if (i.toInt() != 56) return null
         if (aClass348_Sub42_Sub16_6355 == null) {
-            if (aClass248_6347!!.method1900(-14)) return null
-            aClass348_Sub42_Sub16_6355 = aClass248_6347.method1906((-114).toByte(), 0.toByte(), true, anInt6350, 255)
+            if (aMediaStreamClient_6347!!.method1900(-14)) return null
+            aClass348_Sub42_Sub16_6355 = aMediaStreamClient_6347.method1906((-114).toByte(), 0.toByte(), true, anInt6350, 255)
         }
         if (aClass348_Sub42_Sub16_6355!!.aBoolean9664) return null
         val `is` = aClass348_Sub42_Sub16_6355!!.method3259(16)
@@ -320,8 +320,8 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                     break
                 } catch (runtimeexception: RuntimeException) {
                     aClass291_6342 = null
-                    if (aClass248_6347!!.method1900(i + 66)) aClass348_Sub42_Sub16_6355 = null
-                    else aClass348_Sub42_Sub16_6355 = aClass248_6347.method1906((-95).toByte(), 0.toByte(), true, anInt6350, 255)
+                    if (aMediaStreamClient_6347!!.method1900(i + 66)) aClass348_Sub42_Sub16_6355 = null
+                    else aClass348_Sub42_Sub16_6355 = aMediaStreamClient_6347.method1906((-95).toByte(), 0.toByte(), true, anInt6350, 255)
                     return null
                 }
             }
@@ -329,10 +329,10 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 if (`is` == null) throw RuntimeException()
                 aClass291_6342 = Class291(`is`, anInt6344, aByteArray6346)
             } catch (runtimeexception: RuntimeException) {
-                aClass248_6347!!.method1904(i + -57)
+                aMediaStreamClient_6347!!.method1904(i + -57)
                 aClass291_6342 = null
-                if (aClass248_6347.method1900(i.toInt() xor 0x16.inv())) aClass348_Sub42_Sub16_6355 = null
-                else aClass348_Sub42_Sub16_6355 = aClass248_6347.method1906(47.toByte(), 0.toByte(), true, anInt6350, 255)
+                if (aMediaStreamClient_6347.method1900(i.toInt() xor 0x16.inv())) aClass348_Sub42_Sub16_6355 = null
+                else aClass348_Sub42_Sub16_6355 = aMediaStreamClient_6347.method1906(47.toByte(), 0.toByte(), true, anInt6350, 255)
                 return null
             }
             if (aIndexedFileCache_6364 != null) aScriptCompilerThread_6354!!.method1049(`is`, aIndexedFileCache_6364, 10.toByte(), anInt6350)
@@ -363,12 +363,12 @@ class Class314_Sub1 internal constructor(i: Int, indexedFileCache: IndexedFileCa
                 anInt6352 = i_25_
                 aIndexedFileCache_6364 = indexedFileCache_23_
                 aBoolean6375 = bool
-                aClass248_6347 = class248
+                aMediaStreamClient_6347 = mediaStreamClient
                 aScriptCompilerThread_6354 = scriptCompilerThread
                 if (aIndexedFileCache_6364 == null) break
                 aClass348_Sub42_Sub16_6355 = aScriptCompilerThread_6354!!.method1055(aIndexedFileCache_6364, anInt6350, (-112).toByte())
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bja.<init>(" + i + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + (if (indexedFileCache_23_ != null) "{...}" else "null") + ',' + (if (class248 != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + i_24_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("bja.<init>(" + i + ',' + (if (indexedFileCache != null) "{...}" else "null") + ',' + (if (indexedFileCache_23_ != null) "{...}" else "null") + ',' + (if (mediaStreamClient != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + i_24_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))
             }
             break
         } while (false)

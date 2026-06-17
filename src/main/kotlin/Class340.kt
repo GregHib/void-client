@@ -1,8 +1,8 @@
 import Class348_Sub1_Sub2.Companion.method2730
 import java.math.BigInteger
 
-class Class340 internal constructor(class248: Class248?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
-    private val aClass248_4212: Class248?
+class Class340 internal constructor(mediaStreamClient: MediaStreamClient?, scriptCompilerThread: ScriptCompilerThread?, biginteger: BigInteger?, biginteger_14_: BigInteger?) {
+    private val aMediaStreamClient_4212: MediaStreamClient?
     private val aBigInteger4213: BigInteger?
     private var aClass348_Sub49_4215: Class348_Sub49? = null
     private var aClass314_Sub1Array4216: Array<Class314_Sub1?>? = null
@@ -39,10 +39,10 @@ class Class340 internal constructor(class248: Class248?, scriptCompilerThread: S
             return true
         }
         if (aClass348_Sub42_Sub16_Sub1_4220 == null) {
-            if (aClass248_4212!!.method1900(-71)) {
+            if (aMediaStreamClient_4212!!.method1900(-71)) {
                 return false
             }
-            aClass348_Sub42_Sub16_Sub1_4220 = aClass248_4212.method1906((-84).toByte(), 0.toByte(), true, 255, 255)
+            aClass348_Sub42_Sub16_Sub1_4220 = aMediaStreamClient_4212.method1906((-84).toByte(), 0.toByte(), true, 255, 255)
         }
         if (aClass348_Sub42_Sub16_Sub1_4220!!.aBoolean9664) {
             return false
@@ -87,7 +87,7 @@ class Class340 internal constructor(class248: Class248?, scriptCompilerThread: S
             val `is` = ByteArray(64)
             aClass348_Sub49_4215!!.method3389(2147483647, 0, 64, `is`)
             if (i >= -18) method2671(103)
-            val class314_sub1 = Class314_Sub1(i_10_, indexedFileCache, indexedFileCache_11_, aClass248_4212, aScriptCompilerThread_4217, i_12_, `is`, i_13_, bool)
+            val class314_sub1 = Class314_Sub1(i_10_, indexedFileCache, indexedFileCache_11_, aMediaStreamClient_4212, aScriptCompilerThread_4217, i_12_, `is`, i_13_, bool)
             aClass314_Sub1Array4216!![i_10_] = class314_sub1
             return class314_sub1
         } catch (runtimeexception: RuntimeException) {
@@ -101,11 +101,11 @@ class Class340 internal constructor(class248: Class248?, scriptCompilerThread: S
                 aScriptCompilerThread_4217 = scriptCompilerThread
                 aBigInteger4218 = biginteger_14_
                 aBigInteger4213 = biginteger
-                aClass248_4212 = class248
-                if (aClass248_4212!!.method1900(-31)) break
-                aClass348_Sub42_Sub16_Sub1_4220 = aClass248_4212.method1906((-80).toByte(), 0.toByte(), true, 255, 255)
+                aMediaStreamClient_4212 = mediaStreamClient
+                if (aMediaStreamClient_4212!!.method1900(-31)) break
+                aClass348_Sub42_Sub16_Sub1_4220 = aMediaStreamClient_4212.method1906((-80).toByte(), 0.toByte(), true, 255, 255)
             } catch (runtimeexception: RuntimeException) {
-                throw Class348_Sub17.method2929(runtimeexception, ("eb.<init>(" + (if (class248 != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + (if (biginteger != null) "{...}" else "null") + ',' + (if (biginteger_14_ != null) "{...}" else "null") + ')'))
+                throw Class348_Sub17.method2929(runtimeexception, ("eb.<init>(" + (if (mediaStreamClient != null) "{...}" else "null") + ',' + (if (scriptCompilerThread != null) "{...}" else "null") + ',' + (if (biginteger != null) "{...}" else "null") + ',' + (if (biginteger_14_ != null) "{...}" else "null") + ')'))
             }
             break
         } while (false)

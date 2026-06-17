@@ -8,7 +8,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
     }
 
     override fun method3521(bool: Boolean, i: Byte) {
-        this.aHa_Sub3_4479.method3874(Class348_Sub23_Sub2.aRenderConfigFactory_9011, 127, Class248.aRenderConfigFactory_3196)
+        this.aHa_Sub3_4479.method3874(Class348_Sub23_Sub2.aRenderConfigFactory_9011, 127, MediaStreamClient.aRenderConfigFactory_3196)
         if (i.toInt() != -103) method3524(55)
     }
 

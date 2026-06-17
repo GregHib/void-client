@@ -161,7 +161,7 @@ import TextureMetadataProvider.Companion.method1880
 import DebugOverlayRenderer.method1882
 import ParticleEmitterFactory.Companion.method1886
 import VideoAdChecker.method1889
-import Class248.Companion.method1897
+import MediaStreamClient.Companion.method1897
 import Class249.method1907
 import Class25.Companion.method305
 import Class250.Companion.method1910
@@ -550,23 +550,23 @@ import kotlin.math.min
 class Client : GameAppletFrame() {
     private fun method101(i: Byte) {
         anInt5179++
-        if (Class348_Sub4.aClass248_6601!!.anInt3213 > BinaryGraphicsOptionState.anInt5959) {
+        if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 > BinaryGraphicsOptionState.anInt5959) {
             Class3.aServerConnectionInfo_125!!.method1259(0)
-            Class341.anInt4235 = (Class348_Sub4.aClass248_6601!!.anInt3213 * 50 + -50) * 5
+            Class341.anInt4235 = (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 * 50 + -50) * 5
             if (Class341.anInt4235 > 3000) Class341.anInt4235 = 3000
-            if (Class348_Sub4.aClass248_6601!!.anInt3213 >= 2 && Class348_Sub4.aClass248_6601!!.anInt3214 == 6) {
+            if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 >= 2 && Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 == 6) {
                 this.method82(-80, "js5connect_outofdate")
                 WorldMapRenderer.anInt4674 = 14
                 return
             }
-            if (Class348_Sub4.aClass248_6601!!.anInt3213 >= 4 && Class348_Sub4.aClass248_6601!!.anInt3214 == -1) {
+            if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 >= 4 && Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 == -1) {
                 this.method82(81, "js5crc")
                 WorldMapRenderer.anInt4674 = 14
                 return
             }
-            if (Class348_Sub4.aClass248_6601!!.anInt3213 >= 4 && NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-81).toByte())) {
-                if (Class348_Sub4.aClass248_6601!!.anInt3214 != 7 && Class348_Sub4.aClass248_6601!!.anInt3214 != 9) {
-                    if (Class348_Sub4.aClass248_6601!!.anInt3214 <= 0) this.method82(72, "js5io")
+            if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3213 >= 4 && NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-81).toByte())) {
+                if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 != 7 && Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 != 9) {
+                    if (Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 <= 0) this.method82(72, "js5io")
                     else if (Class348_Sub31.aString6926 == null) this.method82(-116, "js5connect")
                     else this.method82(113, ("js5proxy_" + Class348_Sub31.aString6926!!.trim { it <= ' ' }))
                 } else this.method82(-93, "js5connect_full")
@@ -574,7 +574,7 @@ class Client : GameAppletFrame() {
                 return
             }
         }
-        BinaryGraphicsOptionState.anInt5959 = Class348_Sub4.aClass248_6601!!.anInt3213
+        BinaryGraphicsOptionState.anInt5959 = Class348_Sub4.aMediaStreamClient_6601!!.anInt3213
         if (Class341.anInt4235 > 0) Class341.anInt4235--
         else {
             try {
@@ -618,7 +618,7 @@ class Client : GameAppletFrame() {
                     val class348_sub49 = Class348_Sub49(class267s!!.size * 4)
                     TextureHandle.aSocketStreamWorker_2589!!.method1474(class348_sub49.aByteArray7154!!, 0, (-72).toByte(), (class348_sub49.aByteArray7154)!!.size)
                     for (i_1_ in class267s.indices) class267s[i_1_]!!.method2030(1, class348_sub49.readInt((-126).toByte()))
-                    Class348_Sub4.aClass248_6601!!.method1903(false, !bool, TextureHandle.aSocketStreamWorker_2589)
+                    Class348_Sub4.aMediaStreamClient_6601!!.method1903(false, !bool, TextureHandle.aSocketStreamWorker_2589)
                     Class47.anInt846 = 0
                     Sprite.aLinkedQueueNode_114 = null
                     TextureHandle.aSocketStreamWorker_2589 = null
@@ -638,7 +638,7 @@ class Client : GameAppletFrame() {
         frame.dispose()
         method3556(false)
         Class39.aScriptCompilerThread_520 = ScriptCompilerThread(Class348_Sub23_Sub1.aClass297_8992!!)
-        Class348_Sub4.aClass248_6601 = Class248()
+        Class348_Sub4.aMediaStreamClient_6601 = MediaStreamClient()
         method3230(intArrayOf(20, 260), intArrayOf(1000, 100), 0)
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = arrayOfNulls<ByteArray>(50)
         Class316.aClass348_Sub51_3959 = method247(24916)
@@ -1245,15 +1245,15 @@ class Client : GameAppletFrame() {
     private fun method102(i: Byte) {
         if (i.toInt() != 61) method106()
         anInt5184++
-        val bool = Class348_Sub4.aClass248_6601!!.method1893(99.toByte())
+        val bool = Class348_Sub4.aMediaStreamClient_6601!!.method1893(99.toByte())
         if (!bool) method101((-112).toByte())
     }
 
     private fun method103(i: Int, i_5_: Byte) {
         anInt5182++
-        Class348_Sub4.aClass248_6601!!.anInt3213++
+        Class348_Sub4.aMediaStreamClient_6601!!.anInt3213++
         Sprite.aLinkedQueueNode_114 = null
-        Class348_Sub4.aClass248_6601!!.anInt3214 = i
+        Class348_Sub4.aMediaStreamClient_6601!!.anInt3214 = i
         if (i_5_ > 74) {
             Class47.anInt846 = 0
             TextureHandle.aSocketStreamWorker_2589 = null
@@ -1274,7 +1274,7 @@ class Client : GameAppletFrame() {
             Class348_Sub40_Sub8.aAbstractGameSocket_9165 = null
         }
         method1265(16)
-        Class348_Sub4.aClass248_6601!!.method1901(i xor 0x44.inv())
+        Class348_Sub4.aMediaStreamClient_6601!!.method1901(i xor 0x44.inv())
         Class39.aScriptCompilerThread_520!!.method1051(true)
         if (Class76.aHostPingThread_1286 != null) {
             Class76.aHostPingThread_1286!!.method1303(16.toByte())

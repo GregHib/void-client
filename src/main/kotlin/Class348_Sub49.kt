@@ -781,10 +781,10 @@ open class Class348_Sub49 : Class348 {
                             method2355(Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, Class59_Sub2_Sub1.aClass45_8667, Class345.anInt4270, 0, 2)
                             method3093(i xor 0x66)
                         } else method3007(2, 22684)
-                        Class348_Sub4.aClass248_6601!!.method1892(-117, false)
+                        Class348_Sub4.aMediaStreamClient_6601!!.method1892(-117, false)
                     } else {
                         method3007(2, 22684)
-                        Class348_Sub4.aClass248_6601!!.method1892(i xor 0x4b.inv(), true)
+                        Class348_Sub4.aMediaStreamClient_6601!!.method1892(i xor 0x4b.inv(), true)
                     }
                 }
                 if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (-64).toByte()) || i_71_ == 13) Class348_Sub8.aRenderer6654!!.method3673()

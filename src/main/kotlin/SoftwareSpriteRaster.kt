@@ -60,7 +60,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         }
         val i_12_ = 101 / ((-30 - i_1_) / 62)
         if (i_5_ > 0 && i_4_ > 0) {
-            Class248.method1895(i_3_, this.aByteArray1617, i_4_, i_2_, i_6_, i_7_, var_r_Sub2.aByteArray10486, i_5_, 121.toByte())
+            MediaStreamClient.method1895(i_3_, this.aByteArray1617, i_4_, i_2_, i_6_, i_7_, var_r_Sub2.aByteArray10486, i_5_, 121.toByte())
             method952(i_4_, i_5_, i, -1, i_0_)
         }
     }

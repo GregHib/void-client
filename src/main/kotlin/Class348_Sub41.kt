@@ -198,8 +198,8 @@ class Class348_Sub41 : Class348() {
                             class348_sub37 = (ModelBatchBase.aClass356_1895!!.method3482(0) as? Class348_Sub37?)
                         }
                     }
-                    if (Class248.anInt3203 != 0) {
-                        Class248.anInt3203 -= i_20_
+                    if (MediaStreamClient.anInt3203 != 0) {
+                        MediaStreamClient.anInt3203 -= i_20_
                         Class97.anInt1548 -= i_21_
                     }
                     Class348_Sub17.Companion.method2928(true)

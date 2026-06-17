@@ -76,7 +76,7 @@ class Class348_Sub14 : Class348 {
             class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i + Class90.regionTileY, 3.toByte())
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(78.toByte(), if (!LoadProgressCounters.aClass346_2449!!.method2696(82, -124)) 0 else 1)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-124, ArbVertexProgram.regionTileX + i_2_)
-            Class248.anInt3203 = i_2_
+            MediaStreamClient.anInt3203 = i_2_
             if (i_3_ >= -88) aClass351_6764 = null
             Class97.anInt1548 = i
             Class348_Sub13.Companion.aBoolean6759 = false

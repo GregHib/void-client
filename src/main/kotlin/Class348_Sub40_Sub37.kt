@@ -186,7 +186,7 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
         @JvmStatic
         fun method3147(i: Byte) {
             if (i.toInt() != 27) method3146(-85, 87, 91.toByte(), 46, -77, 54, null, null, -117)
-            Class248.anInt3203 = -1
+            MediaStreamClient.anInt3203 = -1
             Class97.anInt1548 = -1
             Class259.anInt3306 = 0
             anInt9459++

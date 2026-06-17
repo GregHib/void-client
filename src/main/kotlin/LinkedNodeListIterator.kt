@@ -290,8 +290,8 @@ class LinkedNodeListIterator {
                             i_33_++
                         }
                         if (Class348_Sub40_Sub21.anInt9282 != 4) {
-                            if (Class248.anInt3203 != 0) {
-                                val i_40_ = (-(i_4_ / 128) + (Class248.anInt3203 * 4 + 2) - (-(2 * LocalPlayerState.aPlayer_1907!!.method2436(77.toByte())) - -2))
+                            if (MediaStreamClient.anInt3203 != 0) {
+                                val i_40_ = (-(i_4_ / 128) + (MediaStreamClient.anInt3203 * 4 + 2) - (-(2 * LocalPlayerState.aPlayer_1907!!.method2436(77.toByte())) - -2))
                                 val i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (LocalPlayerState.aPlayer_1907!!.method2436(59.toByte()) - 1)))
                                 HeadIconRenderer.method1211(i_1_, (Class25.aAbstractModelRendererArray367!![(if (!Class348_Sub13.aBoolean6759) 0 else 1)]), i, class46, var_aa, i_41_, 2, i_40_)
                             }
@@ -309,7 +309,7 @@ class LinkedNodeListIterator {
             anInt1642++
             val `is` = CameraRotationStub.aRenderer326!!.Y()
             Gl3dTexture.anInt8630 = `is`[2]
-            Class248.anInt3202 = `is`[0]
+            MediaStreamClient.anInt3202 = `is`[0]
             Class27.anInt394 = `is`[3]
             SimpleToggleOptionState.anInt5886 = `is`[1]
             if (bool_42_) {

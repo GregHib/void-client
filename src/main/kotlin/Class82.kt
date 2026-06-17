@@ -179,19 +179,19 @@ class Class82 internal constructor(sceneProjector: SceneProjector?, i: Int, clas
                             return
                         }
                         if (string.equals("clientjs5drop", ignoreCase = true)) {
-                            Class348_Sub4.aClass248_6601!!.method1901(-83)
+                            Class348_Sub4.aMediaStreamClient_6601!!.method1901(-83)
                             method94("Dropped client js5 net queue", -116)
                             return
                         }
                         if (string.equals("serverjs5drop", ignoreCase = true)) {
-                            Class348_Sub4.aClass248_6601!!.method1905(0)
+                            Class348_Sub4.aMediaStreamClient_6601!!.method1905(0)
                             method94("Dropped server js5 net queue", -100)
                             return
                         }
                         if (string.equals("breakcon", ignoreCase = true)) {
                             Class348_Sub23_Sub1.aClass297_8992!!.method2239(-95)
                             Class348_Sub40_Sub8.aAbstractGameSocket_9165!!.method1702(i + 123)
-                            Class348_Sub4.aClass248_6601!!.method1898(true)
+                            Class348_Sub4.aMediaStreamClient_6601!!.method1898(true)
                             method94("Breaking new connections for 5 seconds", i + -4)
                             return
                         }

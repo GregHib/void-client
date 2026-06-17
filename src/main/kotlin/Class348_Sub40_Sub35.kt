@@ -33,7 +33,7 @@ class Class348_Sub40_Sub35 : Class348_Sub40(1, true) {
         anInt9446++
         val `is` = this.aSpriteSheetCache_7032!!.method1433(0, i)!!
         if (this.aSpriteSheetCache_7032!!.aBoolean2570) {
-            val i_5_ = Class248.anInt3201 * anInt9448 shr 12
+            val i_5_ = MediaStreamClient.anInt3201 * anInt9448 shr 12
             val is_6_ = this.method3048(Class299_Sub2.anInt6325 and -1 + i, 633706337, 0)!!
             val is_7_ = this.method3048(i, 633706337, 0)!!
             val is_8_ = this.method3048(Class299_Sub2.anInt6325 and i - -1, i_4_ + 633706082, 0)!!

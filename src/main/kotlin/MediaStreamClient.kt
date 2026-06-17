@@ -2,7 +2,10 @@ import Class62.method599
 import java.io.IOException
 import kotlin.concurrent.Volatile
 
-class Class248 {
+/*
+ * Class248
+ */
+class MediaStreamClient {
     private val aLinkedNodeListIterator_3197 = LinkedNodeListIterator()
     private val aLinkedNodeListIterator_3204 = LinkedNodeListIterator()
     private val aLinkedNodeListIterator_3205 = LinkedNodeListIterator()

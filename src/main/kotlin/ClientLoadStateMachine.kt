@@ -68,7 +68,7 @@ object ClientLoadStateMachine {
             }
         }
         if (Class56.aClass56_1023 == Class348_Sub42_Sub15.aClass56_9660) {
-            if (SizeBoundedSoftCache.aClass340_2327 == null) SizeBoundedSoftCache.aClass340_2327 = Class340(Class348_Sub4.aClass248_6601, Class39.aScriptCompilerThread_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657)
+            if (SizeBoundedSoftCache.aClass340_2327 == null) SizeBoundedSoftCache.aClass340_2327 = Class340(Class348_Sub4.aMediaStreamClient_6601, Class39.aScriptCompilerThread_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657)
             if (!SizeBoundedSoftCache.aClass340_2327!!.method2674(7)) return 0
             method2965(null, 0, true, 0)
             Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((-63).toByte())

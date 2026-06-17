@@ -2085,7 +2085,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3923(bool: Boolean, i: Int) {
         if (i != 1) {
             if (i != 0) {
-                if (i == 2) method3874(Class328_Sub3.aRenderConfigFactory_6519, 117, Class248.aRenderConfigFactory_3196)
+                if (i == 2) method3874(Class328_Sub3.aRenderConfigFactory_6519, 117, MediaStreamClient.aRenderConfigFactory_3196)
                 else if (i == 3) method3874(ParticleSystemState.aRenderConfigFactory_2207, 111, Class348_Sub23_Sub2.aRenderConfigFactory_9011)
                 else if (i == 4) method3874(Class348_Sub7.aRenderConfigFactory_6644, 126, Class348_Sub7.aRenderConfigFactory_6644)
             } else method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
