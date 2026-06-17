@@ -1,7 +1,7 @@
 /* Class241_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class Class241_Sub1 internal constructor() : Class241() {
+class NanoTimerHighPrecision internal constructor() : BufferPositionTracker() {
     private var aLong6154 = 0L
     private var aLong6155 = 0L
     private var anInt6156 = 1

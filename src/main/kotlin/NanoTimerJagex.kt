@@ -1,6 +1,6 @@
 import jagex3.jagmisc.jagmisc.nanoTime
 
-class Class241_Sub2 internal constructor() : Class241() {
+class NanoTimerJagex internal constructor() : BufferPositionTracker() {
     private var aLong6160 = 0L
     private var aLong6161 = 0L
     private var aLong6162 = 0L

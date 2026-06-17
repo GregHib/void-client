@@ -19,7 +19,7 @@ object Class303 {
         if (i > -61) aIntRange_3842 = null
         anInt3843++
         if (bool) {
-            val class348_sub47 = method2148(Class241.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126)
+            val class348_sub47 = method2148(BufferPositionTracker.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_0_)
             Class348_Sub42_Sub14.method3243(42, class348_sub47)
         } else Class66.method701(TextureDefinitionLoader.aClass273_1966!!, i_0_, -1)

@@ -728,7 +728,7 @@ class Client : GameAppletFrame() {
         method1004(16.toByte())
         method3478(false)
         method98(i + 32609)
-        Class241.method1860((-89).toByte())
+        BufferPositionTracker.method1860((-89).toByte())
         method1641(85.toByte())
         method906(-31777)
         method3680(-24016)
@@ -1659,8 +1659,8 @@ class Client : GameAppletFrame() {
     private fun method116(bool: Boolean) {
         anInt5172++
         if (WorldMapRenderer.anInt4674 != 14) {
-            val l = (Class241.method1857((-45).toByte()) / 1000000L + -Class348_Sub42_Sub2.aLong8573)
-            Class348_Sub42_Sub2.aLong8573 = Class241.method1857((-45).toByte()) / 1000000L
+            val l = (BufferPositionTracker.method1857((-45).toByte()) / 1000000L + -Class348_Sub42_Sub2.aLong8573)
+            Class348_Sub42_Sub2.aLong8573 = BufferPositionTracker.method1857((-45).toByte()) / 1000000L
             val bool_118_ = method2163(!bool)
             if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042!!.method2087(-115)
             if (Class260.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {

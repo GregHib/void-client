@@ -333,9 +333,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 ScrollingWidgetComponentNode.method1119(false)
                 method87((-97).toByte())
                 method92(28740)
-                Class348_Sub8.aClass241_6660 = RenderConfigFactory.method1631(false)
+                Class348_Sub8.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
                 while (CameraNodeList.aLong1739 == 0L || (Class62.method599(-124) < CameraNodeList.aLong1739)) {
-                    FloatCameraTransform.anInt5744 = Class348_Sub8.aClass241_6660!!.method1861(0, Class73.aLong4783)
+                    FloatCameraTransform.anInt5744 = Class348_Sub8.aBufferPositionTracker_6660!!.method1861(0, Class73.aLong4783)
                     var i = 0
                     while (FloatCameraTransform.anInt5744 > i) {
                         method84(-1)

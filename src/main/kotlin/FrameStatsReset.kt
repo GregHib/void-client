@@ -372,7 +372,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ConfigDefinitionLoader.anInt2086 = 0
             Class285.anInt4742 = 0
             RuntimeException_Sub1.anInt4598 = 0
-            Class241.anInt3149 = 0
+            BufferPositionTracker.anInt3149 = 0
             SpotAnimVector.anInt2300 = 0
             NativeRenderer.anInt8046 = 0
             ObjectByteSerializerHolder.anInt2284 = 0
@@ -1910,7 +1910,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             OpenGlRenderer.anInt7533 = 0
             Class290.anInt3716 = 0
             ScreenAnchorAlignment.anInt2882 = 0
-            Class241.anInt3148 = 0
+            BufferPositionTracker.anInt3148 = 0
             Npc.anInt10502 = 0
             Class348_Sub46.anInt7109 = 0
             Class284.anInt3665 = 0

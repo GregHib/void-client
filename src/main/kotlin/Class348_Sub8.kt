@@ -12,7 +12,7 @@ class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray
         @JvmField
         var anInt6659: Int = 0
         @JvmField
-        var aClass241_6660: Class241? = null
+        var aBufferPositionTracker_6660: BufferPositionTracker? = null
         private var aShortArray6661: ShortArray? = shortArrayOf(967, 20428, -21577, 11219, -10290)
         @JvmField
         var anApplet6662: GameApplet? = null
@@ -71,7 +71,7 @@ class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray
             aShortArray6663 = null
             anIntArray6655 = null
             if (i > -123) Companion.method2776((-65).toByte(), -91)
-            aClass241_6660 = null
+            aBufferPositionTracker_6660 = null
             aBooleanArrayArray6656 = null
             anApplet6662 = null
             aShortArrayArray6664 = null

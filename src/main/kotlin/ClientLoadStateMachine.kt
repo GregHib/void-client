@@ -222,7 +222,7 @@ object ClientLoadStateMachine {
             } catch (throwable: Throwable) {
                 /* empty */
             }
-            Class348_Sub8.aClass241_6660 = RenderConfigFactory.method1631(false)
+            Class348_Sub8.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
             Class348_Sub40_Sub20.aClass348_Sub4_9264 = Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992!!)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {

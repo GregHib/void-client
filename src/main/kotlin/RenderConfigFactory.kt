@@ -13,16 +13,16 @@ class RenderConfigFactory {
         @JvmField
         var aVarbitDefLoader_2981: VarbitDefLoader? = null
 
-        fun method1631(bool: Boolean): Class241 {
+        fun method1631(bool: Boolean): BufferPositionTracker {
             anInt2980++
             if (bool != false) aVarbitDefLoader_2981 = null
             try {
-                return Class241_Sub2()
+                return NanoTimerJagex()
             } catch (throwable: Throwable) {
                 try {
-                    return Class241_Sub3()
+                    return NanoTimerSystem()
                 } catch (throwable_0_: Throwable) {
-                    return Class241_Sub1()
+                    return NanoTimerHighPrecision()
                 }
             }
         }
