@@ -28,7 +28,7 @@ class Class348_Sub40_Sub36 : Class348_Sub40(0, true) {
     }
 
     override fun method3044(i: Int) {
-        Class220.method1605(26188)
+        TrigLookupInit.method1605(26188)
         if (i <= 108) method3145(-17)
         anInt9452++
     }

@@ -1,4 +1,4 @@
-import Class220.method1606
+import TrigLookupInit.method1606
 import Class255.Companion.method1935
 import Class348_Sub23_Sub1.Companion.method2967
 import OutputStream_Sub2.Companion.method136

@@ -4,7 +4,7 @@ import kotlin.math.sin
 /* Class220 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class220 {
+object TrigLookupInit {
     var anInt2876: Int = 0
     var anInt2877: Int = 0
     var anInt2878: Int = 0

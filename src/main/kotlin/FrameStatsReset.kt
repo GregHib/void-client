@@ -988,7 +988,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Gl3dTexture.anInt8632 = 0
             Class59_Sub1_Sub1.anInt8653 = 0
             Class37.anInt491 = 0
-            Class220.anInt2877 = 0
+            TrigLookupInit.anInt2877 = 0
             NativeRenderer.anInt7900 = 0
             Class286_Sub6.anInt6265 = 0
             NativeRenderer.anInt7938 = 0
@@ -1750,7 +1750,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             Class36.anInt488 = 0
             Class64.anInt1129 = 0
             Class348_Sub40_Sub14.anInt9213 = 0
-            Class220.anInt2876 = 0
+            TrigLookupInit.anInt2876 = 0
             OpenGlRenderer.anInt7519 = 0
             Class64_Sub3.anInt5530 = 0
             ItemDefinition.anInt2809 = 0
@@ -3207,7 +3207,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             TextureMetadataProvider.anInt4620 = 0
             Class239_Sub10.anInt5935 = 0
             Class262.anInt3333 = 0
-            Class220.anInt2878 = 0
+            TrigLookupInit.anInt2878 = 0
             Class54.anInt971 = 0
             Class64_Sub2.anInt5479 = 0
             Class318_Sub1_Sub3_Sub1.anInt10020 = 0

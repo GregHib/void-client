@@ -8,7 +8,7 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
     private var anInt9369 = 0
     override fun method3044(i: Int) {
         anInt9363++
-        Class220.method1605(26188)
+        TrigLookupInit.method1605(26188)
         if (i < 108) Companion.method3122((-111).toByte())
     }
 

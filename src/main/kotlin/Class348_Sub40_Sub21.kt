@@ -40,7 +40,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
     override fun method3044(i: Int) {
         anInt9272++
         if (i <= 108) method3042(69, 74)
-        Class220.method1605(26188)
+        TrigLookupInit.method1605(26188)
     }
 
     private fun method3105(i: Int, i_8_: Int, i_9_: Int): Boolean {

@@ -349,7 +349,7 @@ class Class239_Sub24 : Class239 {
                                     if (RenderNode.aBoolean9722 && ((LocalPlayerState.aPlayer_1907!!.plane) == (class318_sub4.aClass318_Sub1_6410!!.plane))) {
                                         val class254 = (if (Class246.anInt3176 != -1) (ProjectionCameraTransform.aClass326_5764!!.method2600(Class246.anInt3176, 28364)) else null)
                                         if (((0x4 and Class38.anInt500) != 0) && (class254 == null || ((class254.anInt3256) != (class51.method487(Class246.anInt3176, (class254.anInt3256), 54))))) {
-                                            Class220.anInt2877++
+                                            TrigLookupInit.anInt2877++
                                             Class50_Sub3.method466(false, (Class28.aString5000 + " -> <col=00ffff>" + (class51.aString884)), i_32_, (-94).toByte(), false, i_33_, -1, true, 2, interface10.hashCode().toLong(), Class28.aString5001, (Class348_Sub40_Sub21.method3107(95.toByte(), interface10, i_32_, i_33_)), Class348_Sub49_Sub1.anInt9747)
                                         }
                                     }

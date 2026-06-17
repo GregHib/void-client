@@ -138,7 +138,7 @@ class Class348_Sub40_Sub14 : Class348_Sub40(1, true) {
         anInt9209++
         if (anIntArrayArray9210!!.size < 2) throw RuntimeException("Curve operation requires at least two markers")
         if (anInt9211 == 2) method3082(73.toByte())
-        Class220.method1605(26188)
+        TrigLookupInit.method1605(26188)
         method3081(-1)
     }
 
