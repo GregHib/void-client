@@ -1675,7 +1675,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             GlVertexBufferArb.anInt8485 = 0
             WorldMapScene.anInt3127 = 0
             SceneEntity.anInt6385 = 0
-            Class331.anInt4134 = 0
+            CalendarUtil.anInt4134 = 0
             BufferedOutputStreamWorker.anInt2711 = 0
             OpenGlRenderer.anInt7568 = 0
             Class59_Sub1.anInt5277 = 0
@@ -1843,7 +1843,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             ModelDataCache.anInt354 = 0
             ConfigVarProgress.anInt4811 = 0
             Class78.anInt1306 = 0
-            Class331.anInt4132 = 0
+            CalendarUtil.anInt4132 = 0
             Class348_Sub22.anInt6861 = 0
             SceneEntity.anInt6384 = 0
             IdleAnimationsOptionState.anInt5904 = 0
@@ -3110,7 +3110,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             HeadIconRenderer.anInt2064 = 0
             VarpStore.anInt5062 = 0
             Class348_Sub49.anInt7196 = 0
-            Class331.anInt4137 = 0
+            CalendarUtil.anInt4137 = 0
             WorldMapScene.anInt3110 = 0
             Class348_Sub40_Sub31.anInt9409 = 0
             SoundChannelMixer.anInt3612 = 0
@@ -3746,7 +3746,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             WaterMaterialPass.anInt6214 = 0
             Class64_Sub2.anInt5435 = 0
             Class348_Sub40_Sub38.anInt9476 = 0
-            Class331.anInt4131 = 0
+            CalendarUtil.anInt4131 = 0
             Class65.anInt1138 = 0
             Class348_Sub40_Sub3.anInt9105 = 0
             Class73.anInt4777 = 0
@@ -3891,7 +3891,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             EmoteDefCache.anInt4089 = 0
             Class5_Sub1.anInt8348 = 0
             NpcDefinitionCache.anInt3318 = 0
-            Class331.anInt4136 = 0
+            CalendarUtil.anInt4136 = 0
             Class348_Sub49.anInt7138 = 0
             SequencedWallEntity.anInt10151 = 0
             Class367.anInt4480 = 0
@@ -4128,7 +4128,7 @@ class FrameStatsReset internal constructor(var aClass58Array5801: Array<Class58>
             aClass356_1895!!.method3481(0)
             Class348_Sub42_Sub20.aNodeDeque_9711 = NodeDeque()
             ProjectedGroundDecor.aVarpStore_10209!!.method1314(74.toByte())
-            Class331.method2636(i + 69)
+            CalendarUtil.method2636(i + 69)
             BloomGraphicsOptionState.anInt5973 = 0
             CollisionMapAccessor.anInt3550 = 0
             ClanChatRequestSender.anInt3647 = 0

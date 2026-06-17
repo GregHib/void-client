@@ -871,13 +871,13 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
                 Class348_Sub42_Sub3.anInt9504 = 0
             }
             if (WaterDetailOptionState.aSoundEnvelopeArray5993 != null) {
-                for (i in 0..<Class331.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
+                for (i in 0..<CalendarUtil.anInt4135) WaterDetailOptionState.aSoundEnvelopeArray5993!![i] = null
                 for (i in 0..<MapAreaDefinition.anInt2524) {
                     for (i_84_ in 0..<SpotAnimEntity.anInt6451) {
                         for (i_85_ in 0..<Class348_Sub41.anInt7054) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i]!![i_84_]!![i_85_] = 0L
                     }
                 }
-                Class331.anInt4135 = 0
+                CalendarUtil.anInt4135 = 0
             }
             Class363.method3513(-120)
             Class71.aClass76_1208 = Class71.aClass76_1210

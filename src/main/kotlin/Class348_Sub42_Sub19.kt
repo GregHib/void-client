@@ -24,11 +24,11 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
         var anInt9701: Int = 0
 
         fun method3276(soundEnvelope: SoundEnvelope) {
-            if (Class331.anInt4135 < 65535) {
+            if (CalendarUtil.anInt4135 < 65535) {
                 val class348_sub1 = soundEnvelope.aClass348_Sub1_2745
-                WaterDetailOptionState.aSoundEnvelopeArray5993!![Class331.anInt4135] = soundEnvelope
-                RenderNode.aBooleanArray9718!![Class331.anInt4135] = false
-                Class331.anInt4135++
+                WaterDetailOptionState.aSoundEnvelopeArray5993!![CalendarUtil.anInt4135] = soundEnvelope
+                RenderNode.aBooleanArray9718!![CalendarUtil.anInt4135] = false
+                CalendarUtil.anInt4135++
                 var i = soundEnvelope.anInt2731
                 if (soundEnvelope.aBoolean2749) i = 0
                 var i_0_ = soundEnvelope.anInt2731
@@ -50,10 +50,10 @@ class Class348_Sub42_Sub19 : Class348_Sub42() {
                         if (i_8_ >= SpotAnimEntity.anInt6451) i_8_ = SpotAnimEntity.anInt6451 - 1
                         for (i_9_ in i_7_..i_8_) {
                             val l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_])
-                            if ((l and 0xffffL) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or Class331.anInt4135.toLong()
-                            else if ((l and 0xffff0000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (Class331.anInt4135.toLong() shl 16)
-                            else if ((l and 0xffff00000000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (Class331.anInt4135.toLong() shl 32)
-                            else if ((l and 0xffffffffffffL.inv()) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (Class331.anInt4135.toLong() shl 48)
+                            if ((l and 0xffffL) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or CalendarUtil.anInt4135.toLong()
+                            else if ((l and 0xffff0000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 16)
+                            else if ((l and 0xffff00000000L) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 32)
+                            else if ((l and 0xffffffffffffL.inv()) == 0L) Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![i_1_]!![i_9_]!![i_5_] = l or (CalendarUtil.anInt4135.toLong() shl 48)
                         }
                     }
                 }

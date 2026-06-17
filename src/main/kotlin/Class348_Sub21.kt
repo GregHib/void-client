@@ -30,7 +30,7 @@ class Class348_Sub21 internal constructor(i: Int) : Class348() {
         fun method2954(i: Byte) {
             anInt6856++
             if (NativeShaderProgram.anInt9775 != -1 && MapArchiveSource.anInt4803 != -1) {
-                val i_0_ = ((CacheArchiveIndex.anInt1780 * (Class331.anInt4133 + -RenderableGroup.anInt5019) shr 16) + RenderableGroup.anInt5019)
+                val i_0_ = ((CacheArchiveIndex.anInt1780 * (CalendarUtil.anInt4133 + -RenderableGroup.anInt5019) shr 16) + RenderableGroup.anInt5019)
                 CacheArchiveIndex.anInt1780 += i_0_
                 if (CacheArchiveIndex.anInt1780 < 65535) {
                     Class347.aBoolean4284 = false

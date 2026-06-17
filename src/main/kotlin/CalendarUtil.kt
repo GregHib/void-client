@@ -3,7 +3,7 @@ import ArrayCopyUtil.method1576
 /* Class331 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-object Class331 {
+object CalendarUtil {
     @JvmField
     var anIntArray4128: IntArray? = IntArray(5)
     var aStringArray4129: Array<String?>? = arrayOf<String?>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")

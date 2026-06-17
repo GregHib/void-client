@@ -15,7 +15,7 @@ object Class363 {
             var i_0_ = 0
             while ((i_0_ < SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size)) {
                 SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i_0_] = DoublyLinkedNodeList()
-                Class331.anIntArray4128!![i_0_] = 0
+                CalendarUtil.anIntArray4128!![i_0_] = 0
                 i_0_++
             }
         }

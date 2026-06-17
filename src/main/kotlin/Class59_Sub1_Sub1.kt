@@ -295,9 +295,9 @@ class Class59_Sub1_Sub1 : Class59_Sub1(8, 5, 8, 8, 2, 0.1f, 0.55f, 3.0f) {
                 val i_12_ = 127 / ((i - 82) / 32)
                 for (i_13_ in 0..<i_11_) class318_sub4.aClass318_Sub3Array6414!![i_13_]!!.aBoolean6401 = false
                 synchronized(SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!) {
-                    if (SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size > i_11_ && Class331.anIntArray4128!![i_11_] < 200) {
+                    if (SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size > i_11_ && CalendarUtil.anIntArray4128!![i_11_] < 200) {
                         SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i_11_]!!.method1869(-126, class318_sub4)
-                        Class331.anIntArray4128!![i_11_]++
+                        CalendarUtil.anIntArray4128!![i_11_]++
                     }
                 }
             } catch (runtimeexception: RuntimeException) {

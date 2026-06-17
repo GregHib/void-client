@@ -274,7 +274,7 @@ import MaterialTypeVariant.method2614
 import RenderQueueState.method2617
 import PolygonFiller.method2621
 import VideoStreamDecoder.Companion.method2631
-import Class331.method2637
+import CalendarUtil.method2637
 import Class332.method2640
 import Class333.Companion.method2645
 import Class334.Companion.method2653
@@ -2052,7 +2052,7 @@ class Client : GameAppletFrame() {
                         i_47_ = min(i_49_, i_34_)
                         i_48_ = min(i_50_, i_35_)
                     }
-                    if (class46.anInt774 != 0 && !class46.aBoolean682 && method105(class46)!!.anInt7098 == 0 && class46 != Class331.aClass46_4130 && class46.anInt765 != BufferToggleState.anInt3717 && (class46.anInt765 != Class348_Sub47.anInt7125)) {
+                    if (class46.anInt774 != 0 && !class46.aBoolean682 && method105(class46)!!.anInt7098 == 0 && class46 != CalendarUtil.aClass46_4130 && class46.anInt765 != BufferToggleState.anInt3717 && (class46.anInt765 != Class348_Sub47.anInt7125)) {
                         if (i_45_ < i_47_ && i_46_ < i_48_) method273(class46, -2835)
                     } else if (!method111(class46)) {
                         var i_51_ = 0
@@ -2078,7 +2078,7 @@ class Client : GameAppletFrame() {
                                 }
                                 if (SceneEntity.anInt6392 == 0) {
                                     RegionSceneLoader.aClass46_3701 = null
-                                    Class331.aClass46_4130 = null
+                                    CalendarUtil.aClass46_4130 = null
                                 }
                                 Class348_Sub42.anInt7059 = 0
                                 ParticleEmitterFactory.aBoolean3174 = false
@@ -2129,7 +2129,7 @@ class Client : GameAppletFrame() {
                             }
                             if (bool_54_) method887(class46, (i_51_ + class348_sub45!!.method3308((-127).toByte()) - i_43_), (i_52_ + class348_sub45.method3311(-114) - i_44_), 2147483647)
                             if (RegionSceneLoader.aClass46_3701 != null && RegionSceneLoader.aClass46_3701 != class46 && bool && method105(class46)!!.method3302(17356)) MapElementDecor.aClass46_10336 = class46
-                            if (class46 == Class331.aClass46_4130) {
+                            if (class46 == CalendarUtil.aClass46_4130) {
                                 ScrollingWidgetComponentNode.aBoolean8386 = true
                                 Class348_Sub40_Sub37.anInt9461 = i_43_
                                 Class40.anInt558 = i_44_

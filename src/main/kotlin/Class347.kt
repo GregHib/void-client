@@ -47,11 +47,11 @@ class Class347 {
                 i_2_ -= SceneEntityModel.anInt6411
                 if (i_2_ < Class348_Sub40_Sub37.anInt9461) i_2_ = Class348_Sub40_Sub37.anInt9461
                 if (i == -30206) {
-                    if (i_2_ - -RegionSceneLoader.aClass46_3701!!.anInt709 > (Class348_Sub40_Sub37.anInt9461 - -Class331.aClass46_4130!!.anInt709)) i_2_ = (Class331.aClass46_4130!!.anInt709 + (Class348_Sub40_Sub37.anInt9461 + -RegionSceneLoader.aClass46_3701!!.anInt709))
+                    if (i_2_ - -RegionSceneLoader.aClass46_3701!!.anInt709 > (Class348_Sub40_Sub37.anInt9461 - -CalendarUtil.aClass46_4130!!.anInt709)) i_2_ = (CalendarUtil.aClass46_4130!!.anInt709 + (Class348_Sub40_Sub37.anInt9461 + -RegionSceneLoader.aClass46_3701!!.anInt709))
                     if (i_3_ < Class40.anInt558) i_3_ = Class40.anInt558
-                    if (RegionSceneLoader.aClass46_3701!!.anInt789 + i_3_ > (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789)) i_3_ = (-RegionSceneLoader.aClass46_3701!!.anInt789 + (Class40.anInt558 - -Class331.aClass46_4130!!.anInt789))
-                    val i_4_ = (-Class348_Sub40_Sub37.anInt9461 + (i_2_ - -Class331.aClass46_4130!!.anInt747))
-                    val i_5_ = (-Class40.anInt558 + (i_3_ + Class331.aClass46_4130!!.anInt755))
+                    if (RegionSceneLoader.aClass46_3701!!.anInt789 + i_3_ > (Class40.anInt558 - -CalendarUtil.aClass46_4130!!.anInt789)) i_3_ = (-RegionSceneLoader.aClass46_3701!!.anInt789 + (Class40.anInt558 - -CalendarUtil.aClass46_4130!!.anInt789))
+                    val i_4_ = (-Class348_Sub40_Sub37.anInt9461 + (i_2_ - -CalendarUtil.aClass46_4130!!.anInt747))
+                    val i_5_ = (-Class40.anInt558 + (i_3_ + CalendarUtil.aClass46_4130!!.anInt755))
                     if (GlTexture1D.aClass373_8552!!.method3593(94)) {
                         if (RegionSceneLoader.aClass46_3701!!.anInt703 < SceneEntity.anInt6392) {
                             val i_6_ = i_2_ + -NativeRenderer.anInt8001

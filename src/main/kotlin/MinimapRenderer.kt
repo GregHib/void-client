@@ -107,7 +107,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
                 anInt1589++
                 if (RegionSceneLoader.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (method141(class46, ((-79).toByte()).toByte()) != null))) {
                     RegionSceneLoader.aClass46_3701 = class46
-                    Class331.aClass46_4130 = method141(class46, ((-117).toByte()).toByte())
+                    CalendarUtil.aClass46_4130 = method141(class46, ((-117).toByte()).toByte())
                     SceneEntity.anInt6392 = 0
                     ModelDefinitionCache.anInt2872 = i_5_
                     SceneEntityModel.anInt6411 = i

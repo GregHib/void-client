@@ -2200,7 +2200,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                                     val f_410_ = ((i_406_.toFloat() * fs[2] + (i_404_.toFloat() * fs[0] + i_405_.toFloat() * fs[1])) / f_407_)
                                     val f_411_ = ((fs[5] * i_406_.toFloat() + (fs[3] * i_404_.toFloat() + i_405_.toFloat() * fs[4])) / f_408_)
                                     val f_412_ = ((i_405_.toFloat() * fs[7] + fs[6] * i_404_.toFloat() + fs[8] * i_406_.toFloat()) / f_409_)
-                                    i_386_ = Class331.method2635(f_411_, false, f_412_, f_410_)
+                                    i_386_ = CalendarUtil.method2635(f_411_, false, f_412_, f_410_)
                                     NodeDeque.method1991(f_397_, f_395_, fs, (modelDefinition.anIntArray1852[i_388_.toInt()]), i_393_, false, i_394_.toInt(), i_391_, (modelDefinition.anIntArray1841[i_388_.toInt()]), (modelDefinition.anIntArray1847[i_388_.toInt()]), f_396_, DataHolder.aFloatArray3658, i_392_, i_386_)
                                     f_379_ = DataHolder.aFloatArray3658!![1]
                                     f = DataHolder.aFloatArray3658!![0]
@@ -2326,11 +2326,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i_
                     anIntArray5404!![++i_450_] = anInt5516
                 }
                 Class348_Sub40_Sub37.aLongArray9465 = null
-                aShortArray5470 = Class331.method2639((-111).toByte(), aShortArray5470!!, anInt5475)
-                aShortArray5416 = Class331.method2639(26.toByte(), aShortArray5416!!, anInt5475)
-                aShortArray5493 = Class331.method2639(68.toByte(), aShortArray5493!!, anInt5475)
-                aShortArray5438 = Class331.method2639((-125).toByte(), aShortArray5438!!, anInt5475)
-                aShortArray5436 = Class331.method2639(70.toByte(), aShortArray5436!!, anInt5475)
+                aShortArray5470 = CalendarUtil.method2639((-111).toByte(), aShortArray5470!!, anInt5475)
+                aShortArray5416 = CalendarUtil.method2639(26.toByte(), aShortArray5416!!, anInt5475)
+                aShortArray5493 = CalendarUtil.method2639(68.toByte(), aShortArray5493!!, anInt5475)
+                aShortArray5438 = CalendarUtil.method2639((-125).toByte(), aShortArray5438!!, anInt5475)
+                aShortArray5436 = CalendarUtil.method2639(70.toByte(), aShortArray5436!!, anInt5475)
                 aByteArray5499 = method135(111.toByte(), aByteArray5499, anInt5475)
                 aFloatArray5476 = method3258(0, anInt5475, aFloatArray5476)
                 aFloatArray5506 = method3258(0, anInt5475, aFloatArray5506)

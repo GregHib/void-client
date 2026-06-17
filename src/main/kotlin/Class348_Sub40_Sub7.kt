@@ -152,8 +152,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         i_30_ -= ModelDefinitionCache.anInt2872
                                         if (Class348_Sub40_Sub37.Companion.anInt9461 > i_29_) i_29_ = Class348_Sub40_Sub37.Companion.anInt9461
                                         if (i_30_ < Class40.anInt558) i_30_ = Class40.anInt558
-                                        if (class46.anInt709 + i_29_ > ((Class331.aClass46_4130!!.anInt709) + Class348_Sub40_Sub37.Companion.anInt9461)) i_29_ = (-class46.anInt709 + ((Class348_Sub40_Sub37.Companion.anInt9461) + (Class331.aClass46_4130!!.anInt709)))
-                                        if (i_30_ + class46.anInt789 > (Class331.aClass46_4130!!.anInt789) + Class40.anInt558) i_30_ = (-class46.anInt789 + (Class40.anInt558 - -(Class331.aClass46_4130!!.anInt789)))
+                                        if (class46.anInt709 + i_29_ > ((CalendarUtil.aClass46_4130!!.anInt709) + Class348_Sub40_Sub37.Companion.anInt9461)) i_29_ = (-class46.anInt709 + ((Class348_Sub40_Sub37.Companion.anInt9461) + (CalendarUtil.aClass46_4130!!.anInt709)))
+                                        if (i_30_ + class46.anInt789 > (CalendarUtil.aClass46_4130!!.anInt789) + Class40.anInt558) i_30_ = (-class46.anInt789 + (Class40.anInt558 - -(CalendarUtil.aClass46_4130!!.anInt789)))
                                         i_24_ = i_29_
                                         i_25_ = i_30_
                                     }

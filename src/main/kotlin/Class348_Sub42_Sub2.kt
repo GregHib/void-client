@@ -124,12 +124,12 @@ class Class348_Sub42_Sub2 : Class348_Sub42, Interface9 {
                 Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = Array<Array<LongArray?>?>(i_1_) { Array<LongArray?>(i_2_) { LongArray(i_3_) } }
                 WaterDetailOptionState.aSoundEnvelopeArray5993 = arrayOfNulls<SoundEnvelope>(65535)
                 RenderNode.aBooleanArray9718 = BooleanArray(65535)
-                Class331.anInt4135 = 0
+                CalendarUtil.anInt4135 = 0
             } else {
                 Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = null
                 WaterDetailOptionState.aSoundEnvelopeArray5993 = null
                 RenderNode.aBooleanArray9718 = null
-                Class331.anInt4135 = 0
+                CalendarUtil.anInt4135 = 0
             }
             method1879(false)
             aClass318_Sub1Array4293 = arrayOfNulls<SceneEntity>(2)

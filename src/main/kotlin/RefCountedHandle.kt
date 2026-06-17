@@ -35,7 +35,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
 
         @JvmStatic
         fun method1320() {
-            for (i in 0..<Class331.anInt4135) {
+            for (i in 0..<CalendarUtil.anInt4135) {
                 if (!RenderNode.aBooleanArray9718!![i]) {
                     val class211 = WaterDetailOptionState.aSoundEnvelopeArray5993!![i]
                     val class348_sub1 = class211!!.aClass348_Sub1_2745!!

@@ -1171,7 +1171,7 @@ object Class66 {
                 ItemDefinition.anInt2798 = i_133_
                 CacheArchiveIndex.anInt1780 = 0
                 RenderableGroup.anInt5019 = anIntArray1149!![anInt1173 + 2]
-                Class331.anInt4133 = anIntArray1149!![anInt1173 + 3]
+                CalendarUtil.anInt4133 = anIntArray1149!![anInt1173 + 3]
                 val i_134_ = anIntArray1149!![anInt1173 + 4]
                 if (i_134_ >= 2) throw RuntimeException()
                 MapArchiveSource.anInt4803 = i_134_

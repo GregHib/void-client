@@ -43,7 +43,7 @@ class OutputStream_Sub2 : OutputStream() {
                 if (SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!!.size > i && !SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i]!!.method1871(111.toByte())) {
                     class318_sub4 = SceneLinkedListNode.aDoublyLinkedNodeListArray3974s!![i]!!.method1870(-104) as SceneEntityModel
                     class318_sub4.method2373(false)
-                    Class331.anIntArray4128!![i]--
+                    CalendarUtil.anIntArray4128!![i]--
                 } else {
                     class318_sub4 = SceneEntityModel()
                     class318_sub4.aClass318_Sub3Array6414 = arrayOfNulls<SceneOcculder>(i)
